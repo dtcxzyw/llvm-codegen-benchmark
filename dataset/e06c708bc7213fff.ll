@@ -1,7 +1,7 @@
 
-%class.relocInfo.2620323 = type { i16 }
-%struct.JSShapeProperty.3243664 = type { i32, i32 }
-%struct.posix_acl_xattr_entry.3361549 = type { i16, i16, i32 }
+%class.relocInfo.2733766 = type { i16 }
+%struct.JSShapeProperty.3435093 = type { i32, i32 }
+%struct.posix_acl_xattr_entry.3548205 = type { i16, i16, i32 }
 
 ; 7 occurrences:
 ; folly/optimized/HHWheelTimer.cpp.ll
@@ -12,16 +12,16 @@
 ; postgres/optimized/varbit.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 15
   %3 = and i64 %2, 7
-  %4 = getelementptr nusw i8, ptr %0, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
   %5 = getelementptr i32, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRenode.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -32,6 +32,8 @@ entry:
 ; linux/optimized/drm_dp_mst_topology.ll
 ; postgres/optimized/gistutil.ll
 ; ruby/optimized/class.ll
+; slurm/optimized/bitstring.ll
+; spike/optimized/fmvh_x_q.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
@@ -42,7 +44,7 @@ entry:
   ret ptr %5
 }
 
-; 138 occurrences:
+; 152 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/cecCec.c.ll
@@ -174,24 +176,38 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/block_pass.ll
 ; php/optimized/optimize_temp_vars_5.ll
-; php/optimized/pcre2_maketables.ll
 ; redis/optimized/cluster_legacy.ll
 ; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
 ; velox/optimized/CompactRow.cpp.ll
 ; velox/optimized/UnsafeRowFast.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
+; zed-rs/optimized/1wjst2j1bd1xnipyz033svz8u.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/6hxn0twt3h5sh337x4zo515i3.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/asge4ovzpoi4j0hgzjom7idmo.ll
+; zed-rs/optimized/bx60353v5ms1nsmjqyoxenjec.ll
+; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/eh70uus3omn48t7itznx7bc3r.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
   %3 = and i64 %2, 16777215
-  %4 = getelementptr nusw i8, ptr %0, i64 30
-  %5 = getelementptr nusw %class.relocInfo.2620323, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 30
+  %5 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 20 occurrences:
+; 57 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
@@ -212,13 +228,50 @@ entry:
 ; wasmtime-rs/optimized/1kan0u7yfu7u6hal.ll
 ; wasmtime-rs/optimized/4m5zcpduwo4in0sh.ll
 ; wasmtime-rs/optimized/qzwdmrmrn8c2iza.ll
+; zed-rs/optimized/01k8ewullo09lcfopyq8rjsdt.ll
+; zed-rs/optimized/0b2hqzlwilt32lfvaqs2arfgd.ll
+; zed-rs/optimized/0fzu5iswc3qhp95jt69713e0a.ll
+; zed-rs/optimized/17z6n2wor03lzp7xkvyb2v4b8.ll
+; zed-rs/optimized/1wjst2j1bd1xnipyz033svz8u.ll
+; zed-rs/optimized/26xf9pzubm30qmivlxh5xlprr.ll
+; zed-rs/optimized/2pjmz9fmy54g6vkualen6rbg5.ll
+; zed-rs/optimized/3bwpnkngp0v942xuk5tod4bfe.ll
+; zed-rs/optimized/3xkvahxsem1hdyf3ef4aq8akj.ll
+; zed-rs/optimized/4m25zm6spqfgpymm9gqw6hgqq.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/5qba05g0dyedoh8rydwnrszty.ll
+; zed-rs/optimized/5s44oz7ztp6o1gjtp6jhzkvc2.ll
+; zed-rs/optimized/6k04c116ogp35htlpsavpzpvg.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
+; zed-rs/optimized/7435o5as5af1nwuofltvv4x7w.ll
+; zed-rs/optimized/7nj8apu4jlzv057e0kkcpojil.ll
+; zed-rs/optimized/8gg8u2ott7gsi4x0g8ewxmxbb.ll
+; zed-rs/optimized/8l6j9aar0oaoyhr62czfg3g36.ll
+; zed-rs/optimized/9u70uffa5gnr0a44dt677r86w.ll
+; zed-rs/optimized/asge4ovzpoi4j0hgzjom7idmo.ll
+; zed-rs/optimized/ba1fbg7c0slithvjnvqvkyuvg.ll
+; zed-rs/optimized/bg38611xfnz0abj8o6yh866zw.ll
+; zed-rs/optimized/brfpsqsl3kxc3ngzjjsbjx55x.ll
+; zed-rs/optimized/bvs73film05xborh0f0ab3jqk.ll
+; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
+; zed-rs/optimized/cgxtqkz3q1lf4y8mn1r3vggst.ll
+; zed-rs/optimized/cwm1jtpn2hj5f4ljdx4klnhqs.ll
+; zed-rs/optimized/daazuwy5q4pkhw5qv9dy4nfnq.ll
+; zed-rs/optimized/dr3ks0ib80ortjwkcqg0973x1.ll
+; zed-rs/optimized/e2t208u96614zaapml39g6l5s.ll
+; zed-rs/optimized/ees19hacjiz3y03peze9imi7o.ll
+; zed-rs/optimized/eh70uus3omn48t7itznx7bc3r.ll
+; zed-rs/optimized/ei1t73ixdtixfwk96jtdsqya1.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
+; zed-rs/optimized/eyl50e18l6kj3inbixv9y0nwt.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = and i64 %2, 31
-  %4 = getelementptr nusw i8, ptr %0, i64 8
-  %5 = getelementptr nusw { { { [6 x i64] } }, { i64 } }, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw { { { [6 x i64] } }, { i64 } }, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -226,24 +279,24 @@ entry:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = and i64 %2, 2147483647
   %4 = getelementptr i8, ptr %0, i64 922880
-  %5 = getelementptr nusw float, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %3
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = and i64 %2, 2147483647
   %4 = getelementptr i8, ptr %0, i64 871552
-  %5 = getelementptr nusw float, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -251,12 +304,12 @@ entry:
 ; linux/optimized/rw.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %0, i64 64
-  %5 = getelementptr %struct.JSShapeProperty.3243664, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 64
+  %5 = getelementptr %struct.JSShapeProperty.3435093, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -268,7 +321,7 @@ entry:
   %2 = lshr exact i64 %1, 3
   %3 = and i64 %2, 2147483647
   %4 = getelementptr i8, ptr %0, i64 4
-  %5 = getelementptr %struct.posix_acl_xattr_entry.3361549, ptr %4, i64 %3
+  %5 = getelementptr %struct.posix_acl_xattr_entry.3548205, ptr %4, i64 %3
   ret ptr %5
 }
 

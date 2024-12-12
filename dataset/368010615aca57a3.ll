@@ -1,8 +1,7 @@
 
-; 43 occurrences:
+; 41 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
-; libzmq/optimized/zmq.cpp.ll
 ; meshoptimizer/optimized/quantization.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
@@ -22,7 +21,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -48,11 +46,11 @@ define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = and i32 %2, -16777216
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
@@ -78,7 +76,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll

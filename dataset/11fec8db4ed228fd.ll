@@ -1,9 +1,20 @@
 
-; 255 occurrences:
+; 271 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/cpu_timer.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/numeric.ll
+; boost/optimized/process_cpu_clocks.ll
+; boost/optimized/src.ll
 ; brotli/optimized/metablock.c.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
@@ -113,7 +124,6 @@
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mm_init.ll
 ; linux/optimized/page-writeback.ll
-; linux/optimized/pcm_timer.ll
 ; linux/optimized/pvclock.ll
 ; linux/optimized/relay.ll
 ; linux/optimized/resize.ll
@@ -128,7 +138,6 @@
 ; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lua/optimized/lgc.ll
@@ -212,7 +221,6 @@
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/xlog.ll
 ; postgres/optimized/xlogarchive.ll
-; postgres/optimized/xlogbackup.ll
 ; postgres/optimized/xlogfuncs.ll
 ; postgres/optimized/xlogreader.ll
 ; postgres/optimized/xlogrecovery.ll
@@ -232,7 +240,6 @@
 ; ruby/optimized/array.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/gc.ll
-; ruby/optimized/intpack.ll
 ; ruby/optimized/numeric.ll
 ; ruby/optimized/regcomp.ll
 ; ruby/optimized/string.ll
@@ -254,6 +261,15 @@
 ; xgboost/optimized/random.cc.ll
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/57a4rocbj9i58n508ja77m5jt.ll
+; zed-rs/optimized/92iizbpp16n9wzmmxw0rpztpt.ll
+; zed-rs/optimized/by8gv54o76v0inyrwjxd65d9p.ll
+; zed-rs/optimized/dthtcetij943j6s50gke0fkdr.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {

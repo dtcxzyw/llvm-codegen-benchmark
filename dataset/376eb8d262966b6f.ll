@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 92 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cuddAnneal.c.ll
@@ -32,12 +32,9 @@
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dlaror.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; opencv/optimized/btv_l1.cpp.ll
-; opencv/optimized/cornersubpix.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/npr.cpp.ll
 ; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
@@ -52,8 +49,6 @@
 ; openusd/optimized/restoration.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/interaction.cpp.ll
 ; php/optimized/fastcgi.ll
 ; php/optimized/ir_ra.ll
 ; php/optimized/optimize_temp_vars_5.ll
@@ -95,6 +90,8 @@
 ; wireshark/optimized/show_packet_bytes_dialog.cpp.ll
 ; wireshark/optimized/text_import.c.ll
 ; yosys/optimized/simplify.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -104,15 +101,14 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; gromacs/optimized/dlasq5.cpp.ll
 ; gromacs/optimized/dlasq6.cpp.ll
-; gromacs/optimized/muParserBase.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; libquic/optimized/div.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openblas/optimized/dggglm.c.ll
 ; openblas/optimized/dlarre.c.ll
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
@@ -131,7 +127,7 @@ entry:
   ret i64 %4
 }
 
-; 94 occurrences:
+; 93 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/cuddWindow.c.ll
 ; abc/optimized/giaSatMap.c.ll
@@ -160,7 +156,6 @@ entry:
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; hdf5/optimized/h5watch.c.ll
 ; hermes/optimized/ISel.cpp.ll
-; hermes/optimized/SNPrintfBuf.cpp.ll
 ; icu/optimized/islamcal.ll
 ; icu/optimized/utext.ll
 ; libjpeg-turbo/optimized/jcphuff.c.ll
@@ -235,8 +230,9 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/abcSaucy.c.ll
+; opencv/optimized/run_length_morphology.cpp.ll
 ; openmpi/optimized/netpatterns_knomial_tree.ll
 ; postgres/optimized/utilities.ll
 ; zxing/optimized/DMDataBlock.cpp.ll

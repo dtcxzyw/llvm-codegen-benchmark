@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; folly/optimized/IPAddressV6.cpp.ll
 ; hermes/optimized/escape.cpp.ll
 ; libpng/optimized/png.c.ll
 ; linux/optimized/tcp_input.ll
+; llvm/optimized/LICM.cpp.ll
 ; openexr/optimized/ImfInputFile.cpp.ll
 ; openjdk/optimized/png.ll
 ; openusd/optimized/level.cpp.ll

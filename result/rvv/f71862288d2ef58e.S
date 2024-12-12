@@ -40,6 +40,12 @@ func00000000000000c2:                   # @func00000000000000c2
 	vmerge.vvm	v12, v16, v12, v0
 	vmflt.vv	v0, v12, v8
 	ret
+func000000000000004a:                   # @func000000000000004a
+	fmv.w.x	fa5, zero
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfmax.vf	v12, v12, fa5
+	vmfle.vv	v0, v12, v8
+	ret
 func000000000000004c:                   # @func000000000000004c
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma

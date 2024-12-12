@@ -14,3 +14,11 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%ecx, %edx
 	sete	%al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	movq	%rdx, %rcx
+	movl	%edi, %eax
+	xorl	%edx, %edx
+	divl	%esi
+	cmpl	%ecx, %edx
+	seta	%al
+	retq

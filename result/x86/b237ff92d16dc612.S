@@ -12,14 +12,14 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%esi, %eax
 	setb	%al
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmovel	%edx, %eax
 	cmpl	%esi, %eax
 	setl	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmovel	%edx, %eax

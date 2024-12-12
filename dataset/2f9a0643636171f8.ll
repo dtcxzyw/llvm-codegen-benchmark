@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/cutPre22.c.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
@@ -7,6 +7,7 @@
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; git/optimized/transport.ll
 ; hyperscan/optimized/program_runtime.c.ll
+; lief/optimized/constant_time.c.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/inotify_user.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll

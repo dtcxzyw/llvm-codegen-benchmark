@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; libjpeg-turbo/optimized/jcsample.c.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:

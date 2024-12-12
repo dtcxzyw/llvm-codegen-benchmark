@@ -1,5 +1,8 @@
 
-; 100 occurrences:
+; 101 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -70,7 +73,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -98,10 +100,9 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000184(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2048
   %3 = icmp ne i16 %2, 0
@@ -111,11 +112,13 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i16 %0, i8 %1) #0 {
+define i1 @func000000000000008c(i16 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -14
   %3 = icmp ult i8 %2, -4

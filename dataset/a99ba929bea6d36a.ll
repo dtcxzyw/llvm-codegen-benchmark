@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; abseil-cpp/optimized/int128.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; assimp/optimized/IFCCurve.cpp.ll
@@ -11,6 +11,7 @@
 ; hdf5/optimized/H5Tconv_float.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; msgpack/optimized/asio_send_recv.cpp.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
 ; msgpack/optimized/msgpack_variant_capitalize.cpp.ll

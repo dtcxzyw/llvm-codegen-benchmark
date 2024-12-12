@@ -1,18 +1,30 @@
 
-%class.btMatrix3x3.2705789 = type { [3 x %class.btVector3.2705784] }
-%class.btVector3.2705784 = type { [4 x float] }
-%struct.btSymmetricSpatialDyad.2705792 = type { %class.btMatrix3x3.2705789, %class.btMatrix3x3.2705789, %class.btMatrix3x3.2705789 }
-%"struct.xgboost::PathElement.3712566" = type { i32, float, float, float }
+%class.btMatrix3x3.2818504 = type { [3 x %class.btVector3.2818499] }
+%class.btVector3.2818499 = type { [4 x float] }
+%"struct.xgboost::PathElement.3891864" = type { i32, float, float, float }
 
 ; 1 occurrences:
 ; bullet3/optimized/btMultiBody.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000cf(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.btMatrix3x3.2705789, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 192
-  %5 = getelementptr %struct.btSymmetricSpatialDyad.2705792, ptr %4, i64 %0, i32 1
+  %3 = getelementptr %class.btMatrix3x3.2818504, ptr %1, i64 %2
+  %.idx = mul i64 %0, 144
+  %4 = getelementptr i8, ptr %3, i64 240
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define ptr @func000000000000033f(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 864
+  %5 = getelementptr i8, ptr %4, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -43,23 +55,24 @@ entry:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000022a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000033b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 816
   %5 = getelementptr i8, ptr %4, i64 %0
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; xgboost/optimized/cpu_treeshap.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000002ea(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000003ff(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.xgboost::PathElement.3712566", ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 32
-  %5 = getelementptr %"struct.xgboost::PathElement.3712566", ptr %4, i64 %0, i32 1
+  %3 = getelementptr nusw nuw %"struct.xgboost::PathElement.3891864", ptr %1, i64 %2
+  %.idx = shl i64 %0, 4
+  %4 = getelementptr i8, ptr %3, i64 36
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
 }
 

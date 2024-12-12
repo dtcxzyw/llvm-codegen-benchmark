@@ -1,6 +1,9 @@
 func0000000000000003:                   # @func0000000000000003
-	andl	$1, %edi
-	imull	$-94, %edi, %eax
+	andb	$15, %dil
+	movzbl	%dil, %eax
+	addl	%eax, %eax
+	leal	(%rax,%rax,4), %eax
+	movzbl	%al, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	andb	$3, %dil

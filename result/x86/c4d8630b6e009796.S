@@ -1,17 +1,10 @@
-func000000000000004f:                   # @func000000000000004f
+func000000000000014f:                   # @func000000000000014f
 	leal	55(%rdi), %ecx
 	leal	48(%rdi), %eax
 	cmpl	$10, %edi
 	cmovael	%ecx, %eax
 	retq
-func00000000000000a4:                   # @func00000000000000a4
-	xorl	%eax, %eax
-	cmpl	$130, %edi
-	setge	%al
-	addl	%edi, %eax
-	addb	$-3, %al
-	retq
-func000000000000004e:                   # @func000000000000004e
+func000000000000014e:                   # @func000000000000014e
 	xorl	%eax, %eax
 	cmpl	$63, %edi
 	setb	%al
@@ -24,7 +17,7 @@ func0000000000000064:                   # @func0000000000000064
 	cmpl	$16, %edi
 	cmovgel	%ecx, %eax
 	retq
-func000000000000008f:                   # @func000000000000008f
+func000000000000018f:                   # @func000000000000018f
 	xorl	%eax, %eax
 	cmpl	$2, %edi
 	setae	%al
@@ -37,11 +30,18 @@ func0000000000000060:                   # @func0000000000000060
 	cmpl	$10, %edi
 	cmovgel	%ecx, %eax
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000014c:                   # @func000000000000014c
 	leal	55(%rdi), %ecx
 	leal	48(%rdi), %eax
 	cmpl	$10, %edi
 	cmovael	%ecx, %eax
+	retq
+func00000000000000a4:                   # @func00000000000000a4
+	xorl	%eax, %eax
+	cmpl	$-1, %edi
+	setge	%al
+	addl	%edi, %eax
+	incb	%al
 	retq
 func0000000000000065:                   # @func0000000000000065
 	leal	1(%rdi), %ecx
@@ -49,7 +49,7 @@ func0000000000000065:                   # @func0000000000000065
 	testl	%edi, %edi
 	cmovnsl	%ecx, %eax
 	retq
-func0000000000000085:                   # @func0000000000000085
+func0000000000000185:                   # @func0000000000000185
 	leal	1(%rdi), %ecx
 	leal	254(%rdi), %eax
 	cmpl	$2, %edi

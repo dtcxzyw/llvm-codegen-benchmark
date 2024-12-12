@@ -1,12 +1,3 @@
-func0000000000000030:                   # @func0000000000000030
-	lui	a0, 16
-	addi	a0, a0, -1
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v10, v10, a0
-	li	a0, 18
-	vmadd.vx	v10, a0, v8
-	vadd.vi	v8, v10, 5
-	ret
 func000000000000003f:                   # @func000000000000003f
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -32,6 +23,15 @@ func0000000000000035:                   # @func0000000000000035
 	vmadd.vx	v10, a0, v8
 	lui	a0, 1048568
 	addi	a0, a0, 723
+	vadd.vx	v8, v10, a0
+	ret
+func0000000000000030:                   # @func0000000000000030
+	li	a0, 255
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vand.vx	v10, v10, a0
+	li	a0, 100
+	vmadd.vx	v10, a0, v8
+	li	a0, -1900
 	vadd.vx	v8, v10, a0
 	ret
 func000000000000003d:                   # @func000000000000003d

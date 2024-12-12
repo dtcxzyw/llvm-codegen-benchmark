@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -16,11 +16,12 @@
 ; linux/optimized/intel_color.ll
 ; linux/optimized/portdrv.ll
 ; linux/optimized/sg.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; linux/optimized/vt.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_switch.ll
 ; ncnn/optimized/mat.cpp.ll
 ; openjdk/optimized/constMethod.ll
 ; openjdk/optimized/instanceKlass.ll

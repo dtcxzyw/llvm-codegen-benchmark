@@ -57,11 +57,11 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp ne i32 %3, %4
+  %4 = sub nsw i32 0, %3
+  %5 = icmp ne i32 %1, %4
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }
@@ -76,11 +76,11 @@ entry:
 ; openspiel/optimized/spiel.cc.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000f4(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
-  %5 = icmp ult i32 %4, 6
+  %4 = add nuw nsw i32 %1, %3
+  %5 = icmp samesign ult i32 %4, 6
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }
@@ -88,10 +88,10 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/viz.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = icmp ne i32 %4, 4
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -100,11 +100,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp ne i32 %3, %4
+  %4 = sub nsw i32 0, %3
+  %5 = icmp ne i32 %1, %4
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }
@@ -112,10 +112,10 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/vp8l_dec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp slt i32 %4, 65
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -124,10 +124,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/EADateTime.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp sgt i32 %4, 9
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6

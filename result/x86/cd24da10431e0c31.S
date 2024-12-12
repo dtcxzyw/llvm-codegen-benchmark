@@ -15,7 +15,7 @@ func0000000000000008:                   # @func0000000000000008
 	shrxl	%edi, %eax, %eax
 	retq
 func000000000000000e:                   # @func000000000000000e
-	leal	65536(%rdx,%rsi), %eax
+	leal	-1(%rdx,%rsi), %eax
 	shrxl	%edi, %eax, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018

@@ -1,10 +1,9 @@
 func000000000000000a:                   # @func000000000000000a
-	addl	%edx, %esi
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	cmovlel	%edi, %eax
+	leal	(%rsi,%rdx), %eax
+	sarl	$31, %eax
+	andl	%edi, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	xorl	%eax, %eax
 	addl	%edx, %esi
 	cmovnsl	%edi, %eax
@@ -19,18 +18,18 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$1, %eax
 	cmovnel	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addl	%edx, %esi
 	xorl	%eax, %eax
 	cmpl	$1, %esi
 	cmovnel	%edi, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addl	%edx, %esi
 	movl	$-1, %eax
 	cmovlel	%edi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addl	%edx, %esi
 	cmpl	$3, %esi
 	movl	$3, %eax
@@ -48,24 +47,24 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$-2, %eax
 	cmovbl	%edi, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	addl	%edx, %esi
 	cmpl	$16777215, %esi                 # imm = 0xFFFFFF
 	movl	$-1, %eax
 	cmovbl	%edi, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	orl	%edx, %esi
 	movl	$20, %eax
 	cmovnel	%edi, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	addl	%edx, %esi
 	cmpl	$33, %esi
 	movl	$536870912, %eax                # imm = 0x20000000
 	cmovael	%edi, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	addl	%edx, %esi
 	cmpl	$32769, %esi                    # imm = 0x8001
 	movl	$1, %eax

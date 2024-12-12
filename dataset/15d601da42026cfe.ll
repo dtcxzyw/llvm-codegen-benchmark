@@ -3,7 +3,7 @@
 ; fmt/optimized/format-impl-test.cc.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sub i32 %3, %0
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-fcfzs.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000060a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sub i32 %0, %3
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-cip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000601(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sub i32 %0, %3
@@ -98,7 +98,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000284(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sub nsw i32 %0, %3
@@ -116,7 +116,7 @@ entry:
 ; libwebp/optimized/yuv_sse41.c.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000006a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sub nsw i32 %0, %3
@@ -128,7 +128,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dorgtsqr_row.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sub i32 %0, %3

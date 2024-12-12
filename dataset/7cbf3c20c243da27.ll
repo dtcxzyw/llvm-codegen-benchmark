@@ -4,7 +4,7 @@
 ; qemu/optimized/hw_ide_core.c.ll
 ; wireshark/optimized/packet-wow.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp eq i32 %1, 0

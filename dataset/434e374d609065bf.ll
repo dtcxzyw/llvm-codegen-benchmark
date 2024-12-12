@@ -31,29 +31,18 @@ entry:
 ; 9 occurrences:
 ; eastl/optimized/EAScanfCore.cpp.ll
 ; linux/optimized/battery.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/psmouse-base.ll
 ; miniaudio/optimized/unity.c.ll
 ; openusd/optimized/warped_motion.c.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; wireshark/optimized/packet-giop.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 16
   %2 = ashr exact i32 %1, 16
-  %3 = sub nsw i32 0, %2
-  ret i32 %3
-}
-
-; 1 occurrences:
-; linux/optimized/logips2pp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
-entry:
-  %1 = shl nuw i32 %0, 24
-  %2 = ashr i32 %1, 28
   %3 = sub nsw i32 0, %2
   ret i32 %3
 }

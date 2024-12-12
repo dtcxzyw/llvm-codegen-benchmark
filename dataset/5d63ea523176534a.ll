@@ -1,13 +1,11 @@
 
-%struct._zval_struct.2680004 = type { %union._zend_value.2680005, %union.anon.2680006, %union.anon.2.2680007 }
-%union._zend_value.2680005 = type { i64 }
-%union.anon.2680006 = type { i32 }
-%union.anon.2.2680007 = type { i32 }
+%struct._zval_struct.2792825 = type { %union._zend_value.2792826, %union.anon.2792827, %union.anon.2.2792828 }
+%union._zend_value.2792826 = type { i64 }
+%union.anon.2792827 = type { i32 }
+%union.anon.2.2792828 = type { i32 }
 
-; 76 occurrences:
-; abc/optimized/abcSop.c.ll
+; 73 occurrences:
 ; abc/optimized/deflate.c.ll
-; abc/optimized/kitPla.c.ll
 ; assimp/optimized/clipper.cpp.ll
 ; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
 ; cmake/optimized/cmCommandArgumentLexer.cxx.ll
@@ -70,7 +68,6 @@
 ; opencv/optimized/pooling_layer.cpp.ll
 ; opencv/optimized/slic.cpp.ll
 ; openexr/optimized/ImfMisc.cpp.ll
-; openjdk/optimized/disassembler.ll
 ; openjdk/optimized/parse2.ll
 ; openmpi/optimized/rmaps_rank_file_lex.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
@@ -92,9 +89,8 @@ entry:
   ret ptr %7
 }
 
-; 52 occurrences:
+; 51 occurrences:
 ; arrow/optimized/writer.cc.ll
-; ceres/optimized/covariance_impl.cc.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -152,7 +148,7 @@ entry:
   %4 = shl i64 %3, 29
   %5 = add i64 %4, 21474836480
   %6 = ashr i64 %5, 32
-  %7 = getelementptr nusw %struct._zval_struct.2680004, ptr %0, i64 %6
+  %7 = getelementptr nusw %struct._zval_struct.2792825, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -182,20 +178,6 @@ entry:
   %5 = add i64 %4, 1103806595072
   %6 = ashr exact i64 %5, 32
   %7 = getelementptr i8, ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 2 occurrences:
-; opencv/optimized/distransform.cpp.ll
-; opencv/optimized/npr.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000086(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = shl i64 %3, 32
-  %5 = add i64 %4, -8589934592
-  %6 = ashr exact i64 %5, 30
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

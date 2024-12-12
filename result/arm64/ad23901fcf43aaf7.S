@@ -1,48 +1,40 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v5.2d
-	sub	v1.2d, v3.2d, v1.2d
-	sub	v0.2d, v2.2d, v0.2d
-	uzp2	v0.4s, v0.4s, v1.4s
-	ushr	v0.4s, v0.4s, #10
+	add	x8, x1, x2
+	sub	x8, x8, x0
+	lsr	x0, x8, #42
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v5.2d
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v3.2d, v1.2d
-	shrn	v0.2s, v0.2d, #27
-	shrn2	v0.4s, v1.2d, #27
+	add	x8, x1, x2
+	sub	x8, x8, x0
+	lsr	x0, x8, #27
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	add	v2.2d, v2.2d, v4.2d
-	subhn	v0.2s, v2.2d, v0.2d
-	add	v2.2d, v3.2d, v5.2d
-	subhn2	v0.4s, v2.2d, v1.2d
+	add	x8, x1, x2
+	sub	x8, x8, x0
+	lsr	x0, x8, #32
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v5.2d
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v3.2d, v1.2d
-	shrn	v0.2s, v0.2d, #11
-	shrn2	v0.4s, v1.2d, #11
+	add	x8, x1, x2
+	sub	x8, x8, x0
+	lsr	x0, x8, #11
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v5.2d
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v3.2d, v1.2d
-	shrn	v0.2s, v0.2d, #11
-	shrn2	v0.4s, v1.2d, #11
+	add	x8, x1, x2
+	sub	x8, x8, x0
+	lsr	x0, x8, #11
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function

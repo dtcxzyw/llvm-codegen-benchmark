@@ -1,5 +1,5 @@
 
-; 86 occurrences:
+; 89 occurrences:
 ; abc/optimized/abcXsim.c.ll
 ; abc/optimized/ioReadBaf.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
@@ -29,6 +29,7 @@
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; luajit/optimized/lj_meta.ll
 ; luajit/optimized/lj_meta_dyn.ll
+; lvgl/optimized/lv_demo_scroll.ll
 ; nghttp2/optimized/llhttp.c.ll
 ; oniguruma/optimized/regexec.ll
 ; openjdk/optimized/bytecodeAssembler.ll
@@ -47,10 +48,8 @@
 ; protobuf/optimized/untyped_message.cc.ll
 ; protobuf/optimized/writer.cc.ll
 ; qemu/optimized/hw_virtio_virtio-iommu.c.ll
-; qemu/optimized/libvhost-user-glib.c.ll
 ; qemu/optimized/migration_ram.c.ll
 ; qemu/optimized/target_riscv_pmu.c.ll
-; qemu/optimized/util_filemonitor-inotify.c.ll
 ; re2/optimized/prog.cc.ll
 ; ruby/optimized/gc.ll
 ; sqlite/optimized/sqlite3.ll
@@ -86,6 +85,10 @@
 ; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i32 %0) #0 {
 entry:
@@ -94,7 +97,7 @@ entry:
   ret ptr %2
 }
 
-; 449 occurrences:
+; 479 occurrences:
 ; abc/optimized/abcLatch.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/abcRr.c.ll
@@ -119,9 +122,9 @@ entry:
 ; abseil-cpp/optimized/marshalling.cc.ll
 ; abseil-cpp/optimized/pow10_helper_test.cc.ll
 ; abseil-cpp/optimized/str_format_test.cc.ll
-; actix-rs/optimized/7rz97b55rz3o3h7.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/PretransformVertices.cpp.ll
+; boost/optimized/thread_specific.ll
 ; clamav/optimized/bytecode.c.ll
 ; cpython/optimized/tracemalloc.ll
 ; darktable/optimized/filtering.c.ll
@@ -165,7 +168,6 @@ entry:
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
-; linux/optimized/8250_pnp.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/base.ll
@@ -183,7 +185,6 @@ entry:
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/intel_timeline.ll
 ; linux/optimized/iov_iter.ll
-; linux/optimized/kexec.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/mqueue.ll
@@ -297,6 +298,10 @@ entry:
 ; luajit/optimized/lj_cdata_dyn.ll
 ; luau/optimized/CodeGenContext.cpp.ll
 ; luau/optimized/Conformance.test.cpp.ll
+; lvgl/optimized/lv_demo_flex_layout_ctrl_pad.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_obj_style_gen.ll
+; lvgl/optimized/lv_style_gen.ll
 ; meilisearch-rs/optimized/7ttx3vegu0k1psi.ll
 ; mitsuba3/optimized/thread.cpp.ll
 ; nori/optimized/shader_gl.cpp.ll
@@ -459,7 +464,6 @@ entry:
 ; wireshark/optimized/packet-http.c.ll
 ; wireshark/optimized/packet-http2.c.ll
 ; wireshark/optimized/packet-iax2.c.ll
-; wireshark/optimized/packet-ieee1609dot2.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-iperf3.c.ll
@@ -516,7 +520,6 @@ entry:
 ; wireshark/optimized/packet-udp.c.ll
 ; wireshark/optimized/packet-udpcp.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
-; wireshark/optimized/packet-usb-i1d3.c.ll
 ; wireshark/optimized/packet-usbll.c.ll
 ; wireshark/optimized/packet-vj-comp.c.ll
 ; wireshark/optimized/packet-wbxml.c.ll
@@ -525,7 +528,6 @@ entry:
 ; wireshark/optimized/packet.c.ll
 ; wireshark/optimized/packet_range.c.ll
 ; wireshark/optimized/pcapng.c.ll
-; wireshark/optimized/plugin_if.c.ll
 ; wireshark/optimized/prefs.c.ll
 ; wireshark/optimized/print.c.ll
 ; wireshark/optimized/proto.c.ll
@@ -544,6 +546,37 @@ entry:
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/euf_internalize.cpp.ll
 ; z3/optimized/euf_solver.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/0l5q95ei94dcvnozucoiwn5qf.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/7hsbxpr1hqy17ngn0bqyx5x8s.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8r4rexl2hxk4mf5ojed4sh4ix.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/apge5vvp9hwixphamezb75yuv.ll
+; zed-rs/optimized/bzk1je3s858jgu5p8vqae1j7s.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
+; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i32 %0) #0 {
 entry:

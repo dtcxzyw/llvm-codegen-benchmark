@@ -24,10 +24,21 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a0, a0, -1290
 .LBB3_2:                                # %entry
 	ret
+func0000000000000018:                   # @func0000000000000018
+	sltu	a1, a2, a1
+	neg	a1, a1
+	or	a0, a0, a1
+	ret
 func000000000000000a:                   # @func000000000000000a
 	slt	a1, a2, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	bgeu	a1, a2, .LBB6_2
+	lui	a0, 524288
+	addiw	a0, a0, -1
+.LBB6_2:                                # %entry
 	ret
 func0000000000000009:                   # @func0000000000000009
 	sltu	a1, a1, a2
@@ -46,7 +57,12 @@ func0000000000000007:                   # @func0000000000000007
 	and	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
-	bltu	a2, a1, .LBB8_2
+	bltu	a2, a1, .LBB10_2
 	lui	a0, 1
-.LBB8_2:                                # %entry
+.LBB10_2:                               # %entry
+	ret
+func0000000000000015:                   # @func0000000000000015
+	bltu	a2, a1, .LBB11_2
+	li	a0, 28
+.LBB11_2:                               # %entry
 	ret

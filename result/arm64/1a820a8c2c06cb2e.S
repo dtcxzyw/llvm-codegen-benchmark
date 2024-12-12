@@ -5,7 +5,7 @@ func0000000000000000:                   // @func0000000000000000
 	madd	x0, x9, x8, x0
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	mov	w8, #12                         // =0xc
 	umaddl	x0, w1, w8, x0
@@ -13,9 +13,9 @@ func000000000000000e:                   // @func000000000000000e
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	and	x8, x1, #0xfffffff8
-	add	x8, x8, x8, lsl #1
-	add	x0, x0, x8
+	mov	w8, #96                         // =0x60
+	and	x9, x1, #0x3f
+	umaddl	x0, w9, w8, x0
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006

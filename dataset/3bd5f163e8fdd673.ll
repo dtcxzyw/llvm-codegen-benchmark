@@ -10,7 +10,7 @@ entry:
   %.fr1 = freeze i64 %1
   %2 = trunc i64 %.fr1 to i32
   %3 = urem i32 %2, 100000000
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -22,7 +22,7 @@ entry:
   %.fr1 = freeze i64 %1
   %2 = trunc i64 %.fr1 to i32
   %3 = urem i32 %2, 3600
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

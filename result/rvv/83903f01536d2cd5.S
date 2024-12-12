@@ -3,7 +3,7 @@ func00000000000000a6:                   # @func00000000000000a6
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfrdiv.vf	v12, v12, fa5
 	fli.s	fa5, 0.125
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	vmfge.vf	v12, v8, fa5
 	fli.s	fa5, 8.0
 	vmnot.m	v12, v12

@@ -1,11 +1,11 @@
-func00000000000001ca:                   # @func00000000000001ca
+func000000000000058a:                   # @func000000000000058a
 	leal	3(%rdi), %eax
 	cmpq	%rdx, %rsi
 	cmovel	%edi, %eax
 	cmpl	$-2, %eax
 	setge	%al
 	retq
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
 	setl	%al

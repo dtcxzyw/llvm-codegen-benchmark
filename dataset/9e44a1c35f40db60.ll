@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; clamav/optimized/upack.c.ll
@@ -23,7 +23,6 @@
 ; postgres/optimized/xloginsert.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; qemu/optimized/accel_tcg_translate-all.c.ll
-; qemu/optimized/migration_qemu-file.c.ll
 ; rocksdb/optimized/meta_blocks.cc.ll
 ; wireshark/optimized/nettrace_3gpp_32_423.c.ll
 ; xgboost/optimized/json.cc.ll
@@ -49,19 +48,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = and i64 %4, 137438953440
-  %6 = add nsw i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; vcpkg/optimized/export.prefab.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = and i64 %4, -4
-  %6 = add nuw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

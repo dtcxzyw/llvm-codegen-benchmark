@@ -9,11 +9,11 @@
 ; rocksdb/optimized/txnid_set.cc.ll
 ; rocksdb/optimized/wfg.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 24
   %3 = shl nuw nsw i64 %0, 2
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
@@ -31,7 +31,7 @@ entry:
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 24
   %3 = shl i64 %0, 5
@@ -55,7 +55,7 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; actix-rs/optimized/38w83wyqv1thu0n9.ll
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
@@ -73,7 +73,6 @@ entry:
 ; rust-analyzer-rs/optimized/n2ltxs27br91fc6.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; wasmtime-rs/optimized/47nrdncov7567v7m.ll
-; wasmtime-rs/optimized/4i2whcl4s27dqb04.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
@@ -87,11 +86,29 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/RafDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 28
   %3 = shl nuw nsw i64 %0, 3
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
+  ret i1 %4
+}
+
+; 8 occurrences:
+; turborepo-rs/optimized/5oyfkcp83qeshlhfpeq645wiv.ll
+; zed-rs/optimized/0vyyug5k32h9xse2mwakvk78w.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
+; zed-rs/optimized/9igphs4jh07znzucv85uqqzol.ll
+; zed-rs/optimized/ab01r9sf75x1uliqc5hdvn2v4.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw i64 %1, 56
+  %3 = shl i64 %0, 6
+  %4 = icmp eq i64 %3, %2
   ret i1 %4
 }
 
@@ -190,7 +207,7 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
   %3 = shl nsw i64 %0, 1
@@ -199,9 +216,20 @@ entry:
 }
 
 ; 1 occurrences:
+; linux/optimized/fair.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul i64 %1, 1078
+  %3 = shl i64 %0, 10
+  %4 = icmp ule i64 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 9
   %3 = shl nuw nsw i64 %0, 3

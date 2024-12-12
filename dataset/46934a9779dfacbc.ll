@@ -1,13 +1,13 @@
 
-%"struct.(anonymous namespace)::EnumConstant.2974954" = type { %"class.llvm::StringRef.2974879", %"struct.(anonymous namespace)::AvailabilityItem.2974880", %"class.std::optional.2974883", %"class.llvm::StringRef.2974879" }
-%"struct.(anonymous namespace)::AvailabilityItem.2974880" = type { i32, %"class.llvm::StringRef.2974879" }
-%"class.std::optional.2974883" = type { %"struct.std::_Optional_base.2974915" }
-%"struct.std::_Optional_base.2974915" = type { %"struct.std::_Optional_payload.2974916" }
-%"struct.std::_Optional_payload.2974916" = type { %"struct.std::_Optional_payload_base.2974917" }
-%"struct.std::_Optional_payload_base.2974917" = type { %"union.std::_Optional_payload_base<bool>::_Storage.2974918", i8 }
-%"union.std::_Optional_payload_base<bool>::_Storage.2974918" = type { %"struct.std::_Optional_payload_base<bool>::_Empty_byte.2974919" }
-%"struct.std::_Optional_payload_base<bool>::_Empty_byte.2974919" = type { i8 }
-%"class.llvm::StringRef.2974879" = type { ptr, i64 }
+%"struct.(anonymous namespace)::EnumConstant.3168443" = type { %"class.llvm::StringRef.3168368", %"struct.(anonymous namespace)::AvailabilityItem.3168369", %"class.std::optional.3168372", %"class.llvm::StringRef.3168368" }
+%"struct.(anonymous namespace)::AvailabilityItem.3168369" = type { i32, %"class.llvm::StringRef.3168368" }
+%"class.std::optional.3168372" = type { %"struct.std::_Optional_base.3168404" }
+%"struct.std::_Optional_base.3168404" = type { %"struct.std::_Optional_payload.3168405" }
+%"struct.std::_Optional_payload.3168405" = type { %"struct.std::_Optional_payload_base.3168406" }
+%"struct.std::_Optional_payload_base.3168406" = type { %"union.std::_Optional_payload_base<bool>::_Storage.3168407", i8 }
+%"union.std::_Optional_payload_base<bool>::_Storage.3168407" = type { %"struct.std::_Optional_payload_base<bool>::_Empty_byte.3168408" }
+%"struct.std::_Optional_payload_base<bool>::_Empty_byte.3168408" = type { i8 }
+%"class.llvm::StringRef.3168368" = type { ptr, i64 }
 
 ; 1 occurrences:
 ; rocksdb/optimized/compaction_picker.cc.ll
@@ -27,13 +27,13 @@ entry:
 ; minetest/optimized/serverenvironment.cpp.ll
 ; velox/optimized/Re2Functions.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001fa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000001fb(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %1, 3
   %4 = add nuw nsw i64 %2, 256
   %5 = sub nuw nsw i64 %4, %3
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr nusw ptr, ptr %6, i64 %5
+  %7 = getelementptr nusw nuw ptr, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -53,19 +53,20 @@ entry:
   ret ptr %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; gromacs/optimized/mshift.cpp.ll
 ; oiio/optimized/printinfo.cpp.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
+; velox/optimized/DenseHll.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000017a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %1, 3
-  %4 = xor i64 %3, -1
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr ptr, ptr %5, i64 %4
-  %7 = getelementptr ptr, ptr %6, i64 %2
+  %3 = ashr exact i64 %1, 1
+  %4 = add nsw i64 %2, 1
+  %5 = sub nuw nsw i64 %4, %3
+  %6 = getelementptr nusw i8, ptr %0, i64 %1
+  %7 = getelementptr nusw i16, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -88,13 +89,13 @@ entry:
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/cc1gen_reproducer_main.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001ea(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000001eb(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %1, 6
   %4 = add nuw nsw i64 %2, 1
   %5 = sub nuw i64 %4, %3
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr nusw %"struct.(anonymous namespace)::EnumConstant.2974954", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"struct.(anonymous namespace)::EnumConstant.3168443", ptr %6, i64 %5
   ret ptr %7
 }
 

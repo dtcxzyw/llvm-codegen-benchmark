@@ -10,7 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	vfadd.vv	v8, v8, v16
 	fli.d	fa5, 1.0
 	vmfle.vf	v16, v8, fa5
-	vmand.mm	v0, v16, v0
+	vmand.mm	v0, v0, v16
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -57,7 +57,7 @@ func0000000000000002:                   # @func0000000000000002
 	vfadd.vv	v8, v8, v16
 	fmv.d.x	fa5, zero
 	vmflt.vf	v16, v8, fa5
-	vmand.mm	v0, v16, v0
+	vmand.mm	v0, v0, v16
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 16, e64, m8, ta, ma

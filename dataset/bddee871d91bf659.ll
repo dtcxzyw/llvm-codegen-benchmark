@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -7
   %3 = icmp ult i8 %2, -6
@@ -56,7 +56,7 @@ entry:
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = icmp ult i8 %2, 2
@@ -68,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/ir_check.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000481(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -47
   %3 = icmp ult i8 %2, 5
@@ -82,7 +82,7 @@ entry:
 ; wireshark/optimized/packet-bacnet.c.ll
 ; wireshark/optimized/packet-dvmrp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i8 %1) #0 {
+define i1 @func000000000000018a(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, -2
   %3 = icmp sgt i32 %0, 0
@@ -95,7 +95,7 @@ entry:
 ; wireshark/optimized/packet-credssp.c.ll
 ; wireshark/optimized/packet-dhcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = icmp ult i8 %2, 47
@@ -110,7 +110,7 @@ entry:
 ; postgres/optimized/wchar_srv.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000048c(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -3
   %3 = icmp ult i8 %2, 2
@@ -122,7 +122,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-isis-lsp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 1
   %3 = icmp ne i32 %0, 0
@@ -133,7 +133,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-babel.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 4
   %3 = icmp eq i32 %0, 0
@@ -144,7 +144,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-lbmc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = icmp ult i8 %2, -2
@@ -156,7 +156,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -48
   %3 = icmp ult i8 %2, 10
@@ -170,7 +170,7 @@ entry:
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000048a(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, 95
   %3 = icmp ult i8 %2, 94
@@ -183,11 +183,11 @@ entry:
 ; icu/optimized/ucnv2022.ll
 ; icu/optimized/ucnvhz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000094(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -33
   %3 = icmp ult i8 %2, 94
-  %4 = icmp ult i32 %0, 93
+  %4 = icmp samesign ult i32 %0, 93
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }

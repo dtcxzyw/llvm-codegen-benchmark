@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 98 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; cmake/optimized/cover.c.ll
@@ -34,6 +34,8 @@
 ; llvm/optimized/RustDemangle.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -78,7 +80,6 @@
 ; slurm/optimized/gres_sched.ll
 ; slurm/optimized/gres_select_filter.ll
 ; slurm/optimized/job_test.ll
-; slurm/optimized/node_data.ll
 ; slurm/optimized/slurm_step_layout.ll
 ; slurm/optimized/slurmd.ll
 ; slurm/optimized/step_mgr.ll
@@ -93,6 +94,8 @@
 ; wireshark/optimized/packet-selfm.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-tn3270.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind

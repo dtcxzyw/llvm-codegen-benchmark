@@ -4,7 +4,7 @@
 ; spike/optimized/vrgather_vv.ll
 ; z3/optimized/aig.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -2
   %4 = icmp eq i64 %3, %0
@@ -28,10 +28,10 @@ entry:
 ; hermes/optimized/rust-api.cpp.ll
 ; hermes/optimized/synth.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000012a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp samesign ule i64 %3, %0
   %5 = icmp ult i64 %3, %1
   %6 = or i1 %4, %5
   ret i1 %6
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/transaction.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp ugt i64 %3, %1

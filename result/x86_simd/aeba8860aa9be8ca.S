@@ -1,15 +1,15 @@
 .LCPI0_0:
 	.long	13                              # 0xd
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000381:                   # @func0000000000000381
 	vpor	%ymm2, %ymm1, %ymm1
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
-	vpcmpeqd	%ymm0, %ymm1, %k0
+	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
 	.long	13                              # 0xd
-func00000000000001da:                   # @func00000000000001da
+func00000000000003aa:                   # @func00000000000003aa
 	vpor	%ymm2, %ymm1, %ymm1
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k0
@@ -18,7 +18,7 @@ func00000000000001da:                   # @func00000000000001da
 	retq
 .LCPI2_0:
 	.long	13                              # 0xd
-func00000000000001d6:                   # @func00000000000001d6
+func00000000000003a6:                   # @func00000000000003a6
 	vpor	%ymm2, %ymm1, %ymm1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2   # ymm2 = [13,13,13,13,13,13,13,13]
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -29,7 +29,7 @@ func00000000000001d6:                   # @func00000000000001d6
 	retq
 .LCPI3_0:
 	.long	12                              # 0xc
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	vpor	%ymm2, %ymm1, %ymm1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm2   # ymm2 = [12,12,12,12,12,12,12,12]
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -38,7 +38,7 @@ func0000000000000108:                   # @func0000000000000108
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	vpor	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -48,7 +48,7 @@ func0000000000000106:                   # @func0000000000000106
 	retq
 .LCPI5_0:
 	.long	8                               # 0x8
-func00000000000001ca:                   # @func00000000000001ca
+func000000000000038a:                   # @func000000000000038a
 	vpor	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsubd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0

@@ -16,7 +16,12 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 21 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/static_string.ll
+; boost/optimized/waker.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; entt/optimized/version.cpp.ll
 ; folly/optimized/AsyncSocket.cpp.ll

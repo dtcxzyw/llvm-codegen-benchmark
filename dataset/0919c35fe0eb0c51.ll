@@ -25,7 +25,7 @@ entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -57,7 +57,7 @@ entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
   %5 = shl nsw i64 -1, %4
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -70,11 +70,11 @@ entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = shl i64 2, %4
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
-; 53 occurrences:
+; 52 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -115,7 +115,6 @@ entry:
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -135,7 +134,7 @@ entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -148,7 +147,7 @@ entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = shl nsw i64 -1, %4
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 

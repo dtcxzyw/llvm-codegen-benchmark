@@ -45,7 +45,7 @@ entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 1
   %.masked = and i32 %0, -5
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   ret i32 %4
 }
 

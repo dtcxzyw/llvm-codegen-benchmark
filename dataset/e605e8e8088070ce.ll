@@ -1,11 +1,9 @@
 
-; 17 occurrences:
+; 15 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
-; glslang/optimized/Scan.cpp.ll
 ; glslang/optimized/disassemble.cpp.ll
 ; gromacs/optimized/computemultibodycutoffs.cpp.ll
-; gromacs/optimized/domdec_network.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; gromacs/optimized/plot.cpp.ll
 ; hermes/optimized/gmock-all.cc.ll
@@ -18,12 +16,12 @@
 ; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/codeBuffer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
   %4 = icmp sgt i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -37,12 +35,12 @@ entry:
 ; openusd/optimized/spec.cpp.ll
 ; verilator/optimized/V3Task.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = icmp sgt i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -55,24 +53,24 @@ entry:
 ; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
 ; ocio/optimized/ViewingRules.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32
   %4 = icmp ne i32 %3, 1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = icmp slt i32 %3, 2
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -87,25 +85,13 @@ entry:
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; yosys/optimized/equiv_struct.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, 4
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
-}
-
-; 2 occurrences:
-; llvm/optimized/AArch64PromoteConstant.cpp.ll
-; yosys/optimized/qwp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 137438952960
-  %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %0
-  ret i1 %4
 }
 
 ; 13 occurrences:
@@ -128,7 +114,7 @@ entry:
   %2 = lshr i64 %1, 9
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, 5
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -156,6 +142,17 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; llvm/optimized/AArch64PromoteConstant.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i1 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 137438953408
+  %3 = icmp ne i64 %2, 0
+  %4 = and i1 %0, %3
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/correlationhistory.cpp.ll
@@ -166,14 +163,14 @@ entry:
   %2 = lshr i64 %1, 3
   %3 = trunc i64 %2 to i32
   %4 = icmp sgt i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/memory.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, -576460752303423488
   %2 = icmp ne i64 %.mask, -1152921504606846976

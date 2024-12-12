@@ -30,13 +30,13 @@ func000000000000000f:                   # @func000000000000000f
 	subl	%edi, %esi
 	leal	32(%rsi), %eax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	subl	%edi, %esi
+	leal	-307(%rsi), %eax
+	retq
 func0000000000000009:                   # @func0000000000000009
 	subl	%edi, %esi
 	leal	8(%rsi), %eax
-	retq
-func0000000000000003:                   # @func0000000000000003
-	subl	%edi, %esi
-	leal	64(%rsi), %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	subl	%edi, %esi

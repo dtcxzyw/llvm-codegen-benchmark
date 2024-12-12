@@ -19,6 +19,18 @@ func0000000000000032:                   # @func0000000000000032
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
+func0000000000000060:                   # @func0000000000000060
+	andi	a1, a1, 255
+	sltiu	a1, a1, 2
+	xori	a1, a1, 1
+	and	a0, a0, a1
+	ret
+func0000000000000062:                   # @func0000000000000062
+	andi	a1, a1, 255
+	sltiu	a1, a1, 32
+	xori	a1, a1, 1
+	and	a0, a0, a1
+	ret
 func0000000000000018:                   # @func0000000000000018
 	sext.b	a1, a1
 	slti	a1, a1, 123
@@ -36,7 +48,7 @@ func0000000000000020:                   # @func0000000000000020
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000052:                   # @func0000000000000052
 	andi	a1, a1, 255
 	sltiu	a1, a1, 2
 	and	a0, a0, a1

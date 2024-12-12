@@ -1,4 +1,15 @@
 
+; 1 occurrences:
+; ruby/optimized/numeric.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp slt i64 %2, 0
+  %4 = select i1 %3, i64 %1, i64 %2
+  %5 = sub nsw i64 %4, %0
+  ret i64 %5
+}
+
 ; 4 occurrences:
 ; opencv/optimized/logtagmanager.cpp.ll
 ; openssl/optimized/libcrypto-lib-e_rc4_hmac_md5.ll
@@ -40,9 +51,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; qemu/optimized/util_hbitmap.c.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -52,7 +62,7 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
 ; rust-analyzer-rs/optimized/3jiy4rg0squ6unio.ll
@@ -66,6 +76,7 @@ entry:
 ; rust-analyzer-rs/optimized/z27qhj0ivx434rk.ll
 ; tokenizers-rs/optimized/1ve5rid4048y19bt.ll
 ; wasmtime-rs/optimized/5b6rejgre7fzh1ir.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
@@ -78,7 +89,7 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
+; 18 occurrences:
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
 ; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
@@ -91,12 +102,30 @@ entry:
 ; tokenizers-rs/optimized/3yaq830kuxi6xpg5.ll
 ; wasmtime-rs/optimized/5b6rejgre7fzh1ir.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; zed-rs/optimized/a48ncfl2mo4yu8srnhcxrs0e7.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 2
   %4 = select i1 %3, i64 %1, i64 %2
   %5 = sub nuw i64 %4, %0
+  ret i64 %5
+}
+
+; 2 occurrences:
+; boost/optimized/path.ll
+; icu/optimized/rematch.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, -1
+  %4 = select i1 %3, i64 %1, i64 %2
+  %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
 

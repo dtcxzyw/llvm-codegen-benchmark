@@ -1,5 +1,7 @@
 
 ; 113 occurrences:
+; boost/optimized/ipv6_address_rule.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/arcread.cpp.ll
 ; cmake/optimized/x86.c.ll
 ; cpython/optimized/Python-ast.ll
@@ -20,7 +22,6 @@
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/pata_amd.ll
 ; linux/optimized/sha3_generic.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/MCAsmStreamer.cpp.ll
@@ -71,7 +72,6 @@
 ; mitsuba3/optimized/volpath.cpp.ll
 ; ncnn/optimized/mat.cpp.ll
 ; nuttx/optimized/lib_inetaton.c.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/weighted_median_filter.cpp.ll
 ; openjdk/optimized/jcsample.ll
 ; openmpi/optimized/coll_basic_neighbor_allgather.ll
@@ -137,6 +137,7 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; mitsuba3/optimized/builder.cpp.ll
 ; opencv/optimized/local_optimization.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
@@ -152,7 +153,6 @@ entry:
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
 ; quest/optimized/QuEST_cpu.c.ll
 ; raylib/optimized/rtextures.c.ll
-; verilator/optimized/V3String.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {
 entry:
@@ -202,7 +202,6 @@ entry:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/nfs4xdr.ll
-; linux/optimized/tbxfroot.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/CGExprAgg.cpp.ll
@@ -215,6 +214,7 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/libnode.crypto_keys.ll
@@ -264,14 +264,13 @@ entry:
   ret i32 %2
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/MCObjectStreamer.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
 ; minetest/optimized/test_map.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; openjdk/optimized/interp_masm_x86.ll
 ; openjdk/optimized/stubGenerator_x86_64_aes.ll
 ; qemu/optimized/hw_display_ati.c.ll
@@ -286,7 +285,7 @@ entry:
   ret i32 %2
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
@@ -294,7 +293,6 @@ entry:
 ; gromacs/optimized/slasq2.cpp.ll
 ; linux/optimized/early_ioremap.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; minetest/optimized/test_map.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -321,9 +319,10 @@ entry:
   ret i32 %2
 }
 
-; 183 occurrences:
+; 186 occurrences:
 ; arrow/optimized/UriParse.c.ll
 ; arrow/optimized/compare_internal.cc.ll
+; boost/optimized/ipv6_address_rule.ll
 ; freetype/optimized/ftbitmap.c.ll
 ; gromacs/optimized/lincs.cpp.ll
 ; icu/optimized/n2builder.ll
@@ -398,6 +397,8 @@ entry:
 ; lief/optimized/VectorStream.cpp.ll
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/test_map.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll

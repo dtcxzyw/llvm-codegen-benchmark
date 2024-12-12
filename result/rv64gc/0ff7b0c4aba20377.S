@@ -1,4 +1,12 @@
-func00000000000000c1:                   # @func00000000000000c1
+func000000000000018c:                   # @func000000000000018c
+	slli	a0, a0, 48
+	snez	a2, a2
+	srli	a0, a0, 48
+	and	a1, a1, a2
+	snez	a0, a0
+	and	a0, a0, a1
+	ret
+func0000000000000181:                   # @func0000000000000181
 	slli	a0, a0, 48
 	snez	a2, a2
 	srli	a0, a0, 48
@@ -7,7 +15,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	slli	a1, a1, 48
 	seqz	a2, a2
 	srli	a1, a1, 48

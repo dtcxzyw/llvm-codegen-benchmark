@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/buffer_piece_border.ll
 ; g2o/optimized/marginal_covariance_cholesky.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; msdfgen/optimized/edge-segments.cpp.ll
@@ -10,7 +11,7 @@
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fsub double %0, %1
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 

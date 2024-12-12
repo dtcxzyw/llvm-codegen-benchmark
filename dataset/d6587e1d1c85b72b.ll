@@ -1,19 +1,9 @@
 
-; 125 occurrences:
+; 108 occurrences:
 ; clamav/optimized/mew.c.ll
-; clamav/optimized/pe.c.ll
-; clamav/optimized/petite.c.ll
-; clamav/optimized/spin.c.ll
 ; clamav/optimized/unsp.c.ll
 ; clamav/optimized/upack.c.ll
-; clamav/optimized/upx.c.ll
 ; hyperscan/optimized/scratch.c.ll
-; hyperscan/optimized/tamaramacompile.cpp.ll
-; jemalloc/optimized/emap.ll
-; jemalloc/optimized/emap.pic.ll
-; jemalloc/optimized/emap.sym.ll
-; libwebp/optimized/frame_dec.c.ll
-; libwebp/optimized/webp_enc.c.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -112,13 +102,6 @@
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; opencv/optimized/lapack.cpp.ll
-; openjdk/optimized/generateOopMap.ll
-; openjdk/optimized/method.ll
-; openjdk/optimized/methodData.ll
-; php/optimized/browscap.ll
-; php/optimized/softmagic.ll
-; php/optimized/string.ll
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; z3/optimized/smt_clause_proof.cpp.ll
@@ -126,12 +109,51 @@
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
+define i64 @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = ptrtoint ptr %4 to i64
+  %6 = add i64 %5, 15
+  ret i64 %6
+}
+
+; 4 occurrences:
+; clamav/optimized/petite.c.ll
+; clamav/optimized/upx.c.ll
+; libwebp/optimized/webp_enc.c.ll
+; ropey-rs/optimized/1zgfltkx0c00yngh.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = ptrtoint ptr %4 to i64
+  %6 = add i64 %5, 15
+  ret i64 %6
+}
+
+; 13 occurrences:
+; clamav/optimized/upack.c.ll
+; hyperscan/optimized/tamaramacompile.cpp.ll
+; jemalloc/optimized/emap.ll
+; jemalloc/optimized/emap.pic.ll
+; jemalloc/optimized/emap.sym.ll
+; libwebp/optimized/frame_dec.c.ll
+; libwebp/optimized/webp_enc.c.ll
+; opencv/optimized/lapack.cpp.ll
+; openjdk/optimized/generateOopMap.ll
+; openjdk/optimized/method.ll
+; openjdk/optimized/methodData.ll
+; php/optimized/browscap.ll
+; php/optimized/string.ll
+; Function Attrs: nounwind
 define i64 @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 %0
   %5 = ptrtoint ptr %4 to i64
-  %6 = add i64 %5, 15
+  %6 = add i64 %5, 3
   ret i64 %6
 }
 
@@ -147,8 +169,22 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
-; clamav/optimized/upack.c.ll
+; 4 occurrences:
+; clamav/optimized/pe.c.ll
+; clamav/optimized/spin.c.ll
+; php/optimized/softmagic.ll
+; php/optimized/string.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000038(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = ptrtoint ptr %4 to i64
+  %6 = add i64 %5, 1
+  ret i64 %6
+}
+
+; 4 occurrences:
 ; linux/optimized/ah6.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/slub.ll
@@ -159,7 +195,7 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = ptrtoint ptr %4 to i64
-  %6 = add i64 %5, 8
+  %6 = add i64 %5, 7
   ret i64 %6
 }
 

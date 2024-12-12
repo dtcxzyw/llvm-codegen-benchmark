@@ -19,34 +19,33 @@ func000000000000000d:                   # @func000000000000000d
 	addiw	a1, a1, 896
 	add	a0, a0, a1
 	ret
+func000000000000000f:                   # @func000000000000000f
+	andi	a1, a1, 1
+	li	a3, 18
+	mul	a2, a2, a3
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	add	a0, a0, a1
+	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 1
-	bnez	a1, .LBB2_2
+	bnez	a1, .LBB3_2
 	slli	a1, a2, 2
 	add	a2, a2, a1
 	add	a0, a0, a2
 	ret
-.LBB2_2:
+.LBB3_2:
 	li	a2, 5
 	add	a0, a0, a2
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, 1
-	bnez	a1, .LBB3_2
+	bnez	a1, .LBB4_2
 	slli	a1, a2, 1
 	add	a2, a2, a1
 	add	a0, a0, a2
 	ret
-.LBB3_2:
+.LBB4_2:
 	li	a2, 2
 	add	a0, a0, a2
-	ret
-func000000000000000f:                   # @func000000000000000f
-	andi	a1, a1, 1
-	slli	a3, a2, 3
-	slli	a2, a2, 5
-	sub	a2, a2, a3
-	addi	a1, a1, -1
-	and	a1, a1, a2
-	add	a0, a0, a1
 	ret

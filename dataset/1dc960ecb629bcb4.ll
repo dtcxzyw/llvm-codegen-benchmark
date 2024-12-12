@@ -10,7 +10,7 @@
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -31,7 +31,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -55,7 +55,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -69,7 +69,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -86,27 +86,25 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; hyperscan/optimized/rose_build_program.cpp.ll
-; llvm/optimized/CoverageMapping.cpp.ll
-; llvm/optimized/CoverageMappingWriter.cpp.ll
-; llvm/optimized/RegAllocFast.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp uge i32 %1, %2
-  %4 = and i1 %3, %0
-  %5 = freeze i1 %4
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; llvm/optimized/LoopUnroll.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
+  %5 = freeze i1 %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; hyperscan/optimized/rose_build_program.cpp.ll
+; llvm/optimized/RegAllocFast.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign uge i32 %1, %2
+  %4 = and i1 %0, %3
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -118,7 +116,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = freeze i1 %4
   ret i1 %5
 }

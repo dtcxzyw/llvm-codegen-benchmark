@@ -23,7 +23,7 @@ entry:
 ; opencv/optimized/trackerMIL_legacy.cpp.ll
 ; opencv/optimized/tracking_by_matching.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
   %4 = icmp slt i32 %1, 0

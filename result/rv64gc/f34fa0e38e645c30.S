@@ -36,7 +36,7 @@ func0000000000000008:                   # @func0000000000000008
 .LBB4_2:                                # %entry
 	ret
 .LCPI5_0:
-	.quad	0x3ff0000000000000              # double 1
+	.quad	0x4066800000000000              # double 180
 func000000000000000a:                   # @func000000000000000a
 	lui	a2, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a2)

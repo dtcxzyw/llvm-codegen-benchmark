@@ -29,3 +29,21 @@ func0000000000000008:                   # @func0000000000000008
 .LBB5_2:
 	li	a0, 80
 	ret
+func0000000000000014:                   # @func0000000000000014
+	srli	a0, a0, 32
+	beqz	a0, .LBB6_2
+	li	a0, 3
+	slli	a0, a0, 44
+	ret
+.LBB6_2:
+	li	a0, 7
+	slli	a0, a0, 43
+	ret
+func0000000000000018:                   # @func0000000000000018
+	li	a1, 3
+	bltu	a1, a0, .LBB7_2
+	li	a0, 5
+	ret
+.LBB7_2:
+	li	a0, 9
+	ret

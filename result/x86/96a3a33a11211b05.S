@@ -1,52 +1,59 @@
-func0000000000000085:                   # @func0000000000000085
+func0000000000000105:                   # @func0000000000000105
 	cmpq	%rsi, %rdx
 	seta	%cl
 	cmpq	%rsi, %rdi
 	setbe	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	cmpq	%rsi, %rdx
 	setne	%cl
 	cmpq	%rsi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	cmpq	%rsi, %rdx
 	setbe	%cl
 	cmpq	%rsi, %rdi
 	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000089:                   # @func0000000000000089
+func0000000000000109:                   # @func0000000000000109
 	cmpq	%rsi, %rdx
 	seta	%cl
 	cmpq	%rsi, %rdi
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorq	%rsi, %rdx
 	xorq	%rsi, %rdi
 	orq	%rdx, %rdi
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func0000000000000129:                   # @func0000000000000129
+	cmpq	%rsi, %rdx
+	setae	%cl
+	cmpq	%rsi, %rdi
+	setae	%al
+	andb	%cl, %al
+	retq
+func000000000000002c:                   # @func000000000000002c
 	cmpq	%rsi, %rdx
 	sete	%cl
 	cmpq	%rsi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	cmpq	%rsi, %rdx
 	seta	%cl
 	cmpq	%rsi, %rdi
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000094:                   # @func0000000000000094
+func0000000000000124:                   # @func0000000000000124
 	cmpq	%rsi, %rdx
 	setae	%cl
 	cmpq	%rsi, %rdi

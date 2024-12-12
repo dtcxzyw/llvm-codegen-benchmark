@@ -1,10 +1,9 @@
 func000000000000000a:                   # @func000000000000000a
 	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%ymm2, %ymm1, %ymm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
-	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
+	vpmovw2m	%xmm0, %k1
+	vpxor	%ymm2, %ymm1, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpgtd	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -30,10 +29,10 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000006:                   # @func0000000000000006
 	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%ymm2, %ymm1, %ymm1
-	vpmovd2m	%ymm1, %k1
-	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
+	vpmovw2m	%xmm0, %k1
+	vpxor	%ymm2, %ymm1, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpgtd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

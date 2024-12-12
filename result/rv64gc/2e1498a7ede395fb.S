@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	slli	a3, a2, 4
 	slli	a2, a2, 6
 	sub	a2, a2, a3
@@ -7,7 +7,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000002cc:                   # @func00000000000002cc
+func000000000000098c:                   # @func000000000000098c
 	slli	a3, a2, 3
 	slli	a2, a2, 5
 	sub	a2, a2, a3

@@ -1,6 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
-	leal	(%rdx,%rdx), %eax
-	andl	$11141290, %eax                 # imm = 0xAA00AA
+	leal	(,%rdx,4), %eax
+	andl	$13369548, %eax                 # imm = 0xCC00CC
 	xorl	%esi, %edi
 	xorl	%edi, %eax
 	andl	$16711935, %eax                 # imm = 0xFF00FF

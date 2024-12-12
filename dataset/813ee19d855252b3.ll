@@ -35,20 +35,6 @@ entry:
 }
 
 ; 3 occurrences:
-; linux/optimized/intel_audio.ll
-; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_voronoi.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 3, %2
-  %4 = xor i32 %3, -1
-  %5 = or i32 %0, %1
-  %6 = and i32 %5, %4
-  ret i32 %6
-}
-
-; 3 occurrences:
 ; linux/optimized/intel_display_power_well.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
@@ -71,6 +57,19 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
+  %4 = xor i32 %3, -1
+  %5 = or i32 %0, %1
+  %6 = and i32 %5, %4
+  ret i32 %6
+}
+
+; 2 occurrences:
+; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 262144, %2
   %4 = xor i32 %3, -1
   %5 = or i32 %0, %1
   %6 = and i32 %5, %4

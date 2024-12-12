@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 15 occurrences:
 ; hdf5/optimized/H5B2int.c.ll
 ; icu/optimized/collationdata.ll
 ; jemalloc/optimized/tcache.ll
@@ -8,6 +8,9 @@
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/regset.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; redis/optimized/tcache.ll

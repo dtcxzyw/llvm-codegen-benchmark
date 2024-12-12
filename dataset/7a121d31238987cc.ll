@@ -44,4 +44,17 @@ entry:
   ret i32 %2
 }
 
+; 4 occurrences:
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0) #0 {
+entry:
+  %1 = lshr i32 -1, %0
+  %2 = add nuw i32 %1, 1
+  ret i32 %2
+}
+
 attributes #0 = { nounwind }

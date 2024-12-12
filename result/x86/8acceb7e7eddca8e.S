@@ -1,6 +1,6 @@
 func000000000000000e:                   # @func000000000000000e
 	vcvtusi2sd	%esi, %xmm1, %xmm1
-	vucomisd	%xmm0, %xmm1
+	vucomisd	%xmm1, %xmm0
 	setp	%cl
 	setne	%al
 	orb	%cl, %al

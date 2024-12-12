@@ -37,7 +37,7 @@
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %1, 32
@@ -57,7 +57,7 @@ entry:
 ; pcg-cpp/optimized/pcg-demo.cpp.ll
 ; vcpkg/optimized/uuid.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %1, 32
@@ -85,7 +85,7 @@ entry:
 ; qemu/optimized/block_vhdx-log.c.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %1, 32
@@ -94,7 +94,7 @@ entry:
   ret i1 %6
 }
 
-; 40 occurrences:
+; 43 occurrences:
 ; gromacs/optimized/awh.cpp.ll
 ; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/constr.cpp.ll
@@ -135,8 +135,11 @@ entry:
 ; tomlplusplus/optimized/toml.cpp.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/0eh1fm3h72yjwo2ipis72ui0f.ll
+; zed-rs/optimized/adlc6qfcwjhvmcaovuwfkwg5s.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %1, 32
@@ -149,7 +152,7 @@ entry:
 ; llvm/optimized/APINotesReader.cpp.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %1, 32
@@ -158,13 +161,14 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/miniz.c.ll
 ; tomlplusplus/optimized/toml.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %1, 32
@@ -176,7 +180,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineOperand.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 32
@@ -188,7 +192,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a9(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %1, 32
@@ -198,38 +202,14 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/extents.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %1, 32
-  %5 = or disjoint i64 %4, %3
-  %6 = icmp ugt i64 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; freetype/optimized/type1.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %1, 16
   %5 = or i64 %4, %3
   %6 = icmp eq i64 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; freetype/optimized/type1.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %1, 16
-  %5 = or i64 %4, %3
-  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 

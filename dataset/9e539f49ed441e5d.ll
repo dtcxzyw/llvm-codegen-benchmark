@@ -25,10 +25,12 @@ entry:
   ret i8 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/ConstantMerge.cpp.ll
+; llvm/optimized/LinkModules.cpp.ll
+; llvm/optimized/MergeFunctions.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000d(i1 %0, i8 %1, i32 %2) #0 {
 entry:

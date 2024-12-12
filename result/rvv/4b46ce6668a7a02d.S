@@ -3,7 +3,7 @@ func0000000000000040:                   # @func0000000000000040
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vnot.v	v10, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	bseti	a0, zero, 31

@@ -74,7 +74,7 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func0000000000000006:                   # @func0000000000000006
 	fmul.d	fa5, fa1, fa2
-	flt.d	a0, fa5, fa0
-	flt.d	a1, fa0, fa5
+	flt.d	a0, fa0, fa5
+	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret

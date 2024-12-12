@@ -23,7 +23,7 @@ entry:
 define i32 @func0000000000000055(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = shl nsw i32 %0, 1
   %6 = add nsw i32 %5, %4
   ret i32 %6
@@ -35,7 +35,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = shl nsw i32 %0, 2
   %6 = add nsw i32 %5, %4
   ret i32 %6

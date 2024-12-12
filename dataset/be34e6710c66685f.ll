@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 20 occurrences:
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; linux/optimized/regmap.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -10,7 +10,6 @@
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
@@ -21,7 +20,6 @@
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; velox/optimized/StringFunctions.cpp.ll
 ; xgboost/optimized/quantile_obj.cc.ll
-; z3/optimized/pb2bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
@@ -31,9 +29,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:

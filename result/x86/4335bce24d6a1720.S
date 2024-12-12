@@ -34,15 +34,15 @@ func0000000000000008:                   # @func0000000000000008
 	addl	%esi, %eax
 	addl	%edx, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
-	movl	%edi, %eax
-	shrl	$31, %eax
-	addl	%edi, %eax
-	sarl	%eax
-	addl	%esi, %eax
-	addl	%edx, %eax
-	retq
 func0000000000000001:                   # @func0000000000000001
+	movl	%edx, %eax
+	shrl	$31, %eax
+	addl	%edx, %eax
+	sarl	%eax
+	addl	%edi, %eax
+	addl	%esi, %eax
+	retq
+func0000000000000009:                   # @func0000000000000009
 	movl	%edi, %eax
 	shrl	$31, %eax
 	addl	%edi, %eax

@@ -11,7 +11,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

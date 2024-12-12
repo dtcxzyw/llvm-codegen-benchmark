@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; cvc5/optimized/symbol_table.cpp.ll
 ; libzmq/optimized/proxy.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
@@ -11,7 +11,6 @@
 ; meshlab/optimized/mainwindow_Init.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/plugin_manager.cpp.ll
-; meshlab/optimized/render_plugin_container.cpp.ll
 ; openjdk/optimized/block.ll
 ; openjdk/optimized/threads.ll
 ; openspiel/optimized/solitaire.cc.ll
@@ -30,7 +29,7 @@ entry:
 ; cvc5/optimized/timeout_core_manager.cpp.ll
 ; openjdk/optimized/threads.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000082(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp eq ptr %0, %1
@@ -84,7 +83,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000098(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp ne ptr %0, %1

@@ -1,8 +1,15 @@
-func000000000000023c:                   # @func000000000000023c
-	addl	$-3001, %esi                    # imm = 0xF447
+func0000000000000401:                   # @func0000000000000401
+	addl	$-99, %esi
+	cmpl	$2, %esi
+	adcl	$0, %edi
+	cmpl	$1, %edi
+	sete	%al
+	retq
+func0000000000000461:                   # @func0000000000000461
+	addl	$-7, %esi
 	xorl	%eax, %eax
-	cmpl	$5, %esi
+	cmpl	$-3, %esi
 	setb	%al
 	orl	%edi, %eax
-	setne	%al
+	sete	%al
 	retq

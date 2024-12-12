@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/intel_pstate.ll
 ; qemu/optimized/audio_ossaudio.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

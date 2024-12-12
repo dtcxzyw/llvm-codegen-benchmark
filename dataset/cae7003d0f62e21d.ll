@@ -1,6 +1,8 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/mpdecimal.ll
@@ -18,12 +20,14 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
   %3 = xor i64 %0, -1

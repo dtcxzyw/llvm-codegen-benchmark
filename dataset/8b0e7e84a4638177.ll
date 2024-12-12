@@ -1,5 +1,6 @@
 
 ; 34 occurrences:
+; boost/optimized/formatter.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; cmake/optimized/cmCTestMemCheckHandler.cxx.ll
 ; cmake/optimized/cmCTestRunTest.cxx.ll
@@ -15,7 +16,6 @@
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; ninja/optimized/metrics.cc.ll
 ; openjdk/optimized/jfrTimeConverter.ll
-; openmpi/optimized/threads_pthreads_yield.ll
 ; postgres/optimized/condition_variable.ll
 ; postgres/optimized/latch.ll
 ; postgres/optimized/timestamp.ll

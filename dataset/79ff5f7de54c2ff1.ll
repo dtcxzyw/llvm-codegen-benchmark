@@ -10,9 +10,9 @@
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = icmp eq i32 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -34,34 +34,12 @@ entry:
 ; qemu/optimized/tcg.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3072
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = icmp eq i32 %4, 0
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 11 occurrences:
-; cmake/optimized/json_writer.cpp.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
-; hermes/optimized/HBC.cpp.ll
-; hermes/optimized/JSLexer.cpp.ll
-; node/optimized/simdutf.ll
-; openusd/optimized/pathExpression.cpp.ll
-; openusd/optimized/pathParser.cpp.ll
-; openusd/optimized/predicateExpression.cpp.ll
-; php/optimized/html.ll
-; simdjson/optimized/simdjson.cpp.ll
-; velox/optimized/Utf8Utils.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 61440
-  %4 = or disjoint i32 %3, %1
-  %5 = icmp ugt i32 %4, 55295
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -72,26 +50,12 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; slurm/optimized/priority_multifactor.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 127
   %4 = or disjoint i32 %3, %1
   %5 = icmp ne i32 %4, 0
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 3 occurrences:
-; cmake/optimized/idna.c.ll
-; libuv/optimized/idna.c.ll
-; node/optimized/idna.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 253952
-  %4 = or i32 %3, %1
-  %5 = icmp ult i32 %4, 57344
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -107,9 +71,9 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 128
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = icmp ne i32 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

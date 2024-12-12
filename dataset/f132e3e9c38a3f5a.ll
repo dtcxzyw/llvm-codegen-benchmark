@@ -7,7 +7,7 @@
 define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -34,10 +34,10 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-corosync-totemnet.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -120,19 +120,22 @@ entry:
 ; qemu/optimized/accel_tcg_translate-all.c.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
-; 20 occurrences:
+; 24 occurrences:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/histogram.c.ll
 ; git/optimized/fast-import.ll
+; hermes/optimized/dtoa.c.ll
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/dtoa.cc.ll
 ; linux/optimized/deflate.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/input.ll
@@ -147,13 +150,14 @@ entry:
 ; openjdk/optimized/mulnode.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
+; php/optimized/zend_strtod.ll
 ; qemu/optimized/hw_misc_edu.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -161,10 +165,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/superword.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ult i32 %3, 2
   ret i1 %4
 }
@@ -178,10 +182,10 @@ entry:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; openjdk/optimized/postaloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp eq i32 %3, -1
   ret i1 %4
 }
@@ -200,7 +204,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
@@ -209,10 +213,10 @@ entry:
 ; darktable/optimized/OlympusDecompressor.cpp.ll
 ; opencv/optimized/lsd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000ca(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp sgt i32 %3, 16
   ret i1 %4
 }
@@ -223,10 +227,10 @@ entry:
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000ec(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp ne i32 %3, -1
   ret i1 %4
 }
@@ -238,10 +242,10 @@ entry:
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
@@ -252,7 +256,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ugt i32 %3, 1
   ret i1 %4
 }
@@ -260,10 +264,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp slt i32 %3, 1
   ret i1 %4
 }
@@ -271,10 +275,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineLateInstrsCleanup.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -285,29 +289,18 @@ entry:
 define i1 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp slt i32 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; abseil-cpp/optimized/str_cat_test.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or i32 %2, %0
-  %4 = icmp ugt i32 %3, 65535
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -315,10 +308,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ehci-hcd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp ult i32 %3, 64
   ret i1 %4
 }
@@ -329,7 +322,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ult i32 %3, 65536
   ret i1 %4
 }
@@ -337,10 +330,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationdatabuilder.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp eq i32 %3, 1
   ret i1 %4
 }
@@ -349,10 +342,10 @@ entry:
 ; opencv/optimized/depth_cleaner.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -360,10 +353,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/array.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }

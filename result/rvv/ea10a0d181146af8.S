@@ -193,6 +193,17 @@ func0000000000000047:                   # @func0000000000000047
 	vmfne.vf	v13, v8, fa5
 	vmand.mm	v0, v13, v12
 	ret
+func0000000000000036:                   # @func0000000000000036
+	lui	a0, 389120
+	fli.s	fa5, inf
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmflt.vf	v12, v8, fa5
+	vmfgt.vf	v13, v8, fa5
+	fmv.w.x	fa5, a0
+	vmfge.vf	v14, v8, fa5
+	vmor.mm	v8, v13, v12
+	vmandn.mm	v0, v8, v14
+	ret
 func0000000000000074:                   # @func0000000000000074
 	lui	a0, 280480
 	fmv.w.x	fa5, a0

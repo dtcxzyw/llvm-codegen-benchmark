@@ -1,11 +1,12 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_temperature.c.ll
 ; graphviz/optimized/gvrender_core_svg.c.ll
 ; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libwebp/optimized/frame_enc.c.ll
+; lightgbm/optimized/metric.cpp.ll
 ; oiio/optimized/imagebufalgo_compare.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(double %0, float %1) #0 {

@@ -1,11 +1,8 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	scvtf	v2.4s, v2.4s
-	scvtf	v3.4s, v3.4s
-	movi	v4.4s, #191, lsl #24
-	fadd	v3.4s, v3.4s, v4.4s
-	fadd	v2.4s, v2.4s, v4.4s
-	fsub	v0.4s, v0.4s, v2.4s
-	fsub	v1.4s, v1.4s, v3.4s
+	scvtf	s1, w0
+	fmov	s2, #-0.50000000
+	fadd	s1, s1, s2
+	fsub	s0, s0, s1
 	ret
                                         // -- End function

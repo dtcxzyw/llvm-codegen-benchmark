@@ -20,14 +20,6 @@ func0000000000000215:                   # @func0000000000000215
 	add	a0, a0, a2
 	addiw	a0, a0, -399
 	ret
-func000000000000063d:                   # @func000000000000063d
-	sext.w	a2, a2
-	addi	a2, a2, 2
-	snez	a2, a2
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addiw	a0, a0, -1
-	ret
 func0000000000000430:                   # @func0000000000000430
 	srliw	a2, a2, 8
 	sltiu	a2, a2, 125

@@ -1,5 +1,5 @@
 
-; 354 occurrences:
+; 356 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/bdcSpfd.c.ll
@@ -21,6 +21,7 @@
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; flac/optimized/stream_decoder.c.ll
+; git/optimized/diff.ll
 ; git/optimized/pack-bitmap.ll
 ; git/optimized/sparse-index.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -59,6 +60,7 @@
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/skcipher.ll
 ; linux/optimized/vt.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/AccelTable.cpp.ll
@@ -75,9 +77,9 @@
 ; llvm/optimized/MachineOperand.cpp.ll
 ; llvm/optimized/MachineStableHash.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/StackLifetime.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/Type.cpp.ll
 ; llvm/optimized/UDTLayout.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -127,7 +129,6 @@
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/media.cpp.ll
 ; php/optimized/zend_call_graph.ll
-; postgres/optimized/refint.ll
 ; postgres/optimized/tsgistidx.ll
 ; proxygen/optimized/QPACKDecoder.cpp.ll
 ; qemu/optimized/migration_block-dirty-bitmap.c.ll
@@ -200,7 +201,6 @@
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/ctx_solver_simplify_tactic.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
@@ -352,6 +352,8 @@
 ; z3/optimized/tseitin_cnf_tactic.cpp.ll
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/wmax.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
@@ -394,7 +396,7 @@ entry:
   ret i64 %3
 }
 
-; 20 occurrences:
+; 22 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
@@ -412,6 +414,8 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/oopMap.ll
 ; openjdk/optimized/stackChunkOop.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; wasmtime-rs/optimized/2niyyz8nbah1jl4k.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll

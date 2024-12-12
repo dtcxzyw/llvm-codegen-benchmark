@@ -3,33 +3,11 @@
 ; assimp/optimized/IRRMeshLoader.cpp.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0) #0 {
+define i64 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 2
   %2 = select i1 %1, i64 32, i64 0
   ret i64 %2
-}
-
-; 12 occurrences:
-; cpython/optimized/Hacl_Hash_SHA2.ll
-; glslang/optimized/hlslParseHelper.cpp.ll
-; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
-; llvm/optimized/X86ExpandPseudo.cpp.ll
-; openspiel/optimized/dou_dizhu_utils.cc.ll
-; php/optimized/pcre2_compile.ll
-; qemu/optimized/crypto_cipher.c.ll
-; ruby/optimized/string.ll
-; sentencepiece/optimized/time.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0) #0 {
-entry:
-  %1 = add nsw i32 %0, -127
-  %2 = icmp ult i32 %1, -95
-  %3 = select i1 %2, i64 4, i64 1
-  ret i64 %3
 }
 
 ; 4 occurrences:
@@ -49,7 +27,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/process.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(i32 %0) #0 {
+define i64 @func000000000000004a(i32 %0) #0 {
 entry:
   %1 = add nuw i32 %0, 16777216
   %2 = icmp sgt i32 %1, 33554431
@@ -57,8 +35,7 @@ entry:
   ret i64 %3
 }
 
-; 33 occurrences:
-; cmake/optimized/delta_common.c.ll
+; 32 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; csmith/optimized/StatementGoto.cpp.ll
@@ -100,6 +77,24 @@ entry:
   ret i64 %3
 }
 
+; 8 occurrences:
+; cpython/optimized/Hacl_Hash_SHA2.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
+; php/optimized/pcre2_compile.ll
+; qemu/optimized/crypto_cipher.c.ll
+; sentencepiece/optimized/time.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000024(i32 %0) #0 {
+entry:
+  %1 = add nsw i32 %0, -3
+  %2 = icmp ult i32 %1, 2
+  %3 = select i1 %2, i64 8, i64 16
+  ret i64 %3
+}
+
 ; 1 occurrences:
 ; llvm/optimized/Stmt.cpp.ll
 ; Function Attrs: nounwind
@@ -113,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/xtc2.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i32 %0) #0 {
+define i64 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -104031
   %2 = icmp ult i32 %1, -104032
@@ -127,7 +122,7 @@ entry:
 ; tinyrenderer/optimized/model.cpp.ll
 ; tinyrenderer/optimized/our_gl.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0) #0 {
+define i64 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 2
   %2 = select i1 %1, i64 8, i64 16

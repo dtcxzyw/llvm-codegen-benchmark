@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	subq	%rsi, %rdx
 	sarq	$3, %rdx
 	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
@@ -6,7 +6,7 @@ func0000000000000061:                   # @func0000000000000061
 	addq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	subq	%rsi, %rdx
 	sarq	$3, %rdx
 	movabsq	$3689348814741910323, %rax      # imm = 0x3333333333333333
@@ -15,7 +15,7 @@ func0000000000000071:                   # @func0000000000000071
 	cmpq	$1, %rax
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	subq	%rsi, %rdx
 	sarq	$3, %rdx
 	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
@@ -23,7 +23,7 @@ func0000000000000041:                   # @func0000000000000041
 	addq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	subq	%rsi, %rdx
 	sarq	$3, %rdx
 	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
@@ -31,7 +31,7 @@ func0000000000000051:                   # @func0000000000000051
 	addq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	subq	%rsi, %rdx
 	sarq	$4, %rdx
 	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
@@ -40,7 +40,7 @@ func0000000000000044:                   # @func0000000000000044
 	cmpq	$4, %rax
 	setb	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	subq	%rsi, %rdx
 	sarq	$3, %rdx
 	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
@@ -49,7 +49,7 @@ func0000000000000054:                   # @func0000000000000054
 	cmpq	$8, %rax
 	setb	%al
 	retq
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	subq	%rsi, %rdx
 	sarq	$3, %rdx
 	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
@@ -58,7 +58,7 @@ func0000000000000076:                   # @func0000000000000076
 	testq	%rax, %rax
 	setle	%al
 	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	subq	%rsi, %rdx
 	sarq	$3, %rdx
 	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555

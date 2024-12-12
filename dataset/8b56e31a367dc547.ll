@@ -1,9 +1,28 @@
 
-; 74 occurrences:
+; 93 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; g2o/optimized/sbacam.cpp.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/emit.c.ll
@@ -79,7 +98,7 @@ define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
   %4 = fneg double %3
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

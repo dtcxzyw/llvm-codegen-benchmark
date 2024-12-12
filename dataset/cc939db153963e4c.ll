@@ -1,5 +1,5 @@
 
-; 492 occurrences:
+; 497 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; arrow/optimized/memory_pool.cc.ll
@@ -10,6 +10,7 @@
 ; cpython/optimized/weakrefobject.ll
 ; curl/optimized/libcurl_la-http.ll
 ; cvc5/optimized/constraint.cpp.ll
+; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; flac/optimized/operations_shorthand_picture.c.ll
@@ -35,19 +36,14 @@
 ; libzmq/optimized/pipe.cpp.ll
 ; linux/optimized/device_pm.ll
 ; linux/optimized/i2c-core-base.ll
-; linux/optimized/inet_connection_sock.ll
 ; linux/optimized/intel_dsi_vbt.ll
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/maple_tree.ll
-; linux/optimized/mlme.ll
 ; linux/optimized/pci-acpi.ll
 ; linux/optimized/posix-timers.ll
 ; linux/optimized/property.ll
 ; linux/optimized/rhashtable.ll
 ; linux/optimized/scan.ll
-; linux/optimized/spectmgmt.ll
-; linux/optimized/sta_info.ll
 ; linux/optimized/static_call_inline.ll
 ; linux/optimized/swnode.ll
 ; linux/optimized/tcp_input.ll
@@ -254,7 +250,6 @@
 ; llvm/optimized/Pointer.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
@@ -364,6 +359,7 @@
 ; luau/optimized/CostModel.cpp.ll
 ; luau/optimized/Linter.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; minetest/optimized/collision.cpp.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
@@ -384,7 +380,6 @@
 ; mold/optimized/icf.cc.SH4.cc.ll
 ; mold/optimized/icf.cc.SPARC64.cc.ll
 ; mold/optimized/icf.cc.X86_64.cc.ll
-; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/grfmt_jpeg.cpp.ll
@@ -456,9 +451,13 @@
 ; ring-rs/optimized/4krjvpwhiya9iudo.ll
 ; rocksdb/optimized/column_family.cc.ll
 ; rocksdb/optimized/ldb_cmd.cc.ll
+; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
+; rust-analyzer-rs/optimized/266k6bqg3m0kg73d.ll
+; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; rust-analyzer-rs/optimized/4jgoi87ys7cbhj0l.ll
+; rust-analyzer-rs/optimized/4x4kq4gfl0tghxcw.ll
+; rust-analyzer-rs/optimized/53ntv1pfq7fnns7g.ll
 ; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
-; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; slurm/optimized/sinfo.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; verilator/optimized/V3Class.cpp.ll
@@ -492,6 +491,12 @@
 ; wolfssl/optimized/ssl.c.ll
 ; z3/optimized/grobner.cpp.ll
 ; z3/optimized/smt_model_finder.cpp.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; zed-rs/optimized/7z2xfgroq6luy23s4a62wgt90.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1) #0 {
 entry:
@@ -501,11 +506,12 @@ entry:
   ret i1 %3
 }
 
-; 169 occurrences:
+; 171 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/type.cc.ll
+; boost/optimized/contract.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; git/optimized/unpack-trees.ll
 ; hermes/optimized/ESTreeIRGen-expr.cpp.ll
@@ -552,6 +558,7 @@ entry:
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/CompressInstEmitter.cpp.ll
 ; llvm/optimized/Constants.cpp.ll
+; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DataFlowSanitizer.cpp.ll
 ; llvm/optimized/Decl.cpp.ll

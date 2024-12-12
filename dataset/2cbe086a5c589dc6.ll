@@ -5,7 +5,7 @@
 define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = lshr i32 %3, 1
   ret i32 %4
 }
@@ -52,7 +52,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 7
   ret i32 %4
 }
@@ -83,7 +83,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 1
   ret i32 %4
 }
@@ -102,7 +102,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 6
   ret i32 %4
 }
@@ -119,7 +119,7 @@ entry:
 define i32 @func000000000000001e(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 1
   ret i32 %4
 }
@@ -130,7 +130,7 @@ entry:
 define i32 @func0000000000000012(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 20
   ret i32 %4
 }
@@ -142,19 +142,20 @@ entry:
 define i32 @func0000000000000016(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 6
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; velox/optimized/ArrayConstructor.cpp.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 3
   ret i32 %4
 }
@@ -165,7 +166,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 3
   ret i32 %4
 }
@@ -176,7 +177,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 1
   ret i32 %4
 }

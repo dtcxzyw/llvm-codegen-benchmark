@@ -82,7 +82,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
   %4 = select i1 %3, i64 %1, i64 %2
-  %5 = mul nsw i64 %4, %0
+  %5 = mul nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -126,17 +126,6 @@ entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 %1, i64 %2
   %5 = mul i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; cpython/optimized/longobject.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ugt i64 %2, 2305843009213693950
-  %4 = select i1 %3, i64 %1, i64 %2
-  %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
 

@@ -1,40 +1,40 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000361:                   # @func0000000000000361
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	testb	%al, %dil
 	sete	%al
 	retq
-func00000000000001b1:                   # @func00000000000001b1
+func0000000000000061:                   # @func0000000000000061
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	testb	%al, %dil
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000041:                   # @func0000000000000041
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	testb	%al, %dil
 	sete	%al
 	retq
-func0000000000000121:                   # @func0000000000000121
+func0000000000000241:                   # @func0000000000000241
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	testb	%al, %dil
 	sete	%al
 	retq
-func00000000000001f1:                   # @func00000000000001f1
+func00000000000003e1:                   # @func00000000000003e1
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	testb	%al, %dil
 	sete	%al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	movzbl	%dil, %eax
 	shrxl	%esi, %eax, %eax
 	andl	$4, %eax
 	shrl	$2, %eax
 	retq
-func00000000000001bc:                   # @func00000000000001bc
+func000000000000036c:                   # @func000000000000036c
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	testb	%al, %dil

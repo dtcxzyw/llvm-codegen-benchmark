@@ -184,6 +184,8 @@ entry:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/SkeletonMeshBuilder.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
@@ -201,10 +203,8 @@ entry:
 ; faiss/optimized/HNSW.cpp.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/quad_prog_solve.c.ll
-; gromacs/optimized/angle_correction.cpp.ll
 ; gromacs/optimized/autocorr.cpp.ll
 ; gromacs/optimized/bonded.cpp.ll
-; gromacs/optimized/boxutilities.cpp.ll
 ; gromacs/optimized/calculator.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/cubicsplinetable.cpp.ll
@@ -354,7 +354,7 @@ entry:
   ret i1 %2
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/mfsCore.c.ll
@@ -382,7 +382,6 @@ entry:
 ; entt/optimized/meta_any.cpp.ll
 ; entt/optimized/meta_type.cpp.ll
 ; entt/optimized/registry.cpp.ll
-; gromacs/optimized/angle_correction.cpp.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/calculator.cpp.ll
 ; gromacs/optimized/eigio.cpp.ll

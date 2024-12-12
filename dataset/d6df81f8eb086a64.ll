@@ -7,8 +7,8 @@
 define i1 @func0000000000000018(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %2, 0.000000e+00
-  %4 = and i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -22,7 +22,7 @@ define i1 @func000000000000000e(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp une double %2, 0.000000e+00
   %4 = and i1 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -38,8 +38,8 @@ entry:
 define i1 @func0000000000000004(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 1.000000e+07
-  %4 = and i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -90,7 +90,7 @@ define i1 @func0000000000000002(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp uno double %2, 0.000000e+00
   %4 = and i1 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -101,8 +101,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %2, 0.000000e+00
-  %4 = and i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -112,7 +112,7 @@ entry:
 define i1 @func000000000000001a(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp uge double %2, 2.000000e+01
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

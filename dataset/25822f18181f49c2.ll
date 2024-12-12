@@ -12,7 +12,7 @@
 ; openssl/optimized/libcrypto-shlib-property_parse.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = icmp eq i8 %2, 56
@@ -21,19 +21,7 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; minetest/optimized/database-files.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 1
-  %3 = icmp ne i8 %2, 0
-  %4 = icmp ugt i32 %0, 998
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
-; 16 occurrences:
+; 17 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; curl/optimized/libcurl_la-pop3.ll
 ; curl/optimized/libcurl_la-smtp.ll
@@ -44,6 +32,7 @@ entry:
 ; icu/optimized/ucnv2022.ll
 ; libquic/optimized/spdy_framer.cc.ll
 ; llvm/optimized/APFloat.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; protobuf/optimized/wire_format.cc.ll
 ; qemu/optimized/hw_scsi_esp.c.ll
 ; qemu/optimized/hw_scsi_scsi-bus.c.ll
@@ -51,7 +40,7 @@ entry:
 ; wireshark/optimized/packet-iso14443.c.ll
 ; wireshark/optimized/packet-mac-nr.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 16
   %3 = icmp eq i8 %2, 0
@@ -63,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/mmu.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 2
   %3 = icmp ne i8 %2, 0
@@ -72,14 +61,13 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; hdf5/optimized/H5Fint.c.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
-; wireshark/optimized/packet-isis-hello.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 5
   %3 = icmp eq i8 %2, 0
@@ -96,7 +84,7 @@ entry:
 ; redis/optimized/cluster_legacy.ll
 ; wireshark/optimized/packet-mpls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -108,11 +96,23 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = icmp ne i8 %2, 2
   %4 = icmp ult i32 %0, -2
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/MachOObjectFile.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000028c(i32 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 8
+  %3 = icmp eq i8 %2, 0
+  %4 = icmp ne i32 %0, 2
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }
@@ -122,7 +122,7 @@ entry:
 ; wireshark/optimized/packet-dvbci.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 2
   %3 = icmp eq i8 %2, 0
@@ -134,10 +134,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/tg3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000030c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 14
-  %3 = icmp ugt i8 %2, 5
+  %3 = icmp samesign ugt i8 %2, 5
   %4 = icmp ne i32 %0, 0
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5

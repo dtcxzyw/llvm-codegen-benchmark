@@ -1,8 +1,10 @@
 
-; 92 occurrences:
+; 87 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cmake/optimized/ntlm.c.ll
 ; cpython/optimized/compile.ll
 ; curl/optimized/libcurl_la-ntlm.ll
@@ -22,10 +24,8 @@
 ; lief/optimized/Note.cpp.ll
 ; lief/optimized/NoteAbi.cpp.ll
 ; linux/optimized/addrconf.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/drm_atomic_helper.ll
 ; linux/optimized/drm_vblank.ll
-; linux/optimized/fadvise.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/route.ll
@@ -51,13 +51,6 @@
 ; openusd/optimized/parserHelpers.cpp.ll
 ; openusd/optimized/value.cpp.ll
 ; php/optimized/math.ll
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/enumerator.ll
@@ -92,6 +85,8 @@
 ; wireshark/optimized/simple_statistics_dialog.cpp.ll
 ; wireshark/optimized/tap_parameter_dialog.cpp.ll
 ; wireshark/optimized/voip_calls_dialog.cpp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

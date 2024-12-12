@@ -1,9 +1,12 @@
 
-; 2 occurrences:
-; linux/optimized/intel_panel.ll
-; oiio/optimized/tiffinput.cpp.ll
+; 5 occurrences:
+; linux/optimized/ip6_output.ll
+; linux/optimized/ip_input.ll
+; linux/optimized/ip_output.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %.neg = sub i32 %1, %3
@@ -11,13 +14,11 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
-; linux/optimized/ip6_output.ll
-; linux/optimized/ip_input.ll
-; linux/optimized/ip_output.ll
-; postgres/optimized/bufpage.ll
+; 2 occurrences:
+; linux/optimized/intel_panel.ll
+; oiio/optimized/tiffinput.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000005(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %.neg = sub i32 %1, %3

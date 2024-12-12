@@ -1,90 +1,30 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	fmov	x10, d1
-	mov	x9, v0.d[1]
-	mov	x11, v1.d[1]
-	mul	x8, x8, x8
-	mul	x10, x10, x10
-	mul	x9, x9, x9
-	fmov	d0, x8
-	mul	x11, x11, x11
-	fmov	d1, x10
-	mov	v0.d[1], x9
-	mov	v1.d[1], x11
-	shl	v0.2d, v0.2d, #3
-	shl	v1.2d, v1.2d, #3
+	mul	x8, x0, x0
+	lsl	x0, x8, #3
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	fmov	x10, d1
-	mov	x9, v0.d[1]
-	mov	x11, v1.d[1]
-	mul	x8, x8, x8
-	mul	x10, x10, x10
-	mul	x9, x9, x9
-	fmov	d0, x8
-	mul	x11, x11, x11
-	fmov	d1, x10
-	mov	v0.d[1], x9
-	mov	v1.d[1], x11
-	shl	v0.2d, v0.2d, #2
-	shl	v1.2d, v1.2d, #2
-	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
-	fmov	x8, d0
-	fmov	x10, d1
-	mov	x9, v0.d[1]
-	mov	x11, v1.d[1]
-	mul	x8, x8, x8
-	mul	x10, x10, x10
-	mul	x9, x9, x9
-	fmov	d0, x8
-	mul	x11, x11, x11
-	fmov	d1, x10
-	mov	v0.d[1], x9
-	mov	v1.d[1], x11
-	shl	v0.2d, v0.2d, #3
-	shl	v1.2d, v1.2d, #3
+	mul	x8, x0, x0
+	lsl	x0, x8, #2
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	fmov	x10, d1
-	mov	x9, v0.d[1]
-	mov	x11, v1.d[1]
-	mul	x8, x8, x8
-	mul	x10, x10, x10
-	mul	x9, x9, x9
-	fmov	d0, x8
-	mul	x11, x11, x11
-	fmov	d1, x10
-	mov	v0.d[1], x9
-	mov	v1.d[1], x11
-	shl	v0.2d, v0.2d, #3
-	shl	v1.2d, v1.2d, #3
+	mul	x8, x0, x0
+	lsl	x0, x8, #3
+	ret
+                                        // -- End function
+func000000000000000c:                   // @func000000000000000c
+// %bb.0:                               // %entry
+	mul	x8, x0, x0
+	lsl	x0, x8, #3
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	fmov	x10, d1
-	mov	x9, v0.d[1]
-	mov	x11, v1.d[1]
-	mul	x8, x8, x8
-	mul	x10, x10, x10
-	mul	x9, x9, x9
-	fmov	d0, x8
-	mul	x11, x11, x11
-	fmov	d1, x10
-	mov	v0.d[1], x9
-	mov	v1.d[1], x11
-	add	v0.2d, v0.2d, v0.2d
-	add	v1.2d, v1.2d, v1.2d
+	mul	x8, x0, x0
+	lsl	x0, x8, #1
 	ret
                                         // -- End function

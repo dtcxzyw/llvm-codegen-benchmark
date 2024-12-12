@@ -40,3 +40,17 @@ func000000000000000a:                   # @func000000000000000a
 	mv	a0, a2
 .LBB5_2:                                # %entry
 	ret
+func0000000000000004:                   # @func0000000000000004
+	andi	a3, a0, 1
+	mv	a0, a1
+	bnez	a3, .LBB6_2
+	mv	a0, a2
+.LBB6_2:                                # %entry
+	ret
+func000000000000000c:                   # @func000000000000000c
+	andi	a3, a0, 1
+	mv	a0, a1
+	bnez	a3, .LBB7_2
+	mv	a0, a2
+.LBB7_2:                                # %entry
+	ret

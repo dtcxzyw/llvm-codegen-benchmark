@@ -12,7 +12,8 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/alloc_lib.ll
 ; faiss/optimized/AutoTune.cpp.ll
 ; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; linux/optimized/md-bitmap.ll

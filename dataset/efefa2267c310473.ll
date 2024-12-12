@@ -61,24 +61,36 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/psa_crypto.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000015(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 63
-  %5 = icmp ule i32 %4, %1
+  %5 = icmp samesign ule i32 %4, %1
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
-; llvm/optimized/CallLowering.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 268435455
   %5 = icmp ult i32 %4, %1
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 2 occurrences:
+; llvm/optimized/CallLowering.cpp.ll
+; llvm/optimized/GlobalISelMatchTable.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 3
+  %4 = and i32 %3, 65535
+  %5 = icmp samesign ult i32 %4, %1
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }

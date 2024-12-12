@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/commit-graph.ll
@@ -18,11 +18,12 @@
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wireshark/optimized/packet-per.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -54,8 +55,8 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -68,8 +69,8 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -80,7 +81,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -92,7 +93,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -103,7 +104,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -114,8 +115,8 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 

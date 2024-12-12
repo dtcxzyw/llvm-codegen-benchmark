@@ -1,11 +1,10 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/i915_gem_shrinker.ll
 ; linux/optimized/journal.ll
 ; linux/optimized/nfs4proc.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
-; openjdk/optimized/c1_LIRGenerator.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; ruby/optimized/gc.ll

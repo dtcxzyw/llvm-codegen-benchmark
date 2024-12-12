@@ -31,7 +31,7 @@ func0000000000000004:                   # @func0000000000000004
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	beqz	a0, .LBB2_2
-	lui	a0, 276480
+	lui	a0, 266240
 	fmv.w.x	fa0, a0
 .LBB2_2:                                # %entry
 	ret

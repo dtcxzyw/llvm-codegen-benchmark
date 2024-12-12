@@ -15,3 +15,7 @@ func0000000000000015:                   # @func0000000000000015
 	shlq	$32, %rax
 	orq	$342654977, %rax                # imm = 0x146C8001
 	retq
+func00000000000000df:                   # @func00000000000000df
+	leal	-1(%rdi,%rdi), %eax
+	leaq	1(%rax,%rax), %rax
+	retq

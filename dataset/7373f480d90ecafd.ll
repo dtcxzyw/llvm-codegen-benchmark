@@ -5,7 +5,7 @@
 define i1 @func0000000000000002(i1 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw i16 %1 to i1
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i1
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 

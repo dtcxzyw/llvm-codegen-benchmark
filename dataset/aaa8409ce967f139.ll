@@ -25,14 +25,8 @@ entry:
   ret i64 %4
 }
 
-; 32 occurrences:
+; 23 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/ConstantRange.cpp.ll
@@ -45,7 +39,6 @@ entry:
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -56,12 +49,10 @@ entry:
 ; opencv/optimized/color_hsv.dispatch.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-set.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or disjoint i32 %1, 8
+  %2 = or disjoint i32 %1, 64
   %3 = sub nuw nsw i32 %2, %0
   %4 = zext nneg i32 %3 to i64
   ret i64 %4

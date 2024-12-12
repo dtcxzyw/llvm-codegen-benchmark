@@ -2,13 +2,13 @@
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -64
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 922880
   %5 = and i64 %0, 2147483647
-  %6 = getelementptr nusw float, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -19,13 +19,13 @@ entry:
 ; hermes/optimized/Interpreter.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -64
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 1397376
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1397376
   %5 = and i64 %0, 2147483647
-  %6 = getelementptr nusw float, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -35,11 +35,11 @@ entry:
 ; llvm/optimized/ImplicitNullChecks.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = and i64 %0, -32
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

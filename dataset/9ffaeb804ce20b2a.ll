@@ -4,7 +4,7 @@
 ; nuklear/optimized/unity.c.ll
 ; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000005b(i1 %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000009b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 32

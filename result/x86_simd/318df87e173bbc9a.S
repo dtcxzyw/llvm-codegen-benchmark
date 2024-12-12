@@ -39,7 +39,7 @@ func0000000000000018:                   # @func0000000000000018
 	vzeroupper
 	retq
 .LCPI2_0:
-	.long	14                              # 0xe
+	.long	4                               # 0x4
 .LCPI2_1:
 	.zero	16,1
 .LCPI2_2:
@@ -59,7 +59,7 @@ func0000000000000018:                   # @func0000000000000018
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpnleud	.LCPI2_0(%rip){1to8}, %ymm1, %k2

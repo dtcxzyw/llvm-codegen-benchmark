@@ -1,5 +1,5 @@
 
-; 336 occurrences:
+; 335 occurrences:
 ; brotli/optimized/static_dict.c.ll
 ; clamav/optimized/chmd.c.ll
 ; cmake/optimized/xmltok.c.ll
@@ -231,7 +231,6 @@
 ; pocketpy/optimized/lexer.cpp.ll
 ; postgres/optimized/ginpostinglist.ll
 ; postgres/optimized/gram.ll
-; protobuf/optimized/json.cc.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
@@ -341,11 +340,11 @@ define i64 @func0000000000000003(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 19 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; libquic/optimized/obj.c.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -358,10 +357,6 @@ entry:
 ; spike/optimized/csrs.ll
 ; spike/optimized/f16_div.ll
 ; spike/optimized/f16_sqrt.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; spike/optimized/triggers.ll
 ; wireshark/optimized/scanner.c.ll
 ; z3/optimized/nlsat_types.cpp.ll
@@ -370,7 +365,7 @@ define i64 @func0000000000000002(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 127
   %3 = zext nneg i8 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -384,7 +379,7 @@ define i64 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -64
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	cmpl	$2, %esi
 	setl	%cl
 	testq	%rdi, %rdi

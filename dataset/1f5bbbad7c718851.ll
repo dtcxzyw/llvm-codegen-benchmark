@@ -68,26 +68,25 @@
 ; openjdk/optimized/shenandoahHeapRegion.ll
 ; openjdk/optimized/whitebox.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000048(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -16
-  %3 = icmp ult ptr %2, %0
+  %3 = icmp ugt ptr %0, %2
   %4 = select i1 %3, ptr %0, ptr %2
   ret ptr %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cvc5/optimized/theory_bool_rewriter.cpp.ll
-; hyperscan/optimized/mcsheng.c.ll
 ; openjdk/optimized/psOldGen.ll
 ; openjdk/optimized/shenandoahAsserts.ll
 ; quantlib/optimized/hestonslvfdmmodel.ll
 ; xgboost/optimized/json.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000064(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1048576
-  %3 = icmp ugt ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1048576
+  %3 = icmp ult ptr %0, %2
   %4 = select i1 %3, ptr %0, ptr %2
   ret ptr %4
 }
@@ -98,7 +97,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 1
-  %3 = icmp ult ptr %2, %0
+  %3 = icmp ugt ptr %0, %2
   %4 = select i1 %3, ptr %0, ptr %2
   ret ptr %4
 }
@@ -109,7 +108,18 @@ entry:
 define ptr @func0000000000000004(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 2052
-  %3 = icmp ugt ptr %2, %0
+  %3 = icmp ult ptr %0, %2
+  %4 = select i1 %3, ptr %0, ptr %2
+  ret ptr %4
+}
+
+; 1 occurrences:
+; hyperscan/optimized/mcsheng.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000044(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -7
+  %3 = icmp ult ptr %0, %2
   %4 = select i1 %3, ptr %0, ptr %2
   ret ptr %4
 }

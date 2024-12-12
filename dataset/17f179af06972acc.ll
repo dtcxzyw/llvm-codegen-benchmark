@@ -1,10 +1,10 @@
 
-; 45 occurrences:
+; 46 occurrences:
+; boost/optimized/area.ll
 ; clamav/optimized/sigtool.c.ll
 ; cmake/optimized/archive_read_disk_posix.c.ll
 ; flatbuffers/optimized/idl_gen_cpp.cpp.ll
 ; git/optimized/bisect.ll
-; glslang/optimized/Initialize.cpp.ll
 ; glslang/optimized/Intermediate.cpp.ll
 ; graphviz/optimized/arrows.c.ll
 ; gromacs/optimized/checkpoint.cpp.ll
@@ -45,15 +45,16 @@
 ; xgboost/optimized/multi_target_tree_model.cc.ll
 ; xgboost/optimized/tree_model.cc.ll
 ; z3/optimized/dl_sieve_relation.cpp.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 50 occurrences:
+; 53 occurrences:
 ; freetype/optimized/sdf.c.ll
 ; gromacs/optimized/decidegpuusage.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -93,7 +94,6 @@ entry:
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
-; php/optimized/pcre2_match.ll
 ; php/optimized/zend_compile.ll
 ; postgres/optimized/fe-trace.ll
 ; postgres/optimized/informix.ll
@@ -104,11 +104,15 @@ entry:
 ; ruby/optimized/bignum.ll
 ; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
 ; wireshark/optimized/packet-slimp3.c.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/cguh9zihnfg4v76y73tdlg6o2.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
-  %2 = or i1 %.not, %0
+  %2 = or i1 %0, %.not
   ret i1 %2
 }
 
@@ -119,31 +123,20 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 1 occurrences:
-; luau/optimized/lgcdebug.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 5
-  %3 = or i1 %2, %0
-  ret i1 %3
-}
-
-; 5 occurrences:
+; 4 occurrences:
 ; cmake/optimized/cmGeneratorExpressionDAGChecker.cxx.ll
 ; hyperscan/optimized/rose_in_util.cpp.ll
 ; llvm/optimized/CGVTables.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, -19
-  %3 = or i1 %2, %0
+  %2 = icmp ugt i32 %1, 524287
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
@@ -158,7 +151,7 @@ entry:
 define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 

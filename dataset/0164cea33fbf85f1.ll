@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; clamav/optimized/manager.c.ll
 ; clamav/optimized/ole2_extract.c.ll
@@ -15,7 +15,6 @@
 ; openjdk/optimized/gtk2_interface.ll
 ; openspiel/optimized/maedn.cc.ll
 ; slurm/optimized/cgroup_v1.ll
-; slurm/optimized/task_cgroup.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; z3/optimized/nlqsat.cpp.ll
 ; Function Attrs: nounwind

@@ -4,7 +4,7 @@
 ; graphviz/optimized/htmltable.c.ll
 ; llvm/optimized/AArch64.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i16 %0, i1 %1) #0 {
+define i32 @func0000000000000021(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 1, i32 2
   %3 = or disjoint i32 %2, 4
@@ -17,7 +17,7 @@ entry:
 ; linux/optimized/intel_display_power.ll
 ; wireshark/optimized/packet-tibia.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i16 %0, i1 %1) #0 {
+define i32 @func0000000000000028(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 266, i32 256
   %3 = or disjoint i32 %2, 33

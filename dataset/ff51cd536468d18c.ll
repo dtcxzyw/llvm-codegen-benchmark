@@ -1,32 +1,20 @@
 
-; 3 occurrences:
-; ruby/optimized/pack.ll
-; wireshark/optimized/packet-ieee80211.c.ll
-; zxing/optimized/TextDecoder.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i8 %1) #0 {
-entry:
-  %2 = freeze i8 %1
-  %3 = icmp ugt i8 %2, 31
-  %4 = or i1 %3, %0
-  ret i1 %4
-}
-
-; 4 occurrences:
+; 5 occurrences:
 ; coreutils-rs/optimized/1xgh31va70j84rdd.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
 ; yosys/optimized/opt_expr.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
   %3 = icmp ne i8 %2, 4
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; cpython/optimized/_json.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
@@ -39,6 +27,8 @@ entry:
 ; rust-analyzer-rs/optimized/m5y7tkywgbwlx2e.ll
 ; wireshark/optimized/packet-gtp.c.ll
 ; wireshark/optimized/packet-usb-audio.c.ll
+; zed-rs/optimized/5vh1wf9hqnwdftlb6xe6c9c43.ll
+; zed-rs/optimized/dq2w60loei6lzivjguqmeajyy.ll
 ; zxing/optimized/TextDecoder.cpp.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
@@ -46,7 +36,7 @@ define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
   %3 = icmp eq i8 %2, 103
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -69,16 +59,28 @@ entry:
 
 ; 5 occurrences:
 ; linux/optimized/namei_msdos.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; openusd/optimized/mvref_common.c.ll
 ; wireshark/optimized/packet-nas_5gs.c.ll
-; zxing/optimized/TextDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
   %3 = icmp ult i8 %2, 29
   %4 = or i1 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; wireshark/optimized/packet-ieee80211.c.ll
+; zxing/optimized/TextDecoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000010(i1 %0, i8 %1) #0 {
+entry:
+  %2 = freeze i8 %1
+  %3 = icmp ugt i8 %2, 2
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

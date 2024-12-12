@@ -12,11 +12,6 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000008:                   # @func0000000000000008
 	leaq	7(,%rdi,4), %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	shlq	$32, %rdi
-	movabsq	$4294967296, %rax               # imm = 0x100000000
-	addq	%rdi, %rax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	leaq	2(%rdi,%rdi), %rax
 	retq
@@ -32,6 +27,9 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000006:                   # @func0000000000000006
 	shlq	$4, %rdi
 	leaq	16(%rdi), %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	leaq	23(,%rdi,4), %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	shlq	$4, %rdi

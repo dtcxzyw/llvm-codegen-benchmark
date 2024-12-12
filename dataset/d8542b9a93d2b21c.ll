@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; gromacs/optimized/gmx_dos.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -24,6 +24,7 @@
 ; tev/optimized/ImageCanvas.cpp.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

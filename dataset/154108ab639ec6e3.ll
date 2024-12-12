@@ -185,7 +185,7 @@ entry:
   %4 = zext i32 %1 to i64
   %5 = mul nuw i64 %4, %3
   %6 = zext i64 %5 to i128
-  %7 = add i128 %6, %0
+  %7 = add i128 %0, %6
   ret i128 %7
 }
 

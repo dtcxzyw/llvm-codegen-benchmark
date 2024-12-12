@@ -1,13 +1,10 @@
 
-; 42 occurrences:
+; 35 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
 ; darktable/optimized/PanasonicV6Decompressor.cpp.ll
 ; folly/optimized/Checksum.cpp.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/access.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/hub.ll
@@ -24,13 +21,9 @@
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; opencv/optimized/ts_func.cpp.ll
-; openjdk/optimized/hb-face-builder.ll
 ; openjdk/optimized/jni.ll
 ; openspiel/optimized/havannah.cc.ll
 ; openspiel/optimized/y.cc.ll
@@ -50,7 +43,7 @@ entry:
   ret i16 %3
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; eastl/optimized/string.cpp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -61,6 +54,8 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:

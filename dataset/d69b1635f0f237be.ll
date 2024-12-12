@@ -11,7 +11,8 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; cpython/optimized/Hacl_Hash_SHA3.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; Function Attrs: nounwind

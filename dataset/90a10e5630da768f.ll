@@ -1,4 +1,35 @@
 
+; 21 occurrences:
+; freetype/optimized/sfnt.c.ll
+; icu/optimized/utrie_swap.ll
+; linux/optimized/drm_edid.ll
+; openssl/optimized/asynciotest-bin-ssltestlib.ll
+; openssl/optimized/dtls_mtu_test-bin-ssltestlib.ll
+; openssl/optimized/dtlstest-bin-ssltestlib.ll
+; openssl/optimized/fatalerrtest-bin-ssltestlib.ll
+; openssl/optimized/quic_multistream_test-bin-ssltestlib.ll
+; openssl/optimized/quic_newcid_test-bin-ssltestlib.ll
+; openssl/optimized/quic_srt_gen_test-bin-ssltestlib.ll
+; openssl/optimized/quicapitest-bin-ssltestlib.ll
+; openssl/optimized/quicfaultstest-bin-ssltestlib.ll
+; openssl/optimized/recordlentest-bin-ssltestlib.ll
+; openssl/optimized/rpktest-bin-ssltestlib.ll
+; openssl/optimized/servername_test-bin-ssltestlib.ll
+; openssl/optimized/ssl_handshake_rtt_test-bin-ssltestlib.ll
+; openssl/optimized/sslapitest-bin-ssltestlib.ll
+; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
+; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
+; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign ult i32 %3, 12
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
 ; 10 occurrences:
 ; git/optimized/checkout-index.ll
 ; git/optimized/revision.ll
@@ -43,7 +74,7 @@ entry:
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; wireshark/optimized/packet-s7comm_szl_ids.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -63,10 +94,28 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 1903126886
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 8 occurrences:
+; cmake/optimized/idna.c.ll
+; libuv/optimized/idna.c.ll
+; libwebp/optimized/webpinfo.c.ll
+; node/optimized/idna.ll
+; sqlite/optimized/sqlite3.ll
+; zstd/optimized/zstd_v05.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign ugt i32 %3, 1114111
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -92,8 +141,7 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; clamav/optimized/readdb.c.ll
+; 1 occurrences:
 ; luau/optimized/lutf8lib.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
@@ -104,12 +152,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; clamav/optimized/chmd.c.ll
-; icu/optimized/utrie_swap.ll
-; linux/optimized/drm_edid.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ult i32 %3, 22
@@ -117,18 +163,25 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 2 occurrences:
 ; clamav/optimized/oabd.c.ll
-; libwebp/optimized/webpinfo.c.ll
 ; raylib/optimized/rmodels.c.ll
-; zstd/optimized/zstd_v05.c.ll
-; zstd/optimized/zstd_v06.c.ll
-; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ugt i32 %3, 1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; clamav/optimized/readdb.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = icmp samesign ugt i32 %3, 100
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

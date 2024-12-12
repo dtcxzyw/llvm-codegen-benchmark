@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 12 occurrences:
 ; darktable/optimized/RawImage.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
@@ -10,9 +10,6 @@
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
 ; ncnn/optimized/innerproduct_x86.cpp.ll
 ; ncnn/optimized/slice_x86.cpp.ll
-; nlohmann_json/optimized/unit-bson.cpp.ll
-; nlohmann_json/optimized/unit-cbor.cpp.ll
-; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; qemu/optimized/block.c.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind

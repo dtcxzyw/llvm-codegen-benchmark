@@ -33,14 +33,14 @@ func0000000000000050:                   # @func0000000000000050
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vpsllq	$5, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
 func00000000000000c8:                   # @func00000000000000c8
 	vpsllq	$4, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper

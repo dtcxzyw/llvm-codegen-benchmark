@@ -6,7 +6,7 @@
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, %0
   %3 = and i64 %2, 63
@@ -27,7 +27,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 20
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, 7
   %5 = icmp ne i64 %4, 0
   ret i1 %5

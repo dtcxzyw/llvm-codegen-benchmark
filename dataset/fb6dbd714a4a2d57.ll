@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; openexr/optimized/internal_huf.c.ll
-; openusd/optimized/openexr-c.c.ll
-; rocksdb/optimized/clock_cache.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 8
-  %3 = add nuw nsw i64 %0, 1
-  %4 = or i64 %3, %2
-  ret i64 %4
-}
-
 ; 2 occurrences:
 ; linux/optimized/filemap.ll
 ; openjdk/optimized/jfrSymbolTable.ll
@@ -47,9 +34,11 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
+; openspiel/optimized/morpion_solitaire.cc.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/l3869xz334uj87z.ll
 ; yosys/optimized/opt_expr.ll
@@ -100,11 +89,35 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 6
+  %3 = add nuw nsw i64 %0, 57
+  %4 = or i64 %3, %2
+  ret i64 %4
+}
+
+; 2 occurrences:
+; openexr/optimized/internal_huf.c.ll
+; openusd/optimized/openexr-c.c.ll
+; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 8
   %3 = add nsw i64 %0, -6
   %4 = or i64 %3, %2
+  ret i64 %4
+}
+
+; 2 occurrences:
+; openspiel/optimized/morpion_solitaire.cc.ll
+; postgres/optimized/freespace.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 3
+  %3 = shl i64 %0, 32
+  %4 = or disjoint i64 %3, %2
   ret i64 %4
 }
 
@@ -138,17 +151,6 @@ entry:
   %2 = add nsw i64 %1, -1
   %3 = shl i64 %0, 9
   %4 = or i64 %3, %2
-  ret i64 %4
-}
-
-; 1 occurrences:
-; postgres/optimized/freespace.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = shl i64 %0, 32
-  %4 = or disjoint i64 %3, %2
   ret i64 %4
 }
 

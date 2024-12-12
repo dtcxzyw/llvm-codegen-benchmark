@@ -13,11 +13,3 @@ func0000000000000019:                   # @func0000000000000019
 .LBB1_2:                                # %entry
 	andi	a0, a1, 63
 	ret
-func0000000000000009:                   # @func0000000000000009
-	sext.w	a2, a2
-	li	a3, 8
-	bltu	a2, a3, .LBB2_2
-	mv	a0, a1
-.LBB2_2:                                # %entry
-	andi	a0, a0, 255
-	ret

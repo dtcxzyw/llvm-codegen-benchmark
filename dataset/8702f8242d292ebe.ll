@@ -1,6 +1,11 @@
 
-; 91 occurrences:
+; 96 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/message.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/src.ll
 ; clamav/optimized/macho.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/transfer.c.ll
@@ -100,7 +105,7 @@ entry:
   ret i1 %5
 }
 
-; 50 occurrences:
+; 53 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; arrow/optimized/UriParse.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -151,6 +156,9 @@ entry:
 ; wireshark/optimized/packet-smb2.c.ll
 ; z3/optimized/mpbq.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -160,16 +168,14 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
-; icu/optimized/ucnv2022.ll
 ; jsonnet/optimized/formatter.cpp.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/intel_display_irq.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; llvm/optimized/ParseExpr.cpp.ll
-; llvm/optimized/RISCVDeadRegisterDefinitions.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; llvm/optimized/ToolChain.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -184,7 +190,7 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/inftrees.c.ll
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/inftrees.c.ll
@@ -193,7 +199,6 @@ entry:
 ; hermes/optimized/zip.c.ll
 ; libquic/optimized/inftrees.c.ll
 ; linux/optimized/filter.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; php/optimized/pcre2_compile.ll
@@ -208,7 +213,7 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/bmcBmci.c.ll
 ; glslang/optimized/Intermediate.cpp.ll
 ; graphviz/optimized/dtview.c.ll
@@ -221,6 +226,7 @@ entry:
 ; opencv/optimized/stringutils.cpp.ll
 ; opencv/optimized/undistort.dispatch.cpp.ll
 ; php/optimized/logical_filters.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i1 %1, i32 %2) #0 {
 entry:

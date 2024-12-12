@@ -1,16 +1,15 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; assimp/optimized/BVHLoader.cpp.ll
-; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; ceres/optimized/block_random_access_dense_matrix.cc.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; gromacs/optimized/colvarcomp_distances.cpp.ll
 ; gromacs/optimized/minimize.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
+; hyperscan/optimized/ng_uncalc_components.cpp.ll
 ; linux/optimized/resize.ll
 ; llama.cpp/optimized/ggml.c.ll
-; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; openusd/optimized/bakeSkinning.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
@@ -32,15 +31,13 @@
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 69 occurrences:
-; assimp/optimized/BVHLoader.cpp.ll
+; 66 occurrences:
 ; casadi/optimized/fmu2.cpp.ll
-; casadi/optimized/sparsity.cpp.ll
 ; faiss/optimized/BlockInvertedLists.cpp.ll
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; faiss/optimized/InvertedLists.cpp.ll
@@ -50,7 +47,6 @@ entry:
 ; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
 ; gromacs/optimized/colvarcomp_distances.cpp.ll
 ; gromacs/optimized/gmx_nmeig.cpp.ll
-; hyperscan/optimized/ComponentSequence.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
@@ -111,23 +107,19 @@ entry:
 define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr nusw float, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 39 occurrences:
+; 35 occurrences:
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/integrator.cpp.ll
-; darktable/optimized/RawImage.cpp.ll
 ; faiss/optimized/IndexBinaryIVF.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; icu/optimized/uarrsort.ll
-; libwebp/optimized/picture_enc.c.ll
 ; llama.cpp/optimized/ggml.c.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -160,12 +152,15 @@ entry:
 define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr nusw float, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 12 occurrences:
+; 16 occurrences:
+; assimp/optimized/BVHLoader.cpp.ll
+; casadi/optimized/sparsity.cpp.ll
+; hyperscan/optimized/ComponentSequence.cpp.ll
 ; quantlib/optimized/accountingengine.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; quantlib/optimized/factorreduction.ll
@@ -178,16 +173,17 @@ entry:
 ; quantlib/optimized/pathwiseaccountingengine.ll
 ; quantlib/optimized/proxygreekengine.ll
 ; quantlib/optimized/ratepseudorootjacobian.ll
+; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 3
+  %3 = ashr exact i64 %2, 2
   %4 = mul i64 %3, %1
-  %5 = getelementptr nusw nuw double, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; ceres/optimized/schur_eliminator_2_2_d.cc.ll
@@ -210,7 +206,6 @@ entry:
 ; lightgbm/optimized/metadata.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
@@ -233,6 +228,20 @@ entry:
 }
 
 ; 4 occurrences:
+; darktable/optimized/RawImage.cpp.ll
+; libwebp/optimized/picture_enc.c.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 32
+  %4 = mul nsw i64 %3, %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 4 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; libwebp/optimized/buffer_dec.c.ll
 ; opencv/optimized/array.cpp.ll
@@ -241,7 +250,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr nusw i32, ptr %0, i64 %4
   ret ptr %5
 }
@@ -252,7 +261,7 @@ entry:
 define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = getelementptr i32, ptr %0, i64 %4
   ret ptr %5
 }
@@ -265,7 +274,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr double, ptr %0, i64 %4
   ret ptr %5
 }
@@ -279,7 +288,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr float, ptr %0, i64 %4
   ret ptr %5
 }
@@ -308,7 +317,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -316,11 +325,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/ts_func.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

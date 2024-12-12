@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 42 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/BaseImporter.cpp.ll
 ; clamav/optimized/pe.c.ll
@@ -40,6 +40,7 @@
 ; yosys/optimized/satgen.ll
 ; yosys/optimized/test_abcloop.ll
 ; yosys/optimized/test_cell.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
@@ -50,27 +51,19 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 12 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; linux/optimized/dd.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; meshlab/optimized/ml_shared_data_context.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; nori/optimized/popup.cpp.ll
 ; openjdk/optimized/os_linux.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -80,7 +73,8 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/ipvfuture_rule.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; php/optimized/zend_ast.ll

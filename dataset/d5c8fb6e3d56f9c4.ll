@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 84 occurrences:
 ; clamav/optimized/file.cpp.ll
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
 ; coreutils-rs/optimized/1rq2clzuccjujjg1.ll
@@ -12,6 +12,7 @@
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; icu/optimized/olsontz.ll
 ; icu/optimized/simpletz.ll
+; icu/optimized/tzfmt.ll
 ; ipopt/optimized/IpStdCInterface.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/range.ll
@@ -32,6 +33,7 @@
 ; llvm/optimized/SemaExprObjC.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/VTEmitter.cpp.ll
+; llvm/optimized/VectorCombine.cpp.ll
 ; meshlab/optimized/rich_parameters.cpp.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll
@@ -71,7 +73,6 @@
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
 ; php/optimized/php_reflection.ll
 ; postgres/optimized/informix.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; quantlib/optimized/cevrndcalculator.ll
 ; quantlib/optimized/squarerootclvmodel.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
@@ -79,18 +80,16 @@
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/quicklist.ll
 ; rust-analyzer-rs/optimized/2pjtxeptskgmq0yj.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; verilator/optimized/V3Inst.cpp.ll
 ; wireshark/optimized/packet-ocp1.c.ll
+; yoga/optimized/CalculateLayout.cpp.ll
 ; z3/optimized/qe_arith_plugin.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
-  %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

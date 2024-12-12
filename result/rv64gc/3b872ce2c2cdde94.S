@@ -19,11 +19,3 @@ func0000000000000004:                   # @func0000000000000004
 	mulw	a0, a0, a1
 	sltiu	a0, a0, 96
 	ret
-func0000000000000058:                   # @func0000000000000058
-	lui	a1, 244
-	addi	a1, a1, 576
-	mulw	a0, a0, a1
-	lui	a1, 488281
-	addiw	a1, a1, 1023
-	sltu	a0, a1, a0
-	ret

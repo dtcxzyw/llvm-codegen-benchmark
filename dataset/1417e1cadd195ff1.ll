@@ -1,12 +1,24 @@
 
-%"struct.std::pair.3087422" = type { i32, i32 }
+%"struct.std::pair.3280201" = type { i32, i32 }
 
-; 16 occurrences:
+; 5 occurrences:
 ; abc/optimized/ivyFraig.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; git/optimized/receive-pack.ll
-; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/DXContainer.cpp.ll
+; rocksdb/optimized/block.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 2
+  %4 = and i64 %3, 17179869180
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 11 occurrences:
+; llvm/optimized/AutoUpgrade.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
@@ -17,20 +29,20 @@
 ; ncnn/optimized/deconvolutiondepthwise_x86_fma.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
-; rocksdb/optimized/block.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = and i64 %3, 17179869180
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %4 = and i64 %3, 4294967292
+  %5 = getelementptr nusw float, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw float, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; faiss/optimized/pq4_fast_scan.cpp.ll
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -82,12 +94,12 @@ entry:
 ; openusd/optimized/alpha.c.ll
 ; openusd/optimized/read.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967294
-  %5 = getelementptr nusw i32, ptr %0, i64 %1
-  %6 = getelementptr nusw i32, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -102,11 +114,35 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = and i64 %3, 504
-  %5 = getelementptr nusw i16, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; llvm/optimized/SLPVectorizer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = and i64 %3, 17179869168
+  %5 = getelementptr nusw i32, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; llvm/optimized/SLPVectorizer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 3
+  %4 = and i64 %3, -32
+  %5 = getelementptr nusw nuw %"struct.std::pair.3280201", ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -119,34 +155,34 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nsw i64 %2, 3
-  %4 = and i64 %3, -32
-  %5 = getelementptr nusw %"struct.std::pair.3087422", ptr %0, i64 %1
+  %3 = shl nsw i64 %2, 2
+  %4 = and i64 %3, -16
+  %5 = getelementptr nusw i32, ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
 ; 1 occurrences:
-; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl i64 %2, 2
-  %4 = and i64 %3, -16
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 %4
+  %3 = shl i64 %2, 1
+  %4 = and i64 %3, 4294967294
+  %5 = getelementptr nusw float, ptr %0, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %4
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
   %4 = and i64 %3, 4294967264
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 

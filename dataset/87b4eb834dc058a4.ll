@@ -1,5 +1,5 @@
 
-; 166 occurrences:
+; 163 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/luckyFast16.c.ll
 ; arrow/optimized/align_util.cc.ll
@@ -56,7 +56,6 @@
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; linux/optimized/bitmap.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/genalloc.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
@@ -95,8 +94,6 @@
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; postgres/optimized/bitmapset.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -171,7 +168,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 -1, %2
   %4 = and i64 %3, %1
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

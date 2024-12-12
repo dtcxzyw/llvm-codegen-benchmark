@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/ds.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
 ; llvm/optimized/ASTReader.cpp.ll

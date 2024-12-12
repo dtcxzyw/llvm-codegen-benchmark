@@ -7,7 +7,7 @@
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
@@ -25,15 +25,14 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; linux/optimized/blk-lib.ll
-; linux/optimized/blk-settings.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 65534, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -43,10 +42,10 @@ entry:
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }

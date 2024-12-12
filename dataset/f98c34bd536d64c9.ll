@@ -1,13 +1,14 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; freetype/optimized/sdf.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; qemu/optimized/ui_qemu-pixman.c.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000003c(i32 %0, i8 %1) #0 {
+define i8 @func000000000000006c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 1, %0
@@ -21,7 +22,7 @@ entry:
 ; libpng/optimized/pngrtran.c.ll
 ; openjdk/optimized/pngrtran.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000002c(i32 %0, i8 %1) #0 {
+define i8 @func000000000000004c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw i32 1, %0
@@ -37,7 +38,7 @@ entry:
 ; oiio/optimized/icoinput.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 1, %0

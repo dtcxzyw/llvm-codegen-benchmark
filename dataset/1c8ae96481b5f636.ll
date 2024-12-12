@@ -1,5 +1,6 @@
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/area.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas_ic.c.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -22,7 +23,7 @@ define double @func0000000000000000(i1 %0, double %1) #0 {
 entry:
   %2 = fneg double %1
   %3 = select i1 %0, double %2, double %1
-  %4 = fdiv double -1.000000e+00, %3
+  %4 = fdiv double 1.000000e+00, %3
   ret double %4
 }
 

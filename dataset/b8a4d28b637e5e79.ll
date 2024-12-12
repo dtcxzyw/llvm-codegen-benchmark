@@ -11,7 +11,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = urem i32 %2, 65521
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

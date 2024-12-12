@@ -1,14 +1,14 @@
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	addl	%edx, %edx
-	cmpl	%esi, %edx
-	cmovlel	%edi, %edx
+	cmpl	%edx, %esi
+	cmovgel	%edi, %edx
 	movslq	%edx, %rax
 	shlq	$2, %rax
 	retq
 func0000000000000019:                   # @func0000000000000019
 	addl	%edx, %edx
-	cmpl	%esi, %edx
-	cmovlel	%edi, %edx
+	cmpl	%edx, %esi
+	cmovgel	%edi, %edx
 	movslq	%edx, %rax
 	shlq	$2, %rax
 	retq

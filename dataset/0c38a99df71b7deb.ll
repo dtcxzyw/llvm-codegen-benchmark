@@ -9,13 +9,75 @@
 define i32 @func000000000000003e(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 9
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
 
-; 226 occurrences:
+; 2 occurrences:
+; mold/optimized/thunks.cc.PPC32.cc.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul i64 %1, 36
+  %3 = add nsw i64 %2, %0
+  %4 = trunc i64 %3 to i32
+  ret i32 %4
+}
+
+; 6 occurrences:
+; abc/optimized/giaSimBase.c.ll
 ; abseil-cpp/optimized/duration.cc.ll
+; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
+; ceres/optimized/eigensparse.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; wireshark/optimized/packet-gsm_a_rr.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw nsw i64 %1, 36
+  %3 = add i64 %0, %2
+  %4 = trunc i64 %3 to i32
+  ret i32 %4
+}
+
+; 22 occurrences:
+; arrow/optimized/pretty_print.cc.ll
+; arrow/optimized/scalar.cc.ll
+; arrow/optimized/scalar_cast_string.cc.ll
+; cmake/optimized/progress.c.ll
+; curl/optimized/libcurl_la-progress.ll
+; folly/optimized/CustomLogFormatter.cpp.ll
+; folly/optimized/GlogStyleFormatter.cpp.ll
+; hermes/optimized/gtest-all.cc.ll
+; hyperscan/optimized/gtest-all.cc.ll
+; icu/optimized/regexcmp.ll
+; libquic/optimized/time_support.c.ll
+; opencv/optimized/grfmt_pxm.cpp.ll
+; opencv/optimized/ts_gtest.cpp.ll
+; openjdk/optimized/XToolkit.ll
+; php/optimized/network.ll
+; php/optimized/xp_socket.ll
+; postgres/optimized/strftime.ll
+; slurm/optimized/slurm_pmi.ll
+; velox/optimized/DateTimeFormatter.cpp.ll
+; velox/optimized/Sequence.cpp.ll
+; velox/optimized/Timestamp.cpp.ll
+; velox/optimized/tz.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul i64 %1, 4293967296
+  %3 = add i64 %2, %0
+  %4 = trunc i64 %3 to i32
+  ret i32 %4
+}
+
+; 233 occurrences:
+; abseil-cpp/optimized/duration.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/longobject.ll
 ; curl/optimized/libcurl_la-version.ll
 ; darktable/optimized/geotagging.c.ll
@@ -35,10 +97,12 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
+; git/optimized/apply.ll
 ; gromacs/optimized/minimize.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; libquic/optimized/poly1305_vec.c.ll
+; libquic/optimized/time_support.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -117,6 +181,7 @@ entry:
 ; minetest/optimized/guiEditBox.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; nuttx/optimized/fs_select.c.ll
+; nuttx/optimized/lib_gmtimer.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -196,8 +261,6 @@ entry:
 ; opencv/optimized/trainFacemark.cpp.ll
 ; openjdk/optimized/p11_keymgmt.ll
 ; openjdk/optimized/splashscreen_sys.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; php/optimized/xp_socket.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
@@ -209,7 +272,11 @@ entry:
 ; pybind11/optimized/test_chrono.cpp.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; slurm/optimized/backfill.ll
+; slurm/optimized/node_features_knl_generic.ll
+; slurm/optimized/run_command.ll
+; slurm/optimized/slurm_persist_conn.ll
 ; slurm/optimized/slurm_pmi.ll
+; slurm/optimized/slurm_protocol_socket.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -244,69 +311,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, 4294880896
-  %3 = add i64 %2, %0
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
-}
-
-; 2 occurrences:
-; mold/optimized/thunks.cc.PPC32.cc.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul i64 %1, 36
-  %3 = add nsw i64 %2, %0
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
-}
-
-; 6 occurrences:
-; abc/optimized/giaSimBase.c.ll
-; abseil-cpp/optimized/duration.cc.ll
-; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
-; ceres/optimized/eigensparse.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; wireshark/optimized/packet-gsm_a_rr.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000030(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw nsw i64 %1, 36
-  %3 = add i64 %2, %0
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
-}
-
-; 23 occurrences:
-; arrow/optimized/pretty_print.cc.ll
-; arrow/optimized/scalar.cc.ll
-; arrow/optimized/scalar_cast_string.cc.ll
-; cmake/optimized/progress.c.ll
-; curl/optimized/libcurl_la-progress.ll
-; folly/optimized/CustomLogFormatter.cpp.ll
-; folly/optimized/GlogStyleFormatter.cpp.ll
-; hermes/optimized/gtest-all.cc.ll
-; hyperscan/optimized/gtest-all.cc.ll
-; icu/optimized/regexcmp.ll
-; libquic/optimized/time_support.c.ll
-; opencv/optimized/grfmt_pxm.cpp.ll
-; opencv/optimized/ts_gtest.cpp.ll
-; openjdk/optimized/XToolkit.ll
-; php/optimized/network.ll
-; php/optimized/unixtime2tm.ll
-; php/optimized/xp_socket.ll
-; postgres/optimized/strftime.ll
-; slurm/optimized/slurm_pmi.ll
-; velox/optimized/DateTimeFormatter.cpp.ll
-; velox/optimized/Sequence.cpp.ll
-; velox/optimized/Timestamp.cpp.ll
-; velox/optimized/tz.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul i64 %1, 4293967296
-  %3 = add i64 %2, %0
+  %2 = mul i64 %1, 85
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -411,7 +417,7 @@ entry:
   ret i32 %4
 }
 
-; 192 occurrences:
+; 193 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/bignum.cc.ll
@@ -580,6 +586,7 @@ entry:
 ; opencv/optimized/motion_estimators.cpp.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; openusd/optimized/bignum.cc.ll
+; php/optimized/unixtime2tm.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -619,7 +626,7 @@ entry:
 define i32 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -635,7 +642,7 @@ entry:
 define i32 @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 7
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
@@ -658,7 +665,7 @@ entry:
 define i32 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 10
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
@@ -681,7 +688,7 @@ entry:
 define i32 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 400
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = trunc nsw i64 %3 to i32
   ret i32 %4
 }
@@ -692,7 +699,7 @@ entry:
 define i32 @func0000000000000012(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 21
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }

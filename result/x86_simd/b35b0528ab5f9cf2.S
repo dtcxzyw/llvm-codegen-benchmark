@@ -2,7 +2,7 @@
 	.zero	16,12
 .LCPI0_1:
 	.zero	16,16
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpsllw	$7, %xmm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpneqb	.LCPI0_0(%rip), %xmm0, %k1

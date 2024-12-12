@@ -4,7 +4,7 @@
 ; gromacs/optimized/gen_vsite.cpp.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0) #0 {
+define i1 @func00000000000000a4(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.abs.i32(i32 %0, i1 true)
   %2 = add nsw i32 %1, -16

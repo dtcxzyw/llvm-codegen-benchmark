@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/DylibVerifier.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
+; minetest/optimized/voxel.cpp.ll
 ; ruby/optimized/prism.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {

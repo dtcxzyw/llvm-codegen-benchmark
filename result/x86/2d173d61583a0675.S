@@ -1,7 +1,7 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movl	%edx, %eax
-	cmpq	%rsi, %rax
-	setl	%al
+	cmpq	%rax, %rsi
+	setg	%al
 	andb	%dil, %al
 	retq
 func0000000000000004:                   # @func0000000000000004
@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%edx, %eax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq
@@ -24,9 +24,9 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	andb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movl	%edx, %eax
-	cmpq	%rsi, %rax
-	setg	%al
+	cmpq	%rax, %rsi
+	setl	%al
 	andb	%dil, %al
 	retq

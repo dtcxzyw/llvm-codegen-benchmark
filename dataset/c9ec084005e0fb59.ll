@@ -1,11 +1,11 @@
 
 ; 6 occurrences:
+; lvgl/optimized/lv_color.ll
 ; mimalloc/optimized/page.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; wireshark/optimized/eyesdn.c.ll
 ; wireshark/optimized/netxray.c.ll
-; wireshark/optimized/radcom.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {
 entry:

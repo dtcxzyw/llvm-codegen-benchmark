@@ -1,41 +1,46 @@
 func0000000000000001:                   # @func0000000000000001
 	lui	a2, 16
-	neg	a0, a0
+	neg	a1, a1
 	addiw	a2, a2, -1
-	and	a1, a1, a2
 	and	a0, a0, a2
+	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	add	a0, a0, a1
 	slli	a0, a0, 48
 	srai	a0, a0, 48
 	slti	a0, a0, 0
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	lui	a2, 16
-	neg	a0, a0
+	neg	a1, a1
 	addiw	a2, a2, -1
-	and	a1, a1, a2
 	and	a0, a0, a2
+	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000aa:                   # @func00000000000000aa
 	add	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
-	sltiu	a0, a0, 63
+	srai	a0, a0, 48
+	slti	a0, a0, 13
 	xori	a0, a0, 1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func0000000000000004:                   # @func0000000000000004
 	add	a0, a0, a1
-	lui	a1, 16
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	addiw	a1, a1, -62
-	sltu	a0, a0, a1
+	sltiu	a0, a0, 1400
+	ret
+func0000000000000008:                   # @func0000000000000008
+	add	a0, a0, a1
+	slli	a0, a0, 48
+	srli	a0, a0, 52
+	sltiu	a0, a0, 625
+	xori	a0, a0, 1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	add	a0, a0, a1
@@ -43,7 +48,7 @@ func0000000000000006:                   # @func0000000000000006
 	srai	a0, a0, 48
 	slti	a0, a0, 0
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	add	a0, a0, a1
 	lui	a1, 4
 	slli	a0, a0, 48
@@ -56,11 +61,4 @@ func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 48
 	srai	a0, a0, 48
 	sgtz	a0, a0
-	ret
-func0000000000000008:                   # @func0000000000000008
-	add	a0, a0, a1
-	slli	a0, a0, 48
-	srli	a0, a0, 48
-	sltiu	a0, a0, 4
-	xori	a0, a0, 1
 	ret

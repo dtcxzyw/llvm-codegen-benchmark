@@ -22,12 +22,11 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 
-; 13 occurrences:
+; 12 occurrences:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/pcf.c.ll
@@ -44,7 +43,8 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
@@ -53,7 +53,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
-  %3 = call noundef i64 @llvm.abs.i64(i64 %2, i1 true)
+  %3 = tail call noundef i64 @llvm.abs.i64(i64 %2, i1 true)
   ret i64 %3
 }
 

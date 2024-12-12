@@ -1,8 +1,10 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; icu/optimized/calendar.ll
 ; linux/optimized/intel_vdsc.ll
 ; llvm/optimized/APFixedPoint.cpp.ll

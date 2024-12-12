@@ -1,6 +1,8 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; c3c/optimized/bigint.c.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll

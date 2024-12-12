@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movslq	%esi, %rax
 	sarq	$3, %rdi
 	movabsq	$7905747460161236407, %rcx      # imm = 0x6DB6DB6DB6DB6DB7
@@ -6,7 +6,7 @@ func0000000000000014:                   # @func0000000000000014
 	cmpq	%rax, %rcx
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movslq	%esi, %rax
 	sarq	$3, %rdi
 	movabsq	$3353953467947191203, %rcx      # imm = 0x2E8BA2E8BA2E8BA3
@@ -38,7 +38,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpq	%rcx, %rdx
 	setl	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movslq	%esi, %rax
 	sarq	$3, %rdi
 	movabsq	$-6148914691236517205, %rcx     # imm = 0xAAAAAAAAAAAAAAAB
@@ -46,7 +46,7 @@ func0000000000000011:                   # @func0000000000000011
 	cmpq	%rax, %rcx
 	sete	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movslq	%esi, %rax
 	sarq	$3, %rdi
 	movabsq	$-3689348814741910323, %rcx     # imm = 0xCCCCCCCCCCCCCCCD
@@ -54,7 +54,7 @@ func000000000000001a:                   # @func000000000000001a
 	cmpq	%rax, %rcx
 	setg	%al
 	retq
-func0000000000000017:                   # @func0000000000000017
+func0000000000000027:                   # @func0000000000000027
 	movslq	%esi, %rax
 	sarq	$2, %rdi
 	movabsq	$5675921253449092805, %rcx      # imm = 0x4EC4EC4EC4EC4EC5
@@ -62,7 +62,7 @@ func0000000000000017:                   # @func0000000000000017
 	cmpq	%rax, %rcx
 	setle	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movslq	%esi, %rax
 	sarq	$2, %rdi
 	movabsq	$-6148914691236517205, %rcx     # imm = 0xAAAAAAAAAAAAAAAB
@@ -70,7 +70,7 @@ func0000000000000016:                   # @func0000000000000016
 	cmpq	%rax, %rcx
 	setl	%al
 	retq
-func0000000000000019:                   # @func0000000000000019
+func0000000000000029:                   # @func0000000000000029
 	movslq	%esi, %rax
 	sarq	$3, %rdi
 	movabsq	$-6148914691236517205, %rcx     # imm = 0xAAAAAAAAAAAAAAAB
@@ -78,7 +78,7 @@ func0000000000000019:                   # @func0000000000000019
 	cmpq	%rax, %rcx
 	setae	%al
 	retq
-func0000000000000015:                   # @func0000000000000015
+func0000000000000025:                   # @func0000000000000025
 	movslq	%esi, %rax
 	sarq	$3, %rdi
 	movabsq	$-6148914691236517205, %rcx     # imm = 0xAAAAAAAAAAAAAAAB

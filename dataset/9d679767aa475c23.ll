@@ -13,6 +13,20 @@ entry:
   ret i64 %3
 }
 
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; meshlab/optimized/filter_sdfgpu.cpp.ll
+; openspiel/optimized/go.cc.ll
+; openspiel/optimized/phantom_go.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i32 %0) #0 {
+entry:
+  %1 = shl i32 %0, 1
+  %2 = mul i32 %1, %0
+  %3 = zext i32 %2 to i64
+  ret i64 %3
+}
+
 ; 1 occurrences:
 ; gromacs/optimized/grompp.cpp.ll
 ; Function Attrs: nounwind
@@ -21,19 +35,6 @@ entry:
   %1 = shl nsw i32 %0, 2
   %2 = mul nuw nsw i32 %1, %0
   %3 = zext nneg i32 %2 to i64
-  ret i64 %3
-}
-
-; 3 occurrences:
-; meshlab/optimized/filter_sdfgpu.cpp.ll
-; openspiel/optimized/go.cc.ll
-; openspiel/optimized/phantom_go.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i32 %0) #0 {
-entry:
-  %1 = shl i32 %0, 2
-  %2 = mul i32 %1, %0
-  %3 = zext i32 %2 to i64
   ret i64 %3
 }
 

@@ -46,21 +46,39 @@ func0000000000000019:                   # @func0000000000000019
 	setle	%al
 	orl	%edi, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpl	$-1073741824, %esi              # imm = 0xC0000000
+	setl	%al
+	orl	%edi, %eax
+	retq
 func0000000000000020:                   # @func0000000000000020
 	xorl	%eax, %eax
 	cmpl	$67072, %esi                    # imm = 0x10600
 	setae	%al
 	orl	%edi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	cmpl	$24578, %esi                    # imm = 0x6002
 	setae	%al
+	orl	%edi, %eax
+	retq
+func0000000000000050:                   # @func0000000000000050
+	xorl	%eax, %eax
+	cmpl	$256, %esi                      # imm = 0x100
+	setb	%al
 	orl	%edi, %eax
 	retq
 func0000000000000028:                   # @func0000000000000028
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	setg	%al
+	orl	%edi, %eax
+	retq
+func0000000000000060:                   # @func0000000000000060
+	xorl	%eax, %eax
+	cmpl	$2, %esi
+	setae	%al
 	orl	%edi, %eax
 	retq

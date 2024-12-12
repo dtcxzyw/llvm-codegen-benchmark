@@ -10,7 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	.long	4294967232                      # 0xffffffc0
 func0000000000000000:                   # @func0000000000000000
 	vpaddd	%ymm1, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$1, %ymm0, %ymm0
 	retq
@@ -23,7 +23,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func000000000000002e:                   # @func000000000000002e
 	vpslld	$2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsrld	$1, %ymm0, %ymm0
@@ -40,7 +40,7 @@ func000000000000007e:                   # @func000000000000007e
 	.long	4238353408                      # 0xfca02400
 func000000000000007a:                   # @func000000000000007a
 	vpslld	$10, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$18, %ymm0, %ymm0
 	retq

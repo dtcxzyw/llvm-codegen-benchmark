@@ -1,4 +1,4 @@
-func00000000000000b0:                   # @func00000000000000b0
+func0000000000000130:                   # @func0000000000000130
 	cmpb	$48, %dil
 	setne	%al
 	orb	%sil, %al

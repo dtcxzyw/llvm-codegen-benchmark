@@ -189,18 +189,18 @@ func0000000000000018:                   # @func0000000000000018
 	vzeroupper
 	retq
 .LCPI7_0:
-	.long	65536                           # 0x10000
+	.long	1                               # 0x1
 .LCPI7_3:
 	.zero	4,1
 .LCPI7_1:
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
+	.byte	248                             # 0xf8
+	.byte	248                             # 0xf8
+	.byte	248                             # 0xf8
+	.byte	248                             # 0xf8
+	.byte	248                             # 0xf8
+	.byte	248                             # 0xf8
+	.byte	248                             # 0xf8
+	.byte	248                             # 0xf8
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
@@ -211,40 +211,10 @@ func0000000000000018:                   # @func0000000000000018
 	.byte	0                               # 0x0
 .LCPI7_2:
 	.zero	16,1
-func0000000000000011:                   # @func0000000000000011
-	vpcmpltud	.LCPI7_0(%rip){1to8}, %ymm1, %k1
+func0000000000000021:                   # @func0000000000000021
+	vpcmpnleud	.LCPI7_0(%rip){1to8}, %ymm1, %k1
 	vpand	.LCPI7_1(%rip), %xmm0, %xmm0
 	vpord	.LCPI7_3(%rip){1to4}, %xmm0, %xmm1
-	vmovdqu8	%xmm1, %xmm0 {%k1}
-	vzeroupper
-	retq
-.LCPI8_0:
-	.long	2                               # 0x2
-.LCPI8_3:
-	.zero	4,1
-.LCPI8_1:
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-.LCPI8_2:
-	.zero	16,1
-func0000000000000021:                   # @func0000000000000021
-	vpcmpnleud	.LCPI8_0(%rip){1to8}, %ymm1, %k1
-	vpand	.LCPI8_1(%rip), %xmm0, %xmm0
-	vpord	.LCPI8_3(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq

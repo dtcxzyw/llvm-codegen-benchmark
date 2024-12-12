@@ -5,10 +5,10 @@ func0000000000000004:                   # @func0000000000000004
 	addl	$32768, %eax                    # imm = 0x8000
 	retq
 func0000000000000014:                   # @func0000000000000014
-	movl	$64, %eax
+	movl	$100, %eax
 	subl	%esi, %eax
 	imull	%edi, %eax
-	addl	$32, %eax
+	addl	$99, %eax
 	retq
 func000000000000003f:                   # @func000000000000003f
 	movl	$32, %eax

@@ -1,11 +1,12 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/sclUpsize.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll
+; opencv/optimized/tracker.cpp.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, float %1) #0 {
@@ -16,13 +17,11 @@ entry:
   ret float %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_primaries.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
-; opencv/optimized/short_term_imageless_tracker.cpp.ll
-; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:

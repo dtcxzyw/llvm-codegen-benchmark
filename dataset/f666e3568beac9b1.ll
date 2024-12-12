@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 67 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/cecClass.c.ll
 ; abc/optimized/cecIso.c.ll
@@ -26,6 +26,7 @@
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/message.ll
 ; c3c/optimized/types.c.ll
 ; clamav/optimized/scanner.c.ll
 ; cmake/optimized/hostip.c.ll
@@ -39,6 +40,7 @@
 ; grpc/optimized/xds_endpoint.cc.ll
 ; grpc/optimized/xds_resolver.cc.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/inputhandler.cpp.ll
@@ -73,7 +75,7 @@ entry:
   ret i32 %3
 }
 
-; 60 occurrences:
+; 61 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
@@ -81,6 +83,7 @@ entry:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; crow/optimized/example_session.cpp.ll

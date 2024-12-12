@@ -52,13 +52,13 @@
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1431655765
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = lshr i32 %3, 2
   %5 = and i32 %4, 858993459
   ret i32 %5
 }
 
-; 48 occurrences:
+; 50 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -107,11 +107,13 @@ entry:
 ; opencv/optimized/matrix_c.cpp.ll
 ; openjdk/optimized/pngrtran.ll
 ; ruby/optimized/regparse.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 858993459
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 4
   %5 = and i32 %4, 117901063
   ret i32 %5
@@ -126,7 +128,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 8
   %5 = and i32 %4, 31
   ret i32 %5
@@ -140,7 +142,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 248
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr exact i32 %3, 2
   %5 = and i32 %4, 504
   ret i32 %5
@@ -160,7 +162,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 2
   %5 = and i32 %4, 992
   ret i32 %5
@@ -173,7 +175,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 71582788
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 2
   %5 = and i32 %4, 50529027
   ret i32 %5

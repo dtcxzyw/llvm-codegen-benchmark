@@ -6,6 +6,12 @@ func0000000000000004:                   # @func0000000000000004
 	orl	$-16, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	shrb	$7, %sil
+	movzbl	%sil, %eax
+	notl	%eax
+	addl	%edi, %eax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	xorl	%eax, %eax
 	testb	%sil, %sil

@@ -22,21 +22,21 @@ entry:
 ; libquic/optimized/t1_enc.c.ll
 ; lief/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; libquic/optimized/ec_asn1.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 %2
   ret ptr %4
 }

@@ -1,33 +1,5 @@
 
-; 18 occurrences:
-; darktable/optimized/FujiDecompressor.cpp.ll
-; darktable/optimized/histogram.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
-; darktable/optimized/introspection_rawprepare.c.ll
-; icu/optimized/dictbe.ll
-; linux/optimized/sidtab.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/decorate_background.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
-; meshlab/optimized/meshselect.cpp.ll
-; meshlab/optimized/ml_default_decorators.cpp.ll
-; opencv/optimized/fast.cpp.ll
-; openssl/optimized/libtestutil-lib-random.ll
-; pbrt-v4/optimized/loopsubdiv.cpp.ll
-; raylib/optimized/rtextures.c.ll
-; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_image_resize2.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, 28
-  %2 = urem i32 %1, 31
-  %3 = zext nneg i32 %2 to i64
-  ret i64 %3
-}
-
-; 37 occurrences:
+; 38 occurrences:
 ; abc/optimized/extraBddCas.c.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
@@ -51,10 +23,11 @@ entry:
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_rawoverexposed.c.ll
-; graphviz/optimized/shortest.c.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; mitsuba3/optimized/rgb2spec.c.ll
 ; openusd/optimized/matrix3d.cpp.ll
 ; openusd/optimized/matrix3f.cpp.ll
 ; openusd/optimized/matrix4d.cpp.ll
@@ -68,7 +41,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:
-  %1 = add nuw nsw i32 %0, 2
+  %1 = add nuw nsw i32 %0, 1
   %2 = urem i32 %1, 3
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
@@ -88,6 +61,33 @@ define i64 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -7
   %2 = urem i32 %1, 3
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
+}
+
+; 17 occurrences:
+; darktable/optimized/FujiDecompressor.cpp.ll
+; darktable/optimized/histogram.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_rawprepare.c.ll
+; icu/optimized/dictbe.ll
+; linux/optimized/sidtab.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/decorate_background.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; meshlab/optimized/meshselect.cpp.ll
+; meshlab/optimized/ml_default_decorators.cpp.ll
+; opencv/optimized/fast.cpp.ll
+; pbrt-v4/optimized/loopsubdiv.cpp.ll
+; raylib/optimized/rtextures.c.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_image_resize2.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, 1
+  %2 = urem i32 %1, 6
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }

@@ -1,11 +1,10 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; eastl/optimized/EAMemory.cpp.ll
 ; lief/optimized/psa_crypto.c.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
 ; openspiel/optimized/goofspiel.cc.ll

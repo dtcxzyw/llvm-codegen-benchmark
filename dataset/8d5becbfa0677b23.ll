@@ -50,7 +50,7 @@ entry:
   ret i1 %4
 }
 
-; 22 occurrences:
+; 28 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/kitPla.c.ll
@@ -71,6 +71,12 @@ entry:
 ; openspiel/optimized/tarok.cc.ll
 ; openusd/optimized/tsTest_SampleBezier.cpp.ll
 ; qemu/optimized/block_mirror.c.ll
+; spike/optimized/kdmabt16.ll
+; spike/optimized/kdmatt16.ll
+; spike/optimized/kdmbt16.ll
+; spike/optimized/kdmtt16.ll
+; spike/optimized/khmbt16.ll
+; spike/optimized/khmtt16.ll
 ; stockfish/optimized/search.ll
 ; zxing/optimized/BitMatrixIO.cpp.ll
 ; Function Attrs: nounwind
@@ -82,12 +88,11 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; jemalloc/optimized/stats.ll
 ; jemalloc/optimized/stats.pic.ll
 ; jemalloc/optimized/stats.sym.ll
-; linux/optimized/blk-iocost.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/md.ll
 ; llvm/optimized/DAGCombiner.cpp.ll

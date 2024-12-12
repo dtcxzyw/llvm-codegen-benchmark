@@ -7,7 +7,7 @@ entry:
   %2 = fcmp oeq float %1, 2.000000e+00
   %3 = fcmp oeq float %1, 1.000000e+00
   %4 = or i1 %3, %2
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = fcmp ogt float %1, 1.000000e+00
   %3 = fcmp olt float %1, 0.000000e+00
   %4 = or i1 %3, %2
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = fcmp oeq float %1, 0x3810000000000000
   %3 = fcmp uno float %1, 0.000000e+00
   %4 = or i1 %3, %2
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

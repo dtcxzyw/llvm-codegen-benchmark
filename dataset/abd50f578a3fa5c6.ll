@@ -15,12 +15,13 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i8 %0, i8 %1) #0 {
 entry:
-  %2 = icmp eq i8 %1, 4
+  %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i8 %0, i8 %1
   %4 = zext i8 %3 to i32
   %5 = shl nuw i32 %4, 24

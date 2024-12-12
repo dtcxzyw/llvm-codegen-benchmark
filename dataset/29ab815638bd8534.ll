@@ -19,12 +19,12 @@
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = urem i32 %2, 10
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -38,7 +38,7 @@ entry:
   %2 = add i32 %1, 18
   %3 = urem i32 %2, 3
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

@@ -1,19 +1,14 @@
 
-%"struct.OT::IntType.144.2623522" = type { %struct.BEInt.145.2623523 }
-%struct.BEInt.145.2623523 = type { [2 x i8] }
-%"struct.Assimp::SMD::Vertex.2716623" = type { %class.aiVector3t.2716624, %class.aiVector3t.2716624, %class.aiVector3t.2716624, i32, %"class.std::vector.45.2716616" }
-%class.aiVector3t.2716624 = type { float, float, float }
-%"class.std::vector.45.2716616" = type { %"struct.std::_Vector_base.46.2716617" }
-%"struct.std::_Vector_base.46.2716617" = type { %"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl.2716618" }
-%"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl.2716618" = type { %"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl_data.2716619" }
-%"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl_data.2716619" = type { ptr, ptr, ptr }
-%struct.scatterlist.3353112 = type { i64, i32, i32, i64, i32, i32 }
+%"struct.OT::IntType.144.2736952" = type { %struct.BEInt.145.2736953 }
+%struct.BEInt.145.2736953 = type { [2 x i8] }
+%struct.scatterlist.3540839 = type { i64, i32, i32, i64, i32, i32 }
 
-; 46 occurrences:
+; 47 occurrences:
 ; abc/optimized/plaSimple.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/collator.ll
 ; bullet3/optimized/btSoftBody.ll
 ; clamav/optimized/timefn.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -57,15 +52,15 @@
 ; stb/optimized/stb_sprintf.c.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 1073741823, i64 %3
-  %5 = getelementptr nusw [1 x %"struct.OT::IntType.144.2623522"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.144.2736952"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; assimp/optimized/SMDLoader.cpp.ll
 ; clamav/optimized/autoit.c.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
@@ -73,18 +68,19 @@ entry:
 ; llvm/optimized/AArch64SLSHardening.cpp.ll
 ; openmpi/optimized/alfg.ll
 ; openmpi/optimized/pmix_alfg.ll
+; rust-analyzer-rs/optimized/h7mtydzcy9xo30w.ll
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw [3 x %"struct.Assimp::SMD::Vertex.2716623"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [0 x { { { i64, ptr, {} }, i64 }, { i64, [2 x i64] }, { i64, [5 x i64] }, { i8, [55 x i8] }, ptr, { { { { { ptr, i64, i64, i64 }, {}, {} }, { {} } } } }, ptr, i32, i8, i8, [2 x i8] }], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; cpython/optimized/instrumentation.ll
 ; linux/optimized/blk-cgroup.ll
@@ -92,8 +88,6 @@ entry:
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/hda_controller.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/pid_list.ll
 ; linux/optimized/rx.ll
@@ -113,7 +107,7 @@ define ptr @func0000000000000000(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr [19 x %struct.scatterlist.3353112], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [19 x %struct.scatterlist.3540839], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

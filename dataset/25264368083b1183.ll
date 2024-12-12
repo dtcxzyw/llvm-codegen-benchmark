@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_ide_core.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 25
   %4 = shl nuw nsw i32 %1, 9
@@ -30,7 +30,7 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 10
   %4 = shl nuw nsw i32 %1, 2
@@ -50,7 +50,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000328(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 10
   %4 = shl i32 %1, 2

@@ -6,7 +6,6 @@
 ; linux/optimized/dmar.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/intel_gt.ll
-; linux/optimized/reciprocal_div.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
@@ -17,6 +16,7 @@
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i32 %1) #0 {
 entry:
@@ -50,10 +50,11 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; linux/optimized/io_apic.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind

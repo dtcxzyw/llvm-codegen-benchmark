@@ -7,7 +7,7 @@ define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = uitofp i32 %2 to double
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 
@@ -23,7 +23,7 @@ define double @func0000000000000003(double %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -48
   %3 = uitofp nneg i32 %2 to double
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 
@@ -35,7 +35,7 @@ define double @func0000000000000001(double %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -7
   %3 = uitofp nneg i32 %2 to double
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 

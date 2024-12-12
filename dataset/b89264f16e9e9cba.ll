@@ -1,23 +1,23 @@
 
-%"struct.rocksdb::StatisticsImpl::StatisticsData.2509692" = type { [216 x %"struct.std::atomic.51.2509693"], [61 x %"class.rocksdb::HistogramImpl.2509694"], [24 x i8] }
-%"struct.std::atomic.51.2509693" = type { %"struct.std::__atomic_base.2509695" }
-%"struct.std::__atomic_base.2509695" = type { i64 }
-%"class.rocksdb::HistogramImpl.2509694" = type { %"class.rocksdb::Histogram.2509696", %"struct.rocksdb::HistogramStat.2509697", %"class.std::mutex.2509698" }
-%"class.rocksdb::Histogram.2509696" = type { ptr }
-%"struct.rocksdb::HistogramStat.2509697" = type { %"struct.std::atomic.51.2509693", %"struct.std::atomic.51.2509693", %"struct.std::atomic.51.2509693", %"struct.std::atomic.51.2509693", %"struct.std::atomic.51.2509693", [109 x %"struct.std::atomic.51.2509693"], i64 }
-%"class.std::mutex.2509698" = type { %"class.std::__mutex_base.2509699" }
-%"class.std::__mutex_base.2509699" = type { %union.pthread_mutex_t.2509700 }
-%union.pthread_mutex_t.2509700 = type { %struct.__pthread_mutex_s.2509701 }
-%struct.__pthread_mutex_s.2509701 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2509702 }
-%struct.__pthread_internal_list.2509702 = type { ptr, ptr }
-%struct.page.3346644 = type { i64, %union.anon.4.3346645, %union.anon.12.3346646, %struct.atomic_t.3346612, [8 x i8] }
-%union.anon.4.3346645 = type { %struct.anon.5.3346647 }
-%struct.anon.5.3346647 = type { %union.anon.6.3346648, ptr, %union.anon.8.3346649, i64 }
-%union.anon.6.3346648 = type { %struct.list_head.3346628 }
-%struct.list_head.3346628 = type { ptr, ptr }
-%union.anon.8.3346649 = type { i64 }
-%union.anon.12.3346646 = type { %struct.atomic_t.3346612 }
-%struct.atomic_t.3346612 = type { i32 }
+%"struct.rocksdb::StatisticsImpl::StatisticsData.2624843" = type { [216 x %"struct.std::atomic.51.2624844"], [61 x %"class.rocksdb::HistogramImpl.2624845"], [24 x i8] }
+%"struct.std::atomic.51.2624844" = type { %"struct.std::__atomic_base.2624846" }
+%"struct.std::__atomic_base.2624846" = type { i64 }
+%"class.rocksdb::HistogramImpl.2624845" = type { %"class.rocksdb::Histogram.2624847", %"struct.rocksdb::HistogramStat.2624848", %"class.std::mutex.2624849" }
+%"class.rocksdb::Histogram.2624847" = type { ptr }
+%"struct.rocksdb::HistogramStat.2624848" = type { %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", [109 x %"struct.std::atomic.51.2624844"], i64 }
+%"class.std::mutex.2624849" = type { %"class.std::__mutex_base.2624850" }
+%"class.std::__mutex_base.2624850" = type { %union.pthread_mutex_t.2624851 }
+%union.pthread_mutex_t.2624851 = type { %struct.__pthread_mutex_s.2624852 }
+%struct.__pthread_mutex_s.2624852 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2624853 }
+%struct.__pthread_internal_list.2624853 = type { ptr, ptr }
+%struct.page.3535211 = type { i64, %union.anon.4.3535212, %union.anon.12.3535213, %struct.atomic_t.3535179, [8 x i8] }
+%union.anon.4.3535212 = type { %struct.anon.5.3535214 }
+%struct.anon.5.3535214 = type { %union.anon.6.3535215, ptr, %union.anon.8.3535216, i64 }
+%union.anon.6.3535215 = type { %struct.list_head.3535195 }
+%struct.list_head.3535195 = type { ptr, ptr }
+%union.anon.8.3535216 = type { i64 }
+%union.anon.12.3535213 = type { %struct.atomic_t.3535179 }
+%struct.atomic_t.3535179 = type { i32 }
 
 ; 14 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
@@ -39,7 +39,7 @@ define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2509692", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2624843", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -595,11 +595,11 @@ entry:
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
 ; opencv/optimized/binary_descriptor_matcher.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 4096, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -622,7 +622,7 @@ define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = getelementptr %struct.page.3346644, ptr %0, i64 %3
+  %4 = getelementptr %struct.page.3535211, ptr %0, i64 %3
   ret ptr %4
 }
 

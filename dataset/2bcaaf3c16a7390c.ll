@@ -5,7 +5,7 @@
 ; slurm/optimized/mgr.ll
 ; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0) #0 {
+define i1 @func000000000000004a(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 24
   %2 = and i32 %1, 2130706432
@@ -19,7 +19,7 @@ entry:
 ; libphonenumber/optimized/rune.c.ll
 ; llvm/optimized/Path.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0) #0 {
+define i1 @func00000000000001a4(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 %0, 6
   %2 = and i32 %1, 2031616
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; sentencepiece/optimized/util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0) #0 {
+define i1 @func00000000000000a4(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 12
   %2 = and i32 %1, 57344

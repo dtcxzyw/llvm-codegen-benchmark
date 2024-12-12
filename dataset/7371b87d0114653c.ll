@@ -1,5 +1,8 @@
 
-; 62 occurrences:
+; 65 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/intersection_box.ll
+; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_grain.c.ll
 ; darktable/optimized/introspection_highpass.c.ll

@@ -1,5 +1,5 @@
 
-; 454 occurrences:
+; 452 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -168,7 +168,6 @@
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; mimalloc/optimized/page.c.ll
@@ -190,8 +189,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -408,6 +405,7 @@
 ; spdlog/optimized/spdlog.cpp.ll
 ; spike/optimized/clint.ll
 ; spike/optimized/csrs.ll
+; spike/optimized/triggers.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll

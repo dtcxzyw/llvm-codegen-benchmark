@@ -13,9 +13,15 @@ entry:
   ret i1 %4
 }
 
-; 240 occurrences:
+; 244 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/src.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -164,7 +170,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -251,14 +256,13 @@ entry:
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 72
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp eq i64 %3, 128102389400760775
   ret i1 %4
 }
@@ -298,7 +302,7 @@ entry:
 ; yosys/optimized/aigerparse.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = add nsw i64 %2, %0
@@ -325,7 +329,7 @@ entry:
 ; tev/optimized/Ipc.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = add i64 %2, %0
@@ -333,131 +337,31 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; rocksdb/optimized/memtable_list.cc.ll
 ; rocksdb/optimized/pessimistic_transaction.cc.ll
 ; rocksdb/optimized/transaction_base.cc.ll
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
-; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 80
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ult i64 %3, 8
   ret i1 %4
 }
 
-; 132 occurrences:
-; cpp-httplib/optimized/httplib.cc.ll
-; cvc5/optimized/options_handler.cpp.ll
-; cxxopts/optimized/example.cpp.ll
+; 26 occurrences:
 ; duckdb/optimized/ub_duckdb_function.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
-; faiss/optimized/index_factory.cpp.ll
-; g2o/optimized/filesys_tools.cpp.ll
-; glog/optimized/logging.cc.ll
-; gromacs/optimized/colvaratoms.cpp.ll
-; gromacs/optimized/colvarcomp_distances.cpp.ll
-; gromacs/optimized/colvarcomp_gpath.cpp.ll
-; gromacs/optimized/colvarcomp_rotations.cpp.ll
-; gromacs/optimized/colvarparse.cpp.ll
-; gromacs/optimized/colvartypes.cpp.ll
-; gromacs/optimized/matio.cpp.ll
-; gromacs/optimized/mpiinfo.cpp.ll
-; gromacs/optimized/readpull.cpp.ll
-; gromacs/optimized/sm_keywords.cpp.ll
-; llama.cpp/optimized/common.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/test_sao.cpp.ll
-; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
-; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
-; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
-; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
-; mold/optimized/cmdline.cc.ALPHA.cc.ll
-; mold/optimized/cmdline.cc.ARM32.cc.ll
-; mold/optimized/cmdline.cc.ARM64.cc.ll
-; mold/optimized/cmdline.cc.I386.cc.ll
-; mold/optimized/cmdline.cc.LOONGARCH32.cc.ll
-; mold/optimized/cmdline.cc.LOONGARCH64.cc.ll
-; mold/optimized/cmdline.cc.M68K.cc.ll
-; mold/optimized/cmdline.cc.PPC32.cc.ll
-; mold/optimized/cmdline.cc.PPC64V1.cc.ll
-; mold/optimized/cmdline.cc.PPC64V2.cc.ll
-; mold/optimized/cmdline.cc.RV32BE.cc.ll
-; mold/optimized/cmdline.cc.RV32LE.cc.ll
-; mold/optimized/cmdline.cc.RV64BE.cc.ll
-; mold/optimized/cmdline.cc.RV64LE.cc.ll
-; mold/optimized/cmdline.cc.S390X.cc.ll
-; mold/optimized/cmdline.cc.SH4.cc.ll
-; mold/optimized/cmdline.cc.SPARC64.cc.ll
-; mold/optimized/cmdline.cc.X86_64.cc.ll
-; mold/optimized/multi-glob.cc.ll
-; mold/optimized/passes.cc.ALPHA.cc.ll
-; mold/optimized/passes.cc.ARM32.cc.ll
-; mold/optimized/passes.cc.ARM64.cc.ll
-; mold/optimized/passes.cc.I386.cc.ll
-; mold/optimized/passes.cc.LOONGARCH32.cc.ll
-; mold/optimized/passes.cc.LOONGARCH64.cc.ll
-; mold/optimized/passes.cc.M68K.cc.ll
-; mold/optimized/passes.cc.PPC32.cc.ll
-; mold/optimized/passes.cc.PPC64V1.cc.ll
-; mold/optimized/passes.cc.PPC64V2.cc.ll
-; mold/optimized/passes.cc.RV32BE.cc.ll
-; mold/optimized/passes.cc.RV32LE.cc.ll
-; mold/optimized/passes.cc.RV64BE.cc.ll
-; mold/optimized/passes.cc.RV64LE.cc.ll
-; mold/optimized/passes.cc.S390X.cc.ll
-; mold/optimized/passes.cc.SH4.cc.ll
-; mold/optimized/passes.cc.SPARC64.cc.ll
-; mold/optimized/passes.cc.X86_64.cc.ll
-; ms-gsl/optimized/span_tests.cpp.ll
-; nix/optimized/binary-cache-store.ll
-; nix/optimized/cgroup.ll
-; nix/optimized/diff-closures.ll
-; nix/optimized/fetchMercurial.ll
-; nix/optimized/filetransfer.ll
-; nix/optimized/gc.ll
-; nix/optimized/get-drvs.ll
-; nix/optimized/git-utils.ll
-; nix/optimized/github.ll
-; nix/optimized/hilite.ll
-; nix/optimized/indirect.ll
-; nix/optimized/local-derivation-goal.ll
-; nix/optimized/lockfile.ll
-; nix/optimized/mercurial.ll
-; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-channel.ll
-; nix/optimized/parsed-derivations.ll
-; nix/optimized/profile.ll
-; nix/optimized/search.ll
-; nix/optimized/store-api.ll
-; nori/optimized/textbox.cpp.ll
-; ocio/optimized/BuiltinConfigRegistry.cpp.ll
-; ocio/optimized/Config.cpp.ll
-; ocio/optimized/FileRules.cpp.ll
-; oiio/optimized/filesystem.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/aruco_detector.cpp.ll
-; opencv/optimized/motion_estimators.cpp.ll
-; opencv/optimized/proposal_layer.cpp.ll
-; openusd/optimized/env.cpp.ll
-; openusd/optimized/info.cpp.ll
-; openusd/optimized/instanceAdapter.cpp.ll
-; openusd/optimized/mallocTag.cpp.ll
-; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; openusd/optimized/primIndex_Graph.cpp.ll
-; openusd/optimized/reporter.cpp.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
-; protobuf/optimized/descriptor_database.cc.ll
-; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; rocksdb/optimized/blob_source.cc.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; rocksdb/optimized/column_family.cc.ll
@@ -475,15 +379,8 @@ entry:
 ; rocksdb/optimized/transaction_base.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; rocksdb/optimized/write_batch_with_index.cc.ll
-; spike/optimized/spike-log-parser.ll
-; vcpkg/optimized/tools.cpp.ll
-; xgboost/optimized/context.cc.ll
-; xgboost/optimized/input_split_base.cc.ll
-; yosys/optimized/exec.ll
-; yosys/optimized/log.ll
-; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 80
   %3 = add i64 %2, %0
@@ -491,7 +388,9 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 21 occurrences:
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side_basic.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
@@ -512,7 +411,7 @@ entry:
 ; opencv/optimized/persistence.cpp.ll
 ; rocksdb/optimized/threadpool_imp.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 72
   %3 = add nsw i64 %2, %0
@@ -520,16 +419,11 @@ entry:
   ret i1 %4
 }
 
-; 25 occurrences:
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
-; eastl/optimized/TestVector.cpp.ll
-; eastl/optimized/TestVectorMap.cpp.ll
-; eastl/optimized/TestVectorSet.cpp.ll
-; gromacs/optimized/muParserBase.cpp.ll
+; 18 occurrences:
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side_basic.ll
 ; hyperscan/optimized/ng_prefilter.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
-; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; hyperscan/optimized/rose_build_convert.cpp.ll
@@ -538,20 +432,18 @@ entry:
 ; hyperscan/optimized/rose_build_misc.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
-; hyperscan/optimized/slot_manager.cpp.ll
 ; libquic/optimized/hpack_header_table.cc.ll
 ; libquic/optimized/quic_unacked_packet_map.cc.ll
-; minetest/optimized/collector.cpp.ll
 ; minetest/optimized/profilergraph.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; rocksdb/optimized/threadpool_imp.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000b4(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 72
   %3 = add nsw i64 %2, %0
-  %4 = icmp ult i64 %3, 7
+  %4 = icmp samesign ult i64 %3, 7
   ret i1 %4
 }
 
@@ -581,7 +473,7 @@ entry:
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
   %3 = add nsw i64 %2, %0
@@ -589,20 +481,19 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; hyperscan/optimized/ng_calc_components.cpp.ll
 ; hyperscan/optimized/ng_prefilter.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; ninja/optimized/build_test.cc.ll
-; openmpi/optimized/name_fns.ll
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
   %3 = add nsw i64 %2, %0
-  %4 = icmp ult i64 %3, 32
+  %4 = icmp samesign ult i64 %3, 32
   ret i1 %4
 }
 
@@ -614,11 +505,31 @@ entry:
 ; rocksdb/optimized/blob_source.cc.ll
 ; wireshark/optimized/interface_toolbar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 48
   %3 = add i64 %2, %0
   %4 = icmp sgt i64 %3, 16
+  ret i1 %4
+}
+
+; 10 occurrences:
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestVector.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; gromacs/optimized/muParserBase.cpp.ll
+; hyperscan/optimized/rose_build_anchored.cpp.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; hyperscan/optimized/slot_manager.cpp.ll
+; minetest/optimized/collector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sdiv exact i64 %1, 36
+  %3 = add nsw i64 %2, %0
+  %4 = icmp ult i64 %3, 65536
   ret i1 %4
 }
 
@@ -629,11 +540,22 @@ entry:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 86400
   %3 = add nsw i64 %2, %0
   %4 = icmp slt i64 %3, -1460000715399
+  ret i1 %4
+}
+
+; 1 occurrences:
+; quantlib/optimized/bumpinstrumentjacobian.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sdiv exact i64 %1, 24
+  %3 = sub i64 0, %0
+  %4 = icmp eq i64 %2, %3
   ret i1 %4
 }
 
@@ -657,7 +579,7 @@ entry:
 ; protobuf/optimized/names.cc.ll
 ; protobuf/optimized/ruby_generator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 64
   %3 = sub i64 0, %0
@@ -668,7 +590,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 64
   %3 = add nsw i64 %2, %0
@@ -682,7 +604,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 1000
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, 1000000
   ret i1 %4
 }
@@ -702,10 +624,10 @@ entry:
 ; wireshark/optimized/traffic_tree.cpp.ll
 ; wireshark/optimized/voip_calls_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, -24
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp slt i64 %3, 1
   ret i1 %4
 }
@@ -760,14 +682,25 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; protobuf/optimized/descriptor_database.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sdiv exact i64 %1, 40
+  %3 = sub i64 0, %0
+  %4 = icmp ne i64 %2, %3
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }

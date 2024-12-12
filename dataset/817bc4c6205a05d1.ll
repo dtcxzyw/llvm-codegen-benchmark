@@ -34,23 +34,22 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 32, i32 64
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/collationkeys.ll
 ; llvm/optimized/PseudoProbe.cpp.ll
-; php/optimized/avifinfo.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 2130706432
   %3 = icmp eq i32 %2, 0
@@ -60,9 +59,9 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/tcg-op-gvec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000301(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 15
+  %2 = icmp samesign ugt i32 %1, 15
   %3 = select i1 %2, i32 15, i32 7
   %4 = and i32 %3, %0
   %5 = icmp eq i32 %4, 0
@@ -74,11 +73,23 @@ entry:
 ; linux/optimized/ich8lan.ll
 ; openjdk/optimized/output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 512
   %3 = select i1 %2, i32 15, i32 1
   %4 = and i32 %3, %0
+  %5 = icmp eq i32 %4, 0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; php/optimized/avifinfo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 0
+  %3 = select i1 %2, i32 -256, i32 -33024
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -91,7 +102,7 @@ entry:
 ; node/optimized/libnode.node_i18n.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 223, i32 222
@@ -104,12 +115,12 @@ entry:
 ; icu/optimized/collationcompare.ll
 ; icu/optimized/collationkeys.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 512
   %3 = select i1 %2, i32 65343, i32 16191
   %4 = and i32 %3, %0
-  %5 = icmp ugt i32 %4, 256
+  %5 = icmp samesign ugt i32 %4, 256
   ret i1 %5
 }
 

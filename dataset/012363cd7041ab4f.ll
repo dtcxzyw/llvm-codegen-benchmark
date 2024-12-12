@@ -1,9 +1,8 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; flac/optimized/window.c.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll

@@ -23,9 +23,10 @@ entry:
   ret i1 %5
 }
 
-; 44 occurrences:
+; 45 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; boost/optimized/positional_options.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/linsol_qr.cpp.ll
@@ -69,7 +70,7 @@ entry:
 ; wasmedge/optimized/memory.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %0, %1
@@ -77,7 +78,7 @@ entry:
   ret i1 %5
 }
 
-; 141 occurrences:
+; 142 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
@@ -85,6 +86,7 @@ entry:
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/integrator.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
+; casadi/optimized/sparsity_internal.cpp.ll
 ; casadi/optimized/symbolic_qr.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; entt/optimized/flow.cpp.ll
@@ -220,7 +222,7 @@ entry:
 ; yosys/optimized/fmt.ll
 ; yosys/optimized/opt_mem_feedback.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
   %4 = add i64 %0, %1
@@ -228,13 +230,14 @@ entry:
   ret i1 %5
 }
 
-; 45 occurrences:
+; 46 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
 ; abseil-cpp/optimized/crc_cord_state_test.cc.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
+; casadi/optimized/sparsity_internal.cpp.ll
 ; casadi/optimized/symbolic_qr.cpp.ll
 ; faiss/optimized/DirectMap.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll
@@ -275,7 +278,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add i64 %0, %1
@@ -289,7 +292,7 @@ entry:
 ; luau/optimized/Autocomplete.cpp.ll
 ; rocksdb/optimized/point_lock_manager.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nuw i64 %0, %1
@@ -306,7 +309,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = add i64 %0, %1
@@ -314,9 +317,10 @@ entry:
   ret i1 %5
 }
 
-; 42 occurrences:
+; 43 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; boost/optimized/positional_options.ll
 ; casadi/optimized/linsol_qr.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
@@ -358,7 +362,7 @@ entry:
 ; wasmedge/optimized/memory.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = add nsw i64 %0, %1
@@ -382,7 +386,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = add nuw nsw i64 %0, %1
@@ -390,7 +394,9 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/matches_relation_factory.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -398,7 +404,7 @@ entry:
 ; php/optimized/array.ll
 ; wireshark/optimized/ftypes.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = add nsw i64 %0, %1
@@ -409,7 +415,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/LeadLag.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
   %4 = add nsw i64 %0, %1
@@ -424,7 +430,7 @@ entry:
 ; hyperscan/optimized/ng_execute.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nuw nsw i64 %0, %1
@@ -432,7 +438,8 @@ entry:
   ret i1 %5
 }
 
-; 32 occurrences:
+; 33 occurrences:
+; boost/optimized/copy_segment_point.ll
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/evaluator.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
@@ -466,7 +473,7 @@ entry:
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = add nsw i64 %0, %1
@@ -479,7 +486,7 @@ entry:
 ; slurm/optimized/gres_select_filter.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = add nuw nsw i64 %0, %1
@@ -497,7 +504,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; opencv/optimized/scatterND_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %0, %1
@@ -519,7 +526,7 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
   %4 = add nsw i64 %0, %1
@@ -552,7 +559,7 @@ entry:
 ; 1 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000089(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add i64 %0, %1
@@ -567,7 +574,7 @@ entry:
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nuw nsw i64 %0, %1
@@ -579,7 +586,7 @@ entry:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ac(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = add nsw i64 %0, %1

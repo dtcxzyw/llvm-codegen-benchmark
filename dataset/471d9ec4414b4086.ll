@@ -1,5 +1,6 @@
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -26,7 +27,8 @@ entry:
   ret i32 %4
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -135,28 +137,33 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; abseil-cpp/optimized/cord_test.cc.ll
-; abseil-cpp/optimized/graphcycles_test.cc.ll
+; 5 occurrences:
+; boost/optimized/to_chars.ll
+; delta-rs/optimized/11f8x98axanecwnw.ll
+; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001b(i64 %0) #0 {
+define i32 @func000000000000003b(i64 %0) #0 {
 entry:
-  %1 = zext i64 %0 to i128
-  %2 = mul nuw nsw i128 %1, 6
+  %1 = zext nneg i64 %0 to i128
+  %2 = mul nuw nsw i128 %1, 1844674407371
   %3 = lshr i128 %2, 64
   %4 = trunc nuw nsw i128 %3 to i32
   ret i32 %4
 }
 
-; 2 occurrences:
-; delta-rs/optimized/11f8x98axanecwnw.ll
-; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; 4 occurrences:
+; abseil-cpp/optimized/cord_test.cc.ll
+; abseil-cpp/optimized/graphcycles_test.cc.ll
+; boost/optimized/to_chars.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003b(i64 %0) #0 {
+define i32 @func000000000000001b(i64 %0) #0 {
 entry:
-  %1 = zext nneg i64 %0 to i128
-  %2 = mul nuw nsw i128 %1, 1000000000
-  %3 = lshr i128 %2, 52
+  %1 = zext i64 %0 to i128
+  %2 = mul nuw nsw i128 %1, 2000
+  %3 = lshr i128 %2, 64
   %4 = trunc nuw nsw i128 %3 to i32
   ret i32 %4
 }

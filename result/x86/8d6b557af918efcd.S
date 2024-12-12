@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	decb	%dil
 	testb	$-9, %dil
 	sete	%al
@@ -13,7 +13,7 @@ func000000000000000c:                   # @func000000000000000c
 	testb	$-6, %dil
 	setne	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	incb	%dil
 	testb	$2, %dil
 	sete	%al

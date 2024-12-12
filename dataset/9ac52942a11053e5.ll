@@ -10,7 +10,7 @@ entry:
   %3 = and i8 %2, 64
   %4 = icmp eq i8 %3, 0
   %5 = and i1 %4, %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -26,7 +26,7 @@ entry:
   %3 = and i8 %2, -32
   %4 = icmp ne i8 %3, -64
   %5 = and i1 %4, %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

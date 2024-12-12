@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wireshark/optimized/packet-rtcp.c.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:

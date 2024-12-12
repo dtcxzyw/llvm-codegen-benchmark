@@ -17,6 +17,7 @@
 ; hyperscan/optimized/state_compress.c.ll
 ; libquic/optimized/des.c.ll
 ; linux/optimized/aes.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -43,7 +44,6 @@
 ; spike/optimized/aes64esm.ll
 ; spike/optimized/aes64im.ll
 ; verilator/optimized/V3Hasher.cpp.ll
-; wireshark/optimized/golay.c.ll
 ; yosys/optimized/ast.ll
 ; yosys/optimized/extract_counter.ll
 ; yosys/optimized/flowmap.ll
@@ -68,7 +68,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = shl i32 %4, 15
   ret i32 %5
 }

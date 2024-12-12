@@ -3,7 +3,7 @@ func0000000000000022:                   # @func0000000000000022
 	vle64.v	v24, (a0)
 	vmflt.vv	v0, v24, v16
 	vmerge.vvm	v16, v24, v16, v0
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	fmv.d.x	fa5, zero
 	vmflt.vf	v0, v8, fa5
 	ret
@@ -12,7 +12,7 @@ func0000000000000028:                   # @func0000000000000028
 	vle64.v	v24, (a0)
 	vmflt.vv	v0, v24, v16
 	vmerge.vvm	v16, v24, v16, v0
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	fmv.d.x	fa5, zero
 	vmfeq.vf	v0, v8, fa5
 	ret
@@ -29,7 +29,7 @@ func0000000000000023:                   # @func0000000000000023
 	vle64.v	v24, (a0)
 	vmflt.vv	v0, v24, v16
 	vmerge.vvm	v16, v24, v16, v0
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	fmv.d.x	fa5, zero
 	vmfge.vf	v16, v8, fa5
 	vmnot.m	v0, v16
@@ -67,7 +67,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	vle64.v	v24, (a0)
 	vmfle.vv	v0, v16, v24
 	vmerge.vvm	v16, v24, v16, v0
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	fmv.d.x	fa5, zero
 	vmfge.vf	v0, v8, fa5
 	ret
@@ -94,7 +94,7 @@ func0000000000000042:                   # @func0000000000000042
 	vle64.v	v24, (a0)
 	vmflt.vv	v0, v24, v16
 	vmerge.vvm	v16, v24, v16, v0
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	fli.d	fa5, 1.0
 	vmflt.vf	v0, v8, fa5
 	ret

@@ -1,5 +1,5 @@
 
-; 124 occurrences:
+; 126 occurrences:
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; faiss/optimized/IVFlib.cpp.ll
@@ -39,6 +39,8 @@
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/static_call_inline.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_span.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; nuttx/optimized/intel64_createstack.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -128,7 +130,7 @@
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, -64
   ret i64 %4
 }

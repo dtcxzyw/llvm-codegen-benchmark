@@ -12,11 +12,12 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; hdf5/optimized/H5Olayout.c.ll
 ; hdf5/optimized/H5Osdspace.c.ll
 ; libpng/optimized/pngwrite.c.ll
 ; libpng/optimized/pngwutil.c.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; openusd/optimized/reconinter.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind

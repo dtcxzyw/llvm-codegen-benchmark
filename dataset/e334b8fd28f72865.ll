@@ -17,7 +17,7 @@
 ; ruby/optimized/string.ll
 ; ruby/optimized/symbol.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0) #0 {
+define i1 @func0000000000000024(i8 %0) #0 {
 entry:
   %1 = and i8 %0, -33
   %2 = sext i8 %1 to i32

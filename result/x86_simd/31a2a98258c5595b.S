@@ -86,9 +86,30 @@ func0000000000000007:                   # @func0000000000000007
 	vmovdqu8	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
+.LCPI5_0:
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI5_1:
+	.byte	3                               # 0x3
 func000000000000000a:                   # @func000000000000000a
 	vpcmpgtd	%ymm2, %ymm1, %k1
-	vmovdqu8	%xmm0, %xmm0 {%k1} {z}
+	vpbroadcastb	.LCPI5_1(%rip), %xmm1   # xmm1 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
+	vmovdqu8	%xmm0, %xmm1 {%k1}
+	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
 func0000000000000005:                   # @func0000000000000005

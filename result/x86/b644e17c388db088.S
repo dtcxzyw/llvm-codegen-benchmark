@@ -1,4 +1,4 @@
-func000000000000029a:                   # @func000000000000029a
+func000000000000052a:                   # @func000000000000052a
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
 	setle	%al
@@ -6,7 +6,7 @@ func000000000000029a:                   # @func000000000000029a
 	addq	%rdi, %rax
 	setns	%al
 	retq
-func0000000000000131:                   # @func0000000000000131
+func0000000000000261:                   # @func0000000000000261
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
 	setb	%al
@@ -15,20 +15,20 @@ func0000000000000131:                   # @func0000000000000131
 	cmpq	$568, %rax                      # imm = 0x238
 	sete	%al
 	retq
-func0000000000000118:                   # @func0000000000000118
+func0000000000000228:                   # @func0000000000000228
 	cmpq	%rdx, %rsi
 	sbbq	$0, %rdi
 	addq	$126, %rdi
 	cmpq	$253, %rdi
 	setae	%al
 	retq
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	cmpq	%rdx, %rsi
 	sbbq	$0, %rdi
 	leaq	126(%rdi), %rax
 	shrq	$63, %rax
 	retq
-func000000000000011c:                   # @func000000000000011c
+func000000000000022c:                   # @func000000000000022c
 	cmpq	%rdx, %rsi
 	sbbq	$0, %rdi
 	cmpq	$127, %rdi

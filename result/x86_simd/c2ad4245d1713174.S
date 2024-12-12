@@ -66,27 +66,13 @@ func0000000000000004:                   # @func0000000000000004
 	vpmullw	.LCPI5_0(%rip), %xmm0, %xmm0    # [12,12,12,12,12,12,12,12]
 	vzeroupper
 	retq
-.LCPI6_0:
-	.short	53247                           # 0xcfff
-	.short	53247                           # 0xcfff
-	.short	53247                           # 0xcfff
-	.short	53247                           # 0xcfff
-	.short	53247                           # 0xcfff
-	.short	53247                           # 0xcfff
-	.short	53247                           # 0xcfff
-	.short	53247                           # 0xcfff
-func000000000000000c:                   # @func000000000000000c
-	vpmovdw	%ymm0, %xmm0
-	vpmullw	.LCPI6_0(%rip), %xmm0, %xmm0    # [53247,53247,53247,53247,53247,53247,53247,53247]
-	vzeroupper
-	retq
 func000000000000000d:                   # @func000000000000000d
 	vpmovdw	%ymm0, %xmm0
 	vpsllw	$3, %xmm0, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI8_0:
+.LCPI7_0:
 	.short	100                             # 0x64
 	.short	100                             # 0x64
 	.short	100                             # 0x64
@@ -97,10 +83,10 @@ func000000000000000d:                   # @func000000000000000d
 	.short	100                             # 0x64
 func0000000000000003:                   # @func0000000000000003
 	vpmovdw	%ymm0, %xmm0
-	vpmullw	.LCPI8_0(%rip), %xmm0, %xmm0    # [100,100,100,100,100,100,100,100]
+	vpmullw	.LCPI7_0(%rip), %xmm0, %xmm0    # [100,100,100,100,100,100,100,100]
 	vzeroupper
 	retq
-.LCPI9_0:
+.LCPI8_0:
 	.short	1000                            # 0x3e8
 	.short	1000                            # 0x3e8
 	.short	1000                            # 0x3e8
@@ -111,7 +97,7 @@ func0000000000000003:                   # @func0000000000000003
 	.short	1000                            # 0x3e8
 func0000000000000001:                   # @func0000000000000001
 	vpmovdw	%ymm0, %xmm0
-	vpmullw	.LCPI9_0(%rip), %xmm0, %xmm0    # [1000,1000,1000,1000,1000,1000,1000,1000]
+	vpmullw	.LCPI8_0(%rip), %xmm0, %xmm0    # [1000,1000,1000,1000,1000,1000,1000,1000]
 	vzeroupper
 	retq
 func000000000000000b:                   # @func000000000000000b

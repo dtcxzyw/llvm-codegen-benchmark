@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/uniset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, %0
   %3 = lshr i32 %2, 1

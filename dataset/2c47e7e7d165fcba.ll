@@ -3,7 +3,7 @@
 ; ruby/optimized/symbol.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i1 %1, i1 %2) #0 {
+define i1 @func000000000000008c(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = icmp eq i8 %0, 95
@@ -13,11 +13,14 @@ entry:
   ret i1 %7
 }
 
-; 13 occurrences:
+; 16 occurrences:
 ; cmake/optimized/cmCTestBZR.cxx.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/ControlHeightReduction.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
+; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
 ; llvm/optimized/LICM.cpp.ll
+; llvm/optimized/Loads.cpp.ll
 ; llvm/optimized/MCAsmInfoXCOFF.cpp.ll
 ; opencv/optimized/persistence_xml.cpp.ll
 ; postgres/optimized/describe.ll
@@ -28,7 +31,7 @@ entry:
 ; wireshark/optimized/packet-memcache.c.ll
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i8 %0, i1 %1, i1 %2) #0 {
+define i1 @func0000000000000082(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = icmp eq i8 %0, 58
@@ -41,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/cmCTestBZR.cxx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i8 %0, i1 %1, i1 %2) #0 {
+define i1 @func0000000000000102(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i8 %0, 77
   %4 = or i1 %1, %2

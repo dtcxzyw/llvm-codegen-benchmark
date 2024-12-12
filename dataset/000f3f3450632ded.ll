@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/cnfPost.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; linux/optimized/utbuffer.ll
 ; openmpi/optimized/common_ompio_file_open.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; wireshark/optimized/packet-radius.c.ll

@@ -34,3 +34,15 @@ func0000000000000014:                   # @func0000000000000014
 	setge	%al
 	orb	%sil, %al
 	retq
+func0000000000000030:                   # @func0000000000000030
+	cmpl	$100001, %edx                   # imm = 0x186A1
+	setae	%al
+	orl	%esi, %edi
+	orb	%dil, %al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	orl	%edx, %esi
+	cmpl	$10001, %edi                    # imm = 0x2711
+	setb	%al
+	orb	%sil, %al
+	retq

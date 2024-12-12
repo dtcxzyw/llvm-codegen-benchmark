@@ -27,11 +27,11 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = call i32 @llvm.smax.i32(i32 %3, i32 0)
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 

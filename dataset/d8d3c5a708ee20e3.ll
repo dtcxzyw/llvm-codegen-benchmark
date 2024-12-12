@@ -1,12 +1,13 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
+; openjdk/optimized/sharedRuntimeTrans.ll
 ; openmpi/optimized/osc_rdma_comm.ll
 ; openssl/optimized/openssl-bin-dsaparam.ll
 ; openssl/optimized/openssl-bin-ecparam.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
   %4 = icmp ne i32 %1, 0
@@ -18,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/addnode.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = icmp sgt i32 %1, -1
@@ -34,7 +35,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp sgt i32 %1, 1
@@ -58,7 +59,7 @@ entry:
 ; quantlib/optimized/indonesia.ll
 ; quantlib/optimized/italy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp eq i32 %1, 1
@@ -67,11 +68,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; openspiel/optimized/tarok.cc.ll
+; 1 occurrences:
 ; quantlib/optimized/switzerland.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp ult i32 %1, 2
@@ -80,10 +80,11 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; openspiel/optimized/tarok.cc.ll
 ; quantlib/optimized/thailand.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = icmp eq i32 %1, 2
@@ -96,7 +97,7 @@ entry:
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; git/optimized/commit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -108,10 +109,10 @@ entry:
 ; 1 occurrences:
 ; logos-rs/optimized/5f38ll801i7djw99.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000314(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 96
-  %4 = icmp ult i32 %1, 98
+  %3 = icmp samesign ugt i32 %2, 96
+  %4 = icmp samesign ult i32 %1, 98
   %5 = and i1 %4, %3
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
@@ -123,7 +124,7 @@ entry:
 ; linux/optimized/md.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 12
   %4 = icmp eq i32 %1, 12
@@ -135,10 +136,10 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/fed_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = icmp ugt i32 %1, 2
+  %4 = icmp samesign ugt i32 %1, 2
   %5 = and i1 %4, %3
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
@@ -147,7 +148,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/network_selfuncs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp sgt i32 %1, -1
@@ -159,10 +160,22 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/suites.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 2
   %4 = icmp slt i32 %1, 2
+  %5 = and i1 %4, %3
+  %6 = select i1 %5, i1 true, i1 %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/norm.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000281(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 4
+  %4 = icmp eq i32 %1, 2
   %5 = and i1 %4, %3
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6

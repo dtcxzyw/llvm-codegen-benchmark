@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; mitsuba3/optimized/orthogonal.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/how_to_scan_images.cpp.ll
@@ -8,6 +8,8 @@
 ; pcg-cpp/optimized/make-partytrick.cpp.ll
 ; qemu/optimized/migration_vmstate.c.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:

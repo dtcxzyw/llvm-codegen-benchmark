@@ -1,56 +1,56 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	sete	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
-	cmpq	%rdi, %rcx
-	seta	%al
-	retq
-func0000000000000029:                   # @func0000000000000029
-	movl	%edx, %eax
-	movl	%esi, %ecx
-	imulq	%rax, %rcx
-	cmpq	%rdi, %rcx
-	setbe	%al
-	retq
-func0000000000000028:                   # @func0000000000000028
-	movl	%edx, %eax
-	movl	%esi, %ecx
-	imulq	%rax, %rcx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	setb	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000049:                   # @func0000000000000049
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
+	setae	%al
+	retq
+func0000000000000048:                   # @func0000000000000048
+	movl	%edx, %eax
+	movl	%esi, %ecx
+	imulq	%rax, %rcx
+	cmpq	%rcx, %rdi
 	seta	%al
 	retq
-func0000000000000039:                   # @func0000000000000039
+func0000000000000064:                   # @func0000000000000064
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
-	cmpq	%rdi, %rcx
-	setbe	%al
+	cmpq	%rcx, %rdi
+	setb	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000069:                   # @func0000000000000069
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
+	setae	%al
+	retq
+func0000000000000061:                   # @func0000000000000061
+	movl	%edx, %eax
+	movl	%esi, %ecx
+	imulq	%rax, %rcx
+	cmpq	%rcx, %rdi
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	sete	%al
 	retq

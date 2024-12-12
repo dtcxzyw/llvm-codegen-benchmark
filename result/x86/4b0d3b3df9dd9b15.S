@@ -34,3 +34,9 @@ func0000000000000003:                   # @func0000000000000003
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	leal	-1(%rsi), %ecx
+	testb	$1, %dil
+	movl	$15, %eax
+	cmoveq	%rcx, %rax
+	retq

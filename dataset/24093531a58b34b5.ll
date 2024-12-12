@@ -5,7 +5,7 @@
 define float @func0000000000000002(float %0, i1 %1) #0 {
 entry:
   %2 = fcmp olt float %0, 0x47EFFFFFE0000000
-  %3 = and i1 %2, %1
+  %3 = and i1 %1, %2
   %4 = select i1 %3, float %0, float 0x47EFFFFFE0000000
   ret float %4
 }

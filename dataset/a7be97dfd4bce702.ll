@@ -239,7 +239,7 @@ entry:
   %2 = udiv i8 %1, 3
   %3 = add nuw nsw i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }

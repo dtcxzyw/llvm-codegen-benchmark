@@ -13,11 +13,6 @@ func000000000000000f:                   # @func000000000000000f
 	shll	$7, %eax
 	leal	-128(%rdi,%rax), %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	movzbl	%sil, %eax
-	shll	$8, %eax
-	leal	33554432(%rdi,%rax), %eax
-	retq
 func000000000000001f:                   # @func000000000000001f
 	movzbl	%sil, %eax
 	shll	$7, %eax

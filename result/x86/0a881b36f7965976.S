@@ -12,3 +12,9 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$255, %rdi
 	cmoveq	%rsi, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	notq	%rsi
+	cmpq	$64, %rdi
+	movq	$-1, %rax
+	cmovbq	%rsi, %rax
+	retq

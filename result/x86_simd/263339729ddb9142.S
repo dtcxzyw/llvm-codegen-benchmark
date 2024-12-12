@@ -21,7 +21,7 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000e:                   # @func000000000000000e
 	vpsrlq	$16, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm1, %ymm2
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	retq

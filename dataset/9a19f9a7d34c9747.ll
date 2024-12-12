@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
 ; icu/optimized/dtptngen.ll
 ; linux/optimized/hcd.ll
@@ -12,6 +12,7 @@
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/LiveRangeEdit.cpp.ll
 ; llvm/optimized/LoopBoundSplit.cpp.ll
+; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
@@ -20,8 +21,6 @@
 ; openjdk/optimized/memnode.ll
 ; openjdk/optimized/vectorIntrinsics.ll
 ; openmpi/optimized/libmpi_c_profile_la-testany.ll
-; openmpi/optimized/libmpi_c_profile_la-testsome.ll
-; openmpi/optimized/libmpi_c_profile_la-waitsome.ll
 ; openssl/optimized/libcrypto-lib-pmeth_lib.ll
 ; openssl/optimized/libcrypto-shlib-pmeth_lib.ll
 ; ruby/optimized/bignum.ll
@@ -31,7 +30,7 @@ define i1 @func0000000000000002(i1 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

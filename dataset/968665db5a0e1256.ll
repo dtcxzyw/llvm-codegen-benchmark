@@ -13,8 +13,9 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/ivyHaig.c.ll
+; linux/optimized/drbg.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i1 %1) #0 {

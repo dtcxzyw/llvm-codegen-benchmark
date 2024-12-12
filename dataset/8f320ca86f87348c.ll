@@ -160,7 +160,7 @@
 ; yosys/optimized/memory_bram.ll
 ; zxing/optimized/ODReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

@@ -18,7 +18,7 @@ entry:
   ret i64 %4
 }
 
-; 168 occurrences:
+; 166 occurrences:
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -106,7 +106,6 @@ entry:
 ; openjdk/optimized/g1FullGCOopClosures.ll
 ; openjdk/optimized/g1FullGCPrepareTask.ll
 ; openjdk/optimized/g1RemSet.ll
-; openjdk/optimized/mutableNUMASpace.ll
 ; openjdk/optimized/parMarkBitMap.ll
 ; openjdk/optimized/psCompactionManager.ll
 ; openjdk/optimized/psParallelCompact.ll
@@ -117,7 +116,6 @@ entry:
 ; openjdk/optimized/xMark.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; openjdk/optimized/zMark.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -191,7 +189,19 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.idx = shl nsw i64 %1, 3
-  %3 = add i64 %.idx, %2
+  %3 = add i64 %2, %.idx
+  %4 = sub i64 %3, %0
+  ret i64 %4
+}
+
+; 2 occurrences:
+; openjdk/optimized/mutableNUMASpace.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %.idx = shl nuw nsw i64 %1, 3
+  %3 = add nuw i64 %2, %.idx
   %4 = sub i64 %3, %0
   ret i64 %4
 }

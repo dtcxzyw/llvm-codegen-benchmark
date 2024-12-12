@@ -1,8 +1,10 @@
 
-; 89 occurrences:
+; 94 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/mbr.c.ll
 ; coreutils-rs/optimized/2fxrwnovw97v41kk.ll
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
@@ -17,6 +19,7 @@
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; folly/optimized/Request.cpp.ll
 ; graphviz/optimized/shapes.c.ll
+; gromacs/optimized/tng_io.c.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; icu/optimized/nfrs.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
@@ -89,6 +92,8 @@
 ; velox/optimized/Type.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
 ; wasmtime-rs/optimized/24jxjxhx40nukvhl.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -97,7 +102,7 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/key_map_avx2.cc.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
@@ -109,20 +114,23 @@ entry:
 ; ncnn/optimized/detectionoutput.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 44, i64 %2
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
-; 16 occurrences:
+; 19 occurrences:
 ; casadi/optimized/im_instantiator.cpp.ll
 ; clamav/optimized/unarj.c.ll
 ; gromacs/optimized/tng_io.c.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; llvm/optimized/AArch64MachineScheduler.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; ncnn/optimized/gemm.cpp.ll
@@ -134,6 +142,8 @@ entry:
 ; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:

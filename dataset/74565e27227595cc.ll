@@ -8,7 +8,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %1
   %4 = select i1 %2, i32 %1, i32 %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -37,7 +37,7 @@ entry:
   ret i32 %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; cxxopts/optimized/example.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
@@ -49,7 +49,6 @@ entry:
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
-; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
@@ -72,6 +71,24 @@ entry:
   ret i32 %5
 }
 
+; 8 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; meshlab/optimized/filter_color_projection.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/texture_rendering.cpp.ll
+; wireshark/optimized/packet-e212.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 0, i32 255
+  %4 = mul nuw nsw i32 %3, %1
+  %5 = add nuw nsw i32 %4, %0
+  ret i32 %5
+}
+
 ; 4 occurrences:
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; z3/optimized/pb2bv_rewriter.cpp.ll
@@ -83,20 +100,6 @@ entry:
   %3 = select i1 %2, i32 16, i32 12
   %4 = mul nuw nsw i32 %3, %1
   %5 = add i32 %4, %0
-  ret i32 %5
-}
-
-; 4 occurrences:
-; meshlab/optimized/filter_color_projection.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/texture_rendering.cpp.ll
-; wireshark/optimized/packet-e212.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %2, i32 1000, i32 100
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 

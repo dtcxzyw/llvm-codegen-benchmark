@@ -1,4 +1,4 @@
-func000000000000028a:                   # @func000000000000028a
+func000000000000090a:                   # @func000000000000090a
 	fli.d	fa5, 1.0
 	li	a0, 22
 	vsetivli	zero, 8, e64, m4, ta, ma

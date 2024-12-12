@@ -1,5 +1,5 @@
 
-; 78 occurrences:
+; 73 occurrences:
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -7,11 +7,6 @@
 ; flatbuffers/optimized/java_generator.cc.ll
 ; folly/optimized/dynamic.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
-; hermes/optimized/DependencyExtractor.cpp.ll
-; hermes/optimized/JSLibInternal.cpp.ll
-; hermes/optimized/JSRegExp.cpp.ll
-; hermes/optimized/RegexParser.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -95,10 +90,10 @@ entry:
 ; flatbuffers/optimized/reflection.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000071(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000079(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = ashr exact i64 %6, 2
@@ -118,8 +113,7 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
-; eastl/optimized/BenchmarkSort.cpp.ll
+; 1 occurrences:
 ; gromacs/optimized/topology.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000061(i64 %0, ptr %1, i64 %2) #0 {
@@ -137,12 +131,12 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = shl i64 %2, 3
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = ptrtoint ptr %4 to i64
-  %6 = sub i64 %5, %0
-  %7 = ashr exact i64 %6, 3
-  ret i64 %7
+  %.idx = shl i64 %2, 4
+  %3 = getelementptr i8, ptr %1, i64 %.idx
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  %6 = ashr exact i64 %5, 3
+  ret i64 %6
 }
 
 ; 1 occurrences:

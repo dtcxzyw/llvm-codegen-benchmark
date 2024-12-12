@@ -6,6 +6,14 @@ func0000000000000080:                   // @func0000000000000080
 	add	x0, x8, x9, lsl #32
 	ret
                                         // -- End function
+func00000000000000c0:                   // @func00000000000000c0
+// %bb.0:                               // %entry
+	sub	w9, w0, w1
+	mov	x8, #1103806595072              // =0x10100000000
+	sub	w9, w9, #258
+	add	x0, x8, x9, lsl #32
+	ret
+                                        // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	sub	w9, w0, w1

@@ -26,7 +26,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %3
@@ -42,7 +42,7 @@ entry:
 ; openblas/optimized/dlatmt.c.ll
 ; openjdk/optimized/TransformHelper.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %3
@@ -58,7 +58,7 @@ entry:
 ; git/optimized/record.ll
 ; nuttx/optimized/lib_meminstream.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw i64 %0, %3
@@ -82,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/hex.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %3
@@ -121,7 +121,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %3

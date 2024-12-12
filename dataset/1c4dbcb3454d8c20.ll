@@ -1,6 +1,7 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
+; boost/optimized/expand_on_spheroid.ll
 ; casadi/optimized/idas.c.ll
 ; graphviz/optimized/constraint.c.ll
 ; gromacs/optimized/biasstate.cpp.ll
@@ -79,9 +80,8 @@ entry:
   ret double %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; openblas/optimized/dbbcsd.c.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dlahqr.c.ll
 ; openblas/optimized/dlaln2.c.ll

@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 33 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; libwebp/optimized/predictor_enc.c.ll
@@ -30,6 +30,9 @@
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i8 %0, i16 %1) #0 {
 entry:

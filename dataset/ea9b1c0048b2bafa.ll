@@ -1,12 +1,11 @@
 
-; 343 occurrences:
+; 340 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abseil-cpp/optimized/mutex.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; casadi/optimized/integrator.cpp.ll
 ; cmake/optimized/huf_compress.c.ll
 ; eastl/optimized/TestAtomicBasic.cpp.ll
-; eastl/optimized/TestMemory.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; gromacs/optimized/checkpoint.cpp.ll
 ; gromacs/optimized/collect.cpp.ll
@@ -88,7 +87,6 @@
 ; llvm/optimized/CloneModule.cpp.ll
 ; llvm/optimized/CodeExtractor.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
-; llvm/optimized/ControlHeightReduction.cpp.ll
 ; llvm/optimized/ConvergenceVerifier.cpp.ll
 ; llvm/optimized/CoroEarly.cpp.ll
 ; llvm/optimized/CoroElide.cpp.ll
@@ -194,7 +192,6 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SSAContext.cpp.ll
 ; llvm/optimized/SSAUpdater.cpp.ll
-; llvm/optimized/SafeStack.cpp.ll
 ; llvm/optimized/SafepointIRVerifier.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll
@@ -214,9 +211,7 @@
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/SlotIndexes.cpp.ll
 ; llvm/optimized/SplitModule.cpp.ll
-; llvm/optimized/StackLifetime.cpp.ll
 ; llvm/optimized/StackProtector.cpp.ll
-; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; llvm/optimized/StandardInstrumentations.cpp.ll
 ; llvm/optimized/State.cpp.ll
 ; llvm/optimized/StripGCRelocates.cpp.ll
@@ -225,7 +220,6 @@
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; llvm/optimized/ThreadSanitizer.cpp.ll
-; llvm/optimized/TruncInstCombine.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
 ; llvm/optimized/VPlanAnalysis.cpp.ll
 ; llvm/optimized/VPlanHCFGBuilder.cpp.ll
@@ -340,8 +334,11 @@
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; tinympc/optimized/admm.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; wasmtime-rs/optimized/3sb71uj5mon9qr9k.ll
 ; xgboost/optimized/io.cc.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, ptr %1) #0 {

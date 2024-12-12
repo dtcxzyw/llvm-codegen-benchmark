@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/numeric.ll
 ; cpython/optimized/socketmodule.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; linux/optimized/fd.ll
@@ -13,7 +14,7 @@
 define i16 @func0000000000000001(i1 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i16 1, i16 65
+  %4 = select i1 %3, i16 0, i16 8192
   %5 = select i1 %0, i16 %4, i16 %1
   ret i16 %5
 }

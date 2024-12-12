@@ -1,40 +1,40 @@
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	subq	%rdx, %rdi
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	shlq	$3, %rdx
 	subq	%rdx, %rdi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func0000000000000025:                   # @func0000000000000025
+func0000000000000045:                   # @func0000000000000045
 	subq	%rdx, %rdi
 	cmpq	%rsi, %rdi
 	setbe	%al
-	retq
-func0000000000000024:                   # @func0000000000000024
-	subq	%rdx, %rdi
-	cmpq	%rsi, %rdi
-	setb	%al
-	retq
-func0000000000000061:                   # @func0000000000000061
-	subq	%rdx, %rdi
-	cmpq	%rsi, %rdi
-	sete	%al
-	retq
-func0000000000000048:                   # @func0000000000000048
-	subq	%rdx, %rdi
-	cmpq	%rsi, %rdi
-	seta	%al
 	retq
 func0000000000000044:                   # @func0000000000000044
 	subq	%rdx, %rdi
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func00000000000000c1:                   # @func00000000000000c1
+	subq	%rdx, %rdi
+	cmpq	%rsi, %rdi
+	sete	%al
+	retq
+func0000000000000088:                   # @func0000000000000088
+	subq	%rdx, %rdi
+	cmpq	%rsi, %rdi
+	seta	%al
+	retq
+func0000000000000084:                   # @func0000000000000084
+	subq	%rdx, %rdi
+	cmpq	%rsi, %rdi
+	setb	%al
+	retq
+func0000000000000041:                   # @func0000000000000041
 	shlq	$3, %rdx
 	subq	%rdx, %rdi
 	cmpq	%rsi, %rdi

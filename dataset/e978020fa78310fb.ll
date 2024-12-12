@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; draco/optimized/rans_bit_encoder.cc.ll
@@ -23,6 +23,7 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000001a(i32 %0) #0 {
 entry:
@@ -32,7 +33,7 @@ entry:
   ret i8 %3
 }
 
-; 68 occurrences:
+; 67 occurrences:
 ; arrow/optimized/tz.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; c3c/optimized/c_abi_x86.c.ll
@@ -58,9 +59,7 @@ entry:
 ; libwebp/optimized/muxinternal.c.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/drm_format_helper.ll
-; linux/optimized/eht.ll
 ; linux/optimized/irq.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/sr_ioctl.ll
@@ -99,6 +98,7 @@ entry:
 ; z3/optimized/sat_local_search.cpp.ll
 ; z3/optimized/sat_prob.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
@@ -142,7 +142,7 @@ entry:
   ret i8 %3
 }
 
-; 40 occurrences:
+; 42 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -183,6 +183,8 @@ entry:
 ; wolfssl/optimized/tls13.c.ll
 ; yosys/optimized/fastlz.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i32 %0) #0 {
 entry:
@@ -206,7 +208,7 @@ entry:
   ret i8 %3
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; assimp/optimized/zip.c.ll
 ; brotli/optimized/encode.c.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
@@ -221,7 +223,6 @@ entry:
 ; libwebp/optimized/muxedit.c.ll
 ; libwebp/optimized/muxread.c.ll
 ; libwebp/optimized/syntax_enc.c.ll
-; linux/optimized/sd.ll
 ; luajit/optimized/lj_serialize.ll
 ; luajit/optimized/lj_serialize_dyn.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
@@ -270,7 +271,7 @@ entry:
   ret i8 %3
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; clamav/optimized/Bcj2.c.ll
 ; clamav/optimized/unzip.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -285,13 +286,12 @@ entry:
 ; libwebp/optimized/alpha_processing.c.ll
 ; libwebp/optimized/muxinternal.c.ll
 ; libwebp/optimized/tiffdec.c.ll
-; linux/optimized/exprep.ll
 ; linux/optimized/sr_ioctl.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; openjdk/optimized/cmspack.ll
-; postgres/optimized/wait_event.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-ssh.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i32 %0) #0 {
 entry:
@@ -301,7 +301,7 @@ entry:
   ret i8 %3
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -314,7 +314,6 @@ entry:
 ; assimp/optimized/XGLLoader.cpp.ll
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; draco/optimized/rans_bit_encoder.cc.ll
-; linux/optimized/he.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
@@ -330,6 +329,8 @@ entry:
 ; wolfssl/optimized/tls13.c.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000001b(i32 %0) #0 {
 entry:
@@ -350,8 +351,9 @@ entry:
   ret i8 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; lief/optimized/aria.c.ll
+; linux/optimized/sd.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i32 %0) #0 {
 entry:

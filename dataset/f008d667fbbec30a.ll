@@ -4,7 +4,7 @@
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/ifDec75.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000ec(i64 %0, i64 %1) #0 {
+define i32 @func00000000000001cc(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 1, %2

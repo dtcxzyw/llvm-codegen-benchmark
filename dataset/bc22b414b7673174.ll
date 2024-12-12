@@ -1,5 +1,5 @@
 
-; 228 occurrences:
+; 227 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -68,7 +68,7 @@
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
 ; freetype/optimized/psnames.c.ll
-; gromacs/optimized/gmx_hbond.cpp.ll
+; glslang/optimized/PoolAlloc.cpp.ll
 ; gromacs/optimized/pme_solve.cpp.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; icu/optimized/umutablecptrie.ll
@@ -77,12 +77,13 @@
 ; jq/optimized/regparse.ll
 ; libquic/optimized/base64_bio.c.ll
 ; libquic/optimized/tasn_prn.c.ll
+; libwebp/optimized/alpha_processing_sse2.c.ll
+; libwebp/optimized/alpha_processing_sse41.c.ll
 ; libwebp/optimized/anim_encode.c.ll
 ; libwebp/optimized/io_dec.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/webp_enc.c.ll
 ; libwebp/optimized/yuv.c.ll
-; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/intel_ring_submission.ll
 ; linux/optimized/ip_options.ll
@@ -97,9 +98,8 @@
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; luajit/optimized/lj_vmevent.ll
-; luajit/optimized/lj_vmevent_dyn.ll
 ; luau/optimized/lvmload.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -226,7 +226,6 @@
 ; stb/optimized/stb_truetype.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; velox/optimized/Comparisons.cpp.ll
-; velox/optimized/StringView.cpp.ll
 ; wireshark/optimized/packet-ieee80211-radiotap-iter.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {

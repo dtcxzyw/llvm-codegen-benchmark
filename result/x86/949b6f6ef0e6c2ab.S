@@ -1,5 +1,5 @@
 func0000000000000001:                   # @func0000000000000001
-	cmpl	$256, %esi                      # imm = 0x100
+	cmpl	$1024, %esi                     # imm = 0x400
 	sete	%al
 	andb	%dil, %al
 	movzbl	%al, %eax

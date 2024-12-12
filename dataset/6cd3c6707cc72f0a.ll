@@ -1,5 +1,5 @@
 
-; 131 occurrences:
+; 130 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -99,7 +99,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -144,11 +143,11 @@ entry:
 ; ncnn/optimized/mat.cpp.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(float %0) #0 {
+define i1 @func0000000000000018(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
   %2 = and i32 %1, 2139095040
-  %3 = icmp ugt i32 %2, 1191182336
+  %3 = icmp samesign ugt i32 %2, 1191182336
   ret i1 %3
 }
 
@@ -162,11 +161,11 @@ entry:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(float %0) #0 {
+define i1 @func0000000000000014(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
   %2 = and i32 %1, 2139095040
-  %3 = icmp ult i32 %2, 947912704
+  %3 = icmp samesign ult i32 %2, 947912704
   ret i1 %3
 }
 

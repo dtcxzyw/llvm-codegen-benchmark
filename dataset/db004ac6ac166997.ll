@@ -18,7 +18,7 @@ entry:
   %3 = and i8 %2, 7
   %4 = shl nuw i8 1, %3
   %5 = xor i8 %4, -1
-  %6 = and i8 %5, %0
+  %6 = and i8 %0, %5
   ret i8 %6
 }
 
@@ -36,7 +36,7 @@ entry:
   %3 = and i8 %2, 7
   %4 = shl nsw i8 -1, %3
   %5 = xor i8 %4, -1
-  %6 = and i8 %5, %0
+  %6 = and i8 %0, %5
   ret i8 %6
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = and i8 %2, 7
   %4 = shl nuw i8 1, %3
   %5 = xor i8 %4, -1
-  %6 = and i8 %5, %0
+  %6 = and i8 %0, %5
   ret i8 %6
 }
 

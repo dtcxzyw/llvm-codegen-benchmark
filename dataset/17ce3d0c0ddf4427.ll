@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 104 occurrences:
 ; abseil-cpp/optimized/raw_hash_set.cc.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
@@ -94,6 +94,15 @@
 ; php/optimized/hash_xxhash.ll
 ; ring-rs/optimized/1vabw27ldssjsz66.ll
 ; rocksdb/optimized/xxhash.cc.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -104,7 +113,7 @@ entry:
   ret i64 %5
 }
 
-; 127 occurrences:
+; 125 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
@@ -129,6 +138,7 @@ entry:
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; ceres/optimized/fake_bundle_adjustment_jacobian.cc.ll
@@ -141,7 +151,6 @@ entry:
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/random.cpp.ll
 ; g2o/optimized/sampler.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; gromacs/optimized/coolstuff.cpp.ll
 ; gromacs/optimized/seed.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
@@ -161,13 +170,11 @@ entry:
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; nix/optimized/filetransfer.ll
 ; ocio/optimized/Platform.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/backgammon_test.cc.ll
 ; openspiel/optimized/bargaining_instance_generator.cc.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll

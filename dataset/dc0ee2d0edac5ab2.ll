@@ -1,6 +1,5 @@
 
-; 58 occurrences:
-; abc/optimized/fxuPair.c.ll
+; 57 occurrences:
 ; abc/optimized/resSim.c.ll
 ; c3c/optimized/parse_stmt.c.ll
 ; cmake/optimized/zstd_compress_literals.c.ll

@@ -18,13 +18,28 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	cmpq	$12582912, %rsi                 # imm = 0xC00000
+	setb	%al
+	orb	%dil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpq	$1000000, %rsi                  # imm = 0xF4240
 	setb	%al
 	orb	%dil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	testq	%rsi, %rsi
 	sets	%al
+	orb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpq	$2, %rsi
+	setae	%al
+	orb	%dil, %al
+	retq
+func0000000000000011:                   # @func0000000000000011
+	testq	%rsi, %rsi
+	sete	%al
 	orb	%dil, %al
 	retq

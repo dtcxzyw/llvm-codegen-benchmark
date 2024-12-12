@@ -8,7 +8,6 @@
 ; cmake/optimized/MD5.c.ll
 ; cmake/optimized/RegularExpression.cxx.ll
 ; cmake/optimized/zstd_opt.c.ll
-; darktable/optimized/introspection_borders.c.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; glog/optimized/symbolize.cc.ll
@@ -19,6 +18,7 @@
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/svcsock.ll
+; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; mimalloc/optimized/page.c.ll
@@ -45,7 +45,7 @@ entry:
   ret i64 %4
 }
 
-; 86 occurrences:
+; 80 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -55,7 +55,6 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; cvc5/optimized/equality_engine.cpp.ll
 ; freetype/optimized/ftbase.c.ll
-; git/optimized/diff.ll
 ; hdf5/optimized/H5FDint.c.ll
 ; hdf5/optimized/h5tools_dump.c.ll
 ; html5ever-rs/optimized/2k27uywn6e9ruua6.ll
@@ -69,8 +68,6 @@ entry:
 ; libsodium/optimized/libavx512f_la-argon2-fill-block-avx512f.ll
 ; libsodium/optimized/libsodium_la-argon2-fill-block-ref.ll
 ; libsodium/optimized/libssse3_la-argon2-fill-block-ssse3.ll
-; linux/optimized/af_netlink.ll
-; linux/optimized/blk-map.ll
 ; linux/optimized/check.ll
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/e820.ll
@@ -86,17 +83,14 @@ entry:
 ; linux/optimized/swap_state.ll
 ; linux/optimized/tsc.ll
 ; linux/optimized/vc_screen.ll
-; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
-; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lua/optimized/lgc.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; openblas/optimized/dgetrf_parallel.c.ll
 ; opencc/optimized/Config.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/softfloat.cpp.ll
@@ -112,7 +106,6 @@ entry:
 ; php/optimized/zend_inheritance.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/block_qcow2.c.ll
-; qemu/optimized/hw_display_ramfb.c.ll
 ; redis/optimized/evict.ll
 ; ruby/optimized/static_literals.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
@@ -124,13 +117,14 @@ entry:
 ; wireshark/optimized/packet-ber.c.ll
 ; wireshark/optimized/packet-ftp.c.ll
 ; wireshark/optimized/proto.c.ll
-; yosys/optimized/rtlil.ll
 ; z3/optimized/hilbert_basis.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_consequences.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i32 %2) #0 {

@@ -1,5 +1,5 @@
 
-; 176 occurrences:
+; 180 occurrences:
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddBddIte.c.ll
 ; abc/optimized/cuddCof.c.ll
@@ -16,7 +16,6 @@
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/reoSwap.c.ll
 ; abc/optimized/saigMiter.c.ll
-; abc/optimized/sswSat.c.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; cmake/optimized/cmCMakePath.cxx.ll
 ; cmake/optimized/cmCMakePathCommand.cxx.ll
@@ -176,6 +175,11 @@
 ; yalantinglibs/optimized/example.cpp.ll
 ; yalantinglibs/optimized/file_client.cpp.ll
 ; z3/optimized/aig.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, ptr %1, ptr %2) #0 {
 entry:

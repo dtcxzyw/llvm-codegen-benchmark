@@ -35,7 +35,7 @@
 .LCPI0_2:
 	.short	4096                            # 0x1000
 	.short	4096                            # 0x1000
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpord	.LCPI0_2(%rip){1to8}, %ymm0, %ymm2
 	vpcmpeqw	.LCPI0_1(%rip), %ymm1, %k1
 	vmovdqu16	%ymm2, %ymm0 {%k1}
@@ -77,7 +77,7 @@ func0000000000000011:                   # @func0000000000000011
 .LCPI1_2:
 	.short	4                               # 0x4
 	.short	4                               # 0x4
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpord	.LCPI1_2(%rip){1to8}, %ymm0, %ymm2
 	vpcmpltuw	.LCPI1_1(%rip), %ymm1, %k1
 	vmovdqu16	%ymm2, %ymm0 {%k1}

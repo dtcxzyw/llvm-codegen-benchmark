@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/bmcBmcG.c.ll
@@ -11,6 +11,7 @@
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/ifMan.c.ll
 ; abseil-cpp/optimized/per_thread_sem_test.cc.ll
+; boost/optimized/cpu_timer.ll
 ; libquic/optimized/histogram.cc.ll
 ; openjdk/optimized/os_linux.ll
 ; sqlite/optimized/sqlite3.ll
@@ -23,7 +24,7 @@ entry:
   ret double %4
 }
 
-; 254 occurrences:
+; 250 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -99,7 +100,6 @@ entry:
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -173,7 +173,6 @@ entry:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaResub2.c.ll
 ; abc/optimized/giaRetime.c.ll
-; abc/optimized/giaSat3.c.ll
 ; abc/optimized/giaSatEdge.c.ll
 ; abc/optimized/giaSatLut.c.ll
 ; abc/optimized/giaSatMap.c.ll
@@ -206,7 +205,6 @@ entry:
 ; abc/optimized/ivyCutTrav.c.ll
 ; abc/optimized/ivyFastMap.c.ll
 ; abc/optimized/ivyFraig.c.ll
-; abc/optimized/ivyResyn.c.ll
 ; abc/optimized/ivySeq.c.ll
 ; abc/optimized/kitGraph.c.ll
 ; abc/optimized/kliveness.c.ll
@@ -239,7 +237,6 @@ entry:
 ; abc/optimized/retInit.c.ll
 ; abc/optimized/rwrExp.c.ll
 ; abc/optimized/rwrUtil.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigInd.c.ll
 ; abc/optimized/saigIso.c.ll

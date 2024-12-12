@@ -1,5 +1,5 @@
 
-; 1017 occurrences:
+; 1012 occurrences:
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
@@ -33,7 +33,6 @@
 ; cmake/optimized/http2.c.ll
 ; cmake/optimized/json_value.cpp.ll
 ; cmake/optimized/vtls.c.ll
-; coremark/optimized/core_util.c.ll
 ; cpython/optimized/bytearrayobject.ll
 ; cpython/optimized/bytes_methods.ll
 ; cpython/optimized/bytesobject.ll
@@ -82,7 +81,6 @@
 ; graphviz/optimized/mocs_compilation.cpp.ll
 ; graphviz/optimized/ortho.c.ll
 ; graphviz/optimized/position.c.ll
-; gromacs/optimized/densityfittingparameters.cpp.ll
 ; gromacs/optimized/hardwaretopology.cpp.ll
 ; gromacs/optimized/index.cpp.ll
 ; gromacs/optimized/inputrec.cpp.ll
@@ -139,7 +137,6 @@
 ; jq/optimized/unicode.ll
 ; libquic/optimized/cfb.c.ll
 ; libquic/optimized/quic_protocol.cc.ll
-; libquic/optimized/reliable_quic_stream.cc.ll
 ; libquic/optimized/values.cc.ll
 ; lief/optimized/ecp.c.ll
 ; lightgbm/optimized/c_api.cpp.ll
@@ -444,7 +441,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -878,7 +874,6 @@
 ; postgres/optimized/view.ll
 ; postgres/optimized/worker.ll
 ; postgres/optimized/xlog.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/map_field.cc.ll
 ; proxygen/optimized/HTTPCommonHeaders.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll

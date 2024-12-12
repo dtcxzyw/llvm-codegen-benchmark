@@ -21,4 +21,15 @@ entry:
   ret i16 %3
 }
 
+; 2 occurrences:
+; opencv/optimized/disparity_filters.cpp.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000003(i1 %0, i16 %1) #0 {
+entry:
+  %2 = shl nuw nsw i16 %1, 8
+  %3 = select i1 %0, i16 512, i16 %2
+  ret i16 %3
+}
+
 attributes #0 = { nounwind }

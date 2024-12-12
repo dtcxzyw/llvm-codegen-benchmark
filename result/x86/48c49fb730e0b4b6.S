@@ -1,6 +1,12 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	testb	$1, %dil
 	movl	$2, %eax
+	cmoveq	%rdx, %rax
+	addq	%rsi, %rax
+	retq
+func000000000000000b:                   # @func000000000000000b
+	testb	$1, %dil
+	movl	$32, %eax
 	cmoveq	%rdx, %rax
 	addq	%rsi, %rax
 	retq

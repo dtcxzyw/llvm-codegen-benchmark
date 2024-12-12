@@ -8,7 +8,7 @@ entry:
   %2 = and i32 %1, 7
   %3 = lshr exact i32 128, %2
   %4 = trunc nuw nsw i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -23,7 +23,7 @@ entry:
   %2 = and i32 %1, 7
   %3 = lshr exact i32 128, %2
   %4 = trunc nuw i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -35,7 +35,7 @@ entry:
   %2 = and i32 %1, 7
   %3 = lshr i32 255, %2
   %4 = trunc nuw i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

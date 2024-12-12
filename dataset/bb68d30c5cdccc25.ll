@@ -1,46 +1,5 @@
 
-; 31 occurrences:
-; arrow/optimized/bignum.cc.ll
-; clamav/optimized/bytecode.c.ll
-; double_conversion/optimized/bignum.cc.ll
-; hermes/optimized/Operations.cpp.ll
-; icu/optimized/double-conversion-bignum.ll
-; imgui/optimized/imgui_tables.cpp.ll
-; libevent/optimized/http.c.ll
-; linux/optimized/8250_exar.ll
-; linux/optimized/coalesce.ll
-; linux/optimized/intel_cdclk.ll
-; llvm/optimized/JSONNodeDumper.cpp.ll
-; llvm/optimized/TextNodeDumper.cpp.ll
-; llvm/optimized/TypePrinter.cpp.ll
-; lodepng/optimized/lodepng.cpp.ll
-; openspiel/optimized/go_board.cc.ll
-; openspiel/optimized/phantom_go_board.cc.ll
-; openusd/optimized/bignum.cc.ll
-; postgres/optimized/allpaths.ll
-; postgres/optimized/appendinfo.ll
-; postgres/optimized/bufpage.ll
-; postgres/optimized/inval.ll
-; postgres/optimized/parse_utilcmd.ll
-; postgres/optimized/ruleutils.ll
-; postgres/optimized/tablecmds.ll
-; postgres/optimized/trigger.ll
-; re2/optimized/dfa.cc.ll
-; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-ieee80211-radio.c.ll
-; wireshark/optimized/packet-rlc-lte.c.ll
-; wireshark/optimized/packet-wps.c.ll
-; wireshark/optimized/tap-rlc-graph.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i16 %0) #0 {
-entry:
-  %1 = zext nneg i16 %0 to i64
-  %2 = add nuw nsw i64 %1, 4294967295
-  %3 = and i64 %2, 4294967295
-  ret i64 %3
-}
-
-; 135 occurrences:
+; 137 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; c3c/optimized/llvm_codegen.c.ll
 ; c3c/optimized/llvm_codegen_function.c.ll
@@ -54,7 +13,6 @@ entry:
 ; freetype/optimized/raster.c.ll
 ; freetype/optimized/smooth.c.ll
 ; freetype/optimized/truetype.c.ll
-; graphviz/optimized/gvrender_core_dot.c.ll
 ; grpc/optimized/alts_handshaker_client.cc.ll
 ; grpc/optimized/alts_tsi_handshaker.cc.ll
 ; grpc/optimized/alts_tsi_utils.cc.ll
@@ -109,7 +67,6 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/OptTable.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
@@ -132,6 +89,9 @@ entry:
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
+; lvgl/optimized/lv_file_explorer.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; lvgl/optimized/lv_obj_tree.ll
 ; openjdk/optimized/ciEnv.ll
 ; openjdk/optimized/ciObjArrayKlass.ll
 ; openjdk/optimized/classFileParser.ll
@@ -145,7 +105,6 @@ entry:
 ; php/optimized/image.ll
 ; postgres/optimized/gindatapage.ll
 ; postgres/optimized/gindesc.ll
-; postgres/optimized/gininsert.ll
 ; postgres/optimized/ginvacuum.ll
 ; postgres/optimized/ginxlog.ll
 ; postgres/optimized/nbtdesc.ll
@@ -176,10 +135,52 @@ entry:
 ; wireshark/optimized/packet-zbee-direct.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; wireshark/optimized/protobuf_lang_parser.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i16 %0) #0 {
 entry:
   %1 = zext i16 %0 to i64
+  %2 = add nuw nsw i64 %1, 4294967295
+  %3 = and i64 %2, 4294967295
+  ret i64 %3
+}
+
+; 30 occurrences:
+; arrow/optimized/bignum.cc.ll
+; clamav/optimized/bytecode.c.ll
+; double_conversion/optimized/bignum.cc.ll
+; graphviz/optimized/gvrender_core_dot.c.ll
+; hermes/optimized/Operations.cpp.ll
+; icu/optimized/double-conversion-bignum.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; libevent/optimized/http.c.ll
+; linux/optimized/coalesce.ll
+; linux/optimized/intel_cdclk.ll
+; llvm/optimized/JSONNodeDumper.cpp.ll
+; llvm/optimized/TextNodeDumper.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
+; openspiel/optimized/go_board.cc.ll
+; openspiel/optimized/phantom_go_board.cc.ll
+; openusd/optimized/bignum.cc.ll
+; postgres/optimized/allpaths.ll
+; postgres/optimized/appendinfo.ll
+; postgres/optimized/bufpage.ll
+; postgres/optimized/inval.ll
+; postgres/optimized/parse_utilcmd.ll
+; postgres/optimized/ruleutils.ll
+; postgres/optimized/tablecmds.ll
+; postgres/optimized/trigger.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-ieee80211-radio.c.ll
+; wireshark/optimized/packet-rlc-lte.c.ll
+; wireshark/optimized/packet-wps.c.ll
+; wireshark/optimized/tap-rlc-graph.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i16 %0) #0 {
+entry:
+  %1 = zext nneg i16 %0 to i64
   %2 = add nuw nsw i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
   ret i64 %3

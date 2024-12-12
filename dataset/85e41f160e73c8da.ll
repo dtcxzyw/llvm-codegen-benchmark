@@ -15,12 +15,12 @@ define i64 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; clamav/optimized/sigtool.c.ll
 ; hwloc/optimized/topology.ll
@@ -30,9 +30,9 @@ entry:
 ; hyperscan/optimized/teddy_avx2.c.ll
 ; linux/optimized/filter.ll
 ; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TarWriter.cpp.ll
 ; luajit/optimized/lj_bcwrite.ll
 ; luajit/optimized/lj_bcwrite_dyn.ll
@@ -41,12 +41,13 @@ entry:
 ; php/optimized/ir_ra.ll
 ; qemu/optimized/fdt_sw.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

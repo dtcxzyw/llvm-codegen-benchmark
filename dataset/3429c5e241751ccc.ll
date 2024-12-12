@@ -1,5 +1,7 @@
 
-; 78 occurrences:
+; 83 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/arcread.cpp.ll
 ; cmake/optimized/archive_write_set_format_shar.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
@@ -50,7 +52,6 @@
 ; llvm/optimized/MCELFStreamer.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/MergeFunctions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/Value.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
@@ -78,6 +79,10 @@
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; wireshark/optimized/packet-rsl.c.ll
 ; wireshark/optimized/packet-zbee-nwk.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i32 %0) #0 {
 entry:

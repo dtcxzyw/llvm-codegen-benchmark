@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/MD5Loader.cpp.ll
@@ -35,7 +35,6 @@
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; protobuf/optimized/context.cc.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/nonstandardswap.ll
 ; yosys/optimized/freduce.ll

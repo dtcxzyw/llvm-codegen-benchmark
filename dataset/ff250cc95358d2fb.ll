@@ -1,15 +1,16 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/dsdCheck.c.ll
 ; abc/optimized/reoSwap.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
 ; mitsuba3/optimized/independent.cpp.ll
 ; nori/optimized/independent.cpp.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; oiio/optimized/farmhash.cpp.ll
 ; oiio/optimized/ustring.cpp.ll
 ; openjdk/optimized/jfrStackTrace.ll
@@ -33,7 +34,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 6364136223846793005
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul i64 %3, 6364136223846793005
   ret i64 %4
 }
@@ -57,18 +58,20 @@ entry:
 define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 5
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul nuw nsw i64 %3, 18
   ret i64 %4
 }
 
-; 57 occurrences:
+; 59 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/target.ll
 ; cmake/optimized/parsedate.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; curl/optimized/libcurl_la-parsedate.ll
@@ -135,7 +138,7 @@ entry:
 define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 12
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul nuw nsw i64 %3, 40
   ret i64 %4
 }
@@ -154,6 +157,17 @@ entry:
   ret i64 %4
 }
 
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw i64 %1, 10
+  %3 = add i64 %2, %0
+  %4 = mul nuw i64 %3, 10
+  ret i64 %4
+}
+
 ; 2 occurrences:
 ; gromacs/optimized/checkpoint.cpp.ll
 ; opencv/optimized/matrix_sparse.cpp.ll
@@ -161,7 +175,7 @@ entry:
 define i64 @func000000000000003c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul i64 %3, 12
   ret i64 %4
 }
@@ -197,7 +211,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 1000000
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul nsw i64 %3, 10
   ret i64 %4
 }

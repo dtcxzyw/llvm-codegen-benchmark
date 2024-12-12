@@ -1,11 +1,8 @@
 
-; 6 occurrences:
+; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; opencv/optimized/geometry.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; slurm/optimized/ebpf.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i32 %0, i32 %1) #0 {
 entry:

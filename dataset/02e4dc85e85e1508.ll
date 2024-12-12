@@ -9,12 +9,12 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000007a(ptr %0, i32 %1) #0 {
+define i64 @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -23,12 +23,12 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000004a(ptr %0, i32 %1) #0 {
+define i64 @func000000000000004f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 2
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -36,12 +36,12 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/autoit.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(ptr %0, i32 %1) #0 {
+define i64 @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 29
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 29
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -49,12 +49,12 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/mew.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i32 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 384
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 384
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

@@ -1,8 +1,7 @@
 
-; 60 occurrences:
+; 59 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
-; hyperscan/optimized/huge.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll

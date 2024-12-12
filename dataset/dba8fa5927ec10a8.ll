@@ -7,7 +7,7 @@
 ; openssl/optimized/libtestutil-lib-format_output.ll
 ; proxygen/optimized/ParseURL.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, ptr %1) #0 {
+define i1 @func000000000000002c(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ne i64 %0, 0
@@ -15,7 +15,7 @@ entry:
   ret i1 %4
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; arrow/optimized/uri.cc.ll
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/scanners.c.ll
@@ -43,8 +43,9 @@ entry:
 ; proxygen/optimized/ParseURL.cpp.ll
 ; tree-sitter-rs/optimized/2ysit6xak1d4lr67.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq i64 %0, 0
@@ -52,14 +53,15 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/graphml.ll
 ; faiss/optimized/Clustering.cpp.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; proj/optimized/4D_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000028(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ugt i64 %0, 255
@@ -81,7 +83,7 @@ entry:
 ; oiio/optimized/formatspec.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, ptr %1) #0 {
+define i1 @func000000000000002a(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp sgt i64 %0, 0
@@ -92,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86InsertPrefetch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000024(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ult i64 %0, 10
@@ -104,7 +106,7 @@ entry:
 ; cpython/optimized/buffer.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000026(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp slt i64 %0, 0

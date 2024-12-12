@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 67 occurrences:
 ; linux/optimized/bitset.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -34,7 +34,6 @@
 ; llvm/optimized/MemoryBuiltins.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/ODRHash.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll

@@ -1,22 +1,14 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	movi	v2.4h, #7
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	and	v1.8b, v1.8b, v2.8b
-	neg	v1.4h, v1.4h
-	ushl	v0.4h, v0.4h, v1.4h
+	and	w8, w0, #0xff
+	and	x9, x1, #0x7
+	lsr	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	movi	v2.4h, #7
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	and	v1.8b, v1.8b, v2.8b
-	neg	v1.4h, v1.4h
-	ushl	v0.4h, v0.4h, v1.4h
+	and	w8, w0, #0xff
+	and	x9, x1, #0x7
+	lsr	w0, w8, w9
 	ret
                                         // -- End function

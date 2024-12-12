@@ -3,12 +3,12 @@ func000000000000000f:                   # @func000000000000000f
 	movl	%edi, %eax
 	addq	%rsi, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	andl	$-4096, %esi                    # imm = 0xF000
+func0000000000000007:                   # @func0000000000000007
+	andl	$134217727, %esi                # imm = 0x7FFFFFF
 	movl	%edi, %eax
 	addq	%rsi, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
+func000000000000000b:                   # @func000000000000000b
 	andl	$134217727, %esi                # imm = 0x7FFFFFF
 	movl	%edi, %eax
 	addq	%rsi, %rax

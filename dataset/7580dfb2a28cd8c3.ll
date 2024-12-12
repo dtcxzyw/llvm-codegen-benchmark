@@ -8,7 +8,7 @@
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000046(i32 %0) #0 {
+define i32 @func0000000000000086(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -6
   %2 = shl i32 3, %1
@@ -17,7 +17,7 @@ entry:
   ret i32 %4
 }
 
-; 98 occurrences:
+; 93 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/abcDec.c.ll
@@ -36,14 +36,12 @@ entry:
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/bdcDec.c.ll
-; abc/optimized/bdcTable.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cnfCut.c.ll
 ; abc/optimized/cswCut.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -92,11 +90,8 @@ entry:
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; abc/optimized/lpkCut.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/lpkMulti.c.ll
-; abc/optimized/lpkMux.c.ll
 ; abc/optimized/luckySwap.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/nwkBidec.c.ll
@@ -117,7 +112,7 @@ entry:
 ; abc/optimized/wlcBlast.c.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000066(i32 %0) #0 {
+define i32 @func00000000000000c6(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -6
   %2 = shl nuw i32 1, %1
@@ -136,16 +131,16 @@ entry:
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000074(i32 %0) #0 {
+define i32 @func00000000000000f4(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -5
   %2 = shl nuw nsw i32 1, %1
-  %3 = icmp ult i32 %0, 6
+  %3 = icmp samesign ult i32 %0, 6
   %4 = select i1 %3, i32 1, i32 %2
   ret i32 %4
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcRpo.c.ll
@@ -160,6 +155,7 @@ entry:
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/giaDecs.c.ll
+; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
@@ -172,29 +168,28 @@ entry:
 ; abc/optimized/sfmLib.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000064(i32 %0) #0 {
+define i32 @func00000000000000d4(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -6
   %2 = shl nuw i32 1, %1
-  %3 = icmp ult i32 %0, 7
+  %3 = icmp samesign ult i32 %0, 7
   %4 = select i1 %3, i32 1, i32 %2
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cutMan.c.ll
 ; abc/optimized/cutOracle.c.ll
 ; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/ioReadBench.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000076(i32 %0) #0 {
+define i32 @func00000000000000e6(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -4
+  %1 = add nsw i32 %0, -6
   %2 = shl nuw nsw i32 1, %1
   %3 = icmp slt i32 %0, 7
-  %4 = select i1 %3, i32 4, i32 %2
+  %4 = select i1 %3, i32 1, i32 %2
   ret i32 %4
 }
 
@@ -202,7 +197,7 @@ entry:
 ; abc/optimized/giaJf.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0) #0 {
+define i32 @func0000000000000046(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -6
   %2 = shl nuw i32 1, %1
@@ -214,7 +209,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0) #0 {
+define i32 @func0000000000000044(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -6
   %2 = shl nuw i32 1, %1
@@ -229,7 +224,7 @@ entry:
 ; luau/optimized/lvmexecute.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0) #0 {
+define i32 @func00000000000000c1(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = shl nuw i32 1, %1
@@ -241,7 +236,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0) #0 {
+define i32 @func00000000000000e1(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = shl nuw nsw i32 1, %1
@@ -253,7 +248,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64SLSHardening.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0) #0 {
+define i32 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -237
   %2 = shl nuw i32 1, %1

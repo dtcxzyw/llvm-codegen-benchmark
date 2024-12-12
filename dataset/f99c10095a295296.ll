@@ -1,5 +1,5 @@
 
-; 209 occurrences:
+; 216 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
@@ -8,6 +8,14 @@
 ; arrow/optimized/key_value_metadata.cc.ll
 ; arrow/optimized/registry.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/test_system.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; cmake/optimized/cmAuxSourceDirectoryCommand.cxx.ll
@@ -141,7 +149,6 @@
 ; openusd/optimized/sdffilter.cpp.ll
 ; openusd/optimized/textFileFormat.tab.cpp.ll
 ; openusd/optimized/textParserHelpers.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/helpers.cc.ll
 ; protobuf/optimized/message_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
@@ -210,7 +217,7 @@
 ; z3/optimized/smtlib_frontend.cpp.ll
 ; z3/optimized/statistics.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
   %3 = or disjoint i64 %1, 1
@@ -230,7 +237,7 @@ entry:
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i64 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
   %3 = or disjoint i64 %1, 1

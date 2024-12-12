@@ -15,16 +15,16 @@ func0000000000000000:                   # @func0000000000000000
 	vzeroupper
 	retq
 .LCPI2_0:
-	.long	3600                            # 0xe10
-func0000000000000004:                   # @func0000000000000004
+	.long	1000                            # 0x3e8
+func0000000000000025:                   # @func0000000000000025
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI3_0:
-	.long	1000                            # 0x3e8
-func0000000000000025:                   # @func0000000000000025
+	.long	42123                           # 0xa48b
+func0000000000000004:                   # @func0000000000000004
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
 	vpaddd	%xmm1, %xmm0, %xmm0

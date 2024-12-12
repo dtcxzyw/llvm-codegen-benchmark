@@ -1,8 +1,6 @@
 
-; 77 occurrences:
+; 73 occurrences:
 ; assimp/optimized/ColladaExporter.cpp.ll
-; casadi/optimized/kinsol_spbcgs.c.ll
-; casadi/optimized/kinsol_sptfqmr.c.ll
 ; chibicc/optimized/codegen.ll
 ; clamav/optimized/crtmgr.c.ll
 ; cmake/optimized/cmCTestMemCheckHandler.cxx.ll
@@ -32,7 +30,6 @@
 ; llvm/optimized/Linux.cpp.ll
 ; llvm/optimized/MCAsmStreamer.cpp.ll
 ; llvm/optimized/PGOMemOPSizeOpt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RecordStreamer.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -42,7 +39,6 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
-; nuttx/optimized/lib_pathconf.c.ll
 ; ocio/optimized/BitDepthUtils.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/GpuShaderUtils.cpp.ll
@@ -101,7 +97,7 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; chibicc/optimized/codegen.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; llvm/optimized/CGExprComplex.cpp.ll
@@ -109,8 +105,6 @@ entry:
 ; opencv/optimized/fed.cpp.ll
 ; opencv/optimized/stereo_match.cpp.ll
 ; openjdk/optimized/macroAssembler_x86.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000030(i32 %0) #0 {
 entry:

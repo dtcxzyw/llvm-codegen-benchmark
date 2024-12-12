@@ -1,5 +1,8 @@
 
-; 8 occurrences:
+; 11 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
 ; openblas/optimized/dlaic1.c.ll
 ; opencv/optimized/rho.cpp.ll
 ; opencv/optimized/termination.cpp.ll

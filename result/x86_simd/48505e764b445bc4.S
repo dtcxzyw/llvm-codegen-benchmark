@@ -13,7 +13,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpsrld	$24, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpsrad	$8, %ymm2, %ymm2
-	vpmulld	%ymm0, %ymm2, %ymm0
+	vpmulld	%ymm2, %ymm0, %ymm0
 	vpsrad	$31, %ymm1, %ymm2
 	vpsrld	$24, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1

@@ -1,18 +1,11 @@
-func000000000000000a:                   # @func000000000000000a
-	movl	%edx, %eax
-	testb	$1, %sil
-	movl	$4294967295, %ecx               # imm = 0xFFFFFFFF
-	cmoveq	%rax, %rcx
-	leaq	4(%rdi,%rcx), %rax
-	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	movl	%edx, %eax
 	testb	$1, %sil
 	movl	$2, %ecx
 	cmoveq	%rax, %rcx
 	leaq	156(%rdi,%rcx,4), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	movl	%edx, %eax
 	testb	$1, %sil
 	movl	$2, %ecx

@@ -23,11 +23,12 @@
 define i128 @func0000000000000003(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 56
-  %3 = add nuw nsw i128 %2, %0
+  %3 = add nuw nsw i128 %0, %2
   ret i128 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/p256-64.c.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
@@ -38,14 +39,16 @@ entry:
 define i128 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 55
-  %3 = add i128 %2, %0
+  %3 = add i128 %0, %2
   ret i128 %3
 }
 
-; 186 occurrences:
+; 188 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -233,7 +236,7 @@ entry:
 define i128 @func0000000000000002(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 32
-  %3 = add nuw i128 %2, %0
+  %3 = add nuw i128 %0, %2
   ret i128 %3
 }
 
@@ -245,7 +248,7 @@ entry:
 define i128 @func0000000000000001(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 16
-  %3 = add nsw i128 %2, %0
+  %3 = add nsw i128 %0, %2
   ret i128 %3
 }
 

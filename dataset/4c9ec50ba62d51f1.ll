@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; faiss/optimized/BlockInvertedLists.cpp.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hermes/optimized/Memory.cpp.ll
@@ -13,6 +13,8 @@
 ; openusd/optimized/types.cpp.ll
 ; qemu/optimized/block_vhdx.c.ll
 ; xgboost/optimized/data.cc.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -5,7 +5,7 @@
 define i1 @func0000000000000009(i1 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 2, i64 3
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -16,18 +16,19 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 2147483647, i64 0
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; luau/optimized/BuiltinDefinitions.cpp.ll
+; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 1, i64 2
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -40,7 +41,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 18, i64 24
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

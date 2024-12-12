@@ -4,7 +4,7 @@
 	.quad	8                               # 0x8
 .LCPI0_2:
 	.quad	-64                             # 0xffffffffffffffc0
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2   # ymm2 = [8,8,8,8]
 	vpternlogq	$248, .LCPI0_2(%rip){1to4}, %ymm1, %ymm2 # ymm2 = ymm2 | (ymm1 & mem)
@@ -18,7 +18,7 @@ func0000000000000014:                   # @func0000000000000014
 	.quad	1                               # 0x1
 .LCPI1_2:
 	.quad	4294967294                      # 0xfffffffe
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpbroadcastq	.LCPI1_1(%rip), %ymm2   # ymm2 = [1,1,1,1]
 	vpternlogq	$248, .LCPI1_2(%rip){1to4}, %ymm1, %ymm2 # ymm2 = ymm2 | (ymm1 & mem)

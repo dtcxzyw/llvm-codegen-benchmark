@@ -1,93 +1,31 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ldp	q17, q16, [sp]
+	scvtf	d2, w0
 	mov	x8, #4372995238176751616        // =0x3cb0000000000000
-	sshll2	v18.2d, v16.4s, #0
-	sshll	v19.2d, v17.2s, #0
-	sshll2	v17.2d, v17.4s, #0
-	sshll	v16.2d, v16.2s, #0
-	scvtf	v18.2d, v18.2d
-	scvtf	v19.2d, v19.2d
-	scvtf	v17.2d, v17.2d
-	scvtf	v16.2d, v16.2d
-	fmul	v7.2d, v18.2d, v7.2d
-	fmul	v5.2d, v17.2d, v5.2d
-	fmul	v4.2d, v19.2d, v4.2d
-	fmul	v6.2d, v16.2d, v6.2d
-	dup	v18.2d, x8
-	fmul	v7.2d, v7.2d, v18.2d
-	fmul	v4.2d, v4.2d, v18.2d
-	fmul	v5.2d, v5.2d, v18.2d
-	fmul	v6.2d, v6.2d, v18.2d
-	fcmgt	v3.2d, v3.2d, v7.2d
-	fcmgt	v1.2d, v1.2d, v5.2d
-	fcmgt	v0.2d, v0.2d, v4.2d
-	fcmgt	v2.2d, v2.2d, v6.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v2.8h
-	xtn	v0.8b, v0.8h
+	fmul	d1, d1, d2
+	fmov	d2, x8
+	fmul	d1, d1, d2
+	fcmp	d0, d1
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ldp	q17, q16, [sp]
-	sshll2	v18.2d, v16.4s, #0
-	sshll	v19.2d, v17.2s, #0
-	sshll2	v17.2d, v17.4s, #0
-	sshll	v16.2d, v16.2s, #0
-	scvtf	v18.2d, v18.2d
-	scvtf	v19.2d, v19.2d
-	scvtf	v17.2d, v17.2d
-	scvtf	v16.2d, v16.2d
-	fmul	v7.2d, v18.2d, v7.2d
-	fmov	v18.2d, #0.50000000
-	fmul	v5.2d, v17.2d, v5.2d
-	fmul	v6.2d, v16.2d, v6.2d
-	fmul	v4.2d, v19.2d, v4.2d
-	fmul	v7.2d, v7.2d, v18.2d
-	fmul	v5.2d, v5.2d, v18.2d
-	fmul	v4.2d, v4.2d, v18.2d
-	fmul	v6.2d, v6.2d, v18.2d
-	fcmge	v3.2d, v7.2d, v3.2d
-	fcmge	v1.2d, v5.2d, v1.2d
-	fcmge	v2.2d, v6.2d, v2.2d
-	fcmge	v0.2d, v4.2d, v0.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	uzp1	v0.8h, v0.8h, v2.8h
-	mvn	v0.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	scvtf	d2, w0
+	fmul	d1, d1, d2
+	fmov	d2, #0.50000000
+	fmul	d1, d1, d2
+	fcmp	d0, d1
+	cset	w0, hi
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ldp	q17, q16, [sp]
-	sshll2	v18.2d, v16.4s, #0
-	sshll	v19.2d, v17.2s, #0
-	sshll2	v17.2d, v17.4s, #0
-	sshll	v16.2d, v16.2s, #0
-	scvtf	v18.2d, v18.2d
-	scvtf	v19.2d, v19.2d
-	scvtf	v17.2d, v17.2d
-	scvtf	v16.2d, v16.2d
-	fmul	v7.2d, v18.2d, v7.2d
-	fmov	v18.2d, #0.50000000
-	fmul	v5.2d, v17.2d, v5.2d
-	fmul	v6.2d, v16.2d, v6.2d
-	fmul	v4.2d, v19.2d, v4.2d
-	fmul	v7.2d, v7.2d, v18.2d
-	fmul	v5.2d, v5.2d, v18.2d
-	fmul	v4.2d, v4.2d, v18.2d
-	fmul	v6.2d, v6.2d, v18.2d
-	fcmge	v3.2d, v3.2d, v7.2d
-	fcmge	v1.2d, v1.2d, v5.2d
-	fcmge	v2.2d, v2.2d, v6.2d
-	fcmge	v0.2d, v0.2d, v4.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	uzp1	v0.8h, v0.8h, v2.8h
-	mvn	v0.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	scvtf	d2, w0
+	fmul	d1, d1, d2
+	fmov	d2, #0.50000000
+	fmul	d1, d1, d2
+	fcmp	d0, d1
+	cset	w0, lt
 	ret
                                         // -- End function

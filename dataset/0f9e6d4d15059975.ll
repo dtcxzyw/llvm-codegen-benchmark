@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {

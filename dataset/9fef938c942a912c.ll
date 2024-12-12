@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 53 occurrences:
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -34,7 +34,6 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/libata-sff.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
@@ -91,10 +90,10 @@ entry:
 ; abc/optimized/giaGlitch.c.ll
 ; linux/optimized/libata-sff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 1
   %5 = icmp eq i32 %4, 0
   ret i1 %5

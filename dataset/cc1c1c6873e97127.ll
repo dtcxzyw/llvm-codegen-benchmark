@@ -1,7 +1,6 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
-; linux/optimized/intel_rc6.ll
 ; ruby/optimized/marshal.ll
 ; ruby/optimized/random.ll
 ; spike/optimized/pbsad.ll

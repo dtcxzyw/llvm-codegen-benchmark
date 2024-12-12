@@ -50,6 +50,13 @@ func0000000000000042:                   # @func0000000000000042
 	vmflt.vv	v17, v8, v12
 	vmand.mm	v0, v17, v16
 	ret
+func00000000000000ac:                   # @func00000000000000ac
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmfle.vv	v16, v8, v12
+	fmv.w.x	fa5, zero
+	vmfge.vf	v12, v8, fa5
+	vmand.mm	v0, v12, v16
+	ret
 func0000000000000047:                   # @func0000000000000047
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -78,13 +85,6 @@ func0000000000000035:                   # @func0000000000000035
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v8, v12
 	vmandn.mm	v0, v8, v16
-	ret
-func00000000000000ac:                   # @func00000000000000ac
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfle.vv	v16, v8, v12
-	fmv.w.x	fa5, zero
-	vmfge.vf	v12, v8, fa5
-	vmand.mm	v0, v12, v16
 	ret
 func00000000000000bd:                   # @func00000000000000bd
 	vsetivli	zero, 16, e32, m4, ta, ma

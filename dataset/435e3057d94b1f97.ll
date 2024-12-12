@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/longobject.ll
 ; cvc5/optimized/constraint.cpp.ll
 ; linux/optimized/addrconf.ll
@@ -16,18 +17,7 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; ruby/optimized/strftime.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 10
-  %3 = sub i32 -10, %0
-  %4 = select i1 %2, i32 -12, i32 %3
-  ret i32 %4
-}
-
-; 12 occurrences:
+; 11 occurrences:
 ; icu/optimized/punycode.ll
 ; libquic/optimized/e_rc2.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
@@ -38,14 +28,13 @@ entry:
 ; openssl/optimized/libcrypto-lib-rc2_skey.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
 ; openssl/optimized/libcrypto-shlib-rc2_skey.ll
-; ruby/optimized/strftime.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp slt i32 %1, 7
-  %3 = sub nsw i32 -5, %0
-  %4 = select i1 %2, i32 -7, i32 %3
+  %2 = icmp slt i32 %1, 1
+  %3 = select i1 %2, i32 1024, i32 %0
+  %4 = sub nsw i32 0, %3
   ret i32 %4
 }
 
@@ -64,6 +53,22 @@ entry:
   ret i32 %4
 }
 
+; 6 occurrences:
+; arrow/optimized/strtod.cc.ll
+; double_conversion/optimized/strtod.cc.ll
+; icu/optimized/double-conversion-strtod.ll
+; openusd/optimized/json.cpp.ll
+; openusd/optimized/strtod.cc.ll
+; php/optimized/strtod.ll
+; Function Attrs: nounwind
+define i32 @func000000000000002b(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, -1086
+  %3 = sub nuw nsw i32 4, %0
+  %4 = select i1 %2, i32 -49, i32 %3
+  ret i32 %4
+}
+
 ; 5 occurrences:
 ; cpython/optimized/longobject.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -76,17 +81,6 @@ entry:
   %2 = icmp eq i32 %1, 233
   %3 = sub nuw nsw i32 -128, %0
   %4 = select i1 %2, i32 -131, i32 %3
-  ret i32 %4
-}
-
-; 1 occurrences:
-; php/optimized/strtod.ll
-; Function Attrs: nounwind
-define i32 @func000000000000002b(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, -1086
-  %3 = sub nuw nsw i32 64, %0
-  %4 = select i1 %2, i32 11, i32 %3
   ret i32 %4
 }
 

@@ -42,7 +42,7 @@
 	.short	5157                            # 0x1425
 	.short	6182                            # 0x1826
 	.short	7207                            # 0x1c27
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vpmovsxwd	.LCPI0_2(%rip), %ymm2   # ymm2 = [32,1057,2082,3107,4132,5157,6182,7207]
 	vpermi2b	%ymm1, %ymm0, %ymm2
 	vpbroadcastd	.LCPI0_1(%rip), %ymm0   # ymm0 = [65534,65534,65534,65534,65534,65534,65534,65534]
@@ -51,7 +51,7 @@ func0000000000000071:                   # @func0000000000000071
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vpmovdb	%ymm0, %xmm0
 	vpaddb	%xmm0, %xmm0, %xmm0
 	vpor	%xmm1, %xmm0, %xmm0
@@ -94,7 +94,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	.byte	128                             # 0x80
 .LCPI2_1:
 	.long	57677                           # 0xe14d
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
 	vpshufb	.LCPI2_0(%rip), %ymm0, %ymm0    # ymm0 = zero,ymm0[0],zero,zero,zero,ymm0[4],zero,zero,zero,ymm0[8],zero,zero,zero,ymm0[12],zero,zero,zero,ymm0[16],zero,zero,zero,ymm0[20],zero,zero,zero,ymm0[24],zero,zero,zero,ymm0[28],zero,zero
 	vpor	%ymm1, %ymm0, %ymm0
@@ -104,7 +104,7 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 .LCPI3_0:
 	.long	65534                           # 0xfffe
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
 	vpslld	$6, %ymm0, %ymm0
 	vpbroadcastd	.LCPI3_0(%rip), %ymm2   # ymm2 = [65534,65534,65534,65534,65534,65534,65534,65534]

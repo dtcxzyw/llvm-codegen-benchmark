@@ -3,7 +3,7 @@
 ; lightgbm/optimized/application.cpp.ll
 ; lightgbm/optimized/c_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000228(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = lshr i64 %3, 1
@@ -19,7 +19,7 @@ entry:
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000224(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 1
   %4 = lshr i64 %3, 1
@@ -33,7 +33,7 @@ entry:
 ; meshlab/optimized/ofbx.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = lshr i64 %3, 2

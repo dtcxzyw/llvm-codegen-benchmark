@@ -1,5 +1,5 @@
 
-; 224 occurrences:
+; 228 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abc/optimized/lpkSets.c.ll
@@ -11,6 +11,7 @@
 ; hwloc/optimized/topology-x86.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; icu/optimized/collationbuilder.ll
+; jq/optimized/gb18030.ll
 ; libpng/optimized/png.c.ll
 ; linux/optimized/eeepc-laptop.ll
 ; linux/optimized/hda_auto_parser.ll
@@ -36,7 +37,6 @@
 ; llvm/optimized/BugReporter.cpp.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/BuiltinFunctionChecker.cpp.ll
-; llvm/optimized/Builtins.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
@@ -180,9 +180,14 @@
 ; luajit/optimized/lj_opt_narrow_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_image_decoder.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/FixedPipelineRenderer.cpp.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
+; oniguruma/optimized/gb18030.ll
 ; opencv/optimized/ippe.cpp.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; openjdk/optimized/cmspack.ll
@@ -206,7 +211,6 @@
 ; postgres/optimized/wchar.ll
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
-; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/hw_net_eepro100.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/tcg.c.ll
@@ -225,7 +229,7 @@
 ; wireshark/optimized/stats_tree.c.ll
 ; z3/optimized/bound_propagator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 8
   %2 = and i32 %1, 127
@@ -375,28 +379,26 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 983040
   %2 = icmp eq i32 %1, 65536
   ret i1 %2
 }
 
-; 12 occurrences:
-; linux/optimized/libata-core.ll
+; 10 occurrences:
 ; linux/optimized/pcmcia_resource.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
-; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/tcg.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 13
   %2 = and i32 %1, 2032
@@ -425,11 +427,38 @@ entry:
 ; opencv/optimized/resize.cpp.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 16711680
   %2 = icmp eq i32 %1, 131072
   ret i1 %2
+}
+
+; 3 occurrences:
+; linux/optimized/maple_tree.ll
+; llvm/optimized/Builtins.cpp.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0) #0 {
+entry:
+  %1 = lshr i32 %0, 23
+  %2 = and i32 %1, 255
+  %3 = add nsw i32 %2, -127
+  %4 = icmp samesign ult i32 %3, 62
+  ret i1 %4
+}
+
+; 2 occurrences:
+; linux/optimized/libata-core.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0) #0 {
+entry:
+  %1 = lshr i32 %0, 23
+  %2 = and i32 %1, 255
+  %3 = add nsw i32 %2, -191
+  %4 = icmp ult i32 %3, -64
+  ret i1 %4
 }
 
 ; 6 occurrences:
@@ -440,7 +469,7 @@ entry:
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0) #0 {
+define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 2139095040
   %2 = icmp ne i32 %1, 1065353216
@@ -450,7 +479,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0) #0 {
+define i1 @func000000000000006c(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 4088
   %2 = icmp ne i32 %1, 8

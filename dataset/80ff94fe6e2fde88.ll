@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
@@ -32,24 +32,26 @@
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/virtio.c.ll
 ; ruby/optimized/enumerator.ll
-; ruby/optimized/sprintf.ll
 ; wireshark/optimized/packet-thrift.c.ll
 ; xgboost/optimized/recordio.cc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 2147483648
   ret i64 %4
 }
 
-; 221 occurrences:
+; 218 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -146,13 +148,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -227,7 +226,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -270,7 +268,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add i64 %3, -63
   ret i64 %4
 }
@@ -425,7 +423,7 @@ entry:
 ; velox/optimized/VectorEncoding.cpp.ll
 ; wireshark/optimized/netmon.c.ll
 ; wireshark/optimized/packet-smb.c.ll
-; z3/optimized/watch_list.cpp.ll
+; zed-rs/optimized/80403hw32s3ougvze8j2ycldj.ll
 ; zfp/optimized/encode1d.c.ll
 ; zfp/optimized/encode1f.c.ll
 ; zfp/optimized/encode1i.c.ll
@@ -442,7 +440,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 512
   ret i64 %4
 }
@@ -700,12 +698,13 @@ entry:
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nuw nsw i64 %3, 3
   ret i64 %4
 }
 
-; 178 occurrences:
+; 181 occurrences:
+; boost/optimized/to_chars.ll
 ; clamav/optimized/scanners.c.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -884,16 +883,18 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nsw i64 %3, 8192
   ret i64 %4
 }
 
-; 126 occurrences:
+; 128 occurrences:
 ; cpython/optimized/longobject.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -993,8 +994,6 @@ entry:
 ; openmpi/optimized/coll_basic_alltoallv.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; openusd/optimized/path.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
@@ -1017,6 +1016,10 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
@@ -1024,7 +1027,7 @@ entry:
 define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nuw nsw i64 %3, 1048576
   ret i64 %4
 }
@@ -1084,12 +1087,12 @@ entry:
 define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = add nuw i64 %3, 1
   ret i64 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; eastl/optimized/EADateTime.cpp.ll
@@ -1097,13 +1100,12 @@ entry:
 ; libjpeg-turbo/optimized/jdmarker.c.ll
 ; openjdk/optimized/codeCache.ll
 ; php/optimized/snprintf.ll
-; quickjs/optimized/quickjs.ll
 ; z3/optimized/mpff.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nsw i64 %3, 409600
   ret i64 %4
 }
@@ -1120,7 +1122,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nsw i64 %3, -1
   ret i64 %4
 }
@@ -1132,7 +1134,7 @@ entry:
 define i64 @func0000000000000013(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nuw nsw i64 %3, 2
   ret i64 %4
 }
@@ -1145,7 +1147,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nsw i64 %3, -64
   ret i64 %4
 }
@@ -1156,7 +1158,7 @@ entry:
 define i64 @func000000000000001a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = add nuw i64 %3, 10
   ret i64 %4
 }
@@ -1167,7 +1169,7 @@ entry:
 define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add i64 %3, 4294967295
   ret i64 %4
 }
@@ -1179,7 +1181,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }
@@ -1190,7 +1192,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = add i64 %3, -2
   ret i64 %4
 }
@@ -1201,7 +1203,7 @@ entry:
 define i64 @func0000000000000012(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nuw i64 %3, 1
   ret i64 %4
 }
@@ -1212,21 +1214,19 @@ entry:
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nuw i64 %3, 8
   ret i64 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; cmake/optimized/archive_acl.c.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
-  %4 = add nsw i64 %3, 4
+  %3 = add i64 %0, %2
+  %4 = add nsw i64 %3, 5
   ret i64 %4
 }
 
@@ -1236,7 +1236,7 @@ entry:
 define i64 @func000000000000000b(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = add nuw nsw i64 %3, 3
   ret i64 %4
 }
@@ -1247,7 +1247,7 @@ entry:
 define i64 @func0000000000000019(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = add nsw i64 %3, -55
   ret i64 %4
 }
@@ -1258,7 +1258,7 @@ entry:
 define i64 @func000000000000001b(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }

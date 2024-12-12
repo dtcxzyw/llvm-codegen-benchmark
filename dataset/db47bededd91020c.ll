@@ -17,7 +17,7 @@ entry:
 ; opencv/optimized/rand.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0) #0 {
+define i1 @func0000000000000048(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 255
   %2 = sdiv i32 %1, 256
@@ -50,7 +50,7 @@ entry:
 ; soc-simulator/optimized/verilated.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0) #0 {
+define i1 @func0000000000000044(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = sdiv i32 %1, 4

@@ -8,12 +8,7 @@ func0000000000000038:                   # @func0000000000000038
 	sllw	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
-	andi	a1, a1, 255
-	sllw	a1, a1, a2
-	or	a0, a0, a1
-	ret
-func0000000000000008:                   # @func0000000000000008
+func000000000000003e:                   # @func000000000000003e
 	andi	a1, a1, 255
 	sllw	a1, a1, a2
 	or	a0, a0, a1
@@ -23,17 +18,12 @@ func0000000000000000:                   # @func0000000000000000
 	sllw	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000003e:                   # @func000000000000003e
-	andi	a1, a1, 255
-	sllw	a1, a1, a2
-	or	a0, a0, a1
-	ret
 func0000000000000030:                   # @func0000000000000030
 	andi	a1, a1, 255
 	sllw	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 255
 	sllw	a1, a1, a2
 	or	a0, a0, a1

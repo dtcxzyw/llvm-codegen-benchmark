@@ -5,7 +5,7 @@
 ; git/optimized/rev-parse.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000ca(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sdiv i32 %0, 16
@@ -18,7 +18,7 @@ entry:
 ; opencv/optimized/lkpyramid.cpp.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sdiv i32 %0, 16
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gmx_energy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sdiv i32 %0, 4
@@ -109,7 +109,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = sdiv i32 %0, 4

@@ -2,6 +2,10 @@ func0000000000000040:                   # @func0000000000000040
 	subl	%edx, %esi
 	leal	17(%rdi,%rsi,4), %eax
 	retq
+func0000000000000058:                   # @func0000000000000058
+	subl	%edx, %esi
+	leal	5(%rdi,%rsi,2), %eax
+	retq
 func0000000000000055:                   # @func0000000000000055
 	subl	%edx, %esi
 	shll	$12, %esi

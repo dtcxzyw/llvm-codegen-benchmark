@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 95 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -56,6 +56,7 @@
 ; linux/optimized/percpu.ll
 ; linux/optimized/rmap.ll
 ; linux/optimized/trace_output.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
@@ -93,15 +94,16 @@
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; yosys/optimized/SimpSolver.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 10
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
-; 57 occurrences:
+; 58 occurrences:
 ; abc/optimized/ivyCut.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -110,6 +112,7 @@ entry:
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/rational.ll
 ; clamav/optimized/regcomp.c.ll
 ; clamav/optimized/regexec.c.ll
 ; gromacs/optimized/cstringutil.cpp.ll
@@ -160,14 +163,14 @@ entry:
 ; z3/optimized/specrel_solver.cpp.ll
 ; z3/optimized/user_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
-; 46 occurrences:
+; 48 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/acbUtil.c.ll
@@ -196,6 +199,8 @@ entry:
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/intel_display.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_math.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; opencv/optimized/global_histogram_binarizer.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
@@ -218,7 +223,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -238,20 +243,20 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; minetest/optimized/client.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -268,10 +273,10 @@ entry:
 ; wireshark/optimized/packet-idn.c.ll
 ; wireshark/optimized/packet-tftp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
@@ -286,10 +291,10 @@ entry:
 ; qemu/optimized/target_riscv_translate.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -300,10 +305,10 @@ entry:
 ; openusd/optimized/loopfilter.c.ll
 ; postgres/optimized/int.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   ret i1 %3
 }
 
@@ -312,14 +317,14 @@ entry:
 ; postgres/optimized/int.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 23
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   ret i1 %3
 }
 
-; 51 occurrences:
+; 52 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
@@ -344,6 +349,7 @@ entry:
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/xprtsock.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/datastructs.cpp.ll
@@ -375,13 +381,11 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 3
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
-; 6 occurrences:
-; darktable/optimized/RawImageDataFloat.cpp.ll
-; darktable/optimized/RawImageDataU16.cpp.ll
+; 4 occurrences:
 ; linux/optimized/tcp_input.ll
 ; openjdk/optimized/ProcessPath.ll
 ; php/optimized/zend_jit.ll
@@ -390,7 +394,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 3
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -403,7 +407,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 4
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 
@@ -414,7 +418,7 @@ entry:
 define i1 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   ret i1 %3
 }
 
@@ -428,17 +432,17 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 3
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; linux/optimized/waitwake.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 20
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 

@@ -7,8 +7,8 @@ func0000000000000002:                   # @func0000000000000002
 	vcmpltpd	%zmm5, %zmm1, %k2
 	vxorpd	%zmm4, %zmm3, %zmm3 {%k2}
 	vxorpd	%zmm4, %zmm2, %zmm2 {%k1}
-	vaddpd	%zmm0, %zmm2, %zmm0
-	vaddpd	%zmm1, %zmm3, %zmm1
+	vaddpd	%zmm2, %zmm0, %zmm0
+	vaddpd	%zmm3, %zmm1, %zmm1
 	retq
 .LCPI1_0:
 	.quad	0x8000000000000000              # double -0
@@ -19,6 +19,6 @@ func0000000000000003:                   # @func0000000000000003
 	vcmpnlepd	%zmm1, %zmm5, %k2
 	vxorpd	%zmm4, %zmm3, %zmm3 {%k2}
 	vxorpd	%zmm4, %zmm2, %zmm2 {%k1}
-	vaddpd	%zmm0, %zmm2, %zmm0
-	vaddpd	%zmm1, %zmm3, %zmm1
+	vaddpd	%zmm2, %zmm0, %zmm0
+	vaddpd	%zmm3, %zmm1, %zmm1
 	retq

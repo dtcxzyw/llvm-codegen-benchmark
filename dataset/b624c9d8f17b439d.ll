@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; gromacs/optimized/reversetopology.cpp.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll
@@ -11,7 +12,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = sdiv i32 %3, 2
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -23,7 +24,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = sdiv i32 %3, 1600
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 

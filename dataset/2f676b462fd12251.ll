@@ -45,7 +45,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 100
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   ret i64 %3
 }
 
@@ -56,11 +56,11 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 48
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   ret i64 %3
 }
 
-; 7 occurrences:
+; 12 occurrences:
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
 ; rust-analyzer-rs/optimized/2pjtxeptskgmq0yj.ll
@@ -68,6 +68,11 @@ entry:
 ; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
 ; rust-analyzer-rs/optimized/4o4li8dzw61k3tqx.ll
 ; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -82,7 +87,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 2113929216
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   ret i64 %3
 }
 

@@ -1,4 +1,25 @@
 
+; 9 occurrences:
+; hermes/optimized/Host.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; linux/optimized/8139too.ll
+; linux/optimized/fops.ll
+; linux/optimized/hda_codec.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaStmt.cpp.ll
+; openjdk/optimized/gtk3_interface.ll
+; wireshark/optimized/packet-cpfi.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 3
+  %4 = and i32 %3, 32
+  %5 = or disjoint i32 %0, %1
+  %6 = or disjoint i32 %5, %4
+  %7 = or disjoint i32 %6, 64
+  ret i32 %7
+}
+
 ; 8 occurrences:
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
@@ -16,27 +37,6 @@ entry:
   %5 = or disjoint i32 %0, %1
   %6 = or disjoint i32 %5, %4
   %7 = or i32 %6, -16777216
-  ret i32 %7
-}
-
-; 9 occurrences:
-; hermes/optimized/Host.cpp.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/8139too.ll
-; linux/optimized/fops.ll
-; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_regmap.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaStmt.cpp.ll
-; wireshark/optimized/packet-cpfi.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 22
-  %4 = and i32 %3, 26
-  %5 = or disjoint i32 %0, %1
-  %6 = or disjoint i32 %5, %4
-  %7 = or disjoint i32 %6, 512
   ret i32 %7
 }
 

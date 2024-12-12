@@ -40,3 +40,9 @@ func0000000000000021:                   # @func0000000000000021
 	setae	%al
 	orl	%edi, %eax
 	retq
+func0000000000000061:                   # @func0000000000000061
+	xorl	%eax, %eax
+	cmpb	$2, %sil
+	setae	%al
+	orl	%edi, %eax
+	retq

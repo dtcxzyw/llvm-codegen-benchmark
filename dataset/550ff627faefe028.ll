@@ -34,12 +34,12 @@
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 136 occurrences:
+; 137 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/giaFrames.c.ll
 ; abc/optimized/saigIsoSlow.c.ll
@@ -131,6 +131,7 @@ entry:
 ; luajit/optimized/lj_bcread_dyn.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
+; lvgl/optimized/lv_text.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-items.ll
@@ -180,7 +181,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -210,7 +211,7 @@ entry:
   ret i32 %5
 }
 
-; 117 occurrences:
+; 115 occurrences:
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/giaSatLE.c.ll
@@ -257,7 +258,6 @@ entry:
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/stats.ll
 ; linux/optimized/xfrm_user.ll
 ; llvm/optimized/DeclCXX.cpp.ll
@@ -293,7 +293,6 @@ entry:
 ; php/optimized/ir.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/network.ll
-; postgres/optimized/trigger.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; qemu/optimized/hw_display_vga.c.ll
@@ -348,7 +347,7 @@ entry:
   ret i32 %5
 }
 
-; 42 occurrences:
+; 45 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/lpkCore.c.ll
@@ -379,6 +378,9 @@ entry:
 ; llvm/optimized/PathDiagnostic.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/UndefBranchChecker.cpp.ll
+; lvgl/optimized/lv_calendar.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_text.ll
 ; opencv/optimized/unicomblock.cpp.ll
 ; openjdk/optimized/mlib_ImageCopy_Bit.ll
 ; openjdk/optimized/net_util.ll
@@ -395,7 +397,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -409,12 +411,12 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -8
-  %4 = add i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; cvc5/optimized/alethe_let_binding.cpp.ll
 ; cvc5/optimized/cnf_stream.cpp.ll
@@ -423,13 +425,15 @@ entry:
 ; glslang/optimized/Initialize.cpp.ll
 ; icu/optimized/rbbirb.ll
 ; linux/optimized/netdev.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_table.ll
 ; wireshark/optimized/packet-mp2t.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -440,7 +444,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = add nuw nsw i32 %3, %1
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -451,8 +455,8 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nuw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add nuw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

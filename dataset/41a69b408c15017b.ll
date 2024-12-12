@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
@@ -8,6 +8,7 @@
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; linux/optimized/intel_timeline.ll
 ; linux/optimized/irq.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll

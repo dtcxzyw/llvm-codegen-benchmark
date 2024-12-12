@@ -6,19 +6,7 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 func000000000000000b:                   # @func000000000000000b
 	movl	%edi, %eax
-	andl	$4096, %edx                     # imm = 0x1000
-	orl	%esi, %eax
-	orl	%edx, %eax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	movl	%edi, %eax
-	andl	$8192, %edx                     # imm = 0x2000
-	orl	%esi, %eax
-	orl	%edx, %eax
-	retq
-func000000000000000e:                   # @func000000000000000e
-	movl	%edi, %eax
-	andl	$96, %edx
+	andl	$-32768, %edx                   # imm = 0x8000
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq
@@ -43,6 +31,12 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
 	andl	$32, %edx
+	orl	%esi, %eax
+	orl	%edx, %eax
+	retq
+func000000000000000e:                   # @func000000000000000e
+	movl	%edi, %eax
+	andl	$64, %edx
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq

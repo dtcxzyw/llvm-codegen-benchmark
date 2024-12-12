@@ -4,12 +4,12 @@
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/alloc_lib.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; cmake/optimized/archive_read_disk_posix.c.ll
-; cmake/optimized/cmSystemTools.cxx.ll
+; coreutils-rs/optimized/3ntjj58b904wujzh.ll
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
-; diesel-rs/optimized/1mcix0ravw4ybg9k.ll
 ; duckdb/optimized/ub_duckdb_operator_helper.cpp.ll
 ; git/optimized/attr.ll
 ; git/optimized/urlmatch.ll
@@ -80,7 +80,7 @@
 ; redis/optimized/dict.ll
 ; ripgrep-rs/optimized/58dexfd2ydnodcl0.ll
 ; ruby/optimized/io.ll
-; rust-analyzer-rs/optimized/2pjtxeptskgmq0yj.ll
+; rust-analyzer-rs/optimized/3alfnpbt0togb9gu.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; tev/optimized/Common.cpp.ll
 ; tev/optimized/Ipc.cpp.ll
@@ -97,29 +97,34 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 7 occurrences:
+; actix-rs/optimized/q4aavw6wh20so0r.ll
+; diesel-rs/optimized/1mcix0ravw4ybg9k.ll
+; linux/optimized/pci_iomap.ll
+; ockam-rs/optimized/2ck5v5sgkr8z8vz5.ll
+; redis/optimized/bitops.ll
+; ruby/optimized/thread.ll
+; rust-analyzer-rs/optimized/2pjtxeptskgmq0yj.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 -1, i64 %2
+  %4 = sub nuw i64 %3, %0
+  ret i64 %4
+}
+
+; 6 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; graphviz/optimized/closest.c.ll
 ; icu/optimized/utext.ll
 ; openjdk/optimized/jfrObjectAllocationSample.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/f0amc3mihxn9sd1mhsostg4ox.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
   %4 = sub nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 4 occurrences:
-; linux/optimized/pci_iomap.ll
-; ockam-rs/optimized/2ck5v5sgkr8z8vz5.ll
-; redis/optimized/bitops.ll
-; rust-analyzer-rs/optimized/2pjtxeptskgmq0yj.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = select i1 %1, i64 0, i64 %2
-  %4 = sub nuw i64 %3, %0
   ret i64 %4
 }
 

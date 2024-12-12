@@ -1,5 +1,6 @@
 
-; 318 occurrences:
+; 319 occurrences:
+; boost/optimized/static_string.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -319,11 +320,11 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i8 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 11
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 11
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -344,10 +345,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/nl80211.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, i8 %1) #0 {
+define i64 @func000000000000000c(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 2
   %4 = getelementptr i8, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5

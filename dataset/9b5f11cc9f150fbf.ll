@@ -1,6 +1,8 @@
 
-; 188 occurrences:
+; 186 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/src.ll
 ; brotli/optimized/bit_cost.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/encode.c.ll
@@ -62,10 +64,8 @@
 ; linux/optimized/evgpeblk.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/fsmap.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_gem_pages.ll
-; linux/optimized/i915_mm.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/i915_vma_resource.ll
 ; linux/optimized/intel_renderstate.ll
@@ -78,7 +78,6 @@
 ; linux/optimized/resize.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/scatterlist.ll
-; linux/optimized/vclock_gettime.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/write.ll
 ; linux/optimized/xz_dec_stream.ll
@@ -99,6 +98,7 @@
 ; llvm/optimized/User.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; luau/optimized/UnwindBuilderDwarf2.cpp.ll
+; lvgl/optimized/lv_cache_lru_rb.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; meshlab/optimized/miniz.c.ll
 ; miniaudio/optimized/unity.c.ll
@@ -146,7 +146,6 @@
 ; openssl/optimized/libssl-shlib-tls_common.ll
 ; openusd/optimized/niInstanceAggregationSceneIndex.cpp.ll
 ; openusd/optimized/retainedDataSource.cpp.ll
-; php/optimized/fastcgi.ll
 ; php/optimized/phar.ll
 ; php/optimized/stream.ll
 ; php/optimized/util.ll
@@ -161,7 +160,6 @@
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/dump_dump.c.ll
 ; qemu/optimized/hw_core_loader.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/virtio.c.ll
@@ -235,7 +233,6 @@ entry:
 ; lief/optimized/pkwrite.c.ll
 ; lief/optimized/poly1305.c.ll
 ; lief/optimized/x509write_crt.c.ll
-; linux/optimized/csum-wrappers_64.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/skcipher.ll
 ; linux/optimized/sr_vendor.ll
@@ -326,6 +323,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_nist.ll
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; ozz-animation/optimized/animation.cc.ll
+; php/optimized/fastcgi.ll
 ; qemu/optimized/block_qcow2-snapshot.c.ll
 ; qemu/optimized/block_vpc.c.ll
 ; qemu/optimized/hw_display_bochs-display.c.ll
@@ -409,7 +407,7 @@ entry:
   ret i64 %5
 }
 
-; 79 occurrences:
+; 85 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/message.cc.ll
@@ -440,7 +438,6 @@ entry:
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
 ; libphonenumber/optimized/phonenumber.pb.cc.ll
 ; linux/optimized/md-bitmap.ll
-; linux/optimized/ttm_bo_vm.ll
 ; linux/optimized/vgacon.ll
 ; llvm/optimized/AArch64MCTargetDesc.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -488,6 +485,13 @@ entry:
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
@@ -498,7 +502,7 @@ entry:
   ret i64 %5
 }
 
-; 37 occurrences:
+; 39 occurrences:
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; eastl/optimized/EADateTime.cpp.ll
@@ -514,7 +518,6 @@ entry:
 ; lief/optimized/x509write_crt.c.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/intel_cx0_phy.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; memcached/optimized/memcached-items.ll
@@ -536,6 +539,9 @@ entry:
 ; rust-analyzer-rs/optimized/3jiy4rg0squ6unio.ll
 ; sqlite/optimized/sqlite3.ll
 ; vcpkg/optimized/postbuildlint.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -545,11 +551,10 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; freetype/optimized/ftcache.c.ll
-; glog/optimized/signalhandler.cc.ll
 ; linux/optimized/indirect.ll
 ; llvm/optimized/InlineCost.cpp.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll

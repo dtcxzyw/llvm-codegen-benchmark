@@ -3,10 +3,10 @@
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = and i64 %3, 511
   %5 = icmp eq i64 %4, 511
   ret i1 %5
@@ -20,12 +20,22 @@ entry:
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i1 %1) #0 {
 entry:
   %.tr = trunc i64 %0 to i1
-  %.narrow = xor i1 %.tr, %1
+  %.narrow = xor i1 %1, %.tr
   %2 = xor i1 %.narrow, true
   ret i1 %2
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i64 %0, i1 %1) #0 {
+entry:
+  %.tr = trunc i64 %0 to i1
+  %.narrow = xor i1 %1, %.tr
+  ret i1 %.narrow
 }
 
 ; 13 occurrences:
@@ -46,7 +56,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, 4294967295
   %5 = icmp eq i64 %4, 0
   ret i1 %5
@@ -61,10 +71,10 @@ entry:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = and i64 %3, 3
   %5 = icmp eq i64 %4, 0
   ret i1 %5

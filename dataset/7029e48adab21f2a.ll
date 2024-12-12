@@ -5,7 +5,7 @@
 ; spike/optimized/vdiv_vx.ll
 ; spike/optimized/vrem_vx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 255
   %2 = icmp eq i32 %.mask, 255

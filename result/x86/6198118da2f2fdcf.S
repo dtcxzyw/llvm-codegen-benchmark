@@ -21,6 +21,18 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rsi, %rdi
 	setns	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	addq	%rdx, %rsi
+	subq	%rsi, %rdi
+	cmpq	$512, %rdi                      # imm = 0x200
+	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	addq	%rdx, %rsi
+	subq	%rsi, %rdi
+	cmpq	$104857600, %rdi                # imm = 0x6400000
+	setae	%al
+	retq
 func0000000000000006:                   # @func0000000000000006
 	addq	%rdx, %rsi
 	subq	%rsi, %rdi

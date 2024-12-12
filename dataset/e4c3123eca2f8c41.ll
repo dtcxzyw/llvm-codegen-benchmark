@@ -1,8 +1,9 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; cvc5/optimized/ceg_arith_instantiator.cpp.ll
 ; darktable/optimized/amaze.cc.ll
+; icu/optimized/hebrwcal.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
@@ -19,8 +20,9 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
+; boost/optimized/to_chars.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
@@ -46,12 +48,23 @@ entry:
 }
 
 ; 1 occurrences:
-; yosys/optimized/firrtl.ll
+; boost/optimized/to_chars.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = icmp ult i32 %3, 10
+  %4 = icmp samesign ugt i32 %3, 9
+  %5 = select i1 %4, i32 2, i32 1
+  ret i32 %5
+}
+
+; 1 occurrences:
+; yosys/optimized/firrtl.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %0, i32 %1, i32 %2
+  %4 = icmp samesign ult i32 %3, 10
   %5 = select i1 %4, i32 48, i32 87
   ret i32 %5
 }

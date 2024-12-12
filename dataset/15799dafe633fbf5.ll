@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 44 occurrences:
 ; abc/optimized/giaCSat3.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -39,6 +39,11 @@
 ; serde-rs-json/optimized/30jxdu82z9wuspjj.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -47,7 +52,7 @@ entry:
   ret i32 %2
 }
 
-; 66 occurrences:
+; 69 occurrences:
 ; clamav/optimized/cpio.c.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -106,6 +111,9 @@ entry:
 ; z3/optimized/smt_model_generator.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
 ; z3/optimized/used_vars.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; zfp/optimized/decode1f.c.ll
 ; zfp/optimized/decode1i.c.ll
 ; zfp/optimized/decode2f.c.ll
@@ -122,7 +130,7 @@ entry:
   ret i32 %2
 }
 
-; 53 occurrences:
+; 18 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; clamav/optimized/autoit.c.ll
 ; eastl/optimized/EARandom.cpp.ll
@@ -131,50 +139,15 @@ entry:
 ; linux/optimized/uncore_nhmex.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openusd/optimized/level.cpp.ll
 ; php/optimized/array.ll
-; php/optimized/basic_functions.ll
-; php/optimized/block_pass.ll
-; php/optimized/dfa_pass.ll
-; php/optimized/file.ll
-; php/optimized/formatted_print.ll
-; php/optimized/http_fopen_wrapper.ll
-; php/optimized/node.ll
-; php/optimized/pdo_stmt.ll
-; php/optimized/phar_object.ll
 ; php/optimized/php_pcre.ll
-; php/optimized/phpdbg.ll
-; php/optimized/phpdbg_bp.ll
-; php/optimized/phpdbg_frame.ll
 ; php/optimized/phpdbg_watch.ll
-; php/optimized/proc_open.ll
-; php/optimized/spl_dllist.ll
-; php/optimized/spl_fixedarray.ll
-; php/optimized/spl_observer.ll
-; php/optimized/sqlite3.ll
-; php/optimized/streams.ll
-; php/optimized/streamsfuncs.ll
-; php/optimized/string.ll
 ; php/optimized/tokenizer.ll
-; php/optimized/url.ll
-; php/optimized/var.ll
 ; php/optimized/xml.ll
-; php/optimized/zend_API.ll
-; php/optimized/zend_attributes.ll
-; php/optimized/zend_builtin_functions.ll
-; php/optimized/zend_cfg.ll
-; php/optimized/zend_compile.ll
-; php/optimized/zend_execute.ll
-; php/optimized/zend_fibers.ll
-; php/optimized/zend_generators.ll
-; php/optimized/zend_hash.ll
-; php/optimized/zend_inheritance.ll
 ; php/optimized/zend_ini.ll
-; php/optimized/zend_jit.ll
 ; php/optimized/zend_list.ll
-; php/optimized/zend_observer.ll
-; php/optimized/zend_opcode.ll
-; php/optimized/zend_optimizer.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {

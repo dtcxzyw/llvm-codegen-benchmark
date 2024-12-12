@@ -1,10 +1,11 @@
 
-; 132 occurrences:
+; 133 occurrences:
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/DWARFUnitIndex.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SanitizerArgs.cpp.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
 ; mold/optimized/icf.cc.ARM64.cc.ll

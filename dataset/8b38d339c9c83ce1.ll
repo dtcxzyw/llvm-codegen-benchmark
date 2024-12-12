@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; ruby/optimized/pack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -48,10 +48,10 @@ entry:
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
@@ -61,7 +61,6 @@ entry:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; linux/optimized/block_validity.ll
-; linux/optimized/extents.ll
 ; linux/optimized/mmp.ll
 ; linux/optimized/resize.ll
 ; llvm/optimized/ExponentialBackoff.cpp.ll
@@ -74,11 +73,12 @@ entry:
 ; pcg-cpp/optimized/pcg-demo.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; vcpkg/optimized/uuid.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -107,15 +107,15 @@ entry:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
-; 41 occurrences:
+; 44 occurrences:
 ; gromacs/optimized/awh.cpp.ll
 ; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/constr.cpp.ll
@@ -157,11 +157,14 @@ entry:
 ; tomlplusplus/optimized/toml.cpp.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/0eh1fm3h72yjwo2ipis72ui0f.ll
+; zed-rs/optimized/adlc6qfcwjhvmcaovuwfkwg5s.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -172,7 +175,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -185,7 +188,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
@@ -198,7 +201,7 @@ entry:
 define i1 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = icmp sle i64 %4, %0
   ret i1 %5
 }
@@ -209,7 +212,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
@@ -218,10 +221,10 @@ entry:
 ; linux/optimized/intel_pstate.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
@@ -230,10 +233,10 @@ entry:
 ; linux/optimized/vgaarb.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = icmp uge i64 %4, %0
   ret i1 %5
 }
@@ -241,10 +244,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -255,29 +258,18 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = icmp eq i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; freetype/optimized/type1.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %1
-  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; pocketpy/optimized/lexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
@@ -285,10 +277,10 @@ entry:
 ; 1 occurrences:
 ; pocketpy/optimized/lexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }

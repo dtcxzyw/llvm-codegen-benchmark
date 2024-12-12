@@ -15,7 +15,7 @@ func0000000000000008:                   # @func0000000000000008
 	sete	%al
 	addl	%edi, %eax
 	retq
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	movl	%edi, %eax
 	cmpq	$33554432, %rsi                 # imm = 0x2000000
 	sbbl	$-1, %eax
@@ -25,7 +25,7 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	$1, %rsi
 	sbbl	$-1, %eax
 	retq
-func0000000000000040:                   # @func0000000000000040
+func00000000000000c0:                   # @func00000000000000c0
 	movl	%edi, %eax
 	cmpq	$2, %rsi
 	sbbl	$-1, %eax
@@ -49,6 +49,18 @@ func000000000000000b:                   # @func000000000000000b
 	sete	%al
 	addl	%edi, %eax
 	retq
+func0000000000000040:                   # @func0000000000000040
+	movl	%edi, %eax
+	shrq	$32, %rsi
+	cmpq	$1, %rsi
+	sbbl	$-1, %eax
+	retq
+func0000000000000043:                   # @func0000000000000043
+	xorl	%eax, %eax
+	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
+	seta	%al
+	addl	%edi, %eax
+	retq
 func0000000000000053:                   # @func0000000000000053
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
@@ -56,11 +68,9 @@ func0000000000000053:                   # @func0000000000000053
 	addl	%edi, %eax
 	retq
 func0000000000000041:                   # @func0000000000000041
-	movabsq	$999999999999999999, %rcx       # imm = 0xDE0B6B3A763FFFF
-	xorl	%eax, %eax
-	cmpq	%rcx, %rsi
-	seta	%al
-	addl	%edi, %eax
+	movl	%edi, %eax
+	cmpq	$2, %rsi
+	sbbl	$-1, %eax
 	retq
 func0000000000000050:                   # @func0000000000000050
 	xorl	%eax, %eax
@@ -73,6 +83,11 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	$8191, %rsi                     # imm = 0x1FFF
 	sete	%al
 	addl	%edi, %eax
+	retq
+func00000000000000c1:                   # @func00000000000000c1
+	movl	%edi, %eax
+	cmpq	$5, %rsi
+	sbbl	$-1, %eax
 	retq
 func0000000000000051:                   # @func0000000000000051
 	xorl	%eax, %eax

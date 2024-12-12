@@ -1,6 +1,6 @@
 func000000000000001e:                   # @func000000000000001e
 	vpslld	$8, %ymm2, %ymm2
-	vpternlogd	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogd	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vextracti128	$1, %ymm2, %xmm0
 	vpextrd	$1, %xmm0, %ecx
 	movl	$400000000, %eax                # imm = 0x17D78400

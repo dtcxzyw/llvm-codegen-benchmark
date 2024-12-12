@@ -1,24 +1,16 @@
-func0000000000000086:                   # @func0000000000000086
+func0000000000000107:                   # @func0000000000000107
 	shlq	$6, %rdx
 	addq	%rsi, %rdx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	cmovneq	%rdi, %rax
 	addq	$8, %rax
 	retq
-func0000000000000087:                   # @func0000000000000087
+func0000000000000007:                   # @func0000000000000007
 	leaq	(%rdx,%rdx,2), %rax
 	leaq	(%rsi,%rax,8), %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	cmovneq	%rdi, %rax
-	addq	$8, %rax
-	retq
-func0000000000000006:                   # @func0000000000000006
-	leaq	(%rdx,%rdx,2), %rax
-	leaq	(%rsi,%rax,8), %rcx
-	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	cmovneq	%rdi, %rax
 	addq	$64, %rax
 	retq

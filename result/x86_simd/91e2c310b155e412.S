@@ -34,6 +34,6 @@ func0000000000000018:                   # @func0000000000000018
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpcmpneqb	.LCPI2_0(%rip), %xmm2, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vmovdqu8	%xmm0, %xmm0 {%k1} {z}
 	retq

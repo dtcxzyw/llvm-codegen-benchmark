@@ -3,7 +3,7 @@
 ; curl/optimized/libcurl_la-tftp.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i16 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000281(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %1, 8
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/hfsplus.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000145(i16 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000285(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %1, 8
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i16 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000284(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %1, 8

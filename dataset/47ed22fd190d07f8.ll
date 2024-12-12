@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mempolicy.ll
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
@@ -9,7 +9,6 @@
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; qemu/optimized/migration_ram.c.ll

@@ -17,7 +17,7 @@
 	.short	256                             # 0x100
 .LCPI0_1:
 	.short	256                             # 0x100
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm1
 	vpbroadcastw	.LCPI0_1(%rip), %ymm0   # ymm0 = [256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256]

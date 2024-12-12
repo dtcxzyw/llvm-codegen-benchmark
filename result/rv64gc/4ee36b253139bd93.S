@@ -1,8 +1,10 @@
 func0000000000000014:                   # @func0000000000000014
-	sext.w	a1, a1
-	slli	a2, a1, 1
+	slli	a1, a1, 56
+	srai	a1, a1, 56
+	slli	a2, a1, 3
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 func0000000000000016:                   # @func0000000000000016
 	sext.w	a1, a1

@@ -28,11 +28,10 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; ocio/optimized/Lut1DOpCPU_AVX.cpp.ll
 ; ocio/optimized/Lut1DOpCPU_AVX2.cpp.ll
 ; ocio/optimized/Lut1DOpCPU_SSE2.cpp.ll
@@ -46,12 +45,11 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:

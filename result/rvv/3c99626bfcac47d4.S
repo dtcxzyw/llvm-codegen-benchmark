@@ -16,7 +16,7 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vi	v9, v10, -6
+	vmsleu.vi	v9, v10, -11
 	vmand.mm	v8, v8, v9
 	vmand.mm	v0, v8, v0
 	vmv.v.i	v8, 0

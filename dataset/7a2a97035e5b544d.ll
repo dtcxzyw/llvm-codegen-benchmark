@@ -12,6 +12,19 @@ entry:
   %3 = and i64 %2, 4294983169
   %4 = icmp ne i64 %3, 0
   %5 = select i1 %1, i1 %4, i1 false
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; llvm/optimized/Clang.cpp.ll
+; php/optimized/php_pcre.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 255
+  %4 = icmp samesign ugt i64 %3, 2
+  %5 = select i1 %1, i1 %4, i1 false
   %6 = or i1 %5, %0
   ret i1 %6
 }

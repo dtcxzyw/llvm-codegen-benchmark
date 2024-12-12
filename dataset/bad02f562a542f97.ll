@@ -1,12 +1,11 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; casadi/optimized/integrator.cpp.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; git/optimized/unpack-trees.ll
 ; linux/optimized/device_pm.ll
 ; linux/optimized/intel_ggtt_fencing.ll
-; linux/optimized/libata-acpi.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/workqueue.ll

@@ -1,13 +1,12 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = lshr i32 %3, 3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -21,7 +20,7 @@ entry:
 define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = lshr i32 %3, 3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -33,7 +32,7 @@ entry:
 define i64 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 2
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -45,7 +44,7 @@ entry:
 define i64 @func000000000000002d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 2
   %5 = zext nneg i32 %4 to i64
   ret i64 %5

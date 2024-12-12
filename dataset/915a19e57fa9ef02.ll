@@ -18,7 +18,7 @@ define double @func0000000000000001(double %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 -536870912, %1
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 
@@ -30,7 +30,7 @@ define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = sub i32 100000, %1
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

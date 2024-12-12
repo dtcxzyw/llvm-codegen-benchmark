@@ -20,6 +20,6 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000010:                   # @func0000000000000010
 	fcvt.d.w	fa5, a1
-	feq.d	a1, fa5, fa0
+	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

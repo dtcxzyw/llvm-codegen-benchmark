@@ -1,15 +1,11 @@
 
-; 31 occurrences:
+; 27 occurrences:
 ; cpython/optimized/bytesobject.ll
-; cpython/optimized/dtoa.ll
 ; cpython/optimized/unicodeobject.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
-; hermes/optimized/dtoa.c.ll
 ; icu/optimized/ucasemap.ll
 ; icu/optimized/ustrcase.ll
-; jq/optimized/jv_dtoa.ll
-; libquic/optimized/dtoa.cc.ll
 ; libquic/optimized/err_test.cc.ll
 ; linux/optimized/mac.ll
 ; luajit/optimized/lj_cparse.ll
@@ -32,7 +28,7 @@
 ; wireshark/optimized/file.c.ll
 ; wireshark/optimized/tshark.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -3
   %4 = icmp eq i32 %3, 0
@@ -46,7 +42,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-evp_rand.ll
 ; openssl/optimized/libcrypto-shlib-evp_rand.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -3
   %4 = icmp eq i32 %3, 0
@@ -59,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/html.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 48
   %4 = icmp ne i32 %3, 16
@@ -90,7 +86,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 268436478
   %4 = icmp eq i32 %3, 268435472
@@ -104,7 +100,7 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp ne i32 %3, 0
@@ -119,11 +115,38 @@ entry:
 ; llvm/optimized/Host.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = icmp ne i32 %3, 3
   %5 = icmp ne i32 %1, 3
+  %6 = select i1 %0, i1 %5, i1 false
+  %7 = select i1 %6, i1 %4, i1 false
+  ret i1 %7
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000198(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 254
+  %4 = icmp samesign ugt i32 %3, 5
+  %5 = icmp ne i32 %1, 0
+  %6 = select i1 %0, i1 %5, i1 false
+  %7 = select i1 %6, i1 %4, i1 false
+  ret i1 %7
+}
+
+; 1 occurrences:
+; icu/optimized/collationdatabuilder.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000298(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 31
+  %4 = icmp samesign ugt i32 %3, 2
+  %5 = icmp samesign ult i32 %1, 29
   %6 = select i1 %0, i1 %5, i1 false
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7
@@ -134,11 +157,11 @@ entry:
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000294(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65520
   %4 = icmp eq i32 %3, 0
-  %5 = icmp ult i32 %1, 8
+  %5 = icmp samesign ult i32 %1, 8
   %6 = select i1 %0, i1 %5, i1 false
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7

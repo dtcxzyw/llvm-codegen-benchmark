@@ -4,7 +4,7 @@
 	.long	768                             # 0x300
 .LCPI0_2:
 	.long	1                               # 0x1
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpltd	.LCPI0_1(%rip){1to4}, %xmm1, %k1
 	vpbroadcastd	.LCPI0_2(%rip), %xmm0 {%k1} # xmm0 {%k1} = [1,1,1,1]

@@ -1,3 +1,14 @@
+func0000000000000065:                   # @func0000000000000065
+	xorl	%eax, %eax
+	cmpl	$2, %edx
+	setge	%al
+	negl	%eax
+	orl	$11, %eax
+	leal	(%rsi,%rax), %ecx
+	leal	-12(%rsi,%rax), %eax
+	testb	$1, %dil
+	cmovel	%ecx, %eax
+	retq
 func000000000000001f:                   # @func000000000000001f
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -23,7 +34,7 @@ func0000000000000080:                   # @func0000000000000080
 	andl	$1, %edi
 	leal	3(%rax,%rdi,4), %eax
 	retq
-func000000000000008f:                   # @func000000000000008f
+func000000000000018f:                   # @func000000000000018f
 	xorl	%eax, %eax
 	cmpl	$3, %edx
 	setae	%al

@@ -1,11 +1,10 @@
 
-; 54 occurrences:
+; 52 occurrences:
 ; bullet3/optimized/b3GpuParallelLinearBvh.ll
 ; cvc5/optimized/string.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
 ; gromacs/optimized/qmmmtopologypreprocessor.cpp.ll
 ; linux/optimized/bus-fixup.ll
-; linux/optimized/dns_key.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
@@ -30,7 +29,6 @@
 ; opencv/optimized/trackerMedianFlow.cpp.ll
 ; opencv/optimized/tracker_goturn.cpp.ll
 ; opencv/optimized/tracking_feature.cpp.ll
-; opencv/optimized/version.cpp.ll
 ; openjdk/optimized/InvocationAdapter.ll
 ; openmpi/optimized/info.ll
 ; openmpi/optimized/mca_base_var.ll
@@ -63,7 +61,7 @@ entry:
   ret i1 %4
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/cmUVJobServerClient.cxx.ll
 ; cmake/optimized/divsufsort.c.ll
@@ -84,6 +82,7 @@ entry:
 ; llvm/optimized/ObjCMT.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; minetest/optimized/CNullDriver.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
 ; openjdk/optimized/hb-set.ll
@@ -103,7 +102,7 @@ entry:
   ret i1 %4
 }
 
-; 98 occurrences:
+; 101 occurrences:
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; git/optimized/fast-export.ll
@@ -118,11 +117,14 @@ entry:
 ; libsodium/optimized/libavx512f_la-argon2-fill-block-avx512f.ll
 ; libsodium/optimized/libsodium_la-argon2-fill-block-ref.ll
 ; libsodium/optimized/libssse3_la-argon2-fill-block-ssse3.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/regmap.ll
 ; llvm/optimized/BreakableToken.cpp.ll
+; llvm/optimized/CGObjC.cpp.ll
+; llvm/optimized/CGObjCGNU.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
+; llvm/optimized/Darwin.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -226,8 +228,7 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
-; freetype/optimized/psaux.c.ll
+; 9 occurrences:
 ; velox/optimized/ArrayContains.cpp.ll
 ; velox/optimized/ArrayPosition.cpp.ll
 ; velox/optimized/BaseVector.cpp.ll
@@ -238,10 +239,10 @@ entry:
 ; velox/optimized/ToUtf8.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, 5
+  %3 = icmp samesign ult i32 %2, 5
   %4 = select i1 %3, i1 true, i1 %0
   ret i1 %4
 }
@@ -259,6 +260,17 @@ define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967264
   %3 = icmp ne i64 %2, 0
+  %4 = select i1 %3, i1 true, i1 %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; freetype/optimized/psaux.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp ult i32 %2, 3
   %4 = select i1 %3, i1 true, i1 %0
   ret i1 %4
 }

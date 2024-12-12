@@ -1,13 +1,13 @@
 func0000000000000001:                   # @func0000000000000001
 	addq	$4095, %rsi                     # imm = 0xFFF
 	andq	$-4096, %rsi                    # imm = 0xF000
-	leaq	-1(%rsi,%rdi), %rax
+	leaq	-1(%rdi,%rsi), %rax
 	retq
 func0000000000000030:                   # @func0000000000000030
 	addq	$127, %rsi
 	movabsq	$68719476608, %rax              # imm = 0xFFFFFFF80
 	andq	%rsi, %rax
-	leaq	128(%rax,%rdi), %rax
+	leaq	128(%rdi,%rax), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	addl	$31, %esi

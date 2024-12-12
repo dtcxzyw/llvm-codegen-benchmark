@@ -1,9 +1,3 @@
-func000000000000007f:                   # @func000000000000007f
-	leal	-1(%rdx), %ecx
-	imulq	%rdi, %rcx
-	movl	%esi, %eax
-	addq	%rcx, %rax
-	retq
 func000000000000003f:                   # @func000000000000003f
 	leal	-1(%rdx), %ecx
 	imulq	%rdi, %rcx

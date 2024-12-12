@@ -1,12 +1,12 @@
 
-%"struct.std::pair.177.2880867" = type { %"class.hermes::vm::GCSymbolID.2880868", %"struct.hermes::vm::NamedPropertyDescriptor.2880863" }
-%"class.hermes::vm::GCSymbolID.2880868" = type { %"class.hermes::vm::SymbolID.2880841" }
-%"class.hermes::vm::SymbolID.2880841" = type { i32 }
-%"struct.hermes::vm::NamedPropertyDescriptor.2880863" = type { %"struct.hermes::vm::PropertyDescriptor.2880864" }
-%"struct.hermes::vm::PropertyDescriptor.2880864" = type { %union.anon.174.2880865, i32 }
-%union.anon.174.2880865 = type { i32 }
-%"class.hermes::vm::detail::DPMHashPair.2880869" = type { %struct.anon.234.2880870 }
-%struct.anon.234.2880870 = type { i32 }
+%"struct.std::pair.177.3075391" = type { %"class.hermes::vm::GCSymbolID.3075392", %"struct.hermes::vm::NamedPropertyDescriptor.3075387" }
+%"class.hermes::vm::GCSymbolID.3075392" = type { %"class.hermes::vm::SymbolID.3075365" }
+%"class.hermes::vm::SymbolID.3075365" = type { i32 }
+%"struct.hermes::vm::NamedPropertyDescriptor.3075387" = type { %"struct.hermes::vm::PropertyDescriptor.3075388" }
+%"struct.hermes::vm::PropertyDescriptor.3075388" = type { %union.anon.174.3075389, i32 }
+%union.anon.174.3075389 = type { i32 }
+%"class.hermes::vm::detail::DPMHashPair.3075393" = type { %struct.anon.234.3075394 }
+%struct.anon.234.3075394 = type { i32 }
 
 ; 17 occurrences:
 ; brotli/optimized/backward_references.c.ll
@@ -27,13 +27,13 @@
 ; llvm/optimized/StmtPrinter.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 28
-  %5 = getelementptr nusw %"struct.std::pair.177.2880867", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 28
+  %5 = getelementptr nusw nuw %"struct.std::pair.177.3075391", ptr %4, i64 %3
   %6 = and i64 %0, 4294967295
-  %7 = getelementptr nusw %"class.hermes::vm::detail::DPMHashPair.2880869", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.hermes::vm::detail::DPMHashPair.3075393", ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -44,13 +44,13 @@ entry:
 ; openusd/optimized/lz4.cpp.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = and i64 %0, 4294967295
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 

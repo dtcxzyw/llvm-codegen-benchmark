@@ -1,5 +1,5 @@
 
-; 170 occurrences:
+; 169 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; folly/optimized/farmhash.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -161,7 +161,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -177,7 +176,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
   %6 = mul i64 %5, -7286425919675154353
-  %7 = xor i64 %6, %0
+  %7 = xor i64 %0, %6
   ret i64 %7
 }
 

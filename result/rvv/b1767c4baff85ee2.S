@@ -26,6 +26,12 @@ func000000000000000f:                   # @func000000000000000f
 	vand.vx	v8, v10, a0
 	vadd.vi	v8, v8, 1
 	ret
+func0000000000000006:                   # @func0000000000000006
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 0
+	vand.vi	v8, v10, -8
+	vadd.vi	v8, v8, -15
+	ret
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0

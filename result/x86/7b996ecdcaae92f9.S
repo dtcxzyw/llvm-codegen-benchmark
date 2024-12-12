@@ -1,4 +1,4 @@
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	addl	$3, %esi
 	andl	$131068, %esi                   # imm = 0x1FFFC
 	addl	$3, %edi
@@ -6,7 +6,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	cmpl	%esi, %edi
 	setb	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	addl	$5, %esi
 	andl	$31, %esi
 	addl	$5, %edi

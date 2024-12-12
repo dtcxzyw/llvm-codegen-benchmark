@@ -33,6 +33,13 @@ func0000000000000051:                   # @func0000000000000051
 	movzbl	%al, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000061:                   # @func0000000000000061
+	testl	%edx, %edx
+	setne	%al
+	andb	%sil, %al
+	movzbl	%al, %eax
+	addl	%edi, %eax
+	retq
 func0000000000000060:                   # @func0000000000000060
 	cmpl	$83886080, %edx                 # imm = 0x5000000
 	setne	%al
@@ -50,20 +57,6 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000008:                   # @func0000000000000008
 	cmpl	$4, %edx
 	sete	%al
-	andb	%sil, %al
-	movzbl	%al, %eax
-	addl	%edi, %eax
-	retq
-func0000000000000061:                   # @func0000000000000061
-	testl	%edx, %edx
-	setne	%al
-	andb	%sil, %al
-	movzbl	%al, %eax
-	addl	%edi, %eax
-	retq
-func0000000000000023:                   # @func0000000000000023
-	cmpl	$-4, %edx
-	setb	%al
 	andb	%sil, %al
 	movzbl	%al, %eax
 	addl	%edi, %eax

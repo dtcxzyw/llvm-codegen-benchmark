@@ -21,9 +21,10 @@ entry:
   ret i8 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; postgres/optimized/utf8_and_gb18030.ll
 ; wireshark/optimized/packet-lldp.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000b(i16 %0) #0 {
 entry:

@@ -1,6 +1,5 @@
 
-; 23 occurrences:
-; clamav/optimized/cabd.c.ll
+; 22 occurrences:
 ; clamav/optimized/rs16.cpp.ll
 ; cmake/optimized/xxhash.c.ll
 ; cmake/optimized/zstd_opt.c.ll
@@ -28,11 +27,11 @@ define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp ugt i32 %3, 15
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 333 occurrences:
+; 331 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -144,8 +143,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -367,7 +364,7 @@ entry:
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, 2
@@ -375,21 +372,20 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/topshake.cpp.ll
 ; libquic/optimized/x_crl.c.ll
 ; libwebp/optimized/alpha_enc.c.ll
-; linux/optimized/extents.ll
 ; linux/optimized/skbuff.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; openssl/optimized/libcrypto-lib-x_crl.ll
 ; openssl/optimized/libcrypto-shlib-x_crl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f0(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = icmp ugt i32 %3, 1
-  %5 = or i1 %4, %0
+  %4 = icmp samesign ugt i32 %3, 1
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -422,11 +418,11 @@ entry:
 ; qemu/optimized/tcg-op.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000062(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c2(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp eq i32 %3, 32
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -457,11 +453,12 @@ define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp eq i32 %3, -1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 91 occurrences:
+; 92 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -557,7 +554,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -588,11 +585,11 @@ entry:
 ; velox/optimized/Sequence.cpp.ll
 ; verilator/optimized/V3SplitVar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp eq i32 %3, 2
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -616,7 +613,7 @@ entry:
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_special_relations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000054(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 6
@@ -655,15 +652,38 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; clamav/optimized/cabd.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = icmp samesign ugt i32 %3, 65535
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000d8(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp ne i32 %3, 1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; gromacs/optimized/gmx_xpm2ps.cpp.ll
+; llvm/optimized/RISCVMatInt.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e8(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = icmp samesign ult i32 %3, 53
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -671,35 +691,23 @@ entry:
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp ult i32 %3, 8
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
-; eastl/optimized/EAString.cpp.ll
+; 3 occurrences:
 ; linux/optimized/fib_trie.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; openspiel/optimized/connect_four.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp ugt i32 %3, 31
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; gromacs/optimized/gmx_xpm2ps.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000068(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = icmp ult i32 %3, 5
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -708,11 +716,33 @@ entry:
 ; cmake/optimized/frm_driver.c.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/extents.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d0(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = icmp ugt i32 %3, 32768
   %5 = or i1 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; eastl/optimized/EAString.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000070(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = icmp samesign ugt i32 %3, 5
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

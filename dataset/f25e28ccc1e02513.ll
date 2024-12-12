@@ -1,10 +1,9 @@
 
-; 174 occurrences:
+; 173 occurrences:
 ; clamav/optimized/Bra.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cpython/optimized/_datetimemodule.ll
-; cpython/optimized/datetime.ll
 ; cpython/optimized/floatobject.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -42,8 +41,6 @@
 ; icu/optimized/ucnv2022.ll
 ; icu/optimized/ucnvmbcs.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
-; jq/optimized/utf32_be.ll
-; jq/optimized/utf32_le.ll
 ; libjpeg-turbo/optimized/rdgif.c.ll
 ; libphonenumber/optimized/rune.c.ll
 ; libquic/optimized/blowfish.c.ll
@@ -64,6 +61,8 @@
 ; linux/optimized/synaptics.ll
 ; llvm/optimized/UnicodeNameToCodepoint.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -89,8 +88,6 @@
 ; mold/optimized/input-files.cc.PPC32.cc.ll
 ; mold/optimized/input-files.cc.RV32BE.cc.ll
 ; nuklear/optimized/unity.c.ll
-; oniguruma/optimized/utf32_be.ll
-; oniguruma/optimized/utf32_le.ll
 ; openjdk/optimized/ByteIndexed.ll
 ; openjdk/optimized/FourByteAbgr.ll
 ; openjdk/optimized/FourByteAbgrPre.ll
@@ -174,6 +171,8 @@
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007b(i8 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -205,7 +204,7 @@ entry:
   ret i32 %7
 }
 
-; 37 occurrences:
+; 45 occurrences:
 ; clap-rs/optimized/4r6y4qxwk52m92uh.ll
 ; coreutils-rs/optimized/1487bf2zeluccyme.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -243,6 +242,14 @@ entry:
 ; wireshark/optimized/packet-mpls.c.ll
 ; wireshark/optimized/packet-netflow.c.ll
 ; wireshark/optimized/packet-pcep.c.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007f(i8 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -254,7 +261,7 @@ entry:
   ret i32 %7
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; clamav/optimized/cabd.c.ll
 ; clamav/optimized/chmd.c.ll
 ; clamav/optimized/oabd.c.ll
@@ -268,7 +275,6 @@ entry:
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; icu/optimized/csrmbcs.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libwebp/optimized/dec_sse2.c.ll

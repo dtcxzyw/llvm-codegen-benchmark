@@ -6,7 +6,7 @@
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = add nsw i32 %2, 1
@@ -15,10 +15,12 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; libjpeg-turbo/optimized/jdlhuff.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = add nsw i32 %2, 1
@@ -30,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = add nuw nsw i32 %2, 1

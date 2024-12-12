@@ -22,3 +22,11 @@ func0000000000000008:                   # @func0000000000000008
 	shll	$5, %eax
 	orl	%edi, %eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	movzwl	%si, %ecx
+	xorl	%eax, %eax
+	cmpl	$256, %ecx                      # imm = 0x100
+	setae	%al
+	shll	$8, %eax
+	orl	%edi, %eax
+	retq

@@ -9,7 +9,7 @@
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
   %3 = zext nneg i8 %2 to i32
@@ -28,7 +28,7 @@ entry:
 ; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
   %3 = zext nneg i8 %2 to i32
@@ -42,7 +42,7 @@ entry:
 ; php/optimized/zend_execute_API.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
   %3 = zext nneg i8 %2 to i32
@@ -55,12 +55,12 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000ec(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -113
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = icmp ne i32 %5, 0
   ret i1 %6
 }
@@ -71,7 +71,7 @@ entry:
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
   %3 = zext nneg i8 %2 to i32

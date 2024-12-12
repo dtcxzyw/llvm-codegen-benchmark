@@ -12,7 +12,7 @@ entry:
   ret i1 %3
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/giaExist.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
@@ -33,6 +33,7 @@ entry:
 ; php/optimized/pcre2_compile.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wireshark/optimized/pcapng.c.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
 ; zstd/optimized/fastcover.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
@@ -71,7 +72,7 @@ entry:
 ; wireshark/optimized/proto.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -127
   %3 = icmp ult i32 %2, -95
@@ -79,13 +80,14 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; icu/optimized/ucnvscsu.ll
 ; openmpi/optimized/nbc_ibcast.ll
 ; openmpi/optimized/nbc_ireduce.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %not. = xor i1 %0, true
@@ -98,7 +100,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %not. = xor i1 %0, true

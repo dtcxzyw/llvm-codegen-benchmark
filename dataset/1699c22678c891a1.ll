@@ -241,23 +241,26 @@
 define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
-  %3 = icmp ugt i8 %2, %0
+  %3 = icmp ult i8 %0, %2
   ret i1 %3
 }
 
-; 3 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; linux/optimized/vht.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 1
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp eq i8 %0, %2
   ret i1 %3
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; icu/optimized/ubidi.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/maple_tree.ll
@@ -266,39 +269,20 @@ entry:
 ; llvm/optimized/Interp.cpp.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
-  %3 = icmp ult i8 %2, %0
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 
-; 2 occurrences:
-; openjdk/optimized/jvmtiRedefineClasses.ll
-; php/optimized/zend_jit.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
-entry:
-  %2 = add nsw i8 %1, 5
-  %3 = icmp eq i8 %2, %0
-  ret i1 %3
-}
-
-; 2 occurrences:
-; opencc/optimized/PhraseExtract.cpp.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i8 %0, i8 %1) #0 {
-entry:
-  %2 = add nuw i8 %1, 1
-  %3 = icmp ult i8 %2, %0
-  ret i1 %3
-}
-
-; 15 occurrences:
+; 16 occurrences:
 ; coreutils-rs/optimized/45371cbry3cnr73y.ll
 ; hyperscan/optimized/mcsheng.c.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; linux/optimized/hid-core.ll
 ; opencv/optimized/facemarkAAM.cpp.ll
@@ -315,8 +299,30 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
-  %2 = add i8 %1, 1
-  %3 = icmp eq i8 %2, %0
+  %2 = add i8 %1, 2
+  %3 = icmp eq i8 %0, %2
+  ret i1 %3
+}
+
+; 2 occurrences:
+; openjdk/optimized/jvmtiRedefineClasses.ll
+; php/optimized/zend_jit.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
+entry:
+  %2 = add nsw i8 %1, 5
+  %3 = icmp eq i8 %0, %2
+  ret i1 %3
+}
+
+; 2 occurrences:
+; opencc/optimized/PhraseExtract.cpp.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i8 %0, i8 %1) #0 {
+entry:
+  %2 = add nuw i8 %1, 1
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 
@@ -328,27 +334,28 @@ entry:
 define i1 @func000000000000000a(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
-  %3 = icmp slt i8 %2, %0
+  %3 = icmp sgt i8 %0, %2
   ret i1 %3
 }
 
-; 1 occurrences:
-; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; 2 occurrences:
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000064(i8 %0, i8 %1) #0 {
 entry:
-  %2 = add nuw nsw i8 %1, 1
-  %3 = icmp ult i8 %2, %0
+  %2 = add nuw nsw i8 %1, 2
+  %3 = icmp ult i8 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; linux/optimized/maple_tree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000028(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -1
-  %3 = icmp ult i8 %2, %0
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 

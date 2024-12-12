@@ -4,12 +4,12 @@
 ; opencv/optimized/stereosgbm.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %0, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp ugt i32 %4, 2
+  %5 = icmp samesign ugt i32 %4, 2
   ret i1 %5
 }
 

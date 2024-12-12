@@ -9,6 +9,7 @@ func000000000000000b:                   # @func000000000000000b
 	subb	%dil, %al
 	retq
 func0000000000000000:                   # @func0000000000000000
-	leal	(%rdi,%rsi), %eax
-	negb	%al
+	addl	%esi, %edi
+	movb	$14, %al
+	subb	%dil, %al
 	retq

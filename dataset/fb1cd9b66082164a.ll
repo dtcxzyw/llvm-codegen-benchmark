@@ -1,9 +1,11 @@
 
-; 137 occurrences:
+; 139 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/giaSweeper.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/loss_function.cc.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; cpython/optimized/textio.ll

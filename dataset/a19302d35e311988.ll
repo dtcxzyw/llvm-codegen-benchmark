@@ -43,7 +43,7 @@ entry:
   ret i32 %4
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; linux/optimized/af_packet.ll
 ; linux/optimized/dir.ll
 ; linux/optimized/e1000_main.ll
@@ -54,13 +54,11 @@ entry:
 ; linux/optimized/gre_offload.ll
 ; linux/optimized/icmp.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/ip6_checksum.ll
 ; linux/optimized/ip6_input.ll
 ; linux/optimized/ip6_tables.ll
 ; linux/optimized/ip_fragment.ll
 ; linux/optimized/ip_tables.ll
 ; linux/optimized/ip_tunnel.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nf_reject_ipv4.ll
 ; linux/optimized/nf_reject_ipv6.ll
@@ -79,6 +77,7 @@ entry:
 ; linux/optimized/udp.ll
 ; linux/optimized/udp_offload.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; postgres/optimized/auth.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
@@ -113,8 +112,9 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; brotli/optimized/decode.c.ll
+; lvgl/optimized/lv_label.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i16 %0, i64 %1) #0 {
@@ -207,17 +207,6 @@ entry:
   %2 = zext nneg i16 %1 to i32
   %3 = trunc i64 %0 to i32
   %4 = add i32 %3, %2
-  ret i32 %4
-}
-
-; 1 occurrences:
-; linux/optimized/gso.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i16 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nsw i64 %1 to i32
-  %3 = zext nneg i16 %0 to i32
-  %4 = add nsw i32 %3, %2
   ret i32 %4
 }
 

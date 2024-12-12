@@ -18,3 +18,8 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	movl	%edx, %eax
+	addq	%rsi, %rax
+	orq	%rdi, %rax
+	retq

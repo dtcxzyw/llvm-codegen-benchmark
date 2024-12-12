@@ -36,18 +36,19 @@
 define i64 @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %5, %4
   ret i64 %6
 }
 
-; 97 occurrences:
+; 98 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; linux/optimized/md-autodetect.ll
 ; lz4/optimized/lz4hc.c.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/barrierSetStackChunk.ll
@@ -144,7 +145,7 @@ entry:
 define i64 @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %5, %4
   ret i64 %6

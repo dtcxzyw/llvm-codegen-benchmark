@@ -1,6 +1,9 @@
 
-; 36 occurrences:
+; 39 occurrences:
 ; abc/optimized/darLib.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; c3c/optimized/sema_casts.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_crop.c.ll

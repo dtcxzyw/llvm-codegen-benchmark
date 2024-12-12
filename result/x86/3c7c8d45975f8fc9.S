@@ -37,6 +37,11 @@ func000000000000003f:                   # @func000000000000003f
 	shll	$5, %eax
 	subl	%esi, %eax
 	retq
+func000000000000003e:                   # @func000000000000003e
+	imull	%edx, %esi
+	addl	%edi, %esi
+	imull	$32897, %esi, %eax              # imm = 0x8081
+	retq
 func0000000000000014:                   # @func0000000000000014
 	imull	%edx, %esi
 	addl	%edi, %esi

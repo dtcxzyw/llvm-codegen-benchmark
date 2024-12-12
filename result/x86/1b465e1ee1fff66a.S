@@ -1,24 +1,24 @@
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	movzwl	%dx, %eax
 	addl	%esi, %edi
 	addl	%eax, %edi
 	cmpl	$6099, %edi                     # imm = 0x17D3
 	setb	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	movzwl	%dx, %eax
 	addl	%esi, %edi
 	addl	%eax, %edi
 	cmpl	$10000, %edi                    # imm = 0x2710
 	setae	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	movzwl	%dx, %eax
 	addl	%esi, %edi
 	orl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	movzwl	%dx, %eax
 	addl	%edi, %eax
 	addl	%esi, %eax

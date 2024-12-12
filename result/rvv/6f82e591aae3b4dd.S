@@ -7,7 +7,7 @@ func0000000000000001:                   # @func0000000000000001
 	vfdiv.vf	v12, v12, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v10, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 .LCPI1_0:
 	.quad	0x40e1d58800000000              # double 36524.25
@@ -18,5 +18,5 @@ func0000000000000000:                   # @func0000000000000000
 	vfdiv.vf	v12, v12, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v10, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

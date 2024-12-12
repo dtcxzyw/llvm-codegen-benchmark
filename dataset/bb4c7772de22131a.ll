@@ -48,7 +48,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 536870911
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

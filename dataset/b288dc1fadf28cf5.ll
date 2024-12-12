@@ -1,4 +1,8 @@
 
+%"class.boost::wave::util::flex_string.2978838" = type { %"class.boost::wave::util::CowString.2978839" }
+%"class.boost::wave::util::CowString.2978839" = type { %union.anon.2978840 }
+%union.anon.2978840 = type { ptr }
+
 ; 7 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
@@ -8,16 +12,16 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; rocksdb/optimized/block_prefix_index.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 149 occurrences:
+; 150 occurrences:
 ; clamav/optimized/pe.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -165,114 +169,27 @@ entry:
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; lvgl/optimized/lv_scale.ll
 ; openjdk/optimized/cmspack.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 76 occurrences:
-; abc/optimized/giaJf.c.ll
-; abc/optimized/giaMf.c.ll
-; abc/optimized/giaNf.c.ll
-; abc/optimized/giaOf.c.ll
-; abc/optimized/giaPf.c.ll
-; abc/optimized/giaSatLE.c.ll
-; abc/optimized/satSolver.c.ll
-; abc/optimized/satSolver2.c.ll
-; abc/optimized/satSolver3.c.ll
-; assimp/optimized/Assimp.cpp.ll
-; clamav/optimized/infblock.c.ll
-; cmake/optimized/lz_encoder_mf.c.ll
-; darktable/optimized/NikonDecompressor.cpp.ll
-; darktable/optimized/introspection_cacorrect.c.ll
-; freetype/optimized/sfnt.c.ll
-; hdf5/optimized/H5B2int.c.ll
-; hermes/optimized/SegmentedArray.cpp.ll
-; icu/optimized/collationfastlatin.ll
-; icu/optimized/genrb.ll
-; icu/optimized/uresdata.ll
-; libpng/optimized/pngread.c.ll
-; libpng/optimized/pngrtran.c.ll
-; llvm/optimized/ELF.cpp.ll
-; llvm/optimized/ELFObjectFile.cpp.ll
-; llvm/optimized/ExprConstant.cpp.ll
-; llvm/optimized/GSIStreamBuilder.cpp.ll
-; luajit/optimized/lj_crecord.ll
-; luajit/optimized/lj_crecord_dyn.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
-; lz4/optimized/lz4.c.ll
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/edit_point.cpp.ll
-; meshlab/optimized/filter_sampling.cpp.ll
-; meshlab/optimized/filter_voronoi.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/meshselect.cpp.ll
-; meshlab/optimized/mlsplugin.cpp.ll
-; mixbox/optimized/mixbox.ll
-; nori/optimized/nanovg.c.ll
-; openblas/optimized/dpttrf.c.ll
-; opencv/optimized/arithm.cpp.ll
-; opencv/optimized/bgfg_KNN.cpp.ll
-; opencv/optimized/bgfg_gaussmix2.cpp.ll
-; opencv/optimized/bilateral_texture_filter.cpp.ll
-; opencv/optimized/calibrate.cpp.ll
-; opencv/optimized/chessboard.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
-; opencv/optimized/edgepreserving_filter.cpp.ll
-; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
-; opencv/optimized/imgwarp.cpp.ll
-; opencv/optimized/l0_smooth.cpp.ll
-; opencv/optimized/lkpyramid.cpp.ll
-; opencv/optimized/mat_mask_operations.cpp.ll
-; opencv/optimized/mean.dispatch.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
-; opencv/optimized/npr.cpp.ll
-; opencv/optimized/pyramids.cpp.ll
-; opencv/optimized/rand.cpp.ll
-; opencv/optimized/rlof_localflow.cpp.ll
-; opencv/optimized/samplers.cpp.ll
-; opencv/optimized/split.dispatch.cpp.ll
-; opencv/optimized/trackerCSRT.cpp.ll
-; opencv/optimized/ts_func.cpp.ll
-; openjdk/optimized/pngread.ll
-; openjdk/optimized/pngrtran.ll
-; openusd/optimized/lz4.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rcore.c.ll
-; raylib/optimized/rmodels.c.ll
-; raylib/optimized/rtextures.c.ll
-; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 2
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 2
-  ret ptr %5
-}
-
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/LoopIdiomVectorize.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/RewriteObjCFoundationAPI.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; openjdk/optimized/c1_LIR.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483646
   %3 = zext nneg i32 %2 to i64
@@ -296,8 +213,94 @@ entry:
   ret ptr %5
 }
 
-; 35 occurrences:
-; cpython/optimized/ceval.ll
+; 61 occurrences:
+; abc/optimized/giaJf.c.ll
+; abc/optimized/giaMf.c.ll
+; assimp/optimized/Assimp.cpp.ll
+; clamav/optimized/infblock.c.ll
+; cmake/optimized/lz_encoder_mf.c.ll
+; darktable/optimized/NikonDecompressor.cpp.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; freetype/optimized/sfnt.c.ll
+; hermes/optimized/SegmentedArray.cpp.ll
+; icu/optimized/collationfastlatin.ll
+; icu/optimized/genrb.ll
+; icu/optimized/uresdata.ll
+; llvm/optimized/ELF.cpp.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
+; llvm/optimized/GSIStreamBuilder.cpp.ll
+; luajit/optimized/lj_crecord.ll
+; luajit/optimized/lj_crecord_dyn.ll
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; lz4/optimized/lz4.c.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/edit_point.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/meshselect.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
+; mixbox/optimized/mixbox.ll
+; nori/optimized/nanovg.c.ll
+; opencv/optimized/arithm.cpp.ll
+; opencv/optimized/bgfg_KNN.cpp.ll
+; opencv/optimized/bgfg_gaussmix2.cpp.ll
+; opencv/optimized/bilateral_texture_filter.cpp.ll
+; opencv/optimized/calibrate.cpp.ll
+; opencv/optimized/demosaicing.cpp.ll
+; opencv/optimized/edgepreserving_filter.cpp.ll
+; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; opencv/optimized/l0_smooth.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/mat_mask_operations.cpp.ll
+; opencv/optimized/mean.dispatch.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; opencv/optimized/npr.cpp.ll
+; opencv/optimized/pyramids.cpp.ll
+; opencv/optimized/rand.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; opencv/optimized/samplers.cpp.ll
+; opencv/optimized/split.dispatch.cpp.ll
+; opencv/optimized/trackerCSRT.cpp.ll
+; opencv/optimized/ts_func.cpp.ll
+; openusd/optimized/lz4.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; raylib/optimized/rcore.c.ll
+; raylib/optimized/rmodels.c.ll
+; raylib/optimized/rtextures.c.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 31
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 257
+  ret ptr %5
+}
+
+; 4 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; hyperscan/optimized/goughcompile.cpp.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, -2147221505
+  %3 = add i32 %2, -256
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr nusw nuw %"class.boost::wave::util::flex_string.2978838", ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 30 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; entt/optimized/benchmark.cpp.ll
 ; entt/optimized/custom_identifier.cpp.ll
@@ -322,14 +325,10 @@ entry:
 ; linux/optimized/raw.ll
 ; linux/optimized/sha512_generic.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
-; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
-; postgres/optimized/bitmapset.ll
 ; postgres/optimized/gindatapage.ll
-; postgres/optimized/tsquery.ll
-; postgres/optimized/tsquery_cleanup.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; Function Attrs: nounwind
@@ -343,27 +342,26 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/joliet.ll
+; linux/optimized/cistpl.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 255
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -2
+  %2 = and i32 %1, 3
+  %3 = add nsw i32 %2, -1
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 2 occurrences:
-; hyperscan/optimized/goughcompile.cpp.ll
-; hyperscan/optimized/limex_compile.cpp.ll
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, -4
-  %3 = add i32 %2, 16
-  %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %2 = and i32 %1, 65534
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 2
   ret ptr %5
 }
 

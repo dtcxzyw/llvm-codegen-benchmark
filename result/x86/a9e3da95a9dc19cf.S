@@ -1,9 +1,9 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	shrb	$6, %sil
 	movzbl	%sil, %eax
 	leaq	8(%rdi,%rax,8), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	shrb	$4, %sil
 	movzbl	%sil, %eax
 	leaq	(%rax,%rax,4), %rax

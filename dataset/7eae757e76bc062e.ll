@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; icu/optimized/double-conversion-strtod.ll
 ; openusd/optimized/strtod.cc.ll

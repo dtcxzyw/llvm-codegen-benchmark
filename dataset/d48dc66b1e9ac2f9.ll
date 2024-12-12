@@ -7,7 +7,7 @@ entry:
   %3 = fcmp olt float %2, 0.000000e+00
   %not. = xor i1 %1, true
   %4 = select i1 %not., i1 %3, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = fcmp uge float %2, 2.560000e+02
   %not. = xor i1 %1, true
   %4 = select i1 %not., i1 %3, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -55,7 +55,7 @@ define i1 @func0000000000000014(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ole float %2, 0.000000e+00
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

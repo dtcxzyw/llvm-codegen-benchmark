@@ -4,7 +4,7 @@ func0000000000000018:                   # @func0000000000000018
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	addl	%edx, %esi
 	imull	$-1030792151, %esi, %eax        # imm = 0xC28F5C29
 	addl	$85899344, %eax                 # imm = 0x51EB850
@@ -13,7 +13,7 @@ func0000000000000022:                   # @func0000000000000022
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	addl	%edx, %esi
 	imull	$-1030792151, %esi, %eax        # imm = 0xC28F5C29
 	addl	$85899344, %eax                 # imm = 0x51EB850

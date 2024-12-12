@@ -27,3 +27,13 @@ func0000000000000007:                   # @func0000000000000007
 	cmovel	%ecx, %eax
 	orl	$8, %eax
 	retq
+func0000000000000053:                   # @func0000000000000053
+	xorl	%ecx, %ecx
+	shrq	$32, %rsi
+	sete	%cl
+	shll	$5, %ecx
+	leal	16(%rcx), %eax
+	testb	$1, %dil
+	cmovel	%ecx, %eax
+	orl	$8, %eax
+	retq

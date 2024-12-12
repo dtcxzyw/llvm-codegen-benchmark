@@ -10,7 +10,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = and i64 %1, 33292288
   %5 = or disjoint i64 %4, %3
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

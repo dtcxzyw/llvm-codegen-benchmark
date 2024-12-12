@@ -140,17 +140,18 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libwebp/optimized/vp8l_dec.c.ll
+; lvgl/optimized/lv_text.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-items.ll
@@ -163,7 +164,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2097151
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -189,7 +190,7 @@ define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2097151
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
@@ -210,7 +211,7 @@ define i64 @func000000000000001d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2097151
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -226,7 +227,7 @@ define i64 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2097151
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -239,7 +240,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -16
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -253,7 +254,7 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32767
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -266,7 +267,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -16384
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -278,7 +279,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2147483648
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }

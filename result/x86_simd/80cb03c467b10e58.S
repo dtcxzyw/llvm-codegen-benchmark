@@ -7,14 +7,14 @@ func0000000000000004:                   # @func0000000000000004
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2   # ymm2 = [14,14,14,14]
 	vpcmpeqq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$63, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000030:                   # @func0000000000000030
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendw	$17, %ymm1, %ymm2, %ymm1        # ymm1 = ymm1[0],ymm2[1,2,3],ymm1[4],ymm2[5,6,7],ymm1[8],ymm2[9,10,11],ymm1[12],ymm2[13,14,15]
 	vpcmpgtq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$63, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.quad	120                             # 0x78

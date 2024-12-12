@@ -61,3 +61,25 @@ func000000000000000f:                   # @func000000000000000f
 	vpbroadcastq	.LCPI5_2(%rip), %ymm1   # ymm1 = [4294967296,4294967296,4294967296,4294967296]
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
+.LCPI6_0:
+	.quad	15                              # 0xf
+.LCPI6_1:
+	.quad	-16                             # 0xfffffffffffffff0
+func0000000000000009:                   # @func0000000000000009
+	vpaddq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
+	vpandq	.LCPI6_1(%rip){1to4}, %ymm0, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpsubq	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI7_0:
+	.quad	1024                            # 0x400
+.LCPI7_1:
+	.quad	8191                            # 0x1fff
+.LCPI7_2:
+	.quad	8192                            # 0x2000
+func000000000000000b:                   # @func000000000000000b
+	vpaddq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
+	vpandq	.LCPI7_1(%rip){1to4}, %ymm0, %ymm0
+	vpbroadcastq	.LCPI7_2(%rip), %ymm1   # ymm1 = [8192,8192,8192,8192]
+	vpsubq	%ymm0, %ymm1, %ymm0
+	retq

@@ -10,7 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [1,1,1,1]

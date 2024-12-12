@@ -1,8 +1,6 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; postgres/optimized/dt_common.ll
 ; protobuf/optimized/unparser.cc.ll
 ; qemu/optimized/util_cutils.c.ll

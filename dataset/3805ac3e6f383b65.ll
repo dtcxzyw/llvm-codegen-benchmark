@@ -23,7 +23,60 @@ entry:
   ret i32 %4
 }
 
-; 36 occurrences:
+; 2 occurrences:
+; llvm/optimized/InstrProfReader.cpp.ll
+; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000026(i32 %0, i64 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, 2
+  %3 = icmp slt i64 %1, 1
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; bdwgc/optimized/gc.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i64 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, 32
+  %3 = icmp ugt i64 %1, 2048
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 7 occurrences:
+; abc/optimized/giaSupps.c.ll
+; abc/optimized/rsbDec6.c.ll
+; linux/optimized/eventfd.ll
+; miniaudio/optimized/unity.c.ll
+; openjdk/optimized/countbitsnode.ll
+; qemu/optimized/io_channel-websock.c.ll
+; spike/optimized/spike.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, 4
+  %3 = icmp ult i64 %1, 8192
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 3 occurrences:
+; abc/optimized/luckyFast16.c.ll
+; opencv/optimized/fast_line_detector.cpp.ll
+; sentencepiece/optimized/int128.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000038(i32 %0, i64 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, 16
+  %3 = icmp samesign ugt i64 %1, 65535
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 35 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -52,7 +105,6 @@ entry:
 ; linux/optimized/tg3.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
 ; spike/optimized/mmu.ll
@@ -61,53 +113,23 @@ entry:
 ; tev/optimized/PfmImageLoader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
-  %2 = or disjoint i32 %0, 4
+  %2 = or disjoint i32 %0, 16
   %3 = icmp eq i64 %1, 0
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/InstrProfReader.cpp.ll
-; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
+; 3 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; linux/optimized/swiotlb.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
-  %2 = or disjoint i32 %0, 2
-  %3 = icmp slt i64 %1, 1
-  %4 = select i1 %3, i32 %2, i32 %0
-  ret i32 %4
-}
-
-; 4 occurrences:
-; abc/optimized/luckyFast16.c.ll
-; bdwgc/optimized/gc.c.ll
-; opencv/optimized/fast_line_detector.cpp.ll
-; sentencepiece/optimized/int128.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
-entry:
-  %2 = or disjoint i32 %0, 32
-  %3 = icmp ugt i64 %1, 2048
-  %4 = select i1 %3, i32 %2, i32 %0
-  ret i32 %4
-}
-
-; 7 occurrences:
-; abc/optimized/giaSupps.c.ll
-; abc/optimized/rsbDec6.c.ll
-; linux/optimized/eventfd.ll
-; miniaudio/optimized/unity.c.ll
-; openjdk/optimized/countbitsnode.ll
-; qemu/optimized/io_channel-websock.c.ll
-; spike/optimized/spike.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
-entry:
-  %2 = or disjoint i32 %0, 4
-  %3 = icmp ult i64 %1, 8192
+  %2 = or i32 %0, 524288
+  %3 = icmp ugt i64 %1, 11
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
@@ -124,18 +146,6 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; linux/optimized/swiotlb.ll
-; opencv/optimized/fast_line_detector.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
-entry:
-  %2 = or i32 %0, 4095
-  %3 = icmp ugt i64 %1, 4095
-  %4 = select i1 %3, i32 %2, i32 %0
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; linux/optimized/tg3.ll
 ; Function Attrs: nounwind
@@ -145,6 +155,17 @@ entry:
   %.not = icmp eq i64 %1, 0
   %3 = select i1 %.not, i32 %0, i32 %2
   ret i32 %3
+}
+
+; 1 occurrences:
+; opencv/optimized/fast_line_detector.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
+entry:
+  %2 = or i32 %0, -8
+  %3 = icmp samesign ugt i64 %1, 4
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

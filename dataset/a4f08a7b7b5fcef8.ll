@@ -1,6 +1,8 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000050(i64 %0, i1 %1, i32 %2) #0 {

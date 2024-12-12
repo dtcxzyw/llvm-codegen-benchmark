@@ -1,5 +1,5 @@
 
-; 310 occurrences:
+; 306 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/abcQuant.c.ll
@@ -44,15 +44,11 @@
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/imap-send.ll
 ; gromacs/optimized/atomdata.cpp.ll
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/dlaswp.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/params.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
-; gromacs/optimized/slaswp.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/csrucode.ll
 ; icu/optimized/ucnvsel.ll
@@ -78,6 +74,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; lua/optimized/lcode.ll
+; lvgl/optimized/lv_theme_default.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -165,7 +162,6 @@
 ; openssl/optimized/libcrypto-lib-bf_readbuff.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-lib-bn_mont.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-lib-srp_lib.ll
@@ -173,7 +169,6 @@
 ; openssl/optimized/libcrypto-shlib-bf_readbuff.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_mont.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-srp_lib.ll
@@ -197,7 +192,6 @@
 ; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
-; re2/optimized/bitmap256.cc.ll
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; redis/optimized/geo.ll
@@ -307,6 +301,8 @@
 ; wireshark/optimized/wtap.c.ll
 ; yosys/optimized/fmt.ll
 ; yosys/optimized/rtlil.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; zxing/optimized/MCReader.cpp.ll

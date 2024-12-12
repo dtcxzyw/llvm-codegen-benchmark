@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; hwloc/optimized/hwloc-annotate.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; llvm/optimized/InterleavedLoadCombinePass.cpp.ll
@@ -7,6 +7,7 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; openspiel/optimized/oware.cc.ll
 ; qemu/optimized/migration_multifd-zlib.c.ll
 ; Function Attrs: nounwind
@@ -37,7 +38,7 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000010a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul i32 %0, %1
@@ -45,11 +46,13 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul i32 %0, %1
@@ -66,7 +69,7 @@ entry:
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul nuw i32 %0, %1
@@ -107,7 +110,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul nuw nsw i32 %0, %1
@@ -132,7 +135,7 @@ entry:
 ; verilator/optimized/V3EmitCHeaders.cpp.ll
 ; yosys/optimized/smt2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul nsw i32 %0, %1
@@ -147,7 +150,7 @@ entry:
 ; darktable/optimized/introspection_highlights.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul nsw i32 %0, %1
@@ -155,17 +158,13 @@ entry:
   ret i1 %5
 }
 
-; 21 occurrences:
+; 17 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; libwebp/optimized/rescaler.c.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; openblas/optimized/lapacke_c_nancheck.c.ll
-; openblas/optimized/lapacke_d_nancheck.c.ll
-; openblas/optimized/lapacke_s_nancheck.c.ll
-; openblas/optimized/lapacke_z_nancheck.c.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/grfmt_bmp.cpp.ll
@@ -178,7 +177,7 @@ entry:
 ; yosys/optimized/blif.ll
 ; yosys/optimized/satgen.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul nsw i32 %0, %1
@@ -189,7 +188,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000128(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul nsw i32 %0, %1
@@ -226,8 +225,9 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
+; abc/optimized/giaPat2.c.ll
 ; gromacs/optimized/gmxcalculatorcpu.cpp.ll
 ; gromacs/optimized/toppush.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
@@ -242,7 +242,7 @@ entry:
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/transientareassegmentationmodule.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul nsw i32 %0, %1
@@ -259,7 +259,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul nuw nsw i32 %0, %1
@@ -271,7 +271,7 @@ entry:
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = mul nsw i32 %0, %1
@@ -283,7 +283,7 @@ entry:
 ; gromacs/optimized/dscal.cpp.ll
 ; gromacs/optimized/sscal.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ba(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000016a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul nuw nsw i32 %0, %1
@@ -295,7 +295,7 @@ entry:
 ; gromacs/optimized/dasum.cpp.ll
 ; gromacs/optimized/sasum.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b6(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000166(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul nuw nsw i32 %0, %1
@@ -317,7 +317,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/netpatterns_knomial_tree.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = mul nsw i32 %0, %1
@@ -328,7 +328,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = mul i32 %0, %1
@@ -345,7 +345,7 @@ entry:
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000012a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul nsw i32 %0, %1
@@ -356,7 +356,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000126(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul nsw i32 %0, %1
@@ -369,7 +369,7 @@ entry:
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul nuw nsw i32 %0, %1
@@ -377,11 +377,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openblas/optimized/cblas_drotm.c.ll
-; openblas/optimized/drotm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul nuw nsw i32 %0, %1

@@ -1,12 +1,11 @@
 
-; 2 occurrences:
-; libwebp/optimized/predictor_enc.c.ll
+; 1 occurrences:
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -21,7 +20,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 2147483647
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

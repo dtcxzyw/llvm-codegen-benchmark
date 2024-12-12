@@ -1,5 +1,5 @@
 
-; 370 occurrences:
+; 407 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/nwkTiming.c.ll
@@ -39,6 +39,15 @@
 ; assimp/optimized/UnrealLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/within.ll
 ; box2d/optimized/b2_collision.cpp.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
@@ -98,7 +107,6 @@
 ; faiss/optimized/index_factory.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; graphviz/optimized/neatoinit.c.ll
-; gromacs/optimized/3dtransforms.cpp.ll
 ; gromacs/optimized/angle.cpp.ll
 ; gromacs/optimized/constraintelement.cpp.ll
 ; gromacs/optimized/eigio.cpp.ll
@@ -139,6 +147,7 @@
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64PBQPRegAlloc.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/decorate_background.cpp.ll
@@ -172,7 +181,6 @@
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/client.cpp.ll
-; minetest/optimized/clientdynamicinfo.cpp.ll
 ; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/collision.cpp.ll
@@ -368,6 +376,35 @@
 ; yoga/optimized/YGNodeStyle.cpp.ll
 ; z3/optimized/cost_evaluator.cpp.ll
 ; z3/optimized/dl_mk_simple_joins.cpp.ll
+; zed-rs/optimized/00laj72jeyttgatxd0myrfigl.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/10zh1v68f2nhlerzsork25it5.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4pyl8821jbmubnjyx7hxe0q2i.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
+; zed-rs/optimized/8r4rexl2hxk4mf5ojed4sh4ix.ll
+; zed-rs/optimized/9awmqr28bdho83r0fgrej0t00.ll
+; zed-rs/optimized/9m8v6uy2305b0acd84bvd598m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a5zoltfqgma86dzb1rp0ilkm9.ll
+; zed-rs/optimized/b3fsiuvawj3jj0fngz22afvrc.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; zxing/optimized/WhiteRectDetector.cpp.ll
 ; Function Attrs: nounwind

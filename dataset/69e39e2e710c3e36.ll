@@ -38,10 +38,10 @@
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add nsw i64 %0, 1
   %6 = icmp slt i64 %5, %4
   ret i1 %6
@@ -87,7 +87,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add i64 %0, 1
   %6 = icmp ult i64 %5, %4
   ret i1 %6

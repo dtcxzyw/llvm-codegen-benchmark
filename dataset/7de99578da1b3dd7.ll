@@ -1,5 +1,6 @@
 
-; 84 occurrences:
+; 85 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; fmt/optimized/format.cc.ll
@@ -89,25 +90,26 @@ define i64 @func0000000000000001(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/test_codecvt.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
 ; cvc5/optimized/theory_model.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
-; llvm/optimized/COFFImportFile.cpp.ll
 ; postgres/optimized/freepage.ll
 ; postgres/optimized/nodeWindowAgg.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

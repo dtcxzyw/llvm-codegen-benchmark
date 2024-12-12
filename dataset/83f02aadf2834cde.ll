@@ -1,9 +1,8 @@
 
-; 100 occurrences:
+; 97 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; abseil-cpp/optimized/elf_mem_image.cc.ll
 ; cmake/optimized/cover.c.ll
-; cpython/optimized/datetime.ll
 ; cpython/optimized/pathconfig.ll
 ; cpython/optimized/tracemalloc.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
@@ -56,7 +55,6 @@
 ; openssl/optimized/libcrypto-lib-property_string.ll
 ; openssl/optimized/libcrypto-lib-rsa_backend.ll
 ; openssl/optimized/libcrypto-lib-rsa_chk.ll
-; openssl/optimized/libcrypto-lib-rsa_depr.ll
 ; openssl/optimized/libcrypto-lib-rsa_sp800_56b_gen.ll
 ; openssl/optimized/libcrypto-lib-sm2_crypt.ll
 ; openssl/optimized/libcrypto-lib-x_pubkey.ll
@@ -69,7 +67,6 @@
 ; openssl/optimized/libcrypto-shlib-property_string.ll
 ; openssl/optimized/libcrypto-shlib-rsa_backend.ll
 ; openssl/optimized/libcrypto-shlib-rsa_chk.ll
-; openssl/optimized/libcrypto-shlib-rsa_depr.ll
 ; openssl/optimized/libcrypto-shlib-rsa_sp800_56b_gen.ll
 ; openssl/optimized/libcrypto-shlib-sm2_crypt.ll
 ; openssl/optimized/libcrypto-shlib-x_pubkey.ll
@@ -101,7 +98,7 @@
 ; zstd/optimized/cover.c.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 true, i1 %0
@@ -110,7 +107,7 @@ entry:
   ret i1 %6
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; c3c/optimized/llvm_codegen_stmt.c.ll
 ; cmake/optimized/cmGlobalGenerator.cxx.ll
 ; cmake/optimized/openssl.c.ll
@@ -180,7 +177,6 @@ entry:
 ; postgres/optimized/user.ll
 ; qemu/optimized/block_nbd.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
-; qemu/optimized/system_balloon.c.ll
 ; qemu/optimized/virtio-9p-client.c.ll
 ; rocksdb/optimized/filter_block_reader_common.cc.ll
 ; rocksdb/optimized/index_reader_common.cc.ll
@@ -188,7 +184,7 @@ entry:
 ; slurm/optimized/opt.ll
 ; slurm/optimized/scancel.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 true, i1 %0
@@ -203,7 +199,7 @@ entry:
 ; postgres/optimized/pg_dump.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 true, i1 %0

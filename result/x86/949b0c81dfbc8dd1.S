@@ -36,3 +36,9 @@ func000000000000000c:                   # @func000000000000000c
 	cmovgl	%esi, %eax
 	orl	$2, %eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	movl	%edi, %eax
+	cmpw	$16, %dx
+	cmovael	%esi, %eax
+	orl	$2, %eax
+	retq

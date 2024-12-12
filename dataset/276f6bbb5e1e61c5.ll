@@ -1,5 +1,5 @@
 
-; 421 occurrences:
+; 426 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; arrow/optimized/encode_internal.cc.ll
@@ -25,6 +25,12 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cmake/optimized/cmCoreTryCompile.cxx.ll
 ; cmake/optimized/cmCustomCommandGenerator.cxx.ll
 ; cvc5/optimized/base_solver.cpp.ll
@@ -134,7 +140,6 @@
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/PseudoLoweringEmitter.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
@@ -422,7 +427,7 @@
 ; yosys/optimized/yosys.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 40
@@ -435,16 +440,16 @@ entry:
 ; openssl/optimized/libssl-lib-extensions.ll
 ; openssl/optimized/libssl-shlib-extensions.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 40
   %4 = and i64 %3, 4294967295
-  %5 = icmp ult i64 %4, 29
+  %5 = icmp samesign ult i64 %4, 29
   ret i1 %5
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
@@ -471,7 +476,6 @@ entry:
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
-; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/objects_associator.cpp.ll
 ; openusd/optimized/collectionPredicateLibrary.cpp.ll
 ; openusd/optimized/primIndex_Graph.cpp.ll
@@ -493,7 +497,7 @@ entry:
 ; yosys/optimized/torder.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 176
@@ -509,7 +513,7 @@ entry:
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 12
@@ -534,12 +538,24 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cppc_acpi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv i64 %2, 1000000
   %4 = and i64 %3, 4294967264
-  %5 = icmp ugt i64 %4, 59999
+  %5 = icmp samesign ugt i64 %4, 59999
+  ret i1 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/aruco_detector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = sdiv exact i64 %2, 88
+  %4 = and i64 %3, 2147483646
+  %5 = icmp ne i64 %4, 0
   ret i1 %5
 }
 

@@ -9,7 +9,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
   %6 = add i32 %5, 3
-  %7 = icmp ult i32 %6, %0
+  %7 = icmp ugt i32 %0, %6
   ret i1 %7
 }
 
@@ -27,7 +27,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
   %6 = add i32 %5, 1
-  %7 = icmp sgt i32 %6, %0
+  %7 = icmp slt i32 %0, %6
   ret i1 %7
 }
 

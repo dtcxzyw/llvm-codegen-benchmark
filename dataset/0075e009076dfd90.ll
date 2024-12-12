@@ -65,7 +65,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 510
   %3 = add nuw nsw i64 %2, -5435081209227447693
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -97,7 +97,7 @@ define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = add nuw nsw i64 %2, 1
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -127,15 +127,11 @@ entry:
   ret i64 %4
 }
 
-; 32 occurrences:
+; 12 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; linux/optimized/uncore_discovery.ll
 ; openblas/optimized/dsbmv_thread_L.c.ll
 ; openblas/optimized/dsbmv_thread_U.c.ll
-; openblas/optimized/dspmv_thread_L.c.ll
-; openblas/optimized/dspmv_thread_U.c.ll
-; openblas/optimized/dsymv_thread_L.c.ll
-; openblas/optimized/dsymv_thread_U.c.ll
 ; openblas/optimized/dtbmv_thread_NLN.c.ll
 ; openblas/optimized/dtbmv_thread_NLU.c.ll
 ; openblas/optimized/dtbmv_thread_NUN.c.ll
@@ -144,22 +140,6 @@ entry:
 ; openblas/optimized/dtbmv_thread_TLU.c.ll
 ; openblas/optimized/dtbmv_thread_TUN.c.ll
 ; openblas/optimized/dtbmv_thread_TUU.c.ll
-; openblas/optimized/dtpmv_thread_NLN.c.ll
-; openblas/optimized/dtpmv_thread_NLU.c.ll
-; openblas/optimized/dtpmv_thread_NUN.c.ll
-; openblas/optimized/dtpmv_thread_NUU.c.ll
-; openblas/optimized/dtpmv_thread_TLN.c.ll
-; openblas/optimized/dtpmv_thread_TLU.c.ll
-; openblas/optimized/dtpmv_thread_TUN.c.ll
-; openblas/optimized/dtpmv_thread_TUU.c.ll
-; openblas/optimized/dtrmv_thread_NLN.c.ll
-; openblas/optimized/dtrmv_thread_NLU.c.ll
-; openblas/optimized/dtrmv_thread_NUN.c.ll
-; openblas/optimized/dtrmv_thread_NUU.c.ll
-; openblas/optimized/dtrmv_thread_TLN.c.ll
-; openblas/optimized/dtrmv_thread_TLU.c.ll
-; openblas/optimized/dtrmv_thread_TUN.c.ll
-; openblas/optimized/dtrmv_thread_TUU.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:

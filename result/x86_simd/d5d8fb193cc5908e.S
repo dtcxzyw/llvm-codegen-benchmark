@@ -2,7 +2,7 @@
 	.long	10                              # 0xa
 .LCPI0_1:
 	.long	48                              # 0x30
-func0000000000000053:                   # @func0000000000000053
+func00000000000000d3:                   # @func00000000000000d3
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI0_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	vpmovdb	%ymm0, %xmm0
@@ -12,7 +12,7 @@ func0000000000000053:                   # @func0000000000000053
 	.long	10                              # 0xa
 .LCPI1_1:
 	.long	48                              # 0x30
-func0000000000000050:                   # @func0000000000000050
+func00000000000000d0:                   # @func00000000000000d0
 	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI1_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	vpmovdb	%ymm0, %xmm0

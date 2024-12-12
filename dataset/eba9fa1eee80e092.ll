@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; abseil-cpp/optimized/cordz_info.cc.ll
+; 7 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; libwebp/optimized/io_dec.c.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll

@@ -229,7 +229,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 16944, i32 25136
   %3 = shl nuw nsw i32 %2, 8
@@ -244,7 +244,7 @@ entry:
 ; ncnn/optimized/convolutiondepthwise_x86_avx512.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i1 %1) #0 {
+define i32 @func000000000000006a(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 8, i32 1
   %3 = shl nuw nsw i32 %2, 2

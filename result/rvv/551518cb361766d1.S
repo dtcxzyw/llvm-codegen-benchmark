@@ -22,7 +22,7 @@ func000000000000000f:                   # @func000000000000000f
 	li	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vor.vv	v10, v10, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
@@ -31,7 +31,7 @@ func000000000000000e:                   # @func000000000000000e
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vor.vv	v10, v10, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
@@ -40,7 +40,7 @@ func0000000000000002:                   # @func0000000000000002
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vor.vv	v10, v10, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
@@ -48,7 +48,7 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v12, v12, 1
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vor.vv	v10, v10, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
@@ -79,7 +79,7 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vor.vv	v10, v10, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0

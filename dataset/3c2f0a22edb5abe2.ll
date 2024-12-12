@@ -34,10 +34,10 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %2, 112
+  %3 = icmp samesign ugt i32 %2, 112
   %4 = xor i32 %0, 16384
   %5 = select i1 %3, i32 %4, i32 0
   ret i32 %5

@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; double_conversion/optimized/string-to-double.cc.ll
@@ -10,7 +10,6 @@
 ; linux/optimized/dquot.ll
 ; linux/optimized/hw-me.ll
 ; linux/optimized/tsc.ll
-; linux/optimized/umh.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; openusd/optimized/string-to-double.cc.ll

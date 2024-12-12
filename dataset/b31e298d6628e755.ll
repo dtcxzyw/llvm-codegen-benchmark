@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0) #0 {
+define i1 @func00000000000000a4(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = add nsw i32 %0, -2
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i32 %0) #0 {
+define i1 @func00000000000000a9(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = add nsw i32 %0, -4

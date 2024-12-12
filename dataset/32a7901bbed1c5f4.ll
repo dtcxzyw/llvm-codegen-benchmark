@@ -1,5 +1,5 @@
 
-; 144 occurrences:
+; 143 occurrences:
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/appender.cpp.ll
 ; mitsuba3/optimized/area.cpp.ll
@@ -77,7 +77,6 @@
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -145,7 +144,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000054a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %0, %1
   ret i1 %2

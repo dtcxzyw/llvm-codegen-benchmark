@@ -44,13 +44,13 @@ func000000000000000b:                   # @func000000000000000b
 	.quad	0x4059000000000000              # double 100
 func0000000000000008:                   # @func0000000000000008
 	vdivsd	.LCPI6_0(%rip), %xmm1, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 .LCPI7_0:
 	.quad	0x400921fb54442d18              # double 3.1415926535897931
 func0000000000000007:                   # @func0000000000000007
 	vdivsd	.LCPI7_0(%rip), %xmm1, %xmm1
-	vcmpneqsd	%xmm0, %xmm1, %k0
+	vcmpneqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq

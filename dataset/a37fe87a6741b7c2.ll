@@ -155,7 +155,6 @@
 ; cvc5/optimized/node_converter.cpp.ll
 ; cvc5/optimized/node_manager.cpp.ll
 ; cvc5/optimized/node_traversal.cpp.ll
-; cvc5/optimized/node_utils.cpp.ll
 ; cvc5/optimized/node_value.cpp.ll
 ; cvc5/optimized/non_clausal_simp.cpp.ll
 ; cvc5/optimized/normal_form.cpp.ll
@@ -361,6 +360,7 @@
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
+; lvgl/optimized/lv_anim.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-storage.ll
 ; opencv/optimized/ts_func.cpp.ll
@@ -377,7 +377,7 @@ entry:
   ret i32 %3
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; assimp/optimized/MMDPmxParser.cpp.ll
 ; clamav/optimized/matcher.c.ll
@@ -400,7 +400,6 @@ entry:
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterScavenging.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

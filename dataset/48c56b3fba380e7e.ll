@@ -8,7 +8,7 @@
 ; opencv/optimized/onevpl_infer_with_advanced_device_selection.cpp.ll
 ; yosys/optimized/aigerparse.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000364(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = sdiv exact i64 %1, 24

@@ -59,7 +59,7 @@ func0000000000000007:                   # @func0000000000000007
 	add	a0, a0, a2
 	ret
 func000000000000001e:                   # @func000000000000001e
-	srli	a2, a2, 2
+	srli	a2, a2, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

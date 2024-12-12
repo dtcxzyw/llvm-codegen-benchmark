@@ -1,4 +1,4 @@
-func0000000000000082:                   # @func0000000000000082
+func0000000000000083:                   # @func0000000000000083
 	shrq	$4, %rdx
 	imull	$-1431655765, %edx, %eax        # imm = 0xAAAAAAAB
 	addl	%esi, %eax
@@ -6,14 +6,14 @@ func0000000000000082:                   # @func0000000000000082
 	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000086:                   # @func0000000000000086
+func0000000000000087:                   # @func0000000000000087
 	shrq	$3, %rdx
 	imull	$954437177, %edx, %eax          # imm = 0x38E38E39
 	addl	%esi, %eax
 	leaq	(%rax,%rax,8), %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func000000000000008e:                   # @func000000000000008e
+func000000000000008f:                   # @func000000000000008f
 	shrq	$3, %rdx
 	imull	$-1431655765, %edx, %eax        # imm = 0xAAAAAAAB
 	addl	%esi, %eax

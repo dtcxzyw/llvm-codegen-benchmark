@@ -1,11 +1,18 @@
 
-; 726 occurrences:
+; 743 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/3DSExporter.cpp.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; c3c/optimized/parse_global.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/target.c.ll
@@ -151,14 +158,12 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/ata_piix.ll
-; linux/optimized/dswexec.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/gro.ll
 ; linux/optimized/hbm.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/i2c-core-smbus.ll
-; linux/optimized/i915_trace_points.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/ip6_offload.ll
@@ -273,6 +278,11 @@
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_imagebutton.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/craftdef.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/emerge.cpp.ll
@@ -422,7 +432,6 @@
 ; openusd/optimized/write.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -558,6 +567,8 @@
 ; tls-rs/optimized/1oa4q9ydtxtlathz.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
@@ -705,6 +716,7 @@
 ; wasmtime-rs/optimized/r9f6jef0e11b5fk.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/dftest.c.ll
 ; wireshark/optimized/file.c.ll
@@ -726,6 +738,11 @@
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0) #0 {
 entry:

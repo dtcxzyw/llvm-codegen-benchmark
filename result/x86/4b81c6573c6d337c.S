@@ -11,7 +11,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vmovq	%xmm0, %rax
 	movabsq	$9214364837600034816, %rcx      # imm = 0x7FE0000000000000
 	testq	%rcx, %rax

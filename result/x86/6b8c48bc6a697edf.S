@@ -1,6 +1,6 @@
 func00000000000000c0:                   # @func00000000000000c0
 	shll	$6, %esi
-	leal	8192(%rsi,%rdi), %eax
+	leal	8192(%rdi,%rsi), %eax
 	retq
 func00000000000000ff:                   # @func00000000000000ff
 	leal	1(%rdi,%rsi,2), %eax

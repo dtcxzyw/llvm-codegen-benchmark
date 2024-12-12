@@ -10,5 +10,5 @@ func0000000000000006:                   # @func0000000000000006
 func000000000000000f:                   # @func000000000000000f
 	shrb	$2, %dil
 	movzbl	%dil, %eax
-	shll	$24, %eax
+	shll	$8, %eax
 	retq

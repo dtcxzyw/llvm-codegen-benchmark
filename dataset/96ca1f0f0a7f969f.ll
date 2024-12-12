@@ -44,7 +44,7 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i1 %0, i64 %1) #0 {
+define i1 @func00000000000001a6(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp slt i32 %2, 1023
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaRex.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, -1
@@ -79,7 +79,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i1 %0, i64 %1) #0 {
+define i1 @func00000000000001aa(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp sgt i32 %2, 1076
@@ -91,7 +91,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i1 %0, i64 %1) #0 {
+define i1 @func00000000000001a4(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -1076

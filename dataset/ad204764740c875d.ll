@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %.mask = and i32 %2, -2
@@ -43,7 +43,7 @@ entry:
 ; openjdk/optimized/X11FontScaler_md.ll
 ; stb/optimized/stb_image.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = icmp sgt i32 %2, 7
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_image.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = icmp ugt i32 %2, 33554431
@@ -71,21 +71,11 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
-; linux/optimized/intel_sprite.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sub i32 %0, %1
-  %3 = icmp ugt i32 %2, 134283263
-  ret i1 %3
-}
-
 ; 2 occurrences:
 ; redis/optimized/t_stream.ll
 ; redis/optimized/t_zset.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = icmp sgt i32 %2, 2
@@ -95,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/frame_dec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, %1
   ret i1 %2

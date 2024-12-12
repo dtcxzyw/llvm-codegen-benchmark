@@ -25,12 +25,11 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; hermes/optimized/CSE.cpp.ll
 ; hermes/optimized/Lowering.cpp.ll
 ; hermes/optimized/TDZDedup.cpp.ll
-; llvm/optimized/MCAsmStreamer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:

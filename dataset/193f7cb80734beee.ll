@@ -1,36 +1,4 @@
 
-; 22 occurrences:
-; cmake/optimized/lz_encoder.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
-; gromacs/optimized/redistribute.cpp.ll
-; linux/optimized/cipso_ipv4.ll
-; llvm/optimized/APINotesWriter.cpp.ll
-; openjdk/optimized/runtime.ll
-; openssl/optimized/libcrypto-lib-p12_utl.ll
-; openssl/optimized/libcrypto-shlib-p12_utl.ll
-; ruby/optimized/japanese.ll
-; wireshark/optimized/packet-acdr.c.ll
-; wireshark/optimized/packet-cip.c.ll
-; wireshark/optimized/packet-ieee802154.c.ll
-; wireshark/optimized/packet-l2tp.c.ll
-; wireshark/optimized/packet-macsec.c.ll
-; wireshark/optimized/packet-ncp2222.c.ll
-; wireshark/optimized/packet-ppp.c.ll
-; wireshark/optimized/packet-rdp.c.ll
-; wireshark/optimized/packet-rlc-lte.c.ll
-; wireshark/optimized/packet-rtps.c.ll
-; wireshark/optimized/packet-zbee-zdp-management.c.ll
-; yosys/optimized/select.ll
-; zstd/optimized/zstd_compress_literals.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i1 %1) #0 {
-entry:
-  %2 = select i1 %1, i32 97, i32 96
-  %3 = add nuw nsw i32 %2, %0
-  %4 = add nuw nsw i32 %3, 162
-  ret i32 %4
-}
-
 ; 34 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; hyperscan/optimized/teddy_engine_description.cpp.ll
@@ -76,6 +44,38 @@ entry:
 }
 
 ; 21 occurrences:
+; cmake/optimized/lz_encoder.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
+; gromacs/optimized/redistribute.cpp.ll
+; linux/optimized/cipso_ipv4.ll
+; llvm/optimized/APINotesWriter.cpp.ll
+; openjdk/optimized/runtime.ll
+; openssl/optimized/libcrypto-lib-p12_utl.ll
+; openssl/optimized/libcrypto-shlib-p12_utl.ll
+; wireshark/optimized/packet-acdr.c.ll
+; wireshark/optimized/packet-cip.c.ll
+; wireshark/optimized/packet-ieee802154.c.ll
+; wireshark/optimized/packet-l2tp.c.ll
+; wireshark/optimized/packet-macsec.c.ll
+; wireshark/optimized/packet-ncp2222.c.ll
+; wireshark/optimized/packet-ppp.c.ll
+; wireshark/optimized/packet-rdp.c.ll
+; wireshark/optimized/packet-rlc-lte.c.ll
+; wireshark/optimized/packet-rtps.c.ll
+; wireshark/optimized/packet-zbee-zdp-management.c.ll
+; yosys/optimized/select.ll
+; zstd/optimized/zstd_compress_literals.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i32 4, i32 2
+  %3 = add nuw nsw i32 %2, %0
+  %4 = add nuw nsw i32 %3, 2
+  ret i32 %4
+}
+
+; 23 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; gromacs/optimized/tune_pme.cpp.ll
@@ -85,6 +85,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_calendar.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -125,7 +126,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 3, i32 11
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = add nsw i32 %3, -1
   ret i32 %4
 }

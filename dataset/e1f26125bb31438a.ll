@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; arrow/optimized/coo_converter.cc.ll
-; assimp/optimized/SMDLoader.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; pocketpy/optimized/random.cpp.ll
 ; Function Attrs: nounwind
@@ -10,7 +9,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = freeze i64 %3
-  %5 = shl i64 %4, 26
+  %5 = shl i64 %4, 29
   ret i64 %5
 }
 

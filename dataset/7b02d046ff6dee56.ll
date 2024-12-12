@@ -57,6 +57,18 @@ entry:
   ret i32 %4
 }
 
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_line.ll
+; opencv/optimized/seam_finders.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000025(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw i64 %2 to i32
+  %.neg = sub i32 %1, %3
+  %4 = add i32 %.neg, %0
+  ret i32 %4
+}
+
 ; 3 occurrences:
 ; llvm/optimized/GISelKnownBits.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -70,8 +82,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i32 %1, i64 %2) #0 {
@@ -117,17 +128,6 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %.neg = sub i32 %1, %3
-  %4 = add i32 %.neg, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/seam_finders.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000025(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw i64 %2 to i32
   %.neg = sub i32 %1, %3
   %4 = add i32 %.neg, %0
   ret i32 %4

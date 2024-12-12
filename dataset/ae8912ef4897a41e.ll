@@ -1,6 +1,7 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; assimp/optimized/ColladaParser.cpp.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
@@ -10,11 +11,9 @@
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/calibrate.ll
-; linux/optimized/jiffies.ll
 ; linux/optimized/md.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/tcp_output.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; mimalloc/optimized/heap.c.ll

@@ -49,7 +49,7 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; git/optimized/midx.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
@@ -58,6 +58,7 @@ entry:
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; openjdk/optimized/hb-ot-cff1-table.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; openjdk/optimized/hb-ot-font.ll

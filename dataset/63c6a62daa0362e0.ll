@@ -1,10 +1,9 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; clamav/optimized/fmap.c.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; folly/optimized/GuardPageAllocator.cpp.ll
 ; hdf5/optimized/H5MF.c.ll
-; hdf5/optimized/H5MFsection.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/intel_display.ll
@@ -12,6 +11,8 @@
 ; openjdk/optimized/codeHeapState.ll
 ; qemu/optimized/block_mirror.c.ll
 ; redis/optimized/linenoise.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

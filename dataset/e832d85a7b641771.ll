@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/cmsnamed.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc4(i32 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000003184(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne i32 %1, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cca(i32 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000318a(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne i32 %1, 0
   %4 = icmp ne ptr %2, null

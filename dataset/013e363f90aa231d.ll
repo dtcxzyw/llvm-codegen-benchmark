@@ -1,5 +1,5 @@
 
-; 284 occurrences:
+; 288 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -7,6 +7,10 @@
 ; abseil-cpp/optimized/node_hash_set_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
+; boost/optimized/graphml.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/init_from_stream.ll
+; boost/optimized/settings_parser.ll
 ; cpython/optimized/frameobject.ll
 ; folly/optimized/TimeoutQueue.cpp.ll
 ; graphviz/optimized/dotsplines.c.ll

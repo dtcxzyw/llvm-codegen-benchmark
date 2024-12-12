@@ -1,18 +1,18 @@
-func000000000000006a:                   // @func000000000000006a
+func000000000000006b:                   // @func000000000000006b
 // %bb.0:                               // %entry
 	lsr	x8, x2, #6
 	sub	w8, w8, w1
 	add	x0, x0, w8, uxtw #3
 	ret
                                         // -- End function
-func0000000000000042:                   // @func0000000000000042
+func0000000000000043:                   // @func0000000000000043
 // %bb.0:                               // %entry
 	lsr	x8, x2, #32
 	sub	w8, w8, w1
 	add	x0, x0, w8, uxtw #1
 	ret
                                         // -- End function
-func0000000000000082:                   // @func0000000000000082
+func0000000000000083:                   // @func0000000000000083
 // %bb.0:                               // %entry
 	lsr	x9, x2, #5
 	mov	w8, #36                         // =0x24

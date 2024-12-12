@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	23                              # 0x17
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm0   # ymm0 = [23,23,23,23]
@@ -11,7 +11,7 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 .LCPI1_0:
 	.quad	23                              # 0x17
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm0   # ymm0 = [23,23,23,23]
@@ -23,7 +23,7 @@ func000000000000001a:                   # @func000000000000001a
 	retq
 .LCPI2_0:
 	.quad	23                              # 0x17
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm0   # ymm0 = [23,23,23,23]
@@ -36,7 +36,7 @@ func000000000000001c:                   # @func000000000000001c
 	.quad	23                              # 0x17
 .LCPI3_1:
 	.quad	15                              # 0xf
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpbroadcastq	.LCPI3_0(%rip), %ymm0   # ymm0 = [23,23,23,23]
@@ -49,7 +49,7 @@ func0000000000000018:                   # @func0000000000000018
 	.quad	4096                            # 0x1000
 .LCPI4_1:
 	.quad	2048                            # 0x800
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpbroadcastq	.LCPI4_0(%rip), %ymm0   # ymm0 = [4096,4096,4096,4096]
@@ -69,7 +69,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI6_0:
 	.quad	1                               # 0x1
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpbroadcastq	.LCPI6_0(%rip), %ymm0   # ymm0 = [1,1,1,1]

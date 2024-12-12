@@ -9,7 +9,7 @@ entry:
   %4 = sub i64 0, %1
   %5 = and i64 %4, %3
   %6 = inttoptr i64 %5 to ptr
-  %7 = icmp ult ptr %6, %0
+  %7 = icmp ugt ptr %0, %6
   ret i1 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = sub i64 0, %1
   %5 = and i64 %4, %3
   %6 = inttoptr i64 %5 to ptr
-  %7 = icmp uge ptr %6, %0
+  %7 = icmp ule ptr %0, %6
   ret i1 %7
 }
 
@@ -38,7 +38,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = and i64 %4, %3
   %6 = inttoptr i64 %5 to ptr
-  %7 = icmp ugt ptr %6, %0
+  %7 = icmp ult ptr %0, %6
   ret i1 %7
 }
 
@@ -52,20 +52,20 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = and i64 %4, %3
   %6 = inttoptr i64 %5 to ptr
-  %7 = icmp eq ptr %6, %0
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; openmpi/optimized/rcache_grdma_module.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub nsw i64 0, %1
   %5 = and i64 %4, %3
   %6 = inttoptr i64 %5 to ptr
-  %7 = icmp eq ptr %6, %0
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
@@ -74,13 +74,13 @@ entry:
 ; linux/optimized/set_memory.ll
 ; linux/optimized/usercopy_64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub nsw i64 0, %1
   %5 = and i64 %4, %3
   %6 = inttoptr i64 %5 to ptr
-  %7 = icmp ult ptr %6, %0
+  %7 = icmp ugt ptr %0, %6
   ret i1 %7
 }
 

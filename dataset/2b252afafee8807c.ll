@@ -1,5 +1,5 @@
 
-; 214 occurrences:
+; 209 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -48,13 +48,11 @@
 ; bullet3/optimized/btHingeConstraint.ll
 ; bullet3/optimized/btSliderConstraint.ll
 ; casadi/optimized/sundials_iterative.c.ll
-; ceres/optimized/block_sparse_matrix.cc.ll
 ; cvc5/optimized/SimpSolver.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
-; git/optimized/pq.ll
 ; graphviz/optimized/DotIO.c.ll
 ; graphviz/optimized/SparseMatrix.c.ll
 ; graphviz/optimized/fPQ.c.ll
@@ -136,7 +134,6 @@
 ; ocio/optimized/GradingBSplineCurve.cpp.ll
 ; oiio/optimized/icoinput.cpp.ll
 ; openblas/optimized/dbdsqr.c.ll
-; openblas/optimized/dstein.c.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; opencv/optimized/bundle.cpp.ll
 ; opencv/optimized/checker_model.cpp.ll
@@ -152,7 +149,6 @@
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/fundamental_solver.cpp.ll
 ; opencv/optimized/homography_solver.cpp.ll
-; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/motion_stabilizing.cpp.ll
 ; opencv/optimized/ransac_solvers.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
@@ -173,7 +169,6 @@
 ; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
 ; openmpi/optimized/flatten.ll
-; openmpi/optimized/heap_sort.ll
 ; openmpi/optimized/io_ompio.ll
 ; openmpi/optimized/ompi_datatype_args.ll
 ; openmpi/optimized/topo_base_dist_graph_create.ll
@@ -224,7 +219,7 @@ entry:
   ret ptr %5
 }
 
-; 29 occurrences:
+; 31 occurrences:
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/sre.ll
 ; gromacs/optimized/dlar1vx.cpp.ll
@@ -239,6 +234,7 @@ entry:
 ; openblas/optimized/dgelsy.c.ll
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlar1v.c.ll
+; opencv/optimized/cornersubpix.cpp.ll
 ; postgres/optimized/crosstabview.ll
 ; postgres/optimized/pg_recvlogical.ll
 ; postgres/optimized/regcomp.ll
@@ -250,6 +246,7 @@ entry:
 ; qemu/optimized/hw_riscv_spike.c.ll
 ; qemu/optimized/hw_riscv_virt.c.ll
 ; qemu/optimized/system_device_tree.c.ll
+; quickjs/optimized/libbf.ll
 ; ruby/optimized/regparse.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/print.c.ll
@@ -264,7 +261,7 @@ entry:
   ret ptr %5
 }
 
-; 90 occurrences:
+; 79 occurrences:
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcStrash.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -279,8 +276,6 @@ entry:
 ; gromacs/optimized/dlarrbx.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/dlasd6.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/dlasq2.cpp.ll
@@ -292,8 +287,6 @@ entry:
 ; gromacs/optimized/slarrbx.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
@@ -311,14 +304,11 @@ entry:
 ; oiio/optimized/icoinput.cpp.ll
 ; oniguruma/optimized/regparse.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dgedmdq.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgelsx.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dgerfs.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dgtrfs.c.ll
@@ -332,21 +322,17 @@ entry:
 ; openblas/optimized/dlasd3.c.ll
 ; openblas/optimized/dlasd8.c.ll
 ; openblas/optimized/dlasq2.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dporfs.c.ll
 ; openblas/optimized/dpprfs.c.ll
 ; openblas/optimized/dsprfs.c.ll
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dsyrfs.c.ll
-; openblas/optimized/dsytrs_aa.c.ll
 ; openblas/optimized/dtbrfs.c.ll
 ; openblas/optimized/dtgsen.c.ll
 ; openblas/optimized/dtprfs.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrrfs.c.ll
-; openblas/optimized/dtrsna.c.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/nldiffusion_functions.cpp.ll
 ; openjdk/optimized/c1_LIR.ll
@@ -365,14 +351,29 @@ entry:
   ret ptr %5
 }
 
-; 7 occurrences:
+; 5 occurrences:
+; ceres/optimized/block_sparse_matrix.cc.ll
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; opencv/optimized/demosaicing.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 5
+  %3 = or disjoint i32 %2, 16
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 6 occurrences:
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; openblas/optimized/dlaror.c.ll
 ; openblas/optimized/dlasda.c.ll
 ; openblas/optimized/dsytrd_sb2st.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
 entry:
@@ -380,6 +381,18 @@ entry:
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw double, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; opencv/optimized/nldiffusion_functions.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 1
+  %3 = or disjoint i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 

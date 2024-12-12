@@ -1,9 +1,9 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000003b:                   # @func000000000000003b
 	subw	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 3
 	ret
-func000000000000006a:                   # @func000000000000006a
+func000000000000007b:                   # @func000000000000007b
 	subw	a1, a1, a2
 	li	a2, 40
 	mul	a1, a1, a2
@@ -34,12 +34,11 @@ func0000000000000028:                   # @func0000000000000028
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func000000000000006b:                   # @func000000000000006b
+func0000000000000070:                   # @func0000000000000070
 	subw	a1, a1, a2
-	li	a2, 40
-	mul	a1, a1, a2
+	slli	a1, a1, 4
 	add	a0, a0, a1
-	addi	a0, a0, 48
+	addi	a0, a0, 24
 	ret
 func0000000000000040:                   # @func0000000000000040
 	subw	a1, a1, a2

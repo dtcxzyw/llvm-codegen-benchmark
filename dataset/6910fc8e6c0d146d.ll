@@ -1,5 +1,5 @@
 
-; 131 occurrences:
+; 132 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -49,7 +49,6 @@
 ; linux/optimized/hwregs.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/ibs.ll
-; linux/optimized/intel_pconfig.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/journal.ll
 ; linux/optimized/mballoc.ll
@@ -131,6 +130,8 @@
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -139,7 +140,7 @@ entry:
   ret i32 %3
 }
 
-; 23 occurrences:
+; 25 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
@@ -163,6 +164,8 @@ entry:
 ; spike/optimized/vror_vv.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/mpz.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:

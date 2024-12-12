@@ -8,7 +8,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -51,7 +51,7 @@ entry:
   %2 = shl i32 %1, 7
   %3 = add i32 %2, 256
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -127,12 +127,12 @@ entry:
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
   %3 = add i32 %2, 64
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -141,12 +141,12 @@ entry:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/RawVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = add nsw i32 %2, 64
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -158,75 +158,58 @@ entry:
 ; openspiel/optimized/oware.cc.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = add nsw i32 %2, 64
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000121(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = add nsw i32 %2, 64
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
-; gromacs/optimized/dlasq1.cpp.ll
-; gromacs/optimized/slasq1.cpp.ll
+; 1 occurrences:
 ; quantlib/optimized/faurersg.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %4, %0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; git/optimized/pq.ll
-; yosys/optimized/booth.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 1
-  %3 = add nsw i32 %2, 2
-  %4 = sext i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; oiio/optimized/benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/dlasq3.cpp.ll
 ; gromacs/optimized/dlasq5.cpp.ll
 ; gromacs/optimized/dlasq6.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
@@ -234,7 +217,7 @@ entry:
   %2 = shl i32 %1, 2
   %3 = add i32 %2, -8
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
@@ -249,7 +232,19 @@ entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; yosys/optimized/booth.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 1
+  %3 = add nsw i32 %2, -1
+  %4 = sext i32 %3 to i64
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -257,12 +252,12 @@ entry:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = add nsw i32 %2, -3
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
@@ -270,12 +265,12 @@ entry:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000010a(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = add i32 %2, -2
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
@@ -284,48 +279,48 @@ entry:
 ; gromacs/optimized/slasq2.cpp.ll
 ; openblas/optimized/dlasq2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = add i32 %2, -12
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; postgres/optimized/slru.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005b(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000ab(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 13
   %3 = add nsw i32 %2, 8192
   %4 = sext i32 %3 to i64
-  %5 = icmp sle i64 %4, %0
+  %5 = icmp sge i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; libwebp/optimized/alpha_processing_sse2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = add nsw i32 %2, -3
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 

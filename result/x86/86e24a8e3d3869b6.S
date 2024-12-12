@@ -30,8 +30,8 @@ func0000000000000015:                   # @func0000000000000015
 	retq
 func0000000000000007:                   # @func0000000000000007
 	shll	$8, %edx
-	leal	(%rdx,%rsi), %ecx
-	leal	49472(%rdx,%rsi), %eax
+	leal	(%rsi,%rdx), %ecx
+	leal	49472(%rsi,%rdx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq

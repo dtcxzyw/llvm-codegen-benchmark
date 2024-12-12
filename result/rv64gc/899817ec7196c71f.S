@@ -7,7 +7,7 @@ func0000000000000001:                   # @func0000000000000001
 .LBB0_2:
 	fmv.w.x	fa0, zero
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a0
 	beqz	a1, .LBB1_2
 	fcvt.s.wu	fa5, a0

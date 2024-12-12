@@ -34,6 +34,11 @@ func0000000000000030:                   # @func0000000000000030
 	orl	%edi, %eax
 	shrl	$16, %eax
 	retq
+func0000000000000022:                   # @func0000000000000022
+	movl	%edi, %eax
+	shrl	$24, %eax
+	orl	%esi, %eax
+	retq
 func000000000000003e:                   # @func000000000000003e
 	movl	%esi, %eax
 	shll	$18, %eax

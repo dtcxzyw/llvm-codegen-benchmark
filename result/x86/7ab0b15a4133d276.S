@@ -10,3 +10,9 @@ func0000000000000005:                   # @func0000000000000005
 	cmovnel	%edx, %eax
 	imull	%edi, %eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	movl	%esi, %eax
+	cmpl	$268435456, %edx                # imm = 0x10000000
+	cmovll	%edx, %eax
+	imull	%edi, %eax
+	retq

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; libquic/optimized/ssl_test.cc.ll
@@ -14,7 +14,6 @@
 ; redis/optimized/script.ll
 ; ruby/optimized/option.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
-; spike/optimized/f128_classify.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:

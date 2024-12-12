@@ -28,7 +28,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func000000000000000a:                   # @func000000000000000a
 	vpaddb	%xmm2, %xmm1, %xmm1
-	vpaddb	%xmm0, %xmm1, %xmm0
+	vpaddb	%xmm1, %xmm0, %xmm0
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vpaddb	%xmm2, %xmm1, %xmm1

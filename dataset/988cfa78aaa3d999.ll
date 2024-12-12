@@ -8,7 +8,7 @@ entry:
   %3 = and i32 %1, %2
   %4 = icmp eq i32 %3, 0
   %5 = sext i1 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

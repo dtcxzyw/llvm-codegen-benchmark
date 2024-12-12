@@ -1,5 +1,7 @@
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; nuttx/optimized/mm_realloc.c.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind

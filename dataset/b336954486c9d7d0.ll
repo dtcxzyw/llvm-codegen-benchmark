@@ -8,7 +8,7 @@
 ; tev/optimized/ImageViewer.cpp.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %0 to i64
@@ -26,7 +26,7 @@ entry:
 ; tev/optimized/ImageViewer.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000044(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %0 to i64

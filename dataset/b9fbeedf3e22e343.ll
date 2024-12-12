@@ -47,7 +47,7 @@
 define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   ret i1 %3
 }
 
@@ -79,11 +79,11 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
-; 143 occurrences:
+; 144 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -164,6 +164,7 @@ entry:
 ; llvm/optimized/LTOCodeGenerator.cpp.ll
 ; llvm/optimized/LTOModule.cpp.ll
 ; llvm/optimized/Lanai.cpp.ll
+; llvm/optimized/LegacyPassManager.cpp.ll
 ; llvm/optimized/LinkModules.cpp.ll
 ; llvm/optimized/LoongArch.cpp.ll
 ; llvm/optimized/M68k.cpp.ll
@@ -231,7 +232,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -246,7 +247,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   ret i1 %3
 }
 
@@ -270,7 +271,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 
@@ -290,7 +291,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -300,7 +301,7 @@ entry:
 define i1 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp sle i64 %2, %0
+  %3 = icmp sge i64 %0, %2
   ret i1 %3
 }
 

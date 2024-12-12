@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/cecChoice.c.ll
 ; graphviz/optimized/actions.c.ll
-; graphviz/optimized/timing.c.ll
 ; openblas/optimized/dgetrf_parallel.c.ll
 ; pbrt-v4/optimized/log.cpp.ll
 ; quickjs/optimized/quickjs.ll

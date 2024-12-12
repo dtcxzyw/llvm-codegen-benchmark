@@ -1,5 +1,5 @@
 
-; 229 occurrences:
+; 225 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBalance.c.ll
@@ -127,7 +127,6 @@
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaStr.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/giaSweeper.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -159,7 +158,6 @@
 ; abc/optimized/liveness_sim.c.ll
 ; abc/optimized/llb1Constr.c.ll
 ; abc/optimized/llb1Reach.c.ll
-; abc/optimized/llb2Bad.c.ll
 ; abc/optimized/llb2Core.c.ll
 ; abc/optimized/llb2Driver.c.ll
 ; abc/optimized/llb2Image.c.ll
@@ -183,7 +181,6 @@
 ; abc/optimized/reoTransfer.c.ll
 ; abc/optimized/rwrEva.c.ll
 ; abc/optimized/rwrUtil.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abc/optimized/saigConstr.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigDual.c.ll
@@ -220,7 +217,6 @@
 ; hermes/optimized/HermesInternal.cpp.ll
 ; hermes/optimized/Interpreter-slowpaths.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
-; hermes/optimized/JSArrayBuffer.cpp.ll
 ; hermes/optimized/JSError.cpp.ll
 ; hermes/optimized/JSTypedArray.cpp.ll
 ; hermes/optimized/Operations.cpp.ll

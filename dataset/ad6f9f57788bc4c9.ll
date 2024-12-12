@@ -1,11 +1,13 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/vars.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nsw i64 %0, %1
@@ -16,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/servermap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nuw i64 %0, %1
@@ -93,7 +95,7 @@ entry:
 ; tls-rs/optimized/4klah4jfox7oqufu.ll
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nuw i64 %0, %1
@@ -102,9 +104,45 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000086(i64 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i64
+  %4 = sub i64 %0, %1
+  %5 = icmp slt i64 %4, %3
+  ret i1 %5
+}
+
+; 4 occurrences:
+; boost/optimized/src.ll
+; clamav/optimized/unarj.c.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(i64 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i64
+  %4 = sub i64 %0, %1
+  %5 = icmp ult i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i64 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = sub nuw nsw i64 %0, %1
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; slurm/optimized/controller.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
   %4 = sub nsw i64 %0, %1
@@ -115,24 +153,11 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/eval_nodes.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nsw i64 %0, %1
   %5 = icmp slt i64 %4, %3
-  ret i1 %5
-}
-
-; 3 occurrences:
-; clamav/optimized/unarj.c.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i16 %2) #0 {
-entry:
-  %3 = zext nneg i16 %2 to i64
-  %4 = sub i64 %0, %1
-  %5 = icmp ult i64 %4, %3
   ret i1 %5
 }
 
@@ -159,23 +184,12 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i64
-  %4 = sub nuw nsw i64 %0, %1
-  %5 = icmp ugt i64 %4, %3
-  ret i1 %5
-}
-
 ; 3 occurrences:
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
   %4 = sub nuw i64 %0, %1
@@ -184,20 +198,9 @@ entry:
 }
 
 ; 1 occurrences:
-; opencv/optimized/median_blur.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i64
-  %4 = sub nuw nsw i64 %0, %1
-  %5 = icmp ult i64 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; hyperscan/optimized/shengcompile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nsw i64 %0, %1

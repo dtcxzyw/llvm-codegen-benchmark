@@ -44,7 +44,7 @@
 ; minetest/optimized/guiTable.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4611686018427387903
   %3 = and i64 %2, 4611686018427387903
@@ -93,7 +93,7 @@ entry:
 ; linux/optimized/svcauth_gss.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 2305843009213693951
   %3 = and i64 %2, 2305843009213693951
@@ -625,7 +625,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 8191
   %3 = and i64 %2, -8192
@@ -641,7 +641,7 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 9223372036854775807
   %3 = and i64 %2, 9223372036854775807
@@ -657,7 +657,7 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 9223372036854775807
   %3 = and i64 %2, 9223372036854775807
@@ -667,21 +667,9 @@ entry:
 }
 
 ; 1 occurrences:
-; postgres/optimized/generation.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %1, 7
-  %3 = and i64 %2, -8
-  %4 = add nuw nsw i64 %3, 64
-  %5 = icmp ugt i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; libwebp/optimized/muxread.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = and i64 %2, 4294967294

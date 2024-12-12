@@ -7,7 +7,7 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; wireshark/optimized/summary.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000318c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -23,7 +23,7 @@ entry:
 ; llvm/optimized/TypeRecordMapping.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c11(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000003021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TypeRecordMapping.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000581(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ndisc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000058c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/cs_multiply.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc1(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000003181(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null

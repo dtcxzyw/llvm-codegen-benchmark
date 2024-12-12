@@ -1,18 +1,18 @@
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	subq	%rsi, %rdi
 	shrq	$3, %rdi
 	imull	$-286331153, %edi, %eax         # imm = 0xEEEEEEEF
 	decl	%eax
 	shrl	$31, %eax
 	retq
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	subq	%rsi, %rdi
 	shrq	$3, %rdi
 	imull	$1332920885, %edi, %eax         # imm = 0x4F72C235
 	decl	%eax
 	setns	%al
 	retq
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	subq	%rsi, %rdi
 	shrq	$3, %rdi
 	imull	$-858993459, %edi, %eax         # imm = 0xCCCCCCCD
@@ -20,14 +20,14 @@ func0000000000000104:                   # @func0000000000000104
 	cmpl	$-4, %eax
 	setb	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	subq	%rsi, %rdi
 	shrq	$4, %rdi
 	imull	$-858993459, %edi, %eax         # imm = 0xCCCCCCCD
 	cmpl	$-1, %eax
 	sete	%al
 	retq
-func000000000000010c:                   # @func000000000000010c
+func000000000000020c:                   # @func000000000000020c
 	subq	%rsi, %rdi
 	shrq	$2, %rdi
 	imull	$-1431655765, %edi, %eax        # imm = 0xAAAAAAAB

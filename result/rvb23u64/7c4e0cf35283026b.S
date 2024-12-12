@@ -13,6 +13,12 @@ func0000000000000003:                   # @func0000000000000003
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
+func0000000000000028:                   # @func0000000000000028
+	sext.w	a2, a2
+	sltiu	a2, a2, 65
+	czero.nez	a1, a1, a2
+	or	a0, a0, a1
+	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a2
 	slti	a2, a2, 64
@@ -43,7 +49,7 @@ func0000000000000009:                   # @func0000000000000009
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	sext.w	a2, a2
 	bseti	a3, zero, 63
 	sltiu	a2, a2, 64

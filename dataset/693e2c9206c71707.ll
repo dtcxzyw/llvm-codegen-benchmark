@@ -17,7 +17,7 @@ entry:
 ; cmake/optimized/zdict.c.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f1(i32 %0, i64 %1) #0 {
+define i32 @func00000000000001e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %2, 32768

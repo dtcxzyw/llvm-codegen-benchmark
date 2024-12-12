@@ -1,7 +1,8 @@
 
-%"struct.vcpkg::SectionTableHeader.2752408" = type { [8 x i8], i32, i32, i32, i32, i32, i32, i16, i16, i32 }
+%"struct.vcpkg::SectionTableHeader.2864717" = type { [8 x i8], i32, i32, i32, i32, i32, i32, i16, i16, i32 }
 
-; 28 occurrences:
+; 30 occurrences:
+; boost/optimized/static_string.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -30,12 +31,13 @@
 ; wasmtime-rs/optimized/3wy7qx4e8fg0rwt0.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i16 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
-  %5 = getelementptr nusw { [3 x i64] }, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw { [3 x i64] }, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -53,12 +55,13 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; clamav/optimized/lzwdec.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; icu/optimized/genmbcs.ll
 ; libzmq/optimized/mtrie.cpp.ll
 ; openjdk/optimized/abstractInterpreter_x86.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i16 %2) #0 {
 entry:
@@ -76,7 +79,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
-  %5 = getelementptr %"struct.vcpkg::SectionTableHeader.2752408", ptr %0, i64 %4
+  %5 = getelementptr %"struct.vcpkg::SectionTableHeader.2864717", ptr %0, i64 %4
   ret ptr %5
 }
 

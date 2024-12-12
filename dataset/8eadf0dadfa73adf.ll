@@ -1,5 +1,6 @@
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/digest.c.ll
 ; cmake/optimized/xmltok.c.ll
@@ -15,6 +16,7 @@
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
 ; php/optimized/phpdbg_prompt.ll
 ; ruby/optimized/ruby.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, ptr %1, i8 %2) #0 {
 entry:

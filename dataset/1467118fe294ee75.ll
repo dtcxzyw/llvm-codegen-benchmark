@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000018(ptr %0, ptr %1) #0 {
 entry:

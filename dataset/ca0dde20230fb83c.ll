@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 62 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/bmcBmc.c.ll
 ; abc/optimized/cuddAnneal.c.ll
@@ -28,7 +28,6 @@
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
-; opencv/optimized/convhull.cpp.ll
 ; opencv/optimized/histogramphaseunwrapping.cpp.ll
 ; opencv/optimized/npr.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
@@ -41,7 +40,6 @@
 ; openmpi/optimized/coll_han_reduce.ll
 ; openmpi/optimized/comm_ft_detector.ll
 ; openmpi/optimized/comm_ft_reliable_bcast.ll
-; openmpi/optimized/monitoring_test.ll
 ; openspiel/optimized/checkers.cc.ll
 ; openspiel/optimized/crowd_modelling_2d.cc.ll
 ; openspiel/optimized/gin_rummy_utils.cc.ll
@@ -53,7 +51,6 @@
 ; openspiel/optimized/twixtboard.cc.ll
 ; openusd/optimized/decodeframe.c.ll
 ; postgres/optimized/nodeHashjoin.ll
-; postgres/optimized/sharedtuplestore.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; redis/optimized/rax.ll
@@ -73,7 +70,7 @@ entry:
   ret i1 %4
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/utilCex.c.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
@@ -85,6 +82,7 @@ entry:
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll

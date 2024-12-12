@@ -29,12 +29,22 @@ func0000000000000011:                   # @func0000000000000011
 	seta	%al
 	addl	$3, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	xorl	%eax, %eax
 	cmpl	$5, %edi
 	setae	%al
 	shll	$4, %eax
 	orl	$32, %eax
+	retq
+func0000000000000031:                   # @func0000000000000031
+	cmpl	$100, %edi
+	movl	$4, %eax
+	sbbl	$-1, %eax
+	retq
+func0000000000000009:                   # @func0000000000000009
+	cmpl	$4, %edi
+	movl	$178, %eax
+	sbbl	$0, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	xorl	%eax, %eax

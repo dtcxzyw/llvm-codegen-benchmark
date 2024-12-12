@@ -1,11 +1,10 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; cpython/optimized/listobject.ll
 ; libquic/optimized/pickle.cc.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/sparse-vmemmap.ll
 ; linux/optimized/vmalloc.ll
 ; ruby/optimized/prism.ll

@@ -23,13 +23,12 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 2, %1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 3 occurrences:
-; openblas/optimized/dlasyf_aa.c.ll
+; 2 occurrences:
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -47,7 +46,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 1, %1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

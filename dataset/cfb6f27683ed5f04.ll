@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; cpython/optimized/unicodectype.ll
 ; icu/optimized/dtitvfmt.ll
 ; icu/optimized/ushape.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll

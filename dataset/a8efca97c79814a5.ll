@@ -21,25 +21,6 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
-; opencv/optimized/colored_tsdf.cpp.ll
-; opencv/optimized/dynafu_tsdf.cpp.ll
-; opencv/optimized/hash_tsdf.cpp.ll
-; opencv/optimized/oilpainting.cpp.ll
-; opencv/optimized/quaternion.cpp.ll
-; opencv/optimized/tsdf.cpp.ll
-; quickjs/optimized/libbf.ll
-; redis/optimized/expire.ll
-; velox/optimized/MmapAllocator.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = udiv i64 %0, %2
-  %4 = icmp ult i64 %3, 134213633
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; hermes/optimized/OSCompatPosix.cpp.ll
 ; Function Attrs: nounwind
@@ -48,6 +29,24 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = udiv i64 %0, %2
   %4 = icmp slt i64 %3, 0
+  ret i1 %4
+}
+
+; 8 occurrences:
+; opencv/optimized/colored_tsdf.cpp.ll
+; opencv/optimized/dynafu_tsdf.cpp.ll
+; opencv/optimized/hash_tsdf.cpp.ll
+; opencv/optimized/oilpainting.cpp.ll
+; opencv/optimized/quaternion.cpp.ll
+; opencv/optimized/tsdf.cpp.ll
+; quickjs/optimized/libbf.ll
+; redis/optimized/expire.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = udiv i64 %0, %2
+  %4 = icmp ult i64 %3, 2
   ret i1 %4
 }
 

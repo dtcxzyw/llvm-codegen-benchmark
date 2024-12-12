@@ -43,7 +43,7 @@ func000000000000001a:                   # @func000000000000001a
 func0000000000000018:                   # @func0000000000000018
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	vpmuludq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rax
 	movabsq	$1237940039285380275, %rcx      # imm = 0x112E0BE826D694B3

@@ -1,52 +1,35 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	sub	v1.4s, v1.4s, v3.4s
-	sub	v0.4s, v0.4s, v2.4s
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v5.4s
+	and	w8, w2, #0x1
+	sub	w9, w0, w1
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	bic	v5.4s, #7
-	bic	v4.4s, #7
-	sub	v1.4s, v1.4s, v3.4s
-	sub	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v5.4s
-	add	v0.4s, v0.4s, v4.4s
+	and	w8, w2, #0xfffffff8
+	sub	w9, w0, w1
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	sub	v1.4s, v1.4s, v3.4s
-	sub	v0.4s, v0.4s, v2.4s
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v5.4s
+	and	w8, w2, #0x1
+	sub	w9, w0, w1
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	bic	v5.4s, #192, lsl #24
-	bic	v4.4s, #192, lsl #24
-	sub	v1.4s, v1.4s, v3.4s
-	sub	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v5.4s
-	add	v0.4s, v0.4s, v4.4s
+	and	w8, w2, #0x3fffffff
+	sub	w9, w0, w1
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	sub	v3.4s, v3.4s, v5.4s
-	sub	v2.4s, v2.4s, v4.4s
-	bic	v1.4s, #128, lsl #24
-	bic	v0.4s, #128, lsl #24
-	add	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v2.4s
+	sub	w8, w1, w2
+	and	w9, w0, #0x7fffffff
+	add	w0, w9, w8
 	ret
                                         // -- End function

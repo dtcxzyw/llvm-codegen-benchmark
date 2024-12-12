@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	3                               # 0x3
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsrld	$14, %ymm2, %ymm0
@@ -26,13 +26,13 @@ func0000000000000018:                   # @func0000000000000018
 	.long	1                               # 0x1
 .LCPI2_1:
 	.long	3                               # 0x3
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsrld	$30, %ymm2, %ymm0
 	vpternlogd	$236, .LCPI2_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
 	vpcmpeqd	.LCPI2_1(%rip){1to8}, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -80,7 +80,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpsrld	$23, %ymm2, %ymm0
 	vpternlogd	$236, .LCPI3_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
 	vptestnmd	%ymm0, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -19,7 +19,7 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpxor	%ymm2, %ymm1, %ymm1
-	vptestmd	%ymm0, %ymm1, %k0
+	vptestmd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

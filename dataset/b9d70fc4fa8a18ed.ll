@@ -63,7 +63,7 @@
 define float @func0000000000000000(float %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, float 0x3FF0005DC0000000, float 0x3FEFFF4480000000
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 

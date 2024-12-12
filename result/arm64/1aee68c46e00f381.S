@@ -18,3 +18,13 @@ func0000000000000024:                   // @func0000000000000024
 	add	x0, x0, x8, asr #29
 	ret
                                         // -- End function
+func0000000000000027:                   // @func0000000000000027
+// %bb.0:                               // %entry
+	sub	x8, x1, x2
+	mov	x9, #156375464280064            // =0x8e3900000000
+	lsr	x8, x8, #3
+	movk	x9, #14563, lsl #48
+	mul	x8, x8, x9
+	add	x0, x0, x8, asr #29
+	ret
+                                        // -- End function

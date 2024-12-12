@@ -4,7 +4,7 @@
 ; mimalloc/optimized/bitmap.c.ll
 ; postgres/optimized/pg_backup_tar.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = icmp ugt i64 %3, %1
@@ -17,7 +17,7 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; mimalloc/optimized/bitmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 64
   %4 = icmp ule i64 %3, %1

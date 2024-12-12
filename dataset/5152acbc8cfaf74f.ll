@@ -1,11 +1,13 @@
 
-; 108 occurrences:
+; 110 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/fraPart.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/saigInd.c.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; gromacs/optimized/dgetri.cpp.ll
 ; gromacs/optimized/displacement.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
@@ -116,10 +118,12 @@ entry:
   ret i1 %3
 }
 
-; 77 occurrences:
+; 78 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/kitSop.c.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; icu/optimized/collationweights.ll
 ; libwebp/optimized/frame_enc.c.ll
@@ -128,7 +132,6 @@ entry:
 ; linux/optimized/intel_guc_log.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -455,10 +458,9 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/sswRarity.c.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {

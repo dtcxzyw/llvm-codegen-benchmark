@@ -11,7 +11,7 @@ define i8 @func000000000000000c(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = and i8 %2, 63
-  %4 = add i8 %3, %0
+  %4 = add i8 %0, %3
   ret i8 %4
 }
 
@@ -22,7 +22,7 @@ define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = and i8 %2, -16
-  %4 = add i8 %3, %0
+  %4 = add i8 %0, %3
   ret i8 %4
 }
 

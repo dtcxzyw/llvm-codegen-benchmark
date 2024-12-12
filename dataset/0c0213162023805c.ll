@@ -8,7 +8,7 @@
 define i64 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 4
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = shl nsw i32 %3, 1
   %5 = sext i32 %4 to i64
   ret i64 %5
@@ -20,7 +20,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = shl i32 %3, 2
   %5 = sext i32 %4 to i64
   ret i64 %5

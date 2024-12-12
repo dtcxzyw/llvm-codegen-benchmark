@@ -1,5 +1,6 @@
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -25,7 +26,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = and i32 %4, %0
   ret i32 %5
 }

@@ -1,5 +1,6 @@
 
-; 22 occurrences:
+; 23 occurrences:
+; boost/optimized/message.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll

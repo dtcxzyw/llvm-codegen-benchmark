@@ -13,11 +13,10 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cvc5/optimized/transition_inference.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/JSON.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; openusd/optimized/fvarRefinement.cpp.ll
 ; Function Attrs: nounwind

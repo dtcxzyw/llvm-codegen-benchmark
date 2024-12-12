@@ -4,12 +4,6 @@ func000000000000000d:                   # @func000000000000000d
 	or	a0, a0, a1
 	ori	a0, a0, 4
 	ret
-func000000000000003d:                   # @func000000000000003d
-	slli	a1, a1, 61
-	srli	a1, a1, 58
-	or	a0, a0, a1
-	ori	a0, a0, 4
-	ret
 func0000000000000009:                   # @func0000000000000009
 	slli	a1, a1, 61
 	srli	a1, a1, 58
@@ -27,4 +21,10 @@ func000000000000003f:                   # @func000000000000003f
 	srli	a1, a1, 58
 	or	a0, a0, a1
 	ori	a0, a0, -128
+	ret
+func000000000000003d:                   # @func000000000000003d
+	slli	a1, a1, 61
+	srli	a1, a1, 58
+	or	a0, a0, a1
+	ori	a0, a0, 2
 	ret

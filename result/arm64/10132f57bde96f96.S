@@ -1,4 +1,4 @@
-func0000000000000006:                   // @func0000000000000006
+func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	and	x8, x2, #0xfffffffffffffffe
 	cmp	x1, #0

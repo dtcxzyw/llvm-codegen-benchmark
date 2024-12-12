@@ -1,5 +1,8 @@
 
-; 71 occurrences:
+; 74 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/b3GpuParallelLinearBvh.ll
 ; cmake/optimized/parsedate.c.ll
 ; coremark/optimized/core_matrix.c.ll
@@ -13,10 +16,10 @@
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/gregocal.ll
-; icu/optimized/gregoimp.ll
 ; jq/optimized/builtin.ll
 ; linux/optimized/uncore_nhmex.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
@@ -75,13 +78,15 @@
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 100
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/gregorian.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; postgres/optimized/interval.ll
 ; postgres/optimized/localtime.ll
 ; proj/optimized/grids.cpp.ll
@@ -95,7 +100,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 16
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 

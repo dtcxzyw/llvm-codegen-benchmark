@@ -8,7 +8,7 @@ entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 1, i32 -1
   %4 = sitofp i32 %3 to float
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = icmp sgt i32 %1, -1
   %3 = select i1 %2, i32 1, i32 -1
   %4 = sitofp i32 %3 to float
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

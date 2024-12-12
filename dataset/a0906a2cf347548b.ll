@@ -1,8 +1,7 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
-; diesel-rs/optimized/3nv3xphjbq527f6u.ll
 ; lief/optimized/cipher.c.ll
 ; linux/optimized/decompress_unlzo.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll

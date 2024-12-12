@@ -4,10 +4,10 @@
 ; php/optimized/fastcgi.ll
 ; rocksdb/optimized/log_reader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i8 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000421(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = icmp eq i32 %4, 0
   %6 = icmp eq i8 %0, 0
   %7 = select i1 %6, i1 %5, i1 false
@@ -24,10 +24,10 @@ entry:
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c6(i8 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000586(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = icmp ne i32 %4, 0
   %6 = icmp slt i8 %0, 0
   %7 = select i1 %6, i1 %5, i1 false
@@ -39,10 +39,10 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; php/optimized/fastcgi.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i8 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000581(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = icmp ne i32 %4, 0
   %6 = icmp eq i8 %0, 4
   %7 = select i1 %6, i1 %5, i1 false

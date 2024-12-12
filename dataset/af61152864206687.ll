@@ -26,8 +26,7 @@ entry:
   ret i32 %4
 }
 
-; 19 occurrences:
-; cmake/optimized/archive_write_disk_set_standard_lookup.c.ll
+; 18 occurrences:
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
@@ -55,7 +54,8 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll

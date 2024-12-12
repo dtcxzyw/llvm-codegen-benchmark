@@ -5,7 +5,7 @@
 ; quantlib/optimized/smilesectionutils.ll
 ; rocksdb/optimized/merge_operator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
   %3 = ashr exact i64 %0, 5

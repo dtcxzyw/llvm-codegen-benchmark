@@ -16,7 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	vmacc.vx	v10, a1, v8
 	vror.vi	v8, v10, 4
 	vmsleu.vx	v10, v8, a2
-	vmand.mm	v0, v10, v0
+	vmand.mm	v0, v0, v10
 	ret
 .LCPI1_0:
 	.quad	7164004856975580295             # 0x636ba875fd33dc87
@@ -52,7 +52,7 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a0, a0, -1536
 	vnmsub.vx	v10, a0, v8
 	vmsgt.vi	v8, v10, 0
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	ret
 .LCPI3_0:
 	.quad	1237940039285380275             # 0x112e0be826d694b3
@@ -69,11 +69,11 @@ func0000000000000006:                   # @func0000000000000006
 	addiw	a0, a0, -1536
 	vnmsub.vx	v10, a0, v8
 	vmsle.vi	v8, v10, -1
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v8, v8, 7
 	vmsne.vi	v10, v8, 0
-	vmand.mm	v0, v10, v0
+	vmand.mm	v0, v0, v10
 	ret

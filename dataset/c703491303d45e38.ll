@@ -1,6 +1,7 @@
 
 ; 258 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
 ; hermes/optimized/FoldingSet.cpp.ll
 ; hermes/optimized/StringSaver.cpp.ll
@@ -233,7 +234,6 @@
 ; openjdk/optimized/virtualspace.ll
 ; openmpi/optimized/common_sm.ll
 ; openusd/optimized/aom_mem.c.ll
-; ozz-animation/optimized/allocator.cc.ll
 ; postgres/optimized/mcxt.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/base.ll
@@ -262,7 +262,7 @@
 define ptr @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sub i64 0, %1
   %6 = and i64 %4, %5
   %7 = inttoptr i64 %6 to ptr
@@ -281,7 +281,7 @@ entry:
 define ptr @func0000000000000004(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sub nsw i64 0, %1
   %6 = and i64 %4, %5
   %7 = inttoptr i64 %6 to ptr

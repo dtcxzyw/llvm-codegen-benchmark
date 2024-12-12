@@ -1,10 +1,9 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; flac/optimized/cuesheet.c.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; linux/optimized/cppc_acpi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/tcp_input.ll
@@ -28,13 +27,14 @@
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 181704
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 
-; 83 occurrences:
+; 82 occurrences:
 ; abc/optimized/giaResub6.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
+; boost/optimized/sparring_partner.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -90,8 +90,6 @@ entry:
 ; nix/optimized/globals.ll
 ; nix/optimized/lexer-tab.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/shared.ll
 ; nix/optimized/store-api.ll
@@ -130,7 +128,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   ret i64 %3
 }
 
@@ -169,7 +167,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 5
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   ret i64 %3
 }
 

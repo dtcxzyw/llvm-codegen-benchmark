@@ -22,12 +22,12 @@
 define i1 @func0000000000000004(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ult i64 %3, 4611686018427387904
   ret i1 %4
 }
 
-; 151 occurrences:
+; 148 occurrences:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; c3c/optimized/bigint.c.ll
@@ -118,13 +118,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -183,18 +180,21 @@ entry:
 define i1 @func0000000000000006(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
 
-; 36 occurrences:
+; 40 occurrences:
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; abseil-cpp/optimized/pool_urbg_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/OpenGEXImporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/unzip.c.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/unicodeobject.ll
@@ -224,22 +224,25 @@ entry:
 ; tomlplusplus/optimized/toml.cpp.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, 200
   ret i1 %4
 }
 
-; 40 occurrences:
+; 42 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
@@ -276,11 +279,11 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
-  %4 = icmp ult i64 %3, 16777216
+  %3 = add nuw nsw i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 16777216
   ret i1 %4
 }
 
@@ -311,7 +314,6 @@ entry:
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; lief/optimized/hkdf.c.ll
 ; linux/optimized/dm-stats.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/srcutree.ll
 ; llama.cpp/optimized/train.cpp.ll
@@ -330,7 +332,6 @@ entry:
 ; ockam-rs/optimized/2kn3t03vxm4q238t.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; openmpi/optimized/pmix_hash.ll
-; openmpi/optimized/uri.ll
 ; openssl/optimized/libdefault-lib-hkdf.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
@@ -362,13 +363,14 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
-  %2 = zext i1 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp eq i64 %2, %3
-  ret i1 %4
+  %.neg = sext i1 %1 to i64
+  %2 = icmp eq i64 %0, %.neg
+  ret i1 %2
 }
 
 ; 6 occurrences:
@@ -379,17 +381,19 @@ entry:
 ; openssl/optimized/libcrypto-lib-bf_prefix.ll
 ; openssl/optimized/libcrypto-shlib-bf_prefix.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
-; 137 occurrences:
+; 149 occurrences:
 ; actix-rs/optimized/1rfb1t3n8679w74r.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/options_description.ll
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/1r1w77ke32wmydhz.ll
 ; delta-rs/optimized/22gnjb10gks9zxxp.ll
 ; delta-rs/optimized/4o825sfdss6k6lzp.ll
@@ -426,7 +430,6 @@ entry:
 ; folly/optimized/LogCategory.cpp.ll
 ; folly/optimized/LogConfigParser.cpp.ll
 ; folly/optimized/LogLevel.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/MacAddress.cpp.ll
 ; folly/optimized/MallctlHelper.cpp.ll
 ; folly/optimized/NestedCommandLineApp.cpp.ll
@@ -453,7 +456,6 @@ entry:
 ; folly/optimized/dynamic.cpp.ll
 ; folly/optimized/json.cpp.ll
 ; folly/optimized/json_patch.cpp.ll
-; hermes/optimized/RegExp.cpp.ll
 ; lief/optimized/base64.c.ll
 ; lief/optimized/bignum.c.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
@@ -525,16 +527,28 @@ entry:
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/0bnc87yviwo8pzd5mdfzedrf9.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/5oneoeyyqkb2ukvj7os78tevp.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/7znph2z4y55emrpyaq53m67p1.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
+; zed-rs/optimized/ailyigpc30x7abusis8v0e3w5.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; zed-rs/optimized/etkkpijil810uxaq6a1xhpkj9.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
-  %4 = icmp ugt i64 %3, 1152921504606846975
+  %3 = add nuw nsw i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 1152921504606846975
   ret i1 %4
 }
 
-; 273 occurrences:
+; 393 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -549,6 +563,7 @@ entry:
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/pattern.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/linsol_qr.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -603,6 +618,7 @@ entry:
 ; eastl/optimized/TestHash.cpp.ll
 ; eastl/optimized/TestSList.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
+; egg-rs/optimized/208b1a9t1vdfvafq.ll
 ; flatbuffers/optimized/idl_gen_cpp.cpp.ll
 ; graphviz/optimized/neatoinit.c.ll
 ; graphviz/optimized/spring_electrical.c.ll
@@ -772,6 +788,8 @@ entry:
 ; tree-sitter-rs/optimized/3iovi93q4avxr89k.ll
 ; tree-sitter-rs/optimized/4x741xowia4bwziy.ll
 ; tree-sitter-rs/optimized/r2wcjjxpw45z4gt.ll
+; turborepo-rs/optimized/3l7xg3ikfppult5o2lclnyys7.ll
+; turborepo-rs/optimized/5acbtdg9xgmdrsj5fdxgf9kjz.ll
 ; typst-rs/optimized/31vebs4z0lpwpjgn.ll
 ; typst-rs/optimized/3efk6odw6ecl29p.ll
 ; typst-rs/optimized/3gfld5k3k43fgjtj.ll
@@ -805,19 +823,135 @@ entry:
 ; yosys/optimized/ast.ll
 ; yosys/optimized/test_cell.ll
 ; yosys/optimized/xilinx_dsp.ll
+; zed-rs/optimized/05btlo7ldoepff8rc85nwkmca.ll
+; zed-rs/optimized/06rtve3sizrg126ldkmgb72ea.ll
+; zed-rs/optimized/0jp4fusyq9xykq21rvyb30mp5.ll
+; zed-rs/optimized/0nwivtw0lug3nh002ufjq6dhh.ll
+; zed-rs/optimized/0rqg5297g65vn49dzlpohuf0p.ll
+; zed-rs/optimized/0wjif0du0ry5xj140bn8jrpv8.ll
+; zed-rs/optimized/10zh1v68f2nhlerzsork25it5.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/1kvfz4vxu123bq0qsauyrtl3j.ll
+; zed-rs/optimized/1wpmjzbycj91s3t7c45lurwzs.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/247uvyk35qd8oseq9xzgyw4k7.ll
+; zed-rs/optimized/2gkjh80bnq0s3nveklufvkafu.ll
+; zed-rs/optimized/2gu8aea2dmgqxbormk5tspsrx.ll
+; zed-rs/optimized/2jcakdf65g6ofzlv4sxvfz01e.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/39agu11sr34f1pihhhnx3cpe2.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/3mlvu1hzbi0yx2i15kirdr9m0.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/3vybcocwv8yrsy0injuj4w5r9.ll
+; zed-rs/optimized/40uv8e2se7lrb6jj056xzrdug.ll
+; zed-rs/optimized/41d5pgr2utcn1cqybf1gnv3ya.ll
+; zed-rs/optimized/43g83plj67uz6i3ger74cqqgy.ll
+; zed-rs/optimized/45v4v4p1wors7u31ijffun2u0.ll
+; zed-rs/optimized/4dosr1o8lu0ztcoospq0oxi0c.ll
+; zed-rs/optimized/4fjzcqwe72s61qqj6jfld7d0e.ll
+; zed-rs/optimized/4gafs7cnqueum1wf7b8eca1yl.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/4yr6g2ok92pf18o3rcyc7uswo.ll
+; zed-rs/optimized/53uecthum8cknzmllu2n03rw6.ll
+; zed-rs/optimized/56i9d5rrx6hrud8ee30t4acpd.ll
+; zed-rs/optimized/5bn6wrz9qaifqeni05lf8cibk.ll
+; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
+; zed-rs/optimized/5hqq1brsxvx8y8a0yqev7zrnd.ll
+; zed-rs/optimized/5lzup9fu4oickcrtt9hcrukzv.ll
+; zed-rs/optimized/5mqaql67fk8cb5w1h1xcbyeu9.ll
+; zed-rs/optimized/5nxixarptd0951t8mq2q0vsws.ll
+; zed-rs/optimized/5owdgsmfxxef4srab3humtsy7.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
+; zed-rs/optimized/625obb40odxdaxzkpvxlwwadb.ll
+; zed-rs/optimized/65od2e11tbtl7gt1ig9f3i8el.ll
+; zed-rs/optimized/6a4dcc96vf0fkvge4rfwus3hw.ll
+; zed-rs/optimized/6dpdeoevshjmotiif23bteoz7.ll
+; zed-rs/optimized/6fu74pzhfyziwmvuesg9cijzl.ll
+; zed-rs/optimized/6g3lj5acpcf238l82f7t8nwvg.ll
+; zed-rs/optimized/6pd29z3xipq4pnz6alx1b4eai.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/6vfs8ti0m45cvpqthx5jydp5p.ll
+; zed-rs/optimized/70wtzbe6p4cdtwir64ar0nhnk.ll
+; zed-rs/optimized/7dk7owzcyl7erod9ao7xbfp5l.ll
+; zed-rs/optimized/7dlcu72xy2qwyr8vttt104wn3.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/7v472zdqnk6m560xtqo5n2d2r.ll
+; zed-rs/optimized/84i9jtf3ksrb37ur8uqpg2f86.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
+; zed-rs/optimized/8kgq4ra7kc2kfx3e13zx5xumd.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8p4dxt1w61qbvree7zmoo1j9g.ll
+; zed-rs/optimized/8pzylepo63jgxs9pcfvvb1oj4.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
+; zed-rs/optimized/8zogyz7vs6pnjn0mpvvdxdnfr.ll
+; zed-rs/optimized/9by7xbrgipxjyx0u6qobo1s7j.ll
+; zed-rs/optimized/9dr2kwkk18o137jk0clql0t7q.ll
+; zed-rs/optimized/9hlwt18nr4jd7z0ubrvgn7np1.ll
+; zed-rs/optimized/9kjcdkl0h4le3fai44smqnljl.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
+; zed-rs/optimized/9py7mumimdtfbsy7tbvb0jpih.ll
+; zed-rs/optimized/9rc82w53bq52eg6b6q5l2akbg.ll
+; zed-rs/optimized/9s2tp30uc6oo3o3yduu35h8vb.ll
+; zed-rs/optimized/9zapxybzyqo7as5l1oow5wvsl.ll
+; zed-rs/optimized/a34lzu4ftuxlhmjxjhlchhsxi.ll
+; zed-rs/optimized/a4buboiab83euvc0mbk1g3i5t.ll
+; zed-rs/optimized/a8jdixv6mu99htoibqz10zfto.ll
+; zed-rs/optimized/abtvulclots5u0wyf3l8ipflx.ll
+; zed-rs/optimized/asgo9pe6dwkxuaeqdvmvl8bpd.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/b3fsiuvawj3jj0fngz22afvrc.ll
+; zed-rs/optimized/b483winaoz4x1qpsevy13hjmw.ll
+; zed-rs/optimized/b7n4ebe7bkw4hnagh8ndf0qla.ll
+; zed-rs/optimized/b8xkvrb4shexown6t10tlhuh9.ll
+; zed-rs/optimized/b9t1gynydq0pa8qhy2csz043m.ll
+; zed-rs/optimized/bo1t91c1mascqas3l9vuwccq0.ll
+; zed-rs/optimized/bs771lfipzq1q7kt1te6w78ej.ll
+; zed-rs/optimized/but0lbc6tfwky26d8hpjq6ud8.ll
+; zed-rs/optimized/bwqq233pic9g42d5tme8mthrz.ll
+; zed-rs/optimized/cbqkad0b2nxxysxzdk8rkpos2.ll
+; zed-rs/optimized/cci2iopocugemgw5wpg0u7nz3.ll
+; zed-rs/optimized/cd51tp3f9xzjf7uqmsq5af267.ll
+; zed-rs/optimized/cdqqujb9w060rbw90db5qizgi.ll
+; zed-rs/optimized/cn5tr75hwj0e1t163yn1kh0fu.ll
+; zed-rs/optimized/cq7p6jf0dw84580nbcct1r72y.ll
+; zed-rs/optimized/cssy68u8huf5o5fq5kpygh2a8.ll
+; zed-rs/optimized/cz4qv67oyjqkdi7j0kb4hl6tc.ll
+; zed-rs/optimized/d0jkoh70hoa8mo1xffc75hpoi.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/d7bcamiyu8h3qhpmjyao33apx.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dh6uzeflgeff76zwas93djdf6.ll
+; zed-rs/optimized/di66y7a5lci7qvst4agi7dhs8.ll
+; zed-rs/optimized/dmcqbe6j63a9qitde8yy1dhcx.ll
+; zed-rs/optimized/dv0qpczkxuoan1ikq8f0sxhoh.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dyu8ahcv7l11k0z44ye6uqxem.ll
+; zed-rs/optimized/e8pmvisniubbhzhzwd0phlezk.ll
+; zed-rs/optimized/e9u0g76149goadwq8dnm2s4hy.ll
+; zed-rs/optimized/eabk1i73d9nic55wlyvjkefow.ll
+; zed-rs/optimized/er5bx212oa06ay0po6fyxrl51.ll
+; zed-rs/optimized/esas3ubizu9r0ao68kvh5d7vx.ll
+; zed-rs/optimized/f2on42re1vwqfvihm5s1p3ljw.ll
+; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; flatbuffers/optimized/idl_gen_java.cpp.ll
 ; flatbuffers/optimized/idl_gen_python.cpp.ll
@@ -825,13 +959,13 @@ entry:
 ; libpng/optimized/pngwutil.c.ll
 ; llvm/optimized/ARM.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i1 %1) #0 {
 entry:
-  %2 = zext i1 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp ne i64 %2, %3
-  ret i1 %4
+  %.neg = sext i1 %1 to i64
+  %2 = icmp ne i64 %0, %.neg
+  ret i1 %2
 }
 
 ; 8 occurrences:
@@ -847,7 +981,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp sgt i64 %3, -1
   ret i1 %4
 }
@@ -859,10 +993,10 @@ entry:
 ; protobuf/optimized/time_util.cc.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
@@ -888,19 +1022,20 @@ entry:
 ; luau/optimized/lnumprint.cpp.ll
 ; php/optimized/strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = icmp ugt i64 %3, 999999999999999999
   ret i1 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/hashing.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/cmdline.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/slice.cpp.ll
 ; cpython/optimized/io.ll
@@ -909,12 +1044,11 @@ entry:
 ; nix/optimized/nixexpr.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1) #0 {
 entry:
-  %2 = zext i1 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp eq i64 %2, %3
-  ret i1 %4
+  %.neg = sext i1 %1 to i64
+  %2 = icmp eq i64 %0, %.neg
+  ret i1 %2
 }
 
 ; 5 occurrences:
@@ -924,11 +1058,82 @@ entry:
 ; graphviz/optimized/shapes.c.ll
 ; nix/optimized/nixexpr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp ugt i64 %3, 1152921504606846975
+  ret i1 %4
+}
+
+; 7 occurrences:
+; arrow/optimized/bitmap_ops.cc.ll
+; arrow/optimized/key_hash.cc.ll
+; boost/optimized/area.ll
+; cpython/optimized/mpdecimal.ll
+; libevent/optimized/http.c.ll
+; openexr/optimized/parse_header.c.ll
+; openusd/optimized/openexr-c.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i64 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i64
+  %3 = add nsw i64 %0, %2
+  %4 = icmp sgt i64 %3, 0
+  ret i1 %4
+}
+
+; 44 occurrences:
+; boost/optimized/to_chars.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
+; zed-rs/optimized/0ndq4firz8eetu3jvgre1the4.ll
+; zed-rs/optimized/0vc7obw0efbsftrndx4js2egh.ll
+; zed-rs/optimized/1058j2jmz8vfpblqgu0wznwf9.ll
+; zed-rs/optimized/1534rgxx4q286z7j1ga0u291x.ll
+; zed-rs/optimized/29rnga216p81m4tvqorhkvbk6.ll
+; zed-rs/optimized/2ecowgfjy3v8prrslio5p82gj.ll
+; zed-rs/optimized/3epmadi9cv8b1ltlth8rmbbj6.ll
+; zed-rs/optimized/3nzfvkb1wgrtq85t83x4pb8ax.ll
+; zed-rs/optimized/3ovedgaw1yidfseciw93ubpv7.ll
+; zed-rs/optimized/4hp0irs2cz4kzngruuptibfn4.ll
+; zed-rs/optimized/4j81zvwpo3may7k9k6shk9eiu.ll
+; zed-rs/optimized/4pyl8821jbmubnjyx7hxe0q2i.ll
+; zed-rs/optimized/4z6vlo4eo03eve34h1wxhlae7.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/555un0i8pogz0vv4zcck9n117.ll
+; zed-rs/optimized/583y325aopre8a32cz1ntgg8y.ll
+; zed-rs/optimized/5daacodolt3kxkom7996krakh.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
+; zed-rs/optimized/5v6jq3eujodqetc8okckywlyi.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/5xevyi85tx7z64jdpnqwqtx9p.ll
+; zed-rs/optimized/6xlwohkhrc7sko712xmhy0o82.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/79pkk0uh2o8d7azal4ksf2mob.ll
+; zed-rs/optimized/7diapbiz116z58qz43ov3nwc9.ll
+; zed-rs/optimized/7wi6xmtt44qg2wz2d9qkj40kr.ll
+; zed-rs/optimized/8wvy5aljfw2qmbxbtkkewwal7.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/9inm7ktdum3rusjyvfs9qhb1d.ll
+; zed-rs/optimized/9n21501da57t9vdyldumsgur9.ll
+; zed-rs/optimized/a7p3dfm81aw7zhxbzqcly6gjr.ll
+; zed-rs/optimized/a89xbd6f7wd6x8iomyva9pzwz.ll
+; zed-rs/optimized/avkcaupfon6sc5v4swrdwryed.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/blc07kmo6cnkd0np8c4wtnq7t.ll
+; zed-rs/optimized/d1yjg6a7d7s9gdz92nlud1xw8.ll
+; zed-rs/optimized/do9pkq3pa2xl489gkteo18kaw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/epsv5gdpg9wii0jlawu81wh31.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i64 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i64
+  %3 = add nuw i64 %0, %2
+  %4 = icmp ult i64 %3, 10000000000000000
   ret i1 %4
 }
 
@@ -939,39 +1144,33 @@ entry:
 ; libquic/optimized/convert.c.ll
 ; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i1 %1) #0 {
+define i1 @func000000000000006c(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 
-; 6 occurrences:
-; arrow/optimized/bitmap_ops.cc.ll
-; arrow/optimized/key_hash.cc.ll
-; cpython/optimized/mpdecimal.ll
-; libevent/optimized/http.c.ll
-; openexr/optimized/parse_header.c.ll
-; openusd/optimized/openexr-c.c.ll
+; 1 occurrences:
+; hermes/optimized/RegExp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
-  %4 = icmp sgt i64 %3, 1800
+  %3 = add nuw nsw i64 %0, %2
+  %4 = icmp ugt i64 %3, 4294967294
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; node/optimized/libnode.crypto_util.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i1 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i1 %1) #0 {
 entry:
-  %2 = zext i1 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp ne i64 %2, %3
-  ret i1 %4
+  %.neg = sext i1 %1 to i64
+  %2 = icmp ne i64 %0, %.neg
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

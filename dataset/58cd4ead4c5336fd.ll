@@ -1,5 +1,5 @@
 
-; 155 occurrences:
+; 163 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/abcPart.c.ll
@@ -17,6 +17,7 @@
 ; abc/optimized/saigPhase.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/sclLiberty.c.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; cmake/optimized/divsufsort.c.ll
@@ -51,6 +52,13 @@
 ; linux/optimized/maple_tree.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_slider.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -163,13 +171,14 @@ entry:
   ret i32 %4
 }
 
-; 85 occurrences:
+; 86 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/cnfMap.c.ll
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/retLvalue.c.ll
 ; abc/optimized/saigInd.c.ll
 ; abc/optimized/utilCex.c.ll
+; boost/optimized/utf8_codecvt_facet.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; cmake/optimized/cmForEachCommand.cxx.ll
 ; darktable/optimized/RafDecoder.cpp.ll
@@ -182,7 +191,6 @@ entry:
 ; libjpeg-turbo/optimized/jcsample.c.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; lightgbm/optimized/sample_strategy.cpp.ll
-; linux/optimized/acpi_lpat.ll
 ; linux/optimized/airtime.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/ext4_jbd2.ll
@@ -199,6 +207,7 @@ entry:
 ; linux/optimized/power_supply_core.ll
 ; linux/optimized/transaction.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_chart.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
@@ -253,7 +262,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -263,7 +272,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -273,7 +282,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 

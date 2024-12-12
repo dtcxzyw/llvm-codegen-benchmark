@@ -6,11 +6,11 @@
 ; php/optimized/zend_compile.ll
 ; php/optimized/zend_execute.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 24
+  %4 = add i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
   %6 = getelementptr nusw [1 x i8], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -20,11 +20,11 @@ entry:
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; hdf5/optimized/h5diff_array.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = add nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 228
+  %4 = add nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 228
   %6 = getelementptr nusw [7 x float], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -32,11 +32,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/sock_reuseport.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = add nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 48
+  %4 = add nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 48
   %6 = getelementptr [0 x ptr], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -46,12 +46,12 @@ entry:
 ; cvc5/optimized/trigger_term_info.cpp.ll
 ; cvc5/optimized/zero_level_learner.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, 1
   %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr nusw [0 x ptr], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw [0 x ptr], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

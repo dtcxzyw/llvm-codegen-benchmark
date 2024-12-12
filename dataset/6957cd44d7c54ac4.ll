@@ -1,10 +1,9 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; git/optimized/revision.ll
 ; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/dm.ll
 ; linux/optimized/eventpoll.ll
-; linux/optimized/exit.ll
 ; linux/optimized/gc.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
@@ -14,7 +13,7 @@
 ; wolfssl/optimized/internal.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
   %3 = icmp ne i64 %2, 10
@@ -47,7 +46,7 @@ entry:
 ; node/optimized/libnode.node_errors.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2048
   %3 = icmp eq i64 %2, 0
@@ -60,7 +59,7 @@ entry:
 ; git/optimized/rev-list.ll
 ; linux/optimized/string_helpers.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i64 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 562949953421312
   %3 = icmp ne i64 %2, 0
@@ -75,7 +74,7 @@ entry:
 ; llvm/optimized/PPDirectives.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 17179871233
   %3 = icmp eq i64 %2, 0

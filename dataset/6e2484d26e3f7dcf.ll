@@ -8,7 +8,7 @@
 ; velox/optimized/PeeledEncoding.cpp.ll
 ; yosys/optimized/mem.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000164(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
@@ -18,26 +18,12 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
-; openspiel/optimized/sheriff.cc.ll
-; quantlib/optimized/floatfloatswap.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nsw i64 %1, 3
-  %5 = add nsw i64 %4, %3
-  %6 = ashr exact i64 %0, 3
-  %7 = icmp eq i64 %6, %5
-  ret i1 %7
-}
-
 ; 3 occurrences:
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000148(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
@@ -53,7 +39,7 @@ entry:
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; openusd/optimized/changes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000168(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
@@ -67,13 +53,26 @@ entry:
 ; yosys/optimized/mem.ll
 ; yosys/optimized/opt_muxtree.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
   %5 = add nsw i64 %4, %3
   %6 = ashr i64 %0, 32
   %7 = icmp ult i64 %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; openspiel/optimized/sheriff.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000161(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nsw i64 %1, 3
+  %5 = add nsw i64 %4, %3
+  %6 = ashr exact i64 %0, 2
+  %7 = icmp eq i64 %6, %5
   ret i1 %7
 }
 

@@ -4,6 +4,12 @@ func0000000000000023:                   # @func0000000000000023
 	addb	%al, %al
 	orb	$4, %al
 	retq
+func0000000000000063:                   # @func0000000000000063
+	cmpl	$5, %edi
+	setae	%al
+	addb	%al, %al
+	orb	$4, %al
+	retq
 func0000000000000007:                   # @func0000000000000007
 	cmpl	$2, %edi
 	sete	%cl

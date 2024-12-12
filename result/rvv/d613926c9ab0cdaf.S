@@ -7,7 +7,7 @@ func000000000000008f:                   # @func000000000000008f
 	vmerge.vim	v14, v10, 1, v0
 	vmv1r.v	v0, v12
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v14
 	ret
 func00000000000001cf:                   # @func00000000000001cf
@@ -19,7 +19,7 @@ func00000000000001cf:                   # @func00000000000001cf
 	vmerge.vim	v14, v10, 1, v0
 	vmv1r.v	v0, v12
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v14
 	ret
 .LCPI2_0:
@@ -34,6 +34,6 @@ func0000000000000085:                   # @func0000000000000085
 	vmerge.vim	v14, v10, 1, v0
 	vmv1r.v	v0, v12
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v14
 	ret

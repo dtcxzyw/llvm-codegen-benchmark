@@ -60,7 +60,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -64
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -75,7 +75,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -256
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nuw i32 %4, %0
   ret i32 %5
 }
@@ -95,7 +95,8 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/3a6umeboy1uh9t01.ll
 ; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
@@ -115,7 +116,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -138,7 +139,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -149,7 +150,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -8
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }

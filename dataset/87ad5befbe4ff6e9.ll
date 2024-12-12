@@ -1,17 +1,21 @@
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; openjdk/optimized/cmscam02.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp oeq double %4, 0.000000e+00
   ret i1 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/circpos.c.ll
 ; hermes/optimized/Operations.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
@@ -22,13 +26,15 @@ entry:
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp ogt double %4, 0.000000e+00
   ret i1 %5
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_colorcorrection.c.ll
 ; darktable/optimized/introspection_monochrome.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
@@ -50,7 +56,7 @@ entry:
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp olt double %4, 0.000000e+00
   ret i1 %5
 }
@@ -68,8 +74,20 @@ entry:
 define i1 @func0000000000000001(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp uno double %4, 0.000000e+00
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fsub double %1, %2
+  %4 = fadd double %0, %3
+  %5 = fcmp une double %4, 0.000000e+00
   ret i1 %5
 }
 
@@ -105,7 +123,7 @@ entry:
 define i1 @func0000000000000005(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp ugt double %4, 1.000000e+00
   ret i1 %5
 }

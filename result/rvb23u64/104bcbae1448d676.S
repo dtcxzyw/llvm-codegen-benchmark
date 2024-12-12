@@ -4,7 +4,7 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000002f:                   # @func000000000000002f
 	sext.w	a1, a1
-	slli	a1, a1, 23
+	slli	a1, a1, 28
 	add.uw	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f

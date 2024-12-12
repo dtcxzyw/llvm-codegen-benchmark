@@ -4,7 +4,7 @@
 	.quad	0x3fd5555555555555              # double 0.33333333333333331
 func0000000000000005:                   # @func0000000000000005
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vcvtdq2pd	%ymm0, %zmm0
 	vmulpd	.LCPI0_1(%rip){1to8}, %zmm0, %zmm0
 	retq

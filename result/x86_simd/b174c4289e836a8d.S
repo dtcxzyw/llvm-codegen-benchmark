@@ -38,7 +38,7 @@
 	.byte	255                             # 0xff
 	.byte	255                             # 0xff
 	.byte	255                             # 0xff
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm0, %k1
 	vptestnmd	%ymm1, %ymm1, %k0 {%k1}
@@ -47,7 +47,7 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 .LCPI1_0:
 	.long	1073741824                      # 0x40000000
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm0, %k0 {%k1}
@@ -56,7 +56,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	retq
 .LCPI2_0:
 	.long	4096                            # 0x1000
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	vpmovd2m	%ymm1, %k0
 	vptestmd	.LCPI2_0(%rip){1to8}, %ymm0, %k1
 	korb	%k1, %k0, %k0
@@ -65,7 +65,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	retq
 .LCPI3_0:
 	.long	256                             # 0x100
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpternlogd	$236, .LCPI3_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
 	vptestmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

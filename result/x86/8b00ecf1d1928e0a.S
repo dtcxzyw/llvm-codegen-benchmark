@@ -1,5 +1,5 @@
 func0000000000000004:                   # @func0000000000000004
-	cmpw	$2, %dx
+	cmpw	$-32, %dx
 	setb	%al
 	andb	%sil, %al
 	orb	%dil, %al

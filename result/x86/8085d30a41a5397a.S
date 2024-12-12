@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	imull	$-1227133513, %esi, %eax        # imm = 0xB6DB6DB7

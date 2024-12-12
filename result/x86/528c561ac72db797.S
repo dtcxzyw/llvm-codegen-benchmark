@@ -5,14 +5,14 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rsi
 	seta	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000054:                   # @func0000000000000054
 	subq	%rdx, %rsi
 	addq	$-2, %rsi
 	shrq	%rsi
 	cmpq	%rdi, %rsi
 	setb	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	notq	%rdx
 	addq	%rsi, %rdx
 	shrq	%rdx

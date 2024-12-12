@@ -27,10 +27,10 @@
 ; yosys/optimized/verilog_backend.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -53,10 +53,10 @@ entry:
 ; postgres/optimized/exprparse.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
@@ -76,12 +76,12 @@ entry:
 define i1 @func000000000000000a(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp sgt i32 %3, 65535
   ret i1 %4
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; cmake/optimized/cmCommandArgumentParser.cxx.ll
 ; cmake/optimized/cmExprParser.cxx.ll
 ; eastl/optimized/EAString.cpp.ll
@@ -91,7 +91,6 @@ entry:
 ; gromacs/optimized/gmx_dipoles.cpp.ll
 ; gromacs/optimized/parser.cpp.ll
 ; hdf5/optimized/H5LTparse.c.ll
-; libquic/optimized/prtime.cc.ll
 ; openjdk/optimized/ByteIndexed.ll
 ; openjdk/optimized/UshortIndexed.ll
 ; php/optimized/json_parser.ll
@@ -104,10 +103,10 @@ entry:
 ; velox/optimized/TypeCalculation.yy.cc.ll
 ; velox/optimized/TypeParser.yy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = icmp ult i32 %3, 256
   ret i1 %4
 }
@@ -120,7 +119,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp ugt i32 %3, 2047
   ret i1 %4
 }
@@ -133,11 +132,11 @@ entry:
 ; stb/optimized/stb_c_lexer.c.ll
 ; stb/optimized/stb_include.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = sub i32 0, %0
-  %4 = icmp eq i32 %2, %3
+  %3 = sub nsw i32 0, %2
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -372,19 +371,18 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = sub i32 0, %0
-  %4 = icmp ne i32 %2, %3
+  %3 = sub nsw i32 0, %2
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/cmCommandArgumentParser.cxx.ll
 ; cmake/optimized/cmExprParser.cxx.ll
-; eastl/optimized/EAString.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; graphviz/optimized/grammar.c.ll
 ; hermes/optimized/JSLexer.cpp.ll
@@ -401,10 +399,10 @@ entry:
 ; postgres/optimized/syncrep_gram.ll
 ; velox/optimized/TypeParser.yy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = icmp ugt i32 %3, 51
   ret i1 %4
 }
@@ -417,7 +415,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp slt i32 %3, 214748364
   ret i1 %4
 }
@@ -433,7 +431,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp eq i32 %3, -1
   ret i1 %4
 }
@@ -444,8 +442,30 @@ entry:
 define i1 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = sub i32 0, %0
-  %4 = icmp ne i32 %2, %3
+  %3 = sub nsw i32 0, %2
+  %4 = icmp ne i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; libquic/optimized/prtime.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
+entry:
+  %2 = sext i8 %1 to i32
+  %3 = add nsw i32 %0, %2
+  %4 = icmp samesign ult i32 %3, 628
+  ret i1 %4
+}
+
+; 1 occurrences:
+; eastl/optimized/EAString.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0, i8 %1) #0 {
+entry:
+  %2 = sext i8 %1 to i32
+  %3 = add nsw i32 %0, %2
+  %4 = icmp samesign ugt i32 %3, 5
   ret i1 %4
 }
 

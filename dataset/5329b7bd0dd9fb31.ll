@@ -1,16 +1,13 @@
 
-; 3 occurrences:
-; freetype/optimized/psaux.c.ll
-; llvm/optimized/DiagnosticIDs.cpp.ll
+; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %0, -2
-  %3 = icmp ugt i32 %1, 50331647
-  %4 = select i1 %3, i32 %2, i32 %0
-  %5 = add nsw i32 %4, 2
-  ret i32 %5
+  %2 = icmp ugt i32 %1, 50331647
+  %3 = add nsw i32 %0, 2
+  %4 = select i1 %2, i32 %0, i32 %3
+  ret i32 %4
 }
 
 ; 3 occurrences:
@@ -18,7 +15,7 @@ entry:
 ; gromacs/optimized/compute_io.cpp.ll
 ; openjdk/optimized/constMethod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000069(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a9(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 8
   %3 = icmp sgt i32 %1, 0
@@ -30,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/constMethod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000068(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 8
   %3 = icmp sgt i32 %1, 0
@@ -42,12 +39,25 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DiagnosticIDs.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000e3(i32 %0, i32 %1) #0 {
+define i32 @func00000000000001e3(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 317
-  %3 = icmp ugt i32 %1, 700
+  %3 = icmp samesign ugt i32 %1, 700
   %4 = select i1 %3, i32 %2, i32 %0
   %5 = add nuw nsw i32 %4, 148
+  ret i32 %5
+}
+
+; 2 occurrences:
+; freetype/optimized/psaux.c.ll
+; llvm/optimized/DiagnosticIDs.cpp.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000e1(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %0, -400
+  %3 = icmp samesign ugt i32 %1, 700
+  %4 = select i1 %3, i32 %2, i32 %0
+  %5 = add nsw i32 %4, -200
   ret i32 %5
 }
 
@@ -80,7 +90,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c7(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000187(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 4
   %3 = icmp eq i32 %1, 2
@@ -94,7 +104,7 @@ entry:
 ; opencv/optimized/selectivesearchsegmentation_demo.cpp.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000085(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 10
   %3 = icmp eq i32 %1, 2

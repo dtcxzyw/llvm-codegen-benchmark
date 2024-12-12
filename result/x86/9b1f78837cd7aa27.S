@@ -1,7 +1,6 @@
-func0000000000000038:                   # @func0000000000000038
-	movq	%rdi, %rcx
-	sarq	%rcx
+func0000000000000068:                   # @func0000000000000068
 	testq	%rdi, %rdi
 	movq	$-1, %rax
-	cmovnsq	%rcx, %rax
+	cmovnsq	%rdi, %rax
+	sarq	%rax
 	retq

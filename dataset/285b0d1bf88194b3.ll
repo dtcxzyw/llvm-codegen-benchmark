@@ -133,7 +133,7 @@ entry:
 ; 1 occurrences:
 ; openvdb/optimized/Merge.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = urem i64 %3, %1

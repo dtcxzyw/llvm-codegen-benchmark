@@ -1,13 +1,13 @@
-func00000000000018d4:                   # @func00000000000018d4
+func00000000000031b4:                   # @func00000000000031b4
 	snez	a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, -3
 	sltiu	a0, a0, 2
 	ret
-func0000000000001054:                   # @func0000000000001054
-	srli	a1, a1, 54
+func00000000000031a4:                   # @func00000000000031a4
 	snez	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, -2047
-	sltiu	a0, a0, -2046
+	addi	a0, a0, -2048
+	addi	a0, a0, -1
+	sltiu	a0, a0, -2048
 	ret

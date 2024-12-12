@@ -10,7 +10,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI1_0:
 	.quad	1                               # 0x1
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vpmovsxdq	%xmm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
@@ -44,7 +44,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpmovsxdq	%xmm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
@@ -55,7 +55,7 @@ func000000000000005a:                   # @func000000000000005a
 	retq
 .LCPI6_0:
 	.quad	2147483647                      # 0x7fffffff
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	vpmovsxdq	%xmm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
@@ -63,7 +63,7 @@ func0000000000000058:                   # @func0000000000000058
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpmovsxdq	%xmm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
@@ -72,7 +72,7 @@ func000000000000001a:                   # @func000000000000001a
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpmovsxdq	%xmm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
@@ -82,7 +82,7 @@ func0000000000000016:                   # @func0000000000000016
 	retq
 .LCPI9_0:
 	.quad	-16                             # 0xfffffffffffffff0
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	vpmovsxdq	%xmm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
@@ -92,7 +92,7 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 .LCPI10_0:
 	.quad	-7                              # 0xfffffffffffffff9
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpmovsxdq	%xmm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0

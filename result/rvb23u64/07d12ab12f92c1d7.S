@@ -3,17 +3,17 @@ func0000000000000008:                   # @func0000000000000008
 	mul	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001e8:                   # @func00000000000001e8
 	addi	a2, a2, 1
 	mul	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	addi	a2, a2, 1
 	mul	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func00000000000000f5:                   # @func00000000000000f5
+func00000000000001f5:                   # @func00000000000001f5
 	addi	a2, a2, 1
 	mul	a1, a1, a2
 	sltu	a0, a0, a1

@@ -1,7 +1,6 @@
 func000000000000003f:                   # @func000000000000003f
-	movq	%rdx, %rax
-	shrq	$8, %rax
-	addq	%rsi, %rax
+	leaq	(%rsi,%rdx), %rax
+	shrq	$8, %rdx
 	addq	%rdx, %rax
 	addq	%rdi, %rax
 	retq

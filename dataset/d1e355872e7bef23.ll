@@ -1,17 +1,14 @@
 
-; 59 occurrences:
+; 55 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/giaEnable.c.ll
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaSim.c.ll
 ; bdwgc/optimized/gc.c.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/dense_cholesky.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
-; ceres/optimized/implicit_schur_complement.cc.ll
 ; ceres/optimized/polynomial.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
@@ -57,7 +54,6 @@
 ; opencv/optimized/datastructs.cpp.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/mlib_ImageAffine_NN.ll
-; openjdk/optimized/mlib_c_ImageCopy.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
@@ -66,6 +62,38 @@ entry:
   %4 = getelementptr nusw i8, ptr %3, i64 %0
   %5 = ptrtoint ptr %4 to i64
   %6 = and i64 %5, -8
+  ret i64 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/mlib_c_ImageCopy.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = ptrtoint ptr %4 to i64
+  %6 = and i64 %5, -8
+  ret i64 %6
+}
+
+; 9 occurrences:
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; g2o/optimized/solver_dense.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw double, ptr %1, i64 %2
+  %4 = getelementptr nusw double, ptr %3, i64 %0
+  %5 = ptrtoint ptr %4 to i64
+  %6 = and i64 %5, 7
   ret i64 %6
 }
 
@@ -102,6 +130,18 @@ define i64 @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr double, ptr %1, i64 %2
   %4 = getelementptr nusw double, ptr %3, i64 %0
+  %5 = ptrtoint ptr %4 to i64
+  %6 = and i64 %5, 7
+  ret i64 %6
+}
+
+; 1 occurrences:
+; g2o/optimized/types_seven_dof_expmap.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr double, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw double, ptr %3, i64 %0
   %5 = ptrtoint ptr %4 to i64
   %6 = and i64 %5, 7
   ret i64 %6

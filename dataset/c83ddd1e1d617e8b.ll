@@ -19,7 +19,7 @@ entry:
   ret i64 %4
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; assimp/optimized/StandardShapes.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
@@ -34,7 +34,6 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/Pointer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
@@ -106,17 +105,6 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = udiv i32 %2, %0
   %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; linux/optimized/scsicam.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw i64 %1 to i32
-  %3 = udiv i32 %2, %0
-  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 

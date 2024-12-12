@@ -7,7 +7,17 @@ func0000000000000100:                   # @func0000000000000100
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000022:                   # @func0000000000000022
+func00000000000000c3:                   # @func00000000000000c3
+	sext.w	a2, a2
+	li	a3, 12
+	slli.uw	a1, a1, 3
+	slti	a2, a2, 0
+	sh2add	a1, a1, a1
+	czero.nez	a2, a3, a2
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
+func0000000000000023:                   # @func0000000000000023
 	sext.w	a2, a2
 	li	a3, -4
 	zext.w	a1, a1
@@ -19,7 +29,7 @@ func0000000000000022:                   # @func0000000000000022
 	add	a0, a0, a1
 	addi	a0, a0, 36
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000002f:                   # @func000000000000002f
 	sext.w	a2, a2
 	li	a3, -4
 	slli.uw	a1, a1, 2
@@ -30,7 +40,7 @@ func000000000000002a:                   # @func000000000000002a
 	add	a0, a0, a2
 	addi	a0, a0, 12
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	sext.w	a2, a2
 	li	a3, 3
 	sext.w	a1, a1
@@ -50,7 +60,17 @@ func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a2
 	addi	a0, a0, -4
 	ret
-func0000000000000032:                   # @func0000000000000032
+func000000000000019f:                   # @func000000000000019f
+	sext.w	a2, a2
+	li	a3, -2
+	sext.w	a1, a1
+	czero.eqz	a2, a3, a2
+	sh1add	a1, a1, a1
+	sh2add	a0, a1, a0
+	add	a0, a0, a2
+	addi	a0, a0, 8
+	ret
+func0000000000000033:                   # @func0000000000000033
 	sext.w	a2, a2
 	li	a3, 24
 	sext.w	a1, a1
@@ -61,7 +81,15 @@ func0000000000000032:                   # @func0000000000000032
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
-func000000000000008a:                   # @func000000000000008a
+func000000000000014f:                   # @func000000000000014f
+	sext.w	a2, a2
+	slli.uw	a1, a1, 3
+	sgtz	a2, a2
+	sh1add	a1, a1, a1
+	add	a0, a0, a1
+	sh3add	a0, a2, a0
+	ret
+func000000000000008f:                   # @func000000000000008f
 	sext.w	a2, a2
 	li	a3, 4
 	sltiu	a2, a2, 254

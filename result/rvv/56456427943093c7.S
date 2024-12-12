@@ -8,6 +8,6 @@ func0000000000000000:                   # @func0000000000000000
 	vxor.vv	v12, v10, v8
 	li	a0, 32
 	vsrl.vx	v12, v12, a0
-	vxor.vv	v8, v12, v8
+	vxor.vv	v8, v8, v12
 	vxor.vv	v8, v8, v10
 	ret

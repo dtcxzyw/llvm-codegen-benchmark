@@ -25,7 +25,7 @@ entry:
   ret i8 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; lief/optimized/ssl_tls.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
@@ -37,7 +37,6 @@ entry:
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
-; wireshark/optimized/packet-netlink-netfilter.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i16 %0) #0 {

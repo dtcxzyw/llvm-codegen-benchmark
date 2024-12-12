@@ -15,7 +15,7 @@ func0000000000000028:                   # @func0000000000000028
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wx	v9, v10, a0
-	vmfeq.vv	v0, v9, v8
+	vmfeq.vv	v0, v8, v9
 	ret
 func000000000000002a:                   # @func000000000000002a
 	li	a0, 32
@@ -47,7 +47,7 @@ func0000000000000027:                   # @func0000000000000027
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wx	v9, v10, a0
-	vmfne.vv	v0, v9, v8
+	vmfne.vv	v0, v8, v9
 	ret
 func0000000000000025:                   # @func0000000000000025
 	li	a0, 32

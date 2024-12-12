@@ -4,12 +4,12 @@
 ; openmpi/optimized/ad_write_nolock.ll
 ; openmpi/optimized/ad_write_str_naive.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000b9(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000139(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp sle i64 %3, %1
   %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -22,12 +22,24 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000089(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000109(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp eq i64 %3, %1
   %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
+  ret i64 %6
+}
+
+; 1 occurrences:
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 1
+  %4 = icmp eq i64 %3, %1
+  %5 = zext i1 %4 to i64
+  %6 = add nuw i64 %0, %5
   ret i64 %6
 }
 
@@ -39,7 +51,7 @@ entry:
   %3 = add i64 %2, 1
   %4 = icmp eq i64 %3, %1
   %5 = zext i1 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

@@ -1,8 +1,9 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; abc/optimized/sfmDec.c.ll
 ; arrow/optimized/compare_internal.cc.ll
 ; arrow/optimized/feather.cc.ll
+; boost/optimized/src.ll
 ; cpython/optimized/_json.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -68,10 +69,9 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; Function Attrs: nounwind

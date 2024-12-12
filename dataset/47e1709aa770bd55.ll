@@ -1,5 +1,5 @@
 
-; 113 occurrences:
+; 114 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -48,6 +48,7 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_sdl_window.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll

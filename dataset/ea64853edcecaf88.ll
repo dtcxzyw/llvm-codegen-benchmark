@@ -1,5 +1,5 @@
 
-; 423 occurrences:
+; 434 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cmdUtils.c.ll
@@ -11,6 +11,12 @@
 ; assimp/optimized/LWOAnimation.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/within_sph_geo.ll
 ; brotli/optimized/cluster.c.ll
 ; brotli/optimized/metablock.c.ll
 ; casadi/optimized/convexify.cpp.ll
@@ -137,7 +143,6 @@
 ; gromacs/optimized/thermochemistry.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; hdf5/optimized/H5timer.c.ll
-; hdf5/optimized/io_timer.c.ll
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; hermes/optimized/Math.cpp.ll
@@ -167,6 +172,7 @@
 ; libwebp/optimized/cwebp.c.ll
 ; libwebp/optimized/dwebp.c.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
+; lightgbm/optimized/metric.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
@@ -221,10 +227,12 @@
 ; openblas/optimized/dsteqr.c.ll
 ; openblas/optimized/dsterf.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
+; opencv/optimized/benchmark.cpp.ll
 ; opencv/optimized/bif.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/core_detect.cpp.ll
+; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/denoise_tvl1.cpp.ll
 ; opencv/optimized/dls.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
@@ -235,8 +243,10 @@
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/lda.cpp.ll
 ; opencv/optimized/lsd.cpp.ll
+; opencv/optimized/nms.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
 ; opencv/optimized/p3p.cpp.ll
+; opencv/optimized/perf_common.cpp.ll
 ; opencv/optimized/polynom_solver.cpp.ll
 ; opencv/optimized/pose_3d.cpp.ll
 ; opencv/optimized/pose_graph.cpp.ll
@@ -248,7 +258,9 @@
 ; opencv/optimized/stardetector.cpp.ll
 ; opencv/optimized/svm.cpp.ll
 ; opencv/optimized/templmatch.cpp.ll
+; opencv/optimized/tldUtils.cpp.ll
 ; opencv/optimized/trackerCSRT.cpp.ll
+; opencv/optimized/trackerKCF.cpp.ll
 ; opencv/optimized/tracker_goturn.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/DrawParallelogram.ll
@@ -309,7 +321,6 @@
 ; postgres/optimized/int8.ll
 ; postgres/optimized/pathnode.ll
 ; postgres/optimized/sampling.ll
-; proj/optimized/bacon.cpp.ll
 ; proj/optimized/deformation.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/grids.cpp.ll
@@ -427,7 +438,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 

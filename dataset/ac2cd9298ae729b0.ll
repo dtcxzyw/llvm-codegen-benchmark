@@ -3,7 +3,7 @@
 ; qemu/optimized/fdt_overlay.c.ll
 ; spike/optimized/fdt_overlay.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = icmp ult i32 %2, %0
@@ -18,7 +18,7 @@ entry:
 ; qemu/optimized/fdt.c.ll
 ; spike/optimized/fdt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000208(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, %0
   %3 = icmp ult i32 %2, %0

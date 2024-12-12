@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 91 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -29,8 +29,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -94,16 +92,16 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000304(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
-; 87 occurrences:
+; 85 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -129,8 +127,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -192,11 +188,11 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000189(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000309(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp uge i64 %5, %0
   ret i1 %6
 }
@@ -206,11 +202,11 @@ entry:
 ; php/optimized/dtoa.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
@@ -219,11 +215,11 @@ entry:
 ; php/optimized/dtoa.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000109(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp uge i64 %5, %0
   ret i1 %6
 }
@@ -237,11 +233,11 @@ entry:
 ; redis/optimized/sc.ll
 ; redis/optimized/sc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000308(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -249,7 +245,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/memblock.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000348(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
@@ -261,7 +257,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/memblock.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000344(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
@@ -273,7 +269,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/timekeeping.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000124(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000244(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 1000000, %3
@@ -285,24 +281,12 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hugetlb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 4096, %3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ult i64 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/pagewalk.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000109(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl i64 4096, %3
-  %5 = add i64 %4, %1
-  %6 = icmp uge i64 %5, %0
   ret i1 %6
 }
 
@@ -310,11 +294,11 @@ entry:
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 64, %3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }

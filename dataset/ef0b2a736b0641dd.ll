@@ -1,16 +1,22 @@
 
-; 30 occurrences:
+; 36 occurrences:
 ; abc/optimized/abcCheck.c.ll
 ; abc/optimized/ioWriteVerilog.c.ll
 ; assimp/optimized/OpenDDLParser.cpp.ll
 ; c3c/optimized/c_abi.c.ll
 ; darktable/optimized/collect.c.ll
-; linux/optimized/8250_pnp.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/virtio_net.ll
 ; llvm/optimized/ParsePragma.cpp.ll
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_textarea.ll
 ; lz4/optimized/lz4.c.ll
 ; openjdk/optimized/disassembler.ll
 ; qemu/optimized/target_riscv_pmu.c.ll

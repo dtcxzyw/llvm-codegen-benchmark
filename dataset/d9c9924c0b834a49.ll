@@ -1,27 +1,14 @@
 
-%"class.boost::shared_ptr.48.2720277" = type { ptr, %"class.boost::detail::shared_count.2720189" }
-%"class.boost::detail::shared_count.2720189" = type { ptr }
-
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/X86InsertPrefetch.cpp.ll
 ; php/optimized/math.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 24
-  %4 = select i1 %1, i64 25, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = select i1 %1, i64 1, i64 %3
-  %5 = getelementptr nusw nuw %"class.boost::shared_ptr.48.2720277", ptr %0, i64 %4
+  %3 = add nuw nsw i64 %2, 24
+  %4 = select i1 %1, i64 25, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

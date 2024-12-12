@@ -1,8 +1,9 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; cpython/optimized/_zoneinfo.ll
 ; cpython/optimized/bytesobject.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; ring-rs/optimized/36n9a21mmta9vg69.ll
 ; rust-analyzer-rs/optimized/2doj75lyd196xpee.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll

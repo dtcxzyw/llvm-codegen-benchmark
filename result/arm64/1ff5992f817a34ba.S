@@ -1,10 +1,6 @@
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	sshll	v5.4s, v4.4h, #2
-	sshll2	v4.4s, v4.8h, #2
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v5.4s
-	add	v1.4s, v1.4s, v4.4s
+	add	w8, w0, w1
+	add	w0, w8, w2, sxth #2
 	ret
                                         // -- End function

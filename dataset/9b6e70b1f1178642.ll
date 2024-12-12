@@ -19,18 +19,18 @@ entry:
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1096
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; luau/optimized/lnumprint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %not. = xor i1 %1, true
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gmx_densorder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
   %4 = select i1 %1, i1 true, i1 %3

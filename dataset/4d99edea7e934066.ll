@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; git/optimized/transport.ll
 ; linux/optimized/auth.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; linux/optimized/vt.ll
 ; openusd/optimized/changes.cpp.ll
@@ -14,7 +13,7 @@ entry:
   %2 = shl i16 %1, 11
   %3 = and i16 %2, 8192
   %4 = zext nneg i16 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -42,7 +41,7 @@ entry:
   %2 = shl i16 %1, 7
   %3 = and i16 %2, 7808
   %4 = zext nneg i16 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -55,7 +54,7 @@ entry:
   %2 = shl i16 %1, 10
   %3 = and i16 %2, -32768
   %4 = zext i16 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -73,7 +72,7 @@ entry:
   %2 = shl i16 %1, 8
   %3 = and i16 %2, -4096
   %4 = zext i16 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/http.c.ll
@@ -20,6 +20,7 @@
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; openjdk/optimized/hb-ot-map.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
@@ -33,7 +34,7 @@
 define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   %4 = xor i8 %3, 3
   ret i8 %4
 }

@@ -6,7 +6,7 @@ define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
 entry:
   %notmask = shl nsw i32 -1, %1
   %2 = xor i32 %notmask, -1
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   ret i32 %3
 }
 
@@ -76,8 +76,9 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; clamav/optimized/wwunpack.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000037(i32 %0, i32 %1) #0 {
 entry:

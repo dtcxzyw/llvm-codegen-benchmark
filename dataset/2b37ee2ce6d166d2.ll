@@ -10,14 +10,13 @@ entry:
   ret i8 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; luajit/optimized/lj_ccall.ll
 ; luajit/optimized/lj_ccall_dyn.ll
 ; luau/optimized/CodeGenContext.cpp.ll
-; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; minetest/optimized/voxel.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openvdb/optimized/Merge.cc.ll

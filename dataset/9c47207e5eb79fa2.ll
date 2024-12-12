@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 31 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; lief/optimized/ecp_curves.c.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
@@ -13,7 +13,6 @@
 ; llvm/optimized/LowerMemIntrinsics.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterScavenging.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -32,7 +31,6 @@
 ; llvm/optimized/YAMLParser.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
-; spike/optimized/i64_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i8 %0) #0 {
 entry:
@@ -41,7 +39,7 @@ entry:
   ret i64 %2
 }
 
-; 35 occurrences:
+; 48 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; cpython/optimized/dictobject.ll
@@ -51,7 +49,7 @@ entry:
 ; folly/optimized/IPAddressV4.cpp.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
+; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; openmpi/optimized/comm.ll
 ; openmpi/optimized/comm_init.ll
@@ -77,6 +75,19 @@ entry:
 ; wireshark/optimized/packet-nvme.c.ll
 ; wireshark/optimized/pcapio.c.ll
 ; wolfssl/optimized/sha3.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/7od02cvs02zg2t1jcuk4h4evv.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/ca5us8h013in59yvcsgdq94h9.ll
+; zed-rs/optimized/dmqit6fro6q2erc0ll2pdjc7x.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i8 %0) #0 {
 entry:
@@ -104,7 +115,7 @@ entry:
   ret i64 %2
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -119,6 +130,7 @@ entry:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; eastl/optimized/TestVariant.cpp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0) #0 {
 entry:

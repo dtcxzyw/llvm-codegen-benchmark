@@ -7,7 +7,7 @@ func0000000000000002:                   // @func0000000000000002
 	eor	x8, x3, x8
 	umulh	x9, x2, x8
 	mul	x8, x2, x8
-	eor	x1, x9, x1
-	eor	x0, x8, x0
+	eor	x1, x1, x9
+	eor	x0, x0, x8
 	ret
                                         // -- End function

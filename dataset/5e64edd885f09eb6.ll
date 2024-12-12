@@ -21,7 +21,20 @@ entry:
   %3 = select i1 %2, i64 8, i64 0
   %4 = select i1 %1, i64 96, i64 24
   %5 = add nuw nsw i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 4, i64 2
+  %4 = select i1 %1, i64 2, i64 0
+  %5 = add nuw nsw i64 %4, %3
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

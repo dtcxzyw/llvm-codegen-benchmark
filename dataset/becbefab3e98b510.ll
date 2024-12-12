@@ -23,7 +23,7 @@ define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 15728640
   %3 = icmp eq i64 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -37,27 +37,7 @@ define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 262144
   %3 = icmp ne i64 %2, 0
-  %4 = or i1 %3, %0
-  ret i1 %4
-}
-
-; 10 occurrences:
-; abc/optimized/infback.c.ll
-; abc/optimized/inflate.c.ll
-; cmake/optimized/inflate.c.ll
-; gromacs/optimized/inflate.c.ll
-; libquic/optimized/infback.c.ll
-; libquic/optimized/inflate.c.ll
-; linux/optimized/inflate.ll
-; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
-; zlib/optimized/infback.c.ll
-; zlib/optimized/inflate.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 960
-  %3 = icmp eq i64 %2, 960
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -71,11 +51,22 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 33553920
-  %3 = icmp ult i64 %2, 18944
+  %3 = icmp samesign ult i64 %2, 18944
   %4 = or i1 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/inflate.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 960
+  %3 = icmp eq i64 %2, 960
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

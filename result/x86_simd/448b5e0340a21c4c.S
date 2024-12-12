@@ -10,7 +10,7 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000e:                   # @func000000000000000e
 	vpsrlq	$31, %ymm2, %ymm2
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI2_0:
 	.byte	128                             # 0x80
@@ -47,5 +47,5 @@ func000000000000000e:                   # @func000000000000000e
 	.byte	128                             # 0x80
 func0000000000000003:                   # @func0000000000000003
 	vpshufb	.LCPI2_0(%rip), %ymm2, %ymm2    # ymm2 = zero,zero,zero,zero,zero,zero,ymm2[5],zero,zero,zero,zero,zero,zero,zero,ymm2[13],zero,zero,zero,zero,zero,zero,zero,ymm2[21],zero,zero,zero,zero,zero,zero,zero,ymm2[29],zero
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq

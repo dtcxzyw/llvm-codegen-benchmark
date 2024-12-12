@@ -1,8 +1,8 @@
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	movslq	%edx, %rax
 	leaq	(%rsi,%rax,8), %rax
-	cmpq	%rdi, %rax
-	seta	%cl
+	cmpq	%rax, %rdi
+	setb	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al

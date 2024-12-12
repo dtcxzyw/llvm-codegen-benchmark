@@ -50,7 +50,7 @@ func0000000000000011:                   # @func0000000000000011
 func000000000000000f:                   # @func000000000000000f
 	vpord	.LCPI7_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 func0000000000000017:                   # @func0000000000000017
 	vpaddd	%ymm2, %ymm1, %ymm1

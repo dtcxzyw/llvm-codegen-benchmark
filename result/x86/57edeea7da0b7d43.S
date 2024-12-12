@@ -18,12 +18,6 @@ func0000000000000085:                   # @func0000000000000085
 	shlq	$32, %rdi
 	orq	%rdi, %rax
 	retq
-func0000000000000051:                   # @func0000000000000051
-	xorl	%eax, %eax
-	cmpq	%rdx, %rsi
-	setbe	%al
-	leaq	(%rax,%rdi,8), %rax
-	retq
 func0000000000000011:                   # @func0000000000000011
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi

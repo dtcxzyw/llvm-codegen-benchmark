@@ -23,12 +23,12 @@
 define i32 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; clamav/optimized/matcher-ac.c.ll
@@ -37,6 +37,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/classes.ll
 ; openjdk/optimized/modRefBarrierSetC1.ll
+; php/optimized/pcre2_xclass.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
@@ -47,7 +48,7 @@ entry:
 define i32 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 12
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -59,7 +60,7 @@ entry:
 define i32 @func0000000000000008(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, -4
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -82,7 +83,7 @@ entry:
 define i32 @func000000000000000c(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp slt i8 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

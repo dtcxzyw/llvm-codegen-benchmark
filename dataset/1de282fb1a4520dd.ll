@@ -25,11 +25,10 @@ entry:
   ret i16 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; libquic/optimized/ssl_lib.c.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/io_uring.ll
-; linux/optimized/nsxfname.ll
 ; llvm/optimized/ExprConcepts.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; openjdk/optimized/bytecodes.ll

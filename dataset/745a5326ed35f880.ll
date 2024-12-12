@@ -11,9 +11,11 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_sharpen.c.ll
+; duckdb/optimized/ub_duckdb_parallel.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
@@ -40,8 +42,6 @@ entry:
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestLruCache.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
-; hyperscan/optimized/ng_find_matches.cpp.ll
-; hyperscan/optimized/ng_squash.cpp.ll
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
@@ -57,6 +57,8 @@ entry:
 ; raylib/optimized/rcore.c.ll
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0) #0 {
 entry:

@@ -6,9 +6,9 @@
 ; postgres/optimized/ginpostinglist.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000033(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 64
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 64
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = and i64 %4, 137438953440
@@ -16,8 +16,7 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; jq/optimized/decNumber.ll
+; 1 occurrences:
 ; qemu/optimized/migration_qemu-file.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, ptr %1) #0 {
@@ -30,9 +29,8 @@ entry:
   ret i64 %6
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; php/optimized/iptc.ll
-; php/optimized/math.ll
 ; php/optimized/mime_sniff.ll
 ; php/optimized/password.ll
 ; php/optimized/php_reflection.ll
@@ -42,11 +40,24 @@ entry:
 ; php/optimized/uuencode.ll
 ; php/optimized/var_unserializer.ll
 ; php/optimized/zend_compile.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = and i64 %4, -8
+  %6 = add i64 %5, 32
+  ret i64 %6
+}
+
+; 2 occurrences:
+; php/optimized/math.ll
 ; php/optimized/zend_operators.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = and i64 %4, -8

@@ -1,5 +1,5 @@
 
-; 229 occurrences:
+; 227 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/acbUtil.c.ll
@@ -15,6 +15,7 @@
 ; arrow/optimized/UriRecompose.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/src.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; clamav/optimized/mbox.c.ll
@@ -47,7 +48,6 @@
 ; git/optimized/object-name.ll
 ; git/optimized/packfile.ll
 ; git/optimized/ref-filter.ll
-; git/optimized/scalar.ll
 ; git/optimized/transport.ll
 ; graphviz/optimized/pathpath.c.ll
 ; gromacs/optimized/deflate.c.ll
@@ -78,7 +78,6 @@
 ; lief/optimized/Builder.cpp.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/auditsc.ll
-; linux/optimized/auth_unix.ll
 ; linux/optimized/deflate.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/exthdrs.ll
@@ -89,7 +88,6 @@
 ; linux/optimized/ip_tunnel_core.ll
 ; linux/optimized/lsm_audit.ll
 ; linux/optimized/lz4_decompress.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/output_core.ll
 ; linux/optimized/params.ll
@@ -239,20 +237,6 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; lz4/optimized/lz4hc.c.ll
-; php/optimized/pcre2_compile.ll
-; ruby/optimized/utf_16le.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i64 %0, ptr %1) #0 {
-entry:
-  %2 = ptrtoint ptr %1 to i64
-  %3 = sub i64 %2, %0
-  %4 = trunc i64 %3 to i32
-  %5 = add nuw nsw i32 %4, -5
-  ret i32 %5
-}
-
 ; 2 occurrences:
 ; qemu/optimized/block_vmdk.c.ll
 ; ruby/optimized/sprintf.ll
@@ -266,11 +250,11 @@ entry:
   ret i32 %5
 }
 
-; 70 occurrences:
+; 68 occurrences:
 ; abc/optimized/compress.c.ll
-; abseil-cpp/optimized/charconv_parse.cc.ll
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/UriRecompose.c.ll
+; boost/optimized/numeric.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/json_reader.cpp.ll
@@ -315,8 +299,6 @@ entry:
 ; postgres/optimized/jsonapi.ll
 ; postgres/optimized/jsonapi_shlib.ll
 ; postgres/optimized/jsonapi_srv.ll
-; proj/optimized/wkt_parser.cpp.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; recastnavigation/optimized/fastlz.c.ll
 ; redis/optimized/redis-cli.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
@@ -382,6 +364,20 @@ entry:
   %3 = sub nsw i64 %2, %0
   %4 = trunc i64 %3 to i32
   %5 = add nsw i32 %4, -6
+  ret i32 %5
+}
+
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; lz4/optimized/lz4hc.c.ll
+; php/optimized/pcre2_compile.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = sub i64 %2, %0
+  %4 = trunc i64 %3 to i32
+  %5 = add nuw nsw i32 %4, 3
   ret i32 %5
 }
 

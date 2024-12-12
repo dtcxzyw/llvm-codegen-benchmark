@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; hwloc/optimized/topology-linux.ll
-; libquic/optimized/hkdf.c.ll
 ; linux/optimized/regmap.ll
 ; llvm/optimized/DataFlowSanitizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll

@@ -1,5 +1,5 @@
-func0000000000000051:                   # @func0000000000000051
-	decl	%edx
+func00000000000000a1:                   # @func00000000000000a1
+	incl	%esi
 	cmpl	%esi, %edx
 	sete	%al
 	orb	%dil, %al

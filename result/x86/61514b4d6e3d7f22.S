@@ -9,7 +9,7 @@ func0000000000000018:                   # @func0000000000000018
 	sets	%al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	addl	%edx, %esi
 	cmpl	$8193, %esi                     # imm = 0x2001
 	setae	%al

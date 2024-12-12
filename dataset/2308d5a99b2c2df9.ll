@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 45 occurrences:
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -18,7 +18,6 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; hdf5/optimized/H5system.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/access.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/drm_modes.ll
@@ -54,7 +53,7 @@ entry:
   ret i16 %3
 }
 
-; 28 occurrences:
+; 26 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
 ; cpython/optimized/_codecs_iso2022.ll
 ; darktable/optimized/PanasonicV6Decompressor.cpp.ll
@@ -75,12 +74,10 @@ entry:
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; openexr/optimized/parse_header.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; qemu/optimized/hw_net_pcnet.c.ll
+; openusd/optimized/value.cpp.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
-; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
-; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
-; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wireshark/optimized/color_utils.cpp.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; Function Attrs: nounwind
@@ -88,6 +85,22 @@ define i16 @func0000000000000004(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2621440
   %3 = select i1 %2, i16 %0, i16 0
+  ret i16 %3
+}
+
+; 7 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; qemu/optimized/hw_net_pcnet.c.ll
+; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
+; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000014(i16 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 9
+  %3 = select i1 %2, i16 %0, i16 512
   ret i16 %3
 }
 

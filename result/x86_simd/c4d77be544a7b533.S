@@ -12,7 +12,7 @@ func0000000000000003:                   # @func0000000000000003
 	vpshufd	$245, %xmm1, %xmm1              # xmm1 = xmm1[1,1,3,3]
 	vpblendd	$10, %xmm2, %xmm1, %xmm1        # xmm1 = xmm1[0],xmm2[1],xmm1[2],xmm2[3]
 	vpsrld	$3, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:

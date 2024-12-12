@@ -9,5 +9,5 @@ func0000000000000010:                   # @func0000000000000010
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2   # ymm2 = [22,22,22,22]
 	vpbroadcastq	.LCPI0_2(%rip), %ymm2 {%k1} # ymm2 {%k1} = [11,11,11,11]
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq

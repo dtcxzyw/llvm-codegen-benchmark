@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
   %3 = ashr i64 %0, 1
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
   %3 = ashr i64 %0, 1
@@ -47,7 +47,7 @@ entry:
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; yosys/optimized/eval.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = ashr exact i64 %0, 4
@@ -80,7 +80,7 @@ entry:
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = ashr exact i64 %0, 3
@@ -111,7 +111,7 @@ entry:
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; zxing/optimized/PDFModulusPoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = ashr exact i64 %0, 3
@@ -126,7 +126,7 @@ entry:
 ; spike/optimized/ksubh.ll
 ; spike/optimized/ksubw.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 48
   %3 = ashr exact i64 %0, 48
@@ -139,7 +139,7 @@ entry:
 ; spike/optimized/ksubh.ll
 ; spike/optimized/ksubw.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 48
   %3 = ashr exact i64 %0, 48
@@ -151,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = ashr i64 %0, 32
@@ -160,26 +160,37 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestExtra.cpp.ll
-; eastl/optimized/TestIterator.cpp.ll
+; 2 occurrences:
 ; hyperscan/optimized/ng_calc_components.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001b4(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = ashr exact i64 %0, 3
   %4 = sub nsw i64 %3, %2
-  %5 = icmp ult i64 %4, 64
+  %5 = icmp samesign ult i64 %4, 64
+  ret i1 %5
+}
+
+; 3 occurrences:
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestExtra.cpp.ll
+; eastl/optimized/TestIterator.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a4(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 6
+  %3 = ashr exact i64 %0, 6
+  %4 = sub nsw i64 %3, %2
+  %5 = icmp ult i64 %4, 4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f6(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e6(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sle i64 %0, %1
   ret i1 %2
@@ -188,7 +199,7 @@ entry:
 ; 1 occurrences:
 ; pocketpy/optimized/ceval.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 2
   %3 = ashr i64 %0, 2

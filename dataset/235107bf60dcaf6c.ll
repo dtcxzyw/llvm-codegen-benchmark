@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 16 occurrences:
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
@@ -15,14 +15,12 @@
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; protobuf/optimized/time_util.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = sdiv i64 %0, 86400
+  %3 = sdiv i64 %0, 86400000000
   %4 = add nsw i64 %3, %2
   ret i64 %4
 }

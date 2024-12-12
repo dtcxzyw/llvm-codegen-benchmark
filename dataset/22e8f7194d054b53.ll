@@ -12,23 +12,36 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
-; openssl/optimized/libcrypto-lib-rsaz_exp.ll
-; openssl/optimized/libcrypto-shlib-rsaz_exp.ll
+; 1 occurrences:
 ; rocksdb/optimized/xxhash.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0) #0 {
+define ptr @func000000000000003e(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = and i64 %1, 63
   %3 = sub nuw nsw i64 64, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -1
   ret ptr %5
 }
 
-; 6 occurrences:
-; abc/optimized/abcHieNew.c.ll
+; 4 occurrences:
+; boost/optimized/dump_avx2.ll
+; openssl/optimized/libcrypto-lib-rsaz_exp.ll
+; openssl/optimized/libcrypto-shlib-rsaz_exp.ll
+; rocksdb/optimized/xxhash.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0) #0 {
+entry:
+  %1 = ptrtoint ptr %0 to i64
+  %2 = and i64 %1, 63
+  %3 = sub nuw nsw i64 64, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 552
+  ret ptr %5
+}
+
+; 5 occurrences:
 ; jemalloc/optimized/emap.ll
 ; jemalloc/optimized/emap.pic.ll
 ; jemalloc/optimized/emap.sym.ll
@@ -42,6 +55,19 @@ entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -1
+  ret ptr %5
+}
+
+; 1 occurrences:
+; abc/optimized/abcHieNew.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0) #0 {
+entry:
+  %1 = ptrtoint ptr %0 to i64
+  %2 = and i64 %1, 1023
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 

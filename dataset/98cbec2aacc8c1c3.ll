@@ -66,7 +66,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = xor i32 %3, 7
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -78,7 +78,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = xor i32 %3, 3
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }

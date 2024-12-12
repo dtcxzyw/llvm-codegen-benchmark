@@ -1,10 +1,8 @@
 
-; 14 occurrences:
+; 12 occurrences:
 ; cpython/optimized/_codecs_iso2022.ll
 ; hermes/optimized/JSProxy.cpp.ll
-; linux/optimized/genetlink.ll
 ; linux/optimized/hda_intel.ll
-; linux/optimized/ht.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/rpc_pipe.ll

@@ -1,9 +1,8 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
-; php/optimized/php_variables.ll
 ; rust-analyzer-rs/optimized/3o2zsvb0ik8z2nqt.ll
 ; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll

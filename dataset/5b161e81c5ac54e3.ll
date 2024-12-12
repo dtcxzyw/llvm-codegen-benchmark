@@ -12,10 +12,11 @@ entry:
   ret i64 %4
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
+; boost/optimized/src.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
@@ -49,10 +50,9 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; qemu/optimized/hw_vfio_platform.c.ll
-; qemu/optimized/hw_virtio_virtio-rng.c.ll
 ; qemu/optimized/migration_colo.c.ll
 ; qemu/optimized/net_colo-compare.c.ll
 ; qemu/optimized/ui_input.c.ll

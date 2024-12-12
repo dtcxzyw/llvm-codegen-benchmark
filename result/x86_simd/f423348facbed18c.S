@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	20                              # 0x14
-func00000000000004c4:                   # @func00000000000004c4
+func0000000000000984:                   # @func0000000000000984
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx

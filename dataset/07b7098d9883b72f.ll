@@ -70,13 +70,14 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; git/optimized/line-range.ll
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
 ; libquic/optimized/time.cc.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
+; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/SetTheory.cpp.ll
 ; opencv/optimized/matrix_c.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_mod.ll

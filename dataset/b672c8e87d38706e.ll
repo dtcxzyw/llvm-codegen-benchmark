@@ -27,7 +27,7 @@ entry:
   %2 = lshr i16 %1, 11
   %3 = trunc nuw nsw i16 %2 to i8
   %4 = and i8 %3, 1
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   ret i8 %5
 }
 
@@ -58,7 +58,7 @@ entry:
   %2 = lshr i16 %1, 7
   %3 = trunc i16 %2 to i8
   %4 = and i8 %3, 4
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   ret i8 %5
 }
 

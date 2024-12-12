@@ -8,7 +8,7 @@ define i32 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = sub nsw i32 %5, %0
   ret i32 %6
 }
@@ -18,9 +18,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp eq i32 %2, 0
+  %3 = icmp eq i32 %2, 1
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = sub nsw i32 %5, %0
   ret i32 %6
 }

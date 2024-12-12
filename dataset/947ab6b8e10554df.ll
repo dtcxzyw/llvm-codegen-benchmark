@@ -19,21 +19,45 @@ entry:
   ret i64 %3
 }
 
-; 93 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; clamav/optimized/infblock.c.ll
-; clamav/optimized/phishcheck.c.ll
 ; cmake/optimized/http1.c.ll
 ; curl/optimized/libcurl_la-http1.ll
 ; git/optimized/wildmatch.ll
-; gromacs/optimized/path.cpp.ll
 ; grpc/optimized/parser.cc.ll
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
+; opencc/optimized/Config.cpp.ll
+; openusd/optimized/lz4.cpp.ll
+; php/optimized/parse_posix.ll
+; php/optimized/zend_compile.ll
+; php/optimized/zend_execute.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(ptr %0) #0 {
+entry:
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 32
+  %2 = ptrtoint ptr %1 to i64
+  %3 = xor i64 %2, -81929232789475893
+  ret i64 %3
+}
+
+; 75 occurrences:
+; abseil-cpp/optimized/low_level_alloc.cc.ll
+; clamav/optimized/phishcheck.c.ll
+; gromacs/optimized/path.cpp.ll
 ; libzmq/optimized/udp_engine.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -106,19 +130,12 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; opencc/optimized/Config.cpp.ll
-; openusd/optimized/lz4.cpp.ll
-; php/optimized/parse_posix.ll
-; php/optimized/zend_compile.ll
-; php/optimized/zend_execute.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 32
+  %1 = getelementptr nusw i8, ptr %0, i64 -1
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %2, -81929232789475893
+  %3 = xor i64 %2, -1
   ret i64 %3
 }
 

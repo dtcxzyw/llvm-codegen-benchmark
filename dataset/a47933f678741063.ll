@@ -66,7 +66,7 @@
 ; rocksdb/optimized/hash.cc.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000371(i64 %0, i64 %1) #0 {
+define i1 @func00000000000006e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %2, 4
@@ -76,7 +76,8 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; abc/optimized/abcRec3.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -86,7 +87,7 @@ entry:
 ; cvc5/optimized/Solver.cc.ll
 ; php/optimized/zend_alloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 6
@@ -101,20 +102,20 @@ entry:
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 24
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; abc/optimized/ifCut.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 24
@@ -128,20 +129,20 @@ entry:
 ; gromacs/optimized/gmx_dos.cpp.ll
 ; gromacs/optimized/gmx_velacc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000274(i64 %0, i64 %1) #0 {
+define i1 @func00000000000004f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/gmx_velacc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000271(i64 %0, i64 %1) #0 {
+define i1 @func00000000000004e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = lshr i32 %2, 1

@@ -1,17 +1,17 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	cmpq	$1, %rax
 	sete	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	addq	$-400000001, %rax               # imm = 0xE8287BFF
 	cmpq	$-400000000, %rax               # imm = 0xE8287C00
 	setb	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	movslq	%eax, %rcx
@@ -27,54 +27,54 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$7, %eax
 	setb	%al
 	retq
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	cmpq	$1, %rax
 	sete	%al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000221:                   # @func0000000000000221
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	cmpq	$1, %rax
 	sete	%al
 	retq
-func0000000000000144:                   # @func0000000000000144
+func0000000000000284:                   # @func0000000000000284
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	movslq	%eax, %rcx
 	cmpq	%rax, %rcx
 	setne	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	movslq	%eax, %rcx
 	cmpq	%rax, %rcx
 	setne	%al
 	retq
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	movslq	%eax, %rcx
 	cmpq	%rax, %rcx
 	sete	%al
 	retq
-func0000000000000158:                   # @func0000000000000158
+func00000000000002a8:                   # @func00000000000002a8
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	addq	$-1025, %rax                    # imm = 0xFBFF
 	cmpq	$-1033, %rax                    # imm = 0xFBF7
 	setb	%al
 	retq
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	movslq	%eax, %rcx
 	cmpq	%rax, %rcx
 	sete	%al
 	retq
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	cmpq	$-1, %rax

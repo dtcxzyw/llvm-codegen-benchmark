@@ -17,12 +17,11 @@ entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = select i1 %1, i32 5, i32 4
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
-; 10 occurrences:
-; linux/optimized/dw.ll
+; 8 occurrences:
 ; llvm/optimized/AArch64MachObjectWriter.cpp.ll
 ; llvm/optimized/CGPointerAuth.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
@@ -30,20 +29,20 @@ entry:
 ; llvm/optimized/X86MachObjectWriter.cpp.ll
 ; lua/optimized/lcode.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000000e(i32 %0, i32 %1, i1 %2) #0 {
+define i32 @func000000000000000e(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 100663296, i32 117440512
-  %4 = shl nuw nsw i32 %1, 16
+  %3 = shl nuw nsw i32 %2, 10
+  %4 = select i1 %1, i32 2097152, i32 6291456
   %5 = or disjoint i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/dauTree.c.ll
+; linux/optimized/hda_codec.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i1 %1, i32 %2) #0 {
@@ -67,14 +66,25 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
+; 1 occurrences:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
   %4 = select i1 %1, i32 -2143289344, i32 0
+  %5 = or i32 %4, %3
+  %6 = or i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 4096, i32 0
+  %4 = shl nuw nsw i32 %1, 9
   %5 = or i32 %4, %3
   %6 = or i32 %5, %0
   ret i32 %6
@@ -93,7 +103,7 @@ entry:
   %3 = shl i32 %2, 4
   %4 = select i1 %1, i32 4, i32 0
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

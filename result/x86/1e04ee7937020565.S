@@ -1,4 +1,4 @@
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	testq	%rdx, %rdx
 	setne	%cl
 	andb	%dil, %cl
@@ -6,7 +6,7 @@ func0000000000000182:                   # @func0000000000000182
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000194:                   # @func0000000000000194
+func0000000000000314:                   # @func0000000000000314
 	testq	%rdx, %rdx
 	setne	%cl
 	andb	%dil, %cl
@@ -14,7 +14,7 @@ func0000000000000194:                   # @func0000000000000194
 	setg	%al
 	orb	%cl, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	testq	%rdx, %rdx
 	sete	%cl
 	andb	%sil, %cl
@@ -22,15 +22,7 @@ func0000000000000022:                   # @func0000000000000022
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
-	testq	%rdx, %rdx
-	sete	%cl
-	andb	%dil, %cl
-	cmpl	$11, %esi
-	setae	%al
-	orb	%cl, %al
-	retq
-func000000000000018c:                   # @func000000000000018c
+func000000000000030c:                   # @func000000000000030c
 	testq	%rdx, %rdx
 	setne	%cl
 	andb	%sil, %cl
@@ -38,7 +30,7 @@ func000000000000018c:                   # @func000000000000018c
 	sets	%al
 	orb	%cl, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	testq	%rdx, %rdx
 	sete	%cl
 	andb	%sil, %cl
@@ -46,7 +38,7 @@ func000000000000002c:                   # @func000000000000002c
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	testq	%rdx, %rdx
 	sete	%cl
 	andb	%dil, %cl
@@ -54,7 +46,7 @@ func0000000000000038:                   # @func0000000000000038
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000054:                   # @func0000000000000054
 	testq	%rdx, %rdx
 	sete	%cl
 	andb	%dil, %cl

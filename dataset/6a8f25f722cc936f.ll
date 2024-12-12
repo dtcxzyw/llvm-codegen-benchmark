@@ -1,18 +1,15 @@
 
-; 80 occurrences:
+; 74 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/extraUtilUtil.c.ll
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
-; c3c/optimized/benchmark.c.ll
 ; clamav/optimized/clamdtop.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/signalmodule.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; hdf5/optimized/H5timer.c.ll
-; hdf5/optimized/io_timer.c.ll
 ; icu/optimized/uperf.ll
-; ipopt/optimized/IpUtils.ll
 ; jq/optimized/builtin.ll
 ; libjpeg-turbo/optimized/tjutil.c.ll
 ; libquic/optimized/time.cc.ll
@@ -30,7 +27,6 @@
 ; openmpi/optimized/iof_base_output.ll
 ; openmpi/optimized/iof_hnp_read.ll
 ; openmpi/optimized/iof_prted_read.ll
-; openmpi/optimized/libmpi_c_profile_la-wtime.ll
 ; openmpi/optimized/libprrte_la-pmix_server_dyn.ll
 ; openmpi/optimized/libprrte_la-pmix_server_gen.ll
 ; openmpi/optimized/libprrte_la-prted_comm.ll
@@ -57,7 +53,6 @@
 ; openmpi/optimized/state_dvm.ll
 ; openmpi/optimized/state_prted.ll
 ; openmpi/optimized/tm_tree.ll
-; osqp/optimized/timing_linux.c.ll
 ; php/optimized/SAPI.ll
 ; php/optimized/microtime.ll
 ; php/optimized/session.ll
@@ -73,7 +68,6 @@
 ; wireshark/optimized/lbm_lbtru_transport_dialog.cpp.ll
 ; wireshark/optimized/lte_rlc_graph_dialog.cpp.ll
 ; wireshark/optimized/tap-camelsrt.c.ll
-; wireshark/optimized/time_util.c.ll
 ; wolfssl/optimized/api.c.ll
 ; wolfssl/optimized/benchmark.c.ll
 ; wolfssl/optimized/client.c.ll

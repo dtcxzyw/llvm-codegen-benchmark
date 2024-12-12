@@ -1,11 +1,10 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaTsim.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; libquic/optimized/convert.c.ll
 ; lief/optimized/bignum.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; postgres/optimized/clog.ll

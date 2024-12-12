@@ -1,5 +1,5 @@
 
-; 378 occurrences:
+; 371 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcDress2.c.ll
@@ -30,7 +30,6 @@
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
-; arrow/optimized/cached-powers.cc.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; cvc5/optimized/sygus_unif_io.cpp.ll
@@ -44,7 +43,6 @@
 ; darktable/optimized/live_view.c.ll
 ; darktable/optimized/timeline.c.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
-; double_conversion/optimized/cached-powers.cc.ll
 ; draco/optimized/shannon_entropy.cc.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; flac/optimized/window.c.ll
@@ -76,11 +74,9 @@
 ; gromacs/optimized/colvarcomp_combination.cpp.ll
 ; gromacs/optimized/colvarcomp_gpath.cpp.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
-; gromacs/optimized/dlasdt.cpp.ll
 ; gromacs/optimized/dstein.cpp.ll
 ; gromacs/optimized/editconf.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/gmx_energy.cpp.ll
 ; gromacs/optimized/gmx_sigeps.cpp.ll
@@ -108,7 +104,6 @@
 ; icu/optimized/chnsecal.ll
 ; icu/optimized/csrsbcs.ll
 ; icu/optimized/double-conversion-bignum-dtoa.ll
-; icu/optimized/double-conversion-cached-powers.ll
 ; icu/optimized/gregocal.ll
 ; icu/optimized/hebrwcal.ll
 ; icu/optimized/uchar.ll
@@ -201,6 +196,7 @@
 ; luajit/optimized/lj_ffrecord_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -228,9 +224,7 @@
 ; openblas/optimized/dormql.c.ll
 ; openblas/optimized/dormrq.c.ll
 ; openblas/optimized/dormrz.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsyequb.c.ll
-; openblas/optimized/dsytrs_aa.c.ll
 ; opencv/optimized/Drawing_2.cpp.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
@@ -320,7 +314,6 @@
 ; openusd/optimized/tsTest_SampleBezier.cpp.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/RayTracer.cc.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/math.cpp.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
@@ -412,7 +405,7 @@ entry:
   ret double %2
 }
 
-; 70 occurrences:
+; 68 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/absDup.c.ll
 ; annoy/optimized/annoymodule.ll
@@ -436,8 +429,6 @@ entry:
 ; luajit/optimized/minilua.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/disparity_filters.cpp.ll

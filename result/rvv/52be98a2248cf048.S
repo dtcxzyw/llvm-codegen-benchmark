@@ -43,11 +43,27 @@ func0000000000000012:                   # @func0000000000000012
 	fmv.d.x	fa5, zero
 	vmflt.vf	v0, v8, fa5
 	ret
-func0000000000000084:                   # @func0000000000000084
+func00000000000000c2:                   # @func00000000000000c2
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vi	v0, v16, 4
+	vmseq.vi	v0, v16, 1
+	vsetvli	zero, zero, e64, m4, ta, ma
+	vmerge.vvm	v8, v8, v12, v0
+	fmv.d.x	fa5, zero
+	vmflt.vf	v0, v8, fa5
+	ret
+func0000000000000062:                   # @func0000000000000062
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsle.vi	v0, v16, -1
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmerge.vvm	v8, v12, v8, v0
-	fmv.d.x	fa5, zero
+	fli.d	fa5, 1.0
+	vmflt.vf	v0, v8, fa5
+	ret
+func0000000000000064:                   # @func0000000000000064
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsle.vi	v0, v16, -1
+	vsetvli	zero, zero, e64, m4, ta, ma
+	vmerge.vvm	v8, v12, v8, v0
+	fli.d	fa5, 1.0
 	vmfgt.vf	v0, v8, fa5
 	ret

@@ -58,7 +58,7 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; abc/optimized/sswRarity.c.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -76,6 +76,8 @@ entry:
 ; protobuf/optimized/php_generator.cc.ll
 ; protobuf/optimized/pyi_generator.cc.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -85,9 +87,11 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
+; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
+; opencv/optimized/speech_recognition.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:

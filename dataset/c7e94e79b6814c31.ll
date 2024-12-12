@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/cutMerge.c.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
@@ -9,7 +9,6 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; mitsuba3/optimized/func.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; Function Attrs: nounwind
@@ -35,7 +34,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; abc/optimized/ifSat.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind

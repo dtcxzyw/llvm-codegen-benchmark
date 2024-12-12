@@ -16,7 +16,7 @@ entry:
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i1 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = select i1 %0, i32 8, i32 12

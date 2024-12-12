@@ -8,7 +8,7 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i16 %0, i8 %1) #0 {
+define i16 @func0000000000000021(i16 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i16 0, %0
   %3 = icmp eq i8 %1, 1

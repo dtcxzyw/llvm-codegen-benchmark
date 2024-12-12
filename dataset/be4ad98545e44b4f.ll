@@ -1,5 +1,12 @@
 
-; 10 occurrences:
+; 17 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; icu/optimized/ucasemap.ll
 ; icu/optimized/ustrcase.ll
 ; linux/optimized/drm_vblank.ll

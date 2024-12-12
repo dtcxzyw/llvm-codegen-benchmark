@@ -22,8 +22,7 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
-; meshlab/optimized/filter_func.cpp.ll
+; 3 occurrences:
 ; meshlab/optimized/io_pdb.cpp.ll
 ; wireshark/optimized/byte_view_text.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

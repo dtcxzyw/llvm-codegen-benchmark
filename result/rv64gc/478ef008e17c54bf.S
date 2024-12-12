@@ -1,4 +1,4 @@
-func0000000000000caa:                   # @func0000000000000caa
+func000000000000314a:                   # @func000000000000314a
 	sext.w	a2, a1
 	sext.w	a3, a0
 	or	a0, a0, a1
@@ -9,7 +9,7 @@ func0000000000000caa:                   # @func0000000000000caa
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	sext.w	a1, a1
 	sext.w	a0, a0
 	xor	a2, a0, a1

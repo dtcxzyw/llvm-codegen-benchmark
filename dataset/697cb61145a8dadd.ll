@@ -1,5 +1,5 @@
 
-; 689 occurrences:
+; 691 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -178,7 +178,6 @@
 ; darktable/optimized/introspection_liquify.c.ll
 ; darktable/optimized/introspection_negadoctor.c.ll
 ; darktable/optimized/introspection_overlay.c.ll
-; darktable/optimized/introspection_primaries.c.ll
 ; darktable/optimized/introspection_profile_gamma.c.ll
 ; darktable/optimized/introspection_relight.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
@@ -352,6 +351,7 @@
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; luau/optimized/lmathlib.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/alignset.cpp.ll
@@ -370,7 +370,6 @@
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -473,6 +472,7 @@
 ; ncnn/optimized/groupnorm_x86_avx.cpp.ll
 ; ncnn/optimized/groupnorm_x86_avx512.cpp.ll
 ; ncnn/optimized/groupnorm_x86_fma.cpp.ll
+; ncnn/optimized/layernorm.cpp.ll
 ; ncnn/optimized/lrn.cpp.ll
 ; ncnn/optimized/lrn_x86.cpp.ll
 ; ncnn/optimized/lrn_x86_avx.cpp.ll
@@ -530,7 +530,6 @@
 ; oiio/optimized/texture3d.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; openblas/optimized/common.c.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
 ; opencv/optimized/arithm.dispatch.cpp.ll
@@ -679,6 +678,7 @@
 ; stb/optimized/stb_image_resize2.c.ll
 ; stb/optimized/stb_image_write.c.ll
 ; stb/optimized/stb_truetype.c.ll
+; tev/optimized/ImageCanvas.cpp.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
@@ -689,6 +689,8 @@
 ; xgboost/optimized/multiclass_obj.cc.ll
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

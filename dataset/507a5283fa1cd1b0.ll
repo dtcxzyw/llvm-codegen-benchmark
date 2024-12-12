@@ -1,15 +1,13 @@
 
-; 102 occurrences:
+; 100 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/giaTsim.c.ll
-; abc/optimized/mvcPrint.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/bzlib.c.ll
@@ -111,7 +109,7 @@ entry:
   ret i32 %4
 }
 
-; 56 occurrences:
+; 57 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/bmcBmc3.c.ll
@@ -126,6 +124,7 @@ entry:
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/pdrTsim.c.ll
 ; abc/optimized/saigSynch.c.ll
+; boost/optimized/unique_path.ll
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/MD5.c.ll
 ; cmake/optimized/bzlib.c.ll

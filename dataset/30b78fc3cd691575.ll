@@ -4,12 +4,12 @@
 ; qemu/optimized/migration_ram.c.ll
 ; ruby/optimized/hash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 16
   %3 = and i64 %2, 15
   %4 = add nuw nsw i64 %3, %0
-  %5 = icmp ult i64 %4, 9
+  %5 = icmp samesign ult i64 %4, 9
   ret i1 %5
 }
 
@@ -17,11 +17,11 @@ entry:
 ; cpython/optimized/typeobject.ll
 ; qemu/optimized/migration_ram.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 12
   %3 = and i64 %2, 63
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -30,11 +30,11 @@ entry:
 ; php/optimized/zend_cfg.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = and i64 %2, 1073741816
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = icmp ugt i64 %4, 32768
   ret i1 %5
 }
@@ -43,7 +43,7 @@ entry:
 ; protobuf/optimized/unknown_field_set.cc.ll
 ; velox/optimized/SsdFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = and i64 %2, 4294967295
@@ -52,15 +52,11 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
-; abc/optimized/adler32.c.ll
+; 11 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
-; cmake/optimized/adler32.c.ll
-; gromacs/optimized/adler32.c.ll
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
-; libquic/optimized/adler32.c.ll
 ; linux/optimized/i915_gem_ttm.ll
 ; llvm/optimized/AArch64ConditionalCompares.cpp.ll
 ; llvm/optimized/IfConversion.cpp.ll
@@ -68,14 +64,29 @@ entry:
 ; redis/optimized/hpdata.sym.ll
 ; spike/optimized/vlm_v.ll
 ; spike/optimized/vsm_v.ll
-; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 5
   %3 = and i64 %2, 1
-  %4 = add nuw nsw i64 %3, %0
-  %5 = icmp ugt i64 %4, 1
+  %4 = add nuw nsw i64 %0, %3
+  %5 = icmp samesign ugt i64 %4, 1
+  ret i1 %5
+}
+
+; 5 occurrences:
+; abc/optimized/adler32.c.ll
+; cmake/optimized/adler32.c.ll
+; gromacs/optimized/adler32.c.ll
+; libquic/optimized/adler32.c.ll
+; zlib/optimized/adler32.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 16
+  %3 = and i64 %2, 65535
+  %4 = add nuw nsw i64 %0, %3
+  %5 = icmp ugt i64 %4, 65520
   ret i1 %5
 }
 
@@ -121,7 +132,7 @@ define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 7
   %3 = and i64 %2, 31
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = icmp ugt i64 %4, 32
   ret i1 %5
 }
@@ -133,19 +144,19 @@ define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 10
   %3 = and i64 %2, 4222189076152335
-  %4 = sub i64 0, %0
-  %5 = icmp ne i64 %3, %4
+  %4 = sub nsw i64 0, %3
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/badblocks.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 9
   %3 = and i64 %2, 18014398509481983
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = icmp ult i64 %4, 513
   ret i1 %5
 }

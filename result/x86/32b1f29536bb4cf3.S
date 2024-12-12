@@ -1,11 +1,11 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	(%rsi,%rsi), %ecx
 	andl	$2, %ecx
 	leal	8(%rcx), %eax
 	testb	%dil, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax

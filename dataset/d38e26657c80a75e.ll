@@ -1,5 +1,8 @@
 
-; 60 occurrences:
+; 63 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; folly/optimized/EventBase.cpp.ll

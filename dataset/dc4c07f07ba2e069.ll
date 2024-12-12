@@ -3,12 +3,12 @@
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001f8(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000001fc(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = mul nuw nsw i64 %4, %3
-  %6 = getelementptr nusw i16, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 8
   ret ptr %7
 }

@@ -2,9 +2,9 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/qmc.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func000000000000000a(i32 %0, i32 %1) #0 {
+define i16 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ule i32 %0, %1
+  %2 = icmp samesign ule i32 %0, %1
   %3 = zext i1 %2 to i16
   ret i16 %3
 }
@@ -41,15 +41,35 @@ entry:
   ret i16 %3
 }
 
+; 1 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000030(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %0, %1
+  %3 = zext i1 %2 to i16
+  ret i16 %3
+}
+
+; 1 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000032(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign uge i32 %0, %1
+  %3 = zext i1 %2 to i16
+  ret i16 %3
+}
+
 ; 4 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i16 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %0, %1
+  %2 = icmp samesign ult i32 %0, %1
   %3 = zext i1 %2 to i16
   ret i16 %3
 }

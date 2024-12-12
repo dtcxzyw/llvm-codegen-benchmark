@@ -23,8 +23,7 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; linux/optimized/statfs.ll
+; 2 occurrences:
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; Function Attrs: nounwind

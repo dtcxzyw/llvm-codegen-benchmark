@@ -1,5 +1,5 @@
 
-; 245 occurrences:
+; 243 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -9,7 +9,6 @@
 ; abc/optimized/covMinSop.c.ll
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/darCut.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/fraClaus.c.ll
@@ -31,6 +30,8 @@
 ; abc/optimized/satSolver3.c.ll
 ; assimp/optimized/Exporter.cpp.ll
 ; base64-rs/optimized/1a04td3ag2jefly3.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
@@ -121,10 +122,8 @@
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/i915_request.ll
 ; linux/optimized/inotify_user.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display_power_well.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_hotplug.ll
 ; linux/optimized/intel_modeset_setup.ll
 ; linux/optimized/led.ll
@@ -155,7 +154,6 @@
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/sha1.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/multijitter.cpp.ll
 ; mitsuba3/optimized/orthogonal.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
@@ -287,10 +285,10 @@ entry:
 ; pcg-cpp/optimized/use-partytrick.cpp.ll
 ; php/optimized/avifinfo.ll
 ; php/optimized/softmagic.ll
+; postgres/optimized/lwlock.ll
 ; qemu/optimized/hw_block_m25p80.c.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
-; qemu/optimized/hw_ssi_sifive_spi.c.ll
 ; qemu/optimized/tcg.c.ll
 ; redis/optimized/acl.ll
 ; simdjson/optimized/simdjson.cpp.ll

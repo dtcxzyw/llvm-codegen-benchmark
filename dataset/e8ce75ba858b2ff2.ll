@@ -31,7 +31,8 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; hermes/optimized/JSLexer.cpp.ll
 ; libquic/optimized/a_utf8.c.ll
 ; openssl/optimized/libcrypto-lib-a_utf8.ll
 ; openssl/optimized/libcrypto-shlib-a_utf8.ll
@@ -46,7 +47,7 @@ entry:
   ret i64 %6
 }
 
-; 63 occurrences:
+; 64 occurrences:
 ; clamav/optimized/binhex.c.ll
 ; clamav/optimized/chmd.c.ll
 ; clamav/optimized/oabd.c.ll
@@ -69,7 +70,6 @@ entry:
 ; libpng/optimized/pngrutil.c.ll
 ; libpng/optimized/pngwutil.c.ll
 ; libquic/optimized/packeted_bio.cc.ll
-; linux/optimized/huf_decompress.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
@@ -110,6 +110,8 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wireshark/optimized/k12.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0, i32 %1, i8 %2) #0 {
 entry:

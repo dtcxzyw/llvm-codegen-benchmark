@@ -1,8 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
-	lui	a3, 16
-	addiw	a3, a3, -256
-	and	a2, a2, a3
-	beqz	a2, .LBB0_2
+	andi	a2, a2, -3
+	sext.w	a2, a2
+	li	a3, 1
+	beq	a2, a3, .LBB0_2
 	andi	a0, a1, 1
 .LBB0_2:                                # %entry
 	ret

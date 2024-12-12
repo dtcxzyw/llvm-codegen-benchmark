@@ -1,10 +1,54 @@
 
-; 659 occurrences:
-; actix-rs/optimized/16gnfkdwctazdlj.ll
-; actix-rs/optimized/1zztmmkm73a8t9o2.ll
+; 693 occurrences:
 ; actix-rs/optimized/2nm6r5hc2u1hk1e1.ll
 ; actix-rs/optimized/3tnlvci61w0nl5yv.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/params_iter_impl.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/static_string.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/url_base.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; cjson/optimized/cJSON.c.ll
 ; clamav/optimized/asn1.c.ll
 ; clamav/optimized/autoit.c.ll
@@ -32,8 +76,6 @@
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; coreutils-rs/optimized/1gvxr6i1no6imw7.ll
-; coreutils-rs/optimized/1mziz8r2rj0rwf57.ll
-; coreutils-rs/optimized/1txa66hcuyy467ak.ll
 ; cpython/optimized/io.ll
 ; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -122,7 +164,6 @@
 ; hermes/optimized/JSParserImpl-ts.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
-; hermes/optimized/circular_raw_ostream.cpp.ll
 ; hyperscan/optimized/gough.c.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
@@ -140,7 +181,6 @@
 ; libwebp/optimized/vp8l_enc.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/slab_common.ll
 ; linux/optimized/udp_offload.ll
@@ -443,7 +483,6 @@
 ; node/optimized/libnode.crypto_aes.ll
 ; node/optimized/simdutf.ll
 ; nuttx/optimized/lib_qsort.c.ll
-; nuttx/optimized/lib_rdflush_unlocked.c.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
@@ -579,7 +618,6 @@
 ; postgres/optimized/qsort_interruptible.ll
 ; postgres/optimized/qsort_shlib.ll
 ; postgres/optimized/qsort_srv.ll
-; postgres/optimized/sharedtuplestore.ll
 ; postgres/optimized/tupdesc.ll
 ; postgres/optimized/varbit.ll
 ; postgres/optimized/visibilitymap.ll
@@ -623,6 +661,7 @@
 ; spike/optimized/socketif.ll
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/Ipc.cpp.ll
+; turborepo-rs/optimized/5oyfkcp83qeshlhfpeq645wiv.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
@@ -632,14 +671,9 @@
 ; wasmedge/optimized/serial_description.cpp.ll
 ; wasmedge/optimized/serial_section.cpp.ll
 ; wasmedge/optimized/serial_segment.cpp.ll
-; wasmtime-rs/optimized/1jnsbyq97qowbffw.ll
-; wasmtime-rs/optimized/23sss002rpa4zkjc.ll
-; wasmtime-rs/optimized/3sfuzir68v08mq5f.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
-; wasmtime-rs/optimized/4iv5ea3ut2v30xhq.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wasmtime-rs/optimized/swnyu3nodd8tkou.ll
-; wasmtime-rs/optimized/yfrwxvgfff7tccp.ll
 ; wireshark/optimized/atap_data_model.cpp.ll
 ; wireshark/optimized/decode_as_delegate.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
@@ -663,12 +697,48 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
 
-; 5 occurrences:
+; 41 occurrences:
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; quantlib/optimized/date.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
@@ -678,7 +748,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nuw i64 %0, %4
   ret i64 %5
 }
@@ -720,7 +790,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
@@ -731,7 +801,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nuw nsw i64 %0, %4
   ret i64 %5
 }

@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
@@ -15,6 +15,7 @@
 ; assimp/optimized/StandardShapes.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/XmlSerializer.cpp.ll
+; boost/optimized/dump_ssse3.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/cpu_entry_area.ll
 ; llvm/optimized/LowerSwitch.cpp.ll

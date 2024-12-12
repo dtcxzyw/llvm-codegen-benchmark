@@ -4,7 +4,7 @@ func0000000000000008:                   # @func0000000000000008
 	vwsll.vx	v14, v12, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v10, v14, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 4
 	ret
 func0000000000000028:                   # @func0000000000000028

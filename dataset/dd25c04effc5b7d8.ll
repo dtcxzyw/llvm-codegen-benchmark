@@ -12,9 +12,10 @@ entry:
   ret i64 %5
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/src.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; gromacs/optimized/andersentemperaturecoupling.cpp.ll
 ; gromacs/optimized/cluster_methods.cpp.ll
@@ -40,7 +41,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
-  %4 = add i64 %0, 1
+  %4 = add i64 %0, 2654435769
   %5 = add i64 %4, %3
   ret i64 %5
 }

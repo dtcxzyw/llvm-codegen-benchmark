@@ -53,3 +53,15 @@ func000000000000004f:                   # @func000000000000004f
 	subw	a0, a0, a1
 	addiw	a0, a0, 4
 	ret
+func000000000000014f:                   # @func000000000000014f
+	sext.w	a1, a1
+	andi	a2, a2, 1
+	li	a3, 94
+	czero.nez	a2, a3, a2
+	li	a3, 18
+	sltiu	a1, a1, 78
+	add	a0, a0, a2
+	czero.nez	a1, a3, a1
+	add	a0, a0, a1
+	addiw	a0, a0, 49
+	ret

@@ -315,7 +315,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -327,24 +327,12 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/deoptimization.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp sgt i32 %2, -1
-  %4 = icmp ult i32 %1, 30
-  %5 = select i1 %3, i1 true, i1 %4
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; openjdk/optimized/deoptimization.ll
-; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
   %4 = icmp ne i32 %1, 12
   %5 = select i1 %3, i1 true, i1 %4
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -381,12 +369,12 @@ entry:
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ugt i32 %1, 64
   %5 = select i1 %3, i1 %4, i1 false
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

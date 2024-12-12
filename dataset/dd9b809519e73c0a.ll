@@ -17,12 +17,14 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; typst-rs/optimized/3lt7g0yvt7qzv13u.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000052(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000092(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = icmp uge i32 %2, %0
@@ -47,7 +49,7 @@ entry:
 ; openjdk/optimized/ThreeByteBgr.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp slt i32 %2, %0
@@ -60,7 +62,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp ne i32 %2, %0
@@ -72,7 +74,7 @@ entry:
 ; cpython/optimized/dtoa.ll
 ; openjdk/optimized/splashscreen_impl.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000006c(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp slt i32 %2, %0
@@ -86,10 +88,23 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000004c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = icmp slt i32 %2, %0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 3 occurrences:
+; clamav/optimized/7zIn.c.ll
+; flac/optimized/stream_encoder.c.ll
+; lodepng/optimized/lodepng.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000012(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -1
+  %3 = icmp uge i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -115,7 +130,7 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; yosys/optimized/opt_muxtree.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -3
   %3 = icmp eq i32 %2, %0
@@ -126,7 +141,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/gc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000056(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp sge i32 %2, %0
@@ -137,7 +152,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp ugt i32 %2, %0
@@ -148,21 +163,9 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/slurm_step_layout.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000032(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000052(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = icmp uge i32 %2, %0
-  %4 = zext i1 %3 to i32
-  ret i32 %4
-}
-
-; 2 occurrences:
-; clamav/optimized/7zIn.c.ll
-; lodepng/optimized/lodepng.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000012(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, 1
   %3 = icmp uge i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
@@ -175,7 +178,7 @@ entry:
 ; llvm/optimized/MemorySSA.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000078(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000d8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp ne i32 %2, %0
@@ -197,7 +200,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-dcp-etsi.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000098(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = icmp ne i32 %2, %0
@@ -209,7 +212,7 @@ entry:
 ; redis/optimized/redis-check-aof.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000062(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c2(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 3
   %3 = icmp eq i32 %2, %0
@@ -220,7 +223,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000d6(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp sge i32 %2, %0

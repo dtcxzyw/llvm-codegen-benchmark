@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/histogram.c.ll
 ; cpython/optimized/_codecs_jp.ll
@@ -7,6 +7,7 @@
 ; hwloc/optimized/topology-pci.ll
 ; hwloc/optimized/topology-xml.ll
 ; hwloc/optimized/topology.ll
+; icu/optimized/uresdata.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/pci-sysfs.ll

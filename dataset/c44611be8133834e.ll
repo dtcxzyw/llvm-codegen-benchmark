@@ -13,7 +13,7 @@ entry:
   ret i8 %4
 }
 
-; 20 occurrences:
+; 22 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; coreutils-rs/optimized/2eb96ulhupdvrip8.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
@@ -30,10 +30,12 @@ entry:
 ; llvm/optimized/MemoryOpRemark.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
 ; luau/optimized/ConstantFolding.cpp.ll
+; lvgl/optimized/lv_bar.ll
 ; minetest/optimized/clientlauncher.cpp.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; rocksdb/optimized/io_posix.cc.ll
 ; velox/optimized/ExprToSubfieldFilter.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
@@ -43,7 +45,7 @@ entry:
   ret i8 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; grpc/optimized/retry_filter_legacy_call_data.cc.ll
 ; llvm/optimized/CallLowering.cpp.ll
@@ -61,7 +63,6 @@ entry:
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
-; slurm/optimized/job_features.ll
 ; spike/optimized/s_roundPackToF128.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i1 %0, i64 %1) #0 {
@@ -72,13 +73,24 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/AddressSanitizer.cpp.ll
+; 1 occurrences:
 ; rust-analyzer-rs/optimized/wcknfmhk1hydgx3.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 2
+  %3 = select i1 %0, i1 %2, i1 false
+  %4 = zext i1 %3 to i8
+  ret i8 %4
+}
+
+; 2 occurrences:
+; gromacs/optimized/vsite_parm.cpp.ll
+; llvm/optimized/AddressSanitizer.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000028(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 2
   %3 = select i1 %0, i1 %2, i1 false
   %4 = zext i1 %3 to i8
   ret i8 %4

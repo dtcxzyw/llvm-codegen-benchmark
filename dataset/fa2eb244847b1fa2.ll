@@ -38,7 +38,7 @@ entry:
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000038(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000058(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, %1
   %3 = icmp ne i8 %2, 0

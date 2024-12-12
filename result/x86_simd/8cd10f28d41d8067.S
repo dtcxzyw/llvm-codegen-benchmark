@@ -100,5 +100,5 @@ func0000000000000005:                   # @func0000000000000005
 	vpbroadcastd	.LCPI1_2(%rip), %ymm1   # ymm1 = [5,5,5,5,5,5,5,5]
 	vpbroadcastd	.LCPI1_3(%rip), %ymm1 {%k2} # ymm1 {%k2} = [20,20,20,20,20,20,20,20]
 	vpbroadcastd	.LCPI1_4(%rip), %ymm1 {%k1} # ymm1 {%k1} = [10,10,10,10,10,10,10,10]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

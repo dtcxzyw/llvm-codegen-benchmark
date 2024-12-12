@@ -1,5 +1,5 @@
 
-; 96 occurrences:
+; 95 occurrences:
 ; abc/optimized/sfmCore.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/drm_client_modeset.ll
@@ -65,7 +65,6 @@
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -100,7 +99,7 @@
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 4611686018427387904, %1
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -117,7 +116,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 9223372036854775807, %1
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -129,7 +128,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 9223372036854775807, %1
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 

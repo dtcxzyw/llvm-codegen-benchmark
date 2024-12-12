@@ -1,6 +1,9 @@
 
-; 118 occurrences:
+; 121 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/mpdecimal.ll
@@ -139,7 +142,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; qemu/optimized/util_cutils.c.ll
 ; velox/optimized/DecimalVectorFunctions.cpp.ll
 ; Function Attrs: nounwind

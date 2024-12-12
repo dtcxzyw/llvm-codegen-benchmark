@@ -27,14 +27,15 @@ entry:
   ret float %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, float %1) #0 {
 entry:
-  %2 = fcmp ogt float %1, 1.000000e+00
-  %3 = fmul float %0, 0x3FCC7B0700000000
-  %4 = select i1 %2, float 0x3FCC7B0700000000, float %3
+  %2 = fcmp ogt float %1, 5.130000e+02
+  %3 = fmul float %0, -7.000000e+00
+  %4 = select i1 %2, float -8.750000e-01, float %3
   ret float %4
 }
 

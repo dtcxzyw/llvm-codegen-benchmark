@@ -4,7 +4,7 @@
 ; rocksdb/optimized/cache_dump_load_impl.cc.ll
 ; rocksdb/optimized/io_tracer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = add i64 %1, %0

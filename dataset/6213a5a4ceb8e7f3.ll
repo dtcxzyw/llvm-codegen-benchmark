@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; cmake/optimized/xmltok.c.ll
@@ -12,7 +12,6 @@
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/host.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/synaptics.ll
@@ -49,7 +48,7 @@ entry:
   %3 = shl i8 %2, 3
   %4 = and i8 %3, 32
   %5 = and i8 %1, 24
-  %6 = or disjoint i8 %5, %0
+  %6 = or disjoint i8 %0, %5
   %7 = or disjoint i8 %6, %4
   ret i8 %7
 }

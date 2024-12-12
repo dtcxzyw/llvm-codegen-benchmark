@@ -10,7 +10,7 @@
 ; openjdk/optimized/relocator.ll
 ; stb/optimized/stb_include.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c14(i32 %0, i64 %1) #0 {
+define i1 @func0000000000003024(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 3
   %3 = add i32 %0, -191
@@ -24,7 +24,7 @@ entry:
 ; openjdk/optimized/fieldInfo.ll
 ; openjdk/optimized/oopMap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000d14(i32 %0, i64 %1) #0 {
+define i1 @func0000000000003424(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 3
   %3 = add nsw i32 %0, -191

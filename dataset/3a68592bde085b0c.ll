@@ -7,12 +7,12 @@ entry:
   %3 = lshr i32 %2, 12
   %4 = and i32 %3, 31
   %5 = mul nuw nsw i32 %4, 3600
-  %6 = add i32 %5, %1
+  %6 = add i32 %1, %5
   %7 = add i32 %6, %0
   ret i32 %7
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
@@ -20,6 +20,7 @@ entry:
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
 ; linux/optimized/drm_format_helper.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
@@ -35,7 +36,7 @@ entry:
   %3 = lshr i32 %2, 23
   %4 = and i32 %3, 63
   %5 = mul nuw nsw i32 %4, 60
-  %6 = add nuw nsw i32 %5, %1
+  %6 = add nuw nsw i32 %1, %5
   %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
@@ -61,7 +62,7 @@ entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 255
   %5 = mul nuw nsw i32 %4, 1260
-  %6 = add nsw i32 %5, %1
+  %6 = add nsw i32 %1, %5
   %7 = add nsw i32 %6, %0
   ret i32 %7
 }
@@ -74,7 +75,7 @@ entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 55
   %5 = mul nuw nsw i32 %4, 1260
-  %6 = add nsw i32 %5, %1
+  %6 = add nsw i32 %1, %5
   %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
@@ -87,7 +88,7 @@ entry:
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 1020
   %5 = mul nsw i32 %4, -19081
-  %6 = add nsw i32 %5, %1
+  %6 = add nsw i32 %1, %5
   %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
@@ -101,7 +102,7 @@ entry:
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 1020
   %5 = mul nsw i32 %4, -24116
-  %6 = add nsw i32 %5, %1
+  %6 = add nsw i32 %1, %5
   %7 = add nsw i32 %6, %0
   ret i32 %7
 }
@@ -114,7 +115,7 @@ entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 255
   %5 = mul nuw nsw i32 %4, 115200
-  %6 = add nuw nsw i32 %5, %1
+  %6 = add nuw nsw i32 %1, %5
   %7 = add nsw i32 %6, %0
   ret i32 %7
 }

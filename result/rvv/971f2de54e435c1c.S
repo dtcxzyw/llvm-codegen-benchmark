@@ -12,7 +12,7 @@ func000000000000018c:                   # @func000000000000018c
 	li	a0, 400
 	vmul.vx	v8, v8, a0
 	ret
-func000000000000010c:                   # @func000000000000010c
+func000000000000050c:                   # @func000000000000050c
 	lui	a0, 1048540
 	addi	a0, a0, 1359
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -28,7 +28,7 @@ func000000000000010c:                   # @func000000000000010c
 	addi	a0, a0, -1359
 	vmul.vx	v8, v8, a0
 	ret
-func000000000000010d:                   # @func000000000000010d
+func000000000000050d:                   # @func000000000000050d
 	lui	a0, 1048540
 	addi	a0, a0, 1359
 	vsetivli	zero, 8, e32, m2, ta, ma

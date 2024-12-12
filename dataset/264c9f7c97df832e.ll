@@ -11,7 +11,7 @@
 ; ruby/optimized/util.ll
 ; vcpkg/optimized/export.prefab.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i8 %0) #0 {
+define i1 @func000000000000048c(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i32
   %2 = add nsw i32 %1, -14
@@ -25,7 +25,7 @@ entry:
 ; cmake/optimized/archive_read_support_format_ar.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i8 %0) #0 {
+define i1 @func000000000000048a(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i32
   %2 = add nsw i32 %1, -48

@@ -6,7 +6,7 @@ func0000000000000005:                   # @func0000000000000005
 	cmovnel	%edi, %eax
 	decl	%eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax

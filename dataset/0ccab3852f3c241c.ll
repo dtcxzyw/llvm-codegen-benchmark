@@ -1,9 +1,9 @@
 
 ; 15 occurrences:
 ; libquic/optimized/pickle.cc.ll
-; linux/optimized/auth_unix.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/scm.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; ncnn/optimized/modelbin.cpp.ll
 ; php/optimized/zend_closures.ll
 ; php/optimized/zend_execute.ll

@@ -1,5 +1,6 @@
 
-; 54 occurrences:
+; 59 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; clamav/optimized/pe_icons.c.ll
 ; graphviz/optimized/lab.c.ll
 ; graphviz/optimized/shapes.c.ll
@@ -7,6 +8,10 @@
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_gridnav.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; minetest/optimized/clientiface.cpp.ll

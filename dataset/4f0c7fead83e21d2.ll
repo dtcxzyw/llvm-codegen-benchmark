@@ -1,5 +1,8 @@
 
-; 29 occurrences:
+; 32 occurrences:
+; boost/optimized/graphml.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
@@ -38,7 +41,8 @@ entry:
   ret i8 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/to_chars.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; nuttx/optimized/lib_dtoa_engine.c.ll
 ; ruby/optimized/parser.ll
@@ -67,7 +71,7 @@ entry:
 }
 
 ; 86 occurrences:
-; grpc/optimized/varint.cc.ll
+; boost/optimized/src.ll
 ; libphonenumber/optimized/rune.c.ll
 ; lightgbm/optimized/json11.cpp.ll
 ; linux/optimized/virtio_scsi.ll

@@ -15,10 +15,10 @@ func000000000000000d:                   # @func000000000000000d
 	vzeroupper
 	retq
 .LCPI2_0:
-	.long	64                              # 0x40
+	.long	2147483648                      # 0x80000000
 func0000000000000001:                   # @func0000000000000001
 	vpmovqd	%ymm0, %xmm0
-	vpsrld	$1, %xmm0, %xmm0
+	vpsrld	$16, %xmm0, %xmm0
 	vpord	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

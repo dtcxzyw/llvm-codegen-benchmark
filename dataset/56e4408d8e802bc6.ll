@@ -16,7 +16,8 @@ entry:
   ret i64 %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; ceres/optimized/schur_jacobi_preconditioner.cc.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll

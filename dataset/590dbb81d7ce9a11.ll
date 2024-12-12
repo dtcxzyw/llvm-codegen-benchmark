@@ -3,7 +3,7 @@
 ; openjdk/optimized/intrinsicnode.ll
 ; slurm/optimized/file_functions.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d1(i8 %0, i64 %1) #0 {
+define i32 @func00000000000001a1(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -32
@@ -16,7 +16,7 @@ entry:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/luckyRead.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -2
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/fsck.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i8 %0, i64 %1) #0 {
+define i32 @func00000000000000a1(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = icmp eq i8 %0, 126

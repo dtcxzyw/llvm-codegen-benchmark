@@ -1,10 +1,9 @@
 
-; 3 occurrences:
-; opencv/optimized/resize.cpp.ll
+; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-srp_vfy.ll
 ; openssl/optimized/libcrypto-shlib-srp_vfy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
   %4 = add nuw nsw i64 %3, %1
@@ -55,8 +54,20 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ugt i64 %4, 32
+  %6 = select i1 %0, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/resize.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = add nuw nsw i64 %3, %1
+  %5 = icmp samesign ugt i64 %4, 2147483647
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }

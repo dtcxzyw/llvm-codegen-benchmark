@@ -1,7 +1,8 @@
 
-; 165 occurrences:
+; 164 occurrences:
 ; arrow/optimized/hashing.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; cmake/optimized/xxhash.c.ll
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/introspection_censorize.c.ll
@@ -16,9 +17,7 @@
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; folly/optimized/FiberManager.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/Future.cpp.ll
 ; folly/optimized/GlobalExecutor.cpp.ll
 ; folly/optimized/GlobalShutdownSocketSet.cpp.ll
@@ -171,7 +170,7 @@ entry:
   %2 = lshr i64 %1, 30
   %3 = xor i64 %2, %1
   %4 = mul i64 %3, -4658895280553007687
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   %6 = mul i64 %5, -7723592293110705685
   ret i64 %6
 }
@@ -189,7 +188,7 @@ entry:
   %2 = lshr i64 %1, 14
   %3 = xor i64 %2, %1
   %4 = mul nsw i64 %3, 21
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   %6 = mul i64 %5, 2147483649
   ret i64 %6
 }

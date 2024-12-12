@@ -10,12 +10,12 @@ func000000000000000c:                   # @func000000000000000c
 	movl	$7, %eax
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movl	%edi, %eax
 	notb	%al
 	andb	$2, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andb	$14, %dil
 	cmpb	$10, %dil
 	movl	$55, %ecx

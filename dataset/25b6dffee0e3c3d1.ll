@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/Split.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = sub nuw i64 %0, %2
@@ -49,7 +49,7 @@ entry:
 ; spike/optimized/s_addMagsF128.ll
 ; spike/optimized/s_subMagsF128.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 32767
   %3 = sub nsw i64 %0, %2

@@ -1,10 +1,16 @@
 
-; 5 occurrences:
+; 11 occurrences:
 ; hdf5/optimized/H5Shyper.c.ll
 ; icu/optimized/ucnv_u32.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; openjdk/optimized/gtk3_interface.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000013(i32 %0, i16 %1, i32 %2) #0 {
 entry:
@@ -15,14 +21,20 @@ entry:
   ret i32 %6
 }
 
-; 7 occurrences:
+; 13 occurrences:
 ; hdf5/optimized/H5Shyper.c.ll
 ; icu/optimized/ucnv_u32.ll
 ; icu/optimized/ucnv_u7.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/l_mapgen.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; openjdk/optimized/gtk3_interface.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i32 %0, i16 %1, i32 %2) #0 {
 entry:
@@ -52,7 +64,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 31
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext i16 %1 to i32
   %6 = or disjoint i32 %4, %5
   ret i32 %6
@@ -110,7 +122,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 14
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext i16 %1 to i32
   %6 = or i32 %4, %5
   ret i32 %6
@@ -123,7 +135,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext nneg i16 %1 to i32
   %6 = or i32 %4, %5
   ret i32 %6
@@ -135,7 +147,7 @@ entry:
 define i32 @func0000000000000012(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i16 %1 to i32
   %6 = or i32 %4, %5
   ret i32 %6
@@ -160,7 +172,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 8
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext i16 %1 to i32
   %6 = or i32 %4, %5
   ret i32 %6

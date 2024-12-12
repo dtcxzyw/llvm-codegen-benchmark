@@ -19,8 +19,20 @@
 define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 7
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add nsw i32 %3, 1
+  ret i32 %4
+}
+
+; 2 occurrences:
+; linux/optimized/alternative.ll
+; soc-simulator/optimized/verilated.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %1, 1
+  %3 = add nuw nsw i32 %2, %0
+  %4 = add nuw nsw i32 %3, 31
   ret i32 %4
 }
 
@@ -57,7 +69,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 2
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add i32 %3, 2
   ret i32 %4
 }
@@ -68,19 +80,8 @@ entry:
 define i32 @func0000000000000012(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 2
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add nuw i32 %3, 1
-  ret i32 %4
-}
-
-; 1 occurrences:
-; linux/optimized/alternative.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = or disjoint i32 %1, 2
-  %3 = add nuw nsw i32 %2, %0
-  %4 = add nuw nsw i32 %3, 1
   ret i32 %4
 }
 

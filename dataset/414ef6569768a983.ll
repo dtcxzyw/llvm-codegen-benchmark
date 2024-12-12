@@ -28,7 +28,7 @@ entry:
   ret float %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; gromacs/optimized/anadih.cpp.ll
 ; gromacs/optimized/gmx_dipoles.cpp.ll
 ; gromacs/optimized/gmx_dos.cpp.ll
@@ -37,6 +37,7 @@ entry:
 ; gromacs/optimized/gmx_vanhove.cpp.ll
 ; gromacs/optimized/gmx_velacc.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_svg_render.ll
 ; Function Attrs: nounwind
 define float @func0000000000000007(float %0, i64 %1) #0 {
 entry:

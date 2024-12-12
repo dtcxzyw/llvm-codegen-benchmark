@@ -10,13 +10,13 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %eax
 	seta	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shrl	%esi
 	andl	$1, %esi
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%esi, %eax
 	movzbl	%ah, %eax
 	cmpl	%edi, %eax

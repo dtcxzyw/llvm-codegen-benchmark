@@ -11,15 +11,17 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_roller.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openusd/optimized/row_common.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nsw i32 64, %1
-  %3 = mul nsw i32 %2, %0
-  %4 = add i32 %3, 32
+  %2 = sub nsw i32 100, %1
+  %3 = mul nsw i32 %0, %2
+  %4 = add i32 %3, 99
   ret i32 %4
 }
 
@@ -52,19 +54,18 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 1024, %1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = add i32 %3, 2097152
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openblas/optimized/cblas_drotm.c.ll
-; openblas/optimized/drotm.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 1, %1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = add nsw i32 %3, 1
   ret i32 %4
 }

@@ -1,24 +1,9 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ldr	q16, [sp, #48]
-	fmov	v17.4s, #1.00000000
-	fadd	v16.4s, v16.4s, v3.4s
-	fadd	v7.4s, v16.4s, v7.4s
-	ldp	q18, q16, [sp, #16]
-	fadd	v16.4s, v16.4s, v2.4s
-	fdiv	v7.4s, v17.4s, v7.4s
-	fadd	v6.4s, v16.4s, v6.4s
-	ldr	q16, [sp]
-	fadd	v16.4s, v16.4s, v0.4s
-	fadd	v4.4s, v16.4s, v4.4s
-	fadd	v16.4s, v18.4s, v1.4s
-	fdiv	v6.4s, v17.4s, v6.4s
-	fadd	v5.4s, v16.4s, v5.4s
-	fmul	v3.4s, v7.4s, v3.4s
-	fdiv	v4.4s, v17.4s, v4.4s
-	fmul	v2.4s, v6.4s, v2.4s
-	fdiv	v5.4s, v17.4s, v5.4s
-	fmul	v0.4s, v4.4s, v0.4s
-	fmul	v1.4s, v5.4s, v1.4s
+	fadd	s2, s2, s0
+	fadd	s1, s2, s1
+	fmov	s2, #1.00000000
+	fdiv	s1, s2, s1
+	fmul	s0, s0, s1
 	ret
                                         // -- End function

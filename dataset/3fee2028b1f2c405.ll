@@ -5,7 +5,6 @@
 ; c3c/optimized/compiler.c.ll
 ; c3c/optimized/context.c.ll
 ; c3c/optimized/copying.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/file_utils.c.ll
 ; c3c/optimized/libraries.c.ll
 ; c3c/optimized/linker.c.ll
@@ -34,6 +33,7 @@
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; opencv/optimized/msd.cpp.ll
 ; openjdk/optimized/c1_ValueMap.ll
 ; ruby/optimized/compile.ll

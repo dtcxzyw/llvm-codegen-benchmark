@@ -22,7 +22,7 @@ func0000000000000000:                   # @func0000000000000000
 	mv	a0, a1
 	ret
 .LBB2_2:
-	addiw	a0, a2, -12
+	addiw	a0, a2, 1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a3, a0, 1

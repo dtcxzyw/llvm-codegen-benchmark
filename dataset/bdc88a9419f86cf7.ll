@@ -39,8 +39,7 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
-; linux/optimized/blk-sysfs.ll
+; 4 occurrences:
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll

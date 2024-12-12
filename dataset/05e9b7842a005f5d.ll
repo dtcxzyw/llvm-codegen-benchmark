@@ -92,7 +92,12 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 12 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; libquic/optimized/curve25519.c.ll

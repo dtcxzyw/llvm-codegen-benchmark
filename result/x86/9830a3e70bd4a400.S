@@ -1,11 +1,10 @@
 func0000000000000003:                   # @func0000000000000003
-	movl	%esi, %eax
 	andb	$1, %dl
-	shlb	$4, %dl
-	andb	$1, %al
-	shlb	$5, %al
+	leal	(,%rdx,4), %ecx
+	andb	$1, %sil
+	leal	(%rsi,%rsi), %eax
 	orb	%dil, %al
-	orb	%dl, %al
+	orb	%cl, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%esi, %eax

@@ -7,7 +7,7 @@
 ; openssl/optimized/libcrypto-shlib-cmp_msg.ll
 ; openssl/optimized/libcrypto-shlib-evp_enc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001998(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000006318(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -25,7 +25,7 @@ entry:
 ; wireshark/optimized/packet-enip.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000842(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -39,7 +39,7 @@ entry:
 ; openjdk/optimized/matcher.ll
 ; openjdk/optimized/parse1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001982(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000006302(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null

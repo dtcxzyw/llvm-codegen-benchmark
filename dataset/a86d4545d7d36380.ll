@@ -1,12 +1,11 @@
 
-; 37 occurrences:
+; 34 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRefactor.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/cecSolve.c.ll
@@ -19,11 +18,9 @@
 ; abc/optimized/giaEra.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/hopTruth.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/resSim.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigSynch.c.ll
@@ -61,12 +58,11 @@ entry:
   ret i64 %4
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRpo.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abseil-cpp/optimized/city.cc.ll
-; assimp/optimized/IFCGeometry.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; folly/optimized/farmhash.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -111,8 +107,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
@@ -315,7 +312,7 @@ define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = add nsw i64 %2, -1
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -389,8 +386,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -460,7 +458,7 @@ define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = add i64 %2, -2
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   ret i64 %4
 }
 

@@ -16,9 +16,8 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/blocksort.c.ll
-; clamav/optimized/Xz.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind

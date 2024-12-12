@@ -38,3 +38,11 @@ func0000000000000018:                   # @func0000000000000018
 	addiw	a0, a0, 1022
 .LBB3_2:                                # %entry
 	ret
+func0000000000000030:                   # @func0000000000000030
+	sltiu	a2, a2, 9
+	not	a2, a2
+	or	a1, a1, a2
+	andi	a1, a1, 1
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	ret

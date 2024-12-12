@@ -3,7 +3,7 @@
 ; openmpi/optimized/coll_base_alltoall.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000842(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 11
   %4 = icmp eq i32 %1, 9
@@ -17,7 +17,7 @@ entry:
 ; openssl/optimized/libssl-lib-extensions.ll
 ; openssl/optimized/libssl-shlib-extensions.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001822(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000006042(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 41
   %4 = icmp eq i32 %1, 0

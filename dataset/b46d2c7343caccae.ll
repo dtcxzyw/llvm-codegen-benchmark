@@ -9,12 +9,12 @@
 define float @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   %5 = select i1 %4, float %0, float %3
   ret float %5
 }
 
-; 23 occurrences:
+; 20 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/ifTime.c.ll
 ; abc/optimized/mapperTime.c.ll
@@ -34,15 +34,12 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/find_ellipses.cpp.ll
-; opencv/optimized/short_term_imageless_tracker.cpp.ll
-; opencv/optimized/tracker.cpp.ll
-; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   %5 = select i1 %4, float %0, float %3
   ret float %5
 }
@@ -55,7 +52,7 @@ entry:
 define float @func000000000000000c(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ole float %3, %0
+  %4 = fcmp oge float %0, %3
   %5 = select i1 %4, float %0, float %3
   ret float %5
 }

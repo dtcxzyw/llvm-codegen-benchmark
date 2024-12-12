@@ -2,6 +2,8 @@
 ; 314 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
+; boost/optimized/graphml.ll
+; boost/optimized/src.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; cjson/optimized/cJSON.c.ll
 ; cmake/optimized/archive_write_set_format_ar.c.ll
@@ -102,8 +104,6 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/json11.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/intel_epb.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/lzo1x_compress.ll
 ; linux/optimized/nls_base.ll
 ; linux/optimized/rx.ll
@@ -219,7 +219,6 @@
 ; php/optimized/ascmagic.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/zend_language_scanner.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/oracle_compat.ll
 ; postgres/optimized/tar.ll
 ; postgres/optimized/tar_shlib.ll
@@ -314,6 +313,7 @@
 ; yaml-cpp/optimized/stream.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; yosys/optimized/json11.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i64 %0) #0 {
 entry:

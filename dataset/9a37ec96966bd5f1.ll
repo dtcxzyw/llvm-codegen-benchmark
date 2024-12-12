@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 82 occurrences:
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
 ; icu/optimized/utrie_swap.ll
@@ -8,7 +8,6 @@
 ; linux/optimized/intel_fb.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -115,14 +114,16 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; abseil-cpp/optimized/cord.cc.ll
+; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 3, i32 4
   %4 = shl nuw nsw i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -134,7 +135,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 4
   %4 = shl i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -146,7 +147,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1, i32 3
   %4 = shl nuw nsw i32 %1, %3
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

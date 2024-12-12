@@ -20,3 +20,13 @@ func000000000000001a:                   # @func000000000000001a
 	cmovneq	%rdx, %rsi
 	leaq	-2(%rdi,%rsi), %rax
 	retq
+func000000000000001b:                   # @func000000000000001b
+	testq	%rdx, %rdx
+	cmovneq	%rdx, %rsi
+	leaq	15(%rdi,%rsi), %rax
+	retq
+func000000000000008b:                   # @func000000000000008b
+	cmpq	$1025, %rdx                     # imm = 0x401
+	cmovbq	%rdx, %rsi
+	leaq	2(%rdi,%rsi), %rax
+	retq

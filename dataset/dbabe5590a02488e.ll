@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/Commit.cpp.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
 ; meshoptimizer/optimized/vcacheanalyzer.cpp.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; Function Attrs: nounwind

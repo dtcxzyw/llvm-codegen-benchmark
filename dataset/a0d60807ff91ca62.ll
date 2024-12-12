@@ -7,7 +7,7 @@
 ; openssl/optimized/libdefault-lib-scrypt.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 7
   %3 = mul i64 %2, %0
@@ -20,7 +20,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/block_parallels.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 9
   %3 = mul i64 %2, %0
@@ -28,27 +28,28 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
-; miniaudio/optimized/unity.c.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = mul nuw nsw i64 %2, %0
-  %4 = icmp eq i64 %3, 0
+  %4 = icmp samesign eq i64 %3, 0
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = mul nuw nsw i64 %2, %0
-  %4 = icmp ugt i64 %3, 536870912
+  %4 = icmp samesign ugt i64 %3, 536870912
   ret i1 %4
 }
 
@@ -56,7 +57,7 @@ entry:
 ; oiio/optimized/imageoutput.cpp.ll
 ; openjdk/optimized/swing_GTKEngine.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = mul i64 %2, %0
@@ -85,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; yalantinglibs/optimized/user_defined_serialization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = mul i64 %2, %0
@@ -96,22 +97,11 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_ssa.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = mul nsw i64 %2, %0
   %4 = icmp ugt i64 %3, 32768
-  ret i1 %4
-}
-
-; 1 occurrences:
-; quantlib/optimized/levenbergmarquardt.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = mul i64 %2, %0
-  %4 = icmp sgt i64 %3, -1
   ret i1 %4
 }
 
@@ -152,7 +142,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = mul i64 %2, %0
@@ -180,7 +170,7 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; wireshark/optimized/file-elf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = mul i64 %2, %0
@@ -323,11 +313,11 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = mul i64 %2, %0
-  %4 = icmp ult i64 %3, 32769
+  %4 = icmp samesign ult i64 %3, 32769
   ret i1 %4
 }
 
@@ -345,9 +335,20 @@ entry:
 }
 
 ; 1 occurrences:
+; openusd/optimized/stbImage.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000094(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nsw i64 %1, 2
+  %3 = mul i64 %2, %0
+  %4 = icmp samesign ult i64 %3, 16
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; openusd/optimized/warped_motion.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 16
   %3 = mul nsw i64 %2, %0
@@ -355,10 +356,22 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; miniaudio/optimized/unity.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 2
+  %3 = mul nuw nsw i64 %2, %0
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = mul i64 %2, %0
@@ -369,7 +382,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/tiffdec.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000186(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = mul i64 %2, %0

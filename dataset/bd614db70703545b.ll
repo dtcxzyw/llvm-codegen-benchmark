@@ -1,13 +1,13 @@
 
-%struct.redblack_node.2485824 = type { i64, ptr, i32, i32 }
-%struct.Expr_.2634837 = type { ptr, %union.SourceSpan.2634829, i16, %union.anon.61.2634838 }
-%union.SourceSpan.2634829 = type { i64 }
-%union.anon.61.2634838 = type { %struct.ExprAnySwitch.2634839 }
-%struct.ExprAnySwitch.2634839 = type { i8, %union.anon.63.2634840 }
-%union.anon.63.2634840 = type { %struct.anon.64.2634841 }
-%struct.anon.64.2634841 = type { ptr, %union.SourceSpan.2634829, ptr }
-%struct._zend_ssa_var.2676854 = type { i32, i32, i32, i32, ptr, ptr, ptr, i8 }
-%struct.Indirect.3341356 = type { ptr, i32, ptr }
+%struct.redblack_node.2601295 = type { i64, ptr, i32, i32 }
+%struct.Expr_.2748223 = type { ptr, %union.SourceSpan.2748215, i16, %union.anon.61.2748224 }
+%union.SourceSpan.2748215 = type { i64 }
+%union.anon.61.2748224 = type { %struct.ExprAnySwitch.2748225 }
+%struct.ExprAnySwitch.2748225 = type { i8, %union.anon.63.2748226 }
+%union.anon.63.2748226 = type { %struct.anon.64.2748227 }
+%struct.anon.64.2748227 = type { ptr, %union.SourceSpan.2748215, ptr }
+%struct._zend_ssa_var.2789897 = type { i32, i32, i32, i32, ptr, ptr, ptr, i8 }
+%struct.Indirect.3530524 = type { ptr, i32, ptr }
 
 ; 2 occurrences:
 ; postgres/optimized/tidbitmap.ll
@@ -16,7 +16,7 @@
 define i64 @func0000000000000001(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.redblack_node.2485824, ptr %1, i64 %3
+  %4 = getelementptr %struct.redblack_node.2601295, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, 24
@@ -43,10 +43,10 @@ entry:
 ; openusd/optimized/noticeBatchingSceneIndex.cpp.ll
 ; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func0000000000000019(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %struct.Expr_.2634837, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.Expr_.2748223, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, 56
@@ -62,10 +62,10 @@ entry:
 ; php/optimized/zend_ssa.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func0000000000000039(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %struct._zend_ssa_var.2676854, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_ssa_var.2789897, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, 48
@@ -78,7 +78,7 @@ entry:
 define i64 @func0000000000000021(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.Indirect.3341356, ptr %1, i64 %3
+  %4 = getelementptr %struct.Indirect.3530524, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, 24
@@ -88,10 +88,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/tflite_importer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv i64 %6, 4

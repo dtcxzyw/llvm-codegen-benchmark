@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	snez	a2, a2
 	and	a1, a1, a2
 	snez	a0, a0

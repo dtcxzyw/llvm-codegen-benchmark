@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/acecBo.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 12
   %4 = trunc i64 %3 to i32
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/mesh_cleanup.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 12
   %4 = trunc i64 %3 to i32
@@ -27,7 +27,7 @@ entry:
 ; g2o/optimized/command_args.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = trunc i64 %3 to i32
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/virtio_net.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000117(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000227(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 1096
   %4 = trunc i64 %3 to i32

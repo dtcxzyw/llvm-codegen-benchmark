@@ -6,7 +6,7 @@
 define i1 @func000000000000000c(i1 %0, i16 %1) #0 {
 entry:
   %.not = icmp eq i16 %1, 0
-  %2 = and i1 %.not, %0
+  %2 = and i1 %0, %.not
   ret i1 %2
 }
 
@@ -16,7 +16,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, -121
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 

@@ -1,18 +1,18 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	leaq	-1(%rsi), %rax
 	shrq	$63, %rax
 	leaq	-1(%rsi,%rax), %rax
 	sarq	%rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	leaq	-2(%rsi), %rax
 	shrq	$63, %rax
 	leaq	-2(%rsi,%rax), %rax
 	sarq	%rax
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	leaq	41(%rsi), %rax
@@ -21,7 +21,7 @@ func0000000000000001:                   # @func0000000000000001
 	movq	%rdx, %rax
 	shrq	$63, %rax
 	addq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -29,22 +29,22 @@ func0000000000000006:                   # @func0000000000000006
 	shrq	$63, %rax
 	leaq	-1(%rsi,%rax), %rax
 	sarq	%rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
-func0000000000000027:                   # @func0000000000000027
+func0000000000000047:                   # @func0000000000000047
 	leaq	-1(%rsi), %rax
 	shrq	$63, %rax
 	leaq	-1(%rsi,%rax), %rax
 	sarq	%rax
-	cmpq	%rdi, %rax
-	setge	%al
+	cmpq	%rax, %rdi
+	setle	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	leaq	1(%rsi), %rax
 	shrq	$63, %rax
 	leaq	1(%rsi,%rax), %rax
 	sarq	%rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

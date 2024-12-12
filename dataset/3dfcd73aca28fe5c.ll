@@ -12,7 +12,7 @@ entry:
   ret i32 %6
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; cmake/optimized/testDirectory.cxx.ll
 ; flac/optimized/main.c.ll
@@ -26,7 +26,6 @@ entry:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/block_vhdx-log.c.ll
-; slurm/optimized/ebpf.ll
 ; wireshark/optimized/packet-sbc.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000018f(i32 %0, i32 %1, i32 %2) #0 {
@@ -214,7 +213,7 @@ entry:
   ret i32 %6
 }
 
-; 100 occurrences:
+; 98 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -293,8 +292,6 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; luajit/optimized/lj_strfmt_num.ll
-; luajit/optimized/lj_strfmt_num_dyn.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
@@ -391,12 +388,13 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/extraUtilEnum.c.ll
 ; abc/optimized/lpkCore.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; graphviz/optimized/sfvscanf.c.ll
 ; gromacs/optimized/compute_io.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000145(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -454,6 +452,30 @@ entry:
   ret i32 %6
 }
 
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000030f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 9999999
+  %4 = zext i1 %3 to i32
+  %5 = add nuw nsw i32 %0, %1
+  %6 = add nuw nsw i32 %5, %4
+  ret i32 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ne i32 %2, 0
+  %4 = zext i1 %3 to i32
+  %5 = add i32 %0, %1
+  %6 = add nsw i32 %5, %4
+  ret i32 %6
+}
+
 ; 3 occurrences:
 ; hwloc/optimized/topology-synthetic.ll
 ; protobuf/optimized/wire_format_lite.cc.ll
@@ -495,16 +517,40 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 2 occurrences:
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000280(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 10
+  %4 = zext i1 %3 to i32
+  %5 = add i32 %0, %1
+  %6 = add i32 %5, %4
+  ret i32 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/brightedges.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000028f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 1020
+  %4 = zext i1 %3 to i32
+  %5 = add nuw nsw i32 %0, %1
+  %6 = add nuw nsw i32 %5, %4
+  ret i32 %6
+}
+
+; 4 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
-; opencv/optimized/brightedges.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000008f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 1020
+  %3 = icmp ult i32 %2, 3
   %4 = zext i1 %3 to i32
   %5 = add nuw nsw i32 %0, %1
   %6 = add nuw nsw i32 %5, %4

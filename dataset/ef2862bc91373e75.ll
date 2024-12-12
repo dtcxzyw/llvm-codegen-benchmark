@@ -17,7 +17,7 @@ entry:
   ret i32 %5
 }
 
-; 146 occurrences:
+; 138 occurrences:
 ; abc/optimized/extraUtilEnum.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
@@ -28,24 +28,16 @@ entry:
 ; git/optimized/index-pack.ll
 ; git/optimized/sha1.ll
 ; gromacs/optimized/dgebrd.cpp.ll
-; gromacs/optimized/dgelqf.cpp.ll
-; gromacs/optimized/dgeqrf.cpp.ll
-; gromacs/optimized/dgetrf.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/dsyevr.cpp.ll
 ; gromacs/optimized/dsytrd.cpp.ll
-; gromacs/optimized/dtrtri.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
-; gromacs/optimized/sgelqf.cpp.ll
-; gromacs/optimized/sgeqrf.cpp.ll
-; gromacs/optimized/sgetrf.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
 ; gromacs/optimized/ssyevr.cpp.ll
 ; gromacs/optimized/ssytrd.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
 ; hdf5/optimized/H5C.c.ll
 ; hdf5/optimized/H5Ctag.c.ll
 ; hdf5/optimized/H5HFhdr.c.ll
@@ -71,6 +63,7 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_image.ll
 ; lz4/optimized/lz4.c.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -97,7 +90,6 @@ entry:
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlahr2.c.ll
 ; openblas/optimized/dpbtrf.c.ll
-; openblas/optimized/dsygst.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
 ; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
@@ -173,7 +165,7 @@ entry:
   ret i32 %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/reslist.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
@@ -181,6 +173,7 @@ entry:
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openblas/optimized/dorbdb.c.ll
@@ -188,27 +181,28 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_16ext.ll
 ; openjdk/optimized/mlib_ImageConv_8ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
-; openssl/optimized/libcrypto-lib-rsa_pss.ll
-; openssl/optimized/libcrypto-shlib-rsa_pss.ll
 ; openusd/optimized/blend_a64_mask.c.ll
 ; openusd/optimized/convolve.c.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; wireshark/optimized/packet-dhcpv6.c.ll
 ; wireshark/optimized/packet-pcep.c.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add nsw i32 %0, -2
-  %5 = sub i32 %4, %3
+  %4 = xor i32 %3, -1
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; openjdk/optimized/jdmarker.ll
+; openusd/optimized/warped_motion.c.ll
 ; stb/optimized/stb_image.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
@@ -219,26 +213,17 @@ entry:
   ret i32 %5
 }
 
-; 24 occurrences:
+; 15 occurrences:
 ; gromacs/optimized/dgesdd.cpp.ll
-; gromacs/optimized/dtrtri.cpp.ll
 ; gromacs/optimized/sgesdd.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
 ; hdf5/optimized/H5Iint.c.ll
 ; libwebp/optimized/enc.c.ll
-; openblas/optimized/dgbtrf.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openblas/optimized/dgedmdq.c.ll
 ; openblas/optimized/dgees.c.ll
 ; openblas/optimized/dgeesx.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
-; openblas/optimized/dgetri.c.ll
-; openblas/optimized/dsbevd.c.ll
-; openblas/optimized/dsyevd.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; openblas/optimized/dtgex2.c.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; openjdk/optimized/jidctred.ll
@@ -261,11 +246,11 @@ define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; icu/optimized/simpletz.ll
 ; libwebp/optimized/dec.c.ll
 ; opencv/optimized/mathfuncs.cpp.ll
@@ -273,7 +258,6 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; openmpi/optimized/coll_base_reduce_scatter_block.ll
-; openusd/optimized/warped_motion.c.ll
 ; stb/optimized/stb_image.c.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
@@ -281,7 +265,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -367,9 +351,10 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/aio.ll
 ; wireshark/optimized/packet-ceph.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:

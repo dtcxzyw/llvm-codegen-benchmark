@@ -2,21 +2,17 @@ func0000000000000040:                   # @func0000000000000040
 	imull	%edx, %esi
 	leaq	8(%rdi,%rsi), %rax
 	retq
-func00000000000001ea:                   # @func00000000000001ea
+func00000000000001ff:                   # @func00000000000001ff
 	imull	%edx, %esi
 	leaq	2(%rdi,%rsi), %rax
 	retq
-func000000000000012a:                   # @func000000000000012a
+func000000000000013f:                   # @func000000000000013f
 	imull	%edx, %esi
 	leaq	13(%rdi,%rsi), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000003f:                   # @func000000000000003f
 	imull	%edx, %esi
 	leaq	14(%rdi,%rsi), %rax
-	retq
-func0000000000000022:                   # @func0000000000000022
-	imull	%edx, %esi
-	leaq	24(%rdi,%rsi), %rax
 	retq
 func00000000000001e0:                   # @func00000000000001e0
 	imull	%edx, %esi
@@ -26,7 +22,7 @@ func00000000000000e0:                   # @func00000000000000e0
 	imull	%edx, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000bf:                   # @func00000000000000bf
 	imull	%edx, %esi
 	leaq	5(%rdi,%rsi), %rax
 	retq

@@ -1,8 +1,6 @@
 
-; 9 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/toppush.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dorgql.c.ll
 ; openjdk/optimized/g1FromCardCache.ll
 ; php/optimized/zend_jit.ll

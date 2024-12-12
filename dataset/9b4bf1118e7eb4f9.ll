@@ -10,7 +10,8 @@ entry:
   ret i16 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; openjdk/optimized/Ushort555Rgbx.ll
 ; openjdk/optimized/Ushort565Rgb.ll
@@ -69,8 +70,7 @@ entry:
   ret i16 %4
 }
 
-; 4 occurrences:
-; linux/optimized/ht.ll
+; 3 occurrences:
 ; llvm/optimized/Instructions.cpp.ll
 ; node/optimized/libnode.Protocol.ll
 ; stb/optimized/stb_dxt.c.ll

@@ -27,9 +27,10 @@ entry:
   ret i32 %5
 }
 
-; 49 occurrences:
+; 50 occurrences:
 ; abc/optimized/sfmDec.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
+; freetype/optimized/psaux.c.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; icu/optimized/japancal.ll
 ; icu/optimized/number_patternstring.ll

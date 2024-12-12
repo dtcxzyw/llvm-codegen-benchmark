@@ -16,7 +16,7 @@ entry:
   ret float %3
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
@@ -35,6 +35,7 @@ entry:
 ; recastnavigation/optimized/main.cpp.ll
 ; wireshark/optimized/packet-kafka.c.ll
 ; xgboost/optimized/cpu_treeshap.cc.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

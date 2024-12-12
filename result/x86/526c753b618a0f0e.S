@@ -1,4 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	orl	%edx, %esi
 	addl	%edi, %esi
 	setb	%al

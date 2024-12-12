@@ -118,7 +118,7 @@ entry:
   ret i32 %3
 }
 
-; 135 occurrences:
+; 133 occurrences:
 ; abc/optimized/bmcBmc.c.ll
 ; abc/optimized/cnfCut.c.ll
 ; abc/optimized/fraSim.c.ll
@@ -153,7 +153,6 @@ entry:
 ; opencv/optimized/ap3p.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
 ; opencv/optimized/aruco_dictionary.cpp.ll
-; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/batch_distance.cpp.ll
 ; opencv/optimized/batch_norm_layer.cpp.ll
 ; opencv/optimized/binary_descriptor_matcher.cpp.ll
@@ -226,7 +225,6 @@ entry:
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; opencv/optimized/solvepnp.cpp.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
-; opencv/optimized/speech_recognition.cpp.ll
 ; opencv/optimized/sqpnp.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; opencv/optimized/svm.cpp.ll

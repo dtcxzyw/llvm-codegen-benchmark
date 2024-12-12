@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000101(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000201(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 1
   %3 = zext i1 %2 to i32
@@ -11,7 +11,7 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
@@ -19,10 +19,9 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; wireshark/optimized/packet-dhcp-failover.c.ll
 ; wireshark/optimized/packet-pop.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp eq i32 %0, 1
@@ -35,23 +34,11 @@ entry:
 ; llvm/optimized/SemaChecking.cpp.ll
 ; opencv/optimized/perf_rlof.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000181(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000301(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 4
   %3 = zext i1 %2 to i32
   %4 = icmp eq i32 %0, 0
-  %5 = select i1 %4, i32 2, i32 %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; openusd/optimized/reconintra.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000188(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = zext i1 %2 to i32
-  %4 = icmp ugt i32 %0, 3
   %5 = select i1 %4, i32 2, i32 %3
   ret i32 %5
 }

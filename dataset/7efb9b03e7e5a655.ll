@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 56 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
@@ -19,7 +19,6 @@
 ; icu/optimized/collationdatabuilder.ll
 ; icu/optimized/collationsets.ll
 ; linux/optimized/i8042.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/libps2.ll
 ; linux/optimized/xhci-mem.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
@@ -58,7 +57,7 @@
 ; qemu/optimized/tcg.c.ll
 ; ruby/optimized/hash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 20
   %3 = and i32 %2, 15
@@ -71,22 +70,21 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/hash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000079(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000f9(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 20
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp uge i64 %5, %4
+  %6 = icmp samesign uge i64 %5, %4
   ret i1 %6
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/covBuild.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/cutNode.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaGlitch.c.ll
@@ -112,13 +110,13 @@ entry:
 ; postgres/optimized/spgscan.ll
 ; postgres/optimized/spgutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 10
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
@@ -128,7 +126,7 @@ entry:
 ; abc/optimized/satInterB.c.ll
 ; abc/optimized/satInterP.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 16777215
@@ -197,7 +195,7 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000ec(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 19
   %3 = and i32 %2, 127
@@ -211,7 +209,7 @@ entry:
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = and i32 %2, 4194303
@@ -226,13 +224,13 @@ entry:
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000b4(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = and i32 %2, 4194303
   %4 = zext nneg i32 %3 to i64
   %5 = add nsw i64 %0, -3
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 

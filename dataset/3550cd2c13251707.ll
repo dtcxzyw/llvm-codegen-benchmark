@@ -5,7 +5,7 @@
 ; openjdk/optimized/parse2.ll
 ; wireshark/optimized/packet-ieee17221.c.ll
 ; Function Attrs: nounwind
-define float @func0000000000000011(i32 %0) #0 {
+define float @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 4
   %2 = select i1 %1, float 0x3FECCCCCC0000000, float 5.000000e-01

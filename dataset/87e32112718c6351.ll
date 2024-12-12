@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/socketTransport.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 128, i32 32
   %4 = add nsw i32 %0, %1
@@ -25,11 +25,11 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/jfrThreadSampler.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 5, i32 1
   %4 = add nuw nsw i32 %0, %1
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
@@ -51,7 +51,7 @@ entry:
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 9, i32 17
   %4 = add nsw i32 %0, %1
@@ -63,11 +63,11 @@ entry:
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 31, i32 63
   %4 = add nuw nsw i32 %0, %1
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   ret i1 %5
 }
 

@@ -9,7 +9,7 @@
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; glslang/optimized/limits.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000082c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000204c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -22,7 +22,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/clamd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000294(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp sgt i32 %2, 65535
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/ast.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 0
@@ -54,7 +54,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -67,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000182(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -80,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DiagnosticRenderer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 0
@@ -93,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cgroup.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -106,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/namei.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000210(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -119,7 +119,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/trace_uprobe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000050(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32

@@ -1,12 +1,14 @@
 
-%struct.hb_glyph_info_t.2628617 = type { i32, i32, i32, %union._hb_var_int_t.2628618, %union._hb_var_int_t.2628618 }
-%union._hb_var_int_t.2628618 = type { i32 }
+%struct.hb_glyph_info_t.2742027 = type { i32, i32, i32, %union._hb_var_int_t.2742028, %union._hb_var_int_t.2742028 }
+%union._hb_var_int_t.2742028 = type { i32 }
 
-; 44 occurrences:
+; 46 occurrences:
 ; abc/optimized/inflate.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/chmd.c.ll
+; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/pe.c.ll
+; clamav/optimized/qtmd.c.ll
 ; clamav/optimized/spin.c.ll
 ; clamav/optimized/upack.c.ll
 ; clamav/optimized/upx.c.ll
@@ -48,17 +50,17 @@
 ; zlib/optimized/deflate.c.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/mpmAbc.c.ll
 ; abc/optimized/mpmMap.c.ll
@@ -66,6 +68,7 @@ entry:
 ; cmake/optimized/divsufsort.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
+; libwebp/optimized/vp8l_dec.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; openjdk/optimized/mlib_ImageConv_D64nw.ll
 ; openjdk/optimized/mlib_ImageConv_F32nw.ll
@@ -79,20 +82,18 @@ entry:
 ; wolfssl/optimized/rsa.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000de(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
-; 22 occurrences:
+; 20 occurrences:
 ; clamav/optimized/Delta.c.ll
-; clamav/optimized/lzxd.c.ll
-; clamav/optimized/qtmd.c.ll
 ; cpython/optimized/Hacl_Hash_SHA3.ll
 ; linux/optimized/gss_krb5_crypto.ll
 ; linux/optimized/nf_conntrack_sip.ll
@@ -123,10 +124,8 @@ entry:
   ret ptr %7
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; cmake/optimized/archive_write_set_format_ar.c.ll
-; cpython/optimized/Hacl_Hash_SHA3.ll
-; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/af_packet.ll
 ; postgres/optimized/numutils.ll
 ; qemu/optimized/hw_acpi_core.c.ll
@@ -160,42 +159,43 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000009a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000009e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw %struct.hb_glyph_info_t.2628617, ptr %0, i64 %5
-  %7 = getelementptr nusw %struct.hb_glyph_info_t.2628617, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw %struct.hb_glyph_info_t.2742027, ptr %0, i64 %5
+  %7 = getelementptr nusw %struct.hb_glyph_info_t.2742027, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 5 occurrences:
+; boost/optimized/src.ll
+; cvc5/optimized/generic_op.cpp.ll
+; lz4/optimized/lz4.c.ll
+; openusd/optimized/lz4.cpp.ll
+; xgboost/optimized/charconv.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005e(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = zext nneg i32 %1 to i64
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; clamav/optimized/rarvm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000d8(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000dc(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %4
-  ret ptr %7
-}
-
-; 4 occurrences:
-; cvc5/optimized/generic_op.cpp.ll
-; lz4/optimized/lz4.c.ll
-; openusd/optimized/lz4.cpp.ll
-; xgboost/optimized/charconv.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = sub nsw i64 0, %3
-  %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7
 }
 

@@ -1,10 +1,13 @@
 
-; 137 occurrences:
+; 139 occurrences:
 ; abc/optimized/dauMerge.c.ll
 ; abseil-cpp/optimized/bind_test.cc.ll
 ; abseil-cpp/optimized/parser.cc.ll
 ; abseil-cpp/optimized/parser_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/topology.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; cmake/optimized/cmOutputConverter.cxx.ll
 ; cmake/optimized/nghttp2_http.c.ll
@@ -95,7 +98,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -135,10 +137,10 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/filterlib.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ne i8 %0, 123
@@ -150,7 +152,7 @@ entry:
 ; llvm/optimized/CGObjCGNU.cpp.ll
 ; ruby/optimized/cesu_8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000026(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp slt i8 %0, 0
@@ -162,7 +164,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bf_lbuf.ll
 ; openssl/optimized/libcrypto-shlib-bf_lbuf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000121(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
   %4 = icmp eq i8 %0, 10
@@ -170,8 +172,10 @@ entry:
   ret i1 %5
 }
 
-; 138 occurrences:
+; 139 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/archive_pathmatch.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cpython/optimized/sre.ll
@@ -203,7 +207,6 @@ entry:
 ; libquic/optimized/asn1_gen.c.ll
 ; lief/optimized/x509_create.c.ll
 ; linux/optimized/dsmethod.ll
-; linux/optimized/evregion.ll
 ; linux/optimized/intel_dsi_vbt.ll
 ; linux/optimized/rwsem.ll
 ; llama.cpp/optimized/common.cpp.ll
@@ -272,7 +275,6 @@ entry:
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -309,8 +311,9 @@ entry:
 ; yosys/optimized/exec.ll
 ; yosys/optimized/log.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/8h2ladsi6pcbclrovmrkrncgn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp eq i8 %0, 0
@@ -323,7 +326,7 @@ entry:
 ; linux/optimized/algapi.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp eq i8 %0, 0
@@ -335,7 +338,7 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; freetype/optimized/type1cid.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000010c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %1, %2
   %4 = icmp ne i8 %0, 37
@@ -353,7 +356,7 @@ entry:
 ; openusd/optimized/pathExpression.cpp.ll
 ; openusd/optimized/predicateExpression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ne i8 %0, 0
@@ -361,19 +364,21 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; hermes/optimized/ConvertUTF.cpp.ll
 ; hyperscan/optimized/hwlm.c.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/ConvertUTF.cpp.ll
+; llvm/optimized/LoopNestAnalysis.cpp.ll
+; llvm/optimized/LoopUtils.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/NewGVN.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000024(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ult i8 %0, 2
@@ -388,7 +393,7 @@ entry:
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000008c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp ne i8 %0, 40
@@ -396,11 +401,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/ConstantFold.cpp.ll
-; z3/optimized/array_internalize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000028(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ugt i8 %0, 3
@@ -414,7 +418,7 @@ entry:
 ; node/optimized/libnode.crypto_clienthello.ll
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000108(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %1, %2
   %4 = icmp ugt i8 %0, -113
@@ -427,7 +431,7 @@ entry:
 ; icu/optimized/ucnv_u7.ll
 ; openusd/optimized/avif_obu.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000081(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp eq i8 %0, 0
@@ -438,7 +442,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/inet_net_pton.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000101(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %1, %2
   %4 = icmp eq i8 %0, 0
@@ -450,7 +454,7 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002a(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp sgt i8 %0, -1
@@ -461,7 +465,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000104(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %1, %2
   %4 = icmp ult i8 %0, 4

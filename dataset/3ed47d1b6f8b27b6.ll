@@ -1,30 +1,30 @@
 
-%struct.hlist_head.3347324 = type { ptr }
-%struct.hlist_nulls_head.3373587 = type { ptr }
+%struct.hlist_head.3535820 = type { ptr }
+%struct.hlist_nulls_head.3558355 = type { ptr }
 
 ; 3 occurrences:
 ; eastl/optimized/TestHeap.cpp.ll
 ; rocksdb/optimized/jemalloc_nodump_allocator.cc.ll
 ; rocksdb/optimized/memtable.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000027(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = lshr exact i64 %4, 3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -41,12 +41,12 @@ entry:
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = lshr i64 %4, 3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -59,9 +59,9 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = getelementptr %struct.hlist_head.3347324, ptr %0, i64 %5
+  %6 = getelementptr %struct.hlist_head.3535820, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -71,21 +71,21 @@ entry:
 define ptr @func0000000000000038(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = getelementptr %struct.hlist_nulls_head.3373587, ptr %0, i64 %5
+  %6 = getelementptr %struct.hlist_nulls_head.3558355, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/va_intel.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = lshr exact i64 %4, 1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

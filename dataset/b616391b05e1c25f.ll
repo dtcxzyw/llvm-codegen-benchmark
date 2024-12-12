@@ -35,7 +35,7 @@ entry:
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; openjdk/optimized/deoptimization.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 30
   %3 = icmp ne i32 %2, 30
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %3 = icmp ne i32 %2, 0

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; libquic/optimized/p224-64.c.ll
 ; openssl/optimized/libcrypto-lib-f_generic.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
@@ -15,6 +15,7 @@
 ; spike/optimized/vmadc_vx.ll
 ; spike/optimized/vmadc_vxm.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i128 @func000000000000000f(i128 %0, i128 %1, i64 %2) #0 {
 entry:
@@ -39,6 +40,18 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/approximately_equals.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i128 @func000000000000000a(i128 %0, i128 %1, i64 %2) #0 {
+entry:
+  %3 = zext i64 %2 to i128
+  %4 = add nuw i128 %0, %1
+  %5 = add nuw i128 %4, %3
+  ret i128 %5
+}
+
+; 2 occurrences:
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/p256-64.c.ll
 ; Function Attrs: nounwind
@@ -58,17 +71,6 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = add i128 %0, %1
   %5 = add i128 %4, %3
-  ret i128 %5
-}
-
-; 1 occurrences:
-; quickjs/optimized/libbf.ll
-; Function Attrs: nounwind
-define i128 @func000000000000000a(i128 %0, i128 %1, i64 %2) #0 {
-entry:
-  %3 = zext i64 %2 to i128
-  %4 = add nuw i128 %0, %1
-  %5 = add nuw i128 %4, %3
   ret i128 %5
 }
 

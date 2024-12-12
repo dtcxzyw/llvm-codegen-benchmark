@@ -1,10 +1,9 @@
 
-; 3 occurrences:
-; linux/optimized/psutils.ll
+; 2 occurrences:
 ; llvm/optimized/SemaExprMember.cpp.ll
 ; openjdk/optimized/vmError.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000104(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000204(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2
   %3 = icmp eq i32 %0, -536870908
@@ -20,7 +19,7 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 67108864
   %3 = icmp eq i32 %0, 268435456
@@ -34,7 +33,7 @@ entry:
 ; nlohmann_json/optimized/unit.cpp.ll
 ; wireshark/optimized/packet-iso15765.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000304(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000604(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp eq i32 %0, 0
@@ -46,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5Pgcpl.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000330(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000630(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 6
   %3 = icmp ne i32 %0, 8
@@ -58,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000050(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000090(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp ult i32 %0, 3
@@ -70,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaChecking.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000110(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000210(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 13
   %3 = icmp ult i32 %0, 14
@@ -82,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000210(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000410(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 1
   %3 = icmp ult i32 %0, 3
@@ -94,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/8139too.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000070(i32 %0, i32 %1) #0 {
+define i8 @func00000000000000b0(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 64
   %3 = icmp ne i32 %0, 0

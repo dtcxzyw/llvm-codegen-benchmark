@@ -36,6 +36,23 @@ entry:
 }
 
 ; 7 occurrences:
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
+; linux/optimized/fair.ll
+; linux/optimized/kallsyms.ll
+; qemu/optimized/linux-user_syscall.c.ll
+; ruby/optimized/array.ll
+; velox/optimized/StringFunctions.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = and i64 %0, 127
+  %4 = icmp ugt i64 %3, %2
+  ret i1 %4
+}
+
+; 7 occurrences:
 ; linux/optimized/io_uring.ll
 ; linux/optimized/uncore.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
@@ -52,14 +69,13 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; jemalloc/optimized/sc.ll
 ; jemalloc/optimized/sc.pic.ll
 ; jemalloc/optimized/sc.sym.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/dmar.ll
-; linux/optimized/head64.ll
 ; openspiel/optimized/stones_and_gems.cc.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; redis/optimized/sc.ll
@@ -70,23 +86,6 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = and i64 %0, -4
   %4 = icmp ult i64 %3, %2
-  ret i1 %4
-}
-
-; 7 occurrences:
-; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
-; linux/optimized/fair.ll
-; linux/optimized/head64.ll
-; linux/optimized/kallsyms.ll
-; qemu/optimized/linux-user_syscall.c.ll
-; velox/optimized/StringFunctions.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = and i64 %0, 2305843009213693951
-  %4 = icmp ugt i64 %3, %2
   ret i1 %4
 }
 

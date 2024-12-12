@@ -14,12 +14,19 @@ func0000000000000003:                   # @func0000000000000003
 	cmovel	%edi, %eax
 	orl	$4, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	movl	%edx, %eax
 	andl	$1, %eax
 	shll	$4, %eax
 	cmpl	$256, %esi                      # imm = 0x100
 	cmovael	%edi, %eax
+	orl	$4, %eax
+	retq
+func0000000000000029:                   # @func0000000000000029
+	andl	$1, %edx
+	leal	2(%rdx), %eax
+	cmpl	$4194304, %esi                  # imm = 0x400000
+	cmovbl	%edi, %eax
 	orl	$4, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002

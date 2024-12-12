@@ -6,7 +6,7 @@
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; velox/optimized/WidthBucketArray.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
@@ -19,7 +19,7 @@ entry:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = zext nneg i32 %2 to i64
@@ -32,7 +32,7 @@ entry:
 ; assimp/optimized/FBXParser.cpp.ll
 ; draco/optimized/direct_bit_decoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 2
   %3 = zext nneg i32 %2 to i64
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/direct_bit_decoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e8(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 2
   %3 = zext nneg i32 %2 to i64

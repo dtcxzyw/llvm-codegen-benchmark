@@ -1,4 +1,4 @@
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	li	a0, 3
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsle.vi	v0, v10, -1
@@ -6,7 +6,7 @@ func0000000000000036:                   # @func0000000000000036
 	vmul.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	li	a0, 6
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsle.vi	v0, v10, -1
@@ -14,7 +14,7 @@ func0000000000000026:                   # @func0000000000000026
 	vmul.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 6
 	vsetvli	zero, zero, e32, m1, ta, ma

@@ -54,12 +54,12 @@
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1431655765
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = lshr i32 %3, 2
   ret i32 %4
 }
 
-; 177 occurrences:
+; 182 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -129,6 +129,7 @@ entry:
 ; linux/optimized/entropy_common.ll
 ; linux/optimized/md.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; nori/optimized/nanovg.c.ll
@@ -197,7 +198,6 @@ entry:
 ; openusd/optimized/vec3h.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -233,6 +233,11 @@ entry:
 ; wireshark/optimized/packet-x25.c.ll
 ; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
 ; yosys/optimized/ezsat.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/67gayid14ydsuhkv0lcnhbsvb.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zstd/optimized/entropy_common.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
@@ -241,7 +246,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 858993459
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 4
   ret i32 %4
 }
@@ -267,7 +272,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 8
   ret i32 %4
 }
@@ -281,14 +286,15 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 248
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr exact i32 %3, 2
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; hyperscan/optimized/hs.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; openjdk/optimized/net_util.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
@@ -302,7 +308,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 2
   ret i32 %4
 }
@@ -314,7 +320,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1145324612
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = lshr exact i32 %3, 2
   ret i32 %4
 }

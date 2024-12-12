@@ -1,13 +1,11 @@
-func00000000000000f8:                   // @func00000000000000f8
+func00000000000001e8:                   // @func00000000000001e8
 // %bb.0:                               // %entry
-	mov	w8, #30                         // =0x1e
-	uaddl	v2.4s, v3.4h, v2.4h
-	dup	v3.2d, x8
-	uaddw	v4.2d, v3.2d, v2.2s
-	uaddw2	v2.2d, v3.2d, v2.4s
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v4.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0xffff
+                                        // kill: def $w1 killed $w1 def $x1
+	add	x8, x8, w1, uxth
+	add	x8, x8, #4
+	cmp	x8, x0
+	cset	w0, hi
 	ret
                                         // -- End function

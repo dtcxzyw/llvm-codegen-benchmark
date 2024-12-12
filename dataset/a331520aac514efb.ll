@@ -1,6 +1,7 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; libjpeg-turbo/optimized/jquant2.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll
@@ -51,7 +52,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nuw nsw i32 %3, %1
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 

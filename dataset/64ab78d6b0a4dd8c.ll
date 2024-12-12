@@ -1,6 +1,8 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libquic/optimized/hpack_output_stream.cc.ll
 ; minetest/optimized/staticobject.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -17,7 +19,7 @@ entry:
   ret i16 %3
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -43,6 +45,7 @@ entry:
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
@@ -90,7 +93,6 @@ entry:
 ; mold/optimized/arch-s390x.cc.ll
 ; mold/optimized/arch-sparc64.cc.ll
 ; mold/optimized/arch-x86-64.cc.ll
-; nuttx/optimized/lib_rand48.c.ll
 ; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
 ; ockam-rs/optimized/1kl4v6vvko2mygns.ll
 ; ockam-rs/optimized/27nutj9k22uohtyi.ll
@@ -121,6 +123,7 @@ entry:
 ; wasmtime-rs/optimized/1yipc6g1ijw8sqf9.ll
 ; wasmtime-rs/optimized/30bs26v8gk3pt07g.ll
 ; wasmtime-rs/optimized/i5u7vsclgey2ddj.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -193,9 +196,10 @@ entry:
   ret i16 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; boost/optimized/static_string.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; libjpeg-turbo/optimized/jfdctint.c.ll
 ; libquic/optimized/quic_data_writer.cc.ll

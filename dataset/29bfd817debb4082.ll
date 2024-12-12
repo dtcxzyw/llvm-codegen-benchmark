@@ -1,8 +1,10 @@
 
-; 90 occurrences:
+; 88 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/Exporter.cpp.ll
 ; assimp/optimized/Importer.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btSoftBody.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; darktable/optimized/introspection_clipping.c.ll
@@ -17,11 +19,8 @@
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; faiss/optimized/quantize_lut.cpp.ll
-; gromacs/optimized/coupling.cpp.ll
-; gromacs/optimized/genconf.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
-; gromacs/optimized/insert_molecules.cpp.ll
 ; gromacs/optimized/slagts.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -86,7 +85,6 @@
 ; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
-; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; wireshark/optimized/packet-erf.c.ll

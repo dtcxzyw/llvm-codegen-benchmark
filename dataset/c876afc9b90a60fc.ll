@@ -8,7 +8,7 @@ entry:
   %4 = and i128 %1, 18446744073709551615
   %5 = add nuw i128 %4, %3
   %6 = lshr i128 %5, 64
-  %7 = add nuw nsw i128 %6, %0
+  %7 = add nuw nsw i128 %0, %6
   ret i128 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = mul nuw nsw i128 %1, 18446744073709551615
   %5 = add nuw nsw i128 %4, %3
   %6 = lshr i128 %5, 32
-  %7 = add nuw i128 %6, %0
+  %7 = add nuw i128 %0, %6
   ret i128 %7
 }
 

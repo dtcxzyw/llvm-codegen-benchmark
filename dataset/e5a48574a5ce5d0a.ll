@@ -23,6 +23,17 @@ entry:
   ret i16 %4
 }
 
+; 1 occurrences:
+; clamav/optimized/autoit.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000004(i16 %0, i32 %1) #0 {
+entry:
+  %2 = trunc i32 %1 to i16
+  %3 = shl nuw i16 %0, 8
+  %4 = or i16 %3, %2
+  ret i16 %4
+}
+
 ; 3 occurrences:
 ; llvm/optimized/JSON.cpp.ll
 ; wireshark/optimized/packet-json.c.ll

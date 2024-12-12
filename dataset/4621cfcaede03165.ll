@@ -23,7 +23,7 @@
 ; abc/optimized/wlcBlast.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000054(i32 %0) #0 {
+define i64 @func00000000000000a4(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 99
   %2 = icmp ult i32 %1, 15
@@ -55,7 +55,7 @@ entry:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/pdrIncr.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0) #0 {
+define i64 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -2
   %2 = icmp ult i32 %1, 15

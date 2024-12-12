@@ -1,9 +1,9 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8
 	lui	a0, 8
 	li	a1, 107
-	vor.vv	v10, v10, v8
+	vor.vv	v10, v8, v10
 	vmv.v.x	v12, a1
 	addi	a1, a0, 1131
 	vmsgt.vx	v8, v10, a1

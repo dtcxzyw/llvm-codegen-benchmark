@@ -1,6 +1,7 @@
 
-; 12 occurrences:
-; abc/optimized/bmcMaj.c.ll
+; 13 occurrences:
+; boost/optimized/sparring_partner.ll
+; boost/optimized/value_semantic.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; libwebp/optimized/webp_dec.c.ll
 ; linux/optimized/intel_atomic_plane.ll

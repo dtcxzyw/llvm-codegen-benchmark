@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax
 	vextracti128	$1, %ymm2, %xmm4

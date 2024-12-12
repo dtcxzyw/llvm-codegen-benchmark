@@ -1,4 +1,4 @@
-func0000000000000154:                   # @func0000000000000154
+func00000000000002b4:                   # @func00000000000002b4
 	subw	a1, a1, a2
 	sext.w	a0, a0
 	negw	a2, a1
@@ -7,7 +7,7 @@ func0000000000000154:                   # @func0000000000000154
 	max	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	subw	a1, a1, a2
 	sext.w	a0, a0
 	negw	a2, a1
@@ -17,7 +17,7 @@ func0000000000000051:                   # @func0000000000000051
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	subw	a1, a1, a2
 	sext.w	a0, a0
 	negw	a2, a1
@@ -27,7 +27,7 @@ func0000000000000151:                   # @func0000000000000151
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000158:                   # @func0000000000000158
+func00000000000002b8:                   # @func00000000000002b8
 	subw	a1, a1, a2
 	sext.w	a0, a0
 	negw	a2, a1
@@ -36,7 +36,7 @@ func0000000000000158:                   # @func0000000000000158
 	max	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000003f4:                   # @func00000000000003f4
 	subw	a1, a1, a2
 	sext.w	a0, a0
 	negw	a2, a1
@@ -44,6 +44,16 @@ func00000000000001f4:                   # @func00000000000001f4
 	negw	a2, a0
 	max	a0, a0, a2
 	sltu	a0, a0, a1
+	ret
+func00000000000003f9:                   # @func00000000000003f9
+	subw	a1, a1, a2
+	sext.w	a0, a0
+	negw	a2, a1
+	max	a1, a1, a2
+	negw	a2, a0
+	max	a0, a0, a2
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	subw	a1, a1, a2
@@ -54,7 +64,7 @@ func0000000000000006:                   # @func0000000000000006
 	max	a0, a0, a2
 	slt	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subw	a1, a1, a2
 	sext.w	a0, a0
 	negw	a2, a1

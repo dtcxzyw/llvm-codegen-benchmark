@@ -1,10 +1,12 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; minetest/optimized/emerge.cpp.ll
 ; openjdk/optimized/jfrChunk.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; slurm/optimized/x11_util.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1, i1 %2) #0 {
 entry:

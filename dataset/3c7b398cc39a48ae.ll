@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, -16385
   %4 = select i1 %0, i1 true, i1 %3
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; box2d/optimized/b2_world.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvisci.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 2673
   %4 = select i1 %0, i1 true, i1 %3

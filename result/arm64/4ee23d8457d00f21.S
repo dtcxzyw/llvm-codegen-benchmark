@@ -1,9 +1,9 @@
-func000000000000001c:                   // @func000000000000001c
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
-	cmeq	v2.8h, v2.8h, v4.8h
-	cmeq	v1.8h, v1.8h, v3.8h
-	cmeq	v0.16b, v0.16b, #0
-	uzp1	v1.16b, v1.16b, v2.16b
-	orn	v0.16b, v1.16b, v0.16b
+	and	w8, w2, #0xffff
+	and	w9, w1, #0xffff
+	tst	w0, #0xff
+	ccmp	w9, w8, #4, eq
+	cset	w0, eq
 	ret
                                         // -- End function

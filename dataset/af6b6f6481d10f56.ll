@@ -12,18 +12,17 @@ define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %0, %1
   %4 = xor i32 %3, -1
-  %5 = icmp ult i32 %4, %2
+  %5 = icmp ugt i32 %2, %4
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; linux/optimized/swiotlb.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-5co-rap.c.ll
 ; wireshark/optimized/packet-mqtt.c.ll
 ; wireshark/optimized/packet-wbxml.c.ll
-; wireshark/optimized/wimax_utils.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -40,7 +39,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %0, %1
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = icmp slt i32 %3, %4
   ret i1 %5
 }
@@ -48,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-bgp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000146(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %0, %1
   %4 = add nuw i32 %3, %2

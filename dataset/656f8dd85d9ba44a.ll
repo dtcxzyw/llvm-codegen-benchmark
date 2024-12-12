@@ -24,20 +24,8 @@
 define i32 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, -40
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i32 -1, i32 4
-  ret i32 %4
-}
-
-; 2 occurrences:
-; mitsuba3/optimized/x86func.cpp.ll
-; openusd/optimized/mvref_common.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i8 %1) #0 {
-entry:
-  %2 = icmp ult i8 %1, 5
-  %3 = and i1 %2, %0
-  %4 = select i1 %3, i32 100663296, i32 117440512
   ret i32 %4
 }
 
@@ -63,6 +51,17 @@ entry:
   %2 = icmp ne i8 %1, 0
   %3 = and i1 %2, %0
   %4 = select i1 %3, i32 10, i32 2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; openusd/optimized/mvref_common.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i1 %0, i8 %1) #0 {
+entry:
+  %2 = icmp ult i8 %1, 2
+  %3 = and i1 %0, %2
+  %4 = select i1 %3, i32 -5, i32 -6
   ret i32 %4
 }
 

@@ -19,7 +19,7 @@
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
@@ -53,7 +53,7 @@ entry:
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
@@ -70,13 +70,26 @@ entry:
 ; quantlib/optimized/multisteptarn.ll
 ; xgboost/optimized/data.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
   %5 = add nsw i64 %4, 1
   %6 = ashr exact i64 %0, 3
   %7 = icmp eq i64 %5, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
+; boost/optimized/limit_fd.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a5(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 2
+  %5 = add nsw i64 %4, 2
+  %6 = ashr exact i64 %0, 2
+  %7 = icmp ule i64 %5, %6
   ret i1 %7
 }
 

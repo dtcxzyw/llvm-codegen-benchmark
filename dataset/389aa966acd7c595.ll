@@ -1,5 +1,5 @@
 
-; 138 occurrences:
+; 136 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -10,6 +10,7 @@
 ; abc/optimized/giaMfs.c.ll
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/giaTruth.c.ll
+; abc/optimized/ifCut.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ifDec75.c.ll
@@ -21,6 +22,7 @@
 ; arrow/optimized/hashing.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cpython/optimized/_ctypes.ll
@@ -54,7 +56,6 @@
 ; hdf5/optimized/H5Z.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/rose_build_engine_blob.cpp.ll
-; libquic/optimized/custom_extensions.c.ll
 ; lief/optimized/ecp.c.ll
 ; linux/optimized/blk-flush.ll
 ; linux/optimized/bts.ll
@@ -74,7 +75,6 @@
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/phy_device.ll
-; linux/optimized/pkeys.ll
 ; linux/optimized/sched.ll
 ; linux/optimized/services.ll
 ; linux/optimized/skl_scaler.ll
@@ -84,7 +84,6 @@
 ; linux/optimized/xhci-mem.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
@@ -93,7 +92,6 @@
 ; luau/optimized/Compiler.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
@@ -146,7 +144,7 @@ entry:
   ret i32 %2
 }
 
-; 192 occurrences:
+; 193 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcDec.c.ll
@@ -234,7 +232,6 @@ entry:
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/mapperRefs.c.ll
 ; abc/optimized/mapperUtils.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/nwkSpeedup.c.ll
 ; abc/optimized/nwkUtil.c.ll
 ; abc/optimized/resFilter.c.ll
@@ -249,6 +246,7 @@ entry:
 ; abc/optimized/utilIsop.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; assimp/optimized/ProcessHelper.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; cpython/optimized/hamt.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
@@ -285,6 +283,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; nuttx/optimized/lib_dtoa_engine.c.ll
 ; oniguruma/optimized/regcomp.ll
@@ -347,7 +346,7 @@ entry:
   ret i32 %2
 }
 
-; 258 occurrences:
+; 253 occurrences:
 ; abc/optimized/abcAttach.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcNpnSave.c.ll
@@ -485,7 +484,6 @@ entry:
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
 ; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ThreadSanitizer.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
@@ -493,6 +491,7 @@ entry:
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -504,7 +503,6 @@ entry:
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -562,7 +560,6 @@ entry:
 ; qemu/optimized/hw_audio_intel-hda.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; quickjs/optimized/libunicode.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
@@ -585,15 +582,12 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/crc5.c.ll
 ; wireshark/optimized/erf.c.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; wireshark/optimized/packet-couchbase.c.ll
 ; wireshark/optimized/packet-ftdi-mpsse.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-mac-nr.c.ll
-; wireshark/optimized/packet-netanalyzer.c.ll
 ; wireshark/optimized/packet-ocfs2.c.ll
-; wireshark/optimized/packet-sita.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
@@ -656,6 +650,7 @@ entry:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/mpmTruth.c.ll
 ; abc/optimized/sbdCut.c.ll
+; boost/optimized/alloc_lib.ll
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_overlay.c.ll
 ; darktable/optimized/introspection_watermark.c.ll
@@ -704,7 +699,6 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; yosys/optimized/abc9_ops.ll
 ; yosys/optimized/calc.ll
-; yosys/optimized/opt_lut.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i64 %0) #0 {
 entry:

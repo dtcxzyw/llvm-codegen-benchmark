@@ -1,18 +1,11 @@
-func000000000000005a:                   // @func000000000000005a
+func000000000000009a:                   // @func000000000000009a
 // %bb.0:                               // %entry
-	cmp	w1, #3
+	cmp	w1, #2
 	csinc	w8, wzr, w1, ge
-	add	x0, x0, w8, sxtw #4
-	ret
-                                        // -- End function
-func000000000000006a:                   // @func000000000000006a
-// %bb.0:                               // %entry
-	cmp	w1, #0
-	csinc	w8, wzr, w1, le
 	add	x0, x0, w8, sxtw #2
 	ret
                                         // -- End function
-func0000000000000058:                   // @func0000000000000058
+func0000000000000098:                   // @func0000000000000098
 // %bb.0:                               // %entry
 	cmp	w1, #2
 	csinc	w8, wzr, w1, ge

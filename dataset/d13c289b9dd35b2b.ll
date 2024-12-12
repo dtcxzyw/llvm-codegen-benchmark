@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %1, %2
   %4 = sub nsw i32 %0, %3
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %1, %2
   %4 = sub nsw i32 %0, %3
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/decodetxb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
   %4 = sub nsw i32 %0, %3

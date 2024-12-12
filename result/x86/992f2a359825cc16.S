@@ -1,22 +1,27 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	cmpq	$4, %rsi
 	cmovbq	%rsi, %rdi
 	leaq	-34(%rdi), %rax
+	retq
+func0000000000000021:                   # @func0000000000000021
+	cmpq	$34, %rsi
+	cmovbq	%rsi, %rdi
+	leaq	-1(%rdi), %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	testq	%rsi, %rsi
 	cmovneq	%rsi, %rdi
 	leaq	12(%rdi), %rax
 	retq
+func0000000000000020:                   # @func0000000000000020
+	cmpq	$4, %rsi
+	cmovbq	%rsi, %rdi
+	leaq	-1(%rdi), %rax
+	retq
 func0000000000000019:                   # @func0000000000000019
 	testq	%rsi, %rsi
 	cmovnsq	%rsi, %rdi
 	leaq	-1000000(%rdi), %rax
-	retq
-func0000000000000020:                   # @func0000000000000020
-	cmpq	$3, %rsi
-	cmovbq	%rsi, %rdi
-	leaq	1(%rdi), %rax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	testq	%rsi, %rsi

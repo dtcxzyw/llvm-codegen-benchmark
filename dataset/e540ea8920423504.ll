@@ -28,10 +28,8 @@ entry:
   ret i8 %3
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; clamav/optimized/ishield.c.ll
-; icu/optimized/ucnv_u8.ll
-; icu/optimized/ucnvmbcs.ll
 ; oiio/optimized/DPXHeader.cpp.ll
 ; qemu/optimized/util_uri.c.ll
 ; Function Attrs: nounwind
@@ -81,8 +79,7 @@ entry:
   ret i8 %4
 }
 
-; 4 occurrences:
-; linux/optimized/he.ll
+; 3 occurrences:
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll
@@ -91,6 +88,18 @@ define i8 @func0000000000000007(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i8 4, i8 8
+  %4 = add nuw nsw i8 %0, %3
+  ret i8 %4
+}
+
+; 2 occurrences:
+; icu/optimized/ucnv_u8.ll
+; icu/optimized/ucnvmbcs.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000063(i8 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i8 %1, -17
+  %3 = select i1 %2, i8 3, i8 2
   %4 = add nuw nsw i8 %3, %0
   ret i8 %4
 }
@@ -98,11 +107,11 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_codecs_kr.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000051(i8 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, -32
+  %2 = icmp samesign ult i8 %1, -32
   %3 = select i1 %2, i8 78, i8 105
-  %4 = add nsw i8 %3, %0
+  %4 = add nsw i8 %0, %3
   ret i8 %4
 }
 

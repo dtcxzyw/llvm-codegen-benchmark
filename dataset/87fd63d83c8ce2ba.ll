@@ -5,7 +5,7 @@
 define i32 @func0000000000000140(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, 16
   %6 = trunc i64 %0 to i32
   %7 = add i32 %5, %6
@@ -18,7 +18,7 @@ entry:
 define i32 @func0000000000000040(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, 1
   %6 = trunc i64 %0 to i32
   %7 = add i32 %5, %6
@@ -64,7 +64,7 @@ entry:
 define i32 @func0000000000000144(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 4
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, 1
   %6 = trunc i64 %0 to i32
   %7 = add i32 %5, %6

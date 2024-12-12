@@ -21,7 +21,7 @@
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = and i64 %0, 8589934584
@@ -31,6 +31,7 @@ entry:
 
 ; 95 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; flatbuffers/optimized/flatc.cpp.ll
 ; hdf5/optimized/H5HGcache.c.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
@@ -100,7 +101,6 @@ entry:
 ; llvm/optimized/UninitializedObjectChecker.cpp.ll
 ; llvm/optimized/UnixAPIChecker.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
 ; php/optimized/ZendAccelerator.ll
 ; php/optimized/block_pass.ll
 ; php/optimized/compact_literals.ll
@@ -134,7 +134,8 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/alloc_lib.ll
 ; git/optimized/split-index.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
@@ -151,7 +152,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; git/optimized/apply.ll
 ; linux/optimized/ipconfig.ll
 ; Function Attrs: nounwind
@@ -197,7 +199,7 @@ entry:
 ; hermes/optimized/FoldingSet.cpp.ll
 ; sentencepiece/optimized/arena.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = and i64 %0, 1073741823
@@ -208,7 +210,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/ad_write_str.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = and i64 %0, 4294967295

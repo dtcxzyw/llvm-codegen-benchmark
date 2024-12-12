@@ -1,9 +1,9 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	andi	a0, a0, 1
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	sh3add.uw	a0, a1, a0
 	lui	a1, 8
 	addiw	a1, a1, 8

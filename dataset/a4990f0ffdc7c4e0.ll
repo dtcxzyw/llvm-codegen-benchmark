@@ -1,5 +1,5 @@
 
-; 116 occurrences:
+; 117 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; cmake/optimized/archive_write_disk_posix.c.ll
 ; cpython/optimized/mpdecimal.ll
@@ -116,8 +116,9 @@
 ; slurm/optimized/sinfo.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spike/optimized/f64_rem.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 262144
   %3 = icmp eq i32 %2, 0
@@ -148,7 +149,7 @@ entry:
 ; slurm/optimized/node_mgr.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65536
   %3 = icmp eq i32 %2, 0
@@ -161,7 +162,7 @@ entry:
 ; linux/optimized/hooks.ll
 ; ruby/optimized/sprintf.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 10
   %3 = icmp ne i32 %2, 0
@@ -179,7 +180,7 @@ entry:
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32
   %3 = icmp ne i32 %2, 0
@@ -189,12 +190,24 @@ entry:
 }
 
 ; 1 occurrences:
+; hermes/optimized/HermesBuiltin.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000281(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 268435455
+  %3 = icmp samesign ult i32 %2, 13
+  %4 = icmp eq i64 %0, 0
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; llvm/optimized/ObjCRuntime.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000030c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
-  %3 = icmp ugt i32 %2, 8
+  %3 = icmp samesign ugt i32 %2, 8
   %4 = icmp ne i64 %0, 0
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
@@ -203,10 +216,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-vssmonitoring.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000030a(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1073741312
-  %3 = icmp ugt i32 %2, 999999999
+  %3 = icmp samesign ugt i32 %2, 999999999
   %4 = icmp sgt i64 %0, 2592000
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
@@ -215,7 +228,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/zstd_decompress.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -16
   %3 = icmp ne i32 %2, 407710288
@@ -224,27 +237,29 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; linux/optimized/synaptics.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 65280
-  %3 = icmp eq i32 %2, 18176
-  %4 = icmp ugt i64 %0, 1796
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/intel_guc_submission.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 20
   %3 = icmp eq i32 %2, 0
   %4 = icmp slt i64 %0, 0
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 3 occurrences:
+; postgres/optimized/d2s.ll
+; postgres/optimized/d2s_shlib.ll
+; postgres/optimized/d2s_srv.ll
+; Function Attrs: nounwind
+define i1 @func000000000000028c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 2046
+  %3 = icmp eq i32 %2, 0
+  %4 = icmp ne i64 %0, 0
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }

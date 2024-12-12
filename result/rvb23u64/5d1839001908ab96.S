@@ -37,7 +37,7 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000008:                   # @func0000000000000008
 	fli.d	fa5, -1.0
 	fadd.d	fa5, fa1, fa5
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	ret
 .LCPI6_0:
 	.quad	0xbf847ae147ae147b              # double -0.01
@@ -53,8 +53,11 @@ func000000000000000c:                   # @func000000000000000c
 	fadd.d	fa5, fa1, fa5
 	fle.d	a0, fa5, fa0
 	ret
+.LCPI8_0:
+	.quad	0x4076800000000000              # double 360
 func000000000000000d:                   # @func000000000000000d
-	fli.d	fa5, 1.0
+	lui	a0, %hi(.LCPI8_0)
+	fld	fa5, %lo(.LCPI8_0)(a0)
 	fadd.d	fa5, fa1, fa5
 	flt.d	a0, fa0, fa5
 	xori	a0, a0, 1

@@ -6,7 +6,7 @@
 ; php/optimized/zend_func_info.ll
 ; postgres/optimized/xlog.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 64
   %3 = icmp eq i32 %2, 0
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/net_sockets.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2048
   %3 = icmp eq i32 %2, 0
@@ -33,7 +33,7 @@ entry:
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i32 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8388608
   %3 = icmp ne i32 %2, 0

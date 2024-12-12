@@ -5,7 +5,7 @@
 define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
@@ -46,7 +46,7 @@ entry:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
   %3 = or i1 %2, %0
@@ -61,7 +61,7 @@ entry:
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 9
   %3 = or i1 %2, %0
@@ -72,10 +72,10 @@ entry:
 ; llvm/optimized/UnifyFunctionExitNodes.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000050(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 8
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
@@ -90,7 +90,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, -1829587348619264
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
@@ -113,10 +113,10 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/csettings.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000054(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 

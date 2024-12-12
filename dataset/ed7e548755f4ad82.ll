@@ -8,7 +8,7 @@
 ; llvm/optimized/CGCall.cpp.ll
 ; ruby/optimized/transcode.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i32 0, i32 256

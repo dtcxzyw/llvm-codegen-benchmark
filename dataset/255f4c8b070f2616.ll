@@ -43,9 +43,9 @@ entry:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 1
+  %3 = icmp samesign ugt i32 %2, 1
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = freeze i32 %4
   ret i32 %5

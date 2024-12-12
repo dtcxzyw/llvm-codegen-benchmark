@@ -16,7 +16,7 @@ func000000000000000a:                   # @func000000000000000a
 	vadd.vi	v10, v12, 2
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000001ea:                   # @func00000000000001ea
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 2
 	li	a0, 120

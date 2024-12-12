@@ -31,7 +31,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i16
   %4 = and i16 %3, 4
   %5 = and i16 %1, 1
-  %6 = or disjoint i16 %5, %0
+  %6 = or disjoint i16 %0, %5
   %7 = or disjoint i16 %6, %4
   ret i16 %7
 }
@@ -48,7 +48,7 @@ entry:
 define i16 @func0000000000000003(i16 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 32
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   %5 = trunc i64 %1 to i16
   %6 = and i16 %5, 128
   %7 = or disjoint i16 %6, %4

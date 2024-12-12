@@ -34,9 +34,8 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; csmith/optimized/Bookkeeper.cpp.ll
-; opencv/optimized/brisk.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
 entry:

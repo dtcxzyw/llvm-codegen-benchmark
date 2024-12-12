@@ -23,8 +23,7 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; openblas/optimized/dlasyf_aa.c.ll
+; 3 occurrences:
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; yosys/optimized/booth.ll
@@ -76,11 +75,9 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
-; gromacs/optimized/dgetf2.cpp.ll
+; 5 occurrences:
 ; gromacs/optimized/dsymv.cpp.ll
 ; gromacs/optimized/dtrsm.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
 ; gromacs/optimized/ssymv.cpp.ll
 ; gromacs/optimized/strsm.cpp.ll
 ; sundials/optimized/sunnonlinsol_fixedpoint.c.ll
@@ -107,36 +104,9 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; gromacs/optimized/dtrti2.cpp.ll
-; gromacs/optimized/strti2.cpp.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000d0(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, 1
-  %4 = add i32 %0, 1
-  %5 = mul i32 %4, %3
-  ret i32 %5
-}
-
-; 2 occurrences:
-; gromacs/optimized/dorg2r.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, 1
-  %4 = add i32 %0, 1
-  %5 = mul i32 %4, %3
-  ret i32 %5
-}
-
-; 5 occurrences:
+; 4 occurrences:
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dhseqr.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; z3/optimized/mpz_matrix.cpp.ll
 ; Function Attrs: nounwind

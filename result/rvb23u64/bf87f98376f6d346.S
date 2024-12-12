@@ -1,4 +1,4 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	sext.w	a1, a0
 	bset	a0, zero, a0
 	li	a2, 1
@@ -7,7 +7,7 @@ func0000000000000026:                   # @func0000000000000026
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000054:                   # @func0000000000000054
 	sext.w	a1, a0
 	li	a2, 16
 	sllw	a0, a2, a0
@@ -24,13 +24,22 @@ func000000000000000a:                   # @func000000000000000a
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000002a:                   # @func000000000000002a
+func0000000000000044:                   # @func0000000000000044
+	sext.w	a1, a0
+	bset	a0, zero, a0
+	li	a2, 1
+	sltiu	a1, a1, 32
+	czero.nez	a2, a2, a1
+	czero.eqz	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func000000000000004a:                   # @func000000000000004a
 	sext.w	a1, a0
 	bset	a0, zero, a0
 	slti	a1, a1, 2
 	czero.nez	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	sext.w	a1, a0
 	bset	a0, zero, a0
 	czero.eqz	a0, a0, a1

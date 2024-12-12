@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000009:                   # @func0000000000000009
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsleu.vi	v0, v10, 7
+	vmsleu.vi	v0, v10, 4
 	vmv.v.i	v10, 3
 	vmerge.vvm	v9, v10, v9, v0
 	vor.vv	v8, v9, v8

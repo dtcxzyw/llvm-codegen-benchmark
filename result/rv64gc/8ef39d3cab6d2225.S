@@ -11,6 +11,6 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -1
 	ret
 func0000000000000005:                   # @func0000000000000005
-	addiw	a0, a0, 8
-	addi	a0, a0, -8
+	addiw	a0, a0, 9
+	addi	a0, a0, -9
 	ret

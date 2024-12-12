@@ -1,17 +1,8 @@
-func0000000000000d7c:                   // @func0000000000000d7c
+func00000000000034ec:                   // @func00000000000034ec
 // %bb.0:                               // %entry
-	add	v6.4s, v1.4s, v1.4s
-	add	v7.4s, v0.4s, v0.4s
-	add	v5.4s, v6.4s, v5.4s
-	movi	v6.4s, #4
-	add	v4.4s, v7.4s, v4.4s
-	cmge	v3.4s, v3.4s, v5.4s
-	cmge	v2.4s, v2.4s, v4.4s
-	cmeq	v1.4s, v1.4s, v6.4s
-	cmeq	v0.4s, v0.4s, v6.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	bic	v0.16b, v2.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	add	w8, w2, w0, lsl #1
+	cmp	w0, #4
+	ccmp	w8, w1, #0, ne
+	cset	w0, le
 	ret
                                         // -- End function

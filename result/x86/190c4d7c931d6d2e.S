@@ -10,14 +10,16 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	leal	64(%rdx), %eax
-	testb	$1, %dil
-	cmoveq	%rsi, %rax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	leaq	23(%rdx), %rax
 	andq	$-8, %rax
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	leaq	31(%rdx), %rcx
+	movabsq	$9223372036854775776, %rax      # imm = 0x7FFFFFFFFFFFFFE0
+	andq	%rcx, %rax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	retq

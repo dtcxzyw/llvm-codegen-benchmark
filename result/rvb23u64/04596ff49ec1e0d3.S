@@ -5,7 +5,7 @@ func000000000000000a:                   # @func000000000000000a
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	or	a1, a1, a2
 	sext.w	a1, a1
 	slti	a1, a1, 0
@@ -18,13 +18,13 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	or	a1, a1, a2
 	sext.w	a1, a1
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	or	a1, a1, a2
 	sext.w	a1, a1
 	slti	a1, a1, 0

@@ -5,9 +5,9 @@ func0000000000000000:                   # @func0000000000000000
 	cmovel	%ecx, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	leal	4(%rsi), %ecx
+	leal	-4(%rsi), %ecx
 	testb	$1, %dil
-	movl	$6, %eax
+	movl	$-4, %eax
 	cmovel	%ecx, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003

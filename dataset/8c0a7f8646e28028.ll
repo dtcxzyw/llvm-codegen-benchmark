@@ -12,22 +12,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; linux/optimized/intel_tcc.ll
-; postgres/optimized/regis.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 16
-  %3 = and i32 %2, 127
-  %4 = icmp sle i32 %3, %0
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 15
   %3 = and i32 %2, 65535
@@ -39,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/lossless.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 255

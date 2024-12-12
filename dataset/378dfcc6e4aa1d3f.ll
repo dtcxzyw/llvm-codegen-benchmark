@@ -15,13 +15,13 @@
 ; php/optimized/zend_inheritance.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 2
   %4 = add nuw nsw i64 %3, 7
   %5 = and i64 %4, 34359738360
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

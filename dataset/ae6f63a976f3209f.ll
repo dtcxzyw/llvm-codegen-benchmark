@@ -1,5 +1,5 @@
 
-; 106 occurrences:
+; 100 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -19,15 +19,13 @@
 ; abc/optimized/sbdSat.c.ll
 ; abc/optimized/sscSim.c.ll
 ; abc/optimized/utilIsop.c.ll
-; cmake/optimized/setopt.c.ll
+; base64-rs/optimized/3i18zkzed1c7jyoe.ll
 ; coreutils-rs/optimized/p2ic31m8j7cwnae.ll
 ; cpython/optimized/difradix2.ll
 ; cpython/optimized/typeobject.ll
-; curl/optimized/libcurl_la-setopt.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
-; folly/optimized/Conv.cpp.ll
 ; git/optimized/diff-merges.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -36,15 +34,10 @@
 ; linux/optimized/core.ll
 ; linux/optimized/fork.ll
 ; linux/optimized/journal.ll
-; linux/optimized/memory.ll
-; linux/optimized/scsiglue.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/vmalloc.ll
 ; linux/optimized/vsprintf.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
-; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
@@ -56,7 +49,6 @@
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
-; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SanitizerMetadata.cpp.ll
@@ -89,8 +81,6 @@
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; redis/optimized/memtest.ll
-; redis/optimized/networking.ll
-; redis/optimized/script.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; ruby/optimized/array.ll
 ; slurm/optimized/node_scheduler.ll
@@ -106,6 +96,10 @@
 ; velox/optimized/Type.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
 ; wireshark/optimized/packet-lldp.c.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -115,12 +109,10 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
-; freetype/optimized/pshinter.c.ll
+; 8 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; linux/optimized/gen8_ppgtt.ll
-; llvm/optimized/CompilerInvocation.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; openssl/optimized/libcrypto-lib-a_mbstr.ll
 ; openssl/optimized/libcrypto-shlib-a_mbstr.ll
@@ -151,6 +143,18 @@ entry:
   %3 = icmp ugt i64 %2, 255
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = and i64 %4, -2049
+  ret i64 %5
+}
+
+; 2 occurrences:
+; freetype/optimized/pshinter.c.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 4294967296
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = and i64 %4, -15393162788865
   ret i64 %5
 }
 

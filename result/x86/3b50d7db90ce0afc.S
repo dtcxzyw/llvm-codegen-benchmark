@@ -1,5 +1,5 @@
 func000000000000000c:                   # @func000000000000000c
-	cmpb	%sil, %dl
+	cmpb	%dl, %sil
 	setne	%al
 	orb	%dil, %al
 	retq

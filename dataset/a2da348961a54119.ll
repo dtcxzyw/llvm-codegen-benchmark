@@ -28,11 +28,11 @@
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = add nsw i8 %2, -48
   %4 = zext nneg i8 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
@@ -40,11 +40,11 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = add nuw i8 %2, 1
   %4 = zext i8 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }

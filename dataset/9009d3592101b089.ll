@@ -1,24 +1,19 @@
 
-; 14 occurrences:
-; clamav/optimized/pe_icons.c.ll
-; hyperscan/optimized/ng_corpus_properties.cpp.ll
+; 9 occurrences:
 ; icu/optimized/inputext.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/r8169_main.ll
-; linux/optimized/reg.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/therm_throt.ll
-; linux/optimized/xt_conntrack.ll
 ; llvm/optimized/GlobalsStream.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; minetest/optimized/clouds.cpp.ll
-; postgres/optimized/brin_revmap.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-ceph.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 6
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ult i32 %2, %0
   ret i1 %3
 }
 
@@ -36,25 +31,36 @@ entry:
   ret i1 %3
 }
 
-; 13 occurrences:
+; 10 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; linux/optimized/8250_port.ll
-; linux/optimized/intel_dp.ll
-; linux/optimized/reg.ll
 ; linux/optimized/tg3.ll
-; llvm/optimized/LoopUnrollPass.cpp.ll
 ; postgres/optimized/f2s.ll
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 7
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ugt i32 %2, %0
+  ret i1 %3
+}
+
+; 5 occurrences:
+; clamav/optimized/pe_icons.c.ll
+; hyperscan/optimized/ng_corpus_properties.cpp.ll
+; linux/optimized/r8169_main.ll
+; linux/optimized/reg.ll
+; linux/optimized/xt_conntrack.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = udiv i32 %1, 6
+  %3 = icmp ult i32 %2, %0
   ret i1 %3
 }
 
@@ -77,6 +83,19 @@ define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 3
   %3 = icmp eq i32 %2, %0
+  ret i1 %3
+}
+
+; 4 occurrences:
+; linux/optimized/8250_port.ll
+; linux/optimized/intel_dp.ll
+; linux/optimized/reg.ll
+; llvm/optimized/LoopUnrollPass.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = udiv i32 %1, 100
+  %3 = icmp ugt i32 %2, %0
   ret i1 %3
 }
 

@@ -42,7 +42,7 @@
 ; quantlib/optimized/ukraine.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -59,7 +59,7 @@ entry:
 ; quantlib/optimized/japan.ll
 ; quantlib/optimized/thailand.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000481(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/austria.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000048c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -89,7 +89,7 @@ entry:
 ; quantlib/optimized/thirty360.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000042a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -106,7 +106,7 @@ entry:
 ; quantlib/optimized/turkey.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000541(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -125,7 +125,7 @@ entry:
 ; quantlib/optimized/turkey.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000004c1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -144,7 +144,7 @@ entry:
 ; quantlib/optimized/taiwan.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -161,7 +161,7 @@ entry:
 ; quantlib/optimized/italy.ll
 ; quantlib/optimized/sweden.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000058c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -176,7 +176,7 @@ entry:
 ; quantlib/optimized/mexico.ll
 ; quantlib/optimized/russia.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000546(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -190,7 +190,7 @@ entry:
 ; quantlib/optimized/chile.ll
 ; quantlib/optimized/japan.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000424(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -203,7 +203,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/russia.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000166(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000004c6(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -216,7 +216,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000911(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000002421(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -229,7 +229,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/server.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
@@ -239,11 +239,10 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; opencv/optimized/contours_link.cpp.ll
-; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000054a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -251,18 +250,6 @@ entry:
   %6 = icmp sgt i32 %0, 1
   %7 = and i1 %6, %5
   ret i1 %7
-}
-
-; 1 occurrences:
-; tev/optimized/ImageViewer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000009aa(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw i64 %2 to i32
-  %4 = icmp sgt i32 %3, %1
-  %5 = icmp sgt i32 %0, 0
-  %6 = and i1 %5, %4
-  ret i1 %6
 }
 
 attributes #0 = { nounwind }

@@ -1,4 +1,4 @@
-func0000000000000036:                   # @func0000000000000036
+func0000000000000037:                   # @func0000000000000037
 	testl	%edx, %edx
 	cmovgl	%edx, %esi
 	leaq	(%rsi,%rdi), %rax
@@ -8,12 +8,12 @@ func0000000000000034:                   # @func0000000000000034
 	cmovgl	%edx, %esi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	cmpl	$-1, %edx
 	cmovnel	%edx, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	testl	%edx, %edx
 	cmovnsl	%edx, %esi
 	leaq	(%rdi,%rsi,8), %rax
@@ -23,7 +23,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmovnel	%edx, %esi
 	leaq	(%rdi,%rsi,4), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	cmpl	$-1, %edx
 	cmovnel	%edx, %esi
 	leaq	(%rsi,%rdi), %rax

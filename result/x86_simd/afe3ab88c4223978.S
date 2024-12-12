@@ -40,3 +40,12 @@ func000000000000001d:                   # @func000000000000001d
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
+.LCPI5_0:
+	.quad	10000                           # 0x2710
+func000000000000001f:                   # @func000000000000001f
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpbroadcastq	.LCPI5_0(%rip), %ymm1   # ymm1 = [10000,10000,10000,10000]
+	vpsubq	%ymm0, %ymm1, %ymm0
+	retq

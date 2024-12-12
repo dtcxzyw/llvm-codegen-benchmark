@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/file.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 61440
   %3 = icmp eq i32 %2, 16384
@@ -25,7 +25,7 @@ entry:
 ; pybind11/optimized/test_builtin_casters.cpp.ll
 ; qemu/optimized/hw_scsi_scsi-bus.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32
   %3 = icmp eq i32 %2, 0

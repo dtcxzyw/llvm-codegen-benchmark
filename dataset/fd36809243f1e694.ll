@@ -1,5 +1,5 @@
 
-; 114 occurrences:
+; 116 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/ifTime.c.ll
 ; arrow/optimized/array_base.cc.ll
@@ -29,7 +29,6 @@
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
@@ -113,6 +112,9 @@
 ; xgboost/optimized/gradient_index.cc.ll
 ; xgboost/optimized/iterative_dmatrix.cc.ll
 ; xgboost/optimized/quantile.cc.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i8 %0) #0 {

@@ -17,7 +17,7 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, -8
   %3 = icmp ugt i32 %0, 31
@@ -34,7 +34,7 @@ entry:
 ; openusd/optimized/animMapper.cpp.ll
 ; proj/optimized/unitconvert.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp eq i32 %0, 0
@@ -60,7 +60,7 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, -1
   %3 = icmp eq i32 %0, 0
@@ -95,7 +95,7 @@ entry:
 ; abc/optimized/wlcBlast.c.ll
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000481(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1114112
   %3 = icmp ult i32 %2, -1112064
@@ -114,7 +114,7 @@ entry:
 ; abc/optimized/pdrIncr.c.ll
 ; regex-rs/optimized/v8mcpnwv4glojx2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -6
   %3 = icmp ult i32 %2, -15
@@ -128,7 +128,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 7
   %3 = icmp ult i32 %2, 15
@@ -141,7 +141,7 @@ entry:
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 384
   %3 = icmp ult i32 %2, -15
@@ -153,7 +153,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaTruth.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000048a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 999
   %3 = icmp ult i32 %2, 15
@@ -165,7 +165,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -43
   %3 = icmp ult i32 %2, -2
@@ -174,11 +174,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/DwarfDebug.cpp.ll
-; postgres/optimized/hashutil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -41
   %3 = icmp ult i32 %2, 2
@@ -190,11 +189,23 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000494(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -13
   %3 = icmp ult i32 %2, 4
   %4 = icmp ult i32 %0, 7
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; postgres/optimized/hashutil.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000094(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 1
+  %3 = icmp ult i32 %2, 2
+  %4 = icmp ult i32 %0, 10
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }

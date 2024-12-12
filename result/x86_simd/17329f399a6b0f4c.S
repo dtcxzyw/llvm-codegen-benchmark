@@ -34,7 +34,7 @@
 	.zero	1
 .LCPI0_2:
 	.long	2                               # 0x2
-func0000000000000881:                   # @func0000000000000881
+func0000000000002101:                   # @func0000000000002101
 	vpcmpltub	.LCPI0_0(%rip), %xmm2, %k0
 	vpcmpltub	.LCPI0_1(%rip), %xmm1, %k1
 	korb	%k0, %k1, %k1
@@ -78,7 +78,7 @@ func0000000000000881:                   # @func0000000000000881
 	.zero	1
 .LCPI1_2:
 	.long	2                               # 0x2
-func0000000000000221:                   # @func0000000000000221
+func0000000000000841:                   # @func0000000000000841
 	vpcmpeqb	.LCPI1_0(%rip), %xmm2, %k0
 	vpcmpeqb	.LCPI1_1(%rip), %xmm1, %k1
 	korb	%k0, %k1, %k1

@@ -1,18 +1,18 @@
-func00000000000003f1:                   # @func00000000000003f1
+func00000000000007e1:                   # @func00000000000007e1
 	shll	$16, %edx
 	shll	$8, %esi
 	orl	%edx, %esi
 	orl	%edi, %esi
 	sete	%al
 	retq
-func00000000000003fc:                   # @func00000000000003fc
+func00000000000007ec:                   # @func00000000000007ec
 	shll	$16, %edx
 	shll	$8, %esi
 	orl	%edx, %esi
 	orl	%edi, %esi
 	setne	%al
 	retq
-func00000000000002f1:                   # @func00000000000002f1
+func00000000000005e1:                   # @func00000000000005e1
 	shll	$16, %edx
 	shll	$8, %esi
 	orl	%edx, %esi
@@ -20,7 +20,7 @@ func00000000000002f1:                   # @func00000000000002f1
 	cmpl	$12, %esi
 	sete	%al
 	retq
-func00000000000002f4:                   # @func00000000000002f4
+func00000000000005f4:                   # @func00000000000005f4
 	shll	$16, %edx
 	shll	$8, %esi
 	orl	%edx, %esi
@@ -28,7 +28,7 @@ func00000000000002f4:                   # @func00000000000002f4
 	cmpl	$65, %esi
 	setb	%al
 	retq
-func00000000000002f8:                   # @func00000000000002f8
+func00000000000005e8:                   # @func00000000000005e8
 	shll	$16, %edx
 	shll	$8, %esi
 	orl	%edx, %esi
@@ -36,7 +36,15 @@ func00000000000002f8:                   # @func00000000000002f8
 	cmpl	$4, %esi
 	setae	%al
 	retq
-func00000000000003c8:                   # @func00000000000003c8
+func00000000000005e4:                   # @func00000000000005e4
+	shll	$16, %edx
+	shll	$8, %esi
+	orl	%edx, %esi
+	orl	%edi, %esi
+	cmpl	$22, %esi
+	setb	%al
+	retq
+func0000000000000798:                   # @func0000000000000798
 	shll	$8, %edx
 	shll	$4, %esi
 	orl	%edx, %esi
@@ -60,7 +68,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$65536, %esi                    # imm = 0x10000
 	setb	%al
 	retq
-func00000000000003f4:                   # @func00000000000003f4
+func00000000000007f4:                   # @func00000000000007f4
 	shll	$16, %edx
 	shll	$8, %esi
 	orl	%edx, %esi
@@ -68,7 +76,7 @@ func00000000000003f4:                   # @func00000000000003f4
 	cmpl	$18463, %esi                    # imm = 0x481F
 	setb	%al
 	retq
-func00000000000003f8:                   # @func00000000000003f8
+func00000000000007f8:                   # @func00000000000007f8
 	shll	$16, %edx
 	shll	$8, %esi
 	orl	%edx, %esi

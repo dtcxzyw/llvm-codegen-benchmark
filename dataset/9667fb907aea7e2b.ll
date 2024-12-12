@@ -29,7 +29,7 @@ entry:
 
 ; 12 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
-; linux/optimized/intel_audio.ll
+; linux/optimized/libata-scsi.ll
 ; minetest/optimized/environment.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
 ; postgres/optimized/fe-print.ll

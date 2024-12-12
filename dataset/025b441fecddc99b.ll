@@ -1,11 +1,11 @@
 
-%struct.intel_uncore_extra_reg.3344265 = type { %struct.raw_spinlock.3344266, i64, i64, i64, %struct.atomic_t.3344262 }
-%struct.raw_spinlock.3344266 = type { %struct.qspinlock.3344267 }
-%struct.qspinlock.3344267 = type { %union.anon.4.3344268 }
-%union.anon.4.3344268 = type { %struct.atomic_t.3344262 }
-%struct.atomic_t.3344262 = type { i32 }
+%struct.intel_uncore_extra_reg.3533108 = type { %struct.raw_spinlock.3533109, i64, i64, i64, %struct.atomic_t.3533105 }
+%struct.raw_spinlock.3533109 = type { %struct.qspinlock.3533110 }
+%struct.qspinlock.3533110 = type { %union.anon.4.3533111 }
+%union.anon.4.3533111 = type { %struct.atomic_t.3533105 }
+%struct.atomic_t.3533105 = type { i32 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/frameobject.ll
@@ -23,6 +23,7 @@
 ; postgres/optimized/integerset.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/spell.ll
+; postgres/optimized/tsvector_op.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
@@ -48,19 +49,15 @@ entry:
   ret ptr %5
 }
 
-; 206 occurrences:
-; abc/optimized/acecSt.c.ll
+; 193 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/timMan.c.ll
-; abc/optimized/timTrav.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/bzlib.c.ll
 ; clamav/optimized/rs.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
-; cmake/optimized/curl_trc.c.ll
 ; cmake/optimized/decompress.c.ll
-; curl/optimized/libcurl_la-curl_trc.ll
 ; cvc5/optimized/alethe_let_binding.cpp.ll
 ; cvc5/optimized/alethe_post_processor.cpp.ll
 ; cvc5/optimized/alf_node_converter.cpp.ll
@@ -200,8 +197,6 @@ entry:
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/number_compact.ll
 ; icu/optimized/numparse_affixes.ll
-; icu/optimized/ucnv_err.ll
-; icu/optimized/uresbund.ll
 ; icu/optimized/utext.ll
 ; icu/optimized/utrie2.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -209,15 +204,11 @@ entry:
 ; jq/optimized/jv_dtoa.ll
 ; libjpeg-turbo/optimized/jccoefct.c.ll
 ; luajit/optimized/minilua.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/reflowscan.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; mixbox/optimized/mixbox.ll
-; ncnn/optimized/reduction.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/color_lab.cpp.ll
@@ -240,14 +231,11 @@ entry:
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; openspiel/optimized/rbc.cc.ll
 ; openspiel/optimized/spades.cc.ll
-; openspiel/optimized/tiny_bridge.cc.ll
 ; openusd/optimized/av1_loopfilter.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/Maps.cc.ll
-; php/optimized/zend_jit_vm_helpers.ll
-; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/lparser.ll
@@ -264,13 +252,10 @@ entry:
   ret ptr %5
 }
 
-; 37 occurrences:
+; 30 occurrences:
 ; abc/optimized/decompress.c.ll
-; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/saigSimFast.c.ll
-; abc/optimized/sbdSat.c.ll
-; abseil-cpp/optimized/cordz_sample_token_test.cc.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/bzlib.c.ll
@@ -286,21 +271,17 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; nori/optimized/nanovg.c.ll
-; openblas/optimized/dgbtrf.c.ll
-; openblas/optimized/dhseqr.c.ll
-; openblas/optimized/dpbtrf.c.ll
-; openblas/optimized/dtgevc.c.ll
-; openblas/optimized/dtgex2.c.ll
 ; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/c1_FpuStackSim_x86.ll
 ; openjdk/optimized/jccoefct.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
-; openusd/optimized/warped_motion.c.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; php/optimized/dns.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/p1dgiootfedk7bo.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
@@ -308,6 +289,45 @@ entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 11 occurrences:
+; abc/optimized/giaMinLut.c.ll
+; abc/optimized/sbdSat.c.ll
+; abseil-cpp/optimized/cordz_sample_token_test.cc.ll
+; clamav/optimized/rs.cpp.ll
+; openblas/optimized/dhseqr.c.ll
+; openblas/optimized/dpbtrf.c.ll
+; openblas/optimized/dtgevc.c.ll
+; openblas/optimized/dtgex2.c.ll
+; openjdk/optimized/awt_ImagingLib.ll
+; openspiel/optimized/tiny_bridge.cc.ll
+; openusd/optimized/warped_motion.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw [32 x i32], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 8 occurrences:
+; cmake/optimized/curl_trc.c.ll
+; icu/optimized/ucnv_err.ll
+; icu/optimized/uresbund.ll
+; miniaudio/optimized/unity.c.ll
+; ncnn/optimized/reduction.cpp.ll
+; openspiel/optimized/tiny_bridge.cc.ll
+; php/optimized/zend_jit_vm_helpers.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw [4 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -322,7 +342,7 @@ entry:
   ret ptr %5
 }
 
-; 95 occurrences:
+; 94 occurrences:
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/arith_ite_utils.cpp.ll
 ; cvc5/optimized/bounded_integers.cpp.ll
@@ -378,7 +398,6 @@ entry:
 ; cvc5/optimized/sep_skolem_emp.cpp.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; cvc5/optimized/single_inv_partition.cpp.ll
-; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/strings_entail.cpp.ll
 ; cvc5/optimized/subs_minimize.cpp.ll
@@ -434,7 +453,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr [0 x %struct.intel_uncore_extra_reg.3344265], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [0 x %struct.intel_uncore_extra_reg.3533108], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

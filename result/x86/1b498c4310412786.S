@@ -14,20 +14,21 @@ func0000000000000000:                   # @func0000000000000000
 	shlq	$5, %rsi
 	addq	%rsi, %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000003b:                   # @func000000000000003b
 	movslq	%edx, %rax
 	addq	%rdi, %rax
 	leaq	(%rax,%rsi,2), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	movslq	%edx, %rax
 	addq	%rdi, %rax
 	leaq	(%rax,%rsi,4), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func000000000000001a:                   # @func000000000000001a
 	movslq	%edx, %rax
-	addq	%rdi, %rax
-	leaq	(%rax,%rsi,4), %rax
+	leaq	(%rdi,%rax,4), %rax
+	shlq	$5, %rsi
+	addq	%rsi, %rax
 	retq
 func0000000000000038:                   # @func0000000000000038
 	movslq	%edx, %rax

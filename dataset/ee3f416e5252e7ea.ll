@@ -4,7 +4,7 @@
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i8 %0, double %1, double %2) #0 {
+define i1 @func000000000000008a(i8 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = icmp sgt i8 %0, 0
@@ -17,7 +17,7 @@ entry:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i8 %0, double %1, double %2) #0 {
+define i1 @func0000000000000046(i8 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = icmp slt i8 %0, 0
@@ -31,7 +31,7 @@ entry:
 ; icu/optimized/tzrule.ll
 ; openusd/optimized/multiInterval.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i8 %0, double %1, double %2) #0 {
+define i1 @func0000000000000101(i8 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %1, %2
   %4 = icmp eq i8 %0, 0
@@ -43,7 +43,7 @@ entry:
 ; icu/optimized/rbtz.ll
 ; icu/optimized/simpletz.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i8 %0, double %1, double %2) #0 {
+define i1 @func000000000000010c(i8 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %1, %2
   %4 = icmp ne i8 %0, 0

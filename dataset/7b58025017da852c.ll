@@ -1,10 +1,9 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; freetype/optimized/sdf.c.ll
 ; git/optimized/url.ll
 ; lief/optimized/psa_crypto_slot_management.c.ll
-; linux/optimized/input-mt.ll
 ; openssl/optimized/libcrypto-lib-bio_lib.ll
 ; openssl/optimized/libcrypto-shlib-bio_lib.ll
 ; wireshark/optimized/packet-at.c.ll

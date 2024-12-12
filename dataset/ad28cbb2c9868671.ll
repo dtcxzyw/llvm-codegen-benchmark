@@ -1,5 +1,5 @@
 
-; 230 occurrences:
+; 231 occurrences:
 ; arrow/optimized/data.cc.ll
 ; arrow/optimized/datum.cc.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -104,6 +104,7 @@
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
+; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; openjdk/optimized/archiveBuilder.ll
 ; openjdk/optimized/memoryPool.ll
 ; openmpi/optimized/ras_base_allocate.ll

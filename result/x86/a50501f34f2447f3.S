@@ -34,9 +34,9 @@ func0000000000000018:                   # @func0000000000000018
 	shrq	%rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	subq	%rsi, %rdi
-	leaq	-2(%rdi), %rax
-	shrq	$2, %rax
+	notq	%rsi
+	leaq	(%rsi,%rdi), %rax
+	shrq	$3, %rax
 	retq
 func000000000000001e:                   # @func000000000000001e
 	notq	%rsi

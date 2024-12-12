@@ -32,7 +32,7 @@
 	.short	16385                           # 0x4001
 	.short	16385                           # 0x4001
 	.short	16385                           # 0x4001
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpaddw	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpcmpltuw	.LCPI0_1(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0

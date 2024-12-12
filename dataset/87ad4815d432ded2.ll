@@ -19,12 +19,12 @@
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000f4(i16 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = zext nneg i16 %0 to i64
   %4 = add nuw nsw i64 %3, %2
-  %5 = icmp ult i64 %4, 12
+  %5 = icmp samesign ult i64 %4, 12
   ret i1 %5
 }
 

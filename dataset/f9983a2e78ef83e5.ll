@@ -3,7 +3,7 @@
 ; php/optimized/zend_ini_parser.ll
 ; velox/optimized/TypeParser.yy.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i8 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = icmp slt i8 %0, 0
@@ -19,7 +19,7 @@ entry:
 ; postgres/optimized/zic.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i8 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 4, %1
   %3 = icmp eq i8 %0, 0

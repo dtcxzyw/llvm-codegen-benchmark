@@ -1,4 +1,4 @@
-func00000000000000ec:                   # @func00000000000000ec
+func00000000000001cc:                   # @func00000000000001cc
 	li	a2, 1
 	seqz	a0, a0
 	sllw	a1, a2, a1

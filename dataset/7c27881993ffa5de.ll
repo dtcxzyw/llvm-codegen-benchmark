@@ -1,24 +1,4 @@
 
-; 8 occurrences:
-; hdf5/optimized/H5FDcore.c.ll
-; linux/optimized/hda_codec.ll
-; linux/optimized/iosf_mbi.ll
-; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
-; llvm/optimized/SemaAttr.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-cpfi.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %3, %0
-  %5 = and i32 %1, 255
-  %6 = or disjoint i32 %4, %5
-  %7 = or disjoint i32 %6, 256
-  ret i32 %7
-}
-
 ; 3 occurrences:
 ; linux/optimized/iosf_mbi.ll
 ; minetest/optimized/texturesource.cpp.ll
@@ -27,20 +7,19 @@ entry:
 define i32 @func000000000000001e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, 255
   %6 = or disjoint i32 %4, %5
   %7 = or i32 %6, -16777216
   ret i32 %7
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/transferfunction.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
@@ -52,7 +31,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = and i32 %0, 255
   %6 = or disjoint i32 %5, %4
   %7 = or i32 %6, -16777216
@@ -89,13 +68,32 @@ entry:
   ret i32 %7
 }
 
+; 7 occurrences:
+; hdf5/optimized/H5FDcore.c.ll
+; linux/optimized/hda_codec.ll
+; linux/optimized/iosf_mbi.ll
+; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
+; llvm/optimized/SemaAttr.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-cpfi.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 2
+  %4 = or disjoint i32 %0, %3
+  %5 = and i32 %1, 128
+  %6 = or disjoint i32 %4, %5
+  %7 = or disjoint i32 %6, 64
+  ret i32 %7
+}
+
 ; 1 occurrences:
 ; linux/optimized/devio.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 8
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = and i32 %1, 128
   %6 = or disjoint i32 %4, %5
   %7 = or i32 %6, -1073741824
@@ -135,7 +133,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, -1065287681
   %6 = or i32 %4, %5
   %7 = or i32 %6, 4194304

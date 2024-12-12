@@ -11,13 +11,6 @@ func000000000000001a:                   # @func000000000000001a
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
-	movslq	%edx, %rax
-	shlq	$2, %rax
-	subq	%rax, %rdi
-	movslq	%esi, %rax
-	leaq	(%rdi,%rax,4), %rax
-	retq
 func0000000000000018:                   # @func0000000000000018
 	movslq	%edx, %rax
 	subq	%rax, %rdi

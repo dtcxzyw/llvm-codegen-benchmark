@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 16 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; flac/optimized/stream_encoder.c.ll
 ; folly/optimized/IOBuf.cpp.ll
@@ -7,11 +7,7 @@
 ; linux/optimized/tree.ll
 ; llvm/optimized/InstrProf.cpp.ll
 ; logos-rs/optimized/f8j7k4fzt8jpxp1.ll
-; openjdk/optimized/g1CardSet.ll
 ; openjdk/optimized/os_posix.ll
-; openjdk/optimized/xGlobals_x86.ll
-; openjdk/optimized/zAddress_x86.ll
-; postgres/optimized/catalog.ll
 ; postgres/optimized/trigger.ll
 ; qemu/optimized/hw_net_tulip.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -28,7 +24,7 @@ entry:
   ret i64 %4
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
@@ -41,7 +37,6 @@ entry:
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; linux/optimized/amd_bus.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; linux/optimized/if.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
@@ -54,7 +49,7 @@ entry:
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
+; qemu/optimized/block_qcow2-refcount.c.ll
 ; redis/optimized/t_zset.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; regex-rs/optimized/32jw1oy2yofrhudk.ll
@@ -68,7 +63,9 @@ entry:
 ; spike/optimized/f32_to_ui64.ll
 ; spike/optimized/s_addMagsF64.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
+; turborepo-rs/optimized/6jkgkc1600lrz2u0oa3gubskw.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -83,7 +80,7 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; openssl/optimized/libcrypto-lib-rand_pool.ll
 ; openssl/optimized/libcrypto-shlib-rand_pool.ll
-; proxygen/optimized/HTTPSession.cpp.ll
+; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {

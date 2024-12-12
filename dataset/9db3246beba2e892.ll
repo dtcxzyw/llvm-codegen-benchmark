@@ -6,7 +6,7 @@ define i32 @func0000000000000059(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sge i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -19,7 +19,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -34,7 +34,7 @@ define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -51,7 +51,7 @@ define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -64,7 +64,7 @@ define i32 @func0000000000000039(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sle i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -76,11 +76,12 @@ define i32 @func000000000000003b(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sle i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 175 occurrences:
+; 186 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -256,52 +257,64 @@ entry:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
-; 1 occurrences:
-; smol-rs/optimized/60w44q0ith6xnru.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %0, %1
-  %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
-  ret i32 %4
-}
-
-; 6 occurrences:
+; 8 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/mapperUtils.c.ll
 ; icu/optimized/uregex.ll
 ; opencv/optimized/kdtree.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
+; faiss/optimized/PolysemousTraining.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %0, %1
+  %3 = zext i1 %2 to i32
+  %4 = add nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 2 occurrences:
 ; hermes/optimized/raw_ostream.cpp.ll
-; libwebp/optimized/histogram_enc.c.ll
 ; llvm/optimized/raw_ostream.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000004b(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp uge i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -312,7 +325,7 @@ define i32 @func0000000000000060(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -323,7 +336,7 @@ define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -335,7 +348,7 @@ define i32 @func0000000000000033(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -346,18 +359,7 @@ define i32 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp uge i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; faiss/optimized/PolysemousTraining.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %0, %1
-  %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -368,7 +370,7 @@ define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sge i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -379,7 +381,7 @@ define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -390,7 +392,7 @@ define i32 @func000000000000005b(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sge i32 %0, %1
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 

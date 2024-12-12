@@ -16,5 +16,5 @@ func00000000000000a0:                   # @func00000000000000a0
 	vmv.v.i	v14, 2
 	vsll.vv	v10, v14, v10
 	vadd.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

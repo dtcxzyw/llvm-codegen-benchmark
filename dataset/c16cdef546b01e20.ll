@@ -1,24 +1,38 @@
 
-%struct.Entry.2549151 = type { %"class.mold::LittleEndian.2549086", %"class.mold::LittleEndian.2549086" }
-%"class.mold::LittleEndian.2549086" = type { [4 x i8] }
+%struct.Entry.2663543 = type { %"class.mold::LittleEndian.2663478", %"class.mold::LittleEndian.2663478" }
+%"class.mold::LittleEndian.2663478" = type { [4 x i8] }
 
-; 46 occurrences:
-; abseil-cpp/optimized/graphcycles.cc.ll
-; faiss/optimized/lattice_Zn.cpp.ll
+; 8 occurrences:
 ; faiss/optimized/sorting.cpp.ll
-; gromacs/optimized/gmx_disre.cpp.ll
 ; gromacs/optimized/pdb2gmx.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/PromoteMemoryToRegister.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; mold/optimized/arch-arm32.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 3
+  %3 = add nsw i64 %2, -2
+  %4 = ashr exact i64 %3, 1
+  %5 = getelementptr nusw %struct.Entry.2663543, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 39 occurrences:
+; abseil-cpp/optimized/graphcycles.cc.ll
+; faiss/optimized/lattice_Zn.cpp.ll
+; gromacs/optimized/gmx_disre.cpp.ll
 ; llvm/optimized/AssumeBundleBuilder.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/ConstraintElimination.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DwarfStringPool.cpp.ll
 ; llvm/optimized/IndVarSimplify.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
@@ -30,13 +44,11 @@
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/SemaCoroutine.cpp.ll
-; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll
 ; llvm/optimized/StackSlotColoring.cpp.ll
 ; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
-; mold/optimized/arch-arm32.cc.ll
 ; openusd/optimized/scopeDescription.cpp.ll
 ; openusd/optimized/stitchClips.cpp.ll
 ; z3/optimized/array_rewriter.cpp.ll
@@ -50,12 +62,12 @@
 ; z3/optimized/solve_eqs.cpp.ll
 ; z3/optimized/spacer_quant_generalizer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = add nsw i64 %2, -2
   %4 = ashr exact i64 %3, 1
-  %5 = getelementptr nusw %struct.Entry.2549151, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 

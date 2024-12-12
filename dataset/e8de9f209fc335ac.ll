@@ -11,7 +11,8 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; openjdk/optimized/mlib_ImageCopy_Bit.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {

@@ -89,24 +89,21 @@ entry:
   ret i32 %5
 }
 
-; 12 occurrences:
+; 9 occurrences:
 ; libquic/optimized/des.c.ll
 ; lief/optimized/aes.c.ll
 ; lief/optimized/des.c.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; wireshark/optimized/packet-lls-slt.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = shl nuw i32 %0, 8
+  %4 = shl nuw i32 %0, 16
   %5 = xor i32 %4, %3
   ret i32 %5
 }

@@ -32,7 +32,7 @@ entry:
 define double @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = uitofp i64 %4 to double
   ret double %5
 }

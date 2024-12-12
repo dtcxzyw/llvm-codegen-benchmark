@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 19 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; linux/optimized/intel_color.ll
@@ -16,9 +16,7 @@
 ; php/optimized/zend_persist.ll
 ; php/optimized/zend_persist_calc.ll
 ; postgres/optimized/multirangetypes.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
 ; ruby/optimized/bignum.ll
-; spike/optimized/s_approxRecip32_1.ll
 ; spike/optimized/s_subMagsF32.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
@@ -177,12 +175,13 @@ entry:
   ret i64 %4
 }
 
-; 224 occurrences:
+; 220 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -280,13 +279,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -362,7 +358,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -390,7 +385,6 @@ entry:
 ; quantlib/optimized/tenorswaptionvts.ll
 ; quantlib/optimized/vanillaswap.ll
 ; quantlib/optimized/yearonyearinflationswap.ll
-; spike/optimized/f16_to_f32.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/SimpleFunctionRegistry.cpp.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
@@ -411,10 +405,11 @@ entry:
   ret i64 %4
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/attribute_name.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cmake/optimized/cmDependsC.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
@@ -446,7 +441,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, -8
   ret i64 %4
 }
@@ -459,12 +454,12 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 8
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
@@ -474,7 +469,6 @@ entry:
 ; spike/optimized/f64_div.ll
 ; z3/optimized/arith_eq_solver.cpp.ll
 ; z3/optimized/automaton.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/emonics.cpp.ll
 ; z3/optimized/factor_rewriter.cpp.ll
@@ -517,7 +511,7 @@ entry:
 define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = and i64 %3, 63
   ret i64 %4
 }

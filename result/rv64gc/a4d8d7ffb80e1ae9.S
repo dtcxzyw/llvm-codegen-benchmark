@@ -1,4 +1,4 @@
-func0000000000000d8a:                   # @func0000000000000d8a
+func000000000000370a:                   # @func000000000000370a
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	lui	a2, 524288
@@ -8,7 +8,7 @@ func0000000000000d8a:                   # @func0000000000000d8a
 	sltu	a0, a1, a0
 	and	a0, a0, a3
 	ret
-func0000000000000daa:                   # @func0000000000000daa
+func000000000000354a:                   # @func000000000000354a
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	lui	a2, 524288

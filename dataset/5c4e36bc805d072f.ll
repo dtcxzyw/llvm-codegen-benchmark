@@ -12,7 +12,7 @@ entry:
   ret i1 %5
 }
 
-; 63 occurrences:
+; 67 occurrences:
 ; folly/optimized/SimpleSimdStringUtils.cpp.ll
 ; folly/optimized/SplitStringSimd.cpp.ll
 ; folly/optimized/TimeoutQueue.cpp.ll
@@ -50,6 +50,7 @@ entry:
 ; llvm/optimized/MachineSSAUpdater.cpp.ll
 ; llvm/optimized/MachineSink.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
+; llvm/optimized/MacroFusion.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/PHIElimination.cpp.ll
 ; llvm/optimized/PHIEliminationUtils.cpp.ll
@@ -57,6 +58,7 @@ entry:
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
+; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/RegisterScavenging.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
@@ -67,6 +69,7 @@ entry:
 ; llvm/optimized/TailDuplicator.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/VirtRegMap.cpp.ll
+; llvm/optimized/WindowScheduler.cpp.ll
 ; llvm/optimized/X86CallLowering.cpp.ll
 ; llvm/optimized/X86CmovConversion.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
@@ -74,14 +77,15 @@ entry:
 ; llvm/optimized/X86LoadValueInjectionLoadHardening.cpp.ll
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; llvm/optimized/XRayInstrumentation.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; quantlib/optimized/ecb.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000061(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %0, i64 24
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 24
   %5 = icmp eq ptr %4, %3
   ret i1 %5
 }
@@ -92,56 +96,31 @@ entry:
 ; openjdk/optimized/os.ll
 ; openjdk/optimized/verifier.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000064(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %0, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1
   %5 = icmp ult ptr %4, %3
   ret i1 %5
 }
 
-; 3 occurrences:
-; llvm/optimized/MacroFusion.cpp.ll
-; llvm/optimized/Record.cpp.ll
-; llvm/optimized/WindowScheduler.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000031(ptr %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, -8
-  %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 328
-  %5 = icmp eq ptr %4, %3
-  ret i1 %5
-}
-
-; 5 occurrences:
+; 9 occurrences:
+; llvm/optimized/IfConversion.cpp.ll
+; llvm/optimized/LoadStoreOpt.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
+; llvm/optimized/MachineSink.cpp.ll
+; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/PostRASchedulerList.cpp.ll
 ; llvm/optimized/ScheduleDAGFast.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/ScheduleDAGVLIW.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000006c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %0, i64 328
-  %5 = icmp ne ptr %4, %3
-  ret i1 %5
-}
-
-; 4 occurrences:
-; llvm/optimized/IfConversion.cpp.ll
-; llvm/optimized/LoadStoreOpt.cpp.ll
-; llvm/optimized/MachineSink.cpp.ll
-; llvm/optimized/ModuloSchedule.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, -8
-  %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %0, i64 48
   %5 = icmp ne ptr %4, %3
   ret i1 %5
 }

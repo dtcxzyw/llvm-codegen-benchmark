@@ -7,7 +7,7 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000018:                   # @func0000000000000018
 	orq	%rsi, %rdi
 	vmovq	%rdi, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func000000000000001c:                   # @func000000000000001c

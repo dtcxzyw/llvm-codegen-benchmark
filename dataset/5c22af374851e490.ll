@@ -29,7 +29,7 @@ define i1 @func0000000000000008(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
   %4 = fcmp ogt double %3, 2.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -76,7 +76,7 @@ define i1 @func0000000000000014(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
   %4 = fcmp ole double %3, 1.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -89,7 +89,7 @@ define i1 @func000000000000000a(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
   %4 = fcmp ugt double %3, 0.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -103,7 +103,7 @@ define i1 @func000000000000000e(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
   %4 = fcmp une double %3, 1.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -150,7 +150,7 @@ define i1 @func0000000000000018(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
   %4 = fcmp oge double %3, 7.500000e-01
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

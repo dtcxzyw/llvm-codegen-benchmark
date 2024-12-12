@@ -54,7 +54,7 @@ entry:
   ret i64 %1
 }
 
-; 545 occurrences:
+; 542 occurrences:
 ; abseil-cpp/optimized/fastmath_test.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
@@ -308,7 +308,6 @@ entry:
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/RecordLayout.cpp.ll
@@ -416,8 +415,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -783,7 +780,7 @@ entry:
   ret i64 %2
 }
 
-; 140 occurrences:
+; 139 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -806,7 +803,6 @@ entry:
 ; linux/optimized/iterator.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/mremap.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/page-io.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/read.ll

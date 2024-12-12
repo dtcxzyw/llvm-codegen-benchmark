@@ -28,38 +28,15 @@ func0000000000000014:                   # @func0000000000000014
 	slt	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
-	sext.w	a1, a1
-	andi	a3, a2, 1
-	lui	a2, 1
-	bnez	a3, .LBB3_2
-	lui	a2, 2
-.LBB3_2:                                # %entry
-	sltu	a1, a2, a1
-	or	a0, a0, a1
-	ret
-func0000000000000010:                   # @func0000000000000010
-	andi	a2, a2, 1
-	sext.w	a1, a1
-	bnez	a2, .LBB4_2
-	li	a2, 24
-	sltu	a1, a1, a2
-	or	a0, a0, a1
-	ret
-.LBB4_2:
-	li	a2, 12
-	sltu	a1, a1, a2
-	or	a0, a0, a1
-	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 1
 	sext.w	a1, a1
-	bnez	a2, .LBB5_2
+	bnez	a2, .LBB3_2
 	li	a2, 233
 	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret
-.LBB5_2:
+.LBB3_2:
 	li	a2, 251
 	slt	a1, a2, a1
 	or	a0, a0, a1

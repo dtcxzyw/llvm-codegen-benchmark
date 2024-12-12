@@ -1,5 +1,5 @@
 
-; 148 occurrences:
+; 149 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -88,6 +88,7 @@
 ; linux/optimized/mballoc.ll
 ; linux/optimized/waitwake.ll
 ; luau/optimized/IrBuilder.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
@@ -156,12 +157,11 @@ entry:
   ret i32 %2
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
 ; openmpi/optimized/tm_malloc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
@@ -176,8 +176,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = ashr exact i32 %0, 24
-  %2 = and i32 %1, 1024
+  %1 = ashr exact i32 %0, 1
+  %2 = and i32 %1, -8
   ret i32 %2
 }
 

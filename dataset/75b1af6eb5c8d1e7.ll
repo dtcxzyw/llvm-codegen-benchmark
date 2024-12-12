@@ -1,5 +1,5 @@
 
-; 86 occurrences:
+; 83 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -32,7 +32,6 @@
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/MveEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -76,7 +75,6 @@
 ; spike/optimized/vdivu_vx.ll
 ; velox/optimized/StringFunctions.cpp.ll
 ; wireshark/optimized/packet-hsms.c.ll
-; wireshark/optimized/tap-iostat.c.ll
 ; xgboost/optimized/c_api.cc.ll
 ; xgboost/optimized/elementwise_metric.cc.ll
 ; xgboost/optimized/hinge.cc.ll
@@ -84,7 +82,6 @@
 ; xgboost/optimized/regression_obj.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; yosys/optimized/qwp.ll
-; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/value_generator.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
@@ -94,11 +91,10 @@ entry:
   ret i32 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; cmake/optimized/zdict.c.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; minetest/optimized/CGUIImageList.cpp.ll
 ; openmpi/optimized/coll_base_bcast.ll
 ; spike/optimized/smalda.ll
@@ -117,13 +113,14 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; graphviz/optimized/graph_generator.c.ll
 ; linux/optimized/drm_modes.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; opencv/optimized/perf_resize.cpp.ll
 ; openjdk/optimized/AlphaMath.ll
+; wireshark/optimized/tap-iostat.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:

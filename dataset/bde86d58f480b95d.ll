@@ -20,23 +20,20 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
+; 13 occurrences:
 ; graphviz/optimized/constrained_majorization_ipsep.c.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; linux/optimized/maple_tree.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_span.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
-; openblas/optimized/lapacke_cgb_nancheck.c.ll
-; openblas/optimized/lapacke_dgb_nancheck.c.ll
-; openblas/optimized/lapacke_sgb_nancheck.c.ll
-; openblas/optimized/lapacke_zgb_nancheck.c.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openssl/optimized/libcrypto-lib-bf_readbuff.ll
 ; openssl/optimized/libcrypto-shlib-bf_readbuff.ll
 ; quantlib/optimized/nthorderderivativeop.ll
 ; tev/optimized/ImageViewer.cpp.ll
-; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -103,14 +100,12 @@ entry:
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; nghttp2/optimized/llhttp.c.ll
 ; oiio/optimized/psdinput.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; opencv/optimized/cornersubpix.cpp.ll
 ; opencv/optimized/retinacolor.cpp.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; openmpi/optimized/ad_io_coll.ll
-; openusd/optimized/json.cpp.ll
 ; php/optimized/decode.ll
 ; php/optimized/strtod.ll
 ; php/optimized/zend_execute.ll
@@ -126,6 +121,8 @@ entry:
 ; typst-rs/optimized/xrijsyrxk2ciyk9.ll
 ; wireshark/optimized/address_types.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -173,10 +170,10 @@ entry:
 }
 
 ; 8 occurrences:
+; boost/optimized/area.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; gromacs/optimized/grid.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
@@ -246,6 +243,31 @@ entry:
   ret i32 %5
 }
 
+; 4 occurrences:
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_flex.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = add i32 %0, %1
+  %5 = sub nsw i32 %4, %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000025(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw i64 %2 to i32
+  %4 = add nsw i32 %0, %1
+  %5 = sub nsw i32 %4, %3
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
@@ -266,30 +288,6 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nuw nsw i32 %0, %1
   %5 = sub i32 %4, %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; linux/optimized/blk-settings.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003d(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nuw nsw i32 %0, %1
-  %5 = sub nsw i32 %4, %3
-  ret i32 %5
-}
-
-; 3 occurrences:
-; meshlab/optimized/gltf_loader.cpp.ll
-; nori/optimized/nanovg.c.ll
-; openblas/optimized/dgbtrf.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = add i32 %0, %1
-  %5 = sub nsw i32 %4, %3
   ret i32 %5
 }
 

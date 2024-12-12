@@ -19,3 +19,15 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	orb	$2, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpb	%sil, %dil
+	seta	%al
+	leal	(%rax,%rax,2), %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpb	%sil, %dil
+	sbbl	%eax, %eax
+	orb	$1, %al
+	retq

@@ -32,7 +32,7 @@
 	.short	3                               # 0x3
 	.short	3                               # 0x3
 	.short	3                               # 0x3
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddw	.LCPI0_0(%rip), %ymm2, %ymm2
 	vpcmpltuw	.LCPI0_1(%rip), %ymm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0

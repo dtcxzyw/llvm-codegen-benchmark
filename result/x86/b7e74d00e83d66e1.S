@@ -1,7 +1,9 @@
 func0000000000000000:                   # @func0000000000000000
-	andb	$1, %sil
-	leal	(%rsi,%rdi), %eax
-	addb	$-97, %al
+	xorl	%eax, %eax
+	testb	$1, %sil
+	sete	%al
+	leal	(%rax,%rax,8), %eax
+	addb	%dil, %al
 	retq
 func0000000000000003:                   # @func0000000000000003
 	notb	%sil

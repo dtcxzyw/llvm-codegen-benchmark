@@ -1,22 +1,83 @@
 
-%"class.std::function.2521740" = type { %"class.std::_Function_base.2521741", ptr }
-%"class.std::_Function_base.2521741" = type { %"union.std::_Any_data.2521742", ptr }
-%"union.std::_Any_data.2521742" = type { %"union.std::_Nocopy_types.2521743" }
-%"union.std::_Nocopy_types.2521743" = type { { i64, i64 } }
-%"class.clang::DeclAccessPair.2994636" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.2994637" }
-%"struct.llvm::support::detail::packed_endian_specific_integral.2994637" = type { %struct.anon.2269.2994638 }
-%struct.anon.2269.2994638 = type { [8 x i8] }
-%struct.page.3346644 = type { i64, %union.anon.4.3346645, %union.anon.12.3346646, %struct.atomic_t.3346612, [8 x i8] }
-%union.anon.4.3346645 = type { %struct.anon.5.3346647 }
-%struct.anon.5.3346647 = type { %union.anon.6.3346648, ptr, %union.anon.8.3346649, i64 }
-%union.anon.6.3346648 = type { %struct.list_head.3346628 }
-%struct.list_head.3346628 = type { ptr, ptr }
-%union.anon.8.3346649 = type { i64 }
-%union.anon.12.3346646 = type { %struct.atomic_t.3346612 }
-%struct.atomic_t.3346612 = type { i32 }
+%"class.std::function.2636149" = type { %"class.std::_Function_base.2636150", ptr }
+%"class.std::_Function_base.2636150" = type { %"union.std::_Any_data.2636151", ptr }
+%"union.std::_Any_data.2636151" = type { %"union.std::_Nocopy_types.2636152" }
+%"union.std::_Nocopy_types.2636152" = type { { i64, i64 } }
+%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407" = type { i16, [6 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406" = type { i8, [7 x i8] }
+%"class.gmx::BasicVector.3361322" = type { [3 x float] }
+%struct.page.3535211 = type { i64, %union.anon.4.3535212, %union.anon.12.3535213, %struct.atomic_t.3535179, [8 x i8] }
+%union.anon.4.3535212 = type { %struct.anon.5.3535214 }
+%struct.anon.5.3535214 = type { %union.anon.6.3535215, ptr, %union.anon.8.3535216, i64 }
+%union.anon.6.3535215 = type { %struct.list_head.3535195 }
+%struct.list_head.3535195 = type { ptr, ptr }
+%union.anon.8.3535216 = type { i64 }
+%union.anon.12.3535213 = type { %struct.atomic_t.3535179 }
+%struct.atomic_t.3535179 = type { i32 }
 
-; 65 occurrences:
-; gromacs/optimized/pbc.cpp.ll
+; 28 occurrences:
+; mold/optimized/main.cc.ALPHA.cc.ll
+; mold/optimized/main.cc.ARM32.cc.ll
+; mold/optimized/main.cc.ARM64.cc.ll
+; mold/optimized/main.cc.I386.cc.ll
+; mold/optimized/main.cc.LOONGARCH32.cc.ll
+; mold/optimized/main.cc.LOONGARCH64.cc.ll
+; mold/optimized/main.cc.M68K.cc.ll
+; mold/optimized/main.cc.PPC32.cc.ll
+; mold/optimized/main.cc.PPC64V1.cc.ll
+; mold/optimized/main.cc.PPC64V2.cc.ll
+; mold/optimized/main.cc.RV32BE.cc.ll
+; mold/optimized/main.cc.RV32LE.cc.ll
+; mold/optimized/main.cc.RV64BE.cc.ll
+; mold/optimized/main.cc.RV64LE.cc.ll
+; mold/optimized/main.cc.S390X.cc.ll
+; mold/optimized/main.cc.SH4.cc.ll
+; mold/optimized/main.cc.SPARC64.cc.ll
+; mold/optimized/main.cc.X86_64.cc.ll
+; openusd/optimized/changeManager.cpp.ll
+; openusd/optimized/dirtyList.cpp.ll
+; openusd/optimized/primTypeIndex.cpp.ll
+; openusd/optimized/registryManager.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/resolver.cpp.ll
+; openusd/optimized/stageCacheContext.cpp.ll
+; openusd/optimized/usdzResolver.cpp.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002b(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw %"class.std::function.2636149", ptr %3, i64 %1
+  %5 = getelementptr %"class.std::function.2636149", ptr %4, i64 %0, i32 0, i32 1
+  ret ptr %5
+}
+
+; 1 occurrences:
+; bdwgc/optimized/gc.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = getelementptr i64, ptr %4, i64 %0
+  %6 = getelementptr i8, ptr %5, i64 -8
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/continuationFreezeThaw.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw i64, ptr %3, i64 %1
+  %5 = getelementptr nusw i64, ptr %4, i64 %0
+  %6 = getelementptr nusw i8, ptr %5, i64 -8
+  ret ptr %6
+}
+
+; 41 occurrences:
 ; gromacs/optimized/plot.cpp.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; jemalloc/optimized/ctl.ll
@@ -58,69 +119,25 @@
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
-; mold/optimized/main.cc.ALPHA.cc.ll
-; mold/optimized/main.cc.ARM32.cc.ll
-; mold/optimized/main.cc.ARM64.cc.ll
-; mold/optimized/main.cc.I386.cc.ll
-; mold/optimized/main.cc.LOONGARCH32.cc.ll
-; mold/optimized/main.cc.LOONGARCH64.cc.ll
-; mold/optimized/main.cc.M68K.cc.ll
-; mold/optimized/main.cc.PPC32.cc.ll
-; mold/optimized/main.cc.PPC64V1.cc.ll
-; mold/optimized/main.cc.PPC64V2.cc.ll
-; mold/optimized/main.cc.RV32BE.cc.ll
-; mold/optimized/main.cc.RV32LE.cc.ll
-; mold/optimized/main.cc.RV64BE.cc.ll
-; mold/optimized/main.cc.RV64LE.cc.ll
-; mold/optimized/main.cc.S390X.cc.ll
-; mold/optimized/main.cc.SH4.cc.ll
-; mold/optimized/main.cc.SPARC64.cc.ll
-; mold/optimized/main.cc.X86_64.cc.ll
-; openjdk/optimized/continuationFreezeThaw.ll
-; openusd/optimized/registryManager.cpp.ll
-; openusd/optimized/resolver.cpp.ll
-; openvdb/optimized/LevelSetSphere.cc.ll
-; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw %"class.std::function.2521740", ptr %3, i64 %1
-  %5 = getelementptr %"class.std::function.2521740", ptr %4, i64 %0, i32 0, i32 1
-  ret ptr %5
+  %4 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407", ptr %3, i64 %1
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406", ptr %4, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
+  ret ptr %6
 }
 
 ; 1 occurrences:
-; bdwgc/optimized/gc.c.ll
+; gromacs/optimized/pbc.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr i64, ptr %4, i64 %0
-  %6 = getelementptr i8, ptr %5, i64 -8
-  ret ptr %6
-}
-
-; 10 occurrences:
-; llvm/optimized/SemaAvailability.cpp.ll
-; llvm/optimized/SemaTemplateVariadic.cpp.ll
-; openusd/optimized/changeManager.cpp.ll
-; openusd/optimized/dirtyList.cpp.ll
-; openusd/optimized/primTypeIndex.cpp.ll
-; openusd/optimized/registryManager.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/resolver.cpp.ll
-; openusd/optimized/stageCacheContext.cpp.ll
-; openusd/optimized/usdzResolver.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002b(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw %"class.clang::DeclAccessPair.2994636", ptr %4, i64 %0
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 12
-  ret ptr %6
+  %4 = getelementptr nusw %"class.gmx::BasicVector.3361322", ptr %3, i64 %1
+  %5 = getelementptr nuw %"class.gmx::BasicVector.3361322", ptr %4, i64 %0, i32 0, i64 1
+  ret ptr %5
 }
 
 ; 5 occurrences:
@@ -133,8 +150,8 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr %struct.page.3346644, ptr %3, i64 %1
-  %5 = getelementptr %struct.page.3346644, ptr %4, i64 %0
+  %4 = getelementptr %struct.page.3535211, ptr %3, i64 %1
+  %5 = getelementptr %struct.page.3535211, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 -64
   ret ptr %6
 }
@@ -144,23 +161,23 @@ entry:
 ; linux/optimized/buildid.ll
 ; mimalloc/optimized/segment-map.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %0
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/pyramids.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i32, ptr %3, i64 %1
-  %5 = getelementptr nusw i32, ptr %4, i64 %0
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
 }

@@ -66,6 +66,12 @@ func000000000000000c:                   # @func000000000000000c
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
+func000000000000001f:                   # @func000000000000001f
+	movl	$4294963696, %eax               # imm = 0xFFFFF1F0
+	imulq	%rdi, %rax
+	addq	%rsi, %rax
+	addq	%rdx, %rax
+	retq
 func0000000000000034:                   # @func0000000000000034
 	imulq	$666643, %rdi, %rax             # imm = 0xA2C13
 	addq	%rsi, %rax

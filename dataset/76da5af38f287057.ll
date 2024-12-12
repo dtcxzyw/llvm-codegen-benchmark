@@ -1,5 +1,6 @@
 
-; 164 occurrences:
+; 163 occurrences:
+; boost/optimized/topology.ll
 ; c3c/optimized/semantic_analyser.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cpython/optimized/dtoa.ll
@@ -35,7 +36,6 @@
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/fsopen.ll
 ; linux/optimized/iface.ll
-; linux/optimized/inotify_fsnotify.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/libata-eh.ll
@@ -56,6 +56,7 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll
@@ -116,7 +117,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -132,7 +132,6 @@
 ; oiio/optimized/imagecache.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/grfmt_pxm.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/hb-buffer-verify.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; openjdk/optimized/png.ll

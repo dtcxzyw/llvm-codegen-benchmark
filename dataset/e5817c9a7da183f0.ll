@@ -1,9 +1,13 @@
 
-; 4 occurrences:
+; 8 occurrences:
 ; icu/optimized/regexcmp.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; yyjson/optimized/yyjson.c.ll
 ; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

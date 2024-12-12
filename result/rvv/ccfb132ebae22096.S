@@ -12,7 +12,7 @@ func0000000000000042:                   # @func0000000000000042
 	vfmerge.vfm	v12, v12, fa5, v0
 	vmflt.vf	v0, v12, fa4
 	vfmerge.vfm	v12, v12, fa4, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
 func0000000000000024:                   # @func0000000000000024
 	fmv.w.x	fa5, zero

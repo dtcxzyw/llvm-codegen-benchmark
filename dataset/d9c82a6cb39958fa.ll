@@ -101,7 +101,7 @@
 define i64 @func00000000000000ec(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 
@@ -272,7 +272,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 11
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 

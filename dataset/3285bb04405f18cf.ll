@@ -146,7 +146,7 @@
 define i64 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = mul i64 %4, %5
   ret i64 %6
@@ -202,13 +202,13 @@ entry:
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = mul nsw i64 %4, %5
   ret i64 %6
 }
 
-; 143 occurrences:
+; 141 occurrences:
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/sswSim.c.ll
 ; darktable/optimized/introspection_bilat.c.ll
@@ -219,8 +219,6 @@ entry:
 ; darktable/optimized/introspection_lowpass.c.ll
 ; darktable/optimized/introspection_monochrome.c.ll
 ; darktable/optimized/introspection_shadhi.c.ll
-; gromacs/optimized/alltoall.cpp.ll
-; gromacs/optimized/scatter.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; ncnn/optimized/binaryop.cpp.ll
 ; ncnn/optimized/binaryop_x86.cpp.ll
@@ -356,7 +354,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = mul i64 %4, %5
   ret i64 %6
@@ -371,7 +369,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = mul nsw i64 %4, %5
   ret i64 %6

@@ -17,7 +17,7 @@
 	.short	3                               # 0x3
 .LCPI0_1:
 	.short	3                               # 0x3
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpaddw	%ymm1, %ymm0, %ymm0
 	vpbroadcastw	.LCPI0_1(%rip), %ymm1   # ymm1 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
 	vpand	%ymm1, %ymm0, %ymm0

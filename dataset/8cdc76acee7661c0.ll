@@ -13,11 +13,10 @@ entry:
   ret i64 %7
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll

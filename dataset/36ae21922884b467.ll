@@ -17,20 +17,21 @@
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/extraUtilMacc.c.ll
 ; linux/optimized/intel_fb.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -41,7 +42,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -55,7 +56,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

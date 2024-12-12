@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/trackpoint.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; wireshark/optimized/packet-e212.c.ll
+; zed-rs/optimized/9llazb78bmu9grt6fsh6yj218.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i1 %0, i8 %1) #0 {
 entry:
@@ -12,8 +13,7 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
-; linux/optimized/tree.ll
+; 3 occurrences:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll

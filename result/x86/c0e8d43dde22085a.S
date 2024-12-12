@@ -1,8 +1,11 @@
 func0000000000000000:                   # @func0000000000000000
-	leal	4095(%rdi), %eax
-	testl	%edi, %edi
-	cmovnsl	%edi, %eax
-	andl	$-4096, %eax                    # imm = 0xF000
-	subl	%eax, %edi
-	vcvtsi2sd	%edi, %xmm0, %xmm0
+	movslq	%edi, %rax
+	imulq	$1374389535, %rax, %rcx         # imm = 0x51EB851F
+	movq	%rcx, %rdx
+	shrq	$63, %rdx
+	sarq	$37, %rcx
+	addl	%edx, %ecx
+	imull	$100, %ecx, %ecx
+	subl	%ecx, %eax
+	vcvtsi2sd	%eax, %xmm0, %xmm0
 	retq

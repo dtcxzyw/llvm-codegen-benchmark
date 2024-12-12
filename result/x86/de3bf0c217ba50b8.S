@@ -21,20 +21,14 @@ func000000000000000d:                   # @func000000000000000d
 	andl	$-2, %esi
 	subq	%rsi, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
-	movq	%rdi, %rax
-	subl	%edx, %esi
-	andl	$7, %esi
-	subq	%rsi, %rax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	movq	%rdi, %rax
 	subl	%edx, %esi
 	subq	%rsi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+func0000000000000005:                   # @func0000000000000005
 	movq	%rdi, %rax
-	subl	%edx, %esi
-	andl	$3, %esi
+	subq	%rdx, %rsi
+	andq	$-32768, %rsi                   # imm = 0x8000
 	subq	%rsi, %rax
 	retq

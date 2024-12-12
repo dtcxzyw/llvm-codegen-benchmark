@@ -1,10 +1,8 @@
 
-; 25 occurrences:
+; 23 occurrences:
 ; darktable/optimized/collect.c.ll
 ; gromacs/optimized/nrnb.cpp.ll
 ; gromacs/optimized/pbc.cpp.ll
-; grpc/optimized/socket_utils_posix.cc.ll
-; grpc/optimized/tcp_socket_utils.cc.ll
 ; icu/optimized/parse.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/fsopen.ll
@@ -31,21 +29,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -238
   %4 = icmp ult i32 %3, -9
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 3 occurrences:
-; openssl/optimized/libcrypto-lib-ec_mult.ll
-; openssl/optimized/libcrypto-shlib-ec_mult.ll
-; velox/optimized/StringView.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -1
-  %4 = icmp slt i32 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -75,7 +59,7 @@ define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 38
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -87,7 +71,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -57
   %4 = icmp ult i32 %3, -64
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -95,18 +79,18 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 5
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000050(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -10

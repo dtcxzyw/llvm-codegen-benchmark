@@ -8,7 +8,7 @@ func000000000000003f:                   # @func000000000000003f
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.quad	24                              # 0x18
+	.quad	4                               # 0x4
 func0000000000000000:                   # @func0000000000000000
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2

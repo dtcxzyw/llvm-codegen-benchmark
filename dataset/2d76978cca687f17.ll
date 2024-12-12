@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; duckdb/optimized/is_distinct_from.cpp.ll
@@ -20,7 +20,6 @@
 ; linux/optimized/scsi_logging.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; nuttx/optimized/lib_calendar2utc.c.ll
 ; opencv/optimized/resize.cpp.ll
 ; openjdk/optimized/classLoadingService.ll
 ; openjdk/optimized/instanceStackChunkKlass.ll

@@ -5,10 +5,10 @@
 ; linux/optimized/alps.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
   ret i32 %5
@@ -17,11 +17,11 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32768
-  %3 = or i32 %2, %0
-  %4 = icmp ult i32 %3, 32768
+  %3 = or i32 %0, %2
+  %4 = icmp samesign ult i32 %3, 32768
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -34,7 +34,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4096
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
   ret i32 %5

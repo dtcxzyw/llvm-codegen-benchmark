@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	orb	$8, %dil
 	cmpb	$10, %dil
 	setb	%al
@@ -28,7 +28,12 @@ func000000000000000a:                   # @func000000000000000a
 	cmpb	$97, %dil
 	setge	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000014:                   # @func0000000000000014
+	orb	$-16, %dil
+	cmpb	$-2, %dil
+	setb	%al
+	retq
+func0000000000000038:                   # @func0000000000000038
 	orb	$48, %dil
 	cmpb	$58, %dil
 	setae	%al

@@ -1,5 +1,5 @@
 
-; 307 occurrences:
+; 311 occurrences:
 ; abc/optimized/ivyOper.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -267,7 +267,6 @@
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/craftdef.cpp.ll
@@ -307,6 +306,11 @@
 ; redis/optimized/llex.ll
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/5lopn02otdgr3jtenihf9pnc6.ll
+; zed-rs/optimized/cerruq7gww65l7esxsyv0yj53.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:

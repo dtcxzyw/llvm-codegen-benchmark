@@ -1,12 +1,9 @@
 
-; 30 occurrences:
+; 26 occurrences:
 ; cmake/optimized/entropy_common.c.ll
-; cmake/optimized/zbuff_common.c.ll
 ; cmake/optimized/zdict.c.ll
-; cmake/optimized/zstd_common.c.ll
 ; linux/optimized/entropy_common.ll
 ; linux/optimized/uhci-hcd.ll
-; linux/optimized/zstd_common.ll
 ; lz4/optimized/lz4frame.c.ll
 ; postgres/optimized/nbtutils.ll
 ; ruby/optimized/iseq.ll
@@ -25,7 +22,6 @@
 ; tev/optimized/main.cpp.ll
 ; zstd/optimized/entropy_common.c.ll
 ; zstd/optimized/zdict.c.ll
-; zstd/optimized/zstd_common.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
@@ -87,12 +83,10 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; cpython/optimized/_testinternalcapi.ll
 ; cpython/optimized/instrumentation.ll
 ; hyperscan/optimized/repeatcompile.cpp.ll
-; nuttx/optimized/lib_flsl.c.ll
-; nuttx/optimized/lib_flsll.c.ll
 ; postgres/optimized/dynahash.ll
 ; postgres/optimized/xlog.ll
 ; yosys/optimized/BigUnsigned.ll

@@ -1,5 +1,6 @@
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/src.ll
 ; cpython/optimized/_datetimemodule.ll
 ; draco/optimized/corner_table.cc.ll
 ; git/optimized/diffcore-delta.ll

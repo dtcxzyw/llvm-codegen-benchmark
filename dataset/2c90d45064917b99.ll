@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 21 occurrences:
 ; abc/optimized/cuddGroup.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/marshalling_test.cc.ll
@@ -7,6 +7,7 @@
 ; hermes/optimized/gtest-all.cc.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; llvm/optimized/TargetLowering.cpp.ll
+; lvgl/optimized/lv_anim_timeline.ll
 ; ocio/optimized/MathUtils.cpp.ll
 ; opencv/optimized/perf_estimators.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
@@ -19,6 +20,7 @@
 ; wireshark/optimized/packet-netlink.c.ll
 ; wireshark/optimized/sequence_analysis.c.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:

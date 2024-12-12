@@ -39,16 +39,4 @@ entry:
   ret i8 %3
 }
 
-; 2 occurrences:
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000016(i32 %0) #0 {
-entry:
-  %1 = lshr exact i32 %0, 3
-  %2 = trunc i32 %1 to i8
-  %3 = add i8 %2, -1
-  ret i8 %3
-}
-
 attributes #0 = { nounwind }

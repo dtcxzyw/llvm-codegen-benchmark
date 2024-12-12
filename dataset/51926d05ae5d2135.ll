@@ -1,9 +1,8 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; darktable/optimized/collect.c.ll
 ; linux/optimized/clnt.ll
 ; linux/optimized/idr.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/rdma.ll
 ; recastnavigation/optimized/fastlz.c.ll
 ; yosys/optimized/fastlz.ll

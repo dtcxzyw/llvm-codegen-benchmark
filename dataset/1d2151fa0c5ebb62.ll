@@ -10,11 +10,11 @@
 define i1 @func0000000000000002(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   ret i1 %3
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; eastl/optimized/hashtable.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -25,11 +25,13 @@ entry:
 ; minetest/optimized/playing_sound.cpp.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   ret i1 %3
 }
 
@@ -42,7 +44,7 @@ entry:
 define i1 @func0000000000000008(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
-  %3 = fcmp oeq float %2, %0
+  %3 = fcmp oeq float %0, %2
   ret i1 %3
 }
 
@@ -57,7 +59,7 @@ entry:
 define i1 @func0000000000000003(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
-  %3 = fcmp ugt float %2, %0
+  %3 = fcmp ult float %0, %2
   ret i1 %3
 }
 
@@ -68,11 +70,11 @@ entry:
 define i1 @func000000000000001a(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fcmp oge float %2, %0
+  %3 = fcmp ole float %0, %2
   ret i1 %3
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/giaSpeedup.c.ll
@@ -91,6 +93,7 @@ entry:
 ; gromacs/optimized/updategroupscog.cpp.ll
 ; gromacs/optimized/writeps.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
@@ -109,7 +112,7 @@ entry:
 define i1 @func0000000000000014(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   ret i1 %3
 }
 
@@ -128,7 +131,7 @@ entry:
 define i1 @func0000000000000013(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fcmp ugt float %2, %0
+  %3 = fcmp ult float %0, %2
   ret i1 %3
 }
 
@@ -150,7 +153,7 @@ entry:
 define i1 @func0000000000000015(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fcmp ult float %2, %0
+  %3 = fcmp ugt float %0, %2
   ret i1 %3
 }
 
@@ -178,7 +181,7 @@ entry:
 define i1 @func0000000000000012(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   ret i1 %3
 }
 
@@ -192,7 +195,7 @@ entry:
 define i1 @func0000000000000018(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fcmp oeq float %2, %0
+  %3 = fcmp oeq float %0, %2
   ret i1 %3
 }
 
@@ -204,7 +207,7 @@ entry:
 define i1 @func0000000000000007(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
-  %3 = fcmp une float %2, %0
+  %3 = fcmp une float %0, %2
   ret i1 %3
 }
 
@@ -216,7 +219,17 @@ entry:
 define i1 @func0000000000000005(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
-  %3 = fcmp ult float %2, %0
+  %3 = fcmp ugt float %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(float %0, i32 %1) #0 {
+entry:
+  %2 = uitofp i32 %1 to float
+  %3 = fcmp ole float %0, %2
   ret i1 %3
 }
 
@@ -226,7 +239,7 @@ entry:
 define i1 @func0000000000000017(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fcmp une float %2, %0
+  %3 = fcmp une float %0, %2
   ret i1 %3
 }
 
@@ -237,7 +250,7 @@ entry:
 define i1 @func000000000000001b(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fcmp uge float %2, %0
+  %3 = fcmp ule float %0, %2
   ret i1 %3
 }
 

@@ -8,7 +8,7 @@
 ; linux/optimized/inflate.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 8
   %3 = and i64 %2, 65280

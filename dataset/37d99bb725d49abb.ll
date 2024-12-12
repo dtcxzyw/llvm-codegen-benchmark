@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; git/optimized/name-hash.ll
 ; git/optimized/read-cache.ll
 ; icu/optimized/loclikelysubtags.ll
 ; linux/optimized/lib.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; openjdk/optimized/UshortGray.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll

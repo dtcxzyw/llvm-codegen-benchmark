@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 51 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; cvc5/optimized/theory_datatypes.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
@@ -9,6 +9,7 @@
 ; icu/optimized/rematch.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/base.ll
+; linux/optimized/blk-map.ll
 ; linux/optimized/exit.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/move_extent.ll
@@ -48,6 +49,7 @@
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
@@ -62,6 +64,7 @@ entry:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/abcVerify.c.ll
+; abc/optimized/llb2Flow.c.ll
 ; abc/optimized/saigMiter.c.ll
 ; abc/optimized/saigRetMin.c.ll
 ; cmake/optimized/inet.c.ll
@@ -81,12 +84,11 @@ entry:
 ; postgres/optimized/inet_net_ntop_shlib.ll
 ; postgres/optimized/inet_net_ntop_srv.ll
 ; protobuf/optimized/descriptor.cc.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; qemu/optimized/ui_vnc-enc-hextile.c.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; velox/optimized/PeeledEncoding.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp eq i32 %0, -1
@@ -94,8 +96,7 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
-; libquic/optimized/file.c.ll
+; 4 occurrences:
 ; openssl/optimized/libcrypto-lib-bio_lib.ll
 ; openssl/optimized/libcrypto-shlib-bio_lib.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll
@@ -138,10 +139,11 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; hwloc/optimized/distances.ll
 ; hwloc/optimized/topology-linux.ll
+; linux/optimized/af_netlink.ll
 ; llvm/optimized/SemaLambda.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; nori/optimized/layout.cpp.ll
@@ -151,21 +153,10 @@ entry:
 ; z3/optimized/bound_propagator.cpp.ll
 ; z3/optimized/nlsat_interval_set.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp eq i32 %0, -1
-  %4 = select i1 %3, i32 %2, i32 %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; openjdk/optimized/sharedRuntimeTrans.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw i64 %1 to i32
-  %3 = icmp ult i32 %0, 1048576
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
@@ -181,7 +172,7 @@ entry:
 ; redis/optimized/redis-cli.ll
 ; yosys/optimized/btor.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp slt i32 %0, 0
@@ -192,7 +183,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/scrontab.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = icmp eq i32 %0, -1
@@ -203,7 +194,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/url_parse.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = icmp slt i32 %0, 0
@@ -214,7 +205,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp slt i32 %0, 1

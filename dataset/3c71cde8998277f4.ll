@@ -14,9 +14,8 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/intel_cursor.ll
-; linux/optimized/intel_hti.ll
 ; linux/optimized/intel_overlay.ll
 ; spike/optimized/pkbb16.ll
 ; spike/optimized/pkbt16.ll

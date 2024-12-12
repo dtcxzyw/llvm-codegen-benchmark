@@ -1,13 +1,13 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	andl	$1, %edx
 	movl	$2, %eax
 	subl	%edx, %eax
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	cmovel	%eax, %ecx
-	leaq	24(%rdi,%rcx,8), %rax
+	leaq	1160(%rdi,%rcx,8), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax

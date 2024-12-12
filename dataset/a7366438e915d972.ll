@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/nl80211.ll
+; lvgl/optimized/lv_obj_style.ll
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
 ; regex-rs/optimized/6f4i3c8223u3bmw.ll
@@ -29,7 +30,7 @@ entry:
   ret i64 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; icu/optimized/ushape.ll
 ; linux/optimized/nl80211.ll
 ; llvm/optimized/CGCleanup.cpp.ll
@@ -47,22 +48,12 @@ entry:
 ; postgres/optimized/nbtsort.ll
 ; postgres/optimized/nbtutils.ll
 ; postgres/optimized/nbtxlog.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i16 %0) #0 {
 entry:
   %1 = add nuw nsw i16 %0, 127
   %2 = and i16 %1, 8184
-  %3 = zext nneg i16 %2 to i64
-  ret i64 %3
-}
-
-; 1 occurrences:
-; linux/optimized/hdac_controller.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i16 %0) #0 {
-entry:
-  %1 = add nuw i16 %0, 1
-  %2 = and i16 %1, 255
   %3 = zext nneg i16 %2 to i64
   ret i64 %3
 }

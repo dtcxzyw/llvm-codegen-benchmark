@@ -14,7 +14,7 @@ func0000000000000014:                   # @func0000000000000014
 	retq
 func0000000000000008:                   # @func0000000000000008
 	xorb	$1, %sil
-	cmpl	$65535, %edi                    # imm = 0xFFFF
+	cmpl	$-3, %edi
 	setb	%al
 	andb	%sil, %al
 	movzbl	%al, %eax

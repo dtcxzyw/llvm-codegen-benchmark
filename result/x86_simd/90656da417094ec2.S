@@ -1,8 +1,0 @@
-func000000000000008a:                   # @func000000000000008a
-	vpsrlq	$2, %ymm1, %ymm1
-	vpmovqd	%ymm1, %xmm1
-	vpminsd	%xmm1, %xmm0, %xmm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq

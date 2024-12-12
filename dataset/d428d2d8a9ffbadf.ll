@@ -1,5 +1,5 @@
 
-; 129 occurrences:
+; 130 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
@@ -12,6 +12,7 @@
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/b3BulletFile.ll
 ; bullet3/optimized/b3DNA.ll
 ; bullet3/optimized/b3File.ll
@@ -43,6 +44,7 @@
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; lz4/optimized/xxhash.c.ll
 ; memcached/optimized/memcached-murmur3_hash.ll
 ; memcached/optimized/memcached_debug-murmur3_hash.ll
@@ -83,7 +85,6 @@
 ; php/optimized/PMurHash128.ll
 ; php/optimized/hash_xxhash.ll
 ; postgres/optimized/catcache.ll
-; postgres/optimized/checksum.ll
 ; postgres/optimized/execGrouping.ll
 ; postgres/optimized/file.ll
 ; postgres/optimized/nodeMemoize.ll
@@ -149,7 +150,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = mul nsw i32 %3, 17
-  %5 = xor i32 %4, %0
+  %5 = xor i32 %0, %4
   ret i32 %5
 }
 

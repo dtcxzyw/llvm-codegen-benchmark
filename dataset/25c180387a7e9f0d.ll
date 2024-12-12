@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; cvc5/optimized/extended_rewrite.cpp.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; jemalloc/optimized/base.ll
@@ -13,7 +13,6 @@
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll

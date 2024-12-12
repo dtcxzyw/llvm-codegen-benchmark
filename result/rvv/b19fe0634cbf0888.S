@@ -5,7 +5,7 @@ func0000000000000000:                   # @func0000000000000000
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
-	vxor.vv	v10, v12, v10
+	vxor.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
 	ret
 .LCPI1_0:
@@ -16,7 +16,7 @@ func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vxor.vv	v10, v12, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 .LCPI2_0:
 	.quad	2266404186210603134             # 0x1f73e299748a907e
@@ -46,5 +46,5 @@ func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vxor.vv	v10, v12, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

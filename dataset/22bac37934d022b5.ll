@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 17 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; libpng/optimized/pngread.c.ll
 ; libwebp/optimized/alpha_processing.c.ll
@@ -9,11 +9,14 @@
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_dsi_vbt.ll
 ; linux/optimized/intel_rps.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; openjdk/optimized/jdmarker.ll
 ; openjdk/optimized/pngread.ll
 ; wireshark/optimized/file-jpeg.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
@@ -22,13 +25,20 @@ entry:
   ret i32 %3
 }
 
-; 86 occurrences:
+; 92 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/pdrCore.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
 ; assimp/optimized/Q3DLoader.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/expand.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/write_dsv.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; gromacs/optimized/autocorr.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
@@ -49,7 +59,6 @@ entry:
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/tree.ll
 ; linux/optimized/tsc.ll
-; linux/optimized/tsc_msr.ll
 ; linux/optimized/vlv_dsi.ll
 ; luau/optimized/Compiler.cpp.ll
 ; meshlab/optimized/io_bre.cpp.ll
@@ -117,7 +126,7 @@ entry:
   ret i32 %3
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -129,6 +138,7 @@ entry:
 ; gromacs/optimized/tng_compress.c.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; libwebp/optimized/quant_enc.c.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -173,7 +183,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 60
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -184,14 +194,15 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 257
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   ret i32 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/vlv_dsi_pll.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/io_bre.cpp.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
 ; opencv/optimized/gnnparsers.cpp.ll
@@ -201,7 +212,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 257
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 

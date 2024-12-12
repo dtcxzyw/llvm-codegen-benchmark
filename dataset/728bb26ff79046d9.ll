@@ -1,25 +1,10 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; openjdk/optimized/jfrStorageControl.ll
-; openssl/optimized/dtls_mtu_test-bin-dtls_mtu_test.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp uge i64 %1, %2
-  %4 = xor i1 %0, true
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
-; 4 occurrences:
-; llvm/optimized/VectorUtils.cpp.ll
-; openusd/optimized/pathExpressionEval.cpp.ll
-; postgres/optimized/worker.ll
-; qemu/optimized/accel_tcg_tb-maint.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp eq i64 %1, %2
   %4 = xor i1 %0, true
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -66,6 +51,19 @@ entry:
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
+  %4 = xor i1 %0, true
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
+; llvm/optimized/VectorUtils.cpp.ll
+; openusd/optimized/pathExpressionEval.cpp.ll
+; postgres/optimized/worker.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %1, %2
   %4 = xor i1 %0, true
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

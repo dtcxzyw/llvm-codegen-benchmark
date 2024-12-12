@@ -1,11 +1,13 @@
 
-; 151 occurrences:
+; 153 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/plaCom.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/float16.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; clamav/optimized/BraIA64.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/ia64.c.ll
@@ -160,21 +162,19 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; abc/optimized/giaDecs.c.ll
 ; clamav/optimized/lzwdec.c.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; libquic/optimized/convert.c.ll
-; openssl/optimized/libcrypto-lib-bn_print.ll
-; openssl/optimized/libcrypto-shlib-bn_print.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; raylib/optimized/rcore.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 15, %1
-  %3 = and i64 %2, %0
+  %2 = shl nuw i64 1, %1
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
@@ -187,11 +187,11 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
   %3 = and i64 %2, 63
-  %4 = icmp ugt i64 %3, 58
+  %4 = icmp samesign ugt i64 %3, 58
   ret i1 %4
 }
 
@@ -201,11 +201,11 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
   %3 = and i64 %2, 63
-  %4 = icmp ult i64 %3, 59
+  %4 = icmp samesign ult i64 %3, 59
   ret i1 %4
 }
 

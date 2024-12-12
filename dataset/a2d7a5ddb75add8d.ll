@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 42 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -25,7 +25,6 @@
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; gromacs/optimized/dlarfg.cpp.ll
 ; gromacs/optimized/dlasv2.cpp.ll
 ; gromacs/optimized/dnrm2.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -40,7 +39,6 @@
 ; openblas/optimized/dlasv2.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; openblas/optimized/dsptri.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsytri_rook.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/polynom_solver.cpp.ll

@@ -39,12 +39,25 @@ entry:
   ret i64 %5
 }
 
+; 2 occurrences:
+; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000140(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 13
+  %3 = select i1 %2, i64 4, i64 8
+  %4 = add i64 %0, 1
+  %5 = add i64 %3, %4
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000004f(i64 %0, i32 %1) #0 {
+define i64 @func000000000000014f(i64 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 126
+  %2 = icmp samesign ult i32 %1, 126
   %3 = select i1 %2, i64 1, i64 2
   %4 = add nuw nsw i64 %0, 2
   %5 = add nuw nsw i64 %4, %3
@@ -54,9 +67,9 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/zero_copy_stream.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000047(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000147(i64 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 513
+  %2 = icmp samesign ult i32 %1, 513
   %3 = select i1 %2, i64 8, i64 64
   %4 = add nsw i64 %0, -1
   %5 = add nuw nsw i64 %4, %3

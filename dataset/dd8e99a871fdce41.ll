@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 14 occurrences:
+; abc/optimized/giaNf.c.ll
 ; glslang/optimized/Constant.cpp.ll
 ; glslang/optimized/Intermediate.cpp.ll
 ; glslang/optimized/ParseContextBase.cpp.ll
@@ -8,6 +9,8 @@
 ; glslang/optimized/glslang_tab.cpp.ll
 ; glslang/optimized/hlslGrammar.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
 ; redis/optimized/quicklist.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll

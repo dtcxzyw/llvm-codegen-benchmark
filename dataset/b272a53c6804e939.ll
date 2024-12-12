@@ -1,8 +1,8 @@
 
 ; 9 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; ceres/optimized/residual_block.cc.ll
-; clamav/optimized/fmap.c.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
@@ -18,10 +18,8 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; c3c/optimized/lexer.c.ll
-; cmake/optimized/gzwrite.c.ll
-; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -51,10 +49,9 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; cpython/optimized/bytes_methods.ll
-; eastl/optimized/EAString.cpp.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; linux/optimized/tree.ll
 ; llvm/optimized/CodeGenSchedule.cpp.ll
@@ -68,11 +65,10 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; assimp/optimized/ObjFileImporter.cpp.ll
-; cpython/optimized/obmalloc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 4611686018427387903
@@ -80,13 +76,23 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 1 occurrences:
+; boost/optimized/timer.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = icmp eq i64 %3, 9223372036854775807
+  %5 = select i1 %4, i64 9223372036854775807, i64 %0
+  ret i64 %5
+}
+
+; 9 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; jemalloc/optimized/sz.ll
 ; jemalloc/optimized/sz.pic.ll
 ; jemalloc/optimized/sz.sym.ll
 ; linux/optimized/md.ll
-; llvm/optimized/Parallel.cpp.ll
 ; node/optimized/libnode.node_report.ll
 ; postgres/optimized/dsa.ll
 ; redis/optimized/sz.ll
@@ -95,7 +101,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = icmp ult i64 %3, 1024
+  %4 = icmp ult i64 %3, 1000
   %5 = select i1 %4, i64 1, i64 %0
   ret i64 %5
 }
@@ -103,7 +109,7 @@ entry:
 ; 1 occurrences:
 ; node/optimized/libnode.session.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = icmp ult i64 %3, 1000000
@@ -125,7 +131,7 @@ entry:
 ; openblas/optimized/dsyrk_thread_UN.c.ll
 ; openblas/optimized/dsyrk_thread_UT.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp sgt i64 %3, 383

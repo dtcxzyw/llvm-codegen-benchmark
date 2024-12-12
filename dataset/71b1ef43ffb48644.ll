@@ -3,10 +3,10 @@
 ; icu/optimized/collationbuilder.ll
 ; jq/optimized/jv.ll
 ; linux/optimized/namei.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; node/optimized/libnode.node_file.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; ruby/optimized/compile.ll

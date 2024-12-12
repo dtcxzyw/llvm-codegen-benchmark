@@ -1,15 +1,9 @@
 
-; 10 occurrences:
+; 4 occurrences:
 ; abc/optimized/ifDec07.c.ll
-; hermes/optimized/APFloat.cpp.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; llvm/optimized/AArch64LegalizerInfo.cpp.ll
-; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
-; llvm/optimized/APFloat.cpp.ll
-; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVInstructionSelector.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:

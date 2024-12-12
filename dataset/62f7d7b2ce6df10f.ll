@@ -12,7 +12,7 @@ entry:
   ret i64 %6
 }
 
-; 230 occurrences:
+; 229 occurrences:
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/API.cpp.ll
 ; llvm/optimized/ASTConcept.cpp.ll
@@ -159,7 +159,6 @@ entry:
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/RecordLayout.cpp.ll

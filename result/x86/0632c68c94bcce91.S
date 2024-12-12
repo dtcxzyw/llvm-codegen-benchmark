@@ -10,6 +10,10 @@ func0000000000000040:                   # @func0000000000000040
 	leal	(%rsi,%rdi), %eax
 	addl	%eax, %eax
 	retq
+func0000000000000067:                   # @func0000000000000067
+	leal	(%rsi,%rdi), %eax
+	shll	$4, %eax
+	retq
 func0000000000000003:                   # @func0000000000000003
 	leal	(%rsi,%rdi), %eax
 	shll	$2, %eax

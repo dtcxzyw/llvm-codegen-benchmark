@@ -43,15 +43,4 @@ entry:
   ret i8 %2
 }
 
-; 3 occurrences:
-; clamav/optimized/bytecode_vm.c.ll
-; soc-simulator/optimized/sim_mycpu.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
-entry:
-  %2 = shl nuw nsw i8 %0, %1
-  ret i8 %2
-}
-
 attributes #0 = { nounwind }

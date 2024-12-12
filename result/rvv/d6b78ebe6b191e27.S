@@ -4,7 +4,7 @@ func000000000000002e:                   # @func000000000000002e
 	li	a0, 32
 	vwsll.vi	v14, v13, 24
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v8, v14, v8
+	vor.vv	v8, v8, v14
 	vrsub.vx	v10, v10, a0
 	vsrl.vv	v8, v8, v10
 	ret

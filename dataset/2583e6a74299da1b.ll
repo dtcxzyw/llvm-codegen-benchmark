@@ -214,12 +214,12 @@
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = and i8 %2, 7
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr nusw [8 x i8], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [8 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -282,12 +282,12 @@ entry:
 ; openusd/optimized/crateData.cpp.ll
 ; openusd/optimized/piPrototypeSceneIndex.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 1
   %3 = and i8 %2, 7
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr nusw [8 x i8], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [8 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

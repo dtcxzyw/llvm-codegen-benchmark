@@ -79,8 +79,8 @@ func0000000000000008:                   # @func0000000000000008
 	vbroadcastsd	.LCPI5_0(%rip), %zmm2   # zmm2 = [-1.0E+0,-1.0E+0,-1.0E+0,-1.0E+0,-1.0E+0,-1.0E+0,-1.0E+0,-1.0E+0]
 	vblendmpd	%zmm4, %zmm2, %zmm4 {%k2}
 	vmovapd	%zmm3, %zmm2 {%k1}
-	vcmpeqpd	%zmm0, %zmm2, %k0
-	vcmpeqpd	%zmm1, %zmm4, %k1
+	vcmpeqpd	%zmm2, %zmm0, %k0
+	vcmpeqpd	%zmm4, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -91,8 +91,8 @@ func0000000000000007:                   # @func0000000000000007
 	kshiftrw	$8, %k1, %k2
 	vmovapd	%zmm4, %zmm2 {%k2} {z}
 	vmovapd	%zmm3, %zmm3 {%k1} {z}
-	vcmpneqpd	%zmm0, %zmm3, %k0
-	vcmpneqpd	%zmm1, %zmm2, %k1
+	vcmpneqpd	%zmm3, %zmm0, %k0
+	vcmpneqpd	%zmm2, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

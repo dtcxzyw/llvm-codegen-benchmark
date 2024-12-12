@@ -28,11 +28,6 @@ func0000000000000095:                   # @func0000000000000095
 	slli	a0, a0, 32
 	add.uw	a0, a1, a0
 	ret
-func0000000000000097:                   # @func0000000000000097
-	add	a1, a1, a2
-	zext.w	a1, a1
-	sh2add	a0, a0, a1
-	ret
 func00000000000000dd:                   # @func00000000000000dd
 	addw	a1, a1, a2
 	slli	a0, a0, 32

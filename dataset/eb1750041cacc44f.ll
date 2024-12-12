@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; php/optimized/cdf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000118(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, 8
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000218(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ugt i64 %3, 4
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/gen8_ppgtt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000308(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 511
   %4 = icmp ne i32 %3, 0

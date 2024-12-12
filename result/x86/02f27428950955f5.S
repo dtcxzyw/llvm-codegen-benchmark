@@ -1,26 +1,17 @@
-func00000000000002cc:                   # @func00000000000002cc
+func000000000000098c:                   # @func000000000000098c
 	shlq	$3, %rdx
 	leaq	(%rdx,%rdx,2), %rax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000034a:                   # @func000000000000034a
+func0000000000000e8a:                   # @func0000000000000e8a
 	imulq	$1000000, %rdx, %rax            # imm = 0xF4240
-	cmpq	%rsi, %rax
-	seta	%cl
+	cmpq	%rax, %rsi
+	setb	%cl
 	testq	%rdi, %rdi
 	setns	%al
-	andb	%cl, %al
-	retq
-func00000000000000cc:                   # @func00000000000000cc
-	shlq	$3, %rdx
-	leaq	(%rdx,%rdx,2), %rax
-	cmpq	%rsi, %rax
-	setne	%cl
-	testq	%rdi, %rdi
-	setne	%al
 	andb	%cl, %al
 	retq

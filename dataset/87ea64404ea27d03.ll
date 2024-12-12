@@ -12,6 +12,18 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul i64 %1, 10
+  %3 = add nsw i64 %0, -480
+  %4 = add i64 %3, %2
+  %5 = mul i64 %4, 10
+  ret i64 %5
+}
+
 ; 3 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll

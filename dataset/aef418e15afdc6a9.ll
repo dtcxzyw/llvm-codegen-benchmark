@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-shlib-keymgmt_meth.ll
 ; openusd/optimized/cdef_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000581(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne ptr %1, null
@@ -19,7 +19,7 @@ entry:
 ; redis/optimized/db.ll
 ; wireshark/optimized/packet-ndmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c1c(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000302c(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq ptr %1, null
@@ -33,7 +33,7 @@ entry:
 ; php/optimized/zend_jit.ll
 ; redis/optimized/server.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc1(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000003181(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne ptr %1, null
@@ -48,7 +48,7 @@ entry:
 ; llvm/optimized/SemaCUDA.cpp.ll
 ; wireshark/optimized/file.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp eq ptr %1, null
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/UnwrappedLineFormatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c18(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000003028(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq ptr %1, null
@@ -78,7 +78,7 @@ entry:
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; wireshark/optimized/packet-ndmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000318c(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne ptr %1, null
@@ -111,7 +111,7 @@ entry:
 ; opencv/optimized/ransac_solvers.cpp.ll
 ; opencv/optimized/sqpnp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006c1(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000001981(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 3
   %4 = icmp ne ptr %1, null

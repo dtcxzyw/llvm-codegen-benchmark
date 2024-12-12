@@ -1,10 +1,9 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; graphviz/optimized/compound.c.ll
 ; hermes/optimized/zip.c.ll
-; linux/optimized/spurious.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll

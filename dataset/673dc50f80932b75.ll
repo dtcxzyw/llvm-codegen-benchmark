@@ -1,12 +1,9 @@
 
-; 7 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
+; 4 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
 ; openssl/optimized/libcrypto-lib-property_parse.ll
 ; openssl/optimized/libcrypto-shlib-property_parse.ll
+; qemu/optimized/block_nbd.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:

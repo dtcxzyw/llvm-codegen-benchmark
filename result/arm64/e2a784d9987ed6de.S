@@ -2,115 +2,55 @@ func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
 	mov	w8, #4059                       // =0xfdb
 	movk	w8, #16457, lsl #16
-	dup	v16.4s, w8
+	fmov	s2, w8
 	mov	w8, #4059                       // =0xfdb
 	movk	w8, #49353, lsl #16
-	fcmgt	v17.4s, v16.4s, v7.4s
-	fcmgt	v18.4s, v16.4s, v6.4s
-	fcmgt	v19.4s, v16.4s, v5.4s
-	fcmgt	v20.4s, v16.4s, v4.4s
-	bif	v2.16b, v6.16b, v18.16b
-	bif	v3.16b, v7.16b, v17.16b
-	bif	v1.16b, v5.16b, v19.16b
-	bif	v0.16b, v4.16b, v20.16b
-	dup	v4.4s, w8
-	fcmgt	v5.4s, v3.4s, v16.4s
-	fcmgt	v6.4s, v2.4s, v16.4s
-	fcmgt	v7.4s, v1.4s, v16.4s
-	fcmgt	v16.4s, v0.4s, v16.4s
-	fadd	v17.4s, v0.4s, v4.4s
-	fadd	v18.4s, v3.4s, v4.4s
-	fadd	v19.4s, v2.4s, v4.4s
-	fadd	v4.4s, v1.4s, v4.4s
-	bit	v0.16b, v17.16b, v16.16b
-	bit	v3.16b, v18.16b, v5.16b
-	bit	v1.16b, v4.16b, v7.16b
-	bit	v2.16b, v19.16b, v6.16b
+	fcmp	s1, s2
+	fcsel	s0, s0, s1, mi
+	fmov	s1, w8
+	fadd	s1, s0, s1
+	fcmp	s0, s2
+	fcsel	s0, s1, s0, gt
 	ret
                                         // -- End function
 func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
-	fcmlt	v17.4s, v6.4s, #0.0
-	fcmlt	v16.4s, v7.4s, #0.0
+	fcmp	s1, #0.0
 	mov	w8, #4059                       // =0xfdb
-	fcmlt	v18.4s, v5.4s, #0.0
-	fcmlt	v19.4s, v4.4s, #0.0
-	movk	w8, #16585, lsl #16
-	bif	v2.16b, v6.16b, v17.16b
-	dup	v6.4s, w8
-	mov	w8, #4059                       // =0xfdb
-	bif	v3.16b, v7.16b, v16.16b
 	movk	w8, #49353, lsl #16
-	bif	v0.16b, v4.16b, v19.16b
-	bif	v1.16b, v5.16b, v18.16b
-	dup	v4.4s, w8
-	fcmge	v7.4s, v2.4s, v6.4s
-	fcmge	v5.4s, v3.4s, v6.4s
-	fadd	v17.4s, v0.4s, v4.4s
-	fadd	v18.4s, v3.4s, v4.4s
-	fcmge	v16.4s, v1.4s, v6.4s
-	fcmge	v6.4s, v0.4s, v6.4s
-	fadd	v19.4s, v2.4s, v4.4s
-	fadd	v4.4s, v1.4s, v4.4s
-	bit	v3.16b, v18.16b, v5.16b
-	bit	v0.16b, v17.16b, v6.16b
-	bit	v2.16b, v19.16b, v7.16b
-	bit	v1.16b, v4.16b, v16.16b
+	fcsel	s0, s0, s1, mi
+	fmov	s1, w8
+	mov	w8, #4059                       // =0xfdb
+	movk	w8, #16585, lsl #16
+	fmov	s2, w8
+	fadd	s1, s0, s1
+	fcmp	s0, s2
+	fcsel	s0, s1, s0, ge
 	ret
                                         // -- End function
 func0000000000000022:                   // @func0000000000000022
 // %bb.0:                               // %entry
-	fcmlt	v16.4s, v7.4s, #0.0
-	fcmlt	v17.4s, v6.4s, #0.0
+	fcmp	s1, #0.0
 	mov	w8, #1135869952                 // =0x43b40000
-	fcmlt	v18.4s, v5.4s, #0.0
-	fcmlt	v19.4s, v4.4s, #0.0
-	bif	v2.16b, v6.16b, v17.16b
-	bif	v3.16b, v7.16b, v16.16b
-	bif	v0.16b, v4.16b, v19.16b
-	bif	v1.16b, v5.16b, v18.16b
-	dup	v4.4s, w8
-	fcmlt	v5.4s, v3.4s, #0.0
-	fcmlt	v6.4s, v2.4s, #0.0
-	fadd	v18.4s, v3.4s, v4.4s
-	fcmlt	v7.4s, v1.4s, #0.0
-	fcmlt	v16.4s, v0.4s, #0.0
-	fadd	v17.4s, v0.4s, v4.4s
-	fadd	v19.4s, v2.4s, v4.4s
-	fadd	v4.4s, v1.4s, v4.4s
-	bit	v3.16b, v18.16b, v5.16b
-	bit	v0.16b, v17.16b, v16.16b
-	bit	v1.16b, v4.16b, v7.16b
-	bit	v2.16b, v19.16b, v6.16b
+	fcsel	s0, s0, s1, mi
+	fmov	s1, w8
+	fadd	s1, s0, s1
+	fcmp	s0, #0.0
+	fcsel	s0, s1, s0, mi
 	ret
                                         // -- End function
 func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
 	mov	w8, #1110704128                 // =0x42340000
-	dup	v16.4s, w8
-	mov	w8, #-1036779520                // =0xc2340000
-	fcmgt	v17.4s, v7.4s, v16.4s
-	fcmgt	v18.4s, v6.4s, v16.4s
-	fcmgt	v19.4s, v5.4s, v16.4s
-	fcmgt	v16.4s, v4.4s, v16.4s
-	bif	v2.16b, v6.16b, v18.16b
-	dup	v6.4s, w8
-	bif	v3.16b, v7.16b, v17.16b
+	fmov	s2, w8
 	mov	w8, #1119092736                 // =0x42b40000
-	bif	v0.16b, v4.16b, v16.16b
-	bif	v1.16b, v5.16b, v19.16b
-	dup	v4.4s, w8
-	fcmgt	v5.4s, v6.4s, v3.4s
-	fcmgt	v7.4s, v6.4s, v2.4s
-	fcmgt	v16.4s, v6.4s, v1.4s
-	fcmgt	v6.4s, v6.4s, v0.4s
-	fadd	v17.4s, v0.4s, v4.4s
-	fadd	v18.4s, v3.4s, v4.4s
-	fadd	v19.4s, v2.4s, v4.4s
-	fadd	v4.4s, v1.4s, v4.4s
-	bit	v0.16b, v17.16b, v6.16b
-	bit	v1.16b, v4.16b, v16.16b
-	bit	v2.16b, v19.16b, v7.16b
-	bit	v3.16b, v18.16b, v5.16b
+	fcmp	s1, s2
+	fcsel	s0, s0, s1, gt
+	fmov	s1, w8
+	mov	w8, #-1036779520                // =0xc2340000
+	fmov	s2, w8
+	fadd	s1, s0, s1
+	fcmp	s0, s2
+	fcsel	s0, s1, s0, mi
 	ret
                                         // -- End function

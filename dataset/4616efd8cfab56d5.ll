@@ -5,12 +5,13 @@
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 1000
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
-; 50 occurrences:
+; 49 occurrences:
+; boost/optimized/sparring_partner.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -51,8 +52,6 @@ entry:
 ; nix/optimized/globals.ll
 ; nix/optimized/lexer-tab.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/shared.ll
 ; nix/optimized/store-api.ll
@@ -66,7 +65,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 10
   %4 = mul i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -79,7 +78,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 10033
   %4 = mul nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

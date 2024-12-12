@@ -10,7 +10,7 @@
 ; wireshark/optimized/ngsniffer.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000ac(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 8
   %3 = or disjoint i16 %2, %0
@@ -18,7 +18,8 @@ entry:
   ret i1 %4
 }
 
-; 73 occurrences:
+; 72 occurrences:
+; assimp/optimized/BlenderDNA.cpp.ll
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
@@ -69,7 +70,6 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/charsets.c.ll
-; wireshark/optimized/csids.c.ll
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/eyesdn.c.ll
@@ -79,7 +79,6 @@ entry:
 ; wireshark/optimized/netscaler.c.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; wireshark/optimized/packet-atm.c.ll
-; wireshark/optimized/packet-chdlc.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-k12.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
@@ -93,7 +92,7 @@ entry:
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000a1(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 8
   %3 = or disjoint i16 %2, %0
@@ -124,7 +123,7 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000aa(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 8
   %3 = or disjoint i16 %2, %0
@@ -132,7 +131,7 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 15 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
@@ -140,8 +139,6 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; php/optimized/zip.ll
 ; redis/optimized/cluster.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/netmon.c.ll
@@ -151,23 +148,11 @@ entry:
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000a8(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 8
   %3 = or disjoint i16 %2, %0
   %4 = icmp ugt i16 %3, 4
-  ret i1 %4
-}
-
-; 2 occurrences:
-; assimp/optimized/BlenderDNA.cpp.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
-entry:
-  %2 = shl i16 %1, 8
-  %3 = or disjoint i16 %2, %0
-  %4 = icmp eq i16 %3, 0
   ret i1 %4
 }
 
@@ -178,7 +163,7 @@ entry:
 ; stockfish/optimized/tbprobe.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000e1(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 4
   %3 = or disjoint i16 %2, %0
@@ -186,7 +171,20 @@ entry:
   ret i1 %4
 }
 
-; 25 occurrences:
+; 3 occurrences:
+; boost/optimized/ipv6_address.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b8(i16 %0, i16 %1) #0 {
+entry:
+  %2 = shl nuw i16 %1, 8
+  %3 = or disjoint i16 %2, %0
+  %4 = icmp samesign ugt i16 %3, 15
+  ret i1 %4
+}
+
+; 23 occurrences:
 ; clamav/optimized/XzIn.c.ll
 ; clamav/optimized/cabd.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -197,8 +195,6 @@ entry:
 ; draco/optimized/point_cloud_decoder.cc.ll
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/vars.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wireshark/optimized/aethra.c.ll
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/k12.c.ll
@@ -213,7 +209,7 @@ entry:
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000a4(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 8
   %3 = or disjoint i16 %2, %0
@@ -224,7 +220,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/ole2_extract.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000081(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 8
   %3 = or i16 %2, %0
@@ -232,10 +228,22 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b4(i16 %0, i16 %1) #0 {
+entry:
+  %2 = shl nuw i16 %1, 8
+  %3 = or disjoint i16 %2, %0
+  %4 = icmp samesign ult i16 %3, 5
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/packet-cemi.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000ec(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 6
   %3 = or disjoint i16 %2, %0
@@ -246,22 +254,33 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-gmr1_rach.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000f4(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 5
   %3 = or disjoint i16 %2, %0
-  %4 = icmp ult i16 %3, 1000
+  %4 = icmp samesign ult i16 %3, 1000
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000a6(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 8
   %3 = or disjoint i16 %2, %0
   %4 = icmp slt i16 %3, 1
+  ret i1 %4
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
+entry:
+  %2 = shl i16 %1, 8
+  %3 = or disjoint i16 %2, %0
+  %4 = icmp eq i16 %3, 0
   ret i1 %4
 }
 

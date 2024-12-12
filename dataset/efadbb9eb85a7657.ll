@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = add nuw nsw i32 %2, 1
@@ -15,7 +15,7 @@ entry:
 ; darktable/optimized/introspection_toneequal.c.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, -2
   %3 = add nsw i32 %2, -1
@@ -28,7 +28,7 @@ entry:
 ; opencv/optimized/stereobm.cpp.ll
 ; openspiel/optimized/bridge.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 5
   %3 = add nsw i32 %2, 1
@@ -40,7 +40,7 @@ entry:
 ; icu/optimized/measunit.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nsw i32 %2, 3
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; luajit/optimized/minilua.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nsw i32 %2, -1
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/orb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nuw nsw i32 %2, 1

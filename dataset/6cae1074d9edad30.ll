@@ -1,7 +1,7 @@
 
-%"class.asmjit::_abi_1_10::Operand.2492325" = type { %"struct.asmjit::_abi_1_10::Operand_.2492326" }
-%"struct.asmjit::_abi_1_10::Operand_.2492326" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2492322", i32, [2 x i32] }
-%"struct.asmjit::_abi_1_10::OperandSignature.2492322" = type { i32 }
+%"class.asmjit::_abi_1_10::Operand.2607746" = type { %"struct.asmjit::_abi_1_10::Operand_.2607747" }
+%"struct.asmjit::_abi_1_10::Operand_.2607747" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2607743", i32, [2 x i32] }
+%"struct.asmjit::_abi_1_10::OperandSignature.2607743" = type { i32 }
 
 ; 9 occurrences:
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
@@ -14,13 +14,13 @@
 ; openspiel/optimized/spiel.cc.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i8, ptr %0, i64 64
-  %6 = getelementptr nusw %"class.asmjit::_abi_1_10::Operand.2492325", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 64
+  %6 = getelementptr nusw nuw %"class.asmjit::_abi_1_10::Operand.2607746", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -40,12 +40,12 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/maple_tree.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i8 %1) #0 {
+define ptr @func000000000000003c(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = getelementptr i64, ptr %5, i64 %4
   ret ptr %6
 }

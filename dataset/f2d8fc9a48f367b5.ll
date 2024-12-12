@@ -24,6 +24,19 @@ entry:
   ret { i32, i32 } %5
 }
 
+; 2 occurrences:
+; rust-analyzer-rs/optimized/68ytxs4wk5ncclk.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; Function Attrs: nounwind
+define { i32, i32 } @func0000000000000002(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp eq i64 %1, 6
+  %3 = zext i1 %2 to i32
+  %4 = insertvalue { i32, i32 } poison, i32 %3, 0
+  %5 = insertvalue { i32, i32 } %4, i32 %0, 1
+  ret { i32, i32 } %5
+}
+
 ; 3 occurrences:
 ; qdrant-rs/optimized/3pzdaqjo344xoo11.ll
 ; qdrant-rs/optimized/4a3k1lnyyshtxc9t.ll

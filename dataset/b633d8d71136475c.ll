@@ -15,18 +15,18 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; minetest/optimized/CFileSystem.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-khmer.ll
 ; postgres/optimized/date.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = sub i32 %2, %0
-  %4 = add i32 %3, 1
-  %5 = icmp ult i32 %4, 2
-  ret i1 %5
+  %3 = sub i32 %0, %2
+  %4 = icmp ugt i32 %3, -4
+  ret i1 %4
 }
 
 ; 6 occurrences:
@@ -80,7 +80,7 @@ entry:
 ; quantlib/optimized/ukraine.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub nsw i32 %2, %0
@@ -93,17 +93,16 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000351(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add i32 %2, -1
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
-; linux/optimized/map.ll
 ; llvm/optimized/HTMLDiagnostics.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/ParseStmtAsm.cpp.ll
@@ -127,7 +126,7 @@ entry:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006a4(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub nsw i32 %2, %0
@@ -144,14 +143,14 @@ define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000020a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000040a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -163,7 +162,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = sub i32 %2, %0

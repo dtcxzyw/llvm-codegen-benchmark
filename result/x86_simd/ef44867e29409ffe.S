@@ -1,4 +1,4 @@
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsllq	$3, %ymm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
@@ -6,7 +6,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000001c4:                   # @func00000000000001c4
+func0000000000000384:                   # @func0000000000000384
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsllq	$4, %ymm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
@@ -14,7 +14,7 @@ func00000000000001c4:                   # @func00000000000001c4
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsllq	$3, %ymm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0

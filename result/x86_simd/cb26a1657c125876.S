@@ -33,5 +33,5 @@ func0000000000000005:                   # @func0000000000000005
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpeqw	%xmm3, %xmm2, %k1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [31536000,31536000,31536000,31536000]
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

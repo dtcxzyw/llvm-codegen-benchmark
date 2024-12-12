@@ -4,7 +4,7 @@
 ; ruby/optimized/addr2line.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000058c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null

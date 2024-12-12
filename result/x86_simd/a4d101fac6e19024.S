@@ -4,7 +4,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpxor	%xmm1, %xmm1, %xmm1
 	vcmpltpd	%zmm1, %zmm2, %k0 {%k1}
 	vpmovm2d	%k0, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000009:                   # @func0000000000000009
 	vpsllw	$15, %xmm1, %xmm1
@@ -12,5 +12,5 @@ func0000000000000009:                   # @func0000000000000009
 	vpxor	%xmm1, %xmm1, %xmm1
 	vcmpltpd	%zmm1, %zmm2, %k0 {%k1}
 	vpmovm2d	%k0, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

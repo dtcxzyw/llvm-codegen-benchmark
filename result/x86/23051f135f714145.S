@@ -7,6 +7,16 @@ func0000000000000003:                   # @func0000000000000003
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
+func0000000000000031:                   # @func0000000000000031
+	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
+	xorl	%ecx, %ecx
+	cmpq	%rax, %rsi
+	setb	%cl
+	shll	$5, %ecx
+	leal	16(%rcx), %eax
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
 	xorl	%ecx, %ecx
@@ -23,6 +33,15 @@ func0000000000000009:                   # @func0000000000000009
 	setne	%cl
 	shll	$5, %ecx
 	leal	16(%rcx), %eax
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
+	retq
+func0000000000000029:                   # @func0000000000000029
+	xorl	%ecx, %ecx
+	cmpq	$16, %rsi
+	setae	%cl
+	leal	2(,%rcx,4), %eax
+	shll	$2, %ecx
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

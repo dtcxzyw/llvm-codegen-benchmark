@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; gromacs/optimized/dlagtf.cpp.ll
+; 4 occurrences:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; opencv/optimized/layers_common.cpp.ll

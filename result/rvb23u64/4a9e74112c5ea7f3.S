@@ -5,8 +5,8 @@ func00000000000000ce:                   # @func00000000000000ce
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	slliw	a2, a2, 6
-	sh2add	a0, a2, a0
 	sh2add	a0, a1, a0
+	sh2add	a0, a2, a0
 	ret
 func0000000000000016:                   # @func0000000000000016
 	slliw	a2, a2, 1

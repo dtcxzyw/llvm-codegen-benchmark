@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/status_internal.cc.ll
 ; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
@@ -17,6 +17,8 @@
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/eabk1i73d9nic55wlyvjkefow.ll
 ; Function Attrs: nounwind
 define { i8, i64 } @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:

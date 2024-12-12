@@ -40,3 +40,12 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddd	.LCPI4_1(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
+.LCPI5_0:
+	.long	2147745791                      # 0x8003ffff
+.LCPI5_1:
+	.long	4294967040                      # 0xffffff00
+func0000000000000001:                   # @func0000000000000001
+	vpandd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
+	vpaddd	.LCPI5_1(%rip){1to4}, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq

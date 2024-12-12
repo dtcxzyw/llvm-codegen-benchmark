@@ -1,24 +1,24 @@
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	incq	%rdi
 	shrxq	%rsi, %rdi, %rax
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	incq	%rdi
@@ -46,20 +46,20 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movl	$2, %eax
 	shlxq	%rsi, %rax, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	addq	$2, %rdi
 	shrxq	%rsi, %rdi, %rax
 	testq	%rax, %rax
 	sete	%al
 	retq
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	incq	%rdi

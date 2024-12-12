@@ -1,10 +1,10 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	sub	a2, a2, a1
 	add	a0, a0, a2
 	lui	a1, 16
 	add	a0, a0, a1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func000000000000005b:                   # @func000000000000005b
 	sub	a2, a2, a1
 	sh1add	a1, a2, a2
 	sh3add	a0, a1, a0
@@ -15,12 +15,12 @@ func000000000000001a:                   # @func000000000000001a
 	add	a0, a0, a2
 	addi	a0, a0, -1
 	ret
-func00000000000000da:                   # @func00000000000000da
+func00000000000000db:                   # @func00000000000000db
 	sub	a2, a2, a1
 	sh3add	a0, a2, a0
 	addi	a0, a0, 8
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000004b:                   # @func000000000000004b
 	sub	a2, a2, a1
 	sh3add	a0, a2, a0
 	addi	a0, a0, 8

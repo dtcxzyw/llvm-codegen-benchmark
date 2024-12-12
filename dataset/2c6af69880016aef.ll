@@ -22,18 +22,19 @@ define i16 @func0000000000000001(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i16 8, i16 0
   %.masked = and i16 %0, -55
-  %3 = or i16 %2, %.masked
+  %3 = or i16 %.masked, %2
   ret i16 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; openusd/optimized/value.cpp.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i16 8, i16 4
   %.masked = and i16 %0, 12
-  %3 = or i16 %2, %.masked
+  %3 = or i16 %.masked, %2
   ret i16 %3
 }
 

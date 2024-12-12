@@ -1,5 +1,5 @@
 
-; 396 occurrences:
+; 394 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/multi.c.ll
 ; cmake/optimized/setopt.c.ll
@@ -106,20 +106,16 @@
 ; linux/optimized/alps.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/boot.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/hbm.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/intel_bios.ll
-; linux/optimized/keyboard.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/md.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/policydb.ll
 ; linux/optimized/synaptics.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
-; linux/optimized/utosi.ll
 ; linux/optimized/vt.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -141,6 +137,8 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_span.ll
 ; mimalloc/optimized/page.c.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll

@@ -1,8 +1,5 @@
 
-%"class.tbb::detail::d1::blocked_range.2521460" = type { i64, i64, i64 }
-%"class.tbb::detail::d1::blocked_range.3188756" = type { i64, i64, i64 }
-
-; 214 occurrences:
+; 242 occurrences:
 ; clamav/optimized/7zIn.c.ll
 ; icu/optimized/bytestrie.ll
 ; icu/optimized/bytestrieiterator.ll
@@ -186,6 +183,34 @@
 ; nori/optimized/main.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/thread.cpp.ll
+; openusd/optimized/authoring.cpp.ll
+; openusd/optimized/bakeSkinning.cpp.ll
+; openusd/optimized/blendShapeQuery.cpp.ll
+; openusd/optimized/crateData.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/flatNormals.cpp.ll
+; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
+; openusd/optimized/materialBindingAPI.cpp.ll
+; openusd/optimized/pathTable.cpp.ll
+; openusd/optimized/piPrototypeSceneIndex.cpp.ll
+; openusd/optimized/pointBased.cpp.ll
+; openusd/optimized/pointInstancer.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primGather.cpp.ll
+; openusd/optimized/primTypeIndex.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/resolvedAttributeCache.cpp.ll
+; openusd/optimized/schemaRegistry.cpp.ll
+; openusd/optimized/simplify.cpp.ll
+; openusd/optimized/skeletonAdapter.cpp.ll
+; openusd/optimized/smoothNormals.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; openusd/optimized/stitchClips.cpp.ll
+; openusd/optimized/tbbKernel.cpp.ll
+; openusd/optimized/testWorkLoops.cpp.ll
+; openusd/optimized/testWorkReduce.cpp.ll
+; openusd/optimized/testWorkThreadLimits.cpp.ll
+; openusd/optimized/utils.cpp.ll
 ; openvdb/optimized/Activate.cc.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/AttributeArrayString.cc.ll
@@ -218,66 +243,28 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
-  %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 16
-  %5 = getelementptr %"class.tbb::detail::d1::blocked_range.2521460", ptr %4, i64 %3, i32 1
-  ret ptr %5
+  %narrow = mul nuw i8 %2, 24
+  %.idx = zext i8 %narrow to i64
+  %3 = getelementptr i8, ptr %0, i64 24
+  %4 = getelementptr i8, ptr %3, i64 %.idx
+  ret ptr %4
 }
 
 ; 2 occurrences:
 ; linux/optimized/netdev.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000043(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 60
   %3 = zext nneg i8 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 14
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 12
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 12
   ret ptr %6
-}
-
-; 28 occurrences:
-; openusd/optimized/authoring.cpp.ll
-; openusd/optimized/bakeSkinning.cpp.ll
-; openusd/optimized/blendShapeQuery.cpp.ll
-; openusd/optimized/crateData.cpp.ll
-; openusd/optimized/delegate.cpp.ll
-; openusd/optimized/flatNormals.cpp.ll
-; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
-; openusd/optimized/materialBindingAPI.cpp.ll
-; openusd/optimized/pathTable.cpp.ll
-; openusd/optimized/piPrototypeSceneIndex.cpp.ll
-; openusd/optimized/pointBased.cpp.ll
-; openusd/optimized/pointInstancer.cpp.ll
-; openusd/optimized/prim.cpp.ll
-; openusd/optimized/primGather.cpp.ll
-; openusd/optimized/primTypeIndex.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/resolvedAttributeCache.cpp.ll
-; openusd/optimized/schemaRegistry.cpp.ll
-; openusd/optimized/simplify.cpp.ll
-; openusd/optimized/skeletonAdapter.cpp.ll
-; openusd/optimized/smoothNormals.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; openusd/optimized/stitchClips.cpp.ll
-; openusd/optimized/tbbKernel.cpp.ll
-; openusd/optimized/testWorkLoops.cpp.ll
-; openusd/optimized/testWorkReduce.cpp.ll
-; openusd/optimized/testWorkThreadLimits.cpp.ll
-; openusd/optimized/utils.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007b(ptr %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 7
-  %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %5 = getelementptr %"class.tbb::detail::d1::blocked_range.3188756", ptr %4, i64 %3, i32 1
-  ret ptr %5
 }
 
 ; 1 occurrences:

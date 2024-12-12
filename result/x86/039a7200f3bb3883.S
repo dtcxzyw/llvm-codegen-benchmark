@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	movl	$1, %eax
 	shlxl	%edx, %eax, %ecx
 	xorl	%eax, %eax
@@ -6,7 +6,7 @@ func0000000000000042:                   # @func0000000000000042
 	cmovel	%ecx, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	movl	$64, %eax
 	shlxl	%edx, %eax, %ecx
 	xorl	%eax, %eax

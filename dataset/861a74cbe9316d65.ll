@@ -28,12 +28,25 @@ entry:
 ; openjdk/optimized/trimCHeapDCmd.ll
 ; openjdk/optimized/trimNativeHeap.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000148(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %2, %1
   %4 = sub nuw i64 %1, %2
   %5 = select i1 %0, i64 %4, i64 %3
   %6 = icmp ugt i64 %5, 107374182399
+  ret i1 %6
+}
+
+; 2 occurrences:
+; openjdk/optimized/trimCHeapDCmd.ll
+; openjdk/optimized/trimNativeHeap.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000158(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw i64 %2, %1
+  %4 = sub nuw i64 %1, %2
+  %5 = select i1 %0, i64 %4, i64 %3
+  %6 = icmp samesign ugt i64 %5, 104857599
   ret i1 %6
 }
 
@@ -60,7 +73,7 @@ entry:
 ; opencv/optimized/perf_matchers.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000144(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %2, %1
   %4 = sub nuw i64 %1, %2
@@ -72,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CodeLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %2, %1
   %4 = sub nuw i64 %1, %2

@@ -13,7 +13,9 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rdi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	leal	(,%rdi,4), %eax
-	shrq	$32, %rdi
+	movl	%edi, %eax
+	andl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	shlq	$30, %rax
+	shrq	$31, %rdi
 	orq	%rdi, %rax
 	retq

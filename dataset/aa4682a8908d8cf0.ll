@@ -20,12 +20,36 @@
 ; minetest/optimized/wieldmesh.cpp.ll
 ; msdfgen/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = ashr exact i64 %0, 1
   %6 = icmp ugt i64 %5, %4
+  ret i1 %6
+}
+
+; 13 occurrences:
+; minetest/optimized/CB3DMeshFileLoader.cpp.ll
+; minetest/optimized/CBillboardSceneNode.cpp.ll
+; minetest/optimized/CGUITTFont.cpp.ll
+; minetest/optimized/CMeshManipulator.cpp.ll
+; minetest/optimized/COBJMeshFileLoader.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; minetest/optimized/clouds.cpp.ll
+; minetest/optimized/content_cao.cpp.ll
+; minetest/optimized/mapblock_mesh.cpp.ll
+; minetest/optimized/mesh.cpp.ll
+; minetest/optimized/minimap.cpp.ll
+; minetest/optimized/sky.cpp.ll
+; minetest/optimized/wieldmesh.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = ashr exact i64 %0, 1
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
@@ -53,7 +77,7 @@ entry:
 ; minetest/optimized/sky.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -79,7 +103,7 @@ entry:
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; quantlib/optimized/bspline.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -94,7 +118,7 @@ entry:
 ; opencv/optimized/svm.cpp.ll
 ; openspiel/optimized/matrix_game.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -108,7 +132,7 @@ entry:
 ; opencv/optimized/svm.cpp.ll
 ; openspiel/optimized/matrix_game.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -124,7 +148,7 @@ entry:
 ; cvc5/optimized/theory_proof_step_buffer.cpp.ll
 ; cvc5/optimized/theory_sep.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -140,7 +164,7 @@ entry:
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/theory_sep.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -159,7 +183,7 @@ entry:
 ; cvc5/optimized/strings_entail.cpp.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -171,7 +195,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/onnx_importer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64

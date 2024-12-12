@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/i2c-algo-bit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000084(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, %1
   %3 = add i8 %2, -33
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_codecs_jp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i8 %0, i8 %1) #0 {
+define i1 @func00000000000000c1(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, %1
   %3 = icmp eq i8 %2, 13

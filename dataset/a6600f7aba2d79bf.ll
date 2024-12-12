@@ -10,7 +10,7 @@
 ; postgres/optimized/logtape.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4096
   %3 = or disjoint i64 %0, 8
@@ -18,11 +18,10 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/gup.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/sparse-vmemmap.ll
 ; linux/optimized/vmalloc.ll
 ; Function Attrs: nounwind

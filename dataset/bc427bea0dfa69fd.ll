@@ -1,15 +1,18 @@
 
-%"struct.boost::container::dtl::pair.2897951" = type <{ %"class.std::thread::id.2897952", i32, [4 x i8] }>
-%"class.std::thread::id.2897952" = type { i64 }
-%union.ListCell.3469817 = type { ptr }
+%"struct.std::pair.1266.3037703" = type { %"class.boost::geometry::model::point.3037506", %"class.__gnu_cxx::__normal_iterator.1256.3037704" }
+%"class.boost::geometry::model::point.3037506" = type { [2 x i32] }
+%"class.__gnu_cxx::__normal_iterator.1256.3037704" = type { ptr }
+%"struct.boost::container::dtl::pair.3092414" = type <{ %"class.std::thread::id.3092415", i32, [4 x i8] }>
+%"class.std::thread::id.3092415" = type { i64 }
+%union.ListCell.3653923 = type { ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/nmethod.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000984(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = icmp ne ptr %0, null
   %6 = and i1 %4, %5
   ret i1 %6
@@ -19,16 +22,30 @@ entry:
 ; clamav/optimized/htmlnorm.c.ll
 ; git/optimized/basics.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000088c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6
 }
 
-; 54 occurrences:
+; 3 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; openusd/optimized/path.cpp.ll
+; recastnavigation/optimized/DetourNavMesh.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000d8c(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw %"struct.std::pair.1266.3037703", ptr %1, i64 %2
+  %4 = icmp ne ptr %0, %3
+  %5 = icmp ne ptr %0, null
+  %6 = and i1 %5, %4
+  ret i1 %6
+}
+
+; 52 occurrences:
 ; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
 ; hyperscan/optimized/asserts.cpp.ll
 ; hyperscan/optimized/buildstate.cpp.ll
@@ -81,13 +98,11 @@ entry:
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; oiio/optimized/thread.cpp.ll
-; openusd/optimized/path.cpp.ll
-; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000098c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.boost::container::dtl::pair.2897951", ptr %1, i64 %2
-  %4 = icmp ne ptr %3, %0
+  %3 = getelementptr nusw %"struct.boost::container::dtl::pair.3092414", ptr %1, i64 %2
+  %4 = icmp ne ptr %0, %3
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6
@@ -99,10 +114,10 @@ entry:
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wireguard.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6
@@ -111,10 +126,10 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/parse_collate.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %union.ListCell.3469817, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %3 = getelementptr %union.ListCell.3653923, ptr %1, i64 %2
+  %4 = icmp ult ptr %0, %3
   %5 = icmp ne ptr %0, null
   %6 = and i1 %4, %5
   ret i1 %6

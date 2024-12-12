@@ -98,23 +98,24 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = shl i64 4294967295, %0
   %6 = and i64 %5, %4
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = shl i64 4294967295, %1
   %6 = and i64 %4, %5
   %7 = icmp eq i64 %6, 0
@@ -194,10 +195,10 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000241(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = shl nuw i64 1, %0
   %6 = and i64 %5, %4
   %7 = icmp eq i64 %6, 0

@@ -13,3 +13,10 @@ func0000000000000007:                   # @func0000000000000007
 	vmovss	.LCPI1_0(%rip), %xmm0           # xmm0 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
 	retq
+.LCPI2_0:
+	.long	0x2b8cbccc                      # float 9.99999996E-13
+func000000000000000c:                   # @func000000000000000c
+	vmulss	%xmm2, %xmm1, %xmm1
+	vcmpgess	.LCPI2_0(%rip), %xmm0, %k1
+	vmovss	%xmm1, %xmm1, %xmm0 {%k1} {z}
+	retq

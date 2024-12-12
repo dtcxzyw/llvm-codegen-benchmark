@@ -1,50 +1,19 @@
+.LCPI0_0:
+	.xword	0x3dea39ef35793c76              // double 1.9082149292705877E-10
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	v4.4s, v4.4s, v6.4s
-	add	v5.4s, v5.4s, v7.4s
-	mov	x8, #15478                      // =0x3c76
-	movk	x8, #13689, lsl #16
-	movk	x8, #14831, lsl #32
-	sshll	v6.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	sshll2	v7.2d, v5.4s, #0
-	sshll	v5.2d, v5.2s, #0
-	movk	x8, #15850, lsl #48
-	dup	v16.2d, x8
-	scvtf	v6.2d, v6.2d
-	scvtf	v4.2d, v4.2d
-	scvtf	v7.2d, v7.2d
-	scvtf	v5.2d, v5.2d
-	fmul	v6.2d, v6.2d, v16.2d
-	fmul	v7.2d, v7.2d, v16.2d
-	fmul	v4.2d, v4.2d, v16.2d
-	fmul	v5.2d, v5.2d, v16.2d
-	fadd	v0.2d, v6.2d, v0.2d
-	fadd	v1.2d, v4.2d, v1.2d
-	fadd	v3.2d, v7.2d, v3.2d
-	fadd	v2.2d, v5.2d, v2.2d
+	add	w8, w0, w1
+	scvtf	d1, w8
+	adrp	x8, .LCPI0_0
+	ldr	d2, [x8, :lo12:.LCPI0_0]
+	fmul	d1, d1, d2
+	fadd	d0, d1, d0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	v4.4s, v4.4s, v6.4s
-	add	v5.4s, v5.4s, v7.4s
-	fmov	v16.2d, #0.50000000
-	sshll	v6.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	sshll2	v7.2d, v5.4s, #0
-	sshll	v5.2d, v5.2s, #0
-	scvtf	v6.2d, v6.2d
-	scvtf	v4.2d, v4.2d
-	scvtf	v7.2d, v7.2d
-	scvtf	v5.2d, v5.2d
-	fmul	v6.2d, v6.2d, v16.2d
-	fmul	v7.2d, v7.2d, v16.2d
-	fmul	v4.2d, v4.2d, v16.2d
-	fmul	v5.2d, v5.2d, v16.2d
-	fadd	v0.2d, v6.2d, v0.2d
-	fadd	v1.2d, v4.2d, v1.2d
-	fadd	v3.2d, v7.2d, v3.2d
-	fadd	v2.2d, v5.2d, v2.2d
+	add	w8, w0, w1
+	scvtf	d1, w8, #1
+	fadd	d0, d1, d0
 	ret
                                         // -- End function

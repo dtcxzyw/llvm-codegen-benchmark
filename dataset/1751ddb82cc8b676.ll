@@ -1,10 +1,6 @@
 
-; 17 occurrences:
+; 15 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/fit_rotations_l1.cpp.ll
-; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; mitsuba3/optimized/medium.cpp.ll
@@ -17,6 +13,8 @@
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; openvdb/optimized/TopologyToLevelSet.cc.ll
 ; quickjs/optimized/quickjs.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:

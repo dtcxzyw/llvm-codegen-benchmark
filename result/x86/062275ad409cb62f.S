@@ -5,7 +5,8 @@ func000000000000000f:                   # @func000000000000000f
 	leaq	(%rdi,%rsi), %rax
 	retq
 func000000000000000d:                   # @func000000000000000d
-	shrl	$31, %esi
+	shrl	$23, %esi
+	movzbl	%sil, %eax
 	shlq	$32, %rdi
-	leaq	(%rdi,%rsi,2), %rax
+	orq	%rdi, %rax
 	retq

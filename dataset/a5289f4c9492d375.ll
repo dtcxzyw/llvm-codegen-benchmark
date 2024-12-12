@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = sub nsw i64 0, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -14,26 +14,22 @@ entry:
 ; openssl/optimized/libssl-lib-d1_lib.ll
 ; openssl/optimized/libssl-shlib-d1_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = sub nsw i64 256, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
-; 5 occurrences:
-; linux/optimized/buffered-io.ll
-; linux/optimized/direct-io.ll
-; linux/optimized/scsi_lib.ll
+; 1 occurrences:
 ; qemu/optimized/util_bitmap.c.ll
-; spike/optimized/mmu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = sub nuw nsw i64 64, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp samesign ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -43,15 +39,17 @@ entry:
 ; libsodium/optimized/libsodium_la-hash_sha512_cp.ll
 ; openjdk/optimized/shenandoahSimpleBitMap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = sub nuw nsw i64 64, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 24 occurrences:
+; 26 occurrences:
+; boost/optimized/process.ll
+; boost/optimized/target.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -77,23 +75,16 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775807
   %3 = sub nsw i64 0, %2
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
-; 15 occurrences:
-; cmake/optimized/sha512.c.ll
-; libsodium/optimized/libsodium_la-hash_sha256_cp.ll
-; libsodium/optimized/libsodium_la-hash_sha512_cp.ll
+; 8 occurrences:
 ; lief/optimized/nist_kw.c.ll
-; ockam-rs/optimized/z0rkq6s90lca7cm.ll
-; postgres/optimized/sha2.ll
-; postgres/optimized/sha2_shlib.ll
-; postgres/optimized/sha2_srv.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/ByteStream.cpp.ll
@@ -102,22 +93,54 @@ entry:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = sub nuw nsw i64 9, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp samesign ult i64 %0, %3
+  ret i1 %4
+}
+
+; 4 occurrences:
+; linux/optimized/buffered-io.ll
+; linux/optimized/direct-io.ll
+; linux/optimized/scsi_lib.ll
+; spike/optimized/mmu.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4095
+  %3 = sub nuw nsw i64 4096, %2
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; hdf5/optimized/H5Tbit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000065(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = sub nuw nsw i64 8, %2
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
+  ret i1 %4
+}
+
+; 8 occurrences:
+; cmake/optimized/sha512.c.ll
+; libsodium/optimized/libsodium_la-hash_sha256_cp.ll
+; libsodium/optimized/libsodium_la-hash_sha512_cp.ll
+; ockam-rs/optimized/z0rkq6s90lca7cm.ll
+; postgres/optimized/sha2.ll
+; postgres/optimized/sha2_shlib.ll
+; postgres/optimized/sha2_srv.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 63
+  %3 = sub nuw nsw i64 64, %2
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 

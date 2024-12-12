@@ -1,14 +1,15 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; freetype/optimized/pshinter.c.ll
 ; graphviz/optimized/hedges.c.ll
 ; icu/optimized/rbbi.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; openjdk/optimized/jvmciCodeInstaller.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %0
@@ -26,7 +27,7 @@ entry:
 ; openjdk/optimized/TransformHelper.ll
 ; php/optimized/tm2unixtime.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %0
@@ -39,7 +40,7 @@ entry:
 ; openblas/optimized/dsbgst.c.ll
 ; opencv/optimized/radial_variance_hash.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %0
@@ -52,7 +53,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %0

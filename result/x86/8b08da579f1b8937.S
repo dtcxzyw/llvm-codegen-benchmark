@@ -1,4 +1,4 @@
-func0000000000000388:                   # @func0000000000000388
+func0000000000000f18:                   # @func0000000000000f18
 	addq	%rdx, %rsi
 	cmpq	$65521, %rsi                    # imm = 0xFFF1
 	setae	%cl

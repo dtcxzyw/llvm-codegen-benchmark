@@ -35,7 +35,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp oeq float %2, 0x7FF0000000000000
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i32 -1, i32 %0
   ret i32 %5
 }

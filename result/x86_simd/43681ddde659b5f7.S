@@ -3,7 +3,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovw2m	%xmm0, %k0
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vptestnmd	%ymm1, %ymm0, %k1
+	vptestnmd	%ymm0, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -14,7 +14,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vptestmd	%ymm1, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

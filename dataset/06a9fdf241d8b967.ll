@@ -9,7 +9,7 @@
 define i128 @func0000000000000001(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = or disjoint i128 %2, %0
+  %3 = or disjoint i128 %0, %2
   %4 = xor i128 %3, -18446744073709551616
   ret i128 %4
 }

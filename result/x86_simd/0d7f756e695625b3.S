@@ -66,7 +66,7 @@ func000000000000000c:                   # @func000000000000000c
 	.byte	0                               # 0x0
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpandd	.LCPI2_4(%rip){1to4}, %xmm0, %xmm0
 	vpcmpgtw	.LCPI2_1(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI2_2(%rip), %ymm0   # ymm0 = [65472,65472,65472,65472,65472,65472,65472,65472]

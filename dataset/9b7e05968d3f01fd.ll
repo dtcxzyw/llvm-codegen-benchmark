@@ -8,7 +8,7 @@
 ; openjdk/optimized/jchuff.ll
 ; zxing/optimized/Error.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0) #0 {
+define i1 @func0000000000000034(i16 %0) #0 {
 entry:
   %1 = call i16 @llvm.abs.i16(i16 %0, i1 false)
   %2 = icmp ult i16 %1, 10
@@ -26,7 +26,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; minetest/optimized/settings.cpp.ll
 ; openjdk/optimized/jchuff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0) #0 {
+define i1 @func0000000000000038(i16 %0) #0 {
 entry:
   %1 = call i16 @llvm.abs.i16(i16 %0, i1 false)
   %2 = icmp ugt i16 %1, 99

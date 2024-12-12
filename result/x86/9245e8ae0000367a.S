@@ -10,7 +10,7 @@ func000000000000007f:                   # @func000000000000007f
 	cmovneq	%rdi, %rax
 	leaq	64(%rax,%rsi,8), %rax
 	retq
-func000000000000031f:                   # @func000000000000031f
+func000000000000061f:                   # @func000000000000061f
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	cmovneq	%rdi, %rax

@@ -1,7 +1,7 @@
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	movslq	%edx, %rax
 	andq	$-4, %rax
 	leaq	(%rsi,%rax,4), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq

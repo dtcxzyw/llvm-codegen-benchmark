@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	andl	$1, %edx
 	orq	%rsi, %rdx
 	sete	%cl
@@ -6,7 +6,7 @@ func0000000000000022:                   # @func0000000000000022
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000190:                   # @func0000000000000190
+func0000000000000310:                   # @func0000000000000310
 	andl	$4095, %edx                     # imm = 0xFFF
 	orq	%rsi, %rdx
 	setne	%cl

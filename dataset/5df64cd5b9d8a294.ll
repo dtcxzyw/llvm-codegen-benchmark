@@ -30,26 +30,7 @@ define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = icmp eq i64 %2, 0
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 9 occurrences:
-; flac/optimized/cuesheet.c.ll
-; llvm/optimized/CGCleanup.cpp.ll
-; llvm/optimized/CGCoroutine.cpp.ll
-; llvm/optimized/CGDecl.cpp.ll
-; llvm/optimized/CGExpr.cpp.ll
-; opencv/optimized/matmul.dispatch.cpp.ll
-; ruby/optimized/pack.ll
-; velox/optimized/TimeZoneMap.cpp.ll
-; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
-entry:
-  %2 = freeze i64 %1
-  %3 = icmp ugt i64 %2, 63
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -81,7 +62,24 @@ define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
+  ret i1 %4
+}
+
+; 7 occurrences:
+; llvm/optimized/CGCleanup.cpp.ll
+; llvm/optimized/CGCoroutine.cpp.ll
+; llvm/optimized/CGDecl.cpp.ll
+; llvm/optimized/CGExpr.cpp.ll
+; opencv/optimized/matmul.dispatch.cpp.ll
+; velox/optimized/TimeZoneMap.cpp.ll
+; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
+entry:
+  %2 = freeze i64 %1
+  %3 = icmp ugt i64 %2, 4
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

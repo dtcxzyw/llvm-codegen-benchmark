@@ -1,10 +1,8 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v3.2d, #0x00ff000000ff00
-	orr	v0.16b, v1.16b, v0.16b
-	and	v2.16b, v2.16b, v3.16b
-	orr	v0.16b, v2.16b, v0.16b
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	and	w8, w2, #0xff00
+	orr	w9, w1, w0
+	orr	w8, w9, w8
+	sxtw	x0, w8
 	ret
                                         // -- End function

@@ -1,4 +1,4 @@
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	movzwl	%di, %eax
 	cmpl	$37500, %eax                    # imm = 0x927C
 	sete	%cl

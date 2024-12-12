@@ -82,7 +82,7 @@ entry:
   ret i1 %4
 }
 
-; 142 occurrences:
+; 143 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -163,6 +163,7 @@ entry:
 ; llvm/optimized/LTOCodeGenerator.cpp.ll
 ; llvm/optimized/LTOModule.cpp.ll
 ; llvm/optimized/Lanai.cpp.ll
+; llvm/optimized/LegacyPassManager.cpp.ll
 ; llvm/optimized/LinkModules.cpp.ll
 ; llvm/optimized/LoongArch.cpp.ll
 ; llvm/optimized/M68k.cpp.ll

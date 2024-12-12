@@ -29,9 +29,9 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; openusd/optimized/reformat.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000043(i32 %0) #0 {
+define i32 @func00000000000000c3(i32 %0) #0 {
 entry:
-  %1 = icmp ugt i32 %0, 1
+  %1 = icmp samesign ugt i32 %0, 1
   %2 = zext i1 %1 to i32
   %3 = shl nuw nsw i32 4, %2
   ret i32 %3

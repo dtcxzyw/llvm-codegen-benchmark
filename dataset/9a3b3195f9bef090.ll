@@ -1,19 +1,20 @@
 
-%"struct.ozz::animation::offline::RawAnimation::JointTrack.3471687" = type { %"class.std::vector.10.3471688", %"class.std::vector.14.3471689", %"class.std::vector.18.3471690" }
-%"class.std::vector.10.3471688" = type { %"struct.std::_Vector_base.11.3471691" }
-%"struct.std::_Vector_base.11.3471691" = type { %"struct.std::_Vector_base<ozz::animation::offline::RawAnimation::TranslationKey, ozz::StdAllocator<ozz::animation::offline::RawAnimation::TranslationKey>>::_Vector_impl.3471692" }
-%"struct.std::_Vector_base<ozz::animation::offline::RawAnimation::TranslationKey, ozz::StdAllocator<ozz::animation::offline::RawAnimation::TranslationKey>>::_Vector_impl.3471692" = type { %"struct.std::_Vector_base<ozz::animation::offline::RawAnimation::TranslationKey, ozz::StdAllocator<ozz::animation::offline::RawAnimation::TranslationKey>>::_Vector_impl_data.3471693" }
-%"struct.std::_Vector_base<ozz::animation::offline::RawAnimation::TranslationKey, ozz::StdAllocator<ozz::animation::offline::RawAnimation::TranslationKey>>::_Vector_impl_data.3471693" = type { ptr, ptr, ptr }
-%"class.std::vector.14.3471689" = type { %"struct.std::_Vector_base.15.3471694" }
-%"struct.std::_Vector_base.15.3471694" = type { %"struct.std::_Vector_base<ozz::animation::offline::RawAnimation::RotationKey, ozz::StdAllocator<ozz::animation::offline::RawAnimation::RotationKey>>::_Vector_impl.3471695" }
-%"struct.std::_Vector_base<ozz::animation::offline::RawAnimation::RotationKey, ozz::StdAllocator<ozz::animation::offline::RawAnimation::RotationKey>>::_Vector_impl.3471695" = type { %"struct.std::_Vector_base<ozz::animation::offline::RawAnimation::RotationKey, ozz::StdAllocator<ozz::animation::offline::RawAnimation::RotationKey>>::_Vector_impl_data.3471696" }
-%"struct.std::_Vector_base<ozz::animation::offline::RawAnimation::RotationKey, ozz::StdAllocator<ozz::animation::offline::RawAnimation::RotationKey>>::_Vector_impl_data.3471696" = type { ptr, ptr, ptr }
-%"class.std::vector.18.3471690" = type { %"struct.std::_Vector_base.19.3471697" }
-%"struct.std::_Vector_base.19.3471697" = type { %"struct.std::_Vector_base<ozz::animation::offline::RawAnimation::ScaleKey, ozz::StdAllocator<ozz::animation::offline::RawAnimation::ScaleKey>>::_Vector_impl.3471698" }
-%"struct.std::_Vector_base<ozz::animation::offline::RawAnimation::ScaleKey, ozz::StdAllocator<ozz::animation::offline::RawAnimation::ScaleKey>>::_Vector_impl.3471698" = type { %"struct.std::_Vector_base<ozz::animation::offline::RawAnimation::ScaleKey, ozz::StdAllocator<ozz::animation::offline::RawAnimation::ScaleKey>>::_Vector_impl_data.3471699" }
-%"struct.std::_Vector_base<ozz::animation::offline::RawAnimation::ScaleKey, ozz::StdAllocator<ozz::animation::offline::RawAnimation::ScaleKey>>::_Vector_impl_data.3471699" = type { ptr, ptr, ptr }
+%struct._zend_ssa_var.2790519 = type { i32, i32, i32, i32, ptr, ptr, ptr, i8 }
 
-; 149 occurrences:
+; 2 occurrences:
+; ozz-animation/optimized/animation_optimizer.cc.ll
+; php/optimized/sccp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000009b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 32
+  %3 = add i64 %2, -4294967296
+  %4 = ashr exact i64 %3, 32
+  %5 = getelementptr %struct._zend_ssa_var.2790519, ptr %0, i64 %4, i32 2
+  ret ptr %5
+}
+
+; 146 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
@@ -102,13 +103,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -185,18 +183,6 @@ entry:
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
-}
-
-; 1 occurrences:
-; ozz-animation/optimized/animation_optimizer.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000009a(ptr %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = add i64 %2, -4294967296
-  %4 = ashr exact i64 %3, 32
-  %5 = getelementptr %"struct.ozz::animation::offline::RawAnimation::JointTrack.3471687", ptr %0, i64 %4, i32 0, i32 0, i32 0, i32 0, i32 1
-  ret ptr %5
 }
 
 ; 2 occurrences:

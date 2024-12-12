@@ -12,9 +12,10 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
-; abseil-cpp/optimized/arg.cc.ll
+; 17 occurrences:
 ; assimp/optimized/PlyParser.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -30,9 +31,21 @@ entry:
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i1 %1, ptr %2) #0 {
+define i64 @func000000000000003c(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %.v = select i1 %1, i64 3, i64 2
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %.v
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/arg.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i64 %0, i1 %1, ptr %2) #0 {
+entry:
+  %.v = select i1 %1, i64 -1, i64 -2
   %3 = getelementptr nusw i8, ptr %2, i64 %.v
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4

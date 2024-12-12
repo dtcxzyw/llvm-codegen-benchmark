@@ -21,7 +21,7 @@
 define i1 @func0000000000000002(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp olt double %3, -1.000000e+00
   ret i1 %4
 }
@@ -39,7 +39,7 @@ entry:
 define i1 @func0000000000000004(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp ogt double %3, 1.000000e+00
   ret i1 %4
 }
@@ -51,7 +51,7 @@ entry:
 define i1 @func0000000000000007(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp une double %3, 0.000000e+00
   ret i1 %4
 }
@@ -62,7 +62,7 @@ entry:
 define i1 @func0000000000000003(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp ult double %3, 1.000000e-02
   ret i1 %4
 }

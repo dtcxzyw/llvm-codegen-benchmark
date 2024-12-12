@@ -235,7 +235,7 @@ entry:
   %4 = and i16 %3, 1792
   %5 = zext nneg i16 %4 to i32
   %6 = select i1 %1, i32 0, i32 %5
-  %7 = or disjoint i32 %6, %0
+  %7 = or disjoint i32 %0, %6
   ret i32 %7
 }
 

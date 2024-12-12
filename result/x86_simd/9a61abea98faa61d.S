@@ -15,7 +15,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	vptestmb	.LCPI0_0(%rip), %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
 	korw	%k1, %k0, %k0
@@ -39,7 +39,7 @@ func0000000000000038:                   # @func0000000000000038
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	vptestmb	.LCPI1_0(%rip), %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
 	korw	%k0, %k1, %k0
@@ -82,7 +82,7 @@ func0000000000000182:                   # @func0000000000000182
 	.zero	1
 .LCPI2_2:
 	.zero	4,254
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	vpandd	.LCPI2_2(%rip){1to4}, %xmm1, %xmm1
 	vpcmpneqb	.LCPI2_1(%rip), %xmm1, %k0
 	vptestmq	%ymm0, %ymm0, %k1
@@ -107,7 +107,7 @@ func0000000000000198:                   # @func0000000000000198
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vptestnmb	.LCPI3_0(%rip), %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
 	korw	%k0, %k1, %k0
@@ -152,7 +152,7 @@ func0000000000000022:                   # @func0000000000000022
 	.quad	3                               # 0x3
 .LCPI4_3:
 	.zero	4,223
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	vpandd	.LCPI4_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpneqb	.LCPI4_1(%rip), %xmm1, %k0
 	vpcmpltuq	.LCPI4_2(%rip){1to4}, %ymm0, %k1
@@ -179,7 +179,7 @@ func0000000000000188:                   # @func0000000000000188
 	.zero	1
 .LCPI5_1:
 	.quad	7                               # 0x7
-func0000000000000118:                   # @func0000000000000118
+func0000000000000218:                   # @func0000000000000218
 	vptestmb	.LCPI5_0(%rip), %xmm1, %k0
 	vpcmpnleuq	.LCPI5_1(%rip){1to4}, %ymm0, %k1
 	korw	%k1, %k0, %k0

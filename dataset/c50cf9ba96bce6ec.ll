@@ -1,12 +1,15 @@
 
-; 5 occurrences:
+; 8 occurrences:
+; abc/optimized/cbaNtk.c.ll
+; abc/optimized/cbaReadBlif.c.ll
+; abc/optimized/cbaReadVer.c.ll
 ; lua/optimized/lapi.ll
 ; postgres/optimized/like_support.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wireshark/optimized/packet-dvbci.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i8 %0) #0 {
+define i32 @func0000000000000048(i8 %0) #0 {
 entry:
   %1 = add nsw i8 %0, -41
   %2 = icmp ult i8 %1, 2
@@ -14,8 +17,10 @@ entry:
   ret i32 %3
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; abc/optimized/acbUtil.c.ll
+; abc/optimized/cbaBlast.c.ll
+; abc/optimized/cbaNtk.c.ll
 ; c3c/optimized/lexer.c.ll
 ; hermes/optimized/StringRef.cpp.ll
 ; lief/optimized/ssl_ciphersuites.c.ll
@@ -40,8 +45,7 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
-; icu/optimized/localeprioritylist.ll
+; 1 occurrences:
 ; wireshark/optimized/camins.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i8 %0) #0 {

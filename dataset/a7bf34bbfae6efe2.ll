@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 21 occurrences:
 ; graphviz/optimized/shapes.c.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; mitsuba3/optimized/compiler.cpp.ll
@@ -17,6 +17,10 @@
 ; wireshark/optimized/packet-hislip.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i8 %0) #0 {
 entry:

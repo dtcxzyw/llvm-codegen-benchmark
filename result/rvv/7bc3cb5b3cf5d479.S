@@ -14,7 +14,7 @@ func0000000000000018:                   # @func0000000000000018
 	li	a0, -33
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsne.vx	v8, v8, a0
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 16, e8, m1, ta, ma
@@ -32,4 +32,16 @@ func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsgt.vx	v8, v8, a0
 	vmor.mm	v0, v8, v0
+	ret
+func0000000000000030:                   # @func0000000000000030
+	li	a0, 31
+	vsetivli	zero, 16, e8, m1, ta, ma
+	vmsgtu.vx	v8, v8, a0
+	vmor.mm	v0, v8, v0
+	ret
+func0000000000000028:                   # @func0000000000000028
+	li	a0, -16
+	vsetivli	zero, 16, e8, m1, ta, ma
+	vmsltu.vx	v8, v8, a0
+	vmor.mm	v0, v0, v8
 	ret

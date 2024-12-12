@@ -1,4 +1,4 @@
-func000000000000021c:                   // @func000000000000021c
+func0000000000000c2c:                   // @func0000000000000c2c
 // %bb.0:                               // %entry
 	and	w8, w0, #0xff
 	add	x9, x2, #1
@@ -7,7 +7,7 @@ func000000000000021c:                   // @func000000000000021c
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000216:                   // @func0000000000000216
+func0000000000000c26:                   // @func0000000000000c26
 // %bb.0:                               // %entry
 	sxtb	w8, w0
 	add	x9, x2, #4
@@ -16,7 +16,7 @@ func0000000000000216:                   // @func0000000000000216
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000291:                   // @func0000000000000291
+func0000000000000d21:                   // @func0000000000000d21
 // %bb.0:                               // %entry
 	and	w8, w0, #0xff
 	add	x9, x2, #1
@@ -25,7 +25,7 @@ func0000000000000291:                   // @func0000000000000291
 	cset	w0, hs
 	ret
                                         // -- End function
-func0000000000000211:                   // @func0000000000000211
+func0000000000000c21:                   // @func0000000000000c21
 // %bb.0:                               // %entry
 	add	x8, x2, #1
 	tst	w0, #0xff
@@ -33,7 +33,7 @@ func0000000000000211:                   // @func0000000000000211
 	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000028c:                   // @func000000000000028c
+func0000000000000d0c:                   // @func0000000000000d0c
 // %bb.0:                               // %entry
 	and	w8, w0, #0xff
 	add	x9, x2, #3
@@ -42,7 +42,7 @@ func000000000000028c:                   // @func000000000000028c
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000214:                   // @func0000000000000214
+func0000000000000c24:                   // @func0000000000000c24
 // %bb.0:                               // %entry
 	add	x8, x2, #8
 	tst	w0, #0xfe
@@ -50,7 +50,16 @@ func0000000000000214:                   // @func0000000000000214
 	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000002cc:                   // @func00000000000002cc
+func000000000000082c:                   // @func000000000000082c
+// %bb.0:                               // %entry
+	and	w8, w0, #0xff
+	sub	x9, x2, #16
+	cmp	w8, #33
+	ccmp	x9, x1, #4, eq
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000d8c:                   // @func0000000000000d8c
 // %bb.0:                               // %entry
 	and	w8, w0, #0xff
 	add	x9, x2, #1
@@ -59,7 +68,7 @@ func00000000000002cc:                   // @func00000000000002cc
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000288:                   // @func0000000000000288
+func0000000000000d08:                   // @func0000000000000d08
 // %bb.0:                               // %entry
 	and	w8, w0, #0xff
 	add	x9, x2, #4
@@ -68,7 +77,7 @@ func0000000000000288:                   // @func0000000000000288
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	sub	x8, x2, #1
 	tst	w0, #0xff
@@ -76,16 +85,7 @@ func0000000000000011:                   // @func0000000000000011
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000218:                   // @func0000000000000218
-// %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	add	x9, x2, #8
-	cmp	w8, #1
-	ccmp	x9, x1, #4, ls
-	cset	w0, eq
-	ret
-                                        // -- End function
-func0000000000000081:                   // @func0000000000000081
+func0000000000000101:                   // @func0000000000000101
 // %bb.0:                               // %entry
 	add	x8, x2, #2
 	tst	w0, #0xff

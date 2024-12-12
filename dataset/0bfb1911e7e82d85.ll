@@ -1,5 +1,5 @@
 
-; 120 occurrences:
+; 118 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -38,8 +38,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -124,7 +122,7 @@
 define i64 @func0000000000000052(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   %5 = lshr i64 %4, 32
   %6 = mul nuw i64 %0, %1
   %7 = add nuw i64 %5, %6
@@ -170,7 +168,7 @@ entry:
 define i64 @func0000000000000049(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   %5 = lshr i64 %4, 32
   %6 = mul nsw i64 %0, %1
   %7 = add nsw i64 %5, %6
@@ -184,7 +182,7 @@ entry:
 define i64 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   %5 = lshr i64 %4, 32
   %6 = mul nuw i64 %0, %1
   %7 = add nuw i64 %6, %5

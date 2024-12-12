@@ -24,15 +24,15 @@ func000000000000001e:                   # @func000000000000001e
 	and	a0, a0, a1
 	slli	a0, a0, 32
 	ret
-func0000000000000017:                   # @func0000000000000017
-	addi	a0, a0, -1
-	srliw	a0, a0, 2
-	slli	a0, a0, 5
-	ret
 func0000000000000027:                   # @func0000000000000027
 	addi	a0, a0, 1
 	srliw	a0, a0, 1
 	slli	a0, a0, 4
+	ret
+func0000000000000017:                   # @func0000000000000017
+	addi	a0, a0, 7
+	srliw	a0, a0, 3
+	slli	a0, a0, 3
 	ret
 func0000000000000006:                   # @func0000000000000006
 	lui	a1, 8

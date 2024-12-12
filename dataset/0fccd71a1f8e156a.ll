@@ -6,7 +6,7 @@ define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 8
   %3 = ashr exact i32 %2, 8
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -18,7 +18,7 @@ define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 17
   %3 = ashr i32 %2, 31
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -48,7 +48,7 @@ define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = ashr i32 %2, 31
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -62,7 +62,7 @@ define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 24
   %3 = ashr exact i32 %2, 24
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

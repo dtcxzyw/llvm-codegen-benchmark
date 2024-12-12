@@ -16,19 +16,19 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/sprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = sub i64 %0, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp ugt i32 %5, 16
+  %6 = icmp samesign ugt i32 %5, 16
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sub i64 %0, %3
@@ -68,7 +68,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sub i64 %0, %3
@@ -80,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sub i64 %0, %3
@@ -106,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/deflate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000601(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = sub i64 %0, %3

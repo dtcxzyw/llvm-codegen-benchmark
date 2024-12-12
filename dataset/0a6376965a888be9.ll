@@ -33,7 +33,7 @@
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %0, 1
   %6 = icmp ugt i32 %5, %4
   ret i1 %6
@@ -42,10 +42,10 @@ entry:
 ; 1 occurrences:
 ; php/optimized/ir_dump.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -54,10 +54,10 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/OptimizeDeadStore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 4
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = icmp slt i32 %5, %4
   ret i1 %6
@@ -70,22 +70,9 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %0, 1
   %6 = icmp eq i32 %5, %4
-  ret i1 %6
-}
-
-; 2 occurrences:
-; wireshark/optimized/packet-opa-mad.c.ll
-; wolfssl/optimized/tls.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 24
-  %4 = add nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %0, 1
-  %6 = icmp ult i32 %5, %4
   ret i1 %6
 }
 
@@ -94,10 +81,10 @@ entry:
 ; wireshark/optimized/packet-x25.c.ll
 ; wolfssl/optimized/random.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 4
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -106,11 +93,23 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %0, -2
+  %6 = icmp ult i32 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; wolfssl/optimized/tls.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e4(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 31
+  %4 = add nuw nsw i32 %3, %1
+  %5 = add nuw nsw i32 %0, 1
   %6 = icmp ult i32 %5, %4
   ret i1 %6
 }
@@ -118,7 +117,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/mathfuncs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nsw i32 %3, %1
@@ -130,10 +129,10 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 8
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nuw i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6

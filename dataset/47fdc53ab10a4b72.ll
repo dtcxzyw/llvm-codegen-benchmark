@@ -46,13 +46,12 @@ entry:
   ret i32 %6
 }
 
-; 100 occurrences:
+; 98 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; flac/optimized/bitwriter.c.ll
 ; linux/optimized/apple.ll
 ; linux/optimized/avc.ll
 ; linux/optimized/cfg.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/sched.ll
 ; linux/optimized/services.ll
@@ -136,7 +135,6 @@ entry:
 ; wireshark/optimized/packet-synphasor.c.ll
 ; wireshark/optimized/packet-tcpcl.c.ll
 ; wireshark/optimized/packet-tds.c.ll
-; wireshark/optimized/packet-teap.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-tpm20.c.ll
 ; wireshark/optimized/packet-uds.c.ll
@@ -169,10 +167,11 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; darktable/optimized/export.c.ll
 ; nori/optimized/nanovg.c.ll
+; openblas/optimized/dorcsd2by1.c.ll
 ; openjdk/optimized/relocator.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
@@ -195,7 +194,7 @@ entry:
   %3 = add i32 %2, -16
   %4 = add nsw i32 %3, %1
   %5 = add i32 %4, 8
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -205,9 +204,9 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, 1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -217,7 +216,7 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, 8
   %6 = add nsw i32 %5, %0
   ret i32 %6
@@ -263,7 +262,7 @@ entry:
   ret i32 %6
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; openusd/optimized/rigidBodyAPI.cpp.ll
 ; wireshark/optimized/packet-afp.c.ll
 ; wireshark/optimized/packet-ajp13.c.ll
@@ -274,7 +273,6 @@ entry:
 ; wireshark/optimized/packet-mysql.c.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; wireshark/optimized/packet-reload.c.ll
-; wireshark/optimized/packet-sametime.c.ll
 ; wireshark/optimized/packet-srvloc.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
@@ -303,9 +301,9 @@ entry:
 define i32 @func00000000000000c0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, 2
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -316,7 +314,7 @@ entry:
 define i32 @func00000000000000fc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 5
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, 1
   %6 = add i32 %5, %0
   ret i32 %6

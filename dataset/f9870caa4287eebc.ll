@@ -13,7 +13,7 @@
 ; wireshark/optimized/packet-rsvp.c.ll
 ; wireshark/optimized/packet-wtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0) #0 {
+define i1 @func0000000000000024(i8 %0) #0 {
 entry:
   %1 = lshr i8 %0, 4
   %2 = and i8 %1, 3

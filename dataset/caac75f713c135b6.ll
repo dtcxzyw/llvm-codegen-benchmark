@@ -4,39 +4,23 @@
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000374(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 4294967296
-  ret i1 %6
-}
-
-; 5 occurrences:
-; arrow/optimized/bignum.cc.ll
-; double_conversion/optimized/bignum.cc.ll
-; icu/optimized/double-conversion-bignum.ll
-; openusd/optimized/bignum.cc.ll
-; qemu/optimized/util_buffer.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw i64 %1, %2
-  %4 = lshr i64 %3, 7
-  %5 = sub i64 0, %0
-  %6 = icmp eq i64 %4, %5
+  %5 = add nuw nsw i64 %0, %4
+  %6 = icmp samesign ult i64 %5, 4294967296
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000012a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp sgt i64 %5, -1
   ret i1 %6
 }
@@ -44,12 +28,12 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000134(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = add nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 16
+  %5 = add nsw i64 %0, %4
+  %6 = icmp samesign ult i64 %5, 16
   ret i1 %6
 }
 
@@ -59,12 +43,27 @@ entry:
 ; icu/optimized/double-conversion-strtod.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000304(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp ult i64 %5, 18014398509481984
+  ret i1 %6
+}
+
+; 4 occurrences:
+; arrow/optimized/bignum.cc.ll
+; double_conversion/optimized/bignum.cc.ll
+; icu/optimized/double-conversion-bignum.ll
+; openusd/optimized/bignum.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = lshr i64 %3, 28
+  %5 = sub nsw i64 0, %4
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -142,11 +141,11 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000241(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -154,23 +153,23 @@ entry:
 ; 1 occurrences:
 ; php/optimized/strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000301(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = sub i64 0, %0
-  %6 = icmp eq i64 %4, %5
+  %5 = sub nsw i64 0, %4
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; php/optimized/strtod.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000030a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp sgt i64 %5, -1
   ret i1 %6
 }
@@ -179,12 +178,12 @@ entry:
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; lief/optimized/bignum.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 6
   %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ugt i64 %5, 10000
+  %6 = icmp samesign ugt i64 %5, 10000
   ret i1 %6
 }
 
@@ -203,7 +202,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000124(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000244(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = lshr i64 %3, 32
@@ -215,7 +214,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = lshr i64 %3, 32
@@ -227,7 +226,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = lshr i64 %3, 32
@@ -239,19 +238,19 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000378(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ugt i64 %5, 2147483647
+  %5 = add nuw nsw i64 %0, %4
+  %6 = icmp samesign ugt i64 %5, 2147483647
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; typst-rs/optimized/ef603zin5qw49hb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 1
@@ -263,24 +262,35 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp sgt i64 %5, -1
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
-; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
+  %6 = icmp samesign ult i64 %5, 64
+  ret i1 %6
+}
+
+; 1 occurrences:
+; eastl/optimized/TestSort.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = lshr i64 %3, 1
+  %5 = add nsw i64 %0, %4
   %6 = icmp ult i64 %5, 64
   ret i1 %6
 }

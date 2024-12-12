@@ -2,7 +2,6 @@
 ; 17 occurrences:
 ; cmake/optimized/cmLocalUnixMakefileGenerator3.cxx.ll
 ; cmake/optimized/cmake.cxx.ll
-; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; gromacs/optimized/enxio.cpp.ll
 ; gromacs/optimized/listed_forces.cpp.ll
 ; icu/optimized/numparse_decimal.ll
@@ -17,6 +16,7 @@
 ; spike/optimized/f128_to_ui64.ll
 ; wireshark/optimized/packet-smb-direct.c.ll
 ; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

@@ -1,7 +1,8 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
+; boost/optimized/default_formatter_factory.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll

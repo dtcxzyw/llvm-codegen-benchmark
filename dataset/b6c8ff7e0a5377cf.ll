@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; cpython/optimized/dtoa.ll
-; gromacs/optimized/forcetable.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
@@ -13,15 +12,14 @@ define i1 @func0000000000000008(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
   %4 = fcmp ogt double %3, 0x3FE0000035AFE535
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; cpython/optimized/dtoa.ll
 ; graphviz/optimized/emit.c.ll
-; gromacs/optimized/forcetable.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
@@ -41,7 +39,7 @@ entry:
   ret i1 %5
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; cpython/optimized/dtoa.ll
 ; hermes/optimized/dtoa.c.ll
@@ -63,7 +61,6 @@ entry:
 ; quantlib/optimized/concentrating1dmesher.ll
 ; quantlib/optimized/convolvedstudentt.ll
 ; quantlib/optimized/creditdefaultswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gbsmrndcalculator.ll
 ; quantlib/optimized/hestonblackvolsurface.ll
 ; quantlib/optimized/impliedvolatility.ll
@@ -96,16 +93,17 @@ define i1 @func0000000000000014(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
   %4 = fcmp ole double %3, 0.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/forcetable.cpp.ll
 ; postgres/optimized/geo_ops.ll
 ; postgres/optimized/gistproc.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, double %1, double %2) #0 {
 entry:
@@ -122,7 +120,7 @@ define i1 @func0000000000000018(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
   %4 = fcmp oge double %3, 1.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -133,7 +131,7 @@ define i1 @func0000000000000006(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
   %4 = fcmp ult double %3, 0.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

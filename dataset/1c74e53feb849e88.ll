@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 83 occurrences:
 ; clamav/optimized/events.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/json_value.cpp.ll
@@ -23,7 +23,6 @@
 ; hyperscan/optimized/gough.c.ll
 ; hyperscan/optimized/runtime.c.ll
 ; linux/optimized/auditsc.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/libata-pata-timings.ll
@@ -92,18 +91,105 @@ entry:
   ret i1 %3
 }
 
-; 63 occurrences:
+; 9 occurrences:
 ; cmake/optimized/json_value.cpp.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
-; freetype/optimized/pcf.c.ll
-; hyperscan/optimized/mcclellan.c.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nfnetlink.ll
-; linux/optimized/tcp_metrics.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
+; ruby/optimized/time.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 63
+  %3 = icmp samesign ult i16 %2, %0
+  ret i1 %3
+}
+
+; 2 occurrences:
+; minetest/optimized/nodetimer.cpp.ll
+; openusd/optimized/faceVertex.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i16 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 15
+  %3 = icmp slt i16 %2, %0
+  ret i1 %3
+}
+
+; 11 occurrences:
+; abseil-cpp/optimized/elf_mem_image.cc.ll
+; bullet3/optimized/b3ConvexHullContact.ll
+; bullet3/optimized/b3OptimizedBvh.ll
+; bullet3/optimized/b3QuantizedBvh.ll
+; bullet3/optimized/btOptimizedBvh.ll
+; bullet3/optimized/btQuantizedBvh.ll
+; freetype/optimized/truetype.c.ll
+; linux/optimized/libata-pata-timings.ll
+; qemu/optimized/hw_net_rtl8139.c.ll
+; recastnavigation/optimized/DetourNavMesh.cpp.ll
+; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 60
+  %3 = icmp ugt i16 %2, %0
+  ret i1 %3
+}
+
+; 2 occurrences:
+; bullet3/optimized/b3QuantizedBvh.ll
+; bullet3/optimized/btQuantizedBvh.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(i16 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, -2
+  %3 = icmp ule i16 %2, %0
+  ret i1 %3
+}
+
+; 11 occurrences:
+; freetype/optimized/pcf.c.ll
+; icu/optimized/uitercollationiterator.ll
+; icu/optimized/utf16collationiterator.ll
+; icu/optimized/utf8collationiterator.ll
+; linux/optimized/mlme.ll
+; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; postgres/optimized/spgvacuum.ll
+; postgres/optimized/tsrank.ll
+; raylib/optimized/rtextures.c.ll
+; stockfish/optimized/position.ll
+; stockfish/optimized/uci.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 63
+  %3 = icmp samesign ugt i16 %2, %0
+  ret i1 %3
+}
+
+; 6 occurrences:
+; linux/optimized/virtio_ring.ll
+; linux/optimized/vt.ll
+; llvm/optimized/InstCombineSelect.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; openusd/optimized/patchTableFactory.cpp.ll
+; wireshark/optimized/packet-dcp-etsi.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i16 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 63
+  %3 = icmp ne i16 %2, %0
+  ret i1 %3
+}
+
+; 54 occurrences:
+; freetype/optimized/pcf.c.ll
+; hyperscan/optimized/mcclellan.c.ll
+; linux/optimized/tcp_metrics.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -155,89 +241,30 @@ entry:
 ; pybind11/optimized/test_unnamed_namespace_b.cpp.ll
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
-; ruby/optimized/time.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 63
+  %2 = and i16 %1, 3
   %3 = icmp ult i16 %2, %0
   ret i1 %3
 }
 
-; 2 occurrences:
-; minetest/optimized/nodetimer.cpp.ll
-; openusd/optimized/faceVertex.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i16 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 15
-  %3 = icmp slt i16 %2, %0
-  ret i1 %3
-}
-
-; 22 occurrences:
-; abseil-cpp/optimized/elf_mem_image.cc.ll
-; bullet3/optimized/b3ConvexHullContact.ll
-; bullet3/optimized/b3OptimizedBvh.ll
-; bullet3/optimized/b3QuantizedBvh.ll
-; bullet3/optimized/btOptimizedBvh.ll
-; bullet3/optimized/btQuantizedBvh.ll
-; freetype/optimized/pcf.c.ll
-; freetype/optimized/truetype.c.ll
-; icu/optimized/uitercollationiterator.ll
-; icu/optimized/utf16collationiterator.ll
-; icu/optimized/utf8collationiterator.ll
-; linux/optimized/libata-pata-timings.ll
-; linux/optimized/mlme.ll
-; llvm/optimized/ScheduleDAGRRList.cpp.ll
-; postgres/optimized/spgvacuum.ll
-; postgres/optimized/tsrank.ll
-; qemu/optimized/hw_net_rtl8139.c.ll
-; raylib/optimized/rtextures.c.ll
-; recastnavigation/optimized/DetourNavMesh.cpp.ll
-; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
-; stockfish/optimized/position.ll
-; stockfish/optimized/uci.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 60
-  %3 = icmp ugt i16 %2, %0
-  ret i1 %3
-}
-
-; 2 occurrences:
-; bullet3/optimized/b3QuantizedBvh.ll
-; bullet3/optimized/btQuantizedBvh.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000005(i16 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, -2
-  %3 = icmp ule i16 %2, %0
-  ret i1 %3
-}
-
-; 5 occurrences:
-; linux/optimized/virtio_ring.ll
-; linux/optimized/vt.ll
-; llvm/optimized/InstCombineSelect.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; wireshark/optimized/packet-dcp-etsi.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i16 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 63
-  %3 = icmp ne i16 %2, %0
-  ret i1 %3
-}
-
-; 2 occurrences:
-; hyperscan/optimized/mcsheng.c.ll
+; 1 occurrences:
 ; opencv/optimized/binary_descriptor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i16 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 255
+  %3 = icmp samesign uge i16 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; hyperscan/optimized/mcsheng.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i16 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 255
+  %2 = and i16 %1, 16383
   %3 = icmp uge i16 %2, %0
   ret i1 %3
 }

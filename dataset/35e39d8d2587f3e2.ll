@@ -1,5 +1,5 @@
 
-; 161 occurrences:
+; 158 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abseil-cpp/optimized/escaping.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -34,7 +34,6 @@
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/ethtool.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_dvo.ll
@@ -54,7 +53,6 @@
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
@@ -114,7 +112,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -170,7 +167,7 @@ entry:
   ret i32 %3
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -182,7 +179,6 @@ entry:
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterBankInfo.cpp.ll
 ; llvm/optimized/X86RegisterBankInfo.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll

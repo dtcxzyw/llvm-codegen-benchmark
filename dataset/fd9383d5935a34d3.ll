@@ -37,8 +37,9 @@ entry:
   ret i32 %2
 }
 
-; 109 occurrences:
+; 110 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
+; boost/optimized/gregorian.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; icu/optimized/bocsu.ll
 ; icu/optimized/calendar.ll

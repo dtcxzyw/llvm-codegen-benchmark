@@ -11,7 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	add	a1, a1, a2
 	and	a0, a0, a1
 	sext.w	a0, a0
@@ -23,20 +23,13 @@ func0000000000000006:                   # @func0000000000000006
 	sext.w	a0, a0
 	slti	a0, a0, 64
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	add	a1, a1, a2
 	and	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
-	add	a1, a1, a2
-	and	a0, a0, a1
-	sext.w	a0, a0
-	sltiu	a0, a0, 16
-	xori	a0, a0, 1
-	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	add	a1, a1, a2
 	and	a0, a0, a1
 	sext.w	a0, a0

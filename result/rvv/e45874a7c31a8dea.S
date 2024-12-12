@@ -11,5 +11,5 @@ func0000000000000001:                   # @func0000000000000001
 	vand.vx	v10, v10, a0
 	vmseq.vx	v9, v10, a0
 	vmand.mm	v8, v8, v9
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	ret

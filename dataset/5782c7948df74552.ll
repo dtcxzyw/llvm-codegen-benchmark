@@ -46,7 +46,7 @@ entry:
   ret i64 %6
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
@@ -64,7 +64,6 @@ entry:
 ; oiio/optimized/tiffoutput.cpp.ll
 ; opencv/optimized/prior_box_layer.cpp.ll
 ; opencv/optimized/tf_importer.cpp.ll
-; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; raylib/optimized/rtextures.c.ll

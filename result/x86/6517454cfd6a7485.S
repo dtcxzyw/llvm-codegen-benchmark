@@ -12,12 +12,12 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax
-	testb	$1, %sil
-	cmovel	%eax, %edi
 	cmpw	$-2, %dx
+	cmovel	%eax, %edi
+	testb	$1, %sil
 	cmovnel	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$65532, %edx                    # imm = 0xFFFC
 	xorl	%eax, %eax
 	testb	$1, %sil

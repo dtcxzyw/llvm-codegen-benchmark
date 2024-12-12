@@ -1,5 +1,5 @@
 
-; 100 occurrences:
+; 99 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -13,6 +13,7 @@
 ; icu/optimized/tzfmt.ll
 ; lief/optimized/File.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_i18n.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; nix/optimized/attrs.ll
@@ -33,8 +34,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

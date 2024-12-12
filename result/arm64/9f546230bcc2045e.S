@@ -1,10 +1,16 @@
-func00000000000000cc:                   // @func00000000000000cc
+func000000000000004c:                   // @func000000000000004c
 // %bb.0:                               // %entry
-	cmle	v1.4s, v1.4s, #0
-	cmle	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	cmle	v1.8b, v2.8b, #0
-	xtn	v0.8b, v0.8h
-	orr	v0.8b, v0.8b, v1.8b
+	sxtb	w8, w1
+	cmp	w8, #0
+	ccmp	w0, #0, #4, ge
+	cset	w0, eq
+	ret
+                                        // -- End function
+func000000000000018c:                   // @func000000000000018c
+// %bb.0:                               // %entry
+	sxtb	w8, w1
+	cmp	w0, #1
+	ccmp	w8, #1, #8, ge
+	cset	w0, lt
 	ret
                                         // -- End function

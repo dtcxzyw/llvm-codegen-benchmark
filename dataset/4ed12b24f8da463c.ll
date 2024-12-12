@@ -1,5 +1,7 @@
 
-; 38 occurrences:
+; 40 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/dlaed6.cpp.ll
@@ -42,8 +44,8 @@
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fmul double %0, %1
-  %3 = fmul double %2, %0
-  %4 = fmul double %3, %0
+  %3 = fmul double %0, %2
+  %4 = fmul double %0, %3
   ret double %4
 }
 

@@ -1,25 +1,4 @@
 
-; 10 occurrences:
-; arrow/optimized/basic_decimal.cc.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/bitmap.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-set.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 6
-  %4 = sub nuw nsw i32 %1, %3
-  %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
-  ret i1 %6
-}
-
 ; 7 occurrences:
 ; flac/optimized/metadata_iterators.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -34,7 +13,7 @@ entry:
   %3 = lshr i32 %2, 6
   %4 = sub i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -51,12 +30,12 @@ entry:
 ; postgres/optimized/blkreftable_srv.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = sub nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -65,24 +44,37 @@ entry:
 ; z3/optimized/bit_util.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = sub nuw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/mpi-bit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = sub i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp samesign ult i64 %0, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; arrow/optimized/basic_decimal.cc.ll
+; linux/optimized/bitmap.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e1(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 6
+  %4 = sub nuw nsw i32 %1, %3
+  %5 = zext nneg i32 %4 to i64
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

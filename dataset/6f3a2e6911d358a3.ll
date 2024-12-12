@@ -12,7 +12,7 @@
 ; z3/optimized/theory_seq.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp ne i8 %3, 0

@@ -54,7 +54,7 @@ func000000000000000c:                   # @func000000000000000c
 	vmovq	%rax, %xmm1
 	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpcmpneqq	%ymm0, %ymm1, %k0
+	vpcmpneqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

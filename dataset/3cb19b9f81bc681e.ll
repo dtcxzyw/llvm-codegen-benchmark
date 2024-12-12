@@ -1,9 +1,10 @@
 
+%class.aiVector3t.2823159 = type { double, double, double }
+
 ; 112 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/fraigTable.c.ll
-; abc/optimized/fxuMatrix.c.ll
 ; abc/optimized/fxuSelect.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
@@ -33,6 +34,7 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/TpiStream.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -113,15 +115,15 @@
 ; z3/optimized/theory_special_relations.cpp.ll
 ; z3/optimized/value_generator.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 127 occurrences:
+; 128 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/giaDup.c.ll
@@ -162,6 +164,7 @@ entry:
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; lua/optimized/ltable.ll
 ; luajit/optimized/buildvm_fold.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -250,18 +253,32 @@ entry:
 ; z3/optimized/spacer_prop_solver.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 9 occurrences:
+; 5 occurrences:
+; assimp/optimized/IFCGeometry.cpp.ll
+; linux/optimized/ialloc.ll
+; linux/optimized/vt.ll
+; postgres/optimized/print.ll
+; wireshark/optimized/packet-snmp.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = urem i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 8 occurrences:
 ; cpython/optimized/Hacl_Hash_SHA3.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
-; linux/optimized/head64.ll
 ; linux/optimized/nf_conntrack_helper.ll
 ; linux/optimized/quota_tree.ll
 ; linux/optimized/sky2.ll
@@ -273,20 +290,6 @@ define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 4 occurrences:
-; linux/optimized/ialloc.ll
-; linux/optimized/vt.ll
-; postgres/optimized/print.ll
-; wireshark/optimized/packet-snmp.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = urem i32 %1, %2
-  %4 = zext i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }

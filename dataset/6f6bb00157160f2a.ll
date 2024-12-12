@@ -1,10 +1,9 @@
 
-; 104 occurrences:
+; 103 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -108,24 +107,26 @@
 define i64 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; php/optimized/hash_xxhash.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
@@ -148,7 +149,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
@@ -160,8 +161,62 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or i32 %4, %0
+  %6 = zext i32 %5 to i64
+  ret i64 %6
+}
+
+; 7 occurrences:
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = or disjoint i32 %1, %3
+  %5 = or disjoint i32 %4, %0
+  %6 = zext nneg i32 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/HWAddressSanitizer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = or disjoint i32 %1, %3
+  %5 = or i32 %4, %0
+  %6 = zext nneg i32 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-lapdm.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = or disjoint i32 %1, %3
+  %5 = or i32 %4, %0
+  %6 = zext i32 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; linux/optimized/huf_decompress.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = or i32 %1, %3
+  %5 = or i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }

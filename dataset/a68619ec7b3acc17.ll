@@ -1,12 +1,14 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; abc/optimized/ivyFraig.c.ll
+; boost/optimized/src.ll
 ; c3c/optimized/parse_expr.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; icu/optimized/ustrtrns.ll
 ; icu/optimized/utrie_swap.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; opencv/optimized/FilterTIG.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll

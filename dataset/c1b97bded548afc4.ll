@@ -11,12 +11,14 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/wlcReadVer.c.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; hdf5/optimized/H5Tbit.c.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; ninja/optimized/depfile_parser.cc.ll
 ; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll

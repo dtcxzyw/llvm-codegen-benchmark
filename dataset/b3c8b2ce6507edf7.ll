@@ -1,9 +1,34 @@
 
-; 77 occurrences:
+; 6 occurrences:
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
+; openjdk/optimized/debugInit.ll
+; z3/optimized/region.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = add i64 %0, %4
+  %6 = and i64 %5, 1
+  ret i64 %6
+}
+
+; 1 occurrences:
+; minetest/optimized/imagefilters.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = add i64 %0, %4
+  %6 = and i64 %5, 4294967295
+  ret i64 %6
+}
+
+; 72 occurrences:
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -75,26 +100,13 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; openjdk/optimized/debugInit.ll
 ; z3/optimized/region.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = add i64 %4, %0
-  %6 = and i64 %5, 1
-  ret i64 %6
-}
-
-; 1 occurrences:
-; minetest/optimized/imagefilters.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = and i64 %5, 4294967295
   ret i64 %6
 }

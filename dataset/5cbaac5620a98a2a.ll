@@ -8,7 +8,7 @@
 ; openusd/optimized/fast-dtoa.cc.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000085(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2047
   %3 = icmp eq i64 %0, 0

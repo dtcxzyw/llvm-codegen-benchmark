@@ -7,7 +7,7 @@
 define i64 @func0000000000000018(i1 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = select i1 %3, i64 3, i64 2
   ret i64 %4
 }

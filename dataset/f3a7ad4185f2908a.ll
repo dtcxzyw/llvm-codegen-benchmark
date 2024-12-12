@@ -1,18 +1,16 @@
 
-; 11 occurrences:
+; 9 occurrences:
 ; git/optimized/fast-import.ll
 ; libpng/optimized/pngget.c.ll
 ; linux/optimized/processor_idle.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; openjdk/optimized/cdsProtectionDomain.ll
 ; openjdk/optimized/pngget.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
 ; ruby/optimized/ripper.ll
 ; wireshark/optimized/file.c.ll
 ; wireshark/optimized/packet-snort.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i16 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 256
   %3 = icmp ne i16 %2, 0
@@ -47,7 +45,7 @@ entry:
 ; slurm/optimized/job_mgr.ll
 ; wireshark/optimized/packet-lbmpdm.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2
   %3 = icmp eq i16 %2, 0
@@ -56,9 +54,10 @@ entry:
   ret i1 %5
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcShow.c.ll
+; libevent/optimized/event.c.ll
 ; linux/optimized/device_pm.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -94,24 +93,12 @@ entry:
 ; wireshark/optimized/reassemble.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i16 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2048
   %3 = icmp eq i16 %2, 0
   %4 = icmp ne ptr %0, null
   %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/InstCombineSelect.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 48
-  %3 = icmp eq i16 %2, 0
-  %4 = icmp ne ptr %0, null
-  %5 = and i1 %3, %4
   ret i1 %5
 }
 
@@ -121,7 +108,7 @@ entry:
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; wireshark/optimized/packet-http.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 241
   %3 = icmp eq i16 %2, 1

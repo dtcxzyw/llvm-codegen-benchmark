@@ -12,7 +12,7 @@
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000044(i32 %0) #0 {
+define i64 @func0000000000000084(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 15
   %2 = icmp eq i32 %0, 0

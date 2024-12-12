@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 49 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; folly/optimized/SocketAddress.cpp.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/i915_gem_context.ll
 ; linux/optimized/intel-nhlt.ll
-; linux/optimized/match.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -22,11 +21,11 @@
 ; llvm/optimized/MachineBasicBlock.cpp.ll
 ; llvm/optimized/ParseExpr.cpp.ll
 ; llvm/optimized/ParseStmtAsm.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
@@ -58,8 +57,7 @@ entry:
   ret i1 %4
 }
 
-; 24 occurrences:
-; arrow/optimized/int_util.cc.ll
+; 23 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -114,7 +112,7 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; cpython/optimized/pythonrun.ll
 ; linux/optimized/pci.ll
@@ -131,6 +129,8 @@ entry:
 ; postgres/optimized/nbtsplitloc.ll
 ; postgres/optimized/nodeTidscan.ll
 ; stb/optimized/stb_dxt.c.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i16 %1, i16 %2) #0 {
@@ -150,8 +150,7 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
-; arrow/optimized/int_util.cc.ll
+; 12 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; hyperscan/optimized/gough.c.ll
@@ -172,7 +171,7 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/uri.cc.ll
@@ -185,9 +184,8 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; linux/optimized/avtab.ll
-; linux/optimized/mlme.ll
 ; linux/optimized/xhci-hub.ll
-; opencv/optimized/binary_descriptor.cpp.ll
+; lvgl/optimized/lv_obj.ll
 ; openjdk/optimized/cmsopt.ll
 ; openjdk/optimized/deoptimization.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
@@ -200,6 +198,16 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_ime_pinyin.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i16 %1, %2
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; icu/optimized/normalizer2.ll
 ; openmpi/optimized/pml_ob1_recvfrag.ll
@@ -208,6 +216,17 @@ entry:
 define i1 @func0000000000000005(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ule i16 %1, %2
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; linux/optimized/mlme.ll
+; opencv/optimized/binary_descriptor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = icmp samesign ult i16 %1, %2
   %4 = select i1 %0, i1 true, i1 %3
   ret i1 %4
 }

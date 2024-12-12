@@ -5,3 +5,10 @@ func0000000000000010:                   # @func0000000000000010
 	cmovbq	%rdi, %rax
 	shrq	$9, %rax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	movq	%rdi, %rax
+	shrq	$16, %rax
+	cmpq	$65536, %rdi                    # imm = 0x10000
+	cmovbq	%rdi, %rax
+	shrq	$8, %rax
+	retq

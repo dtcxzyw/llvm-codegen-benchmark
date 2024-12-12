@@ -1,6 +1,5 @@
 
-; 27 occurrences:
-; linux/optimized/x509_public_key.ll
+; 24 occurrences:
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -9,12 +8,10 @@
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; openjdk/optimized/g1CardSetMemory.ll
-; postgres/optimized/shm_toc.ll
 ; qemu/optimized/tcg.c.ll
 ; qemu/optimized/virtio.c.ll
 ; raylib/optimized/raudio.c.ll
 ; wasmtime-rs/optimized/1f0cdl9sv7ergjr2.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll

@@ -1,4 +1,4 @@
-func0000000000000244:                   # @func0000000000000244
+func0000000000000884:                   # @func0000000000000884
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v12, v8, v10
 	lui	a0, 244
@@ -7,7 +7,7 @@ func0000000000000244:                   # @func0000000000000244
 	vmsltu.vv	v12, v8, v10
 	vmor.mm	v0, v12, v14
 	ret
-func0000000000000288:                   # @func0000000000000288
+func0000000000000908:                   # @func0000000000000908
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v12, v10, v8
 	li	a0, 600
@@ -15,7 +15,7 @@ func0000000000000288:                   # @func0000000000000288
 	vmsltu.vv	v12, v10, v8
 	vmor.mm	v0, v12, v14
 	ret
-func0000000000000248:                   # @func0000000000000248
+func0000000000000888:                   # @func0000000000000888
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v12, v10, v8
 	li	a0, 20
@@ -23,14 +23,14 @@ func0000000000000248:                   # @func0000000000000248
 	vmsltu.vv	v12, v10, v8
 	vmor.mm	v0, v12, v14
 	ret
-func0000000000000249:                   # @func0000000000000249
+func0000000000000889:                   # @func0000000000000889
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v12, v10, v8
 	vmsleu.vi	v14, v12, 7
 	vmsleu.vv	v12, v10, v8
 	vmor.mm	v0, v12, v14
 	ret
-func0000000000000181:                   # @func0000000000000181
+func0000000000000501:                   # @func0000000000000501
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v12, v8, v10
 	li	a0, 2046
@@ -38,20 +38,12 @@ func0000000000000181:                   # @func0000000000000181
 	vmseq.vv	v12, v8, v10
 	vmor.mm	v0, v12, v14
 	ret
-func0000000000000285:                   # @func0000000000000285
+func0000000000000905:                   # @func0000000000000905
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v12, v8, v10
 	lui	a0, 24
 	addiw	a0, a0, 1696
 	vmsgtu.vx	v14, v12, a0
 	vmsleu.vv	v12, v8, v10
-	vmor.mm	v0, v12, v14
-	ret
-func0000000000000149:                   # @func0000000000000149
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v12, v10, v8
-	li	a0, 22
-	vmsltu.vx	v14, v12, a0
-	vmsleu.vv	v12, v10, v8
 	vmor.mm	v0, v12, v14
 	ret

@@ -28,12 +28,12 @@
 ; spike/optimized/spike.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = icmp eq i64 %5, %1
+  %6 = icmp eq i64 %1, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }
@@ -65,19 +65,21 @@ entry:
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; yosys/optimized/equiv_induct.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 4
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = icmp eq i64 %5, %1
+  %6 = icmp eq i64 %1, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }
 
-; 145 occurrences:
+; 147 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -115,6 +117,7 @@ entry:
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; llvm/optimized/MacroExpansionContext.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
 ; meshlab/optimized/action_searcher.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -124,7 +127,6 @@ entry:
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -222,12 +224,12 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yosys/optimized/opt_clean.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000161(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = add nsw i64 %3, -2
   %5 = lshr exact i64 %4, 1
-  %6 = icmp eq i64 %5, %1
+  %6 = icmp eq i64 %1, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }

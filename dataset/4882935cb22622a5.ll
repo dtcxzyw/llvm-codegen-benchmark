@@ -2,9 +2,9 @@
 ; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000010a(i32 %0) #0 {
+define i32 @func000000000000060a(i32 %0) #0 {
 entry:
-  %1 = icmp ugt i32 %0, 86399
+  %1 = icmp samesign ugt i32 %0, 86399
   %2 = zext i1 %1 to i32
   %3 = icmp sgt i32 %0, -1
   %4 = select i1 %3, i32 %2, i32 -1
@@ -15,7 +15,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-x509_cmp.ll
 ; openssl/optimized/libcrypto-shlib-x509_cmp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000014a(i32 %0) #0 {
+define i32 @func000000000000028a(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, 0
   %2 = zext i1 %1 to i32
@@ -24,8 +24,10 @@ entry:
   ret i32 %4
 }
 
-; 30 occurrences:
+; 32 occurrences:
 ; abc/optimized/mioRead.c.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/arith_rewriter.cpp.ll
 ; cvc5/optimized/congruence_manager.cpp.ll
@@ -56,7 +58,7 @@ entry:
 ; slurm/optimized/slurm_protocol_defs.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000018a(i32 %0) #0 {
+define i32 @func000000000000030a(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 0
   %2 = zext i1 %1 to i32

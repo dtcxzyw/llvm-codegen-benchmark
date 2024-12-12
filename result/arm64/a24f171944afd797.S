@@ -17,7 +17,7 @@ func0000000000000006:                   // @func0000000000000006
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	mvn	x8, x2
-	add	x8, x8, x1
+	add	x8, x1, x8
 	cmp	x8, w0, sxtw
 	cset	w0, hi
 	ret

@@ -1,7 +1,12 @@
 
-; 154 occurrences:
+; 159 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -41,6 +46,7 @@
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; llvm/optimized/MacroExpansionContext.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
 ; meshlab/optimized/action_searcher.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -50,7 +56,6 @@
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -155,16 +160,16 @@
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yosys/optimized/opt_clean.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -2
   %4 = lshr exact i64 %3, 1
-  %5 = icmp eq i64 %4, %1
+  %5 = icmp eq i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
 
-; 154 occurrences:
+; 159 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/interfaces.cc.ll
@@ -172,6 +177,11 @@ entry:
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
@@ -320,11 +330,11 @@ entry:
 ; yosys/optimized/xaiger.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = icmp eq i64 %4, %1
+  %5 = icmp eq i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -337,7 +347,7 @@ define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -4
   %4 = lshr i64 %3, 12
-  %5 = icmp eq i64 %4, %1
+  %5 = icmp eq i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }

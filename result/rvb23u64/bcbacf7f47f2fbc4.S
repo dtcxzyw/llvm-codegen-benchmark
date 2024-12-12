@@ -23,3 +23,12 @@ func0000000000000010:                   # @func0000000000000010
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
 	ret
+func0000000000000030:                   # @func0000000000000030
+	sext.w	a0, a0
+	sltiu	a0, a0, 4
+	xori	a0, a0, 1
+	ret
+func0000000000000028:                   # @func0000000000000028
+	sext.w	a0, a0
+	sltiu	a0, a0, 2
+	ret

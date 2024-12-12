@@ -17,26 +17,36 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; libwebp/optimized/webp_enc.c.ll
-; openblas/optimized/dbdsqr.c.ll
-; openblas/optimized/dstein.c.ll
 ; openjdk/optimized/constantPool.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003e(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
   %6 = getelementptr nusw i16, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 39 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 2
+  %3 = or disjoint i32 %2, 3
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %6 = getelementptr nusw float, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 36 occurrences:
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/dlarrbx.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
@@ -53,11 +63,9 @@ entry:
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/sstegr.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgelsx.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dgerfs.c.ll
 ; openblas/optimized/dgtrfs.c.ll
 ; openblas/optimized/dlaed8.c.ll
@@ -78,11 +86,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 2
-  %3 = or disjoint i32 %2, 3
+  %2 = shl i32 %1, 1
+  %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr nusw float, ptr %5, i64 %4
+  %5 = getelementptr nusw i8, ptr %0, i64 -8
+  %6 = getelementptr nusw double, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -98,6 +106,19 @@ entry:
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 -4
+  %6 = getelementptr float, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/cornersubpix.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 1
+  %3 = or disjoint i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = getelementptr float, ptr %5, i64 %4
   ret ptr %6
 }
@@ -132,15 +153,27 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; openblas/optimized/dlaror.c.ll
 ; openblas/optimized/dlasda.c.ll
 ; openblas/optimized/dsytrd_sb2st.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000005a(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
+  %3 = or disjoint i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i8, ptr %0, i64 -8
+  %6 = getelementptr nusw double, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openblas/optimized/dbdsqr.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 -8

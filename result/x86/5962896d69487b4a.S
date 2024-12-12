@@ -11,14 +11,14 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$1431655766, %eax               # imm = 0x55555556
 	setb	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addl	%esi, %edi
-	imull	$652835029, %edi, %eax          # imm = 0x26E978D5
-	rorxl	$3, %eax, %eax
-	cmpl	$4294968, %eax                  # imm = 0x418938
+	imull	$-1030792151, %edi, %eax        # imm = 0xC28F5C29
+	rorxl	$2, %eax, %eax
+	cmpl	$42949673, %eax                 # imm = 0x28F5C29
 	setb	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	addl	%esi, %edi
 	imulq	$613566757, %rdi, %rax          # imm = 0x24924925
 	shrq	$32, %rax

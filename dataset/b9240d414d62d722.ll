@@ -1,7 +1,19 @@
 
-; 99 occurrences:
+; 113 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; ceres/optimized/polynomial.cc.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -99,6 +111,8 @@
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(double %0, double %1) #0 {
 entry:
@@ -107,9 +121,13 @@ entry:
   ret i1 %3
 }
 
-; 59 occurrences:
+; 61 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/polynomial.cc.ll
 ; g2o/optimized/edge_se3_prior.cpp.ll
@@ -135,7 +153,6 @@ entry:
 ; openblas/optimized/dlaqtr.c.ll
 ; openblas/optimized/dlar1v.c.ll
 ; openblas/optimized/dlasq2.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; opencv/optimized/distance.cpp.ll
 ; opencv/optimized/dls.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
@@ -159,7 +176,6 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/geo_ops.ll
 ; proj/optimized/ell_set.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/molodensky.cpp.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/blackformula.ll
@@ -175,7 +191,7 @@ entry:
   ret i1 %3
 }
 
-; 115 occurrences:
+; 126 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcSaucy.c.ll
@@ -186,6 +202,17 @@ entry:
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cmake/optimized/cmcmd.cxx.ll
 ; cvc5/optimized/Solver.cc.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -343,8 +370,10 @@ entry:
   ret i1 %3
 }
 
-; 26 occurrences:
+; 28 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/cs_sqr.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; graphviz/optimized/pack.c.ll
@@ -378,11 +407,13 @@ entry:
   ret i1 %3
 }
 
-; 42 occurrences:
+; 44 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/giaSweeper.c.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; ceres/optimized/polynomial.cc.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; hermes/optimized/Timer.cpp.ll
@@ -429,7 +460,8 @@ entry:
   ret i1 %3
 }
 
-; 40 occurrences:
+; 41 occurrences:
+; boost/optimized/buffer_piece_border.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; hermes/optimized/SynthTraceParser.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
@@ -600,7 +632,14 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
+; 12 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; coreutils-rs/optimized/bay6adxmosnf2qi.ll
 ; libquic/optimized/time.cc.ll
 ; opencv/optimized/lapack.cpp.ll

@@ -3,21 +3,21 @@ func000000000000000c:                   # @func000000000000000c
 	vfsub.vv	v8, v8, v12
 	fmv.w.x	fa5, zero
 	vmfge.vf	v12, v8, fa5
-	vmand.mm	v0, v12, v0
+	vmand.mm	v0, v0, v12
 	ret
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
 	fli.s	fa5, 1.0
 	vmfle.vf	v12, v8, fa5
-	vmand.mm	v0, v12, v0
+	vmand.mm	v0, v0, v12
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
 	fli.s	fa5, 1.0
 	vmflt.vf	v12, v8, fa5
-	vmand.mm	v0, v12, v0
+	vmand.mm	v0, v0, v12
 	ret
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -28,7 +28,7 @@ func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
 	vmfne.vv	v12, v8, v8
-	vmand.mm	v0, v12, v0
+	vmand.mm	v0, v0, v12
 	ret
 .LCPI5_0:
 	.word	0x358637bd                      # float 9.99999997E-7

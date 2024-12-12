@@ -52,12 +52,38 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 4 occurrences:
+; abc/optimized/extraUtilMacc.c.ll
+; linux/optimized/cacheinfo.ll
 ; linux/optimized/ehci-hcd.ll
+; php/optimized/zend_alloc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or i32 %1, 1073741824
+  %2 = or i32 %1, -1073741824
+  %3 = shl i32 %0, 16
+  %4 = or i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or i32 %1, 83886080
+  %3 = shl nuw nsw i32 %0, 21
+  %4 = or i32 %3, %2
+  ret i32 %4
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %1, 53
   %3 = shl i32 %0, 16
   %4 = or i32 %3, %2
   ret i32 %4

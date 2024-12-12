@@ -5,7 +5,7 @@
 ; ncnn/optimized/innerproduct_x86_avx512.cpp.ll
 ; ncnn/optimized/innerproduct_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = trunc i8 %1 to i1
@@ -21,7 +21,7 @@ entry:
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000186(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000306(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 33
   %4 = trunc i8 %1 to i1
@@ -36,7 +36,7 @@ entry:
 ; icu/optimized/numparse_decimal.ll
 ; ncnn/optimized/deconvolution_x86.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = trunc i8 %1 to i1
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; logos-rs/optimized/3iimw0083jctljf1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000201(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 128
   %4 = trunc i8 %1 to i1

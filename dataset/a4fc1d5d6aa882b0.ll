@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; cmake/optimized/archive_read_support_format_rar5.c.ll
+; 2 occurrences:
 ; openjdk/optimized/mlib_c_ImageLookUp_f.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; Function Attrs: nounwind

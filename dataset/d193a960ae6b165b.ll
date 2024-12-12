@@ -5,7 +5,7 @@
 ; openssl/optimized/libcrypto-shlib-keymgmt_meth.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -3
   %4 = icmp eq i32 %3, 0

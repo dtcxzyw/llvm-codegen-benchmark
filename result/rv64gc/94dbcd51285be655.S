@@ -11,6 +11,14 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	addiw	a0, a0, 2
 	ret
+func000000000000005d:                   # @func000000000000005d
+	slli	a1, a1, 22
+	slli	a0, a0, 10
+	add	a0, a0, a1
+	lui	a1, 1034754
+	addi	a1, a1, 1024
+	addw	a0, a0, a1
+	ret
 func000000000000000d:                   # @func000000000000000d
 	slli	a1, a1, 14
 	slli	a0, a0, 10

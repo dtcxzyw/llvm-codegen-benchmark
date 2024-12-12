@@ -1,7 +1,11 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000030:                   # @func0000000000000030
 	addl	%edx, %esi
 	leal	1(%rdi,%rsi), %eax
 	andl	$1, %eax
+	retq
+func0000000000000020:                   # @func0000000000000020
+	leal	8(%rsi), %eax
+	andl	$7, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	8(%rsi), %eax

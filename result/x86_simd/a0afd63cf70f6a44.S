@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	4294967294                      # 0xfffffffe
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rax
@@ -66,7 +66,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI2_0:
 	.quad	4294967296                      # 0x100000000
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rax
@@ -129,8 +129,8 @@ func0000000000000006:                   # @func0000000000000006
 	vzeroupper
 	retq
 .LCPI4_0:
-	.quad	1073741824                      # 0x40000000
-func0000000000000024:                   # @func0000000000000024
+	.quad	10                              # 0xa
+func0000000000000004:                   # @func0000000000000004
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rax
@@ -158,6 +158,39 @@ func0000000000000024:                   # @func0000000000000024
 	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	vpcmpltuq	.LCPI4_0(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
+	.quad	1073741824                      # 0x40000000
+func0000000000000054:                   # @func0000000000000054
+	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	vextracti128	$1, %ymm0, %xmm2
+	vpextrq	$1, %xmm2, %rax
+	vextracti128	$1, %ymm1, %xmm3
+	vpextrq	$1, %xmm3, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm4
+	vmovq	%xmm2, %rax
+	vmovq	%xmm3, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm2
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpextrq	$1, %xmm0, %rax
+	vpextrq	$1, %xmm1, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm3
+	vmovq	%xmm0, %rax
+	vmovq	%xmm1, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm0
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	vpcmpltuq	.LCPI5_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -193,7 +226,106 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000002a:                   # @func000000000000002a
+.LCPI7_0:
+	.quad	4095                            # 0xfff
+func0000000000000058:                   # @func0000000000000058
+	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	vextracti128	$1, %ymm0, %xmm2
+	vpextrq	$1, %xmm2, %rax
+	vextracti128	$1, %ymm1, %xmm3
+	vpextrq	$1, %xmm3, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm4
+	vmovq	%xmm2, %rax
+	vmovq	%xmm3, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm2
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpextrq	$1, %xmm0, %rax
+	vpextrq	$1, %xmm1, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm3
+	vmovq	%xmm0, %rax
+	vmovq	%xmm1, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm0
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	vpcmpnleuq	.LCPI7_0(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI8_0:
+	.quad	3                               # 0x3
+func0000000000000044:                   # @func0000000000000044
+	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	vextracti128	$1, %ymm0, %xmm2
+	vpextrq	$1, %xmm2, %rax
+	vextracti128	$1, %ymm1, %xmm3
+	vpextrq	$1, %xmm3, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm4
+	vmovq	%xmm2, %rax
+	vmovq	%xmm3, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm2
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpextrq	$1, %xmm0, %rax
+	vpextrq	$1, %xmm1, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm3
+	vmovq	%xmm0, %rax
+	vmovq	%xmm1, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm0
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	vpcmpltuq	.LCPI8_0(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI9_0:
+	.quad	4294967295                      # 0xffffffff
+func0000000000000018:                   # @func0000000000000018
+	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	vextracti128	$1, %ymm0, %xmm2
+	vpextrq	$1, %xmm2, %rax
+	vextracti128	$1, %ymm1, %xmm3
+	vpextrq	$1, %xmm3, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm4
+	vmovq	%xmm2, %rax
+	vmovq	%xmm3, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm2
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpextrq	$1, %xmm0, %rax
+	vpextrq	$1, %xmm1, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm3
+	vmovq	%xmm0, %rax
+	vmovq	%xmm1, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm0
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	vpcmpnleuq	.LCPI9_0(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000004a:                   # @func000000000000004a
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rax

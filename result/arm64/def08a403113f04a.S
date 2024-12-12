@@ -1,88 +1,65 @@
-func0000000000000096:                   // @func0000000000000096
+func0000000000000126:                   // @func0000000000000126
 // %bb.0:                               // %entry
-	mov	x8, #-5                         // =0xfffffffffffffffb
-	dup	v6.2d, x8
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	cmeq	v5.2d, v5.2d, #0
-	cmeq	v4.2d, v4.2d, #0
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v3.2d, v3.2d, v5.2d
-	cmgt	v1.2d, v3.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	tst	x2, #0xfffffffffffffffb
+	cinc	x8, x1, eq
+	cmp	x0, x8
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000086:                   // @func0000000000000086
+func0000000000000106:                   // @func0000000000000106
 // %bb.0:                               // %entry
-	mov	x8, #-5                         // =0xfffffffffffffffb
-	dup	v6.2d, x8
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	cmeq	v5.2d, v5.2d, #0
-	cmeq	v4.2d, v4.2d, #0
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v3.2d, v3.2d, v5.2d
-	cmgt	v1.2d, v3.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	tst	x2, #0xfffffffffffffffb
+	cinc	x8, x1, eq
+	cmp	x0, x8
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000638:                   // @func0000000000000638
+func0000000000000c68:                   // @func0000000000000c68
 // %bb.0:                               // %entry
-	mov	w8, #511                        // =0x1ff
-	dup	v6.2d, x8
-	cmtst	v5.2d, v5.2d, v6.2d
-	cmtst	v4.2d, v4.2d, v6.2d
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v3.2d, v3.2d, v5.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	tst	x2, #0x1ff
+	cinc	x8, x1, ne
+	cmp	x0, x8
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000631:                   // @func0000000000000631
+func0000000000000c61:                   // @func0000000000000c61
 // %bb.0:                               // %entry
-	mov	w8, #511                        // =0x1ff
-	dup	v6.2d, x8
-	cmtst	v5.2d, v5.2d, v6.2d
-	cmtst	v4.2d, v4.2d, v6.2d
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v3.2d, v3.2d, v5.2d
-	cmeq	v1.2d, v3.2d, v1.2d
-	cmeq	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	tst	x2, #0x1ff
+	cinc	x8, x1, ne
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000634:                   // @func0000000000000634
+func0000000000000c78:                   // @func0000000000000c78
 // %bb.0:                               // %entry
-	mov	w8, #15                         // =0xf
-	dup	v6.2d, x8
-	cmtst	v5.2d, v5.2d, v6.2d
-	cmtst	v4.2d, v4.2d, v6.2d
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v3.2d, v3.2d, v5.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	tst	x2, #0x7
+	cinc	x8, x1, ne
+	cmp	x0, x8
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000611:                   // @func0000000000000611
+func0000000000000c64:                   // @func0000000000000c64
 // %bb.0:                               // %entry
-	mov	w8, #7                          // =0x7
-	dup	v6.2d, x8
-	cmtst	v5.2d, v5.2d, v6.2d
-	cmtst	v4.2d, v4.2d, v6.2d
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v3.2d, v3.2d, v5.2d
-	cmeq	v1.2d, v3.2d, v1.2d
-	cmeq	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	tst	x2, #0xf
+	cinc	x8, x1, ne
+	cmp	x0, x8
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000c74:                   // @func0000000000000c74
+// %bb.0:                               // %entry
+	mov	w8, #8388604                    // =0x7ffffc
+	cmp	x8, x2, lsr #32
+	cinc	x8, x1, ne
+	cmp	x0, x8
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000c21:                   // @func0000000000000c21
+// %bb.0:                               // %entry
+	tst	x2, #0x7
+	cinc	x8, x1, ne
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function

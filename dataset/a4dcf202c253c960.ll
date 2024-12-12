@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 73 occurrences:
 ; clamav/optimized/kwajd.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/if2ip.c.ll
@@ -72,11 +72,12 @@
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }
@@ -88,24 +89,23 @@ entry:
 define i16 @func000000000000000e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/message.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-gsm_cbch.c.ll
 ; wireshark/optimized/packet-scsi-mmc.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
@@ -119,7 +119,7 @@ entry:
 define i16 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
@@ -133,7 +133,7 @@ entry:
 define i16 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -146,7 +146,7 @@ entry:
 define i16 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }

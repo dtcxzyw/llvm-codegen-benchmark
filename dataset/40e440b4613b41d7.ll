@@ -5,7 +5,7 @@
 ; eastl/optimized/TestSort.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/error_set.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000003a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
@@ -48,7 +48,7 @@ entry:
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000126(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr i64 %3, 2
@@ -65,7 +65,7 @@ entry:
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr i64 %3, 2

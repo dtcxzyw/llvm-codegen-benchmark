@@ -1,5 +1,7 @@
 
-; 21 occurrences:
+; 23 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; jq/optimized/jv_print.ll
@@ -30,7 +32,19 @@ entry:
   ret i1 %3
 }
 
-; 12 occurrences:
+; 24 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/camera.cpp.ll
@@ -52,7 +66,7 @@ entry:
   ret i1 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; duckdb/optimized/ub_duckdb_func_array.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
@@ -64,6 +78,7 @@ entry:
 ; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; wireshark/optimized/color_utils.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(double %0) #0 {
 entry:
@@ -123,7 +138,6 @@ entry:
 ; openjdk/optimized/cmssamp.ll
 ; openjdk/optimized/freetypeScaler.ll
 ; openjdk/optimized/shenandoahNumberSeq.ll
-; osqp/optimized/scaling.c.ll
 ; postgres/optimized/costsize.ll
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/selfuncs.ll
@@ -135,6 +149,7 @@ entry:
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; wireshark/optimized/percent_bar_delegate.cpp.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(double %0) #0 {
 entry:
@@ -181,6 +196,17 @@ entry:
   %1 = fcmp ugt double %0, 0.000000e+00
   %2 = fcmp ogt double %0, 1.200000e+01
   %3 = and i1 %1, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; quantlib/optimized/noarbsabr.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a2(double %0) #0 {
+entry:
+  %1 = fcmp ole double %0, 0x10000000000000
+  %2 = select i1 %1, double 0x10000000000000, double %0
+  %3 = fcmp olt double %2, 1.000000e+00
   ret i1 %3
 }
 

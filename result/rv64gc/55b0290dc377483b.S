@@ -6,22 +6,22 @@ func0000000000000065:                   # @func0000000000000065
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000011:                   # @func0000000000000011
 	sext.w	a3, a2
-	lui	a4, 244
-	addiw	a4, a4, 576
+	li	a4, -1
 	bne	a3, a4, .LBB1_2
-	lui	a2, 24
-	addi	a2, a2, 1696
+	li	a2, 18
 .LBB1_2:                                # %entry
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000010:                   # @func0000000000000010
 	sext.w	a3, a2
-	li	a4, 6
+	lui	a4, 244
+	addiw	a4, a4, 576
 	bne	a3, a4, .LBB2_2
-	li	a2, 5
+	lui	a2, 24
+	addi	a2, a2, 1696
 .LBB2_2:                                # %entry
 	add	a1, a1, a2
 	addw	a0, a0, a1

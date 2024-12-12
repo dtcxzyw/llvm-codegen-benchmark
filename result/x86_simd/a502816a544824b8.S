@@ -15,10 +15,11 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 .LCPI2_0:
 	.long	37                              # 0x25
+.LCPI2_1:
+	.long	2147483647                      # 0x7fffffff
 func000000000000000c:                   # @func000000000000000c
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm0, %ymm0
+	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	vpand	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:

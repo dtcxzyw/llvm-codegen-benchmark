@@ -56,10 +56,10 @@ entry:
 ; wireshark/optimized/packet-ppi-sensor.c.ll
 ; wireshark/optimized/packet-ppi-vector.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, %1
-  %3 = icmp ugt i32 %2, 134217727
+  %3 = icmp samesign ugt i32 %2, 134217727
   %4 = select i1 %3, i32 3, i32 2
   ret i32 %4
 }

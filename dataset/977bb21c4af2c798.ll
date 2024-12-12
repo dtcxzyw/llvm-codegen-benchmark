@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/oopRecorder.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = icmp ne i32 %2, %0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/oopRecorder.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000098c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = icmp ne i32 %2, %0
@@ -121,7 +121,7 @@ entry:
 ; llvm/optimized/X86PreTileConfig.cpp.ll
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = icmp ult i32 %2, %0
@@ -381,7 +381,7 @@ entry:
 ; llvm/optimized/X86PreTileConfig.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000104(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = icmp ult i32 %2, %0
@@ -393,7 +393,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ber.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = icmp ult i32 %2, %0

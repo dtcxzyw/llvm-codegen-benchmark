@@ -27,6 +27,16 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0) #0 {
+entry:
+  %1 = and i64 %0, -2
+  %2 = add i64 %1, 4
+  ret i64 %2
+}
+
+; 1 occurrences:
 ; xgboost/optimized/allgather.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000039(i64 %0) #0 {

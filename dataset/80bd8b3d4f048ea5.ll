@@ -1,10 +1,9 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; flac/optimized/picture.c.ll
 ; gromacs/optimized/xtc2.c.ll
 ; libjpeg-turbo/optimized/rdbmp.c.ll
-; wireshark/optimized/dpa400.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-iax2.c.ll
 ; wireshark/optimized/packet-selfm.c.ll

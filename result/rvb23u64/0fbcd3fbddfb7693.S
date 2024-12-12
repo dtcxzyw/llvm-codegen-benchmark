@@ -58,13 +58,13 @@ func000000000000001f:                   # @func000000000000001f
 	mul	a0, a0, a1
 	slli	a0, a0, 5
 	ret
-func0000000000000010:                   # @func0000000000000010
-	sext.w	a1, a1
-	mul	a0, a0, a1
-	slli	a0, a0, 3
-	ret
 func000000000000000f:                   # @func000000000000000f
 	zext.w	a1, a1
+	mul	a0, a0, a1
+	slli	a0, a0, 4
+	ret
+func0000000000000010:                   # @func0000000000000010
+	sext.w	a1, a1
 	mul	a0, a0, a1
 	slli	a0, a0, 3
 	ret

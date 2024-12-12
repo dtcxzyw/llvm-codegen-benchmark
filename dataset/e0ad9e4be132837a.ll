@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 48 occurrences:
 ; bullet3/optimized/b3Solver.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -14,6 +14,13 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; hdf5/optimized/H5Sselect.c.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; libpng/optimized/png.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/d1_both.c.ll
@@ -45,13 +52,13 @@
 define i64 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
 
-; 70 occurrences:
+; 71 occurrences:
 ; clamav/optimized/binhex.c.ll
 ; clamav/optimized/chmd.c.ll
 ; clamav/optimized/oabd.c.ll
@@ -77,7 +84,6 @@ entry:
 ; libpng/optimized/pngrutil.c.ll
 ; libpng/optimized/pngwutil.c.ll
 ; libquic/optimized/packeted_bio.cc.ll
-; linux/optimized/huf_decompress.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
@@ -122,11 +128,13 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wireshark/optimized/k12.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
@@ -159,7 +167,7 @@ entry:
 define i64 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
@@ -171,7 +179,7 @@ entry:
 define i64 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 4
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
@@ -189,14 +197,13 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 24
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
@@ -208,7 +215,7 @@ entry:
 define i64 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
@@ -220,7 +227,7 @@ entry:
 define i64 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
@@ -242,7 +249,19 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
+  %5 = or i32 %4, %0
+  %6 = zext i32 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 9
+  %4 = or i32 %3, %1
   %5 = or i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
@@ -254,7 +273,7 @@ entry:
 define i64 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
@@ -266,7 +285,7 @@ entry:
 define i64 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 4
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6

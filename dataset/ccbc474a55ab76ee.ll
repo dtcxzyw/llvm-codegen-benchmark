@@ -27,7 +27,7 @@
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 0
@@ -47,7 +47,7 @@ entry:
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaHLSL.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000024(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %2, 65

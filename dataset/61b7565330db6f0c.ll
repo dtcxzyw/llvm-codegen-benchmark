@@ -13,6 +13,18 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; qemu/optimized/target_riscv_pmp.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 6
+  %3 = shl i32 %0, 4
+  %4 = add i32 %2, %3
+  %5 = or disjoint i32 %4, 8
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/giaFalse.c.ll

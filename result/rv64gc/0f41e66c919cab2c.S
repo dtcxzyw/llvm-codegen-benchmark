@@ -49,3 +49,15 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a0, 8195
 	addiw	a0, a0, 45
 	ret
+func0000000000000018:                   # @func0000000000000018
+	srliw	a1, a1, 24
+	snez	a1, a1
+	and	a0, a0, a1
+	addi	a0, a0, 2
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a1, a1
+	sltiu	a1, a1, 5
+	and	a0, a0, a1
+	xori	a0, a0, 1649
+	ret

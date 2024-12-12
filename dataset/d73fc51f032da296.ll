@@ -18,7 +18,7 @@ entry:
 ; c3c/optimized/parse_expr.c.ll
 ; llvm/optimized/Signals.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp eq i32 %2, %0
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp sgt i32 %2, %0
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/wlnWlc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp eq i32 %2, %0
@@ -57,17 +57,6 @@ entry:
   %2 = add i32 %1, 1
   %3 = icmp eq i32 %2, %0
   %4 = select i1 %3, i32 13, i32 15
-  ret i32 %4
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-opa-mad.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = icmp ult i32 %2, %0
-  %4 = select i1 %3, i32 72, i32 66
   ret i32 %4
 }
 
@@ -96,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = icmp eq i32 %2, %0
@@ -105,20 +94,9 @@ entry:
 }
 
 ; 1 occurrences:
-; icu/optimized/gregoimp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 7
-  %3 = icmp sgt i32 %2, %0
-  %4 = select i1 %3, i32 -1, i32 4
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; opencv/optimized/out.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp slt i32 %2, %0
@@ -132,7 +110,7 @@ entry:
 ; meshlab/optimized/ml_render_gui.cpp.ll
 ; meshlab/optimized/outline2_rasterizer.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp ugt i32 %2, %0

@@ -10,11 +10,6 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	addi	a0, a0, -4
 	ret
-func00000000000000fc:                   # @func00000000000000fc
-	add	a1, a1, a2
-	sh1add	a0, a1, a0
-	addi	a0, a0, 4
-	ret
 func00000000000000f6:                   # @func00000000000000f6
 	add	a1, a1, a2
 	slli	a1, a1, 4

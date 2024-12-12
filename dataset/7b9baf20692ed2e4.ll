@@ -4,7 +4,7 @@
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, 4503599627370496
   %4 = icmp eq i64 %2, 0
@@ -18,7 +18,7 @@ entry:
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000047(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000087(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, 4503599627370496
   %4 = icmp eq i64 %2, 0
@@ -33,7 +33,7 @@ entry:
 ; spike/optimized/f32_to_i64.ll
 ; spike/optimized/f32_to_ui64.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, 281474976710656
   %4 = icmp eq i64 %2, 0

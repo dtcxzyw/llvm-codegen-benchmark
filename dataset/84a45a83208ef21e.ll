@@ -1,5 +1,9 @@
 
-; 21 occurrences:
+; 25 occurrences:
+; boost/optimized/authority_view.ll
+; boost/optimized/url_view_base.ll
+; llvm/optimized/InfoByHwMode.cpp.ll
+; llvm/optimized/RISCVTargetDefEmitter.cpp.ll
 ; mold/optimized/linker-script.cc.ALPHA.cc.ll
 ; mold/optimized/linker-script.cc.ARM32.cc.ll
 ; mold/optimized/linker-script.cc.ARM64.cc.ll
@@ -22,9 +26,9 @@
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define { ptr, i64 } @func0000000000000008(i64 %0, ptr %1) #0 {
+define { ptr, i64 } @func000000000000000c(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 16
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 16
   %3 = insertvalue { ptr, i64 } poison, ptr %2, 0
   %4 = add i64 %0, -1
   %5 = insertvalue { ptr, i64 } %3, i64 %4, 1
@@ -53,9 +57,9 @@ entry:
 ; entt/optimized/storage_no_instance.cpp.ll
 ; entt/optimized/view.cpp.ll
 ; Function Attrs: nounwind
-define { ptr, i64 } @func0000000000000009(i64 %0, ptr %1) #0 {
+define { ptr, i64 } @func000000000000000d(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 32
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 32
   %3 = insertvalue { ptr, i64 } poison, ptr %2, 0
   %4 = add nsw i64 %0, 1
   %5 = insertvalue { ptr, i64 } %3, i64 %4, 1

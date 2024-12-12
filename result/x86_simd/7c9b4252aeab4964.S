@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	2146435072                      # 0x7ff00000
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpternlogd	$40, .LCPI0_0(%rip){1to4}, %xmm0, %xmm1 # xmm1 = mem & (xmm1 ^ xmm0)
@@ -10,7 +10,7 @@ func0000000000000021:                   # @func0000000000000021
 	retq
 .LCPI1_0:
 	.long	7                               # 0x7
-func0000000000000024:                   # @func0000000000000024
+func0000000000000054:                   # @func0000000000000054
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [7,7,7,7]
@@ -24,7 +24,7 @@ func0000000000000024:                   # @func0000000000000024
 	.byte	255                             # 0xff
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
-func0000000000000028:                   # @func0000000000000028
+func0000000000000058:                   # @func0000000000000058
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2   # xmm2 = [255,255,255,0,255,255,255,0,255,255,255,0,255,255,255,0]
@@ -35,7 +35,7 @@ func0000000000000028:                   # @func0000000000000028
 	retq
 .LCPI3_0:
 	.long	1                               # 0x1
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsrlq	$61, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpternlogd	$40, .LCPI3_0(%rip){1to4}, %xmm0, %xmm1 # xmm1 = mem & (xmm1 ^ xmm0)
@@ -45,7 +45,7 @@ func0000000000000031:                   # @func0000000000000031
 	retq
 .LCPI4_0:
 	.long	2147483647                      # 0x7fffffff
-func0000000000000029:                   # @func0000000000000029
+func0000000000000059:                   # @func0000000000000059
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI4_0(%rip), %xmm2   # xmm2 = [2147483647,2147483647,2147483647,2147483647]
@@ -90,7 +90,7 @@ func0000000000000001:                   # @func0000000000000001
 	.byte	255                             # 0xff
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpsrlq	$19, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI6_0(%rip), %xmm2   # xmm2 = [255,255,255,0,255,255,255,0,255,255,255,0,255,255,255,0]
@@ -99,7 +99,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	vpsrlq	$38, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -108,7 +108,7 @@ func0000000000000038:                   # @func0000000000000038
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000039:                   # @func0000000000000039
+func0000000000000079:                   # @func0000000000000079
 	vpsrlq	$38, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2

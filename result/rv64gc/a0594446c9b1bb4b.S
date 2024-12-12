@@ -1,10 +1,3 @@
-func0000000000000040:                   # @func0000000000000040
-	addi	a2, a2, 1
-	slli	a1, a1, 32
-	mul	a0, a2, a0
-	srli	a1, a1, 32
-	add	a0, a0, a1
-	ret
 func000000000000003f:                   # @func000000000000003f
 	addi	a2, a2, -1
 	mul	a0, a2, a0
@@ -37,7 +30,7 @@ func0000000000000060:                   # @func0000000000000060
 func000000000000006f:                   # @func000000000000006f
 	addi	a2, a2, 12
 	slli	a1, a1, 32
-	mul	a0, a2, a0
+	mul	a0, a0, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret

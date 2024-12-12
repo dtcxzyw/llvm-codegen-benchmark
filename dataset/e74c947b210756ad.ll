@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/enumerator.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 1
   %4 = add nsw i64 %3, %1
@@ -15,7 +15,7 @@ entry:
 ; ruby/optimized/enumerator.ll
 ; ruby/optimized/range.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 1
   %4 = add nsw i64 %3, %1
@@ -104,10 +104,10 @@ entry:
 ; verilator/optimized/V3Config.cpp.ll
 ; yosys/optimized/ezsat.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000164(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = ashr exact i64 %0, 3
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -155,7 +155,7 @@ entry:
 ; rocksdb/optimized/version_builder.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = add i64 %3, %1
@@ -169,7 +169,7 @@ entry:
 ; rocksdb/optimized/external_sst_file_ingestion_job.cc.ll
 ; vcpkg/optimized/downloads.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 10
   %4 = add i64 %3, %1
@@ -183,10 +183,10 @@ entry:
 ; eastl/optimized/TestExtra.cpp.ll
 ; pocketpy/optimized/collections.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 6
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = ashr exact i64 %0, 6
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -200,10 +200,10 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestIterator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000168(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = ashr exact i64 %0, 2
   %6 = icmp ugt i64 %5, %4
   ret i1 %6

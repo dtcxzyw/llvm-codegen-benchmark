@@ -50,7 +50,7 @@ entry:
   %3 = sub i64 %1, %0
   %4 = srem i64 %3, %2
   %5 = sub i64 %1, %4
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 

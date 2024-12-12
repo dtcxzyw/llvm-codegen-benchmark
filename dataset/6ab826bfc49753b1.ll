@@ -4,7 +4,7 @@
 ; grpc/optimized/chttp2_transport.cc.ll
 ; grpc/optimized/message_size_filter.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i64 %0, 0
@@ -18,7 +18,7 @@ entry:
 ; grpc/optimized/xds_override_host.cc.ll
 ; llvm/optimized/VirtualFileSystem.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i64 %0, 0
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vc_screen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000304(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, 4097
   %3 = and i64 %1, 4294963200
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vc_screen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ult i64 %0, 4097
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vc_screen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000306(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, 4097
   %3 = and i64 %1, 2147483648
@@ -66,47 +66,11 @@ entry:
 ; 1 occurrences:
 ; grpc/optimized/xds_wrr_locality.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i64 %0, 0
   %4 = icmp ne i32 %2, 0
-  %5 = select i1 %3, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; icu/optimized/utext.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = icmp slt i64 %0, 0
-  %4 = icmp eq i32 %2, 0
-  %5 = select i1 %3, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; icu/optimized/utext.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = icmp slt i64 %0, 0
-  %4 = icmp slt i32 %2, 9
-  %5 = select i1 %3, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; icu/optimized/utext.ll
-; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = icmp sgt i64 %0, -1
-  %4 = icmp sgt i32 %2, 0
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }

@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 12 occurrences:
 ; cpython/optimized/_codecs_kr.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/ucnv_lmb.ll
@@ -10,8 +10,6 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_object_handlers.ll
-; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
-; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; wireshark/optimized/packet-alp.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
 ; Function Attrs: nounwind
@@ -50,17 +48,6 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; wireshark/optimized/packet-dec-dnart.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i8 %0, i8 %1) #0 {
-entry:
-  %2 = icmp sgt i8 %1, -1
-  %3 = select i1 %2, i8 2, i8 %0
-  %4 = zext i8 %3 to i32
-  ret i32 %4
-}
-
 ; 3 occurrences:
 ; cmake/optimized/zdict.c.ll
 ; wireshark/optimized/packet-s7comm.c.ll
@@ -74,26 +61,13 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; linux/optimized/cypress_ps2.ll
+; 1 occurrences:
 ; linux/optimized/drm_edid.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, -65
   %3 = select i1 %2, i8 4, i8 %0
-  %4 = zext nneg i8 %3 to i32
-  ret i32 %4
-}
-
-; 2 occurrences:
-; linux/optimized/intel_fbc.ll
-; linux/optimized/irq.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i8 %0, i8 %1) #0 {
-entry:
-  %2 = icmp slt i8 %1, 0
-  %3 = select i1 %2, i8 0, i8 %0
   %4 = zext nneg i8 %3 to i32
   ret i32 %4
 }

@@ -39,7 +39,7 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 .LCPI5_0:
 	.quad	0x4090000000000000              # double 1024
-func000000000000004c:                   # @func000000000000004c
+func000000000000014c:                   # @func000000000000014c
 	lui	a0, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -53,6 +53,14 @@ func00000000000000cc:                   # @func00000000000000cc
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v12, v10, a0
 	vmfge.vf	v10, v8, fa5
+	vmand.mm	v0, v10, v12
+	ret
+func0000000000000144:                   # @func0000000000000144
+	li	a0, 20
+	fmv.d.x	fa5, zero
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsltu.vx	v12, v10, a0
+	vmfgt.vf	v10, v8, fa5
 	vmand.mm	v0, v10, v12
 	ret
 func00000000000000c6:                   # @func00000000000000c6

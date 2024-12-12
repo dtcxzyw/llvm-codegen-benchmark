@@ -43,8 +43,7 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
-; linux/optimized/i915_cmd_parser.ll
+; 3 occurrences:
 ; linux/optimized/i915_gem_execbuffer.ll
 ; node/optimized/libnode.crypto_aes.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll

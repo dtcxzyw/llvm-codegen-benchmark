@@ -14,7 +14,7 @@
 define i1 @func0000000000000004(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 0x3EB0C6F7A0B5ED8D
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
@@ -61,7 +61,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 0.000000e+00
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
@@ -127,7 +127,7 @@ entry:
 define i1 @func000000000000000e(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp ord double %1, 0.000000e+00
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
@@ -169,7 +169,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp oge double %1, 0.000000e+00
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
@@ -195,7 +195,7 @@ entry:
 define i1 @func0000000000000003(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp ult double %1, 0.000000e+00
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 

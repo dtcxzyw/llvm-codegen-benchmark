@@ -12,6 +12,6 @@ func0000000000000001:                   # @func0000000000000001
 	vpbroadcastd	.LCPI0_0(%rip), %xmm1   # xmm1 = [4294213632,4294213632,4294213632,4294213632]
 	vpbroadcastd	.LCPI0_1(%rip), %xmm1 {%k2} # xmm1 {%k2} = [4294963584,4294963584,4294963584,4294963584]
 	vpbroadcastd	.LCPI0_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [4294967280,4294967280,4294967280,4294967280]
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq

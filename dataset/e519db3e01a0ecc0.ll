@@ -11,8 +11,7 @@ entry:
   ret double %4
 }
 
-; 5 occurrences:
-; c3c/optimized/decltable.c.ll
+; 4 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; jq/optimized/jv.ll
 ; openblas/optimized/dsysvx.c.ll

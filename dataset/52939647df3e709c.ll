@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; assimp/optimized/UnrealLoader.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
@@ -30,7 +30,6 @@
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
@@ -48,15 +47,17 @@
 ; postgres/optimized/partbounds.ll
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/gc.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
-; 113 occurrences:
+; 114 occurrences:
 ; bullet3/optimized/b3File.ll
 ; cmake/optimized/fld_def.c.ll
 ; cmake/optimized/frm_driver.c.ll
@@ -98,7 +99,6 @@ entry:
 ; minetest/optimized/servermap.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
@@ -169,12 +169,14 @@ entry:
 ; spike/optimized/vwmulsu_vx.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; stockfish/optimized/search.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -186,7 +188,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 

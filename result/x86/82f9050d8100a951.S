@@ -1,4 +1,4 @@
-func0000000000000119:                   # @func0000000000000119
+func0000000000000429:                   # @func0000000000000429
 	sarq	$2, %rdx
 	cmpq	%rdi, %rdx
 	setae	%cl
@@ -6,7 +6,7 @@ func0000000000000119:                   # @func0000000000000119
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000011c:                   # @func000000000000011c
+func000000000000042c:                   # @func000000000000042c
 	sarq	$2, %rdx
 	cmpq	%rdi, %rdx
 	setne	%cl
@@ -14,7 +14,7 @@ func000000000000011c:                   # @func000000000000011c
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000118:                   # @func0000000000000118
+func0000000000000428:                   # @func0000000000000428
 	sarq	$2, %rdx
 	cmpq	%rdi, %rdx
 	seta	%cl
@@ -22,7 +22,7 @@ func0000000000000118:                   # @func0000000000000118
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	sarq	$2, %rdx
 	cmpq	%rdi, %rdx
 	sete	%cl
@@ -30,7 +30,7 @@ func0000000000000111:                   # @func0000000000000111
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000115:                   # @func0000000000000115
+func0000000000000425:                   # @func0000000000000425
 	sarq	$3, %rdx
 	cmpq	%rdi, %rdx
 	setbe	%cl

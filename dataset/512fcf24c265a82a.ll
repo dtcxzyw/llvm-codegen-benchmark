@@ -10,7 +10,7 @@ entry:
   %3 = mul i64 %2, 10
   %4 = mul i64 %1, -40
   %5 = add i64 %4, %3
-  %6 = icmp uge i64 %5, %0
+  %6 = icmp ule i64 %0, %5
   ret i1 %6
 }
 

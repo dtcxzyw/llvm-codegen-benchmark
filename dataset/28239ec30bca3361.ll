@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 76 occurrences:
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
@@ -23,26 +23,22 @@
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
 ; linux/optimized/8250_port.ll
-; linux/optimized/feat_ctl.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/ioctl.ll
 ; linux/optimized/irq.ll
 ; linux/optimized/lbr.ll
-; linux/optimized/mii.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/open.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vfs_inode.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; luajit/optimized/lib_jit.ll
 ; luajit/optimized/lib_jit_dyn.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH64.cc.ll
@@ -91,7 +87,7 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached-items.ll
@@ -103,6 +99,8 @@ entry:
 ; memcached/optimized/memcached_debug-storage.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {
 entry:

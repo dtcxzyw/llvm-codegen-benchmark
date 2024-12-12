@@ -1,5 +1,5 @@
 
-; 372 occurrences:
+; 371 occurrences:
 ; c3c/optimized/types.c.ll
 ; hdf5/optimized/H5C.c.ll
 ; hdf5/optimized/H5Ctag.c.ll
@@ -65,7 +65,6 @@
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
@@ -377,7 +376,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -395,7 +394,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = add nsw i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -411,7 +410,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 12
   %3 = add nsw i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -433,7 +432,18 @@ define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = add i32 %2, 256
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/array.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 1
+  %3 = add nsw i32 %2, -1
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

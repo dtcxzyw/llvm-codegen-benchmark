@@ -1,6 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
-	movzwl	%si, %eax
-	shrl	$6, %eax
-	andl	%edi, %eax
-	andl	$1, %eax
+	shrl	$4, %esi
+	andl	$1, %esi
+	testb	$1, %dil
+	movl	$5, %eax
+	cmovnel	%esi, %eax
 	retq

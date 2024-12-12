@@ -11,7 +11,7 @@ entry:
   %4 = and i64 %3, 2097151
   %5 = zext nneg i32 %1 to i64
   %6 = mul nuw nsw i64 %4, %5
-  %7 = add nuw nsw i64 %6, %0
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 

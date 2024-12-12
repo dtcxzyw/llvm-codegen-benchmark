@@ -56,19 +56,44 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_dither.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %.idx = shl nsw i64 %2, 4
-  %3 = getelementptr nusw i8, ptr %0, i64 %.idx
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
   %4 = zext nneg i32 %1 to i64
-  %5 = getelementptr nusw float, ptr %3, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %5 = getelementptr nusw nuw float, ptr %3, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
-; 13 occurrences:
+; 2 occurrences:
 ; clamav/optimized/mew.c.ll
 ; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001ff(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 9
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = zext nneg i32 %1 to i64
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 514
+  ret ptr %7
+}
+
+; 1 occurrences:
+; llvm/optimized/MachOObjectFile.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001bf(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = zext i32 %1 to i64
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 4
+  ret ptr %7
+}
+
+; 11 occurrences:
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
@@ -81,27 +106,26 @@ entry:
 ; hyperscan/optimized/stream_compress.c.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001ea(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000001fe(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw nsw i64 %2, 9
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %3 = shl nuw nsw i64 %2, 3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 514
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 -8
   ret ptr %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
-; llvm/optimized/MachOObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001aa(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000001be(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 -4
   ret ptr %7
 }
 

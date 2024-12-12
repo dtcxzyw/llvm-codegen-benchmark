@@ -1,4 +1,4 @@
-func0000000000000c2c:                   # @func0000000000000c2c
+func000000000000304c:                   # @func000000000000304c
 	cmpl	$6, %edx
 	setge	%al
 	testl	%esi, %esi
@@ -8,7 +8,7 @@ func0000000000000c2c:                   # @func0000000000000c2c
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000082c:                   # @func000000000000082c
+func000000000000a04c:                   # @func000000000000a04c
 	cmpl	$7, %edx
 	setae	%al
 	testl	%esi, %esi
@@ -18,7 +18,7 @@ func000000000000082c:                   # @func000000000000082c
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000cc2:                   # @func0000000000000cc2
+func0000000000003182:                   # @func0000000000003182
 	cmpl	$7, %edx
 	setge	%al
 	testl	%esi, %esi
@@ -28,7 +28,7 @@ func0000000000000cc2:                   # @func0000000000000cc2
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000222:                   # @func0000000000000222
+func0000000000000842:                   # @func0000000000000842
 	cmpl	$536870910, %edx                # imm = 0x1FFFFFFE
 	sete	%al
 	cmpl	$536870910, %esi                # imm = 0x1FFFFFFE
@@ -38,7 +38,7 @@ func0000000000000222:                   # @func0000000000000222
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000828:                   # @func0000000000000828
+func0000000000002048:                   # @func0000000000002048
 	cmpl	$2, %edx
 	setb	%al
 	cmpl	$3, %esi
@@ -48,7 +48,7 @@ func0000000000000828:                   # @func0000000000000828
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000002cc:                   # @func00000000000002cc
+func000000000000098c:                   # @func000000000000098c
 	testl	%edx, %edx
 	sete	%cl
 	cmpl	$2, %esi
@@ -58,7 +58,7 @@ func00000000000002cc:                   # @func00000000000002cc
 	orb	%dl, %al
 	orb	%cl, %al
 	retq
-func0000000000000882:                   # @func0000000000000882
+func0000000000002068:                   # @func0000000000002068
 	cmpl	$1024, %edx                     # imm = 0x400
 	setae	%al
 	cmpl	$4096, %esi                     # imm = 0x1000

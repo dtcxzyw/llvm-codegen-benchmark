@@ -19,7 +19,7 @@ entry:
   %3 = add nuw i8 %1, %2
   %4 = zext i8 %3 to i32
   %5 = mul nuw nsw i32 %4, 3600
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 

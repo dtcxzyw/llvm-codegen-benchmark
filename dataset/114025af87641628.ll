@@ -1,26 +1,4 @@
 
-%"class.std::vector.2715853" = type { %"struct.std::_Vector_base.2715854" }
-%"struct.std::_Vector_base.2715854" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2715855" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2715855" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2715856" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2715856" = type { ptr, ptr, ptr }
-
-; 6 occurrences:
-; assimp/optimized/clipper.cpp.ll
-; gromacs/optimized/tpxio.cpp.ll
-; openspiel/optimized/nfg_game_test.cc.ll
-; pocketpy/optimized/compiler.cpp.ll
-; pocketpy/optimized/expr.cpp.ll
-; pocketpy/optimized/lexer.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 30
-  %3 = ashr i64 %2, 32
-  %4 = and i64 %3, -2
-  %5 = getelementptr nusw %"class.std::vector.2715853", ptr %0, i64 %4
-  ret ptr %5
-}
-
 ; 70 occurrences:
 ; oiio/optimized/DPXColorConverter.cpp.ll
 ; opencv/optimized/3calibration.cpp.ll
@@ -102,11 +80,10 @@ entry:
   ret ptr %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; oiio/optimized/imageio.cpp.ll
 ; openusd/optimized/refinerFactory.cpp.ll
-; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
@@ -114,6 +91,22 @@ entry:
   %3 = ashr exact i64 %2, 30
   %4 = and i64 %3, -4
   %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 5 occurrences:
+; gromacs/optimized/tpxio.cpp.ll
+; openspiel/optimized/nfg_game_test.cc.ll
+; pocketpy/optimized/compiler.cpp.ll
+; pocketpy/optimized/expr.cpp.ll
+; pocketpy/optimized/lexer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 31
+  %3 = ashr i64 %2, 32
+  %4 = and i64 %3, -2
+  %5 = getelementptr nusw i32, ptr %0, i64 %4
   ret ptr %5
 }
 

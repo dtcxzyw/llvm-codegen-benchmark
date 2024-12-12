@@ -1,8 +1,6 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; linux/optimized/tunnels.ll
-; nuttx/optimized/fs_pread.c.ll
-; nuttx/optimized/fs_pwrite.c.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; Function Attrs: nounwind
@@ -30,11 +28,11 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %0, i64 %3, i64 %1
-  %5 = icmp ugt i64 %4, 2147483136
+  %5 = icmp samesign ugt i64 %4, 2147483136
   ret i1 %5
 }
 
@@ -64,11 +62,11 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/backgammon.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %0, i64 %3, i64 %1
-  %5 = icmp ult i64 %4, 1352
+  %5 = icmp samesign ult i64 %4, 1352
   ret i1 %5
 }
 

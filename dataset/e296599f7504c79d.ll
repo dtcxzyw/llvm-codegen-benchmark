@@ -14,8 +14,9 @@ entry:
   ret i64 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; minetest/optimized/guiHyperText.cpp.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i32 %1, i32 %2) #0 {
 entry:

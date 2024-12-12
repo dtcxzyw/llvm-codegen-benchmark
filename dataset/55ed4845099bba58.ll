@@ -1,5 +1,5 @@
 
-; 312 occurrences:
+; 313 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -8,6 +8,7 @@
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/btShapeHull.ll
 ; c3c/optimized/sema_builtins.c.ll
 ; clamav/optimized/getopt.c.ll
@@ -75,7 +76,6 @@
 ; linux/optimized/route.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/umip.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/vmalloc.ll
 ; linux/optimized/vsprintf.ll
@@ -97,11 +97,11 @@
 ; llvm/optimized/MachineLoopUtils.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaX86.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
 ; llvm/optimized/TypeIndexDiscovery.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
@@ -147,6 +147,7 @@
 ; ncnn/optimized/requantize_x86_avx512.cpp.ll
 ; ncnn/optimized/requantize_x86_fma.cpp.ll
 ; node/optimized/libnode.inspector_socket.ll
+; nuttx/optimized/lib_strtold.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll

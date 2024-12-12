@@ -6,7 +6,7 @@
 ; wireshark/optimized/packet-eap.c.ll
 ; wireshark/optimized/packet-isakmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %0, -4
@@ -37,7 +37,7 @@ entry:
 ; wireshark/optimized/packet-isis-lsp.c.ll
 ; wireshark/optimized/packet-scsi.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = sub i32 %2, %0
@@ -66,19 +66,19 @@ entry:
 ; wireshark/optimized/packet-isakmp.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %0, -1
-  %4 = icmp eq i32 %3, %2
-  ret i1 %4
+  %.neg = add nuw nsw i32 %2, 1
+  %3 = icmp eq i32 %0, %.neg
+  ret i1 %3
 }
 
 ; 2 occurrences:
 ; wireshark/optimized/packet-isis-lsp.c.ll
 ; wireshark/optimized/packet-scsi-mmc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %0, -4
@@ -100,21 +100,9 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/gss_generic_token.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %0, -2
-  %4 = sub nsw i32 %3, %2
-  %5 = icmp ult i32 %4, 2
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; linux/optimized/rock.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %0, -2

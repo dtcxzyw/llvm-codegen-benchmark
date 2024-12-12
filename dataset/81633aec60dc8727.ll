@@ -9,7 +9,7 @@
 ; llvm/optimized/PartiallyInlineLibCalls.cpp.ll
 ; z3/optimized/tbv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = and i32 %2, 28
@@ -49,7 +49,7 @@ entry:
 ; z3/optimized/tbv.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = and i32 %2, 28
@@ -64,12 +64,12 @@ entry:
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/giaTsim.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw i32 3, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -79,12 +79,12 @@ entry:
 ; z3/optimized/doc.cpp.ll
 ; z3/optimized/tbv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000161(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw nsw i32 1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -107,7 +107,7 @@ entry:
 ; git/optimized/rev-list.ll
 ; git/optimized/revision.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, 30
@@ -117,36 +117,19 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
-; abc/optimized/covMinUtil.c.ll
-; llvm/optimized/BuildLibCalls.cpp.ll
-; llvm/optimized/ConstantFolding.cpp.ll
-; wireshark/optimized/packet-erldp.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = and i32 %2, 30
-  %4 = shl nuw nsw i32 1, %3
-  %5 = and i32 %4, %0
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
-}
-
-; 6 occurrences:
-; abc/optimized/covMinUtil.c.ll
+; 5 occurrences:
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001c1(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = and i32 %2, 30
-  %4 = shl nuw i32 2, %3
-  %5 = and i32 %4, %0
+  %2 = shl nuw nsw i32 %1, 2
+  %3 = and i32 %2, 28
+  %4 = shl nuw i32 15, %3
+  %5 = and i32 %0, %4
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -154,24 +137,26 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ec(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = and i32 %2, 28
   %4 = shl nuw i32 15, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = icmp ne i32 %5, 0
   ret i1 %6
 }
 
-; 1 occurrences:
-; linux/optimized/pkeys.ll
+; 3 occurrences:
+; llvm/optimized/BuildLibCalls.cpp.ll
+; llvm/optimized/ConstantFolding.cpp.ll
+; wireshark/optimized/packet-erldp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nsw i32 %1, 1
-  %3 = and i32 %2, 131070
-  %4 = shl nuw i32 1, %3
+  %2 = shl nuw nsw i32 %1, 1
+  %3 = and i32 %2, 6
+  %4 = shl nuw nsw i32 3, %3
   %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
@@ -182,12 +167,12 @@ entry:
 ; z3/optimized/tbv.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw i32 2, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = icmp ne i32 %5, 0
   ret i1 %6
 }
@@ -196,7 +181,7 @@ entry:
 ; z3/optimized/doc.cpp.ll
 ; z3/optimized/tbv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i32 %1) #0 {
+define i1 @func000000000000014c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 30

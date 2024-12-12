@@ -1,28 +1,16 @@
 func000000000000007a:                   // @func000000000000007a
 // %bb.0:                               // %entry
-	mvn	v3.16b, v3.16b
-	mvn	v2.16b, v2.16b
-	mov	w8, #3                          // =0x3
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
-	ushr	v0.2d, v0.2d, #1
-	ushr	v1.2d, v1.2d, #1
+	mvn	x8, x1
+	add	x8, x0, x8
+	add	x8, x8, #3
+	lsr	x0, x8, #1
 	ret
                                         // -- End function
 func0000000000000072:                   // @func0000000000000072
 // %bb.0:                               // %entry
-	mvn	v3.16b, v3.16b
-	mvn	v2.16b, v2.16b
-	mov	w8, #3                          // =0x3
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
-	ushr	v0.2d, v0.2d, #1
-	ushr	v1.2d, v1.2d, #1
+	mvn	x8, x1
+	add	x8, x0, x8
+	add	x8, x8, #3
+	lsr	x0, x8, #1
 	ret
                                         // -- End function

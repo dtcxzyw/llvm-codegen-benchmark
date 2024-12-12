@@ -232,7 +232,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 127
   %3 = icmp eq i64 %2, 0
@@ -240,7 +240,7 @@ entry:
   ret i32 %4
 }
 
-; 90 occurrences:
+; 91 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
@@ -331,8 +331,9 @@ entry:
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
+; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2047
   %3 = icmp eq i64 %2, 0
@@ -370,7 +371,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
   %3 = icmp eq i64 %2, 0

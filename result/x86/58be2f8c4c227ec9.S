@@ -80,10 +80,9 @@ func0000000000000080:                   # @func0000000000000080
 	addl	%edi, %eax
 	retq
 func0000000000000085:                   # @func0000000000000085
-	xorl	%eax, %eax
-	cmpb	$-83, %dl
-	setb	%al
-	leal	(%rax,%rax,2), %eax
-	addl	%esi, %eax
-	leal	-3(%rdi,%rax), %eax
+	leal	-19504(%rsi), %ecx
+	leal	-50480(%rsi), %eax
+	cmpb	$-112, %dl
+	cmovbl	%ecx, %eax
+	addl	%edi, %eax
 	retq

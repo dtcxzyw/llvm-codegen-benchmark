@@ -1,5 +1,5 @@
 
-; 228 occurrences:
+; 227 occurrences:
 ; hdf5/optimized/H5FAdblock.c.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/API.cpp.ll
@@ -145,7 +145,6 @@
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/RecordLayout.cpp.ll
@@ -234,23 +233,22 @@ entry:
   %2 = zext nneg i8 %1 to i64
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000062(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 

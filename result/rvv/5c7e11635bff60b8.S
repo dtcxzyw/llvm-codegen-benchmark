@@ -4,7 +4,7 @@ func000000000000002f:                   # @func000000000000002f
 	vsrl.vx	v12, v12, a0
 	li	a0, -1
 	srli	a0, a0, 32
-	vmul.vv	v10, v12, v10
+	vmul.vv	v10, v10, v12
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8
 	bseti	a0, zero, 31

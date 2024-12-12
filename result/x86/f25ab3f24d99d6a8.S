@@ -9,9 +9,3 @@ func0000000000000018:                   # @func0000000000000018
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	andl	$15, %esi
-	cmpl	$5, %esi
-	setb	%al
-	orb	%dil, %al
-	retq

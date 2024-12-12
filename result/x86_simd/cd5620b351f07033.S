@@ -99,7 +99,7 @@ func0000000000000001:                   # @func0000000000000001
 	.short	6                               # 0x6
 .LCPI1_4:
 	.short	1                               # 0x1
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpbroadcastw	.LCPI1_3(%rip), %ymm1   # ymm1 = [6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6]
 	vpand	%ymm1, %ymm0, %ymm0
 	vpcmpeqw	%ymm1, %ymm0, %k1

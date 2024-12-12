@@ -147,7 +147,7 @@ func0000000000000000:                   # @func0000000000000000
 	.byte	255                             # 0xff
 func0000000000000002:                   # @func0000000000000002
 	vpshufb	.LCPI1_0(%rip), %ymm1, %ymm1    # ymm1 = zero,ymm1[3],zero,zero,zero,ymm1[7],zero,zero,zero,ymm1[11],zero,zero,zero,ymm1[15],zero,zero,zero,ymm1[19],zero,zero,zero,ymm1[23],zero,zero,zero,ymm1[27],zero,zero,zero,ymm1[31],zero,zero
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI2_0:
@@ -193,6 +193,6 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000003:                   # @func0000000000000003
 	vpsrld	$12, %ymm1, %ymm1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI2_2(%rip){1to8}, %ymm0, %ymm0
 	retq

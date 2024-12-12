@@ -1,5 +1,5 @@
 
-; 610 occurrences:
+; 608 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/extraBddCas.c.ll
@@ -15,6 +15,7 @@
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/unarj.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -32,7 +33,6 @@
 ; flac/optimized/bitwriter.c.ll
 ; flac/optimized/decode.c.ll
 ; flac/optimized/metadata_iterators.c.ll
-; flac/optimized/ogg_encoder_aspect.c.ll
 ; flac/optimized/options.c.ll
 ; flac/optimized/picture.c.ll
 ; flac/optimized/stream_decoder.c.ll
@@ -361,7 +361,6 @@
 ; qemu/optimized/hw_pci_msi.c.ll
 ; qemu/optimized/hw_scsi_vmw_pvscsi.c.ll
 ; qemu/optimized/hw_sd_sd.c.ll
-; qemu/optimized/hw_ssi_sifive_spi.c.ll
 ; qemu/optimized/tcg.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll
@@ -390,9 +389,7 @@
 ; rust-analyzer-rs/optimized/3enygpsog46rh747.ll
 ; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
 ; rust-analyzer-rs/optimized/3ipaq4e4ganfbkbl.ll
-; rust-analyzer-rs/optimized/3nihs2yq970i3wpb.ll
 ; rust-analyzer-rs/optimized/3smo919kcf8ucrac.ll
-; rust-analyzer-rs/optimized/4bvw1e690behm5u2.ll
 ; rust-analyzer-rs/optimized/4bwxw2k86ri9mh4p.ll
 ; rust-analyzer-rs/optimized/4jc1phjh70qbnowc.ll
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
@@ -606,6 +603,7 @@
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/1cwzjnrfv3j054rlb5kbvkj4j.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
@@ -618,7 +616,9 @@ entry:
   ret i1 %3
 }
 
-; 323 occurrences:
+; 182 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -714,78 +714,6 @@ entry:
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/rhashtable.ll
-; node/optimized/libnode.stream_base.ll
-; oiio/optimized/CineonHeader.cpp.ll
-; oiio/optimized/argparse.cpp.ll
-; oiio/optimized/benchmark.cpp.ll
-; oiio/optimized/bmpinput.cpp.ll
-; oiio/optimized/bmpoutput.cpp.ll
-; oiio/optimized/cineoninput.cpp.ll
-; oiio/optimized/color_ocio.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; oiio/optimized/dpxinput.cpp.ll
-; oiio/optimized/dpxoutput.cpp.ll
-; oiio/optimized/environment.cpp.ll
-; oiio/optimized/errorhandler.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
-; oiio/optimized/exroutput.cpp.ll
-; oiio/optimized/filesystem.cpp.ll
-; oiio/optimized/fitsinput.cpp.ll
-; oiio/optimized/fitsoutput.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; oiio/optimized/hdrinput.cpp.ll
-; oiio/optimized/hdroutput.cpp.ll
-; oiio/optimized/icc.cpp.ll
-; oiio/optimized/icoinput.cpp.ll
-; oiio/optimized/icooutput.cpp.ll
-; oiio/optimized/iffinput.cpp.ll
-; oiio/optimized/iffoutput.cpp.ll
-; oiio/optimized/imagebuf.cpp.ll
-; oiio/optimized/imagebufalgo.cpp.ll
-; oiio/optimized/imagebufalgo_addsub.cpp.ll
-; oiio/optimized/imagebufalgo_channels.cpp.ll
-; oiio/optimized/imagebufalgo_compare.cpp.ll
-; oiio/optimized/imagebufalgo_copy.cpp.ll
-; oiio/optimized/imagebufalgo_deep.cpp.ll
-; oiio/optimized/imagebufalgo_draw.cpp.ll
-; oiio/optimized/imagebufalgo_mad.cpp.ll
-; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
-; oiio/optimized/imagebufalgo_muldiv.cpp.ll
-; oiio/optimized/imagebufalgo_opencv.cpp.ll
-; oiio/optimized/imagebufalgo_orient.cpp.ll
-; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
-; oiio/optimized/imagebufalgo_xform.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
-; oiio/optimized/imageinput.cpp.ll
-; oiio/optimized/imageio.cpp.ll
-; oiio/optimized/imageioplugin.cpp.ll
-; oiio/optimized/imageoutput.cpp.ll
-; oiio/optimized/jpeginput.cpp.ll
-; oiio/optimized/jpegoutput.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; oiio/optimized/paramlist.cpp.ll
-; oiio/optimized/pnginput.cpp.ll
-; oiio/optimized/pngoutput.cpp.ll
-; oiio/optimized/pnmoutput.cpp.ll
-; oiio/optimized/printinfo.cpp.ll
-; oiio/optimized/psdinput.cpp.ll
-; oiio/optimized/rlainput.cpp.ll
-; oiio/optimized/rlaoutput.cpp.ll
-; oiio/optimized/sgiinput.cpp.ll
-; oiio/optimized/sgioutput.cpp.ll
-; oiio/optimized/softimageinput.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; oiio/optimized/sysutil.cpp.ll
-; oiio/optimized/targainput.cpp.ll
-; oiio/optimized/targaoutput.cpp.ll
-; oiio/optimized/termoutput.cpp.ll
-; oiio/optimized/texture3d.cpp.ll
-; oiio/optimized/texturesys.cpp.ll
-; oiio/optimized/tiffinput.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
-; oiio/optimized/typedesc.cpp.ll
-; oiio/optimized/xmp.cpp.ll
-; oiio/optimized/zfile.cpp.ll
 ; protobuf/optimized/csharp_field_base.cc.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
@@ -794,25 +722,6 @@ entry:
 ; recastnavigation/optimized/Sample_TileMesh.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; tev/optimized/Channel.cpp.ll
-; tev/optimized/ClipboardImageLoader.cpp.ll
-; tev/optimized/Common.cpp.ll
-; tev/optimized/EmptyImageLoader.cpp.ll
-; tev/optimized/ExrImageLoader.cpp.ll
-; tev/optimized/ExrImageSaver.cpp.ll
-; tev/optimized/Image.cpp.ll
-; tev/optimized/ImageButton.cpp.ll
-; tev/optimized/ImageCanvas.cpp.ll
-; tev/optimized/ImageViewer.cpp.ll
-; tev/optimized/Ipc.cpp.ll
-; tev/optimized/MultiGraph.cpp.ll
-; tev/optimized/PfmImageLoader.cpp.ll
-; tev/optimized/QoiImageLoader.cpp.ll
-; tev/optimized/QoiImageSaver.cpp.ll
-; tev/optimized/StbiImageLoader.cpp.ll
-; tev/optimized/StbiLdrImageSaver.cpp.ll
-; tev/optimized/UberShader.cpp.ll
-; tev/optimized/main.cpp.ll
 ; vcpkg/optimized/archives.cpp.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
 ; vcpkg/optimized/binaryparagraph.cpp.ll
@@ -888,6 +797,171 @@ entry:
 ; vcpkg/optimized/vcpkgpaths.cpp.ll
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
+; wireshark/optimized/packet-ieee80211.c.ll
+; z3/optimized/bit_util.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %0, %1
+  %3 = icmp samesign ugt i32 %2, 1114111
+  ret i1 %3
+}
+
+; 15 occurrences:
+; abc/optimized/giaLf.c.ll
+; fmt/optimized/format-impl-test.cc.ll
+; hermes/optimized/dtoa.c.ll
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/dtoa.cc.ll
+; linux/optimized/resize.ll
+; linux/optimized/tcp.ll
+; linux/optimized/tcp_output.ll
+; linux/optimized/xfrm_policy.ll
+; llvm/optimized/LiteralSupport.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; minetest/optimized/COpenGLDriver.cpp.ll
+; php/optimized/zend_strtod.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; verilator/optimized/V3Table.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %0, %1
+  %3 = icmp ne i32 %2, 1
+  ret i1 %3
+}
+
+; 28 occurrences:
+; actix-rs/optimized/22x16e3cd4musvfe.ll
+; actix-rs/optimized/559mdouync0xx14h.ll
+; actix-rs/optimized/u8tt4f5khiooymn.ll
+; assimp/optimized/Assimp.cpp.ll
+; faiss/optimized/partitioning.cpp.ll
+; fmt/optimized/format.cc.ll
+; hyperscan/optimized/program_runtime.c.ll
+; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; mixbox/optimized/mixbox.ll
+; nori/optimized/nanovg.c.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/detokenize.c.ll
+; openusd/optimized/reconinter.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; raylib/optimized/rmodels.c.ll
+; raylib/optimized/rtextures.c.ll
+; spdlog/optimized/bundled_fmtlib_format.cpp.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; typst-rs/optimized/1aflftgqyuracvze.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; wireshark/optimized/packet-ieee80211-prism.c.ll
+; wireshark/optimized/packet-ieee80211.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %0, %1
+  %3 = icmp samesign ult i32 %2, 16
+  ret i1 %3
+}
+
+; 145 occurrences:
+; image-rs/optimized/4srzh4wujeew249y.ll
+; linux/optimized/rhashtable.ll
+; node/optimized/libnode.stream_base.ll
+; oiio/optimized/CineonHeader.cpp.ll
+; oiio/optimized/argparse.cpp.ll
+; oiio/optimized/benchmark.cpp.ll
+; oiio/optimized/bmpinput.cpp.ll
+; oiio/optimized/bmpoutput.cpp.ll
+; oiio/optimized/cineoninput.cpp.ll
+; oiio/optimized/color_ocio.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; oiio/optimized/dpxinput.cpp.ll
+; oiio/optimized/dpxoutput.cpp.ll
+; oiio/optimized/environment.cpp.ll
+; oiio/optimized/errorhandler.cpp.ll
+; oiio/optimized/exrinput.cpp.ll
+; oiio/optimized/exroutput.cpp.ll
+; oiio/optimized/filesystem.cpp.ll
+; oiio/optimized/fitsinput.cpp.ll
+; oiio/optimized/fitsoutput.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; oiio/optimized/hdrinput.cpp.ll
+; oiio/optimized/hdroutput.cpp.ll
+; oiio/optimized/icc.cpp.ll
+; oiio/optimized/icoinput.cpp.ll
+; oiio/optimized/icooutput.cpp.ll
+; oiio/optimized/iffinput.cpp.ll
+; oiio/optimized/iffoutput.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imagebufalgo.cpp.ll
+; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_compare.cpp.ll
+; oiio/optimized/imagebufalgo_copy.cpp.ll
+; oiio/optimized/imagebufalgo_deep.cpp.ll
+; oiio/optimized/imagebufalgo_draw.cpp.ll
+; oiio/optimized/imagebufalgo_mad.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
+; oiio/optimized/imagebufalgo_muldiv.cpp.ll
+; oiio/optimized/imagebufalgo_opencv.cpp.ll
+; oiio/optimized/imagebufalgo_orient.cpp.ll
+; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/imageinput.cpp.ll
+; oiio/optimized/imageio.cpp.ll
+; oiio/optimized/imageioplugin.cpp.ll
+; oiio/optimized/imageoutput.cpp.ll
+; oiio/optimized/jpeginput.cpp.ll
+; oiio/optimized/jpegoutput.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; oiio/optimized/paramlist.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
+; oiio/optimized/pngoutput.cpp.ll
+; oiio/optimized/pnmoutput.cpp.ll
+; oiio/optimized/printinfo.cpp.ll
+; oiio/optimized/psdinput.cpp.ll
+; oiio/optimized/rlainput.cpp.ll
+; oiio/optimized/rlaoutput.cpp.ll
+; oiio/optimized/sgiinput.cpp.ll
+; oiio/optimized/sgioutput.cpp.ll
+; oiio/optimized/softimageinput.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; oiio/optimized/sysutil.cpp.ll
+; oiio/optimized/targainput.cpp.ll
+; oiio/optimized/targaoutput.cpp.ll
+; oiio/optimized/termoutput.cpp.ll
+; oiio/optimized/texture3d.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; oiio/optimized/typedesc.cpp.ll
+; oiio/optimized/xmp.cpp.ll
+; oiio/optimized/zfile.cpp.ll
+; tev/optimized/Channel.cpp.ll
+; tev/optimized/ClipboardImageLoader.cpp.ll
+; tev/optimized/Common.cpp.ll
+; tev/optimized/EmptyImageLoader.cpp.ll
+; tev/optimized/ExrImageLoader.cpp.ll
+; tev/optimized/ExrImageSaver.cpp.ll
+; tev/optimized/Image.cpp.ll
+; tev/optimized/ImageButton.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; tev/optimized/Ipc.cpp.ll
+; tev/optimized/MultiGraph.cpp.ll
+; tev/optimized/PfmImageLoader.cpp.ll
+; tev/optimized/QoiImageLoader.cpp.ll
+; tev/optimized/QoiImageSaver.cpp.ll
+; tev/optimized/StbiImageLoader.cpp.ll
+; tev/optimized/StbiLdrImageSaver.cpp.ll
+; tev/optimized/UberShader.cpp.ll
+; tev/optimized/main.cpp.ll
 ; velox/optimized/Expressions.cpp.ll
 ; wasmedge/optimized/alias.cpp.ll
 ; wasmedge/optimized/aot_section.cpp.ll
@@ -940,80 +1014,28 @@ entry:
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
-; wireshark/optimized/packet-ieee80211.c.ll
-; z3/optimized/bit_util.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %0, %1
-  %3 = icmp ugt i32 %2, 1114111
+  %3 = icmp ugt i32 %2, 65535
   ret i1 %3
 }
 
-; 15 occurrences:
-; abc/optimized/giaLf.c.ll
-; fmt/optimized/format-impl-test.cc.ll
-; hermes/optimized/dtoa.c.ll
-; jq/optimized/jv_dtoa.ll
-; libquic/optimized/dtoa.cc.ll
-; linux/optimized/resize.ll
-; linux/optimized/tcp.ll
-; linux/optimized/tcp_output.ll
-; linux/optimized/xfrm_policy.ll
-; llvm/optimized/LiteralSupport.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; minetest/optimized/COpenGLDriver.cpp.ll
-; php/optimized/zend_strtod.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; verilator/optimized/V3Table.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %0, %1
-  %3 = icmp ne i32 %2, 1
-  ret i1 %3
-}
-
-; 34 occurrences:
-; actix-rs/optimized/22x16e3cd4musvfe.ll
-; actix-rs/optimized/559mdouync0xx14h.ll
-; actix-rs/optimized/u8tt4f5khiooymn.ll
-; assimp/optimized/Assimp.cpp.ll
+; 8 occurrences:
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; cmake/optimized/zdict.c.ll
-; faiss/optimized/partitioning.cpp.ll
-; fmt/optimized/format.cc.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; linux/optimized/rhashtable.ll
 ; linux/optimized/tcp_output.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
-; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; mixbox/optimized/mixbox.ll
-; nori/optimized/nanovg.c.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/detokenize.c.ll
-; openusd/optimized/reconinter.c.ll
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rmodels.c.ll
-; raylib/optimized/rtextures.c.ll
-; spdlog/optimized/bundled_fmtlib_format.cpp.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; typst-rs/optimized/1aflftgqyuracvze.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
-; wireshark/optimized/packet-ieee80211-prism.c.ll
-; wireshark/optimized/packet-ieee80211.c.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %0, %1
-  %3 = icmp ult i32 %2, 16
+  %3 = icmp ult i32 %2, 16777216
   ret i1 %3
 }
 

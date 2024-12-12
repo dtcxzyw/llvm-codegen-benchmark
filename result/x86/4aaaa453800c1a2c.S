@@ -16,6 +16,12 @@ func0000000000000002:                   # @func0000000000000002
 	seta	%al
 	andb	%dil, %al
 	retq
+func000000000000000a:                   # @func000000000000000a
+	vcvtss2sd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm0, %xmm1
+	setae	%al
+	andb	%dil, %al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	vcvtss2sd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
@@ -24,7 +30,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vcvtss2sd	%xmm1, %xmm1, %xmm1
-	vucomisd	%xmm0, %xmm1
+	vucomisd	%xmm1, %xmm0
 	setnp	%cl
 	sete	%al
 	andb	%cl, %al

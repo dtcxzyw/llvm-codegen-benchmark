@@ -10,7 +10,7 @@ func0000000000000005:                   # @func0000000000000005
 	leaq	3(%rcx,%rax), %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	orl	$128, %esi
+	orl	$33554432, %esi                 # imm = 0x2000000
 	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
 	andq	%rdi, %rax
 	orq	%rsi, %rax

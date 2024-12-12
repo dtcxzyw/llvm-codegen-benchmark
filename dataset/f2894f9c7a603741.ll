@@ -26,7 +26,7 @@
 ; wireshark/optimized/packet-tpncp.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000221(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000841(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 123
   %3 = icmp eq i32 %1, 55
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/prism.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000224(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000844(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 123
   %3 = icmp eq i32 %1, 55
@@ -57,7 +57,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-ec2_oct.ll
 ; openssl/optimized/libcrypto-shlib-ecp_oct.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000022c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000084c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -5
   %3 = icmp eq i32 %2, 0
@@ -82,7 +82,7 @@ entry:
 ; quantlib/optimized/slovakia.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000842(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 6
   %3 = icmp eq i32 %1, 1
@@ -97,7 +97,7 @@ entry:
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000238(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000858(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 4
   %3 = icmp eq i32 %1, 1
@@ -108,22 +108,9 @@ entry:
 }
 
 ; 1 occurrences:
-; lief/optimized/psa_crypto_aead.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000230(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 88080896
-  %3 = icmp eq i32 %1, 88080640
-  %4 = or i1 %3, %2
-  %5 = icmp ugt i32 %0, 16
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000234(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000854(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 140
   %3 = icmp eq i32 %1, 225
@@ -136,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; hwloc/optimized/topology-x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000228(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000848(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -3
   %3 = icmp eq i32 %2, 0

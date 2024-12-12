@@ -1,10 +1,9 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; icu/optimized/csr2022.ll
 ; linux/optimized/nf_nat_proto.ll
 ; linux/optimized/rtnetlink.ll
 ; nix/optimized/worker.ll
-; postgres/optimized/exec.ll
 ; postgres/optimized/fe-misc.ll
 ; postgres/optimized/server.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
@@ -16,7 +15,7 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -34,6 +33,7 @@ entry:
 ; openspiel/optimized/spades.cc.ll
 ; pbrt-v4/optimized/samples.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
@@ -42,7 +42,7 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -52,6 +52,7 @@ entry:
 ; gromacs/optimized/dsyevr.cpp.ll
 ; gromacs/optimized/ssyevr.cpp.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:

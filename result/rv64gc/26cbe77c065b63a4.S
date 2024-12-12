@@ -1,19 +1,18 @@
-func0000000000000007:                   # @func0000000000000007
-	andi	a3, a1, 1
-	lui	a1, 49152
-	bnez	a3, .LBB0_2
-	mv	a1, a2
-.LBB0_2:                                # %entry
-	slliw	a0, a0, 16
-	or	a0, a0, a1
-	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a3, a0, 1
 	slliw	a0, a2, 24
-	beqz	a3, .LBB1_2
+	beqz	a3, .LBB0_2
 	li	a1, 12
-.LBB1_2:                                # %entry
+.LBB0_2:                                # %entry
 	or	a0, a0, a1
+	ret
+func0000000000000007:                   # @func0000000000000007
+	andi	a1, a1, 1
+	beqz	a1, .LBB1_2
+	li	a2, 9
+.LBB1_2:                                # %entry
+	slliw	a0, a0, 8
+	or	a0, a0, a2
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a3, a0, 1

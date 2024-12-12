@@ -18,7 +18,7 @@ define i8 @func0000000000000031(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -36,7 +36,7 @@ define i8 @func0000000000000005(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -59,7 +59,7 @@ define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 33
   %3 = zext i1 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -70,7 +70,7 @@ define i8 @func0000000000000029(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, -1
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -82,7 +82,7 @@ define i8 @func0000000000000030(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = zext i1 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -94,7 +94,7 @@ define i8 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 7
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -105,7 +105,7 @@ define i8 @func0000000000000011(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 32
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 

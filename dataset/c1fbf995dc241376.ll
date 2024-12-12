@@ -7,7 +7,7 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000001e9(i32 %0, i32 %1) #0 {
+define i32 @func00000000000003e9(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = sub nuw nsw i16 32, %2

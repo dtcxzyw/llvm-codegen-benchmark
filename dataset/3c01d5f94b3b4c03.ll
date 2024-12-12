@@ -1,5 +1,5 @@
 
-; 256 occurrences:
+; 253 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; c3c/optimized/sema_expr.c.ll
@@ -99,7 +99,6 @@
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SetTheory.cpp.ll
 ; llvm/optimized/SymbolizableObjectFile.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
@@ -120,7 +119,6 @@
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mold/optimized/arch-m68k.cc.ll
 ; mold/optimized/arch-ppc32.cc.ll
 ; mold/optimized/arch-sh4.cc.ll
@@ -187,7 +185,6 @@
 ; openjdk/optimized/compilerEvent.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/eventEmitter.ll
-; openjdk/optimized/frame_x86.ll
 ; openjdk/optimized/g1Trace.ll
 ; openjdk/optimized/gcTraceSend.ll
 ; openjdk/optimized/jfrNativeMemoryEvent.ll
@@ -226,7 +223,6 @@
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; qemu/optimized/hwprofile.ll
 ; qemu/optimized/qemu-io-cmds.c.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; rocksdb/optimized/arena_wrapped_db_iter.cc.ll
 ; rocksdb/optimized/block.cc.ll
 ; rocksdb/optimized/compaction_iterator.cc.ll
@@ -250,6 +246,7 @@
 ; wireshark/optimized/rtp_audio_routing_filter.cpp.ll
 ; yalantinglibs/optimized/conformance.pb.cc.ll
 ; yalantinglibs/optimized/conformance.struct_pb.cc.ll
+; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/descriptor.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
@@ -264,7 +261,7 @@ entry:
   ret i64 %4
 }
 
-; 66 occurrences:
+; 93 occurrences:
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; actix-rs/optimized/1h6chd9qxbb3rt70.ll
@@ -276,6 +273,7 @@ entry:
 ; actix-rs/optimized/3u1jix79tu9frq3m.ll
 ; actix-rs/optimized/52qe9gl98lnufrop.ll
 ; actix-rs/optimized/7zeo7o16a1wcxcn.ll
+; boost/optimized/graphml.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/3t9yvjig6ylv2f7b.ll
 ; coreutils-rs/optimized/4ws6541n7p4pbb05.ll
@@ -331,6 +329,32 @@ entry:
 ; wasmtime-rs/optimized/5lt5r4zkd9qrbog.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/01hs87ka34wj50pyvose4nrzw.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3hyavwlupfwy674k0u5ll7gv6.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/80403hw32s3ougvze8j2ycldj.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9cizhrhs33hhpljcbaafslqcf.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f4g1cwrteaiub5fsoifj5amxy.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i8 %2) #0 {
 entry:

@@ -33,13 +33,3 @@ func0000000000000007:                   # @func0000000000000007
 	movl	$3, %eax
 	cmovnel	%edi, %eax
 	retq
-func0000000000000013:                   # @func0000000000000013
-	cmpq	$2, %rsi
-	movl	$1, %eax
-	cmovael	%edi, %eax
-	retq
-func0000000000000029:                   # @func0000000000000029
-	cmpq	$2048, %rsi                     # imm = 0x800
-	movl	$2048, %eax                     # imm = 0x800
-	cmovll	%edi, %eax
-	retq

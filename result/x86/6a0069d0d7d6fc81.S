@@ -18,7 +18,7 @@ func0000000000000042:                   # @func0000000000000042
 	vminsd	%xmm1, %xmm2, %xmm1
 	vmovsd	.LCPI1_1(%rip), %xmm2           # xmm2 = [5.9999999999999998E-1,0.0E+0]
 	vmaxsd	%xmm1, %xmm2, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI2_0:
 	.quad	0x4059000000000000              # double 100
@@ -29,5 +29,5 @@ func00000000000000ca:                   # @func00000000000000ca
 	vminsd	%xmm1, %xmm2, %xmm1
 	vmovsd	.LCPI2_1(%rip), %xmm2           # xmm2 = [1.0E+1,0.0E+0]
 	vmaxsd	%xmm1, %xmm2, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	retq

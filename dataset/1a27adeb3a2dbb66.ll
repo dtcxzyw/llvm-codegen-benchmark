@@ -1,6 +1,5 @@
 
-; 23 occurrences:
-; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; 22 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cvc5/optimized/sygus_unif.cpp.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
@@ -29,7 +28,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
   %5 = uitofp i64 %4 to double
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

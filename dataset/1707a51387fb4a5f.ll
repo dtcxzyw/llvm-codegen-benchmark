@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/src.ll
 ; cpython/optimized/unicodeobject.ll
 ; hermes/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
@@ -15,34 +16,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; cmake/optimized/archive_getdate.c.ll
-; cmake/optimized/cm_get_date.c.ll
-; openmpi/optimized/tm_mapping.ll
-; pocketpy/optimized/compiler.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i8 %1) #0 {
-entry:
-  %2 = sext i8 %1 to i64
-  %3 = add nsw i64 %2, -48
-  %4 = mul nsw i64 %0, 10
-  %5 = add i64 %3, %4
-  ret i64 %5
-}
-
-; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
-entry:
-  %2 = sext i8 %1 to i64
-  %3 = add nsw i64 %2, -48
-  %4 = mul i64 %0, 10
-  %5 = add nsw i64 %3, %4
-  ret i64 %5
-}
-
-; 148 occurrences:
+; 146 occurrences:
+; boost/optimized/topology.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
 ; nix/optimized/archive.ll
@@ -130,13 +105,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -197,6 +169,33 @@ entry:
   %2 = sext i8 %1 to i64
   %3 = add nsw i64 %2, -48
   %4 = mul nsw i64 %0, 10
+  %5 = add nsw i64 %3, %4
+  ret i64 %5
+}
+
+; 4 occurrences:
+; cmake/optimized/archive_getdate.c.ll
+; cmake/optimized/cm_get_date.c.ll
+; openmpi/optimized/tm_mapping.ll
+; pocketpy/optimized/compiler.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i8 %1) #0 {
+entry:
+  %2 = sext i8 %1 to i64
+  %3 = add nsw i64 %2, -48
+  %4 = mul nsw i64 %0, 10
+  %5 = add i64 %3, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
+entry:
+  %2 = sext i8 %1 to i64
+  %3 = add nsw i64 %2, -48
+  %4 = mul i64 %0, 10
   %5 = add nsw i64 %3, %4
   ret i64 %5
 }

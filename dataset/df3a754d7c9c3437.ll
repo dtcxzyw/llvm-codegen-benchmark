@@ -1,8 +1,6 @@
 
-; 9 occurrences:
-; gromacs/optimized/dlasd0.cpp.ll
+; 7 occurrences:
 ; gromacs/optimized/dlasda.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll

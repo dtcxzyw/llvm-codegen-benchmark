@@ -14,12 +14,12 @@
 ; velox/optimized/MmapAllocator.cpp.ll
 ; yosys/optimized/fmt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
@@ -37,24 +37,24 @@ entry:
 ; qemu/optimized/block_vvfat.c.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; abc/optimized/ivyCutTrav.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000196(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000326(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
@@ -63,12 +63,12 @@ entry:
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -79,12 +79,12 @@ entry:
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; openspiel/optimized/twixtboard.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -94,24 +94,24 @@ entry:
 ; ceres/optimized/power_series_expansion_preconditioner.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = shl i64 %3, 16
   %5 = ashr i64 %4, 32
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -119,36 +119,36 @@ entry:
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = shl i64 %3, 16
   %5 = ashr i64 %4, 32
-  %6 = icmp slt i64 %5, %0
+  %6 = icmp sgt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = shl i64 %3, 16
   %5 = ashr i64 %4, 32
-  %6 = icmp ne i64 %5, %0
+  %6 = icmp ne i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = shl i64 %3, 16
   %5 = ashr i64 %4, 32
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 

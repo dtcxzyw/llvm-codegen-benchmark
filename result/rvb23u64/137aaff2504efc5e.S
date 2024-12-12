@@ -10,11 +10,16 @@ func0000000000000004:                   # @func0000000000000004
 	fsub.d	fa5, fa5, fa0
 	fmax.d	fa0, fa5, fa4
 	ret
+func0000000000000002:                   # @func0000000000000002
+	fli.d	fa5, 1.0
+	fsub.d	fa4, fa5, fa0
+	fmin.d	fa0, fa4, fa5
+	ret
 func000000000000000e:                   # @func000000000000000e
 	fli.d	fa5, 1.0
 	fsub.d	fa0, fa5, fa0
 	feq.d	a0, fa0, fa0
-	bnez	a0, .LBB1_2
+	bnez	a0, .LBB2_2
 	fmv.d.x	fa0, zero
-.LBB1_2:                                # %entry
+.LBB2_2:                                # %entry
 	ret

@@ -1,5 +1,6 @@
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/area.ll
 ; cmake/optimized/archive_read_disk_posix.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -27,10 +28,9 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
-; git/optimized/patch-delta.ll
 ; openssl/optimized/libcrypto-lib-packet.ll
 ; openssl/optimized/libcrypto-shlib-packet.ll
 ; openssl/optimized/libssl-shlib-packet.ll

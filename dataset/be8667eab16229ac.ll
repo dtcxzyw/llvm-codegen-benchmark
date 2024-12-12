@@ -1,5 +1,5 @@
 
-; 122 occurrences:
+; 123 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/abcHieCec.c.ll
@@ -27,7 +27,6 @@
 ; abc/optimized/cecChoice.c.ll
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecProve.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -112,6 +111,7 @@
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luau/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; opencv/optimized/simpleflow.cpp.ll
@@ -122,21 +122,23 @@
 ; redis/optimized/zipmap.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/cbaCom.c.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; nori/optimized/tabwidget.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; opencv/optimized/greyscale_rotated_luminance_source.cpp.ll
 ; opencv/optimized/motionSaliencyBinWangApr2014.cpp.ll
@@ -152,17 +154,16 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/date.ll
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; quantlib/optimized/date.ll
 ; slurm/optimized/slurm_step_layout.ll
 ; Function Attrs: nounwind
@@ -170,7 +171,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -185,7 +186,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = xor i32 %3, -1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -196,7 +197,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = xor i32 %3, -1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -207,7 +208,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = xor i32 %3, -1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -219,7 +220,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

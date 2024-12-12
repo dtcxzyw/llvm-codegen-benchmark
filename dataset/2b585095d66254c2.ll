@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = mul i64 %2, %0
@@ -10,10 +10,11 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; gromacs/optimized/quadraticsplinetable.cpp.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = mul i64 %2, %0
@@ -24,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = mul i64 %2, %0
@@ -39,7 +40,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ugt i64 %3, 576460752303423487
   ret i1 %4
 }
@@ -47,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = mul nuw i64 %2, %0
@@ -108,10 +109,10 @@ entry:
 ; cpython/optimized/longobject.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -119,10 +120,10 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp ugt i64 %3, 2305843009213693951
   ret i1 %4
 }
@@ -131,11 +132,11 @@ entry:
 ; cpython/optimized/mathmodule.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = mul nuw nsw i64 %2, %0
-  %4 = icmp ult i64 %3, 1073741824
+  %4 = icmp samesign ult i64 %3, 1073741824
   ret i1 %4
 }
 
@@ -144,22 +145,22 @@ entry:
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = mul nuw nsw i64 %2, %0
-  %4 = icmp ugt i64 %3, 1032
+  %4 = icmp samesign ugt i64 %3, 1032
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 32
   %3 = mul nuw nsw i64 %2, %0
-  %4 = icmp ugt i64 %3, 2147483647
+  %4 = icmp samesign ugt i64 %3, 2147483647
   ret i1 %4
 }
 
@@ -169,7 +170,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
@@ -177,10 +178,10 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp slt i64 %3, 2
   ret i1 %4
 }
@@ -188,10 +189,10 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp sgt i64 %3, 0
   ret i1 %4
 }
@@ -199,10 +200,10 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp ne i64 %3, 2
   ret i1 %4
 }

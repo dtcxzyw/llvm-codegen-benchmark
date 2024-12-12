@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/intel_timeline.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; stockfish/optimized/position.ll

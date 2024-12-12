@@ -1,7 +1,5 @@
 
-; 18 occurrences:
-; arrow/optimized/fixed-dtoa.cc.ll
-; double_conversion/optimized/fixed-dtoa.cc.ll
+; 15 occurrences:
 ; openjdk/optimized/barrierSetC1.ll
 ; openjdk/optimized/c1_FrameMap.ll
 ; openjdk/optimized/c1_LIRAssembler.ll
@@ -16,10 +14,9 @@
 ; openjdk/optimized/shenandoahBarrierSetC1_x86.ll
 ; openjdk/optimized/xBarrierSetC1.ll
 ; openjdk/optimized/zBarrierSetC1.ll
-; openusd/optimized/fixed-dtoa.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000424(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ne i64 %0, 7
@@ -32,7 +29,7 @@ entry:
 ; openjdk/optimized/library_call.ll
 ; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, 0
   %3 = icmp eq i32 %1, 1
@@ -61,7 +58,7 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000426(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, 0
   %3 = icmp slt i32 %1, 1096
@@ -75,7 +72,7 @@ entry:
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000042a(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i64 %0, 0
   %3 = icmp sgt i32 %1, 1086
@@ -88,7 +85,7 @@ entry:
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000438(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i64 %0, 0
   %3 = add i32 %1, -1023
@@ -97,10 +94,24 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; arrow/optimized/fixed-dtoa.cc.ll
+; double_conversion/optimized/fixed-dtoa.cc.ll
+; openusd/optimized/fixed-dtoa.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000434(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1075
+  %3 = icmp eq i64 %0, 0
+  %4 = icmp ult i32 %2, -128
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 8
   %3 = icmp eq i64 %0, 0
@@ -112,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/xmerge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, 0
   %3 = icmp eq i32 %1, 1

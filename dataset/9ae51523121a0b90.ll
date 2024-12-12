@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 23 occurrences:
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; darktable/optimized/OrfDecoder.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -21,6 +21,8 @@
 ; postgres/optimized/partbounds.ll
 ; qemu/optimized/migration_vmstate.c.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -68,13 +70,11 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
 ; openjdk/optimized/splashscreen_gif.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; postgres/optimized/pg_lzcompress.ll
@@ -91,9 +91,10 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
+; lvgl/optimized/lv_theme_default.ll
 ; opencv/optimized/corner.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
@@ -117,18 +118,6 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; stb/optimized/stb_hexwave.c.ll
-; z3/optimized/nla_order_lemmas.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp sgt i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = mul nsw i32 %4, %0
-  ret i32 %5
-}
-
 ; 5 occurrences:
 ; gromacs/optimized/biasparams.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
@@ -144,6 +133,17 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; z3/optimized/nla_order_lemmas.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %.inv = icmp slt i32 %2, 1
+  %3 = select i1 %.inv, i32 %1, i32 1
+  %4 = mul nsw i32 %3, %0
+  ret i32 %4
+}
+
 ; 3 occurrences:
 ; postgres/optimized/pg_lzcompress.ll
 ; postgres/optimized/pg_lzcompress_shlib.ll
@@ -155,17 +155,6 @@ entry:
   %4 = select i1 %3, i32 100, i32 %1
   %5 = mul nuw nsw i32 %4, %0
   ret i32 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/dgesdd.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %.not = icmp eq i32 %2, 0
-  %3 = select i1 %.not, i32 %1, i32 7
-  %4 = mul i32 %3, %0
-  ret i32 %4
 }
 
 attributes #0 = { nounwind }

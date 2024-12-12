@@ -1,29 +1,21 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v4.4s, #240, lsl #24
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v3.4s
-	and	v1.16b, v1.16b, v4.16b
-	and	v0.16b, v0.16b, v4.16b
-	mvn	v0.16b, v0.16b
-	mvn	v1.16b, v1.16b
+	add	w8, w0, w1
+	mvn	w8, w8
+	orr	w0, w8, #0xfffffff
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v4.4s, #63
-	add	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v2.4s
-	bic	v0.16b, v4.16b, v0.16b
-	bic	v1.16b, v4.16b, v1.16b
+	mov	w8, #63                         // =0x3f
+	add	w9, w0, w1
+	bic	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	add	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v2.4s
-	bic	v0.16b, v4.16b, v0.16b
-	bic	v1.16b, v4.16b, v1.16b
+	mov	w8, #1                          // =0x1
+	add	w9, w0, w1
+	bic	w0, w8, w9
 	ret
                                         // -- End function

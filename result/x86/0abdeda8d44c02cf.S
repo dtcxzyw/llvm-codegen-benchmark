@@ -1,16 +1,16 @@
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	sarq	$3, %rdx
 	addq	%rdi, %rdx
 	addq	%rsi, %rdx
 	sete	%al
 	retq
-func000000000000015c:                   # @func000000000000015c
+func00000000000002ac:                   # @func00000000000002ac
 	sarq	$4, %rdx
 	addq	%rdi, %rdx
 	addq	%rsi, %rdx
 	setne	%al
 	retq
-func00000000000001d1:                   # @func00000000000001d1
+func00000000000003a1:                   # @func00000000000003a1
 	sarq	$2, %rdx
 	addq	%rdi, %rdx
 	movl	$1500, %eax                     # imm = 0x5DC

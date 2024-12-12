@@ -8,7 +8,7 @@ func0000000000000018:                   // @func0000000000000018
                                         // -- End function
 .LCPI1_0:
 	.xword	0xbe7ad7f29abcaf48              // double -9.9999999999999995E-8
-func000000000000002c:                   // @func000000000000002c
+func000000000000004c:                   // @func000000000000004c
 // %bb.0:                               // %entry
 	adrp	x8, .LCPI1_0
 	ldr	d1, [x8, :lo12:.LCPI1_0]

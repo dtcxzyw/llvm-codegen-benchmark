@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 82 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
@@ -36,6 +36,7 @@
 ; glslang/optimized/iomapper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; glslang/optimized/reflection.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
 ; lief/optimized/des.c.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/regset.ll
@@ -91,7 +92,7 @@ entry:
   ret i32 %6
 }
 
-; 21 occurrences:
+; 18 occurrences:
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/fraigNode.c.ll
 ; abc/optimized/ifDec07.c.ll
@@ -99,10 +100,7 @@ entry:
 ; cpython/optimized/frameobject.ll
 ; icu/optimized/collationfastlatinbuilder.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/hdac_regmap.ll
-; linux/optimized/ht.ll
 ; linux/optimized/hwregs.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/tty_ioctl.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll

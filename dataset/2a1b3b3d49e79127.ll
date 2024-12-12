@@ -26,7 +26,7 @@ entry:
   ret { i64, i64 } %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; darktable/optimized/CiffEntry.cpp.ll
@@ -34,6 +34,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
+; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; node/optimized/libnode.queue.ll
 ; openjdk/optimized/jfrCheckpointWriter.ll

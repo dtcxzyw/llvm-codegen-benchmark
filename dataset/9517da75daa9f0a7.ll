@@ -1,5 +1,5 @@
 
-; 341 occurrences:
+; 339 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
@@ -95,8 +95,6 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/atkbd.ll
-; linux/optimized/fs-writeback.ll
-; linux/optimized/keyboard.ll
 ; linux/optimized/vt.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll

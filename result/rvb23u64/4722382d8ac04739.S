@@ -48,9 +48,31 @@ func000000000000000c:                   # @func000000000000000c
 	sext.b	a0, a0
 	slt	a0, a0, a1
 	ret
+func0000000000000028:                   # @func0000000000000028
+	andi	a1, a1, 255
+	andi	a0, a0, 255
+	sltu	a0, a0, a1
+	ret
+func000000000000002a:                   # @func000000000000002a
+	andi	a0, a0, 255
+	andi	a1, a1, 255
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
+	ret
 func0000000000000016:                   # @func0000000000000016
 	sext.b	a1, a1
 	sext.b	a0, a0
 	slt	a0, a0, a1
 	xori	a0, a0, 1
+	ret
+func0000000000000032:                   # @func0000000000000032
+	andi	a1, a1, 255
+	andi	a0, a0, 255
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
+	ret
+func0000000000000030:                   # @func0000000000000030
+	andi	a0, a0, 255
+	andi	a1, a1, 255
+	sltu	a0, a1, a0
 	ret

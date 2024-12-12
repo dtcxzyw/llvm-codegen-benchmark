@@ -1,6 +1,7 @@
 
-; 41 occurrences:
+; 42 occurrences:
 ; abc/optimized/mvcUtils.c.ll
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/archive_write_set_format_pax.c.ll
 ; cmake/optimized/cmJSONState.cxx.ll
 ; cmake/optimized/cmQtAutoGenerator.cxx.ll

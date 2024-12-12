@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; cpython/optimized/_datetimemodule.ll
 ; freetype/optimized/psaux.c.ll
@@ -14,6 +14,7 @@
 ; libquic/optimized/time_support.c.ll
 ; lief/optimized/x509.c.ll
 ; llvm/optimized/DiagnosticIDs.cpp.ll
+; lvgl/optimized/lv_area.ll
 ; ninja/optimized/deps_log.cc.ll
 ; openblas/optimized/dlaqtr.c.ll
 ; opencv/optimized/daisy.cpp.ll
@@ -23,8 +24,6 @@
 ; openjdk/optimized/jvmciCodeInstaller_x86.ll
 ; openspiel/optimized/Moves.cpp.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/cdef.c.ll
 ; php/optimized/pcre2_compile.ll
 ; qemu/optimized/tcg.c.ll
@@ -36,14 +35,14 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 13
-  %3 = select i1 %0, i32 %2, i32 %1
-  %4 = add nsw i32 %3, -13
-  ret i32 %4
+  %2 = add nsw i32 %1, -13
+  %3 = select i1 %0, i32 %1, i32 %2
+  ret i32 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; icu/optimized/gregocal.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; ruby/optimized/date_core.ll
 ; slurm/optimized/file_functions.ll
 ; Function Attrs: nounwind
@@ -72,8 +71,7 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
-; icu/optimized/hebrwcal.ll
+; 4 occurrences:
 ; libwebp/optimized/vp8l_enc.c.ll
 ; openjdk/optimized/constMethod.ll
 ; ruby/optimized/date_core.ll
@@ -81,14 +79,24 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 7
+  %2 = add i32 %1, -7
+  %3 = select i1 %0, i32 %1, i32 %2
+  ret i32 %3
+}
+
+; 2 occurrences:
+; boost/optimized/src.ll
+; gromacs/optimized/x2top.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i1 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 305
   %3 = select i1 %0, i32 %2, i32 %1
-  %4 = add i32 %3, -7
+  %4 = add nsw i32 %3, 308
   ret i32 %4
 }
 
-; 16 occurrences:
-; linux/optimized/fonts.ll
+; 15 occurrences:
 ; linux/optimized/rx.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/srcutree.ll
@@ -110,17 +118,6 @@ entry:
   %2 = add i32 %1, 2
   %3 = select i1 %0, i32 %2, i32 %1
   %4 = add i32 %3, 1
-  ret i32 %4
-}
-
-; 1 occurrences:
-; gromacs/optimized/x2top.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i1 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, -360
-  %3 = select i1 %0, i32 %2, i32 %1
-  %4 = add nsw i32 %3, 180
   ret i32 %4
 }
 

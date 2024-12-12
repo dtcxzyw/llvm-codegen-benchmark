@@ -40,11 +40,22 @@ func0000000000000006:                   # @func0000000000000006
 	vzeroupper
 	retq
 .LCPI4_0:
-	.quad	-3                              # 0xfffffffffffffffd
+	.quad	4096                            # 0x1000
+.LCPI4_1:
+	.quad	1073741823                      # 0x3fffffff
 func0000000000000018:                   # @func0000000000000018
+	vpbroadcastq	.LCPI4_0(%rip), %ymm1   # ymm1 = [4096,4096,4096,4096]
+	vpsllvq	%ymm0, %ymm1, %ymm0
+	vpcmpnleuq	.LCPI4_1(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
+	.quad	-3                              # 0xfffffffffffffffd
+func0000000000000038:                   # @func0000000000000038
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsllvq	%ymm0, %ymm1, %ymm0
-	vpcmpgtq	.LCPI4_0(%rip){1to4}, %ymm0, %k0
+	vpcmpgtq	.LCPI5_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

@@ -9,9 +9,9 @@
 define i1 @func0000000000000008(i64 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i16
-  %4 = add i16 %3, %1
+  %4 = add i16 %1, %3
   %5 = zext i16 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 

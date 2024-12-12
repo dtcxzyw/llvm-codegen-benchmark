@@ -4,7 +4,7 @@
 ; openmpi/optimized/rcache_grdma_component.ll
 ; php/optimized/head.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = icmp eq i32 %0, -1
@@ -23,17 +23,6 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = icmp slt i32 %0, 1
   %4 = select i1 %3, i32 -1, i32 %2
-  ret i32 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/ASTContext.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = icmp ult i32 %0, 2
-  %4 = select i1 %3, i32 2, i32 %2
   ret i32 %4
 }
 

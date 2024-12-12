@@ -24,17 +24,6 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; wireshark/optimized/packet-gtp.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000019(i8 %0, i8 %1) #0 {
-entry:
-  %2 = add nuw nsw i8 %0, %1
-  %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, -8
-  ret i32 %4
-}
-
 ; 3 occurrences:
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/x509_cert_parser.ll

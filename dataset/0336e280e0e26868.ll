@@ -232,11 +232,11 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %sum.shift = lshr i64 %2, 56
   %3 = trunc nuw nsw i64 %sum.shift to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
@@ -244,11 +244,11 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/compile-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000604(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %sum.shift = lshr i64 %2, 56
   %3 = trunc nuw nsw i64 %sum.shift to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }

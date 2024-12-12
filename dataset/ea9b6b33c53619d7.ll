@@ -11,6 +11,20 @@ entry:
   ret i32 %6
 }
 
+; 3 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = udiv i32 %2, 1461
+  %4 = add nuw nsw i32 %1, 60736
+  %5 = add nuw nsw i32 %4, %3
+  %6 = add nuw nsw i32 %5, %0
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/packet-collectd.c.ll
 ; Function Attrs: nounwind

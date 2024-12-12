@@ -1,10 +1,9 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/r8169_main.ll
-; qemu/optimized/tcg-op-ldst.c.ll
 ; ruby/optimized/date_strftime.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000004c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 36000
   %3 = icmp ne i32 %0, 0
@@ -40,7 +39,7 @@ entry:
 ; rocksdb/optimized/write_stall_stats.cc.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp eq i32 %0, 4
@@ -59,7 +58,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp ne i32 %0, 0
@@ -68,13 +67,12 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/intel_ddi.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; openssl/optimized/libcrypto-lib-bn_mpi.ll
 ; openssl/optimized/libcrypto-shlib-bn_mpi.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp sgt i32 %0, 0
@@ -88,7 +86,7 @@ entry:
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 6144
   %3 = icmp ugt i32 %0, 1
@@ -97,28 +95,11 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; c3c/optimized/llvm_codegen_builtins.c.ll
-; linux/optimized/dev_ioctl.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 17
-  %3 = icmp ult i32 %0, 1025
-  %4 = and i1 %3, %2
-  %5 = select i1 %4, i32 1, i32 2
-  ret i32 %5
-}
-
-; 5 occurrences:
+; 2 occurrences:
 ; linux/optimized/processor_core.ll
-; llvm/optimized/AArch64MCTargetDesc.cpp.ll
-; llvm/optimized/AArch64Subtarget.cpp.ll
-; opencv/optimized/norm.cpp.ll
 ; openjdk/optimized/Net.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2
   %3 = icmp eq i32 %0, 0
@@ -130,7 +111,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/ad_x86.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 2
   %3 = icmp eq i32 %0, 592
@@ -139,12 +120,25 @@ entry:
   ret i32 %5
 }
 
+; 2 occurrences:
+; c3c/optimized/llvm_codegen_builtins.c.ll
+; linux/optimized/dev_ioctl.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000084(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 5
+  %3 = icmp ult i32 %0, -5
+  %4 = and i1 %3, %2
+  %5 = select i1 %4, i32 10, i32 8
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000301(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 16777215
+  %2 = icmp samesign ugt i32 %1, 16777215
   %3 = icmp eq i32 %0, 0
   %4 = and i1 %3, %2
   %5 = select i1 %4, i32 3, i32 2
@@ -159,7 +153,7 @@ entry:
 ; luau/optimized/TypeInfer.cpp.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i32 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ne i32 %0, 0
@@ -171,7 +165,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = icmp eq i32 %0, 3
@@ -185,7 +179,7 @@ entry:
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/intel_sprite.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp eq i32 %0, 136
@@ -198,7 +192,7 @@ entry:
 ; llvm/optimized/X86PartialReduction.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a8(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000148(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 7
   %3 = icmp ugt i32 %0, 31
@@ -207,24 +201,26 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; wireshark/optimized/lemon.c.ll
+; 3 occurrences:
+; llvm/optimized/AArch64MCTargetDesc.cpp.ll
+; llvm/optimized/AArch64Subtarget.cpp.ll
+; opencv/optimized/norm.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000068(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000281(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp slt i32 %1, 32767
-  %3 = icmp ugt i32 %0, -32768
+  %2 = icmp samesign ult i32 %1, 5
+  %3 = icmp eq i32 %0, 0
   %4 = and i1 %3, %2
-  %5 = select i1 %4, i32 2, i32 4
+  %5 = select i1 %4, i32 1648, i32 1649
   ret i32 %5
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000086(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000306(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, -32768
+  %2 = icmp samesign ugt i32 %1, -32768
   %3 = icmp slt i32 %0, 32767
   %4 = and i1 %3, %2
   %5 = select i1 %4, i32 2, i32 4
@@ -234,7 +230,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/skl_universal_plane.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp ult i32 %0, 2
@@ -246,7 +242,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a6(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000146(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = icmp slt i32 %0, -1999

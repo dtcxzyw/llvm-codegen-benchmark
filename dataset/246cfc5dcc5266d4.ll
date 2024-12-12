@@ -5,20 +5,20 @@
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 7
   %5 = add nuw nsw i32 %0, 1
-  %6 = icmp ult i32 %5, %4
+  %6 = icmp samesign ult i32 %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/g1CardSet.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 2
@@ -28,8 +28,7 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
-; abc/optimized/ifCut.c.ll
+; 7 occurrences:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
@@ -38,7 +37,7 @@ entry:
 ; openjdk/optimized/g1CardSet.ll
 ; openjdk/optimized/g1RemSet.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 2
@@ -51,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 3

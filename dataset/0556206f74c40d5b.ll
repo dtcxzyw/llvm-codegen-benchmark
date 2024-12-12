@@ -37,6 +37,30 @@ entry:
 }
 
 ; 1 occurrences:
+; imgui/optimized/imgui.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000022(i1 %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp olt float %2, 7.500000e-01
+  %4 = and i1 %0, %3
+  %5 = fcmp olt float %1, 1.250000e-01
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; imgui/optimized/imgui.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c2(i1 %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp oge float %2, 0.000000e+00
+  %4 = and i1 %3, %0
+  %5 = fcmp olt float %1, 1.250000e-01
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000c4(i1 %0, float %1, float %2) #0 {

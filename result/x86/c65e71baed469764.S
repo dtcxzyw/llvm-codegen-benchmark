@@ -16,15 +16,15 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	shrq	$3, %rdx
 	cmpq	%rsi, %rdx
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000012:                   # @func0000000000000012
+func000000000000000a:                   # @func000000000000000a
 	shrq	$32, %rdx
 	cmpq	%rsi, %rdx
-	setae	%al
+	setbe	%al
 	orb	%dil, %al
 	retq

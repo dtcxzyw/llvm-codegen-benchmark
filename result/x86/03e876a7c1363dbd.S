@@ -19,7 +19,15 @@ func0000000000000008:                   # @func0000000000000008
 	cmpw	$6, %di
 	setae	%al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpw	$4, %di
+	setae	%al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	testw	%di, %di
 	setne	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpw	$6, %di
+	setb	%al
 	retq

@@ -1,17 +1,4 @@
 
-; 2 occurrences:
-; cpython/optimized/dtoa.ll
-; ruby/optimized/util.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp sgt i32 %2, 0
-  %4 = select i1 %3, i32 %1, i32 0
-  %5 = add i32 %4, %0
-  %6 = zext i32 %5 to i64
-  ret i64 %6
-}
-
 ; 48 occurrences:
 ; libsodium/optimized/libavx2_la-argon2-fill-block-avx2.ll
 ; libsodium/optimized/libavx512f_la-argon2-fill-block-avx512f.ll
@@ -66,7 +53,7 @@ define i64 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }
@@ -78,7 +65,7 @@ define i64 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -165,7 +152,7 @@ define i64 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -2147483648
   %4 = select i1 %3, i32 %1, i32 2147483647
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }

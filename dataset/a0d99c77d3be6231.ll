@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 30 occurrences:
 ; abc/optimized/aigFrames.c.ll
 ; abc/optimized/bmcBmcG.c.ll
 ; abc/optimized/bmcBmcS.c.ll
@@ -13,23 +13,19 @@
 ; icu/optimized/utrie2.ll
 ; icu/optimized/zonemeta.ll
 ; imgui/optimized/imgui_tables.cpp.ll
-; jq/optimized/regcomp.ll
 ; libjpeg-turbo/optimized/jdlhuff.c.ll
 ; llvm/optimized/BreakableToken.cpp.ll
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; ncnn/optimized/expanddims.cpp.ll
-; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openmpi/optimized/ompi_datatype_create_darray.ll
 ; openmpi/optimized/ompi_datatype_create_subarray.ll
-; openspiel/optimized/blackjack.cc.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
-; openusd/optimized/json.cpp.ll
-; openusd/optimized/warped_motion.c.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
@@ -94,7 +90,8 @@ entry:
   ret i32 %5
 }
 
-; 21 occurrences:
+; 22 occurrences:
+; abc/optimized/abcHieNew.c.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -121,7 +118,7 @@ define i32 @func000000000000000d(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 2
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -138,7 +135,8 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 12 occurrences:
+; boost/optimized/gregorian.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; icu/optimized/calendar.ll
 ; linux/optimized/cmdline.ll
@@ -147,6 +145,8 @@ entry:
 ; snappy/optimized/snappy.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-openflow_v4.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
@@ -192,7 +192,7 @@ define i32 @func0000000000000007(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -203,7 +203,7 @@ define i32 @func000000000000000b(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 4
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -214,7 +214,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 4
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

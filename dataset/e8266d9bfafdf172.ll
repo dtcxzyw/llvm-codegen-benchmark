@@ -8,7 +8,7 @@
 ; wasmtime-rs/optimized/377rrvl9zeztt32x.ll
 ; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = trunc nuw i32 %0 to i1
   %2 = icmp eq i32 %0, 0

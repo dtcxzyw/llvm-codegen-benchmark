@@ -35,7 +35,8 @@ func0000000000000010:                   # @func0000000000000010
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 func00000000000000c7:                   # @func00000000000000c7
-	vptestmw	%xmm1, %xmm1, %k0
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpcmpneqw	%xmm2, %xmm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero

@@ -12,7 +12,7 @@
 ; linux/optimized/config.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/gss_generic_token.ll
-; linux/optimized/inat.ll
+; linux/optimized/hooks.ll
 ; linux/optimized/intel_lrc.ll
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/netdev.ll
@@ -419,11 +419,11 @@ entry:
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

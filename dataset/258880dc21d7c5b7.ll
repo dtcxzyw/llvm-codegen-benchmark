@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; assimp/optimized/MS3DLoader.cpp.ll
-; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll

@@ -1,23 +1,15 @@
-func0000000000000000:                   # @func0000000000000000
-	shll	$16, %edx
-	orl	%esi, %edx
-	movl	%edx, %eax
-	orl	$64, %eax
+func000000000000000f:                   # @func000000000000000f
+	shll	$5, %edx
+	leal	1024(%rsi,%rdx), %eax
+	movl	%esi, %ecx
+	orl	%edx, %ecx
 	testb	$1, %dil
-	cmovel	%edx, %eax
+	cmovel	%ecx, %eax
 	retq
 func000000000000000e:                   # @func000000000000000e
 	leal	(%rsi,%rdx,2), %ecx
 	movl	%ecx, %eax
 	orl	$8, %eax
-	testb	$1, %dil
-	cmovel	%ecx, %eax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	shll	$8, %edx
-	leal	-16777216(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq

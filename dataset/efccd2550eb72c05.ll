@@ -32,7 +32,8 @@ entry:
   ret i16 %5
 }
 
-; 132 occurrences:
+; 128 occurrences:
+; boost/optimized/static_string.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -65,14 +66,12 @@ entry:
 ; linux/optimized/esp6.ll
 ; linux/optimized/eth.ll
 ; linux/optimized/exthdrs.ll
-; linux/optimized/fec.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/gen_stats.ll
 ; linux/optimized/genetlink.ll
 ; linux/optimized/gre_offload.ll
 ; linux/optimized/gro.ll
-; linux/optimized/gso.ll
 ; linux/optimized/ibss.ll
 ; linux/optimized/icmp.ll
 ; linux/optimized/igmp.ll
@@ -88,8 +87,6 @@ entry:
 ; linux/optimized/ipmr_base.ll
 ; linux/optimized/lzo1x_compress.ll
 ; linux/optimized/mcast.ll
-; linux/optimized/mcast_snoop.ll
-; linux/optimized/mm.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/neighbour.ll
@@ -106,7 +103,6 @@ entry:
 ; linux/optimized/nf_reject_ipv6.ll
 ; linux/optimized/nfnetlink_log.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/pause.ll
 ; linux/optimized/pmsr.ll
 ; linux/optimized/policy.ll
 ; linux/optimized/raw.ll

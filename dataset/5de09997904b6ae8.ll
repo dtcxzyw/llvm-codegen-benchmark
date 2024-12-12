@@ -17,7 +17,7 @@
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -783,7 +783,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1084,6 +1083,7 @@ entry:
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
+; lvgl/optimized/lv_display.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
@@ -1113,7 +1113,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -1139,7 +1139,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -1162,7 +1162,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }

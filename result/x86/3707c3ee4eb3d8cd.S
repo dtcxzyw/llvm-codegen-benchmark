@@ -18,11 +18,6 @@ func0000000000000003:                   # @func0000000000000003
 	imull	%esi, %edx
 	leal	(%rdx,%rdi), %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	notl	%edx
-	imull	%esi, %edx
-	leal	(%rdx,%rdi), %eax
-	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	$1, %edx
 	imull	%esi, %edx

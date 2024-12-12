@@ -11,7 +11,7 @@
 ; linux/optimized/skl_watermark.ll
 ; llvm/optimized/TapiFile.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000061(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i32 66, i32 3
@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-pw-fr.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000101(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 16
   %3 = select i1 %2, i32 0, i32 3
@@ -37,12 +37,12 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000094(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000134(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 16
   %3 = select i1 %2, i32 0, i32 4
   %4 = or disjoint i32 %3, 2
-  %5 = icmp ult i8 %0, 4
+  %5 = icmp samesign ult i8 %0, 4
   %6 = select i1 %5, i32 %3, i32 %4
   ret i32 %6
 }

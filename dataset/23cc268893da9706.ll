@@ -16,19 +16,6 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-ot-shaper-arabic.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = icmp eq i8 %1, 0
-  %4 = select i1 %3, i32 %0, i32 %2
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; php/optimized/decode.ll
 ; Function Attrs: nounwind
@@ -84,10 +71,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-iec104.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = icmp ult i8 %1, 70
+  %3 = icmp samesign ult i8 %1, 70
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -95,10 +82,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/EATextUtil.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000038(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = icmp ugt i8 %1, 57
+  %3 = icmp samesign ugt i8 %1, 57
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }

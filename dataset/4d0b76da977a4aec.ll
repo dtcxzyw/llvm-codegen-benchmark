@@ -1,6 +1,7 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; llvm/optimized/ExprEngineC.cpp.ll
+; lvgl/optimized/lv_group.ll
 ; openjdk/optimized/ad_x86.ll
 ; z3/optimized/arith_rewriter.cpp.ll
 ; z3/optimized/dep_intervals.cpp.ll

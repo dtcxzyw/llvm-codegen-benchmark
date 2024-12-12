@@ -28,7 +28,6 @@
 ; hyperscan/optimized/rose_build_misc.cpp.ll
 ; icu/optimized/ucnv_ct.ll
 ; libquic/optimized/base64_bio.c.ll
-; linux/optimized/input-mt.ll
 ; llvm/optimized/CommentLexer.cpp.ll
 ; llvm/optimized/CoverageMappingReader.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -58,6 +57,7 @@
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; zxing/optimized/BitArray.cpp.ll
+; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, ptr %1, ptr %2) #0 {
 entry:
@@ -65,21 +65,35 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = and i64 %5, -128
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
-; 12 occurrences:
+; 6 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
-; cmake/optimized/zstd_opt.c.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; hyperscan/optimized/flood_compile.cpp.ll
+; minetest/optimized/CSkinnedMesh.cpp.ll
+; postgres/optimized/inet_net_pton.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = and i64 %5, 4294967295
+  %7 = icmp samesign ult i64 %0, %6
+  ret i1 %7
+}
+
+; 8 occurrences:
+; cmake/optimized/zstd_lazy.c.ll
+; cmake/optimized/zstd_opt.c.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/CoverageMappingReader.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
 ; msgpack/optimized/msgpack_variant_mapbased.cpp.ll
 ; openjdk/optimized/jfrEventClassTransformer.ll
-; postgres/optimized/inet_net_pton.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
@@ -89,11 +103,11 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = and i64 %5, 4294967295
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 
-; 18 occurrences:
+; 16 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -105,8 +119,6 @@ entry:
 ; hermes/optimized/JSRegExp.cpp.ll
 ; hermes/optimized/RegexParser.cpp.ll
 ; hermes/optimized/RegexSerialization.cpp.ll
-; linux/optimized/ip6_output.ll
-; linux/optimized/netfilter.ll
 ; opencv/optimized/upcean_decoder.cpp.ll
 ; openjdk/optimized/psOldGen.ll
 ; zstd/optimized/zstd_v01.c.ll
@@ -119,7 +131,26 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = and i64 %5, -8
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp ugt i64 %0, %6
+  ret i1 %7
+}
+
+; 7 occurrences:
+; arrow/optimized/feather.cc.ll
+; arrow/optimized/metadata_internal.cc.ll
+; assimp/optimized/3DSLoader.cpp.ll
+; flatbuffers/optimized/idl_parser.cpp.ll
+; flatbuffers/optimized/reflection.cpp.ll
+; linux/optimized/ip6_output.ll
+; linux/optimized/netfilter.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = and i64 %5, 4294967295
+  %7 = icmp samesign ugt i64 %0, %6
   ret i1 %7
 }
 
@@ -133,7 +164,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = and i64 %5, 2147483647
-  %7 = icmp sgt i64 %6, %0
+  %7 = icmp slt i64 %0, %6
   ret i1 %7
 }
 

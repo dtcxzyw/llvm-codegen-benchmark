@@ -53,50 +53,77 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 8
 .LBB2_4:                                # %entry
 	ret
+func000000000000000a:                   # @func000000000000000a
+	andi	a3, a1, 1
+	sext.w	a1, a0
+	bnez	a3, .LBB3_2
+	andi	a2, a2, 1
+	xori	a0, a2, 5
+	li	a2, 99
+	blt	a2, a1, .LBB3_3
+	j	.LBB3_4
+.LBB3_2:
+	li	a0, 6
+	li	a2, 99
+	bge	a2, a1, .LBB3_4
+.LBB3_3:                                # %entry
+	li	a0, 5
+.LBB3_4:                                # %entry
+	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a3, a1, 1
+	sext.w	a1, a0
+	bnez	a3, .LBB4_2
+	andi	a0, a2, 1
+	addi	a0, a0, 3
+	li	a2, 999
+	bltu	a2, a1, .LBB4_3
+	j	.LBB4_4
+.LBB4_2:
+	li	a0, 5
+	li	a2, 999
+	bgeu	a2, a1, .LBB4_4
+.LBB4_3:                                # %entry
+	li	a0, 6
+.LBB4_4:                                # %entry
+	ret
 func0000000000000004:                   # @func0000000000000004
 	mv	a3, a0
 	andi	a2, a2, 1
 	andi	a1, a1, 1
-	bnez	a2, .LBB3_2
+	bnez	a2, .LBB5_2
 	li	a0, 8
 	sext.w	a3, a3
-	bnez	a1, .LBB3_3
-	j	.LBB3_4
-.LBB3_2:
+	bnez	a1, .LBB5_3
+	j	.LBB5_4
+.LBB5_2:
 	li	a0, 4
 	sext.w	a3, a3
-	beqz	a1, .LBB3_4
-.LBB3_3:
+	beqz	a1, .LBB5_4
+.LBB5_3:
 	li	a0, 2
-.LBB3_4:                                # %entry
+.LBB5_4:                                # %entry
 	li	a1, 3
-	bltu	a3, a1, .LBB3_6
+	bltu	a3, a1, .LBB5_6
 	ret
-.LBB3_6:                                # %entry
+.LBB5_6:                                # %entry
 	li	a0, 1
 	ret
-func000000000000000a:                   # @func000000000000000a
-	mv	a3, a0
-	andi	a1, a1, 1
+func0000000000000014:                   # @func0000000000000014
+	andi	a3, a1, 1
+	sext.w	a1, a0
+	bnez	a3, .LBB6_2
 	andi	a2, a2, 1
-	lui	a0, 1
-	bnez	a2, .LBB4_2
-	addiw	a0, a0, -2007
-	sext.w	a3, a3
-	lui	a2, 3
-	bnez	a1, .LBB4_3
-	j	.LBB4_4
-.LBB4_2:
-	addiw	a0, a0, -1448
-	sext.w	a3, a3
-	lui	a2, 3
-	beqz	a1, .LBB4_4
-.LBB4_3:
-	addiw	a0, a2, 1544
-.LBB4_4:                                # %entry
-	li	a1, 8
-	blt	a1, a3, .LBB4_6
-	ret
-.LBB4_6:                                # %entry
-	addiw	a0, a2, 1533
+	li	a0, 4
+	sub	a0, a0, a2
+	li	a2, 128
+	bltu	a1, a2, .LBB6_3
+	j	.LBB6_4
+.LBB6_2:
+	li	a0, 2
+	li	a2, 128
+	bgeu	a1, a2, .LBB6_4
+.LBB6_3:                                # %entry
+	li	a0, 1
+.LBB6_4:                                # %entry
 	ret

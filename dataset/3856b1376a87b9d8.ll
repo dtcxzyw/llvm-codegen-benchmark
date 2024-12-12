@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/ciMethod.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031c(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c2c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp eq i32 %3, 1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/ciMethod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c21(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp eq i32 %3, 2
@@ -27,7 +27,7 @@ entry:
 ; linux/optimized/iov_iter.ll
 ; slurm/optimized/KangarooTwelve.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp eq i32 %3, 8192
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000042c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp eq i32 %3, 32
@@ -52,7 +52,7 @@ entry:
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000426(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, 8
@@ -65,7 +65,7 @@ entry:
 ; linux/optimized/scatterlist.ll
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp ne i32 %3, 1
@@ -75,21 +75,9 @@ entry:
 }
 
 ; 1 occurrences:
-; postgres/optimized/numeric.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000388(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = icmp ugt i32 %3, 9
-  %5 = icmp ugt i64 %0, 1
-  %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000048a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 0
@@ -119,10 +107,10 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = icmp eq i64 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6

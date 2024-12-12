@@ -54,31 +54,31 @@ func00000000000000ca:                   # @func00000000000000ca
 	bnez	a0, .LBB3_2
 .LBB3_4:                                # %entry
 	ret
-func00000000000000cc:                   # @func00000000000000cc
-	fle.d	a0, fa2, fa1
+func0000000000000024:                   # @func0000000000000024
+	flt.d	a0, fa1, fa2
 	beqz	a0, .LBB4_3
-	fle.d	a0, fa0, fa1
+	flt.d	a0, fa0, fa1
 	beqz	a0, .LBB4_4
 .LBB4_2:                                # %entry
 	fmv.d	fa0, fa1
 	ret
 .LBB4_3:                                # %entry
 	fmv.d	fa1, fa2
-	fle.d	a0, fa0, fa2
+	flt.d	a0, fa0, fa2
 	bnez	a0, .LBB4_2
 .LBB4_4:                                # %entry
 	ret
-func0000000000000024:                   # @func0000000000000024
-	flt.d	a0, fa1, fa2
+func00000000000000cc:                   # @func00000000000000cc
+	fle.d	a0, fa2, fa1
 	beqz	a0, .LBB5_3
-	flt.d	a0, fa0, fa1
+	fle.d	a0, fa0, fa1
 	beqz	a0, .LBB5_4
 .LBB5_2:                                # %entry
 	fmv.d	fa0, fa1
 	ret
 .LBB5_3:                                # %entry
 	fmv.d	fa1, fa2
-	flt.d	a0, fa0, fa2
+	fle.d	a0, fa0, fa2
 	bnez	a0, .LBB5_2
 .LBB5_4:                                # %entry
 	ret

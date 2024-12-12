@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; arrow/optimized/coo_converter.cc.ll
 ; gromacs/optimized/biasstate.cpp.ll
@@ -21,9 +21,8 @@
 ; ipopt/optimized/IpPenaltyLSAcceptor.ll
 ; ipopt/optimized/IpProbingMuOracle.ll
 ; opencv/optimized/brisk.cpp.ll
-; opencv/optimized/tf_importer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = lshr i64 %2, 3

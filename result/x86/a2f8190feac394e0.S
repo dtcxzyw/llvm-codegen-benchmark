@@ -1,10 +1,10 @@
-func0000000000000012:                   # @func0000000000000012
+func00000000000000c0:                   # @func00000000000000c0
 	leal	1(%rsi,%rdx), %eax
 	cltq
-	addq	%rdi, %rax
+	leaq	(%rdi,%rax,8), %rax
 	retq
-func00000000000000c0:                   # @func00000000000000c0
-	leal	-1(%rsi,%rdx), %eax
+func0000000000000012:                   # @func0000000000000012
+	leal	1(%rsi,%rdx), %eax
 	cltq
 	addq	%rdi, %rax
 	retq
@@ -28,13 +28,13 @@ func0000000000000042:                   # @func0000000000000042
 	cltq
 	addq	%rdi, %rax
 	retq
-func0000000000000082:                   # @func0000000000000082
-	leal	4(%rsi,%rdx), %eax
+func0000000000000017:                   # @func0000000000000017
+	leal	2(%rsi,%rdx), %eax
 	cltq
 	addq	%rdi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	leal	1(%rsi,%rdx), %eax
+func0000000000000082:                   # @func0000000000000082
+	leal	4(%rsi,%rdx), %eax
 	cltq
 	addq	%rdi, %rax
 	retq
@@ -43,10 +43,10 @@ func0000000000000022:                   # @func0000000000000022
 	cltq
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	leal	1(%rsi,%rdx), %eax
+func0000000000000000:                   # @func0000000000000000
+	leal	4(%rsi,%rdx), %eax
 	cltq
-	leaq	(%rdi,%rax,4), %rax
+	addq	%rdi, %rax
 	retq
 func00000000000000d2:                   # @func00000000000000d2
 	leal	1(%rsi,%rdx), %eax
@@ -63,17 +63,12 @@ func00000000000000d0:                   # @func00000000000000d0
 	cltq
 	addq	%rdi, %rax
 	retq
-func0000000000000030:                   # @func0000000000000030
-	leal	1(%rsi,%rdx), %eax
-	cltq
-	leaq	(%rdi,%rax,8), %rax
-	retq
 func0000000000000006:                   # @func0000000000000006
 	leal	1(%rsi,%rdx), %eax
 	cltq
 	addq	%rdi, %rax
 	retq
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	leal	1(%rsi,%rdx), %eax
 	cltq
 	leaq	(%rdi,%rax,4), %rax

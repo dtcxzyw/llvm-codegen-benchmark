@@ -1,11 +1,10 @@
 
-; 30 occurrences:
+; 32 occurrences:
 ; actix-rs/optimized/3afp9uuicyvwgbsz.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
@@ -30,6 +29,9 @@
 ; qemu/optimized/ui_vnc.c.ll
 ; tree-sitter-rs/optimized/2ysit6xak1d4lr67.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

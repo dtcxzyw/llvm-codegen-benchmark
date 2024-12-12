@@ -4,7 +4,7 @@
 ; openexr/optimized/chunk.c.ll
 ; openjdk/optimized/jquant1.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sext i32 %1 to i64
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sext i32 %1 to i64

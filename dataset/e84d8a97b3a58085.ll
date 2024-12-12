@@ -7,7 +7,7 @@
 ; pugixml/optimized/pugixml.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000003a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
   %4 = ashr exact i64 %1, 5
@@ -23,7 +23,7 @@ entry:
 ; openusd/optimized/valueUtils.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000003a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = ashr exact i64 %1, 3

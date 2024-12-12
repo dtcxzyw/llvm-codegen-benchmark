@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; linux/optimized/io_pgtable_v2.ll
+; 5 occurrences:
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll

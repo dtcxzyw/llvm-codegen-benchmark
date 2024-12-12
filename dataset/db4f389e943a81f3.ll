@@ -1,12 +1,12 @@
 
-; 57 occurrences:
+; 62 occurrences:
+; actix-rs/optimized/comsm606o4zjj7a.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; git/optimized/merge-ort.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5system.c.ll
 ; icu/optimized/numparse_decimal.ll
-; libevent/optimized/event.c.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/dvo_ivch.ll
@@ -33,6 +33,9 @@
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_switch.ll
 ; oiio/optimized/Codec.cpp.ll
 ; openjdk/optimized/c1_GraphBuilder.ll
 ; openjdk/optimized/ciTypeFlow.ll
@@ -57,6 +60,8 @@
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; wireshark/optimized/packet-twamp.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0) #0 {
 entry:

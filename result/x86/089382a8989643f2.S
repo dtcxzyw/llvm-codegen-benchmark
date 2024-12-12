@@ -1,9 +1,3 @@
-func000000000000000c:                   # @func000000000000000c
-	testq	%rsi, %rsi
-	sets	%al
-	andb	%dil, %al
-	movzbl	%al, %eax
-	retq
 func0000000000000018:                   # @func0000000000000018
 	testq	%rsi, %rsi
 	setne	%al
@@ -17,8 +11,14 @@ func0000000000000002:                   # @func0000000000000002
 	movzbl	%al, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	cmpq	$8, %rsi
+	cmpq	$2, %rsi
 	setb	%al
+	andb	%dil, %al
+	movzbl	%al, %eax
+	retq
+func000000000000000c:                   # @func000000000000000c
+	testq	%rsi, %rsi
+	sets	%al
 	andb	%dil, %al
 	movzbl	%al, %eax
 	retq

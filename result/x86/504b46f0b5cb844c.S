@@ -3,24 +3,24 @@ func0000000000000001:                   # @func0000000000000001
 	testw	%si, %si
 	cmovel	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	1022(%rdx), %eax
 	cmpw	$16, %si
 	cmovel	%edi, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	leal	256(%rdx), %eax
 	movzwl	%si, %ecx
 	cmpl	$257, %ecx                      # imm = 0x101
 	cmovbl	%edi, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leal	1(%rdx), %eax
 	movzwl	%si, %ecx
 	cmpl	$56320, %ecx                    # imm = 0xDC00
 	cmovel	%edi, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	leal	16(%rdx), %eax
 	cmpw	$17, %si
 	cmovael	%edi, %eax
@@ -30,12 +30,12 @@ func0000000000000008:                   # @func0000000000000008
 	cmpw	$5, %si
 	cmovael	%edi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	leal	-1(%rdx), %eax
 	cmpw	$7, %si
 	cmovbl	%edi, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leal	-1(%rdx), %eax
 	testw	%si, %si
 	cmovlel	%edi, %eax

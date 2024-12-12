@@ -1,8 +1,8 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002b:                   # @func000000000000002b
 	leaq	(%rdx,%rdx,8), %rax
 	leaq	-40(%rsi,%rax,8), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	shlq	$5, %rdx
 	leaq	-32(%rsi,%rdx), %rcx
 	xorl	%eax, %eax
@@ -19,5 +19,5 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
-	addq	$40, %rax
+	addq	$32, %rax
 	retq

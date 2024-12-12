@@ -17,7 +17,7 @@
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000d81(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 7
   %4 = icmp eq i64 %0, %1
@@ -25,13 +25,12 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
-; yosys/optimized/BigUnsigned.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
   %4 = icmp ult i64 %0, %1
@@ -79,7 +78,7 @@ entry:
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c7(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000d87(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 2
   %4 = icmp sle i64 %0, %1
@@ -90,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/CommandLine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -3
   %4 = icmp ult i64 %3, -2
@@ -102,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 1
   %4 = icmp ugt i64 %0, %1
@@ -113,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; grpc/optimized/tcp_posix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000d8c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 259
   %4 = icmp ne i64 %0, %1
@@ -124,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000089(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2147483648
   %4 = icmp ult i64 %3, 4294967296
@@ -136,7 +135,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/EAMemory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4
   %4 = icmp ne i64 %3, 4

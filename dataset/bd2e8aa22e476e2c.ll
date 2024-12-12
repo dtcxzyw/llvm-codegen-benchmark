@@ -4,7 +4,7 @@
 ; mitsuba3/optimized/scene.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0) #0 {
+define i1 @func000000000000018c(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %2 = icmp ne i32 %1, 0
@@ -19,7 +19,7 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %2 = icmp eq i32 %1, 0

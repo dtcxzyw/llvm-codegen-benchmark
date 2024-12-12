@@ -1,19 +1,4 @@
 
-; 3 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
-entry:
-  %.fr = freeze i32 %1
-  %2 = srem i32 %.fr, 12
-  %3 = sub i32 %2, %.fr
-  %4 = add i32 %3, %0
-  %5 = mul nsw i32 %4, 367
-  ret i32 %5
-}
-
 ; 8 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -43,6 +28,19 @@ entry:
   %3 = sub i32 %2, %.fr
   %4 = add nsw i32 %3, %0
   %5 = mul i32 %4, 365
+  ret i32 %5
+}
+
+; 1 occurrences:
+; libquic/optimized/time_support.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+entry:
+  %.fr = freeze i32 %1
+  %2 = srem i32 %.fr, 12
+  %3 = sub i32 %2, %.fr
+  %4 = add i32 %0, %3
+  %5 = mul nsw i32 %4, 367
   ret i32 %5
 }
 

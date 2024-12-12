@@ -14,10 +14,11 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/export.c.ll
 ; openjdk/optimized/ScaledBlit.ll
 ; openusd/optimized/restoration.c.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:

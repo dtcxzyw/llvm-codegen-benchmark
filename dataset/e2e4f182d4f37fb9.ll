@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 54 occurrences:
 ; cmake/optimized/zstd_opt.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; freetype/optimized/type42.c.ll
@@ -20,6 +20,7 @@
 ; luajit/optimized/minilua.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
@@ -57,7 +58,7 @@
 define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl nuw nsw i32 %3, 16
   ret i32 %4
 }
@@ -75,7 +76,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl i32 %3, 24
   ret i32 %4
 }
@@ -90,7 +91,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl i32 %3, 4
   ret i32 %4
 }
@@ -118,7 +119,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl i32 %3, 1
   ret i32 %4
 }
@@ -130,7 +131,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl nsw i32 %3, 8
   ret i32 %4
 }
@@ -142,7 +143,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl nsw i32 %3, 3
   ret i32 %4
 }
@@ -153,8 +154,23 @@ entry:
 define i32 @func0000000000000013(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl nuw nsw i32 %3, 2
+  ret i32 %4
+}
+
+; 5 occurrences:
+; boost/optimized/src.ll
+; cpython/optimized/bytesobject.ll
+; cpython/optimized/unicodeobject.ll
+; redis/optimized/lua_cjson.ll
+; tev/optimized/Common.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000017(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = add nsw i32 %0, %2
+  %4 = shl nuw nsw i32 %3, 12
   ret i32 %4
 }
 
@@ -164,7 +180,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl i32 %3, 3
   ret i32 %4
 }
@@ -175,7 +191,7 @@ entry:
 define i32 @func000000000000001d(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl nsw i32 %3, 3
   ret i32 %4
 }
@@ -186,7 +202,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = shl i32 %3, 3
   ret i32 %4
 }
@@ -197,7 +213,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl nuw i32 %3, 3
   ret i32 %4
 }
@@ -208,7 +224,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl i32 %3, 2
   ret i32 %4
 }
@@ -220,7 +236,7 @@ entry:
 define i32 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl nuw nsw i32 %3, 2
   ret i32 %4
 }
@@ -231,7 +247,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = shl i32 %3, 5
   ret i32 %4
 }
@@ -242,7 +258,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl i32 %3, 12
   ret i32 %4
 }
@@ -257,22 +273,8 @@ entry:
 define i32 @func000000000000001e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl nuw i32 %3, 16
-  ret i32 %4
-}
-
-; 4 occurrences:
-; cpython/optimized/bytesobject.ll
-; cpython/optimized/unicodeobject.ll
-; redis/optimized/lua_cjson.ll
-; tev/optimized/Common.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000017(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = add nsw i32 %2, %0
-  %4 = shl nuw nsw i32 %3, 12
   ret i32 %4
 }
 

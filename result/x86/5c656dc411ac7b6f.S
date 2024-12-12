@@ -26,14 +26,14 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rsi
 	setb	%al
 	retq
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	movl	%edx, %eax
 	decq	%rsi
 	imulq	%rax, %rsi
 	cmpq	%rdi, %rsi
 	seta	%al
 	retq
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	movl	%edx, %eax
 	incq	%rsi
 	imulq	%rax, %rsi

@@ -15,7 +15,7 @@ define i8 @func000000000000007a(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = mul nuw nsw i16 %2, 3
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   %5 = lshr i16 %4, 2
   %6 = trunc nuw i16 %5 to i8
   ret i8 %6

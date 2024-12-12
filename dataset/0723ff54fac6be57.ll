@@ -16,6 +16,19 @@ entry:
   ret i32 %6
 }
 
+; 1 occurrences:
+; php/optimized/unixtime2tm.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000f8(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = mul nuw nsw i64 %2, 4294963696
+  %4 = add nuw nsw i64 %3, %0
+  %5 = trunc i64 %4 to i32
+  %6 = sdiv i32 %5, 60
+  ret i32 %6
+}
+
 ; 4 occurrences:
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/iterative_schur_complement_solver.cc.ll

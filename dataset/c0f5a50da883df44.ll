@@ -1,6 +1,7 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; linux/optimized/dma-iommu.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
@@ -44,6 +45,19 @@ entry:
   %5 = sub i64 0, %1
   %6 = and i64 %4, %5
   %7 = sub nuw i64 %6, %0
+  ret i64 %7
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000080(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %2, 62
+  %4 = add i64 %3, %1
+  %5 = sub i64 0, %1
+  %6 = and i64 %4, %5
+  %7 = sub i64 %6, %0
   ret i64 %7
 }
 

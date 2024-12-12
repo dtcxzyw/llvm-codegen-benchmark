@@ -23,6 +23,6 @@ func0000000000000000:                   // @func0000000000000000
 	cmp	x8, #0
 	csel	x8, x9, x8, lt
 	lsr	x8, x8, #2
-	add	w0, w8, w0
+	add	w0, w0, w8
 	ret
                                         // -- End function

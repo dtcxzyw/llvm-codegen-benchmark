@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; hwloc/optimized/topology-linux.ll
 ; ockam-rs/optimized/37wpz1tx0oad4jej.ll
 ; openjdk/optimized/metaspaceCommon.ll
@@ -7,6 +7,7 @@
 ; openusd/optimized/mallocTag.cpp.ll
 ; redis/optimized/dict.ll
 ; wasmtime-rs/optimized/fn3cxi5qpl58ixq.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

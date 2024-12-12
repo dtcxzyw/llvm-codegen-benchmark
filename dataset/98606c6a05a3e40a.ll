@@ -1,18 +1,18 @@
 
-%struct.FWCfgEntry.2595857 = type { i32, i8, ptr, ptr, ptr, ptr }
-%"struct.std::pair.11.2768732" = type { %"class.folly::Range.2768718", double }
-%"class.folly::Range.2768718" = type { ptr, ptr }
+%struct.FWCfgEntry.2709409 = type { i32, i8, ptr, ptr, ptr, ptr }
+%"struct.std::pair.11.2880956" = type { %"class.folly::Range.2880942", double }
+%"class.folly::Range.2880942" = type { ptr, ptr }
 
 ; 3 occurrences:
 ; linux/optimized/nfnetlink.ll
 ; linux/optimized/virtio_ring.ll
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16383
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr %struct.FWCfgEntry.2595857, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.FWCfgEntry.2709409, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -51,11 +51,11 @@ entry:
 ; redis/optimized/lstrlib.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16383
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr %"struct.std::pair.11.2768732", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %"struct.std::pair.11.2880956", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -67,16 +67,17 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32766
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 1
   ret ptr %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; cpython/optimized/ceval.ll
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/CGException.cpp.ll
@@ -110,12 +111,12 @@ entry:
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -8
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 2
   ret ptr %5
 }
 

@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	$2048, %esi                     # imm = 0x800
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	leaq	-15(%rdi), %rax
 	testb	$8, %sil
 	cmoveq	%rdi, %rax

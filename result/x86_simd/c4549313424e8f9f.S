@@ -31,7 +31,7 @@
 	.byte	28                              # 0x1c
 	.byte	29                              # 0x1d
 	.byte	30                              # 0x1e
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vmovdqa	.LCPI0_0(%rip), %ymm3           # ymm3 = [32,0,1,2,3,4,5,6,33,8,9,10,11,12,13,14,34,16,17,18,19,20,21,22,35,24,25,26,27,28,29,30]
 	vpermi2b	%ymm2, %ymm1, %ymm3
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero

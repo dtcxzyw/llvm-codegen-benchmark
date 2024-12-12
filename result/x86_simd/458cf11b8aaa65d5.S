@@ -8,6 +8,11 @@ func0000000000000008:                   # @func0000000000000008
 	vmovdqu16	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
+func0000000000000004:                   # @func0000000000000004
+	vpcmpltud	%ymm2, %ymm1, %k1
+	vmovdqu16	%xmm0, %xmm0 {%k1} {z}
+	vzeroupper
+	retq
 func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%ymm2, %ymm1, %k1
 	vmovdqu16	%xmm0, %xmm0 {%k1} {z}
@@ -25,7 +30,12 @@ func000000000000000a:                   # @func000000000000000a
 	vmovdqu16	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleud	%ymm2, %ymm1, %k1
+	vmovdqu16	%xmm0, %xmm0 {%k1} {z}
+	vzeroupper
+	retq
+func0000000000000014:                   # @func0000000000000014
 	vpcmpltud	%ymm2, %ymm1, %k1
 	vmovdqu16	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper

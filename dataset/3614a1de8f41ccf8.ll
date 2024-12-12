@@ -35,7 +35,7 @@ define i32 @func000000000000003f(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 10
   %4 = select i1 %1, i32 %3, i32 %2
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = add nuw nsw i32 %5, 10
   ret i32 %6
 }

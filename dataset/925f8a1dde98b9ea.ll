@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; assimp/optimized/MDCLoader.cpp.ll
 ; darktable/optimized/tethering.c.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
@@ -10,6 +10,8 @@
 ; opencv/optimized/va_intel.cpp.ll
 ; wireshark/optimized/msg_rep.c.ll
 ; wireshark/optimized/packet-erf.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i8 %0) #0 {
 entry:

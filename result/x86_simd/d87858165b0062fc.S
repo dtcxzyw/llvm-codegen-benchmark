@@ -27,19 +27,45 @@ func0000000000000004:                   # @func0000000000000004
 	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI4_0:
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
 	.zero	2
 	.zero	2
 	.zero	2
 	.zero	2
 .LCPI4_1:
-	.quad	16                              # 0x10
+	.quad	5                               # 0x5
 func0000000000000008:                   # @func0000000000000008
 	vpcmpnleuw	.LCPI4_0(%rip), %xmm1, %k1
-	vpbroadcastq	.LCPI4_1(%rip), %ymm1   # ymm1 = [16,16,16,16]
+	vpbroadcastq	.LCPI4_1(%rip), %ymm1   # ymm1 = [5,5,5,5]
 	vmovdqa64	%ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
+	retq
+.LCPI5_0:
+	.short	17                              # 0x11
+	.short	17                              # 0x11
+	.short	17                              # 0x11
+	.short	17                              # 0x11
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuw	.LCPI5_0(%rip), %xmm1, %k1
+	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
+	retq
+.LCPI6_0:
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleuw	.LCPI6_0(%rip), %xmm1, %k1
+	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
 	retq

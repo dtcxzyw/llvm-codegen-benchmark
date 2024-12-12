@@ -1,6 +1,7 @@
 
-; 29 occurrences:
+; 31 occurrences:
 ; abc/optimized/wlcBlast.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -29,6 +30,7 @@
 ; yosys/optimized/memory_dff.ll
 ; z3/optimized/mpf.cpp.ll
 ; z3/optimized/smt_for_each_relevant_expr.cpp.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

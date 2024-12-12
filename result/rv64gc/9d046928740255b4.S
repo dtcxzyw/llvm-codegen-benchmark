@@ -1,14 +1,3 @@
-func000000000000001d:                   # @func000000000000001d
-	andi	a0, a0, 255
-	li	a1, 1
-	addi	a0, a0, -14
-	slli	a1, a1, 32
-	addi	a1, a1, -14
-	addi	a1, a1, 13
-	and	a0, a0, a1
-	li	a1, -1
-	sll	a0, a1, a0
-	ret
 func000000000000001e:                   # @func000000000000001e
 	andi	a0, a0, 255
 	li	a1, 1

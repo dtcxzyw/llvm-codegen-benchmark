@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; clamav/optimized/disasm.c.ll
 ; cmake/optimized/cmCPackNSISGenerator.cxx.ll
 ; lief/optimized/ecp.c.ll
@@ -9,7 +9,6 @@
 ; linux/optimized/xhci.ll
 ; llvm/optimized/CGException.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
-; minetest/optimized/mapblock_mesh.cpp.ll
 ; oiio/optimized/targainput.cpp.ll
 ; openjdk/optimized/type.ll
 ; openssl/optimized/libcrypto-lib-fcrypt.ll

@@ -19,7 +19,7 @@
 	.zero	4,252
 func000000000000007a:                   # @func000000000000007a
 	vpaddd	%ymm1, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$2, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
@@ -73,7 +73,7 @@ func0000000000000063:                   # @func0000000000000063
 	.zero	4,63
 func000000000000007b:                   # @func000000000000007b
 	vpslld	$16, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$12, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpandd	.LCPI2_1(%rip){1to4}, %xmm0, %xmm0

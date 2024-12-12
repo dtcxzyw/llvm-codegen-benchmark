@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/giaCut.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -14,7 +14,6 @@
 ; gromacs/optimized/lincs.cpp.ll
 ; gromacs/optimized/pme.cpp.ll
 ; libwebp/optimized/picture_psnr_enc.c.ll
-; libwebp/optimized/quant_levels_utils.c.ll
 ; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; openspiel/optimized/bargaining.cc.ll
@@ -25,7 +24,7 @@ define double @func0000000000000001(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 
@@ -38,7 +37,7 @@ define double @func0000000000000000(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 

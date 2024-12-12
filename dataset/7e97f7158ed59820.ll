@@ -1,22 +1,80 @@
 
-%"struct.rocksdb::CacheAlignedWrapper.2500759" = type { %"class.rocksdb::port::Mutex.2500760", [24 x i8] }
-%"class.rocksdb::port::Mutex.2500760" = type { %union.pthread_mutex_t.2500761 }
-%union.pthread_mutex_t.2500761 = type { %struct.__pthread_mutex_s.2500762 }
-%struct.__pthread_mutex_s.2500762 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2500763 }
-%struct.__pthread_internal_list.2500763 = type { ptr, ptr }
-%"struct.duckdb::UnifiedVectorFormat.2840030" = type { ptr, ptr, %"struct.duckdb::ValidityMask.2840012", %"struct.duckdb::SelectionVector.2840031" }
-%"struct.duckdb::ValidityMask.2840012" = type { %"struct.duckdb::TemplatedValidityMask.2840014" }
-%"struct.duckdb::TemplatedValidityMask.2840014" = type { ptr, %"class.std::shared_ptr.58.2840015", i64 }
-%"class.std::shared_ptr.58.2840015" = type { %"class.std::__shared_ptr.59.2840016" }
-%"class.std::__shared_ptr.59.2840016" = type { ptr, %"class.std::__shared_count.2839990" }
-%"class.std::__shared_count.2839990" = type { ptr }
-%"struct.duckdb::SelectionVector.2840031" = type { ptr, %"class.std::shared_ptr.64.2840032" }
-%"class.std::shared_ptr.64.2840032" = type { %"class.std::__shared_ptr.65.2840033" }
-%"class.std::__shared_ptr.65.2840033" = type { ptr, %"class.std::__shared_count.2839990" }
+%"struct.rocksdb::CacheAlignedWrapper.2615971" = type { %"class.rocksdb::port::Mutex.2615972", [24 x i8] }
+%"class.rocksdb::port::Mutex.2615972" = type { %union.pthread_mutex_t.2615973 }
+%union.pthread_mutex_t.2615973 = type { %struct.__pthread_mutex_s.2615974 }
+%struct.__pthread_mutex_s.2615974 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2615975 }
+%struct.__pthread_internal_list.2615975 = type { ptr, ptr }
+%"class.rocksdb::LRUList.2617340" = type { ptr, %"class.rocksdb::port::Mutex.2617341", ptr, ptr }
+%"class.rocksdb::port::Mutex.2617341" = type { %union.pthread_mutex_t.2617342 }
+%union.pthread_mutex_t.2617342 = type { %struct.__pthread_mutex_s.2617343 }
+%struct.__pthread_mutex_s.2617343 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2617344 }
+%struct.__pthread_internal_list.2617344 = type { ptr, ptr }
+%"struct.duckdb::UnifiedVectorFormat.2951771" = type { ptr, ptr, %"struct.duckdb::ValidityMask.2951753", %"struct.duckdb::SelectionVector.2951772" }
+%"struct.duckdb::ValidityMask.2951753" = type { %"struct.duckdb::TemplatedValidityMask.2951755" }
+%"struct.duckdb::TemplatedValidityMask.2951755" = type { ptr, %"class.std::shared_ptr.58.2951756", i64 }
+%"class.std::shared_ptr.58.2951756" = type { %"class.std::__shared_ptr.59.2951757" }
+%"class.std::__shared_ptr.59.2951757" = type { ptr, %"class.std::__shared_count.2951731" }
+%"class.std::__shared_count.2951731" = type { ptr }
+%"struct.duckdb::SelectionVector.2951772" = type { ptr, %"class.std::shared_ptr.64.2951773" }
+%"class.std::shared_ptr.64.2951773" = type { %"class.std::__shared_ptr.65.2951774" }
+%"class.std::__shared_ptr.65.2951774" = type { ptr, %"class.std::__shared_count.2951731" }
 
-; 106 occurrences:
+; 44 occurrences:
 ; assimp/optimized/BlenderCustomData.cpp.ll
 ; assimp/optimized/MMDPmxParser.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
+; gromacs/optimized/selvalue.cpp.ll
+; grpc/optimized/channel_idle_filter.cc.ll
+; grpc/optimized/legacy_channel_idle_filter.cc.ll
+; grpc/optimized/timer.cc.ll
+; grpc/optimized/xds_client_stats.cc.ll
+; icu/optimized/caniter.ll
+; icu/optimized/coll.ll
+; icu/optimized/dbgutil.ll
+; icu/optimized/dtfmtsym.ll
+; icu/optimized/filteredbrk.ll
+; icu/optimized/fmtable.ll
+; icu/optimized/locavailable.ll
+; icu/optimized/measfmt.ll
+; icu/optimized/measunit_extra.ll
+; icu/optimized/msgfmt.ll
+; icu/optimized/number_longnames.ll
+; icu/optimized/rbnf.ll
+; icu/optimized/umsg.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; openvdb/optimized/Archive.cc.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFilter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetMeasure.cc.ll
+; openvdb/optimized/LevelSetMorph.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; rocksdb/optimized/c.cc.ll
+; rocksdb/optimized/compression_context_cache.cc.ll
+; rocksdb/optimized/histogram_windowing.cc.ll
+; rocksdb/optimized/optimistic_transaction_db_impl.cc.ll
+; rocksdb/optimized/statistics.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000761(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 64
+  %4 = getelementptr nusw %"struct.rocksdb::CacheAlignedWrapper.2615971", ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = icmp eq ptr %5, %4
+  ret i1 %6
+}
+
+; 61 occurrences:
 ; cvc5/optimized/alpha_equivalence.cpp.ll
 ; cvc5/optimized/arith_rewriter.cpp.ll
 ; cvc5/optimized/bv_gauss.cpp.ll
@@ -69,64 +127,21 @@
 ; cvc5/optimized/trigger_term_info.cpp.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
-; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; folly/optimized/HHWheelTimer.cpp.ll
-; gromacs/optimized/selvalue.cpp.ll
-; grpc/optimized/channel_idle_filter.cc.ll
-; grpc/optimized/legacy_channel_idle_filter.cc.ll
-; grpc/optimized/timer.cc.ll
-; grpc/optimized/xds_client_stats.cc.ll
-; icu/optimized/caniter.ll
-; icu/optimized/coll.ll
 ; icu/optimized/datamap.ll
-; icu/optimized/dbgutil.ll
-; icu/optimized/dtfmtsym.ll
-; icu/optimized/filteredbrk.ll
-; icu/optimized/fmtable.ll
-; icu/optimized/locavailable.ll
-; icu/optimized/measfmt.ll
-; icu/optimized/measunit_extra.ll
-; icu/optimized/msgfmt.ll
-; icu/optimized/number_longnames.ll
-; icu/optimized/rbnf.ll
 ; icu/optimized/ulistformatter.ll
-; icu/optimized/umsg.ll
 ; llvm/optimized/CGExprCXX.cpp.ll
 ; llvm/optimized/CocoaConventions.cpp.ll
 ; llvm/optimized/MachineOutliner.cpp.ll
-; llvm/optimized/Pragma.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; openusd/optimized/bboxCache.cpp.ll
-; openvdb/optimized/Archive.cc.ll
-; openvdb/optimized/Diagnostics.cc.ll
-; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Filter.cc.ll
-; openvdb/optimized/LevelSetFilter.cc.ll
-; openvdb/optimized/LevelSetFracture.cc.ll
-; openvdb/optimized/LevelSetMeasure.cc.ll
-; openvdb/optimized/LevelSetMorph.cc.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/LevelSetSphere.cc.ll
-; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/MultiResGrid.cc.ll
-; openvdb/optimized/PoissonSolver.cc.ll
-; openvdb/optimized/TopologyToLevelSet.cc.ll
-; openvdb/optimized/VolumeAdvect.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
-; openvdb/optimized/points.cc.ll
 ; rocksdb/optimized/block_cache_tier.cc.ll
-; rocksdb/optimized/c.cc.ll
-; rocksdb/optimized/compression_context_cache.cc.ll
-; rocksdb/optimized/histogram_windowing.cc.ll
-; rocksdb/optimized/optimistic_transaction_db_impl.cc.ll
-; rocksdb/optimized/statistics.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000007e1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %0, i64 64
-  %4 = getelementptr nusw %"struct.rocksdb::CacheAlignedWrapper.2500759", ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw %"class.rocksdb::LRUList.2617340", ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
@@ -134,16 +149,29 @@ entry:
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a8(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000748(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %0, i64 4096
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 4096
   %4 = getelementptr nusw i64, ptr %3, i64 %2
   %5 = getelementptr nusw i64, ptr %0, i64 %1
   %6 = icmp ugt ptr %5, %4
   ret i1 %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; bdwgc/optimized/gc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000768(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 4096
+  %4 = getelementptr nusw i64, ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %1
+  %6 = icmp ugt ptr %5, %4
+  ret i1 %6
+}
+
+; 4 occurrences:
+; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
@@ -160,9 +188,9 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000604(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %0, i64 72
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 72
   %4 = getelementptr i8, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %0, i64 %1
   %6 = icmp ult ptr %5, %4
@@ -174,24 +202,37 @@ entry:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000161(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 8
-  %4 = getelementptr nusw %"struct.duckdb::UnifiedVectorFormat.2840030", ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %4 = getelementptr nusw %"struct.duckdb::UnifiedVectorFormat.2951771", ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/static_string.ll
 ; llvm/optimized/CocoaConventions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002ac(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000007ec(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %0, i64 16
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %6 = icmp ne ptr %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/Pragma.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000007c1(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
+  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
 
@@ -199,7 +240,7 @@ entry:
 ; cmake/optimized/divsufsort.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 -4
   %4 = getelementptr i32, ptr %3, i64 %2
@@ -211,11 +252,11 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a5(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000007e5(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %0, i64 10
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 10
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %6 = icmp ule ptr %5, %4
   ret i1 %6
 }

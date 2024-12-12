@@ -12,7 +12,7 @@ entry:
   ret i64 %7
 }
 
-; 140 occurrences:
+; 142 occurrences:
 ; clamav/optimized/hfsplus.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
@@ -153,6 +153,8 @@ entry:
 ; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007b(i8 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -164,13 +166,18 @@ entry:
   ret i64 %7
 }
 
-; 6 occurrences:
+; 11 occurrences:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; llvm/optimized/DataLayout.cpp.ll
 ; openjdk/optimized/foreignGlobals.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000073(i8 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -182,13 +189,14 @@ entry:
   ret i64 %7
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; libpng/optimized/pngrtran.c.ll
 ; llvm/optimized/StreamChecker.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
 ; openjdk/optimized/ByteBinary2Bit.ll
 ; openjdk/optimized/ByteBinary4Bit.ll
 ; openjdk/optimized/pngrtran.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i8 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -200,10 +208,11 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; just-rs/optimized/3022oi333lxf39jd.ll
 ; openusd/optimized/pathExpressionEval.cpp.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000005b(i8 %0, i64 %1, i64 %2) #0 {
 entry:

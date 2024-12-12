@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/X11Renderer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004ca(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = icmp slt i64 %1, 32767
@@ -30,7 +30,7 @@ entry:
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000481(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -2
   %4 = icmp ult i64 %1, 2
@@ -43,7 +43,7 @@ entry:
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000421(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -5
   %4 = icmp eq i64 %1, 6

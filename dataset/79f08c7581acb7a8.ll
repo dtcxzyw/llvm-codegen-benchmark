@@ -40,10 +40,10 @@ entry:
 ; postgres/optimized/varbit.ll
 ; ruby/optimized/raddrinfo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000064(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 %1
-  %3 = getelementptr nusw i8, ptr %0, i64 2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 2
   %4 = icmp ult ptr %3, %2
   ret i1 %4
 }

@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/aigJust.c.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
 ; qemu/optimized/hw_pci_pcie_doe.c.ll
 ; wireshark/optimized/packet-wbxml.c.ll
@@ -24,6 +23,17 @@ entry:
   %1 = shl i32 %0, 1
   %2 = and i32 %1, 2
   %3 = sub nsw i32 1, %2
+  ret i32 %3
+}
+
+; 1 occurrences:
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0) #0 {
+entry:
+  %1 = shl nsw i32 %0, 3
+  %2 = and i32 %1, 8
+  %3 = sub nuw nsw i32 16, %2
   ret i32 %3
 }
 

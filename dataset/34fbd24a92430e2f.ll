@@ -26,7 +26,7 @@ entry:
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = shl nuw i64 %1, %3
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = shl nuw i64 %1, %3
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = shl nuw i64 %1, %3

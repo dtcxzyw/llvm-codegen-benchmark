@@ -3,7 +3,7 @@
 ; rocksdb/optimized/point_lock_manager.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl i64 %3, 32
@@ -17,7 +17,7 @@ entry:
 ; velox/optimized/MmapAllocator.cpp.ll
 ; yosys/optimized/fmt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl i64 %3, 32
@@ -38,7 +38,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl i64 %3, 32
@@ -54,7 +54,7 @@ entry:
 ; ceres/optimized/power_series_expansion_preconditioner.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000451(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000008a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = shl i64 %3, 32
@@ -74,7 +74,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl i64 %3, 32

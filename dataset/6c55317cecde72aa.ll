@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 85 occurrences:
 ; abc/optimized/ivyDsd.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/ftp.c.ll
@@ -28,7 +28,6 @@
 ; icu/optimized/punycode.ll
 ; libquic/optimized/v3_utl.c.ll
 ; linux/optimized/cdrom.ll
-; linux/optimized/dw.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/evxface.ll
 ; linux/optimized/g4x_dp.ll
@@ -37,7 +36,6 @@
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_dp_mst.ll
 ; linux/optimized/intel_dpio_phy.ll
@@ -65,7 +63,6 @@
 ; luajit/optimized/minilua.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; opencv/optimized/bitmatrixparser.cpp.ll
 ; openjdk/optimized/IOUtil.ll
@@ -92,7 +89,7 @@
 define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
-  %3 = select i1 %2, i32 41, i32 39
+  %3 = select i1 %2, i32 16, i32 8
   %4 = or disjoint i32 %3, %0
   ret i32 %4
 }
@@ -100,14 +97,14 @@ entry:
 ; 4 occurrences:
 ; linux/optimized/tcp_output.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
+; luau/optimized/IrRegAllocA64.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, 40
-  %3 = select i1 %2, i32 100663296, i32 117440512
-  %4 = or disjoint i32 %3, %0
+  %2 = icmp ult i8 %1, 12
+  %3 = select i1 %2, i32 2048, i32 0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -190,20 +187,7 @@ define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 3
   %3 = select i1 %2, i32 11, i32 10
-  %4 = or disjoint i32 %3, %0
-  ret i32 %4
-}
-
-; 3 occurrences:
-; linux/optimized/intel_lrc.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i8 %1) #0 {
-entry:
-  %2 = icmp ult i8 %1, 64
-  %3 = select i1 %2, i32 285212672, i32 285216768
-  %4 = or i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -215,7 +199,7 @@ define i32 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp slt i8 %1, 0
   %3 = select i1 %2, i32 4096, i32 2048
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -226,7 +210,7 @@ define i32 @func0000000000000019(i32 %0, i8 %1) #0 {
 entry:
   %.not = icmp eq i8 %1, 0
   %2 = select i1 %.not, i32 0, i32 4
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   ret i32 %3
 }
 
@@ -236,6 +220,18 @@ entry:
 define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, -1
+  %3 = select i1 %2, i32 2, i32 1
+  %4 = or i32 %3, %0
+  ret i32 %4
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp ult i8 %1, 2
   %3 = select i1 %2, i32 2, i32 1
   %4 = or i32 %3, %0
   ret i32 %4

@@ -11,7 +11,7 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 10 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
@@ -19,6 +19,9 @@ entry:
 ; ockam-rs/optimized/2zpb9qmdbtl1z92t.ll
 ; ockam-rs/optimized/z0rkq6s90lca7cm.ll
 ; wasmtime-rs/optimized/4mhzt4bue6j9nl9q.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001e(i64 %0, i8 %1) #0 {
 entry:

@@ -1,4 +1,4 @@
-func000000000000030a:                   // @func000000000000030a
+func000000000000030f:                   // @func000000000000030f
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	and	x8, x1, #0x1
@@ -7,7 +7,7 @@ func000000000000030a:                   // @func000000000000030a
 	cinc	x0, x8, ne
 	ret
                                         // -- End function
-func000000000000020a:                   // @func000000000000020a
+func000000000000020f:                   // @func000000000000020f
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	and	w8, w2, #0xff
@@ -17,7 +17,7 @@ func000000000000020a:                   // @func000000000000020a
 	cinc	x0, x8, hi
 	ret
                                         // -- End function
-func000000000000004a:                   // @func000000000000004a
+func000000000000004f:                   // @func000000000000004f
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	and	w8, w2, #0xff

@@ -1,19 +1,19 @@
-func0000000000000160:                   # @func0000000000000160
+func0000000000000260:                   # @func0000000000000260
 	movl	%edi, %eax
 	btq	%rdx, %rsi
 	adcl	$0, %eax
 	retq
-func0000000000000163:                   # @func0000000000000163
+func0000000000000263:                   # @func0000000000000263
 	movl	%edi, %eax
 	btq	%rdx, %rsi
 	adcl	$0, %eax
 	retq
-func00000000000001e3:                   # @func00000000000001e3
+func0000000000000363:                   # @func0000000000000363
 	movl	%edi, %eax
 	btq	%rdx, %rsi
 	adcl	$0, %eax
 	retq
-func0000000000000161:                   # @func0000000000000161
+func0000000000000261:                   # @func0000000000000261
 	movl	%edi, %eax
 	shrxq	%rdx, %rsi, %rcx
 	andl	$3, %ecx

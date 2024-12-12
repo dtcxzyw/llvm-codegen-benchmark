@@ -10,3 +10,8 @@ func0000000000000001:                   # @func0000000000000001
 	andl	$1, %edi
 	leaq	(%rdi,%rsi), %rax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	movslq	%esi, %rax
+	andq	$-4, %rdi
+	leaq	(%rdi,%rax,4), %rax
+	retq

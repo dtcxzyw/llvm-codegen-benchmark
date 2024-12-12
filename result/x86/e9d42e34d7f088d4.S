@@ -46,13 +46,13 @@ func0000000000000008:                   # @func0000000000000008
 	kmovd	%edi, %k1
 	vmovsd	.LCPI5_0(%rip), %xmm2           # xmm2 = [-1.0E+0,0.0E+0]
 	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
-	vcmpeqsd	%xmm0, %xmm2, %k0
+	vcmpeqsd	%xmm2, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	kmovd	%edi, %k1
 	vmovsd	%xmm1, %xmm1, %xmm1 {%k1} {z}
-	vcmpneqsd	%xmm0, %xmm1, %k0
+	vcmpneqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func000000000000000d:                   # @func000000000000000d

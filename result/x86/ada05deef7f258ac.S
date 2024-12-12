@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sarl	$16, %edx
 	cmpl	%esi, %edx
 	setg	%al
@@ -10,7 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	orb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sarl	$16, %edx
 	cmpl	%esi, %edx
 	setl	%al

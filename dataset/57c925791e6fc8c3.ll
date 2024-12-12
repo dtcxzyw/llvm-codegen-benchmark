@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 37 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
@@ -8,28 +8,11 @@
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
 ; html5ever-rs/optimized/427f68nqtcfpg289.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; influxdb-rs/optimized/4xdswox27ronf9w0.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; mini-lsm-rs/optimized/1m9jerzd56wr2irm.ll
-; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
-; ockam-rs/optimized/1kl4v6vvko2mygns.ll
-; ockam-rs/optimized/27nutj9k22uohtyi.ll
-; ockam-rs/optimized/2r89va29k151cr5y.ll
-; ockam-rs/optimized/2ugp26prskc4lvz4.ll
-; ockam-rs/optimized/2wtjkff0coegvdww.ll
-; ockam-rs/optimized/38s5hbhbeh1uyvuz.ll
-; ockam-rs/optimized/4muscr8i25faa6zl.ll
-; ockam-rs/optimized/4mw292rh9wiw0hhj.ll
-; ockam-rs/optimized/4vgir7i3jcnfee5s.ll
-; ockam-rs/optimized/51t9q4mnxr7eznlm.ll
-; ockam-rs/optimized/5d08dby0hzbl8sgj.ll
-; ockam-rs/optimized/aq9jti6tz0dykb7.ll
-; ockam-rs/optimized/i22eb1mfvlgesy1.ll
-; ockam-rs/optimized/luz5e0okyn0ri51.ll
-; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; qdrant-rs/optimized/2v88rld7ajfr8cux.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
@@ -53,11 +36,12 @@
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp samesign ult i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -71,26 +55,26 @@ entry:
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
-; linux/optimized/hwvalid.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; qemu/optimized/linux-user_fd-trans.c.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
 ; 2 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; redis/optimized/networking.ll
+; postgres/optimized/nbtutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -102,7 +86,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -116,7 +100,19 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_obj.ll
+; redis/optimized/networking.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i1 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i64
+  %4 = icmp samesign ult i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -128,10 +124,10 @@ entry:
 ; cvc5/optimized/theory_model.cpp.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -142,7 +138,34 @@ entry:
 define i1 @func0000000000000005(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp ule i64 %1, %3
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 17 occurrences:
+; influxdb-rs/optimized/4xdswox27ronf9w0.ll
+; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
+; ockam-rs/optimized/1kl4v6vvko2mygns.ll
+; ockam-rs/optimized/27nutj9k22uohtyi.ll
+; ockam-rs/optimized/2r89va29k151cr5y.ll
+; ockam-rs/optimized/2ugp26prskc4lvz4.ll
+; ockam-rs/optimized/2wtjkff0coegvdww.ll
+; ockam-rs/optimized/38s5hbhbeh1uyvuz.ll
+; ockam-rs/optimized/4muscr8i25faa6zl.ll
+; ockam-rs/optimized/4mw292rh9wiw0hhj.ll
+; ockam-rs/optimized/4vgir7i3jcnfee5s.ll
+; ockam-rs/optimized/51t9q4mnxr7eznlm.ll
+; ockam-rs/optimized/5d08dby0hzbl8sgj.ll
+; ockam-rs/optimized/aq9jti6tz0dykb7.ll
+; ockam-rs/optimized/i22eb1mfvlgesy1.ll
+; ockam-rs/optimized/luz5e0okyn0ri51.ll
+; ockam-rs/optimized/u4cgd14nodyt386.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

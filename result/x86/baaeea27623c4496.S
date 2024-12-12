@@ -16,9 +16,3 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	negl	%eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movzwl	%di, %ecx
-	xorl	%eax, %eax
-	cmpl	$5000, %ecx                     # imm = 0x1388
-	adcl	$-1, %eax
-	retq

@@ -39,18 +39,6 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/DWARFVerifier.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = and i1 %1, %2
-  %4 = xor i1 %3, true
-  %5 = icmp ult i32 %0, -4
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i32 %0, i1 %1, i1 %2) #0 {

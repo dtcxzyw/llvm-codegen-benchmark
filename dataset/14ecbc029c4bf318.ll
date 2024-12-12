@@ -1,5 +1,5 @@
 
-; 87 occurrences:
+; 83 occurrences:
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/autoit.c.ll
@@ -23,16 +23,12 @@
 ; openmpi/optimized/tm_malloc.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; php/optimized/hash_gost.ll
-; postgres/optimized/checksum.ll
 ; postgres/optimized/file.ll
 ; postgres/optimized/pg_checksums.ll
 ; slurm/optimized/job_info.ll
@@ -92,7 +88,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = lshr i32 %3, 24
-  %5 = xor i32 %4, %0
+  %5 = xor i32 %0, %4
   ret i32 %5
 }
 

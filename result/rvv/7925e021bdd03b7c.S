@@ -17,17 +17,17 @@ func0000000000000001:                   # @func0000000000000001
 	vsrl.vi	v8, v8, 3
 	vadd.vi	v8, v8, -1
 	ret
+func000000000000000b:                   # @func000000000000000b
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vsub.vv	v8, v8, v10
+	vsrl.vi	v8, v8, 6
+	vadd.vi	v8, v8, 1
+	ret
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 1
 	vadd.vi	v8, v8, -1
-	ret
-func000000000000000b:                   # @func000000000000000b
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsub.vv	v8, v8, v10
-	vsrl.vi	v8, v8, 1
-	vadd.vi	v8, v8, 2
 	ret
 func0000000000000013:                   # @func0000000000000013
 	vsetivli	zero, 8, e32, m2, ta, ma

@@ -1,84 +1,24 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	v3.2d, v3.2d, v5.2d
-	mov	x8, v1.d[1]
-	fmov	x12, d1
-	add	v1.2d, v2.2d, v4.2d
-	fmov	x15, d0
-	mov	x18, v0.d[1]
-	mov	x9, v3.d[1]
-	fmov	x11, d3
-	fmov	x14, d1
-	mov	x17, v1.d[1]
-	udiv	x13, x11, x12
-	udiv	x10, x9, x8
-	udiv	x16, x14, x15
-	msub	x8, x10, x8, x9
-	msub	x9, x13, x12, x11
-	fmov	d1, x9
-	mov	v1.d[1], x8
-	shl	v1.2d, v1.2d, #2
-	udiv	x0, x17, x18
-	msub	x10, x16, x15, x14
-	fmov	d0, x10
-	msub	x11, x0, x18, x17
-	mov	v0.d[1], x11
-	shl	v0.2d, v0.2d, #2
+	add	x8, x1, x2
+	udiv	x9, x8, x0
+	msub	x8, x9, x0, x8
+	lsl	x0, x8, #2
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	add	v3.2d, v3.2d, v5.2d
-	mov	x8, v1.d[1]
-	fmov	x12, d1
-	add	v1.2d, v2.2d, v4.2d
-	fmov	x15, d0
-	mov	x18, v0.d[1]
-	mov	x9, v3.d[1]
-	fmov	x11, d3
-	fmov	x14, d1
-	mov	x17, v1.d[1]
-	udiv	x13, x11, x12
-	udiv	x10, x9, x8
-	udiv	x16, x14, x15
-	msub	x8, x10, x8, x9
-	msub	x9, x13, x12, x11
-	fmov	d1, x9
-	mov	v1.d[1], x8
-	add	v1.2d, v1.2d, v1.2d
-	udiv	x0, x17, x18
-	msub	x10, x16, x15, x14
-	fmov	d0, x10
-	msub	x11, x0, x18, x17
-	mov	v0.d[1], x11
-	add	v0.2d, v0.2d, v0.2d
+	add	x8, x1, x2
+	udiv	x9, x8, x0
+	msub	x8, x9, x0, x8
+	lsl	x0, x8, #1
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	add	v3.2d, v3.2d, v5.2d
-	mov	x8, v1.d[1]
-	fmov	x12, d1
-	add	v1.2d, v2.2d, v4.2d
-	fmov	x15, d0
-	mov	x18, v0.d[1]
-	mov	x9, v3.d[1]
-	fmov	x11, d3
-	fmov	x14, d1
-	mov	x17, v1.d[1]
-	udiv	x13, x11, x12
-	udiv	x10, x9, x8
-	udiv	x16, x14, x15
-	msub	x8, x10, x8, x9
-	msub	x9, x13, x12, x11
-	fmov	d1, x9
-	mov	v1.d[1], x8
-	shl	v1.2d, v1.2d, #2
-	udiv	x0, x17, x18
-	msub	x10, x16, x15, x14
-	fmov	d0, x10
-	msub	x11, x0, x18, x17
-	mov	v0.d[1], x11
-	shl	v0.2d, v0.2d, #2
+	add	x8, x1, x2
+	udiv	x9, x8, x0
+	msub	x8, x9, x0, x8
+	lsl	x0, x8, #2
 	ret
                                         // -- End function

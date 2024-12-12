@@ -13,15 +13,16 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
 ; qemu/optimized/ui_qemu-pixman.c.ll
+; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = shl nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -36,9 +37,7 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; abseil-cpp/optimized/cord.cc.ll
-; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; 2 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
 ; Function Attrs: nounwind
@@ -46,7 +45,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = shl nuw nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -57,7 +56,7 @@ define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = shl nuw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -68,7 +67,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = shl nuw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

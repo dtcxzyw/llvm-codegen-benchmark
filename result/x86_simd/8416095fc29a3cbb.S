@@ -43,25 +43,24 @@ func0000000000000002:                   # @func0000000000000002
 	vpsrlw	$2, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
-	.short	18725                           # 0x4925
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
+	.short	11651                           # 0x2d83
 func0000000000000000:                   # @func0000000000000000
 	vpaddw	%ymm1, %ymm0, %ymm0
-	vpsrlw	$1, %ymm0, %ymm0
-	vpmulhuw	.LCPI2_0(%rip), %ymm0, %ymm0    # [18725,18725,18725,18725,18725,18725,18725,18725,18725,18725,18725,18725,18725,18725,18725,18725]
-	vpsrlw	$1, %ymm0, %ymm0
+	vpmulhuw	.LCPI2_0(%rip), %ymm0, %ymm0    # [11651,11651,11651,11651,11651,11651,11651,11651,11651,11651,11651,11651,11651,11651,11651,11651]
+	vpsrlw	$6, %ymm0, %ymm0
 	retq

@@ -3,9 +3,11 @@
 ; git/optimized/show-branch.ll
 ; icu/optimized/coleitr.ll
 ; icu/optimized/number_decimalquantity.ll
+; libquic/optimized/reliable_quic_stream.cc.ll
 ; lief/optimized/cipher.c.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/params.ll
+; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/DependencyDirectivesScanner.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
@@ -16,8 +18,6 @@
 ; php/optimized/ir_emit.ll
 ; proxygen/optimized/HTTPHeaders.cpp.ll
 ; ruby/optimized/pathname.ll
-; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
-; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; yoga/optimized/Node.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i1 %1, i8 %2) #0 {
@@ -52,17 +52,6 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/LegalizeDAG.cpp.ll
-; minetest/optimized/voxelalgorithms.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = select i1 %1, i8 15, i8 %2
-  %4 = icmp ugt i8 %3, %0
-  ret i1 %4
-}
-
 ; 6 occurrences:
 ; nix/optimized/canon-path.ll
 ; nix/optimized/filtering-input-accessor.ll
@@ -86,6 +75,17 @@ define i1 @func000000000000000c(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 12, i8 %2
   %4 = icmp ne i8 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/LegalizeDAG.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i8 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ugt i8 %2, %0
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 

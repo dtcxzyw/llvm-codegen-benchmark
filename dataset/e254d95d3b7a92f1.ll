@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; git/optimized/transport.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/uring_cmd.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; ruby/optimized/compile.ll
@@ -16,16 +15,22 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 15 occurrences:
 ; hdf5/optimized/H5Shyper.c.ll
 ; icu/optimized/ucnv_u32.ll
 ; icu/optimized/ucnv_u7.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/l_mapgen.cpp.ll
 ; minetest/optimized/rollback_interface.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; openjdk/optimized/gtk3_interface.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i16 %2) #0 {
 entry:
@@ -61,7 +66,7 @@ entry:
   ret i32 %5
 }
 
-; 26 occurrences:
+; 28 occurrences:
 ; git/optimized/transport.ll
 ; icu/optimized/edits.ll
 ; libpng/optimized/png.c.ll
@@ -88,6 +93,8 @@ entry:
 ; wireshark/optimized/print.c.ll
 ; wireshark/optimized/sequence_analysis.c.ll
 ; wireshark/optimized/sharkd_session.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i16 %2) #0 {
 entry:
@@ -97,11 +104,10 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; git/optimized/transport.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/e100.ll
-; linux/optimized/hwsleep.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/util.ll

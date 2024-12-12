@@ -1,5 +1,7 @@
 
 ; 66 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idaa.c.ll
@@ -43,8 +45,6 @@
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/mlfn.cpp.ll
 ; proj/optimized/som.cpp.ll
-; proj/optimized/wink1.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/analytic_cont_geom_av_price_heston.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/bfgs.ll

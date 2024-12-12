@@ -18,7 +18,7 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_8ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000028a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add nsw i32 %3, %1
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000204(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -9
   %4 = add i32 %3, %1
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/parse_time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1900000
   %4 = add nsw i32 %3, %1
@@ -77,7 +77,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_rect_pack.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = add i32 %3, %1
@@ -90,7 +90,7 @@ entry:
 ; wireshark/optimized/packet-dcerpc.c.ll
 ; wireshark/optimized/packet-wifi-p2p.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000020a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 64
   %4 = add i32 %3, %1
@@ -118,10 +118,10 @@ entry:
 ; wireshark/optimized/packet-ceph.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 4
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nuw i32 %4, %0
   %6 = icmp eq i32 %5, 1
   ret i1 %6
@@ -133,7 +133,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %4, %0
   %6 = icmp ugt i32 %5, 3
   ret i1 %6
@@ -156,7 +156,7 @@ entry:
 ; wolfssl/optimized/rsa.c.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = add i32 %3, %1
@@ -167,7 +167,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 256
   %4 = add nsw i32 %3, %1

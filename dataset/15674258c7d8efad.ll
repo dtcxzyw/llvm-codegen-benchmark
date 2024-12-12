@@ -1,8 +1,10 @@
 
-; 10 occurrences:
+; 16 occurrences:
 ; glslang/optimized/reflection.cpp.ll
 ; libquic/optimized/spdy_framer.cc.ll
 ; llvm/optimized/CGStmt.cpp.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; openjdk/optimized/loopopts.ll
 ; openjdk/optimized/macro.ll
 ; proj/optimized/coordinatesystem.cpp.ll
@@ -10,8 +12,12 @@
 ; ruby/optimized/prism.ll
 ; wasmedge/optimized/filemgr.cpp.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
+; zed-rs/optimized/1688ufmsinybjfg22qw487apg.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i32 %0, 0
@@ -118,6 +124,25 @@ entry:
   ret i1 %4
 }
 
+; 9 occurrences:
+; actix-rs/optimized/1xpd5itwjglolvjs.ll
+; boost/optimized/src.ll
+; clamav/optimized/jpeg.c.ll
+; cmake/optimized/cmAddLibraryCommand.cxx.ll
+; glog/optimized/logging.cc.ll
+; llvm/optimized/WhitespaceManager.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; opencv/optimized/eltwise_layer.cpp.ll
+; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
+entry:
+  %2 = trunc nuw i8 %1 to i1
+  %3 = icmp eq i32 %0, 0
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
 ; 4 occurrences:
 ; gromacs/optimized/sim_util.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
@@ -132,24 +157,6 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
-; actix-rs/optimized/1xpd5itwjglolvjs.ll
-; clamav/optimized/jpeg.c.ll
-; cmake/optimized/cmAddLibraryCommand.cxx.ll
-; glog/optimized/logging.cc.ll
-; llvm/optimized/WhitespaceManager.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; opencv/optimized/eltwise_layer.cpp.ll
-; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
-entry:
-  %2 = trunc nuw i8 %1 to i1
-  %3 = icmp eq i32 %0, 0
-  %4 = select i1 %3, i1 %2, i1 false
-  ret i1 %4
-}
-
 ; 5 occurrences:
 ; gromacs/optimized/biasstate.cpp.ll
 ; ocio/optimized/DisplayViewHelpers.cpp.ll
@@ -157,21 +164,10 @@ entry:
 ; oiio/optimized/imageinput.cpp.ll
 ; oiio/optimized/imageoutput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp sgt i32 %0, 0
-  %4 = select i1 %3, i1 %2, i1 false
-  ret i1 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/MCWin64EH.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
-entry:
-  %2 = trunc nuw i8 %1 to i1
-  %3 = icmp ult i32 %0, 4
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }

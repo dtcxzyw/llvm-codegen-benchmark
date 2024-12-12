@@ -1,10 +1,11 @@
 
-; 142 occurrences:
+; 137 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; arrow/optimized/UriFile.c.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/ipv6_address.ll
 ; c3c/optimized/sema_decls.c.ll
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
@@ -14,6 +15,7 @@
 ; cmake/optimized/linux-core.c.ll
 ; flatbuffers/optimized/idl_gen_kotlin.cpp.ll
 ; flatbuffers/optimized/idl_gen_kotlin_kmp.cpp.ll
+; flatbuffers/optimized/idl_gen_swift.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; graphviz/optimized/generate-constraints.cpp.ll
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
@@ -43,9 +45,9 @@
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/Darwin.cpp.ll
-; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/EditedSource.cpp.ll
 ; llvm/optimized/FunctionSpecialization.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
 ; llvm/optimized/JSON.cpp.ll
@@ -59,7 +61,6 @@
 ; llvm/optimized/MasmParser.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
@@ -104,6 +105,7 @@
 ; openjdk/optimized/zRelocate.ll
 ; openspiel/optimized/havannah.cc.ll
 ; openusd/optimized/decodetxb.c.ll
+; ozz-animation/optimized/jsoncpp.cpp.ll
 ; php/optimized/phar.ll
 ; postgres/optimized/execExpr.ll
 ; qemu/optimized/block_qcow2-threads.c.ll
@@ -116,8 +118,6 @@
 ; ruby/optimized/file.ll
 ; ruby/optimized/iseq.ll
 ; ruby/optimized/pm_integer.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
 ; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
 ; rust-analyzer-rs/optimized/2n800w7wl0k2x7go.ll
 ; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
@@ -127,14 +127,9 @@
 ; rustfmt-rs/optimized/3n0n7c4xrusd0kzl.ll
 ; slurm/optimized/affinity.ll
 ; slurm/optimized/numa.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; verilator/optimized/V3EmitCModel.cpp.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
-; wasmtime-rs/optimized/3x26ra3en5gtspzq.ll
 ; wireshark/optimized/packet-cipsafety.c.ll
 ; wireshark/optimized/text_import.c.ll
 ; wolfssl/optimized/internal.c.ll
@@ -146,7 +141,7 @@
 define i64 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %0, i1 %1, i1 false
-  %3 = select i1 %2, i64 -2, i64 0
+  %3 = select i1 %2, i64 20, i64 0
   ret i64 %3
 }
 

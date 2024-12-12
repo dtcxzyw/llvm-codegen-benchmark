@@ -29,7 +29,7 @@ entry:
   ret i32 %5
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; git/optimized/pathspec.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; icu/optimized/parse.ll
@@ -60,6 +60,7 @@ entry:
 ; openjdk/optimized/pngread.ll
 ; php/optimized/zend_inference.ll
 ; re2/optimized/dfa.cc.ll
+; re2/optimized/onepass.cc.ll
 ; re2/optimized/re2.cc.ll
 ; redis/optimized/module.ll
 ; redis/optimized/siphash.ll
@@ -71,11 +72,11 @@ define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %2, 10
   %4 = select i1 %1, i32 %3, i32 %2
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; arrow/optimized/io_util.cc.ll
 ; graphviz/optimized/htmltable.c.ll
 ; gromacs/optimized/pme_pp.cpp.ll
@@ -84,7 +85,6 @@ entry:
 ; llvm/optimized/COFFAsmParser.cpp.ll
 ; llvm/optimized/GOFFObjectFile.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; postgres/optimized/xact.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; qemu/optimized/nbd_server.c.ll
@@ -109,7 +109,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %2, 512
   %4 = select i1 %1, i32 %3, i32 %2
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

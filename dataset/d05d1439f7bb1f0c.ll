@@ -4,6 +4,9 @@
 ; abseil-cpp/optimized/parser.cc.ll
 ; abseil-cpp/optimized/parser_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmOutputConverter.cxx.ll
 ; cmake/optimized/nghttp2_http.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
@@ -23,7 +26,6 @@
 ; gromacs/optimized/sm_keywords.cpp.ll
 ; hermes/optimized/ItaniumDemangle.cpp.ll
 ; llama.cpp/optimized/common.cpp.ll
-; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/CommentLexer.cpp.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
@@ -84,7 +86,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -120,12 +121,11 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000c2c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp eq ptr %3, %1
   %5 = icmp ne i8 %0, 123
   %6 = select i1 %5, i1 true, i1 %4
@@ -136,9 +136,9 @@ entry:
 ; llvm/optimized/CGObjCGNU.cpp.ll
 ; ruby/optimized/cesu_8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000216(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000c26(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = icmp eq ptr %3, %1
   %5 = icmp slt i8 %0, 0
   %6 = select i1 %5, i1 true, i1 %4
@@ -149,17 +149,18 @@ entry:
 ; openssl/optimized/libcrypto-lib-bf_lbuf.ll
 ; openssl/optimized/libcrypto-shlib-bf_lbuf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000291(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000d21(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp uge ptr %3, %1
   %5 = icmp eq i8 %0, 10
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/matches_relation_factory.ll
 ; curl/optimized/libcurl_la-imap.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; duckdb/optimized/ub_duckdb_operator_aggregate.cpp.ll
@@ -177,10 +178,11 @@ entry:
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; spike/optimized/socketif.ll
 ; yosys/optimized/ast.ll
+; zed-rs/optimized/8h2ladsi6pcbclrovmrkrncgn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000c21(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp eq ptr %3, %1
   %5 = icmp eq i8 %0, 0
   %6 = select i1 %5, i1 true, i1 %4
@@ -190,9 +192,9 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000028c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000d0c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 3
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 3
   %4 = icmp ugt ptr %3, %1
   %5 = icmp ne i8 %0, 37
   %6 = select i1 %5, i1 true, i1 %4
@@ -204,11 +206,23 @@ entry:
 ; hermes/optimized/ConvertUTF.cpp.ll
 ; llvm/optimized/ConvertUTF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000214(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000c24(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp eq ptr %3, %1
   %5 = icmp ult i8 %0, 2
+  %6 = select i1 %5, i1 true, i1 %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/CGOpenMPRuntime.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000082c(i8 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
+  %4 = icmp eq ptr %3, %1
+  %5 = icmp ne i8 %0, 33
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6
 }
@@ -217,9 +231,9 @@ entry:
 ; openusd/optimized/pathExpression.cpp.ll
 ; openusd/optimized/predicateExpression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000d8c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ne ptr %3, %1
   %5 = icmp ne i8 %0, 34
   %6 = select i1 %5, i1 true, i1 %4
@@ -230,9 +244,9 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000d08(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = icmp ugt ptr %3, %1
   %5 = icmp ugt i8 %0, -113
   %6 = select i1 %5, i1 true, i1 %4
@@ -242,7 +256,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/strutil.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -1
   %4 = icmp eq ptr %3, %1
@@ -252,21 +266,9 @@ entry:
 }
 
 ; 1 occurrences:
-; z3/optimized/array_internalize.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000218(i8 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
-  %4 = icmp eq ptr %3, %1
-  %5 = icmp ugt i8 %0, 1
-  %6 = select i1 %5, i1 true, i1 %4
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; postgres/optimized/inet_net_pton.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000101(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 2
   %4 = icmp ugt ptr %3, %1

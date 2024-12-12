@@ -3,9 +3,9 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000000e:                   # @func000000000000000e
 	cmpl	%edx, %esi
-	setne	%al
+	setle	%al
 	andb	%dil, %al
 	retq
 func000000000000000c:                   # @func000000000000000c
@@ -18,6 +18,11 @@ func0000000000000016:                   # @func0000000000000016
 	setge	%al
 	andb	%dil, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	%edx, %esi
+	setne	%al
+	andb	%dil, %al
+	retq
 func000000000000000a:                   # @func000000000000000a
 	cmpl	%edx, %esi
 	setbe	%al
@@ -26,10 +31,5 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000008:                   # @func0000000000000008
 	cmpl	%edx, %esi
 	setb	%al
-	andb	%dil, %al
-	retq
-func000000000000000e:                   # @func000000000000000e
-	cmpl	%edx, %esi
-	setle	%al
 	andb	%dil, %al
 	retq

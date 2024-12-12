@@ -7,7 +7,7 @@
 define i128 @func0000000000000004(i128 %0, i128 %1) #0 {
 entry:
   %2 = add nsw i128 %1, -1
-  %3 = add i128 %2, %0
+  %3 = add i128 %0, %2
   ret i128 %3
 }
 
@@ -35,6 +35,18 @@ define i128 @func000000000000000c(i128 %0, i128 %1) #0 {
 entry:
   %2 = add nuw nsw i128 %1, 2147483648
   %3 = add i128 %2, %0
+  ret i128 %3
+}
+
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; libquic/optimized/p224-64.c.ll
+; libquic/optimized/p256-64.c.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000005(i128 %0, i128 %1) #0 {
+entry:
+  %2 = add nsw i128 %1, -1
+  %3 = add nsw i128 %2, %0
   ret i128 %3
 }
 
@@ -67,17 +79,6 @@ define i128 @func0000000000000002(i128 %0, i128 %1) #0 {
 entry:
   %2 = add i128 %1, 170141183460469229388950806354771050240
   %3 = add nuw i128 %2, %0
-  ret i128 %3
-}
-
-; 2 occurrences:
-; libquic/optimized/p224-64.c.ll
-; libquic/optimized/p256-64.c.ll
-; Function Attrs: nounwind
-define i128 @func0000000000000005(i128 %0, i128 %1) #0 {
-entry:
-  %2 = add nsw i128 %1, 18446744073709551360
-  %3 = add nsw i128 %2, %0
   ret i128 %3
 }
 

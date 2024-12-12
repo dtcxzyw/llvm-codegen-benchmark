@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -99,7 +100,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c04(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000001804(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = mul i32 %3, -100
@@ -109,7 +110,8 @@ entry:
   ret i1 %7
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -209,7 +211,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c08(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000001808(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = mul i32 %3, -100
@@ -222,7 +224,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000126(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 3
@@ -235,7 +237,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000896(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000001126(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = shl i32 %3, 1
@@ -252,7 +254,7 @@ define i1 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 365
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = trunc i64 %1 to i32
   %7 = icmp eq i32 %5, %6
   ret i1 %7

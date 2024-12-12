@@ -6,8 +6,7 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 func0000000000000011:                   # @func0000000000000011
 	xorl	%eax, %eax
-	cmpq	$2, %rdi
+	cmpq	$4, %rdi
 	setae	%al
-	shll	$4, %eax
-	addq	$26, %rax
+	leaq	1(,%rax,4), %rax
 	retq

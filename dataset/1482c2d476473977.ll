@@ -22,7 +22,7 @@ entry:
   ret i64 %6
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/darLib.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; hermes/optimized/StringPrimitive.cpp.ll
@@ -50,11 +50,12 @@ entry:
 ; wireshark/optimized/packet-autosar-ipdu-multiplexer.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-flexray.c.ll
-; wireshark/optimized/packet-lin.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-socketcan.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; wireshark/optimized/packet-uds.c.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i32 %0, i32 %1) #0 {
 entry:

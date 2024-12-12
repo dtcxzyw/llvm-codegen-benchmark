@@ -1,5 +1,5 @@
 
-; 122 occurrences:
+; 103 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcBlifMv.c.ll
@@ -9,29 +9,22 @@
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/abcNtbdd.c.ll
-; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
-; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/acbUtil.c.ll
-; abc/optimized/acecCl.c.ll
 ; abc/optimized/acecNorm.c.ll
 ; abc/optimized/aigTiming.c.ll
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/bmcCexMin1.c.ll
-; abc/optimized/bmcClp.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecSim.c.ll
-; abc/optimized/cecSplit.c.ll
 ; abc/optimized/combination.c.ll
 ; abc/optimized/cuddCheck.c.ll
 ; abc/optimized/dauGia.c.ll
-; abc/optimized/exor.c.ll
-; abc/optimized/fraClau.c.ll
 ; abc/optimized/fretMain.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/giaDfs.c.ll
@@ -43,32 +36,24 @@
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/giaPack.c.ll
 ; abc/optimized/giaResub2.c.ll
 ; abc/optimized/giaRex.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ivyMan.c.ll
-; abc/optimized/liveness.c.ll
-; abc/optimized/liveness_sim.c.ll
 ; abc/optimized/mioParse.c.ll
-; abc/optimized/mpmPre.c.ll
-; abc/optimized/nwkAig.c.ll
 ; abc/optimized/pdrIncr.c.ll
 ; abc/optimized/plaHash.c.ll
 ; abc/optimized/plaSimple.c.ll
 ; abc/optimized/retLvalue.c.ll
 ; abc/optimized/rpo.c.ll
 ; abc/optimized/satInterP.c.ll
-; abc/optimized/satSolver2i.c.ll
-; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcNtk.c.ll
-; abc/optimized/wlcUif.c.ll
 ; abseil-cpp/optimized/time.cc.ll
 ; box2d/optimized/b2_chain_shape.cpp.ll
 ; bullet3/optimized/btConvexHull.ll
@@ -91,11 +76,8 @@
 ; linux/optimized/ah6.ll
 ; meshlab/optimized/filter_sdfgpu.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; openblas/optimized/dorcsd.c.ll
-; openblas/optimized/dorcsd2by1.c.ll
 ; opencv/optimized/bgfg.cpp.ll
 ; opencv/optimized/colormap.cpp.ll
-; opencv/optimized/lsc.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
 ; openjdk/optimized/classLoaderExt.ll
@@ -112,7 +94,6 @@
 ; openspiel/optimized/tarok.cc.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; openusd/optimized/quadRefinement.cpp.ll
-; ozz-animation/optimized/skinning_job.cc.ll
 ; php/optimized/pcre2_compile.ll
 ; protobuf/optimized/php_generator.cc.ll
 ; quickjs/optimized/libbf.ll
@@ -131,7 +112,7 @@ entry:
   ret i64 %4
 }
 
-; 89 occurrences:
+; 88 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -155,7 +136,6 @@ entry:
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/extraUtilPath.c.ll
-; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -230,7 +210,7 @@ entry:
   ret i64 %4
 }
 
-; 30 occurrences:
+; 28 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -252,9 +232,7 @@ entry:
 ; bullet3/optimized/btRigidBody.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
-; linux/optimized/i8042.ll
 ; opencv/optimized/daisy.cpp.ll
-; opencv/optimized/slice_layer.cpp.ll
 ; openjdk/optimized/stubGenerator_x86_64_poly1305.ll
 ; openmpi/optimized/opal_datatype_create.ll
 ; openusd/optimized/matrix3d.cpp.ll
@@ -270,9 +248,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/sclLoad.c.ll
-; linux/optimized/nfs4trace.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:

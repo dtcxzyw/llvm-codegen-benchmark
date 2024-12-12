@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 68 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
@@ -60,7 +60,6 @@
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
-; postgres/optimized/ginentrypage.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
@@ -78,8 +77,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
+; regex-rs/optimized/33whcn8n29l9c6ys.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
@@ -111,15 +111,15 @@ entry:
 }
 
 ; 3 occurrences:
+; boost/optimized/src.ll
 ; llvm/optimized/StreamChecker.cpp.ll
-; regex-rs/optimized/33whcn8n29l9c6ys.ll
 ; verilator/optimized/V3Active.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = select i1 %2, i64 549755813888, i64 0
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

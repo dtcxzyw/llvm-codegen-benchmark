@@ -2,7 +2,7 @@
 	.quad	6                               # 0x6
 .LCPI0_1:
 	.quad	3                               # 0x3
-func0000000000000068:                   # @func0000000000000068
+func00000000000000d8:                   # @func00000000000000d8
 	vpsraq	$2, %ymm0, %ymm0
 	vpcmpleuq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

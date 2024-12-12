@@ -1,10 +1,9 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
-	beqz	a0, .LBB0_2
-	li	a0, 2
-	ret
-.LBB0_2:
 	slli	a2, a2, 61
-	srai	a0, a2, 63
+	srai	a2, a2, 63
+	snez	a0, a0
+	and	a1, a1, a2
+	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

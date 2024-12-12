@@ -18,6 +18,13 @@ func0000000000000030:                   # @func0000000000000030
 	imull	$-12289, %eax, %eax             # imm = 0xCFFF
 	addl	%edi, %eax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	movl	%edi, %eax
+	movzwl	%dx, %ecx
+	addl	%esi, %ecx
+	leal	(%rcx,%rcx,2), %ecx
+	subl	%ecx, %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movzwl	%dx, %eax
 	addl	%esi, %eax

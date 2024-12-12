@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	%edx, %ecx
 	orl	$4096, %ecx                     # imm = 0x1000
 	testb	$1, %sil
@@ -8,17 +8,7 @@ func0000000000000031:                   # @func0000000000000031
 	testq	%rdi, %rdi
 	cmovel	%ecx, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	movl	%edx, %ecx
-	orl	$262144, %ecx                   # imm = 0x40000
-	testb	$1, %sil
-	cmovnel	%edx, %ecx
-	movl	%ecx, %eax
-	orl	$524288, %eax                   # imm = 0x80000
-	testq	%rdi, %rdi
-	cmovel	%ecx, %eax
-	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movl	%edx, %ecx
 	orl	$16, %ecx
 	testb	$1, %sil
@@ -28,7 +18,27 @@ func0000000000000034:                   # @func0000000000000034
 	cmpq	$256, %rdi                      # imm = 0x100
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000064:                   # @func0000000000000064
+	movl	%edx, %ecx
+	orl	$16, %ecx
+	testb	$1, %sil
+	cmovnel	%edx, %ecx
+	movl	%ecx, %eax
+	orl	$8, %eax
+	cmpq	$256, %rdi                      # imm = 0x100
+	cmovbl	%ecx, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movl	%edx, %ecx
+	orl	$41943040, %ecx                 # imm = 0x2800000
+	testb	$1, %sil
+	cmovnel	%edx, %ecx
+	movl	%ecx, %eax
+	orl	$75497472, %eax                 # imm = 0x4800000
+	testq	%rdi, %rdi
+	cmovel	%ecx, %eax
+	retq
+func0000000000000041:                   # @func0000000000000041
 	movl	%edx, %ecx
 	orl	$2, %ecx
 	testb	$1, %sil

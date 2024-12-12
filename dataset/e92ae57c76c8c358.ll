@@ -17,7 +17,7 @@ entry:
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
 ; zxing/optimized/GenericGFPoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000040a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000080a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -32,7 +32,7 @@ entry:
 ; wireshark/optimized/lte_rlc_graph_dialog.cpp.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000406(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

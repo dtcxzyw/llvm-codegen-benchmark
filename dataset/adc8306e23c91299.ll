@@ -11,7 +11,7 @@ define i1 @func000000000000000a(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3EF0000000000000
-  %4 = fcmp oge float %3, %0
+  %4 = fcmp ole float %0, %3
   ret i1 %4
 }
 
@@ -25,13 +25,14 @@ define i1 @func000000000000000c(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3EF0000000000000
-  %4 = fcmp ole float %3, %0
+  %4 = fcmp oge float %0, %3
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
@@ -39,7 +40,7 @@ define i1 @func0000000000000008(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3EF0000000000000
-  %4 = fcmp oeq float %3, %0
+  %4 = fcmp oeq float %0, %3
   ret i1 %4
 }
 
@@ -59,23 +60,24 @@ define i1 @func0000000000000002(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3EF0000000000000
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   ret i1 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/giaRex.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; gromacs/optimized/sbdsqr.cpp.ll
 ; gromacs/optimized/sstegr.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; opencv/optimized/trackerCSRT.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 1.250000e-01
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 
@@ -86,7 +88,7 @@ define i1 @func0000000000000005(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3FB1111120000000
-  %4 = fcmp ult float %3, %0
+  %4 = fcmp ugt float %0, %3
   ret i1 %4
 }
 
@@ -98,7 +100,7 @@ define i1 @func0000000000000003(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3FB1111120000000
-  %4 = fcmp ugt float %3, %0
+  %4 = fcmp ult float %0, %3
   ret i1 %4
 }
 
@@ -110,7 +112,7 @@ define i1 @func0000000000000007(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3EF0000000000000
-  %4 = fcmp une float %3, %0
+  %4 = fcmp une float %0, %3
   ret i1 %4
 }
 

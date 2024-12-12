@@ -1,14 +1,14 @@
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
+	not	a0, a0
 	srlw	a0, a0, a1
 	andi	a0, a0, 1
-	seqz	a0, a0
 	ret
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
+	not	a0, a0
 	srlw	a0, a0, a1
 	andi	a0, a0, 1
-	seqz	a0, a0
 	ret
-func0000000000000078:                   # @func0000000000000078
+func00000000000000d8:                   # @func00000000000000d8
 	srlw	a0, a0, a1
 	andi	a0, a0, 1
 	ret
@@ -17,7 +17,7 @@ func0000000000000002:                   # @func0000000000000002
 	andi	a0, a0, 4
 	seqz	a0, a0
 	ret
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	srlw	a0, a0, a1
 	andi	a0, a0, 1
 	ret

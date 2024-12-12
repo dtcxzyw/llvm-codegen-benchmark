@@ -1,19 +1,13 @@
 
-; 378 occurrences:
+; 356 occurrences:
 ; abc/optimized/abcXsim.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaMf.c.ll
-; abc/optimized/giaNf.c.ll
-; abc/optimized/giaOf.c.ll
-; abc/optimized/giaPf.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/mvcLits.c.ll
 ; abc/optimized/mvcUtils.c.ll
-; abc/optimized/satSolver.c.ll
-; abc/optimized/satSolver2.c.ll
-; abc/optimized/satSolver3.c.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -29,7 +23,6 @@
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/lz_encoder_mf.c.ll
-; cpython/optimized/ceval.ll
 ; cpython/optimized/obmalloc.ll
 ; cvc5/optimized/node_builder.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -64,7 +57,6 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hdf5/optimized/H5B2int.c.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -82,11 +74,7 @@
 ; icu/optimized/rbt_set.ll
 ; icu/optimized/rematch.ll
 ; icu/optimized/uresdata.ll
-; imgui/optimized/imgui.cpp.ll
-; jq/optimized/unicode_fold1_key.ll
 ; libdeflate/optimized/deflate_decompress.c.ll
-; libpng/optimized/pngread.c.ll
-; libpng/optimized/pngrtran.c.ll
 ; libpng/optimized/pngwrite.c.ll
 ; libwebp/optimized/bit_reader_utils.c.ll
 ; libwebp/optimized/tree_dec.c.ll
@@ -128,9 +116,7 @@
 ; linux/optimized/sqpoll.ll
 ; linux/optimized/stop_machine.ll
 ; linux/optimized/tick-broadcast.ll
-; linux/optimized/tick-common.ll
 ; linux/optimized/vector.ll
-; linux/optimized/xdr4.ll
 ; linux/optimized/xfrm_replay.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -138,7 +124,6 @@
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/ELF.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
-; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/ModuleUtils.cpp.ll
 ; llvm/optimized/ParsedAttr.cpp.ll
@@ -189,15 +174,12 @@
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; oniguruma/optimized/unicode_fold1_key.ll
-; openblas/optimized/dpttrf.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
 ; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; opencv/optimized/bilateral_texture_filter.cpp.ll
 ; opencv/optimized/calibrate.cpp.ll
-; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/cv2_numpy.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
@@ -245,8 +227,6 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-set.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
-; openjdk/optimized/pngread.ll
-; openjdk/optimized/pngrtran.ll
 ; openjdk/optimized/typeArrayKlass.ll
 ; openspiel/optimized/amazons.cc.ll
 ; openssl/optimized/libcrypto-lib-http_client.ll
@@ -282,7 +262,6 @@
 ; php/optimized/ir_ra.ll
 ; php/optimized/md5.ll
 ; php/optimized/zend_alloc.ll
-; postgres/optimized/bitmapset.ll
 ; postgres/optimized/detoast.ll
 ; postgres/optimized/gindatapage.ll
 ; postgres/optimized/ginxlog.ll
@@ -299,7 +278,6 @@
 ; postgres/optimized/spgutils.ll
 ; postgres/optimized/toast_compression.ll
 ; postgres/optimized/tsquery.ll
-; postgres/optimized/tsquery_cleanup.ll
 ; postgres/optimized/tsquery_op.ll
 ; postgres/optimized/tsvector_op.ll
 ; protobuf/optimized/lexer.cc.ll
@@ -387,7 +365,7 @@ entry:
   ret i64 %3
 }
 
-; 140 occurrences:
+; 139 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/cswCut.c.ll
@@ -420,7 +398,6 @@ entry:
 ; linux/optimized/dm-table.ll
 ; linux/optimized/drm_buddy.ll
 ; linux/optimized/drm_ioctl.ll
-; linux/optimized/joliet.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/pcmcia_resource.ll
 ; linux/optimized/tg3.ll
@@ -476,6 +453,8 @@ entry:
 ; luajit/optimized/lj_snap_dyn.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; lz4/optimized/lz4frame.c.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
@@ -515,13 +494,11 @@ entry:
 ; slurm/optimized/salloc.ll
 ; spike/optimized/fcvtmod_w_d.ll
 ; sqlite/optimized/sqlite3.ll
-; tinyrenderer/optimized/tgaimage.cpp.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; wireshark/optimized/packet-dlt.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-gsm_a_bssmap.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
-; wireshark/optimized/packet-netlink-netfilter.c.ll
 ; wireshark/optimized/packet-ospf.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-someip.c.ll
@@ -795,6 +772,7 @@ entry:
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; openjdk/optimized/cmspack.ll
@@ -814,7 +792,6 @@ entry:
 ; velox/optimized/Sequence.cpp.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/packet-umts_mac.c.ll
-; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:
@@ -824,7 +801,9 @@ entry:
   ret i64 %3
 }
 
-; 32 occurrences:
+; 34 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cpython/optimized/instrumentation.ll
@@ -863,6 +842,17 @@ entry:
   %1 = and i32 %0, -16
   %2 = add i32 %1, 69
   %3 = zext i32 %2 to i64
+  ret i64 %3
+}
+
+; 1 occurrences:
+; boost/optimized/token_ids.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0) #0 {
+entry:
+  %1 = and i32 %0, -2147221505
+  %2 = add i32 %1, -256
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 

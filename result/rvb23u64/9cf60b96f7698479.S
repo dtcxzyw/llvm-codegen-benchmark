@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	sext.w	a2, a2
 	addi	a2, a2, -48
 	czero.eqz	a1, a1, a2
@@ -16,7 +16,7 @@ func0000000000000008:                   # @func0000000000000008
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	sext.w	a2, a2
 	lui	a3, 1
 	addiw	a3, a3, -2

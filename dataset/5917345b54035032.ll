@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 50 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
@@ -39,6 +39,7 @@
 ; rocksdb/optimized/db_impl_write.cc.ll
 ; rocksdb/optimized/point_lock_tracker.cc.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
+; verilator/optimized/V3SplitAs.cpp.ll
 ; yosys/optimized/extract_counter.ll
 ; yosys/optimized/flowmap.ll
 ; yosys/optimized/opt_demorgan.ll
@@ -58,14 +59,13 @@ entry:
   ret i8 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/selectioncollection.cpp.ll
 ; gromacs/optimized/selelem.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; openjdk/optimized/jfrTypeSet.ll
 ; regex-rs/optimized/183h9dropc9vohym.ll
-; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0, i8 %1) #0 {

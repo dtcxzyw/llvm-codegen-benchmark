@@ -10,12 +10,9 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
-; clamav/optimized/hash.cpp.ll
+; 13 occurrences:
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
-; llvm/optimized/InstrProf.cpp.ll
-; llvm/optimized/MCPseudoProbe.cpp.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll
@@ -31,6 +28,19 @@ entry:
 define i64 @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %0, i64 %1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 0, %3
+  ret i64 %4
+}
+
+; 3 occurrences:
+; clamav/optimized/hash.cpp.ll
+; llvm/optimized/InstrProf.cpp.ll
+; llvm/optimized/MCPseudoProbe.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 0, %3
   ret i64 %4

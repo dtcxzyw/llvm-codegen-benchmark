@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 52 occurrences:
 ; abc/optimized/deflate.c.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; c3c/optimized/target.c.ll
@@ -24,6 +24,7 @@
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaExprMember.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
+; lvgl/optimized/lv_display.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
@@ -55,7 +56,7 @@
 define i8 @func0000000000000003(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %3, %1
+  %4 = or disjoint i8 %1, %3
   %5 = or disjoint i8 %4, %0
   ret i8 %5
 }
@@ -82,7 +83,7 @@ entry:
 define i8 @func0000000000000000(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = or i8 %3, %1
+  %4 = or i8 %1, %3
   %5 = or i8 %4, %0
   ret i8 %5
 }
@@ -94,7 +95,7 @@ entry:
 define i8 @func0000000000000002(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %3, %1
+  %4 = or disjoint i8 %1, %3
   %5 = or i8 %4, %0
   ret i8 %5
 }

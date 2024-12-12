@@ -4,11 +4,11 @@
 ; glslang/optimized/Initialize.cpp.ll
 ; re2/optimized/parse.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2052
   %4 = icmp ne i32 %3, 4
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = icmp sgt i32 %0, 9
   %7 = and i1 %6, %5
   ret i1 %7
@@ -28,11 +28,11 @@ entry:
 ; wireshark/optimized/packet-iso14443.c.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65534
   %4 = icmp ne i32 %3, 65534
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   %6 = icmp ne i32 %1, 55296
   %7 = and i1 %5, %6
   ret i1 %7
@@ -54,11 +54,11 @@ entry:
 ; wireshark/optimized/packet-acdr.c.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = icmp ne i32 %3, 9
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = icmp eq i32 %0, 0
   %7 = and i1 %6, %5
   ret i1 %7
@@ -74,17 +74,17 @@ entry:
 ; quantlib/optimized/thailand.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = icmp ne i32 %0, 77
   %7 = and i1 %6, %5
   ret i1 %7
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/SemaExceptionSpec.cpp.ll
@@ -116,9 +116,10 @@ entry:
 ; quantlib/optimized/unitedkingdom.ll
 ; quickjs/optimized/quickjs.ll
 ; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-cops.c.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 127
   %4 = icmp eq i32 %3, 64
@@ -128,85 +129,32 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
-; abc/optimized/cbaNtk.c.ll
+; 3 occurrences:
 ; slurm/optimized/step_mgr.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 254
-  %4 = icmp ne i32 %3, 8
+  %3 = and i32 %2, 65279
+  %4 = icmp ne i32 %3, 562
   %5 = and i1 %4, %1
-  %6 = icmp ult i32 %0, -3
+  %6 = icmp ult i32 %0, -2
   %7 = and i1 %6, %5
-  ret i1 %7
-}
-
-; 1 occurrences:
-; lief/optimized/psa_crypto_aead.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, -4161537
-  %4 = icmp eq i32 %3, 83887360
-  %5 = and i1 %4, %1
-  %6 = icmp ugt i32 %0, 16
-  %7 = and i1 %6, %5
-  ret i1 %7
-}
-
-; 1 occurrences:
-; slurm/optimized/slurm_protocol_socket.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, -2
-  %4 = icmp eq i32 %3, 110
-  %5 = and i1 %4, %0
-  %6 = icmp ult i32 %1, 3
-  %7 = and i1 %5, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-per.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = icmp slt i32 %0, 1
   %7 = and i1 %6, %5
   ret i1 %7
-}
-
-; 1 occurrences:
-; icu/optimized/collationdatabuilder.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 31
-  %4 = icmp ult i32 %3, 29
-  %5 = and i1 %4, %1
-  %6 = icmp ugt i32 %0, 2
-  %7 = and i1 %6, %5
-  ret i1 %7
-}
-
-; 2 occurrences:
-; icu/optimized/ucptrie.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 2
-  %4 = or i32 %3, %0
-  %5 = icmp eq i32 %4, 0
-  %6 = and i1 %5, %1
-  ret i1 %6
 }
 
 attributes #0 = { nounwind }

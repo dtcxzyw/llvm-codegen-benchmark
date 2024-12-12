@@ -18,19 +18,21 @@
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   %6 = mul nuw nsw i64 %5, 1000000
   ret i64 %6
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -47,8 +49,8 @@ entry:
 define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 40
-  %4 = or disjoint i64 %3, %1
-  %5 = or i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = or i64 %0, %4
   %6 = mul i64 %5, 8503243848024064
   ret i64 %6
 }
@@ -71,7 +73,7 @@ entry:
 define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   %6 = mul nsw i64 %5, -7
   ret i64 %6

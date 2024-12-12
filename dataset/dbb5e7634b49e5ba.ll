@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 95 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
@@ -19,6 +19,7 @@
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/partition.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; csmith/optimized/ArrayVariable.cpp.ll
 ; cvc5/optimized/cvc5.cpp.ll

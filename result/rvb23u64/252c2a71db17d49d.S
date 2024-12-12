@@ -1,4 +1,4 @@
-func000000000000007c:                   # @func000000000000007c
+func00000000000000ec:                   # @func00000000000000ec
 	andi	a2, a2, 255
 	slliw	a1, a1, 8
 	or	a1, a1, a2
@@ -6,14 +6,14 @@ func000000000000007c:                   # @func000000000000007c
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	andi	a2, a2, 255
 	slliw	a1, a1, 8
 	or	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	andi	a2, a2, 255
 	slliw	a1, a1, 8
 	or	a1, a1, a2

@@ -39,9 +39,46 @@ entry:
   ret i64 %5
 }
 
-; 322 occurrences:
+; 360 occurrences:
 ; actix-rs/optimized/4jlfyqkak9x9x2yv.ll
 ; arrow/optimized/fast-dtoa.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/polynomial.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -357,10 +394,11 @@ entry:
 ; soc-simulator/optimized/verilated.ll
 ; spike/optimized/htif_pthread.ll
 ; spike/optimized/socketif.ll
-; syn/optimized/59s55fjcmu2d325w.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -371,10 +409,9 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/XzIn.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; libquic/optimized/padding.c.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; openmpi/optimized/output.ll
 ; Function Attrs: nounwind
@@ -398,7 +435,9 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
@@ -433,7 +472,7 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; actix-rs/optimized/4jlfyqkak9x9x2yv.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; brotli/optimized/backward_references.c.ll
@@ -442,6 +481,7 @@ entry:
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; openusd/optimized/fast-dtoa.cc.ll
+; syn/optimized/59s55fjcmu2d325w.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -469,7 +509,7 @@ define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

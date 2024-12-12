@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
-; linux/optimized/intel_audio.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/dt_common.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
@@ -10,16 +9,18 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 65535
   %3 = mul nuw nsw i32 %2, 40
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; darktable/optimized/timeline.c.ll
 ; linux/optimized/sg.ll
 ; quantlib/optimized/date.ll
@@ -35,7 +36,7 @@ entry:
   %.fr = freeze i32 %1
   %2 = urem i32 %.fr, 365
   %3 = sub i32 %2, %.fr
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -58,12 +59,13 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; git/optimized/date.ll
+; lvgl/optimized/lv_color.ll
 ; miniaudio/optimized/unity.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
@@ -75,6 +77,19 @@ entry:
   ret i32 %4
 }
 
+; 2 occurrences:
+; boost/optimized/gregorian.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
+entry:
+  %.fr = freeze i32 %1
+  %2 = urem i32 %.fr, 12
+  %3 = sub nuw i32 %.fr, %2
+  %4 = add nsw i32 %3, %0
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; postgres/optimized/freespace.ll
 ; Function Attrs: nounwind
@@ -83,18 +98,7 @@ entry:
   %.fr = freeze i32 %1
   %2 = urem i32 %.fr, 4069
   %3 = sub nuw i32 %.fr, %2
-  %4 = add i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/qrcode_encoder.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
-entry:
-  %2 = udiv i32 %1, 5
-  %3 = mul nuw nsw i32 %2, 10
-  %4 = add nsw i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

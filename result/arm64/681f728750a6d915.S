@@ -10,7 +10,7 @@ func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	cmp	x1, x2
 	cset	w8, eq
-	eor	w8, w8, w0
+	eor	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
@@ -18,7 +18,7 @@ func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
 	cmp	x1, x2
 	cset	w8, hs
-	eor	w8, w8, w0
+	eor	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
                                         // -- End function

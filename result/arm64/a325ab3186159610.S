@@ -1,76 +1,43 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v5.8b, #45
-	cmeq	v4.8b, v4.8b, v5.8b
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v5.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	bif	v0.16b, v2.16b, v4.16b
-	bif	v1.16b, v3.16b, v5.16b
-	orr	v1.4s, #8
-	orr	v0.4s, #8
+	and	w8, w2, #0xff
+	cmp	w8, #45
+	csel	w8, w0, w1, eq
+	orr	w0, w8, #0x8
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	cmeq	v4.8b, v4.8b, #0
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v5.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	bif	v0.16b, v2.16b, v4.16b
-	bif	v1.16b, v3.16b, v5.16b
-	orr	v1.4s, #16
-	orr	v0.4s, #16
+	tst	w2, #0xff
+	csel	w8, w0, w1, eq
+	orr	w0, w8, #0x10
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	movi	v5.8b, #2
-	cmhi	v4.8b, v5.8b, v4.8b
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v5.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	bif	v0.16b, v2.16b, v4.16b
-	bif	v1.16b, v3.16b, v5.16b
-	orr	v1.4s, #128
-	orr	v0.4s, #128
+	tst	w2, #0xfe
+	csel	w8, w0, w1, eq
+	orr	w0, w8, #0x80
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	movi	v5.8b, #31
-	cmhi	v4.8b, v4.8b, v5.8b
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v5.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	bif	v0.16b, v2.16b, v4.16b
-	bif	v1.16b, v3.16b, v5.16b
-	orr	v1.4s, #8, lsl #8
-	orr	v0.4s, #8, lsl #8
+	tst	w2, #0xe0
+	csel	w8, w0, w1, ne
+	orr	w0, w8, #0x800
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	movi	v5.8b, #64
-	cmhi	v4.8b, v5.8b, v4.8b
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v5.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	bif	v0.16b, v2.16b, v4.16b
-	bif	v1.16b, v3.16b, v5.16b
-	orr	v1.4s, #8
-	orr	v0.4s, #8
+	tst	w2, #0xc0
+	csel	w8, w0, w1, eq
+	orr	w0, w8, #0x8
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	cmeq	v4.8b, v4.8b, #0
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v5.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	bit	v0.16b, v2.16b, v4.16b
-	bit	v1.16b, v3.16b, v5.16b
-	orr	v1.4s, #16, lsl #16
-	orr	v0.4s, #16, lsl #16
+	tst	w2, #0xff
+	csel	w8, w1, w0, eq
+	orr	w0, w8, #0x100000
 	ret
                                         // -- End function

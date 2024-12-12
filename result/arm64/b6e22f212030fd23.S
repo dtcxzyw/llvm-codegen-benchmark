@@ -2,7 +2,7 @@ func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	cmp	w2, #1
 	cset	w8, lt
-	orr	w8, w8, w1
+	orr	w8, w1, w8
 	tst	w8, #0x1
 	csel	x0, xzr, x0, ne
 	ret
@@ -29,7 +29,7 @@ func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
 	cmp	w2, #199
 	cset	w8, hi
-	orr	w8, w8, w1
+	orr	w8, w1, w8
 	tst	w8, #0x1
 	csel	x0, xzr, x0, ne
 	ret

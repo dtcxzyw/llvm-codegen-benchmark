@@ -28,7 +28,7 @@ define i64 @func0000000000000005(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %not. = xor i1 %1, true
   %3 = zext i1 %not. to i64
-  %4 = add nsw i64 %3, %2
+  %4 = add nsw i64 %2, %3
   %not.1 = xor i1 %0, true
   %5 = zext i1 %not.1 to i64
   %6 = add nsw i64 %4, %5

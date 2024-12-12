@@ -19,7 +19,7 @@ entry:
 define i16 @func0000000000000006(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 1
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 
@@ -61,7 +61,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 
@@ -72,7 +72,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -19968
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   ret i16 %3
 }
 

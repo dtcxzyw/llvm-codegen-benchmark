@@ -13,8 +13,7 @@ entry:
   ret i64 %2
 }
 
-; 4 occurrences:
-; linux/optimized/scsiglue.ll
+; 3 occurrences:
 ; luajit/optimized/minilua.ll
 ; qemu/optimized/optimize.c.ll
 ; sqlite/optimized/sqlite3.ll

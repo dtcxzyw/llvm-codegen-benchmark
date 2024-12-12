@@ -27,8 +27,8 @@ func0000000000000020:                   # @func0000000000000020
 func0000000000000000:                   # @func0000000000000000
 	movl	$3, %eax
 	shlxl	%edx, %eax, %ecx
-	orl	%edi, %ecx
-	shlxl	%esi, %eax, %eax
+	orl	%esi, %ecx
+	shlxl	%edi, %eax, %eax
 	orl	%ecx, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018

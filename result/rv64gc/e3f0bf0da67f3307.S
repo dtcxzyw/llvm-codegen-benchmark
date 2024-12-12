@@ -12,7 +12,7 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa4, %lo(.LCPI0_1)(a0)
 	fdiv.d	fa5, fa4, fa5
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret
 .LCPI1_0:
 	.quad	0x3ff0000000000000              # double 1
@@ -37,5 +37,5 @@ func000000000000000a:                   # @func000000000000000a
 	fmv.d	fa4, fa1
 .LBB2_2:                                # %entry
 	fdiv.d	fa5, fa5, fa4
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret

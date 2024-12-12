@@ -11,13 +11,13 @@ func0000000000000004:                   # @func0000000000000004
 	vadd.vv	v8, v10, v12, v0.t
 	vadd.vi	v8, v8, 1
 	ret
-func00000000000000e9:                   # @func00000000000000e9
+func00000000000001a9:                   # @func00000000000001a9
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, 14
 	vadd.vv	v8, v10, v12, v0.t
 	vadd.vi	v8, v8, 3
 	ret
-func00000000000000e8:                   # @func00000000000000e8
+func00000000000001a8:                   # @func00000000000001a8
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, 14
 	vadd.vv	v8, v10, v12, v0.t

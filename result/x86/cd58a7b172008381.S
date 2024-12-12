@@ -41,25 +41,33 @@ func0000000000000003:                   # @func0000000000000003
 	setae	%al
 	shll	$13, %eax
 	retq
+.LCPI6_0:
+	.quad	0x7ff0000000000000              # double +Inf
+func0000000000000009:                   # @func0000000000000009
+	movabsq	$-9223372036854775808, %rcx     # imm = 0x8000000000000000
+	leaq	2(%rcx), %rax
+	vucomisd	.LCPI6_0(%rip), %xmm0
+	cmoveq	%rcx, %rax
+	retq
 func0000000000000007:                   # @func0000000000000007
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovw	%k0, %eax
 	leaq	16(,%rax,8), %rax
 	retq
-.LCPI7_0:
+.LCPI8_0:
 	.quad	0x3ff657184ae74487              # double 1.3962634015954636
 func0000000000000005:                   # @func0000000000000005
 	xorl	%eax, %eax
-	vmovsd	.LCPI7_0(%rip), %xmm1           # xmm1 = [1.3962634015954636E+0,0.0E+0]
+	vmovsd	.LCPI8_0(%rip), %xmm1           # xmm1 = [1.3962634015954636E+0,0.0E+0]
 	vucomisd	%xmm0, %xmm1
 	adcq	$4, %rax
 	retq
-.LCPI8_0:
+.LCPI9_0:
 	.quad	0xbfe657184ae74487              # double -0.69813170079773179
 func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax
-	vmovsd	.LCPI8_0(%rip), %xmm1           # xmm1 = [-6.9813170079773179E-1,0.0E+0]
+	vmovsd	.LCPI9_0(%rip), %xmm1           # xmm1 = [-6.9813170079773179E-1,0.0E+0]
 	vucomisd	%xmm0, %xmm1
 	adcq	$1, %rax
 	retq

@@ -1,5 +1,5 @@
 
-; 106 occurrences:
+; 105 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; assimp/optimized/FBXExporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -55,7 +55,6 @@
 ; gromacs/optimized/shellfc.cpp.ll
 ; gromacs/optimized/slae2.cpp.ll
 ; gromacs/optimized/slaev2.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; gromacs/optimized/slasd5.cpp.ll

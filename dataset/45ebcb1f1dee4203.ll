@@ -1,11 +1,9 @@
 
-; 77 occurrences:
+; 89 occurrences:
 ; actix-rs/optimized/2l54a10og4z99516.ll
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; actix-rs/optimized/3r4ha69xj2bs6l86.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
-; coreutils-rs/optimized/2vroer4nd2f1b54m.ll
-; coreutils-rs/optimized/356ademi3o5g91h6.ll
 ; coreutils-rs/optimized/4izzxmjzr12ruk2k.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
@@ -14,9 +12,14 @@
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; just-rs/optimized/xt6bvrk4jdo7mpy.ll
+; llvm/optimized/CGSCCPassManager.cpp.ll
+; llvm/optimized/DebugProgramInstruction.cpp.ll
+; llvm/optimized/Decl.cpp.ll
+; llvm/optimized/Frontend.cpp.ll
+; llvm/optimized/SemaExceptionSpec.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; logos-rs/optimized/4kmrn6pj9h6vp84m.ll
-; meilisearch-rs/optimized/134vr9xz294dqnvo.ll
-; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; ockam-rs/optimized/27nutj9k22uohtyi.ll
@@ -39,7 +42,6 @@
 ; rust-analyzer-rs/optimized/1odpv3eeje06yf96.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
 ; rust-analyzer-rs/optimized/1rhf3pjhhflazor1.ll
-; rust-analyzer-rs/optimized/1ritseoble5k1o6v.ll
 ; rust-analyzer-rs/optimized/1wws471dcmaaem6a.ll
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; rust-analyzer-rs/optimized/2ebx9eutyph8un4i.ll
@@ -60,8 +62,6 @@
 ; rust-analyzer-rs/optimized/9ipmi6my0zkv4p.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; tls-rs/optimized/1edtspt3qu76t3sp.ll
-; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
-; tokenizers-rs/optimized/pctti7iv1zxrcsb.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
 ; typst-rs/optimized/1ewejz0ibz9296z1.ll
@@ -72,15 +72,27 @@
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
 ; wasmtime-rs/optimized/3wy7qx4e8fg0rwt0.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
-; wasmtime-rs/optimized/4i2whcl4s27dqb04.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/i5u7vsclgey2ddj.ll
-; wasmtime-rs/optimized/qzwdmrmrn8c2iza.ll
 ; yosys/optimized/rtlil.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z9x99vx9jfns7mxpwa762fd3.ll
+; zed-rs/optimized/21l651k8emcdlqbvfstrxfddk.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/3wk2sbofyuh9r9t3rhig8ynyg.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/78nr3ruxuq6h5rfkaolnxa52k.ll
+; zed-rs/optimized/a8gnqmwrn3029hplkci6d0ejl.ll
+; zed-rs/optimized/cci2iopocugemgw5wpg0u7nz3.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; zed-rs/optimized/f469d60j02m82fffhoomy2lb4.ll
 ; Function Attrs: nounwind
-define { ptr, ptr } @func0000000000000002(ptr %0, ptr %1) #0 {
+define { ptr, ptr } @func0000000000000003(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1048
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1048
   %3 = insertvalue { ptr, ptr } poison, ptr %0, 0
   %4 = insertvalue { ptr, ptr } %3, ptr %2, 1
   ret { ptr, ptr } %4
@@ -92,19 +104,6 @@ entry:
 define { ptr, ptr } @func0000000000000000(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -40
-  %3 = insertvalue { ptr, ptr } poison, ptr %0, 0
-  %4 = insertvalue { ptr, ptr } %3, ptr %2, 1
-  ret { ptr, ptr } %4
-}
-
-; 3 occurrences:
-; llvm/optimized/CGSCCPassManager.cpp.ll
-; llvm/optimized/DebugProgramInstruction.cpp.ll
-; llvm/optimized/Frontend.cpp.ll
-; Function Attrs: nounwind
-define { ptr, ptr } @func0000000000000003(ptr %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = insertvalue { ptr, ptr } poison, ptr %0, 0
   %4 = insertvalue { ptr, ptr } %3, ptr %2, 1
   ret { ptr, ptr } %4

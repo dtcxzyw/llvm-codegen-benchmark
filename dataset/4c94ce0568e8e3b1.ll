@@ -43,7 +43,6 @@
 ; minetest/optimized/serverpackethandler.cpp.ll
 ; minetest/optimized/staticobject.cpp.ll
 ; minetest/optimized/test_random.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; oiio/optimized/imageoutput.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
@@ -80,6 +79,7 @@
 ; wireshark/optimized/packet-gmr1_rr.c.ll
 ; wireshark/optimized/packet-mbim.c.ll
 ; yosys/optimized/sta.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; zxing/optimized/GTIN.cpp.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll

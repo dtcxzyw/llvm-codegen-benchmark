@@ -29,11 +29,3 @@ func0000000000000004:                   # @func0000000000000004
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000086:                   # @func0000000000000086
-	subl	%edx, %esi
-	shlq	$32, %rsi
-	movabsq	$-8589934592, %rax              # imm = 0xFFFFFFFE00000000
-	addq	%rsi, %rax
-	sarq	$30, %rax
-	addq	%rdi, %rax
-	retq

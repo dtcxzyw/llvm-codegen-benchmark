@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; oiio/optimized/SHA1.cpp.ll
 ; redis/optimized/sha1.ll
 ; ruby/optimized/sha1.ll
+; verilator/optimized/V3String.cpp.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
@@ -15,7 +16,8 @@ entry:
   ret i8 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-csn1.c.ll

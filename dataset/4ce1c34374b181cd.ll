@@ -8,7 +8,7 @@ entry:
   %2 = and i32 %1, 63
   %3 = sub nuw nsw i32 64, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

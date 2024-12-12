@@ -6,7 +6,7 @@
 ; openusd/optimized/json.cpp.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000309(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000609(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64

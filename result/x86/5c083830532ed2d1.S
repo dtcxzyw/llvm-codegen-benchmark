@@ -1,5 +1,5 @@
-func000000000000011c:                   # @func000000000000011c
-	cmpl	%esi, %edi
+func000000000000042c:                   # @func000000000000042c
+	cmpl	%edi, %esi
 	sete	%cl
 	cmpq	$1, %rdi
 	setne	%al

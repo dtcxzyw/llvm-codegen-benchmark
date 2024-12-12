@@ -1,6 +1,5 @@
 
-; 31 occurrences:
-; abseil-cpp/optimized/memutil.cc.ll
+; 29 occurrences:
 ; assimp/optimized/zip.c.ll
 ; coreutils-rs/optimized/43xryk8lar2vb35z.ll
 ; hermes/optimized/Executor.cpp.ll
@@ -30,7 +29,6 @@
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; ruby/optimized/prism.ll
 ; wireshark/optimized/packet-megaco.c.ll
-; wolfssl/optimized/coding.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i8 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -40,25 +38,26 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ugt i8 %2, 96
-  %4 = select i1 %3, i8 %0, i8 %1
-  %5 = zext nneg i8 %4 to i32
-  ret i32 %5
-}
-
-; 3 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_transformer_expression.cpp.ll
+; minetest/optimized/mapblock_mesh.cpp.ll
 ; wireshark/optimized/packet-gsm_a_common.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = icmp eq i8 %2, 45
+  %3 = icmp eq i8 %2, 0
+  %4 = select i1 %3, i8 %0, i8 %1
+  %5 = zext nneg i8 %4 to i32
+  ret i32 %5
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000031(i8 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i8 %2, 96
   %4 = select i1 %3, i8 %0, i8 %1
   %5 = zext nneg i8 %4 to i32
   ret i32 %5
@@ -86,6 +85,17 @@ entry:
 define i32 @func0000000000000010(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 8
+  %4 = select i1 %3, i8 %0, i8 %1
+  %5 = zext i8 %4 to i32
+  ret i32 %5
+}
+
+; 1 occurrences:
+; wolfssl/optimized/coding.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i8 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %2, 107
   %4 = select i1 %3, i8 %0, i8 %1
   %5 = zext i8 %4 to i32
   ret i32 %5

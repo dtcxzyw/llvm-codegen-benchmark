@@ -24,3 +24,54 @@ func0000000000000002:                   # @func0000000000000002
 	vpandq	.LCPI1_2(%rip){1to4}, %ymm1, %ymm1
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
+.LCPI2_0:
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+.LCPI2_1:
+	.quad	6                               # 0x6
+.LCPI2_2:
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+func0000000000000000:                   # @func0000000000000000
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k1
+	vandpd	.LCPI2_2(%rip){1to4}, %ymm2, %ymm1
+	vorpd	.LCPI2_1(%rip){1to4}, %ymm1, %ymm1 {%k1}
+	vorpd	%ymm1, %ymm0, %ymm0
+	retq

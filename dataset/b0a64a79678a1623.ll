@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 75 occurrences:
 ; actix-rs/optimized/3arfg1ogrgyw4qv2.ll
 ; actix-rs/optimized/3q3jkuswkinqn2en.ll
 ; actix-rs/optimized/4vksfexudgt1qids.ll
@@ -52,9 +52,29 @@
 ; tls-rs/optimized/2xhpv4vf07do7r8g.ll
 ; tokenizers-rs/optimized/pctti7iv1zxrcsb.ll
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
+; turborepo-rs/optimized/8oe5vwmwwrst9p60jy1zusiyz.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/1wjst2j1bd1xnipyz033svz8u.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/6fmtxmq32k2tm6vxa1i5afd46.ll
+; zed-rs/optimized/83mjpyo5lbj96jldbmy8hsyj7.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8epszlr2612bvdrsn7g83nprl.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/daazuwy5q4pkhw5qv9dy4nfnq.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000032(i64 %0, ptr %1) #0 {
 entry:
@@ -64,14 +84,27 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; rust-analyzer-rs/optimized/1x0y9zi6lpw009zm.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/f1iubl8q66d2sxqoxpce2jw1m.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = trunc nuw i64 %0 to i1
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i64 %0, ptr %1) #0 {
+entry:
+  %2 = icmp ne ptr %1, null
+  %3 = trunc i64 %0 to i1
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }

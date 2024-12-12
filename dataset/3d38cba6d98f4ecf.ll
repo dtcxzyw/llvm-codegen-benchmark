@@ -14,7 +14,7 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -31,11 +31,11 @@ entry:
 ; openjdk/optimized/shenandoahVerifier.ll
 ; openjdk/optimized/xCollectedHeap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -43,11 +43,11 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/locationPrinter.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp ne i64 %4, 0
   ret i1 %5
 }
@@ -59,7 +59,7 @@ define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp ult i64 %4, 8192
   ret i1 %5
 }
@@ -71,7 +71,7 @@ define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp ugt i64 %4, 8192
   ret i1 %5
 }
@@ -83,7 +83,7 @@ define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp ne i64 %4, 0
   ret i1 %5
 }

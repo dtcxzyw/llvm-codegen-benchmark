@@ -54,8 +54,7 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
-; gromacs/optimized/grompp.cpp.ll
+; 4 occurrences:
 ; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256_nosse.ll
 ; libsodium/optimized/libsse2_la-pwhash_scryptsalsa208sha256_sse.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
@@ -66,7 +65,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, 64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

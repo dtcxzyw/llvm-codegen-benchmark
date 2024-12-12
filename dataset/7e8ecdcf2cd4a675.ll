@@ -38,7 +38,7 @@
 define i64 @func0000000000000000(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %0, -1
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = trunc i8 %1 to i1
   %6 = select i1 %5, i64 %0, i64 %4
   ret i64 %6

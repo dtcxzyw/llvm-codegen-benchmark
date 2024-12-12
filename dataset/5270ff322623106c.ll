@@ -1,20 +1,5 @@
 
-; 2 occurrences:
-; assimp/optimized/glTF2Exporter.cpp.ll
-; minetest/optimized/clientmap.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, ptr %1) #0 {
-entry:
-  %2 = ptrtoint ptr %1 to i64
-  %3 = sub i64 %0, %2
-  %4 = lshr exact i64 %3, 2
-  %5 = trunc i64 %4 to i32
-  %6 = icmp ugt i32 %5, 9
-  ret i1 %6
-}
-
 ; 68 occurrences:
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; cmake/optimized/divsufsort.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
@@ -52,7 +37,6 @@ entry:
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/exposure_compensate.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
-; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/fourier_descriptors_demo.cpp.ll
 ; opencv/optimized/graph_cluster.cpp.ll
 ; opencv/optimized/graycodepattern.cpp.ll
@@ -61,6 +45,7 @@ entry:
 ; opencv/optimized/linemod.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; opencv/optimized/nms.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/pct_signatures.cpp.ll
 ; opencv/optimized/perf_qrcode_pipeline.cpp.ll
 ; opencv/optimized/reduce_layer.cpp.ll
@@ -76,6 +61,7 @@ entry:
 ; openspiel/optimized/simultaneous_move_game.cc.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
+; re2/optimized/prefilter_tree.cc.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/WidthBucketArray.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
@@ -83,13 +69,41 @@ entry:
 ; yosys/optimized/satgen.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, ptr %1) #0 {
+define i1 @func000000000000008a(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
   %4 = lshr exact i64 %3, 3
   %5 = trunc i64 %4 to i32
   %6 = icmp sgt i32 %5, 0
+  ret i1 %6
+}
+
+; 3 occurrences:
+; assimp/optimized/glTF2Exporter.cpp.ll
+; minetest/optimized/clientmap.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = sub i64 %0, %2
+  %4 = lshr exact i64 %3, 2
+  %5 = trunc i64 %4 to i32
+  %6 = icmp ugt i32 %5, 9
+  ret i1 %6
+}
+
+; 1 occurrences:
+; minetest/optimized/clientmap.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000098(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = sub i64 %0, %2
+  %4 = lshr exact i64 %3, 2
+  %5 = trunc i64 %4 to i32
+  %6 = icmp samesign ugt i32 %5, 6
   ret i1 %6
 }
 
@@ -108,7 +122,7 @@ entry:
 ; assimp/optimized/XmlSerializer.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; boost/optimized/ext.ll
 ; cvc5/optimized/sygus_sampler.cpp.ll
 ; gromacs/optimized/specbond.cpp.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
@@ -133,7 +147,7 @@ entry:
 ; wireshark/optimized/traffic_tab.cpp.ll
 ; yosys/optimized/opt_lut.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000081(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
@@ -143,16 +157,17 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/einsum_layer.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/stitching_detailed.cpp.ll
 ; openspiel/optimized/pathfinding.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; velox/optimized/CompactRow.cpp.ll
 ; wireshark/optimized/traffic_tab.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000086(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
@@ -161,14 +176,13 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; openusd/optimized/flatteningSceneIndex.cpp.ll
-; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000084(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
@@ -177,10 +191,24 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000094(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = sub i64 %0, %2
+  %4 = and i64 %3, 17179869176
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; opencv/optimized/rtrees.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, ptr %1) #0 {
+define i1 @func000000000000008c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2

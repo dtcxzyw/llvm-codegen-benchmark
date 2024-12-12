@@ -14,11 +14,11 @@
 ; openssl/optimized/ecdsatest-bin-ecdsatest.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = urem i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -27,11 +27,11 @@ entry:
 ; duckdb/optimized/ub_duckdb_aggr_nested.cpp.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = urem i64 %3, %1
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 

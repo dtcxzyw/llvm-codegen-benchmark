@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/src.ll
 ; openssl/optimized/libdefault-lib-krb5kdf.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
@@ -10,7 +11,9 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {

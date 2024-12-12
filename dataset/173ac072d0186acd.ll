@@ -12,7 +12,7 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0) #0 {
+define i64 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 32
   %2 = add i64 %1, -4294967296
@@ -27,7 +27,7 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0) #0 {
+define i64 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 32
   %2 = add nsw i64 %1, -4294967296

@@ -7,7 +7,7 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmor.mm	v10, v0, v10
-	bseti	a0, zero, 33
+	li	a0, 511
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
@@ -32,9 +32,9 @@ func000000000000000c:                   # @func000000000000000c
 	vmor.mm	v0, v11, v10
 	ret
 func0000000000000008:                   # @func0000000000000008
+	li	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmor.mm	v10, v0, v10
-	li	a0, 959
-	vmsltu.vx	v11, v8, a0
-	vmor.mm	v0, v11, v10
+	vmsltu.vx	v9, v10, a0
+	vmor.mm	v8, v0, v8
+	vmor.mm	v0, v8, v9
 	ret

@@ -16,19 +16,19 @@ func000000000000000a:                   # @func000000000000000a
 	vsra.vi	v8, v8, 31
 	vor.vv	v8, v8, v10
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vi	v0, v8, 0
 	vmv.v.i	v8, -1
 	vsra.vi	v8, v10, 1, v0.t
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, 0
 	vmv.v.i	v8, 0
 	vsra.vi	v8, v10, 16, v0.t
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v8, -1
 	vsra.vi	v8, v10, 16

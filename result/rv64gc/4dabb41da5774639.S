@@ -9,14 +9,18 @@ func0000000000000041:                   # @func0000000000000041
 	li	a1, -55
 	add	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
+func00000000000000c1:                   # @func00000000000000c1
 	andi	a0, a0, 255
-	snez	a1, a0
-	addi	a1, a1, -1
-	andi	a1, a1, 15
+	li	a1, 247
+	bltu	a1, a0, .LBB1_2
+	li	a1, -170
 	add	a0, a0, a1
 	ret
-func0000000000000045:                   # @func0000000000000045
+.LBB1_2:
+	li	a1, -242
+	add	a0, a0, a1
+	ret
+func00000000000000c5:                   # @func00000000000000c5
 	andi	a0, a0, 255
 	li	a1, 2
 	bltu	a1, a0, .LBB2_2

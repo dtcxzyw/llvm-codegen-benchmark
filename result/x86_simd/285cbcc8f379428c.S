@@ -50,7 +50,7 @@ func0000000000000010:                   # @func0000000000000010
 	retq
 .LCPI6_0:
 	.long	1                               # 0x1
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	vpcmpnleuq	%ymm2, %ymm1, %k1
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpbroadcastd	.LCPI6_0(%rip), %xmm1 {%k1} # xmm1 {%k1} = [1,1,1,1]
@@ -61,7 +61,7 @@ func0000000000000021:                   # @func0000000000000021
 	.long	20                              # 0x14
 .LCPI7_1:
 	.long	8                               # 0x8
-func0000000000000022:                   # @func0000000000000022
+func0000000000000062:                   # @func0000000000000062
 	vpcmpnleuq	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI7_0(%rip), %xmm1   # xmm1 = [20,20,20,20]
 	vpbroadcastd	.LCPI7_1(%rip), %xmm1 {%k1} # xmm1 {%k1} = [8,8,8,8]

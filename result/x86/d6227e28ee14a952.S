@@ -17,19 +17,19 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$1, %eax
 	cmovll	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	1(%rdi), %ecx
 	cmpl	$2147483647, %ecx               # imm = 0x7FFFFFFF
 	movl	$1, %eax
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	leal	1(%rdi), %ecx
 	cmpl	$9998, %ecx                     # imm = 0x270E
 	movl	$609, %eax                      # imm = 0x261
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leal	1(%rdi), %ecx
 	xorl	%eax, %eax
 	cmpl	$3, %ecx

@@ -5,7 +5,7 @@ func00000000000000a6:                   # @func00000000000000a6
 	subb	%dil, %al
 	shrb	%cl, %al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000146:                   # @func0000000000000146
 	cmpl	$61, %esi
 	setb	%cl
 	movb	$61, %al

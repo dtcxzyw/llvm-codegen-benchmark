@@ -43,15 +43,23 @@ func0000000000000040:                   # @func0000000000000040
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func000000000000003f:                   # @func000000000000003f
-	zext.w	a2, a2
-	sh3add	a1, a1, a1
-	sh1add	a1, a1, a2
+func0000000000000015:                   # @func0000000000000015
+	lui	a3, 21
+	addiw	a3, a3, 384
+	mul	a1, a1, a3
+	add.uw	a1, a2, a1
 	add	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
 	lui	a3, 244141
 	addiw	a3, a3, -1536
+	mul	a1, a1, a3
+	add.uw	a1, a2, a1
+	add	a0, a0, a1
+	ret
+func000000000000003f:                   # @func000000000000003f
+	lui	a3, 9
+	addiw	a3, a3, 1536
 	mul	a1, a1, a3
 	add.uw	a1, a2, a1
 	add	a0, a0, a1

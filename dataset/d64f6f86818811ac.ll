@@ -19,9 +19,9 @@ entry:
 ; hwloc/optimized/lstopo-lstopo-text.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-text.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000080(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000c0(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 17
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 17
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -1
   %6 = and i64 %0, 4294967295

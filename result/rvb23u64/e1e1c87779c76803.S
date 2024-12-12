@@ -8,7 +8,7 @@ func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0
 	sgtz	a0, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	andi	a0, a0, 1
 	not	a3, a1
 	add	a2, a2, a3

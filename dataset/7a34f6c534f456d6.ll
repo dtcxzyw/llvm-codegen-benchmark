@@ -1,5 +1,5 @@
 
-; 70 occurrences:
+; 69 occurrences:
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/infblock.c.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
@@ -68,7 +68,6 @@
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
 ; openspiel/optimized/spades.cc.ll
 ; openusd/optimized/openexr-c.c.ll
-; qemu/optimized/migration_qemu-file.c.ll
 ; yosys/optimized/opt_muxtree.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {

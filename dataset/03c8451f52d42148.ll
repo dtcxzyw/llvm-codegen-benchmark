@@ -5,7 +5,7 @@
 ; openssl/optimized/libcrypto-lib-siphash.ll
 ; openssl/optimized/libcrypto-shlib-siphash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 16, i64 %1
@@ -17,7 +17,7 @@ entry:
 ; php/optimized/zend_hash.ll
 ; qemu/optimized/net_stream.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, -2
   %3 = select i1 %2, i64 0, i64 %1
@@ -25,16 +25,15 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; brotli/optimized/decode.c.ll
-; cpython/optimized/mpdecimal.ll
 ; linux/optimized/page_vma_mapped.ll
 ; linux/optimized/shmem.ll
 ; php/optimized/zend_hash.ll
 ; qemu/optimized/hw_nvme_ns.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 134217728, i64 %1
@@ -42,8 +41,7 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
-; git/optimized/patch-delta.ll
+; 8 occurrences:
 ; hermes/optimized/JSError.cpp.ll
 ; linux/optimized/thermal_core.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
@@ -53,7 +51,7 @@ entry:
 ; llvm/optimized/PredicateExpander.cpp.ll
 ; php/optimized/zend_hash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -9223372036854775808
   %3 = icmp ugt i64 %1, %0
@@ -65,7 +63,7 @@ entry:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; wireshark/optimized/erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, -1
   %3 = select i1 %2, i64 0, i64 %1

@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 95 occurrences:
 ; abc/optimized/acecXor.c.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; cmake/optimized/Base64.c.ll
@@ -42,6 +42,7 @@
 ; opencv/optimized/render.cpp.ll
 ; opencv/optimized/train_HOG.cpp.ll
 ; openmpi/optimized/instance.ll
+; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/chess.cc.ll
 ; openspiel/optimized/chess_common.cc.ll
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
@@ -99,11 +100,11 @@ define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 10
   %3 = and i64 %2, 64512
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 332 occurrences:
+; 333 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/bdcSpfd.c.ll
@@ -133,8 +134,8 @@ entry:
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/b3File.ll
-; cmake/optimized/archive_pack_dev.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/setopt.c.ll
 ; cpython/optimized/unicodeobject.ll
@@ -280,7 +281,6 @@ entry:
 ; llvm/optimized/ProgramPoint.cpp.ll
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
@@ -309,11 +309,11 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
-; luajit/optimized/lj_prng.ll
-; luajit/optimized/lj_prng_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_freetype_glyph.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
@@ -431,11 +431,13 @@ entry:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/51r9csr3d9dou1a2.ll
 ; wireshark/optimized/btsnoop.c.ll
-; wireshark/optimized/packet-etag.c.ll
 ; wolfssl/optimized/aes.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/spacer_global_generalizer.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -493,7 +495,7 @@ entry:
   ret i64 %4
 }
 
-; 68 occurrences:
+; 69 occurrences:
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/giaSim.c.ll
@@ -518,7 +520,6 @@ entry:
 ; folly/optimized/DeterministicSchedule.cpp.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; libquic/optimized/poly1305_vec.c.ll
-; linux/optimized/capability.ll
 ; linux/optimized/p4.ll
 ; linux/optimized/rmap.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -562,6 +563,8 @@ entry:
 ; wireshark/optimized/tvbuff.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
@@ -597,6 +600,7 @@ entry:
 }
 
 ; 64 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/pyhash.ll
 ; freetype/optimized/truetype.c.ll
@@ -654,7 +658,6 @@ entry:
 ; openjdk/optimized/library_call.ll
 ; openjdk/optimized/xMark.ll
 ; openjdk/optimized/zMark.ll
-; openspiel/optimized/2048.cc.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/csrs.ll
@@ -666,7 +669,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = and i64 %2, 32
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -685,7 +688,7 @@ define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 7
   %3 = and i64 %2, 1920
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

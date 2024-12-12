@@ -1,12 +1,11 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; hermes/optimized/BCP47Parser.cpp.ll
 ; icu/optimized/uidna.ll
 ; icu/optimized/ustring.ll
 ; libquic/optimized/string_util.cc.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind

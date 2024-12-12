@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 18 occurrences:
 ; actix-rs/optimized/2m9lq42maoywd5kd.ll
 ; coreutils-rs/optimized/4ooodgzovc6dgngk.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
@@ -15,12 +15,15 @@
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wasmtime-rs/optimized/d6ph2wohj5hdp1j.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, %0
   %4 = select i1 %3, i64 %1, i64 -1
-  %5 = icmp ule i64 %4, %0
+  %5 = icmp uge i64 %0, %4
   ret i1 %5
 }
 

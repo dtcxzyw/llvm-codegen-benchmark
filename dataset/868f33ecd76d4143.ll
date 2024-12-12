@@ -1,5 +1,6 @@
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/math_normalize_spheroidal.ll
 ; box2d/optimized/b2_revolute_joint.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -10,6 +11,7 @@
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; raylib/optimized/raudio.c.ll
 ; tev/optimized/ImageCanvas.cpp.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(i1 %0, float %1) #0 {
 entry:

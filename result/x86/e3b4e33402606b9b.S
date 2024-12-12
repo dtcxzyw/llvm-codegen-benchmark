@@ -18,11 +18,6 @@ func0000000000000000:                   # @func0000000000000000
 	andl	$3, %edi
 	shlxl	%esi, %edi, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	shll	$3, %esi
-	andl	$15, %edi
-	shlxl	%esi, %edi, %eax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	shll	$3, %esi
 	movzbl	%dil, %eax

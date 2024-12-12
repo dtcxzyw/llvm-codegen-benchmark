@@ -27,41 +27,35 @@ func0000000000000001:                   # @func0000000000000001
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0   # ymm0 = [3,3,3,3,3,3,3,3]
 	vpsubd	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
-.LCPI3_0:
-	.long	1                               # 0x1
-.LCPI3_1:
-	.long	2                               # 0x2
-func000000000000000d:                   # @func000000000000000d
+func0000000000000005:                   # @func0000000000000005
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpbroadcastd	.LCPI3_0(%rip), %ymm0   # ymm0 = [1,1,1,1,1,1,1,1]
-	vpaddd	.LCPI3_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
+	vpcmpeqd	%ymm0, %ymm0, %ymm0
+	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI4_0:
 	.long	1                               # 0x1
 .LCPI4_1:
-	.long	4294967292                      # 0xfffffffc
-func0000000000000005:                   # @func0000000000000005
+	.long	2                               # 0x2
+func000000000000000d:                   # @func000000000000000d
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpbroadcastd	.LCPI4_0(%rip), %ymm0   # ymm0 = [1,1,1,1,1,1,1,1]
 	vpaddd	.LCPI4_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	retq
 .LCPI5_0:
-	.long	4294967292                      # 0xfffffffc
-func0000000000000000:                   # @func0000000000000000
-	vpsllw	$15, %xmm0, %xmm0
-	vpmovw2m	%xmm0, %k1
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpaddd	.LCPI5_0(%rip){1to8}, %ymm1, %ymm0 {%k1}
-	retq
-.LCPI6_0:
 	.long	11                              # 0xb
-.LCPI6_1:
+.LCPI5_1:
 	.long	9                               # 0x9
 func0000000000000002:                   # @func0000000000000002
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpbroadcastd	.LCPI6_0(%rip), %ymm0   # ymm0 = [11,11,11,11,11,11,11,11]
-	vpaddd	.LCPI6_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
+	vpbroadcastd	.LCPI5_0(%rip), %ymm0   # ymm0 = [11,11,11,11,11,11,11,11]
+	vpaddd	.LCPI5_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
+	retq
+func0000000000000000:                   # @func0000000000000000
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k1
+	vpcmpeqd	%ymm0, %ymm0, %ymm0
+	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq

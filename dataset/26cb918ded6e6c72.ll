@@ -1,6 +1,5 @@
 
-; 87 occurrences:
-; abseil-cpp/optimized/memutil.cc.ll
+; 85 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/hashing.cc.ll
 ; assimp/optimized/zip.c.ll
@@ -17,12 +16,10 @@
 ; libwebp/optimized/palette.c.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/dw.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/keyboard.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/scsi_lib.ll
 ; linux/optimized/trackpoint.ll
 ; linux/optimized/vht.ll
@@ -31,6 +28,7 @@
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -79,7 +77,6 @@
 ; wireshark/optimized/packet-megaco.c.ll
 ; wireshark/optimized/packet-mtp3.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; wireshark/optimized/packet-radius.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-sna.c.ll
@@ -87,6 +84,7 @@
 ; wireshark/optimized/packet-v52.c.ll
 ; wolfssl/optimized/coding.c.ll
 ; wolfssl/optimized/sha3.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -110,16 +108,15 @@ entry:
 ; llvm/optimized/CXXInheritance.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/JSONNodeDumper.cpp.ll
-; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
 ; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
+; minetest/optimized/mapblock_mesh.cpp.ll
 ; openjdk/optimized/hb-common.ll
 ; slurm/optimized/numa.ll
 ; spike/optimized/s_addM.ll
-; stockfish/optimized/tbprobe.ll
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll
 ; wireshark/optimized/packet-ehdlc.c.ll
@@ -130,6 +127,7 @@ entry:
 ; wireshark/optimized/packet-ppp.c.ll
 ; wireshark/optimized/packet-s5066dts.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i8 %1, i8 %2) #0 {
 entry:

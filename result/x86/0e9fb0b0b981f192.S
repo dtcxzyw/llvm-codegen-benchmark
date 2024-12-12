@@ -1,4 +1,4 @@
-func0000000000000551:                   # @func0000000000000551
+func0000000000000aa1:                   # @func0000000000000aa1
 	sarq	$5, %rdx
 	shlq	$4, %rsi
 	addq	%rdx, %rsi
@@ -7,14 +7,14 @@ func0000000000000551:                   # @func0000000000000551
 	cmpq	%rax, %rsi
 	sete	%al
 	retq
-func000000000000055c:                   # @func000000000000055c
+func0000000000000aac:                   # @func0000000000000aac
 	sarq	$3, %rdx
 	shlq	$6, %rsi
 	addq	%rdx, %rsi
 	addq	%rdi, %rsi
 	setne	%al
 	retq
-func0000000000000558:                   # @func0000000000000558
+func0000000000000aa8:                   # @func0000000000000aa8
 	sarq	$3, %rdx
 	shlq	$6, %rsi
 	addq	%rdx, %rsi
@@ -22,7 +22,7 @@ func0000000000000558:                   # @func0000000000000558
 	cmpq	$950000001, %rsi                # imm = 0x389FD981
 	setae	%al
 	retq
-func000000000000055a:                   # @func000000000000055a
+func0000000000000aaa:                   # @func0000000000000aaa
 	sarq	$4, %rdx
 	shlq	$5, %rsi
 	addq	%rdx, %rsi
@@ -30,7 +30,7 @@ func000000000000055a:                   # @func000000000000055a
 	cmpq	$17, %rsi
 	setge	%al
 	retq
-func0000000000000556:                   # @func0000000000000556
+func0000000000000aa6:                   # @func0000000000000aa6
 	sarq	$4, %rdx
 	shlq	$5, %rsi
 	addq	%rdx, %rsi
@@ -38,7 +38,7 @@ func0000000000000556:                   # @func0000000000000556
 	cmpq	$2, %rsi
 	setl	%al
 	retq
-func0000000000000554:                   # @func0000000000000554
+func0000000000000aa4:                   # @func0000000000000aa4
 	sarq	$4, %rdx
 	shlq	$5, %rsi
 	addq	%rdx, %rsi
@@ -46,7 +46,7 @@ func0000000000000554:                   # @func0000000000000554
 	cmpq	$65535, %rsi                    # imm = 0xFFFF
 	setb	%al
 	retq
-func000000000000040a:                   # @func000000000000040a
+func000000000000080a:                   # @func000000000000080a
 	sarq	$3, %rdx
 	shlq	$4, %rsi
 	addq	%rdx, %rsi
@@ -54,7 +54,7 @@ func000000000000040a:                   # @func000000000000040a
 	testq	%rsi, %rsi
 	setg	%al
 	retq
-func000000000000050a:                   # @func000000000000050a
+func0000000000000a0a:                   # @func0000000000000a0a
 	sarq	$3, %rdx
 	shlq	$6, %rsi
 	addq	%rdx, %rsi
@@ -62,7 +62,7 @@ func000000000000050a:                   # @func000000000000050a
 	cmpq	$29, %rsi
 	setge	%al
 	retq
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	shlq	$4, %rdx
 	sarq	$3, %rsi
 	addq	%rdx, %rsi

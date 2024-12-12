@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/8250_port.ll
 ; llvm/optimized/SystemZ.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
+; redis/optimized/rdb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:

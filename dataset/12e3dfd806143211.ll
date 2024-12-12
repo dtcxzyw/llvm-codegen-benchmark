@@ -5,12 +5,12 @@
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; gromacs/optimized/pbc.cpp.ll
 ; hwloc/optimized/hwloc-bind.ll
 ; icu/optimized/csrucode.ll
@@ -46,16 +46,24 @@ entry:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/mem.ll
 ; z3/optimized/sat_th.cpp.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 65024
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }
 
-; 19 occurrences:
+; 26 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; clamav/optimized/file.cpp.ll
 ; git/optimized/sequencer.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -84,8 +92,15 @@ entry:
   ret i1 %4
 }
 
-; 110 occurrences:
+; 111 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -169,11 +184,6 @@ entry:
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; openusd/optimized/string-to-double.cc.ll
-; rust-analyzer-rs/optimized/2jyyuxshs9vnz9u0.ll
-; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
-; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
-; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
-; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
@@ -194,11 +204,26 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
-; wireshark/optimized/packet-acdr.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, -10
+  %3 = or i1 %0, %2
+  %4 = xor i1 %3, true
+  ret i1 %4
+}
+
+; 6 occurrences:
+; rust-analyzer-rs/optimized/2jyyuxshs9vnz9u0.ll
+; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
+; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
+; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
+; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
+; wireshark/optimized/packet-acdr.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 8
   %3 = or i1 %2, %0
   %4 = xor i1 %3, true
   ret i1 %4
@@ -225,7 +250,7 @@ entry:
 define i1 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 15
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }

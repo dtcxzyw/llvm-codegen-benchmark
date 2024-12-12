@@ -3,7 +3,7 @@
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = trunc i64 %2 to i32

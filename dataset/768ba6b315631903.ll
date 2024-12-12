@@ -108,7 +108,7 @@ entry:
   ret i1 %4
 }
 
-; 49 occurrences:
+; 46 occurrences:
 ; abc/optimized/epd.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -137,11 +137,9 @@ entry:
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; graphviz/optimized/arrows.c.ll
 ; hermes/optimized/TypedArray.cpp.ll
-; icu/optimized/putil.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
@@ -150,7 +148,6 @@ entry:
 ; openjdk/optimized/addnode.ll
 ; postgres/optimized/multirangetypes_selfuncs.ll
 ; postgres/optimized/rangetypes_selfuncs.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; proj/optimized/stere.cpp.ll
 ; proj/optimized/transformation.cpp.ll
@@ -167,10 +164,15 @@ entry:
   ret i1 %4
 }
 
-; 150 occurrences:
+; 155 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/nvector_serial.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cpython/optimized/complexobject.ll
@@ -327,7 +329,7 @@ entry:
   ret i1 %4
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; openusd/optimized/matrix4d.cpp.ll
 ; proj/optimized/conversion.cpp.ll
 ; quantlib/optimized/abcd.ll
@@ -350,7 +352,6 @@ entry:
 ; quantlib/optimized/conundrumpricer.ll
 ; quantlib/optimized/convolvedstudentt.ll
 ; quantlib/optimized/creditdefaultswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/g2.ll
 ; quantlib/optimized/gaussian1djamshidianswaptionengine.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -520,14 +521,45 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; gromacs/optimized/forcetable.cpp.ll
 ; lightgbm/optimized/c_api.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openusd/optimized/utils.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000082(double %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 0x38AA95A5C0000000
   %3 = fcmp uno double %0, 0.000000e+00
+  %4 = or i1 %3, %2
+  ret i1 %4
+}
+
+; 19 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; cpython/optimized/cmathmodule.ll
+; cpython/optimized/mathmodule.ll
+; meshlab/optimized/matching.cpp.ll
+; protobuf/optimized/field_comparator.cc.ll
+; stat-rs/optimized/rkxxfn3f5mhspne.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000132(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ueq double %1, 0x7FF0000000000000
+  %3 = fcmp ueq double %0, 0x7FF0000000000000
   %4 = or i1 %3, %2
   ret i1 %4
 }
@@ -556,40 +588,13 @@ entry:
 }
 
 ; 2 occurrences:
-; stat-rs/optimized/1957ju1ns40544yq.ll
-; stat-rs/optimized/rkxxfn3f5mhspne.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000114(double %0, double %1) #0 {
-entry:
-  %2 = fcmp oeq double %1, 0x7FF0000000000000
-  %3 = fcmp ole double %0, 0.000000e+00
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 2 occurrences:
 ; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
 ; stat-rs/optimized/n94tvlll45kxl7r.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(double %0, double %1) #0 {
+define i1 @func0000000000000174(double %0, double %1) #0 {
 entry:
-  %2 = fcmp uno double %1, 0.000000e+00
+  %2 = fcmp ule double %1, 0.000000e+00
   %3 = fcmp ole double %0, 0.000000e+00
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 5 occurrences:
-; cpython/optimized/cmathmodule.ll
-; cpython/optimized/mathmodule.ll
-; meshlab/optimized/matching.cpp.ll
-; protobuf/optimized/field_comparator.cc.ll
-; stat-rs/optimized/rkxxfn3f5mhspne.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000132(double %0, double %1) #0 {
-entry:
-  %2 = fcmp ueq double %1, 0x7FF0000000000000
-  %3 = fcmp ueq double %0, 0x7FF0000000000000
   %4 = or i1 %3, %2
   ret i1 %4
 }
@@ -633,9 +638,8 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; ceres/optimized/solver.cc.ll
-; opencv/optimized/chessboard.cpp.ll
 ; openusd/optimized/capsuleMeshGenerator.cpp.ll
 ; openusd/optimized/coneMeshGenerator.cpp.ll
 ; openusd/optimized/cylinderMeshGenerator.cpp.ll
@@ -754,17 +758,6 @@ define i1 @func00000000000000c2(double %0, double %1) #0 {
 entry:
   %2 = fcmp one double %1, 0x7FF0000000000000
   %3 = fcmp uno double %0, 0.000000e+00
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; typst-rs/optimized/m09o5qr68f5khss.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000112(double %0, double %1) #0 {
-entry:
-  %2 = fcmp oeq double %1, 0.000000e+00
-  %3 = fcmp ueq double %0, 0x7FF0000000000000
   %4 = or i1 %3, %2
   ret i1 %4
 }

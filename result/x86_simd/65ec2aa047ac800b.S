@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.zero	16,1
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vptestmb	.LCPI0_0(%rip), %xmm2, %k1 {%k1}
@@ -11,7 +11,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	.zero	16,1
 .LCPI1_1:
 	.zero	4,1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpternlogd	$248, .LCPI1_1(%rip){1to4}, %xmm2, %xmm1 # xmm1 = xmm1 | (xmm2 & mem)

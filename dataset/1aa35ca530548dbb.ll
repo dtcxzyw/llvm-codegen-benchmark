@@ -1,10 +1,10 @@
 
-%struct.OHCIPort.2592826 = type { %struct.USBPort.2592827, i32 }
-%struct.USBPort.2592827 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2592828 }
-%union.anon.5.2592828 = type { %struct.QTailQLink.2592824 }
-%struct.QTailQLink.2592824 = type { ptr, ptr }
+%struct.OHCIPort.2706560 = type { %struct.USBPort.2706561, i32 }
+%struct.USBPort.2706561 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2706562 }
+%union.anon.5.2706562 = type { %struct.QTailQLink.2706558 }
+%struct.QTailQLink.2706558 = type { ptr, ptr }
 
-; 42 occurrences:
+; 41 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/optimizer.ll
 ; libsodium/optimized/libsodium_la-softaes.ll
@@ -43,7 +43,6 @@
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/hw_scsi_esp-pci.c.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
-; qemu/optimized/hw_usb_imx-usb-phy.c.ll
 ; qemu/optimized/tcg.c.ll
 ; qemu/optimized/ui_input-linux.c.ll
 ; ruby/optimized/regcomp.ll
@@ -56,7 +55,7 @@ entry:
   ret ptr %4
 }
 
-; 1141 occurrences:
+; 1143 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcIfMux.c.ll
@@ -1198,17 +1197,20 @@ entry:
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; wasmtime-rs/optimized/h626cniernc4zw8.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 5
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw [10 x ptr], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [10 x ptr], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 103 occurrences:
+; 102 occurrences:
 ; abc/optimized/satSolver2.c.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/archive_rb.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
@@ -1280,7 +1282,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -1309,14 +1310,13 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = and i64 %2, 255
-  %4 = getelementptr nusw [256 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [256 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -1328,7 +1328,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr [15 x %struct.OHCIPort.2592826], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [15 x %struct.OHCIPort.2706560], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

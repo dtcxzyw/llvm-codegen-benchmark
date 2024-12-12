@@ -1,7 +1,8 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; grpc/optimized/parsing.cc.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
@@ -23,19 +24,6 @@ entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 32
-  %5 = zext i32 %0 to i64
-  %6 = or disjoint i64 %4, %5
-  ret i64 %6
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-stcsig.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i32 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, -4
-  %3 = zext i8 %2 to i64
-  %4 = shl nuw nsw i64 %3, 30
   %5 = zext i32 %0 to i64
   %6 = or disjoint i64 %4, %5
   ret i64 %6

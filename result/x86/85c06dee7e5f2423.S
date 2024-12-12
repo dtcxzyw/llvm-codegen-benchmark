@@ -96,9 +96,3 @@ func0000000000000034:                   # @func0000000000000034
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
-	vucomiss	%xmm0, %xmm0
-	setnp	%al
-	orb	%dil, %sil
-	orb	%sil, %al
-	retq

@@ -106,17 +106,18 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/FBXExporter.cpp.ll
+; quantlib/optimized/cmsmarketcalibration.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000017(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 4
   %.idx = mul i64 %5, 36
-  %6 = getelementptr nusw i8, ptr %0, i64 %.idx
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
   ret ptr %6
 }
 
@@ -131,19 +132,6 @@ entry:
   %6 = mul i64 %5, 36
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
-}
-
-; 1 occurrences:
-; quantlib/optimized/cmsmarketcalibration.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %3, %1
-  %5 = ashr exact i64 %4, 3
-  %.idx = mul i64 %5, 24
-  %6 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
-  ret ptr %6
 }
 
 ; 3 occurrences:

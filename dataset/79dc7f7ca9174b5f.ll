@@ -1,5 +1,5 @@
 
-; 103 occurrences:
+; 100 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/acecCo.c.ll
@@ -14,8 +14,6 @@
 ; abc/optimized/giaFrames.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ivyMulti.c.ll
-; abc/optimized/msatSolverIo.c.ll
-; abc/optimized/satInterB.c.ll
 ; abseil-cpp/optimized/fastmath_test.cc.ll
 ; assimp/optimized/DefaultLogger.cpp.ll
 ; cmake/optimized/archive_rb.c.ll
@@ -36,7 +34,6 @@
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/seq_clientmgr.ll
-; linux/optimized/vsmp_64.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/ClangAttrEmitter.cpp.ll
@@ -57,6 +54,7 @@
 ; luajit/optimized/lj_opt_mem_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_anim.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/cmsps2.ll
@@ -78,7 +76,6 @@
 ; php/optimized/plain_wrapper.ll
 ; postgres/optimized/wparser_def.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; quest/optimized/QuEST_validation.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll

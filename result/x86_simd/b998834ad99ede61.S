@@ -1,11 +1,11 @@
 .LCPI0_0:
-	.long	16384                           # 0x4000
-.LCPI0_1:
 	.long	4290805248                      # 0xffc07e00
+.LCPI0_1:
+	.long	16384                           # 0x4000
 func0000000000000001:                   # @func0000000000000001
 	vpslld	$14, %ymm1, %ymm1
-	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
-	vpternlogd	$236, .LCPI0_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
+	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
+	vpternlogd	$248, .LCPI0_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI1_0:
 	.long	117440512                       # 0x7000000

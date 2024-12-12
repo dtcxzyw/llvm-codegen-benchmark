@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/x86func.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000012(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ult i8 %2, 40
-  %4 = select i1 %3, i32 100663296, i32 117440512
-  %5 = or disjoint i32 %4, %1
-  %6 = or i32 %5, %0
-  ret i32 %6
-}
-
 ; 2 occurrences:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_MidiIn.ll
@@ -50,7 +38,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 12
   %4 = select i1 %3, i32 -2147483648, i32 -1073741824
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
@@ -81,7 +69,7 @@ entry:
   %3 = icmp eq i8 %2, 2
   %4 = select i1 %3, i32 -2145370112, i32 2113536
   %5 = or disjoint i32 %4, %1
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
@@ -92,7 +80,7 @@ define i32 @func0000000000000033(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %.not = icmp eq i8 %2, 0
   %3 = select i1 %.not, i32 0, i32 4
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }

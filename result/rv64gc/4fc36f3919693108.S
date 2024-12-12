@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sext.w	a0, a0
 	beqz	a0, .LBB0_2
 	lui	a0, 8
@@ -11,19 +11,19 @@ func0000000000000031:                   # @func0000000000000031
 func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
 	beqz	a0, .LBB1_2
+	ori	a0, a2, 6
+	ret
+.LBB1_2:
+	ori	a0, a1, 4
+	ret
+func0000000000000041:                   # @func0000000000000041
+	sext.w	a0, a0
+	beqz	a0, .LBB2_2
 	lui	a0, 1024
 	or	a0, a0, a2
 	ret
-.LBB1_2:
-	ori	a0, a1, 256
-	ret
-func0000000000000011:                   # @func0000000000000011
-	sext.w	a0, a0
-	beqz	a0, .LBB2_2
-	ori	a0, a2, 24
-	ret
 .LBB2_2:
-	ori	a0, a1, 8
+	ori	a0, a1, 256
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0

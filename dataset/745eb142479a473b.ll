@@ -7,18 +7,17 @@
 define i8 @func000000000000000c(i16 %0, i8 %1) #0 {
 entry:
   %2 = trunc i16 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
-; 2 occurrences:
-; linux/optimized/nvram.ll
+; 1 occurrences:
 ; minetest/optimized/mapnode.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i16 %0, i8 %1) #0 {
 entry:
   %2 = trunc i16 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
@@ -28,7 +27,7 @@ entry:
 define i8 @func000000000000000e(i16 %0, i8 %1) #0 {
 entry:
   %2 = trunc i16 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 

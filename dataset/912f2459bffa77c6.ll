@@ -4,7 +4,6 @@
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/cecSolve.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/kitTruth.c.ll
@@ -16,6 +15,7 @@
 ; hdf5/optimized/H5Tbit.c.ll
 ; icu/optimized/bmpset.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; mitsuba3/optimized/ldsampler.cpp.ll
 ; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_xclass.ll

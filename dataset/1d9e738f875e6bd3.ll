@@ -1,9 +1,10 @@
 
-; 41 occurrences:
+; 42 occurrences:
 ; assimp/optimized/MD5Loader.cpp.ll
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
+; boost/optimized/cmdline.ll
 ; cxxopts/optimized/example.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; gromacs/optimized/qmmmtopologypreprocessor.cpp.ll
@@ -42,7 +43,7 @@
 ; velox/optimized/Type.cpp.ll
 ; xgboost/optimized/context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = add nsw i64 %2, -1
@@ -77,7 +78,7 @@ entry:
 ; quantlib/optimized/genericlsregression.ll
 ; quantlib/optimized/parametricexercise.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = add nsw i64 %2, 1
@@ -85,7 +86,7 @@ entry:
   ret i1 %4
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; assimp/optimized/IFCCurve.cpp.ll
 ; cvc5/optimized/cvc5.cpp.ll
 ; cvc5/optimized/timeout_core_manager.cpp.ll
@@ -109,9 +110,8 @@ entry:
 ; openjdk/optimized/generateOopMap.ll
 ; openusd/optimized/evalUtils.cpp.ll
 ; openusd/optimized/pathPattern.cpp.ll
-; proj/optimized/io.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = add nsw i64 %2, 1
@@ -122,7 +122,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ac(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = add nsw i64 %2, 1
@@ -133,7 +133,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = add nsw i64 %2, -1
@@ -144,7 +144,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/slub.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
   %3 = add nsw i64 %2, -1
@@ -155,7 +155,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 16
   %3 = add nsw i64 %2, 1
@@ -166,7 +166,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/floatobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 4
   %3 = add nsw i64 %2, 1

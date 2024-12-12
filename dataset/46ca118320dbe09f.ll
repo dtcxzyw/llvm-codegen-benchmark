@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 57 occurrences:
 ; assimp/optimized/IFCLoader.cpp.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_bloom.c.ll
@@ -18,7 +18,6 @@
 ; darktable/optimized/introspection_spots.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
-; darktable/optimized/introspection_vibrance.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
@@ -63,7 +62,7 @@ define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 5.000000e-01
   %3 = fsub float 1.000000e+00, %2
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 

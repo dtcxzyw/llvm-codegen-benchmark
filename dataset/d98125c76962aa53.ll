@@ -1,10 +1,17 @@
 
-; 41 occurrences:
+; 48 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCCurve.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/partition.ll
 ; brotli/optimized/metablock.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
@@ -50,7 +57,14 @@ entry:
   ret double %5
 }
 
-; 15 occurrences:
+; 22 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; graphviz/optimized/make_map.c.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll

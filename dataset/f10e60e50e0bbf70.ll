@@ -1,8 +1,10 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; openusd/optimized/bignum.cc.ll
 ; wireshark/optimized/packet-pw-atm.c.ll
 ; Function Attrs: nounwind
@@ -13,11 +15,12 @@ entry:
   ret i32 %2
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; arrow/optimized/bignum.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
+; lvgl/optimized/lv_calendar.ll
 ; lz4/optimized/lz4.c.ll
 ; opencv/optimized/convexhull.cpp.ll
 ; opencv/optimized/minarea.cpp.ll

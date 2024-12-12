@@ -1,6 +1,12 @@
 
-; 47 occurrences:
+; 53 occurrences:
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; graphviz/optimized/route.c.ll
 ; gromacs/optimized/colvar.cpp.ll

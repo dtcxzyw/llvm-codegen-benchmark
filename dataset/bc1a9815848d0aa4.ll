@@ -43,7 +43,7 @@ entry:
   ret i64 %4
 }
 
-; 150 occurrences:
+; 161 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -51,6 +51,15 @@ entry:
 ; arrow/optimized/expression.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; assimp/optimized/JoinVerticesProcess.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
@@ -193,6 +202,8 @@ entry:
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; zstd/optimized/pool.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
@@ -230,7 +241,7 @@ entry:
   ret i64 %4
 }
 
-; 55 occurrences:
+; 50 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
@@ -240,8 +251,6 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/graph.ll
 ; lief/optimized/BinaryParser.cpp.ll
-; linux/optimized/probe_roms.ll
-; linux/optimized/x509_public_key.ll
 ; linux/optimized/zstd_decompress.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
@@ -250,7 +259,6 @@ entry:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; luau/optimized/CodeGenContext.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
-; lz4/optimized/lz4hc.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; node/optimized/libnode.node_sockaddr.ll
@@ -260,7 +268,6 @@ entry:
 ; openmpi/optimized/osc_rdma_active_target.ll
 ; openssl/optimized/asynciotest-bin-asynciotest.ll
 ; postgres/optimized/nbtpage.ll
-; postgres/optimized/shm_toc.ll
 ; qemu/optimized/ahci.c.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/net_eth.c.ll
@@ -271,7 +278,6 @@ entry:
 ; rust-analyzer-rs/optimized/49gbmpy0w6vw8qx1.ll
 ; snappy/optimized/snappy.cc.ll
 ; wasmtime-rs/optimized/1f0cdl9sv7ergjr2.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll
@@ -295,7 +301,7 @@ entry:
   ret i64 %4
 }
 
-; 43 occurrences:
+; 45 occurrences:
 ; casadi/optimized/cvodes_bandpre.c.ll
 ; casadi/optimized/cvodes_bbdpre.c.ll
 ; ceres/optimized/eigensparse.cc.ll
@@ -339,6 +345,8 @@ entry:
 ; rocksdb/optimized/skiplistrep.cc.ll
 ; velox/optimized/SsdCache.cpp.ll
 ; wireshark/optimized/androiddump.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
@@ -348,7 +356,7 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 22 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
 ; hdf5/optimized/H5FAcache.c.ll
@@ -367,6 +375,10 @@ entry:
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
@@ -455,7 +467,7 @@ entry:
   ret i64 %4
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; cmake/optimized/lz_encoder.c.ll
 ; cmake/optimized/xmltok.c.ll
@@ -464,7 +476,6 @@ entry:
 ; eastl/optimized/TestHash.cpp.ll
 ; freetype/optimized/ftcache.c.ll
 ; git/optimized/diff-delta.ll
-; hyperscan/optimized/fdr_confirm_compile.cpp.ll
 ; icu/optimized/collationbuilder.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/dm-stats.ll
@@ -538,6 +549,19 @@ entry:
   ret i64 %4
 }
 
+; 3 occurrences:
+; linux/optimized/set_memory.ll
+; spike/optimized/f128_sqrt.ll
+; yalantinglibs/optimized/benchmark.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw i64 %1, 1
+  %3 = add i64 %0, 5
+  %4 = add i64 %3, %2
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
@@ -545,18 +569,6 @@ define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 119072
   %3 = shl nsw i64 %0, 2
-  %4 = add i64 %3, %2
-  ret i64 %4
-}
-
-; 2 occurrences:
-; linux/optimized/set_memory.ll
-; spike/optimized/f128_sqrt.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw i64 %1, 32
-  %3 = add i64 %0, -8
   %4 = add i64 %3, %2
   ret i64 %4
 }
@@ -705,6 +717,33 @@ entry:
   %2 = shl i64 %1, 2
   %3 = add nuw nsw i64 %0, 4
   %4 = add nsw i64 %3, %2
+  ret i64 %4
+}
+
+; 5 occurrences:
+; zed-rs/optimized/4gafs7cnqueum1wf7b8eca1yl.ll
+; zed-rs/optimized/70wtzbe6p4cdtwir64ar0nhnk.ll
+; zed-rs/optimized/8kgq4ra7kc2kfx3e13zx5xumd.ll
+; zed-rs/optimized/asgo9pe6dwkxuaeqdvmvl8bpd.ll
+; zed-rs/optimized/di66y7a5lci7qvst4agi7dhs8.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, 17
+  %3 = shl nuw i64 %0, 5
+  %4 = add nuw i64 %3, %2
+  ret i64 %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/5owdgsmfxxef4srab3humtsy7.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000012(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, 17
+  %3 = shl i64 %0, 5
+  %4 = add nuw i64 %3, %2
   ret i64 %4
 }
 

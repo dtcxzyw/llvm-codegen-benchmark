@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 60 occurrences:
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
@@ -59,6 +59,7 @@
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/hmb8tiwife399k7.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
@@ -76,7 +77,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = sub i16 0, %1
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   ret i16 %3
 }
 

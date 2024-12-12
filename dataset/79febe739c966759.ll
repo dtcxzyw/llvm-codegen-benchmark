@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/type.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000114(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp sgt i32 %2, 0
@@ -11,7 +11,8 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; graphviz/optimized/spring_electrical.c.ll
 ; gromacs/optimized/dgemm.cpp.ll
 ; gromacs/optimized/dtrmm.cpp.ll
 ; gromacs/optimized/sgemm.cpp.ll
@@ -22,7 +23,7 @@ entry:
 ; openmpi/optimized/coll_base_allreduce.ll
 ; slurm/optimized/topology_tree.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 1
@@ -31,10 +32,27 @@ entry:
   ret i1 %5
 }
 
+; 6 occurrences:
+; llvm/optimized/VPlanAnalysis.cpp.ll
+; ncnn/optimized/gemm_x86.cpp.ll
+; ncnn/optimized/gemm_x86_avx.cpp.ll
+; ncnn/optimized/gemm_x86_avx512.cpp.ll
+; ncnn/optimized/gemm_x86_fma.cpp.ll
+; redis/optimized/evict.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000302(i32 %0, i32 %1) #0 {
+entry:
+  %2 = freeze i32 %1
+  %3 = icmp ne i32 %2, 0
+  %4 = icmp eq i32 %0, 3
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; verilator/optimized/V3EmitCModel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000294(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp sgt i32 %2, 1
@@ -46,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/html.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000102(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 11
@@ -58,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000208(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ugt i32 %2, 57343
@@ -72,7 +90,7 @@ entry:
 ; assimp/optimized/clipper.cpp.ll
 ; flac/optimized/main.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 0
@@ -88,7 +106,7 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; wireshark/optimized/file-elf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 3
@@ -100,7 +118,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000194(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 1
@@ -112,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/filetypes.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %2, 500
@@ -121,23 +139,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; yosys/optimized/maccmap.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000142(i32 %0, i32 %1) #0 {
-entry:
-  %2 = freeze i32 %1
-  %3 = icmp sgt i32 %2, 4
-  %4 = icmp eq i32 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; libwebp/optimized/pnmdec.c.ll
 ; llvm/optimized/StackFrameLayoutAnalysisPass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 2
@@ -150,7 +156,7 @@ entry:
 ; llvm/optimized/Function.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000308(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 1
@@ -162,7 +168,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ugt i32 %2, 1114111
@@ -171,23 +177,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/VPlanAnalysis.cpp.ll
-; redis/optimized/evict.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i32 %1) #0 {
-entry:
-  %2 = freeze i32 %1
-  %3 = icmp eq i32 %2, 0
-  %4 = icmp ne i32 %0, 0
-  %5 = or i1 %3, %4
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; llvm/optimized/Driver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000318(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 8
@@ -200,7 +193,7 @@ entry:
 ; opencv/optimized/matrix_operations.cpp.ll
 ; postgres/optimized/localtime.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000182(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 0
@@ -210,21 +203,9 @@ entry:
 }
 
 ; 1 occurrences:
-; wolfssl/optimized/rsa.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000110(i32 %0, i32 %1) #0 {
-entry:
-  %2 = freeze i32 %1
-  %3 = icmp ugt i32 %2, 68
-  %4 = icmp ugt i32 %0, 68
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; opencv/optimized/grfmt_pam.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000198(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 1

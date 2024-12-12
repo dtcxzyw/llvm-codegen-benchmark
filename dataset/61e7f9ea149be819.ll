@@ -26,7 +26,7 @@ entry:
   %4 = and i8 %3, 31
   %5 = zext nneg i8 %4 to i32
   %6 = shl i32 %1, %5
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 

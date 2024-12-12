@@ -1,15 +1,8 @@
-func0000000000000024:                   # @func0000000000000024
-	vxorpd	%xmm3, %xmm3, %xmm3
-	vcmpltsd	%xmm3, %xmm2, %k1
-	vmovsd	%xmm3, %xmm1, %xmm1 {%k1}
-	vucomisd	%xmm0, %xmm1
-	seta	%al
-	retq
-.LCPI1_0:
+.LCPI0_0:
 	.quad	0x7ff8000000000000              # double NaN
 func0000000000000017:                   # @func0000000000000017
 	vcmpunordsd	%xmm2, %xmm2, %k1
-	vmovsd	.LCPI1_0(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [NaN,0.0E+0]
+	vmovsd	.LCPI0_0(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [NaN,0.0E+0]
 	vcmpneqsd	%xmm0, %xmm1, %k0
 	kmovd	%k0, %eax
 	retq

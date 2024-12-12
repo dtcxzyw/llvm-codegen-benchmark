@@ -12,9 +12,9 @@ func0000000000000210:                   # @func0000000000000210
 	vzeroupper
 	retq
 .LCPI1_0:
-	.long	0xc8976760                      # float -310075
+	.long	0x3cffff04                      # float 0.0312495306
 .LCPI1_1:
-	.long	0x48976760                      # float 310075
+	.long	0x41200000                      # float 10
 func0000000000000088:                   # @func0000000000000088
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -39,15 +39,14 @@ func0000000000000044:                   # @func0000000000000044
 	vzeroupper
 	retq
 .LCPI3_0:
-	.long	0x40c90fdb                      # float 6.28318548
+	.long	0x7fffffff                      # float NaN
 .LCPI3_1:
-	.long	0xc0c90fdb                      # float -6.28318548
+	.long	0x40c90fdb                      # float 6.28318548
 func0000000000000104:                   # @func0000000000000104
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
-	vcmpgtps	.LCPI3_0(%rip){1to16}, %zmm0, %k1
-	korw	%k0, %k1, %k0
-	vcmpltps	.LCPI3_1(%rip){1to16}, %zmm0, %k1
+	vandps	.LCPI3_0(%rip){1to16}, %zmm0, %zmm0
+	vcmpgtps	.LCPI3_1(%rip){1to16}, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

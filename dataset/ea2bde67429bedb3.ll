@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 91 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/fastmath_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -10,6 +10,7 @@
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/cvodes_direct.c.ll
 ; casadi/optimized/cvodes_spils.c.ll
@@ -17,7 +18,6 @@
 ; casadi/optimized/idas_direct.c.ll
 ; casadi/optimized/idas_spils.c.ll
 ; casadi/optimized/kinsol_direct.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; casadi/optimized/sundials_iterative.c.ll
 ; g2o/optimized/dquat2mat.cpp.ll
 ; g2o/optimized/edge_project_psi2uv.cpp.ll
@@ -27,7 +27,6 @@
 ; g2o/optimized/robust_kernel_impl.cpp.ll
 ; graphviz/optimized/clustering.c.ll
 ; gromacs/optimized/colvarcomp_distances.cpp.ll
-; gromacs/optimized/dtrti2.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
@@ -48,7 +47,6 @@
 ; openblas/optimized/dlaror.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsytf2_rk.c.ll
-; openblas/optimized/dtptri.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/boost.cpp.ll
 ; opencv/optimized/bundle.cpp.ll

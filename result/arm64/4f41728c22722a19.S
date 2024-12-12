@@ -1,16 +1,16 @@
-func000000000000006a:                   // @func000000000000006a
+func000000000000006b:                   // @func000000000000006b
 // %bb.0:                               // %entry
 	fmov	s1, w1
-	fcmp	s1, s0
-	cset	w8, pl
+	fcmp	s0, s1
+	cset	w8, le
 	add	x0, x0, w8, uxtw #3
 	ret
                                         // -- End function
-func000000000000016a:                   // @func000000000000016a
+func000000000000016b:                   // @func000000000000016b
 // %bb.0:                               // %entry
 	fmov	s1, w1
-	fcmp	s1, s0
-	cset	w8, pl
+	fcmp	s0, s1
+	cset	w8, le
 	add	x0, x0, w8, uxtw #3
 	ret
                                         // -- End function

@@ -4,7 +4,7 @@
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
@@ -17,7 +17,7 @@ entry:
 ; darktable/optimized/introspection_highlights.c.ll
 ; linux/optimized/inotify_user.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
@@ -46,7 +46,7 @@ define i1 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub i64 %1, %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp sgt i64 %5, -1
   ret i1 %6
 }

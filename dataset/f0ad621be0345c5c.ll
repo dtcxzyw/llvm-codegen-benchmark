@@ -1,5 +1,5 @@
 
-; 279 occurrences:
+; 284 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -14,6 +14,11 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/ext.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
@@ -288,7 +293,7 @@ entry:
   ret i64 %4
 }
 
-; 149 occurrences:
+; 148 occurrences:
 ; abseil-cpp/optimized/common_policy_traits_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/hash_policy_traits_test.cc.ll
@@ -421,7 +426,6 @@ entry:
 ; quantlib/optimized/lmmdriftcalculator.ll
 ; quantlib/optimized/smmdriftcalculator.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; tev/optimized/ImageCanvas.cpp.ll
 ; vcpkg/optimized/commands.export.cpp.ll
 ; vcpkg/optimized/commands.remove.cpp.ll
 ; vcpkg/optimized/dependencies.cpp.ll

@@ -10,7 +10,7 @@
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

@@ -1,7 +1,7 @@
 func0000000000000036:                   # @func0000000000000036
 	vpslld	$8, %ymm2, %ymm2
 	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
-	vpternlogd	$254, %ymm0, %ymm2, %ymm1 # ymm1 = ymm1 | ymm2 | ymm0
+	vpternlogd	$254, %ymm2, %ymm0, %ymm1 # ymm1 = ymm1 | ymm0 | ymm2
 	vextracti128	$1, %ymm1, %xmm0
 	vpextrd	$1, %xmm0, %ecx
 	movl	$400000000, %eax                # imm = 0x17D78400

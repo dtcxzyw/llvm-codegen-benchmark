@@ -34,6 +34,18 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/init_from_settings.ll
+; clamav/optimized/dlp.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000035(i16 %0, i16 %1) #0 {
+entry:
+  %2 = mul nuw nsw i16 %1, 10
+  %3 = add nsw i16 %2, -48
+  %4 = add nsw i16 %3, %0
+  ret i16 %4
+}
+
+; 2 occurrences:
 ; freetype/optimized/cff.c.ll
 ; libquic/optimized/spdy_alt_svc_wire_format.cc.ll
 ; Function Attrs: nounwind
@@ -42,17 +54,6 @@ entry:
   %2 = mul nuw i16 %1, 10
   %3 = add i16 %2, -48
   %4 = add i16 %3, %0
-  ret i16 %4
-}
-
-; 1 occurrences:
-; clamav/optimized/dlp.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000035(i16 %0, i16 %1) #0 {
-entry:
-  %2 = mul nuw nsw i16 %1, 7
-  %3 = add nsw i16 %2, -2304
-  %4 = add nsw i16 %3, %0
   ret i16 %4
 }
 

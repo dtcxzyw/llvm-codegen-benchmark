@@ -30,7 +30,7 @@ entry:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; wireshark/optimized/packet-cemi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = urem i32 %0, %2
@@ -42,11 +42,11 @@ entry:
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = urem i32 %0, %2
-  %4 = icmp ult i32 %3, 16
+  %4 = icmp samesign ult i32 %3, 16
   ret i1 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 502 occurrences:
+; 503 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -15,6 +15,7 @@
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; libjpeg-turbo/optimized/jdmerge.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/alps.ll
@@ -23,7 +24,6 @@
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_sdvo.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
@@ -332,7 +332,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -480,6 +479,9 @@
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_image.ll
 ; minetest/optimized/CImage.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -493,7 +495,6 @@
 ; openusd/optimized/changes.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
-; php/optimized/pcre2_maketables.ll
 ; php/optimized/phar_object.ll
 ; postgres/optimized/heapam.ll
 ; quickjs/optimized/quickjs.ll
@@ -508,20 +509,7 @@ entry:
   %3 = and i16 %2, 63
   %4 = and i16 %1, -2048
   %5 = or disjoint i16 %4, %3
-  %6 = or disjoint i16 %5, %0
-  ret i16 %6
-}
-
-; 2 occurrences:
-; llvm/optimized/DebugCounter.cpp.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000002(i16 %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = and i16 %2, 96
-  %4 = and i16 %1, 28
-  %5 = or disjoint i16 %4, %3
-  %6 = or i16 %5, %0
+  %6 = or disjoint i16 %0, %5
   ret i16 %6
 }
 
@@ -554,6 +542,18 @@ entry:
   %4 = and i16 %1, -1023
   %5 = or i16 %4, %3
   %6 = or disjoint i16 %5, %0
+  ret i16 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/DebugCounter.cpp.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000002(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = and i16 %2, -97
+  %4 = and i16 %1, 96
+  %5 = or disjoint i16 %4, %3
+  %6 = or i16 %0, %5
   ret i16 %6
 }
 

@@ -11,7 +11,14 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 18 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cpython/optimized/rangeobject.ll
 ; git/optimized/merge-tree.ll
 ; linux/optimized/libata-core.ll
@@ -21,8 +28,8 @@ entry:
 ; openssl/optimized/openssl-bin-dgst.ll
 ; php/optimized/pass1.ll
 ; postgres/optimized/parse_target.ll
+; qemu/optimized/hw_net_pcnet.c.ll
 ; redis/optimized/util.ll
-; slurm/optimized/slurm_rlimits_info.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i1 %2) #0 {
 entry:

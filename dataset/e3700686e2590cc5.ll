@@ -1,5 +1,5 @@
 
-; 178 occurrences:
+; 177 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; bdwgc/optimized/gc.c.ll
@@ -78,7 +78,6 @@
 ; lief/optimized/x509.cpp.ll
 ; linux/optimized/generic-radix-tree.ll
 ; linux/optimized/md-bitmap.ll
-; linux/optimized/reciprocal_div.ll
 ; llvm/optimized/ExpandVariadics.cpp.ll
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll

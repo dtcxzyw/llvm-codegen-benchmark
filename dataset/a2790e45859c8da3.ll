@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -10,7 +10,6 @@
 ; abc/optimized/bmcBCore.c.ll
 ; abc/optimized/bmcChain.c.ll
 ; abc/optimized/bmcFault.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMulti.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecSatG2.c.ll

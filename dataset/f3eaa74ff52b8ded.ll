@@ -1,6 +1,5 @@
 
-; 12 occurrences:
-; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; 11 occurrences:
 ; ceres/optimized/fake_bundle_adjustment_jacobian.cc.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; eastl/optimized/TestFixedVector.cpp.ll

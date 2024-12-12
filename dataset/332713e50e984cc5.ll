@@ -24,7 +24,7 @@ define i32 @func000000000000000f(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = add nuw nsw i32 %2, 2
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -41,9 +41,8 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; graphviz/optimized/htmltable.c.ll
-; linux/optimized/rsmisc.ll
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
@@ -59,19 +58,18 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/tcp_output.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -82,7 +80,7 @@ define i32 @func000000000000001f(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -104,7 +102,7 @@ define i32 @func0000000000000015(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = add nsw i32 %2, -12
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 

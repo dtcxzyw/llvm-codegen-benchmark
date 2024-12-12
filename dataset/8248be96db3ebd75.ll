@@ -10,7 +10,7 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; cpython/optimized/frameobject.ll
 ; freetype/optimized/truetype.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
@@ -19,6 +19,7 @@ entry:
 ; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i1 %0, i64 %1, i64 %2) #0 {
 entry:

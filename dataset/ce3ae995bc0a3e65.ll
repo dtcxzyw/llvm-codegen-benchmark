@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_usb_dev-network.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = sext i32 %0 to i64
-  %3 = icmp ugt i64 %2, %1
+  %3 = icmp ult i64 %1, %2
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   %6 = icmp ne i32 %5, 0
@@ -18,10 +18,10 @@ entry:
 ; linux/optimized/serial_core.ll
 ; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
 entry:
   %2 = sext i32 %0 to i64
-  %3 = icmp ugt i64 %2, %1
+  %3 = icmp ult i64 %1, %2
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   %6 = icmp slt i32 %5, 2
@@ -33,10 +33,10 @@ entry:
 ; git/optimized/apply.ll
 ; nuttx/optimized/lib_memoutstream.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
 entry:
   %2 = sext i32 %0 to i64
-  %3 = icmp ugt i64 %2, %1
+  %3 = icmp ult i64 %1, %2
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   %6 = icmp sgt i32 %5, 0

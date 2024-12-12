@@ -53,18 +53,6 @@ entry:
 }
 
 ; 1 occurrences:
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000088(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ugt i64 %2, 31
-  %4 = select i1 %3, i32 %0, i32 0
-  %5 = trunc nuw i64 %1 to i32
-  %6 = add i32 %4, %5
-  ret i32 %6
-}
-
-; 1 occurrences:
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000048(i32 %0, i64 %1, i64 %2) #0 {

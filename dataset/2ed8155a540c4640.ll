@@ -33,7 +33,7 @@ entry:
 ; pbrt-v4/optimized/samples.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 -2147483648, %1
   %3 = icmp eq i32 %0, 0

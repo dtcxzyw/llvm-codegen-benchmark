@@ -1,35 +1,4 @@
 
-; 19 occurrences:
-; coreutils-rs/optimized/31vrb73337u20kex.ll
-; coreutils-rs/optimized/rs4z052ww3s256h.ll
-; cpython/optimized/unicodedata.ll
-; hermes/optimized/Executor.cpp.ll
-; meilisearch-rs/optimized/2d8gq047pqsnm94t.ll
-; minetest/optimized/clientiface.cpp.ll
-; minetest/optimized/emerge.cpp.ll
-; minetest/optimized/map.cpp.ll
-; quickjs/optimized/libregexp.ll
-; ruby/optimized/symbol.ll
-; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
-; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
-; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
-; tree-sitter-rs/optimized/18kt1xijwoc4jebp.ll
-; vcpkg/optimized/commands.install.cpp.ll
-; vcpkg/optimized/export.ifw.cpp.ll
-; vcpkg/optimized/sourceparagraph.cpp.ll
-; vcpkg/optimized/spdx.cpp.ll
-; vcpkg/optimized/versions.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000510(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -65
-  %4 = icmp ult i32 %3, 26
-  %5 = icmp ult i32 %1, 10
-  %6 = or i1 %5, %4
-  %7 = or i1 %6, %0
-  ret i1 %7
-}
-
 ; 9 occurrences:
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/lz_encoder.c.ll
@@ -41,17 +10,62 @@ entry:
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000204(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -130
   %4 = icmp ult i32 %3, -256
   %5 = icmp eq i32 %1, 0
   %6 = or i1 %5, %4
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
-; 122 occurrences:
+; 18 occurrences:
+; coreutils-rs/optimized/31vrb73337u20kex.ll
+; coreutils-rs/optimized/rs4z052ww3s256h.ll
+; cpython/optimized/unicodedata.ll
+; meilisearch-rs/optimized/2d8gq047pqsnm94t.ll
+; minetest/optimized/clientiface.cpp.ll
+; minetest/optimized/emerge.cpp.ll
+; minetest/optimized/map.cpp.ll
+; quickjs/optimized/libregexp.ll
+; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
+; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
+; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
+; tree-sitter-rs/optimized/18kt1xijwoc4jebp.ll
+; vcpkg/optimized/commands.install.cpp.ll
+; vcpkg/optimized/export.ifw.cpp.ll
+; vcpkg/optimized/sourceparagraph.cpp.ll
+; vcpkg/optimized/spdx.cpp.ll
+; vcpkg/optimized/versions.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000001210(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1938
+  %4 = icmp ult i32 %3, -3875
+  %5 = icmp ult i32 %1, -3875
+  %6 = or i1 %5, %4
+  %7 = or i1 %0, %6
+  ret i1 %7
+}
+
+; 3 occurrences:
+; c3c/optimized/sema_expr.c.ll
+; icu/optimized/icuexportdata.ll
+; just-rs/optimized/53slus9exfz9w045.ll
+; Function Attrs: nounwind
+define i1 @func0000000000001204(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -11
+  %4 = icmp ult i32 %3, 4
+  %5 = icmp eq i32 %1, 2
+  %6 = or i1 %5, %4
+  %7 = or i1 %0, %6
+  ret i1 %7
+}
+
+; 126 occurrences:
 ; assimp/optimized/X3DImporter_Postprocess.cpp.ll
 ; coreutils-rs/optimized/rs4z052ww3s256h.ll
 ; cpython/optimized/unicodedata.ll
@@ -141,12 +155,14 @@ entry:
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; llvm/optimized/X86EncodingOptimization.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_span.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
-; qemu/optimized/hw_display_ramfb.c.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
@@ -174,29 +190,16 @@ entry:
 ; vcpkg/optimized/parse.cpp.ll
 ; vcpkg/optimized/sourceparagraph.cpp.ll
 ; velox/optimized/TimestampConversion.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000210(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -12001
-  %4 = icmp ult i32 %3, -11985
-  %5 = icmp ult i32 %1, -15985
+  %3 = add i32 %2, -27
+  %4 = icmp ult i32 %3, 12
+  %5 = icmp ult i32 %1, 4
   %6 = or i1 %5, %4
-  %7 = or i1 %6, %0
-  ret i1 %7
-}
-
-; 3 occurrences:
-; c3c/optimized/sema_expr.c.ll
-; icu/optimized/icuexportdata.ll
-; just-rs/optimized/53slus9exfz9w045.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000504(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -11
-  %4 = icmp ult i32 %3, 4
-  %5 = icmp eq i32 %1, 2
-  %6 = or i1 %5, %4
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
@@ -204,7 +207,7 @@ entry:
 ; php/optimized/KeccakSponge.ll
 ; slurm/optimized/KeccakSponge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000310(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000610(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1601
   %4 = icmp ult i32 %3, -1600
@@ -217,7 +220,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000604(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 2
   %4 = icmp eq i32 %1, 0
@@ -232,7 +235,7 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000090(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -65
   %4 = icmp ult i32 %3, 26
@@ -246,7 +249,7 @@ entry:
 ; icu/optimized/ucnvscsu.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000450(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001090(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -37
   %4 = icmp ult i32 %3, -6

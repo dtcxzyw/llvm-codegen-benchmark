@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/date_strftime.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i1 %1) #0 {
+define i1 @func00000000000000ca(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 3, i32 9
   %3 = icmp slt i32 %0, 1
@@ -28,7 +28,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 -49, i32 -55
   %3 = icmp eq i32 %0, -49
@@ -37,11 +37,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; php/optimized/ir_emit.ll
-; stb/optimized/stb_image.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 4, i32 12
   %3 = icmp eq i32 %0, 0
@@ -53,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i1 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 13, i32 11
   %3 = icmp slt i32 %0, 1
@@ -66,7 +65,7 @@ entry:
 ; graphviz/optimized/sfvscanf.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 1, i32 3
   %3 = icmp eq i32 %0, 0

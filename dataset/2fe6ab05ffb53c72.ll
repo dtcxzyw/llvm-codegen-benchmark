@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -10,7 +10,6 @@
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; postgres/optimized/regexp.ll

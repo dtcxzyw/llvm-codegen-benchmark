@@ -1,4 +1,16 @@
 
+; 2 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; Function Attrs: nounwind
+define double @func0000000000000004(double %0, double %1) #0 {
+entry:
+  %2 = fadd double %1, 0x400921FB54442D18
+  %3 = fcmp ogt double %2, 0x400921FB54442D18
+  %4 = select i1 %3, double %0, double %2
+  ret double %4
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind

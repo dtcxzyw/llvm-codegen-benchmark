@@ -29,7 +29,7 @@ entry:
 ; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
 ; rust-analyzer-rs/optimized/sjwv4e3g2r9o4x0.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 32
   %3 = sub nsw i64 32, %0
@@ -37,11 +37,12 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; ockam-rs/optimized/4df8gyzy0u3roc94.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
   %3 = sub nuw nsw i64 6, %0
@@ -52,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000164(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 6
   %3 = sub nuw nsw i64 16777215, %0

@@ -38,10 +38,8 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; jq/optimized/execute.ll
-; linux/optimized/phc_vclocks.ll
-; linux/optimized/rss.ll
 ; linux/optimized/scm.ll
 ; linux/optimized/xfrm_user.ll
 ; Function Attrs: nounwind

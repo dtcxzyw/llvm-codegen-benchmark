@@ -1,5 +1,5 @@
 
-; 142 occurrences:
+; 135 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/acecBo.c.ll
@@ -26,9 +26,9 @@
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sscSim.c.ll
-; abseil-cpp/optimized/exponential_biased.cc.ll
 ; arrow/optimized/float16.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/encode.c.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
@@ -53,7 +53,6 @@
 ; folly/optimized/dynamic.cpp.ll
 ; folly/optimized/json.cpp.ll
 ; folly/optimized/json_patch.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; grpc/optimized/flow_control.cc.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; hyperscan/optimized/ng_squash.cpp.ll
@@ -65,7 +64,6 @@
 ; libsodium/optimized/libsse2_la-poly1305_sse2.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/ds.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/memtype.ll
 ; linux/optimized/mincore.ll
@@ -103,11 +101,6 @@
 ; ruby/optimized/string.ll
 ; slurm/optimized/affinity.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
-; spike/optimized/f32_to_f16.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; spike/optimized/mret.ll
 ; spike/optimized/plic.ll
 ; stockfish/optimized/movegen.ll
@@ -150,18 +143,16 @@ entry:
   ret i64 %2
 }
 
-; 342 occurrences:
+; 335 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ioReadPla.c.ll
 ; arrow/optimized/float16.cc.ll
 ; arrow/optimized/key_map.cc.ll
-; arrow/optimized/value_parsing.cc.ll
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
 ; bdwgc/optimized/gc.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
-; cmake/optimized/archive_pack_dev.c.ll
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/typeobject.ll
 ; cvc5/optimized/Solver.cc.ll
@@ -182,10 +173,7 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; freetype/optimized/cff.c.ll
 ; freetype/optimized/sfnt.c.ll
-; freetype/optimized/type1.c.ll
-; freetype/optimized/type1cid.c.ll
 ; gromacs/optimized/forcerec.cpp.ll
 ; hdf5/optimized/H5Iint.c.ll
 ; jemalloc/optimized/ckh.ll
@@ -270,7 +258,6 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/amd_bus.ll
@@ -350,7 +337,6 @@ entry:
 ; luau/optimized/CostModel.cpp.ll
 ; luau/optimized/main.cpp.ll
 ; mimalloc/optimized/arena.c.ll
-; mitsuba3/optimized/string.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
@@ -496,8 +482,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 52
-  %2 = and i64 %1, 2047
+  %1 = lshr i64 %0, 2
+  %2 = and i64 %1, 1
   ret i64 %2
 }
 

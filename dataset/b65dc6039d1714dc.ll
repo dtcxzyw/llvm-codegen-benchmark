@@ -1,8 +1,7 @@
 
-; 23 occurrences:
+; 21 occurrences:
 ; casadi/optimized/cvodes.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
-; gromacs/optimized/dlapy2.cpp.ll
 ; gromacs/optimized/dlas2.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -11,7 +10,6 @@
 ; ocio/optimized/Lut3DOpCPU.cpp.ll
 ; opencv/optimized/canny.cpp.ll
 ; openjdk/optimized/jvmFlag.ll
-; osqp/optimized/scaling.c.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/pathnode.ll
@@ -32,9 +30,22 @@ entry:
   ret i1 %4
 }
 
-; 34 occurrences:
+; 48 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/cvodes.c.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; graphviz/optimized/position.c.ll
@@ -62,6 +73,7 @@ entry:
 ; sundials/optimized/cvodes.c.ll
 ; verilator/optimized/V3Param.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zfp/optimized/encode1d.c.ll
 ; zfp/optimized/encode2d.c.ll
 ; zfp/optimized/encode3d.c.ll
@@ -116,11 +128,18 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 23 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; flac/optimized/lpc.c.ll
 ; graphviz/optimized/lu.c.ll
 ; gromacs/optimized/dlaed6.cpp.ll
@@ -142,7 +161,46 @@ entry:
   ret i1 %4
 }
 
-; 26 occurrences:
+; 65 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/partition.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; graphviz/optimized/gvdevice_xlib.c.ll
 ; graphviz/optimized/solve.c.ll
@@ -269,6 +327,24 @@ entry:
   ret i1 %4
 }
 
+; 8 occurrences:
+; boost/optimized/area_box_sg.ll
+; boost/optimized/get_turns_const.ll
+; opencv/optimized/benchmark.cpp.ll
+; opencv/optimized/cv2.cpp.ll
+; opencv/optimized/nms.cpp.ll
+; opencv/optimized/perf_common.cpp.ll
+; opencv/optimized/tldUtils.cpp.ll
+; opencv/optimized/trackerKCF.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(double %0, double %1) #0 {
+entry:
+  %2 = fcmp olt double %1, %0
+  %3 = select i1 %2, double %0, double %1
+  %4 = fcmp ole double %3, 1.000000e-10
+  ret i1 %4
+}
+
 ; 6 occurrences:
 ; gromacs/optimized/dlartg.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -374,22 +450,6 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
-; opencv/optimized/benchmark.cpp.ll
-; opencv/optimized/cv2.cpp.ll
-; opencv/optimized/nms.cpp.ll
-; opencv/optimized/perf_common.cpp.ll
-; opencv/optimized/tldUtils.cpp.ll
-; opencv/optimized/trackerKCF.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002a(double %0, double %1) #0 {
-entry:
-  %2 = fcmp olt double %0, %1
-  %3 = select i1 %2, double %0, double %1
-  %4 = fcmp ole double %3, 0.000000e+00
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; opencv/optimized/tbmr.cpp.ll
 ; Function Attrs: nounwind
@@ -412,8 +472,7 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
-; openblas/optimized/ddisna.c.ll
+; 9 occurrences:
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dlaic1.c.ll

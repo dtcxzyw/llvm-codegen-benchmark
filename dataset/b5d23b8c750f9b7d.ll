@@ -3,7 +3,7 @@
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, -140737488355328
   %2 = icmp eq i64 %.mask, -1688849860263936
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; nix/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000424(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 9
   %3 = icmp eq i32 %0, 0
@@ -27,7 +27,7 @@ entry:
 ; cmake/optimized/cmForEachCommand.cxx.ll
 ; nix/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000428(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 8
   %3 = icmp eq i32 %0, 0

@@ -11,7 +11,7 @@ define i32 @func0000000000000000(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = and i32 %4, 15
   ret i32 %5
 }

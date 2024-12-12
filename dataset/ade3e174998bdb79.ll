@@ -1,11 +1,12 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/gen8_ppgtt.ll
+; lvgl/optimized/lv_tlsf.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openusd/optimized/warped_motion.c.ll
@@ -28,6 +29,7 @@ entry:
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -141,7 +143,6 @@ entry:
 ; linux/optimized/resize.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/timekeeping.ll
-; linux/optimized/vclock_gettime.ll
 ; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll

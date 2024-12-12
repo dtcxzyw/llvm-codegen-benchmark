@@ -6,7 +6,7 @@
 ; openssl/optimized/libssl-lib-ssl_rsa.ll
 ; openssl/optimized/libssl-shlib-ssl_rsa.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b1(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000361(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
@@ -16,12 +16,11 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; lief/optimized/psa_crypto_storage.c.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b8(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000368(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
@@ -36,11 +35,11 @@ entry:
 ; hdf5/optimized/H5Ofill.c.ll
 ; lief/optimized/psa_crypto_storage.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000328(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 24
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = add i64 %1, -36
   %7 = icmp ugt i64 %5, %6
   ret i1 %7
@@ -49,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5Oattr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000191(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000321(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8

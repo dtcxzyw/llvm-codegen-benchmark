@@ -1,35 +1,13 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ext	v5.16b, v4.16b, v4.16b, #8
-	zip1	v6.8b, v4.8b, v0.8b
 	mov	w8, #64036                      // =0xfa24
-	zip2	v4.8b, v4.8b, v0.8b
 	mov	w9, #750                        // =0x2ee
+	tst	w0, #0x1
 	movk	w8, #16255, lsl #16
 	movk	w9, #16256, lsl #16
-	dup	v16.4s, w8
-	dup	v17.4s, w9
-	zip2	v7.8b, v5.8b, v0.8b
-	zip1	v5.8b, v5.8b, v0.8b
-	ushll	v6.4s, v6.4h, #0
-	ushll	v4.4s, v4.4h, #0
-	shl	v6.4s, v6.4s, #31
-	ushll	v7.4s, v7.4h, #0
-	ushll	v5.4s, v5.4h, #0
-	shl	v4.4s, v4.4s, #31
-	cmlt	v6.4s, v6.4s, #0
-	shl	v7.4s, v7.4s, #31
-	shl	v5.4s, v5.4s, #31
-	cmlt	v4.4s, v4.4s, #0
-	bsl	v6.16b, v17.16b, v16.16b
-	cmlt	v7.4s, v7.4s, #0
-	cmlt	v5.4s, v5.4s, #0
-	bsl	v4.16b, v17.16b, v16.16b
-	bsl	v7.16b, v17.16b, v16.16b
-	bsl	v5.16b, v17.16b, v16.16b
-	fmul	v0.4s, v6.4s, v0.4s
-	fmul	v1.4s, v4.4s, v1.4s
-	fmul	v2.4s, v5.4s, v2.4s
-	fmul	v3.4s, v7.4s, v3.4s
+	fmov	s1, w8
+	fmov	s2, w9
+	fcsel	s1, s2, s1, ne
+	fmul	s0, s0, s1
 	ret
                                         // -- End function

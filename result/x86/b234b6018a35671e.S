@@ -1,16 +1,15 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000007:                   # @func0000000000000007
 	movl	$4, %ecx
 	subl	%esi, %ecx
 	testb	$1, %dil
 	movl	$4294967247, %eax               # imm = 0xFFFFFFCF
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	movl	$17, %ecx
-	subl	%esi, %ecx
+func0000000000000003:                   # @func0000000000000003
 	testb	$1, %dil
-	movl	$1091, %eax                     # imm = 0x443
-	cmoveq	%rcx, %rax
+	movl	$-1074, %eax                    # imm = 0xFBCE
+	cmovel	%esi, %eax
+	negl	%eax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	xorl	%eax, %eax

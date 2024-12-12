@@ -10,6 +10,10 @@ func0000000000000007:                   # @func0000000000000007
 	vcmpneqss	%xmm0, %xmm1, %k0
 	kmovd	%k0, %eax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	vcmpeqss	%xmm0, %xmm1, %k0
+	kmovd	%k0, %eax
+	retq
 func0000000000000003:                   # @func0000000000000003
 	vucomiss	%xmm0, %xmm1
 	setb	%al

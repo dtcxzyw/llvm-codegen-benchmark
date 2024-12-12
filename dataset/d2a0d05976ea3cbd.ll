@@ -1,10 +1,11 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/mapperMatch.c.ll
 ; abc/optimized/mapperTime.c.ll
 ; abc/optimized/mapperUtils.c.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
+; boost/optimized/get_turns.ll
 ; cmake/optimized/archive_rb.c.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
@@ -35,11 +36,11 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = xor i64 %2, 7
-  %4 = getelementptr nusw [8 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [8 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

@@ -91,9 +91,53 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI5_0:
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleuw	.LCPI5_0(%rip), %ymm0, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
 func000000000000000a:                   # @func000000000000000a
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtw	%ymm1, %ymm0, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuw	.LCPI7_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

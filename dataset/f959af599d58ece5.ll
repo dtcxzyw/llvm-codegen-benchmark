@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 33 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/ASEParser.cpp.ll
 ; assimp/optimized/BVHLoader.cpp.ll
@@ -25,12 +25,14 @@
 ; assimp/optimized/UnrealLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/from_chars.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; draco/optimized/obj_encoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; gromacs/optimized/dlbtiming.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/imageio.cpp.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, i64 %2) #0 {
 entry:

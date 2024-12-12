@@ -1,11 +1,12 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; darktable/optimized/introspection_toneequal.c.ll
 ; graphviz/optimized/neatosplines.c.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
+; lightgbm/optimized/metric.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll

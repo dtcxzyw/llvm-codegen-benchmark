@@ -1,5 +1,5 @@
 
-; 399 occurrences:
+; 413 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -11,6 +11,15 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; c3c/optimized/sema_decls.c.ll
@@ -62,6 +71,7 @@
 ; gromacs/optimized/gmxfio.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
+; gromacs/optimized/vsite_parm.cpp.ll
 ; grpc/optimized/retry_filter_legacy_call_data.cc.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; hdf5/optimized/H5Shyper.c.ll
@@ -106,9 +116,7 @@
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/seccomp.ll
 ; linux/optimized/synaptics.ll
-; linux/optimized/thermal_trip.ll
 ; linux/optimized/user.ll
-; linux/optimized/video_detect.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AArch64SLSHardening.cpp.ll
@@ -122,7 +130,6 @@
 ; llvm/optimized/CGObjCGNU.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/CodeEmitterGen.cpp.ll
-; llvm/optimized/CommandFlags.cpp.ll
 ; llvm/optimized/Compilation.cpp.ll
 ; llvm/optimized/ConstraintElimination.cpp.ll
 ; llvm/optimized/ControlFlowUtils.cpp.ll
@@ -191,6 +198,8 @@
 ; luau/optimized/Normalize.cpp.ll
 ; luau/optimized/Unifier.cpp.ll
 ; luau/optimized/Unifier2.cpp.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_slider.ll
 ; meshlab/optimized/ml_render_gui.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; meshlab/optimized/ml_shared_data_context.cpp.ll
@@ -334,7 +343,6 @@
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; slurm/optimized/conmgr.ll
-; slurm/optimized/job_features.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; spike/optimized/s_roundPackToF128.ll
@@ -399,6 +407,12 @@
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_array.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

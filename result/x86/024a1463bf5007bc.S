@@ -12,7 +12,7 @@ func000000000000000c:                   # @func000000000000000c
 	addq	%rax, %rdi
 	setne	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	andl	$15, %esi
 	leaq	(%rsi,%rdi,2), %rax
 	cmpq	$60001, %rax                    # imm = 0xEA61

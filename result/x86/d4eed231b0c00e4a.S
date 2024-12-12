@@ -5,7 +5,7 @@ func0000000000000008:                   # @func0000000000000008
 	andl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addl	$-44032, %edx                   # imm = 0xFFFF5400
 	cmpl	$11172, %edx                    # imm = 0x2BA4
 	setb	%al

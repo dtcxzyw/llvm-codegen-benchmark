@@ -1,57 +1,40 @@
 func0000000000000037:                   // @func0000000000000037
 // %bb.0:                               // %entry
-	uzp1	v0.8h, v0.8h, v1.8h
-	mov	w8, #3329                       // =0xd01
-	dup	v1.8h, w8
-	ushr	v0.8h, v0.8h, #2
-	umull2	v2.4s, v0.8h, v1.8h
-	umull	v0.4s, v0.4h, v1.4h
-	movi	v1.8b, #48
-	uzp2	v0.8h, v0.8h, v2.8h
-	shrn	v0.8b, v0.8h, #4
-	orr	v0.8b, v0.8b, v1.8b
+	ubfx	w8, w0, #2, #14
+	mov	w9, #3329                       // =0xd01
+	mul	w8, w8, w9
+	lsr	w8, w8, #20
+	orr	w0, w8, #0x30
 	ret
                                         // -- End function
 func0000000000000025:                   // @func0000000000000025
 // %bb.0:                               // %entry
-	uzp1	v0.8h, v0.8h, v1.8h
-	mov	w8, #5243                       // =0x147b
-	dup	v1.8h, w8
-	ushr	v0.8h, v0.8h, #2
-	umull2	v2.4s, v0.8h, v1.8h
-	umull	v0.4s, v0.4h, v1.4h
-	movi	v1.8b, #48
-	uzp2	v0.8h, v0.8h, v2.8h
-	shrn	v0.8b, v0.8h, #1
-	orr	v0.8b, v0.8b, v1.8b
+	ubfx	w8, w0, #2, #14
+	mov	w9, #5243                       // =0x147b
+	mul	w8, w8, w9
+	lsr	w8, w8, #17
+	orr	w0, w8, #0x30
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
 	mov	w8, #12137                      // =0x2f69
-	uzp1	v0.8h, v0.8h, v1.8h
-	dup	v1.8h, w8
-	umull2	v2.4s, v0.8h, v1.8h
-	umull	v1.4s, v0.4h, v1.4h
-	uzp2	v1.8h, v1.8h, v2.8h
-	sub	v0.8h, v0.8h, v1.8h
-	usra	v1.8h, v0.8h, #1
-	movi	v0.8b, #64
-	shrn	v1.8b, v1.8h, #4
-	orr	v0.8b, v1.8b, v0.8b
+	and	w9, w0, #0xffff
+	mul	w8, w9, w8
+	lsr	w8, w8, #16
+	sub	w9, w0, w8
+	and	w9, w9, #0xfffe
+	add	w8, w8, w9, lsr #1
+	lsr	w8, w8, #4
+	orr	w0, w8, #0x40
 	ret
                                         // -- End function
 func0000000000000027:                   // @func0000000000000027
 // %bb.0:                               // %entry
-	uzp1	v0.8h, v0.8h, v1.8h
-	mov	w8, #839                        // =0x347
-	dup	v1.8h, w8
-	ushr	v0.8h, v0.8h, #4
-	umull2	v2.4s, v0.8h, v1.8h
-	umull	v0.4s, v0.4h, v1.4h
-	movi	v1.8b, #48
-	uzp2	v0.8h, v0.8h, v2.8h
-	shrn	v0.8b, v0.8h, #3
-	orr	v0.8b, v0.8b, v1.8b
+	ubfx	w8, w0, #4, #12
+	mov	w9, #839                        // =0x347
+	mul	w8, w8, w9
+	lsr	w8, w8, #19
+	orr	w0, w8, #0x30
 	ret
                                         // -- End function

@@ -18,6 +18,11 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$65, %rdx
 	cmovaeq	%rsi, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movq	%rdi, %rax
+	cmpq	$16, %rdx
+	cmovaeq	%rsi, %rax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	movq	%rdi, %rax
 	cmpq	$16, %rdx
@@ -27,4 +32,9 @@ func0000000000000006:                   # @func0000000000000006
 	movq	%rdi, %rax
 	testq	%rdx, %rdx
 	cmovnsq	%rsi, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movq	%rdi, %rax
+	cmpq	$5, %rdx
+	cmovbq	%rsi, %rax
 	retq

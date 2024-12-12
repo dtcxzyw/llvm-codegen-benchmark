@@ -22,7 +22,7 @@
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000421(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %0, 32
   %3 = icmp eq i64 %1, 0
@@ -36,7 +36,7 @@ entry:
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, 32
   %3 = icmp eq i64 %1, 4294967295

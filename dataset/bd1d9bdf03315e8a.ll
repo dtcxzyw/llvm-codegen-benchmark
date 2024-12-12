@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; actix-rs/optimized/3r4ha69xj2bs6l86.ll
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
@@ -9,6 +9,7 @@
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wasmtime-rs/optimized/1r2x5absurxbrq18.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
 ; Function Attrs: nounwind
 define { ptr, ptr } @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:

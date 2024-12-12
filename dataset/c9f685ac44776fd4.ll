@@ -101,9 +101,8 @@ entry:
   ret i32 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/ifDec07.c.ll
-; linux/optimized/intel_audio.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:

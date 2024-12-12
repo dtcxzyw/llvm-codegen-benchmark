@@ -1,8 +1,27 @@
 
-; 26 occurrences:
+; 8 occurrences:
+; boost/optimized/static_string.ll
+; folly/optimized/SocketAddress.cpp.ll
+; proxygen/optimized/HPACKCodec.cpp.ll
+; proxygen/optimized/HPACKDecoderBase.cpp.ll
+; proxygen/optimized/HPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKHeaderTable.cpp.ll
+; proxygen/optimized/StaticHeaderTable.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 2
+  %7 = getelementptr nusw nuw [108 x i8], ptr %6, i64 0, i64 %5
+  ret ptr %7
+}
+
+; 19 occurrences:
 ; cmake/optimized/headers.c.ll
 ; curl/optimized/libcurl_la-headers.ll
-; folly/optimized/SocketAddress.cpp.ll
 ; php/optimized/file.ll
 ; php/optimized/json_scanner.ll
 ; php/optimized/math.ll
@@ -20,20 +39,14 @@
 ; php/optimized/zend_compile.ll
 ; php/optimized/zend_language_scanner.ll
 ; php/optimized/zend_operators.ll
-; proxygen/optimized/HPACKCodec.cpp.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func000000000000000e(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
-  %6 = getelementptr nusw i8, ptr %0, i64 2
-  %7 = getelementptr nusw [108 x i8], ptr %6, i64 0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 45
+  %7 = getelementptr nusw [1 x i8], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

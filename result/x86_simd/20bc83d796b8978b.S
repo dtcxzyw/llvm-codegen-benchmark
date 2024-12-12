@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	2                               # 0x2
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vptestmd	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [2,2,2,2,2,2,2,2]
 	vpsllvd	%ymm0, %ymm1, %ymm0 {%k1} {z}
@@ -18,12 +18,12 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI2_0:
 	.long	1                               # 0x1
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vptestmd	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm0, %ymm1, %ymm0 {%k1} {z}
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestmd	%ymm2, %ymm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsllvd	%ymm0, %ymm1, %ymm0 {%k1} {z}

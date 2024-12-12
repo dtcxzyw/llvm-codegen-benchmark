@@ -1,6 +1,7 @@
 
-; 86 occurrences:
+; 83 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/approximately_equals.ll
 ; csmith/optimized/FunctionInvocationUser.cpp.ll
 ; cvc5/optimized/match_trie.cpp.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
@@ -31,8 +32,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/profile.ll
@@ -75,8 +74,6 @@
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; php/optimized/dce.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; qemu/optimized/target_riscv_cpu.c.ll
@@ -92,11 +89,11 @@ entry:
   %2 = add i64 %1, 63
   %3 = and i64 %2, 63
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
-; 24 occurrences:
+; 22 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; cvc5/optimized/regexp_elim.cpp.ll
 ; hyperscan/optimized/charreach.cpp.ll
@@ -111,9 +108,7 @@ entry:
 ; nix/optimized/filetransfer.ll
 ; nix/optimized/gc.ll
 ; nix/optimized/graphml.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/registry.ll
 ; nix/optimized/why-depends.ll
 ; openjdk/optimized/PathCharsValidator.ll
@@ -127,7 +122,7 @@ entry:
   %2 = add nuw nsw i64 %1, 4294967232
   %3 = and i64 %2, 4294967295
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -158,7 +153,7 @@ entry:
   %2 = add i64 %1, 63
   %3 = and i64 %2, 63
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -173,7 +168,7 @@ entry:
   %2 = add nuw i64 %1, 1
   %3 = and i64 %2, 63
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -207,7 +202,7 @@ entry:
   %2 = add nuw i64 %1, 63
   %3 = and i64 %2, 63
   %4 = shl i64 2, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -219,7 +214,7 @@ entry:
   %2 = add nsw i64 %1, 24
   %3 = and i64 %2, 63
   %4 = shl i64 2, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -239,7 +234,7 @@ entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = and i64 %2, 63
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -253,7 +248,7 @@ entry:
   %2 = add i64 %1, 1
   %3 = and i64 %2, 4294967295
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -265,7 +260,7 @@ entry:
   %2 = add nsw i64 %1, 12
   %3 = and i64 %2, 4294967295
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -277,7 +272,7 @@ entry:
   %2 = and i64 %1, 63
   %3 = xor i64 %2, 32
   %4 = shl nuw nsw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

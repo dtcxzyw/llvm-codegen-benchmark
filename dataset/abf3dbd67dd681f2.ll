@@ -16,7 +16,7 @@ entry:
   %2 = and i64 %1, 4294967295
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 
@@ -28,7 +28,7 @@ entry:
   %2 = and i64 %1, 63
   %3 = shl nuw i64 2, %2
   %4 = add nsw i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -41,7 +41,7 @@ entry:
   %2 = and i64 %1, 31
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 
@@ -57,7 +57,7 @@ entry:
   %2 = and i64 %1, 63
   %3 = shl i64 2, %2
   %4 = add i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

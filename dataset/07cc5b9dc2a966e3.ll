@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 73 occurrences:
 ; actix-rs/optimized/2nm6r5hc2u1hk1e1.ll
 ; assimp/optimized/zip.c.ll
 ; clap-rs/optimized/1zp92zvstj9lufi9.ll
@@ -18,8 +18,6 @@
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/blk-iolatency.ll
 ; linux/optimized/buffer.ll
-; linux/optimized/fs-writeback.ll
-; linux/optimized/kvmclock.ll
 ; linux/optimized/sys.ll
 ; logos-rs/optimized/4kmrn6pj9h6vp84m.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
@@ -65,6 +63,16 @@
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/jd0egfnydpuo3ak.ll
 ; wasmtime-rs/optimized/yvuhygn8g1cm0um.ll
+; zed-rs/optimized/0cyv10l6w91jqdqmhl8pbusw2.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/5lopn02otdgr3jtenihf9pnc6.ll
+; zed-rs/optimized/5xfke1jw0ac7pab611oym1u20.ll
+; zed-rs/optimized/9kzypu599rxw1s8z0tdtjo3oe.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/cerruq7gww65l7esxsyv0yj53.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:

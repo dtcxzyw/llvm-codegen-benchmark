@@ -10,7 +10,7 @@ entry:
   ret i32 %4
 }
 
-; 27 occurrences:
+; 25 occurrences:
 ; c3c/optimized/c_abi.c.ll
 ; cmake/optimized/lz_encoder.c.ll
 ; freetype/optimized/ftbitmap.c.ll
@@ -22,9 +22,7 @@ entry:
 ; linux/optimized/hwmon.ll
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/iommu-traces.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/sched.ll
@@ -43,7 +41,18 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; boost/optimized/operations.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001a(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = add nsw i32 %2, -1
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -54,7 +63,7 @@ define i32 @func000000000000001e(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %2, 12336
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -66,7 +75,7 @@ define i32 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

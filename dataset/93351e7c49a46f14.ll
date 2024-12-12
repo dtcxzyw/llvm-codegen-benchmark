@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; gromacs/optimized/calculator.cpp.ll
@@ -9,6 +9,7 @@
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; openjdk/optimized/objArrayKlass.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, ptr %2) #0 {
 entry:

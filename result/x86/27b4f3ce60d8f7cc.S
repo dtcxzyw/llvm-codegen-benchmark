@@ -1,10 +1,20 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$1, %esi
-	cmpw	%di, %si
+	cmpw	%si, %di
 	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	andl	$240, %esi
-	cmpw	%di, %si
+	cmpw	%si, %di
 	sete	%al
+	retq
+func000000000000002c:                   # @func000000000000002c
+	andl	$1, %esi
+	cmpw	%si, %di
+	setne	%al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	andl	$7, %esi
+	cmpw	%si, %di
+	seta	%al
 	retq

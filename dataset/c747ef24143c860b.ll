@@ -7,7 +7,7 @@
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 127
   %4 = zext nneg i8 %3 to i32
@@ -21,7 +21,7 @@ entry:
 ; luau/optimized/lvmload.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 127
   %4 = zext nneg i8 %3 to i32
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/lvmload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000010a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 127
   %4 = zext nneg i8 %3 to i32

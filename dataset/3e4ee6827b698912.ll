@@ -15,7 +15,7 @@ entry:
   ret i1 %5
 }
 
-; 352 occurrences:
+; 351 occurrences:
 ; linux/optimized/md.ll
 ; z3/optimized/ackr_bound_probe.cpp.ll
 ; z3/optimized/ackr_model_converter.cpp.ll
@@ -65,7 +65,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
@@ -373,7 +372,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 256
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }

@@ -27,7 +27,7 @@ entry:
 define i1 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
-  %3 = xor i8 %2, %0
+  %3 = xor i8 %0, %2
   %4 = icmp ne i8 %3, 1
   ret i1 %4
 }

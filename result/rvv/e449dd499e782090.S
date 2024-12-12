@@ -13,7 +13,7 @@ func0000000000000000:                   # @func0000000000000000
 	li	a1, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a1
-	vadd.vv	v10, v12, v10
+	vadd.vv	v10, v10, v12
 	vmacc.vx	v8, a0, v10
 	ret
 func0000000000000014:                   # @func0000000000000014
@@ -37,7 +37,7 @@ func0000000000000020:                   # @func0000000000000020
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
 	lui	a0, 6
-	vadd.vv	v10, v12, v10
+	vadd.vv	v10, v10, v12
 	addiw	a0, a0, 778
 	vmacc.vx	v8, a0, v10
 	ret

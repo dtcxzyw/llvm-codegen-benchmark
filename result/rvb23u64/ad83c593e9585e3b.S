@@ -1,23 +1,23 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	sub	a1, a1, a2
 	min	a0, a0, a1
 	slti	a0, a0, 17
 	xori	a0, a0, 1
 	ret
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	sub	a1, a1, a2
 	sgtz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	sub	a1, a1, a2
 	sltiu	a1, a1, 17
 	xori	a1, a1, 1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000184:                   # @func0000000000000184
+func0000000000000714:                   # @func0000000000000714
 	sub	a1, a1, a2
 	srli	a0, a0, 3
 	srli	a1, a1, 3
@@ -26,35 +26,35 @@ func0000000000000184:                   # @func0000000000000184
 	sltiu	a0, a0, 375
 	and	a0, a0, a1
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	sub	a1, a1, a2
 	sltiu	a1, a1, 32
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	slt	a1, a2, a1
 	slti	a0, a0, 12
 	and	a0, a0, a1
 	ret
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	slt	a1, a2, a1
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	slt	a1, a2, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sub	a1, a1, a2
 	xori	a1, a1, 1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	sub	a1, a1, a2
 	li	a2, 2047
 	addi	a0, a0, -2048
@@ -62,38 +62,44 @@ func0000000000000081:                   # @func0000000000000081
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	sub	a1, a1, a2
 	max	a0, a0, a1
 	slti	a0, a0, 65
 	ret
-func000000000000006a:                   # @func000000000000006a
+func0000000000000028:                   # @func0000000000000028
+	sub	a1, a1, a2
+	addi	a1, a1, -32
+	seqz	a1, a1
+	sltiu	a0, a0, 33
+	andn	a0, a1, a0
+	ret
+func00000000000000ca:                   # @func00000000000000ca
 	sub	a1, a1, a2
 	slti	a1, a1, 0
 	slti	a0, a0, 0
 	andn	a0, a0, a1
 	ret
-func000000000000018a:                   # @func000000000000018a
-	sub	a1, a1, a2
-	slti	a1, a1, 2
-	sltiu	a0, a0, 2
-	or	a0, a0, a1
-	xori	a0, a0, 1
-	ret
-func00000000000002c4:                   # @func00000000000002c4
+func0000000000000984:                   # @func0000000000000984
 	sub	a1, a1, a2
 	sltiu	a1, a1, 3
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+func0000000000000181:                   # @func0000000000000181
+	xor	a1, a1, a2
+	snez	a1, a1
+	seqz	a0, a0
+	and	a0, a0, a1
+	ret
+func0000000000000104:                   # @func0000000000000104
 	sub	a1, a1, a2
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
 	sltiu	a0, a0, 10
 	and	a0, a0, a1
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	sub	a1, a1, a2
 	lui	a2, 1
 	addiw	a2, a2, -15
@@ -101,25 +107,26 @@ func0000000000000061:                   # @func0000000000000061
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000c1:                   # @func00000000000000c1
-	xor	a1, a1, a2
-	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
-	ret
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	sub	a1, a1, a2
 	sgtz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000001ca:                   # @func00000000000001ca
+func000000000000070a:                   # @func000000000000070a
+	sub	a1, a1, a2
+	sltiu	a1, a1, 4
+	xori	a1, a1, 1
+	sgtz	a0, a0
+	and	a0, a0, a1
+	ret
+func000000000000058a:                   # @func000000000000058a
 	sub	a1, a1, a2
 	slti	a1, a1, -2
 	snez	a0, a0
 	andn	a0, a0, a1
 	ret
-func0000000000000086:                   # @func0000000000000086
+func0000000000000306:                   # @func0000000000000306
 	sub	a1, a1, a2
 	lui	a2, 1
 	addiw	a2, a2, -1096
@@ -127,44 +134,44 @@ func0000000000000086:                   # @func0000000000000086
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000194:                   # @func0000000000000194
 	xor	a1, a1, a2
 	snez	a1, a1
 	sltiu	a0, a0, 511
 	and	a0, a0, a1
 	ret
-func0000000000000214:                   # @func0000000000000214
+func0000000000000824:                   # @func0000000000000824
 	sub	a1, a1, a2
 	sltiu	a1, a1, 1025
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	xor	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000002ca:                   # @func00000000000002ca
+func000000000000098a:                   # @func000000000000098a
 	xor	a1, a1, a2
 	snez	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	sub	a1, a1, a2
 	slti	a0, a0, 25
 	slti	a1, a1, 1025
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	xor	a1, a1, a2
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	sub	a1, a1, a2
 	sltiu	a1, a1, 29
 	snez	a0, a0

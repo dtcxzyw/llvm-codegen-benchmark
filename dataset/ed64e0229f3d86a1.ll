@@ -3,10 +3,10 @@
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
 ; openjdk/optimized/hb-ot-cff1-table.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, double %1) #0 {
+define i1 @func0000000000000014(i1 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = icmp ult i32 %2, 229
+  %3 = icmp samesign ult i32 %2, 229
   %4 = and i1 %3, %0
   ret i1 %4
 }

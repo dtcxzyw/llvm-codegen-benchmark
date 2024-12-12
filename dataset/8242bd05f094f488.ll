@@ -13,16 +13,15 @@ entry:
   ret i8 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; eastl/optimized/BenchmarkString.cpp.ll
-; eastl/optimized/TestCharTraits.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 2
-  %3 = add i64 %2, %0
+  %2 = lshr exact i64 %1, 1
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i8
   ret i8 %4
 }

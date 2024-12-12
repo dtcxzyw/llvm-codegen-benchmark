@@ -3,12 +3,17 @@ func0000000000000001:                   # @func0000000000000001
 	shlxl	%edx, %esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+func0000000000000005:                   # @func0000000000000005
 	andb	$1, %dl
 	shlxl	%edx, %esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
+func000000000000000f:                   # @func000000000000000f
+	andb	$1, %dl
+	shlxl	%edx, %esi, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000000:                   # @func0000000000000000
 	andb	$1, %dl
 	shlxl	%edx, %esi, %eax
 	addl	%edi, %eax

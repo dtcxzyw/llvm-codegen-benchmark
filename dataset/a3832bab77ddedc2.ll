@@ -6,7 +6,7 @@
 ; wireshark/optimized/packet-lbmr.c.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %0, %2
   %4 = icmp eq i32 %0, -1

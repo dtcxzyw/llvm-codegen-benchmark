@@ -34,8 +34,9 @@ func0000000000000023:                   # @func0000000000000023
 	addiw	a0, a0, 5
 	ret
 func0000000000000005:                   # @func0000000000000005
+	srli	a0, a0, 2
 	andi	a0, a0, -2
-	addiw	a0, a0, 2
+	addiw	a0, a0, -1
 	ret
 func0000000000000045:                   # @func0000000000000045
 	srli	a0, a0, 2

@@ -1,15 +1,15 @@
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	shrl	$6, %esi
 	subq	%rsi, %rdi
 	cmpq	$-7, %rdi
 	setae	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	shrl	$3, %esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	shrl	$6, %esi
 	subq	%rsi, %rdi
 	cmpq	$16777216, %rdi                 # imm = 0x1000000

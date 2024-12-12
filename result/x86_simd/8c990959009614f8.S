@@ -20,7 +20,7 @@ func0000000000000001:                   # @func0000000000000001
 	.short	2                               # 0x2
 	.short	2                               # 0x2
 	.short	2                               # 0x2
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmw	.LCPI1_0(%rip), %xmm2, %k1
 	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
@@ -33,7 +33,7 @@ func0000000000000011:                   # @func0000000000000011
 	.short	6                               # 0x6
 	.short	6                               # 0x6
 	.short	6                               # 0x6
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vptestnmw	.LCPI2_0(%rip), %xmm2, %k1
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq

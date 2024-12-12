@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/euc_jp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp eq i32 %2, -400
@@ -15,7 +15,7 @@ entry:
 ; folly/optimized/LogLevel.cpp.ll
 ; node/optimized/libnode.node_process_object.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483648
   %3 = icmp ne i64 %2, 0
@@ -24,7 +24,7 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; cmake/optimized/hostip.c.ll
 ; curl/optimized/libcurl_la-hostip.ll
@@ -34,7 +34,6 @@ entry:
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/nfs3proc.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/thermal_lib.ll
 ; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/tf_importer.cpp.ll
@@ -84,7 +83,7 @@ entry:
 ; wasmedge/optimized/refInstr.cpp.ll
 ; wasmedge/optimized/validator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967294
   %3 = icmp ne i64 %2, 0
@@ -95,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = icmp ne i32 %2, 0
@@ -109,7 +108,7 @@ entry:
 ; ripgrep-rs/optimized/nfnpl33n8tyk5ff.ll
 ; z3/optimized/nlqsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp eq i32 %2, 0
@@ -131,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483648
   %3 = icmp ne i64 %2, 0
@@ -143,7 +142,7 @@ entry:
 ; 1 occurrences:
 ; node/optimized/libnode.node_process_object.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp ne i32 %2, 0
@@ -154,7 +153,7 @@ entry:
 ; 1 occurrences:
 ; node/optimized/libnode.node_process_object.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp sgt i32 %2, 65535

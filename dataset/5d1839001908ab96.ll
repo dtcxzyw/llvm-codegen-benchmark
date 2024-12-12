@@ -43,7 +43,7 @@
 define i1 @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 5.000000e-01
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
@@ -68,11 +68,11 @@ entry:
 define i1 @func0000000000000005(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 3.600000e+02
-  %3 = fcmp ult double %2, %0
+  %3 = fcmp ugt double %0, %2
   ret i1 %3
 }
 
-; 42 occurrences:
+; 43 occurrences:
 ; abc/optimized/mioUtils.c.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; brotli/optimized/metablock.c.ll
@@ -114,12 +114,13 @@ entry:
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/richardsonextrapolation.ll
 ; z3/optimized/bound_propagator.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 1.000000e+00
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
@@ -131,7 +132,7 @@ entry:
 define i1 @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 0x3F93B13B13B13B14
-  %3 = fcmp oge double %2, %0
+  %3 = fcmp ole double %0, %2
   ret i1 %3
 }
 
@@ -146,17 +147,18 @@ entry:
 define i1 @func0000000000000003(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 0xBCB0000000000000
-  %3 = fcmp ugt double %2, %0
+  %3 = fcmp ult double %0, %2
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/filtering.c.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, -1.000000e+00
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
@@ -166,7 +168,7 @@ entry:
 define i1 @func000000000000000b(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, -1.000000e-02
-  %3 = fcmp uge double %2, %0
+  %3 = fcmp ule double %0, %2
   ret i1 %3
 }
 
@@ -176,17 +178,19 @@ entry:
 define i1 @func000000000000000c(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, -1.000000e+00
-  %3 = fcmp ole double %2, %0
+  %3 = fcmp oge double %0, %2
   ret i1 %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
 ; opencv/optimized/icp.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000d(double %0, double %1) #0 {
 entry:
-  %2 = fadd double %1, 1.000000e+00
-  %3 = fcmp ule double %2, %0
+  %2 = fadd double %1, 3.600000e+02
+  %3 = fcmp uge double %0, %2
   ret i1 %3
 }
 

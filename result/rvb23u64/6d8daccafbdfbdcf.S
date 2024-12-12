@@ -1,6 +1,6 @@
 func0000000000000003:                   # @func0000000000000003
-	zext.h	a2, a2
-	slliw	a1, a1, 24
+	andi	a2, a2, 255
+	slliw	a1, a1, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

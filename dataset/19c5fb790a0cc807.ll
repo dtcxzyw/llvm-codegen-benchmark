@@ -30,10 +30,10 @@
 ; xgboost/optimized/learner.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = lshr i64 %1, 1
   %6 = icmp ult i64 %4, %5
   ret i1 %6
@@ -50,10 +50,10 @@ entry:
 ; gromacs/optimized/lifetime.cpp.ll
 ; llvm/optimized/LoopPass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000126(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = lshr i64 %1, 1
   %6 = icmp slt i64 %4, %5
   ret i1 %6
@@ -67,10 +67,10 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = lshr i64 %1, 1
   %6 = icmp slt i64 %4, %5
   ret i1 %6
@@ -79,10 +79,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = lshr i64 %1, 1
   %6 = icmp ult i64 %4, %5
   ret i1 %6

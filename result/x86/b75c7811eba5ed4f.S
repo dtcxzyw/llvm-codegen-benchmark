@@ -1,22 +1,16 @@
-func0000000000000086:                   # @func0000000000000086
-	leaq	32(%rsi), %rax
+func0000000000000187:                   # @func0000000000000187
+	leaq	64(%rsi), %rax
 	testq	%rdi, %rdi
 	cmovneq	%rdi, %rax
-	addq	$8, %rax
+	addq	$11, %rax
 	retq
-func00000000000000c7:                   # @func00000000000000c7
-	leaq	8(%rsi), %rax
+func0000000000000107:                   # @func0000000000000107
+	leaq	-320(%rsi), %rax
 	testq	%rdi, %rdi
 	cmovneq	%rdi, %rax
-	addq	$88, %rax
+	addq	$1416, %rax                     # imm = 0x588
 	retq
-func00000000000000c6:                   # @func00000000000000c6
-	leaq	40(%rsi), %rax
-	testq	%rdi, %rdi
-	cmovneq	%rdi, %rax
-	subq	$-128, %rax
-	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	leaq	-24(%rsi), %rax
 	testq	%rdi, %rdi
 	cmovneq	%rdi, %rax

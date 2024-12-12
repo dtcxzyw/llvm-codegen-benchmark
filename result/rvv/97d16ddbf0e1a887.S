@@ -1,4 +1,4 @@
-func000000000000011b:                   # @func000000000000011b
+func000000000000042b:                   # @func000000000000042b
 	li	a0, 256
 	lui	a1, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -9,7 +9,7 @@ func000000000000011b:                   # @func000000000000011b
 	vmerge.vxm	v8, v8, a1, v0
 	vmsle.vv	v0, v10, v8
 	ret
-func000000000000011a:                   # @func000000000000011a
+func000000000000042a:                   # @func000000000000042a
 	li	a0, 256
 	lui	a1, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -20,7 +20,7 @@ func000000000000011a:                   # @func000000000000011a
 	vmerge.vxm	v8, v8, a1, v0
 	vmslt.vv	v0, v10, v8
 	ret
-func0000000000000116:                   # @func0000000000000116
+func0000000000000426:                   # @func0000000000000426
 	li	a0, 256
 	lui	a1, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -31,7 +31,7 @@ func0000000000000116:                   # @func0000000000000116
 	vmerge.vxm	v8, v8, a1, v0
 	vmslt.vv	v0, v8, v10
 	ret
-func0000000000000115:                   # @func0000000000000115
+func0000000000000425:                   # @func0000000000000425
 	li	a0, 256
 	lui	a1, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -42,7 +42,7 @@ func0000000000000115:                   # @func0000000000000115
 	vmerge.vxm	v8, v8, a1, v0
 	vmsleu.vv	v0, v8, v10
 	ret
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, -1
 	lui	a0, 524288
@@ -52,7 +52,15 @@ func0000000000000111:                   # @func0000000000000111
 	vmerge.vxm	v8, v8, a0, v0
 	vmseq.vv	v0, v8, v10
 	ret
-func0000000000000114:                   # @func0000000000000114
+func000000000000042c:                   # @func000000000000042c
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmseq.vi	v0, v10, 4
+	vmerge.vim	v10, v10, 3, v0
+	vmseq.vi	v0, v8, 4
+	vmerge.vim	v8, v8, 3, v0
+	vmsne.vv	v0, v8, v10
+	ret
+func0000000000000424:                   # @func0000000000000424
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vmerge.vim	v10, v10, -1, v0

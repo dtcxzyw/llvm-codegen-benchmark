@@ -1,29 +1,16 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	ushll2	v5.2d, v4.4s, #0
-	ushll	v4.2d, v4.2s, #0
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v5.16b
-	and	v0.16b, v0.16b, v4.16b
-	cmeq	v1.2d, v1.2d, #0
-	cmeq	v0.2d, v0.2d, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	mvn	v0.16b, v0.16b
-	xtn	v0.4h, v0.4s
+	mov	w8, w2
+	orr	w9, w0, w1
+	tst	x9, x8
+	cset	w0, ne
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ushll2	v5.2d, v4.4s, #0
-	ushll	v4.2d, v4.2s, #0
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v5.16b
-	and	v0.16b, v0.16b, v4.16b
-	cmeq	v1.2d, v1.2d, #0
-	cmeq	v0.2d, v0.2d, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, w2
+	orr	w9, w0, w1
+	tst	x9, x8
+	cset	w0, eq
 	ret
                                         // -- End function

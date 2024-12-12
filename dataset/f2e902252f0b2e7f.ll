@@ -153,6 +153,18 @@ entry:
 }
 
 ; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; wireshark/optimized/packet-afp.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = xor i32 %0, -1
+  %4 = add i32 %3, %2
+  ret i32 %4
+}
+
+; 2 occurrences:
 ; gromacs/optimized/gmx_filter.cpp.ll
 ; opencv/optimized/brisque_trainer_livedb.cpp.ll
 ; Function Attrs: nounwind
@@ -164,13 +176,12 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; gromacs/optimized/cstringutil.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dlasrt.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
@@ -179,17 +190,6 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
   %4 = sub nsw i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-afp.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -8
-  %4 = sub i32 %3, %0
   ret i32 %4
 }
 

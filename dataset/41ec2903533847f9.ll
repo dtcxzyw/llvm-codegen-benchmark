@@ -24,7 +24,7 @@ entry:
   %2 = and i16 %1, 240
   %3 = icmp eq i16 %2, 32
   %4 = zext i1 %3 to i16
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 
@@ -38,7 +38,7 @@ entry:
   %2 = and i16 %1, 224
   %3 = icmp ne i16 %2, 0
   %4 = zext i1 %3 to i16
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 

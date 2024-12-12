@@ -30,3 +30,13 @@ func0000000000000014:                   # @func0000000000000014
 	vmulhu.vx	v8, v12, a0
 	vsrl.vi	v8, v8, 15
 	ret
+func000000000000000e:                   # @func000000000000000e
+	li	a0, 80
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	lui	a0, 838861
+	vmacc.vv	v12, v10, v8
+	addi	a0, a0, -819
+	vmulhu.vx	v8, v12, a0
+	vsrl.vi	v8, v8, 7
+	ret

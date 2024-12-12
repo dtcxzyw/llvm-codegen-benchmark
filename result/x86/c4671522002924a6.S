@@ -1,42 +1,36 @@
-func0000000000000016:                   # @func0000000000000016
-	addl	%edx, %esi
-	movslq	%esi, %rax
-	addq	%rdi, %rax
-	shrq	$63, %rax
-	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	cmpq	$6, %rax
 	setb	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	cmpq	$8, %rax
 	setb	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func0000000000000026:                   # @func0000000000000026
+	addl	%edx, %esi
+	movslq	%esi, %rax
+	addq	%rdi, %rax
+	shrq	$63, %rax
+	retq
+func00000000000000a1:                   # @func00000000000000a1
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	sete	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	setns	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
-	addl	%edx, %esi
-	movslq	%esi, %rax
-	addq	%rdi, %rax
-	setns	%al
-	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	addq	%rdi, %rax

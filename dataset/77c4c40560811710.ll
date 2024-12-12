@@ -18,7 +18,7 @@ entry:
   ret i1 %6
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; arrow/optimized/api_aggregate.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; hermes/optimized/ES6Class.cpp.ll
@@ -26,7 +26,6 @@ entry:
 ; llvm/optimized/CGStmtOpenMP.cpp.ll
 ; llvm/optimized/GOFFObjectFile.cpp.ll
 ; llvm/optimized/X86InstrMappingEmitter.cpp.ll
-; opencv/optimized/stringutils.cpp.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wireshark/optimized/packet-ipv6.c.ll

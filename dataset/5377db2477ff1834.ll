@@ -44,18 +44,18 @@ entry:
 ; gromacs/optimized/dssp.cpp.ll
 ; libquic/optimized/file_path.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add i64 %2, -2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/dssp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add i64 %2, 3

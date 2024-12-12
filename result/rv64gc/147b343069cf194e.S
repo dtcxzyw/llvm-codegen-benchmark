@@ -37,3 +37,12 @@ func0000000000000008:                   # @func0000000000000008
 .LBB2_4:
 	li	a0, 22
 	ret
+func0000000000000006:                   # @func0000000000000006
+	sext.w	a3, a2
+	bltz	a3, .LBB3_2
+	mv	a1, a2
+.LBB3_2:                                # %entry
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	or	a0, a0, a1
+	ret

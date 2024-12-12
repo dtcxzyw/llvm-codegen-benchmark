@@ -8,19 +8,18 @@ define i64 @func000000000000003d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 1
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = sub nsw i64 %5, %0
   ret i64 %6
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; quantlib/optimized/laplaceinterpolation.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll
@@ -64,7 +63,7 @@ define i64 @func000000000000007c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 6
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = sub i64 %5, %0
   ret i64 %6
 }

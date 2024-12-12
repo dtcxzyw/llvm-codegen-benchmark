@@ -11,11 +11,11 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func000000000000000d:                   # @func000000000000000d
 	movl	%esi, %eax
-	leaq	256(%rax,%rdi), %rax
+	leaq	256(%rdi,%rax), %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%esi, %eax
-	leaq	53(%rax,%rdi), %rax
+	leaq	53(%rdi,%rax), %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%esi, %eax
@@ -24,13 +24,13 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movl	%esi, %eax
-	leaq	-1(%rax,%rdi), %rax
+	leaq	-1(%rdi,%rax), %rax
 	retq
 func000000000000000f:                   # @func000000000000000f
 	movl	%esi, %eax
-	leaq	63(%rax,%rdi), %rax
+	leaq	63(%rdi,%rax), %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	movl	%esi, %eax
-	leaq	80(%rax,%rdi), %rax
+	leaq	80(%rdi,%rax), %rax
 	retq

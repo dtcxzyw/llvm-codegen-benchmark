@@ -10,12 +10,12 @@
 define i64 @func0000000000000003(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = or disjoint i64 %3, 50331648
   ret i64 %4
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/bind.cc.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
@@ -36,12 +36,11 @@ entry:
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; protobuf/optimized/json.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = or disjoint i64 %3, 128
   ret i64 %4
 }
@@ -53,7 +52,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or i64 %3, 1073741824
   ret i64 %4
 }
@@ -64,7 +63,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = or i64 %3, -17179869184
   ret i64 %4
 }

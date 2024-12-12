@@ -16,11 +16,11 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 299
   %3 = sdiv i32 %2, 400
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 51 occurrences:
+; 48 occurrences:
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/wlcNdr.c.ll
@@ -33,7 +33,6 @@ entry:
 ; gromacs/optimized/gmx_energy.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/decNumber.ll
-; icu/optimized/gregoimp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; jq/optimized/decNumber.ll
 ; libjpeg-turbo/optimized/wrgif.c.ll
@@ -56,12 +55,10 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_mpi.ll
 ; openssl/optimized/libcrypto-lib-ec2_oct.ll
 ; openssl/optimized/libcrypto-lib-ecp_oct.ll
-; openssl/optimized/libcrypto-lib-x_bignum.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_mpi.ll
 ; openssl/optimized/libcrypto-shlib-ec2_oct.ll
 ; openssl/optimized/libcrypto-shlib-ecp_oct.ll
-; openssl/optimized/libcrypto-shlib-x_bignum.ll
 ; openssl/optimized/libssl-lib-statem_srvr.ll
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
@@ -77,11 +74,12 @@ define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 26 occurrences:
+; 25 occurrences:
+; boost/optimized/gregorian.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -100,8 +98,6 @@ entry:
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; openjdk/optimized/cmsintrp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; php/optimized/ir.ll
 ; protobuf/optimized/unparser.cc.ll
 ; slurm/optimized/job_mgr.ll
@@ -111,13 +107,13 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -13
-  %3 = sdiv i32 %2, 12
+  %2 = add nsw i32 %1, -1
+  %3 = sdiv i32 %2, -2
   %4 = add i32 %3, %0
   ret i32 %4
 }
 
-; 24 occurrences:
+; 22 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_zoneinfo.ll
 ; libquic/optimized/time_support.c.ll
@@ -126,8 +122,6 @@ entry:
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/vlv_dsi.ll
 ; luau/optimized/loslib.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; php/optimized/ir.ll
 ; postgres/optimized/array_expanded.ll
 ; postgres/optimized/array_userfuncs.ll
@@ -145,9 +139,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 7012800
-  %3 = sdiv i32 %2, 4
-  %4 = add i32 %3, %0
+  %2 = add i32 %1, -457
+  %3 = sdiv i32 %2, 5
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

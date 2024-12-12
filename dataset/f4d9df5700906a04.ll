@@ -6,7 +6,7 @@
 ; openssl/optimized/libcrypto-lib-bio_ok.ll
 ; openssl/optimized/libcrypto-shlib-bio_ok.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -22,7 +22,7 @@ entry:
 ; openjdk/optimized/hb-face-builder.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pack.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32

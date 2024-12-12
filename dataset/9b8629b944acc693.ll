@@ -13,7 +13,7 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; darktable/optimized/introspection_sharpen.c.ll
 ; linux/optimized/kfifo.ll
@@ -22,6 +22,7 @@ entry:
 ; proxygen/optimized/PersistentQuicPskCache.cpp.ll
 ; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
 ; proxygen/optimized/SynchronizedLruQuicPskCache.cpp.ll
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ExprToSubfieldFilter.cpp.ll
 ; velox/optimized/Filter.cpp.ll

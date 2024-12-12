@@ -1,6 +1,7 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/signal_64.ll
 ; linux/optimized/task_mmu.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll

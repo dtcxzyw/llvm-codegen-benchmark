@@ -40,9 +40,10 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; icu/optimized/ucnv_u16.ll
 ; linux/optimized/seq_memory.ll
+; linux/optimized/xarray.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; php/optimized/zend_compile.ll
@@ -64,27 +65,24 @@ entry:
 ; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll
 ; opencv/optimized/perf_bench.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 6291456
   %4 = select i1 %0, i32 %3, i32 %1
-  %5 = icmp ugt i32 %4, 2097151
+  %5 = icmp samesign ugt i32 %4, 2097151
   ret i1 %5
 }
 
-; 6 occurrences:
-; flac/optimized/encode.c.ll
-; glslang/optimized/intermOut.cpp.ll
+; 3 occurrences:
 ; linux/optimized/intel_execlists_submission.ll
-; linux/optimized/xarray.ll
 ; php/optimized/encode.ll
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 131072
   %4 = select i1 %0, i32 %3, i32 %1
-  %5 = icmp ult i32 %4, 131072
+  %5 = icmp samesign ult i32 %4, 131072
   ret i1 %5
 }
 
@@ -96,6 +94,17 @@ define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %2, i32 %1
   %4 = icmp slt i32 %3, 0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; flac/optimized/encode.c.ll
+; glslang/optimized/intermOut.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %0, i32 %2, i32 %1
+  %4 = icmp ult i32 %3, 40
   ret i1 %4
 }
 

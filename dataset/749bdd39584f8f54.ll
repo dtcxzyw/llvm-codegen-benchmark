@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 52 occurrences:
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btConvexConvexAlgorithm.ll
 ; bullet3/optimized/btConvexPlaneCollisionAlgorithm.ll
@@ -11,14 +11,10 @@
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/btSoftBodyConcaveCollisionAlgorithm.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
-; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
-; darktable/optimized/introspection_colorequal.c.ll
-; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_levels.c.ll
 ; darktable/optimized/introspection_monochrome.c.ll
-; darktable/optimized/introspection_rgblevels.c.ll
 ; darktable/optimized/introspection_vignette.c.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
@@ -44,11 +40,6 @@
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/envmap.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
-; ncnn/optimized/yolov3detectionoutput.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
@@ -65,7 +56,7 @@
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fdiv float 1.000000e+00, %1
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fmul float %3, 0x3FA9F02F40000000
   ret float %4
 }

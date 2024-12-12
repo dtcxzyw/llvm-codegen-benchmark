@@ -13,3 +13,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpb	%dl, %sil
 	cmoveq	%rdi, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpb	%dl, %sil
+	cmovbq	%rdi, %rax
+	retq

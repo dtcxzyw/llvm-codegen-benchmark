@@ -32,9 +32,3 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%edi, %eax
 	andl	$1073741823, %eax               # imm = 0x3FFFFFFF
 	retq
-func000000000000006a:                   # @func000000000000006a
-	addl	%esi, %edi
-	shrl	$16, %edi
-	addl	%edx, %edi
-	movzwl	%di, %eax
-	retq

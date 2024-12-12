@@ -1,8 +1,11 @@
 
-; 6 occurrences:
+; 9 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; eastl/optimized/string.cpp.ll
+; luajit/optimized/lj_opt_loop.ll
+; luajit/optimized/lj_opt_loop_dyn.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
+; raylib/optimized/rtext.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/packet-clnp.c.ll

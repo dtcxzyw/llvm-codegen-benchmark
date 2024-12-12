@@ -46,17 +46,13 @@ func0000000000000088:                   # @func0000000000000088
 	and	a0, a0, a1
 	ret
 .LCPI5_0:
-	.quad	0x4066600000000000              # double 179
-.LCPI5_1:
-	.quad	0x4076700000000000              # double 359
+	.quad	0x3e80000000000000              # double 1.1920928955078125E-7
 func0000000000000044:                   # @func0000000000000044
 	lui	a0, %hi(.LCPI5_0)
-	lui	a1, %hi(.LCPI5_1)
 	fld	fa5, %lo(.LCPI5_0)(a0)
-	fld	fa4, %lo(.LCPI5_1)(a1)
-	fsub.d	fa3, fa1, fa2
-	flt.d	a0, fa5, fa3
-	flt.d	a1, fa4, fa0
+	fsub.d	fa4, fa1, fa2
+	flt.d	a0, fa5, fa4
+	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
 .LCPI6_0:

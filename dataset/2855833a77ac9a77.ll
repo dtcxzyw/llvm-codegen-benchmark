@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 21 occurrences:
 ; abc/optimized/giaHash.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
@@ -17,6 +17,10 @@
 ; qemu/optimized/hw_net_e1000.c.ll
 ; spike/optimized/triggers.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i32 %0) #0 {
 entry:

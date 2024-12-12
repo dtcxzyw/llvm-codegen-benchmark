@@ -34,6 +34,10 @@ func0000000000000038:                   # @func0000000000000038
 	or	a0, a0, a1
 	srliw	a0, a0, 5
 	ret
+func0000000000000022:                   # @func0000000000000022
+	srliw	a0, a0, 24
+	or	a0, a0, a1
+	ret
 func000000000000007e:                   # @func000000000000007e
 	andi	a1, a1, 255
 	slli	a1, a1, 18

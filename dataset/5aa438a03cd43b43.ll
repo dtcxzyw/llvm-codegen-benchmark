@@ -68,12 +68,12 @@
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = add i64 %3, 99
   ret i64 %4
 }
 
-; 92 occurrences:
+; 90 occurrences:
 ; abc/optimized/fraSim.c.ll
 ; arrow/optimized/row_internal.cc.ll
 ; darktable/optimized/introspection_bloom.c.ll
@@ -157,9 +157,7 @@ entry:
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/restoration.c.ll
 ; openusd/optimized/utils.c.ll
-; pbrt-v4/optimized/bxdfs.cpp.ll
 ; postgres/optimized/print.ll
-; proj/optimized/io.cpp.ll
 ; qemu/optimized/audio_audio.c.ll
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
@@ -170,7 +168,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = add nsw i64 %3, 7999
   ret i64 %4
 }
@@ -184,13 +182,12 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = add nsw i64 %3, 1
   ret i64 %4
 }
 
-; 16 occurrences:
-; abc/optimized/giaPat2.c.ll
+; 15 occurrences:
 ; arrow/optimized/writer.cc.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; gromacs/optimized/dsymv.cpp.ll
@@ -210,7 +207,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = add i64 %3, 1
   ret i64 %4
 }
@@ -221,7 +218,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }

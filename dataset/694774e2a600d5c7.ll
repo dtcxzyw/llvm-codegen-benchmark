@@ -42,7 +42,7 @@ entry:
   ret i16 %2
 }
 
-; 58 occurrences:
+; 60 occurrences:
 ; c3c/optimized/project.c.ll
 ; c3c/optimized/target.c.ll
 ; git/optimized/diff.ll
@@ -101,6 +101,8 @@ entry:
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; stb/optimized/stb_connected_components.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0) #0 {
 entry:

@@ -10,12 +10,11 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; freetype/optimized/truetype.c.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
@@ -25,7 +24,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 12
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 

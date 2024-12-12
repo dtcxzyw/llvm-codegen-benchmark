@@ -1,16 +1,15 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; clamav/optimized/readdb.c.ll
 ; folly/optimized/HugePages.cpp.ll
 ; opencv/optimized/approx.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; ruby/optimized/dir.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6
@@ -41,7 +40,7 @@ entry:
 ; protobuf/optimized/import_writer.cc.ll
 ; protobuf/optimized/text_format_decode_data.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -57,7 +56,7 @@ entry:
 ; php/optimized/php_cli_server.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000014c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -70,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Clang.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000188(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

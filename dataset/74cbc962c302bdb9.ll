@@ -16,7 +16,7 @@ entry:
 ; qemu/optimized/fdt.c.ll
 ; spike/optimized/fdt.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, %0
@@ -32,7 +32,7 @@ entry:
 ; llvm/optimized/NativeEnumInjectedSources.cpp.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, %0

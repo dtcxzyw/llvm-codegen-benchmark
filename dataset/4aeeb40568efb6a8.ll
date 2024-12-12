@@ -129,18 +129,17 @@
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }
 
-; 88 occurrences:
+; 87 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; freetype/optimized/ftcache.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5FDonion.c.ll
 ; linux/optimized/ccm.ll
-; linux/optimized/ctr.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/filemap.ll
@@ -227,12 +226,12 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; clamav/optimized/mpool.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; linux/optimized/swiotlb.ll
@@ -245,32 +244,28 @@ entry:
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
 ; zstd/optimized/fse_compress.c.ll
-; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }
 
-; 10 occurrences:
+; 7 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/fse_decompress.c.ll
-; cmake/optimized/zstd_decompress_block.c.ll
 ; linux/optimized/fse_decompress.ll
-; linux/optimized/zstd_decompress_block.ll
 ; qemu/optimized/block_parallels.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/fse_decompress.c.ll
-; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }
@@ -283,20 +278,21 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/CallingConvLower.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; qemu/optimized/block_mirror.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }
@@ -310,7 +306,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }
@@ -321,7 +317,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }

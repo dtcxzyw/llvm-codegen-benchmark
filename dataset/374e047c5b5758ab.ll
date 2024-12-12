@@ -24,4 +24,16 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002f(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nsw i64 %1 to i32
+  %3 = sub nsw i32 %0, %2
+  %4 = shl nuw nsw i32 %3, 3
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
 attributes #0 = { nounwind }

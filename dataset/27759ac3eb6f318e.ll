@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 28 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/giaCSatOld.c.ll
 ; flatbuffers/optimized/flatc.cpp.ll
@@ -15,12 +15,14 @@
 ; linux/optimized/pgtable.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/rmap.ll
+; linux/optimized/set_memory.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/X86CompressEVEX.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; qemu/optimized/tcg.c.ll
@@ -45,7 +47,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 20
   %3 = and i64 %2, -4294967296
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = or disjoint i64 %4, 2
   ret i64 %5
 }
@@ -61,7 +63,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 20
   %3 = and i64 %2, -4294967296
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = or i64 %4, 2
   ret i64 %5
 }

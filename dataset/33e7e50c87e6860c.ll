@@ -1,19 +1,4 @@
 
-; 3 occurrences:
-; luau/optimized/AssemblyBuilderA64.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; wireshark/optimized/packet-rlc-lte.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = icmp eq i8 %2, 0
-  %4 = select i1 %3, i32 41, i32 39
-  %5 = shl nuw nsw i32 %1, 24
-  %6 = or disjoint i32 %5, %0
-  %7 = or disjoint i32 %6, %4
-  ret i32 %7
-}
-
 ; 1 occurrences:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; Function Attrs: nounwind
@@ -24,6 +9,20 @@ entry:
   %5 = icmp eq i8 %1, 2
   %6 = select i1 %5, i32 -2147483648, i32 0
   %7 = or i32 %6, %4
+  ret i32 %7
+}
+
+; 2 occurrences:
+; luau/optimized/AssemblyBuilderA64.cpp.ll
+; wireshark/optimized/packet-rlc-lte.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = icmp eq i8 %2, 2
+  %4 = select i1 %3, i32 -2147483648, i32 0
+  %5 = shl nuw nsw i32 %1, 21
+  %6 = or disjoint i32 %0, %5
+  %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
 
@@ -48,7 +47,7 @@ entry:
   %3 = icmp eq i8 %2, 3
   %4 = select i1 %3, i32 1577321472, i32 1308886016
   %5 = shl nuw nsw i32 %1, 19
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -75,7 +74,7 @@ entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 0, i32 32
   %5 = shl i32 %1, 6
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

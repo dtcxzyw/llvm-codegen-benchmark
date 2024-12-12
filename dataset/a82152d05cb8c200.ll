@@ -1,10 +1,12 @@
 
-; 23 occurrences:
+; 25 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; git/optimized/diffcore-break.ll
 ; graphviz/optimized/country_graph_coloring.c.ll
 ; hdf5/optimized/h5diff_array.c.ll
 ; hermes/optimized/String.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
+; libwebp/optimized/quant_levels_utils.c.ll
 ; lightgbm/optimized/c_api.cpp.ll
 ; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
@@ -27,7 +29,7 @@
 define i1 @func0000000000000012(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
@@ -71,11 +73,31 @@ entry:
 define i1 @func0000000000000002(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to double
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
-; 30 occurrences:
+; 11 occurrences:
+; hermes/optimized/ISel.cpp.ll
+; hermes/optimized/Interpreter.cpp.ll
+; hermes/optimized/JSObject.cpp.ll
+; hermes/optimized/Lowering.cpp.ll
+; hermes/optimized/Passes.cpp.ll
+; luau/optimized/Compiler.cpp.ll
+; luau/optimized/TableShape.cpp.ll
+; ocio/optimized/CTFReaderHelper.cpp.ll
+; openssl/optimized/libcrypto-lib-params.ll
+; openssl/optimized/libcrypto-shlib-params.ll
+; openusd/optimized/utils.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(double %0, i32 %1) #0 {
+entry:
+  %2 = uitofp i32 %1 to double
+  %3 = fcmp oeq double %0, %2
+  ret i1 %3
+}
+
+; 29 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; assimp/optimized/MD5Loader.cpp.ll
@@ -96,7 +118,6 @@ entry:
 ; portaudio/optimized/pa_sndio.c.ll
 ; postgres/optimized/vacuum.ll
 ; raylib/optimized/raudio.c.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/packet-ipmi.c.ll
 ; wireshark/optimized/sequence_diagram.cpp.ll
@@ -110,27 +131,7 @@ entry:
 define i1 @func0000000000000004(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to double
-  %3 = fcmp olt double %2, %0
-  ret i1 %3
-}
-
-; 11 occurrences:
-; hermes/optimized/ISel.cpp.ll
-; hermes/optimized/Interpreter.cpp.ll
-; hermes/optimized/JSObject.cpp.ll
-; hermes/optimized/Lowering.cpp.ll
-; hermes/optimized/Passes.cpp.ll
-; luau/optimized/Compiler.cpp.ll
-; luau/optimized/TableShape.cpp.ll
-; ocio/optimized/CTFReaderHelper.cpp.ll
-; openssl/optimized/libcrypto-lib-params.ll
-; openssl/optimized/libcrypto-shlib-params.ll
-; openusd/optimized/utils.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(double %0, i32 %1) #0 {
-entry:
-  %2 = uitofp i32 %1 to double
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
@@ -149,7 +150,7 @@ entry:
 define i1 @func0000000000000005(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to double
-  %3 = fcmp ult double %2, %0
+  %3 = fcmp ugt double %0, %2
   ret i1 %3
 }
 
@@ -163,7 +164,7 @@ entry:
 define i1 @func0000000000000015(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
-  %3 = fcmp ult double %2, %0
+  %3 = fcmp ugt double %0, %2
   ret i1 %3
 }
 
@@ -173,7 +174,7 @@ entry:
 define i1 @func000000000000001a(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
-  %3 = fcmp oge double %2, %0
+  %3 = fcmp ole double %0, %2
   ret i1 %3
 }
 
@@ -196,7 +197,7 @@ entry:
 define i1 @func0000000000000003(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to double
-  %3 = fcmp ugt double %2, %0
+  %3 = fcmp ult double %0, %2
   ret i1 %3
 }
 
@@ -221,7 +222,7 @@ entry:
 define i1 @func0000000000000014(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
@@ -232,7 +233,7 @@ entry:
 define i1 @func000000000000000d(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to double
-  %3 = fcmp ule double %2, %0
+  %3 = fcmp uge double %0, %2
   ret i1 %3
 }
 
@@ -246,7 +247,7 @@ entry:
 define i1 @func0000000000000013(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
-  %3 = fcmp ugt double %2, %0
+  %3 = fcmp ult double %0, %2
   ret i1 %3
 }
 
@@ -263,7 +264,7 @@ entry:
 define i1 @func0000000000000007(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to double
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 
@@ -281,7 +282,7 @@ entry:
 define i1 @func0000000000000018(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
@@ -291,7 +292,7 @@ entry:
 define i1 @func000000000000001b(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
-  %3 = fcmp uge double %2, %0
+  %3 = fcmp ule double %0, %2
   ret i1 %3
 }
 
@@ -301,7 +302,7 @@ entry:
 define i1 @func000000000000000c(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to double
-  %3 = fcmp ole double %2, %0
+  %3 = fcmp oge double %0, %2
   ret i1 %3
 }
 
@@ -313,7 +314,7 @@ entry:
 define i1 @func0000000000000017(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 

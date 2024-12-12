@@ -1,4 +1,4 @@
-func00000000000001d1:                   # @func00000000000001d1
+func00000000000003a1:                   # @func00000000000003a1
 	lui	a0, 3
 	addi	a0, a0, -151
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -14,5 +14,5 @@ func00000000000001d1:                   # @func00000000000001d1
 	li	a0, 27
 	vwmaccu.vx	v12, a0, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmseq.vv	v0, v12, v8
+	vmseq.vv	v0, v8, v12
 	ret

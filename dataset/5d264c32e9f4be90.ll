@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; cmake/optimized/nghttp2_frame.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -10,7 +10,6 @@
 ; grpc/optimized/retry_filter_legacy_call_data.cc.ll
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll
 ; linux/optimized/build_policy.ll
-; linux/optimized/i8042.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/utresrc.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll

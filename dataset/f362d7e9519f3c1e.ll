@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/console_buffer.ll
 ; opencv/optimized/datablock.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; pocketpy/optimized/str.cpp.ll

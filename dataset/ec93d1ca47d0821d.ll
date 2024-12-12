@@ -199,10 +199,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; eastl/optimized/TestBitVector.cpp.ll
 ; eastl/optimized/TestFixedVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %3, %1

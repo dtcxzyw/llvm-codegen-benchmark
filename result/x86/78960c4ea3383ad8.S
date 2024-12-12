@@ -12,10 +12,3 @@ func000000000000000c:                   # @func000000000000000c
 	orl	%edx, %eax
 	orl	$1052672, %eax                  # imm = 0x101000
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movl	%edi, %eax
-	andl	$4096, %edx                     # imm = 0x1000
-	orl	%esi, %eax
-	orl	%edx, %eax
-	orl	$1024, %eax                     # imm = 0x400
-	retq

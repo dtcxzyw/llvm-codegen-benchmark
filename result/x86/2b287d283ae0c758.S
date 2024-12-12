@@ -1,36 +1,36 @@
 func0000000000000001:                   # @func0000000000000001
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
-	cmpq	%rdi, %rsi
-	seta	%al
-	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000009:                   # @func0000000000000009
-	cmpq	%rdi, %rsi
-	setbe	%al
+func0000000000000008:                   # @func0000000000000008
+	cmpq	%rsi, %rdi
+	seta	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
-	cmpq	%rdi, %rsi
+func0000000000000009:                   # @func0000000000000009
+	cmpq	%rsi, %rdi
 	setae	%al
 	retq
+func0000000000000005:                   # @func0000000000000005
+	cmpq	%rsi, %rdi
+	setbe	%al
+	retq
 func000000000000000c:                   # @func000000000000000c
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	setne	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
-	cmpq	%rdi, %rsi
-	setg	%al
+	cmpq	%rsi, %rdi
+	setl	%al
 	retq
 func0000000000000007:                   # @func0000000000000007
-	cmpq	%rdi, %rsi
-	setge	%al
+	cmpq	%rsi, %rdi
+	setle	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
-	cmpq	%rdi, %rsi
-	setl	%al
+	cmpq	%rsi, %rdi
+	setg	%al
 	retq

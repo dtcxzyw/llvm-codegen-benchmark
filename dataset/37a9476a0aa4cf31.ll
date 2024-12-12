@@ -17,22 +17,22 @@
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = zext i16 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = zext nneg i16 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

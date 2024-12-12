@@ -19,12 +19,12 @@ entry:
 }
 
 ; 6 occurrences:
-; abc/optimized/bmcMaj.c.ll
 ; flac/optimized/encode.c.ll
 ; git/optimized/userdiff.ll
 ; oiio/optimized/dpxoutput.cpp.ll
 ; openjdk/optimized/salibelf.ll
 ; openssl/optimized/hpke_test-bin-hpke_test.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -35,13 +35,12 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; graphviz/optimized/strmatch.c.ll
-; icu/optimized/ubidiwrt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, -4
+  %3 = icmp ult i32 %2, 94
   %4 = select i1 %0, i1 %1, i1 false
   %5 = select i1 %4, i1 %3, i1 false
   %6 = zext i1 %5 to i32

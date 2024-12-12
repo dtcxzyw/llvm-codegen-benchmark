@@ -115,7 +115,7 @@ entry:
   ret i64 %5
 }
 
-; 899 occurrences:
+; 898 occurrences:
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/darLib.c.ll
@@ -747,7 +747,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -1019,7 +1018,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

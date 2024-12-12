@@ -1,22 +1,16 @@
 func000000000000003f:                   # @func000000000000003f
-	addb	$-2, %sil
-	movl	$1, %eax
-	shlxl	%esi, %eax, %eax
-	addq	%rdi, %rax
-	retq
-func000000000000001f:                   # @func000000000000001f
-	addb	$-6, %sil
-	movl	$1, %eax
-	shlxl	%esi, %eax, %eax
-	addq	%rdi, %rax
-	retq
-func0000000000000022:                   # @func0000000000000022
 	addb	$-6, %sil
 	movl	$2, %eax
 	shlxl	%esi, %eax, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000023:                   # @func0000000000000023
+	addb	$-6, %sil
+	movl	$2, %eax
+	shlxl	%esi, %eax, %eax
+	addq	%rdi, %rax
+	retq
+func0000000000000013:                   # @func0000000000000013
 	addb	$-6, %sil
 	movl	$2, %eax
 	shlxl	%esi, %eax, %eax

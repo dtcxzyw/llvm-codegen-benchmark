@@ -7,7 +7,7 @@
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add i64 %3, 4611686018427387904
   ret i64 %4
 }
@@ -27,7 +27,7 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; clamav/optimized/XzIn.c.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
@@ -41,6 +41,7 @@ entry:
 ; freetype/optimized/pshinter.c.ll
 ; hyperscan/optimized/ng_calc_components.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
+; minetest/optimized/voxelalgorithms.cpp.ll
 ; ninja/optimized/build_test.cc.ll
 ; openspiel/optimized/is_mcts.cc.ll
 ; openspiel/optimized/mcts.cc.ll
@@ -83,10 +84,9 @@ entry:
   ret i64 %4
 }
 
-; 24 occurrences:
+; 26 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/feather.cc.ll
-; arrow/optimized/light_array.cc.ll
 ; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
@@ -108,11 +108,14 @@ entry:
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; php/optimized/unixtime2tm.ll
 ; velox/optimized/Timestamp.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 21
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nsw i64 %3, 1048576
   ret i64 %4
 }
@@ -129,7 +132,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 21
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nsw i64 %3, 1048576
   ret i64 %4
 }
@@ -140,7 +143,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nsw i64 %3, -2
   ret i64 %4
 }

@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	vcvttsd2si	%xmm0, %eax
 	testl	%eax, %eax
 	setns	%cl
@@ -6,7 +6,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vcvttsd2si	%xmm0, %eax
 	testl	%eax, %eax
 	sete	%cl

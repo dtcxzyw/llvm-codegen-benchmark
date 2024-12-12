@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-mem_sec.ll
 ; openssl/optimized/libcrypto-shlib-mem_sec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 7
@@ -34,12 +34,12 @@ entry:
 ; yosys/optimized/freduce.ll
 ; yosys/optimized/sat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }
@@ -47,12 +47,12 @@ entry:
 ; 1 occurrences:
 ; openvdb/optimized/SignedFloodFill.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }
@@ -64,12 +64,12 @@ entry:
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; rust-analyzer-rs/optimized/ilnj6n0bhpk5oz9.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   %7 = icmp ne i64 %6, 0
   ret i1 %7
 }
@@ -77,7 +77,7 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 31
@@ -102,12 +102,12 @@ entry:
 ; velox/optimized/UnsafeRowFast.cpp.ll
 ; yosys/optimized/freduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }
@@ -116,7 +116,7 @@ entry:
 ; velox/optimized/ArrayContains.cpp.ll
 ; velox/optimized/ArrayPosition.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 63
@@ -129,12 +129,12 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/sat.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }
@@ -142,12 +142,12 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/sat.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   %7 = icmp ne i64 %6, 0
   ret i1 %7
 }
@@ -159,7 +159,7 @@ entry:
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 63

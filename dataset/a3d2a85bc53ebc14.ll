@@ -1,7 +1,11 @@
 
-; 38 occurrences:
+; 42 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; casadi/optimized/kinsol.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; gromacs/optimized/expfit.cpp.ll
@@ -156,11 +160,10 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; grpc/optimized/memory_quota.cc.ll
 ; openspiel/optimized/tabular_best_response_mdp.cc.ll
-; osqp/optimized/amd_info.c.ll
 ; quantlib/optimized/lmdif.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; Function Attrs: nounwind

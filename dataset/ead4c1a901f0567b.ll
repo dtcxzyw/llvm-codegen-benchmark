@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 37 occurrences:
 ; assimp/optimized/COBLoader.cpp.ll
 ; clamav/optimized/filtering.c.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -35,6 +35,8 @@
 ; velox/optimized/VectorSaver.cpp.ll
 ; wireshark/optimized/packet-rsvp.c.ll
 ; wireshark/optimized/packet-smb-pipe.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i16 %0) #0 {
 entry:

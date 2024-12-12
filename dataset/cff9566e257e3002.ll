@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-shlib-wrap128.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 48
   %2 = and i64 %1, 65528

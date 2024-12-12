@@ -1,5 +1,5 @@
 
-; 178 occurrences:
+; 182 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/acecPa.c.ll
@@ -51,9 +51,11 @@
 ; icu/optimized/regexcmp.ll
 ; icu/optimized/ubidiwrt.ll
 ; libquic/optimized/a_strex.c.ll
+; lief/optimized/Builder.cpp.ll
 ; linux/optimized/8139too.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/aspm.ll
+; linux/optimized/core.ll
 ; linux/optimized/datagram.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/drm_dp_helper.ll
@@ -69,7 +71,6 @@
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_rps.ll
-; linux/optimized/irq.ll
 ; linux/optimized/journal.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/memory.ll
@@ -111,6 +112,10 @@
 ; luajit/optimized/lj_carith_dyn.ll
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_switch.ll
+; lvgl/optimized/lv_tabview.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -119,7 +124,6 @@
 ; ockam-rs/optimized/r526c2e8kd9diy6.ll
 ; opencc/optimized/Config.cpp.ll
 ; opencv/optimized/copy.cpp.ll
-; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/codeHeapState.ll
 ; openjdk/optimized/os.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
@@ -132,9 +136,7 @@
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/multirangetypes.ll
 ; qemu/optimized/hw_net_tulip.c.ll
-; qemu/optimized/hw_sd_cadence_sdhci.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; redis/optimized/module.ll
 ; rocksdb/optimized/ldb_cmd.cc.ll
@@ -178,6 +180,8 @@
 ; z3/optimized/nlsat_explain.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/util.cpp.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -187,7 +191,7 @@ entry:
   ret i32 %5
 }
 
-; 116 occurrences:
+; 117 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/mpmDsd.c.ll
@@ -304,6 +308,7 @@ entry:
 ; tev/optimized/main.cpp.ll
 ; wolfssl/optimized/pwdbased.c.ll
 ; z3/optimized/nlsat_explain.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -318,7 +323,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4503595332403200
   %4 = icmp eq i64 %3, 0

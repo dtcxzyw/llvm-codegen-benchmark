@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 60 occurrences:
 ; abc/optimized/cuddZddReord.c.ll
 ; chibicc/optimized/codegen.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -21,6 +21,9 @@
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_tileview.ll
 ; ncnn/optimized/deconvolutiondepthwise_x86.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise_x86_avx.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise_x86_avx512.cpp.ll
@@ -65,13 +68,12 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/sm_permute.cpp.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/intel_pstate.ll
 ; llvm/optimized/VectorUtils.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/imageinput.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {

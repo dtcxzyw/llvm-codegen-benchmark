@@ -3,7 +3,7 @@
 ; bullet3/optimized/btDeformableMultiBodyConstraintSolver.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolverMt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000366(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000cc6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, 1
   %4 = icmp slt i32 %3, %2
@@ -129,7 +129,7 @@ entry:
 ; z3/optimized/warning.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000908(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %0, 8
   %4 = icmp ugt i32 %3, %2

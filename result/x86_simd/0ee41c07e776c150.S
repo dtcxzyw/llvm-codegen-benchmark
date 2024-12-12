@@ -3,7 +3,7 @@
 func0000000000000008:                   # @func0000000000000008
 	vbroadcastss	.LCPI0_0(%rip), %zmm2   # zmm2 = [-1.00000024E-1,-1.00000024E-1,-1.00000024E-1,-1.00000024E-1,-1.00000024E-1,-1.00000024E-1,-1.00000024E-1,-1.00000024E-1,-1.00000024E-1,-1.00000024E-1,-1.00000024E-1,-1.00000024E-1,-1.00000024E-1,-1.00000024E-1,-1.00000024E-1,-1.00000024E-1]
 	vsubps	%zmm1, %zmm2, %zmm1
-	vaddps	%zmm0, %zmm1, %zmm0
+	vaddps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpeqps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -26,7 +26,7 @@ func0000000000000002:                   # @func0000000000000002
 func000000000000000a:                   # @func000000000000000a
 	vbroadcastss	.LCPI2_0(%rip), %zmm2   # zmm2 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	vsubps	%zmm1, %zmm2, %zmm1
-	vaddps	%zmm0, %zmm1, %zmm0
+	vaddps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpleps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0

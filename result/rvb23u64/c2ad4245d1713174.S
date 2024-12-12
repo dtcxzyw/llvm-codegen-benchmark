@@ -21,11 +21,6 @@ func0000000000000004:                   # @func0000000000000004
 	sh1add	a0, a0, a0
 	slli	a0, a0, 2
 	ret
-func000000000000000c:                   # @func000000000000000c
-	lui	a1, 1048573
-	addiw	a1, a1, -1
-	mul	a0, a0, a1
-	ret
 func000000000000000d:                   # @func000000000000000d
 	slli	a1, a0, 3
 	sub	a0, a0, a1

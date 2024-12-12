@@ -31,7 +31,7 @@ func0000000000000040:                   # @func0000000000000040
 	cmpq	$1, %rdx
 	adcl	%edi, %eax
 	retq
-func000000000000020f:                   # @func000000000000020f
+func000000000000060f:                   # @func000000000000060f
 	andl	$1, %esi
 	leal	(%rsi,%rdi), %eax
 	cmpq	$2, %rdx
@@ -41,6 +41,15 @@ func000000000000004f:                   # @func000000000000004f
 	xorl	%eax, %eax
 	cmpq	$8, %rdx
 	sete	%al
+	andl	$1, %esi
+	addl	%esi, %eax
+	addl	%edi, %eax
+	retq
+func000000000000020f:                   # @func000000000000020f
+	movl	$4294967294, %ecx               # imm = 0xFFFFFFFE
+	xorl	%eax, %eax
+	cmpq	%rcx, %rdx
+	seta	%al
 	andl	$1, %esi
 	addl	%esi, %eax
 	addl	%edi, %eax

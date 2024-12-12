@@ -6,12 +6,12 @@
 ; opencv/optimized/multiTracker.cpp.ll
 ; opencv/optimized/ransac_solvers.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 63
   %4 = lshr i64 %3, 6
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -58,12 +58,12 @@ entry:
 ; yosys/optimized/pmux2shiftx.ll
 ; zxing/optimized/ODCode128Writer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, -1
   %4 = lshr i64 %3, 3
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 

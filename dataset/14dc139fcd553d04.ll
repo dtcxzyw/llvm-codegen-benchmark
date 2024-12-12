@@ -19,7 +19,7 @@
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i64, ptr %0, i64 %5
   ret ptr %6
@@ -38,17 +38,16 @@ entry:
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 119 occurrences:
+; 120 occurrences:
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/abcHieNew.c.ll
-; abc/optimized/abcOrder.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbMfs.c.ll
@@ -114,6 +113,8 @@ entry:
 ; llvm/optimized/UniformityAnalysis.cpp.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
+; lvgl/optimized/lv_draw_sw.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/render_raster.cpp.ll
 ; openblas/optimized/dlatms.c.ll
@@ -168,7 +169,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
@@ -180,7 +181,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i32, ptr %0, i64 %5
   ret ptr %6

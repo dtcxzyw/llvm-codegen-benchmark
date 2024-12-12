@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 35 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/decFactor.c.ll
 ; abc/optimized/kitGraph.c.ll
@@ -35,11 +35,6 @@
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; wireshark/optimized/packet-cdma2k.c.ll
 ; z3/optimized/goal.cpp.ll
-; z3/optimized/subpaving_hwf.cpp.ll
-; z3/optimized/subpaving_mpf.cpp.ll
-; z3/optimized/subpaving_mpff.cpp.ll
-; z3/optimized/subpaving_mpfx.cpp.ll
-; z3/optimized/subpaving_mpq.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -76,12 +71,10 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; freetype/optimized/sfnt.c.ll
-; gromacs/optimized/dtrtri.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
 ; libjpeg-turbo/optimized/jdmarker.c.ll
 ; linux/optimized/intel_migrate.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll

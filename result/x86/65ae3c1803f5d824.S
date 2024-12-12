@@ -19,8 +19,13 @@ func0000000000000006:                   # @func0000000000000006
 	orq	%rdi, %rax
 	shrq	$63, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andq	%rdx, %rsi
 	orq	%rdi, %rsi
 	sete	%al
+	retq
+func000000000000002c:                   # @func000000000000002c
+	andq	%rdx, %rsi
+	orq	%rdi, %rsi
+	setne	%al
 	retq

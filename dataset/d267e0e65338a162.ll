@@ -19,15 +19,17 @@
 ; ruby/optimized/util.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
   ret i1 %3
 }
 
-; 25 occurrences:
+; 27 occurrences:
 ; freetype/optimized/ftbase.c.ll
+; freetype/optimized/type1.c.ll
+; freetype/optimized/type1cid.c.ll
 ; git/optimized/push.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/APFloat.cpp.ll

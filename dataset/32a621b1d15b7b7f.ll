@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/CGExpr.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000c8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 40, i32 39
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c8(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000188(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %2, 0
   %3 = select i1 %.not, i32 39, i32 40
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = select i1 %3, i32 40, i32 39
@@ -39,7 +39,7 @@ entry:
 ; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/TruncInstCombine.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 40
   %4 = select i1 %3, i32 40, i32 39
@@ -54,7 +54,7 @@ entry:
 ; openexr/optimized/ImfTiledOutputFile.cpp.ll
 ; openspiel/optimized/Par.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 300, i32 500
@@ -66,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000146(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
   %4 = select i1 %3, i32 1, i32 -1

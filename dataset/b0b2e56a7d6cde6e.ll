@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; ipopt/optimized/IpEquilibrationScaling.ll
 ; ipopt/optimized/SensIndexSchurData.ll
 ; linux/optimized/audit_tree.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/svm.cpp.ll
 ; opencv/optimized/tree.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -38,7 +39,7 @@ entry:
 ; opencv/optimized/tree.cpp.ll
 ; protobuf/optimized/dynamic_message.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -58,7 +59,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %4, i64 0, i64 %0
   ret i64 %5
 }
@@ -66,10 +67,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %4, i64 0, i64 %0
   ret i64 %5
 }
@@ -77,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -85,14 +86,17 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; linux/optimized/aspm.ll
+; 4 occurrences:
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000041(i64 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = icmp ult i32 %3, 33
-  %5 = select i1 %4, i64 31, i64 %0
+  %3 = or i32 %1, %2
+  %4 = icmp eq i32 %3, 0
+  %5 = select i1 %4, i64 15, i64 %0
   ret i64 %5
 }
 

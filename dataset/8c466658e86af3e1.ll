@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 92 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/cmdAuto.c.ll
 ; abc/optimized/ifMap.c.ll
@@ -21,7 +21,6 @@
 ; gromacs/optimized/pp2shift.cpp.ll
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; gromacs/optimized/replicaexchange.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; gromacs/optimized/tngio.cpp.ll
 ; gromacs/optimized/wall.cpp.ll
@@ -53,7 +52,6 @@
 ; oiio/optimized/icoinput.cpp.ll
 ; oiio/optimized/imagebufalgo_yee.cpp.ll
 ; oiio/optimized/pnginput.cpp.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/OpenEXRimages_HDR_Retina_toneMapping.cpp.ll
 ; opencv/optimized/adaptive_manifold_filter_n.cpp.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
@@ -75,7 +73,6 @@
 ; openjdk/optimized/cmsopt.ll
 ; openjdk/optimized/cmspack.ll
 ; openjdk/optimized/cmstypes.ll
-; openmpi/optimized/name_fns.ll
 ; openspiel/optimized/chess.cc.ll
 ; openspiel/optimized/dark_chess.cc.ll
 ; openspiel/optimized/evaluate_bots_test.cc.ll

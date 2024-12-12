@@ -4,7 +4,7 @@
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000042c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp eq i32 %1, 2
@@ -19,7 +19,7 @@ entry:
 ; wireshark/optimized/packet-aeron.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000318c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000058c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne i32 %1, 0

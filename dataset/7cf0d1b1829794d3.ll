@@ -30,8 +30,7 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
-; icu/optimized/number_decimalquantity.ll
+; 1 occurrences:
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(double %0) #0 {
@@ -54,17 +53,6 @@ entry:
   %1 = fdiv double %0, 4.000000e+01
   %2 = fptosi double %1 to i32
   %3 = icmp eq i32 %2, 10
-  ret i1 %3
-}
-
-; 1 occurrences:
-; icu/optimized/number_decimalquantity.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(double %0) #0 {
-entry:
-  %1 = fdiv double %0, 0x400A934F0979A371
-  %2 = fptosi double %1 to i32
-  %3 = icmp ult i32 %2, -21
   ret i1 %3
 }
 

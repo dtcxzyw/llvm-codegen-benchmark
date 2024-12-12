@@ -1,8 +1,9 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/inflate.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; cmake/optimized/inflate.c.ll
+; cmake/optimized/x86.c.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/fp_word_blaster.cpp.ll
 ; gromacs/optimized/inflate.c.ll
@@ -33,11 +34,10 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; linux/optimized/i915_active.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/i915_pmu.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_context.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dmc.ll

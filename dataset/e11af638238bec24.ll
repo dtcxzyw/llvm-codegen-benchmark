@@ -3,7 +3,7 @@
 ; abseil-cpp/optimized/duration.cc.ll
 ; qemu/optimized/system_memory.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000141(i128 %0, i128 %1) #0 {
 entry:
   %2 = icmp eq i128 %0, %1
   ret i1 %2
@@ -12,7 +12,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i128 %0, i128 %1) #0 {
+define i1 @func00000000000000a6(i128 %0, i128 %1) #0 {
 entry:
   %2 = icmp slt i128 %0, %1
   ret i1 %2
@@ -23,7 +23,7 @@ entry:
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i128 %0, i128 %1) #0 {
+define i1 @func00000000000001e1(i128 %0, i128 %1) #0 {
 entry:
   %2 = icmp eq i128 %0, %1
   ret i1 %2
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000061(i128 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
   %3 = trunc nuw nsw i128 %0 to i64
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000181(i128 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i64
   %3 = trunc i128 %0 to i64
@@ -82,7 +82,7 @@ entry:
 ; cpython/optimized/numbertheory.ll
 ; cpython/optimized/sixstep.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000048(i128 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
   %3 = trunc nuw i128 %0 to i64

@@ -1,5 +1,5 @@
 
-; 223 occurrences:
+; 222 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/bdcCore.c.ll
@@ -15,6 +15,9 @@
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -68,7 +71,6 @@
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/intel_guc.ll
 ; linux/optimized/intel_rps.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/intel_sseu_debugfs.ll
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/io_apic.ll
@@ -78,12 +80,9 @@
 ; linux/optimized/main.ll
 ; linux/optimized/mei-trace.ll
 ; linux/optimized/mipi-disco-img.ll
-; linux/optimized/mmap_lock.ll
 ; linux/optimized/net-sysfs.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/netpoll.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/regmap.ll
@@ -98,7 +97,6 @@
 ; linux/optimized/tg3.ll
 ; linux/optimized/thermal_core.ll
 ; linux/optimized/uncore_snbep.ll
-; linux/optimized/virtgpu_trace_points.ll
 ; linux/optimized/vlv_suspend.ll
 ; linux/optimized/workqueue.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -124,6 +122,7 @@
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/VirtualFileSystem.cpp.ll
 ; llvm/optimized/WindowsResource.cpp.ll
+; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lua/optimized/lcode.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
@@ -232,7 +231,7 @@ entry:
   ret i32 %3
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; linux/optimized/mpicoder.ll
@@ -243,7 +242,6 @@ entry:
 ; openblas/optimized/dlaeda.c.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlarrj.c.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/interp_masm_x86.ll
@@ -263,13 +261,13 @@ entry:
 ; 15 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; hwloc/optimized/bitmap.ll
 ; jq/optimized/regerror.ll
-; lua/optimized/lcode.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; oniguruma/optimized/regerror.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; quantlib/optimized/faurersg.ll
@@ -328,11 +326,10 @@ entry:
   ret i32 %3
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/luckyFast16.c.ll
 ; abc/optimized/saigSimSeq.c.ll
 ; linux/optimized/intel_dpio_phy.ll
-; linux/optimized/intel_mocs.ll
 ; linux/optimized/svc_xprt.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; openjdk/optimized/c1_GraphBuilder.ll
@@ -399,17 +396,6 @@ entry:
   %1 = trunc nsw i64 %0 to i32
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 2
-  ret i32 %3
-}
-
-; 1 occurrences:
-; soc-simulator/optimized/verilated.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000037(i64 %0) #0 {
-entry:
-  %1 = trunc nuw nsw i64 %0 to i32
-  %2 = shl nsw i32 %1, 5
-  %3 = add nuw nsw i32 %2, 32
   ret i32 %3
 }
 

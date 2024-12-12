@@ -19,13 +19,6 @@ func000000000000000c:                   # @func000000000000000c
 	setl	%al
 	orb	%sil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	andl	%edx, %esi
-	xorb	$1, %sil
-	cmpl	$-4, %edi
-	setb	%al
-	orb	%sil, %al
-	retq
 func0000000000000014:                   # @func0000000000000014
 	andl	%edx, %esi
 	xorb	$1, %sil

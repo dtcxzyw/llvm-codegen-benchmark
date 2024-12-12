@@ -7,7 +7,7 @@
 ; qemu/optimized/libvduse.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i8 %0) #0 {
+define i32 @func0000000000000064(i8 %0) #0 {
 entry:
   %1 = add i8 %0, -1
   %2 = icmp ult i8 %1, 3
@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/whitebox.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i8 %0) #0 {
+define i32 @func000000000000002c(i8 %0) #0 {
 entry:
   %1 = add i8 %0, 1
   %2 = zext i8 %1 to i32
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000074(i8 %0) #0 {
+define i32 @func00000000000000e4(i8 %0) #0 {
 entry:
   %1 = add nsw i8 %0, -1
   %2 = icmp ult i8 %1, 3

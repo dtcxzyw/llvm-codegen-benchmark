@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cpython/optimized/_testbuffer.ll
 ; cpython/optimized/blob.ll
@@ -21,6 +21,7 @@
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
@@ -30,7 +31,8 @@ entry:
   ret i64 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
+; boost/optimized/copy_segment_point.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/mx.cpp.ll

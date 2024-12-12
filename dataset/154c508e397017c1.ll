@@ -20,7 +20,7 @@ define i1 @func0000000000000004(i1 %0, double %1) #0 {
 entry:
   %2 = fsub double 1.000000e+00, %1
   %3 = fcmp olt double %2, 1.000000e-15
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

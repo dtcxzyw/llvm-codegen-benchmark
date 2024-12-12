@@ -56,3 +56,30 @@ func0000000000000004:                   # @func0000000000000004
 	vpcmpltub	.LCPI1_2(%rip), %xmm1, %k1
 	vmovdqa32	%ymm2, %ymm0 {%k1}
 	retq
+.LCPI2_0:
+	.long	4                               # 0x4
+.LCPI2_1:
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000014:                   # @func0000000000000014
+	vpsllw	$15, %xmm2, %xmm2
+	vpmovw2m	%xmm2, %k0
+	knotb	%k0, %k1
+	vpbroadcastd	.LCPI2_0(%rip), %ymm2 {%k1} {z} # ymm2 {%k1} {z} = [4,4,4,4,4,4,4,4]
+	vpcmpltub	.LCPI2_1(%rip), %xmm1, %k1
+	vmovdqa32	%ymm2, %ymm0 {%k1}
+	retq

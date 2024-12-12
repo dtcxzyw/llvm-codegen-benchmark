@@ -106,6 +106,56 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI5_0:
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+func0000000000000018:                   # @func0000000000000018
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k0
+	vpcmpnleuw	.LCPI5_0(%rip), %ymm1, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI6_0:
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+func0000000000000014:                   # @func0000000000000014
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k0
+	vpcmpltuw	.LCPI6_0(%rip), %ymm1, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
 func000000000000000a:                   # @func000000000000000a
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0

@@ -42,17 +42,37 @@ entry:
   ret ptr %7
 }
 
-; 3 occurrences:
+; 9 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
-; wolfssl/optimized/tls.c.ll
 ; zstd/optimized/huf_decompress.c.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr i8, ptr %0, i64 %3
   %5 = zext i16 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 6
+  ret ptr %7
+}
+
+; 2 occurrences:
+; cmake/optimized/huf_decompress.c.ll
+; zstd/optimized/huf_decompress.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(ptr %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = zext i16 %1 to i64
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 -8
   ret ptr %7
 }
@@ -62,13 +82,26 @@ entry:
 ; luajit/optimized/minilua.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext nneg i16 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 1
+  ret ptr %7
+}
+
+; 1 occurrences:
+; wolfssl/optimized/tls.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = zext i16 %1 to i64
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 1
   ret ptr %7
 }
 

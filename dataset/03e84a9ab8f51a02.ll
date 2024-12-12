@@ -1,7 +1,8 @@
 
-; 170 occurrences:
+; 169 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; hyperscan/optimized/noodle_build.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
@@ -10,8 +11,6 @@
 ; minetest/optimized/serverenvironment.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; oiio/optimized/printinfo.cpp.ll
-; opencv/optimized/motion_estimators.cpp.ll
-; opencv/optimized/nldiffusion_functions.cpp.ll
 ; openjdk/optimized/jfrEventClassTransformer.ll
 ; php/optimized/string.ll
 ; xgboost/optimized/hist_util.cc.ll
@@ -180,7 +179,7 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; ockam-rs/optimized/1y67jc2e8hldxzxu.ll
 ; protobuf/optimized/printer.cc.ll
@@ -189,6 +188,8 @@ entry:
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
 ; wasmtime-rs/optimized/cxg2cx8gn6v5trt.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, ptr %2) #0 {
 entry:

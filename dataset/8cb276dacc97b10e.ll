@@ -42,6 +42,17 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_calendar_header_dropdown.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, 1000
+  %3 = sub i32 %2, %0
+  %4 = add i32 %3, 12208
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i32 %1) #0 {

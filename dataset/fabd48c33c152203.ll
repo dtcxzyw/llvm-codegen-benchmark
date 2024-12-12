@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/drm_dp_helper.ll
-; linux/optimized/intel_snps_phy.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

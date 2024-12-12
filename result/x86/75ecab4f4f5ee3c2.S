@@ -1,11 +1,11 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movzbl	%sil, %eax
 	xorl	%ecx, %ecx
 	addl	%edi, %eax
 	movl	$255, %eax
 	cmovsl	%ecx, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andl	$196608, %esi                   # imm = 0x30000
 	addl	%edi, %esi
 	xorl	%eax, %eax
@@ -13,7 +13,7 @@ func0000000000000014:                   # @func0000000000000014
 	setb	%al
 	leal	-4(,%rax,8), %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	andl	$1023, %esi                     # imm = 0x3FF
 	addl	%edi, %esi
 	cmpl	$640, %esi                      # imm = 0x280

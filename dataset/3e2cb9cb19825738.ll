@@ -21,6 +21,23 @@ entry:
   ret i1 %4
 }
 
+; 7 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a6(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ole double %0, %1
+  %3 = fcmp one double %0, 0x7FF0000000000000
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; hermes/optimized/Array.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -47,7 +64,7 @@ entry:
   ret i1 %4
 }
 
-; 26 occurrences:
+; 18 occurrences:
 ; gromacs/optimized/colvargrid.cpp.ll
 ; node/optimized/libnode.spawn_sync.ll
 ; openblas/optimized/dgees.c.ll
@@ -57,7 +74,6 @@ entry:
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsx.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgges.c.ll
 ; openblas/optimized/dgges3.c.ll
@@ -65,15 +81,8 @@ entry:
 ; openblas/optimized/dggev.c.ll
 ; openblas/optimized/dggev3.c.ll
 ; openblas/optimized/dggevx.c.ll
-; openblas/optimized/dsbevd.c.ll
-; openblas/optimized/dspevd.c.ll
 ; openblas/optimized/dstemr.c.ll
-; openblas/optimized/dstevd.c.ll
-; openblas/optimized/dsyevd.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(double %0, double %1) #0 {
 entry:
@@ -105,10 +114,9 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; g2o/optimized/sparse_optimizer_terminate_action.cpp.ll
 ; proj/optimized/4D_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(double %0, double %1) #0 {
@@ -126,17 +134,6 @@ define i1 @func0000000000000022(double %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %0, %1
   %3 = fcmp olt double %0, 0x3D06849B86A12B9B
-  %4 = select i1 %3, i1 %2, i1 false
-  ret i1 %4
-}
-
-; 1 occurrences:
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008c(double %0, double %1) #0 {
-entry:
-  %2 = fcmp oeq double %0, %1
-  %3 = fcmp oge double %0, 0.000000e+00
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }

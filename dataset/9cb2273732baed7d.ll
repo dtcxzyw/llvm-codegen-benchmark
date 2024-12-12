@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
@@ -29,6 +29,7 @@
 ; rocksdb/optimized/writable_file_writer.cc.ll
 ; slurm/optimized/burst_buffer_common.ll
 ; stat-rs/optimized/4d9pj14shc9lbmph.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

@@ -11,12 +11,11 @@ define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 1
   %4 = add i32 %3, %1
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
-; 8 occurrences:
-; darktable/optimized/RafDecoder.cpp.ll
+; 7 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; libquic/optimized/padding.c.ll
@@ -29,19 +28,17 @@ define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 1
   %4 = add i32 %3, %1
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/giaTranStoch.c.ll
 ; linux/optimized/indirect.ll
 ; oiio/optimized/dpxinput.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
@@ -50,12 +47,12 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
-  %5 = icmp slt i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
 ; abc/optimized/giaFrames.c.ll
@@ -68,6 +65,7 @@ entry:
 ; graphviz/optimized/make_map.c.ll
 ; icu/optimized/ushape.ll
 ; linux/optimized/netconsole.ll
+; lvgl/optimized/lv_table.ll
 ; opencv/optimized/qrcode_reader.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; openjdk/optimized/SpanClipRenderer.ll
@@ -80,12 +78,12 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/bmcBmcG.c.ll
 ; abc/optimized/bmcBmcS.c.ll
 ; abc/optimized/bmcMesh.c.ll
@@ -101,7 +99,6 @@ entry:
 ; meshlab/optimized/filter_script_dialog.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; opencv/optimized/deriv.cpp.ll
 ; opencv/optimized/qrcode_reader.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
@@ -116,36 +113,35 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
-  %5 = icmp eq i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/graphKit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 1
   %4 = add nsw i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/mapperUtils.c.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
 ; openjdk/optimized/callGenerator.ll
 ; openjdk/optimized/library_call.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 1
   %4 = add nsw i32 %3, %1
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -158,19 +154,19 @@ entry:
 define i1 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
-  %5 = icmp sle i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp sge i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %1
-  %5 = icmp ult i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -180,8 +176,8 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
-  %5 = icmp ne i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp ne i32 %0, %4
   ret i1 %5
 }
 
@@ -191,19 +187,19 @@ entry:
 define i1 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
-  %5 = icmp sge i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp sle i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/intel_psr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %1
-  %5 = icmp slt i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 

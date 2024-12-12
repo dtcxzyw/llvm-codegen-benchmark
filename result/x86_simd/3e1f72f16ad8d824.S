@@ -1,36 +1,20 @@
 .LCPI0_0:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
 func0000000000000001:                   # @func0000000000000001
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1

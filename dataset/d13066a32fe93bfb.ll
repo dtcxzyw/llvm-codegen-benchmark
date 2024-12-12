@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 73 occurrences:
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
 ; c3c/optimized/llvm_codegen.c.ll
 ; c3c/optimized/sema_decls.c.ll
@@ -30,6 +30,7 @@
 ; luau/optimized/ConstraintGenerator.cpp.ll
 ; luau/optimized/DataFlowGraph.cpp.ll
 ; luau/optimized/Frontend.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; mitsuba3/optimized/ptracer.cpp.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll
@@ -48,6 +49,7 @@
 ; postgres/optimized/enum.ll
 ; postgres/optimized/execute.ll
 ; postgres/optimized/regress.ll
+; postgres/optimized/subselect.ll
 ; qemu/optimized/execlog.ll
 ; rust-analyzer-rs/optimized/3o06gi7obg71ydg1.ll
 ; slurm/optimized/gres.ll
@@ -68,6 +70,9 @@
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/89pzn2sx18yjgerweenwud6qr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
@@ -76,8 +81,9 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; curl/optimized/libcurl_la-smtp.ll
+; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll

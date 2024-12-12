@@ -8,7 +8,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000007:                   # @func0000000000000007
 	cmpl	$2, %edx
 	cmovel	%edx, %esi
-	leal	64(%rsi,%rdi), %eax
+	leal	64(%rdi,%rsi), %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	cmpl	$2, %edx

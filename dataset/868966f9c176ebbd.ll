@@ -9,7 +9,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -18,10 +18,10 @@ entry:
 ; darktable/optimized/introspection_sharpen.c.ll
 ; darktable/optimized/introspection_spots.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
-; icu/optimized/decNumber.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; node/optimized/libnode.node_buffer.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/ByteGray.ll
 ; openjdk/optimized/ByteIndexed.ll
 ; openjdk/optimized/FourByteAbgr.ll
@@ -46,7 +46,7 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -59,7 +59,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 8, %1
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -72,7 +72,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

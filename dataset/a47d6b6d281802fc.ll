@@ -134,16 +134,17 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
+; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000001fc(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
   %5 = add nuw nsw i64 %4, 8
-  %6 = mul nuw nsw i64 %5, %1
+  %6 = mul nuw nsw i64 %1, %5
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
 }

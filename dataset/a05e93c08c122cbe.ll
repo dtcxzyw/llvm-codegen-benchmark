@@ -28,7 +28,7 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/GlobalMerge.cpp.ll
@@ -38,6 +38,7 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/StackLifetime.cpp.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
+; opencv/optimized/motion_estimators.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000d0(i64 %0, i64 %1) #0 {
 entry:

@@ -1,9 +1,9 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addl	%esi, %edi
 	testb	$7, %dil
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	addl	%esi, %edi
 	testb	$15, %dil
 	sete	%al

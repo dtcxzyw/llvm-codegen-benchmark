@@ -1,5 +1,5 @@
 
-; 738 occurrences:
+; 739 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
@@ -25,6 +25,11 @@
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/topology.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; c3c/optimized/json_output.c.ll
 ; c3c/optimized/llvm_codegen_type.c.ll
@@ -202,11 +207,9 @@
 ; linux/optimized/rmap.ll
 ; linux/optimized/seq_file.ll
 ; linux/optimized/set_memory.ll
-; linux/optimized/severity.ll
 ; linux/optimized/sys.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/trans_fd.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/virtio_console.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/vmalloc.ll
@@ -332,6 +335,7 @@
 ; llvm/optimized/regcomp.c.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; lz4/optimized/lz4.c.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -420,7 +424,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -642,7 +645,6 @@
 ; ruby/optimized/string.ll
 ; ruby/optimized/stringio.ll
 ; ruby/optimized/time.ll
-; ruby/optimized/type.ll
 ; ruby/optimized/vm.ll
 ; ruby/optimized/vm_backtrace.ll
 ; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
@@ -688,7 +690,6 @@
 ; velox/optimized/ComplexVector.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
-; velox/optimized/StringView.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
@@ -730,13 +731,13 @@
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract.ll
 ; yosys/optimized/ezsat.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/proc_dlatch.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/yosys.ll
 ; z3/optimized/aig.cpp.ll
 ; z3/optimized/factor_equivs.cpp.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {

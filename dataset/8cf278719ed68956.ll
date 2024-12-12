@@ -5,10 +5,10 @@
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000078(i64 %0, i1 %1) #0 {
+define i32 @func00000000000000d8(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 9007199254740992, i64 16777216
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i32
   ret i32 %5

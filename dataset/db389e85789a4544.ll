@@ -35,15 +35,25 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openjdk/optimized/dependencies.ll
-; spike/optimized/fcvtmod_w_d.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 8
   %3 = select i1 %2, i1 true, i1 %0
   %4 = select i1 %3, i64 4294967295, i64 0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; spike/optimized/fcvtmod_w_d.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 1054
+  %3 = select i1 %2, i1 true, i1 %0
+  %4 = select i1 %3, i64 16, i64 0
   ret i64 %4
 }
 

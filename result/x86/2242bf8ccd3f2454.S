@@ -25,6 +25,6 @@ func0000000000000032:                   # @func0000000000000032
 func0000000000000008:                   # @func0000000000000008
 	addl	$5, %edi
 	vcvtusi2ss	%edi, %xmm1, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq

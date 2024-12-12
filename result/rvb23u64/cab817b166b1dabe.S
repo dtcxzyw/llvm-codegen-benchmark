@@ -1,4 +1,4 @@
-func00000000000001d4:                   # @func00000000000001d4
+func00000000000003a4:                   # @func00000000000003a4
 	lui	a2, 448
 	slli	a0, a0, 12
 	and	a1, a1, a2
@@ -8,7 +8,7 @@ func00000000000001d4:                   # @func00000000000001d4
 	lui	a1, 1048320
 	sltu	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	slli	a1, a1, 6
 	andi	a0, a0, 63
 	or	a0, a0, a1
@@ -18,11 +18,21 @@ func0000000000000044:                   # @func0000000000000044
 	addiw	a1, a1, 2047
 	sltu	a0, a0, a1
 	ret
-func0000000000000194:                   # @func0000000000000194
+func0000000000000334:                   # @func0000000000000334
 	zext.h	a1, a1
 	slli	a0, a0, 8
 	or	a0, a0, a1
 	lui	a1, 1048568
 	addw	a0, a0, a1
 	sltiu	a0, a0, 809
+	ret
+func00000000000003b4:                   # @func00000000000003b4
+	lui	a2, 448
+	slli	a0, a0, 12
+	and	a1, a1, a2
+	or	a0, a0, a1
+	lui	a1, 1048562
+	add	a0, a0, a1
+	srliw	a0, a0, 13
+	sltiu	a0, a0, 129
 	ret

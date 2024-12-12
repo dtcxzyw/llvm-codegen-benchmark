@@ -1,36 +1,18 @@
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	sshll	v4.2d, v1.2s, #0
-	sshll2	v5.2d, v1.4s, #0
-	cmhi	v3.2d, v5.2d, v3.2d
-	cmhi	v2.2d, v4.2d, v2.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	bif	v0.16b, v1.16b, v2.16b
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	cmp	x2, w1, sxtw
+	csel	w0, w0, w1, lo
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	sshll	v4.2d, v1.2s, #0
-	sshll2	v5.2d, v1.4s, #0
-	cmhi	v3.2d, v5.2d, v3.2d
-	cmhi	v2.2d, v4.2d, v2.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	bif	v0.16b, v1.16b, v2.16b
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	cmp	x2, w1, sxtw
+	csel	w0, w0, w1, lo
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	sshll	v4.2d, v1.2s, #0
-	sshll2	v5.2d, v1.4s, #0
-	cmhi	v3.2d, v3.2d, v5.2d
-	cmhi	v2.2d, v2.2d, v4.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	bif	v0.16b, v1.16b, v2.16b
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	cmp	x2, w1, sxtw
+	csel	w0, w0, w1, hi
 	ret
                                         // -- End function

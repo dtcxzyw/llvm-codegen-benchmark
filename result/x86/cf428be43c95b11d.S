@@ -3,6 +3,11 @@ func0000000000000004:                   # @func0000000000000004
 	cmovnel	%esi, %edi
 	leal	6(%rdi), %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	testw	%dx, %dx
+	cmovnsl	%esi, %edi
+	leal	1(%rdi), %eax
+	retq
 func0000000000000030:                   # @func0000000000000030
 	movzwl	%dx, %eax
 	cmpl	$44818, %eax                    # imm = 0xAF12
@@ -45,11 +50,6 @@ func0000000000000019:                   # @func0000000000000019
 	testw	%dx, %dx
 	cmovnsl	%esi, %edi
 	leal	-1(%rdi), %eax
-	retq
-func0000000000000018:                   # @func0000000000000018
-	testw	%dx, %dx
-	cmovnsl	%esi, %edi
-	leal	1(%rdi), %eax
 	retq
 func0000000000000011:                   # @func0000000000000011
 	movzwl	%dx, %eax

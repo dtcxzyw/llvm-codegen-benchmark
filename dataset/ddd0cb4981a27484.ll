@@ -1,8 +1,7 @@
 
-; 20 occurrences:
+; 13 occurrences:
 ; cvc5/optimized/attribute.cpp.ll
 ; cvc5/optimized/iand_utils.cpp.ll
-; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/sygus_extension.cpp.ll
 ; cvc5/optimized/theory_strings.cpp.ll
 ; cvc5/optimized/transcendental_solver.cpp.ll
@@ -11,48 +10,36 @@
 ; linux/optimized/datagram.ll
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/skbuff.ll
-; llvm/optimized/CodeGenRegisters.cpp.ll
-; llvm/optimized/CriticalAntiDepBreaker.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/Minidump.cpp.ll
-; llvm/optimized/MveEmitter.cpp.ll
-; llvm/optimized/RetainCountChecker.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
-; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
 
-; 18 occurrences:
+; 12 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; cvc5/optimized/sygus_extension.cpp.ll
-; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/CriticalAntiDepBreaker.cpp.ll
 ; llvm/optimized/LiveVariables.cpp.ll
-; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MveEmitter.cpp.ll
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/WebAssemblyDisassemblerEmitter.cpp.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
-; oiio/optimized/exif.cpp.ll
-; php/optimized/phpdbg_cmd.ll
-; spike/optimized/socketif.ll
-; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp samesign ugt i64 %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -72,8 +59,40 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = select i1 %3, i64 28, i64 32
+  ret i64 %4
+}
+
+; 6 occurrences:
+; duckdb/optimized/ub_duckdb_storage.cpp.ll
+; llvm/optimized/LowerTypeTests.cpp.ll
+; oiio/optimized/exif.cpp.ll
+; php/optimized/phpdbg_cmd.ll
+; spike/optimized/socketif.ll
+; velox/optimized/URLFunctions.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = icmp ugt i64 %0, %2
+  %4 = select i1 %3, i64 2, i64 0
+  ret i64 %4
+}
+
+; 6 occurrences:
+; llvm/optimized/CodeGenRegisters.cpp.ll
+; llvm/optimized/CriticalAntiDepBreaker.cpp.ll
+; llvm/optimized/Minidump.cpp.ll
+; llvm/optimized/MveEmitter.cpp.ll
+; llvm/optimized/RetainCountChecker.cpp.ll
+; z3/optimized/smt_context.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = icmp samesign ult i64 %0, %2
+  %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }
 
@@ -85,7 +104,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   %4 = select i1 %3, i64 128, i64 136
   ret i64 %4
 }
@@ -96,7 +115,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }

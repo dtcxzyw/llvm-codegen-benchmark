@@ -38,15 +38,15 @@ func0000000000000020:                   # @func0000000000000020
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
+func0000000000000039:                   # @func0000000000000039
+	mul	a1, a1, a2
+	addw	a0, a0, a1
+	ret
 func000000000000003c:                   # @func000000000000003c
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func000000000000003a:                   # @func000000000000003a
-	mul	a1, a1, a2
-	addw	a0, a0, a1
-	ret
-func0000000000000039:                   # @func0000000000000039
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

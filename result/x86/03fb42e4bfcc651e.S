@@ -1,5 +1,5 @@
 func0000000000000007:                   # @func0000000000000007
-	addl	%edi, %esi
-	movslq	%esi, %rax
+	leal	(%rdi,%rsi), %eax
+	cltq
 	subq	%rdi, %rax
 	retq

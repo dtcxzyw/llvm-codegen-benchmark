@@ -15,7 +15,7 @@ entry:
 ; llvm/optimized/CallLowering.cpp.ll
 ; openssl/optimized/packettest-bin-packettest.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = icmp eq i64 %2, 1022
@@ -23,10 +23,11 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; openjdk/optimized/awt_InputMethod.ll
 ; rust-analyzer-rs/optimized/4nb8vdkq52ctjgzb.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -39,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i64 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %.not = icmp eq i64 %2, 0
@@ -47,7 +48,8 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; arrow/optimized/int_util.cc.ll
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
@@ -55,17 +57,6 @@ entry:
   %2 = or i64 %0, %1
   %3 = icmp ult i64 %2, 268435455
   %4 = select i1 %3, i64 -4, i64 -5
-  ret i64 %4
-}
-
-; 1 occurrences:
-; redis/optimized/listpack.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
-entry:
-  %2 = or disjoint i64 %0, %1
-  %3 = icmp ult i64 %2, 268435450
-  %4 = select i1 %3, i64 4, i64 5
   ret i64 %4
 }
 

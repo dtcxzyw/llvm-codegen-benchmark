@@ -1,9 +1,10 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; darktable/optimized/introspection_enlargecanvas.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
+; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; flac/optimized/window.c.ll

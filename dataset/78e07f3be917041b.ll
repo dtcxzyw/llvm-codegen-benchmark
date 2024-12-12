@@ -24,7 +24,7 @@
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
   %3 = icmp eq i64 %2, 0
@@ -41,7 +41,7 @@ entry:
   %2 = and i64 %1, 18141941981184
   %3 = icmp eq i64 %2, 18141941923840
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -51,7 +51,7 @@ entry:
 ; linux/optimized/netdev.ll
 ; linux/optimized/r8169_main.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 8796093022208
   %3 = icmp eq i64 %2, 0

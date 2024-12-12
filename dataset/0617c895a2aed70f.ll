@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2763752 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2876024 = type <{ i64, i32 }>
 
 ; 1 occurrences:
 ; flatbuffers/optimized/flatc.cpp.ll
@@ -38,8 +38,8 @@ entry:
   %3 = and i64 %2, 536870911
   %4 = sub nsw i64 0, %3
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw %struct.Gia_Obj_t_.2763752, ptr %0, i64 %5
-  %7 = getelementptr nusw %struct.Gia_Obj_t_.2763752, ptr %6, i64 %4
+  %6 = getelementptr nusw %struct.Gia_Obj_t_.2876024, ptr %0, i64 %5
+  %7 = getelementptr nusw %struct.Gia_Obj_t_.2876024, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -72,13 +72,13 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/lbr.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 15
   %4 = sub nuw nsw i64 16, %3
   %5 = sub i64 0, %1
   %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 

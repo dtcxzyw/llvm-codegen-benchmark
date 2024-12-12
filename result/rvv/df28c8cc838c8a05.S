@@ -11,7 +11,7 @@ func0000000000000028:                   # @func0000000000000028
 	vsll.vi	v12, v12, 6
 	vsll.vi	v10, v10, 12
 	vor.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 16
 	ret
 func0000000000000076:                   # @func0000000000000076
@@ -19,7 +19,7 @@ func0000000000000076:                   # @func0000000000000076
 	vsll.vi	v12, v12, 16
 	vsll.vi	v10, v10, 24
 	vor.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 8
 	ret
 func0000000000000000:                   # @func0000000000000000
@@ -51,7 +51,7 @@ func0000000000000060:                   # @func0000000000000060
 	vsll.vi	v12, v12, 10
 	vsll.vi	v10, v10, 8
 	vor.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 12
 	ret
 func000000000000007c:                   # @func000000000000007c

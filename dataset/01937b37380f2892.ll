@@ -4,7 +4,7 @@
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp eq i64 %1, 2
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 1048544
   %4 = icmp ult i64 %1, 32
@@ -29,7 +29,7 @@ entry:
 ; gromacs/optimized/autocorr.cpp.ll
 ; linux/optimized/fault.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 12
   %4 = icmp eq i64 %1, 132

@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	sext.w	a2, a2
 	or	a0, a0, a1
 	addi	a2, a2, -2

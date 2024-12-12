@@ -1,13 +1,4 @@
-func0000000000000e88:                   # @func0000000000000e88
-	sext.w	a0, a0
-	slli	a2, a2, 8
-	or	a1, a1, a2
-	sext.w	a1, a1
-	sltiu	a1, a1, 12
-	sltiu	a0, a0, 25
-	or	a0, a0, a1
-	ret
-func0000000000000f82:                   # @func0000000000000f82
+func0000000000003b02:                   # @func0000000000003b02
 	sext.w	a0, a0
 	slli	a2, a2, 8
 	or	a1, a1, a2
@@ -17,7 +8,7 @@ func0000000000000f82:                   # @func0000000000000f82
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000e90:                   # @func0000000000000e90
+func0000000000003d10:                   # @func0000000000003d10
 	sext.w	a0, a0
 	slli	a2, a2, 8
 	or	a1, a1, a2
@@ -27,7 +18,7 @@ func0000000000000e90:                   # @func0000000000000e90
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000e22:                   # @func0000000000000e22
+func0000000000003842:                   # @func0000000000003842
 	sext.w	a0, a0
 	slli	a2, a2, 8
 	or	a1, a1, a2
@@ -36,7 +27,7 @@ func0000000000000e22:                   # @func0000000000000e22
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000e28:                   # @func0000000000000e28
+func0000000000003848:                   # @func0000000000003848
 	sext.w	a0, a0
 	slli	a2, a2, 8
 	or	a1, a1, a2
@@ -45,7 +36,28 @@ func0000000000000e28:                   # @func0000000000000e28
 	sltiu	a0, a0, 8
 	or	a0, a0, a1
 	ret
-func0000000000000342:                   # @func0000000000000342
+func0000000000003868:                   # @func0000000000003868
+	sext.w	a0, a0
+	slli	a2, a2, 6
+	or	a1, a1, a2
+	li	a2, 27
+	slli	a2, a2, 11
+	srliw	a1, a1, 11
+	xor	a0, a0, a2
+	seqz	a1, a1
+	seqz	a0, a0
+	or	a0, a0, a1
+	ret
+func0000000000003d08:                   # @func0000000000003d08
+	slli	a2, a2, 6
+	srliw	a0, a0, 13
+	or	a1, a1, a2
+	srliw	a1, a1, 11
+	sltiu	a1, a1, 27
+	sltiu	a0, a0, 129
+	or	a0, a0, a1
+	ret
+func0000000000000a82:                   # @func0000000000000a82
 	sext.w	a0, a0
 	slli	a2, a2, 6
 	or	a1, a1, a2

@@ -3,7 +3,7 @@
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
   %4 = select i1 %1, i32 %3, i32 %2
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DiagnosticIDs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1000
   %4 = select i1 %1, i32 %3, i32 %2

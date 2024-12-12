@@ -16,7 +16,7 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v10, v8
-	li	a0, 20
+	li	a0, 24
 	vwmulu.vx	v8, v10, a0
 	ret
 func0000000000000002:                   # @func0000000000000002

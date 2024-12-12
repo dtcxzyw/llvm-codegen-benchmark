@@ -1,27 +1,19 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	scvtf	v3.2d, v3.2d
-	scvtf	v2.2d, v2.2d
+	scvtf	d1, x0
 	mov	x8, #9221120237041090560        // =0x7ff8000000000000
-	dup	v4.2d, x8
-	fsub	v0.2d, v0.2d, v2.2d
-	fsub	v1.2d, v1.2d, v3.2d
-	fcmeq	v2.2d, v1.2d, v1.2d
-	fcmeq	v3.2d, v0.2d, v0.2d
-	bif	v0.16b, v4.16b, v3.16b
-	bif	v1.16b, v4.16b, v2.16b
+	fsub	d0, d0, d1
+	fmov	d1, x8
+	fcmp	d0, d0
+	fcsel	d0, d1, d0, vs
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	scvtf	v3.2d, v3.2d
-	scvtf	v2.2d, v2.2d
-	fsub	v0.2d, v0.2d, v2.2d
-	fsub	v1.2d, v1.2d, v3.2d
-	fmov	v2.2d, #1.00000000
-	fcmgt	v3.2d, v2.2d, v1.2d
-	fcmgt	v4.2d, v2.2d, v0.2d
-	bit	v0.16b, v2.16b, v4.16b
-	bit	v1.16b, v2.16b, v3.16b
+	scvtf	d1, x0
+	fsub	d0, d0, d1
+	fmov	d1, #1.00000000
+	fcmp	d0, d1
+	fcsel	d0, d1, d0, mi
 	ret
                                         // -- End function

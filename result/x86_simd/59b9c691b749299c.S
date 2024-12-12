@@ -64,6 +64,15 @@ func000000000000003a:                   # @func000000000000003a
 	vpmulld	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
+.LCPI8_0:
+	.long	4294967294                      # 0xfffffffe
+func000000000000003b:                   # @func000000000000003b
+	vpaddd	.LCPI8_0(%rip){1to4}, %xmm1, %xmm1
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpsubd	%xmm2, %xmm0, %xmm0
+	vpmulld	%xmm1, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
 func0000000000000023:                   # @func0000000000000023
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1

@@ -1,7 +1,10 @@
 
-; 105 occurrences:
+; 108 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -126,7 +129,8 @@ entry:
   ret i64 %3
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll

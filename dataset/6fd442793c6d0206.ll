@@ -8,6 +8,7 @@
 ; abc/optimized/rwrEva.c.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/light_array.cc.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/cmddata.cpp.ll
 ; clamav/optimized/cvd.c.ll
 ; clamav/optimized/server-th.c.ll
@@ -133,7 +134,6 @@
 ; qemu/optimized/hw_char_cadence_uart.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/hw_watchdog_wdt_i6300esb.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/util_cpuinfo-i386.c.ll
@@ -160,11 +160,11 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 42
   %3 = select i1 %2, i32 772, i32 260
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 591 occurrences:
+; 588 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/absVta.c.ll
@@ -222,14 +222,12 @@ entry:
 ; git/optimized/add.ll
 ; git/optimized/blame.ll
 ; git/optimized/index-pack.ll
-; git/optimized/multi-pack-index.ll
 ; git/optimized/push.ll
 ; git/optimized/read-cache.ll
 ; git/optimized/rebase.ll
 ; git/optimized/rev-parse.ll
 ; git/optimized/update-index.ll
 ; graphviz/optimized/grammar.c.ll
-; grpc/optimized/socket_utils_linux.cc.ll
 ; grpc/optimized/tcp_socket_utils.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hwloc/optimized/lstopo-lstopo-draw.ll
@@ -240,7 +238,6 @@ entry:
 ; libpng/optimized/pngset.c.ll
 ; libquic/optimized/asn1_lib.c.ll
 ; libquic/optimized/cipher.c.ll
-; libquic/optimized/gzlib.c.ll
 ; libuv/optimized/linux.c.ll
 ; libuv/optimized/tcp.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -327,13 +324,10 @@ entry:
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/g4x_hdmi.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hid-debug.ll
-; linux/optimized/hub.ll
 ; linux/optimized/i915_gem_internal.ll
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_display_power_well.ll
@@ -425,6 +419,8 @@ entry:
 ; luajit/optimized/lj_serialize.ll
 ; luajit/optimized/lj_serialize_dyn.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -753,7 +749,8 @@ entry:
 ; z3/optimized/goal.cpp.ll
 ; z3/optimized/tbv.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
-; zlib/optimized/gzlib.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
@@ -782,9 +779,8 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; cmake/optimized/core.c.ll
-; glslang/optimized/Initialize.cpp.ll
 ; graphviz/optimized/rec.c.ll
 ; libuv/optimized/core.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -803,14 +799,8 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
-; assimp/optimized/zip.c.ll
-; hermes/optimized/zip.c.ll
+; 4 occurrences:
 ; linux/optimized/tg3.ll
-; luajit/optimized/lj_strfmt.ll
-; luajit/optimized/lj_strfmt_dyn.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/miniz.c.ll
 ; mold/optimized/rust-demangle.c.ll
 ; php/optimized/ftp_fopen_wrapper.ll
 ; php/optimized/zend_inference.ll
@@ -823,25 +813,18 @@ entry:
   ret i32 %4
 }
 
-; 18 occurrences:
+; 11 occurrences:
 ; darktable/optimized/introspection_retouch.c.ll
 ; linux/optimized/blk-flush.ll
-; linux/optimized/dw.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/e1000_main.ll
-; linux/optimized/vgaarb.ll
 ; llvm/optimized/InlineAsmLowering.cpp.ll
-; llvm/optimized/X86FrameLowering.cpp.ll
-; luajit/optimized/lj_strfmt.ll
-; luajit/optimized/lj_strfmt_dyn.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; mold/optimized/rust-demangle.c.ll
 ; nanobind/optimized/nb_type.cpp.ll
-; opencv/optimized/fundam.cpp.ll
 ; openjdk/optimized/invocationCounter.ll
 ; redis/optimized/rax.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
@@ -851,10 +834,9 @@ entry:
   ret i32 %4
 }
 
-; 325 occurrences:
+; 176 occurrences:
 ; abc/optimized/abcTim.c.ll
 ; clamav/optimized/upack.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -949,106 +931,11 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/ethtool.ll
-; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_dsb.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; oiio/optimized/CineonHeader.cpp.ll
-; oiio/optimized/argparse.cpp.ll
-; oiio/optimized/benchmark.cpp.ll
-; oiio/optimized/bmpinput.cpp.ll
-; oiio/optimized/bmpoutput.cpp.ll
-; oiio/optimized/cineoninput.cpp.ll
-; oiio/optimized/color_ocio.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; oiio/optimized/dpxinput.cpp.ll
-; oiio/optimized/dpxoutput.cpp.ll
-; oiio/optimized/environment.cpp.ll
-; oiio/optimized/errorhandler.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
-; oiio/optimized/exroutput.cpp.ll
-; oiio/optimized/filesystem.cpp.ll
-; oiio/optimized/fitsinput.cpp.ll
-; oiio/optimized/fitsoutput.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; oiio/optimized/hdrinput.cpp.ll
-; oiio/optimized/hdroutput.cpp.ll
-; oiio/optimized/icc.cpp.ll
-; oiio/optimized/icoinput.cpp.ll
-; oiio/optimized/icooutput.cpp.ll
-; oiio/optimized/iffinput.cpp.ll
-; oiio/optimized/iffoutput.cpp.ll
-; oiio/optimized/imagebuf.cpp.ll
-; oiio/optimized/imagebufalgo.cpp.ll
-; oiio/optimized/imagebufalgo_addsub.cpp.ll
-; oiio/optimized/imagebufalgo_channels.cpp.ll
-; oiio/optimized/imagebufalgo_compare.cpp.ll
-; oiio/optimized/imagebufalgo_copy.cpp.ll
-; oiio/optimized/imagebufalgo_deep.cpp.ll
-; oiio/optimized/imagebufalgo_draw.cpp.ll
-; oiio/optimized/imagebufalgo_mad.cpp.ll
-; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
-; oiio/optimized/imagebufalgo_muldiv.cpp.ll
-; oiio/optimized/imagebufalgo_opencv.cpp.ll
-; oiio/optimized/imagebufalgo_orient.cpp.ll
-; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
-; oiio/optimized/imagebufalgo_xform.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
-; oiio/optimized/imageinput.cpp.ll
-; oiio/optimized/imageio.cpp.ll
-; oiio/optimized/imageioplugin.cpp.ll
-; oiio/optimized/imageoutput.cpp.ll
-; oiio/optimized/jpeginput.cpp.ll
-; oiio/optimized/jpegoutput.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; oiio/optimized/paramlist.cpp.ll
-; oiio/optimized/pnginput.cpp.ll
-; oiio/optimized/pngoutput.cpp.ll
-; oiio/optimized/pnmoutput.cpp.ll
-; oiio/optimized/printinfo.cpp.ll
-; oiio/optimized/psdinput.cpp.ll
-; oiio/optimized/rlainput.cpp.ll
-; oiio/optimized/rlaoutput.cpp.ll
-; oiio/optimized/sgiinput.cpp.ll
-; oiio/optimized/sgioutput.cpp.ll
-; oiio/optimized/softimageinput.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; oiio/optimized/sysutil.cpp.ll
-; oiio/optimized/targainput.cpp.ll
-; oiio/optimized/targaoutput.cpp.ll
-; oiio/optimized/termoutput.cpp.ll
-; oiio/optimized/texture3d.cpp.ll
-; oiio/optimized/texturesys.cpp.ll
-; oiio/optimized/tiffinput.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
-; oiio/optimized/typedesc.cpp.ll
-; oiio/optimized/xmp.cpp.ll
-; oiio/optimized/zfile.cpp.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
-; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rtextures.c.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; tev/optimized/Channel.cpp.ll
-; tev/optimized/ClipboardImageLoader.cpp.ll
-; tev/optimized/Common.cpp.ll
-; tev/optimized/EmptyImageLoader.cpp.ll
-; tev/optimized/ExrImageLoader.cpp.ll
-; tev/optimized/ExrImageSaver.cpp.ll
-; tev/optimized/Image.cpp.ll
-; tev/optimized/ImageButton.cpp.ll
-; tev/optimized/ImageCanvas.cpp.ll
-; tev/optimized/ImageViewer.cpp.ll
-; tev/optimized/Ipc.cpp.ll
-; tev/optimized/MultiGraph.cpp.ll
-; tev/optimized/PfmImageLoader.cpp.ll
-; tev/optimized/QoiImageLoader.cpp.ll
-; tev/optimized/QoiImageSaver.cpp.ll
-; tev/optimized/StbiImageLoader.cpp.ll
-; tev/optimized/StbiLdrImageSaver.cpp.ll
-; tev/optimized/UberShader.cpp.ll
-; tev/optimized/main.cpp.ll
 ; vcpkg/optimized/archives.cpp.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
 ; vcpkg/optimized/binaryparagraph.cpp.ll
@@ -1124,6 +1011,175 @@ entry:
 ; vcpkg/optimized/vcpkgpaths.cpp.ll
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 1114111
+  %3 = select i1 %2, i32 256, i32 0
+  %4 = or disjoint i32 %0, %3
+  ret i32 %4
+}
+
+; 14 occurrences:
+; git/optimized/rebase.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hwloc/optimized/lstopo-lstopo-ascii.ll
+; hwloc/optimized/lstopo_no_graphics-lstopo-ascii.ll
+; icu/optimized/regexcmp.ll
+; linux/optimized/intel_cdclk.ll
+; linux/optimized/intel_ddi.ll
+; linux/optimized/xhci-hub.ll
+; llvm/optimized/GlobalISelMatchTable.cpp.ll
+; opencv/optimized/array.cpp.ll
+; openjdk/optimized/assembler_x86.ll
+; openusd/optimized/patchTableFactory.cpp.ll
+; qemu/optimized/tcg.c.ll
+; redis/optimized/rax.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, 3
+  %3 = select i1 %2, i32 8192, i32 0
+  %4 = or disjoint i32 %0, %3
+  ret i32 %4
+}
+
+; 10 occurrences:
+; glslang/optimized/SpvBuilder.cpp.ll
+; linux/optimized/hub.ll
+; linux/optimized/intel_ddi.ll
+; luajit/optimized/lib_bit.ll
+; luajit/optimized/lib_bit_dyn.ll
+; luajit/optimized/lj_crecord.ll
+; luajit/optimized/lj_crecord_dyn.ll
+; qemu/optimized/target_riscv_translate.c.ll
+; redis/optimized/rax.ll
+; softposit-rs/optimized/8mae6k72v4zmmji.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp slt i32 %1, 0
+  %3 = select i1 %2, i32 2146959360, i32 0
+  %4 = or disjoint i32 %0, %3
+  ret i32 %4
+}
+
+; 9 occurrences:
+; gromacs/optimized/colvarcomp_volmaps.cpp.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; libwebp/optimized/token_enc.c.ll
+; libwebp/optimized/vp8_dec.c.ll
+; linux/optimized/intel_uc.ll
+; linux/optimized/net.ll
+; lua/optimized/lcode.ll
+; openjdk/optimized/assembler_x86.ll
+; wireshark/optimized/proto.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, 15
+  %3 = select i1 %2, i32 0, i32 8
+  %4 = or i32 %0, %3
+  ret i32 %4
+}
+
+; 149 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
+; linux/optimized/ethtool.ll
+; linux/optimized/intel_dpll_mgr.ll
+; linux/optimized/intel_dsb.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; oiio/optimized/CineonHeader.cpp.ll
+; oiio/optimized/argparse.cpp.ll
+; oiio/optimized/benchmark.cpp.ll
+; oiio/optimized/bmpinput.cpp.ll
+; oiio/optimized/bmpoutput.cpp.ll
+; oiio/optimized/cineoninput.cpp.ll
+; oiio/optimized/color_ocio.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; oiio/optimized/dpxinput.cpp.ll
+; oiio/optimized/dpxoutput.cpp.ll
+; oiio/optimized/environment.cpp.ll
+; oiio/optimized/errorhandler.cpp.ll
+; oiio/optimized/exrinput.cpp.ll
+; oiio/optimized/exroutput.cpp.ll
+; oiio/optimized/filesystem.cpp.ll
+; oiio/optimized/fitsinput.cpp.ll
+; oiio/optimized/fitsoutput.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; oiio/optimized/hdrinput.cpp.ll
+; oiio/optimized/hdroutput.cpp.ll
+; oiio/optimized/icc.cpp.ll
+; oiio/optimized/icoinput.cpp.ll
+; oiio/optimized/icooutput.cpp.ll
+; oiio/optimized/iffinput.cpp.ll
+; oiio/optimized/iffoutput.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imagebufalgo.cpp.ll
+; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_compare.cpp.ll
+; oiio/optimized/imagebufalgo_copy.cpp.ll
+; oiio/optimized/imagebufalgo_deep.cpp.ll
+; oiio/optimized/imagebufalgo_draw.cpp.ll
+; oiio/optimized/imagebufalgo_mad.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
+; oiio/optimized/imagebufalgo_muldiv.cpp.ll
+; oiio/optimized/imagebufalgo_opencv.cpp.ll
+; oiio/optimized/imagebufalgo_orient.cpp.ll
+; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/imageinput.cpp.ll
+; oiio/optimized/imageio.cpp.ll
+; oiio/optimized/imageioplugin.cpp.ll
+; oiio/optimized/imageoutput.cpp.ll
+; oiio/optimized/jpeginput.cpp.ll
+; oiio/optimized/jpegoutput.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; oiio/optimized/paramlist.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
+; oiio/optimized/pngoutput.cpp.ll
+; oiio/optimized/pnmoutput.cpp.ll
+; oiio/optimized/printinfo.cpp.ll
+; oiio/optimized/psdinput.cpp.ll
+; oiio/optimized/rlainput.cpp.ll
+; oiio/optimized/rlaoutput.cpp.ll
+; oiio/optimized/sgiinput.cpp.ll
+; oiio/optimized/sgioutput.cpp.ll
+; oiio/optimized/softimageinput.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; oiio/optimized/sysutil.cpp.ll
+; oiio/optimized/targainput.cpp.ll
+; oiio/optimized/targaoutput.cpp.ll
+; oiio/optimized/termoutput.cpp.ll
+; oiio/optimized/texture3d.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; oiio/optimized/typedesc.cpp.ll
+; oiio/optimized/xmp.cpp.ll
+; oiio/optimized/zfile.cpp.ll
+; quickjs/optimized/quickjs.ll
+; tev/optimized/Channel.cpp.ll
+; tev/optimized/ClipboardImageLoader.cpp.ll
+; tev/optimized/Common.cpp.ll
+; tev/optimized/EmptyImageLoader.cpp.ll
+; tev/optimized/ExrImageLoader.cpp.ll
+; tev/optimized/ExrImageSaver.cpp.ll
+; tev/optimized/Image.cpp.ll
+; tev/optimized/ImageButton.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; tev/optimized/Ipc.cpp.ll
+; tev/optimized/MultiGraph.cpp.ll
+; tev/optimized/PfmImageLoader.cpp.ll
+; tev/optimized/QoiImageLoader.cpp.ll
+; tev/optimized/QoiImageSaver.cpp.ll
+; tev/optimized/StbiImageLoader.cpp.ll
+; tev/optimized/StbiLdrImageSaver.cpp.ll
+; tev/optimized/UberShader.cpp.ll
+; tev/optimized/main.cpp.ll
 ; velox/optimized/Expressions.cpp.ll
 ; wasmedge/optimized/alias.cpp.ll
 ; wasmedge/optimized/aot_section.cpp.ll
@@ -1182,69 +1238,7 @@ define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 1114111
   %3 = select i1 %2, i32 256, i32 0
-  %4 = or disjoint i32 %3, %0
-  ret i32 %4
-}
-
-; 14 occurrences:
-; git/optimized/rebase.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; hwloc/optimized/lstopo-lstopo-ascii.ll
-; hwloc/optimized/lstopo_no_graphics-lstopo-ascii.ll
-; icu/optimized/regexcmp.ll
-; linux/optimized/intel_cdclk.ll
-; linux/optimized/intel_ddi.ll
-; linux/optimized/xhci-hub.ll
-; llvm/optimized/GlobalISelMatchTable.cpp.ll
-; opencv/optimized/array.cpp.ll
-; openjdk/optimized/assembler_x86.ll
-; openusd/optimized/patchTableFactory.cpp.ll
-; qemu/optimized/tcg.c.ll
-; redis/optimized/rax.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, 3
-  %3 = select i1 %2, i32 8192, i32 0
-  %4 = or disjoint i32 %3, %0
-  ret i32 %4
-}
-
-; 9 occurrences:
-; glslang/optimized/SpvBuilder.cpp.ll
-; linux/optimized/intel_ddi.ll
-; luajit/optimized/lib_bit.ll
-; luajit/optimized/lib_bit_dyn.ll
-; luajit/optimized/lj_crecord.ll
-; luajit/optimized/lj_crecord_dyn.ll
-; qemu/optimized/target_riscv_translate.c.ll
-; redis/optimized/rax.ll
-; softposit-rs/optimized/8mae6k72v4zmmji.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 0
-  %3 = select i1 %2, i32 2146959360, i32 0
-  %4 = or disjoint i32 %3, %0
-  ret i32 %4
-}
-
-; 9 occurrences:
-; gromacs/optimized/colvarcomp_volmaps.cpp.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; libwebp/optimized/token_enc.c.ll
-; libwebp/optimized/vp8_dec.c.ll
-; linux/optimized/intel_uc.ll
-; linux/optimized/net.ll
-; lua/optimized/lcode.ll
-; openjdk/optimized/assembler_x86.ll
-; wireshark/optimized/proto.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, 15
-  %3 = select i1 %2, i32 0, i32 8
-  %4 = or i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -1259,7 +1253,38 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 4
   %3 = select i1 %2, i32 16384, i32 0
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
+  ret i32 %4
+}
+
+; 6 occurrences:
+; assimp/optimized/zip.c.ll
+; hermes/optimized/zip.c.ll
+; luajit/optimized/lj_strfmt.ll
+; luajit/optimized/lj_strfmt_dyn.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 4
+  %3 = select i1 %2, i32 16384, i32 0
+  %4 = or i32 %0, %3
+  ret i32 %4
+}
+
+; 5 occurrences:
+; recastnavigation/optimized/DetourNavMesh.cpp.ll
+; recastnavigation/optimized/DetourTileCache.cpp.ll
+; recastnavigation/optimized/Sample_TempObstacles.cpp.ll
+; recastnavigation/optimized/Sample_TileMesh.cpp.ll
+; z3/optimized/bit_util.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 255
+  %3 = select i1 %2, i32 8, i32 0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -1271,8 +1296,24 @@ define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i32 1008, i32 1012
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
+}
+
+; 6 occurrences:
+; linux/optimized/vgaarb.ll
+; llvm/optimized/X86FrameLowering.cpp.ll
+; luajit/optimized/lj_strfmt.ll
+; luajit/optimized/lj_strfmt_dyn.ll
+; opencv/optimized/fundam.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 8
+  %3 = select i1 %2, i32 0, i32 67108864
+  %4 = or disjoint i32 %0, %3
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

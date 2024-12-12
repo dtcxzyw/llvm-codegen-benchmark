@@ -3,10 +3,10 @@
 ; mitsuba3/optimized/measured.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000431(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000861(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
@@ -22,10 +22,10 @@ entry:
 ; opencv/optimized/samplers.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
@@ -49,24 +49,23 @@ entry:
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openmpi/optimized/tm_topology.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
   ret i1 %7
 }
 
-; 2 occurrences:
-; abc/optimized/extraBddThresh.c.ll
+; 1 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001e4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp ult i64 %6, %5
@@ -74,12 +73,25 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/X86ISelLowering.cpp.ll
+; abc/optimized/extraBddThresh.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
+  %5 = zext nneg i32 %4 to i64
+  %6 = add nuw nsw i64 %0, 1
+  %7 = icmp samesign ult i64 %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000161(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = mul nsw i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
@@ -89,13 +101,13 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
-  %7 = icmp ult i64 %6, %5
+  %7 = icmp samesign ult i64 %6, %5
   ret i1 %7
 }
 
@@ -104,10 +116,10 @@ entry:
 ; libjpeg-turbo/optimized/tjexample.c.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
@@ -119,10 +131,10 @@ entry:
 ; libjpeg-turbo/optimized/tjexample.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004f1(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000009e1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5

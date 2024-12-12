@@ -28,13 +28,13 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	leal	1(%rdx), %eax
+func0000000000000003:                   # @func0000000000000003
+	leal	64(%rdx), %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	leal	2(%rdx), %eax
+func0000000000000008:                   # @func0000000000000008
+	leal	1(%rdx), %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq

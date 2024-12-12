@@ -79,8 +79,7 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; llvm/optimized/TypeLoc.cpp.ll
+; 1 occurrences:
 ; opencv/optimized/matrix_wrap.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i32 %1, ptr %2) #0 {

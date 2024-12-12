@@ -1,10 +1,9 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
-; freetype/optimized/truetype.c.ll
 ; linux/optimized/scsi_scan.ll
 ; opencc/optimized/Config.cpp.ll
 ; Function Attrs: nounwind
@@ -25,7 +24,7 @@ entry:
 ; luajit/optimized/lj_carith.ll
 ; luajit/optimized/lj_carith_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2305843009213693952
   %4 = icmp eq i64 %3, 0
@@ -38,7 +37,7 @@ entry:
 ; linux/optimized/p4.ll
 ; linux/optimized/virtio_blk.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 34359738368
   %4 = icmp eq i64 %3, 0

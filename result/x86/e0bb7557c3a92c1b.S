@@ -12,13 +12,6 @@ func0000000000000000:                   # @func0000000000000000
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movl	%edx, %ecx
-	testb	$1, %sil
-	movl	$4194303, %eax                  # imm = 0x3FFFFF
-	cmoveq	%rcx, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	movl	%edx, %ecx
 	xorl	%eax, %eax
@@ -37,6 +30,13 @@ func0000000000000001:                   # @func0000000000000001
 	movl	%edx, %ecx
 	testb	$1, %sil
 	movl	$31536000, %eax                 # imm = 0x1E13380
+	cmoveq	%rcx, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movl	%edx, %ecx
+	testb	$1, %sil
+	movl	$1, %eax
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq

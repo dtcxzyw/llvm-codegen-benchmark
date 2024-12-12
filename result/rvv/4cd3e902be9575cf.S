@@ -1,4 +1,4 @@
-func0000000000000d51:                   # @func0000000000000d51
+func0000000000001aa1:                   # @func0000000000001aa1
 	li	a0, 100
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v10, a0, v12
@@ -9,7 +9,7 @@ func0000000000000d51:                   # @func0000000000000d51
 	li	a0, 220
 	vmseq.vx	v0, v8, a0
 	ret
-func0000000000000556:                   # @func0000000000000556
+func0000000000000aa6:                   # @func0000000000000aa6
 	li	a0, 188
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v10, a0, v12

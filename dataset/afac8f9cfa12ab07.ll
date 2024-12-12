@@ -1,14 +1,16 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; hdf5/optimized/H5Dvirtual.c.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; spike/optimized/disasm.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 127
   %4 = zext nneg i8 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -17,11 +19,11 @@ entry:
 ; grpc/optimized/retry_filter_legacy_call_data.cc.ll
 ; php/optimized/der.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 127
   %4 = zext nneg i8 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
@@ -30,11 +32,11 @@ entry:
 ; luau/optimized/Autocomplete.cpp.ll
 ; luau/optimized/ConstraintSolver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = zext nneg i8 %3 to i64
-  %5 = add nuw i64 %4, %1
+  %5 = add nuw i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
@@ -42,23 +44,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_edid.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 31
   %4 = zext nneg i8 %3 to i64
-  %5 = add nsw i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/drm_edid.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i8 %2) #0 {
-entry:
-  %3 = and i8 %2, 31
-  %4 = zext nneg i8 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -93,11 +83,11 @@ entry:
 ; typst-rs/optimized/ef603zin5qw49hb.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 127
   %4 = zext nneg i8 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp eq i64 %5, %0
   ret i1 %6
 }

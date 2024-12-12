@@ -4,7 +4,7 @@
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000041(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, 0
   %.idx = select i1 %3, i64 0, i64 %2
@@ -87,7 +87,7 @@ entry:
 ; spdlog/optimized/spdlog.cpp.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000046(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.inv = icmp sgt i64 %1, 0
   %.idx = select i1 %.inv, i64 %2, i64 0

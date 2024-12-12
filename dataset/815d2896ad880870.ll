@@ -1,6 +1,5 @@
 
-; 17 occurrences:
-; linux/optimized/nfs4renewd.ll
+; 16 occurrences:
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientenvironment.cpp.ll
 ; minetest/optimized/connection.cpp.ll

@@ -1,23 +1,35 @@
 
-%struct.GC_hblk_s.2591436 = type { [4096 x i8] }
+%struct.GC_hblk_s.2705275 = type { [4096 x i8] }
 
-; 5 occurrences:
+; 2 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
-; jemalloc/optimized/emap.ll
-; jemalloc/optimized/emap.pic.ll
-; jemalloc/optimized/emap.sym.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(ptr %0, i64 %1) #0 {
+define i64 @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %struct.GC_hblk_s.2591436, ptr %0, i64 %1
+  %2 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = lshr i64 %3, 12
   %5 = and i64 %4, 262143
   ret i64 %5
 }
 
-; 102 occurrences:
+; 4 occurrences:
+; bdwgc/optimized/gc.c.ll
+; jemalloc/optimized/emap.ll
+; jemalloc/optimized/emap.pic.ll
+; jemalloc/optimized/emap.sym.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr nusw %struct.GC_hblk_s.2705275, ptr %0, i64 %1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = lshr i64 %3, 22
+  %5 = and i64 %4, 2047
+  ret i64 %5
+}
+
+; 100 occurrences:
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/cgnr_solver.cc.ll
@@ -102,8 +114,6 @@ entry:
 ; g2o/optimized/types_icp.cpp.ll
 ; g2o/optimized/types_seven_dof_expmap.cpp.ll
 ; g2o/optimized/vertex_cam.cpp.ll
-; g2o/optimized/vertex_line2d.cpp.ll
-; g2o/optimized/vertex_point_xy.cpp.ll
 ; g2o/optimized/vertex_se3.cpp.ll
 ; g2o/optimized/vertex_se3_euler.cpp.ll
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
@@ -130,12 +140,54 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; g2o/optimized/solver_pcg.cpp.ll
+; 43 occurrences:
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/structure_only.cpp.ll
+; g2o/optimized/types_seven_dof_expmap.cpp.ll
+; g2o/optimized/vertex_line2d.cpp.ll
+; g2o/optimized/vertex_point_xy.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000001(ptr %0, i64 %1) #0 {
+define i64 @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr double, ptr %0, i64 %1
+  %2 = getelementptr nusw nuw double, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = lshr exact i64 %3, 3
   %5 = and i64 %4, 1

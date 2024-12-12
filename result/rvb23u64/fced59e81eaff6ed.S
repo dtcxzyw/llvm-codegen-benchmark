@@ -1,18 +1,17 @@
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	slli	a0, a0, 4
 	add	a0, a0, a1
 	addi	a0, a0, 32
 	ret
 func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
-	lui	a1, 164
-	add	a0, a0, a1
+	addi	a0, a0, 40
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	sh3add	a0, a0, a1
 	addi	a0, a0, 7
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret

@@ -16,6 +16,14 @@ func000000000000001f:                   # @func000000000000001f
 	orl	%edi, %esi
 	leal	-1073741824(%rax,%rsi), %eax
 	retq
+func000000000000001b:                   # @func000000000000001b
+	testl	%edx, %edx
+	movl	$255, %eax
+	cmovel	%edx, %eax
+	shll	$24, %esi
+	orl	%edi, %esi
+	orl	%esi, %eax
+	retq
 func0000000000000019:                   # @func0000000000000019
 	xorl	%eax, %eax
 	cmpl	$1, %edx

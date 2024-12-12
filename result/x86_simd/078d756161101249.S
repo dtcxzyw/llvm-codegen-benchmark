@@ -32,7 +32,7 @@
 	.short	6                               # 0x6
 	.short	6                               # 0x6
 	.short	6                               # 0x6
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpaddw	.LCPI0_0(%rip), %ymm2, %ymm2
 	vpcmpltuw	.LCPI0_1(%rip), %ymm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0

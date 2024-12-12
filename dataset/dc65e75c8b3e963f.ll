@@ -45,7 +45,7 @@ entry:
   ret i32 %5
 }
 
-; 54 occurrences:
+; 58 occurrences:
 ; arrow/optimized/message.cc.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
@@ -92,10 +92,14 @@ entry:
 ; wireshark/optimized/sequence_dialog.cpp.ll
 ; wireshark/optimized/syntax_line_edit.cpp.ll
 ; yosys/optimized/abc.ll
+; yosys/optimized/shregmap.ll
 ; yosys/optimized/simplify.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; z3/optimized/dl_table.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
@@ -426,6 +430,17 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = trunc nuw i64 %0 to i32
   %5 = sub nsw i32 %4, %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001c(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = trunc nuw nsw i64 %0 to i32
+  %5 = sub i32 %4, %3
   ret i32 %5
 }
 

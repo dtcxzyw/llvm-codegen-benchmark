@@ -1,20 +1,4 @@
 
-; 4 occurrences:
-; ncnn/optimized/gemm_x86.cpp.ll
-; ncnn/optimized/gemm_x86_avx.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_fma.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %1, 3
-  %5 = select i1 %4, i32 %3, i32 %0
-  %6 = add nsw i32 %5, 1
-  %7 = sext i32 %6 to i64
-  ret i64 %7
-}
-
 ; 1 occurrences:
 ; libquic/optimized/x509name.c.ll
 ; Function Attrs: nounwind
@@ -34,7 +18,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000099(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000119(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = icmp slt i32 %1, 1

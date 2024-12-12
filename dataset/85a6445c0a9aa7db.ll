@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -8,13 +8,11 @@
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; regex-rs/optimized/33whcn8n29l9c6ys.ll
 ; regex-rs/optimized/3bb5ih3626n2er1d.ll
 ; regex-rs/optimized/4sqmacerw61c696o.ll
 ; ruby/optimized/bignum.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001e(i64 %0, i64 %1) #0 {
@@ -25,7 +23,7 @@ entry:
   ret i64 %4
 }
 
-; 100 occurrences:
+; 97 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; bdwgc/optimized/gc.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -39,8 +37,6 @@ entry:
 ; folly/optimized/CacheLocality.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
-; folly/optimized/F14Table.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/HeapTimekeeper.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
@@ -52,7 +48,6 @@ entry:
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; linux/optimized/apic.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/ttm_bo_vm.ll
 ; llvm/optimized/xxhash.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; ocio/optimized/HashUtils.cpp.ll
@@ -135,8 +130,44 @@ entry:
   ret i64 %4
 }
 
-; 28 occurrences:
+; 64 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
@@ -168,7 +199,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 6
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 1
   ret i64 %4
 }
@@ -183,7 +214,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = lshr i64 %3, 42
   ret i64 %4
 }
@@ -222,7 +253,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 7
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 1
   ret i64 %4
 }
@@ -254,24 +285,23 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 12
   ret i64 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; spike/optimized/cm_jalt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 12
   ret i64 %4
 }
@@ -283,7 +313,7 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 32
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = lshr i64 %3, 1
   ret i64 %4
 }
@@ -294,7 +324,7 @@ entry:
 define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 6
   ret i64 %4
 }

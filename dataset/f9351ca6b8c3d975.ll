@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
 ; libquic/optimized/cfb64ede.c.ll
 ; openssl/optimized/libcrypto-lib-cfb64ede.ll
 ; openssl/optimized/libcrypto-shlib-cfb64ede.ll
-; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:

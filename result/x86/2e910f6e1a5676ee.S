@@ -1,41 +1,41 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	orq	%r8, %rcx
 	cmpq	%rdx, %rdi
 	sbbq	%rcx, %rsi
 	setl	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	orq	%r8, %rcx
 	cmpq	%rdi, %rdx
 	sbbq	%rsi, %rcx
 	setb	%al
 	retq
-func0000000000000059:                   # @func0000000000000059
+func00000000000000a9:                   # @func00000000000000a9
 	orq	%r8, %rcx
 	cmpq	%rdi, %rdx
 	sbbq	%rsi, %rcx
 	setae	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	orq	%r8, %rcx
 	xorq	%rdx, %rdi
 	xorq	%rsi, %rcx
 	orq	%rdi, %rcx
 	sete	%al
 	retq
-func000000000000005b:                   # @func000000000000005b
+func00000000000000ab:                   # @func00000000000000ab
 	orq	%r8, %rcx
 	cmpq	%rdi, %rdx
 	sbbq	%rsi, %rcx
 	setge	%al
 	retq
-func0000000000000057:                   # @func0000000000000057
+func00000000000000a7:                   # @func00000000000000a7
 	orq	%r8, %rcx
 	cmpq	%rdx, %rdi
 	sbbq	%rcx, %rsi
 	setge	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	shldq	$32, %r8, %r9
 	shlq	$32, %r8
 	orq	%rcx, %r9
@@ -44,7 +44,7 @@ func0000000000000074:                   # @func0000000000000074
 	sbbq	%rsi, %r9
 	setb	%al
 	retq
-func0000000000000079:                   # @func0000000000000079
+func00000000000000e9:                   # @func00000000000000e9
 	shldq	$32, %r8, %r9
 	shlq	$32, %r8
 	orq	%rcx, %r9
@@ -53,14 +53,14 @@ func0000000000000079:                   # @func0000000000000079
 	sbbq	%rsi, %r9
 	setae	%al
 	retq
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	orq	%r8, %rcx
 	xorq	%rdx, %rdi
 	xorq	%rsi, %rcx
 	orq	%rdi, %rcx
 	setne	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	shldq	$1, %r8, %r9
 	addq	%r8, %r8
 	orq	%rdx, %r8
@@ -70,7 +70,7 @@ func0000000000000071:                   # @func0000000000000071
 	orq	%r9, %r8
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addq	%r8, %r8
 	orq	%rcx, %r8
 	xorq	%rdx, %rdi
@@ -78,13 +78,13 @@ func0000000000000011:                   # @func0000000000000011
 	orq	%rdi, %r8
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	orq	%r8, %rcx
 	cmpq	%rdx, %rdi
 	sbbq	%rcx, %rsi
 	setb	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	orq	%r8, %rcx
 	cmpq	%rdi, %rdx
 	sbbq	%rsi, %rcx

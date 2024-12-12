@@ -1,4 +1,4 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	negl	%esi
 	andl	$3, %esi
 	cmpl	%edi, %esi

@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	leal	-9(%rdi), %eax
 	addl	$3, %edi
 	testb	$1, %sil
@@ -7,7 +7,7 @@ func0000000000000014:                   # @func0000000000000014
 	cmpl	$3, %edi
 	sbbl	%eax, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	testb	$1, %sil
 	movl	$-1322, %eax                    # imm = 0xFAD6
 	movl	$-1022, %ecx                    # imm = 0xFC02
@@ -25,7 +25,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	negl	%eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	andl	$1, %esi
 	leal	7(%rdi,%rsi,2), %ecx
 	xorl	%eax, %eax

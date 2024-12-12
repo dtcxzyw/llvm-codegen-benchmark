@@ -1,9 +1,9 @@
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	addi	a2, a2, 6
 	add.uw	a1, a2, a1
 	sub	a0, a1, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	addi	a2, a2, -1
 	slli.uw	a2, a2, 5
 	sub	a0, a1, a0
@@ -15,12 +15,18 @@ func0000000000000010:                   # @func0000000000000010
 	sh2add	a1, a2, a1
 	sub	a0, a1, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func000000000000003c:                   # @func000000000000003c
 	addi	a2, a2, 63
 	li	a3, 1
 	slli	a3, a3, 34
 	addi	a3, a3, -64
 	and	a2, a2, a3
+	sub	a0, a1, a0
+	add	a0, a0, a2
+	ret
+func0000000000000008:                   # @func0000000000000008
+	addi	a2, a2, 63
+	andi	a2, a2, -64
 	sub	a0, a1, a0
 	add	a0, a0, a2
 	ret

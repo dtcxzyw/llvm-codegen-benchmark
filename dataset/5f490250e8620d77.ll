@@ -7,9 +7,9 @@ define i64 @func0000000000000063(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 13
   %4 = icmp ne i64 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = zext i1 %5 to i64
-  %7 = add nuw nsw i64 %6, %0
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -20,9 +20,9 @@ define i64 @func0000000000000060(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 62
   %4 = icmp ne i64 %3, 60
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = zext i1 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

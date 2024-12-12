@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 35 occurrences:
 ; clamav/optimized/upx.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -12,14 +12,12 @@
 ; icu/optimized/uloc.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/udp_offload.ll
 ; llvm/optimized/BreakableToken.cpp.ll
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
-; nuttx/optimized/lib_rdflush_unlocked.c.ll
 ; openjdk/optimized/ciMethod.ll
 ; openjdk/optimized/hb-face-builder.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
@@ -41,7 +39,7 @@
 define i32 @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6

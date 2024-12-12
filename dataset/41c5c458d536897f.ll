@@ -10,7 +10,7 @@ entry:
   ret double %3
 }
 
-; 92 occurrences:
+; 113 occurrences:
 ; abc/optimized/cuddSat.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
@@ -44,6 +44,26 @@ entry:
 ; abseil-cpp/optimized/uniform_helper_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; cpython/optimized/complexobject.ll
 ; cpython/optimized/floatobject.ll
@@ -68,6 +88,7 @@ entry:
 ; hermes/optimized/Number.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
 ; icu/optimized/nfrs.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_exp.c.ll
 ; ocio/optimized/MatrixOpData.cpp.ll
@@ -123,7 +144,7 @@ entry:
   ret double %3
 }
 
-; 34 occurrences:
+; 31 occurrences:
 ; eastl/optimized/Int128_t.cpp.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; hdf5/optimized/h5diff_array.c.ll
@@ -131,9 +152,6 @@ entry:
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/ddisna.c.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlaed6.c.ll
 ; openblas/optimized/dlag2.c.ll
 ; openblas/optimized/dlags2.c.ll

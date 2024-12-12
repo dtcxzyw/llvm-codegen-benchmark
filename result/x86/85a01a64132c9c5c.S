@@ -1,63 +1,77 @@
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000154:                   # @func0000000000000154
 	sarq	$2, %rsi
 	decq	%rsi
 	shrq	%rsi
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	sarq	$2, %rsi
 	decq	%rsi
 	shrq	%rsi
-	cmpq	%rdi, %rsi
-	setg	%al
-	retq
-func00000000000000aa:                   # @func00000000000000aa
-	sarq	$2, %rsi
-	addq	$-2, %rsi
-	shrq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	setl	%al
 	retq
-func00000000000000b1:                   # @func00000000000000b1
+func000000000000014a:                   # @func000000000000014a
 	sarq	$2, %rsi
 	addq	$-2, %rsi
 	shrq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
+	setg	%al
+	retq
+func0000000000000161:                   # @func0000000000000161
+	sarq	$2, %rsi
+	addq	$-2, %rsi
+	shrq	%rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	sarq	%rsi
 	addq	$-2, %rsi
 	shrq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	sarq	$4, %rsi
 	decq	%rsi
 	shrq	%rsi
-	cmpq	%rdi, %rsi
-	setg	%al
+	cmpq	%rsi, %rdi
+	setl	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sarq	$4, %rsi
 	addq	$-2, %rsi
 	shrq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000158:                   # @func0000000000000158
 	sarq	$2, %rsi
 	addq	$-2, %rsi
 	shrq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
+	seta	%al
+	retq
+func0000000000000144:                   # @func0000000000000144
+	sarq	$2, %rsi
+	addq	$1023, %rsi                     # imm = 0x3FF
+	shrq	$10, %rsi
+	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func00000000000000a9:                   # @func00000000000000a9
+func0000000000000148:                   # @func0000000000000148
+	sarq	$2, %rsi
+	addq	$1023, %rsi                     # imm = 0x3FF
+	shrq	$10, %rsi
+	cmpq	%rsi, %rdi
+	seta	%al
+	retq
+func0000000000000149:                   # @func0000000000000149
 	sarq	$32, %rsi
 	addq	$3, %rsi
 	shrq	$2, %rsi
-	cmpq	%rdi, %rsi
-	setbe	%al
+	cmpq	%rsi, %rdi
+	setae	%al
 	retq

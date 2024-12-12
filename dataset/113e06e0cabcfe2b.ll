@@ -39,6 +39,18 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000006a(i64 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i64 %0 to i32
+  %2 = shl nsw i32 %1, 4
+  %3 = sub nsw i32 128, %2
+  %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
 ; icu/optimized/collationweights.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000021(i64 %0) #0 {

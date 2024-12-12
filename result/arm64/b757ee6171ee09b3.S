@@ -1,56 +1,32 @@
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	bic	v2.4h, #255, lsl #8
-	sshr	v0.2d, v0.2d, #6
-	sshr	v1.2d, v1.2d, #6
-	ushll	v2.4s, v2.4h, #0
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmhi	v1.2d, v1.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	asr	x8, x0, #6
+                                        // kill: def $w1 killed $w1 def $x1
+	cmp	x8, w1, uxtb
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	bic	v2.4h, #255, lsl #8
-	sshr	v0.2d, v0.2d, #4
-	sshr	v1.2d, v1.2d, #4
-	ushll	v2.4s, v2.4h, #0
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	asr	x8, x0, #4
+                                        // kill: def $w1 killed $w1 def $x1
+	cmp	x8, w1, uxtb
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	bic	v2.4h, #255, lsl #8
-	sshr	v0.2d, v0.2d, #2
-	sshr	v1.2d, v1.2d, #2
-	ushll	v2.4s, v2.4h, #0
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v1.2d, v2.2d
-	cmeq	v0.2d, v0.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	asr	x8, x0, #2
+                                        // kill: def $w1 killed $w1 def $x1
+	cmp	x8, w1, uxtb
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
-	bic	v2.4h, #255, lsl #8
-	sshr	v0.2d, v0.2d, #3
-	sshr	v1.2d, v1.2d, #3
-	ushll	v2.4s, v2.4h, #0
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmhi	v1.2d, v1.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	asr	x8, x0, #3
+                                        // kill: def $w1 killed $w1 def $x1
+	cmp	x8, w1, uxtb
+	cset	w0, hi
 	ret
                                         // -- End function

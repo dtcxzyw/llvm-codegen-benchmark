@@ -10,12 +10,25 @@ entry:
   ret i1 %2
 }
 
-; 5 occurrences:
+; 3 occurrences:
+; mitsuba3/optimized/volpath.cpp.ll
+; opencv/optimized/intersection.cpp.ll
+; opencv/optimized/warpfield.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(float %0, float %1) #0 {
+entry:
+  %2 = fcmp ult float %0, %1
+  ret i1 %2
+}
+
+; 7 occurrences:
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_tonemap.cc.ll
+; gromacs/optimized/cellsizes.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/types.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
@@ -38,16 +51,6 @@ entry:
 define i1 @func000000000000000d(float %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %0, %1
-  ret i1 %2
-}
-
-; 2 occurrences:
-; opencv/optimized/intersection.cpp.ll
-; opencv/optimized/warpfield.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(float %0, float %1) #0 {
-entry:
-  %2 = fcmp ult float %0, %1
   ret i1 %2
 }
 

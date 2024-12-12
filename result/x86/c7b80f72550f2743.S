@@ -1,5 +1,5 @@
 func0000000000000019:                   # @func0000000000000019
-	leal	(%rdx,%rsi), %eax
+	leal	(%rsi,%rdx), %eax
 	shlq	$32, %rax
 	orq	%rdi, %rax
 	retq

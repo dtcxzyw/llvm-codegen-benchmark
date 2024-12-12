@@ -1,5 +1,5 @@
 
-; 429 occurrences:
+; 452 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -7,6 +7,12 @@
 ; assimp/optimized/D3MFExporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/value_semantic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btSliderConstraint.ll
 ; clamav/optimized/extract.cpp.ll
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
@@ -45,6 +51,7 @@
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/PpScanner.cpp.ll
 ; graphviz/optimized/DotIO.c.ll
+; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/expfit.cpp.ll
 ; gromacs/optimized/filenameoption.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
@@ -174,7 +181,6 @@
 ; llvm/optimized/TailDuplicator.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/VPlanTransforms.cpp.ll
-; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/VirtualFileSystem.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
@@ -182,6 +188,8 @@
 ; llvm/optimized/X86LoadValueInjectionLoadHardening.cpp.ll
 ; luau/optimized/Normalize.cpp.ll
 ; luau/optimized/Type.cpp.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; memcached/optimized/memcached-slab_automove_extstore.ll
 ; memcached/optimized/memcached_debug-slab_automove_extstore.ll
@@ -240,7 +248,6 @@
 ; nori/optimized/textarea.cpp.ll
 ; ocio/optimized/Config.cpp.ll
 ; ocio/optimized/DisplayViewHelpers.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/Processor.cpp.ll
 ; ockam-rs/optimized/4df8gyzy0u3roc94.ll
 ; ockam-rs/optimized/59na08zlxqp9p17s.ll
@@ -271,7 +278,6 @@
 ; openjdk/optimized/verifier.ll
 ; openjdk/optimized/xMark.ll
 ; openjdk/optimized/zMark.ll
-; openmpi/optimized/monitoring_test.ll
 ; openmpi/optimized/schizo_ompi.ll
 ; openmpi/optimized/schizo_prte.ll
 ; openssl/optimized/dtls_mtu_test-bin-dtls_mtu_test.ll
@@ -299,6 +305,7 @@
 ; postgres/optimized/checkpointer.ll
 ; postgres/optimized/clauses.ll
 ; postgres/optimized/describe.ll
+; postgres/optimized/dumputils.ll
 ; postgres/optimized/guc.ll
 ; postgres/optimized/jsonapi.ll
 ; postgres/optimized/jsonapi_shlib.ll
@@ -318,13 +325,9 @@
 ; postgres/optimized/subselect.ll
 ; postgres/optimized/trigger.ll
 ; postgres/optimized/worker.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/crs.cpp.ll
 ; proj/optimized/geodesic.c.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/proj.cpp.ll
 ; proj/optimized/projinfo.cpp.ll
-; qemu/optimized/accel_tcg_tb-maint.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
@@ -355,7 +358,6 @@
 ; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
 ; rust-analyzer-rs/optimized/6geurunh5eorswv.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
-; slurm/optimized/job_features.ll
 ; slurm/optimized/node_scheduler.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; spike/optimized/csrs.ll
@@ -429,6 +431,27 @@
 ; z3/optimized/theory_str.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/1x0js6flb76ylaa82e6lu27uy.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/3hyavwlupfwy674k0u5ll7gv6.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8ncehfng1y5s06ypbycx8606d.ll
+; zed-rs/optimized/8x58xp4s22l8izlb56sviitm3.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/af6h95vv2ntx5gy8rou3f8ag6.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/e0nyk03b5twszr55stktey742.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f4g1cwrteaiub5fsoifj5amxy.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

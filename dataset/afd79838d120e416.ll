@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
@@ -7,6 +7,7 @@
 ; bullet3/optimized/btQuantizedBvh.ll
 ; bullet3/optimized/btRigidBody.ll
 ; bullet3/optimized/btSoftBody.ll
+; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
@@ -47,7 +48,7 @@ define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fdiv float 1.000000e+00, %2
   %4 = select i1 %1, float 6.000000e+02, float %3
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

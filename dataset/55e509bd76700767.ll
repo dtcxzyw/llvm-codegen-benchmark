@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000404(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul i32 %3, 3
@@ -11,7 +11,8 @@ entry:
   ret i1 %6
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -111,7 +112,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000604(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = mul i32 %3, -100
@@ -120,7 +121,8 @@ entry:
   ret i1 %6
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -220,24 +222,12 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000608(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = mul i32 %3, -100
   %5 = add i32 %4, %1
   %6 = icmp ugt i32 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; darktable/optimized/FujiDecompressor.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, 6
-  %5 = add nsw i32 %4, %1
-  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -248,7 +238,7 @@ define i1 @func000000000000000a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 1000
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
@@ -256,7 +246,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 3
@@ -268,7 +258,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000216(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = shl i32 %3, 1
@@ -284,7 +274,7 @@ define i1 @func0000000000000008(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 5
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
@@ -296,7 +286,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 365
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp eq i32 %5, %0
   ret i1 %6
 }

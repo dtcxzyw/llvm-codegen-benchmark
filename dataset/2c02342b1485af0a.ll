@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; gromacs/optimized/surfacearea.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 0
@@ -17,7 +17,7 @@ entry:
 ; hyperscan/optimized/ng_som.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp eq i32 %2, 2

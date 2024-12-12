@@ -1,36 +1,40 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	bic	v3.4h, #255, lsl #8
-	bic	v2.4h, #255, lsl #8
-	ushll	v3.4s, v3.4h, #0
-	ushll	v2.4s, v2.4h, #0
-	uaddw	v0.2d, v0.2d, v3.2s
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw2	v1.2d, v1.2d, v2.4s
-	uaddw	v0.2d, v0.2d, v2.2s
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x0, w2, uxtb
+                                        // kill: def $w1 killed $w1 def $x1
+	add	x0, x8, w1, uxtb
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	bic	v3.4h, #255, lsl #8
-	bic	v2.4h, #255, lsl #8
-	ushll	v3.4s, v3.4h, #0
-	ushll	v2.4s, v2.4h, #0
-	uaddw	v0.2d, v0.2d, v3.2s
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw2	v1.2d, v1.2d, v2.4s
-	uaddw	v0.2d, v0.2d, v2.2s
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x0, w2, uxtb
+                                        // kill: def $w1 killed $w1 def $x1
+	add	x0, x8, w1, uxtb
+	ret
+                                        // -- End function
+func0000000000000030:                   // @func0000000000000030
+// %bb.0:                               // %entry
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x0, w2, uxtb
+                                        // kill: def $w1 killed $w1 def $x1
+	add	x0, x8, w1, uxtb
+	ret
+                                        // -- End function
+func000000000000003f:                   // @func000000000000003f
+// %bb.0:                               // %entry
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x0, w2, uxtb
+                                        // kill: def $w1 killed $w1 def $x1
+	add	x0, x8, w1, uxtb
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	bic	v3.4h, #255, lsl #8
-	bic	v2.4h, #255, lsl #8
-	ushll	v3.4s, v3.4h, #0
-	ushll	v2.4s, v2.4h, #0
-	uaddw	v0.2d, v0.2d, v3.2s
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw2	v1.2d, v1.2d, v2.4s
-	uaddw	v0.2d, v0.2d, v2.2s
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x0, w2, uxtb
+                                        // kill: def $w1 killed $w1 def $x1
+	add	x0, x8, w1, uxtb
 	ret
                                         // -- End function

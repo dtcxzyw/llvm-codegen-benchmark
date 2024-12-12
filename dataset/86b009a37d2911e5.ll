@@ -12,7 +12,8 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/enc.c.ll
 ; openjdk/optimized/relocator.ll
@@ -30,7 +31,9 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/trace_uprobe.ll
@@ -50,7 +53,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -110,7 +113,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }

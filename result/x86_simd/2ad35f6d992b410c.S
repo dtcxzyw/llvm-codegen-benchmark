@@ -8,7 +8,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 .LCPI1_0:
 	.long	16                              # 0x10
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	vptestmd	%xmm0, %xmm0, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [16,16,16,16]
 	vpaddd	%xmm0, %xmm1, %xmm2 {%k1}
@@ -16,7 +16,7 @@ func0000000000000063:                   # @func0000000000000063
 	retq
 .LCPI2_0:
 	.long	2147483647                      # 0x7fffffff
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpneqd	%xmm2, %xmm0, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2   # xmm2 = [2147483647,2147483647,2147483647,2147483647]

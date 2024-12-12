@@ -12,7 +12,23 @@ entry:
   ret i8 %4
 }
 
-; 3 occurrences:
+; 19 occurrences:
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
+; lvgl/optimized/lv_draw_sw_mask_rect.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_span.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmulhu_vv.ll
 ; spike/optimized/vmulhu_vx.ll

@@ -4,7 +4,7 @@
 	.quad	40                              # 0x28
 .LCPI0_2:
 	.quad	32                              # 0x20
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpltuq	.LCPI0_1(%rip){1to4}, %ymm1, %k0

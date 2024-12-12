@@ -13,6 +13,6 @@ func0000000000000008:                   # @func0000000000000008
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpneqps	%zmm3, %zmm2, %k1
 	vmovaps	%zmm1, %zmm1 {%k1} {z}
-	vmulps	%zmm0, %zmm1, %zmm0
+	vmulps	%zmm1, %zmm0, %zmm0
 	vaddps	.LCPI1_0(%rip){1to16}, %zmm0, %zmm0
 	retq

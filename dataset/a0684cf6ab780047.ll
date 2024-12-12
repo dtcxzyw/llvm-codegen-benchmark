@@ -24,7 +24,8 @@ entry:
   ret ptr %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; gromacs/optimized/lmmin.cpp.ll
 ; hyperscan/optimized/scratch.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; openjdk/optimized/pngrtran.ll
@@ -32,11 +33,11 @@ entry:
 ; ozz-animation/optimized/track.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -63,6 +64,17 @@ entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 %2
+  ret ptr %4
+}
+
+; 1 occurrences:
+; gromacs/optimized/lmmin.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   ret ptr %4
 }
 

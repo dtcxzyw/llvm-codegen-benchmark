@@ -22,7 +22,7 @@
 define i1 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 4
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
@@ -43,7 +43,7 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/kitPla.c.ll
 ; git/optimized/pretty.ll
@@ -51,12 +51,27 @@ entry:
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/mvref_common.c.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 110
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
+  %4 = freeze i1 %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; redis/optimized/sds.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i8 %1, 1
+  %3 = and i1 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }

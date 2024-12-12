@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/utilSort.c.ll
@@ -44,6 +44,7 @@
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/ODReader.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll
@@ -238,19 +239,6 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %0 to i64
   %6 = shl nuw nsw i64 %5, 32
-  %7 = or disjoint i64 %6, %4
-  ret i64 %7
-}
-
-; 1 occurrences:
-; openspiel/optimized/2048.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = zext i32 %0 to i64
-  %6 = shl nuw nsw i64 %5, 2
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }

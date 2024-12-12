@@ -8,12 +8,12 @@ func0000000000000008:                   # @func0000000000000008
 	mulw	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	sext.w	a0, a0
 	mulw	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	sext.w	a0, a0
 	mulw	a1, a1, a2
 	sltu	a0, a1, a0
@@ -24,18 +24,23 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	mulw	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	sext.w	a0, a0
 	mulw	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000198:                   # @func0000000000000198
+	sext.w	a0, a0
+	mulw	a1, a1, a2
+	sltu	a0, a1, a0
+	ret
+func0000000000000188:                   # @func0000000000000188
 	sext.w	a0, a0
 	mulw	a1, a1, a2
 	sltu	a0, a1, a0
@@ -51,7 +56,7 @@ func0000000000000006:                   # @func0000000000000006
 	mulw	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	sext.w	a0, a0
 	mulw	a1, a1, a2
 	xor	a0, a0, a1
@@ -63,12 +68,12 @@ func0000000000000007:                   # @func0000000000000007
 	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	sext.w	a0, a0
 	mulw	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	sext.w	a0, a0
 	mulw	a1, a1, a2
 	slt	a0, a1, a0

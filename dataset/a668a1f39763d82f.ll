@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 22 occurrences:
 ; bullet3/optimized/btMultiBodySphericalJointLimit.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; graphviz/optimized/quad_prog_solve.c.ll
@@ -18,6 +18,10 @@
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; raylib/optimized/rtextures.c.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

@@ -166,8 +166,7 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
-; linux/optimized/scsicam.ll
+; 4 occurrences:
 ; linux/optimized/tree.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
 ; ncnn/optimized/convolution1d_x86_fma.cpp.ll

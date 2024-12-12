@@ -10,7 +10,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestmd	%ymm2, %ymm1, %k1
-	kxorb	%k0, %k1, %k0
+	kxorb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

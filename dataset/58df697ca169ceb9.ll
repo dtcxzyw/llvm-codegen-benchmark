@@ -7,11 +7,11 @@
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c5(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000d85(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967292
   %4 = icmp ne i64 %3, 0
-  %5 = getelementptr nusw i8, ptr %1, i64 10
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 10
   %6 = icmp ule ptr %5, %0
   %7 = and i1 %6, %4
   ret i1 %7
@@ -21,11 +21,11 @@ entry:
 ; libdeflate/optimized/adler32.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000d8c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
   %4 = icmp ne i64 %3, 0
-  %5 = getelementptr nusw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
   %6 = icmp ne ptr %5, %0
   %7 = and i1 %6, %4
   ret i1 %7
@@ -34,11 +34,11 @@ entry:
 ; 1 occurrences:
 ; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000d84(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp ne i64 %3, 0
-  %5 = getelementptr nusw i8, ptr %1, i64 3
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 3
   %6 = icmp ult ptr %5, %0
   %7 = and i1 %6, %4
   ret i1 %7

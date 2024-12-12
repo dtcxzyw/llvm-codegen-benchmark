@@ -16,7 +16,7 @@ entry:
   ret i32 %4
 }
 
-; 146 occurrences:
+; 144 occurrences:
 ; abc/optimized/inflate.c.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; clamav/optimized/inflate64.c.ll
@@ -127,8 +127,6 @@ entry:
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/pngset.ll
-; openssl/optimized/libssl-lib-s3_msg.ll
-; openssl/optimized/libssl-shlib-s3_msg.ll
 ; php/optimized/pcre2_compile.ll
 ; postgres/optimized/initdb.ll
 ; postgres/optimized/parse_cte.ll
@@ -166,33 +164,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
-  %2 = icmp eq i32 %0, 70
+  %2 = icmp eq i32 %0, 1
   %3 = select i1 %1, i1 %2, i1 false
-  %4 = select i1 %3, i32 40, i32 %0
-  ret i32 %4
-}
-
-; 2 occurrences:
-; icu/optimized/umutablecptrie.ll
-; php/optimized/pcre2_compile.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i1 %1) #0 {
-entry:
-  %2 = icmp slt i32 %0, 3
-  %3 = select i1 %1, i1 %2, i1 false
-  %4 = select i1 %3, i32 0, i32 %0
-  ret i32 %4
-}
-
-; 2 occurrences:
-; icu/optimized/decNumber.ll
-; jq/optimized/decNumber.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i1 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %0, 0
-  %3 = select i1 %1, i1 %2, i1 false
-  %4 = select i1 %3, i32 -1999999998, i32 %0
+  %4 = select i1 %3, i32 4, i32 %0
   ret i32 %4
 }
 

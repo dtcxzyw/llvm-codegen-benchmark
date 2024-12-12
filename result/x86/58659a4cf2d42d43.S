@@ -17,7 +17,7 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000004:                   # @func0000000000000004
 	movl	%edx, %ecx
 	movl	%esi, %eax
-	decl	%ecx
+	incl	%ecx
 	cltd
 	idivl	%ecx
 	leal	(%rdx,%rdi), %eax

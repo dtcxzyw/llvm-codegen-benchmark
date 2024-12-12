@@ -20,9 +20,9 @@ entry:
 define i32 @func0000000000000011(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 3
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i32 64, i32 0
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

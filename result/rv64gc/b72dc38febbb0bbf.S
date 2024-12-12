@@ -64,12 +64,19 @@ func00000000000000a4:                   # @func00000000000000a4
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
-.LCPI8_0:
-	.word	0x3727c5ac                      # float 9.99999974E-6
-func0000000000000044:                   # @func0000000000000044
+func00000000000000c4:                   # @func00000000000000c4
 	sext.w	a0, a0
-	lui	a1, %hi(.LCPI8_0)
-	flw	fa5, %lo(.LCPI8_0)(a1)
+	fmv.w.x	fa5, zero
+	snez	a0, a0
+	flt.s	a1, fa5, fa0
+	and	a0, a0, a1
+	ret
+.LCPI9_0:
+	.word	0x3727c5ac                      # float 9.99999974E-6
+func0000000000000144:                   # @func0000000000000144
+	sext.w	a0, a0
+	lui	a1, %hi(.LCPI9_0)
+	flw	fa5, %lo(.LCPI9_0)(a1)
 	lui	a1, 24
 	addiw	a1, a1, 1696
 	sltu	a0, a0, a1
@@ -107,6 +114,15 @@ func0000000000000018:                   # @func0000000000000018
 	feq.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
+func0000000000000016:                   # @func0000000000000016
+	sext.w	a0, a0
+	lui	a1, 522240
+	addi	a0, a0, -5
+	fmv.w.x	fa5, a1
+	seqz	a0, a0
+	flt.s	a1, fa0, fa5
+	and	a0, a0, a1
+	ret
 func00000000000000a2:                   # @func00000000000000a2
 	sext.w	a0, a0
 	lui	a1, 260096
@@ -122,17 +138,6 @@ func00000000000000a6:                   # @func00000000000000a6
 	sgtz	a0, a0
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
-	and	a0, a0, a1
-	ret
-.LCPI15_0:
-	.word	0x3e4ccccd                      # float 0.200000003
-func00000000000000c4:                   # @func00000000000000c4
-	lui	a1, %hi(.LCPI15_0)
-	flw	fa5, %lo(.LCPI15_0)(a1)
-	sext.w	a0, a0
-	addi	a0, a0, -8
-	snez	a0, a0
-	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c

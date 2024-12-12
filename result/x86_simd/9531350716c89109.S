@@ -30,5 +30,5 @@ func0000000000000003:                   # @func0000000000000003
 	vpbroadcastd	.LCPI1_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [64,64,64,64,64,64,64,64]
 	vpcmpeqd	.LCPI1_2(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI1_3(%rip), %ymm2 {%k1} # ymm2 {%k1} = [8,8,8,8,8,8,8,8]
-	vpor	%ymm0, %ymm2, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	retq

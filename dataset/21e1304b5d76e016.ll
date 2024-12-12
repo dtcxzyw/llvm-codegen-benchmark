@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
@@ -7,7 +7,6 @@
 ; openusd/optimized/blackbody.cpp.ll
 ; pbrt-v4/optimized/lightsamplers.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
-; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, i1 %1, float %2) #0 {
 entry:

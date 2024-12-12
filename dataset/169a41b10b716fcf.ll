@@ -1,15 +1,13 @@
 
-; 26 occurrences:
+; 24 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/huf_decompress.ll
-; linux/optimized/ip6_checksum.ll
 ; linux/optimized/ip6_input.ll
 ; linux/optimized/ip_sockglue.ll
 ; linux/optimized/ipconfig.ll
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/probe_roms.ll
 ; linux/optimized/reassembly.ll
 ; linux/optimized/xfrm6_input.ll
 ; postgres/optimized/spgxlog.ll
@@ -36,7 +34,7 @@ entry:
   ret ptr %6
 }
 
-; 42 occurrences:
+; 43 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/unzip.c.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -75,17 +73,18 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; nghttp2/optimized/url_parser.c.ll
+; openjdk/optimized/zip_util.ll
 ; openusd/optimized/zipFile.cpp.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; wolfssl/optimized/tls.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i16 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -108,12 +107,12 @@ entry:
 ; node/optimized/simdutf.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   %5 = zext nneg i16 %1 to i64
-  %6 = getelementptr nusw ptr, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %4, i64 %5
   ret ptr %6
 }
 

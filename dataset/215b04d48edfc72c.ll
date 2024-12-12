@@ -11,7 +11,7 @@
 ; php/optimized/tm2unixtime.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, 2000000000
   %3 = icmp slt i64 %1, 0
@@ -19,7 +19,7 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 16 occurrences:
 ; cpython/optimized/_pickle.ll
 ; linux/optimized/ioremap.ll
 ; linux/optimized/vmalloc.ll
@@ -31,6 +31,11 @@ entry:
 ; openssl/optimized/libcrypto-shlib-scalar.ll
 ; smol-rs/optimized/1p7wu8w0t94kgeq2.ll
 ; smol-rs/optimized/21eidrukyvr99qqv.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -48,7 +53,7 @@ entry:
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
 ; postgres/optimized/xlog.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, 4
   %3 = icmp ult i64 %1, 4096
@@ -64,7 +69,7 @@ entry:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; spike/optimized/f16_sqrt.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, 7
   %3 = icmp eq i64 %1, 0
@@ -76,7 +81,7 @@ entry:
 ; libevent/optimized/http.c.ll
 ; php/optimized/tm2unixtime.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, 2
   %3 = icmp sgt i64 %1, 5
@@ -93,7 +98,7 @@ entry:
 ; postgres/optimized/xlog.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, -4293984256
   %3 = icmp ugt i64 %1, 65520
@@ -104,7 +109,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/archive-zip.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, 8
   %3 = icmp ugt i64 %1, 4294967294
@@ -118,18 +123,18 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/s_mulAddF64.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
 ; 1 occurrences:
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003c(i64 %0, i64 %1) #0 {
+define i64 @func000000000000006c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, 16
   %.not = icmp eq i64 %1, 0
@@ -140,7 +145,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/tng_io.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i64 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, 16
   %3 = icmp sgt i64 %1, 1
@@ -156,7 +161,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %.lobit = ashr i64 %1, 63
-  %2 = add i64 %.lobit, %0
+  %2 = add i64 %0, %.lobit
   ret i64 %2
 }
 
@@ -164,10 +169,10 @@ entry:
 ; linux/optimized/bts.ll
 ; linux/optimized/timer.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, -24
-  %3 = icmp ugt i64 %1, 24
+  %3 = icmp samesign ugt i64 %1, 24
   %4 = select i1 %3, i64 %2, i64 %0
   ret i64 %4
 }
@@ -175,7 +180,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/typeobject.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %0, 9223372036854775807
   %3 = icmp eq i64 %1, 0

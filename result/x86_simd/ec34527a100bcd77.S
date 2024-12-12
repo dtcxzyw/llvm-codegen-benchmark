@@ -27,7 +27,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rax

@@ -1,5 +1,5 @@
 
-; 932 occurrences:
+; 935 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; abc/optimized/wlcNtk.c.ll
@@ -7,6 +7,7 @@
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/float16.cc.ll
 ; arrow/optimized/utf8.cc.ll
+; boost/optimized/test_codecvt.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
 ; c3c/optimized/ast.c.ll
@@ -28,7 +29,6 @@
 ; clamav/optimized/phishcheck.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; cmake/optimized/cf-h1-proxy.c.ll
-; cmake/optimized/cmELF.cxx.ll
 ; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/json_value.cpp.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
@@ -146,9 +146,7 @@
 ; linux/optimized/gro.ll
 ; linux/optimized/hbm.ll
 ; linux/optimized/i2c-core-smbus.ll
-; linux/optimized/i8237.ll
 ; linux/optimized/ich8lan.ll
-; linux/optimized/intel-agp.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_fbc.ll
@@ -157,7 +155,6 @@
 ; linux/optimized/io_uring.ll
 ; linux/optimized/ip6_fib.ll
 ; linux/optimized/ip6_input.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/mempolicy.ll
@@ -521,13 +518,11 @@
 ; llvm/optimized/PrintPasses.cpp.ll
 ; llvm/optimized/ProfileSummaryBuilder.cpp.ll
 ; llvm/optimized/ProfileSummaryInfo.cpp.ll
-; llvm/optimized/PtrTypesSemantics.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -704,6 +699,10 @@
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
 ; luau/optimized/UnwindBuilderWin.cpp.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_spinbox.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
@@ -770,8 +769,6 @@
 ; node/optimized/libnode.node_messaging.ll
 ; node/optimized/simdutf.ll
 ; nuttx/optimized/fs_mount.c.ll
-; nuttx/optimized/fs_registerblockdriver.c.ll
-; nuttx/optimized/fs_registerdriver.c.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; nuttx/optimized/lib_uuid_create.c.ll
 ; nuttx/optimized/mq_open.c.ll
@@ -811,7 +808,6 @@
 ; oiio/optimized/tiffoutput.cpp.ll
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openexr/optimized/ImfAcesFile.cpp.ll
 ; openexr/optimized/ImfCRgbaFile.cpp.ll
 ; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
@@ -852,7 +848,6 @@
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -932,6 +927,14 @@
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/smt_enode.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0) #0 {
 entry:

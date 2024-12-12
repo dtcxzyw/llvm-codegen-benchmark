@@ -1,4 +1,4 @@
-func0000000000000371:                   # @func0000000000000371
+func00000000000006e1:                   # @func00000000000006e1
 	vpsraq	$3, %ymm2, %ymm2
 	vpsraq	$3, %ymm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -8,7 +8,7 @@ func0000000000000371:                   # @func0000000000000371
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000361:                   # @func0000000000000361
+func00000000000006c1:                   # @func00000000000006c1
 	vpsraq	$3, %ymm2, %ymm2
 	vpsraq	$3, %ymm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1

@@ -6,7 +6,7 @@
 ; slurm/optimized/acct_gather_profile.ll
 ; slurm/optimized/gres.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(ptr %0, i1 %1) #0 {
+define i32 @func0000000000000021(ptr %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 0, i32 4
   %3 = or disjoint i32 %2, 16

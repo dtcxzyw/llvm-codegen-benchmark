@@ -21,10 +21,18 @@ func0000000000000030:                   // @func0000000000000030
 	add	x0, x8, x9
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	mul	x8, x2, x1
 	and	x9, x1, #0xc
+	add	x8, x0, x8, lsl #3
+	add	x0, x8, x9, lsl #3
+	ret
+                                        // -- End function
+func000000000000001b:                   // @func000000000000001b
+// %bb.0:                               // %entry
+	mul	x8, x2, x1
+	and	x9, x1, #0x1ffffffffffffffc
 	add	x8, x0, x8, lsl #3
 	add	x0, x8, x9, lsl #3
 	ret

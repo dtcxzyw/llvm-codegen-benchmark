@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cecSolveG.c.ll
 ; abc/optimized/wlnRead.c.ll
@@ -16,6 +16,7 @@
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; redis/optimized/emap.ll
 ; redis/optimized/emap.sym.ll

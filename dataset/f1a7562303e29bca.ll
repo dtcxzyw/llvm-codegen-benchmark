@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000128(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000248(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp uge i64 %2, %1
   %4 = icmp ult i64 %1, 5

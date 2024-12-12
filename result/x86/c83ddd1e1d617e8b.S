@@ -23,8 +23,3 @@ func000000000000000c:                   # @func000000000000000c
 	xorl	%edx, %edx
 	divl	%edi
 	retq
-func0000000000000009:                   # @func0000000000000009
-	movq	%rsi, %rax
-	xorl	%edx, %edx
-	divl	%edi
-	retq

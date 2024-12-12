@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; openjdk/optimized/mlib_ImageClipping.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
@@ -59,8 +60,7 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
+; 2 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/State.cpp.ll
 ; Function Attrs: nounwind

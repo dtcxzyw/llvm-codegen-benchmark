@@ -1,9 +1,9 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	notl	%esi
-	andl	$2, %esi
+	andl	$4, %esi
 	leaq	(%rdi,%rsi,4), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	addl	%esi, %esi
 	andl	$6, %esi
 	xorl	$4, %esi

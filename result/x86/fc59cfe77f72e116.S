@@ -1,11 +1,11 @@
-func0000000000000121:                   # @func0000000000000121
+func0000000000000241:                   # @func0000000000000241
 	cmpl	$61, %edi
 	setae	%al
 	retq
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000341:                   # @func0000000000000341
 	xorl	%eax, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movl	$16, %eax
 	shlxq	%rdi, %rax, %rax
 	addl	$63, %eax
@@ -13,7 +13,7 @@ func0000000000000034:                   # @func0000000000000034
 	cmpl	$4097, %eax                     # imm = 0x1001
 	setb	%al
 	retq
-func0000000000000134:                   # @func0000000000000134
+func0000000000000274:                   # @func0000000000000274
 	movl	$16, %eax
 	shlxq	%rdi, %rax, %rax
 	addl	$63, %eax

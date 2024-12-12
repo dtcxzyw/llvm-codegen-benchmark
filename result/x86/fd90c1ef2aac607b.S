@@ -1,8 +1,8 @@
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	shrl	$3, %esi
 	andl	$63, %esi
 	movl	$64, %eax
 	subl	%esi, %eax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq

@@ -1,6 +1,5 @@
 
-; 28 occurrences:
-; c3c/optimized/sema_expr.c.ll
+; 26 occurrences:
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -23,7 +22,6 @@
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
-; spike/optimized/f16_classify.ll
 ; spike/optimized/f16_roundToInt.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-http.c.ll
@@ -31,13 +29,13 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 56
-  %3 = icmp eq i16 %2, 0
-  %4 = and i1 %3, %0
+  %2 = and i16 %1, 31744
+  %3 = icmp eq i16 %2, 14336
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; hermes/optimized/CommandLine.cpp.ll
 ; linux/optimized/nsarguments.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -45,25 +43,15 @@ entry:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/Mangler.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; wireshark/optimized/packet-http.c.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 96
-  %3 = icmp ne i16 %2, 64
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-ieee80211-radio.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 224
-  %3 = icmp ult i16 %2, 160
+  %2 = and i16 %1, 240
+  %3 = icmp ne i16 %2, 0
   %4 = and i1 %3, %0
   ret i1 %4
 }

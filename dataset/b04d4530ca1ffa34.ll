@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 45 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
@@ -38,6 +38,13 @@
 ; mold/optimized/mapfile.cc.SPARC64.cc.ll
 ; mold/optimized/mapfile.cc.X86_64.cc.ll
 ; mold/optimized/perf.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -53,7 +60,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = or disjoint i64 %3, 1
   ret i64 %4
 }
@@ -64,7 +71,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = or i64 %3, 128
   ret i64 %4
 }

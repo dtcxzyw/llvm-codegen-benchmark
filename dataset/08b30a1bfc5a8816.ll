@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 50 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -47,6 +47,8 @@
 ; wireshark/optimized/packet-xra.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
@@ -54,7 +56,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -81,8 +83,8 @@ define i32 @func000000000000001d(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or disjoint i32 %4, %1
-  %6 = add nsw i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -111,8 +113,8 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %1
-  %6 = add i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -167,8 +169,8 @@ define i32 @func000000000000001c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %4, %1
-  %6 = add i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -200,7 +202,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 4
   %5 = or i32 %4, %1
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -213,7 +215,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }

@@ -1,5 +1,13 @@
 
-; 184 occurrences:
+%"struct.folly::symbolizer::SymbolizedFrame.2683664" = type { i8, i64, ptr, %"struct.folly::symbolizer::LocationInfo.2683665", %"class.std::shared_ptr.2683666" }
+%"struct.folly::symbolizer::LocationInfo.2683665" = type { i8, i8, %"class.folly::symbolizer::Path.2683667", %"class.folly::symbolizer::Path.2683667", i64 }
+%"class.folly::symbolizer::Path.2683667" = type { %"class.folly::Range.2683668", %"class.folly::Range.2683668", %"class.folly::Range.2683668" }
+%"class.folly::Range.2683668" = type { ptr, ptr }
+%"class.std::shared_ptr.2683666" = type { %"class.std::__shared_ptr.2683669" }
+%"class.std::__shared_ptr.2683669" = type { ptr, %"class.std::__shared_count.2683670" }
+%"class.std::__shared_count.2683670" = type { ptr }
+
+; 181 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
@@ -32,14 +40,11 @@
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; faiss/optimized/pq4_fast_scan_search_1.cpp.ll
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
-; folly/optimized/Symbolizer.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -64,12 +69,12 @@
 ; opencv/optimized/face_detection_mtcnn.cpp.ll
 ; openjdk/optimized/hb-ot-cff1-table.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
+; openspiel/optimized/PBN.cpp.ll
+; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Maps.cc.ll
 ; php/optimized/crypt_blowfish.ll
 ; php/optimized/crypt_sha512.ll
 ; php/optimized/pcre2_match.ll
-; php/optimized/random.ll
-; php/optimized/string.ll
 ; raylib/optimized/raudio.c.ll
 ; spike/optimized/add64.ll
 ; spike/optimized/amocas_d.ll
@@ -185,11 +190,28 @@
 ; wolfssl/optimized/internal.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr nusw i8, ptr %0, i64 24
-  %4 = getelementptr nusw [256 x i8], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 24
+  %4 = getelementptr nusw nuw [256 x i8], ptr %3, i64 0, i64 %2
+  ret ptr %4
+}
+
+; 7 occurrences:
+; darktable/optimized/introspection_colorzones.c.ll
+; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
+; folly/optimized/Symbolizer.cpp.ll
+; php/optimized/random.ll
+; php/optimized/string.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+entry:
+  %2 = or disjoint i64 %1, 1
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 808
+  %4 = getelementptr nusw [100 x %"struct.folly::symbolizer::SymbolizedFrame.2683664"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -202,11 +224,11 @@ entry:
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
   %3 = getelementptr i8, ptr %0, i64 11
-  %4 = getelementptr nusw [4 x i8], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [4 x i8], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -225,10 +247,10 @@ entry:
 ; wireshark/optimized/ems.c.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr nusw i8, ptr %0, i64 8552
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 8552
   %4 = getelementptr [49152 x i8], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
@@ -244,18 +266,6 @@ entry:
   %2 = or disjoint i64 %1, 1
   %3 = getelementptr i8, ptr %0, i64 -1
   %4 = getelementptr [512 x i8], ptr %3, i64 0, i64 %2
-  ret ptr %4
-}
-
-; 2 occurrences:
-; openspiel/optimized/PBN.cpp.ll
-; openusd/optimized/openexr-c.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = or disjoint i64 %1, 1
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 399296
-  %4 = getelementptr nusw [65536 x i16], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

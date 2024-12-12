@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 74 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/ACLoader.cpp.ll
@@ -48,6 +48,7 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/work_stealing.ll
 ; ceres/optimized/evaluator.cc.ll
 ; ceres/optimized/problem_impl.cc.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -110,13 +111,14 @@ entry:
   ret i64 %3
 }
 
-; 115 occurrences:
+; 140 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/MakeVerboseFormat.cpp.ll
 ; assimp/optimized/ProcessHelper.cpp.ll
 ; assimp/optimized/SMDLoader.cpp.ll
 ; assimp/optimized/STLLoader.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/src.ll
 ; c3c/optimized/llvm_codegen_stmt.c.ll
 ; ceres/optimized/evaluator.cc.ll
 ; ceres/optimized/problem_impl.cc.ll
@@ -160,7 +162,6 @@ entry:
 ; linux/optimized/reg.ll
 ; linux/optimized/utcopy.ll
 ; llvm/optimized/APValue.cpp.ll
-; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/AttrImpl.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
@@ -169,15 +170,12 @@ entry:
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/HeaderMap.cpp.ll
 ; llvm/optimized/InterleavedLoadCombinePass.cpp.ll
-; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/Minidump.cpp.ll
 ; llvm/optimized/Pointer.cpp.ll
 ; llvm/optimized/RegBankSelect.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
@@ -226,6 +224,34 @@ entry:
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/0e9rir1vw7pjj8ded1rj85jpj.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/0x2swxz4m93xo6c0jggy1zzvx.ll
+; zed-rs/optimized/20kfz4gqlv1t1gmkf0vxm6kb9.ll
+; zed-rs/optimized/35m4w66vj9d6yjwnspezb0ps3.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/3k8x435wqn3srsqrie72arxas.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4s90nryp2sd1isdzx27flv90w.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/6zt9ww89yilumcojq3reahb5l.ll
+; zed-rs/optimized/71k8ury3588uqug79u2rdi0ed.ll
+; zed-rs/optimized/77ogqz9engf51b7te1l766i6q.ll
+; zed-rs/optimized/8r5u9ao6qkcy5gha5pe8bos87.ll
+; zed-rs/optimized/8xwgf3aybfacqh70ylmbrh1fx.ll
+; zed-rs/optimized/a0mwohwi8w2ksrje9uu757r3h.ll
+; zed-rs/optimized/ayy5pqcx1yuz6kdx9ooq2ruee.ll
+; zed-rs/optimized/b6ps497cu7xjd0as5oqedkmfl.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/cduevwc35y9sft7fkag2yiivm.ll
+; zed-rs/optimized/ch3ywh4ed1oz4ae4c1dkspuyz.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/dyu8ahcv7l11k0z44ye6uqxem.ll
+; zed-rs/optimized/ee1yr8tj4rkowsicwkrwxirqa.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0) #0 {
 entry:
@@ -235,26 +261,10 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
-; llvm/optimized/APINotesReader.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/X86DomainReassignment.cpp.ll
-; openjdk/optimized/cpCache.ll
-; stockfish/optimized/position.ll
-; stockfish/optimized/search.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i32 %0) #0 {
-entry:
-  %1 = zext nneg i32 %0 to i64
-  %2 = mul i64 %1, 12884901888
-  %3 = add i64 %2, 20937965568
-  ret i64 %3
-}
-
-; 27 occurrences:
+; 28 occurrences:
+; boost/optimized/src.ll
 ; cpython/optimized/tracemalloc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; darktable/optimized/pdf.c.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; jemalloc/optimized/sec.ll
@@ -273,7 +283,8 @@ entry:
 ; llvm/optimized/CGException.cpp.ll
 ; nuttx/optimized/fs_epoll.c.ll
 ; openjdk/optimized/cpCache.ll
-; openspiel/optimized/euchre.cc.ll
+; openssl/optimized/libcrypto-lib-property_parse.ll
+; openssl/optimized/libcrypto-shlib-property_parse.ll
 ; postgres/optimized/brin_tuple.ll
 ; postgres/optimized/mcv.ll
 ; redis/optimized/sec.ll
@@ -284,7 +295,23 @@ define i64 @func000000000000001f(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = mul nuw nsw i64 %1, 24
-  %3 = add nuw nsw i64 %2, 39
+  %3 = add nuw nsw i64 %2, 32
+  ret i64 %3
+}
+
+; 6 occurrences:
+; llvm/optimized/APINotesReader.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/X86DomainReassignment.cpp.ll
+; openjdk/optimized/cpCache.ll
+; stockfish/optimized/position.ll
+; stockfish/optimized/search.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i32 %0) #0 {
+entry:
+  %1 = zext nneg i32 %0 to i64
+  %2 = mul i64 %1, 12884901888
+  %3 = add i64 %2, 20937965568
   ret i64 %3
 }
 

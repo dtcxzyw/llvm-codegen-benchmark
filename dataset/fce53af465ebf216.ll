@@ -1,10 +1,8 @@
 
-; 3 occurrences:
+; 1 occurrences:
 ; openjdk/optimized/compilerOracle.ll
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000584(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 274894688256
   %3 = icmp ne i64 %2, 0
@@ -14,15 +12,14 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
-; clamav/optimized/crc.cpp.ll
+; 5 occurrences:
 ; cmake/optimized/crc32.c.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
 ; zlib/optimized/crc32.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = icmp ne i64 %2, 0
@@ -34,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 17592186044416
   %3 = icmp eq i64 %2, 0
@@ -48,7 +45,7 @@ entry:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000424(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2251795519242239
   %3 = icmp eq i64 %2, 0

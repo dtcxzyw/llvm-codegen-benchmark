@@ -3,35 +3,35 @@ func0000000000000100:                   # @func0000000000000100
 	shll	$4, %esi
 	leaq	4(%rdi,%rsi), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	subl	%edx, %esi
 	shll	$2, %esi
 	leaq	1(%rdi,%rsi), %rax
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func00000000000000ac:                   # @func00000000000000ac
 	subl	%edx, %esi
 	addl	%esi, %esi
 	leaq	1(%rdi,%rsi), %rax
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000af:                   # @func00000000000000af
 	subl	%edx, %esi
 	addl	%esi, %esi
 	leaq	1(%rdi,%rsi), %rax
 	retq
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000000ff:                   # @func00000000000000ff
 	subl	%edx, %esi
 	leaq	2(%rdi,%rsi,2), %rax
 	retq
-func00000000000001fa:                   # @func00000000000001fa
+func00000000000001ff:                   # @func00000000000001ff
 	subl	%edx, %esi
 	shll	$5, %esi
 	leaq	1(%rdi,%rsi), %rax
 	retq
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	subl	%edx, %esi
 	leaq	1(%rdi,%rsi,2), %rax
 	retq
-func000000000000010a:                   # @func000000000000010a
+func000000000000010f:                   # @func000000000000010f
 	subl	%edx, %esi
 	addl	%esi, %esi
 	leaq	1(%rdi,%rsi), %rax

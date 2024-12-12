@@ -15,6 +15,15 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0) #0 {
+entry:
+  %1 = shl i64 %0, 4
+  ret i64 %1
+}
+
+; 1 occurrences:
 ; graphviz/optimized/emit.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i64 %0) #0 {

@@ -40,8 +40,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; libquic/optimized/ntt.c.ll
+; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {

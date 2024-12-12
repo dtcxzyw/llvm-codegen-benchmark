@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; linux/optimized/intel_audio.ll
+; 5 occurrences:
 ; linux/optimized/intel_tv.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; openjdk/optimized/cmsintrp.ll

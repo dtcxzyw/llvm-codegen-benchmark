@@ -1,14 +1,18 @@
 
-; 4 occurrences:
+%"class.llvm::SmallVector.1346.3148529" = type { %"class.llvm::SmallVectorImpl.1212.3148505", %"struct.llvm::SmallVectorStorage.1347.3148530" }
+%"class.llvm::SmallVectorImpl.1212.3148505" = type { %"class.llvm::SmallVectorTemplateBase.1213.3148507" }
+%"class.llvm::SmallVectorTemplateBase.1213.3148507" = type { %"class.llvm::SmallVectorTemplateCommon.1214.3148508" }
+%"class.llvm::SmallVectorTemplateCommon.1214.3148508" = type { %"class.llvm::SmallVectorBase.3148468" }
+%"class.llvm::SmallVectorBase.3148468" = type { ptr, i32, i32 }
+%"struct.llvm::SmallVectorStorage.1347.3148530" = type { [32 x i8] }
+
+; 1 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
-; gromacs/optimized/redistribute.cpp.ll
-; llvm/optimized/CGObjCMac.cpp.ll
-; tree-sitter-rs/optimized/3w8fnbh84xi9yzxl.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = getelementptr nusw [4 x float], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [4 x float], ptr %0, i64 0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -28
   ret ptr %5
 }
@@ -16,10 +20,32 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = getelementptr [0 x { [16 x i16] }], ptr %0, i64 0, i64 %3, i32 0, i64 15
+  ret ptr %4
+}
+
+; 3 occurrences:
+; gromacs/optimized/redistribute.cpp.ll
+; llvm/optimized/CGObjCMac.cpp.ll
+; llvm/optimized/MveEmitter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = getelementptr nuw [4 x %"class.llvm::SmallVector.1346.3148529"], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
+}
+
+; 1 occurrences:
+; tree-sitter-rs/optimized/3w8fnbh84xi9yzxl.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = getelementptr [0 x { ptr, i64 }], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 

@@ -1,11 +1,13 @@
 
-; 200 occurrences:
+; 201 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cs_updown.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; cpython/optimized/cmathmodule.ll
 ; cpython/optimized/mathmodule.ll
-; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; g2o/optimized/edge_line2d_pointxy.cpp.ll
@@ -72,7 +74,6 @@
 ; openblas/optimized/dlarrc.c.ll
 ; openblas/optimized/dlasd4.c.ll
 ; openblas/optimized/dlasd5.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/ecc.cpp.ll
@@ -204,7 +205,7 @@
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fmul double %0, %1
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 

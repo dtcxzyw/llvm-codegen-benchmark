@@ -1,16 +1,12 @@
 
-; 9 occurrences:
-; coreutils-rs/optimized/4rjs632i9cta2yqf.ll
+; 5 occurrences:
 ; icu/optimized/ctest.ll
 ; linux/optimized/i915_vgpu.ll
 ; re2/optimized/re2.cc.ll
 ; ruby/optimized/addr2line.ll
-; ruby/optimized/signal.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; wasmtime-rs/optimized/1aegspwwbjc82p4w.ll
-; wasmtime-rs/optimized/1d0hmxdweaxxi3oz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
   %4 = icmp ugt i64 %0, %1
@@ -18,19 +14,13 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 4 occurrences:
 ; linux/optimized/haltpoll.ll
 ; linux/optimized/page-writeback.ll
 ; openssl/optimized/libcrypto-lib-wrap128.ll
 ; openssl/optimized/libcrypto-shlib-wrap128.ll
-; typst-rs/optimized/18i60ist7isq7y2m.ll
-; typst-rs/optimized/1ojadsqfk0rsifsx.ll
-; typst-rs/optimized/2lj01bfl72moc27l.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000109(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
   %4 = icmp uge i64 %0, %1
@@ -38,13 +28,15 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
   %4 = icmp ne i64 %0, %1
@@ -56,7 +48,7 @@ entry:
 ; folly/optimized/TDigest.cpp.ll
 ; graphviz/optimized/triang.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp eq i64 %0, %1
@@ -70,7 +62,7 @@ entry:
 ; quantlib/optimized/seasonality.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %1, %2
   %4 = icmp sgt i64 %0, %1
@@ -82,7 +74,7 @@ entry:
 ; hyperscan/optimized/mcclellancompile_util.cpp.ll
 ; openjdk/optimized/psYoungGen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000025(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp ule i64 %0, %1
@@ -93,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_substitute.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = icmp ult i64 %0, %1
@@ -104,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; vcpkg/optimized/commands.install.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp uge i64 %0, %1
@@ -112,42 +104,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; openmpi/optimized/libdatatype_reliable_la-opal_datatype_pack.ll
-; openmpi/optimized/opal_datatype_pack.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ugt i64 %1, %2
-  %4 = icmp eq i64 %0, %1
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; hyperscan/optimized/lbr.c.ll
-; linux/optimized/page-writeback.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000045(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ult i64 %1, %2
-  %4 = icmp ule i64 %0, %1
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; redis/optimized/redis-benchmark.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp eq i64 %1, %2
-  %4 = icmp ne i64 %0, %1
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
-; 146 occurrences:
+; 144 occurrences:
+; boost/optimized/topology.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
 ; nix/optimized/archive.ll
@@ -234,13 +192,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -295,10 +250,61 @@ entry:
 ; nix/optimized/why-depends.ll
 ; nix/optimized/worker.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %1, %2
   %4 = icmp ne i64 %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; openmpi/optimized/libdatatype_reliable_la-opal_datatype_pack.ll
+; openmpi/optimized/opal_datatype_pack.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %1, %2
+  %4 = icmp eq i64 %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; hyperscan/optimized/lbr.c.ll
+; linux/optimized/page-writeback.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000085(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %1, %2
+  %4 = icmp ule i64 %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; redis/optimized/redis-benchmark.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %1, %2
+  %4 = icmp ne i64 %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 6 occurrences:
+; typst-rs/optimized/18i60ist7isq7y2m.ll
+; typst-rs/optimized/1ojadsqfk0rsifsx.ll
+; typst-rs/optimized/2lj01bfl72moc27l.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000119(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %1, %2
+  %4 = icmp samesign uge i64 %0, %1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }

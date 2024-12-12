@@ -8,6 +8,11 @@ func0000000000000018:                   # @func0000000000000018
 	shrq	$6, %rax
 	imull	%edi, %eax
 	retq
+func000000000000001c:                   # @func000000000000001c
+	movq	%rsi, %rax
+	shrq	$48, %rax
+	imull	%edi, %eax
+	retq
 func0000000000000022:                   # @func0000000000000022
 	movq	%rsi, %rax
 	shrq	$5, %rax
@@ -34,6 +39,16 @@ func0000000000000012:                   # @func0000000000000012
 	imull	%edi, %eax
 	retq
 func0000000000000013:                   # @func0000000000000013
+	movq	%rsi, %rax
+	shrq	$32, %rax
+	imull	%edi, %eax
+	retq
+func000000000000001f:                   # @func000000000000001f
+	movq	%rsi, %rax
+	shrq	$32, %rax
+	imull	%edi, %eax
+	retq
+func0000000000000017:                   # @func0000000000000017
 	movq	%rsi, %rax
 	shrq	$32, %rax
 	imull	%edi, %eax

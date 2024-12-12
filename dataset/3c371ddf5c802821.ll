@@ -5,7 +5,7 @@
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000381(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000701(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -48
   %4 = add nuw nsw i64 %3, %1

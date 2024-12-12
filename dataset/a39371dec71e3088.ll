@@ -50,7 +50,7 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = sub i64 %0, %1
@@ -66,9 +66,9 @@ entry:
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000218(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000c28(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 64
+  %3 = icmp samesign ugt i64 %2, 64
   %4 = sub i64 %0, %1
   %5 = icmp ugt i64 %4, 64
   %6 = select i1 %3, i1 %5, i1 false
@@ -82,7 +82,7 @@ entry:
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000c21(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 65
   %4 = icmp eq i64 %0, %1
@@ -97,7 +97,7 @@ entry:
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000408(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 64
   %4 = sub i64 %0, %1

@@ -78,3 +78,15 @@ func0000000000000004:                   # @func0000000000000004
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
+.LCPI7_0:
+	.quad	4294967295                      # 0xffffffff
+.LCPI7_1:
+	.zero	16,1
+.LCPI7_2:
+	.zero	4,1
+func0000000000000060:                   # @func0000000000000060
+	vpcmpnleuq	.LCPI7_0(%rip){1to4}, %ymm1, %k1
+	vpord	.LCPI7_2(%rip){1to4}, %xmm0, %xmm1
+	vmovdqu8	%xmm1, %xmm0 {%k1}
+	vzeroupper
+	retq

@@ -35,8 +35,8 @@ func0000000000000000:                   # @func0000000000000000
 	orl	%edi, %eax
 	retq
 func000000000000000b:                   # @func000000000000000b
-	shll	$16, %esi
-	leal	8323072(%rsi), %eax
-	andl	$16711680, %eax                 # imm = 0xFF0000
+	shll	$8, %esi
+	addl	$12288, %esi                    # imm = 0x3000
+	movzwl	%si, %eax
 	orl	%edi, %eax
 	retq

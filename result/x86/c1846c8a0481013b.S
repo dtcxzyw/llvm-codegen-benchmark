@@ -1,15 +1,9 @@
-func000000000000015a:                   # @func000000000000015a
-	movswl	%si, %eax
-	addl	%edi, %eax
-	testl	%eax, %eax
-	setg	%al
-	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	movswl	%si, %eax
 	addl	%edi, %eax
 	setns	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	shll	$3, %esi
 	sarl	$8, %esi
 	addl	%edi, %esi
@@ -22,54 +16,54 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$2, %esi
 	setae	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movsbl	%sil, %eax
 	addl	%edi, %eax
 	cmpl	$-1, %eax
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	movswl	%si, %eax
 	addl	%edi, %eax
 	cmpl	$-1078992896, %eax              # imm = 0xBFAFE000
 	sete	%al
 	retq
-func0000000000000158:                   # @func0000000000000158
+func00000000000002a8:                   # @func00000000000002a8
 	movsbl	%sil, %eax
 	addl	%edi, %eax
 	cmpl	$4, %eax
 	setae	%al
 	retq
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	movsbl	%sil, %eax
 	addl	%edi, %eax
 	cmpl	$25, %eax
 	setb	%al
 	retq
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	movsbl	%sil, %eax
 	addl	%edi, %eax
 	sete	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
-	movswl	%si, %eax
+func00000000000000aa:                   # @func00000000000000aa
+	movsbl	%sil, %eax
 	addl	%edi, %eax
-	cmpl	$51085, %eax                    # imm = 0xC78D
+	cmpl	$12, %eax
 	setge	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	movswl	%si, %eax
 	addl	%edi, %eax
 	cmpl	$-51082, %eax                   # imm = 0xFFFF3876
 	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	shll	$3, %esi
 	sarl	$19, %esi
 	addl	%edi, %esi
 	setle	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shll	$23, %esi
 	sarl	$31, %esi
 	addl	%edi, %esi

@@ -4,14 +4,14 @@ func0000000000000002:                   # @func0000000000000002
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000003:                   # @func0000000000000003
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendw	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7],ymm1[8],ymm2[9],ymm1[10],ymm2[11],ymm1[12],ymm2[13],ymm1[14],ymm2[15]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func000000000000000f:                   # @func000000000000000f
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -26,7 +26,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	2                               # 0x2
@@ -35,7 +35,7 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000000:                   # @func0000000000000000
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
 	vpandd	.LCPI4_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI5_0:
 	.long	7                               # 0x7
@@ -62,7 +62,7 @@ func0000000000000004:                   # @func0000000000000004
 func000000000000000d:                   # @func000000000000000d
 	vpaddd	.LCPI7_0(%rip){1to8}, %ymm1, %ymm1
 	vpandd	.LCPI7_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI8_0:
 	.long	15                              # 0xf
@@ -71,7 +71,7 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000005:                   # @func0000000000000005
 	vpaddd	.LCPI8_0(%rip){1to8}, %ymm1, %ymm1
 	vpandd	.LCPI8_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI9_0:
 	.long	28                              # 0x1c
@@ -86,7 +86,7 @@ func0000000000000007:                   # @func0000000000000007
 	.long	1                               # 0x1
 func0000000000000006:                   # @func0000000000000006
 	vpandnd	.LCPI10_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI11_0:
 	.byte	255                             # 0xff
@@ -138,7 +138,7 @@ func0000000000000009:                   # @func0000000000000009
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI12_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI13_0:
 	.long	75                              # 0x4b
@@ -165,5 +165,5 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000a:                   # @func000000000000000a
 	vpaddd	.LCPI15_0(%rip){1to8}, %ymm1, %ymm1
 	vpandd	.LCPI15_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

@@ -1,5 +1,5 @@
 
-%struct.aiFace.2711833 = type { i32, ptr }
+%struct.aiFace.2824386 = type { i32, ptr }
 
 ; 13 occurrences:
 ; cvc5/optimized/single_inv_partition.cpp.ll
@@ -24,18 +24,20 @@ entry:
   ret ptr %4
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; cmake/optimized/RegularExpression.cxx.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; lz4/optimized/lz4.c.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
+; openusd/optimized/lz4.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw %struct.aiFace.2711833, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.aiFace.2824386, ptr %0, i64 %3
   ret ptr %4
 }
 

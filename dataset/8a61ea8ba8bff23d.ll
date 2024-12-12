@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; c3c/optimized/types.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
@@ -12,6 +12,7 @@
 ; linux/optimized/pci.ll
 ; linux/optimized/xhci-mem.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
+; lua/optimized/lcode.ll
 ; luajit/optimized/minilua.ll
 ; nix/optimized/fromTOML.ll
 ; openssl/optimized/libcrypto-lib-ccm128.ll
@@ -67,17 +68,16 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; lua/optimized/lcode.ll
+; 1 occurrences:
 ; opencv/optimized/container_avi.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nsw i32 %1, 16
-  %3 = add nsw i32 %2, 8323072
-  %4 = and i32 %3, 16711680
-  %5 = and i32 %0, -16711681
-  %6 = or disjoint i32 %5, %4
+  %2 = shl nsw i32 %1, 8
+  %3 = add nsw i32 %2, 12288
+  %4 = and i32 %3, 65280
+  %5 = and i32 %0, 255
+  %6 = or disjoint i32 %4, %5
   ret i32 %6
 }
 

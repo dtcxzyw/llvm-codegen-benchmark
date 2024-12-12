@@ -1,17 +1,17 @@
 
-%"class.(anonymous namespace)::NotTriviallyDestructible.3284437" = type { %"class.std::unique_ptr.379.3284438" }
-%"class.std::unique_ptr.379.3284438" = type { %"struct.std::__uniq_ptr_data.380.3284439" }
-%"struct.std::__uniq_ptr_data.380.3284439" = type { %"class.std::__uniq_ptr_impl.381.3284440" }
-%"class.std::__uniq_ptr_impl.381.3284440" = type { %"class.std::tuple.382.3284441" }
-%"class.std::tuple.382.3284441" = type { %"struct.std::_Tuple_impl.383.3284442" }
-%"struct.std::_Tuple_impl.383.3284442" = type { %"struct.std::_Head_base.386.3284443" }
-%"struct.std::_Head_base.386.3284443" = type { ptr }
-%struct.rwlock_t.3365599 = type { %struct.qrwlock.3365600 }
-%struct.qrwlock.3365600 = type { %union.anon.2.3365601, %struct.qspinlock.3365590 }
-%union.anon.2.3365601 = type { %struct.atomic_t.3365577 }
-%struct.atomic_t.3365577 = type { i32 }
-%struct.qspinlock.3365590 = type { %union.anon.3365591 }
-%union.anon.3365591 = type { %struct.atomic_t.3365577 }
+%"class.(anonymous namespace)::NotTriviallyDestructible.3474873" = type { %"class.std::unique_ptr.379.3474874" }
+%"class.std::unique_ptr.379.3474874" = type { %"struct.std::__uniq_ptr_data.380.3474875" }
+%"struct.std::__uniq_ptr_data.380.3474875" = type { %"class.std::__uniq_ptr_impl.381.3474876" }
+%"class.std::__uniq_ptr_impl.381.3474876" = type { %"class.std::tuple.382.3474877" }
+%"class.std::tuple.382.3474877" = type { %"struct.std::_Tuple_impl.383.3474878" }
+%"struct.std::_Tuple_impl.383.3474878" = type { %"struct.std::_Head_base.386.3474879" }
+%"struct.std::_Head_base.386.3474879" = type { ptr }
+%struct.rwlock_t.3551795 = type { %struct.qrwlock.3551796 }
+%struct.qrwlock.3551796 = type { %union.anon.2.3551797, %struct.qspinlock.3551786 }
+%union.anon.2.3551797 = type { %struct.atomic_t.3551773 }
+%struct.atomic_t.3551773 = type { i32 }
+%struct.qspinlock.3551786 = type { %union.anon.3551787 }
+%union.anon.3551787 = type { %struct.atomic_t.3551773 }
 
 ; 2 occurrences:
 ; ruby/optimized/thread.ll
@@ -20,13 +20,14 @@
 define ptr @func0000000000000034(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = getelementptr i64, ptr %0, i64 %.neg
-  %4 = getelementptr i64, ptr %3, i64 %1
+  %3 = getelementptr i64, ptr %0, i64 %1
+  %4 = getelementptr i64, ptr %3, i64 %.neg
   ret ptr %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
+; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; hdf5/optimized/H5Tconv.c.ll
 ; hdf5/optimized/H5Tconv_bitfield.c.ll
 ; hdf5/optimized/H5Tconv_float.c.ll
@@ -80,10 +81,14 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 7 occurrences:
 ; luajit/optimized/minilua.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
 ; spike/optimized/spike-dasm.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/bc27zh41i1ia1dszunchw7cbt.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -94,7 +99,6 @@ entry:
 }
 
 ; 26 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -120,21 +124,21 @@ entry:
 ; wasmtime-rs/optimized/3wy7qx4e8fg0rwt0.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = getelementptr { [3 x i64] }, ptr %0, i64 %.neg
-  %4 = getelementptr { [3 x i64] }, ptr %3, i64 %1
+  %3 = getelementptr { [3 x i64] }, ptr %0, i64 %1
+  %4 = getelementptr { [3 x i64] }, ptr %3, i64 %.neg
   ret ptr %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; meshlab/optimized/outline2_rasterizer.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -155,8 +159,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = getelementptr i8, ptr %0, i64 %.neg
-  %4 = getelementptr i8, ptr %3, i64 %1
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %.neg
   ret ptr %4
 }
 
@@ -202,15 +206,27 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
+; quantlib/optimized/lmfixedvolmodel.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, -1
+  %4 = sub nuw i64 %1, %3
+  %5 = getelementptr nusw nuw double, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 3 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/itertoolsmodule.ll
 ; quantlib/optimized/mchullwhiteengine.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = getelementptr double, ptr %0, i64 %.neg
-  %4 = getelementptr double, ptr %3, i64 %1
+  %3 = getelementptr double, ptr %0, i64 %1
+  %4 = getelementptr double, ptr %3, i64 %.neg
   ret ptr %4
 }
 
@@ -220,8 +236,8 @@ entry:
 define ptr @func0000000000000020(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = getelementptr float, ptr %0, i64 %.neg
-  %4 = getelementptr float, ptr %3, i64 %1
+  %3 = getelementptr float, ptr %0, i64 %1
+  %4 = getelementptr float, ptr %3, i64 %.neg
   ret ptr %4
 }
 
@@ -233,9 +249,20 @@ entry:
 define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = getelementptr i64, ptr %0, i64 %.neg
-  %4 = getelementptr i64, ptr %3, i64 %1
+  %3 = getelementptr i64, ptr %0, i64 %1
+  %4 = getelementptr i64, ptr %3, i64 %.neg
   ret ptr %4
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, -1
+  %4 = sub i64 %1, %3
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -246,8 +273,8 @@ entry:
 define ptr @func0000000000000022(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = getelementptr i8, ptr %0, i64 %.neg
-  %4 = getelementptr i8, ptr %3, i64 %1
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %.neg
   ret ptr %4
 }
 
@@ -276,22 +303,22 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = getelementptr i32, ptr %0, i64 %.neg
-  %4 = getelementptr i32, ptr %3, i64 %1
+  %3 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474873", ptr %0, i64 %1
+  %4 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474873", ptr %3, i64 %.neg
   ret ptr %4
 }
 
 ; 1 occurrences:
-; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3284437", ptr %0, i64 %.neg
-  %4 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3284437", ptr %3, i64 %1
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %.neg
   ret ptr %4
 }
 
@@ -302,7 +329,18 @@ define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 2
   %4 = sub nuw i64 %1, %3
-  %5 = getelementptr %struct.rwlock_t.3365599, ptr %0, i64 %4
+  %5 = getelementptr %struct.rwlock_t.3551795, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; meshlab/optimized/outline2_rasterizer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, -1
+  %4 = sub nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -312,8 +350,19 @@ entry:
 define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = getelementptr i8, ptr %0, i64 %.neg
-  %4 = getelementptr i8, ptr %3, i64 %1
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %.neg
+  ret ptr %4
+}
+
+; 1 occurrences:
+; casadi/optimized/sparsity_internal.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %.neg = xor i64 %2, -1
+  %3 = getelementptr i64, ptr %0, i64 %1
+  %4 = getelementptr i64, ptr %3, i64 %.neg
   ret ptr %4
 }
 

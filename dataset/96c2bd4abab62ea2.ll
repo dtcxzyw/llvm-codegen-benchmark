@@ -23,11 +23,11 @@ entry:
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000e(ptr %0, i32 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 4
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -43,11 +43,11 @@ entry:
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; openusd/optimized/obu.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

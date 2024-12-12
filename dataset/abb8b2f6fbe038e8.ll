@@ -7,8 +7,8 @@ define double @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, %1
   %4 = select i1 %3, double %1, double %2
-  %5 = fneg double %4
-  %6 = fmul double %5, %0
+  %5 = fneg double %0
+  %6 = fmul double %4, %5
   ret double %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = fcmp ole double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fneg double %4
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fneg double %4
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

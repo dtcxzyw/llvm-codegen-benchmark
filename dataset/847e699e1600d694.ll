@@ -1,8 +1,7 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; linux/optimized/ahash.ll
-; linux/optimized/rss.ll
 ; linux/optimized/slab_common.ll
 ; llvm/optimized/Descriptor.cpp.ll
 ; openjdk/optimized/codeBlob.ll
@@ -35,8 +34,9 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; postgres/optimized/gindatapage.ll
+; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-meta.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; wireshark/optimized/wmem_allocator_block_fast.c.ll
@@ -46,7 +46,7 @@ entry:
   %2 = add nuw nsw i32 %1, 15
   %3 = and i32 %2, 4194288
   %4 = add nuw nsw i32 %3, 16
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -98,7 +98,7 @@ entry:
   %2 = add i32 %1, 1023
   %3 = and i32 %2, 1023
   %4 = add nuw nsw i32 %3, 1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -124,7 +124,7 @@ entry:
   %2 = add nsw i32 %1, 7
   %3 = and i32 %2, -8
   %4 = add nsw i32 %3, 80
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

@@ -1,9 +1,7 @@
 
-; 4 occurrences:
-; linux/optimized/vclock_gettime.ll
+; 2 occurrences:
 ; qemu/optimized/block_nvme.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; spike/optimized/s_shortShiftLeft64To96M.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:

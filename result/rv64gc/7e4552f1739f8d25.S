@@ -9,10 +9,10 @@ func000000000000003c:                   # @func000000000000003c
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000001e:                   # @func000000000000001e
-	slli	a1, a1, 3
+func000000000000001f:                   # @func000000000000001f
+	slli	a1, a1, 2
 	slli	a2, a2, 32
-	srli	a2, a2, 27
+	srli	a2, a2, 28
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret

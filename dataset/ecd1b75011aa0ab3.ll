@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 90 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/covMinSop.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
@@ -34,13 +34,11 @@
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; lief/optimized/des.c.ll
 ; linux/optimized/blk-merge.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/drm_ioctl.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/filetable.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/hexdump.ll
-; linux/optimized/i8259.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/mac.ll
 ; linux/optimized/page_alloc.ll
@@ -52,7 +50,6 @@
 ; mitsuba3/optimized/multijitter.cpp.ll
 ; mitsuba3/optimized/orthogonal.cpp.ll
 ; mitsuba3/optimized/stratified.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/Any3Byte.ll
 ; openjdk/optimized/Any4Byte.ll
 ; openjdk/optimized/FourByteAbgr.ll
@@ -101,7 +98,7 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; linux/optimized/cdrom.ll
@@ -109,6 +106,7 @@ entry:
 ; linux/optimized/intel_rps.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {

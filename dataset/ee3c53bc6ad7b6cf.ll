@@ -29,14 +29,32 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/get_turns.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; openjdk/optimized/ad_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp eq i32 %3, 64
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 7 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %1, %2
+  %4 = icmp ne i32 %3, 1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -48,7 +66,7 @@ entry:
 ; opencv/optimized/chessboard.cpp.ll
 ; openusd/optimized/obu.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 0
@@ -70,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-s7comm_szl_ids.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -96,7 +114,7 @@ entry:
 ; graphviz/optimized/visibility.c.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp slt i32 %3, 257
@@ -105,20 +123,9 @@ entry:
 }
 
 ; 1 occurrences:
-; opencv/optimized/matrix_transform.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nuw nsw i32 %1, %2
-  %4 = icmp ult i32 %3, 33
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = icmp ne i32 %3, 0

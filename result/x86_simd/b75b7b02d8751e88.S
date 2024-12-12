@@ -12,7 +12,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI1_0:
 	.long	4294967232                      # 0xffffffc0
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
@@ -23,7 +23,7 @@ func0000000000000056:                   # @func0000000000000056
 	retq
 .LCPI2_0:
 	.long	4294967232                      # 0xffffffc0
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2

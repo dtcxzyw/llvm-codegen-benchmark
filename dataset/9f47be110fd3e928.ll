@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; cvc5/optimized/extended_rewrite.cpp.ll
 ; cvc5/optimized/nl_model.cpp.ll
 ; darktable/optimized/introspection_invert.c.ll
@@ -15,7 +15,6 @@
 ; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/MachinePostDominators.cpp.ll
 ; llvm/optimized/MemorySSAUpdater.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; nlohmann_json/optimized/unit-bjdata.cpp.ll

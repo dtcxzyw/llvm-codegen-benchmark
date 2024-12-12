@@ -25,8 +25,7 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; linux/optimized/bitmap-str.ll
+; 2 occurrences:
 ; linux/optimized/dma-ring.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind

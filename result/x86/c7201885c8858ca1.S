@@ -1,10 +1,10 @@
 func000000000000000c:                   # @func000000000000000c
-	decq	%rsi
+	incq	%rdx
 	cmpq	%rdx, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subq	%rsi, %rdx
 	cmpq	$-1, %rdx
 	setl	%al

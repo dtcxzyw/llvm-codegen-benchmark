@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	andq	%rcx, %rax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	movq	%rdi, %rax
-	andl	$1023, %eax                     # imm = 0x3FF
-	shlq	$34, %rax
+	shlq	$4, %rdi
+	movabsq	$9223372036854775744, %rax      # imm = 0x7FFFFFFFFFFFFFC0
+	andq	%rdi, %rax
 	retq

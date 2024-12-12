@@ -21,14 +21,14 @@ func0000000000000068:                   # @func0000000000000068
 	retq
 func0000000000000002:                   # @func0000000000000002
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$24, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000078:                   # @func0000000000000078
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$8, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
@@ -68,10 +68,17 @@ func000000000000002b:                   # @func000000000000002b
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000022:                   # @func0000000000000022
+func000000000000002a:                   # @func000000000000002a
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpsrld	$24, %ymm0, %ymm0
+	vpsrld	$12, %ymm0, %ymm0
+	vpmovdb	%ymm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000022:                   # @func0000000000000022
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpsrld	$12, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
@@ -93,13 +100,6 @@ func0000000000000070:                   # @func0000000000000070
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpsrld	$14, %ymm0, %ymm0
-	vpmovdb	%ymm0, %xmm0
-	vzeroupper
-	retq
-func000000000000002a:                   # @func000000000000002a
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpsrld	$24, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq

@@ -1,7 +1,7 @@
-func000000000000002a:                   # @func000000000000002a
-	leaq	60(%rdi), %rax
-	leaq	48(%rdi), %rcx
+func000000000000003f:                   # @func000000000000003f
+	leaq	57(%rdi), %rcx
+	leaq	69(%rdi), %rax
 	testb	$1, %sil
 	cmovneq	%rcx, %rax
-	addq	$317, %rax                      # imm = 0x13D
+	addq	$308, %rax                      # imm = 0x134
 	retq

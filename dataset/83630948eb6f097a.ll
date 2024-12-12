@@ -1,5 +1,5 @@
 
-; 915 occurrences:
+; 922 occurrences:
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/aigMffc.c.ll
@@ -41,6 +41,25 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; bullet3/optimized/btDeformableBackwardEulerObjective.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btDeformableContactProjection.ll
@@ -225,7 +244,6 @@
 ; gromacs/optimized/dlasv2.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorgl2.cpp.ll
 ; gromacs/optimized/editconf.cpp.ll
 ; gromacs/optimized/ewald.cpp.ll
@@ -257,7 +275,6 @@
 ; gromacs/optimized/slasq4.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
-; gromacs/optimized/tabulatednormaldistribution.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; grpc/optimized/flow_control.cc.ll
 ; grpc/optimized/memory_quota.cc.ll
@@ -302,6 +319,7 @@
 ; llvm/optimized/MisExpect.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-storage.ll
 ; meshlab/optimized/Factor.cpp.ll
@@ -318,7 +336,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -390,15 +407,12 @@
 ; openblas/optimized/dlatm1.c.ll
 ; openblas/optimized/dlatm7.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorgl2.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dsyrk_thread_LN.c.ll
 ; openblas/optimized/dsyrk_thread_LT.c.ll
 ; openblas/optimized/dsyrk_thread_UN.c.ll
 ; openblas/optimized/dsyrk_thread_UT.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/AddingImages.cpp.ll
 ; opencv/optimized/AddingImagesTrackbar.cpp.ll
 ; opencv/optimized/Match.cpp.ll
@@ -616,7 +630,6 @@
 ; proj/optimized/cass.cpp.ll
 ; proj/optimized/chamb.cpp.ll
 ; proj/optimized/col_urban.cpp.ll
-; proj/optimized/collg.cpp.ll
 ; proj/optimized/conversion.cpp.ll
 ; proj/optimized/datum.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
@@ -637,7 +650,6 @@
 ; proj/optimized/igh.cpp.ll
 ; proj/optimized/igh_o.cpp.ll
 ; proj/optimized/imw_p.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/krovak.cpp.ll
 ; proj/optimized/labrd.cpp.ll
@@ -645,7 +657,6 @@
 ; proj/optimized/lagrng.cpp.ll
 ; proj/optimized/mod_ster.cpp.ll
 ; proj/optimized/molodensky.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/omerc.cpp.ll
 ; proj/optimized/ortho.cpp.ll
 ; proj/optimized/poly.cpp.ll
@@ -666,8 +677,6 @@
 ; proj/optimized/tsfn.cpp.ll
 ; proj/optimized/vandg.cpp.ll
 ; proj/optimized/vandg4.cpp.ll
-; proj/optimized/vertoffset.cpp.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; quantlib/optimized/abcdmathfunction.ll
 ; quantlib/optimized/alimikhailhaqcopula.ll
 ; quantlib/optimized/americanpayoffathit.ll
@@ -854,7 +863,6 @@
 ; redis/optimized/hyperloglog.ll
 ; redis/optimized/redis-cli.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; ruby/optimized/date_core.ll
 ; ruby/optimized/gc.ll
 ; ruby/optimized/util.ll
@@ -871,7 +879,6 @@
 ; stat-rs/optimized/rkxxfn3f5mhspne.ll
 ; stat-rs/optimized/u5boppws0o3vklz.ll
 ; sundials/optimized/arkode_butcher.c.ll
-; sundials/optimized/arkode_butcher_dirk.c.ll
 ; sundials/optimized/arkode_interp.c.ll
 ; sundials/optimized/arkode_mristep.c.ll
 ; sundials/optimized/arkode_relaxation.c.ll

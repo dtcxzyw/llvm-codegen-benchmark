@@ -99,7 +99,8 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; casadi/optimized/sparsity_internal.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; Function Attrs: nounwind

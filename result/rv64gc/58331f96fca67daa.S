@@ -1,108 +1,156 @@
-.LCPI0_0:                               # -- Begin function func0000000000000031
-	.ascii	"\000\001\034\002\035\016\030\003\036\026\024\017\031\021\004\b\037\033\r\027\025\023\020\007\032\f\022\006\013\005\n\t"
-func0000000000000031:                   # @func0000000000000031
-	negw	a2, a1
-	and	a1, a1, a2
-	lui	a2, 30667
-	addi	a2, a2, 1329
-	mul	a1, a1, a2
-	srliw	a1, a1, 27
-	lui	a2, %hi(.LCPI0_0)
-	addi	a2, a2, %lo(.LCPI0_0)
-	add	a1, a1, a2
-	lbu	a1, 0(a1)
+func0000000000000061:                   # @func0000000000000061
 	sext.w	a0, a0
+	srliw	a2, a1, 1
+	lui	a3, 349525
+	or	a1, a1, a2
+	addiw	a2, a3, 1365
+	srliw	a3, a1, 2
+	or	a1, a1, a3
+	srliw	a3, a1, 4
+	or	a1, a1, a3
+	srliw	a3, a1, 8
+	or	a1, a1, a3
+	srliw	a3, a1, 16
+	or	a1, a1, a3
+	not	a1, a1
+	srli	a3, a1, 1
+	and	a2, a2, a3
+	lui	a3, 209715
+	addiw	a3, a3, 819
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 61681
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	lui	a2, 4112
+	addi	a3, a3, -241
+	and	a1, a1, a3
+	addi	a2, a2, 257
+	mul	a1, a1, a2
+	srliw	a1, a1, 24
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-.LCPI1_0:                               # -- Begin function func0000000000000001
-	.ascii	"\000\001\034\002\035\016\030\003\036\026\024\017\031\021\004\b\037\033\r\027\025\023\020\007\032\f\022\006\013\005\n\t"
-func0000000000000001:                   # @func0000000000000001
+func0000000000000044:                   # @func0000000000000044
 	sext.w	a2, a1
 	beqz	a2, .LBB1_2
-	negw	a2, a1
-	and	a1, a1, a2
-	lui	a2, 30667
-	addi	a2, a2, 1329
-	mul	a1, a1, a2
-	srliw	a1, a1, 27
-	lui	a2, %hi(.LCPI1_0)
-	addi	a2, a2, %lo(.LCPI1_0)
+	srliw	a2, a1, 1
+	lui	a3, 349525
+	or	a1, a1, a2
+	addiw	a2, a3, 1365
+	srliw	a3, a1, 2
+	or	a1, a1, a3
+	srliw	a3, a1, 4
+	or	a1, a1, a3
+	srliw	a3, a1, 8
+	or	a1, a1, a3
+	srliw	a3, a1, 16
+	or	a1, a1, a3
+	not	a1, a1
+	srli	a3, a1, 1
+	and	a2, a2, a3
+	lui	a3, 209715
+	addiw	a3, a3, 819
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 61681
 	add	a1, a1, a2
-	lbu	a1, 0(a1)
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	lui	a2, 4112
+	addi	a3, a3, -241
+	and	a1, a1, a3
+	addi	a2, a2, 257
+	mul	a1, a1, a2
+	srliw	a1, a1, 24
 	sext.w	a0, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
+	sltu	a0, a1, a0
 	ret
 .LBB1_2:
 	li	a1, 32
 	sext.w	a0, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
+	sltu	a0, a1, a0
 	ret
-.LCPI2_0:                               # -- Begin function func0000000000000011
-	.ascii	"\000\001\034\002\035\016\030\003\036\026\024\017\031\021\004\b\037\033\r\027\025\023\020\007\032\f\022\006\013\005\n\t"
-func0000000000000011:                   # @func0000000000000011
-	negw	a2, a1
-	and	a1, a1, a2
-	lui	a2, 30667
-	addi	a2, a2, 1329
-	mul	a1, a1, a2
-	srliw	a1, a1, 27
-	lui	a2, %hi(.LCPI2_0)
-	addi	a2, a2, %lo(.LCPI2_0)
+func0000000000000054:                   # @func0000000000000054
+	sext.w	a2, a1
+	beqz	a2, .LBB2_2
+	srliw	a2, a1, 1
+	lui	a3, 349525
+	or	a1, a1, a2
+	addiw	a2, a3, 1365
+	srliw	a3, a1, 2
+	or	a1, a1, a3
+	srliw	a3, a1, 4
+	or	a1, a1, a3
+	srliw	a3, a1, 8
+	or	a1, a1, a3
+	srliw	a3, a1, 16
+	or	a1, a1, a3
+	not	a1, a1
+	srli	a3, a1, 1
+	and	a2, a2, a3
+	lui	a3, 209715
+	addiw	a3, a3, 819
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 61681
 	add	a1, a1, a2
-	lbu	a1, 0(a1)
-	sext.w	a0, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
-.LCPI3_0:                               # -- Begin function func0000000000000014
-	.ascii	"\000\001\034\002\035\016\030\003\036\026\024\017\031\021\004\b\037\033\r\027\025\023\020\007\032\f\022\006\013\005\n\t"
-func0000000000000014:                   # @func0000000000000014
-	negw	a2, a1
-	and	a1, a1, a2
-	lui	a2, 30667
-	addi	a2, a2, 1329
-	mul	a1, a1, a2
-	srliw	a1, a1, 27
-	lui	a2, %hi(.LCPI3_0)
-	addi	a2, a2, %lo(.LCPI3_0)
+	srli	a2, a1, 4
 	add	a1, a1, a2
-	lbu	a1, 0(a1)
+	lui	a2, 4112
+	addi	a3, a3, -241
+	and	a1, a1, a3
+	addi	a2, a2, 257
+	mul	a1, a1, a2
+	srliw	a1, a1, 24
 	sext.w	a0, a0
 	sltu	a0, a1, a0
 	ret
-.LCPI4_0:                               # -- Begin function func000000000000001a
-	.ascii	"\000\001\034\002\035\016\030\003\036\026\024\017\031\021\004\b\037\033\r\027\025\023\020\007\032\f\022\006\013\005\n\t"
-func000000000000001a:                   # @func000000000000001a
-	negw	a2, a1
-	and	a1, a1, a2
-	lui	a2, 30667
-	addi	a2, a2, 1329
-	mul	a1, a1, a2
-	srliw	a1, a1, 27
-	lui	a2, %hi(.LCPI4_0)
-	addi	a2, a2, %lo(.LCPI4_0)
-	add	a1, a1, a2
-	lbu	a1, 0(a1)
-	sext.w	a0, a0
-	slt	a0, a0, a1
-	ret
-.LCPI5_0:                               # -- Begin function func0000000000000019
-	.ascii	"\000\001\034\002\035\016\030\003\036\026\024\017\031\021\004\b\037\033\r\027\025\023\020\007\032\f\022\006\013\005\n\t"
-func0000000000000019:                   # @func0000000000000019
-	negw	a2, a1
-	and	a1, a1, a2
-	lui	a2, 30667
-	addi	a2, a2, 1329
-	mul	a1, a1, a2
-	srliw	a1, a1, 27
-	lui	a2, %hi(.LCPI5_0)
-	addi	a2, a2, %lo(.LCPI5_0)
-	add	a1, a1, a2
-	lbu	a1, 0(a1)
+.LBB2_2:
+	li	a1, 32
 	sext.w	a0, a0
 	sltu	a0, a1, a0
-	xori	a0, a0, 1
+	ret
+func0000000000000021:                   # @func0000000000000021
+	sext.w	a0, a0
+	srliw	a2, a1, 1
+	lui	a3, 349525
+	or	a1, a1, a2
+	addiw	a2, a3, 1365
+	srliw	a3, a1, 2
+	or	a1, a1, a3
+	srliw	a3, a1, 4
+	or	a1, a1, a3
+	srliw	a3, a1, 8
+	or	a1, a1, a3
+	srliw	a3, a1, 16
+	or	a1, a1, a3
+	not	a1, a1
+	srli	a3, a1, 1
+	and	a2, a2, a3
+	lui	a3, 209715
+	addiw	a3, a3, 819
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 61681
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	lui	a2, 4112
+	addi	a3, a3, -241
+	and	a1, a1, a3
+	addi	a2, a2, 257
+	mul	a1, a1, a2
+	srliw	a1, a1, 24
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret

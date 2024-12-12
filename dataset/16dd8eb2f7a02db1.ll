@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 41 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -25,6 +25,7 @@
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; opencv/optimized/lsd.cpp.ll

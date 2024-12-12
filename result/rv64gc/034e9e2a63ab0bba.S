@@ -1,9 +1,7 @@
-func000000000000007a:                   # @func000000000000007a
+func000000000000007b:                   # @func000000000000007b
 	slli	a2, a2, 5
-	li	a3, 840
-	mul	a1, a1, a3
-	add	a0, a0, a2
 	add	a0, a0, a1
+	add	a0, a0, a2
 	addi	a0, a0, 32
 	ret
 func00000000000000d0:                   # @func00000000000000d0
@@ -18,7 +16,13 @@ func00000000000000f0:                   # @func00000000000000f0
 	add	a0, a0, a2
 	addi	a0, a0, 32
 	ret
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000000ff:                   # @func00000000000000ff
+	slli	a2, a2, 2
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 4
+	ret
+func000000000000000f:                   # @func000000000000000f
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -30,7 +34,13 @@ func000000000000005a:                   # @func000000000000005a
 	add	a0, a0, a2
 	addi	a0, a0, 2
 	ret
-func00000000000000da:                   # @func00000000000000da
+func00000000000000fb:                   # @func00000000000000fb
+	slli	a2, a2, 1
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 3
+	ret
+func00000000000000de:                   # @func00000000000000de
 	slli	a2, a2, 4
 	add	a0, a0, a1
 	add	a0, a0, a2

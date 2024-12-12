@@ -1,5 +1,6 @@
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -176,6 +177,21 @@ entry:
   %4 = zext i1 %3 to i64
   %5 = lshr i64 %0, %1
   %6 = add i64 %5, %4
+  ret i64 %6
+}
+
+; 4 occurrences:
+; delta-rs/optimized/11f8x98axanecwnw.ll
+; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000013(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 1000000000
+  %4 = zext i1 %3 to i64
+  %5 = lshr i64 %0, %1
+  %6 = add nuw nsw i64 %5, %4
   ret i64 %6
 }
 

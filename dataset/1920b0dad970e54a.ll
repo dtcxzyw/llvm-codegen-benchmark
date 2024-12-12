@@ -12,7 +12,7 @@
 ; proxygen/optimized/ParseURL.cpp.ll
 ; proxygen/optimized/RFC2616.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i64 %1, ptr %2) #0 {
+define i64 @func0000000000000042(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq i64 %1, -1
   %4 = icmp eq ptr %2, null

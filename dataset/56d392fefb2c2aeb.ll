@@ -1,7 +1,8 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; gromacs/optimized/gmx_potential.cpp.ll
 ; gromacs/optimized/pdb2top.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; nuttx/optimized/lib_exp.c.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll

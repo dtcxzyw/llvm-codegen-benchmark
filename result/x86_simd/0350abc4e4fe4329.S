@@ -1,8 +1,8 @@
 .LCPI0_0:
 	.long	16                              # 0x10
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpled	%ymm0, %ymm1, %k1
+	vpcmpnltd	%ymm1, %ymm0, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [16,16,16,16,16,16,16,16]
 	retq
 .LCPI1_0:
@@ -17,6 +17,6 @@ func0000000000000006:                   # @func0000000000000006
 	.long	4294967293                      # 0xfffffffd
 func0000000000000004:                   # @func0000000000000004
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpnleud	%ymm0, %ymm1, %k1
+	vpcmpltud	%ymm1, %ymm0, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [4294967293,4294967293,4294967293,4294967293,4294967293,4294967293,4294967293,4294967293]
 	retq

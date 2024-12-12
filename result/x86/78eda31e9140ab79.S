@@ -1,28 +1,28 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movl	%edx, %ecx
 	leal	1(%rsi), %edx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	cmoval	%edx, %eax
+	cmpq	%rcx, %rdi
+	cmovbl	%edx, %eax
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	movl	%edx, %eax
 	leal	-1(%rsi), %ecx
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	movl	$1, %eax
-	cmoval	%ecx, %eax
+	cmovbl	%ecx, %eax
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movl	%edx, %eax
 	leal	1(%rsi), %ecx
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	movl	$1024, %eax                     # imm = 0x400
 	cmovel	%ecx, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	%edx, %eax
 	leal	1(%rsi), %ecx
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	movl	$1, %eax
 	cmovel	%ecx, %eax
 	retq

@@ -10,7 +10,7 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 .LCPI1_0:
 	.quad	11                              # 0xb
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2
@@ -20,7 +20,7 @@ func00000000000000f4:                   # @func00000000000000f4
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2
@@ -31,7 +31,7 @@ func000000000000008a:                   # @func000000000000008a
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2
@@ -66,7 +66,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 .LCPI6_0:
 	.quad	2047                            # 0x7ff
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2
@@ -90,7 +90,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI8_0:
 	.quad	15                              # 0xf
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2
@@ -101,6 +101,39 @@ func00000000000000f8:                   # @func00000000000000f8
 	vzeroupper
 	retq
 .LCPI9_0:
+	.quad	5000000000                      # 0x12a05f200
+func0000000000000108:                   # @func0000000000000108
+	vpslld	$31, %xmm2, %xmm2
+	vpsrad	$31, %xmm2, %xmm2
+	vpmovsxdq	%xmm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpcmpnleuq	.LCPI9_0(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI10_0:
+	.quad	5000000000                      # 0x12a05f200
+func0000000000000101:                   # @func0000000000000101
+	vpslld	$31, %xmm2, %xmm2
+	vpsrad	$31, %xmm2, %xmm2
+	vpmovsxdq	%xmm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpcmpeqq	.LCPI10_0(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000010c:                   # @func000000000000010c
+	vpslld	$31, %xmm2, %xmm2
+	vpsrad	$31, %xmm2, %xmm2
+	vpmovsxdq	%xmm2, %ymm2
+	vpsubq	%ymm1, %ymm2, %ymm1
+	vpcmpneqq	%ymm1, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI12_0:
 	.quad	2                               # 0x2
 func0000000000000004:                   # @func0000000000000004
 	vpslld	$31, %xmm2, %xmm2
@@ -108,11 +141,11 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovsxdq	%xmm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpltuq	.LCPI9_0(%rip){1to4}, %ymm0, %k0
+	vpcmpltuq	.LCPI12_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2
@@ -122,18 +155,16 @@ func00000000000000a1:                   # @func00000000000000a1
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2
-	vpsubq	%ymm2, %ymm1, %ymm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpsubq	%ymm0, %ymm2, %ymm0
-	vpcmpeqq	%ymm0, %ymm1, %k0
+	vpsubq	%ymm1, %ymm2, %ymm1
+	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2

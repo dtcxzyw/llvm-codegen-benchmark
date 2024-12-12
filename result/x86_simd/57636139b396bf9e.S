@@ -2,7 +2,7 @@
 	.long	2                               # 0x2
 .LCPI0_1:
 	.quad	1                               # 0x1
-func00000000000000a9:                   # @func00000000000000a9
+func0000000000000169:                   # @func0000000000000169
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpabsd	%xmm1, %xmm1
 	vpcmpltud	.LCPI0_0(%rip){1to4}, %xmm1, %k1

@@ -47,17 +47,27 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; opencv/optimized/beblid.cpp.ll
 ; opencv/optimized/fast_marching.cpp.ll
-; pbrt-v4/optimized/mipmap.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 2.000000e+00
-  %4 = fadd float %3, %1
+  %4 = fadd float %1, %3
   %5 = fcmp ult float %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000b(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fmul float %2, 0x3FEFFFFFC0000000
+  %4 = fadd float %1, %3
+  %5 = fcmp ule float %4, %0
   ret i1 %5
 }
 
@@ -68,8 +78,19 @@ entry:
 define i1 @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0x3FB99999A0000000
-  %4 = fadd float %3, %1
+  %4 = fadd float %1, %3
   %5 = fcmp ugt float %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; meshlab/optimized/edit_point.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fmul float %2, 5.000000e-01
+  %4 = fadd float %3, %1
+  %5 = fcmp ole float %4, %0
   ret i1 %5
 }
 

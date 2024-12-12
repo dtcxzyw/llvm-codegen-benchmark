@@ -1,4 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	andi	a2, a1, 255
 	li	a3, 6
 	andi	a1, a0, 255
@@ -15,7 +15,7 @@ func0000000000000044:                   # @func0000000000000044
 	li	a0, -48
 .LBB0_4:                                # %entry
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andi	a0, a0, 255
 	li	a2, 2
 	bgeu	a0, a2, .LBB1_2
@@ -27,22 +27,12 @@ func0000000000000014:                   # @func0000000000000014
 	snez	a0, a0
 	slli	a0, a0, 1
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000021:                   # @func0000000000000021
 	andi	a0, a0, 255
-	andi	a1, a1, 255
-	sltiu	a1, a1, 2
-	addi	a0, a0, -5
-	addi	a1, a1, 1
-	seqz	a0, a0
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	ret
-func0000000000000011:                   # @func0000000000000011
-	andi	a0, a0, 255
-	bnez	a0, .LBB3_2
+	bnez	a0, .LBB2_2
 	li	a0, 1
 	ret
-.LBB3_2:
+.LBB2_2:
 	andi	a0, a1, 255
 	seqz	a0, a0
 	xori	a0, a0, 3

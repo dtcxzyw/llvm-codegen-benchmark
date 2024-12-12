@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 24 occurrences:
 ; abc/optimized/sswRarity.c.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -22,6 +22,8 @@
 ; ruby/optimized/bignum.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -100,13 +102,15 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/sdf.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libjpeg-turbo/optimized/jidctred.c.ll
+; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
+; opencv/optimized/speech_recognition.cpp.ll
 ; spike/optimized/s_subMagsF64.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {

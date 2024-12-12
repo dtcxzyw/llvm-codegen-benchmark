@@ -28,13 +28,6 @@ func0000000000000005:                   # @func0000000000000005
 	li	a0, 24
 	vmerge.vxm	v8, v8, a0, v0
 	ret
-func0000000000000020:                   # @func0000000000000020
-	li	a0, 127
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vx	v0, v8, a0
-	vsll.vi	v8, v8, 5
-	vmerge.vim	v8, v8, 0, v0
-	ret
 func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vi	v0, v8, 0

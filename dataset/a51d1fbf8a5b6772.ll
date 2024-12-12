@@ -1,10 +1,10 @@
 
-%"class.std::vector.2715853" = type { %"struct.std::_Vector_base.2715854" }
-%"struct.std::_Vector_base.2715854" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2715855" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2715855" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2715856" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2715856" = type { ptr, ptr, ptr }
+%"class.std::vector.2828386" = type { %"struct.std::_Vector_base.2828387" }
+%"struct.std::_Vector_base.2828387" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" = type { ptr, ptr, ptr }
 
-; 97 occurrences:
+; 25 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/MD5Loader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
@@ -15,7 +15,6 @@
 ; assimp/optimized/XmlSerializer.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
-; gromacs/optimized/biasstate.cpp.ll
 ; icu/optimized/icuexportdata.ll
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
@@ -25,6 +24,23 @@
 ; llvm/optimized/ScheduleDAG.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
+; opencv/optimized/einsum_layer.cpp.ll
+; opencv/optimized/rtrees.cpp.ll
+; opencv/optimized/stitching_detailed.cpp.ll
+; opencv/optimized/tracking_online_mil.cpp.ll
+; openspiel/optimized/policy.cc.ll
+; wasmedge/optimized/helper.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 1
+  %3 = and i64 %2, 4294967295
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 72 occurrences:
+; gromacs/optimized/biasstate.cpp.ll
 ; oiio/optimized/DPXColorConverter.cpp.ll
 ; opencv/optimized/3calibration.cpp.ll
 ; opencv/optimized/Model.cpp.ll
@@ -48,7 +64,6 @@
 ; opencv/optimized/dls.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
-; opencv/optimized/einsum_layer.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/facemark.cpp.ll
 ; opencv/optimized/facemarkAAM.cpp.ll
@@ -82,7 +97,6 @@
 ; opencv/optimized/quadsubpix.cpp.ll
 ; opencv/optimized/randpattern.cpp.ll
 ; opencv/optimized/rapid.cpp.ll
-; opencv/optimized/rtrees.cpp.ll
 ; opencv/optimized/sampleDetectLandmarks.cpp.ll
 ; opencv/optimized/sampleDetectLandmarksvideo.cpp.ll
 ; opencv/optimized/sample_face_swapping.cpp.ll
@@ -92,28 +106,34 @@
 ; opencv/optimized/select3dobj.cpp.ll
 ; opencv/optimized/solvepnp.cpp.ll
 ; opencv/optimized/stereo_calib.cpp.ll
-; opencv/optimized/stitching_detailed.cpp.ll
 ; opencv/optimized/svm.cpp.ll
-; opencv/optimized/tracking_online_mil.cpp.ll
 ; opencv/optimized/train_HOG.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; opencv/optimized/video_homography.cpp.ll
 ; openjdk/optimized/zMark.ll
-; openspiel/optimized/policy.cc.ll
 ; pocketpy/optimized/expr.cpp.ll
-; wasmedge/optimized/helper.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 1
-  %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %2 = ashr exact i64 %1, 3
+  %3 = and i64 %2, -512
+  %4 = getelementptr nusw i64, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 10 occurrences:
-; abc/optimized/giaIso.c.ll
+; 1 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
+entry:
+  %2 = ashr i64 %1, 32
+  %3 = and i64 %2, -2
+  %4 = getelementptr nusw nuw %"class.std::vector.2828386", ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 9 occurrences:
+; abc/optimized/giaIso.c.ll
 ; freetype/optimized/ftbitmap.c.ll
 ; gromacs/optimized/tpxio.cpp.ll
 ; hyperscan/optimized/Parser.cpp.ll
@@ -125,19 +145,17 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = ashr i64 %1, 32
-  %3 = and i64 %2, -2
-  %4 = getelementptr nusw %"class.std::vector.2715853", ptr %0, i64 %3
+  %2 = ashr i64 %1, 30
+  %3 = and i64 %2, -4
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; oiio/optimized/imageio.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
-; opencv/optimized/nonrigid_icp.cpp.ll
 ; openusd/optimized/refinerFactory.cpp.ll
-; postgres/optimized/tsvector_op.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {

@@ -1,6 +1,8 @@
 
-; 127 occurrences:
+; 129 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; brotli/optimized/utf8_util.c.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clamav/optimized/unicode.cpp.ll
@@ -162,7 +164,7 @@ entry:
   ret i32 %2
 }
 
-; 52 occurrences:
+; 55 occurrences:
 ; clamav/optimized/dll.cpp.ll
 ; git/optimized/packfile.ll
 ; gromacs/optimized/colvarcomp_volmaps.cpp.ll
@@ -188,6 +190,7 @@ entry:
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/dxt.cpp.ll
 ; openjdk/optimized/jfrMemorySizer.ll
@@ -198,6 +201,7 @@ entry:
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/explain.ll
 ; postgres/optimized/nodeSort.ll
+; postgres/optimized/rangetypes_gist.ll
 ; qemu/optimized/hw_char_ipoctal232.c.ll
 ; qemu/optimized/hw_ipack_tpci200.c.ll
 ; raylib/optimized/raudio.c.ll
@@ -215,6 +219,7 @@ entry:
 ; yosys/optimized/firrtl.ll
 ; z3/optimized/dl_finite_product_relation.cpp.ll
 ; z3/optimized/dl_sieve_relation.cpp.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i8 %0) #0 {
 entry:

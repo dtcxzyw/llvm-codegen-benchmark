@@ -13,28 +13,28 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 99
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vrsub.vi	v8, v10, 0
 	vmax.vv	v8, v10, v8
 	vmsgtu.vi	v0, v8, 1
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vrsub.vi	v8, v10, 0
 	vmax.vv	v8, v10, v8
 	vmsgtu.vi	v0, v8, 1
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vrsub.vi	v8, v10, 0
 	vmax.vv	v8, v10, v8
 	vmsleu.vi	v0, v8, 9
 	ret
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vrsub.vi	v8, v10, 0
@@ -42,30 +42,30 @@ func00000000000000c8:                   # @func00000000000000c8
 	li	a0, 99
 	vmsgtu.vx	v0, v8, a0
 	ret
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vrsub.vi	v8, v10, 0
 	vmax.vv	v8, v10, v8
 	li	a0, 99
 	vmsgtu.vx	v0, v8, a0
-	ret
-func0000000000000028:                   # @func0000000000000028
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vrsub.vi	v8, v10, 0
-	vmax.vv	v8, v10, v8
-	li	a0, 99
-	vmsgtu.vx	v0, v8, a0
-	ret
-func0000000000000044:                   # @func0000000000000044
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vrsub.vi	v8, v10, 0
-	vmax.vv	v8, v10, v8
-	vmsleu.vi	v0, v8, 9
 	ret
 func0000000000000048:                   # @func0000000000000048
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 0
+	vrsub.vi	v8, v10, 0
+	vmax.vv	v8, v10, v8
+	li	a0, 99
+	vmsgtu.vx	v0, v8, a0
+	ret
+func0000000000000084:                   # @func0000000000000084
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 0
+	vrsub.vi	v8, v10, 0
+	vmax.vv	v8, v10, v8
+	vmsleu.vi	v0, v8, 9
+	ret
+func0000000000000088:                   # @func0000000000000088
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vrsub.vi	v8, v10, 0

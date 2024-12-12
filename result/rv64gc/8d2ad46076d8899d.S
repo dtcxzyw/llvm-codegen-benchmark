@@ -18,3 +18,14 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, 1024
 	addiw	a0, a0, -1
 	ret
+func0000000000000000:                   # @func0000000000000000
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_2
+	lui	a0, 4080
+	add	a0, a0, a1
+	srliw	a0, a0, 10
+	ret
+.LBB2_2:
+	lui	a0, 4
+	addiw	a0, a0, -1
+	ret

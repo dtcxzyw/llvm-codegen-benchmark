@@ -15,13 +15,13 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001da(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000001ff(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 2
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 2
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -36,13 +36,13 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000006f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 4
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -62,27 +62,39 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_dither.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000000df(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw float, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 16
-  %7 = getelementptr nusw float, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 16
+  %7 = getelementptr nusw nuw float, ptr %6, i64 %4
   ret ptr %7
 }
 
-; 2 occurrences:
-; clamav/optimized/autoit.c.ll
+; 1 occurrences:
 ; darktable/optimized/introspection_dither.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000005f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw float, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 16
-  %7 = getelementptr nusw float, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 16
+  %7 = getelementptr nusw nuw float, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; clamav/optimized/autoit.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -95,13 +107,13 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000000ef(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 10
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 10
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 

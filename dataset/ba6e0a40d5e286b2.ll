@@ -10,7 +10,7 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = xor i1 %1, true
   %6 = or i1 %4, %5
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

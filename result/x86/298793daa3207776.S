@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	orl	%edi, %esi
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movl	%esi, %eax
 	imulq	$138547333, %rax, %rax          # imm = 0x8421085
 	shrq	$32, %rax

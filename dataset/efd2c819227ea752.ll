@@ -29,7 +29,7 @@
 define i32 @func0000000000000000(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
@@ -48,6 +48,7 @@ entry:
 ; gromacs/optimized/gmx_hydorder.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_sdl_window.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
@@ -56,7 +57,6 @@ entry:
 ; meshlab/optimized/editpickpoints.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -127,7 +127,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -138,7 +138,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 

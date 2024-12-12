@@ -18,15 +18,15 @@ entry:
 ; bullet3/optimized/btMultiBody.ll
 ; coremark/optimized/core_matrix.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw float, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; bullet3/optimized/btMultiBody.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -35,7 +35,6 @@ entry:
 ; faiss/optimized/VectorTransform.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; openblas/optimized/dtfsm.c.ll
 ; openblas/optimized/dtgex2.c.ll
 ; opencv/optimized/fgs_filter.cpp.ll
 ; openspiel/optimized/colored_trails.cc.ll
@@ -46,46 +45,44 @@ entry:
 ; openspiel/optimized/trade_comm.cc.ll
 ; pbrt-v4/optimized/samplers.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw float, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw double, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw double, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; meshlab/optimized/filter_color_projection.cpp.ll
-; openblas/optimized/dtfsm.c.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw float, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; graphviz/optimized/solve.c.ll
 ; openblas/optimized/dlalsd.c.ll
 ; openblas/optimized/dsfrk.c.ll
 ; openblas/optimized/dstedc.c.ll
 ; openblas/optimized/dtgex2.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,12 @@
 
-; 2 occurrences:
+; 9 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind
@@ -11,7 +18,14 @@ entry:
   ret i1 %3
 }
 
-; 13 occurrences:
+; 20 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; postgres/optimized/execMain.ll
 ; postgres/optimized/extended_stats.ll
 ; postgres/optimized/rangetypes_gist.ll
@@ -47,7 +61,7 @@ entry:
 ; slurm/optimized/slurmdbd_pack.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0) #0 {
+define i1 @func0000000000000104(i32 %0) #0 {
 entry:
   %1 = trunc nuw i32 %0 to i16
   %2 = add i16 %1, -1
@@ -55,8 +69,14 @@ entry:
   ret i1 %3
 }
 
-; 21 occurrences:
+; 27 occurrences:
 ; abc/optimized/deflate.c.ll
+; boost/optimized/async.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/deflate.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; eastl/optimized/EAScanfCore.cpp.ll
@@ -86,17 +106,6 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
-; libevent/optimized/evdns.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d8(i32 %0) #0 {
-entry:
-  %1 = trunc nuw nsw i32 %0 to i16
-  %2 = add i16 %1, -6
-  %3 = icmp ult i16 %2, -5
-  ret i1 %3
-}
-
 ; 8 occurrences:
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; zstd/optimized/zstd_v01.c.ll
@@ -117,7 +126,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i16
   %2 = add nsw i16 %1, -137
@@ -128,7 +137,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0) #0 {
+define i1 @func00000000000000a1(i32 %0) #0 {
 entry:
   %1 = trunc nsw i32 %0 to i16
   %2 = icmp eq i16 %1, 11
@@ -138,7 +147,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-bgp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0) #0 {
+define i1 @func0000000000000101(i32 %0) #0 {
 entry:
   %1 = trunc nuw i32 %0 to i16
   %2 = icmp eq i16 %1, 9

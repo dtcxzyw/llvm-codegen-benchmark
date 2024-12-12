@@ -27,6 +27,11 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, -1
 	ori	a0, a0, 1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	sltu	a0, a0, a1
+	neg	a0, a0
+	ori	a0, a0, 1
+	ret
 func000000000000000c:                   # @func000000000000000c
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -36,6 +41,11 @@ func0000000000000005:                   # @func0000000000000005
 	sltu	a0, a1, a0
 	negw	a0, a0
 	andi	a0, a0, 22
+	ret
+func0000000000000018:                   # @func0000000000000018
+	sltu	a0, a1, a0
+	addi	a0, a0, -1
+	ori	a0, a0, 1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slt	a0, a1, a0

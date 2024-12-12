@@ -6,7 +6,7 @@ func0000000000000004:                   # @func0000000000000004
 	and	a0, a0, a2
 	ret
 func000000000000000a:                   # @func000000000000000a
-	addi	a2, a2, -1
+	addi	a2, a2, 1
 	sext.b	a2, a2
 	slti	a2, a2, 0
 	xori	a2, a2, 1

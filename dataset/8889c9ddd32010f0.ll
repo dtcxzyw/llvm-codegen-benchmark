@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; linux/optimized/bus.ll
+; linux/optimized/jack.ll
 ; postgres/optimized/hashutil.ll
 ; qemu/optimized/hw_audio_es1370.c.ll
 ; Function Attrs: nounwind

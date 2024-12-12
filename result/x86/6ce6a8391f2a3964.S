@@ -4,15 +4,14 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	negq	%rax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	xorl	%eax, %eax
-	cmpq	$1, %rdi
-	sete	%al
-	negq	%rax
-	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax
 	negq	%rdi
+	sbbq	%rax, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	xorl	%eax, %eax
+	cmpq	$1, %rdi
 	sbbq	%rax, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
@@ -26,9 +25,20 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	negq	%rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	shrq	$32, %rdi
+func0000000000000018:                   # @func0000000000000018
+	shrq	$54, %rdi
 	xorl	%eax, %eax
-	cmpq	$1, %rdi
+	negq	%rdi
+	sbbq	%rax, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	shrq	$33, %rdi
+	xorl	%eax, %eax
+	cmpl	$5, %edi
+	sbbq	%rax, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpq	$2, %rdi
 	sbbq	%rax, %rax
 	retq

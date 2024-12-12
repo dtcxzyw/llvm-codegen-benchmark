@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; linux/optimized/auth_gss.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/clnt.ll
@@ -21,7 +21,6 @@
 ; linux/optimized/sky2.ll
 ; linux/optimized/transport.ll
 ; linux/optimized/tree.ll
-; linux/optimized/umh.ll
 ; linux/optimized/urb.ll
 ; linux/optimized/virtgpu_ioctl.ll
 ; linux/optimized/virtgpu_kms.ll

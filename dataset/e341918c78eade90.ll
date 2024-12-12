@@ -1,11 +1,10 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; ipopt/optimized/IpTNLPAdapter.ll
 ; openjdk/optimized/memoryFileTracker.ll
 ; openjdk/optimized/nmtNativeCallStackStorage.ll
-; proj/optimized/networkfilemanager.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i32 %1, ptr %2) #0 {
+define ptr @func0000000000000041(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = sext i32 %1 to i64
   %4 = getelementptr nusw double, ptr %2, i64 %3
@@ -18,7 +17,7 @@ entry:
 ; protobuf/optimized/coded_stream.cc.ll
 ; sentencepiece/optimized/coded_stream.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, ptr %2) #0 {
+define ptr @func000000000000004a(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = sext i32 %1 to i64
   %4 = getelementptr nusw i8, ptr %2, i64 %3

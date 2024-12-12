@@ -225,47 +225,47 @@ func0000000000000001:                   # @func0000000000000001
 	vpternlogd	$248, .LCPI4_3(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI5_0:
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
-	.short	64                              # 0x40
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
 .LCPI5_1:
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
 .LCPI5_2:
-	.short	64                              # 0x40
-	.short	64                              # 0x40
+	.short	2016                            # 0x7e0
+	.short	2016                            # 0x7e0
 .LCPI5_3:
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
+	.short	63488                           # 0xf800
+	.short	63488                           # 0xf800
 func000000000000000f:                   # @func000000000000000f
-	vpsllw	$6, %ymm2, %ymm2
+	vpsllw	$3, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI5_2(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 & mem)
 	vpternlogd	$248, .LCPI5_3(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq

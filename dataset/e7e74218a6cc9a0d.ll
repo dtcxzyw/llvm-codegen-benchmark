@@ -24,7 +24,13 @@ entry:
   ret i32 %2
 }
 
-; 11 occurrences:
+; 17 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; nuttx/optimized/lib_hexdumpstream.c.ll
 ; opencv/optimized/Drawing_2.cpp.ll
 ; opencv/optimized/drawing.cpp.ll

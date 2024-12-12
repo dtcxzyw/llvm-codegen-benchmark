@@ -54,7 +54,7 @@ entry:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = xor i1 %2, true
@@ -63,41 +63,17 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; llvm/optimized/ParseStmtAsm.cpp.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = xor i1 %2, true
   %4 = icmp ne i32 %0, 12
-  %5 = select i1 %3, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 2 occurrences:
-; glslang/optimized/PpScanner.cpp.ll
-; wireshark/optimized/packet-eth.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
-entry:
-  %2 = trunc nuw i8 %1 to i1
-  %3 = xor i1 %2, true
-  %4 = icmp sgt i32 %0, 300
-  %5 = select i1 %3, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; proj/optimized/io.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i32 %0, i8 %1) #0 {
-entry:
-  %2 = trunc i8 %1 to i1
-  %3 = xor i1 %2, true
-  %4 = icmp slt i32 %0, 0
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }

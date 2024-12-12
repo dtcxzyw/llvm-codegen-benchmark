@@ -1,43 +1,37 @@
 
-; 27 occurrences:
+; 20 occurrences:
 ; abc/optimized/deflate.c.ll
 ; cmake/optimized/deflate.c.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
-; glslang/optimized/ParseHelper.cpp.ll
 ; graphviz/optimized/exeval.c.ll
 ; graphviz/optimized/write.c.ll
 ; gromacs/optimized/deflate.c.ll
 ; icu/optimized/util.ll
 ; libquic/optimized/deflate.c.ll
-; linux/optimized/trace_probe.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/ControlHeightReduction.cpp.ll
-; llvm/optimized/CoroFrame.cpp.ll
-; llvm/optimized/EarlyCSE.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
-; llvm/optimized/LICM.cpp.ll
-; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/ValueTracking.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; nuklear/optimized/unity.c.ll
 ; openusd/optimized/clipsAPI.cpp.ll
 ; openusd/optimized/fileIO_Common.cpp.ll
 ; openusd/optimized/schemaRegistry.cpp.ll
 ; ruby/optimized/encoding.ll
-; ruby/optimized/regexec.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 10
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 73 occurrences:
+; 74 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/sort_by_side.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
@@ -139,7 +133,6 @@ entry:
 ; opencv/optimized/minmax.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/dependencies.ll
-; openjdk/optimized/utf8.ll
 ; openssl/optimized/libcrypto-lib-pem_lib.ll
 ; openssl/optimized/libcrypto-shlib-pem_lib.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
@@ -157,13 +150,14 @@ entry:
 ; postgres/optimized/xlogrecovery.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/lockstep.ll
+; rocksdb/optimized/filter_policy.cc.ll
 ; slurm/optimized/acct_gather.ll
 ; slurm/optimized/cons_helpers.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp eq i32 %2, 1
+  %3 = icmp eq i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
   %5 = or i1 %4, %0
   ret i1 %5
@@ -200,15 +194,25 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/mrcdensitymapheader.cpp.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; linux/optimized/dm-ioctl.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
-; llvm/optimized/MCWin64EH.cpp.ll
-; openjdk/optimized/dwarf.ll
 ; openjdk/optimized/elfFile.ll
 ; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 63
+  %4 = select i1 %1, i1 true, i1 %3
+  %5 = or i1 %4, %0
+  ret i1 %5
+}
+
+; 4 occurrences:
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; linux/optimized/dm-ioctl.ll
+; llvm/optimized/MCWin64EH.cpp.ll
+; openjdk/optimized/dwarf.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -229,7 +233,7 @@ define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

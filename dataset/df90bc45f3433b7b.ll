@@ -1,14 +1,12 @@
 
-; 149 occurrences:
+; 144 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/amapMerge.c.ll
-; abc/optimized/fraigUtil.c.ll
 ; abc/optimized/fretMain.c.ll
-; abc/optimized/giaEra2.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/mpmPre.c.ll
@@ -40,7 +38,6 @@
 ; eastl/optimized/EAMemory.cpp.ll
 ; graphviz/optimized/xlabels.c.ll
 ; hdf5/optimized/H5FDcore.c.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; hermes/optimized/Path.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/ucnvhz.ll
@@ -58,7 +55,6 @@
 ; linux/optimized/cistpl.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/intel_pch_refclk.ll
 ; linux/optimized/intel_workarounds.ll
@@ -134,7 +130,6 @@
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/tcg.c.ll
 ; qemu/optimized/util_mmap-alloc.c.ll
 ; sqlite/optimized/sqlite3.ll
@@ -158,36 +153,9 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
-; cpython/optimized/codeobject.ll
-; linux/optimized/e1000_main.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/intel_display.ll
-; linux/optimized/intel_display_power.ll
-; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/nfs4proc.ll
-; php/optimized/pcre2_substitute.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
-; wasmtime-rs/optimized/48myxw210mngc99c.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
-; wireshark/optimized/blf.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 16
-  %3 = and i32 %2, 196608
-  %4 = or i32 %3, %0
-  ret i32 %4
-}
-
-; 10 occurrences:
-; abc/optimized/giaCof.c.ll
-; abc/optimized/giaEra2.c.ll
-; abc/optimized/giaMf.c.ll
+; 6 occurrences:
 ; abc/optimized/ivyUtil.c.ll
 ; eastl/optimized/EAMemory.cpp.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; libquic/optimized/e_rc2.c.ll
 ; linux/optimized/io_apic.ll
 ; qemu/optimized/tcg.c.ll
@@ -206,8 +174,30 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
+}
+
+; 12 occurrences:
+; cpython/optimized/codeobject.ll
+; linux/optimized/e1000_main.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/intel_display.ll
+; linux/optimized/intel_display_power.ll
+; linux/optimized/intel_dpll_mgr.ll
+; linux/optimized/nfs4proc.ll
+; php/optimized/pcre2_substitute.ll
+; wasmtime-rs/optimized/48myxw210mngc99c.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; wireshark/optimized/blf.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 11
+  %3 = and i32 %2, 1073741824
+  %4 = or i32 %0, %3
+  ret i32 %4
 }
 
 ; 1 occurrences:

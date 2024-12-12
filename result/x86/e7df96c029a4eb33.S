@@ -1,4 +1,4 @@
-func00000000000007ba:                   # @func00000000000007ba
+func0000000000001d6a:                   # @func0000000000001d6a
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpl	%edx, %esi
@@ -7,7 +7,7 @@ func00000000000007ba:                   # @func00000000000007ba
 	testl	%edi, %edi
 	cmovgl	%ecx, %eax
 	retq
-func0000000000000b71:                   # @func0000000000000b71
+func0000000000002ce1:                   # @func0000000000002ce1
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpl	%edx, %esi
@@ -16,16 +16,7 @@ func0000000000000b71:                   # @func0000000000000b71
 	testl	%edi, %edi
 	cmovel	%ecx, %eax
 	retq
-func0000000000000151:                   # @func0000000000000151
-	xorl	%eax, %eax
-	xorl	%ecx, %ecx
-	cmpl	%edx, %esi
-	sete	%al
-	setbe	%cl
-	testl	%edi, %edi
-	cmovel	%ecx, %eax
-	retq
-func0000000000000541:                   # @func0000000000000541
+func0000000000001481:                   # @func0000000000001481
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpl	%edx, %esi
@@ -34,7 +25,16 @@ func0000000000000541:                   # @func0000000000000541
 	testl	%edi, %edi
 	cmovel	%ecx, %eax
 	retq
-func0000000000000451:                   # @func0000000000000451
+func00000000000028c1:                   # @func00000000000028c1
+	xorl	%eax, %eax
+	xorl	%ecx, %ecx
+	cmpl	%edx, %esi
+	setg	%al
+	setl	%cl
+	cmpl	$1, %edi
+	cmovel	%ecx, %eax
+	retq
+func00000000000010a1:                   # @func00000000000010a1
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpl	%edx, %esi
@@ -43,7 +43,7 @@ func0000000000000451:                   # @func0000000000000451
 	testl	%edi, %edi
 	cmovel	%ecx, %eax
 	retq
-func00000000000007b6:                   # @func00000000000007b6
+func0000000000001d66:                   # @func0000000000001d66
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpl	%edx, %esi
@@ -52,7 +52,7 @@ func00000000000007b6:                   # @func00000000000007b6
 	testl	%edi, %edi
 	cmovsl	%ecx, %eax
 	retq
-func0000000000000b76:                   # @func0000000000000b76
+func0000000000002ce6:                   # @func0000000000002ce6
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpl	%edx, %esi
@@ -61,7 +61,7 @@ func0000000000000b76:                   # @func0000000000000b76
 	testl	%edi, %edi
 	cmovsl	%ecx, %eax
 	retq
-func00000000000007b1:                   # @func00000000000007b1
+func0000000000001d61:                   # @func0000000000001d61
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpl	%edx, %esi
@@ -70,7 +70,7 @@ func00000000000007b1:                   # @func00000000000007b1
 	testl	%edi, %edi
 	cmovel	%ecx, %eax
 	retq
-func0000000000000a6a:                   # @func0000000000000a6a
+func00000000000028ca:                   # @func00000000000028ca
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpl	%edx, %esi

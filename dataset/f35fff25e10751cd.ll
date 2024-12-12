@@ -13,9 +13,8 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; icu/optimized/number_mapper.ll
-; linux/optimized/nls_utf8.ll
 ; minetest/optimized/guiChatConsole.cpp.ll
 ; opencv/optimized/tr_icdar_benchmark.cpp.ll
 ; openjdk/optimized/OGLContext.ll

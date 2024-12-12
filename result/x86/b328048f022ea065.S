@@ -5,13 +5,13 @@ func0000000000000040:                   # @func0000000000000040
 	movl	%esi, %ecx
 	leaq	24(%rcx,%rax), %rax
 	retq
-func00000000000001aa:                   # @func00000000000001aa
+func00000000000001bf:                   # @func00000000000001bf
 	leaq	(%rdx,%rdx,4), %rax
 	leaq	(%rdi,%rax,4), %rax
 	movl	%esi, %ecx
 	leaq	1(%rcx,%rax), %rax
 	retq
-func00000000000001e8:                   # @func00000000000001e8
+func00000000000001fc:                   # @func00000000000001fc
 	imulq	$544, %rdx, %rax                # imm = 0x220
 	addq	%rdi, %rax
 	movl	%esi, %ecx

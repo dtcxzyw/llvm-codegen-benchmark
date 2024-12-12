@@ -1,6 +1,17 @@
 
-; 183 occurrences:
-; arrow/optimized/value_parsing.cc.ll
+; 1 occurrences:
+; openjdk/optimized/threadHeapSampler.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i64 %0) #0 {
+entry:
+  %1 = lshr i64 %0, 22
+  %2 = trunc i64 %1 to i32
+  %3 = and i32 %2, 67108863
+  %4 = add nuw nsw i32 %3, 1
+  ret i32 %4
+}
+
+; 181 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -88,7 +99,6 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; mitsuba3/optimized/string.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -189,20 +199,7 @@ entry:
   %1 = lshr i64 %0, 52
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 2047
-  %4 = add nsw i32 %3, -1075
-  ret i32 %4
-}
-
-; 2 occurrences:
-; abseil-cpp/optimized/exponential_biased.cc.ll
-; openjdk/optimized/threadHeapSampler.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i64 %0) #0 {
-entry:
-  %1 = lshr i64 %0, 22
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 67108863
-  %4 = add nuw nsw i32 %3, 1
+  %4 = add nsw i32 %3, -1023
   ret i32 %4
 }
 

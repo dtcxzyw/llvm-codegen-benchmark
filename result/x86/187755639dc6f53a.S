@@ -4,7 +4,7 @@ func0000000000000050:                   # @func0000000000000050
 	movslq	%esi, %rax
 	leaq	8(%rdi,%rax,4), %rax
 	retq
-func000000000000005a:                   # @func000000000000005a
+func000000000000005b:                   # @func000000000000005b
 	subl	%edx, %esi
 	addl	%esi, %esi
 	movslq	%esi, %rax

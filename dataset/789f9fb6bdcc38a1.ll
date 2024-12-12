@@ -1,9 +1,9 @@
 
-%class.ShenandoahMarkTask.2619533 = type { i64 }
-%struct.Mig_Obj_t_.2765506 = type { [4 x %struct.Mig_Fan_t_.2765507] }
-%struct.Mig_Fan_t_.2765507 = type { i32 }
+%class.ShenandoahMarkTask.2732980 = type { i64 }
+%struct.Mig_Obj_t_.2877741 = type { [4 x %struct.Mig_Fan_t_.2877742] }
+%struct.Mig_Fan_t_.2877742 = type { i32 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; linux/optimized/bitset.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/ematch.ll
@@ -24,7 +24,6 @@
 ; linux/optimized/tg3.ll
 ; linux/optimized/tlshd.ll
 ; postgres/optimized/ginxlog.ll
-; protobuf/optimized/map.cc.ll
 ; qemu/optimized/hw_net_rocker_rocker.c.ll
 ; qemu/optimized/hw_net_rocker_rocker_of_dpa.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
@@ -80,16 +79,16 @@ entry:
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; openjdk/optimized/ps_core.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 3
   %3 = and i32 %2, -4
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; clamav/optimized/pe.c.ll
@@ -119,6 +118,7 @@ entry:
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
+; protobuf/optimized/map.cc.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/rax.ll
 ; sqlite/optimized/sqlite3.ll
@@ -127,12 +127,12 @@ entry:
 ; xgboost/optimized/recordio.cc.ll
 ; xgboost/optimized/recordio_split.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -187,12 +187,12 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; z3/optimized/smt_case_split_queue.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 131071
   %3 = and i32 %2, 131071
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %class.ShenandoahMarkTask.2619533, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %class.ShenandoahMarkTask.2732980, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -210,16 +210,16 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 4095
   %3 = and i32 %2, 4095
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %struct.Mig_Obj_t_.2765506, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.Mig_Obj_t_.2877741, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 24 occurrences:
+; 21 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; linux/optimized/arc4.ll
 ; linux/optimized/avc.ll
@@ -231,13 +231,10 @@ entry:
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/iommu-traces.ll
 ; linux/optimized/ioremap.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/nlattr.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/r8169_main.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/sched.ll
 ; linux/optimized/tg3.ll
@@ -283,12 +280,12 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/webp_dec.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 9
   %3 = and i32 %2, -2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -9,7 +9,7 @@
 ; velox/optimized/FileSystems.cpp.ll
 ; z3/optimized/hwf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0) #0 {
+define i1 @func000000000000018c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 255
   %2 = icmp ne i64 %1, 0
@@ -21,10 +21,10 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/vaeskf2_vi.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0) #0 {
+define i1 @func0000000000000198(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 15
-  %2 = icmp ugt i64 %1, 1
+  %2 = icmp samesign ugt i64 %1, 1
   %3 = icmp ne i64 %1, 15
   %4 = and i1 %2, %3
   ret i1 %4

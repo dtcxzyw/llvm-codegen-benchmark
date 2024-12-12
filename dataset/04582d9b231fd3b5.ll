@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; cmake/optimized/json_value.cpp.ll
@@ -20,8 +20,6 @@
 ; postgres/optimized/pg_prng_srv.ll
 ; proxygen/optimized/Sampling.cpp.ll
 ; quantlib/optimized/exponentialintegrals.ll
-; quest/optimized/mt19937ar.c.ll
-; redis/optimized/mt19937-64.ll
 ; ruby/optimized/numeric.ll
 ; verilator/optimized/V3Stats.cpp.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll

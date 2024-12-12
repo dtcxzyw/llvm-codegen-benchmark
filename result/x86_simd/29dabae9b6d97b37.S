@@ -48,7 +48,7 @@ func0000000000000006:                   # @func0000000000000006
 	.long	32768                           # 0x8000
 .LCPI4_2:
 	.long	32767                           # 0x7fff
-func0000000000000022:                   # @func0000000000000022
+func0000000000000062:                   # @func0000000000000062
 	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm2, %k1
 	vandps	.LCPI4_1(%rip){1to8}, %ymm1, %ymm1
 	vorps	.LCPI4_2(%rip){1to8}, %ymm1, %ymm1 {%k1}

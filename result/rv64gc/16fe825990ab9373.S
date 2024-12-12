@@ -1,23 +1,33 @@
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	or	a1, a1, a2
 	addi	a1, a1, 13
 	sltu	a0, a0, a1
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	or	a1, a1, a2
 	addi	a1, a1, 13
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	or	a1, a1, a2
 	addi	a1, a1, -12
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	or	a1, a1, a2
 	addi	a1, a1, -35
+	sltu	a0, a1, a0
+	ret
+func00000000000000f8:                   # @func00000000000000f8
+	or	a1, a1, a2
+	addi	a1, a1, 2
+	sltu	a0, a0, a1
+	ret
+func00000000000000a4:                   # @func00000000000000a4
+	or	a1, a1, a2
+	addi	a1, a1, -1
 	sltu	a0, a1, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -32,13 +42,13 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	or	a1, a1, a2
 	addi	a1, a1, -24
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	or	a1, a1, a2
 	li	a2, 1
 	slli	a2, a2, 31
@@ -56,7 +66,19 @@ func0000000000000009:                   # @func0000000000000009
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func0000000000000075:                   # @func0000000000000075
+func0000000000000061:                   # @func0000000000000061
+	or	a1, a1, a2
+	addi	a1, a1, 1
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func00000000000000f5:                   # @func00000000000000f5
+	or	a1, a1, a2
+	addi	a1, a1, 2
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
+	ret
+func00000000000000e5:                   # @func00000000000000e5
 	or	a1, a1, a2
 	addi	a1, a1, 2
 	sltu	a0, a0, a1

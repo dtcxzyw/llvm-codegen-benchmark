@@ -1,6 +1,7 @@
 
-; 31 occurrences:
+; 33 occurrences:
 ; abseil-cpp/optimized/demangle.cc.ll
+; assimp/optimized/XFileParser.cpp.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; draco/optimized/parser_utils.cc.ll
 ; flac/optimized/utils.c.ll
@@ -11,6 +12,7 @@
 ; jq/optimized/decNumber.ll
 ; llvm/optimized/FormatString.cpp.ll
 ; llvm/optimized/VersionTuple.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; nuttx/optimized/lib_inetaton.c.ll
 ; php/optimized/conv.ll
 ; php/optimized/pcre2_compile.ll
@@ -187,7 +189,8 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -245,14 +248,15 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; cpython/optimized/_codecs_cn.ll
 ; slurm/optimized/parse_time.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000077(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
-  %3 = add nsw i32 %2, -480
+  %3 = add nsw i32 %2, -48
   %4 = zext nneg i8 %0 to i32
   %5 = add nuw nsw i32 %3, %4
   ret i32 %5

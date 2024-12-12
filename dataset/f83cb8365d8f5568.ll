@@ -21,11 +21,10 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaTsim.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
 ; linux/optimized/regset.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
@@ -38,10 +37,12 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; abc/optimized/ivySeq.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; hermes/optimized/BytecodeFormConverter.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; lua/optimized/lcode.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {

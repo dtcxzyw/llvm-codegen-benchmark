@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	movq	%rdx, %rax
 	negq	%rax
 	cmovsq	%rdx, %rax
@@ -14,7 +14,7 @@ func0000000000000018:                   # @func0000000000000018
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000070:                   # @func0000000000000070
 	movq	%rdx, %rax
 	negq	%rax
 	cmovsq	%rdx, %rax
@@ -22,7 +22,7 @@ func0000000000000030:                   # @func0000000000000030
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000e8:                   # @func00000000000000e8
 	movq	%rdx, %rax
 	negq	%rax
 	cmovsq	%rdx, %rax
@@ -38,7 +38,7 @@ func000000000000000e:                   # @func000000000000000e
 	setle	%al
 	orb	%dil, %al
 	retq
-func000000000000002e:                   # @func000000000000002e
+func000000000000004e:                   # @func000000000000004e
 	movq	%rdx, %rax
 	negq	%rax
 	cmovsq	%rdx, %rax

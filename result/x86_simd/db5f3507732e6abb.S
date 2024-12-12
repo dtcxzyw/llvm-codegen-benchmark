@@ -19,14 +19,14 @@ func000000000000000e:                   # @func000000000000000e
 	vpsubq	%ymm1, %ymm2, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
-func000000000000000d:                   # @func000000000000000d
+func0000000000000008:                   # @func0000000000000008
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2
 	vpsubq	%ymm1, %ymm2, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000d:                   # @func000000000000000d
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2

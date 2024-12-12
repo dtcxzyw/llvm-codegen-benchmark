@@ -33,19 +33,12 @@ func0000000000000080:                   # @func0000000000000080
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000010:                   # @func0000000000000010
-	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2 # xmm2 = ~xmm2
-	vpaddd	%xmm2, %xmm0, %xmm0
-	vzeroupper
-	retq
-.LCPI5_0:
+.LCPI4_0:
 	.long	1086                            # 0x43e
 func00000000000000d5:                   # @func00000000000000d5
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpsubd	%xmm2, %xmm0, %xmm0
-	vpaddd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
+	vpaddd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

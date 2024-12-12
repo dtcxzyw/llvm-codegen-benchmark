@@ -10,6 +10,12 @@ func0000000000000010:                   # @func0000000000000010
 	seta	%al
 	orb	%dil, %al
 	retq
+func0000000000000030:                   # @func0000000000000030
+	andb	$1, %dl
+	cmpb	%sil, %dl
+	seta	%al
+	orb	%dil, %al
+	retq
 func0000000000000018:                   # @func0000000000000018
 	andb	$1, %dl
 	cmpb	%sil, %dl

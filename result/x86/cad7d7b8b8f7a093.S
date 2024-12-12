@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%edi, %eax
 	orl	$4096, %eax                     # imm = 0x1000
 	testq	$-5, %rsi
@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	testq	$-5, %rsi
 	cmovel	%edi, %eax
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movabsq	$1095216660480, %rcx            # imm = 0xFF00000000
 	andq	%rsi, %rcx
 	movl	%edi, %eax

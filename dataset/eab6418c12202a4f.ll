@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; php/optimized/zend_ini.ll
 ; ruby/optimized/gc.ll
 ; ruby/optimized/numeric.ll
@@ -12,7 +13,8 @@ entry:
   ret i64 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

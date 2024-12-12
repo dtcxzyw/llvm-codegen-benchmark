@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 69 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/ivyTable.c.ll
 ; abc/optimized/mpmDsd.c.ll
@@ -24,10 +24,14 @@
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_gt_pm_debugfs.ll
 ; linux/optimized/intel_rps.ll
+; linux/optimized/libahci.ll
 ; linux/optimized/maple_tree.ll
+; linux/optimized/uncore_nhmex.ll
 ; llvm/optimized/DeclObjC.cpp.ll
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
@@ -53,11 +57,15 @@
 ; php/optimized/ir.ll
 ; postgres/optimized/utf8_and_gb18030.ll
 ; protobuf/optimized/parse_function_generator.cc.ll
+; qemu/optimized/hw_dma_sifive_pdma.c.ll
+; qemu/optimized/hw_usb_hcd-uhci.c.ll
 ; recastnavigation/optimized/DebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; ruby/optimized/date_core.ll
 ; ruby/optimized/time.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; stb/optimized/stb_connected_components.c.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; wireshark/optimized/prefs.c.ll
 ; yosys/optimized/dfflegalize.ll

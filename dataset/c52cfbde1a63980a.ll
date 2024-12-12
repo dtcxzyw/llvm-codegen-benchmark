@@ -1,6 +1,7 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/gregorian.ll
 ; brotli/optimized/block_splitter.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; cpython/optimized/unicodedata.ll

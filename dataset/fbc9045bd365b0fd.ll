@@ -6,7 +6,7 @@
 ; openjdk/optimized/superword.ll
 ; php/optimized/fsmagic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = and i32 %2, 511
@@ -21,7 +21,7 @@ entry:
 ; glslang/optimized/Initialize.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = and i32 %2, 255
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000118(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = and i32 %2, 16384
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ASTUnit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000102(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = and i32 %2, 127
@@ -61,7 +61,7 @@ entry:
 ; linux/optimized/io_uring.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000302(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = and i32 %2, 464896
@@ -75,7 +75,7 @@ entry:
 ; cpython/optimized/compile.ll
 ; cpython/optimized/flowgraph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000308(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = and i32 %2, 8

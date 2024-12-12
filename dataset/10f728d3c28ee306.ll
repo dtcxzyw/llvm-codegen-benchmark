@@ -1,9 +1,11 @@
 
-; 21 occurrences:
+; 25 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_array.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/iffinput.cpp.ll
@@ -21,21 +23,24 @@
 ; raylib/optimized/rmodels.c.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = mul i32 %4, %0
   ret i32 %5
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
 ; libwebp/optimized/lossless.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; oiio/optimized/bmpinput.cpp.ll
 ; oiio/optimized/icooutput.cpp.ll
@@ -66,7 +71,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = mul nsw i32 %4, %0
   ret i32 %5
 }
@@ -81,8 +86,8 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %1
-  %5 = mul nsw i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -93,8 +98,8 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %1
-  %5 = mul i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = mul i32 %0, %4
   ret i32 %5
 }
 

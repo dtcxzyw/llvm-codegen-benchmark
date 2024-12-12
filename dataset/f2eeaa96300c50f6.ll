@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; icu/optimized/double-conversion-strtod.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
 ; openusd/optimized/strtod.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind

@@ -23,7 +23,8 @@ entry:
   ret double %2
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/area.ll
 ; brotli/optimized/bit_cost.c.ll
 ; ncnn/optimized/paramdict.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll

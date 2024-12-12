@@ -11,7 +11,7 @@ define i1 @func0000000000000142(float %0, i32 %1, float %2) #0 {
 entry:
   %3 = fadd float %2, %0
   %4 = uitofp nneg i32 %1 to float
-  %5 = fcmp ogt float %4, %0
+  %5 = fcmp olt float %0, %4
   %6 = fcmp ogt float %3, %4
   %7 = and i1 %5, %6
   ret i1 %7

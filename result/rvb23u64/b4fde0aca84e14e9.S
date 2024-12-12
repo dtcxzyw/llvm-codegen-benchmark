@@ -1,10 +1,10 @@
 func0000000000000010:                   # @func0000000000000010
 	zext.h	a1, a1
-	addi	a1, a1, -13
-	li	a2, -896
+	addi	a1, a1, -16
+	li	a2, -4
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addiw	a0, a0, 1022
+	addiw	a0, a0, 13
 	ret
 func000000000000001f:                   # @func000000000000001f
 	zext.h	a1, a1

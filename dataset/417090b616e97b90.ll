@@ -1,9 +1,8 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; cmake/optimized/crc32.c.ll
 ; faiss/optimized/random.cpp.ll
 ; glslang/optimized/Constant.cpp.ll
-; libquic/optimized/x_long.c.ll
 ; lief/optimized/aes.c.ll
 ; lief/optimized/gcm.c.ll
 ; linux/optimized/process.ll

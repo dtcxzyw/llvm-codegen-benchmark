@@ -4,7 +4,7 @@
 ; openjdk/optimized/signals_posix.ll
 ; openjdk/optimized/vmError_posix.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000238(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000858(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 7
   %3 = icmp eq i32 %1, 11

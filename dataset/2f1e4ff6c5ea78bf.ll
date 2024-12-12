@@ -1,5 +1,5 @@
 
-; 210 occurrences:
+; 211 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -54,6 +54,7 @@
 ; arrow/optimized/key_map.cc.ll
 ; assimp/optimized/DeboneProcess.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/infblock.c.ll
 ; clamav/optimized/inflate64.c.ll
 ; cmake/optimized/fse_decompress.c.ll

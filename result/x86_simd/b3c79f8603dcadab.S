@@ -8,7 +8,7 @@ func0000000000000024:                   # @func0000000000000024
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm2   # xmm2 = [2,2,2,2]
 	vpsllvd	%xmm1, %xmm2, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:

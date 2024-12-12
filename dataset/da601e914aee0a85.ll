@@ -1,5 +1,5 @@
 
-; 119 occurrences:
+; 120 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/extraUtilCube.c.ll
@@ -45,6 +45,7 @@
 ; llvm/optimized/Hash.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; lz4/optimized/xxhash.c.ll
 ; memcached/optimized/memcached-murmur3_hash.ll
 ; memcached/optimized/memcached_debug-murmur3_hash.ll

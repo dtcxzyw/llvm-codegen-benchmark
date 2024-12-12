@@ -1,6 +1,7 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; meshoptimizer/optimized/spatialorder.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; recastnavigation/optimized/DebugDraw.cpp.ll
@@ -39,7 +40,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 24576
   %4 = and i32 %3, 24576
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }

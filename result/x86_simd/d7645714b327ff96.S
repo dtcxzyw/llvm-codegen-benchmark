@@ -4,7 +4,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vptestnmb	%xmm1, %xmm1, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [5,5,5,5]
 	retq
 .LCPI1_0:
@@ -88,6 +88,6 @@ func0000000000000008:                   # @func0000000000000008
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpcmpltub	.LCPI3_0(%rip), %xmm1, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vpbroadcastq	.LCPI3_1(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [2,2,2,2]
 	retq

@@ -1,9 +1,5 @@
 
-; 8 occurrences:
-; freetype/optimized/cff.c.ll
-; freetype/optimized/ftbase.c.ll
-; freetype/optimized/type1.c.ll
-; freetype/optimized/type1cid.c.ll
+; 4 occurrences:
 ; lief/optimized/Builder.cpp.ll
 ; linux/optimized/p4.ll
 ; qemu/optimized/optimize.c.ll

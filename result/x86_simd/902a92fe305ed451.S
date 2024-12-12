@@ -2,7 +2,7 @@
 	.long	4                               # 0x4
 .LCPI0_1:
 	.long	2                               # 0x2
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	%ymm2, %ymm2, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [4,4,4,4,4,4,4,4]
 	vmovdqa32	%ymm0, %ymm2 {%k1}

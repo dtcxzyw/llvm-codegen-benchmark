@@ -36,3 +36,11 @@ func0000000000000009:                   # @func0000000000000009
 	andq	$-5, %rdi
 	leaq	(%rdi,%rax,4), %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	xorl	%ecx, %ecx
+	cmpl	$16, %esi
+	movl	$6, %eax
+	cmovneq	%rcx, %rax
+	andq	$-256, %rdi
+	orq	%rdi, %rax
+	retq

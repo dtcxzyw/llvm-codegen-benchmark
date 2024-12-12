@@ -12,17 +12,7 @@ func0000000000000170:                   # @func0000000000000170
 	vmfeq.vf	v10, v8, fa5
 	vmor.mm	v0, v10, v14
 	ret
-.LCPI2_0:
-	.quad	0x3f747ae147ae147b              # double 0.0050000000000000001
-func00000000000001a8:                   # @func00000000000001a8
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmflt.vf	v14, v12, fa5
-	vmsltu.vv	v12, v8, v10
-	vmorn.mm	v0, v12, v14
-	ret
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	fli.d	fa5, min
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmflt.vf	v14, v12, fa5

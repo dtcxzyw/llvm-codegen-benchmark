@@ -93,6 +93,6 @@ func000000000000000c:                   # @func000000000000000c
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpslld	$24, %ymm0, %ymm0
 	retq

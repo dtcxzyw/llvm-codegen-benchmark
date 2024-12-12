@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 65 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
@@ -33,7 +33,6 @@
 ; opencv/optimized/facemarkAAM.cpp.ll
 ; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; openusd/optimized/stitchClips.cpp.ll
 ; pybind11/optimized/test_numpy_dtypes.cpp.ll
 ; quantlib/optimized/amortizingfixedratebond.ll
@@ -59,7 +58,6 @@
 ; quantlib/optimized/randomdefaultmodel.ll
 ; quantlib/optimized/sobolrsg.ll
 ; quantlib/optimized/zigguratrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; stat-rs/optimized/2y2d191rk1p8v5y4.ll
 ; stat-rs/optimized/43fparx0v87xel0c.ll
 ; stat-rs/optimized/4bf6omib3d9godoe.ll
@@ -75,14 +73,11 @@ entry:
   ret double %2
 }
 
-; 7 occurrences:
-; gromacs/optimized/tabulatednormaldistribution.cpp.ll
+; 4 occurrences:
 ; openusd/optimized/testUsdAttributeBlocking.cpp.ll
 ; osqp/optimized/osqp_api.c.ll
 ; proj/optimized/tmerc.cpp.ll
-; quantlib/optimized/analytich1hwengine.ll
 ; quantlib/optimized/factorreduction.ll
-; redis/optimized/mt19937-64.ll
 ; Function Attrs: nounwind
 define double @func0000000000000001(i64 %0) #0 {
 entry:

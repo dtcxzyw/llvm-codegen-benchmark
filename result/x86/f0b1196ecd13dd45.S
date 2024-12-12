@@ -4,18 +4,24 @@ func0000000000000011:                   # @func0000000000000011
 	shll	$31, %edi
 	leal	(%rdi,%rsi), %eax
 	retq
-func000000000000001f:                   # @func000000000000001f
+func0000000000000005:                   # @func0000000000000005
 	orl	%edx, %esi
-	andl	$-513, %esi                     # imm = 0xFDFF
-	movzbl	%dil, %eax
-	shll	$9, %eax
-	orl	%esi, %eax
+	andl	$16777215, %esi                 # imm = 0xFFFFFF
+	shll	$24, %edi
+	leal	(%rdi,%rsi), %eax
 	retq
 func0000000000000015:                   # @func0000000000000015
 	orl	%edx, %esi
 	andl	$16777215, %esi                 # imm = 0xFFFFFF
 	shll	$24, %edi
 	leal	(%rdi,%rsi), %eax
+	retq
+func000000000000001f:                   # @func000000000000001f
+	orl	%edx, %esi
+	andl	$-513, %esi                     # imm = 0xFDFF
+	movzbl	%dil, %eax
+	shll	$9, %eax
+	orl	%esi, %eax
 	retq
 func0000000000000017:                   # @func0000000000000017
 	orl	%edx, %esi

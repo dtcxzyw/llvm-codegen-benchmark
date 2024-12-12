@@ -36,23 +36,13 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
+; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, 1
-  ret i32 %4
-}
-
-; 1 occurrences:
-; z3/optimized/dd_bdd.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = or disjoint i64 %0, %1
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
   ret i32 %4

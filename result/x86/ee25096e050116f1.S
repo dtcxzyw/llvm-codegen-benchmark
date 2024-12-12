@@ -15,13 +15,6 @@ func0000000000000215:                   # @func0000000000000215
 	adcl	%esi, %edi
 	leal	-399(%rdi), %eax
 	retq
-func000000000000063d:                   # @func000000000000063d
-	xorl	%eax, %eax
-	cmpl	$-2, %edx
-	setne	%al
-	addl	%esi, %eax
-	leal	-1(%rdi,%rax), %eax
-	retq
 func0000000000000430:                   # @func0000000000000430
 	cmpl	$32000, %edx                    # imm = 0x7D00
 	sbbl	$-1, %esi

@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; git/optimized/object-name.ll
 ; libevent/optimized/event_tagging.c.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; oiio/optimized/bmpinput.cpp.ll
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll

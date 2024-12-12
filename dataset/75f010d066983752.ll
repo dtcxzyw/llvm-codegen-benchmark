@@ -26,7 +26,6 @@ entry:
 ; linux/optimized/ndisc.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/skbuff.ll
-; linux/optimized/xdr4.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/DebugChecksumsSubsection.cpp.ll
@@ -46,6 +45,7 @@ entry:
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/erf.c.ll
+; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
 ; wireshark/optimized/packet-isup.c.ll
 ; wireshark/optimized/packet-meta.c.ll
@@ -98,7 +98,7 @@ entry:
   ret i32 %3
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/cf-socket.c.ll
 ; curl/optimized/libcurl_la-cf-socket.ll
@@ -107,8 +107,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_rand.ll
 ; openssl/optimized/libcrypto-shlib-bn_rand.ll
 ; raylib/optimized/rcore.c.ll
-; tinyrenderer/optimized/tgaimage.cpp.ll
-; wireshark/optimized/packet-gmhdr.c.ll
 ; wireshark/optimized/packet-v5ua.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {
@@ -119,7 +117,7 @@ entry:
   ret i32 %3
 }
 
-; 91 occurrences:
+; 85 occurrences:
 ; abc/optimized/bblif.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
@@ -143,16 +141,11 @@ entry:
 ; linux/optimized/iommu-traces.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/mei-trace.ll
-; linux/optimized/mmap_lock.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfnetlink_log.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
-; linux/optimized/phc_vclocks.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/rpm-traces.ll
-; linux/optimized/rss.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/sched.ll
 ; linux/optimized/scm.ll
@@ -165,7 +158,6 @@ entry:
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/thermal_core.ll
-; linux/optimized/virtgpu_trace_points.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/workqueue.ll
 ; linux/optimized/xfrm_user.ll
@@ -245,14 +237,13 @@ entry:
   ret i32 %3
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
-; linux/optimized/he.ll
 ; linux/optimized/hid-input.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
@@ -430,12 +421,12 @@ entry:
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_scale.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/constMethod.ll
 ; openjdk/optimized/signature.ll
 ; postgres/optimized/gistproc.ll
 ; postgres/optimized/rangetypes_gist.ll
-; tinyrenderer/optimized/tgaimage.cpp.ll
 ; wireshark/optimized/packet-meta.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-zbee-direct.c.ll
@@ -503,14 +494,13 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0) #0 {
 entry:
-  %1 = add nuw i32 %0, 35
+  %1 = add nuw i32 %0, 36
   %2 = and i32 %1, -8
   %3 = add i32 %2, -4
   ret i32 %3
 }
 
-; 2 occurrences:
-; openblas/optimized/dpttrf.c.ll
+; 1 occurrences:
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0) #0 {

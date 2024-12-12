@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/alloc_lib.ll
 ; libsodium/optimized/libsodium_la-utils.ll
 ; openjdk/optimized/filemap.ll
 ; qemu/optimized/linux-user_mmap.c.ll

@@ -1,14 +1,13 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; xgboost/optimized/input_split_base.cc.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 6
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }

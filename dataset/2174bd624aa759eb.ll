@@ -1,6 +1,8 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; casadi/optimized/expm.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
@@ -17,7 +19,7 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
@@ -34,6 +36,8 @@ entry:
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; openusd/optimized/primIndex_Graph.cpp.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:

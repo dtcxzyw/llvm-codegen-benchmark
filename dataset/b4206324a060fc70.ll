@@ -1,6 +1,7 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; qemu/optimized/util_host-utils.c.ll
 ; quickjs/optimized/libbf.ll

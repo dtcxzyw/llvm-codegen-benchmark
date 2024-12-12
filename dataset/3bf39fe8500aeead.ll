@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_expression.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
@@ -14,6 +14,7 @@
 ; pbrt-v4/optimized/samples.cpp.ll
 ; postgres/optimized/resowner.ll
 ; velox/optimized/Variant.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

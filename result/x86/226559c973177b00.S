@@ -1,14 +1,3 @@
-func0000000000000013:                   # @func0000000000000013
-	notb	%dl
-	movzbl	%dl, %ecx
-	andl	$1, %ecx
-	shll	$24, %ecx
-	addl	$218103808, %ecx                # imm = 0xD000000
-	cmpb	$81, %sil
-	movl	$201326592, %eax                # imm = 0xC000000
-	cmovael	%ecx, %eax
-	addl	%edi, %eax
-	retq
 func0000000000000007:                   # @func0000000000000007
 	andl	$1, %edx
 	leal	1(%rdx,%rdx,2), %ecx

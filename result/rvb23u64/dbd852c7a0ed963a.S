@@ -29,11 +29,6 @@ func000000000000003f:                   # @func000000000000003f
 	addi	a1, a1, 2
 	mul	a0, a0, a1
 	ret
-func000000000000001d:                   # @func000000000000001d
-	slli	a1, a1, 1
-	addi	a1, a1, -6
-	mul	a0, a0, a1
-	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a1, a1, 3
 	addi	a1, a1, -8

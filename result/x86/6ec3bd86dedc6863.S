@@ -5,7 +5,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	$616, %edi                      # imm = 0x268
 	setge	%al
 	retq
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	movzwl	%si, %eax
 	subl	%eax, %edi
 	cmpl	$-1, %edi
@@ -25,7 +25,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$48, %edi
 	setl	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	movzwl	%si, %eax
 	subl	%eax, %edi
 	addl	$-257, %edi                     # imm = 0xFEFF

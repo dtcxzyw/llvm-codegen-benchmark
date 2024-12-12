@@ -1,27 +1,26 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	cmpq	$-128, %rsi
 	setb	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000198:                   # @func0000000000000198
-	movabsq	$-281474976710656, %rax         # imm = 0xFFFF000000000000
-	andq	%rsi, %rax
-	movabsq	$-9223372036854775808, %rcx     # imm = 0x8000000000000000
-	xorq	%rax, %rcx
-	xorq	$-32768, %rdi                   # imm = 0x8000
-	orq	%rcx, %rdi
+func0000000000000318:                   # @func0000000000000318
+	movabsq	$-9223090561878065153, %rax     # imm = 0x8000FFFFFFFFFFFF
+	cmpq	%rax, %rsi
+	setg	%cl
+	cmpq	$-32768, %rdi                   # imm = 0x8000
 	setne	%al
+	orb	%cl, %al
 	retq
-func0000000000000288:                   # @func0000000000000288
+func0000000000000908:                   # @func0000000000000908
 	cmpq	$9, %rsi
 	setb	%cl
 	cmpq	$2, %rdi
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000310:                   # @func0000000000000310
+func0000000000000a10:                   # @func0000000000000a10
 	cmpq	$9, %rsi
 	setae	%cl
 	cmpq	$9, %rdi

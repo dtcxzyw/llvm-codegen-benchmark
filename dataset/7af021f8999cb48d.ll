@@ -1,5 +1,5 @@
 
-; 224 occurrences:
+; 227 occurrences:
 ; box2d/optimized/b2_body.cpp.ll
 ; c3c/optimized/compiler.c.ll
 ; c3c/optimized/llvm_codegen_module.c.ll
@@ -9,9 +9,7 @@
 ; c3c/optimized/project.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/types.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
-; cmake/optimized/fld_page.c.ll
 ; cmake/optimized/http.c.ll
 ; cmake/optimized/json_value.cpp.ll
 ; cmake/optimized/transfer.c.ll
@@ -54,7 +52,6 @@
 ; linux/optimized/intel_gmch.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/ipv6_sockglue.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/pci-quirks.ll
@@ -109,6 +106,7 @@
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
+; llvm/optimized/PtrTypesSemantics.cpp.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll
@@ -135,6 +133,12 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_spinbox.ll
+; lvgl/optimized/lv_table.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/sky.cpp.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
@@ -198,7 +202,6 @@
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; qemu/optimized/virtio.c.ll
 ; quickjs/optimized/quickjs.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
@@ -232,7 +235,7 @@ entry:
   ret i16 %3
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; hermes/optimized/String.cpp.ll
@@ -244,15 +247,16 @@ entry:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
+; lvgl/optimized/lv_obj.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; openmpi/optimized/ras_base_allocate.ll
 ; openusd/optimized/mvref_common.c.ll
+; openusd/optimized/value.cpp.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
@@ -266,7 +270,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i16 9, i16 1
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 

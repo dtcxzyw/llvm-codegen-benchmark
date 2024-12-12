@@ -13,10 +13,3 @@ func000000000000005d:                   # @func000000000000005d
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func0000000000000030:                   # @func0000000000000030
-	slli	a1, a1, 32
-	slli	a2, a0, 1
-	srli	a1, a1, 28
-	add	a0, a0, a2
-	add	a0, a0, a1
-	ret

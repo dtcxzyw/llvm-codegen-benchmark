@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 27 occurrences:
 ; clamav/optimized/mbr.c.ll
 ; darktable/optimized/MosDecoder.cpp.ll
 ; darktable/optimized/export.c.ll
@@ -22,12 +22,17 @@
 ; postgres/optimized/sqlda.ll
 ; proj/optimized/pr_list.cpp.ll
 ; redis/optimized/read.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967296
   %3 = ashr exact i64 %2, 32
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -48,7 +53,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1048576
   %3 = ashr i64 %2, 21
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -63,7 +68,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1048576
   %3 = ashr i64 %2, 21
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

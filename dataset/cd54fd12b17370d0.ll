@@ -1,11 +1,9 @@
 
-; 29 occurrences:
+; 27 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/CacheLocality.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
-; folly/optimized/F14Table.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/HeapTimekeeper.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
@@ -35,7 +33,7 @@ entry:
   %2 = xor i64 %1, -1
   %3 = shl i64 %1, 21
   %4 = add i64 %3, %2
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 
@@ -52,7 +50,7 @@ entry:
   %2 = xor i64 %1, -1
   %3 = shl nuw nsw i64 %1, 21
   %4 = add nsw i64 %3, %2
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 
@@ -64,7 +62,7 @@ entry:
   %2 = xor i64 %1, -1
   %3 = shl nsw i64 %1, 21
   %4 = add nsw i64 %3, %2
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 65 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abc/optimized/lpkMulti.c.ll
@@ -59,7 +59,6 @@
 ; libwebp/optimized/frame_enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; libwebp/optimized/token_enc.c.ll
-; meshlab/optimized/quadric_simp.cpp.ll
 ; openjdk/optimized/jquant2.ll
 ; openspiel/optimized/DealerPar.cpp.ll
 ; openspiel/optimized/PBN.cpp.ll

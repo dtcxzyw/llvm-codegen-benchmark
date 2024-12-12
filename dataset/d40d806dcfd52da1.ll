@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 95 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/sigtool.c.ll
@@ -8,6 +8,7 @@
 ; cvc5/optimized/miplib_trick.cpp.ll
 ; cvc5/optimized/theory_datatypes_type_rules.cpp.ll
 ; git/optimized/merge-recursive.ll
+; grpc/optimized/ev_poll_posix.cc.ll
 ; hyperscan/optimized/limex_simd128.c.ll
 ; hyperscan/optimized/limex_simd256.c.ll
 ; hyperscan/optimized/limex_simd384.c.ll
@@ -47,7 +48,6 @@
 ; llvm/optimized/InstrProfReader.cpp.ll
 ; llvm/optimized/ParseExprCXX.cpp.ll
 ; llvm/optimized/ParseTentative.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScheduleDAGVLIW.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/UnwrappedLineFormatter.cpp.ll
@@ -55,7 +55,6 @@
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/inventory.cpp.ll
-; nghttp2/optimized/http.c.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/count_non_zero.dispatch.cpp.ll
@@ -94,6 +93,8 @@
 ; wireshark/optimized/packet-spnego.c.ll
 ; wireshark/optimized/packet-vlan.c.ll
 ; wireshark/optimized/packet-x11.c.ll
+; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i16 %0) #0 {
 entry:
@@ -136,13 +137,11 @@ entry:
 ; libquic/optimized/url_parse.cc.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; linux/optimized/8250_port.ll
-; linux/optimized/balloc.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/i386.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/inet_hashtables.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/libata-core.ll
@@ -208,7 +207,6 @@ entry:
 ; mold/optimized/gdb-index.cc.SH4.cc.ll
 ; mold/optimized/gdb-index.cc.SPARC64.cc.ll
 ; mold/optimized/gdb-index.cc.X86_64.cc.ll
-; nghttp2/optimized/http.c.ll
 ; nghttp2/optimized/llhttp.c.ll
 ; nghttp2/optimized/nghttp2_hd_huffman.c.ll
 ; nori/optimized/nanovg.c.ll
@@ -222,6 +220,7 @@ entry:
 ; qemu/optimized/block_nbd.c.ll
 ; qemu/optimized/chardev_char-pty.c.ll
 ; qemu/optimized/hw_net_net_rx_pkt.c.ll
+; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
@@ -255,6 +254,8 @@ entry:
 ; wireshark/optimized/packet-x11.c.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i16 %0) #0 {
@@ -264,9 +265,9 @@ entry:
   ret i32 %2
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/wlcBlast.c.ll
-; cpython/optimized/ceval.ll
+; cpython/optimized/unicodectype.ll
 ; flac/optimized/encode.c.ll
 ; icu/optimized/dtitvfmt.ll
 ; icu/optimized/ucnvmbcs.ll
@@ -275,6 +276,7 @@ entry:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_backlight.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
+; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/DWARFDebugLine.cpp.ll
 ; llvm/optimized/IfConversion.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
@@ -304,18 +306,16 @@ entry:
   ret i32 %2
 }
 
-; 24 occurrences:
+; 20 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; eastl/optimized/TestBitset.cpp.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; linux/optimized/fast_commit.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/move_extent.ll
 ; linux/optimized/skl_watermark.ll
-; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/DwarfCompileUnit.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/DwarfUnit.cpp.ll
@@ -326,8 +326,6 @@ entry:
 ; openusd/optimized/detokenize.c.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
-; wireshark/optimized/packet-kafka.c.ll
-; wireshark/optimized/packet-uma.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i16 %0) #0 {
@@ -337,13 +335,39 @@ entry:
   ret i32 %2
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; eastl/optimized/TestBitset.cpp.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
+; wireshark/optimized/packet-kafka.c.ll
+; wireshark/optimized/packet-uma.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i16 %0) #0 {
+entry:
+  %1 = icmp samesign ugt i16 %0, 1
+  %2 = zext i1 %1 to i32
+  ret i32 %2
+}
+
+; 3 occurrences:
 ; libjpeg-turbo/optimized/jcarith.c.ll
+; linux/optimized/balloc.ll
 ; openusd/optimized/decodemv.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i16 %0) #0 {
 entry:
   %1 = icmp slt i16 %0, 16384
+  %2 = zext i1 %1 to i32
+  ret i32 %2
+}
+
+; 3 occurrences:
+; cpython/optimized/ceval.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i16 %0) #0 {
+entry:
+  %1 = icmp samesign ult i16 %0, 16
   %2 = zext i1 %1 to i32
   ret i32 %2
 }

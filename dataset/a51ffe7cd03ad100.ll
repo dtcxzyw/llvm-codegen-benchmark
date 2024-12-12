@@ -7,7 +7,7 @@ entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -23,9 +23,8 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/rematch.ll
-; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; openusd/optimized/utils.c.ll
 ; quickjs/optimized/quickjs.ll

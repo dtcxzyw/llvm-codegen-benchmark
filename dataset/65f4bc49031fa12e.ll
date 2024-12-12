@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; wasmtime-rs/optimized/4ay297qasj36tbqo.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:

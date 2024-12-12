@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 59 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -8,6 +8,7 @@
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/cadical.cpp.ll
@@ -59,7 +60,7 @@
 ; yosys/optimized/test_pmgen.ll
 ; yosys/optimized/wreduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2048
   %3 = ashr exact i64 %0, 3
@@ -67,11 +68,14 @@ entry:
   ret i1 %4
 }
 
-; 73 occurrences:
+; 76 occurrences:
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/integrator.cpp.ll
 ; casadi/optimized/interpolant.cpp.ll
@@ -142,7 +146,7 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = ashr exact i64 %0, 3
@@ -150,11 +154,12 @@ entry:
   ret i1 %4
 }
 
-; 288 occurrences:
+; 287 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; arrow/optimized/array_nested.cc.ll
 ; arrow/optimized/builder_nested.cc.ll
 ; arrow/optimized/scalar.cc.ll
+; boost/optimized/work_stealing.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
@@ -272,7 +277,6 @@ entry:
 ; meshlab/optimized/editpickpoints.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; meshlab/optimized/pickPointsTemplate.cpp.ll
 ; meshlab/optimized/pickedPoints.cpp.ll
@@ -397,7 +401,6 @@ entry:
 ; protobuf/optimized/shared_code_generator.cc.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; sentencepiece/optimized/sentencepiece_processor.cc.ll
-; sentencepiece/optimized/stringprintf.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; sentencepiece/optimized/util.cc.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
@@ -440,7 +443,7 @@ entry:
 ; yosys/optimized/freduce.ll
 ; yosys/optimized/splice.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = ashr exact i64 %0, 3
@@ -454,7 +457,7 @@ entry:
 ; folly/optimized/DeterministicSchedule.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 4
   %3 = ashr exact i64 %0, 5
@@ -469,7 +472,7 @@ entry:
 ; gromacs/optimized/readir.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 2
   %3 = ashr exact i64 %0, 5
@@ -477,15 +480,16 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; git/optimized/graph.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; opencv/optimized/dls.cpp.ll
 ; opencv/optimized/intersection.cpp.ll
 ; openjdk/optimized/zRemembered.ll
+; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/hw_core_loader.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = ashr exact i64 %0, 32
@@ -505,7 +509,7 @@ entry:
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; openjdk/optimized/frame_x86.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ea(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1032
   %3 = ashr exact i64 %0, 3
@@ -583,7 +587,7 @@ entry:
 ; wasmedge/optimized/codegen.cpp.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = ashr exact i64 %0, 3
@@ -592,6 +596,7 @@ entry:
 }
 
 ; 24 occurrences:
+; boost/optimized/posix_specific.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/interpolant.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
@@ -608,7 +613,6 @@ entry:
 ; openusd/optimized/testHdSortedIds.cpp.ll
 ; php/optimized/fastcgi.ll
 ; quantlib/optimized/curvestate.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gsr.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/mcperformanceengine.ll
@@ -617,7 +621,7 @@ entry:
 ; quantlib/optimized/utilities.ll
 ; velox/optimized/ByteStream.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 8
   %3 = ashr exact i64 %0, 32
@@ -633,7 +637,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = ashr exact i64 %0, 3
@@ -654,7 +658,7 @@ entry:
 ; xgboost/optimized/gradient_index_page_source.cc.ll
 ; xgboost/optimized/sparse_page_dmatrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = ashr exact i64 %0, 3
@@ -720,7 +724,7 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = ashr exact i64 %0, 4
@@ -729,9 +733,20 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000067(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, 10
+  %3 = ashr exact i64 %0, 2
+  %4 = icmp sle i64 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; gromacs/optimized/pme_load_balancing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = ashr exact i64 %0, 6
@@ -742,7 +757,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000065(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = ashr exact i64 %0, 2

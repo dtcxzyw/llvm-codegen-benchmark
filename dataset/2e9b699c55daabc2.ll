@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/af_unix.ll
-; linux/optimized/uprobes.ll
 ; pyo3-rs/optimized/5cngl7ehxnf7u52x.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; ruby/optimized/pack.ll

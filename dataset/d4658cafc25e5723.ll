@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 101 occurrences:
 ; abc/optimized/cgtAig.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddBddIte.c.ll
@@ -33,6 +33,13 @@
 ; linux/optimized/ds.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/nfs4client.ll
+; llvm/optimized/AArch64ConditionalCompares.cpp.ll
+; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/CGObjCMac.cpp.ll
+; llvm/optimized/EarlyIfConversion.cpp.ll
+; llvm/optimized/IndexBody.cpp.ll
+; llvm/optimized/PPLexerChange.cpp.ll
+; llvm/optimized/X86FastISel.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; openjdk/optimized/callGenerator.ll
 ; openjdk/optimized/escape.ll
@@ -41,6 +48,7 @@
 ; openjdk/optimized/shenandoahVerifier.ll
 ; openusd/optimized/range3d.cpp.ll
 ; openusd/optimized/range3f.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; postgres/optimized/generation.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -94,12 +102,12 @@
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, ptr %0, ptr %1
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -115,25 +123,6 @@ entry:
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, ptr %0, ptr %1
   %6 = getelementptr i8, ptr %5, i64 36
-  ret ptr %6
-}
-
-; 8 occurrences:
-; llvm/optimized/AArch64ConditionalCompares.cpp.ll
-; llvm/optimized/AArch64InstPrinter.cpp.ll
-; llvm/optimized/CGObjCMac.cpp.ll
-; llvm/optimized/EarlyIfConversion.cpp.ll
-; llvm/optimized/IndexBody.cpp.ll
-; llvm/optimized/PPLexerChange.cpp.ll
-; llvm/optimized/X86FastISel.cpp.ll
-; openusd/optimized/value.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4294967296
-  %4 = icmp eq i64 %3, 0
-  %5 = select i1 %4, ptr %0, ptr %1
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 

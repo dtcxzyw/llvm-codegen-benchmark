@@ -31,10 +31,5 @@ func0000000000000046:                   # @func0000000000000046
 func0000000000000006:                   # @func0000000000000006
 	addl	%esi, %esi
 	movslq	%esi, %rax
-	leaq	-2(%rdi,%rax), %rax
-	retq
-func0000000000000016:                   # @func0000000000000016
-	addl	%esi, %esi
-	movslq	%esi, %rax
-	leaq	2(%rdi,%rax), %rax
+	leaq	8(%rdi,%rax,4), %rax
 	retq

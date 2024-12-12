@@ -1,5 +1,5 @@
 
-; 258 occurrences:
+; 267 occurrences:
 ; abc/optimized/giaSwitch.c.ll
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -56,7 +56,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -258,6 +257,16 @@
 ; xgboost/optimized/gradient_index.cc.ll
 ; xgboost/optimized/iterative_dmatrix.cc.ll
 ; xgboost/optimized/quantile.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6pzok54tcf7jgyfxt7910tckc.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i8 %0) #0 {
 entry:

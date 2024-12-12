@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
@@ -12,6 +12,7 @@
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
+; opencv/optimized/detector.cpp.ll
 ; pybind11/optimized/test_chrono.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll

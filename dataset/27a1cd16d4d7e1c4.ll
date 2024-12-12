@@ -1,11 +1,10 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
-; llvm/optimized/X86AsmBackend.cpp.ll
 ; wireshark/optimized/packet-giop.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {

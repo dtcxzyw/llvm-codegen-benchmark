@@ -1,11 +1,12 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; gromacs/optimized/autocorr.cpp.ll
 ; libquic/optimized/t_req.c.ll
 ; libquic/optimized/t_x509.c.ll
 ; linux/optimized/clnt.ll
 ; linux/optimized/netdev.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
+; llvm/optimized/NestedNameSpecifier.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll

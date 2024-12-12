@@ -5,7 +5,7 @@
 ; protobuf/optimized/writer.cc.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = zext nneg i32 %1 to i64
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/mballoc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000471(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000008e1(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 11
   %4 = zext nneg i32 %1 to i64

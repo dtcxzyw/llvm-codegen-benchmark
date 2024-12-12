@@ -1,6 +1,7 @@
 
-; 135 occurrences:
+; 141 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/topology.ll
 ; bullet3/optimized/btSoftBody.ll
 ; cmake/optimized/progress.c.ll
 ; cmake/optimized/url.c.ll
@@ -22,6 +23,8 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/intel_color.ll
 ; llama.cpp/optimized/common.cpp.ll
+; llvm/optimized/ASTWriterStmt.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
 ; luajit/optimized/minilua.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
@@ -80,7 +83,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -97,10 +99,15 @@
 ; openjdk/optimized/hb-ot-math.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
+; openusd/optimized/env.cpp.ll
+; openusd/optimized/info.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/mallocTag.cpp.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; openusd/optimized/reporter.cpp.ll
 ; php/optimized/ir_ra.ll
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/be-fsstubs.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/encode.ll
 ; postgres/optimized/formatting.ll
@@ -133,15 +140,14 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a1(ptr %0, i32 %1) #0 {
+define ptr @func00000000000001e1(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16
   %3 = icmp eq i32 %2, 0
   %.v = select i1 %3, i64 112, i64 48
-  %4 = getelementptr nusw i8, ptr %0, i64 %.v
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %.v
   ret ptr %4
 }
 
@@ -159,32 +165,14 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/ASTWriterStmt.cpp.ll
+; graphviz/optimized/dotsplines.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000b1(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000161(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1048576
-  %3 = icmp eq i32 %2, 0
-  %.v = select i1 %3, i64 16, i64 32
+  %2 = and i32 %1, 3
+  %3 = icmp eq i32 %2, 2
+  %.v = select i1 %3, i64 56, i64 -8
   %4 = getelementptr nusw i8, ptr %0, i64 %.v
-  ret ptr %4
-}
-
-; 7 occurrences:
-; llvm/optimized/SemaOverload.cpp.ll
-; openusd/optimized/env.cpp.ll
-; openusd/optimized/info.cpp.ll
-; openusd/optimized/instanceAdapter.cpp.ll
-; openusd/optimized/mallocTag.cpp.ll
-; openusd/optimized/pointInstancerAdapter.cpp.ll
-; openusd/optimized/reporter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000f1(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 2147483647
-  %3 = icmp eq i32 %2, 0
-  %.v = select i1 %3, i64 16, i64 80
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %.v
   ret ptr %4
 }
 

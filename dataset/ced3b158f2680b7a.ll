@@ -1,5 +1,5 @@
 
-; 118 occurrences:
+; 122 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/kitPla.c.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -43,8 +43,6 @@
 ; linux/optimized/xt_addrtype.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
-; llvm/optimized/CoverageMapping.cpp.ll
-; llvm/optimized/CoverageMappingWriter.cpp.ll
 ; llvm/optimized/DwarfCFIException.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/LoopUnroll.cpp.ll
@@ -68,10 +66,12 @@
 ; ncnn/optimized/gridsample_x86_fma.cpp.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
+; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
+; openjdk/optimized/ciMethod.ll
 ; openjdk/optimized/cmscnvrt.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; openjdk/optimized/type.ll
@@ -99,12 +99,15 @@
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/system_physmem.c.ll
+; redis/optimized/sds.ll
 ; ruby/optimized/range.ll
 ; sentencepiece/optimized/generated_enum_util.cc.ll
 ; slurm/optimized/cpu_frequency.ll
 ; stat-rs/optimized/4d9pj14shc9lbmph.ll
 ; stockfish/optimized/tbprobe.ll
 ; tev/optimized/Common.cpp.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; wireshark/optimized/proto.c.ll
@@ -117,6 +120,7 @@
 ; z3/optimized/sat_simplifier.cpp.ll
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; zxing/optimized/MultiFormatReader.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {

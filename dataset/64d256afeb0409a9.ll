@@ -4,10 +4,10 @@
 ; nanobind/optimized/nb_type.cpp.ll
 ; ruby/optimized/md5.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000063(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
-  %4 = icmp ugt i32 %3, 56
+  %4 = icmp samesign ugt i32 %3, 56
   %5 = select i1 %4, i64 %1, i64 8
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
@@ -24,7 +24,7 @@ entry:
   %3 = and i32 %2, 65535
   %4 = icmp eq i32 %3, 204
   %5 = select i1 %4, i64 %1, i64 0
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -38,7 +38,7 @@ entry:
   %3 = and i32 %2, 224
   %.not = icmp eq i32 %3, 192
   %4 = select i1 %.not, i64 2, i64 %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

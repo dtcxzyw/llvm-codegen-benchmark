@@ -18,6 +18,14 @@ func0000000000000155:                   # @func0000000000000155
 	addq	%rdi, %rax
 	imulq	$60, %rax, %rax
 	retq
+func0000000000000222:                   # @func0000000000000222
+	leaq	(%rdx,%rdx,4), %rax
+	leaq	(%rsi,%rax,2), %rax
+	leaq	(%rax,%rax,4), %rax
+	leaq	(%rdi,%rax,2), %rax
+	addq	%rax, %rax
+	leaq	(%rax,%rax,4), %rax
+	retq
 func0000000000000154:                   # @func0000000000000154
 	imulq	$60, %rdx, %rax
 	addq	%rsi, %rax

@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/path_traits.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
 ; lz4/optimized/lz4hc.c.ll
@@ -18,7 +19,9 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/conversion.ll
+; boost/optimized/path_traits.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; opencv/optimized/persistence.cpp.ll
 ; yosys/optimized/lz4.ll
@@ -27,7 +30,7 @@ define i64 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = mul nsw i64 %3, 255
+  %4 = mul nsw i64 %3, 3
   ret i64 %4
 }
 

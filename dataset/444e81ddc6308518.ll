@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 110 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/kwajd.c.ll
@@ -42,6 +42,7 @@
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -107,6 +108,7 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i32 %0, i32 %1) #0 {
@@ -142,13 +144,12 @@ entry:
   ret i16 %3
 }
 
-; 54 occurrences:
+; 52 occurrences:
 ; darktable/optimized/PanasonicV6Decompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; icu/optimized/ustrtrns.ll
 ; libevent/optimized/poll.c.ll
 ; libquic/optimized/error_correction.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/drm_format_helper.ll
@@ -195,7 +196,6 @@ entry:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/packet-scsi-mmc.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i32 %0, i32 %1) #0 {
@@ -205,7 +205,7 @@ entry:
   ret i16 %3
 }
 
-; 61 occurrences:
+; 62 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -246,6 +246,7 @@ entry:
 ; luajit/optimized/lj_opt_narrow_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; node/optimized/idna.ll
@@ -275,7 +276,7 @@ entry:
   ret i16 %3
 }
 
-; 133 occurrences:
+; 132 occurrences:
 ; abc/optimized/lpkSets.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -365,7 +366,6 @@ entry:
 ; openusd/optimized/zipFile.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -417,7 +417,7 @@ entry:
   ret i16 %3
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; icu/optimized/umutablecptrie.ll
 ; miniaudio/optimized/unity.c.ll
@@ -445,7 +445,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll

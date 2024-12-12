@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
 ; hermes/optimized/GCBase.cpp.ll
@@ -26,7 +26,6 @@
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/ModuleUtils.cpp.ll
 ; llvm/optimized/RISCV.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RelLookupTableConverter.cpp.ll
 ; protobuf/optimized/untyped_message.cc.ll
 ; Function Attrs: nounwind

@@ -94,13 +94,14 @@
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 30 occurrences:
+; 34 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/gregorian.ll
 ; cmake/optimized/cmCursesMainForm.cxx.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; icu/optimized/calendar.ll
@@ -109,6 +110,7 @@ entry:
 ; lightgbm/optimized/network.cpp.ll
 ; linux/optimized/skl_universal_plane.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; oiio/optimized/imageio.cpp.ll
 ; openblas/optimized/dstedc.c.ll
 ; opencv/optimized/blenders.cpp.ll
@@ -129,11 +131,13 @@ entry:
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; xgboost/optimized/broadcast.cc.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

@@ -78,28 +78,28 @@ func0000000000000003:                   # @func0000000000000003
 	vmovapd	%zmm2, %zmm1 {%k1}
 	retq
 .LCPI6_0:
-	.quad	0x3fe0000000000000              # double 0.5
+	.quad	0x4066800000000000              # double 180
 .LCPI6_1:
+	.quad	0xc066800000000000              # double -180
+func000000000000000a:                   # @func000000000000000a
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmplepd	%zmm2, %zmm1, %k1
+	vcmplepd	%zmm2, %zmm0, %k2
+	vbroadcastsd	.LCPI6_0(%rip), %zmm2   # zmm2 = [1.8E+2,1.8E+2,1.8E+2,1.8E+2,1.8E+2,1.8E+2,1.8E+2,1.8E+2]
+	vbroadcastsd	.LCPI6_1(%rip), %zmm1   # zmm1 = [-1.8E+2,-1.8E+2,-1.8E+2,-1.8E+2,-1.8E+2,-1.8E+2,-1.8E+2,-1.8E+2]
+	vblendmpd	%zmm2, %zmm1, %zmm0 {%k2}
+	vmovapd	%zmm2, %zmm1 {%k1}
+	retq
+.LCPI7_0:
+	.quad	0x3fe0000000000000              # double 0.5
+.LCPI7_1:
 	.quad	0xbfe0000000000000              # double -0.5
 func000000000000000e:                   # @func000000000000000e
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpordpd	%zmm2, %zmm1, %k1
 	vcmpordpd	%zmm2, %zmm0, %k2
-	vbroadcastsd	.LCPI6_0(%rip), %zmm2   # zmm2 = [5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1]
-	vbroadcastsd	.LCPI6_1(%rip), %zmm1   # zmm1 = [-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1]
+	vbroadcastsd	.LCPI7_0(%rip), %zmm2   # zmm2 = [5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1]
+	vbroadcastsd	.LCPI7_1(%rip), %zmm1   # zmm1 = [-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1]
 	vblendmpd	%zmm2, %zmm1, %zmm0 {%k2}
 	vmovapd	%zmm2, %zmm1 {%k1}
-	retq
-.LCPI7_0:
-	.quad	0x3ff0000000000000              # double 1
-.LCPI7_1:
-	.quad	0x406fe00000000000              # double 255
-func000000000000000a:                   # @func000000000000000a
-	vbroadcastsd	.LCPI7_0(%rip), %zmm2   # zmm2 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
-	vcmplepd	%zmm2, %zmm1, %k1
-	vcmplepd	%zmm2, %zmm0, %k2
-	vbroadcastsd	.LCPI7_1(%rip), %zmm1   # zmm1 = [2.55E+2,2.55E+2,2.55E+2,2.55E+2,2.55E+2,2.55E+2,2.55E+2,2.55E+2]
-	vblendmpd	%zmm1, %zmm2, %zmm0 {%k2}
-	vmovapd	%zmm1, %zmm2 {%k1}
-	vmovapd	%zmm2, %zmm1
 	retq

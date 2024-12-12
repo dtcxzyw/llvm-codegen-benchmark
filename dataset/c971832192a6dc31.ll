@@ -21,7 +21,7 @@ entry:
 ; kcp/optimized/ikcp.ll
 ; openjdk/optimized/c1_CodeStubs_x86.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -116,7 +116,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/persistence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -129,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/datablock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

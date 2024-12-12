@@ -1,8 +1,9 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; bullet3/optimized/btGhostObject.ll
 ; gromacs/optimized/mshift.cpp.ll
 ; gromacs/optimized/slaebz.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll

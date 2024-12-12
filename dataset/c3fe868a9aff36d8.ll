@@ -6,7 +6,7 @@
 ; icu/optimized/unistr_cnv.ll
 ; openmpi/optimized/libprrte_la-hwloc_base_util.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, %1
   %3 = icmp sgt i32 %0, -1
@@ -20,7 +20,7 @@ entry:
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/slice_layer.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %.inv = icmp slt i32 %0, 0

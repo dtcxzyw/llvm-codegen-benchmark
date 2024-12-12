@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; abc/optimized/dchMan.c.ll
+; 5 occurrences:
 ; graphviz/optimized/mincross.c.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; icu/optimized/gregocal.ll
@@ -10,7 +9,7 @@
 define double @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
-  %3 = sdiv i32 %2, 3
+  %3 = sdiv i32 %2, 2
   %4 = sitofp i32 %3 to double
   ret double %4
 }

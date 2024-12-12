@@ -1,4 +1,4 @@
-func00000000000010f4:                   # @func00000000000010f4
+func00000000000061f4:                   # @func00000000000061f4
 	shrq	$48, %rdx
 	addq	%rsi, %rdi
 	cmpq	$1, %rdx
@@ -6,7 +6,7 @@ func00000000000010f4:                   # @func00000000000010f4
 	cmpq	$65536, %rdi                    # imm = 0x10000
 	setb	%al
 	retq
-func0000000000001078:                   # @func0000000000001078
+func00000000000060f8:                   # @func00000000000060f8
 	shrq	$54, %rdx
 	addq	%rsi, %rdi
 	cmpq	$1, %rdx

@@ -1,9 +1,9 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sarq	$3, %rdx
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	imulq	%rdx, %rax
-	cmpq	%rsi, %rax
-	seta	%al
+	cmpq	%rax, %rsi
+	setb	%al
 	andb	%dil, %al
 	retq
 func0000000000000007:                   # @func0000000000000007
@@ -11,8 +11,8 @@ func0000000000000007:                   # @func0000000000000007
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rax
 	sarq	$2, %rax
-	cmpq	%rsi, %rax
-	setge	%al
+	cmpq	%rax, %rsi
+	setle	%al
 	andb	%dil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -20,23 +20,23 @@ func0000000000000006:                   # @func0000000000000006
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rax
 	sarq	$2, %rax
-	cmpq	%rsi, %rax
-	setg	%al
+	cmpq	%rax, %rsi
+	setl	%al
 	andb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sarq	$3, %rdx
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	imulq	%rdx, %rax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sarq	$4, %rdx
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	imulq	%rdx, %rax
-	cmpq	%rsi, %rax
-	setg	%al
+	cmpq	%rax, %rsi
+	setl	%al
 	andb	%dil, %al
 	retq

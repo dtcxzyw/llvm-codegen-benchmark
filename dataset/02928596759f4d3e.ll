@@ -1,5 +1,7 @@
 
-; 724 occurrences:
+%struct._zend_ssa_op.2792342 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+
+; 721 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -425,7 +427,6 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -556,7 +557,6 @@
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; ozz-animation/optimized/track_optimizer.cc.ll
-; php/optimized/zend_inference.ll
 ; pocketpy/optimized/collections.cpp.ll
 ; proj/optimized/pipeline.cpp.ll
 ; protobuf/optimized/helpers.cc.ll
@@ -715,7 +715,6 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
@@ -734,21 +733,75 @@ entry:
 }
 
 ; 1 occurrences:
-; git/optimized/sequencer.ll
+; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000005f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 32
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 2
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %3 = ashr exact i64 %2, 5
+  %4 = getelementptr %struct._zend_ssa_op.2792342, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 36
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 5 occurrences:
+; 45 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005e(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 8
+  %5 = getelementptr nusw ptr, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 4 occurrences:
 ; arrow/optimized/row_encoder.cc.ll
 ; faiss/optimized/HNSW.cpp.ll
-; gromacs/optimized/convert_tpr.cpp.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; Function Attrs: nounwind
@@ -758,6 +811,18 @@ entry:
   %4 = getelementptr i8, ptr %3, i64 4
   %5 = getelementptr i32, ptr %4, i64 %0
   ret ptr %5
+}
+
+; 1 occurrences:
+; llama.cpp/optimized/ggml.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 30
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 64
+  %6 = getelementptr nusw nuw float, ptr %5, i64 %0
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

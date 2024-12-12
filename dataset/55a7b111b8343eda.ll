@@ -1,5 +1,5 @@
 
-; 121 occurrences:
+; 119 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -38,8 +38,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -130,7 +128,7 @@ entry:
   ret i64 %5
 }
 
-; 32 occurrences:
+; 28 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -158,11 +156,7 @@ entry:
 ; postgres/optimized/f2s.ll
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -172,7 +166,7 @@ entry:
   ret i64 %5
 }
 
-; 107 occurrences:
+; 101 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -204,8 +198,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -269,16 +261,12 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; php/optimized/dtoa.ll
 ; php/optimized/strtod.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; spike/optimized/mulh.ll
 ; spike/optimized/mulhsu.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000013(i64 %0, i64 %1, i64 %2) #0 {
@@ -289,7 +277,7 @@ entry:
   ret i64 %5
 }
 
-; 188 occurrences:
+; 189 occurrences:
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; folly/optimized/Request.cpp.ll
@@ -442,7 +430,6 @@ entry:
 ; proxygen/optimized/PersistentQuicPskCache.cpp.ll
 ; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
 ; proxygen/optimized/SynchronizedLruQuicPskCache.cpp.ll
-; quantlib/optimized/pseudosqrt.ll
 ; velox/optimized/ArrayDistinct.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ArrayIntersectExcept.cpp.ll
@@ -478,12 +465,14 @@ entry:
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = lshr i64 %3, 3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -506,7 +495,7 @@ entry:
   ret i64 %5
 }
 
-; 92 occurrences:
+; 90 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -533,8 +522,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -604,7 +591,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = lshr i64 %3, 9
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -640,7 +627,7 @@ define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -671,7 +658,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = lshr exact i64 %3, 3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -850,7 +837,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

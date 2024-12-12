@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	lui	a2, 699051
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32

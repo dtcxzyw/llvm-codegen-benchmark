@@ -5,7 +5,14 @@ func000000000000001c:                   # @func000000000000001c
 	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret
-func000000000000003e:                   # @func000000000000003e
+func000000000000000c:                   # @func000000000000000c
+	li	a2, 1
+	sub	a2, a2, a1
+	li	a1, 168
+	mul	a1, a2, a1
+	add	a0, a0, a1
+	ret
+func000000000000003f:                   # @func000000000000003f
 	li	a2, 11
 	sub	a2, a2, a1
 	slli	a1, a2, 5

@@ -1,11 +1,10 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; cpython/optimized/_cursesmodule.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; grpc/optimized/socket_utils_posix.cc.ll
 ; grpc/optimized/tcp_socket_utils.cc.ll
 ; linux/optimized/sysctl_net_ipv4.ll
-; linux/optimized/xattr.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; openjdk/optimized/type.ll

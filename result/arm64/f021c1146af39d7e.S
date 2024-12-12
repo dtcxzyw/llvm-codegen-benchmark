@@ -1,52 +1,37 @@
-func0000000000000054:                   // @func0000000000000054
+func00000000000000a4:                   // @func00000000000000a4
 // %bb.0:                               // %entry
-	movi	v4.4s, #28, lsl #16
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	mvni	v2.4s, #16, msl #16
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
-	mvni	v2.4s, #15, msl #16
-	cmhi	v1.4s, v2.4s, v1.4s
-	cmhi	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	and	w8, w1, #0x1c0000
+	orr	w8, w0, w8
+	sub	w8, w8, #272, lsl #12           // =1114112
+	cmn	w8, #256, lsl #12               // =1048576
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	movi	v4.4s, #63
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	mvni	v2.4s, #8, lsl #8
-	movi	v3.4s, #247, msl #8
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
-	cmhi	v1.4s, v3.4s, v1.4s
-	cmhi	v0.4s, v3.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	and	w9, w1, #0x3f
+	mov	w8, #63487                      // =0xf7ff
+	orr	w9, w9, w0
+	sub	w9, w9, #2049
+	cmp	w9, w8
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
-	movi	v4.2d, #0x00ffff0000ffff
-	mov	w8, #809                        // =0x329
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	mvni	v2.4s, #127, msl #8
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
-	dup	v2.4s, w8
-	cmhi	v1.4s, v2.4s, v1.4s
-	cmhi	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	and	w8, w1, #0xffff
+	orr	w8, w0, w8
+	sub	w8, w8, #8, lsl #12             // =32768
+	cmp	w8, #809
+	cset	w0, lo
+	ret
+                                        // -- End function
+func00000000000000b4:                   // @func00000000000000b4
+// %bb.0:                               // %entry
+	and	w8, w1, #0x1c0000
+	orr	w8, w0, w8
+	sub	w8, w8, #14, lsl #12            // =57344
+	cmp	w8, #258, lsl #12               // =1056768
+	cset	w0, lo
 	ret
                                         // -- End function

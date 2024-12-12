@@ -1,9 +1,6 @@
 
-; 25 occurrences:
-; abc/optimized/exor.c.ll
+; 20 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
-; darktable/optimized/tagging.c.ll
-; graphviz/optimized/quad_prog_vpsc.c.ll
 ; gromacs/optimized/pme_pp.cpp.ll
 ; icu/optimized/bytesinkutil.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
@@ -11,17 +8,15 @@
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; meilisearch-rs/optimized/2fpcolt33ttb4v7z.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nuklear/optimized/unity.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/freetype.cpp.ll
 ; openjdk/optimized/cmspack.ll
 ; openusd/optimized/decodeframe.c.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/fe-exec.ll
 ; qemu/optimized/hw_pci_msix.c.ll
+; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; stb/optimized/stb_voxel_render.c.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wireshark/optimized/packet-radius.c.ll
@@ -33,9 +28,8 @@ entry:
   ret i32 %3
 }
 
-; 39 occurrences:
+; 35 occurrences:
 ; abc/optimized/kitCloud.c.ll
-; cpython/optimized/dtoa.ll
 ; cpython/optimized/frameobject.ll
 ; glog/optimized/logging.cc.ll
 ; hwloc/optimized/bitmap.ll
@@ -46,7 +40,6 @@ entry:
 ; libquic/optimized/exponentiation.c.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_guc_ct.ll
-; linux/optimized/intel_rps.ll
 ; linux/optimized/sr.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/DebugInlineeLinesSubsection.cpp.ll
@@ -64,14 +57,12 @@ entry:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; ruby/optimized/marshal.ll
-; ruby/optimized/util.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wireshark/optimized/packet-gryphon.c.ll
 ; wireshark/optimized/packet-ismacryp.c.ll
 ; wireshark/optimized/packet-osi.c.ll
-; wireshark/optimized/packet-usbip.c.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
@@ -81,20 +72,7 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
-; graphviz/optimized/pack.c.ll
-; image-rs/optimized/1njpscpjlgoe3i07.ll
-; nuklear/optimized/unity.c.ll
-; z3/optimized/theory_str_regex.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw i32 %1, 16
-  %3 = select i1 %0, i32 %2, i32 0
-  ret i32 %3
-}
-
-; 26 occurrences:
+; 23 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/ivyUtil.c.ll
 ; bullet3/optimized/b3RadixSort32CL.ll
@@ -116,15 +94,24 @@ entry:
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/tinyxml2.cpp.ll
 ; openjdk/optimized/methodData.ll
-; openjdk/optimized/outStream.ll
-; openusd/optimized/stencilBuilder.cpp.ll
-; postgres/optimized/tidbitmap.ll
 ; redis/optimized/multi.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
+  %3 = select i1 %0, i32 %2, i32 0
+  ret i32 %3
+}
+
+; 3 occurrences:
+; graphviz/optimized/pack.c.ll
+; nuklear/optimized/unity.c.ll
+; z3/optimized/theory_str_regex.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 24
   %3 = select i1 %0, i32 %2, i32 0
   ret i32 %3
 }

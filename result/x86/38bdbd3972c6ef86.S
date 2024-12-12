@@ -4,7 +4,7 @@ func0000000000000002:                   # @func0000000000000002
 	orl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	andl	$1, %esi
 	orl	%edi, %esi
 	xorl	%eax, %eax

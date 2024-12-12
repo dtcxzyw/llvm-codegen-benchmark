@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -10,6 +10,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lua/optimized/ltable.ll
 ; mitsuba3/optimized/mesh.cpp.ll
+; php/optimized/pcre2_dfa_match.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
@@ -29,15 +30,13 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 8 occurrences:
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; gromacs/optimized/gmx_tcaf.cpp.ll
 ; icu/optimized/ucnvmbcs.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; linux/optimized/dm-stats.ll
 ; linux/optimized/irq.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; php/optimized/parse_tz.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind

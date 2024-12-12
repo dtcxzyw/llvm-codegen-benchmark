@@ -1,51 +1,26 @@
-func0000000000000054:                   // @func0000000000000054
+func00000000000000a4:                   // @func00000000000000a4
 // %bb.0:                               // %entry
-	mvni	v6.4s, #7
-	mov	w8, #32776                      // =0x8008
-	dup	v7.4s, w8
-	mov	w8, #4096                       // =0x1000
-	movk	w8, #65472, lsl #16
-	add	v5.4s, v5.4s, v6.4s
-	add	v4.4s, v4.4s, v6.4s
-	dup	v6.4s, w8
-	cmhi	v5.4s, v7.4s, v5.4s
-	cmhi	v4.4s, v7.4s, v4.4s
-	add	v3.4s, v3.4s, v6.4s
-	add	v2.4s, v2.4s, v6.4s
-	bif	v1.16b, v3.16b, v5.16b
-	bif	v0.16b, v2.16b, v4.16b
+	sub	w8, w2, #8
+	mov	w9, #32776                      // =0x8008
+	sub	w10, w1, #1023, lsl #12         // =4190208
+	cmp	w8, w9
+	csel	w0, w0, w10, lo
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	mvni	v6.4s, #7
-	mov	w8, #16388                      // =0x4004
-	dup	v7.4s, w8
-	mov	w8, #4096                       // =0x1000
-	movk	w8, #65472, lsl #16
-	add	v5.4s, v5.4s, v6.4s
-	add	v4.4s, v4.4s, v6.4s
-	dup	v6.4s, w8
-	cmhi	v5.4s, v7.4s, v5.4s
-	cmhi	v4.4s, v7.4s, v4.4s
-	add	v3.4s, v3.4s, v6.4s
-	add	v2.4s, v2.4s, v6.4s
-	bif	v1.16b, v3.16b, v5.16b
-	bif	v0.16b, v2.16b, v4.16b
+	sub	w8, w2, #8
+	mov	w9, #16388                      // =0x4004
+	sub	w10, w1, #1023, lsl #12         // =4190208
+	cmp	w8, w9
+	csel	w0, w0, w10, lo
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v6.4s, #51
-	movi	v16.4s, #180
-	mvni	v7.4s, #7
-	add	v5.4s, v5.4s, v6.4s
-	add	v4.4s, v4.4s, v6.4s
-	add	v3.4s, v3.4s, v16.4s
-	add	v2.4s, v2.4s, v16.4s
-	cmhi	v5.4s, v7.4s, v5.4s
-	cmhi	v4.4s, v7.4s, v4.4s
-	bif	v0.16b, v2.16b, v4.16b
-	bif	v1.16b, v3.16b, v5.16b
+	add	w8, w2, #51
+	add	w9, w1, #180
+	cmn	w8, #8
+	csel	w0, w0, w9, lo
 	ret
                                         // -- End function

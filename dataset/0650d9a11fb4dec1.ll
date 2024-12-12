@@ -15,7 +15,7 @@ entry:
   %3 = and i64 %2, 536870911
   %4 = icmp ne i64 %3, 536870911
   %5 = and i1 %4, %1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -29,8 +29,8 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %4, %1
-  %6 = and i1 %5, %0
+  %5 = and i1 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -38,11 +38,11 @@ entry:
 ; llvm/optimized/CGExprComplex.cpp.ll
 ; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
   %4 = icmp eq i64 %3, 2
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -50,12 +50,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 15
   %4 = icmp ne i64 %3, 2
-  %5 = and i1 %4, %1
-  %6 = and i1 %5, %0
+  %5 = and i1 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -63,12 +63,12 @@ entry:
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp ne i64 %3, 0
-  %5 = and i1 %4, %1
-  %6 = and i1 %5, %0
+  %5 = and i1 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

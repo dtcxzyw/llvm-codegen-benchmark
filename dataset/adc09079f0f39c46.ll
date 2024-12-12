@@ -25,9 +25,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
 ; coreutils-rs/optimized/4gs2z359bfnc1tys.ll
+; zed-rs/optimized/dbhzlm53ys8w4y2p8y2woz44v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i8 %0, i1 %1) #0 {
 entry:

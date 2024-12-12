@@ -13,8 +13,9 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000003:                   # @func0000000000000003
 	sraiw	a2, a1, 31
-	srliw	a2, a2, 26
-	addw	a1, a1, a2
-	andi	a1, a1, -64
+	srliw	a2, a2, 28
+	add	a1, a1, a2
+	andi	a1, a1, -16
+	slliw	a1, a1, 12
 	or	a0, a0, a1
 	ret

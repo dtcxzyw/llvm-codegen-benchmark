@@ -19,7 +19,7 @@ func0000000000000014:                   # @func0000000000000014
 	vadd.vx	v12, v10, a0
 	li	a0, 48
 	vadd.vx	v12, v10, a0, v0.t
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func000000000000000c:                   # @func000000000000000c
 	li	a0, 40

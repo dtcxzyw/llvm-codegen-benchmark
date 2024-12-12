@@ -1,5 +1,5 @@
 
-; 1051 occurrences:
+; 1063 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; abseil-cpp/optimized/chi_square_test.cc.ll
@@ -24,6 +24,24 @@
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/convexify.cpp.ll
@@ -114,6 +132,7 @@
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
+; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_lowpass.c.ll
 ; darktable/optimized/introspection_sharpen.c.ll
@@ -238,12 +257,9 @@
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/dlartg.cpp.ll
 ; gromacs/optimized/dlas2.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasd4.cpp.ll
 ; gromacs/optimized/dlasd5.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
-; gromacs/optimized/dlasq1.cpp.ll
-; gromacs/optimized/dlassq.cpp.ll
 ; gromacs/optimized/dlasv2.cpp.ll
 ; gromacs/optimized/dnrm2.cpp.ll
 ; gromacs/optimized/dstebz.cpp.ll
@@ -338,6 +354,7 @@
 ; lua/optimized/lobject.ll
 ; lua/optimized/lvm.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -421,7 +438,6 @@
 ; openblas/optimized/dlaic1.c.ll
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/dlanv2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlarrc.c.ll
@@ -442,13 +458,11 @@
 ; openblas/optimized/dsteqr.c.ll
 ; openblas/optimized/dsterf.c.ll
 ; openblas/optimized/dsyequb.c.ll
-; openblas/optimized/dsymv_thread_U.c.ll
 ; openblas/optimized/dsyrk_thread_LN.c.ll
 ; openblas/optimized/dsyrk_thread_LT.c.ll
 ; openblas/optimized/dsyrk_thread_UN.c.ll
 ; openblas/optimized/dsyrk_thread_UT.c.ll
 ; openblas/optimized/dtgsen.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtrsen.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
 ; opencv/optimized/AKAZE_match.cpp.ll
@@ -736,7 +750,6 @@
 ; proj/optimized/natearth.cpp.ll
 ; proj/optimized/natearth2.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/nicol.cpp.ll
 ; proj/optimized/nzmg.cpp.ll
 ; proj/optimized/omerc.cpp.ll
@@ -763,7 +776,6 @@
 ; proj/optimized/vandg.cpp.ll
 ; proj/optimized/vandg2.cpp.ll
 ; proj/optimized/vandg4.cpp.ll
-; proj/optimized/vertoffset.cpp.ll
 ; proj/optimized/xyzgridshift.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; pybind11/optimized/test_pytypes.cpp.ll

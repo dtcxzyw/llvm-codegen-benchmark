@@ -34,7 +34,7 @@ func0000000000000017:                   # @func0000000000000017
 	retq
 func0000000000000015:                   # @func0000000000000015
 	sarq	$3, %rdx
-	movabsq	$-1229782938247303441, %rax     # imm = 0xEEEEEEEEEEEEEEEF
+	movabsq	$-8116567392432202711, %rax     # imm = 0x8F5C28F5C28F5C29
 	imulq	%rdx, %rax
 	addq	%rsi, %rax
 	subq	%rdi, %rax

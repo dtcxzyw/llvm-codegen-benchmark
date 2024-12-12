@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmseq.vi	v0, v9, 0
 	li	a0, 32
@@ -7,7 +7,7 @@ func0000000000000011:                   # @func0000000000000011
 	vsext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	lui	a0, 524288
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -17,7 +17,7 @@ func000000000000002a:                   # @func000000000000002a
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmsle.vi	v0, v9, -1
 	lui	a0, 524288
@@ -27,7 +27,7 @@ func0000000000000026:                   # @func0000000000000026
 	vsext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmsleu.vi	v0, v9, 1
 	li	a0, -90
@@ -36,7 +36,7 @@ func0000000000000014:                   # @func0000000000000014
 	vsext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmsleu.vi	v0, v9, 1
 	vadd.vi	v8, v10, 1, v0.t
@@ -44,7 +44,7 @@ func0000000000000004:                   # @func0000000000000004
 	vsext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmseq.vi	v0, v9, 1
 	vadd.vi	v8, v10, 1, v0.t
@@ -52,7 +52,7 @@ func0000000000000031:                   # @func0000000000000031
 	vsext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	lui	a0, 262144
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, mu

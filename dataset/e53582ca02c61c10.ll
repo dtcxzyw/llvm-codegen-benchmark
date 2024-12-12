@@ -28,7 +28,8 @@ entry:
   ret i64 %3
 }
 
-; 15 occurrences:
+; 16 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/xmlparse.c.ll
 ; git/optimized/dir.ll
 ; git/optimized/xutils.ll

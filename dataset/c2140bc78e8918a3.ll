@@ -4,7 +4,7 @@
 ; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/RelocationResolver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000710(i32 %0, i64 %1) #0 {
+define i1 @func0000000000001a10(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
   %3 = add nuw nsw i64 %2, 40

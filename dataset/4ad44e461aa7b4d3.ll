@@ -1,11 +1,10 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/pdrTsim2.c.ll
 ; glslang/optimized/hlslGrammar.cpp.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/efi_64.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/io_pgtable_v2.ll
 ; llvm/optimized/ConstantFold.cpp.ll
 ; llvm/optimized/Constants.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
@@ -35,4 +34,19 @@ entry:
   ret i64 %6
 }
 
+; 1 occurrences:
+; linux/optimized/maple_tree.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 112
+  %3 = icmp eq i32 %2, 16
+  %4 = select i1 %3, i64 6, i64 0, !prof !0
+  %5 = and i64 %0, -256
+  %6 = or disjoint i64 %4, %5
+  ret i64 %6
+}
+
 attributes #0 = { nounwind }
+
+!0 = !{!"branch_weights", i32 8000000, i32 4000000}

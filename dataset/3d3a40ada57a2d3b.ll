@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; linux/optimized/inotify_user.ll
-; linux/optimized/nfs4trace.ll
 ; openjdk/optimized/classLoaderExt.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; Function Attrs: nounwind

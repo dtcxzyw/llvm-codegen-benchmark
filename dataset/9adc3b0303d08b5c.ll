@@ -1,7 +1,8 @@
 
-; 211 occurrences:
+; 213 occurrences:
 ; abc/optimized/sclUpsize.c.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
@@ -48,7 +49,6 @@
 ; gromacs/optimized/gmx_disre.cpp.ll
 ; gromacs/optimized/gmx_rmsdist.cpp.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libwebp/optimized/sharpyuv_gamma.c.ll
@@ -211,6 +211,8 @@
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0) #0 {
 entry:
@@ -430,12 +432,13 @@ entry:
   ret float %2
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
 ; ocio/optimized/Lut1DOpData.cpp.ll
 ; ocio/optimized/MathUtils.cpp.ll
+; oiio/optimized/environment.cpp.ll
 ; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/svm.cpp.ll
@@ -450,11 +453,10 @@ entry:
   ret float %2
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; box2d/optimized/b2_body.cpp.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; darktable/optimized/introspection_tonemap.cc.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; meshlab/optimized/alignset.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll

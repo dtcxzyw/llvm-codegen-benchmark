@@ -5,8 +5,8 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 func000000000000000f:                   # @func000000000000000f
 	movl	%edi, %eax
-	imulq	$544, %rax, %rax                # imm = 0x220
-	orq	$8, %rax
+	shlq	$3, %rax
+	leaq	4(%rax,%rax,2), %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%edi, %eax

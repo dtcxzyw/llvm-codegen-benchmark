@@ -109,6 +109,18 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/dec_octet_rule.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000077(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = mul nuw nsw i32 %3, 10
+  %5 = add nsw i32 %4, -48
+  %6 = add nuw nsw i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
 ; slurm/optimized/parse_time.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000f7(i32 %0, i32 %1, i32 %2) #0 {
@@ -130,6 +142,19 @@ entry:
   %4 = mul nuw nsw i32 %3, 10
   %5 = add nsw i32 %4, -2428
   %6 = add nsw i32 %5, %0
+  ret i32 %6
+}
+
+; 2 occurrences:
+; libwebp/optimized/yuv.c.ll
+; lvgl/optimized/lv_refr.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000c0(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = mul i32 %3, 3600
+  %5 = add i32 %4, 3600
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -177,18 +202,6 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = mul i32 %3, 72
   %5 = add i32 %4, 400
-  %6 = add i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; libwebp/optimized/yuv.c.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000c0(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = mul i32 %3, 67099145
-  %5 = add i32 %4, 33685504
   %6 = add i32 %5, %0
   ret i32 %6
 }

@@ -5,19 +5,19 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%esi, %edi
 	setb	%al
 	retq
-func0000000000000421:                   # @func0000000000000421
+func0000000000000841:                   # @func0000000000000841
 	shrq	$5, %rsi
 	addl	$-2, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000401:                   # @func0000000000000401
+func0000000000000801:                   # @func0000000000000801
 	shrq	$5, %rsi
 	addl	$-2, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	shrq	$4, %rsi
 	decl	%esi
 	addl	$2, %edi

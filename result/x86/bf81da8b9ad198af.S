@@ -16,12 +16,6 @@ func0000000000000008:                   # @func0000000000000008
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	cmpw	$6, %dx
-	setae	%al
-	orb	%dil, %sil
-	orb	%sil, %al
-	retq
 func000000000000000c:                   # @func000000000000000c
 	cmpw	$-1, %dx
 	setl	%al

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; git/optimized/diff.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d6(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func00000000000001a6(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
   %4 = add i32 %3, 1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/index-pack.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c6(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000186(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
   %4 = add i32 %3, 1
@@ -27,7 +27,7 @@ entry:
 ; git/optimized/line-log.ll
 ; icu/optimized/ucurr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000046(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000086(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
   %4 = add i32 %3, 1
@@ -41,7 +41,7 @@ entry:
 ; git/optimized/rev-parse.ll
 ; icu/optimized/ucurr.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000e6(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func00000000000001c6(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
   %4 = add i32 %3, 1
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f6(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func00000000000001e6(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
   %4 = add i32 %3, 1

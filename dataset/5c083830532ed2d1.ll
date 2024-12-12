@@ -14,10 +14,10 @@
 ; velox/optimized/TypeParser.yy.cc.ll
 ; verilator/optimized/V3ParseGrammar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000042c(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i64 %0 to i32
-  %3 = icmp eq i32 %2, %1
+  %3 = icmp eq i32 %1, %2
   %4 = icmp ne i64 %0, 1
   %5 = and i1 %4, %3
   ret i1 %5

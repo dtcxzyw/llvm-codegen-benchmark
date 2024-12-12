@@ -32,6 +32,15 @@ func0000000000000008:                   # @func0000000000000008
 	mulhu	a0, a0, a1
 	srli	a0, a0, 35
 	ret
+func000000000000000a:                   # @func000000000000000a
+	add	a1, a1, a2
+	lui	a2, 149797
+	subw	a0, a0, a1
+	srliw	a0, a0, 3
+	addiw	a1, a2, -1755
+	mul	a0, a0, a1
+	srli	a0, a0, 32
+	ret
 func000000000000001a:                   # @func000000000000001a
 	add	a1, a1, a2
 	lui	a2, 422303

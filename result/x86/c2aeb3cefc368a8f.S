@@ -23,6 +23,11 @@ func000000000000000a:                   # @func000000000000000a
 	subq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	movslq	%edx, %rax
+	subq	%rsi, %rax
+	leaq	(%rdi,%rax,4), %rax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	movslq	%edx, %rax
 	subq	%rsi, %rax
@@ -32,6 +37,12 @@ func0000000000000004:                   # @func0000000000000004
 	movslq	%edx, %rax
 	subq	%rsi, %rax
 	addq	%rdi, %rax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	movslq	%edx, %rax
+	subq	%rsi, %rax
+	leaq	(%rax,%rax,2), %rax
+	leaq	(%rdi,%rax,4), %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movslq	%edx, %rax

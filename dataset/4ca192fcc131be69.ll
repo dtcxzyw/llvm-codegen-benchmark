@@ -12,7 +12,7 @@ define float @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = sitofp i32 %4 to float
   ret float %5
 }

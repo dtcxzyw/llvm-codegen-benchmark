@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 18 occurrences:
 ; git/optimized/archive-tar.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
@@ -14,6 +14,10 @@
 ; openssl/optimized/libcrypto-shlib-pem_lib.ll
 ; qemu/optimized/hw_virtio_vhost-vdpa.c.ll
 ; ruby/optimized/vm.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:

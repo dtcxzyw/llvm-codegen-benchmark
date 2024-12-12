@@ -1,4 +1,4 @@
-func000000000000011c:                   # @func000000000000011c
+func000000000000042c:                   # @func000000000000042c
 	sext.w	a0, a0
 	zext.w	a2, a2
 	srai	a1, a1, 2
@@ -7,7 +7,7 @@ func000000000000011c:                   # @func000000000000011c
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000118:                   # @func0000000000000118
+func0000000000000428:                   # @func0000000000000428
 	sext.w	a0, a0
 	zext.w	a2, a2
 	srai	a1, a1, 2

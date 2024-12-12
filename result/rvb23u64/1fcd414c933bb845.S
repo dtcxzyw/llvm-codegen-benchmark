@@ -22,11 +22,6 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a0, a0, 736
 	andi	a0, a0, -256
 	ret
-func000000000000000e:                   # @func000000000000000e
-	slli	a0, a0, 16
-	lui	a1, 1048560
-	addw	a0, a0, a1
-	ret
 func0000000000000005:                   # @func0000000000000005
 	slli	a0, a0, 2
 	addiw	a0, a0, 124

@@ -5,3 +5,12 @@ func0000000000000085:                   # @func0000000000000085
 	cmovbl	%eax, %edi
 	imull	$153, %edi, %eax
 	retq
+func0000000000000185:                   # @func0000000000000185
+	xorl	%eax, %eax
+	cmpb	$-95, %sil
+	setb	%al
+	shll	$6, %eax
+	addl	%edi, %eax
+	imull	$188, %eax, %eax
+	addl	$-12032, %eax                   # imm = 0xD100
+	retq

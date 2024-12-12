@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 84 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/btDantzigLCP.ll
@@ -19,7 +19,6 @@
 ; gromacs/optimized/pbc.cpp.ll
 ; gromacs/optimized/restcbt.cpp.ll
 ; gromacs/optimized/slaed6.cpp.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; gromacs/optimized/slasd5.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll

@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/to_chars.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; icu/optimized/ubidi.ll
 ; llvm/optimized/RegBankSelect.cpp.ll
@@ -12,7 +13,7 @@ define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -32,7 +33,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

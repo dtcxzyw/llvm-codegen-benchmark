@@ -11,7 +11,11 @@ entry:
   ret double %3
 }
 
-; 4 occurrences:
+; 8 occurrences:
+; boost/optimized/area_box_sg.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/lsd.cpp.ll

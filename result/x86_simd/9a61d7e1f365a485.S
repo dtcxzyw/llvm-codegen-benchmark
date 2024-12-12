@@ -17,7 +17,7 @@
 	.zero	1
 .LCPI0_1:
 	.zero	4,31
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpmovdb	%ymm1, %xmm1
 	vpxord	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vptestnmd	%ymm0, %ymm0, %k1

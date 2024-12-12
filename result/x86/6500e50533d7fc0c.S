@@ -3,13 +3,13 @@ func0000000000000001:                   # @func0000000000000001
 	testl	$-16777216, %edi                # imm = 0xFF000000
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	shrl	$24, %esi
 	shrl	$24, %edi
 	cmpl	%esi, %edi
 	seta	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	shrl	$6, %esi
 	shrl	$6, %edi
 	cmpl	%esi, %edi

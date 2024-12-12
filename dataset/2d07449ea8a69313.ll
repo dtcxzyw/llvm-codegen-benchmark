@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; cmake/optimized/MD5.c.ll
 ; hermes/optimized/MD5.cpp.ll
 ; linux/optimized/aio.ll
-; linux/optimized/rpl.ll
 ; llvm/optimized/MD5.cpp.ll
 ; qemu/optimized/block_vhdx-log.c.ll
 ; redis/optimized/hyperloglog.ll
@@ -306,7 +305,6 @@ entry:
 ; llvm/optimized/PtrState.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
@@ -389,6 +387,7 @@ entry:
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/compilationPolicy.ll

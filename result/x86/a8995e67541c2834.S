@@ -1,12 +1,12 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000054:                   # @func0000000000000054
 	movq	%rsi, %rax
 	movl	%edx, %ecx
-	cmpq	%rsi, %rcx
-	cmovbel	%edi, %eax
+	cmpq	%rcx, %rsi
+	cmovael	%edi, %eax
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	movq	%rsi, %rax
 	movl	%edx, %ecx
-	cmpq	%rsi, %rcx
-	cmovbel	%edi, %eax
+	cmpq	%rcx, %rsi
+	cmovael	%edi, %eax
 	retq

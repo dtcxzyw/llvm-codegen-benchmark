@@ -12,12 +12,13 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   %5 = bitcast i64 %4 to double
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_basicadj.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; Function Attrs: nounwind
 define double @func0000000000000008(double %0, i32 %1) #0 {
 entry:
@@ -25,7 +26,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 52
   %5 = bitcast i64 %4 to double
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

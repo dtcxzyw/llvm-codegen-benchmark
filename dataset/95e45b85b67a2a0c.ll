@@ -3,7 +3,7 @@
 ; postgres/optimized/interval.ll
 ; qemu/optimized/qapi_qapi-util.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000308(i8 %0, i16 %1) #0 {
 entry:
   %2 = freeze i16 %1
   %3 = and i16 %2, 8
@@ -17,7 +17,7 @@ entry:
 ; linux/optimized/hub.ll
 ; slurm/optimized/parse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000302(i8 %0, i16 %1) #0 {
 entry:
   %2 = freeze i16 %1
   %3 = and i16 %2, 2048

@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/static_string.ll
 ; cmake/optimized/escape.c.ll
 ; cmake/optimized/urlapi.c.ll
 ; curl/optimized/libcurl_la-escape.ll

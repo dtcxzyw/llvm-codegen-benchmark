@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrld	$16, %ymm1, %ymm1
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	12345                           # 0x3039
@@ -83,5 +83,5 @@ func0000000000000009:                   # @func0000000000000009
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrld	$2, %ymm1, %ymm1
 	vpandd	.LCPI3_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

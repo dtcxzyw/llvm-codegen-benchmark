@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; spike/optimized/s_mulAddF128.ll
 ; spike/optimized/s_mulAddF16.ll

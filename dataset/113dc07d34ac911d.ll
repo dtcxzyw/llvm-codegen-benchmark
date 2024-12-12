@@ -50,7 +50,6 @@
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/detokenize.c.ll
 ; postgres/optimized/attoptcache.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/copyfrom.ll
 ; postgres/optimized/copyfromparse.ll
 ; postgres/optimized/functioncmds.ll
@@ -83,6 +82,7 @@
 ; spike/optimized/srai16.ll
 ; spike/optimized/srai8.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/8d3spienurnqxgwbfckolnb8f.ll
 ; velox/optimized/ArrayPosition.cpp.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; velox/optimized/ArraySum.cpp.ll
@@ -198,7 +198,7 @@ entry:
   ret i64 %3
 }
 
-; 80 occurrences:
+; 82 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRpm.c.ll
@@ -268,6 +268,8 @@ entry:
 ; opencv/optimized/affine_feature2d.cpp.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/bilateral_texture_filter.cpp.ll
+; opencv/optimized/demosaicing.cpp.ll
+; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/feature.cpp.ll
 ; opencv/optimized/gdal-image.cpp.ll
 ; opencv/optimized/geo_interpolation.cpp.ll

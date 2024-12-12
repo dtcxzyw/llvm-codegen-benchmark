@@ -22,7 +22,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/decodetxb.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 65535
@@ -37,7 +37,7 @@ entry:
 ; linux/optimized/ip_output.ll
 ; linux/optimized/netfilter.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = and i32 %3, 131056

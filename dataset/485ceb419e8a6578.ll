@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/int128.cc.ll
@@ -7,6 +7,7 @@
 ; abseil-cpp/optimized/marshalling_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; eastl/optimized/TestAtomicBasic.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; qemu/optimized/fpu_softfloat.c.ll
@@ -16,7 +17,7 @@
 ; velox/optimized/DecimalVectorFunctions.cpp.ll
 ; velox/optimized/HugeInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i128 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = shl nuw i128 %2, 64
@@ -25,7 +26,8 @@ entry:
   ret i1 %5
 }
 
-; 228 occurrences:
+; 229 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -255,7 +257,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i128 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = shl nuw i128 %2, 64
@@ -264,7 +266,9 @@ entry:
   ret i1 %5
 }
 
-; 228 occurrences:
+; 230 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -494,7 +498,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i128 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = shl nuw i128 %2, 64
@@ -503,8 +507,10 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -517,7 +523,7 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i128 %0, i64 %1) #0 {
+define i1 @func00000000000000ac(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = shl nuw i128 %2, 64
@@ -526,10 +532,36 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b8(i128 %0, i64 %1) #0 {
+entry:
+  %2 = zext i64 %1 to i128
+  %3 = shl nuw i128 %2, 64
+  %4 = or disjoint i128 %3, %0
+  %5 = icmp samesign ugt i128 %4, 9999999999999999999999999999999999999
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b4(i128 %0, i64 %1) #0 {
+entry:
+  %2 = zext i64 %1 to i128
+  %3 = shl nuw i128 %2, 64
+  %4 = or disjoint i128 %3, %0
+  %5 = icmp samesign ult i128 %4, 10000000000000000000
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i128 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = shl nuw i128 %2, 64
@@ -541,7 +573,7 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i128 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = shl nuw i128 %2, 64

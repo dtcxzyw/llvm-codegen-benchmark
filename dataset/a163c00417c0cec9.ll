@@ -37,7 +37,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 24
   %4 = add i32 %3, -33554432
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = add i32 %0, 768
   %7 = or i32 %6, %5
   ret i32 %7

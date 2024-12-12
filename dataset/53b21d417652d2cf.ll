@@ -71,18 +71,6 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, 1
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = getelementptr nusw i16, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; darktable/optimized/Cr2sRawInterpolator.cpp.ll
-; Function Attrs: nounwind
 define ptr @func000000000000007c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
@@ -92,8 +80,9 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/CrwDecompressor.cpp.ll
+; darktable/optimized/JpegDecompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000005c(ptr %0, i64 %1, i32 %2) #0 {
@@ -112,7 +101,7 @@ define ptr @func0000000000000072(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %3, 1
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw double, ptr %0, i64 %5
   ret ptr %6
 }
@@ -143,7 +132,7 @@ define ptr @func0000000000000032(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %3, 1
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
 }

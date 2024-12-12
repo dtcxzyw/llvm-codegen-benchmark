@@ -1,10 +1,8 @@
 
-; 54 occurrences:
+; 49 occurrences:
 ; cmake/optimized/entropy_common.c.ll
 ; cmake/optimized/mprintf.c.ll
-; cmake/optimized/zbuff_common.c.ll
 ; cmake/optimized/zdict.c.ll
-; cmake/optimized/zstd_common.c.ll
 ; cpython/optimized/dtoa.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; cvc5/optimized/term_context.cpp.ll
@@ -12,11 +10,9 @@
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; icu/optimized/taiwncal.ll
 ; linux/optimized/dd.ll
 ; linux/optimized/entropy_common.ll
 ; linux/optimized/uhci-hcd.ll
-; linux/optimized/zstd_common.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/EHStreamer.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
@@ -49,7 +45,6 @@
 ; tev/optimized/main.cpp.ll
 ; zstd/optimized/entropy_common.c.ll
 ; zstd/optimized/zdict.c.ll
-; zstd/optimized/zstd_common.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
@@ -62,19 +57,20 @@ entry:
   ret i32 %3
 }
 
-; 72 occurrences:
+; 73 occurrences:
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/static_string.ll
 ; bullet3/optimized/b3OptimizedBvh.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btOptimizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
 ; clamav/optimized/filtering.c.ll
-; cmake/optimized/cmArchiveWrite.cxx.ll
 ; cmake/optimized/cmExprParser.cxx.ll
 ; cmake/optimized/core.c.ll
 ; cmake/optimized/mprintf.c.ll
@@ -143,11 +139,10 @@ entry:
   ret i32 %3
 }
 
-; 111 occurrences:
+; 106 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/ifTune.c.ll
-; abc/optimized/wlcNtk.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -166,7 +161,6 @@ entry:
 ; flac/optimized/decode.c.ll
 ; flac/optimized/encode.c.ll
 ; flac/optimized/stream_encoder.c.ll
-; freetype/optimized/psaux.c.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -201,9 +195,6 @@ entry:
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; nuttx/optimized/lib_fls.c.ll
-; nuttx/optimized/lib_flsl.c.ll
-; nuttx/optimized/lib_flsll.c.ll
 ; oiio/optimized/iffinput.cpp.ll
 ; oiio/optimized/iffoutput.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll

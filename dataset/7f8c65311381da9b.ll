@@ -12,7 +12,7 @@ entry:
   ret i32 %4
 }
 
-; 48 occurrences:
+; 59 occurrences:
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; flac/optimized/picture.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -31,8 +31,17 @@ entry:
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_sseu.ll
-; linux/optimized/rsmisc.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/Codec.cpp.ll
@@ -61,6 +70,8 @@ entry:
 ; wireshark/optimized/packet-artnet.c.ll
 ; wireshark/optimized/packet-oran.c.ll
 ; wireshark/optimized/packet-x11.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:
@@ -70,7 +81,8 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_img.ll
 ; oiio/optimized/Reader.cpp.ll
 ; wireshark/optimized/packet-sbc.c.ll
 ; wireshark/optimized/packet-vnc.c.ll

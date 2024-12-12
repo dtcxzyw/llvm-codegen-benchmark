@@ -1,5 +1,6 @@
 
-; 63 occurrences:
+; 72 occurrences:
+; boost/optimized/url_impl.ll
 ; clamav/optimized/hwp.c.ll
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
 ; cmake/optimized/doh.c.ll
@@ -50,7 +51,6 @@
 ; openusd/optimized/packageUtils.cpp.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/zend_smart_str.ll
-; re2/optimized/re2.cc.ll
 ; rust-analyzer-rs/optimized/3yqkws4dawqbgt35.ll
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
@@ -63,16 +63,25 @@
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wolfssl/optimized/poly1305.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
-  %2 = icmp eq i8 %1, 45
-  %3 = select i1 %2, i64 -1, i64 -2
+  %2 = icmp eq i8 %1, 0
+  %3 = select i1 %2, i64 8, i64 4
   %4 = add i64 %3, %0
   ret i64 %4
 }
 
-; 248 occurrences:
+; 247 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -168,7 +177,6 @@ entry:
 ; luau/optimized/lfunc.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -325,7 +333,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
-  %3 = select i1 %2, i64 201326592, i64 369098752
+  %3 = select i1 %2, i64 -258, i64 -257
   %4 = add nuw nsw i64 %3, %0
   ret i64 %4
 }
@@ -341,7 +349,7 @@ define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i64 -3, i64 -2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -362,24 +370,23 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000063(i64 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %1, 71
+  %2 = icmp samesign ugt i8 %1, 71
   %3 = select i1 %2, i64 4294967224, i64 4294967237
   %4 = add nuw nsw i64 %3, %0
   ret i64 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; php/optimized/pcre2_match.ll
-; redis/optimized/zipmap.ll
 ; rust-analyzer-rs/optimized/1rhf3pjhhflazor1.ll
 ; rust-analyzer-rs/optimized/c249cixj978zg74.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000013(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000053(i64 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, 46
+  %2 = icmp samesign ult i8 %1, 46
   %3 = select i1 %2, i64 4294967263, i64 4294967250
   %4 = add nuw nsw i64 %3, %0
   ret i64 %4
@@ -441,7 +448,18 @@ define i64 @func0000000000000019(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp slt i8 %1, 3
   %3 = select i1 %2, i64 2399, i64 2400
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; redis/optimized/zipmap.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000013(i64 %0, i8 %1) #0 {
+entry:
+  %2 = icmp ult i8 %1, -2
+  %3 = select i1 %2, i64 1, i64 5
+  %4 = add nuw nsw i64 %3, %0
   ret i64 %4
 }
 

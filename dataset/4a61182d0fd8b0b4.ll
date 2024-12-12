@@ -1,8 +1,9 @@
 
-; 186 occurrences:
+; 188 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -22,6 +23,7 @@
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; oiio/optimized/texture3d.cpp.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll

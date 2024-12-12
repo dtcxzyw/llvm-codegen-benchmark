@@ -1,5 +1,6 @@
 
-; 48 occurrences:
+; 49 occurrences:
+; abc/optimized/giaIf.c.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -49,16 +50,16 @@
 ; wolfssl/optimized/pwdbased.c.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 15 occurrences:
-; cpython/optimized/Hacl_Hash_SHA3.ll
+; 16 occurrences:
+; freetype/optimized/ftbitmap.c.ll
 ; gromacs/optimized/dtrmm.cpp.ll
 ; gromacs/optimized/strmm.cpp.ll
 ; hdf5/optimized/h5tools_dump.c.ll
@@ -67,6 +68,7 @@ entry:
 ; linux/optimized/rx.ll
 ; msdfgen/optimized/rasterization.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
+; opencv/optimized/msd.cpp.ll
 ; openjdk/optimized/cmscgats.ll
 ; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -82,8 +84,9 @@ entry:
   ret ptr %4
 }
 
-; 44 occurrences:
+; 47 occurrences:
 ; abc/optimized/cuddAddAbs.c.ll
+; abc/optimized/ifMap.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; draco/optimized/corner_table.cc.ll
 ; draco/optimized/symbol_decoding.cc.ll
@@ -118,9 +121,11 @@ entry:
 ; llvm/optimized/VirtRegMap.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86TileConfig.cpp.ll
+; lz4/optimized/lz4.c.ll
 ; openjdk/optimized/jccoefct.ll
 ; openusd/optimized/dataSourceMaterialNetworkInterface.cpp.ll
 ; openusd/optimized/dependencyForwardingSceneIndex.cpp.ll
+; openusd/optimized/lz4.cpp.ll
 ; openusd/optimized/testHdDataSourceLocator.cpp.ll
 ; openusd/optimized/testHdSceneIndex.cpp.ll
 ; php/optimized/pcre2_dfa_match.ll
@@ -128,11 +133,11 @@ entry:
 ; z3/optimized/emonics.cpp.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw [64 x i16], ptr %0, i64 %3
+  %4 = getelementptr nusw nuw [64 x i16], ptr %0, i64 %3
   ret ptr %4
 }
 

@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; bullet3/optimized/btCompoundShape.ll
 ; bullet3/optimized/btContactProcessing.ll
@@ -20,6 +20,7 @@
 ; bullet3/optimized/btSequentialImpulseConstraintSolverMt.ll
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/btTriangleBuffer.ll
+; darktable/optimized/introspection_atrous.c.ll
 ; icu/optimized/ucm.ll
 ; nori/optimized/nanovg.c.ll
 ; postgres/optimized/libpq-events.ll
@@ -30,19 +31,6 @@ entry:
   %3 = select i1 %2, i32 1, i32 %0
   %4 = sext i32 %3 to i64
   %5 = mul nsw i64 %4, 88
-  ret i64 %5
-}
-
-; 2 occurrences:
-; abc/optimized/giaFanout.c.ll
-; abc/optimized/lpkAbcUtil.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000019(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 6
-  %3 = select i1 %2, i32 1, i32 %0
-  %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, 12
   ret i64 %5
 }
 

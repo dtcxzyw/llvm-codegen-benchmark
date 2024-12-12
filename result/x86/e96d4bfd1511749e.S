@@ -33,9 +33,19 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	orb	%dil, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpw	%dx, %si
+	seta	%al
+	orb	%dil, %al
+	retq
 func0000000000000005:                   # @func0000000000000005
 	cmpw	%dx, %si
 	setbe	%al
+	orb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpw	%dx, %si
+	setb	%al
 	orb	%dil, %al
 	retq
 func0000000000000009:                   # @func0000000000000009

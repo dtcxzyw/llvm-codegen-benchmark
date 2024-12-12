@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 70 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/xmlparse.c.ll
@@ -16,7 +16,6 @@
 ; hermes/optimized/HostModel.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/JSArray.cpp.ll
-; hermes/optimized/JSArrayBuffer.cpp.ll
 ; hermes/optimized/JSCallSite.cpp.ll
 ; hermes/optimized/JSCallableProxy.cpp.ll
 ; hermes/optimized/JSDataView.cpp.ll

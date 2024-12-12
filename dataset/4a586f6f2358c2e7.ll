@@ -1,12 +1,10 @@
 
-; 9 occurrences:
+; 7 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; gromacs/optimized/colvarbias_alb.cpp.ll
 ; gromacs/optimized/gmx_dos.cpp.ll
 ; gromacs/optimized/minimize.cpp.ll
 ; gromacs/optimized/veccompare.cpp.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openmpi/optimized/test_overhead.ll
 ; openspiel/optimized/TransTableL.cpp.ll
 ; Function Attrs: nounwind

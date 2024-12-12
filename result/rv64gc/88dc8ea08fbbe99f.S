@@ -1,4 +1,4 @@
-func00000000000001fa:                   # @func00000000000001fa
+func00000000000001ff:                   # @func00000000000001ff
 	li	a3, 5
 	subw	a3, a3, a2
 	slli	a3, a3, 48

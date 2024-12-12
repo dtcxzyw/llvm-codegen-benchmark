@@ -4,7 +4,7 @@
 ; openjdk/optimized/jvmciCodeInstaller_x86.ll
 ; openspiel/optimized/Moves.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000085(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 2
   %3 = icmp eq i8 %1, -43

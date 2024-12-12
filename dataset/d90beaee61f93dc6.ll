@@ -13,8 +13,8 @@
 ; bullet3/optimized/btRigidBody.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; bullet3/optimized/btSoftBody.ll
-; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
+; darktable/optimized/introspection_primaries.c.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/pairs.cpp.ll
@@ -55,7 +55,7 @@ define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
   %4 = fmul float %3, 6.000000e+00
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

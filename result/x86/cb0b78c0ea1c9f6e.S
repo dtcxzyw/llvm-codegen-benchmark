@@ -1,6 +1,6 @@
-func0000000000000016:                   # @func0000000000000016
-	leal	2147483562(%rdi), %eax
+func0000000000000026:                   # @func0000000000000026
+	leal	48(%rdi), %eax
 	testl	%edi, %edi
-	cmovgl	%edi, %eax
+	cmovnsl	%edi, %eax
 	cltq
 	retq

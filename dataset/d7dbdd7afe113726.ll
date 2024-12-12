@@ -1,7 +1,8 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/runtime.c.ll
+; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; redis/optimized/ziplist.ll
 ; zfp/optimized/decode1d.c.ll
 ; zfp/optimized/decode1f.c.ll
@@ -19,9 +20,8 @@
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %.neg = sub i64 %2, %0
-  %3 = add i64 %.neg, 64
-  ret i64 %3
+  %.neg = sub nsw i64 %2, %0
+  ret i64 %.neg
 }
 
 attributes #0 = { nounwind }

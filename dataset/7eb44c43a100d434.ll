@@ -20,7 +20,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = icmp ult i32 %1, 8
   %5 = select i1 %4, i32 %3, i32 -1
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 

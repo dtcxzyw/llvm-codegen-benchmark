@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; git/optimized/diff-delta.ll
-; linux/optimized/vc_screen.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
@@ -35,11 +34,22 @@ entry:
 }
 
 ; 1 occurrences:
+; linux/optimized/vc_screen.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %0, 4096
+  %3 = and i64 %1, 4294967295
+  %4 = select i1 %2, i64 4096, i64 %3
+  ret i64 %4
+}
+
+; 1 occurrences:
 ; eastl/optimized/TestHeap.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %0, 858993460
+  %2 = icmp samesign ult i64 %0, 858993460
   %3 = and i64 %1, 4294967295
   %4 = select i1 %2, i64 0, i64 %3
   ret i64 %4

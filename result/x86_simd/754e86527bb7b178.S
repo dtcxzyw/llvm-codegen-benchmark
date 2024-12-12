@@ -4,7 +4,7 @@
 	.long	41                              # 0x29
 .LCPI0_2:
 	.long	40                              # 0x28
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
@@ -20,7 +20,7 @@ func0000000000000034:                   # @func0000000000000034
 	.long	18                              # 0x12
 .LCPI1_2:
 	.long	19                              # 0x13
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1

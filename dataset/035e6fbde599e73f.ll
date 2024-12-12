@@ -1,8 +1,5 @@
 
-; 13 occurrences:
-; clamav/optimized/Ppmd7.c.ll
-; cmake/optimized/archive_ppmd7.c.ll
-; cmake/optimized/archive_ppmd8.c.ll
+; 10 occurrences:
 ; folly/optimized/DeterministicSchedule.cpp.ll
 ; gromacs/optimized/calcgrid.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
@@ -14,10 +11,10 @@
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODITFReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 40014
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ult i32 %2, %0
   ret i1 %3
 }
 
@@ -25,14 +22,15 @@ entry:
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; minetest/optimized/emerge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 17
   %3 = icmp sle i32 %2, %0
   ret i1 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/src.ll
 ; linux/optimized/battery.ll
 ; linux/optimized/intel_pstate.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
@@ -62,28 +60,21 @@ entry:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = icmp slt i32 %2, %0
   ret i1 %3
 }
 
-; 28 occurrences:
-; arrow/optimized/strptime.c.ll
+; 20 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
-; clamav/optimized/unpack.cpp.ll
 ; clamav/optimized/upx.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
-; eastl/optimized/EAString.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hyperscan/optimized/mcclellancompile.cpp.ll
-; hyperscan/optimized/mcsheng_compile.cpp.ll
-; libwebp/optimized/anim_encode.c.ll
-; linux/optimized/intel_dp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-aat-map.ll
 ; openjdk/optimized/hb-face.ll
@@ -96,78 +87,12 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
-; slurm/optimized/read_config.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 6
   %3 = icmp ugt i32 %2, %0
-  ret i1 %3
-}
-
-; 20 occurrences:
-; abseil-cpp/optimized/time_zone_format.cc.ll
-; darktable/optimized/RawImageDataFloat.cpp.ll
-; git/optimized/trailer.ll
-; gromacs/optimized/pull.cpp.ll
-; gromacs/optimized/updategroups.cpp.ll
-; luau/optimized/lgc.cpp.ll
-; ocio/optimized/FileFormatSpi3D.cpp.ll
-; opencv/optimized/hough.cpp.ll
-; openjdk/optimized/mlib_ImageAffine_BL_D64.ll
-; openjdk/optimized/mlib_ImageAffine_BL_F32.ll
-; openjdk/optimized/mlib_ImageAffine_BL_S32.ll
-; openjdk/optimized/mlib_c_ImageAffine_BL.ll
-; openjdk/optimized/mlib_c_ImageAffine_BL_S16.ll
-; openjdk/optimized/mlib_c_ImageAffine_BL_U16.ll
-; openjdk/optimized/mlib_c_ImageAffine_NN.ll
-; openusd/optimized/stbImage.cpp.ll
-; pbrt-v4/optimized/imgtool.cpp.ll
-; quantlib/optimized/period.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
-; sentencepiece/optimized/strutil.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 3
-  %3 = icmp slt i32 %2, %0
-  ret i1 %3
-}
-
-; 27 occurrences:
-; abc/optimized/giaMan.c.ll
-; abseil-cpp/optimized/time_zone_posix.cc.ll
-; bullet3/optimized/btConvexHull.ll
-; bullet3/optimized/btReducedDeformableBody.ll
-; darktable/optimized/LJpegDecompressor.cpp.ll
-; gromacs/optimized/calc_verletbuf.cpp.ll
-; gromacs/optimized/vsite.cpp.ll
-; imgui/optimized/imgui_tables.cpp.ll
-; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
-; meshlab/optimized/filter_plymc.cpp.ll
-; meshlab/optimized/filter_sampling.cpp.ll
-; meshlab/optimized/filter_voronoi.cpp.ll
-; meshlab/optimized/io_pdb.cpp.ll
-; meshlab/optimized/mlsplugin.cpp.ll
-; openblas/optimized/dlaqr0.c.ll
-; openblas/optimized/dlaqr4.c.ll
-; opencv/optimized/color_lab.cpp.ll
-; opencv/optimized/decoded_bit_stream_parser.cpp.ll
-; openjdk/optimized/mlib_ImageAffine_NN.ll
-; openmpi/optimized/fbtl_posix_preadv.ll
-; openmpi/optimized/fbtl_posix_pwritev.ll
-; raylib/optimized/rmodels.c.ll
-; recastnavigation/optimized/RecastDebugDraw.cpp.ll
-; redis/optimized/lua_struct.ll
-; sentencepiece/optimized/strutil.cc.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 3
-  %3 = icmp sgt i32 %2, %0
   ret i1 %3
 }
 
@@ -230,17 +155,16 @@ entry:
   ret i1 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; hermes/optimized/g_fmt.c.ll
 ; icu/optimized/ubidi.ll
 ; jq/optimized/decNumber.ll
 ; jq/optimized/jv_dtoa.ll
-; libwebp/optimized/anim_encode.c.ll
 ; nori/optimized/nanovg.c.ll
 ; openjdk/optimized/jvmciCompiler.ll
 ; openspiel/optimized/Init.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
   %3 = icmp sgt i32 %2, %0
@@ -263,7 +187,8 @@ entry:
   ret i1 %3
 }
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -434,15 +359,53 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, 10
   %3 = icmp ult i32 %2, %0
   ret i1 %3
 }
 
-; 6 occurrences:
+; 28 occurrences:
+; abc/optimized/giaMan.c.ll
+; abseil-cpp/optimized/time_zone_posix.cc.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
+; bullet3/optimized/btConvexHull.ll
+; bullet3/optimized/btReducedDeformableBody.ll
+; darktable/optimized/LJpegDecompressor.cpp.ll
+; gromacs/optimized/calc_verletbuf.cpp.ll
+; gromacs/optimized/vsite.cpp.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
+; meshlab/optimized/filter_createiso.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/io_pdb.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
+; openblas/optimized/dlaqr0.c.ll
+; openblas/optimized/dlaqr4.c.ll
+; opencv/optimized/color_lab.cpp.ll
+; opencv/optimized/decoded_bit_stream_parser.cpp.ll
+; openmpi/optimized/fbtl_posix_preadv.ll
+; openmpi/optimized/fbtl_posix_pwritev.ll
+; raylib/optimized/rmodels.c.ll
+; recastnavigation/optimized/RecastDebugDraw.cpp.ll
+; redis/optimized/lua_struct.ll
+; sentencepiece/optimized/strutil.cc.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, 3
+  %3 = icmp sgt i32 %2, %0
+  ret i1 %3
+}
+
+; 7 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
+; boost/optimized/default_filter_factory.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; gromacs/optimized/resourcedivision.cpp.ll
@@ -461,7 +424,7 @@ entry:
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, 3
   %3 = icmp eq i32 %2, %0
@@ -480,18 +443,42 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/prefs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = icmp eq i32 %2, %0
   ret i1 %3
 }
 
-; 8 occurrences:
+; 14 occurrences:
+; abseil-cpp/optimized/time_zone_format.cc.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
+; darktable/optimized/RawImageDataFloat.cpp.ll
+; git/optimized/trailer.ll
+; gromacs/optimized/pull.cpp.ll
+; gromacs/optimized/updategroups.cpp.ll
+; luau/optimized/lgc.cpp.ll
+; ocio/optimized/FileFormatSpi3D.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; quantlib/optimized/period.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; sentencepiece/optimized/strutil.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, 7
+  %3 = icmp slt i32 %2, %0
+  ret i1 %3
+}
+
+; 9 occurrences:
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/giaShow.c.ll
+; boost/optimized/default_filter_factory.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/psaux.c.ll
 ; postgres/optimized/array_typanalyze.ll
@@ -504,25 +491,13 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
-; darktable/optimized/jpeg.c.ll
-; libjpeg-turbo/optimized/jcicc.c.ll
-; oiio/optimized/jpegoutput.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw i32 %1, 65519
-  %3 = icmp ne i32 %2, %0
-  ret i1 %3
-}
-
 ; 1 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 150
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ult i32 %2, %0
   ret i1 %3
 }
 
@@ -540,7 +515,7 @@ entry:
 ; pbrt-v4/optimized/plytool.cpp.ll
 ; wireshark/optimized/packet-pw-atm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = icmp eq i32 %2, %0
@@ -550,23 +525,47 @@ entry:
 ; 1 occurrences:
 ; git/optimized/http.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000037(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000067(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
   %3 = icmp sle i32 %2, %0
   ret i1 %3
 }
 
-; 4 occurrences:
+; 9 occurrences:
+; boost/optimized/format_parser.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
 ; git/optimized/base85.ll
 ; libquic/optimized/spdy_alt_svc_wire_format.cc.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, 85
   %3 = icmp ugt i32 %2, %0
+  ret i1 %3
+}
+
+; 10 occurrences:
+; arrow/optimized/strptime.c.ll
+; clamav/optimized/Ppmd7.c.ll
+; clamav/optimized/unpack.cpp.ll
+; cmake/optimized/archive_ppmd7.c.ll
+; eastl/optimized/EAString.cpp.ll
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; hyperscan/optimized/mcsheng_compile.cpp.ll
+; libwebp/optimized/anim_encode.c.ll
+; linux/optimized/intel_dp.ll
+; slurm/optimized/read_config.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, 5
+  %3 = icmp samesign ugt i32 %2, %0
   ret i1 %3
 }
 
@@ -577,10 +576,33 @@ entry:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; opencv/optimized/grayworld_white_balance.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 5
   %3 = icmp ugt i32 %2, %0
+  ret i1 %3
+}
+
+; 3 occurrences:
+; clamav/optimized/Ppmd7.c.ll
+; cmake/optimized/archive_ppmd7.c.ll
+; cmake/optimized/archive_ppmd8.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, 12
+  %3 = icmp ult i32 %2, %0
+  ret i1 %3
+}
+
+; 2 occurrences:
+; libjpeg-turbo/optimized/jcicc.c.ll
+; oiio/optimized/jpegoutput.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw i32 %1, 65519
+  %3 = icmp ne i32 %2, %0
   ret i1 %3
 }
 
@@ -589,7 +611,7 @@ entry:
 ; openusd/optimized/scale_common.c.ll
 ; wireshark/optimized/packet-pw-atm.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = icmp ne i32 %2, %0
@@ -621,7 +643,7 @@ entry:
 ; 1 occurrences:
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = icmp sge i32 %2, %0
@@ -631,7 +653,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/fast_window_binarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, 6
   %3 = icmp slt i32 %2, %0

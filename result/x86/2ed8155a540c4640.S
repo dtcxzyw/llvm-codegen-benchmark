@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%edi, %edi
 	cmovel	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	$-2147483648, %eax              # imm = 0x80000000
 	shrxl	%esi, %eax, %eax
 	testl	%edi, %edi

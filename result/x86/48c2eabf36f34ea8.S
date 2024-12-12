@@ -1,4 +1,4 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	orl	$8388608, %edi                  # imm = 0x800000
 	movb	$126, %al
 	subb	%sil, %al
@@ -6,7 +6,7 @@ func00000000000000e1:                   # @func00000000000000e1
 	btl	%eax, %edi
 	setae	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	orl	$8388608, %edi                  # imm = 0x800000
 	movb	$113, %al
 	subb	%sil, %al

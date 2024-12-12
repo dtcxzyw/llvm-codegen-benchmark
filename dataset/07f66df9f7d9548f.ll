@@ -14,7 +14,7 @@
 ; wireshark/optimized/packet-lapsat.c.ll
 ; wireshark/optimized/packet-rtp-ed137.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0) #0 {
+define i1 @func0000000000000021(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 2
   %2 = icmp eq i16 %1, 0

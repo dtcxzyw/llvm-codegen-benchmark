@@ -36,6 +36,18 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %0, %1
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nsw i64 -1, %3
+  %5 = xor i64 %4, -1
+  ret i64 %5
+}
+
 ; 4 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll

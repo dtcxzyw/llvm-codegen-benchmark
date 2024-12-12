@@ -1,5 +1,7 @@
 
 ; 214 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -134,7 +136,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -211,7 +212,6 @@
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
@@ -273,7 +273,7 @@ entry:
   ret i64 %4
 }
 
-; 369 occurrences:
+; 362 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -373,7 +373,6 @@ entry:
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -483,7 +482,6 @@ entry:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaResub2.c.ll
 ; abc/optimized/giaRetime.c.ll
-; abc/optimized/giaSat3.c.ll
 ; abc/optimized/giaSatEdge.c.ll
 ; abc/optimized/giaSatLut.c.ll
 ; abc/optimized/giaSatMap.c.ll
@@ -511,7 +509,6 @@ entry:
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/intCore.c.ll
 ; abc/optimized/intCtrex.c.ll
-; abc/optimized/intM114.c.ll
 ; abc/optimized/intUtil.c.ll
 ; abc/optimized/ioReadBblif.c.ll
 ; abc/optimized/ioReadPlaMo.c.ll
@@ -519,7 +516,6 @@ entry:
 ; abc/optimized/ivyCutTrav.c.ll
 ; abc/optimized/ivyFastMap.c.ll
 ; abc/optimized/ivyFraig.c.ll
-; abc/optimized/ivyResyn.c.ll
 ; abc/optimized/ivyRwr.c.ll
 ; abc/optimized/ivySeq.c.ll
 ; abc/optimized/kitGraph.c.ll
@@ -535,7 +531,6 @@ entry:
 ; abc/optimized/llb4Nonlin.c.ll
 ; abc/optimized/lpkAbcDec.c.ll
 ; abc/optimized/lpkCore.c.ll
-; abc/optimized/mapperCore.c.ll
 ; abc/optimized/mapperCut.c.ll
 ; abc/optimized/mapperLib.c.ll
 ; abc/optimized/mfsCore.c.ll
@@ -564,10 +559,7 @@ entry:
 ; abc/optimized/retInit.c.ll
 ; abc/optimized/rwrEva.c.ll
 ; abc/optimized/rwrExp.c.ll
-; abc/optimized/rwrMan.c.ll
 ; abc/optimized/rwrUtil.c.ll
-; abc/optimized/rwtMan.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigInd.c.ll
 ; abc/optimized/saigIso.c.ll
@@ -599,7 +591,6 @@ entry:
 ; abc/optimized/sfmSat.c.ll
 ; abc/optimized/sfmWin.c.ll
 ; abc/optimized/simSupp.c.ll
-; abc/optimized/simSym.c.ll
 ; abc/optimized/simSymSat.c.ll
 ; abc/optimized/simSymSim.c.ll
 ; abc/optimized/simUtils.c.ll
@@ -619,7 +610,6 @@ entry:
 ; abc/optimized/sswSat.c.ll
 ; abc/optimized/sswSemi.c.ll
 ; abc/optimized/sswSim.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/superAnd.c.ll
 ; abc/optimized/superGate.c.ll
@@ -636,12 +626,15 @@ entry:
 ; hwloc/optimized/lstopo_no_graphics-lstopo.ll
 ; libevent/optimized/bufferevent_ratelim.c.ll
 ; libquic/optimized/speed.cc.ll
-; lief/optimized/timing.c.ll
 ; nuttx/optimized/fs_select.c.ll
 ; qemu/optimized/hw_virtio_virtio-balloon.c.ll
 ; quickjs/optimized/quickjs-libc.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/monotonic.ll
+; slurm/optimized/node_features_knl_generic.ll
+; slurm/optimized/run_command.ll
+; slurm/optimized/slurm_persist_conn.ll
+; slurm/optimized/slurm_protocol_socket.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
@@ -665,7 +658,7 @@ entry:
   ret i64 %4
 }
 
-; 426 occurrences:
+; 415 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -774,7 +767,6 @@ entry:
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -909,7 +901,6 @@ entry:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaResub2.c.ll
 ; abc/optimized/giaRetime.c.ll
-; abc/optimized/giaSat3.c.ll
 ; abc/optimized/giaSatEdge.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/giaSatLut.c.ll
@@ -938,13 +929,11 @@ entry:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ifReduce.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTest.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/intCore.c.ll
 ; abc/optimized/intCtrex.c.ll
-; abc/optimized/intM114.c.ll
 ; abc/optimized/intUtil.c.ll
 ; abc/optimized/ioReadBblif.c.ll
 ; abc/optimized/ioReadPlaMo.c.ll
@@ -952,7 +941,6 @@ entry:
 ; abc/optimized/ivyCutTrav.c.ll
 ; abc/optimized/ivyFastMap.c.ll
 ; abc/optimized/ivyFraig.c.ll
-; abc/optimized/ivyResyn.c.ll
 ; abc/optimized/ivyRwr.c.ll
 ; abc/optimized/ivySeq.c.ll
 ; abc/optimized/kitGraph.c.ll
@@ -968,7 +956,6 @@ entry:
 ; abc/optimized/llb4Nonlin.c.ll
 ; abc/optimized/lpkAbcDec.c.ll
 ; abc/optimized/lpkCore.c.ll
-; abc/optimized/mapperCore.c.ll
 ; abc/optimized/mapperCut.c.ll
 ; abc/optimized/mapperLib.c.ll
 ; abc/optimized/mfsCore.c.ll
@@ -999,10 +986,7 @@ entry:
 ; abc/optimized/retInit.c.ll
 ; abc/optimized/rwrEva.c.ll
 ; abc/optimized/rwrExp.c.ll
-; abc/optimized/rwrMan.c.ll
 ; abc/optimized/rwrUtil.c.ll
-; abc/optimized/rwtMan.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigInd.c.ll
 ; abc/optimized/saigIso.c.ll
@@ -1039,7 +1023,6 @@ entry:
 ; abc/optimized/sfmSat.c.ll
 ; abc/optimized/sfmWin.c.ll
 ; abc/optimized/simSupp.c.ll
-; abc/optimized/simSym.c.ll
 ; abc/optimized/simSymSat.c.ll
 ; abc/optimized/simSymSim.c.ll
 ; abc/optimized/simUtils.c.ll
@@ -1061,7 +1044,6 @@ entry:
 ; abc/optimized/sswSat.c.ll
 ; abc/optimized/sswSemi.c.ll
 ; abc/optimized/sswSim.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/superAnd.c.ll
 ; abc/optimized/superGate.c.ll

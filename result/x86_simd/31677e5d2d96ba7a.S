@@ -1,5 +1,4 @@
 .LCPI0_0:
-	.byte	255                             # 0xff
 	.byte	0                               # 0x0
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
@@ -31,12 +30,13 @@
 	.byte	0                               # 0x0
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
+	.byte	255                             # 0xff
 .LCPI0_1:
-	.byte	255                             # 0xff
 	.byte	0                               # 0x0
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
-func0000000000000011:                   # @func0000000000000011
+	.byte	255                             # 0xff
+func0000000000000021:                   # @func0000000000000021
 	vpternlogd	$248, .LCPI0_1(%rip){1to8}, %ymm2, %ymm1 # ymm1 = ymm1 | (ymm2 & mem)
 	vpcmpeqw	%ymm0, %ymm1, %k0
 	vpmovm2b	%k0, %xmm0
@@ -62,7 +62,7 @@ func0000000000000011:                   # @func0000000000000011
 .LCPI1_1:
 	.short	3840                            # 0xf00
 	.short	3840                            # 0xf00
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpternlogd	$248, .LCPI1_1(%rip){1to8}, %ymm2, %ymm1 # ymm1 = ymm1 | (ymm2 & mem)
 	vpcmpltuw	%ymm0, %ymm1, %k0
 	vpmovm2b	%k0, %xmm0

@@ -56,19 +56,10 @@ func0000000000000107:                   # @func0000000000000107
 	setb	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vucomisd	%xmm1, %xmm2
-	seta	%cl
-	orb	%dil, %cl
-	vucomisd	%xmm2, %xmm0
-	setae	%al
-	andb	%cl, %al
-	retq
-.LCPI6_0:
+.LCPI5_0:
 	.quad	0x7ff0000000000000              # double +Inf
 func00000000000000c6:                   # @func00000000000000c6
-	vmovsd	.LCPI6_0(%rip), %xmm2           # xmm2 = [+Inf,0.0E+0]
+	vmovsd	.LCPI5_0(%rip), %xmm2           # xmm2 = [+Inf,0.0E+0]
 	vucomisd	%xmm2, %xmm1
 	setne	%cl
 	orb	%dil, %cl
@@ -76,20 +67,20 @@ func00000000000000c6:                   # @func00000000000000c6
 	setne	%al
 	andb	%cl, %al
 	retq
-.LCPI7_0:
+.LCPI6_0:
 	.quad	0x7ff0000000000000              # double +Inf
 func0000000000000026:                   # @func0000000000000026
 	vucomisd	%xmm1, %xmm1
 	setp	%cl
 	orb	%dil, %cl
-	vucomisd	.LCPI7_0(%rip), %xmm0
+	vucomisd	.LCPI6_0(%rip), %xmm0
 	setne	%al
 	andb	%cl, %al
 	retq
-.LCPI8_0:
+.LCPI7_0:
 	.quad	0x7ff0000000000000              # double +Inf
 func00000000000000cc:                   # @func00000000000000cc
-	vmovsd	.LCPI8_0(%rip), %xmm2           # xmm2 = [+Inf,0.0E+0]
+	vmovsd	.LCPI7_0(%rip), %xmm2           # xmm2 = [+Inf,0.0E+0]
 	vucomisd	%xmm2, %xmm1
 	setne	%cl
 	orb	%dil, %cl
@@ -97,13 +88,13 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	andb	%cl, %al
 	retq
-.LCPI9_0:
+.LCPI8_0:
 	.quad	0x7ff0000000000000              # double +Inf
 func000000000000002c:                   # @func000000000000002c
 	vucomisd	%xmm1, %xmm1
 	setp	%cl
 	orb	%dil, %cl
-	vucomisd	.LCPI9_0(%rip), %xmm0
+	vucomisd	.LCPI8_0(%rip), %xmm0
 	setne	%al
 	andb	%cl, %al
 	retq

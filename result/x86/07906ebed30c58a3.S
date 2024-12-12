@@ -7,6 +7,6 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000004:                   # @func0000000000000004
 	addl	%edx, %esi
 	movslq	%esi, %rax
-	leaq	(%rax,%rax,2), %rax
+	imulq	$104, %rax, %rax
 	addq	%rdi, %rax
 	retq

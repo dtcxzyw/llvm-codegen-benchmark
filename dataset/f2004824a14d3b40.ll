@@ -9,8 +9,7 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
-; linux/optimized/input-mt.ll
+; 2 occurrences:
 ; opencv/optimized/slic.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind

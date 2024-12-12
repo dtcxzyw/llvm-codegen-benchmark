@@ -1,11 +1,8 @@
 
-%"class.QuantLib::Date.2720190" = type { i64 }
-
-; 6 occurrences:
+; 5 occurrences:
 ; cmake/optimized/nghttp2_http.c.ll
 ; cpython/optimized/string_parser.ll
 ; linux/optimized/nf_conntrack_sip.ll
-; quantlib/optimized/cmsmarketcalibration.ll
 ; rocksdb/optimized/cache_dump_load_impl.cc.ll
 ; ruby/optimized/file.ll
 ; Function Attrs: nounwind
@@ -19,8 +16,7 @@ entry:
   ret ptr %7
 }
 
-; 289 occurrences:
-; assimp/optimized/IFCUtil.cpp.ll
+; 249 occurrences:
 ; cmake/optimized/cmExtraCodeLiteGenerator.cxx.ll
 ; cmake/optimized/cmRST.cxx.ll
 ; cvc5/optimized/justification_strategy.cpp.ll
@@ -48,14 +44,10 @@ entry:
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
-; folly/optimized/SplitStringSimd.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; git/optimized/convert.ll
-; git/optimized/ref-filter.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; gromacs/optimized/muParserBytecode.cpp.ll
-; hyperscan/optimized/teddy.c.ll
-; hyperscan/optimized/teddy_avx2.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -131,45 +123,11 @@ entry:
 ; llvm/optimized/DebugLocStream.cpp.ll
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; llvm/optimized/FormattedStream.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; minetest/optimized/chat.cpp.ll
+; meshlab/optimized/filter_qhull.cpp.ll
 ; ninja/optimized/dyndep.cc.ll
 ; ninja/optimized/graph.cc.ll
 ; node/optimized/simdutf.ll
 ; ocio/optimized/CDLTransform.cpp.ll
-; oiio/optimized/CineonHeader.cpp.ll
-; oiio/optimized/benchmark.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; oiio/optimized/dpxinput.cpp.ll
-; oiio/optimized/dpxoutput.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
-; oiio/optimized/exroutput.cpp.ll
-; oiio/optimized/filesystem.cpp.ll
-; oiio/optimized/fitsinput.cpp.ll
-; oiio/optimized/fitsoutput.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; oiio/optimized/hdrinput.cpp.ll
-; oiio/optimized/icoinput.cpp.ll
-; oiio/optimized/icooutput.cpp.ll
-; oiio/optimized/imagebufalgo_xform.cpp.ll
-; oiio/optimized/imageinput.cpp.ll
-; oiio/optimized/imageio.cpp.ll
-; oiio/optimized/imageioplugin.cpp.ll
-; oiio/optimized/imageoutput.cpp.ll
-; oiio/optimized/jpeginput.cpp.ll
-; oiio/optimized/jpegoutput.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; oiio/optimized/pnginput.cpp.ll
-; oiio/optimized/pngoutput.cpp.ll
-; oiio/optimized/rlaoutput.cpp.ll
-; oiio/optimized/softimageinput.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; oiio/optimized/sysutil.cpp.ll
-; oiio/optimized/tiffinput.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
-; oiio/optimized/typedesc.cpp.ll
-; oiio/optimized/xmp.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/freak.cpp.ll
 ; openexr/optimized/ImfSampleCountChannel.cpp.ll
@@ -184,7 +142,6 @@ entry:
 ; proj/optimized/concatenatedoperation.cpp.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; proxygen/optimized/ZstdStreamCompressor.cpp.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/nonstandardswap.ll
 ; rocksdb/optimized/blob_compaction_filter.cc.ll
 ; rocksdb/optimized/blob_db_impl.cc.ll
@@ -320,23 +277,35 @@ entry:
   ret ptr %7
 }
 
-; 60 occurrences:
+; 6 occurrences:
+; assimp/optimized/IFCUtil.cpp.ll
+; folly/optimized/SplitStringSimd.cpp.ll
+; llvm/optimized/LiteralSupport.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; minetest/optimized/chat.cpp.ll
+; rocksdb/optimized/format.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000032(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %0 to i64
+  %6 = sub i64 %4, %5
+  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 50 occurrences:
 ; clamav/optimized/pdf.c.ll
-; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_ldm.c.ll
-; cmake/optimized/zstd_opt.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; fmt/optimized/printf-test.cc.ll
 ; git/optimized/apply.ll
 ; hermes/optimized/APFloat.cpp.ll
-; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; icu/optimized/localeprioritylist.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/TGLexer.cpp.ll
-; luajit/optimized/lj_strfmt.ll
-; luajit/optimized/lj_strfmt_dyn.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -372,15 +341,11 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; openjdk/optimized/hb-common.ll
 ; php/optimized/browscap.ll
-; php/optimized/zend_operators.ll
+; php/optimized/php_http_parser.ll
 ; rocksdb/optimized/block_cache_tracer.cc.ll
 ; rocksdb/optimized/memtable.cc.ll
-; snappy/optimized/snappy.cc.ll
 ; wasmedge/optimized/codegen.cpp.ll
 ; wolfssl/optimized/asn.c.ll
-; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_ldm.c.ll
-; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000020(ptr %0, ptr %1, i64 %2) #0 {
 entry:
@@ -392,16 +357,51 @@ entry:
   ret ptr %7
 }
 
-; 1 occurrences:
-; quantlib/optimized/cmsmarketcalibration.ll
+; 8 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/search_path.ll
+; boost/optimized/static_string.ll
+; clamav/optimized/pdf.c.ll
+; luajit/optimized/lj_strfmt.ll
+; luajit/optimized/lj_strfmt_dyn.ll
+; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000030(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.QuantLib::Date.2720190", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %4, %5
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr i8, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 2 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000033(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %0 to i64
+  %6 = sub i64 %4, %5
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 2 occurrences:
+; hyperscan/optimized/teddy.c.ll
+; hyperscan/optimized/teddy_avx2.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000023(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %0 to i64
+  %6 = sub i64 %4, %5
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -31,7 +31,7 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a0, a0, -32
 	vand.vx	v10, v10, a0
 	lui	a0, 262144
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsll.vi	v8, v8, 2
 	addi	a0, a0, -32
 	vand.vx	v8, v8, a0
@@ -43,7 +43,7 @@ func0000000000000016:                   # @func0000000000000016
 	addi	a0, a0, -32
 	vand.vx	v10, v10, a0
 	lui	a0, 262144
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsll.vi	v8, v8, 2
 	addi	a0, a0, -32
 	vand.vx	v8, v8, a0

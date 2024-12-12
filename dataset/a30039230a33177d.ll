@@ -67,17 +67,7 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; stat-rs/optimized/4d9pj14shc9lbmph.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ugt i64 %2, 4607182418800017403
-  %4 = select i1 %0, i1 %1, i1 %3
-  ret i1 %4
-}
-
-; 8 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/kernel_timeout.cc.ll
 ; abseil-cpp/optimized/mutex.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
@@ -86,10 +76,21 @@ entry:
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
+  %4 = select i1 %0, i1 %1, i1 %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, 10
   %4 = select i1 %0, i1 %1, i1 %3
   ret i1 %4
 }

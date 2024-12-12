@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 38 occurrences:
 ; abc/optimized/abcMini.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/acecFadds.c.ll
@@ -32,16 +32,14 @@
 ; assimp/optimized/ObjFileParser.cpp.ll
 ; clamav/optimized/pe_icons.c.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
-; icu/optimized/cal.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/skl_scaler.ll
 ; opencv/optimized/qrcode_reader.cpp.ll
 ; qemu/optimized/cache.ll
 ; ruby/optimized/yjit.ll
 ; slurm/optimized/step_io.ll
-; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = sdiv i32 %0, 10
   %2 = add nsw i32 %1, 9
@@ -64,7 +62,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_rand.ll
 ; openssl/optimized/libcrypto-shlib-bn_rand.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %.off = add i32 %0, 71
   %1 = icmp ult i32 %.off, 8
@@ -75,11 +73,35 @@ entry:
 ; openssl/optimized/libcrypto-lib-asn1_dsa.ll
 ; openssl/optimized/libcrypto-shlib-asn1_dsa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = sdiv i32 %0, 8
   %2 = add nsw i32 %1, -65535
   %3 = icmp ult i32 %2, -65536
+  ret i1 %3
+}
+
+; 2 occurrences:
+; openssl/optimized/libcrypto-lib-asn1_dsa.ll
+; openssl/optimized/libcrypto-shlib-asn1_dsa.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0) #0 {
+entry:
+  %1 = sdiv i32 %0, 8
+  %2 = add nsw i32 %1, -255
+  %3 = icmp ult i32 %2, -256
+  ret i1 %3
+}
+
+; 2 occurrences:
+; icu/optimized/cal.ll
+; zxing/optimized/ODDataBarExpandedReader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0) #0 {
+entry:
+  %1 = sdiv i32 %0, 2
+  %2 = add nsw i32 %1, -2
+  %3 = icmp samesign ult i32 %2, 10
   ret i1 %3
 }
 

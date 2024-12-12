@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_indev_scroll.ll
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i1 %0, i1 %1, i32 %2) #0 {
@@ -23,26 +24,25 @@ entry:
   ret i32 %6
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; libquic/optimized/time_support.c.ll
 ; llvm/optimized/DiagnosticIDs.cpp.ll
+; lvgl/optimized/lv_area.ll
 ; ninja/optimized/deps_log.cc.ll
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation_demo.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; openjdk/optimized/constMethod.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 86400
+  %3 = add nsw i32 %2, 8
   %4 = select i1 %1, i32 %3, i32 %2
-  %5 = add nsw i32 %4, -86400
+  %5 = add nsw i32 %4, 8
   %6 = select i1 %0, i32 %5, i32 %4
   ret i32 %6
 }

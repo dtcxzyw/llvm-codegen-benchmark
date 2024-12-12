@@ -1,10 +1,10 @@
-func00000000000001c4:                   # @func00000000000001c4
+func0000000000000384:                   # @func0000000000000384
 	sh2add	a2, a2, a2
 	slliw	a2, a2, 1
 	sub	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
-func00000000000001c6:                   # @func00000000000001c6
+func0000000000000386:                   # @func0000000000000386
 	sh1add	a2, a2, a2
 	slliw	a2, a2, 1
 	sub	a0, a0, a1

@@ -10,6 +10,12 @@ func0000000000000035:                   # @func0000000000000035
 	vmacc.vx	v10, a0, v12
 	vadd.vv	v8, v10, v8
 	ret
+func000000000000003e:                   # @func000000000000003e
+	li	a0, 635
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vadd.vv	v8, v10, v8
+	ret
 func000000000000003f:                   # @func000000000000003f
 	li	a0, 9
 	vsetivli	zero, 16, e16, m2, ta, ma
@@ -23,12 +29,6 @@ func0000000000000028:                   # @func0000000000000028
 	vadd.vv	v8, v10, v8
 	ret
 func000000000000003a:                   # @func000000000000003a
-	li	a0, 96
-	vsetivli	zero, 16, e16, m2, ta, ma
-	vmacc.vx	v10, a0, v12
-	vadd.vv	v8, v10, v8
-	ret
-func000000000000003e:                   # @func000000000000003e
 	li	a0, 96
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmacc.vx	v10, a0, v12

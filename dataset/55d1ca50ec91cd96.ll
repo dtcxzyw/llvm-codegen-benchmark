@@ -1,5 +1,7 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/formatter.ll
+; boost/optimized/topology.ll
 ; entt/optimized/version.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; openmpi/optimized/mca_base_var.ll

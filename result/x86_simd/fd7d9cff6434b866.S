@@ -31,20 +31,14 @@ func00000000000000cc:                   # @func00000000000000cc
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	retq
-func0000000000000000:                   # @func0000000000000000
-	vpmulld	%ymm1, %ymm2, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	retq
-.LCPI4_0:
+.LCPI3_0:
 	.long	512                             # 0x200
-.LCPI4_1:
+.LCPI3_1:
 	.long	64                              # 0x40
 func00000000000000d0:                   # @func00000000000000d0
-	vpbroadcastd	.LCPI4_0(%rip), %ymm3   # ymm3 = [512,512,512,512,512,512,512,512]
+	vpbroadcastd	.LCPI3_0(%rip), %ymm3   # ymm3 = [512,512,512,512,512,512,512,512]
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpmulld	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	retq

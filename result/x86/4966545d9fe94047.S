@@ -40,12 +40,6 @@ func000000000000000e:                   # @func000000000000000e
 	divl	%esi
 	movl	%edx, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	movq	%rdi, %rax
-	xorl	%edx, %edx
-	divl	%esi
-	movl	%edx, %eax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	movq	%rdi, %rax
 	xorl	%edx, %edx

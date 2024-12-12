@@ -1,49 +1,46 @@
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmeq	v1.4s, v1.4s, v4.4s
-	bit	v0.16b, v2.16b, v1.16b
-	cmeq	v0.4s, v0.4s, #0
-	xtn	v0.4h, v0.4s
+	cmp	w1, #1
+	csel	w8, w2, w0, eq
+	cmp	w8, #0
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000311:                   // @func0000000000000311
+func0000000000000c21:                   // @func0000000000000c21
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmeq	v1.4s, v1.4s, #0
-	bit	v0.16b, v2.16b, v1.16b
-	cmeq	v0.4s, v0.4s, #0
-	xtn	v0.4h, v0.4s
+	cmp	w1, #0
+	csel	w8, w2, w0, eq
+	cmp	w8, #0
+	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func0000000000000826:                   // @func0000000000000826
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmeq	v1.4s, v1.4s, #0
-	bit	v0.16b, v2.16b, v1.16b
-	cmge	v0.4s, v0.4s, #0
-	xtn	v0.4h, v0.4s
+	cmp	w1, #2, lsl #12                 // =8192
+	csel	w8, w2, w0, eq
+	lsr	w0, w8, #31
 	ret
                                         // -- End function
-func000000000000031a:                   // @func000000000000031a
+func0000000000000c26:                   // @func0000000000000c26
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmeq	v1.4s, v1.4s, #0
-	bit	v0.16b, v2.16b, v1.16b
-	movi	v1.4s, #7
-	cmgt	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w1, #0
+	csel	w8, w2, w0, eq
+	lsr	w0, w8, #31
 	ret
                                         // -- End function
-func0000000000000241:                   // @func0000000000000241
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	mov	w8, #257                        // =0x101
-	uzp1	v2.4s, v2.4s, v3.4s
-	dup	v4.4s, w8
-	cmhi	v1.4s, v4.4s, v1.4s
-	bit	v0.16b, v2.16b, v1.16b
-	cmeq	v0.4s, v0.4s, #0
-	xtn	v0.4h, v0.4s
+	cmp	w1, #0
+	csel	w8, w2, w0, eq
+	mvn	w8, w8
+	lsr	w0, w8, #31
+	ret
+                                        // -- End function
+func0000000000000a81:                   // @func0000000000000a81
+// %bb.0:                               // %entry
+	cmp	w1, #257
+	csel	w8, w2, w0, lo
+	cmp	w8, #0
+	cset	w0, eq
 	ret
                                         // -- End function

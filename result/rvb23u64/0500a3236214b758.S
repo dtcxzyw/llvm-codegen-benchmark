@@ -6,10 +6,10 @@ func000000000000000c:                   # @func000000000000000c
 	neg	a0, a0
 	ret
 func000000000000000f:                   # @func000000000000000f
-	srli	a0, a0, 13
-	lui	a1, 2
-	addi	a0, a0, -1
-	zext.w	a0, a0
-	addiw	a1, a1, -24
-	mul	a0, a0, a1
+	srli	a0, a0, 16
+	addi	a0, a0, 1
+	zext.w	a1, a0
+	sh2add.uw	a0, a0, a1
+	sh2add	a0, a0, a0
+	slli	a0, a0, 2
 	ret

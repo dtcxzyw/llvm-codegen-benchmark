@@ -1,60 +1,28 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	movi	v4.4s, #240, lsl #24
-	mvni	v5.4s, #16
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	fneg	v2.4s, v5.4s
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v4.4s
-	cmhi	v3.4s, v1.4s, v2.4s
-	cmhi	v2.4s, v0.4s, v2.4s
-	bic	v0.16b, v0.16b, v2.16b
-	bic	v1.16b, v1.16b, v3.16b
+	mov	w8, #-268435456                 // =0xf0000000
+	add	w9, w1, w0
+	add	w8, w9, w8
+	mov	w9, #65519                      // =0xffef
+	movk	w9, #32767, lsl #16
+	cmp	w8, w9
+	csel	w0, wzr, w8, hi
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	movi	v4.4s, #16
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	movi	v2.4s, #127
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v4.4s
-	cmgt	v3.4s, v1.4s, v2.4s
-	cmgt	v2.4s, v0.4s, v2.4s
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
+	add	w8, w1, w0
+	add	w8, w8, #16
+	cmp	w8, #127
+	csinv	w0, w8, wzr, le
 	ret
                                         // -- End function
-func0000000000000041:                   // @func0000000000000041
+func00000000000000a6:                   // @func00000000000000a6
 // %bb.0:                               // %entry
-	movi	v4.4s, #5
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	movi	v2.4s, #7
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v4.4s
-	cmeq	v3.4s, v1.4s, #0
-	cmeq	v4.4s, v0.4s, #0
-	bit	v0.16b, v2.16b, v4.16b
-	bit	v1.16b, v2.16b, v3.16b
-	ret
-                                        // -- End function
-func0000000000000056:                   // @func0000000000000056
-// %bb.0:                               // %entry
-	mvni	v4.4s, #2
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v4.4s
-	cmle	v2.4s, v0.4s, #0
-	cmle	v3.4s, v1.4s, #0
-	bic	v0.16b, v0.16b, v2.16b
-	bic	v2.4s, #128, lsl #24
-	bic	v1.16b, v1.16b, v3.16b
-	bic	v3.4s, #128, lsl #24
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	add	w9, w1, w0
+	mov	w8, #2147483647                 // =0x7fffffff
+	sub	w9, w9, #3
+	cmp	w9, #1
+	csel	w0, w8, w9, lt
 	ret
                                         // -- End function

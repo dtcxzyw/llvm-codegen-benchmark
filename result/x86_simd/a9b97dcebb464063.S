@@ -54,11 +54,18 @@ func000000000000003f:                   # @func000000000000003f
 	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogq	$236, .LCPI1_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
 	retq
-.LCPI2_0:
+func000000000000003b:                   # @func000000000000003b
+	vpsllq	$32, %ymm2, %ymm2
+	vpsllq	$48, %ymm1, %ymm1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpblendw	$34, %ymm0, %ymm3, %ymm0        # ymm0 = ymm3[0],ymm0[1],ymm3[2,3,4],ymm0[5],ymm3[6,7,8],ymm0[9],ymm3[10,11,12],ymm0[13],ymm3[14,15]
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
+	retq
+.LCPI3_0:
 	.quad	-17591917608961                 # 0xfffff0000fffffff
 func000000000000000c:                   # @func000000000000000c
 	vpsllq	$38, %ymm2, %ymm2
 	vpsllq	$28, %ymm1, %ymm1
 	vpor	%ymm2, %ymm1, %ymm1
-	vpternlogq	$236, .LCPI2_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
+	vpternlogq	$236, .LCPI3_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
 	retq

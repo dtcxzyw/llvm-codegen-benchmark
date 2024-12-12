@@ -43,7 +43,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpltq	.LCPI1_1(%rip){1to4}, %ymm1, %k1
 	vmovdqu8	.LCPI1_2(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [1,1,1,1,u,u,u,u,u,u,u,u,u,u,u,u]

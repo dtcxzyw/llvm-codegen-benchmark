@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 78 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/BVHLoader.cpp.ll
@@ -15,6 +15,7 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/webp_enc.c.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/coordinateframe.cpp.ll

@@ -9,7 +9,6 @@
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; bullet3/optimized/btSoftBodyConcaveCollisionAlgorithm.ll
-; bullet3/optimized/btSoftRigidCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereBoxCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereTriangleCollisionAlgorithm.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -29,7 +28,6 @@
 ; cmake/optimized/cmGlobalNinjaGenerator.cxx.ll
 ; cmake/optimized/cmList.cxx.ll
 ; cmake/optimized/cmSourceFileLocation.cxx.ll
-; cpython/optimized/exceptions.ll
 ; cvc5/optimized/bv_solver_bitblast_internal.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
 ; cvc5/optimized/floatingpoint.cpp.ll
@@ -170,7 +168,6 @@
 ; llvm/optimized/PredicateExpander.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SValBuilder.cpp.ll
 ; llvm/optimized/Sarif.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
@@ -208,7 +205,9 @@
 ; luau/optimized/ToString.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll
 ; luau/optimized/Unifier.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mold/optimized/main.cc.ALPHA.cc.ll
@@ -340,6 +339,7 @@
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/debug.ll
 ; openjdk/optimized/filemap.ll
+; openjdk/optimized/frame_x86.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/javaThread.ll
 ; openjdk/optimized/jni.ll
@@ -389,7 +389,6 @@
 ; postgres/optimized/spi.ll
 ; postgres/optimized/tablecmds.ll
 ; postgres/optimized/worker.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/parser.cc.ll
 ; protobuf/optimized/unparser.cc.ll
@@ -441,6 +440,7 @@
 ; z3/optimized/recfun_decl_plugin.cpp.ll
 ; z3/optimized/sat_ddfw.cpp.ll
 ; z3/optimized/smt_internalizer.cpp.ll
+; z3/optimized/smt_model_finder.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; zxing/optimized/PDFDetectionResult.cpp.ll
@@ -453,7 +453,7 @@ entry:
   ret ptr %4
 }
 
-; 105 occurrences:
+; 131 occurrences:
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; actix-rs/optimized/1h6chd9qxbb3rt70.ll
@@ -466,8 +466,14 @@ entry:
 ; actix-rs/optimized/52qe9gl98lnufrop.ll
 ; actix-rs/optimized/7zeo7o16a1wcxcn.ll
 ; arrow/optimized/compare_internal.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/graphml.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; clamav/optimized/mbox.c.ll
 ; cmake/optimized/cmCustomCommandGenerator.cxx.ll
+; cpython/optimized/exceptions.ll
 ; crow/optimized/example_ws.cpp.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/nl_model.cpp.ll
@@ -559,6 +565,26 @@ entry:
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; wireshark/optimized/wslog.c.ll
 ; z3/optimized/warning.cpp.ll
+; zed-rs/optimized/160h40gmjuq6w4py8cgz7ceyb.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/27vlvcehd5fwhym4kjj7notsh.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, ptr %1, i8 %2) #0 {
 entry:

@@ -1,7 +1,9 @@
 
-; 70 occurrences:
+; 75 occurrences:
 ; assimp/optimized/OpenGEXImporter.cpp.ll
 ; assimp/optimized/Q3BSPFileImporter.cpp.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; brotli/optimized/backward_references.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -68,6 +70,9 @@
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/tap-iostat.c.ll
 ; xgboost/optimized/input_split_base.cc.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
@@ -78,7 +83,8 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/default_formatter_factory.ll
 ; cmake/optimized/archive_write.c.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; flac/optimized/cuesheet.c.ll

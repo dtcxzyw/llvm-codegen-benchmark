@@ -1,8 +1,9 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
 ; bullet3/optimized/poly34.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; minetest/optimized/remoteplayer.cpp.ll
 ; openjdk/optimized/ShapeSpanIterator.ll

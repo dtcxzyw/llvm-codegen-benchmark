@@ -4,7 +4,7 @@
 ; gromacs/optimized/gmx_dipoles.cpp.ll
 ; ncnn/optimized/matmul.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000063(i32 %0, i64 %1) #0 {
+define i64 @func00000000000000c3(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp eq i32 %0, 1
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/nlqsat.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000042(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000082(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp eq i32 %0, 0

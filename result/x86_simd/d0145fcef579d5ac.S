@@ -1,6 +1,6 @@
 func000000000000003f:                   # @func000000000000003f
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0
 	retq
 func000000000000006f:                   # @func000000000000006f
@@ -59,6 +59,6 @@ func0000000000000075:                   # @func0000000000000075
 	retq
 func0000000000000028:                   # @func0000000000000028
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsllq	$32, %ymm0, %ymm0
 	retq

@@ -55,7 +55,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, 16
   %.masked = and i32 %2, -65536
-  %4 = xor i32 %3, %.masked
+  %4 = xor i32 %.masked, %3
   %5 = xor i32 %4, %0
   ret i32 %5
 }
@@ -69,7 +69,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, 24
   %.masked = and i32 %2, -16777216
-  %4 = xor i32 %3, %.masked
+  %4 = xor i32 %.masked, %3
   %5 = xor i32 %4, %0
   ret i32 %5
 }

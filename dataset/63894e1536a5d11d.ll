@@ -1,8 +1,17 @@
 
-; 38 occurrences:
+; 47 occurrences:
 ; arrow/optimized/expression.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; assimp/optimized/JoinVerticesProcess.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -42,7 +51,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 6
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = lshr i64 %0, 2
   %5 = add i64 %3, %4
   %6 = xor i64 %5, %0
@@ -56,7 +65,7 @@ entry:
 define i64 @func0000000000000060(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %0, 6
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = lshr i64 %0, 2
   %5 = add i64 %3, %4
   %6 = xor i64 %5, %0

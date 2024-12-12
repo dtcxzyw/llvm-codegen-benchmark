@@ -1,7 +1,8 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; grpc/optimized/chttp2_transport.cc.ll
 ; grpc/optimized/client_channel.cc.ll
+; llvm/optimized/CommandFlags.cpp.ll
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; llvm/optimized/MarkupFilter.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll

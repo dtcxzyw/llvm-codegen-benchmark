@@ -1,10 +1,12 @@
 
-%"class.re2::SparseArray<int>::IndexValue.2486787" = type { i32, i32 }
-%"struct.std::pair.3258423" = type { i32, i32 }
+%"class.re2::SparseArray<int>::IndexValue.2602231" = type { i32, i32 }
+%"struct.std::pair.3449273" = type { i32, i32 }
 
-; 296 occurrences:
+; 295 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -15,8 +17,6 @@
 ; cvc5/optimized/symmetry_breaker.cpp.ll
 ; draco/optimized/mesh_are_equivalent.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; faiss/optimized/IndexIVFPQ.cpp.ll
@@ -73,12 +73,12 @@
 ; llvm/optimized/MachineUniformityAnalysis.cpp.ll
 ; llvm/optimized/MacroExpansionContext.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
-; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
@@ -94,7 +94,6 @@
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -371,7 +370,23 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr i64 %3, 3
   %5 = or i64 %4, 1
-  %6 = getelementptr %"class.re2::SparseArray<int>::IndexValue.2486787", ptr %0, i64 %5
+  %6 = getelementptr %"class.re2::SparseArray<int>::IndexValue.2602231", ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -16
+  ret ptr %7
+}
+
+; 4 occurrences:
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
+; llvm/optimized/RangeConstraintManager.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 3
+  %5 = or i64 %4, 1
+  %6 = getelementptr i64, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -16
   ret ptr %7
 }
@@ -386,7 +401,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
   %5 = or i64 %4, 1
-  %6 = getelementptr %"struct.std::pair.3258423", ptr %0, i64 %5
+  %6 = getelementptr %"struct.std::pair.3449273", ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -16
   ret ptr %7
 }

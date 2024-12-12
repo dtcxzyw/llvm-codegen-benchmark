@@ -14,13 +14,11 @@ entry:
   ret i32 %3
 }
 
-; 27 occurrences:
-; hdf5/optimized/H5FAdbg.c.ll
+; 24 occurrences:
 ; icu/optimized/ubidi.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/intel-nhlt.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_guc_ads.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/AArch64CompressJumpTables.cpp.ll
@@ -35,7 +33,6 @@ entry:
 ; llvm/optimized/MIRPrinter.cpp.ll
 ; llvm/optimized/MIRVRegNamerUtils.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/StackFrameLayoutAnalysisPass.cpp.ll
 ; llvm/optimized/Target.cpp.ll

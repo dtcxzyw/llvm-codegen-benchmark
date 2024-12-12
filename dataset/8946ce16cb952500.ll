@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
-; icu/optimized/ustring.ll
 ; libquic/optimized/a_object.c.ll
 ; openssl/optimized/libcrypto-lib-a_object.ll
 ; openssl/optimized/libcrypto-shlib-a_object.ll

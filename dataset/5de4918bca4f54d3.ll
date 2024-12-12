@@ -79,7 +79,7 @@
 define i32 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   %5 = and i64 %1, 268435455
   %6 = add nuw i64 %4, %5
   %7 = trunc i64 %6 to i32

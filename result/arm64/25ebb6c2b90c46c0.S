@@ -16,6 +16,15 @@ func000000000000000c:                   // @func000000000000000c
 	cinc	x1, x10, hs
 	ret
                                         // -- End function
+func0000000000000005:                   // @func0000000000000005
+// %bb.0:                               // %entry
+	adds	x9, x2, x0
+	mov	x8, #-1                         // =0xffffffffffffffff
+	adc	x10, x3, x1
+	subs	x0, x9, #1
+	adc	x1, x10, x8
+	ret
+                                        // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
 	adds	x0, x2, x0
@@ -39,14 +48,6 @@ func0000000000000002:                   // @func0000000000000002
 	adc	x10, x3, x1
 	subs	x0, x9, #256
 	adc	x1, x10, x8
-	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
-	adds	x8, x2, x0
-	adc	x9, x3, x1
-	subs	x0, x8, #256
-	cinc	x1, x9, hs
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f

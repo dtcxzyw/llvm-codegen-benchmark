@@ -13,7 +13,7 @@
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/opcua.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 1
   %3 = icmp eq ptr %0, null
@@ -64,7 +64,7 @@ entry:
 ; wolfssl/optimized/server.c.ll
 ; wolfssl/optimized/tls_bench.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp eq ptr %0, null
@@ -87,7 +87,7 @@ entry:
 ; wireshark/optimized/packet-e212.c.ll
 ; wireshark/optimized/packet-fcsb3.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp ne ptr %0, null
@@ -95,14 +95,12 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 15 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/tbdata.ll
 ; linux/optimized/workqueue.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; nuttx/optimized/sched_waitid.c.ll
-; nuttx/optimized/sched_waitpid.c.ll
 ; openjdk/optimized/debugInit.ll
 ; yosys/optimized/aigerparse.ll
 ; yosys/optimized/coolrunner2_fixup.ll
@@ -114,7 +112,7 @@ entry:
 ; yosys/optimized/wreduce.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i8 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp ne ptr %0, null
@@ -125,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/opt_expr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000010c(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 1
   %3 = icmp ne ptr %0, null
@@ -136,7 +134,7 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000081(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 2
   %3 = icmp eq ptr %0, null

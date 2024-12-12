@@ -1,6 +1,6 @@
 
-%struct.JSValue.3243652 = type { %union.JSValueUnion.3243653, i64 }
-%union.JSValueUnion.3243653 = type { double }
+%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
+%union.JSValueUnion.3435082 = type { double }
 
 ; 2 occurrences:
 ; hermes/optimized/ConvertUTF.cpp.ll
@@ -26,7 +26,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr %struct.JSValue.3243652, ptr %0, i64 %5
+  %6 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %5
   ret ptr %6
 }
 

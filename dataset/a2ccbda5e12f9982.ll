@@ -2,9 +2,9 @@
 ; 1 occurrences:
 ; openusd/optimized/yuv_scale.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000062(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %1, 1
+  %3 = icmp samesign ugt i32 %1, 1
   %narrow = select i1 %3, i32 %2, i32 0
   %4 = sext i32 %narrow to i64
   %5 = getelementptr nusw i8, ptr %0, i64 %4

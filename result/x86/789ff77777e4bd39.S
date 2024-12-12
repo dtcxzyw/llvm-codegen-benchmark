@@ -6,9 +6,9 @@ func000000000000000e:                   # @func000000000000000e
 	orl	%edi, %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
+	notb	%sil
 	andb	$1, %sil
-	xorb	$7, %sil
 	movzbl	%sil, %eax
-	shll	$24, %eax
+	shll	$14, %eax
 	orl	%edi, %eax
 	retq

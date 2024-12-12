@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; Function Attrs: nounwind

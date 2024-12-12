@@ -1,5 +1,6 @@
 
-; 56 occurrences:
+; 58 occurrences:
+; boost/optimized/context.ll
 ; casadi/optimized/external.cpp.ll
 ; clamav/optimized/rtf.c.ll
 ; cmake/optimized/urlapi.c.ll
@@ -56,8 +57,9 @@
 ; verilator/optimized/V3Ast.cpp.ll
 ; verilator/optimized/V3Combine.cpp.ll
 ; z3/optimized/bv2fpa_converter.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %0, i1 %3, i1 false
@@ -66,15 +68,13 @@ entry:
   ret i1 %6
 }
 
-; 136 occurrences:
+; 129 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; assimp/optimized/BlenderCustomData.cpp.ll
 ; c3c/optimized/semantic_analyser.c.ll
 ; casadi/optimized/cs_chol.c.ll
-; casadi/optimized/cs_cholsol.c.ll
 ; casadi/optimized/cs_counts.c.ll
 ; casadi/optimized/cs_lu.c.ll
-; casadi/optimized/cs_lusol.c.ll
 ; casadi/optimized/cs_qr.c.ll
 ; casadi/optimized/cs_qrsol.c.ll
 ; casadi/optimized/cs_scc.c.ll
@@ -107,11 +107,9 @@ entry:
 ; libquic/optimized/x509_test.cc.ll
 ; linux/optimized/drm_client_modeset.ll
 ; linux/optimized/forcedeth.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/pmsr.ll
 ; linux/optimized/s2idle.ll
-; linux/optimized/seq_info.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/virtio_blk.ll
 ; linux/optimized/virtio_console.ll
@@ -180,8 +178,6 @@ entry:
 ; postgres/optimized/subselect.ll
 ; postgres/optimized/tlist.ll
 ; postgres/optimized/tupdesc.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/oputils.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; qemu/optimized/hw_net_rocker_rocker.c.ll
@@ -195,7 +191,6 @@ entry:
 ; wireshark/optimized/extcap.c.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
-; wireshark/optimized/packet-lin.c.ll
 ; wireshark/optimized/packet-rrc.c.ll
 ; wireshark/optimized/packet-sip.c.ll
 ; wireshark/optimized/packet-snmp.c.ll
@@ -204,7 +199,7 @@ entry:
 ; wolfssl/optimized/test.c.ll
 ; z3/optimized/euf_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %0, i1 %3, i1 false
@@ -221,7 +216,7 @@ entry:
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; vcpkg/optimized/paragraphs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %0, i1 %3, i1 false
@@ -230,14 +225,13 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; postgres/optimized/pg_dump.ll
 ; postgres/optimized/snapmgr.ll
-; proj/optimized/crs.cpp.ll
 ; wireshark/optimized/packet-rpcrdma.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %0, i1 %3, i1 false

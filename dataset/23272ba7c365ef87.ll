@@ -17,21 +17,9 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; postgres/optimized/gistutil.ll
-; postgres/optimized/gistvacuum.ll
-; slurm/optimized/slurmd.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000009(i16 %0, i16 %1) #0 {
-entry:
-  %2 = icmp ult i16 %1, 10
-  %3 = select i1 %2, i16 5, i16 %0
-  %4 = zext nneg i16 %3 to i32
-  ret i32 %4
-}
-
-; 13 occurrences:
+; 14 occurrences:
 ; linux/optimized/ehci-hcd.ll
+; linux/optimized/ff-memless.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -76,6 +64,18 @@ entry:
   %2 = icmp ult i16 %1, 1023
   %3 = select i1 %2, i16 0, i16 %0
   %4 = zext i16 %3 to i32
+  ret i32 %4
+}
+
+; 2 occurrences:
+; postgres/optimized/gistutil.ll
+; postgres/optimized/gistvacuum.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i16 %0, i16 %1) #0 {
+entry:
+  %2 = icmp ult i16 %1, 25
+  %3 = select i1 %2, i16 0, i16 %0
+  %4 = zext nneg i16 %3 to i32
   ret i32 %4
 }
 

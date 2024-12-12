@@ -2,10 +2,10 @@
 	.quad	2147483648                      # 0x80000000
 .LCPI0_1:
 	.quad	4294967296                      # 0x100000000
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	vpsllq	$32, %ymm1, %ymm1
 	vpsraq	$32, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpltuq	.LCPI0_1(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -13,7 +13,7 @@ func0000000000000154:                   # @func0000000000000154
 	retq
 .LCPI1_0:
 	.quad	1                               # 0x1
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpsllq	$29, %ymm1, %ymm1
 	vpsraq	$32, %ymm1, %ymm1
 	vpmullq	%ymm0, %ymm1, %ymm0

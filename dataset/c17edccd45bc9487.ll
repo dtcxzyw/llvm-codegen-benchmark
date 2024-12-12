@@ -1,4 +1,19 @@
 
+; 6 occurrences:
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
+; rocksdb/optimized/testutil.cc.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; wireshark/optimized/packet-ehdlc.c.ll
+; wireshark/optimized/packet-lldp.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000006(i16 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i16 %0 to i8
+  %2 = lshr i8 55, %1
+  ret i8 %2
+}
+
 ; 15 occurrences:
 ; cvc5/optimized/lfsc_node_converter.cpp.ll
 ; cvc5/optimized/theory_sep_rewriter.cpp.ll
@@ -31,20 +46,6 @@ define i8 @func0000000000000000(i16 %0) #0 {
 entry:
   %1 = trunc i16 %0 to i8
   %2 = lshr i8 -13, %1
-  ret i8 %2
-}
-
-; 5 occurrences:
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/SemaCodeComplete.cpp.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wireshark/optimized/packet-ehdlc.c.ll
-; wireshark/optimized/packet-lldp.c.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000006(i16 %0) #0 {
-entry:
-  %1 = trunc nuw nsw i16 %0 to i8
-  %2 = lshr i8 11, %1
   ret i8 %2
 }
 

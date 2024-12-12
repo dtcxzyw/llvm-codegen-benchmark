@@ -1,6 +1,6 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	movsbl	%dil, %eax
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
 	sete	%cl
 	testb	%al, %al
 	sete	%al

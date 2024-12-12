@@ -11,3 +11,18 @@ func0000000000000001:                   # @func0000000000000001
 	leal	(%rcx,%rcx,4), %ecx
 	subb	%cl, %al
 	retq
+func0000000000000000:                   # @func0000000000000000
+	movl	%edi, %eax
+	movsbl	%al, %ecx
+	imull	$-109, %ecx, %ecx
+	shrl	$8, %ecx
+	addb	%al, %cl
+	movl	%ecx, %edx
+	shrb	$7, %dl
+	sarb	$2, %cl
+	addb	%dl, %cl
+	movzbl	%cl, %ecx
+	leal	(,%rcx,8), %edx
+	subl	%ecx, %edx
+	subb	%dl, %al
+	retq

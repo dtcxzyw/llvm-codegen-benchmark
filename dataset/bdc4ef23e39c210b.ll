@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 14 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; minetest/optimized/collision.cpp.ll
@@ -11,6 +11,9 @@
 ; postgres/optimized/tablecmds.ll
 ; postgres/optimized/xloginsert.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/di6vqkr45z5qfxmwsnoq97jcv.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i1 %1) #0 {
 entry:

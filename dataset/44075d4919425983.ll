@@ -18,7 +18,7 @@ entry:
   ret i64 %5
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/abcQbf.c.ll
 ; abc/optimized/absRpmOld.c.ll
@@ -50,7 +50,6 @@ entry:
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/saigIso.c.ll
 ; abc/optimized/sscCore.c.ll
-; abc/optimized/sscUtil.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; abc/optimized/wlnWlc.c.ll

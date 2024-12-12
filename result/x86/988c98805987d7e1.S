@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	addq	%rdx, %rsi
 	shrxq	%rdi, %rsi, %rax
 	testq	%rax, %rax
@@ -23,7 +23,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	addq	%rdx, %rsi
 	shrxq	%rdi, %rsi, %rax
 	shrq	$31, %rax

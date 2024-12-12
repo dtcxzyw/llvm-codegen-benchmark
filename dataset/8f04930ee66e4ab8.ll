@@ -1,18 +1,29 @@
 
-; 6 occurrences:
-; opencv/optimized/softfloat.cpp.ll
+; 2 occurrences:
 ; qemu/optimized/source_s_addMagsF16.c.ll
-; qemu/optimized/source_s_mulAddF16.c.ll
 ; spike/optimized/s_addMagsF16.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000a3(i64 %0) #0 {
+entry:
+  %1 = icmp samesign ult i64 %0, 1073741824
+  %2 = zext i1 %1 to i64
+  %3 = shl nuw nsw i64 %0, %2
+  %4 = and i64 %3, 65535
+  ret i64 %4
+}
+
+; 4 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; qemu/optimized/source_s_mulAddF16.c.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000023(i64 %0) #0 {
 entry:
-  %1 = icmp ult i64 %0, 1073741824
+  %1 = icmp ult i64 %0, 536870912
   %2 = zext i1 %1 to i64
   %3 = shl nuw nsw i64 %0, %2
-  %4 = and i64 %3, 65535
+  %4 = and i64 %3, 32512
   ret i64 %4
 }
 

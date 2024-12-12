@@ -28,12 +28,12 @@ func0000000000000015:                   # @func0000000000000015
 	leaq	1(%rdi), %rax
 	imulq	%rcx, %rax
 	retq
-func000000000000003c:                   # @func000000000000003c
+func0000000000000030:                   # @func0000000000000030
 	leaq	1(%rsi), %rcx
 	leaq	1(%rdi), %rax
 	imulq	%rcx, %rax
 	retq
-func000000000000003f:                   # @func000000000000003f
+func000000000000003c:                   # @func000000000000003c
 	leaq	1(%rsi), %rcx
 	leaq	1(%rdi), %rax
 	imulq	%rcx, %rax

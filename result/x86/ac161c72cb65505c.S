@@ -1,41 +1,41 @@
-func0000000000000045:                   # @func0000000000000045
-	cmpl	%edi, %edx
-	setbe	%cl
+func0000000000000085:                   # @func0000000000000085
+	cmpl	%edx, %edi
+	setae	%cl
 	shrq	$32, %rsi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	cmpl	%edi, %edx
+func0000000000000021:                   # @func0000000000000021
+	cmpl	%edx, %edi
 	sete	%cl
 	testq	%rsi, %rsi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
-	cmpl	%edi, %edx
+func0000000000000081:                   # @func0000000000000081
+	cmpl	%edx, %edi
 	sete	%cl
 	cmpq	$8, %rsi
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
-	cmpl	%esi, %edx
+func0000000000000188:                   # @func0000000000000188
+	cmpl	%edx, %esi
 	setne	%cl
 	shrq	$32, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000c9:                   # @func00000000000000c9
-	cmpl	%edi, %edx
-	setae	%cl
+func0000000000000189:                   # @func0000000000000189
+	cmpl	%edx, %edi
+	setbe	%cl
 	testq	%rsi, %rsi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000009c:                   # @func000000000000009c
-	cmpl	%esi, %edx
-	setae	%cl
+func000000000000012c:                   # @func000000000000012c
+	cmpl	%edx, %esi
+	setbe	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al

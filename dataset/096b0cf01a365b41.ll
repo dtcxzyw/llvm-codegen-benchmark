@@ -7,7 +7,7 @@
 define i64 @func0000000000000016(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -24,7 +24,7 @@ entry:
 define i64 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -39,7 +39,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -51,7 +51,7 @@ entry:
 define i64 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -63,7 +63,7 @@ entry:
 define i64 @func000000000000000e(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -75,7 +75,7 @@ entry:
 define i64 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -86,7 +86,7 @@ entry:
 define i64 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -97,7 +97,7 @@ entry:
 define i64 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -108,7 +108,7 @@ entry:
 define i64 @func0000000000000012(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp ule i32 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -119,7 +119,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }

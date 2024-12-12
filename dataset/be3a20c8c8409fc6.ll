@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; lief/optimized/Builder.cpp.ll
+; 4 occurrences:
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/GlobalModuleIndex.cpp.ll

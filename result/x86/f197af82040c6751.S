@@ -1,13 +1,13 @@
-func0000000000000144:                   # @func0000000000000144
-	addl	$-65, %edx
-	cmpl	$26, %edx
+func0000000000000484:                   # @func0000000000000484
+	addl	$-6, %edx
+	cmpl	$5, %edx
 	setb	%cl
-	cmpl	$10, %esi
+	cmpl	$5, %esi
 	setb	%al
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	addl	$-3, %edx
 	cmpl	$-2, %edx
 	setb	%cl
@@ -16,7 +16,7 @@ func0000000000000084:                   # @func0000000000000084
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addl	$-32, %edx
 	cmpl	$-22, %edx
 	setb	%cl
@@ -25,7 +25,7 @@ func0000000000000044:                   # @func0000000000000044
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	addl	$-255001, %edx                  # imm = 0xFFFC1BE7
 	cmpl	$-256000, %edx                  # imm = 0xFFFC1800
 	setb	%cl
@@ -34,7 +34,7 @@ func0000000000000088:                   # @func0000000000000088
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	addl	$-8, %edx
 	cmpl	$-7, %edx
 	setb	%cl

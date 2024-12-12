@@ -21,12 +21,19 @@ func0000000000000008:                   # @func0000000000000008
 	and	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000088:                   # @func0000000000000088
-	lui	a2, 16
-	addiw	a2, a2, -1
-	and	a1, a1, a2
-	and	a0, a0, a2
-	sltu	a0, a1, a0
+func000000000000000a:                   # @func000000000000000a
+	slli	a1, a1, 48
+	slli	a0, a0, 48
+	srai	a1, a1, 48
+	srai	a0, a0, 48
+	slt	a0, a1, a0
+	ret
+func0000000000000006:                   # @func0000000000000006
+	slli	a1, a1, 48
+	slli	a0, a0, 48
+	srai	a1, a1, 48
+	srai	a0, a0, 48
+	slt	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	lui	a2, 16
@@ -35,7 +42,14 @@ func0000000000000004:                   # @func0000000000000004
 	and	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000081:                   # @func0000000000000081
+func0000000000000108:                   # @func0000000000000108
+	lui	a2, 16
+	addiw	a2, a2, -1
+	and	a1, a1, a2
+	and	a0, a0, a2
+	sltu	a0, a1, a0
+	ret
+func0000000000000101:                   # @func0000000000000101
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a1, a1, a2

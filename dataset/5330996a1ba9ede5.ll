@@ -1,9 +1,10 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; linux/optimized/hooks.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/pci.ll
 ; llvm/optimized/TargetOptionsImpl.cpp.ll
+; llvm/optimized/TypePrinter.cpp.ll
 ; ruby/optimized/iso_8859_1.ll
 ; ruby/optimized/iso_8859_10.ll
 ; ruby/optimized/iso_8859_13.ll
@@ -25,7 +26,7 @@
 ; ruby/optimized/windows_1257.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1024
   %3 = icmp eq i16 %2, 0
@@ -34,7 +35,7 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; box2d/optimized/b2_world.cpp.ll
 ; cvc5/optimized/theory_engine.cpp.ll
 ; git/optimized/apply.ll
@@ -43,11 +44,13 @@ entry:
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached_debug-crawler.ll
+; openmpi/optimized/keyval_lex.ll
 ; postgres/optimized/dt_common.ll
 ; ruby/optimized/gc.ll
 ; wireshark/optimized/packet-tds.c.ll
+; yosys/optimized/verilog_lexer.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32
   %3 = icmp ne i16 %2, 0
@@ -56,7 +59,7 @@ entry:
   ret i1 %5
 }
 
-; 260 occurrences:
+; 261 occurrences:
 ; abc/optimized/wlcNdr.c.ll
 ; clamav/optimized/lzwdec.c.ll
 ; clamav/optimized/regexec.c.ll
@@ -242,6 +245,7 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
+; ruby/optimized/gc.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -318,9 +322,9 @@ entry:
 ; wireshark/optimized/packet-nbap.c.ll
 ; wireshark/optimized/packet-ranap.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 16
+  %2 = and i16 %1, 2048
   %3 = icmp ne i16 %2, 0
   %4 = icmp eq i32 %0, 0
   %5 = select i1 %3, i1 true, i1 %4
@@ -330,7 +334,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/threadControl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i16 %1) #0 {
+define i1 @func000000000000014c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8
   %3 = icmp ne i16 %2, 0
@@ -342,7 +346,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/dfa_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp eq i16 %2, 0
@@ -352,25 +356,10 @@ entry:
 }
 
 ; 2 occurrences:
-; fmt/optimized/format-impl-test.cc.ll
-; redis/optimized/cli_common.ll
-; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 15
-  %3 = icmp ne i16 %2, 4
-  %4 = icmp ult i32 %0, 256
-  %5 = select i1 %3, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 4 occurrences:
 ; abc/optimized/fretFlow.c.ll
 ; linux/optimized/vht.ll
-; llvm/optimized/CallDescription.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 4
   %3 = icmp eq i16 %2, 0
@@ -383,7 +372,7 @@ entry:
 ; llvm/optimized/ParseExprCXX.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -2
   %3 = icmp ne i16 %2, 12
@@ -396,7 +385,7 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16
   %3 = icmp eq i16 %2, 0
@@ -409,7 +398,7 @@ entry:
 ; linux/optimized/vt.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2048
   %3 = icmp eq i16 %2, 0
@@ -425,11 +414,23 @@ entry:
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; wireshark/optimized/prefs.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 256
   %3 = icmp eq i16 %2, 0
   %4 = icmp ne i32 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; redis/optimized/cli_common.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008c(i32 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 2048
+  %3 = icmp ne i16 %2, 0
+  %4 = icmp ult i32 %0, 6
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }

@@ -8,7 +8,7 @@
 ; mitsuba3/optimized/properties.cpp.ll
 ; z3/optimized/mbp_term_graph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ne ptr %0, null
@@ -30,7 +30,7 @@ entry:
 ; opencv/optimized/cascadedetect.cpp.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp eq ptr %0, null
@@ -38,7 +38,7 @@ entry:
   ret i1 %5
 }
 
-; 48 occurrences:
+; 47 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/exceptions.ll
 ; cpython/optimized/longobject.ll
@@ -55,7 +55,6 @@ entry:
 ; libquic/optimized/ssl_rsa.c.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/dumpstack.ll
-; linux/optimized/mpi-div.ll
 ; linux/optimized/net_failover.ll
 ; llvm/optimized/AsmLexer.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
@@ -88,7 +87,7 @@ entry:
 ; php/optimized/zend_API.ll
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ne ptr %0, null
@@ -101,7 +100,7 @@ entry:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; openjdk/optimized/matcher.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp eq ptr %0, null
@@ -113,7 +112,7 @@ entry:
 ; clamav/optimized/recvol.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000010c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %1, %2
   %4 = icmp ne ptr %0, null
@@ -121,16 +120,14 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; linux/optimized/efi.ll
 ; linux/optimized/efi_64.ll
-; linux/optimized/memattr.ll
 ; linux/optimized/mmconfig-shared.ll
 ; linux/optimized/prmt.ll
 ; linux/optimized/quirks.ll
-; linux/optimized/runtime-map.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000ac(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ule ptr %1, %2
   %4 = icmp ne ptr %0, null
@@ -143,7 +140,7 @@ entry:
 ; linux/optimized/radix-tree.ll
 ; z3/optimized/automaton.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp eq ptr %0, null
@@ -154,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp ne ptr %0, null
@@ -165,7 +162,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ufile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000121(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
   %4 = icmp eq ptr %0, null

@@ -22,7 +22,7 @@ define i128 @func0000000000000036(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw nsw i128 %1, 486662
   %3 = lshr i128 %2, 51
-  %4 = add nuw nsw i128 %3, %0
+  %4 = add nuw nsw i128 %0, %3
   %5 = lshr i128 %4, 51
   ret i128 %5
 }

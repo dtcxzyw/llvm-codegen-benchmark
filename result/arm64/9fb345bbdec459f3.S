@@ -1,9 +1,8 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	orr	v2.16b, v1.16b, v2.16b
-	mvn	v1.16b, v1.16b
-	shl	v2.16b, v2.16b, #7
-	cmlt	v2.16b, v2.16b, #0
-	bit	v0.16b, v1.16b, v2.16b
+	orr	w8, w1, w2
+	tst	w8, #0x1
+	csinv	w8, w0, w1, eq
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

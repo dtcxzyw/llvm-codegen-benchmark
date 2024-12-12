@@ -1,5 +1,6 @@
 
-; 23 occurrences:
+; 24 occurrences:
+; cmake/optimized/index.c.ll
 ; cpython/optimized/longobject.ll
 ; flac/optimized/replaygain_synthesis.c.ll
 ; linux/optimized/serial_core.ll

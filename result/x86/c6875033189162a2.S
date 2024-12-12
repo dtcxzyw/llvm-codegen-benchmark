@@ -19,8 +19,3 @@ func0000000000000015:                   # @func0000000000000015
 	subl	%eax, %edi
 	leal	1(%rdi), %eax
 	retq
-func0000000000000085:                   # @func0000000000000085
-	cmpb	$-55, %sil
-	adcl	$-1, %edi
-	leal	-161(%rdi), %eax
-	retq

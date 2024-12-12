@@ -3,9 +3,9 @@
 ; openssl/optimized/libcrypto-lib-bn_prime.ll
 ; openssl/optimized/libcrypto-shlib-bn_prime.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000051(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 513
+  %3 = icmp samesign ult i32 %2, 513
   %4 = select i1 %3, i32 64, i32 128
   %5 = select i1 %0, i32 %4, i32 %1
   %6 = add nsw i32 %5, -1

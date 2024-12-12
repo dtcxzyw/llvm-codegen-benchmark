@@ -1,20 +1,47 @@
 
-%"class.cv::Rect_.3562885" = type { i32, i32, i32, i32 }
+%"class.clang::Qualifiers.3335873" = type { i64 }
+%"class.clang::FunctionEffect.3335875" = type { i8 }
+%"class.cv::Rect_.3743588" = type { i32, i32, i32, i32 }
 
-; 2 occurrences:
-; rust-analyzer-rs/optimized/11fzjzs7q1iz2s6j.ll
-; rust-analyzer-rs/optimized/yr8bg0giq9ukis7.ll
+; 13 occurrences:
+; abc/optimized/giaMinLut.c.ll
+; abc/optimized/giaSimBase.c.ll
+; clamav/optimized/BraIA64.c.ll
+; cmake/optimized/ia64.c.ll
+; libjpeg-turbo/optimized/jdcolor.c.ll
+; libjpeg-turbo/optimized/jdmerge.c.ll
+; linux/optimized/dmar.ll
+; linux/optimized/gup.ll
+; linux/optimized/hugetlb.ll
+; linux/optimized/hugetlb_vmemmap.ll
+; linux/optimized/intel_ggtt.ll
+; linux/optimized/vmalloc.ll
+; minetest/optimized/clientmap.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = lshr exact i64 %2, 1
-  %4 = and i64 %3, 31
-  %5 = getelementptr nusw { { { [6 x i64] } }, { i64 } }, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %3 = lshr i64 %2, 1
+  %4 = and i64 %3, 4294967295
+  %5 = getelementptr i32, ptr %1, i64 %4
+  %6 = getelementptr i32, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 108 occurrences:
+; 3 occurrences:
+; rust-analyzer-rs/optimized/11fzjzs7q1iz2s6j.ll
+; rust-analyzer-rs/optimized/yr8bg0giq9ukis7.ll
+; yosys/optimized/qwp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = lshr exact i64 %2, 1
+  %4 = and i64 %3, 31
+  %5 = getelementptr nusw nuw { { { [6 x i64] } }, { i64 } }, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 109 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/ifDelay.c.ll
@@ -122,22 +149,20 @@ entry:
 ; llvm/optimized/Visitor.cpp.ll
 ; openblas/optimized/dasum_k.c.ll
 ; openblas/optimized/sasum_k.c.ll
+; yosys/optimized/calc.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 24
   %4 = and i64 %3, 255
-  %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; abc/optimized/abcRec3.c.ll
-; abc/optimized/abcRenode.c.ll
-; hyperscan/optimized/teddy.c.ll
-; hyperscan/optimized/teddy_avx2.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -148,26 +173,29 @@ entry:
   ret ptr %6
 }
 
-; 12 occurrences:
-; abc/optimized/giaMinLut.c.ll
-; abc/optimized/giaSimBase.c.ll
-; clamav/optimized/BraIA64.c.ll
-; cmake/optimized/ia64.c.ll
-; libjpeg-turbo/optimized/jdcolor.c.ll
-; libjpeg-turbo/optimized/jdmerge.c.ll
-; linux/optimized/dmar.ll
-; linux/optimized/gup.ll
-; linux/optimized/hugetlb.ll
-; linux/optimized/hugetlb_vmemmap.ll
-; linux/optimized/intel_ggtt.ll
-; linux/optimized/vmalloc.ll
+; 3 occurrences:
+; abc/optimized/abcRenode.c.ll
+; hyperscan/optimized/teddy.c.ll
+; hyperscan/optimized/teddy_avx2.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 6
-  %4 = and i64 %3, 67108863
-  %5 = getelementptr i64, ptr %1, i64 %4
-  %6 = getelementptr i64, ptr %5, i64 %0
+  %3 = lshr i64 %2, 24
+  %4 = and i64 %3, 255
+  %5 = getelementptr i32, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; llvm/optimized/TypePrinter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 37
+  %4 = and i64 %3, 1
+  %5 = getelementptr nusw nuw %"class.clang::Qualifiers.3335873", ptr %1, i64 %4
+  %6 = getelementptr nusw %"class.clang::FunctionEffect.3335875", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -179,8 +207,8 @@ define ptr @func0000000000000010(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 4
   %4 = and i64 %3, 2147483647
-  %5 = getelementptr %"class.cv::Rect_.3562885", ptr %1, i64 %4
-  %6 = getelementptr %"class.cv::Rect_.3562885", ptr %5, i64 %0
+  %5 = getelementptr %"class.cv::Rect_.3743588", ptr %1, i64 %4
+  %6 = getelementptr %"class.cv::Rect_.3743588", ptr %5, i64 %0
   ret ptr %6
 }
 

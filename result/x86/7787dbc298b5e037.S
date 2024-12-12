@@ -17,3 +17,9 @@ func0000000000000008:                   # @func0000000000000008
 	testq	%rsi, %rsi
 	sete	%al
 	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpq	$4, %rdi
+	sbbq	$0, %rsi
+	setb	%al
+	movzbl	%al, %eax
+	retq

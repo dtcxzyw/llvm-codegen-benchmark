@@ -32,14 +32,14 @@ func000000000000000f:                   # @func000000000000000f
 	vpaddd	.LCPI7_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI8_0:
-	.long	8                               # 0x8
-func0000000000000009:                   # @func0000000000000009
+	.long	4294966989                      # 0xfffffecd
+func0000000000000003:                   # @func0000000000000003
 	vpsubd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI9_0:
-	.long	64                              # 0x40
-func0000000000000003:                   # @func0000000000000003
+	.long	8                               # 0x8
+func0000000000000009:                   # @func0000000000000009
 	vpsubd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI9_0(%rip){1to8}, %ymm0, %ymm0
 	retq

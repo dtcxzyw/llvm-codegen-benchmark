@@ -1,5 +1,7 @@
 
-; 29 occurrences:
+; 31 occurrences:
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
 ; ceres/optimized/conditioned_cost_function.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/problem_impl.cc.ll
@@ -30,7 +32,7 @@
 ; yosys/optimized/yosys.ll
 ; z3/optimized/small_object_allocator.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, 2

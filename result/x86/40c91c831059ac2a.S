@@ -10,12 +10,6 @@ func000000000000000f:                   # @func000000000000000f
 	imull	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	notl	%edx
-	orl	$-256, %edx
-	imull	%esi, %edx
-	leal	(%rdx,%rdi), %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	notl	%edx
 	orl	$-256, %edx

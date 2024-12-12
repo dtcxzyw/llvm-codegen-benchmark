@@ -5,11 +5,16 @@ func0000000000000003:                   # @func0000000000000003
 	addiw	a0, a0, -4
 	and	a0, a0, a1
 	lui	a1, 16
-	or	a1, a1, a0
-.LBB0_2:                                # %entry
-	lui	a0, 32
 	or	a0, a0, a1
-	andi	a0, a0, -3
+	lui	a1, 32
+	or	a0, a0, a1
+	ret
+.LBB0_2:
+	lui	a0, 1048544
+	addiw	a0, a0, -3
+	and	a0, a0, a1
+	lui	a1, 32
+	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	lui	a0, 61440

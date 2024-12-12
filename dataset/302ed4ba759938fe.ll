@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openusd/optimized/keyFrameMap.cpp.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind

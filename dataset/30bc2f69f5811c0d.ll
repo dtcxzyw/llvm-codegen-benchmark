@@ -26,7 +26,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
   %6 = lshr i32 %5, 1
-  %7 = add nuw nsw i32 %6, %0
+  %7 = add nuw nsw i32 %0, %6
   ret i32 %7
 }
 

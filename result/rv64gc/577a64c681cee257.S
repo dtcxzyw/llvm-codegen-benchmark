@@ -166,6 +166,20 @@ func000000000000006f:                   # @func000000000000006f
 	slliw	a1, a1, 24
 	or	a0, a0, a1
 	ret
+func0000000000000070:                   # @func0000000000000070
+	andi	a2, a2, 255
+	slliw	a0, a0, 3
+	slli	a2, a2, 11
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000076:                   # @func0000000000000076
+	andi	a2, a2, 255
+	slliw	a0, a0, 3
+	slli	a2, a2, 11
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
 func000000000000002d:                   # @func000000000000002d
 	slliw	a2, a2, 24
 	or	a0, a0, a2

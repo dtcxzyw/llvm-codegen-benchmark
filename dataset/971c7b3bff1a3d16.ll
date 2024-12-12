@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; cpython/optimized/crossinterp.ll
@@ -33,13 +33,18 @@
 ; protobuf/optimized/unparser.cc.ll
 ; redis/optimized/dict.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
-  %5 = getelementptr nusw i8, ptr %1, i64 48
-  %6 = getelementptr nusw i8, ptr %0, i64 40
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 48
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 40
   %7 = select i1 %4, ptr %6, ptr %5
   ret ptr %7
 }

@@ -7,7 +7,7 @@
 ; minetest/optimized/sky.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 6
   %3 = zext i32 %2 to i64
@@ -25,7 +25,7 @@ entry:
 ; minetest/optimized/sky.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 6
   %3 = zext i32 %2 to i64
@@ -41,7 +41,7 @@ entry:
 ; ocio/optimized/FileFormatResolveCube.cpp.ll
 ; opencv/optimized/speech_recognition.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 5
   %3 = zext nneg i32 %2 to i64
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/orires.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e8(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 5
   %3 = zext nneg i32 %2 to i64

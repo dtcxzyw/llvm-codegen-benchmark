@@ -32,7 +32,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; c3c/optimized/bigint.c.ll
 ; linux/optimized/md-bitmap.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll

@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; actix-rs/optimized/3tnlvci61w0nl5yv.ll
 ; actix-rs/optimized/3u1jix79tu9frq3m.ll
@@ -38,18 +38,30 @@
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; yosys/optimized/ezminisat.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp eq i8 %0, %2
   ret i1 %3
 }
 
-; 578 occurrences:
+; 589 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; abseil-cpp/optimized/low_level_alloc_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/numeric.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/topology.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/filtering.c.ll
@@ -205,7 +217,6 @@ entry:
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/formatter.cpp.ll
 ; mitsuba3/optimized/fstream.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
 ; nix/optimized/archive.ll
@@ -297,13 +308,10 @@ entry:
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -414,8 +422,6 @@ entry:
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/like.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; qemu/optimized/ahci.c.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
@@ -625,11 +631,20 @@ entry:
 ; yosys/optimized/xilinx_srl.ll
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/zinit.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp eq i8 %0, %2
   ret i1 %3
 }
 
@@ -672,10 +687,10 @@ entry:
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
-  %3 = icmp ult i8 %2, %0
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 
@@ -742,11 +757,11 @@ entry:
 define i1 @func0000000000000008(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp ult i8 %2, %0
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 
-; 18 occurrences:
+; 24 occurrences:
 ; coreutils-rs/optimized/5bh17hgt9ymhvnmz.ll
 ; cpython/optimized/sre.ll
 ; libpng/optimized/pngrtran.c.ll
@@ -765,11 +780,17 @@ entry:
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp eq i8 %0, %2
   ret i1 %3
 }
 
@@ -785,10 +806,10 @@ entry:
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; redis/optimized/lparser.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
-  %3 = icmp ult i8 %2, %0
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 
@@ -801,7 +822,7 @@ entry:
 define i1 @func0000000000000006(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp sgt i8 %2, %0
+  %3 = icmp slt i8 %0, %2
   ret i1 %3
 }
 
@@ -856,7 +877,7 @@ entry:
 define i1 @func0000000000000004(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp ugt i8 %2, %0
+  %3 = icmp ult i8 %0, %2
   ret i1 %3
 }
 
@@ -871,7 +892,7 @@ entry:
 define i1 @func000000000000000c(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp ne i8 %2, %0
+  %3 = icmp ne i8 %0, %2
   ret i1 %3
 }
 
@@ -883,31 +904,29 @@ entry:
 define i1 @func000000000000000a(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp slt i8 %2, %0
+  %3 = icmp sgt i8 %0, %2
   ret i1 %3
 }
 
-; 6 occurrences:
-; clamav/optimized/lzxd.c.ll
-; clamav/optimized/mszipd.c.ll
+; 3 occurrences:
 ; lief/optimized/ecp.c.ll
 ; linux/optimized/intel_dp.ll
-; llvm/optimized/InferAlignment.cpp.ll
 ; wireshark/optimized/packet-packetbb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
-  %3 = icmp ugt i8 %2, %0
+  %3 = icmp ult i8 %0, %2
   ret i1 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; freetype/optimized/pfr.c.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/X86AsmBackend.cpp.ll
 ; lua/optimized/lstrlib.ll
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
@@ -917,10 +936,22 @@ entry:
 ; wireshark/optimized/packet-h265.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
-  %3 = icmp ugt i8 %2, %0
+  %3 = icmp ult i8 %0, %2
+  ret i1 %3
+}
+
+; 3 occurrences:
+; clamav/optimized/lzxd.c.ll
+; clamav/optimized/mszipd.c.ll
+; llvm/optimized/InferAlignment.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i8 %0, i32 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i32 %1 to i8
+  %3 = icmp samesign ult i8 %0, %2
   ret i1 %3
 }
 
@@ -932,7 +963,7 @@ entry:
 define i1 @func0000000000000005(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp uge i8 %2, %0
+  %3 = icmp ule i8 %0, %2
   ret i1 %3
 }
 
@@ -944,7 +975,7 @@ entry:
 define i1 @func0000000000000009(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp ule i8 %2, %0
+  %3 = icmp uge i8 %0, %2
   ret i1 %3
 }
 
@@ -955,7 +986,7 @@ entry:
 define i1 @func0000000000000007(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp sge i8 %2, %0
+  %3 = icmp sle i8 %0, %2
   ret i1 %3
 }
 
@@ -966,18 +997,19 @@ entry:
 define i1 @func000000000000000b(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp sle i8 %2, %0
+  %3 = icmp sge i8 %0, %2
   ret i1 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; openspiel/optimized/chess_board.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i8 %0, i32 %1) #0 {
+define i1 @func000000000000006c(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
-  %3 = icmp ne i8 %2, %0
+  %3 = icmp ne i8 %0, %2
   ret i1 %3
 }
 

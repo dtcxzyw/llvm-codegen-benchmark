@@ -10,11 +10,11 @@ define i32 @func000000000000003d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = mul nuw nsw i32 %3, 60
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 53 occurrences:
+; 54 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddCache.c.ll
@@ -42,6 +42,7 @@ entry:
 ; linux/optimized/kallsyms.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ResourcePriorityQueue.cpp.ll
+; lvgl/optimized/lv_scale.ll
 ; minetest/optimized/noise.cpp.ll
 ; mitsuba3/optimized/multijitter.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
@@ -73,7 +74,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = mul i32 %3, 1174137155
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -137,10 +138,11 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; icu/optimized/calendar.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libwebp/optimized/token_enc.c.ll
+; lvgl/optimized/lv_label.ll
 ; minetest/optimized/noise.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
@@ -156,12 +158,11 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; llvm/optimized/HotColdSplitting.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
-; php/optimized/engine_combinedlcg.ll
 ; quantlib/optimized/thirty360.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
@@ -277,7 +278,7 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/timeline.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -285,7 +286,8 @@ entry:
 ; libquic/optimized/error_correction.c.ll
 ; libwebp/optimized/yuv.c.ll
 ; linux/optimized/kapi.ll
-; nuttx/optimized/lib_timegm.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_image.ll
 ; quantlib/optimized/date.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; wireshark/optimized/netmon.c.ll
@@ -294,18 +296,7 @@ define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = mul i32 %3, 400
-  %5 = add i32 %4, %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; mixbox/optimized/mixbox.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000037(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = mul nsw i32 %3, 85
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -317,7 +308,7 @@ define i32 @func000000000000003e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = mul nuw nsw i32 %3, 3
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -366,7 +357,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = mul nuw nsw i32 %3, 5
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -389,7 +380,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = mul nuw nsw i32 %3, 3600
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -400,7 +391,7 @@ define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = mul nuw nsw i32 %3, 3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -418,7 +409,7 @@ define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = mul nuw i32 %3, 9617
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -429,7 +420,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = mul nuw nsw i32 %3, 100
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

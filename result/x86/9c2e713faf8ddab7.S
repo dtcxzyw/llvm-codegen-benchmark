@@ -10,6 +10,12 @@ func0000000000000060:                   # @func0000000000000060
 	adcl	$-1, %eax
 	shrl	$5, %eax
 	retq
+func0000000000000022:                   # @func0000000000000022
+	movl	%edi, %eax
+	cmpl	$3, %esi
+	sbbl	$0, %eax
+	shrl	$2, %eax
+	retq
 func0000000000000020:                   # @func0000000000000020
 	movl	%edi, %eax
 	cmpl	$3, %esi

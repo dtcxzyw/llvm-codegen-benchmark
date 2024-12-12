@@ -5,15 +5,13 @@
 define ptr @func0000000000000002(ptr %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 10 occurrences:
-; darktable/optimized/introspection_bilateral.cc.ll
-; meshlab/optimized/filter_func.cpp.ll
+; 8 occurrences:
 ; meshlab/optimized/io_pdb.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
@@ -26,9 +24,9 @@ entry:
 define ptr @func0000000000000006(ptr %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw i16, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -39,7 +37,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6

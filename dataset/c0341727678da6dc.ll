@@ -4,10 +4,10 @@
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/guiEditBox.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   %4 = icmp ne i32 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -35,10 +35,10 @@ entry:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000ca(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = icmp sgt i32 %0, -1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -49,11 +49,25 @@ entry:
 ; openmpi/optimized/coll_base_reduce.ll
 ; php/optimized/scanf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = icmp ne i32 %0, 0
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
+; gromacs/optimized/readpull.cpp.ll
+; opencv/optimized/local_optimization.cpp.ll
+; opencv/optimized/seam_finders.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000028a(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp samesign ult i32 %0, %2
+  %4 = icmp sgt i32 %0, -1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
@@ -61,10 +75,10 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/pmix_fd.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = icmp ne i32 %0, -1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -73,10 +87,10 @@ entry:
 ; 1 occurrences:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000026a(i32 %0, i64 %1) #0 {
+define i1 @func00000000000008ca(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = icmp sgt i32 %0, -1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -85,10 +99,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/featureselect.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = icmp sgt i32 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -98,10 +112,10 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000082a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = icmp sgt i32 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

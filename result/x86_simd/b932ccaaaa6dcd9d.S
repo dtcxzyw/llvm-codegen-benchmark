@@ -32,7 +32,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddb	.LCPI0_0(%rip), %xmm1, %xmm2
 	vmovdqu8	%xmm1, %xmm2 {%k1}
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm2, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI1_0:
 	.zero	16,208
@@ -73,7 +73,7 @@ func0000000000000005:                   # @func0000000000000005
 	vmovdqu8	.LCPI1_1(%rip), %xmm2 {%k1}     # xmm2 {%k1} = [201,201,201,201,201,201,201,201,201,201,201,201,201,201,201,201]
 	vpaddb	%xmm1, %xmm2, %xmm1
 	vgf2p8affineqb	$0, .LCPI1_4(%rip){1to2}, %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI2_0:
 	.zero	16,9
@@ -109,5 +109,5 @@ func0000000000000001:                   # @func0000000000000001
 	vpaddb	.LCPI2_0(%rip), %xmm1, %xmm2
 	vmovdqu8	%xmm1, %xmm2 {%k1}
 	vgf2p8affineqb	$0, .LCPI2_2(%rip){1to2}, %xmm2, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq

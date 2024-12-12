@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 70 occurrences:
 ; arrow/optimized/row_internal.cc.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
@@ -33,6 +33,7 @@
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/packet-rf4ce-profile.c.ll
@@ -58,6 +59,17 @@
 ; yosys/optimized/recover_names.ll
 ; yosys/optimized/sim.ll
 ; yosys/optimized/test_cell.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3hyavwlupfwy674k0u5ll7gv6.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f4g1cwrteaiub5fsoifj5amxy.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -66,13 +78,25 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; llvm/optimized/LoopIdiomRecognize.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
 ; openusd/optimized/reconintra.c.ll
-; wasmtime-rs/optimized/377rrvl9zeztt32x.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ult i8 %2, 3
+  %3 = icmp ult i8 %2, 11
+  %4 = select i1 %3, i1 %0, i1 %1
+  ret i1 %4
+}
+
+; 2 occurrences:
+; wasmtime-rs/optimized/377rrvl9zeztt32x.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %2, 3
   %4 = select i1 %3, i1 %0, i1 %1
   ret i1 %4
 }

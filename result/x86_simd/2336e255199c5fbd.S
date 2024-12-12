@@ -69,7 +69,7 @@
 .LCPI0_4:
 	.short	65503                           # 0xffdf
 	.short	65503                           # 0xffdf
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	vpaddw	.LCPI0_0(%rip), %ymm0, %ymm1
 	vpcmpltuw	.LCPI0_1(%rip), %ymm1, %k0
 	vpandd	.LCPI0_4(%rip){1to8}, %ymm0, %ymm0

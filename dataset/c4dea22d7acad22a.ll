@@ -53,7 +53,7 @@
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
@@ -61,6 +61,8 @@ entry:
 ; 132 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
@@ -75,8 +77,6 @@ entry:
 ; libwebp/optimized/frame_enc.c.ll
 ; libwebp/optimized/syntax_enc.c.ll
 ; linux/optimized/cgroup.ll
-; linux/optimized/gen_estimator.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/md.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/route.ll
@@ -195,7 +195,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
@@ -206,15 +206,27 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 23 occurrences:
+; 2 occurrences:
+; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
+; qemu/optimized/util_mmap-alloc.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = add i64 %1, %3
+  %5 = sub nuw i64 %0, %4
+  ret i64 %5
+}
+
+; 21 occurrences:
+; arrow/optimized/light_array.cc.ll
 ; cpython/optimized/_zoneinfo.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; gromacs/optimized/gmx_cluster.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -231,28 +243,14 @@ entry:
 ; ninja/optimized/ninja.cc.ll
 ; openmpi/optimized/ad_nfs_write.ll
 ; openmpi/optimized/onesided_aggregation.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; qemu/optimized/migration_qemu-file.c.ll
 ; z3/optimized/mpff.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nsw i64 %0, %4
-  ret i64 %5
-}
-
-; 2 occurrences:
-; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
-; qemu/optimized/util_mmap-alloc.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = sub nuw i64 %0, %4
   ret i64 %5
 }
 

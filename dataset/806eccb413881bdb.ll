@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 61 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -10,7 +10,6 @@
 ; minetest/optimized/database.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
 ; minetest/optimized/test_map.cpp.ll
-; php/optimized/dow.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -68,17 +67,6 @@ entry:
   %3 = sext i16 %2 to i64
   %4 = add nsw i64 %0, %1
   %5 = add nsw i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; php/optimized/dow.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i16 %2) #0 {
-entry:
-  %3 = sext i16 %2 to i64
-  %4 = add i64 %0, %1
-  %5 = add i64 %4, %3
   ret i64 %5
 }
 

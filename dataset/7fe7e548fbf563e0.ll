@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; graphviz/optimized/triang.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; openusd/optimized/meshUtil.cpp.ll
 ; openusd/optimized/write.c.ll

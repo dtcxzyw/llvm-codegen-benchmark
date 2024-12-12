@@ -1,10 +1,10 @@
 func0000000000000004:                   # @func0000000000000004
 	incl	%esi
-	cmpq	%rdi, %rsi
-	setb	%al
-	retq
-func0000000000000008:                   # @func0000000000000008
-	decl	%esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	seta	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	decl	%esi
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq

@@ -1,5 +1,7 @@
 
-; 126 occurrences:
+; 129 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/crc32.c.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/mpdecimal.ll
@@ -125,6 +127,7 @@
 ; wireshark/optimized/vwr.c.ll
 ; yosys/optimized/lz4.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; zlib/optimized/crc32.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
@@ -134,11 +137,11 @@ entry:
   ret i64 %2
 }
 
-; 219 occurrences:
-; abc/optimized/cuddInit.c.ll
+; 233 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; actix-rs/optimized/2nm6r5hc2u1hk1e1.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/to_chars.ll
 ; clap-rs/optimized/1zp92zvstj9lufi9.ll
 ; cmake/optimized/crc32.c.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -344,6 +347,7 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; turborepo-rs/optimized/5oyfkcp83qeshlhfpeq645wiv.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
@@ -353,6 +357,19 @@ entry:
 ; wasmtime-rs/optimized/yvuhygn8g1cm0um.ll
 ; wireshark/optimized/packet-dis.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0cyv10l6w91jqdqmhl8pbusw2.ll
+; zed-rs/optimized/0vyyug5k32h9xse2mwakvk78w.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/5lopn02otdgr3jtenihf9pnc6.ll
+; zed-rs/optimized/5xfke1jw0ac7pab611oym1u20.ll
+; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
+; zed-rs/optimized/9igphs4jh07znzucv85uqqzol.ll
+; zed-rs/optimized/9kzypu599rxw1s8z0tdtjo3oe.ll
+; zed-rs/optimized/ab01r9sf75x1uliqc5hdvn2v4.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/cerruq7gww65l7esxsyv0yj53.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
 ; zlib/optimized/crc32.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
@@ -369,6 +386,7 @@ entry:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/sparring_partner.ll
 ; cmake/optimized/progress.c.ll
 ; cpython/optimized/mpdecimal.ll
 ; curl/optimized/libcurl_la-progress.ll
@@ -378,7 +396,6 @@ entry:
 ; eastl/optimized/EACallback.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; linux/optimized/timeconv.ll
@@ -417,7 +434,7 @@ entry:
   ret i64 %2
 }
 
-; 111 occurrences:
+; 110 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -425,6 +442,7 @@ entry:
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/geotagging.c.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -517,8 +535,6 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; openjdk/optimized/vmThread.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/openexr-c.c.ll
 ; pbrt-v4/optimized/paramdict.cpp.ll
 ; php/optimized/snprintf.ll

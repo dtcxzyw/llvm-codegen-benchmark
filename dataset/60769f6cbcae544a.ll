@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 88 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -55,7 +55,6 @@
 ; linux/optimized/entropy_common.ll
 ; linux/optimized/rate.ll
 ; miniaudio/optimized/unity.c.ll
-; nuttx/optimized/lib_calendar2utc.c.ll
 ; opencv/optimized/cap_v4l.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/icp.cpp.ll

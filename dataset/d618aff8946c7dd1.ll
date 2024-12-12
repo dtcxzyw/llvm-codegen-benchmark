@@ -9,7 +9,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 63
   %4 = lshr i64 %3, 6
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 3
   %4 = lshr i64 %3, 2
-  %5 = mul nuw nsw i64 %4, %0
+  %5 = mul nuw nsw i64 %0, %4
   ret i64 %5
 }
 

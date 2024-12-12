@@ -4,7 +4,7 @@
 ; icu/optimized/ucnv_bld.ll
 ; openusd/optimized/tbbKernel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000821(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr nusw i8, ptr %0, i64 %2

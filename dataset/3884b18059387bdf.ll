@@ -1,7 +1,7 @@
 
-%struct.redblack_node.2485824 = type { i64, ptr, i32, i32 }
+%struct.redblack_node.2601295 = type { i64, ptr, i32, i32 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; cpython/optimized/optimizer.ll
 ; hyperscan/optimized/teddy.c.ll
 ; hyperscan/optimized/teddy_avx2.c.ll
@@ -10,7 +10,6 @@
 ; linux/optimized/ahash.ll
 ; linux/optimized/arp.ll
 ; linux/optimized/bio.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/indirect.ll
 ; linux/optimized/skbuff.ll
@@ -40,7 +39,7 @@ entry:
   ret i64 %6
 }
 
-; 76 occurrences:
+; 68 occurrences:
 ; eastl/optimized/TestHeap.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; linux/optimized/act_api.ll
@@ -57,12 +56,8 @@ entry:
 ; linux/optimized/devinet.ll
 ; linux/optimized/drm_cache.ll
 ; linux/optimized/ematch.ll
-; linux/optimized/event.ll
-; linux/optimized/features.ll
-; linux/optimized/fec.ll
 ; linux/optimized/fib_rules.ll
 ; linux/optimized/fib_semantics.ll
-; linux/optimized/fils_aead.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/gen_stats.ll
 ; linux/optimized/genetlink.ll
@@ -73,12 +68,10 @@ entry:
 ; linux/optimized/ipmr_base.ll
 ; linux/optimized/mcast.ll
 ; linux/optimized/mlme.ll
-; linux/optimized/mm.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/net_namespace.ll
 ; linux/optimized/netdev-genl.ll
-; linux/optimized/netlabel_calipso.ll
 ; linux/optimized/netlabel_cipso_v4.ll
 ; linux/optimized/netlabel_mgmt.ll
 ; linux/optimized/netlabel_unlabeled.ll
@@ -89,7 +82,6 @@ entry:
 ; linux/optimized/nf_nat_helper.ll
 ; linux/optimized/nfnetlink_log.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/pause.ll
 ; linux/optimized/pmsr.ll
 ; linux/optimized/policy.ll
 ; linux/optimized/route.ll
@@ -102,7 +94,6 @@ entry:
 ; linux/optimized/taskstats.ll
 ; linux/optimized/tcp_metrics.ll
 ; linux/optimized/tlshd.ll
-; linux/optimized/tpm.ll
 ; linux/optimized/ttm_pool.ll
 ; linux/optimized/tunnels.ll
 ; linux/optimized/x_tables.ll
@@ -121,13 +112,13 @@ entry:
 define i64 @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.redblack_node.2485824, ptr %1, i64 %3
+  %4 = getelementptr %struct.redblack_node.2601295, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   ret i64 %6
 }
 
-; 391 occurrences:
+; 392 occurrences:
 ; abc/optimized/cecChoice.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/cecSat.c.ll
@@ -136,6 +127,7 @@ entry:
 ; abc/optimized/giaOf.c.ll
 ; abc/optimized/giaStr.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/yc.c.ll
@@ -520,10 +512,10 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000001c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   ret i64 %6
@@ -539,6 +531,8 @@ entry:
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/LWOBLoader.cpp.ll
 ; assimp/optimized/LWOMaterial.cpp.ll
+; boost/optimized/options_description.ll
+; boost/optimized/src.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -555,7 +549,6 @@ entry:
 ; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/inffast.c.ll
 ; cmake/optimized/inftrees.c.ll
-; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; darktable/optimized/CiffEntry.cpp.ll
 ; darktable/optimized/MosDecoder.cpp.ll
@@ -681,13 +674,12 @@ entry:
 ; yosys/optimized/lz4.ll
 ; zlib/optimized/gzwrite.c.ll
 ; zlib/optimized/inftrees.c.ll
-; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   ret i64 %6

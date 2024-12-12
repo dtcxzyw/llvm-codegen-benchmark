@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.long	8388608                         # 0x800000
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

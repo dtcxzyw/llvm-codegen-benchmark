@@ -2,9 +2,9 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000018(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 64
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 64
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = lshr i64 %4, 5
@@ -19,9 +19,9 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; z3/optimized/dl_rule.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000019(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = lshr exact i64 %4, 4

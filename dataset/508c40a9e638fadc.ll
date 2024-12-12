@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 56 occurrences:
 ; arrow/optimized/bit_util.cc.ll
 ; c3c/optimized/sema_expr.c.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -18,7 +18,6 @@
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/BugReporter.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/StreamChecker.cpp.ll

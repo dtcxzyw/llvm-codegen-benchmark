@@ -1,5 +1,5 @@
 
-; 101 occurrences:
+; 98 occurrences:
 ; arrow/optimized/utf8.cc.ll
 ; brotli/optimized/utf8_util.c.ll
 ; clamav/optimized/Bra.c.ll
@@ -33,7 +33,6 @@
 ; linux/optimized/alps.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/idma32.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/rx.ll
@@ -81,8 +80,6 @@
 ; raylib/optimized/rtext.c.ll
 ; re2/optimized/rune.cc.ll
 ; ruby/optimized/cesu_8.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
 ; snappy/optimized/snappy.cc.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; spike/optimized/debug_module.ll
@@ -105,10 +102,10 @@
 define i32 @func000000000000000f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 8
-  %5 = and i32 %4, 768
+  %4 = shl nuw nsw i32 %3, 6
+  %5 = and i32 %4, 960
   %6 = or disjoint i32 %5, %1
-  %7 = or disjoint i32 %6, %0
+  %7 = or disjoint i32 %0, %6
   ret i32 %7
 }
 
@@ -142,7 +139,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
   %5 = and i32 %4, 251658240
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -169,7 +166,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl i32 %3, 25
   %5 = and i32 %4, 1073741824
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -185,7 +182,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 18
   %5 = and i32 %4, 1835008
-  %6 = or i32 %5, %1
+  %6 = or i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -202,7 +199,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 11
   %5 = and i32 %4, 2048
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -219,7 +216,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 15
   %5 = and i32 %4, 32768
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }

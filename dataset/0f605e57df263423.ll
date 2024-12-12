@@ -15,7 +15,7 @@ entry:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 29
   %4 = and i32 %3, 1
@@ -28,7 +28,7 @@ entry:
 ; abc/optimized/cecSolveG.c.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 29
   %4 = and i32 %3, 1
@@ -45,11 +45,11 @@ entry:
 ; linux/optimized/drm_dp_mst_topology.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 29
   %4 = and i32 %3, 1
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
@@ -57,11 +57,11 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaPat.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 30
   %4 = and i32 %3, 1
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = icmp ne i32 %5, %0
   ret i1 %6
 }
@@ -98,7 +98,7 @@ define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 32640
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
@@ -136,7 +136,7 @@ define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 32640
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
@@ -169,18 +169,6 @@ entry:
   %4 = and i32 %3, 3
   %5 = or i32 %4, %1
   %6 = icmp uge i32 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/insn-eval.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 3
-  %4 = and i32 %3, 7
-  %5 = or disjoint i32 %4, %1
-  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 

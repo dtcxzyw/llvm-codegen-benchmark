@@ -1,57 +1,29 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v3.8b, #1
-	and	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #7
-	ushll	v2.8h, v2.8b, #0
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
-	and	v0.16b, v0.16b, v3.16b
-	and	v1.16b, v1.16b, v3.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w0, w1
+	tst	w8, #0x7
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v3.8b, #1
-	and	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #3
-	ushll	v2.8h, v2.8b, #0
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
-	and	v0.16b, v0.16b, v3.16b
-	and	v1.16b, v1.16b, v3.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w0, w1
+	tst	w8, #0x3
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000034:                   // @func0000000000000034
+func0000000000000074:                   // @func0000000000000074
 // %bb.0:                               // %entry
-	movi	v3.8b, #1
-	and	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #63
-	ushll	v2.8h, v2.8b, #0
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
-	movi	v2.4s, #31
-	and	v0.16b, v0.16b, v3.16b
-	and	v1.16b, v1.16b, v3.16b
-	cmhi	v1.4s, v2.4s, v1.4s
-	cmhi	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w0, w1
+	and	w8, w8, #0x3f
+	cmp	w8, #31
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
-	eor	v0.8b, v0.8b, v2.8b
-	mvn	v0.8b, v0.8b
+	mov	w8, #1                          // =0x1
+	eor	w9, w1, w0
+	bic	w0, w8, w9
 	ret
                                         // -- End function

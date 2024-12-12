@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/mpmPre.c.ll
 ; git/optimized/commit-graph.ll
 ; gromacs/optimized/pme.cpp.ll
@@ -14,7 +14,6 @@
 ; openmpi/optimized/ompi_datatype_create_subarray.ll
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
-; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1, i1 %2) #0 {
 entry:

@@ -46,12 +46,25 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %1, i64 1, i64 %3
+  %5 = shl nuw nsw i64 %0, 32
+  %6 = or disjoint i64 %5, %4
+  ret i64 %6
+}
+
+; 2 occurrences:
 ; llama.cpp/optimized/grammar-parser.cpp.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = select i1 %1, i64 6, i64 %3
+  %4 = select i1 %1, i64 0, i64 %3
   %5 = shl nuw i64 %0, 32
   %6 = or disjoint i64 %5, %4
   ret i64 %6

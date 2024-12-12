@@ -1,4 +1,4 @@
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	shrl	$12, %edx
 	addl	%esi, %edx
 	orl	%edi, %edx
@@ -17,53 +17,53 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$128, %edi
 	setb	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	shrl	$6, %edx
 	addl	%esi, %edi
 	addl	%edx, %edi
 	cmpl	$128, %edi
 	setb	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	shrl	$13, %edx
 	addl	%esi, %edx
 	addl	%edi, %edx
 	sete	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	shrl	%edx
 	addl	%esi, %edx
 	addl	%edi, %edx
 	setns	%al
 	retq
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	shrl	$8, %edx
 	addl	%esi, %edx
 	addl	%edi, %edx
 	setle	%al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	shrl	$16, %edx
 	addl	%esi, %edi
 	addl	%edx, %edi
 	cmpl	$1, %edi
 	setne	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	shrl	$16, %edx
 	addl	%esi, %edi
 	addl	%edx, %edi
 	cmpl	$33, %edi
 	setae	%al
 	retq
-func00000000000001da:                   # @func00000000000001da
+func00000000000003aa:                   # @func00000000000003aa
 	shrl	$17, %edx
 	addl	%esi, %edi
 	addl	%edx, %edi
 	cmpl	$5, %edi
 	setge	%al
 	retq
-func00000000000001f1:                   # @func00000000000001f1
+func00000000000003e1:                   # @func00000000000003e1
 	shrl	%edx
 	addl	%esi, %edi
 	addl	%edx, %edi
@@ -77,7 +77,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$127, %edi
 	seta	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	shrl	$25, %edx
 	addl	%esi, %edi
 	addl	%edx, %edi

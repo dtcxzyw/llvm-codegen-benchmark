@@ -3,9 +3,9 @@ func0000000000000005:                   # @func0000000000000005
 	vsll.vi	v12, v12, 4
 	lui	a0, 128
 	vand.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vsll.vi	v10, v10, 8
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000036:                   # @func0000000000000036
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -13,7 +13,7 @@ func0000000000000036:                   # @func0000000000000036
 	lui	a0, 16
 	addi	a0, a0, -256
 	vand.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vsll.vi	v10, v10, 16
 	vor.vv	v8, v10, v8
 	ret
@@ -42,7 +42,7 @@ func0000000000000008:                   # @func0000000000000008
 	vand.vx	v12, v12, a0
 	vor.vv	v10, v12, v10
 	vsll.vi	v10, v10, 4
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 8, e32, m2, ta, ma

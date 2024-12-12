@@ -13,6 +13,11 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rax, %rax
 	setns	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	vmovq	%xmm0, %rax
+	shrq	$52, %rax
+	sete	%al
+	retq
 func0000000000000004:                   # @func0000000000000004
 	vmovq	%xmm0, %rax
 	shrq	$52, %rax
@@ -20,8 +25,13 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vmovq	%xmm0, %rax
+	shrq	$53, %rax
+	setne	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	vmovq	%xmm0, %rax
 	shrq	$52, %rax
-	cmpl	$4095, %eax                     # imm = 0xFFF
+	cmpl	$2047, %eax                     # imm = 0x7FF
 	setae	%al
 	retq
 func000000000000000c:                   # @func000000000000000c

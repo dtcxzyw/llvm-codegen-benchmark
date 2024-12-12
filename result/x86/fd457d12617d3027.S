@@ -113,6 +113,13 @@ func000000000000003e:                   # @func000000000000003e
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq
+func0000000000000038:                   # @func0000000000000038
+	movzbl	%dl, %eax
+	shll	$16, %eax
+	shll	$24, %esi
+	orl	%edi, %esi
+	orl	%esi, %eax
+	retq
 func0000000000000007:                   # @func0000000000000007
 	andl	$1, %edx
 	leal	(%rdi,%rdx,2), %eax

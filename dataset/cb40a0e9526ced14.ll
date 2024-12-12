@@ -35,7 +35,7 @@ entry:
 ; rust-analyzer-rs/optimized/1n6t6n716s6vtscg.ll
 ; rust-analyzer-rs/optimized/4li1jw3llk76lkpw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0) #0 {
+define i1 @func00000000000000a4(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 3
   %2 = add nsw i64 %1, 8
@@ -43,7 +43,7 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 38 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; linux/optimized/ring_buffer.ll
 ; llvm/optimized/LLParser.cpp.ll
@@ -53,8 +53,37 @@ entry:
 ; openjdk/optimized/jvmtiEnvBase.ll
 ; php/optimized/zend_jit.ll
 ; ruby/optimized/util.ll
+; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; zed-rs/optimized/1iclhw87evxdlo4w8mftuzy1q.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/25la7m7vywfxvwku7cmlhn88p.ll
+; zed-rs/optimized/2mbibkb4nlqbkrk4fshgkpe2t.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4jorz9az93w02qp1j17ku3v0j.ll
+; zed-rs/optimized/4z6vlo4eo03eve34h1wxhlae7.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5syv1375c7i7870jctt3co1ip.ll
+; zed-rs/optimized/5xevyi85tx7z64jdpnqwqtx9p.ll
+; zed-rs/optimized/5zvzdqo9nykovvrfw25tdotue.ll
+; zed-rs/optimized/6sgfnscy7p01akiz795s6wpkk.ll
+; zed-rs/optimized/6xlwohkhrc7sko712xmhy0o82.ll
+; zed-rs/optimized/79pkk0uh2o8d7azal4ksf2mob.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
+; zed-rs/optimized/914lh5mzek2kam75czht77x9a.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/ag0lml678ueaz8wuwxuz1u0bn.ll
+; zed-rs/optimized/ayy5pqcx1yuz6kdx9ooq2ruee.ll
+; zed-rs/optimized/b6ps497cu7xjd0as5oqedkmfl.ll
+; zed-rs/optimized/biea7u9y4mp6m3ifunknc64xm.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cd51tp3f9xzjf7uqmsq5af267.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/de4xf1plz4ya209x66ee15yyx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0) #0 {
+define i1 @func00000000000000a1(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, -2
   ret i1 %1
@@ -66,7 +95,7 @@ entry:
 ; llvm/optimized/AArch64PBQPRegAlloc.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0) #0 {
+define i1 @func00000000000001a4(i64 %0) #0 {
 entry:
   %1 = shl nuw nsw i64 %0, 4
   %2 = add nsw i64 %1, -32
@@ -74,8 +103,9 @@ entry:
   ret i1 %3
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; assimp/optimized/UnrealLoader.cpp.ll
+; boost/optimized/sparring_partner.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; llvm/optimized/SampleProfileInference.cpp.ll
@@ -102,7 +132,7 @@ entry:
 ; protobuf/optimized/wire_format.cc.ll
 ; protobuf/optimized/wire_format_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0) #0 {
+define i1 @func00000000000000a8(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 1
   %2 = add i64 %1, -2305843009213693944
@@ -110,7 +140,7 @@ entry:
   ret i1 %3
 }
 
-; 11 occurrences:
+; 15 occurrences:
 ; brotli/optimized/block_splitter.c.ll
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/TestBitVector.cpp.ll
@@ -122,6 +152,10 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/.._libqmp.c.ll
 ; quickjs/optimized/libbf.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/65od2e11tbtl7gt1ig9f3i8el.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
@@ -131,31 +165,15 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/test_codecvt.ll
 ; c3c/optimized/sema_passes.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %.mask = and i64 %0, 4294967295
   %1 = icmp eq i64 %.mask, 2
   ret i1 %1
-}
-
-; 7 occurrences:
-; arrow/optimized/vector_selection_filter_internal.cc.ll
-; assimp/optimized/SMDLoader.cpp.ll
-; meshlab/optimized/Scanner.cpp.ll
-; node/optimized/libnode.node_buffer.ll
-; quickjs/optimized/libbf.ll
-; soc-simulator/optimized/verilated.ll
-; wireshark/optimized/display_filter_expression_dialog.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i64 %0) #0 {
-entry:
-  %1 = shl i64 %0, 26
-  %2 = add i64 %1, 4294967296
-  %3 = icmp sgt i64 %2, -1
-  ret i1 %3
 }
 
 ; 32 occurrences:
@@ -200,7 +218,7 @@ entry:
   ret i1 %3
 }
 
-; 16 occurrences:
+; 20 occurrences:
 ; lief/optimized/gcm.c.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
@@ -217,14 +235,19 @@ entry:
 ; quantlib/optimized/mclookbackengine.ll
 ; z3/optimized/sat_lookahead.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/dyu8ahcv7l11k0z44ye6uqxem.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0) #0 {
+define i1 @func00000000000001e1(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 1
   ret i1 %1
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/test_codecvt.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; draco/optimized/rans_bit_encoder.cc.ll
@@ -249,7 +272,7 @@ entry:
 ; llvm/optimized/Type.cpp.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0) #0 {
+define i1 @func00000000000001a1(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 1
   ret i1 %1
@@ -268,17 +291,35 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0) #0 {
+define i1 @func00000000000001a8(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 0
   ret i1 %1
+}
+
+; 8 occurrences:
+; arrow/optimized/vector_selection_filter_internal.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; node/optimized/libnode.node_buffer.ll
+; quickjs/optimized/libbf.ll
+; wireshark/optimized/display_filter_expression_dialog.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i64 %0) #0 {
+entry:
+  %1 = shl i64 %0, 1
+  %2 = add i64 %1, 41
+  %3 = icmp sgt i64 %2, 37
+  ret i1 %3
 }
 
 ; 2 occurrences:
 ; casadi/optimized/sparsity.cpp.ll
 ; cpython/optimized/_csv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0) #0 {
+define i1 @func0000000000000088(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 3
   %2 = add i64 %1, -9223372036854775793
@@ -290,7 +331,7 @@ entry:
 ; casadi/optimized/sparsity.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
+define i1 @func0000000000000081(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, -1
   ret i1 %1

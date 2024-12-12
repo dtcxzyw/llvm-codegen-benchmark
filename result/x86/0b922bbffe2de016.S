@@ -5,7 +5,7 @@ func0000000000000003:                   # @func0000000000000003
 	cmovnel	%ecx, %eax
 	orl	%edi, %eax
 	retq
-func00000000000001a3:                   # @func00000000000001a3
+func0000000000000343:                   # @func0000000000000343
 	movl	%esi, %ecx
 	shll	$4, %ecx
 	addl	$-16, %ecx

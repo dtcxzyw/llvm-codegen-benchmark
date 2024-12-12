@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 101 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; bullet3/optimized/MultiBodyTreeImpl.ll
 ; bullet3/optimized/btReducedDeformableBody.ll
@@ -37,6 +37,7 @@
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -95,6 +96,11 @@
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

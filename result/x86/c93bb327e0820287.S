@@ -6,13 +6,6 @@ func0000000000000053:                   # @func0000000000000053
 	orl	$-65, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
-	xorl	%eax, %eax
-	cmpl	$4, %edi
-	sbbl	%eax, %eax
-	orl	$-4, %eax
-	addl	%edi, %eax
-	retq
 func0000000000000040:                   # @func0000000000000040
 	xorl	%eax, %eax
 	cmpl	$127, %edi

@@ -1,27 +1,20 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v1.2d, x8
-	saddw	v2.2d, v1.2d, v0.2s
-	saddw2	v1.2d, v1.2d, v0.4s
-	mov	v0.16b, v2.16b
+                                        // kill: def $w0 killed $w0 def $x0
+	sxtw	x8, w0
+	add	x0, x8, #1
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	w8, #63                         // =0x3f
-	dup	v1.2d, x8
-	saddw	v2.2d, v1.2d, v0.2s
-	saddw2	v1.2d, v1.2d, v0.4s
-	mov	v0.16b, v2.16b
+                                        // kill: def $w0 killed $w0 def $x0
+	sxtw	x8, w0
+	add	x0, x8, #63
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v1.2d, #0xffffffffffffffff
-	fneg	v1.2d, v1.2d
-	saddw	v2.2d, v1.2d, v0.2s
-	saddw2	v1.2d, v1.2d, v0.4s
-	mov	v0.16b, v2.16b
+	mov	x8, #9223372036854775807        // =0x7fffffffffffffff
+	add	x0, x8, w0, sxtw
 	ret
                                         // -- End function

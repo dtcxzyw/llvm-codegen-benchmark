@@ -22,6 +22,15 @@ func0000000000000004:                   # @func0000000000000004
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	movabsq	$-4294967296, %rcx              # imm = 0xFFFFFFFF00000000
+	xorl	%eax, %eax
+	cmpq	%rcx, %rdx
+	setb	%al
+	shll	$5, %eax
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	movabsq	$-4294967296, %rcx              # imm = 0xFFFFFFFF00000000
 	xorl	%eax, %eax
@@ -35,6 +44,14 @@ func0000000000000006:                   # @func0000000000000006
 	movq	%rdx, %rax
 	sarq	$63, %rax
 	orl	$1, %eax
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpq	$16, %rdx
+	setae	%al
+	shll	$2, %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq

@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/static_string.ll
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
@@ -24,7 +25,8 @@ entry:
   ret i1 %.not
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/static_string.ll
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
@@ -74,16 +76,26 @@ entry:
   ret i1 %.not
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
 ; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp uge i8 %0, %1
+  ret i1 %2
+}
+
+; 3 occurrences:
+; typst-rs/optimized/40w6rezair915kkd.ll
+; zed-rs/optimized/b8qgowmgtglca3x1tojob83nm.ll
+; zed-rs/optimized/bjeparp10jwpmju7lihptx53f.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign uge i8 %0, %1
   ret i1 %2
 }
 

@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll
@@ -11,6 +11,7 @@
 ; faiss/optimized/index_read.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/state_compress.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {

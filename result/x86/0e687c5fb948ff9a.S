@@ -1,8 +1,8 @@
 func0000000000000029:                   # @func0000000000000029
 	shll	$4, %edx
-	leal	15(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	addl	%esi, %ecx
+	leal	15(%rsi,%rdx), %eax
+	movl	%esi, %ecx
+	addl	%edx, %ecx
 	cmovnsl	%ecx, %eax
 	sarl	$4, %eax
 	addl	%edi, %eax

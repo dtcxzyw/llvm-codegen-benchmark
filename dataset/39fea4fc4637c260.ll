@@ -6,7 +6,7 @@
 define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -20,7 +20,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -29,10 +29,21 @@ entry:
 ; gromacs/optimized/qmmmoptions.cpp.ll
 ; quantlib/optimized/markovfunctional.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
+  %4 = zext i1 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; clamav/optimized/fmap.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000004a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -1
+  %3 = icmp ule i64 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -44,7 +55,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -55,7 +66,7 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 40
-  %3 = icmp ule i64 %2, %0
+  %3 = icmp uge i64 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -63,10 +74,10 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000072(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000f2(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 40
-  %3 = icmp ule i64 %2, %0
+  %3 = icmp samesign uge i64 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }

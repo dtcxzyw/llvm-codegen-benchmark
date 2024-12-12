@@ -1,6 +1,8 @@
 
-; 53 occurrences:
+; 55 occurrences:
 ; abc/optimized/abcSaucy.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
 ; cpython/optimized/cmathmodule.ll
@@ -61,8 +63,11 @@ entry:
   ret i1 %3
 }
 
-; 40 occurrences:
+; 43 occurrences:
 ; arrow/optimized/double-to-string.cc.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; cpython/optimized/cmathmodule.ll
 ; double_conversion/optimized/double-to-string.cc.ll
 ; graphviz/optimized/adjust.c.ll
@@ -110,7 +115,12 @@ entry:
   ret i1 %3
 }
 
-; 37 occurrences:
+; 41 occurrences:
+; boost/optimized/algorithm.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; cpython/optimized/cmathmodule.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
@@ -137,7 +147,6 @@ entry:
 ; postgres/optimized/float.ll
 ; postgres/optimized/indxpath.ll
 ; proj/optimized/4D_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/fwd.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/grids.cpp.ll
@@ -175,8 +184,11 @@ entry:
   ret i1 %3
 }
 
-; 11 occurrences:
+; 14 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/within_sph_geo.ll
 ; gromacs/optimized/dlaed6.cpp.ll
 ; icu/optimized/nfrs.ll
 ; ipopt/optimized/IpPiecewisePenalty.ll
@@ -195,7 +207,7 @@ entry:
   ret i1 %3
 }
 
-; 49 occurrences:
+; 47 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
 ; graphviz/optimized/QuadTree.c.ll
@@ -229,12 +241,10 @@ entry:
 ; openjdk/optimized/cmscnvrt.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; proj/optimized/boggs.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/hatano.cpp.ll
 ; proj/optimized/imw_p.cpp.ll
 ; proj/optimized/labrd.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/nell.cpp.ll
 ; proj/optimized/putp2.cpp.ll
@@ -297,8 +307,10 @@ entry:
   ret i1 %3
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; casadi/optimized/lsqr.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; gromacs/optimized/dlaed6.cpp.ll
@@ -358,6 +370,43 @@ entry:
   ret i1 %3
 }
 
+; 5 occurrences:
+; arrow/optimized/double-to-string.cc.ll
+; double_conversion/optimized/double-to-string.cc.ll
+; opencv/optimized/svm.cpp.ll
+; openusd/optimized/double-to-string.cc.ll
+; openusd/optimized/sparseValueWriter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000e(i1 %0, double %1) #0 {
+entry:
+  %2 = fcmp ord double %1, 0.000000e+00
+  %3 = select i1 %2, i1 true, i1 %0
+  ret i1 %3
+}
+
+; 14 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within_pointlike_geometry.ll
+; ceres/optimized/array_utils.cc.ll
+; cpython/optimized/cmathmodule.ll
+; cpython/optimized/complexobject.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i1 %0, double %1) #0 {
+entry:
+  %2 = fcmp ueq double %1, 0x7FF0000000000000
+  %3 = select i1 %2, i1 true, i1 %0
+  ret i1 %3
+}
+
 ; 9 occurrences:
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; openblas/optimized/dlag2.c.ll
@@ -372,31 +421,6 @@ entry:
 define i1 @func000000000000000c(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp oge double %1, 0x43E0000000000000
-  %3 = select i1 %2, i1 true, i1 %0
-  ret i1 %3
-}
-
-; 2 occurrences:
-; opencv/optimized/svm.cpp.ll
-; openusd/optimized/sparseValueWriter.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000e(i1 %0, double %1) #0 {
-entry:
-  %2 = fcmp ord double %1, 0.000000e+00
-  %3 = select i1 %2, i1 true, i1 %0
-  ret i1 %3
-}
-
-; 5 occurrences:
-; ceres/optimized/array_utils.cc.ll
-; cpython/optimized/cmathmodule.ll
-; cpython/optimized/complexobject.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, double %1) #0 {
-entry:
-  %2 = fcmp ueq double %1, 0x7FF0000000000000
   %3 = select i1 %2, i1 true, i1 %0
   ret i1 %3
 }

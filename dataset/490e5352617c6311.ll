@@ -1,11 +1,11 @@
 
-%"class.std::__1::basic_string.2488406" = type { %"class.std::__1::__compressed_pair.1.2488407" }
-%"class.std::__1::__compressed_pair.1.2488407" = type { %"struct.std::__1::__compressed_pair_elem.2.2488408" }
-%"struct.std::__1::__compressed_pair_elem.2.2488408" = type { %"struct.std::__1::basic_string<char>::__rep.2488409" }
-%"struct.std::__1::basic_string<char>::__rep.2488409" = type { %union.anon.2488410 }
-%union.anon.2488410 = type { %"struct.std::__1::basic_string<char>::__long.2488411" }
-%"struct.std::__1::basic_string<char>::__long.2488411" = type { %struct.anon.3.2488412, i64, ptr }
-%struct.anon.3.2488412 = type { i64 }
+%"class.std::__1::basic_string.2603838" = type { %"class.std::__1::__compressed_pair.1.2603839" }
+%"class.std::__1::__compressed_pair.1.2603839" = type { %"struct.std::__1::__compressed_pair_elem.2.2603840" }
+%"struct.std::__1::__compressed_pair_elem.2.2603840" = type { %"struct.std::__1::basic_string<char>::__rep.2603841" }
+%"struct.std::__1::basic_string<char>::__rep.2603841" = type { %union.anon.2603842 }
+%union.anon.2603842 = type { %"struct.std::__1::basic_string<char>::__long.2603843" }
+%"struct.std::__1::basic_string<char>::__long.2603843" = type { %struct.anon.3.2603844, i64, ptr }
+%struct.anon.3.2603844 = type { i64 }
 
 ; 97 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -112,7 +112,7 @@ entry:
   %4 = sdiv exact i64 %3, 24
   %5 = add nsw i64 %4, 1
   %6 = sdiv i64 %5, -2
-  %7 = getelementptr nusw %"class.std::__1::basic_string.2488406", ptr %0, i64 %6
+  %7 = getelementptr nusw %"class.std::__1::basic_string.2603838", ptr %0, i64 %6
   ret ptr %7
 }
 

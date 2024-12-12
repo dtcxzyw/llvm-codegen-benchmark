@@ -1,21 +1,16 @@
 
-%struct.Mig_Obj_t_.2764453 = type { [4 x %struct.Mig_Fan_t_.2764454] }
-%struct.Mig_Fan_t_.2764454 = type { i32 }
+%struct.Mig_Obj_t_.2876713 = type { [4 x %struct.Mig_Fan_t_.2876714] }
+%struct.Mig_Fan_t_.2876714 = type { i32 }
 
-; 21 occurrences:
+; 16 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
-; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/spin.c.ll
 ; clamav/optimized/upx.c.ll
-; cmake/optimized/lzma_decoder.c.ll
-; cmake/optimized/lzma_encoder.c.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
-; eastl/optimized/TestHeap.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
 ; flatbuffers/optimized/binary_annotator.cpp.ll
@@ -25,13 +20,13 @@
 ; php/optimized/pcre2_dfa_match.ll
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
   %6 = getelementptr nusw i32, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 16
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 16
   ret ptr %7
 }
 
@@ -39,33 +34,29 @@ entry:
 ; abc/optimized/giaEmbed.c.ll
 ; clamav/optimized/upx.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000068(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000078(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
   %6 = getelementptr nusw i32, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 12
   ret ptr %7
 }
 
-; 9 occurrences:
-; abc/optimized/abcHieNew.c.ll
-; abc/optimized/giaCof.c.ll
+; 5 occurrences:
 ; abc/optimized/mpmAbc.c.ll
 ; abc/optimized/mpmMap.c.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
-; draco/optimized/sequential_normal_attribute_encoder.cc.ll
-; lz4/optimized/lz4.c.ll
-; openusd/optimized/lz4.cpp.ll
+; boost/optimized/src.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000016a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000017a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %struct.Mig_Obj_t_.2764453, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.Mig_Obj_t_.2876713, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw %struct.Mig_Obj_t_.2764453, ptr %4, i64 %5
+  %6 = getelementptr nusw %struct.Mig_Obj_t_.2876713, ptr %4, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 -16
   ret ptr %7
 }
@@ -73,13 +64,47 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000168(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000178(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
   %6 = getelementptr nusw i32, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 8
+  ret ptr %7
+}
+
+; 5 occurrences:
+; abc/optimized/abcHieNew.c.ll
+; abc/optimized/giaCof.c.ll
+; draco/optimized/sequential_normal_attribute_encoder.cc.ll
+; lz4/optimized/lz4.c.ll
+; openusd/optimized/lz4.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000017b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
+  %5 = sub nsw i64 0, %1
+  %6 = getelementptr nusw i32, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 20
+  ret ptr %7
+}
+
+; 5 occurrences:
+; clamav/optimized/LzmaDec.c.ll
+; cmake/optimized/lzma_decoder.c.ll
+; cmake/optimized/lzma_encoder.c.ll
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; eastl/optimized/TestHeap.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007a(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
+  %5 = sub nsw i64 0, %1
+  %6 = getelementptr nusw i16, ptr %4, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 -2
   ret ptr %7
 }
 

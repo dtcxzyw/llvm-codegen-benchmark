@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_execlists_submission.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1984
   %4 = and i32 %1, 65472
@@ -52,11 +52,11 @@ entry:
 ; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll
 ; opencv/optimized/perf_bench.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %.v = select i1 %0, i32 %1, i32 %2
   %3 = and i32 %.v, 7
-  %4 = icmp ugt i32 %3, 4
+  %4 = icmp samesign ugt i32 %3, 4
   ret i1 %4
 }
 

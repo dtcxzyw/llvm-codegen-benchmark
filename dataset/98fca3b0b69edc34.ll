@@ -1,6 +1,57 @@
 
-; 527 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
+; cmake/optimized/archive_read_support_format_mtree.c.ll
+; cmake/optimized/cmCTestBinPacker.cxx.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; git/optimized/apply.ll
+; hermes/optimized/BigIntSupport.cpp.ll
+; mimalloc/optimized/segment.c.ll
+; openjdk/optimized/cardTableRS.ll
+; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll
+; openjdk/optimized/g1FullGCAdjustTask.ll
+; openjdk/optimized/g1RemSet.ll
+; openjdk/optimized/psCardTable.ll
+; openjdk/optimized/psParallelCompact.ll
+; openjdk/optimized/psPromotionManager.ll
+; openjdk/optimized/psScavenge.ll
+; openjdk/optimized/shenandoahHeap.ll
+; ruby/optimized/parser.ll
+; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
+  %4 = select i1 %0, ptr %1, ptr %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 13 occurrences:
+; cpython/optimized/mmapmodule.ll
+; cpython/optimized/obmalloc.ll
+; linux/optimized/sched.ll
+; llvm/optimized/CommentLexer.cpp.ll
+; postgres/optimized/exec_shlib.ll
+; postgres/optimized/exec_srv.ll
+; quickjs/optimized/qjsc.ll
+; ruby/optimized/prism.ll
+; ruby/optimized/string.ll
+; wireshark/optimized/blf.c.ll
+; wireshark/optimized/display_filter_expression_dialog.cpp.ll
+; wireshark/optimized/logcat.c.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 2
+  %4 = select i1 %0, ptr %1, ptr %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 661 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
@@ -11,9 +62,105 @@
 ; arrow/optimized/ree_util.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/PlyParser.cpp.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/debug.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/src.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
-; cmake/optimized/archive_read_support_format_mtree.c.ll
-; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
 ; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll
@@ -66,9 +213,7 @@
 ; folly/optimized/TDigest.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; freetype/optimized/type1cid.c.ll
 ; git/optimized/add-patch.ll
-; git/optimized/apply.ll
 ; git/optimized/connect.ll
 ; git/optimized/credential.ll
 ; git/optimized/dir.ll
@@ -79,7 +224,6 @@
 ; gromacs/optimized/coordstate.cpp.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; grpc/optimized/event_log.cc.ll
-; hermes/optimized/BigIntSupport.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
 ; hermes/optimized/Statistic.cpp.ll
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
@@ -270,7 +414,6 @@
 ; luajit/optimized/lj_gc.ll
 ; luajit/optimized/lj_gc_dyn.ll
 ; luau/optimized/laux.cpp.ll
-; mimalloc/optimized/segment.c.ll
 ; mold/optimized/arch-ppc64v1.cc.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
@@ -362,16 +505,7 @@
 ; opencv/optimized/prior_box_layer.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
-; openjdk/optimized/cardTableRS.ll
-; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll
-; openjdk/optimized/g1FullGCAdjustTask.ll
-; openjdk/optimized/g1RemSet.ll
 ; openjdk/optimized/jfrCheckpointWriter.ll
-; openjdk/optimized/psCardTable.ll
-; openjdk/optimized/psParallelCompact.ll
-; openjdk/optimized/psPromotionManager.ll
-; openjdk/optimized/psScavenge.ll
-; openjdk/optimized/shenandoahHeap.ll
 ; openssl/optimized/libcrypto-lib-http_lib.ll
 ; openssl/optimized/libcrypto-shlib-http_lib.ll
 ; openusd/optimized/clipSet.cpp.ll
@@ -394,15 +528,67 @@
 ; protobuf/optimized/wire_format.cc.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
-; redis/optimized/loadlib.ll
+; quantlib/optimized/abcdatmvolcurve.ll
+; quantlib/optimized/andreasenhugevolatilityinterpl.ll
+; quantlib/optimized/basecorrelationstructure.ll
+; quantlib/optimized/blackvariancecurve.ll
+; quantlib/optimized/blackvariancesurface.ll
+; quantlib/optimized/bond.ll
+; quantlib/optimized/capfloortermvolcurve.ll
+; quantlib/optimized/capfloortermvolsurface.ll
+; quantlib/optimized/cmsmarketcalibration.ll
+; quantlib/optimized/commoditycurve.ll
+; quantlib/optimized/concentrating1dmesher.ll
+; quantlib/optimized/extendedblackvariancecurve.ll
+; quantlib/optimized/extendedblackvariancesurface.ll
+; quantlib/optimized/fdklugeextouspreadengine.ll
+; quantlib/optimized/fdm1dimsolver.ll
+; quantlib/optimized/fdm2dimsolver.ll
+; quantlib/optimized/fdm3dimsolver.ll
+; quantlib/optimized/fdmarithmeticaveragecondition.ll
+; quantlib/optimized/fdmbatesop.ll
+; quantlib/optimized/fdmdividendhandler.ll
+; quantlib/optimized/fdmextoujumpop.ll
+; quantlib/optimized/fdmhestonvariancemesher.ll
+; quantlib/optimized/fdmsimplestoragecondition.ll
+; quantlib/optimized/fdsimpleklugeextouvppengine.ll
+; quantlib/optimized/fftengine.ll
+; quantlib/optimized/fixedlocalvolsurface.ll
+; quantlib/optimized/flatvol.ll
+; quantlib/optimized/gaussian1dcapfloorengine.ll
+; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
+; quantlib/optimized/gaussian1djamshidianswaptionengine.ll
+; quantlib/optimized/gaussian1dmodel.ll
+; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
+; quantlib/optimized/gaussian1dswaptionengine.ll
+; quantlib/optimized/generalizedhullwhite.ll
+; quantlib/optimized/gsr.ll
+; quantlib/optimized/gsrprocesscore.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
+; quantlib/optimized/hestonslvmcmodel.ll
+; quantlib/optimized/interpolatedswaptionvolatilitycube.ll
+; quantlib/optimized/kahalesmilesection.ll
+; quantlib/optimized/lfmhullwhiteparam.ll
+; quantlib/optimized/lfmprocess.ll
+; quantlib/optimized/lmfixedvolmodel.ll
+; quantlib/optimized/localvolrndcalculator.ll
+; quantlib/optimized/markovfunctional.ll
+; quantlib/optimized/mfstateprocess.ll
+; quantlib/optimized/noarbsabr.ll
+; quantlib/optimized/normalclvmodel.ll
+; quantlib/optimized/sabrvolsurface.ll
+; quantlib/optimized/sampledcurve.ll
+; quantlib/optimized/smilesectionutils.ll
+; quantlib/optimized/strippedoptionletadapter.ll
+; quantlib/optimized/swaptionvoldiscrete.ll
+; quantlib/optimized/swaptionvolmatrix.ll
+; quantlib/optimized/zabr.ll
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
-; ruby/optimized/parser.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; spike/optimized/socketif.ll
 ; stockfish/optimized/search.ll
 ; stockfish/optimized/tbprobe.ll
-; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; vcpkg/optimized/archives.cpp.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
 ; vcpkg/optimized/binaryparagraph.cpp.ll
@@ -527,93 +713,6 @@
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; zstd/optimized/zstd_ldm.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i1 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 -1
-  %4 = select i1 %0, ptr %1, ptr %3
-  %5 = ptrtoint ptr %4 to i64
-  ret i64 %5
-}
-
-; 12 occurrences:
-; cpython/optimized/mmapmodule.ll
-; cpython/optimized/obmalloc.ll
-; linux/optimized/sched.ll
-; postgres/optimized/exec_shlib.ll
-; postgres/optimized/exec_srv.ll
-; quickjs/optimized/qjsc.ll
-; ruby/optimized/prism.ll
-; ruby/optimized/string.ll
-; wireshark/optimized/blf.c.ll
-; wireshark/optimized/display_filter_expression_dialog.cpp.ll
-; wireshark/optimized/logcat.c.ll
-; wireshark/optimized/qcustomplot.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i1 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %2, i64 2
-  %4 = select i1 %0, ptr %1, ptr %3
-  %5 = ptrtoint ptr %4 to i64
-  ret i64 %5
-}
-
-; 55 occurrences:
-; quantlib/optimized/abcdatmvolcurve.ll
-; quantlib/optimized/andreasenhugevolatilityinterpl.ll
-; quantlib/optimized/basecorrelationstructure.ll
-; quantlib/optimized/blackvariancecurve.ll
-; quantlib/optimized/blackvariancesurface.ll
-; quantlib/optimized/bond.ll
-; quantlib/optimized/capfloortermvolcurve.ll
-; quantlib/optimized/capfloortermvolsurface.ll
-; quantlib/optimized/cmsmarketcalibration.ll
-; quantlib/optimized/commoditycurve.ll
-; quantlib/optimized/concentrating1dmesher.ll
-; quantlib/optimized/extendedblackvariancecurve.ll
-; quantlib/optimized/extendedblackvariancesurface.ll
-; quantlib/optimized/fdklugeextouspreadengine.ll
-; quantlib/optimized/fdm1dimsolver.ll
-; quantlib/optimized/fdm2dimsolver.ll
-; quantlib/optimized/fdm3dimsolver.ll
-; quantlib/optimized/fdmarithmeticaveragecondition.ll
-; quantlib/optimized/fdmbatesop.ll
-; quantlib/optimized/fdmdividendhandler.ll
-; quantlib/optimized/fdmextoujumpop.ll
-; quantlib/optimized/fdmhestonvariancemesher.ll
-; quantlib/optimized/fdmsimplestoragecondition.ll
-; quantlib/optimized/fdsimpleklugeextouvppengine.ll
-; quantlib/optimized/fftengine.ll
-; quantlib/optimized/fixedlocalvolsurface.ll
-; quantlib/optimized/flatvol.ll
-; quantlib/optimized/gaussian1dcapfloorengine.ll
-; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
-; quantlib/optimized/gaussian1djamshidianswaptionengine.ll
-; quantlib/optimized/gaussian1dmodel.ll
-; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
-; quantlib/optimized/gaussian1dswaptionengine.ll
-; quantlib/optimized/generalizedhullwhite.ll
-; quantlib/optimized/gsr.ll
-; quantlib/optimized/gsrprocesscore.ll
-; quantlib/optimized/hestonslvfdmmodel.ll
-; quantlib/optimized/hestonslvmcmodel.ll
-; quantlib/optimized/interpolatedswaptionvolatilitycube.ll
-; quantlib/optimized/kahalesmilesection.ll
-; quantlib/optimized/lfmhullwhiteparam.ll
-; quantlib/optimized/lfmprocess.ll
-; quantlib/optimized/lmfixedvolmodel.ll
-; quantlib/optimized/localvolrndcalculator.ll
-; quantlib/optimized/markovfunctional.ll
-; quantlib/optimized/mfstateprocess.ll
-; quantlib/optimized/noarbsabr.ll
-; quantlib/optimized/normalclvmodel.ll
-; quantlib/optimized/sabrvolsurface.ll
-; quantlib/optimized/sampledcurve.ll
-; quantlib/optimized/smilesectionutils.ll
-; quantlib/optimized/strippedoptionletadapter.ll
-; quantlib/optimized/swaptionvoldiscrete.ll
-; quantlib/optimized/swaptionvolmatrix.ll
-; quantlib/optimized/zabr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, ptr %1, ptr %2) #0 {
 entry:

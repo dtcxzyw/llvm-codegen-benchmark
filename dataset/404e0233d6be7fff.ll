@@ -1,4 +1,43 @@
 
+; 29 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; clamav/optimized/Ppmd7.c.ll
+; clamav/optimized/Ppmd7Dec.c.ll
+; clamav/optimized/qtmd.c.ll
+; clamav/optimized/unpack.cpp.ll
+; cmake/optimized/archive_ppmd7.c.ll
+; cmake/optimized/archive_ppmd8.c.ll
+; freetype/optimized/pcf.c.ll
+; freetype/optimized/pshinter.c.ll
+; hdf5/optimized/H5B2int.c.ll
+; linux/optimized/exthdrs.ll
+; linux/optimized/intel_vrr.ll
+; linux/optimized/netfilter.ll
+; linux/optimized/rscalc.ll
+; linux/optimized/skbuff.ll
+; minetest/optimized/cavegen.cpp.ll
+; postgres/optimized/gindatapage.ll
+; quantlib/optimized/dataparsers.ll
+; quantlib/optimized/date.ll
+; wireshark/optimized/packet-btbredr_rf.c.ll
+; wireshark/optimized/packet-dnp.c.ll
+; wireshark/optimized/packet-reload.c.ll
+; wireshark/optimized/packet-rlc-lte.c.ll
+; wireshark/optimized/packet-tls.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = add nuw nsw i32 %2, 1
+  %4 = sub nsw i32 %3, %0
+  ret i32 %4
+}
+
 ; 7 occurrences:
 ; linux/optimized/intel_panel.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
@@ -13,39 +52,6 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = add nuw nsw i32 %2, 1
   %4 = sub i32 %3, %0
-  ret i32 %4
-}
-
-; 23 occurrences:
-; clamav/optimized/Ppmd7.c.ll
-; clamav/optimized/Ppmd7Dec.c.ll
-; clamav/optimized/qtmd.c.ll
-; clamav/optimized/unpack.cpp.ll
-; cmake/optimized/archive_ppmd7.c.ll
-; cmake/optimized/archive_ppmd8.c.ll
-; freetype/optimized/pcf.c.ll
-; freetype/optimized/pshinter.c.ll
-; hdf5/optimized/H5B2int.c.ll
-; libquic/optimized/ntt.c.ll
-; linux/optimized/exthdrs.ll
-; linux/optimized/intel_vrr.ll
-; linux/optimized/netfilter.ll
-; linux/optimized/rscalc.ll
-; linux/optimized/skbuff.ll
-; postgres/optimized/gindatapage.ll
-; quantlib/optimized/dataparsers.ll
-; quantlib/optimized/date.ll
-; wireshark/optimized/packet-btbredr_rf.c.ll
-; wireshark/optimized/packet-dnp.c.ll
-; wireshark/optimized/packet-reload.c.ll
-; wireshark/optimized/packet-rlc-lte.c.ll
-; wireshark/optimized/packet-tls.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i32
-  %3 = add nuw nsw i32 %2, 4800
-  %4 = sub nsw i32 %3, %0
   ret i32 %4
 }
 

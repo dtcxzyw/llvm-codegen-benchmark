@@ -20,7 +20,7 @@
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpmovqd	%ymm2, %xmm2
 	vptestnmd	%xmm1, %xmm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -31,7 +31,7 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func0000000000000311:                   # @func0000000000000311
+func0000000000000c21:                   # @func0000000000000c21
 	vpmovqd	%ymm2, %xmm2
 	vpbroadcastd	.LCPI1_0(%rip), %xmm3   # xmm3 = [1,1,1,1]
 	vpcmpeqd	%xmm3, %xmm1, %k1

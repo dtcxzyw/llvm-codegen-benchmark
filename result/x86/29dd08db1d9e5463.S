@@ -1,4 +1,4 @@
-func0000000000000711:                   # @func0000000000000711
+func0000000000001c21:                   # @func0000000000001c21
 	shll	$16, %edx
 	orl	%esi, %edx
 	sete	%cl
@@ -6,7 +6,7 @@ func0000000000000711:                   # @func0000000000000711
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000078c:                   # @func000000000000078c
+func0000000000001d0c:                   # @func0000000000001d0c
 	shll	$8, %edx
 	orl	%esi, %edx
 	setne	%cl
@@ -14,16 +14,7 @@ func000000000000078c:                   # @func000000000000078c
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000784:                   # @func0000000000000784
-	shll	$12, %edx
-	orl	%esi, %edx
-	cmpl	$55296, %edx                    # imm = 0xD800
-	setae	%cl
-	cmpb	$14, %dil
-	setb	%al
-	andb	%cl, %al
-	retq
-func0000000000000718:                   # @func0000000000000718
+func0000000000001c38:                   # @func0000000000001c38
 	shll	$8, %edx
 	orl	%esi, %edx
 	cmpl	$3075, %edx                     # imm = 0xC03
@@ -32,7 +23,7 @@ func0000000000000718:                   # @func0000000000000718
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000781:                   # @func0000000000000781
+func0000000000001f01:                   # @func0000000000001f01
 	shll	$8, %edx
 	orl	%esi, %edx
 	cmpl	$3142, %edx                     # imm = 0xC46

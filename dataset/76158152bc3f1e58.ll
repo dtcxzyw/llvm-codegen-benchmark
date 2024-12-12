@@ -156,9 +156,8 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; clamav/optimized/unpack.cpp.ll
-; linux/optimized/intel_hdcp_gsc_message.ll
 ; openexr/optimized/chunk.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; protobuf/optimized/arena.cc.ll
@@ -217,10 +216,8 @@ entry:
   ret i32 %2
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
 ; openblas/optimized/dsteqr.c.ll
 ; redis/optimized/t_list.ll
 ; redis/optimized/t_set.ll

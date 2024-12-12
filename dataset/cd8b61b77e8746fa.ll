@@ -1,7 +1,8 @@
 
-%struct.bts_phys.3351967 = type { ptr, i64, i64, i64 }
+%struct.bts_phys.3539772 = type { ptr, i64, i64, i64 }
 
-; 11 occurrences:
+; 12 occurrences:
+; box2d/optimized/b2_collide_edge.cpp.ll
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; git/optimized/merge-ort.ll
@@ -14,15 +15,15 @@
 ; openjdk/optimized/klass.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr nusw [4 x ptr], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [4 x ptr], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
-; 27 occurrences:
+; 25 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
@@ -48,14 +49,12 @@ entry:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
-; cmake/optimized/lzma_decoder.c.ll
-; cmake/optimized/lzma_encoder.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 1023
-  %5 = getelementptr nusw [1024 x i8], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1024 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -74,15 +73,14 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/bts.ll
-; linux/optimized/xz_dec_lzma2.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr [0 x %struct.bts_phys.3351967], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [0 x %struct.bts_phys.3539772], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

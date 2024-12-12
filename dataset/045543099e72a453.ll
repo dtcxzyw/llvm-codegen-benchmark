@@ -12,7 +12,7 @@
 define i1 @func0000000000000018(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %.not = icmp eq ptr %1, %2
-  %3 = or i1 %.not, %0
+  %3 = or i1 %0, %.not
   ret i1 %3
 }
 
@@ -45,7 +45,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

@@ -9,12 +9,6 @@ func0000000000000078:                   # @func0000000000000078
 	andq	$-8, %rdx
 	leaq	(%rdx,%rdi), %rax
 	retq
-func0000000000000056:                   # @func0000000000000056
-	shlq	$2, %rsi
-	subq	%rsi, %rdx
-	andq	$-4, %rdx
-	leaq	(%rdx,%rdi), %rax
-	retq
 func000000000000007c:                   # @func000000000000007c
 	shlq	$4, %rsi
 	subq	%rsi, %rdx

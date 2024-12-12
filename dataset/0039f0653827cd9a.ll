@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 15 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/pipe.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; libuv/optimized/pipe.c.ll
@@ -11,6 +12,7 @@
 ; linux/optimized/pci_root.ll
 ; linux/optimized/ttm_pool.ll
 ; node/optimized/pipe.ll
+; openjdk/optimized/gtk3_interface.ll
 ; ruby/optimized/transcode.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
@@ -22,7 +24,7 @@ entry:
   ret i32 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/deflate.c.ll
 ; clamav/optimized/session.c.ll
 ; cmake/optimized/deflate.c.ll
@@ -45,6 +47,7 @@ entry:
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
+; ruby/optimized/ractor.ll
 ; ruby/optimized/thread.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind

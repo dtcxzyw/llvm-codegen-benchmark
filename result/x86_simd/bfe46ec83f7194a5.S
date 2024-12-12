@@ -68,6 +68,6 @@ func0000000000000023:                   # @func0000000000000023
 	vpcmpltuq	.LCPI5_0(%rip){1to4}, %ymm1, %k1
 	vpbroadcastd	.LCPI5_1(%rip), %xmm1   # xmm1 = [64,64,64,64]
 	vpbroadcastd	.LCPI5_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [65,65,65,65]
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq

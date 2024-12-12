@@ -32,12 +32,10 @@ entry:
   ret i1 %6
 }
 
-; 91 occurrences:
-; clamav/optimized/pe_icons.c.ll
+; 89 occurrences:
 ; coreutils-rs/optimized/1jbxberfc5l4jlu4.ll
 ; coreutils-rs/optimized/20v11r4bpq9cscu.ll
 ; coreutils-rs/optimized/54i42m66wtythwaw.ll
-; linux/optimized/feat_ctl.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDumper.cpp.ll
@@ -130,31 +128,31 @@ entry:
   %3 = and i32 %2, 3
   %4 = icmp eq i32 %3, 3
   %5 = select i1 %4, i1 %1, i1 false
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000030(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7936
-  %4 = icmp ugt i32 %3, 256
+  %4 = icmp samesign ugt i32 %3, 256
   %5 = select i1 %4, i1 %1, i1 false
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 124
-  %4 = icmp ult i32 %3, 28
+  %4 = icmp samesign ult i32 %3, 28
   %5 = select i1 %4, i1 %1, i1 false
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

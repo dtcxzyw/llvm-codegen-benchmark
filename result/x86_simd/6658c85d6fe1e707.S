@@ -24,6 +24,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpsrlq	$29, %ymm1, %ymm1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm2   # ymm2 = [504,504,504,504]
 	vpand	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpand	%ymm2, %ymm0, %ymm0
 	retq

@@ -41,7 +41,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	%ymm1, %ymm2, %ymm1
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vextracti128	$1, %ymm2, %xmm3
@@ -78,7 +78,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
 	vpmullq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
@@ -86,5 +86,5 @@ func0000000000000015:                   # @func0000000000000015
 	vpsraq	$4, %ymm2, %ymm2
 	vpmullq	%ymm1, %ymm2, %ymm1
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

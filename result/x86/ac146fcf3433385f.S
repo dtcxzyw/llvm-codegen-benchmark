@@ -11,7 +11,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$1008, %esi                     # imm = 0x3F0
 	setb	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	testb	$1, %dil
 	cmovel	%edx, %esi
 	testl	$268435456, %esi                # imm = 0x10000000

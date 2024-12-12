@@ -24,8 +24,12 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; imgui/optimized/imgui.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i8 %0) #0 {
 entry:

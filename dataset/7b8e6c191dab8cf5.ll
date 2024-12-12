@@ -1,5 +1,5 @@
 
-; 536 occurrences:
+; 538 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/utilSort.c.ll
@@ -18,8 +18,10 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/cmdline.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_jacobian_writer.cc.ll
 ; ceres/optimized/coordinate_descent_minimizer.cc.ll
@@ -149,6 +151,7 @@
 ; faiss/optimized/AuxIndexStructures.cpp.ll
 ; faiss/optimized/IndexReplicas.cpp.ll
 ; faiss/optimized/IndexShards.cpp.ll
+; flatbuffers/optimized/idl_parser.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; glslang/optimized/Constant.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
@@ -248,7 +251,6 @@
 ; llvm/optimized/DecoderEmitter.cpp.ll
 ; llvm/optimized/DirectiveEmitter.cpp.ll
 ; llvm/optimized/DisassemblerEmitter.cpp.ll
-; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/DynamicExtent.cpp.ll
 ; llvm/optimized/DynamicType.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
@@ -537,17 +539,17 @@
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = and i64 %5, 2147483647
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
-; 117 occurrences:
+; 121 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/dchSim.c.ll
@@ -571,6 +573,7 @@ entry:
 ; ceres/optimized/residual_block_utils.cc.ll
 ; cmake/optimized/zdict.c.ll
 ; cvc5/optimized/extf_solver.cpp.ll
+; cvc5/optimized/regexp_elim.cpp.ll
 ; cvc5/optimized/sygus_unif_io.cpp.ll
 ; draco/optimized/keyframe_animation.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
@@ -602,6 +605,9 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
+; minetest/optimized/CGUIFont.cpp.ll
+; minetest/optimized/COpenGLDriver.cpp.ll
+; minetest/optimized/CSkinnedMesh.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; msdfgen/optimized/contour-combiners.cpp.ll
 ; ncnn/optimized/net.cpp.ll
@@ -610,7 +616,6 @@ entry:
 ; ocio/optimized/ColorSpace.cpp.ll
 ; ocio/optimized/FileFormat3DL.cpp.ll
 ; oiio/optimized/fitsinput.cpp.ll
-; opencv/optimized/aff_trans.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/boost.cpp.ll
@@ -625,6 +630,7 @@ entry:
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
+; opencv/optimized/graph_cluster.cpp.ll
 ; opencv/optimized/histogramphaseunwrapping.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; opencv/optimized/motionSaliencyBinWangApr2014.cpp.ll
@@ -672,16 +678,15 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 5
   %6 = and i64 %5, 4294967295
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
-; 103 occurrences:
+; 86 occurrences:
 ; arrow/optimized/scalar_cast_nested.cc.ll
 ; arrow/optimized/validate.cc.ll
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/Q3DLoader.cpp.ll
-; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -704,43 +709,29 @@ entry:
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/readir.cpp.ll
 ; gromacs/optimized/topsort.cpp.ll
-; hermes/optimized/Executor.cpp.ll
 ; hermes/optimized/IdentifierTable.cpp.ll
-; llvm/optimized/AbstractCallSite.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
-; llvm/optimized/BranchRelaxation.cpp.ll
-; llvm/optimized/BugReporterVisitors.cpp.ll
-; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; llvm/optimized/CGSCCPassManager.cpp.ll
 ; llvm/optimized/CheckExprLifetime.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; llvm/optimized/CodeGenSchedule.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/DAGISelMatcherGen.cpp.ll
 ; llvm/optimized/GlobalISelEmitter.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
-; llvm/optimized/InlineCost.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/MachinePassManager.cpp.ll
-; llvm/optimized/MachineScheduler.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/MemoryLocation.cpp.ll
 ; llvm/optimized/PassManager.cpp.ll
-; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/SemaInit.cpp.ll
-; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; llvm/optimized/TypePromotion.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
-; llvm/optimized/X86VZeroUpper.cpp.ll
-; luau/optimized/Parser.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/rimls.cpp.ll
@@ -770,8 +761,6 @@ entry:
 ; opencv/optimized/perspective_transform.cpp.ll
 ; opencv/optimized/tr_chars_benchmark.cpp.ll
 ; postgres/optimized/sync.ll
-; spike/optimized/csrs.ll
-; spike/optimized/sim.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; velox/optimized/MallocAllocator.cpp.ll
 ; velox/optimized/MmapAllocator.cpp.ll
@@ -781,25 +770,52 @@ entry:
 ; yosys/optimized/memlib.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 5
   %6 = and i64 %5, 4294967295
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp samesign ult i64 %0, %6
   ret i1 %7
 }
 
 ; 22 occurrences:
+; assimp/optimized/clipper.cpp.ll
+; hermes/optimized/Executor.cpp.ll
+; llvm/optimized/AbstractCallSite.cpp.ll
+; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/BranchRelaxation.cpp.ll
+; llvm/optimized/BugReporterVisitors.cpp.ll
+; llvm/optimized/CGClass.cpp.ll
+; llvm/optimized/CodeGenSchedule.cpp.ll
+; llvm/optimized/InlineCost.cpp.ll
+; llvm/optimized/MachineScheduler.cpp.ll
+; llvm/optimized/MachineVerifier.cpp.ll
+; llvm/optimized/RegionStore.cpp.ll
+; llvm/optimized/SemaInit.cpp.ll
+; llvm/optimized/StackSafetyAnalysis.cpp.ll
+; llvm/optimized/X86VZeroUpper.cpp.ll
+; luau/optimized/Parser.cpp.ll
+; meshlab/optimized/rimls.cpp.ll
+; minetest/optimized/CGUITTFont.cpp.ll
+; minetest/optimized/COpenGLDriver.cpp.ll
+; minetest/optimized/pipeline.cpp.ll
+; spike/optimized/csrs.ll
+; spike/optimized/sim.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = lshr exact i64 %4, 3
+  %6 = and i64 %5, 4294967295
+  %7 = icmp ult i64 %0, %6
+  ret i1 %7
+}
+
+; 13 occurrences:
 ; cvc5/optimized/tangent_plane_check.cpp.ll
-; hermes/optimized/Callable.cpp.ll
-; hermes/optimized/Function.cpp.ll
-; hermes/optimized/HermesBuiltin.cpp.ll
-; hermes/optimized/Interpreter.cpp.ll
-; hermes/optimized/JSCallableProxy.cpp.ll
-; hermes/optimized/RegExp.cpp.ll
-; hermes/optimized/hermes.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/Attributor.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -812,16 +828,14 @@ entry:
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/pipeline.cpp.ll
 ; openusd/optimized/collisionGroup.cpp.ll
-; velox/optimized/LeadLag.cpp.ll
-; wasmedge/optimized/refInstr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = and i64 %5, 4294967295
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp ugt i64 %0, %6
   ret i1 %7
 }
 
@@ -832,29 +846,49 @@ entry:
 ; meshlab/optimized/meshio.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000039(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = and i64 %5, 4294967295
-  %7 = icmp ule i64 %6, %0
+  %7 = icmp samesign uge i64 %0, %6
   ret i1 %7
 }
 
-; 4 occurrences:
-; llvm/optimized/SemaOverload.cpp.ll
+; 3 occurrences:
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/reshape_layer.cpp.ll
 ; openjdk/optimized/ifnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 4
   %6 = and i64 %5, 4294967295
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp samesign ult i64 %0, %6
+  ret i1 %7
+}
+
+; 9 occurrences:
+; hermes/optimized/Callable.cpp.ll
+; hermes/optimized/Function.cpp.ll
+; hermes/optimized/HermesBuiltin.cpp.ll
+; hermes/optimized/Interpreter.cpp.ll
+; hermes/optimized/JSCallableProxy.cpp.ll
+; hermes/optimized/RegExp.cpp.ll
+; hermes/optimized/hermes.cpp.ll
+; velox/optimized/LeadLag.cpp.ll
+; wasmedge/optimized/refInstr.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = lshr exact i64 %4, 4
+  %6 = and i64 %5, 4294967295
+  %7 = icmp samesign ugt i64 %0, %6
   ret i1 %7
 }
 
@@ -869,13 +903,13 @@ entry:
 ; icu/optimized/ucnvhz.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 5
   %6 = and i64 %5, 2147483647
-  %7 = icmp sgt i64 %6, %0
+  %7 = icmp slt i64 %0, %6
   ret i1 %7
 }
 
@@ -897,13 +931,13 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 4
   %6 = and i64 %5, 4294967295
-  %7 = icmp ne i64 %6, %0
+  %7 = icmp ne i64 %0, %6
   ret i1 %7
 }
 
@@ -917,20 +951,33 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 3
   %6 = and i64 %5, 4294967295
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp ugt i64 %0, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
+; llvm/optimized/SemaOverload.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = lshr i64 %4, 3
+  %6 = and i64 %5, 4294967295
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub nuw i64 %3, %1
   %5 = lshr exact i64 %4, 4
   %6 = and i64 %5, 4294967295
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp ugt i64 %0, %6
   ret i1 %7
 }
 
@@ -943,20 +990,20 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 2
   %6 = and i64 %5, 2147483647
-  %7 = icmp ne i64 %6, %0
+  %7 = icmp ne i64 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; faiss/optimized/IndexReplicas.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 4
   %6 = and i64 %5, 2147483647
-  %7 = icmp slt i64 %6, %0
+  %7 = icmp sgt i64 %0, %6
   ret i1 %7
 }
 

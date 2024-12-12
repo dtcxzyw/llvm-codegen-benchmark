@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000085(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = udiv i32 %0, %1
@@ -21,11 +21,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
-; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = udiv i32 %0, %1

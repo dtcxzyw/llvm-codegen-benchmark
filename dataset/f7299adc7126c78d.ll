@@ -52,15 +52,14 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; clamav/optimized/mew.c.ll
-; llvm/optimized/CoverageMapping.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 9
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -69,27 +68,33 @@ entry:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
 
-; 12 occurrences:
+; 1 occurrences:
+; llvm/optimized/CoverageMapping.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003e(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 6 occurrences:
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/webp_enc.c.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/matching.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/emd.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(i64 %0, ptr %1, i64 %2) #0 {
@@ -97,6 +102,23 @@ entry:
   %3 = shl nsw i64 %2, 5
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 6 occurrences:
+; g2o/optimized/vertex_ellipse.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 3
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

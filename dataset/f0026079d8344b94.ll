@@ -1,8 +1,8 @@
 
-%struct._zval_struct.2678944 = type { %union._zend_value.2678952, %union.anon.0.2678953, %union.anon.3.2678954 }
-%union._zend_value.2678952 = type { i64 }
-%union.anon.0.2678953 = type { i32 }
-%union.anon.3.2678954 = type { i32 }
+%struct._zval_struct.2791858 = type { %union._zend_value.2791866, %union.anon.0.2791867, %union.anon.3.2791868 }
+%union._zend_value.2791866 = type { i64 }
+%union.anon.0.2791867 = type { i32 }
+%union.anon.3.2791868 = type { i32 }
 
 ; 6 occurrences:
 ; cmake/optimized/archive_write_set_format_ar.c.ll
@@ -53,8 +53,7 @@ entry:
   ret ptr %5
 }
 
-; 9 occurrences:
-; arrow/optimized/decimal.cc.ll
+; 8 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; luajit/optimized/minilua.ll
@@ -113,8 +112,9 @@ entry:
   ret ptr %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; clamav/optimized/petite.c.ll
+; clamav/optimized/qtmd.c.ll
 ; clamav/optimized/upack.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; hdf5/optimized/H5Zshuffle.c.ll
@@ -133,7 +133,7 @@ entry:
   %2 = add i32 %1, 5
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %struct._zval_struct.2678944, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct._zval_struct.2791858, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -150,16 +150,15 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; clamav/optimized/qtmd.c.ll
+; 1 occurrences:
 ; cpython/optimized/sre.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 1
+  %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %5 = getelementptr i16, ptr %0, i64 %4
   ret ptr %5
 }
 

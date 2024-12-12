@@ -104,6 +104,16 @@ func0000000000000051:                   # @func0000000000000051
 	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
+func000000000000005f:                   # @func000000000000005f
+	slli	a3, a1, 2
+	slli	a1, a1, 6
+	sub	a1, a1, a3
+	lui	a3, 1
+	addiw	a3, a3, -496
+	mul	a2, a2, a3
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
 func00000000000000e0:                   # @func00000000000000e0
 	lui	a3, 423516
 	addiw	a3, a3, 1939

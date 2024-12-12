@@ -231,51 +231,63 @@ func0000000000000050:                   # @func0000000000000050
 .LCPI22_0:
 	.long	0x4f000000                      # float 2.14748365E+9
 .LCPI22_1:
-	.long	0xcf000000                      # float -2.14748365E+9
-func00000000000001a6:                   # @func00000000000001a6
+	.long	0x7f800000                      # float +Inf
+func0000000000000192:                   # @func0000000000000192
 	vmovss	.LCPI22_0(%rip), %xmm1          # xmm1 = [2.14748365E+9,0.0E+0,0.0E+0,0.0E+0]
-	vcmpnltps	%xmm1, %xmm0, %k0
-	vmovss	.LCPI22_1(%rip), %xmm1          # xmm1 = [-2.14748365E+9,0.0E+0,0.0E+0,0.0E+0]
-	vcmpnleps	%xmm0, %xmm1, %k1
+	vcmpleps	%xmm0, %xmm1, %k0
+	vmovss	.LCPI22_1(%rip), %xmm1          # xmm1 = [+Inf,0.0E+0,0.0E+0,0.0E+0]
+	vcmpeq_uqps	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 .LCPI23_0:
+	.long	0x4f000000                      # float 2.14748365E+9
+.LCPI23_1:
+	.long	0xcf000000                      # float -2.14748365E+9
+func00000000000001a6:                   # @func00000000000001a6
+	vmovss	.LCPI23_0(%rip), %xmm1          # xmm1 = [2.14748365E+9,0.0E+0,0.0E+0,0.0E+0]
+	vcmpnltps	%xmm1, %xmm0, %k0
+	vmovss	.LCPI23_1(%rip), %xmm1          # xmm1 = [-2.14748365E+9,0.0E+0,0.0E+0,0.0E+0]
+	vcmpnleps	%xmm0, %xmm1, %k1
+	korw	%k0, %k1, %k0
+	kmovd	%k0, %eax
+	retq
+.LCPI24_0:
 	.long	0x00800000                      # float 1.17549435E-38
 func0000000000000102:                   # @func0000000000000102
-	vmovss	.LCPI23_0(%rip), %xmm1          # xmm1 = [1.17549435E-38,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI24_0(%rip), %xmm1          # xmm1 = [1.17549435E-38,0.0E+0,0.0E+0,0.0E+0]
 	vcmpeqps	%xmm1, %xmm0, %k0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpunordps	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
-.LCPI24_0:
+.LCPI25_0:
 	.long	0x447a0000                      # float 1000
-.LCPI24_1:
+.LCPI25_1:
 	.long	0x3f800000                      # float 1
 func0000000000000146:                   # @func0000000000000146
-	vmovss	.LCPI24_0(%rip), %xmm1          # xmm1 = [1.0E+3,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI25_0(%rip), %xmm1          # xmm1 = [1.0E+3,0.0E+0,0.0E+0,0.0E+0]
 	vcmpleps	%xmm1, %xmm0, %k0
-	vmovss	.LCPI24_1(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI25_1(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vcmpnleps	%xmm0, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
-.LCPI25_0:
+.LCPI26_0:
 	.long	0x7f7fffff                      # float 3.40282347E+38
 func0000000000000058:                   # @func0000000000000058
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpltps	%xmm1, %xmm0, %k0
-	vmovss	.LCPI25_0(%rip), %xmm1          # xmm1 = [3.40282347E+38,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI26_0(%rip), %xmm1          # xmm1 = [3.40282347E+38,0.0E+0,0.0E+0,0.0E+0]
 	vcmpleps	%xmm0, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
-.LCPI26_0:
+.LCPI27_0:
 	.long	0x3f800000                      # float 1
 func0000000000000042:                   # @func0000000000000042
-	vmovss	.LCPI26_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI27_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vcmpltps	%xmm1, %xmm0, %k0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpunordps	%xmm1, %xmm0, %k1

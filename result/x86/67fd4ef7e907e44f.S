@@ -1,11 +1,11 @@
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000194:                   # @func0000000000000194
 	shlq	$8, %rdx
 	orq	%rsi, %rdi
 	orq	%rdx, %rdi
 	cmpq	$8, %rdi
 	setb	%al
 	retq
-func00000000000000fc:                   # @func00000000000000fc
+func00000000000001ec:                   # @func00000000000001ec
 	shlq	$8, %rdx
 	orq	%rsi, %rdi
 	orq	%rdx, %rdi
@@ -13,25 +13,33 @@ func00000000000000fc:                   # @func00000000000000fc
 	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	shlq	$16, %rdx
 	orq	%rsi, %rdx
 	orq	%rdi, %rdx
 	sete	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	shlq	$16, %rdx
 	orq	%rsi, %rdi
 	orq	%rdx, %rdi
 	cmpq	$2, %rdi
 	setb	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	leaq	(%rsi,%rdx,2), %rax
 	orq	%rdi, %rax
 	setne	%al
 	retq
-func00000000000000b4:                   # @func00000000000000b4
+func00000000000001e4:                   # @func00000000000001e4
+	shlq	$8, %rdx
+	orq	%rsi, %rdi
+	orq	%rdx, %rdi
+	movabsq	$-9223372036854775801, %rax     # imm = 0x8000000000000007
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
+func0000000000000164:                   # @func0000000000000164
 	shlq	$32, %rdx
 	orq	%rsi, %rdi
 	orq	%rdx, %rdi
@@ -39,7 +47,23 @@ func00000000000000b4:                   # @func00000000000000b4
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001e6:                   # @func00000000000001e6
+	shlq	$8, %rdx
+	orq	%rsi, %rdi
+	orq	%rdx, %rdi
+	movabsq	$-9223372036854775801, %rax     # imm = 0x8000000000000007
+	cmpq	%rax, %rdi
+	setl	%al
+	retq
+func0000000000000166:                   # @func0000000000000166
+	shlq	$16, %rdx
+	orq	%rsi, %rdi
+	orq	%rdx, %rdi
+	movabsq	$-9223372036854775801, %rax     # imm = 0x8000000000000007
+	cmpq	%rax, %rdi
+	setl	%al
+	retq
+func00000000000001f8:                   # @func00000000000001f8
 	shlq	$16, %rdx
 	orq	%rsi, %rdi
 	orq	%rdx, %rdi
@@ -52,15 +76,34 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rdi, %rdx
 	sete	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
 	orq	%rdi, %rdx
 	sete	%al
 	retq
-func00000000000000bc:                   # @func00000000000000bc
+func00000000000001ea:                   # @func00000000000001ea
+	shlq	$16, %rdx
+	orq	%rsi, %rdi
+	orq	%rdx, %rdi
+	setg	%al
+	retq
+func0000000000000061:                   # @func0000000000000061
+	shlq	$32, %rdx
+	orq	%rsi, %rdi
+	orq	%rdx, %rdi
+	cmpq	$-1, %rdi
+	sete	%al
+	retq
+func000000000000016c:                   # @func000000000000016c
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
 	orq	%rdi, %rdx
 	setne	%al
+	retq
+func00000000000001f1:                   # @func00000000000001f1
+	shlq	$16, %rdx
+	orq	%rsi, %rdx
+	orq	%rdi, %rdx
+	sete	%al
 	retq

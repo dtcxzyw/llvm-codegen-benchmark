@@ -1,4 +1,4 @@
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000000ff:                   # @func00000000000000ff
 	slli.uw	a2, a2, 1
 	sh1add	a2, a2, a2
 	add	a0, a0, a1

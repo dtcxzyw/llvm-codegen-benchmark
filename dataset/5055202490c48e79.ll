@@ -33,11 +33,12 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/aigJust.c.ll
 ; icu/optimized/umutablecptrie.ll
 ; linux/optimized/drbg.ll
 ; openblas/optimized/dlaror.c.ll
+; opencv/optimized/hough.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/php_pcre.ll
 ; postgres/optimized/md.ll

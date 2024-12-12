@@ -50,7 +50,7 @@ entry:
   ret i64 %5
 }
 
-; 45 occurrences:
+; 44 occurrences:
 ; cpython/optimized/dtoa.ll
 ; hermes/optimized/HiddenClass.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
@@ -73,7 +73,6 @@ entry:
 ; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
-; llvm/optimized/SplitModule.cpp.ll
 ; llvm/optimized/TextDiagnostic.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/X86WinCOFFTargetStreamer.cpp.ll
@@ -230,7 +229,7 @@ entry:
   %2 = add i32 %1, 32767
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 49
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -269,7 +268,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 1
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

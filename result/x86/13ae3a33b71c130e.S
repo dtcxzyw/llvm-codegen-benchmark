@@ -13,3 +13,8 @@ func0000000000000016:                   # @func0000000000000016
 	bzhil	%edx, %esi, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	addl	$2147483632, %esi               # imm = 0x7FFFFFF0
+	bzhil	%edx, %esi, %eax
+	addl	%edi, %eax
+	retq

@@ -1,21 +1,9 @@
 
-; 1 occurrences:
-; yoga/optimized/Node.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i8 %0, i8 %1) #0 {
-entry:
-  %2 = icmp eq i8 %1, 2
-  %3 = select i1 %2, i64 0, i64 2
-  %4 = icmp ult i8 %0, 2
-  %5 = select i1 %4, i64 3, i64 %3
-  ret i64 %5
-}
-
 ; 2 occurrences:
 ; linux/optimized/atkbd.ll
 ; linux/optimized/host.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i64 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i64 2077, i64 2076
@@ -27,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/varlena.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000041(i8 %0, i8 %1) #0 {
+define i64 @func0000000000000081(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, -95
   %3 = select i1 %2, i64 4, i64 1
@@ -39,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/Int128_t.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000044(i8 %0, i8 %1) #0 {
+define i64 @func0000000000000084(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 6
   %3 = select i1 %2, i64 -87, i64 -55

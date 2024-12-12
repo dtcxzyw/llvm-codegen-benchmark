@@ -1,5 +1,5 @@
 
-; 383 occurrences:
+; 376 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -41,7 +41,6 @@
 ; abc/optimized/abcNtbdd.c.ll
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcOrchestration.c.ll
-; abc/optimized/abcOrder.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/abcQbf.c.ll
@@ -86,7 +85,6 @@
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/acecRe.c.ll
-; abc/optimized/acecSt.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/aigDfs.c.ll
@@ -142,7 +140,6 @@
 ; abc/optimized/cecSynth.c.ll
 ; abc/optimized/cgtAig.c.ll
 ; abc/optimized/cgtDecide.c.ll
-; abc/optimized/cgtMan.c.ll
 ; abc/optimized/cmdPlugin.c.ll
 ; abc/optimized/cnfFast.c.ll
 ; abc/optimized/cnfMan.c.ll
@@ -253,7 +250,6 @@
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifReduce.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTest.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/ifUtil.c.ll
@@ -288,7 +284,6 @@
 ; abc/optimized/llb4Sweep.c.ll
 ; abc/optimized/lpkCore.c.ll
 ; abc/optimized/ltl_parser.c.ll
-; abc/optimized/mapperVec.c.ll
 ; abc/optimized/mfsDiv.c.ll
 ; abc/optimized/mioSop.c.ll
 ; abc/optimized/mioUtils.c.ll
@@ -298,7 +293,6 @@
 ; abc/optimized/mpmGates.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/msatVec.c.ll
-; abc/optimized/nmApi.c.ll
 ; abc/optimized/nwkAig.c.ll
 ; abc/optimized/nwkFlow.c.ll
 ; abc/optimized/nwkMap.c.ll
@@ -353,7 +347,6 @@
 ; abc/optimized/solver_api.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/sscSat.c.ll
-; abc/optimized/sscUtil.c.ll
 ; abc/optimized/sswIslands.c.ll
 ; abc/optimized/sswPairs.c.ll
 ; abc/optimized/sswRarity.c.ll
@@ -384,7 +377,7 @@
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0) #0 {
+define i1 @func0000000000000081(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
   ret i1 %1
@@ -417,17 +410,17 @@ entry:
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaMini.c.ll
+; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/ifCache.c.ll
 ; abc/optimized/ivyDfs.c.ll
 ; abc/optimized/mpmDsd.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/wlcReadVer.c.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0) #0 {
+define i1 @func0000000000000481(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
   ret i1 %1
@@ -447,7 +440,7 @@ entry:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/wlcStdin.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0) #0 {
+define i1 @func000000000000008c(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 0
   ret i1 %1
@@ -456,7 +449,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/saigTrans.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0) #0 {
+define i1 @func000000000000008a(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, 0
   ret i1 %1
@@ -468,7 +461,7 @@ entry:
 ; graphviz/optimized/sfprint.c.ll
 ; nuttx/optimized/lib_libvscanf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0) #0 {
+define i1 @func0000000000000086(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 1
   ret i1 %1
@@ -477,7 +470,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0) #0 {
+define i1 @func000000000000048c(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 0
   ret i1 %1
@@ -486,7 +479,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/namei.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i32 %0) #0 {
+define i1 @func0000000000000498(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 2
   ret i1 %1
@@ -498,7 +491,7 @@ entry:
 ; casadi/optimized/sundials_sptfqmr.c.ll
 ; graphviz/optimized/sfprint.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0) #0 {
+define i1 @func0000000000000094(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -65
   %2 = icmp ult i32 %1, -33

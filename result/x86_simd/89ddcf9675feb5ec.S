@@ -33,7 +33,7 @@
 	.byte	128                             # 0x80
 func0000000000000000:                   # @func0000000000000000
 	vpsrlq	$8, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0    # ymm0 = ymm0[2],zero,zero,zero,ymm0[6],zero,zero,zero,ymm0[10],zero,zero,zero,ymm0[14],zero,zero,zero,ymm0[18],zero,zero,zero,ymm0[22],zero,zero,zero,ymm0[26],zero,zero,zero,ymm0[30],zero,zero,zero
 	retq
 .LCPI1_0:
@@ -80,7 +80,7 @@ func0000000000000000:                   # @func0000000000000000
 	.byte	0                               # 0x0
 func0000000000000006:                   # @func0000000000000006
 	vpsrlq	$44, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$20, %ymm0, %ymm0
 	vpandq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
 	retq

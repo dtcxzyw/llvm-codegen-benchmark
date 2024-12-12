@@ -1,4 +1,4 @@
-func0000000000000069:                   # @func0000000000000069
+func00000000000000e9:                   # @func00000000000000e9
 	movl	%edi, %eax
 	incl	%eax
 	xorl	%ecx, %ecx

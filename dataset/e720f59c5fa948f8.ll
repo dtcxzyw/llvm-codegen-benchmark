@@ -1,6 +1,5 @@
 
-; 18 occurrences:
-; darktable/optimized/introspection_invert.c.ll
+; 17 occurrences:
 ; folly/optimized/Barrier.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/Core.cpp.ll

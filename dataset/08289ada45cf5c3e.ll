@@ -24,6 +24,7 @@
 ; luajit/optimized/lj_dispatch_dyn.ll
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
+; lvgl/optimized/lv_scale.ll
 ; mitsuba3/optimized/rgb2spec.c.ll
 ; openblas/optimized/dlaorhr_col_getrfnp2.c.ll
 ; opencv/optimized/attr_value.pb.cc.ll
@@ -88,7 +89,6 @@
 ; wireshark/optimized/packet-zebra.c.ll
 ; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
 ; wireshark/optimized/wimax_compact_ulmap_ie_decoder.c.ll
-; wolfssl/optimized/sp_int.c.ll
 ; xgboost/optimized/charconv.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
@@ -147,11 +147,12 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/src.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; bullet3/optimized/btMiniSDF.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -13,11 +13,12 @@
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; openusd/optimized/quatf.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, %1
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   %4 = fpext float %3 to double
   ret double %4
 }

@@ -4,11 +4,6 @@ func0000000000000008:                   # @func0000000000000008
 	setb	%al
 	orb	%dil, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
-	decl	%esi
-	sets	%al
-	orb	%dil, %al
-	retq
 func0000000000000018:                   # @func0000000000000018
 	cmpl	$60, %esi
 	setne	%al
@@ -25,12 +20,12 @@ func0000000000000010:                   # @func0000000000000010
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	cmpl	$5, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	addl	$-10, %esi
 	cmpl	$-7, %esi
 	setb	%al

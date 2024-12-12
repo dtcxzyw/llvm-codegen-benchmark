@@ -1,5 +1,5 @@
 
-; 303 occurrences:
+; 301 occurrences:
 ; abc/optimized/abcAttach.c.ll
 ; abc/optimized/bdcDec.c.ll
 ; abc/optimized/cnfCut.c.ll
@@ -63,11 +63,9 @@
 ; linux/optimized/esp6.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/hda_controller.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/hdac_stream.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/hwregs.ll
@@ -91,9 +89,6 @@
 ; linux/optimized/move_extent.ll
 ; linux/optimized/mpage.ll
 ; linux/optimized/ndisc.ll
-; linux/optimized/net-traces.ll
-; linux/optimized/nf_conntrack_proto.ll
-; linux/optimized/nf_defrag_ipv4.ll
 ; linux/optimized/nf_log_syslog.ll
 ; linux/optimized/nf_queue.ll
 ; linux/optimized/nfnetlink_log.ll
@@ -122,7 +117,6 @@
 ; linux/optimized/tg3.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/udp.ll
-; linux/optimized/xfrm6_output.ll
 ; linux/optimized/xfrm_output.ll
 ; linux/optimized/xfrm_policy.ll
 ; linux/optimized/xhci.ll
@@ -154,8 +148,9 @@
 ; luau/optimized/lgcdebug.cpp.ll
 ; luau/optimized/ltable.cpp.ll
 ; luau/optimized/ltablib.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_style.ll
 ; mitsuba3/optimized/func.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/multijitter.cpp.ll
 ; mitsuba3/optimized/orthogonal.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
@@ -269,7 +264,6 @@
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_usb_core.c.ll
-; qemu/optimized/pci-pc.c.ll
 ; qemu/optimized/system_memory.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -295,6 +289,10 @@
 ; wireshark/optimized/packet-packetbb.c.ll
 ; wireshark/optimized/packet-xip.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/entropy_common.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -311,7 +309,7 @@ entry:
   ret i32 %2
 }
 
-; 48 occurrences:
+; 45 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/explode.c.ll
@@ -326,13 +324,11 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; mitsuba3/optimized/func.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
 ; openvdb/optimized/Diagnostics.cc.ll
@@ -358,7 +354,6 @@ entry:
 ; rocksdb/optimized/block.cc.ll
 ; rocksdb/optimized/block_based_table_iterator.cc.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
-; wireshark/optimized/msg_ucd.c.ll
 ; wireshark/optimized/packet-evs.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i8 %0) #0 {
@@ -368,9 +363,8 @@ entry:
   ret i32 %2
 }
 
-; 95 occurrences:
+; 94 occurrences:
 ; clamav/optimized/Ppmd7Dec.c.ll
-; clamav/optimized/Xz.c.ll
 ; clamav/optimized/gif.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
@@ -411,7 +405,6 @@ entry:
 ; linux/optimized/mlme.ll
 ; linux/optimized/virtio_pci_modern_dev.ll
 ; linux/optimized/xt_conntrack.ll
-; linux/optimized/xt_state.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; node/optimized/libnode.traced_value.ll
@@ -462,6 +455,7 @@ entry:
 ; wireshark/optimized/packet-redbackli.c.ll
 ; wireshark/optimized/packet-smc.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; Function Attrs: nounwind
@@ -472,7 +466,7 @@ entry:
   ret i32 %2
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -480,7 +474,6 @@ entry:
 ; libquic/optimized/a_bitstr.c.ll
 ; linux/optimized/virtio_pci_modern_dev.ll
 ; linux/optimized/yenta_socket.ll
-; llvm/optimized/RISCVTargetParser.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -504,7 +497,7 @@ entry:
   ret i32 %2
 }
 
-; 56 occurrences:
+; 59 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -544,6 +537,7 @@ entry:
 ; luau/optimized/lgc.cpp.ll
 ; luau/optimized/ltable.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_canvas.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
@@ -561,6 +555,8 @@ entry:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i8 %0) #0 {
 entry:
@@ -569,7 +565,7 @@ entry:
   ret i32 %2
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/unsp.c.ll
@@ -578,7 +574,6 @@ entry:
 ; linux/optimized/8250_early.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/drm_dp_helper.ll
-; linux/optimized/gen_estimator.ll
 ; linux/optimized/intel_reset.ll
 ; linux/optimized/lifebook.ll
 ; linux/optimized/mballoc.ll
@@ -606,7 +601,7 @@ entry:
   ret i32 %2
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; abc/optimized/inffast.c.ll
 ; cmake/optimized/inffast.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
@@ -620,6 +615,8 @@ entry:
 ; linux/optimized/hygon.ll
 ; linux/optimized/inffast.ll
 ; linux/optimized/processor_throttling.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; miniaudio/optimized/unity.c.ll
 ; proxygen/optimized/Huffman.cpp.ll
 ; raylib/optimized/raudio.c.ll

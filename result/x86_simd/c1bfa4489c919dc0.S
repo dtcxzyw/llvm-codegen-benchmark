@@ -19,14 +19,3 @@ func000000000000000b:                   # @func000000000000000b
 	vpsubd	%ymm2, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI1_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
-.LCPI2_0:
-	.long	8192                            # 0x2000
-.LCPI2_1:
-	.long	32768                           # 0x8000
-func0000000000000021:                   # @func0000000000000021
-	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm2, %k0
-	vpmovm2d	%k0, %ymm2
-	vpsrld	$31, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm0
-	vpternlogd	$248, .LCPI2_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
-	retq

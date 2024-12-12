@@ -14,8 +14,24 @@ func0000000000000002:                   # @func0000000000000002
 	or	a1, a1, a2
 	and	a0, a0, a1
 	ret
+func0000000000000009:                   # @func0000000000000009
+	fli.d	fa5, inf
+	flt.d	a2, fa0, fa5
+	flt.d	a3, fa5, fa0
+	or	a2, a2, a3
+	xori	a2, a2, 1
+	or	a1, a1, a2
+	and	a0, a0, a1
+	ret
 func0000000000000001:                   # @func0000000000000001
 	feq.d	a2, fa0, fa0
+	xori	a2, a2, 1
+	or	a1, a1, a2
+	and	a0, a0, a1
+	ret
+func000000000000000d:                   # @func000000000000000d
+	fmv.d.x	fa5, zero
+	flt.d	a2, fa0, fa5
 	xori	a2, a2, 1
 	or	a1, a1, a2
 	and	a0, a0, a1

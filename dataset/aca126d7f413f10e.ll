@@ -19,7 +19,7 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; duckdb/optimized/ub_duckdb_planner_subquery.cpp.ll
 ; linux/optimized/i8042.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -30,6 +30,7 @@ entry:
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; z3/optimized/realclosure.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i8 %1) #0 {
 entry:

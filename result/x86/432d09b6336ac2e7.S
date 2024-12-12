@@ -1,9 +1,9 @@
 func0000000000000008:                   # @func0000000000000008
-	leal	(%rsi,%rdi), %eax
+	leal	(%rdi,%rsi), %eax
 	shlq	$32, %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	leal	(%rsi,%rdi), %eax
+	leal	(%rdi,%rsi), %eax
 	shlq	$32, %rax
 	retq
 func0000000000000005:                   # @func0000000000000005
@@ -31,10 +31,6 @@ func000000000000000d:                   # @func000000000000000d
 	movzwl	%si, %eax
 	addq	%rdi, %rax
 	shlq	$16, %rax
-	retq
-func0000000000000002:                   # @func0000000000000002
-	leal	(%rsi,%rdi), %eax
-	shlq	$32, %rax
 	retq
 func000000000000000e:                   # @func000000000000000e
 	movl	%esi, %eax

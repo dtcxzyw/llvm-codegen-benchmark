@@ -5,7 +5,7 @@
 ; openspiel/optimized/checkers.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, %0
   %3 = and i32 %2, 7
@@ -13,7 +13,7 @@ entry:
   ret i1 %4
 }
 
-; 110 occurrences:
+; 109 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -122,13 +122,12 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
-; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-capwap.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = and i32 %3, 31
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -137,12 +136,12 @@ entry:
 ; 1 occurrences:
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000b4(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 16960
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 65528
-  %5 = icmp ult i32 %4, 1000
+  %5 = icmp samesign ult i32 %4, 1000
   ret i1 %5
 }
 
@@ -177,7 +176,7 @@ entry:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; wireshark/optimized/packet-rtcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = add i32 %2, %0
@@ -190,7 +189,7 @@ entry:
 ; tinyrenderer/optimized/main.cpp.ll
 ; tinyrenderer/optimized/our_gl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %1, %0
   %3 = and i32 %2, 1
@@ -214,12 +213,12 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000b8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 5
   %3 = add i32 %2, %0
   %4 = and i32 %3, 7
-  %5 = icmp ugt i32 %4, 4
+  %5 = icmp samesign ugt i32 %4, 4
   ret i1 %5
 }
 
@@ -227,10 +226,10 @@ entry:
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/slamch.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, -2147483647
   %5 = icmp eq i32 %4, 1
   ret i1 %5
@@ -239,9 +238,9 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, %0
+  %2 = add i32 %0, %1
   %3 = and i32 %2, 3
   %4 = icmp eq i32 %3, 0
   ret i1 %4
@@ -250,12 +249,12 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_codecs_kr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001f4(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 223
   %3 = add nuw nsw i32 %2, %0
   %4 = and i32 %3, 254
-  %5 = icmp ult i32 %4, 78
+  %5 = icmp samesign ult i32 %4, 78
   ret i1 %5
 }
 

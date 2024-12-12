@@ -19,14 +19,14 @@ func0000000000000005:                   # @func0000000000000005
 	addl	%edi, %eax
 	cltq
 	retq
-func0000000000000020:                   # @func0000000000000020
+func0000000000000060:                   # @func0000000000000060
 	xorl	%eax, %eax
 	cmpl	$5, %edx
 	cmovael	%esi, %eax
 	addl	%edi, %eax
 	cltq
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	cmpl	$2, %edx
 	movl	$1, %eax
 	cmovael	%esi, %eax

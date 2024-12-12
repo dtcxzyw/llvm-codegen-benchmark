@@ -21,7 +21,8 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sh2add	a1, a1, a1
-	zext.w	a1, a1
+	slli	a1, a1, 33
+	srli	a1, a1, 32
 	mul	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000

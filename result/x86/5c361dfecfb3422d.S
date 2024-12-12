@@ -1,11 +1,11 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	imull	$-1030792151, %edi, %eax        # imm = 0xC28F5C29
 	addl	$85899420, %eax                 # imm = 0x51EB89C
 	rorxl	$4, %eax, %eax
 	cmpl	$10737419, %eax                 # imm = 0xA3D70B
 	setb	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	imull	$-1030792151, %edi, %eax        # imm = 0xC28F5C29
 	addl	$85899420, %eax                 # imm = 0x51EB89C
 	rorxl	$2, %eax, %eax
@@ -13,11 +13,11 @@ func000000000000001c:                   # @func000000000000001c
 	setae	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	incl	%edi
+	notl	%edi
 	testb	$127, %dil
 	sete	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	incl	%edi
 	movslq	%edi, %rax
 	imulq	$274877907, %rax, %rcx          # imm = 0x10624DD3
@@ -30,7 +30,7 @@ func000000000000001a:                   # @func000000000000001a
 	testl	%eax, %eax
 	setg	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	decl	%edi
 	movslq	%edi, %rax
 	imulq	$715827883, %rax, %rcx          # imm = 0x2AAAAAAB
@@ -45,18 +45,21 @@ func0000000000000016:                   # @func0000000000000016
 	setl	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
-	incl	%edi
-	movslq	%edi, %rax
-	imulq	$715827883, %rax, %rcx          # imm = 0x2AAAAAAB
-	movq	%rcx, %rdx
-	shrq	$63, %rdx
-	shrq	$32, %rcx
-	addl	%edx, %ecx
-	addl	%ecx, %ecx
-	leal	(%rcx,%rcx,2), %ecx
+	movl	%edi, %eax
+	addl	$700, %eax                      # imm = 0x2BC
+	cltq
+	imulq	$-1840700269, %rax, %rax        # imm = 0x92492493
+	shrq	$32, %rax
+	leal	700(%rax,%rdi), %eax
+	movl	%eax, %ecx
+	shrl	$31, %ecx
+	sarl	$2, %eax
+	addl	%ecx, %eax
+	leal	(,%rax,8), %ecx
 	subl	%ecx, %eax
-	testl	%eax, %eax
-	setle	%al
+	leal	700(%rdi,%rax), %eax
+	cmpl	$4, %eax
+	setl	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	addl	$4, %edi

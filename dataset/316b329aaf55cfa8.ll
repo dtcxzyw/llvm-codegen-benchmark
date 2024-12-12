@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; lvgl/optimized/lv_draw_sw_line.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll

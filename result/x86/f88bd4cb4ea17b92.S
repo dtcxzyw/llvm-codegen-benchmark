@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	leaq	(%rsi,%rsi,4), %rax
 	leaq	-48(%rdi,%rax,2), %rax
 	cmpq	$1025, %rax                     # imm = 0x401
@@ -9,19 +9,19 @@ func0000000000000006:                   # @func0000000000000006
 	leaq	24(%rdi,%rax), %rax
 	shrq	$63, %rax
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	leaq	(%rsi,%rsi,4), %rax
 	leaq	-48(%rdi,%rax,2), %rax
 	cmpq	$10, %rax
 	setb	%al
 	retq
-func0000000000000354:                   # @func0000000000000354
+func00000000000006a4:                   # @func00000000000006a4
 	leaq	(%rsi,%rsi,4), %rax
 	leaq	-48(%rdi,%rax,2), %rax
 	cmpq	$4, %rax
 	setb	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	leaq	(%rsi,%rsi,4), %rax
 	leaq	-48(%rdi,%rax,2), %rax
 	cmpq	$2147483647, %rax               # imm = 0x7FFFFFFF
@@ -33,13 +33,13 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$1033, %rax                     # imm = 0x409
 	setae	%al
 	retq
-func0000000000000158:                   # @func0000000000000158
+func00000000000002a8:                   # @func00000000000002a8
 	leaq	(%rsi,%rsi,2), %rax
 	leaq	15(%rdi,%rax), %rax
 	cmpq	$265, %rax                      # imm = 0x109
 	setae	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	addq	$-48, %rdi

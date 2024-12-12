@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; lief/optimized/psa_crypto_rsa.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000806(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001006(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -20,7 +20,7 @@ entry:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000f54(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001ea4(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000080c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000100c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000801(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001001(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a0a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000140a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = trunc nuw i64 %0 to i32

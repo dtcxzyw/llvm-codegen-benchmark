@@ -1,13 +1,13 @@
 .LCPI0_0:
 	.quad	4294967295                      # 0xffffffff
-func00000000000000fc:                   # @func00000000000000fc
+func00000000000001ec:                   # @func00000000000001ec
 	vpsllq	$24, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
 	vpcmpneqq	.LCPI0_0(%rip){1to4}, %ymm2, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vpsllq	$24, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
 	vptestnmq	%ymm2, %ymm2, %k0
@@ -16,7 +16,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	retq
 .LCPI2_0:
 	.quad	8191                            # 0x1fff
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	vpsllq	$24, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
 	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm2, %k0
@@ -32,17 +32,33 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI4_0:
 	.quad	8                               # 0x8
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	vpsllq	$24, %ymm0, %ymm0
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	vpcmpltuq	.LCPI4_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	vpsllq	$48, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
 	vptestnmq	%ymm2, %ymm2, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000016c:                   # @func000000000000016c
+	vpsllq	$16, %ymm2, %ymm2
+	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vptestmq	%ymm2, %ymm2, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.quad	-9223372036854775808            # 0x8000000000000000
+func00000000000001a1:                   # @func00000000000001a1
+	vpsllq	$32, %ymm0, %ymm0
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
+	vpcmpeqq	.LCPI7_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

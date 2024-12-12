@@ -10,10 +10,10 @@ func0000000000000003:                   # @func0000000000000003
 	bzhiq	%rax, %rdi, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	leal	(%rsi,%rdi), %eax
+	leal	(%rdi,%rsi), %eax
 	andl	$2097151, %eax                  # imm = 0x1FFFFF
 	retq
 func0000000000000002:                   # @func0000000000000002
-	leal	(%rsi,%rdi), %eax
+	leal	(%rdi,%rsi), %eax
 	andl	$1, %eax
 	retq

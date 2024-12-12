@@ -1,9 +1,11 @@
 
-; 280 occurrences:
+; 283 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/src.ll
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -110,6 +112,7 @@
 ; linux/optimized/vlv_dsi.ll
 ; luajit/optimized/lj_ccallback.ll
 ; luajit/optimized/lj_ccallback_dyn.ll
+; lvgl/optimized/lv_theme_default.ll
 ; lz4/optimized/lz4.c.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
@@ -310,7 +313,7 @@ entry:
   ret i32 %2
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/pfr.c.ll
 ; freetype/optimized/type1.c.ll
@@ -318,6 +321,7 @@ entry:
 ; linux/optimized/intel_llc.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/xhci.ll
+; lvgl/optimized/lv_anim.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; recastnavigation/optimized/CrowdTool.cpp.ll
 ; wireshark/optimized/packet-grpc.c.ll

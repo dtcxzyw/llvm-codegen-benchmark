@@ -43,7 +43,7 @@ entry:
   %4 = sdiv exact i64 %3, 48
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

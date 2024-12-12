@@ -14,11 +14,6 @@ func0000000000000037:                   # @func0000000000000037
 	leaq	(%rsi,%rsi,8), %rax
 	leaq	-1(%rdi,%rax,2), %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movl	$4294967284, %eax               # imm = 0xFFFFFFF4
-	imulq	%rsi, %rax
-	leaq	2(%rdi,%rax), %rax
-	retq
 func0000000000000010:                   # @func0000000000000010
 	leaq	(%rsi,%rsi,2), %rax
 	leaq	24(%rdi,%rax,8), %rax
@@ -26,6 +21,10 @@ func0000000000000010:                   # @func0000000000000010
 func0000000000000030:                   # @func0000000000000030
 	leaq	(%rsi,%rsi,2), %rax
 	leaq	24(%rdi,%rax,8), %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	imulq	$1000, %rsi, %rax               # imm = 0x3E8
+	leaq	-1000(%rdi,%rax), %rax
 	retq
 func000000000000003f:                   # @func000000000000003f
 	imulq	$56, %rsi, %rax
@@ -39,13 +38,13 @@ func0000000000000015:                   # @func0000000000000015
 	imulq	$1000, %rsi, %rax               # imm = 0x3E8
 	leaq	-53328(%rdi,%rax), %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	imulq	$-1000000000, %rdi, %rax        # imm = 0xC4653600
-	leaq	100000000(%rsi,%rax), %rax
-	retq
 func0000000000000034:                   # @func0000000000000034
 	imulq	$1000000, %rsi, %rax            # imm = 0xF4240
 	leaq	1000000(%rdi,%rax), %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	leaq	(%rsi,%rsi,2), %rax
+	leaq	12(%rdi,%rax,4), %rax
 	retq
 func0000000000000026:                   # @func0000000000000026
 	leaq	(%rsi,%rsi,2), %rax

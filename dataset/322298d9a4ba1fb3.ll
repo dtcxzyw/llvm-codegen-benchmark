@@ -39,10 +39,10 @@ entry:
 ; 1 occurrences:
 ; coreutils-rs/optimized/4akyoq84dmd3ywue.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0) #0 {
+define i1 @func0000000000000014(i8 %0) #0 {
 entry:
   %1 = urem i8 %0, 62
-  %2 = icmp ult i8 %1, 10
+  %2 = icmp samesign ult i8 %1, 10
   ret i1 %2
 }
 
@@ -62,10 +62,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0) #0 {
+define i1 @func0000000000000018(i8 %0) #0 {
 entry:
   %1 = urem i8 %0, 10
-  %2 = icmp ugt i8 %1, 1
+  %2 = icmp samesign ugt i8 %1, 1
   ret i1 %2
 }
 

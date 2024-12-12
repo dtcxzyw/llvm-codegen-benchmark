@@ -5,23 +5,11 @@
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nsw i32 %3, -1
   %5 = icmp slt i32 %1, 0
-  %6 = select i1 %5, i32 %0, i32 %4
-  ret i32 %6
-}
-
-; 1 occurrences:
-; softposit-rs/optimized/m1vpptg00bzmp9y.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 23
-  %4 = add nuw nsw i32 %3, 2
-  %5 = icmp ult i32 %1, 126
   %6 = select i1 %5, i32 %0, i32 %4
   ret i32 %6
 }
@@ -33,7 +21,7 @@ entry:
 ; hdf5/optimized/H5Gnode.c.ll
 ; hdf5/optimized/H5T.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nuw i32 %3, 1
@@ -48,7 +36,7 @@ entry:
 ; icu/optimized/package.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nuw nsw i32 %3, 1
@@ -62,7 +50,7 @@ entry:
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nuw i32 %3, 1
@@ -76,7 +64,7 @@ entry:
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nuw nsw i32 %3, 1

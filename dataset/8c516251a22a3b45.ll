@@ -1,5 +1,5 @@
 
-; 211 occurrences:
+; 208 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/sfmDec.c.ll
@@ -100,7 +100,6 @@
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/mesh_model_state.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
 ; opencv/optimized/fundamental_solver.cpp.ll
@@ -123,8 +122,6 @@
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_alloc.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll

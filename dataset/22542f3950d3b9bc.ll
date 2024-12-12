@@ -25,7 +25,7 @@
 ; velox/optimized/Filter.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000164(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000002c4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/schedule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000284(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/combinatorics.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
@@ -79,7 +79,7 @@ entry:
 ; casadi/optimized/integration_tools.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000174(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000002e4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3

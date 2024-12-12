@@ -7,19 +7,19 @@ define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 15
   %3 = add i64 %2, 32768
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
 ; 2 occurrences:
-; abc/optimized/giaNf.c.ll
 ; ruby/optimized/bignum.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 15
   %3 = add i64 %2, 32768
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -31,7 +31,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 15
   %3 = add i64 %2, -32768
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -42,13 +42,25 @@ define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 6
   %3 = add i64 %2, 64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 5 occurrences:
+; 1 occurrences:
+; abc/optimized/giaNf.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 1
+  %3 = add i64 %2, -2
+  %4 = or disjoint i64 %0, %3
+  ret i64 %4
+}
+
+; 6 occurrences:
 ; cpython/optimized/longobject.ll
 ; eastl/optimized/TestBitset.cpp.ll
+; openspiel/optimized/morpion_solitaire.cc.ll
 ; openspiel/optimized/twixtboard.cc.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
@@ -57,6 +69,19 @@ define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add i64 %2, -4294967296
+  %4 = or disjoint i64 %3, %0
+  ret i64 %4
+}
+
+; 3 occurrences:
+; cpython/optimized/marshal.ll
+; opencv/optimized/seam_finders.cpp.ll
+; openspiel/optimized/morpion_solitaire.cc.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 32
+  %3 = add i64 %2, 12884901888
   %4 = or disjoint i64 %3, %0
   ret i64 %4
 }
@@ -83,36 +108,6 @@ entry:
   ret i64 %4
 }
 
-; 20 occurrences:
-; cpython/optimized/marshal.ll
-; hyperscan/optimized/Utf8ComponentClass.cpp.ll
-; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
-; hyperscan/optimized/flood_compile.cpp.ll
-; hyperscan/optimized/goughcompile.cpp.ll
-; hyperscan/optimized/limex_compile.cpp.ll
-; hyperscan/optimized/ng_haig.cpp.ll
-; hyperscan/optimized/ng_limex_accel.cpp.ll
-; hyperscan/optimized/ng_literal_analysis.cpp.ll
-; hyperscan/optimized/ng_mcclellan.cpp.ll
-; hyperscan/optimized/ng_small_literal_set.cpp.ll
-; hyperscan/optimized/ng_som.cpp.ll
-; hyperscan/optimized/ng_stop.cpp.ll
-; hyperscan/optimized/rdfa_merge.cpp.ll
-; hyperscan/optimized/rose_build_add_mask.cpp.ll
-; hyperscan/optimized/rose_build_anchored.cpp.ll
-; hyperscan/optimized/shufticompile.cpp.ll
-; hyperscan/optimized/smallwrite_build.cpp.ll
-; hyperscan/optimized/trufflecompile.cpp.ll
-; opencv/optimized/seam_finders.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = add i64 %2, 4294967296
-  %4 = or disjoint i64 %3, %0
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; opencv/optimized/camera_calibration.cpp.ll
 ; Function Attrs: nounwind
@@ -131,7 +126,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 8
   %3 = add i64 %2, -256
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 78 occurrences:
+; 79 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/aigWin.c.ll
 ; abc/optimized/giaEdge.c.ll
@@ -43,6 +43,7 @@
 ; llvm/optimized/MachineSink.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll

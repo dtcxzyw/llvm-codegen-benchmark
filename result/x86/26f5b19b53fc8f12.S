@@ -1,25 +1,31 @@
-func0000000000000201:                   # @func0000000000000201
+func0000000000000601:                   # @func0000000000000601
 	incq	%rdx
 	notq	%rdx
 	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000218:                   # @func0000000000000218
+func0000000000000628:                   # @func0000000000000628
 	notq	%rdx
 	leaq	-99(%rdx,%rsi), %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
-func0000000000000208:                   # @func0000000000000208
+func0000000000000608:                   # @func0000000000000608
 	subq	%rdx, %rsi
 	addq	$-10, %rsi
-	cmpq	%rdi, %rsi
-	setb	%al
+	cmpq	%rsi, %rdi
+	seta	%al
 	retq
-func0000000000000211:                   # @func0000000000000211
+func0000000000000621:                   # @func0000000000000621
 	subq	%rdx, %rsi
 	addq	$-3, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
+	sete	%al
+	retq
+func0000000000000401:                   # @func0000000000000401
+	subq	%rdx, %rsi
+	addq	$21, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq

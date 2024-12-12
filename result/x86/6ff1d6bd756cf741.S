@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	0x3ee4f8b588e368f1              # double 1.0000000000000001E-5
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vucomisd	.LCPI0_0(%rip), %xmm0
 	setbe	%cl
 	testl	%edi, %edi
@@ -9,14 +9,14 @@ func0000000000000041:                   # @func0000000000000041
 	retq
 .LCPI1_0:
 	.quad	0x3ee4f8b588e368f1              # double 1.0000000000000001E-5
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vucomisd	.LCPI1_0(%rip), %xmm0
 	seta	%cl
 	testl	%edi, %edi
 	setns	%al
 	orb	%cl, %al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	setbe	%cl
@@ -24,7 +24,7 @@ func000000000000002a:                   # @func000000000000002a
 	setge	%al
 	andb	%cl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	setbe	%cl

@@ -30,6 +30,21 @@ entry:
   ret i32 %6
 }
 
+; 4 occurrences:
+; boost/optimized/gregorian.ll
+; cmake/optimized/archive_getdate.c.ll
+; cmake/optimized/cm_get_date.c.ll
+; cpython/optimized/_datetimemodule.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = sdiv i32 %3, -100
+  %5 = add i32 %0, %1
+  %6 = add i32 %5, %4
+  ret i32 %6
+}
+
 ; 3 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_zoneinfo.ll
@@ -41,20 +56,6 @@ entry:
   %4 = sdiv i32 %3, 400
   %5 = add nsw i32 %0, %1
   %6 = add nsw i32 %5, %4
-  ret i32 %6
-}
-
-; 3 occurrences:
-; cmake/optimized/archive_getdate.c.ll
-; cmake/optimized/cm_get_date.c.ll
-; cpython/optimized/_datetimemodule.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 1899
-  %4 = sdiv i32 %3, 100
-  %5 = add i32 %0, %1
-  %6 = add i32 %5, %4
   ret i32 %6
 }
 

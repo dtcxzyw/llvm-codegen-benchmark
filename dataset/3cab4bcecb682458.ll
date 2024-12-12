@@ -32,4 +32,16 @@ entry:
   ret i32 %4
 }
 
+; 2 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; llvm/optimized/FunctionAttrs.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i8 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i32 -1, i32 1
+  %3 = trunc nuw i8 %0 to i1
+  %4 = select i1 %3, i32 0, i32 %2
+  ret i32 %4
+}
+
 attributes #0 = { nounwind }

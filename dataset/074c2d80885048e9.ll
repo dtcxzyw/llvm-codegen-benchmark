@@ -55,4 +55,16 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; boost/optimized/message.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 16777215
+  %3 = xor i32 %0, %2
+  %4 = shl nuw i32 %3, 4
+  %5 = and i32 %4, 268435440
+  ret i32 %5
+}
+
 attributes #0 = { nounwind }

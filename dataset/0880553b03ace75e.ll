@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/DIEHash.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(ptr %0, i64 %1) #0 {
+define i1 @func00000000000001e1(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
@@ -41,10 +41,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/fair.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 128
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 128
   %4 = getelementptr i8, ptr %0, i64 -328
   %5 = icmp eq ptr %4, %3
   ret i1 %5
@@ -58,10 +58,10 @@ entry:
 ; luajit/optimized/lj_gc.ll
 ; luajit/optimized/lj_gc_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, i64 %1) #0 {
+define i1 @func00000000000001c8(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = getelementptr nusw i8, ptr %0, i64 -8
   %5 = icmp ugt ptr %4, %3
   ret i1 %5

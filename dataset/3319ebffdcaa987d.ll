@@ -1,8 +1,8 @@
 
-%struct.btSpatialForceVector.2705790 = type { %class.btVector3.2705784, %class.btVector3.2705784 }
-%class.btVector3.2705784 = type { [4 x float] }
+%struct.btSpatialForceVector.2818505 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
+%class.btVector3.2818499 = type { [4 x float] }
 
-; 23 occurrences:
+; 21 occurrences:
 ; arrow/optimized/array_binary.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_binary.cc.ll
@@ -20,9 +20,7 @@
 ; icu/optimized/smpdtfmt.ll
 ; icu/optimized/uconv.ll
 ; icu/optimized/uts46.ll
-; lightgbm/optimized/application.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
-; lightgbm/optimized/c_api.cpp.ll
 ; opencv/optimized/contours.cpp.ll
 ; openjdk/optimized/frame.ll
 ; openjdk/optimized/jfrEventClassTransformer.ll
@@ -44,7 +42,7 @@ define ptr @func0000000000000000(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %0, ptr %1, ptr null
-  %5 = getelementptr %struct.btSpatialForceVector.2705790, ptr %4, i64 %3
+  %5 = getelementptr %struct.btSpatialForceVector.2818505, ptr %4, i64 %3
   ret ptr %5
 }
 

@@ -24,7 +24,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = uitofp nneg i32 %3 to float
   %5 = fdiv float %4, %1
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 

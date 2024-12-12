@@ -1,11 +1,11 @@
 
 ; 8 occurrences:
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; opencv/optimized/distance.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; openjdk/optimized/cmspcs.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind

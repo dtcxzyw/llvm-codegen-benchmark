@@ -1,8 +1,9 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; folly/optimized/ElfCache.cpp.ll
 ; git/optimized/record.ll
 ; git/optimized/xmerge.ll

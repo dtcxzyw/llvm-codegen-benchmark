@@ -22,7 +22,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = sdiv i16 %1, 60
-  %3 = add nsw i16 %2, %0
+  %3 = add nsw i16 %0, %2
   ret i16 %3
 }
 

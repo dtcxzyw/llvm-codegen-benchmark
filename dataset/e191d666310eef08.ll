@@ -37,7 +37,7 @@
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = sext i32 %2 to i64
@@ -54,7 +54,7 @@ entry:
 ; opencv/optimized/graphsegmentation.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %0, %1
   %3 = sext i32 %2 to i64
@@ -97,7 +97,7 @@ entry:
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = sext i32 %2 to i64
@@ -112,7 +112,7 @@ entry:
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/seamless_cloning_impl.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %0, %1
   %3 = sext i32 %2 to i64

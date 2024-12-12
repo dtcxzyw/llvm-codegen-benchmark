@@ -10,7 +10,7 @@ entry:
   ret i32 %4
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
@@ -29,7 +29,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -96,6 +95,17 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; zstd/optimized/zstd_v07.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 7
+  %3 = and i32 %0, 7
+  %4 = shl nuw nsw i32 %3, %2
+  ret i32 %4
+}
+
 ; 7 occurrences:
 ; openexr/optimized/ImfTimeCode.cpp.ll
 ; zfp/optimized/decode1f.c.ll
@@ -108,6 +118,17 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
+  %3 = and i32 %0, 1
+  %4 = shl nuw i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; brotli/optimized/metablock.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw i32 %1, 1
   %3 = and i32 %0, 1
   %4 = shl nuw i32 %3, %2
   ret i32 %4

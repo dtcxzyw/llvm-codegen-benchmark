@@ -10,20 +10,16 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 3 occurrences:
 ; darktable/optimized/Rw2Decoder.cpp.ll
 ; libzmq/optimized/mtrie.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
   %2 = sub i16 %0, %1
   %3 = zext i16 %2 to i64
-  %4 = shl nuw nsw i64 %3, 16
+  %4 = shl nuw nsw i64 %3, 32
   ret i64 %4
 }
 

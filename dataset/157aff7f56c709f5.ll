@@ -15,7 +15,7 @@
 ; openssl/optimized/libcrypto-shlib-bio_dump.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = add nsw i32 %3, %0
@@ -28,7 +28,7 @@ entry:
 ; linux/optimized/maple_tree.ll
 ; openmpi/optimized/coll_base_allreduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = sub i32 0, %0
@@ -65,10 +65,10 @@ entry:
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj1.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = icmp slt i32 %4, 1
   ret i1 %5
 }
@@ -81,7 +81,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp slt i32 %4, 0
   ret i1 %5
 }
@@ -89,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/punycode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = add nsw i32 %3, %0

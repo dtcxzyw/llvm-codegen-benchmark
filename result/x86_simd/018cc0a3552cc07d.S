@@ -8,7 +8,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpsrld	$30, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpsrad	$2, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpshufd	$245, %ymm1, %ymm2              # ymm2 = ymm1[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI0_1(%rip), %ymm3   # ymm3 = [715827883,715827883,715827883,715827883,715827883,715827883,715827883,715827883]
 	vpmuldq	%ymm3, %ymm2, %ymm2

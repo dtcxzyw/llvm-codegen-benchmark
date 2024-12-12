@@ -1,28 +1,18 @@
-func0000000000000023:                   // @func0000000000000023
+func0000000000000043:                   // @func0000000000000043
 // %bb.0:                               // %entry
-	movi	v3.4s, #63
-	cmeq	v2.4s, v2.4s, v3.4s
-	cmeq	v1.4s, v1.4s, v3.4s
-	ushll	v3.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	bic	v1.16b, v1.16b, v2.16b
-	sshll	v2.2d, v1.2s, #0
-	sshll2	v1.2d, v1.4s, #0
-	bic	v1.16b, v0.16b, v1.16b
-	bic	v0.16b, v3.16b, v2.16b
+	cmp	w1, #63
+	mov	w8, #63                         // =0x3f
+	ccmp	w2, w8, #4, eq
+	mov	w8, w0
+	csel	x0, xzr, x8, ne
 	ret
                                         // -- End function
-func0000000000000022:                   // @func0000000000000022
+func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
-	movi	v3.4s, #63
-	cmeq	v2.4s, v2.4s, v3.4s
-	cmeq	v1.4s, v1.4s, v3.4s
-	ushll	v3.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	bic	v1.16b, v1.16b, v2.16b
-	sshll	v2.2d, v1.2s, #0
-	sshll2	v1.2d, v1.4s, #0
-	bic	v1.16b, v0.16b, v1.16b
-	bic	v0.16b, v3.16b, v2.16b
+	cmp	w1, #63
+	mov	w8, #63                         // =0x3f
+	ccmp	w2, w8, #4, eq
+	mov	w8, w0
+	csel	x0, xzr, x8, ne
 	ret
                                         // -- End function

@@ -16,7 +16,7 @@ entry:
 ; abc/optimized/giaStoch.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1) #0 {
 entry:
   %2 = shl nsw i32 %0, 2
   %3 = select i1 %1, i32 16, i32 %2
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1) #0 {
 entry:
   %2 = shl nsw i32 %0, 1
   %3 = select i1 %1, i32 1024, i32 %2

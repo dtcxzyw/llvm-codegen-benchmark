@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; clap-rs/optimized/4r6y4qxwk52m92uh.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; rayon-rs/optimized/3ae21t8w8o4gsmqo.ll
 ; wasmtime-rs/optimized/3swlmlzz83rbbf1u.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

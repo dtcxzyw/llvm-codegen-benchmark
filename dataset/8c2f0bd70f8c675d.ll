@@ -7,11 +7,11 @@
 ; openusd/optimized/patchTree.cpp.ll
 ; php/optimized/ir_ra.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = select i1 %0, i32 1, i32 2
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 

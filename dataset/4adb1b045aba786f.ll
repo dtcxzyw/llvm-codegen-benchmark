@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 71 occurrences:
 ; abc/optimized/giaEnable.c.ll
 ; c3c/optimized/bigint.c.ll
 ; cmake/optimized/archive_rb.c.ll
@@ -11,7 +11,6 @@
 ; git/optimized/ewah_bitmap.ll
 ; gromacs/optimized/multipletimestepping.cpp.ll
 ; linux/optimized/badblocks.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/memory.ll
@@ -39,8 +38,6 @@
 ; openusd/optimized/tbbKernel.cpp.ll
 ; postgres/optimized/oid.ll
 ; postgres/optimized/varlena.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; spike/optimized/beq.ll
 ; spike/optimized/bge.ll
@@ -68,8 +65,6 @@
 ; spike/optimized/hsv_w.ll
 ; spike/optimized/jal.ll
 ; spike/optimized/jalr.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/sclip16.ll
 ; spike/optimized/sclip32.ll
 ; spike/optimized/sclip8.ll

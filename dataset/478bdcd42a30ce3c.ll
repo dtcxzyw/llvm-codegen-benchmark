@@ -15,7 +15,7 @@ entry:
   %3 = and i32 %2, -13
   %4 = select i1 %1, i32 0, i32 4
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

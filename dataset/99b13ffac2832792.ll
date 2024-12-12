@@ -64,8 +64,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_colorin.c.ll
+; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:

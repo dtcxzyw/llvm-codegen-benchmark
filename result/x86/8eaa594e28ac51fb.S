@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	%esi, %eax
 	shrl	$31, %eax
 	addl	%esi, %eax
@@ -7,7 +7,7 @@ func0000000000000031:                   # @func0000000000000031
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	leal	63(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
@@ -16,7 +16,7 @@ func000000000000001a:                   # @func000000000000001a
 	cmpl	%eax, %edi
 	setg	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	movl	%esi, %eax
 	shrl	$31, %eax
 	addl	%esi, %eax
@@ -25,7 +25,7 @@ func0000000000000036:                   # @func0000000000000036
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movslq	%esi, %rax
 	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
 	movq	%rax, %rcx
@@ -36,7 +36,7 @@ func0000000000000016:                   # @func0000000000000016
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func000000000000003b:                   # @func000000000000003b
+func000000000000006b:                   # @func000000000000006b
 	leal	3(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
@@ -54,7 +54,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%esi, %eax
 	shrl	$31, %eax
 	addl	%esi, %eax
@@ -72,7 +72,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	movl	%esi, %eax
 	shrl	$31, %eax
 	addl	%esi, %eax

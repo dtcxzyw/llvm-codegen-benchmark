@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 88 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
@@ -7,6 +7,9 @@
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -94,8 +97,11 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 18 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libquic/optimized/p256-64.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -119,7 +125,7 @@ entry:
   ret i64 %4
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -136,6 +142,7 @@ entry:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/mpdecimal.ll
 ; grpc/optimized/fault_injection_filter.cc.ll
 ; libquic/optimized/p256-64.c.ll
@@ -179,6 +186,20 @@ entry:
   ret i64 %4
 }
 
+; 4 occurrences:
+; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/to_chars.ll
+; libquic/optimized/p256-64.c.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i128 %0, i128 %1) #0 {
+entry:
+  %2 = add nsw i128 %0, %1
+  %3 = lshr i128 %2, 64
+  %4 = trunc nuw i128 %3 to i64
+  ret i64 %4
+}
+
 ; 6 occurrences:
 ; libquic/optimized/poly1305_vec.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -192,19 +213,6 @@ entry:
   %2 = add i128 %0, %1
   %3 = lshr i128 %2, 42
   %4 = trunc i128 %3 to i64
-  ret i64 %4
-}
-
-; 3 occurrences:
-; abseil-cpp/optimized/int128_test.cc.ll
-; libquic/optimized/p256-64.c.ll
-; quickjs/optimized/libbf.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i128 %0, i128 %1) #0 {
-entry:
-  %2 = add nsw i128 %0, %1
-  %3 = lshr i128 %2, 64
-  %4 = trunc nuw i128 %3 to i64
   ret i64 %4
 }
 

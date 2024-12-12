@@ -1,59 +1,44 @@
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	movi	v3.8h, #127
-	movi	v4.4h, #127
-	shl	v1.4s, v1.4s, #7
-	shl	v0.4s, v0.4s, #7
-	umlal	v0.4s, v2.4h, v4.4h
-	umlal2	v1.4s, v2.8h, v3.8h
+	and	w8, w1, #0xffff
+	lsl	w9, w8, #7
+	sub	w8, w9, w8
+	add	w0, w8, w0, lsl #7
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	usubw	v0.4s, v0.4s, v2.4h
-	usubw2	v1.4s, v1.4s, v2.8h
-	shl	v1.4s, v1.4s, #2
-	shl	v0.4s, v0.4s, #2
+	sub	w8, w0, w1, uxth
+	lsl	w0, w8, #2
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	mvni	v3.8h, #4
-	mvni	v4.4h, #4
-	shl	v1.4s, v1.4s, #2
-	shl	v0.4s, v0.4s, #2
-	umlal2	v1.4s, v2.8h, v3.8h
-	umlal	v0.4s, v2.4h, v4.4h
+	mov	w8, #65531                      // =0xfffb
+	and	w9, w1, #0xffff
+	mul	w8, w9, w8
+	add	w0, w8, w0, lsl #2
 	ret
                                         // -- End function
 func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
-	movi	v3.8h, #1
-	ushll2	v4.4s, v2.8h, #0
-	ushll	v2.4s, v2.4h, #0
-	shl	v0.4s, v0.4s, #16
-	shl	v1.4s, v1.4s, #16
-	mla	v1.4s, v4.4s, v3.4s
-	mla	v0.4s, v2.4s, v3.4s
+	bfi	w1, w1, #16, #16
+	add	w0, w1, w0, lsl #16
 	ret
                                         // -- End function
 func000000000000003e:                   // @func000000000000003e
 // %bb.0:                               // %entry
-	movi	v3.8h, #96, lsl #8
-	movi	v4.4h, #96, lsl #8
-	shl	v1.4s, v1.4s, #14
-	shl	v0.4s, v0.4s, #14
-	umlal	v0.4s, v2.4h, v4.4h
-	umlal2	v1.4s, v2.8h, v3.8h
+	mov	w8, #24576                      // =0x6000
+	and	w9, w1, #0xffff
+	mul	w8, w9, w8
+	add	w0, w8, w0, lsl #14
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	movi	v3.8h, #11
-	movi	v4.4h, #11
-	shl	v1.4s, v1.4s, #8
-	shl	v0.4s, v0.4s, #8
-	umlal	v0.4s, v2.4h, v4.4h
-	umlal2	v1.4s, v2.8h, v3.8h
+	mov	w8, #11                         // =0xb
+	and	w9, w1, #0xffff
+	mul	w8, w9, w8
+	add	w0, w8, w0, lsl #8
 	ret
                                         // -- End function

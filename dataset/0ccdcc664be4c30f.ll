@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/ASTMatchFinder.cpp.ll
-; opencv/optimized/cap_v4l.cpp.ll
 ; openjdk/optimized/ciArray.ll
 ; qemu/optimized/block_vpc.c.ll
 ; rocksdb/optimized/configurable.cc.ll

@@ -7,7 +7,7 @@ func0000000000000016:                   // @func0000000000000016
 	add	x0, x0, x8, lsl #2
 	ret
                                         // -- End function
-func000000000000001e:                   // @func000000000000001e
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	sxtw	x8, w2

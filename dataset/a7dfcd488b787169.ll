@@ -1,5 +1,115 @@
 
-; 212 occurrences:
+; 100 occurrences:
+; arrow/optimized/utf8.cc.ll
+; brotli/optimized/encode.c.ll
+; brotli/optimized/transform.c.ll
+; clamav/optimized/chmd.c.ll
+; cmake/optimized/json_writer.cpp.ll
+; cvc5/optimized/Solver.cc.ll
+; eastl/optimized/string.cpp.ll
+; hermes/optimized/Executor.cpp.ll
+; hermes/optimized/RegexParser.cpp.ll
+; hyperscan/optimized/ng_asserts.cpp.ll
+; icu/optimized/normalizer2impl.ll
+; icu/optimized/ustrtrns.ll
+; icu/optimized/utf8collationiterator.ll
+; libphonenumber/optimized/rune.c.ll
+; libphonenumber/optimized/unicodetext.cc.ll
+; libquic/optimized/modp_b64.cc.ll
+; libquic/optimized/strike_register.cc.ll
+; linux/optimized/build_utility.ll
+; linux/optimized/intel_dsi_vbt.ll
+; linux/optimized/intel_sseu.ll
+; linux/optimized/intel_vdsc.ll
+; linux/optimized/iov_iter.ll
+; linux/optimized/ip_sockglue.ll
+; linux/optimized/ipv6_sockglue.ll
+; linux/optimized/loop.ll
+; linux/optimized/maple_tree.ll
+; linux/optimized/ndisc.ll
+; linux/optimized/rx.ll
+; linux/optimized/scan.ll
+; linux/optimized/sd.ll
+; linux/optimized/sg.ll
+; linux/optimized/synaptics.ll
+; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/CommandFlags.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; luau/optimized/AssemblyBuilderA64.cpp.ll
+; luau/optimized/AssemblyBuilderX64.cpp.ll
+; luau/optimized/isocline.c.ll
+; node/optimized/simdutf.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/internal_b44.c.ll
+; openusd/optimized/openexr-c.c.ll
+; php/optimized/html.ll
+; php/optimized/pcre2_auto_possess.ll
+; php/optimized/pcre2_compile.ll
+; php/optimized/pcre2_convert.ll
+; php/optimized/pcre2_dfa_match.ll
+; php/optimized/pcre2_extuni.ll
+; php/optimized/pcre2_jit_compile.ll
+; php/optimized/pcre2_match.ll
+; php/optimized/pcre2_newline.ll
+; php/optimized/pcre2_script_run.ll
+; php/optimized/pcre2_study.ll
+; php/optimized/pcre2_substitute.ll
+; php/optimized/pcre2_xclass.ll
+; php/optimized/uuencode.ll
+; postgres/optimized/nodeIndexscan.ll
+; postgres/optimized/utilities.ll
+; postgres/optimized/wchar.ll
+; postgres/optimized/wchar_shlib.ll
+; postgres/optimized/wchar_srv.ll
+; qemu/optimized/hw_char_serial.c.ll
+; qemu/optimized/hw_net_can_ctucan_core.c.ll
+; qemu/optimized/hw_net_rtl8139.c.ll
+; qemu/optimized/target_riscv_translate.c.ll
+; re2/optimized/rune.cc.ll
+; ruby/optimized/cesu_8.ll
+; ruby/optimized/utf_16_32.ll
+; rust-analyzer-rs/optimized/4xl67loow1v11x6s.ll
+; sentencepiece/optimized/util.cc.ll
+; slurm/optimized/reservation.ll
+; snappy/optimized/snappy.cc.ll
+; sqlite/optimized/sqlite3.ll
+; tev/optimized/Common.cpp.ll
+; vcpkg/optimized/unicode.cpp.ll
+; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; wireshark/optimized/packet-ansi_637.c.ll
+; wireshark/optimized/packet-ansi_a.c.ll
+; wireshark/optimized/packet-elasticsearch.c.ll
+; wireshark/optimized/packet-fc.c.ll
+; wireshark/optimized/packet-fp_hint.c.ll
+; wireshark/optimized/packet-gsm_a_rr.c.ll
+; wireshark/optimized/packet-ieee80211-radiotap.c.ll
+; wireshark/optimized/packet-ipmi-se.c.ll
+; wireshark/optimized/packet-solaredge.c.ll
+; wireshark/optimized/packet-v120.c.ll
+; wireshark/optimized/packet-vnc.c.ll
+; yosys/optimized/SimpSolver.ll
+; yosys/optimized/Solver.ll
+; z3/optimized/mpff.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = and i32 %0, 28
+  %4 = or disjoint i32 %3, %2
+  ret i32 %4
+}
+
+; 207 occurrences:
 ; clamav/optimized/lzssd.c.ll
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/msexpand.c.ll
@@ -117,8 +227,6 @@
 ; linux/optimized/generic.ll
 ; linux/optimized/hid-sony.ll
 ; linux/optimized/message.ll
-; linux/optimized/rpl.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/tcp_output.ll
@@ -129,6 +237,7 @@
 ; llvm/optimized/NativeFunctionSymbol.cpp.ll
 ; llvm/optimized/NativeInlineSiteSymbol.cpp.ll
 ; llvm/optimized/SymbolDumper.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; minetest/optimized/nodedef.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; nuklear/optimized/unity.c.ll
@@ -161,8 +270,6 @@
 ; re2/optimized/rune.cc.ll
 ; redis/optimized/hyperloglog.ll
 ; redis/optimized/listpack.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
@@ -203,8 +310,6 @@
 ; wireshark/optimized/packet-tipc.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; wireshark/optimized/packet-wtp.c.ll
-; yosys/optimized/opt_expr.ll
-; yosys/optimized/xaiger.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -216,111 +321,7 @@
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = and i32 %0, 768
-  %4 = or disjoint i32 %3, %2
-  ret i32 %4
-}
-
-; 94 occurrences:
-; arrow/optimized/utf8.cc.ll
-; brotli/optimized/encode.c.ll
-; brotli/optimized/transform.c.ll
-; clamav/optimized/chmd.c.ll
-; cmake/optimized/json_writer.cpp.ll
-; cvc5/optimized/Solver.cc.ll
-; eastl/optimized/string.cpp.ll
-; hermes/optimized/Executor.cpp.ll
-; hermes/optimized/RegexParser.cpp.ll
-; hyperscan/optimized/ng_asserts.cpp.ll
-; icu/optimized/normalizer2impl.ll
-; icu/optimized/ustrtrns.ll
-; icu/optimized/utf8collationiterator.ll
-; libphonenumber/optimized/rune.c.ll
-; libphonenumber/optimized/unicodetext.cc.ll
-; libquic/optimized/modp_b64.cc.ll
-; libquic/optimized/strike_register.cc.ll
-; linux/optimized/build_utility.ll
-; linux/optimized/intel_dsi_vbt.ll
-; linux/optimized/intel_sseu.ll
-; linux/optimized/intel_vdsc.ll
-; linux/optimized/iov_iter.ll
-; linux/optimized/ip_sockglue.ll
-; linux/optimized/ipv6_sockglue.ll
-; linux/optimized/loop.ll
-; linux/optimized/maple_tree.ll
-; linux/optimized/ndisc.ll
-; linux/optimized/rx.ll
-; linux/optimized/scan.ll
-; linux/optimized/sd.ll
-; linux/optimized/sg.ll
-; linux/optimized/synaptics.ll
-; linux/optimized/umwait.ll
-; llvm/optimized/BitcodeWriter.cpp.ll
-; llvm/optimized/CommandFlags.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; luau/optimized/AssemblyBuilderA64.cpp.ll
-; luau/optimized/AssemblyBuilderX64.cpp.ll
-; luau/optimized/isocline.c.ll
-; node/optimized/simdutf.ll
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
-; openusd/optimized/openexr-c.c.ll
-; php/optimized/html.ll
-; php/optimized/pcre2_auto_possess.ll
-; php/optimized/pcre2_compile.ll
-; php/optimized/pcre2_convert.ll
-; php/optimized/pcre2_dfa_match.ll
-; php/optimized/pcre2_extuni.ll
-; php/optimized/pcre2_jit_compile.ll
-; php/optimized/pcre2_match.ll
-; php/optimized/pcre2_newline.ll
-; php/optimized/pcre2_script_run.ll
-; php/optimized/pcre2_study.ll
-; php/optimized/pcre2_substitute.ll
-; php/optimized/pcre2_xclass.ll
-; php/optimized/uuencode.ll
-; postgres/optimized/nodeIndexscan.ll
-; postgres/optimized/utilities.ll
-; postgres/optimized/wchar.ll
-; postgres/optimized/wchar_shlib.ll
-; postgres/optimized/wchar_srv.ll
-; qemu/optimized/hw_char_serial.c.ll
-; qemu/optimized/hw_net_can_ctucan_core.c.ll
-; qemu/optimized/hw_net_rtl8139.c.ll
-; qemu/optimized/target_riscv_translate.c.ll
-; re2/optimized/rune.cc.ll
-; ruby/optimized/cesu_8.ll
-; ruby/optimized/utf_16_32.ll
-; rust-analyzer-rs/optimized/4xl67loow1v11x6s.ll
-; sentencepiece/optimized/util.cc.ll
-; slurm/optimized/reservation.ll
-; snappy/optimized/snappy.cc.ll
-; sqlite/optimized/sqlite3.ll
-; tev/optimized/Common.cpp.ll
-; vcpkg/optimized/unicode.cpp.ll
-; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
-; wireshark/optimized/packet-ansi_637.c.ll
-; wireshark/optimized/packet-ansi_a.c.ll
-; wireshark/optimized/packet-elasticsearch.c.ll
-; wireshark/optimized/packet-fc.c.ll
-; wireshark/optimized/packet-fp_hint.c.ll
-; wireshark/optimized/packet-gsm_a_rr.c.ll
-; wireshark/optimized/packet-ieee80211-radiotap.c.ll
-; wireshark/optimized/packet-ipmi-se.c.ll
-; wireshark/optimized/packet-solaredge.c.ll
-; wireshark/optimized/packet-v120.c.ll
-; wireshark/optimized/packet-vnc.c.ll
-; yosys/optimized/SimpSolver.ll
-; yosys/optimized/Solver.ll
-; z3/optimized/mpff.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = and i32 %0, 28
+  %3 = and i32 %0, 1984
   %4 = or disjoint i32 %3, %2
   ret i32 %4
 }

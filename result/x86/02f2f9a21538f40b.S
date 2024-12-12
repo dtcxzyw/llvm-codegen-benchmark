@@ -1,7 +1,7 @@
 func000000000000002a:                   # @func000000000000002a
 	sarq	$5, %rsi
-	leaq	(%rsi,%rdi), %rax
-	leaq	1(%rsi,%rdi), %rcx
+	leaq	(%rdi,%rsi), %rax
+	leaq	1(%rdi,%rsi), %rcx
 	shrq	$63, %rcx
 	leaq	1(%rcx,%rax), %rax
 	sarq	%rax

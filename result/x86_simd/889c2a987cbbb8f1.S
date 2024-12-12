@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovb2m	%xmm1, %k0
 	knotw	%k0, %k1
 	vmovdqu8	%xmm2, %xmm1 {%k1} {z}
-	vpcmpeqb	%xmm0, %xmm1, %xmm0
+	vpcmpeqb	%xmm1, %xmm0, %xmm0
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vpsllw	$7, %xmm1, %xmm1
@@ -26,7 +26,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
 	vmovdqu8	.LCPI3_0(%rip), %xmm2 {%k1}     # xmm2 {%k1} = [12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12]
-	vpcmpeqb	%xmm0, %xmm2, %xmm0
+	vpcmpeqb	%xmm2, %xmm0, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	retq
 func0000000000000005:                   # @func0000000000000005
@@ -34,7 +34,7 @@ func0000000000000005:                   # @func0000000000000005
 	vpmovb2m	%xmm1, %k0
 	knotw	%k0, %k1
 	vmovdqu8	%xmm2, %xmm1 {%k1} {z}
-	vpcmpnltub	%xmm0, %xmm1, %k0
+	vpcmpleub	%xmm1, %xmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
 func0000000000000008:                   # @func0000000000000008
@@ -42,7 +42,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovb2m	%xmm1, %k0
 	knotw	%k0, %k1
 	vmovdqu8	%xmm2, %xmm1 {%k1} {z}
-	vpcmpltub	%xmm0, %xmm1, %k0
+	vpcmpnleub	%xmm1, %xmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -58,6 +58,6 @@ func0000000000000009:                   # @func0000000000000009
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
 	vmovdqu8	.LCPI7_0(%rip), %xmm2 {%k1}     # xmm2 {%k1} = [8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]
-	vpcmpleub	%xmm0, %xmm2, %k0
+	vpcmpnltub	%xmm2, %xmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

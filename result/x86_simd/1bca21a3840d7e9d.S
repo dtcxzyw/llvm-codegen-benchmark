@@ -18,3 +18,17 @@ func0000000000000010:                   # @func0000000000000010
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpsrld	$8, %ymm1, %ymm0
 	retq
+.LCPI3_0:
+	.long	255                             # 0xff
+func0000000000000030:                   # @func0000000000000030
+	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm1, %k1
+	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vpsrld	$4, %ymm1, %ymm0
+	retq
+.LCPI4_0:
+	.long	16                              # 0x10
+func0000000000000028:                   # @func0000000000000028
+	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
+	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vpsrld	$1, %ymm1, %ymm0
+	retq

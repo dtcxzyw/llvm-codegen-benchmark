@@ -10,7 +10,7 @@ define i1 @func000000000000000c(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 2
   %3 = icmp ne i8 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = xor i1 %4, true
   ret i1 %5
 }

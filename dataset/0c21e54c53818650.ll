@@ -46,7 +46,7 @@ entry:
   ret i64 %3
 }
 
-; 170 occurrences:
+; 168 occurrences:
 ; assimp/optimized/CSMLoader.cpp.ll
 ; assimp/optimized/HMPLoader.cpp.ll
 ; assimp/optimized/Subdivision.cpp.ll
@@ -56,7 +56,6 @@ entry:
 ; flac/optimized/options.c.ll
 ; git/optimized/hashmap.ll
 ; hwloc/optimized/pci-common.ll
-; linux/optimized/intel_audio.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; openjdk/optimized/referenceProcessor.ll
@@ -89,7 +88,6 @@ entry:
 ; z3/optimized/bv_solver.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/datalog_parser.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll

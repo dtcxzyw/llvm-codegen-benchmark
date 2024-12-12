@@ -6,7 +6,7 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000118(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -238
   %3 = icmp ult i32 %2, -9
@@ -16,14 +16,12 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
-; grpc/optimized/socket_utils_posix.cc.ll
-; grpc/optimized/tcp_socket_utils.cc.ll
+; 3 occurrences:
 ; hwloc/optimized/topology-synthetic.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/hw_net_tulip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000102(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1440
   %3 = icmp ult i32 %2, 25
@@ -72,7 +70,7 @@ entry:
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/StdLibraryFunctionsChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000282(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000902(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = icmp ult i32 %2, 2
@@ -88,7 +86,7 @@ entry:
 ; linux/optimized/tg3.ll
 ; llvm/optimized/Decl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000298(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000918(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = icmp ult i32 %2, 2
@@ -103,7 +101,7 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -7
   %3 = icmp eq i64 %2, 0
@@ -113,11 +111,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; llvm/optimized/SemaDecl.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/SemaLookup.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000228(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000848(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 196608
   %3 = icmp eq i64 %2, 0
@@ -130,7 +127,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000218(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -57
   %3 = icmp ult i32 %2, -64
@@ -143,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucptrie.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000308(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
   %3 = icmp ne i64 %2, 0
@@ -174,7 +171,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000388(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000b08(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp ne i64 %2, 0

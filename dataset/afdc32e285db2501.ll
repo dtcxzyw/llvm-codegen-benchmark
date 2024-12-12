@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; c3c/optimized/sema_stmts.c.ll
 ; icu/optimized/alphaindex.ll
 ; icu/optimized/collationbuilder.ll
@@ -15,30 +15,30 @@
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
+; openusd/optimized/patchTableFactory.cpp.ll
 ; php/optimized/apprentice.ll
 ; php/optimized/phar_object.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, ptr %1, i16 %2) #0 {
+define ptr @func0000000000000007(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 2
   %4 = icmp eq i16 %3, 0
   %5 = select i1 %4, ptr %0, ptr %1
-  %6 = getelementptr nusw i8, ptr %5, i64 104
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 104
   ret ptr %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
-; openusd/optimized/patchTableFactory.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, ptr %1, i16 %2) #0 {
+define ptr @func0000000000000006(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 63
   %4 = icmp eq i16 %3, 33
   %5 = select i1 %4, ptr %0, ptr %1
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
+  %6 = getelementptr nusw i8, ptr %5, i64 -64
   ret ptr %6
 }
 

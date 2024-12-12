@@ -39,8 +39,9 @@ entry:
   ret i64 %4
 }
 
-; 146 occurrences:
+; 147 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/block_splitter.c.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; clamav/optimized/fmap.c.ll
@@ -60,7 +61,6 @@ entry:
 ; hdf5/optimized/H5Dchunk.c.ll
 ; hdf5/optimized/H5HFdtable.c.ll
 ; hdf5/optimized/H5MF.c.ll
-; hdf5/optimized/H5MFsection.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Tconv_float.c.ll
 ; hdf5/optimized/H5Tconv_integer.c.ll
@@ -87,18 +87,15 @@ entry:
 ; linux/optimized/fair.ll
 ; linux/optimized/i915_scatterlist.ll
 ; linux/optimized/ialloc.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/intel_sprite.ll
-; linux/optimized/jiffies.ll
 ; linux/optimized/kfifo.ll
 ; linux/optimized/kyber-iosched.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/page_alloc.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/seq_timer.ll
 ; linux/optimized/skl_watermark.ll
@@ -185,6 +182,10 @@ entry:
 ; xgboost/optimized/quantile_obj.cc.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/smt_context_stat.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -218,7 +219,7 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; cpython/optimized/longobject.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
@@ -228,7 +229,6 @@ entry:
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/skl_watermark.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {

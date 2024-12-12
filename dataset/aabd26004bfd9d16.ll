@@ -1,7 +1,12 @@
 
-; 140 occurrences:
+; 144 occurrences:
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/idas_ic.c.ll
@@ -25,7 +30,6 @@
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_lowpass.c.ll
 ; darktable/optimized/introspection_sharpen.c.ll
-; flac/optimized/window.c.ll
 ; g2o/optimized/dquat2mat.cpp.ll
 ; g2o/optimized/isometry3d_gradients.cpp.ll
 ; g2o/optimized/robust_kernel_impl.cpp.ll

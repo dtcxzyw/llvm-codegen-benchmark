@@ -1,7 +1,7 @@
 func000000000000000f:                   # @func000000000000000f
-	shrb	$3, %sil
+	shrb	%sil
 	andb	$1, %sil
 	movzbl	%sil, %eax
-	shll	$15, %eax
+	shll	$18, %eax
 	orq	%rdi, %rax
 	retq

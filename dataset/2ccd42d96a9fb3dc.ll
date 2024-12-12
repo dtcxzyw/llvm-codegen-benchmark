@@ -5,7 +5,7 @@
 ; wireshark/optimized/packet-cfm.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i8 %0) #0 {
+define i32 @func0000000000000061(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i32
   %2 = add nuw nsw i32 %1, 1
@@ -21,7 +21,7 @@ entry:
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0) #0 {
+define i32 @func0000000000000021(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i32
   %2 = add nsw i32 %1, -1

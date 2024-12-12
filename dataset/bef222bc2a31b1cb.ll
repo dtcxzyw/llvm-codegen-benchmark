@@ -1,7 +1,6 @@
 
-; 456 occurrences:
+; 453 occurrences:
 ; abc/optimized/abcBm.c.ll
-; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absOldSim.c.ll
@@ -20,6 +19,7 @@
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/ioReadBlifAig.c.ll
+; abc/optimized/ioWriteBlif.c.ll
 ; abc/optimized/ivyDsd.c.ll
 ; abc/optimized/llb2Flow.c.ll
 ; abc/optimized/nwkTiming.c.ll
@@ -31,6 +31,8 @@
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/PlyExporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/text_file_backend.ll
 ; brotli/optimized/encode.c.ll
 ; casadi/optimized/codegen_usage.cpp.ll
 ; casadi/optimized/cs_multiply.c.ll
@@ -65,7 +67,6 @@
 ; draco/optimized/symbol_encoding.cc.ll
 ; entt/optimized/meta_type.cpp.ll
 ; flac/optimized/format.c.ll
-; flac/optimized/ogg_decoder_aspect.c.ll
 ; freetype/optimized/autofit.c.ll
 ; git/optimized/apply.ll
 ; git/optimized/block.ll
@@ -102,6 +103,7 @@
 ; icu/optimized/islamcal.ll
 ; icu/optimized/number_rounding.ll
 ; icu/optimized/ubidi.ll
+; icu/optimized/ubidiwrt.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -110,7 +112,6 @@
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libevent/optimized/event.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
-; libquic/optimized/d1_lib.c.ll
 ; libquic/optimized/v3_utl.c.ll
 ; libwebp/optimized/anim_decode.c.ll
 ; linux/optimized/addrconf.ll
@@ -125,7 +126,6 @@
 ; linux/optimized/hugetlbpage.ll
 ; linux/optimized/hwmon.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/input.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_hdmi.ll
@@ -151,7 +151,6 @@
 ; linux/optimized/xarray.ll
 ; linux/optimized/xt_tcpudp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/BPF.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
@@ -188,7 +187,6 @@
 ; ncnn/optimized/gridsample_x86_avx.cpp.ll
 ; ncnn/optimized/gridsample_x86_avx512.cpp.ll
 ; ncnn/optimized/gridsample_x86_fma.cpp.ll
-; nuttx/optimized/lib_daysbeforemonth.c.ll
 ; nuttx/optimized/lib_strtold.c.ll
 ; ocio/optimized/ParseUtils.cpp.ll
 ; oiio/optimized/imagebufalgo_deep.cpp.ll
@@ -196,7 +194,6 @@
 ; oniguruma/optimized/regparse.ll
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/slamch.c.ll
-; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/contrast_preserve.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; openjdk/optimized/DirectAudioDevice.ll
@@ -281,7 +278,6 @@
 ; ruby/optimized/symbol.ll
 ; ruby/optimized/thread.ll
 ; ruby/optimized/vm.ll
-; rust-analyzer-rs/optimized/jp4yq85z7wea9l3.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; slurm/optimized/run_command.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
@@ -380,7 +376,6 @@
 ; wireshark/optimized/packet-eigrp.c.ll
 ; wireshark/optimized/packet-h223.c.ll
 ; wireshark/optimized/packet-kafka.c.ll
-; wireshark/optimized/packet-lbm.c.ll
 ; wireshark/optimized/packet-xmpp-utils.c.ll
 ; wireshark/optimized/packet_comment_dialog.cpp.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
@@ -453,6 +448,8 @@
 ; z3/optimized/optsmt.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll

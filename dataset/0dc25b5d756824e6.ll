@@ -11,8 +11,9 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; hermes/optimized/SegmentedArray.cpp.ll
+; icu/optimized/ucharstriebuilder.ll
 ; openjdk/optimized/awt_ImagingLib.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i1 %0, i32 %1) #0 {

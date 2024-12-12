@@ -4,7 +4,7 @@
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %.fr = freeze i64 %0
   %1 = srem i64 %.fr, 1000000000
@@ -16,7 +16,7 @@ entry:
 ; folly/optimized/ThreadWheelTimekeeper.cpp.ll
 ; folly/optimized/TimeoutManager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0) #0 {
+define i1 @func0000000000000026(i64 %0) #0 {
 entry:
   %.fr = freeze i64 %0
   %1 = srem i64 %.fr, 1000
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/Timestamp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0) #0 {
+define i1 @func000000000000002a(i64 %0) #0 {
 entry:
   %.fr = freeze i64 %0
   %1 = srem i64 %.fr, 1000
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/DateUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0) #0 {
+define i1 @func000000000000002c(i64 %0) #0 {
 entry:
   %.fr = freeze i64 %0
   %1 = srem i64 %.fr, 86400

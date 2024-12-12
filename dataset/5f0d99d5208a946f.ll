@@ -1,5 +1,5 @@
 
-%struct.nghttp2_map_bucket.2616026 = type { i32, i32, ptr }
+%struct.nghttp2_map_bucket.2729480 = type { i32, i32, ptr }
 
 ; 16 occurrences:
 ; abc/optimized/cloud.c.ll
@@ -19,12 +19,12 @@
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, -1640531527
   %4 = lshr i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %struct.nghttp2_map_bucket.2616026, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729480, ptr %0, i64 %5
   ret ptr %6
 }
 

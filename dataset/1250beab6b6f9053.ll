@@ -1,6 +1,8 @@
 
-; 21 occurrences:
+; 23 occurrences:
+; boost/optimized/named_scope_format_parser.ll
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
+; gromacs/optimized/tng_io.c.ll
 ; jemalloc/optimized/thread_event.ll
 ; jemalloc/optimized/thread_event.pic.ll
 ; jemalloc/optimized/thread_event.sym.ll
@@ -25,17 +27,30 @@
 define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; boost/optimized/static_string.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/RawCommentList.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
+entry:
+  %.not = icmp eq i8 %1, 0
+  %2 = or i1 %0, %.not
+  ret i1 %2
+}
+
+; 2 occurrences:
 ; llvm/optimized/InstructionSimplify.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %1, 21
-  %3 = or i1 %2, %0
+  %2 = icmp ugt i8 %1, -19
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 

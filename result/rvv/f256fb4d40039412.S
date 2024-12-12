@@ -6,7 +6,7 @@ func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v12, v12, a0
 	vsrl.vi	v12, v12, 5
-	vadd.vv	v10, v12, v10
+	vadd.vv	v10, v10, v12
 	li	a0, -60
 	vmacc.vx	v8, a0, v10
 	ret
@@ -33,7 +33,7 @@ func0000000000000015:                   # @func0000000000000015
 	vmulhu.vx	v12, v12, a0
 	lui	a0, 1033928
 	vsrl.vi	v12, v12, 10
-	vadd.vv	v10, v12, v10
+	vadd.vv	v10, v10, v12
 	addiw	a0, a0, -1792
 	vmacc.vx	v8, a0, v10
 	ret

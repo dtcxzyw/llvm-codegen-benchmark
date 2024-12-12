@@ -1,5 +1,5 @@
 
-; 191 occurrences:
+; 190 occurrences:
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -10,6 +10,7 @@
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/giaUtil.c.ll
+; boost/optimized/attribute_name.ll
 ; eastl/optimized/TestMemory.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
@@ -33,7 +34,6 @@
 ; linux/optimized/intel-gtt.ll
 ; linux/optimized/kfifo.ll
 ; linux/optimized/mapping.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/sparse.ll
@@ -117,7 +117,6 @@
 ; llvm/optimized/RISCVExpandAtomicPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
@@ -195,11 +194,11 @@
 define i64 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   ret i64 %3
 }
 
-; 302 occurrences:
+; 303 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/cuddCache.c.ll
@@ -208,6 +207,9 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
 ; clamav/optimized/qsort.c.ll
 ; cmake/optimized/archive_rb.c.ll
 ; cmake/optimized/byte_order.c.ll
@@ -254,7 +256,6 @@ entry:
 ; jemalloc/optimized/prof_data.pic.ll
 ; jemalloc/optimized/prof_data.sym.ll
 ; libpng/optimized/pngrutil.c.ll
-; libquic/optimized/persistent_memory_allocator.cc.ll
 ; linux/optimized/assoc_array.ll
 ; linux/optimized/dcache.ll
 ; linux/optimized/dm-io.ll
@@ -264,7 +265,6 @@ entry:
 ; linux/optimized/generic-radix-tree.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_gem_pages.ll
-; linux/optimized/i915_memcpy.ll
 ; linux/optimized/if.ll
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/key.ll
@@ -506,7 +506,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 

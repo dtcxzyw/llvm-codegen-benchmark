@@ -12,7 +12,7 @@ func0000000000000006:                   # @func0000000000000006
 	vnmsub.vx	v10, a0, v8
 	vmsle.vi	v0, v10, 2
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfcvt.rtz.x.f.v	v8, v8
 	lui	a0, 745654

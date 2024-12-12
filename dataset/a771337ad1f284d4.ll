@@ -1,5 +1,5 @@
 
-%"class.std::basic_string_view.3279778" = type { i64, ptr }
+%"class.std::basic_string_view.3470250" = type { i64, ptr }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -16,11 +16,11 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000068(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000006c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %0, i64 5
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 5
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -36,12 +36,12 @@ entry:
 ; protobuf/optimized/file.cc.ll
 ; protobuf/optimized/map.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr nusw %"class.std::basic_string_view.3279778", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw %"class.std::basic_string_view.3470250", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -52,12 +52,12 @@ entry:
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %3, 6
-  %5 = getelementptr nusw i8, ptr %0, i64 112
-  %6 = getelementptr nusw i64, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 112
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %4
   ret ptr %6
 }
 

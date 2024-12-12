@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 53 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; bullet3/optimized/btMultiBody.ll
 ; bullet3/optimized/btMultiBodyDynamicsWorld.ll
@@ -14,14 +14,11 @@
 ; linux/optimized/hwmon.ll
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/iommu-traces.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/sched.ll
 ; linux/optimized/virtio_net.ll
-; llvm/optimized/CGStmt.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dgghd3.c.ll
@@ -29,7 +26,6 @@
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; openblas/optimized/dsteqr.c.ll
@@ -62,7 +58,7 @@ define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -80,7 +76,7 @@ entry:
   ret i64 %5
 }
 
-; 20 occurrences:
+; 22 occurrences:
 ; darktable/optimized/export.c.ll
 ; git/optimized/path.ll
 ; llvm/optimized/ArgumentPromotion.cpp.ll
@@ -90,11 +86,13 @@ entry:
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/Core.cpp.ll
+; llvm/optimized/CoroSplit.cpp.ll
 ; llvm/optimized/DeadArgumentElimination.cpp.ll
 ; llvm/optimized/IRBuilder.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
+; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; opencv/optimized/approx.cpp.ll
@@ -295,16 +293,15 @@ define i64 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; cvc5/optimized/alethe_post_processor.cpp.ll
 ; darktable/optimized/print_settings.c.ll
 ; git/optimized/combine-diff.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; opencv/optimized/essential_solver.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; openspiel/optimized/dou_dizhu.cc.ll
@@ -315,7 +312,7 @@ define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -333,6 +330,18 @@ entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = add i32 %3, %0
+  %5 = sext i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = add nuw nsw i32 %2, 1
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -368,7 +377,7 @@ define i64 @func000000000000003c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

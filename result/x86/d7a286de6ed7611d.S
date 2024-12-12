@@ -1,10 +1,10 @@
-func000000000000000b:                   # @func000000000000000b
-	testl	%esi, %esi
+func0000000000000009:                   # @func0000000000000009
+	cmpl	$4, %esi
 	sete	%al
 	shlxq	%rax, %rdi, %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
-	cmpl	$4, %esi
+func000000000000000b:                   # @func000000000000000b
+	testl	%esi, %esi
 	sete	%al
 	shlxq	%rax, %rdi, %rax
 	retq

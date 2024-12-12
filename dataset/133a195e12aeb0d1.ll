@@ -1,5 +1,6 @@
 
-; 29 occurrences:
+; 30 occurrences:
+; boost/optimized/approximately_equals.ll
 ; clamav/optimized/regexec.c.ll
 ; cmake/optimized/huf_compress.c.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
@@ -34,7 +35,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 63
   %4 = lshr i64 %1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

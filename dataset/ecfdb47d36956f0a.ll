@@ -1,11 +1,7 @@
 
-; 6 occurrences:
+; 2 occurrences:
 ; bdwgc/optimized/cordprnt.c.ll
 ; icu/optimized/ucnvbocu.ll
-; ncnn/optimized/gemm_x86.cpp.ll
-; ncnn/optimized/gemm_x86_avx.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:

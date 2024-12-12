@@ -6,6 +6,7 @@
 ; cvc5/optimized/miplib_trick.cpp.ll
 ; cvc5/optimized/theory_datatypes_type_rules.cpp.ll
 ; git/optimized/merge-recursive.ll
+; grpc/optimized/ev_poll_posix.cc.ll
 ; icu/optimized/ucase.ll
 ; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/e100.ll
@@ -20,7 +21,6 @@
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; meshlab/optimized/miniz.c.ll
-; nghttp2/optimized/http.c.ll
 ; ruby/optimized/proc.ll
 ; ruby/optimized/thread.ll
 ; sqlite/optimized/sqlite3.ll
@@ -34,7 +34,7 @@ entry:
   ret i32 %3
 }
 
-; 60 occurrences:
+; 58 occurrences:
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcGraft.c.ll
@@ -51,12 +51,10 @@ entry:
 ; icu/optimized/utext.ll
 ; libevent/optimized/event.c.ll
 ; linux/optimized/8250_port.ll
-; linux/optimized/balloc.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/i386.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/namei_msdos.ll
@@ -77,11 +75,11 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; nghttp2/optimized/http.c.ll
 ; nghttp2/optimized/llhttp.c.ll
 ; openmpi/optimized/group.ll
 ; php/optimized/pcre2_compile.ll
 ; qemu/optimized/chardev_char-pty.c.ll
+; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; ruby/optimized/time.ll
 ; slurm/optimized/fed_mgr.ll
@@ -104,13 +102,15 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; cpython/optimized/ceval.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i16 %0) #0 {
+define i32 @func0000000000000028(i16 %0) #0 {
 entry:
-  %1 = and i16 %0, 15
-  %2 = icmp ult i16 %1, 11
+  %1 = and i16 %0, 240
+  %2 = icmp eq i16 %1, 0
   %3 = zext i1 %2 to i32
   ret i32 %3
 }

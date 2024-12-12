@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.zero	16,63
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vpaddb	%xmm0, %xmm1, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
@@ -25,54 +25,63 @@ func000000000000000a:                   # @func000000000000000a
 	.zero	16,243
 .LCPI3_1:
 	.zero	16,3
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	vpaddb	%xmm0, %xmm1, %xmm0
 	vpaddb	.LCPI3_0(%rip), %xmm0, %xmm0
 	vpcmpltub	.LCPI3_1(%rip), %xmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
 .LCPI4_0:
-	.zero	16,208
-.LCPI4_1:
-	.zero	16,49
-func0000000000000038:                   # @func0000000000000038
+	.zero	16,64
+func0000000000000008:                   # @func0000000000000008
 	vpaddb	%xmm0, %xmm1, %xmm0
-	vpaddb	.LCPI4_0(%rip), %xmm0, %xmm0
-	vpcmpnleub	.LCPI4_1(%rip), %xmm0, %k0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubb	%xmm1, %xmm0, %xmm0
+	vpcmpnleub	.LCPI4_0(%rip), %xmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
 .LCPI5_0:
 	.zero	16,208
 .LCPI5_1:
-	.zero	16,2
-func0000000000000031:                   # @func0000000000000031
+	.zero	16,49
+func0000000000000078:                   # @func0000000000000078
 	vpaddb	%xmm0, %xmm1, %xmm0
 	vpaddb	.LCPI5_0(%rip), %xmm0, %xmm0
-	vpcmpeqb	.LCPI5_1(%rip), %xmm0, %xmm0
+	vpcmpnleub	.LCPI5_1(%rip), %xmm0, %k0
+	vpmovm2b	%k0, %xmm0
 	retq
 .LCPI6_0:
-	.zero	16,6
-func000000000000004a:                   # @func000000000000004a
+	.zero	16,208
+.LCPI6_1:
+	.zero	16,2
+func0000000000000061:                   # @func0000000000000061
 	vpaddb	%xmm0, %xmm1, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpaddb	%xmm1, %xmm0, %xmm0
-	vpcmpgtb	.LCPI6_0(%rip), %xmm0, %xmm0
+	vpaddb	.LCPI6_0(%rip), %xmm0, %xmm0
+	vpcmpeqb	.LCPI6_1(%rip), %xmm0, %xmm0
 	retq
 .LCPI7_0:
-	.zero	16,159
-func000000000000004c:                   # @func000000000000004c
+	.zero	16,6
+func000000000000008a:                   # @func000000000000008a
 	vpaddb	%xmm0, %xmm1, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
-	vpcmpeqb	.LCPI7_0(%rip), %xmm0, %xmm0
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	vpcmpgtb	.LCPI7_0(%rip), %xmm0, %xmm0
 	retq
 .LCPI8_0:
-	.zero	16,16
-func0000000000000054:                   # @func0000000000000054
+	.zero	16,159
+func000000000000008c:                   # @func000000000000008c
 	vpaddb	%xmm0, %xmm1, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
-	vpcmpltub	.LCPI8_0(%rip), %xmm0, %k0
+	vpcmpeqb	.LCPI8_0(%rip), %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	retq
+.LCPI9_0:
+	.zero	16,16
+func00000000000000a4:                   # @func00000000000000a4
+	vpaddb	%xmm0, %xmm1, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpaddb	%xmm1, %xmm0, %xmm0
+	vpcmpltub	.LCPI9_0(%rip), %xmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

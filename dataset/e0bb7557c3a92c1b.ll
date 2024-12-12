@@ -38,24 +38,7 @@ define i64 @func0000000000000000(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
-; 7 occurrences:
-; cmake/optimized/archive_acl.c.ll
-; cpython/optimized/longobject.ll
-; linux/optimized/insn-eval.ll
-; linux/optimized/rtnetlink.ll
-; linux/optimized/virtio_blk.ll
-; openusd/optimized/basisCurvesTopology.cpp.ll
-; php/optimized/pcre2_dfa_match.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = select i1 %1, i64 4194303, i64 %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -72,22 +55,15 @@ entry:
   ret i64 %5
 }
 
-; 24 occurrences:
+; 16 occurrences:
 ; abc/optimized/abcRec3.c.ll
-; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauTree.c.ll
-; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/giaIf.c.ll
-; abc/optimized/giaMfs.c.ll
-; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/giaTruth.c.ll
 ; abc/optimized/ifDec16.c.ll
-; abc/optimized/ifDec75.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/sfmDec.c.ll
-; abc/optimized/sfmLib.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
@@ -96,13 +72,12 @@ entry:
 ; openexr/optimized/attributes.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; redis/optimized/rax.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 1, i64 %3
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -115,7 +90,23 @@ define i64 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 31536000, i64 %3
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 6 occurrences:
+; cmake/optimized/archive_acl.c.ll
+; cpython/optimized/longobject.ll
+; linux/optimized/insn-eval.ll
+; linux/optimized/rtnetlink.ll
+; linux/optimized/virtio_blk.ll
+; openusd/optimized/basisCurvesTopology.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %1, i64 1, i64 %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -126,7 +117,7 @@ define i64 @func0000000000000006(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 

@@ -1,7 +1,14 @@
 
-; 44 occurrences:
+; 50 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; assimp/optimized/FBXConverter.cpp.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; graphviz/optimized/actions.c.ll
 ; graphviz/optimized/colxlate.c.ll
 ; graphviz/optimized/gvloadimage_pango.c.ll
@@ -35,7 +42,6 @@
 ; proj/optimized/calcofi.cpp.ll
 ; proj/optimized/eck2.cpp.ll
 ; proj/optimized/healpix.cpp.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; quantlib/optimized/analyticbsmhullwhiteengine.ll
 ; quantlib/optimized/bivariatenormaldistribution.ll
 ; quantlib/optimized/noarbsabr.ll

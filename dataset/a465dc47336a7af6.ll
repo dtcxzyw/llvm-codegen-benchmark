@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 35 occurrences:
 ; abc/optimized/sclLibScl.c.ll
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; assimp/optimized/BlenderScene.cpp.ll
@@ -27,8 +27,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/reformat.c.ll
 ; openusd/optimized/stbImage.cpp.ll
-; openusd/optimized/typeRegistry.cpp.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
@@ -36,6 +34,7 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {
 entry:

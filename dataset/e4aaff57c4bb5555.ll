@@ -11,7 +11,7 @@
 define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul i32 %3, -862048943
   ret i32 %4
 }
@@ -22,12 +22,12 @@ entry:
 define i32 @func0000000000000025(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul nsw i32 %3, 1000
   ret i32 %4
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/cuddLCache.c.ll
@@ -42,6 +42,7 @@ entry:
 ; linux/optimized/dcache.ll
 ; linux/optimized/tcp_cubic.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_scale.ll
 ; minetest/optimized/noise.cpp.ll
 ; quantlib/optimized/burley2020sobolrsg.ll
 ; slurm/optimized/env.ll
@@ -53,7 +54,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul i32 %3, 1013
   ret i32 %4
 }
@@ -68,7 +69,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul nsw i32 %3, 3
   ret i32 %4
 }
@@ -82,7 +83,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul nsw i32 %3, 3
   ret i32 %4
 }
@@ -100,8 +101,20 @@ entry:
 define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul i32 %3, 4256249
+  ret i32 %4
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_label.ll
+; redis/optimized/cluster_legacy.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = add nsw i32 %0, %2
+  %4 = mul i32 %3, -3
   ret i32 %4
 }
 
@@ -111,7 +124,7 @@ entry:
 define i32 @func0000000000000038(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = mul i32 %3, 3
   ret i32 %4
 }
@@ -126,19 +139,8 @@ entry:
 define i32 @func0000000000000035(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul nsw i32 %3, 3
-  ret i32 %4
-}
-
-; 1 occurrences:
-; redis/optimized/cluster_legacy.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
-  %4 = mul i32 %3, 104
   ret i32 %4
 }
 
@@ -148,7 +150,7 @@ entry:
 define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul i32 %3, 5243
   ret i32 %4
 }

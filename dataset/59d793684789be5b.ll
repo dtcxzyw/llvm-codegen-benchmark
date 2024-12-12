@@ -7,21 +7,19 @@ define i64 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
-; 3 occurrences:
-; linux/optimized/scsicam.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
+; 1 occurrences:
 ; sentencepiece/optimized/generated_message_table_driven_lite.cc.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %0
+  %3 = add nuw nsw i32 %2, 8
+  %4 = mul nuw nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

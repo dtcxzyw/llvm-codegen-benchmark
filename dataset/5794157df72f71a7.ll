@@ -11,7 +11,7 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -22,6 +22,8 @@ entry:
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:

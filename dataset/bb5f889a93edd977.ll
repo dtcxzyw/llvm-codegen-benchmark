@@ -10,7 +10,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 6
   %4 = add i32 %3, -64
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -24,6 +24,18 @@ entry:
   %3 = shl i32 %2, 4
   %4 = add i32 %3, -16
   %5 = add i32 %4, %0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; openusd/optimized/tessellation.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000040(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = shl i32 %2, 1
+  %4 = add i32 %3, -6
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

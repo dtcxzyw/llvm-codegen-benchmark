@@ -1,33 +1,24 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v6.2d, #0xffffffffffffffff
-	and	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v0.16b, v2.16b
-	ushl	v5.4s, v6.4s, v5.4s
-	ushl	v4.4s, v6.4s, v4.4s
-	bic	v0.16b, v0.16b, v4.16b
-	bic	v1.16b, v1.16b, v5.16b
+	mov	w8, #-1                         // =0xffffffff
+	and	w9, w0, w1
+	lsl	w8, w8, w2
+	bic	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	and	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v0.16b, v2.16b
-	ushl	v5.4s, v6.4s, v5.4s
-	ushl	v4.4s, v6.4s, v4.4s
-	bic	v0.16b, v0.16b, v4.16b
-	bic	v1.16b, v1.16b, v5.16b
+	mov	w8, #1                          // =0x1
+	and	w9, w0, w1
+	lsl	w8, w8, w2
+	bic	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v6.4s, #64
-	and	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v0.16b, v2.16b
-	ushl	v5.4s, v6.4s, v5.4s
-	ushl	v4.4s, v6.4s, v4.4s
-	bic	v0.16b, v0.16b, v4.16b
-	bic	v1.16b, v1.16b, v5.16b
+	mov	w8, #64                         // =0x40
+	and	w9, w0, w1
+	lsl	w8, w8, w2
+	bic	w0, w9, w8
 	ret
                                         // -- End function

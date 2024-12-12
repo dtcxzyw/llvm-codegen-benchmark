@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/amapUniq.c.ll
 ; crow/optimized/example.cpp.ll
@@ -15,7 +15,6 @@
 ; crow/optimized/example_static_file.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
-; linux/optimized/intel_audio.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; ruby/optimized/time.ll

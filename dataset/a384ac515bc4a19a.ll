@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; clamav/optimized/explode.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nuw nsw i32 %3, 6
@@ -15,7 +15,7 @@ entry:
 ; wireshark/optimized/packet-docsis.c.ll
 ; wireshark/optimized/packet-q932.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nuw nsw i32 %3, 4
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-assa_r3.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %3, -3

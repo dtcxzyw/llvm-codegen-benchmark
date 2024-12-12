@@ -17,7 +17,7 @@ func000000000000000d:                   # @func000000000000000d
 	srli	a0, a1, 22
 	vadd.vv	v10, v12, v10
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	slli	a1, a1, 42
 	vadd.vx	v8, v8, a1
 	ret
@@ -29,7 +29,7 @@ func000000000000003d:                   # @func000000000000003d
 	srli	a0, a1, 22
 	vadd.vv	v10, v12, v10
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	slli	a1, a1, 42
 	vadd.vx	v8, v8, a1
 	ret

@@ -49,12 +49,13 @@ func0000000000000012:                   # @func0000000000000012
 	vpaddd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
+.LCPI6_0:
+	.long	64                              # 0x40
 func0000000000000013:                   # @func0000000000000013
 	vpsubq	%ymm1, %ymm0, %ymm0
-	vpsrlq	$4, %ymm0, %ymm0
+	vpsrlq	$2, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000058:                   # @func0000000000000058

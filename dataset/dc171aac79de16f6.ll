@@ -23,7 +23,7 @@ entry:
   ret i64 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; icu/optimized/collationdatabuilder.ll
@@ -34,7 +34,6 @@ entry:
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
-; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openjdk/optimized/compilerDefinitions.ll
 ; openmpi/optimized/coll_base_alltoall.ll

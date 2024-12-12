@@ -1,6 +1,7 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/mpdecimal.ll
 ; llvm/optimized/xxhash.cpp.ll
@@ -14,7 +15,19 @@ entry:
   %2 = mul nuw i128 %1, 11400714785074694791
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func000000000000006f(i64 %0, i128 %1) #0 {
+entry:
+  %2 = mul nuw nsw i128 %1, 20000000000000
+  %3 = lshr i128 %2, 64
+  %4 = trunc nuw nsw i128 %3 to i64
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -96,7 +109,7 @@ entry:
   %2 = mul nuw i128 %1, 9444732965739290428
   %3 = lshr i128 %2, 73
   %4 = trunc nuw nsw i128 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -109,7 +122,19 @@ entry:
   %2 = mul nuw i128 %1, 10000000000000000000
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i64 @func000000000000006e(i64 %0, i128 %1) #0 {
+entry:
+  %2 = mul nuw nsw i128 %1, 1360296554856532783
+  %3 = lshr i128 %2, 64
+  %4 = trunc nuw nsw i128 %3 to i64
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -121,7 +146,7 @@ entry:
   %2 = mul i128 %1, 1844674407370955161
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

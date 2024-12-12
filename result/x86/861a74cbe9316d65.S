@@ -16,7 +16,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$501, %rsi                      # imm = 0x1F5
 	setae	%al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	movq	%rdx, %rax
 	subq	%rsi, %rax
 	subq	%rdx, %rsi
@@ -24,6 +24,15 @@ func00000000000000a8:                   # @func00000000000000a8
 	cmoveq	%rax, %rsi
 	shrq	$32, %rsi
 	cmpl	$25, %esi
+	setae	%al
+	retq
+func0000000000000158:                   # @func0000000000000158
+	movq	%rdx, %rax
+	subq	%rsi, %rax
+	subq	%rdx, %rsi
+	testb	$1, %dil
+	cmoveq	%rax, %rsi
+	cmpq	$104857600, %rsi                # imm = 0x6400000
 	setae	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -35,7 +44,7 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rsi, %rsi
 	sete	%al
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	movq	%rdx, %rax
 	subq	%rsi, %rax
 	subq	%rdx, %rsi
@@ -44,7 +53,7 @@ func00000000000000a4:                   # @func00000000000000a4
 	cmpq	$5001, %rsi                     # imm = 0x1389
 	setb	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	movq	%rdx, %rax
 	subq	%rsi, %rax
 	subq	%rdx, %rsi

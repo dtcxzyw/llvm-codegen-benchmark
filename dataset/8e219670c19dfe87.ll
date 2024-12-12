@@ -11,11 +11,10 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll

@@ -16,7 +16,13 @@ func0000000000000000:                   # @func0000000000000000
 	andq	$-16, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
+func0000000000000003:                   # @func0000000000000003
+	imulq	%rdx, %rsi
+	leaq	511(%rsi), %rax
+	andq	$-256, %rax
+	addq	%rdi, %rax
+	retq
+func000000000000003f:                   # @func000000000000003f
 	imulq	%rdx, %rsi
 	leaq	387(%rsi), %rcx
 	movabsq	$562949953421296, %rax          # imm = 0x1FFFFFFFFFFF0

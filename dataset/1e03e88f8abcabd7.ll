@@ -235,13 +235,13 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000077(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000e7(i32 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 31
   %3 = udiv i8 %2, 3
   %4 = add nuw nsw i8 %3, 1
   %5 = zext nneg i8 %4 to i32
-  %6 = icmp sge i32 %5, %0
+  %6 = icmp sle i32 %0, %5
   ret i1 %6
 }
 
@@ -480,13 +480,13 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000ea(i32 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 31
   %3 = udiv i8 %2, 3
   %4 = add nuw nsw i8 %3, 1
   %5 = zext nneg i8 %4 to i32
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 

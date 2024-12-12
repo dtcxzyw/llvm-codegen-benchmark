@@ -13,7 +13,7 @@ entry:
   ret ptr %5
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; nix/optimized/app.ll
 ; nix/optimized/attr-path.ll
@@ -27,8 +27,6 @@ entry:
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/installables.ll
 ; nix/optimized/lexer-tab.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parser-tab.ll
 ; nix/optimized/print-ambiguous.ll
@@ -41,26 +39,25 @@ entry:
 ; openjdk/optimized/g1RemSetTrackingPolicy.ll
 ; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
-; opencv/optimized/essential_mat_reconstr.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000023(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 63
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -70,12 +67,12 @@ entry:
 ; openjdk/optimized/c1_GraphBuilder.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -83,12 +80,12 @@ entry:
 ; php/optimized/block_pass.ll
 ; php/optimized/zend_dfg.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 

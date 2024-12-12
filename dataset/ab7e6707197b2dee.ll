@@ -12,15 +12,16 @@
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %2, i32 0
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   ret i32 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/giaIso.c.ll
 ; abc/optimized/giaIso2.c.ll
 ; abc/optimized/retLvalue.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -38,7 +39,7 @@ entry:
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %2, i32 0
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   ret i32 %4
 }
 
@@ -50,7 +51,7 @@ entry:
 define i32 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %2, i32 0
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   ret i32 %4
 }
 
@@ -60,7 +61,7 @@ entry:
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %2, i32 0
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   ret i32 %4
 }
 

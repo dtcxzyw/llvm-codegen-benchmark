@@ -2,7 +2,7 @@
 	.long	32                              # 0x20
 .LCPI0_1:
 	.long	43                              # 0x2b
-func00000000000000db:                   # @func00000000000000db
+func000000000000019b:                   # @func000000000000019b
 	vpsllw	$15, %xmm2, %xmm2
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm2, %k1

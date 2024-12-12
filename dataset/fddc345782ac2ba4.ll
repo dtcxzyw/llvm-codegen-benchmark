@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 47 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; clamav/optimized/filtering.c.ll
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
@@ -18,7 +18,6 @@
 ; llvm/optimized/SystemZ.cpp.ll
 ; mitsuba3/optimized/func.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; nuttx/optimized/lib_fgetc.c.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/hb-ot-cff1-table.ll
@@ -46,6 +45,8 @@
 ; wireshark/optimized/packet-zbee-aps.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
@@ -56,6 +57,7 @@ entry:
 
 ; 41 occurrences:
 ; arrow/optimized/message.cc.ll
+; boost/optimized/info.ll
 ; git/optimized/protocol.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; grpc/optimized/call.cc.ll
@@ -75,7 +77,6 @@ entry:
 ; node/optimized/libnode.endpoint.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; openjdk/optimized/nmtDCmd.ll
-; openmpi/optimized/mpiext_rocm.ll
 ; openspiel/optimized/rbc.cc.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
 ; postgres/optimized/mcv.ll

@@ -1,9 +1,8 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; gromacs/optimized/qmmmtopologypreprocessor.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mold/optimized/lto.cc.ALPHA.cc.ll
 ; mold/optimized/lto.cc.ARM32.cc.ll
 ; mold/optimized/lto.cc.ARM64.cc.ll
@@ -25,12 +24,12 @@
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000002c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 3
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 16
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 

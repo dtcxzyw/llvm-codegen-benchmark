@@ -1,11 +1,7 @@
 
-; 6 occurrences:
+; 2 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i16 %0, i32 %1) #0 {
 entry:

@@ -3,7 +3,7 @@
 ; abc/optimized/bmcFx.c.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000284(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.neg = sub i32 %2, %1
   %3 = add i32 %.neg, %0
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.neg = sub i32 %2, %1
   %3 = add i32 %.neg, %0

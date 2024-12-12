@@ -19,6 +19,12 @@ func0000000000000005:                   # @func0000000000000005
 	shll	$24, %eax
 	orl	%edi, %eax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	incb	%sil
+	movzbl	%sil, %eax
+	shll	$8, %eax
+	orl	%edi, %eax
+	retq
 func0000000000000026:                   # @func0000000000000026
 	addb	$16, %sil
 	movzbl	%sil, %eax

@@ -28,20 +28,10 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI3_0:
 	.long	134283263                       # 0x800ffff
-func0000000000000010:                   # @func0000000000000010
-	vpsllw	$15, %xmm0, %xmm0
-	vpmovw2m	%xmm0, %k0
-	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm1, %k1
-	korb	%k0, %k1, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI4_0:
-	.long	134283263                       # 0x800ffff
 func0000000000000014:                   # @func0000000000000014
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpgtd	.LCPI4_0(%rip){1to8}, %ymm1, %k1
+	vpcmpgtd	.LCPI3_0(%rip){1to8}, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

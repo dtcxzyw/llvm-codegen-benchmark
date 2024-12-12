@@ -27,7 +27,7 @@ entry:
   ret ptr %5
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
@@ -36,7 +36,6 @@ entry:
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
-; openmpi/optimized/topo_base_dist_graph_create.ll
 ; raylib/optimized/rmodels.c.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/extract_fa.ll

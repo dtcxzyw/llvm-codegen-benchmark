@@ -9,7 +9,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovd2m	%xmm2, %k1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm2   # ymm2 = [1,1,1,1]
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [2,2,2,2]
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpcmpltuq	.LCPI0_2(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -17,7 +17,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI1_0:
 	.quad	2147483399                      # 0x7fffff07
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpslld	$31, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1 {%k1}

@@ -14,7 +14,7 @@ entry:
   ret i64 %5
 }
 
-; 133 occurrences:
+; 135 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
@@ -25,6 +25,8 @@ entry:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cvc5/optimized/cadical.cpp.ll
@@ -152,7 +154,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
@@ -222,13 +224,12 @@ entry:
 define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
 
-; 12 occurrences:
-; arrow/optimized/light_array.cc.ll
+; 11 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
@@ -244,7 +245,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 21
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
@@ -259,13 +260,14 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 21
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
+; boost/optimized/positional_options.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; eastl/optimized/TestDeque.cpp.ll
@@ -330,7 +332,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -341,22 +343,30 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 63
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
 
-; 5 occurrences:
+; 13 occurrences:
 ; casadi/optimized/symbolic_qr.cpp.ll
 ; faiss/optimized/DirectMap.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll
 ; openusd/optimized/resolver.cpp.ll
 ; xgboost/optimized/c_api.cc.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }

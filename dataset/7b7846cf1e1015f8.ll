@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.2808887 = type { %union.Value.2808888, [1 x i32], i32 }
-%union.Value.2808888 = type { ptr }
+%struct.lua_TValue.2920887 = type { %union.Value.2920888, [1 x i32], i32 }
+%union.Value.2920888 = type { ptr }
 
 ; 8 occurrences:
 ; cmake/optimized/zstd_double_fast.c.ll
@@ -76,7 +76,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr nusw %struct.lua_TValue.2808887, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.lua_TValue.2920887, ptr %0, i64 %5
   ret ptr %6
 }
 

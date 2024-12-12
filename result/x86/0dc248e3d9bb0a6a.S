@@ -11,7 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func000000000000000a:                   # @func000000000000000a
 	xorq	%rdx, %rsi
-	testq	%rdi, %rsi
+	testq	%rsi, %rdi
 	setns	%al
 	retq
 func0000000000000006:                   # @func0000000000000006

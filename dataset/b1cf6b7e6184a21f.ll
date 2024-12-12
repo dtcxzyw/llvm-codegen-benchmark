@@ -11,22 +11,21 @@
 ; quickjs/optimized/libunicode.ll
 ; wireshark/optimized/packet-asterix.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 7
   %4 = add nuw nsw i32 %0, 1
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
-; 31 occurrences:
-; abc/optimized/ifCut.c.ll
+; 32 occurrences:
 ; abc/optimized/ivyDsd.c.ll
+; boost/optimized/to_chars.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/ich8lan.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/vector.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
@@ -52,8 +51,10 @@ entry:
 ; wireshark/optimized/packet-uftp4.c.ll
 ; wireshark/optimized/packet-uftp5.c.ll
 ; wireshark/optimized/wimax_harq_map_decoder.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 17
   %3 = and i32 %2, 15
@@ -66,7 +67,7 @@ entry:
 ; openjdk/optimized/g1CardSet.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 255
@@ -111,7 +112,7 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 65535
@@ -124,7 +125,7 @@ entry:
 ; brotli/optimized/decode.c.ll
 ; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 2047

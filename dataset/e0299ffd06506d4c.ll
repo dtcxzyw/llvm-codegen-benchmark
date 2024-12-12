@@ -3,7 +3,7 @@
 ; linux/optimized/mlock.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000302(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, 7
   %3 = icmp ne i64 %2, 7
@@ -27,7 +27,7 @@ entry:
 ; redis/optimized/emap.ll
 ; redis/optimized/emap.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, 2
   %3 = icmp eq i64 %0, %1
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000032(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000052(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, 68719476720
   %3 = icmp eq i64 %2, 68719476720
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_exclusive.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000050(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, 4294967294
   %3 = icmp eq i64 %2, 0

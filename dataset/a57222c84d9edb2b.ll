@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openssl/optimized/libdefault-lib-decode_der2key.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %3 = icmp eq i32 %2, 0
@@ -16,7 +16,7 @@ entry:
 ; openjdk/optimized/subnode.ll
 ; qemu/optimized/net_can_can_core.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 536870912
   %3 = icmp ne i32 %2, 0
@@ -30,7 +30,7 @@ entry:
 ; linux/optimized/addrconf.ll
 ; php/optimized/pcre2_auto_possess.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000182(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000302(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -3
   %3 = icmp ne i32 %2, 1

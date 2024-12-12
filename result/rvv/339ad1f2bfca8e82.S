@@ -6,7 +6,7 @@ func0000000000000024:                   # @func0000000000000024
 	fli.s	fa4, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v20, v16, fa4
-	vmand.mm	v16, v20, v0
+	vmand.mm	v16, v0, v20
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vmfgt.vf	v17, v8, fa5
 	vmand.mm	v0, v17, v16

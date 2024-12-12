@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 53 occurrences:
 ; cmake/optimized/cmCMakePresetsGraphReadJSON.cxx.ll
 ; cmake/optimized/multi.c.ll
 ; curl/optimized/libcurl_la-multi.ll
@@ -7,7 +7,6 @@
 ; icu/optimized/ufmt_cmn.ll
 ; linux/optimized/ats.ll
 ; linux/optimized/cistpl.ll
-; linux/optimized/early.ll
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/AArch64MachineFunctionInfo.cpp.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
@@ -19,7 +18,6 @@
 ; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/MCTargetOptionsCommandFlags.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; luajit/optimized/lj_opt_loop.ll

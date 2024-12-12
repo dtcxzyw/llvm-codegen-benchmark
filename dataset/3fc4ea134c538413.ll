@@ -2,6 +2,7 @@
 ; 210 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
+; boost/optimized/area.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; clamav/optimized/hash.cpp.ll
 ; cmake/optimized/divsufsort.c.ll
@@ -96,7 +97,6 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/cgroup.ll
-; linux/optimized/intel_dsi_dcs_backlight.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -104,6 +104,7 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; nanobind/optimized/nb_type.cpp.ll
@@ -143,7 +144,6 @@
 ; z3/optimized/bv2real_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll

@@ -20,7 +20,7 @@ entry:
 ; abc/optimized/xsatSolverAPI.c.ll
 ; linux/optimized/extents.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 3
   %4 = icmp slt i32 %1, 4
@@ -45,7 +45,7 @@ entry:
 ; openspiel/optimized/bridge_scoring.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = icmp eq i32 %1, 1

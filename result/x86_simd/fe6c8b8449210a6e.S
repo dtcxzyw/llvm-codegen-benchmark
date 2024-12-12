@@ -13,7 +13,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	114688                          # 0x1c000
 .LCPI1_1:
 	.long	2097152                         # 0x200000
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpblendmd	%ymm1, %ymm2, %ymm0 {%k1}

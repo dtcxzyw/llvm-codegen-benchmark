@@ -1,10 +1,9 @@
 
-%struct.dt_iop_colorreconstruct_Lab_t.2762261 = type { float, float, float, float }
-%"class.cv::Point_.3566796" = type { float, float }
+%struct.dt_iop_colorreconstruct_Lab_t.2874538 = type { float, float, float, float }
+%"class.cv::Point_.3747481" = type { float, float }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/acbPush.c.ll
-; arrow/optimized/encode_internal.cc.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; openjdk/optimized/JvmLauncher.ll
@@ -18,13 +17,27 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
+; 2 occurrences:
+; arrow/optimized/encode_internal.cc.ll
+; quantlib/optimized/svd.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000070(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw double, ptr %0, i64 %1
+  %4 = ashr exact i64 %2, 29
+  %5 = getelementptr i8, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 -8
+  ret ptr %6
+}
+
+; 9 occurrences:
 ; arrow/optimized/reader.cc.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
+; stb/optimized/stb_connected_components.c.ll
 ; wireshark/optimized/packet-smtp.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
@@ -37,29 +50,24 @@ entry:
   ret ptr %6
 }
 
-; 15 occurrences:
+; 10 occurrences:
+; boost/optimized/topology.ll
 ; cmake/optimized/huf_compress.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; faiss/optimized/IndexIVFPQ.cpp.ll
-; git/optimized/apply.ll
-; imgui/optimized/imgui.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
-; luau/optimized/lnumprint.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; opencv/optimized/checker_model.cpp.ll
 ; opencv/optimized/floodfill.cpp.ll
-; opencv/optimized/miniflann.cpp.ll
-; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000006b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr nusw i8, ptr %0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -104,48 +112,89 @@ entry:
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000043(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 28
-  %4 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2762261, ptr %0, i64 %1
+  %4 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874538, ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 12
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 12
   ret ptr %6
 }
 
 ; 3 occurrences:
-; icu/optimized/gencnval.ll
-; opencv/optimized/dtfilter_cpu.cpp.ll
-; opencv/optimized/quasi_dense_stereo.cpp.ll
+; git/optimized/apply.ll
+; imgui/optimized/imgui.cpp.ll
+; luau/optimized/lnumprint.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000068(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
+  ret ptr %6
+}
+
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; opencv/optimized/geometry.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr i64 %2, 32
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
+  ret ptr %6
+}
+
+; 1 occurrences:
+; icu/optimized/gencnval.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000078(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 32
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }
 
-; 1 occurrences:
-; opencv/optimized/geometry.cpp.ll
+; 3 occurrences:
+; opencv/optimized/miniflann.cpp.ll
+; opencv/optimized/ppf_helpers.cpp.ll
+; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000006a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = ashr i64 %2, 32
-  %4 = getelementptr %"class.cv::Point_.3566796", ptr %0, i64 %1
-  %5 = getelementptr %"class.cv::Point_.3566796", ptr %4, i64 %3, i32 1
-  ret ptr %5
+  %3 = getelementptr nusw float, ptr %0, i64 %1
+  %4 = ashr exact i64 %2, 30
+  %5 = getelementptr nusw i8, ptr %3, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -12
+  ret ptr %6
+}
+
+; 2 occurrences:
+; opencv/optimized/dtfilter_cpu.cpp.ll
+; opencv/optimized/quasi_dense_stereo.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000068(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 29
+  %4 = getelementptr nusw i8, ptr %0, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = getelementptr i8, ptr %5, i64 4
+  ret ptr %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/geometry.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %"class.cv::Point_.3566796", ptr %0, i64 %1
-  %5 = getelementptr %"class.cv::Point_.3566796", ptr %4, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"class.cv::Point_.3747481", ptr %0, i64 %1
+  %5 = getelementptr %"class.cv::Point_.3747481", ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 
@@ -154,12 +203,12 @@ entry:
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/multiViewer_Container.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
   %4 = getelementptr nusw ptr, ptr %0, i64 %1
   %5 = getelementptr nusw ptr, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 

@@ -3,7 +3,7 @@
 ; c3c/optimized/llvm_codegen.c.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 268435456
   %4 = icmp ne i64 %3, 0
@@ -17,7 +17,7 @@ entry:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; llvm/optimized/CGLoopInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 127
   %4 = icmp eq i64 %3, 4
@@ -32,7 +32,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; redis/optimized/script.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 127
   %4 = icmp eq i64 %3, 0
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/gen8_ppgtt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2097151
   %4 = icmp eq i64 %3, 0

@@ -107,10 +107,9 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/giaDecs.c.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
-; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000036(ptr %0, i64 %1, i32 %2) #0 {
 entry:

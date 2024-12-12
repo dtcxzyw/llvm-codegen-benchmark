@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/cnfUtil.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
@@ -22,7 +22,6 @@
 ; linux/optimized/cistpl.ll
 ; linux/optimized/hid-lg-g15.ll
 ; linux/optimized/regmap.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_uprobe.ll
@@ -30,7 +29,7 @@
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; opencv/optimized/knn_matching.cpp.ll
 ; opencv/optimized/nary_eltwise_layers.cpp.ll
 ; opencv/optimized/perf_matching.cpp.ll
@@ -52,7 +51,7 @@ entry:
   ret i8 %3
 }
 
-; 44 occurrences:
+; 45 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -72,6 +71,7 @@ entry:
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
 ; openjdk/optimized/ByteBinary2Bit.ll
@@ -141,10 +141,9 @@ entry:
   ret i8 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; cpython/optimized/instrumentation.ll
 ; libquic/optimized/deflate.c.ll
-; linux/optimized/rsmisc.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/X86FoldTablesEmitter.cpp.ll
 ; llvm/optimized/X86InstrMappingEmitter.cpp.ll

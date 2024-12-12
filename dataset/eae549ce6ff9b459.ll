@@ -1,4 +1,15 @@
 
+; 1 occurrences:
+; ruby/optimized/regexec.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i8 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = or i1 %1, %2
+  %4 = icmp ult i8 %0, 26
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
 ; 10 occurrences:
 ; clamav/optimized/pe.c.ll
 ; freetype/optimized/psaux.c.ll

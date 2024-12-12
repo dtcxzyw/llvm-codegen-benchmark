@@ -17,7 +17,7 @@
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32
@@ -33,7 +33,7 @@ entry:
 ; hyperscan/optimized/ucp_table.cpp.ll
 ; libquic/optimized/strike_register.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0) #0 {
+define i1 @func0000000000000044(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32

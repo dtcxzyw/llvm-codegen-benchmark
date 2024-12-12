@@ -38,9 +38,8 @@ entry:
   ret i16 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; arrow/optimized/float16.cc.ll
-; cmake/optimized/cmELF.cxx.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:

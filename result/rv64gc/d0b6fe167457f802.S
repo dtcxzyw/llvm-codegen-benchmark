@@ -14,3 +14,19 @@ func0000000000000004:                   # @func0000000000000004
 .LBB0_4:                                # %entry
 	mulw	a0, a1, a0
 	ret
+func0000000000000005:                   # @func0000000000000005
+	sext.w	a3, a2
+	li	a4, 2
+	andi	a2, a1, 1
+	beq	a3, a4, .LBB1_2
+	li	a1, 10
+	bnez	a2, .LBB1_3
+	j	.LBB1_4
+.LBB1_2:
+	li	a1, 12
+	beqz	a2, .LBB1_4
+.LBB1_3:
+	li	a1, 14
+.LBB1_4:                                # %entry
+	mulw	a0, a1, a0
+	ret

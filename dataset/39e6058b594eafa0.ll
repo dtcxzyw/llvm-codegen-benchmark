@@ -32,7 +32,8 @@ entry:
   ret i16 %3
 }
 
-; 173 occurrences:
+; 169 occurrences:
+; boost/optimized/static_string.ll
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -71,14 +72,12 @@ entry:
 ; linux/optimized/esp6.ll
 ; linux/optimized/eth.ll
 ; linux/optimized/exthdrs.ll
-; linux/optimized/fec.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/gen_stats.ll
 ; linux/optimized/genetlink.ll
 ; linux/optimized/gre_offload.ll
 ; linux/optimized/gro.ll
-; linux/optimized/gso.ll
 ; linux/optimized/ibss.ll
 ; linux/optimized/icmp.ll
 ; linux/optimized/igmp.ll
@@ -94,9 +93,7 @@ entry:
 ; linux/optimized/ipmr_base.ll
 ; linux/optimized/lzo1x_compress.ll
 ; linux/optimized/mcast.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/md.ll
-; linux/optimized/mm.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/neighbour.ll
@@ -113,7 +110,6 @@ entry:
 ; linux/optimized/nf_reject_ipv6.ll
 ; linux/optimized/nfnetlink_log.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/pause.ll
 ; linux/optimized/pmsr.ll
 ; linux/optimized/policy.ll
 ; linux/optimized/raw.ll
@@ -228,7 +224,8 @@ entry:
   ret i16 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/static_string.ll
 ; clamav/optimized/manager.c.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; libevent/optimized/evdns.c.ll
@@ -248,7 +245,7 @@ entry:
   ret i16 %3
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -276,6 +273,7 @@ entry:
 ; wasmtime-rs/optimized/3wy7qx4e8fg0rwt0.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:

@@ -36,7 +36,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovqd	%ymm2, %xmm1
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2   # xmm2 = [2,2,2,2]
 	vpbroadcastd	.LCPI2_1(%rip), %xmm2 {%k1} # xmm2 {%k1} = [1,1,1,1]
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq

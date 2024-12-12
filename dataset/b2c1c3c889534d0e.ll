@@ -1,17 +1,15 @@
 
-; 37 occurrences:
+; 35 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcLutmin.c.ll
-; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absUtil.c.ll
 ; abc/optimized/absVta.c.ll
-; abc/optimized/aigPart.c.ll
 ; abc/optimized/casCore.c.ll
 ; abc/optimized/casDec.c.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -38,10 +36,22 @@
 ; luajit/optimized/lj_tab_dyn.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = icmp ult i32 %0, 2
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
+}
+
+; 2 occurrences:
+; abc/optimized/abcPart.c.ll
+; abc/optimized/aigPart.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000074(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub nuw nsw i32 32, %1
+  %3 = icmp samesign ult i32 %0, 2
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -57,10 +67,10 @@ entry:
 ; zxing/optimized/ODUPCEWriter.cpp.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
-  %3 = icmp ult i32 %0, 929
+  %3 = icmp samesign ult i32 %0, 929
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }

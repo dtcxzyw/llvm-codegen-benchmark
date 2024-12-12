@@ -4,7 +4,6 @@
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -15,6 +14,7 @@
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
+; boost/optimized/src.ll
 ; grpc/optimized/grpc_tls_crl_provider.cc.ll
 ; grpc/optimized/server.cc.ll
 ; grpc/optimized/service_config_impl.cc.ll
@@ -108,7 +108,7 @@ entry:
 define i128 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4503599627370457
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = zext i64 %3 to i128
   ret i128 %4
 }

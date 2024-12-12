@@ -1,24 +1,22 @@
 func0000000000000002:                   # @func0000000000000002
 	xorl	%eax, %eax
-	testb	$1, %sil
-	cmovnel	%edi, %eax
 	cmpl	$43, %edi
 	cmovel	%edi, %eax
+	testb	$1, %sil
+	cmovnel	%edi, %eax
 	retq
 func0000000000000014:                   # @func0000000000000014
-	testb	$1, %sil
-	movl	$771, %eax                      # imm = 0x303
-	cmovnel	%edi, %eax
 	cmpl	$773, %edi                      # imm = 0x305
+	movl	$771, %eax                      # imm = 0x303
 	cmovgel	%edi, %eax
+	testb	$1, %sil
+	cmovnel	%edi, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018
-	andb	$1, %sil
-	xorl	%eax, %eax
-	cmpb	$1, %sil
-	sbbl	%eax, %eax
-	orl	%edi, %eax
 	cmpl	$-8, %edi
+	movl	$-1, %eax
+	cmovnel	%edi, %eax
+	testb	$1, %sil
 	cmovnel	%edi, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c

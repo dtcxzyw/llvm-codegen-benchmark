@@ -45,3 +45,18 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	li	a4, 64
+	andi	a3, a0, 1
+	bltu	a2, a4, .LBB4_3
+	lui	a0, 1024
+	beqz	a3, .LBB4_4
+.LBB4_2:                                # %entry
+	ret
+.LBB4_3:                                # %entry
+	li	a1, 1
+	lui	a0, 1024
+	bnez	a3, .LBB4_2
+.LBB4_4:                                # %entry
+	mv	a0, a1
+	ret

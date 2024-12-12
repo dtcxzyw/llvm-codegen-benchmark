@@ -1,75 +1,44 @@
 func000000000000003e:                   // @func000000000000003e
 // %bb.0:                               // %entry
-	movi	v6.4s, #16
-	shl	v5.4s, v5.4s, #2
-	shl	v4.4s, v4.4s, #2
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	orr	v1.16b, v5.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
-	add	v0.4s, v0.4s, v0.4s
-	add	v1.4s, v1.4s, v1.4s
+	lsl	w8, w2, #2
+	orr	w9, w1, w0
+	and	w8, w8, #0x10
+	orr	w8, w9, w8
+	lsl	w0, w8, #1
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	movi	v6.4s, #4, lsl #8
-	shl	v5.4s, v5.4s, #3
-	shl	v4.4s, v4.4s, #3
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	orr	v1.16b, v5.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
-	add	v0.4s, v0.4s, v0.4s
-	add	v1.4s, v1.4s, v1.4s
+	lsl	w8, w2, #3
+	orr	w9, w1, w0
+	and	w8, w8, #0x400
+	orr	w8, w9, w8
+	lsl	w0, w8, #1
 	ret
                                         // -- End function
 func000000000000003a:                   // @func000000000000003a
 // %bb.0:                               // %entry
-	movi	v6.4s, #2, lsl #8
-	add	v5.4s, v5.4s, v5.4s
-	add	v4.4s, v4.4s, v4.4s
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	orr	v1.16b, v5.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
-	add	v0.4s, v0.4s, v0.4s
-	add	v1.4s, v1.4s, v1.4s
+	lsl	w8, w2, #1
+	orr	w9, w1, w0
+	and	w8, w8, #0x200
+	orr	w8, w9, w8
+	lsl	w0, w8, #1
 	ret
                                         // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	movi	v6.4s, #252
-	shl	v5.4s, v5.4s, #2
-	shl	v4.4s, v4.4s, #2
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	orr	v1.16b, v5.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
-	shl	v0.4s, v0.4s, #16
-	shl	v1.4s, v1.4s, #16
+	ubfiz	w8, w2, #2, #6
+	orr	w9, w1, w0
+	orr	w8, w8, w9
+	lsl	w0, w8, #16
 	ret
                                         // -- End function
 func0000000000000039:                   // @func0000000000000039
 // %bb.0:                               // %entry
-	movi	v6.4s, #128, lsl #8
-	shl	v5.4s, v5.4s, #14
-	shl	v4.4s, v4.4s, #14
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	orr	v1.16b, v5.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
-	add	v0.4s, v0.4s, v0.4s
-	add	v1.4s, v1.4s, v1.4s
+	lsl	w8, w2, #14
+	orr	w9, w1, w0
+	and	w8, w8, #0x8000
+	orr	w8, w8, w9
+	lsl	w0, w8, #1
 	ret
                                         // -- End function

@@ -14,7 +14,7 @@ entry:
   ret i128 %5
 }
 
-; 31 occurrences:
+; 34 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/hash_generator_testing.cc.ll
 ; actix-rs/optimized/1a89q5mj3jl9opyq.ll
@@ -46,6 +46,9 @@ entry:
 ; ockam-rs/optimized/4df8gyzy0u3roc94.ll
 ; ockam-rs/optimized/8vw3dw8isly7xg2.ll
 ; ockam-rs/optimized/cts9nubscl1ph7i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:

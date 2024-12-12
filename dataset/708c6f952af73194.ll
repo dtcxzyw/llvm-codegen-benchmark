@@ -1,10 +1,8 @@
 
-; 11 occurrences:
-; libpng/optimized/pngrtran.c.ll
+; 9 occurrences:
 ; linux/optimized/cistpl.ll
 ; lz4/optimized/lz4.c.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
-; openjdk/optimized/pngrtran.ll
 ; openssl/optimized/libcrypto-lib-http_client.ll
 ; openssl/optimized/libcrypto-shlib-http_client.ll
 ; openusd/optimized/lz4.cpp.ll

@@ -18,7 +18,7 @@ func0000000000000004:                   # @func0000000000000004
 	srai	a1, a1, 56
 	or	a0, a0, a1
 	sext.w	a0, a0
-	sltiu	a0, a0, 4
+	sltiu	a0, a0, 256
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a1, a1, 56

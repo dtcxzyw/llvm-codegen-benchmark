@@ -84,9 +84,20 @@ entry:
 ; postgres/optimized/aset.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; Function Attrs: nounwind
+define i64 @func0000000000000031(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 7
+  %3 = zext nneg i32 %0 to i64
+  %4 = select i1 %2, i64 %3, i64 0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; postgres/optimized/aset.ll
+; Function Attrs: nounwind
 define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 7
+  %2 = icmp ugt i64 %1, 8
   %3 = zext nneg i32 %0 to i64
   %4 = select i1 %2, i64 %3, i64 0
   ret i64 %4

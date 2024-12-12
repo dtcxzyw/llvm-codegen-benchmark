@@ -19,7 +19,7 @@ func000000000000000a:                   # @func000000000000000a
 	.long	1                               # 0x1
 .LCPI2_1:
 	.quad	120                             # 0x78
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000001ea:                   # @func00000000000001ea
 	vpsllq	$2, %ymm2, %ymm2
 	vpcmpltd	.LCPI2_0(%rip){1to4}, %xmm1, %k1
 	vpaddq	.LCPI2_1(%rip){1to4}, %ymm2, %ymm0 {%k1}

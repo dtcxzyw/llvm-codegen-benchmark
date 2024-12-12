@@ -49,11 +49,13 @@ entry:
   ret i1 %5
 }
 
-; 87 occurrences:
+; 89 occurrences:
 ; abc/optimized/wlcReadVer.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; bdwgc/optimized/cordprnt.c.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/to_chars.ll
 ; chibicc/optimized/unicode.ll
 ; clamav/optimized/regexec.c.ll
 ; cmake/optimized/System.c.ll
@@ -146,10 +148,11 @@ entry:
   ret i1 %5
 }
 
-; 83 occurrences:
+; 85 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/mapperTree.c.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
+; boost/optimized/ipv6_address.ll
 ; cpython/optimized/unicodedata.ll
 ; jq/optimized/euc_jp.ll
 ; jq/optimized/regenc.ll
@@ -215,7 +218,6 @@ entry:
 ; openjdk/optimized/vframe.ll
 ; openssl/optimized/libcrypto-lib-txt_db.ll
 ; openssl/optimized/libcrypto-shlib-txt_db.ll
-; openssl/optimized/x509aux-bin-x509aux.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; ruby/optimized/emacs_mule.ll
@@ -229,6 +231,8 @@ entry:
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; zxing/optimized/DMECEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
@@ -265,7 +269,7 @@ entry:
 ; sundials/optimized/cvodea.c.ll
 ; sundials/optimized/idaa.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %1
@@ -273,7 +277,8 @@ entry:
   ret i1 %5
 }
 
-; 116 occurrences:
+; 118 occurrences:
+; boost/optimized/conversion.ll
 ; cmake/optimized/cmProcess.cxx.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; folly/optimized/AsyncSocketException.cpp.ll
@@ -328,7 +333,6 @@ entry:
 ; postgres/optimized/fe-misc.ll
 ; postgres/optimized/xlog.ll
 ; qemu/optimized/hw_char_riscv_htif.c.ll
-; qemu/optimized/net_dump.c.ll
 ; qemu/optimized/net_vhost-vdpa.c.ll
 ; velox/optimized/md5.cpp.ll
 ; xgboost/optimized/tree_model.cc.ll
@@ -366,6 +370,8 @@ entry:
 ; yosys/optimized/wreduce.ll
 ; yosys/optimized/xilinx_srl.ll
 ; yosys/optimized/xprop.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
@@ -412,8 +418,10 @@ entry:
   ret i1 %5
 }
 
-; 88 occurrences:
+; 90 occurrences:
 ; abseil-cpp/optimized/extension_test.cc.ll
+; boost/optimized/conversion.ll
+; boost/optimized/test_filebuf.ll
 ; brotli/optimized/backward_references.c.ll
 ; cmake/optimized/cmProcess.cxx.ll
 ; draco/optimized/ply_reader.cc.ll
@@ -510,7 +518,9 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -531,7 +541,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_ide_core.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000049(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw i64 %0, %1
@@ -549,7 +559,7 @@ entry:
 ; nuttx/optimized/lib_meminstream.c.ll
 ; openjdk/optimized/collectedHeap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw i64 %0, %1
@@ -557,7 +567,7 @@ entry:
   ret i1 %5
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/giaFrames.c.ll
 ; cmake/optimized/hostip.c.ll
@@ -572,6 +582,7 @@ entry:
 ; icu/optimized/regexcmp.ll
 ; icu/optimized/rematch.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/conv_depthwise.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
@@ -591,7 +602,7 @@ entry:
 ; velox/optimized/Timestamp.cpp.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %1
@@ -608,7 +619,7 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; quantlib/optimized/averagebmacoupon.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %1
@@ -623,7 +634,7 @@ entry:
 ; opencv/optimized/radial_variance_hash.cpp.ll
 ; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %1
@@ -634,7 +645,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/sswRarity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw nsw i64 %0, %1
@@ -659,7 +670,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/crypto.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw i64 %0, %1
@@ -681,7 +692,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/hex.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %1
@@ -692,7 +703,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/heaptoast.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %1
@@ -703,7 +714,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/replication.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000027(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %1
@@ -716,7 +727,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %1

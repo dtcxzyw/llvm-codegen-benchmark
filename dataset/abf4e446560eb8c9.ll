@@ -1,13 +1,15 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; icu/optimized/double-conversion-strtod.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000404(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 10
   %3 = add i64 %2, -48
@@ -16,12 +18,15 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 6 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000408(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 10
   %3 = add i64 %2, -48
@@ -34,7 +39,7 @@ entry:
 ; nghttp2/optimized/url_parser.c.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 10
   %3 = add i64 %2, -48
@@ -65,7 +70,7 @@ entry:
 ; pbrt-v4/optimized/parser.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 10
   %3 = add i64 %2, -48
@@ -74,9 +79,8 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
-; hermes/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; llvm/optimized/LLLexer.cpp.ll
@@ -125,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DLangDemangle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000406(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 26
   %3 = add i64 %2, -97
@@ -151,7 +155,7 @@ entry:
 ; ockam-rs/optimized/39elqh75xhewanjo.ll
 ; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 86400
   %3 = add nsw i64 %2, -62135683200
@@ -163,7 +167,7 @@ entry:
 ; 1 occurrences:
 ; pbrt-v4/optimized/parser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 10
   %3 = add i64 %2, -48

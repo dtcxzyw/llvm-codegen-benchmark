@@ -21,7 +21,8 @@ entry:
   ret i64 %2
 }
 
-; 177 occurrences:
+; 178 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -207,7 +208,8 @@ entry:
   ret i64 %2
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll

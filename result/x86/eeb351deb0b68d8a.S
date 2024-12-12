@@ -9,17 +9,14 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andl	$532676608, %esi                # imm = 0x1FC00000
 	cmpl	$12582912, %esi                 # imm = 0xC00000
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movabsq	$30064771072, %rax              # imm = 0x700000000
-	andq	%rsi, %rax
-	movabsq	$8589934592, %rcx               # imm = 0x200000000
-	cmpq	%rcx, %rax
-	seta	%al
+func0000000000000018:                   # @func0000000000000018
+	testl	$-128, %esi
+	setne	%al
 	orb	%dil, %al
 	retq

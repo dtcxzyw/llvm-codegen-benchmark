@@ -1,5 +1,7 @@
 
-; 174 occurrences:
+; 176 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/default_filter_factory.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/CiffParser.cpp.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
@@ -68,7 +70,6 @@
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/ModuleUtils.cpp.ll
 ; llvm/optimized/RISCV.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/RelLookupTableConverter.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
@@ -171,6 +172,7 @@
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
+; turborepo-rs/optimized/0nnktc5eh5dfbf96r918rph4u.ll
 ; wireshark/optimized/file-elf.c.ll
 ; wireshark/optimized/packet-tibia.c.ll
 ; wireshark/optimized/vwr.c.ll
@@ -182,7 +184,7 @@ entry:
   ret i64 %2
 }
 
-; 407 occurrences:
+; 416 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/extraUtilCube.c.ll
 ; abc/optimized/giaAgi.c.ll
@@ -190,6 +192,10 @@ entry:
 ; abseil-cpp/optimized/marshalling_test.cc.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/rational.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -231,6 +237,10 @@ entry:
 ; entt/optimized/meta_ctor.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; folly/optimized/Barrier.cpp.ll
+; folly/optimized/CPUThreadPoolExecutor.cpp.ll
+; folly/optimized/EDFThreadPoolExecutor.cpp.ll
+; folly/optimized/ManualExecutor.cpp.ll
+; folly/optimized/ThreadPoolExecutor.cpp.ll
 ; freetype/optimized/ftbitmap.c.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; gromacs/optimized/densityfittingforceprovider.cpp.ll
@@ -384,7 +394,6 @@ entry:
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/PtrState.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RetainSummaryManager.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -513,7 +522,6 @@ entry:
 ; qemu/optimized/hw_char_virtio-serial-bus.c.ll
 ; qemu/optimized/hw_net_can_can_kvaser_pci.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; quantlib/optimized/catrisk.ll
 ; quantlib/optimized/interestrateindex.ll
 ; quantlib/optimized/ratehelpers.ll
@@ -547,6 +555,7 @@ entry:
 ; spike/optimized/fsqrt_s.ll
 ; spike/optimized/fsub_s.ll
 ; tev/optimized/ImageViewer.cpp.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; velox/optimized/ArrayDistinct.cpp.ll
 ; velox/optimized/ArraySum.cpp.ll
@@ -563,7 +572,6 @@ entry:
 ; velox/optimized/MapZipWith.cpp.ll
 ; velox/optimized/Not.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
-; velox/optimized/RandomUtil.cpp.ll
 ; velox/optimized/Re2Functions.cpp.ll
 ; velox/optimized/RowFunction.cpp.ll
 ; velox/optimized/SequenceVector.cpp.ll
@@ -589,6 +597,9 @@ entry:
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/sat_local_search.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {

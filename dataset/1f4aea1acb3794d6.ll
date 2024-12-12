@@ -1,5 +1,5 @@
 
-; 638 occurrences:
+; 643 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -23,6 +23,9 @@
 ; assimp/optimized/TargetAnimation.cpp.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_body.cpp.ll
 ; box2d/optimized/b2_circle_shape.cpp.ll
 ; box2d/optimized/b2_collide_circle.cpp.ll
@@ -326,7 +329,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -637,6 +639,9 @@
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/regression_obj.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/5lgahps99tv0rsaolw3x59ow2.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {

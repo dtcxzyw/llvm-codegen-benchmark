@@ -4,7 +4,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$2, %edi
 	setb	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addl	$-48, %edi
 	xorl	%eax, %eax
 	cmpl	$10, %edi
@@ -26,7 +26,7 @@ func0000000000000014:                   # @func0000000000000014
 	cmpl	$2, %edi
 	setge	%al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	xorl	%eax, %eax
 	cmpl	$-1, %edi
 	sete	%al

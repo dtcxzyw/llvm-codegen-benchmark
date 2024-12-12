@@ -20,24 +20,35 @@ func0000000000000002:                   # @func0000000000000002
 	vzeroupper
 	retq
 .LCPI2_0:
-	.quad	0x414312d000000000              # double 2.5E+6
+	.quad	0x41dfffffff800000              # double 2147483646
 .LCPI2_1:
 	.quad	0x3ff0000000000000              # double 1
-func0000000000000004:                   # @func0000000000000004
+func0000000000000003:                   # @func0000000000000003
 	vcvtuqq2pd	%ymm0, %ymm0
 	vdivpd	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
-	vcmpgtpd	.LCPI2_1(%rip){1to4}, %ymm0, %k0
+	vcmpngepd	.LCPI2_1(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI3_0:
 	.quad	0x414312d000000000              # double 2.5E+6
 .LCPI3_1:
+	.quad	0x3ff0000000000000              # double 1
+func0000000000000004:                   # @func0000000000000004
+	vcvtuqq2pd	%ymm0, %ymm0
+	vdivpd	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
+	vcmpgtpd	.LCPI3_1(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
+	.quad	0x414312d000000000              # double 2.5E+6
+.LCPI4_1:
 	.quad	0x3feccccccccccccd              # double 0.90000000000000002
 func000000000000000b:                   # @func000000000000000b
 	vcvtuqq2pd	%ymm0, %ymm0
-	vdivpd	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
-	vcmpngtpd	.LCPI3_1(%rip){1to4}, %ymm0, %k0
+	vdivpd	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
+	vcmpngtpd	.LCPI4_1(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

@@ -1,11 +1,9 @@
 
-; 56 occurrences:
+; 63 occurrences:
 ; abc/optimized/wlcStdin.c.ll
-; arrow/optimized/UriIp4Base.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/pdf.c.ll
-; cmake/optimized/archive_random.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -30,7 +28,6 @@
 ; openjdk/optimized/compactHashtable.ll
 ; openjdk/optimized/jquant1.ll
 ; openusd/optimized/stringUtils.cpp.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/fe-exec.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
@@ -55,6 +52,16 @@
 ; wireshark/optimized/packet-oscore.c.ll
 ; wireshark/optimized/packet-ubx.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
@@ -64,9 +71,16 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
+; 9 occurrences:
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
 ; spike/optimized/vadc_vim.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -75,7 +89,7 @@ entry:
   ret i8 %4
 }
 
-; 29 occurrences:
+; 34 occurrences:
 ; chibicc/optimized/parse.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; cmake/optimized/cmFileInstaller.cxx.ll
@@ -105,6 +119,11 @@ entry:
 ; yosys/optimized/sat.ll
 ; yosys/optimized/select.ll
 ; z3/optimized/array_internalize.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000f(i8 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -163,7 +182,7 @@ entry:
 define i8 @func000000000000000a(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw i8 %1, %2
-  %4 = add nuw i8 %3, %0
+  %4 = add nuw i8 %0, %3
   ret i8 %4
 }
 

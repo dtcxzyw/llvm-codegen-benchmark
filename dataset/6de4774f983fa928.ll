@@ -7,10 +7,10 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000001e1(i32 %0, i32 %1) #0 {
+define i32 @func00000000000003e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ugt i32 %2, 1
+  %3 = icmp samesign ugt i32 %2, 1
   %4 = sub nuw nsw i32 32, %0
   %5 = shl nsw i32 -1, %4
   %6 = select i1 %3, i32 %5, i32 -2

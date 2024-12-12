@@ -1,20 +1,24 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000070(i64 %0, i64 %1) #0 {
+define i32 @func00000000000000f0(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
-  %3 = icmp ugt i64 %2, 4294967295
+  %3 = icmp samesign ugt i64 %2, 4294967295
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
@@ -32,7 +36,7 @@ entry:
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -45,7 +49,7 @@ entry:
 ; openusd/optimized/json.cpp.ll
 ; spike/optimized/s_addMagsF32.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i32 @func00000000000000d8(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = icmp ne i64 %2, 0
@@ -57,7 +61,7 @@ entry:
 ; oiio/optimized/strutil.cpp.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000030(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000050(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = icmp ugt i64 %2, 999999999999999999
@@ -71,7 +75,7 @@ entry:
 define i32 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

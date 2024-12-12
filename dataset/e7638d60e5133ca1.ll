@@ -24,8 +24,7 @@ entry:
   ret float %4
 }
 
-; 17 occurrences:
-; box2d/optimized/b2_collision.cpp.ll
+; 16 occurrences:
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_mouse_joint.cpp.ll
 ; gromacs/optimized/propagator.cpp.ll

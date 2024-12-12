@@ -11,7 +11,7 @@
 ; mold/optimized/input-sections.cc.SPARC64.cc.ll
 ; mold/optimized/input-sections.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i8 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i8
   %3 = icmp eq i64 %0, 0
@@ -19,26 +19,25 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
-; libquic/optimized/quic_framer.cc.ll
-; php/optimized/main.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000008(i64 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i8
-  %3 = icmp ugt i64 %0, 2
-  %4 = select i1 %3, i8 1, i8 %2
-  ret i8 %4
-}
-
 ; 1 occurrences:
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000026(i64 %0, i64 %1) #0 {
+define i8 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i8
   %3 = icmp slt i64 %0, 0
   %4 = select i1 %3, i8 0, i8 %2
+  ret i8 %4
+}
+
+; 1 occurrences:
+; libquic/optimized/quic_framer.cc.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i8
+  %3 = icmp ugt i64 %0, 255
+  %4 = select i1 %3, i8 -1, i8 %2
   ret i8 %4
 }
 
@@ -69,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/freespace.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i8 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i8
   %3 = icmp ugt i64 %0, 8159

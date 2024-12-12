@@ -39,21 +39,41 @@ func0000000000000011:                   # @func0000000000000011
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000009:                   # @func0000000000000009
+func0000000000000031:                   # @func0000000000000031
+	sext.w	a3, a2
+	li	a2, 128
+	andi	a1, a1, 1
+	bgeu	a3, a2, .LBB3_2
+	li	a2, 64
+.LBB3_2:                                # %entry
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	or	a0, a0, a1
+	ret
+func0000000000000008:                   # @func0000000000000008
+	andi	a1, a1, 1
+	srliw	a2, a2, 16
+	seqz	a2, a2
+	slli	a2, a2, 16
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	or	a0, a0, a1
+	ret
+func0000000000000029:                   # @func0000000000000029
 	andi	a1, a1, 1
 	sext.w	a3, a2
 	li	a4, 1048
 	lui	a2, 262144
-	bgeu	a3, a4, .LBB3_3
+	bgeu	a3, a4, .LBB5_3
 	lui	a3, 131072
-	beqz	a1, .LBB3_4
-.LBB3_2:                                # %entry
+	beqz	a1, .LBB5_4
+.LBB5_2:                                # %entry
 	or	a0, a0, a3
 	ret
-.LBB3_3:                                # %entry
+.LBB5_3:                                # %entry
 	lui	a2, 393216
 	lui	a3, 131072
-	bnez	a1, .LBB3_2
-.LBB3_4:                                # %entry
+	bnez	a1, .LBB5_2
+.LBB5_4:                                # %entry
 	or	a0, a0, a2
 	ret

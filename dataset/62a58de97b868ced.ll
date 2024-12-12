@@ -6,10 +6,10 @@
 ; openusd/optimized/testUsdImagingDelegate.cpp.ll
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000de(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 4
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
@@ -18,13 +18,33 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/DPXColorConverter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.idx = shl nsw i64 %2, 5
-  %3 = getelementptr nusw i8, ptr %0, i64 %.idx
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
   %4 = sub nuw nsw i64 2, %1
-  %5 = getelementptr nusw double, ptr %3, i64 %4
+  %5 = getelementptr nusw nuw double, ptr %3, i64 %4
   ret ptr %5
+}
+
+; 9 occurrences:
+; turborepo-rs/optimized/5acbtdg9xgmdrsj5fdxgf9kjz.ll
+; zed-rs/optimized/4fjzcqwe72s61qqj6jfld7d0e.ll
+; zed-rs/optimized/53uecthum8cknzmllu2n03rw6.ll
+; zed-rs/optimized/5lzup9fu4oickcrtt9hcrukzv.ll
+; zed-rs/optimized/9by7xbrgipxjyx0u6qobo1s7j.ll
+; zed-rs/optimized/bwqq233pic9g42d5tme8mthrz.ll
+; zed-rs/optimized/cn5tr75hwj0e1t163yn1kh0fu.ll
+; zed-rs/optimized/er5bx212oa06ay0po6fyxrl51.ll
+; zed-rs/optimized/f2on42re1vwqfvihm5s1p3ljw.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000be(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw i64 %2, 5
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = sub nuw nsw i64 -32, %1
+  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -100,28 +120,15 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
-; libwebp/optimized/predictor_enc.c.ll
-; proj/optimized/grids.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 4
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = sub nuw nsw i64 7, %1
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
 ; 1 occurrences:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = sub nuw nsw i64 14, %1
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -135,6 +142,18 @@ entry:
   %5 = sub i64 1, %1
   %6 = getelementptr nusw i16, ptr %4, i64 %5
   ret ptr %6
+}
+
+; 1 occurrences:
+; libwebp/optimized/predictor_enc.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %.idx = shl nuw nsw i64 %2, 10
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
+  %4 = sub nuw nsw i64 256, %1
+  %5 = getelementptr nusw nuw i32, ptr %3, i64 %4
+  ret ptr %5
 }
 
 ; 3 occurrences:

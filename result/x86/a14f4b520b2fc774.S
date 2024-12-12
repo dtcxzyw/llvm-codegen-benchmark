@@ -28,12 +28,6 @@ func0000000000000001:                   # @func0000000000000001
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movl	%edi, %eax
-	andl	$81, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
-	retq
 func000000000000000b:                   # @func000000000000000b
 	movl	%edi, %eax
 	andl	$-2147483648, %edx              # imm = 0x80000000

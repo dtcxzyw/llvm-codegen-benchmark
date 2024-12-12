@@ -1,11 +1,8 @@
 
-; 83 occurrences:
+; 71 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
-; darktable/optimized/Cr2Decompressor.cpp.ll
-; darktable/optimized/LJpegDecompressor.cpp.ll
-; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/chunk-format.ll
 ; gromacs/optimized/awh.cpp.ll
@@ -37,7 +34,6 @@
 ; gromacs/optimized/update.cpp.ll
 ; gromacs/optimized/update_vv.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
-; hdf5/optimized/H5dbg.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/i915_gem_stolen.ll
@@ -46,26 +42,16 @@
 ; linux/optimized/mpih-div.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/Base64.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
-; opencv/optimized/fast_gemm.cpp.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/divnode.ll
 ; openjdk/optimized/filemap.ll
 ; openjdk/optimized/shenandoahMarkBitMap.ll
-; openmpi/optimized/pmix_output.ll
-; openssl/optimized/libssl-lib-statem_dtls.ll
-; openssl/optimized/libssl-shlib-statem_dtls.ll
 ; openusd/optimized/prim.cpp.ll
 ; pocketpy/optimized/random.cpp.ll
 ; postgres/optimized/gindatapage.ll
 ; postgres/optimized/ginget.ll
 ; postgres/optimized/ginpostinglist.ll
 ; postgres/optimized/gistproc.ll
-; postgres/optimized/mac.ll
-; postgres/optimized/vacuum.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
@@ -82,22 +68,23 @@
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wireshark/optimized/vwr.c.ll
 ; yosys/optimized/fstapi.ll
-; z3/optimized/dd_bdd.cpp.ll
+; zed-rs/optimized/0eh1fm3h72yjwo2ipis72ui0f.ll
+; zed-rs/optimized/adlc6qfcwjhvmcaovuwfkwg5s.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
-; 93 occurrences:
+; 92 occurrences:
 ; abseil-cpp/optimized/fixed_array_test.cc.ll
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; assimp/optimized/Subdivision.cpp.ll
 ; assimp/optimized/unzip.c.ll
 ; assimp/optimized/zip.c.ll
-; cmake/optimized/archive_pack_dev.c.ll
 ; eastl/optimized/TestMemory.cpp.ll
 ; flac/optimized/foreign_metadata.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -186,26 +173,23 @@ entry:
 ; wireshark/optimized/opcua.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
-; 69 occurrences:
+; 62 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; assimp/optimized/zip.c.ll
-; ceres/optimized/line_search_direction.cc.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/truetype.c.ll
 ; freetype/optimized/type42.c.ll
 ; git/optimized/chunk-format.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/H5Cimage.c.ll
 ; hdf5/optimized/H5Oattr.c.ll
 ; hdf5/optimized/H5Odrvinfo.c.ll
-; hdf5/optimized/H5Oefl.c.ll
 ; hdf5/optimized/H5Ofill.c.ll
 ; hdf5/optimized/H5Olayout.c.ll
 ; hdf5/optimized/H5Olink.c.ll
@@ -219,7 +203,6 @@ entry:
 ; lief/optimized/ssl_tls12_client.c.ll
 ; linux/optimized/block_validity.ll
 ; linux/optimized/efi_64.ll
-; linux/optimized/extents.ll
 ; linux/optimized/intel_hdmi.ll
 ; linux/optimized/mmp.ll
 ; linux/optimized/resize.ll
@@ -236,10 +219,8 @@ entry:
 ; openssl/optimized/libcrypto-lib-wrap128.ll
 ; openssl/optimized/libcrypto-shlib-ct_oct.ll
 ; openssl/optimized/libcrypto-shlib-wrap128.ll
-; openssl/optimized/libssl-lib-d1_lib.ll
 ; openssl/optimized/libssl-lib-statem_dtls.ll
 ; openssl/optimized/libssl-lib-tls_common.ll
-; openssl/optimized/libssl-shlib-d1_lib.ll
 ; openssl/optimized/libssl-shlib-statem_dtls.ll
 ; openssl/optimized/libssl-shlib-tls_common.ll
 ; pcg-cpp/optimized/pcg-demo.cpp.ll
@@ -250,8 +231,6 @@ entry:
 ; postgres/optimized/ginget.ll
 ; postgres/optimized/ginpostinglist.ll
 ; postgres/optimized/gistproc.ll
-; postgres/optimized/mac.ll
-; postgres/optimized/vacuum.ll
 ; qemu/optimized/crypto_der.c.ll
 ; qemu/optimized/optimize.c.ll
 ; rocksdb/optimized/block.cc.ll
@@ -262,19 +241,19 @@ entry:
 ; vcpkg/optimized/uuid.cpp.ll
 ; wireshark/optimized/packet-asterix.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; clamav/optimized/XzDec.c.ll
-; cpython/optimized/_pickle.ll
 ; linux/optimized/iova.ll
 ; linux/optimized/tsc_sync.ll
 ; nix/optimized/serialise.ll
@@ -290,6 +269,25 @@ define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp ugt i64 %3, %0
+  ret i1 %4
+}
+
+; 10 occurrences:
+; ceres/optimized/line_search_direction.cc.ll
+; freetype/optimized/sfnt.c.ll
+; hdf5/optimized/H5Cimage.c.ll
+; hdf5/optimized/H5Oefl.c.ll
+; lief/optimized/psa_crypto_storage.c.ll
+; linux/optimized/extents.ll
+; openssl/optimized/libssl-lib-d1_lib.ll
+; openssl/optimized/libssl-shlib-d1_lib.ll
+; postgres/optimized/mac.ll
+; postgres/optimized/vacuum.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = icmp samesign ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -323,7 +321,30 @@ entry:
   ret i1 %4
 }
 
-; 103 occurrences:
+; 14 occurrences:
+; darktable/optimized/Cr2Decompressor.cpp.ll
+; darktable/optimized/LJpegDecompressor.cpp.ll
+; freetype/optimized/ftbase.c.ll
+; freetype/optimized/sfnt.c.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; opencv/optimized/fast_gemm.cpp.ll
+; openmpi/optimized/pmix_output.ll
+; openssl/optimized/libssl-lib-statem_dtls.ll
+; openssl/optimized/libssl-shlib-statem_dtls.ll
+; postgres/optimized/mac.ll
+; postgres/optimized/vacuum.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = icmp samesign ult i64 %3, %0
+  ret i1 %4
+}
+
+; 101 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -335,12 +356,10 @@ entry:
 ; folly/optimized/ThreadedExecutor.cpp.ll
 ; folly/optimized/json_patch.cpp.ll
 ; freetype/optimized/type1.c.ll
-; git/optimized/patch-delta.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/blk-merge.ll
-; linux/optimized/features.ll
 ; linux/optimized/generic.ll
 ; linux/optimized/intel.ll
 ; linux/optimized/ipi.ll
@@ -480,20 +499,19 @@ entry:
 ; slurm/optimized/bitstring.ll
 ; wireshark/optimized/packet-radius.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp slt i64 %3, %0
   ret i1 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/luckyFast6.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
-; freetype/optimized/type1.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/swap_state.ll
 ; llvm/optimized/DFAEmitter.cpp.ll
@@ -511,30 +529,27 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
-; darktable/optimized/RawImage.cpp.ll
+; 3 occurrences:
 ; lief/optimized/ssl_tls.c.ll
 ; luau/optimized/lnumprint.cpp.ll
-; postgres/optimized/mac.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000025(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ule i64 %3, %0
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/vgaarb.ll
 ; postgres/optimized/gindatapage.ll
-; postgres/optimized/mac.ll
 ; qemu/optimized/optimize.c.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp uge i64 %3, %0
@@ -550,7 +565,7 @@ entry:
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp sgt i64 %3, %0
@@ -561,7 +576,7 @@ entry:
 ; qemu/optimized/optimize.c.ll
 ; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000027(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp sle i64 %3, %0
@@ -571,7 +586,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp sge i64 %3, %0
@@ -762,10 +777,21 @@ entry:
 ; tev/optimized/main.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ne i64 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; darktable/optimized/RawImage.cpp.ll
+; postgres/optimized/mac.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = icmp samesign ule i64 %3, %0
   ret i1 %4
 }
 
@@ -802,6 +828,38 @@ define i1 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp uge i64 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; freetype/optimized/type1.c.ll
+; z3/optimized/dd_bdd.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or i64 %1, %2
+  %4 = icmp samesign ult i64 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; postgres/optimized/mac.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000039(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = icmp samesign uge i64 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; cpython/optimized/_pickle.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or i64 %1, %2
+  %4 = icmp samesign ugt i64 %3, %0
   ret i1 %4
 }
 

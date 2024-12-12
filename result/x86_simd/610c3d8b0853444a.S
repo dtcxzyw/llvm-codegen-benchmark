@@ -7,5 +7,5 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovw2m	%xmm0, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm0   # ymm0 = [61889,61889,61889,61889,61889,61889,61889,61889]
 	vpbroadcastd	.LCPI0_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [67104816,67104816,67104816,67104816,67104816,67104816,67104816,67104816]
-	vpand	%ymm1, %ymm0, %ymm0
+	vpand	%ymm0, %ymm1, %ymm0
 	retq

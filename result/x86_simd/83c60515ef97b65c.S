@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	1                               # 0x1
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vpslld	$31, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -19,7 +19,7 @@ func000000000000004a:                   # @func000000000000004a
 	.quad	1                               # 0x1
 .LCPI1_2:
 	.long	128                             # 0x80
-func0000000000000101:                   # @func0000000000000101
+func0000000000000a01:                   # @func0000000000000a01
 	vpslld	$31, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2   # ymm2 = [3,3,3,3]
@@ -40,7 +40,7 @@ func0000000000000101:                   # @func0000000000000101
 	.quad	-48                             # 0xffffffffffffffd0
 .LCPI2_2:
 	.long	10                              # 0xa
-func0000000000000111:                   # @func0000000000000111
+func0000000000000221:                   # @func0000000000000221
 	vpslld	$31, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm2   # ymm2 = [18446744073709551561,18446744073709551561,18446744073709551561,18446744073709551561]

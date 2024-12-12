@@ -11,9 +11,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/giaFrames.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {

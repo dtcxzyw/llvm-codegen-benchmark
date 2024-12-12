@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 73 occurrences:
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; hermes/optimized/ES6Class.cpp.ll
 ; hermes/optimized/GCBase.cpp.ll
@@ -42,6 +42,7 @@
 ; llvm/optimized/LoopDeletion.cpp.ll
 ; llvm/optimized/MacroExpander.cpp.ll
 ; llvm/optimized/MappedBlockStream.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
@@ -95,13 +96,12 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
 ; llvm/optimized/IRSimilarityIdentifier.cpp.ll
 ; llvm/optimized/InitHeaderSearch.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/SplitModule.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
 entry:

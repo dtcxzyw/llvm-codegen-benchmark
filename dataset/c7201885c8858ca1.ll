@@ -5,10 +5,10 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, -1
-  %4 = icmp ne i64 %3, %2
-  %5 = and i1 %4, %0
-  ret i1 %5
+  %.neg = add i64 %2, 1
+  %3 = icmp ne i64 %1, %.neg
+  %4 = and i1 %0, %3
+  ret i1 %4
 }
 
 ; 7 occurrences:
@@ -20,11 +20,11 @@ entry:
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %2, %1
   %4 = icmp slt i64 %3, -1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -35,7 +35,7 @@ define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %2, %1
   %4 = icmp ugt i64 %3, -8193
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

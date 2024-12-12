@@ -21,7 +21,7 @@ func000000000000000c:                   # @func000000000000000c
 	.zero	16,1
 .LCPI2_1:
 	.zero	4,1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpternlogd	$248, .LCPI2_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqb	%xmm1, %xmm0, %xmm0
@@ -32,7 +32,7 @@ func0000000000000011:                   # @func0000000000000011
 	.zero	16,102
 .LCPI3_2:
 	.zero	4,1
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpternlogd	$248, .LCPI3_2(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	vpcmpnleub	.LCPI3_1(%rip), %xmm0, %k0
 	vpmovm2b	%k0, %xmm0

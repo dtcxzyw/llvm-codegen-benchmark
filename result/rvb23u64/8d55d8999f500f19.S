@@ -1,10 +1,10 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	addi	a2, a2, 1
 	add	a0, a0, a1
 	srlw	a0, a0, a2
 	seqz	a0, a0
 	ret
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	addi	a2, a2, -1
 	bset	a2, zero, a2
 	sext.w	a2, a2
@@ -12,28 +12,28 @@ func000000000000008c:                   # @func000000000000008c
 	xor	a0, a0, a2
 	snez	a0, a0
 	ret
-func000000000000018a:                   # @func000000000000018a
+func000000000000030a:                   # @func000000000000030a
 	addi	a2, a2, -1
 	bset	a2, zero, a2
 	sext.w	a2, a2
 	addw	a0, a0, a1
 	slt	a0, a2, a0
 	ret
-func0000000000000196:                   # @func0000000000000196
+func0000000000000326:                   # @func0000000000000326
 	addi	a2, a2, -1
 	bset	a2, zero, a2
 	sext.w	a2, a2
 	addw	a0, a0, a1
 	slt	a0, a0, a2
 	ret
-func0000000000000186:                   # @func0000000000000186
+func0000000000000306:                   # @func0000000000000306
 	addi	a2, a2, -1
 	bset	a2, zero, a2
 	sext.w	a2, a2
 	addw	a0, a0, a1
 	slt	a0, a0, a2
 	ret
-func000000000000019b:                   # @func000000000000019b
+func000000000000032b:                   # @func000000000000032b
 	addi	a2, a2, 1
 	bset	a2, zero, a2
 	sext.w	a2, a2
@@ -41,7 +41,7 @@ func000000000000019b:                   # @func000000000000019b
 	slt	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func000000000000019a:                   # @func000000000000019a
+func000000000000032a:                   # @func000000000000032a
 	addi	a2, a2, 1
 	bset	a2, zero, a2
 	sext.w	a2, a2

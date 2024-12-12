@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/cecPat.c.ll
 ; linux/optimized/hugetlb.ll
-; llvm/optimized/SanitizerArgs.cpp.ll
 ; openjdk/optimized/xMark.ll
 ; openjdk/optimized/zMark.ll
 ; spike/optimized/processor.ll

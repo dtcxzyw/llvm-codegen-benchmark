@@ -34,13 +34,6 @@ func0000000000000004:                   # @func0000000000000004
 	li	a0, 12
 	vmul.vx	v8, v10, a0
 	ret
-func000000000000000c:                   # @func000000000000000c
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	lui	a0, 1048573
-	addi	a0, a0, -1
-	vmul.vx	v8, v10, a0
-	ret
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0

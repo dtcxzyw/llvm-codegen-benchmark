@@ -1,7 +1,6 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; openspiel/optimized/ce.cc.ll
 ; openspiel/optimized/efg_game.cc.ll
@@ -14,10 +13,10 @@
 define i128 @func0000000000000002(i128 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = zext i64 %4 to i128
   %6 = mul nuw i128 %5, 11376068507788127593
-  %7 = xor i128 %6, %0
+  %7 = xor i128 %0, %6
   ret i128 %7
 }
 

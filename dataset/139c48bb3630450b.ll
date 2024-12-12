@@ -8,7 +8,7 @@ define i16 @func0000000000000060(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = zext i1 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -20,7 +20,7 @@ define i16 @func0000000000000063(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = zext i1 %2 to i16
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 
@@ -31,7 +31,7 @@ define i16 @func0000000000000051(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp sgt i16 %1, -1
   %3 = zext i1 %2 to i16
-  %4 = add nsw i16 %3, %0
+  %4 = add nsw i16 %0, %3
   ret i16 %4
 }
 
@@ -45,7 +45,7 @@ define i16 @func0000000000000040(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, -3
   %3 = zext i1 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 

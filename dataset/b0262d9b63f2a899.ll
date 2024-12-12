@@ -4,7 +4,7 @@
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -65535
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/linux-user_syscall.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000318(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 60
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/html.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1114112
@@ -43,27 +43,13 @@ entry:
 ; abc/optimized/dauDsd.c.ll
 ; opencv/optimized/speech_recognition.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 38
   %4 = icmp slt i32 %0, 1
   %5 = or i1 %4, %3
   ret i1 %5
-}
-
-; 2 occurrences:
-; icu/optimized/parse.ll
-; openspiel/optimized/dou_dizhu_utils.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -13
-  %4 = icmp ult i32 %3, 2
-  %5 = icmp eq i32 %0, 2
-  %6 = or i1 %5, %4
-  ret i1 %6
 }
 
 attributes #0 = { nounwind }

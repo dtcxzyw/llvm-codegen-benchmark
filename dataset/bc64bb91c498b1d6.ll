@@ -7,7 +7,7 @@ entry:
   %3 = shl nsw i32 %2, 16
   %4 = add nsw i32 %3, -4194304
   %5 = shl i32 %1, 26
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 18
   %4 = add nsw i32 %3, -62914560
   %5 = shl nuw nsw i32 %1, 6
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -31,7 +31,7 @@ entry:
 define i32 @func00000000000000fa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl nuw nsw i32 %1, 18
   %6 = add nsw i32 %5, -62914560
   %7 = or i32 %6, %4
@@ -55,11 +55,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = add nsw i32 %3, -1
-  %5 = shl i32 %1, 9
+  %5 = shl nuw nsw i32 %1, 9
   %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
@@ -73,7 +73,7 @@ entry:
   %3 = shl i32 %2, 16
   %4 = add i32 %3, 65536
   %5 = shl i32 %1, 7
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }

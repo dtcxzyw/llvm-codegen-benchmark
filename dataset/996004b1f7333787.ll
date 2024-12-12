@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rocksdb/optimized/column_family.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, i32 %1) #0 {
+define i1 @func00000000000000c1(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 1
   %3 = icmp eq ptr %0, null
@@ -10,7 +10,7 @@ entry:
   ret i1 %4
 }
 
-; 89 occurrences:
+; 86 occurrences:
 ; git/optimized/default.ll
 ; hermes/optimized/AST2JS.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
@@ -19,10 +19,8 @@ entry:
 ; libzmq/optimized/mailbox_safe.cpp.ll
 ; libzmq/optimized/pipe.cpp.ll
 ; linux/optimized/libata-eh.ll
-; linux/optimized/maple_tree.ll
 ; linux/optimized/posix-timers.ll
 ; linux/optimized/scan.ll
-; linux/optimized/spectmgmt.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
@@ -49,7 +47,6 @@ entry:
 ; llvm/optimized/MoveChecker.cpp.ll
 ; llvm/optimized/NewGVN.cpp.ll
 ; llvm/optimized/NullabilityChecker.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReturnPointerRangeChecker.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
@@ -101,7 +98,7 @@ entry:
 ; qemu/optimized/qobject_block-qdict.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp eq ptr %0, null
@@ -109,7 +106,7 @@ entry:
   ret i1 %4
 }
 
-; 70 occurrences:
+; 69 occurrences:
 ; linux/optimized/libata-scsi.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -163,7 +160,6 @@ entry:
 ; llvm/optimized/VLASizeChecker.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
-; llvm/optimized/X86PartialReduction.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; openjdk/optimized/callGenerator.ll
 ; openjdk/optimized/deoptimization.ll
@@ -181,7 +177,7 @@ entry:
 ; openssl/optimized/libssl-lib-quic_record_shared.ll
 ; openssl/optimized/libssl-shlib-quic_record_shared.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000081(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 3
   %3 = icmp eq ptr %0, null
@@ -189,7 +185,7 @@ entry:
   ret i1 %4
 }
 
-; 66 occurrences:
+; 67 occurrences:
 ; hermes/optimized/ESTreeIRGen-expr.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; hermes/optimized/PassManager.cpp.ll
@@ -207,6 +203,7 @@ entry:
 ; llvm/optimized/CGOpenMPRuntimeGPU.cpp.ll
 ; llvm/optimized/CallEvent.cpp.ll
 ; llvm/optimized/CallPromotionUtils.cpp.ll
+; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DataFlowSanitizer.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
@@ -257,7 +254,7 @@ entry:
 ; openjdk/optimized/xBarrierSetC2.ll
 ; openjdk/optimized/zBarrierSetC2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 22
   %3 = icmp ne ptr %0, null
@@ -297,7 +294,7 @@ entry:
 ; openjdk/optimized/memnode.ll
 ; openjdk/optimized/subnode.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000008c(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 9
   %3 = icmp ne ptr %0, null
@@ -311,7 +308,7 @@ entry:
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; postgres/optimized/parse_coerce.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000141(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = icmp eq ptr %0, null
@@ -322,7 +319,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i32 %1) #0 {
+define i1 @func000000000000014c(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 2
   %3 = icmp ne ptr %0, null

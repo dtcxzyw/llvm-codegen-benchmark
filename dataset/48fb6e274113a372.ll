@@ -10,7 +10,7 @@ entry:
   %2 = and i64 %1, 3145728
   %3 = icmp eq i64 %2, 1048576
   %4 = select i1 %3, i64 2097152, i64 0
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -26,7 +26,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000063(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000c3(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65535
   %3 = icmp eq i64 %2, 0

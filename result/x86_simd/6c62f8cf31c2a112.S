@@ -49,7 +49,7 @@
 	.short	2988                            # 0xbac
 	.short	2988                            # 0xbac
 	.short	2988                            # 0xbac
-func0000000000000144:                   # @func0000000000000144
+func0000000000000484:                   # @func0000000000000484
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpaddw	.LCPI0_0(%rip), %ymm2, %ymm0
@@ -111,7 +111,7 @@ func0000000000000144:                   # @func0000000000000144
 	.short	65280                           # 0xff00
 	.short	65280                           # 0xff00
 	.short	65280                           # 0xff00
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpaddw	.LCPI1_0(%rip), %ymm2, %ymm0

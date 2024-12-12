@@ -1,5 +1,5 @@
 
-; 477 occurrences:
+; 479 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/api_vector.cc.ll
@@ -135,7 +135,6 @@
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/RangedConstraintManager.cpp.ll
@@ -422,9 +421,6 @@
 ; proj/optimized/metadata.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; qemu/optimized/hw_net_tulip.c.ll
-; qemu/optimized/hw_virtio_vhost-user-device.c.ll
-; qemu/optimized/hw_virtio_vhost-user-vsock.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; rust-analyzer-rs/optimized/1arzxdbnyk8fkg2l.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
@@ -477,6 +473,12 @@
 ; z3/optimized/nla_basics_lemmas.cpp.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/smt_model_generator.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/8x58xp4s22l8izlb56sviitm3.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:

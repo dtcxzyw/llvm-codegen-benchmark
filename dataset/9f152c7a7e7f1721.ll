@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 63 occurrences:
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaKf.c.ll
@@ -10,6 +10,7 @@
 ; assimp/optimized/glTFImporter.cpp.ll
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
+; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -61,6 +62,7 @@
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; velox/optimized/ConjunctExpr.cpp.ll
 ; xgboost/optimized/random.cc.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:

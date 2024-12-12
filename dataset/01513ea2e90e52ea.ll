@@ -1,5 +1,7 @@
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; folly/optimized/HugePages.cpp.ll

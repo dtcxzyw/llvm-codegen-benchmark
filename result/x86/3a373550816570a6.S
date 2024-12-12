@@ -15,7 +15,8 @@ func0000000000000003:                   # @func0000000000000003
 	notq	%rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	movl	$2, %eax
+	andb	$-32, %dil
+	movabsq	$8589934590, %rax               # imm = 0x1FFFFFFFE
 	shlxq	%rdi, %rax, %rax
 	notq	%rax
 	retq

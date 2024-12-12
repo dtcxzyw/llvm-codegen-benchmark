@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; icu/optimized/tzfmt.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll
@@ -34,7 +35,8 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/get_turns.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -47,18 +49,6 @@ define i1 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
   %4 = icmp eq i32 %0, %1
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; regex-rs/optimized/1pxsmct4oxs5dlep.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000005(i32 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = xor i1 %2, true
-  %4 = icmp ule i32 %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
 }

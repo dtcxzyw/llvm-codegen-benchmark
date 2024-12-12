@@ -11,5 +11,5 @@ func000000000000001f:                   # @func000000000000001f
 	addiw	a0, a0, 1560
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

@@ -1,10 +1,9 @@
 
-; 99 occurrences:
+; 98 occurrences:
 ; abseil-cpp/optimized/proto.cc.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/rawread.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
-; cmake/optimized/vli_decoder.c.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/Compression.cpp.ll
@@ -23,7 +22,6 @@
 ; folly/optimized/json_patch.cpp.ll
 ; git/optimized/index-pack.ll
 ; git/optimized/packfile.ll
-; git/optimized/patch-delta.ll
 ; git/optimized/unpack-objects.ll
 ; hermes/optimized/LEB128.cpp.ll
 ; lief/optimized/BinaryStream.cpp.ll
@@ -99,6 +97,7 @@
 ; yalantinglibs/optimized/type.struct_pb.cc.ll
 ; yalantinglibs/optimized/wrappers.struct_pb.cc.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:

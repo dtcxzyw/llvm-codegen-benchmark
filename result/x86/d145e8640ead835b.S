@@ -1,4 +1,4 @@
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax

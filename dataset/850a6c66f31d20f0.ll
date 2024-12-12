@@ -18,7 +18,7 @@ define i32 @func0000000000000021(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i32
   %2 = sitofp i32 %1 to double
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   %4 = zext i1 %3 to i32
   %5 = add nsw i32 %4, %1
   ret i32 %5
@@ -31,7 +31,7 @@ define i32 @func0000000000000039(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i32
   %2 = sitofp i32 %1 to double
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   %4 = zext i1 %3 to i32
   %5 = add nsw i32 %4, %1
   ret i32 %5

@@ -10,11 +10,11 @@ func0000000000000007:                   # @func0000000000000007
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	li	a1, 2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a1, 6
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, 1

@@ -13,7 +13,7 @@ entry:
   ret i8 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/vgacon.ll
@@ -21,6 +21,8 @@ entry:
 ; qoi/optimized/qoi.ll
 ; raylib/optimized/rtextures.c.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:

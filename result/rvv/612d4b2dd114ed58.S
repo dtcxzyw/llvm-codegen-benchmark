@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	vand.vi	v8, v8, -8
 	li	a0, -40
 	vmseq.vx	v8, v8, a0
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v8, 4
 	vmerge.vim	v8, v8, -1, v0

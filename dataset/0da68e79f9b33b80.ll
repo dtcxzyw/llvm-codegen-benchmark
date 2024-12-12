@@ -18,7 +18,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; freetype/optimized/ftbase.c.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; ncnn/optimized/flatten_x86_avx.cpp.ll
 ; ncnn/optimized/flatten_x86_fma.cpp.ll

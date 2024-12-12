@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/buffered-io.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; qemu/optimized/block_vhdx.c.ll
 ; redis/optimized/intset.ll
 ; rocksdb/optimized/block.cc.ll

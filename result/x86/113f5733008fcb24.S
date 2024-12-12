@@ -9,11 +9,6 @@ func0000000000000003:                   # @func0000000000000003
 	addq	%rsi, %rax
 	andq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movl	%edx, %eax
-	addq	%rsi, %rax
-	andq	%rdi, %rax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	andl	$-8, %edx
 	leaq	(%rdx,%rsi), %rax

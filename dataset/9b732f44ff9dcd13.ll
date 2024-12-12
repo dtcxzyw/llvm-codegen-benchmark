@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; cmake/optimized/cmGlobalUnixMakefileGenerator3.cxx.ll
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
 ; openjdk/optimized/shenandoahHeuristics.ll
 ; redis/optimized/expire.ll

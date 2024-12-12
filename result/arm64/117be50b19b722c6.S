@@ -5,14 +5,21 @@ func0000000000000000:                   // @func0000000000000000
 	sub	x0, x8, #128
 	ret
                                         // -- End function
-func000000000000000a:                   // @func000000000000000a
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	and	x8, x1, #0x3
 	add	x8, x0, x8
 	add	x0, x8, #3
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
+func000000000000000b:                   // @func000000000000000b
+// %bb.0:                               // %entry
+	and	x8, x1, #0xfffffffffffffffe
+	add	x8, x0, x8
+	add	x0, x8, #16
+	ret
+                                        // -- End function
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	mov	w8, #192                        // =0xc0
 	umaddl	x8, w1, w8, x0

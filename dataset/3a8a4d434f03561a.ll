@@ -87,17 +87,49 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/String.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 4
   %3 = and i64 %2, -64
-  %4 = getelementptr nusw i8, ptr %0, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; darktable/optimized/introspection_liquify.c.ll
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
+; jemalloc/optimized/hpdata.ll
+; jemalloc/optimized/hpdata.pic.ll
+; jemalloc/optimized/hpdata.sym.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/CGExprCXX.cpp.ll
+; redis/optimized/hpdata.ll
+; redis/optimized/hpdata.sym.ll
+; redis/optimized/quicklist.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000030(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 3
+  %3 = and i64 %2, 17179868928
+  %4 = getelementptr i8, ptr %0, i64 8
+  %5 = getelementptr i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003c(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 3
+  %3 = and i64 %2, 2305843009213693920
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = getelementptr i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 8 occurrences:
 ; entt/optimized/benchmark.cpp.ll
 ; entt/optimized/group.cpp.ll
 ; entt/optimized/registry.cpp.ll
@@ -109,26 +141,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000038(ptr %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 3
-  %3 = and i64 %2, 2305843009213693920
-  %4 = getelementptr nusw i8, ptr %0, i64 8
-  %5 = getelementptr i8, ptr %4, i64 %3
-  ret ptr %5
-}
-
-; 6 occurrences:
-; hyperscan/optimized/rose_build_long_lit.cpp.ll
-; jemalloc/optimized/hpdata.ll
-; jemalloc/optimized/hpdata.pic.ll
-; jemalloc/optimized/hpdata.sym.ll
-; redis/optimized/hpdata.ll
-; redis/optimized/hpdata.sym.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000030(ptr %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 3
-  %3 = and i64 %2, 2305843009213693944
-  %4 = getelementptr i8, ptr %0, i64 24
+  %2 = shl i64 %1, 2
+  %3 = and i64 %2, -32
+  %4 = getelementptr nusw i8, ptr %0, i64 -4
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }

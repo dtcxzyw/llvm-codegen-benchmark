@@ -1,12 +1,14 @@
-func000000000000001c:                   # @func000000000000001c
+func0000000000000013:                   # @func0000000000000013
 	sext.w	a0, a0
-	beqz	a0, .LBB0_2
+	li	a1, 4
+	beq	a0, a1, .LBB0_2
 	fmv.s	fa0, fa1
 .LBB0_2:                                # %entry
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa5, fa0
+	xori	a0, a0, 1
 	ret
-func0000000000000013:                   # @func0000000000000013
+func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	li	a1, 4
 	beq	a0, a1, .LBB1_2
@@ -14,11 +16,10 @@ func0000000000000013:                   # @func0000000000000013
 .LBB1_2:                                # %entry
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa5, fa0
-	xori	a0, a0, 1
 	ret
 .LCPI2_0:
 	.word	0x45908800                      # float 4625
-func0000000000000085:                   # @func0000000000000085
+func0000000000000185:                   # @func0000000000000185
 	sext.w	a0, a0
 	lui	a1, 3
 	addiw	a1, a1, -288
@@ -32,7 +33,7 @@ func0000000000000085:                   # @func0000000000000085
 	ret
 .LCPI3_0:
 	.word	0x45bf6800                      # float 6125
-func0000000000000083:                   # @func0000000000000083
+func0000000000000183:                   # @func0000000000000183
 	sext.w	a0, a0
 	lui	a1, 3
 	addiw	a1, a1, -288

@@ -1,7 +1,6 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; gromacs/optimized/restcbt.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; opencv/optimized/deriche_filter.cpp.ll
 ; opencv/optimized/evaluation.cpp.ll
@@ -16,7 +15,7 @@ define double @func0000000000000000(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
   %3 = fneg double %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

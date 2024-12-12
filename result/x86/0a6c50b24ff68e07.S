@@ -9,16 +9,16 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	$32768, %esi                    # imm = 0x8000
-	cmpw	%di, %si
-	setl	%al
+	cmpw	%si, %di
+	setg	%al
 	retq
 func0000000000000007:                   # @func0000000000000007
 	xorl	$32768, %esi                    # imm = 0x8000
-	cmpw	%di, %si
-	setge	%al
+	cmpw	%si, %di
+	setle	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	notl	%esi
-	cmpw	%di, %si
-	seta	%al
+	cmpw	%si, %di
+	setb	%al
 	retq

@@ -1,9 +1,11 @@
 
-; 102 occurrences:
+; 109 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/BaseImporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; casadi/optimized/getnonzeros.cpp.ll
 ; casadi/optimized/mx_node.cpp.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
@@ -74,7 +76,6 @@
 ; pbrt-v4/optimized/parser.cpp.ll
 ; php/optimized/ascmagic.ll
 ; php/optimized/engine_xoshiro256starstar.ll
-; proj/optimized/io.cpp.ll
 ; pyo3-rs/optimized/1xbxmcn8q38l1f6c.ll
 ; qemu/optimized/block_vmdk.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
@@ -97,13 +98,19 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmtime-rs/optimized/2wcii8z2urex364d.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; zed-rs/optimized/70ymcp0y6yqkpw3c0y4yzyh2l.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/bqkhvme8kwgfmpydn1hdkle55.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -127,7 +134,7 @@ entry:
 ; qemu/optimized/hw_char_riscv_htif.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 9223372036854775807
   %4 = select i1 %0, i1 %3, i1 false
@@ -161,7 +168,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -177,7 +184,7 @@ entry:
 ; openjdk/optimized/xBarrierSetC2.ll
 ; qemu/optimized/block_replication.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, -1
   %4 = select i1 %0, i1 %3, i1 false
@@ -189,7 +196,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/freetypeScaler.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -198,17 +205,15 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; git/optimized/archive-zip.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libpng/optimized/png.c.ll
 ; linux/optimized/loop.ll
-; linux/optimized/nf_conntrack_proto_icmpv6.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; openjdk/optimized/png.ll
 ; openusd/optimized/utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, -10
   %4 = select i1 %0, i1 %3, i1 false
@@ -221,7 +226,7 @@ entry:
 ; php/optimized/string.ll
 ; redis/optimized/module.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -233,7 +238,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c6(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 1
   %4 = select i1 %0, i1 %3, i1 false
@@ -257,7 +262,7 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -267,11 +272,23 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/sort_by_side.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000ca(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp slt i64 %2, 0
+  %4 = select i1 %0, i1 %3, i1 false
+  %5 = icmp sgt i64 %1, -1
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; libevent/optimized/buffer.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000028c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 127
+  %3 = icmp samesign ult i64 %2, 127
   %4 = select i1 %0, i1 %3, i1 false
   %5 = icmp ne i64 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
@@ -279,21 +296,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/CGBuiltin.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ult i64 %2, 4294967296
-  %4 = select i1 %0, i1 %3, i1 false
-  %5 = icmp ugt i64 %1, 4294967295
-  %6 = select i1 %4, i1 %5, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -305,7 +310,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Clang.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 4294967296
   %4 = select i1 %0, i1 %3, i1 false
@@ -317,7 +322,7 @@ entry:
 ; 1 occurrences:
 ; ripgrep-rs/optimized/3bctup5kmnkujhz5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 2
   %4 = select i1 %0, i1 %3, i1 false
@@ -326,10 +331,24 @@ entry:
   ret i1 %6
 }
 
+; 3 occurrences:
+; arrow/optimized/decimal.cc.ll
+; typst-rs/optimized/3dimj4rf5dyrieyi.ll
+; zed-rs/optimized/80403hw32s3ougvze8j2ycldj.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %0, i1 %3, i1 false
+  %5 = icmp ult i64 %1, 2
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; linux/optimized/itimer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 1000000
   %4 = select i1 %0, i1 %3, i1 false
@@ -342,7 +361,7 @@ entry:
 ; linux/optimized/itimer.ll
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000144(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, -1
   %4 = select i1 %0, i1 %3, i1 false
@@ -355,7 +374,7 @@ entry:
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -368,24 +387,11 @@ entry:
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; postgres/optimized/pgbench.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
   %5 = icmp sgt i64 %1, 0
-  %6 = select i1 %4, i1 %5, i1 false
-  ret i1 %6
-}
-
-; 2 occurrences:
-; arrow/optimized/decimal.cc.ll
-; typst-rs/optimized/3dimj4rf5dyrieyi.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp eq i64 %2, 1
-  %4 = select i1 %0, i1 %3, i1 false
-  %5 = icmp ult i64 %1, 17
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }

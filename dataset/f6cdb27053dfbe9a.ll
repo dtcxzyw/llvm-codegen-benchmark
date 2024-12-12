@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 53 occurrences:
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
@@ -34,7 +34,6 @@
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/bundle.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll

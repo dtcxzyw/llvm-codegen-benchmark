@@ -14,3 +14,19 @@ func0000000000000002:                   # @func0000000000000002
 	vucomiss	%xmm1, %xmm0
 	seta	%al
 	retq
+.LCPI2_0:
+	.long	0x3f800000                      # float 1
+func0000000000000007:                   # @func0000000000000007
+	vmovss	.LCPI2_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vsubss	%xmm1, %xmm2, %xmm1
+	vcmpneqss	%xmm0, %xmm1, %k0
+	kmovd	%k0, %eax
+	retq
+.LCPI3_0:
+	.long	0x43b40000                      # float 360
+func0000000000000005:                   # @func0000000000000005
+	vmovss	.LCPI3_0(%rip), %xmm2           # xmm2 = [3.6E+2,0.0E+0,0.0E+0,0.0E+0]
+	vsubss	%xmm1, %xmm2, %xmm1
+	vucomiss	%xmm1, %xmm0
+	setb	%al
+	retq

@@ -123,15 +123,16 @@
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2097151
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nuw nsw i64 %3, 1048576
   ret i64 %4
 }
 
-; 243 occurrences:
+; 245 occurrences:
 ; abseil-cpp/optimized/layout_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; clamav/optimized/archive.cpp.ll
 ; clamav/optimized/upack.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -345,6 +346,7 @@ entry:
 ; postgres/optimized/heaptuple.ll
 ; postgres/optimized/inv_api.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/block_qcow2-bitmap.c.ll
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
@@ -396,7 +398,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4096
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nsw i64 %3, -1
   ret i64 %4
 }
@@ -408,7 +410,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -1048576
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = add i64 %3, -1
   ret i64 %4
 }
@@ -443,7 +445,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = add nuw i64 %3, 63
   ret i64 %4
 }
@@ -455,7 +457,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add i64 %3, -32
   ret i64 %4
 }
@@ -467,7 +469,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1048575
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nsw i64 %3, -1000000
   ret i64 %4
 }

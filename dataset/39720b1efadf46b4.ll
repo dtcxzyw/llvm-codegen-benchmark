@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/work_stealing.ll
 ; curl/optimized/libcurl_la-version.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; Function Attrs: nounwind

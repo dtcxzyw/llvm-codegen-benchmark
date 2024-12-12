@@ -10,7 +10,7 @@
 ; openjdk/optimized/referenceProcessor.ll
 ; openjdk/optimized/unsafe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, ptr null, ptr %1
@@ -25,7 +25,7 @@ entry:
 ; openjdk/optimized/psScavenge.ll
 ; openjdk/optimized/shenandoahReferenceProcessor.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, ptr null, ptr %1
@@ -37,7 +37,7 @@ entry:
 ; openjdk/optimized/cardTableRS.ll
 ; openjdk/optimized/psCardTable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000029(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, ptr null, ptr %1
@@ -46,20 +46,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/Sema.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, -3
-  %4 = select i1 %3, ptr null, ptr %1
-  %5 = icmp eq ptr %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; llvm/optimized/VPlanAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %2, 0
   %3 = select i1 %.not, ptr %1, ptr null

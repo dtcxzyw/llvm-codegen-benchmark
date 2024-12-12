@@ -39,7 +39,7 @@ func000000000000002a:                   # @func000000000000002a
 	retq
 func000000000000003f:                   # @func000000000000003f
 	movl	%edx, %eax
-	leaq	(%rax,%rax,8), %rax
+	leaq	(%rax,%rax,4), %rax
 	leaq	(%rsi,%rax,2), %rax
 	addq	%rdi, %rax
 	retq

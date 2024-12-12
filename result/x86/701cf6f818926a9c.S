@@ -1,10 +1,10 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	orl	%edx, %esi
 	shrl	$9, %esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	orl	%edx, %esi
 	shrl	$9, %esi
 	cmpl	%edi, %esi
@@ -21,10 +21,4 @@ func0000000000000004:                   # @func0000000000000004
 	shrl	%esi
 	cmpl	%edi, %esi
 	setb	%al
-	retq
-func0000000000000025:                   # @func0000000000000025
-	orl	%edx, %esi
-	shrl	%esi
-	cmpl	%edi, %esi
-	setbe	%al
 	retq

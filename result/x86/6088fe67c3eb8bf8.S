@@ -23,9 +23,22 @@ func0000000000000002:                   # @func0000000000000002
 	cmovneq	%rsi, %rax
 	shrq	$32, %rax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	movq	%rdi, %rax
+	cmpq	$65536, %rsi                    # imm = 0x10000
+	cmovbq	%rsi, %rax
+	shrq	$8, %rax
+	retq
 func0000000000000003:                   # @func0000000000000003
 	movq	%rdi, %rax
 	testq	%rsi, %rsi
 	cmovneq	%rsi, %rax
 	shrq	$16, %rax
+	retq
+func0000000000000028:                   # @func0000000000000028
+	movq	%rdi, %rax
+	movq	%rsi, %rcx
+	shrq	$32, %rcx
+	cmovneq	%rsi, %rax
+	shrq	$6, %rax
 	retq

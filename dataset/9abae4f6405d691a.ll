@@ -10,7 +10,7 @@ entry:
   %2 = freeze ptr %1
   %3 = ptrtoint ptr %2 to i64
   %4 = lshr i64 %3, 9
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 

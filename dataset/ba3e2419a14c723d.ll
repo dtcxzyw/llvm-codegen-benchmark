@@ -11,14 +11,13 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; icu/optimized/collationfastlatin.ll
 ; libquic/optimized/cpu-intel.c.ll
 ; linux/optimized/commit.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/intel_guc_log.ll
-; linux/optimized/mii.ll
 ; linux/optimized/route.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vfs_inode.ll

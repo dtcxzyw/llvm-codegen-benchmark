@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; hermes/optimized/CommandLine.cpp.ll
 ; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/access.ll
@@ -8,7 +8,6 @@
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
-; spike/optimized/f16_classify.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; stockfish/optimized/movepick.ll
 ; stockfish/optimized/search.ll

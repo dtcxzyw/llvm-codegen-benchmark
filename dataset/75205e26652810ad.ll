@@ -35,70 +35,6 @@ entry:
   ret i1 %5
 }
 
-; 54 occurrences:
-; abc/optimized/cmdApi.c.ll
-; c3c/optimized/number.c.ll
-; gromacs/optimized/read_params.cpp.ll
-; proj/optimized/defmodel.cpp.ll
-; quantlib/optimized/abcdatmvolcurve.ll
-; quantlib/optimized/andreasenhugevolatilityinterpl.ll
-; quantlib/optimized/basecorrelationstructure.ll
-; quantlib/optimized/blackvariancecurve.ll
-; quantlib/optimized/blackvariancesurface.ll
-; quantlib/optimized/capfloortermvolcurve.ll
-; quantlib/optimized/capfloortermvolsurface.ll
-; quantlib/optimized/chebyshevinterpolation.ll
-; quantlib/optimized/cmsmarketcalibration.ll
-; quantlib/optimized/commoditycurve.ll
-; quantlib/optimized/concentrating1dmesher.ll
-; quantlib/optimized/extendedblackvariancecurve.ll
-; quantlib/optimized/extendedblackvariancesurface.ll
-; quantlib/optimized/fdm1dimsolver.ll
-; quantlib/optimized/fdm2dimsolver.ll
-; quantlib/optimized/fdm3dimsolver.ll
-; quantlib/optimized/fdmarithmeticaveragecondition.ll
-; quantlib/optimized/fdmbatesop.ll
-; quantlib/optimized/fdmdividendhandler.ll
-; quantlib/optimized/fdmhestonvariancemesher.ll
-; quantlib/optimized/fdmsimplestoragecondition.ll
-; quantlib/optimized/fftengine.ll
-; quantlib/optimized/fixedlocalvolsurface.ll
-; quantlib/optimized/flatvol.ll
-; quantlib/optimized/gaussian1dcapfloorengine.ll
-; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
-; quantlib/optimized/gaussian1dmodel.ll
-; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
-; quantlib/optimized/gaussian1dswaptionengine.ll
-; quantlib/optimized/generalizedhullwhite.ll
-; quantlib/optimized/hestonslvfdmmodel.ll
-; quantlib/optimized/hestonslvmcmodel.ll
-; quantlib/optimized/interpolatedswaptionvolatilitycube.ll
-; quantlib/optimized/localvolrndcalculator.ll
-; quantlib/optimized/markovfunctional.ll
-; quantlib/optimized/noarbsabrinterpolatedsmilesection.ll
-; quantlib/optimized/normalclvmodel.ll
-; quantlib/optimized/sabrinterpolatedsmilesection.ll
-; quantlib/optimized/sabrvolsurface.ll
-; quantlib/optimized/sampledcurve.ll
-; quantlib/optimized/squarerootclvmodel.ll
-; quantlib/optimized/stochasticcollocationinvcdf.ll
-; quantlib/optimized/strippedoptionletadapter.ll
-; quantlib/optimized/sviinterpolatedsmilesection.ll
-; quantlib/optimized/swaptionvoldiscrete.ll
-; quantlib/optimized/swaptionvolmatrix.ll
-; quantlib/optimized/vannavolgabarrierengine.ll
-; quantlib/optimized/zabr.ll
-; wireshark/optimized/qcustomplot.cpp.ll
-; xgboost/optimized/survival_metric.cc.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000ac(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ole double %0, %2
-  %4 = fcmp oge double %0, %1
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; Function Attrs: nounwind
@@ -212,7 +148,72 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 54 occurrences:
+; abc/optimized/cmdApi.c.ll
+; boost/optimized/buffer_piece_border.ll
+; gromacs/optimized/read_params.cpp.ll
+; proj/optimized/defmodel.cpp.ll
+; quantlib/optimized/abcdatmvolcurve.ll
+; quantlib/optimized/andreasenhugevolatilityinterpl.ll
+; quantlib/optimized/basecorrelationstructure.ll
+; quantlib/optimized/blackvariancecurve.ll
+; quantlib/optimized/blackvariancesurface.ll
+; quantlib/optimized/capfloortermvolcurve.ll
+; quantlib/optimized/capfloortermvolsurface.ll
+; quantlib/optimized/chebyshevinterpolation.ll
+; quantlib/optimized/cmsmarketcalibration.ll
+; quantlib/optimized/commoditycurve.ll
+; quantlib/optimized/concentrating1dmesher.ll
+; quantlib/optimized/extendedblackvariancecurve.ll
+; quantlib/optimized/extendedblackvariancesurface.ll
+; quantlib/optimized/fdm1dimsolver.ll
+; quantlib/optimized/fdm2dimsolver.ll
+; quantlib/optimized/fdm3dimsolver.ll
+; quantlib/optimized/fdmarithmeticaveragecondition.ll
+; quantlib/optimized/fdmbatesop.ll
+; quantlib/optimized/fdmdividendhandler.ll
+; quantlib/optimized/fdmhestonvariancemesher.ll
+; quantlib/optimized/fdmsimplestoragecondition.ll
+; quantlib/optimized/fftengine.ll
+; quantlib/optimized/fixedlocalvolsurface.ll
+; quantlib/optimized/flatvol.ll
+; quantlib/optimized/gaussian1dcapfloorengine.ll
+; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
+; quantlib/optimized/gaussian1dmodel.ll
+; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
+; quantlib/optimized/gaussian1dswaptionengine.ll
+; quantlib/optimized/generalizedhullwhite.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
+; quantlib/optimized/hestonslvmcmodel.ll
+; quantlib/optimized/interpolatedswaptionvolatilitycube.ll
+; quantlib/optimized/localvolrndcalculator.ll
+; quantlib/optimized/markovfunctional.ll
+; quantlib/optimized/noarbsabrinterpolatedsmilesection.ll
+; quantlib/optimized/normalclvmodel.ll
+; quantlib/optimized/sabrinterpolatedsmilesection.ll
+; quantlib/optimized/sabrvolsurface.ll
+; quantlib/optimized/sampledcurve.ll
+; quantlib/optimized/squarerootclvmodel.ll
+; quantlib/optimized/stochasticcollocationinvcdf.ll
+; quantlib/optimized/strippedoptionletadapter.ll
+; quantlib/optimized/sviinterpolatedsmilesection.ll
+; quantlib/optimized/swaptionvoldiscrete.ll
+; quantlib/optimized/swaptionvolmatrix.ll
+; quantlib/optimized/vannavolgabarrierengine.ll
+; quantlib/optimized/zabr.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; xgboost/optimized/survival_metric.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000ac(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ole double %0, %2
+  %4 = fcmp oge double %0, %1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 10 occurrences:
+; boost/optimized/within.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; openspiel/optimized/is_mcts.cc.ll
 ; openusd/optimized/evalUtils.cpp.ll
@@ -231,7 +232,8 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/within.ll
 ; oiio/optimized/strutil.cpp.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj0.c.ll
@@ -243,6 +245,18 @@ define i1 @func0000000000000042(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %0, %2
   %4 = fcmp olt double %0, %1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/buffer_piece_border.ll
+; casadi/optimized/dm_instantiator.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000ca(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp oge double %0, %2
+  %4 = fcmp ole double %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
 }
@@ -305,17 +319,6 @@ define i1 @func0000000000000033(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ult double %0, %2
   %4 = fcmp ult double %0, %1
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; casadi/optimized/dm_instantiator.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000ca(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp oge double %0, %2
-  %4 = fcmp ole double %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
 }

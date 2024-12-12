@@ -46,11 +46,10 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; opencv/optimized/filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i1 %0, i32 %1, i32 %2) #0 {
 entry:

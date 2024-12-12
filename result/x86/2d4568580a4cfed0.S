@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shrl	$2, %esi
 	andl	$31, %esi
 	orq	%rdi, %rsi
@@ -23,24 +23,10 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$4, %rsi
 	setb	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	shrq	$32, %rsi
 	andl	$-4096, %esi                    # imm = 0xF000
 	orq	%rdi, %rsi
 	cmpq	$1, %rsi
 	setne	%al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	shrl	$16, %esi
-	movzbl	%sil, %eax
-	orq	%rdi, %rax
-	cmpq	$1797, %rax                     # imm = 0x705
-	setb	%al
-	retq
-func0000000000000018:                   # @func0000000000000018
-	shrl	$16, %esi
-	movzbl	%sil, %eax
-	orq	%rdi, %rax
-	cmpq	$1797, %rax                     # imm = 0x705
-	setae	%al
 	retq

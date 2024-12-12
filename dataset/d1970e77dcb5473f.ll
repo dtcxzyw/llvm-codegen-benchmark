@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 86 occurrences:
 ; arrow/optimized/bridge.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/light_array.cc.ll
@@ -36,6 +36,7 @@
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
+; mitsuba3/optimized/obj.cpp.ll
 ; mold/optimized/compress.cc.ll
 ; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
 ; mold/optimized/passes.cc.PPC64V1.cc.ll
@@ -88,8 +89,8 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
-  %.neg = sdiv exact i64 %1, -40
-  %2 = ashr exact i64 %0, 5
+  %.neg = sdiv exact i64 %1, -24
+  %2 = ashr exact i64 %0, 4
   %3 = add nsw i64 %.neg, %2
   ret i64 %3
 }

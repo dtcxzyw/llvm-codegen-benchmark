@@ -5,7 +5,7 @@
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000216(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000426(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8

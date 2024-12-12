@@ -5,9 +5,9 @@ func0000000000000030:                   # @func0000000000000030
 	addq	%rsi, %rax
 	retq
 func000000000000007b:                   # @func000000000000007b
-	shlq	$16, %rdx
+	shlq	$20, %rdx
 	leaq	(%rdx,%rsi), %rax
-	shrq	$48, %rdi
+	shrq	$46, %rdi
 	addq	%rdi, %rax
 	retq
 func0000000000000010:                   # @func0000000000000010

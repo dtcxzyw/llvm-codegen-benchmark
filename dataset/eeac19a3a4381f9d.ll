@@ -46,7 +46,7 @@ define i128 @func0000000000000000(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = xor i128 %1, %2
   %4 = trunc i128 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = zext i64 %5 to i128
   ret i128 %6
 }

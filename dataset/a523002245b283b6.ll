@@ -8,7 +8,7 @@
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, 8
   %3 = icmp eq i32 %1, 771
@@ -16,8 +16,7 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; openjdk/optimized/vm_version_x86.ll
+; 1 occurrences:
 ; qemu/optimized/hw_char_virtio-serial-bus.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
@@ -63,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i64 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, 2147483648
   %.not = icmp eq i32 %1, 0
@@ -72,20 +71,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/NetBSD.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
-entry:
-  %2 = or i64 %0, 256
-  %3 = icmp ult i32 %1, 2
-  %4 = select i1 %3, i64 %2, i64 %0
-  ret i64 %4
-}
-
-; 1 occurrences:
 ; llvm/optimized/ToolChain.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, 144115188075855872
   %3 = icmp ult i32 %1, 2

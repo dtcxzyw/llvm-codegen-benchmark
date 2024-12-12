@@ -6,7 +6,7 @@ define i32 @func0000000000000013(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw i8 %1, 1
   %3 = zext i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -44,15 +44,14 @@ define i32 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/intel_audio.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-var.ll
@@ -67,7 +66,7 @@ define i32 @func000000000000001c(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -79,7 +78,7 @@ define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -48
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -90,7 +89,7 @@ define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -101,7 +100,7 @@ define i32 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -48
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -113,7 +112,7 @@ define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -48
   %3 = zext nneg i8 %2 to i32
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -124,7 +123,7 @@ define i32 @func000000000000001d(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 4
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 

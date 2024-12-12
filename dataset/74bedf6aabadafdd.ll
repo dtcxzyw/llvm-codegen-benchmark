@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 31 occurrences:
 ; abc/optimized/saigMiter.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -22,9 +22,7 @@
 ; openjdk/optimized/shenandoahBarrierSet.ll
 ; openjdk/optimized/shenandoahCodeRoots.ll
 ; openjdk/optimized/shenandoahConcurrentGC.ll
-; openjdk/optimized/shenandoahGC.ll
 ; openjdk/optimized/shenandoahHeap.ll
-; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/shenandoahNMethod.ll
 ; openjdk/optimized/shenandoahRuntime.ll
 ; openjdk/optimized/shenandoahStackWatermark.ll

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; wireshark/optimized/packet-fortinet-fgcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000608(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
   %3 = sub i32 %2, %0
@@ -14,7 +14,7 @@ entry:
 ; wireshark/optimized/packet-cip.c.ll
 ; wireshark/optimized/packet-cipsafety.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000601(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = sub i32 %0, %2
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000020a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = sub i32 %0, %2
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000206(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = sub i32 %0, %2
@@ -59,21 +59,9 @@ entry:
 }
 
 ; 1 occurrences:
-; redis/optimized/fpconv_dtoa.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 3
-  %3 = sub i32 %0, %2
-  %4 = add i32 %3, 354
-  %5 = icmp ult i32 %4, 6
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000284(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sub nsw i32 %0, %2
@@ -85,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = sub nsw i32 %0, %2

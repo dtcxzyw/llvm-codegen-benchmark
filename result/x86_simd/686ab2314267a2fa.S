@@ -60,7 +60,7 @@ func000000000000001f:                   # @func000000000000001f
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI10_0:
-	.long	64                              # 0x40
+	.long	4294966989                      # 0xfffffecd
 func0000000000000007:                   # @func0000000000000007
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpaddd	.LCPI10_0(%rip){1to4}, %xmm0, %xmm0

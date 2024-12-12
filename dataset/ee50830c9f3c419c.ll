@@ -1,5 +1,7 @@
 
-; 13 occurrences:
+; 15 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/gvrender_core_pov.c.ll
 ; gromacs/optimized/calculate_spline_moduli.cpp.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll

@@ -8,7 +8,7 @@
 ; qemu/optimized/libvduse.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i8 %0) #0 {
+define i32 @func0000000000000064(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i32
   %2 = add nuw nsw i32 %1, 1

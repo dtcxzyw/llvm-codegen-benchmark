@@ -1,5 +1,7 @@
 
-; 24 occurrences:
+; 26 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/intersection_box.ll
 ; gromacs/optimized/anadih.cpp.ll
 ; gromacs/optimized/calculator.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll

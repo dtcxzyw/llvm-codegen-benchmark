@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 57 occurrences:
 ; cpython/optimized/compile.ll
 ; cpython/optimized/mpdecimal.ll
 ; freetype/optimized/truetype.c.ll
@@ -19,7 +19,6 @@
 ; linux/optimized/ipmr.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/nf_conntrack_core.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/nf_log_syslog.ll
 ; linux/optimized/nf_nat_proto.ll
 ; linux/optimized/nf_reject_ipv4.ll
@@ -94,12 +93,13 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; linux/optimized/ndisc.ll
+; qemu/optimized/hw_9pfs_9p.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i8 %0) #0 {
 entry:
-  %1 = shl i8 %0, 1
+  %1 = shl i8 %0, 5
   %2 = and i8 %1, -128
   %3 = zext i8 %2 to i32
   ret i32 %3

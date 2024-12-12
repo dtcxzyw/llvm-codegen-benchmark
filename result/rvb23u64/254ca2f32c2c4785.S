@@ -11,13 +11,6 @@ func000000000000003f:                   # @func000000000000003f
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000037:                   # @func0000000000000037
-	andi	a2, a2, 255
-	add	a1, a1, a2
-	li	a2, 85
-	mul	a1, a1, a2
-	addw	a0, a0, a1
-	ret
 func000000000000005d:                   # @func000000000000005d
 	andi	a2, a2, 255
 	add	a1, a1, a2

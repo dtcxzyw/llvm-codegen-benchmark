@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; openusd/optimized/fvarLevel.cpp.ll
+; 3 occurrences:
 ; php/optimized/zend_jit.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
 ; wireshark/optimized/packet-erf.c.ll

@@ -1,7 +1,6 @@
 
-; 249 occurrences:
+; 247 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
-; gromacs/optimized/domdec_network.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; gromacs/optimized/pullutil.cpp.ll
@@ -127,7 +126,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll

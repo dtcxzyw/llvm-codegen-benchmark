@@ -174,7 +174,20 @@ entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw nsw i128 %3 to i64
   %5 = add nsw i64 %1, -1
-  %6 = mul i64 %5, %0
+  %6 = mul i64 %0, %5
+  %7 = add i64 %6, %4
+  ret i64 %7
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, i64 %1, i128 %2) #0 {
+entry:
+  %3 = lshr i128 %2, 64
+  %4 = trunc nuw i128 %3 to i64
+  %5 = add i64 %1, -1
+  %6 = mul i64 %0, %5
   %7 = add i64 %6, %4
   ret i64 %7
 }

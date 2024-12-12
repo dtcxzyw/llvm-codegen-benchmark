@@ -1,5 +1,7 @@
 
 ; 206 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -127,7 +129,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -203,11 +204,10 @@
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000551(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aa1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 72
   %4 = mul nsw i64 %1, 7
@@ -222,7 +222,7 @@ entry:
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000558(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aa8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = mul nsw i64 %1, 21
@@ -236,7 +236,7 @@ entry:
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/slot_manager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000554(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aa4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 88
   %4 = mul nsw i64 %1, 5

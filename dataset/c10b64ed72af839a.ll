@@ -19,7 +19,8 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; crow/optimized/example.cpp.ll
 ; openvdb/optimized/Filter.cc.ll
 ; Function Attrs: nounwind
@@ -86,18 +87,6 @@ entry:
   %4 = lshr i32 %3, 2
   %5 = add i32 %4, %0
   %6 = and i32 %5, 1073741823
-  ret i32 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/cap_v4l.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %0, %1
-  %4 = lshr i32 %3, 16
-  %5 = add i32 %4, %2
-  %6 = and i32 %5, 65535
   ret i32 %6
 }
 

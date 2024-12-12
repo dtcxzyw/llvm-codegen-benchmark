@@ -1,4 +1,4 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax
 	vextracti128	$1, %ymm2, %xmm4
@@ -34,7 +34,7 @@ func0000000000000034:                   # @func0000000000000034
 	retq
 .LCPI1_0:
 	.quad	2147483647                      # 0x7fffffff
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax
 	vextracti128	$1, %ymm2, %xmm4

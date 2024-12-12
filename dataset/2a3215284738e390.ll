@@ -7,7 +7,7 @@
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32
   %3 = icmp ne i32 %2, 0
@@ -130,7 +130,7 @@ entry:
 ; slurm/optimized/sinfo.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 64
   %3 = icmp eq i32 %2, 0
@@ -153,7 +153,7 @@ entry:
 ; slurm/optimized/node_mgr.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1048576
   %3 = icmp eq i32 %2, 0
@@ -164,12 +164,25 @@ entry:
 }
 
 ; 1 occurrences:
+; hermes/optimized/HermesBuiltin.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000281(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 268435455
+  %3 = icmp samesign ult i32 %2, 13
+  %4 = and i64 %0, 2
+  %5 = icmp eq i64 %4, 0
+  %6 = select i1 %5, i1 true, i1 %3
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/ObjCRuntime.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000030c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
-  %3 = icmp ugt i32 %2, 8
+  %3 = icmp samesign ugt i32 %2, 8
   %4 = and i64 %0, 4294967295
   %5 = icmp ne i64 %4, 0
   %6 = select i1 %5, i1 true, i1 %3
@@ -179,12 +192,27 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hooks.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0
   %4 = and i64 %0, 1
   %5 = icmp eq i64 %4, 0
+  %6 = select i1 %5, i1 true, i1 %3
+  ret i1 %6
+}
+
+; 3 occurrences:
+; postgres/optimized/d2s.ll
+; postgres/optimized/d2s_shlib.ll
+; postgres/optimized/d2s_srv.ll
+; Function Attrs: nounwind
+define i1 @func000000000000028c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 2046
+  %3 = icmp eq i32 %2, 0
+  %4 = and i64 %0, 4503599627370495
+  %5 = icmp ne i64 %4, 0
   %6 = select i1 %5, i1 true, i1 %3
   ret i1 %6
 }

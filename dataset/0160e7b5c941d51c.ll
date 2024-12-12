@@ -1,6 +1,6 @@
 
 ; 5 occurrences:
-; linux/optimized/vclock_gettime.ll
+; boost/optimized/alloc_lib.ll
 ; nuttx/optimized/mm_realloc.c.ll
 ; openssl/optimized/libcommon-lib-tls_pad.ll
 ; openssl/optimized/libssl-shlib-tls_pad.ll
@@ -27,7 +27,7 @@ entry:
   %3 = and i64 %2, 33554432
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 %1, i64 0
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

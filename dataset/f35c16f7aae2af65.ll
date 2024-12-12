@@ -103,7 +103,6 @@
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; llvm/optimized/ProfileSummaryInfo.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/RemarkLinker.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
@@ -219,6 +218,7 @@
 ; rocksdb/optimized/partitioned_index_reader.cc.ll
 ; rocksdb/optimized/transaction_log_impl.cc.ll
 ; slurm/optimized/power_save.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; vcpkg/optimized/commands.update-baseline.cpp.ll
 ; vcpkg/optimized/sourceparagraph.cpp.ll
 ; vcpkg/optimized/vcpkgcmdarguments.cpp.ll
@@ -243,7 +243,7 @@ entry:
   ret i1 %4
 }
 
-; 63 occurrences:
+; 66 occurrences:
 ; cmake/optimized/cmConfigureFileCommand.cxx.ll
 ; coreutils-rs/optimized/3jbb9tw7701fm28c.ll
 ; coreutils-rs/optimized/icw7irkz6mu05a9.ll
@@ -307,6 +307,9 @@ entry:
 ; tls-rs/optimized/526n7g8rwc65lc9b.ll
 ; tls-rs/optimized/z2cy5bf5cayilz9.ll
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i8 %0, i8 %1) #0 {
 entry:

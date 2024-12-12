@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	andi	a1, a1, 1
 	li	a2, 3
 	czero.nez	a1, a2, a1

@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	cmpl	%edx, %esi
 	sete	%cl
 	cmpl	$127, %esi
@@ -6,7 +6,7 @@ func0000000000000016:                   # @func0000000000000016
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	cmpl	%edx, %esi
 	sete	%cl
 	cmpl	$536870911, %esi                # imm = 0x1FFFFFFF
@@ -14,7 +14,7 @@ func000000000000001c:                   # @func000000000000001c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000006b:                   # @func000000000000006b
+func00000000000000cb:                   # @func00000000000000cb
 	cmpl	$30016, %esi                    # imm = 0x7540
 	setl	%cl
 	cmpl	%edx, %esi
@@ -22,7 +22,7 @@ func000000000000006b:                   # @func000000000000006b
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	cmpl	%edx, %esi
 	setle	%cl
 	testl	%esi, %esi
@@ -30,7 +30,7 @@ func000000000000007a:                   # @func000000000000007a
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	cmpl	$8, %esi
 	setae	%cl
 	cmpl	%edx, %esi
@@ -38,7 +38,7 @@ func0000000000000088:                   # @func0000000000000088
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	cmpl	%edx, %esi
 	setne	%cl
 	cmpl	$3, %esi
@@ -46,7 +46,7 @@ func00000000000000c6:                   # @func00000000000000c6
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	cmpl	%edx, %esi
 	setne	%cl
 	testl	%esi, %esi
@@ -54,7 +54,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	cmpl	%edx, %esi
 	sete	%cl
 	testl	%esi, %esi
@@ -62,23 +62,15 @@ func000000000000001a:                   # @func000000000000001a
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	cmpl	%edx, %esi
 	setl	%cl
-	cmpl	$2, %esi
-	setge	%al
+	testl	%esi, %esi
+	setns	%al
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
-	cmpl	%edx, %esi
-	setb	%cl
-	cmpl	$21600001, %esi                 # imm = 0x1499701
-	setb	%al
-	andb	%cl, %al
-	andb	%dil, %al
-	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	cmpl	%edx, %esi
 	seta	%cl
 	testl	%esi, %esi
@@ -86,7 +78,7 @@ func000000000000008a:                   # @func000000000000008a
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	cmpl	$10000, %esi                    # imm = 0x2710
 	setb	%cl
 	cmpl	%edx, %esi
@@ -94,7 +86,7 @@ func000000000000004c:                   # @func000000000000004c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	cmpl	%edx, %esi
 	setg	%cl
 	cmpl	$65536, %esi                    # imm = 0x10000
@@ -102,23 +94,7 @@ func00000000000000a6:                   # @func00000000000000a6
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func00000000000000a7:                   # @func00000000000000a7
-	testl	%esi, %esi
-	setg	%cl
-	cmpl	%edx, %esi
-	setle	%al
-	andb	%cl, %al
-	andb	%dil, %al
-	retq
-func0000000000000018:                   # @func0000000000000018
-	cmpl	%edx, %esi
-	sete	%cl
-	cmpl	$2, %esi
-	setae	%al
-	andb	%cl, %al
-	andb	%dil, %al
-	retq
-func000000000000009c:                   # @func000000000000009c
+func000000000000012c:                   # @func000000000000012c
 	cmpl	%edx, %esi
 	setae	%cl
 	cmpl	$228, %esi
@@ -126,7 +102,7 @@ func000000000000009c:                   # @func000000000000009c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func00000000000000bc:                   # @func00000000000000bc
+func000000000000016c:                   # @func000000000000016c
 	cmpl	%edx, %esi
 	setge	%cl
 	cmpl	$228, %esi

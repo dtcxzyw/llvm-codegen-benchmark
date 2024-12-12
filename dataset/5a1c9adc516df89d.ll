@@ -1,5 +1,5 @@
 
-; 198 occurrences:
+; 193 occurrences:
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/bbrReach.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -38,9 +38,6 @@
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; flac/optimized/bitwriter.c.ll
 ; graphviz/optimized/chresc.c.ll
-; gromacs/optimized/dlasq2.cpp.ll
-; gromacs/optimized/slasq2.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/JSArray.cpp.ll
 ; hermes/optimized/JSObject.cpp.ll
@@ -66,7 +63,6 @@
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; linux/optimized/amd64-agp.ll
-; linux/optimized/authencesn.ll
 ; linux/optimized/clnt.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/esp6.ll
@@ -81,7 +77,6 @@
 ; linux/optimized/intel_dsb.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/intel_guc.ll
-; linux/optimized/intel_mocs.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/intel_vblank.ll
 ; linux/optimized/intel_vdsc.ll
@@ -207,11 +202,12 @@ entry:
   ret i32 %4
 }
 
-; 100 occurrences:
+; 98 occurrences:
 ; arrow/optimized/utf8.cc.ll
 ; assimp/optimized/MMDPmxParser.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/STEPFileEncoding.cpp.ll
+; boost/optimized/parser_utils.ll
 ; c3c/optimized/lexer.c.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cpython/optimized/bytesobject.ll
@@ -227,7 +223,6 @@ entry:
 ; jemalloc/optimized/pac.pic.ll
 ; jemalloc/optimized/pac.sym.ll
 ; jsonnet/optimized/vm.cpp.ll
-; linux/optimized/evgpeinit.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/slub.ll
 ; llvm/optimized/ConvertUTF.cpp.ll
@@ -289,8 +284,6 @@ entry:
 ; postgres/optimized/dt_common.ll
 ; postgres/optimized/euc2004_sjis2004.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
@@ -412,7 +405,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = add i32 %2, 8
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -558,9 +551,10 @@ entry:
   ret i32 %4
 }
 
-; 88 occurrences:
+; 89 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/src.ll
 ; clamav/optimized/unicode.cpp.ll
 ; cmake/optimized/archive_string.c.ll
 ; cpython/optimized/unicodeobject.ll
@@ -718,11 +712,10 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; linux/optimized/intel_dmc.ll
-; linux/optimized/intel_snps_phy.ll
 ; openjdk/optimized/indexSet.ll
 ; openusd/optimized/av1_loopfilter.c.ll
 ; php/optimized/decode.ll
@@ -785,17 +778,6 @@ entry:
 }
 
 ; 1 occurrences:
-; soc-simulator/optimized/verilated.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 5
-  %3 = add nuw nsw i32 %2, 32
-  %4 = add nuw nsw i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; linux/optimized/mpicoder.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
@@ -849,17 +831,6 @@ entry:
   %2 = shl nsw i32 %1, 2
   %3 = add nuw i32 %2, 6
   %4 = add i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; openblas/optimized/dlasq2.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 2
-  %3 = add i32 %2, -4
-  %4 = add nuw i32 %3, %0
   ret i32 %4
 }
 

@@ -1,12 +1,11 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/giaBound.c.ll
 ; abc/optimized/ivyMulti.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
-; linux/optimized/vsmp_64.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
@@ -15,7 +14,7 @@
 ; verilator/optimized/V3Number.cpp.ll
 ; verilator/optimized/V3Table.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 -1, %0
   %2 = xor i32 %1, -1
@@ -28,7 +27,7 @@ entry:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0) #0 {
+define i32 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 -1, %0
   %2 = xor i32 %1, -1

@@ -48,7 +48,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, -256
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 

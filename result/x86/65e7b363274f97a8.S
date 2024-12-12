@@ -5,14 +5,14 @@ func0000000000000010:                   # @func0000000000000010
 	leaq	(%rsi,%rax,4), %rax
 	leaq	4(%rdi,%rax), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
-	notb	%dl
-	movzbl	%dl, %eax
-	andl	$1, %eax
-	leaq	(%rsi,%rax,2), %rax
-	leaq	2(%rdi,%rax), %rax
+func000000000000001f:                   # @func000000000000001f
+	andl	$1, %edx
+	shll	$5, %edx
+	shlq	$4, %rdi
+	leaq	(%rdi,%rsi), %rax
+	addq	%rdx, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	xorl	%ecx, %ecx
 	testb	$1, %dl
 	movl	$24, %eax

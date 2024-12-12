@@ -1,5 +1,10 @@
 
-; 41 occurrences:
+; 45 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; graphviz/optimized/gvrender.c.ll
 ; opencv/optimized/gdal-image.cpp.ll
 ; proj/optimized/august.cpp.ll
@@ -32,7 +37,6 @@
 ; proj/optimized/unitconvert.cpp.ll
 ; proj/optimized/urm5.cpp.ll
 ; proj/optimized/urmfps.cpp.ll
-; proj/optimized/wag7.cpp.ll
 ; quantlib/optimized/analytich1hwengine.ll
 ; quantlib/optimized/analytichestonforwardeuropeanengine.ll
 ; quantlib/optimized/analytichestonhullwhiteengine.ll

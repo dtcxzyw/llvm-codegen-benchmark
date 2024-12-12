@@ -1,10 +1,10 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	andb	$1, %dl
 	incb	%dl
 	shlxl	%edx, %esi, %eax
 	addq	%rdi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	andb	$1, %dl
 	incb	%dl
 	shlxl	%edx, %esi, %eax

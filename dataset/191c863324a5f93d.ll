@@ -47,7 +47,7 @@ entry:
   ret i32 %5
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/plaMan.c.ll
 ; arrow/optimized/key_map.cc.ll
@@ -67,7 +67,6 @@ entry:
 ; postgres/optimized/tsvector_op.ll
 ; qemu/optimized/block_qed-check.c.ll
 ; spike/optimized/vcpop_v.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-nfs.c.ll
 ; wireshark/optimized/packet-openflow_v6.c.ll

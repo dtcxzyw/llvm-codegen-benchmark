@@ -1,20 +1,20 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movq	%rsi, %rax
 	subq	%rdi, %rax
 	shrq	$34, %rax
 	andl	$1, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	subl	%edi, %esi
 	cmpl	$31, %esi
 	setb	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subl	%edi, %esi
 	testl	%esi, %esi
 	setg	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movq	%rsi, %rax
 	subl	%edi, %eax
 	shrl	$31, %eax

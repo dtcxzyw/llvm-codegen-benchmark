@@ -34,7 +34,7 @@ func000000000000000b:                   # @func000000000000000b
 	xorb	$1, %dil
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	cmpl	%edx, %esi
 	seta	%al
 	xorb	$1, %dil
@@ -43,6 +43,12 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000001:                   # @func0000000000000001
 	cmpl	%edx, %esi
 	sete	%al
+	xorb	$1, %dil
+	orb	%dil, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	cmpl	%edx, %esi
+	seta	%al
 	xorb	$1, %dil
 	orb	%dil, %al
 	retq

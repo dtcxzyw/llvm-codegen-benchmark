@@ -1,5 +1,11 @@
 
-; 1 occurrences:
+; 7 occurrences:
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i32 %1) #0 {

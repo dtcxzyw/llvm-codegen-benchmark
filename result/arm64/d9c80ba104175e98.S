@@ -1,22 +1,18 @@
 func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	cmhi	v2.2d, v2.2d, v4.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	bic	v0.4h, #255, lsl #8
-	uzp1	v1.4s, v1.4s, v2.4s
-	uaddw	v0.4s, v1.4s, v0.4h
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	cmp	x1, x2
+	and	w9, w0, #0xff
+	cset	w8, hi
+	sub	w8, w9, w8
+	sxtw	x0, w8
 	ret
                                         // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	cmhi	v2.2d, v4.2d, v2.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	bic	v0.4h, #255, lsl #8
-	uzp1	v1.4s, v1.4s, v2.4s
-	uaddw	v0.4s, v1.4s, v0.4h
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	cmp	x1, x2
+	and	w9, w0, #0xff
+	cset	w8, lo
+	sub	w8, w9, w8
+	sxtw	x0, w8
 	ret
                                         // -- End function

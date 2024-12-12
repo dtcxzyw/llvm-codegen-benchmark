@@ -68,7 +68,7 @@ func000000000000000b:                   # @func000000000000000b
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpbroadcastd	.LCPI8_0(%rip), %ymm3   # ymm3 = [4,4,4,4,4,4,4,4]
 	vpsubd	%ymm1, %ymm2, %ymm3 {%k1}
-	vpaddd	%ymm0, %ymm3, %ymm0
+	vpaddd	%ymm3, %ymm0, %ymm0
 	retq
 .LCPI9_0:
 	.long	4                               # 0x4

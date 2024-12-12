@@ -1,4 +1,4 @@
-func00000000000001a4:                   # @func00000000000001a4
+func0000000000000344:                   # @func0000000000000344
 	li	a0, -53
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vrsub.vx	v10, v10, a0
@@ -8,7 +8,7 @@ func00000000000001a4:                   # @func00000000000001a4
 	vsub.vv	v10, v12, v8
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	li	a0, -53
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vrsub.vx	v10, v10, a0
@@ -18,7 +18,7 @@ func0000000000000188:                   # @func0000000000000188
 	vsub.vv	v10, v12, v8
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000184:                   # @func0000000000000184
+func0000000000000304:                   # @func0000000000000304
 	li	a0, -53
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vrsub.vx	v10, v10, a0

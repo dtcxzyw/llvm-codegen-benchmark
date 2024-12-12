@@ -52,10 +52,10 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
+; boost/optimized/src.ll
 ; eastl/optimized/TestVector.cpp.ll
-; linux/optimized/i915_gem_gtt.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/pcm_native.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -65,6 +65,8 @@ entry:
 ; lua/optimized/lstring.ll
 ; proj/optimized/4D_api.cpp.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

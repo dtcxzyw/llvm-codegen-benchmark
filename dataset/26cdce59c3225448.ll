@@ -77,7 +77,7 @@ entry:
   ret i64 %4
 }
 
-; 251 occurrences:
+; 250 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
@@ -233,7 +233,6 @@ entry:
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/ParseHLSL.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll

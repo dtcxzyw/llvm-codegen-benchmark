@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; darktable/optimized/export.c.ll
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
@@ -9,7 +9,6 @@
 ; postgres/optimized/repl_gram.ll
 ; postgres/optimized/specparse.ll
 ; postgres/optimized/syncrep_gram.ll
-; qemu/optimized/util_qemu-option.c.ll
 ; ruby/optimized/ruby.ll
 ; wasmedge/optimized/compiler.cpp.ll
 ; Function Attrs: nounwind
@@ -22,7 +21,7 @@ entry:
   ret ptr %6
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; cmake/optimized/http.c.ll
@@ -31,18 +30,17 @@ entry:
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; folly/optimized/json.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/psaux.c.ll
 ; graphviz/optimized/gmlparse.c.ll
 ; graphviz/optimized/grammar.c.ll
 ; graphviz/optimized/htmlparse.c.ll
 ; hdf5/optimized/H5LTparse.c.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lstrlib.cpp.ll
 ; nix/optimized/derivations.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; openspiel/optimized/json.cc.ll
 ; openssl/optimized/openssl-bin-s_client.ll
 ; php/optimized/json_parser.ll
@@ -69,7 +67,7 @@ entry:
   ret ptr %6
 }
 
-; 194 occurrences:
+; 190 occurrences:
 ; abseil-cpp/optimized/parse.cc.ll
 ; arrow/optimized/uri.cc.ll
 ; coreutils-rs/optimized/2j3x034tyak3eas9.ll
@@ -188,13 +186,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -254,7 +249,6 @@ entry:
 ; node/optimized/libnode.node_dotenv.ll
 ; oiio/optimized/strutil.cpp.ll
 ; protobuf/optimized/code_generator.cc.ll
-; proxygen/optimized/HTTPMessage.cpp.ll
 ; ripgrep-rs/optimized/1rzxgyr0fo8f0ob1.ll
 ; ripgrep-rs/optimized/3st324p1krxj76od.ll
 ; sentencepiece/optimized/sentencepiece_trainer.cc.ll
@@ -274,15 +268,13 @@ entry:
   ret ptr %6
 }
 
-; 35 occurrences:
+; 32 occurrences:
 ; clamav/optimized/pdfng.c.ll
 ; cmake/optimized/vtls.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; curl/optimized/libcurl_la-vtls.ll
 ; darktable/optimized/export.c.ll
 ; eastl/optimized/TestString.cpp.ll
-; git/optimized/notes.ll
-; git/optimized/scalar.ll
 ; git/optimized/submodule--helper.ll
 ; grpc/optimized/uri_parser.cc.ll
 ; hermes/optimized/SerializedLiteralGenerator.cpp.ll
@@ -301,7 +293,6 @@ entry:
 ; openjdk/optimized/arguments.ll
 ; openjdk/optimized/relocator.ll
 ; php/optimized/json_scanner.ll
-; php/optimized/php_http_parser.ll
 ; php/optimized/state.ll
 ; php/optimized/state_doctype.ll
 ; protobuf/optimized/php_generator.cc.ll
@@ -320,6 +311,21 @@ entry:
   ret ptr %6
 }
 
+; 4 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; folly/optimized/json.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 -4
+  ret ptr %6
+}
+
 ; 1 occurrences:
 ; folly/optimized/TimeUtil.cpp.ll
 ; Function Attrs: nounwind
@@ -332,10 +338,42 @@ entry:
   ret ptr %6
 }
 
+; 2 occurrences:
+; boost/optimized/shell.ll
+; boost/optimized/url_base.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 1
+  ret ptr %6
+}
+
+; 8 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/path_traits.ll
+; boost/optimized/url_view_base.ll
+; hermes/optimized/SerializedLiteralGenerator.cpp.ll
+; llvm/optimized/COFFImportFile.cpp.ll
+; ninja/optimized/ninja.cc.ll
+; ocio/optimized/PathUtils.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 4
+  ret ptr %6
+}
+
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

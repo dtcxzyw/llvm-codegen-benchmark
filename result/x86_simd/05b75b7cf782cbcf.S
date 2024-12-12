@@ -18,7 +18,7 @@ func0000000000000005:                   # @func0000000000000005
 	.long	8191                            # 0x1fff
 func000000000000000d:                   # @func000000000000000d
 	vpandd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpsrld	$9, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq

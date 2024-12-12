@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 65 occurrences:
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/nulsft.c.ll
 ; cmake/optimized/archive_write_set_format_shar.c.ll
@@ -31,19 +31,16 @@
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
-; llvm/optimized/CallingConvLower.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; llvm/optimized/Host.cpp.ll
 ; llvm/optimized/MCELFStreamer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
-; llvm/optimized/Value.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
@@ -82,12 +79,25 @@ entry:
 ; minetest/optimized/terminal_chat_console.cpp.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000004(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000014(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 224
   %.not = icmp eq i32 %2, 224
   %3 = select i1 %.not, i8 %0, i8 1
   ret i8 %3
+}
+
+; 3 occurrences:
+; cmake/optimized/archive_ppmd8.c.ll
+; llama.cpp/optimized/ggml-quants.c.ll
+; lvgl/optimized/lv_timer.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000018(i8 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 255
+  %3 = icmp samesign ugt i32 %2, 100
+  %4 = select i1 %3, i8 0, i8 %0
+  ret i8 %4
 }
 
 attributes #0 = { nounwind }

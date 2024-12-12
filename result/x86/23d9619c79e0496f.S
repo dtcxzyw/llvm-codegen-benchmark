@@ -22,3 +22,7 @@ func000000000000000a:                   # @func000000000000000a
 	sarl	$24, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	sarl	$18, %esi
+	leal	(%rsi,%rdi), %eax
+	retq

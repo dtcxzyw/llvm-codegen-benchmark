@@ -14,19 +14,30 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
-; cmake/optimized/divsufsort.c.ll
+; 2 occurrences:
 ; lz4/optimized/lz4.c.ll
-; openexr/optimized/attributes.c.ll
 ; openusd/optimized/lz4.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(i1 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -65536
+  %6 = select i1 %0, ptr %5, ptr %1
+  ret ptr %6
+}
+
+; 4 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; openexr/optimized/attributes.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i1 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001f(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 -65536
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   %6 = select i1 %0, ptr %5, ptr %1
   ret ptr %6
 }

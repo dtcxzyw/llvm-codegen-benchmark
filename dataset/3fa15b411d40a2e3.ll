@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/giaForce.c.ll
 ; arrow/optimized/key_hash.cc.ll
@@ -8,6 +8,7 @@
 ; cvc5/optimized/soi_simplex.cpp.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
+; lvgl/optimized/lv_scale.ll
 ; postgres/optimized/tupdesc.ll
 ; quickjs/optimized/libunicode.ll
 ; raylib/optimized/raudio.c.ll
@@ -95,7 +96,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = lshr i32 %1, 15
   %5 = add nuw nsw i32 %4, %3
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 

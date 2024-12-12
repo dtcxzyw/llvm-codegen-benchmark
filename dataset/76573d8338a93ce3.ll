@@ -1,5 +1,6 @@
 
-; 49 occurrences:
+; 48 occurrences:
+; boost/optimized/src.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; icu/optimized/normalizer2impl.ll
 ; jsonnet/optimized/vm.cpp.ll
@@ -42,8 +43,6 @@
 ; openssl/optimized/libcrypto-shlib-bn_mpi.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
@@ -58,7 +57,8 @@ entry:
   ret i8 %4
 }
 
-; 70 occurrences:
+; 68 occurrences:
+; boost/optimized/src.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; crow/optimized/example.cpp.ll
@@ -101,7 +101,6 @@ entry:
 ; nlohmann_json/optimized/unit-user_defined_input.cpp.ll
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; opencv/optimized/cap_v4l.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; opencv/optimized/decoded_bit_stream_parser.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
@@ -119,8 +118,6 @@ entry:
 ; openusd/optimized/blend_a64_vmask.c.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
@@ -138,9 +135,10 @@ entry:
   ret i8 %4
 }
 
-; 76 occurrences:
+; 77 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/src.ll
 ; clamav/optimized/Bra.c.ll
 ; clamav/optimized/lzxd.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -224,7 +222,7 @@ entry:
   ret i8 %4
 }
 
-; 43 occurrences:
+; 45 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -246,6 +244,8 @@ entry:
 ; libwebp/optimized/yuv_sse41.c.ll
 ; linux/optimized/libata-scsi.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
@@ -277,7 +277,7 @@ entry:
   ret i8 %4
 }
 
-; 25 occurrences:
+; 31 occurrences:
 ; brotli/optimized/transform.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; icu/optimized/bytesinkutil.ll
@@ -288,6 +288,12 @@ entry:
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/dec_sse2.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; mixbox/optimized/mixbox.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
@@ -312,7 +318,8 @@ entry:
   ret i8 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/Bra.c.ll
 ; clamav/optimized/lzxd.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -371,7 +378,7 @@ entry:
   ret i8 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; brotli/optimized/transform.c.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
@@ -380,6 +387,7 @@ entry:
 ; luajit/optimized/lj_strscan_dyn.ll
 ; mixbox/optimized/mixbox.ll
 ; ockam-rs/optimized/2n1wyoax2qficosw.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000001b(i32 %0, i32 %1) #0 {
 entry:

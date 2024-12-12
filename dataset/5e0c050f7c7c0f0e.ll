@@ -1,14 +1,14 @@
 
-%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2514972" = type { %"struct.rocksdb::clock_cache::ClockHandle.2514958", %"class.rocksdb::AcqRelAtomic.2514960", %"class.rocksdb::AcqRelAtomic.2514960" }
-%"struct.rocksdb::clock_cache::ClockHandle.2514958" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2514953", %"class.rocksdb::AcqRelAtomic.2514960" }
-%"struct.rocksdb::clock_cache::ClockHandleBasicData.2514953" = type { ptr, ptr, %"struct.std::array.2514941", i64 }
-%"struct.std::array.2514941" = type { [2 x i64] }
-%"class.rocksdb::AcqRelAtomic.2514960" = type { %"class.rocksdb::RelaxedAtomic.2514961" }
-%"class.rocksdb::RelaxedAtomic.2514961" = type { %"struct.std::atomic.2514962" }
-%"struct.std::atomic.2514962" = type { %"struct.std::__atomic_base.2514963" }
-%"struct.std::__atomic_base.2514963" = type { i64 }
-%"class.testing::ThrowingValue.3270416" = type { i32 }
-%"struct.cv::FFillSegment.3595071" = type { i16, i16, i16, i16, i16, i16 }
+%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630067", %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069" }
+%"struct.rocksdb::clock_cache::ClockHandle.2630067" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062", %"class.rocksdb::AcqRelAtomic.2630069" }
+%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062" = type { ptr, ptr, %"struct.std::array.2630050", i64 }
+%"struct.std::array.2630050" = type { [2 x i64] }
+%"class.rocksdb::AcqRelAtomic.2630069" = type { %"class.rocksdb::RelaxedAtomic.2630070" }
+%"class.rocksdb::RelaxedAtomic.2630070" = type { %"struct.std::atomic.2630071" }
+%"struct.std::atomic.2630071" = type { %"struct.std::__atomic_base.2630072" }
+%"struct.std::__atomic_base.2630072" = type { i64 }
+%"class.testing::ThrowingValue.3460894" = type { i32 }
+%"struct.cv::FFillSegment.3775664" = type { i16, i16, i16, i16, i16, i16 }
 
 ; 18 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -30,11 +30,11 @@
 ; spike/optimized/htif_pthread.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 5
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
@@ -42,22 +42,23 @@ entry:
 ; 1 occurrences:
 ; rocksdb/optimized/clock_cache.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 8
-  %4 = getelementptr %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2514972", ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 64
+  %4 = getelementptr %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 64
   %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
 
-; 137 occurrences:
+; 142 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/status_internal.cc.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; arrow/optimized/data.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cmake/optimized/zstd_ldm.c.ll
 ; coreutils-rs/optimized/aci7fhqxjjsavmn.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
@@ -189,12 +190,16 @@ entry:
 ; wireshark/optimized/simple_statistics_dialog.cpp.ll
 ; wireshark/optimized/tap_parameter_dialog.cpp.ll
 ; wireshark/optimized/voip_calls_dialog.cpp.ll
+; zed-rs/optimized/0alphtuk5g34mh3kiiec4rpgf.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 5
-  %4 = getelementptr nusw [32 x i8], ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 32
+  %4 = getelementptr nusw nuw [32 x i8], ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 32
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
@@ -203,11 +208,11 @@ entry:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 2
   %6 = icmp ugt ptr %5, %4
   ret i1 %6
 }
@@ -215,10 +220,10 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw %"class.testing::ThrowingValue.3270416", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.testing::ThrowingValue.3460894", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %0, i64 4
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -242,11 +247,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/floodfill.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr %"struct.cv::FFillSegment.3595071", ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 12
+  %4 = getelementptr %"struct.cv::FFillSegment.3775664", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 12
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }

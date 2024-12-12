@@ -44,7 +44,7 @@
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add i32 %3, 2
   ret i32 %4
 }
@@ -104,24 +104,26 @@ entry:
 define i32 @func0000000000000005(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nsw i32 %3, 1
   ret i32 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; cpython/optimized/xmlparse.ll
+; libdeflate/optimized/deflate_compress.c.ll
 ; libwebp/optimized/huffman_encode_utils.c.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; openssl/optimized/libcrypto-lib-x_long.ll
 ; openssl/optimized/libcrypto-shlib-x_long.ll
 ; openusd/optimized/crease.cpp.ll
+; openusd/optimized/openexr-c.c.ll
 ; wireshark/optimized/data_printer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add nsw i32 %3, 7
   ret i32 %4
 }
@@ -166,12 +168,12 @@ entry:
 define i32 @func000000000000000f(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = add nuw nsw i32 %3, 2
   ret i32 %4
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/sclLibUtil.c.ll
 ; cpython/optimized/ceval.ll
 ; faiss/optimized/IndexIVFPQ.cpp.ll
@@ -188,7 +190,6 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/block_vhdx-log.c.ll
-; slurm/optimized/ebpf.ll
 ; wireshark/optimized/frame_data_sequence.c.ll
 ; wireshark/optimized/packet-c1222.c.ll
 ; wireshark/optimized/packet-dect-nwk.c.ll
@@ -199,7 +200,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = add nsw i32 %3, -1
   ret i32 %4
 }
@@ -214,7 +215,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add i32 %3, -1
   ret i32 %4
 }
@@ -225,7 +226,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = add nuw i32 %3, 1
   ret i32 %4
 }
@@ -236,7 +237,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = add nuw i32 %3, 1
   ret i32 %4
 }

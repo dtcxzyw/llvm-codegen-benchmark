@@ -23,7 +23,7 @@ entry:
 define i16 @func000000000000000f(i8 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i16
-  %4 = or disjoint i16 %3, %1
+  %4 = or disjoint i16 %1, %3
   %5 = and i16 %4, -17
   %6 = zext nneg i8 %0 to i16
   %7 = or disjoint i16 %5, %6

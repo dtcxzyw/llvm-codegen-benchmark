@@ -1,20 +1,4 @@
 
-; 5 occurrences:
-; rocksdb/optimized/lock_request.cc.ll
-; rocksdb/optimized/locktree.cc.ll
-; rocksdb/optimized/manager.cc.ll
-; rocksdb/optimized/txnid_set.cc.ll
-; rocksdb/optimized/wfg.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 1
-  %3 = icmp ult i32 %1, 3
-  %4 = select i1 %3, i32 4, i32 %2
-  %5 = icmp ugt i32 %4, %0
-  ret i1 %5
-}
-
 ; 7 occurrences:
 ; bullet3/optimized/b3DynamicBvh.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
@@ -24,36 +8,36 @@ entry:
 ; bullet3/optimized/btDbvtBroadphase.ll
 ; bullet3/optimized/btSoftBody.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000042a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = icmp eq i32 %1, 0
   %4 = select i1 %3, i32 1, i32 %2
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/CoverageMappingWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = icmp eq i32 %1, 5
   %4 = select i1 %3, i32 1, i32 %2
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = icmp eq i32 %1, 0
   %4 = select i1 %3, i32 16, i32 %2
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 

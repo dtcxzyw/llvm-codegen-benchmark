@@ -1,6 +1,7 @@
 
-; 64 occurrences:
+; 65 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
+; boost/optimized/alloc_lib.ll
 ; clamav/optimized/netcode.c.ll
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/entropy_common.c.ll
@@ -36,7 +37,6 @@
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/ginfast.ll
 ; postgres/optimized/hashpage.ll
-; postgres/optimized/hashsort.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/list.ll
 ; postgres/optimized/lwlock.ll
@@ -46,6 +46,7 @@
 ; raylib/optimized/rcore.c.ll
 ; ruby/optimized/vm_trace.ll
 ; verilator/optimized/V3String.cpp.ll
+; wireshark/optimized/packet-mac-lte.c.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; xgboost/optimized/cpu_treeshap.cc.ll
 ; xgboost/optimized/tree_model.cc.ll
@@ -72,7 +73,7 @@ entry:
   ret i32 %2
 }
 
-; 61 occurrences:
+; 67 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; cmake/optimized/entropy_common.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -90,6 +91,12 @@ entry:
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; luajit/optimized/lj_state.ll
 ; luajit/optimized/lj_state_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; openjdk/optimized/mlib_ImageAffine_NN_Bit.ll
 ; openjdk/optimized/mlib_ImageConvKernelConvert.ll

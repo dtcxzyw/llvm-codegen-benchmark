@@ -1,11 +1,11 @@
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	sext.w	a1, a1
 	sext.w	a2, a2
 	max	a2, a2, zero
 	slt	a1, a2, a1
 	and	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 16
@@ -15,7 +15,7 @@ func0000000000000044:                   # @func0000000000000044
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	sext.w	a1, a1
 	sext.w	a2, a2
 	xor	a2, a2, a1
@@ -24,7 +24,7 @@ func00000000000000ca:                   # @func00000000000000ca
 	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	sext.w	a1, a1
 	sext.w	a2, a2
 	xor	a2, a2, a1
@@ -34,7 +34,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a1, a1
 	sext.w	a2, a2
 	xor	a2, a2, a1
@@ -44,7 +44,7 @@ func000000000000001c:                   # @func000000000000001c
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a2, a1, a2
@@ -52,7 +52,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
-func00000000000000bc:                   # @func00000000000000bc
+func000000000000016c:                   # @func000000000000016c
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slt	a2, a2, a1
@@ -62,7 +62,7 @@ func00000000000000bc:                   # @func00000000000000bc
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sext.w	a1, a1
 	sext.w	a2, a2
 	xor	a2, a2, a1

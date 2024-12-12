@@ -6,7 +6,7 @@
 ; openjdk/optimized/c1_LinearScan.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000043(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp eq i64 %0, 7
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000069(i64 %0, i32 %1) #0 {
+define i64 @func00000000000000c9(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp ult i64 %0, 4294967296

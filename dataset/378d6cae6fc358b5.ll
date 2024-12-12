@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; cpython/optimized/convolute.ll
 ; cpython/optimized/crt.ll
@@ -17,11 +17,12 @@
 ; rocksdb/optimized/experimental.cc.ll
 ; spike/optimized/s_mulAddF128.ll
 ; syn/optimized/ofvfd67uyaewjlc.ll
+; zed-rs/optimized/0bnc87yviwo8pzd5mdfzedrf9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 

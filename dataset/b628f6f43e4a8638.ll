@@ -4,27 +4,24 @@
 ; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000e9(i32 %0, i64 %1) #0 {
+define i64 @func00000000000001c9(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = icmp ugt i64 %2, %1
+  %3 = icmp ult i64 %1, %2
   %4 = trunc nuw nsw i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
 
-; 22 occurrences:
-; abc/optimized/gzlib.c.ll
+; 17 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/XzDec.c.ll
-; cmake/optimized/gzlib.c.ll
 ; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/lzma_decoder.c.ll
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
-; libquic/optimized/gzlib.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; miniaudio/optimized/unity.c.ll
@@ -34,14 +31,12 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/dict.ll
 ; slurm/optimized/KangarooTwelve.ll
-; wireshark/optimized/file_wrappers.c.ll
-; zlib/optimized/gzlib.c.ll
 ; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000088(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = icmp ugt i64 %2, %1
+  %3 = icmp ult i64 %1, %2
   %4 = trunc nuw i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   %6 = zext i32 %5 to i64
@@ -63,10 +58,38 @@ entry:
 define i64 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = icmp sgt i64 %2, %1
+  %3 = icmp slt i64 %1, %2
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   %6 = zext i32 %5 to i64
+  ret i64 %6
+}
+
+; 3 occurrences:
+; abc/optimized/gzlib.c.ll
+; cmake/optimized/gzlib.c.ll
+; wireshark/optimized/file_wrappers.c.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000a8(i32 %0, i64 %1) #0 {
+entry:
+  %2 = zext i32 %0 to i64
+  %3 = icmp samesign ult i64 %1, %2
+  %4 = trunc nuw i64 %1 to i32
+  %5 = select i1 %3, i32 %4, i32 %0
+  %6 = zext i32 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; git/optimized/sha256.ll
+; Function Attrs: nounwind
+define i64 @func00000000000001e9(i32 %0, i64 %1) #0 {
+entry:
+  %2 = zext nneg i32 %0 to i64
+  %3 = icmp samesign ult i64 %1, %2
+  %4 = trunc nuw nsw i64 %1 to i32
+  %5 = select i1 %3, i32 %4, i32 %0
+  %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
 
@@ -80,7 +103,7 @@ entry:
 define i64 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = icmp ugt i64 %2, %1
+  %3 = icmp ult i64 %1, %2
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   %6 = zext i32 %5 to i64
@@ -94,10 +117,10 @@ entry:
 ; linux/optimized/scsi_logging.ll
 ; pocketpy/optimized/collections.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000089(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000109(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = icmp ugt i64 %2, %1
+  %3 = icmp ult i64 %1, %2
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   %6 = zext nneg i32 %5 to i64
@@ -107,10 +130,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/scatterwalk.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000088(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000108(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = icmp ugt i64 %2, %1
+  %3 = icmp ult i64 %1, %2
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   %6 = zext i32 %5 to i64
@@ -120,10 +143,10 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/program_runtime.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000008d(i32 %0, i64 %1) #0 {
+define i64 @func000000000000010d(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = icmp sgt i64 %2, %1
+  %3 = icmp slt i64 %1, %2
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   %6 = zext nneg i32 %5 to i64

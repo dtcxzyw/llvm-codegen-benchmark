@@ -1,8 +1,7 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
-; darktable/optimized/introspection_lens.cc.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/filter_camera.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll

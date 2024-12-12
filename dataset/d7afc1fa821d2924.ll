@@ -74,13 +74,13 @@ entry:
 }
 
 ; 16 occurrences:
+; boost/optimized/rational.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/he.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/vht.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
@@ -94,6 +94,16 @@ entry:
 define i16 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %0, %1
+  %3 = trunc i32 %2 to i16
+  ret i16 %3
+}
+
+; 1 occurrences:
+; boost/optimized/rational.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %0, %1
   %3 = trunc i32 %2 to i16
   ret i16 %3
 }

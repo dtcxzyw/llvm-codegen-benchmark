@@ -10,20 +10,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/DIE.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = icmp eq i16 %2, 2
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = and i32 %4, 255
-  ret i32 %5
-}
-
-; 2 occurrences:
-; linux/optimized/ff-memless.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-tibia.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i16 %2) #0 {

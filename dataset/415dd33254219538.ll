@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
 ; openblas/optimized/dbbcsd.c.ll
 ; openjdk/optimized/g1Policy.ll
 ; Function Attrs: nounwind
@@ -33,7 +34,9 @@ entry:
   ret i1 %2
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; duckdb/optimized/ub_duckdb_progress_bar.cpp.ll
 ; openblas/optimized/dsteqr.c.ll
 ; quantlib/optimized/timegrid.ll

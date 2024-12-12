@@ -1,5 +1,6 @@
 
-; 20 occurrences:
+; 21 occurrences:
+; boost/optimized/alloc_lib.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
@@ -14,11 +15,11 @@
 ; luajit/optimized/lib_package_dyn.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; openssl/optimized/libcrypto-lib-http_lib.ll
 ; openssl/optimized/libcrypto-shlib-http_lib.ll
 ; php/optimized/glob_wrapper.ll
 ; qemu/optimized/util_cutils.c.ll
-; redis/optimized/loadlib.ll
 ; ruby/optimized/parse.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i1 %1, ptr %2) #0 {

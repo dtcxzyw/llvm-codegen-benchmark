@@ -8,7 +8,7 @@ func000000000000000a:                   # @func000000000000000a
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sext.w	a0, a0
 	sext.w	a1, a1
 	zext.h	a2, a2

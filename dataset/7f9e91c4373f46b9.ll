@@ -14,8 +14,7 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; linux/optimized/blk-sysfs.ll
+; 3 occurrences:
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll

@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = and i64 %3, 4294967295

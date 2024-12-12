@@ -12,11 +12,11 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = trunc i64 %5 to i32
-  %7 = add nuw nsw i32 %6, %0
+  %7 = add nuw nsw i32 %0, %6
   ret i32 %7
 }
 
-; 315 occurrences:
+; 308 occurrences:
 ; abc/optimized/mapperTree.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/demangle.cc.ll
@@ -26,6 +26,7 @@ entry:
 ; assimp/optimized/MD3Loader.cpp.ll
 ; assimp/optimized/MDCLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/Bra86.c.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/asn1.c.ll
@@ -115,14 +116,12 @@ entry:
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/gso.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/icmp.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/inline.ll
 ; linux/optimized/intel_guc_ct.ll
-; linux/optimized/ip6_checksum.ll
 ; linux/optimized/ip6_input.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip_fragment.ll
@@ -131,14 +130,12 @@ entry:
 ; linux/optimized/ip_sockglue.ll
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/ip_tunnel_core.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/netconsole.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nf_conntrack_core.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/nf_conntrack_sip.ll
 ; linux/optimized/nf_log_syslog.ll
@@ -159,7 +156,6 @@ entry:
 ; linux/optimized/socklib.ll
 ; linux/optimized/static_call_inline.ll
 ; linux/optimized/svcsock.ll
-; linux/optimized/tbxfroot.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
@@ -167,7 +163,6 @@ entry:
 ; linux/optimized/tcpv6_offload.ll
 ; linux/optimized/tdls.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/tpm.ll
 ; linux/optimized/trace_events_filter.ll
 ; linux/optimized/trace_probe.ll
 ; linux/optimized/tso.ll
@@ -176,7 +171,6 @@ entry:
 ; linux/optimized/udp_offload.ll
 ; linux/optimized/unwind_orc.ll
 ; linux/optimized/virtio_net.ll
-; linux/optimized/wep.ll
 ; linux/optimized/wpa.ll
 ; linux/optimized/xdp.ll
 ; linux/optimized/xfrm4_input.ll
@@ -271,7 +265,6 @@ entry:
 ; protobuf/optimized/wire_format.cc.ll
 ; proxygen/optimized/HPACKEncodeBuffer.cpp.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
-; qemu/optimized/migration_qemu-file.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/rax.ll
@@ -339,16 +332,17 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
-; 94 occurrences:
+; 95 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; arrow/optimized/UriRecompose.c.ll
 ; arrow/optimized/grouper.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/to_chars.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; eastl/optimized/EASprintfOrdered.cpp.ll
 ; git/optimized/diff.ll
@@ -445,7 +439,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 

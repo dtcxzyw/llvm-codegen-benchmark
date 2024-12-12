@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/abc.c.ll
 ; darktable/optimized/introspection_dither.c.ll
 ; jq/optimized/regcomp.ll
-; linux/optimized/thermal_lib.ll
 ; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; ocio/optimized/GammaOpData.cpp.ll
 ; oniguruma/optimized/regcomp.ll

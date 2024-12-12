@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; cpython/optimized/crt.ll
 ; cvc5/optimized/theory_bv.cpp.ll
@@ -18,7 +18,6 @@
 ; openssl/optimized/libcrypto-lib-bn_mod.ll
 ; openssl/optimized/libcrypto-shlib-bn_mod.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; qemu/optimized/hw_char_sifive_uart.c.ll
 ; quantlib/optimized/tqreigendecomposition.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui64.ll

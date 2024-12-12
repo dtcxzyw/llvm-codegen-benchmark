@@ -1,5 +1,7 @@
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -54,17 +56,6 @@ define i8 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1048575
   %3 = icmp ult i32 %2, %0
-  %4 = zext i1 %3 to i8
-  ret i8 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/SemaTemplate.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000010(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 536870911
-  %3 = icmp ugt i32 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

@@ -3,7 +3,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000022a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 2
   %4 = mul i32 %3, %1
@@ -20,7 +20,7 @@ entry:
 ; ncnn/optimized/convolutiondepthwise3d.cpp.ll
 ; ncnn/optimized/unfold.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000028a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = mul nsw i32 %3, %1
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/stbImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = mul nsw i32 %3, %1

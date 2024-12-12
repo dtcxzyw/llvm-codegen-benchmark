@@ -10,7 +10,7 @@ func0000000000000004:                   // @func0000000000000004
 	add	x0, x0, w8, uxth #3
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	and	w8, w1, w2
 	and	x8, x8, #0xffff

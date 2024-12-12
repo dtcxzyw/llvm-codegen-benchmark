@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; cmake/optimized/divsufsort.c.ll
+; opencv/optimized/hough.cpp.ll
 ; php/optimized/php_pcre.ll
 ; xgboost/optimized/charconv.cc.ll
 ; zstd/optimized/divsufsort.c.ll

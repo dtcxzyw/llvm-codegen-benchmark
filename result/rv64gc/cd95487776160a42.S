@@ -1,12 +1,4 @@
-func00000000000000da:                   # @func00000000000000da
-	andi	a1, a1, 255
-	li	a2, -94
-	mul	a0, a0, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 130
-	xori	a0, a0, 1
-	ret
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
@@ -15,14 +7,14 @@ func000000000000010a:                   # @func000000000000010a
 	addiw	a2, a2, -1
 	slt	a0, a2, a0
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	andi	a1, a1, 255
 	slli	a2, a0, 4
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 255
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
@@ -30,7 +22,7 @@ func000000000000005a:                   # @func000000000000005a
 	slti	a0, a0, 304
 	xori	a0, a0, 1
 	ret
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000003f8:                   # @func00000000000003f8
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
@@ -38,7 +30,7 @@ func00000000000001f8:                   # @func00000000000001f8
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1
 	ret
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
@@ -48,14 +40,14 @@ func0000000000000101:                   # @func0000000000000101
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 32
 	ret
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
@@ -63,7 +55,7 @@ func0000000000000108:                   # @func0000000000000108
 	sltiu	a0, a0, 64
 	xori	a0, a0, 1
 	ret
-func000000000000015c:                   # @func000000000000015c
+func00000000000002ac:                   # @func00000000000002ac
 	andi	a1, a1, 255
 	li	a2, 10
 	mulw	a0, a0, a2
@@ -87,7 +79,7 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a0, 128
 	xori	a0, a0, 1
 	ret
-func0000000000000138:                   # @func0000000000000138
+func0000000000000268:                   # @func0000000000000268
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
@@ -95,7 +87,7 @@ func0000000000000138:                   # @func0000000000000138
 	srliw	a0, a0, 16
 	snez	a0, a0
 	ret
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
@@ -103,21 +95,21 @@ func000000000000015a:                   # @func000000000000015a
 	slti	a0, a0, 1001
 	xori	a0, a0, 1
 	ret
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
-func00000000000001fc:                   # @func00000000000001fc
+func00000000000003ec:                   # @func00000000000003ec
 	andi	a1, a1, 255
 	slli	a2, a0, 1
 	addw	a0, a0, a2
 	or	a0, a0, a1
 	snez	a0, a0
 	ret
-func00000000000001f1:                   # @func00000000000001f1
+func00000000000003e1:                   # @func00000000000003e1
 	andi	a1, a1, 255
 	slli	a2, a0, 1
 	add	a0, a0, a2
@@ -125,14 +117,14 @@ func00000000000001f1:                   # @func00000000000001f1
 	addi	a0, a0, -2
 	seqz	a0, a0
 	ret
-func00000000000001f6:                   # @func00000000000001f6
+func00000000000003f4:                   # @func00000000000003f4
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
 	addw	a0, a0, a1
-	slti	a0, a0, 49
+	sltiu	a0, a0, 49
 	ret
-func000000000000010c:                   # @func000000000000010c
+func000000000000020c:                   # @func000000000000020c
 	andi	a1, a1, 255
 	li	a2, 10
 	mulw	a0, a0, a2

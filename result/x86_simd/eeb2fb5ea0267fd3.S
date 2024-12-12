@@ -32,7 +32,7 @@
 	.short	10                              # 0xa
 	.short	10                              # 0xa
 	.short	10                              # 0xa
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpaddw	.LCPI0_0(%rip), %ymm1, %ymm2
 	vpcmpltuw	.LCPI0_1(%rip), %ymm1, %k1
 	vmovdqu16	%ymm0, %ymm2 {%k1}

@@ -16,7 +16,7 @@ entry:
   %4 = fptosi float %3 to i32
   %5 = sitofp i32 %4 to float
   %6 = fsub float %3, %5
-  %7 = fmul float %6, %0
+  %7 = fmul float %0, %6
   ret float %7
 }
 

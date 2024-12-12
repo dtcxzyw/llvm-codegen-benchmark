@@ -1,11 +1,10 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/utilCex.c.ll
 ; gromacs/optimized/gmx_spatial.cpp.ll
 ; gromacs/optimized/perf_est.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
@@ -20,7 +19,7 @@
 define double @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = sitofp i32 %4 to double
   ret double %5
 }
@@ -31,7 +30,7 @@ entry:
 define double @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = sitofp i32 %4 to double
   ret double %5
 }

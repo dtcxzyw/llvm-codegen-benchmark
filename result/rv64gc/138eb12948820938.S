@@ -10,9 +10,14 @@ func0000000000000007:                   # @func0000000000000007
 	addiw	a1, a1, -1872
 	add	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
-	andi	a1, a1, 256
-	seqz	a1, a1
+func0000000000000050:                   # @func0000000000000050
+	andi	a1, a1, 7
+	li	a2, 3
+	bltu	a1, a2, .LBB1_2
+	li	a1, 72
 	add	a0, a0, a1
-	addi	a0, a0, 2
+	ret
+.LBB1_2:
+	li	a1, 16
+	add	a0, a0, a1
 	ret

@@ -8,26 +8,13 @@ func000000000000000c:                   # @func000000000000000c
 	vzeroupper
 	retq
 .LCPI1_0:
-	.quad	30                              # 0x1e
-func0000000000000004:                   # @func0000000000000004
-	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpbroadcastq	.LCPI1_0(%rip), %ymm3   # ymm3 = [30,30,30,30]
-	vpand	%ymm3, %ymm1, %ymm1
-	vpcmpneqq	%ymm3, %ymm1, %k1
-	vpcmpgtd	%xmm0, %xmm2, %k0 {%k1}
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI2_0:
 	.quad	31                              # 0x1f
 func0000000000000001:                   # @func0000000000000001
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpbroadcastq	.LCPI2_0(%rip), %ymm3   # ymm3 = [31,31,31,31]
-	vpand	%ymm3, %ymm1, %ymm1
-	vpcmpeqq	%ymm3, %ymm1, %k1
-	vpcmpgtd	%xmm0, %xmm2, %k0 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpbroadcastq	.LCPI1_0(%rip), %ymm0   # ymm0 = [31,31,31,31]
+	vpand	%ymm0, %ymm1, %ymm1
+	vpcmpeqq	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

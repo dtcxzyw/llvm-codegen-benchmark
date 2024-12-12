@@ -1,31 +1,31 @@
 
-%"struct.std::pair.177.2880867" = type { %"class.hermes::vm::GCSymbolID.2880868", %"struct.hermes::vm::NamedPropertyDescriptor.2880863" }
-%"class.hermes::vm::GCSymbolID.2880868" = type { %"class.hermes::vm::SymbolID.2880841" }
-%"class.hermes::vm::SymbolID.2880841" = type { i32 }
-%"struct.hermes::vm::NamedPropertyDescriptor.2880863" = type { %"struct.hermes::vm::PropertyDescriptor.2880864" }
-%"struct.hermes::vm::PropertyDescriptor.2880864" = type { %union.anon.174.2880865, i32 }
-%union.anon.174.2880865 = type { i32 }
-%"class.hermes::vm::detail::DPMHashPair.2880869" = type { %struct.anon.234.2880870 }
-%struct.anon.234.2880870 = type { i32 }
-%"class.clang::NestedNameSpecifierLoc.2994535" = type { ptr, ptr }
+%"struct.std::pair.177.3075391" = type { %"class.hermes::vm::GCSymbolID.3075392", %"struct.hermes::vm::NamedPropertyDescriptor.3075387" }
+%"class.hermes::vm::GCSymbolID.3075392" = type { %"class.hermes::vm::SymbolID.3075365" }
+%"class.hermes::vm::SymbolID.3075365" = type { i32 }
+%"struct.hermes::vm::NamedPropertyDescriptor.3075387" = type { %"struct.hermes::vm::PropertyDescriptor.3075388" }
+%"struct.hermes::vm::PropertyDescriptor.3075388" = type { %union.anon.174.3075389, i32 }
+%union.anon.174.3075389 = type { i32 }
+%"class.hermes::vm::detail::DPMHashPair.3075393" = type { %struct.anon.234.3075394 }
+%struct.anon.234.3075394 = type { i32 }
+%"class.clang::NestedNameSpecifierLoc.3187997" = type { ptr, ptr }
+%"class.llvm::Attribute.3332310" = type { ptr }
 
-; 8 occurrences:
+; 7 occurrences:
 ; hermes/optimized/ArrayStorage.cpp.ll
 ; hermes/optimized/DictPropertyMap.cpp.ll
 ; hermes/optimized/HiddenClass.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
 ; libzmq/optimized/radix_tree.cpp.ll
-; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000003f(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 28
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 28
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw %"struct.std::pair.177.2880867", ptr %4, i64 %5
-  %7 = getelementptr nusw %"class.hermes::vm::detail::DPMHashPair.2880869", ptr %6, i64 %0
+  %6 = getelementptr nusw nuw %"struct.std::pair.177.3075391", ptr %4, i64 %5
+  %7 = getelementptr nusw nuw %"class.hermes::vm::detail::DPMHashPair.3075393", ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -40,23 +40,36 @@ entry:
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000007f(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 32
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 32
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw %"class.clang::NestedNameSpecifierLoc.2994535", ptr %4, i64 %5
-  %7 = getelementptr nusw ptr, ptr %6, i64 %0
+  %6 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3187997", ptr %4, i64 %5
+  %7 = getelementptr nusw nuw ptr, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 1 occurrences:
+; llvm/optimized/Attributes.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 56
+  %5 = zext i32 %1 to i64
+  %6 = getelementptr nusw nuw %"class.llvm::Attribute.3332310", ptr %4, i64 %5
+  %7 = getelementptr nusw %"class.llvm::Attribute.3332310", ptr %6, i64 %0
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(i64 %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000030(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = zext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %0
@@ -66,10 +79,10 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000060(i64 %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000070(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %0
@@ -80,13 +93,13 @@ entry:
 ; hyperscan/optimized/teddy.c.ll
 ; hyperscan/optimized/teddy_avx2.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(i64 %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000043(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 -23
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 

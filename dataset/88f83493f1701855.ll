@@ -1,5 +1,5 @@
 
-; 291 occurrences:
+; 292 occurrences:
 ; abc/optimized/abcNtbdd.c.ll
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcObj.c.ll
@@ -13,6 +13,10 @@
 ; abc/optimized/lpkSets.c.ll
 ; assimp/optimized/RemoveVCProcess.cpp.ll
 ; assimp/optimized/X3DImporter_Postprocess.cpp.ll
+; boost/optimized/dump.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -66,10 +70,8 @@
 ; hyperscan/optimized/som_stream.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
 ; icu/optimized/gregocal.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/package.ll
 ; icu/optimized/uchar.ll
-; icu/optimized/uresbund.ll
 ; icu/optimized/uresdata.ll
 ; icu/optimized/uts46.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -83,12 +85,10 @@
 ; linux/optimized/blk-map.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/cancel.ll
-; linux/optimized/cn_proc.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/intel_color.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/interrupt.ll
 ; linux/optimized/journal.ll
 ; linux/optimized/lbr.ll
@@ -154,7 +154,6 @@
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/PGOMemOPSizeOpt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/RegisterScavenging.cpp.ll
@@ -193,6 +192,7 @@
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -263,6 +263,7 @@
 ; ruby/optimized/ossl_asn1.ll
 ; ruby/optimized/regcomp.ll
 ; ruby/optimized/regparse.ll
+; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; slurm/optimized/KeccakSponge.ll
 ; slurm/optimized/cons_helpers.ll
 ; slurm/optimized/job_mgr.ll
@@ -369,11 +370,11 @@ entry:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0) #0 {
+define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = and i32 %1, 1835008
-  %3 = icmp ugt i32 %2, 1048576
+  %3 = icmp samesign ugt i32 %2, 1048576
   ret i1 %3
 }
 
@@ -384,7 +385,7 @@ entry:
 ; php/optimized/encode.ll
 ; php/optimized/fsmagic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = and i32 %1, 1024

@@ -1,5 +1,5 @@
 func0000000000000002:                   # @func0000000000000002
-	cmpb	$1, %dl
+	testb	%dl, %dl
 	cmovnel	%esi, %edi
 	movzwl	%di, %eax
 	retq

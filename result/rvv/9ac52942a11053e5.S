@@ -4,7 +4,7 @@ func0000000000000002:                   # @func0000000000000002
 	vand.vx	v9, v9, a0
 	vmseq.vi	v9, v9, 0
 	vmand.mm	v8, v9, v8
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret
 func0000000000000018:                   # @func0000000000000018
 	li	a0, -32
@@ -13,5 +13,5 @@ func0000000000000018:                   # @func0000000000000018
 	li	a0, -64
 	vmsne.vx	v9, v9, a0
 	vmand.mm	v8, v9, v8
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret

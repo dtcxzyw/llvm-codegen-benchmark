@@ -6,7 +6,7 @@
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul nsw i32 %3, 3
   ret i32 %4
 }
@@ -21,17 +21,19 @@ entry:
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul i32 %3, 3
   ret i32 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/date.ll
+; icu/optimized/ubidiln.ll
 ; linux/optimized/kapi.ll
-; nuttx/optimized/lib_timegm.c.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_refr.ll
 ; quantlib/optimized/date.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; wireshark/optimized/netmon.c.ll
@@ -39,7 +41,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = mul i32 %3, 400
   ret i32 %4
 }
@@ -53,7 +55,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = mul nuw nsw i32 %3, 3
   ret i32 %4
 }
@@ -67,7 +69,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul nsw i32 %3, 3
   ret i32 %4
 }
@@ -78,20 +80,19 @@ entry:
 define i32 @func000000000000000d(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = mul nsw i32 %3, -400
   ret i32 %4
 }
 
-; 3 occurrences:
-; icu/optimized/ubidiln.ll
+; 2 occurrences:
 ; openblas/optimized/dstedc.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul i32 %3, 56
   ret i32 %4
 }
@@ -102,7 +103,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = mul i32 %3, 506952113
   ret i32 %4
 }

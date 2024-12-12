@@ -43,6 +43,11 @@ func000000000000003f:                   # @func000000000000003f
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
+func0000000000000004:                   # @func0000000000000004
+	subw	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, -1
+	ret
 func0000000000000024:                   # @func0000000000000024
 	subw	a0, a0, a1
 	add	a0, a0, a2
@@ -57,11 +62,6 @@ func000000000000000c:                   # @func000000000000000c
 	subw	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 1
-	ret
-func0000000000000004:                   # @func0000000000000004
-	subw	a0, a0, a1
-	add	a0, a0, a2
-	addiw	a0, a0, 6
 	ret
 func0000000000000030:                   # @func0000000000000030
 	subw	a0, a0, a1

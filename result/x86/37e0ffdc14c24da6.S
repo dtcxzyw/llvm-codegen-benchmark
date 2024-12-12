@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 	andnl	%esi, %edi, %eax
 	setne	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orl	%edx, %esi
 	andnl	%esi, %edi, %eax
 	sete	%al

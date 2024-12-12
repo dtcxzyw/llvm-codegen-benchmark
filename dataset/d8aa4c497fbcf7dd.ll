@@ -131,7 +131,7 @@
 ; wireshark/optimized/wireshark_main_window.cpp.ll
 ; wireshark/optimized/wireshark_main_window_slots.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i64 %0, 0
   %4 = or i1 %3, %2

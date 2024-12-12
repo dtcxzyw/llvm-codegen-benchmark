@@ -13,7 +13,7 @@
 ; raylib/optimized/raudio.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000318c(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -40,7 +40,7 @@ entry:
 ; casadi/optimized/sundials_interface.cpp.ll
 ; gromacs/optimized/shellfc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cca(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000318a(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -58,7 +58,7 @@ entry:
 ; redis/optimized/pages.ll
 ; redis/optimized/pages.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc4(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000003184(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null

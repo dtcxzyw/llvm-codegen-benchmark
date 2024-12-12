@@ -3,7 +3,7 @@
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sub nuw i32 %3, %0
@@ -16,7 +16,7 @@ entry:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 3
   %4 = sub i32 %3, %0
@@ -42,7 +42,7 @@ entry:
 ; linux/optimized/nf_log_syslog.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sub i32 %3, %0
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-rtcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 4
   %4 = sub i32 %3, %0
@@ -66,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %0, %2
   %4 = sub i32 -11, %1
@@ -77,7 +77,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dgghd3.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000157(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a7(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sub nsw i32 %3, %0
@@ -89,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dgghd3.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000117(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000227(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sub nsw i32 %3, %0

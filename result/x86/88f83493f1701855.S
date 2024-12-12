@@ -7,12 +7,12 @@ func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
 	andb	$1, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$1835008, %edi                  # imm = 0x1C0000
 	cmpl	$1048577, %edi                  # imm = 0x100001
 	setae	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	testl	$1024, %edi                     # imm = 0x400
 	sete	%al
 	retq

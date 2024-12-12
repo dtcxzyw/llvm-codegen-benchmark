@@ -67,21 +67,21 @@ func000000000000000d:                   # @func000000000000000d
 	setbe	%al
 	retq
 .LCPI9_0:
-	.long	0x3f800000                      # float 1
-.LCPI9_1:
-	.long	0x2b8cbccc                      # float 9.99999996E-13
-func000000000000000a:                   # @func000000000000000a
-	vmovss	.LCPI9_0(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
-	vsubss	%xmm0, %xmm1, %xmm0
-	vmovss	.LCPI9_1(%rip), %xmm1           # xmm1 = [9.99999996E-13,0.0E+0,0.0E+0,0.0E+0]
-	vucomiss	%xmm0, %xmm1
-	setae	%al
-	retq
-.LCPI10_0:
-	.long	0x3f800000                      # float 1
+	.long	0x3f000000                      # float 0.5
 func000000000000000e:                   # @func000000000000000e
-	vmovss	.LCPI10_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI9_0(%rip), %xmm1           # xmm1 = [5.0E-1,0.0E+0,0.0E+0,0.0E+0]
 	vsubss	%xmm0, %xmm1, %xmm0
 	vucomiss	%xmm0, %xmm0
 	setnp	%al
+	retq
+.LCPI10_0:
+	.long	0x3f800000                      # float 1
+.LCPI10_1:
+	.long	0x2b8cbccc                      # float 9.99999996E-13
+func000000000000000a:                   # @func000000000000000a
+	vmovss	.LCPI10_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vsubss	%xmm0, %xmm1, %xmm0
+	vmovss	.LCPI10_1(%rip), %xmm1          # xmm1 = [9.99999996E-13,0.0E+0,0.0E+0,0.0E+0]
+	vucomiss	%xmm0, %xmm1
+	setae	%al
 	retq

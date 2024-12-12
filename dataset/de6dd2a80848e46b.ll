@@ -33,4 +33,15 @@ entry:
   ret double %5
 }
 
+; 1 occurrences:
+; proj/optimized/healpix.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000003(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ult double %2, 4.000000e+00
+  %4 = select i1 %3, double %1, double 0x4002D97C7F3321D2
+  %5 = fsub double %0, %4
+  ret double %5
+}
+
 attributes #0 = { nounwind }

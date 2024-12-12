@@ -1,114 +1,62 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffffffffffffff
-	movi	v5.16b, #85
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	and	v1.16b, v1.16b, v5.16b
-	and	v0.16b, v0.16b, v5.16b
-	and	v3.16b, v3.16b, v5.16b
-	and	v2.16b, v2.16b, v5.16b
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v3.4s
+	sub	w8, w1, #1
+	and	w9, w0, #0x55555555
+	and	w8, w8, #0x55555555
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffffffffffffff
-	movi	v5.2d, #0x00ffff0000ffff
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	and	v1.16b, v1.16b, v5.16b
-	and	v0.16b, v0.16b, v5.16b
-	and	v3.16b, v3.16b, v5.16b
-	and	v2.16b, v2.16b, v5.16b
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v3.4s
+	sub	w8, w1, #1
+	and	w9, w0, #0xffff
+	add	w0, w9, w8, uxth
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v4.4s, #15
-	bic	v1.4s, #7
-	bic	v0.4s, #7
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	bic	v3.4s, #7
-	bic	v2.4s, #7
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v3.4s
+	add	w8, w1, #15
+	and	w9, w0, #0xfffffff8
+	and	w8, w8, #0xfffffff8
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v4.4s, #15
-	movi	v5.4s, #48
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	and	v1.16b, v1.16b, v5.16b
-	and	v0.16b, v0.16b, v5.16b
-	bic	v3.4s, #15
-	bic	v2.4s, #15
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
+	add	w8, w1, #15
+	and	w9, w0, #0x30
+	and	w8, w8, #0xfffffff0
+	add	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v4.4s, #7
-	mov	w8, #65528                      // =0xfff8
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	dup	v4.4s, w8
-	bic	v3.4s, #7
-	bic	v2.4s, #7
-	and	v1.16b, v1.16b, v4.16b
-	and	v0.16b, v0.16b, v4.16b
-	add	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v2.4s
+	add	w8, w1, #7
+	and	w9, w0, #0xfff8
+	and	w8, w8, #0xfffffff8
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	movi	v4.4s, #3
-	bic	v1.4s, #3
-	bic	v0.4s, #3
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	bic	v3.4s, #3
-	bic	v2.4s, #3
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
+	add	w8, w1, #3
+	and	w9, w0, #0xfffffffc
+	and	w8, w8, #0xfffffffc
+	add	w0, w8, w9
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	movi	v4.4s, #4
-	mov	w8, #134217720                  // =0x7fffff8
-	dup	v5.4s, w8
-	mov	w8, #65528                      // =0xfff8
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	dup	v4.4s, w8
-	and	v3.16b, v3.16b, v5.16b
-	and	v2.16b, v2.16b, v5.16b
-	and	v1.16b, v1.16b, v4.16b
-	and	v0.16b, v0.16b, v4.16b
-	add	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v2.4s
+	add	w8, w1, #4
+	and	w9, w0, #0xfff8
+	and	w8, w8, #0x7fffff8
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	movi	v5.2d, #0x00ffff0000ffff
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	and	v1.16b, v1.16b, v5.16b
-	and	v0.16b, v0.16b, v5.16b
-	and	v3.16b, v3.16b, v5.16b
-	and	v2.16b, v2.16b, v5.16b
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
+	add	w8, w1, #1
+	and	w8, w8, #0xffff
+	add	w0, w8, w0, uxth
 	ret
                                         // -- End function

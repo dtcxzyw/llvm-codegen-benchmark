@@ -99,7 +99,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 196112
   %4 = or i1 %3, %1
@@ -113,10 +113,10 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 35
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = xor i1 %4, true
   %6 = icmp eq i32 %0, 2
   %7 = and i1 %6, %5
@@ -126,10 +126,10 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/atomprop.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000030c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, -3
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = xor i1 %4, true
   %6 = icmp ne i32 %0, 0
   %7 = and i1 %6, %5
@@ -140,7 +140,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000301(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = or i1 %3, %1

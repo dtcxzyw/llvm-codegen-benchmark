@@ -12,7 +12,7 @@ define i8 @func0000000000000005(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 4
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -27,11 +27,11 @@ define i8 @func0000000000000030(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; cmake/optimized/setopt.c.ll
 ; curl/optimized/libcurl_la-setopt.ll
 ; linux/optimized/r8169_main.ll
@@ -39,12 +39,13 @@ entry:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000031(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -58,7 +59,7 @@ define i8 @func0000000000000021(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 63
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -77,7 +78,7 @@ define i8 @func0000000000000020(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 255
   %3 = zext i1 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -90,7 +91,7 @@ define i8 @func0000000000000010(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, -4294967296
   %3 = zext i1 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -104,7 +105,18 @@ define i8 @func0000000000000004(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 1
   %3 = zext i1 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
+  ret i8 %4
+}
+
+; 1 occurrences:
+; z3/optimized/pb_solver.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000060(i8 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 4294967295
+  %3 = zext i1 %2 to i8
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 

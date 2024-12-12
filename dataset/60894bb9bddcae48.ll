@@ -4,7 +4,7 @@
 ; wasmedge/optimized/engine.cpp.ll
 ; wasmedge/optimized/helper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a9(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = ashr exact i64 %1, 4
@@ -19,7 +19,7 @@ entry:
 ; openusd/optimized/json.cpp.ll
 ; xgboost/optimized/gblinear.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = ashr exact i64 %1, 5
@@ -33,7 +33,7 @@ entry:
 ; openusd/optimized/json.cpp.ll
 ; xgboost/optimized/gblinear.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = ashr exact i64 %1, 5
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/core_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = ashr exact i64 %1, 3

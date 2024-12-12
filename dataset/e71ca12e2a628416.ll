@@ -1,12 +1,10 @@
 
-; 35 occurrences:
+; 33 occurrences:
 ; abc/optimized/kitCloud.c.ll
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; libquic/optimized/file_posix.cc.ll
-; linux/optimized/attr.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
@@ -44,8 +42,7 @@ entry:
   ret i32 %5
 }
 
-; 85 occurrences:
-; clamav/optimized/upack.c.ll
+; 84 occurrences:
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll

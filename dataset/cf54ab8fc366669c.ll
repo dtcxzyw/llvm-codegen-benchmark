@@ -3,7 +3,7 @@
 ; openjdk/optimized/regmask.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cc(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d8c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp ne i32 %3, %1
@@ -16,7 +16,7 @@ entry:
 ; libwebp/optimized/image_enc.c.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000361(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000cc1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -204,11 +204,11 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000554(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp sgt i32 %3, %1
-  %5 = icmp ult i64 %0, 2
+  %5 = icmp samesign ult i64 %0, 2
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
@@ -216,11 +216,11 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000364(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000cd4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
-  %5 = icmp ult i64 %0, 49
+  %5 = icmp samesign ult i64 %0, 49
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
@@ -229,7 +229,7 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d81(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp ne i32 %3, %1
@@ -241,7 +241,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TargetLoweringObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000098c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp ne i32 %3, %1
@@ -253,7 +253,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000981(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp ne i32 %3, %1
@@ -265,7 +265,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/8139too.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000036c(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000ccc(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1

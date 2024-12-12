@@ -1,6 +1,11 @@
 
-; 229 occurrences:
+; 232 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -143,7 +148,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -226,14 +230,13 @@
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000351(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 72
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sdiv exact i64 %1, 72
   %6 = add nsw i64 %4, %5
   %7 = icmp eq i64 %6, 128102389400760775
@@ -249,13 +252,26 @@ entry:
 ; opencv/optimized/persistence.cpp.ll
 ; rocksdb/optimized/backup_engine.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000358(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 520
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sdiv exact i64 %1, 520
   %6 = add nsw i64 %4, %5
   %7 = icmp ugt i64 %6, 230584300921369395
+  ret i1 %7
+}
+
+; 1 occurrences:
+; boost/optimized/self_intersection_points.ll
+; Function Attrs: nounwind
+define i1 @func00000000000005aa(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sdiv exact i64 %2, 200
+  %4 = add nsw i64 %1, %3
+  %5 = sdiv exact i64 %0, 200
+  %6 = add nsw i64 %5, %4
+  %7 = icmp sgt i64 %6, -1
   ret i1 %7
 }
 
@@ -265,10 +281,10 @@ entry:
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/slot_manager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 104
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sdiv exact i64 %1, 104
   %6 = add nsw i64 %4, %5
   %7 = icmp ult i64 %6, 2
@@ -281,7 +297,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 100
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sdiv i64 %1, -400
   %6 = add i64 %4, %5
   %7 = icmp slt i64 %6, 0
@@ -294,10 +310,10 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000005a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 48
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sdiv exact i64 %0, 48
   %6 = add nsw i64 %5, %4
   %7 = icmp ult i64 %6, 4
@@ -307,10 +323,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000314(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000624(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sdiv exact i64 %1, 24
   %6 = add nsw i64 %4, %5
   %7 = icmp ult i64 %6, 8
@@ -322,10 +338,10 @@ entry:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000254(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sdiv exact i64 %0, 24
   %6 = add nsw i64 %5, %4
   %7 = icmp ult i64 %6, 8
@@ -335,10 +351,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000035a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sdiv exact i64 %1, 24
   %6 = add nsw i64 %4, %5
   %7 = icmp sgt i64 %6, 0
@@ -348,10 +364,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000306(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000606(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sdiv exact i64 %1, 24
   %6 = add i64 %4, %5
   %7 = icmp slt i64 %6, 0
@@ -361,10 +377,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000356(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sdiv exact i64 %1, 24
   %6 = add nsw i64 %4, %5
   %7 = icmp slt i64 %6, 0
@@ -374,7 +390,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002d1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000005a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -24
   %.neg1 = sub i64 %.neg, %1

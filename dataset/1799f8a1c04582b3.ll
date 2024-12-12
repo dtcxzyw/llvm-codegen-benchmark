@@ -1,5 +1,5 @@
 
-; 111 occurrences:
+; 109 occurrences:
 ; abseil-cpp/optimized/crc.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -23,6 +23,7 @@
 ; assimp/optimized/MaterialSystem.cpp.ll
 ; assimp/optimized/PostStepRegistry.cpp.ll
 ; assimp/optimized/SceneCombiner.cpp.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
 ; clamav/optimized/autoit.c.ll
@@ -72,7 +73,6 @@
 ; openssl/optimized/libcrypto-lib-aria.ll
 ; openssl/optimized/libcrypto-lib-bf_enc.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-seed.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-lib-sm4.ll
@@ -80,13 +80,11 @@
 ; openssl/optimized/libcrypto-shlib-aria.ll
 ; openssl/optimized/libcrypto-shlib-bf_enc.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-seed.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-sm4.ll
 ; openssl/optimized/libcrypto-shlib-xcbc_enc.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; php/optimized/crypt_blowfish.ll
 ; php/optimized/crypt_freesec.ll
@@ -115,7 +113,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = lshr i32 %4, 18
   ret i32 %5
 }

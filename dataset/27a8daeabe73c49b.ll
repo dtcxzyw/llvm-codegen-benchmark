@@ -19,7 +19,7 @@
 ; proxygen/optimized/Service.cpp.ll
 ; qemu/optimized/virtio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 127
   %3 = or disjoint i64 %2, 128
@@ -34,7 +34,7 @@ entry:
 ; openjdk/optimized/zObjectAllocator.ll
 ; openjdk/optimized/zReferenceProcessor.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -64
   %3 = or disjoint i64 %2, 8
@@ -46,7 +46,7 @@ entry:
 ; llvm/optimized/FrontendActions.cpp.ll
 ; llvm/optimized/MCContext.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = or disjoint i64 %2, 2
@@ -62,7 +62,7 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967294
   %3 = or disjoint i64 %2, 1

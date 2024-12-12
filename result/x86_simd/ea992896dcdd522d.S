@@ -1,0 +1,23 @@
+.LCPI0_0:
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+func0000000000000001:                   # @func0000000000000001
+	vpxor	%ymm1, %ymm0, %ymm0
+	vptestnmw	.LCPI0_0(%rip), %ymm0, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq

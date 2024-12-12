@@ -8,3 +8,13 @@ func000000000000002b:                   # @func000000000000002b
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000050:                   # @func0000000000000050
+	xorl	%eax, %eax
+	cmpl	$13, %edx
+	setae	%al
+	leaq	8(,%rax,4), %rcx
+	testb	$1, %sil
+	movl	$8, %eax
+	cmovneq	%rcx, %rax
+	addq	%rdi, %rax
+	retq

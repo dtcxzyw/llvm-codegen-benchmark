@@ -6,14 +6,14 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	leal	-3(%rdx), %ecx
 	addq	%rsi, %rcx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	leal	-1(%rdx), %ecx
 	shlq	$4, %rcx
 	addq	%rsi, %rcx

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	lui	a0, 699051
 	lui	a1, %hi(.LCPI0_0)
 	addiw	a0, a0, -1365
@@ -11,5 +11,5 @@ func000000000000002c:                   # @func000000000000002c
 	vmul.vx	v8, v8, a0
 	vror.vi	v8, v8, 3
 	vmsgtu.vx	v10, v8, a1
-	vmand.mm	v0, v10, v0
+	vmand.mm	v0, v0, v10
 	ret

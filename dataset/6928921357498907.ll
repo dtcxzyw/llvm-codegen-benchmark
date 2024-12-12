@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i16 %0) #0 {
+define i1 @func0000000000000118(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 64
   %2 = icmp ne i16 %1, 0
@@ -15,7 +15,7 @@ entry:
 ; darktable/optimized/CrwDecoder.cpp.ll
 ; linux/optimized/intel_vdsc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i16 %0) #0 {
+define i1 @func0000000000000310(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 3
   %2 = icmp ne i16 %1, 0
@@ -25,25 +25,13 @@ entry:
 }
 
 ; 1 occurrences:
-; slurm/optimized/step_mgr.ll
+; wireshark/optimized/packet-erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i16 %0) #0 {
+define i1 @func0000000000000050(i16 %0) #0 {
 entry:
-  %1 = and i16 %0, 30
+  %1 = and i16 %0, 3
   %2 = icmp eq i16 %1, 0
-  %3 = icmp eq i16 %0, -2
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-dhcp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000182(i16 %0) #0 {
-entry:
-  %1 = and i16 %0, 1
-  %2 = icmp ne i16 %1, 0
-  %3 = icmp eq i16 %0, 0
+  %3 = icmp ugt i16 %0, 15
   %4 = or i1 %3, %2
   ret i1 %4
 }
@@ -54,7 +42,7 @@ entry:
 ; icu/optimized/ustrcase.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i16 %0) #0 {
+define i1 @func0000000000000048(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 1
   %2 = icmp eq i16 %1, 0
@@ -67,7 +55,7 @@ entry:
 ; icu/optimized/ucasemap.ll
 ; icu/optimized/ustrcase.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i16 %0) #0 {
+define i1 @func0000000000000308(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 3
   %2 = icmp ne i16 %1, 1

@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 49 occurrences:
 ; abc/optimized/trees.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
@@ -20,7 +20,6 @@
 ; libquic/optimized/trees.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/deftree.ll
-; linux/optimized/he.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/trace_kprobe.ll
@@ -32,6 +31,9 @@
 ; openexr/optimized/ImfConvert.cpp.ll
 ; openexr/optimized/pack.c.ll
 ; openexr/optimized/unpack.c.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
+; openusd/optimized/detokenize.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/session.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
@@ -44,6 +46,8 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i32 %0, i32 %1) #0 {
@@ -86,9 +90,10 @@ entry:
   ret i16 %3
 }
 
-; 13 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
+; boost/optimized/rational.ll
 ; clamav/optimized/unarj.c.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; linux/optimized/drm_dp_mst_topology.ll
@@ -100,6 +105,8 @@ entry:
 ; openusd/optimized/decodetxb.c.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:

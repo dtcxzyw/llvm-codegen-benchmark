@@ -1,7 +1,7 @@
 
-%class.QCPGraphData.3260420 = type { double, double }
+%class.QCPGraphData.3451166 = type { double, double }
 
-; 20 occurrences:
+; 17 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/ivyCutTrav.c.ll
 ; abc/optimized/wlcStdin.c.ll
@@ -14,12 +14,9 @@
 ; git/optimized/show-ref.ll
 ; git/optimized/unpack-trees.ll
 ; graphviz/optimized/gvgetfontlist_pango.c.ll
-; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; opencv/optimized/scansegment.cpp.ll
-; openmpi/optimized/ad_nfs_read.ll
-; openmpi/optimized/ad_read_str.ll
 ; openssl/optimized/libcrypto-lib-pem_lib.ll
 ; openssl/optimized/libcrypto-shlib-pem_lib.ll
 ; Function Attrs: nounwind
@@ -47,16 +44,18 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
-; clamav/optimized/qsort.c.ll
-; nuttx/optimized/lib_qsort.c.ll
+; 4 occurrences:
+; boost/optimized/to_chars.ll
+; lz4/optimized/lz4hc.c.ll
+; openmpi/optimized/ad_nfs_read.ll
+; openmpi/optimized/ad_read_str.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000005e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %7 = getelementptr nusw i8, ptr %6, i64 %5
   ret ptr %7
 }
@@ -70,8 +69,8 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr %class.QCPGraphData.3260420, ptr %0, i64 %1
-  %7 = getelementptr %class.QCPGraphData.3260420, ptr %6, i64 %5
+  %6 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %1
+  %7 = getelementptr %class.QCPGraphData.3451166, ptr %6, i64 %5
   ret ptr %7
 }
 

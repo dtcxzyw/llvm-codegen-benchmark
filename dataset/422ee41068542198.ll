@@ -3,6 +3,7 @@
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; abseil-cpp/optimized/time_zone_posix.cc.ll
 ; arrow/optimized/type.cc.ll
+; boost/optimized/static_string.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/str.c.ll
@@ -67,7 +68,6 @@
 ; php/optimized/parse_date.ll
 ; postgres/optimized/filter.ll
 ; postgres/optimized/formatting.ll
-; postgres/optimized/guc.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/hiredis.ll
 ; redis/optimized/lstrlib.ll
@@ -76,7 +76,7 @@
 ; wireshark/optimized/packet-osc.c.ll
 ; wireshark/optimized/packet-websocket.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294983169
   %3 = icmp eq i64 %2, 0
@@ -95,11 +95,24 @@ entry:
 ; rocksdb/optimized/db_impl.cc.ll
 ; slurm/optimized/scontrol.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967296
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne i8 %0, 0
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; openssl/optimized/libcrypto-lib-fcrypt.ll
+; openssl/optimized/libcrypto-shlib-fcrypt.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000301(i8 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967168
+  %3 = icmp ne i64 %2, 0
+  %4 = icmp eq i8 %0, 0
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }
@@ -109,7 +122,7 @@ entry:
 ; llvm/optimized/CGAtomic.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp ne i64 %2, 0
@@ -121,7 +134,7 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3Task.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65536
   %3 = icmp ne i64 %2, 0
@@ -130,15 +143,14 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; linux/optimized/hid-cypress.ll
+; 5 occurrences:
 ; linux/optimized/nl80211.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; php/optimized/zend_jit.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4096
   %3 = icmp eq i64 %2, 0
@@ -147,13 +159,14 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; hermes/optimized/Interpreter.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 84
-  %3 = icmp ne i64 %2, 4
+  %2 = and i64 %1, 4294967295
+  %3 = icmp ne i64 %2, 1
   %4 = icmp eq i8 %0, 0
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
@@ -162,7 +175,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 8
   %3 = icmp ult i8 %0, 29
@@ -174,7 +187,7 @@ entry:
 ; eastl/optimized/EASTLBenchmark.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775807
   %3 = icmp eq i64 %2, 0
@@ -186,10 +199,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestFixedString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i8 %0, i64 %1) #0 {
+define i1 @func000000000000028a(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775807
-  %3 = icmp ult i64 %2, 63
+  %3 = icmp samesign ult i64 %2, 63
   %4 = icmp sgt i8 %0, -1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
@@ -198,10 +211,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i8 %0, i64 %1) #0 {
+define i1 @func000000000000030a(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775807
-  %3 = icmp ugt i64 %2, 2
+  %3 = icmp samesign ugt i64 %2, 2
   %4 = icmp sgt i8 %0, -1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
@@ -210,7 +223,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i8 %0, i64 %1) #0 {
+define i1 @func000000000000018a(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775807
   %3 = icmp ne i64 %2, 0

@@ -1,8 +1,7 @@
 
-; 43 occurrences:
+; 41 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/bmcChain.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/fraSat.c.ll
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/retDelay.c.ll
@@ -28,7 +27,6 @@
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dlarre.c.ll
 ; openblas/optimized/dlarrf.c.ll
 ; opencv/optimized/cap_v4l.cpp.ll

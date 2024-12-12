@@ -1,5 +1,5 @@
 
-; 1132 occurrences:
+; 1130 occurrences:
 ; arrow/optimized/codegen_internal.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
@@ -47,7 +47,6 @@
 ; faiss/optimized/IndexPQ.cpp.ll
 ; faiss/optimized/hamming.cpp.ll
 ; git/optimized/cbtree.ll
-; graphviz/optimized/randomkit.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BCOpt.cpp.ll
@@ -815,7 +814,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1136,7 +1134,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = lshr i64 %4, 4
   %6 = or i64 %5, %4
   ret i64 %6

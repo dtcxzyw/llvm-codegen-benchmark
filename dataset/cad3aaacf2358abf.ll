@@ -17,10 +17,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/jvmtiExport.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 268369920
-  %3 = icmp ult i32 %2, 851968
+  %3 = icmp samesign ult i32 %2, 851968
   %4 = select i1 %3, i1 true, i1 %0
   ret i1 %4
 }
@@ -52,10 +52,10 @@ entry:
 ; icu/optimized/collationkeys.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16777212
-  %3 = icmp ugt i32 %2, 524288
+  %3 = icmp samesign ugt i32 %2, 524288
   %4 = select i1 %3, i1 true, i1 %0
   ret i1 %4
 }

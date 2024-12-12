@@ -18,10 +18,9 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
-; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/writer.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000185(i64 %0, i64 %1) #0 {

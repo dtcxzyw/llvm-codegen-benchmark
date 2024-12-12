@@ -12,15 +12,18 @@ entry:
   ret i16 %2
 }
 
-; 3 occurrences:
+; 6 occurrences:
 ; c3c/optimized/sema_expr.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; openjdk/optimized/hb-face-builder.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0) #0 {
 entry:
-  %1 = shl nuw nsw i16 %0, 10
-  %2 = xor i16 %1, 2048
+  %1 = shl nuw nsw i16 %0, 8
+  %2 = xor i16 %1, 7936
   ret i16 %2
 }
 

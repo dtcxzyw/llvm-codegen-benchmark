@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; icu/optimized/uinvchar.ll
 ; icu/optimized/unames.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterBankInfo.cpp.ll
 ; llvm/optimized/X86RegisterBankInfo.cpp.ll
 ; postgres/optimized/nbtdedup.ll
@@ -20,12 +19,13 @@ entry:
   ret i64 %2
 }
 
-; 134 occurrences:
+; 131 occurrences:
 ; abc/optimized/lpkCore.c.ll
 ; abc/optimized/lpkMap.c.ll
 ; abc/optimized/rwrUtil.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abseil-cpp/optimized/escaping.cc.ll
+; boost/optimized/ipv6_address.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cpython/optimized/_json.ll
@@ -53,10 +53,8 @@ entry:
 ; linux/optimized/ip6_fib.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/namei.ll
-; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/sta_info.ll
 ; linux/optimized/tkip.ll
-; linux/optimized/utownerid.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/AArch64AdvSIMDScalarPass.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
@@ -95,7 +93,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -152,7 +149,6 @@ entry:
 ; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; wireshark/optimized/packet-btl2cap.c.ll
-; wireshark/optimized/packet-dhcp-failover.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/to_str.c.ll
 ; Function Attrs: nounwind
@@ -163,13 +159,12 @@ entry:
   ret i64 %2
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; linux/optimized/nl80211.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/jvmciCodeInstaller.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i16 %0) #0 {

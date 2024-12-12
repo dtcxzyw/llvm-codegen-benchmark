@@ -1,5 +1,5 @@
 
-; 172 occurrences:
+; 173 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/giaDecs.c.ll
@@ -7,6 +7,7 @@
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/float16.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; clamav/optimized/BraIA64.c.ll
 ; cmake/optimized/ia64.c.ll

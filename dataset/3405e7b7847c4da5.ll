@@ -1,12 +1,22 @@
 
-; 36 occurrences:
+; 46 occurrences:
 ; arrow/optimized/utf8.cc.ll
 ; clamav/optimized/chmd.c.ll
 ; cmake/optimized/json_writer.cpp.ll
+; hermes/optimized/AST2JS.cpp.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; libphonenumber/optimized/unicodetext.cc.ll
 ; libquic/optimized/a_utf8.c.ll
 ; linux/optimized/alps.ll
+; linux/optimized/intel_fbc.ll
 ; linux/optimized/sd.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
@@ -42,7 +52,7 @@ entry:
   %3 = and i8 %2, 63
   %4 = zext nneg i8 %3 to i32
   %5 = and i32 %1, 61440
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -56,7 +66,7 @@ entry:
   %3 = and i8 %2, 127
   %4 = zext nneg i8 %3 to i32
   %5 = and i32 %1, 61440
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }

@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 15 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; hyperscan/optimized/limex_64.c.ll
 ; hyperscan/optimized/stream.c.ll
@@ -12,6 +12,9 @@
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i8 %2) #0 {
 entry:
@@ -21,10 +24,12 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
@@ -46,7 +51,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl i64 %1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -57,7 +62,7 @@ define i64 @func000000000000000e(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

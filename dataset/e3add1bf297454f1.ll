@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
@@ -43,6 +43,7 @@
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; pbrt-v4/optimized/plytool.cpp.ll
+; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; rocksdb/optimized/db_impl.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; yosys/optimized/abc9_ops.ll
@@ -56,13 +57,13 @@
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/torder.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 112
   %5 = add nsw i64 %4, 63
   %6 = lshr i64 %5, 6
-  %7 = getelementptr nusw i64, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i64, ptr %0, i64 %6
   ret ptr %7
 }
 

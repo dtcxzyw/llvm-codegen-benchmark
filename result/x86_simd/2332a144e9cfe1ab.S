@@ -2,7 +2,7 @@ func0000000000000004:                   # @func0000000000000004
 	vsubps	%zmm2, %zmm1, %zmm1
 	vxorps	%xmm2, %xmm2, %xmm2
 	vmaxps	%zmm2, %zmm1, %zmm1
-	vaddps	%zmm0, %zmm1, %zmm0
+	vaddps	%zmm1, %zmm0, %zmm0
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vsubps	%zmm2, %zmm1, %zmm1

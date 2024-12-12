@@ -10,7 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rax, %rsi
 	cmovgl	%esi, %eax
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	movslq	%edi, %rax
 	subq	%rdx, %rsi
 	cmpq	%rax, %rsi

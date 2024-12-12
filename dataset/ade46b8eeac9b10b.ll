@@ -13,8 +13,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; openblas/optimized/dlarrv.c.ll
+; 1 occurrences:
 ; opencv/optimized/geometry.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {

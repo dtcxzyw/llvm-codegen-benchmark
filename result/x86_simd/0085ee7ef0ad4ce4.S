@@ -32,7 +32,7 @@
 	.short	173                             # 0xad
 	.short	173                             # 0xad
 	.short	173                             # 0xad
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpaddw	.LCPI0_0(%rip), %ymm1, %ymm1
 	vpcmpltuw	.LCPI0_1(%rip), %ymm1, %k0
 	vptestnmb	%xmm0, %xmm0, %k1

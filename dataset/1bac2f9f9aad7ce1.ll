@@ -5,11 +5,11 @@
 ; minetest/optimized/dungeongen.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32767
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %4, %1
+  %5 = icmp samesign ult i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -17,11 +17,11 @@ entry:
 ; 1 occurrences:
 ; entt/optimized/group.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000025(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1048575
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp uge i64 %4, %1
+  %5 = icmp ule i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -87,11 +87,11 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 127
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ne i64 %4, %1
+  %5 = icmp ne i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -99,11 +99,11 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 33554431
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %4, %1
+  %5 = icmp ugt i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }

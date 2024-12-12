@@ -1,5 +1,7 @@
 
-; 19 occurrences:
+; 21 occurrences:
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_switch.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -25,6 +27,17 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = mul nsw i32 %3, %0
   %5 = sdiv i32 %4, 4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_obj_pos.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = mul nsw i32 %3, %0
+  %5 = sdiv i32 %4, 100
   ret i32 %5
 }
 

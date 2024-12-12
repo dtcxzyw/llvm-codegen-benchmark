@@ -18,11 +18,3 @@ func0000000000000019:                   # @func0000000000000019
 	sh1add	a0, a0, a0
 	sext.w	a0, a0
 	ret
-func0000000000000003:                   # @func0000000000000003
-	sh1add	a0, a0, a0
-	sext.w	a0, a0
-	ret
-func000000000000000b:                   # @func000000000000000b
-	li	a1, 1000
-	mulw	a0, a0, a1
-	ret

@@ -1,7 +1,6 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; cpython/optimized/_codecs_jp.ll
-; linux/optimized/uthex.ll
 ; minetest/optimized/terminal_chat_console.cpp.ll
 ; mold/optimized/cmdline.cc.ALPHA.cc.ll
 ; mold/optimized/cmdline.cc.ARM32.cc.ll

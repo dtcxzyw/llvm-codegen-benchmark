@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; git/optimized/packfile.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -13,6 +13,7 @@
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:

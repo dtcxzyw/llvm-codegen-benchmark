@@ -20,7 +20,7 @@ entry:
   ret i64 %2
 }
 
-; 46 occurrences:
+; 44 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; c3c/optimized/sema_expr.c.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
@@ -47,8 +47,6 @@ entry:
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/installables.ll
 ; nix/optimized/lexer-tab.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parser-tab.ll
 ; nix/optimized/print-ambiguous.ll
@@ -76,7 +74,8 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; darktable/optimized/introspection_liquify.c.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; php/optimized/block_pass.ll

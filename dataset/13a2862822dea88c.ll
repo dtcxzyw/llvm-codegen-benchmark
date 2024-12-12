@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 45 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/casDec.c.ll
 ; abc/optimized/cecClass.c.ll
@@ -12,6 +12,7 @@
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/sswMan.c.ll
+; boost/optimized/area.ll
 ; entt/optimized/poly.cpp.ll
 ; graphviz/optimized/mincross.c.ll
 ; graphviz/optimized/mq.c.ll

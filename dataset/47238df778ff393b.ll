@@ -13,7 +13,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 2, %2
   %4 = add nsw i32 %0, %1
@@ -31,7 +31,7 @@ entry:
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000106(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add i32 %0, %1
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/mlib_ImageConvKernelConvert.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fb(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001eb(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = add nuw nsw i32 %0, %1
@@ -55,7 +55,7 @@ entry:
 ; linux/optimized/rock.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add i32 %0, %1
@@ -68,7 +68,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %0, %1
   %.highbits = lshr i32 %3, %2
@@ -80,7 +80,7 @@ entry:
 ; libdeflate/optimized/deflate_decompress.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add i32 %0, %1
@@ -91,7 +91,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/lpc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 -1, %2
   %4 = add i32 %0, %1
@@ -117,7 +117,7 @@ entry:
 ; yosys/optimized/memory_libmap.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000126(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add nsw i32 %0, %1
@@ -129,7 +129,7 @@ entry:
 ; abc/optimized/giaTtopt.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add i32 %0, %1
@@ -141,7 +141,7 @@ entry:
 ; abc/optimized/plaMan.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000166(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add nuw nsw i32 %0, %1
@@ -152,7 +152,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/bblif.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add i32 %0, %1
@@ -163,7 +163,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/mszipd.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = add i32 %0, %1
@@ -174,7 +174,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = add nsw i32 %0, %1
@@ -185,7 +185,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000012b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add nsw i32 %0, %1
@@ -196,7 +196,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add i32 %0, %1
@@ -208,7 +208,7 @@ entry:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000012a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add nsw i32 %0, %1

@@ -6,10 +6,10 @@
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; wireshark/optimized/packet-oran.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nuw i32 %0, 1
   %6 = icmp ult i32 %5, %4
   ret i1 %6
@@ -23,7 +23,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %0, -2
   %6 = icmp ult i32 %5, %4
   ret i1 %6
@@ -36,7 +36,7 @@ entry:
 ; opencv/optimized/solvepnp.cpp.ll
 ; yosys/optimized/opt_muxtree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = add i32 %3, %1
@@ -61,7 +61,7 @@ entry:
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/packet-icmpv6.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000306(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000606(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = add i32 %3, %1
@@ -77,7 +77,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %0, -1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -86,10 +86,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-skinny.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000604(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 4
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %0, 8
   %6 = icmp ult i32 %5, %4
   ret i1 %6
@@ -98,10 +98,10 @@ entry:
 ; 1 occurrences:
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000176(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = icmp slt i32 %5, %4
   ret i1 %6
@@ -110,10 +110,10 @@ entry:
 ; 1 occurrences:
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -133,10 +133,10 @@ entry:
 ; z3/optimized/smt_justification.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nuw i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -146,7 +146,7 @@ entry:
 ; zxing/optimized/ODWriterHelper.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = add i32 %3, %1
@@ -158,7 +158,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/brin_minmax_multi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = add i32 %3, %1

@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; grpc/optimized/alts_handshaker_client.cc.ll
 ; grpc/optimized/alts_tsi_handshaker.cc.ll
 ; grpc/optimized/alts_tsi_utils.cc.ll
@@ -23,7 +23,6 @@
 ; grpc/optimized/xds_lb_policy_registry.cc.ll
 ; grpc/optimized/xds_listener.cc.ll
 ; grpc/optimized/xds_route_config.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5HG.c.ll
 ; libquic/optimized/pickle.cc.ll
 ; llvm/optimized/CGCleanup.cpp.ll
@@ -34,10 +33,10 @@
 ; openjdk/optimized/vectorization.ll
 ; postgres/optimized/nodeHash.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 7
-  %4 = and i64 %3, 262136
+  %3 = add nuw nsw i64 %2, 21
+  %4 = and i64 %3, 131064
   %5 = sub i64 %0, %1
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -86,7 +85,7 @@ entry:
 ; openjdk/optimized/parse2.ll
 ; postgres/optimized/nodeHash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 7
   %4 = and i64 %3, -8
@@ -135,7 +134,7 @@ entry:
 ; hyperscan/optimized/shengcompile.cpp.ll
 ; linux/optimized/vma.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 4095
   %4 = and i64 %3, -4096
@@ -150,7 +149,7 @@ entry:
 ; grpc/optimized/status_helper.cc.ll
 ; grpc/optimized/xds_api.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 31
   %4 = and i64 %3, -8
@@ -162,7 +161,7 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000186(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 6
   %4 = and i64 %3, 4294967295

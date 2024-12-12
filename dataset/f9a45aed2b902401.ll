@@ -14,7 +14,7 @@
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -24,7 +24,7 @@ entry:
   ret i1 %7
 }
 
-; 45 occurrences:
+; 46 occurrences:
 ; abc/optimized/utilNam.c.ll
 ; arrow/optimized/UriNormalize.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -70,8 +70,9 @@ entry:
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; zxing/optimized/BitArray.cpp.ll
+; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -105,26 +106,39 @@ entry:
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = and i64 %4, 4294967295
   %6 = add nuw nsw i64 %0, 1
-  %7 = icmp ult i64 %6, %5
+  %7 = icmp samesign ult i64 %6, %5
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = and i64 %4, 4294967295
   %6 = add nsw i64 %0, -6
   %7 = icmp ugt i64 %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; assimp/optimized/3DSLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = and i64 %4, 4294967295
+  %6 = add nsw i64 %0, -6
+  %7 = icmp samesign ugt i64 %6, %5
   ret i1 %7
 }
 
@@ -145,13 +159,13 @@ entry:
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/netfilter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = and i64 %4, 4294967295
   %6 = add nuw nsw i64 %0, 8
-  %7 = icmp ugt i64 %6, %5
+  %7 = icmp samesign ugt i64 %6, %5
   ret i1 %7
 }
 

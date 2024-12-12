@@ -1,7 +1,6 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/spinlock_wait.cc.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -33,8 +32,7 @@ entry:
   ret i32 %4
 }
 
-; 303 occurrences:
-; c3c/optimized/decltable.c.ll
+; 301 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; cmake/optimized/crc32.c.ll
@@ -105,7 +103,6 @@ entry:
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll
@@ -346,10 +343,9 @@ entry:
   ret i32 %4
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; brotli/optimized/compound_dictionary.c.ll
 ; hyperscan/optimized/stream.c.ll
-; linux/optimized/blk-settings.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll

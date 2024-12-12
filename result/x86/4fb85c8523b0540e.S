@@ -1,4 +1,4 @@
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	incl	%esi
 	leal	(%rdi,%rdi,4), %eax
 	cmpl	%esi, %eax

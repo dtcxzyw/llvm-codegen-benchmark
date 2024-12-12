@@ -18,13 +18,13 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vcvtdq2pd	%ymm1, %zmm1
-	vcmpeqpd	%zmm0, %zmm1, %k0
+	vcmpeqpd	%zmm1, %zmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vcvtdq2pd	%ymm1, %zmm1
-	vcmpneqpd	%zmm0, %zmm1, %k0
+	vcmpneqpd	%zmm1, %zmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -34,6 +34,15 @@ func0000000000000003:                   # @func0000000000000003
 	vcvtdq2pd	%ymm1, %zmm1
 	vsubpd	%zmm1, %zmm0, %zmm0
 	vcmpngepd	.LCPI4_0(%rip){1to8}, %zmm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
+	.quad	0x3fe0000000000000              # double 0.5
+func000000000000000d:                   # @func000000000000000d
+	vcvtdq2pd	%ymm1, %zmm1
+	vsubpd	%zmm1, %zmm0, %zmm0
+	vcmpnltpd	.LCPI5_0(%rip){1to8}, %zmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

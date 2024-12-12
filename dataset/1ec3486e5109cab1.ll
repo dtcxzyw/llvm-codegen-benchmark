@@ -66,6 +66,18 @@ entry:
   ret i32 %5
 }
 
+; 2 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 23
+  %3 = and i32 %2, 255
+  %4 = or i32 %3, %0
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; cmake/optimized/archive_write_set_format_pax.c.ll
 ; Function Attrs: nounwind

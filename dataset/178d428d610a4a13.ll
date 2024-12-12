@@ -21,7 +21,7 @@ entry:
   ret i32 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; linux/optimized/esp6.ll
@@ -34,7 +34,6 @@ entry:
 ; meshoptimizer/optimized/quantization.cpp.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openusd/optimized/aom_image.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; wasmtime-rs/optimized/1r2x5absurxbrq18.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
 ; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll

@@ -19,34 +19,37 @@ func000000000000003a:                   # @func000000000000003a
 	sub	a0, a1, a0
 	srli	a0, a0, 2
 	ret
-func0000000000000024:                   # @func0000000000000024
-	lui	a1, 118350
-	addi	a1, a1, 1465
-	slli	a1, a1, 32
-	mul	a0, a0, a1
-	srli	a0, a0, 31
-	ret
+.LCPI3_0:
+	.quad	196742565691928                 # 0xb2efb2bd8218
 func000000000000003b:                   # @func000000000000003b
+	lui	a1, %hi(.LCPI3_0)
+	ld	a1, %lo(.LCPI3_0)(a1)
 	sext.w	a0, a0
-	li	a1, 103
 	mul	a0, a0, a1
-	srli	a0, a0, 10
+	srli	a0, a0, 48
+	ret
+.LCPI4_0:
+	.quad	163391164108059                 # 0x949a784bcd1b
+func0000000000000003:                   # @func0000000000000003
+	lui	a1, %hi(.LCPI4_0)
+	ld	a1, %lo(.LCPI4_0)(a1)
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	mul	a0, a0, a1
+	srli	a0, a0, 46
+	ret
+func0000000000000038:                   # @func0000000000000038
+	sext.w	a0, a0
+	lui	a1, 68719
+	addiw	a1, a1, 1954
+	mul	a0, a0, a1
+	srli	a0, a0, 16
 	ret
 func0000000000000012:                   # @func0000000000000012
 	slli	a0, a0, 32
 	srli	a1, a0, 32
 	sub	a0, a0, a1
 	srli	a0, a0, 32
-	ret
-.LCPI6_0:
-	.quad	7046029254386353131             # 0x61c8864680b583eb
-func0000000000000003:                   # @func0000000000000003
-	lui	a1, %hi(.LCPI6_0)
-	ld	a1, %lo(.LCPI6_0)(a1)
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	mul	a0, a0, a1
-	srli	a0, a0, 56
 	ret
 .LCPI7_0:
 	.quad	196742565691928                 # 0xb2efb2bd8218

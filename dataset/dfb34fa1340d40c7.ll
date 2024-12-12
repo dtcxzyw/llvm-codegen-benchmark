@@ -1,8 +1,11 @@
 
-; 446 occurrences:
+; 502 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; assimp/optimized/ColladaParser.cpp.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/block_splitter.c.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/idas_interface.cpp.ll
@@ -45,7 +48,6 @@
 ; faiss/optimized/IndexIVFSpectralHash.cpp.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; faiss/optimized/IndexRefine.cpp.ll
-; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/IndexScalarQuantizer.cpp.ll
 ; faiss/optimized/InvertedLists.cpp.ll
 ; faiss/optimized/LocalSearchQuantizer.cpp.ll
@@ -63,7 +65,6 @@
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
 ; git/optimized/pack-redundant.ll
-; gromacs/optimized/merge_sort.c.ll
 ; hdf5/optimized/H5EA.c.ll
 ; hdf5/optimized/H5EAcache.c.ll
 ; hdf5/optimized/H5EAiblock.c.ll
@@ -433,6 +434,7 @@
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/vector_unit.ll
 ; sundials/optimized/sundials_direct.c.ll
+; turborepo-rs/optimized/ehv573y0pcjpsw1wgvk28541m.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; verilator/optimized/V3Os.cpp.ll
 ; wasmtime-rs/optimized/2wcii8z2urex364d.ll
@@ -446,6 +448,60 @@
 ; xgboost/optimized/stats.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/05btlo7ldoepff8rc85nwkmca.ll
+; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
+; zed-rs/optimized/0nwivtw0lug3nh002ufjq6dhh.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
+; zed-rs/optimized/2mbibkb4nlqbkrk4fshgkpe2t.ll
+; zed-rs/optimized/2stbxmle5qyblpbm85idqsgvv.ll
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/32kqcem53id37kgf9pak7q7x7.ll
+; zed-rs/optimized/32ztje2vviv0ao8s7rdc7yqwm.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/3x2e5qsisayoyul24y85pynrh.ll
+; zed-rs/optimized/3y76hj0efsluhdj732s0l4pjz.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/4yr6g2ok92pf18o3rcyc7uswo.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5q8zw1h1kdgz0fiksol53zkaa.ll
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/914lh5mzek2kam75czht77x9a.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/a48ncfl2mo4yu8srnhcxrs0e7.ll
+; zed-rs/optimized/b7n4ebe7bkw4hnagh8ndf0qla.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; zed-rs/optimized/c6zcqmm1tlbhiy5p6czlxqg9e.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/ch3ywh4ed1oz4ae4c1dkspuyz.ll
+; zed-rs/optimized/d236qqx54dpqso3cyloa7ybaj.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/enul73o10k5w3gxzdsfqj1w26.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -626,125 +682,7 @@ entry:
   ret i64 %4
 }
 
-; 109 occurrences:
-; assimp/optimized/ColladaParser.cpp.ll
-; clamav/optimized/fmap.c.ll
-; darktable/optimized/introspection_colorreconstruction.c.ll
-; llama.cpp/optimized/ggml.c.ll
-; lodepng/optimized/lodepng.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
-; opencv/optimized/gapi_core_perf_tests.cpp.ll
-; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll
-; openusd/optimized/OpenEXRImage.cpp.ll
-; openusd/optimized/TestSdrRegistry_oslParserPlugin.cpp.ll
-; openusd/optimized/animMapper.cpp.ll
-; openusd/optimized/assetLocalizationDelegate.cpp.ll
-; openusd/optimized/bakeSkinning.cpp.ll
-; openusd/optimized/basisCurvesAdapter.cpp.ll
-; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/cacheImpl.cpp.ll
-; openusd/optimized/capsuleAdapter.cpp.ll
-; openusd/optimized/childrenUtils.cpp.ll
-; openusd/optimized/clipCache.cpp.ll
-; openusd/optimized/collectionAPIAdapter.cpp.ll
-; openusd/optimized/collectionMembershipQuery.cpp.ll
-; openusd/optimized/coneAdapter.cpp.ll
-; openusd/optimized/connectionListEditor.cpp.ll
-; openusd/optimized/copyUtils.cpp.ll
-; openusd/optimized/crateData.cpp.ll
-; openusd/optimized/cubeAdapter.cpp.ll
-; openusd/optimized/cylinderAdapter.cpp.ll
-; openusd/optimized/dataSourceAttribute.cpp.ll
-; openusd/optimized/dataSourceLegacyPrim.cpp.ll
-; openusd/optimized/dataSourceMaterial.cpp.ll
-; openusd/optimized/dataSourceRelationship.cpp.ll
-; openusd/optimized/dataSourceRenderPrims.cpp.ll
-; openusd/optimized/delegate.cpp.ll
-; openusd/optimized/domeLightAdapter.cpp.ll
-; openusd/optimized/domeLight_1Adapter.cpp.ll
-; openusd/optimized/drawModeAdapter.cpp.ll
-; openusd/optimized/drawModeStandin.cpp.ll
-; openusd/optimized/evalCache.cpp.ll
-; openusd/optimized/flattenUtils.cpp.ll
-; openusd/optimized/generativeProceduralAdapter.cpp.ll
-; openusd/optimized/glslfxConfig.cpp.ll
-; openusd/optimized/gprimAdapter.cpp.ll
-; openusd/optimized/implicitSurfaceSceneIndex.cpp.ll
-; openusd/optimized/instanceAdapter.cpp.ll
-; openusd/optimized/interpolators.cpp.ll
-; openusd/optimized/layer.cpp.ll
-; openusd/optimized/layerRelocatesEditBuilder.cpp.ll
-; openusd/optimized/lightAPIAdapter.cpp.ll
-; openusd/optimized/lightLinkingSceneIndex.cpp.ll
-; openusd/optimized/listOp.cpp.ll
-; openusd/optimized/mapEditor.cpp.ll
-; openusd/optimized/mapExpression.cpp.ll
-; openusd/optimized/mapFunction.cpp.ll
-; openusd/optimized/meshAdapter.cpp.ll
-; openusd/optimized/meshUtil.cpp.ll
-; openusd/optimized/namespaceEditor.cpp.ll
-; openusd/optimized/niInstanceAggregationSceneIndex.cpp.ll
-; openusd/optimized/niPrototypeSceneIndex.cpp.ll
-; openusd/optimized/nodeGraph.cpp.ll
-; openusd/optimized/nurbsCurvesAdapter.cpp.ll
-; openusd/optimized/nurbsPatchAdapter.cpp.ll
-; openusd/optimized/parserHelpers.cpp.ll
-; openusd/optimized/parserPlugin.cpp.ll
-; openusd/optimized/pathNode.cpp.ll
-; openusd/optimized/piPrototypePropagatingSceneIndex.cpp.ll
-; openusd/optimized/piPrototypeSceneIndex.cpp.ll
-; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
-; openusd/optimized/planeAdapter.cpp.ll
-; openusd/optimized/pointInstancerAdapter.cpp.ll
-; openusd/optimized/pointsAdapter.cpp.ll
-; openusd/optimized/prefixingSceneIndex.cpp.ll
-; openusd/optimized/prim.cpp.ll
-; openusd/optimized/primAdapter.cpp.ll
-; openusd/optimized/primIndex.cpp.ll
-; openusd/optimized/primvar.cpp.ll
-; openusd/optimized/primvarSchema.cpp.ll
-; openusd/optimized/proxyTypes.cpp.ll
-; openusd/optimized/relationshipSpec.cpp.ll
-; openusd/optimized/rerootingSceneIndex.cpp.ll
-; openusd/optimized/retainedDataSource.cpp.ll
-; openusd/optimized/rprimCollection.cpp.ll
-; openusd/optimized/samplingUtils.cpp.ll
-; openusd/optimized/shaderProperty.cpp.ll
-; openusd/optimized/site.cpp.ll
-; openusd/optimized/skeletonAdapter.cpp.ll
-; openusd/optimized/skeletonQuery.cpp.ll
-; openusd/optimized/sparseValueWriter.cpp.ll
-; openusd/optimized/spec.cpp.ll
-; openusd/optimized/sphereAdapter.cpp.ll
-; openusd/optimized/stageLoadRules.cpp.ll
-; openusd/optimized/stagePopulationMask.cpp.ll
-; openusd/optimized/stitch.cpp.ll
-; openusd/optimized/testHdDataSource.cpp.ll
-; openusd/optimized/testHdSceneIndex.cpp.ll
-; openusd/optimized/testHdsiPinnedCurveExpandingSceneIndex.cpp.ll
-; openusd/optimized/testPcpMapExpression.cpp.ll
-; openusd/optimized/testUsdImagingRerootingSceneIndex.cpp.ll
-; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
-; openusd/optimized/testVtCpp.cpp.ll
-; openusd/optimized/textFileFormat.tab.cpp.ll
-; openusd/optimized/textParserHelpers.cpp.ll
-; openusd/optimized/timeSampleArray.cpp.ll
-; openusd/optimized/typeRegistry.cpp.ll
-; openusd/optimized/unitTestDelegate.cpp.ll
-; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
-; openusd/optimized/vtBufferSource.cpp.ll
-; openusd/optimized/xformCache.cpp.ll
-; openusd/optimized/xformCommonAPI.cpp.ll
-; php/optimized/math.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw i64 %1, %2
-  %4 = mul i64 %3, %0
-  ret i64 %4
-}
-
-; 113 occurrences:
+; 110 occurrences:
 ; abc/optimized/giaMinLut.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
@@ -830,16 +768,13 @@ entry:
 ; ncnn/optimized/proposal.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openblas/optimized/dgesvdq.c.ll
-; openblas/optimized/dlauum_U_single.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsyr2k_kernel_L.c.ll
 ; openblas/optimized/dsyr2k_kernel_U.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
-; openblas/optimized/dtfttr.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
@@ -878,7 +813,6 @@ entry:
 ; arrow/optimized/builder_decimal.cc.ll
 ; arrow/optimized/builder_nested.cc.ll
 ; arrow/optimized/compare.cc.ll
-; arrow/optimized/concatenate.cc.ll
 ; arrow/optimized/csx_converter.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/light_array.cc.ll
@@ -886,6 +820,8 @@ entry:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/cpu_timer.ll
+; boost/optimized/process_cpu_clocks.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; casadi/optimized/bspline.cpp.ll
@@ -973,6 +909,7 @@ entry:
 ; libwebp/optimized/quant_enc.c.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
@@ -1022,12 +959,10 @@ entry:
 ; openblas/optimized/dsyr2k_kernel_U.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
-; openblas/optimized/dtfttr.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsy2.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/adaptive_threshold_mean_binarizer.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
@@ -1093,7 +1028,7 @@ entry:
   ret i64 %4
 }
 
-; 201 occurrences:
+; 202 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; clamav/optimized/mbr.c.ll
 ; clamav/optimized/mpool.c.ll
@@ -1292,9 +1227,10 @@ entry:
 ; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
 ; openusd/optimized/vtBufferSource.cpp.ll
 ; openusd/optimized/xformCommonAPI.cpp.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; redis/optimized/memtest.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -1303,7 +1239,7 @@ entry:
   ret i64 %4
 }
 
-; 63 occurrences:
+; 65 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; casadi/optimized/map.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -1367,6 +1303,8 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; sundials/optimized/arkode_mri_tables.c.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -1375,7 +1313,124 @@ entry:
   ret i64 %4
 }
 
-; 88 occurrences:
+; 108 occurrences:
+; assimp/optimized/ColladaParser.cpp.ll
+; clamav/optimized/fmap.c.ll
+; darktable/optimized/introspection_colorreconstruction.c.ll
+; llama.cpp/optimized/ggml.c.ll
+; lodepng/optimized/lodepng.cpp.ll
+; opencv/optimized/gapi_core_perf_tests.cpp.ll
+; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll
+; openusd/optimized/OpenEXRImage.cpp.ll
+; openusd/optimized/TestSdrRegistry_oslParserPlugin.cpp.ll
+; openusd/optimized/animMapper.cpp.ll
+; openusd/optimized/assetLocalizationDelegate.cpp.ll
+; openusd/optimized/bakeSkinning.cpp.ll
+; openusd/optimized/basisCurvesAdapter.cpp.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/cacheImpl.cpp.ll
+; openusd/optimized/capsuleAdapter.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
+; openusd/optimized/clipCache.cpp.ll
+; openusd/optimized/collectionAPIAdapter.cpp.ll
+; openusd/optimized/collectionMembershipQuery.cpp.ll
+; openusd/optimized/coneAdapter.cpp.ll
+; openusd/optimized/connectionListEditor.cpp.ll
+; openusd/optimized/copyUtils.cpp.ll
+; openusd/optimized/crateData.cpp.ll
+; openusd/optimized/cubeAdapter.cpp.ll
+; openusd/optimized/cylinderAdapter.cpp.ll
+; openusd/optimized/dataSourceAttribute.cpp.ll
+; openusd/optimized/dataSourceLegacyPrim.cpp.ll
+; openusd/optimized/dataSourceMaterial.cpp.ll
+; openusd/optimized/dataSourceRelationship.cpp.ll
+; openusd/optimized/dataSourceRenderPrims.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/domeLightAdapter.cpp.ll
+; openusd/optimized/domeLight_1Adapter.cpp.ll
+; openusd/optimized/drawModeAdapter.cpp.ll
+; openusd/optimized/drawModeStandin.cpp.ll
+; openusd/optimized/evalCache.cpp.ll
+; openusd/optimized/flattenUtils.cpp.ll
+; openusd/optimized/generativeProceduralAdapter.cpp.ll
+; openusd/optimized/glslfxConfig.cpp.ll
+; openusd/optimized/gprimAdapter.cpp.ll
+; openusd/optimized/implicitSurfaceSceneIndex.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/interpolators.cpp.ll
+; openusd/optimized/layer.cpp.ll
+; openusd/optimized/layerRelocatesEditBuilder.cpp.ll
+; openusd/optimized/lightAPIAdapter.cpp.ll
+; openusd/optimized/lightLinkingSceneIndex.cpp.ll
+; openusd/optimized/listOp.cpp.ll
+; openusd/optimized/mapEditor.cpp.ll
+; openusd/optimized/mapExpression.cpp.ll
+; openusd/optimized/mapFunction.cpp.ll
+; openusd/optimized/meshAdapter.cpp.ll
+; openusd/optimized/meshUtil.cpp.ll
+; openusd/optimized/namespaceEditor.cpp.ll
+; openusd/optimized/niInstanceAggregationSceneIndex.cpp.ll
+; openusd/optimized/niPrototypeSceneIndex.cpp.ll
+; openusd/optimized/nodeGraph.cpp.ll
+; openusd/optimized/nurbsCurvesAdapter.cpp.ll
+; openusd/optimized/nurbsPatchAdapter.cpp.ll
+; openusd/optimized/parserHelpers.cpp.ll
+; openusd/optimized/parserPlugin.cpp.ll
+; openusd/optimized/pathNode.cpp.ll
+; openusd/optimized/piPrototypePropagatingSceneIndex.cpp.ll
+; openusd/optimized/piPrototypeSceneIndex.cpp.ll
+; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
+; openusd/optimized/planeAdapter.cpp.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; openusd/optimized/pointsAdapter.cpp.ll
+; openusd/optimized/prefixingSceneIndex.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primAdapter.cpp.ll
+; openusd/optimized/primIndex.cpp.ll
+; openusd/optimized/primvar.cpp.ll
+; openusd/optimized/primvarSchema.cpp.ll
+; openusd/optimized/proxyTypes.cpp.ll
+; openusd/optimized/relationshipSpec.cpp.ll
+; openusd/optimized/rerootingSceneIndex.cpp.ll
+; openusd/optimized/retainedDataSource.cpp.ll
+; openusd/optimized/rprimCollection.cpp.ll
+; openusd/optimized/samplingUtils.cpp.ll
+; openusd/optimized/shaderProperty.cpp.ll
+; openusd/optimized/site.cpp.ll
+; openusd/optimized/skeletonAdapter.cpp.ll
+; openusd/optimized/skeletonQuery.cpp.ll
+; openusd/optimized/sparseValueWriter.cpp.ll
+; openusd/optimized/spec.cpp.ll
+; openusd/optimized/sphereAdapter.cpp.ll
+; openusd/optimized/stageLoadRules.cpp.ll
+; openusd/optimized/stagePopulationMask.cpp.ll
+; openusd/optimized/stitch.cpp.ll
+; openusd/optimized/testHdDataSource.cpp.ll
+; openusd/optimized/testHdSceneIndex.cpp.ll
+; openusd/optimized/testHdsiPinnedCurveExpandingSceneIndex.cpp.ll
+; openusd/optimized/testPcpMapExpression.cpp.ll
+; openusd/optimized/testUsdImagingRerootingSceneIndex.cpp.ll
+; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
+; openusd/optimized/testVtCpp.cpp.ll
+; openusd/optimized/textFileFormat.tab.cpp.ll
+; openusd/optimized/textParserHelpers.cpp.ll
+; openusd/optimized/timeSampleArray.cpp.ll
+; openusd/optimized/typeRegistry.cpp.ll
+; openusd/optimized/unitTestDelegate.cpp.ll
+; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
+; openusd/optimized/vtBufferSource.cpp.ll
+; openusd/optimized/xformCache.cpp.ll
+; openusd/optimized/xformCommonAPI.cpp.ll
+; php/optimized/math.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = mul i64 %3, %0
+  ret i64 %4
+}
+
+; 80 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
@@ -1432,7 +1487,6 @@ entry:
 ; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
 ; g2o/optimized/edge_se2_twopointsxy.cpp.ll
 ; g2o/optimized/edge_se3_calib.cpp.ll
-; g2o/optimized/edge_se3_euler.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; g2o/optimized/edge_se3_plane_calib.cpp.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
@@ -1445,20 +1499,13 @@ entry:
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; openblas/optimized/dgghd3.c.ll
-; openblas/optimized/dspmv_thread_L.c.ll
-; openblas/optimized/dtpmv_thread_NLN.c.ll
-; openblas/optimized/dtpmv_thread_NLU.c.ll
-; openblas/optimized/dtpmv_thread_TLN.c.ll
-; openblas/optimized/dtpmv_thread_TLU.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; sundials/optimized/sundials_direct.c.ll
@@ -1479,7 +1526,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -1511,7 +1558,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   ret i64 %4
 }
 

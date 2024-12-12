@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 52 occurrences:
 ; clamav/optimized/qtmd.c.ll
 ; cmake/optimized/zdict.c.ll
 ; cpython/optimized/Hacl_Hash_SHA3.ll
@@ -12,10 +12,8 @@
 ; linux/optimized/hid-ntrig.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_dsi.ll
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/memory-tiers.ll
 ; linux/optimized/skl_watermark.ll
@@ -28,6 +26,10 @@
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_scale.ll
 ; minetest/optimized/CGUIImageList.cpp.ll
 ; minetest/optimized/guiChatConsole.cpp.ll
 ; minetest/optimized/guiHyperText.cpp.ll
@@ -48,6 +50,7 @@
 ; wireshark/optimized/sharkd_session.c.ll
 ; wolfssl/optimized/benchmark.c.ll
 ; yosys/optimized/sta.ll
+; zed-rs/optimized/5lgahps99tv0rsaolw3x59ow2.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
@@ -78,22 +81,24 @@ entry:
   ret i32 %4
 }
 
+; 3 occurrences:
+; linux/optimized/vlv_dsi_pll.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %1, %2
+  %4 = udiv i32 %3, %0
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/packet-dcp-etsi.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
-  %4 = udiv i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; linux/optimized/vlv_dsi_pll.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nsw i32 %1, %2
   %4 = udiv i32 %3, %0
   ret i32 %4
 }

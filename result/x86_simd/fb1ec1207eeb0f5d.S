@@ -34,7 +34,7 @@ func0000000000000005:                   # @func0000000000000005
 	vmovdqa	%ymm1, %ymm0
 	retq
 .LCPI2_0:
-	.long	128                             # 0x80
+	.long	33554432                        # 0x2000000
 .LCPI2_1:
 	.long	0                               # 0x0
 	.long	9                               # 0x9

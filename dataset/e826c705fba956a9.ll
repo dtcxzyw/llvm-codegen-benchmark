@@ -1,15 +1,15 @@
 
 ; 3 occurrences:
-; linux/optimized/hiddev.ll
+; boost/optimized/src.ll
 ; linux/optimized/libata-eh.ll
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 256, i32 128
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
@@ -19,12 +19,12 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000191(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000321(i64 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 429392688
   %2 = select i1 %.not, i32 1, i32 2
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -51,12 +51,12 @@ entry:
 ; php/optimized/avifinfo.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 12
   %3 = select i1 %2, i32 4096, i32 256
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -64,12 +64,24 @@ entry:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; linux/optimized/intel_color.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 24
   %3 = select i1 %2, i32 7, i32 6
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/hiddev.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 0
+  %3 = select i1 %2, i32 8, i32 24
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 

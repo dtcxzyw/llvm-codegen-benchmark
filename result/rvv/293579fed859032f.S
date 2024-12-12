@@ -111,18 +111,6 @@ func00000000000003fd:                   # @func00000000000003fd
 	addi	a0, a0, 1681
 	vadd.vx	v8, v10, a0
 	ret
-func0000000000000140:                   # @func0000000000000140
-	lui	a0, 1048540
-	addi	a0, a0, 1359
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmadd.vx	v10, a0, v12
-	lui	a0, 1048567
-	addi	a0, a0, 340
-	vmacc.vx	v10, a0, v8
-	lui	a0, 176
-	addi	a0, a0, -1734
-	vadd.vx	v8, v10, a0
-	ret
 func00000000000000c0:                   # @func00000000000000c0
 	lui	a0, 65536
 	addi	a1, a0, -1715

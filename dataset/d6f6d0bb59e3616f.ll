@@ -10,9 +10,7 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
-; gromacs/optimized/dorg2r.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
+; 3 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; wireshark/optimized/main_window_layout.cpp.ll

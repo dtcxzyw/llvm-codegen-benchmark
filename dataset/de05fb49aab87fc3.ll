@@ -1,5 +1,5 @@
 
-; 1127 occurrences:
+; 1129 occurrences:
 ; abc/optimized/absUtil.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/cecSat.c.ll
@@ -12,6 +12,8 @@
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaUtil.c.ll
+; abc/optimized/ifDec08.c.ll
+; abc/optimized/ifDec10.c.ll
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inflate.c.ll
 ; abc/optimized/inftrees.c.ll
@@ -147,7 +149,6 @@
 ; linux/optimized/lskcipher.ll
 ; linux/optimized/mac.ll
 ; linux/optimized/metrics.ll
-; linux/optimized/mii.ll
 ; linux/optimized/netlabel_unlabeled.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/nlattr.ll
@@ -760,7 +761,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -1038,6 +1038,7 @@
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/ltable.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
@@ -1120,6 +1121,7 @@
 ; z3/optimized/sat_lookahead.cpp.ll
 ; z3/optimized/smt_consequences.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; zlib/optimized/deflate.c.ll
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll
@@ -1135,7 +1137,7 @@ entry:
   ret i64 %3
 }
 
-; 1782 occurrences:
+; 1780 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/abcRr.c.ll
@@ -1157,7 +1159,6 @@ entry:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
@@ -1304,7 +1305,6 @@ entry:
 ; linux/optimized/filemap.ll
 ; linux/optimized/filetable.ll
 ; linux/optimized/generic.ll
-; linux/optimized/hda_hwdep.ll
 ; linux/optimized/hiddev.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_perf.ll
@@ -2069,7 +2069,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -2399,6 +2398,7 @@ entry:
 ; luajit/optimized/lj_tab_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lstring.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
@@ -2569,7 +2569,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
@@ -2914,6 +2913,7 @@ entry:
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll

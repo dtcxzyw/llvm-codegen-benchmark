@@ -1,10 +1,9 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; casadi/optimized/integrator.cpp.ll
 ; kcp/optimized/ikcp.ll
-; openusd/optimized/reformat.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002c(ptr %0, i64 %1) #0 {
+define ptr @func000000000000004c(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %0, i64 %1
   %.not = icmp eq ptr %0, null

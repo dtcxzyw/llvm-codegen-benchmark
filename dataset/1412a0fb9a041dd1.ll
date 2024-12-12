@@ -45,10 +45,9 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; opencv/optimized/knn_matching.cpp.ll
-; opencv/optimized/oilpainting.cpp.ll
 ; opencv/optimized/perf_matching.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {

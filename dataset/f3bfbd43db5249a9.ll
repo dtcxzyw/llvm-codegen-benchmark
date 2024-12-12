@@ -70,23 +70,11 @@ entry:
 ; linux/optimized/namei.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 57344
   %3 = and i32 %2, 57344
   %4 = icmp eq i32 %0, 0
-  %5 = select i1 %4, i32 0, i32 %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/X86AsmBackend.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, 246
-  %3 = and i32 %2, 255
-  %4 = icmp ult i32 %0, 11
   %5 = select i1 %4, i32 0, i32 %3
   ret i32 %5
 }
@@ -107,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ustr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 129
   %3 = and i32 %2, 2147483520

@@ -1,9 +1,8 @@
 
-; 2 occurrences:
-; rocksdb/optimized/concurrent_arena.cc.ll
+; 1 occurrences:
 ; rocksdb/optimized/lru_cache.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(i32 %0) #0 {
+define i64 @func0000000000000088(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl i64 8, %1
@@ -12,11 +11,23 @@ entry:
   ret i64 %4
 }
 
+; 1 occurrences:
+; rocksdb/optimized/concurrent_arena.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000098(i32 %0) #0 {
+entry:
+  %1 = zext nneg i32 %0 to i64
+  %2 = shl i64 64, %1
+  %3 = icmp samesign ugt i32 %0, 57
+  %4 = select i1 %3, i64 -1, i64 %2
+  ret i64 %4
+}
+
 ; 2 occurrences:
 ; openjdk/optimized/ciMethodData.ll
 ; yosys/optimized/proc_rmdead.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000006a(i32 %0) #0 {
+define i64 @func00000000000000ca(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw i64 1, %1
@@ -37,7 +48,7 @@ entry:
 ; hyperscan/optimized/stream_compress.c.ll
 ; verilator/optimized/V3CCtors.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i32 %0) #0 {
+define i64 @func00000000000000a1(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nsw i64 -1, %1
@@ -51,7 +62,7 @@ entry:
 ; wireshark/optimized/packet-iax2.c.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000061(i32 %0) #0 {
+define i64 @func00000000000000c1(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw i64 1, %1
@@ -64,7 +75,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000071(i32 %0) #0 {
+define i64 @func00000000000000e1(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw nsw i64 4, %1
@@ -77,7 +88,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000041(i32 %0) #0 {
+define i64 @func0000000000000081(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl i64 4, %1
@@ -89,11 +100,11 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(i32 %0) #0 {
+define i64 @func00000000000000d8(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw i64 1, %1
-  %3 = icmp ugt i32 %0, 63
+  %3 = icmp samesign ugt i32 %0, 63
   %4 = select i1 %3, i64 -9223372036854775808, i64 %2
   ret i64 %4
 }

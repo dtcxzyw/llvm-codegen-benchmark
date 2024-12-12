@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 64 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; bullet3/optimized/btDeformableContactConstraint.ll
@@ -13,9 +13,13 @@
 ; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/pbc.cpp.ll
 ; gromacs/optimized/position_restraints.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; mitsuba3/optimized/blackbody.cpp.ll
 ; mitsuba3/optimized/circular.cpp.ll
 ; mitsuba3/optimized/conductor.cpp.ll

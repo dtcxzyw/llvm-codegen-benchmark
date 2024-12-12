@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; minetest/optimized/clientmap.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -18,6 +18,7 @@
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

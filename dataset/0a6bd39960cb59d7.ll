@@ -10,7 +10,8 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/to_chars.ll
 ; brotli/optimized/encode.c.ll
 ; brotli/optimized/metablock.c.ll
 ; brotli/optimized/transform.c.ll
@@ -23,8 +24,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 255
-  %3 = zext nneg i16 %2 to i32
+  %2 = and i16 %1, -64
+  %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %3, %0
   ret i32 %4
 }

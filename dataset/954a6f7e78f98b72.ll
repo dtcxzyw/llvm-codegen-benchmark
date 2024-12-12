@@ -8,7 +8,7 @@
 define i8 @func000000000000000c(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
@@ -19,17 +19,18 @@ entry:
 define i8 @func0000000000000002(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
@@ -39,7 +40,7 @@ entry:
 define i8 @func000000000000000f(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
@@ -49,7 +50,7 @@ entry:
 define i8 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
@@ -59,7 +60,7 @@ entry:
 define i8 @func0000000000000003(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 

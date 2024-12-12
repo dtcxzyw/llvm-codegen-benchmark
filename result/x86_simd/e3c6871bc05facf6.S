@@ -24,31 +24,31 @@ func000000000000000c:                   # @func000000000000000c
 	vmovdqa32	%ymm2, %ymm0 {%k1}
 	retq
 .LCPI2_0:
-	.long	7                               # 0x7
+	.long	2130706432                      # 0x7f000000
 .LCPI2_1:
-	.long	3                               # 0x3
+	.long	2                               # 0x2
 .LCPI2_2:
-	.long	4294967279                      # 0xffffffef
-.LCPI2_3:
-	.long	4294967271                      # 0xffffffe7
-func0000000000000004:                   # @func0000000000000004
+	.long	3                               # 0x3
+func0000000000000018:                   # @func0000000000000018
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm0
-	vpcmpltd	.LCPI2_1(%rip){1to8}, %ymm0, %k1 {%k1}
-	vpbroadcastd	.LCPI2_2(%rip), %ymm0   # ymm0 = [4294967279,4294967279,4294967279,4294967279,4294967279,4294967279,4294967279,4294967279]
-	vpbroadcastd	.LCPI2_3(%rip), %ymm0 {%k1} # ymm0 {%k1} = [4294967271,4294967271,4294967271,4294967271,4294967271,4294967271,4294967271,4294967271]
+	vptestmd	.LCPI2_0(%rip){1to8}, %ymm1, %k1 {%k1}
+	vpbroadcastd	.LCPI2_1(%rip), %ymm0   # ymm0 = [2,2,2,2,2,2,2,2]
+	vpbroadcastd	.LCPI2_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [3,3,3,3,3,3,3,3]
 	retq
 .LCPI3_0:
-	.long	2130706432                      # 0x7f000000
+	.long	63                              # 0x3f
 .LCPI3_1:
-	.long	2                               # 0x2
+	.long	5                               # 0x5
 .LCPI3_2:
-	.long	3                               # 0x3
-func0000000000000008:                   # @func0000000000000008
+	.long	1649                            # 0x671
+.LCPI3_3:
+	.long	1648                            # 0x670
+func0000000000000014:                   # @func0000000000000014
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vptestmd	.LCPI3_0(%rip){1to8}, %ymm1, %k1 {%k1}
-	vpbroadcastd	.LCPI3_1(%rip), %ymm0   # ymm0 = [2,2,2,2,2,2,2,2]
-	vpbroadcastd	.LCPI3_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [3,3,3,3,3,3,3,3]
+	vpandd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm0
+	vpcmpltd	.LCPI3_1(%rip){1to8}, %ymm0, %k1 {%k1}
+	vpbroadcastd	.LCPI3_2(%rip), %ymm0   # ymm0 = [1649,1649,1649,1649,1649,1649,1649,1649]
+	vpbroadcastd	.LCPI3_3(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1648,1648,1648,1648,1648,1648,1648,1648]
 	retq

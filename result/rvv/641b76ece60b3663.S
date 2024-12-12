@@ -4,7 +4,7 @@ func0000000000000037:                   # @func0000000000000037
 	li	a0, 28
 	vor.vx	v10, v10, a0
 	csrwi	vxrm, 2
-	vaaddu.vv	v8, v10, v8
+	vaaddu.vv	v8, v8, v10
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -26,5 +26,5 @@ func000000000000003e:                   # @func000000000000003e
 	vsll.vi	v10, v10, 2
 	vor.vi	v10, v10, 1
 	csrwi	vxrm, 2
-	vaaddu.vv	v8, v10, v8
+	vaaddu.vv	v8, v8, v10
 	ret

@@ -95,7 +95,7 @@ func0000000000000001:                   # @func0000000000000001
 	.short	1                               # 0x1
 .LCPI1_3:
 	.short	65530                           # 0xfffa
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpcmpltuw	.LCPI1_0(%rip), %ymm0, %k1
 	vpbroadcastw	.LCPI1_3(%rip), %ymm0   # ymm0 = [65530,65530,65530,65530,65530,65530,65530,65530,65530,65530,65530,65530,65530,65530,65530,65530]
 	vmovdqu16	.LCPI1_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
@@ -281,4 +281,100 @@ func000000000000000c:                   # @func000000000000000c
 	vptestnmw	%ymm0, %ymm0, %k1
 	vpbroadcastw	.LCPI5_2(%rip), %ymm0   # ymm0 = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 	vmovdqu16	.LCPI5_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	retq
+.LCPI6_0:
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+.LCPI6_1:
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+	.short	8                               # 0x8
+func0000000000000004:                   # @func0000000000000004
+	vpcmpltuw	.LCPI6_0(%rip), %ymm0, %k1
+	vmovdqu16	.LCPI6_1(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]
+	retq
+.LCPI7_0:
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+	.short	60                              # 0x3c
+.LCPI7_1:
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+	.short	64                              # 0x40
+.LCPI7_2:
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+.LCPI7_3:
+	.short	64                              # 0x40
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleuw	.LCPI7_0(%rip), %ymm0, %k1
+	vpbroadcastw	.LCPI7_3(%rip), %ymm0   # ymm0 = [64,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64]
+	vmovdqu16	.LCPI7_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [128,128,128,128,128,128,128,128,128,128,128,128,128,128,128,128]
 	retq

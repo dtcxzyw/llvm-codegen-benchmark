@@ -9,10 +9,10 @@
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 31
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
@@ -40,7 +40,7 @@ entry:
 ; openjdk/optimized/dither.ll
 ; openusd/optimized/convolve.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 1
   %4 = add nsw i32 %3, %1
@@ -57,7 +57,7 @@ entry:
 ; abc/optimized/cecSatG3.c.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 6
   %4 = add nsw i32 %3, %1

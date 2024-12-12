@@ -9,9 +9,9 @@ func0000000000000003:                   # @func0000000000000003
 	imull	%edi, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	movzwl	%si, %ecx
-	movzwl	%di, %eax
-	imull	%ecx, %eax
+	movzwl	%si, %eax
+	andl	$254, %edi
+	imull	%edi, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movzwl	%si, %eax

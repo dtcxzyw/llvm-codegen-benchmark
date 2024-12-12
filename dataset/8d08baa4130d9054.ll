@@ -1,5 +1,6 @@
 
-; 20 occurrences:
+; 22 occurrences:
+; boost/optimized/from_chars.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; icu/optimized/tzfmt.ll
 ; meilisearch-rs/optimized/1cgo24wrkn2cjv53.ll
@@ -13,6 +14,7 @@
 ; ockam-rs/optimized/4i4les6ijtr4jgtl.ll
 ; ockam-rs/optimized/52hk8y4wcm3nv0fi.ll
 ; ockam-rs/optimized/v91rpx6k3uxsm6j.ll
+; openusd/optimized/fvarLevel.cpp.ll
 ; protobuf/optimized/field.cc.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; redis/optimized/util.ll
@@ -24,7 +26,7 @@
 define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }
@@ -40,7 +42,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }

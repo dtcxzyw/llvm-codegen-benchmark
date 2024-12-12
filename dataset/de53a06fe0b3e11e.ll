@@ -14,7 +14,7 @@ define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl i8 %1, 6
   %3 = and i8 %2, -128
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   %5 = xor i8 %4, 32
   ret i8 %5
 }

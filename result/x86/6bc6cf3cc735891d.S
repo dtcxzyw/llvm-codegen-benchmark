@@ -6,7 +6,7 @@ func0000000000000028:                   # @func0000000000000028
 	andl	%ecx, %eax
 	subl	%edi, %eax
 	retq
-func0000000000000069:                   # @func0000000000000069
+func00000000000000a9:                   # @func00000000000000a9
 	leal	(%rsi,%rdx), %eax
 	movl	%eax, %ecx
 	negl	%ecx
@@ -14,7 +14,7 @@ func0000000000000069:                   # @func0000000000000069
 	andl	%ecx, %eax
 	subl	%edi, %eax
 	retq
-func0000000000000168:                   # @func0000000000000168
+func00000000000002a8:                   # @func00000000000002a8
 	leal	(%rsi,%rdx), %eax
 	movl	%eax, %ecx
 	negl	%ecx

@@ -1,5 +1,5 @@
 
-; 437 occurrences:
+; 448 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -30,10 +30,19 @@
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifTune.c.ll
+; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/pdrIncr.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdPath.c.ll
 ; abc/optimized/trees.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/qtmd.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -180,6 +189,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luajit/optimized/buildvm_asm.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -295,6 +305,7 @@
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/generic_xlog.ll
+; postgres/optimized/inv_api.ll
 ; qemu/optimized/hw_display_virtio-gpu.c.ll
 ; qemu/optimized/hw_scsi_esp.c.ll
 ; quantlib/optimized/argentina.ll
@@ -445,7 +456,7 @@ entry:
   ret i32 %3
 }
 
-; 500 occurrences:
+; 499 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -578,6 +589,8 @@ entry:
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; brotli/optimized/huffman.c.ll
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/rarvm.cpp.ll
@@ -656,11 +669,9 @@ entry:
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
-; linux/optimized/8250_dma.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/calipso.ll
 ; linux/optimized/deftree.ll
-; linux/optimized/drm_debugfs_crc.ll
 ; linux/optimized/ebitmap.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/extents.ll
@@ -669,12 +680,10 @@ entry:
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/inet_hashtables.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/intel_atomic_plane.ll
 ; linux/optimized/intel_crtc_state_dump.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/intel_fbc.ll
@@ -728,6 +737,7 @@ entry:
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
+; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-ppc32.cc.ll
@@ -888,6 +898,7 @@ entry:
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; redis/optimized/bitops.ll
 ; redis/optimized/ldo.ll
+; redis/optimized/lolwut6.ll
 ; redis/optimized/quicklist.ll
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
@@ -915,7 +926,6 @@ entry:
 ; wireshark/optimized/packet-giop.c.ll
 ; wireshark/optimized/packet-gprs-llc.c.ll
 ; wireshark/optimized/packet-gsm_a_common.c.ll
-; wireshark/optimized/packet-gsm_r_uus1.c.ll
 ; wireshark/optimized/packet-icmpv6.c.ll
 ; wireshark/optimized/packet-isobus.c.ll
 ; wireshark/optimized/packet-mint.c.ll

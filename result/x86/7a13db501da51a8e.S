@@ -23,14 +23,8 @@ func0000000000000004:                   # @func0000000000000004
 	andb	%sil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	cmpb	$29, %dl
+	cmpb	$2, %dl
 	setae	%al
-	andb	%dil, %sil
-	andb	%sil, %al
-	retq
-func0000000000000006:                   # @func0000000000000006
-	testb	%dl, %dl
-	sets	%al
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq

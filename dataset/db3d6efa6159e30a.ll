@@ -20,7 +20,7 @@ entry:
   %3 = fcmp olt float %1, %2
   %4 = select i1 %3, float %1, float %2
   %5 = fcmp ole float %4, 1.000000e+00
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -58,7 +58,7 @@ entry:
   %3 = fcmp olt float %2, %1
   %4 = select i1 %3, float %1, float %2
   %5 = fcmp ogt float %4, 5.000000e-01
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -71,7 +71,7 @@ entry:
   %3 = fcmp olt float %2, %1
   %4 = select i1 %3, float %1, float %2
   %5 = fcmp olt float %4, 5.000000e-01
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

@@ -8,7 +8,7 @@
 ; openjdk/optimized/X11FontScaler_md.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -29,7 +29,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -42,7 +42,7 @@ entry:
 ; hermes/optimized/APFloat.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = sub nsw i32 %1, %3

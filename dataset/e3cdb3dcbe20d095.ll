@@ -5,7 +5,7 @@
 ; ripgrep-rs/optimized/17szqs4crgj36yow.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0) #0 {
+define i1 @func0000000000000044(i64 %0) #0 {
 entry:
   %1 = urem i64 %0, 3
   %2 = sub nuw i64 %0, %1

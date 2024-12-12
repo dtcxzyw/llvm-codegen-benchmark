@@ -1,27 +1,21 @@
 func0000000000000054:                   // @func0000000000000054
 // %bb.0:                               // %entry
-	usra	v2.2d, v4.2d, #4
-	usra	v3.2d, v5.2d, #4
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
+	lsr	x8, x2, #4
+	add	w9, w1, w0
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	usra	v2.2d, v4.2d, #32
-	usra	v3.2d, v5.2d, #32
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
+	lsr	x8, x2, #32
+	add	w9, w1, w0
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000056:                   // @func0000000000000056
 // %bb.0:                               // %entry
-	usra	v2.2d, v4.2d, #7
-	usra	v3.2d, v5.2d, #7
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
+	lsr	x8, x2, #6
+	add	w9, w1, w0
+	add	w0, w8, w9
 	ret
                                         // -- End function

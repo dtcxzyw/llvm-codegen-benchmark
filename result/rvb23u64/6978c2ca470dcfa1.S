@@ -74,7 +74,7 @@ func0000000000000041:                   # @func0000000000000041
 	add	a0, a0, a2
 	addiw	a0, a0, 34
 	ret
-func000000000000004f:                   # @func000000000000004f
+func000000000000014f:                   # @func000000000000014f
 	sext.w	a2, a2
 	li	a3, -100
 	sltiu	a2, a2, 96
@@ -91,6 +91,13 @@ func0000000000000040:                   # @func0000000000000040
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 1
+	ret
+func000000000000004f:                   # @func000000000000004f
+	srliw	a2, a2, 16
+	seqz	a2, a2
+	add	a0, a0, a1
+	subw	a0, a0, a2
+	addiw	a0, a0, 2
 	ret
 func0000000000000045:                   # @func0000000000000045
 	srliw	a2, a2, 16

@@ -16,12 +16,12 @@
 ; pocketpy/optimized/vm.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -36,12 +36,12 @@ entry:
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw ptr, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -51,60 +51,60 @@ entry:
 ; luajit/optimized/lj_api_dyn.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; postgres/optimized/backend_status.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; lz4/optimized/lz4.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000069(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c9(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ule ptr %5, %0
+  %6 = icmp uge ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; cpython/optimized/xmltok.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; cpython/optimized/arraymodule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 

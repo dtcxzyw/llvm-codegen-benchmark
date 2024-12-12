@@ -1,29 +1,11 @@
 
-; 7 occurrences:
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
-; opencv/optimized/samplers.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, %0
-  %4 = add nsw i32 %3, 1
-  %5 = sext i32 %4 to i64
-  ret i64 %5
-}
-
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = add i32 %3, 8
   %5 = sext i32 %4 to i64
   ret i64 %5
@@ -35,7 +17,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = add i32 %3, 1
   %5 = sext i32 %4 to i64
   ret i64 %5
@@ -48,8 +30,20 @@ entry:
 define i64 @func0000000000000031(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = add nsw i32 %3, -1
+  %5 = sext i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/samplers.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = mul i32 %0, %2
+  %4 = add nsw i32 %3, -2
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

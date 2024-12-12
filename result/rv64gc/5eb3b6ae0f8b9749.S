@@ -33,28 +33,20 @@ func0000000000000029:                   # @func0000000000000029
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
-func0000000000000013:                   # @func0000000000000013
+func0000000000000007:                   # @func0000000000000007
 	sext.w	a1, a1
-	li	a2, 128
-	bltu	a1, a2, .LBB4_2
+	beqz	a1, .LBB4_2
 	li	a0, 1
 	ret
 .LBB4_2:
 	addiw	a0, a0, 1
 	ret
-func0000000000000020:                   # @func0000000000000020
-	sext.w	a1, a1
-	sltiu	a1, a1, 3
-	addiw	a0, a0, -1
-	neg	a1, a1
-	or	a0, a0, a1
-	ret
 func000000000000002a:                   # @func000000000000002a
 	sext.w	a1, a1
-	bgtz	a1, .LBB6_2
+	bgtz	a1, .LBB5_2
 	li	a0, 11
 	ret
-.LBB6_2:
+.LBB5_2:
 	addiw	a0, a0, 2
 	ret
 func0000000000000028:                   # @func0000000000000028
@@ -63,6 +55,17 @@ func0000000000000028:                   # @func0000000000000028
 	slti	a1, a1, 0
 	addi	a1, a1, -1
 	and	a0, a0, a1
+	ret
+func0000000000000020:                   # @func0000000000000020
+	sext.w	a2, a1
+	li	a3, 1
+	lui	a1, 648056
+	bltu	a3, a2, .LBB7_2
+	addiw	a0, a1, -1608
+	ret
+.LBB7_2:
+	addi	a1, a1, -1607
+	addw	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1

@@ -1,10 +1,4 @@
-func000000000000019a:                   # @func000000000000019a
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsra.vi	v12, v12, 31
-	vand.vv	v10, v12, v10
-	vmslt.vv	v0, v10, v8
-	ret
-func000000000000011a:                   # @func000000000000011a
+func000000000000022a:                   # @func000000000000022a
 	lui	a0, 1048571
 	addi	a0, a0, -512
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -17,7 +11,7 @@ func000000000000011a:                   # @func000000000000011a
 	li	a0, -81
 	vmsgt.vx	v0, v8, a0
 	ret
-func0000000000000118:                   # @func0000000000000118
+func0000000000000238:                   # @func0000000000000238
 	lui	a0, 1048571
 	addi	a0, a0, -512
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -31,7 +25,7 @@ func0000000000000118:                   # @func0000000000000118
 	addi	a0, a0, 1619
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	lui	a0, 1048571
 	addi	a0, a0, -512
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -44,7 +38,7 @@ func0000000000000116:                   # @func0000000000000116
 	li	a0, 81
 	vmslt.vx	v0, v8, a0
 	ret
-func0000000000000114:                   # @func0000000000000114
+func0000000000000234:                   # @func0000000000000234
 	lui	a0, 1048571
 	addi	a0, a0, -512
 	vsetivli	zero, 8, e32, m2, ta, ma

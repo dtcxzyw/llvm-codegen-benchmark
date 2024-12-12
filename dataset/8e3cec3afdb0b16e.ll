@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; clamav/optimized/extract.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
@@ -10,7 +10,6 @@
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/inventorymanager.cpp.ll
-; proj/optimized/crs.cpp.ll
 ; spike/optimized/csrs.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/wireshark_main_window_slots.cpp.ll

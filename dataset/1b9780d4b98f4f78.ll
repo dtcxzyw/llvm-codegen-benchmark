@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRpo.c.ll
@@ -14,6 +14,7 @@
 ; abc/optimized/luckyRead.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
+; boost/optimized/parser_utils.ll
 ; cmake/optimized/SystemInformation.cxx.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll

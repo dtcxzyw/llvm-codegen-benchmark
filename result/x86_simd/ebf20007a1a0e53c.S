@@ -109,7 +109,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI2_0:
 	.long	63                              # 0x3f
-func0000000000000088:                   # @func0000000000000088
+func0000000000000118:                   # @func0000000000000118
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -163,7 +163,7 @@ func0000000000000088:                   # @func0000000000000088
 	vzeroupper
 	retq
 .LCPI3_0:
-	.long	16                              # 0x10
+	.long	3                               # 0x3
 func0000000000000004:                   # @func0000000000000004
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

@@ -1,8 +1,6 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; linux/optimized/lz4_decompress.ll
-; lz4/optimized/lz4.c.ll
-; openusd/optimized/lz4.cpp.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000040(i64 %0, ptr %1, i64 %2) #0 {
@@ -15,15 +13,10 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
+; 3 occurrences:
 ; darktable/optimized/RawImage.cpp.ll
 ; folly/optimized/ElfCache.cpp.ll
-; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/zstd_decompress_block.ll
-; nlohmann_json/optimized/unit-regression2.cpp.ll
-; openusd/optimized/fvarLevel.cpp.ll
-; openusd/optimized/refinement.cpp.ll
-; ozz-animation/optimized/animation_builder.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -34,7 +27,7 @@ entry:
   ret i64 %.neg
 }
 
-; 202 occurrences:
+; 205 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -177,8 +170,11 @@ entry:
 ; openspiel/optimized/laser_tag.cc.ll
 ; openspiel/optimized/markov_soccer.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
+; openusd/optimized/fvarLevel.cpp.ll
+; openusd/optimized/refinement.cpp.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
+; ozz-animation/optimized/animation_builder.cc.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; proxygen/optimized/HTTPTransactionEgressSM.cpp.ll
 ; proxygen/optimized/HTTPTransactionIngressSM.cpp.ll
@@ -247,24 +243,26 @@ entry:
   ret i64 %.neg
 }
 
-; 1 occurrences:
+; 5 occurrences:
+; eastl/optimized/TestFixedTupleVector.cpp.ll
+; eastl/optimized/TestTupleVector.cpp.ll
+; lz4/optimized/lz4.c.ll
+; node/optimized/libnode.Protocol.ll
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000041(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000060(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr i8, ptr %1, i64 %3
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %.neg = sub i64 %0, %5
   ret i64 %.neg
 }
 
-; 3 occurrences:
-; eastl/optimized/TestFixedTupleVector.cpp.ll
-; eastl/optimized/TestTupleVector.cpp.ll
-; node/optimized/libnode.Protocol.ll
+; 1 occurrences:
+; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000060(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3

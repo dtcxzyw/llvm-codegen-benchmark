@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/thread.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = icmp ugt i64 %0, 5242884
@@ -10,7 +10,7 @@ entry:
   ret i64 %4
 }
 
-; 33 occurrences:
+; 41 occurrences:
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; folly/optimized/json.cpp.ll
 ; hdf5/optimized/h5repack_parse.c.ll
@@ -44,6 +44,14 @@ entry:
 ; mitsuba3/optimized/tabphase.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; xgboost/optimized/gbtree.cc.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
@@ -71,7 +79,7 @@ entry:
 ; openjdk/optimized/shenandoahNumberSeq.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = icmp eq i64 %0, 1
@@ -79,8 +87,7 @@ entry:
   ret i64 %4
 }
 
-; 28 occurrences:
-; clamav/optimized/mpool.c.ll
+; 27 occurrences:
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; folly/optimized/Request.cpp.ll
@@ -117,40 +124,62 @@ entry:
   ret i64 %4
 }
 
-; 27 occurrences:
-; freetype/optimized/bdf.c.ll
+; 2 occurrences:
+; clamav/optimized/mpool.c.ll
+; velox/optimized/SsdFile.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = icmp samesign ugt i64 %0, 20479
+  %4 = select i1 %3, i64 40960, i64 %2
+  ret i64 %4
+}
+
+; 16 occurrences:
 ; jemalloc/optimized/eset.ll
 ; jemalloc/optimized/eset.pic.ll
 ; jemalloc/optimized/eset.sym.ll
-; jemalloc/optimized/pac.ll
-; jemalloc/optimized/pac.pic.ll
-; jemalloc/optimized/pac.sym.ll
 ; jemalloc/optimized/psset.ll
 ; jemalloc/optimized/psset.pic.ll
 ; jemalloc/optimized/psset.sym.ll
 ; jemalloc/optimized/sec.ll
 ; jemalloc/optimized/sec.pic.ll
 ; jemalloc/optimized/sec.sym.ll
-; jemalloc/optimized/sz.ll
-; jemalloc/optimized/sz.pic.ll
-; jemalloc/optimized/sz.sym.ll
 ; linux/optimized/inotify_user.ll
 ; redis/optimized/eset.ll
 ; redis/optimized/eset.sym.ll
-; redis/optimized/pac.ll
-; redis/optimized/pac.sym.ll
 ; redis/optimized/psset.ll
 ; redis/optimized/psset.sym.ll
 ; redis/optimized/sec.ll
 ; redis/optimized/sec.sym.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000034(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = icmp samesign ult i64 %0, 10487040
+  %4 = select i1 %3, i64 8192, i64 %2
+  ret i64 %4
+}
+
+; 11 occurrences:
+; freetype/optimized/bdf.c.ll
+; jemalloc/optimized/pac.ll
+; jemalloc/optimized/pac.pic.ll
+; jemalloc/optimized/pac.sym.ll
+; jemalloc/optimized/sz.ll
+; jemalloc/optimized/sz.pic.ll
+; jemalloc/optimized/sz.sym.ll
+; redis/optimized/pac.ll
+; redis/optimized/pac.sym.ll
 ; redis/optimized/sz.ll
 ; redis/optimized/sz.sym.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = icmp ult i64 %0, 10487040
-  %4 = select i1 %3, i64 8192, i64 %2
+  %3 = icmp ult i64 %0, 16384
+  %4 = select i1 %3, i64 12, i64 %2
   ret i64 %4
 }
 

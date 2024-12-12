@@ -49,9 +49,9 @@ func0000000000000023:                   # @func0000000000000023
 	ret
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
+	vnsrl.wi	v10, v8, 2
 	vand.vi	v8, v10, -2
-	vadd.vi	v8, v8, 2
+	vadd.vi	v8, v8, -1
 	ret
 func0000000000000045:                   # @func0000000000000045
 	vsetivli	zero, 4, e32, m1, ta, ma

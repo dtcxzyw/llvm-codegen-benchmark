@@ -1,10 +1,10 @@
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	leal	100(%rdi), %eax
 	leal	(%rsi,%rsi), %ecx
 	cmpl	%edi, %ecx
 	cmovgl	%ecx, %eax
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	leal	10(%rdi), %eax
 	leal	(%rsi,%rsi), %ecx
 	cmpl	%edi, %ecx

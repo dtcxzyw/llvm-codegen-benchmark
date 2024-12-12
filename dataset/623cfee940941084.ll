@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; libquic/optimized/curve25519.c.ll
 ; libquic/optimized/error_correction.c.ll
 ; libwebp/optimized/dec.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; Function Attrs: nounwind

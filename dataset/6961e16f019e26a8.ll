@@ -111,7 +111,7 @@
 ; rocksdb/optimized/ldb_cmd.cc.ll
 ; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp eq ptr %0, null
@@ -123,7 +123,7 @@ entry:
 ; icu/optimized/derb.ll
 ; openjdk/optimized/NativeLibraries.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i8 %1) #0 {
 entry:
   %.not = icmp eq i8 %1, 0
   %2 = icmp eq ptr %0, null
@@ -131,7 +131,7 @@ entry:
   ret i1 %3
 }
 
-; 43 occurrences:
+; 45 occurrences:
 ; hermes/optimized/Mem2Reg.cpp.ll
 ; hermes/optimized/ScopeTransformations.cpp.ll
 ; hermes/optimized/SimpleCallGraphProvider.cpp.ll
@@ -144,8 +144,8 @@ entry:
 ; llvm/optimized/Constants.cpp.ll
 ; llvm/optimized/DeadStoreElimination.cpp.ll
 ; llvm/optimized/ExprEngineCXX.cpp.ll
-; llvm/optimized/GlobalDCE.cpp.ll
 ; llvm/optimized/GlobalOpt.cpp.ll
+; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
@@ -162,9 +162,10 @@ entry:
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/PHITransAddr.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -173,10 +174,11 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
+; llvm/optimized/X86PartialReduction.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000081(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 7
   %3 = icmp eq ptr %0, null
@@ -216,7 +218,7 @@ entry:
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/VPlan.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 51
   %3 = icmp ne ptr %0, null
@@ -291,7 +293,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000101(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 29
   %3 = icmp eq ptr %0, null
@@ -299,13 +301,14 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/FunctionComparator.cpp.ll
 ; llvm/optimized/IdenticalExprChecker.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/VPlanTransforms.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000008c(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 127
   %3 = icmp ne ptr %0, null

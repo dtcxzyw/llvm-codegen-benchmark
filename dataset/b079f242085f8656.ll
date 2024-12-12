@@ -36,18 +36,16 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 8
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   %6 = and i64 %5, 4294967295
   ret i64 %6
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; llvm/optimized/ExprCXX.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -63,7 +61,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %0
+  %3 = add i64 %0, %1
   %4 = and i64 %3, 63
   ret i64 %4
 }
@@ -74,7 +72,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   %6 = and i64 %5, -8
   ret i64 %6
@@ -104,7 +102,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %0
+  %3 = add i64 %0, %1
   %4 = and i64 %3, 511
   ret i64 %4
 }
@@ -118,7 +116,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %0
+  %3 = add i64 %0, %1
   %4 = and i64 %3, 63
   ret i64 %4
 }
@@ -129,7 +127,7 @@ entry:
 define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add i64 %4, %0
   %6 = and i64 %5, -4
   ret i64 %6

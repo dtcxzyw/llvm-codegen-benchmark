@@ -19,7 +19,7 @@ define double @func0000000000000007(double %0, double %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = uitofp nneg i32 %3 to double
-  %5 = fmul double %4, %1
+  %5 = fmul double %1, %4
   %6 = fdiv double %5, %0
   ret double %6
 }
@@ -31,7 +31,7 @@ define double @func0000000000000005(double %0, double %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = uitofp nneg i32 %3 to double
-  %5 = fmul double %4, %1
+  %5 = fmul double %1, %4
   %6 = fdiv double %5, %0
   ret double %6
 }

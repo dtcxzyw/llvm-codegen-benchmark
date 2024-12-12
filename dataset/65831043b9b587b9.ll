@@ -1,36 +1,38 @@
 
-%"class.rocksdb::LRUList.2502137" = type { ptr, %"class.rocksdb::port::Mutex.2502138", ptr, ptr }
-%"class.rocksdb::port::Mutex.2502138" = type { %union.pthread_mutex_t.2502139 }
-%union.pthread_mutex_t.2502139 = type { %struct.__pthread_mutex_s.2502140 }
-%struct.__pthread_mutex_s.2502140 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2502141 }
-%struct.__pthread_internal_list.2502141 = type { ptr, ptr }
-%struct.TempRow.2589370 = type { i32, i32, i32, i32, %"class.std::vector.48.2589371", %"class.std::vector.53.2589372" }
-%"class.std::vector.48.2589371" = type { %"struct.std::_Vector_base.49.2589373" }
-%"struct.std::_Vector_base.49.2589373" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2589374" }
-%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2589374" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2589375" }
-%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2589375" = type { ptr, ptr, ptr }
-%"class.std::vector.53.2589372" = type { %"struct.std::_Vector_base.54.2589376" }
-%"struct.std::_Vector_base.54.2589376" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2589377" }
-%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2589377" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2589378" }
-%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2589378" = type { ptr, ptr, ptr }
-%struct.zend_type.2680414 = type { ptr, i32 }
-%struct.aiFace.2713641 = type { i32, ptr }
-%struct.posix_acl_entry.3361546 = type { i16, i16, %union.anon.3361547 }
-%union.anon.3361547 = type { %struct.kuid_t.3361548 }
-%struct.kuid_t.3361548 = type { i32 }
-%"class.polynomial::power.3430709" = type { %"struct.std::pair.3430710" }
-%"struct.std::pair.3430710" = type { i32, i32 }
+%"class.rocksdb::LRUList.2617340" = type { ptr, %"class.rocksdb::port::Mutex.2617341", ptr, ptr }
+%"class.rocksdb::port::Mutex.2617341" = type { %union.pthread_mutex_t.2617342 }
+%union.pthread_mutex_t.2617342 = type { %struct.__pthread_mutex_s.2617343 }
+%struct.__pthread_mutex_s.2617343 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2617344 }
+%struct.__pthread_internal_list.2617344 = type { ptr, ptr }
+%struct.TempRow.2703215 = type { i32, i32, i32, i32, %"class.std::vector.48.2703216", %"class.std::vector.53.2703217" }
+%"class.std::vector.48.2703216" = type { %"struct.std::_Vector_base.49.2703218" }
+%"struct.std::_Vector_base.49.2703218" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703219" }
+%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703219" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703220" }
+%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703220" = type { ptr, ptr, ptr }
+%"class.std::vector.53.2703217" = type { %"struct.std::_Vector_base.54.2703221" }
+%"struct.std::_Vector_base.54.2703221" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703222" }
+%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703222" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703223" }
+%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703223" = type { ptr, ptr, ptr }
+%struct.zend_type.2793214 = type { ptr, i32 }
+%struct.aiFace.2826175 = type { i32, ptr }
+%"class.boost::json::key_value_pair.2995791" = type { %"class.boost::json::value.2995760", ptr, i32, i32 }
+%"class.boost::json::value.2995760" = type { %union.anon.1.2995761 }
+%union.anon.1.2995761 = type { %"class.boost::json::array.2995762" }
+%"class.boost::json::array.2995762" = type { %"class.boost::json::storage_ptr.2995763", i8, ptr }
+%"class.boost::json::storage_ptr.2995763" = type { i64 }
+%"class.std::thread.3618884" = type { %"class.std::thread::id.3618885" }
+%"class.std::thread::id.3618885" = type { i64 }
 
 ; 2 occurrences:
 ; ruby/optimized/regcomp.ll
 ; wireshark/optimized/show_packet_bytes_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000384(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 60
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 60
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -50,12 +52,12 @@ entry:
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000381(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 60
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 60
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -69,16 +71,16 @@ entry:
 ; ruby/optimized/regerror.ll
 ; ruby/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000201(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 -1
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 148 occurrences:
+; 190 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/AssbinLoader.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -109,6 +111,7 @@ entry:
 ; assimp/optimized/UnrealLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/src.ll
 ; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
@@ -160,6 +163,8 @@ entry:
 ; llvm/optimized/JSONNodeDumper.cpp.ll
 ; llvm/optimized/LiveRegMatrix.cpp.ll
 ; llvm/optimized/LocalizationChecker.cpp.ll
+; llvm/optimized/LowerEmuTLS.cpp.ll
+; llvm/optimized/MLInlineAdvisor.cpp.ll
 ; llvm/optimized/MachineOutliner.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/NoUncountedMembersChecker.cpp.ll
@@ -217,27 +222,66 @@ entry:
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; php/optimized/zend_execute.ll
 ; rocksdb/optimized/block_cache_tier.cc.ll
+; z3/optimized/arith_eq_adapter.cpp.ll
 ; z3/optimized/dl_compiler.cpp.ll
 ; z3/optimized/dl_mk_simple_joins.cpp.ll
 ; z3/optimized/lar_solver.cpp.ll
 ; z3/optimized/mbp_term_graph.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll
 ; z3/optimized/pb2bv_rewriter.cpp.ll
+; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/spacer_unsat_core_plugin.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1iclhw87evxdlo4w8mftuzy1q.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/27vlvcehd5fwhym4kjj7notsh.ll
+; zed-rs/optimized/2h1nnr25ysxgaelpjnym4eorn.ll
+; zed-rs/optimized/4jorz9az93w02qp1j17ku3v0j.ll
+; zed-rs/optimized/4wl6luh08kf5panbyu7di2k6e.ll
+; zed-rs/optimized/4yj2hlxw19fp3dolnhsg3xkpy.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5ixvfce98s1x7yb9webqub3ar.ll
+; zed-rs/optimized/6t66wyfdhcx0enyarsxt68bq7.ll
+; zed-rs/optimized/71uytbn1jy6440q3d57n4okna.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/8h2d4a3i3ysegc1cht5hd5uc2.ll
+; zed-rs/optimized/8yy2zhy2bdzv8bn57pipvxcw7.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/9tt6eh72scdop5d6biwv5himz.ll
+; zed-rs/optimized/9uyga23501g5fm2owj6o8xm6i.ll
+; zed-rs/optimized/azv0j1dyv87nnzewhi6axt1ps.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/biea7u9y4mp6m3ifunknc64xm.ll
+; zed-rs/optimized/bwvht24uf41c89mbhdihda1iu.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/bzgpsrur2ydjgs01q4vmv48xa.ll
+; zed-rs/optimized/c8rrq6pnwhh8lrfnv140dr3y1.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/d85rks8fjothinwf2xlu2hk13.ll
+; zed-rs/optimized/dd8ztmg64g4x9ypkzwkofy6vi.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/dotykqg7r97h0htpk8r9ip155.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
+; zed-rs/optimized/ez5ezaept0c4zvcatfvkpkciv.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 8
-  %5 = getelementptr nusw %"class.rocksdb::LRUList.2502137", ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %5 = getelementptr nusw nuw %"class.rocksdb::LRUList.2617340", ptr %4, i64 %3
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 236 occurrences:
+; 267 occurrences:
 ; assimp/optimized/IRRMeshLoader.cpp.ll
 ; assimp/optimized/RawLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -474,45 +518,74 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openssl/optimized/libssl-lib-t1_trce.ll
 ; openssl/optimized/libssl-shlib-t1_trce.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1iclhw87evxdlo4w8mftuzy1q.ll
+; zed-rs/optimized/27vlvcehd5fwhym4kjj7notsh.ll
+; zed-rs/optimized/2h1nnr25ysxgaelpjnym4eorn.ll
+; zed-rs/optimized/4jorz9az93w02qp1j17ku3v0j.ll
+; zed-rs/optimized/4wl6luh08kf5panbyu7di2k6e.ll
+; zed-rs/optimized/4yj2hlxw19fp3dolnhsg3xkpy.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/6t66wyfdhcx0enyarsxt68bq7.ll
+; zed-rs/optimized/71uytbn1jy6440q3d57n4okna.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/8yy2zhy2bdzv8bn57pipvxcw7.ll
+; zed-rs/optimized/9uyga23501g5fm2owj6o8xm6i.ll
+; zed-rs/optimized/azv0j1dyv87nnzewhi6axt1ps.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/biea7u9y4mp6m3ifunknc64xm.ll
+; zed-rs/optimized/bwvht24uf41c89mbhdihda1iu.ll
+; zed-rs/optimized/bzgpsrur2ydjgs01q4vmv48xa.ll
+; zed-rs/optimized/c8rrq6pnwhh8lrfnv140dr3y1.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/d85rks8fjothinwf2xlu2hk13.ll
+; zed-rs/optimized/dd8ztmg64g4x9ypkzwkofy6vi.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/dotykqg7r97h0htpk8r9ip155.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
+; zed-rs/optimized/ez5ezaept0c4zvcatfvkpkciv.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 3
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; minetest/optimized/guiTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000261(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 8
-  %5 = getelementptr nusw %struct.TempRow.2589370, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw %struct.TempRow.2703215, ptr %4, i64 %3
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/jvmciCodeInstaller.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 12
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 12
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
-; 10 occurrences:
-; abc/optimized/inffast.c.ll
+; 8 occurrences:
 ; clamav/optimized/lzxd.c.ll
 ; eastl/optimized/EARandom.cpp.ll
-; gromacs/optimized/inffast.c.ll
 ; llvm/optimized/SourceManager.cpp.ll
 ; luajit/optimized/lj_buf.ll
 ; luajit/optimized/lj_buf_dyn.ll
@@ -520,12 +593,12 @@ entry:
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; php/optimized/zend_API.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 8
-  %5 = getelementptr nusw %struct.zend_type.2680414, ptr %4, i64 %3
-  %6 = icmp ugt ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %5 = getelementptr nusw nuw %struct.zend_type.2793214, ptr %4, i64 %3
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -536,44 +609,44 @@ entry:
 ; assimp/optimized/IRRMeshLoader.cpp.ll
 ; icu/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 8
-  %5 = getelementptr nusw %struct.aiFace.2713641, ptr %4, i64 %3
-  %6 = icmp ugt ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %5 = getelementptr nusw nuw %struct.aiFace.2826175, ptr %4, i64 %3
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; clamav/optimized/packlibs.c.ll
-; hyperscan/optimized/castle.c.ll
-; linux/optimized/indirect.ll
-; linux/optimized/psargs.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000104(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 -1
-  %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ugt ptr %5, %0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; clamav/optimized/packlibs.c.ll
+; darktable/optimized/DeflateDecompressor.cpp.ll
 ; linux/optimized/dm-raid1.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 -1
+  %4 = getelementptr i8, ptr %1, i64 1
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
-; 67 occurrences:
+; 2 occurrences:
+; abc/optimized/inffast.c.ll
+; gromacs/optimized/inffast.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000164(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %1, i64 -1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = icmp ult ptr %0, %5
+  ret i1 %6
+}
+
+; 68 occurrences:
+; boost/optimized/src.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
@@ -642,68 +715,103 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 24
-  %5 = getelementptr nusw ptr, ptr %4, i64 %3
-  %6 = icmp ne ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %5 = getelementptr nusw nuw %"class.boost::json::key_value_pair.2995791", ptr %4, i64 %3
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
-; 3 occurrences:
-; llvm/optimized/DeclSpec.cpp.ll
-; llvm/optimized/LowerEmuTLS.cpp.ll
-; llvm/optimized/MLInlineAdvisor.cpp.ll
+; 4 occurrences:
+; clamav/optimized/packlibs.c.ll
+; hyperscan/optimized/castle.c.ll
+; linux/optimized/indirect.ll
+; linux/optimized/psargs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000204(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 80
-  %5 = getelementptr nusw ptr, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i8, ptr %1, i64 -1
+  %5 = getelementptr i8, ptr %4, i64 %3
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
-; 6 occurrences:
+; 37 occurrences:
+; linux/optimized/intel_execlists_submission.ll
+; linux/optimized/posix_acl.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1iclhw87evxdlo4w8mftuzy1q.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/27vlvcehd5fwhym4kjj7notsh.ll
+; zed-rs/optimized/2h1nnr25ysxgaelpjnym4eorn.ll
+; zed-rs/optimized/4jorz9az93w02qp1j17ku3v0j.ll
+; zed-rs/optimized/4wl6luh08kf5panbyu7di2k6e.ll
+; zed-rs/optimized/4yj2hlxw19fp3dolnhsg3xkpy.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/6t66wyfdhcx0enyarsxt68bq7.ll
+; zed-rs/optimized/71uytbn1jy6440q3d57n4okna.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/8h2d4a3i3ysegc1cht5hd5uc2.ll
+; zed-rs/optimized/8yy2zhy2bdzv8bn57pipvxcw7.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/9tt6eh72scdop5d6biwv5himz.ll
+; zed-rs/optimized/9uyga23501g5fm2owj6o8xm6i.ll
+; zed-rs/optimized/azv0j1dyv87nnzewhi6axt1ps.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/biea7u9y4mp6m3ifunknc64xm.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/bzgpsrur2ydjgs01q4vmv48xa.ll
+; zed-rs/optimized/c8rrq6pnwhh8lrfnv140dr3y1.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/d85rks8fjothinwf2xlu2hk13.ll
+; zed-rs/optimized/dd8ztmg64g4x9ypkzwkofy6vi.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/dotykqg7r97h0htpk8r9ip155.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
+; zed-rs/optimized/ez5ezaept0c4zvcatfvkpkciv.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %5 = getelementptr { { i32, i16, [1 x i16] }, i64 }, ptr %4, i64 %3
+  %6 = icmp eq ptr %0, %5
+  ret i1 %6
+}
+
+; 5 occurrences:
 ; linux/optimized/dm-raid1.ll
 ; linux/optimized/ip6_tables.ll
 ; linux/optimized/ip_tables.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/posix_acl.ll
 ; linux/optimized/xxhash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 64
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/xxhash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000188(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 24
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 24
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %5, %0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; linux/optimized/intel_execlists_submission.ll
-; linux/optimized/posix_acl.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 28
-  %5 = getelementptr %struct.posix_acl_entry.3361546, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -723,29 +831,26 @@ entry:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 16
-  %5 = getelementptr nusw ptr, ptr %4, i64 %3
-  %6 = icmp ne ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %3
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
-; 6 occurrences:
-; z3/optimized/arith_eq_adapter.cpp.ll
+; 3 occurrences:
 ; z3/optimized/hnf_cutter.cpp.ll
-; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_parallel.cpp.ll
-; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 20
-  %5 = getelementptr nusw %"class.polynomial::power.3430709", ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %4 = getelementptr i8, ptr %1, i64 8
+  %5 = getelementptr nusw nuw %"class.std::thread.3618884", ptr %4, i64 %3
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -757,7 +862,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 -1
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -769,19 +874,19 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 3
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a5(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e5(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 10
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = icmp uge ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 10
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = icmp ule ptr %0, %5
   ret i1 %6
 }
 

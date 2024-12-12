@@ -66,7 +66,7 @@ entry:
   ret i32 %3
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/exor.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -74,6 +74,7 @@ entry:
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; icu/optimized/rbbitblb.ll
+; lief/optimized/Builder.cpp.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll_mgr.ll

@@ -7,7 +7,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000145(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 256
   %.not.not = icmp eq i32 %3, 0

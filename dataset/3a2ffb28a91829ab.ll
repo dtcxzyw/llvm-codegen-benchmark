@@ -22,7 +22,7 @@
 ; quickjs/optimized/quickjs.ll
 ; stb/optimized/stb_hexwave.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = zext nneg i32 %2 to i64
@@ -35,7 +35,7 @@ entry:
 ; flac/optimized/window.c.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = zext i32 %2 to i64
@@ -44,11 +44,25 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; gromacs/optimized/dlasq2.cpp.ll
+; gromacs/optimized/slasq2.cpp.ll
+; openblas/optimized/dlasq2.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a6(i64 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %1, 4
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nsw i64 %0, -4
+  %5 = icmp slt i64 %4, %3
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 1
   %3 = zext nneg i32 %2 to i64
@@ -60,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/dijkstra.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = zext nneg i32 %2 to i64

@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 60 occurrences:
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
@@ -21,6 +21,7 @@
 ; linux/optimized/80003es2lan.ll
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/i9xx_wm.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; node/optimized/simdutf.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/resize.cpp.ll
@@ -45,6 +46,8 @@
 ; wireshark/optimized/in_cksum.c.ll
 ; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-epl.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; zstd/optimized/zstd_v01.c.ll
@@ -61,22 +64,27 @@
 define i32 @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 16
   ret i32 %4
 }
 
-; 5 occurrences:
+; 10 occurrences:
+; boost/optimized/to_chars.ll
 ; freetype/optimized/sfnt.c.ll
 ; lightgbm/optimized/bin.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; openusd/optimized/cfl.c.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 5
   ret i32 %4
 }
@@ -99,7 +107,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 1
   ret i32 %4
 }

@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
@@ -20,6 +20,7 @@
 ; ruby/optimized/bignum.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind

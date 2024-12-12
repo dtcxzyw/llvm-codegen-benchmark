@@ -108,9 +108,10 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/decompress.c.ll
 ; cmake/optimized/decompress.c.ll
+; linux/optimized/xhci-ring.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0) #0 {
 entry:

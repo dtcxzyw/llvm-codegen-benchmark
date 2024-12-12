@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v14, v12, a0
-	vmul.vv	v8, v14, v8
+	vmul.vv	v8, v8, v14
 	vmacc.vv	v8, v12, v10
 	ret
 func0000000000000000:                   # @func0000000000000000

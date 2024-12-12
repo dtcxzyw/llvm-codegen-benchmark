@@ -9,8 +9,8 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000003:                   # @func0000000000000003
 	movl	%edi, %eax
 	orl	$8, %eax
-	testb	$1, %sil
-	cmovel	%edi, %eax
 	testb	%dil, %dil
 	cmovnel	%edi, %eax
+	testb	$1, %sil
+	cmovel	%edi, %eax
 	retq

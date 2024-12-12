@@ -8,7 +8,18 @@ define i16 @func000000000000001b(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 130
   %3 = lshr i16 %2, 8
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
+  ret i16 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_math.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000003(i16 %0, i16 %1) #0 {
+entry:
+  %2 = add i16 %1, 90
+  %3 = lshr i16 %2, 15
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 
@@ -19,7 +30,7 @@ define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -4
   %3 = lshr i16 %2, 2
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 

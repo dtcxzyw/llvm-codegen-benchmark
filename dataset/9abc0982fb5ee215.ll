@@ -1,7 +1,8 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/inffast.c.ll
 ; assimp/optimized/IFCUtil.cpp.ll
+; boost/optimized/src.ll
 ; clamav/optimized/chmd.c.ll
 ; cmake/optimized/inffast.c.ll
 ; gromacs/optimized/inffast.c.ll
@@ -12,11 +13,11 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7
@@ -249,7 +250,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000078(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000007c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -262,11 +263,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000002c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7
@@ -284,19 +285,6 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 16
-  %6 = ptrtoint ptr %5 to i64
-  %7 = sub i64 %6, %0
-  ret i64 %7
-}
-
-; 1 occurrences:
-; linux/optimized/dns_key.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000030(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -1
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7

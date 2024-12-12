@@ -41,7 +41,7 @@ define i1 @func0000000000000008(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = sext i32 %0 to i64
   %7 = icmp ugt i64 %5, %6
   ret i1 %7

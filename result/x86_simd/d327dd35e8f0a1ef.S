@@ -16,7 +16,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpcmpnltd	%xmm3, %xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpxorq	%ymm1, %ymm2, %ymm1 {%k1}
-	vpcmpneqq	%ymm0, %ymm1, %k0
+	vpcmpneqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -26,7 +26,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpnltd	%xmm3, %xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpxorq	%ymm1, %ymm2, %ymm1 {%k1}
-	vpcmpeqq	%ymm0, %ymm1, %k0
+	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -36,7 +36,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	knotw	%k0, %k1
 	vpxorq	%ymm1, %ymm2, %ymm1 {%k1} {z}
-	vpcmpltuq	%ymm0, %ymm1, %k0
+	vpcmpnleuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -46,7 +46,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	knotw	%k0, %k1
 	vpxorq	%ymm1, %ymm2, %ymm1 {%k1} {z}
-	vpcmpnltq	%ymm0, %ymm1, %k0
+	vpcmpleq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

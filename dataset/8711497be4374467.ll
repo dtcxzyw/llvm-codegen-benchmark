@@ -1,31 +1,31 @@
 
-%struct.page.3343433 = type { i64, %union.anon.3343434, %union.anon.6.3343435, %struct.atomic_t.3343436, [8 x i8] }
-%union.anon.3343434 = type { %struct.anon.3343437 }
-%struct.anon.3343437 = type { %union.anon.0.3343438, ptr, %union.anon.2.3343439, i64 }
-%union.anon.0.3343438 = type { %struct.list_head.3343440 }
-%struct.list_head.3343440 = type { ptr, ptr }
-%union.anon.2.3343439 = type { i64 }
-%union.anon.6.3343435 = type { %struct.atomic_t.3343436 }
-%struct.atomic_t.3343436 = type { i32 }
-%struct.page.3343581 = type { i64, %union.anon.35.3343582, %union.anon.43.3343583, %struct.atomic_t.3343565, [8 x i8] }
-%union.anon.35.3343582 = type { %struct.anon.36.3343584 }
-%struct.anon.36.3343584 = type { %union.anon.37.3343585, ptr, %union.anon.39.3343586, i64 }
-%union.anon.37.3343585 = type { %struct.list_head.3343577 }
-%struct.list_head.3343577 = type { ptr, ptr }
-%union.anon.39.3343586 = type { i64 }
-%union.anon.43.3343583 = type { %struct.atomic_t.3343565 }
-%struct.atomic_t.3343565 = type { i32 }
+%struct.page.3532352 = type { i64, %union.anon.3532353, %union.anon.6.3532354, %struct.atomic_t.3532355, [8 x i8] }
+%union.anon.3532353 = type { %struct.anon.3532356 }
+%struct.anon.3532356 = type { %union.anon.0.3532357, ptr, %union.anon.2.3532358, i64 }
+%union.anon.0.3532357 = type { %struct.list_head.3532359 }
+%struct.list_head.3532359 = type { ptr, ptr }
+%union.anon.2.3532358 = type { i64 }
+%union.anon.6.3532354 = type { %struct.atomic_t.3532355 }
+%struct.atomic_t.3532355 = type { i32 }
+%struct.page.3532500 = type { i64, %union.anon.35.3532501, %union.anon.43.3532502, %struct.atomic_t.3532484, [8 x i8] }
+%union.anon.35.3532501 = type { %struct.anon.36.3532503 }
+%struct.anon.36.3532503 = type { %union.anon.37.3532504, ptr, %union.anon.39.3532505, i64 }
+%union.anon.37.3532504 = type { %struct.list_head.3532496 }
+%struct.list_head.3532496 = type { ptr, ptr }
+%union.anon.39.3532505 = type { i64 }
+%union.anon.43.3532502 = type { %struct.atomic_t.3532484 }
+%struct.atomic_t.3532484 = type { i32 }
 
 ; 2 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = lshr i64 %4, 6
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -53,24 +53,24 @@ entry:
 ; zfp/optimized/decode4i.c.ll
 ; zfp/optimized/decode4l.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = lshr i64 %4, 6
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; assimp/optimized/DXFLoader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -80,12 +80,12 @@ entry:
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = lshr i64 %4, 6
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -98,9 +98,9 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = lshr i64 %4, 12
-  %6 = getelementptr %struct.page.3343433, ptr %0, i64 %5
+  %6 = getelementptr %struct.page.3532352, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -110,9 +110,9 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = lshr i64 %4, 12
-  %6 = getelementptr %struct.page.3343581, ptr %0, i64 %5
+  %6 = getelementptr %struct.page.3532500, ptr %0, i64 %5
   ret ptr %6
 }
 

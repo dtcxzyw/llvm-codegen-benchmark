@@ -30,7 +30,7 @@ entry:
   ret ptr %6
 }
 
-; 18 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; git/optimized/diff.ll
@@ -43,10 +43,16 @@ entry:
 ; openspiel/optimized/history_tree.cc.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; protobuf/optimized/enum.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/feature_resolver.cc.ll
 ; protobuf/optimized/field_mask_util.cc.ll
 ; protobuf/optimized/file.cc.ll
+; protobuf/optimized/map.cc.ll
+; protobuf/optimized/message_builder.cc.ll
+; protobuf/optimized/message_builder_lite.cc.ll
 ; ruby/optimized/ripper.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
@@ -91,7 +97,7 @@ entry:
 define ptr @func0000000000000030(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %1
+  %3 = add i32 %1, %.neg
   %4 = sext i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
@@ -103,35 +109,24 @@ entry:
 define ptr @func0000000000000020(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %1
+  %3 = add i32 %1, %.neg
   %4 = sext i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 15 occurrences:
-; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/str_split_test.cc.ll
+; 4 occurrences:
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; linux/optimized/d_path.ll
 ; postgres/optimized/inv_api.ll
 ; postgres/optimized/pg_aggregate.ll
-; protobuf/optimized/command_line_interface.cc.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/descriptor_database.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/feature_resolver.cc.ll
-; protobuf/optimized/file.cc.ll
-; protobuf/optimized/map.cc.ll
-; protobuf/optimized/message_builder.cc.ll
-; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
+  %3 = add nsw i32 %2, -11
   %4 = sub nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr i32, ptr %0, i64 %5
+  %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -141,7 +136,7 @@ entry:
 define ptr @func0000000000000034(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %1
+  %3 = add i32 %1, %.neg
   %4 = sext i32 %3 to i64
   %5 = getelementptr i64, ptr %0, i64 %4
   ret ptr %5

@@ -5,7 +5,7 @@ func000000000000001a:                   # @func000000000000001a
 	vpand	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$32, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.quad	7                               # 0x7

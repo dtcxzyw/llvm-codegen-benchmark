@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 65 occurrences:
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
@@ -46,11 +46,6 @@
 ; ncnn/optimized/detectionoutput.cpp.ll
 ; ncnn/optimized/priorbox.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
-; ncnn/optimized/yolov3detectionoutput.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/kalman.cpp.ll
 ; opencv/optimized/tracker_dasiamrpn.cpp.ll
@@ -69,6 +64,7 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

@@ -10,7 +10,7 @@
 define i1 @func0000000000000012(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp nneg i64 %1 to double
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
@@ -75,11 +75,11 @@ entry:
 define i1 @func0000000000000008(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to double
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; brotli/optimized/bit_cost.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/encode.c.ll
@@ -115,11 +115,12 @@ entry:
 ; rocksdb/optimized/memtable.cc.ll
 ; yalantinglibs/optimized/client.cpp.ll
 ; yosys/optimized/sim.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to double
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
@@ -167,16 +168,17 @@ entry:
 define i1 @func0000000000000004(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to double
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; abseil-cpp/optimized/pool_urbg_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; darktable/optimized/introspection_exposure.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openjdk/optimized/jfrAdaptiveSampler.ll
 ; postgres/optimized/nodeAgg.ll
 ; protobuf/optimized/unparser.cc.ll
@@ -186,7 +188,7 @@ entry:
 define i1 @func0000000000000005(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to double
-  %3 = fcmp ult double %2, %0
+  %3 = fcmp ugt double %0, %2
   ret i1 %3
 }
 
@@ -201,7 +203,7 @@ entry:
 define i1 @func0000000000000007(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to double
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 
@@ -213,7 +215,7 @@ entry:
 define i1 @func0000000000000014(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp nneg i64 %1 to double
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
@@ -225,7 +227,7 @@ entry:
 define i1 @func0000000000000013(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp nneg i64 %1 to double
-  %3 = fcmp ugt double %2, %0
+  %3 = fcmp ult double %0, %2
   ret i1 %3
 }
 
@@ -257,7 +259,7 @@ entry:
 define i1 @func0000000000000003(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to double
-  %3 = fcmp ugt double %2, %0
+  %3 = fcmp ult double %0, %2
   ret i1 %3
 }
 
@@ -267,7 +269,7 @@ entry:
 define i1 @func0000000000000017(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp nneg i64 %1 to double
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 
@@ -279,7 +281,7 @@ entry:
 define i1 @func000000000000000c(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to double
-  %3 = fcmp ole double %2, %0
+  %3 = fcmp oge double %0, %2
   ret i1 %3
 }
 
@@ -290,7 +292,7 @@ entry:
 define i1 @func0000000000000018(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp nneg i64 %1 to double
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
@@ -300,7 +302,7 @@ entry:
 define i1 @func000000000000000b(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to double
-  %3 = fcmp uge double %2, %0
+  %3 = fcmp ule double %0, %2
   ret i1 %3
 }
 
@@ -310,7 +312,7 @@ entry:
 define i1 @func0000000000000015(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp nneg i64 %1 to double
-  %3 = fcmp ult double %2, %0
+  %3 = fcmp ugt double %0, %2
   ret i1 %3
 }
 

@@ -19,7 +19,7 @@ func0000000000000054:                   # @func0000000000000054
 	vadd.vi	v12, v12, 14
 	vsll.vi	v10, v10, 4
 	vand.vi	v12, v12, -16
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	ret
 func0000000000000050:                   # @func0000000000000050
@@ -48,7 +48,7 @@ func00000000000000fc:                   # @func00000000000000fc
 	vadd.vi	v12, v12, 7
 	vsll.vi	v10, v10, 3
 	vand.vi	v12, v12, -8
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	ret
 func0000000000000000:                   # @func0000000000000000
@@ -56,6 +56,6 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vi	v12, v12, 15
 	vsll.vi	v10, v10, 5
 	vand.vi	v12, v12, -16
-	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	ret

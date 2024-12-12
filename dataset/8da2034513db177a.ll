@@ -1,8 +1,9 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; brotli/optimized/encode.c.ll
 ; icu/optimized/ucptrie.ll
 ; just-rs/optimized/53slus9exfz9w045.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; ruby/optimized/regparse.ll

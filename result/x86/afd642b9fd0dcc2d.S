@@ -26,3 +26,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	$101, %rdi
 	setge	%al
 	retq
+func0000000000000011:                   # @func0000000000000011
+	addq	%rsi, %rdi
+	sete	%al
+	retq

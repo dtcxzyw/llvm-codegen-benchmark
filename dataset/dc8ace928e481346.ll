@@ -1,15 +1,15 @@
 
-; 240 occurrences:
+; 234 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/mpmDsd.c.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
-; cmake/optimized/poll.c.ll
 ; coreutils-rs/optimized/1nj6h5colnkxfn01.ll
 ; coreutils-rs/optimized/2vlueqjvzu597xlx.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; cpython/optimized/pegen.ll
+; darktable/optimized/introspection_flip.c.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/5c4w4ukc3cdb4cwa.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
@@ -27,7 +27,6 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; just-rs/optimized/2sotx4bdu006z307.ll
 ; libquic/optimized/des.c.ll
-; libuv/optimized/poll.c.ll
 ; libwebp/optimized/alpha_processing.c.ll
 ; libwebp/optimized/anim_decode.c.ll
 ; lief/optimized/des.c.ll
@@ -43,7 +42,6 @@
 ; linux/optimized/early-lookup.ll
 ; linux/optimized/ethtool.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/fsmap.ll
@@ -59,9 +57,7 @@
 ; linux/optimized/ldt.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/loop.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/md.ll
-; linux/optimized/mii.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/nfs2xdr.ll
 ; linux/optimized/open.ll
@@ -71,10 +67,8 @@
 ; linux/optimized/reg.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/slub.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/super.ll
 ; linux/optimized/synaptics.ll
-; linux/optimized/sys_ia32.ll
 ; linux/optimized/taskstats.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/tty_io.ll
@@ -137,7 +131,6 @@
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
 ; nanosvg/optimized/nanosvg.ll
-; node/optimized/poll.ll
 ; node/optimized/simdutf.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
@@ -176,7 +169,6 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
@@ -240,6 +232,8 @@
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-uavcan-can.c.ll
 ; yosys/optimized/dfflegalize.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -251,8 +245,7 @@ entry:
   ret i32 %7
 }
 
-; 11 occurrences:
-; darktable/optimized/introspection_flip.c.ll
+; 10 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; linux/optimized/reg.ll
 ; llvm/optimized/FloatingPointMode.cpp.ll
@@ -268,19 +261,18 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 9
   %4 = and i32 %3, 524288
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = and i32 %1, 2097152
   %7 = or i32 %5, %6
   ret i32 %7
 }
 
-; 18 occurrences:
+; 32 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; icu/optimized/umutablecptrie.ll
 ; jq/optimized/main.ll
 ; lief/optimized/des.c.ll
 ; linux/optimized/aspm.ll
-; linux/optimized/mii.ll
 ; linux/optimized/reg.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/FloatingPointMode.cpp.ll
@@ -289,6 +281,21 @@ entry:
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openmpi/optimized/op_avx_component.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/util_cpuinfo-i386.c.ll
@@ -298,7 +305,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 2097152
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = and i32 %1, 268435456
   %7 = or i32 %5, %6
   ret i32 %7
@@ -312,14 +319,13 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 10
   %4 = and i32 %3, 992
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = and i32 %1, 31744
   %7 = or disjoint i32 %5, %6
   ret i32 %7
 }
 
-; 5 occurrences:
-; linux/optimized/mii.ll
+; 4 occurrences:
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; rust-analyzer-rs/optimized/mucn4qgqdg2891h.ll
@@ -329,7 +335,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 4
   %4 = and i32 %3, 16128
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = and i32 %1, 4128768
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -342,7 +348,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
   %4 = and i32 %3, 1048576
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = and i32 %1, 262144
   %7 = or i32 %5, %6
   ret i32 %7

@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 -1, i32 -2
-  %2 = add nsw i32 %.v, %1
+  %2 = add nsw i32 %1, %.v
   %3 = icmp sgt i32 %2, -1
   ret i1 %3
 }
@@ -13,10 +13,10 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_lens.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 -2, i32 -1
-  %2 = add nsw i32 %.v, %1
+  %2 = add nsw i32 %1, %.v
   %3 = icmp slt i32 %2, 0
   ret i1 %3
 }
@@ -33,10 +33,10 @@ entry:
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 -2, i32 1
-  %2 = add i32 %.v, %1
+  %2 = add i32 %1, %.v
   %3 = icmp eq i32 %2, -1
   ret i1 %3
 }
@@ -44,10 +44,10 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/corner_table.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000010c(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 -2, i32 1
-  %2 = add i32 %.v, %1
+  %2 = add i32 %1, %.v
   %3 = icmp ne i32 %2, -1
   ret i1 %3
 }
@@ -55,10 +55,10 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/mesh_stripifier.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000106(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 -2, i32 1
-  %2 = add i32 %.v, %1
+  %2 = add i32 %1, %.v
   %3 = icmp slt i32 %2, 0
   ret i1 %3
 }
@@ -66,11 +66,11 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000b8(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 -112, i32 -111
-  %2 = add nsw i32 %.v, %1
-  %3 = icmp ugt i32 %2, 30
+  %2 = add nsw i32 %1, %.v
+  %3 = icmp samesign ugt i32 %2, 30
   ret i1 %3
 }
 
@@ -82,7 +82,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 -2, i32 -1
-  %2 = add i32 %.v, %1
+  %2 = add i32 %1, %.v
   %3 = icmp sgt i32 %2, -1
   ret i1 %3
 }
@@ -90,10 +90,10 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dtgevc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 -1, i32 -2
-  %2 = add i32 %.v, %1
+  %2 = add i32 %1, %.v
   %3 = icmp slt i32 %2, 1
   ret i1 %3
 }

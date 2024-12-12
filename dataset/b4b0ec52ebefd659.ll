@@ -50,7 +50,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sext i32 %0 to i64
   %6 = icmp ugt i64 %4, %5
   ret i1 %6
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/lz77.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = add nsw i64 %3, 16
@@ -72,7 +72,7 @@ entry:
 ; ceres/optimized/covariance_impl.cc.ll
 ; opencv/optimized/staticSaliencyFineGrained.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = add nsw i64 %3, 1
@@ -84,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = add nsw i64 %3, 1

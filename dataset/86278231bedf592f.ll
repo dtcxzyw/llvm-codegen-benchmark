@@ -1,5 +1,5 @@
 
-; 105 occurrences:
+; 103 occurrences:
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaSim2.c.ll
@@ -34,7 +34,6 @@
 ; mold/optimized/perf.cc.ll
 ; node/optimized/fs.ll
 ; oiio/optimized/strutil.cpp.ll
-; openblas/optimized/dsymv_thread_U.c.ll
 ; openblas/optimized/dsyrk_thread_LN.c.ll
 ; openblas/optimized/dsyrk_thread_LT.c.ll
 ; openblas/optimized/dsyrk_thread_UN.c.ll
@@ -75,7 +74,6 @@
 ; openjdk/optimized/awt_Mlib.ll
 ; openssl/optimized/libcrypto-lib-bio_print.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
-; osqp/optimized/timing_linux.c.ll
 ; php/optimized/http_fopen_wrapper.ll
 ; php/optimized/random.ll
 ; php/optimized/randomizer.ll

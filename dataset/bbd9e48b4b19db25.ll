@@ -1,5 +1,5 @@
 
-; 79 occurrences:
+; 84 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; bullet3/optimized/btGjkPairDetector.ll
@@ -55,9 +55,7 @@
 ; mitsuba3/optimized/struct.cpp.ll
 ; msdfgen/optimized/sdf-error-estimation.cpp.ll
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/subnode.ll
-; openssl/optimized/libtestutil-lib-tests.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; postgres/optimized/selfuncs.ll
@@ -78,12 +76,19 @@
 ; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/sat_lookahead.cpp.ll
 ; z3/optimized/smt_quick_checker.cpp.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/BitMatrixIO.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

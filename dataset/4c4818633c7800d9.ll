@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 24 occurrences:
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
 ; actix-rs/optimized/3u1jix79tu9frq3m.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
@@ -18,6 +18,12 @@
 ; rust-analyzer-rs/optimized/2ydioyxkoxez3z9r.ll
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -34,7 +40,7 @@ entry:
 ; openjdk/optimized/zObjArrayAllocator.ll
 ; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 7
   %2 = and i64 %1, 56
@@ -80,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0) #0 {
+define i1 @func0000000000000068(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 7
   %2 = and i64 %1, 7
@@ -91,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = add nuw i64 %0, 3
   %2 = and i64 %1, -4

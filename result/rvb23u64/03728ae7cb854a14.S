@@ -1,4 +1,4 @@
-func0000000000000861:                   # @func0000000000000861
+func00000000000030c1:                   # @func00000000000030c1
 	addi	a3, a2, 8
 	czero.eqz	a2, a3, a2
 	sh3add	a1, a1, a2

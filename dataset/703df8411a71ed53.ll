@@ -1,7 +1,10 @@
 
-; 22 occurrences:
+; 26 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
@@ -22,19 +25,23 @@
 ; rocksdb/optimized/xxhash.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000048(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %1
+  %4 = mul nuw i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
-; 190 occurrences:
+; 193 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/mpdecimal.ll
@@ -228,10 +235,10 @@ entry:
 define i64 @func000000000000004a(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %1
+  %4 = mul nuw i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
-  %7 = add nuw i64 %6, %0
+  %7 = add nuw i64 %0, %6
   ret i64 %7
 }
 
@@ -409,10 +416,10 @@ entry:
 define i64 @func000000000000006c(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
+  %4 = mul nuw nsw i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw nsw i128 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -590,10 +597,10 @@ entry:
 define i64 @func00000000000000ec(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
+  %4 = mul nuw nsw i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw nsw i128 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -603,10 +610,10 @@ entry:
 define i64 @func0000000000000060(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
+  %4 = mul nuw nsw i128 %1, %3
   %5 = lshr i128 %4, 61
   %6 = trunc i128 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -616,10 +623,10 @@ entry:
 define i64 @func0000000000000008(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul i128 %3, %1
+  %4 = mul i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

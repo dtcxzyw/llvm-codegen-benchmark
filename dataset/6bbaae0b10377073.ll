@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; gromacs/optimized/anadih.cpp.ll
 ; gromacs/optimized/gmx_gyrate.cpp.ll
 ; libquic/optimized/url_parse.cc.ll
@@ -9,6 +9,7 @@
 ; mitsuba3/optimized/rastack.cpp.ll
 ; opencv/optimized/boostdesc.cpp.ll
 ; openmpi/optimized/btl_sm_component.ll
+; openmpi/optimized/topo_treematch_dist_graph_create.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/execute.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
@@ -23,7 +24,7 @@ entry:
   ret i32 %3
 }
 
-; 53 occurrences:
+; 48 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -49,10 +50,7 @@ entry:
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/skbuff.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/CombinerHelperVectorOps.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
-; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
@@ -73,8 +71,6 @@ entry:
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-c15ch.c.ll
-; wireshark/optimized/packet-ethertype.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; z3/optimized/sls_engine.cpp.ll
 ; Function Attrs: nounwind
@@ -85,7 +81,7 @@ entry:
   ret i32 %3
 }
 
-; 44 occurrences:
+; 45 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaResub.c.ll
@@ -105,6 +101,7 @@ entry:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; nuttx/optimized/fs_dir.c.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
@@ -146,6 +143,20 @@ define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, %0
   %3 = select i1 %2, i32 2147483647, i32 %0
+  ret i32 %3
+}
+
+; 5 occurrences:
+; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; llvm/optimized/CombinerHelperVectorOps.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; wireshark/optimized/packet-c15ch.c.ll
+; wireshark/optimized/packet-ethertype.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, %0
+  %3 = select i1 %2, i32 0, i32 %0
   ret i32 %3
 }
 

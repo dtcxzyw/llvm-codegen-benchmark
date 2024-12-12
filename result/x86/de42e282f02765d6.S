@@ -1,12 +1,19 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000033:                   # @func0000000000000033
 	leaq	16(%rdx,%rsi), %rcx
 	leaq	511(%rdx), %rax
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000003e:                   # @func000000000000003e
 	leaq	32(%rdx,%rsi), %rcx
 	leaq	64(%rdx), %rax
+	testb	$1, %dil
+	cmovneq	%rcx, %rax
+	retq
+func000000000000003f:                   # @func000000000000003f
+	shlq	$4, %rsi
+	leaq	16(%rdx,%rsi), %rcx
+	leaq	32(%rdx), %rax
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
@@ -16,7 +23,7 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	leaq	46(%rdx,%rsi), %rcx
 	leaq	72(%rdx), %rax
 	testb	$1, %dil

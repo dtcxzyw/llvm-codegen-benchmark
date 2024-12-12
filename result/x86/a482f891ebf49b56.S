@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	leal	1023(%rdi), %eax
 	testl	%edi, %edi
 	cmovnsl	%edi, %eax
@@ -8,7 +8,7 @@ func0000000000000014:                   # @func0000000000000014
 	cmpl	$-1023, %eax                    # imm = 0xFC01
 	setb	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movslq	%edi, %rax
 	imulq	$1431655766, %rax, %rcx         # imm = 0x55555556
 	movq	%rcx, %rdx

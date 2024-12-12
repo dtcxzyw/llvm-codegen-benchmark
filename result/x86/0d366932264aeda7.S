@@ -8,14 +8,3 @@ func0000000000000014:                   # @func0000000000000014
 	movl	$2, %eax
 	cmovel	%ecx, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	xorl	%eax, %eax
-	cmpl	$8, %edx
-	setae	%al
-	testb	$1, %sil
-	movl	$2, %ecx
-	cmovel	%eax, %ecx
-	testb	$1, %dil
-	movl	$3, %eax
-	cmovel	%ecx, %eax
-	retq

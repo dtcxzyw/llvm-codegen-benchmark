@@ -1,8 +1,8 @@
 func0000000000000019:                   # @func0000000000000019
-	csrwi	vxrm, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vaaddu.vv	v10, v10, v12
-	vmul.vv	v8, v10, v8
+	vadd.vv	v10, v10, v12
+	vsrl.vi	v10, v10, 3
+	vmul.vv	v8, v8, v10
 	ret
 func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 8, e32, m2, ta, ma

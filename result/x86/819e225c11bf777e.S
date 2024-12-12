@@ -40,10 +40,15 @@ func0000000000000011:                   # @func0000000000000011
 	cmovaeq	%rsi, %rdi
 	leaq	-1(%rdi), %rax
 	retq
+func0000000000000051:                   # @func0000000000000051
+	cmpq	$1023, %rdx                     # imm = 0x3FF
+	cmovaeq	%rsi, %rdi
+	leaq	-8(%rdi), %rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	testq	%rdx, %rdx
 	cmovneq	%rsi, %rdi
-	leaq	24(%rdi), %rax
+	leaq	1(%rdi), %rax
 	retq
 func0000000000000033:                   # @func0000000000000033
 	testq	%rdx, %rdx
@@ -55,7 +60,7 @@ func0000000000000019:                   # @func0000000000000019
 	cmovgeq	%rsi, %rdi
 	leaq	32(%rdi), %rax
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	cmpq	$40, %rdx
 	cmovaeq	%rsi, %rdi
 	leaq	32(%rdi), %rax

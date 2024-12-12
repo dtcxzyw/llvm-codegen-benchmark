@@ -7,7 +7,7 @@
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %0, -1

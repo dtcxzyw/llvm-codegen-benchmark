@@ -1,5 +1,5 @@
 
-; 203 occurrences:
+; 244 occurrences:
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
 ; actix-rs/optimized/27zn2x05lna4a2z7.ll
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
@@ -9,14 +9,13 @@
 ; actix-rs/optimized/48duj8tg7v09rmpe.ll
 ; actix-rs/optimized/4jlfyqkak9x9x2yv.ll
 ; actix-rs/optimized/5dylu5g0crehei80.ll
-; clap-rs/optimized/48fdpr2dy8inq5cq.ll
+; boost/optimized/options_description.ll
 ; cmake/optimized/json_value.cpp.ll
 ; coreutils-rs/optimized/10w4sgrrvnzii9mc.ll
 ; coreutils-rs/optimized/1hfndwarkzjc08wu.ll
 ; coreutils-rs/optimized/3x959pa9na58uqov.ll
 ; coreutils-rs/optimized/45371cbry3cnr73y.ll
 ; coreutils-rs/optimized/4cobss4bncibjvnb.ll
-; coreutils-rs/optimized/4rjs632i9cta2yqf.ll
 ; coreutils-rs/optimized/kym4n2c7483sba2.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/1hj0ksbtyfwxzh2n.ll
@@ -51,6 +50,7 @@
 ; influxdb-rs/optimized/380gcqze52ow6205.ll
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
 ; influxdb-rs/optimized/tvx8frl9fecnofk.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/CommentLexer.cpp.ll
@@ -58,6 +58,7 @@
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/Path.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
+; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/X86ATTInstPrinter.cpp.ll
 ; llvm/optimized/X86IntelInstPrinter.cpp.ll
 ; meilisearch-rs/optimized/2eqafq69fd46y14a.ll
@@ -163,6 +164,7 @@
 ; tree-sitter-rs/optimized/1ntgh1gib5lvqmev.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
 ; tree-sitter-rs/optimized/3cmrhtrctm3afl2k.ll
+; turborepo-rs/optimized/073xkjbb0bs34qvdns32a3q3u.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
@@ -174,9 +176,7 @@
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
-; wasmtime-rs/optimized/1aegspwwbjc82p4w.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
-; wasmtime-rs/optimized/1d0hmxdweaxxi3oz.ll
 ; wasmtime-rs/optimized/1f0cdl9sv7ergjr2.ll
 ; wasmtime-rs/optimized/1qcvhhk6ae10xu9.ll
 ; wasmtime-rs/optimized/1w1k60wqbcyugj5y.ll
@@ -185,17 +185,13 @@
 ; wasmtime-rs/optimized/2kevz0g5e1myujwd.ll
 ; wasmtime-rs/optimized/2mw8cxzcp8dley0k.ll
 ; wasmtime-rs/optimized/2x1mxlm9f496za8a.ll
-; wasmtime-rs/optimized/36yjtqj8atprwkc8.ll
 ; wasmtime-rs/optimized/377rrvl9zeztt32x.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; wasmtime-rs/optimized/3xoiqyy2a9jbg7ae.ll
-; wasmtime-rs/optimized/3yr40www2jy0a6jn.ll
-; wasmtime-rs/optimized/49putx1a0760eu8s.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
-; wasmtime-rs/optimized/o2h6j06mg3v3bs7.ll
 ; wasmtime-rs/optimized/o5hc9u3mlvace0j.ll
 ; yosys/optimized/dft_tag.ll
 ; yosys/optimized/peepopt.ll
@@ -203,6 +199,51 @@
 ; yosys/optimized/sim.ll
 ; yosys/optimized/test_pmgen.ll
 ; yosys/optimized/xilinx_dsp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0oq3e593i742h6k86do1vh2be.ll
+; zed-rs/optimized/0y9krt842xx0mrknznnvwo9sk.ll
+; zed-rs/optimized/32kqcem53id37kgf9pak7q7x7.ll
+; zed-rs/optimized/3ovedgaw1yidfseciw93ubpv7.ll
+; zed-rs/optimized/3r2dokv2dl5k20lnwkjewqs8s.ll
+; zed-rs/optimized/4h176o45n3uxzch53hiway9mu.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/4z6vlo4eo03eve34h1wxhlae7.ll
+; zed-rs/optimized/50dwecd0b28psmgc3ec6s08qq.ll
+; zed-rs/optimized/59wnsznecs6we2kopjyje48jo.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/6dn0ge6k6n2ik0ce7lwpgjvce.ll
+; zed-rs/optimized/71cpo5c8gfob1nb30s7nlggwn.ll
+; zed-rs/optimized/78nr3ruxuq6h5rfkaolnxa52k.ll
+; zed-rs/optimized/7r4ka3qnhzi2ha4uh17j4gbwu.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/8r4rexl2hxk4mf5ojed4sh4ix.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/8xwgf3aybfacqh70ylmbrh1fx.ll
+; zed-rs/optimized/9cizhrhs33hhpljcbaafslqcf.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/9ph9ik6f4o8cna26bqiztqhx1.ll
+; zed-rs/optimized/9sysltstjhp0j3770z48leqk1.ll
+; zed-rs/optimized/adlc6qfcwjhvmcaovuwfkwg5s.ll
+; zed-rs/optimized/arqdovuoq7gqav26d45ahunbs.ll
+; zed-rs/optimized/boi9y0usg3zgxloz4mhfx1f5f.ll
+; zed-rs/optimized/by8gv54o76v0inyrwjxd65d9p.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/czpyda74ta6m4oig1hr6iiwt6.ll
+; zed-rs/optimized/dd8ztmg64g4x9ypkzwkofy6vi.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zed-rs/optimized/edm0tyzllcff5rtqrop0amdwq.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
+; zed-rs/optimized/eo18zatc0xw14x5dtbryzn4x9.ll
+; zed-rs/optimized/epsv5gdpg9wii0jlawu81wh31.ll
+; zed-rs/optimized/esrqbc7sctb290fsujuxslk6b.ll
 ; Function Attrs: nounwind
 define { ptr, ptr } @func0000000000000000(i1 %0, ptr %1) #0 {
 entry:

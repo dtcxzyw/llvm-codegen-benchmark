@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/ASTWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000128(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -18,7 +18,7 @@ entry:
 ; llvm/optimized/SampleProfile.cpp.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -32,7 +32,7 @@ entry:
 ; llvm/optimized/CVSymbolVisitor.cpp.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -45,7 +45,7 @@ entry:
 ; gromacs/optimized/genion.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/skbuff.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -81,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fa(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001ea(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64

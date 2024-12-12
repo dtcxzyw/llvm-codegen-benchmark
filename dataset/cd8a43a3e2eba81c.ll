@@ -1,12 +1,13 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; lua/optimized/lvm.ll
 ; luau/optimized/Conformance.test.cpp.ll
 ; luau/optimized/IrLowering.test.cpp.ll
 ; openjdk/optimized/vectorization.ll
+; zed-rs/optimized/7nycmhgf1nsxro2z9yfrppi5n.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000022(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000042(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 11
   %3 = icmp eq i8 %0, 11
@@ -18,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-zbee-nwk-gp.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000182(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000302(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 2
   %3 = icmp eq i8 %0, 0
@@ -30,10 +31,10 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000110(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000630(i8 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %1, 66
-  %3 = icmp ugt i8 %0, 66
+  %2 = icmp samesign ugt i8 %1, 66
+  %3 = icmp samesign ugt i8 %0, 66
   %4 = or i1 %3, %2
   %5 = select i1 %4, i8 67, i8 65
   ret i8 %5

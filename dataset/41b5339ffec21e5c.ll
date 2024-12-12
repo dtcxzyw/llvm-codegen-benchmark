@@ -146,10 +146,10 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000408(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 30288
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = add i32 %1, -44032
   %6 = icmp ult i32 %5, 11172
   %7 = or i1 %6, %4
@@ -325,10 +325,10 @@ entry:
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000228(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000448(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 30288
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = add nsw i32 %1, -44032
   %6 = icmp ult i32 %5, 11172
   %7 = or i1 %6, %4
@@ -339,7 +339,7 @@ entry:
 ; cmake/optimized/cmPolicies.cxx.ll
 ; darktable/optimized/collect.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = and i1 %3, %0
@@ -353,10 +353,10 @@ entry:
 ; lief/optimized/psa_crypto_slot_management.c.ll
 ; oiio/optimized/RunLengthEncoding.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000608(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c08(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = add i32 %1, -1
   %6 = icmp ult i32 %5, 1073741823
   %7 = or i1 %6, %4

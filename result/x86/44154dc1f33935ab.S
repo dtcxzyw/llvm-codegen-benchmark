@@ -1,18 +1,18 @@
-func00000000000003f4:                   # @func00000000000003f4
+func00000000000007e4:                   # @func00000000000007e4
 	andl	$31, %edx
-	leal	258(%rdx,%rsi), %eax
-	cmpl	%edi, %eax
-	seta	%al
+	leal	258(%rsi,%rdx), %eax
+	cmpl	%eax, %edi
+	setb	%al
 	retq
-func00000000000003f1:                   # @func00000000000003f1
+func00000000000007e1:                   # @func00000000000007e1
 	andl	$31, %edx
-	leal	258(%rdx,%rsi), %eax
-	cmpl	%edi, %eax
+	leal	258(%rsi,%rdx), %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func00000000000003f6:                   # @func00000000000003f6
+func00000000000007e6:                   # @func00000000000007e6
 	andl	$31, %edx
-	leal	258(%rdx,%rsi), %eax
-	cmpl	%edi, %eax
-	setg	%al
+	leal	258(%rsi,%rdx), %eax
+	cmpl	%eax, %edi
+	setl	%al
 	retq

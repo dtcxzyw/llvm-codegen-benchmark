@@ -1,10 +1,12 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; coreutils-rs/optimized/29ashxexz0f01o0.ll
 ; coreutils-rs/optimized/x8pbloshhgr8d49.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; re2/optimized/dfa.cc.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i8 %1) #0 {
 entry:

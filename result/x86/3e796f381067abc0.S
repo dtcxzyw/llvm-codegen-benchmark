@@ -1,28 +1,24 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	movzbl	%sil, %eax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func000000000000003c:                   # @func000000000000003c
 	movzbl	%sil, %eax
 	leaq	142925(%rax,%rdi), %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	movzbl	%sil, %eax
 	leaq	1068(%rdi,%rax,4), %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	movzbl	%sil, %eax
-	leaq	112(%rdi,%rax,8), %rax
+	addq	%rdi, %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
-	movzbl	%sil, %eax
-	leaq	1060(%rdi,%rax,4), %rax
-	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	movzbl	%sil, %eax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000058:                   # @func0000000000000058
+func000000000000005c:                   # @func000000000000005c
 	movzbl	%sil, %eax
 	leaq	(%rax,%rax,2), %rax
 	leaq	-4(%rdi,%rax,4), %rax
@@ -32,7 +28,7 @@ func0000000000000010:                   # @func0000000000000010
 	shll	$4, %eax
 	leaq	-288(%rax,%rdi), %rax
 	retq
-func000000000000005a:                   # @func000000000000005a
+func000000000000005e:                   # @func000000000000005e
 	movzbl	%sil, %eax
 	leaq	25(%rax,%rdi), %rax
 	retq

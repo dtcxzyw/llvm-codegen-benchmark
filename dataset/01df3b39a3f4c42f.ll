@@ -19,13 +19,14 @@ entry:
   ret i32 %4
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; grpc/optimized/chttp2_transport.cc.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll
 ; llvm/optimized/BreakableToken.cpp.ll

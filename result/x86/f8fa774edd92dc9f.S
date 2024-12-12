@@ -7,9 +7,9 @@ func0000000000000001:                   # @func0000000000000001
 	cmovnel	%edi, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	testb	$1, %sil
+	testl	$16384, %edx                    # imm = 0x4000
 	movl	$321, %eax                      # imm = 0x141
 	cmovel	%edi, %eax
-	testl	$16384, %edx                    # imm = 0x4000
+	testb	$1, %sil
 	cmovel	%edi, %eax
 	retq

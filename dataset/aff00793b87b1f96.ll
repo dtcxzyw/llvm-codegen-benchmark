@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = and i32 %3, 65535
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/grep.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = and i32 %3, 127
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = and i32 %3, 255
@@ -42,7 +42,7 @@ entry:
 ; luajit/optimized/lj_strscan_dyn.ll
 ; opencv/optimized/contours.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 63
   %4 = and i32 %3, 63

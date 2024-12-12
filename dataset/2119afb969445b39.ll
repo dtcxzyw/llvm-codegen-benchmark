@@ -57,6 +57,7 @@
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/get_clusters.ll
 ; box2d/optimized/b2_body.cpp.ll
 ; box2d/optimized/b2_circle_shape.cpp.ll
 ; box2d/optimized/b2_collide_circle.cpp.ll
@@ -402,11 +403,9 @@
 ; gromacs/optimized/rf_util.cpp.ll
 ; gromacs/optimized/select.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; gromacs/optimized/shellfc.cpp.ll
 ; gromacs/optimized/slaed6.cpp.ll
-; gromacs/optimized/slarfg.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
@@ -417,7 +416,6 @@
 ; gromacs/optimized/sstein.cpp.ll
 ; gromacs/optimized/ssyevr.cpp.ll
 ; gromacs/optimized/strsm.cpp.ll
-; gromacs/optimized/strti2.cpp.ll
 ; gromacs/optimized/swapcoords.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
 ; gromacs/optimized/toppush.cpp.ll
@@ -451,6 +449,7 @@
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; luau/optimized/Conformance.test.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
@@ -476,7 +475,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
@@ -585,7 +583,6 @@
 ; mitsuba3/optimized/path.cpp.ll
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
@@ -1118,6 +1115,9 @@
 ; xgboost/optimized/elementwise_metric.cc.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; xgboost/optimized/regression_obj.cc.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:

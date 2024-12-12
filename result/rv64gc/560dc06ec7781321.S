@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sext.w	a0, a0
 	srli	a2, a2, 3
 	li	a3, 31
@@ -7,7 +7,7 @@ func0000000000000016:                   # @func0000000000000016
 	addw	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	sext.w	a0, a0
 	srliw	a2, a2, 10
 	slli	a2, a2, 7
@@ -44,34 +44,41 @@ func0000000000000006:                   # @func0000000000000006
 	addw	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sext.w	a0, a0
 	slli	a2, a2, 40
 	srli	a2, a2, 56
 	addw	a1, a1, a2
 	slt	a0, a1, a0
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	sext.w	a0, a0
 	slli	a2, a2, 54
 	srli	a2, a2, 59
 	addw	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	sext.w	a0, a0
 	slli	a2, a2, 54
 	srli	a2, a2, 59
 	addw	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sext.w	a0, a0
 	slli	a2, a2, 33
 	srli	a2, a2, 49
 	addw	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
+	ret
+func0000000000000074:                   # @func0000000000000074
+	sext.w	a0, a0
+	slli	a2, a2, 42
+	srli	a2, a2, 63
+	addw	a1, a1, a2
+	sltu	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a0, a0
@@ -95,4 +102,11 @@ func0000000000000009:                   # @func0000000000000009
 	addw	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
+	ret
+func0000000000000078:                   # @func0000000000000078
+	sext.w	a0, a0
+	slli	a2, a2, 40
+	srli	a2, a2, 56
+	addw	a1, a1, a2
+	sltu	a0, a1, a0
 	ret

@@ -27,7 +27,17 @@ func0000000000000006:                   # @func0000000000000006
 	addiw	a1, a1, -1
 	xor	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000018:                   # @func0000000000000018
+	andi	a0, a0, 1
+	czero.nez	a2, a2, a0
+	czero.eqz	a0, a1, a0
+	or	a0, a0, a2
+	sext.w	a0, a0
+	sltiu	a0, a0, 10
+	xori	a0, a0, 1
+	addi	a0, a0, 1
+	ret
+func0000000000000014:                   # @func0000000000000014
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

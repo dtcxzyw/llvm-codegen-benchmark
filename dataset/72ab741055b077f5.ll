@@ -1,6 +1,5 @@
 
-; 11 occurrences:
-; git/optimized/diffcore-rename.ll
+; 10 occurrences:
 ; icu/optimized/ushape.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
@@ -15,6 +14,17 @@
 define i1 @func0000000000000001(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, -1
+  %4 = select i1 %1, i1 %3, i1 false
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; git/optimized/diffcore-rename.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i1 %0, i1 %1, i16 %2) #0 {
+entry:
+  %3 = icmp slt i16 %2, -28672
   %4 = select i1 %1, i1 %3, i1 false
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
@@ -49,6 +59,18 @@ entry:
 define i1 @func000000000000000c(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
+  %4 = select i1 %1, i1 %3, i1 false
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; freetype/optimized/cff.c.ll
+; freetype/optimized/truetype.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i1 %0, i1 %1, i16 %2) #0 {
+entry:
+  %3 = icmp sgt i16 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5

@@ -1,7 +1,9 @@
 
-; 30 occurrences:
+; 33 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
+; boost/optimized/named_scope_format_parser.ll
 ; brotli/optimized/entropy_encode.c.ll
+; git/optimized/apply.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; linux/optimized/netlabel_kapi.ll
 ; linux/optimized/tcp_input.ll
@@ -16,6 +18,7 @@
 ; openmpi/optimized/mca_base_var_enum.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; redis/optimized/db.ll
+; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/fall_reciprocal.ll
 ; wireshark/optimized/packet-cdma2k.c.ll
 ; yosys/optimized/eval.ll

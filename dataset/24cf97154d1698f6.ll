@@ -15,7 +15,7 @@ entry:
   ret i32 %3
 }
 
-; 29 occurrences:
+; 23 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcGen.c.ll
@@ -37,21 +37,15 @@ entry:
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/wlcBlast.c.ll
-; arrow/optimized/strtod.cc.ll
-; double_conversion/optimized/strtod.cc.ll
 ; freetype/optimized/psnames.c.ll
-; icu/optimized/double-conversion-strtod.ll
-; openusd/optimized/json.cpp.ll
-; openusd/optimized/strtod.cc.ll
-; php/optimized/strtod.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000054(i32 %0) #0 {
+define i32 @func00000000000000a4(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, 64
-  %2 = icmp ult i32 %1, -1073
-  %3 = add nsw i32 %0, 1138
-  %4 = select i1 %2, i32 0, i32 %3
+  %1 = add nsw i32 %0, 99
+  %2 = icmp ult i32 %1, 15
+  %3 = add nsw i32 %0, 100
+  %4 = select i1 %2, i32 16, i32 %3
   ret i32 %4
 }
 
@@ -79,7 +73,7 @@ entry:
 ; abc/optimized/pdrIncr.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0) #0 {
+define i32 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -2
   %2 = icmp ult i32 %1, 15
@@ -91,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0) #0 {
+define i32 @func00000000000000a1(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 1
   %2 = add nsw i32 %0, -2

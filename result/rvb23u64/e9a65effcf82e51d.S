@@ -26,17 +26,3 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a0, a0, -1
 	snez	a0, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
-	andi	a0, a0, 1
-	srliw	a2, a2, 3
-	czero.nez	a1, a1, a0
-	czero.eqz	a0, a2, a0
-	or	a0, a0, a1
-	sext.w	a0, a0
-	sltiu	a0, a0, 256
-	ret
-func0000000000000006:                   # @func0000000000000006
-	sext.w	a1, a1
-	slti	a1, a1, 0
-	andn	a0, a1, a0
-	ret

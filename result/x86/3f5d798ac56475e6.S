@@ -11,6 +11,20 @@ func0000000000000006:                   # @func0000000000000006
 	cmovnel	%esi, %eax
 	shrl	$31, %eax
 	retq
+func00000000000000a8:                   # @func00000000000000a8
+	addl	$-3, %edx
+	testb	$1, %dil
+	cmovnel	%esi, %edx
+	cmpl	$10000, %edx                    # imm = 0x2710
+	setae	%al
+	retq
+func00000000000000b8:                   # @func00000000000000b8
+	addl	$-3, %edx
+	testb	$1, %dil
+	cmovnel	%esi, %edx
+	cmpl	$100, %edx
+	setae	%al
+	retq
 func0000000000000001:                   # @func0000000000000001
 	incl	%edx
 	testb	$1, %dil

@@ -1,40 +1,44 @@
-func0000000000000141:                   // @func0000000000000141
+func0000000000000481:                   // @func0000000000000481
 // %bb.0:                               // %entry
-	movi	v3.16b, #32
-	movi	v4.16b, #26
-	orr	v3.16b, v1.16b, v3.16b
-	cmhi	v2.16b, v4.16b, v2.16b
-	bit	v1.16b, v3.16b, v2.16b
-	cmeq	v0.16b, v1.16b, v0.16b
+	and	w8, w2, #0xff
+	orr	w9, w1, #0x20
+	cmp	w8, #26
+	and	w8, w0, #0xff
+	csel	w9, w9, w1, lo
+	cmp	w8, w9, uxtb
+	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000014a:                   // @func000000000000014a
+func000000000000048a:                   // @func000000000000048a
 // %bb.0:                               // %entry
-	movi	v3.16b, #32
-	movi	v4.16b, #26
-	orr	v3.16b, v1.16b, v3.16b
-	cmhi	v2.16b, v4.16b, v2.16b
-	bit	v1.16b, v3.16b, v2.16b
-	cmgt	v0.16b, v0.16b, v1.16b
+	and	w8, w2, #0xff
+	sxtb	w9, w0
+	orr	w10, w1, #0x20
+	cmp	w8, #26
+	csel	w8, w10, w1, lo
+	cmp	w9, w8, sxtb
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000144:                   // @func0000000000000144
+func0000000000000484:                   // @func0000000000000484
 // %bb.0:                               // %entry
-	movi	v3.16b, #32
-	movi	v4.16b, #26
-	orr	v3.16b, v1.16b, v3.16b
-	cmhi	v2.16b, v4.16b, v2.16b
-	bit	v1.16b, v3.16b, v2.16b
-	cmhi	v0.16b, v1.16b, v0.16b
+	and	w8, w2, #0xff
+	orr	w9, w1, #0x20
+	cmp	w8, #26
+	and	w8, w0, #0xff
+	csel	w9, w9, w1, lo
+	cmp	w8, w9, uxtb
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000041:                   // @func0000000000000041
+func0000000000000081:                   // @func0000000000000081
 // %bb.0:                               // %entry
-	movi	v3.16b, #32
-	movi	v4.16b, #26
-	orr	v3.16b, v1.16b, v3.16b
-	cmhi	v2.16b, v4.16b, v2.16b
-	bit	v1.16b, v3.16b, v2.16b
-	cmeq	v0.16b, v1.16b, v0.16b
+	and	w8, w2, #0xff
+	orr	w9, w1, #0x20
+	cmp	w8, #26
+	and	w8, w0, #0xff
+	csel	w9, w9, w1, lo
+	cmp	w8, w9, uxtb
+	cset	w0, eq
 	ret
                                         // -- End function

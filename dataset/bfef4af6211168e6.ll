@@ -27,6 +27,33 @@ entry:
   ret i1 %5
 }
 
+; 5 occurrences:
+; abc/optimized/sbdCut.c.ll
+; arrow/optimized/compare_internal.cc.ll
+; icu/optimized/ucnv_ext.ll
+; postgres/optimized/tsvector_op.ll
+; wireshark/optimized/packet-dvb-s2-bb.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 28
+  %4 = icmp samesign ult i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; abc/optimized/sbdCut.c.ll
+; abc/optimized/sfmDec.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 28
+  %4 = icmp samesign ugt i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; abc/optimized/llb1Hint.c.ll
 ; Function Attrs: nounwind
@@ -38,11 +65,8 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; git/optimized/convert.ll
-; icu/optimized/ucnv_ext.ll
-; postgres/optimized/tsvector_op.ll
-; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; z3/optimized/sat_gc.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
@@ -69,7 +93,7 @@ entry:
 ; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
 ; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 8
   %4 = icmp eq i32 %3, %1
@@ -80,7 +104,7 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 12
   %4 = icmp slt i32 %3, %1

@@ -13,7 +13,7 @@ func0000000000000000:                   # @func0000000000000000
 	vwaddu.wv	v8, v8, v10
 	ret
 func000000000000006f:                   # @func000000000000006f
-	li	a0, 18
+	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v12
 	vsetvli	zero, zero, e32, m1, ta, ma

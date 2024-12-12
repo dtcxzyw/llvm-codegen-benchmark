@@ -1,9 +1,9 @@
 func0000000000000010:                   # @func0000000000000010
 	xorl	%eax, %eax
-	cmpb	$45, %sil
+	cmpb	$46, %sil
 	sete	%al
-	subq	%rax, %rdi
-	leaq	1(%rdi), %rax
+	notq	%rax
+	addq	%rdi, %rax
 	retq
 func0000000000000065:                   # @func0000000000000065
 	xorl	%eax, %eax

@@ -1,5 +1,5 @@
 
-; 342 occurrences:
+; 347 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaKf.c.ll
@@ -7,6 +7,8 @@
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/saigSwitch.c.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_joint.cpp.ll
 ; box2d/optimized/b2_mouse_joint.cpp.ll
 ; box2d/optimized/b2_rope.cpp.ll
@@ -130,7 +132,6 @@
 ; gromacs/optimized/slaed6.cpp.ll
 ; gromacs/optimized/slarrbx.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
@@ -154,6 +155,7 @@
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_sdl_mouse.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/balltree.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -342,6 +344,9 @@
 ; xgboost/optimized/gbtree.cc.ll
 ; xgboost/optimized/quantile.cc.ll
 ; z3/optimized/dl_mk_simple_joins.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5lgahps99tv0rsaolw3x59ow2.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

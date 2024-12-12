@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; hermes/optimized/RegexParser.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000054(i32 %0, i16 %1) #0 {
+define i32 @func00000000000000b4(i32 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -65
-  %3 = icmp ult i16 %2, 6
+  %3 = icmp samesign ult i16 %2, 6
   %4 = add nsw i32 %0, -55
   %5 = select i1 %3, i32 %4, i32 undef
   ret i32 %5
@@ -17,7 +17,7 @@ entry:
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i16 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -6
   %3 = icmp ult i16 %2, 4
@@ -30,7 +30,7 @@ entry:
 ; icu/optimized/tzfmt.ll
 ; icu/optimized/zonemeta.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i16 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -48
   %3 = icmp ult i16 %2, 10

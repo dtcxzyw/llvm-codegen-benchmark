@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaStr.c.ll
@@ -8,7 +8,6 @@
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; libquic/optimized/a_utf8.c.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/intel_tcc.ll
 ; linux/optimized/slub.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
@@ -24,9 +23,9 @@
 define i64 @func0000000000000007(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4096
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -39,7 +38,6 @@ entry:
 ; linux/optimized/fault.ll
 ; linux/optimized/slub.ll
 ; llvm/optimized/ASTWriter.cpp.ll
-; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
@@ -49,13 +47,14 @@ entry:
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2147483648
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -70,9 +69,9 @@ entry:
 define i64 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1024
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -88,7 +87,20 @@ entry:
   %3 = and i32 %2, 7864320
   %4 = or i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
+; llvm/optimized/SemaAttr.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, -65536
+  %4 = or i32 %3, %1
+  %5 = zext i32 %4 to i64
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -100,7 +112,7 @@ entry:
   %3 = and i32 %2, 3968
   %4 = or disjoint i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -114,19 +126,7 @@ entry:
   %3 = and i32 %2, 7
   %4 = or i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = or i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/SemaAttr.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, -57
-  %4 = or i32 %3, %1
-  %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 

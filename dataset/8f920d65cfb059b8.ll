@@ -1,7 +1,6 @@
 
 ; 14 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
-; git/optimized/commit-graph.ll
 ; openjdk/optimized/arrayKlass.ll
 ; openjdk/optimized/instanceKlass.ll
 ; openjdk/optimized/objArrayKlass.ll
@@ -14,6 +13,7 @@
 ; wasmtime-rs/optimized/2kevz0g5e1myujwd.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
@@ -40,8 +40,7 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
-; hermes/optimized/Host.cpp.ll
+; 9 occurrences:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; libquic/optimized/persistent_memory_allocator.cc.ll
 ; llvm/optimized/IntegerLiteralSeparatorFixer.cpp.ll
@@ -51,7 +50,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-bio_print.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
 ; postgres/optimized/xlog.ll
-; qemu/optimized/block_file-posix.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -67,6 +65,17 @@ entry:
 define i32 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
+  %3 = select i1 %2, i64 %0, i64 %1
+  %4 = trunc nsw i64 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000029(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp sgt i64 %1, 127
   %3 = select i1 %2, i64 %0, i64 %1
   %4 = trunc nsw i64 %3 to i32
   ret i32 %4

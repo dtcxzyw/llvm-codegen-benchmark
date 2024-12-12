@@ -16,44 +16,44 @@ func0000000000000000:                   # @func0000000000000000
 	vpternlogd	$236, .LCPI0_4(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
 	retq
 .LCPI1_0:
-	.zero	16,191
+	.zero	16,216
 .LCPI1_1:
-	.zero	16,64
+	.zero	16,32
 .LCPI1_2:
-	.zero	16,128
+	.zero	16,7
 .LCPI1_3:
-	.zero	4,191
+	.zero	4,216
 .LCPI1_4:
-	.zero	4,64
+	.zero	4,32
 .LCPI1_5:
-	.zero	4,128
-func0000000000000002:                   # @func0000000000000002
+	.zero	4,7
+func0000000000000003:                   # @func0000000000000003
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k1
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm1, %xmm1
 	vpord	.LCPI1_4(%rip){1to4}, %xmm1, %xmm2
-	vmovdqu8	%xmm1, %xmm2 {%k1}
-	vpternlogd	$236, .LCPI1_5(%rip){1to4}, %xmm2, %xmm0 # xmm0 = (xmm0 & mem) | xmm2
+	vmovdqu8	%xmm2, %xmm1 {%k1}
+	vpternlogd	$236, .LCPI1_5(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
 	retq
 .LCPI2_0:
-	.zero	16,1
+	.zero	16,191
 .LCPI2_1:
-	.zero	16,2
+	.zero	16,64
 .LCPI2_2:
-	.zero	16,252
+	.zero	16,128
 .LCPI2_3:
-	.zero	4,1
+	.zero	4,191
 .LCPI2_4:
-	.zero	4,2
+	.zero	4,64
 .LCPI2_5:
-	.zero	4,252
-func0000000000000003:                   # @func0000000000000003
-	vpsllw	$7, %xmm1, %xmm1
-	vpmovb2m	%xmm1, %k1
-	vpandd	.LCPI2_3(%rip){1to4}, %xmm2, %xmm1
+	.zero	4,128
+func0000000000000002:                   # @func0000000000000002
+	vpsllw	$7, %xmm2, %xmm2
+	vpmovb2m	%xmm2, %k1
+	vpandd	.LCPI2_3(%rip){1to4}, %xmm1, %xmm1
 	vpord	.LCPI2_4(%rip){1to4}, %xmm1, %xmm2
-	vmovdqu8	%xmm2, %xmm1 {%k1}
-	vpternlogd	$236, .LCPI2_5(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
+	vmovdqu8	%xmm1, %xmm2 {%k1}
+	vpternlogd	$236, .LCPI2_5(%rip){1to4}, %xmm2, %xmm0 # xmm0 = (xmm0 & mem) | xmm2
 	retq
 .LCPI3_0:
 	.zero	16,7

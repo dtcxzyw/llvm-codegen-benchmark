@@ -92,7 +92,7 @@
 ; redis/optimized/t_set.ll
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
   %3 = icmp eq i32 %2, 0
@@ -149,7 +149,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %3 = icmp ne i32 %2, 0
@@ -158,14 +158,15 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/area.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/lbr.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/regexec.ll
 ; velox/optimized/Expr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i32 %1) #0 {
+define i1 @func000000000000014c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0
@@ -174,7 +175,7 @@ entry:
   ret i1 %5
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; git/optimized/add-interactive.ll
 ; libquic/optimized/cfb.c.ll
@@ -196,8 +197,9 @@ entry:
 ; ruby/optimized/gc.ll
 ; ruby/optimized/sprintf.ll
 ; slurm/optimized/slurmdb_defs.ll
+; zed-rs/optimized/70ymcp0y6yqkpw3c0y4yzyh2l.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = icmp ne i32 %2, 0
@@ -206,7 +208,7 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; freetype/optimized/truetype.c.ll
 ; git/optimized/rebase.ll
@@ -222,11 +224,12 @@ entry:
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; ruby/optimized/compile.ll
+; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/EmptyImageLoader.cpp.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
   %3 = icmp eq i32 %2, 0
@@ -235,14 +238,15 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
 ; cpython/optimized/specialize.ll
-; grpc/optimized/ssl_transport_security.cc.ll
 ; linux/optimized/futex.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
+; postgres/optimized/deadlock.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8
   %3 = icmp eq i32 %2, 0
@@ -251,22 +255,19 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 6 occurrences:
 ; clamav/optimized/htmlnorm.c.ll
 ; eastl/optimized/eathread.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; gromacs/optimized/tng_io.c.ll
-; linux/optimized/drm_vblank.ll
-; llvm/optimized/CGClass.cpp.ll
-; llvm/optimized/CGVTables.cpp.ll
-; ncnn/optimized/cpu.cpp.ll
-; quickjs/optimized/quickjs.ll
+; qemu/optimized/accel_tcg_cputlb.c.ll
+; qemu/optimized/accel_tcg_user-exec.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000028c(i64 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1
+  %2 = and i32 %1, 65536
   %3 = icmp ne i32 %2, 0
-  %4 = icmp ult i64 %0, 1024
+  %4 = icmp samesign ult i64 %0, -8
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
@@ -277,7 +278,7 @@ entry:
 ; linux/optimized/dquot.ll
 ; redis/optimized/config.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 512
   %3 = icmp eq i32 %2, 0
@@ -293,7 +294,7 @@ entry:
 ; linux/optimized/trace_probe.ll
 ; slurm/optimized/gres.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8
   %3 = icmp ne i32 %2, 0
@@ -309,7 +310,7 @@ entry:
 ; postgres/optimized/nodeWindowAgg.ll
 ; redis/optimized/config.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %3 = icmp ne i32 %2, 0
@@ -337,23 +338,11 @@ entry:
 ; velox/optimized/tz.cpp.ll
 ; xgboost/optimized/context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 61440
   %3 = icmp eq i32 %2, 40960
   %4 = icmp sgt i64 %0, 0
-  %5 = select i1 %3, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; hdf5/optimized/H5Oalloc.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 2
-  %3 = icmp eq i32 %2, 0
-  %4 = icmp ugt i64 %0, 65535
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
@@ -364,7 +353,7 @@ entry:
 ; redis/optimized/t_string.ll
 ; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = icmp eq i32 %2, 0
@@ -373,14 +362,42 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; llvm/optimized/SLPVectorizer.cpp.ll
+; 5 occurrences:
+; linux/optimized/drm_vblank.ll
+; llvm/optimized/CGClass.cpp.ll
+; llvm/optimized/CGVTables.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
+; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 134217727
-  %3 = icmp ugt i32 %2, 2
-  %4 = icmp eq i64 %0, 0
+  %2 = and i32 %1, 32
+  %3 = icmp ne i32 %2, 0
+  %4 = icmp ult i64 %0, 32
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; grpc/optimized/ssl_transport_security.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000281(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, -5
+  %3 = icmp eq i32 %2, 0
+  %4 = icmp samesign ult i64 %0, 100
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; hwloc/optimized/topology-x86.ll
+; Function Attrs: nounwind
+define i1 @func000000000000030c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 1
+  %3 = icmp ne i32 %2, 0
+  %4 = icmp samesign ugt i64 %0, 1
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }

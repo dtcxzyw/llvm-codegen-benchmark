@@ -12,18 +12,28 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; flac/optimized/bitwriter.c.ll
-; jq/optimized/regexec.ll
 ; linux/optimized/bitset.ll
-; oniguruma/optimized/regexec.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 8
   %4 = select i1 %3, i32 %1, i32 -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
+  ret i32 %5
+}
+
+; 2 occurrences:
+; jq/optimized/regexec.ll
+; oniguruma/optimized/regexec.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 32
+  %4 = select i1 %3, i32 %1, i32 1
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -64,7 +74,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 32
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

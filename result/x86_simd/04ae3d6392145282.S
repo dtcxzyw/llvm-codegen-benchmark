@@ -89,8 +89,8 @@ func000000000000002a:                   # @func000000000000002a
 func0000000000000025:                   # @func0000000000000025
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
-	vcmpnleps	.LCPI7_0(%rip){1to16}, %zmm0, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
+	vcmpnleps	.LCPI7_0(%rip){1to16}, %zmm0, %k1
 	korw	%k1, %k0, %k1
 	vcmpnltps	%zmm1, %zmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0

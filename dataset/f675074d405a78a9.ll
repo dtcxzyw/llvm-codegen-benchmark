@@ -5,46 +5,41 @@
 define i1 @func0000000000000006(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = icmp sgt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp slt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 7 occurrences:
-; linux/optimized/intel_sseu.ll
-; linux/optimized/pci_link.ll
-; openssl/optimized/quic_multistream_test-bin-quic_multistream_test.ll
+; 2 occurrences:
 ; ropey-rs/optimized/21bl6c983bdkzf7g.ll
-; wireshark/optimized/packet-agentx.c.ll
-; wireshark/optimized/packet-gsm_rlcmac.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = icmp ugt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; git/optimized/add-patch.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = icmp ult i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; lief/optimized/ecp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000029(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -56,8 +51,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = icmp ult i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -70,29 +65,43 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = icmp eq i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/DWARFDebugLine.cpp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = icmp ne i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ne i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; linux/optimized/pci_link.ll
+; wireshark/optimized/packet-agentx.c.ll
+; wireshark/optimized/packet-gsm_rlcmac.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = icmp samesign ult i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }

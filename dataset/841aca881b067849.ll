@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; bdwgc/optimized/gc.c.ll
-; hyperscan/optimized/fdr_confirm_compile.cpp.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll

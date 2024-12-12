@@ -1,11 +1,14 @@
 
-; 35 occurrences:
+; 38 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; linux/optimized/eeepc-laptop.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
@@ -78,7 +81,7 @@ entry:
   ret i16 %2
 }
 
-; 27 occurrences:
+; 30 occurrences:
 ; cpython/optimized/_zoneinfo.ll
 ; libjpeg-turbo/optimized/jdsample.c.ll
 ; libpng/optimized/pngread.c.ll
@@ -106,6 +109,9 @@ entry:
 ; wireshark/optimized/packet-dmx.c.ll
 ; wireshark/optimized/packet-enttec.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i8 %0) #0 {
 entry:

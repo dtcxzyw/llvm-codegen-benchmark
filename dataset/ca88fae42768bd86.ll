@@ -1,5 +1,10 @@
 
-; 3 occurrences:
+; 8 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; openjdk/optimized/mlib_ImageConvKernelConvert.ll
 ; openspiel/optimized/cfr.cc.ll
 ; stat-rs/optimized/4d9pj14shc9lbmph.ll
@@ -9,6 +14,18 @@ entry:
   %3 = fcmp ogt double %2, 0.000000e+00
   %4 = select i1 %3, double %0, double %1
   %5 = fcmp ogt double %4, 0x41DFFFFFFFC00000
+  ret i1 %5
+}
+
+; 2 occurrences:
+; quantlib/optimized/bivariatenormaldistribution.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp olt double %2, 0.000000e+00
+  %4 = select i1 %3, double %0, double %1
+  %5 = fcmp ogt double %4, -1.000000e+02
   ret i1 %5
 }
 
@@ -36,14 +53,20 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; quantlib/optimized/bivariatenormaldistribution.ll
+; 7 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(double %0, double %1, double %2) #0 {
+define i1 @func000000000000002c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 0.000000e+00
   %4 = select i1 %3, double %0, double %1
-  %5 = fcmp ogt double %4, -1.000000e+02
+  %5 = fcmp oge double %4, 0.000000e+00
   ret i1 %5
 }
 
@@ -117,17 +140,6 @@ entry:
 }
 
 ; 1 occurrences:
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000043(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ogt double %2, 1.000000e-10
-  %4 = select i1 %3, double %0, double %1
-  %5 = fcmp ult double %4, 0.000000e+00
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; proj/optimized/geodesic.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000082(double %0, double %1, double %2) #0 {
@@ -179,17 +191,6 @@ entry:
   %3 = fcmp une double %2, 0.000000e+00
   %4 = select i1 %3, double %0, double %1
   %5 = fcmp olt double %4, 1.000000e-05
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/dgetsqrhrt.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000004a(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ogt double %2, 0.000000e+00
-  %4 = select i1 %3, double %0, double %1
-  %5 = fcmp ole double %4, 1.000000e+00
   ret i1 %5
 }
 

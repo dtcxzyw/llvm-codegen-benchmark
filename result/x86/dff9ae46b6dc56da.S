@@ -1,10 +1,10 @@
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	shrq	$2, %rsi
 	subl	%esi, %edi
 	cmpl	$1, %edi
 	sete	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	shrq	$2, %rsi
 	subl	%esi, %edi
 	cmpl	$1, %edi

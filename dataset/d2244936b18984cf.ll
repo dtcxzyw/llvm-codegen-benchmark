@@ -87,30 +87,21 @@ entry:
   ret ptr %5
 }
 
-; 34 occurrences:
-; bullet3/optimized/btDantzigLCP.ll
+; 24 occurrences:
 ; bullet3/optimized/btHingeConstraint.ll
 ; bullet3/optimized/btMultiBody.ll
-; git/optimized/pq.ll
 ; gromacs/optimized/gmx_filter.cpp.ll
 ; icu/optimized/uset.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_avx.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_avx512.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_fma.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/fast_marching.cpp.ll
 ; opencv/optimized/zmaxheap.cpp.ll
-; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/samplePriorityQueue.ll
 ; openmpi/optimized/common_ompio_file_read_all.ll
 ; openmpi/optimized/fcoll_base_sort.ll
@@ -119,7 +110,6 @@ entry:
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
 ; openmpi/optimized/io_ompio.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
-; sqlite/optimized/sqlite3.ll
 ; velox/optimized/UnsafeRowFast.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
@@ -129,6 +119,20 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr ptr, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 16
+  ret ptr %5
+}
+
+; 3 occurrences:
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 4
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i16, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 32
   ret ptr %5
 }
 
@@ -148,14 +152,13 @@ entry:
   ret ptr %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/dlarrbx.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/slarrbx.cpp.ll
 ; openblas/optimized/dlaeda.c.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlarrj.c.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
@@ -163,6 +166,18 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr float, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; openmpi/optimized/tm_bucket.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000022(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 1
+  %3 = add i32 %2, -2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i32, ptr %0, i64 %4
   ret ptr %5
 }
 

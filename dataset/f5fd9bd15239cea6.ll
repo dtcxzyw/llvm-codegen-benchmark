@@ -8,11 +8,11 @@
 ; openjdk/optimized/heapDumper.ll
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = udiv i64 %0, 10
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -31,33 +31,33 @@ entry:
 ; spike/optimized/elfloader.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = udiv i64 %0, 125000
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = udiv i64 %0, 9
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/devinet.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000019(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = udiv i64 %0, 1000
-  %4 = icmp uge i64 %3, %2
+  %4 = icmp samesign uge i64 %3, %2
   ret i1 %4
 }
 
@@ -77,11 +77,11 @@ entry:
 ; cpython/optimized/longobject.ll
 ; freetype/optimized/psaux.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = udiv i64 %0, 10
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 

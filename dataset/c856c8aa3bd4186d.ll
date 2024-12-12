@@ -24,7 +24,7 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/Attributor.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
@@ -36,7 +36,6 @@ entry:
 ; llvm/optimized/InferAddressSpaces.cpp.ll
 ; llvm/optimized/Instruction.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ToolChain.cpp.ll

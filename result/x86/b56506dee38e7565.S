@@ -23,3 +23,11 @@ func0000000000000060:                   # @func0000000000000060
 	orq	%rdx, %rax
 	decq	%rax
 	retq
+func000000000000004c:                   # @func000000000000004c
+	shlq	$32, %rdx
+	orq	%rdi, %rdx
+	movzbl	%sil, %ecx
+	orq	%rdx, %rcx
+	movabsq	$9223372036854775798, %rax      # imm = 0x7FFFFFFFFFFFFFF6
+	addq	%rcx, %rax
+	retq

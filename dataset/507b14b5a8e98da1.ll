@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -8,6 +8,7 @@
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; folly/optimized/Random.cpp.ll
 ; libquic/optimized/rand_util.cc.ll
@@ -21,7 +22,18 @@ define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_sprintf_builtin.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = urem i64 %1, %2
+  %4 = trunc nuw nsw i64 %3 to i32
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -33,7 +45,7 @@ define i32 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -53,7 +65,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

@@ -1,10 +1,9 @@
 
-%"struct.rocksdb::FdWithKeyRange.2500152" = type { %"struct.rocksdb::FileDescriptor.2500153", ptr, %"class.rocksdb::Slice.2500121", %"class.rocksdb::Slice.2500121" }
-%"struct.rocksdb::FileDescriptor.2500153" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2500121" = type { ptr, i64 }
-%"class.QuantLib::Date.2718310" = type { i64 }
+%"struct.rocksdb::FdWithKeyRange.2615378" = type { %"struct.rocksdb::FileDescriptor.2615379", ptr, %"class.rocksdb::Slice.2615347", %"class.rocksdb::Slice.2615347" }
+%"struct.rocksdb::FileDescriptor.2615379" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2615347" = type { ptr, i64 }
 
-; 435 occurrences:
+; 495 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
@@ -21,6 +20,8 @@
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
@@ -376,6 +377,64 @@
 ; protobuf/optimized/padding_optimizer.cc.ll
 ; protobuf/optimized/text_format.cc.ll
 ; protobuf/optimized/wire_format.cc.ll
+; quantlib/optimized/abcdatmvolcurve.ll
+; quantlib/optimized/andreasenhugevolatilityinterpl.ll
+; quantlib/optimized/basecorrelationstructure.ll
+; quantlib/optimized/basketgeneratingengine.ll
+; quantlib/optimized/blackvariancecurve.ll
+; quantlib/optimized/blackvariancesurface.ll
+; quantlib/optimized/bond.ll
+; quantlib/optimized/capfloortermvolcurve.ll
+; quantlib/optimized/capfloortermvolsurface.ll
+; quantlib/optimized/cmsmarketcalibration.ll
+; quantlib/optimized/commoditycurve.ll
+; quantlib/optimized/concentrating1dmesher.ll
+; quantlib/optimized/extendedblackvariancecurve.ll
+; quantlib/optimized/extendedblackvariancesurface.ll
+; quantlib/optimized/fdklugeextouspreadengine.ll
+; quantlib/optimized/fdm1dimsolver.ll
+; quantlib/optimized/fdm2dimsolver.ll
+; quantlib/optimized/fdm3dimsolver.ll
+; quantlib/optimized/fdmarithmeticaveragecondition.ll
+; quantlib/optimized/fdmbatesop.ll
+; quantlib/optimized/fdmdividendhandler.ll
+; quantlib/optimized/fdmextoujumpop.ll
+; quantlib/optimized/fdmhestonvariancemesher.ll
+; quantlib/optimized/fdmsimplestoragecondition.ll
+; quantlib/optimized/fdsimpleklugeextouvppengine.ll
+; quantlib/optimized/fftengine.ll
+; quantlib/optimized/fixedlocalvolsurface.ll
+; quantlib/optimized/flatvol.ll
+; quantlib/optimized/gaussian1dcapfloorengine.ll
+; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
+; quantlib/optimized/gaussian1djamshidianswaptionengine.ll
+; quantlib/optimized/gaussian1dmodel.ll
+; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
+; quantlib/optimized/gaussian1dswaptionengine.ll
+; quantlib/optimized/generalizedhullwhite.ll
+; quantlib/optimized/gsr.ll
+; quantlib/optimized/gsrprocesscore.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
+; quantlib/optimized/hestonslvmcmodel.ll
+; quantlib/optimized/interpolatedswaptionvolatilitycube.ll
+; quantlib/optimized/isdacdsengine.ll
+; quantlib/optimized/kahalesmilesection.ll
+; quantlib/optimized/lfmhullwhiteparam.ll
+; quantlib/optimized/lfmprocess.ll
+; quantlib/optimized/lmfixedvolmodel.ll
+; quantlib/optimized/localvolrndcalculator.ll
+; quantlib/optimized/markovfunctional.ll
+; quantlib/optimized/mfstateprocess.ll
+; quantlib/optimized/noarbsabr.ll
+; quantlib/optimized/normalclvmodel.ll
+; quantlib/optimized/pathwiseaccountingengine.ll
+; quantlib/optimized/sabrvolsurface.ll
+; quantlib/optimized/sampledcurve.ll
+; quantlib/optimized/smilesectionutils.ll
+; quantlib/optimized/strippedoptionletadapter.ll
+; quantlib/optimized/swaptionvoldiscrete.ll
+; quantlib/optimized/swaptionvolmatrix.ll
+; quantlib/optimized/zabr.ll
 ; rocksdb/optimized/compressed_secondary_cache.cc.ll
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; rocksdb/optimized/vectorrep.cc.ll
@@ -441,80 +500,11 @@
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw %"struct.rocksdb::FdWithKeyRange.2500152", ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 80
-  %6 = select i1 %0, ptr %1, ptr %5
-  ret ptr %6
-}
-
-; 58 occurrences:
-; quantlib/optimized/abcdatmvolcurve.ll
-; quantlib/optimized/andreasenhugevolatilityinterpl.ll
-; quantlib/optimized/basecorrelationstructure.ll
-; quantlib/optimized/basketgeneratingengine.ll
-; quantlib/optimized/blackvariancecurve.ll
-; quantlib/optimized/blackvariancesurface.ll
-; quantlib/optimized/bond.ll
-; quantlib/optimized/capfloortermvolcurve.ll
-; quantlib/optimized/capfloortermvolsurface.ll
-; quantlib/optimized/cmsmarketcalibration.ll
-; quantlib/optimized/commoditycurve.ll
-; quantlib/optimized/concentrating1dmesher.ll
-; quantlib/optimized/extendedblackvariancecurve.ll
-; quantlib/optimized/extendedblackvariancesurface.ll
-; quantlib/optimized/fdklugeextouspreadengine.ll
-; quantlib/optimized/fdm1dimsolver.ll
-; quantlib/optimized/fdm2dimsolver.ll
-; quantlib/optimized/fdm3dimsolver.ll
-; quantlib/optimized/fdmarithmeticaveragecondition.ll
-; quantlib/optimized/fdmbatesop.ll
-; quantlib/optimized/fdmdividendhandler.ll
-; quantlib/optimized/fdmextoujumpop.ll
-; quantlib/optimized/fdmhestonvariancemesher.ll
-; quantlib/optimized/fdmsimplestoragecondition.ll
-; quantlib/optimized/fdsimpleklugeextouvppengine.ll
-; quantlib/optimized/fftengine.ll
-; quantlib/optimized/fixedlocalvolsurface.ll
-; quantlib/optimized/flatvol.ll
-; quantlib/optimized/gaussian1dcapfloorengine.ll
-; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
-; quantlib/optimized/gaussian1djamshidianswaptionengine.ll
-; quantlib/optimized/gaussian1dmodel.ll
-; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
-; quantlib/optimized/gaussian1dswaptionengine.ll
-; quantlib/optimized/generalizedhullwhite.ll
-; quantlib/optimized/gsr.ll
-; quantlib/optimized/gsrprocesscore.ll
-; quantlib/optimized/hestonslvfdmmodel.ll
-; quantlib/optimized/hestonslvmcmodel.ll
-; quantlib/optimized/interpolatedswaptionvolatilitycube.ll
-; quantlib/optimized/isdacdsengine.ll
-; quantlib/optimized/kahalesmilesection.ll
-; quantlib/optimized/lfmhullwhiteparam.ll
-; quantlib/optimized/lfmprocess.ll
-; quantlib/optimized/lmfixedvolmodel.ll
-; quantlib/optimized/localvolrndcalculator.ll
-; quantlib/optimized/markovfunctional.ll
-; quantlib/optimized/mfstateprocess.ll
-; quantlib/optimized/noarbsabr.ll
-; quantlib/optimized/normalclvmodel.ll
-; quantlib/optimized/pathwiseaccountingengine.ll
-; quantlib/optimized/sabrvolsurface.ll
-; quantlib/optimized/sampledcurve.ll
-; quantlib/optimized/smilesectionutils.ll
-; quantlib/optimized/strippedoptionletadapter.ll
-; quantlib/optimized/swaptionvoldiscrete.ll
-; quantlib/optimized/swaptionvolmatrix.ll
-; quantlib/optimized/zabr.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(i1 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw %"class.QuantLib::Date.2718310", ptr %1, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  %4 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2615378", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 80
   %6 = select i1 %0, ptr %1, ptr %5
   ret ptr %6
 }

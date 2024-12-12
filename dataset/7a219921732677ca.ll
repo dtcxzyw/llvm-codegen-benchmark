@@ -1,17 +1,15 @@
 
-%class.ItemPartColor.2580202 = type <{ %"class.irr::video::SColor.2580198", %"class.irr::video::SColor.2580198", i8, i8, [2 x i8] }>
-%"class.irr::video::SColor.2580198" = type { i32 }
-%class.aiVector3t.2709939 = type { float, float, float }
-%"struct.vcpkg::SectionTableHeader.2752408" = type { [8 x i8], i32, i32, i32, i32, i32, i32, i16, i16, i32 }
-%"struct.llvm::WinEH::Instruction.2948927" = type <{ ptr, i32, i32, i32, [4 x i8] }>
-%"struct.ue2::(anonymous namespace)::ReachSubgraph.3669735" = type <{ %"class.std::vector.8.3669663", %"class.ue2::depth.3669679", %"class.ue2::depth.3669679", i32, i8, [3 x i8], i32, i8, [3 x i8] }>
-%"class.std::vector.8.3669663" = type { %"struct.std::_Vector_base.9.3669664" }
-%"struct.std::_Vector_base.9.3669664" = type { %"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>>>::_Vector_impl.3669665" }
-%"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>>>::_Vector_impl.3669665" = type { %"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>>>::_Vector_impl_data.3669666" }
-%"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>>>::_Vector_impl_data.3669666" = type { ptr, ptr, ptr }
-%"class.ue2::depth.3669679" = type { i32 }
+%class.ItemPartColor.2694342 = type <{ %"class.irr::video::SColor.2694338", %"class.irr::video::SColor.2694338", i8, i8, [2 x i8] }>
+%"class.irr::video::SColor.2694338" = type { i32 }
+%class.aiVector3t.2822608 = type { float, float, float }
+%"struct.vcpkg::SectionTableHeader.2864717" = type { [8 x i8], i32, i32, i32, i32, i32, i32, i16, i16, i32 }
+%"class.std::vector.14.2908984" = type { %"struct.std::_Vector_base.15.2908985" }
+%"struct.std::_Vector_base.15.2908985" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908986" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908986" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908987" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908987" = type { ptr, ptr, ptr }
+%"struct.llvm::WinEH::Instruction.3142490" = type <{ ptr, i32, i32, i32, [4 x i8] }>
 
-; 165 occurrences:
+; 163 occurrences:
 ; arrow/optimized/bridge.cc.ll
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
@@ -109,7 +107,6 @@
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -140,7 +137,6 @@
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -178,12 +174,12 @@
 ; pbrt-v4/optimized/mesh.cpp.ll
 ; velox/optimized/ConjunctExpr.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000006b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -12
   %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr %class.ItemPartColor.2580202, ptr %3, i64 %.neg
-  %5 = getelementptr %class.ItemPartColor.2580202, ptr %4, i64 %2
+  %4 = getelementptr %class.ItemPartColor.2694342, ptr %3, i64 %.neg
+  %5 = getelementptr %class.ItemPartColor.2694342, ptr %4, i64 %2
   ret ptr %5
 }
 
@@ -211,7 +207,7 @@ entry:
 ; gromacs/optimized/pme_only.cpp.ll
 ; gromacs/optimized/redistribute.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
-; lightgbm/optimized/dataset_loader.cpp.ll
+; hyperscan/optimized/ng_repeat.cpp.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/CFIInstrInserter.cpp.ll
 ; llvm/optimized/GCOV.cpp.ll
@@ -244,12 +240,12 @@ entry:
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -12
   %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr %class.aiVector3t.2709939, ptr %3, i64 %.neg
-  %5 = getelementptr %class.aiVector3t.2709939, ptr %4, i64 %2
+  %4 = getelementptr %class.aiVector3t.2822608, ptr %3, i64 %.neg
+  %5 = getelementptr %class.aiVector3t.2822608, ptr %4, i64 %2
   ret ptr %5
 }
 
@@ -264,8 +260,20 @@ define ptr @func0000000000000078(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -40
   %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr %"struct.vcpkg::SectionTableHeader.2752408", ptr %3, i64 %.neg
-  %5 = getelementptr %"struct.vcpkg::SectionTableHeader.2752408", ptr %4, i64 %2
+  %4 = getelementptr %"struct.vcpkg::SectionTableHeader.2864717", ptr %3, i64 %.neg
+  %5 = getelementptr %"struct.vcpkg::SectionTableHeader.2864717", ptr %4, i64 %2
+  ret ptr %5
+}
+
+; 1 occurrences:
+; lightgbm/optimized/dataset_loader.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %.neg = sdiv exact i64 %1, -24
+  %3 = getelementptr nusw i8, ptr %0, i64 %1
+  %4 = getelementptr %"class.std::vector.14.2908984", ptr %3, i64 %.neg
+  %5 = getelementptr %"class.std::vector.14.2908984", ptr %4, i64 %2
   ret ptr %5
 }
 
@@ -276,20 +284,8 @@ define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -24
   %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr %"struct.llvm::WinEH::Instruction.2948927", ptr %3, i64 %.neg
-  %5 = getelementptr %"struct.llvm::WinEH::Instruction.2948927", ptr %4, i64 %2
-  ret ptr %5
-}
-
-; 1 occurrences:
-; hyperscan/optimized/ng_repeat.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %.neg = sdiv exact i64 %1, -48
-  %3 = getelementptr i8, ptr %0, i64 %1
-  %4 = getelementptr %"struct.ue2::(anonymous namespace)::ReachSubgraph.3669735", ptr %3, i64 %.neg
-  %5 = getelementptr %"struct.ue2::(anonymous namespace)::ReachSubgraph.3669735", ptr %4, i64 %2
+  %4 = getelementptr %"struct.llvm::WinEH::Instruction.3142490", ptr %3, i64 %.neg
+  %5 = getelementptr %"struct.llvm::WinEH::Instruction.3142490", ptr %4, i64 %2
   ret ptr %5
 }
 

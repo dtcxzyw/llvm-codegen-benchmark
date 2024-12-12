@@ -1,5 +1,5 @@
 
-; 240 occurrences:
+; 241 occurrences:
 ; arrow/optimized/exec.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
@@ -79,6 +79,7 @@
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
+; mitsuba3/optimized/obj.cpp.ll
 ; mold/optimized/passes.cc.PPC64V1.cc.ll
 ; msdfgen/optimized/contour-combiners.cpp.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
@@ -241,12 +242,12 @@
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 4
-  %6 = sdiv exact i64 %0, 160
+  %6 = sdiv exact i64 %0, 24
   %7 = icmp ult i64 %6, %5
   ret i1 %7
 }
@@ -468,7 +469,7 @@ entry:
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -480,6 +481,7 @@ entry:
 
 ; 37 occurrences:
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
+; boost/optimized/get_turns_const.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; cvc5/optimized/smt2_term_parser.cpp.ll
 ; duckdb/optimized/ub_duckdb_bind_tableref.cpp.ll
@@ -489,7 +491,6 @@ entry:
 ; gromacs/optimized/colvarbias_alb.cpp.ll
 ; gromacs/optimized/colvarbias_restraint.cpp.ll
 ; gromacs/optimized/colvarcomp_volmaps.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/bardetect.cpp.ll
@@ -517,7 +518,7 @@ entry:
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; velox/optimized/SignatureBinder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -531,7 +532,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_catalog_entries.cpp.ll
 ; duckdb/optimized/ub_duckdb_physical_plan.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -544,7 +545,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000065(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -557,7 +558,7 @@ entry:
 ; 1 occurrences:
 ; grpc/optimized/ring_hash.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -571,7 +572,7 @@ entry:
 ; arrow/optimized/diff.cc.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -584,7 +585,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

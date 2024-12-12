@@ -1,5 +1,5 @@
 
-%struct.drm_color_lut.3341904 = type { i16, i16, i16, i16 }
+%struct.drm_color_lut.3531009 = type { i16, i16, i16, i16 }
 
 ; 1 occurrences:
 ; oiio/optimized/Codec.cpp.ll
@@ -13,7 +13,7 @@ entry:
   ret ptr %6
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
 ; g2o/optimized/edge_se2_twopointsxy.cpp.ll
@@ -25,7 +25,6 @@ entry:
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
-; msdfgen/optimized/edge-coloring.cpp.ll
 ; opencv/optimized/guided_filter.cpp.ll
 ; opencv/optimized/histogram.cpp.ll
 ; openspiel/optimized/battleship.cc.ll
@@ -49,7 +48,7 @@ entry:
   %3 = mul i32 %1, %2
   %4 = sdiv i32 %3, 511
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.drm_color_lut.3341904, ptr %0, i64 %5
+  %6 = getelementptr %struct.drm_color_lut.3531009, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,4 +1,4 @@
-func000000000000008d:                   # @func000000000000008d
+func000000000000028d:                   # @func000000000000028d
 	leal	-8190(%rsi), %ecx
 	leal	1(%rsi), %eax
 	cmpq	$8190, %rsi                     # imm = 0x1FFE

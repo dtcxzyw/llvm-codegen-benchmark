@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; linux/optimized/vc_screen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 128
   %4 = icmp eq i32 %3, 0
@@ -16,7 +16,7 @@ entry:
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %4 = icmp eq i32 %3, 0

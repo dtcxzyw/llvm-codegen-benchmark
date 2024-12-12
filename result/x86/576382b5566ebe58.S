@@ -12,8 +12,8 @@ func0000000000000014:                   # @func0000000000000014
 	retq
 func0000000000000016:                   # @func0000000000000016
 	notl	%edx
-	shll	$2, %edx
-	orq	$-2147483648, %rdx              # imm = 0x80000000
-	addq	%rdi, %rdx
-	leaq	(%rdx,%rsi,4), %rax
+	leal	(,%rdx,4), %eax
+	leaq	(%rdi,%rsi,4), %rcx
+	orq	$-2147483648, %rax              # imm = 0x80000000
+	addq	%rcx, %rax
 	retq

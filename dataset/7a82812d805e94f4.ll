@@ -3,7 +3,7 @@
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0) #0 {
+define i1 @func000000000000006c(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 23
   %2 = add nuw nsw i32 %1, 1
@@ -12,17 +12,13 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 4 occurrences:
 ; abc/optimized/aigMffc.c.ll
 ; abc/optimized/dauTree.c.ll
-; abc/optimized/fraigUtil.c.ll
-; abc/optimized/giaCof.c.ll
-; abc/optimized/giaEra2.c.ll
-; abc/optimized/giaMf.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 23
   %2 = add nuw nsw i32 %1, 1
@@ -36,28 +32,30 @@ entry:
 ; qemu/optimized/hw_usb_hcd-uhci.c.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0) #0 {
+define i1 @func0000000000000074(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 21
   %2 = add nuw nsw i32 %1, 1
   %3 = and i32 %2, 2047
-  %4 = icmp ult i32 %3, 65
+  %4 = icmp samesign ult i32 %3, 65
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; clamav/optimized/upack.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000038(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 1
   %2 = add nuw i32 %1, 255
   %3 = and i32 %2, 254
-  %4 = icmp ugt i32 %3, 5
+  %4 = icmp samesign ugt i32 %3, 5
   ret i1 %4
 }
 
-; 71 occurrences:
+; 73 occurrences:
+; hermes/optimized/Path.cpp.ll
+; llvm/optimized/Path.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -130,17 +128,19 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0) #0 {
+define i1 @func00000000000000ac(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, -16777216
-  %2 = icmp ne i32 %1, 1275068416
-  ret i1 %2
+  %1 = lshr exact i32 %0, 12
+  %2 = add nsw i32 %1, -3
+  %3 = and i32 %2, -5
+  %4 = icmp ne i32 %3, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/intel_pch_refclk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 6
   %2 = add nuw i32 %1, 2147483646
@@ -150,26 +150,14 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/e100.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
-entry:
-  %1 = lshr i32 %0, 1
-  %2 = add nuw i32 %1, 1
-  %3 = and i32 %2, 65535
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; icu/optimized/utf8collationiterator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0) #0 {
+define i1 @func0000000000000078(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 10
   %2 = add nuw nsw i32 %1, 55232
   %3 = and i32 %2, 65472
-  %4 = icmp ugt i32 %3, 191
+  %4 = icmp samesign ugt i32 %3, 191
   ret i1 %4
 }
 

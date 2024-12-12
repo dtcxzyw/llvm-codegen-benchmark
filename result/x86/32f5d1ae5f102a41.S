@@ -14,12 +14,12 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$3, %edi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subl	%esi, %edi
 	testb	$63, %dil
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	subl	%esi, %edi
 	imull	$-1431655765, %edi, %eax        # imm = 0xAAAAAAAB
 	addl	$715827882, %eax                # imm = 0x2AAAAAAA

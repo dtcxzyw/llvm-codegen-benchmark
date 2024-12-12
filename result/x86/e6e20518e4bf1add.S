@@ -4,15 +4,15 @@ func0000000000000007:                   # @func0000000000000007
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000001:                   # @func0000000000000001
 	movl	%edi, %eax
-	andl	$65280, %edx                    # imm = 0xFF00
+	andl	$3840, %edx                     # imm = 0xF00
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+func0000000000000006:                   # @func0000000000000006
 	movl	%edi, %eax
-	andl	$16, %edx
+	andl	$65280, %edx                    # imm = 0xFF00
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq

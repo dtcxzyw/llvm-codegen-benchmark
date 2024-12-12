@@ -19,7 +19,7 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nuw nsw i32 %0, 6
@@ -45,7 +45,7 @@ entry:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000010a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = mul i32 %0, 3
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nsw i32 %0, 3
@@ -72,7 +72,7 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000012a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = mul nsw i32 %0, 3
@@ -85,7 +85,7 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nuw nsw i32 %0, 12
@@ -98,7 +98,7 @@ entry:
 ; ocio/optimized/FileFormatSpi3D.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nsw i32 %0, 3
@@ -125,7 +125,7 @@ entry:
 ; opencv/optimized/multicalib.cpp.ll
 ; pbrt-v4/optimized/plytool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nsw i32 %0, 5
@@ -137,7 +137,7 @@ entry:
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nuw i32 %0, 65537
@@ -159,7 +159,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/speech_recognition.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nuw nsw i32 %0, 6
@@ -167,16 +167,15 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = mul nsw i32 %0, 3

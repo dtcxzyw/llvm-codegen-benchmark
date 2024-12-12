@@ -41,7 +41,6 @@
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
@@ -125,6 +124,7 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; yoga/optimized/YGNodeStyle.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
@@ -133,7 +133,9 @@ entry:
   ret float %4
 }
 
-; 144 occurrences:
+; 145 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_edge_shape.cpp.ll
@@ -177,13 +179,13 @@ entry:
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; gromacs/optimized/slagts.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
-; gromacs/optimized/slarfg.cpp.ll
 ; gromacs/optimized/slarrbx.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
@@ -195,7 +197,6 @@ entry:
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
-; minetest/optimized/clientdynamicinfo.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/luaentity_sao.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
@@ -286,7 +287,7 @@ entry:
   ret float %4
 }
 
-; 53 occurrences:
+; 54 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; bullet3/optimized/btCompoundShape.ll
 ; bullet3/optimized/btConvexTriangleMeshShape.ll
@@ -340,6 +341,7 @@ entry:
 ; mitsuba3/optimized/stokes.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
 ; openjdk/optimized/OGLRenderer.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define float @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
@@ -348,11 +350,15 @@ entry:
   ret float %4
 }
 
-; 18 occurrences:
+; 22 occurrences:
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; bullet3/optimized/btBox2dShape.ll
 ; bullet3/optimized/btBoxShape.ll
 ; bullet3/optimized/btConvexShape.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
 ; mitsuba3/optimized/dielectric.cpp.ll
@@ -398,7 +404,7 @@ entry:
   ret float %4
 }
 
-; 40 occurrences:
+; 27 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -423,22 +429,9 @@ entry:
 ; oiio/optimized/deepdata.cpp.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
 ; openusd/optimized/nanocolor.c.ll
-; pbrt-v4/optimized/aggregate.cpp.ll
-; pbrt-v4/optimized/cameras.cpp.ll
-; pbrt-v4/optimized/film.cpp.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/interaction.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/materials.cpp.ll
-; pbrt-v4/optimized/mesh.cpp.ll
-; pbrt-v4/optimized/primitive.cpp.ll
-; pbrt-v4/optimized/render.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
-; pbrt-v4/optimized/subsurface.cpp.ll
-; pbrt-v4/optimized/surfscatter.cpp.ll
-; pbrt-v4/optimized/textures.cpp.ll
-; pbrt-v4/optimized/transform.cpp.ll
 ; xgboost/optimized/regression_obj.cc.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
 ; Function Attrs: nounwind
 define float @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
@@ -452,7 +445,6 @@ entry:
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; bullet3/optimized/btMLCPSolver.ll
-; gromacs/optimized/gen_vsite.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; gromacs/optimized/pme_gather.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -467,6 +459,7 @@ entry:
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/transform.cpp.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
 ; Function Attrs: nounwind
 define float @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:

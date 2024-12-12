@@ -16,7 +16,7 @@ entry:
   ret i64 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/solver.c.ll
 ; clamav/optimized/arcread.cpp.ll
 ; cpython/optimized/compile.ll
@@ -37,6 +37,7 @@ entry:
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
 ; spike/optimized/triggers.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:

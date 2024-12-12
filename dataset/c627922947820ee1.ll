@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/src.ll
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/zend_alloc.ll
 ; postgres/optimized/bitmapset.ll
@@ -38,7 +39,9 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; hdf5/optimized/H5Gnode.c.ll
 ; libwebp/optimized/tree_dec.c.ll
 ; libwebp/optimized/vp8_dec.c.ll

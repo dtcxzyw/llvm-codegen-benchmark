@@ -8,15 +8,10 @@ func0000000000000008:                   # @func0000000000000008
 	shrq	$62, %rdi
 	setne	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	imulq	%rsi, %rdi
 	testq	%rdi, %rdi
 	setg	%al
-	retq
-func0000000000000018:                   # @func0000000000000018
-	imulq	%rsi, %rdi
-	shrq	$61, %rdi
-	setne	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movq	%rdi, %rax

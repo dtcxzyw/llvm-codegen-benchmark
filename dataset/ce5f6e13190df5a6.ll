@@ -11,7 +11,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = sub i16 %1, %3
   %5 = sext i16 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = sub i16 %1, %3
   %5 = sext i16 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

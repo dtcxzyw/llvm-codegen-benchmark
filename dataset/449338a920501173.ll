@@ -51,7 +51,7 @@ entry:
   ret i32 %4
 }
 
-; 124 occurrences:
+; 123 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -171,7 +171,6 @@ entry:
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlnRead.c.ll
-; linux/optimized/map.ll
 ; linux/optimized/syncookies.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; opencv/optimized/seamless_cloning.cpp.ll

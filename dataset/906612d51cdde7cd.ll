@@ -1,7 +1,8 @@
 
-; 54 occurrences:
+; 55 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; imgui/optimized/imgui.cpp.ll

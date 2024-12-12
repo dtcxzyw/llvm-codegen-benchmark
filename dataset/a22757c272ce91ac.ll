@@ -1,40 +1,7 @@
 
-; 139 occurrences:
+; 77 occurrences:
 ; arrow/optimized/key_hash.cc.ll
-; ceres/optimized/block_jacobi_preconditioner.cc.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/dense_cholesky.cc.ll
-; ceres/optimized/dense_normal_cholesky_solver.cc.ll
-; ceres/optimized/dense_qr.cc.ll
-; ceres/optimized/dogleg_strategy.cc.ll
-; ceres/optimized/gradient_checker.cc.ll
-; ceres/optimized/implicit_schur_complement.cc.ll
-; ceres/optimized/manifold.cc.ll
-; ceres/optimized/polynomial.cc.ll
-; ceres/optimized/schur_complement_solver.cc.ll
-; ceres/optimized/schur_eliminator_2_2_2.cc.ll
-; ceres/optimized/schur_eliminator_2_2_3.cc.ll
-; ceres/optimized/schur_eliminator_2_2_4.cc.ll
-; ceres/optimized/schur_eliminator_2_2_d.cc.ll
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_2_3_d.cc.ll
-; ceres/optimized/schur_eliminator_2_4_3.cc.ll
-; ceres/optimized/schur_eliminator_2_4_4.cc.ll
-; ceres/optimized/schur_eliminator_2_4_6.cc.ll
-; ceres/optimized/schur_eliminator_2_4_8.cc.ll
-; ceres/optimized/schur_eliminator_2_4_9.cc.ll
-; ceres/optimized/schur_eliminator_2_4_d.cc.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_2.cc.ll
-; ceres/optimized/schur_eliminator_4_4_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_4.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; boost/optimized/alloc_lib.ll
 ; coreutils-rs/optimized/31ndbnr1d3v04hlo.ll
 ; cpython/optimized/bytesobject.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -65,20 +32,6 @@
 ; faiss/optimized/OnDiskInvertedLists.cpp.ll
 ; flac/optimized/stream_encoder.c.ll
 ; folly/optimized/AsyncUDPSocket.cpp.ll
-; g2o/optimized/edge_se2_lotsofxy.cpp.ll
-; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
-; g2o/optimized/edge_se2_twopointsxy.cpp.ll
-; g2o/optimized/edge_se3_calib.cpp.ll
-; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
-; g2o/optimized/edge_se3_plane_calib.cpp.ll
-; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
-; gromacs/optimized/biasstate.cpp.ll
 ; hdf5/optimized/H5Gobj.c.ll
 ; hdf5/optimized/h5repack_copy.c.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
@@ -91,17 +44,6 @@
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/fit_rotations_l1.cpp.ll
-; meshlab/optimized/matching.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/builder.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
@@ -114,7 +56,6 @@
 ; opencv/optimized/grfmt_bmp.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
-; opencv/optimized/trackerMedianFlow.cpp.ll
 ; opencv/optimized/ts_perf.cpp.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; openjdk/optimized/jfrMemorySizer.ll
@@ -124,9 +65,7 @@
 ; openmpi/optimized/nbc_ireduce.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/cdf.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
-; qemu/optimized/util_oslib-posix.c.ll
 ; quantlib/optimized/pseudosqrt.ll
 ; quantlib/optimized/tapcorrelations.ll
 ; quickjs/optimized/libbf.ll
@@ -136,7 +75,6 @@
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
-; tinympc/optimized/tiny_api.cpp.ll
 ; wireshark/optimized/file-elf.c.ll
 ; yalantinglibs/optimized/user_defined_serialization.cpp.ll
 ; Function Attrs: nounwind
@@ -151,6 +89,7 @@ entry:
 ; arrow/optimized/coo_converter.cc.ll
 ; arrow/optimized/tensor.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -271,7 +210,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
-; pbrt-v4/optimized/string.cpp.ll
 ; postgres/optimized/print.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
@@ -301,14 +239,14 @@ entry:
 ; tinympc/optimized/tiny_api.cpp.ll
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = icmp eq i64 %2, 0
   ret i1 %3
 }
 
-; 591 occurrences:
+; 619 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
@@ -333,6 +271,8 @@ entry:
 ; assimp/optimized/ZipArchiveIOSystem.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/pool_resource.ll
 ; brotli/optimized/block_splitter.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -475,7 +415,6 @@ entry:
 ; hdf5/optimized/h5tools_dump.c.ll
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/ComponentSequence.cpp.ll
-; icu/optimized/cmemory.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
@@ -504,6 +443,7 @@ entry:
 ; llvm/optimized/SmallVector.cpp.ll
 ; llvm/optimized/UnicodeNameToCodepoint.cpp.ll
 ; luau/optimized/StringUtils.cpp.ll
+; lvgl/optimized/lv_mem.ll
 ; minetest/optimized/mg_schematic.cpp.ll
 ; minetest/optimized/ogg_file.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -900,6 +840,32 @@ entry:
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/0nwivtw0lug3nh002ufjq6dhh.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/32kqcem53id37kgf9pak7q7x7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/4yr6g2ok92pf18o3rcyc7uswo.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5q8zw1h1kdgz0fiksol53zkaa.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/914lh5mzek2kam75czht77x9a.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; zed-rs/optimized/c6zcqmm1tlbhiy5p6czlxqg9e.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/d236qqx54dpqso3cyloa7ybaj.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/enul73o10k5w3gxzdsfqj1w26.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -908,7 +874,7 @@ entry:
   ret i1 %3
 }
 
-; 315 occurrences:
+; 313 occurrences:
 ; assimp/optimized/BVHLoader.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
@@ -924,7 +890,6 @@ entry:
 ; clamav/optimized/libfreshclam_internal.c.ll
 ; cpython/optimized/itertoolsmodule.ll
 ; cpython/optimized/obmalloc.ll
-; cpython/optimized/tupleobject.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_transformer_helpers.cpp.ll
@@ -992,7 +957,6 @@ entry:
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; mitsuba3/optimized/serialized.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
@@ -1282,14 +1246,24 @@ entry:
 ; openusd/optimized/dataSourceLocator.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %0, %1
   %3 = icmp ult i64 %2, 513
   ret i1 %3
 }
 
-; 18 occurrences:
+; 1 occurrences:
+; mitsuba3/optimized/zonevector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw i64 %0, %1
+  %3 = icmp samesign ult i64 %2, 129
+  ret i1 %3
+}
+
+; 22 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; hdf5/optimized/H5Pdcpl.c.ll
@@ -1308,15 +1282,19 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; z3/optimized/approx_nat.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %0, %1
   %3 = icmp ugt i64 %2, 4611686018427387903
   ret i1 %3
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; git/optimized/pack-redundant.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
@@ -1327,15 +1305,17 @@ entry:
 ; opencv/optimized/basicretinafilter.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %0, %1
   %3 = icmp eq i64 %2, 0
   ret i1 %3
 }
 
-; 23 occurrences:
+; 26 occurrences:
 ; casadi/optimized/sparsity.cpp.ll
 ; clamav/optimized/apm.c.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
@@ -1346,7 +1326,6 @@ entry:
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; hyperscan/optimized/ng_limex_accel.cpp.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
-; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; linux/optimized/msdos.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -1357,10 +1336,14 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; slurm/optimized/data_parser_v0_0_39_la-parsers.ll
 ; slurm/optimized/data_parser_v0_0_40_la-parsers.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/0431hruu0kb4k1yxxvcap38im.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %0, %1
   %3 = icmp eq i64 %2, 0
@@ -1369,6 +1352,8 @@ entry:
 
 ; 121 occurrences:
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; casadi/optimized/cvodes_interface.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
@@ -1463,9 +1448,7 @@ entry:
 ; minetest/optimized/mg_biome.cpp.ll
 ; nori/optimized/accel.cpp.ll
 ; ocio/optimized/Lut3DOpData.cpp.ll
-; openblas/optimized/dgemm_small_matrix_permit.c.ll
 ; openblas/optimized/dgemv_thread_n.c.ll
-; openblas/optimized/sgemm_small_matrix_permit.c.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; openjdk/optimized/X11SurfaceData.ll
@@ -1490,59 +1473,14 @@ entry:
 ; tinympc/optimized/tiny_api.cpp.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = icmp sgt i64 %2, 9223372036854675807
   ret i1 %3
 }
 
-; 36 occurrences:
-; assimp/optimized/glTF2Exporter.cpp.ll
-; ceres/optimized/covariance_impl.cc.ll
-; faiss/optimized/Clustering.cpp.ll
-; faiss/optimized/IndexShards.cpp.ll
-; faiss/optimized/IndexShardsIVF.cpp.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; llama.cpp/optimized/ggml.c.ll
-; llvm/optimized/BlockFrequency.cpp.ll
-; llvm/optimized/DIExpressionOptimizer.cpp.ll
-; llvm/optimized/InlineCost.cpp.ll
-; llvm/optimized/InstrProf.cpp.ll
-; llvm/optimized/PGOMemOPSizeOpt.cpp.ll
-; llvm/optimized/ProfileSummaryBuilder.cpp.ll
-; llvm/optimized/SampleContextTracker.cpp.ll
-; llvm/optimized/SampleProf.cpp.ll
-; llvm/optimized/SampleProfReader.cpp.ll
-; llvm/optimized/SampleProfile.cpp.ll
-; llvm/optimized/SampleProfileMatcher.cpp.ll
-; llvm/optimized/SimplifyLibCalls.cpp.ll
-; minetest/optimized/mg_schematic.cpp.ll
-; nori/optimized/main.cpp.ll
-; nori/optimized/texture_gl.cpp.ll
-; ocio/optimized/Lut3DOpCPU.cpp.ll
-; opencv/optimized/matrix.cpp.ll
-; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
-; openjdk/optimized/hb-aat-map.ll
-; openjdk/optimized/hb-face-builder.ll
-; openjdk/optimized/hb-ot-font.ll
-; openjdk/optimized/hb-ot-map.ll
-; openjdk/optimized/hb-ot-name.ll
-; openjdk/optimized/hb-ot-shaper-arabic.ll
-; portaudio/optimized/pa_linux_pulseaudio_block.c.ll
-; qemu/optimized/block_qcow2-refcount.c.ll
-; quantlib/optimized/levenbergmarquardt.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul i64 %0, %1
-  %3 = icmp sgt i64 %2, -1
-  ret i1 %3
-}
-
-; 144 occurrences:
+; 141 occurrences:
 ; arrow/optimized/coo_converter.cc.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
@@ -1656,12 +1594,10 @@ entry:
 ; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/normalize_unitbox.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; nanobind/optimized/common.cpp.ll
 ; oiio/optimized/exrinput.cpp.ll
 ; oiio/optimized/pngoutput.cpp.ll
-; openblas/optimized/sgemm_direct_performant.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
@@ -1684,14 +1620,56 @@ entry:
 ; quantlib/optimized/levenbergmarquardt.ll
 ; quantlib/optimized/svd.ll
 ; quantlib/optimized/twofactormodel.ll
-; tinympc/optimized/admm.cpp.ll
 ; tinympc/optimized/codegen.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = icmp ugt i64 %2, 536870912
+  ret i1 %3
+}
+
+; 34 occurrences:
+; assimp/optimized/glTF2Exporter.cpp.ll
+; ceres/optimized/covariance_impl.cc.ll
+; faiss/optimized/Clustering.cpp.ll
+; faiss/optimized/IndexShards.cpp.ll
+; faiss/optimized/IndexShardsIVF.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; llama.cpp/optimized/ggml.c.ll
+; llvm/optimized/BlockFrequency.cpp.ll
+; llvm/optimized/DIExpressionOptimizer.cpp.ll
+; llvm/optimized/InlineCost.cpp.ll
+; llvm/optimized/InstrProf.cpp.ll
+; llvm/optimized/PGOMemOPSizeOpt.cpp.ll
+; llvm/optimized/ProfileSummaryBuilder.cpp.ll
+; llvm/optimized/SampleContextTracker.cpp.ll
+; llvm/optimized/SampleProf.cpp.ll
+; llvm/optimized/SampleProfReader.cpp.ll
+; llvm/optimized/SampleProfile.cpp.ll
+; llvm/optimized/SampleProfileMatcher.cpp.ll
+; llvm/optimized/SimplifyLibCalls.cpp.ll
+; nori/optimized/main.cpp.ll
+; nori/optimized/texture_gl.cpp.ll
+; ocio/optimized/Lut3DOpCPU.cpp.ll
+; opencv/optimized/matrix.cpp.ll
+; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
+; openjdk/optimized/hb-aat-map.ll
+; openjdk/optimized/hb-face-builder.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/hb-ot-map.ll
+; openjdk/optimized/hb-ot-name.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; portaudio/optimized/pa_linux_pulseaudio_block.c.ll
+; qemu/optimized/block_qcow2-refcount.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul i64 %0, %1
+  %3 = icmp sgt i64 %2, 0
   ret i1 %3
 }
 
@@ -1701,17 +1679,29 @@ entry:
 ; qemu/optimized/block_vpc.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %0, %1
   %3 = icmp ne i64 %2, 267382800
   ret i1 %3
 }
 
-; 31 occurrences:
+; 4 occurrences:
+; image-rs/optimized/5ez7udly19o3uj1p.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw nsw i64 %0, %1
+  %3 = icmp samesign eq i64 %2, 0
+  ret i1 %3
+}
+
+; 30 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
-; clamav/optimized/others_common.c.ll
 ; clamav/optimized/unarj.c.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
@@ -1741,17 +1731,41 @@ entry:
 ; velox/optimized/JsonType.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %0, %1
-  %3 = icmp ugt i64 %2, 536870912
+  %3 = icmp samesign ugt i64 %2, 536870912
   ret i1 %3
 }
 
-; 36 occurrences:
+; 13 occurrences:
+; cpython/optimized/tupleobject.ll
+; faiss/optimized/IndexFastScan.cpp.ll
+; faiss/optimized/IndexIVFFastScan.cpp.ll
+; faiss/optimized/IndexShards.cpp.ll
+; faiss/optimized/IndexShardsIVF.cpp.ll
+; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
+; openjdk/optimized/g1UncommitRegionTask.ll
+; openjdk/optimized/shenandoahAdaptiveHeuristics.ll
+; openjdk/optimized/shenandoahCompactHeuristics.ll
+; openjdk/optimized/shenandoahFreeSet.ll
+; openjdk/optimized/shenandoahMetrics.ll
+; openjdk/optimized/shenandoahPacer.ll
+; openjdk/optimized/shenandoahStaticHeuristics.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul i64 %0, %1
+  %3 = icmp samesign ugt i64 %2, 104857599
+  ret i1 %3
+}
+
+; 38 occurrences:
 ; arrow/optimized/coo_converter.cc.ll
 ; arrow/optimized/csf_converter.cc.ll
 ; arrow/optimized/csx_converter.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; ceres/optimized/line_search_direction.cc.ll
 ; ceres/optimized/polynomial.cc.ll
 ; cpython/optimized/longobject.ll
@@ -1786,14 +1800,68 @@ entry:
 ; tinympc/optimized/tiny_api.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = icmp slt i64 %2, 0
   ret i1 %3
 }
 
-; 91 occurrences:
+; 26 occurrences:
+; darktable/optimized/introspection_ashift.c.ll
+; darktable/optimized/introspection_bloom.c.ll
+; darktable/optimized/introspection_cacorrectrgb.c.ll
+; darktable/optimized/introspection_colorequal.c.ll
+; darktable/optimized/introspection_colorize.c.ll
+; darktable/optimized/introspection_colormapping.c.ll
+; darktable/optimized/introspection_dither.c.ll
+; darktable/optimized/introspection_filmicrgb.c.ll
+; darktable/optimized/introspection_globaltonemap.c.ll
+; darktable/optimized/introspection_hazeremoval.c.ll
+; darktable/optimized/introspection_highpass.c.ll
+; darktable/optimized/introspection_invert.c.ll
+; darktable/optimized/introspection_retouch.c.ll
+; darktable/optimized/introspection_toneequal.c.ll
+; darktable/optimized/introspection_zonesystem.c.ll
+; darktable/optimized/xcf.c.ll
+; faiss/optimized/IndexIVFPQFastScan.cpp.ll
+; libjpeg-turbo/optimized/jcmaster.c.ll
+; libjpeg-turbo/optimized/jdmaster.c.ll
+; lightgbm/optimized/gradient_discretizer.cpp.ll
+; nuklear/optimized/unity.c.ll
+; openjdk/optimized/jcmaster.ll
+; openjdk/optimized/jdmaster.ll
+; openmpi/optimized/coll_base_allgather.ll
+; pocketpy/optimized/ceval.cpp.ll
+; pocketpy/optimized/pocketpy.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nsw i64 %0, %1
+  %3 = icmp ult i64 %2, 4294967296
+  ret i1 %3
+}
+
+; 10 occurrences:
+; casadi/optimized/sparsity.cpp.ll
+; cpython/optimized/mathmodule.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; hyperscan/optimized/ng_limex_accel.cpp.ll
+; libwebp/optimized/pngdec.c.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; opencv/optimized/grfmt_tiff.cpp.ll
+; pocketpy/optimized/modules.cpp.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; spike/optimized/rfb.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw nsw i64 %0, %1
+  %3 = icmp samesign ult i64 %2, 8
+  ret i1 %3
+}
+
+; 70 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -1830,23 +1898,9 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; darktable/optimized/introspection_ashift.c.ll
-; darktable/optimized/introspection_bloom.c.ll
-; darktable/optimized/introspection_cacorrectrgb.c.ll
-; darktable/optimized/introspection_colorequal.c.ll
-; darktable/optimized/introspection_colorize.c.ll
-; darktable/optimized/introspection_colormapping.c.ll
-; darktable/optimized/introspection_dither.c.ll
-; darktable/optimized/introspection_filmicrgb.c.ll
-; darktable/optimized/introspection_globaltonemap.c.ll
-; darktable/optimized/introspection_hazeremoval.c.ll
-; darktable/optimized/introspection_highpass.c.ll
-; darktable/optimized/introspection_invert.c.ll
-; darktable/optimized/introspection_retouch.c.ll
-; darktable/optimized/introspection_toneequal.c.ll
-; darktable/optimized/introspection_zonesystem.c.ll
-; darktable/optimized/xcf.c.ll
-; faiss/optimized/IndexIVFPQFastScan.cpp.ll
+; faiss/optimized/IndexIVFIndependentQuantizer.cpp.ll
+; faiss/optimized/IndexShardsIVF.cpp.ll
+; faiss/optimized/kmeans1d.cpp.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
 ; g2o/optimized/edge_se2_twopointsxy.cpp.ll
@@ -1861,9 +1915,7 @@ entry:
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
-; libjpeg-turbo/optimized/jcmaster.c.ll
-; libjpeg-turbo/optimized/jdmaster.c.ll
-; lightgbm/optimized/gradient_discretizer.cpp.ll
+; lightgbm/optimized/c_api.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -1875,44 +1927,20 @@ entry:
 ; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/normalize_unitbox.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; nuklear/optimized/unity.c.ll
-; openblas/optimized/sgemm_direct_performant.c.ll
-; openjdk/optimized/jcmaster.ll
-; openjdk/optimized/jdmaster.ll
-; openmpi/optimized/coll_base_allgather.ll
-; pocketpy/optimized/ceval.cpp.ll
-; pocketpy/optimized/pocketpy.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
+; tinympc/optimized/admm.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
-  %3 = icmp ult i64 %2, 4294967296
+  %3 = icmp samesign ugt i64 %2, 1152921504606846975
   ret i1 %3
 }
 
-; 10 occurrences:
-; casadi/optimized/sparsity.cpp.ll
-; cpython/optimized/mathmodule.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
-; hyperscan/optimized/ng_limex_accel.cpp.ll
-; libwebp/optimized/pngdec.c.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; opencv/optimized/grfmt_tiff.cpp.ll
-; pocketpy/optimized/modules.cpp.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; spike/optimized/rfb.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw nsw i64 %0, %1
-  %3 = icmp ult i64 %2, 8
-  ret i1 %3
-}
-
-; 111 occurrences:
+; 110 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -2012,7 +2040,6 @@ entry:
 ; opencv/optimized/rtrees.cpp.ll
 ; openexr/optimized/ImfB44Compressor.cpp.ll
 ; openmpi/optimized/io_ompio_file_open.ll
-; openmpi/optimized/sharedfp_lockedfile_seek.ll
 ; openmpi/optimized/sharedfp_sm_seek.ll
 ; openusd/optimized/warped_motion.c.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
@@ -2032,14 +2059,172 @@ entry:
   ret i1 %3
 }
 
+; 64 occurrences:
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/dense_normal_cholesky_solver.cc.ll
+; ceres/optimized/dense_qr.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/manifold.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; g2o/optimized/edge_se2_lotsofxy.cpp.ll
+; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
+; g2o/optimized/edge_se2_twopointsxy.cpp.ll
+; g2o/optimized/edge_se3_calib.cpp.ll
+; g2o/optimized/edge_se3_euler.cpp.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; g2o/optimized/edge_se3_plane_calib.cpp.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; tinympc/optimized/tiny_api.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nsw i64 %0, %1
+  %3 = icmp samesign ult i64 %2, 16385
+  ret i1 %3
+}
+
+; 65 occurrences:
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/dense_normal_cholesky_solver.cc.ll
+; ceres/optimized/dense_qr.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/manifold.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; g2o/optimized/edge_se2_lotsofxy.cpp.ll
+; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
+; g2o/optimized/edge_se2_twopointsxy.cpp.ll
+; g2o/optimized/edge_se3_calib.cpp.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; g2o/optimized/edge_se3_plane_calib.cpp.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; gromacs/optimized/biasstate.cpp.ll
+; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; opencv/optimized/trackerMedianFlow.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; tinympc/optimized/tiny_api.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul i64 %0, %1
+  %3 = icmp samesign ult i64 %2, 32769
+  ret i1 %3
+}
+
 ; 2 occurrences:
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %0, %1
   %3 = icmp sgt i64 %2, -1
+  ret i1 %3
+}
+
+; 2 occurrences:
+; casadi/optimized/sparsity.cpp.ll
+; clamav/optimized/others_common.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw nsw i64 %0, %1
+  %3 = icmp ugt i64 %2, 1073741824
   ret i1 %3
 }
 
@@ -2052,7 +2237,7 @@ entry:
 ; nanobind/optimized/nb_ndarray.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = icmp ne i64 %2, 0

@@ -11,7 +11,7 @@ entry:
   ret i32 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/cnfWrite.c.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
@@ -24,6 +24,7 @@ entry:
 ; libwebp/optimized/yuv.c.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; oiio/optimized/termoutput.cpp.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
@@ -40,7 +41,7 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -48,7 +49,6 @@ entry:
 ; jq/optimized/decNumber.ll
 ; libwebp/optimized/yuv.c.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/intel_audio.ll
 ; openblas/optimized/dlasq2.c.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
@@ -95,7 +95,7 @@ entry:
   ret i32 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; cpython/optimized/_codecs_cn.ll
 ; cpython/optimized/_codecs_kr.ll
 ; hdf5/optimized/H5HFcache.c.ll
@@ -104,6 +104,7 @@ entry:
 ; libwebp/optimized/yuv.c.ll
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
+; linux/optimized/rc80211_minstrel_ht.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll

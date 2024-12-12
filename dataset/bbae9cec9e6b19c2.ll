@@ -11,19 +11,6 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; cmake/optimized/zstdmt_compress.c.ll
-; zstd/optimized/zstdmt_compress.c.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000ba(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 %0
-  %3 = getelementptr nusw i8, ptr %2, i64 -32
-  %4 = sub nuw nsw i64 131072, %0
-  %5 = getelementptr nusw i8, ptr %3, i64 %4
-  ret ptr %5
-}
-
 ; 1 occurrences:
 ; linux/optimized/ip6_output.ll
 ; Function Attrs: nounwind
@@ -36,13 +23,12 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; opencv/optimized/brisk.cpp.ll
+; 1 occurrences:
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000009a(i64 %0, ptr %1) #0 {
+define ptr @func00000000000000da(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 %0
   %3 = getelementptr nusw i8, ptr %2, i64 -8
   %4 = sub nsw i64 0, %0
   %5 = getelementptr nusw i8, ptr %3, i64 %4

@@ -1,9 +1,10 @@
 
-; 154 occurrences:
+; 156 occurrences:
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/static_dict.c.ll
@@ -141,6 +142,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; wireshark/optimized/proto.c.ll
+; yalantinglibs/optimized/benchmark.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; zfp/optimized/encode1d.c.ll
 ; zfp/optimized/encode1f.c.ll

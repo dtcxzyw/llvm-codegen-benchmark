@@ -7,7 +7,7 @@ define i16 @func000000000000003f(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i16
   %3 = shl nuw nsw i16 %2, 1
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 
@@ -25,13 +25,24 @@ entry:
 }
 
 ; 1 occurrences:
+; git/optimized/merge-ort.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000f(i16 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i16
+  %3 = shl nuw nsw i16 %2, 8
+  %4 = add nuw nsw i16 %0, %3
+  ret i16 %4
+}
+
+; 1 occurrences:
 ; wireshark/optimized/packet-ieee17221.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000003c(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i16
   %3 = shl nuw nsw i16 %2, 1
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -42,7 +53,7 @@ define i16 @func0000000000000030(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i16
   %3 = shl i16 %2, 10
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 

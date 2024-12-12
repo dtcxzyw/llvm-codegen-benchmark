@@ -35,7 +35,9 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/init_from_settings.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
 ; jq/optimized/regparse.ll

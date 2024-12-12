@@ -4,12 +4,6 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	imull	$151, %esi, %ecx
-	testb	$1, %dil
-	movl	$151, %eax
-	cmoveq	%rcx, %rax
-	retq
 func0000000000000002:                   # @func0000000000000002
 	leal	(%rsi,%rsi,2), %ecx
 	testb	$1, %dil

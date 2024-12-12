@@ -5,7 +5,7 @@
 ; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000071(i8 %0, i64 %1) #0 {
+define i64 @func00000000000000e1(i8 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = icmp ne i8 %0, -1

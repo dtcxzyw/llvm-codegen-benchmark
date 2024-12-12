@@ -5,7 +5,6 @@
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cgtDecide.c.ll
 ; abc/optimized/cutMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaPf.c.ll
@@ -15,7 +14,6 @@
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/mapperCut.c.ll
 ; abc/optimized/mioUtils.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/saigSwitch.c.ll
@@ -126,7 +124,6 @@
 ; gromacs/optimized/select.cpp.ll
 ; gromacs/optimized/sfactor.cpp.ll
 ; gromacs/optimized/shellfc.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
 ; gromacs/optimized/swapcoords.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
@@ -153,6 +150,7 @@
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llama.cpp/optimized/train.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -168,7 +166,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
@@ -481,6 +478,9 @@
 ; wireshark/optimized/sharkd_session.c.ll
 ; wireshark/optimized/stats_tree.c.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
 ; zxing/optimized/ODDataBarCommon.cpp.ll

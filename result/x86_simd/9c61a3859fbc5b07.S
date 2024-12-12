@@ -36,7 +36,7 @@
 	.long	128                             # 0x80
 .LCPI0_3:
 	.zero	4,254
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqb	.LCPI0_1(%rip), %xmm1, %k1
 	vpaddd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -60,7 +60,7 @@ func0000000000000031:                   # @func0000000000000031
 	.zero	1
 .LCPI1_1:
 	.long	16                              # 0x10
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmb	.LCPI1_0(%rip), %xmm1, %k1
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

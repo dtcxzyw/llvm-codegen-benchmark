@@ -1,5 +1,7 @@
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -24,7 +26,7 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 15 occurrences:
 ; cvc5/optimized/arith_poly_norm.cpp.ll
 ; cvc5/optimized/sygus_repair_const.cpp.ll
 ; git/optimized/diff.ll
@@ -36,12 +38,8 @@ entry:
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; llvm/optimized/ParseTentative.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
-; openjdk/optimized/method.ll
 ; postgres/optimized/heapam.ll
 ; qemu/optimized/linux-user_syscall.c.ll
-; stockfish/optimized/movepick.ll
-; stockfish/optimized/search.ll
-; stockfish/optimized/tbprobe.ll
 ; wireshark/optimized/packet-epl.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
@@ -53,30 +51,28 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; arrow/optimized/string-to-double.cc.ll
-; double_conversion/optimized/string-to-double.cc.ll
-; icu/optimized/double-conversion-string-to-double.ll
-; openusd/optimized/string-to-double.cc.ll
+; 3 occurrences:
+; stockfish/optimized/movepick.ll
+; stockfish/optimized/search.ll
+; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000010(i16 %0, i1 %1, i1 %2) #0 {
+define i1 @func000000000000000c(i16 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
-  %4 = icmp ugt i16 %0, 96
+  %4 = icmp slt i16 %0, -16384
   %5 = or i1 %4, %3
   ret i1 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DAGISelMatcher.cpp.ll
 ; llvm/optimized/MachineBasicBlock.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; wireshark/optimized/packet-gprs-llc.c.ll
 ; wireshark/optimized/packet-wcp.c.ll
+; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i16 %0, i1 %1, i1 %2) #0 {
 entry:

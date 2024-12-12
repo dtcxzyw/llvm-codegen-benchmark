@@ -5,7 +5,12 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$7, %al
 	sete	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000021:                   # @func0000000000000021
+	movl	%edi, %eax
+	xorl	%esi, %eax
+	xorb	$1, %al
+	retq
+func0000000000000074:                   # @func0000000000000074
 	leal	94(%rdi), %eax
 	testb	$1, %sil
 	cmovnel	%edi, %eax

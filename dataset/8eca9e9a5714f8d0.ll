@@ -24,7 +24,7 @@ entry:
 ; flatbuffers/optimized/reflection.cpp.ll
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = add nsw i64 %3, -1
@@ -32,10 +32,12 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = add nuw i64 %3, 1
@@ -51,17 +53,6 @@ entry:
   %3 = mul i64 %1, %2
   %4 = add i64 %3, 1
   %5 = icmp eq i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; darktable/optimized/CrwDecompressor.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f5(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, 2672
-  %5 = icmp ule i64 %4, %0
   ret i1 %5
 }
 
@@ -83,7 +74,7 @@ entry:
 ; openmpi/optimized/ad_read_str.ll
 ; openmpi/optimized/ad_write_str.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = add i64 %3, -1
@@ -94,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/virtio_pci_modern_dev.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = add nuw nsw i64 %3, 2
@@ -105,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/intset.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001ec(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = add nuw nsw i64 %3, 8
@@ -116,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = add nsw i64 %3, -1
@@ -127,7 +118,7 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/ImfPreviewImageAttribute.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = add nuw i64 %3, 8

@@ -3,7 +3,7 @@
 ; libquic/optimized/pickle.cc.ll
 ; opencv/optimized/subgraphs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, 4

@@ -1,5 +1,5 @@
 
-; 161 occurrences:
+; 162 occurrences:
 ; abc/optimized/abcDebug.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcQuant.c.ll
@@ -44,6 +44,7 @@
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/filter_mutualinfo.cpp.ll
@@ -165,11 +166,11 @@
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
-; 77 occurrences:
+; 79 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcQuant.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -201,6 +202,8 @@ entry:
 ; linux/optimized/transaction.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; luau/optimized/Compiler.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_gridnav.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
@@ -251,7 +254,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -269,11 +272,11 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 
-; 145 occurrences:
+; 147 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcSaucy.c.ll
@@ -295,7 +298,6 @@ entry:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/mvcPrint.c.ll
 ; abc/optimized/reoSift.c.ll
 ; abc/optimized/saigMiter.c.ll
 ; abc/optimized/saigSimMv.c.ll
@@ -332,6 +334,9 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lua/optimized/lgc.ll
 ; luau/optimized/lgc.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
@@ -423,7 +428,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
@@ -437,7 +442,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 16
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 
@@ -447,7 +452,7 @@ entry:
 define i1 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 17
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp ule i32 %0, %2
   ret i1 %3
 }
 
@@ -469,7 +474,7 @@ entry:
 define i1 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   ret i1 %3
 }
 
@@ -480,13 +485,12 @@ entry:
 define i1 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   ret i1 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/dsig.c.ll
-; gromacs/optimized/libxdrf.cpp.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lgc.cpp.ll
 ; redis/optimized/lgc.ll
@@ -494,7 +498,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 

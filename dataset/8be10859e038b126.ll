@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/time.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
@@ -8,12 +8,14 @@
 ; ockam-rs/optimized/27nutj9k22uohtyi.ll
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
+; php/optimized/dow.ll
 ; ruby/optimized/gc.ll
 ; rust-analyzer-rs/optimized/4mz36mxu8r0g7zqk.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; wasmtime-rs/optimized/3wy7qx4e8fg0rwt0.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i16 %1) #0 {
 entry:
@@ -22,7 +24,7 @@ entry:
   ret i64 %3
 }
 
-; 142 occurrences:
+; 151 occurrences:
 ; abc/optimized/trees.c.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -60,12 +62,10 @@ entry:
 ; linux/optimized/deftree.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/gso.ll
 ; linux/optimized/hdac_sysfs.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_dp_mst.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/ip6_checksum.ll
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/oid_registry.ll
 ; linux/optimized/output_core.ll
@@ -155,6 +155,7 @@ entry:
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
 ; tokio-rs/optimized/3nmgzybx6iv04snk.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/1ewejz0ibz9296z1.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; wasmtime-rs/optimized/1xdghmr48oeeku8v.ll
@@ -164,6 +165,16 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i16 %1) #0 {
@@ -173,8 +184,11 @@ entry:
   ret i64 %3
 }
 
-; 21 occurrences:
+; 24 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; clamav/optimized/filtering.c.ll
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/uniset.ll
@@ -203,7 +217,9 @@ entry:
   ret i64 %3
 }
 
-; 25 occurrences:
+; 29 occurrences:
+; actix-rs/optimized/1kr0tdq4l6v38mbk.ll
+; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
@@ -224,6 +240,8 @@ entry:
 ; proxygen/optimized/ParseURL.cpp.ll
 ; qemu/optimized/hw_net_net_tx_pkt.c.ll
 ; qemu/optimized/net_eth.c.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
@@ -237,12 +255,11 @@ entry:
   ret i64 %3
 }
 
-; 38 occurrences:
+; 59 occurrences:
 ; abc/optimized/trees.c.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
-; actix-rs/optimized/1kr0tdq4l6v38mbk.ll
-; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
+; boost/optimized/static_string.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/trees.c.ll
 ; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
@@ -264,7 +281,6 @@ entry:
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
-; ozz-animation/optimized/animation_utils.cc.ll
 ; php/optimized/zend_virtual_cwd.ll
 ; postgres/optimized/xlogreader.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
@@ -274,7 +290,30 @@ entry:
 ; qemu/optimized/hw_usb_desc.c.ll
 ; rust-analyzer-rs/optimized/49gbmpy0w6vw8qx1.ll
 ; stockfish/optimized/tbprobe.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; wireshark/optimized/blf.c.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8ps09f0y8mibhh9t1qb96p5es.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9pzx6flqzrwt1xqpmg7mx7dne.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/d6xu5i45b643l7z0mo8lfmzx0.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
@@ -284,12 +323,13 @@ entry:
   ret i64 %3
 }
 
-; 60 occurrences:
+; 61 occurrences:
 ; abseil-cpp/optimized/pool_urbg_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; linux/optimized/process.ll
 ; node/optimized/simdutf.ll
+; php/optimized/dow.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtxlog.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
@@ -363,14 +403,13 @@ entry:
   ret i64 %3
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; cvc5/optimized/extf_solver.cpp.ll
 ; cvc5/optimized/regexp_solver.cpp.ll
 ; cvc5/optimized/theory_strings_preprocess.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openusd/optimized/convolve.c.ll
 ; postgres/optimized/ginentrypage.ll

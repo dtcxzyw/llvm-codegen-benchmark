@@ -96,7 +96,7 @@ func0000000000000001:                   # @func0000000000000001
 .LCPI3_1:
 	.short	512                             # 0x200
 	.short	512                             # 0x200
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpord	.LCPI3_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqw	%ymm0, %ymm1, %k0
 	vpmovm2b	%k0, %xmm0

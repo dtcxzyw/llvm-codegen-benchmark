@@ -10,13 +10,12 @@ entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = and i64 %2, 64
   %4 = and i64 %1, 1
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = or disjoint i64 %5, %3
   ret i64 %6
 }
 
-; 11 occurrences:
-; cmake/optimized/archive_pack_dev.c.ll
+; 10 occurrences:
 ; linux/optimized/page.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
@@ -33,7 +32,7 @@ entry:
   %2 = shl i64 %1, 3
   %3 = and i64 %2, 64
   %4 = and i64 %1, 1
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = or disjoint i64 %5, %3
   ret i64 %6
 }
@@ -72,7 +71,7 @@ entry:
   %2 = shl i64 %1, 52
   %3 = and i64 %2, 288230376151711744
   %4 = and i64 %1, -67
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = or i64 %5, %3
   ret i64 %6
 }
@@ -83,7 +82,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = shl i64 %1, 31
   %5 = and i64 %4, 4611686018427387904
   %6 = or i64 %5, %3

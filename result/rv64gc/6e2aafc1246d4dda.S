@@ -10,7 +10,7 @@ func0000000000000003:                   # @func0000000000000003
 	beqz	a1, .LBB1_2
 	li	a2, 44
 .LBB1_2:                                # %entry
-	mul	a0, a2, a0
+	mul	a0, a0, a2
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a1, a1, 1

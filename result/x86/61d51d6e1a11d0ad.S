@@ -3,7 +3,7 @@ func0000000000000008:                   # @func0000000000000008
 	subl	%edx, %eax
 	xorl	%edx, %edx
 	divl	%edi
-	cmpl	$7, %eax
+	cmpl	$6, %eax
 	setae	%al
 	retq
 func000000000000000a:                   # @func000000000000000a

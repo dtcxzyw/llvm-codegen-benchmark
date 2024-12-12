@@ -19,7 +19,7 @@ entry:
   %2 = add i32 %1, 8
   %3 = lshr i32 %2, 3
   %4 = add nuw nsw i32 %3, 7
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -54,10 +54,8 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; darktable/optimized/png.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; php/optimized/ir_gcm.ll
 ; wireshark/optimized/packet-dhcp.c.ll
 ; Function Attrs: nounwind
@@ -78,7 +76,7 @@ entry:
   %2 = add nsw i32 %1, -4
   %3 = lshr i32 %2, 1
   %4 = add nuw nsw i32 %3, 1
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -102,12 +100,11 @@ entry:
   %2 = add nsw i32 %1, -262
   %3 = lshr i32 %2, 2
   %4 = add nsw i32 %3, -1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 3 occurrences:
-; icu/optimized/gregoimp.ll
+; 2 occurrences:
 ; postgres/optimized/network_selfuncs.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; Function Attrs: nounwind

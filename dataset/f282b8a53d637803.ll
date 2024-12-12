@@ -5,10 +5,10 @@
 ; lightgbm/optimized/train_share_states.cpp.ll
 ; tev/optimized/Ipc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = ashr exact i64 %0, 3
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -18,10 +18,10 @@ entry:
 ; tev/optimized/Ipc.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = ashr exact i64 %0, 4
   %6 = icmp ugt i64 %5, %4
   ret i1 %6
@@ -31,10 +31,10 @@ entry:
 ; faiss/optimized/VectorTransform.cpp.ll
 ; opencv/optimized/calibration.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = ashr exact i64 %0, 2
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -44,10 +44,10 @@ entry:
 ; opencv/optimized/tree.cpp.ll
 ; xgboost/optimized/multi_target_tree_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = ashr exact i64 %0, 2
   %6 = icmp ult i64 %5, %4
   ret i1 %6

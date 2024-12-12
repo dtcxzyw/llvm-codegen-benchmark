@@ -1,3 +1,9 @@
+func0000000000000018:                   # @func0000000000000018
+	testb	$14, %dl
+	setne	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
 func0000000000000001:                   # @func0000000000000001
 	testb	$2, %dl
 	sete	%al

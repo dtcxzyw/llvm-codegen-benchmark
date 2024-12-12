@@ -1,7 +1,7 @@
 
-%"class.re2::SparseArray<int>::IndexValue.2486787" = type { i32, i32 }
+%"class.re2::SparseArray<int>::IndexValue.2602231" = type { i32, i32 }
 
-; 441 occurrences:
+; 447 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
@@ -13,6 +13,14 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
@@ -338,7 +346,6 @@
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; php/optimized/html.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; protobuf/optimized/csharp_message.cc.ll
 ; protobuf/optimized/helpers.cc.ll
 ; protobuf/optimized/message_differencer.cc.ll
@@ -349,7 +356,6 @@
 ; quantlib/optimized/discretizedswap.ll
 ; quantlib/optimized/fdmblackscholesmesher.ll
 ; quantlib/optimized/fireflyalgorithm.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/generalstatistics.ll
 ; quantlib/optimized/hestonslvmcmodel.ll
 ; quantlib/optimized/markovfunctional.ll
@@ -448,7 +454,7 @@ define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr nusw %"class.re2::SparseArray<int>::IndexValue.2486787", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.re2::SparseArray<int>::IndexValue.2602231", ptr %0, i64 %3
   ret ptr %4
 }
 

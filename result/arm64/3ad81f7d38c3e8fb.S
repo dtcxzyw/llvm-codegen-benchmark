@@ -23,14 +23,14 @@ func0000000000000032:                   // @func0000000000000032
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func000000000000003e:                   // @func000000000000003e
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	add	x8, x2, x1, lsl #3
 	and	x8, x8, #0xfffffffffffffff8
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func000000000000007e:                   // @func000000000000007e
+func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
 	add	x8, x2, x1, lsl #3
 	and	x8, x8, #0xfffffffffffffff8

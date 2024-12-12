@@ -1,18 +1,4 @@
-func0000000000000113:                   # @func0000000000000113
-	andi	a1, a1, 255
-	lui	a2, 4096
-	sltiu	a3, a1, 91
-	czero.nez	a2, a2, a3
-	lui	a3, 53248
-	add	a2, a2, a3
-	lui	a3, 49152
-	sltiu	a1, a1, 81
-	czero.eqz	a3, a3, a1
-	czero.nez	a1, a2, a1
-	or	a1, a1, a3
-	addw	a0, a0, a1
-	ret
-func0000000000000047:                   # @func0000000000000047
+func0000000000000087:                   # @func0000000000000087
 	andi	a1, a1, 255
 	li	a2, -3
 	li	a3, 2
@@ -24,7 +10,7 @@ func0000000000000047:                   # @func0000000000000047
 	or	a1, a1, a3
 	addw	a0, a0, a1
 	ret
-func00000000000002a9:                   # @func00000000000002a9
+func0000000000000529:                   # @func0000000000000529
 	sext.b	a1, a1
 	li	a2, 7
 	slti	a3, a1, 65
@@ -37,20 +23,7 @@ func00000000000002a9:                   # @func00000000000002a9
 	or	a1, a1, a3
 	addw	a0, a0, a1
 	ret
-func0000000000000221:                   # @func0000000000000221
-	andi	a1, a1, 255
-	li	a2, -19
-	sltiu	a3, a1, 65
-	czero.eqz	a2, a2, a3
-	li	a3, -87
-	sltiu	a1, a1, 97
-	addi	a2, a2, -29
-	czero.nez	a3, a3, a1
-	czero.eqz	a1, a2, a1
-	or	a1, a1, a3
-	addw	a0, a0, a1
-	ret
-func0000000000000111:                   # @func0000000000000111
+func0000000000000211:                   # @func0000000000000211
 	andi	a1, a1, 255
 	lui	a2, 1048531
 	sltiu	a3, a1, 187
@@ -67,7 +40,7 @@ func0000000000000111:                   # @func0000000000000111
 	or	a1, a1, a3
 	addw	a0, a0, a1
 	ret
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	andi	a1, a1, 255
 	li	a2, -15
 	addi	a3, a1, -1
@@ -80,7 +53,7 @@ func0000000000000045:                   # @func0000000000000045
 	or	a1, a1, a3
 	addw	a0, a0, a1
 	ret
-func0000000000000220:                   # @func0000000000000220
+func0000000000000420:                   # @func0000000000000420
 	andi	a1, a1, 255
 	li	a2, 4
 	sltiu	a3, a1, 10
@@ -92,7 +65,19 @@ func0000000000000220:                   # @func0000000000000220
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000223:                   # @func0000000000000223
+func0000000000000421:                   # @func0000000000000421
+	andi	a1, a1, 255
+	li	a2, 3
+	sltiu	a3, a1, 10
+	sltiu	a1, a1, 100
+	xori	a3, a3, 1
+	addi	a3, a3, 1
+	czero.nez	a2, a2, a1
+	czero.eqz	a1, a3, a1
+	or	a1, a1, a2
+	addw	a0, a0, a1
+	ret
+func0000000000000423:                   # @func0000000000000423
 	andi	a1, a1, 255
 	li	a2, 3
 	sltiu	a3, a1, 10

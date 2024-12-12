@@ -21,3 +21,8 @@ func0000000000000015:                   # @func0000000000000015
 	addiw	a1, a1, 1
 	or	a0, a0, a1
 	ret
+func00000000000000df:                   # @func00000000000000df
+	slliw	a0, a0, 1
+	slli	a0, a0, 1
+	addi	a0, a0, -1
+	ret

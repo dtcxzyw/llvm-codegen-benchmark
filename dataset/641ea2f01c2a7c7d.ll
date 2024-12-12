@@ -47,6 +47,7 @@
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
@@ -58,7 +59,6 @@
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; php/optimized/dirstream.ll
-; php/optimized/pcre2_maketables.ll
 ; php/optimized/phar.ll
 ; ripgrep-rs/optimized/17szqs4crgj36yow.ll
 ; ruby/optimized/time.ll
@@ -72,12 +72,12 @@
 define i16 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -32768
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = or disjoint i16 %3, 448
   ret i16 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/types.c.ll
 ; grpc/optimized/chttp2_transport.cc.ll
@@ -94,7 +94,6 @@ entry:
 ; php/optimized/phar_object.ll
 ; php/optimized/tar.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/ripper.ll
 ; sqlite/optimized/sqlite3.ll
@@ -102,7 +101,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -514
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   %4 = or i16 %3, 1
   ret i16 %4
 }
@@ -131,7 +130,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 191
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   %4 = or disjoint i16 %3, 64
   ret i16 %4
 }

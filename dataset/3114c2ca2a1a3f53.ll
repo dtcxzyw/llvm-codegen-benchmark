@@ -11,7 +11,7 @@ entry:
   %4 = sext i16 %1 to i32
   %5 = sub nsw i32 %4, %3
   %6 = sext i32 %5 to i64
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 

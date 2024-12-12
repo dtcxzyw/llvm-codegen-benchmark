@@ -1,5 +1,5 @@
 
-; 227 occurrences:
+; 224 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/giaQbf.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -21,6 +21,7 @@
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; casadi/optimized/fmu2.cpp.ll
@@ -69,7 +70,6 @@
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; linux/optimized/bitmap.ll
-; linux/optimized/csum-partial_64.ll
 ; linux/optimized/drm_client_modeset.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dp.ll
@@ -122,7 +122,6 @@
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/mesh_model_state.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/gms.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
@@ -145,8 +144,6 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_alloc.ll
 ; postgres/optimized/bitmapset.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll

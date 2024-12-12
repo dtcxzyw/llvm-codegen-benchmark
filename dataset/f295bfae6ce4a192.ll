@@ -16,7 +16,7 @@ entry:
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
 ; wireshark/optimized/packet-dect-nwk.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0) #0 {
+define i1 @func000000000000002c(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 1
   %2 = icmp ne i8 %1, 0
@@ -39,7 +39,7 @@ entry:
 ; yosys/optimized/fstapi.ll
 ; zxing/optimized/MCDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0) #0 {
+define i1 @func0000000000000021(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 8
   %2 = icmp eq i8 %1, 0
@@ -54,17 +54,6 @@ define i1 @func000000000000000c(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 64
   %2 = icmp ne i8 %1, 0
-  ret i1 %2
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_opt_loop.ll
-; luajit/optimized/lj_opt_loop_dyn.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0) #0 {
-entry:
-  %1 = and i8 %0, 31
-  %2 = icmp ult i8 %1, 3
   ret i1 %2
 }
 

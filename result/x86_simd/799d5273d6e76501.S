@@ -22,6 +22,14 @@ func0000000000000009:                   # @func0000000000000009
 	vpcmpltud	%ymm2, %ymm1, %k1
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltud	%ymm2, %ymm1, %k1
+	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
+	retq
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleud	%ymm2, %ymm1, %k1
+	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
+	retq
 func000000000000000c:                   # @func000000000000000c
 	vpcmpeqd	%ymm2, %ymm1, %k1
 	vmovdqa32	%ymm1, %ymm0 {%k1}

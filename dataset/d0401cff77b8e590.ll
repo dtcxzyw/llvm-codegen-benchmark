@@ -7,13 +7,13 @@
 define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 1619
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = lshr i32 %5, 13
   ret i32 %6
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; libjpeg-turbo/optimized/jdsample.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
@@ -21,6 +21,7 @@ entry:
 ; libwebp/optimized/yuv.c.ll
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -45,7 +46,7 @@ entry:
 define i32 @func000000000000007e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 7500
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   %6 = lshr i32 %5, 8
   ret i32 %6
@@ -64,16 +65,15 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; libwebp/optimized/yuv.c.ll
-; opencv/optimized/cap_v4l.cpp.ll
 ; stb/optimized/stb_image.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 77
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = lshr i32 %5, 8
   ret i32 %6
@@ -89,7 +89,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 1751477356
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = lshr i32 %5, 8
   ret i32 %6
@@ -102,7 +102,7 @@ entry:
 define i32 @func0000000000000060(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 460324
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = lshr i32 %5, 20
   ret i32 %6
@@ -114,7 +114,7 @@ entry:
 define i32 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 4191920
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = add nuw i32 %4, %0
   %6 = lshr i32 %5, 14
   ret i32 %6
@@ -126,7 +126,7 @@ entry:
 define i32 @func000000000000007c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 4191289
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw i32 %4, %0
   %6 = lshr i32 %5, 14
   ret i32 %6
@@ -138,7 +138,7 @@ entry:
 define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %2, 9617
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = lshr i32 %5, 16
   ret i32 %6
@@ -150,7 +150,7 @@ entry:
 define i32 @func000000000000002e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, -19081
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   %6 = lshr i32 %5, 18
   ret i32 %6
@@ -162,7 +162,7 @@ entry:
 define i32 @func000000000000007a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 115200
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = lshr i32 %5, 18
   ret i32 %6

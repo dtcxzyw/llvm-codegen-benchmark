@@ -9,7 +9,7 @@
 ; ruby/optimized/gc.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 32
   %3 = icmp eq i64 %2, 0
@@ -49,7 +49,7 @@ entry:
 ; grpc/optimized/work_serializer.cc.ll
 ; lief/optimized/CoreFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967294
   %3 = icmp ne i64 %2, 0
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0

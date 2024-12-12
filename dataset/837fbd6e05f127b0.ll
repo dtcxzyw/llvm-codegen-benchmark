@@ -68,6 +68,28 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a8(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ole double %1, %2
+  %4 = fcmp oeq double %0, 1.800000e+02
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000059(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ugt double %1, %2
+  %4 = fcmp ueq double %0, 0x7FF0000000000000
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; hermes/optimized/String.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(double %0, double %1, double %2) #0 {

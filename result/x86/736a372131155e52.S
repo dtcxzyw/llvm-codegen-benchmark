@@ -19,12 +19,6 @@ func00000000000000a0:                   # @func00000000000000a0
 	andnl	%edi, %edx, %eax
 	addl	%esi, %eax
 	retq
-func0000000000000088:                   # @func0000000000000088
-	xorl	%eax, %eax
-	cmpq	$32, %rdx
-	cmovael	%edi, %eax
-	addl	%esi, %eax
-	retq
 func0000000000000048:                   # @func0000000000000048
 	leal	(%rsi,%rdi), %eax
 	retq

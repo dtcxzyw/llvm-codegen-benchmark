@@ -1,13 +1,12 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; curl/optimized/libcurl_la-curl_sasl.ll
 ; darktable/optimized/TiffIFD.cpp.ll
-; freetype/optimized/cff.c.ll
 ; icu/optimized/number_grouping.ll
 ; libquic/optimized/ssl_lib.c.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/sky2.ll
-; spike/optimized/clz16.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i16 %1, i64 %2) #0 {
 entry:

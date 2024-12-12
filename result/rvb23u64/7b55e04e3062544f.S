@@ -1,11 +1,18 @@
-func000000000000005a:                   # @func000000000000005a
+func000000000000005f:                   # @func000000000000005f
 	slli	a2, a2, 7
 	add	a1, a1, a2
 	andi	a0, a0, 255
 	sh3add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
-func0000000000000018:                   # @func0000000000000018
+func000000000000007f:                   # @func000000000000007f
+	slli	a2, a2, 7
+	add	a1, a1, a2
+	andi	a0, a0, 255
+	sh3add	a0, a0, a1
+	addi	a0, a0, 16
+	ret
+func000000000000001c:                   # @func000000000000001c
 	andi	a0, a0, 255
 	slli	a3, a0, 4
 	slli	a0, a0, 7
@@ -18,20 +25,21 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a0, a0, 2047
 	addi	a0, a0, 449
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000004f:                   # @func000000000000004f
 	add	a1, a1, a2
 	andi	a0, a0, 255
 	sh3add	a0, a0, a1
 	addi	a0, a0, 264
 	ret
-func000000000000004e:                   # @func000000000000004e
+func000000000000006f:                   # @func000000000000006f
 	andi	a0, a0, 255
-	sh3add	a2, a2, a2
-	sh1add	a0, a2, a0
-	sh3add	a0, a0, a1
-	addi	a0, a0, 72
+	li	a3, 1596
+	mul	a2, a2, a3
+	add	a1, a1, a2
+	sh1add	a0, a0, a1
+	addi	a0, a0, 338
 	ret
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	add	a1, a1, a2
 	andi	a0, a0, 255
 	slli	a0, a0, 4
@@ -45,7 +53,7 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	addi	a0, a0, -272
 	ret
-func0000000000000058:                   # @func0000000000000058
+func000000000000007c:                   # @func000000000000007c
 	add	a1, a1, a2
 	andi	a0, a0, 255
 	add	a0, a0, a1

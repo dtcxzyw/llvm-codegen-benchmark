@@ -1,21 +1,19 @@
 
-%"struct.std::pair.2486414" = type { %"class.std::__cxx11::basic_string.2486415", ptr }
-%"class.std::__cxx11::basic_string.2486415" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2486416", i64, %union.anon.9.2486417 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2486416" = type { ptr }
-%union.anon.9.2486417 = type { i64, [8 x i8] }
-%"class.std::vector.2744616" = type { %"struct.std::_Vector_base.2744617" }
-%"struct.std::_Vector_base.2744617" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2744618" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2744618" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2744619" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2744619" = type { ptr, ptr, ptr }
+%"struct.std::pair.2601858" = type { %"class.std::__cxx11::basic_string.2601859", ptr }
+%"class.std::__cxx11::basic_string.2601859" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860", i64, %union.anon.9.2601861 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860" = type { ptr }
+%union.anon.9.2601861 = type { i64, [8 x i8] }
 
-; 13 occurrences:
+; 15 occurrences:
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/fourstep.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/mpdecimal.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; linux/optimized/lzo1x_compress.ll
+; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
+; openusd/optimized/lz4.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; ruby/optimized/bignum.ll
 ; wireshark/optimized/manuf_dialog.cpp.ll
@@ -30,7 +28,7 @@ entry:
   ret ptr %3
 }
 
-; 283 occurrences:
+; 286 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; assimp/optimized/B3DImporter.cpp.ll
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
@@ -42,6 +40,11 @@ entry:
 ; assimp/optimized/X3DGeoHelper.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/src.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ceres/optimized/inner_product_computer.cc.ll
 ; cmake/optimized/cmDebuggerVariables.cxx.ll
 ; cmake/optimized/cmExportFileGenerator.cxx.ll
@@ -199,7 +202,6 @@ entry:
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; nix/optimized/buildenv.ll
-; nix/optimized/nix-env.ll
 ; node/optimized/libnode.cleanup_queue.ll
 ; nuttx/optimized/lib_memoryregion.c.ll
 ; oiio/optimized/exif.cpp.ll
@@ -249,13 +251,12 @@ entry:
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pbrt-v4/optimized/paramdict.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/feature_resolver.cc.ll
 ; protobuf/optimized/retention.cc.ll
 ; protobuf/optimized/wire_format.cc.ll
 ; pybind11/optimized/test_numpy_dtypes.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
+; quantlib/optimized/twofactormodel.ll
 ; re2/optimized/set.cc.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
@@ -315,20 +316,10 @@ entry:
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
-entry:
-  %2 = udiv i64 %1, 80
-  %3 = getelementptr nusw %"struct.std::pair.2486414", ptr %0, i64 %2
-  ret ptr %3
-}
-
-; 1 occurrences:
-; quantlib/optimized/twofactormodel.ll
-; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = udiv i64 %1, 3
-  %3 = getelementptr nusw nuw %"class.std::vector.2744616", ptr %0, i64 %2
+  %2 = udiv i64 %1, 80
+  %3 = getelementptr nusw nuw %"struct.std::pair.2601858", ptr %0, i64 %2
   ret ptr %3
 }
 

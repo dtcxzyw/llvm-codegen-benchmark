@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -102,8 +103,8 @@
 define i32 @func0000000000000020(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = add nuw i64 %1, %3
+  %5 = add i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -119,8 +120,8 @@ entry:
 define i32 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = add i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -131,7 +132,7 @@ entry:
 define i32 @func0000000000000014(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -143,7 +144,7 @@ entry:
 define i32 @func0000000000000030(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6

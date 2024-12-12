@@ -5,7 +5,7 @@
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; opencv/optimized/semantic_segmentation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = sdiv exact i64 %0, 20
@@ -17,7 +17,7 @@ entry:
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = sdiv exact i64 %0, 20
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = sdiv exact i64 %0, 320
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_display_power_map.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = sdiv exact i64 %0, 24
@@ -52,7 +52,7 @@ entry:
 ; opencv/optimized/accum_layer.cpp.ll
 ; opencv/optimized/scale_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = sdiv exact i64 %0, 96

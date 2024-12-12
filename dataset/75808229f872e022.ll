@@ -22,12 +22,13 @@ entry:
   ret i16 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; freetype/optimized/ftbitmap.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/intel_rps.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll

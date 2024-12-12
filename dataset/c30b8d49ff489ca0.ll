@@ -22,7 +22,7 @@ entry:
 ; llvm/optimized/GVNHoist.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000401(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sub i32 0, %2

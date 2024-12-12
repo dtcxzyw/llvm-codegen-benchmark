@@ -3,12 +3,23 @@ func0000000000000180:                   # @func0000000000000180
 	sbbq	$-1, %rdi
 	leaq	(,%rdi,4), %rax
 	retq
+func000000000000018c:                   # @func000000000000018c
+	movq	%rdi, %rax
+	cmpl	$1, %esi
+	sbbl	$-1, %eax
+	shlq	$32, %rax
+	retq
 func0000000000000140:                   # @func0000000000000140
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	setg	%al
 	addl	%edi, %eax
 	shlq	$32, %rax
+	retq
+func0000000000000025:                   # @func0000000000000025
+	cmpl	$1, %esi
+	adcq	$0, %rdi
+	leaq	(,%rdi,8), %rax
 	retq
 func0000000000000020:                   # @func0000000000000020
 	cmpl	$1, %esi

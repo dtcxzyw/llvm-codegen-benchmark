@@ -14,7 +14,7 @@ entry:
   %3 = lshr i8 %2, 3
   %4 = zext nneg i8 %3 to i16
   %5 = shl nuw nsw i16 %4, 10
-  %6 = or disjoint i16 %5, %1
+  %6 = or disjoint i16 %1, %5
   %7 = or disjoint i16 %6, %0
   ret i16 %7
 }
@@ -43,7 +43,7 @@ entry:
   %3 = lshr i8 %2, 3
   %4 = zext nneg i8 %3 to i16
   %5 = shl nuw i16 %4, 11
-  %6 = or disjoint i16 %5, %1
+  %6 = or disjoint i16 %1, %5
   %7 = or disjoint i16 %6, %0
   ret i16 %7
 }

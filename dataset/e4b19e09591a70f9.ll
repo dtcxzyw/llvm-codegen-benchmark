@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 94 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -11,6 +11,7 @@
 ; cvc5/optimized/justification_strategy.cpp.ll
 ; cvc5/optimized/relevance_manager.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
+; grpc/optimized/ev_poll_posix.cc.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; icu/optimized/collationruleparser.ll
 ; icu/optimized/formatted_string_builder.ll
@@ -23,7 +24,7 @@
 ; icu/optimized/usearch.ll
 ; icu/optimized/ushape.ll
 ; icu/optimized/utext.ll
-; libevent/optimized/evmap.c.ll
+; libevent/optimized/poll.c.ll
 ; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/ematch.ll
@@ -31,7 +32,6 @@
 ; linux/optimized/hdac_stream.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/intel_display_power_well.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memfd.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mmu_gather.ll
@@ -52,6 +52,7 @@
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_label.ll
 ; oiio/optimized/DPXHeader.cpp.ll
 ; opencc/optimized/Config.cpp.ll
 ; openexr/optimized/unpack.c.ll
@@ -90,6 +91,9 @@
 ; wireshark/optimized/packet-scsi-osd.c.ll
 ; wireshark/optimized/packet-xcsl.c.ll
 ; wireshark/optimized/packet_list.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i16 %2) #0 {
 entry:
@@ -104,7 +108,7 @@ entry:
 ; folly/optimized/File.cpp.ll
 ; vcpkg/optimized/strings.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 6
   %4 = icmp eq i16 %3, 0

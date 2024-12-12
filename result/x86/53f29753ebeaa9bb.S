@@ -1,14 +1,14 @@
 func000000000000000c:                   # @func000000000000000c
-	movl	$15, %eax
+	movl	$1, %eax
 	shlxq	%rdx, %rax, %rax
-	testq	%rsi, %rax
+	testq	%rax, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movl	$65535, %eax                    # imm = 0xFFFF
 	shlxq	%rdx, %rax, %rax
-	testq	%rsi, %rax
+	testq	%rax, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq

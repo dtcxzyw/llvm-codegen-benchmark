@@ -74,7 +74,7 @@ func0000000000000004:                   # @func0000000000000004
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpsrlq	$16, %ymm0, %ymm0
 	vpmovqb	%ymm0, %xmm0
 	vpaddb	.LCPI1_0(%rip), %xmm0, %xmm0

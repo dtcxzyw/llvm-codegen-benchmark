@@ -10,7 +10,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpbroadcastd	.LCPI0_2(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vpsllvd	%xmm1, %xmm2, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:

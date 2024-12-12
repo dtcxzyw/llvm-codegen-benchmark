@@ -18,11 +18,11 @@
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000381(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw nsw i32 %3, 13
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -46,11 +46,11 @@ entry:
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001da(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw nsw i32 %3, 13
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
@@ -73,7 +73,7 @@ entry:
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw nsw i32 %3, 13
@@ -85,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/picture.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add i32 %3, 12
@@ -97,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/padding.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000206(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = sub i32 %3, %0
@@ -108,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ca(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000038a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw nsw i32 %3, 8

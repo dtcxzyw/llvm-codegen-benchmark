@@ -1,8 +1,13 @@
 
-; 9 occurrences:
+; 14 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
-; darktable/optimized/introspection_temperature.c.ll
-; hermes/optimized/JSProxy.cpp.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll

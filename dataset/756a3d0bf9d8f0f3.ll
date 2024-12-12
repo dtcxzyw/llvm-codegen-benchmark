@@ -20,7 +20,7 @@
 define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = add i64 %3, -34359737848001
   %5 = icmp ult i64 %4, -34359737856000
   ret i1 %5
@@ -36,10 +36,10 @@ entry:
 ; opencv/optimized/lapack.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = add i64 %3, -34359737848001
   %5 = icmp ult i64 %4, -34359737856000
   ret i1 %5
@@ -56,10 +56,10 @@ entry:
 ; z3/optimized/mpff.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = add nsw i64 %3, -2147483648
   %5 = icmp ult i64 %4, -4294967296
   ret i1 %5
@@ -74,7 +74,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp eq i64 %3, 4
   ret i1 %4
 }
@@ -87,7 +87,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = add i64 %3, -1
   %5 = icmp ult i64 %4, 28
   ret i1 %5
@@ -99,7 +99,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ne i64 %3, -16
   ret i1 %4
 }
@@ -108,10 +108,10 @@ entry:
 ; faiss/optimized/IndexIVF.cpp.ll
 ; faiss/optimized/index_read.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp eq i64 %3, 1
   ret i1 %4
 }
@@ -119,10 +119,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp eq i64 %3, -1
   ret i1 %4
 }

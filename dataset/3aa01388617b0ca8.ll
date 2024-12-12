@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 4
   %2 = add nsw i64 %0, -1
@@ -25,21 +25,34 @@ entry:
   ret i1 %3
 }
 
+; 3 occurrences:
+; boost/optimized/round_robin.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0) #0 {
+entry:
+  %1 = add i64 %0, 72
+  %2 = add i64 %0, -160
+  %3 = icmp ult i64 %2, %1
+  ret i1 %3
+}
+
 ; 1 occurrences:
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000034(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 1
   %2 = add nsw i64 %0, -1
-  %3 = icmp ult i64 %2, %1
+  %3 = icmp samesign ult i64 %2, %1
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; faiss/optimized/index_factory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0) #0 {
+define i1 @func00000000000000a4(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -3
   %2 = add nsw i64 %0, -4
@@ -61,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0) #0 {
+define i1 @func00000000000000a8(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -1
   %2 = add nsw i64 %0, 1

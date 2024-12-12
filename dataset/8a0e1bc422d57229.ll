@@ -49,6 +49,19 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i32 @func000000000000002d(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw i32 %2, 16
+  %4 = or disjoint i32 %3, %1
+  %5 = and i32 %4, 16777215
+  %6 = shl nuw i32 %0, 24
+  %7 = or disjoint i32 %6, %5
+  ret i32 %7
+}
+
+; 1 occurrences:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
@@ -67,7 +80,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = and i32 %4, 16777215
   %6 = shl i32 %0, 24
   %7 = or disjoint i32 %6, %5
@@ -107,7 +120,7 @@ define i32 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 24
   %.masked = and i32 %1, -8323073
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   %5 = shl nuw nsw i32 %0, 16
   %6 = or i32 %4, %5
   ret i32 %6

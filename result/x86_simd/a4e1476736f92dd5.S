@@ -4,7 +4,7 @@
 	.long	2920577761                      # 0xae147ae1
 .LCPI0_2:
 	.long	4294248133                      # 0xfff506c5
-func0000000000000064:                   # @func0000000000000064
+func0000000000000065:                   # @func0000000000000065
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpshufd	$245, %ymm1, %ymm2              # ymm2 = ymm1[1,1,3,3,5,5,7,7]
@@ -25,7 +25,7 @@ func0000000000000064:                   # @func0000000000000064
 	.long	2920577761                      # 0xae147ae1
 .LCPI1_2:
 	.long	4294248133                      # 0xfff506c5
-func0000000000000065:                   # @func0000000000000065
+func0000000000000064:                   # @func0000000000000064
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpshufd	$245, %ymm1, %ymm2              # ymm2 = ymm1[1,1,3,3,5,5,7,7]

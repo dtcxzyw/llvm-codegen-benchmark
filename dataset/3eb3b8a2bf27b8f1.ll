@@ -15,7 +15,7 @@
 ; spike/optimized/s_roundToI64.ll
 ; spike/optimized/s_roundToUI32.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0) #0 {
+define i1 @func0000000000000181(i8 %0) #0 {
 entry:
   %1 = and i8 %0, -5
   %2 = icmp ne i8 %1, 0

@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; darktable/optimized/export.c.ll
 ; llvm/optimized/MatchFilePath.cpp.ll
 ; tree-sitter-rs/optimized/2czk4owdq0ube9pw.ll
 ; tree-sitter-rs/optimized/3flgp21wlj9z2cn6.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:

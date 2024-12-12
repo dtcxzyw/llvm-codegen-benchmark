@@ -27,9 +27,9 @@ entry:
 ; postgres/optimized/pgstat_shmem.ll
 ; postgres/optimized/tidbitmap.ll
 ; Function Attrs: nounwind
-define double @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+define double @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 2
+  %3 = icmp samesign ult i64 %2, 2
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = uitofp i64 %4 to double
   ret double %5

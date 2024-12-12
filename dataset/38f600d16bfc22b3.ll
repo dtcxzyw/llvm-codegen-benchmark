@@ -75,6 +75,24 @@ entry:
   ret i1 %5
 }
 
+; 8 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000db(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp uge double %0, %2
+  %4 = fcmp ule double %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; Function Attrs: nounwind

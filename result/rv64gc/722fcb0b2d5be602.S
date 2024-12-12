@@ -1,11 +1,11 @@
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	subw	a1, a1, a0
 	addw	a1, a1, a2
 	sltiu	a0, a1, 7
 	ret
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	subw	a1, a1, a0
@@ -26,7 +26,7 @@ func000000000000000a:                   # @func000000000000000a
 	addw	a1, a1, a2
 	sgtz	a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	subw	a1, a1, a0
@@ -41,14 +41,7 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a1, 65
 	xori	a0, a0, 1
 	ret
-func0000000000000004:                   # @func0000000000000004
-	slli	a2, a2, 48
-	srli	a2, a2, 48
-	subw	a1, a1, a0
-	addw	a1, a1, a2
-	sltiu	a0, a1, 32
-	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a0, a0
 	slli	a2, a2, 48
 	srli	a2, a2, 48
@@ -56,7 +49,7 @@ func000000000000005a:                   # @func000000000000005a
 	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func0000000000000144:                   # @func0000000000000144
+func0000000000000284:                   # @func0000000000000284
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	subw	a1, a1, a0
@@ -64,7 +57,7 @@ func0000000000000144:                   # @func0000000000000144
 	srliw	a0, a1, 16
 	seqz	a0, a0
 	ret
-func00000000000001d4:                   # @func00000000000001d4
+func00000000000003a4:                   # @func00000000000003a4
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	subw	a1, a1, a0
@@ -72,10 +65,17 @@ func00000000000001d4:                   # @func00000000000001d4
 	srliw	a0, a1, 16
 	seqz	a0, a0
 	ret
-func00000000000001d6:                   # @func00000000000001d6
+func00000000000003a6:                   # @func00000000000003a6
 	sext.w	a0, a0
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	addw	a1, a1, a2
 	slt	a0, a1, a0
+	ret
+func0000000000000004:                   # @func0000000000000004
+	slli	a2, a2, 48
+	srli	a2, a2, 48
+	subw	a1, a1, a0
+	addw	a1, a1, a2
+	sltiu	a0, a1, 64
 	ret

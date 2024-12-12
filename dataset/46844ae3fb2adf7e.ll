@@ -1,7 +1,8 @@
 
-; 89 occurrences:
+; 91 occurrences:
 ; abc/optimized/saigIsoFast.c.ll
 ; arrow/optimized/compare_internal.cc.ll
+; boost/optimized/operations.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; freetype/optimized/pshinter.c.ll
 ; freetype/optimized/smooth.c.ll
@@ -66,6 +67,7 @@
 ; php/optimized/block_pass.ll
 ; postgres/optimized/bufmgr.ll
 ; postgres/optimized/libpqwalreceiver.ll
+; postgres/optimized/lwlock.ll
 ; postgres/optimized/ruleutils.ll
 ; proxygen/optimized/HPACKDecoder.cpp.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
@@ -107,43 +109,54 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i32 -1289, i32 -66825
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 
 ; 1 occurrences:
 ; qemu/optimized/tcg-op-gvec.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 15
+  %2 = icmp samesign ugt i32 %1, 15
   %3 = select i1 %2, i32 15, i32 7
   %4 = and i32 %3, %0
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
+; openjdk/optimized/assembler_x86.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
+; wireshark/optimized/packet-socketcan.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, 2
+  %3 = select i1 %2, i32 -32, i32 -16
+  %4 = and i32 %0, %3
+  ret i32 %4
+}
+
+; 14 occurrences:
 ; linux/optimized/8139too.ll
 ; linux/optimized/ich8lan.ll
+; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/CGCUDANV.cpp.ll
+; llvm/optimized/CoroSplit.cpp.ll
+; llvm/optimized/ExpandVariadics.cpp.ll
+; llvm/optimized/FunctionImport.cpp.ll
+; llvm/optimized/FunctionImportUtils.cpp.ll
+; llvm/optimized/GlobalOpt.cpp.ll
+; llvm/optimized/IRMover.cpp.ll
+; llvm/optimized/InstrProfiling.cpp.ll
+; llvm/optimized/LowerEmuTLS.cpp.ll
+; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; openjdk/optimized/output.ll
-; wireshark/optimized/packet-isobus.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 512
   %3 = select i1 %2, i32 15, i32 1
-  %4 = and i32 %3, %0
-  ret i32 %4
-}
-
-; 2 occurrences:
-; openjdk/optimized/assembler_x86.ll
-; wireshark/optimized/packet-socketcan.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, 15
-  %3 = select i1 %2, i32 224, i32 240
   %4 = and i32 %3, %0
   ret i32 %4
 }
@@ -155,6 +168,17 @@ define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, i32 131072, i32 262144
+  %4 = and i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-isobus.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 240
+  %3 = select i1 %2, i32 261888, i32 262143
   %4 = and i32 %3, %0
   ret i32 %4
 }

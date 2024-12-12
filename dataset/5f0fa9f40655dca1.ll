@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/compress.c.ll
-; abc/optimized/exor.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; openssl/optimized/openssl-bin-engine.ll
 ; Function Attrs: nounwind
@@ -14,8 +13,7 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
-; abc/optimized/exor.c.ll
+; 15 occurrences:
 ; hyperscan/optimized/repeat.c.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; linux/optimized/intel_guc_capture.ll
@@ -41,7 +39,6 @@ entry:
 }
 
 ; 23 occurrences:
-; abc/optimized/exor.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -64,6 +61,7 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; pbrt-v4/optimized/samples.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -73,26 +71,28 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 5 occurrences:
+; openexr/optimized/ImfImage.cpp.ll
+; openexr/optimized/ImfTiledMisc.cpp.ll
 ; openexr/optimized/parse_header.c.ll
 ; openusd/optimized/openexr-c.c.ll
+; wireshark/optimized/packet-ncp2222.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func000000000000000f(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 1
-  %4 = add nuw i32 %0, 2
-  %5 = add i32 %4, %3
+  %4 = add nuw nsw i32 %0, 2
+  %5 = add nuw nsw i32 %4, %3
   ret i32 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
 ; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
-; openexr/optimized/ImfImage.cpp.ll
-; openexr/optimized/ImfTiledMisc.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i1 %1, i32 %2) #0 {
 entry:

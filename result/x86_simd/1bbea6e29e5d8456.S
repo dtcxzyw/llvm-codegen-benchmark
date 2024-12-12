@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI1_0:
 	.long	2454267027                      # 0x92492493
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [2454267027,2454267027,2454267027,2454267027,2454267027,2454267027,2454267027,2454267027]
@@ -33,7 +33,7 @@ func0000000000000016:                   # @func0000000000000016
 	.long	85899344                        # 0x51eb850
 .LCPI2_2:
 	.long	42949672                        # 0x28f5c28
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
@@ -48,7 +48,7 @@ func000000000000001c:                   # @func000000000000001c
 	.long	85899344                        # 0x51eb850
 .LCPI3_2:
 	.long	10737418                        # 0xa3d70a
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
@@ -82,7 +82,7 @@ func0000000000000006:                   # @func0000000000000006
 	.long	2454267027                      # 0x92492493
 .LCPI5_1:
 	.long	6                               # 0x6
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI5_0(%rip), %ymm2   # ymm2 = [2454267027,2454267027,2454267027,2454267027,2454267027,2454267027,2454267027,2454267027]
@@ -111,7 +111,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI7_0:
 	.long	4294967294                      # 0xfffffffe
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$31, %ymm0, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm1

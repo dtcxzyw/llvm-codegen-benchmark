@@ -1,22 +1,18 @@
 
-%"struct.folly::f14::detail::F14Chunk.2568933" = type { %"struct.std::array.2568934", i8, i8, %"struct.std::array.53.2568935" }
-%"struct.std::array.2568934" = type { [14 x i8] }
-%"struct.std::array.53.2568935" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2568893"] }
-%"union.std::aligned_storage<8, 8>::type.2568893" = type { [8 x i8] }
+%"struct.folly::f14::detail::F14Chunk.2683307" = type { %"struct.std::array.2683308", i8, i8, %"struct.std::array.53.2683309" }
+%"struct.std::array.2683308" = type { [14 x i8] }
+%"struct.std::array.53.2683309" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2683267"] }
+%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
 
-; 23 occurrences:
+; 19 occurrences:
 ; linux/optimized/fault.ll
 ; linux/optimized/gup.ll
-; linux/optimized/head64.ll
-; linux/optimized/hibernate.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/pti.ll
 ; linux/optimized/rmap.ll
@@ -59,11 +55,11 @@ entry:
 ; proxygen/optimized/Service.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 22
   %4 = and i64 %3, %1
-  %5 = getelementptr nusw %"struct.folly::f14::detail::F14Chunk.2568933", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.folly::f14::detail::F14Chunk.2683307", ptr %0, i64 %4
   ret ptr %5
 }
 

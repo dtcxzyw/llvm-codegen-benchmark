@@ -22,19 +22,6 @@ func000000000000002b:                   # @func000000000000002b
 	vor.vx	v14, v10, a0, v0.t
 	vor.vv	v8, v14, v8
 	ret
-func0000000000000023:                   # @func0000000000000023
-	lui	a0, 272
-	addi	a0, a0, -1
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsgtu.vx	v12, v10, a0
-	vmv.v.i	v10, 0
-	li	a0, 256
-	vmerge.vim	v10, v10, 1, v0
-	vsll.vi	v10, v10, 6
-	vmv1r.v	v0, v12
-	vor.vx	v10, v10, a0, v0.t
-	vor.vv	v8, v10, v8
-	ret
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
@@ -47,6 +34,16 @@ func0000000000000005:                   # @func0000000000000005
 	vmv1r.v	v0, v12
 	vmerge.vxm	v12, v14, a0, v0
 	vor.vv	v10, v12, v10
+	vor.vv	v8, v10, v8
+	ret
+func0000000000000023:                   # @func0000000000000023
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsgtu.vi	v12, v10, 7
+	vmv.v.i	v10, 0
+	vmerge.vim	v10, v10, 1, v0
+	vsll.vi	v10, v10, 2
+	vmv1r.v	v0, v12
+	vor.vi	v10, v10, 2, v0.t
 	vor.vv	v8, v10, v8
 	ret
 func0000000000000006:                   # @func0000000000000006

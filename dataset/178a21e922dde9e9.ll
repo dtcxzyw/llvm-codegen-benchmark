@@ -187,9 +187,11 @@ entry:
   ret i128 %5
 }
 
-; 77 occurrences:
+; 79 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll

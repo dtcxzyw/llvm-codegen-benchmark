@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 16 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; gromacs/optimized/dlarft.cpp.ll
 ; gromacs/optimized/dorgl2.cpp.ll
@@ -13,8 +13,6 @@
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openssl/optimized/libdefault-lib-argon2.ll
 ; rocksdb/optimized/dynamic_bloom.cc.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
@@ -53,15 +51,11 @@ entry:
   ret i32 %4
 }
 
-; 56 occurrences:
+; 52 occurrences:
 ; abc/optimized/aigFrames.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; gromacs/optimized/dlabrd.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
-; gromacs/optimized/dsytd2.cpp.ll
 ; gromacs/optimized/slabrd.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -191,17 +185,6 @@ entry:
   %2 = mul nsw i32 %0, %1
   %3 = add nuw nsw i32 %0, 2
   %4 = add nsw i32 %3, %2
-  ret i32 %4
-}
-
-; 1 occurrences:
-; openblas/optimized/dsytrd_sy2sb.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %0, %1
-  %3 = add nuw i32 %0, 1
-  %4 = add i32 %3, %2
   ret i32 %4
 }
 

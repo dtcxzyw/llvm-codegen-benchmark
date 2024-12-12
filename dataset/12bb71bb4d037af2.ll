@@ -3,7 +3,7 @@
 ; freetype/optimized/autofit.c.ll
 ; ruby/optimized/date_strftime.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, -7
   %4 = icmp sgt i32 %1, %2
@@ -15,10 +15,10 @@ entry:
 ; minetest/optimized/test_random.cpp.ll
 ; postgres/optimized/selfuncs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, -500
-  %4 = icmp ugt i32 %1, %2
+  %4 = icmp samesign ugt i32 %1, %2
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }
@@ -47,7 +47,7 @@ entry:
 ; z3/optimized/solve_eqs.cpp.ll
 ; z3/optimized/solver_preprocess.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, 1
   %4 = icmp ult i32 %1, %2
@@ -77,7 +77,7 @@ entry:
 ; openjdk/optimized/hb-outline.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, 1
   %4 = icmp slt i32 %1, %2

@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000314(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000614(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i8 %1, -1

@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
-; linux/optimized/mii.ll
 ; linux/optimized/vgaarb.ll
 ; php/optimized/zend_inference.ll
 ; stockfish/optimized/position.ll

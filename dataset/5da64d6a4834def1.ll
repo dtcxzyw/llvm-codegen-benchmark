@@ -9,7 +9,7 @@ entry:
   %2 = trunc i8 %1 to i1
   %not. = xor i1 %2, true
   %3 = zext i1 %not. to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -47,7 +47,7 @@ entry:
   %2 = trunc nuw i8 %1 to i1
   %not. = xor i1 %2, true
   %3 = sext i1 %not. to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

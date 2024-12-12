@@ -1,32 +1,32 @@
-func0000000000000094:                   # @func0000000000000094
+func0000000000000124:                   # @func0000000000000124
 	addl	$-257, %edi                     # imm = 0xFEFF
 	addq	$-28, %rdi
 	cmpq	$-20, %rdi
 	setb	%al
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	movslq	%edi, %rax
 	addq	$-285, %rax                     # imm = 0xFEE3
 	cmpq	$-20, %rax
 	setb	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
-	decl	%edi
-	decq	%rdi
-	cmpq	$8, %rdi
-	setb	%al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	decl	%edi
-	addq	$-2, %rdi
-	cmpq	$3, %rdi
-	setb	%al
-	retq
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	cmpl	$2, %edi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpl	$9, %edi
+	sete	%al
+	retq
+func0000000000000024:                   # @func0000000000000024
+	incl	%edi
+	andl	$-2, %edi
+	cmpl	$2, %edi
+	sete	%al
+	retq
+func00000000000000a4:                   # @func00000000000000a4
+	incl	%edi
+	andl	$2147483646, %edi               # imm = 0x7FFFFFFE
+	cmpl	$2, %edi
 	sete	%al
 	retq

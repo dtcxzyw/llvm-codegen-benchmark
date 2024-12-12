@@ -7,7 +7,7 @@
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000047(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000087(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = icmp eq i32 %2, 0
@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = icmp eq i32 %2, 0

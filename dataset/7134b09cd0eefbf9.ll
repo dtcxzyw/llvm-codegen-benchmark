@@ -1,27 +1,6 @@
 
-; 11 occurrences:
-; abseil-cpp/optimized/low_level_alloc.cc.ll
-; qemu/optimized/qobject_qdict.c.ll
-; z3/optimized/bv_internalize.cpp.ll
-; z3/optimized/int_solver.cpp.ll
-; z3/optimized/nlsat_interval_set.cpp.ll
-; z3/optimized/sat_simplifier.cpp.ll
-; z3/optimized/sat_solver.cpp.ll
-; z3/optimized/smt_context.cpp.ll
-; z3/optimized/smt_lookahead.cpp.ll
-; z3/optimized/smt_parallel.cpp.ll
-; z3/optimized/value_factory.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i32 %0) #0 {
-entry:
-  %.neg = mul i32 %0, 405
-  %1 = add i32 %.neg, 454
-  %2 = and i32 %1, 511
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
-}
-
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -121,16 +100,17 @@ entry:
 ; tev/optimized/main.cpp.ll
 ; z3/optimized/smt_case_split_queue.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = mul i32 %0, 6554
   %2 = add i32 %1, 32770
   %3 = and i32 %2, 65534
-  %4 = icmp ult i32 %3, 6554
+  %4 = icmp samesign ult i32 %3, 6554
   ret i1 %4
 }
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -235,6 +215,27 @@ entry:
   %2 = add i32 %1, 32770
   %3 = and i32 %2, 65536
   %4 = icmp ne i32 %3, 0
+  ret i1 %4
+}
+
+; 10 occurrences:
+; abseil-cpp/optimized/low_level_alloc.cc.ll
+; z3/optimized/bv_internalize.cpp.ll
+; z3/optimized/int_solver.cpp.ll
+; z3/optimized/nlsat_interval_set.cpp.ll
+; z3/optimized/sat_simplifier.cpp.ll
+; z3/optimized/sat_solver.cpp.ll
+; z3/optimized/smt_context.cpp.ll
+; z3/optimized/smt_lookahead.cpp.ll
+; z3/optimized/smt_parallel.cpp.ll
+; z3/optimized/value_factory.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i32 %0) #0 {
+entry:
+  %1 = mul i32 %0, 1103515245
+  %2 = add i32 %1, 12345
+  %3 = and i32 %2, 1073741824
+  %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 

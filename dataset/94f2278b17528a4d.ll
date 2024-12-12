@@ -3,7 +3,7 @@
 ; clamav/optimized/events.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000058(i16 %0, i16 %1) #0 {
 entry:
   %.mask = and i16 %1, -256
   %2 = icmp ne i16 %.mask, 256

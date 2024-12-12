@@ -1,6 +1,6 @@
 
-%"class.std::complex.2726875" = type { { double, double } }
-%"class.cv::Point_.3592900" = type { float, float }
+%"class.std::complex.2839348" = type { { double, double } }
+%"class.cv::Point_.3773497" = type { float, float }
 
 ; 3 occurrences:
 ; lodepng/optimized/lodepng_util.cpp.ll
@@ -12,7 +12,7 @@ entry:
   %3 = shl i64 %2, 1
   %4 = and i64 %1, 1
   %5 = or disjoint i64 %4, %3
-  %6 = getelementptr nusw %"class.std::complex.2726875", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.std::complex.2839348", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -40,18 +40,29 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
-; openspiel/optimized/bridge_uncontested_bidding.cc.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 56
   %4 = shl nsw i64 %1, 6
   %5 = or disjoint i64 %4, %3
-  %6 = getelementptr nusw i16, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openspiel/optimized/bridge_uncontested_bidding.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 1
+  %4 = shl nsw i64 %1, 1
+  %5 = or disjoint i64 %4, %3
+  %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -63,7 +74,7 @@ entry:
   %3 = shl nuw i64 %2, 2
   %4 = and i64 %1, 3
   %5 = or disjoint i64 %4, %3
-  %6 = getelementptr nusw %"class.cv::Point_.3592900", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.cv::Point_.3773497", ptr %0, i64 %5
   ret ptr %6
 }
 

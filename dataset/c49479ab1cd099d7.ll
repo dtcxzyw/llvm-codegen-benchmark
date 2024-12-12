@@ -28,7 +28,8 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
 ; openblas/optimized/dsptrd.c.ll

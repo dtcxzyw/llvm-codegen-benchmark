@@ -12,6 +12,7 @@
 ; icu/optimized/islamcal.ll
 ; libpng/optimized/png.c.ll
 ; libwebp/optimized/cwebp.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; msdfgen/optimized/edge-coloring.cpp.ll
 ; opencv/optimized/decoder.cpp.ll
@@ -25,7 +26,6 @@
 ; openjdk/optimized/cmspcs.ll
 ; openjdk/optimized/png.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; quantlib/optimized/analyticcontinuousfixedlookback.ll
 ; quantlib/optimized/analyticcontinuousfloatinglookback.ll

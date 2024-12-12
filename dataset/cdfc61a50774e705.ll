@@ -72,10 +72,9 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; linux/optimized/8250_early.ll
-; linux/optimized/gen_estimator.ll
 ; qemu/optimized/hw_char_serial.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i8 %0) #0 {

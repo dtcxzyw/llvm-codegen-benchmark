@@ -7,7 +7,7 @@ entry:
   %2 = bitcast double %1 to i64
   %3 = lshr i64 %2, 52
   %4 = trunc nuw nsw i64 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = bitcast double %1 to i64
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -36,7 +36,7 @@ entry:
   %2 = bitcast double %1 to i64
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -50,7 +50,7 @@ entry:
   %2 = bitcast double %1 to i64
   %3 = lshr i64 %2, 63
   %4 = trunc nuw nsw i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

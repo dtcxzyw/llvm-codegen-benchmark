@@ -7,7 +7,7 @@
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; msgpack/optimized/speed_test_nested_array.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = zext i32 %0 to i64
@@ -23,7 +23,7 @@ entry:
 ; opencv/optimized/outlier_rejection.cpp.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = zext nneg i32 %0 to i64

@@ -13,7 +13,7 @@ func0000000000000007:                   # @func0000000000000007
 	.quad	7                               # 0x7
 .LCPI1_1:
 	.long	4                               # 0x4
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	vpcmpnltuq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %xmm1   # xmm1 = [4,4,4,4]
 	vpslld	$2, %xmm0, %xmm1 {%k1}
@@ -24,7 +24,7 @@ func0000000000000011:                   # @func0000000000000011
 	.quad	7                               # 0x7
 .LCPI2_1:
 	.long	2                               # 0x2
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	vpcmpnltuq	.LCPI2_0(%rip){1to4}, %ymm1, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %xmm1   # xmm1 = [2,2,2,2]
 	vpaddd	%xmm0, %xmm0, %xmm1 {%k1}

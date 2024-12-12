@@ -1,4 +1,4 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movb	$62, %al
 	bzhiq	%rax, %rdx, %rax
 	incq	%rsi
@@ -6,7 +6,7 @@ func0000000000000034:                   # @func0000000000000034
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
 	incq	%rsi
 	cmpq	%rdx, %rsi

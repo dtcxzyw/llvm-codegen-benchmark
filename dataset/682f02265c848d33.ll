@@ -1,5 +1,5 @@
 
-; 146 occurrences:
+; 143 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; git/optimized/remote-curl.ll
 ; icu/optimized/numparse_affixes.ll
@@ -71,7 +71,6 @@
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -143,14 +142,12 @@
 ; nori/optimized/warptest.cpp.ll
 ; openjdk/optimized/generateOopMap.ll
 ; openjdk/optimized/relocator.ll
-; openssl/optimized/libcrypto-lib-t_pkey.ll
-; openssl/optimized/libcrypto-shlib-t_pkey.ll
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -417,12 +414,12 @@ entry:
 define i64 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 24 occurrences:
+; 26 occurrences:
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/frameobject.ll
 ; gromacs/optimized/bwlzh.c.ll
@@ -447,11 +444,13 @@ entry:
 ; velox/optimized/Sequence.cpp.ll
 ; wireshark/optimized/ber.c.ll
 ; wolfssl/optimized/api.c.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -469,7 +468,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

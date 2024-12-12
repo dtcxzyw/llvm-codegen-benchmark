@@ -13,3 +13,9 @@ func0000000000000010:                   # @func0000000000000010
 	shrxq	%rsi, %rdi, %rax
 	andl	$1, %eax
 	retq
+func0000000000000038:                   # @func0000000000000038
+	movb	$38, %al
+	subb	%sil, %al
+	shrxq	%rax, %rdi, %rax
+	andl	$1, %eax
+	retq

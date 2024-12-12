@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/parser_utils.ll
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/unicodeobject.ll
 ; quickjs/optimized/libregexp.ll
@@ -13,8 +14,7 @@ entry:
   ret i32 %2
 }
 
-; 7 occurrences:
-; linux/optimized/pid_namespace.ll
+; 6 occurrences:
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
@@ -37,7 +37,7 @@ entry:
   ret i32 %1
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/fretMain.c.ll
 ; abc/optimized/giaGen.c.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -56,7 +56,6 @@ entry:
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; qemu/optimized/hw_pci_shpc.c.ll
-; sqlite/optimized/sqlite3.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0) #0 {
@@ -66,7 +65,7 @@ entry:
   ret i32 %2
 }
 
-; 40 occurrences:
+; 39 occurrences:
 ; cpython/optimized/xmlparse.ll
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/JSArray.cpp.ll
@@ -97,7 +96,6 @@ entry:
 ; wireshark/optimized/packet-dect-nwk.c.ll
 ; wireshark/optimized/packet-gcsna.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
-; wireshark/optimized/packet-gsm_r_uus1.c.ll
 ; wireshark/optimized/packet-k12.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-openflow_v4.c.ll

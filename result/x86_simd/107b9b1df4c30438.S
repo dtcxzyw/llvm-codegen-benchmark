@@ -45,45 +45,33 @@ func000000000000000a:                   # @func000000000000000a
 	vmovdqa64	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI3_0:
-	.quad	32                              # 0x20
-.LCPI3_1:
-	.quad	36                              # 0x24
-func0000000000000006:                   # @func0000000000000006
-	vpslld	$31, %xmm1, %xmm1
-	vpmovd2m	%xmm1, %k1
-	vpbroadcastq	.LCPI3_0(%rip), %ymm1   # ymm1 = [32,32,32,32]
-	vpbroadcastq	.LCPI3_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [36,36,36,36]
-	vpmovd2m	%xmm0, %k1
-	vmovdqa64	%ymm1, %ymm0 {%k1} {z}
-	retq
-.LCPI4_0:
 	.quad	4                               # 0x4
-.LCPI4_1:
+.LCPI3_1:
 	.quad	3                               # 0x3
-.LCPI4_3:
+.LCPI3_3:
 	.quad	2                               # 0x2
-.LCPI4_2:
+.LCPI3_2:
 	.long	192                             # 0xc0
 func000000000000000c:                   # @func000000000000000c
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
-	vpbroadcastq	.LCPI4_0(%rip), %ymm1   # ymm1 = [4,4,4,4]
-	vpbroadcastq	.LCPI4_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [3,3,3,3]
-	vpcmpeqd	.LCPI4_2(%rip){1to4}, %xmm0, %k1
-	vpbroadcastq	.LCPI4_3(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2]
+	vpbroadcastq	.LCPI3_0(%rip), %ymm1   # ymm1 = [4,4,4,4]
+	vpbroadcastq	.LCPI3_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [3,3,3,3]
+	vpcmpeqd	.LCPI3_2(%rip){1to4}, %xmm0, %k1
+	vpbroadcastq	.LCPI3_3(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2]
 	vmovdqa	%ymm1, %ymm0
 	retq
-.LCPI5_0:
-	.quad	72066390131081223               # 0x100080000020007
-.LCPI5_1:
-	.quad	72136758875290687               # 0x100480000027c3f
-.LCPI5_2:
+.LCPI4_0:
+	.quad	8796093034496                   # 0x80000003000
+.LCPI4_1:
+	.quad	8796093034504                   # 0x80000003008
+.LCPI4_2:
 	.long	2                               # 0x2
 func0000000000000004:                   # @func0000000000000004
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
-	vpbroadcastq	.LCPI5_0(%rip), %ymm1   # ymm1 = [72066390131081223,72066390131081223,72066390131081223,72066390131081223]
-	vpbroadcastq	.LCPI5_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [72136758875290687,72136758875290687,72136758875290687,72136758875290687]
-	vpcmpltud	.LCPI5_2(%rip){1to4}, %xmm0, %k1
+	vpbroadcastq	.LCPI4_0(%rip), %ymm1   # ymm1 = [8796093034496,8796093034496,8796093034496,8796093034496]
+	vpbroadcastq	.LCPI4_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [8796093034504,8796093034504,8796093034504,8796093034504]
+	vpcmpltud	.LCPI4_2(%rip){1to4}, %xmm0, %k1
 	vmovdqa64	%ymm1, %ymm0 {%k1} {z}
 	retq

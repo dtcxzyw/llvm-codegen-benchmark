@@ -10,7 +10,7 @@ define i1 @func0000000000000002(i1 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
   %3 = icmp eq i8 %2, 10
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -40,18 +40,18 @@ define i1 @func0000000000000018(i1 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
   %3 = icmp ne i8 %2, 2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/pci.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000088(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 192
   %3 = icmp eq i16 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

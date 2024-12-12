@@ -23,10 +23,23 @@ func0000000000000000:                   # @func0000000000000000
 	vmacc.vv	v8, v12, v10
 	vmul.vx	v8, v8, a0
 	ret
-func000000000000003c:                   # @func000000000000003c
+func000000000000003e:                   # @func000000000000003e
 	li	a0, 12
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	vmul.vx	v8, v8, a0
+	ret
+func000000000000003f:                   # @func000000000000003f
+	li	a0, 3
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vv	v8, v12, v10
+	vmul.vx	v8, v8, a0
+	ret
+func000000000000003c:                   # @func000000000000003c
+	li	a0, 3
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vv	v8, v12, v10
+	slli	a0, a0, 32
 	vmul.vx	v8, v8, a0
 	ret
 func0000000000000015:                   # @func0000000000000015

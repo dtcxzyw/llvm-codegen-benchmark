@@ -149,8 +149,21 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
-; linux/optimized/delay.ll
+; 4 occurrences:
+; linux/optimized/i915_gem_stolen.ll
+; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
+; tree-sitter-rs/optimized/3w8fnbh84xi9yzxl.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw i64 %2, 16
+  %4 = or disjoint i64 %3, %1
+  %5 = sub nuw i64 %0, %4
+  ret i64 %5
+}
+
+; 6 occurrences:
 ; linux/optimized/dmar.ll
 ; linux/optimized/hpet.ll
 ; linux/optimized/io_apic.ll
@@ -163,19 +176,6 @@ entry:
   %3 = shl i64 %2, 32
   %4 = or i64 %3, %1
   %5 = sub i64 %0, %4
-  ret i64 %5
-}
-
-; 3 occurrences:
-; linux/optimized/i915_gem_stolen.ll
-; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
-; tree-sitter-rs/optimized/3w8fnbh84xi9yzxl.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw i64 %2, 32
-  %4 = or disjoint i64 %3, %1
-  %5 = sub nuw i64 %0, %4
   ret i64 %5
 }
 

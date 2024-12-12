@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/src.ll
 ; cpython/optimized/symtable.ll
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/af_packet.ll
@@ -7,10 +8,10 @@
 ; linux/optimized/mlme.ll
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; php/optimized/xp_socket.ll
 ; qemu/optimized/block.c.ll
-; qemu/optimized/hw_virtio_vhost-vsock-common.c.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
@@ -21,7 +22,7 @@ entry:
   ret i64 %4
 }
 
-; 96 occurrences:
+; 97 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; cpython/optimized/compile.ll
@@ -36,6 +37,7 @@ entry:
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -119,7 +121,7 @@ entry:
 ; slurm/optimized/job_test.ll
 ; slurm/optimized/node_scheduler.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, 8388608
   %3 = icmp eq i32 %1, 0
@@ -127,8 +129,7 @@ entry:
   ret i64 %4
 }
 
-; 72 occurrences:
-; llvm/optimized/AArch64Disassembler.cpp.ll
+; 71 occurrences:
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -201,10 +202,21 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, 8388608
   %3 = icmp ult i32 %1, 8388608
+  %4 = select i1 %3, i64 %0, i64 %2
+  ret i64 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/AArch64Disassembler.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000034(i64 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i64 %0, -128
+  %3 = icmp samesign ult i32 %1, 64
   %4 = select i1 %3, i64 %0, i64 %2
   ret i64 %4
 }
@@ -234,7 +246,7 @@ entry:
 ; 1 occurrences:
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, 2
   %3 = icmp slt i32 %1, 0

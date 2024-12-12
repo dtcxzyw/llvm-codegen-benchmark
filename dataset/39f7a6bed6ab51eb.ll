@@ -4,7 +4,7 @@
 ; linux/optimized/md.ll
 ; openjdk/optimized/threadSMR.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp ne i64 %2, 0
@@ -29,7 +29,7 @@ entry:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 524288
   %3 = icmp eq i64 %2, 0

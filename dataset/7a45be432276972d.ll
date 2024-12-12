@@ -1,5 +1,5 @@
 
-; 449 occurrences:
+; 498 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/abcSymm.c.ll
@@ -56,6 +56,10 @@
 ; libquic/optimized/modp_b64.cc.ll
 ; libquic/optimized/oct.c.ll
 ; libquic/optimized/t1_lib.c.ll
+; lightgbm/optimized/bin.cpp.ll
+; lightgbm/optimized/dataset.cpp.ll
+; lightgbm/optimized/dataset_loader.cpp.ll
+; lightgbm/optimized/metadata.cpp.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/build_utility.ll
@@ -194,7 +198,9 @@
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/opencv-onnx.pb.cc.ll
+; openjdk/optimized/loopopts.ll
 ; openjdk/optimized/memnode.ll
+; openjdk/optimized/superword.ll
 ; openssl/optimized/libcrypto-lib-ec2_oct.ll
 ; openssl/optimized/libcrypto-lib-ecp_oct.ll
 ; openssl/optimized/libcrypto-shlib-ec2_oct.ll
@@ -203,22 +209,39 @@
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; openusd/optimized/TestSdfNoAssetFileFormat.cpp.ll
 ; openusd/optimized/abstractData.cpp.ll
+; openusd/optimized/aggregateNode.cpp.ll
+; openusd/optimized/aggregateTreeBuilder.cpp.ll
+; openusd/optimized/authoring.cpp.ll
+; openusd/optimized/basisCurves.cpp.ll
+; openusd/optimized/basisCurvesTopology.cpp.ll
 ; openusd/optimized/bboxCache.cpp.ll
 ; openusd/optimized/categoriesSchema.cpp.ll
+; openusd/optimized/changes.cpp.ll
 ; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/clipSet.cpp.ll
 ; openusd/optimized/clipsAPI.cpp.ll
+; openusd/optimized/collectionAPI.cpp.ll
 ; openusd/optimized/collectionAPIAdapter.cpp.ll
+; openusd/optimized/collectionMembershipQuery.cpp.ll
+; openusd/optimized/collectionPredicateLibrary.cpp.ll
 ; openusd/optimized/collectionsSchema.cpp.ll
+; openusd/optimized/containerDataSourceEditor.cpp.ll
+; openusd/optimized/coordSysAPI.cpp.ll
 ; openusd/optimized/coordSysBindingSchema.cpp.ll
+; openusd/optimized/copyUtils.cpp.ll
 ; openusd/optimized/dataSourceBasisCurves.cpp.ll
 ; openusd/optimized/dataSourceLegacyPrim.cpp.ll
 ; openusd/optimized/dataSourceMapped.cpp.ll
 ; openusd/optimized/dataSourceMaterial.cpp.ll
 ; openusd/optimized/dataSourcePrim.cpp.ll
+; openusd/optimized/dataSourcePrimvars.cpp.ll
 ; openusd/optimized/dataSourceRenderPrims.cpp.ll
+; openusd/optimized/delegate.cpp.ll
 ; openusd/optimized/dependenciesSchema.cpp.ll
+; openusd/optimized/drawModeAdapter.cpp.ll
 ; openusd/optimized/drawModeStandin.cpp.ll
+; openusd/optimized/driveAPI.cpp.ll
+; openusd/optimized/eventTree.cpp.ll
 ; openusd/optimized/extComputationPrimvarsSchema.cpp.ll
 ; openusd/optimized/extentResolvingSceneIndex.cpp.ll
 ; openusd/optimized/extentsHintSchema.cpp.ll
@@ -226,46 +249,73 @@
 ; openusd/optimized/fileFormat.cpp.ll
 ; openusd/optimized/flattenedDirectMaterialBindingsDataSourceProvider.cpp.ll
 ; openusd/optimized/generativeProceduralAdapter.cpp.ll
+; openusd/optimized/glslfxResourceLayout.cpp.ll
+; openusd/optimized/input.cpp.ll
+; openusd/optimized/layer.cpp.ll
 ; openusd/optimized/legacyGeomSubsetSceneIndex.cpp.ll
 ; openusd/optimized/lightLinkingSceneIndex.cpp.ll
 ; openusd/optimized/lightSchema.cpp.ll
+; openusd/optimized/limitAPI.cpp.ll
+; openusd/optimized/listOp.cpp.ll
 ; openusd/optimized/materialBindingAPI.cpp.ll
 ; openusd/optimized/materialBindingAPIAdapter.cpp.ll
 ; openusd/optimized/materialBindingResolvingSceneIndex.cpp.ll
 ; openusd/optimized/materialBindingSchema.cpp.ll
 ; openusd/optimized/materialNetwork2Interface.cpp.ll
+; openusd/optimized/mesh.cpp.ll
 ; openusd/optimized/niInstanceAggregationSceneIndex.cpp.ll
 ; openusd/optimized/nurbsApproximatingSceneIndex.cpp.ll
 ; openusd/optimized/output.cpp.ll
+; openusd/optimized/overlayContainerDataSource.cpp.ll
+; openusd/optimized/parserHelpers.cpp.ll
 ; openusd/optimized/path.cpp.ll
 ; openusd/optimized/pathNode.cpp.ll
 ; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primAdapter.cpp.ll
+; openusd/optimized/primDataSourceOverlayCache.cpp.ll
 ; openusd/optimized/primManagingSceneIndexObserver.cpp.ll
+; openusd/optimized/primTypeInfoCache.cpp.ll
 ; openusd/optimized/primTypeNoticeBatchingSceneIndex.cpp.ll
 ; openusd/optimized/purposeSchema.cpp.ll
 ; openusd/optimized/pxrDisplayFilterAdapter.cpp.ll
 ; openusd/optimized/pxrIntegratorAdapter.cpp.ll
 ; openusd/optimized/pxrRenderTerminalHelper.cpp.ll
 ; openusd/optimized/pxrSampleFilterAdapter.cpp.ll
+; openusd/optimized/refinerFactory.cpp.ll
 ; openusd/optimized/renderCapabilitiesSchema.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
 ; openusd/optimized/renderSettingsSchema.cpp.ll
 ; openusd/optimized/reporter.cpp.ll
+; openusd/optimized/retainedDataSource.cpp.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll
+; openusd/optimized/rprim.cpp.ll
+; openusd/optimized/sceneIndex.cpp.ll
 ; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
 ; openusd/optimized/sceneIndexPluginRegistry.cpp.ll
+; openusd/optimized/schemaRegistry.cpp.ll
 ; openusd/optimized/selectionsSchema.cpp.ll
+; openusd/optimized/shaderDefUtils.cpp.ll
 ; openusd/optimized/shaderNode.cpp.ll
 ; openusd/optimized/shaderProperty.cpp.ll
+; openusd/optimized/spec.cpp.ll
 ; openusd/optimized/stageSceneIndex.cpp.ll
+; openusd/optimized/subdivTags.cpp.ll
+; openusd/optimized/testHdBufferSpec.cpp.ll
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testHdDirtyList.cpp.ll
 ; openusd/optimized/testHdExtComputationUtils.cpp.ll
+; openusd/optimized/testSdfPathThreading.cpp.ll
+; openusd/optimized/testTraceCounters.cpp.ll
+; openusd/optimized/testUsdImagingDelegateChanges.cpp.ll
+; openusd/optimized/testUsdSchemaRegistryCpp.cpp.ll
 ; openusd/optimized/testUsdStageNotification.cpp.ll
 ; openusd/optimized/testUsdValidationRegistry.cpp.ll
 ; openusd/optimized/typeRegistry.cpp.ll
+; openusd/optimized/unitTestNullRenderDelegate.cpp.ll
 ; openusd/optimized/usdcFileFormat.cpp.ll
 ; openusd/optimized/validationRegistry.cpp.ll
 ; openusd/optimized/validatorTokens.cpp.ll
+; openusd/optimized/valueTypeName.cpp.ll
 ; openusd/optimized/valueTypeRegistry.cpp.ll
 ; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
 ; openusd/optimized/visibilitySchema.cpp.ll
@@ -288,7 +338,6 @@
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_sd_sd.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; qemu/optimized/target_riscv_tcg_tcg-cpu.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
@@ -476,7 +525,7 @@ entry:
 ; opencv/optimized/split.dispatch.cpp.ll
 ; wireshark/optimized/packet-lldp.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 30
   %4 = icmp eq i32 %3, 0
@@ -487,10 +536,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/nf_nat_core.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
-  %4 = icmp ugt i32 %3, 2
+  %4 = icmp samesign ugt i32 %3, 2
   %5 = select i1 %4, i64 %0, i64 %1
   ret i64 %5
 }

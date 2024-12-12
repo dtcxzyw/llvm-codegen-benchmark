@@ -31,7 +31,8 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/approximately_equals.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; openjdk/optimized/archiveBuilder.ll
 ; spike/optimized/vloxei16_v.ll
@@ -65,29 +66,15 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; git/optimized/xmerge.ll
 ; graphviz/optimized/sfprint.c.ll
-; slurm/optimized/run_command.ll
-; slurm/optimized/slurm_persist_conn.ll
-; slurm/optimized/slurm_protocol_socket.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = sub nsw i32 %0, %4
-  ret i32 %5
-}
-
-; 1 occurrences:
-; slurm/optimized/node_features_knl_generic.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = trunc i64 %3 to i32
-  %5 = sub i32 %0, %4
   ret i32 %5
 }
 

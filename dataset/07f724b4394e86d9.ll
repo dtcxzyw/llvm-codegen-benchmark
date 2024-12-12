@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; lightgbm/optimized/tree.cpp.ll
-; opencv/optimized/dxt.cpp.ll
 ; openjdk/optimized/mlib_ImageCreate.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll

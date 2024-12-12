@@ -1,10 +1,10 @@
 func0000000000000002:                   # @func0000000000000002
-	testb	$1, %dil
+	cmpw	$6, %si
 	movl	$-28, %ecx
 	movl	$-22, %eax
-	cmovnel	%ecx, %eax
-	cmpw	$6, %si
 	cmovel	%ecx, %eax
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	testb	$1, %dil

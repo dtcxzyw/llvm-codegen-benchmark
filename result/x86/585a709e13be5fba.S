@@ -11,8 +11,7 @@ func0000000000000040:                   # @func0000000000000040
 	movl	%esi, %eax
 	shll	$4, %eax
 	xorl	%esi, %eax
-	movl	%eax, %ecx
-	shrl	$17, %ecx
-	addl	%edi, %eax
+	leal	(%rdi,%rax), %ecx
+	shrl	$17, %eax
 	addl	%ecx, %eax
 	retq

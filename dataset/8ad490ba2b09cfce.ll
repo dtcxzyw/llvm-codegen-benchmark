@@ -1,5 +1,6 @@
 
-; 88 occurrences:
+; 89 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
@@ -77,7 +78,6 @@
 ; minetest/optimized/mesh_generator_thread.cpp.ll
 ; minetest/optimized/shader.cpp.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
-; quantlib/optimized/actualactual.ll
 ; tev/optimized/Common.cpp.ll
 ; tokenizers-rs/optimized/pctti7iv1zxrcsb.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
@@ -87,6 +87,7 @@
 ; yosys/optimized/flatten.ll
 ; yosys/optimized/gatemate_foldinv.ll
 ; yosys/optimized/rmports.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, ptr %2) #0 {
@@ -102,13 +103,13 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = add i64 %3, 68719476720
   %5 = sub i64 %4, %1
   %6 = and i64 %5, 68719476720
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

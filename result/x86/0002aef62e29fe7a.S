@@ -1,8 +1,8 @@
-func0000000000000078:                   # @func0000000000000078
+func00000000000000d8:                   # @func00000000000000d8
 	shrxq	%rsi, %rdi, %rax
 	andl	$1, %eax
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	shrxq	%rsi, %rdi, %rax
 	andl	$1, %eax
 	retq

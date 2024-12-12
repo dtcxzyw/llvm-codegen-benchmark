@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; hyperscan/optimized/limex_simd256.c.ll
 ; hyperscan/optimized/limex_simd384.c.ll
@@ -14,6 +14,7 @@
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/Hexagon.cpp.ll
+; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/SanitizerBinaryMetadata.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/Targets.cpp.ll
@@ -30,21 +31,18 @@
 define i64 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i64 3, i64 1
   ret i64 %4
 }
 
-; 10 occurrences:
+; 7 occurrences:
 ; libquic/optimized/time.cc.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; ruby/optimized/numeric.ll
-; spike/optimized/f128_classify.ll
 ; spike/optimized/f128_to_i64.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
-; spike/optimized/f64_classify.ll
 ; spike/optimized/f64_to_ui32_r_minMag.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i1 %0, i64 %1) #0 {
@@ -68,13 +66,12 @@ entry:
 define i64 @func000000000000000a(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i64 8192, i64 0
   ret i64 %4
 }
 
-; 6 occurrences:
-; llvm/optimized/ScalarEvolution.cpp.ll
+; 5 occurrences:
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
@@ -84,13 +81,20 @@ entry:
 define i64 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 32
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i64 -256, i64 0
   ret i64 %4
 }
 
-; 17 occurrences:
+; 23 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/process.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; glslang/optimized/reflection.cpp.ll
 ; linux/optimized/iov_iter.ll
@@ -103,7 +107,6 @@ entry:
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/macroAssembler_x86.ll
 ; qemu/optimized/block.c.ll
-; spike/optimized/f64_classify.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zxing/optimized/GTIN.cpp.ll
@@ -124,6 +127,17 @@ entry:
   %2 = icmp ult i64 %1, 70368744177664
   %3 = and i1 %2, %0
   %4 = select i1 %3, i64 8, i64 16
+  ret i64 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/ScalarEvolution.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 4294967295
+  %3 = and i1 %2, %0
+  %4 = select i1 %3, i64 8, i64 0
   ret i64 %4
 }
 

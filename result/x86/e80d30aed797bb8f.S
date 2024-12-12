@@ -1,4 +1,4 @@
-func0000000000000161:                   # @func0000000000000161
+func00000000000004c1:                   # @func00000000000004c1
 	subl	%esi, %edi
 	leal	7(%rdi), %eax
 	testl	%edi, %edi
@@ -6,7 +6,7 @@ func0000000000000161:                   # @func0000000000000161
 	testl	%eax, %eax
 	sete	%al
 	retq
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	subl	%esi, %edi
 	leal	40000(%rdi), %eax
 	testl	%edi, %edi
@@ -14,7 +14,7 @@ func000000000000016a:                   # @func000000000000016a
 	cmpl	$39998, %eax                    # imm = 0x9C3E
 	setge	%al
 	retq
-func0000000000000561:                   # @func0000000000000561
+func00000000000014c1:                   # @func00000000000014c1
 	subl	%esi, %edi
 	leal	12(%rdi), %eax
 	testl	%edi, %edi
@@ -22,7 +22,7 @@ func0000000000000561:                   # @func0000000000000561
 	testl	%eax, %eax
 	sete	%al
 	retq
-func000000000000056a:                   # @func000000000000056a
+func00000000000014ca:                   # @func00000000000014ca
 	subl	%esi, %edi
 	leal	7(%rdi), %eax
 	testl	%edi, %edi

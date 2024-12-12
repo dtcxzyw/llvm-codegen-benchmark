@@ -1,5 +1,5 @@
 
-; 406 occurrences:
+; 400 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -41,7 +41,6 @@
 ; abc/optimized/abcNtbdd.c.ll
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcOrchestration.c.ll
-; abc/optimized/abcOrder.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/abcQbf.c.ll
@@ -86,7 +85,6 @@
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/acecRe.c.ll
-; abc/optimized/acecSt.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/aigDfs.c.ll
@@ -142,7 +140,6 @@
 ; abc/optimized/cecSynth.c.ll
 ; abc/optimized/cgtAig.c.ll
 ; abc/optimized/cgtDecide.c.ll
-; abc/optimized/cgtMan.c.ll
 ; abc/optimized/cmdPlugin.c.ll
 ; abc/optimized/cnfFast.c.ll
 ; abc/optimized/cnfMan.c.ll
@@ -253,7 +250,6 @@
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifReduce.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTest.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/ifUtil.c.ll
@@ -288,7 +284,6 @@
 ; abc/optimized/llb4Sweep.c.ll
 ; abc/optimized/lpkCore.c.ll
 ; abc/optimized/ltl_parser.c.ll
-; abc/optimized/mapperVec.c.ll
 ; abc/optimized/mfsDiv.c.ll
 ; abc/optimized/mioSop.c.ll
 ; abc/optimized/mioUtils.c.ll
@@ -298,7 +293,6 @@
 ; abc/optimized/mpmGates.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/msatVec.c.ll
-; abc/optimized/nmApi.c.ll
 ; abc/optimized/nwkAig.c.ll
 ; abc/optimized/nwkFlow.c.ll
 ; abc/optimized/nwkMap.c.ll
@@ -353,7 +347,6 @@
 ; abc/optimized/solver_api.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/sscSat.c.ll
-; abc/optimized/sscUtil.c.ll
 ; abc/optimized/sswIslands.c.ll
 ; abc/optimized/sswPairs.c.ll
 ; abc/optimized/sswRarity.c.ll
@@ -380,6 +373,7 @@
 ; abc/optimized/wlnWlc.c.ll
 ; abc/optimized/xsatCnfReader.c.ll
 ; abc/optimized/xsatSolver.c.ll
+; boost/optimized/error.ll
 ; casadi/optimized/sundials_spbcgs.c.ll
 ; casadi/optimized/sundials_spgmr.c.ll
 ; casadi/optimized/sundials_sptfqmr.c.ll
@@ -431,7 +425,6 @@ entry:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
-; abc/optimized/cnfUtil.c.ll
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
@@ -444,6 +437,7 @@ entry:
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaMini.c.ll
+; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/ifCache.c.ll
 ; abc/optimized/ivyDfs.c.ll
@@ -452,15 +446,15 @@ entry:
 ; abc/optimized/pdrMan.c.ll
 ; abc/optimized/wlcReadVer.c.ll
 ; linux/optimized/namei.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; openjdk/optimized/deoptimization.ll
 ; tokenizers-rs/optimized/4vpw5vpiz5qnu5om.ll
 ; verilator/optimized/V3Param.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0) #0 {
+define i32 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -9
   %2 = icmp ult i32 %1, -8

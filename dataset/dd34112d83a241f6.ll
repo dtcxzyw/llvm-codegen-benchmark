@@ -41,7 +41,7 @@ entry:
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
@@ -54,7 +54,7 @@ entry:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16
   %.not = icmp eq i32 %3, 0
@@ -63,11 +63,10 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
-; wireshark/optimized/packet-wtls.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 67108864
   %4 = icmp eq i32 %3, 0
@@ -87,7 +86,7 @@ entry:
 ; wireshark/optimized/packet-l2tp.c.ll
 ; wireshark/optimized/packet-metamako.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8
   %4 = icmp eq i32 %3, 0
@@ -99,7 +98,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-tetra.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %.not = icmp eq i32 %3, 0
@@ -113,10 +112,10 @@ entry:
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = icmp ult i32 %3, 3
+  %4 = icmp samesign ult i32 %3, 3
   %5 = add nuw nsw i32 %1, 32767
   %6 = select i1 %4, i32 %5, i32 %0
   ret i32 %6

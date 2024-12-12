@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	4                               # 0x4
 .LCPI1_1:
 	.long	2                               # 0x2
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsubd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -23,7 +23,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI2_0:
 	.long	2                               # 0x2
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsubd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -34,7 +34,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	retq
 .LCPI3_0:
 	.long	2                               # 0x2
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001b8:                   # @func00000000000001b8
 	vpbroadcastd	.LCPI3_0(%rip), %ymm2   # ymm2 = [2,2,2,2,2,2,2,2]
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm2, %ymm0, %ymm0
@@ -45,16 +45,19 @@ func00000000000000d8:                   # @func00000000000000d8
 	vzeroupper
 	retq
 .LCPI4_0:
-	.long	1                               # 0x1
-func0000000000000051:                   # @func0000000000000051
-	vpsubd	%ymm0, %ymm1, %ymm0
-	vptestmd	.LCPI4_0(%rip){1to8}, %ymm0, %k0
+	.long	4                               # 0x4
+.LCPI4_1:
+	.long	7                               # 0x7
+func00000000000000a1:                   # @func00000000000000a1
+	vpxord	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	vptestnmd	.LCPI4_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI5_0:
 	.long	1                               # 0x1
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	vpsubd	%ymm0, %ymm1, %ymm0
 	vptestmd	.LCPI5_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -62,7 +65,7 @@ func00000000000000d1:                   # @func00000000000000d1
 	retq
 .LCPI6_0:
 	.long	1                               # 0x1
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpsubd	%ymm0, %ymm1, %ymm0
 	vptestmd	.LCPI6_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

@@ -7,7 +7,7 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000282(i32 %0) #0 {
+define i1 @func0000000000000902(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 95
   %2 = add nsw i32 %1, -65
@@ -23,7 +23,7 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; linux/optimized/ip_fragment.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0) #0 {
+define i1 @func0000000000000102(i32 %0) #0 {
 entry:
   %1 = and i32 %0, -33
   %2 = add i32 %1, -65

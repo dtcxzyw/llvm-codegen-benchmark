@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 67 occurrences:
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/cuddLCache.c.ll
@@ -23,6 +23,24 @@
 ; linux/optimized/netif.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/request.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_table.ll
+; lvgl/optimized/lv_textarea.ll
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -54,22 +72,43 @@ define i32 @func0000000000000000(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 5 occurrences:
+; 26 occurrences:
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddGenCof.c.ll
 ; abc/optimized/resSat.c.ll
 ; abc/optimized/retLvalue.c.ll
 ; bullet3/optimized/b3File.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_switch.ll
+; lvgl/optimized/lv_table.ll
+; lvgl/optimized/lv_tabview.ll
+; lvgl/optimized/lv_textarea.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

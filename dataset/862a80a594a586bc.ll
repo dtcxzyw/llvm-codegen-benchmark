@@ -4,11 +4,11 @@
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = or i32 %2, %0
-  %4 = icmp ugt i32 %3, 128
+  %3 = or i32 %0, %2
+  %4 = icmp samesign ugt i32 %3, 128
   ret i1 %4
 }
 
@@ -28,10 +28,10 @@ entry:
 ; qemu/optimized/tcg.c.ll
 ; wireshark/optimized/packet-fp_hint.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -54,7 +54,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -63,10 +63,10 @@ entry:
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 29
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp slt i32 %3, -2147483135
   ret i1 %4
 }
@@ -75,10 +75,10 @@ entry:
 ; clamav/optimized/upx.c.ll
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 29
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp sgt i32 %3, 2147483135
   ret i1 %4
 }
@@ -86,11 +86,11 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 9
   %3 = or i32 %2, %0
-  %4 = icmp ult i32 %3, 257
+  %4 = icmp samesign ult i32 %3, 257
   ret i1 %4
 }
 
@@ -101,7 +101,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 31
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -111,18 +111,18 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
-  %3 = or disjoint i32 %2, %0
-  %4 = icmp ugt i32 %3, 131072
+  %3 = or disjoint i32 %0, %2
+  %4 = icmp samesign ugt i32 %3, 131072
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = or disjoint i32 %2, %0

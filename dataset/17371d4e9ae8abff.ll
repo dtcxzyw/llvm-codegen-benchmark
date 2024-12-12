@@ -15,9 +15,8 @@ entry:
   ret double %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/gmx_spatial.cpp.ll
-; icu/optimized/gregoimp.ll
 ; opencv/optimized/gfluidbackend.cpp.ll
 ; openjdk/optimized/TransformHelper.ll
 ; sqlite/optimized/sqlite3.ll

@@ -1,10 +1,9 @@
 
-; 110 occurrences:
+; 109 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -170,8 +169,9 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/timDump.c.ll
+; boost/optimized/gzip.ll
 ; openjdk/optimized/imageDecompressor.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i8 %0, i32 %1) #0 {

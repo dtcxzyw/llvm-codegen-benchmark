@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; hdf5/optimized/H5EAdblock.c.ll
 ; linux/optimized/tsc.ll
 ; opencv/optimized/matrix.cpp.ll
 ; ruby/optimized/regcomp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -18,11 +19,11 @@ entry:
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; ocio/optimized/Lut1DOpGPU.cpp.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
-; opencv/optimized/matrix.cpp.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; quantlib/optimized/forwardforwardmappings.ll
 ; quickjs/optimized/libbf.ll
 ; rocksdb/optimized/block.cc.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -36,7 +37,7 @@ entry:
 ; openssl/optimized/libdefault-lib-ssl3_cbc.ll
 ; openssl/optimized/libssl-shlib-ssl3_cbc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %0, %1
   %3 = add i64 %2, -3
@@ -63,13 +64,35 @@ entry:
 }
 
 ; 1 occurrences:
+; hdf5/optimized/H5EAdblock.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = udiv i64 %0, %1
+  %3 = add i64 %2, 1
+  %4 = icmp samesign ult i64 %3, 1099511627776
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; hermes/optimized/OSCompatPosix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %0, %1
   %3 = icmp eq i64 %2, 1
   ret i1 %3
+}
+
+; 1 occurrences:
+; opencv/optimized/matrix.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = udiv i64 %0, %1
+  %3 = add i64 %2, -2147483647
+  %4 = icmp ult i64 %3, -2147483648
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

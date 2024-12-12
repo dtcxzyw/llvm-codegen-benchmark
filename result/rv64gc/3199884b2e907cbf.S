@@ -1,4 +1,4 @@
-func0000000000000086:                   # @func0000000000000086
+func0000000000000187:                   # @func0000000000000187
 	andi	a0, a0, 255
 	addi	a1, a1, 8
 	addi	a0, a0, -1
@@ -7,7 +7,41 @@ func0000000000000086:                   # @func0000000000000086
 	and	a0, a0, a1
 	addi	a0, a0, 8
 	ret
-func0000000000000084:                   # @func0000000000000084
+func0000000000000107:                   # @func0000000000000107
+	andi	a0, a0, 255
+	addi	a1, a1, -16
+	addi	a0, a0, -53
+	snez	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	addi	a0, a0, 16
+	ret
+func0000000000000113:                   # @func0000000000000113
+	andi	a0, a0, 255
+	addi	a1, a1, -24
+	sltiu	a0, a0, 11
+	neg	a0, a0
+	and	a0, a0, a1
+	addi	a0, a0, 48
+	ret
+func0000000000000112:                   # @func0000000000000112
+	andi	a0, a0, 255
+	addi	a1, a1, -24
+	sltiu	a0, a0, 11
+	neg	a0, a0
+	and	a0, a0, a1
+	addi	a0, a0, -32
+	ret
+func0000000000000106:                   # @func0000000000000106
+	andi	a0, a0, 255
+	addi	a1, a1, -32
+	addi	a0, a0, -26
+	snez	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	addi	a0, a0, -32
+	ret
+func0000000000000104:                   # @func0000000000000104
 	andi	a0, a0, 255
 	addi	a1, a1, -24
 	addi	a0, a0, -85
@@ -16,30 +50,11 @@ func0000000000000084:                   # @func0000000000000084
 	and	a0, a0, a1
 	addi	a0, a0, 64
 	ret
-func0000000000000087:                   # @func0000000000000087
+func0000000000000110:                   # @func0000000000000110
 	andi	a0, a0, 255
 	addi	a1, a1, -24
-	addi	a0, a0, -39
-	snez	a0, a0
-	addi	a0, a0, -1
+	sltiu	a0, a0, 11
+	neg	a0, a0
 	and	a0, a0, a1
-	addi	a0, a0, 4
-	ret
-func00000000000000c7:                   # @func00000000000000c7
-	andi	a0, a0, 255
-	addi	a1, a1, 16
-	addi	a0, a0, -2
-	snez	a0, a0
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	addi	a0, a0, 2
-	ret
-func00000000000000c6:                   # @func00000000000000c6
-	andi	a0, a0, 255
-	addi	a1, a1, 16
-	addi	a0, a0, -2
-	snez	a0, a0
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	addi	a0, a0, 4
+	addi	a0, a0, -32
 	ret

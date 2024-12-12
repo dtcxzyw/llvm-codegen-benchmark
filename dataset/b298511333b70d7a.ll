@@ -27,7 +27,7 @@
 ; wireshark/optimized/packet-zrtp.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = zext nneg i8 %2 to i32
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000c4(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = zext nneg i8 %2 to i32
@@ -51,12 +51,12 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-pw-fr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000b4(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i32
   %4 = add nsw i32 %0, -4
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
@@ -64,12 +64,12 @@ entry:
 ; wireshark/optimized/packet-ansi_a.c.ll
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000f4(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = zext nneg i8 %2 to i32
   %4 = add nuw nsw i32 %0, 1
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 

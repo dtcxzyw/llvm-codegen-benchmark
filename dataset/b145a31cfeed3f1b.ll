@@ -1,5 +1,8 @@
 
-; 70 occurrences:
+; 74 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; c3c/optimized/bigint.c.ll
 ; cvc5/optimized/extended_rewrite.cpp.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
@@ -63,6 +66,7 @@
 ; yosys/optimized/proc_dff.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
+; yosys/optimized/sim.ll
 ; yosys/optimized/test_cell.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/emonics.cpp.ll

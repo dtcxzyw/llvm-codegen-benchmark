@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/symbol.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add i32 %0, %1
@@ -34,25 +34,12 @@ entry:
 ; openusd/optimized/decodeframe.c.ll
 ; z3/optimized/dl_instruction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add i32 %0, %1
   %5 = and i32 %4, %3
   %6 = icmp eq i32 %5, 0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; wireshark/optimized/packet-pdcp-lte.c.ll
-; wireshark/optimized/packet-pdcp-nr.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -1
-  %4 = add i32 %0, %1
-  %5 = and i32 %4, %3
-  %6 = icmp ugt i32 %5, 15
   ret i1 %6
 }
 

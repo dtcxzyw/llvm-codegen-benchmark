@@ -1,5 +1,5 @@
 
-; 410 occurrences:
+; 426 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/cuddExact.c.ll
@@ -24,6 +24,7 @@
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/options_description.ll
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/filtering.c.ll
 ; clamav/optimized/pdfng.c.ll
@@ -125,8 +126,6 @@
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mpi-add.ll
-; linux/optimized/mpi-div.ll
-; linux/optimized/mpi-mul.ll
 ; linux/optimized/mpi-sub-ui.ll
 ; linux/optimized/platform.ll
 ; linux/optimized/sysfs.ll
@@ -249,6 +248,9 @@
 ; llvm/optimized/X86CmovConversion.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_spinbox.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -402,6 +404,20 @@
 ; z3/optimized/spacer_unsat_core_plugin.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
@@ -414,11 +430,11 @@
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
-; 863 occurrences:
+; 869 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
@@ -457,6 +473,12 @@ entry:
 ; arrow/optimized/tz.cpp.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/authority_view.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/url_view_base.ll
 ; c3c/optimized/sema_decls.c.ll
 ; casadi/optimized/cs_maxtrans.c.ll
 ; clamav/optimized/mbox.c.ll
@@ -864,13 +886,11 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; linux/optimized/blk-iocost.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/e820.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/kapi.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/maple_tree.ll
-; linux/optimized/mpi-div.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/nlattr.ll
 ; linux/optimized/power_supply_core.ll
@@ -913,6 +933,10 @@ entry:
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_calendar.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -934,7 +958,6 @@ entry:
 ; node/optimized/libnode.crypto_bio.ll
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_dayofweek.c.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -1084,7 +1107,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-x509_cmp.ll
 ; openssl/optimized/libdefault-lib-rsa_sig.ll
 ; openssl/optimized/openssl-bin-ca.ll
-; openssl/optimized/openssl-bin-cms.ll
 ; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/reconinter.c.ll
@@ -1286,7 +1308,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 

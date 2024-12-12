@@ -1,5 +1,5 @@
 
-; 484 occurrences:
+; 483 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; curl/optimized/libcurl_la-curl_sasl.ll
@@ -10,12 +10,12 @@
 ; glslang/optimized/ParseHelper.cpp.ll
 ; hermes/optimized/Object.cpp.ll
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/ich8lan.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/uhci-hcd.ll
@@ -318,7 +318,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -490,11 +489,11 @@ entry:
   %3 = shl i16 %2, 6
   %4 = and i16 %3, 448
   %5 = or disjoint i16 %4, %1
-  %6 = or disjoint i16 %5, %0
+  %6 = or disjoint i16 %0, %5
   ret i16 %6
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
@@ -505,6 +504,7 @@ entry:
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CImage.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; openjdk/optimized/Ushort565Rgb.ll
@@ -513,7 +513,7 @@ define i16 @func000000000000000f(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw nsw i16 %2, 2
   %4 = and i16 %3, 992
-  %5 = or disjoint i16 %4, %1
+  %5 = or disjoint i16 %1, %4
   %6 = or disjoint i16 %5, %0
   ret i16 %6
 }
@@ -528,7 +528,7 @@ define i16 @func0000000000000000(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl i16 %2, 8
   %4 = and i16 %3, -2048
-  %5 = or i16 %4, %1
+  %5 = or i16 %1, %4
   %6 = or i16 %5, %0
   ret i16 %6
 }
@@ -554,7 +554,7 @@ define i16 @func0000000000000008(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 7
   %4 = and i16 %3, -1024
-  %5 = or i16 %4, %1
+  %5 = or i16 %1, %4
   %6 = or i16 %5, %0
   ret i16 %6
 }
@@ -570,7 +570,7 @@ define i16 @func0000000000000002(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl i16 %2, 9
   %4 = and i16 %3, 1536
-  %5 = or disjoint i16 %4, %1
+  %5 = or disjoint i16 %1, %4
   %6 = or i16 %5, %0
   ret i16 %6
 }
@@ -583,7 +583,7 @@ define i16 @func0000000000000001(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl i16 %2, 12
   %4 = and i16 %3, 4096
-  %5 = or i16 %4, %1
+  %5 = or i16 %1, %4
   %6 = or disjoint i16 %5, %0
   ret i16 %6
 }
@@ -596,7 +596,7 @@ define i16 @func000000000000000b(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = and i16 %3, -2048
-  %5 = or disjoint i16 %4, %1
+  %5 = or disjoint i16 %1, %4
   %6 = or disjoint i16 %5, %0
   ret i16 %6
 }

@@ -14,13 +14,9 @@ entry:
   ret i64 %3
 }
 
-; 70 occurrences:
-; abc/optimized/verStream.c.ll
-; assimp/optimized/COBLoader.cpp.ll
-; assimp/optimized/ColladaLoader.cpp.ll
+; 48 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
-; assimp/optimized/SMDLoader.cpp.ll
-; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/rational.ll
 ; bullet3/optimized/b3GpuParallelLinearBvh.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; bullet3/optimized/b3RadixSort32CL.ll
@@ -30,27 +26,16 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; duckdb/optimized/ub_duckdb_transaction.cpp.ll
 ; eastl/optimized/EACallback.cpp.ll
-; g2o/optimized/slam2d_linear.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; graphviz/optimized/generate-constraints.cpp.ll
-; hyperscan/optimized/goughcompile_reg.cpp.ll
 ; linux/optimized/direct-io.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/fsopen.ll
 ; linux/optimized/ioctl.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/regmap.ll
-; meshlab/optimized/Scanner.cpp.ll
-; minetest/optimized/mg_schematic.cpp.ll
 ; mold/optimized/arch-ppc64v1.cc.ll
 ; opencv/optimized/conv_depthwise.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
-; opencv/optimized/linemod.cpp.ll
 ; openjdk/optimized/escape.ll
 ; openmpi/optimized/allreduce.ll
 ; openmpi/optimized/coll_adapt_ireduce.ll
@@ -70,21 +55,14 @@ entry:
 ; openmpi/optimized/nbc.ll
 ; openmpi/optimized/osc_base_obj_convert.ll
 ; openmpi/optimized/osc_rdma_accumulate.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
-; proj/optimized/ctx.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; pybind11/optimized/test_local_bindings.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; qemu/optimized/block.c.ll
-; quantlib/optimized/levenbergmarquardt.ll
 ; ruby/optimized/array.ll
-; soc-simulator/optimized/verilated.ll
 ; vcpkg/optimized/packagespec.cpp.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; verilator/optimized/V3StackCount.cpp.ll
-; xgboost/optimized/updater_approx.cc.ll
-; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

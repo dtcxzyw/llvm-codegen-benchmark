@@ -1,11 +1,11 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	incb	%sil
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	addl	%edi, %eax
 	sete	%al
 	retq
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	addb	$-6, %sil
 	movl	$-4, %eax
 	shlxl	%esi, %eax, %eax
@@ -13,7 +13,7 @@ func000000000000010a:                   # @func000000000000010a
 	testl	%eax, %eax
 	setg	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addb	$-6, %sil
 	movl	$2, %eax
 	shlxl	%esi, %eax, %eax
@@ -21,7 +21,7 @@ func0000000000000016:                   # @func0000000000000016
 	cmpl	$128, %eax
 	setl	%al
 	retq
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000381:                   # @func0000000000000381
 	decb	%sil
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
@@ -29,42 +29,42 @@ func00000000000001c1:                   # @func00000000000001c1
 	cmpl	$4, %eax
 	sete	%al
 	retq
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	decb	%sil
 	movl	$-1, %eax
 	shlxl	%esi, %eax, %eax
 	addl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000191:                   # @func0000000000000191
+func0000000000000321:                   # @func0000000000000321
 	decb	%sil
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	addl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000141:                   # @func0000000000000141
+func0000000000000281:                   # @func0000000000000281
 	decb	%sil
 	movl	$-1, %eax
 	shlxl	%esi, %eax, %eax
 	addl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	decb	%sil
-	movl	$1, %eax
+	movl	$-1, %eax
 	shlxl	%esi, %eax, %eax
-	addl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	decb	%sil
 	movl	$-1, %eax
 	shlxl	%esi, %eax, %eax
 	addl	%edi, %eax
 	shrl	$31, %eax
 	retq
-func0000000000000146:                   # @func0000000000000146
+func0000000000000286:                   # @func0000000000000286
 	decb	%sil
 	movl	$-1, %eax
 	shlxl	%esi, %eax, %eax

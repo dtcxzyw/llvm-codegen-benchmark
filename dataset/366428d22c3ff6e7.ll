@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 51 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; coreutils-rs/optimized/1y438ox107i37q6b.ll
@@ -46,22 +46,16 @@
 ; ruby/optimized/string.ll
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; xgboost/optimized/gradient_index.cc.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %2, i64 0
-  %4 = add i64 %3, %1
-  ret i64 %4
-}
-
-; 2 occurrences:
-; freetype/optimized/autofit.c.ll
-; llvm/optimized/PrologEpilogInserter.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = select i1 %0, i64 %2, i64 0
-  %4 = add nsw i64 %3, %1
+  %4 = add i64 %1, %3
   ret i64 %4
 }
 
@@ -71,7 +65,17 @@ entry:
 define i64 @func0000000000000003(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %2, i64 0
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; freetype/optimized/autofit.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %0, i64 %2, i64 0
+  %4 = add nsw i64 %1, %3
   ret i64 %4
 }
 

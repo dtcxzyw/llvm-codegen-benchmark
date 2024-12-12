@@ -13,27 +13,37 @@ entry:
 }
 
 ; 1 occurrences:
-; clamav/optimized/scantree.cpp.ll
+; boost/optimized/default_filter_factory.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -2047
-  %4 = add i64 %3, %1
-  %5 = icmp ult i64 %4, -2048
+  %3 = add nuw nsw i64 %2, 1
+  %4 = add nuw i64 %3, %1
+  %5 = icmp ugt i64 %4, 16
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }
 
-; 3 occurrences:
-; llvm/optimized/DLangDemangle.cpp.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000006(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -97
+  %3 = add nuw nsw i64 %2, 3
+  %4 = add nuw nsw i64 %3, %1
+  %5 = icmp ugt i64 %4, 16
+  %6 = select i1 %5, i1 true, i1 %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; tomlplusplus/optimized/toml.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000188(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 2
   %4 = add i64 %3, %1
-  %5 = icmp slt i64 %4, 1
+  %5 = icmp ugt i64 %4, 119
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }

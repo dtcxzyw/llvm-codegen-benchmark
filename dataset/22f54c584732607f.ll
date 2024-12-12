@@ -1,7 +1,11 @@
 
-; 40 occurrences:
+; 49 occurrences:
 ; flac/optimized/cuesheet.c.ll
 ; hyperscan/optimized/slot_manager.cpp.ll
+; libwebp/optimized/frame_enc.c.ll
+; libwebp/optimized/quant_enc.c.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; openusd/optimized/attributeSpec.cpp.ll
 ; openusd/optimized/clipsAPI.cpp.ll
@@ -27,6 +31,7 @@
 ; openusd/optimized/rootOverridesSceneIndex.cpp.ll
 ; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
 ; openusd/optimized/skeletonAdapter.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/stitchClips.cpp.ll
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testUsdImagingDelegateChanges.cpp.ll
@@ -39,7 +44,11 @@
 ; openusd/optimized/typeRegistry.cpp.ll
 ; openusd/optimized/value.cpp.ll
 ; openusd/optimized/variableExpressionImpl.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-iec104.c.ll
+; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i8 %0) #0 {
 entry:

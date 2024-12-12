@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 96 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
 ; bullet3/optimized/btConvexHull.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -95,6 +95,7 @@
 ; pbrt-v4/optimized/scattering.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; raylib/optimized/rshapes.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:

@@ -31,7 +31,7 @@
 ; openvdb/optimized/Prune.cc.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = and i64 %2, 1

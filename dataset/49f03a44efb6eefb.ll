@@ -1,5 +1,5 @@
 
-; 79 occurrences:
+; 86 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; git/optimized/xmerge.ll
 ; gromacs/optimized/andersentemperaturecoupling.cpp.ll
@@ -47,6 +47,13 @@
 ; icu/optimized/ustrcase.ll
 ; icu/optimized/ustrtrns.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; lz4/optimized/lz4hc.c.ll
 ; oiio/optimized/environment.cpp.ll
 ; oiio/optimized/texoptions.cpp.ll
@@ -80,7 +87,7 @@
 ; php/optimized/zend_jit.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000041(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr nusw i8, ptr %0, i64 %2

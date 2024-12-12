@@ -10,7 +10,7 @@
 ; rust-analyzer-rs/optimized/2z79z3pj3t0p2c2c.ll
 ; rust-analyzer-rs/optimized/yr8bg0giq9ukis7.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000012a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000012b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = select i1 %3, i64 0, i64 %2

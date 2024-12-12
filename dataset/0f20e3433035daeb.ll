@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/pgtable.ll
 ; llvm/optimized/X86CompressEVEX.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll

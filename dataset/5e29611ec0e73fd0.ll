@@ -1,6 +1,9 @@
 
-; 39 occurrences:
+; 42 occurrences:
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/any_params_iter.ll
+; boost/optimized/environment.ll
+; boost/optimized/message.ll
 ; cmake/optimized/cmQtAutoGenerator.cxx.ll
 ; hermes/optimized/CommandLine.cpp.ll
 ; icu/optimized/ucnvmbcs.ll
@@ -40,7 +43,7 @@
 ; z3/optimized/mpf.cpp.ll
 ; zxing/optimized/HRI.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

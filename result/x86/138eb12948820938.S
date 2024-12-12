@@ -5,9 +5,10 @@ func0000000000000007:                   # @func0000000000000007
 	sete	%al
 	leaq	18600(%rdi,%rax,8), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	movq	%rdi, %rax
-	andl	$256, %esi                      # imm = 0x100
-	cmpq	$1, %rsi
-	adcq	$2, %rax
+func0000000000000050:                   # @func0000000000000050
+	andl	$7, %esi
+	leaq	72(%rdi), %rax
+	leaq	16(%rdi), %rcx
+	cmpl	$3, %esi
+	cmovbq	%rcx, %rax
 	retq

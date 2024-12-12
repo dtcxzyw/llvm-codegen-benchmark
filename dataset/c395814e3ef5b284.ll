@@ -1,8 +1,6 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
-; darktable/optimized/introspection_invert.c.ll
-; darktable/optimized/introspection_temperature.c.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; duckdb/optimized/is_distinct_from.cpp.ll
@@ -17,7 +15,7 @@
 define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 

@@ -1,5 +1,5 @@
 
-; 950 occurrences:
+; 945 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcNtk.c.ll
@@ -13,6 +13,8 @@
 ; arrow/optimized/array_dict.cc.ll
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/ipv6_address.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -113,7 +115,6 @@
 ; icu/optimized/ushape.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
-; image-rs/optimized/4srzh4wujeew249y.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libquic/optimized/e_rc2.c.ll
 ; libquic/optimized/ssl_buffer.c.ll
@@ -193,7 +194,6 @@
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/80003es2lan.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/agg-tx.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/consolemap.ll
@@ -204,7 +204,6 @@
 ; linux/optimized/early-quirks.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_ggtt.ll
@@ -215,17 +214,12 @@
 ; linux/optimized/kbuf.ll
 ; linux/optimized/metrics.ll
 ; linux/optimized/mlme.ll
-; linux/optimized/net-procfs.ll
-; linux/optimized/netport.ll
 ; linux/optimized/nf_conntrack_proto_tcp.ll
 ; linux/optimized/nfnetlink.ll
 ; linux/optimized/nfnetlink_log.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/nlattr.ll
-; linux/optimized/nls_ascii.ll
 ; linux/optimized/nls_base.ll
-; linux/optimized/nls_cp437.ll
-; linux/optimized/nls_iso8859-1.ll
 ; linux/optimized/nsarguments.ll
 ; linux/optimized/open.ll
 ; linux/optimized/pci-acpi.ll
@@ -375,7 +369,6 @@
 ; llvm/optimized/ParseCXXInlineMethods.cpp.ll
 ; llvm/optimized/ParsePragma.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
@@ -454,6 +447,11 @@
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_spinbox.ll
 ; memcached/optimized/memcached-assoc.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached-items.ll
@@ -736,6 +734,7 @@
 ; ruby/optimized/gc.ll
 ; ruby/optimized/strftime.ll
 ; ruby/optimized/time.ll
+; slurm/optimized/data_parser_v0_0_39_la-parsers.ll
 ; slurm/optimized/data_parser_v0_0_40_la-parsers.ll
 ; slurm/optimized/data_parser_v0_0_41_la-parsers.ll
 ; snappy/optimized/snappy.cc.ll
@@ -746,14 +745,6 @@
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; spike/optimized/vnclip_wv.ll
 ; spike/optimized/vnclipu_wv.ll
 ; spike/optimized/vssra_vv.ll
@@ -920,7 +911,6 @@
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/l3869xz334uj87z.ll
 ; wireshark/optimized/crc10.c.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/file-file.c.ll
 ; wireshark/optimized/packet-csn1.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
@@ -931,10 +921,8 @@
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-isns.c.ll
-; wireshark/optimized/packet-its.c.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; wireshark/optimized/packet-netflow.c.ll
-; wireshark/optimized/packet-netlink-netfilter.c.ll
 ; wireshark/optimized/packet-scsi.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-smb2.c.ll
@@ -949,6 +937,13 @@
 ; wolfssl/optimized/ssl.c.ll
 ; yosys/optimized/fastlz.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i16 %0) #0 {

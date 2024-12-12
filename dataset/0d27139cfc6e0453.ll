@@ -16,7 +16,31 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 2 occurrences:
+; boost/optimized/alloc_lib.ll
+; llama.cpp/optimized/ggml.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001e(i64 %0) #0 {
+entry:
+  %1 = lshr exact i64 %0, 3
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = shl nuw i32 2, %2
+  ret i32 %3
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i64 %0) #0 {
+entry:
+  %1 = lshr i64 %0, 3
+  %2 = trunc i64 %1 to i32
+  %3 = shl nuw nsw i32 1, %2
+  ret i32 %3
+}
+
+; 5 occurrences:
+; boost/optimized/alloc_lib.ll
 ; hdf5/optimized/H5EAhdr.c.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
@@ -24,8 +48,21 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 1
+  %1 = lshr i64 %0, 3
   %2 = trunc i64 %1 to i32
+  %3 = shl nuw i32 1, %2
+  ret i32 %3
+}
+
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000e(i64 %0) #0 {
+entry:
+  %1 = lshr i64 %0, 3
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 1, %2
   ret i32 %3
 }
@@ -68,34 +105,11 @@ entry:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000000e(i64 %0) #0 {
-entry:
-  %1 = lshr i64 %0, 3
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = shl nuw i32 1, %2
-  ret i32 %3
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
-; Function Attrs: nounwind
 define i32 @func000000000000001c(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 3
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 2, %2
-  ret i32 %3
-}
-
-; 1 occurrences:
-; llama.cpp/optimized/ggml.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001e(i64 %0) #0 {
-entry:
-  %1 = lshr exact i64 %0, 1
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = shl nuw i32 65536, %2
   ret i32 %3
 }
 

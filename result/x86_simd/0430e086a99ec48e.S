@@ -3,7 +3,7 @@
 func0000000000000002:                   # @func0000000000000002
 	vbroadcastss	.LCPI0_0(%rip), %zmm3   # zmm3 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	vdivps	%zmm2, %zmm3, %zmm2
-	vmulps	%zmm1, %zmm2, %zmm1
+	vmulps	%zmm2, %zmm1, %zmm1
 	vcmpltps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -13,7 +13,7 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000003:                   # @func0000000000000003
 	vbroadcastss	.LCPI1_0(%rip), %zmm3   # zmm3 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	vdivps	%zmm2, %zmm3, %zmm2
-	vmulps	%zmm1, %zmm2, %zmm1
+	vmulps	%zmm2, %zmm1, %zmm1
 	vcmpnleps	%zmm0, %zmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -23,7 +23,7 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000004:                   # @func0000000000000004
 	vbroadcastss	.LCPI2_0(%rip), %zmm3   # zmm3 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	vdivps	%zmm2, %zmm3, %zmm2
-	vmulps	%zmm1, %zmm2, %zmm1
+	vmulps	%zmm2, %zmm1, %zmm1
 	vcmpltps	%zmm0, %zmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -33,7 +33,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000005:                   # @func0000000000000005
 	vbroadcastss	.LCPI3_0(%rip), %zmm3   # zmm3 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	vdivps	%zmm2, %zmm3, %zmm2
-	vmulps	%zmm1, %zmm2, %zmm1
+	vmulps	%zmm2, %zmm1, %zmm1
 	vcmpnleps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -44,7 +44,7 @@ func0000000000000007:                   # @func0000000000000007
 	vbroadcastss	.LCPI4_0(%rip), %zmm3   # zmm3 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	vdivps	%zmm2, %zmm3, %zmm2
 	vmulps	%zmm1, %zmm2, %zmm1
-	vcmpneqps	%zmm0, %zmm1, %k0
+	vcmpneqps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

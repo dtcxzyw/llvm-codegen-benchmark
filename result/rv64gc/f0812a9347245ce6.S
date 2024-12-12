@@ -15,7 +15,7 @@ func000000000000000a:                   # @func000000000000000a
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func00000000000001ec:                   # @func00000000000001ec
+func00000000000003cc:                   # @func00000000000003cc
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	slt	a0, a1, a0

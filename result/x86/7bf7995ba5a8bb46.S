@@ -1,4 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	leal	-57344(%rdi), %eax
 	cmpl	$1056768, %eax                  # imm = 0x102000
 	setb	%cl
@@ -7,7 +7,7 @@ func0000000000000044:                   # @func0000000000000044
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000544:                   # @func0000000000000544
+func0000000000001484:                   # @func0000000000001484
 	leal	-57344(%rdi), %eax
 	cmpl	$1056768, %eax                  # imm = 0x102000
 	setb	%cl
@@ -16,7 +16,7 @@ func0000000000000544:                   # @func0000000000000544
 	setb	%al
 	andb	%cl, %al
 	retq
-func000000000000014c:                   # @func000000000000014c
+func000000000000048c:                   # @func000000000000048c
 	leal	-56671232(%rdi), %eax
 	cmpl	$8176, %eax                     # imm = 0x1FF0
 	setb	%cl

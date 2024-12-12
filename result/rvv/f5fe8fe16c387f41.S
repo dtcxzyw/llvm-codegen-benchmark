@@ -7,7 +7,7 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 215
 	vmulhu.vx	v10, v12, a0
 	vsrl.vi	v10, v10, 7
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000029:                   # @func0000000000000029
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -18,7 +18,7 @@ func0000000000000029:                   # @func0000000000000029
 	addi	a0, a0, -819
 	vmulhu.vx	v10, v12, a0
 	vsrl.vi	v10, v10, 2
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000079:                   # @func0000000000000079
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -29,7 +29,18 @@ func0000000000000079:                   # @func0000000000000079
 	addi	a0, a0, -819
 	vmulhu.vx	v10, v12, a0
 	vsrl.vi	v10, v10, 2
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
+	ret
+func0000000000000003:                   # @func0000000000000003
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v12, 2
+	li	a0, 5
+	vmacc.vx	v12, a0, v10
+	lui	a0, 175448
+	addi	a0, a0, 43
+	vmulhu.vx	v10, v12, a0
+	vsrl.vi	v10, v10, 8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000018:                   # @func0000000000000018
 	li	a0, 136
@@ -41,7 +52,7 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a0, a0, -833
 	vmulhu.vx	v10, v12, a0
 	vsrl.vi	v10, v10, 3
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000019:                   # @func0000000000000019
 	li	a0, 136
@@ -65,7 +76,7 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 1311
 	vmulhu.vx	v10, v12, a0
 	vsrl.vi	v10, v10, 5
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000028:                   # @func0000000000000028
 	lui	a0, 42054
@@ -79,7 +90,7 @@ func0000000000000028:                   # @func0000000000000028
 	addi	a0, a0, 1311
 	vmulhu.vx	v10, v12, a0
 	vsrl.vi	v10, v10, 5
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000078:                   # @func0000000000000078
 	lui	a0, 42054
@@ -93,5 +104,5 @@ func0000000000000078:                   # @func0000000000000078
 	addi	a0, a0, 1311
 	vmulhu.vx	v10, v12, a0
 	vsrl.vi	v10, v10, 5
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

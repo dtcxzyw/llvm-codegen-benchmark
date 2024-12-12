@@ -1,3 +1,12 @@
+func0000000000000018:                   # @func0000000000000018
+	vpand	%xmm2, %xmm1, %xmm1
+	vpsllw	$7, %xmm1, %xmm1
+	vpmovb2m	%xmm1, %k0
+	vptestmw	%ymm0, %ymm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
 func0000000000000002:                   # @func0000000000000002
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -7,7 +16,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI1_0:
+.LCPI2_0:
 	.short	561                             # 0x231
 	.short	561                             # 0x231
 	.short	561                             # 0x231
@@ -28,7 +37,33 @@ func0000000000000010:                   # @func0000000000000010
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
-	vpcmpnleuw	.LCPI1_0(%rip), %ymm0, %k1
+	vpcmpnleuw	.LCPI2_0(%rip), %ymm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+func0000000000000008:                   # @func0000000000000008
+	vpand	%xmm2, %xmm1, %xmm1
+	vpsllw	$7, %xmm1, %xmm1
+	vpmovb2m	%xmm1, %k0
+	vpcmpltuw	.LCPI3_0(%rip), %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

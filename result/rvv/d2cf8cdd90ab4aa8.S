@@ -7,7 +7,7 @@ func0000000000000008:                   # @func0000000000000008
 	vrsub.vx	v8, v8, a0
 	vmsltu.vv	v0, v12, v8
 	ret
-func0000000000000114:                   # @func0000000000000114
+func0000000000000224:                   # @func0000000000000224
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v10, v10, 1
 	li	a0, 31

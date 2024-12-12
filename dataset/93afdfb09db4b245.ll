@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
+; abseil-cpp/optimized/cordz_info.cc.ll
 ; libwebp/optimized/buffer_dec.c.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; llama.cpp/optimized/ggml.c.ll

@@ -11,7 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	511                             # 0x1ff
 .LCPI1_1:
 	.long	132                             # 0x84
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpsrld	$3, %ymm1, %ymm1
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

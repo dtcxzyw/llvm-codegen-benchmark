@@ -1,7 +1,9 @@
-func0000000000000001:                   # @func0000000000000001
-	tzcntl	%edi, %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
-	orl	$256, %edi                      # imm = 0x100
-	tzcntl	%edi, %eax
+	movzbl	%dil, %eax
+	lzcntl	%eax, %eax
+	addl	$-24, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	shll	$24, %edi
+	lzcntl	%edi, %eax
 	retq

@@ -11,13 +11,12 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll

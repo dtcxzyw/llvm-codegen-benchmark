@@ -3,7 +3,7 @@
 ; openblas/optimized/dlaqr5.c.ll
 ; openjdk/optimized/mlib_ImageCopy_Bit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 56
   %4 = add nsw i32 %3, %0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/lpkAbcMux.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ea(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = add nuw nsw i32 %3, %0
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = add nuw nsw i32 %3, %0
@@ -69,7 +69,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -64
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add i32 %1, 4
   %6 = icmp sgt i32 %4, %5
   ret i1 %6
@@ -101,7 +101,7 @@ entry:
 ; cvc5/optimized/theory_sep_rewriter.cpp.ll
 ; cvc5/optimized/type_set.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000128(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 67108863
   %4 = add nsw i32 %3, %0
@@ -113,7 +113,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/regexp_operation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 67108863
   %4 = add nsw i32 %3, %0
@@ -125,10 +125,10 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/ImfHuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add nuw nsw i32 %1, 1
   %6 = icmp sgt i32 %4, %5
   ret i1 %6

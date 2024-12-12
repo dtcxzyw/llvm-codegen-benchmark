@@ -1,13 +1,12 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; lief/optimized/psa_crypto_storage.c.ll
 ; lief/optimized/ssl_tls.c.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openssl/optimized/libcrypto-lib-wrap128.ll
 ; openssl/optimized/libcrypto-shlib-wrap128.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -8
   %4 = or disjoint i64 %0, %1
@@ -27,7 +26,7 @@ entry:
 ; openssl/optimized/libssl-shlib-tls_common.ll
 ; qemu/optimized/crypto_der.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -2
   %4 = or disjoint i64 %0, %1
@@ -42,7 +41,7 @@ entry:
 ; openssl/optimized/libssl-lib-ssl_rsa.ll
 ; openssl/optimized/libssl-shlib-ssl_rsa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -8
   %4 = or disjoint i64 %0, %1
@@ -55,7 +54,7 @@ entry:
 ; libquic/optimized/convert.c.ll
 ; llvm/optimized/Base64.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = or disjoint i64 %0, %1

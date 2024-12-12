@@ -1,10 +1,10 @@
 
-%"class.llvm::MDOperand.3137440" = type { ptr }
-%union.acpi_object.3361155 = type { %struct.anon.8.3361156 }
-%struct.anon.8.3361156 = type { i32, i32, i64, i32 }
-%class.rational.3431182 = type { %class.mpq.3431183 }
-%class.mpq.3431183 = type { %class.mpz.3431184, %class.mpz.3431184 }
-%class.mpz.3431184 = type { i32, i8, ptr }
+%"class.llvm::MDOperand.3330112" = type { ptr }
+%union.acpi_object.3547865 = type { %struct.anon.8.3547866 }
+%struct.anon.8.3547866 = type { i32, i32, i64, i32 }
+%class.rational.3615514 = type { %class.mpq.3615515 }
+%class.mpq.3615515 = type { %class.mpz.3615516, %class.mpz.3615516 }
+%class.mpz.3615516 = type { i32, i8, ptr }
 
 ; 6 occurrences:
 ; linux/optimized/e1000_hw.ll
@@ -135,18 +135,19 @@ entry:
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = or disjoint i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 55 occurrences:
+; 66 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/cuddEssent.c.ll
+; abc/optimized/giaStr.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/kitCloud.c.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -157,6 +158,7 @@ entry:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
+; darktable/optimized/introspection_rgblevels.c.ll
 ; graphviz/optimized/dijkstra.c.ll
 ; graphviz/optimized/exeval.c.ll
 ; gromacs/optimized/dbdsqr.cpp.ll
@@ -165,6 +167,9 @@ entry:
 ; gromacs/optimized/sbdsqr.cpp.ll
 ; gromacs/optimized/sm_keywords.cpp.ll
 ; gromacs/optimized/sstein.cpp.ll
+; gromacs/optimized/ter_db.cpp.ll
+; hyperscan/optimized/mcclellan.c.ll
+; hyperscan/optimized/mcsheng.c.ll
 ; icu/optimized/olsontz.ll
 ; icu/optimized/uset.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -172,10 +177,13 @@ entry:
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_file_explorer.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
+; nghttp2/optimized/url_parser.c.ll
 ; nori/optimized/nanovg.c.ll
 ; ocio/optimized/ExposureContrastOpCPU.cpp.ll
+; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
@@ -193,6 +201,7 @@ entry:
 ; pbrt-v4/optimized/image.cpp.ll
 ; php/optimized/pcre2_substitute.ll
 ; php/optimized/php_pcre.ll
+; proxygen/optimized/http_parser_cpp.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
@@ -200,35 +209,43 @@ entry:
 ; slurm/optimized/hostlist.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; z3/optimized/pb_solver.cpp.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 13 occurrences:
+; 19 occurrences:
 ; gromacs/optimized/gausstransform.cpp.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/intel_sdvo.ll
+; linux/optimized/md.ll
+; linux/optimized/power.ll
+; linux/optimized/rdma.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/yenta_socket.ll
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
+; qemu/optimized/hw_char_ipoctal232.c.ll
+; qemu/optimized/hw_core_sysbus.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
+; qemu/optimized/target_riscv_pmp.c.ll
 ; quickjs/optimized/libregexp.ll
 ; wireshark/optimized/packet-opensafety.c.ll
+; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003c(ptr %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 15
-  %3 = or disjoint i32 %2, 2
+  %2 = shl nuw nsw i32 %1, 1
+  %3 = or disjoint i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
@@ -250,12 +267,12 @@ entry:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = or disjoint i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -276,24 +293,24 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/Metadata.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %"class.llvm::MDOperand.3137440", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.llvm::MDOperand.3330112", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -317,19 +334,19 @@ entry:
   %2 = shl nuw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %union.acpi_object.3361155, ptr %0, i64 %4
+  %5 = getelementptr %union.acpi_object.3547865, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; z3/optimized/theory_utvpi.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %class.rational.3431182, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %class.rational.3615514, ptr %0, i64 %4
   ret ptr %5
 }
 

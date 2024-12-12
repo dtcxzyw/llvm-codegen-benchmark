@@ -11,11 +11,9 @@
 ; linux/optimized/atkbd.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/host.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/nfs4proc.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/synaptics.ll
 ; linux/optimized/tls.ll
@@ -35,6 +33,7 @@
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; openjdk/optimized/pngrtran.ll
 ; openjdk/optimized/shenandoahHeapRegionCounters.ll
@@ -62,6 +61,7 @@
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:

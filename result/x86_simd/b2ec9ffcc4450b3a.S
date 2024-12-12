@@ -17,7 +17,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsrlvd	%ymm1, %ymm0, %ymm0
 	vptestmd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	vmovdqu8	.LCPI0_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [128,128,128,128,128,128,128,128,u,u,u,u,u,u,u,u]
@@ -61,7 +61,7 @@ func0000000000000031:                   # @func0000000000000031
 	.zero	1
 .LCPI1_3:
 	.byte	49                              # 0x31
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsrlvd	%ymm1, %ymm0, %ymm0
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastb	.LCPI1_3(%rip), %xmm0   # xmm0 = [49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49]

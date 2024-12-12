@@ -10,16 +10,14 @@ entry:
   ret i8 %5
 }
 
-; 3 occurrences:
-; icu/optimized/bocsu.ll
-; linux/optimized/drm_dp_mst_topology.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
+; 1 occurrences:
+; folly/optimized/IPAddressV6.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000004(i16 %0, i16 %1, i16 %2) #0 {
+define i8 @func0000000000000053(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = icmp eq i16 %2, 0
+  %3 = icmp samesign ult i16 %2, 2560
   %4 = select i1 %3, i16 %0, i16 %1
-  %5 = trunc i16 %4 to i8
+  %5 = trunc nuw nsw i16 %4 to i8
   ret i8 %5
 }
 
@@ -28,11 +26,23 @@ entry:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000012(i16 %0, i16 %1, i16 %2) #0 {
+define i8 @func0000000000000052(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = icmp ult i16 %2, 128
+  %3 = icmp samesign ult i16 %2, 128
   %4 = select i1 %3, i16 %0, i16 %1
   %5 = trunc nuw i16 %4 to i8
+  ret i8 %5
+}
+
+; 2 occurrences:
+; icu/optimized/bocsu.ll
+; linux/optimized/drm_dp_mst_topology.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000004(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = icmp eq i16 %2, 0
+  %4 = select i1 %3, i16 %0, i16 %1
+  %5 = trunc i16 %4 to i8
   ret i8 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/aigDfs.c.ll
 ; abc/optimized/aigRetF.c.ll
 ; abc/optimized/cnfFast.c.ll
@@ -21,15 +21,14 @@
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
-; wireshark/optimized/packet-pn-ptcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 7
   %4 = add nsw i32 %3, -5
   %5 = icmp ult i32 %4, 2
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

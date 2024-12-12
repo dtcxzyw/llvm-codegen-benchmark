@@ -50,12 +50,14 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI4_0:
+	.long	1                               # 0x1
 func0000000000000006:                   # @func0000000000000006
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
-	vpmovd2m	%ymm2, %k1
+	vpcmpltd	.LCPI4_0(%rip){1to8}, %ymm2, %k1
 	vpcmpgtw	%xmm0, %xmm1, %k2 {%k1}
 	kandnb	%k0, %k1, %k0
 	korb	%k0, %k2, %k0

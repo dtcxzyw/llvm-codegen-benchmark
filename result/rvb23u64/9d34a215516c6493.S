@@ -1,4 +1,4 @@
-func00000000000000ee:                   # @func00000000000000ee
+func00000000000000ef:                   # @func00000000000000ef
 	li	a3, 5
 	subw	a3, a3, a2
 	zext.h	a3, a3

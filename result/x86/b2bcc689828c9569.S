@@ -3,13 +3,13 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	$101, %eax
 	setge	%al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	shll	$8, %edi
 	leal	-56320(%rsi,%rdi), %eax
 	cmpl	$1024, %eax                     # imm = 0x400
 	setb	%al
 	retq
-func0000000000000346:                   # @func0000000000000346
+func0000000000000686:                   # @func0000000000000686
 	leal	1(%rdi,%rsi,2), %eax
 	cmpl	$1001, %eax                     # imm = 0x3E9
 	setl	%al
@@ -20,11 +20,11 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	leal	-8(%rdi,%rsi,8), %eax
 	shrl	$31, %eax
 	retq
-func0000000000000308:                   # @func0000000000000308
+func0000000000000608:                   # @func0000000000000608
 	shll	$28, %esi
 	leal	-268435456(%rdi,%rsi), %eax
 	cmpl	$2147483632, %eax               # imm = 0x7FFFFFF0
@@ -35,7 +35,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$262144, %eax                   # imm = 0x40000
 	setb	%al
 	retq
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	addl	%edi, %edi
 	movl	$-2, %eax
 	subl	%esi, %eax

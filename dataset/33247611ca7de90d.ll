@@ -4,7 +4,7 @@
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/zonevector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 63
   %2 = and i32 %1, 448
@@ -12,7 +12,8 @@ entry:
   ret i1 %3
 }
 
-; 19 occurrences:
+; 20 occurrences:
+; boost/optimized/to_chars.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -33,7 +34,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0) #0 {
+define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 32800
   %2 = and i32 %1, 65536
@@ -44,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/Utf8ComponentClass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0) #0 {
+define i1 @func00000000000001a1(i32 %0) #0 {
 entry:
   %1 = sub i32 0, %0
   %2 = and i32 %1, 4032

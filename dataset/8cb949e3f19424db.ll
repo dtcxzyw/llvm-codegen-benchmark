@@ -10,7 +10,7 @@
 ; postgres/optimized/execExprInterp.ll
 ; qemu/optimized/util_iov.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000104(ptr %0, ptr %1) #0 {
+define i32 @func0000000000000204(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ugt ptr %0, %1
   %3 = zext i1 %2 to i32
@@ -31,7 +31,7 @@ entry:
 ; velox/optimized/MapZipWith.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000184(ptr %0, ptr %1) #0 {
+define i32 @func0000000000000304(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %0, %1
   %3 = zext i1 %2 to i32
@@ -94,7 +94,7 @@ entry:
 ; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000084(ptr %0, ptr %1) #0 {
+define i32 @func0000000000000104(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ult ptr %1, %0
   %3 = zext i1 %2 to i32

@@ -4,3 +4,15 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	leaq	1(%rsi,%rdx), %rcx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmovneq	%rcx, %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	leaq	1(%rsi,%rdx), %rcx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmovneq	%rcx, %rax
+	retq

@@ -1,4 +1,4 @@
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000001ca:                   # @func00000000000001ca
 	slli	a1, a0, 24
 	lui	a2, 4096
 	addw	a1, a1, a2

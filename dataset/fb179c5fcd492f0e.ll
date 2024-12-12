@@ -1,5 +1,11 @@
 
-; 166 occurrences:
+; 170 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
@@ -46,7 +52,6 @@
 ; gromacs/optimized/dbdsqr.cpp.ll
 ; gromacs/optimized/dlas2.cpp.ll
 ; gromacs/optimized/dlasd4.cpp.ll
-; gromacs/optimized/dlassq.cpp.ll
 ; gromacs/optimized/dlasv2.cpp.ll
 ; gromacs/optimized/dnrm2.cpp.ll
 ; gromacs/optimized/energyterm.cpp.ll
@@ -90,7 +95,6 @@
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dlaed4.c.ll
 ; openblas/optimized/dlaic1.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlasd4.c.ll

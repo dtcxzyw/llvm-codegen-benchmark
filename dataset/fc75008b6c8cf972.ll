@@ -1,7 +1,7 @@
 
 ; 8 occurrences:
 ; icu/optimized/ushape.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; minetest/optimized/socket.cpp.ll
 ; oiio/optimized/rlaoutput.cpp.ll
 ; postgres/optimized/nbtree.ll

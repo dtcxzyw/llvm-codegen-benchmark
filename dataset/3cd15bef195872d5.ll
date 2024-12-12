@@ -15,7 +15,7 @@
 ; ruby/optimized/coverage.ll
 ; ruby/optimized/transcode.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000043(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 4096
   %3 = icmp eq i64 %1, 0
@@ -24,22 +24,21 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; git/optimized/push.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/hwgpe.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/x86_pkg_temp_thermal.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
-  %2 = or i32 %0, 262144
+  %2 = or i32 %0, 16384
   %3 = icmp eq i64 %1, 0
   %4 = select i1 %3, i32 %0, i32 %2
-  %5 = or i32 %4, 524288
+  %5 = or i32 %4, 32
   ret i32 %5
 }
 
@@ -53,7 +52,19 @@ entry:
 ; hwloc/optimized/topology-x86.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000029(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000069(i32 %0, i64 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, 16
+  %3 = icmp samesign ult i64 %1, 65536
+  %4 = select i1 %3, i32 %0, i32 %2
+  %5 = or disjoint i32 %4, 8
+  ret i32 %5
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000049(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 16
   %3 = icmp ult i64 %1, 65536
@@ -65,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/lbr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 136104
   %3 = icmp eq i64 %1, 0
@@ -89,10 +100,10 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000068(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 4
-  %3 = icmp ult i64 %1, 16
+  %3 = icmp samesign ult i64 %1, 16
   %4 = select i1 %3, i32 %0, i32 %2
   %5 = or i32 %4, 2
   ret i32 %5

@@ -24,7 +24,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 1000
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -47,7 +47,7 @@ define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 1000
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -71,7 +71,21 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 1000
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
+  ret i64 %4
+}
+
+; 4 occurrences:
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
+entry:
+  %2 = udiv i32 %1, 1000000000
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 

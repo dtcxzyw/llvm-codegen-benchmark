@@ -1,21 +1,14 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	incl	%esi
 	movzwl	%si, %eax
 	shrl	%eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	incl	%esi
 	movzwl	%si, %eax
 	shrl	%eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setne	%al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	decl	%esi
-	movzwl	%si, %eax
-	shrl	%eax
-	cmpq	%rdi, %rax
-	seta	%al
 	retq

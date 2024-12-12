@@ -32,19 +32,8 @@
 define i1 @func0000000000000008(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 40960, i64 %2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = icmp ugt i64 %4, 72057594037927935
-  ret i1 %5
-}
-
-; 1 occurrences:
-; velox/optimized/SsdFile.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = select i1 %1, i64 40960, i64 %2
-  %4 = mul nuw nsw i64 %3, %0
-  %5 = icmp ugt i64 %4, 4294967295
   ret i1 %5
 }
 
@@ -52,7 +41,7 @@ entry:
 ; clamav/optimized/unarj.c.ll
 ; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
   %4 = mul nsw i64 %3, %0
@@ -61,23 +50,34 @@ entry:
 }
 
 ; 1 occurrences:
-; eastl/optimized/TestRingBuffer.cpp.ll
+; gromacs/optimized/tng_io.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 1099170962, i64 %2
-  %4 = mul nuw nsw i64 %3, %0
-  %5 = icmp ult i64 %4, 4294967296
+  %3 = select i1 %1, i64 1, i64 %2
+  %4 = mul nsw i64 %0, %3
+  %5 = icmp sgt i64 %4, 0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/fair.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 0, i64 %2
+  %4 = mul i64 %0, %3
+  %5 = icmp slt i64 %4, 0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 1099170962, i64 %2
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   %5 = icmp ult i64 %4, 4294967296
   ret i1 %5
 }
@@ -85,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; pocketpy/optimized/pocketpy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 1, i64 %2
   %4 = mul nsw i64 %3, %0

@@ -8,7 +8,7 @@
 ; opencv/optimized/torch_importer.cpp.ll
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0) #0 {
+define i64 @func0000000000000026(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 32
   %2 = ashr exact i64 %1, 29

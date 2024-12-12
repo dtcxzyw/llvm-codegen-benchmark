@@ -10,7 +10,7 @@ entry:
   ret i32 %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
@@ -25,6 +25,7 @@ entry:
 ; protobuf/optimized/text_format.cc.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i64 %0) #0 {
 entry:

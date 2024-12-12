@@ -4,13 +4,9 @@ func0000000000000000:                   // @func0000000000000000
 	movk	x8, #14700, lsl #16
 	movk	x8, #42019, lsl #32
 	movk	x8, #48715, lsl #48
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	eor	v3.16b, v5.16b, v3.16b
-	eor	v2.16b, v4.16b, v2.16b
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	add	x8, x2, x8
+	eor	x8, x1, x8
+	add	x0, x8, x0
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
@@ -19,13 +15,9 @@ func000000000000000c:                   // @func000000000000000c
 	movk	x8, #37590, lsl #16
 	movk	x8, #31094, lsl #32
 	movk	x8, #49666, lsl #48
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	eor	v3.16b, v5.16b, v3.16b
-	eor	v2.16b, v4.16b, v2.16b
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	add	x8, x2, x8
+	eor	x8, x8, x1
+	add	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
@@ -34,13 +26,9 @@ func0000000000000005:                   // @func0000000000000005
 	movk	x8, #29834, lsl #16
 	movk	x8, #58009, lsl #32
 	movk	x8, #8051, lsl #48
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	eor	v3.16b, v5.16b, v3.16b
-	eor	v2.16b, v4.16b, v2.16b
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	add	x8, x2, x8
+	eor	x8, x8, x1
+	add	x0, x8, x0
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
@@ -49,13 +37,9 @@ func0000000000000008:                   // @func0000000000000008
 	movk	x8, #44802, lsl #16
 	movk	x8, #20203, lsl #32
 	movk	x8, #13581, lsl #48
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	eor	v3.16b, v5.16b, v3.16b
-	eor	v2.16b, v4.16b, v2.16b
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	add	x8, x2, x8
+	eor	x8, x8, x1
+	add	x0, x8, x0
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
@@ -64,12 +48,8 @@ func0000000000000001:                   // @func0000000000000001
 	movk	x8, #55262, lsl #16
 	movk	x8, #54520, lsl #32
 	movk	x8, #57047, lsl #48
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	eor	v3.16b, v5.16b, v3.16b
-	eor	v2.16b, v4.16b, v2.16b
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	add	x8, x2, x8
+	eor	x8, x8, x1
+	add	x0, x0, x8
 	ret
                                         // -- End function

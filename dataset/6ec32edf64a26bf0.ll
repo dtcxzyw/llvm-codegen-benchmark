@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; cpython/optimized/_zoneinfo.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; freetype/optimized/ftcache.c.ll
@@ -7,13 +7,12 @@
 ; mold/optimized/passes.cc.PPC32.cc.ll
 ; mold/optimized/passes.cc.PPC64V1.cc.ll
 ; mold/optimized/passes.cc.PPC64V2.cc.ll
-; opencv/optimized/convolution_layer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 154618822656
   %3 = ashr exact i64 %2, 32
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -33,7 +32,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 35468
   %3 = ashr i64 %2, 16
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -47,7 +46,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 12884901888
   %3 = ashr exact i64 %2, 32
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

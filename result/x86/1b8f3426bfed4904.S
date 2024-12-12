@@ -8,6 +8,11 @@ func0000000000000175:                   # @func0000000000000175
 	leal	(%rsi,%rsi,4), %eax
 	leal	-528(%rdi,%rax,2), %eax
 	retq
+func0000000000000177:                   # @func0000000000000177
+	addl	%edx, %esi
+	leal	(%rsi,%rsi,4), %eax
+	leal	-528(%rdi,%rax,2), %eax
+	retq
 func00000000000001f5:                   # @func00000000000001f5
 	addl	%edx, %esi
 	leal	(%rsi,%rsi,4), %eax

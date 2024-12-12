@@ -9,7 +9,7 @@ func0000000000000014:                   # @func0000000000000014
 	addiw	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000003f:                   # @func000000000000003f
 	li	a0, 5
@@ -44,7 +44,7 @@ func0000000000000034:                   # @func0000000000000034
 	li	a0, 1000
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000010:                   # @func0000000000000010
 	li	a0, 6
@@ -93,6 +93,13 @@ func000000000000003e:                   # @func000000000000003e
 	vmacc.vx	v10, a0, v12
 	vadd.vv	v8, v10, v8
 	ret
+func000000000000001f:                   # @func000000000000001f
+	lui	a0, 1
+	addiw	a0, a0, -496
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vadd.vv	v8, v10, v8
+	ret
 func0000000000000017:                   # @func0000000000000017
 	lui	a0, 244
 	addiw	a0, a0, 576
@@ -100,11 +107,11 @@ func0000000000000017:                   # @func0000000000000017
 	vmacc.vx	v10, a0, v12
 	vadd.vv	v8, v10, v8
 	ret
-.LCPI15_0:
+.LCPI16_0:
 	.quad	1844674407370955161             # 0x1999999999999999
 func0000000000000028:                   # @func0000000000000028
-	lui	a0, %hi(.LCPI15_0)
-	ld	a0, %lo(.LCPI15_0)(a0)
+	lui	a0, %hi(.LCPI16_0)
+	ld	a0, %lo(.LCPI16_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	vadd.vv	v8, v10, v8

@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; php/optimized/session.ll
 ; postgres/optimized/nbtcompare.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/rcras16.ll
 ; spike/optimized/rcrsa16.ll

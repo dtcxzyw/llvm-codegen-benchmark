@@ -7,7 +7,7 @@
 define ptr @func0000000000000022(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = mul i64 %4, 3
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
@@ -22,9 +22,21 @@ entry:
 define ptr @func0000000000000032(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = mul i64 %4, -8
   %6 = getelementptr nusw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; linux/optimized/decompress_unlzma.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000070(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = mul i64 %4, 1536
+  %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 

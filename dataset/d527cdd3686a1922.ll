@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/fast_gemm.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -2
   %2 = icmp eq i32 %1, -1

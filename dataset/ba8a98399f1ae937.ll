@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/jdmarker.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003a1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
@@ -18,11 +18,11 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f8(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003e8(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 11
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = add nuw nsw i32 %5, 8
   %7 = icmp ugt i32 %6, %0
   ret i1 %7
@@ -35,13 +35,13 @@ entry:
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f5(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003f5(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 10
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = add nuw nsw i32 %5, 16
-  %7 = icmp ule i32 %6, %0
+  %7 = icmp samesign ule i32 %6, %0
   ret i1 %7
 }
 
@@ -50,7 +50,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003e4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
@@ -65,7 +65,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003a4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
@@ -78,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003e1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; gromacs/optimized/mtop_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = add nsw i64 %2, %0
@@ -15,7 +15,7 @@ entry:
 ; zxing/optimized/PDFModulusPoly.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = xor i64 %0, -1
@@ -30,7 +30,7 @@ entry:
 ; xgboost/optimized/tree_model.cc.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = xor i64 %0, -1
@@ -44,7 +44,7 @@ entry:
 ; xgboost/optimized/host_device_vector.cc.ll
 ; xgboost/optimized/tree_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = add nsw i64 %2, %0

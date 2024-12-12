@@ -8,10 +8,10 @@
 ; openjdk/optimized/ciMethod.ll
 ; openusd/optimized/read.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = icmp ne i32 %4, 0
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
@@ -25,7 +25,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp eq i32 %4, 1
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
@@ -40,11 +40,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = zext i1 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp ne i32 %3, %4
-  %6 = select i1 %5, i1 %0, i1 false
-  ret i1 %6
+  %.neg = sext i1 %2 to i32
+  %3 = icmp ne i32 %1, %.neg
+  %4 = select i1 %3, i1 %0, i1 false
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -52,24 +51,22 @@ entry:
 ; llvm/optimized/Dominators.cpp.ll
 ; opencv/optimized/train_svmsgd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
-  %5 = icmp ult i32 %4, 5
+  %4 = add nuw nsw i32 %1, %3
+  %5 = icmp samesign ult i32 %4, 5
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }
 
-; 3 occurrences:
-; icu/optimized/csrucode.ll
+; 1 occurrences:
 ; oiio/optimized/exroutput.cpp.ll
-; opencv/optimized/convhull.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = icmp ugt i32 %4, 3
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
@@ -79,10 +76,10 @@ entry:
 ; icu/optimized/ubidiln.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = icmp eq i32 %4, 1
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
@@ -91,23 +88,34 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/xtc3.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = zext i1 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp ne i32 %3, %4
-  %6 = select i1 %5, i1 %0, i1 false
-  ret i1 %6
+  %.neg = sext i1 %2 to i32
+  %3 = icmp ne i32 %1, %.neg
+  %4 = select i1 %3, i1 %0, i1 false
+  ret i1 %4
 }
 
 ; 1 occurrences:
 ; openspiel/optimized/2048.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i1 %2) #0 {
+entry:
+  %.neg = sext i1 %2 to i32
+  %3 = icmp eq i32 %1, %.neg
+  %4 = select i1 %3, i1 %0, i1 false
+  ret i1 %4
+}
+
+; 2 occurrences:
+; icu/optimized/csrucode.ll
+; opencv/optimized/convhull.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp eq i32 %3, %4
+  %4 = add nuw nsw i32 %1, %3
+  %5 = icmp samesign ugt i32 %4, 3
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }

@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; gromacs/optimized/pairlist_tuning.cpp.ll
 ; linux/optimized/mballoc.ll
@@ -14,12 +14,13 @@
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
 ; postgres/optimized/indexcmds.ll
 ; z3/optimized/nlsat_evaluator.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -48,7 +49,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

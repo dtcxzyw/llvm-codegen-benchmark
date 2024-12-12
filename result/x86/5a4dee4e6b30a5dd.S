@@ -1,61 +1,66 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	addq	$32, %rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
-	orb	%dil, %al
-	retq
-func0000000000000029:                   # @func0000000000000029
-	movabsq	$1099511627776, %rax            # imm = 0x10000000000
-	addq	%rdx, %rax
-	cmpq	%rsi, %rax
-	setbe	%al
 	orb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	addq	$-32, %rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000006c:                   # @func000000000000006c
 	addq	$464, %rdx                      # imm = 0x1D0
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000068:                   # @func0000000000000068
 	addq	$4, %rdx
-	cmpq	%rsi, %rdx
-	setb	%al
-	orb	%dil, %al
-	retq
-func0000000000000024:                   # @func0000000000000024
-	addq	$32, %rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
-	addq	$320, %rdx                      # imm = 0x140
-	cmpq	%rsi, %rdx
+func0000000000000064:                   # @func0000000000000064
+	addq	$32, %rdx
+	cmpq	%rdx, %rsi
+	setb	%al
+	orb	%dil, %al
+	retq
+func0000000000000048:                   # @func0000000000000048
+	addq	$-8, %rdx
+	cmpq	%rdx, %rsi
+	seta	%al
+	orb	%dil, %al
+	retq
+func0000000000000049:                   # @func0000000000000049
+	addq	$-4, %rdx
+	cmpq	%rdx, %rsi
+	setae	%al
+	orb	%dil, %al
+	retq
+func0000000000000041:                   # @func0000000000000041
+	decq	%rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
-	addq	$8, %rdx
-	cmpq	%rsi, %rdx
-	setne	%al
+func0000000000000044:                   # @func0000000000000044
+	addq	$-80, %rdx
+	cmpq	%rdx, %rsi
+	setb	%al
 	orb	%dil, %al
 	retq
-func000000000000003c:                   # @func000000000000003c
-	addq	$32, %rdx
-	cmpq	%rsi, %rdx
+func000000000000000c:                   # @func000000000000000c
+	addq	$24, %rdx
+	cmpq	%rdx, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	addq	$-26, %rdx
-	cmpq	%rsi, %rdx
-	setb	%al
+	cmpq	%rdx, %rsi
+	seta	%al
 	orb	%dil, %al
 	retq

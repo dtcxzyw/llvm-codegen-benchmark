@@ -1,5 +1,7 @@
 
-; 34 occurrences:
+; 39 occurrences:
+; bullet3/optimized/b3GpuSapBroadphase.ll
+; darktable/optimized/introspection_colorzones.c.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
@@ -22,6 +24,9 @@
 ; openblas/optimized/sgemm_small_kernel_nn.c.ll
 ; openblas/optimized/sgemm_small_kernel_tt.c.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
+; openusd/optimized/av1_dx_iface.c.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/extract_fa.ll
 ; yosys/optimized/flowmap.ll
@@ -43,8 +48,9 @@ entry:
   ret ptr %5
 }
 
-; 10 occurrences:
+; 13 occurrences:
 ; gromacs/optimized/atomdata.cpp.ll
+; libjpeg-turbo/optimized/transupp.c.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
@@ -54,12 +60,14 @@ entry:
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; yosys/optimized/blif.ll
 ; yosys/optimized/satgen.ll
+; z3/optimized/mam.cpp.ll
+; z3/optimized/q_mam.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = or disjoint i64 %3, 1
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 

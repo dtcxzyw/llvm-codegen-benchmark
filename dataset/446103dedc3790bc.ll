@@ -1,17 +1,13 @@
 
-%struct.ar_table_pair_struct.2486121 = type { i64, i64 }
-%"class.rocksdb::autovector.2499500" = type { i64, [16 x i8], ptr, %"class.std::vector.7.2499501" }
-%"class.std::vector.7.2499501" = type { %"struct.std::_Vector_base.8.2499502" }
-%"struct.std::_Vector_base.8.2499502" = type { %"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl.2499503" }
-%"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl.2499503" = type { %"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl_data.2499504" }
-%"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl_data.2499504" = type { ptr, ptr, ptr }
-%struct.Vmxnet3TxqDescr.2594414 = type { %struct.Vmxnet3Ring.2594415, %struct.Vmxnet3Ring.2594415, i8, i64, %struct.UPT1_TxStats.2594416 }
-%struct.Vmxnet3Ring.2594415 = type { i64, i32, i32, i32, i8 }
-%struct.UPT1_TxStats.2594416 = type { i64, i64, i64, i64, i64, i64, i64, i64, i64, i64 }
-%"struct.std::pair.2949618" = type { %"class.llvm::SlotIndex.2949619", %"class.llvm::SlotIndex.2949619" }
-%"class.llvm::SlotIndex.2949619" = type { %"class.llvm::PointerIntPair.2949620" }
-%"class.llvm::PointerIntPair.2949620" = type { %"struct.llvm::detail::PunnedPointer.2949621" }
-%"struct.llvm::detail::PunnedPointer.2949621" = type { [8 x i8] }
+%struct.ar_table_pair_struct.2601574 = type { i64, i64 }
+%"class.rocksdb::autovector.2614733" = type { i64, [16 x i8], ptr, %"class.std::vector.7.2614734" }
+%"class.std::vector.7.2614734" = type { %"struct.std::_Vector_base.8.2614735" }
+%"struct.std::_Vector_base.8.2614735" = type { %"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl.2614736" }
+%"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl.2614736" = type { %"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl_data.2614737" }
+%"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl_data.2614737" = type { ptr, ptr, ptr }
+%struct.Vmxnet3TxqDescr.2708029 = type { %struct.Vmxnet3Ring.2708030, %struct.Vmxnet3Ring.2708030, i8, i64, %struct.UPT1_TxStats.2708031 }
+%struct.Vmxnet3Ring.2708030 = type { i64, i32, i32, i32, i8 }
+%struct.UPT1_TxStats.2708031 = type { i64, i64, i64, i64, i64, i64, i64, i64, i64, i64 }
 
 ; 27 occurrences:
 ; annoy/optimized/annoymodule.ll
@@ -42,14 +38,14 @@
 ; qemu/optimized/target_riscv_pmu.c.ll
 ; ruby/optimized/hash.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = getelementptr [8 x %struct.ar_table_pair_struct.2486121], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [8 x %struct.ar_table_pair_struct.2601574], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
-; 351 occurrences:
+; 376 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
@@ -57,6 +53,9 @@ entry:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; darktable/optimized/OlympusDecompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -112,13 +111,23 @@ entry:
 ; lief/optimized/aria.c.ll
 ; lief/optimized/x509_crt.c.ll
 ; llama.cpp/optimized/ggml-alloc.c.ll
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/DWARFVerifier.cpp.ll
+; llvm/optimized/InstrProfReader.cpp.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
+; llvm/optimized/LiveIntervalUnion.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
+; llvm/optimized/NativeSession.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
+; llvm/optimized/SplitKit.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
@@ -141,8 +150,12 @@ entry:
 ; openjdk/optimized/zMark.ll
 ; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_txp.ll
+; openusd/optimized/coalescingDiagnosticDelegate.cpp.ll
+; openusd/optimized/mergingSceneIndex.cpp.ll
 ; openusd/optimized/namespaceEditor.cpp.ll
 ; openusd/optimized/pathNode.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/reporterDataSourceCollector.cpp.ll
 ; ozz-animation/optimized/local_to_model_job.cc.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; php/optimized/zend_jit.ll
@@ -173,6 +186,7 @@ entry:
 ; rocksdb/optimized/point_lock_manager.cc.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
 ; rust-analyzer-rs/optimized/1n2nbybgay5hs9t3.ll
+; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; rust-analyzer-rs/optimized/3jjg9gby3m7lsfsh.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
@@ -398,18 +412,26 @@ entry:
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/PerspectiveTransform.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 127
-  %3 = getelementptr [128 x %"class.rocksdb::autovector.2499500"], ptr %0, i64 0, i64 %2, i32 3
+  %3 = getelementptr nuw [128 x %"class.rocksdb::autovector.2614733"], ptr %0, i64 0, i64 %2, i32 3
   ret ptr %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; linux/optimized/page_alloc.ll
 ; postgres/optimized/localtime.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
@@ -417,50 +439,23 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
-  %3 = getelementptr [8 x %struct.Vmxnet3TxqDescr.2594414], ptr %0, i64 0, i64 %2, i32 0, i32 4
+  %3 = getelementptr [8 x %struct.Vmxnet3TxqDescr.2708029], ptr %0, i64 0, i64 %2, i32 0, i32 4
   ret ptr %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
 ; openusd/optimized/pathNode.cpp.ll
 ; rust-analyzer-rs/optimized/4uaufavgtitxbs81.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
-; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rust-analyzer-rs/optimized/lyex85fppj8jw50.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = getelementptr [0 x { ptr, [1 x i64] }], ptr %0, i64 0, i64 %2, i32 1
-  ret ptr %3
-}
-
-; 17 occurrences:
-; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/DWARFVerifier.cpp.ll
-; llvm/optimized/InstrProfReader.cpp.ll
-; llvm/optimized/LiveDebugVariables.cpp.ll
-; llvm/optimized/LiveIntervalUnion.cpp.ll
-; llvm/optimized/NativeSession.cpp.ll
-; llvm/optimized/Reassociate.cpp.ll
-; llvm/optimized/SplitKit.cpp.ll
-; llvm/optimized/VarLocBasedImpl.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; openusd/optimized/coalescingDiagnosticDelegate.cpp.ll
-; openusd/optimized/mergingSceneIndex.cpp.ll
-; openusd/optimized/namespaceEditor.cpp.ll
-; openusd/optimized/pathNode.cpp.ll
-; openusd/optimized/prim.cpp.ll
-; openusd/optimized/reporterDataSourceCollector.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 4294967295
-  %3 = getelementptr [9 x %"struct.std::pair.2949618"], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [0 x { { { { i64, ptr, {} }, i64 } }, { { { { { { { { i64, ptr, {} }, i64 } } } } } } }, { { i64, ptr, {} }, i64 }, { { i64, ptr, {} }, i64 }, { { i64, ptr, {} }, i64 }, { { { i64, ptr, {} }, i64 } }, { { i64, ptr, {} }, i64 }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, { { { ptr, [0 x i8] } }, { { ptr, [0 x i8] } }, i64, i64, i64 }, { { { { ptr, i64, i64, i64 }, {}, {} }, { {} } } }, { ptr, [4 x i64] }, i8, i8, i8, i8, [4 x i8] }], ptr %0, i64 0, i64 %2, i32 3, i32 0, i32 1
   ret ptr %3
 }
 

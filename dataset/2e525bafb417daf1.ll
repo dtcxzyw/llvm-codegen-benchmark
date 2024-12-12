@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 60 occurrences:
 ; actix-rs/optimized/2o6s6qtmif526itx.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
@@ -16,6 +16,7 @@
 ; lief/optimized/ssl_tls12_server.c.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/e820.ll
+; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/shm.ll
 ; linux/optimized/signal_64.ll
@@ -32,6 +33,7 @@
 ; llvm/optimized/RISCVCallLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luau/optimized/CodeGenX64.cpp.ll

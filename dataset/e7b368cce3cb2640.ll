@@ -4,7 +4,7 @@
 ; spike/optimized/f32_to_i64.ll
 ; spike/optimized/f32_to_ui64.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, 57
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; proxygen/optimized/ResourceStats.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, 1

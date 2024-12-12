@@ -1,9 +1,8 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -20,7 +19,7 @@
 define float @func0000000000000000(float %0, i8 %1) #0 {
 entry:
   %2 = sitofp i8 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 

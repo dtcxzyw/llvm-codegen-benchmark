@@ -4,6 +4,11 @@ func0000000000000010:                   # @func0000000000000010
 	imull	%esi, %eax
 	addl	%edi, %eax
 	retq
+func000000000000001f:                   # @func000000000000001f
+	movzbl	%dh, %eax
+	imull	%esi, %eax
+	addl	%edi, %eax
+	retq
 func000000000000001c:                   # @func000000000000001c
 	movzwl	%dx, %eax
 	shrl	$5, %eax

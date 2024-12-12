@@ -1,17 +1,32 @@
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xffffffffffffffff
-	mov	w8, #1                          // =0x1
-	fmov	v5.2d, #2.00000000
-	add	v3.2d, v1.2d, v1.2d
-	dup	v4.2d, x8
-	add	v6.2d, v0.2d, v0.2d
-	fneg	v2.2d, v2.2d
-	orr	v3.16b, v3.16b, v4.16b
-	orr	v4.16b, v6.16b, v4.16b
-	cmgt	v1.2d, v5.2d, v1.2d
-	cmgt	v0.2d, v5.2d, v0.2d
-	bsl	v0.16b, v4.16b, v2.16b
-	bsl	v1.16b, v3.16b, v2.16b
+	mov	x8, #4611686018427387904        // =0x4000000000000000
+	lsl	x9, x0, #1
+	cmp	x0, x8
+	mov	x8, #9223372036854775807        // =0x7fffffffffffffff
+	csinc	x0, x8, x9, ge
+	ret
+                                        // -- End function
+func00000000000000aa:                   // @func00000000000000aa
+// %bb.0:                               // %entry
+	lsl	x9, x0, #1
+	mov	x8, #-1                         // =0xffffffffffffffff
+	cmp	x0, #0
+	csinc	x0, x8, x9, lt
+	ret
+                                        // -- End function
+func00000000000000f8:                   // @func00000000000000f8
+// %bb.0:                               // %entry
+	lsl	x9, x0, #1
+	mov	w8, #11                         // =0xb
+	cmp	x0, #5
+	csinc	x0, x8, x9, ls
+	ret
+                                        // -- End function
+func000000000000002c:                   // @func000000000000002c
+// %bb.0:                               // %entry
+	lsl	x8, x0, #1
+	cmp	x0, #0
+	csinc	x0, xzr, x8, eq
 	ret
                                         // -- End function

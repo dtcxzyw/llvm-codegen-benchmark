@@ -28,7 +28,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %1, %0
   %3 = icmp eq i32 %0, 0

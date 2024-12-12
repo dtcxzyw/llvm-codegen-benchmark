@@ -1,5 +1,5 @@
 
-; 868 occurrences:
+; 873 occurrences:
 ; abc/optimized/mapperCreate.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/chi_square.cc.ll
@@ -17,6 +17,17 @@
 ; assimp/optimized/IFCLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; bullet3/optimized/poly34.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/cvodes.c.ll
@@ -82,6 +93,7 @@
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_regr.cpp.ll
 ; flac/optimized/stream_decoder.c.ll
+; flac/optimized/window.c.ll
 ; folly/optimized/EventBase.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; g2o/optimized/edge_line2d_pointxy.cpp.ll
@@ -295,7 +307,6 @@
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgemm_small_matrix_permit.c.ll
 ; openblas/optimized/dgemv_t.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dgesvj.c.ll
@@ -313,7 +324,6 @@
 ; openblas/optimized/dlanv2.c.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlar1v.c.ll
-; openblas/optimized/dlarra.c.ll
 ; openblas/optimized/dlarre.c.ll
 ; openblas/optimized/dlarrf.c.ll
 ; openblas/optimized/dlarrv.c.ll
@@ -322,14 +332,11 @@
 ; openblas/optimized/dlasd8.c.ll
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dstedc.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsteqr.c.ll
 ; openblas/optimized/dsterf.c.ll
 ; openblas/optimized/dsyequb.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgex2.c.ll
-; openblas/optimized/dtgsna.c.ll
-; openblas/optimized/sgemm_small_matrix_permit.c.ll
 ; opencv/optimized/PnPProblem.cpp.ll
 ; opencv/optimized/Utils.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
@@ -530,9 +537,7 @@
 ; proj/optimized/tpeqd.cpp.ll
 ; proj/optimized/urm5.cpp.ll
 ; proj/optimized/vandg2.cpp.ll
-; proj/optimized/vertoffset.cpp.ll
 ; proj/optimized/wag3.cpp.ll
-; proj/optimized/wag7.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; quantlib/optimized/abcd.ll
 ; quantlib/optimized/abcdvol.ll
@@ -872,7 +877,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

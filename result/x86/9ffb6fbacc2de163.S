@@ -1,9 +1,9 @@
 func0000000000000007:                   # @func0000000000000007
 	xorl	%eax, %eax
 	testb	%dl, %dl
-	sete	%al
+	setne	%al
 	orl	%esi, %edi
-	leal	39(%rdi,%rax,2), %eax
+	leal	(%rdi,%rax,8), %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	cmpb	$2, %dl

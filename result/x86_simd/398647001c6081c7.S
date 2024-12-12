@@ -14,7 +14,7 @@ func0000000000000002:                   # @func0000000000000002
 	vzeroupper
 	retq
 func0000000000000008:                   # @func0000000000000008
-	vcmpeqps	%ymm0, %ymm1, %k0
+	vcmpeqps	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -29,7 +29,7 @@ func000000000000000b:                   # @func000000000000000b
 	vzeroupper
 	retq
 func0000000000000007:                   # @func0000000000000007
-	vcmpneqps	%ymm0, %ymm1, %k0
+	vcmpneqps	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

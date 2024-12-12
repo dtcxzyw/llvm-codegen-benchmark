@@ -1,9 +1,9 @@
 
-%"struct.clang::FunctionType::FunctionTypeArmAttributes.2948841" = type { i8, [7 x i8] }
-%"struct.clang::FunctionType::ExceptionType.2948843" = type { %"class.clang::QualType.2948584" }
-%"class.clang::QualType.2948584" = type { %"class.llvm::PointerIntPair.737.2948585" }
-%"class.llvm::PointerIntPair.737.2948585" = type { %"struct.llvm::detail::PunnedPointer.738.2948586" }
-%"struct.llvm::detail::PunnedPointer.738.2948586" = type { [8 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406" = type { i8, [7 x i8] }
+%"struct.clang::FunctionType::ExceptionType.3142408" = type { %"class.clang::QualType.3142149" }
+%"class.clang::QualType.3142149" = type { %"class.llvm::PointerIntPair.737.3142150" }
+%"class.llvm::PointerIntPair.737.3142150" = type { %"struct.llvm::detail::PunnedPointer.738.3142151" }
+%"struct.llvm::detail::PunnedPointer.738.3142151" = type { [8 x i8] }
 
 ; 2 occurrences:
 ; linux/optimized/ioam6.ll
@@ -54,12 +54,24 @@ entry:
 ; luajit/optimized/minilua.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000001f(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1
   %4 = zext nneg i16 %3 to i64
-  %5 = getelementptr nusw %"struct.clang::FunctionType::FunctionTypeArmAttributes.2948841", ptr %1, i64 %4
-  %6 = getelementptr nusw %"struct.clang::FunctionType::ExceptionType.2948843", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::ExceptionType.3142408", ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; icu/optimized/collationfastlatin.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(i64 %0, ptr %1, i16 %2) #0 {
+entry:
+  %3 = and i16 %2, 255
+  %4 = zext nneg i16 %3 to i64
+  %5 = getelementptr nusw nuw i16, ptr %1, i64 %4
+  %6 = getelementptr nusw i16, ptr %5, i64 %0
   ret ptr %6
 }
 

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	10                              # 0xa
-func00000000000001c4:                   # @func00000000000001c4
+func0000000000000384:                   # @func0000000000000384
 	vpmulld	.LCPI0_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsubq	%ymm1, %ymm0, %ymm0
@@ -10,7 +10,7 @@ func00000000000001c4:                   # @func00000000000001c4
 	retq
 .LCPI1_0:
 	.long	6                               # 0x6
-func00000000000001c6:                   # @func00000000000001c6
+func0000000000000386:                   # @func0000000000000386
 	vpmulld	.LCPI1_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsubq	%ymm1, %ymm0, %ymm0

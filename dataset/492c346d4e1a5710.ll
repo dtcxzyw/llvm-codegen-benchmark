@@ -27,7 +27,7 @@ entry:
 define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:
   %2 = sext i1 %0 to i32
-  %3 = add nsw i32 %2, %1
+  %3 = add nsw i32 %1, %2
   %4 = mul nsw i32 %3, 6
   ret i32 %4
 }

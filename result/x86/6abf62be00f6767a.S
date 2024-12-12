@@ -10,12 +10,6 @@ func000000000000000d:                   # @func000000000000000d
 	movl	$1, %eax
 	cmovgeq	%rcx, %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
-	cmpb	$7, %sil
-	movl	%edi, %ecx
-	movl	$1, %eax
-	cmovaeq	%rcx, %rax
-	retq
 func0000000000000002:                   # @func0000000000000002
 	cmpb	$72, %sil
 	movl	%edi, %ecx

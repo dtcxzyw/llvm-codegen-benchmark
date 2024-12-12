@@ -14,7 +14,11 @@ entry:
   ret i1 %5
 }
 
-; 22 occurrences:
+; 25 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_distance_measure.ll
 ; entt/optimized/any.cpp.ll
 ; entt/optimized/meta_any.cpp.ll
 ; graphviz/optimized/shapes.c.ll
@@ -35,7 +39,6 @@ entry:
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/metadata.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, double %2) #0 {
@@ -76,7 +79,9 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; cpython/optimized/dtoa.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; nori/optimized/ttest.cpp.ll

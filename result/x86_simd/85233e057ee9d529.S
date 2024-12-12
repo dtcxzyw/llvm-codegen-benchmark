@@ -42,10 +42,7 @@ func0000000000000031:                   # @func0000000000000031
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsraq	$4, %ymm0, %ymm0
 	retq
-func000000000000003b:                   # @func000000000000003b
-	vpsubq	%ymm1, %ymm0, %ymm0
-	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsllq	$2, %ymm0, %ymm0
 	vpsraq	$2, %ymm0, %ymm0

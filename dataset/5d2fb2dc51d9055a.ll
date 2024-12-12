@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; icu/optimized/ucnvbocu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = sub nsw i32 %2, %0

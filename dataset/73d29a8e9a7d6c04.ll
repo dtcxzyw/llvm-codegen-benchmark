@@ -1,8 +1,7 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; folly/optimized/CacheLocality.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; hermes/optimized/ES6Class.cpp.ll
 ; llvm/optimized/AArch64StackTaggingPreRA.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll

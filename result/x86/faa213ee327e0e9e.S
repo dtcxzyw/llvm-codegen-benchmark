@@ -11,18 +11,18 @@ func0000000000000006:                   # @func0000000000000006
 	andb	%dil, %al
 	retq
 func0000000000000004:                   # @func0000000000000004
-	leaq	-1(%rdx,%rsi), %rax
-	shrq	$48, %rax
-	sete	%al
+	leaq	1(%rdx,%rsi), %rax
+	cmpq	$2, %rax
+	setb	%al
 	andb	%dil, %al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	leaq	1(%rdx,%rsi), %rax
 	cmpq	$513, %rax                      # imm = 0x201
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	leaq	1(%rdx,%rsi), %rax
 	cmpq	$513, %rax                      # imm = 0x201
 	setb	%al
@@ -35,7 +35,7 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	leaq	-128(%rdx,%rsi), %rax
 	cmpq	$29, %rax
 	setge	%al

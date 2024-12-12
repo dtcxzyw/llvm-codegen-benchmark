@@ -11,11 +11,11 @@ define i1 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 15
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/amapRule.c.ll
 ; clamav/optimized/hfsplus.c.ll
@@ -31,14 +31,13 @@ entry:
 ; llvm/optimized/X86MachineFunctionInfo.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
-; wireshark/optimized/tvbuff_lz77.c.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 1
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ugt i32 %0, %3
   ret i1 %4
 }
 
@@ -48,11 +47,22 @@ entry:
 ; postgres/optimized/tsvector.ll
 ; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 8
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ult i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/tvbuff_lz77.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i16 %1) #0 {
+entry:
+  %2 = lshr i16 %1, 3
+  %3 = zext nneg i16 %2 to i32
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
@@ -64,7 +74,7 @@ define i1 @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 9
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 167 occurrences:
+; 168 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/connect.c.ll
@@ -53,7 +53,6 @@
 ; linux/optimized/ip_tables.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/mdio_bus.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mmap.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/xt_addrtype.ll
@@ -107,6 +106,8 @@
 ; luau/optimized/TypeInfer.tables.test.cpp.ll
 ; luau/optimized/TypePath.test.cpp.ll
 ; luau/optimized/Variant.test.cpp.ll
+; lvgl/optimized/lv_event.ll
+; lvgl/optimized/lv_tabview.ll
 ; nanobind/optimized/nb_type.cpp.ll
 ; nlohmann_json/optimized/unit-capacity.cpp.ll
 ; nlohmann_json/optimized/unit-class_parser.cpp.ll
@@ -172,7 +173,7 @@ define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -334,6 +335,7 @@ entry:
 ; luau/optimized/Variant.test.cpp.ll
 ; luau/optimized/VecDeque.test.cpp.ll
 ; luau/optimized/VisitType.test.cpp.ll
+; lvgl/optimized/lv_tabview.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; mitsuba3/optimized/scene.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
@@ -410,8 +412,6 @@ entry:
 ; openjdk/optimized/universe.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/node.cpp.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
 ; php/optimized/dfa_pass.ll
 ; php/optimized/pcre2_auto_possess.ll
 ; php/optimized/pcre2_match.ll
@@ -419,6 +419,7 @@ entry:
 ; php/optimized/zend_inheritance.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
+; qemu/optimized/hw_net_tulip.c.ll
 ; qemu/optimized/net_can_can_core.c.ll
 ; quickjs/optimized/quickjs.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
@@ -458,18 +459,7 @@ define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0
-  %4 = xor i1 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; linux/optimized/xt_conntrack.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 7
-  %3 = icmp ult i32 %2, 3
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 

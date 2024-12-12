@@ -1,32 +1,18 @@
 func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
-	fcvtzs	v2.4s, v2.4s
-	fcvtzs	v3.4s, v3.4s
-	movi	v4.4s, #1
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	scvtf	v2.4s, v2.4s
-	scvtf	v3.4s, v3.4s
-	fcmge	v1.4s, v1.4s, v3.4s
-	fcmge	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	mvn	v0.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	fcvtzs	w8, s1
+	add	w8, w8, #1
+	scvtf	s1, w8
+	fcmp	s0, s1
+	cset	w0, lt
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	fcvtzs	v2.4s, v2.4s
-	fcvtzs	v3.4s, v3.4s
-	movi	v4.4s, #1
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	scvtf	v2.4s, v2.4s
-	scvtf	v3.4s, v3.4s
-	fcmge	v1.4s, v3.4s, v1.4s
-	fcmge	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	mvn	v0.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	fcvtzs	w8, s1
+	add	w8, w8, #1
+	scvtf	s1, w8
+	fcmp	s0, s1
+	cset	w0, hi
 	ret
                                         // -- End function

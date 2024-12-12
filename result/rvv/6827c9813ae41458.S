@@ -24,7 +24,7 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vsll.vi	v10, v10, 8
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	lui	a0, 8
 	vor.vx	v8, v8, a0, v0.t
 	ret

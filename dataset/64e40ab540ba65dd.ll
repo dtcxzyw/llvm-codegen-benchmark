@@ -1,14 +1,14 @@
 
-%struct.page.3358159 = type { i64, %union.anon.11.3358160, %union.anon.19.3358161, %struct.atomic_t.3358128, [8 x i8] }
-%union.anon.11.3358160 = type { %struct.anon.12.3358162 }
-%struct.anon.12.3358162 = type { %union.anon.13.3358163, ptr, %union.anon.15.3358164, i64 }
-%union.anon.13.3358163 = type { %struct.list_head.3358122 }
-%struct.list_head.3358122 = type { ptr, ptr }
-%union.anon.15.3358164 = type { i64 }
-%union.anon.19.3358161 = type { %struct.atomic_t.3358128 }
-%struct.atomic_t.3358128 = type { i32 }
+%struct.page.3545263 = type { i64, %union.anon.11.3545264, %union.anon.19.3545265, %struct.atomic_t.3545232, [8 x i8] }
+%union.anon.11.3545264 = type { %struct.anon.12.3545266 }
+%struct.anon.12.3545266 = type { %union.anon.13.3545267, ptr, %union.anon.15.3545268, i64 }
+%union.anon.13.3545267 = type { %struct.list_head.3545226 }
+%struct.list_head.3545226 = type { ptr, ptr }
+%union.anon.15.3545268 = type { i64 }
+%union.anon.19.3545265 = type { %struct.atomic_t.3545232 }
+%struct.atomic_t.3545232 = type { i32 }
 
-; 21 occurrences:
+; 18 occurrences:
 ; hermes/optimized/ArrayStorage.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
 ; hermes/optimized/DictPropertyMap.cpp.ll
@@ -26,14 +26,25 @@
 ; hermes/optimized/require.cpp.ll
 ; libpng/optimized/pngrutil.c.ll
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
-; openjdk/optimized/jvmtiRedefineClasses.ll
 ; openjdk/optimized/pngrutil.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %0
+  %4 = ptrtoint ptr %3 to i64
+  %5 = and i64 %4, 1
+  ret i64 %5
+}
+
+; 3 occurrences:
+; openjdk/optimized/jvmtiRedefineClasses.ll
 ; openmpi/optimized/crc.ll
 ; wolfssl/optimized/chacha.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(i64 %0, ptr %1) #0 {
+define i64 @func000000000000000e(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 4
   %3 = getelementptr nusw i8, ptr %2, i64 %0
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, 1
@@ -50,7 +61,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -8
-  %3 = getelementptr %struct.page.3358159, ptr %2, i64 %0
+  %3 = getelementptr %struct.page.3545263, ptr %2, i64 %0
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, 4095
   ret i64 %5
@@ -59,9 +70,9 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/inv_api.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 4
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 4
   %3 = getelementptr i8, ptr %2, i64 %0
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, 7

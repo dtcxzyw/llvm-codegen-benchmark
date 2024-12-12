@@ -20,7 +20,7 @@
 ; php/optimized/zend_jit.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = or disjoint i32 %2, 2
@@ -70,11 +70,11 @@ entry:
 ; linux/optimized/fhandle.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1048575
   %3 = or disjoint i32 %2, 1048576
-  %4 = icmp ult i32 %0, 1048576
+  %4 = icmp samesign ult i32 %0, 1048576
   %5 = select i1 %4, i32 %2, i32 %3
   ret i32 %5
 }

@@ -19,6 +19,13 @@ func0000000000000010:                   // @func0000000000000010
 	add	x0, x8, w1, sxtw
 	ret
                                         // -- End function
+func000000000000002e:                   // @func000000000000002e
+// %bb.0:                               // %entry
+	mov	w8, #12                         // =0xc
+	madd	x8, x2, x8, x0
+	add	x0, x8, w1, sxtw #1
+	ret
+                                        // -- End function
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
 	add	x8, x2, x2, lsl #2

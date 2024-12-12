@@ -5,7 +5,7 @@
 ; quantlib/optimized/dynprogvppintrinsicvalueengine.ll
 ; rocksdb/optimized/compaction_iterator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(double %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(double %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -22,7 +22,7 @@ entry:
 ; node/optimized/libnode.node_dir.ll
 ; opencv/optimized/lsd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(double %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(double %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

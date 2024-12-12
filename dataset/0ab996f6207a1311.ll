@@ -1,7 +1,9 @@
 
-; 155 occurrences:
+; 157 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -78,7 +80,6 @@
 ; luau/optimized/lvmutils.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_io_nxs.cpp.ll
@@ -155,6 +156,7 @@
 ; wireshark/optimized/stats_tree.c.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; xgboost/optimized/regression_obj.cc.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, float %1) #0 {
 entry:

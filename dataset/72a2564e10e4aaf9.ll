@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0) #0 {
+define i1 @func0000000000000046(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = and i32 %1, -2147483585
@@ -37,7 +37,7 @@ entry:
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0) #0 {
+define i1 @func000000000000002c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 7
   %2 = icmp ne i64 %1, 0
@@ -49,7 +49,7 @@ entry:
 ; meshlab/optimized/io_x3d.cpp.ll
 ; php/optimized/cdf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = trunc nsw i64 %0 to i32
   %2 = srem i32 %1, 24

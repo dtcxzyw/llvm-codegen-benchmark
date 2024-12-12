@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; gromacs/optimized/lincs.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -55,6 +55,7 @@
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/mipmap.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(i64 %0) #0 {
 entry:

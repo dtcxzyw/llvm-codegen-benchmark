@@ -1,5 +1,5 @@
 
-; 75 occurrences:
+; 72 occurrences:
 ; assimp/optimized/SMDLoader.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -10,12 +10,10 @@
 ; hdf5/optimized/H5HFiblock.c.ll
 ; hermes/optimized/JSTypedArray.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/cpufreq_governor.ll
 ; linux/optimized/haltpoll.ll
 ; linux/optimized/hid-ntrig.ll
 ; linux/optimized/ialloc.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/regmap-debugfs.ll
@@ -45,7 +43,6 @@
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/Pointer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
@@ -83,15 +80,13 @@ entry:
   ret i32 %3
 }
 
-; 25 occurrences:
+; 23 occurrences:
 ; graphviz/optimized/pack.c.ll
 ; hwloc/optimized/hwloc-annotate.ll
 ; hwloc/optimized/topology-synthetic.ll
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/tcp_output.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; minetest/optimized/guiAnimatedImage.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll

@@ -73,7 +73,7 @@ func0000000000000020:                   # @func0000000000000020
 	.short	24                              # 0x18
 .LCPI4_2:
 	.short	24                              # 0x18
-func0000000000000022:                   # @func0000000000000022
+func0000000000000062:                   # @func0000000000000062
 	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastw	.LCPI4_2(%rip), %xmm1   # xmm1 = [24,24,24,24,24,24,24,24]
 	vpmovdw	%ymm0, %xmm1 {%k1}

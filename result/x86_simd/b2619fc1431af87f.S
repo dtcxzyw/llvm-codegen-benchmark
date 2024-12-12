@@ -3,7 +3,7 @@ func0000000000000004:                   # @func0000000000000004
 	vptestmq	%ymm1, %ymm1, %k1
 	vpaddq	%ymm2, %ymm0, %ymm0 {%k1}
 	retq
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	vpsubq	%ymm1, %ymm2, %ymm2
 	vptestmq	%ymm1, %ymm1, %k1
 	vpaddq	%ymm2, %ymm0, %ymm0 {%k1}

@@ -8,7 +8,7 @@
 ; wireshark/optimized/packet-t38.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i16 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 40
   %3 = icmp ne i16 %2, 32
@@ -17,9 +17,8 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; libevent/optimized/event.c.ll
-; linux/optimized/scan.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
@@ -27,7 +26,7 @@ entry:
 ; slurm/optimized/node_info.ll
 ; wireshark/optimized/packet-zabbix.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp eq i16 %2, 0
@@ -45,7 +44,7 @@ entry:
 ; wireshark/optimized/packet-bthci_iso.c.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i16 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
   %3 = icmp ne i16 %2, 2
@@ -59,7 +58,7 @@ entry:
 ; wireshark/optimized/packet-bthci_acl.c.ll
 ; wireshark/optimized/packet-bthci_iso.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp eq i16 %2, 0

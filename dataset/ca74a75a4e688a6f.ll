@@ -13,7 +13,7 @@
 ; openjdk/optimized/compilationPolicy.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
   %4 = add nsw i64 %3, %1
@@ -44,10 +44,10 @@ entry:
 ; openjdk/optimized/XToolkit.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
@@ -59,7 +59,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -73,10 +73,10 @@ entry:
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 88
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -84,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; rocksdb/optimized/wal_manager.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
   %4 = add nsw i64 %3, %1
@@ -103,10 +103,10 @@ entry:
 ; wasmedge/optimized/global.cpp.ll
 ; wasmedge/optimized/memory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 6
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -140,10 +140,10 @@ entry:
 ; wasmedge/optimized/memory.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 48
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -158,30 +158,6 @@ entry:
   %3 = sdiv i64 %2, -1000000
   %4 = add i64 %3, %1
   %5 = icmp slt i64 %4, %0
-  ret i1 %5
-}
-
-; 3 occurrences:
-; lief/optimized/timing.c.ll
-; quickjs/optimized/quickjs.ll
-; stat-rs/optimized/n94tvlll45kxl7r.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sdiv i64 %2, 1000
-  %4 = add i64 %3, %1
-  %5 = icmp ult i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; lief/optimized/timing.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sdiv i64 %2, 1000
-  %4 = add i64 %3, %1
-  %5 = icmp uge i64 %4, %0
   ret i1 %5
 }
 
@@ -201,10 +177,10 @@ entry:
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2592000000000
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
@@ -221,7 +197,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 86400000000
   %4 = add nsw i64 %3, %1
@@ -229,7 +205,8 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/self_intersection_points.ll
 ; duckdb/optimized/ub_duckdb_operator_aggregate.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
@@ -238,7 +215,7 @@ entry:
 ; opencv/optimized/trace.cpp.ll
 ; openusd/optimized/listOp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = add nsw i64 %3, %1
@@ -249,7 +226,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000027(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 86400000000
   %4 = add nsw i64 %3, %1
@@ -260,10 +237,10 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2592000000000
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp ne i64 %4, %0
   ret i1 %5
 }
@@ -281,9 +258,20 @@ entry:
 }
 
 ; 1 occurrences:
+; stat-rs/optimized/n94tvlll45kxl7r.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sdiv i64 %2, 2
+  %4 = add i64 %3, %1
+  %5 = icmp ult i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000055(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a5(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 72
   %4 = add nsw i64 %3, %1
@@ -402,10 +390,10 @@ entry:
 ; wireshark/optimized/wireshark_zip_helper.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, -24
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
@@ -413,7 +401,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/history_tree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 7
   %4 = add nsw i64 %3, %1
@@ -429,7 +417,7 @@ entry:
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 40
   %4 = add i64 %3, %1
@@ -441,10 +429,10 @@ entry:
 ; graphviz/optimized/csettings.cpp.ll
 ; graphviz/optimized/mainwindow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, -24
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp sge i64 %4, %0
   ret i1 %5
 }
@@ -453,10 +441,10 @@ entry:
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000085(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 40
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ule i64 %4, %0
   ret i1 %5
 }
@@ -466,7 +454,7 @@ entry:
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, -24
   %4 = add i64 %3, %1
@@ -480,10 +468,10 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 48
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }

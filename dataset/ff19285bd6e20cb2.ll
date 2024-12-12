@@ -1,6 +1,9 @@
 
-; 11 occurrences:
+; 14 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libquic/optimized/lhash.c.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
@@ -17,7 +20,7 @@ entry:
   %3 = and i64 %2, 63
   %4 = sub nuw nsw i64 64, %3
   %5 = lshr i64 %1, %4
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 

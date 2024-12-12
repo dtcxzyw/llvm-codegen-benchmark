@@ -42,7 +42,7 @@ entry:
   %2 = lshr i32 %1, 1
   %3 = add nuw i32 %2, 251
   %4 = and i32 %3, 255
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

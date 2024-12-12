@@ -11,7 +11,7 @@ define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 262144, i32 0
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl nuw nsw i32 %1, 21
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -51,7 +51,7 @@ define i32 @func0000000000000012(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 13
   %4 = select i1 %3, i32 32768, i32 0
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl i32 %1, 16
   %7 = or i32 %5, %6
   ret i32 %7

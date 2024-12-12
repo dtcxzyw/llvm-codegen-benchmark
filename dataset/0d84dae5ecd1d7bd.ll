@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000006c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %0, 100
@@ -14,7 +14,7 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %0, 100
@@ -26,7 +26,7 @@ entry:
 ; ruby/optimized/time.ll
 ; slurm/optimized/mpi_cray_shasta_la-apinfo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nuw nsw i64 %0, 100
@@ -53,7 +53,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bio_lib.ll
 ; openssl/optimized/libcrypto-shlib-bio_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul i64 %0, 1000
@@ -65,11 +65,11 @@ entry:
 ; flac/optimized/metadata_object.c.ll
 ; gromacs/optimized/xtc3.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %0, 18
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -92,16 +92,26 @@ entry:
 ; abc/optimized/acecXor.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nuw nsw i64 %0, 6
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; hermes/optimized/Domain.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = mul i64 %0, 3
+  %4 = icmp samesign ugt i64 %3, %2
+  ret i1 %4
+}
+
+; 3 occurrences:
 ; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/sta_info.ll
 ; linux/optimized/xhci.ll
@@ -109,7 +119,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul i64 %0, 3
+  %3 = mul i64 %0, 1000
   %4 = icmp ugt i64 %3, %2
   ret i1 %4
 }

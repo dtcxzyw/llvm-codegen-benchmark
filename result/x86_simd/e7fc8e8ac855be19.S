@@ -80,81 +80,81 @@ func000000000000001b:                   # @func000000000000001b
 	vpternlogd	$254, .LCPI5_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
 .LCPI6_0:
-	.long	1048576                         # 0x100000
-.LCPI6_1:
-	.long	120                             # 0x78
-func0000000000000004:                   # @func0000000000000004
-	vpslld	$14, %ymm2, %ymm2
-	vpternlogd	$236, .LCPI6_0(%rip){1to8}, %ymm1, %ymm2 # ymm2 = (ymm2 & mem) | ymm1
-	vpternlogd	$254, .LCPI6_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
+	.long	4278190080                      # 0xff000000
+func000000000000001c:                   # @func000000000000001c
+	vpsllw	$8, %ymm2, %ymm2
+	vpor	%ymm2, %ymm1, %ymm1
+	vpternlogd	$254, .LCPI6_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
 .LCPI7_0:
-	.long	640                             # 0x280
+	.long	240                             # 0xf0
 .LCPI7_1:
-	.long	64                              # 0x40
-func000000000000000f:                   # @func000000000000000f
-	vpslld	$5, %ymm2, %ymm2
+	.long	268435456                       # 0x10000000
+func0000000000000018:                   # @func0000000000000018
+	vpslld	$4, %ymm2, %ymm2
 	vpternlogd	$236, .LCPI7_0(%rip){1to8}, %ymm1, %ymm2 # ymm2 = (ymm2 & mem) | ymm1
 	vpternlogd	$254, .LCPI7_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
 .LCPI8_0:
-	.long	4278190080                      # 0xff000000
-func000000000000001c:                   # @func000000000000001c
-	vpsllw	$8, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
-	vpternlogd	$254, .LCPI8_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	.long	491520                          # 0x78000
+.LCPI8_1:
+	.long	3221225472                      # 0xc0000000
+func000000000000001a:                   # @func000000000000001a
+	vpslld	$15, %ymm2, %ymm2
+	vpternlogd	$236, .LCPI8_0(%rip){1to8}, %ymm1, %ymm2 # ymm2 = (ymm2 & mem) | ymm1
+	vpternlogd	$254, .LCPI8_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
 .LCPI9_0:
-	.long	240                             # 0xf0
+	.long	4161536                         # 0x3f8000
 .LCPI9_1:
-	.long	268435456                       # 0x10000000
-func0000000000000018:                   # @func0000000000000018
-	vpslld	$4, %ymm2, %ymm2
+	.long	3221225472                      # 0xc0000000
+func0000000000000002:                   # @func0000000000000002
+	vpslld	$15, %ymm2, %ymm2
 	vpternlogd	$236, .LCPI9_0(%rip){1to8}, %ymm1, %ymm2 # ymm2 = (ymm2 & mem) | ymm1
 	vpternlogd	$254, .LCPI9_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
 .LCPI10_0:
-	.long	491520                          # 0x78000
+	.long	240                             # 0xf0
 .LCPI10_1:
-	.long	3221225472                      # 0xc0000000
-func000000000000001a:                   # @func000000000000001a
-	vpslld	$15, %ymm2, %ymm2
+	.long	8                               # 0x8
+func0000000000000005:                   # @func0000000000000005
+	vpslld	$4, %ymm2, %ymm2
 	vpternlogd	$236, .LCPI10_0(%rip){1to8}, %ymm1, %ymm2 # ymm2 = (ymm2 & mem) | ymm1
 	vpternlogd	$254, .LCPI10_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
 .LCPI11_0:
-	.long	4161536                         # 0x3f8000
+	.long	4294934782                      # 0xffff80fe
 .LCPI11_1:
-	.long	3221225472                      # 0xc0000000
-func0000000000000002:                   # @func0000000000000002
-	vpslld	$15, %ymm2, %ymm2
+	.long	1                               # 0x1
+func000000000000000b:                   # @func000000000000000b
+	vpaddd	%ymm2, %ymm2, %ymm2
 	vpternlogd	$236, .LCPI11_0(%rip){1to8}, %ymm1, %ymm2 # ymm2 = (ymm2 & mem) | ymm1
 	vpternlogd	$254, .LCPI11_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
 .LCPI12_0:
-	.long	240                             # 0xf0
+	.long	2097152                         # 0x200000
 .LCPI12_1:
-	.long	8                               # 0x8
-func0000000000000005:                   # @func0000000000000005
-	vpslld	$4, %ymm2, %ymm2
+	.long	96                              # 0x60
+func0000000000000004:                   # @func0000000000000004
+	vpslld	$2, %ymm2, %ymm2
 	vpternlogd	$236, .LCPI12_0(%rip){1to8}, %ymm1, %ymm2 # ymm2 = (ymm2 & mem) | ymm1
 	vpternlogd	$254, .LCPI12_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
 .LCPI13_0:
-	.long	4294934782                      # 0xffff80fe
+	.long	1015808                         # 0xf8000
 .LCPI13_1:
-	.long	1                               # 0x1
-func000000000000000b:                   # @func000000000000000b
-	vpaddd	%ymm2, %ymm2, %ymm2
+	.long	152                             # 0x98
+func000000000000001d:                   # @func000000000000001d
+	vpslld	$12, %ymm2, %ymm2
 	vpternlogd	$236, .LCPI13_0(%rip){1to8}, %ymm1, %ymm2 # ymm2 = (ymm2 & mem) | ymm1
 	vpternlogd	$254, .LCPI13_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
 .LCPI14_0:
-	.long	1015808                         # 0xf8000
+	.long	117440512                       # 0x7000000
 .LCPI14_1:
-	.long	152                             # 0x98
-func000000000000001d:                   # @func000000000000001d
-	vpslld	$12, %ymm2, %ymm2
+	.long	4034953344                      # 0xf0808080
+func000000000000000f:                   # @func000000000000000f
+	vpslld	$6, %ymm2, %ymm2
 	vpternlogd	$236, .LCPI14_0(%rip){1to8}, %ymm1, %ymm2 # ymm2 = (ymm2 & mem) | ymm1
 	vpternlogd	$254, .LCPI14_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
@@ -162,13 +162,13 @@ func000000000000001d:                   # @func000000000000001d
 	.long	4278190080                      # 0xff000000
 func000000000000000e:                   # @func000000000000000e
 	vpsllw	$8, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogd	$254, .LCPI15_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
 .LCPI16_0:
 	.long	4278190080                      # 0xff000000
 func0000000000000016:                   # @func0000000000000016
 	vpsllw	$8, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogd	$254, .LCPI16_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq

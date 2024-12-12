@@ -1,14 +1,14 @@
-func000000000000001f:                   # @func000000000000001f
-	slli	a1, a1, 10
-	add	a0, a0, a1
-	lui	a1, 16
-	addw	a0, a0, a1
-	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a1, a1, 22
 	lui	a2, 1024
 	addw	a1, a1, a2
 	or	a0, a0, a1
+	ret
+func000000000000001f:                   # @func000000000000001f
+	slli	a1, a1, 22
+	add	a0, a0, a1
+	lui	a1, 247552
+	addw	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a1, a1, 13

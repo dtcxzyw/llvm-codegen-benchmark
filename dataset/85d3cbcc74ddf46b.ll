@@ -1,10 +1,11 @@
 
-; 132 occurrences:
+; 133 occurrences:
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/signal.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll

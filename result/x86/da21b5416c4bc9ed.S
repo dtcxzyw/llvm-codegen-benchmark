@@ -14,6 +14,11 @@ func000000000000000b:                   # @func000000000000000b
 	sete	%al
 	addl	%edi, %eax
 	retq
+func00000000000000a3:                   # @func00000000000000a3
+	movl	%edi, %eax
+	cmpl	$-146097, %esi                  # imm = 0xFFFDC54F
+	adcl	$0, %eax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
 	cmpl	$4, %esi

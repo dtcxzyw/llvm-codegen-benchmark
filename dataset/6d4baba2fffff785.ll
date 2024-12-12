@@ -1,5 +1,5 @@
 
-; 355 occurrences:
+; 356 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -9,6 +9,11 @@
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/loss_function.cc.ll
@@ -119,6 +124,7 @@
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luajit/optimized/lib_math.ll
 ; luajit/optimized/lib_math_dyn.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_sample.cpp.ll
@@ -145,14 +151,11 @@
 ; nuttx/optimized/lib_lgamma.c.ll
 ; ocio/optimized/GradingTone.cpp.ll
 ; openblas/optimized/dhgeqz.c.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dlasv2.c.ll
-; openblas/optimized/dlatdf.c.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
 ; opencv/optimized/adaptive_manifold_filter_n.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
@@ -210,11 +213,8 @@
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/gridshift.cpp.ll
 ; proj/optimized/isea.cpp.ll
-; proj/optimized/larr.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/networkfilemanager.cpp.ll
 ; proj/optimized/nsper.cpp.ll
 ; proj/optimized/proj_mdist.cpp.ll
@@ -353,13 +353,14 @@
 ; xgboost/optimized/aft_obj.cc.ll
 ; xgboost/optimized/quantile_obj.cc.ll
 ; xgboost/optimized/stats.cc.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zstd/optimized/cover.c.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, -5.000000e-01
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 

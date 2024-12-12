@@ -7,7 +7,7 @@ entry:
   %3 = and i8 %2, 8
   %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, i32 0, i32 %1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = and i8 %2, 63
   %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, i32 2, i32 %1
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -41,7 +41,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000085(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
@@ -54,7 +54,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 4
   %4 = icmp eq i8 %3, 0

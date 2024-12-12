@@ -24,3 +24,11 @@ func0000000000000018:                   # @func0000000000000018
 	andl	%esi, %eax
 	orl	%edi, %eax
 	retq
+func0000000000000009:                   # @func0000000000000009
+	cmpl	$2, %edx
+	movl	$-832, %ecx                     # imm = 0xFCC0
+	movl	$-16, %eax
+	cmovbl	%ecx, %eax
+	andl	%esi, %eax
+	orl	%edi, %eax
+	retq

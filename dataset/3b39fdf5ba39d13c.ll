@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; actix-rs/optimized/2m9lq42maoywd5kd.ll
 ; coreutils-rs/optimized/4ooodgzovc6dgngk.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
@@ -24,7 +24,6 @@
 ; spike/optimized/f128_to_i32.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3ze8abiqj6g8qouh.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
@@ -38,7 +37,7 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
@@ -47,9 +46,11 @@ entry:
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
+; image-rs/optimized/30755d6iao7ojcvl.ll
 ; llvm/optimized/CGExprComplex.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
+; rust-analyzer-rs/optimized/xh6m92l5tmfbxs4.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -67,7 +68,7 @@ define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 255
   %4 = select i1 %3, i1 true, i1 %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -78,7 +79,7 @@ define i1 @func0000000000000004(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2147483648
   %4 = select i1 %3, i1 true, i1 %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

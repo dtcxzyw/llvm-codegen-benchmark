@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/ifSat.c.ll
 ; jq/optimized/jv.ll
@@ -23,7 +23,6 @@
 ; llvm/optimized/SyntheticCountsUtils.cpp.ll
 ; llvm/optimized/ThinLTOCodeGenerator.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
-; qemu/optimized/hw_rtc_goldfish_rtc.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; wolfssl/optimized/sp_int.c.ll
@@ -31,8 +30,8 @@
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 1
-  %4 = and i32 %3, %0
+  %3 = and i32 %2, 63
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

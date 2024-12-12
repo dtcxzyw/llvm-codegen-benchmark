@@ -23,6 +23,15 @@ func0000000000000006:                   # @func0000000000000006
 	sext.b	a0, a0
 	slti	a0, a0, 0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 255
+	sltiu	a0, a0, 58
+	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a0, a0, 255
+	sltiu	a0, a0, 10
+	xori	a0, a0, 1
+	ret
 func000000000000000b:                   # @func000000000000000b
 	sext.b	a0, a0
 	slti	a0, a0, 0

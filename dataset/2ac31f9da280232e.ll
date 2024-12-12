@@ -2,15 +2,15 @@
 ; 1 occurrences:
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = lshr exact i32 %2, 2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ugt i32 %3, %0
   ret i1 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/cutNode.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -19,6 +19,7 @@ entry:
 ; abc/optimized/giaPf.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sfmArea.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -41,11 +42,11 @@ entry:
 ; llvm/optimized/MachineCopyPropagation.cpp.ll
 ; llvm/optimized/TargetRegisterInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = lshr i32 %2, 27
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 
@@ -53,11 +54,11 @@ entry:
 ; hyperscan/optimized/som_stream.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = lshr i32 %2, 6
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ugt i32 %3, %0
   ret i1 %4
 }
 

@@ -29,6 +29,14 @@ func000000000000000c:                   # @func000000000000000c
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	ret
+func000000000000000f:                   # @func000000000000000f
+	add	a0, a0, a1
+	lui	a1, 34360
+	slli	a0, a0, 32
+	addi	a1, a1, -1071
+	slli	a1, a1, 32
+	mulhu	a0, a0, a1
+	ret
 func0000000000000003:                   # @func0000000000000003
 	add	a0, a0, a1
 	li	a1, 19
@@ -42,13 +50,5 @@ func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 32
 	addi	a1, a1, 389
 	slli	a1, a1, 33
-	mulhu	a0, a0, a1
-	ret
-func000000000000000f:                   # @func000000000000000f
-	add	a0, a0, a1
-	lui	a1, 26844
-	slli	a0, a0, 32
-	addi	a1, a1, -1861
-	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	ret

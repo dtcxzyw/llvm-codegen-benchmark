@@ -1,5 +1,5 @@
 
-; 124 occurrences:
+; 140 occurrences:
 ; abc/optimized/abcStrash.c.ll
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
@@ -12,6 +12,7 @@
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/lpkMap.c.ll
+; boost/optimized/attribute_name.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; cpython/optimized/_elementtree.ll
 ; diesel-rs/optimized/3nhirlswgfgsoryk.ll
@@ -27,7 +28,6 @@
 ; jemalloc/optimized/prof_data.ll
 ; jemalloc/optimized/prof_data.pic.ll
 ; jemalloc/optimized/prof_data.sym.ll
-; linux/optimized/hid-cypress.ll
 ; linux/optimized/keyring.ll
 ; linux/optimized/maple_tree.ll
 ; llvm/optimized/ARMException.cpp.ll
@@ -73,8 +73,7 @@
 ; llvm/optimized/TGParser.cpp.ll
 ; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
+; lvgl/optimized/lv_obj_style.ll
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/dictionary.ll
 ; openjdk/optimized/finalizerService.ll
@@ -124,6 +123,23 @@
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
 ; z3/optimized/dl_compiler.cpp.ll
 ; z3/optimized/pb2bv_tactic.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/1mwyngh2duuoqbqyg0d7k37yf.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/3ovedgaw1yidfseciw93ubpv7.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/616rp2zngqhnd0pszesmvl987.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -139,6 +155,7 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/attribute_name.ll
 ; jemalloc/optimized/prof_data.ll
 ; jemalloc/optimized/prof_data.pic.ll
 ; jemalloc/optimized/prof_data.sym.ll
@@ -171,8 +188,6 @@ entry:
 ; luajit/optimized/lj_cconv_dyn.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
-; luajit/optimized/lj_obj.ll
-; luajit/optimized/lj_obj_dyn.ll
 ; mini-lsm-rs/optimized/1pvec8aj5zmr89ee.ll
 ; mini-lsm-rs/optimized/45da4db1y19tqmo.ll
 ; opencc/optimized/Config.cpp.ll
@@ -183,11 +198,12 @@ entry:
 ; redis/optimized/prof_data.sym.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/smt2parser.cpp.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 17592186040320
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

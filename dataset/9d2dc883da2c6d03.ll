@@ -4,7 +4,7 @@
 ; oiio/optimized/hdrinput.cpp.ll
 ; opencv/optimized/rgbe.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000186(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %3, -128
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/maple_tree.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %3, -1

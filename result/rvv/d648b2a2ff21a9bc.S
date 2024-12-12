@@ -4,7 +4,7 @@ func000000000000003a:                   # @func000000000000003a
 	vmv.v.i	v10, 1
 	vwsll.vv	v12, v10, v11
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -16,7 +16,7 @@ func000000000000003b:                   # @func000000000000003b
 	vmv.v.i	v10, 1
 	vwsll.vv	v12, v10, v11
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma

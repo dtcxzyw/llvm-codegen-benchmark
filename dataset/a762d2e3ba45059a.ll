@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 30 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -17,7 +17,6 @@
 ; abc/optimized/giaEra.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -25,7 +24,6 @@
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/rpo.c.ll
 ; abc/optimized/sswSim.c.ll
 ; postgres/optimized/lock.ll
@@ -33,7 +31,7 @@
 ; z3/optimized/occurs.cpp.ll
 ; z3/optimized/tbv.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = and i32 %2, %0
@@ -46,7 +44,7 @@ entry:
 ; yosys/optimized/memory_libmap.ll
 ; z3/optimized/arith_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = and i32 %2, %0

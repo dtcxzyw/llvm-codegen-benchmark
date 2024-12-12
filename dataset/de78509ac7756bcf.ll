@@ -4,7 +4,7 @@
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000045(i32 %0, i8 %1) #0 {
 entry:
   %.fr = freeze i8 %1
   %2 = zext i8 %.fr to i32
@@ -17,7 +17,7 @@ entry:
 ; cmake/optimized/huf_compress.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = select i1 %2, i32 11, i32 %0
@@ -30,7 +30,20 @@ entry:
 ; cmake/optimized/huf_compress.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000054(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp eq i32 %0, 0
+  %3 = select i1 %2, i32 11, i32 %0
+  %4 = zext i8 %1 to i32
+  %5 = icmp samesign ult i32 %3, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; cmake/optimized/huf_compress.c.ll
+; zstd/optimized/huf_compress.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = select i1 %2, i32 11, i32 %0
@@ -46,7 +59,7 @@ entry:
 ; redis/optimized/malloc_io.ll
 ; redis/optimized/malloc_io.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = select i1 %2, i32 10, i32 %0

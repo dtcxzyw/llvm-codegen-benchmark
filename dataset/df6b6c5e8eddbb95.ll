@@ -1,13 +1,9 @@
 
-; 6 occurrences:
+; 2 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
-; llvm/optimized/CoroFrame.cpp.ll
-; llvm/optimized/EarlyCSE.cpp.ll
-; llvm/optimized/LICM.cpp.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000828(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000002048(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 26
   %4 = icmp eq i8 %1, 95
@@ -22,7 +18,7 @@ entry:
 ; libuv/optimized/inet.c.ll
 ; node/optimized/inet.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000382(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000b02(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne i8 %1, 46

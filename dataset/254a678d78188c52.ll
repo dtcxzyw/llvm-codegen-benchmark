@@ -1,19 +1,20 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; assimp/optimized/IFCCurve.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; graphviz/optimized/osageinit.c.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/gmx_density.cpp.ll
 ; gromacs/optimized/gmx_potential.cpp.ll
+; lightgbm/optimized/metric.cpp.ll
 ; msdfgen/optimized/Contour.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
-; opencv/optimized/trackerKCF.cpp.ll
 ; openjdk/optimized/g1ConcurrentMark.ll
 ; postgres/optimized/costsize.ll
 ; postgres/optimized/rangetypes_gist.ll
 ; postgres/optimized/selfuncs.ll
+; proj/optimized/healpix.cpp.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/analyticptdhestonengine.ll
 ; quantlib/optimized/convolvedstudentt.ll

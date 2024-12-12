@@ -22,21 +22,10 @@
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, %2
-  %4 = icmp ult i8 %3, 6
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-mpeg-sect.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = add nuw i8 %1, %2
-  %4 = icmp ugt i8 %3, 59
+  %4 = icmp samesign ult i8 %3, 6
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -47,10 +36,10 @@ entry:
 ; arrow/optimized/value_parsing.cc.ll
 ; linux/optimized/x509_cert_parser.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000078(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, %2
-  %4 = icmp ugt i8 %3, 24
+  %4 = icmp samesign ugt i8 %3, 24
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -60,7 +49,7 @@ entry:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or i8 %1, %2
   %4 = icmp eq i8 %3, 0

@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 33 occurrences:
 ; gromacs/optimized/minimize.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; meshlab/optimized/decorate_base.cpp.ll
@@ -29,6 +29,10 @@
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; wireshark/optimized/tap-macltestat.c.ll
 ; wireshark/optimized/tap-rlcltestat.c.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/1mwyngh2duuoqbqyg0d7k37yf.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/ca5hx4nwyb2mnunexsl1xqea9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 27 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/satSolver.c.ll
@@ -13,6 +13,7 @@
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; libwebp/optimized/histogram_enc.c.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/guiHyperText.cpp.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
@@ -25,11 +26,12 @@
 ; opencv/optimized/distransform.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; typst-rs/optimized/3lt7g0yvt7qzv13u.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   ret float %3
 }
 
@@ -109,7 +111,7 @@ entry:
 define float @func0000000000000001(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   ret float %3
 }
 

@@ -1,12 +1,14 @@
 
-%"struct.google::protobuf::internal::ExtensionSet::KeyValue.3242887" = type { i32, %"struct.google::protobuf::internal::ExtensionSet::Extension.3242888" }
-%"struct.google::protobuf::internal::ExtensionSet::Extension.3242888" = type { %union.anon.4.3242889, i8, i8, i8, i8, i32, ptr }
-%union.anon.4.3242889 = type { i64 }
-%"struct.google::protobuf::internal::ExtensionSet::KeyValue.3489253" = type { i32, %"struct.google::protobuf::internal::ExtensionSet::Extension.3489251" }
-%"struct.google::protobuf::internal::ExtensionSet::Extension.3489251" = type { %union.anon.8.3489252, i8, i8, i8, i8, i32, ptr }
-%union.anon.8.3489252 = type { i64 }
+%"struct.google::protobuf::internal::ExtensionSet::KeyValue.3434318" = type { i32, %"struct.google::protobuf::internal::ExtensionSet::Extension.3434319" }
+%"struct.google::protobuf::internal::ExtensionSet::Extension.3434319" = type { %union.anon.4.3434320, i8, i8, i8, i8, i32, ptr }
+%union.anon.4.3434320 = type { i64 }
+%"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671432" = type { i32, %"struct.google::protobuf::internal::ExtensionSet::Extension.3671433" }
+%"struct.google::protobuf::internal::ExtensionSet::Extension.3671433" = type { %union.anon.8.3671434, i8, i8, i8, i8, i32, ptr }
+%union.anon.8.3671434 = type { i64 }
+%union.IRIns.3680915 = type { %struct.GCRef.3680916 }
+%struct.GCRef.3680916 = type { i64 }
 
-; 63 occurrences:
+; 76 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/q4aavw6wh20so0r.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -70,8 +72,21 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmtime-rs/optimized/2sf3ranrrf5pn6ms.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3u7utqtgdovrxzbad3tfrps40.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/bwf7odsfkes1o9vw37iz67e4b.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000204(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
@@ -81,28 +96,38 @@ entry:
 }
 
 ; 2 occurrences:
-; assimp/optimized/XFileParser.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
+; openjdk/optimized/zip_util.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000168(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %1, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %1, i64 -46
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
 }
 
-; 3 occurrences:
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; sentencepiece/optimized/extension_set.cc.ll
+; 1 occurrences:
+; assimp/optimized/XFileParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000001e8(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3242887", ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %1, i64 32
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 2
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; sentencepiece/optimized/extension_set.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e1(ptr %0, ptr %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = getelementptr nusw nuw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3434318", ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 32
   %6 = icmp eq ptr %4, %5
   ret i1 %6
 }
@@ -148,11 +173,24 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3489253", ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %1, i64 32
+  %4 = getelementptr nusw nuw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671432", ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 32
+  %6 = icmp eq ptr %4, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000161(ptr %0, ptr %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = getelementptr nusw nuw %union.IRIns.3680915, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %1, i64 -8
   %6 = icmp eq ptr %4, %5
   ret i1 %6
 }

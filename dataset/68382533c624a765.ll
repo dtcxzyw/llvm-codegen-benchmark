@@ -49,7 +49,8 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_tree.ll
 ; slurm/optimized/gang.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0) #0 {
@@ -70,6 +71,20 @@ entry:
   %2 = add i32 %1, 2
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
+  ret i64 %4
+}
+
+; 3 occurrences:
+; opencv/optimized/mean.dispatch.cpp.ll
+; openmpi/optimized/ad_read_coll.ll
+; proj/optimized/4D_api.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000007f(i32 %0) #0 {
+entry:
+  %1 = shl i32 %0, 1
+  %2 = add i32 %1, 2
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 3
   ret i64 %4
 }
 

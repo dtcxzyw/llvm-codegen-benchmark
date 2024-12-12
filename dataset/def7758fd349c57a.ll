@@ -32,7 +32,32 @@ entry:
   ret i64 %5
 }
 
-; 61 occurrences:
+; 4 occurrences:
+; assimp/optimized/glTF2Exporter.cpp.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; assimp/optimized/glTFImporter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp sgt i64 %2, -1
+  %4 = select i1 %3, i64 114278840544526336, i64 78250043525562368
+  %5 = select i1 %0, i64 %1, i64 %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; git/optimized/archive-zip.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, 4294967294
+  %4 = select i1 %3, i64 8, i64 0
+  %5 = select i1 %0, i64 %1, i64 %4
+  ret i64 %5
+}
+
+; 60 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -88,7 +113,6 @@ entry:
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; openjdk/optimized/metaspaceCommon.ll
 ; tinympc/optimized/admm.cpp.ll
 ; tinympc/optimized/cartpole_example.cpp.ll
 ; tinympc/optimized/quadrotor_hovering.cpp.ll
@@ -97,33 +121,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 1024
-  %4 = select i1 %3, i64 1, i64 1024
-  %5 = select i1 %0, i64 %1, i64 %4
-  ret i64 %5
-}
-
-; 4 occurrences:
-; assimp/optimized/glTF2Exporter.cpp.ll
-; assimp/optimized/glTF2Importer.cpp.ll
-; assimp/optimized/glTFExporter.cpp.ll
-; assimp/optimized/glTFImporter.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp sgt i64 %2, -1
-  %4 = select i1 %3, i64 114278840544526336, i64 78250043525562368
-  %5 = select i1 %0, i64 %1, i64 %4
-  ret i64 %5
-}
-
-; 1 occurrences:
-; git/optimized/archive-zip.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ugt i64 %2, 4294967294
-  %4 = select i1 %3, i64 8, i64 0
+  %3 = icmp ult i64 %2, 32000
+  %4 = select i1 %3, i64 16, i64 4
   %5 = select i1 %0, i64 %1, i64 %4
   ret i64 %5
 }

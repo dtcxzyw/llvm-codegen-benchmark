@@ -14,5 +14,5 @@ func000000000000003f:                   # @func000000000000003f
 func0000000000000035:                   # @func0000000000000035
 	movzbl	%sil, %eax
 	shll	$7, %eax
-	leal	-16384(%rax,%rdi), %eax
+	leal	-16384(%rdi,%rax), %eax
 	retq

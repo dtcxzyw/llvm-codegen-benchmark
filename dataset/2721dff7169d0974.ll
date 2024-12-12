@@ -1,9 +1,8 @@
 
-; 2 occurrences:
-; arrow/optimized/key_map.cc.ll
+; 1 occurrences:
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -10
   %3 = icmp ult i32 %2, 5
@@ -18,7 +17,7 @@ entry:
 ; tinyrenderer/optimized/model.cpp.ll
 ; tinyrenderer/optimized/our_gl.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = select i1 %0, i64 8, i64 16

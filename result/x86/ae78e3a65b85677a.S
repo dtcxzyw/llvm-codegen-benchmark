@@ -4,3 +4,9 @@ func0000000000000000:                   # @func0000000000000000
 	cmoveq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	xorl	%eax, %eax
+	testb	$1, %dl
+	cmoveq	%rsi, %rax
+	orq	%rdi, %rax
+	retq

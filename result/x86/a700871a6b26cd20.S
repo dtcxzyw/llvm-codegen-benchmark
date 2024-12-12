@@ -22,6 +22,12 @@ func0000000000000006:                   # @func0000000000000006
 	shrq	$63, %rax
 	retq
 func0000000000000018:                   # @func0000000000000018
+	movl	$4096, %eax                     # imm = 0x1000
+	shlxq	%rdi, %rax, %rax
+	cmpq	$1073741824, %rax               # imm = 0x40000000
+	setae	%al
+	retq
+func0000000000000038:                   # @func0000000000000038
 	movq	$-1, %rax
 	shlxq	%rdi, %rax, %rax
 	cmpq	$-2, %rax

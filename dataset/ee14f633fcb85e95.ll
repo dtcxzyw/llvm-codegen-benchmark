@@ -1,15 +1,12 @@
 
-%"class.ZXing::Trit.3465387" = type { i8 }
+%class.checked_int64.3634402 = type { i64 }
+%"class.ZXing::Trit.3649655" = type { i8 }
 
-; 59 occurrences:
+; 55 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/luckyFast16.c.ll
-; arrow/optimized/key_map.cc.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; freetype/optimized/sdf.c.ll
-; libwebp/optimized/analysis_enc.c.ll
-; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/dec_sse2.c.ll
 ; opencv/optimized/AKAZE_match.cpp.ll
 ; opencv/optimized/LATCH_match.cpp.ll
@@ -71,14 +68,12 @@ entry:
   ret ptr %6
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
-; libwebp/optimized/analysis_enc.c.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; openjdk/optimized/interpreterRuntime.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
-; php/optimized/zend_hash.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -86,6 +81,19 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 2 occurrences:
+; libwebp/optimized/analysis_enc.c.ll
+; php/optimized/zend_hash.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 0, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw i32, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -104,9 +112,8 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
-; z3/optimized/hilbert_basis.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -143,6 +150,35 @@ entry:
   ret ptr %6
 }
 
+; 6 occurrences:
+; abc/optimized/luckyFast16.c.ll
+; arrow/optimized/key_map.cc.ll
+; freetype/optimized/sdf.c.ll
+; libwebp/optimized/analysis_enc.c.ll
+; libwebp/optimized/dec.c.ll
+; opencv/optimized/deriche_filter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 0, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %1
+  %6 = getelementptr nusw i32, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; z3/optimized/hilbert_basis.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sub nuw nsw i32 -2, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw %class.checked_int64.3634402, ptr %0, i64 %1
+  %6 = getelementptr nusw %class.checked_int64.3634402, ptr %5, i64 %4
+  ret ptr %6
+}
+
 ; 1 occurrences:
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
@@ -150,8 +186,8 @@ define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"class.ZXing::Trit.3465387", ptr %0, i64 %1
-  %6 = getelementptr nusw %"class.ZXing::Trit.3465387", ptr %5, i64 %4
+  %5 = getelementptr %"class.ZXing::Trit.3649655", ptr %0, i64 %1
+  %6 = getelementptr nusw %"class.ZXing::Trit.3649655", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -162,8 +198,8 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"class.ZXing::Trit.3465387", ptr %0, i64 %1
-  %6 = getelementptr nusw %"class.ZXing::Trit.3465387", ptr %5, i64 %4
+  %5 = getelementptr %"class.ZXing::Trit.3649655", ptr %0, i64 %1
+  %6 = getelementptr nusw %"class.ZXing::Trit.3649655", ptr %5, i64 %4
   ret ptr %6
 }
 

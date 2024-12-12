@@ -18,10 +18,9 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
@@ -30,18 +29,6 @@ entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 %0, i32 %1
   %4 = lshr i32 %3, 6
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
-}
-
-; 1 occurrences:
-; icu/optimized/collationiterator.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 65535
-  %3 = select i1 %2, i32 %0, i32 %1
-  %4 = lshr i32 %3, 5
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

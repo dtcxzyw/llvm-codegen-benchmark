@@ -20,7 +20,7 @@
 ; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/warpfield.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0) #0 {
+define i64 @func0000000000000066(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = shl nuw nsw i64 %1, 2
@@ -29,7 +29,9 @@ entry:
   ret i64 %4
 }
 
-; 39 occurrences:
+; 41 occurrences:
+; abc/optimized/cbaCom.c.ll
+; abc/optimized/utilNam.c.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/evaluator.cc.ll
 ; ceres/optimized/gradient_problem.cc.ll
@@ -70,7 +72,7 @@ entry:
 ; rocksdb/optimized/manager.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i32 %0) #0 {
+define i64 @func00000000000000e6(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw nsw i64 %1, 3
@@ -86,7 +88,7 @@ entry:
 ; glslang/optimized/hlslGrammar.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000078(i32 %0) #0 {
+define i64 @func00000000000000e8(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw nsw i64 %1, 56
@@ -123,7 +125,7 @@ entry:
 ; z3/optimized/th_rewriter.cpp.ll
 ; z3/optimized/tseitin_cnf_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0) #0 {
+define i64 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = shl nuw nsw i64 %1, 20

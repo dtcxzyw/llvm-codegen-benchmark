@@ -18,12 +18,12 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000010:                   # @func0000000000000010
 	vcvtsi2sd	%edi, %xmm1, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovw	%k0, %eax
 	retq
 func000000000000000e:                   # @func000000000000000e
 	vcvtsi2sd	%edi, %xmm1, %xmm1
-	vcmpneqsd	%xmm0, %xmm1, %k0
+	vcmpneqsd	%xmm1, %xmm0, %k0
 	kmovw	%k0, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018

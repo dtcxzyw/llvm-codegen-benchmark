@@ -45,6 +45,16 @@ func000000000000003d:                   # @func000000000000003d
 	imulq	$1000000, %rsi, %rax            # imm = 0xF4240
 	addq	%rdi, %rax
 	retq
+func0000000000000035:                   # @func0000000000000035
+	addq	%rdx, %rsi
+	imulq	$1000000, %rsi, %rax            # imm = 0xF4240
+	addq	%rdi, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	addq	%rdx, %rsi
+	leaq	(%rsi,%rsi,4), %rax
+	leaq	(%rdi,%rax,2), %rax
+	retq
 func0000000000000030:                   # @func0000000000000030
 	addq	%rdx, %rsi
 	imulq	$604800, %rsi, %rax             # imm = 0x93A80
@@ -54,16 +64,6 @@ func000000000000000f:                   # @func000000000000000f
 	addq	%rdx, %rsi
 	imulq	$104, %rsi, %rax
 	addq	%rdi, %rax
-	retq
-func0000000000000035:                   # @func0000000000000035
-	addq	%rdx, %rsi
-	imulq	$-16069, %rsi, %rax             # imm = 0xC13B
-	addq	%rdi, %rax
-	retq
-func0000000000000008:                   # @func0000000000000008
-	addq	%rdx, %rsi
-	leaq	(%rsi,%rsi,4), %rax
-	leaq	(%rdi,%rax,2), %rax
 	retq
 func000000000000003a:                   # @func000000000000003a
 	addq	%rdx, %rsi

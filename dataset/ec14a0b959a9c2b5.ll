@@ -3,7 +3,7 @@
 ; gromacs/optimized/xtc2.c.ll
 ; openjdk/optimized/c1_RangeCheckElimination.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i32 %1, 100
@@ -17,7 +17,7 @@ entry:
 ; openjdk/optimized/c1_RangeCheckElimination.ll
 ; openusd/optimized/mvref_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000042a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i32 %1, 100
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/date.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp slt i32 %1, 0
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %0
   %3 = icmp slt i32 %1, 0
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/stats_tree_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %0
   %3 = icmp eq i32 %1, 1
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/Par.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ca(i32 %0, i32 %1) #0 {
+define i1 @func000000000000058a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %.not = icmp eq i32 %1, 0
@@ -77,7 +77,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/Par.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000586(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %.not = icmp eq i32 %1, 0
@@ -89,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ehci-hcd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i32 %0, i32 %1) #0 {
+define i1 @func00000000000004c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp slt i32 %1, 0
@@ -101,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i32 %1, 0
@@ -113,7 +113,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/formatting.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %0
   %.not = icmp eq i32 %1, 0

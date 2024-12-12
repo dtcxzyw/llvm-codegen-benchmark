@@ -5,7 +5,7 @@
 ; libsodium/optimized/libsse2_la-pwhash_scryptsalsa208sha256_sse.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 2
@@ -20,19 +20,19 @@ entry:
 ; wasmedge/optimized/threadInstr.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 16
   %4 = add nuw nsw i64 %0, 4
-  %5 = icmp ugt i64 %4, %3
+  %5 = icmp samesign ugt i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 4
@@ -45,7 +45,7 @@ entry:
 ; php/optimized/zend_execute.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 5
@@ -59,19 +59,19 @@ entry:
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; ozz-animation/optimized/track.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %0, 2
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/devio.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c5(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000185(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 20

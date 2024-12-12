@@ -6,7 +6,7 @@
 ; libquic/optimized/adler32.c.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000b0(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000150(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 16
   %3 = add nsw i64 %2, -4293984256

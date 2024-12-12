@@ -1,9 +1,8 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; git/optimized/object-name.ll
 ; hyperscan/optimized/repeatcompile.cpp.ll
 ; llvm/optimized/NativeFormatting.cpp.ll
-; qemu/optimized/hw_misc_unimp.c.ll
 ; ruby/optimized/numeric.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
@@ -23,7 +22,7 @@ entry:
   ret i32 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; luau/optimized/AssemblyBuilderX64.test.cpp.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
@@ -34,6 +33,7 @@ entry:
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; proj/optimized/geodesic.c.ll
+; proj/optimized/mlfn.cpp.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {

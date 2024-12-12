@@ -10,7 +10,13 @@ func000000000000000c:                   # @func000000000000000c
 	vsrl.vi	v10, v10, 31
 	vmsne.vv	v0, v10, v8
 	ret
-func000000000000006a:                   # @func000000000000006a
+func00000000000000c1:                   # @func00000000000000c1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmul.vv	v10, v10, v12
+	vsrl.vi	v10, v10, 8
+	vmseq.vv	v0, v10, v8
+	ret
+func00000000000000ca:                   # @func00000000000000ca
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vv	v10, v10, v12
 	vsrl.vi	v10, v10, 1

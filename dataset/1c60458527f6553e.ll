@@ -6,7 +6,7 @@ define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = mul nuw i64 %4, %0
+  %5 = mul nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -65,11 +65,10 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
 ; libwebp/optimized/get_disto.c.ll
 ; libwebp/optimized/ssim.c.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/page-writeback.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
@@ -77,7 +76,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 

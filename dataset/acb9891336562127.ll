@@ -1,6 +1,8 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; nanosvg/optimized/nanosvg.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; oiio/optimized/pnminput.cpp.ll

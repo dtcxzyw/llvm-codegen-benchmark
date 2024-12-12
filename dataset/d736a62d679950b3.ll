@@ -78,7 +78,7 @@ define i1 @func000000000000002c(float %0) #0 {
 entry:
   %1 = fcmp olt float %0, 0.000000e+00
   %2 = select i1 %1, float -5.000000e-01, float 5.000000e-01
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   %4 = fcmp oge float %3, 0.000000e+00
   ret i1 %4
 }

@@ -1,4 +1,4 @@
-func0000000000000204:                   # @func0000000000000204
+func0000000000000404:                   # @func0000000000000404
 	leaq	(%rsi,%rsi,4), %rax
 	movsbq	%dil, %rcx
 	leaq	-48(%rcx,%rax,2), %rax
@@ -6,7 +6,7 @@ func0000000000000204:                   # @func0000000000000204
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func0000000000000208:                   # @func0000000000000208
+func0000000000000408:                   # @func0000000000000408
 	leaq	(%rsi,%rsi,4), %rax
 	movsbq	%dil, %rcx
 	leaq	-48(%rcx,%rax,2), %rax

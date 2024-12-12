@@ -19,16 +19,16 @@ func000000000000000c:                   # @func000000000000000c
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	cmpl	$18, %edx
-	setb	%al
+func000000000000000a:                   # @func000000000000000a
+	cmpl	$2, %edx
+	setge	%al
 	notb	%sil
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq
-func000000000000000a:                   # @func000000000000000a
-	cmpl	$2, %edx
-	setge	%al
+func0000000000000004:                   # @func0000000000000004
+	cmpl	$3, %edx
+	setb	%al
 	notb	%sil
 	andb	%dil, %sil
 	andb	%sil, %al

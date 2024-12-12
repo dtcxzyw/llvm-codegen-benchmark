@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; abseil-cpp/optimized/cordz_info.cc.ll
 ; cpython/optimized/pyhash.ll
 ; graphviz/optimized/pack.c.ll
@@ -7,6 +7,7 @@
 ; hdf5/optimized/H5Cint.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/graycodepattern.cpp.ll
 ; openjdk/optimized/adaptiveSizePolicy.ll
@@ -39,7 +40,7 @@
 define i64 @func0000000000000000(i64 %0, double %1) #0 {
 entry:
   %2 = fptoui double %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 

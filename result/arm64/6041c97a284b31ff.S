@@ -1,12 +1,10 @@
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	movi	v4.8h, #1
-	ushl	v3.8h, v4.8h, v3.8h
-	ushl	v2.8h, v4.8h, v2.8h
-	bic	v0.16b, v0.16b, v2.16b
-	bic	v1.16b, v1.16b, v3.16b
-	cmeq	v1.8h, v1.8h, #0
-	cmeq	v0.8h, v0.8h, #0
-	uzp1	v0.16b, v0.16b, v1.16b
+	mov	w8, #1                          // =0x1
+                                        // kill: def $w1 killed $w1 def $x1
+	lsl	w8, w8, w1
+	bic	w8, w0, w8
+	tst	w8, #0xffff
+	cset	w0, eq
 	ret
                                         // -- End function

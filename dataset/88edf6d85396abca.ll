@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/cpu_timer.ll
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; grpc/optimized/periodic_update.cc.ll

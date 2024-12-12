@@ -1,11 +1,13 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; grpc/optimized/rls.cc.ll
 ; hwloc/optimized/distances.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; nuttx/optimized/lib_expf.c.ll
 ; php/optimized/softmagic.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i64 %1) #0 {
 entry:

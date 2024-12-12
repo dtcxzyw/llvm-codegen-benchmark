@@ -4,12 +4,12 @@
 ; glslang/optimized/Initialize.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
   %4 = icmp ne i32 %3, 0
   %5 = icmp ne i32 %1, -1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7
 }
@@ -34,7 +34,7 @@ entry:
 ; postgres/optimized/clog.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4096
   %4 = icmp eq i32 %3, 0
@@ -44,8 +44,7 @@ entry:
   ret i1 %7
 }
 
-; 14 occurrences:
-; icu/optimized/tzfmt.ll
+; 13 occurrences:
 ; jq/optimized/jv_dtoa.ll
 ; llvm/optimized/ParseTemplate.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -60,7 +59,7 @@ entry:
 ; postgres/optimized/vacuum.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
@@ -93,26 +92,51 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1024
   %4 = icmp ne i32 %3, 0
   %5 = icmp eq i32 %1, 0
+  %6 = and i1 %0, %5
+  %7 = select i1 %6, i1 %4, i1 false
+  ret i1 %7
+}
+
+; 1 occurrences:
+; lief/optimized/psa_crypto_aead.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 63
+  %4 = icmp samesign ugt i32 %3, 16
+  %5 = icmp eq i32 %1, 83887360
   %6 = and i1 %5, %0
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7
 }
 
-; 2 occurrences:
-; llvm/optimized/Host.cpp.ll
+; 1 occurrences:
 ; luau/optimized/IrTranslateBuiltins.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000030c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = icmp ne i32 %3, 2
-  %5 = icmp ugt i32 %1, 2
+  %5 = icmp samesign ugt i32 %1, 2
   %6 = and i1 %5, %0
+  %7 = select i1 %6, i1 %4, i1 false
+  ret i1 %7
+}
+
+; 1 occurrences:
+; boost/optimized/ipv6_address_rule.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000294(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 14
+  %4 = icmp samesign ult i32 %3, 10
+  %5 = icmp samesign ult i32 %1, 598
+  %6 = and i1 %0, %5
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7
 }
@@ -120,7 +144,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaHLSL.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147483640
   %4 = icmp eq i32 %3, 0
@@ -133,11 +157,37 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = icmp eq i32 %3, 2
   %5 = icmp ult i32 %1, 51
+  %6 = and i1 %0, %5
+  %7 = select i1 %6, i1 %4, i1 false
+  ret i1 %7
+}
+
+; 1 occurrences:
+; llvm/optimized/Host.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010c(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 1
+  %4 = icmp ne i32 %3, 0
+  %5 = icmp ugt i32 %1, -2147483641
+  %6 = and i1 %0, %5
+  %7 = select i1 %6, i1 %4, i1 false
+  ret i1 %7
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-ieee80211-radiotap.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000194(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 15
+  %4 = icmp samesign ult i32 %3, 9
+  %5 = icmp ne i32 %1, 0
   %6 = and i1 %5, %0
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7

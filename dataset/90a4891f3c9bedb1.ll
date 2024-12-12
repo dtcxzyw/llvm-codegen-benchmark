@@ -1,4 +1,15 @@
 
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000015(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = add nsw i32 %2, -48
+  %4 = sub nsw i32 %0, %3
+  ret i32 %4
+}
+
 ; 12 occurrences:
 ; clamav/optimized/binhex.c.ll
 ; linux/optimized/xfrm_input.ll
@@ -56,7 +67,7 @@ define i32 @func000000000000000e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -68,6 +79,17 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = add nuw nsw i32 %2, 2
   %4 = sub nuw nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-bmc.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001c(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = add nuw nsw i32 %2, 3
+  %4 = sub i32 %0, %3
   ret i32 %4
 }
 

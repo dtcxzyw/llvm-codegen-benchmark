@@ -1,5 +1,5 @@
 
-; 152 occurrences:
+; 156 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -24,9 +24,10 @@
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/InlineAsmLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/ustring.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
-; php/optimized/pcre2_maketables.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; proxygen/optimized/HeaderTable.cpp.ll
@@ -34,6 +35,7 @@
 ; proxygen/optimized/Service.cpp.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/virtio.c.ll
+; redis/optimized/quicklist.ll
 ; ruby/optimized/generator.ll
 ; ruby/optimized/iseq.ll
 ; ruby/optimized/rjit_c.ll
@@ -73,7 +75,6 @@
 ; spike/optimized/cm_mva01s.ll
 ; spike/optimized/cm_mvsa01.ll
 ; spike/optimized/disasm.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/fadd_d.ll
 ; spike/optimized/fclass_d.ll
 ; spike/optimized/fcvt_d_h.ll
@@ -106,8 +107,11 @@
 ; spike/optimized/fround_d.ll
 ; spike/optimized/froundnx_d.ll
 ; spike/optimized/fsgnj_d.ll
+; spike/optimized/fsgnj_q.ll
 ; spike/optimized/fsgnjn_d.ll
+; spike/optimized/fsgnjn_q.ll
 ; spike/optimized/fsgnjx_d.ll
+; spike/optimized/fsgnjx_q.ll
 ; spike/optimized/fsqrt_d.ll
 ; spike/optimized/fsub_d.ll
 ; spike/optimized/kadd64.ll
@@ -161,21 +165,19 @@ entry:
   ret i64 %3
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; llvm/optimized/CalledOnceCheck.cpp.ll
 ; llvm/optimized/DeadArgumentElimination.cpp.ll
 ; opencv/optimized/qualitybrisque.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 48
-  %2 = and i64 %1, 32768
-  %3 = or disjoint i64 %2, 31744
+  %1 = lshr exact i64 %0, 5
+  %2 = and i64 %1, 4294967295
+  %3 = or disjoint i64 %2, -9223372036854775808
   ret i64 %3
 }
 

@@ -1,18 +1,18 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000094:                   # @func0000000000000094
 	cmpq	$513, %rsi                      # imm = 0x201
 	movl	$8, %eax
 	cmovbq	%rax, %rdi
 	cmpq	$20, %rdx
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	cmpq	$16, %rsi
 	movl	$4, %eax
 	cmovbq	%rax, %rdi
 	cmpq	$1, %rdx
 	cmovneq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testq	%rsi, %rsi
 	movl	$1099170962, %eax               # imm = 0x41840492
 	cmovneq	%rdi, %rax

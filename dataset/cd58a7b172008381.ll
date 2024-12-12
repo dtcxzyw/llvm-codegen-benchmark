@@ -1,5 +1,6 @@
 
-; 32 occurrences:
+; 33 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; cmake/optimized/json_writer.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; flatbuffers/optimized/code_generators.cpp.ll
@@ -98,9 +99,8 @@ entry:
   ret i64 %2
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; graphviz/optimized/edges.c.ll
-; osqp/optimized/derivative.c.ll
 ; proj/optimized/igh_o.cpp.ll
 ; proj/optimized/imoll_o.cpp.ll
 ; ruby/optimized/bignum.ll
@@ -109,6 +109,19 @@ define i64 @func0000000000000003(double %0) #0 {
 entry:
   %1 = fcmp ult double %0, 0.000000e+00
   %2 = select i1 %1, i64 0, i64 8192
+  ret i64 %2
+}
+
+; 4 occurrences:
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/8j1o11gelhgfvrp0ni2s36o5y.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(double %0) #0 {
+entry:
+  %1 = fcmp ueq double %0, 0x7FF0000000000000
+  %2 = select i1 %1, i64 -9223372036854775808, i64 -9223372036854775806
   ret i64 %2
 }
 

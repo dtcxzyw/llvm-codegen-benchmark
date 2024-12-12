@@ -4,9 +4,9 @@
 ; git/optimized/grep.ll
 ; hwloc/optimized/lstopo-lstopo-text.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-text.ll
-; linux/optimized/intel_display_debugfs.ll
 ; mitsuba3/optimized/dielectric.cpp.ll
 ; z3/optimized/goal.cpp.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
@@ -16,7 +16,8 @@ entry:
   ret i1 %4
 }
 
-; 27 occurrences:
+; 29 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/json_value.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; gromacs/optimized/gridset.cpp.ll
@@ -44,6 +45,7 @@ entry:
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
@@ -59,9 +61,9 @@ entry:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 11
+  %2 = icmp samesign ugt i32 %1, 11
   %3 = select i1 %2, i1 %0, i1 false
   %4 = freeze i1 %3
   ret i1 %4

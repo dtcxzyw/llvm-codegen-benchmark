@@ -3,7 +3,7 @@
 ; linux/optimized/page_alloc.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = and i1 %3, %0
@@ -18,10 +18,10 @@ entry:
 ; git/optimized/read-cache.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = and i32 %1, 16
   %6 = icmp ne i32 %5, 0
   %7 = select i1 %6, i1 %4, i1 false
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = and i1 %3, %0
@@ -44,10 +44,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/utrie_swap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = and i32 %1, 31
   %6 = icmp eq i32 %5, 0
   %7 = select i1 %6, i1 %4, i1 false

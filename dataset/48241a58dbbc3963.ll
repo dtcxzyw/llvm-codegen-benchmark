@@ -1,5 +1,5 @@
 
-; 157 occurrences:
+; 158 occurrences:
 ; abc/optimized/aigDfs.c.ll
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -8,7 +8,6 @@
 ; jemalloc/optimized/psset.ll
 ; jemalloc/optimized/psset.pic.ll
 ; jemalloc/optimized/psset.sym.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/iommu.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/pci.ll
@@ -157,17 +156,22 @@
 ; spike/optimized/vzext_vf8.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
-; 91 occurrences:
+; 90 occurrences:
+; arrow/optimized/value_parsing.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; folly/optimized/json.cpp.ll
@@ -198,6 +202,7 @@ entry:
 ; llvm/optimized/Triple.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; minetest/optimized/renderingengine.cpp.ll
+; mitsuba3/optimized/string.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
@@ -210,6 +215,7 @@ entry:
 ; openjdk/optimized/zRelocate.ll
 ; openjdk/optimized/zVerify.ll
 ; openmpi/optimized/opal_copy_functions_heterogeneous.ll
+; openusd/optimized/value.cpp.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/source_s_addMagsF16.c.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
@@ -225,22 +231,16 @@ entry:
 ; spike/optimized/f128_rem.ll
 ; spike/optimized/f128_roundToInt.ll
 ; spike/optimized/f128_sqrt.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f128_to_i32.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f16_div.ll
 ; spike/optimized/f16_sqrt.ll
 ; spike/optimized/f32_div.ll
 ; spike/optimized/f32_sqrt.ll
 ; spike/optimized/f32_to_bf16.ll
-; spike/optimized/f32_to_f16.ll
 ; spike/optimized/f64_div.ll
 ; spike/optimized/f64_sqrt.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; spike/optimized/fmax_q.ll
 ; spike/optimized/fmin_q.ll
 ; spike/optimized/s_addMagsF128.ll
@@ -276,7 +276,7 @@ entry:
 ; linux/optimized/set_memory.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
   %3 = or disjoint i64 %2, %0
@@ -284,17 +284,15 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 17 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/nf_conntrack_core.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; spike/optimized/f128_classify.ll
 ; spike/optimized/f128_roundToInt.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f128_to_ui64.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64_r_minMag.ll
@@ -317,23 +315,21 @@ entry:
 ; linux/optimized/synaptics.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294966784
-  %3 = or disjoint i64 %2, %0
-  %4 = icmp ugt i64 %3, 7
+  %3 = or disjoint i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 7
   ret i1 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
-; luajit/optimized/lj_strfmt_num.ll
-; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967292
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = icmp ult i64 %3, 4
   ret i1 %4
 }
@@ -343,11 +339,23 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 255
-  %3 = or disjoint i64 %2, %0
-  %4 = icmp ult i64 %3, 1797
+  %3 = or disjoint i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 1797
+  ret i1 %4
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294966784
+  %3 = or i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 1000000000
   ret i1 %4
 }
 

@@ -36,7 +36,7 @@ func000000000000000b:                   # @func000000000000000b
 	sete	%al
 	addq	%rdi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	movq	%rdi, %rax
 	andl	$2047, %esi                     # imm = 0x7FF
 	cmpl	$1023, %esi                     # imm = 0x3FF
@@ -48,7 +48,7 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	$1, %rsi
 	sbbq	$-1, %rax
 	retq
-func0000000000000040:                   # @func0000000000000040
+func00000000000000c0:                   # @func00000000000000c0
 	movq	%rdi, %rax
 	andl	$-512, %esi                     # imm = 0xFE00
 	cmpl	$1000000000, %esi               # imm = 0x3B9ACA00

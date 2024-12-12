@@ -1,5 +1,5 @@
 
-; 216 occurrences:
+; 213 occurrences:
 ; abc/optimized/cutPre22.c.ll
 ; arrow/optimized/bit_util.cc.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -10,7 +10,6 @@
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
-; git/optimized/merge-ort.ll
 ; gromacs/optimized/md5.c.ll
 ; gromacs/optimized/md5.cpp.ll
 ; hermes/optimized/dtoa.c.ll
@@ -29,7 +28,6 @@
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/APINotesManager.cpp.ll
 ; llvm/optimized/ARCMT.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -98,7 +96,6 @@
 ; llvm/optimized/PreprocessingRecord.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/PreprocessorLexer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll
@@ -161,7 +158,6 @@
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/source_s_roundPackToF16.c.ll
 ; qemu/optimized/source_s_roundPackToF32.c.ll
-; qemu/optimized/source_s_shiftRightJam32.c.ll
 ; ruby/optimized/md5.ll
 ; slurm/optimized/config_info.ll
 ; slurm/optimized/read_config.ll
@@ -180,11 +176,9 @@
 ; spike/optimized/s_roundPackToBF16.ll
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
-; spike/optimized/s_shiftRightJam32.ll
 ; spike/optimized/s_subMagsF32.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; verilator/optimized/V3String.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
@@ -205,6 +199,9 @@
 ; wolfssl/optimized/test.c.ll
 ; yosys/optimized/extract_fa.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
@@ -224,7 +221,7 @@ entry:
   ret i32 %2
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; linux/optimized/mpi-bit.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -239,7 +236,6 @@ entry:
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; ruby/optimized/bignum.ll
-; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; zstd/optimized/huf_decompress.c.ll
@@ -251,7 +247,7 @@ entry:
   ret i32 %2
 }
 
-; 167 occurrences:
+; 164 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -265,7 +261,6 @@ entry:
 ; cmake/optimized/archive_write_set_format_cpio_newc.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/fse_decompress.c.ll
-; cmake/optimized/index.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
@@ -283,7 +278,6 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libjpeg-turbo/optimized/rdbmp.c.ll
 ; libpng/optimized/pngtrans.c.ll
-; libquic/optimized/random.c.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/cpufreq.ll
 ; linux/optimized/cpuset.ll
@@ -418,7 +412,6 @@ entry:
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
-; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:

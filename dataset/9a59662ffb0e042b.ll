@@ -1,6 +1,8 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; linux/optimized/io_apic.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
@@ -45,9 +47,8 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; quantlib/optimized/faurersg.ll
@@ -100,11 +101,10 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; openblas/optimized/dlaeda.c.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlarrj.c.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; postgres/optimized/geo_ops.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {

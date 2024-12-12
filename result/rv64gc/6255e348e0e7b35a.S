@@ -23,6 +23,15 @@ func000000000000003f:                   # @func000000000000003f
 	addiw	a1, a1, 512
 	or	a0, a0, a1
 	ret
+func000000000000003e:                   # @func000000000000003e
+	andi	a1, a1, 143
+	andi	a0, a0, 255
+	slli	a1, a1, 6
+	or	a0, a0, a1
+	lui	a1, 14
+	addiw	a1, a1, -1024
+	or	a0, a0, a1
+	ret
 func000000000000001e:                   # @func000000000000001e
 	andi	a1, a1, 251
 	slli	a1, a1, 1

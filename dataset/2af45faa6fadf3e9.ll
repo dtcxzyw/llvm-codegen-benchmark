@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/fraCore.c.ll
 ; freetype/optimized/pcf.c.ll
 ; linux/optimized/8250_port.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
 ; openjdk/optimized/cmspack.ll

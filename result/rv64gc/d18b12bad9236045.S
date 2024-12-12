@@ -13,7 +13,7 @@ func000000000000000a:                   # @func000000000000000a
 	fmv.w.x	fa5, a1
 	lui	a1, 266240
 	fdiv.s	fa5, fa5, fa1
-	fmul.s	fa5, fa5, fa0
+	fmul.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a1
 	fle.s	a1, fa5, fa4
 	xori	a1, a1, 1

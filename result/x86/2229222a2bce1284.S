@@ -16,18 +16,6 @@ func0000000000000023:                   # @func0000000000000023
 	movl	$8, %eax
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
-	shll	$24, %edi
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	cmovnsl	%edi, %eax
-	retq
-func000000000000001b:                   # @func000000000000001b
-	leal	(,%rdi,4), %ecx
-	cmpl	$33, %esi
-	movl	$4, %eax
-	cmovgel	%ecx, %eax
-	retq
 func0000000000000013:                   # @func0000000000000013
 	leal	(,%rdi,8), %ecx
 	cmpl	$7, %esi
@@ -40,10 +28,16 @@ func0000000000000019:                   # @func0000000000000019
 	movl	$64, %eax
 	cmovgel	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	leal	(,%rdi,4), %ecx
 	cmpl	$7, %esi
 	movl	$4, %eax
+	cmovael	%ecx, %eax
+	retq
+func0000000000000053:                   # @func0000000000000053
+	leal	(%rdi,%rdi), %ecx
+	cmpl	$7, %esi
+	movl	$2, %eax
 	cmovael	%ecx, %eax
 	retq
 func000000000000001a:                   # @func000000000000001a
@@ -52,7 +46,25 @@ func000000000000001a:                   # @func000000000000001a
 	movl	$2, %eax
 	cmovgel	%ecx, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000018:                   # @func0000000000000018
+	shll	$5, %edi
+	cmpl	$6, %esi
+	movl	$32, %eax
+	cmovgel	%edi, %eax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	leal	(%rdi,%rdi), %ecx
+	cmpl	$7, %esi
+	movl	$2, %eax
+	cmovgel	%ecx, %eax
+	retq
+func0000000000000011:                   # @func0000000000000011
+	leal	(%rdi,%rdi), %ecx
+	cmpl	$402653184, %esi                # imm = 0x18000000
+	movl	$2, %eax
+	cmovael	%ecx, %eax
+	retq
+func0000000000000050:                   # @func0000000000000050
 	shll	$5, %edi
 	cmpl	$6, %esi
 	movl	$32, %eax
@@ -74,7 +86,7 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%esi, %esi
 	cmovel	%esi, %eax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000052:                   # @func0000000000000052
 	leal	(%rdi,%rdi), %ecx
 	cmpl	$128, %esi
 	movl	$256, %eax                      # imm = 0x100

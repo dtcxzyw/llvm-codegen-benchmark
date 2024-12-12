@@ -16,8 +16,10 @@ entry:
   ret i64 %4
 }
 
-; 50 occurrences:
+; 60 occurrences:
 ; arrow/optimized/concatenate.cc.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/sort_by_side.ll
 ; darktable/optimized/export.c.ll
 ; duckdb/optimized/ub_duckdb_func_struct.cpp.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
@@ -67,6 +69,14 @@ entry:
 ; tomlplusplus/optimized/toml.cpp.ll
 ; xgboost/optimized/adapter.cc.ll
 ; yosys/optimized/abc9_exe.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
@@ -76,12 +86,17 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 10 occurrences:
 ; casadi/optimized/fmu_function.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; rocksdb/optimized/thread_local.cc.ll
 ; rocksdb/optimized/write_batch.cc.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -91,9 +106,11 @@ entry:
   ret i64 %4
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/writer.cc.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/polynomial.cpp.ll
 ; cmake/optimized/cmQtAutoMocUic.cxx.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
@@ -112,7 +129,6 @@ entry:
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; opencv/optimized/cap_mjpeg_decoder.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
-; opencv/optimized/core_detect.cpp.ll
 ; openspiel/optimized/markov_soccer.cc.ll
 ; openssl/optimized/libdefault-lib-kmac_prov.ll
 ; openusd/optimized/adapterManager.cpp.ll

@@ -100,7 +100,7 @@
 ; tev/optimized/main.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000601(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 37
   %3 = trunc nuw nsw i64 %2 to i32
@@ -113,7 +113,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000351(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 24
   %3 = trunc nuw nsw i64 %2 to i32

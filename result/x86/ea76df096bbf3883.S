@@ -4,15 +4,15 @@ func0000000000000030:                   # @func0000000000000030
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func0000000000000035:                   # @func0000000000000035
-	leal	-94(%rsi), %eax
-	testb	$1, %dl
-	cmovel	%esi, %eax
-	addl	%edi, %eax
-	retq
 func000000000000003f:                   # @func000000000000003f
 	andl	$63, %edx
 	imull	$60, %edx, %eax
+	addl	%edi, %eax
+	addl	%esi, %eax
+	retq
+func0000000000000035:                   # @func0000000000000035
+	movzwl	%dx, %eax
+	imull	$365, %eax, %eax                # imm = 0x16D
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq

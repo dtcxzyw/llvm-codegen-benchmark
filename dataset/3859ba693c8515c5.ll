@@ -97,7 +97,7 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; llvm/optimized/ARMWinEH.cpp.ll
 ; velox/optimized/BaseVector.cpp.ll
@@ -108,6 +108,8 @@ entry:
 ; velox/optimized/Not.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {
 entry:

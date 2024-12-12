@@ -12,13 +12,13 @@ func000000000000000c:                   # @func000000000000000c
 	andl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	addq	%rdi, %rax
 	retq
-func000000000000006e:                   # @func000000000000006e
+func000000000000006f:                   # @func000000000000006f
 	addq	$63, %rsi
 	shrq	$6, %rsi
 	decl	%esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func0000000000000066:                   # @func0000000000000066
+func0000000000000067:                   # @func0000000000000067
 	addq	$63, %rsi
 	shrq	$6, %rsi
 	decl	%esi

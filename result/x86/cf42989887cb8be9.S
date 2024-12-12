@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	movzbl	%dl, %eax
 	orl	%esi, %eax
 	andl	$2147483631, %eax               # imm = 0x7FFFFFEF
@@ -13,7 +13,7 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	movzbl	%dl, %eax
 	orl	%esi, %eax
 	notl	%eax

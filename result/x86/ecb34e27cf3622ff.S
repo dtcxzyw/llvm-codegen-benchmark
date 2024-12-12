@@ -47,6 +47,14 @@ func0000000000000008:                   # @func0000000000000008
 	mulxq	%rax, %rax, %rax
 	shrq	$4, %rax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	leaq	(%rdi,%rdi,8), %rcx
+	shlq	$4, %rcx
+	addq	$-144, %rcx
+	shrq	$4, %rcx
+	movabsq	$-8198552921648689607, %rax     # imm = 0x8E38E38E38E38E39
+	imulq	%rcx, %rax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	addq	%rdi, %rdi
 	leaq	(%rdi,%rdi,4), %rax

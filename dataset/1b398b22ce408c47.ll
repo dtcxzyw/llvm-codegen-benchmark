@@ -57,15 +57,14 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; opencv/optimized/tree.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp ogt double %3, 1.790000e+02
-  %5 = fcmp ogt double %0, 3.590000e+02
+  %4 = fcmp ogt double %3, 0x3E80000000000000
+  %5 = fcmp ogt double %0, 0x3E80000000000000
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }

@@ -91,8 +91,7 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; darktable/optimized/DeflateDecompressor.cpp.ll
+; 1 occurrences:
 ; openjdk/optimized/mulnode.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
@@ -159,21 +158,9 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; darktable/optimized/introspection_cacorrect.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul i64 %1, %2
-  %4 = and i64 %0, 9223372036854775776
-  %5 = add nsw i64 %4, %3
-  ret i64 %5
-}
-
-; 3 occurrences:
+; 2 occurrences:
 ; postgres/optimized/mcv.ll
 ; spike/optimized/mulh.ll
-; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:

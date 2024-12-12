@@ -36,7 +36,7 @@
 ; redis/optimized/extent_dss.ll
 ; redis/optimized/extent_dss.sym.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f32_classify.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i1 %1, i1 %2) #0 {
 entry:

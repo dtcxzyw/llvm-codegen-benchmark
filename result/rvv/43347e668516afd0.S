@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwmaccsu.vv	v8, v11, v10

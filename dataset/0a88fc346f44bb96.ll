@@ -43,7 +43,7 @@ entry:
   ret i64 %3
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; typst-rs/optimized/15cosas43yh9dmeo.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
@@ -64,6 +64,7 @@ entry:
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; typst-rs/optimized/xrijsyrxk2ciyk9.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i8 %1) #0 {
 entry:

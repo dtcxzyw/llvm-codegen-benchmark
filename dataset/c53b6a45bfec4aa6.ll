@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i8 %0, i64 %1) #0 {
 entry:

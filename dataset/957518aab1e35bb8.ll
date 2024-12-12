@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/bblif.c.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/CloneFunction.cpp.ll
@@ -8,7 +8,6 @@
 ; llvm/optimized/MustExecute.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
-; verilator/optimized/V3PreProc.cpp.ll
 ; yosys/optimized/verilog_lexer.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {

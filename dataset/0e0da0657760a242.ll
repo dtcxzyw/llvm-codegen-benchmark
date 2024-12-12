@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; glslang/optimized/Constant.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -7,6 +7,7 @@
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll
 ; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
 ; postgres/optimized/tsgistidx.ll

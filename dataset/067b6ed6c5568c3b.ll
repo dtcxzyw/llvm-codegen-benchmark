@@ -5,7 +5,7 @@
 ; icu/optimized/ushape.ll
 ; php/optimized/crypt_blowfish.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0) #0 {
+define i1 @func00000000000001e1(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 4294967199
   %2 = and i64 %1, 4294967295
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/busmaster_parser.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0) #0 {
+define i1 @func00000000000001c1(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 4294967112
   %2 = and i64 %1, 4294967295

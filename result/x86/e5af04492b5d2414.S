@@ -21,6 +21,12 @@ func0000000000000021:                   # @func0000000000000021
 	cmovbq	%rsi, %rax
 	shlq	$4, %rax
 	retq
+func0000000000000061:                   # @func0000000000000061
+	movq	%rdi, %rax
+	cmpq	$131042, %rsi                   # imm = 0x1FFE2
+	cmovbq	%rsi, %rax
+	shlq	$16, %rax
+	retq
 func0000000000000012:                   # @func0000000000000012
 	movq	%rdi, %rax
 	movq	%rsi, %rcx
@@ -38,11 +44,12 @@ func0000000000000006:                   # @func0000000000000006
 	cmovneq	%rsi, %rdi
 	leaq	(%rdi,%rdi), %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000052:                   # @func0000000000000052
 	movq	%rdi, %rax
-	cmpq	$2, %rsi
-	cmovaeq	%rsi, %rax
-	shlq	$31, %rax
+	movq	%rsi, %rcx
+	shrq	$32, %rcx
+	cmovneq	%rsi, %rax
+	shlq	$16, %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	cmpq	$-1, %rsi

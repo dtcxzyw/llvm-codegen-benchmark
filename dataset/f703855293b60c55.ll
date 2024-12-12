@@ -13,10 +13,11 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/utilCex.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/gregorian.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
@@ -32,7 +33,7 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; lightgbm/optimized/linker_topo.cpp.ll
 ; oiio/optimized/imageinput.cpp.ll
 ; opencv/optimized/fast_gemm.cpp.ll
@@ -40,12 +41,11 @@ entry:
 ; openjdk/optimized/mlib_ImageConvMxN_ext.ll
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -72,7 +72,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }

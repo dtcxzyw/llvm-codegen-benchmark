@@ -28,9 +28,3 @@ func0000000000000019:                   # @func0000000000000019
 	setl	%al
 	orq	%rdi, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	xorl	%eax, %eax
-	cmpl	$5, %esi
-	setb	%al
-	orq	%rdi, %rax
-	retq

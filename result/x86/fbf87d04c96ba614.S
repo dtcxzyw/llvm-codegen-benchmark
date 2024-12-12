@@ -5,10 +5,11 @@ func0000000000000004:                   # @func0000000000000004
 	leaq	4(%rdi,%rax,4), %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	leaq	369098752(%rdi), %rax
-	leaq	201326592(%rdi), %rcx
-	testb	$1, %sil
-	cmoveq	%rcx, %rax
+	andb	$63, %sil
+	cmpb	$1, %sil
+	movq	$-257, %rax                     # imm = 0xFEFF
+	sbbq	$0, %rax
+	addq	%rdi, %rax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	andb	$63, %sil

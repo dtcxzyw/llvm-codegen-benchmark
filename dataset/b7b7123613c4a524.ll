@@ -5,7 +5,7 @@
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000296(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000526(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1131, i32 107
   %4 = icmp sgt i32 %0, 33899

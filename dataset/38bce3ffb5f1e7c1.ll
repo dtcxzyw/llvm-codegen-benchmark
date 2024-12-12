@@ -1,6 +1,7 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; hermes/optimized/Array.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/resize.cpp.ll
@@ -51,7 +52,8 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; icu/optimized/smpdtfmt.ll
 ; opencv/optimized/tree.cpp.ll
 ; quantlib/optimized/hullwhite.ll

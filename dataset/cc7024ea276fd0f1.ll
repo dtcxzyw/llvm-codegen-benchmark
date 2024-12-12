@@ -1,8 +1,9 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; icu/optimized/collationiterator.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_dpll_mgr.ll
+; lvgl/optimized/lv_anim.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll

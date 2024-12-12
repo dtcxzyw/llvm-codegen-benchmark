@@ -9,7 +9,7 @@ entry:
   %4 = shl nuw nsw i16 %3, 2
   %5 = zext nneg i8 %1 to i16
   %6 = or disjoint i16 %4, %5
-  %7 = or disjoint i16 %6, %0
+  %7 = or disjoint i16 %0, %6
   ret i16 %7
 }
 
@@ -55,7 +55,7 @@ entry:
   %4 = shl nuw i16 %3, 15
   %5 = zext nneg i8 %1 to i16
   %6 = or disjoint i16 %4, %5
-  %7 = or disjoint i16 %6, %0
+  %7 = or disjoint i16 %0, %6
   ret i16 %7
 }
 
@@ -68,7 +68,7 @@ entry:
   %4 = shl nuw i16 %3, 8
   %5 = zext i8 %1 to i16
   %6 = or disjoint i16 %4, %5
-  %7 = or i16 %6, %0
+  %7 = or i16 %0, %6
   ret i16 %7
 }
 

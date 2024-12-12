@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
-; linux/optimized/utownerid.ll
 ; openjdk/optimized/check_code.ll
 ; wireshark/optimized/packet-cdma2k.c.ll
 ; Function Attrs: nounwind

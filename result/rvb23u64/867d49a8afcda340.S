@@ -4,9 +4,9 @@ func000000000000001f:                   # @func000000000000001f
 	addi	a0, a0, 32
 	ret
 func000000000000001b:                   # @func000000000000001b
-	slli	a0, a0, 59
-	srli	a0, a0, 57
-	addi	a0, a0, -4
+	slli	a0, a0, 56
+	srli	a0, a0, 53
+	addi	a0, a0, -48
 	ret
 func000000000000001c:                   # @func000000000000001c
 	slli	a0, a0, 1

@@ -1,5 +1,5 @@
 
-; 414 occurrences:
+; 417 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcFx.c.ll
@@ -9,9 +9,10 @@
 ; abc/optimized/pdrUtil.c.ll
 ; abc/optimized/plaHash.c.ll
 ; abc/optimized/plaSimple.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/nulsft.c.ll
 ; cmake/optimized/archive_acl.c.ll
-; cmake/optimized/archive_entry_strmode.c.ll
 ; cmake/optimized/ftp.c.ll
 ; cmake/optimized/mprintf.c.ll
 ; cmake/optimized/sendf.c.ll
@@ -144,12 +145,10 @@
 ; linux/optimized/addrconf.ll
 ; linux/optimized/arp.ll
 ; linux/optimized/cistpl.ll
-; linux/optimized/direct_write.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/dvo_ch7xxx.ll
-; linux/optimized/eht.ll
 ; linux/optimized/fib_frontend.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_crt.ll
@@ -157,7 +156,6 @@
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/ipmr.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/ndisc.ll
@@ -195,6 +193,7 @@
 ; luajit/optimized/lj_serialize_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
@@ -294,7 +293,6 @@
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/zend_compile.ll
 ; php/optimized/zend_jit.ll
-; postgres/optimized/rangetypes.ll
 ; proxygen/optimized/HPACKDecoder.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/block_vvfat.c.ll
@@ -404,7 +402,6 @@
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/packet-cigi.c.ll
 ; wireshark/optimized/packet-dcerpc-pn-io.c.ll
@@ -413,6 +410,12 @@
 ; wireshark/optimized/packet-smpp.c.ll
 ; wireshark/optimized/packet-waveagent.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/MCDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i32 %0) #0 {
@@ -445,7 +448,7 @@ entry:
 ; minetest/optimized/terminal_chat_console.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000004(i32 %0) #0 {
+define i8 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 240
   %.not = icmp eq i32 %1, 240
@@ -456,10 +459,10 @@ entry:
 ; 1 occurrences:
 ; php/optimized/encode.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000008(i32 %0) #0 {
+define i8 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 254
-  %2 = icmp ugt i32 %1, 189
+  %2 = icmp samesign ugt i32 %1, 189
   %3 = select i1 %2, i8 -126, i8 -127
   ret i8 %3
 }

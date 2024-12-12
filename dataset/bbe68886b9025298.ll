@@ -199,7 +199,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0) #0 {
+define i1 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
   %2 = icmp sgt i32 %1, %0

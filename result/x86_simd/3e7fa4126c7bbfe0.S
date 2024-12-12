@@ -118,3 +118,28 @@ func0000000000000008:                   # @func0000000000000008
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
+.LCPI6_0:
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI6_1:
+	.long	9                               # 0x9
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltub	.LCPI6_0(%rip), %xmm1, %k1
+	vpbroadcastd	.LCPI6_1(%rip), %ymm1   # ymm1 = [9,9,9,9,9,9,9,9]
+	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vmovdqa	%ymm1, %ymm0
+	retq

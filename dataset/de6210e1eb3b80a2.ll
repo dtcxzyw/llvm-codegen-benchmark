@@ -1,6 +1,7 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
+; libevent/optimized/evmap.c.ll
 ; libjpeg-turbo/optimized/jdphuff.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -17,7 +18,7 @@
 define i1 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -29,7 +30,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }

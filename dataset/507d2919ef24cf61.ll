@@ -1,8 +1,6 @@
 
-; 11 occurrences:
-; assimp/optimized/Exporter.cpp.ll
+; 9 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
-; assimp/optimized/Importer.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll

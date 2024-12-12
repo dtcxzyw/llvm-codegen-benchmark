@@ -62,7 +62,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000010:                   # @func0000000000000010
 	vpsllw	$8, %ymm1, %ymm1
 	vpaddw	.LCPI2_0(%rip), %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.short	64768                           # 0xfd00

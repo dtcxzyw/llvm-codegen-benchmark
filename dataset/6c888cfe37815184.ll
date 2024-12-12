@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/aspm.ll
 ; linux/optimized/intel_dpll.ll
-; openjdk/optimized/c1_LIRGenerator.ll
 ; qemu/optimized/hw_net_tulip.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
@@ -16,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8323072
   %4 = icmp eq i32 %3, 0

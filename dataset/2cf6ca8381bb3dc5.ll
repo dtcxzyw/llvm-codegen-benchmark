@@ -1,10 +1,9 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; icu/optimized/uniset.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/ConstantRange.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; wireshark/optimized/packet-zbee-direct.c.ll

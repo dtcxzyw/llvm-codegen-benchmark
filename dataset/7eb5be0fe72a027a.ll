@@ -1,10 +1,9 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
-; qemu/optimized/util_filemonitor-inotify.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 7
@@ -19,7 +18,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 24
@@ -32,7 +31,7 @@ entry:
 ; linux/optimized/rx.ll
 ; linux/optimized/tx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 50

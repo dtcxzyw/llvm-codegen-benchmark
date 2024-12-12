@@ -12,5 +12,5 @@ func000000000000008f:                   # @func000000000000008f
 func00000000000000af:                   # @func00000000000000af
 	subl	%edi, %esi
 	addl	$-2, %esi
-	leaq	8(,%rsi,8), %rax
+	leaq	4(,%rsi,4), %rax
 	retq

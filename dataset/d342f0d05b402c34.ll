@@ -1,9 +1,32 @@
 
-%"struct.ClipperLib::IntPoint.2715849" = type { i64, i64 }
+%"struct.ClipperLib::IntPoint.2828382" = type { i64, i64 }
+%"struct.OpenImageIO_v2_6_0::pvt::ImageCacheFile::LevelInfo.3088781" = type { %"class.OpenImageIO_v2_6_0::ImageSpec.3088765", %"class.OpenImageIO_v2_6_0::ImageSpec.3088765", i8, i8, i8, %"class.std::vector.10.3088782", i32, i32, i32, ptr }
+%"class.OpenImageIO_v2_6_0::ImageSpec.3088765" = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %"struct.OpenImageIO_v2_6_0::TypeDesc.3088706", %"class.std::vector.3088766", %"class.std::vector.0.3088733", i32, i32, i8, %"class.OpenImageIO_v2_6_0::ParamValueList.3088767" }
+%"struct.OpenImageIO_v2_6_0::TypeDesc.3088706" = type { i8, i8, i8, i8, i32 }
+%"class.std::vector.3088766" = type { %"struct.std::_Vector_base.3088768" }
+%"struct.std::_Vector_base.3088768" = type { %"struct.std::_Vector_base<OpenImageIO_v2_6_0::TypeDesc, std::allocator<OpenImageIO_v2_6_0::TypeDesc>>::_Vector_impl.3088769" }
+%"struct.std::_Vector_base<OpenImageIO_v2_6_0::TypeDesc, std::allocator<OpenImageIO_v2_6_0::TypeDesc>>::_Vector_impl.3088769" = type { %"struct.std::_Vector_base<OpenImageIO_v2_6_0::TypeDesc, std::allocator<OpenImageIO_v2_6_0::TypeDesc>>::_Vector_impl_data.3088770" }
+%"struct.std::_Vector_base<OpenImageIO_v2_6_0::TypeDesc, std::allocator<OpenImageIO_v2_6_0::TypeDesc>>::_Vector_impl_data.3088770" = type { ptr, ptr, ptr }
+%"class.std::vector.0.3088733" = type { %"struct.std::_Vector_base.1.3088734" }
+%"struct.std::_Vector_base.1.3088734" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.3088735" }
+%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.3088735" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.3088736" }
+%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.3088736" = type { ptr, ptr, ptr }
+%"class.OpenImageIO_v2_6_0::ParamValueList.3088767" = type { %"class.std::vector.5.3088771" }
+%"class.std::vector.5.3088771" = type { %"struct.std::_Vector_base.6.3088772" }
+%"struct.std::_Vector_base.6.3088772" = type { %"struct.std::_Vector_base<OpenImageIO_v2_6_0::ParamValue, std::allocator<OpenImageIO_v2_6_0::ParamValue>>::_Vector_impl.3088773" }
+%"struct.std::_Vector_base<OpenImageIO_v2_6_0::ParamValue, std::allocator<OpenImageIO_v2_6_0::ParamValue>>::_Vector_impl.3088773" = type { %"struct.std::_Vector_base<OpenImageIO_v2_6_0::ParamValue, std::allocator<OpenImageIO_v2_6_0::ParamValue>>::_Vector_impl_data.3088774" }
+%"struct.std::_Vector_base<OpenImageIO_v2_6_0::ParamValue, std::allocator<OpenImageIO_v2_6_0::ParamValue>>::_Vector_impl_data.3088774" = type { ptr, ptr, ptr }
+%"class.std::vector.10.3088782" = type { %"struct.std::_Vector_base.11.3088783" }
+%"struct.std::_Vector_base.11.3088783" = type { %"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl.3088784" }
+%"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl.3088784" = type { %"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl_data.3088785" }
+%"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl_data.3088785" = type { ptr, ptr, ptr }
 
-; 4 occurrences:
+; 7 occurrences:
+; abc/optimized/abcSop.c.ll
+; abc/optimized/kitPla.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; git/optimized/combine-diff.ll
+; icu/optimized/decNumber.ll
 ; linux/optimized/vars.ll
 ; qemu/optimized/fdt_rw.c.ll
 ; Function Attrs: nounwind
@@ -242,12 +265,12 @@ entry:
 ; yosys/optimized/yw.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"struct.ClipperLib::IntPoint.2715849", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"struct.ClipperLib::IntPoint.2828382", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -264,8 +287,7 @@ entry:
   ret ptr %6
 }
 
-; 9 occurrences:
-; git/optimized/xutils.ll
+; 8 occurrences:
 ; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/agast.cpp.ll
 ; opencv/optimized/calibration.cpp.ll
@@ -275,19 +297,19 @@ entry:
 ; yosys/optimized/opt_lut.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 6
+  %4 = getelementptr %"struct.OpenImageIO_v2_6_0::pvt::ImageCacheFile::LevelInfo.3088781", ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -364
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000053(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -306,19 +328,6 @@ entry:
   %3 = ashr exact i64 %2, 30
   %4 = getelementptr i8, ptr %0, i64 %3
   ret ptr %4
-}
-
-; 1 occurrences:
-; icu/optimized/decNumber.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 -1
-  ret ptr %6
 }
 
 ; 1 occurrences:

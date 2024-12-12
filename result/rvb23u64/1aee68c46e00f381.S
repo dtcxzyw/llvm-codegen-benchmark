@@ -18,3 +18,13 @@ func0000000000000024:                   # @func0000000000000024
 	mulw	a1, a1, a3
 	sh3add	a0, a1, a0
 	ret
+.LCPI2_0:
+	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
+func0000000000000027:                   # @func0000000000000027
+	lui	a3, %hi(.LCPI2_0)
+	ld	a3, %lo(.LCPI2_0)(a3)
+	sub	a1, a1, a2
+	srli	a1, a1, 3
+	mulw	a1, a1, a3
+	sh3add	a0, a1, a0
+	ret

@@ -3,3 +3,9 @@ func0000000000000009:                   # @func0000000000000009
 	sarl	$8, %eax
 	negl	%eax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	imull	$100, %edi, %ecx
+	sarl	$8, %ecx
+	movl	$100, %eax
+	subl	%ecx, %eax
+	retq

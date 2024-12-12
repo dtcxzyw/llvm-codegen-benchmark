@@ -13,15 +13,15 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$64, %edi
 	setb	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movl	%edi, %eax
 	imull	%esi, %eax
 	shrl	$31, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	testl	%edi, %edi
-	sete	%cl
+func0000000000000021:                   # @func0000000000000021
 	testl	%esi, %esi
+	sete	%cl
+	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq

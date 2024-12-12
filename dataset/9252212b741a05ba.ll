@@ -29,33 +29,48 @@ entry:
   ret i64 %7
 }
 
-; 27 occurrences:
-; abc/optimized/absVta.c.ll
-; abc/optimized/giaAigerExt.c.ll
-; abc/optimized/giaSpeedup.c.ll
+; 12 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
-; bullet3/optimized/b3OverlappingPairCache.ll
-; bullet3/optimized/btOverlappingPairCache.ll
 ; clamav/optimized/qtmd.c.ll
-; cmake/optimized/divsufsort.c.ll
-; cmake/optimized/frm_driver.c.ll
-; git/optimized/unpack-trees.ll
 ; grpc/optimized/ring_hash.cc.ll
 ; llvm/optimized/Archive.cpp.ll
-; lz4/optimized/lz4hc.c.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
-; openjdk/optimized/archiveHeapWriter.ll
-; openjdk/optimized/codeBuffer.ll
-; openjdk/optimized/virtualSpaceNode.ll
 ; php/optimized/scdf.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; ruby/optimized/ripper.ll
-; sentencepiece/optimized/unigram_model.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; slurm/optimized/file_functions.ll
-; snappy/optimized/snappy.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; wolfssl/optimized/rsa.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %0 to i64
+  %6 = sub i64 %4, %5
+  %7 = shl i64 %6, 32
+  ret i64 %7
+}
+
+; 18 occurrences:
+; abc/optimized/absVta.c.ll
+; abc/optimized/giaAigerExt.c.ll
+; abc/optimized/giaSpeedup.c.ll
+; bullet3/optimized/b3OverlappingPairCache.ll
+; bullet3/optimized/btOverlappingPairCache.ll
+; cmake/optimized/divsufsort.c.ll
+; cmake/optimized/frm_driver.c.ll
+; git/optimized/unpack-trees.ll
+; llvm/optimized/Archive.cpp.ll
+; lz4/optimized/lz4hc.c.ll
+; opencv/optimized/onnx_importer.cpp.ll
+; opencv/optimized/tf_importer.cpp.ll
+; openjdk/optimized/archiveHeapWriter.ll
+; openjdk/optimized/codeBuffer.ll
+; openjdk/optimized/virtualSpaceNode.ll
+; sentencepiece/optimized/unigram_model.cc.ll
+; snappy/optimized/snappy.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(ptr %0, ptr %1, i64 %2) #0 {

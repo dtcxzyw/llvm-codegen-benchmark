@@ -1,4 +1,18 @@
 
+; 3 occurrences:
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/converter.ll
+; qemu/optimized/hw_net_can_can_sja1000.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = shl nuw nsw i32 %1, 3
+  %5 = or disjoint i32 %4, %3
+  %6 = select i1 %0, i32 %5, i32 1073741824
+  ret i32 %6
+}
+
 ; 8 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll

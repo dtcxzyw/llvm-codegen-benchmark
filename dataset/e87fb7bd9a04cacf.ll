@@ -322,7 +322,7 @@
 define i32 @func0000000000000007(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = select i1 %1, i32 4, i32 0
   %6 = or disjoint i32 %4, %5
   ret i32 %6
@@ -334,7 +334,7 @@ entry:
 define i32 @func0000000000000000(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = select i1 %0, i32 134217728, i32 0
   %6 = or i32 %5, %4
   ret i32 %6
@@ -346,7 +346,7 @@ entry:
 define i32 @func0000000000000006(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = select i1 %0, i32 -2147483648, i32 0
   %6 = or i32 %5, %4
   ret i32 %6
@@ -358,7 +358,7 @@ entry:
 define i32 @func0000000000000004(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = select i1 %0, i32 2, i32 0
   %6 = or i32 %5, %4
   ret i32 %6

@@ -1,7 +1,8 @@
 
-%class.btVector3.2706689 = type { [4 x float] }
+%class.btVector3.2819402 = type { [4 x float] }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btInternalEdgeUtility.ll
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
@@ -10,7 +11,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = sub i32 3, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %class.btVector3.2706689, ptr %0, i64 %5
+  %6 = getelementptr nusw %class.btVector3.2819402, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -25,7 +26,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = sub nsw i32 3, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %class.btVector3.2706689, ptr %0, i64 %5
+  %6 = getelementptr nusw %class.btVector3.2819402, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -10,7 +10,8 @@ entry:
   ret i64 %3
 }
 
-; 32 occurrences:
+; 33 occurrences:
+; boost/optimized/alloc_lib.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
@@ -51,10 +52,11 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
 ; assimp/optimized/X3DGeoHelper.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; linux/optimized/mmap.ll
 ; Function Attrs: nounwind
@@ -62,6 +64,31 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = or disjoint i64 %2, 8
+  ret i64 %3
+}
+
+; 4 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; opencv/optimized/dxt.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 %0, %1
+  %3 = or disjoint i64 %2, 1
+  ret i64 %3
+}
+
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw i64 %0, %1
+  %3 = or i64 %2, 1
   ret i64 %3
 }
 
@@ -85,29 +112,6 @@ define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %0, %1
   %3 = or disjoint i64 %2, 3
-  ret i64 %3
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub nuw i64 %0, %1
-  %3 = or i64 %2, 1
-  ret i64 %3
-}
-
-; 3 occurrences:
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
-; opencv/optimized/dxt.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub nsw i64 %0, %1
-  %3 = or disjoint i64 %2, 1
   ret i64 %3
 }
 

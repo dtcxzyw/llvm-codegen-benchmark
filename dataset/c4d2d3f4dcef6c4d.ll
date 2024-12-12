@@ -1,8 +1,7 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; libpng/optimized/pngread.c.ll
-; linux/optimized/eht.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll

@@ -25,7 +25,7 @@ entry:
 define i16 @func0000000000000007(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 1
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = xor i16 %3, 512
   ret i16 %4
 }

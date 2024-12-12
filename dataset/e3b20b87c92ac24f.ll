@@ -7,7 +7,7 @@
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_impl.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0) #0 {
+define i32 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 16
   %2 = and i32 %1, 255
@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0) #0 {
+define i32 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 13
   %2 = and i32 %1, 2032
@@ -34,7 +34,7 @@ entry:
 ; opencv/optimized/draw.cpp.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0) #0 {
+define i32 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 16711680
   %2 = icmp eq i32 %1, 131072

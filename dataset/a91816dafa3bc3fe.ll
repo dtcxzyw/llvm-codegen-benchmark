@@ -22,7 +22,7 @@ entry:
 define i16 @func0000000000000034(i16 %0, i16 %1) #0 {
 entry:
   %2 = mul nuw nsw i16 %1, 21
-  %3 = add nsw i16 %2, %0
+  %3 = add nsw i16 %0, %2
   %4 = mul i16 %3, 28
   ret i16 %4
 }

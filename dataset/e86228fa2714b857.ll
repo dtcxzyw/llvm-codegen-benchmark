@@ -1,11 +1,9 @@
 
-; 47 occurrences:
+; 53 occurrences:
 ; actix-rs/optimized/27zn2x05lna4a2z7.ll
-; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; actix-rs/optimized/3arfg1ogrgyw4qv2.ll
 ; actix-rs/optimized/4jlfyqkak9x9x2yv.ll
-; clap-rs/optimized/48fdpr2dy8inq5cq.ll
-; coreutils-rs/optimized/4rjs632i9cta2yqf.ll
+; boost/optimized/options_description.ll
 ; hermes/optimized/Path.cpp.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -35,6 +33,7 @@
 ; tls-rs/optimized/2xhpv4vf07do7r8g.ll
 ; tls-rs/optimized/526n7g8rwc65lc9b.ll
 ; tls-rs/optimized/z2cy5bf5cayilz9.ll
+; turborepo-rs/optimized/073xkjbb0bs34qvdns32a3q3u.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
@@ -44,9 +43,16 @@
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; wasmtime-rs/optimized/1aegspwwbjc82p4w.ll
-; wasmtime-rs/optimized/1d0hmxdweaxxi3oz.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/7r4ka3qnhzi2ha4uh17j4gbwu.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/czpyda74ta6m4oig1hr6iiwt6.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define { ptr, i64 } @func0000000000000000(i1 %0, i64 %1, ptr %2) #0 {
 entry:

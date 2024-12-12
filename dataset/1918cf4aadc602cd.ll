@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 56 occurrences:
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
 ; mold/optimized/gc-sections.cc.ARM64.cc.ll
@@ -36,49 +36,6 @@
 ; mold/optimized/relocatable.cc.SH4.cc.ll
 ; mold/optimized/relocatable.cc.SPARC64.cc.ll
 ; mold/optimized/relocatable.cc.X86_64.cc.ll
-; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Filter.cc.ll
-; openvdb/optimized/LevelSetSphere.cc.ll
-; openvdb/optimized/MultiResGrid.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %1, i64 24
-  %5 = icmp eq ptr %4, %3
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; openjdk/optimized/constMethod.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %1, i64 -2
-  %5 = icmp ult ptr %4, %3
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 5 occurrences:
-; g2o/optimized/string_tools.cpp.ll
-; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; llvm/optimized/ModuloSchedule.cpp.ll
-; nori/optimized/common.cpp.ll
-; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %1, i64 -1
-  %5 = icmp ne ptr %4, %3
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 16 occurrences:
 ; openusd/optimized/bboxCache.cpp.ll
 ; openusd/optimized/changeManager.cpp.ll
 ; openusd/optimized/diagnosticMgr.cpp.ll
@@ -95,12 +52,55 @@ entry:
 ; openusd/optimized/stageCacheContext.cpp.ll
 ; openusd/optimized/testUsdThreadedAuthoring.cpp.ll
 ; openusd/optimized/usdzResolver.cpp.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %1, i64 24
   %5 = icmp eq ptr %4, %3
+  %6 = and i1 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/constMethod.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw i8, ptr %1, i64 -2
+  %5 = icmp ult ptr %4, %3
+  %6 = and i1 %5, %0
+  ret i1 %6
+}
+
+; 4 occurrences:
+; g2o/optimized/string_tools.cpp.ll
+; libphonenumber/optimized/generate_geocoding_data.cc.ll
+; nori/optimized/common.cpp.ll
+; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw i8, ptr %1, i64 -1
+  %5 = icmp ne ptr %4, %3
+  %6 = and i1 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/ModuloSchedule.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 48
+  %5 = icmp ne ptr %4, %3
   %6 = and i1 %5, %0
   ret i1 %6
 }

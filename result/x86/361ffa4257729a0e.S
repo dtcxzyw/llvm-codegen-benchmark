@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
@@ -12,7 +12,7 @@ func000000000000000b:                   # @func000000000000000b
 	cmovll	%esi, %eax
 	cltq
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi

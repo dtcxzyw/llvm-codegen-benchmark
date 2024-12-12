@@ -1,8 +1,10 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/khm16.ll
 ; spike/optimized/khm8.ll

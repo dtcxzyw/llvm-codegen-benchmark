@@ -110,13 +110,13 @@
 ; yosys/optimized/sta.ll
 ; yosys/optimized/xprop.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a2(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000a3(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, 2
   %5 = sub i64 %1, %4
   %6 = lshr i64 %5, 1
-  %7 = getelementptr nusw ptr, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw ptr, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -205,13 +205,13 @@ entry:
 ; yosys/optimized/sta.ll
 ; yosys/optimized/xprop.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ab(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, 2
   %5 = sub nsw i64 %1, %4
   %6 = lshr i64 %5, 1
-  %7 = getelementptr nusw ptr, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw ptr, ptr %0, i64 %6
   ret ptr %7
 }
 

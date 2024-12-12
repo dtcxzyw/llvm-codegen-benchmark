@@ -14,18 +14,18 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %1, -1
-  %4 = icmp ne i32 %3, %2
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
+  %.neg = add i32 %2, 1
+  %3 = icmp ne i32 %1, %.neg
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 1 occurrences:
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %2, %1
   %4 = icmp slt i32 %3, -2

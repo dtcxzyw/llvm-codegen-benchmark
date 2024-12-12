@@ -8,12 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 	cmovel	%ecx, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	testb	$1, %sil
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
-	movl	$1073741824, %ecx               # imm = 0x40000000
-	cmovnel	%eax, %ecx
-	movabsq	$2251799812636672, %rax         # imm = 0x7FFFFFFF00000
-	cmpq	%rax, %rdi
-	movl	$1048576, %eax                  # imm = 0x100000
-	cmoval	%ecx, %eax
+	andl	$1, %esi
+	leal	1(%rsi), %ecx
+	xorl	%eax, %eax
+	cmpq	$65537, %rdi                    # imm = 0x10001
+	cmovael	%ecx, %eax
 	retq

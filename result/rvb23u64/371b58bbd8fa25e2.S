@@ -12,6 +12,17 @@ func000000000000003a:                   # @func000000000000003a
 	add	a0, a0, a1
 	srli	a0, a0, 4
 	ret
+func0000000000000010:                   # @func0000000000000010
+	andi	a1, a0, 255
+	slli	a0, a0, 8
+	subw	a0, a0, a1
+	lui	a1, 1
+	slli	a0, a0, 48
+	srli	a0, a0, 50
+	addiw	a1, a1, 1147
+	mul	a0, a0, a1
+	srli	a0, a0, 17
+	ret
 func000000000000001a:                   # @func000000000000001a
 	andi	a0, a0, 255
 	lui	a1, 32

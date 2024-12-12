@@ -1,9 +1,9 @@
 
-%"struct.OT::IntType.0.2622262" = type { %struct.BEInt.1.2622266 }
-%struct.BEInt.1.2622266 = type { [2 x i8] }
-%struct.lua_TValue.2811879 = type { %union.Value.2811880, [1 x i32], i32 }
-%union.Value.2811880 = type { ptr }
-%"class.llvm::Use.2992167" = type { ptr, ptr, ptr, ptr }
+%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
+%struct.BEInt.1.2735703 = type { [2 x i8] }
+%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
+%union.Value.2923858 = type { ptr }
+%"class.llvm::Use.3185630" = type { ptr, ptr, ptr, ptr }
 
 ; 131 occurrences:
 ; abc/optimized/giaNf.c.ll
@@ -138,13 +138,13 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -182,13 +182,13 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; z3/optimized/lar_solver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -213,13 +213,13 @@ entry:
 ; llvm/optimized/Reassociate.cpp.ll
 ; openjdk/optimized/ps_core.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -4
   %4 = zext i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -229,38 +229,38 @@ entry:
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = zext i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; luau/optimized/lvmexecute.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw %struct.lua_TValue.2811879, ptr %0, i64 %5
-  %7 = getelementptr %struct.lua_TValue.2811879, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw %struct.lua_TValue.2923857, ptr %0, i64 %5
+  %7 = getelementptr %struct.lua_TValue.2923857, ptr %6, i64 %4
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; llvm/optimized/IROutliner.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 134217727
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw %"class.llvm::Use.2992167", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3185630", ptr %0, i64 %5
   %7 = getelementptr ptr, ptr %6, i64 %4
   ret ptr %7
 }

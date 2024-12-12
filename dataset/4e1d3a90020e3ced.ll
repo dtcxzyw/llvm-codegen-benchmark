@@ -194,7 +194,8 @@ entry:
   ret i64 %2
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/approximately_equals.ll
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll

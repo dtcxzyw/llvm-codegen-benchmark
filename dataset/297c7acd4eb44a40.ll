@@ -321,7 +321,7 @@
 define i32 @func0000000000000003(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 256, i32 0
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   %6 = xor i32 %5, 42
   ret i32 %6
@@ -333,7 +333,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 134225920, i32 8192
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   %6 = xor i32 %5, -1
   ret i32 %6

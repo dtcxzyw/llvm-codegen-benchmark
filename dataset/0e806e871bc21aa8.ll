@@ -4,7 +4,7 @@
 ; openblas/optimized/dgesvd.c.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %3, i1 true, i1 %0

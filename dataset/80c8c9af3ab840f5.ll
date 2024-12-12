@@ -1,19 +1,4 @@
 
-; 3 occurrences:
-; linux/optimized/intel_dpll_mgr.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003f(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %2, 24
-  %4 = shl nuw nsw i32 %1, 16
-  %5 = or disjoint i32 %4, %3
-  %6 = select i1 %0, i32 41, i32 39
-  %7 = or disjoint i32 %5, %6
-  ret i32 %7
-}
-
 ; 1 occurrences:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; Function Attrs: nounwind
@@ -24,6 +9,20 @@ entry:
   %5 = or disjoint i32 %4, %3
   %6 = select i1 %0, i32 1577321472, i32 1308886016
   %7 = or i32 %5, %6
+  ret i32 %7
+}
+
+; 2 occurrences:
+; linux/optimized/intel_dpll_mgr.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003f(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 24
+  %4 = shl nuw nsw i32 %1, 16
+  %5 = or disjoint i32 %4, %3
+  %6 = select i1 %0, i32 256, i32 0
+  %7 = or disjoint i32 %6, %5
   ret i32 %7
 }
 

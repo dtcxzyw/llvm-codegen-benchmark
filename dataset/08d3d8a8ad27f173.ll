@@ -1,29 +1,5 @@
 
-%"class.folly::hazptr_detail::shared_head_only_list.2570280" = type <{ %"struct.std::atomic.10.2570277", %"struct.std::atomic.67.2570284", i32, [4 x i8] }>
-%"struct.std::atomic.10.2570277" = type { %"struct.std::__atomic_base.11.2570286" }
-%"struct.std::__atomic_base.11.2570286" = type { i64 }
-%"struct.std::atomic.67.2570284" = type { %"class.std::thread::id.2570285" }
-%"class.std::thread::id.2570285" = type { i64 }
-%struct.Vmxnet3TxqDescr.2594414 = type { %struct.Vmxnet3Ring.2594415, %struct.Vmxnet3Ring.2594415, i8, i64, %struct.UPT1_TxStats.2594416 }
-%struct.Vmxnet3Ring.2594415 = type { i64, i32, i32, i32, i8 }
-%struct.UPT1_TxStats.2594416 = type { i64, i64, i64, i64, i64, i64, i64, i64, i64, i64 }
-%"struct.pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_TargetingPropertyDependencyCollector::_WorkQueueEntry.3193276" = type { %"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3193124", %"class.std::vector.293.3193277", %"class.std::set.282.3193247" }
-%"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3193124" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3193125", %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.0.3193126" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3193125" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3193127" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3193127" = type { i32 }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.0.3193126" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3193128" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3193128" = type { i32 }
-%"class.std::vector.293.3193277" = type { %"struct.std::_Vector_base.294.3193278" }
-%"struct.std::_Vector_base.294.3193278" = type { %"struct.std::_Vector_base<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_PropertySpecWithAuthoredTargetsInfo, std::allocator<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_PropertySpecWithAuthoredTargetsInfo>>::_Vector_impl.3193279" }
-%"struct.std::_Vector_base<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_PropertySpecWithAuthoredTargetsInfo, std::allocator<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_PropertySpecWithAuthoredTargetsInfo>>::_Vector_impl.3193279" = type { %"struct.std::_Vector_base<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_PropertySpecWithAuthoredTargetsInfo, std::allocator<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_PropertySpecWithAuthoredTargetsInfo>>::_Vector_impl_data.3193280" }
-%"struct.std::_Vector_base<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_PropertySpecWithAuthoredTargetsInfo, std::allocator<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_PropertySpecWithAuthoredTargetsInfo>>::_Vector_impl_data.3193280" = type { ptr, ptr, ptr }
-%"class.std::set.282.3193247" = type { %"class.std::_Rb_tree.283.3193248" }
-%"class.std::_Rb_tree.283.3193248" = type { %"struct.std::_Rb_tree<pxrInternal_v0_24__pxrReserved__::SdfPath, pxrInternal_v0_24__pxrReserved__::SdfPath, std::_Identity<pxrInternal_v0_24__pxrReserved__::SdfPath>, std::less<pxrInternal_v0_24__pxrReserved__::SdfPath>>::_Rb_tree_impl.3193249" }
-%"struct.std::_Rb_tree<pxrInternal_v0_24__pxrReserved__::SdfPath, pxrInternal_v0_24__pxrReserved__::SdfPath, std::_Identity<pxrInternal_v0_24__pxrReserved__::SdfPath>, std::less<pxrInternal_v0_24__pxrReserved__::SdfPath>>::_Rb_tree_impl.3193249" = type { [8 x i8], %"struct.std::_Rb_tree_header.3193194" }
-%"struct.std::_Rb_tree_header.3193194" = type { %"struct.std::_Rb_tree_node_base.3193195", i64 }
-%"struct.std::_Rb_tree_node_base.3193195" = type { i32, ptr, ptr, ptr }
-
-; 222 occurrences:
+; 223 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
@@ -39,6 +15,7 @@
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
+; openusd/optimized/namespaceEditor.cpp.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/tcache.ll
@@ -247,12 +224,13 @@
 ; spike/optimized/vmflt_vf.ll
 ; spike/optimized/vmfne_vf.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
   %3 = and i64 %2, 7
-  %4 = getelementptr nusw i8, ptr %0, i64 224
-  %5 = getelementptr [8 x %"class.folly::hazptr_detail::shared_head_only_list.2570280"], ptr %4, i64 0, i64 %3, i32 1
+  %.idx = mul nuw nsw i64 %3, 24
+  %4 = getelementptr i8, ptr %0, i64 232
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
 }
 
@@ -262,48 +240,26 @@ entry:
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = and i64 %2, 7
-  %4 = getelementptr nusw i8, ptr %0, i64 12992
-  %5 = getelementptr [8 x %struct.Vmxnet3TxqDescr.2594414], ptr %4, i64 0, i64 %3, i32 0, i32 3
+  %.idx = mul nuw nsw i64 %3, 140
+  %4 = getelementptr i8, ptr %0, i64 13008
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000030(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = and i64 %2, 7
-  %4 = getelementptr nusw i8, ptr %0, i64 12992
-  %5 = getelementptr [8 x %struct.Vmxnet3TxqDescr.2594414], ptr %4, i64 0, i64 %3, i32 0, i32 4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; openusd/optimized/namespaceEditor.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 3
-  %3 = and i64 %2, 1
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %5 = getelementptr [2 x %"struct.pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_TargetingPropertyDependencyCollector::_WorkQueueEntry.3193276"], ptr %4, i64 0, i64 %3, i32 0, i32 1
-  ret ptr %5
-}
-
-; 1 occurrences:
-; openusd/optimized/namespaceEditor.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 3
-  %3 = and i64 %2, 1
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %5 = getelementptr [2 x %"struct.pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_TargetingPropertyDependencyCollector::_WorkQueueEntry.3193276"], ptr %4, i64 0, i64 %3, i32 2, i32 0, i32 0, i32 1, i32 0, i32 1
+  %.idx = mul nuw nsw i64 %3, 140
+  %4 = getelementptr i8, ptr %0, i64 13012
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
 }
 

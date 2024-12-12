@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 42 occurrences:
 ; abc/optimized/abcFunc.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/acbUtil.c.ll
@@ -36,6 +36,7 @@
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; redis/optimized/emap.ll
 ; redis/optimized/emap.sym.ll
@@ -47,7 +48,7 @@ entry:
   %2 = shl i32 %1, 22
   %3 = and i32 %2, 532676608
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -59,7 +60,7 @@ entry:
   %2 = shl i32 %1, 16
   %3 = and i32 %2, -268500992
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -71,7 +72,7 @@ entry:
   %2 = shl i32 %1, 3
   %3 = and i32 %2, 120
   %4 = zext nneg i32 %3 to i64
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

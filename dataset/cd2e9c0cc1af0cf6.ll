@@ -12,8 +12,9 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; lief/optimized/camellia.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0) #0 {
 entry:

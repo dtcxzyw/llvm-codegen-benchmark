@@ -1,5 +1,6 @@
 
-; 22 occurrences:
+; 23 occurrences:
+; boost/optimized/format_args.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll

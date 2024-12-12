@@ -1,15 +1,14 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; openjdk/optimized/c1_LinearScan.ll
-; ruby/optimized/ractor.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
-  %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i32 0, i32 2
-  %4 = or disjoint i32 %3, %0
-  %5 = or disjoint i32 %4, 4
+  %2 = icmp eq i64 %1, 24
+  %3 = select i1 %2, i32 2, i32 3
+  %4 = or disjoint i32 %0, %3
+  %5 = or disjoint i32 %4, 16
   ret i32 %5
 }
 
@@ -33,7 +32,7 @@ define i32 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i32 0, i32 48
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or i32 %4, 12582912
   ret i32 %5
 }

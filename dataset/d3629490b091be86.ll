@@ -1,15 +1,15 @@
 
-%struct.Mmr_Fixed_t_.2764067 = type { i32, i32, i32, i32, i32, %struct.Vec_Ptr_t_.2764068, %struct.Vec_Int_t_.2764064 }
-%struct.Vec_Ptr_t_.2764068 = type { i32, i32, ptr }
-%struct.Vec_Int_t_.2764064 = type { i32, i32, ptr }
-%struct.inet_bind_hashbucket.3359255 = type { %struct.spinlock.3359256, %struct.hlist_head.3359257 }
-%struct.spinlock.3359256 = type { %union.anon.1.3359258 }
-%union.anon.1.3359258 = type { %struct.raw_spinlock.3359259 }
-%struct.raw_spinlock.3359259 = type { %struct.qspinlock.3359260 }
-%struct.qspinlock.3359260 = type { %union.anon.2.3359261 }
-%union.anon.2.3359261 = type { %struct.atomic_t.3359244 }
-%struct.atomic_t.3359244 = type { i32 }
-%struct.hlist_head.3359257 = type { ptr }
+%struct.Mmr_Fixed_t_.2876330 = type { i32, i32, i32, i32, i32, %struct.Vec_Ptr_t_.2876331, %struct.Vec_Int_t_.2876327 }
+%struct.Vec_Ptr_t_.2876331 = type { i32, i32, ptr }
+%struct.Vec_Int_t_.2876327 = type { i32, i32, ptr }
+%struct.inet_bind_hashbucket.3546165 = type { %struct.spinlock.3546166, %struct.hlist_head.3546167 }
+%struct.spinlock.3546166 = type { %union.anon.1.3546168 }
+%union.anon.1.3546168 = type { %struct.raw_spinlock.3546169 }
+%struct.raw_spinlock.3546169 = type { %struct.qspinlock.3546170 }
+%struct.qspinlock.3546170 = type { %union.anon.2.3546171 }
+%union.anon.2.3546171 = type { %struct.atomic_t.3546154 }
+%struct.atomic_t.3546154 = type { i32 }
+%struct.hlist_head.3546167 = type { ptr }
 
 ; 3 occurrences:
 ; abc/optimized/mpmAbc.c.ll
@@ -20,7 +20,7 @@ define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.Mmr_Fixed_t_.2764067, ptr %0, i64 %4, i32 5, i32 2
+  %5 = getelementptr %struct.Mmr_Fixed_t_.2876330, ptr %0, i64 %4, i32 5, i32 2
   ret ptr %5
 }
 
@@ -40,11 +40,11 @@ entry:
 ; openmpi/optimized/mca_btl_smcuda_la-btl_smcuda.ll
 ; openmpi/optimized/mca_btl_smcuda_la-btl_smcuda_component.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.Mmr_Fixed_t_.2764067, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.Mmr_Fixed_t_.2876330, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -53,11 +53,11 @@ entry:
 ; postgres/optimized/catcache.ll
 ; postgres/optimized/nodeHash.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.inet_bind_hashbucket.3359255, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.inet_bind_hashbucket.3546165, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

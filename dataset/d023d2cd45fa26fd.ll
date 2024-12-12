@@ -1,5 +1,5 @@
 
-; 101 occurrences:
+; 100 occurrences:
 ; cmake/optimized/cmInstallCommand.cxx.ll
 ; gromacs/optimized/muParserTokenReader.cpp.ll
 ; grpc/optimized/grpclb.cc.ll
@@ -87,7 +87,6 @@
 ; postgres/optimized/shm_mq.ll
 ; postgres/optimized/slot.ll
 ; proj/optimized/common.cpp.ll
-; proj/optimized/cs2cs.cpp.ll
 ; pyo3-rs/optimized/2bwqae3mb2e8qzca.ll
 ; rocksdb/optimized/block.cc.ll
 ; rocksdb/optimized/db_impl_write.cc.ll
@@ -110,7 +109,7 @@ entry:
   ret i1 %4
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; cmake/optimized/cmakemain.cxx.ll
 ; grpc/optimized/connected_channel.cc.ll
 ; grpc/optimized/pick_first.cc.ll
@@ -173,7 +172,6 @@ entry:
 ; postgres/optimized/selfuncs.ll
 ; postgres/optimized/tlist.ll
 ; postgres/optimized/vacuumparallel.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/projinfo.cpp.ll
 ; qemu/optimized/migration_block-dirty-bitmap.c.ll
 ; qemu/optimized/system_physmem.c.ll

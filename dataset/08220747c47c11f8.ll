@@ -1,11 +1,6 @@
 
-; 8 occurrences:
-; git/optimized/commit-graph.ll
+; 3 occurrences:
 ; linux/optimized/n_tty.ll
-; openjdk/optimized/shenandoahFreeSet.ll
-; openjdk/optimized/shenandoahHeapRegion.ll
-; openjdk/optimized/shenandoahMetrics.ll
-; openjdk/optimized/shenandoahPacer.ll
 ; openssl/optimized/libcrypto-lib-bss_dgram_pair.ll
 ; openssl/optimized/libcrypto-shlib-bss_dgram_pair.ll
 ; Function Attrs: nounwind
@@ -109,7 +104,7 @@ entry:
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp eq i64 %3, -1
@@ -131,6 +126,20 @@ entry:
   ret i64 %5
 }
 
+; 4 occurrences:
+; openjdk/optimized/shenandoahFreeSet.ll
+; openjdk/optimized/shenandoahHeapRegion.ll
+; openjdk/optimized/shenandoahMetrics.ll
+; openjdk/optimized/shenandoahPacer.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = icmp samesign ugt i64 %3, 102399
+  %5 = select i1 %4, i64 %0, i64 %3
+  ret i64 %5
+}
+
 ; 2 occurrences:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; llvm/optimized/Format.cpp.ll
@@ -143,19 +152,18 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; cmake/optimized/ProcessUNIX.c.ll
 ; cmake/optimized/fs.c.ll
 ; eastl/optimized/EATest.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; libevent/optimized/evutil_time.c.ll
-; libquic/optimized/d1_lib.c.ll
 ; libuv/optimized/fs.c.ll
 ; node/optimized/fs.ll
 ; php/optimized/network.ll
 ; sundials/optimized/sundials_profiler.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp slt i64 %3, 0
@@ -180,7 +188,7 @@ entry:
 ; openblas/optimized/dsyrk_thread_UN.c.ll
 ; openblas/optimized/dsyrk_thread_UT.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp sgt i64 %3, 192

@@ -3,7 +3,7 @@
 ; minetest/optimized/cavegen.cpp.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp sgt i32 %2, %0
@@ -17,7 +17,7 @@ entry:
 ; quantlib/optimized/botswana.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 38
   %3 = icmp eq i32 %2, %0

@@ -1,4 +1,4 @@
-func0000000000000138:                   # @func0000000000000138
+func0000000000000268:                   # @func0000000000000268
 	shrq	$5, %rsi
 	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB
 	cltq
@@ -6,7 +6,7 @@ func0000000000000138:                   # @func0000000000000138
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func0000000000000134:                   # @func0000000000000134
+func0000000000000264:                   # @func0000000000000264
 	shrq	$5, %rsi
 	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB
 	cltq

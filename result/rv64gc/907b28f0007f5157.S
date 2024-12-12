@@ -33,6 +33,12 @@ func0000000000000001:                   # @func0000000000000001
 	negw	a0, a0
 	subw	a0, a0, a1
 	ret
+func0000000000000030:                   # @func0000000000000030
+	add	a1, a1, a2
+	add	a0, a0, a1
+	li	a1, 90
+	subw	a0, a1, a0
+	ret
 func0000000000000011:                   # @func0000000000000011
 	add	a1, a1, a2
 	add	a0, a0, a1

@@ -6,10 +6,10 @@ func0000000000000004:                   # @func0000000000000004
 	vbroadcastsd	.LCPI0_0(%rip), %zmm2   # zmm2 = [1.0000000180025095E-35,1.0000000180025095E-35,1.0000000180025095E-35,1.0000000180025095E-35,1.0000000180025095E-35,1.0000000180025095E-35,1.0000000180025095E-35,1.0000000180025095E-35]
 	vcmpltpd	%zmm2, %zmm1, %k1
 	vcmpltpd	%zmm2, %zmm0, %k2
-	korb	%k0, %k2, %k2
+	korb	%k2, %k0, %k2
 	vmovapd	%zmm2, %zmm0 {%k2}
 	kshiftrw	$8, %k0, %k0
-	korb	%k0, %k1, %k1
+	korb	%k1, %k0, %k1
 	vmovapd	%zmm2, %zmm1 {%k1}
 	retq
 .LCPI1_0:
@@ -37,11 +37,11 @@ func0000000000000008:                   # @func0000000000000008
 	vbroadcastsd	.LCPI2_0(%rip), %zmm2   # zmm2 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	vcmpltpd	%zmm1, %zmm2, %k1
 	vcmpltpd	%zmm0, %zmm2, %k2
-	korb	%k0, %k2, %k2
+	korb	%k2, %k0, %k2
 	vbroadcastsd	.LCPI2_1(%rip), %zmm2   # zmm2 = [5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1]
 	vmovapd	%zmm2, %zmm0 {%k2}
 	kshiftrw	$8, %k0, %k0
-	korb	%k0, %k1, %k1
+	korb	%k1, %k0, %k1
 	vmovapd	%zmm2, %zmm1 {%k1}
 	retq
 .LCPI3_0:
@@ -53,7 +53,7 @@ func0000000000000018:                   # @func0000000000000018
 	vcmplepd	%zmm0, %zmm2, %k1
 	vcmplepd	%zmm1, %zmm2, %k2
 	kunpckbw	%k1, %k2, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	knotw	%k0, %k1
 	vmovapd	%zmm0, %zmm0 {%k1} {z}
 	kshiftrw	$8, %k1, %k1
@@ -67,10 +67,10 @@ func0000000000000014:                   # @func0000000000000014
 	vpxor	%xmm2, %xmm2, %xmm2
 	vcmplepd	%zmm2, %zmm1, %k1
 	vcmplepd	%zmm2, %zmm0, %k2
-	korb	%k0, %k2, %k2
+	korb	%k2, %k0, %k2
 	vbroadcastsd	.LCPI4_0(%rip), %zmm2   # zmm2 = [1.0000000000000001E-1,1.0000000000000001E-1,1.0000000000000001E-1,1.0000000000000001E-1,1.0000000000000001E-1,1.0000000000000001E-1,1.0000000000000001E-1,1.0000000000000001E-1]
 	vmovapd	%zmm2, %zmm0 {%k2}
 	kshiftrw	$8, %k0, %k0
-	korb	%k0, %k1, %k1
+	korb	%k1, %k0, %k1
 	vmovapd	%zmm2, %zmm1 {%k1}
 	retq

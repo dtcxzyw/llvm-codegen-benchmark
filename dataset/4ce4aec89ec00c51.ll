@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 64 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/giaGlitch.c.ll
@@ -19,7 +19,6 @@
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; eastl/optimized/EAMemory.cpp.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/hda_codec.ll
@@ -63,7 +62,6 @@
 ; php/optimized/ir.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; wireshark/optimized/packet-btavdtp.c.ll
 ; wireshark/optimized/packet-mp2t.c.ll
 ; Function Attrs: nounwind
@@ -71,21 +69,19 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 15
   %3 = and i32 %2, 56
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; eastl/optimized/EAMemory.cpp.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 8
-  %3 = and i32 %2, -16777216
-  %4 = or disjoint i32 %3, %0
-  ret i32 %4
+  %2 = and i32 %1, -268435456
+  %3 = or disjoint i32 %0, %2
+  ret i32 %3
 }
 
 ; 3 occurrences:
@@ -97,7 +93,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 7
   %3 = and i32 %2, 3840
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

@@ -61,14 +61,13 @@ entry:
   ret i64 %2
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/MemoryBuiltins.cpp.ll
 ; quickjs/optimized/libbf.ll

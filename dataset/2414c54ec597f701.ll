@@ -6,27 +6,21 @@
 define i1 @func000000000000000e(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = icmp sge i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp sle i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 9 occurrences:
+; 3 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
-; linux/optimized/acpi_pm.ll
-; linux/optimized/mlme.ll
-; linux/optimized/vht.ll
-; linux/optimized/xhci-ring.ll
-; opencv/optimized/filter.dispatch.cpp.ll
-; openjdk/optimized/cmsintrp.ll
 ; qemu/optimized/fdt.c.ll
 ; spike/optimized/fdt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -4
-  %4 = icmp ugt i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -60,8 +54,23 @@ entry:
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
-  %4 = icmp ne i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ne i32 %1, %3
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 5 occurrences:
+; linux/optimized/acpi_pm.ll
+; linux/optimized/mlme.ll
+; linux/optimized/vht.ll
+; linux/optimized/xhci-ring.ll
+; openjdk/optimized/cmsintrp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 65535
+  %4 = icmp samesign ult i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -99,54 +108,32 @@ entry:
 define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65280
-  %4 = icmp eq i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp eq i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 10 occurrences:
+; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; libwebp/optimized/predictor_enc.c.ll
-; lief/optimized/psa_crypto.c.ll
 ; lightgbm/optimized/bin.cpp.ll
-; linux/optimized/acpi_pm.ll
-; linux/optimized/mlme.ll
-; linux/optimized/xhci-ring.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; php/optimized/zend_inheritance.ll
-; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp ugt i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
-; libwebp/optimized/predictor_enc.c.ll
-; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 131070
-  %4 = icmp uge i32 %3, %1
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 3 occurrences:
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMuxes.c.ll
-; llvm/optimized/SemaCast.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000012(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 536870911
-  %4 = icmp ule i32 %3, %1
-  %5 = or i1 %4, %0
+  %3 = and i32 %2, 15
+  %4 = icmp samesign ule i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -157,7 +144,7 @@ entry:
 define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4095
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -169,7 +156,31 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4095
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
+  %5 = or i1 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/SemaCast.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000032(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 65535
+  %4 = icmp samesign uge i32 %1, %3
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; linux/optimized/acpi_pm.ll
+; linux/optimized/mlme.ll
+; linux/optimized/xhci-ring.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 3
+  %4 = icmp samesign ugt i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

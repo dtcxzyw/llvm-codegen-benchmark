@@ -9,7 +9,7 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 4
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -21,7 +21,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 4
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -35,7 +35,7 @@ define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 

@@ -3,12 +3,12 @@
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/log3gpp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i8 %1, i64 %2) #0 {
+define i1 @func000000000000028c(i1 %0, i8 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 63
+  %3 = icmp samesign ult i64 %2, 63
   %4 = icmp ne i8 %1, 47
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -65,7 +65,7 @@ entry:
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i8 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ult i8 %1, 64

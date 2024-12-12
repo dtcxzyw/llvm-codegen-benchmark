@@ -9,7 +9,7 @@
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; ruby/optimized/utf_32be.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, -40
   %3 = icmp eq i32 %0, 0
@@ -24,7 +24,7 @@ entry:
 ; openjdk/optimized/Net.ll
 ; wireshark/optimized/packet-cip.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i8 %0, i32 %1) #0 {
+define i32 @func000000000000018c(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ne i8 %0, 0
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/mvref_common.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000004c(i32 %0, i8 %1) #0 {
+define i32 @func000000000000008c(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 2
   %3 = icmp ne i32 %0, 0
@@ -50,9 +50,9 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-acdr.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000008c(i8 %0, i32 %1) #0 {
+define i32 @func000000000000030c(i8 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 2
+  %2 = icmp samesign ugt i32 %1, 2
   %3 = icmp ne i8 %0, 0
   %4 = and i1 %3, %2
   %5 = select i1 %4, i32 16, i32 4
@@ -65,7 +65,7 @@ entry:
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i8 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp ne i8 %0, 0
@@ -78,7 +78,7 @@ entry:
 ; icu/optimized/genmbcs.ll
 ; linux/optimized/trace_output.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c6(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000186(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp slt i8 %0, 0

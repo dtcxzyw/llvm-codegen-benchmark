@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 61 occurrences:
 ; box2d/optimized/b2_body.cpp.ll
 ; c3c/optimized/sema_name_resolution.c.ll
 ; c3c/optimized/types.c.ll
@@ -18,8 +18,6 @@
 ; darktable/optimized/introspection_dither.c.ll
 ; folly/optimized/EventHandler.cpp.ll
 ; git/optimized/diff.ll
-; git/optimized/diffcore-break.ll
-; git/optimized/merge-ort.ll
 ; gromacs/optimized/type.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/JSObject.cpp.ll
@@ -45,6 +43,7 @@
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; openusd/optimized/faceSurface.cpp.ll
@@ -66,7 +65,7 @@
 define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
@@ -89,8 +88,6 @@ entry:
 ; darktable/optimized/introspection_dither.c.ll
 ; freetype/optimized/autofit.c.ll
 ; git/optimized/diff.ll
-; git/optimized/diffcore-break.ll
-; git/optimized/merge-ort.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
 ; icu/optimized/rbt_pars.ll
@@ -117,6 +114,8 @@ entry:
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
 ; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
 ; softposit-rs/optimized/3yl6353p3hwrtv6y.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
@@ -129,7 +128,9 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; git/optimized/diffcore-break.ll
+; git/optimized/merge-ort.ll
 ; linux/optimized/virtio_ring.ll
 ; minetest/optimized/game.cpp.ll
 ; softposit-rs/optimized/3yl6353p3hwrtv6y.ll
@@ -143,12 +144,27 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 3 occurrences:
+; git/optimized/diffcore-break.ll
+; git/optimized/merge-ort.ll
+; linux/optimized/vpd.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i1 %0, i16 %1) #0 {
+entry:
+  %2 = icmp sgt i16 %1, -28673
+  %3 = xor i1 %0, %2
+  ret i1 %3
+}
+
+; 12 occurrences:
 ; cvc5/optimized/addition.cpp.ll
+; eastl/optimized/EAString.cpp.ll
 ; linux/optimized/extents.ll
+; llvm/optimized/AArch64ConditionalCompares.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/DAGISelEmitter.cpp.ll
+; llvm/optimized/Instruction.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -162,22 +178,12 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/vpd.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i1 %0, i16 %1) #0 {
-entry:
-  %2 = icmp sgt i16 %1, -1
-  %3 = xor i1 %2, %0
-  ret i1 %3
-}
-
-; 1 occurrences:
 ; linux/optimized/extents.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, -32768
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 

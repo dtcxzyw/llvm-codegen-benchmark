@@ -25,22 +25,22 @@ entry:
 ; luau/optimized/lapi.cpp.ll
 ; redis/optimized/lapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = sub nuw nsw i32 -10002, %0
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; icu/optimized/calendar.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000039(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = sub nsw i32 7, %0
-  %4 = icmp uge i32 %3, %2
+  %4 = icmp samesign uge i32 %3, %2
   ret i1 %4
 }
 
@@ -48,18 +48,18 @@ entry:
 ; icu/optimized/calendar.ll
 ; icu/optimized/gregocal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = sub nuw nsw i32 6, %0
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; icu/optimized/calendar.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = sub nsw i32 7, %0
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/calendar.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = sub nsw i32 7, %0

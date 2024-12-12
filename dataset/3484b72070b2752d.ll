@@ -19,16 +19,6 @@ entry:
 }
 
 ; 1 occurrences:
-; qemu/optimized/fpu_softfloat.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0) #0 {
-entry:
-  %1 = icmp ult i32 %0, 4194304
-  %2 = select i1 %1, i32 5, i32 4
-  ret i32 %2
-}
-
-; 1 occurrences:
 ; openexr/optimized/context.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {

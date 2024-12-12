@@ -17,7 +17,7 @@ func0000000000000025:                   # @func0000000000000025
 	sete	%cl
 	leal	70(%rdi,%rcx), %eax
 	retq
-func0000000000000105:                   # @func0000000000000105
+func0000000000000305:                   # @func0000000000000305
 	cmpq	$2, %rsi
 	sbbl	$-1, %edi
 	leal	-1(%rdi), %eax

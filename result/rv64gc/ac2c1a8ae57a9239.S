@@ -42,15 +42,15 @@ func0000000000000004:                   # @func0000000000000004
 	subw	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func000000000000000c:                   # @func000000000000000c
-	subw	a0, a0, a1
-	addw	a0, a0, a2
-	ret
 func0000000000000028:                   # @func0000000000000028
 	subw	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 func000000000000003d:                   # @func000000000000003d
+	subw	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+func000000000000000c:                   # @func000000000000000c
 	subw	a0, a0, a1
 	addw	a0, a0, a2
 	ret

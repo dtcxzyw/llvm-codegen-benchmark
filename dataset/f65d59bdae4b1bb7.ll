@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; git/optimized/diff.ll
 ; icu/optimized/decNumber.ll
@@ -14,6 +14,7 @@
 ; llvm/optimized/ConstantHoisting.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/flatten_layer.cpp.ll
 ; openjdk/optimized/loopopts.ll

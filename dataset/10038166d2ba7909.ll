@@ -3,7 +3,7 @@
 ; minetest/optimized/mapgen_fractal.cpp.ll
 ; minetest/optimized/mapgen_v5.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = sub nsw i32 %0, %2
@@ -27,7 +27,7 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/packet-csn1.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = sub nsw i32 %0, %2
@@ -35,7 +35,7 @@ entry:
   ret i1 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; clamav/optimized/vba_extract.c.ll
 ; double_conversion/optimized/bignum.cc.ll
@@ -47,6 +47,7 @@ entry:
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/rlainput.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/faceSurface.cpp.ll
@@ -59,10 +60,10 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -78,10 +79,10 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 

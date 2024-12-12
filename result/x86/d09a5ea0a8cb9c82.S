@@ -1,10 +1,10 @@
-func0000000000000051:                   # @func0000000000000051
+func0000000000000091:                   # @func0000000000000091
 	leal	7(%rdx), %eax
 	cmpb	$10, %sil
 	cmovael	%edi, %eax
 	incl	%eax
 	retq
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	leal	-5(%rdx), %eax
 	testb	%sil, %sil
 	cmovnel	%edi, %eax
@@ -16,7 +16,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmovnel	%edi, %eax
 	incl	%eax
 	retq
-func00000000000000c7:                   # @func00000000000000c7
+func0000000000000187:                   # @func0000000000000187
 	leal	39(%rdx), %eax
 	cmpb	$1, %sil
 	cmovnel	%edi, %eax

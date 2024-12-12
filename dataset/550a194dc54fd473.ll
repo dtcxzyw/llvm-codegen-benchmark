@@ -146,6 +146,7 @@
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/IrUtils.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -300,7 +301,6 @@
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/source_s_roundPackToF16.c.ll
 ; qemu/optimized/source_s_roundPackToF32.c.ll
-; qemu/optimized/source_s_shiftRightJam32.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/ui_qemu-pixman.c.ll
@@ -323,7 +323,6 @@
 ; spike/optimized/s_roundPackToBF16.ll
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
-; spike/optimized/s_shiftRightJam32.ll
 ; spike/optimized/s_subMagsF32.ll
 ; spike/optimized/sll32.ll
 ; spike/optimized/slli16.ll
@@ -358,6 +357,7 @@
 ; wasmedge/optimized/engine.cpp.ll
 ; z3/optimized/bit_util.cpp.ll
 ; z3/optimized/mpz.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_v01.c.ll
@@ -375,7 +375,7 @@ entry:
   ret i32 %3
 }
 
-; 55 occurrences:
+; 52 occurrences:
 ; arrow/optimized/bit_util.cc.ll
 ; clamav/optimized/rarvm.cpp.ll
 ; cmake/optimized/hex.c.ll
@@ -386,7 +386,6 @@ entry:
 ; faiss/optimized/hamming.cpp.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; libquic/optimized/error_correction.c.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/intel_pch_refclk.ll
 ; linux/optimized/intel_rps.ll
@@ -411,13 +410,11 @@ entry:
 ; openssl/optimized/quicfaultstest-bin-noisydgrambio.ll
 ; postgres/optimized/varbit.ll
 ; postgres/optimized/visibilitymap.ll
-; qemu/optimized/hw_display_ramfb.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_display_virtio-gpu.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/ui_dbus-listener.c.ll
 ; qemu/optimized/ui_qemu-pixman.c.ll
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
@@ -481,17 +478,16 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/bit_util.cc.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; opencv/optimized/slic.cpp.ll
 ; openjdk/optimized/addnode.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 15
+  %2 = and i32 %1, 31
   %3 = shl nsw i32 %0, %2
   ret i32 %3
 }

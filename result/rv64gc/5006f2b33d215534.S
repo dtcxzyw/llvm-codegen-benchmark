@@ -7,8 +7,7 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000004:                   # @func0000000000000004
 	slli	a1, a0, 48
 	srli	a1, a1, 48
-	li	a2, 6
-	bltu	a1, a2, .LBB1_2
-	li	a0, 3
-.LBB1_2:                                # %entry
+	sltiu	a1, a1, 2
+	neg	a1, a1
+	and	a0, a0, a1
 	ret

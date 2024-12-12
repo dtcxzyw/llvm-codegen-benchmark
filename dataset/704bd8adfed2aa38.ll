@@ -1,6 +1,5 @@
 
-; 27 occurrences:
-; abc/optimized/covMinUtil.c.ll
+; 25 occurrences:
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -16,7 +15,6 @@
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll
 ; nori/optimized/screen.cpp.ll
@@ -37,6 +35,19 @@ entry:
   ret i32 %5
 }
 
+; 2 occurrences:
+; boost/optimized/mapped_file.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i1 %0, i32 %1) #0 {
+entry:
+  %.not = icmp eq i32 %1, 2
+  %2 = select i1 %.not, i32 2, i32 0
+  %3 = select i1 %.not, i32 578, i32 0
+  %4 = select i1 %0, i32 %2, i32 %3
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
@@ -50,23 +61,11 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/TargetLowering.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i1 %0, i32 %1) #0 {
-entry:
-  %.not = icmp eq i32 %1, 0
-  %2 = select i1 %.not, i32 1, i32 14
-  %3 = select i1 %.not, i32 9, i32 6
-  %4 = select i1 %0, i32 %2, i32 %3
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; postgres/optimized/big5.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 160
+  %2 = icmp samesign ugt i32 %1, 160
   %3 = select i1 %2, i32 0, i32 -34
   %4 = select i1 %2, i32 34, i32 0
   %5 = select i1 %0, i32 %3, i32 %4

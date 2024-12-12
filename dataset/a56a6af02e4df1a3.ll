@@ -21,7 +21,6 @@
 ; openssl/optimized/libssl-lib-extensions.ll
 ; openssl/optimized/libssl-shlib-extensions.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
-; proj/optimized/projsync.cpp.ll
 ; qemu/optimized/block_vhdx-log.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; rocksdb/optimized/block.cc.ll
@@ -34,6 +33,7 @@
 ; tev/optimized/main.cpp.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -74,9 +74,21 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 1 occurrences:
+; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 86400
+  %4 = or i1 %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 14 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
@@ -113,14 +125,32 @@ entry:
 }
 
 ; 11 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; cmake/optimized/setopt.c.ll
+; curl/optimized/libcurl_la-setopt.ll
+; linux/optimized/drm_buddy.ll
+; linux/optimized/p4.ll
+; linux/optimized/percpu.ll
+; linux/optimized/vmalloc.ll
+; spike/optimized/socketif.ll
+; velox/optimized/URLFunctions.cpp.ll
+; wireshark/optimized/dot11decrypt.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %2, 524287
+  %4 = or i1 %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 8 occurrences:
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; cmake/optimized/cookie.c.ll
 ; curl/optimized/libcurl_la-cookie.ll
 ; libevent/optimized/evutil.c.ll
 ; libsodium/optimized/libsodium_la-pwhash_argon2i.ll
-; linux/optimized/drm_buddy.ll
-; linux/optimized/percpu.ll
-; linux/optimized/vmalloc.ll
 ; linux/optimized/zstd_decompress.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; postgres/optimized/heapam.ll

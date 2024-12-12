@@ -1,11 +1,10 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcSat.c.ll
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/ivyFraig.c.ll
-; abc/optimized/satUtil.c.ll
 ; brotli/optimized/metablock.c.ll
 ; cpython/optimized/_randommodule.ll
 ; darktable/optimized/global_toolbox.c.ll

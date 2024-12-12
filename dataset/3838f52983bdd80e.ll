@@ -10,7 +10,6 @@
 ; g2o/optimized/sampler.cpp.ll
 ; hermes/optimized/SamplingProfilerSampler.cpp.ll
 ; lightgbm/optimized/gradient_discretizer.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/backgammon_test.cc.ll
 ; openspiel/optimized/mcts.cc.ll
 ; openspiel/optimized/policy.cc.ll
@@ -30,6 +29,7 @@
 ; quantlib/optimized/randomdefaultmodel.ll
 ; quantlib/optimized/sobolrsg.ll
 ; quantlib/optimized/zigguratrng.ll
+; sentencepiece/optimized/unigram_model.cc.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
@@ -38,7 +38,7 @@ define double @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4022730752
   %4 = xor i64 %3, %1
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   %6 = uitofp i64 %5 to double
   ret double %6
 }

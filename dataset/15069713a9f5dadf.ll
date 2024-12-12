@@ -7,24 +7,12 @@
 ; luajit/optimized/lj_parse_dyn.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 37
   %3 = icmp eq i32 %0, 31
   %4 = select i1 %2, i1 true, i1 %3
   ret i1 %4
-}
-
-; 1 occurrences:
-; wireshark/optimized/systemd_journal.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %1, -262143
-  %3 = icmp ult i64 %2, -262145
-  %4 = icmp eq i32 %0, 100
-  %5 = select i1 %3, i1 true, i1 %4
-  ret i1 %5
 }
 
 ; 50 occurrences:
@@ -79,24 +67,12 @@ entry:
 ; protobuf/optimized/relative_path.cc.ll
 ; protobuf/optimized/versions.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000c21(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 15
   %3 = icmp eq i32 %0, 2
   %4 = select i1 %2, i1 true, i1 %3
   ret i1 %4
-}
-
-; 1 occurrences:
-; linux/optimized/mmconfig-shared.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -44
-  %3 = icmp ult i64 %2, 16
-  %4 = icmp eq i32 %0, 0
-  %5 = select i1 %3, i1 true, i1 %4
-  ret i1 %5
 }
 
 attributes #0 = { nounwind }

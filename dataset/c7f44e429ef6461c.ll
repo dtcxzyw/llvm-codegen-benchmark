@@ -11,9 +11,8 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/cmLocalGenerator.cxx.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; smol-rs/optimized/42mrm3r913zsut0b.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(ptr %0) #0 {

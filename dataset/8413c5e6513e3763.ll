@@ -9,7 +9,7 @@ entry:
   %3 = fneg double %2
   %4 = fdiv double %3, %1
   %5 = fcmp olt double %4, 0x3FEFFFFFFFFFDCD1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

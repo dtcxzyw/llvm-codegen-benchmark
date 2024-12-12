@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
-; linux/optimized/readdir.ll
 ; php/optimized/ir_emit.ll
 ; postgres/optimized/execParallel.ll
 ; protobuf/optimized/descriptor.cc.ll
@@ -14,7 +13,7 @@ define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 15
   %3 = and i32 %2, -8
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -39,7 +38,7 @@ define i64 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 7
   %3 = and i32 %2, 24
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -53,7 +52,7 @@ define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 15
   %3 = and i32 %2, 15
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -68,7 +67,7 @@ define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = and i32 %2, -8
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

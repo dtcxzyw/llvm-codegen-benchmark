@@ -10,7 +10,7 @@
 ; openjdk/optimized/xBarrierSetC2.ll
 ; openjdk/optimized/zBarrierSetC2.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000581(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 22
   %4 = icmp ne ptr %1, null
@@ -26,7 +26,7 @@ entry:
 ; openjdk/optimized/memnode.ll
 ; openjdk/optimized/subnode.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000042c(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
   %4 = icmp ne ptr %1, null
@@ -42,7 +42,7 @@ entry:
 ; openjdk/optimized/macro.ll
 ; openjdk/optimized/vectorIntrinsics.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000058c(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 22
   %4 = icmp ne ptr %1, null
@@ -56,7 +56,7 @@ entry:
 ; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000584(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 16
   %4 = icmp ne ptr %1, null
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004c8(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000001188(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 7
   %4 = icmp ne ptr %1, null
@@ -82,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ASTImporter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004c4(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000001184(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
   %4 = icmp ne ptr %1, null
@@ -95,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000041c(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000102c(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 7
   %4 = icmp ne ptr %1, null

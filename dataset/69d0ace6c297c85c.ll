@@ -1,5 +1,5 @@
 
-; 211 occurrences:
+; 215 occurrences:
 ; arrow/optimized/builder_adaptive.cc.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; clamav/optimized/arcread.cpp.ll
@@ -19,6 +19,13 @@
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
 ; libzmq/optimized/socket_base.cpp.ll
+; llvm/optimized/Decl.cpp.ll
+; llvm/optimized/LoopAccessAnalysis.cpp.ll
+; llvm/optimized/LoopDistribute.cpp.ll
+; llvm/optimized/Remark.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
+; llvm/optimized/StackProtector.cpp.ll
+; llvm/optimized/cc1as_main.cpp.ll
 ; luau/optimized/Type.cpp.ll
 ; meshlab/optimized/mesh_document.cpp.ll
 ; nix/optimized/add-to-store.ll
@@ -107,13 +114,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -212,15 +216,17 @@
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/preproc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i8 %0, ptr %1) #0 {
+define ptr @func000000000000000c(i8 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = trunc i8 %0 to i1
   %4 = select i1 %3, ptr %2, ptr null
   ret ptr %4
 }
 
-; 24 occurrences:
+; 27 occurrences:
+; boost/optimized/authority_rule.ll
+; boost/optimized/topology.ll
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
 ; diesel-rs/optimized/6cb7zukciz78xvw.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
@@ -245,28 +251,12 @@ entry:
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/3qxuuvy9ipi9muus.ll
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
+; zed-rs/optimized/8wvy5aljfw2qmbxbtkkewwal7.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i8 %0, ptr %1) #0 {
+define ptr @func000000000000000e(i8 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = trunc nuw i8 %0 to i1
-  %4 = select i1 %3, ptr %2, ptr null
-  ret ptr %4
-}
-
-; 7 occurrences:
-; llvm/optimized/Decl.cpp.ll
-; llvm/optimized/LoopAccessAnalysis.cpp.ll
-; llvm/optimized/LoopDistribute.cpp.ll
-; llvm/optimized/Remark.cpp.ll
-; llvm/optimized/SemaDeclAttr.cpp.ll
-; llvm/optimized/StackProtector.cpp.ll
-; llvm/optimized/cc1as_main.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000c(i8 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %3 = trunc i8 %0 to i1
   %4 = select i1 %3, ptr %2, ptr null
   ret ptr %4
 }

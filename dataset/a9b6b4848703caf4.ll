@@ -18,11 +18,11 @@ entry:
 ; linux/optimized/mlme.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 3
   %3 = lshr i8 %0, 3
-  %4 = icmp ugt i8 %3, %2
+  %4 = icmp samesign ugt i8 %3, %2
   ret i1 %4
 }
 

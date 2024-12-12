@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; eastl/optimized/EARandom.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
@@ -34,6 +34,7 @@
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; tokio-rs/optimized/r9h5225tdo2hxm6.ll
 ; tokio-rs/optimized/rq81hdouiclvz49.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000012(i64 %0, i64 %1) #0 {
 entry:
@@ -116,9 +117,8 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/syncookies.ll
@@ -150,20 +150,8 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; freetype/optimized/smooth.c.ll
-; postgres/optimized/reorderbuffer.ll
-; spike/optimized/s_mul64To128M.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul i64 %0, %1
-  %3 = lshr i64 %2, 32
-  %4 = trunc nuw i64 %3 to i32
-  ret i32 %4
-}
-
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/to_chars.ll
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; draco/optimized/rans_bit_encoder.cc.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
@@ -218,6 +206,18 @@ entry:
   ret i32 %4
 }
 
+; 2 occurrences:
+; freetype/optimized/smooth.c.ll
+; postgres/optimized/reorderbuffer.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul i64 %0, %1
+  %3 = lshr i64 %2, 32
+  %4 = trunc nuw i64 %3 to i32
+  ret i32 %4
+}
+
 ; 5 occurrences:
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
@@ -229,17 +229,6 @@ define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %0, %1
   %3 = lshr exact i64 %2, 16
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
-}
-
-; 1 occurrences:
-; eastl/optimized/EAFixedPoint.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw i64 %0, %1
-  %3 = lshr i64 %2, 16
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

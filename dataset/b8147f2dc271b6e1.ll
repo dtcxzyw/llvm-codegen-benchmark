@@ -1,10 +1,9 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SemaLambda.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000058(ptr %0, ptr %1, i64 %2) #0 {
+define i32 @func0000000000000098(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw ptr, ptr %1, i64 %2
   %4 = icmp ne ptr %3, %0
@@ -21,7 +20,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
+define i32 @func0000000000000088(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = icmp ult ptr %3, %0
@@ -56,7 +55,7 @@ entry:
 ; icu/optimized/normalizer2.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000042(ptr %0, ptr %1, i64 %2) #0 {
+define i32 @func0000000000000082(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i16, ptr %1, i64 %2
   %4 = icmp eq ptr %3, %0

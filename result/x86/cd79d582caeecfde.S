@@ -23,11 +23,6 @@ func000000000000002f:                   # @func000000000000002f
 	movzwl	%si, %eax
 	leal	4(%rax,%rdi), %eax
 	retq
-func000000000000003c:                   # @func000000000000003c
-	addl	%edx, %esi
-	movzwl	%si, %eax
-	leal	3(%rax,%rdi), %eax
-	retq
 func000000000000003f:                   # @func000000000000003f
 	addl	%edx, %esi
 	andl	$131056, %esi                   # imm = 0x1FFF0
@@ -37,6 +32,11 @@ func000000000000003d:                   # @func000000000000003d
 	addl	%edx, %esi
 	andl	$131056, %esi                   # imm = 0x1FFF0
 	leal	24(%rsi,%rdi), %eax
+	retq
+func000000000000003c:                   # @func000000000000003c
+	addl	%edx, %esi
+	andl	$131056, %esi                   # imm = 0x1FFF0
+	leal	16(%rsi,%rdi), %eax
 	retq
 func000000000000003e:                   # @func000000000000003e
 	addl	%edx, %esi

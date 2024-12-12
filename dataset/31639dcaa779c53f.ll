@@ -1,10 +1,9 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/SplitStringSimd.cpp.ll
-; proxygen/optimized/HTTPSession.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 4
   %3 = icmp eq i64 %0, 0
@@ -27,7 +26,7 @@ entry:
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imageio.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = icmp eq i64 %0, -9223372036854775808
@@ -51,7 +50,7 @@ entry:
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = icmp slt i64 %0, 0

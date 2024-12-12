@@ -18,6 +18,11 @@ func0000000000000000:                   # @func0000000000000000
 	cmovnel	%esi, %edx
 	leal	1(%rdx), %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	testb	$1, %dil
+	cmovnel	%esi, %edx
+	leal	1(%rdx), %eax
+	retq
 func0000000000000019:                   # @func0000000000000019
 	testb	$1, %dil
 	cmovnel	%esi, %edx

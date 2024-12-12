@@ -1,4 +1,4 @@
-func00000000000001c1:                   // @func00000000000001c1
+func0000000000000581:                   // @func0000000000000581
 // %bb.0:                               // %entry
 	orr	w8, w2, w0
 	cmp	w8, #0
@@ -6,7 +6,7 @@ func00000000000001c1:                   // @func00000000000001c1
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000c1c:                   // @func0000000000000c1c
+func000000000000302c:                   // @func000000000000302c
 // %bb.0:                               // %entry
 	cmp	w2, #0
 	ccmp	w0, #0, #4, ne
@@ -14,7 +14,7 @@ func0000000000000c1c:                   // @func0000000000000c1c
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000cc1:                   // @func0000000000000cc1
+func0000000000003181:                   // @func0000000000003181
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	mov	w8, #16                         // =0x10
@@ -24,7 +24,7 @@ func0000000000000cc1:                   // @func0000000000000cc1
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000111:                   // @func0000000000000111
+func0000000000000421:                   // @func0000000000000421
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	ccmp	w2, #1, #0, eq
@@ -32,7 +32,7 @@ func0000000000000111:                   // @func0000000000000111
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000c18:                   // @func0000000000000c18
+func0000000000003028:                   // @func0000000000003028
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	ccmp	w2, #0, #4, eq
@@ -40,7 +40,7 @@ func0000000000000c18:                   // @func0000000000000c18
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000ccc:                   // @func0000000000000ccc
+func000000000000318c:                   // @func000000000000318c
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	ccmp	w2, #0, #4, ne
@@ -48,7 +48,7 @@ func0000000000000ccc:                   // @func0000000000000ccc
 	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000006c1:                   // @func00000000000006c1
+func0000000000001981:                   // @func0000000000001981
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	ccmp	w2, #3, #0, ne

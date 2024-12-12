@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; grpc/optimized/chttp2_transport.cc.ll
 ; llvm/optimized/VirtualFileSystem.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

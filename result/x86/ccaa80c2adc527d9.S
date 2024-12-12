@@ -5,13 +5,6 @@ func000000000000003f:                   # @func000000000000003f
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
-func000000000000002f:                   # @func000000000000002f
-	movl	%esi, %eax
-	shll	$24, %edx
-	orl	%edi, %edx
-	shll	$8, %eax
-	orl	%edx, %eax
-	retq
 func0000000000000038:                   # @func0000000000000038
 	movl	%esi, %eax
 	andl	$3, %edx
@@ -26,5 +19,12 @@ func000000000000000f:                   # @func000000000000000f
 	andl	$-266354688, %edx               # imm = 0xF01FC000
 	shll	$7, %eax
 	orl	%edi, %eax
+	orl	%edx, %eax
+	retq
+func000000000000002f:                   # @func000000000000002f
+	movl	%esi, %eax
+	shll	$24, %edx
+	orl	%edi, %edx
+	shll	$16, %eax
 	orl	%edx, %eax
 	retq

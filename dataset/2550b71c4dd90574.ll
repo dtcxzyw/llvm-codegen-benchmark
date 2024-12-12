@@ -1,7 +1,7 @@
 
-%struct.pcpu_block_md.3349920 = type { i32, i32, i32, i32, i32, i32, i32, i32 }
+%struct.pcpu_block_md.3538033 = type { i32, i32, i32, i32, i32, i32, i32, i32 }
 
-; 60 occurrences:
+; 59 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -38,7 +38,6 @@
 ; libquic/optimized/exponentiation.c.ll
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/io_dec.c.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/cap_v4l.cpp.ll
@@ -72,8 +71,9 @@ entry:
   ret ptr %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; libwebp/optimized/iterator_enc.c.ll
+; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/build_policy.ll
 ; linux/optimized/entropy_common.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
@@ -194,7 +194,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = ashr i32 %2, 10
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.pcpu_block_md.3349920, ptr %0, i64 %4
+  %5 = getelementptr %struct.pcpu_block_md.3538033, ptr %0, i64 %4
   ret ptr %5
 }
 

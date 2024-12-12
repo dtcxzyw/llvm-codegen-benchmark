@@ -24,25 +24,40 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func000000000000000a:                   # @func000000000000000a
 	vpsllw	$7, %xmm0, %xmm0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm1, %k1
-	vpcmpgtb	%xmm0, %xmm2, %k0 {%k1}
+	vpmovb2m	%xmm0, %k1
+	vpcmpeqd	%xmm0, %xmm0, %xmm0
+	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq
 .LCPI4_0:
+	.zero	16,58
+func0000000000000014:                   # @func0000000000000014
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	vpcmpltub	.LCPI4_0(%rip), %xmm1, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	retq
+.LCPI5_0:
 	.zero	16,157
 func0000000000000008:                   # @func0000000000000008
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vpcmpnleub	.LCPI4_0(%rip), %xmm1, %k0 {%k1}
+	vpcmpnleub	.LCPI5_0(%rip), %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq
-.LCPI5_0:
-	.zero	16,58
+.LCPI6_0:
+	.zero	16,192
 func0000000000000006:                   # @func0000000000000006
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vpcmpltb	.LCPI5_0(%rip), %xmm1, %k0 {%k1}
+	vpcmpltb	.LCPI6_0(%rip), %xmm1, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	retq
+.LCPI7_0:
+	.zero	16,1
+func0000000000000018:                   # @func0000000000000018
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	vpcmpnleub	.LCPI7_0(%rip), %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq

@@ -1,7 +1,8 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/GenVertexNormalsProcess.cpp.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll

@@ -3,7 +3,7 @@
 	.long	0x3f666666                      # float 0.899999976
 .LCPI0_1:
 	.long	0x3dcccccd                      # float 0.100000001
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorl	%eax, %eax
 	cmpl	$4, %edi
 	sete	%al

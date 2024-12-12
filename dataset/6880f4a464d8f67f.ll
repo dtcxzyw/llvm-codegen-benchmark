@@ -1,6 +1,8 @@
 
-; 56 occurrences:
+; 58 occurrences:
 ; cvc5/optimized/core_solver.cpp.ll
+; eastl/optimized/TestFixedTupleVector.cpp.ll
+; eastl/optimized/TestTupleVector.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DynamicParser.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll

@@ -18,15 +18,6 @@ func0000000000000000:                   # @func0000000000000000
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	movl	%edx, %eax
-	shrl	$31, %eax
-	addl	%edx, %eax
-	sarl	%eax
-	cltq
-	imulq	%rsi, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	leal	7(%rdx), %eax
 	testl	%edx, %edx

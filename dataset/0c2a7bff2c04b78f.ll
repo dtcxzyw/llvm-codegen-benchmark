@@ -63,12 +63,14 @@ define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = lshr exact i32 %0, 16
   %.tr = trunc i32 %2 to i8
-  %.narrow = or i8 %.tr, %1
+  %.narrow = or i8 %1, %.tr
   %3 = zext i8 %.narrow to i32
   ret i32 %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; spike/optimized/aes64esm.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i8 %1) #0 {
@@ -85,7 +87,7 @@ define i32 @func000000000000000a(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr i32 %4, 7
   %6 = and i32 %5, 16843009
   ret i32 %6

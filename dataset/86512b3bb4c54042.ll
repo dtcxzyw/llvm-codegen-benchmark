@@ -27,11 +27,12 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/pshinter.c.ll
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; minetest/optimized/voxelalgorithms.cpp.ll
 ; opencv/optimized/grfmt_bmp.cpp.ll
 ; openspiel/optimized/TimerGroup.cpp.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
@@ -90,7 +91,7 @@ entry:
   ret i64 %4
 }
 
-; 50 occurrences:
+; 54 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; clamav/optimized/phishcheck.c.ll
@@ -122,6 +123,7 @@ entry:
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/MicrosoftDemangle.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/SveEmitter.cpp.ll
 ; node/optimized/libnode.spawn_sync.ll
 ; openmpi/optimized/gds_shmem.ll
 ; openmpi/optimized/opal_datatype_add.ll
@@ -135,12 +137,15 @@ entry:
 ; php/optimized/zend_smart_str.ll
 ; postgres/optimized/array_expanded.ll
 ; postgres/optimized/mcv.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

@@ -1,15 +1,6 @@
 
-; 10 occurrences:
-; linux/optimized/build_utility.ll
-; linux/optimized/mempolicy.ll
-; linux/optimized/nf_nat_masquerade.ll
-; linux/optimized/xstate.ll
-; luajit/optimized/lib_base.ll
-; luajit/optimized/lib_base_dyn.ll
-; luajit/optimized/lj_api.ll
-; luajit/optimized/lj_api_dyn.ll
+; 1 occurrences:
 ; minetest/optimized/sound_data.cpp.ll
-; redis/optimized/dict.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -20,12 +11,21 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
+; 14 occurrences:
+; linux/optimized/build_utility.ll
+; linux/optimized/mempolicy.ll
+; linux/optimized/nf_nat_masquerade.ll
+; linux/optimized/xstate.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/CallEvent.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
+; luajit/optimized/lib_base.ll
+; luajit/optimized/lib_base_dyn.ll
+; luajit/optimized/lj_api.ll
+; luajit/optimized/lj_api_dyn.ll
+; redis/optimized/dict.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:

@@ -1,10 +1,9 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; clamav/optimized/rarvm.cpp.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; draco/optimized/symbol_encoding.cc.ll
 ; faiss/optimized/hamming.cpp.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/skl_watermark.ll

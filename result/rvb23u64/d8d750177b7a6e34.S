@@ -24,12 +24,12 @@ func0000000000000015:                   # @func0000000000000015
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	sltiu	a1, a1, 50
 	xori	a1, a1, 1
 	sh3add	a0, a1, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	li	a2, 1024
 	bseti	a2, a2, 32
 	sltu	a1, a2, a1
@@ -55,4 +55,15 @@ func0000000000000008:                   # @func0000000000000008
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 16
 	or	a0, a0, a1
+	ret
+func0000000000000009:                   # @func0000000000000009
+	sltiu	a1, a1, 4
+	xori	a1, a1, 1
+	slli	a1, a1, 62
+	or	a0, a0, a1
+	ret
+func0000000000000011:                   # @func0000000000000011
+	sltiu	a1, a1, 4
+	xori	a1, a1, 1
+	sh3add	a0, a1, a0
 	ret

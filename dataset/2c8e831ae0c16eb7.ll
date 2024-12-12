@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 41 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; clamav/optimized/unarj.c.ll
 ; coremark/optimized/core_main.c.ll
@@ -11,6 +11,7 @@
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/connection.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
@@ -37,6 +38,9 @@
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-smb.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
@@ -58,10 +62,11 @@ entry:
   ret i16 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000005(i16 %0, i16 %1) #0 {
 entry:
@@ -70,11 +75,24 @@ entry:
   ret i16 %3
 }
 
-; 4 occurrences:
+; 2 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000003(i16 %0, i16 %1) #0 {
+entry:
+  %2 = add i16 %0, %1
+  %3 = add nuw nsw i16 %2, 1
+  ret i16 %3
+}
+
+; 6 occurrences:
 ; clamav/optimized/unarj.c.ll
+; lvgl/optimized/lv_math.ll
 ; qdrant-rs/optimized/49gep1elv33vxlrq.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:

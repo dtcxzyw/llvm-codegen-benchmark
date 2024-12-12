@@ -1,5 +1,6 @@
 
-; 15 occurrences:
+; 16 occurrences:
+; boost/optimized/numeric.ll
 ; cpython/optimized/_zoneinfo.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; git/optimized/add-patch.ll

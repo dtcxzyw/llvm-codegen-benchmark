@@ -3,7 +3,7 @@
 ; luau/optimized/isocline.c.ll
 ; postgres/optimized/like_support.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = add nsw i8 %2, -97
   %4 = icmp ult i8 %3, 26

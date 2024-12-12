@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; yosys/optimized/freduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
@@ -16,7 +16,7 @@ entry:
 ; cvc5/optimized/instantiate.cpp.ll
 ; yosys/optimized/freduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 1
@@ -31,11 +31,11 @@ entry:
 ; llvm/optimized/DFAPacketizer.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = and i64 %5, 4294967295
   %7 = icmp eq i64 %6, 0
   ret i1 %7

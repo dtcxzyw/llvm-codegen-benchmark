@@ -14,7 +14,7 @@ entry:
   %4 = or disjoint i32 %3, %1
   %5 = shl nuw nsw i32 %4, 3
   %6 = xor i32 %5, %4
-  %7 = add nuw nsw i32 %6, %0
+  %7 = add nuw nsw i32 %0, %6
   ret i32 %7
 }
 

@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_pci_pcie_doe.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i8 %0, i32 %1, i32 %2) #0 {
+define i8 @func0000000000000061(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i32 %3, %1
@@ -33,22 +33,11 @@ entry:
   ret i8 %5
 }
 
-; 1 occurrences:
-; wireshark/optimized/packet-cemi.c.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000038(i8 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 2
-  %4 = icmp ugt i32 %3, %1
-  %5 = select i1 %4, i8 2, i8 %0
-  ret i8 %5
-}
-
 ; 2 occurrences:
 ; icu/optimized/ucurr.ll
 ; openspiel/optimized/chess.cc.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i32 %1, i32 %2) #0 {
+define i8 @func0000000000000021(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp eq i32 %3, %1
@@ -59,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000003a(i8 %0, i32 %1, i32 %2) #0 {
+define i8 @func000000000000006a(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 14
   %4 = icmp sgt i32 %3, %1
@@ -70,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; g2o/optimized/structure_only.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000003b(i8 %0, i32 %1, i32 %2) #0 {
+define i8 @func000000000000006b(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %.not = icmp slt i32 %3, %1

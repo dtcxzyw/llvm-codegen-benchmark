@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 22 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -20,6 +20,8 @@
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/ui_vnc.c.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
@@ -37,7 +39,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 27
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = freeze i32 %3
   ret i32 %4
 }
@@ -48,12 +50,13 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = freeze i32 %3
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; freetype/optimized/sfnt.c.ll
 ; postgres/optimized/brin.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {

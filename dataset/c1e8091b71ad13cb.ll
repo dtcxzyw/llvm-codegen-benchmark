@@ -1,4 +1,17 @@
 
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-packetbb.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i16 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = zext i16 %0 to i32
+  %5 = sub nsw i32 %4, %3
+  ret i32 %5
+}
+
 ; 9 occurrences:
 ; clamav/optimized/Ppmd7Dec.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -46,18 +59,6 @@ entry:
   %3 = add nuw i32 %1, %2
   %4 = zext i16 %0 to i32
   %5 = sub i32 %4, %3
-  ret i32 %5
-}
-
-; 2 occurrences:
-; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-packetbb.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000009(i16 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = zext i16 %0 to i32
-  %5 = sub nsw i32 %4, %3
   ret i32 %5
 }
 

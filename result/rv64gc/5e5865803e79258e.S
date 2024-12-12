@@ -111,13 +111,23 @@ func000000000000004a:                   # @func000000000000004a
 	fle.s	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
+func0000000000000024:                   # @func0000000000000024
+	fmv.w.x	fa5, zero
+	flt.s	a1, fa0, fa5
+	fmv.s	fa4, fa5
+	bnez	a1, .LBB9_2
+	fmv.s	fa4, fa0
+.LBB9_2:                                # %entry
+	flt.s	a1, fa5, fa4
+	or	a0, a0, a1
+	ret
 func0000000000000045:                   # @func0000000000000045
 	lui	a1, 260096
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa0
-	bnez	a1, .LBB9_2
+	bnez	a1, .LBB10_2
 	fmv.s	fa5, fa0
-.LBB9_2:                                # %entry
+.LBB10_2:                               # %entry
 	lui	a1, 258048
 	fmv.w.x	fa4, a1
 	fle.s	a1, fa5, fa4
@@ -125,16 +135,16 @@ func0000000000000045:                   # @func0000000000000045
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-.LCPI10_0:
+.LCPI11_0:
 	.word	0x3d25aee6                      # float 0.0404499993
 func0000000000000025:                   # @func0000000000000025
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
-	bnez	a1, .LBB10_2
+	bnez	a1, .LBB11_2
 	fmv.s	fa5, fa0
-.LBB10_2:                               # %entry
-	lui	a1, %hi(.LCPI10_0)
-	flw	fa4, %lo(.LCPI10_0)(a1)
+.LBB11_2:                               # %entry
+	lui	a1, %hi(.LCPI11_0)
+	flw	fa4, %lo(.LCPI11_0)(a1)
 	fle.s	a1, fa5, fa4
 	xori	a1, a1, 1
 	or	a0, a0, a1

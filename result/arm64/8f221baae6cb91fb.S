@@ -1,10 +1,10 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	shl	v1.16b, v1.16b, #7
-	cmge	v1.16b, v1.16b, #0
-	and	v1.16b, v2.16b, v1.16b
-	movi	v2.16b, #47
-	orr	v0.16b, v1.16b, v0.16b
-	cmeq	v0.16b, v0.16b, v2.16b
+	tst	w1, #0x1
+	csel	w8, wzr, w2, ne
+	orr	w8, w0, w8
+	and	w8, w8, #0xff
+	cmp	w8, #47
+	cset	w0, eq
 	ret
                                         // -- End function

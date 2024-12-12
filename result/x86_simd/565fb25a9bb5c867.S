@@ -2,7 +2,7 @@
 	.long	640                             # 0x280
 .LCPI0_1:
 	.long	246                             # 0xf6
-func00000000000001e4:                   # @func00000000000001e4
+func00000000000003d4:                   # @func00000000000003d4
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpnltud	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	vpsrld	$6, %ymm0, %ymm0

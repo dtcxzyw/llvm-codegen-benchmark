@@ -1,5 +1,18 @@
 
-; 11 occurrences:
+; 1 occurrences:
+; ruby/optimized/parser.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000104(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
+  %4 = icmp eq ptr %2, null
+  %5 = select i1 %4, ptr %1, ptr %3
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %0, %6
+  ret i64 %7
+}
+
+; 10 occurrences:
 ; git/optimized/connect.ll
 ; git/optimized/credential.ll
 ; glog/optimized/vlog_is_on.cc.ll
@@ -10,11 +23,10 @@
 ; openssl/optimized/libcrypto-shlib-http_lib.ll
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/phar_object.ll
-; ruby/optimized/parser.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000084(i64 %0, ptr %1, ptr %2) #0 {
+define i64 @func0000000000000184(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 -1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp eq ptr %2, null
   %5 = select i1 %4, ptr %1, ptr %3
   %6 = ptrtoint ptr %5 to i64

@@ -3,10 +3,16 @@ func0000000000000001:                   # @func0000000000000001
 	cmpw	$2, %si
 	cmovneq	%rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movzwl	%si, %ecx
 	xorl	%eax, %eax
 	cmpl	$273, %ecx                      # imm = 0x111
+	cmovaeq	%rdi, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movzwl	%si, %eax
+	cmpl	$128, %eax
+	movl	$1, %eax
 	cmovaeq	%rdi, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a

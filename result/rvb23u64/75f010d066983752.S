@@ -65,7 +65,7 @@ func000000000000000e:                   # @func000000000000000e
 	addiw	a0, a0, 32
 	ret
 func0000000000000008:                   # @func0000000000000008
-	addi	a0, a0, 35
+	addi	a0, a0, 36
 	andi	a0, a0, -8
 	addiw	a0, a0, -4
 	ret

@@ -1,8 +1,8 @@
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	sxtw	x8, w1
-	add	x8, x8, w1, sxtw #1
-	add	x0, x0, x8
+	sxtb	x8, w1
+	mov	w9, #56                         // =0x38
+	smaddl	x0, w8, w9, x0
 	ret
                                         // -- End function
 func0000000000000016:                   // @func0000000000000016

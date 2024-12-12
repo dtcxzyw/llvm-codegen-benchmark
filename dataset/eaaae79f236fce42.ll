@@ -46,7 +46,7 @@ entry:
   ret i64 %6
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; cmake/optimized/index.c.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -64,6 +64,7 @@ entry:
 ; qemu/optimized/block_parallels.c.ll
 ; qemu/optimized/block_qcow2-snapshot.c.ll
 ; qemu/optimized/block_vhdx.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -178,18 +179,6 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %1, -1
   %5 = add nsw i64 %4, %3
-  %6 = add i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %1, -1
-  %5 = add nuw i64 %4, %3
   %6 = add i64 %5, %0
   ret i64 %6
 }

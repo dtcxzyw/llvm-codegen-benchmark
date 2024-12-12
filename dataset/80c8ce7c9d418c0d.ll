@@ -1,11 +1,18 @@
 
-; 4 occurrences:
+; 11 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; ncnn/optimized/gemm_x86.cpp.ll
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp eq i32 %3, 1
@@ -13,9 +20,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
-; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; slurm/optimized/power_save.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
@@ -26,12 +32,11 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; abc/optimized/giaSimBase.c.ll
+; 2 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ivyMan.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp ult i32 %3, 7
@@ -41,9 +46,9 @@ entry:
 
 ; 2 occurrences:
 ; abc/optimized/abcGen.c.ll
-; openblas/optimized/dgeqr.c.ll
+; boost/optimized/relative_order.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp slt i32 %3, 12
@@ -76,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %.not = icmp eq i32 %3, 1
@@ -87,21 +92,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/deriv.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp ugt i32 %3, 16384
-  %5 = select i1 %4, i32 1, i32 %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/dgelq.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul i32 %1, %2
-  %4 = icmp slt i32 %3, -3
   %5 = select i1 %4, i32 1, i32 %0
   ret i32 %5
 }

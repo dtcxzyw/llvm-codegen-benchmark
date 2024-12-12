@@ -4,7 +4,7 @@
 ; meilisearch-rs/optimized/7ttx3vegu0k1psi.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 1
   %2 = lshr i64 %0, 1

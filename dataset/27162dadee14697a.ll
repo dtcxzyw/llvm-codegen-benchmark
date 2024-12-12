@@ -24,22 +24,12 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; wireshark/optimized/packet-ieee80211.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000043(i8 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 57
-  %3 = select i1 %2, i32 50, i32 42
-  %4 = zext i8 %0 to i32
-  %5 = add nuw nsw i32 %3, %4
-  ret i32 %5
-}
-
-; 6 occurrences:
+; 8 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; luajit/optimized/lj_ccall.ll
 ; luajit/optimized/lj_ccall_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-macsec.c.ll
 ; wireshark/optimized/packet-smb.c.ll
@@ -47,7 +37,19 @@ entry:
 define i32 @func000000000000000b(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 2, i32 1
+  %3 = select i1 %2, i32 0, i32 255
+  %4 = zext i8 %0 to i32
+  %5 = add nuw nsw i32 %3, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-ieee80211.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000043(i8 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %1, 57
+  %3 = select i1 %2, i32 50, i32 42
   %4 = zext i8 %0 to i32
   %5 = add nuw nsw i32 %3, %4
   ret i32 %5

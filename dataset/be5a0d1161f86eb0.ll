@@ -3,7 +3,7 @@
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 247
   %3 = icmp eq i64 %2, 0
@@ -19,7 +19,7 @@ entry:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/CommentToXML.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp eq i64 %2, 6
@@ -33,7 +33,7 @@ entry:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2048
   %3 = icmp ne i64 %2, 0
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967264
   %3 = icmp eq i64 %2, 0
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/filter.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967264
   %3 = icmp eq i64 %2, 0
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/msync.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967288
   %3 = and i64 %0, 4095
@@ -85,38 +85,12 @@ entry:
 ; linux/optimized/pci-sysfs.ll
 ; linux/optimized/write.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0
   %4 = and i64 %0, 1
   %5 = icmp ne i64 %4, 0
-  %6 = and i1 %5, %3
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/rseq.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 4294967264
-  %3 = icmp ne i64 %2, 0
-  %4 = and i64 %0, 31
-  %5 = icmp eq i64 %4, 0
-  %6 = and i1 %5, %3
-  ret i1 %6
-}
-
-; 1 occurrences:
-; postgres/optimized/varbit.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 7
-  %3 = icmp eq i64 %2, 0
-  %4 = trunc i64 %0 to i32
-  %5 = icmp ult i32 %4, 8200
   %6 = and i1 %5, %3
   ret i1 %6
 }

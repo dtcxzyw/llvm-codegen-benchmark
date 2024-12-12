@@ -35,3 +35,7 @@ func000000000000000b:                   # @func000000000000000b
 	vpcmpgtq	%ymm0, %ymm1, %ymm0
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
 	retq
+func0000000000000019:                   # @func0000000000000019
+	vpcmpnltuq	%ymm1, %ymm0, %k0
+	vpmovm2q	%k0, %ymm0
+	retq

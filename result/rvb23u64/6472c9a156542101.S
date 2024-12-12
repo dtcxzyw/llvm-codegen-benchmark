@@ -1,4 +1,4 @@
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	sext.w	a0, a0
 	add	a1, a1, a2
 	slti	a1, a1, 129
@@ -6,7 +6,7 @@ func00000000000000a6:                   # @func00000000000000a6
 	slti	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func0000000000000344:                   # @func0000000000000344
+func0000000000000e94:                   # @func0000000000000e94
 	sext.w	a0, a0
 	add	a1, a1, a2
 	srli	a1, a1, 24
@@ -14,7 +14,7 @@ func0000000000000344:                   # @func0000000000000344
 	sltiu	a0, a0, 255
 	and	a0, a0, a1
 	ret
-func0000000000000184:                   # @func0000000000000184
+func0000000000000504:                   # @func0000000000000504
 	sext.w	a0, a0
 	add	a1, a1, a2
 	sltiu	a1, a1, 8
@@ -22,7 +22,7 @@ func0000000000000184:                   # @func0000000000000184
 	sltiu	a0, a0, 9
 	and	a0, a0, a1
 	ret
-func000000000000034a:                   # @func000000000000034a
+func0000000000000e8a:                   # @func0000000000000e8a
 	sext.w	a0, a0
 	add	a1, a1, a2
 	srli	a1, a1, 31
@@ -30,7 +30,7 @@ func000000000000034a:                   # @func000000000000034a
 	slti	a0, a0, 0
 	andn	a0, a1, a0
 	ret
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	sext.w	a0, a0
 	add	a1, a1, a2
 	srli	a1, a1, 32
@@ -39,7 +39,7 @@ func000000000000008c:                   # @func000000000000008c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+func0000000000000114:                   # @func0000000000000114
 	sext.w	a0, a0
 	add	a1, a1, a2
 	srli	a1, a1, 16
@@ -47,7 +47,7 @@ func0000000000000084:                   # @func0000000000000084
 	sltiu	a0, a0, 2
 	and	a0, a0, a1
 	ret
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	sext.w	a0, a0
 	add	a1, a1, a2
 	sltiu	a1, a1, 256
@@ -55,7 +55,7 @@ func0000000000000081:                   # @func0000000000000081
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000003cc:                   # @func00000000000003cc
+func0000000000000d8c:                   # @func0000000000000d8c
 	sext.w	a0, a0
 	add	a1, a1, a2
 	lui	a2, 524288
@@ -65,24 +65,14 @@ func00000000000003cc:                   # @func00000000000003cc
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000003c4:                   # @func00000000000003c4
-	sext.w	a0, a0
-	add	a1, a1, a2
-	lui	a2, 524288
-	addiw	a2, a2, -1
-	xor	a1, a1, a2
-	snez	a1, a1
-	sltiu	a0, a0, 10
-	and	a0, a0, a1
-	ret
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	sext.w	a0, a0
 	add	a1, a1, a2
 	slti	a1, a1, 0
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	sext.w	a0, a0
 	neg	a2, a2
 	xor	a1, a1, a2
@@ -91,7 +81,16 @@ func00000000000000c1:                   # @func00000000000000c1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000181:                   # @func0000000000000181
+func0000000000000e84:                   # @func0000000000000e84
+	sext.w	a0, a0
+	add	a1, a1, a2
+	lui	a2, 1
+	addiw	a2, a2, 1
+	sltu	a1, a1, a2
+	sltiu	a0, a0, 256
+	and	a0, a0, a1
+	ret
+func0000000000000501:                   # @func0000000000000501
 	sext.w	a0, a0
 	add	a1, a1, a2
 	srli	a1, a1, 4
@@ -101,7 +100,7 @@ func0000000000000181:                   # @func0000000000000181
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	sext.w	a0, a0
 	add	a1, a1, a2
 	lui	a2, 261120
@@ -109,7 +108,7 @@ func000000000000008a:                   # @func000000000000008a
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	sext.w	a0, a0
 	add	a1, a1, a2
 	sgtz	a1, a1

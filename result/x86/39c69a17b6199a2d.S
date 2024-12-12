@@ -6,7 +6,7 @@ func0000000000000058:                   # @func0000000000000058
 	andq	%rsi, %rax
 	leaq	16(%rdi,%rax), %rax
 	retq
-func000000000000005a:                   # @func000000000000005a
+func000000000000005b:                   # @func000000000000005b
 	shrq	$3, %rdx
 	movabsq	$7905747460161236407, %rax      # imm = 0x6DB6DB6DB6DB6DB7
 	imulq	%rdx, %rax

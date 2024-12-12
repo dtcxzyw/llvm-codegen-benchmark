@@ -1,8 +1,7 @@
 
-; 98 occurrences:
+; 87 occurrences:
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; graphviz/optimized/ellipse.c.ll
 ; gromacs/optimized/colvarcomp_angles.cpp.ll
 ; gromacs/optimized/colvarcomp_apath.cpp.ll
@@ -21,8 +20,6 @@
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsx.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgesc2.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgges.c.ll
@@ -36,17 +33,9 @@
 ; openblas/optimized/dlarfg.c.ll
 ; openblas/optimized/dlarfgp.c.ll
 ; openblas/optimized/dlatrs.c.ll
-; openblas/optimized/dsbevd.c.ll
-; openblas/optimized/dspevd.c.ll
 ; openblas/optimized/dstemr.c.ll
-; openblas/optimized/dstevd.c.ll
-; openblas/optimized/dsyevd.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; openblas/optimized/dtgevc.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/benchmark.cpp.ll
 ; opencv/optimized/cascade_detect_camera.cpp.ll
 ; opencv/optimized/cascade_detect_sequence.cpp.ll

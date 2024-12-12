@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 40 occurrences:
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; cmake/optimized/cmInstallCommand.cxx.ll
 ; cmake/optimized/cmcmd.cxx.ll
@@ -25,7 +25,6 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; postgres/optimized/arrayfuncs.ll
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
 ; qemu/optimized/hw_virtio_vhost.c.ll
 ; rocksdb/optimized/cache_simulator.cc.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
@@ -37,6 +36,10 @@
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

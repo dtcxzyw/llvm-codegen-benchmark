@@ -13,8 +13,7 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
-; opencv/optimized/cornersubpix.cpp.ll
+; 1 occurrences:
 ; openusd/optimized/restoration.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {

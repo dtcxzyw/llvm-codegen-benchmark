@@ -13,7 +13,7 @@ entry:
   ret i64 %4
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; flac/optimized/decode.c.ll
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/vma.ll
@@ -50,7 +50,6 @@ entry:
 ; openusd/optimized/xformCache.cpp.ll
 ; qemu/optimized/block_vhdx.c.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
-; qemu/optimized/target_riscv_zce_helper.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
@@ -60,7 +59,7 @@ entry:
   ret i64 %4
 }
 
-; 245 occurrences:
+; 247 occurrences:
 ; cvc5/optimized/equality_engine.cpp.ll
 ; cvc5/optimized/proof_cnf_stream.cpp.ll
 ; darktable/optimized/amaze.cc.ll
@@ -306,6 +305,8 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:

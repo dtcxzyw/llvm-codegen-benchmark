@@ -47,10 +47,10 @@ entry:
 ; cpython/optimized/_codecs_kr.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0) #0 {
+define i32 @func0000000000000053(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 65504
-  %2 = icmp ult i32 %1, 96
+  %2 = icmp samesign ult i32 %1, 96
   %3 = select i1 %2, i32 2000, i32 1900
   %4 = add nuw nsw i32 %3, %0
   ret i32 %4

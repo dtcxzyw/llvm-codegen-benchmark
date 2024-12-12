@@ -1,5 +1,7 @@
 
-; 130 occurrences:
+; 133 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; casadi/optimized/conic.cpp.ll
@@ -93,6 +95,7 @@
 ; libquic/optimized/curve25519.c.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -137,7 +140,7 @@ entry:
   ret i64 %1
 }
 
-; 27 occurrences:
+; 23 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/mathmodule.ll
@@ -156,15 +159,11 @@ entry:
 ; openssl/optimized/libdefault-lib-argon2.ll
 ; openusd/optimized/bignum.cc.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; quickjs/optimized/libbf.ll
 ; ruby/optimized/bignum.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/f64_sqrt.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:
@@ -172,9 +171,10 @@ entry:
   ret i64 %1
 }
 
-; 138 occurrences:
+; 139 occurrences:
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/2fxrwnovw97v41kk.ll
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
 ; coreutils-rs/optimized/3t7rjcjao5l6ltsf.ll
@@ -343,7 +343,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_prime.ll
 ; openssl/optimized/libcrypto-shlib-bn_prime.ll
 ; openusd/optimized/testUsdIntegerCoding.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
 ; qemu/optimized/util_cutils.c.ll
 ; quantlib/optimized/cevrndcalculator.ll
@@ -353,8 +352,9 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/f32_sqrt.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:

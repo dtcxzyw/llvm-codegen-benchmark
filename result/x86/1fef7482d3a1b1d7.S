@@ -1,4 +1,4 @@
-func0000000000000c11:                   # @func0000000000000c11
+func0000000000001821:                   # @func0000000000001821
 	xorl	%eax, %eax
 	negl	%esi
 	sbbl	%eax, %eax
@@ -9,7 +9,7 @@ func0000000000000c11:                   # @func0000000000000c11
 	cmpl	%eax, %ecx
 	sete	%al
 	retq
-func0000000000000a1a:                   # @func0000000000000a1a
+func000000000000142a:                   # @func000000000000142a
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	setg	%al
@@ -20,7 +20,7 @@ func0000000000000a1a:                   # @func0000000000000a1a
 	addl	%eax, %ecx
 	setg	%al
 	retq
-func0000000000000c1a:                   # @func0000000000000c1a
+func000000000000182a:                   # @func000000000000182a
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	setne	%al

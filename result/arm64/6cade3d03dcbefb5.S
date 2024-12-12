@@ -1,12 +1,11 @@
 func0000000000000019:                   // @func0000000000000019
 // %bb.0:                               // %entry
-	abs	v1.4s, v1.4s
-	abs	v0.4s, v0.4s
-	movi	v2.8h, #205
-	uzp1	v0.8h, v0.8h, v1.8h
-	mul	v1.8h, v0.8h, v2.8h
-	movi	v0.8b, #48
-	shrn	v1.8b, v1.8h, #8
-	usra	v0.8b, v1.8b, #3
+	cmp	w0, #0
+	mov	w8, #205                        // =0xcd
+	cneg	w9, w0, mi
+	mul	w8, w9, w8
+	lsr	w8, w8, #11
+	orr	w8, w8, #0x30
+	and	w0, w8, #0x3f
 	ret
                                         // -- End function

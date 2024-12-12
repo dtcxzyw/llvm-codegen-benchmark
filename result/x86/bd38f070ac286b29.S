@@ -3,17 +3,17 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$-1, %eax
 	cmovnsl	%edi, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addl	%edx, %esi
 	movl	$-1, %eax
 	cmovnsl	%edi, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leal	(%rsi,%rdx), %eax
 	sarl	$31, %eax
 	andl	%edi, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	addl	%edx, %esi
 	xorl	%eax, %eax
 	cmpl	$17, %esi
@@ -35,13 +35,13 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$16, %esi
 	cmovael	%edi, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addl	%edx, %esi
 	cmpl	$1, %esi
 	movl	$-1, %eax
 	cmovel	%edi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	addl	%edx, %esi
 	xorl	%eax, %eax
 	cmpl	$32, %esi

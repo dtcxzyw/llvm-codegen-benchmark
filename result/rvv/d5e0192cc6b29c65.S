@@ -54,6 +54,13 @@ func000000000000002c:                   # @func000000000000002c
 	vmfle.vv	v0, v8, v12
 	vmerge.vvm	v8, v8, v12, v0
 	ret
+func000000000000004a:                   # @func000000000000004a
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmflt.vv	v0, v16, v12
+	vmerge.vvm	v12, v16, v12, v0
+	vmfle.vv	v0, v12, v8
+	vmerge.vvm	v8, v8, v12, v0
+	ret
 func00000000000000ac:                   # @func00000000000000ac
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vv	v0, v12, v16

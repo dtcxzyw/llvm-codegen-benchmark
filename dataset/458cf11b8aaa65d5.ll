@@ -10,16 +10,25 @@ entry:
   ret i16 %3
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/af_packet.ll
-; linux/optimized/util.ll
 ; openjdk/optimized/hb-face-builder.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %1, %2
+  %4 = select i1 %3, i16 %0, i16 0
+  ret i16 %4
+}
+
+; 2 occurrences:
+; hyperscan/optimized/mcclellancompile_util.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000004(i16 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %1, %2
   %4 = select i1 %3, i16 %0, i16 0
   ret i16 %4
 }
@@ -67,12 +76,22 @@ entry:
 }
 
 ; 2 occurrences:
-; hyperscan/optimized/mcclellancompile_util.cpp.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; linux/optimized/util.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000018(i16 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %1, %2
+  %4 = select i1 %3, i16 %0, i16 0
+  ret i16 %4
+}
+
+; 1 occurrences:
 ; icu/optimized/collationfastlatin.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000004(i16 %0, i32 %1, i32 %2) #0 {
+define i16 @func0000000000000014(i16 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %1, %2
+  %3 = icmp samesign ult i32 %1, %2
   %4 = select i1 %3, i16 %0, i16 0
   ret i16 %4
 }

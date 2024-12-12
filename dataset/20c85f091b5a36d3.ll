@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; openssl/optimized/packettest-bin-packettest.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
-  %3 = icmp ult i64 %2, 1023
+  %3 = icmp samesign ult i64 %2, 1023
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/packettest-bin-packettest.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = icmp eq i64 %2, 1022
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/oids.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000030(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000050(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = icmp ugt i64 %2, 39
@@ -80,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/nfs4state.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000058(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = icmp ne i64 %2, 0

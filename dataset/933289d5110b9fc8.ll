@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 50 occurrences:
 ; abc/optimized/giaMinLut.c.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
@@ -15,7 +15,6 @@
 ; linux/optimized/ialloc.ll
 ; linux/optimized/percpu.ll
 ; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
@@ -49,6 +48,8 @@
 ; tev/optimized/ImageViewer.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/select.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:

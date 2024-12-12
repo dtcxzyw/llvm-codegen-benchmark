@@ -1,12 +1,12 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000e:                   # @func000000000000000e
 	movswq	%si, %rax
 	leaq	16(%rdi,%rax), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	movswq	%si, %rax
-	leaq	4(%rdi,%rax,4), %rax
-	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	movswq	%si, %rax
 	leaq	4132(%rdi,%rax), %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	movswq	%si, %rax
+	leaq	-2(%rdi,%rax,2), %rax
 	retq

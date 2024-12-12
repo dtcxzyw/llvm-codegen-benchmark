@@ -36,10 +36,6 @@ func0000000000000090:                   # @func0000000000000090
 	sh1add	a1, a2, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000080:                   # @func0000000000000080
-	sh2add	a1, a2, a1
-	addw	a0, a0, a1
-	ret
 func0000000000000001:                   # @func0000000000000001
 	sh3add	a1, a2, a1
 	addw	a0, a0, a1

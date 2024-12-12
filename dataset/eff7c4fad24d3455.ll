@@ -6,7 +6,7 @@
 define i64 @func000000000000001f(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = select i1 %1, i64 0, i64 4
   %6 = add nuw nsw i64 %4, %5
   ret i64 %6
@@ -20,7 +20,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = select i1 %1, i64 1, i64 2
   %6 = add i64 %4, %5
   ret i64 %6
@@ -33,7 +33,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = select i1 %1, i64 4, i64 0
   %6 = add nuw nsw i64 %4, %5
   ret i64 %6
@@ -51,7 +51,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = select i1 %1, i64 32, i64 16
   %6 = add i64 %4, %5
   ret i64 %6
@@ -65,7 +65,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = select i1 %1, i64 8, i64 0
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -77,7 +77,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = select i1 %1, i64 16, i64 8
   %6 = add nsw i64 %4, %5
   ret i64 %6

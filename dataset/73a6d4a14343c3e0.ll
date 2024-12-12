@@ -1,5 +1,5 @@
 
-; 70 occurrences:
+; 72 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/IQMImporter.cpp.ll
@@ -70,6 +70,8 @@
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/packet-zbee-zcl-se.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i8 %0) #0 {
 entry:

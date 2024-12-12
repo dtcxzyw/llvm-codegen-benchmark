@@ -16,6 +16,12 @@ func000000000000000c:                   # @func000000000000000c
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
+func0000000000000008:                   # @func0000000000000008
+	cmpl	$-2, %edx
+	setb	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq
 func0000000000000010:                   # @func0000000000000010
 	cmpl	$134217729, %edx                # imm = 0x8000001
 	setae	%al
@@ -28,9 +34,15 @@ func0000000000000014:                   # @func0000000000000014
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpl	$-10, %edx
+func0000000000000028:                   # @func0000000000000028
+	cmpl	$2, %edx
 	setb	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq
+func0000000000000030:                   # @func0000000000000030
+	cmpl	$4517, %edx                     # imm = 0x11A5
+	setae	%al
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq

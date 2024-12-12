@@ -11,7 +11,7 @@ entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %3, i32 0, i32 %1
   %5 = sext i32 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

@@ -9,13 +9,13 @@
 define i64 @func000000000000000d(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = mul nsw i64 %4, %5
   ret i64 %6
 }
 
-; 47 occurrences:
+; 45 occurrences:
 ; abc/optimized/giaSwitch.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; darktable/optimized/introspection_blurs.c.ll
@@ -46,11 +46,9 @@ entry:
 ; openblas/optimized/dsbtrd.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
-; openblas/optimized/dtfttr.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsy2.c.ll
 ; openblas/optimized/dtrevc3.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/linemod.cpp.ll
 ; openusd/optimized/decodetxb.c.ll
@@ -67,7 +65,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = mul nsw i64 %4, %5
   ret i64 %6
@@ -85,7 +83,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = mul i64 %4, %5
   ret i64 %6
@@ -104,7 +102,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = mul i64 %4, %5
   ret i64 %6

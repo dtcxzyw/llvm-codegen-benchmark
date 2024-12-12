@@ -44,17 +44,6 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; mitsuba3/optimized/x86func.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ult i8 %2, 81
-  %4 = select i1 %3, i32 201326592, i32 %1
-  %5 = add nuw nsw i32 %4, %0
-  ret i32 %5
-}
-
 ; 9 occurrences:
 ; linux/optimized/rx.ll
 ; luajit/optimized/lj_dispatch.ll
@@ -70,7 +59,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -100,7 +89,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 126
   %4 = select i1 %3, i32 2, i32 %1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -175,7 +164,7 @@ define i32 @func0000000000000023(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 13
   %4 = select i1 %3, i32 32768, i32 %1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

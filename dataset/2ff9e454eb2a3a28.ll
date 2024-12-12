@@ -1,7 +1,7 @@
 
-%struct.acpi_gpe_event_info.3354931 = type { %union.acpi_gpe_dispatch_info.3354932, ptr, i8, i8, i8, i8 }
-%union.acpi_gpe_dispatch_info.3354932 = type { ptr }
-%"struct.ozz::animation::internal::QuaternionKey.3471555" = type { [3 x i16] }
+%struct.acpi_gpe_event_info.3542402 = type { %union.acpi_gpe_dispatch_info.3542403, ptr, i8, i8, i8, i8 }
+%union.acpi_gpe_dispatch_info.3542403 = type { ptr }
+%"struct.ozz::animation::internal::Float3Key.3655591" = type { [3 x i16] }
 
 ; 9 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -14,12 +14,12 @@
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -29,12 +29,25 @@ entry:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; icu/optimized/collationdatareader.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = sub nsw i32 %1, %3
+  %5 = zext nneg i32 %4 to i64
+  %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -61,31 +74,19 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = sub nuw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.acpi_gpe_event_info.3354931, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; linux/optimized/rsmisc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = sub i32 %1, %3
-  %5 = zext i32 %4 to i64
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %6 = getelementptr %struct.acpi_gpe_event_info.3542402, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"struct.ozz::animation::internal::QuaternionKey.3471555", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.ozz::animation::internal::Float3Key.3655591", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -95,24 +96,12 @@ entry:
 ; icu/optimized/rbt_data.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i16 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; icu/optimized/collationdatareader.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000c(ptr %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr i16, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

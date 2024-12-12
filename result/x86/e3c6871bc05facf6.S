@@ -11,20 +11,18 @@ func000000000000000c:                   # @func000000000000000c
 	movl	$2, %eax
 	subl	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	andl	$7, %esi
-	notb	%dil
-	movzbl	%dil, %eax
-	andl	$1, %eax
-	cmpl	$3, %esi
-	leal	-25(,%rax,8), %ecx
-	movl	$-17, %eax
-	cmovbl	%ecx, %eax
-	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	testl	$2130706432, %esi               # imm = 0x7F000000
 	setne	%al
 	andb	%dil, %al
 	movzbl	%al, %eax
 	orl	$2, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	andl	$63, %esi
+	cmpl	$5, %esi
+	setb	%al
+	andb	%dil, %al
+	movzbl	%al, %eax
+	xorl	$1649, %eax                     # imm = 0x671
 	retq

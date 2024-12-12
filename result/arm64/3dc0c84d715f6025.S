@@ -1,24 +1,8 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	v16.2d, #1.00000000
-	mov	x8, #20684562497536             // =0x12d000000000
-	movk	x8, #16739, lsl #48
-	dup	v17.2d, x8
-	fsub	v0.2d, v16.2d, v0.2d
-	fsub	v1.2d, v16.2d, v1.2d
-	fsub	v2.2d, v16.2d, v2.2d
-	fsub	v3.2d, v16.2d, v3.2d
-	fsub	v4.2d, v16.2d, v4.2d
-	fsub	v5.2d, v16.2d, v5.2d
-	fsub	v6.2d, v16.2d, v6.2d
-	fsub	v7.2d, v16.2d, v7.2d
-	fdiv	v0.2d, v17.2d, v0.2d
-	fdiv	v1.2d, v17.2d, v1.2d
-	fdiv	v2.2d, v17.2d, v2.2d
-	fdiv	v3.2d, v17.2d, v3.2d
-	fdiv	v4.2d, v17.2d, v4.2d
-	fdiv	v5.2d, v17.2d, v5.2d
-	fdiv	v6.2d, v17.2d, v6.2d
-	fdiv	v7.2d, v17.2d, v7.2d
+	mov	x8, #4636737291354636288        // =0x4059000000000000
+	fmov	d1, x8
+	fsub	d0, d1, d0
+	fdiv	d0, d1, d0
 	ret
                                         // -- End function

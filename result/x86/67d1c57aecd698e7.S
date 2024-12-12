@@ -52,6 +52,12 @@ func000000000000003a:                   # @func000000000000003a
 	leaq	(%rdi,%rdi,4), %rcx
 	leaq	(%rax,%rcx,2), %rax
 	retq
+func000000000000001e:                   # @func000000000000001e
+	addb	$-48, %sil
+	movzbl	%sil, %eax
+	leaq	(%rdi,%rdi,4), %rcx
+	leaq	(%rax,%rcx,2), %rax
+	retq
 func000000000000003f:                   # @func000000000000003f
 	addb	$32, %sil
 	movzbl	%sil, %ecx
@@ -59,12 +65,6 @@ func000000000000003f:                   # @func000000000000003f
 	addq	%rcx, %rax
 	retq
 func0000000000000038:                   # @func0000000000000038
-	addb	$-48, %sil
-	movzbl	%sil, %eax
-	leaq	(%rdi,%rdi,4), %rcx
-	leaq	(%rax,%rcx,2), %rax
-	retq
-func000000000000001e:                   # @func000000000000001e
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leaq	(%rdi,%rdi,4), %rcx

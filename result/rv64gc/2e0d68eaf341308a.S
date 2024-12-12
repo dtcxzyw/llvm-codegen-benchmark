@@ -1,4 +1,4 @@
-func000000000000006b:                   # @func000000000000006b
+func00000000000000ab:                   # @func00000000000000ab
 	add	a1, a1, a2
 	sraiw	a2, a1, 31
 	and	a1, a1, a2

@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 27 occurrences:
 ; icu/optimized/collationruleparser.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/rbbitblb.ll
@@ -11,11 +11,16 @@
 ; linux/optimized/xt_policy.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
+; llvm/optimized/LinkModules.cpp.ll
+; llvm/optimized/MergeFunctions.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_obj_style.ll
 ; openjdk/optimized/oopMap.ll
 ; openspiel/optimized/chess_board.cc.ll
+; postgres/optimized/trigger.ll
 ; qemu/optimized/target_riscv_cpu.c.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/time.ll

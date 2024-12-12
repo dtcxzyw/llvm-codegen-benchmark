@@ -1,3 +1,10 @@
+func000000000000000d:                   # @func000000000000000d
+	movl	%edi, %eax
+	andl	$8703, %edx                     # imm = 0x21FF
+	orl	%esi, %edx
+	shll	$14, %eax
+	orl	%edx, %eax
+	retq
 func0000000000000003:                   # @func0000000000000003
 	movl	%esi, %eax
 	andl	$4095, %edx                     # imm = 0xFFF

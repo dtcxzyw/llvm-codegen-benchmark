@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/src.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; re2/optimized/dfa.cc.ll
@@ -83,20 +84,8 @@ entry:
   ret i8 %3
 }
 
-; 3 occurrences:
-; icu/optimized/uconv.ll
-; minetest/optimized/servermap.cpp.ll
-; wireshark/optimized/packet-erf.c.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000b(i32 %0) #0 {
-entry:
-  %1 = trunc nuw i32 %0 to i8
-  %2 = and i8 %1, 7
-  %3 = add nuw nsw i8 %2, 4
-  ret i8 %3
-}
-
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/src.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
@@ -118,6 +107,18 @@ entry:
   %1 = trunc nuw nsw i32 %0 to i8
   %2 = and i8 %1, 7
   %3 = add nuw nsw i8 %2, 97
+  ret i8 %3
+}
+
+; 2 occurrences:
+; icu/optimized/uconv.ll
+; wireshark/optimized/packet-erf.c.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000b(i32 %0) #0 {
+entry:
+  %1 = trunc nuw i32 %0 to i8
+  %2 = and i8 %1, 3
+  %3 = add nuw nsw i8 %2, 1
   ret i8 %3
 }
 

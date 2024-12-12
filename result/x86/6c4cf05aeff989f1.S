@@ -1,4 +1,4 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	addl	$-33, %edx
 	decl	%esi
 	testb	$1, %dil
@@ -6,7 +6,7 @@ func0000000000000051:                   # @func0000000000000051
 	testl	%esi, %esi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	decl	%edx
 	addl	$15, %esi
 	testb	$1, %dil
@@ -14,7 +14,7 @@ func0000000000000041:                   # @func0000000000000041
 	testl	%esi, %esi
 	sete	%al
 	retq
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	incl	%edx
 	addl	$-29, %esi
 	testb	$1, %dil

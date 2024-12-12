@@ -12,9 +12,9 @@ func0000000000000002:                   # @func0000000000000002
 	li	a0, 192
 	vand.vx	v8, v8, a0
 	vmseq.vx	v10, v8, a0
-	vmor.mm	v0, v10, v0
+	vmor.mm	v0, v0, v10
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v8, v8, v10
 	lui	a0, 524288
@@ -22,5 +22,5 @@ func0000000000000022:                   # @func0000000000000022
 	vand.vx	v8, v8, a0
 	li	a0, 108
 	vmseq.vx	v10, v8, a0
-	vmor.mm	v0, v10, v0
+	vmor.mm	v0, v0, v10
 	ret

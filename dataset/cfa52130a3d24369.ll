@@ -13,6 +13,18 @@ entry:
   ret i16 %3
 }
 
+; 2 occurrences:
+; linux/optimized/ethtool.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000f(i32 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i32 %0 to i16
+  %2 = add nuw nsw i16 %1, 42
+  %3 = and i16 %2, 63
+  ret i16 %3
+}
+
 ; 1 occurrences:
 ; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind

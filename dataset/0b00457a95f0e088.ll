@@ -1,5 +1,5 @@
 
-; 79 occurrences:
+; 76 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; assimp/optimized/ObjFileImporter.cpp.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
@@ -14,7 +14,6 @@
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
-; hermes/optimized/JSProxy.cpp.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; libuv/optimized/idna.c.ll
@@ -37,7 +36,6 @@
 ; llvm/optimized/MCContext.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
@@ -53,7 +51,6 @@
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; minetest/optimized/test.cpp.ll
 ; node/optimized/idna.ll
-; nuttx/optimized/lib_libvsprintf.c.ll
 ; ocio/optimized/OpOptimizers.cpp.ll
 ; opencv/optimized/fr_lfw_benchmark.cpp.ll
 ; openjdk/optimized/g1Policy.ll
@@ -84,13 +81,15 @@ define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 41 occurrences:
+; 43 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; chibicc/optimized/codegen.ll
 ; cpython/optimized/ast_unparse.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -135,16 +134,17 @@ define i32 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/giaTim.c.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; arrow/optimized/UriCommon.c.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; chibicc/optimized/codegen.ll
 ; flatbuffers/optimized/idl_gen_csharp.cpp.ll
@@ -181,11 +181,12 @@ define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; nuttx/optimized/lib_libvsprintf.c.ll
 ; openmpi/optimized/btl_sm_component.ll
 ; openmpi/optimized/btl_sm_send.ll
 ; openmpi/optimized/btl_sm_sendi.ll
@@ -195,7 +196,7 @@ define i32 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = zext i1 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 

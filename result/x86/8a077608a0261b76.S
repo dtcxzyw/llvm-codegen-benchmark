@@ -5,6 +5,13 @@ func0000000000000022:                   # @func0000000000000022
 	addq	%rdi, %rdx
 	adcq	%rsi, %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	movq	%rcx, %rax
+	orq	%r9, %rax
+	orq	%r8, %rdx
+	addq	%rdi, %rdx
+	adcq	%rsi, %rax
+	retq
 func0000000000000020:                   # @func0000000000000020
 	movq	%rcx, %rax
 	orq	%r9, %rax

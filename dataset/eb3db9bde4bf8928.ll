@@ -60,24 +60,12 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/lpkAbcUtil.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 6
-  %3 = shl nuw nsw i32 1, %0
-  %4 = select i1 %2, i32 1, i32 %3
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 7
+  %2 = icmp samesign ult i32 %1, 7
   %3 = shl i32 2, %0
   %4 = select i1 %2, i32 2, i32 %3
   ret i32 %4
@@ -86,9 +74,9 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000012(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000052(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 7
+  %2 = icmp samesign ult i32 %1, 7
   %3 = shl nuw i32 1, %0
   %4 = select i1 %2, i32 1, i32 %3
   ret i32 %4
@@ -97,9 +85,9 @@ entry:
 ; 1 occurrences:
 ; libpng/optimized/pngwutil.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 3
+  %2 = icmp samesign ult i32 %1, 3
   %3 = shl nsw i32 -1, %0
   %4 = select i1 %2, i32 -8, i32 %3
   ret i32 %4

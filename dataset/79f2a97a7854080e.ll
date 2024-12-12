@@ -44,7 +44,7 @@ define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = sext i1 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw { { { { { i64, ptr, {} }, i64 } } }, { i64, [2 x i64] }, { i64, [7 x i64] }, { { ptr, i64 }, i8, [7 x i8] }, { i32, i32 }, i8, [7 x i8] }, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -56,6 +56,29 @@ entry:
   %3 = icmp slt i32 %1, %2
   %4 = sext i1 %3 to i64
   %5 = getelementptr nusw { { { i8, [7 x i8] }, { i64, { [3 x i64] } } }, { i32, [4 x i32] }, { i32, [4 x i32] } }, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000010(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %1, %2
+  %4 = sext i1 %3 to i64
+  %5 = getelementptr i32, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp slt i32 %1, %2
+  %4 = sext i1 %3 to i64
+  %5 = getelementptr { { { { { i64, ptr, {} }, i64 } }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [8 x i64] }, i64, i32, i8, i8, i8, [1 x i8] }, { { i32, i32 }, { i32, i32 } } }, ptr %0, i64 %4
   ret ptr %5
 }
 

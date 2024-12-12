@@ -92,13 +92,6 @@ func00000000000001a6:                   # @func00000000000001a6
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
-func0000000000000110:                   # @func0000000000000110
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpeqps	%xmm2, %xmm0, %k0
-	vcmpeqps	%xmm1, %xmm0, %k1
-	korw	%k0, %k1, %k0
-	kmovd	%k0, %eax
-	retq
 func00000000000000a6:                   # @func00000000000000a6
 	vcmpnleps	%xmm1, %xmm0, %k0
 	vxorps	%xmm1, %xmm1, %xmm1

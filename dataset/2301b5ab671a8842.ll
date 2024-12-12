@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 9 occurrences:
 ; cpython/optimized/longobject.ll
 ; jq/optimized/utf16_be.ll
 ; linux/optimized/init_64.ll
@@ -8,14 +8,12 @@
 ; openssl/optimized/libcommon-lib-tls_pad.ll
 ; openssl/optimized/libssl-shlib-tls_pad.ll
 ; quickjs/optimized/quickjs.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
 ; spike/optimized/s_mulAddF128.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, -9223372036854775807
-  %2 = icmp eq i64 %1, 1
+  %1 = and i64 %0, 255
+  %2 = icmp eq i64 %1, 255
   %3 = sext i1 %2 to i64
   ret i64 %3
 }

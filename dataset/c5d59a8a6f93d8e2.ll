@@ -1,8 +1,11 @@
 
-; 7 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; wolfssl/optimized/sp_int.c.ll
@@ -11,13 +14,15 @@
 define i128 @func0000000000000004(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = add nuw i128 %2, %0
+  %3 = add nuw i128 %0, %2
   %4 = lshr i128 %3, 64
   ret i128 %4
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
@@ -31,12 +36,13 @@ entry:
 define i128 @func000000000000000e(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
-  %3 = add nuw nsw i128 %2, %0
+  %3 = add nuw nsw i128 %0, %2
   %4 = lshr i128 %3, 64
   ret i128 %4
 }
 
-; 19 occurrences:
+; 21 occurrences:
+; boost/optimized/approximately_equals.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; openssl/optimized/libcrypto-lib-f_generic.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
@@ -56,11 +62,12 @@ entry:
 ; spike/optimized/vmadc_vx.ll
 ; spike/optimized/vmadc_vxm.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000006(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = add nuw nsw i128 %2, %0
+  %3 = add nuw nsw i128 %0, %2
   %4 = lshr i128 %3, 56
   ret i128 %4
 }
@@ -259,7 +266,7 @@ entry:
 define i128 @func0000000000000000(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = add i128 %2, %0
+  %3 = add i128 %0, %2
   %4 = lshr i128 %3, 64
   ret i128 %4
 }
@@ -270,7 +277,7 @@ entry:
 define i128 @func0000000000000008(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
-  %3 = add i128 %2, %0
+  %3 = add i128 %0, %2
   %4 = lshr i128 %3, 64
   ret i128 %4
 }
@@ -281,7 +288,7 @@ entry:
 define i128 @func0000000000000002(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = add nsw i128 %2, %0
+  %3 = add nsw i128 %0, %2
   %4 = lshr i128 %3, 64
   ret i128 %4
 }

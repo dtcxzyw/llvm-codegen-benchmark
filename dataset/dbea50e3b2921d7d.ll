@@ -27,7 +27,7 @@ entry:
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 24
   ret i64 %5
@@ -40,20 +40,21 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2146435073
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw i64 %4, 32
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; c3c/optimized/asm_target.c.ll
+; glslang/optimized/GlslangToSpv.cpp.ll
 ; llvm/optimized/MCSymbolELF.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 32
   ret i64 %5
@@ -77,7 +78,7 @@ entry:
 define i64 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 %4, 58
   ret i64 %5

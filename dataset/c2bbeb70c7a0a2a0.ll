@@ -27,7 +27,8 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/alloc_lib.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; luajit/optimized/lj_alloc.ll
@@ -81,7 +82,7 @@ entry:
   ret i32 %3
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; linux/optimized/dquot.ll
 ; linux/optimized/radix-tree.ll
@@ -92,7 +93,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll

@@ -6,12 +6,13 @@ define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 7
   %3 = lshr i32 %2, 3
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = add nuw nsw i32 %4, 6
   ret i32 %5
 }
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -139,7 +140,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 127
   %3 = lshr i32 %2, 6
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add i32 %4, 512
   ret i32 %5
 }
@@ -177,7 +178,7 @@ define i32 @func000000000000006f(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr i32 %2, 1
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = add nuw nsw i32 %4, 1
   ret i32 %5
 }

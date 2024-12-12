@@ -1,11 +1,10 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/core.ll
 ; linux/optimized/dm-table.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/mii.ll
 ; linux/optimized/syncookies.ll
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/xhci-hub.ll

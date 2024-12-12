@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; minetest/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i16 %0, i64 %1) #0 {
+define i1 @func000000000000010c(i16 %0, i64 %1) #0 {
 entry:
   %2 = zext i16 %0 to i64
-  %3 = icmp ult i64 %2, %1
+  %3 = icmp ugt i64 %1, %2
   %4 = icmp ne i16 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -14,10 +14,10 @@ entry:
 ; 1 occurrences:
 ; sentencepiece/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000504(i16 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i16 %0 to i64
-  %3 = icmp ult i64 %2, %1
+  %3 = icmp ugt i64 %1, %2
   %4 = icmp ult i16 %0, 257
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -27,10 +27,10 @@ entry:
 ; arrow/optimized/int_util.cc.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i16 %0, i64 %1) #0 {
+define i1 @func000000000000050a(i16 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i16 %0 to i64
-  %3 = icmp ult i64 %2, %1
+  %3 = icmp ugt i64 %1, %2
   %4 = icmp sgt i16 %0, -1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -89,10 +89,10 @@ entry:
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i64 %1) #0 {
 entry:
   %2 = zext i16 %0 to i64
-  %3 = icmp eq i64 %2, %1
+  %3 = icmp eq i64 %1, %2
   %4 = icmp ne i16 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

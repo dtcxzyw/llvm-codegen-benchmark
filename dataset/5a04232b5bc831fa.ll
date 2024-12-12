@@ -1,5 +1,5 @@
 
-; 165 occurrences:
+; 166 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; assimp/optimized/XFileImporter.cpp.ll
 ; box2d/optimized/b2_rope.cpp.ll
@@ -60,12 +60,12 @@
 ; libwebp/optimized/sharpyuv_gamma.c.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_camera.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
@@ -161,6 +161,7 @@
 ; recastnavigation/optimized/imgui.cpp.ll
 ; xgboost/optimized/multiclass_obj.cc.ll
 ; xgboost/optimized/regression_obj.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; zxing/optimized/ODDataBarCommon.cpp.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll

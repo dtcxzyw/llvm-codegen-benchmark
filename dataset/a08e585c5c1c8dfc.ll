@@ -1,11 +1,10 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; cvc5/optimized/term_tuple_enumerator.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; postgres/optimized/ps_status.ll
 ; z3/optimized/arith_eq_solver.cpp.ll
 ; z3/optimized/automaton.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/emonics.cpp.ll
 ; z3/optimized/factor_rewriter.cpp.ll

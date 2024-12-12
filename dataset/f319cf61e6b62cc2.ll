@@ -1,7 +1,8 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; cvc5/optimized/theory_bags.cpp.ll
 ; cvc5/optimized/theory_strings.cpp.ll
+; flatbuffers/optimized/flatc.cpp.ll
 ; gromacs/optimized/checkpoint.cpp.ll
 ; gromacs/optimized/decidegpuusage.cpp.ll
 ; gromacs/optimized/modularsimulator.cpp.ll
@@ -25,7 +26,6 @@
 ; openjdk/optimized/c1_GraphBuilder.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; openjdk/optimized/macroAssembler_x86.ll
-; proj/optimized/projsync.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
@@ -39,6 +39,7 @@
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

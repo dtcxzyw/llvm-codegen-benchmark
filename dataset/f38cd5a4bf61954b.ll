@@ -1,20 +1,5 @@
 
-; 5 occurrences:
-; miniaudio/optimized/unity.c.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
-; php/optimized/crypt_sha256.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, 8
-  %5 = getelementptr nusw [75 x i8], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 13 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/damerau_levenshtein_distance.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -28,6 +13,7 @@ entry:
 ; php/optimized/xpath.ll
 ; php/optimized/zend_compile.ll
 ; ropey-rs/optimized/21bl6c983bdkzf7g.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -48,10 +34,9 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; php/optimized/mod_files.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -85,18 +70,30 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
-; delta-rs/optimized/47qjbhol909h8zu7.ll
+; 4 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
-; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
-; verilator/optimized/V3Number.cpp.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = add nsw i64 %3, -1
   %5 = getelementptr nusw [0 x i16], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 3 occurrences:
+; delta-rs/optimized/47qjbhol909h8zu7.ll
+; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
+; verilator/optimized/V3Number.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000037(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = add nsw i64 %3, -1
+  %5 = getelementptr nusw nuw [129 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -109,6 +106,30 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = add i64 %3, 1
   %5 = getelementptr nusw [1 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 3 occurrences:
+; miniaudio/optimized/unity.c.ll
+; php/optimized/crypt_sha256.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = add nuw nsw i64 %3, 4
+  %5 = getelementptr nusw nuw [128 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; php/optimized/mod_files.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = add nsw i64 %3, 1
+  %5 = getelementptr nusw nuw [4096 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

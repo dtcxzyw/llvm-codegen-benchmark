@@ -83,48 +83,55 @@
 define i1 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 63
-  %3 = icmp eq i16 %2, %0
+  %3 = icmp eq i16 %0, %2
   ret i1 %3
 }
 
-; 10 occurrences:
+; 6 occurrences:
 ; cmake/optimized/json_value.cpp.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
-; linux/optimized/nlattr.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
-; ozz-animation/optimized/animation_builder.cc.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
-; qemu/optimized/hw_sd_sdhci.c.ll
 ; ruby/optimized/time.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 63
+  %3 = icmp samesign ult i16 %0, %2
+  ret i1 %3
+}
+
+; 4 occurrences:
+; linux/optimized/nlattr.ll
+; ozz-animation/optimized/animation_builder.cc.ll
+; qemu/optimized/hw_sd_sdhci.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 63
-  %3 = icmp ugt i16 %2, %0
+  %2 = and i16 %1, 4095
+  %3 = icmp ult i16 %0, %2
   ret i1 %3
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
-; openmpi/optimized/rmaps_base_map_job.ll
 ; postgres/optimized/execExprInterp.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/tsrank.ll
 ; stockfish/optimized/position.ll
 ; stockfish/optimized/uci.ll
-; wireshark/optimized/packet-per.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 63
-  %3 = icmp ult i16 %2, %0
+  %3 = icmp samesign ugt i16 %0, %2
   ret i1 %3
 }
 
@@ -135,17 +142,28 @@ entry:
 define i1 @func000000000000000c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 63
-  %3 = icmp ne i16 %2, %0
+  %3 = icmp ne i16 %0, %2
+  ret i1 %3
+}
+
+; 2 occurrences:
+; openmpi/optimized/rmaps_base_map_job.ll
+; wireshark/optimized/packet-per.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 255
+  %3 = icmp ugt i16 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000019(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
-  %3 = icmp ule i16 %2, %0
+  %3 = icmp samesign uge i16 %0, %2
   ret i1 %3
 }
 

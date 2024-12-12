@@ -27,12 +27,12 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.long	32                              # 0x20
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [32,32,32,32,32,32,32,32]
 	vptestmb	%xmm0, %xmm0, %k1
 	vpsubd	%ymm1, %ymm2, %ymm0 {%k1} {z}
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmb	%xmm0, %xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0

@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 29 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/multi.c.ll
 ; curl/optimized/libcurl_la-multi.ll
@@ -10,11 +10,13 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/slab_common.ll
-; linux/optimized/uprobes.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luau/optimized/main.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
+; nlohmann_json/optimized/unit-bson.cpp.ll
+; nlohmann_json/optimized/unit-cbor.cpp.ll
+; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
@@ -26,6 +28,7 @@
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

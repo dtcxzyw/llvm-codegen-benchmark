@@ -7,7 +7,7 @@
 ; openvdb/optimized/ChangeBackground.cc.ll
 ; openvdb/optimized/Prune.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sdiv i32 %3, %0
@@ -34,7 +34,7 @@ entry:
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; postgres/optimized/refint.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sdiv i32 %3, %0
@@ -61,7 +61,7 @@ entry:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; oiio/optimized/imageinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sdiv i32 %3, %0
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sdiv i32 %3, %0

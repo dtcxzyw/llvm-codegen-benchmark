@@ -29,7 +29,7 @@ entry:
   %3 = and i32 %2, 3
   %4 = icmp eq i32 %3, 3
   %5 = select i1 %4, i32 0, i32 -4194304
-  %6 = add i32 %5, %1
+  %6 = add i32 %1, %5
   %7 = add i32 %6, %0
   ret i32 %7
 }
@@ -42,7 +42,7 @@ entry:
   %3 = and i32 %2, 3
   %4 = icmp eq i32 %3, 3
   %5 = select i1 %4, i32 0, i32 -4194304
-  %6 = add nsw i32 %5, %1
+  %6 = add nsw i32 %1, %5
   %7 = add i32 %6, %0
   ret i32 %7
 }
@@ -56,7 +56,7 @@ entry:
   %3 = and i32 %2, 3
   %4 = icmp eq i32 %3, 3
   %5 = select i1 %4, i32 0, i32 4194304
-  %6 = add nsw i32 %5, %1
+  %6 = add nsw i32 %1, %5
   %7 = add nsw i32 %6, %0
   ret i32 %7
 }
@@ -69,7 +69,7 @@ entry:
   %3 = and i32 %2, 3
   %4 = icmp eq i32 %3, 3
   %5 = select i1 %4, i32 0, i32 4194304
-  %6 = add nuw nsw i32 %5, %1
+  %6 = add nuw nsw i32 %1, %5
   %7 = add nsw i32 %6, %0
   ret i32 %7
 }

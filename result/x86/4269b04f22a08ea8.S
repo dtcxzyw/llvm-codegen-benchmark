@@ -41,6 +41,11 @@ func000000000000001e:                   # @func000000000000001e
 	movabsq	$281479271743489, %rax          # imm = 0x1000100010001
 	imulq	%rsi, %rax
 	retq
+func0000000000000016:                   # @func0000000000000016
+	shlq	$11, %rsi
+	leaq	(%rsi,%rdi,8), %rax
+	leaq	(%rax,%rax,2), %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	shlq	$6, %rsi
 	orq	%rdi, %rsi

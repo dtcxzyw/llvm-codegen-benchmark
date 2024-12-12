@@ -1,10 +1,10 @@
-func000000000000005a:                   # @func000000000000005a
+func000000000000005f:                   # @func000000000000005f
 	shrq	%rsi
 	addq	$-2, %rsi
 	andq	$-4, %rsi
 	leaq	4(%rdi,%rsi), %rax
 	retq
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	shrq	$5, %rsi
 	incl	%esi
 	leaq	(%rsi,%rsi,8), %rax

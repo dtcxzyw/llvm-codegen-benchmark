@@ -7,7 +7,7 @@
 ; soc-simulator/optimized/verilated.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000014(ptr %0, ptr %1, i8 %2) #0 {
+define ptr @func0000000000000024(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
   %4 = add nsw i32 %3, -58

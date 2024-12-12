@@ -5,7 +5,7 @@
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
   %4 = icmp eq i64 %3, %0
@@ -192,7 +192,7 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/s_mulAddF32.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
   %4 = sub i64 %3, %0

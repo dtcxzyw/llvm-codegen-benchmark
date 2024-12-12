@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; linux/optimized/ialloc.ll
 ; minetest/optimized/tileanimation.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -10,6 +10,7 @@
 ; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
+; opencv/optimized/bgfg_gsoc.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/gather_elements_layer.cpp.ll
@@ -73,7 +74,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -83,7 +84,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 

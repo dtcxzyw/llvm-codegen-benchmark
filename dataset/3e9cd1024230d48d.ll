@@ -1,5 +1,7 @@
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; g2o/optimized/edge_se3_expmap.cpp.ll
 ; g2o/optimized/types_seven_dof_expmap.cpp.ll
 ; g2o/optimized/vertex_se3_expmap.cpp.ll

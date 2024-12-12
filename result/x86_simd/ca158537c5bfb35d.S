@@ -1,9 +1,9 @@
 .LCPI0_0:
-	.quad	1                               # 0x1
+	.quad	512                             # 0x200
 func0000000000000000:                   # @func0000000000000000
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
-	vpbroadcastq	.LCPI0_0(%rip), %ymm2 {%k1} # ymm2 {%k1} = [1,1,1,1]
+	vpbroadcastq	.LCPI0_0(%rip), %ymm2 {%k1} # ymm2 {%k1} = [512,512,512,512]
 	vextracti128	$1, %ymm2, %xmm1
 	vpextrq	$1, %xmm1, %rcx
 	vextracti128	$1, %ymm0, %xmm3

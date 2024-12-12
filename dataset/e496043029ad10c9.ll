@@ -7,7 +7,7 @@
 ; postgres/optimized/md.ll
 ; wireshark/optimized/packet-csn1.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %0, %2
   %4 = icmp sgt i32 %3, 0
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %0, %2
   %4 = icmp slt i32 %3, 1
@@ -33,7 +33,7 @@ entry:
 ; gromacs/optimized/md5.cpp.ll
 ; wireshark/optimized/packet-csn1.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %0, %2
   %4 = icmp eq i32 %3, 2

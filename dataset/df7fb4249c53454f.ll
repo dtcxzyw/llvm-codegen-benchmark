@@ -4,7 +4,7 @@
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
 ; openjdk/optimized/hb-ot-cff1-table.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
   %4 = icmp ne i32 %1, 0
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/olsontz.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
   %4 = icmp ne i32 %1, 0

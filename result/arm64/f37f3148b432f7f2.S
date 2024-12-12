@@ -1,16 +1,8 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmeq	v4.2d, v3.2d, #0
-	cmeq	v5.2d, v2.2d, #0
-	mov	w8, #33                         // =0x21
-	bif	v0.16b, v2.16b, v5.16b
-	bif	v1.16b, v3.16b, v4.16b
-	dup	v2.2d, x8
-	mov	x8, #-8                         // =0xfffffffffffffff8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
-	dup	v2.2d, x8
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v2.16b
+	cmp	x1, #0
+	csel	x8, x0, x1, eq
+	add	x8, x8, #33
+	and	x0, x8, #0xfffffffffffffff8
 	ret
                                         // -- End function

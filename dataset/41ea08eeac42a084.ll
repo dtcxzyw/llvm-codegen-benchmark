@@ -12,18 +12,6 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; stb/optimized/stb_easy_font.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 7
-  %3 = zext nneg i8 %2 to i32
-  %4 = icmp ugt i32 %0, 1
-  %5 = select i1 %4, i32 %3, i32 0
-  ret i32 %5
-}
-
 ; 9 occurrences:
 ; linux/optimized/drm_dp_helper.ll
 ; meshlab/optimized/gltf_loader.cpp.ll

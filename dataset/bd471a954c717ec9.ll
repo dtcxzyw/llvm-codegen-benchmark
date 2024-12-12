@@ -5,7 +5,7 @@
 ; linux/optimized/yenta_socket.ll
 ; protobuf/optimized/tokenizer.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i8 %0) #0 {
+define i32 @func0000000000000043(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 45
   %2 = icmp eq i8 %0, 114
@@ -18,7 +18,7 @@ entry:
 ; cmake/optimized/ftplistparser.c.ll
 ; curl/optimized/libcurl_la-ftplistparser.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i8 %0) #0 {
+define i32 @func0000000000000042(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 114
   %2 = select i1 %1, i32 16777472, i32 16777216

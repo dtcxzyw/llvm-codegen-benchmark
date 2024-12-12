@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -17,7 +17,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -43,7 +42,7 @@ entry:
   %3 = add nsw i32 %2, -8
   %4 = and i32 %1, 268427264
   %5 = shl i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
@@ -81,7 +80,7 @@ entry:
   %3 = add nsw i32 %2, -4
   %4 = and i32 %1, 15
   %5 = shl nuw i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

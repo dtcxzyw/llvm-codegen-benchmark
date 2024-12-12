@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_math.ll
 ; qemu/optimized/hw_pci_pci.c.ll
 ; wireshark/optimized/packet-rfid-pn532-hci.c.ll
 ; Function Attrs: nounwind

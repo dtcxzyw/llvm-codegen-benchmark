@@ -1,10 +1,10 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	notb	%sil
 	cmpq	$3, %rdi
 	setne	%al
 	andb	%sil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	notb	%sil
 	cmpq	$2, %rdi
 	sete	%al

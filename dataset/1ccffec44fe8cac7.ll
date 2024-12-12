@@ -33,11 +33,11 @@ define float @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 1.000000e+00
   %3 = select i1 %2, float %1, float 1.000000e+00
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; box2d/optimized/b2_distance.cpp.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btKinematicCharacterController.ll
@@ -46,7 +46,6 @@ entry:
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/maketexture.cpp.ll
 ; opencv/optimized/face_detection_mtcnn.cpp.ll
@@ -64,7 +63,7 @@ define float @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 0.000000e+00
   %3 = select i1 %2, float %1, float 0.000000e+00
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 

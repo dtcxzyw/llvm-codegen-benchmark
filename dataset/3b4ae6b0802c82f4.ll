@@ -29,13 +29,12 @@ entry:
   ret i64 %4
 }
 
-; 111 occurrences:
+; 110 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; hermes/optimized/HBCParser.cpp.ll
 ; linux/optimized/if.ll
 ; linux/optimized/lbr.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
 ; postgres/optimized/int.ll
 ; qemu/optimized/optimize.c.ll

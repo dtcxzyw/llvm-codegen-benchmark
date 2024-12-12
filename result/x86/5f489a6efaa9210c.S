@@ -1,3 +1,8 @@
+func0000000000000034:                   # @func0000000000000034
+	subl	%edi, %esi
+	shll	$16, %esi
+	leal	65536(%rsi), %eax
+	retq
 func0000000000000015:                   # @func0000000000000015
 	subl	%edi, %esi
 	shll	$4, %esi
@@ -15,11 +20,6 @@ func0000000000000014:                   # @func0000000000000014
 	notl	%edi
 	leal	(%rdi,%rsi), %eax
 	shll	$16, %eax
-	retq
-func0000000000000034:                   # @func0000000000000034
-	subl	%edi, %esi
-	shll	$16, %esi
-	leal	65536(%rsi), %eax
 	retq
 func0000000000000013:                   # @func0000000000000013
 	notl	%edi

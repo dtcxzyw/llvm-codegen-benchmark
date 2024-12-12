@@ -7,7 +7,7 @@
 ; openblas/optimized/dgesvdq.c.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %not. = xor i1 %0, true

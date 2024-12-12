@@ -1,9 +1,10 @@
 
-; 85 occurrences:
+; 101 occurrences:
 ; actix-rs/optimized/27zn2x05lna4a2z7.ll
 ; actix-rs/optimized/3u1jix79tu9frq3m.ll
 ; clap-rs/optimized/4r6y4qxwk52m92uh.ll
 ; coreutils-rs/optimized/2fxrwnovw97v41kk.ll
+; coreutils-rs/optimized/3q8ukvkopatfv0x0.ll
 ; coreutils-rs/optimized/4tt85gim3dxp9l65.ll
 ; coreutils-rs/optimized/52j8pvnsrfusu9z8.ll
 ; coreutils-rs/optimized/59rj03aw6jgy8z12.ll
@@ -60,7 +61,6 @@
 ; rust-analyzer-rs/optimized/4yvp88cqyyaanzkc.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
-; serde-rs/optimized/4nh864n2i04fnkrm.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/58hth72z9dib25am.ll
 ; tree-sitter-rs/optimized/2ihg39n1dg1po2l8.ll
@@ -85,11 +85,27 @@
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3u7utqtgdovrxzbad3tfrps40.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/89pzn2sx18yjgerweenwud6qr.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/ak4ykc5o2q07hp1jptfv0x87c.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i1
-  %3 = select i1 %2, i64 1, i64 %0
+  %3 = select i1 %2, i64 0, i64 %0
   ret i64 %3
 }
 

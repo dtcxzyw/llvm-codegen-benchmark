@@ -1,17 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
-	sext.w	a2, a1
-	slti	a2, a2, 0
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	lui	a2, 748983
-	or	a0, a0, a1
-	lui	a1, 149797
-	addi	a2, a2, -585
-	mulw	a0, a0, a2
-	addiw	a1, a1, -1755
-	sltu	a0, a0, a1
-	ret
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	sext.w	a2, a1
 	slti	a2, a2, -4
 	czero.eqz	a1, a1, a2
@@ -24,7 +11,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	addiw	a1, a1, -1755
 	sltu	a0, a0, a1
 	ret
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	sext.w	a2, a1
 	lui	a3, 244141
 	addiw	a3, a3, -1537
@@ -40,44 +27,7 @@ func0000000000000081:                   # @func0000000000000081
 	addiw	a1, a2, 199
 	sltu	a0, a0, a1
 	ret
-func0000000000000048:                   # @func0000000000000048
-	sext.w	a2, a1
-	lui	a3, 24
-	addiw	a3, a3, 1696
-	sltu	a2, a2, a3
-	lui	a3, 274878
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	lui	a2, 244
-	addiw	a3, a3, -381
-	or	a0, a0, a1
-	zext.w	a1, a0
-	mul	a1, a1, a3
-	lui	a3, 122
-	addi	a2, a2, 576
-	srli	a1, a1, 50
-	mul	a1, a1, a2
-	subw	a0, a0, a1
-	addiw	a1, a3, 288
-	sltu	a0, a1, a0
-	ret
-func0000000000000041:                   # @func0000000000000041
-	sext.w	a2, a1
-	lui	a3, 24
-	addiw	a3, a3, 1696
-	sltu	a2, a2, a3
-	lui	a3, 429094
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	lui	a2, 2
-	addi	a3, a3, 313
-	or	a0, a0, a1
-	mul	a0, a0, a3
-	roriw	a0, a0, 5
-	addiw	a1, a2, 398
-	sltu	a0, a0, a1
-	ret
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000158:                   # @func0000000000000158
 	sext.w	a2, a1
 	slti	a2, a2, -4
 	czero.eqz	a1, a1, a2

@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cmake/optimized/zdict.c.ll
 ; darktable/optimized/introspection_spots.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -9,11 +9,10 @@
 ; opencv/optimized/cuda_host_mem.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; opencv/optimized/umatrix.cpp.ll
-; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; slurm/optimized/mgr.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 15
   %3 = icmp eq i32 %0, 15
@@ -21,7 +20,7 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -31,7 +30,6 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/nfsacl.ll
 ; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/MachinePostDominators.cpp.ll
@@ -66,22 +64,10 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; icu/optimized/uspoof_impl.ll
-; openjdk/optimized/objectMonitor.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -200
-  %3 = icmp sgt i32 %0, 0
-  %4 = select i1 %3, i32 %2, i32 %0
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; openjdk/optimized/os.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = icmp slt i32 %0, 0
@@ -92,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/os.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp slt i32 %0, 0
@@ -114,7 +100,7 @@ entry:
 ; redis/optimized/db.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 16
   %3 = icmp eq i32 %0, 0
@@ -122,8 +108,9 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; libevent/optimized/evdns.c.ll
+; oiio/optimized/argparse.cpp.ll
 ; opencv/optimized/fast_line_detector.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
@@ -132,9 +119,9 @@ entry:
 ; postgres/optimized/geo_ops.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 2
+  %2 = add nsw i32 %1, 1
   %3 = icmp slt i32 %0, 0
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
@@ -144,7 +131,7 @@ entry:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp sgt i32 %0, 0
@@ -177,10 +164,21 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/varsup.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, -3000003
   %3 = icmp ult i32 %0, 3
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; icu/optimized/uspoof_impl.ll
+; Function Attrs: nounwind
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -87
+  %3 = icmp sgt i32 %0, 15
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }

@@ -2,7 +2,6 @@
 ; 70 occurrences:
 ; abc/optimized/nwkTiming.c.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
-; assimp/optimized/BlenderModifier.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
@@ -70,6 +69,7 @@
 ; wireshark/optimized/packet-ieee17221.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; xgboost/optimized/cpu_treeshap.cc.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(i32 %0) #0 {
 entry:
@@ -78,7 +78,7 @@ entry:
   ret float %2
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
@@ -86,6 +86,7 @@ entry:
 ; opencv/optimized/radial_variance_hash.cpp.ll
 ; opencv/optimized/svmsgd.cpp.ll
 ; postgres/optimized/rangetypes_gist.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define float @func000000000000000a(i32 %0) #0 {
 entry:
@@ -119,9 +120,9 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define float @func0000000000000004(i32 %0) #0 {
+define float @func0000000000000014(i32 %0) #0 {
 entry:
-  %1 = icmp ult i32 %0, 1024
+  %1 = icmp samesign ult i32 %0, 1024
   %2 = select i1 %1, float 1.600000e+01, float 2.560000e+02
   ret float %2
 }

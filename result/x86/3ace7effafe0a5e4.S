@@ -18,7 +18,8 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000020:                   # @func0000000000000020
 	leal	(%rsi,%rdx,8), %ecx
 	leal	7(%rdi,%rcx), %eax
-	addl	%edi, %ecx
-	cmovnsl	%ecx, %eax
+	movl	%edi, %edx
+	addl	%ecx, %edx
+	cmovnsl	%edx, %eax
 	sarl	$3, %eax
 	retq

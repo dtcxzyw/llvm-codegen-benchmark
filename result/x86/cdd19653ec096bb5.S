@@ -12,3 +12,10 @@ func0000000000000011:                   # @func0000000000000011
 	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
 	imulq	%rcx, %rax
 	retq
+func0000000000000019:                   # @func0000000000000019
+	subq	%rdi, %rsi
+	leaq	24(%rsi), %rcx
+	sarq	$3, %rcx
+	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	imulq	%rcx, %rax
+	retq

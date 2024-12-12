@@ -1,5 +1,5 @@
 
-; 166 occurrences:
+; 165 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -159,7 +159,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -313,6 +312,19 @@ entry:
   ret i64 %6
 }
 
+; 2 occurrences:
+; boost/optimized/text_file_backend.ll
+; libjpeg-turbo/optimized/jidctint.c.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000ff(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = mul nuw nsw i64 %3, 1000000
+  %5 = mul nuw nsw i64 %0, 86400000000
+  %6 = add nuw nsw i64 %5, %4
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; Function Attrs: nounwind
@@ -337,18 +349,6 @@ entry:
   %4 = mul nsw i64 %3, -16069
   %5 = mul nuw nsw i64 %0, 9633
   %6 = add nsw i64 %5, %4
-  ret i64 %6
-}
-
-; 1 occurrences:
-; libjpeg-turbo/optimized/jidctint.c.ll
-; Function Attrs: nounwind
-define i64 @func00000000000000ff(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = mul nuw nsw i64 %3, 3000
-  %5 = mul nuw nsw i64 %0, 3264
-  %6 = add nuw nsw i64 %5, %4
   ret i64 %6
 }
 

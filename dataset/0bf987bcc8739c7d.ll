@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 54 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/host.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/io_apic.ll
@@ -34,6 +33,7 @@
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; postgres/optimized/encode.ll
 ; postgres/optimized/varlena.ll
 ; qemu/optimized/hw_block_m25p80.c.ll
@@ -53,12 +53,13 @@
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl i8 %2, 2
   %4 = and i8 %3, 12
-  %5 = or disjoint i8 %4, %1
+  %5 = or disjoint i8 %1, %4
   %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
@@ -72,7 +73,7 @@ define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl i8 %2, 3
   %4 = and i8 %3, 8
-  %5 = or i8 %4, %1
+  %5 = or i8 %1, %4
   %6 = or i8 %5, %0
   ret i8 %6
 }
@@ -99,7 +100,7 @@ define i8 @func0000000000000002(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl i8 %2, 1
   %4 = and i8 %3, 16
-  %5 = or disjoint i8 %4, %1
+  %5 = or disjoint i8 %1, %4
   %6 = or i8 %5, %0
   ret i8 %6
 }

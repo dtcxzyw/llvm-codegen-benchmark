@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andl	$32, %edx
 	orl	%esi, %edi
 	andl	$48, %edi
@@ -6,7 +6,7 @@ func0000000000000031:                   # @func0000000000000031
 	cmpl	$48, %edi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	orl	%esi, %edi
 	orl	%edx, %edi
 	cmpb	$114, %dil

@@ -1,5 +1,5 @@
 func000000000000000b:                   # @func000000000000000b
-	cmpl	$3, %edx
+	cmpl	$-1, %edx
 	cmovnel	%esi, %edi
 	leal	1(%rdi,%rdi), %eax
 	retq

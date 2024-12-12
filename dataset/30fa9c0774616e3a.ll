@@ -1,11 +1,19 @@
 
-; 220 occurrences:
+; 228 occurrences:
 ; abc/optimized/bmcMaj.c.ll
-; abc/optimized/cmdUtils.c.ll
 ; abc/optimized/ifReduce.c.ll
 ; abc/optimized/ivyFastMap.c.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cmake/optimized/select.c.ll
 ; cpython/optimized/listobject.ll
 ; cpython/optimized/rangeobject.ll
@@ -134,7 +142,6 @@
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; lua/optimized/ldblib.ll
 ; lua/optimized/lstrlib.ll
@@ -169,6 +176,7 @@
 ; php/optimized/pass1.ll
 ; postgres/optimized/parse_target.ll
 ; proj/optimized/stere.cpp.ll
+; qemu/optimized/hw_net_pcnet.c.ll
 ; redis/optimized/cluster.ll
 ; redis/optimized/ldblib.ll
 ; redis/optimized/lolwut5.ll
@@ -179,10 +187,10 @@
 ; redis/optimized/t_stream.ll
 ; redis/optimized/util.ll
 ; ruby/optimized/coverage.ll
+; ruby/optimized/ractor.ll
 ; ruby/optimized/thread.ll
 ; slurm/optimized/common_as.ll
 ; slurm/optimized/slurm_protocol_defs.ll
-; slurm/optimized/slurm_rlimits_info.ll
 ; slurm/optimized/sreport.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll

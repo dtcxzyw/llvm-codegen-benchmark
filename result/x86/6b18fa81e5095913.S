@@ -1,7 +1,9 @@
 func000000000000000c:                   # @func000000000000000c
-	andl	$1, %edi
+	xorl	%eax, %eax
 	testq	%rsi, %rsi
-	leaq	1(%rdi,%rdi), %rcx
+	setne	%al
+	leaq	1(%rax,%rax), %rcx
+	testb	$1, %dil
 	movl	$1, %eax
 	cmovneq	%rcx, %rax
 	retq
@@ -20,14 +22,14 @@ func000000000000000a:                   # @func000000000000000a
 	shll	$13, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	notb	%dil
-	movzbl	%dil, %ecx
-	andl	$1, %ecx
+	xorl	%ecx, %ecx
+	cmpq	$33, %rsi
+	setb	%cl
 	shll	$8, %ecx
 	addq	$-256, %rcx
 	xorl	%eax, %eax
-	cmpq	$33, %rsi
-	cmovaeq	%rcx, %rax
+	testb	$1, %dil
+	cmovneq	%rcx, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
@@ -46,4 +48,11 @@ func0000000000000004:                   # @func0000000000000004
 	leaq	8(,%rax,8), %rcx
 	movl	$16, %eax
 	cmoveq	%rcx, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	shrq	$32, %rsi
+	setne	%al
+	andb	%dil, %al
+	movzbl	%al, %eax
+	shll	$3, %eax
 	retq

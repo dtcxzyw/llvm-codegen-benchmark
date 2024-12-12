@@ -1,34 +1,4 @@
 
-; 20 occurrences:
-; abc/optimized/giaPat2.c.ll
-; faiss/optimized/IndexIVFPQ.cpp.ll
-; mold/optimized/output-chunks.cc.ALPHA.cc.ll
-; mold/optimized/output-chunks.cc.ARM32.cc.ll
-; mold/optimized/output-chunks.cc.ARM64.cc.ll
-; mold/optimized/output-chunks.cc.I386.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
-; mold/optimized/output-chunks.cc.RV32LE.cc.ll
-; mold/optimized/output-chunks.cc.RV64BE.cc.ll
-; mold/optimized/output-chunks.cc.RV64LE.cc.ll
-; mold/optimized/output-chunks.cc.S390X.cc.ll
-; mold/optimized/output-chunks.cc.SH4.cc.ll
-; mold/optimized/output-chunks.cc.SPARC64.cc.ll
-; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul nsw i64 %0, %2
-  %4 = mul nsw i64 %0, %1
-  %5 = icmp slt i64 %4, %3
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; linux/optimized/kcmp.ll
 ; qemu/optimized/dump_dump.c.ll
@@ -41,7 +11,7 @@ entry:
   ret i1 %5
 }
 
-; 34 occurrences:
+; 12 occurrences:
 ; hdf5/optimized/H5PB.c.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; oiio/optimized/deepdata.cpp.ll
@@ -51,29 +21,7 @@ entry:
 ; openusd/optimized/skeletonAdapter.cpp.ll
 ; openusd/optimized/skinningQuery.cpp.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
-; quantlib/optimized/cmsmarketcalibration.ll
-; quantlib/optimized/cotswaptofwdadapter.ll
-; quantlib/optimized/fdmmesherintegral.ll
-; quantlib/optimized/fwdperiodadapter.ll
-; quantlib/optimized/fwdtocotswapadapter.ll
-; quantlib/optimized/jointstochasticprocess.ll
-; quantlib/optimized/lfmcovarparam.ll
-; quantlib/optimized/lfmcovarproxy.ll
-; quantlib/optimized/lfmprocess.ll
-; quantlib/optimized/lognormalcmswapratepc.ll
-; quantlib/optimized/lognormalcotswapratepc.ll
-; quantlib/optimized/lognormalfwdrateballand.ll
-; quantlib/optimized/lognormalfwdrateeuler.ll
-; quantlib/optimized/lognormalfwdrateeulerconstrained.ll
-; quantlib/optimized/lognormalfwdrateiballand.ll
-; quantlib/optimized/lognormalfwdrateipc.ll
-; quantlib/optimized/lognormalfwdratepc.ll
-; quantlib/optimized/marketmodeldifferences.ll
 ; quantlib/optimized/mtbrowniangenerator.ll
-; quantlib/optimized/normalfwdratepc.ll
-; quantlib/optimized/stochasticprocessarray.ll
-; quantlib/optimized/svddfwdratepc.ll
-; quantlib/optimized/zabr.ll
 ; yosys/optimized/calc.ll
 ; yosys/optimized/satgen.ll
 ; Function Attrs: nounwind
@@ -127,7 +75,7 @@ entry:
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %0, %2
   %4 = mul nuw i64 %0, %1
@@ -135,7 +83,7 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 13 occurrences:
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; duckdb/optimized/vector_hash.cpp.ll
 ; openjdk/optimized/xRelocate.ll
@@ -143,6 +91,12 @@ entry:
 ; openjdk/optimized/zRememberedSet.ll
 ; openjdk/optimized/zStoreBarrierBuffer.ll
 ; xgboost/optimized/gradient_index.cc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -152,26 +106,47 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; llvm/optimized/SLPVectorizer.cpp.ll
+; 22 occurrences:
+; quantlib/optimized/cmsmarketcalibration.ll
+; quantlib/optimized/cotswaptofwdadapter.ll
+; quantlib/optimized/fdmmesherintegral.ll
+; quantlib/optimized/fwdperiodadapter.ll
+; quantlib/optimized/fwdtocotswapadapter.ll
+; quantlib/optimized/jointstochasticprocess.ll
+; quantlib/optimized/lfmcovarparam.ll
+; quantlib/optimized/lfmcovarproxy.ll
+; quantlib/optimized/lfmprocess.ll
+; quantlib/optimized/lognormalcmswapratepc.ll
+; quantlib/optimized/lognormalcotswapratepc.ll
+; quantlib/optimized/lognormalfwdrateballand.ll
+; quantlib/optimized/lognormalfwdrateeuler.ll
+; quantlib/optimized/lognormalfwdrateeulerconstrained.ll
+; quantlib/optimized/lognormalfwdrateiballand.ll
+; quantlib/optimized/lognormalfwdrateipc.ll
+; quantlib/optimized/lognormalfwdratepc.ll
+; quantlib/optimized/marketmodeldifferences.ll
+; quantlib/optimized/normalfwdratepc.ll
+; quantlib/optimized/stochasticprocessarray.ll
+; quantlib/optimized/svddfwdratepc.ll
+; quantlib/optimized/zabr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = mul nuw i64 %0, %2
-  %4 = mul nuw i64 %0, %1
-  %5 = icmp eq i64 %4, %3
+  %3 = mul i64 %0, %2
+  %4 = mul i64 %0, %1
+  %5 = icmp samesign eq i64 %4, %3
   ret i1 %5
 }
 
 ; 2 occurrences:
-; arrow/optimized/concatenate.cc.ll
-; casadi/optimized/repmat.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = mul nsw i64 %2, %1
-  %4 = mul nsw i64 %0, %1
-  %5 = icmp eq i64 %4, %3
+  %3 = mul nuw nsw i64 %2, %0
+  %4 = mul nuw nsw i64 %0, %1
+  %5 = icmp samesign ugt i64 %4, %3
   ret i1 %5
 }
 
@@ -185,7 +160,7 @@ entry:
 ; openblas/optimized/dsymm_thread_RL.c.ll
 ; openblas/optimized/dsymm_thread_RU.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, %0
   %4 = mul nsw i64 %0, %1
@@ -197,7 +172,7 @@ entry:
 ; graphviz/optimized/matrix_market.c.ll
 ; graphviz/optimized/neatoinit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %0, %2
   %4 = mul nuw nsw i64 %0, %1

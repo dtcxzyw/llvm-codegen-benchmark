@@ -27,7 +27,6 @@
 ; linux/optimized/ethtool.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/ipv6_sockglue.ll
-; linux/optimized/mii.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/trace_output.ll
@@ -75,9 +74,10 @@
 ; wolfssl/optimized/asn.c.ll
 ; wolfssl/optimized/dh.c.ll
 ; z3/optimized/lar_solver.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zlib/optimized/gzread.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 3, i32 2
@@ -91,7 +91,7 @@ entry:
 ; icu/optimized/ucasemap.ll
 ; openssl/optimized/libapps-lib-s_socket.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i32 16, i32 48
@@ -101,23 +101,10 @@ entry:
 }
 
 ; 2 occurrences:
-; linux/optimized/exec.ll
-; php/optimized/output.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 11, i32 10
-  %4 = icmp ugt i32 %0, 15
-  %5 = select i1 %4, i32 %3, i32 9
-  ret i32 %5
-}
-
-; 2 occurrences:
 ; luau/optimized/main.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 224
   %3 = select i1 %2, i32 15, i32 7
@@ -131,7 +118,7 @@ entry:
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, i32 328, i32 361
@@ -141,21 +128,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/CGExprScalar.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000084(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 28
-  %3 = select i1 %2, i32 -13, i32 -20
-  %4 = icmp ult i32 %0, 10
-  %5 = select i1 %4, i32 %3, i32 0
-  ret i32 %5
-}
-
-; 1 occurrences:
 ; gromacs/optimized/pairlistparams.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %3 = select i1 %2, i32 2, i32 1
@@ -169,7 +144,7 @@ entry:
 ; linux/optimized/vfs_dir.ll
 ; openspiel/optimized/spades_scoring.cc.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = select i1 %2, i32 -100, i32 100
@@ -179,9 +154,21 @@ entry:
 }
 
 ; 1 occurrences:
+; linux/optimized/exec.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 0
+  %3 = select i1 %2, i32 16385, i32 16384
+  %4 = icmp ugt i32 %0, 4095
+  %5 = select i1 %4, i32 %3, i32 0
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; grpc/optimized/rls.cc.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a6(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000146(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = select i1 %2, i32 0, i32 3
@@ -194,7 +181,7 @@ entry:
 ; graphviz/optimized/pack.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000aa(i32 %0, i32 %1) #0 {
+define i32 @func000000000000014a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
   %3 = select i1 %2, i32 1, i32 -1

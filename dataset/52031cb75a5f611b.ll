@@ -1,7 +1,8 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; abc/optimized/ivyCut.c.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/rational.ll
 ; clamav/optimized/regexec.c.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; graphviz/optimized/gvgetfontlist_pango.c.ll
@@ -34,7 +35,7 @@
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/smt_enode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
@@ -82,7 +83,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
@@ -90,10 +91,11 @@ entry:
   ret i1 %4
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/trace_events_filter.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/areastore.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -119,7 +121,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmslt_vx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
@@ -135,7 +137,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmsle_vx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
@@ -150,7 +152,7 @@ entry:
 ; postgres/optimized/int.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
@@ -161,7 +163,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ivyFastMap.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
   %3 = ashr exact i32 %2, 16
@@ -175,7 +177,7 @@ entry:
 ; postgres/optimized/int.ll
 ; spike/optimized/vmsne_vx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
@@ -190,7 +192,7 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; slurm/optimized/slurm_protocol_api.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
   %3 = ashr exact i32 %2, 24
@@ -201,7 +203,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ac(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
   %3 = ashr exact i32 %2, 24
@@ -226,7 +228,7 @@ entry:
 ; z3/optimized/euf_solver.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 24
   %3 = ashr exact i32 %2, 24

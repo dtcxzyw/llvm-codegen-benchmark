@@ -1,6 +1,11 @@
 
-; 51 occurrences:
+; 57 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; darktable/optimized/introspection_highpass.c.ll
@@ -18,9 +23,9 @@
 ; ocio/optimized/Displays.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/dlasd5.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
@@ -50,6 +55,7 @@
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/qdplusamericanengine.ll
 ; ruby/optimized/numeric.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(double %0) #0 {
@@ -59,7 +65,7 @@ entry:
   ret i1 %2
 }
 
-; 59 occurrences:
+; 60 occurrences:
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
@@ -118,6 +124,7 @@ entry:
 ; sundials/optimized/kinsol.c.ll
 ; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
 ; tokenizers-rs/optimized/1ve5rid4048y19bt.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(double %0) #0 {
@@ -127,8 +134,11 @@ entry:
   ret i1 %2
 }
 
-; 31 occurrences:
+; 35 occurrences:
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -159,6 +169,7 @@ entry:
 ; quantlib/optimized/binomialtree.ll
 ; quantlib/optimized/extendedbinomialtree.ll
 ; quantlib/optimized/integralhestonvarianceoptionengine.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(double %0) #0 {
 entry:
@@ -236,7 +247,19 @@ entry:
   ret i1 %2
 }
 
-; 7 occurrences:
+; 19 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; hermes/optimized/TypedArray.cpp.ll
 ; luajit/optimized/minilua.ll
 ; miniaudio/optimized/unity.c.ll

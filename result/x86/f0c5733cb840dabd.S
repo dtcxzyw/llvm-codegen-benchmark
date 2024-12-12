@@ -1,4 +1,4 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	andl	$1, %edx
 	addq	%rsi, %rdx
 	cmpq	$16777216, %rdx                 # imm = 0x1000000
@@ -14,11 +14,12 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func000000000000000c:                   # @func000000000000000c
 	andl	$1, %edx
-	addq	%rsi, %rdx
+	negq	%rdx
+	cmpq	%rdx, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	andl	$1, %edx
 	orq	%rsi, %rdx
 	setne	%al

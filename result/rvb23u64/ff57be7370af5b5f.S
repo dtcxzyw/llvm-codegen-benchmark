@@ -22,15 +22,14 @@ func000000000000004a:                   # @func000000000000004a
 	add	a1, a1, a2
 	ret
 func000000000000006e:                   # @func000000000000006e
-	li	a6, -1
-	neg	a7, a4
-	sub	a2, a0, a4
-	sub	a5, a5, a1
-	mulhu	a1, a4, a6
-	sltu	a4, a2, a7
-	add	a0, a2, a3
+	li	a2, -1
 	sub	a1, a1, a5
+	sub	a5, a0, a4
+	mulhu	a2, a4, a2
+	sltu	a4, a5, a0
+	add	a0, a5, a3
+	add	a1, a1, a2
 	add	a1, a1, a4
-	sltu	a2, a0, a2
+	sltu	a2, a0, a5
 	add	a1, a1, a2
 	ret

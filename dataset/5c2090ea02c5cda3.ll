@@ -5,7 +5,7 @@
 ; llvm/optimized/AnalysisConsumer.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
   %4 = add i64 %3, %1
@@ -15,26 +15,11 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
-; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; Function Attrs: nounwind
-define i1 @func00000000000003f1(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 16
-  %4 = add nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
-  %6 = and i64 %5, 2147483648
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
-}
-
 ; 2 occurrences:
 ; arrow/optimized/align_util.cc.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000288(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %1
@@ -47,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DFAPacketizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
   %4 = add nsw i64 %3, %1
@@ -63,10 +48,10 @@ entry:
 ; casadi/optimized/sx_function.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000228(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nsw i64 %4, %0
   %6 = and i64 %5, -9223372036854775745
   %7 = icmp ugt i64 %6, -9223372036854775808

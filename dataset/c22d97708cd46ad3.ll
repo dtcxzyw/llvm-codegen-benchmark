@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; brotli/optimized/encode.c.ll
 ; linux/optimized/commoncap.ll
+; llvm/optimized/Path.cpp.ll
 ; ruby/optimized/io.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; Function Attrs: nounwind
@@ -23,8 +24,7 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/Path.cpp.ll
+; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i1 %1, i64 %2) #0 {

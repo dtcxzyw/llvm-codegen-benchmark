@@ -1,4 +1,4 @@
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	li	a0, 256
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vmsltu.vx	v0, v8, a0

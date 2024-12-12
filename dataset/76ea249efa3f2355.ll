@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/data.cc.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; postgres/optimized/pg_attrdef.ll

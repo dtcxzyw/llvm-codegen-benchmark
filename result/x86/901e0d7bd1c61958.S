@@ -1,11 +1,3 @@
-func0000000000000004:                   # @func0000000000000004
-	cmpl	$127, %edx
-	movl	$1, %ecx
-	cmovael	%esi, %ecx
-	xorl	%eax, %eax
-	testb	$1, %dil
-	cmovnel	%ecx, %eax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	testl	%edx, %edx
 	cmovel	%edx, %esi

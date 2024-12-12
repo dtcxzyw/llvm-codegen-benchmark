@@ -1,14 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
-	andl	$1, %edx
-	movl	$2, %eax
-	subl	%edx, %eax
-	cmpl	%edi, %eax
-	seta	%cl
-	cmpl	$-2, %esi
-	sete	%al
-	andb	%cl, %al
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$1, %edx
 	xorl	%esi, %edx
 	xorl	$3, %edx
@@ -16,10 +6,10 @@ func0000000000000011:                   # @func0000000000000011
 	orl	%edx, %edi
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andl	$1, %edx
 	leal	4(%rdx,%rdx), %eax
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
 	sete	%cl
 	testl	%edi, %edi
 	setne	%al

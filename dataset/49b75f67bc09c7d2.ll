@@ -1,6 +1,7 @@
 
-; 163 occurrences:
+; 161 occurrences:
 ; arrow/optimized/align_util.cc.ll
+; boost/optimized/topology.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
@@ -95,13 +96,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -200,6 +198,20 @@ entry:
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i64, ptr %1, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 2 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = sdiv i32 %3, 2
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw i32, ptr %1, i64 %5
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %0
   ret ptr %7
 }
 

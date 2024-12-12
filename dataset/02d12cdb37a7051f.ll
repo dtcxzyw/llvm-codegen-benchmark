@@ -3,11 +3,11 @@
 ; rocksdb/optimized/filter_policy.cc.ll
 ; z3/optimized/intblast_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
 entry:
   %sum.shift = lshr i64 %1, 39
   %2 = trunc nuw nsw i64 %sum.shift to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -26,11 +26,11 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %sum.shift = lshr i64 %1, 41
   %2 = trunc nuw nsw i64 %sum.shift to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 

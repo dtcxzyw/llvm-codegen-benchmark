@@ -12,8 +12,9 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; flac/optimized/metadata_iterators.c.ll
+; postgres/optimized/hashpage.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:

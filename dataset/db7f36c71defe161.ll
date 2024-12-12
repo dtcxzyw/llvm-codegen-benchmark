@@ -26,12 +26,10 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; bullet3/optimized/btLemkeAlgorithm.ll
-; gromacs/optimized/dlasda.cpp.ll
-; gromacs/optimized/slasda.cpp.ll
-; openblas/optimized/dlasda.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
+; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:

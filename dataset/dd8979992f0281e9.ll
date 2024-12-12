@@ -1,9 +1,10 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/to_chars.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000003(i32 %0) #0 {
@@ -19,6 +20,16 @@ entry:
 define i128 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 2
+  %2 = zext i32 %1 to i128
+  ret i128 %2
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000002(i32 %0) #0 {
+entry:
+  %1 = add nsw i32 %0, -128
   %2 = zext i32 %1 to i128
   ret i128 %2
 }

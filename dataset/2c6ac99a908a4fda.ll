@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 59 occurrences:
 ; bullet3/optimized/btGjkPairDetector.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
@@ -38,7 +38,6 @@
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlasd4.c.ll

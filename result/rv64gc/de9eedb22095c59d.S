@@ -9,6 +9,11 @@ func0000000000000020:                   # @func0000000000000020
 	sll	a1, a1, a2
 	add	a0, a0, a1
 	ret
+func000000000000003f:                   # @func000000000000003f
+	sext.w	a1, a1
+	sll	a1, a1, a2
+	add	a0, a0, a1
+	ret
 func0000000000000010:                   # @func0000000000000010
 	sext.w	a1, a1
 	sll	a1, a1, a2
@@ -16,6 +21,12 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func000000000000003c:                   # @func000000000000003c
 	sext.w	a1, a1
+	sll	a1, a1, a2
+	add	a0, a0, a1
+	ret
+func000000000000002f:                   # @func000000000000002f
+	slli	a1, a1, 32
+	srli	a1, a1, 32
 	sll	a1, a1, a2
 	add	a0, a0, a1
 	ret

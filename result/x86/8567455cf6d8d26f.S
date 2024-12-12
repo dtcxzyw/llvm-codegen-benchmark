@@ -1,9 +1,9 @@
 func000000000000000c:                   # @func000000000000000c
-	notb	%dil
-	movzbl	%dil, %eax
-	andl	$1, %eax
+	xorl	%eax, %eax
 	cmpl	$1, %esi
+	sete	%al
 	leaq	24(,%rax,8), %rcx
+	testb	$1, %dil
 	movl	$32, %eax
 	cmovneq	%rcx, %rax
 	retq
@@ -45,4 +45,21 @@ func0000000000000006:                   # @func0000000000000006
 	cmoveq	%rcx, %rax
 	testl	%esi, %esi
 	cmovnsq	%rcx, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	andl	$1, %edi
+	cmpl	$10, %esi
+	leaq	1(%rdi,%rdi), %rcx
+	movl	$1, %eax
+	cmovaeq	%rcx, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%ecx, %ecx
+	cmpl	$60000, %esi                    # imm = 0xEA60
+	setb	%cl
+	shll	$5, %ecx
+	addq	$1264, %rcx                     # imm = 0x4F0
+	testb	$1, %dil
+	movl	$1264, %eax                     # imm = 0x4F0
+	cmovneq	%rcx, %rax
 	retq

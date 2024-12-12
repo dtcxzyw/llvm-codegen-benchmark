@@ -1,10 +1,11 @@
 
-; 50 occurrences:
+; 52 occurrences:
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
 ; graphviz/optimized/grammar.c.ll
 ; hdf5/optimized/H5LTparse.c.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; linux/optimized/eventpoll.ll
 ; llvm/optimized/HIPUtility.cpp.ll
 ; llvm/optimized/MCContext.cpp.ll
@@ -50,11 +51,12 @@
 ; yosys/optimized/rtlil_parser.tab.ll
 ; yosys/optimized/verilog_parser.tab.ll
 ; z3/optimized/z3_replayer.cpp.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, -4
-  %2 = or disjoint i64 %1, 1
+  %1 = and i64 %0, -65536
+  %2 = or disjoint i64 %1, 1024
   %3 = inttoptr i64 %2 to ptr
   ret ptr %3
 }

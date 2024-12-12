@@ -5,5 +5,5 @@ func0000000000000001:                   # @func0000000000000001
 	fneg.s	fa5, fa5
 	vfmv.v.f	v10, fa5
 	vmerge.vim	v10, v10, 0, v0
-	vfadd.vv	v8, v10, v8
+	vfadd.vv	v8, v8, v10
 	ret

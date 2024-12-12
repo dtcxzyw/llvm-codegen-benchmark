@@ -1,24 +1,14 @@
 
-; 19 occurrences:
-; faiss/optimized/ScalarQuantizer.cpp.ll
-; gromacs/optimized/pme_spread.cpp.ll
-; miniaudio/optimized/unity.c.ll
-; ncnn/optimized/mat_pixel_affine.cpp.ll
-; opencv/optimized/imgwarp.cpp.ll
-; opencv/optimized/optflowgf.cpp.ll
-; opencv/optimized/resize.cpp.ll
-; opencv/optimized/samplers.cpp.ll
+%struct.ConvexVolume.3108435 = type { [36 x float], float, float, i32, i32 }
+
+; 7 occurrences:
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; opencv/optimized/synthetic_seq.cpp.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_D64.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_F32.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_U16.ll
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/raudio.c.ll
-; recastnavigation/optimized/ConvexVolumeTool.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000006a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -42,6 +32,42 @@ entry:
   %5 = getelementptr nusw i8, ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 -3
+  ret ptr %7
+}
+
+; 9 occurrences:
+; faiss/optimized/ScalarQuantizer.cpp.ll
+; gromacs/optimized/pme_spread.cpp.ll
+; ncnn/optimized/mat_pixel_affine.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; opencv/optimized/optflowgf.cpp.ll
+; opencv/optimized/resize.cpp.ll
+; opencv/optimized/samplers.cpp.ll
+; opencv/optimized/synthetic_seq.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %2, 3
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 3
+  ret ptr %7
+}
+
+; 3 occurrences:
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; recastnavigation/optimized/ConvexVolumeTool.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %2, 3
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw %struct.ConvexVolume.3108435, ptr %0, i64 %1
+  %6 = getelementptr nusw float, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
 
@@ -78,13 +104,13 @@ entry:
 ; ceres/optimized/schur_eliminator_2_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw double, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw double, ptr %0, i64 %1
   %6 = getelementptr nusw double, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 8
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
 

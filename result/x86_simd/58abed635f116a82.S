@@ -17,26 +17,28 @@ func0000000000000000:                   # @func0000000000000000
 	vzeroupper
 	retq
 .LCPI1_0:
-	.long	2863311531                      # 0xaaaaaaab
+	.long	2290649225                      # 0x88888889
 .LCPI1_1:
-	.long	6                               # 0x6
-func000000000000000c:                   # @func000000000000000c
+	.long	60                              # 0x3c
+func0000000000000005:                   # @func0000000000000005
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1              # xmm1 = xmm0[1,1,3,3]
-	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [2863311531,2863311531,2863311531,2863311531]
+	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [2290649225,2290649225,2290649225,2290649225]
 	vpmuludq	%xmm2, %xmm1, %xmm1
 	vpmuludq	%xmm2, %xmm0, %xmm2
 	vpshufd	$245, %xmm2, %xmm2              # xmm2 = xmm2[1,1,3,3]
 	vpblendd	$10, %xmm1, %xmm2, %xmm1        # xmm1 = xmm2[0],xmm1[1],xmm2[2],xmm1[3]
-	vpsrld	$2, %xmm1, %xmm1
+	vpsrld	$5, %xmm1, %xmm1
 	vpmulld	.LCPI1_1(%rip){1to4}, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI2_0:
 	.long	2863311531                      # 0xaaaaaaab
-func000000000000000d:                   # @func000000000000000d
+.LCPI2_1:
+	.long	6                               # 0x6
+func000000000000000c:                   # @func000000000000000c
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1              # xmm1 = xmm0[1,1,3,3]
@@ -45,15 +47,14 @@ func000000000000000d:                   # @func000000000000000d
 	vpmuludq	%xmm2, %xmm0, %xmm2
 	vpshufd	$245, %xmm2, %xmm2              # xmm2 = xmm2[1,1,3,3]
 	vpblendd	$10, %xmm1, %xmm2, %xmm1        # xmm1 = xmm2[0],xmm1[1],xmm2[2],xmm1[3]
-	vpsrld	$1, %xmm1, %xmm1
-	vpaddd	%xmm1, %xmm1, %xmm2
-	vpaddd	%xmm2, %xmm1, %xmm1
+	vpsrld	$2, %xmm1, %xmm1
+	vpmulld	.LCPI2_1(%rip){1to4}, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI3_0:
 	.long	2863311531                      # 0xaaaaaaab
-func0000000000000002:                   # @func0000000000000002
+func000000000000000d:                   # @func000000000000000d
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1              # xmm1 = xmm0[1,1,3,3]
@@ -69,20 +70,19 @@ func0000000000000002:                   # @func0000000000000002
 	vzeroupper
 	retq
 .LCPI4_0:
-	.long	2290649225                      # 0x88888889
-.LCPI4_1:
-	.long	60                              # 0x3c
-func0000000000000005:                   # @func0000000000000005
+	.long	2863311531                      # 0xaaaaaaab
+func0000000000000002:                   # @func0000000000000002
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1              # xmm1 = xmm0[1,1,3,3]
-	vpbroadcastd	.LCPI4_0(%rip), %xmm2   # xmm2 = [2290649225,2290649225,2290649225,2290649225]
+	vpbroadcastd	.LCPI4_0(%rip), %xmm2   # xmm2 = [2863311531,2863311531,2863311531,2863311531]
 	vpmuludq	%xmm2, %xmm1, %xmm1
 	vpmuludq	%xmm2, %xmm0, %xmm2
 	vpshufd	$245, %xmm2, %xmm2              # xmm2 = xmm2[1,1,3,3]
 	vpblendd	$10, %xmm1, %xmm2, %xmm1        # xmm1 = xmm2[0],xmm1[1],xmm2[2],xmm1[3]
-	vpsrld	$5, %xmm1, %xmm1
-	vpmulld	.LCPI4_1(%rip){1to4}, %xmm1, %xmm1
+	vpsrld	$1, %xmm1, %xmm1
+	vpaddd	%xmm1, %xmm1, %xmm2
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -135,24 +135,6 @@ func000000000000000f:                   # @func000000000000000f
 	vpsrld	$1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm1, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
-.LCPI8_0:
-	.long	2290649225                      # 0x88888889
-.LCPI8_1:
-	.long	60                              # 0x3c
-func0000000000000007:                   # @func0000000000000007
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
-	vpshufd	$245, %xmm0, %xmm1              # xmm1 = xmm0[1,1,3,3]
-	vpbroadcastd	.LCPI8_0(%rip), %xmm2   # xmm2 = [2290649225,2290649225,2290649225,2290649225]
-	vpmuludq	%xmm2, %xmm1, %xmm1
-	vpmuludq	%xmm2, %xmm0, %xmm2
-	vpshufd	$245, %xmm2, %xmm2              # xmm2 = xmm2[1,1,3,3]
-	vpblendd	$10, %xmm1, %xmm2, %xmm1        # xmm1 = xmm2[0],xmm1[1],xmm2[2],xmm1[3]
-	vpsrld	$5, %xmm1, %xmm1
-	vpmulld	.LCPI8_1(%rip){1to4}, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

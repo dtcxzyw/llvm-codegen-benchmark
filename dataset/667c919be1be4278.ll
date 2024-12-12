@@ -1,4 +1,18 @@
 
+; 2 occurrences:
+; linux/optimized/syncookies.ll
+; lvgl/optimized/lv_dropdown.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = shl i32 %3, 1
+  %5 = add i32 %4, %0
+  %6 = trunc i64 %1 to i32
+  %7 = add i32 %5, %6
+  ret i32 %7
+}
+
 ; 1 occurrences:
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
@@ -25,19 +39,6 @@ entry:
   ret i32 %7
 }
 
-; 1 occurrences:
-; linux/optimized/syncookies.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = shl i32 %3, 24
-  %5 = add i32 %4, %0
-  %6 = trunc i64 %1 to i32
-  %7 = add i32 %5, %6
-  ret i32 %7
-}
-
 ; 2 occurrences:
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
@@ -46,7 +47,7 @@ define i32 @func0000000000000030(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = trunc nuw nsw i64 %1 to i32
   %7 = add i32 %5, %6
   ret i32 %7

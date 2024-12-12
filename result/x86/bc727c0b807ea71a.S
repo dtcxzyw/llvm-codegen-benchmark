@@ -5,7 +5,7 @@ func0000000000000003:                   # @func0000000000000003
 	xorl	%edx, %edx
 	retq
 func0000000000000002:                   # @func0000000000000002
-	movq	%rdi, %rax
-	negq	%rax
+	movabsq	$-8446744073709551616, %rax     # imm = 0x8AC7230489E80000
+	imulq	%rdi, %rax
 	xorl	%edx, %edx
 	retq

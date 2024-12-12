@@ -23,7 +23,7 @@ func000000000000004a:                   # @func000000000000004a
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
-	vadd.vv	v10, v12, v10
+	vadd.vv	v10, v10, v12
 	vsrl.vx	v10, v10, a0
 	lui	a0, 508411
 	slli	a0, a0, 1

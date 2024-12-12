@@ -8,7 +8,7 @@
 define i8 @func0000000000000002(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc nuw i32 %4 to i8
   ret i8 %5
 }
@@ -20,17 +20,17 @@ entry:
 define i8 @func0000000000000006(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = trunc nuw i32 %4 to i8
   ret i8 %5
 }
 
 ; 7 occurrences:
-; clamav/optimized/str.c.ll
 ; freetype/optimized/pfr.c.ll
 ; libpng/optimized/pngwtran.c.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; openjdk/optimized/X11PMBlitLoops.ll
 ; openjdk/optimized/X11TextRenderer_md.ll
 ; Function Attrs: nounwind

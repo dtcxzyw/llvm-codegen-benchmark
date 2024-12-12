@@ -334,7 +334,7 @@
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 56
@@ -343,7 +343,7 @@ entry:
   ret i1 %6
 }
 
-; 406 occurrences:
+; 405 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; arrow/optimized/hdfs.cc.ll
@@ -438,7 +438,6 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
-; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -751,7 +750,7 @@ entry:
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 88
@@ -811,7 +810,7 @@ entry:
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; xgboost/optimized/tracker.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
@@ -828,7 +827,7 @@ entry:
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/giaQbf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = sdiv i64 %3, 1000000
@@ -847,7 +846,7 @@ entry:
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; linux/optimized/show_mem.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 40
@@ -859,7 +858,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/localtopology.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 52
@@ -868,15 +867,14 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
 ; gromacs/optimized/pme_redistribute.cpp.ll
 ; linux/optimized/thermal_core.ll
-; linux/optimized/thermal_trip.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/ts_parse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 12
@@ -888,7 +886,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/bargaining.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
@@ -912,7 +910,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/net_impl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000025(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24

@@ -18,7 +18,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 64
   %3 = icmp eq i32 %1, 0
@@ -31,7 +31,7 @@ entry:
 ; cpython/optimized/_testbuffer.ll
 ; folly/optimized/MemoryMapping.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000039(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000059(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 32
   %.not = icmp eq i32 %1, -1
@@ -75,7 +75,7 @@ entry:
 ; wireshark/optimized/packet-snort.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 4
   %3 = icmp eq i32 %1, 0
@@ -116,14 +116,10 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
-; eastl/optimized/TestBitset.cpp.ll
-; linux/optimized/open.ll
-; linux/optimized/utimes.ll
+; 1 occurrences:
 ; php/optimized/zend_inference.ll
-; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000049(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 1073741824
   %3 = icmp ult i32 %1, 1073741824
@@ -154,6 +150,21 @@ entry:
   %3 = icmp ult i32 %1, 2
   %4 = select i1 %3, i32 %0, i32 %2
   %5 = or i32 %4, 16
+  ret i32 %5
+}
+
+; 4 occurrences:
+; eastl/optimized/TestBitset.cpp.ll
+; linux/optimized/open.ll
+; linux/optimized/utimes.ll
+; z3/optimized/util.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000069(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, 16384
+  %3 = icmp samesign ult i32 %1, 4096
+  %4 = select i1 %3, i32 %0, i32 %2
+  %5 = or disjoint i32 %4, 32
   ret i32 %5
 }
 

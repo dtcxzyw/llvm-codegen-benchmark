@@ -1,7 +1,10 @@
 
-; 5 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
 ; cpython/optimized/_codecs_cn.ll
 ; icu/optimized/ucnvmbcs.ll
 ; sqlite/optimized/sqlite3.ll

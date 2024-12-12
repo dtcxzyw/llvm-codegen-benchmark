@@ -39,20 +39,19 @@ entry:
   %3 = and i32 %1, %2
   %4 = shl nuw nsw i32 %3, 2
   %5 = and i32 %4, 131072
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; lief/optimized/des.c.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = shl nuw nsw i32 %3, 1
   %5 = and i32 %4, 16777216
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -64,7 +63,7 @@ entry:
   %3 = and i32 %1, %2
   %4 = shl i32 %3, 4
   %5 = and i32 %4, 16
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

@@ -1,10 +1,14 @@
 
-; 125 occurrences:
+; 137 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/format_test.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/BaseImporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/iconv_codecvt.ll
+; boost/optimized/src.ll
+; boost/optimized/text_file_backend.ll
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; cmake/optimized/cmListFileLexer.c.ll
 ; cmake/optimized/parsedate.c.ll
@@ -52,7 +56,6 @@
 ; linux/optimized/binfmt_misc.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/kbuf.ll
-; linux/optimized/probe_roms.ll
 ; linux/optimized/process_64.ll
 ; linux/optimized/tsc.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -65,6 +68,7 @@
 ; llvm/optimized/CachePruning.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/FileManager.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
 ; llvm/optimized/LoopRotationUtils.cpp.ll
@@ -118,13 +122,21 @@
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
-; spike/optimized/f128_classify.ll
 ; syn/optimized/ofvfd67uyaewjlc.ll
 ; tev/optimized/ExrImageLoader.cpp.ll
+; turborepo-rs/optimized/8oe5vwmwwrst9p60jy1zusiyz.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/80403hw32s3ougvze8j2ycldj.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/9gug1rix20893syijvsd2r8c6.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/bqkhvme8kwgfmpydn1hdkle55.ll
+; zed-rs/optimized/ca5hx4nwyb2mnunexsl1xqea9.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -134,8 +146,10 @@ entry:
   ret i1 %5
 }
 
-; 41 occurrences:
+; 46 occurrences:
 ; actix-rs/optimized/3ueqfq5tvn084yrz.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; c3c/optimized/llvm_codegen.c.ll
 ; clamav/optimized/yara_exec.c.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
@@ -175,7 +189,10 @@ entry:
 ; slurm/optimized/ulimits.ll
 ; tev/optimized/main.cpp.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -185,14 +202,12 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 8 occurrences:
 ; cmake/optimized/filter_common.c.ll
 ; cpython/optimized/fileutils.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/loop.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; minetest/optimized/COpenGLDriver.cpp.ll
 ; openssl/optimized/libcrypto-lib-digest.ll
 ; openssl/optimized/libcrypto-shlib-digest.ll
 ; openusd/optimized/utils.c.ll
@@ -200,6 +215,20 @@ entry:
 define i1 @func0000000000000004(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2147483648
+  %4 = select i1 %3, i1 %1, i1 false
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 4 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; minetest/optimized/COpenGLDriver.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 4
   %4 = select i1 %3, i1 %1, i1 false
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5

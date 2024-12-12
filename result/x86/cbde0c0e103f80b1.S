@@ -3,12 +3,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$32768, %esi                    # imm = 0x8000
 	cmovll	%edi, %eax
 	retq
-func0000000000000063:                   # @func0000000000000063
-	leal	2(%rdx), %eax
-	testl	%esi, %esi
-	cmovel	%edi, %eax
-	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	leal	2(%rdx), %eax
 	testl	%esi, %esi
 	cmovsl	%edi, %eax
@@ -23,12 +18,17 @@ func0000000000000009:                   # @func0000000000000009
 	cmpl	$-2, %esi
 	cmovbl	%edi, %eax
 	retq
-func0000000000000069:                   # @func0000000000000069
+func00000000000000c9:                   # @func00000000000000c9
 	leal	256(%rdx), %eax
 	cmpl	$257, %esi                      # imm = 0x101
 	cmovbl	%edi, %eax
 	retq
-func0000000000000042:                   # @func0000000000000042
+func00000000000000e9:                   # @func00000000000000e9
+	leal	256(%rdx), %eax
+	cmpl	$257, %esi                      # imm = 0x101
+	cmovbl	%edi, %eax
+	retq
+func0000000000000082:                   # @func0000000000000082
 	leal	1(%rdx), %eax
 	testl	%esi, %esi
 	cmovel	%edi, %eax
@@ -38,10 +38,15 @@ func0000000000000018:                   # @func0000000000000018
 	testl	%esi, %esi
 	cmovnel	%edi, %eax
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000f1:                   # @func00000000000000f1
 	leal	1(%rdx), %eax
 	cmpl	$65, %esi
 	cmovael	%edi, %eax
+	retq
+func00000000000000c3:                   # @func00000000000000c3
+	leal	4(%rdx), %eax
+	testl	%esi, %esi
+	cmovel	%edi, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	leal	21604(%rdx), %eax
@@ -58,7 +63,7 @@ func0000000000000014:                   # @func0000000000000014
 	testl	%esi, %esi
 	cmovgl	%edi, %eax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	leal	-1(%rdx), %eax
 	cmpl	$134217728, %esi                # imm = 0x8000000
 	cmovbl	%edi, %eax

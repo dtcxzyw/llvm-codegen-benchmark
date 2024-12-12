@@ -1,8 +1,7 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; hermes/optimized/ItaniumDemangle.cpp.ll
 ; icu/optimized/ufmt_cmn.ll
-; linux/optimized/uthex.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; mold/optimized/cmdline.cc.ALPHA.cc.ll

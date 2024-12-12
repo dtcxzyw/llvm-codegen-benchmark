@@ -1,5 +1,5 @@
 
-%struct.index_record.3692092 = type { i64, i64 }
+%struct.index_record.3871493 = type { i64, i64 }
 
 ; 4 occurrences:
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -7,12 +7,12 @@
 ; z3/optimized/small_object_allocator.cpp.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 63
   %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 88
-  %6 = getelementptr nusw [3 x i64], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 88
+  %6 = getelementptr nusw nuw [3 x i64], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -20,11 +20,11 @@ entry:
 ; cpython/optimized/longobject.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 63
   %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 88
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 88
   %6 = getelementptr [3 x i64], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -32,12 +32,12 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/index.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = add i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 64
-  %6 = getelementptr nusw [0 x %struct.index_record.3692092], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 64
+  %6 = getelementptr nusw [0 x %struct.index_record.3871493], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

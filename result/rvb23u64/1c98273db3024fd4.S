@@ -30,3 +30,9 @@ func000000000000000f:                   # @func000000000000000f
 	lui	a1, 16368
 	addw	a0, a0, a1
 	ret
+func000000000000000b:                   # @func000000000000000b
+	or	a1, a1, a2
+	add	a0, a0, a1
+	lui	a1, 1048572
+	addw	a0, a0, a1
+	ret

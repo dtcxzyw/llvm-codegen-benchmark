@@ -66,7 +66,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000006:                   # @func0000000000000006
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpsrlq	$32, %ymm0, %ymm0
+	vpsrlq	$2, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq

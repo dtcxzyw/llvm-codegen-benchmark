@@ -9,11 +9,11 @@
 ; ockam-rs/optimized/y59h8jnu9k73im6.ll
 ; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000054(i16 %0) #0 {
+define i64 @func00000000000000b4(i16 %0) #0 {
 entry:
   %1 = zext nneg i16 %0 to i64
   %2 = add nsw i64 %1, -272
-  %3 = icmp ult i16 %0, 273
+  %3 = icmp samesign ult i16 %0, 273
   %4 = select i1 %3, i64 0, i64 %2
   ret i64 %4
 }

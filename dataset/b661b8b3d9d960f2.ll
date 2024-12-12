@@ -1,12 +1,15 @@
 
-%"class.WasmEdge::Variant.2651959" = type { %"union.WasmEdge::VariadicUnion.2651960" }
-%"union.WasmEdge::VariadicUnion.2651960" = type { %"union.WasmEdge::VariadicUnion.5.2651961" }
-%"union.WasmEdge::VariadicUnion.5.2651961" = type { %"union.WasmEdge::VariadicUnion.6.2651962" }
-%"union.WasmEdge::VariadicUnion.6.2651962" = type { %"union.WasmEdge::VariadicUnion.7.2651963" }
-%"union.WasmEdge::VariadicUnion.7.2651963" = type { %"union.WasmEdge::VariadicUnion.8.2651964" }
-%"union.WasmEdge::VariadicUnion.8.2651964" = type { %"union.WasmEdge::VariadicUnion.9.2651965" }
-%"union.WasmEdge::VariadicUnion.9.2651965" = type { %"union.WasmEdge::VariadicUnion.10.2651966" }
-%"union.WasmEdge::VariadicUnion.10.2651966" = type { i128 }
+%"class.WasmEdge::Variant.2765249" = type { %"union.WasmEdge::VariadicUnion.2765250" }
+%"union.WasmEdge::VariadicUnion.2765250" = type { %"union.WasmEdge::VariadicUnion.5.2765251" }
+%"union.WasmEdge::VariadicUnion.5.2765251" = type { %"union.WasmEdge::VariadicUnion.6.2765252" }
+%"union.WasmEdge::VariadicUnion.6.2765252" = type { %"union.WasmEdge::VariadicUnion.7.2765253" }
+%"union.WasmEdge::VariadicUnion.7.2765253" = type { %"union.WasmEdge::VariadicUnion.8.2765254" }
+%"union.WasmEdge::VariadicUnion.8.2765254" = type { %"union.WasmEdge::VariadicUnion.9.2765255" }
+%"union.WasmEdge::VariadicUnion.9.2765255" = type { %"union.WasmEdge::VariadicUnion.10.2765256" }
+%"union.WasmEdge::VariadicUnion.10.2765256" = type { i128 }
+%"class.std::__cxx11::basic_string.2901378" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2901379", i64, %union.anon.2901380 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2901379" = type { ptr }
+%union.anon.2901380 = type { i64, [8 x i8] }
 
 ; 3 occurrences:
 ; arrow/optimized/double-to-string.cc.ll
@@ -33,33 +36,32 @@ entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = sub nsw i64 %1, %4
-  %6 = getelementptr nusw %"class.WasmEdge::Variant.2651959", ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 3 occurrences:
-; openusd/optimized/restoration.c.ll
-; spike/optimized/interactive.ll
-; velox/optimized/StackTrace.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 2
-  %4 = zext nneg i32 %3 to i64
-  %5 = sub nsw i64 %1, %4
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.WasmEdge::Variant.2765249", ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
-; luau/optimized/lstrlib.cpp.ll
+; velox/optimized/StackTrace.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000034(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000037(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -9
+  %3 = add nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
   %5 = sub nsw i64 %1, %4
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; openusd/optimized/restoration.c.ll
+; spike/optimized/interactive.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000036(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = zext nneg i32 %3 to i64
+  %5 = sub nsw i64 %1, %4
+  %6 = getelementptr nusw %"class.std::__cxx11::basic_string.2901378", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -69,24 +71,24 @@ entry:
 ; opencv/optimized/mat_mask_operations.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 257
   %4 = zext nneg i32 %3 to i64
   %5 = sub nuw nsw i64 %1, %4
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = sub nuw nsw i64 %1, %4
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 

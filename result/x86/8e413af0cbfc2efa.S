@@ -6,8 +6,8 @@ func0000000000000018:                   # @func0000000000000018
 	andb	%dil, %al
 	retq
 func0000000000000002:                   # @func0000000000000002
-	andl	$15, %edx
-	cmpw	$1, %dx
+	andl	$14, %edx
+	cmpw	$2, %dx
 	sete	%al
 	orb	%sil, %al
 	andb	%dil, %al

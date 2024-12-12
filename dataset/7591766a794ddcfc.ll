@@ -1,5 +1,5 @@
 
-; 980 occurrences:
+; 995 occurrences:
 ; abc/optimized/fxuCreate.c.ll
 ; abc/optimized/giaCSat2.c.ll
 ; abc/optimized/giaCSat3.c.ll
@@ -36,6 +36,7 @@
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/async.ll
 ; bullet3/optimized/btReducedDeformableBodySolver.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_initializers.c.ll
@@ -110,6 +111,7 @@
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/pshinter.c.ll
 ; freetype/optimized/truetype.c.ll
+; freetype/optimized/type1.c.ll
 ; g2o/optimized/command_args.cpp.ll
 ; g2o/optimized/tictoc.cpp.ll
 ; git/optimized/date.ll
@@ -143,10 +145,8 @@
 ; gromacs/optimized/pme_load_balancing.cpp.ll
 ; gromacs/optimized/pull.cpp.ll
 ; gromacs/optimized/reversetopology.cpp.ll
-; gromacs/optimized/selmethod.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; grpc/optimized/call.cc.ll
-; grpc/optimized/cds.cc.ll
 ; grpc/optimized/retry_filter_legacy_call_data.cc.ll
 ; grpc/optimized/rls.cc.ll
 ; grpc/optimized/writing.cc.ll
@@ -237,12 +237,10 @@
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/cdrom.ll
-; linux/optimized/direct_write.ll
 ; linux/optimized/drm_dp_dual_mode_helper.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/filter.ll
-; linux/optimized/gss_krb5_seal.ll
 ; linux/optimized/gss_krb5_wrap.ll
 ; linux/optimized/hdmi_chmap.ll
 ; linux/optimized/hid-lg-g15.ll
@@ -260,7 +258,6 @@
 ; linux/optimized/trace_events_filter.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/uhci-hcd.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/vgacon.ll
 ; linux/optimized/xfrm_output.ll
 ; llama.cpp/optimized/common.cpp.ll
@@ -336,7 +333,6 @@
 ; llvm/optimized/PlaceSafepoints.cpp.ll
 ; llvm/optimized/PredicateExpander.cpp.ll
 ; llvm/optimized/PreprocessingRecord.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; llvm/optimized/RecordsSlice.cpp.ll
@@ -379,6 +375,8 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
+; luajit/optimized/lj_snap.ll
+; luajit/optimized/lj_snap_dyn.ll
 ; luau/optimized/Autocomplete.test.cpp.ll
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; luau/optimized/Config.test.cpp.ll
@@ -407,6 +405,15 @@
 ; luau/optimized/Unifier2.test.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_obj_event.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/alignDialog.cpp.ll
@@ -429,7 +436,6 @@
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/compiler.cpp.ll
 ; mitsuba3/optimized/cylinder.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/sphere.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
@@ -543,7 +549,6 @@
 ; opencv/optimized/contours_new.cpp.ll
 ; opencv/optimized/goturnTracker.cpp.ll
 ; opencv/optimized/hog.cpp.ll
-; opencv/optimized/lpsolver.cpp.ll
 ; opencv/optimized/multiTracker_dataset.cpp.ll
 ; opencv/optimized/opencl-opencv-interop.cpp.ll
 ; opencv/optimized/pooling_layer.cpp.ll
@@ -687,7 +692,6 @@
 ; postgres/optimized/tuplesortvariants.ll
 ; proj/optimized/c_api.cpp.ll
 ; proj/optimized/gridshift.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/enum_field.cc.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/field.cc.ll
@@ -976,6 +980,17 @@
 ; z3/optimized/theory_special_relations.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/7aq90jycr3x842qyrhjbel971.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; zxing/optimized/WhiteRectDetector.cpp.ll

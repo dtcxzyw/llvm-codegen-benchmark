@@ -1,21 +1,21 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	leaq	-1(%rsi,%rdx), %rax
 	cqto
 	idivq	%rsi
-	cmpq	%rdi, %rax
-	setl	%al
-	retq
-func0000000000000086:                   # @func0000000000000086
-	leaq	-1(%rsi,%rdx), %rax
-	cqto
-	idivq	%rsi
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setg	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000106:                   # @func0000000000000106
 	leaq	-1(%rsi,%rdx), %rax
 	cqto
 	idivq	%rsi
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setl	%al
+	retq
+func0000000000000104:                   # @func0000000000000104
+	leaq	-1(%rsi,%rdx), %rax
+	cqto
+	idivq	%rsi
+	cmpq	%rax, %rdi
+	setb	%al
 	retq

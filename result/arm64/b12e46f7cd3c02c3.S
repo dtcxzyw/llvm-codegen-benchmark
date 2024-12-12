@@ -40,7 +40,7 @@ func000000000000003c:                   // @func000000000000003c
 	add	x0, x0, x8, lsl #1
 	ret
                                         // -- End function
-func000000000000003e:                   // @func000000000000003e
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	mov	w8, w2
 	sub	x8, x8, x1

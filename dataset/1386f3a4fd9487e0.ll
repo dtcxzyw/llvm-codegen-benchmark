@@ -14,7 +14,13 @@ entry:
   ret i32 %2
 }
 
-; 203 occurrences:
+; 211 occurrences:
+; boost/optimized/boundary.ll
+; boost/optimized/codepage.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/date_time.ll
+; boost/optimized/formatter.ll
 ; cmake/optimized/fse_compress.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; git/optimized/diff.ll
@@ -217,6 +223,8 @@ entry:
 ; openusd/optimized/cdef_block.c.ll
 ; openusd/optimized/loopfilter.c.ll
 ; stb/optimized/stb_connected_components.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i16 %0) #0 {

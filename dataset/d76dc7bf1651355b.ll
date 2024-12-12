@@ -13,12 +13,13 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; linux/optimized/intel_pch_refclk.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/vlv_dsi_pll.ll
+; lvgl/optimized/lv_math.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/fastcover.c.ll

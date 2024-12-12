@@ -1,4 +1,4 @@
-func00000000000000ba:                   # @func00000000000000ba
+func00000000000000bb:                   # @func00000000000000bb
 	srli	a3, a1, 2
 	slli	a2, a2, 32
 	srli	a2, a2, 32
@@ -7,7 +7,7 @@ func00000000000000ba:                   # @func00000000000000ba
 	slli	a2, a2, 2
 	add	a0, a0, a2
 	ret
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000000fb:                   # @func00000000000000fb
 	srli	a3, a1, 4
 	sext.w	a2, a2
 	sub	a2, a2, a3

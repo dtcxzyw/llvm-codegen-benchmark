@@ -1,15 +1,14 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/giaPat2.c.ll
-; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; graphviz/optimized/matrix_ops.c.ll
 ; gromacs/optimized/pairlist_tuning.cpp.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -20,7 +19,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -29,10 +28,10 @@ entry:
 ; icu/optimized/csrutf8.ll
 ; ninja/optimized/build_log.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -43,7 +42,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
-  %4 = icmp sle i32 %3, %1
+  %4 = icmp sge i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -54,12 +53,12 @@ entry:
 define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 201 occurrences:
+; 200 occurrences:
 ; z3/optimized/ackr_model_converter.cpp.ll
 ; z3/optimized/api_ast_map.cpp.ll
 ; z3/optimized/arith_axioms.cpp.ll
@@ -82,7 +81,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/ctx_solver_simplify_tactic.cpp.ll
 ; z3/optimized/datalog_parser.cpp.ll
@@ -265,7 +263,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp ugt i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -276,7 +274,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 5
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp ult i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -284,10 +282,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

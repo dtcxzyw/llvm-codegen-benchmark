@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 69 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; clamav/optimized/sigtool.c.ll
 ; cpython/optimized/cfield.ll
@@ -14,11 +14,9 @@
 ; gromacs/optimized/colvargrid.cpp.ll
 ; gromacs/optimized/pbc.cpp.ll
 ; linux/optimized/dma-ring.ll
-; linux/optimized/head64.ll
 ; linux/optimized/indirect.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_gt_irq.ll
-; linux/optimized/net-procfs.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/vma.ll
@@ -28,6 +26,7 @@
 ; llvm/optimized/AnalyzerStatsChecker.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -35,7 +34,6 @@
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/GCOVProfiling.cpp.ll
 ; llvm/optimized/GlobalsStream.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
@@ -105,8 +103,9 @@ entry:
   ret i32 %3
 }
 
-; 220 occurrences:
+; 225 occurrences:
 ; abc/optimized/cuddApa.c.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -199,6 +198,12 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_rect.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
@@ -218,8 +223,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -335,13 +338,12 @@ entry:
   ret i32 %3
 }
 
-; 503 occurrences:
+; 502 occurrences:
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/cnfUtil.c.ll
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
-; abc/optimized/satUtil.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
@@ -365,6 +367,7 @@ entry:
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/work_stealing.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/coordinate_descent_minimizer.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
@@ -392,7 +395,6 @@ entry:
 ; cmake/optimized/EncodingCXX.cxx.ll
 ; cmake/optimized/cmMakefile.cxx.ll
 ; cmake/optimized/divsufsort.c.ll
-; cmake/optimized/stream_flags_encoder.c.ll
 ; cpython/optimized/ceval.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -548,7 +550,6 @@ entry:
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
@@ -706,6 +707,7 @@ entry:
 ; yosys/optimized/blif.ll
 ; yosys/optimized/blifparse.ll
 ; yosys/optimized/btor.ll
+; yosys/optimized/bugpoint.ll
 ; yosys/optimized/cellaigs.ll
 ; yosys/optimized/check.ll
 ; yosys/optimized/chformal.ll
@@ -848,8 +850,10 @@ entry:
   ret i32 %3
 }
 
-; 183 occurrences:
+; 185 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -1041,7 +1045,7 @@ entry:
   ret i32 %3
 }
 
-; 101 occurrences:
+; 96 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
@@ -1105,13 +1109,7 @@ entry:
 ; openspiel/optimized/spiel_bots.cc.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/walreceiver.ll
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; qemu/optimized/audio_mixeng.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; spike/optimized/f64_div.ll
@@ -1141,6 +1139,7 @@ entry:
 ; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
@@ -1152,7 +1151,7 @@ entry:
   ret i32 %3
 }
 
-; 232 occurrences:
+; 230 occurrences:
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ivyTable.c.ll
@@ -1166,6 +1165,7 @@ entry:
 ; arrow/optimized/tensor.cc.ll
 ; arrow/optimized/writer.cc.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/numeric.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; cmake/optimized/divsufsort.c.ll
@@ -1251,7 +1251,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -1351,8 +1350,6 @@ entry:
 ; pocketpy/optimized/expr.cpp.ll
 ; pocketpy/optimized/linalg.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; quantlib/optimized/gsrprocesscore.ll
@@ -1394,12 +1391,11 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/output_core.ll
 ; openssl/optimized/libcrypto-lib-rand_uniform.ll
 ; openssl/optimized/libcrypto-shlib-rand_uniform.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i64 %0) #0 {
 entry:
@@ -1646,9 +1642,8 @@ entry:
   ret i32 %3
 }
 
-; 23 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
-; abseil-cpp/optimized/exponential_biased.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -1657,7 +1652,6 @@ entry:
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; linux/optimized/af_netlink.ll
-; linux/optimized/head64.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/virtgpu_vq.ll
 ; luau/optimized/lmathlib.cpp.ll
@@ -1679,11 +1673,12 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; icu/optimized/messagepattern.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; luau/optimized/lcorolib.cpp.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
+; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000013(i64 %0) #0 {
 entry:
@@ -1693,10 +1688,11 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; qemu/optimized/linux-user_syscall.c.ll
 ; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
 ; wasmtime-rs/optimized/5euizg9wb5pa0ryd.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i64 %0) #0 {
 entry:
@@ -1706,7 +1702,8 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000012(i64 %0) #0 {
@@ -1738,9 +1735,8 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; wireshark/optimized/addr_resolv.c.ll
-; z3/optimized/cmd_context.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i64 %0) #0 {
 entry:

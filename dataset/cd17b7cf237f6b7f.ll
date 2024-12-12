@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 57 occurrences:
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; darktable/optimized/introspection_equalizer.c.ll
@@ -56,14 +56,13 @@
 ; redis/optimized/t_hash.ll
 ; redis/optimized/t_string.ll
 ; rocksdb/optimized/column_family.cc.ll
-; stb/optimized/stb_hexwave.c.ll
 ; wireshark/optimized/byte_view_text.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -102,7 +101,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

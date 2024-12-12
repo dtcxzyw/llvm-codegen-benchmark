@@ -1,7 +1,9 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	smull	v0.4s, v0.4h, v1.4h
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+                                        // kill: def $w1 killed $w1 def $x1
+                                        // kill: def $w0 killed $w0 def $x0
+	sxth	x8, w1
+	sxth	x9, w0
+	smull	x0, w9, w8
 	ret
                                         // -- End function

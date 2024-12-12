@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/io_uring.ll
-; linux/optimized/nsxfname.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; openjdk/optimized/check_code.ll
 ; qemu/optimized/fpu_softfloat.c.ll
@@ -48,7 +47,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; slurm/optimized/x11_util.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i16 %0, i32 %1) #0 {
+define i16 @func0000000000000021(i16 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i16 %0, 2
   %3 = icmp eq i32 %1, 0
@@ -59,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/sky2.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000018(i16 %0, i32 %1) #0 {
+define i16 @func0000000000000028(i16 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i16 %0, 256
   %3 = icmp ugt i32 %1, 1500

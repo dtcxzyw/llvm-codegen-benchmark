@@ -1,8 +1,7 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/fraHot.c.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
 ; openmpi/optimized/netpatterns_multinomial_tree.ll
@@ -20,7 +19,7 @@ entry:
   ret i32 %5
 }
 
-; 48 occurrences:
+; 47 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/giaEquiv.c.ll
 ; brotli/optimized/decode.c.ll
@@ -30,7 +29,6 @@ entry:
 ; hermes/optimized/RegAlloc.cpp.ll
 ; icu/optimized/genrb.ll
 ; libquic/optimized/padding.c.ll
-; linux/optimized/xz_dec_bcj.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/CGStmtOpenMP.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
@@ -57,9 +55,9 @@ entry:
 ; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/WinEHPrepare.cpp.ll
 ; llvm/optimized/X86CallFrameOptimization.cpp.ll
+; lvgl/optimized/lv_area.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; minetest/optimized/guiHyperText.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlaeda.c.ll
 ; opencv/optimized/tracker_vit.cpp.ll
 ; openusd/optimized/warped_motion.c.ll

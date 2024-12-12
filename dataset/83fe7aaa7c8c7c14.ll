@@ -3,7 +3,7 @@
 ; gromacs/optimized/localtopology.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nsw i64 %0, %3
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nuw i64 %0, %3
@@ -24,10 +24,11 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
+; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nuw nsw i64 %0, %3
@@ -39,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nuw nsw i64 %0, %3
@@ -51,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fa(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001ea(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nuw nsw i64 %0, %3
@@ -63,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nuw i64 %0, %3
@@ -75,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ea(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001ca(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nuw i64 %0, %3
@@ -87,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/mx_function.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nuw i64 %0, %3

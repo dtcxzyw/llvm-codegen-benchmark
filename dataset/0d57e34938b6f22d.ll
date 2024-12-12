@@ -4,9 +4,9 @@
 ; libpng/optimized/pngwutil.c.ll
 ; openjdk/optimized/pngread.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000601(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 1
+  %3 = icmp samesign ugt i32 %2, 1
   %4 = select i1 %3, i32 %1, i32 3
   %5 = lshr i32 %0, %4
   %6 = icmp eq i32 %5, 0
@@ -59,7 +59,7 @@ entry:
 ; velox/optimized/VectorEncoding.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 1

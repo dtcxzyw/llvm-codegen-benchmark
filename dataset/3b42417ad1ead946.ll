@@ -50,13 +50,14 @@ entry:
   %4 = shl nuw nsw i64 %3, 12
   %5 = zext nneg i32 %1 to i64
   %6 = or disjoint i64 %4, %5
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; redis/optimized/hyperloglog.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002f(i64 %0, i32 %1, i8 %2) #0 {
 entry:

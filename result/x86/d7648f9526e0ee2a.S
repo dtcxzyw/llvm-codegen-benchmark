@@ -41,3 +41,9 @@ func000000000000001d:                   # @func000000000000001d
 	andl	$3, %esi
 	leaq	(%rsi,%rdi,4), %rax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	leal	1(%rsi), %eax
+	andl	$31, %eax
+	shlq	$5, %rdi
+	orq	%rdi, %rax
+	retq

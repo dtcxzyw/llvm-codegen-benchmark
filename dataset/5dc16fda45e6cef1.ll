@@ -27,7 +27,7 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 13 occurrences:
 ; linux/optimized/early_ioremap.ll
 ; mini-lsm-rs/optimized/211qm7emy1a6xqse.ll
 ; mini-lsm-rs/optimized/3jirohyl4so2bgw0.ll
@@ -37,6 +37,10 @@ entry:
 ; qemu/optimized/system_physmem.c.ll
 ; smol-rs/optimized/1p7wu8w0t94kgeq2.ll
 ; smol-rs/optimized/21eidrukyvr99qqv.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -46,7 +50,7 @@ entry:
   ret i64 %4
 }
 
-; 50 occurrences:
+; 54 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/acecXor.c.ll
@@ -97,6 +101,10 @@ entry:
 ; smol-rs/optimized/1p7wu8w0t94kgeq2.ll
 ; smol-rs/optimized/21eidrukyvr99qqv.ll
 ; spike/optimized/f128_sqrt.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

@@ -4,14 +4,14 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %sil
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	shrb	$4, %sil
 	andb	$3, %sil
 	andb	$3, %dil
 	cmpb	%dil, %sil
 	seta	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	shrb	$3, %sil
 	andb	$3, %sil
 	andb	$3, %dil

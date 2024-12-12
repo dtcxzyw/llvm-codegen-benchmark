@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 75 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
@@ -64,7 +64,6 @@
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
@@ -95,7 +94,7 @@ define i1 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -2
   %4 = icmp eq i64 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

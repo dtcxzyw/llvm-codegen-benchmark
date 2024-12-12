@@ -1,14 +1,13 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/giaEra2.c.ll
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %2, 5
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -26,7 +25,7 @@ entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -38,7 +37,19 @@ entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 1
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000a3(i32 %0, i32 %1) #0 {
+entry:
+  %2 = freeze i32 %1
+  %3 = icmp samesign ult i32 %2, -146097
+  %4 = zext i1 %3 to i32
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -54,7 +65,7 @@ entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 4
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -66,7 +77,7 @@ entry:
   %2 = freeze i32 %1
   %3 = icmp ugt i32 %2, 1
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -83,7 +94,7 @@ entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -95,7 +106,7 @@ entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -107,7 +118,7 @@ entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

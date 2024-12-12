@@ -1,5 +1,5 @@
 
-; 422 occurrences:
+; 428 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; casadi/optimized/sundials_direct.c.ll
@@ -92,6 +92,7 @@
 ; libzmq/optimized/proxy_thr.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; linux/optimized/build_policy.ll
+; linux/optimized/build_utility.ll
 ; linux/optimized/shmem.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/llama.cpp.ll
@@ -227,7 +228,6 @@
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -420,6 +420,12 @@
 ; wasmtime-rs/optimized/24jxjxhx40nukvhl.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; yosys/optimized/satgen.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zfp/optimized/encode4f.c.ll
 ; zfp/optimized/encode4i.c.ll
 ; Function Attrs: nounwind
@@ -430,7 +436,7 @@ entry:
   ret i64 %3
 }
 
-; 312 occurrences:
+; 284 occurrences:
 ; abc/optimized/sswClass.c.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; assimp/optimized/HMPLoader.cpp.ll
@@ -448,7 +454,6 @@ entry:
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_scalepixels.c.ll
 ; darktable/optimized/introspection_sharpen.c.ll
-; darktable/optimized/jpeg.c.ll
 ; darktable/optimized/tiff.c.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; fmt/optimized/format.cc.ll
@@ -655,34 +660,7 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; openblas/optimized/dimatcopy.c.ll
-; openblas/optimized/lapacke_dgbcon_work.c.ll
-; openblas/optimized/lapacke_dgbtrf_work.c.ll
 ; openblas/optimized/lapacke_dgesdd_work.c.ll
-; openblas/optimized/lapacke_dlacpy_work.c.ll
-; openblas/optimized/lapacke_dlapmr_work.c.ll
-; openblas/optimized/lapacke_dlapmt_work.c.ll
-; openblas/optimized/lapacke_dlarfb_work.c.ll
-; openblas/optimized/lapacke_dlarft_work.c.ll
-; openblas/optimized/lapacke_dlarfx_work.c.ll
-; openblas/optimized/lapacke_dlaset_work.c.ll
-; openblas/optimized/lapacke_dlaswp_work.c.ll
-; openblas/optimized/lapacke_dopmtr_work.c.ll
-; openblas/optimized/lapacke_dpftrs_work.c.ll
-; openblas/optimized/lapacke_dpprfs_work.c.ll
-; openblas/optimized/lapacke_dppsv_work.c.ll
-; openblas/optimized/lapacke_dppsvx_work.c.ll
-; openblas/optimized/lapacke_dpptrs_work.c.ll
-; openblas/optimized/lapacke_dsfrk_work.c.ll
-; openblas/optimized/lapacke_dspevx_work.c.ll
-; openblas/optimized/lapacke_dspgvx_work.c.ll
-; openblas/optimized/lapacke_dsprfs_work.c.ll
-; openblas/optimized/lapacke_dspsv_work.c.ll
-; openblas/optimized/lapacke_dspsvx_work.c.ll
-; openblas/optimized/lapacke_dsptrs_work.c.ll
-; openblas/optimized/lapacke_dtfsm_work.c.ll
-; openblas/optimized/lapacke_dtprfb_work.c.ll
-; openblas/optimized/lapacke_dtprfs_work.c.ll
-; openblas/optimized/lapacke_dtptrs_work.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/basicretinafilter.cpp.ll
@@ -751,7 +729,7 @@ entry:
   ret i64 %3
 }
 
-; 42 occurrences:
+; 49 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaSupps.c.ll
@@ -794,6 +772,13 @@ entry:
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
@@ -879,7 +864,7 @@ entry:
   ret i64 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaDecs.c.ll
 ; ncnn/optimized/lstm_x86_avx.cpp.ll
 ; ncnn/optimized/lstm_x86_avx2.cpp.ll
@@ -890,7 +875,6 @@ entry:
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; openjdk/optimized/jcprepct.ll
-; openusd/optimized/tessellation.cpp.ll
 ; php/optimized/zend_ssa.ll
 ; tev/optimized/ExrImageSaver.cpp.ll
 ; Function Attrs: nounwind
@@ -901,7 +885,7 @@ entry:
   ret i64 %3
 }
 
-; 192 occurrences:
+; 189 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcVerify.c.ll
 ; abc/optimized/aigFrames.c.ll
@@ -911,10 +895,6 @@ entry:
 ; abc/optimized/fraMan.c.ll
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/fraigMan.c.ll
-; abc/optimized/ifDec08.c.ll
-; abc/optimized/ifDec10.c.ll
-; abc/optimized/ifDec16.c.ll
-; abc/optimized/kitTruth.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; abc/optimized/simUtils.c.ll
 ; abc/optimized/sswMan.c.ll
@@ -1075,6 +1055,7 @@ entry:
 ; openusd/optimized/resize.c.ll
 ; openusd/optimized/restoration.c.ll
 ; openusd/optimized/stbImage.cpp.ll
+; openusd/optimized/tessellation.cpp.ll
 ; postgres/optimized/brin.ll
 ; postgres/optimized/mvdistinct.ll
 ; postgres/optimized/regexec.ll
@@ -1126,7 +1107,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   ret i64 %3
 }
 

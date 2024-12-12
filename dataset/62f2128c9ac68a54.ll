@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 60 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
@@ -51,7 +51,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -65,7 +64,7 @@
 define i1 @func0000000000000002(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to float
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   ret i1 %3
 }
 
@@ -80,7 +79,7 @@ entry:
 define i1 @func0000000000000004(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to float
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   ret i1 %3
 }
 
@@ -90,7 +89,7 @@ entry:
 define i1 @func0000000000000005(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to float
-  %3 = fcmp ult float %2, %0
+  %3 = fcmp ugt float %0, %2
   ret i1 %3
 }
 
@@ -102,7 +101,7 @@ entry:
 define i1 @func0000000000000007(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to float
-  %3 = fcmp une float %2, %0
+  %3 = fcmp une float %0, %2
   ret i1 %3
 }
 
@@ -112,7 +111,7 @@ entry:
 define i1 @func000000000000000c(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to float
-  %3 = fcmp ole float %2, %0
+  %3 = fcmp oge float %0, %2
   ret i1 %3
 }
 
@@ -122,7 +121,7 @@ entry:
 define i1 @func0000000000000012(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp nneg i64 %1 to float
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   ret i1 %3
 }
 
@@ -134,7 +133,7 @@ entry:
 define i1 @func0000000000000008(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to float
-  %3 = fcmp oeq float %2, %0
+  %3 = fcmp oeq float %0, %2
   ret i1 %3
 }
 
@@ -144,7 +143,7 @@ entry:
 define i1 @func0000000000000003(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to float
-  %3 = fcmp ugt float %2, %0
+  %3 = fcmp ult float %0, %2
   ret i1 %3
 }
 

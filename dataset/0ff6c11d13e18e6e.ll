@@ -8,7 +8,7 @@
 define i16 @func000000000000003f(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   %5 = shl nuw nsw i16 %1, 1
   %6 = add nuw nsw i16 %4, %5
   ret i16 %6
@@ -20,7 +20,7 @@ entry:
 define i16 @func0000000000000004(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = add nsw i16 %3, %0
+  %4 = add nsw i16 %0, %3
   %5 = shl i16 %1, 4
   %6 = add i16 %4, %5
   ret i16 %6

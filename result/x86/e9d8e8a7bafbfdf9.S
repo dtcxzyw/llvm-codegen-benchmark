@@ -22,8 +22,13 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$1, %eax
 	setne	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vcvttss2si	%xmm0, %eax
 	cmpl	$32, %eax
+	setb	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	vcvttss2si	%xmm0, %eax
+	cmpl	$4, %eax
 	setb	%al
 	retq

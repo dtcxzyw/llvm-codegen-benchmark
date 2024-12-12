@@ -23,7 +23,7 @@ entry:
   ret double %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; hwloc/optimized/topology-nvml.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BranchProbability.cpp.ll
@@ -31,7 +31,6 @@ entry:
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; openjdk/optimized/klass.ll
 ; wireshark/optimized/packet-isi.c.ll
-; wireshark/optimized/packet-its.c.ll
 ; wireshark/optimized/packet-lpp.c.ll
 ; wireshark/optimized/packet-rtcp.c.ll
 ; wireshark/optimized/packet-stanag4607.c.ll

@@ -152,6 +152,12 @@ func0000000000000038:                   # @func0000000000000038
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func0000000000000048:                   # @func0000000000000048
+	slliw	a2, a2, 31
+	slliw	a1, a1, 23
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
 func0000000000000008:                   # @func0000000000000008
 	slliw	a2, a2, 24
 	slliw	a1, a1, 28
@@ -164,30 +170,11 @@ func0000000000000078:                   # @func0000000000000078
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000004c:                   # @func000000000000004c
-	andi	a2, a2, 255
-	slliw	a1, a1, 3
-	slli	a2, a2, 11
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ret
-func0000000000000030:                   # @func0000000000000030
-	slliw	a2, a2, 25
-	slliw	a1, a1, 23
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ret
 func0000000000000060:                   # @func0000000000000060
 	slliw	a2, a2, 16
 	or	a0, a0, a2
 	slliw	a1, a1, 29
 	or	a0, a0, a1
-	ret
-func0000000000000048:                   # @func0000000000000048
-	slliw	a2, a2, 31
-	slliw	a1, a1, 23
-	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slliw	a2, a2, 24

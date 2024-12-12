@@ -10,6 +10,12 @@ func0000000000000042:                   # @func0000000000000042
 	vcmpltpd	%xmm1, %xmm2, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
+func0000000000000024:                   # @func0000000000000024
+	vcvtss2sd	%xmm2, %xmm2, %xmm2
+	vcmpltpd	%xmm0, %xmm2, %k1
+	vcmpltpd	%xmm2, %xmm1, %k0 {%k1}
+	kmovd	%k0, %eax
+	retq
 func00000000000000ca:                   # @func00000000000000ca
 	vcvtss2sd	%xmm2, %xmm2, %xmm2
 	vcmplepd	%xmm2, %xmm0, %k1

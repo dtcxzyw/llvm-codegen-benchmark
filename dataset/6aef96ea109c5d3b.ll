@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 71 occurrences:
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatOld.c.ll
@@ -20,7 +20,6 @@
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_gem_shrinker.ll
 ; linux/optimized/mprotect.ll
-; linux/optimized/scsiglue.ll
 ; linux/optimized/task_mmu.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/BasicObjCFoundationChecks.cpp.ll
@@ -59,7 +58,6 @@
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; redis/optimized/script.ll
 ; rocksdb/optimized/hash.cc.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; spike/optimized/csrs.ll
@@ -77,7 +75,7 @@
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = xor i64 %3, -4466874330221494952
   ret i64 %4
 }
@@ -118,7 +116,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 61440
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = xor i64 %3, 65472
   ret i64 %4
 }

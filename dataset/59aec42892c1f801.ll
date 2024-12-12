@@ -1,5 +1,5 @@
 
-; 248 occurrences:
+; 247 occurrences:
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -177,7 +177,6 @@
 ; ruby/optimized/util.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; spike/optimized/i64_to_f32.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll

@@ -30,7 +30,7 @@ func0000000000000040:                   # @func0000000000000040
 	vmovq	%rdx, %xmm3
 	vpunpcklqdq	%xmm1, %xmm3, %xmm1     # xmm1 = xmm3[0],xmm1[0]
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
-	vpcmpnleuq	%ymm2, %ymm0, %k0
+	vpcmpltuq	%ymm0, %ymm2, %k0
 	vmovq	%rcx, %xmm0
 	vmovq	%rsi, %xmm1
 	vpunpcklqdq	%xmm0, %xmm1, %xmm0     # xmm0 = xmm1[0],xmm0[0]
@@ -73,7 +73,7 @@ func0000000000000042:                   # @func0000000000000042
 	vmovq	%rdx, %xmm3
 	vpunpcklqdq	%xmm1, %xmm3, %xmm1     # xmm1 = xmm3[0],xmm1[0]
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
-	vpcmpnleuq	%ymm2, %ymm0, %k0
+	vpcmpltuq	%ymm0, %ymm2, %k0
 	vmovq	%rcx, %xmm0
 	vmovq	%rsi, %xmm1
 	vpunpcklqdq	%xmm0, %xmm1, %xmm0     # xmm0 = xmm1[0],xmm0[0]

@@ -10,7 +10,7 @@ entry:
   %2 = uitofp nneg i32 %1 to float
   %3 = fmul float %2, 0x3F70101020000000
   %4 = fsub float 1.000000e+00, %3
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

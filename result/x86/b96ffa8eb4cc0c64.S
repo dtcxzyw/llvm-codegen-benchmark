@@ -5,17 +5,16 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
-	shrxq	%rsi, %rdi, %rax
-	testb	$15, %al
-	setne	%al
+	btq	%rsi, %rdi
+	setb	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	shrxq	%rsi, %rdi, %rax
 	andl	$63, %eax
 	cmpl	$59, %eax
 	setae	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	shrxq	%rsi, %rdi, %rax
 	andl	$63, %eax
 	cmpl	$59, %eax

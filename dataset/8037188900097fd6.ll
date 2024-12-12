@@ -1,7 +1,10 @@
 
 ; 133 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/get_turns.ll
 ; clamav/optimized/file.cpp.ll
 ; coreutils-rs/optimized/2eb96ulhupdvrip8.ll
+; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -94,6 +97,7 @@
 ; llvm/optimized/Gnu.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
+; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
@@ -109,10 +113,6 @@
 ; redis/optimized/util.ll
 ; rust-analyzer-rs/optimized/2pjtxeptskgmq0yj.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -138,7 +138,7 @@ define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = xor i1 %3, true
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

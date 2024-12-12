@@ -11,10 +11,11 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
 ; wireshark/optimized/packet-csn1.c.ll

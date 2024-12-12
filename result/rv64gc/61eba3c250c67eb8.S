@@ -33,26 +33,19 @@ func0000000000000005:                   # @func0000000000000005
 .LBB3_2:
 	slliw	a0, a0, 2
 	ret
-func0000000000000020:                   # @func0000000000000020
-	sext.w	a1, a0
-	sltiu	a1, a1, 128
-	slliw	a0, a0, 5
-	neg	a1, a1
-	and	a0, a0, a1
-	ret
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a1, a0
-	bgtz	a1, .LBB5_2
+	bgtz	a1, .LBB4_2
 	li	a0, 256
 	ret
-.LBB5_2:
+.LBB4_2:
 	slliw	a0, a0, 6
 	ret
 func000000000000001b:                   # @func000000000000001b
 	sext.w	a1, a0
-	bgtz	a1, .LBB6_2
+	bgtz	a1, .LBB5_2
 	li	a0, 24
 	ret
-.LBB6_2:
+.LBB5_2:
 	slliw	a0, a0, 3
 	ret

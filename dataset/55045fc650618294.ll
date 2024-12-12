@@ -30,6 +30,8 @@ entry:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/topology.ll
 ; ceres/optimized/gradient_problem_solver.cc.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
@@ -79,7 +81,6 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/nodedef.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; minetest/optimized/test.cpp.ll
@@ -140,7 +141,6 @@ entry:
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll

@@ -36,14 +36,3 @@ func0000000000000006:                   # @func0000000000000006
 	sltu	a1, a1, a3
 	and	a0, a0, a1
 	ret
-func0000000000000005:                   # @func0000000000000005
-	beq	a2, a4, .LBB4_2
-	sltu	a1, a4, a2
-	xori	a1, a1, 1
-	and	a0, a0, a1
-	ret
-.LBB4_2:
-	sltu	a1, a3, a1
-	xori	a1, a1, 1
-	and	a0, a0, a1
-	ret

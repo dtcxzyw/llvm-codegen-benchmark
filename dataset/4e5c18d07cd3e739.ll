@@ -6,27 +6,25 @@
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; wireshark/optimized/voip_calls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000182(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq ptr %1, null
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; git/optimized/commit.ll
 ; git/optimized/dir.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp ne ptr %1, null
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -37,7 +35,7 @@ entry:
 ; php/optimized/cgi_main.ll
 ; postgres/optimized/initdb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = or i1 %3, %0
@@ -53,10 +51,10 @@ entry:
 ; openusd/optimized/schemaBase.cpp.ll
 ; wireshark/optimized/packet-cip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000302(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq ptr %1, null
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -69,7 +67,7 @@ entry:
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; wireshark/optimized/voip_calls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = or i1 %3, %0

@@ -57,7 +57,7 @@ entry:
 define i64 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -134218240
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = select i1 %0, i64 0, i64 2147483648
   %6 = or i64 %5, %4
   ret i64 %6
@@ -70,7 +70,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -2049
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = select i1 %1, i64 2048, i64 0
   %6 = or disjoint i64 %4, %5
   ret i64 %6

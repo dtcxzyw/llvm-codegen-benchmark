@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; arrow/optimized/bitmap.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -14,9 +14,10 @@
 ; openssl/optimized/libdefault-lib-cipher_tdes_default_hw.ll
 ; openssl/optimized/liblegacy-lib-cipher_des_hw.ll
 ; velox/optimized/BitUtil.cpp.ll
+; wireshark/optimized/packet-bacapp.c.ll
 ; wireshark/optimized/packet-ocfs2.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 1, %0
@@ -26,12 +27,11 @@ entry:
   ret i8 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; proxygen/optimized/Logging.cpp.ll
 ; soc-simulator/optimized/verilated.ll
-; wireshark/optimized/packet-bacapp.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw i32 1, %0

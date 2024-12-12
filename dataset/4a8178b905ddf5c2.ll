@@ -1,11 +1,9 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; linux/optimized/genalloc.ll
-; linux/optimized/vclock_gettime.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; openjdk/optimized/g1CollectedHeap.ll
-; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

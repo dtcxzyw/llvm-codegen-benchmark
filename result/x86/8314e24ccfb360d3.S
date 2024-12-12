@@ -99,6 +99,11 @@ func0000000000000043:                   # @func0000000000000043
 	vucomiss	%xmm0, %xmm1
 	setb	%al
 	retq
+func000000000000004d:                   # @func000000000000004d
+	vmaxss	%xmm2, %xmm1, %xmm1
+	vucomiss	%xmm1, %xmm0
+	setbe	%al
+	retq
 func000000000000002a:                   # @func000000000000002a
 	vmaxss	%xmm2, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
@@ -143,11 +148,6 @@ func0000000000000048:                   # @func0000000000000048
 	retq
 func000000000000002d:                   # @func000000000000002d
 	vminss	%xmm2, %xmm1, %xmm1
-	vucomiss	%xmm1, %xmm0
-	setbe	%al
-	retq
-func000000000000004d:                   # @func000000000000004d
-	vmaxss	%xmm2, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setbe	%al
 	retq

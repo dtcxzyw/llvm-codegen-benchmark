@@ -1,5 +1,5 @@
 
-; 141 occurrences:
+; 191 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaResub.c.ll
@@ -14,6 +14,7 @@
 ; cpython/optimized/unicodeobject.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; egg-rs/optimized/2fp1d0strj8iokyf.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; flac/optimized/bitwriter.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -22,14 +23,9 @@
 ; git/optimized/quote.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; gromacs/optimized/reversetopology.cpp.ll
-; gromacs/optimized/vals16.c.ll
 ; grpc/optimized/json_reader.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5Oalloc.c.ll
 ; hdf5/optimized/H5Oint.c.ll
 ; hermes/optimized/AST2JS.cpp.ll
@@ -45,7 +41,6 @@
 ; libquic/optimized/blowfish.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; linux/optimized/apic.ll
-; linux/optimized/attr.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/exec.ll
 ; linux/optimized/fhandle.ll
@@ -69,6 +64,7 @@
 ; lua/optimized/lcode.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/IrBuilder.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; minetest/optimized/CImage.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -101,12 +97,49 @@
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
 ; opencv/optimized/rand.cpp.ll
+; openjdk/optimized/c1_Runtime1.ll
+; openjdk/optimized/compilationPolicy.ll
+; openjdk/optimized/compileBroker.ll
+; openjdk/optimized/constantPool.ll
+; openjdk/optimized/continuationEntry.ll
+; openjdk/optimized/continuationFreezeThaw.ll
+; openjdk/optimized/deoptimization.ll
+; openjdk/optimized/escapeBarrier.ll
+; openjdk/optimized/forte.ll
+; openjdk/optimized/frame.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-set.ll
 ; openjdk/optimized/hb-ucd.ll
 ; openjdk/optimized/hb-unicode.ll
+; openjdk/optimized/instanceStackChunkKlass.ll
+; openjdk/optimized/javaClasses.ll
+; openjdk/optimized/javaThread.ll
+; openjdk/optimized/jfrCallTrace.ll
+; openjdk/optimized/jfrResolution.ll
+; openjdk/optimized/jfrStackTrace.ll
+; openjdk/optimized/jvm.ll
+; openjdk/optimized/jvmciCompilerToVM.ll
+; openjdk/optimized/jvmciRuntime.ll
+; openjdk/optimized/jvmtiEnvBase.ll
+; openjdk/optimized/jvmtiEventController.ll
+; openjdk/optimized/jvmtiExport.ll
+; openjdk/optimized/jvmtiImpl.ll
+; openjdk/optimized/reflection.ll
+; openjdk/optimized/rootResolver.ll
+; openjdk/optimized/runtime.ll
+; openjdk/optimized/safepoint.ll
+; openjdk/optimized/scopedMemoryAccess.ll
+; openjdk/optimized/sharedRuntime.ll
+; openjdk/optimized/stackChunkOop.ll
+; openjdk/optimized/stackWatermark.ll
+; openjdk/optimized/stackWatermarkSet.ll
+; openjdk/optimized/stackwalk.ll
+; openjdk/optimized/vframe.ll
+; openjdk/optimized/vframeArray.ll
+; openjdk/optimized/vmError.ll
+; openjdk/optimized/whitebox.ll
+; openjdk/optimized/xVerify.ll
+; openjdk/optimized/zBarrierSet.ll
 ; openssl/optimized/libcrypto-lib-bf_enc.ll
 ; openssl/optimized/libcrypto-shlib-bf_enc.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
@@ -129,9 +162,9 @@
 ; ruby/optimized/process.ll
 ; ruby/optimized/time.ll
 ; spike/optimized/f32_to_bf16.ll
-; spike/optimized/f32_to_f16.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
+; verilator/optimized/V3Const__gen.cpp.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; wireshark/optimized/packet-diameter.c.ll
@@ -141,6 +174,23 @@
 ; wolfssl/optimized/ssl.c.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/4km3eupdnqqnodg5d7nrlf2sf.ll
+; zed-rs/optimized/5kpr1irzb57viu7vn1ci12z94.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/8c9m4dxfbx8n642b944htcs78.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/e80b5h5uaylvf0myf6av6e6rx.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:

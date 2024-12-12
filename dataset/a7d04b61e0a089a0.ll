@@ -18,7 +18,6 @@ entry:
 ; cmake/optimized/archive_blake2s_ref.c.ll
 ; cmake/optimized/archive_blake2sp_ref.c.ll
 ; cmake/optimized/block_buffer_encoder.c.ll
-; cmake/optimized/stream_buffer_encoder.c.ll
 ; cmake/optimized/urlapi.c.ll
 ; cpython/optimized/blake2b_impl.ll
 ; cpython/optimized/blake2s_impl.ll
@@ -35,11 +34,11 @@ entry:
 ; jemalloc/optimized/extent_dss.pic.ll
 ; jemalloc/optimized/extent_dss.sym.ll
 ; lief/optimized/pk.c.ll
-; linux/optimized/nsrepair.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/CGOpenMPRuntimeGPU.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/NonNullParamChecker.cpp.ll
 ; llvm/optimized/NullabilityChecker.cpp.ll
@@ -73,6 +72,7 @@ entry:
 ; verilator/optimized/V3LinkCells.cpp.ll
 ; wolfssl/optimized/aes.c.ll
 ; z3/optimized/hilbert_basis.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, ptr %2) #0 {
 entry:

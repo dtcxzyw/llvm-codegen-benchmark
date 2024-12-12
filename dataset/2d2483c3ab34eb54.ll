@@ -1,6 +1,6 @@
 
-%"struct.mold::elf::NameType.2522672" = type <{ %"class.std::basic_string_view.2522673", i32, i8, [3 x i8] }>
-%"class.std::basic_string_view.2522673" = type { i64, ptr }
+%"struct.mold::elf::NameType.2637081" = type <{ %"class.std::basic_string_view.2637082", i32, i8, [3 x i8] }>
+%"class.std::basic_string_view.2637082" = type { i64, ptr }
 
 ; 45 occurrences:
 ; lightgbm/optimized/objective_function.cpp.ll
@@ -49,7 +49,7 @@
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
   %4 = getelementptr nusw ptr, ptr %1, i64 %3
@@ -82,10 +82,10 @@ entry:
 ; opencv/optimized/aruco_detector.cpp.ll
 ; verilator/optimized/V3DfgAstToDfg.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000106(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr nusw %"struct.mold::elf::NameType.2522672", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.mold::elf::NameType.2637081", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = icmp slt i64 %6, 168
@@ -119,7 +119,7 @@ entry:
 ; velox/optimized/ComplexVector.cpp.ll
 ; z3/optimized/intblast_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000010a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
   %4 = getelementptr nusw i32, ptr %1, i64 %3

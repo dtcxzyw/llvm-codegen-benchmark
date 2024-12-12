@@ -1,4 +1,4 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax
 	vextracti128	$1, %ymm2, %xmm4
@@ -24,10 +24,8 @@ func0000000000000081:                   # @func0000000000000081
 	vmovq	%rdx, %xmm2
 	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm1, %ymm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpsubq	%ymm0, %ymm2, %ymm0
-	vpcmpeqq	%ymm0, %ymm1, %k0
+	vpsubq	%ymm1, %ymm2, %ymm1
+	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

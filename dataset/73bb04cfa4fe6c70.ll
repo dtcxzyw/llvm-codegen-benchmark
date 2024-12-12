@@ -1,13 +1,19 @@
 
-; 124 occurrences:
+; 129 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/giaFx.c.ll
+; abc/optimized/giaMinLut.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/giaMini.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
 ; abc/optimized/ifDec16.c.ll
+; abc/optimized/ifTune.c.ll
+; abc/optimized/kitGraph.c.ll
 ; abc/optimized/luckyFast16.c.ll
 ; abc/optimized/mioUtils.c.ll
 ; abc/optimized/mpmPre.c.ll
@@ -84,7 +90,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -132,7 +137,7 @@ entry:
   ret i32 %3
 }
 
-; 170 occurrences:
+; 172 occurrences:
 ; abc/optimized/wlcMem.c.ll
 ; clamav/optimized/explode.c.ll
 ; cpython/optimized/dtoa.ll
@@ -303,6 +308,8 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; wireshark/optimized/packet-reload-framing.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
@@ -331,7 +338,7 @@ entry:
   ret i32 %3
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/cnfUtil.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/extraUtilDsd.c.ll
@@ -344,7 +351,6 @@ entry:
 ; darktable/optimized/introspection_equalizer.c.ll
 ; gromacs/optimized/coder.c.ll
 ; linux/optimized/ehci-dbgp.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/isoch.ll
 ; linux/optimized/scatterlist.ll
@@ -385,11 +391,12 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/luckyFast16.c.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; libwebp/optimized/bit_reader_utils.c.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll
 ; openusd/optimized/bitreader_buffer.c.ll
 ; zfp/optimized/decode1f.c.ll
@@ -419,7 +426,7 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; linux/optimized/igmp.ll
 ; linux/optimized/intel_opregion.ll
 ; linux/optimized/mcast.ll
@@ -429,6 +436,7 @@ entry:
 ; wireshark/optimized/packet-igmp.c.ll
 ; wireshark/optimized/packet-sysex_digitech.c.ll
 ; yosys/optimized/test_cell.ll
+; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:

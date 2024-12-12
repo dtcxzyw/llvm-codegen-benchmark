@@ -4,6 +4,11 @@ func000000000000000f:                   # @func000000000000000f
 	slli	a0, a0, 3
 	sub	a0, a0, a1
 	ret
+func000000000000000c:                   # @func000000000000000c
+	add	a0, a0, a1
+	li	a1, 360
+	mul	a0, a0, a1
+	ret
 func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	slli	a0, a0, 1

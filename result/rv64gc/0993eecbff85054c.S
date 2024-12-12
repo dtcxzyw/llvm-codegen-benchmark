@@ -5,7 +5,7 @@ func000000000000000d:                   # @func000000000000000d
 .LBB0_2:                                # %entry
 	sext.w	a0, a0
 	ret
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	sext.w	a2, a1
 	bltz	a2, .LBB1_2
 	mv	a0, a1

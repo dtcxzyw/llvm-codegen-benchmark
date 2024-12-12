@@ -12,11 +12,11 @@
 ; postgres/optimized/varlena.ll
 ; qemu/optimized/hw_virtio_vhost-shadow-virtqueue.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
   %6 = getelementptr [0 x i16], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -25,12 +25,12 @@ entry:
 ; git/optimized/diffcore-delta.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 656
-  %6 = getelementptr nusw [16 x i32], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 656
+  %6 = getelementptr nusw nuw [16 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -41,12 +41,12 @@ entry:
 ; libwebp/optimized/idec_dec.c.ll
 ; libwebp/optimized/vp8_dec.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 32
-  %6 = getelementptr nusw [0 x ptr], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 32
+  %6 = getelementptr nusw nuw [0 x ptr], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -72,11 +72,11 @@ entry:
 ; linux/optimized/xdp.ll
 ; linux/optimized/xfrm_policy.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 64
   %6 = getelementptr [0 x ptr], ptr %5, i64 0, i64 %4
   ret ptr %6
 }

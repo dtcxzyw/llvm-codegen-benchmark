@@ -1,5 +1,5 @@
 
-; 421 occurrences:
+; 432 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -12,7 +12,6 @@
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -52,6 +51,10 @@
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; cpython/optimized/basearith.ll
@@ -421,11 +424,19 @@
 ; tev/optimized/main.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000004(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul nuw i128 %2, %0
+  %3 = mul nuw i128 %0, %2
   %4 = lshr i128 %3, 64
   ret i128 %4
 }
@@ -611,7 +622,7 @@ entry:
 define i128 @func0000000000000006(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul nuw nsw i128 %2, %0
+  %3 = mul nuw nsw i128 %0, %2
   %4 = lshr i128 %3, 64
   ret i128 %4
 }
@@ -797,7 +808,7 @@ entry:
 define i128 @func000000000000000e(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
-  %3 = mul nuw nsw i128 %2, %0
+  %3 = mul nuw nsw i128 %0, %2
   %4 = lshr i128 %3, 64
   ret i128 %4
 }
@@ -809,7 +820,7 @@ entry:
 define i128 @func0000000000000002(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul nsw i128 %2, %0
+  %3 = mul nsw i128 %0, %2
   %4 = lshr i128 %3, 64
   ret i128 %4
 }
@@ -820,7 +831,7 @@ entry:
 define i128 @func000000000000000a(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
-  %3 = mul nsw i128 %2, %0
+  %3 = mul nsw i128 %0, %2
   %4 = lshr i128 %3, 32
   ret i128 %4
 }
@@ -832,7 +843,7 @@ entry:
 define i128 @func0000000000000000(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul i128 %2, %0
+  %3 = mul i128 %0, %2
   %4 = lshr i128 %3, 64
   ret i128 %4
 }

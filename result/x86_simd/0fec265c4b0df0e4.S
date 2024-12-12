@@ -59,8 +59,47 @@ func0000000000000002:                   # @func0000000000000002
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	vpcmpnleub	.LCPI2_0(%rip), %xmm1, %k1
 	vmovdqu8	.LCPI2_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [64,64,64,64,u,u,u,u,u,u,u,u,u,u,u,u]
+	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
+	retq
+.LCPI3_0:
+	.byte	191                             # 0xbf
+	.byte	191                             # 0xbf
+	.byte	191                             # 0xbf
+	.byte	191                             # 0xbf
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI3_1:
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000011:                   # @func0000000000000011
+	vpcmpnleub	.LCPI3_0(%rip), %xmm1, %k1
+	vmovdqu8	.LCPI3_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [4,4,4,4,u,u,u,u,u,u,u,u,u,u,u,u]
 	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
 	retq

@@ -1,5 +1,5 @@
 
-; 111 occurrences:
+; 109 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -34,8 +34,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -114,7 +112,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, %0
+  %2 = mul i64 %0, %1
   %3 = and i64 %2, 4294967295
   ret i64 %3
 }
@@ -159,7 +157,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, %0
+  %2 = mul i64 %0, %1
   %3 = and i64 %2, 63
   ret i64 %3
 }

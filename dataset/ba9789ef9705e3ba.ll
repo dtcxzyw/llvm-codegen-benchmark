@@ -7,7 +7,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl i32 %3, 22
   %5 = and i32 %1, 2093056
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

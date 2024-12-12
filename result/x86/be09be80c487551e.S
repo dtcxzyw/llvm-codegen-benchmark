@@ -33,3 +33,8 @@ func000000000000000a:                   # @func000000000000000a
 	cmpw	%si, %di
 	seta	%al
 	retq
+func000000000000000c:                   # @func000000000000000c
+	xorl	%eax, %eax
+	cmpw	%si, %di
+	setge	%al
+	retq

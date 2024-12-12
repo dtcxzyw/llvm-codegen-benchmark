@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 58 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; assimp/optimized/PlyParser.cpp.ll
 ; cpython/optimized/_codecs_iso2022.ll
@@ -43,17 +43,21 @@
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; wireshark/optimized/observer.c.ll
 ; wireshark/optimized/packet-acdr.c.ll
 ; wireshark/optimized/packet-dpaux.c.ll
 ; wireshark/optimized/packet-epl.c.ll
+; wireshark/optimized/packet-ethercat-datagram.c.ll
 ; wireshark/optimized/packet-h265.c.ll
 ; wireshark/optimized/packet-lbmc.c.ll
 ; wireshark/optimized/packet-ltp.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
-; wireshark/optimized/packet-netlink-netfilter.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; yosys/optimized/json11.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i8 %0) #0 {
 entry:

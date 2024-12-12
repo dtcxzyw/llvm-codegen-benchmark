@@ -45,7 +45,8 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {

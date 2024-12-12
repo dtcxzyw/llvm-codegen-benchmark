@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 87 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -25,8 +25,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -90,7 +88,7 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %.highbits = lshr i64 %1, %2
   %3 = icmp eq i64 %.highbits, 0
@@ -99,24 +97,13 @@ entry:
 }
 
 ; 1 occurrences:
-; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw i64 1, %2
-  %4 = icmp ne i64 %3, %1
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; linux/optimized/buffered_write.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 4096, %2
-  %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -127,8 +114,8 @@ entry:
 define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 4096, %2
-  %4 = icmp ult i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

@@ -24,12 +24,11 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; cpython/optimized/signalmodule.ll
 ; jq/optimized/compile.ll
 ; jq/optimized/jv.ll
-; linux/optimized/libata-transport.ll
 ; linux/optimized/tick-broadcast.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind

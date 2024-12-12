@@ -26,10 +26,6 @@ func000000000000000d:                   # @func000000000000000d
 	vpmulld	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
-func000000000000000f:                   # @func000000000000000f
-	vpmulld	%ymm2, %ymm1, %ymm1
-	vpsubd	%ymm0, %ymm1, %ymm0
-	retq
 func0000000000000008:                   # @func0000000000000008
 	vpmulld	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm0, %ymm1, %ymm0

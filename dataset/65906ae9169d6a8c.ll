@@ -24,7 +24,7 @@
 ; quest/optimized/QuEST_cpu.c.ll
 ; ruby/optimized/enum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add nuw nsw i64 %0, 1
@@ -32,7 +32,7 @@ entry:
   ret i1 %4
 }
 
-; 55 occurrences:
+; 56 occurrences:
 ; abseil-cpp/optimized/str_replace_test.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references.c.ll
@@ -75,7 +75,6 @@ entry:
 ; qemu/optimized/hw_acpi_aml-build.c.ll
 ; redis/optimized/networking.ll
 ; rocksdb/optimized/compaction_picker_fifo.cc.ll
-; rocksdb/optimized/malloc_stats.cc.ll
 ; rocksdb/optimized/sst_file_manager_impl.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; ruby/optimized/gc.ll
@@ -88,6 +87,8 @@ entry:
 ; wasmtime-rs/optimized/4xu6ecb82tc69emg.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; wireshark/optimized/file-elf.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -97,7 +98,7 @@ entry:
   ret i1 %4
 }
 
-; 69 occurrences:
+; 72 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; assimp/optimized/X3DGeoHelper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -167,8 +168,11 @@ entry:
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; xgboost/optimized/c_api.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add nuw i64 %0, 1
@@ -194,7 +198,7 @@ entry:
 ; postgres/optimized/pquery.ll
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add nsw i64 %0, -1
@@ -213,12 +217,13 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; clamav/optimized/gpt.c.ll
 ; llvm/optimized/TargetMachine.cpp.ll
 ; openjdk/optimized/jfrVirtualMemory.ll
 ; postgres/optimized/xlog.ll
 ; typst-rs/optimized/xrijsyrxk2ciyk9.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
@@ -235,7 +240,7 @@ entry:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000069(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add nuw nsw i64 %0, 4
@@ -248,7 +253,7 @@ entry:
 ; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add nuw i64 %0, 1
@@ -276,7 +281,7 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add nsw i64 %0, 1
@@ -284,7 +289,7 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; cpython/optimized/bytearrayobject.ll
 ; cpython/optimized/bytes_methods.ll
@@ -293,9 +298,8 @@ entry:
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/train.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; openblas/optimized/dpotrf_U_single.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add nuw nsw i64 %0, 1
@@ -310,7 +314,7 @@ entry:
 ; cpython/optimized/unicodeobject.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add nsw i64 %0, 16
@@ -321,7 +325,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/textspan_lut.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add nuw i64 %0, 1

@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 62 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; assimp/optimized/STEPFileEncoding.cpp.ll
 ; clamav/optimized/encname.cpp.ll
@@ -25,6 +25,7 @@
 ; linux/optimized/tdls.ll
 ; linux/optimized/utnonansi.ll
 ; luau/optimized/Compiler.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; mitsuba3/optimized/func.cpp.ll
 ; mixbox/optimized/mixbox.ll
 ; mold/optimized/rust-demangle.c.ll
@@ -94,7 +95,7 @@ entry:
   ret i32 %3
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; assimp/optimized/DXFLoader.cpp.ll
 ; flac/optimized/metadata_iterators.c.ll
@@ -119,7 +120,6 @@ entry:
 ; wireshark/optimized/packet-diameter_3gpp.c.ll
 ; wireshark/optimized/packet-dvbci.c.ll
 ; wireshark/optimized/packet-etsi_card_app_toolkit.c.ll
-; wireshark/optimized/packet-gprscdr.c.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-gtp.c.ll

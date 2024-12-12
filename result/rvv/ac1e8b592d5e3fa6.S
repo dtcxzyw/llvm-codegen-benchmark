@@ -27,7 +27,7 @@ func0000000000000002:                   # @func0000000000000002
 	vadd.vv	v10, v10, v12
 	slli	a1, a0, 32
 	vsra.vi	v10, v10, 1
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vnot.v	v8, v8
 	add	a0, a0, a1
 	vmulhu.vx	v8, v8, a0

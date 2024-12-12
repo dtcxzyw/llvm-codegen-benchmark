@@ -2,12 +2,10 @@
 ; 226 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/cgtDecide.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaPf.c.ll
 ; abc/optimized/giaUtil.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/sclSize.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -43,6 +41,8 @@
 ; lightgbm/optimized/boosting.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -234,7 +234,7 @@ entry:
   ret float %3
 }
 
-; 83 occurrences:
+; 86 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -251,6 +251,9 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; lightgbm/optimized/boosting.cpp.ll
 ; llvm/optimized/MLInlineAdvisor.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_render.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshio.cpp.ll

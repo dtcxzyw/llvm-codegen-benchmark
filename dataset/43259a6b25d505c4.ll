@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; gromacs/optimized/calculator.cpp.ll
@@ -12,6 +12,7 @@
 ; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

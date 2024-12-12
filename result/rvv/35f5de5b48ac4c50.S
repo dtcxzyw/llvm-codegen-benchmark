@@ -24,5 +24,5 @@ func0000000000000024:                   # @func0000000000000024
 	li	a0, 32
 	vsll.vx	v10, v10, a0
 	vsra.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

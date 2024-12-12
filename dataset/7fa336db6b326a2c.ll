@@ -1,12 +1,13 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
+; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; qemu/optimized/system_memory.c.ll
+; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll

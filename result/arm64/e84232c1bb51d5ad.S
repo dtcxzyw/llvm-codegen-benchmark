@@ -1,126 +1,39 @@
-func00000000000000f8:                   // @func00000000000000f8
+func00000000000001f8:                   // @func00000000000001f8
 // %bb.0:                               // %entry
-	fmov	x10, d3
-	fmov	x11, d2
-	mov	w12, #-2                        // =0xfffffffe
-	mov	x8, v3.d[1]
-	mov	x9, v2.d[1]
-	dup	v2.2d, x12
-	add	x10, x10, x10, lsl #2
-	add	x11, x11, x11, lsl #2
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	lsl	x10, x10, #1
-	lsl	x11, x11, #1
-	add	x8, x8, x8, lsl #2
-	add	x9, x9, x9, lsl #2
-	fmov	d3, x10
-	fmov	d4, x11
-	lsl	x8, x8, #1
-	lsl	x9, x9, #1
-	mov	v3.d[1], x8
-	mov	v4.d[1], x9
-	mov	w8, #2147483647                 // =0x7fffffff
-	dup	v2.2d, x8
-	add	v0.2d, v0.2d, v4.2d
-	add	v1.2d, v1.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, #10                         // =0xa
+	and	x9, x0, #0xfffffffe
+	madd	x8, x1, x8, x9
+	tst	x8, #0xffffffff80000000
+	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000000f4:                   // @func00000000000000f4
+func00000000000001f4:                   // @func00000000000001f4
 // %bb.0:                               // %entry
-	fmov	x10, d3
-	fmov	x11, d2
-	mov	w12, #-2                        // =0xfffffffe
-	mov	x8, v3.d[1]
-	mov	x9, v2.d[1]
-	dup	v2.2d, x12
-	movi	v5.4s, #128, lsl #24
-	add	x10, x10, x10, lsl #2
-	add	x11, x11, x11, lsl #2
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	lsl	x10, x10, #1
-	lsl	x11, x11, #1
-	add	x8, x8, x8, lsl #2
-	add	x9, x9, x9, lsl #2
-	fneg	v2.2d, v5.2d
-	fmov	d3, x10
-	fmov	d4, x11
-	lsl	x8, x8, #1
-	lsl	x9, x9, #1
-	mov	v3.d[1], x8
-	mov	v4.d[1], x9
-	add	v0.2d, v0.2d, v4.2d
-	add	v1.2d, v1.2d, v3.2d
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, #10                         // =0xa
+	and	x9, x0, #0xfffffffe
+	madd	x8, x1, x8, x9
+	lsr	x8, x8, #31
+	cmp	x8, #0
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000fc:                   // @func00000000000000fc
+func00000000000001ec:                   // @func00000000000001ec
 // %bb.0:                               // %entry
-	fmov	x10, d3
-	fmov	x11, d2
-	mov	x8, v3.d[1]
-	mov	x9, v2.d[1]
-	movi	v2.2d, #0x000000ffffffff
-	add	x10, x10, x10, lsl #2
-	add	x11, x11, x11, lsl #2
-	add	x8, x8, x8, lsl #2
-	lsl	x10, x10, #1
-	lsl	x11, x11, #1
-	add	x9, x9, x9, lsl #2
-	lsl	x8, x8, #1
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	fmov	d3, x10
-	fmov	d4, x11
-	lsl	x9, x9, #1
-	mov	v3.d[1], x8
-	mov	v4.d[1], x9
-	orr	v0.16b, v0.16b, v4.16b
-	orr	v1.16b, v1.16b, v3.16b
-	cmeq	v1.2d, v1.2d, #0
-	cmeq	v0.2d, v0.2d, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	mvn	v0.16b, v0.16b
-	xtn	v0.4h, v0.4s
+	add	x8, x1, x1, lsl #2
+	mov	w9, w0
+	orr	x8, x9, x8, lsl #1
+	cmp	x8, #0
+	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000088:                   // @func0000000000000088
+func0000000000000108:                   // @func0000000000000108
 // %bb.0:                               // %entry
-	fmov	x10, d3
-	fmov	x11, d2
-	mov	w12, #-2                        // =0xfffffffe
-	mov	x8, v3.d[1]
-	mov	x9, v2.d[1]
-	dup	v2.2d, x12
-	movi	v5.16b, #153
-	add	x10, x10, x10, lsl #2
-	add	x11, x11, x11, lsl #2
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	lsl	x10, x10, #1
-	lsl	x11, x11, #1
-	add	x8, x8, x8, lsl #2
-	add	x9, x9, x9, lsl #2
-	fneg	v2.2d, v5.2d
-	fmov	d3, x10
-	fmov	d4, x11
-	lsl	x8, x8, #1
-	lsl	x9, x9, #1
-	mov	v3.d[1], x8
-	mov	v4.d[1], x9
-	add	v0.2d, v0.2d, v4.2d
-	add	v1.2d, v1.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, #10                         // =0xa
+	and	x9, x0, #0xfffffffe
+	madd	x8, x1, x8, x9
+	mov	x9, #-7378697629483820647       // =0x9999999999999999
+	movk	x9, #6553, lsl #48
+	cmp	x8, x9
+	cset	w0, hi
 	ret
                                         // -- End function

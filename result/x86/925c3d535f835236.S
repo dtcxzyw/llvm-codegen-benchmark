@@ -1,29 +1,26 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	testb	$32, %sil
 	sete	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	shrb	$4, %sil
 	cmpl	$18, %edi
 	sete	%al
 	andb	%sil, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
-	andb	$60, %sil
-	cmpb	$8, %sil
-	sete	%cl
-	cmpl	$268435456, %edi                # imm = 0x10000000
-	setb	%al
+func000000000000030c:                   # @func000000000000030c
+	testb	$60, %sil
+	setne	%cl
+	cmpl	$8, %edi
+	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	andb	$60, %sil
-	cmpb	$8, %sil
-	sete	%cl
-	cmpl	$1, %edi
-	sete	%al
-	andb	%cl, %al
+func000000000000028c:                   # @func000000000000028c
+	shrb	$2, %sil
+	cmpl	$8, %edi
+	setb	%al
+	andb	%sil, %al
 	retq

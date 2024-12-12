@@ -1,5 +1,6 @@
 
 ; 60 occurrences:
+; boost/optimized/numeric.ll
 ; bullet3/optimized/btContactConstraint.ll
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolverMt.ll
@@ -21,7 +22,6 @@
 ; linux/optimized/filter.ll
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/intel_ggtt_fencing.ll
-; linux/optimized/virtio_scsi.ll
 ; llvm/optimized/IvarInvalidationChecker.cpp.ll
 ; llvm/optimized/RetainSummaryManager.cpp.ll
 ; llvm/optimized/X86FlagsCopyLowering.cpp.ll
@@ -61,7 +61,7 @@
 ; tree-sitter-rs/optimized/2ysit6xak1d4lr67.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp eq ptr %0, null
@@ -69,10 +69,9 @@ entry:
   ret i1 %4
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; linux/optimized/intel_ggtt_fencing.ll
-; linux/optimized/libata-acpi.ll
 ; linux/optimized/nfs4proc.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/Attributor.cpp.ll
@@ -118,7 +117,7 @@ entry:
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; redis/optimized/anet.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ne ptr %0, null
@@ -131,7 +130,7 @@ entry:
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000081(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, -5
   %3 = icmp eq ptr %0, null
@@ -142,7 +141,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cls_api.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, i32 %1) #0 {
+define i1 @func00000000000000cc(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
   %3 = icmp ne ptr %0, null
@@ -155,7 +154,7 @@ entry:
 ; linux/optimized/cls_api.ll
 ; linux/optimized/nl80211.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, i32 %1) #0 {
+define i1 @func00000000000000c1(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = icmp eq ptr %0, null

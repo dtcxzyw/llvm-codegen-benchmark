@@ -19,6 +19,8 @@
 ; linux/optimized/seq_memory.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_tileview.ll
 ; minetest/optimized/camera.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
@@ -29,10 +31,8 @@
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; openblas/optimized/dgetri.c.ll
 ; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
-; openspiel/optimized/quoridor.cc.ll
 ; openssl/optimized/libdefault-lib-pbkdf2.ll
 ; openusd/optimized/mvref_common.c.ll
 ; sentencepiece/optimized/time.cc.ll
@@ -48,7 +48,7 @@ entry:
   ret i32 %3
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/upx.c.ll
 ; libjpeg-turbo/optimized/jdapistd.c.ll
@@ -58,6 +58,8 @@ entry:
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tdls.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_roller.ll
 ; miniaudio/optimized/unity.c.ll
 ; postgres/optimized/brin.ll
 ; qemu/optimized/block_block-copy.c.ll
@@ -72,7 +74,7 @@ entry:
   ret i32 %3
 }
 
-; 33 occurrences:
+; 34 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hyperscan/optimized/som_stream.c.ll
@@ -87,6 +89,7 @@ entry:
 ; llvm/optimized/LiveDebugVariables.cpp.ll
 ; llvm/optimized/SelectorLocationsKind.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
 ; ncnn/optimized/convolution_x86_avxvnni.cpp.ll

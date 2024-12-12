@@ -1,56 +1,32 @@
-func0000000000000038:                   // @func0000000000000038
+func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
-	mov	x8, #-8                         // =0xfffffffffffffff8
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	cmhi	v1.2d, v1.2d, v5.2d
-	cmhi	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x2, #8
+	orr	x9, x0, x1
+	cmp	x9, x8
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	mov	x8, #-2                         // =0xfffffffffffffffe
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	cmhi	v1.2d, v1.2d, v5.2d
-	cmhi	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x2, #2
+	orr	x9, x0, x1
+	cmp	x9, x8
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	mov	x8, #-8                         // =0xfffffffffffffff8
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	cmeq	v1.2d, v1.2d, v5.2d
-	cmeq	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x2, #8
+	orr	x9, x0, x1
+	cmp	x9, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	cmeq	v1.2d, v1.2d, v5.2d
-	cmeq	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x2, #1
+	orr	x9, x0, x1
+	cmp	x9, x8
+	cset	w0, eq
 	ret
                                         // -- End function

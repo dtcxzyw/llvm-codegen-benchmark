@@ -1,8 +1,10 @@
 
-; 302 occurrences:
+; 304 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -78,6 +80,7 @@
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
@@ -93,7 +96,6 @@
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll

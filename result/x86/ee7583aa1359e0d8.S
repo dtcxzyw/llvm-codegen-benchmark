@@ -1,69 +1,62 @@
-func000000000000038a:                   # @func000000000000038a
+func0000000000000f0a:                   # @func0000000000000f0a
 	movl	%edi, %eax
 	xorl	$2147483647, %eax               # imm = 0x7FFFFFFF
-	cmpl	%esi, %eax
-	setb	%cl
+	cmpl	%eax, %esi
+	seta	%cl
 	testl	%edi, %edi
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	movl	$2147483646, %eax               # imm = 0x7FFFFFFE
 	subl	%edi, %eax
-	cmpl	%esi, %eax
-	setl	%cl
+	cmpl	%eax, %esi
+	setg	%cl
 	testl	%edi, %edi
 	setns	%al
 	andb	%cl, %al
 	retq
-func00000000000003aa:                   # @func00000000000003aa
+func0000000000000d4a:                   # @func0000000000000d4a
 	movl	%edi, %eax
 	xorl	$2147483647, %eax               # imm = 0x7FFFFFFF
-	cmpl	%esi, %eax
-	setl	%cl
+	cmpl	%eax, %esi
+	setg	%cl
 	testl	%edi, %edi
 	setg	%al
 	andb	%cl, %al
 	retq
-func000000000000037a:                   # @func000000000000037a
+func0000000000000cea:                   # @func0000000000000cea
 	movl	%edi, %eax
 	xorl	$2147483647, %eax               # imm = 0x7FFFFFFF
-	cmpl	%esi, %eax
-	setge	%cl
+	cmpl	%eax, %esi
+	setle	%cl
 	testl	%edi, %edi
 	setns	%al
 	andb	%cl, %al
 	retq
-func00000000000001b6:                   # @func00000000000001b6
+func0000000000000566:                   # @func0000000000000566
 	movl	%edi, %eax
 	negl	%eax
-	cmpl	%esi, %eax
-	setle	%cl
+	cmpl	%eax, %esi
+	setge	%cl
 	testl	%edi, %edi
 	setle	%al
 	andb	%cl, %al
 	retq
-func0000000000000118:                   # @func0000000000000118
-	addl	%edi, %esi
-	sete	%cl
-	cmpl	$52, %edi
-	setae	%al
-	andb	%cl, %al
-	retq
-func0000000000000166:                   # @func0000000000000166
+func00000000000004c6:                   # @func00000000000004c6
 	movl	$-2147483648, %eax              # imm = 0x80000000
 	subl	%edi, %eax
-	cmpl	%esi, %eax
-	setg	%cl
+	cmpl	%eax, %esi
+	setl	%cl
 	testl	%edi, %edi
 	sets	%al
 	andb	%cl, %al
 	retq
-func0000000000000146:                   # @func0000000000000146
+func0000000000000486:                   # @func0000000000000486
 	movl	%edi, %eax
 	negl	%eax
-	cmpl	%esi, %eax
-	seta	%cl
+	cmpl	%eax, %esi
+	setb	%cl
 	testl	%edi, %edi
 	sets	%al
 	andb	%cl, %al

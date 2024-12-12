@@ -12,7 +12,7 @@ func0000000000000051:                   # @func0000000000000051
 	retq
 .LCPI2_0:
 	.zero	16,1
-func0000000000000040:                   # @func0000000000000040
+func00000000000000c0:                   # @func00000000000000c0
 	vpcmpnleub	.LCPI2_0(%rip), %xmm1, %k0
 	vpmovm2b	%k0, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
@@ -33,8 +33,22 @@ func0000000000000020:                   # @func0000000000000020
 	retq
 .LCPI5_0:
 	.zero	16,223
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	vpcmpnleub	.LCPI5_0(%rip), %xmm1, %k0
+	vpmovm2b	%k0, %xmm1
+	vpsubb	%xmm1, %xmm0, %xmm0
+	retq
+.LCPI6_0:
+	.zero	16,93
+func0000000000000043:                   # @func0000000000000043
+	vpcmpnleub	.LCPI6_0(%rip), %xmm1, %k0
+	vpmovm2b	%k0, %xmm1
+	vpsubb	%xmm1, %xmm0, %xmm0
+	retq
+.LCPI7_0:
+	.zero	16,93
+func0000000000000040:                   # @func0000000000000040
+	vpcmpnleub	.LCPI7_0(%rip), %xmm1, %k0
 	vpmovm2b	%k0, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	retq

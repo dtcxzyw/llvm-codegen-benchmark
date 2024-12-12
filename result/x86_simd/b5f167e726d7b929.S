@@ -2,7 +2,7 @@
 	.long	33899                           # 0x846b
 .LCPI0_1:
 	.long	32768                           # 0x8000
-func0000000000000296:                   # @func0000000000000296
+func0000000000000526:                   # @func0000000000000526
 	vpcmpgtd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [32768,32768,32768,32768,32768,32768,32768,32768]
 	vcvttps2dq	%ymm2, %ymm2

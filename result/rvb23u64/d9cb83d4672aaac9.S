@@ -25,7 +25,7 @@ func000000000000000a:                   # @func000000000000000a
 	sgtz	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	not	a1, a1
 	bexti	a1, a1, 62
 	and	a0, a0, a1

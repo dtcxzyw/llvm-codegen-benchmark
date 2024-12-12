@@ -3,7 +3,7 @@ func0000000000000072:                   # @func0000000000000072
 	vfwcvt.f.x.v	v16, v12
 	fmv.d.x	fa5, zero
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfne.vv	v12, v16, v8
+	vmfne.vv	v12, v8, v16
 	vmflt.vf	v13, v8, fa5
 	vmand.mm	v0, v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma

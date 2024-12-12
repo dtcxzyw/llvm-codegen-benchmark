@@ -2,7 +2,7 @@ func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	ret
                                         // -- End function
-func000000000000008a:                   // @func000000000000008a
+func000000000000008e:                   // @func000000000000008e
 // %bb.0:                               // %entry
 	ret
                                         // -- End function

@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; lief/optimized/psa_crypto.c.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/FuchsiaHandleChecker.cpp.ll
@@ -9,6 +9,7 @@
 ; llvm/optimized/SMTConstraintManager.cpp.ll
 ; nix/optimized/fetchTree.ll
 ; nix/optimized/worker-protocol.ll
+; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i16 %0) #0 {

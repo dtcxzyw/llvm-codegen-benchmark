@@ -10,12 +10,14 @@ entry:
   ret i32 %2
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; abc/optimized/sfmDec.c.ll
 ; assimp/optimized/D3MFExporter.cpp.ll
 ; darktable/optimized/introspection_bloom.c.ll
 ; gromacs/optimized/pairs.cpp.ll
 ; libwebp/optimized/analysis_enc.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; minetest/optimized/COpenGLExtensionHandler.cpp.ll
 ; minetest/optimized/touchscreengui.cpp.ll
 ; opencv/optimized/fast_window_binarizer.cpp.ll

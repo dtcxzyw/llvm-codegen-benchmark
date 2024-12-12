@@ -1,11 +1,11 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	addw	a0, a0, a2
 	slti	a0, a0, 0
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	li	a1, 1
@@ -15,7 +15,7 @@ func0000000000000041:                   # @func0000000000000041
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	and	a0, a0, a1
@@ -25,7 +25,16 @@ func0000000000000081:                   # @func0000000000000081
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000d6:                   # @func00000000000000d6
+func0000000000000001:                   # @func0000000000000001
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	and	a0, a0, a1
+	sext.w	a0, a0
+	negw	a1, a2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func00000000000001a6:                   # @func00000000000001a6
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	and	a0, a0, a1

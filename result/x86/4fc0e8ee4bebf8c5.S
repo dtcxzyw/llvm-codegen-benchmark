@@ -23,6 +23,10 @@ func0000000000000003:                   # @func0000000000000003
 	andl	$1, %eax
 	leaq	4(%rdi,%rax,4), %rax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	andl	$1, %esi
+	leaq	(%rdi,%rsi,2), %rax
+	retq
 func0000000000000009:                   # @func0000000000000009
 	andl	$1, %esi
 	leaq	8(%rdi,%rsi), %rax

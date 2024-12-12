@@ -59,21 +59,6 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
-; typst-rs/optimized/4qskctz4kwc33g7b.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(double %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = or i1 %1, %2
-  %4 = fcmp oge double %0, 0.000000e+00
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
 ; 3 occurrences:
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
@@ -83,6 +68,20 @@ define i1 @func0000000000000006(double %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = fcmp one double %0, 0x7FF0000000000000
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 4 occurrences:
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, i1 %1, double %2) #0 {
+entry:
+  %3 = fcmp one double %2, 0x7FF0000000000000
+  %4 = or i1 %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
 }

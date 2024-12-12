@@ -1,10 +1,11 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/dvo_ivch.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/i915_gem_object.ll
+; lvgl/optimized/lv_switch.ll
 ; oiio/optimized/Codec.cpp.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; qemu/optimized/hw_net_pcnet.c.ll

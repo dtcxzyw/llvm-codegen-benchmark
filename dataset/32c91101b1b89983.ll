@@ -76,7 +76,8 @@ entry:
   ret i32 %6
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/to_chars.ll
 ; hdf5/optimized/H5Iint.c.ll
 ; llvm/optimized/BugReporter.cpp.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
@@ -90,10 +91,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1640531527
-  %4 = add nsw i32 %3, %0
-  %5 = and i32 %1, 65280
-  %6 = add nsw i32 %4, %5
+  %3 = add nsw i32 %2, -977
+  %4 = add nsw i32 %3, %1
+  %5 = and i32 %0, -64
+  %6 = add nsw i32 %5, %4
   ret i32 %6
 }
 
@@ -145,7 +146,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 80
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = and i32 %0, -8
   %6 = add i32 %5, %4
   ret i32 %6

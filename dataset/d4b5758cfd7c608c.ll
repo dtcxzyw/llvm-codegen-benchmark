@@ -1,8 +1,8 @@
 
 ; 23 occurrences:
-; linux/optimized/he.ll
 ; linux/optimized/ucount.ll
 ; linux/optimized/vht.ll
+; lvgl/optimized/lv_spinbox.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll

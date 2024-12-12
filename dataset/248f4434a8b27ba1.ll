@@ -1,6 +1,6 @@
 
-%struct.epoll_event.2709406 = type <{ i32, %union.epoll_data.2709407 }>
-%union.epoll_data.2709407 = type { ptr }
+%struct.epoll_event.2822079 = type <{ i32, %union.epoll_data.2822080 }>
+%union.epoll_data.2822080 = type { ptr }
 
 ; 21 occurrences:
 ; linux/optimized/af_inet.ll
@@ -62,11 +62,11 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [8 x i64], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [8 x i64], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -80,11 +80,11 @@ entry:
 ; libwebp/optimized/vp8_dec.c.ll
 ; node/optimized/linux.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw [256 x %struct.epoll_event.2709406], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [256 x %struct.epoll_event.2822079], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

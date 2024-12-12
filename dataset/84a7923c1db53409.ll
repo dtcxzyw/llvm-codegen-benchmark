@@ -31,33 +31,25 @@ entry:
   ret i64 %3
 }
 
-; 74 occurrences:
+; 62 occurrences:
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references_hq.c.ll
-; clamav/optimized/lzxd.c.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; hermes/optimized/JSTypedArray.cpp.ll
-; jq/optimized/big5.ll
-; jq/optimized/euc_kr.ll
-; jq/optimized/euc_tw.ll
-; jq/optimized/gb18030.ll
 ; linux/optimized/bdev.ll
 ; linux/optimized/buffer.ll
-; linux/optimized/hwvalid.ll
 ; linux/optimized/i915_scatterlist.ll
 ; linux/optimized/pasid.ll
 ; linux/optimized/rhashtable.ll
 ; llvm/optimized/ABIInfo.cpp.ll
 ; llvm/optimized/Constants.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; lua/optimized/ldebug.ll
 ; lua/optimized/lvm.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
-; luajit/optimized/lj_strfmt_num.ll
-; luajit/optimized/lj_strfmt_num_dyn.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
 ; mold/optimized/icf.cc.ARM64.cc.ll
@@ -76,12 +68,7 @@ entry:
 ; mold/optimized/icf.cc.SH4.cc.ll
 ; mold/optimized/icf.cc.SPARC64.cc.ll
 ; mold/optimized/icf.cc.X86_64.cc.ll
-; oniguruma/optimized/big5.ll
-; oniguruma/optimized/euc_kr.ll
-; oniguruma/optimized/euc_tw.ll
-; oniguruma/optimized/gb18030.ll
 ; opencc/optimized/bit-vector.cc.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/cryptohashfuncs.ll
 ; postgres/optimized/dbsize.ll
 ; postgres/optimized/dependencies.ll
@@ -104,8 +91,9 @@ entry:
 ; postgres/optimized/varlena.ll
 ; protobuf/optimized/arena.cc.ll
 ; qemu/optimized/block_bochs.c.ll
-; wireshark/optimized/packet-homeplug-av.c.ll
 ; wireshark/optimized/wmem_allocator_block.c.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0) #0 {
 entry:

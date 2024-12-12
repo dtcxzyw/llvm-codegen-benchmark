@@ -1,6 +1,6 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	imulq	%rdx, %rdx
 	imulq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setl	%al
+	cmpq	%rdx, %rdi
+	setg	%al
 	retq

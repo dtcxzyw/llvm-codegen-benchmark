@@ -1,11 +1,12 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CImage.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 248
-  %4 = or disjoint i16 %3, %1
+  %4 = or disjoint i16 %1, %3
   %5 = or disjoint i16 %4, %0
   %6 = zext i16 %5 to i32
   ret i32 %6
@@ -19,7 +20,7 @@ entry:
 define i32 @func0000000000000007(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 7
-  %4 = or disjoint i16 %3, %1
+  %4 = or disjoint i16 %1, %3
   %5 = or disjoint i16 %4, %0
   %6 = zext nneg i16 %5 to i32
   ret i32 %6

@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/extraUtilUtil.c.ll
 ; eastl/optimized/EADateTime.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; php/optimized/php_date.ll
 ; postgres/optimized/pgtz.ll
 ; postgres/optimized/postgres.ll

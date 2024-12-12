@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	1                               # 0x1
-func0000000000002d98:                   # @func0000000000002d98
+func000000000000b318:                   # @func000000000000b318
 	vpcmpnltd	%ymm2, %ymm1, %k0
 	vpmovd2m	%ymm1, %k1
 	korb	%k0, %k1, %k0
@@ -11,7 +11,7 @@ func0000000000002d98:                   # @func0000000000002d98
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func0000000000000598:                   # @func0000000000000598
+func0000000000001318:                   # @func0000000000001318
 	vpcmpeqd	%ymm2, %ymm1, %k0
 	vpcmpltd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vptestmd	%ymm0, %ymm0, %k2
@@ -22,7 +22,7 @@ func0000000000000598:                   # @func0000000000000598
 	retq
 .LCPI2_0:
 	.long	63                              # 0x3f
-func0000000000002998:                   # @func0000000000002998
+func000000000000a318:                   # @func000000000000a318
 	vpcmpgtd	.LCPI2_0(%rip){1to8}, %ymm1, %k0
 	vpcmpgtd	%ymm1, %ymm2, %k1
 	vpmovd2m	%ymm0, %k2

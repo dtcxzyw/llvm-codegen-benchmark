@@ -8,7 +8,7 @@ entry:
   %3 = sub i32 0, %1
   %4 = icmp slt i32 %2, 0
   %5 = select i1 %4, i32 %3, i32 %1
-  %6 = mul nsw i32 %5, %0
+  %6 = mul nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = sub i32 0, %1
   %4 = icmp slt i32 %2, 0
   %5 = select i1 %4, i32 %3, i32 %1
-  %6 = mul i32 %5, %0
+  %6 = mul i32 %0, %5
   ret i32 %6
 }
 

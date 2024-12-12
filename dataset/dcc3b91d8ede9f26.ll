@@ -37,29 +37,29 @@ entry:
 ; llvm/optimized/VectorUtils.cpp.ll
 ; opencv/optimized/slice_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000038(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ugt i32 %2, 1
+  %3 = icmp samesign ugt i32 %2, 1
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0) #0 {
+define i1 @func00000000000000b8(i64 %0) #0 {
 entry:
   %1 = trunc nsw i64 %0 to i32
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ugt i32 %2, 1
+  %3 = icmp samesign ugt i32 %2, 1
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; opencv/optimized/person_reid.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0) #0 {
+define i1 @func0000000000000184(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 false)
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/person_reid.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0) #0 {
+define i1 @func0000000000000188(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 false)
@@ -82,7 +82,7 @@ entry:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0) #0 {
+define i1 @func0000000000000148(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = call noundef i32 @llvm.abs.i32(i32 %1, i1 false)
@@ -94,7 +94,7 @@ entry:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0) #0 {
+define i1 @func0000000000000048(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = call noundef i32 @llvm.abs.i32(i32 %1, i1 false)
@@ -105,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; pocketpy/optimized/profiler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0) #0 {
+define i1 @func0000000000000084(i64 %0) #0 {
 entry:
   %1 = trunc nsw i64 %0 to i32
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 false)
@@ -116,7 +116,7 @@ entry:
 ; 1 occurrences:
 ; pocketpy/optimized/profiler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0) #0 {
+define i1 @func0000000000000088(i64 %0) #0 {
 entry:
   %1 = trunc nsw i64 %0 to i32
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 false)

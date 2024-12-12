@@ -1,5 +1,8 @@
 
-; 27 occurrences:
+; 30 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/dump_ssse3.ll
+; boost/optimized/graphml.ll
 ; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
@@ -28,11 +31,11 @@
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = and i64 %2, 48
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -58,37 +61,11 @@ entry:
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; spike/optimized/s_shiftRightJam256M.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 10, %1
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 16 occurrences:
-; hdf5/optimized/H5FDmulti.c.ll
-; linux/optimized/rx.ll
-; llvm/optimized/InstrProfReader.cpp.ll
-; openexr/optimized/ImfDwaCompressor.cpp.ll
-; openssl/optimized/padlock-dso-e_padlock.ll
-; yalantinglibs/optimized/channel.cpp.ll
-; yalantinglibs/optimized/chat_room.cpp.ll
-; yalantinglibs/optimized/client_pool.cpp.ll
-; yalantinglibs/optimized/client_pools.cpp.ll
-; yalantinglibs/optimized/concurrent_clients.cpp.ll
-; yalantinglibs/optimized/data_gen.cpp.ll
-; yalantinglibs/optimized/example.cpp.ll
-; yalantinglibs/optimized/file_client.cpp.ll
-; yalantinglibs/optimized/file_server.cpp.ll
-; yalantinglibs/optimized/rpc_service.cpp.ll
-; yalantinglibs/optimized/server.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
-entry:
-  %2 = sub i64 0, %1
-  %3 = and i64 %2, 15
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -114,6 +91,21 @@ entry:
   ret ptr %4
 }
 
+; 5 occurrences:
+; hdf5/optimized/H5FDmulti.c.ll
+; linux/optimized/intel_lrc.ll
+; linux/optimized/rx.ll
+; llvm/optimized/InstrProfReader.cpp.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 6, %1
+  %3 = and i64 %2, 7
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
 ; 9 occurrences:
 ; g2o/optimized/types_icp.cpp.ll
 ; g2o/optimized/types_seven_dof_expmap.cpp.ll
@@ -125,11 +117,11 @@ entry:
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
 ; g2o/optimized/vertex_segment2d.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 6, %1
   %3 = and i64 %2, 4
-  %4 = getelementptr nusw double, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw double, ptr %0, i64 %3
   ret ptr %4
 }
 

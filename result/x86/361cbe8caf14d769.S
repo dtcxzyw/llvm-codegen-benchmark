@@ -1,15 +1,15 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	decb	%sil
-	cmpb	%dil, %sil
+	cmpb	%sil, %dil
 	sete	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	decb	%sil
-	cmpb	%dil, %sil
-	setb	%al
+	cmpb	%sil, %dil
+	seta	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	decb	%sil
-	cmpb	%dil, %sil
+	cmpb	%sil, %dil
 	sete	%al
 	retq

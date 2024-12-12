@@ -1,28 +1,28 @@
-func00000000000000c1:                   # @func00000000000000c1
-	testl	$32767, %esi                    # imm = 0x7FFF
-	setne	%cl
-	testq	%rdi, %rdi
-	sete	%al
-	andb	%cl, %al
-	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	testl	$8388607, %esi                  # imm = 0x7FFFFF
 	setne	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000581:                   # @func0000000000000581
 	testb	$2, %sil
 	sete	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testb	$36, %sil
 	setne	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
+	retq
+func0000000000000181:                   # @func0000000000000181
+	andl	$8, %esi
+	shrl	$3, %esi
+	testq	%rdi, %rdi
+	sete	%al
+	andb	%sil, %al
 	retq

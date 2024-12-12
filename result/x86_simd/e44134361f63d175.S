@@ -4,7 +4,7 @@ func0000000000000030:                   # @func0000000000000030
 	vpsrlq	$1, %ymm2, %ymm2
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3   # ymm3 = [12297829382473034411,12297829382473034411,12297829382473034411,12297829382473034411]
 	vpmullq	%ymm3, %ymm2, %ymm2
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsrlq	$1, %ymm1, %ymm1
 	vpmullq	%ymm3, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -17,7 +17,7 @@ func0000000000000035:                   # @func0000000000000035
 	vpsrlq	$4, %ymm2, %ymm2
 	vpbroadcastq	.LCPI1_0(%rip), %ymm3   # ymm3 = [8040888442386214807,8040888442386214807,8040888442386214807,8040888442386214807]
 	vpmullq	%ymm3, %ymm2, %ymm2
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsrlq	$4, %ymm1, %ymm1
 	vpmullq	%ymm3, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0

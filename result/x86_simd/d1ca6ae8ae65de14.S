@@ -9,7 +9,7 @@ func000000000000000c:                   # @func000000000000000c
 	.quad	54399                           # 0xd47f
 .LCPI1_1:
 	.quad	100                             # 0x64
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpmovzxwq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
 	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
 	vpbroadcastq	.LCPI1_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [100,100,100,100]

@@ -4,7 +4,7 @@ func0000000000000002:                   # @func0000000000000002
 	cmovel	%esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	xorl	%eax, %eax
 	cmpl	$2, %edx
 	cmovael	%esi, %eax

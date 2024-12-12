@@ -22,7 +22,7 @@ entry:
 ; darktable/optimized/introspection_sharpen.c.ll
 ; darktable/optimized/introspection_spots.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, float %1) #0 {
+define i1 @func0000000000000041(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = add nuw i32 %2, 1
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, float %1) #0 {
+define i1 @func0000000000000061(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = add nuw nsw i32 %2, 1

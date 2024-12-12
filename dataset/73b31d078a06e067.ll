@@ -1,10 +1,9 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; hyperscan/optimized/catchup.c.ll
 ; linux/optimized/ahci.ll
 ; linux/optimized/exfldio.ll
 ; linux/optimized/hda_intel.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/intel-gtt.ll
 ; opencv/optimized/binary_descriptor_matcher.cpp.ll
 ; qemu/optimized/system_dma-helpers.c.ll
@@ -14,7 +13,7 @@
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i32 %0) #0 {
+define i64 @func00000000000000a1(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nsw i64 -1, %1
@@ -27,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/memnode.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000005a(i32 %0) #0 {
+define i64 @func00000000000000aa(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nsw i64 -1, %1
@@ -40,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/ad_x86.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0) #0 {
+define i64 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nsw i64 -1, %1
@@ -54,7 +53,7 @@ entry:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000058(i32 %0) #0 {
+define i64 @func00000000000000a8(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nsw i64 -1, %1

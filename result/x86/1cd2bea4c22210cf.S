@@ -40,13 +40,6 @@ func0000000000000005:                   # @func0000000000000005
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	leaq	-2(%rdx), %rcx
-	xorl	%eax, %eax
-	testb	$1, %sil
-	cmoveq	%rcx, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	leaq	-1(%rdx), %rcx
 	xorl	%eax, %eax

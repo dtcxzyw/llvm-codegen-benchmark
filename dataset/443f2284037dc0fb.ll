@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; nanosvg/optimized/nanosvg.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(float %0, float %1) #0 {
 entry:

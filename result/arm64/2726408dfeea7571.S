@@ -1,11 +1,11 @@
-func0000000000000051:                   // @func0000000000000051
+func00000000000000a1:                   // @func00000000000000a1
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	cmn	x0, x8, lsl #3
 	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000005c:                   // @func000000000000005c
+func00000000000000ac:                   // @func00000000000000ac
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	cmn	x0, x8, lsl #3

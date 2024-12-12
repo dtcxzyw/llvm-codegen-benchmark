@@ -1,7 +1,7 @@
 
-%"struct.std::pair.28.2486663" = type <{ i64, i32, [4 x i8] }>
+%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
 
-; 327 occurrences:
+; 330 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; arrow/optimized/expression.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -25,12 +25,15 @@
 ; grpc/optimized/ring_hash.cc.ll
 ; hermes/optimized/Statistic.cpp.ll
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
+; hyperscan/optimized/dfa_min.cpp.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/ng_find_matches.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; hyperscan/optimized/ng_misc_opt.cpp.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
+; hyperscan/optimized/ng_squash.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -330,10 +333,10 @@
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw %"struct.std::pair.28.2486663", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::pair.28.2602107", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   ret i64 %6

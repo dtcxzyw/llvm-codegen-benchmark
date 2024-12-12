@@ -1,12 +1,19 @@
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000000ff:                   # @func00000000000000ff
 	movzbl	%sil, %eax
 	shll	$6, %eax
 	leaq	48(%rdi,%rax), %rax
 	retq
-func00000000000000eb:                   # @func00000000000000eb
+func00000000000000fc:                   # @func00000000000000fc
 	movzbl	%sil, %eax
-	shll	$6, %eax
-	leaq	48(%rdi,%rax), %rax
+	leaq	177144(%rdi,%rax,4), %rax
+	retq
+func00000000000000f3:                   # @func00000000000000f3
+	movzbl	%sil, %eax
+	leaq	357240(%rdi,%rax,4), %rax
+	retq
+func00000000000000f0:                   # @func00000000000000f0
+	movzbl	%sil, %eax
+	leaq	357192(%rdi,%rax,4), %rax
 	retq
 func00000000000000c0:                   # @func00000000000000c0
 	movzbl	%sil, %eax

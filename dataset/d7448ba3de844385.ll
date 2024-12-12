@@ -1,12 +1,11 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; hermes/optimized/CFG.cpp.ll
 ; libquic/optimized/a_strex.c.ll
 ; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/MachinePostDominators.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
@@ -63,7 +62,7 @@ entry:
   %2 = and i64 %1, 7
   %3 = icmp eq i64 %2, 6
   %4 = select i1 %3, i32 2, i32 1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

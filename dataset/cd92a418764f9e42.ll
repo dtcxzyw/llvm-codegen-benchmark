@@ -1,11 +1,12 @@
 
-; 244 occurrences:
+; 246 occurrences:
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/giaQbf.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/decimal.cc.ll
+; boost/optimized/area.ll
 ; bullet3/optimized/b3RadixSort32CL.ll
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
 ; double_conversion/optimized/bignum.cc.ll
@@ -102,6 +103,7 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/namei_vfat.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll
 ; meshlab/optimized/texture_optimization.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll

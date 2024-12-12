@@ -1,4 +1,4 @@
-func0000000000000221:                   # @func0000000000000221
+func0000000000000841:                   # @func0000000000000841
 	cmpl	$123, %esi
 	sete	%al
 	cmpl	$55, %esi
@@ -8,7 +8,7 @@ func0000000000000221:                   # @func0000000000000221
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000224:                   # @func0000000000000224
+func0000000000000844:                   # @func0000000000000844
 	cmpl	$123, %esi
 	sete	%al
 	cmpl	$55, %esi
@@ -18,14 +18,14 @@ func0000000000000224:                   # @func0000000000000224
 	setb	%al
 	andb	%cl, %al
 	retq
-func000000000000022c:                   # @func000000000000022c
+func000000000000084c:                   # @func000000000000084c
 	testl	$-5, %esi
 	sete	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000222:                   # @func0000000000000222
+func0000000000000842:                   # @func0000000000000842
 	cmpl	$6, %esi
 	sete	%al
 	cmpl	$1, %esi
@@ -35,7 +35,7 @@ func0000000000000222:                   # @func0000000000000222
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000238:                   # @func0000000000000238
+func0000000000000858:                   # @func0000000000000858
 	cmpl	$4, %esi
 	sete	%al
 	cmpl	$1, %esi
@@ -45,15 +45,7 @@ func0000000000000238:                   # @func0000000000000238
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000230:                   # @func0000000000000230
-	addl	$-88080640, %esi                # imm = 0xFABFFF00
-	testl	$-257, %esi                     # imm = 0xFEFF
-	sete	%cl
-	cmpl	$17, %edi
-	setae	%al
-	andb	%cl, %al
-	retq
-func0000000000000234:                   # @func0000000000000234
+func0000000000000854:                   # @func0000000000000854
 	cmpl	$140, %esi
 	sete	%al
 	cmpl	$225, %esi
@@ -63,7 +55,7 @@ func0000000000000234:                   # @func0000000000000234
 	setge	%al
 	andb	%cl, %al
 	retq
-func0000000000000228:                   # @func0000000000000228
+func0000000000000848:                   # @func0000000000000848
 	testl	$-3, %esi
 	sete	%cl
 	cmpl	$31, %edi

@@ -1,9 +1,7 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; libquic/optimized/time_support.c.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i64 %0, i64 %1, i1 %2) #0 {
 entry:
@@ -14,13 +12,12 @@ entry:
   ret i32 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/zstd_decompress.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; spike/optimized/s_mul64To128M.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {

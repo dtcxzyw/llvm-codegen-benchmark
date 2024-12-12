@@ -87,14 +87,15 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1, double %2) #0 {
 entry:
-  %3 = fcmp ole double %2, 1.000000e+00
+  %3 = fcmp ole double %2, 1.800000e+02
   %4 = select i1 %3, i32 %0, i32 %1
   ret i32 %4
 }

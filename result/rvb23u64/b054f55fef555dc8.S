@@ -5,13 +5,6 @@ func000000000000006f:                   # @func000000000000006f
 	andi	a0, a0, 255
 	addw	a0, a0, a1
 	ret
-func0000000000000067:                   # @func0000000000000067
-	add	a1, a1, a2
-	li	a2, 85
-	mul	a1, a1, a2
-	andi	a0, a0, 255
-	addw	a0, a0, a1
-	ret
 func0000000000000035:                   # @func0000000000000035
 	add	a1, a1, a2
 	sh2add	a1, a1, a1

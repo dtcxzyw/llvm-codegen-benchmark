@@ -1,5 +1,6 @@
 
-; 28 occurrences:
+; 29 occurrences:
+; boost/optimized/math_normalize_spheroidal.ll
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; meshlab/optimized/filter_ao.cpp.ll

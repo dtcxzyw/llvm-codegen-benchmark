@@ -16,14 +16,3 @@ func000000000000000b:                   # @func000000000000000b
 	leal	(%rax,%rsi,2), %eax
 	orl	%edi, %eax
 	retq
-func0000000000000042:                   # @func0000000000000042
-	xorl	%ecx, %ecx
-	cmpl	$2, %edx
-	setae	%cl
-	notb	%sil
-	movzbl	%sil, %eax
-	andl	$1, %eax
-	shll	$8, %eax
-	orl	%ecx, %eax
-	orl	%edi, %eax
-	retq

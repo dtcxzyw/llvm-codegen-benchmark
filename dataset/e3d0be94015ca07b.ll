@@ -9,7 +9,9 @@ entry:
   ret double %3
 }
 
-; 28 occurrences:
+; 30 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/filtering.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; graphviz/optimized/circpos.c.ll
@@ -46,7 +48,7 @@ entry:
   ret double %3
 }
 
-; 142 occurrences:
+; 162 occurrences:
 ; abc/optimized/cuddSat.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
@@ -81,6 +83,26 @@ entry:
 ; abseil-cpp/optimized/uniform_helper_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; brotli/optimized/literal_cost.c.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; cpython/optimized/complexobject.ll
@@ -120,6 +142,7 @@ entry:
 ; icu/optimized/gregocal.ll
 ; icu/optimized/nfrs.ll
 ; jq/optimized/jv_aux.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
@@ -143,7 +166,6 @@ entry:
 ; opencv/optimized/optflowgf.cpp.ll
 ; opencv/optimized/ppf_match_3d.cpp.ll
 ; opencv/optimized/synthetic_seq.cpp.ll
-; opencv/optimized/trackerKCF.cpp.ll
 ; openjdk/optimized/MaskFill.ll
 ; openjdk/optimized/freetypeScaler.ll
 ; openspiel/optimized/mcts.cc.ll
@@ -197,8 +219,7 @@ entry:
   ret double %3
 }
 
-; 3 occurrences:
-; cmake/optimized/cmCTest.cxx.ll
+; 2 occurrences:
 ; gromacs/optimized/gmx_analyze.cpp.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
 ; Function Attrs: nounwind
@@ -247,7 +268,7 @@ entry:
   ret double %3
 }
 
-; 40 occurrences:
+; 37 occurrences:
 ; darktable/optimized/filtering.c.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
@@ -260,9 +281,6 @@ entry:
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/ddisna.c.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlaed6.c.ll
 ; openblas/optimized/dlag2.c.ll
 ; openblas/optimized/dlags2.c.ll

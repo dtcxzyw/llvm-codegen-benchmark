@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -39,6 +39,7 @@
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i16 %0, i8 %1) #0 {
 entry:
@@ -62,7 +63,8 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/ipv6_address.ll
 ; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/netmon.c.ll
@@ -85,7 +87,7 @@ define i64 @func0000000000000003(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = shl i16 %2, 9
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   %5 = zext nneg i16 %4 to i64
   ret i64 %5
 }

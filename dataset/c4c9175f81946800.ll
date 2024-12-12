@@ -7,7 +7,7 @@
 define i64 @func0000000000000055(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 72
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = mul nsw i64 %1, 7
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -20,7 +20,7 @@ entry:
 define i64 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 6
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = mul i64 %1, 85
   %6 = add i64 %4, %5
   ret i64 %6
@@ -36,7 +36,7 @@ entry:
 define i64 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 48
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = mul nsw i64 %1, 10
   %6 = add i64 %4, %5
   ret i64 %6
@@ -50,7 +50,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 60
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = mul nsw i64 %1, -60
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -62,7 +62,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 5
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = mul nsw i64 %1, 146097
   %6 = add i64 %4, %5
   ret i64 %6
@@ -74,7 +74,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, -400
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = mul i64 %1, -365
   %6 = add i64 %4, %5
   ret i64 %6
@@ -102,7 +102,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, -1000
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = mul i64 %1, 1000
   %6 = add i64 %4, %5
   ret i64 %6

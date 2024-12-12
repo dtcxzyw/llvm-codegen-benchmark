@@ -25,7 +25,9 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; quantlib/optimized/date.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind

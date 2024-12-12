@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcMini.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/acecFadds.c.ll
@@ -28,7 +28,6 @@
 ; bullet3/optimized/b3RadixSort32CL.ll
 ; csmith/optimized/ArrayVariable.cpp.ll
 ; eastl/optimized/EADateTime.cpp.ll
-; icu/optimized/gregoimp.ll
 ; kcp/optimized/ikcp.ll
 ; libquic/optimized/a_print.c.ll
 ; linux/optimized/intel_pstate.ll
@@ -40,10 +39,8 @@
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; openspiel/optimized/euchre.cc.ll
 ; openssl/optimized/libcrypto-lib-a_int.ll
-; openssl/optimized/libcrypto-lib-ec_deprecated.ll
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-a_int.ll
-; openssl/optimized/libcrypto-shlib-ec_deprecated.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; qemu/optimized/ui_input-barrier.c.ll

@@ -22,7 +22,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpcmpgtd	%xmm1, %xmm2, %k1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm1   # ymm1 = [32,32,32,32]
 	vpbroadcastq	.LCPI2_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [16,16,16,16]
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.quad	64                              # 0x40
@@ -44,5 +44,5 @@ func0000000000000002:                   # @func0000000000000002
 	vpcmpeqd	%xmm2, %xmm1, %k1
 	vpbroadcastq	.LCPI5_0(%rip), %ymm1   # ymm1 = [33554432,33554432,33554432,33554432]
 	vpbroadcastq	.LCPI5_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [33556480,33556480,33556480,33556480]
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

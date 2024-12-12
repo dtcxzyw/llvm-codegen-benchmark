@@ -1,65 +1,47 @@
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	uqsub	v4.2d, v3.2d, v1.2d
-	uqsub	v5.2d, v2.2d, v0.2d
-	mov	w8, #400                        // =0x190
-	uqsub	v0.2d, v0.2d, v2.2d
-	uqsub	v1.2d, v1.2d, v3.2d
-	dup	v2.2d, x8
-	orr	v0.16b, v0.16b, v5.16b
-	orr	v1.16b, v1.16b, v4.16b
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x1, x0
+	subs	x9, x0, x1
+	csel	x8, x9, x8, hi
+	cmp	x8, #400
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000048:                   // @func0000000000000048
+func0000000000000088:                   // @func0000000000000088
 // %bb.0:                               // %entry
-	uqsub	v4.2d, v3.2d, v1.2d
-	uqsub	v5.2d, v2.2d, v0.2d
-	mov	w8, #500                        // =0x1f4
-	uqsub	v0.2d, v0.2d, v2.2d
-	uqsub	v1.2d, v1.2d, v3.2d
-	dup	v2.2d, x8
-	orr	v0.16b, v0.16b, v5.16b
-	orr	v1.16b, v1.16b, v4.16b
-	cmhi	v1.2d, v1.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x1, x0
+	subs	x9, x0, x1
+	csel	x8, x9, x8, hi
+	cmp	x8, #500
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000a48:                   // @func0000000000000a48
+func0000000000002888:                   // @func0000000000002888
 // %bb.0:                               // %entry
-	uqsub	v4.2d, v3.2d, v1.2d
-	uqsub	v5.2d, v2.2d, v0.2d
-	mov	x8, #-281367602528257           // =0xffff0018ffffffff
-	uqsub	v0.2d, v0.2d, v2.2d
-	uqsub	v1.2d, v1.2d, v3.2d
-	movk	x8, #0, lsl #48
-	dup	v2.2d, x8
-	orr	v0.16b, v0.16b, v5.16b
-	orr	v1.16b, v1.16b, v4.16b
-	cmhi	v1.2d, v1.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x1, x0
+	subs	x9, x0, x1
+	csel	x8, x9, x8, hi
+	lsr	x8, x8, #32
+	cmp	x8, #24
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000a44:                   // @func0000000000000a44
+func0000000000002898:                   // @func0000000000002898
 // %bb.0:                               // %entry
-	uqsub	v4.2d, v3.2d, v1.2d
-	uqsub	v5.2d, v2.2d, v0.2d
-	mov	w8, #5                          // =0x5
-	uqsub	v0.2d, v0.2d, v2.2d
-	uqsub	v1.2d, v1.2d, v3.2d
-	dup	v2.2d, x8
-	orr	v0.16b, v0.16b, v5.16b
-	orr	v1.16b, v1.16b, v4.16b
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x1, x0
+	subs	x9, x0, x1
+	csel	x8, x9, x8, hi
+	lsr	x8, x8, #22
+	cmp	x8, #24
+	cset	w0, hi
+	ret
+                                        // -- End function
+func0000000000002884:                   // @func0000000000002884
+// %bb.0:                               // %entry
+	sub	x8, x1, x0
+	subs	x9, x0, x1
+	csel	x8, x9, x8, hi
+	cmp	x8, #5
+	cset	w0, lo
 	ret
                                         // -- End function

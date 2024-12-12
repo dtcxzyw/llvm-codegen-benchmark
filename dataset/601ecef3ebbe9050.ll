@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 30 occurrences:
 ; abc/optimized/deflate.c.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; cmake/optimized/deflate.c.ll
@@ -25,6 +25,10 @@
 ; qemu/optimized/hw_acpi_aml-build.c.ll
 ; qemu/optimized/hw_ide_atapi.c.ll
 ; stb/optimized/stb_dxt.c.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
@@ -35,18 +39,36 @@ entry:
   ret i8 %5
 }
 
-; 5 occurrences:
+; 9 occurrences:
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; openjdk/optimized/cmsnamed.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; stb/optimized/stb_dxt.c.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = lshr i32 %3, 24
   %5 = trunc nuw i32 %4 to i8
+  ret i8 %5
+}
+
+; 4 occurrences:
+; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
+; redis/optimized/lolwut5.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %0, i32 %1, i32 %2
+  %4 = lshr i32 %3, 18
+  %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 217 occurrences:
+; 215 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/giaSatLut.c.ll
 ; abseil-cpp/optimized/fastmath_test.cc.ll
@@ -137,9 +137,7 @@
 ; linux/optimized/drm_buddy.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/filemap.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_gem_create.ll
-; linux/optimized/i915_gem_gtt.ll
 ; linux/optimized/i915_gem_region.ll
 ; linux/optimized/memblock.ll
 ; linux/optimized/radix-tree.ll
@@ -225,7 +223,7 @@ entry:
   ret i64 %3
 }
 
-; 36 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; c3c/optimized/bigint.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -262,6 +260,8 @@ entry:
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/show_packet_bytes_dialog.cpp.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -270,7 +270,7 @@ entry:
   ret i64 %3
 }
 
-; 80 occurrences:
+; 78 occurrences:
 ; assimp/optimized/zip.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; cmake/optimized/archive_read_support_filter_rpm.c.ll
@@ -343,14 +343,12 @@ entry:
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_pattern_info.ll
 ; postgres/optimized/nbtsearch.ll
 ; qemu/optimized/backends_hostmem.c.ll
 ; redis/optimized/listpack.ll
 ; redis/optimized/lua_cmsgpack.ll
-; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
@@ -424,7 +422,7 @@ entry:
   ret i64 %3
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; git/optimized/cbtree.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; hermes/optimized/ISel.cpp.ll
@@ -447,6 +445,7 @@ entry:
 ; llvm/optimized/StringMap.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; raylib/optimized/raudio.c.ll
+; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:

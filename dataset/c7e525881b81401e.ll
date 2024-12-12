@@ -11,7 +11,6 @@
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/intel_sseu.ll
-; linux/optimized/keyboard.ll
 ; linux/optimized/pcm_native.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
@@ -25,6 +24,7 @@
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
@@ -41,7 +41,7 @@
 define i8 @func0000000000000003(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   %5 = select i1 %1, i8 4, i8 0
   %6 = or disjoint i8 %4, %5
   ret i8 %6
@@ -56,7 +56,7 @@ entry:
 define i8 @func0000000000000000(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 3
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   %5 = select i1 %1, i8 0, i8 6
   %6 = or i8 %4, %5
   ret i8 %6
@@ -68,7 +68,7 @@ entry:
 define i8 @func0000000000000001(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -7
-  %4 = or i8 %3, %1
+  %4 = or i8 %1, %3
   %5 = select i1 %0, i8 0, i8 2
   %6 = or disjoint i8 %5, %4
   ret i8 %6

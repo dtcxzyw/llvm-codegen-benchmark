@@ -1,5 +1,5 @@
 
-; 140 occurrences:
+; 138 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; cmake/optimized/cmPolicies.cxx.ll
@@ -26,8 +26,6 @@
 ; nix/optimized/build-remote.ll
 ; nix/optimized/dotgraph.ll
 ; nix/optimized/graphml.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/registry.ll
 ; nix/optimized/why-depends.ll
 ; opencv/optimized/bitmatrix.cpp.ll
@@ -74,7 +72,6 @@
 ; velox/optimized/BooleanMix.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
-; velox/optimized/CheckNestedNulls.cpp.ll
 ; velox/optimized/CompactRow.cpp.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; velox/optimized/DecodedVector.cpp.ll
@@ -140,13 +137,14 @@
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/test_cell.ll
 ; yosys/optimized/torder.ll
+; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -175,12 +173,12 @@ entry:
 ; yosys/optimized/opt_muxtree.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }

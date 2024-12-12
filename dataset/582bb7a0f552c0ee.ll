@@ -22,10 +22,11 @@ entry:
   ret i64 %3
 }
 
-; 49 occurrences:
+; 50 occurrences:
 ; abc/optimized/adler32.c.ll
 ; abc/optimized/extraBddCas.c.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/unzip.c.ll
 ; cmake/optimized/adler32.c.ll
 ; cmake/optimized/thread.c.ll
@@ -80,11 +81,10 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/clock.cc.ll
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
 ; flac/optimized/cuesheet.c.ll
-; openmpi/optimized/name_fns.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:

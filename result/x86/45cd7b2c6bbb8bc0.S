@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	orl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$1, %esi
 	orl	%edi, %esi
 	sete	%al

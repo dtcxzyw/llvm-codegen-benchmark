@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; lief/optimized/ecjpake.c.ll
 ; linux/optimized/opt.ll
@@ -13,23 +13,25 @@
 ; ring-rs/optimized/36n9a21mmta9vg69.ll
 ; ruby/optimized/bignum.ll
 ; spdlog/optimized/file_sinks.cpp.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/constpool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 24
-  %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -37,28 +39,30 @@ entry:
 ; mitsuba3/optimized/rapass.cpp.ll
 ; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 32
-  %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; libquic/optimized/err.c.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; rocksdb/optimized/udt_util.cc.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 6
-  %4 = icmp ne i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ne i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 413 occurrences:
+; 422 occurrences:
 ; actix-rs/optimized/2d9c72efneckaqzp.ll
 ; actix-rs/optimized/2ex2ahap5ca1v02i.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
@@ -209,7 +213,6 @@ entry:
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; just-rs/optimized/2sotx4bdu006z307.ll
 ; libquic/optimized/stack_trace.cc.ll
-; lief/optimized/psa_crypto_storage.c.ll
 ; linux/optimized/opt.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/scsi_logging.ll
@@ -472,16 +475,26 @@ entry:
 ; wasmtime-rs/optimized/py7ilknxqr79all.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
+; zed-rs/optimized/b0jacrvunbgse6y69p1vx4gkq.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/cogvsa3bjgiftuxgwhwbiuj8x.ll
+; zed-rs/optimized/e41v0ag91t21no9hshe9jx8u4.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -160
-  %4 = icmp ult i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 92 occurrences:
+; 91 occurrences:
 ; cmake/optimized/cmGeneratorExpression.cxx.ll
 ; coreutils-rs/optimized/1dx6vdk7m2fhs89j.ll
 ; cpython/optimized/compile.ll
@@ -493,7 +506,6 @@ entry:
 ; git/optimized/apply.ll
 ; git/optimized/bugreport.ll
 ; git/optimized/clean.ll
-; git/optimized/commit-tree.ll
 ; git/optimized/commit.ll
 ; git/optimized/daemon.ll
 ; git/optimized/delta-islands.ll
@@ -578,8 +590,8 @@ entry:
 define i1 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 16
-  %4 = icmp eq i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -596,10 +608,10 @@ entry:
 ; taskflow/optimized/reduce.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -613,7 +625,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp ule i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -621,15 +633,15 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/util_range.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000082(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
-  %4 = icmp eq i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 13 occurrences:
+; 20 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; cvc5/optimized/term_tuple_enumerator.cpp.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
@@ -643,23 +655,29 @@ entry:
 ; opencv/optimized/contours_approx.cpp.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; postgres/optimized/xlog.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/82tkkde3c6uy775b93ku1y220.ll
+; zed-rs/optimized/b0jacrvunbgse6y69p1vx4gkq.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000012(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
-; lief/optimized/psa_crypto_storage.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -667,33 +685,33 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/gsrprocesscore.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
-  %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000090(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
-  %4 = icmp ult i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ca(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp uge i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ule i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -701,10 +719,10 @@ entry:
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -716,7 +734,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -725,11 +743,11 @@ entry:
 ; postgres/optimized/zic.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 2
-  %4 = icmp sgt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp slt i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -737,10 +755,10 @@ entry:
 ; casadi/optimized/sundials_dense.c.ll
 ; sundials/optimized/sundials_dense.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000056(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = icmp sle i64 %3, %1
+  %4 = icmp sge i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -748,11 +766,11 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/database.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000d8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 104
-  %4 = icmp ne i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ne i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -761,11 +779,11 @@ entry:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/ng_squash.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000032(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000052(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = icmp ule i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp uge i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

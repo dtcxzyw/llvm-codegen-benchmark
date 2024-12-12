@@ -6,7 +6,7 @@ func0000000000000020:                   # @func0000000000000020
 	addq	%rsi, %rcx
 	subq	%rcx, %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func000000000000002c:                   # @func000000000000002c
 	movq	%rdi, %rax
 	xorl	%ecx, %ecx
 	cmpb	$45, %dl

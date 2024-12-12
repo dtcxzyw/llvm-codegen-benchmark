@@ -51,17 +51,4 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; llvm/optimized/AttributorAttributes.cpp.ll
-; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
-; llvm/optimized/Loads.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i8 %1) #0 {
-entry:
-  %2 = icmp ugt i8 %1, 28
-  %3 = select i1 %2, i1 %0, i1 false
-  %4 = freeze i1 %3
-  ret i1 %4
-}
-
 attributes #0 = { nounwind }

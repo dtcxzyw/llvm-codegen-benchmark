@@ -94,7 +94,8 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; clamav/optimized/regcomp.c.ll
 ; linux/optimized/i915_pmu.ll
 ; llvm/optimized/MachOUniversal.cpp.ll

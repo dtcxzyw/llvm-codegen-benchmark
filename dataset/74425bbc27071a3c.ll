@@ -5,7 +5,7 @@
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sle i32 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -15,20 +15,8 @@ entry:
 define i1 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp ugt i32 %1, %2
-  %3 = and i1 %.not, %0
+  %3 = and i1 %0, %.not
   ret i1 %3
-}
-
-; 3 occurrences:
-; regex-rs/optimized/1pxsmct4oxs5dlep.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
-; z3/optimized/sat_binspr.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ule i32 %1, %2
-  %4 = and i1 %3, %0
-  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -37,7 +25,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp slt i32 %1, %2
-  %3 = and i1 %.not, %0
+  %3 = and i1 %0, %.not
   ret i1 %3
 }
 
@@ -48,7 +36,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -58,7 +46,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

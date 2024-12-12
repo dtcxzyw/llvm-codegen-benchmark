@@ -1,16 +1,15 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; clamav/optimized/rijndael.cpp.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; qemu/optimized/hw_net_tulip.c.ll
 ; qemu/optimized/hw_sd_sd.c.ll
-; ruby/optimized/japanese.ll
 ; ruby/optimized/pack.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {
 entry:
-  %1 = shl i8 %0, 1
+  %1 = shl i8 %0, 2
   %2 = xor i8 %1, -128
   ret i8 %2
 }

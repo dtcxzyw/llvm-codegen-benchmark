@@ -19,9 +19,3 @@ func0000000000000020:                   # @func0000000000000020
 	subl	%edi, %eax
 	incl	%eax
 	retq
-func0000000000000085:                   # @func0000000000000085
-	xorl	%eax, %eax
-	cmpl	$33, %esi
-	adcl	$-2, %eax
-	subl	%edi, %eax
-	retq

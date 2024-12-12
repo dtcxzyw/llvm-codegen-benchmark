@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; c3c/optimized/sema_expr.c.ll
 ; freetype/optimized/ftstroke.c.ll
@@ -48,13 +48,14 @@
 ; typst-rs/optimized/aovf7fvpf4y65zc.ll
 ; typst-rs/optimized/avdrw26ojy6f9qt.ll
 ; typst-rs/optimized/ef603zin5qw49hb.ll
-; wasmedge/optimized/filemgr.cpp.ll
 ; wireshark/optimized/packet-dnp.c.ll
 ; wireshark/optimized/packet-sctp.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/Node.cpp.ll
 ; yosys/optimized/simplify.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
@@ -69,10 +70,10 @@ entry:
 ; wireshark/optimized/packet-evrc.c.ll
 ; wireshark/optimized/packet-gtp.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000014(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
-  %3 = icmp ult i8 %2, 3
+  %3 = icmp samesign ult i8 %2, 3
   %4 = select i1 %3, i8 %0, i8 7
   ret i8 %4
 }

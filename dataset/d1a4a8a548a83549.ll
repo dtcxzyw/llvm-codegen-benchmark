@@ -1,5 +1,6 @@
 
-; 18 occurrences:
+; 19 occurrences:
+; assimp/optimized/BlenderScene.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -22,17 +23,6 @@
 define float @func0000000000000005(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 8
-  %3 = or disjoint i16 %2, %0
-  %4 = sitofp i16 %3 to float
-  ret float %4
-}
-
-; 1 occurrences:
-; assimp/optimized/BlenderScene.cpp.ll
-; Function Attrs: nounwind
-define float @func0000000000000001(i16 %0, i16 %1) #0 {
-entry:
-  %2 = shl i16 %1, 8
   %3 = or disjoint i16 %2, %0
   %4 = sitofp i16 %3 to float
   ret float %4

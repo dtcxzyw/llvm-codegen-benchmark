@@ -21,7 +21,8 @@ func0000000000000010:                   # @func0000000000000010
 	retq
 func0000000000000055:                   # @func0000000000000055
 	addl	%edx, %esi
-	leal	-1(%rdi,%rsi,2), %eax
+	shll	$12, %esi
+	leal	-57344(%rdi,%rsi), %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	addl	%edx, %esi

@@ -1,8 +1,9 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/to_chars.ll
 ; libsodium/optimized/libsodium_la-blake2b-ref.ll
 ; qemu/optimized/optimize.c.ll
 ; qemu/optimized/system_memory.c.ll

@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -18,6 +18,7 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wireshark/optimized/packet-elasticsearch.c.ll
 ; wireshark/optimized/packet-hartip.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -27,11 +28,14 @@ entry:
   ret i16 %3
 }
 
-; 13 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; grpc/optimized/timeout_encoding.cc.ll

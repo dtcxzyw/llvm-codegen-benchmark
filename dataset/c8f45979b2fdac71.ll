@@ -159,9 +159,10 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/sclLiberty.c.ll
+; llvm/optimized/SveEmitter.cpp.ll
 ; llvm/optimized/TpiStreamBuilder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {

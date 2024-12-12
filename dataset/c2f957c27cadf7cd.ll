@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; brotli/optimized/metablock.c.ll
 ; lief/optimized/constant_time.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
@@ -7,7 +8,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = add nsw i32 %1, 1
   %5 = and i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -33,7 +34,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = add nuw nsw i32 %1, 127
   %5 = and i32 %4, %3
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -46,7 +47,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = add nsw i32 %1, -16
   %5 = and i32 %4, %3
-  %6 = add nuw i32 %5, %0
+  %6 = add nuw i32 %0, %5
   ret i32 %6
 }
 

@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -22,7 +22,6 @@
 ; linux/optimized/intel_tc.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/vsmp_64.ll
 ; llvm/optimized/AArch64SLSHardening.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -86,7 +85,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 1024
   %4 = select i1 %3, i32 4096, i32 %1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

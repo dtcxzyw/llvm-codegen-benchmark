@@ -1,5 +1,6 @@
 
-; 21 occurrences:
+; 20 occurrences:
+; boost/optimized/expand_on_spheroid.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; gromacs/optimized/compare.cpp.ll
 ; gromacs/optimized/trxio.cpp.ll
@@ -12,8 +13,6 @@
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dlatrs.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; opencv/optimized/approx.cpp.ll
 ; postgres/optimized/hashpage.ll
 ; proj/optimized/common.cpp.ll
@@ -25,12 +24,13 @@
 define i1 @func000000000000000a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp oge double %3, %0
+  %4 = fcmp ole double %0, %3
   ret i1 %4
 }
 
-; 67 occurrences:
+; 66 occurrences:
 ; assimp/optimized/LWOAnimation.cpp.ll
+; boost/optimized/expand_on_spheroid.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
@@ -45,7 +45,6 @@ entry:
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; cpython/optimized/cmathmodule.ll
 ; graphviz/optimized/intersection.c.ll
-; gromacs/optimized/dlagtf.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; gromacs/optimized/mdebin_bar.cpp.ll
@@ -71,7 +70,6 @@ entry:
 ; openblas/optimized/dlahqr.c.ll
 ; openblas/optimized/dlaic1.c.ll
 ; openblas/optimized/dlalsd.c.ll
-; openblas/optimized/dlarra.c.ll
 ; openblas/optimized/dlasd2.c.ll
 ; openblas/optimized/dlasd4.c.ll
 ; openblas/optimized/dlasd7.c.ll
@@ -101,7 +99,7 @@ entry:
 define i1 @func0000000000000005(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp ult double %3, %0
+  %4 = fcmp ugt double %0, %3
   ret i1 %4
 }
 
@@ -130,11 +128,11 @@ entry:
 define i1 @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp ole double %3, %0
+  %4 = fcmp oge double %0, %3
   ret i1 %4
 }
 
-; 128 occurrences:
+; 132 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -142,6 +140,10 @@ entry:
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_l.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -189,6 +191,7 @@ entry:
 ; ipopt/optimized/IpPDPerturbationHandler.ll
 ; ipopt/optimized/IpProbingMuOracle.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/balltree.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -203,7 +206,6 @@ entry:
 ; msdfgen/optimized/main.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dgesvj.c.ll
@@ -267,17 +269,21 @@ entry:
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 
-; 83 occurrences:
+; 86 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/cuddLCache.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_l.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/fmu_function.cpp.ll
@@ -318,7 +324,6 @@ entry:
 ; openblas/optimized/dlaqtr.c.ll
 ; openblas/optimized/dlarrv.c.ll
 ; openblas/optimized/dlasq2.c.ll
-; openblas/optimized/dlatdf.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; openblas/optimized/dstedc.c.ll
 ; openblas/optimized/dtgevc.c.ll
@@ -359,11 +364,14 @@ entry:
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   ret i1 %4
 }
 
-; 33 occurrences:
+; 36 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/cs_lu.c.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/idas.c.ll
@@ -401,7 +409,7 @@ entry:
 define i1 @func0000000000000003(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp ugt double %3, %0
+  %4 = fcmp ult double %0, %3
   ret i1 %4
 }
 
@@ -417,11 +425,12 @@ entry:
 define i1 @func000000000000000b(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp uge double %3, %0
+  %4 = fcmp ule double %0, %3
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/intersection_box.ll
 ; graphviz/optimized/legal.c.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; postgres/optimized/geo_ops.ll
@@ -430,11 +439,12 @@ entry:
 define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp oeq double %3, %0
+  %4 = fcmp oeq double %0, %3
   ret i1 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/expand_on_spheroid.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; luau/optimized/main.cpp.ll
@@ -449,7 +459,7 @@ entry:
 define i1 @func000000000000000d(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp ule double %3, %0
+  %4 = fcmp uge double %0, %3
   ret i1 %4
 }
 

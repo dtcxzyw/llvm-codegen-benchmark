@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 61 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/extraBddCas.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -12,7 +12,6 @@
 ; lief/optimized/BinaryParser.cpp.ll
 ; linux/optimized/auth_gss.ll
 ; linux/optimized/cppc_acpi.ll
-; linux/optimized/dscontrol.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/intel_dp_hdcp.ll
@@ -22,7 +21,6 @@
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
 ; linux/optimized/tcp_output.ll
-; linux/optimized/utobject.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/CommentParser.cpp.ll
@@ -68,7 +66,7 @@ define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 24
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -99,10 +97,11 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/target.ll
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; eastl/optimized/EATest.cpp.ll
@@ -125,7 +124,7 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; linux/optimized/aspm.ll
@@ -133,6 +132,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
+; php/optimized/unixtime2tm.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/mcv.ll
 ; sqlite/optimized/sqlite3.ll
@@ -160,16 +160,17 @@ define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 136657
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 357 occurrences:
+; 358 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/MD3Loader.cpp.ll
 ; assimp/optimized/MDCLoader.cpp.ll
+; boost/optimized/text_file_backend.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
@@ -519,15 +520,15 @@ entry:
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/packet-locamation-im.c.ll
 ; wireshark/optimized/packet-pn-ptcp.c.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 10
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -553,11 +554,17 @@ define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 376
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 12 occurrences:
+; 18 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; darktable/optimized/introspection_colorzones.c.ll
 ; libjpeg-turbo/optimized/jfdctint.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libjpeg-turbo/optimized/jidctred.c.ll
@@ -646,7 +653,7 @@ define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul i64 %2, -5435081209227447693
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

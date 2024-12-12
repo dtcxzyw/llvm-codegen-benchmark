@@ -10,7 +10,7 @@ func0000000000000009:                   # @func0000000000000009
 	retq
 func0000000000000008:                   # @func0000000000000008
 	subl	%edx, %esi
-	sarl	$2, %esi
+	sarl	%esi
 	leal	(%rsi,%rdi), %eax
 	retq
 func0000000000000000:                   # @func0000000000000000

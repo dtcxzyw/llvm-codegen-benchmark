@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; openblas/optimized/dgbtrf.c.ll
+; 4 occurrences:
 ; opencv/optimized/denoising.cpp.ll
 ; openmpi/optimized/netpatterns_multinomial_tree.ll
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
@@ -15,8 +14,7 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; openblas/optimized/dgbtrf.c.ll
+; 1 occurrences:
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {

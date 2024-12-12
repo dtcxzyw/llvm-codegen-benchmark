@@ -1,19 +1,4 @@
 
-; 5 occurrences:
-; draco/optimized/adaptive_rans_bit_decoder.cc.ll
-; draco/optimized/rans_bit_decoder.cc.ll
-; libwebp/optimized/tree_dec.c.ll
-; libwebp/optimized/vp8_dec.c.ll
-; qemu/optimized/hw_ssi_sifive_spi.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %1, %2
-  %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %0
-  ret i32 %5
-}
-
 ; 4 occurrences:
 ; clamav/optimized/mew.c.ll
 ; linux/optimized/xz_dec_lzma2.ll
@@ -24,7 +9,7 @@ define i32 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -40,7 +25,7 @@ define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -55,7 +40,7 @@ define i32 @func000000000000002d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -68,24 +53,23 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/fraClau.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
-; openusd/optimized/patchTableFactory.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -97,7 +81,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -109,7 +93,19 @@ define i32 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
+  ret i32 %5
+}
+
+; 2 occurrences:
+; draco/optimized/adaptive_rans_bit_decoder.cc.ll
+; draco/optimized/rans_bit_decoder.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %1, %2
+  %4 = zext i1 %3 to i32
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -123,18 +119,18 @@ define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-tftp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %1, %2
+  %3 = icmp samesign ult i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -145,7 +141,7 @@ define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -156,7 +152,19 @@ define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
+  ret i32 %5
+}
+
+; 2 occurrences:
+; libwebp/optimized/tree_dec.c.ll
+; libwebp/optimized/vp8_dec.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %1, %2
+  %4 = zext i1 %3 to i32
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

@@ -1,6 +1,7 @@
 
-; 170 occurrences:
+; 171 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/src.ll
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -361,7 +362,8 @@ entry:
   ret i128 %2
 }
 
-; 100 occurrences:
+; 101 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

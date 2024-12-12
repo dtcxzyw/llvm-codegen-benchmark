@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.160.2880479" = type { %"class.hermes::vm::HermesValue32.2880480" }
-%"class.hermes::vm::HermesValue32.2880480" = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.160.3075003" = type { %"class.hermes::vm::HermesValue32.3075004" }
+%"class.hermes::vm::HermesValue32.3075004" = type { i32 }
 
 ; 19 occurrences:
 ; cmake/optimized/huf_compress.c.ll
@@ -23,28 +23,29 @@
 ; hermes/optimized/TypedArray.cpp.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i32 %0, i1 %1, ptr %2) #0 {
+define ptr @func000000000000001f(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cmake/optimized/huf_compress.c.ll
 ; hermes/optimized/HiddenClass.cpp.ll
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; llvm/optimized/Record.cpp.ll
+; zed-rs/optimized/9tt6eh72scdop5d6biwv5himz.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i32 %0, i1 %1, ptr %2) #0 {
+define ptr @func000000000000000f(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = zext i32 %0 to i64
-  %6 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.160.2880479", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.160.3075003", ptr %4, i64 %5
   ret ptr %6
 }
 

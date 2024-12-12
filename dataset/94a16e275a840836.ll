@@ -16,7 +16,7 @@
 ; openblas/optimized/dsyrk_thread_UT.c.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp slt i64 %3, %0
@@ -36,10 +36,14 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; just-rs/optimized/bulvmt5gknxyhsd.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = icmp ult i64 %3, %0
@@ -59,17 +63,6 @@ define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp slt i64 %3, %0
-  %5 = freeze i1 %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; hyperscan/optimized/ng_limex_accel.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = icmp ult i64 %3, %0
   %5 = freeze i1 %4
   ret i1 %5
 }

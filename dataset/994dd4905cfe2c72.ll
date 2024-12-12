@@ -12,8 +12,7 @@ entry:
   ret i32 %5
 }
 
-; 27 occurrences:
-; linux/optimized/gcm.ll
+; 26 occurrences:
 ; openusd/optimized/connectableAPI.cpp.ll
 ; openusd/optimized/dataSourceLocator.cpp.ll
 ; openusd/optimized/dependencyForwardingSceneIndex.cpp.ll
@@ -58,7 +57,7 @@ define i32 @func0000000000000054(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nuw nsw i64 %2, 4294934528
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }

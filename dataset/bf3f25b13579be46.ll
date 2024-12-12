@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/mapgen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
@@ -15,7 +15,7 @@ entry:
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000057(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a7(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16

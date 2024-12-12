@@ -1,5 +1,5 @@
 
-; 210 occurrences:
+; 205 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/builder.cc.ll
@@ -28,7 +28,6 @@
 ; eastl/optimized/TestAtomicBasic.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/TypeInference.cpp.ll
-; hyperscan/optimized/accel.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/hwlm.c.ll
 ; hyperscan/optimized/lbr.c.ll
@@ -70,11 +69,9 @@
 ; linux/optimized/inet6_hashtables.ll
 ; linux/optimized/inet_hashtables.ll
 ; linux/optimized/intel_color.ll
-; linux/optimized/intel_mocs.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/intel_vdsc.ll
-; linux/optimized/mii.ll
 ; linux/optimized/nfs.ll
 ; linux/optimized/skl_universal_plane.ll
 ; linux/optimized/sky2.ll
@@ -100,7 +97,6 @@
 ; minetest/optimized/object_properties.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; minetest/optimized/test_map.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
 ; openjdk/optimized/altHashing.ll
 ; openjdk/optimized/bootstrapInfo.ll
@@ -130,14 +126,12 @@
 ; php/optimized/pcre2_compile.ll
 ; postgres/optimized/brin.ll
 ; postgres/optimized/brin_minmax_multi.ll
-; postgres/optimized/brin_revmap.ll
 ; postgres/optimized/catcache.ll
 ; postgres/optimized/execReplication.ll
 ; postgres/optimized/gindatapage.ll
 ; postgres/optimized/gindesc.ll
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/gininsert.ll
 ; postgres/optimized/ginvacuum.ll
 ; postgres/optimized/ginxlog.ll
 ; postgres/optimized/gist.ll
@@ -147,8 +141,6 @@
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/heapam_handler.ll
 ; postgres/optimized/heapam_visibility.ll
-; postgres/optimized/heapdesc.ll
-; postgres/optimized/itemptr.ll
 ; postgres/optimized/lmgr.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtinsert.ll
@@ -206,6 +198,9 @@
 ; wireshark/optimized/packet-zbee-zcl.c.ll
 ; wireshark/optimized/rtp_stream_id.c.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zxing/optimized/ODCodabarReader.cpp.ll
 ; zxing/optimized/ODCode39Reader.cpp.ll
@@ -261,11 +256,14 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 16 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; linux/optimized/intel_color.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll

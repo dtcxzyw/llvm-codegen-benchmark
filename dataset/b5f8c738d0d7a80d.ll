@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll

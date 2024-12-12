@@ -1,7 +1,6 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andl	$1, %edx
-	negq	%rdx
-	addq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq

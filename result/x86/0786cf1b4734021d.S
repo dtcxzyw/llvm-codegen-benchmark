@@ -4,7 +4,7 @@ func000000000000066f:                   # @func000000000000066f
 	sbbq	$-1, %rax
 	addq	$2, %rax
 	retq
-func0000000000000427:                   # @func0000000000000427
+func0000000000000c27:                   # @func0000000000000c27
 	shrq	$54, %rdx
 	leaq	(%rdi,%rsi), %rax
 	cmpq	$1, %rdx

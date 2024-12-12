@@ -132,7 +132,8 @@ entry:
   ret i32 %5
 }
 
-; 36 occurrences:
+; 37 occurrences:
+; boost/optimized/src.ll
 ; brotli/optimized/transform.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -149,12 +150,12 @@ entry:
 ; libwebp/optimized/upsampling.c.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/xhci-mem.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/FilterTIG.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; openjdk/optimized/jcsample.ll
@@ -178,7 +179,7 @@ entry:
   ret i32 %5
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; abc/optimized/bacBac.c.ll
 ; abc/optimized/giaGig.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -187,13 +188,13 @@ entry:
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaOf.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/btSimulationIslandManagerMt.ll
 ; cpython/optimized/_datetimemodule.ll
 ; crow/optimized/example.cpp.ll
 ; git/optimized/archive-zip.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/collationdatawriter.ll
-; icu/optimized/gregoimp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; mixbox/optimized/mixbox.ll
@@ -222,7 +223,6 @@ entry:
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; openjdk/optimized/cmscgats.ll
 ; openjdk/optimized/multiVis.ll
-; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; openspiel/optimized/leduc_poker.cc.ll
 ; openspiel/optimized/maedn.cc.ll
@@ -311,22 +311,15 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; gromacs/optimized/gmx_arpack.cpp.ll
+; 3 occurrences:
 ; jq/optimized/regcomp.ll
 ; oniguruma/optimized/regcomp.ll
-; opencv/optimized/brisk.cpp.ll
-; opencv/optimized/sift.dispatch.cpp.ll
-; openjdk/optimized/jidctred.ll
-; openjdk/optimized/splashscreen_gfx_impl.ll
-; openusd/optimized/decodetxb.c.ll
-; openvdb/optimized/FindActiveValues.cc.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 8
-  %4 = add nsw i32 %0, %1
+  %4 = add i32 %0, %1
   %5 = add nsw i32 %4, %3
   ret i32 %5
 }
@@ -369,11 +362,28 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; gromacs/optimized/gmx_arpack.cpp.ll
+; opencv/optimized/brisk.cpp.ll
+; opencv/optimized/sift.dispatch.cpp.ll
+; openjdk/optimized/jidctred.ll
+; openjdk/optimized/splashscreen_gfx_impl.ll
+; openusd/optimized/decodetxb.c.ll
+; openvdb/optimized/FindActiveValues.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 10
+  %4 = add nsw i32 %0, %1
+  %5 = add nsw i32 %4, %3
+  ret i32 %5
+}
+
+; 5 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; nori/optimized/layout.cpp.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; opencv/optimized/convolution.cpp.ll
 ; openjdk/optimized/jidctint.ll
 ; Function Attrs: nounwind
@@ -468,7 +478,7 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/utilSort.c.ll
@@ -478,6 +488,7 @@ entry:
 ; grpc/optimized/hpack_parser.cc.ll
 ; linux/optimized/entropy_common.ll
 ; linux/optimized/vc.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openusd/optimized/decodemv.c.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
@@ -571,17 +582,6 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = add nsw i32 %0, %1
   %5 = add i32 %4, %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/qrcode_encoder.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 8
-  %4 = add i32 %0, %1
-  %5 = add nsw i32 %4, %3
   ret i32 %5
 }
 

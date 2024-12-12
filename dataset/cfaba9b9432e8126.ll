@@ -1,5 +1,5 @@
 
-; 96 occurrences:
+; 98 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/covMinEsop.c.ll
@@ -17,6 +17,8 @@
 ; abc/optimized/satSolver3.c.ll
 ; assimp/optimized/Exporter.cpp.ll
 ; base64-rs/optimized/1a04td3ag2jefly3.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/unicodeobject.ll
@@ -127,7 +129,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
@@ -148,7 +150,7 @@ entry:
 ; wireshark/optimized/packet-obd-ii.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = and i32 %3, %0
@@ -156,12 +158,11 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
-; qemu/optimized/hw_ssi_sifive_spi.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = and i32 %3, %0
@@ -169,11 +170,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; linux/optimized/libata-core.ll
+; 1 occurrences:
 ; php/optimized/avifinfo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = and i32 %3, %0
@@ -181,9 +181,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/giaSatLE.c.ll
-; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -194,13 +193,35 @@ entry:
 }
 
 ; 1 occurrences:
-; proj/optimized/geodesic.c.ll
+; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = and i32 %0, %3
+  %5 = icmp samesign ult i32 %4, 128
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/libata-core.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = and i32 %3, %0
-  %5 = icmp ugt i32 %4, 16383
+  %5 = icmp samesign ult i32 %4, 128
+  ret i1 %5
+}
+
+; 1 occurrences:
+; proj/optimized/geodesic.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = and i32 %3, %0
+  %5 = icmp samesign ugt i32 %4, 16383
   ret i1 %5
 }
 

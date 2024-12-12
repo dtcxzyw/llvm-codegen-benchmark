@@ -5,7 +5,7 @@ func0000000000000009:                   # @func0000000000000009
 	cmpl	$1, %esi
 	adcl	$0, %eax
 	retq
-func000000000000018b:                   # @func000000000000018b
+func000000000000030b:                   # @func000000000000030b
 	movl	%edi, %eax
 	addl	%edx, %esi
 	notl	%esi
@@ -13,7 +13,7 @@ func000000000000018b:                   # @func000000000000018b
 	cmpl	$1, %esi
 	adcl	$0, %eax
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+func0000000000000161:                   # @func0000000000000161
 	movl	%edi, %eax
 	addl	%edx, %esi
 	andl	$31, %esi
@@ -41,17 +41,10 @@ func000000000000000b:                   # @func000000000000000b
 	cmpl	$1, %esi
 	adcl	$0, %eax
 	retq
-func0000000000000163:                   # @func0000000000000163
+func0000000000000263:                   # @func0000000000000263
 	movl	%edi, %eax
 	addl	%edx, %esi
 	andl	$7, %esi
 	cmpl	$1, %esi
-	sbbl	$-1, %eax
-	retq
-func00000000000001c3:                   # @func00000000000001c3
-	movl	%edi, %eax
-	addl	%edx, %esi
-	movzbl	%sil, %ecx
-	cmpl	$63, %ecx
 	sbbl	$-1, %eax
 	retq

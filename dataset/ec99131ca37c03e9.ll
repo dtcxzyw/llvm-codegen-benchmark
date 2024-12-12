@@ -1,8 +1,6 @@
 
-; 9 occurrences:
+; 7 occurrences:
 ; linux/optimized/8250_early.ll
-; linux/optimized/8250_exar.ll
-; linux/optimized/sbitmap.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll

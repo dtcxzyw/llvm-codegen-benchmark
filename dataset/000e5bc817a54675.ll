@@ -39,7 +39,7 @@
 ; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -88,7 +88,7 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -122,7 +122,7 @@ entry:
 ; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/level.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 30
   %3 = ashr i64 %2, 32
@@ -144,7 +144,7 @@ entry:
 ; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/level.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 30
   %3 = ashr i64 %2, 32
@@ -157,7 +157,7 @@ entry:
 ; gromacs/optimized/updategroupscog.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 30
   %3 = ashr exact i64 %2, 32
@@ -172,7 +172,7 @@ entry:
 ; opencv/optimized/permute_layer.cpp.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 30
   %3 = ashr exact i64 %2, 32
@@ -184,7 +184,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/pathExpressionEval.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -196,7 +196,7 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/parallel_vector_ops.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = icmp eq i64 %2, %0
@@ -206,7 +206,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/intersection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000164(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = ashr exact i64 %2, 32

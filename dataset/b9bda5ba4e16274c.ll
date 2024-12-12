@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 84 occurrences:
 ; abc/optimized/sfmCore.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/drm_client_modeset.ll
@@ -58,7 +58,6 @@
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -86,11 +85,11 @@
 ; z3/optimized/bv_bounds_simplifier.cpp.ll
 ; z3/optimized/bv_bounds_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 4611686018427387904, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -101,11 +100,11 @@ entry:
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 9223372036854775807, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 

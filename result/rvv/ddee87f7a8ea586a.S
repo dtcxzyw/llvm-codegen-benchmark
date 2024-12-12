@@ -6,3 +6,11 @@ func0000000000000008:                   # @func0000000000000008
 	vmsne.vi	v10, v8, 0
 	vmor.mm	v0, v0, v10
 	ret
+func0000000000000001:                   # @func0000000000000001
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 0
+	vsetvli	zero, zero, e16, mf2, ta, ma
+	vnsrl.wi	v8, v10, 0
+	vmseq.vi	v8, v8, 1
+	vmor.mm	v0, v0, v8
+	ret

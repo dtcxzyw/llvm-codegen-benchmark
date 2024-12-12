@@ -15,7 +15,7 @@ entry:
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = mul i64 %3, %0
@@ -35,9 +35,20 @@ entry:
 }
 
 ; 1 occurrences:
+; openjdk/optimized/shenandoahPacer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = mul i64 %3, %0
+  %5 = icmp samesign ugt i64 %4, 10485759999
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; openjdk/optimized/jfrThreadCPULoadEvent.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = mul nsw i64 %3, %0
@@ -50,10 +61,10 @@ entry:
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -63,7 +74,7 @@ entry:
 ; openblas/optimized/dgemmt.c.ll
 ; openusd/optimized/warped_motion.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = mul nsw i64 %3, %0
@@ -76,25 +87,24 @@ entry:
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = icmp slt i64 %4, 1025
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
-; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = mul i64 %3, %0
-  %5 = icmp ult i64 %4, 32769
+  %4 = mul i64 %0, %3
+  %5 = icmp samesign ult i64 %4, 32769
   ret i1 %5
 }
 
@@ -110,24 +120,24 @@ entry:
 }
 
 ; 1 occurrences:
-; pbrt-v4/optimized/string.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = mul nsw i64 %3, %0
-  %5 = icmp eq i64 %4, 1
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; faiss/optimized/IndexPQ.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = icmp eq i64 %4, 0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; faiss/optimized/IndexIVFFastScan.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = mul i64 %0, %3
+  %5 = icmp ult i64 %4, 256
   ret i1 %5
 }
 
@@ -135,7 +145,7 @@ entry:
 ; faiss/optimized/IndexIVFAdditiveQuantizerFastScan.cpp.ll
 ; faiss/optimized/IndexIVFPQFastScan.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = mul i64 %3, %0
@@ -146,7 +156,7 @@ entry:
 ; 1 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = mul i64 %3, %0

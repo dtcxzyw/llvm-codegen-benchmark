@@ -4,7 +4,7 @@
 ; openssl/optimized/libssl-lib-quic_reactor.ll
 ; openssl/optimized/libssl-shlib-quic_reactor.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000318(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = and i1 %3, %1
@@ -13,7 +13,7 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
+; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; git/optimized/refs.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -21,17 +21,20 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; openusd/optimized/stringUtils.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp eq i8 %1, 0
   %6 = or i1 %4, %5
   ret i1 %6
 }
 
-; 42 occurrences:
+; 45 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; nlohmann_json/optimized/unit-algorithms.cpp.ll
 ; nlohmann_json/optimized/unit-alt-string.cpp.ll
@@ -74,38 +77,45 @@ entry:
 ; qemu/optimized/chardev_char-hmp-cmds.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000102(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -2
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp eq i8 %0, 127
   %6 = or i1 %5, %4
   ret i1 %6
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; linux/optimized/namei_msdos.ll
 ; php/optimized/url.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 8
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp ult i8 %1, 3
   %6 = or i1 %4, %5
   ret i1 %6
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/mvref_common.c.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000308(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 4
   %4 = and i1 %3, %0
@@ -115,12 +125,24 @@ entry:
 }
 
 ; 1 occurrences:
+; openjdk/optimized/verifier.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000050(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp eq i8 %2, -8
+  %4 = and i1 %0, %3
+  %5 = icmp ugt i8 %1, -5
+  %6 = or i1 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; php/optimized/url.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000090(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000110(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 6
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp ugt i8 %0, 122
   %6 = or i1 %5, %4
   ret i1 %6
@@ -147,7 +169,7 @@ entry:
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-tecmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000042(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 62
   %4 = and i1 %3, %1
@@ -159,7 +181,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000202(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 31
   %4 = and i1 %3, %1
@@ -171,10 +193,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000048(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 42
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp ult i8 %0, 2
   %6 = or i1 %5, %4
   ret i1 %6
@@ -183,10 +205,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaAvailability.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000058(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 36
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp ne i8 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6

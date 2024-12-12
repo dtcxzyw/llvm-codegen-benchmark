@@ -8,13 +8,12 @@
 ; openssl/optimized/libssl-lib-statem_srvr.ll
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000121(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
-  %3 = sdiv i32 %2, 8
-  %4 = sub i32 0, %0
-  %5 = icmp eq i32 %3, %4
-  ret i1 %5
+  %.neg = sdiv i32 %2, -8
+  %3 = icmp eq i32 %0, %.neg
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -22,7 +21,7 @@ entry:
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000012a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 8
   %3 = sdiv i32 %2, 9
@@ -40,7 +39,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000126(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 8
   %3 = sdiv i32 %2, 9
@@ -56,7 +55,7 @@ define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 4800
   %3 = sdiv i32 %2, 400
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp slt i32 %4, 2472633
   ret i1 %5
 }
@@ -64,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; lodepng/optimized/pngdetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -8192
   %3 = sdiv i32 %2, 256
@@ -76,7 +75,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000010a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, -8

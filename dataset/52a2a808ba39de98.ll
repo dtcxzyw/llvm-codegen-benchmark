@@ -204,10 +204,10 @@
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i1 %2) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 4, i64 0
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   ret i64 %6

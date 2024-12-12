@@ -10,17 +10,6 @@ func0000000000000063:                   # @func0000000000000063
 	vsub.vv	v8, v12, v8
 	vadd.vi	v8, v8, 4
 	ret
-func0000000000000023:                   # @func0000000000000023
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv1r.v	v10, v0
-	vmsleu.vi	v0, v8, 3
-	vmv.v.i	v8, 0
-	vmerge.vim	v12, v8, 1, v0
-	vmv1r.v	v0, v10
-	vmerge.vim	v8, v8, 1, v0
-	vadd.vv	v8, v8, v12
-	vadd.vi	v8, v8, 1
-	ret
 func0000000000000043:                   # @func0000000000000043
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v10, v0

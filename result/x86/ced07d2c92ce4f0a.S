@@ -19,10 +19,3 @@ func0000000000000018:                   # @func0000000000000018
 	subl	%eax, %edi
 	movslq	%edi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	xorl	%eax, %eax
-	cmpl	%esi, %edi
-	cmovael	%esi, %eax
-	subl	%eax, %edi
-	movslq	%edi, %rax
-	retq

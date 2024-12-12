@@ -1,7 +1,5 @@
 
-; 3 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; openjdk/optimized/hb-ot-name.ll
+; 1 occurrences:
 ; re2/optimized/re2.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i1 %1, i1 %2) #0 {
@@ -117,6 +115,19 @@ entry:
   %3 = and i1 %1, %2
   %4 = icmp ne i32 %0, 0
   %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; openjdk/optimized/hb-ot-name.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = and i1 %1, %2
+  %4 = icmp ult i32 %0, 128
+  %not. = xor i1 %3, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 

@@ -13,10 +13,11 @@ entry:
   ret i32 %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/ucnv_u32.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; php/optimized/image.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000002f(i32 %0, i32 %1, i32 %2) #0 {

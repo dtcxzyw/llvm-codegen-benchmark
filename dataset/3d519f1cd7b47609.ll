@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 97 occurrences:
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inffast.c.ll
 ; abc/optimized/inflate.c.ll
@@ -29,7 +29,6 @@
 ; linux/optimized/buffer.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/buffered_write.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/exfldio.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/fib_trie.ll
@@ -49,7 +48,6 @@
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_uprobe.ll
 ; linux/optimized/xarray.ll
-; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; llvm/optimized/ConstantInitBuilder.cpp.ll
@@ -82,7 +80,6 @@
 ; softposit-rs/optimized/4wrr62dd33canpwl.ll
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_mulAddF128.ll
 ; spike/optimized/s_mulAddF64.ll
 ; stockfish/optimized/tbprobe.ll
@@ -90,6 +87,13 @@
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wireshark/optimized/packet-nvme.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
@@ -101,7 +105,7 @@ entry:
   ret i64 %3
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; brotli/optimized/decode.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; linux/optimized/acpi_lpit.ll
@@ -109,7 +113,6 @@ entry:
 ; linux/optimized/cache.ll
 ; linux/optimized/compress.ll
 ; linux/optimized/extents.ll
-; linux/optimized/gen_estimator.ll
 ; linux/optimized/intel_ppgtt.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mpage.ll

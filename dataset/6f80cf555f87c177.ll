@@ -1,7 +1,7 @@
 
-%"struct.llvm::DebugLocStream::List.2981590" = type { ptr, ptr, i64 }
+%"struct.llvm::DebugLocStream::List.3175069" = type { ptr, ptr, i64 }
 
-; 67 occurrences:
+; 66 occurrences:
 ; hyperscan/optimized/arg_checks.cpp.ll
 ; hyperscan/optimized/bad_patterns.cpp.ll
 ; hyperscan/optimized/behaviour.cpp.ll
@@ -41,7 +41,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -74,7 +73,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
-  %5 = getelementptr nusw %"struct.llvm::DebugLocStream::List.2981590", ptr %0, i64 %4, i32 2
+  %5 = getelementptr nusw %"struct.llvm::DebugLocStream::List.3175069", ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

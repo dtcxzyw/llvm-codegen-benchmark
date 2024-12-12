@@ -23,9 +23,9 @@ func0000000000000003:                   # @func0000000000000003
 	.zero	2
 	.zero	2
 	.zero	2
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm2, %k1
 	vmovdqu16	.LCPI2_1(%rip), %xmm1 {%k1} # xmm1 {%k1} = [4088,4088,4088,4088,u,u,u,u]
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

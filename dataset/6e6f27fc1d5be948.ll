@@ -3,7 +3,7 @@
 ; git/optimized/revision.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp eq i32 %3, 0
@@ -16,7 +16,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-buffer-verify.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -3
   %4 = icmp ne i32 %3, 4
@@ -33,7 +33,7 @@ entry:
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 51
   %4 = icmp ne i32 %3, 0
@@ -84,7 +84,7 @@ entry:
 ; nlohmann_json/optimized/unit-udt.cpp.ll
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 256
   %4 = icmp ne i32 %3, 0
@@ -96,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/Conformance.test.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 256
   %4 = icmp ne i32 %3, 0
@@ -108,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/Conformance.test.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 256
   %4 = icmp ne i32 %3, 0
@@ -120,7 +120,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/Conformance.test.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 256
   %4 = icmp ne i32 %3, 0
@@ -132,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/Conformance.test.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 256
   %4 = icmp ne i32 %3, 0
@@ -145,7 +145,7 @@ entry:
 ; freetype/optimized/autofit.c.ll
 ; linux/optimized/ip_tables.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8
   %4 = icmp eq i32 %3, 0
@@ -157,7 +157,7 @@ entry:
 ; 1 occurrences:
 ; nlohmann_json/optimized/unit-udt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cb(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 256
   %4 = icmp ne i32 %3, 0
@@ -169,7 +169,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp eq i32 %3, 0

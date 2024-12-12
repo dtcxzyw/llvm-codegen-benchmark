@@ -1,26 +1,26 @@
-func00000000000002cc:                   # @func00000000000002cc
+func000000000000098c:                   # @func000000000000098c
 	movq	%rsi, %rax
 	negq	%rax
-	cmpq	%rdi, %rax
-	setg	%cl
+	cmpq	%rax, %rdi
+	setl	%cl
 	cmpq	%rdi, %rsi
 	setl	%al
 	orb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	movq	%rsi, %rax
 	negq	%rax
-	cmpq	%rdi, %rax
-	setg	%cl
+	cmpq	%rax, %rdi
+	setl	%cl
 	cmpq	%rdi, %rsi
 	setl	%al
 	orb	%cl, %al
 	retq
-func0000000000000308:                   # @func0000000000000308
+func0000000000000a08:                   # @func0000000000000a08
 	movq	%rsi, %rax
 	negq	%rax
-	cmpq	%rdi, %rax
-	setb	%cl
+	cmpq	%rax, %rdi
+	seta	%cl
 	cmpq	%rsi, %rdi
 	setb	%al
 	orb	%cl, %al

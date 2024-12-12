@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpq	$1, %rdi
 	sete	%al
 	movb	$2, %cl
@@ -8,7 +8,7 @@ func0000000000000011:                   # @func0000000000000011
 	movzbl	%cl, %eax
 	cmovel	%edx, %eax
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movq	%rdi, %rax
 	shrq	$32, %rax
 	setne	%al
@@ -19,7 +19,7 @@ func0000000000000044:                   # @func0000000000000044
 	movl	$8, %eax
 	cmovael	%ecx, %eax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	xorl	%eax, %eax
 	cmpq	$-2147483648, %rdi              # imm = 0x80000000
 	movl	$12, %ecx
@@ -27,14 +27,4 @@ func000000000000006a:                   # @func000000000000006a
 	cmpq	$2147483647, %rdi               # imm = 0x7FFFFFFF
 	movl	$11, %eax
 	cmovlel	%ecx, %eax
-	retq
-func0000000000000088:                   # @func0000000000000088
-	cmpq	$65536, %rdi                    # imm = 0x10000
-	setae	%al
-	addb	%al, %al
-	addb	$2, %al
-	shrq	$32, %rdi
-	movzbl	%al, %ecx
-	movl	$8, %eax
-	cmovel	%ecx, %eax
 	retq

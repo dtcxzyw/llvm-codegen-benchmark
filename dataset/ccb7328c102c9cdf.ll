@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.neg = sub i32 %2, %1
   %3 = and i32 %0, 4
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/mutate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1073741823
   %4 = sub nsw i32 %0, %1
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ndisc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = and i32 %0, 504

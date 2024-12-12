@@ -11,7 +11,7 @@ entry:
   ret i16 %3
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; icu/optimized/ucnv_io.ll
@@ -24,7 +24,6 @@ entry:
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/game.cpp.ll
-; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; openjdk/optimized/jfrTraceIdEpoch.ll
 ; openjdk/optimized/type.ll
 ; postgres/optimized/nbtutils.ll

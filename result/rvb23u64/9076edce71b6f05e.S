@@ -67,7 +67,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	fle.d	a1, fa1, fa0
 	and	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000144:                   # @func0000000000000144
 	sext.w	a0, a0
 	sltiu	a0, a0, 99
 	flt.d	a1, fa1, fa0
@@ -85,7 +85,7 @@ func00000000000000c2:                   # @func00000000000000c2
 	flt.d	a1, fa0, fa1
 	and	a0, a0, a1
 	ret
-func000000000000008a:                   # @func000000000000008a
+func000000000000018a:                   # @func000000000000018a
 	sext.w	a0, a0
 	sltiu	a0, a0, 35
 	xori	a0, a0, 1
@@ -111,19 +111,13 @@ func000000000000006d:                   # @func000000000000006d
 	flt.d	a1, fa0, fa1
 	andn	a0, a0, a1
 	ret
-func0000000000000067:                   # @func0000000000000067
-	sext.w	a0, a0
-	slti	a0, a0, 5
-	feq.d	a1, fa0, fa1
-	andn	a0, a0, a1
-	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000014a:                   # @func000000000000014a
 	sext.w	a0, a0
 	sltiu	a0, a0, 6
 	fle.d	a1, fa0, fa1
 	and	a0, a0, a1
 	ret
-func0000000000000042:                   # @func0000000000000042
+func0000000000000142:                   # @func0000000000000142
 	sext.w	a0, a0
 	sltiu	a0, a0, 19
 	flt.d	a1, fa0, fa1

@@ -56,6 +56,18 @@ entry:
 }
 
 ; 1 occurrences:
+; postgres/optimized/parse_utilcmd.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000014(ptr %0, i32 %1) #0 {
+entry:
+  %2 = ashr exact i32 %1, 16
+  %3 = mul nsw i32 %2, 104
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i32 %1) #0 {

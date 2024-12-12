@@ -31,7 +31,7 @@
 ; pbrt-v4/optimized/media.cpp.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = sdiv exact i64 %0, 3712
@@ -52,7 +52,7 @@ entry:
 ; pbrt-v4/optimized/media.cpp.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = sdiv exact i64 %0, 408

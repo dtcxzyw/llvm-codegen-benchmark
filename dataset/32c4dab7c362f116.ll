@@ -1,6 +1,7 @@
 
-; 5 occurrences:
-; cvc5/optimized/core_solver.cpp.ll
+; 6 occurrences:
+; boost/optimized/sparring_partner.ll
+; boost/optimized/sub_launcher.ll
 ; gromacs/optimized/block.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll

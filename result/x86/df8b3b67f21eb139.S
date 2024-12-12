@@ -1,60 +1,66 @@
 func0000000000000008:                   # @func0000000000000008
 	addb	%dl, %sil
 	movzbl	%sil, %eax
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	addb	%dl, %sil
 	movzbl	%sil, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000018:                   # @func0000000000000018
 	addb	%dl, %sil
 	movzbl	%sil, %eax
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func0000000000000098:                   # @func0000000000000098
 	addb	%dl, %sil
 	movzbl	%sil, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
+	seta	%al
+	retq
+func00000000000000e1:                   # @func00000000000000e1
+	addb	%dl, %sil
+	movzbl	%sil, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	addb	%dl, %sil
 	movzbl	%sil, %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	addb	%dl, %sil
 	movzbl	%sil, %eax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	addb	%dl, %sil
 	movzbl	%sil, %eax
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	setg	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	addb	%dl, %sil
 	movzbl	%sil, %eax
-	cmpl	%edi, %eax
-	seta	%al
-	retq
-func0000000000000018:                   # @func0000000000000018
-	addb	%dl, %sil
-	movzbl	%sil, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	setb	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func0000000000000038:                   # @func0000000000000038
 	addb	%dl, %sil
 	movzbl	%sil, %eax
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	seta	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
+	addb	%dl, %sil
+	movzbl	%sil, %eax
+	cmpl	%eax, %edi
+	setg	%al
 	retq

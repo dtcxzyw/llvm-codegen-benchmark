@@ -16,15 +16,3 @@ func0000000000000030:                   # @func0000000000000030
 	leaq	(%rdx,%rdi), %rax
 	sarq	$7, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	shlq	$5, %rdx
-	subq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
-	sarq	$5, %rax
-	retq
-func0000000000000001:                   # @func0000000000000001
-	shlq	$5, %rdx
-	subq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
-	sarq	$5, %rax
-	retq

@@ -13,8 +13,7 @@ func0000000000000001:                   // @func0000000000000001
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mul	x8, x0, x2
+	mul	x0, x0, x2
 	mov	x1, #0                          // =0x0
-	and	x0, x8, #0xfffffffffffffff8
 	ret
                                         // -- End function

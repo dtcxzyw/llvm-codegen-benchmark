@@ -6,7 +6,7 @@
 define i16 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = trunc i64 %3 to i16
   ret i16 %4
 }
@@ -20,7 +20,7 @@ entry:
 define i16 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = trunc i64 %3 to i16
   ret i16 %4
 }

@@ -43,3 +43,20 @@ func0000000000000002:                   # @func0000000000000002
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
+func0000000000000000:                   # @func0000000000000000
+	andi	a3, a2, 1
+	andi	a2, a1, 1
+	bnez	a3, .LBB3_2
+	li	a1, 12
+	bnez	a2, .LBB3_3
+	j	.LBB3_4
+.LBB3_2:
+	li	a1, 8
+	beqz	a2, .LBB3_4
+.LBB3_3:
+	li	a1, 4
+.LBB3_4:                                # %entry
+	add	a0, a0, a1
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret

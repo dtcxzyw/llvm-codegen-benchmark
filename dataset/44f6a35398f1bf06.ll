@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 52 occurrences:
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
@@ -11,7 +11,6 @@
 ; gromacs/optimized/calculator.cpp.ll
 ; gromacs/optimized/edsam.cpp.ll
 ; gromacs/optimized/slaed6.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
 ; hwloc/optimized/lstopo-lstopo-draw.ll

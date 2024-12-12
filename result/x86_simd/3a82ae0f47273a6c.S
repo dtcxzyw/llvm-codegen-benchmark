@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	65520                           # 0xfff0
-func000000000000008d:                   # @func000000000000008d
+func000000000000018d:                   # @func000000000000018d
 	vpcmpnleuq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
 	vpxor	%xmm0, %xmm0, %xmm0

@@ -1,4 +1,4 @@
-func000000000000044c:                   # @func000000000000044c
+func000000000000108c:                   # @func000000000000108c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v8
 	vsub.vv	v10, v10, v12
@@ -7,7 +7,7 @@ func000000000000044c:                   # @func000000000000044c
 	vmsne.vi	v8, v8, -1
 	vmand.mm	v0, v8, v9
 	ret
-func000000000000041a:                   # @func000000000000041a
+func000000000000102a:                   # @func000000000000102a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v8
 	vsub.vv	v10, v10, v12
@@ -16,7 +16,7 @@ func000000000000041a:                   # @func000000000000041a
 	vmsgt.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
 	ret
-func000000000000044a:                   # @func000000000000044a
+func000000000000108a:                   # @func000000000000108a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v8
 	vsub.vv	v10, v10, v12
@@ -25,7 +25,7 @@ func000000000000044a:                   # @func000000000000044a
 	vmsgt.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
 	ret
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v8
 	vsub.vv	v10, v10, v12

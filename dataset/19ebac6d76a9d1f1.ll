@@ -13,7 +13,7 @@
 define i16 @func0000000000000000(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i16
-  %4 = add i16 %3, %1
+  %4 = add i16 %1, %3
   %5 = add i16 %4, %0
   ret i16 %5
 }
@@ -27,8 +27,19 @@ entry:
 define i16 @func0000000000000020(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw i32 %2 to i16
-  %4 = add i16 %3, %1
+  %4 = add i16 %1, %3
   %5 = add i16 %4, %0
+  ret i16 %5
+}
+
+; 1 occurrences:
+; boost/optimized/text_file_backend.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000015(i16 %0, i16 %1, i32 %2) #0 {
+entry:
+  %3 = trunc nsw i32 %2 to i16
+  %4 = add nsw i16 %1, %3
+  %5 = add nsw i16 %0, %4
   ret i16 %5
 }
 
@@ -38,7 +49,7 @@ entry:
 define i16 @func0000000000000030(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw nsw i32 %2 to i16
-  %4 = add i16 %3, %1
+  %4 = add i16 %1, %3
   %5 = add i16 %4, %0
   ret i16 %5
 }
@@ -49,7 +60,7 @@ entry:
 define i16 @func0000000000000038(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw nsw i32 %2 to i16
-  %4 = add nuw i16 %3, %1
+  %4 = add nuw i16 %1, %3
   %5 = add i16 %4, %0
   ret i16 %5
 }
@@ -60,8 +71,8 @@ entry:
 define i16 @func0000000000000010(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc nsw i32 %2 to i16
-  %4 = add i16 %3, %1
-  %5 = add i16 %4, %0
+  %4 = add i16 %1, %3
+  %5 = add i16 %0, %4
   ret i16 %5
 }
 

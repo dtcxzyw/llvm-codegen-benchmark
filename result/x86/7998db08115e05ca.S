@@ -26,14 +26,6 @@ func0000000000000005:                   # @func0000000000000005
 	imull	%esi, %edi
 	addl	%edi, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
-	imull	%edx, %esi
-	leal	4095(%rdi), %eax
-	testl	%edi, %edi
-	cmovnsl	%edi, %eax
-	sarl	$12, %eax
-	addl	%esi, %eax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%edx, %eax
 	shrl	$31, %eax

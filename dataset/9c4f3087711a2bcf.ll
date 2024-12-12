@@ -4,7 +4,7 @@
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i16 %0, i8 %1) #0 {
+define i1 @func00000000000000a1(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = zext i8 %2 to i16

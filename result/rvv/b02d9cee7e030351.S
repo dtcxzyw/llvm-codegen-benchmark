@@ -1,4 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v12, 0
 	vnot.v	v9, v9

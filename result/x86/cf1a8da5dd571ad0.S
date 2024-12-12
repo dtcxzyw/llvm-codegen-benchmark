@@ -13,6 +13,11 @@ func000000000000007f:                   # @func000000000000007f
 	imulq	%rsi, %rdi
 	leaq	1(%rdi,%rax), %rax
 	retq
+func0000000000000040:                   # @func0000000000000040
+	movl	%edx, %eax
+	imulq	%rsi, %rdi
+	leaq	1(%rdi,%rax), %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%edx, %eax
 	imulq	%rsi, %rdi

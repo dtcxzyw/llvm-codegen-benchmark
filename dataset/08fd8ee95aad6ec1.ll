@@ -17,7 +17,7 @@
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %3, %0
@@ -33,7 +33,7 @@ entry:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %3, %0
@@ -46,7 +46,7 @@ entry:
 ; opencv/optimized/agast_score.cpp.ll
 ; openusd/optimized/mvref_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %3, %0
@@ -62,7 +62,7 @@ entry:
 ; opencv/optimized/fast.cpp.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %3, %0
@@ -75,24 +75,24 @@ entry:
 ; opencv/optimized/agast.cpp.ll
 ; opencv/optimized/agast_score.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000038(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %3, %0
   %5 = zext i8 %1 to i32
-  %6 = icmp ugt i32 %4, %5
+  %6 = icmp samesign ugt i32 %4, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/agast_score.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i32 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000035(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %3, %0
   %5 = zext i8 %1 to i32
-  %6 = icmp ule i32 %4, %5
+  %6 = icmp samesign ule i32 %4, %5
   ret i1 %6
 }
 

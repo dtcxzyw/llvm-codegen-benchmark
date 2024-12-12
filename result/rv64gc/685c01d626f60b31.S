@@ -8,6 +8,6 @@ func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 54
 	add	a0, a0, a1
 	fmv.d.x	fa4, a0
-	fmul.d	fa4, fa4, fa0
+	fmul.d	fa4, fa0, fa4
 	fadd.d	fa0, fa4, fa5
 	ret

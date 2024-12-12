@@ -1,4 +1,4 @@
-func000000000000021c:                   // @func000000000000021c
+func0000000000000c2c:                   // @func0000000000000c2c
 // %bb.0:                               // %entry
 	add	x8, x2, w0, uxtw #2
 	cmn	w0, #1
@@ -6,7 +6,7 @@ func000000000000021c:                   // @func000000000000021c
 	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000061a:                   // @func000000000000061a
+func0000000000001c2a:                   // @func0000000000001c2a
 // %bb.0:                               // %entry
 	add	x8, x2, w0, uxtw #2
 	cmp	w0, #0
@@ -14,7 +14,7 @@ func000000000000061a:                   // @func000000000000061a
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000248:                   // @func0000000000000248
+func0000000000000c88:                   // @func0000000000000c88
 // %bb.0:                               // %entry
 	add	x8, x2, w0, uxtw
 	cmp	w0, #11
@@ -22,7 +22,7 @@ func0000000000000248:                   // @func0000000000000248
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000214:                   // @func0000000000000214
+func0000000000000c24:                   // @func0000000000000c24
 // %bb.0:                               // %entry
 	add	x8, x2, w0, uxtw #2
 	cmn	w0, #2

@@ -27,6 +27,6 @@ func0000000000000018:                   # @func0000000000000018
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vptestmb	.LCPI1_0(%rip), %xmm1, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vmovdqu8	.LCPI1_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 	retq

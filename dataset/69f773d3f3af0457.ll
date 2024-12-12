@@ -1,13 +1,12 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/cmdHist.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; faiss/optimized/IndexIVF.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
-; wireshark/optimized/mime_file.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 4
   %3 = icmp eq i32 %1, 2

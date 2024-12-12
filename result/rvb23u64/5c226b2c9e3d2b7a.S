@@ -1,4 +1,4 @@
-func000000000000009a:                   # @func000000000000009a
+func00000000000000de:                   # @func00000000000000de
 	srli	a2, a2, 1
 	sh3add	a1, a2, a1
 	sh3add	a0, a0, a1

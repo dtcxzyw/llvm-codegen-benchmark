@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 22 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
@@ -7,19 +7,7 @@
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; linux/optimized/vgacon.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
-; meshlab/optimized/filter_measure.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/filter_texture_defragmentation.cpp.ll
-; meshlab/optimized/filter_unsharp.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/meshselect.cpp.ll
-; meshlab/optimized/ml_default_decorators.cpp.ll
-; meshlab/optimized/seam_remover.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll

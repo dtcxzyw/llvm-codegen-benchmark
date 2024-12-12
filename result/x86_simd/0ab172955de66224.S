@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpcmpgtd	%ymm0, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq

@@ -35,7 +35,7 @@ entry:
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openmpi/optimized/opal_datatype_add.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = srem i64 %3, %0
@@ -49,7 +49,7 @@ entry:
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = srem i64 %3, %0

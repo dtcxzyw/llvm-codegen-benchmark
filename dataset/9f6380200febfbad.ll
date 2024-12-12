@@ -6,7 +6,7 @@ define i1 @func0000000000000009(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i64 2, i64 3
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp uge i64 %0, %3
   ret i1 %4
 }
 
@@ -51,7 +51,7 @@ define i1 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i64 24, i64 16
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -60,35 +60,43 @@ entry:
 ; just-rs/optimized/53slus9exfz9w045.ll
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = select i1 %2, i64 6, i64 2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
-; 9 occurrences:
-; lief/optimized/DyldInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/RISCVInstrInfo.cpp.ll
-; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
-; llvm/optimized/X86FastISel.cpp.ll
-; lodepng/optimized/pngdetail.cpp.ll
+; 2 occurrences:
 ; meshlab/optimized/parameters.cpp.ll
-; opencv/optimized/circlesgrid.cpp.ll
 ; qemu/optimized/hw_usb_dev-audio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i64 8, i64 2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp samesign ult i64 %0, %3
   ret i1 %4
 }
 
 ; 6 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; lief/optimized/DyldInfo.cpp.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/X86FastISel.cpp.ll
+; lodepng/optimized/pngdetail.cpp.ll
+; opencv/optimized/circlesgrid.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i8 %1) #0 {
+entry:
+  %2 = trunc i8 %1 to i1
+  %3 = select i1 %2, i64 120, i64 60
+  %4 = icmp ult i64 %0, %3
+  ret i1 %4
+}
+
+; 5 occurrences:
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -99,7 +107,7 @@ define i1 @func0000000000000008(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i64 1, i64 2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -112,18 +120,18 @@ define i1 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i64 3, i64 2
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = select i1 %2, i64 281474976710656, i64 65536
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -131,11 +139,11 @@ entry:
 ; delta-rs/optimized/yhu8pdn9ocvwhg1.ll
 ; ockam-rs/optimized/48m1civl6b0v2j4c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = select i1 %2, i64 3, i64 2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 

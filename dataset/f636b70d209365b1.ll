@@ -77,15 +77,55 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 46 occurrences:
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/throw_on_error.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; clamav/optimized/mbox.c.ll
 ; cmake/optimized/cookie.c.ll
 ; curl/optimized/libcurl_la-cookie.ll
+; llvm/optimized/GlobalISelCombinerEmitter.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; openjdk/optimized/ciTypeFlow.ll
 ; openjdk/optimized/codeHeapState.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000041(ptr %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq ptr %0, null
@@ -98,7 +138,7 @@ entry:
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000004c(ptr %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne ptr %0, null

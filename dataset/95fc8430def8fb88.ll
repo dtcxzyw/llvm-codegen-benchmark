@@ -27,7 +27,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 25
   %3 = ashr i32 %2, 31
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -46,13 +46,15 @@ entry:
   ret i32 %4
 }
 
-; 47 occurrences:
+; 49 occurrences:
 ; arrow/optimized/tz.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cpython/optimized/_ctypes_test.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; libjpeg-turbo/optimized/jidctfst.c.ll
 ; libquic/optimized/prtime.cc.ll
+; lvgl/optimized/lv_calendar.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
@@ -99,7 +101,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -124,7 +126,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -161,7 +163,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 18
   %3 = ashr i32 %2, 29
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

@@ -1,6 +1,5 @@
 
-; 12 occurrences:
-; darktable/optimized/introspection_colorequal.c.ll
+; 11 occurrences:
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; darktable/optimized/introspection_exposure.c.ll
 ; darktable/optimized/introspection_gamma.c.ll

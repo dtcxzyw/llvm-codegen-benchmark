@@ -13,6 +13,19 @@ entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, -32768
   %5 = icmp ult i32 %4, -65536
+  %6 = and i1 %0, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; boost/optimized/text_file_backend.ll
+; luajit/optimized/minilua.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a4(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add nsw i32 %3, -1
+  %5 = icmp ult i32 %4, -3
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -22,7 +35,7 @@ entry:
 ; libquic/optimized/json_parser.cc.ll
 ; openspiel/optimized/markov_soccer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add i32 %3, -56678896
@@ -39,7 +52,7 @@ define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp eq i32 %3, 255
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -69,21 +82,9 @@ entry:
 }
 
 ; 1 occurrences:
-; luajit/optimized/minilua.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000054(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %3, 1
-  %5 = icmp ult i32 %4, 32
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; icu/optimized/ucnvscsu.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ac(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp ne i32 %3, 56679167

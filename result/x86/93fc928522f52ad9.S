@@ -11,6 +11,11 @@ func0000000000000004:                   # @func0000000000000004
 	shlq	$61, %rax
 	negq	%rax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	decl	%edi
+	shlq	$2, %rdi
+	leaq	(%rdi,%rdi,4), %rax
+	retq
 func000000000000000f:                   # @func000000000000000f
 	addl	$143, %edi
 	andl	$2097144, %edi                  # imm = 0x1FFFF8
@@ -22,13 +27,14 @@ func0000000000000000:                   # @func0000000000000000
 	movabsq	$7109453100751455733, %rax      # imm = 0x62A9D9ED799705F5
 	imulq	%rcx, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	incl	%edi
-	imulq	$88, %rdi, %rax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	incl	%edi
 	imulq	$56, %rdi, %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	decl	%edi
+	andl	$2147483647, %edi               # imm = 0x7FFFFFFF
+	imulq	$104, %rdi, %rax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	addq	$15, %rdi

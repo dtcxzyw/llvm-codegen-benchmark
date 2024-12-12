@@ -25,14 +25,14 @@ func0000000000000008:                   # @func0000000000000008
 	vzeroupper
 	retq
 .LCPI1_0:
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
 	.zero	1
 	.zero	1
 	.zero	1
@@ -42,10 +42,10 @@ func0000000000000008:                   # @func0000000000000008
 	.zero	1
 	.zero	1
 .LCPI1_1:
-	.zero	4,7
+	.zero	4,63
 func0000000000000000:                   # @func0000000000000000
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpsrld	$20, %ymm0, %ymm0
+	vpsrld	$12, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper

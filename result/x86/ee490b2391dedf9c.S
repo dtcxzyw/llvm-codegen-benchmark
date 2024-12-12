@@ -1,89 +1,105 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	seta	%cl
+	cmpq	%rax, %rdi
+	setb	%cl
 	cmpq	$8, %rsi
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%cl
 	testq	%rsi, %rsi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	seta	%cl
+	cmpq	%rax, %rdi
+	setb	%cl
 	testq	%rsi, %rsi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000045:                   # @func0000000000000045
+func000000000000014c:                   # @func000000000000014c
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	setae	%cl
+	cmpq	%rax, %rdi
+	setne	%cl
+	testq	%rsi, %rsi
+	setg	%al
+	orb	%cl, %al
+	retq
+func0000000000000085:                   # @func0000000000000085
+	movl	%edx, %eax
+	cmpq	%rax, %rdi
+	setbe	%cl
 	cmpq	$2, %rsi
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000189:                   # @func0000000000000189
+func0000000000000519:                   # @func0000000000000519
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	setbe	%cl
+	cmpq	%rax, %rdi
+	setae	%cl
 	movabsq	$1844674407370955161, %rax      # imm = 0x1999999999999999
 	cmpq	%rax, %rsi
 	seta	%al
 	orb	%cl, %al
 	retq
-func0000000000000119:                   # @func0000000000000119
+func0000000000000439:                   # @func0000000000000439
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	setbe	%cl
+	cmpq	%rax, %rdi
+	setae	%cl
 	cmpq	$6, %rsi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000019:                   # @func0000000000000019
+func0000000000000039:                   # @func0000000000000039
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	setbe	%cl
+	cmpq	%rax, %rdi
+	setae	%cl
 	testq	%rsi, %rsi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000559:                   # @func0000000000000559
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
+	setae	%cl
+	testq	%rsi, %rsi
+	setg	%al
+	orb	%cl, %al
+	retq
+func0000000000000021:                   # @func0000000000000021
+	movl	%edx, %eax
+	cmpq	%rax, %rdi
 	sete	%cl
 	testq	%rsi, %rsi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000184:                   # @func0000000000000184
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	seta	%cl
-	cmpq	$2, %rsi
-	setae	%al
-	orb	%cl, %al
-	retq
-func00000000000000c4:                   # @func00000000000000c4
-	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	seta	%cl
+	cmpq	%rax, %rdi
+	setb	%cl
 	testq	%rsi, %rsi
 	setne	%al
 	orb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setne	%cl
 	cmpq	$1, %rsi
 	sete	%al
+	orb	%cl, %al
+	retq
+func0000000000000114:                   # @func0000000000000114
+	movl	%edx, %eax
+	cmpq	%rax, %rdi
+	setb	%cl
+	cmpq	$256, %rsi                      # imm = 0x100
+	setae	%al
 	orb	%cl, %al
 	retq

@@ -1,5 +1,6 @@
 
-; 16 occurrences:
+; 18 occurrences:
+; llvm/optimized/APINotesManager.cpp.ll
 ; openjdk/optimized/collectedHeap.ll
 ; openjdk/optimized/defNewGeneration.ll
 ; openjdk/optimized/g1CollectedHeap.ll
@@ -16,10 +17,11 @@
 ; openjdk/optimized/shenandoahUtils.ll
 ; openjdk/optimized/systemDictionary.ll
 ; openjdk/optimized/universe.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002c(ptr %0, ptr %1) #0 {
+define ptr @func000000000000006c(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %.not = icmp eq ptr %0, null
   %3 = select i1 %.not, ptr null, ptr %2
   ret ptr %3
@@ -32,9 +34,9 @@ entry:
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, ptr %2, ptr null
   ret ptr %4

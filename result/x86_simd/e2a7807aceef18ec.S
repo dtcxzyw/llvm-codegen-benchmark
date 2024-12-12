@@ -75,7 +75,7 @@ func000000000000000f:                   # @func000000000000000f
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI11_0(%rip){1to4}, %ymm0, %ymm0
 	retq
-func0000000000000017:                   # @func0000000000000017
+func0000000000000016:                   # @func0000000000000016
 	vpsllq	$32, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

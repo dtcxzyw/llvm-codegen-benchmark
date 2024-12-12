@@ -28,12 +28,6 @@ func0000000000000000:                   # @func0000000000000000
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000001f:                   # @func000000000000001f
-	movl	%edx, %eax
-	shrq	$32, %rsi
-	imulq	%rsi, %rax
-	addq	%rdi, %rax
-	retq
 func000000000000003f:                   # @func000000000000003f
 	movl	%edx, %eax
 	shrq	%rsi

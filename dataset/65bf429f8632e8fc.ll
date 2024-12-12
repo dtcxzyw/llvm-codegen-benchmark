@@ -10,8 +10,9 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cmake/optimized/ia64.c.ll
+; lvgl/optimized/lv_math.ll
 ; quickjs/optimized/quickjs.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind

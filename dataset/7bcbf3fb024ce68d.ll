@@ -38,16 +38,18 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 100
   %3 = mul nsw i32 %2, 5
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; hwloc/optimized/lstopo-lstopo-fig.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-fig.ll
 ; libquic/optimized/time_support.c.ll
@@ -63,18 +65,14 @@ entry:
 ; openjdk/optimized/zHeapIterator.ll
 ; openspiel/optimized/bridge_scoring.cc.ll
 ; openspiel/optimized/spades_scoring.cc.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; php/optimized/engine_combinedlcg.ll
 ; quantlib/optimized/date.ll
 ; raylib/optimized/rcore.c.ll
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %.fr = freeze i32 %1
-  %2 = srem i32 %.fr, 12
-  %3 = sub i32 %2, %.fr
+  %2 = sdiv i32 %1, 127773
+  %3 = mul nsw i32 %2, -2836
   %4 = add i32 %3, %0
   ret i32 %4
 }

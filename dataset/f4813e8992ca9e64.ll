@@ -20,25 +20,21 @@
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 7
   %4 = and i64 %3, 8589934584
   %5 = and i64 %1, 8589934588
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
-; 8 occurrences:
+; 4 occurrences:
 ; folly/optimized/AsyncFdSocket.cpp.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/AsyncUDPSocket.cpp.ll
 ; folly/optimized/NetOps.cpp.ll
-; hermes/optimized/RegExp.cpp.ll
-; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/teddy_compile.cpp.ll
-; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -51,28 +47,29 @@ entry:
 }
 
 ; 1 occurrences:
-; lightgbm/optimized/dataset_loader.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %2, 7
-  %4 = and i64 %3, -8
-  %5 = and i64 %1, -8
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
-  ret ptr %7
-}
-
-; 1 occurrences:
 ; hermes/optimized/RegExp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = and i64 %3, 4294967295
   %5 = and i64 %1, 1073741823
-  %6 = getelementptr nusw i16, ptr %0, i64 %5
-  %7 = getelementptr nusw i16, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i16, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 2 occurrences:
+; hermes/optimized/RegExp.cpp.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 2
+  %4 = and i64 %3, 4294967295
+  %5 = and i64 %1, 1073741823
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i16, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -119,6 +116,20 @@ entry:
   %5 = and i64 %1, 131064
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 2 occurrences:
+; hyperscan/optimized/fdr_compile.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 63
+  %4 = and i64 %3, -64
+  %5 = and i64 %1, 17179869120
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7
 }
 

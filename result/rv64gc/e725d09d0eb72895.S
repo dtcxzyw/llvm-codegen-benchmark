@@ -1,7 +1,7 @@
 func0000000000000005:                   # @func0000000000000005
-	slli	a0, a0, 5
+	slli	a0, a0, 6
 	neg	a0, a0
-	srai	a0, a0, 5
+	srai	a0, a0, 6
 	addi	a0, a0, -16
 	ret
 func0000000000000009:                   # @func0000000000000009

@@ -34,3 +34,15 @@ func0000000000000008:                   # @func0000000000000008
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$6, %edx
+	setb	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	$32, %edx
+	setae	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq

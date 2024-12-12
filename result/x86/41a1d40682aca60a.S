@@ -1,5 +1,6 @@
 func0000000000000006:                   # @func0000000000000006
-	testl	%edx, %edx
-	cmovel	%edx, %esi
-	shrxq	%rsi, %rdi, %rax
+	cmpl	$16, %edx
+	movl	$4, %eax
+	cmovnel	%esi, %eax
+	shrxq	%rax, %rdi, %rax
 	retq

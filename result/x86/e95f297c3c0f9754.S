@@ -1,8 +1,4 @@
-func000000000000007a:                   # @func000000000000007a
-	andl	$63, %esi
-	leaq	25(%rsi,%rdi), %rax
-	retq
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	andl	$63, %esi
 	leaq	25(%rsi,%rdi), %rax
 	retq
@@ -11,7 +7,7 @@ func000000000000005e:                   # @func000000000000005e
 	shll	$4, %eax
 	leaq	14888(%rax,%rdi), %rax
 	retq
-func0000000000000058:                   # @func0000000000000058
+func000000000000005c:                   # @func000000000000005c
 	movzwl	%si, %eax
 	leaq	20(%rdi,%rax,4), %rax
 	retq

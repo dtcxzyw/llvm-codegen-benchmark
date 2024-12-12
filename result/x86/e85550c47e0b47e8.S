@@ -15,7 +15,7 @@ func0000000000000006:                   # @func0000000000000006
 	movb	$52, %al
 	bzhiq	%rax, %rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movq	%rsi, %rax
 	shrq	$32, %rax
 	cmovneq	%rsi, %rdi

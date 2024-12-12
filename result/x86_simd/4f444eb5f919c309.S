@@ -4,7 +4,7 @@
 	.zero	16,2
 .LCPI0_2:
 	.byte	3                               # 0x3
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpbroadcastb	.LCPI0_2(%rip), %xmm0   # xmm0 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
@@ -20,7 +20,7 @@ func0000000000000081:                   # @func0000000000000081
 	.zero	16,4
 .LCPI1_2:
 	.byte	5                               # 0x5
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpbroadcastb	.LCPI1_2(%rip), %xmm0   # xmm0 = [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]

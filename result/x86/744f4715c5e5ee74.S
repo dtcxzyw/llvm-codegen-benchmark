@@ -1,24 +1,18 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	leal	(%rsi,%rdx), %ecx
 	leal	-1(%rsi,%rdx), %eax
-	cmpl	%edi, %ecx
-	cmovlel	%edi, %eax
+	cmpl	%ecx, %edi
+	cmovgel	%edi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	leal	(%rsi,%rdx), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	leal	100(%rsi,%rdx), %eax
-	cmovbel	%edi, %eax
+	cmovael	%edi, %eax
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	leal	(%rsi,%rdx), %ecx
 	leal	255(%rsi,%rdx), %eax
-	cmpl	%edi, %ecx
-	cmovlel	%edi, %eax
-	retq
-func000000000000005a:                   # @func000000000000005a
-	leal	(%rsi,%rdx), %ecx
-	leal	1(%rsi,%rdx), %eax
-	cmpl	%edi, %ecx
+	cmpl	%ecx, %edi
 	cmovgel	%edi, %eax
 	retq

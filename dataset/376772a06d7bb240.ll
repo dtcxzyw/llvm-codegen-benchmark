@@ -1,7 +1,5 @@
 
-; 6 occurrences:
-; hwloc/optimized/cpukinds.ll
-; hwloc/optimized/topology-x86.ll
+; 4 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/countbitsnode.ll
 ; qemu/optimized/source_s_countLeadingZeros64.c.ll
@@ -29,6 +27,20 @@ entry:
   %2 = icmp ult i64 %0, 4294967296
   %3 = select i1 %2, i64 %0, i64 %1
   %4 = trunc i64 %3 to i32
+  ret i32 %4
+}
+
+; 3 occurrences:
+; hwloc/optimized/cpukinds.ll
+; hwloc/optimized/topology-x86.ll
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000052(i64 %0) #0 {
+entry:
+  %1 = lshr i64 %0, 32
+  %2 = icmp samesign ult i64 %0, 4294967296
+  %3 = select i1 %2, i64 %0, i64 %1
+  %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
 

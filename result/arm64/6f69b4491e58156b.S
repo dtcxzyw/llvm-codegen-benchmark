@@ -1,52 +1,33 @@
-func0000000000000096:                   // @func0000000000000096
+func0000000000000126:                   // @func0000000000000126
 // %bb.0:                               // %entry
-	movi	v5.4s, #2
-	cmlt	v0.8h, v0.8h, #0
-	add	v3.4s, v3.4s, v5.4s
-	add	v4.4s, v4.4s, v5.4s
-	cmhs	v2.4s, v2.4s, v4.4s
-	cmhs	v1.4s, v1.4s, v3.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	and	v0.16b, v0.16b, v1.16b
-	xtn	v0.8b, v0.8h
+	sxth	w8, w0
+	add	w9, w2, #2
+	cmp	w8, #0
+	ccmp	w1, w9, #0, lt
+	cset	w0, hs
 	ret
                                         // -- End function
-func000000000000004c:                   // @func000000000000004c
+func000000000000008c:                   // @func000000000000008c
 // %bb.0:                               // %entry
-	movi	v5.4s, #4
-	cmeq	v0.8h, v0.8h, #0
-	add	v3.4s, v3.4s, v5.4s
-	add	v4.4s, v4.4s, v5.4s
-	cmhi	v2.4s, v4.4s, v2.4s
-	cmhi	v1.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	bic	v0.16b, v1.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	add	w8, w2, #4
+	tst	w0, #0xffff
+	ccmp	w1, w8, #2, ne
+	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000016c:                   // @func000000000000016c
+func00000000000004cc:                   // @func00000000000004cc
 // %bb.0:                               // %entry
-	mvni	v5.4s, #1
-	cmeq	v0.8h, v0.8h, #0
-	add	v3.4s, v3.4s, v5.4s
-	add	v4.4s, v4.4s, v5.4s
-	cmgt	v2.4s, v4.4s, v2.4s
-	cmgt	v1.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	bic	v0.16b, v1.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	sub	w8, w2, #2
+	tst	w0, #0xffff
+	ccmp	w1, w8, #0, ne
+	cset	w0, lt
 	ret
                                         // -- End function
-func000000000000001c:                   // @func000000000000001c
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
-	movi	v5.4s, #1
-	cmeq	v0.8h, v0.8h, #0
-	add	v3.4s, v3.4s, v5.4s
-	add	v4.4s, v4.4s, v5.4s
-	cmeq	v2.4s, v4.4s, v2.4s
-	cmeq	v1.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	bic	v0.16b, v1.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	add	w8, w2, #1
+	tst	w0, #0xffff
+	ccmp	w1, w8, #0, ne
+	cset	w0, eq
 	ret
                                         // -- End function

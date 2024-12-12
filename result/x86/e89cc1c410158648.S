@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
@@ -9,7 +9,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000b6:                   # @func00000000000000b6
+func0000000000000166:                   # @func0000000000000166
 	leal	31(%rsi), %eax
 	addl	$62, %esi
 	testl	%eax, %eax
@@ -20,7 +20,7 @@ func00000000000000b6:                   # @func00000000000000b6
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	addl	$12, %esi
 	movslq	%esi, %rax
 	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
@@ -33,7 +33,7 @@ func0000000000000036:                   # @func0000000000000036
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leal	63(%rsi), %eax
 	addl	$126, %esi
 	testl	%eax, %eax
@@ -44,7 +44,7 @@ func0000000000000031:                   # @func0000000000000031
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	63(%rsi), %eax
 	addl	$126, %esi
 	testl	%eax, %eax
@@ -55,7 +55,7 @@ func0000000000000011:                   # @func0000000000000011
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	movl	%esi, %eax
 	incl	%eax
 	shrl	$31, %eax
@@ -66,7 +66,7 @@ func0000000000000096:                   # @func0000000000000096
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	movl	%esi, %eax
 	incl	%eax
 	shrl	$31, %eax

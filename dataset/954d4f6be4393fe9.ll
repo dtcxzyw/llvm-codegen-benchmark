@@ -39,7 +39,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %1, %2
   %4 = icmp ult i32 %3, 56
@@ -52,7 +52,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %1, %2
   %4 = icmp ugt i32 %3, 95

@@ -28,7 +28,7 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/node_hash_set_test.cc.ll
@@ -40,6 +40,8 @@ entry:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; z3/optimized/mpz.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:

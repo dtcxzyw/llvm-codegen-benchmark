@@ -11,7 +11,7 @@
 ; postgres/optimized/aclchk.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i16 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, -4
@@ -35,7 +35,7 @@ entry:
 ; nuttx/optimized/serial_io.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i16 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, 2
@@ -50,7 +50,7 @@ entry:
 ; postgres/optimized/partbounds.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, 1

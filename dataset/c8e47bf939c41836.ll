@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/acecCl.c.ll
@@ -22,7 +22,6 @@
 ; abc/optimized/reoSwap.c.ll
 ; abc/optimized/saigMiter.c.ll
 ; abc/optimized/sswSat.c.ll
-; eastl/optimized/TestMemory.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
@@ -37,16 +36,7 @@
 ; openjdk/optimized/nmethod.ll
 ; openjdk/optimized/objArrayKlass.ll
 ; openjdk/optimized/stubRoutines.ll
-; openusd/optimized/aggregateNode.cpp.ll
-; openusd/optimized/aggregateTreeBuilder.cpp.ll
-; openusd/optimized/basisCurves.cpp.ll
-; openusd/optimized/collectionAPIAdapter.cpp.ll
-; openusd/optimized/eventTree.cpp.ll
-; openusd/optimized/mesh.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/testHdBufferSpec.cpp.ll
-; openusd/optimized/typeRegistry.cpp.ll
-; openusd/optimized/variableExpressionImpl.cpp.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, ptr %1, ptr %2) #0 {
 entry:

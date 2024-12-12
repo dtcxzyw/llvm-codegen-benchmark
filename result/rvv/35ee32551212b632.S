@@ -7,7 +7,7 @@ func000000000000000a:                   # @func000000000000000a
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12
 	vmsleu.vv	v12, v8, v10
-	vmor.mm	v0, v12, v0
+	vmor.mm	v0, v0, v12
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -15,6 +15,6 @@ func0000000000000002:                   # @func0000000000000002
 	vsrl.vi	v12, v12, 29
 	vadd.vv	v10, v10, v12
 	vsra.vi	v10, v10, 3
-	vmseq.vv	v12, v10, v8
+	vmseq.vv	v12, v8, v10
 	vmor.mm	v0, v12, v0
 	ret

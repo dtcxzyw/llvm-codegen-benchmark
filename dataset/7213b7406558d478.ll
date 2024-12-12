@@ -3,7 +3,7 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; slurm/optimized/gres.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %1, %2
   %4 = icmp ne i32 %1, -2

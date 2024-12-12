@@ -4,9 +4,9 @@ func0000000000000002:                   # @func0000000000000002
 	shlq	$48, %rax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	movl	%edi, %eax
-	subl	%esi, %eax
-	shll	$16, %eax
+	subl	%esi, %edi
+	movzwl	%di, %eax
+	shlq	$32, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%edi, %eax

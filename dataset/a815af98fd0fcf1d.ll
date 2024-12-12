@@ -1,9 +1,20 @@
 
-; 14 occurrences:
+; 2 occurrences:
+; openusd/optimized/stackTrace.cpp.ll
+; ruby/optimized/addr2line.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %2, null
+  %4 = select i1 %3, ptr %0, ptr %1
+  %5 = icmp ne ptr %4, null
+  ret i1 %5
+}
+
+; 13 occurrences:
 ; cvc5/optimized/options.cpp.ll
 ; folly/optimized/Request.cpp.ll
 ; grpc/optimized/slice.cc.ll
-; linux/optimized/virtgpu_plane.ll
 ; openjdk/optimized/jvmtiTrace.ll
 ; openjdk/optimized/logConfiguration.ll
 ; openssl/optimized/libcrypto-lib-http_client.ll
@@ -15,7 +26,7 @@
 ; quantlib/optimized/fixedratecoupon.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr %0, ptr %1

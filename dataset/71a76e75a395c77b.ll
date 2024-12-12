@@ -12,6 +12,7 @@
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sbdCut2.c.ll
+; abc/optimized/sbdWin.c.ll
 ; abc/optimized/xsatSolverAPI.c.ll
 ; cpython/optimized/_ssl.ll
 ; cpython/optimized/blob.ll
@@ -39,7 +40,6 @@
 ; spike/optimized/kmmsb.ll
 ; spike/optimized/kmmsb_u.ll
 ; spike/optimized/ksub32.ll
-; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
@@ -50,7 +50,7 @@ entry:
   ret i64 %5
 }
 
-; 121 occurrences:
+; 118 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -84,9 +84,9 @@ entry:
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
-; cmake/optimized/archive_write_disk_set_standard_lookup.c.ll
 ; darktable/optimized/introspection_clahe.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
+; freetype/optimized/truetype.c.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
@@ -138,10 +138,6 @@ entry:
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlahqr.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtpttf.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/calibration.cpp.ll
 ; opencv/optimized/convhull.cpp.ll
 ; opencv/optimized/data.cpp.ll
@@ -166,6 +162,7 @@ entry:
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
+; velox/optimized/Re2Functions.cpp.ll
 ; velox/optimized/VeloxException.cpp.ll
 ; wireshark/optimized/reedsolomon.c.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
@@ -183,13 +180,13 @@ entry:
 
 ; 29 occurrences:
 ; abc/optimized/fraHot.c.ll
-; abc/optimized/sbdWin.c.ll
 ; cpython/optimized/posixmodule.ll
 ; gromacs/optimized/grid.cpp.ll
 ; icu/optimized/ubidi.ll
 ; icu/optimized/ubidiln.ll
 ; icu/optimized/uvector.ll
 ; libwebp/optimized/sharpyuv.c.ll
+; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/torch_importer.cpp.ll
 ; postgres/optimized/bbstreamer_tar.ll
 ; postgres/optimized/walwriter.ll
@@ -232,14 +229,8 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 1 occurrences:
 ; linux/optimized/vmstat.ll
-; postgres/optimized/array_userfuncs.ll
-; postgres/optimized/arrayfuncs.ll
-; postgres/optimized/list.ll
-; postgres/optimized/lwlock.ll
-; postgres/optimized/nodeHash.ll
-; postgres/optimized/typcache.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -249,13 +240,40 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; opencv/optimized/median_blur.dispatch.cpp.ll
+; 1 occurrences:
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 19967
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = sext i32 %4 to i64
+  ret i64 %5
+}
+
+; 2 occurrences:
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 19968
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = sext i32 %4 to i64
+  ret i64 %5
+}
+
+; 6 occurrences:
+; postgres/optimized/array_userfuncs.ll
+; postgres/optimized/arrayfuncs.ll
+; postgres/optimized/list.ll
+; postgres/optimized/lwlock.ll
+; postgres/optimized/nodeHash.ll
+; postgres/optimized/typcache.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 2
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = sext i32 %4 to i64
   ret i64 %5

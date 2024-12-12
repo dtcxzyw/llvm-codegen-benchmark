@@ -1,10 +1,3 @@
-func0000000000000030:                   # @func0000000000000030
-	slli	a1, a1, 48
-	lui	a2, 288
-	mulhu	a1, a1, a2
-	add	a0, a0, a1
-	addiw	a0, a0, 5
-	ret
 func000000000000003f:                   # @func000000000000003f
 	andi	a1, a1, 255
 	li	a2, 150
@@ -27,6 +20,13 @@ func0000000000000035:                   # @func0000000000000035
 	add	a0, a0, a1
 	addi	a1, a2, 723
 	addw	a0, a0, a1
+	ret
+func0000000000000030:                   # @func0000000000000030
+	andi	a1, a1, 255
+	li	a2, 100
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, -1900
 	ret
 func000000000000003d:                   # @func000000000000003d
 	andi	a1, a1, 55

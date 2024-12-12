@@ -122,6 +122,15 @@ func000000000000008f:                   # @func000000000000008f
 	add	a0, a0, a2
 	addiw	a0, a0, 5
 	ret
+func000000000000018f:                   # @func000000000000018f
+	sext.w	a2, a2
+	lui	a3, 24
+	addiw	a3, a3, 1695
+	sltu	a2, a3, a2
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addiw	a0, a0, 5
+	ret
 func0000000000000040:                   # @func0000000000000040
 	sext.w	a2, a2
 	li	a3, -39
@@ -131,7 +140,7 @@ func0000000000000040:                   # @func0000000000000040
 	add	a0, a0, a2
 	addiw	a0, a0, 208
 	ret
-func0000000000000085:                   # @func0000000000000085
+func0000000000000185:                   # @func0000000000000185
 	sext.w	a2, a2
 	sltiu	a2, a2, 17
 	xori	a2, a2, 1

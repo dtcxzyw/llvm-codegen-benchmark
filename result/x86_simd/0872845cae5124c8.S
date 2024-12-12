@@ -27,3 +27,11 @@ func0000000000000060:                   # @func0000000000000060
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+.LCPI4_0:
+	.long	8                               # 0x8
+func0000000000000020:                   # @func0000000000000020
+	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm1, %k0
+	vpmovm2w	%k0, %xmm1
+	vpsubw	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq

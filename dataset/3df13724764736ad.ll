@@ -22,7 +22,11 @@ entry:
   ret i1 %3
 }
 
-; 18 occurrences:
+; 23 occurrences:
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/rational.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/kinsol.c.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
@@ -41,6 +45,7 @@ entry:
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
@@ -86,7 +91,7 @@ entry:
   ret i1 %3
 }
 
-; 586 occurrences:
+; 588 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -95,6 +100,9 @@ entry:
 ; arrow/optimized/expression.cc.ll
 ; arrow/optimized/message.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/rational.ll
+; boost/optimized/static_string.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
@@ -165,7 +173,6 @@ entry:
 ; cpython/optimized/cfield.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/memoryobject.ll
-; cpython/optimized/unicode.ll
 ; cvc5/optimized/resolution_proofs_util.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll

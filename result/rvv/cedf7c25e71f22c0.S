@@ -4,7 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, 64
 	addiw	a0, a0, -1
 	vand.vx	v10, v10, a0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	vadd.vv	v8, v8, v8
 	ret
 func000000000000000c:                   # @func000000000000000c

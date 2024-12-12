@@ -8,7 +8,7 @@
 ; llvm/optimized/MemorySSAUpdater.cpp.ll
 ; llvm/optimized/ShrinkWrap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000041(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %1

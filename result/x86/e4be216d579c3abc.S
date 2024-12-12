@@ -13,6 +13,11 @@ func000000000000006d:                   # @func000000000000006d
 	shrl	$3, %eax
 	decb	%al
 	retq
+func0000000000000063:                   # @func0000000000000063
+	leal	33(%rdi), %eax
+	shrl	$6, %eax
+	addb	$-64, %al
+	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	-1(%rdi), %eax
 	shrl	%eax

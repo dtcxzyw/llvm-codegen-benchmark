@@ -1,11 +1,12 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; crow/optimized/example_session.cpp.ll
@@ -49,10 +50,10 @@
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
+  %4 = mul i32 %2, %3
   %5 = trunc nuw i64 %0 to i32
   %6 = icmp ugt i32 %4, %5
   ret i1 %6
@@ -65,10 +66,10 @@ entry:
 ; pcg-cpp/optimized/pcg-demo.cpp.ll
 ; vcpkg/optimized/uuid.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000224(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000444(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
+  %4 = mul i32 %2, %3
   %5 = trunc nuw i64 %0 to i32
   %6 = icmp ugt i32 %4, %5
   ret i1 %6
@@ -77,10 +78,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/BranchProbability.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000404(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
+  %4 = mul i32 %2, %3
   %5 = trunc i64 %0 to i32
   %6 = icmp ugt i32 %4, %5
   ret i1 %6

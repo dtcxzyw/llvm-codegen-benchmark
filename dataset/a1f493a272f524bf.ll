@@ -4,9 +4,9 @@
 ; linux/optimized/neighbour.ll
 ; linux/optimized/string_helpers.ll
 ; slurm/optimized/node_scheduler.ll
-; slurm/optimized/salloc.ll
 ; slurm/optimized/sinfo.ll
 ; spike/optimized/debug_module.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
@@ -16,9 +16,7 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
-; freetype/optimized/type1.c.ll
-; freetype/optimized/type1cid.c.ll
+; 4 occurrences:
 ; linux/optimized/cfg.ll
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/intel_display_irq.ll

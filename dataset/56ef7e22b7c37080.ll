@@ -20,7 +20,7 @@ entry:
   %2 = zext nneg i16 %1 to i32
   %3 = shl nuw i32 %2, 24
   %4 = ashr exact i32 %3, 8
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -38,7 +38,7 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = shl i32 %2, 24
   %4 = ashr exact i32 %3, 24
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

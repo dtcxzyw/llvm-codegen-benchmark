@@ -1,5 +1,6 @@
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/kinsol.c.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/gmx_dipoles.cpp.ll

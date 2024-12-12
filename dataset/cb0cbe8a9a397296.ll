@@ -1,11 +1,10 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; quantlib/optimized/asx.ll
 ; quantlib/optimized/imm.ll
 ; ruby/optimized/bignum.ll
-; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %0, %1
@@ -52,12 +51,12 @@ entry:
 ; libquic/optimized/adler32.c.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000003f8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nuw nsw i64 %0, %1
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ugt i64 %5, 131041
+  %6 = icmp samesign ugt i64 %5, 131041
   ret i1 %6
 }
 
@@ -65,7 +64,7 @@ entry:
 ; llvm/optimized/ByteCodeEmitter.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %0, %1
@@ -74,22 +73,32 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
-; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000b8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %0, %1
   %5 = add nsw i64 %4, %3
-  %6 = icmp ugt i64 %5, 1
+  %6 = icmp samesign ugt i64 %5, 1
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
+; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b4(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = sub nsw i64 %0, %1
+  %5 = add nsw i64 %4, %3
+  %6 = icmp samesign ult i64 %5, 2
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; libzmq/optimized/radix_tree.cpp.ll
-; linux/optimized/fs-writeback.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -103,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/tcp_input.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000002a6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %0, %1
@@ -130,7 +139,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/sta_info.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %0, %1
@@ -142,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/svcsock.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %0, %1
@@ -152,9 +161,21 @@ entry:
 }
 
 ; 1 occurrences:
+; z3/optimized/pb_solver.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a8(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = sub nsw i64 %0, %1
+  %5 = add nsw i64 %4, %3
+  %6 = icmp ugt i64 %5, 4294967295
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; zxing/optimized/DMDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %0, %1
@@ -166,7 +187,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000022a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %0, %1
@@ -178,7 +199,7 @@ entry:
 ; 1 occurrences:
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %0, %1

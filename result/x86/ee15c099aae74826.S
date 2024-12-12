@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	(%rsi,%rsi), %ecx
 	andl	$16777214, %ecx                 # imm = 0xFFFFFE
 	leal	16777216(%rcx), %eax

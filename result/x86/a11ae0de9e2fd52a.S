@@ -5,48 +5,55 @@ func0000000000000008:                   # @func0000000000000008
 	movq	$-1, %rax
 	cmovbq	%rcx, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000018:                   # @func0000000000000018
+	movl	$64, %eax
+	shlxq	%rsi, %rax, %rcx
+	cmpl	$58, %edi
+	movq	$-1, %rax
+	cmovbq	%rcx, %rax
+	retq
+func0000000000000041:                   # @func0000000000000041
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rcx
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rcx
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	cmovneq	%rcx, %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rcx
 	xorl	%eax, %eax
 	cmpl	$64, %edi
 	cmovlq	%rcx, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	$-1, %rax
 	shlxq	%rsi, %rax, %rcx
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rcx
 	xorl	%eax, %eax
 	cmpl	$65, %edi
 	cmovbq	%rcx, %rax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	movl	$1, %ecx
 	shlxq	%rsi, %rcx, %rax
 	cmpl	$6, %edi
 	cmovlq	%rcx, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	movq	$-1, %rax
 	shlxq	%rsi, %rax, %rcx
 	xorl	%eax, %eax
@@ -59,4 +66,11 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$2, %edi
 	movl	$6, %eax
 	cmovneq	%rcx, %rax
+	retq
+func0000000000000058:                   # @func0000000000000058
+	movl	$1, %eax
+	shlxq	%rsi, %rax, %rcx
+	cmpl	$64, %edi
+	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000
+	cmovbq	%rcx, %rax
 	retq

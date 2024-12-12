@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/st.c.ll
 ; abc/optimized/stmm.c.ll
 ; cmake/optimized/archive_string.c.ll
@@ -16,6 +16,7 @@
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; opencv/optimized/rand.cpp.ll
@@ -39,7 +40,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 16 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
@@ -55,6 +56,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; postgres/optimized/int.ll
 ; wireshark/optimized/sdjournal.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
 ; zxing/optimized/GTIN.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
@@ -79,10 +81,11 @@ entry:
   ret i32 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0) #0 {
 entry:

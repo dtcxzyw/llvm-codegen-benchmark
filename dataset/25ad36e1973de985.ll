@@ -1,5 +1,5 @@
 
-; 667 occurrences:
+; 677 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -30,6 +30,20 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/message.ll
+; boost/optimized/partition.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/fmu.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/fmu_function.cpp.ll
@@ -141,7 +155,6 @@
 ; gromacs/optimized/force.cpp.ll
 ; gromacs/optimized/forcebuffers.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/genhydro.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
@@ -259,7 +272,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -291,7 +303,6 @@
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -320,7 +331,6 @@
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/CZipReader.cpp.ll
 ; minetest/optimized/MaterialRenderer.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/craftdef.cpp.ll
@@ -668,7 +678,7 @@
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -56
   %2 = add nsw i64 %.neg, 164703072086692425
@@ -676,7 +686,7 @@ entry:
   ret i1 %3
 }
 
-; 425 occurrences:
+; 424 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/type.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -693,6 +703,9 @@ entry:
 ; assimp/optimized/ObjFileParser.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; cmake/optimized/ccmake.cxx.ll
@@ -800,7 +813,6 @@ entry:
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -952,13 +964,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -1103,7 +1112,7 @@ entry:
 ; zxing/optimized/ODReader.cpp.ll
 ; zxing/optimized/QRReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -40
   %2 = add nsw i64 %.neg, 230584300921369395
@@ -1116,11 +1125,22 @@ entry:
 ; openusd/optimized/listOp.cpp.ll
 ; vcpkg/optimized/dependencies.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -40
   %2 = add nsw i64 %.neg, 230584300921369395
   %3 = icmp ugt i64 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; opencv/optimized/floodfill.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
+entry:
+  %.neg = sdiv exact i64 %1, -12
+  %2 = add nsw i64 %.neg, 768614336404564650
+  %3 = icmp samesign ult i64 %2, %0
   ret i1 %3
 }
 

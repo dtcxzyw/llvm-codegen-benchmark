@@ -4,7 +4,7 @@
 ; jq/optimized/decNumber.ll
 ; re2/optimized/re2.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000166(i32 %0, i32 %1) #0 {
+define i1 @func00000000000004c6(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp slt i32 %1, %0
@@ -13,11 +13,12 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; re2/optimized/re2.cc.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp slt i32 %1, %0
@@ -29,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp eq i32 %0, %1
@@ -41,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000042a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp eq i32 %0, %1
@@ -55,7 +56,7 @@ entry:
 ; openusd/optimized/decodeframe.c.ll
 ; postgres/optimized/rangetypes_typanalyze.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000054a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp sgt i32 %0, %1

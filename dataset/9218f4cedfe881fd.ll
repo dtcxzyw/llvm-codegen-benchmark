@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
@@ -9,7 +9,6 @@
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -39,7 +38,7 @@
 ; opencv/optimized/lkpyramid.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = sext i32 %3 to i64
@@ -59,7 +58,7 @@ entry:
 ; opencv/optimized/lkpyramid.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000128(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = sext i32 %3 to i64
@@ -72,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/minimize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
   %4 = sext i32 %3 to i64
@@ -85,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/minimize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
   %4 = sext i32 %3 to i64
@@ -100,7 +99,7 @@ entry:
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000012a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = sext i32 %3 to i64

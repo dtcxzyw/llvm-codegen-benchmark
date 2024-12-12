@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/MD5Loader.cpp.ll
@@ -40,7 +40,6 @@
 ; protobuf/optimized/context.cc.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; qemu/optimized/hw_virtio_virtio-balloon.c.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/nonstandardswap.ll
 ; slurm/optimized/bitstring.ll

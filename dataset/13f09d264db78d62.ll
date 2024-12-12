@@ -1,10 +1,10 @@
 
-%struct._ir_insn.2676282 = type { %struct.anon.2676283, %union.anon.5.2676284 }
-%struct.anon.2676283 = type { %union.anon.2676285, %union.anon.4.2676286 }
-%union.anon.2676285 = type { i32 }
-%union.anon.4.2676286 = type { i32 }
-%union.anon.5.2676284 = type { %union._ir_val.2676287 }
-%union._ir_val.2676287 = type { double }
+%struct._ir_insn.2789327 = type { %struct.anon.2789328, %union.anon.5.2789329 }
+%struct.anon.2789328 = type { %union.anon.2789330, %union.anon.4.2789331 }
+%union.anon.2789330 = type { i32 }
+%union.anon.4.2789331 = type { i32 }
+%union.anon.5.2789329 = type { %union._ir_val.2789332 }
+%union._ir_val.2789332 = type { double }
 
 ; 2 occurrences:
 ; php/optimized/ir_cfg.ll
@@ -16,7 +16,7 @@ entry:
   %4 = shl nuw i32 %1, 6
   %5 = or disjoint i32 %4, %3
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %struct._ir_insn.2676282, ptr %0, i64 %6
+  %7 = getelementptr nusw %struct._ir_insn.2789327, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -117,9 +117,9 @@ entry:
 ; cmake/optimized/divsufsort.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000062(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl i32 %1, 8
   %5 = or i32 %4, %3
   %6 = sext i32 %5 to i64

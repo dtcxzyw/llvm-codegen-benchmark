@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-lib-bn_mul.ll
 ; openssl/optimized/libcrypto-shlib-bn_mul.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add i32 %3, 1
@@ -29,7 +29,7 @@ entry:
 ; oiio/optimized/iffinput.cpp.ll
 ; wireshark/optimized/packet-sapms.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ac(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp ne i32 %3, -1

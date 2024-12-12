@@ -12,11 +12,3 @@ func0000000000000018:                   # @func0000000000000018
 	andb	%dl, %al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	andl	$15, %edx
-	cmpl	$11, %edx
-	setae	%al
-	notb	%sil
-	andb	%sil, %al
-	orb	%dil, %al
-	retq

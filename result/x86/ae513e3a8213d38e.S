@@ -13,8 +13,3 @@ func0000000000000003:                   # @func0000000000000003
 	shrq	$48, %rax
 	andl	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movq	%rsi, %rax
-	shrq	$31, %rax
-	andl	%edi, %eax
-	retq

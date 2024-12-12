@@ -35,7 +35,7 @@ entry:
   %2 = shl i32 %1, 5
   %3 = and i32 %2, 65504
   %4 = add nsw i32 %3, -32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -49,7 +49,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, 1022
   %4 = add nuw nsw i32 %3, 2
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

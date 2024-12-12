@@ -26,24 +26,16 @@ entry:
   ret i64 %5
 }
 
-; 18 occurrences:
+; 10 occurrences:
+; gromacs/optimized/gmx_current.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
-; openjdk/optimized/FourByteAbgr.ll
-; openjdk/optimized/FourByteAbgrPre.ll
-; openjdk/optimized/IntArgb.ll
-; openjdk/optimized/IntArgbBm.ll
-; openjdk/optimized/IntArgbPre.ll
-; openjdk/optimized/IntBgr.ll
-; openjdk/optimized/IntRgb.ll
-; openjdk/optimized/IntRgbx.ll
-; openjdk/optimized/ThreeByteBgr.ll
-; openjdk/optimized/Ushort555Rgb.ll
-; openjdk/optimized/Ushort555Rgbx.ll
-; openjdk/optimized/Ushort565Rgb.ll
+; mitsuba3/optimized/rgb2spec.c.ll
+; opencv/optimized/downhill_simplex.cpp.ll
 ; openjdk/optimized/jchuff.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
+; velox/optimized/PrestoSerializer.cpp.ll
 ; wireshark/optimized/reedsolomon.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i1 %0, i32 %1, i64 %2) #0 {
@@ -133,15 +125,27 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaHash.c.ll
 ; linux/optimized/cpu_entry_area.ll
 ; openjdk/optimized/jchuff.ll
+; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/reedsolomon.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
+  %4 = select i1 %0, i32 %1, i32 %3
+  %5 = zext i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nsw i64 %2 to i32
   %4 = select i1 %0, i32 %1, i32 %3
   %5 = zext i32 %4 to i64
   ret i64 %5

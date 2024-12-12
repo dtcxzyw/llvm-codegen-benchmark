@@ -1,5 +1,31 @@
 
-; 69 occurrences:
+; 94 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/dump.ll
+; boost/optimized/dump_avx2.ll
+; boost/optimized/dump_ssse3.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/epoll.c.ll
 ; cpython/optimized/_decimal.ll
 ; git/optimized/archive-tar.ll
@@ -11,7 +37,6 @@
 ; linux/optimized/hwregs.ll
 ; linux/optimized/intel_gmbus.ll
 ; linux/optimized/intel_lvds.ll
-; linux/optimized/mii.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
@@ -73,11 +98,11 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, -67108865
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/saigIsoFast.c.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; cpython/optimized/cfield.ll
@@ -96,6 +121,7 @@ entry:
 ; linux/optimized/xfrm_state.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/SemaAttr.cpp.ll
+; lvgl/optimized/lv_obj.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/trigger.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll

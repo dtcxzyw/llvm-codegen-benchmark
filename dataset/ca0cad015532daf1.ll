@@ -33,7 +33,7 @@
 ; verilator/optimized/V3EmitCSyms.cpp.ll
 ; z3/optimized/arith_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32
   %3 = icmp ne i32 %2, 0
@@ -70,7 +70,7 @@ entry:
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; z3/optimized/dl_mk_similarity_compressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 12288
   %3 = icmp eq i32 %2, 0
@@ -101,7 +101,7 @@ entry:
 ; openjdk/optimized/linkResolver.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8
   %3 = icmp ne i32 %2, 0
@@ -111,7 +111,7 @@ entry:
   ret i1 %6
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; darktable/optimized/history.c.ll
 ; entt/optimized/entity_copy.cpp.ll
 ; entt/optimized/meta_any.cpp.ll
@@ -136,13 +136,14 @@ entry:
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
+; lvgl/optimized/lv_tabview.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/subnode.ll
 ; php/optimized/zend_inheritance.ll
 ; quickjs/optimized/quickjs.ll
 ; z3/optimized/arith_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = icmp eq i32 %2, 0

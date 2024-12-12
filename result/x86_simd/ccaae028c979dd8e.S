@@ -4,7 +4,7 @@
 	.long	8                               # 0x8
 .LCPI0_1:
 	.quad	255                             # 0xff
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vorps	.LCPI0_0(%rip){1to4}, %xmm2, %xmm2 {%k1}
@@ -17,7 +17,7 @@ func0000000000000038:                   # @func0000000000000038
 	.long	16                              # 0x10
 .LCPI1_1:
 	.long	8                               # 0x8
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vorps	.LCPI1_0(%rip){1to4}, %xmm2, %xmm2 {%k1}
@@ -32,7 +32,7 @@ func0000000000000031:                   # @func0000000000000031
 	.long	8                               # 0x8
 .LCPI2_1:
 	.quad	72057594037927936               # 0x100000000000000
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vorps	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2 {%k1}

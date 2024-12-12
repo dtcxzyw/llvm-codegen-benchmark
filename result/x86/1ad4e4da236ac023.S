@@ -3,15 +3,15 @@ func0000000000000008:                   # @func0000000000000008
 	imulq	%rsi, %rdx
 	leaq	(%rdx,%rdi), %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
-	imulq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	movl	%edx, %eax
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	andl	$2097151, %edx                  # imm = 0x1FFFFF
+	imulq	%rsi, %rdx
+	leaq	(%rdx,%rdi), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%edx, %eax

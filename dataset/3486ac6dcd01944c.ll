@@ -1,5 +1,6 @@
 
-; 83 occurrences:
+; 85 occurrences:
+; boost/optimized/context.ll
 ; casadi/optimized/external.cpp.ll
 ; clamav/optimized/rtf.c.ll
 ; cmake/optimized/cmTarget.cxx.ll
@@ -44,6 +45,7 @@
 ; llvm/optimized/SymbolRecordMapping.cpp.ll
 ; llvm/optimized/TypeRecordMapping.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
 ; ockam-rs/optimized/59na08zlxqp9p17s.ll
@@ -63,7 +65,6 @@
 ; postgres/optimized/relcache.ll
 ; postgres/optimized/snapmgr.ll
 ; postgres/optimized/startup.ll
-; proj/optimized/crs.cpp.ll
 ; protobuf/optimized/arena.cc.ll
 ; qemu/optimized/net_tap.c.ll
 ; rocksdb/optimized/filter_block_reader_common.cc.ll
@@ -83,6 +84,7 @@
 ; yosys/optimized/opt_expr.ll
 ; yosys/optimized/proc_dff.ll
 ; z3/optimized/bv2fpa_converter.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, ptr %2) #0 {
 entry:
@@ -92,7 +94,7 @@ entry:
   ret i1 %5
 }
 
-; 222 occurrences:
+; 213 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/bacBlast.c.ll
 ; actix-rs/optimized/3ueqfq5tvn084yrz.ll
@@ -107,10 +109,8 @@ entry:
 ; c3c/optimized/semantic_analyser.c.ll
 ; casadi/optimized/cs_add.c.ll
 ; casadi/optimized/cs_chol.c.ll
-; casadi/optimized/cs_cholsol.c.ll
 ; casadi/optimized/cs_counts.c.ll
 ; casadi/optimized/cs_lu.c.ll
-; casadi/optimized/cs_lusol.c.ll
 ; casadi/optimized/cs_qr.c.ll
 ; casadi/optimized/cs_qrsol.c.ll
 ; casadi/optimized/cs_scc.c.ll
@@ -158,11 +158,9 @@ entry:
 ; linux/optimized/compaction.ll
 ; linux/optimized/drm_client_modeset.ll
 ; linux/optimized/forcedeth.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/pmsr.ll
 ; linux/optimized/s2idle.ll
-; linux/optimized/seq_info.ll
 ; linux/optimized/tick-broadcast.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/virtio_blk.ll
@@ -209,9 +207,7 @@ entry:
 ; openjdk/optimized/vmError.ll
 ; openmpi/optimized/plog_base_stubs.ll
 ; openssl/optimized/ca_internals_test-bin-ca.ll
-; openssl/optimized/libcrypto-lib-dh_asn1.ll
 ; openssl/optimized/libcrypto-lib-rsa_lib.ll
-; openssl/optimized/libcrypto-shlib-dh_asn1.ll
 ; openssl/optimized/libcrypto-shlib-rsa_lib.ll
 ; openssl/optimized/libdefault-lib-ec_kem.ll
 ; openssl/optimized/libdefault-lib-encode_key2any.ll
@@ -258,8 +254,6 @@ entry:
 ; postgres/optimized/tlist.ll
 ; postgres/optimized/tupdesc.ll
 ; proj/optimized/c_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/oputils.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
@@ -298,7 +292,6 @@ entry:
 ; wireshark/optimized/packet-http.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-imf.c.ll
-; wireshark/optimized/packet-lin.c.ll
 ; wireshark/optimized/packet-rrc.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-sip.c.ll

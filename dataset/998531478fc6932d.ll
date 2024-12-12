@@ -5,7 +5,7 @@
 ; abc/optimized/xsatCnfReader.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i8 %1, 45
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000428(i32 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i8 %1, 45
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/unisetspan.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000042a(i32 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i8 %1, 0

@@ -1,5 +1,7 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; actix-rs/optimized/1v3445utu4y7ica.ll
+; actix-rs/optimized/comsm606o4zjj7a.ll
 ; icu/optimized/collationkeys.ll
 ; wireshark/optimized/packet-btl2cap.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
@@ -7,8 +9,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
-  %.mask = and i32 %1, -256
-  %2 = icmp eq i32 %.mask, 1073758976
+  %.mask = and i32 %1, -64
+  %2 = icmp eq i32 %.mask, 448
   %3 = select i1 %2, i1 %0, i1 false
   ret i1 %3
 }

@@ -4,7 +4,7 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
-  %2 = tail call noundef range(i32 1, -2147483647) i32 @llvm.abs.i32(i32 %1, i1 false)
+  %2 = tail call noundef range(i32 1, -2147483647) i32 @llvm.abs.i32(i32 range(i32 2, 0) %1, i1 false)
   %3 = sub i32 %2, %0
   ret i32 %3
 }

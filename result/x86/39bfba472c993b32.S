@@ -1,5 +1,5 @@
 func0000000000000001:                   # @func0000000000000001
-	addl	%esi, %edx
-	cmpl	%edi, %edx
+	addl	%edx, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq

@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; minetest/optimized/content_nodemeta.cpp.ll
+; 4 occurrences:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/strftime.ll
 ; spike/optimized/vwsubu_vv.ll
@@ -13,9 +12,8 @@ entry:
   ret i16 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/net-traces.ll
 ; postgres/optimized/bufpage.ll
 ; qemu/optimized/hw_net_net_rx_pkt.c.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll

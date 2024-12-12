@@ -16,8 +16,14 @@ func0000000000000016:                   # @func0000000000000016
 	setge	%al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	shrl	$4, %edx
+	cmpl	%esi, %edx
+	seta	%al
+	orb	%dil, %al
+	retq
+func0000000000000010:                   # @func0000000000000010
+	shrl	$24, %edx
 	cmpl	%esi, %edx
 	seta	%al
 	orb	%dil, %al
@@ -40,16 +46,22 @@ func000000000000000a:                   # @func000000000000000a
 	setbe	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	shrl	$28, %edx
-	cmpl	%esi, %edx
-	setb	%al
-	orb	%dil, %al
-	retq
 func000000000000000c:                   # @func000000000000000c
 	shrl	$6, %edx
 	cmpl	%esi, %edx
 	setl	%al
+	orb	%dil, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	shrl	$4, %edx
+	cmpl	%esi, %edx
+	setb	%al
+	orb	%dil, %al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	shrl	%edx
+	cmpl	%esi, %edx
+	setb	%al
 	orb	%dil, %al
 	retq
 func0000000000000012:                   # @func0000000000000012

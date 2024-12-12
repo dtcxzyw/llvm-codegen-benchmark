@@ -1,8 +1,9 @@
 
-; 34 occurrences:
+; 38 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaPf.c.ll
+; boost/optimized/dump.ll
 ; coreutils-rs/optimized/4ws6541n7p4pbb05.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; freetype/optimized/sfnt.c.ll
@@ -34,6 +35,9 @@
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; syn/optimized/59s55fjcmu2d325w.ll
 ; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

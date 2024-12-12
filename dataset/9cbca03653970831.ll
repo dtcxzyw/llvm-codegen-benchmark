@@ -1,6 +1,13 @@
 
-; 3 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; mitsuba3/optimized/sphere.cpp.ll
 ; openblas/optimized/dlaln2.c.ll
 ; Function Attrs: nounwind
@@ -12,9 +19,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; msdfgen/optimized/edge-segments.cpp.ll
-; proj/optimized/io.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, double %1, double %2) #0 {
 entry:

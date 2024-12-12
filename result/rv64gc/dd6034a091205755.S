@@ -22,14 +22,6 @@ func000000000000000d:                   # @func000000000000000d
 	li	a1, -1
 	sll	a0, a1, a0
 	ret
-func0000000000000027:                   # @func0000000000000027
-	sext.w	a1, a1
-	sltiu	a1, a1, 6
-	addi	a1, a1, -1
-	and	a0, a0, a1
-	li	a1, 12
-	sll	a0, a1, a0
-	ret
 func0000000000000036:                   # @func0000000000000036
 	sext.w	a1, a1
 	slti	a1, a1, 12
@@ -41,9 +33,9 @@ func0000000000000036:                   # @func0000000000000036
 func0000000000000037:                   # @func0000000000000037
 	sext.w	a1, a1
 	li	a2, 10
-	bge	a1, a2, .LBB5_2
+	bge	a1, a2, .LBB4_2
 	li	a0, 10
-.LBB5_2:                                # %entry
+.LBB4_2:                                # %entry
 	li	a1, 1
 	sll	a0, a1, a0
 	ret

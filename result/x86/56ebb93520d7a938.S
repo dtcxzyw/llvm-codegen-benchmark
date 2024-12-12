@@ -36,15 +36,21 @@ func0000000000000000:                   # @func0000000000000000
 	shlq	$4, %rax
 	addq	$-4, %rax
 	retq
+func00000000000000a2:                   # @func00000000000000a2
+	imulq	%rdx, %rsi
+	addq	%rdi, %rsi
+	leaq	4(,%rsi,4), %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	imulq	%rdx, %rsi
+	leaq	(%rsi,%rdi), %rax
+	shlq	$6, %rax
+	addq	$64, %rax
+	retq
 func00000000000000f0:                   # @func00000000000000f0
 	imull	%edx, %esi
 	leal	(%rdi,%rsi), %ecx
 	shlq	$36, %rcx
 	movabsq	$68719476736, %rax              # imm = 0x1000000000
 	addq	%rcx, %rax
-	retq
-func00000000000000a2:                   # @func00000000000000a2
-	imulq	%rdx, %rsi
-	addq	%rdi, %rsi
-	leaq	2(%rsi,%rsi), %rax
 	retq

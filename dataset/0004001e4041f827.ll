@@ -11,7 +11,7 @@
 ; openusd/optimized/string-to-double.cc.ll
 ; pyo3-rs/optimized/4z0qp503bgjcdxcv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = icmp ne i8 %1, 3
@@ -25,7 +25,7 @@ entry:
 ; minetest/optimized/gameui.cpp.ll
 ; oiio/optimized/rlainput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, -1
   %4 = icmp ne i8 %1, 0
@@ -60,7 +60,7 @@ entry:
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq i8 %1, 0
@@ -69,18 +69,13 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
-; llvm/optimized/InstCombineCasts.cpp.ll
-; llvm/optimized/InstCombineCompares.cpp.ll
-; llvm/optimized/InstructionSimplify.cpp.ll
-; llvm/optimized/LoopUtils.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/ScalarEvolutionExpander.cpp.ll
+; 1 occurrences:
+; lvgl/optimized/lv_bar.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i1 %0, i8 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 13
-  %4 = icmp ugt i8 %1, 28
+  %3 = icmp slt i32 %2, 0
+  %4 = icmp eq i8 %1, 1
   %5 = select i1 %4, i1 %3, i1 false
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
@@ -90,7 +85,7 @@ entry:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; msdfgen/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i8 %1, 0
@@ -103,7 +98,7 @@ entry:
 ; gromacs/optimized/pairlist_tuning.cpp.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp eq i8 %1, 0
@@ -115,7 +110,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/decodetxb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func00000000000000c4(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 2
   %4 = icmp ult i8 %1, 10
@@ -128,7 +123,7 @@ entry:
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-uds.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ult i8 %1, 16
@@ -140,7 +135,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func000000000000014c(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp ne i8 %1, 0
@@ -153,7 +148,7 @@ entry:
 ; icu/optimized/ubidi.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ult i8 %1, 126

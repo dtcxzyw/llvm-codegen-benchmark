@@ -43,8 +43,9 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; clamav/optimized/yara_exec.c.ll
+; wireshark/optimized/packet_list.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:

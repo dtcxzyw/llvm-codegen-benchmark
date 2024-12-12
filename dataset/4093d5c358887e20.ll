@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; clamav/optimized/hfsplus.c.ll
@@ -27,19 +27,18 @@
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/gistvacuum.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; slurm/optimized/job_test.ll
 ; spike/optimized/f16_div.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
@@ -58,7 +57,7 @@ entry:
   ret i64 %3
 }
 
-; 19 occurrences:
+; 21 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; linux/optimized/asymmetric_type.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -78,6 +77,8 @@ entry:
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; rayon-rs/optimized/1j5m2t9gtbur4l2z.ll
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:

@@ -10,7 +10,7 @@
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = add i32 %3, -1
   %5 = icmp ult i32 %4, 15
   ret i1 %5
@@ -22,7 +22,7 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ioReadPlaMo.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000284(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = mul nsw i32 %2, %0

@@ -12,15 +12,14 @@ entry:
   ret ptr %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; icu/optimized/csrsbcs.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i1 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 6, i64 5
-  %3 = getelementptr nusw i64, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i64, ptr %0, i64 %2
   ret ptr %3
 }
 

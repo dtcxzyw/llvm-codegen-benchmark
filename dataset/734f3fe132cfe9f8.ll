@@ -1,10 +1,11 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/reoShuffle.c.ll
 ; gromacs/optimized/gmx_densorder.cpp.ll
 ; msdfgen/optimized/edge-coloring.cpp.ll
 ; opencv/optimized/checker_detector.cpp.ll
+; opencv/optimized/fed.cpp.ll
 ; opencv/optimized/genericgf.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; slurm/optimized/cbuf.ll

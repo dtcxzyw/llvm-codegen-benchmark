@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/skbuff.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; Function Attrs: nounwind
@@ -26,10 +27,9 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; libwebp/optimized/muxread.c.ll
 ; linux/optimized/cipso_ipv4.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000013(i32 %0) #0 {
 entry:

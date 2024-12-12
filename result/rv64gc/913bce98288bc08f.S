@@ -1,17 +1,17 @@
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	sext.w	a1, a1
 	sltu	a1, a1, a0
 	neg	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	sext.w	a1, a1
 	xor	a1, a1, a0
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	xor	a1, a1, a0
@@ -19,7 +19,7 @@ func0000000000000021:                   # @func0000000000000021
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	xor	a1, a1, a0

@@ -14,24 +14,6 @@ entry:
   ret i8 %3
 }
 
-; 8 occurrences:
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000d(i16 %0) #0 {
-entry:
-  %1 = trunc nuw nsw i16 %0 to i8
-  %2 = and i8 %1, 31
-  %3 = add nsw i8 %2, -25
-  ret i8 %3
-}
-
 ; 1 occurrences:
 ; libquic/optimized/url_canon_etc.cc.ll
 ; Function Attrs: nounwind

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %0, 62
   %3 = icmp eq i64 %2, %1
@@ -15,7 +15,7 @@ entry:
 ; gromacs/optimized/trjcat.cpp.ll
 ; llvm/optimized/StackColoring.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000842(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %0, 29
   %3 = icmp eq i64 %2, %1

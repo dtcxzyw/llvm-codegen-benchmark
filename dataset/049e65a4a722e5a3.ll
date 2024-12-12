@@ -19,13 +19,13 @@
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %1, %3
   %5 = lshr i32 %4, 3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -45,13 +45,13 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c6(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000000c7(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub i32 %1, %3
   %5 = lshr i32 %4, 1
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

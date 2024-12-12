@@ -36,7 +36,6 @@
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
-; nix/optimized/nix-env.ll
 ; ocio/optimized/FileFormatCSP.cpp.ll
 ; opencv/optimized/generalized_hough.cpp.ll
 ; opencv/optimized/graph_simplifier.cpp.ll
@@ -50,6 +49,7 @@
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/enum.cc.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
+; protobuf/optimized/message_differencer.cc.ll
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; protobuf/optimized/unparser.cc.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll

@@ -42,7 +42,7 @@
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsrlq	$32, %ymm0, %ymm1
 	vpandq	.LCPI0_2(%rip){1to4}, %ymm0, %ymm0
 	vpcmpeqq	.LCPI0_1(%rip){1to4}, %ymm0, %k1

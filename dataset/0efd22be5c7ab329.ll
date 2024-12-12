@@ -8,7 +8,7 @@ define i8 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = and i32 %2, 120
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = trunc nuw i32 %4 to i8
   %6 = xor i8 %5, 120
   ret i8 %6

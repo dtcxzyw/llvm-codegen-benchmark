@@ -29,7 +29,7 @@ define i16 @func000000000000001f(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw nsw i16 %2, 2
   %4 = and i16 %3, 992
-  %5 = or disjoint i16 %4, %1
+  %5 = or disjoint i16 %1, %4
   %6 = or disjoint i16 %5, %0
   %7 = or disjoint i16 %6, -32768
   ret i16 %7

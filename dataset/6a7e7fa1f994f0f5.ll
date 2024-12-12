@@ -1,14 +1,17 @@
 
-%"union.std::aligned_storage<8, 8>::type.2568893" = type { [8 x i8] }
-%struct.tg3_napi.3358892 = type { %struct.napi_struct.3358877, ptr, ptr, i32, i32, i32, i32, i32, [12 x i8], i32, i32, i32, ptr, %struct.tg3_rx_prodring_set.3358893, ptr, i64, [24 x i8], i32, i32, i32, i32, i32, ptr, ptr, i64, i64, i64, i64, [16 x i8], i32, [36 x i8] }
-%struct.napi_struct.3358877 = type { %struct.list_head.3358849, i64, i32, i32, i64, ptr, i32, i32, ptr, [8 x %struct.gro_list.3358880], ptr, %struct.list_head.3358849, i32, i32, %struct.hrtimer.3358881, ptr, %struct.list_head.3358849, %struct.hlist_node.3358882, i32 }
-%struct.gro_list.3358880 = type { %struct.list_head.3358849, i32 }
-%struct.hrtimer.3358881 = type { %struct.timerqueue_node.3358883, i64, ptr, ptr, i8, i8, i8, i8 }
-%struct.timerqueue_node.3358883 = type { %struct.rb_node.3358884, i64 }
-%struct.rb_node.3358884 = type { i64, ptr, ptr }
-%struct.list_head.3358849 = type { ptr, ptr }
-%struct.hlist_node.3358882 = type { ptr, ptr }
-%struct.tg3_rx_prodring_set.3358893 = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, i64, i64 }
+%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
+%struct.stbcc__clump.3100977 = type { %union.stbcc__global_clumpid.3100978, i8, i8, i8, i8 }
+%union.stbcc__global_clumpid.3100978 = type { %struct.anon.3100979 }
+%struct.anon.3100979 = type { i32 }
+%struct.tg3_napi.3545810 = type { %struct.napi_struct.3545795, ptr, ptr, i32, i32, i32, i32, i32, [12 x i8], i32, i32, i32, ptr, %struct.tg3_rx_prodring_set.3545811, ptr, i64, [24 x i8], i32, i32, i32, i32, i32, ptr, ptr, i64, i64, i64, i64, [16 x i8], i32, [36 x i8] }
+%struct.napi_struct.3545795 = type { %struct.list_head.3545767, i64, i32, i32, i64, ptr, i32, i32, ptr, [8 x %struct.gro_list.3545798], ptr, %struct.list_head.3545767, i32, i32, %struct.hrtimer.3545799, ptr, %struct.list_head.3545767, %struct.hlist_node.3545800, i32 }
+%struct.gro_list.3545798 = type { %struct.list_head.3545767, i32 }
+%struct.hrtimer.3545799 = type { %struct.timerqueue_node.3545801, i64, ptr, ptr, i8, i8, i8, i8 }
+%struct.timerqueue_node.3545801 = type { %struct.rb_node.3545802, i64 }
+%struct.rb_node.3545802 = type { i64, ptr, ptr }
+%struct.list_head.3545767 = type { ptr, ptr }
+%struct.hlist_node.3545800 = type { ptr, ptr }
+%struct.tg3_rx_prodring_set.3545811 = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, i64, i64 }
 
 ; 33 occurrences:
 ; cpython/optimized/ceval.ll
@@ -45,10 +48,10 @@
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-sprt.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 64
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 64
   %4 = getelementptr [26 x i64], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
@@ -66,7 +69,7 @@ entry:
   ret ptr %4
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/tracemalloc.ll
 ; linux/optimized/agg-rx.ll
@@ -77,7 +80,6 @@ entry:
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/i915_gem_context.ll
 ; linux/optimized/inflate.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/ipmr_base.ll
 ; linux/optimized/kyber-iosched.ll
@@ -123,20 +125,21 @@ entry:
 ; wireshark/optimized/tap-macltestat.c.ll
 ; wireshark/optimized/tap-rtp-analysis.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i16 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 24
   %4 = getelementptr [0 x i16], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
-; 76 occurrences:
+; 118 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inflate.c.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/static_string.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/decode.c.ll
@@ -157,10 +160,45 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libquic/optimized/infback.c.ll
 ; libquic/optimized/inflate.c.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64TargetMachine.cpp.ll
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/DbiStreamBuilder.cpp.ll
+; llvm/optimized/FastISel.cpp.ll
+; llvm/optimized/FunctionLoweringInfo.cpp.ll
+; llvm/optimized/InstrEmitter.cpp.ll
+; llvm/optimized/LLVMTargetMachine.cpp.ll
+; llvm/optimized/LegalizeDAG.cpp.ll
+; llvm/optimized/LegalizeIntegerTypes.cpp.ll
+; llvm/optimized/LegalizeVectorOps.cpp.ll
+; llvm/optimized/LegalizeVectorTypes.cpp.ll
+; llvm/optimized/LoadStoreOpt.cpp.ll
+; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
+; llvm/optimized/RISCVTargetMachine.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/ResourcePriorityQueue.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/StatepointLowering.cpp.ll
+; llvm/optimized/SwitchLoweringUtils.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/TargetLoweringBase.cpp.ll
+; llvm/optimized/TokenConcatenation.cpp.ll
+; llvm/optimized/TypePromotion.cpp.ll
+; llvm/optimized/X86FastISel.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; llvm/optimized/X86TargetMachine.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; lvgl/optimized/lv_refr.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -178,6 +216,12 @@ entry:
 ; openmpi/optimized/libdatatype_reliable_la-opal_datatype_unpack.ll
 ; openmpi/optimized/opal_datatype_pack.ll
 ; openmpi/optimized/opal_datatype_unpack.ll
+; openspiel/optimized/ABsearch.cpp.ll
+; openspiel/optimized/TransTableL.cpp.ll
+; openspiel/optimized/go_board.cc.ll
+; openspiel/optimized/phantom_go_board.cc.ll
+; openusd/optimized/openexr-c.c.ll
+; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; pocketpy/optimized/array2d.cpp.ll
 ; pocketpy/optimized/ceval.cpp.ll
@@ -209,23 +253,25 @@ entry:
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 258
-  %4 = getelementptr nusw [256 x i8], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 258
+  %4 = getelementptr nusw nuw [256 x i8], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
-; 110 occurrences:
+; 129 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/static_string.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
+; clamav/optimized/bzlib.c.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/lzxd.c.ll
@@ -261,6 +307,17 @@ entry:
 ; icu/optimized/bmpset.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; icu/optimized/gencnval.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/LLVMTargetMachine.cpp.ll
+; llvm/optimized/LegalizeIntegerTypes.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/TargetLoweringBase.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_debug.ll
@@ -277,6 +334,12 @@ entry:
 ; nuttx/optimized/fs_procfs.c.ll
 ; openjdk/optimized/cmsopt.ll
 ; openjdk/optimized/jvmFlagLookup.ll
+; openusd/optimized/av1_loopfilter.c.ll
+; openusd/optimized/bignum.cc.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
+; openusd/optimized/decodetxb.c.ll
+; openusd/optimized/idct.c.ll
 ; php/optimized/cdf.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
@@ -329,101 +392,34 @@ entry:
 ; velox/optimized/VectorSaver.cpp.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 16
-  %4 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2568893"], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
 ; 2 occurrences:
-; clamav/optimized/bzlib.c.ll
 ; clamav/optimized/mszipd.c.ll
+; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr i8, ptr %0, i64 2124
-  %4 = getelementptr nusw [257 x i32], ptr %3, i64 0, i64 %2
+  %3 = getelementptr i8, ptr %0, i64 112
+  %4 = getelementptr nusw nuw [288 x i8], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
-; 40 occurrences:
-; llvm/optimized/AArch64FastISel.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64TargetMachine.cpp.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/CodeGenPrepare.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/DbiStreamBuilder.cpp.ll
-; llvm/optimized/FastISel.cpp.ll
-; llvm/optimized/FunctionLoweringInfo.cpp.ll
-; llvm/optimized/InstrEmitter.cpp.ll
-; llvm/optimized/LLVMTargetMachine.cpp.ll
-; llvm/optimized/LegalizeDAG.cpp.ll
-; llvm/optimized/LegalizeIntegerTypes.cpp.ll
-; llvm/optimized/LegalizeVectorOps.cpp.ll
-; llvm/optimized/LegalizeVectorTypes.cpp.ll
-; llvm/optimized/LoadStoreOpt.cpp.ll
-; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/RISCVTargetMachine.cpp.ll
-; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
-; llvm/optimized/ResourcePriorityQueue.cpp.ll
-; llvm/optimized/SelectionDAG.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/StatepointLowering.cpp.ll
-; llvm/optimized/SwitchLoweringUtils.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
-; llvm/optimized/TargetLoweringBase.cpp.ll
-; llvm/optimized/TokenConcatenation.cpp.ll
-; llvm/optimized/TypePromotion.cpp.ll
-; llvm/optimized/X86FastISel.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86ISelLoweringCall.cpp.ll
-; llvm/optimized/X86TargetMachine.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; openspiel/optimized/ABsearch.cpp.ll
-; openspiel/optimized/TransTableL.cpp.ll
-; openspiel/optimized/go_board.cc.ll
-; openspiel/optimized/phantom_go_board.cc.ll
-; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/stbImage.cpp.ll
+; 1 occurrences:
+; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 104
-  %4 = getelementptr nusw [233 x ptr], ptr %3, i64 0, i64 %2
-  ret ptr %4
-}
-
-; 18 occurrences:
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/LLVMTargetMachine.cpp.ll
-; llvm/optimized/LegalizeIntegerTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
-; llvm/optimized/TargetLoweringBase.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; openusd/optimized/av1_loopfilter.c.ll
-; openusd/optimized/bignum.cc.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/decodemv.c.ll
-; openusd/optimized/decodetxb.c.ll
-; openusd/optimized/idct.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i16 %1) #0 {
-entry:
-  %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 104
-  %4 = getelementptr nusw [233 x ptr], ptr %3, i64 0, i64 %2
+  %3 = getelementptr i8, ptr %0, i64 4
+  %4 = getelementptr nusw nuw [512 x %struct.stbcc__clump.3100977], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -437,7 +433,7 @@ define ptr @func0000000000000000(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 2624
-  %4 = getelementptr [5 x %struct.tg3_napi.3358892], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [5 x %struct.tg3_napi.3545810], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

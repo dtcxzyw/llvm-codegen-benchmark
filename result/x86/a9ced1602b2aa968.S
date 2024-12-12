@@ -9,7 +9,7 @@ func0000000000000035:                   # @func0000000000000035
 	leal	30(%rdi), %eax
 	retq
 func0000000000000030:                   # @func0000000000000030
-	shll	$8, %esi
+	addl	%esi, %esi
 	subl	%esi, %edi
-	leal	1792(%rdi), %eax
+	leal	-2(%rdi), %eax
 	retq

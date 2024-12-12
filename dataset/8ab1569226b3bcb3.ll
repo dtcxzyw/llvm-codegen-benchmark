@@ -261,7 +261,7 @@ entry:
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = shl nsw i64 %0, 2
@@ -279,7 +279,7 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = shl i64 %0, 1
@@ -287,11 +287,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; quantlib/optimized/cmsmarket.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = shl i64 %0, 1
@@ -299,7 +298,7 @@ entry:
   ret i1 %4
 }
 
-; 233 occurrences:
+; 232 occurrences:
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; ocio/optimized/ScanlineHelper.cpp.ll
@@ -411,7 +410,6 @@ entry:
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -534,7 +532,7 @@ entry:
 ; yosys/optimized/yw.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = shl nsw i64 %0, 1
@@ -550,7 +548,7 @@ entry:
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = shl i64 %0, 1
@@ -563,7 +561,7 @@ entry:
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; ocio/optimized/ScanlineHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = shl nsw i64 %0, 2
@@ -574,7 +572,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/display_filter_expression_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = shl i64 %0, 2

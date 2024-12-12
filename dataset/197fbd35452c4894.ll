@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; assimp/optimized/IFCCurve.cpp.ll
 ; cpython/optimized/pyhash.ll
@@ -9,6 +9,7 @@
 ; hdf5/optimized/H5Ztrans.c.ll
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; nuttx/optimized/lib_exp.c.ll
 ; openjdk/optimized/tableStatistics.ll
 ; openssl/optimized/libcrypto-lib-bio_print.ll

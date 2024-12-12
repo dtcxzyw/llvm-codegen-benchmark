@@ -6,7 +6,7 @@
 ; php/optimized/dtoa.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4503599627370495
   %3 = icmp eq i64 %2, 0
@@ -22,7 +22,7 @@ entry:
 ; spike/optimized/f64_to_i32.ll
 ; spike/optimized/f64_to_ui32.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 281474976710655
   %3 = icmp ne i64 %2, 0

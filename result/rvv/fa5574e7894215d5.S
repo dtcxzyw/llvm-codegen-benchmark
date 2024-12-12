@@ -5,5 +5,5 @@ func0000000000000001:                   # @func0000000000000001
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vfneg.v	v16, v12
 	vmerge.vvm	v12, v16, v12, v0
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	ret

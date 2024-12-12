@@ -6,7 +6,7 @@
 ; ncnn/optimized/padding_x86_fma.cpp.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = and i32 %3, 1
@@ -21,7 +21,7 @@ entry:
 ; ncnn/optimized/padding_x86.cpp.ll
 ; postgres/optimized/nbtsplitloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 3

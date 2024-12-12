@@ -22,7 +22,7 @@ func0000000000000018:                   # @func0000000000000018
 	.long	18874368                        # 0x1200000
 .LCPI2_2:
 	.zero	16,1
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpltd	.LCPI2_1(%rip){1to8}, %ymm0, %k1
 	vmovdqu8	.LCPI2_2(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
@@ -70,7 +70,7 @@ func0000000000000008:                   # @func0000000000000008
 	.byte	0                               # 0x0
 .LCPI3_2:
 	.zero	16,1
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	vpandd	.LCPI3_3(%rip){1to8}, %ymm0, %ymm0
 	vpcmpgtd	.LCPI3_1(%rip){1to8}, %ymm0, %k1
 	vmovdqu8	.LCPI3_2(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]

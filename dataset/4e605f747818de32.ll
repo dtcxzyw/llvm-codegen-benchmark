@@ -1,27 +1,20 @@
 
-%"struct.asmjit::_abi_1_10::RATiedReg.2488705" = type { i32, i32, i32, %union.anon.32.2488706, i32, i32, i32, i32 }
-%union.anon.32.2488706 = type { i32 }
-%"struct.RunTimeClassInfo::RTLoaderConstraint.2617502" = type { i32, i8, i8 }
-%struct.lua_TValue.2811879 = type { %union.Value.2811880, [1 x i32], i32 }
-%union.Value.2811880 = type { ptr }
+%"struct.asmjit::_abi_1_10::RATiedReg.2604137" = type { i32, i32, i32, %union.anon.32.2604138, i32, i32, i32, i32 }
+%union.anon.32.2604138 = type { i32 }
+%"struct.RunTimeClassInfo::RTLoaderConstraint.2730954" = type { i32, i8, i8 }
+%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
+%union.Value.2923858 = type { ptr }
 
-; 215 occurrences:
-; abc/optimized/abcHieNew.c.ll
-; abc/optimized/cecChoice.c.ll
+; 203 occurrences:
 ; abc/optimized/cutCut.c.ll
 ; abc/optimized/cutOracle.c.ll
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/dauTree.c.ll
-; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/mpmAbc.c.ll
-; abc/optimized/mpmMap.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
-; cvc5/optimized/generic_op.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
-; eastl/optimized/EAMain.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -36,7 +29,6 @@
 ; icu/optimized/ubidiln.ll
 ; icu/optimized/ucase.ll
 ; icu/optimized/uresdata.ll
-; jq/optimized/jv.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDumper.cpp.ll
@@ -205,29 +197,25 @@
 ; openjdk/optimized/UshortIndexed.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/runTimeClassInfo.ll
-; openjdk/optimized/vectorSupport.ll
 ; openusd/optimized/aom_convolve.c.ll
 ; openusd/optimized/convolve.c.ll
 ; openusd/optimized/resize.c.ll
-; protobuf/optimized/field_mask_util.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; redis/optimized/lvm.ll
 ; redis/optimized/rax.ll
-; sqlite/optimized/sqlite3.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; z3/optimized/smt_clause_proof.cpp.ll
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
-; zxing/optimized/ReadBarcode.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %"struct.asmjit::_abi_1_10::RATiedReg.2488705", ptr %1, i64 %4
-  %6 = getelementptr nusw %"struct.asmjit::_abi_1_10::RATiedReg.2488705", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -274,43 +262,75 @@ entry:
   ret ptr %6
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll
-; luajit/optimized/lj_bcread.ll
-; luajit/optimized/lj_bcread_dyn.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/ps_core.ll
 ; php/optimized/KeccakP-1600-opt64.ll
 ; slurm/optimized/KeccakP-1600-opt64.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -4
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 28 occurrences:
+; abc/optimized/abcHieNew.c.ll
+; abc/optimized/cecChoice.c.ll
+; abc/optimized/giaCof.c.ll
+; abc/optimized/mpmAbc.c.ll
+; abc/optimized/mpmMap.c.ll
+; cvc5/optimized/generic_op.cpp.ll
+; eastl/optimized/EAMain.cpp.ll
+; jq/optimized/jv.ll
+; lua/optimized/lvm.ll
+; luajit/optimized/lj_debug.ll
+; luajit/optimized/lj_debug_dyn.ll
+; luajit/optimized/minilua.ll
+; luau/optimized/lvmexecute.cpp.ll
+; memcached/optimized/memcached-memcached.ll
+; memcached/optimized/memcached-proto_bin.ll
+; memcached/optimized/memcached-proto_text.ll
+; memcached/optimized/memcached_debug-memcached.ll
+; memcached/optimized/memcached_debug-proto_bin.ll
+; memcached/optimized/memcached_debug-proto_text.ll
+; openjdk/optimized/vectorSupport.ll
+; protobuf/optimized/descriptor.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/field_mask_util.cc.ll
+; protobuf/optimized/map.cc.ll
+; redis/optimized/lvm.ll
+; redis/optimized/rax.ll
+; sqlite/optimized/sqlite3.ll
+; zxing/optimized/ReadBarcode.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 536870908
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 6 occurrences:
-; abc/optimized/dauTree.c.ll
-; luau/optimized/lvmexecute.cpp.ll
+; 1 occurrences:
 ; openjdk/optimized/systemDictionaryShared.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/map.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000013(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr nusw %"struct.RunTimeClassInfo::RTLoaderConstraint.2617502", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTLoaderConstraint.2730954", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -318,12 +338,25 @@ entry:
 ; llvm/optimized/CStringChecker.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %struct.lua_TValue.2811879, ptr %1, i64 %4
-  %6 = getelementptr %struct.lua_TValue.2811879, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %struct.lua_TValue.2923857, ptr %1, i64 %4
+  %6 = getelementptr %struct.lua_TValue.2923857, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_bcread.ll
+; luajit/optimized/lj_bcread_dyn.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, -8
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 

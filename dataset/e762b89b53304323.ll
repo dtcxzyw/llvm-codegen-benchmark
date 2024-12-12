@@ -43,7 +43,7 @@ define i1 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -56,7 +56,7 @@ define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

@@ -1,4 +1,4 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a1, a1
 	sext.w	a0, a0
 	andi	a2, a2, 1024
@@ -7,7 +7,7 @@ func000000000000001c:                   # @func000000000000001c
 	snez	a0, a0
 	or	a0, a0, a2
 	ret
-func0000000000000019:                   # @func0000000000000019
+func0000000000000029:                   # @func0000000000000029
 	sext.w	a1, a1
 	sext.w	a0, a0
 	not	a2, a2
@@ -16,7 +16,7 @@ func0000000000000019:                   # @func0000000000000019
 	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	sext.w	a1, a1
 	sext.w	a0, a0
 	andi	a2, a2, 1024
@@ -25,14 +25,14 @@ func000000000000001b:                   # @func000000000000001b
 	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	sext.w	a1, a1
 	sext.w	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	or	a0, a0, a2
 	ret
-func00000000000000c5:                   # @func00000000000000c5
+func0000000000000185:                   # @func0000000000000185
 	sext.w	a0, a0
 	sext.w	a1, a1
 	bexti	a2, a2, 5
@@ -40,7 +40,7 @@ func00000000000000c5:                   # @func00000000000000c5
 	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a1
 	sext.w	a0, a0
 	andi	a2, a2, 8
@@ -49,7 +49,7 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	or	a0, a0, a2
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	bseti	a3, zero, 11
 	and	a2, a2, a3
 	xor	a0, a0, a1
@@ -57,7 +57,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	sext.w	a0, a0
 	snez	a0, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a3, 65536

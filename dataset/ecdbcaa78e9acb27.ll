@@ -21,7 +21,7 @@ entry:
   ret i64 %7
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; git/optimized/midx.ll
 ; gromacs/optimized/bwlzh.c.ll
@@ -34,6 +34,8 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; qemu/optimized/fdt.c.ll
 ; spike/optimized/fdt.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000016(i32 %0, i32 %1, i8 %2) #0 {
 entry:
@@ -92,6 +94,19 @@ entry:
   %4 = shl nuw nsw i32 %3, 14
   %5 = or disjoint i32 %0, %1
   %6 = or disjoint i32 %5, %4
+  %7 = zext i32 %6 to i64
+  ret i64 %7
+}
+
+; 1 occurrences:
+; linux/optimized/huf_decompress.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = shl nuw nsw i32 %3, 8
+  %5 = or i32 %0, %1
+  %6 = or i32 %4, %5
   %7 = zext i32 %6 to i64
   ret i64 %7
 }

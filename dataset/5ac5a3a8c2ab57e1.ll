@@ -1,5 +1,5 @@
 
-; 129 occurrences:
+; 138 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; brotli/optimized/decode.c.ll
@@ -11,6 +11,7 @@
 ; flac/optimized/metadata_iterators.c.ll
 ; folly/optimized/Compression.cpp.ll
 ; git/optimized/commit-graph.ll
+; glslang/optimized/GlslangToSpv.cpp.ll
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; grpc/optimized/parsing.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -62,6 +63,12 @@
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
 ; luau/optimized/Substitution.cpp.ll
+; memcached/optimized/memcached-memcached.ll
+; memcached/optimized/memcached-proto_bin.ll
+; memcached/optimized/memcached-proto_text.ll
+; memcached/optimized/memcached_debug-memcached.ll
+; memcached/optimized/memcached_debug-proto_bin.ll
+; memcached/optimized/memcached_debug-proto_text.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
@@ -103,7 +110,6 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/pcre2_jit_compile.ll
-; protobuf/optimized/json.cc.ll
 ; proxygen/optimized/SessionPool.cpp.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; redis/optimized/extent.ll
@@ -111,7 +117,9 @@
 ; redis/optimized/rdb.ll
 ; rocksdb/optimized/point_lock_tracker.cc.ll
 ; sqlite/optimized/sqlite3.ll
+; stockfish/optimized/search.ll
 ; stockfish/optimized/tbprobe.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
@@ -126,6 +134,7 @@
 ; z3/optimized/dl_bound_relation.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; z3/optimized/theory_special_relations.cpp.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
@@ -138,11 +147,10 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; folly/optimized/IPAddressV6.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; linux/optimized/drm_edid.ll
-; wireshark/optimized/packet-stcsig.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i8 %0) #0 {
 entry:

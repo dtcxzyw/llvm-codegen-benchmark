@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; darktable/optimized/introspection_flip.c.ll
+; 7 occurrences:
 ; git/optimized/unpack-trees.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll

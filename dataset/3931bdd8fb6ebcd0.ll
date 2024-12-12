@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 38 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/polynomial.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -32,8 +32,6 @@
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; nuttx/optimized/mm_realloc.c.ll
-; oiio/optimized/imageoutput.cpp.ll
 ; opencv/optimized/rotcalipers.cpp.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
@@ -41,11 +39,23 @@
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; rocksdb/optimized/crc32c.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 127
   %4 = select i1 %1, i64 %3, i64 128
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; nuttx/optimized/mm_realloc.c.ll
+; oiio/optimized/imageoutput.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -4
+  %4 = select i1 %1, i64 %3, i64 0
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

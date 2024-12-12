@@ -1,156 +1,91 @@
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw	v0.2d, v0.2d, v3.2s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmhi	v0.2d, v3.2d, v0.2d
-	cmhi	v1.2d, v2.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, w2, uxtw
+	cmp	x8, w1, sxtw
+	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw	v0.2d, v0.2d, v3.2s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmhi	v0.2d, v0.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, w2, uxtw
+	cmp	x8, w1, sxtw
+	cset	w0, hi
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw	v0.2d, v0.2d, v3.2s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmgt	v0.2d, v0.2d, v3.2d
-	cmgt	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, w2, uxtw
+	cmp	x8, w1, sxtw
+	cset	w0, gt
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
+func000000000000006a:                   // @func000000000000006a
 // %bb.0:                               // %entry
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw	v0.2d, v0.2d, v3.2s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmgt	v0.2d, v0.2d, v3.2d
-	cmgt	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, w2, uxtw
+	cmp	x8, w1, sxtw
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000076:                   // @func0000000000000076
+func00000000000000e6:                   // @func00000000000000e6
 // %bb.0:                               // %entry
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw	v0.2d, v0.2d, v3.2s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmgt	v0.2d, v3.2d, v0.2d
-	cmgt	v1.2d, v2.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, w2, uxtw
+	cmp	x8, w1, sxtw
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000056:                   // @func0000000000000056
+func00000000000000a6:                   // @func00000000000000a6
 // %bb.0:                               // %entry
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw	v0.2d, v0.2d, v3.2s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmgt	v0.2d, v3.2d, v0.2d
-	cmgt	v1.2d, v2.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, w2, uxtw
+	cmp	x8, w1, sxtw
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw	v0.2d, v0.2d, v3.2s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmhi	v0.2d, v0.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, w2, uxtw
+	cmp	x8, w1, sxtw
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000058:                   // @func0000000000000058
+func00000000000000a8:                   // @func00000000000000a8
 // %bb.0:                               // %entry
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw	v0.2d, v0.2d, v3.2s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmhi	v0.2d, v0.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, w2, uxtw
+	cmp	x8, w1, sxtw
+	cset	w0, hi
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw	v0.2d, v0.2d, v3.2s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmhi	v0.2d, v3.2d, v0.2d
-	cmhi	v1.2d, v2.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, w2, uxtw
+	cmp	x8, w1, sxtw
+	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000007a:                   // @func000000000000007a
+func00000000000000ea:                   // @func00000000000000ea
 // %bb.0:                               // %entry
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw	v0.2d, v0.2d, v3.2s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmgt	v0.2d, v0.2d, v3.2d
-	cmgt	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, w2, uxtw
+	cmp	x8, w1, sxtw
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw	v0.2d, v0.2d, v3.2s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmhi	v0.2d, v3.2d, v0.2d
-	cmhi	v1.2d, v2.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, w2, uxtw
+	cmp	x8, w1, sxtw
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw	v0.2d, v0.2d, v3.2s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmhi	v0.2d, v0.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, w2, uxtw
+	cmp	x8, w1, sxtw
+	cset	w0, hi
 	ret
                                         // -- End function
-func000000000000005a:                   // @func000000000000005a
+func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
-	uaddw2	v1.2d, v1.2d, v3.4s
-	uaddw	v0.2d, v0.2d, v3.2s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmgt	v0.2d, v0.2d, v3.2d
-	cmgt	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, w2, uxtw
+	cmp	x8, w1, sxtw
+	cset	w0, gt
 	ret
                                         // -- End function

@@ -56,16 +56,3 @@ func0000000000000011:                   # @func0000000000000011
 	slli	a0, a0, 2
 	addw	a0, a0, a1
 	ret
-func000000000000004f:                   # @func000000000000004f
-	sext.w	a1, a1
-	li	a2, 4
-	bltu	a1, a2, .LBB6_2
-	li	a1, 112
-	slli	a0, a0, 4
-	addw	a0, a0, a1
-	ret
-.LBB6_2:
-	li	a1, 88
-	slli	a0, a0, 4
-	addw	a0, a0, a1
-	ret

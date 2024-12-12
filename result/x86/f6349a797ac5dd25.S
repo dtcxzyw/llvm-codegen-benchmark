@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	movl	%esi, %eax
 	shrl	$12, %eax
 	andl	$8192, %eax                     # imm = 0x2000
@@ -12,7 +12,7 @@ func0000000000000002:                   # @func0000000000000002
 	cmovel	%edi, %eax
 	orl	$8, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	movl	%edi, %eax
 	orl	$16777216, %eax                 # imm = 0x1000000
 	testl	$2139095040, %esi               # imm = 0x7F800000

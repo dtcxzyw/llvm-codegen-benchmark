@@ -47,24 +47,12 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/SsdFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = trunc i8 %0 to i1
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/IfConversion.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000060(i8 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, -6
-  %3 = icmp ult i32 %2, -3
-  %4 = trunc i8 %0 to i1
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -82,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000090(i8 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -56
   %3 = icmp ult i32 %2, 3

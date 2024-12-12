@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 86 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; cmake/optimized/cmCTestTestHandler.cxx.ll
 ; cmake/optimized/cmGlobalGenerator.cxx.ll
@@ -83,6 +83,7 @@
 ; ozz-animation/optimized/import2ozz_track.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind

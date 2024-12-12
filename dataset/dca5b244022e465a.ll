@@ -10,19 +10,13 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
-; icu/optimized/casetrn.ll
-; icu/optimized/formatted_string_builder.ll
-; icu/optimized/normalizer2impl.ll
-; icu/optimized/strrepl.ll
-; icu/optimized/titletrn.ll
+; 2 occurrences:
 ; icu/optimized/tzfmt.ll
-; icu/optimized/ucnvmbcs.ll
 ; openjdk/optimized/c2_stubGenerator_x86_64_string.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 2
+  %2 = icmp samesign ult i32 %1, 2
   %.neg = select i1 %2, i32 -1, i32 -2
   %3 = add i32 %.neg, %0
   ret i32 %3
@@ -47,9 +41,11 @@ entry:
   ret i32 %3
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; icu/optimized/umutablecptrie.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; nori/optimized/popup.cpp.ll
 ; opencv/optimized/grfmt_sunras.cpp.ll
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
@@ -86,6 +82,22 @@ define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %.neg = select i1 %2, i32 -32, i32 -33
+  %3 = add i32 %.neg, %0
+  ret i32 %3
+}
+
+; 6 occurrences:
+; icu/optimized/casetrn.ll
+; icu/optimized/formatted_string_builder.ll
+; icu/optimized/normalizer2impl.ll
+; icu/optimized/strrepl.ll
+; icu/optimized/titletrn.ll
+; icu/optimized/ucnvmbcs.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 65536
+  %.neg = select i1 %2, i32 -1, i32 -2
   %3 = add i32 %.neg, %0
   ret i32 %3
 }

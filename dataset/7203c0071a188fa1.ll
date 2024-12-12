@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; darktable/optimized/introspection_clahe.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, double %1) #0 {
+define i1 @func0000000000000021(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = sext i32 %2 to i64
@@ -16,7 +16,7 @@ entry:
 ; opencv/optimized/trackerKCF.cpp.ll
 ; openspiel/optimized/negotiation.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, double %1) #0 {
+define i1 @func0000000000000066(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = sext i32 %2 to i64

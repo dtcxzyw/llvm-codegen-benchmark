@@ -20,16 +20,6 @@ func0000000000000000:                   # @func0000000000000000
 	cltq
 	leaq	552(%rdi,%rax,4), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	movl	%esi, %eax
-	shrl	$31, %eax
-	addl	%esi, %eax
-	andl	$-2, %eax
-	subl	%eax, %esi
-	movslq	%esi, %rax
-	leaq	(%rax,%rax,2), %rax
-	leaq	8(%rdi,%rax,8), %rax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	leal	3(%rsi), %eax
 	testl	%esi, %esi

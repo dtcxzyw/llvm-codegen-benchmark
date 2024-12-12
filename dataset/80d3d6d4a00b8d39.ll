@@ -1,14 +1,15 @@
 
-; 82 occurrences:
+; 81 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ifDec16.c.ll
+; abc/optimized/ifDsd.c.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clamav/optimized/yara_exec.c.ll
+; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; cmake/optimized/cfilters.c.ll
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/index.c.ll
 ; cmake/optimized/zstd_compress.c.ll
-; coreutils-rs/optimized/4rjs632i9cta2yqf.ll
 ; cpython/optimized/fileio.ll
 ; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-cfilters.ll
@@ -21,8 +22,6 @@
 ; libquic/optimized/ssl_test.cc.ll
 ; libquic/optimized/sys_info_linux.cc.ll
 ; libuv/optimized/linux.c.ll
-; linux/optimized/blk-sysfs.ll
-; linux/optimized/clntxdr.ll
 ; linux/optimized/early_printk.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/page-writeback.ll
@@ -65,6 +64,7 @@
 ; redis/optimized/redis-cli.ll
 ; ruby/optimized/ripper.ll
 ; ruby/optimized/string.ll
+; ruby/optimized/thread.ll
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
 ; rust-analyzer-rs/optimized/55szrkbrq7kolv5z.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
@@ -72,10 +72,9 @@
 ; spike/optimized/fcvtmod_w_d.ll
 ; stb/optimized/stb_truetype.c.ll
 ; tree-sitter-rs/optimized/76by25jz7vi08g1.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/x7jq6ogp3t9ef5k.ll
-; wasmtime-rs/optimized/1aegspwwbjc82p4w.ll
-; wasmtime-rs/optimized/1d0hmxdweaxxi3oz.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/decoders.c.ll

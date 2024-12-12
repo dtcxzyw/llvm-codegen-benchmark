@@ -8,12 +8,12 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(ptr %0, i64 %1, i8 %2) #0 {
+define i64 @func000000000000001f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 28
+  %4 = or disjoint i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 28
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

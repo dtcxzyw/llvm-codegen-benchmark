@@ -1,7 +1,9 @@
 
-; 329 occurrences:
+; 335 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/XFileImporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_collide_circle.cpp.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; box2d/optimized/b2_fixture.cpp.ll
@@ -91,6 +93,7 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/jfdctflt.c.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
@@ -107,7 +110,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -202,11 +204,6 @@
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; ncnn/optimized/priorbox.cpp.ll
-; ncnn/optimized/yolov3detectionoutput.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; nori/optimized/button.cpp.ll
 ; nori/optimized/colorwheel.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -329,6 +326,15 @@
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; typst-rs/optimized/5g4ubztl8zkyojuq.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1mwyngh2duuoqbqyg0d7k37yf.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/ca5hx4nwyb2mnunexsl1xqea9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

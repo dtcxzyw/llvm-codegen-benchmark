@@ -8,17 +8,17 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sarl	$16, %esi
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sarl	$16, %esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sarl	$16, %esi
 	cmpl	%edi, %esi
 	setg	%al
@@ -38,12 +38,12 @@ func0000000000000007:                   # @func0000000000000007
 	cmpl	%edi, %esi
 	setle	%al
 	retq
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	sarl	$16, %esi
 	cmpl	%edi, %esi
 	setge	%al
 	retq
-func0000000000000017:                   # @func0000000000000017
+func0000000000000027:                   # @func0000000000000027
 	sarl	$16, %esi
 	cmpl	%edi, %esi
 	setle	%al
@@ -63,17 +63,22 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%edi, %esi
 	setb	%al
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000019:                   # @func0000000000000019
 	sarl	%esi
 	cmpl	%edi, %esi
 	setae	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func0000000000000009:                   # @func0000000000000009
+	sarl	$2, %esi
+	cmpl	%edi, %esi
+	setae	%al
+	retq
+func000000000000002c:                   # @func000000000000002c
 	sarl	$16, %esi
 	cmpl	%edi, %esi
 	setne	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	sarl	%esi
 	cmpl	%edi, %esi
 	seta	%al
@@ -83,8 +88,13 @@ func0000000000000005:                   # @func0000000000000005
 	cmpl	%edi, %esi
 	setbe	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sarl	$24, %esi
+	cmpl	%edi, %esi
+	setb	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	sarl	%esi
 	cmpl	%edi, %esi
 	setb	%al
 	retq

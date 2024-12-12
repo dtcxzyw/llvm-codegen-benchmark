@@ -6,7 +6,7 @@
 define i32 @func000000000000001e(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 722
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = udiv i32 %3, 10000
   ret i32 %4
 }
@@ -34,7 +34,7 @@ entry:
 
 ; 14 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
-; icu/optimized/gregoimp.ll
+; boost/optimized/src.ll
 ; linux/optimized/lib.ll
 ; memcached/optimized/memcached-itoa_ljust.ll
 ; memcached/optimized/memcached_debug-itoa_ljust.ll
@@ -56,13 +56,12 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
-; icu/optimized/gregoimp.ll
 ; wireshark/optimized/k12text.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
@@ -79,7 +78,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 1000000
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = udiv i32 %3, 1000000000
   ret i32 %4
 }

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = add nsw i32 %3, 7
@@ -11,14 +11,12 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; icu/optimized/cal.ll
 ; icu/optimized/calendar.ll
 ; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add nsw i32 %3, 86400
@@ -30,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i1 %0 to i32
@@ -42,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/mcast_stream.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = add nsw i32 %3, 40000
@@ -66,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add nsw i32 %3, 12

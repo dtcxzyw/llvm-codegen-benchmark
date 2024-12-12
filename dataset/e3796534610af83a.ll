@@ -19,24 +19,12 @@
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; git/optimized/ewah_bitmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = sub nsw i64 %0, %3
   %5 = icmp ugt i64 %4, 1
-  ret i1 %5
-}
-
-; 1 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, 8
-  %3 = lshr exact i64 %2, 3
-  %4 = sub nuw i64 %0, %3
-  %5 = icmp eq i64 %4, 1
   ret i1 %5
 }
 

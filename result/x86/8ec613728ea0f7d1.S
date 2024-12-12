@@ -7,7 +7,7 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%edi, %eax
-	andl	$1, %edx
+	andl	$64, %edx
 	orl	%esi, %eax
 	orl	%edx, %eax
 	orl	$2, %eax

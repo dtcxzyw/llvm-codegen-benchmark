@@ -8,7 +8,7 @@ func0000000000000008:                   # @func0000000000000008
 	shrxq	%rsi, %rdi, %rax
 	decq	%rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000003a:                   # @func000000000000003a
 	movb	$4, %al
 	subb	%sil, %al
 	shrxq	%rax, %rdi, %rax

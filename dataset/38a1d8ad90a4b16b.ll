@@ -1,8 +1,7 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; icu/optimized/decNumber.ll
-; icu/optimized/gregoimp.ll
 ; jq/optimized/decNumber.ll
 ; minetest/optimized/reflowscan.cpp.ll
 ; oiio/optimized/icoinput.cpp.ll
@@ -20,7 +19,7 @@ define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -33,7 +32,7 @@ define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -457
   %3 = sdiv i32 %2, 5
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

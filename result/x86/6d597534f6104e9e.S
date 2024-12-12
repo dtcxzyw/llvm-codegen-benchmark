@@ -10,8 +10,3 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	testl	$65536, %esi                    # imm = 0x10000
-	sete	%al
-	orb	%dil, %al
-	retq

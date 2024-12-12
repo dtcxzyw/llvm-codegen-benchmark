@@ -4,6 +4,6 @@ func0000000000000001:                   # @func0000000000000001
 	mulxq	%rax, %rax, %rax
 	shrq	$4, %rax
 	andl	$2147483647, %eax               # imm = 0x7FFFFFFF
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

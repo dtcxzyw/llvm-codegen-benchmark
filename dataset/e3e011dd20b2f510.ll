@@ -17,6 +17,8 @@
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
+; lvgl/optimized/lv_calendar_header_arrow.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; mitsuba3/optimized/d65.cpp.ll
@@ -32,7 +34,6 @@
 ; postgres/optimized/brin_pageops.ll
 ; postgres/optimized/data.ll
 ; postgres/optimized/ginvacuum.ll
-; postgres/optimized/itemptr.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
@@ -47,7 +48,6 @@
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-vrt.c.ll
 ; wireshark/optimized/packet.c.ll
-; wireshark/optimized/strtoi.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0) #0 {

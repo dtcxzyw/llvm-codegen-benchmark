@@ -3,14 +3,15 @@ func0000000000000068:                   # @func0000000000000068
 	add	a0, a0, a2
 	addi	a0, a0, 20
 	ret
-func0000000000000008:                   # @func0000000000000008
+func000000000000006c:                   # @func000000000000006c
+	slli	a2, a2, 5
+	sub	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, -32
+	ret
+func000000000000002c:                   # @func000000000000002c
 	slli	a2, a2, 3
 	sub	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -8
-	ret
-func0000000000000028:                   # @func0000000000000028
-	sub	a1, a1, a2
-	not	a1, a1
-	add	a0, a0, a1
 	ret

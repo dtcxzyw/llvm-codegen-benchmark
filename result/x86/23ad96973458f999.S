@@ -4,19 +4,8 @@ func0000000000000008:                   # @func0000000000000008
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	cmpb	$10, %sil
 	setae	%al
 	orb	%dil, %al
-	retq
-func0000000000000038:                   # @func0000000000000038
-	cmpb	$10, %sil
-	setae	%al
-	orb	%dil, %al
-	retq
-func0000000000000034:                   # @func0000000000000034
-	cmpb	$10, %sil
-	setb	%al
-	notb	%dil
-	andb	%dil, %al
 	retq

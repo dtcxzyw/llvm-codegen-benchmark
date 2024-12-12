@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 33 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -22,8 +22,6 @@
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; minetest/optimized/touchscreengui.cpp.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; opencv/optimized/CannyDetector_Demo.cpp.ll
 ; opencv/optimized/age_gender_emotion_recognition.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll

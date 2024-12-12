@@ -1,10 +1,9 @@
 
-; 125 occurrences:
+; 124 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -134,7 +133,7 @@ entry:
   ret i64 %5
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -175,6 +174,7 @@ entry:
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wireshark/optimized/file-elf.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
@@ -185,7 +185,7 @@ entry:
   ret i64 %5
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -199,7 +199,6 @@ entry:
 ; libwebp/optimized/bit_writer_utils.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; linux/optimized/exoparg1.ll
-; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/BitstreamReader.cpp.ll
 ; llvm/optimized/CGObjCGNU.cpp.ll
 ; llvm/optimized/IRTranslator.cpp.ll
@@ -244,8 +243,9 @@ entry:
   ret i64 %5
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/src.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
@@ -291,7 +291,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 %3, %1
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -305,7 +305,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, %1
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

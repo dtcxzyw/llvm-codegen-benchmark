@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpq	$8, %rdx
 	sete	%cl
 	andb	%dil, %cl
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	shrq	$31, %rdx
 	sete	%cl
 	testl	%esi, %esi
@@ -14,7 +14,7 @@ func000000000000004a:                   # @func000000000000004a
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testq	%rdx, %rdx
 	setne	%cl
 	andb	%dil, %cl
@@ -22,23 +22,24 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	testq	%rdx, %rdx
 	setne	%cl
 	andb	%dil, %cl
-	cmpl	$30, %esi
+	testl	%esi, %esi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	testq	%rdx, %rdx
+func000000000000002c:                   # @func000000000000002c
+	movabsq	$5949906041037142319, %rax      # imm = 0x5292500536F8392F
+	cmpq	%rax, %rdx
 	sete	%cl
-	andb	%dil, %cl
-	cmpl	$2, %esi
-	setb	%al
+	testl	%esi, %esi
+	setne	%al
+	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	testq	%rdx, %rdx
 	sete	%cl
 	andb	%dil, %cl

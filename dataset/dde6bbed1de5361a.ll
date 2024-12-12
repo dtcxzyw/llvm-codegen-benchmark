@@ -23,7 +23,6 @@
 ; openjdk/optimized/os_linux.ll
 ; openssl/optimized/libcommon-lib-tls_pad.ll
 ; openssl/optimized/libssl-shlib-tls_pad.ll
-; postgres/optimized/ginlogic.ll
 ; postgres/optimized/ruleutils.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; soc-simulator/optimized/sim_mycpu.ll
@@ -31,6 +30,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet_list_header.cpp.ll
 ; yosys/optimized/fmt.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:

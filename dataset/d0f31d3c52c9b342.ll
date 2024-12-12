@@ -1,9 +1,12 @@
 
-; 81 occurrences:
+; 84 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -114,7 +117,7 @@ entry:
 define i64 @func0000000000000020(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
-  %4 = add i128 %3, %0
+  %4 = add i128 %0, %3
   %5 = trunc i128 %4 to i64
   ret i64 %5
 }

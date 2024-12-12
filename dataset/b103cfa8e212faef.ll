@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -108,13 +109,14 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; git/optimized/date.ll
+; lvgl/optimized/lv_calendar.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = sext i1 %1 to i32
   %6 = add nsw i32 %4, %5
   ret i32 %6

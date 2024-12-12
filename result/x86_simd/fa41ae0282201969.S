@@ -99,14 +99,6 @@ func00000000000001a6:                   # @func00000000000001a6
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000110:                   # @func0000000000000110
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpeqps	%zmm2, %zmm0, %k0
-	vcmpeqps	%zmm1, %zmm0, %k1
-	korw	%k0, %k1, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
 func00000000000000a6:                   # @func00000000000000a6
 	vcmpnleps	%zmm1, %zmm0, %k0
 	vxorps	%xmm1, %xmm1, %xmm1

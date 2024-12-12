@@ -1,17 +1,6 @@
 
-; 2 occurrences:
-; draco/optimized/shannon_entropy.cc.ll
-; opencv/optimized/rho.cpp.ll
-; Function Attrs: nounwind
-define double @func0000000000000000(double %0, i32 %1) #0 {
-entry:
-  %2 = uitofp i32 %1 to double
-  %3 = fdiv double %2, %0
-  %4 = fsub double 1.000000e+00, %3
-  ret double %4
-}
-
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; graphviz/optimized/make_map.c.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -27,6 +16,18 @@ entry:
 define double @func0000000000000001(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
+  %3 = fdiv double %2, %0
+  %4 = fsub double 1.000000e+00, %3
+  ret double %4
+}
+
+; 2 occurrences:
+; draco/optimized/shannon_entropy.cc.ll
+; opencv/optimized/rho.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000000(double %0, i32 %1) #0 {
+entry:
+  %2 = uitofp i32 %1 to double
   %3 = fdiv double %2, %0
   %4 = fsub double 1.000000e+00, %3
   ret double %4

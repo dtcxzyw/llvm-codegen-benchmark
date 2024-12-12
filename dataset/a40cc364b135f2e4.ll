@@ -19,7 +19,7 @@
 define i8 @func0000000000000003(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
-  %3 = and i8 %2, %0
+  %3 = and i8 %0, %2
   ret i8 %3
 }
 
@@ -80,16 +80,15 @@ entry:
 define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = and i8 %2, %0
+  %3 = and i8 %0, %2
   ret i8 %3
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; cmake/optimized/hex.c.ll
 ; folly/optimized/IPAddressV4.cpp.ll
 ; icu/optimized/ucnv_u8.ll
 ; icu/optimized/ucnvmbcs.ll
-; libquic/optimized/random.c.ll
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/netlabel_kapi.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
@@ -105,7 +104,7 @@ entry:
 define i8 @func0000000000000002(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
-  %3 = and i8 %2, %0
+  %3 = and i8 %0, %2
   ret i8 %3
 }
 
@@ -128,7 +127,7 @@ entry:
 define i8 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i8
-  %3 = and i8 %2, %0
+  %3 = and i8 %0, %2
   ret i8 %3
 }
 

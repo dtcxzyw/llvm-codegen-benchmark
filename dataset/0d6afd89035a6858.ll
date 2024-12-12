@@ -37,11 +37,11 @@ entry:
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/skl_watermark.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; protobuf/optimized/csharp_field_base.cc.ll
-; qemu/optimized/hw_display_ramfb.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_display_virtio-gpu.c.ll
 ; qemu/optimized/ui_dbus-listener.c.ll

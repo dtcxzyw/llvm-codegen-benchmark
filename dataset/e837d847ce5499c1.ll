@@ -1,12 +1,11 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; brotli/optimized/block_splitter.c.ll
 ; hwloc/optimized/distances.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/vmalloc.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/block_nvme.c.ll
@@ -21,8 +20,7 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; git/optimized/diff.ll
+; 2 occurrences:
 ; nuttx/optimized/lib_wcsstr.c.ll
 ; php/optimized/zend_execute.ll
 ; Function Attrs: nounwind

@@ -18,7 +18,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = add i64 %3, 1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = shl i64 %5, 4
   ret i64 %6
 }
@@ -30,14 +30,13 @@ define i64 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = add nuw nsw i64 %3, 1
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   %6 = shl i64 %5, 4
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; Function Attrs: nounwind

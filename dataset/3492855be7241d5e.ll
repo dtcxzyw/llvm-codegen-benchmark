@@ -10,7 +10,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 15
   %4 = and i32 %3, -8
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = and i32 %0, -8
   %7 = add i32 %6, %5
   ret i32 %7
@@ -23,7 +23,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 18257
   %4 = and i32 %3, 65535
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = and i32 %1, 65535
   %7 = add nuw nsw i32 %5, %6
   ret i32 %7

@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; libquic/optimized/cmp.c.ll
+; 7 occurrences:
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-lib-decoder_pkey.ll

@@ -4,7 +4,7 @@
 ; spike/optimized/s_roundPackToI32.ll
 ; spike/optimized/s_roundPackToUI32.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i8 %0, i32 %1) #0 {
+define i64 @func0000000000000042(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
@@ -20,7 +20,7 @@ entry:
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000188(i8 %0, i32 %1) #0 {
+define i64 @func0000000000000308(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32
   %3 = icmp ne i32 %2, 0

@@ -1,10 +1,11 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; assimp/optimized/FBXParser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; icu/optimized/loclikelysubtags.ll
 ; linux/optimized/mmap.ll
+; php/optimized/unixtime2tm.ll
 ; ruby/optimized/time.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; wireshark/optimized/packet-z3950.c.ll
@@ -18,10 +19,11 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/target.ll
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; eastl/optimized/EATest.cpp.ll

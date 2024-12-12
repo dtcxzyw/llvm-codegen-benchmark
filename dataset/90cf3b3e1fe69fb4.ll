@@ -5,7 +5,7 @@
 ; qemu/optimized/target_riscv_monitor.c.ll
 ; spike/optimized/mmu.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 12
   %3 = zext nneg i32 %2 to i64
@@ -18,7 +18,7 @@ entry:
 ; git/optimized/fast-import.ll
 ; linux/optimized/sd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 10
   %3 = zext nneg i32 %2 to i64
@@ -31,7 +31,7 @@ entry:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
@@ -51,7 +51,7 @@ entry:
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext nneg i32 %2 to i64
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/io_pgtable.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 12
   %3 = zext nneg i32 %2 to i64

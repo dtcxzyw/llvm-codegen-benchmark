@@ -11,7 +11,7 @@ define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = and i64 %2, 4294967295
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -29,7 +29,7 @@ define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = and i64 %2, 4294967295
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 

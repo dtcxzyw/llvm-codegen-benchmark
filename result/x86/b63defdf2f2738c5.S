@@ -11,3 +11,11 @@ func0000000000000000:                   # @func0000000000000000
 	cltq
 	addq	%rdi, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	leal	3(%rdx), %eax
+	testb	$1, %sil
+	cmovel	%edx, %eax
+	cltq
+	shlq	$5, %rax
+	addq	%rdi, %rax
+	retq

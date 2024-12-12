@@ -2,7 +2,7 @@ func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vsub.vv	v9, v9, v10
 	vsll.vi	v9, v9, 4
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	li	a0, -128
 	vxor.vx	v8, v8, a0
 	ret

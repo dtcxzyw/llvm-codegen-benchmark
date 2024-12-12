@@ -20,27 +20,26 @@
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000ff(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 7
   %4 = and i64 %3, 8589934584
-  %5 = getelementptr nusw i8, ptr %1, i64 12
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 12
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
-; 2 occurrences:
-; hyperscan/optimized/fdr_compile.cpp.ll
+; 1 occurrences:
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i8, ptr %1, i64 4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -89,17 +88,29 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; postgres/optimized/integerset.ll
-; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000060(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000070(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 4294967294
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i8, ptr %1, i64 144
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 144
   %6 = getelementptr i64, ptr %5, i64 %0
   %7 = getelementptr i64, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; hyperscan/optimized/fdr_compile.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 63
+  %4 = and i64 %3, -64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 64
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7
 }
 

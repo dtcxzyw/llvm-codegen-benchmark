@@ -1,16 +1,16 @@
 
-; 617 occurrences:
-; abc/optimized/abcExact.c.ll
+; 613 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/topology.ll
 ; c3c/optimized/bigint.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cmCommandArgumentParser.cxx.ll
-; cmake/optimized/cmExprParser.cxx.ll
 ; cmake/optimized/cmFortranParser.cxx.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cpython/optimized/_decimal.ll
@@ -136,7 +136,6 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/tcp_output.ll
 ; linux/optimized/vmscan.ll
 ; linux/optimized/vmstat.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
@@ -147,8 +146,8 @@
 ; llvm/optimized/MicrosoftDemangle.cpp.ll
 ; llvm/optimized/RustDemangle.cpp.ll
 ; llvm/optimized/SveEmitter.cpp.ll
-; luajit/optimized/lib_jit.ll
-; luajit/optimized/lib_jit_dyn.ll
+; lvgl/optimized/lv_calendar_header_arrow.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; minetest/optimized/proxy_sound_manager.cpp.ll
 ; minetest/optimized/sound_manager.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -243,13 +242,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll

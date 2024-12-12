@@ -33,6 +33,11 @@ func0000000000000023:                   # @func0000000000000023
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
+func000000000000005b:                   # @func000000000000005b
+	vcmpnltpd	%zmm1, %zmm2, %k0
+	vpmovm2d	%k0, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	retq
 func0000000000000013:                   # @func0000000000000013
 	vcmpltpd	%zmm2, %zmm1, %k0
 	vpmovm2d	%k0, %ymm1

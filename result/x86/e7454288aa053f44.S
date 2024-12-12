@@ -32,8 +32,3 @@ func0000000000000006:                   # @func0000000000000006
 	andl	$-64, %eax
 	shll	$24, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	orl	%esi, %edi
-	leal	(%rdi,%rdi), %eax
-	andl	$4, %eax
-	retq

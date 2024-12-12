@@ -1,4 +1,6 @@
 
+%struct.SplitPoint.3652096 = type { i16, i16, i16, i16, i8 }
+
 ; 63 occurrences:
 ; flac/optimized/metadata.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
@@ -64,10 +66,10 @@
 ; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6
@@ -85,14 +87,13 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
-; linux/optimized/dns_key.ll
+; 1 occurrences:
 ; postgres/optimized/nbtsplitloc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 %3
+  %4 = getelementptr %struct.SplitPoint.3652096, ptr %1, i64 %3
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6
@@ -102,10 +103,10 @@ entry:
 ; redis/optimized/redis-benchmark.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6

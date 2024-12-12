@@ -5,7 +5,7 @@
 ; jsonnet/optimized/vm.cpp.ll
 ; linux/optimized/serial_core.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0) #0 {
+define i1 @func0000000000000181(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 89391104
   %2 = icmp ne i64 %1, 0
@@ -26,7 +26,7 @@ entry:
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0) #0 {
+define i1 @func000000000000018c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967296
   %2 = icmp ne i64 %1, 0

@@ -14,12 +14,23 @@ entry:
 ; abc/optimized/bblif.c.ll
 ; arrow/optimized/UriQuery.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000064(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 12
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 12
   %3 = icmp ult ptr %2, %0
   %4 = select i1 %3, ptr %2, ptr null
   ret ptr %4
+}
+
+; 1 occurrences:
+; turborepo-rs/optimized/avd1ga9yb4qq5g7sdqftppd4q.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006c(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 64
+  %.not = icmp eq ptr %2, %0
+  %3 = select i1 %.not, ptr null, ptr %2
+  ret ptr %3
 }
 
 ; 43 occurrences:

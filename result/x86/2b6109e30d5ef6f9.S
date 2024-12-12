@@ -2,11 +2,11 @@ func0000000000000004:                   # @func0000000000000004
 	shrxl	%esi, %edx, %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000037:                   # @func0000000000000037
 	shrxl	%esi, %edx, %eax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	shrxl	%esi, %edx, %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq

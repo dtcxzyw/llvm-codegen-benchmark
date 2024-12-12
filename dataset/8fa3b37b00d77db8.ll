@@ -84,13 +84,9 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
-; lz4/optimized/lz4.c.ll
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; 3 occurrences:
 ; openspiel/optimized/observer.cc.ll
 ; openusd/optimized/faceVertex.cpp.ll
-; openusd/optimized/lz4.cpp.ll
-; wolfssl/optimized/sp_int.c.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000037(i64 %0) #0 {

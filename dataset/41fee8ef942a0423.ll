@@ -19,7 +19,7 @@ entry:
   %3 = shl i64 %0, 1
   %4 = add i64 %3, 2
   %5 = select i1 %1, i64 %2, i64 %4
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

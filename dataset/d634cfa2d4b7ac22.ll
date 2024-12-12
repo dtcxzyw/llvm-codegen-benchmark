@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; lief/optimized/aes.c.ll
 ; linux/optimized/tls.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/MCPseudoProbe.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll

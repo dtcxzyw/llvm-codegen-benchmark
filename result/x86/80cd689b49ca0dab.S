@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
@@ -8,7 +8,7 @@ func0000000000000002:                   # @func0000000000000002
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
-	leaq	4(%rax,%rdx), %rax
+	leaq	-1(%rax,%rdx), %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax

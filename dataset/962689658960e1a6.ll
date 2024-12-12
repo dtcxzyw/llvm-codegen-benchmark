@@ -15,7 +15,7 @@
 define i1 @func0000000000000006(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -27,10 +27,10 @@ entry:
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
@@ -48,10 +48,10 @@ entry:
 ; velox/optimized/Subscript.cpp.ll
 ; wireshark/optimized/dot11decrypt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -73,16 +73,17 @@ entry:
 ; openspiel/optimized/tabular_sarsa_test.cc.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/darCut.c.ll
+; boost/optimized/to_chars.ll
 ; cvc5/optimized/addition.cpp.ll
 ; cvc5/optimized/base_solver.cpp.ll
 ; cvc5/optimized/conjecture_generator.cpp.ll
@@ -102,27 +103,25 @@ entry:
 ; cvc5/optimized/type_matcher.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
 ; hdf5/optimized/H5Znbit.c.ll
-; linux/optimized/dns_key.ll
 ; opencv/optimized/convhull.cpp.ll
+; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
-; 3 occurrences:
-; cmake/optimized/zstd_compress.c.ll
+; 1 occurrences:
 ; stockfish/optimized/search.ll
-; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = icmp ugt i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -139,7 +138,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -150,7 +149,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
@@ -163,13 +162,36 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
-; 63 occurrences:
+; 2 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = sext i1 %2 to i32
+  %4 = add nsw i32 %1, %3
+  %5 = icmp samesign ugt i32 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; cmake/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = sext i1 %2 to i32
+  %4 = add i32 %1, %3
+  %5 = icmp ugt i32 %4, %0
+  ret i1 %5
+}
+
+; 60 occurrences:
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/bounded_integers.cpp.ll
 ; cvc5/optimized/bv_gauss.cpp.ll
@@ -206,7 +228,6 @@ entry:
 ; cvc5/optimized/sep_skolem_emp.cpp.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; cvc5/optimized/single_inv_partition.cpp.ll
-; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/strings_entail.cpp.ll
 ; cvc5/optimized/sygus_explain.cpp.ll
@@ -231,12 +252,11 @@ entry:
 ; cvc5/optimized/type_info.cpp.ll
 ; cvc5/optimized/type_set.cpp.ll
 ; sqlite/optimized/sqlite3.ll
-; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
@@ -245,10 +265,10 @@ entry:
 ; cvc5/optimized/sygus_extension.cpp.ll
 ; cvc5/optimized/theory_model_builder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000025(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp ule i32 %4, %0
   ret i1 %5
 }

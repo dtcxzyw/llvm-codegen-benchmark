@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	testl	%edx, %edx
 	sete	%al
 	orl	%esi, %edi
@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movl	%edx, %eax
 	orl	$4, %eax
 	testb	$1, %sil

@@ -7,9 +7,9 @@ func000000000000003c:                   # @func000000000000003c
 	ret
 func0000000000000010:                   # @func0000000000000010
 	slli	a3, a2, 3
-	subw	a2, a2, a1
-	subw	a3, a3, a2
-	subw	a0, a3, a0
+	subw	a1, a1, a2
+	add	a1, a1, a3
+	subw	a0, a1, a0
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a3, a2, 2
@@ -41,7 +41,7 @@ func000000000000003d:                   # @func000000000000003d
 	ret
 func0000000000000014:                   # @func0000000000000014
 	slli	a3, a2, 3
-	subw	a2, a2, a1
-	subw	a3, a3, a2
-	subw	a0, a3, a0
+	subw	a1, a1, a2
+	add	a1, a1, a3
+	subw	a0, a1, a0
 	ret

@@ -34,14 +34,15 @@ entry:
   ret i8 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; linux/optimized/xhci-hub.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i8
-  %2 = add i8 %1, 1
-  %3 = and i8 %2, 7
+  %2 = add i8 %1, 33
+  %3 = and i8 %2, 63
   ret i8 %3
 }
 

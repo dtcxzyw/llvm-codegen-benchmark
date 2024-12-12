@@ -40,7 +40,14 @@ func0000000000000012:                   # @func0000000000000012
 	movslq	%esi, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000057:                   # @func0000000000000057
+	incl	%edx
+	incl	%esi
+	imull	%edx, %esi
+	movslq	%esi, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
 	incl	%edx
 	incl	%esi
 	imull	%edx, %esi

@@ -6,7 +6,7 @@
 ; qemu/optimized/block_io.c.ll
 ; rocksdb/optimized/dynamic_bloom.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -1
@@ -24,11 +24,11 @@ entry:
 ; quantlib/optimized/squarerootclvmodel.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }

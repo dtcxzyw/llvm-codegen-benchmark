@@ -108,11 +108,22 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i128 %0, i128 %1, i128 %2) #0 {
+define i1 @func0000000000000141(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw i128 %1, %2
   %4 = or i128 %3, %0
   %5 = icmp eq i128 %4, 0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000144(i128 %0, i128 %1, i128 %2) #0 {
+entry:
+  %3 = add nuw i128 %1, %2
+  %4 = add nuw i128 %3, %0
+  %5 = icmp ult i128 %4, 18446744073709551616
   ret i1 %5
 }
 

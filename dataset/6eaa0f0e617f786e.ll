@@ -35,10 +35,11 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; coreutils-rs/optimized/4mv5m18a7bd6gezc.ll
 ; node/optimized/libnode.node_http_parser.ll
 ; rust-analyzer-rs/optimized/1l7la04std2aqrwi.ll
+; zed-rs/optimized/7gcmdnlmglj1dyg8i59srq20u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:

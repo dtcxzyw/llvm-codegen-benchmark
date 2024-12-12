@@ -25,8 +25,9 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/InjectedSourceStream.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/NativeEnumInjectedSources.cpp.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll

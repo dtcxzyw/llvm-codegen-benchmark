@@ -1,13 +1,15 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; icu/optimized/double-conversion-strtod.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000404(i8 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 10
   %3 = add i64 %2, -48
@@ -17,11 +19,13 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000408(i8 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 10
   %3 = add i64 %2, -48
@@ -50,8 +54,7 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
-; hermes/optimized/ItaniumDemangle.cpp.ll
+; 4 occurrences:
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; llvm/optimized/LLLexer.cpp.ll

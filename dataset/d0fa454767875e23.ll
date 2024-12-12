@@ -12,7 +12,7 @@
 define i32 @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   %6 = trunc nuw i64 %5 to i32
   ret i32 %6
@@ -27,15 +27,16 @@ entry:
 define i32 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; git/optimized/reader.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
@@ -54,7 +55,7 @@ entry:
 define i32 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 12
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -78,7 +79,7 @@ entry:
 define i32 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 29
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6

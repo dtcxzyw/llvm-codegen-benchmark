@@ -1,5 +1,5 @@
 
-; 589 occurrences:
+; 576 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -167,7 +167,6 @@
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; faiss/optimized/hamming.cpp.ll
 ; faiss/optimized/sorting.cpp.ll
-; git/optimized/pq.ll
 ; git/optimized/sequencer.ll
 ; git/optimized/stack.ll
 ; graphviz/optimized/DotIO.c.ll
@@ -188,8 +187,6 @@
 ; gromacs/optimized/dlarrbx.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/dlasd6.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/dlasq2.cpp.ll
@@ -249,8 +246,6 @@
 ; gromacs/optimized/slarrbx.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
@@ -343,14 +338,11 @@
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dgedmdq.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgelsx.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dgerfs.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dgtrfs.c.ll
@@ -368,36 +360,33 @@
 ; openblas/optimized/dlasd8.c.ll
 ; openblas/optimized/dlasda.c.ll
 ; openblas/optimized/dlasq2.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dporfs.c.ll
 ; openblas/optimized/dpprfs.c.ll
 ; openblas/optimized/dsprfs.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dsyrfs.c.ll
 ; openblas/optimized/dsytrd_sb2st.c.ll
-; openblas/optimized/dsytrs_aa.c.ll
 ; openblas/optimized/dtbrfs.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsen.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtprfs.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrrfs.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; opencv/optimized/bundle.cpp.ll
 ; opencv/optimized/checker_model.cpp.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; opencv/optimized/convert_c.cpp.ll
 ; opencv/optimized/core_detect.cpp.ll
+; opencv/optimized/cornersubpix.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/darknet_io.cpp.ll
 ; opencv/optimized/degeneracy.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
+; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/emdL1.cpp.ll
 ; opencv/optimized/essential_solver.cpp.ll
 ; opencv/optimized/estimator.cpp.ll
@@ -405,7 +394,6 @@
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/fundamental_solver.cpp.ll
 ; opencv/optimized/homography_solver.cpp.ll
-; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/motion_estimators.cpp.ll
 ; opencv/optimized/motion_stabilizing.cpp.ll
 ; opencv/optimized/nldiffusion_functions.cpp.ll
@@ -451,7 +439,6 @@
 ; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
 ; openmpi/optimized/flatten.ll
-; openmpi/optimized/heap_sort.ll
 ; openmpi/optimized/io_ompio.ll
 ; openmpi/optimized/nbc_iallreduce.ll
 ; openmpi/optimized/ompi_datatype_args.ll
@@ -597,7 +584,7 @@ entry:
   ret i64 %2
 }
 
-; 43 occurrences:
+; 52 occurrences:
 ; abc/optimized/cuddZddFuncs.c.ll
 ; abc/optimized/satInterP.c.ll
 ; abc/optimized/st.c.ll
@@ -641,6 +628,15 @@ entry:
 ; ruby/optimized/vm.ll
 ; spike/optimized/device.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:

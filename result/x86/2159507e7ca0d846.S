@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	incl	%edx
 	movslq	%edx, %rax
 	xorl	%ecx, %ecx
@@ -6,7 +6,7 @@ func000000000000001a:                   # @func000000000000001a
 	cmovneq	%rax, %rcx
 	leaq	5292(%rdi,%rcx), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	incl	%edx
 	movslq	%edx, %rax
 	xorl	%ecx, %ecx
@@ -14,7 +14,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmovneq	%rax, %rcx
 	leaq	5284(%rdi,%rcx), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	incl	%edx
 	movslq	%edx, %rax
 	xorl	%ecx, %ecx

@@ -37,11 +37,3 @@ func000000000000000a:                   # @func000000000000000a
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm2[0]
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	retq
-func0000000000000002:                   # @func0000000000000002
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
-	vpsrlq	$63, %ymm0, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpsraq	$1, %ymm0, %ymm0
-	retq

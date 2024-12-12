@@ -15,7 +15,7 @@ func0000000000000000:                   # @func0000000000000000
 	movslq	%edi, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	sarl	$6, %edi
+	sarl	$3, %edi
 	movslq	%edi, %rax
 	retq
 func0000000000000003:                   # @func0000000000000003

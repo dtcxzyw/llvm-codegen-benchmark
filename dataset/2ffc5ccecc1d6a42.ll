@@ -12,7 +12,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
   %4 = zext nneg i8 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = sub i64 %0, %5
   ret i64 %6
 }

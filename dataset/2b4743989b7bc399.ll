@@ -219,11 +219,11 @@ entry:
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; diesel-rs/optimized/2phdoksmzkii6al2.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000015(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000017(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = trunc nsw i64 %2 to i32
-  %4 = mul nsw i32 %3, 1000
+  %4 = mul nuw nsw i32 %3, 1000
   ret i32 %4
 }
 

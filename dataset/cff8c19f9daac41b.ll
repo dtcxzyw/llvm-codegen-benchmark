@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000014(i16 %0, i32 %1, i16 %2) #0 {
+define i16 @func0000000000000024(i16 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %2, 8304
   %4 = icmp ult i32 %1, 3
@@ -39,7 +39,7 @@ entry:
 ; icu/optimized/ubidiwrt.ll
 ; linux/optimized/nls_base.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i16 %0, i32 %1, i16 %2) #0 {
+define i16 @func0000000000000021(i16 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %2, -10240
   %4 = icmp eq i32 %1, 2

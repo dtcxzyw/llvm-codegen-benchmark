@@ -1,11 +1,11 @@
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	sext.w	a0, a0
 	sext.w	a1, a1
 	srliw	a2, a2, 31
 	slt	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -14,7 +14,7 @@ func0000000000000088:                   # @func0000000000000088
 	sltu	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	xor	a0, a0, a1
 	or	a0, a0, a2
 	sext.w	a0, a0

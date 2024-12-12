@@ -12,7 +12,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %reass.add = shl i64 %0, 1
-  %2 = add i64 %reass.add, %1
+  %2 = add i64 %1, %reass.add
   %3 = lshr i64 %2, 33
   %4 = xor i64 %3, %2
   ret i64 %4

@@ -31,7 +31,7 @@ func0000000000000072:                   # @func0000000000000072
 func0000000000000078:                   # @func0000000000000078
 	addl	%esi, %edi
 	vcvtsi2ss	%edi, %xmm1, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func000000000000007b:                   # @func000000000000007b

@@ -1,5 +1,5 @@
 
-; 176 occurrences:
+; 175 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/extraUtilMult.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
@@ -77,7 +77,6 @@
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_layer.cpp.ll
@@ -244,7 +243,7 @@ entry:
   ret double %2
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; gromacs/optimized/calculate_spline_moduli.cpp.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; gromacs/optimized/gmx_energy.cpp.ll
@@ -252,7 +251,6 @@ entry:
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/lmmin.cpp.ll
-; libwebp/optimized/quant_levels_utils.c.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/ltable.cpp.ll

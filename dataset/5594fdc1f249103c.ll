@@ -1,6 +1,7 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; arrow/optimized/feather.cc.ll
+; boost/optimized/src.ll
 ; cpython/optimized/_json.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libphonenumber/optimized/phonenumbermatcher.cc.ll

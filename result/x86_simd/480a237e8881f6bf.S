@@ -20,14 +20,3 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI2_0:
-	.long	2147483520                      # 0x7fffff80
-.LCPI2_1:
-	.long	128                             # 0x80
-func0000000000000004:                   # @func0000000000000004
-	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
-	vpsrlvd	%ymm0, %ymm1, %ymm0
-	vptestnmd	.LCPI2_1(%rip){1to8}, %ymm0, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq

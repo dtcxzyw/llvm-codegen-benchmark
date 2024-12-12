@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 .LCPI1_0:
 	.quad	0x3ee4f8b588e368f1              # double 1.0000000000000001E-5
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v8, v8, 7
 	lui	a0, %hi(.LCPI1_0)

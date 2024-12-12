@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 512
   %3 = icmp eq i32 %2, 0
@@ -11,7 +11,7 @@ entry:
   ret i1 %5
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; casadi/optimized/tinyxml2.cpp.ll
 ; clamav/optimized/pe.c.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
@@ -34,7 +34,6 @@ entry:
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; opencv/optimized/grabcut.cpp.ll
 ; opencv/optimized/tinyxml2.cpp.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/php_reflection.ll
 ; php/optimized/zend_execute.ll
 ; postgres/optimized/tablecmds.ll
@@ -45,7 +44,7 @@ entry:
 ; wireshark/optimized/packet-ixveriwave.c.ll
 ; wireshark/optimized/packet-v120.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16
   %3 = icmp ne i32 %2, 0
@@ -59,7 +58,7 @@ entry:
 ; php/optimized/zend_inference.ll
 ; wireshark/optimized/packet-dcerpc-pn-io.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 30
   %3 = icmp eq i32 %2, 0
@@ -117,7 +116,7 @@ entry:
 ; zxing/optimized/AZReader.cpp.ll
 ; zxing/optimized/QRReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8
   %3 = icmp ne i32 %2, 0
@@ -126,7 +125,7 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; icu/optimized/decNumber.ll
 ; icu/optimized/ucnvmbcs.ll
 ; linux/optimized/hub.ll
@@ -137,11 +136,9 @@ entry:
 ; php/optimized/zend_API.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; wireshark/optimized/packet-cp2179.c.ll
-; wireshark/optimized/packet-ipmi-trace.c.ll
 ; wireshark/optimized/tvbuff.c.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2097152
   %3 = icmp eq i32 %2, 0
@@ -157,7 +154,7 @@ entry:
 ; openjdk/optimized/pngrutil.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
   %3 = icmp ne i32 %2, 0
@@ -174,7 +171,7 @@ entry:
 ; php/optimized/pcre2_substitute.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i8 %0, i32 %1) #0 {
+define i1 @func000000000000010c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 524288
   %3 = icmp ne i32 %2, 0
@@ -183,11 +180,24 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
+; php/optimized/pcre2_compile.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000cc(i8 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 524288
+  %3 = icmp ne i32 %2, 0
+  %4 = icmp slt i8 %0, -64
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
 ; spike/optimized/csrs.ll
 ; wireshark/optimized/packet-smc.c.ll
+; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i8 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = icmp eq i32 %2, 7
@@ -200,7 +210,7 @@ entry:
 ; llvm/optimized/ExprEngineC.cpp.ll
 ; wireshark/optimized/packet-cisco-mcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 33292288
   %3 = icmp eq i32 %2, 9961472
@@ -213,10 +223,10 @@ entry:
 ; icu/optimized/ucnv2022.ll
 ; icu/optimized/ucnvhz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000094(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp ult i32 %2, 93
+  %3 = icmp samesign ult i32 %2, 93
   %4 = icmp ult i8 %0, 94
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
@@ -225,7 +235,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvbocu.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i8 %0, i32 %1) #0 {
+define i1 @func000000000000014c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = icmp ne i32 %2, 0

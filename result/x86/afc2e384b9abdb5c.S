@@ -13,9 +13,15 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	notb	%sil
 	testb	$14, %sil
 	sete	%al
+	orb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	andb	$31, %sil
+	cmpb	$3, %sil
+	setb	%al
 	orb	%dil, %al
 	retq

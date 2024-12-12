@@ -13,14 +13,11 @@ define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
   %4 = icmp sgt i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 5 occurrences:
-; gromacs/optimized/resourcedivision.cpp.ll
-; hwloc/optimized/lstopo-lstopo-draw.ll
-; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
+; 2 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
@@ -28,7 +25,7 @@ define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
   %4 = icmp ugt i32 %3, 31
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -43,6 +40,19 @@ entry:
   %3 = udiv i32 %1, %2
   %4 = icmp ult i32 %3, 64
   %5 = and i1 %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; gromacs/optimized/resourcedivision.cpp.ll
+; hwloc/optimized/lstopo-lstopo-draw.ll
+; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = udiv i32 %1, %2
+  %4 = icmp samesign ugt i32 %3, 6
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

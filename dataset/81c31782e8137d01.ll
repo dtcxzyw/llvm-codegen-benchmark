@@ -23,7 +23,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 1, i64 -8190
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl nuw i64 %3, 51
   ret i64 %4
 }
@@ -54,7 +54,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 104, i64 96
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl i64 %3, 32
   ret i64 %4
 }
@@ -70,7 +70,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 2, i64 3
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl nuw nsw i64 %3, 3
   ret i64 %4
 }
@@ -82,7 +82,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 8, i64 0
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl i64 %3, 32
   ret i64 %4
 }

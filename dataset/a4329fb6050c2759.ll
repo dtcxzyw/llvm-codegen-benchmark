@@ -1,9 +1,10 @@
 
-; 43 occurrences:
+; 46 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cpython/optimized/_ctypes_test.ll
 ; freetype/optimized/sfnt.c.ll
@@ -14,6 +15,8 @@
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
+; lvgl/optimized/lv_draw_label.ll
 ; msdfgen/optimized/rasterization.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
@@ -65,10 +68,12 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; icu/optimized/reslist.ll
 ; icu/optimized/unames.ll
 ; libjpeg-turbo/optimized/jcmarker.c.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
+; lvgl/optimized/lv_span.ll
 ; oiio/optimized/strutil.cpp.ll
 ; openjdk/optimized/compactHashtable.ll
 ; openmpi/optimized/tm_malloc.ll

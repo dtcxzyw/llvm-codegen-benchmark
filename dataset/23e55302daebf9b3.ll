@@ -74,6 +74,15 @@ entry:
   ret i8 %1
 }
 
+; 1 occurrences:
+; boost/optimized/dec_octet_rule.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000016(i8 %0) #0 {
+entry:
+  %1 = add i8 %0, -48
+  ret i8 %1
+}
+
 ; 2 occurrences:
 ; wireshark/optimized/packet-vj-comp.c.ll
 ; wireshark/optimized/packet-zbee-aps.c.ll

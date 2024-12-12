@@ -1,8 +1,9 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; postgres/optimized/wchar.ll
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
@@ -14,8 +15,8 @@ define i1 @func0000000000000004(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
   %4 = icmp eq i8 %3, 0
-  %5 = or i1 %4, %1
-  %6 = or i1 %5, %0
+  %5 = or i1 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

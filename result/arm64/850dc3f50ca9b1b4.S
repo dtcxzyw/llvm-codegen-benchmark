@@ -1,37 +1,39 @@
-func0000000000000018:                   // @func0000000000000018
+func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	movi	v3.4h, #6
+	and	w9, w1, #0xffff
 	mov	w8, #12                         // =0xc
-	cmeq	v2.4h, v2.4h, v3.4h
-	dup	v3.2d, x8
-	mov	w8, #24                         // =0x18
-	dup	v5.2d, x8
-	sshll	v2.4s, v2.4h, #0
-	sshll2	v4.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	bsl	v2.16b, v5.16b, v3.16b
-	bit	v3.16b, v5.16b, v4.16b
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w9, #6
+	mov	w9, #24                         // =0x18
+	csel	x8, x9, x8, eq
+	cmp	x8, x0
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000031:                   // @func0000000000000031
 // %bb.0:                               // %entry
-	cmeq	v2.4h, v2.4h, #0
 	mov	w8, #64                         // =0x40
-	dup	v3.2d, x8
-	mov	w8, #32                         // =0x20
-	dup	v5.2d, x8
-	sshll	v2.4s, v2.4h, #0
-	sshll2	v4.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	bsl	v2.16b, v5.16b, v3.16b
-	bit	v3.16b, v5.16b, v4.16b
-	cmeq	v1.2d, v3.2d, v1.2d
-	cmeq	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	tst	w1, #0xffff
+	mov	w9, #32                         // =0x20
+	csel	x8, x9, x8, eq
+	cmp	x8, x0
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000028:                   // @func0000000000000028
+// %bb.0:                               // %entry
+	tst	w1, #0xffff
+	ccmp	x0, #21, #2, ne
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000021:                   // @func0000000000000021
+// %bb.0:                               // %entry
+	and	w9, w1, #0xffff
+	mov	w8, #28                         // =0x1c
+	cmp	w9, #2
+	mov	w9, #16                         // =0x10
+	csel	x8, x9, x8, eq
+	cmp	x8, x0
+	cset	w0, eq
 	ret
                                         // -- End function

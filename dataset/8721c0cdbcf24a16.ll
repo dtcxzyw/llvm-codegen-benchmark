@@ -1,15 +1,30 @@
 
-; 14 occurrences:
+; 29 occurrences:
 ; abc/optimized/saigIsoFast.c.ll
+; abc/optimized/solver.c.ll
+; abc/optimized/xsatSolver.c.ll
 ; jq/optimized/regcomp.ll
 ; linux/optimized/fs_context.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_gt_mcr.ll
 ; linux/optimized/yenta_socket.ll
+; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/CGCUDANV.cpp.ll
+; llvm/optimized/CodeGenModule.cpp.ll
+; llvm/optimized/CoroSplit.cpp.ll
+; llvm/optimized/ExpandVariadics.cpp.ll
+; llvm/optimized/FunctionImport.cpp.ll
+; llvm/optimized/FunctionImportUtils.cpp.ll
+; llvm/optimized/GlobalOpt.cpp.ll
+; llvm/optimized/IRMover.cpp.ll
+; llvm/optimized/InstrProfiling.cpp.ll
+; llvm/optimized/LowerEmuTLS.cpp.ll
+; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; openjdk/optimized/assembler_x86.ll
+; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; ruby/optimized/regcomp.ll
 ; wireshark/optimized/busmaster.c.ll
 ; wireshark/optimized/packet-caneth.c.ll

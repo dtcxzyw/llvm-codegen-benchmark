@@ -4,7 +4,7 @@ func000000000000000a:                   # @func000000000000000a
 	sllw	a0, a2, a0
 	slt	a0, a1, a0
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	subw	a1, a1, a2
 	li	a2, 1
 	sllw	a0, a2, a0

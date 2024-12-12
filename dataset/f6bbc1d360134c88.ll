@@ -1,8 +1,10 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; softposit-rs/optimized/4wrr62dd33canpwl.ll
 ; Function Attrs: nounwind
@@ -13,9 +15,12 @@ entry:
   ret i64 %2
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libquic/optimized/p256-64.c.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll

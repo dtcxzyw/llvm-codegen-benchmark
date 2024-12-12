@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; php/optimized/stream.ll
-; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:

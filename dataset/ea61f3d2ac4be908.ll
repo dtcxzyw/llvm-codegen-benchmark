@@ -1,5 +1,5 @@
 
-; 203 occurrences:
+; 216 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
@@ -48,7 +48,6 @@
 ; linux/optimized/cgroup-v1.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/device_cgroup.ll
-; linux/optimized/he.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_bw.ll
@@ -61,7 +60,6 @@
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/pci.ll
-; linux/optimized/pkeys.ll
 ; linux/optimized/posix_acl.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/sme.ll
@@ -72,11 +70,12 @@
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/Function.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lua/optimized/ldo.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
 ; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
@@ -203,11 +202,25 @@
 ; wasmtime-rs/optimized/hmb8tiwife399k7.ll
 ; wasmtime-rs/optimized/lin3yywv836im8d.ll
 ; wolfssl/optimized/rsa.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3u7utqtgdovrxzbad3tfrps40.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/bwf7odsfkes1o9vw37iz67e4b.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = xor i16 %1, -1
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   ret i16 %3
 }
 

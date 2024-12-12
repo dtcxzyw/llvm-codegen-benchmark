@@ -19,11 +19,3 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$3, %esi
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	notb	%dl
-	movzbl	%dl, %eax
-	andl	$1, %eax
-	leaq	120(,%rax,8), %rax
-	cmpl	$2, %esi
-	cmovbq	%rdi, %rax
-	retq

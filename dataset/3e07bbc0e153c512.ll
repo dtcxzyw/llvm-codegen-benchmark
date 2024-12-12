@@ -1,5 +1,5 @@
 
-; 386 occurrences:
+; 402 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
@@ -10,6 +10,8 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; coremark/optimized/core_main.c.ll
@@ -19,7 +21,6 @@
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; double_conversion/optimized/bignum.cc.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; eastl/optimized/EARandom.cpp.ll
 ; faiss/optimized/utils.cpp.ll
 ; flac/optimized/md5.c.ll
@@ -164,7 +165,6 @@
 ; linux/optimized/drm_framebuffer.ll
 ; linux/optimized/i915_gem_create.ll
 ; linux/optimized/intel_atomic_plane.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dp.ll
@@ -385,6 +385,22 @@
 ; z3/optimized/mpn.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/coobscod1tjvofpoi7fi6r7gk.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
@@ -395,7 +411,7 @@ entry:
   ret i64 %4
 }
 
-; 49 occurrences:
+; 47 occurrences:
 ; bullet3/optimized/btMultiBody.ll
 ; cpython/optimized/_bz2module.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
@@ -419,7 +435,6 @@ entry:
 ; libwebp/optimized/pnmdec.c.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; linux/optimized/intel_cx0_phy.ll
-; linux/optimized/intel_snps_phy.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/padding.cpp.ll
 ; oiio/optimized/formatspec.cpp.ll
@@ -440,7 +455,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-cmac.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; openusd/optimized/AVIFImage.cpp.ll
-; openusd/optimized/aom_image.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; raylib/optimized/raudio.c.ll
@@ -454,7 +468,7 @@ entry:
   ret i64 %4
 }
 
-; 27 occurrences:
+; 32 occurrences:
 ; cmake/optimized/zdict.c.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
@@ -469,8 +483,11 @@ entry:
 ; linux/optimized/intel_dpll_mgr.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
+; openusd/optimized/aom_image.c.ll
 ; php/optimized/php_pcre.ll
 ; php/optimized/phpdbg_watch.ll
 ; php/optimized/tokenizer.ll
@@ -481,6 +498,8 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wasmedge/optimized/refInstr.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
@@ -491,7 +510,7 @@ entry:
   ret i64 %4
 }
 
-; 40 occurrences:
+; 42 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/zip.c.ll
 ; double_conversion/optimized/bignum.cc.ll
@@ -532,6 +551,8 @@ entry:
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; z3/optimized/pb_solver.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
@@ -541,7 +562,7 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
+; 23 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/extraBddMisc.c.ll
 ; clamav/optimized/chmd.c.ll
@@ -563,6 +584,8 @@ entry:
 ; openjdk/optimized/DrawLine.ll
 ; openjdk/optimized/jmemmgr.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:

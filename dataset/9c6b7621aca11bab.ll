@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; abc/optimized/giaSupps.c.ll
 ; clamav/optimized/iso9660.c.ll
 ; clamav/optimized/matcher-pcre.c.ll
@@ -18,7 +18,6 @@
 ; linux/optimized/libata-sata.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/timeout.ll
-; linux/optimized/x509_public_key.ll
 ; llvm/optimized/ArgList.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
 ; nuklear/optimized/unity.c.ll

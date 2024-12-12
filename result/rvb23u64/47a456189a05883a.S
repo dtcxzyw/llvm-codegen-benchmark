@@ -18,7 +18,15 @@ func0000000000000014:                   # @func0000000000000014
 	subw	a2, a2, a1
 	addw	a0, a0, a2
 	ret
+func0000000000000028:                   # @func0000000000000028
+	subw	a2, a2, a1
+	addw	a0, a0, a2
+	ret
 func0000000000000011:                   # @func0000000000000011
+	subw	a2, a2, a1
+	addw	a0, a0, a2
+	ret
+func0000000000000020:                   # @func0000000000000020
 	subw	a2, a2, a1
 	addw	a0, a0, a2
 	ret
@@ -35,6 +43,10 @@ func0000000000000010:                   # @func0000000000000010
 	addw	a0, a0, a2
 	ret
 func0000000000000004:                   # @func0000000000000004
+	subw	a2, a2, a1
+	addw	a0, a0, a2
+	ret
+func0000000000000031:                   # @func0000000000000031
 	subw	a2, a2, a1
 	addw	a0, a0, a2
 	ret

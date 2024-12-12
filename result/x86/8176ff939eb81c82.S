@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	cmpq	%rsi, %rdi
 	movl	$76, %eax
 	cmovnel	%edx, %eax

@@ -10,7 +10,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = sub i32 %1, %3
   %5 = sitofp i32 %4 to float
-  %6 = fadd float %5, %0
+  %6 = fadd float %0, %5
   ret float %6
 }
 

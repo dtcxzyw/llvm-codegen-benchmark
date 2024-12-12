@@ -17,14 +17,14 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	shrxl	%edx, %esi, %eax
 	cmpl	$56, %eax
 	setb	%al
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	shrxl	%edx, %esi, %eax
 	cmpl	$96, %eax
 	setae	%al

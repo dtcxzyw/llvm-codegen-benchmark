@@ -4,13 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	shll	$4, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
-	testl	$2146435072, %edi               # imm = 0x7FF00000
-	movl	$-1076, %ecx                    # imm = 0xFBCC
-	movl	$-1023, %eax                    # imm = 0xFC01
-	cmovel	%ecx, %eax
-	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	andl	$524288, %edi                   # imm = 0x80000
 	cmpq	$1, %rdi
 	movl	$2, %eax
@@ -22,17 +16,9 @@ func000000000000000c:                   # @func000000000000000c
 	movl	$18, %eax
 	cmovel	%ecx, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	testb	$1, %dil
 	movl	$32, %ecx
 	movl	$126, %eax
 	cmovel	%ecx, %eax
-	retq
-func0000000000000004:                   # @func0000000000000004
-	notl	%edi
-	xorl	%eax, %eax
-	testb	$56, %dil
-	sete	%al
-	shll	$6, %eax
-	orl	$56, %eax
 	retq

@@ -1,13 +1,3 @@
-.LCPI0_0:
-	.long	5                               # 0x5
-func0000000000000021:                   # @func0000000000000021
-	vpsllw	$15, %xmm1, %xmm1
-	vpmovw2m	%xmm1, %k0
-	knotb	%k0, %k1
-	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm2, %k0 {%k1}
-	vpmovm2d	%k0, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	retq
 func0000000000000031:                   # @func0000000000000031
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
@@ -15,5 +5,15 @@ func0000000000000031:                   # @func0000000000000031
 	vpcmpneqd	%ymm1, %ymm2, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2d	%k0, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI1_0:
+	.long	3                               # 0x3
+func0000000000000061:                   # @func0000000000000061
+	vpsllw	$15, %xmm1, %xmm1
+	vpmovw2m	%xmm1, %k0
+	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm2, %k1
+	korb	%k1, %k0, %k0
+	vpmovm2d	%k0, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

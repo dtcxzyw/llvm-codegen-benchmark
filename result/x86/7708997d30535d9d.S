@@ -48,3 +48,8 @@ func0000000000000006:                   # @func0000000000000006
 	shll	$5, %eax
 	orl	%edi, %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	movl	%esi, %eax
+	shll	$12, %eax
+	orl	%edi, %eax
+	retq

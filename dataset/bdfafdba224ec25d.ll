@@ -14,10 +14,8 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; hermes/optimized/TypedArray.cpp.ll
-; icu/optimized/putil.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; proj/optimized/transformation.cpp.ll
 ; quantlib/optimized/gausslobattointegral.ll
@@ -40,7 +38,7 @@ entry:
   %3 = fcmp uge double %2, 1.000000e+00
   %4 = fcmp ule double %1, 1.000000e+00
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -52,47 +50,24 @@ entry:
   %3 = fcmp olt double %2, 0x3A1B900000000000
   %4 = fcmp oeq double %1, 0.000000e+00
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 2 occurrences:
-; stat-rs/optimized/1957ju1ns40544yq.ll
-; stat-rs/optimized/rkxxfn3f5mhspne.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000228(i1 %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp oeq double %2, 0x7FF0000000000000
-  %4 = fcmp ole double %1, 0.000000e+00
-  %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 3 occurrences:
-; cpython/optimized/complexobject.ll
+; 6 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; postgres/optimized/geo_ops.ll
-; stat-rs/optimized/4bf6omib3d9godoe.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000220(i1 %0, double %1, double %2) #0 {
 entry:
-  %3 = fcmp oeq double %2, 0x7FF0000000000000
-  %4 = fcmp oeq double %1, 0x7FF0000000000000
+  %3 = fcmp oeq double %2, 0.000000e+00
+  %4 = fcmp oeq double %1, 0x3FF921FB54442D18
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
-; stat-rs/optimized/n94tvlll45kxl7r.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000068(i1 %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp uno double %2, 0.000000e+00
-  %4 = fcmp ole double %1, 0.000000e+00
-  %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -119,12 +94,11 @@ entry:
   %3 = fcmp ueq double %2, 0x7FF0000000000000
   %4 = fcmp olt double %1, 0xC3E0000000000000
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 5 occurrences:
-; opencv/optimized/chessboard.cpp.ll
+; 4 occurrences:
 ; openusd/optimized/capsuleMeshGenerator.cpp.ll
 ; openusd/optimized/coneMeshGenerator.cpp.ll
 ; openusd/optimized/cylinderMeshGenerator.cpp.ll
@@ -135,7 +109,7 @@ entry:
   %3 = fcmp olt double %2, 0x3EB0C6F7A0B5ED8D
   %4 = fcmp ogt double %1, 0x401921FB54442D18
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -161,7 +135,7 @@ entry:
   %3 = fcmp ueq double %2, 0x7FF0000000000000
   %4 = fcmp ole double %1, -1.000000e+00
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -187,20 +161,7 @@ entry:
   %3 = fcmp une double %2, 0x7FF0000000000000
   %4 = fcmp oeq double %1, 0x7FF0000000000000
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; ocio/optimized/GradingTone.cpp.ll
-; redis/optimized/geohash.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000110(i1 %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ogt double %2, 0x40554345B1A57F00
-  %4 = fcmp ogt double %1, 1.800000e+02
-  %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -236,17 +197,17 @@ entry:
   %3 = fcmp oeq double %2, 0x7FF0000000000000
   %4 = fcmp olt double %1, 5.000000e-01
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
-; typst-rs/optimized/m09o5qr68f5khss.ll
+; ocio/optimized/GradingTone.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000224(i1 %0, double %1, double %2) #0 {
+define i1 @func0000000000000110(i1 %0, double %1, double %2) #0 {
 entry:
-  %3 = fcmp oeq double %2, 0.000000e+00
-  %4 = fcmp ueq double %1, 0x7FF0000000000000
+  %3 = fcmp ogt double %2, 0x3FFE666772D5E071
+  %4 = fcmp ogt double %1, 0x3FFE666772D5E071
   %5 = or i1 %4, %3
   %6 = or i1 %5, %0
   ret i1 %6

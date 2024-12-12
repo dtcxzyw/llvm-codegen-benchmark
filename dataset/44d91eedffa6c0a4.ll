@@ -78,25 +78,13 @@ entry:
 }
 
 ; 1 occurrences:
-; mixbox/optimized/mixbox.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000fd(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = mul nuw nsw i32 %3, 85
-  %5 = add nuw nsw i32 %4, %0
-  %6 = mul nsw i32 %5, 85
-  ret i32 %6
-}
-
-; 1 occurrences:
 ; libquic/optimized/error_correction.c.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = mul i32 %3, -12289
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = mul nsw i32 %5, 2730
   ret i32 %6
 }
@@ -137,7 +125,7 @@ define i32 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = mul nsw i32 %3, 37
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = mul i32 %5, 37
   ret i32 %6
 }

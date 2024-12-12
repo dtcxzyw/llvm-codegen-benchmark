@@ -44,7 +44,7 @@
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ogt double %4, 0.000000e+00
   ret i1 %5
 }
@@ -103,12 +103,14 @@ entry:
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp olt double %4, 1.000000e+00
   ret i1 %5
 }
 
-; 14 occurrences:
+; 16 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idaa.c.ll
@@ -127,12 +129,14 @@ entry:
 define i1 @func0000000000000005(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ugt double %4, 0.000000e+00
   ret i1 %5
 }
 
-; 17 occurrences:
+; 19 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idaa.c.ll
@@ -154,7 +158,7 @@ entry:
 define i1 @func0000000000000003(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ult double %4, 0.000000e+00
   ret i1 %5
 }
@@ -178,8 +182,32 @@ entry:
 define i1 @func0000000000000007(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp une double %4, 0.000000e+00
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000b(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fsub double %1, %2
+  %4 = fmul double %0, %3
+  %5 = fcmp ule double %4, 0.000000e+00
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000d(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fsub double %1, %2
+  %4 = fmul double %0, %3
+  %5 = fcmp uge double %4, 0.000000e+00
   ret i1 %5
 }
 
@@ -192,7 +220,7 @@ entry:
 define i1 @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp oge double %4, 0.000000e+00
   ret i1 %5
 }
@@ -203,7 +231,7 @@ entry:
 define i1 @func0000000000000001(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp uno double %4, 0.000000e+00
   ret i1 %5
 }
@@ -215,7 +243,7 @@ entry:
 define i1 @func000000000000000e(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ord double %4, 0.000000e+00
   ret i1 %5
 }

@@ -1,11 +1,11 @@
-func000000000000134c:                   # @func000000000000134c
+func0000000000004a8c:                   # @func0000000000004a8c
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	slti	a2, a1, -3
 	slt	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func00000000000002d6:                   # @func00000000000002d6
+func0000000000000996:                   # @func0000000000000996
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	slt	a0, a1, a0
@@ -13,14 +13,14 @@ func00000000000002d6:                   # @func00000000000002d6
 	slti	a1, a1, 0
 	or	a0, a0, a1
 	ret
-func000000000000034c:                   # @func000000000000034c
+func0000000000000a8c:                   # @func0000000000000a8c
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	slti	a2, a1, -3
 	slt	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000001028:                   # @func0000000000001028
+func0000000000004048:                   # @func0000000000004048
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	lui	a2, 4

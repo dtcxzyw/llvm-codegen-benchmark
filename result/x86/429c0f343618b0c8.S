@@ -1,10 +1,10 @@
 func0000000000000002:                   # @func0000000000000002
 	xorl	%eax, %eax
-	testb	$1, %dil
-	movl	$290, %ecx                      # imm = 0x122
-	cmovnel	%ecx, %eax
 	testb	$-6, %sil
+	movl	$290, %ecx                      # imm = 0x122
 	cmovel	%ecx, %eax
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018
 	shrb	$2, %sil

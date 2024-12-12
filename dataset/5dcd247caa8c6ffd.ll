@@ -7,7 +7,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 1
   %4 = add nsw i32 %3, -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

@@ -37,7 +37,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl i32 %3, 24
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -67,7 +67,7 @@ define i32 @func000000000000000a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -87,7 +87,7 @@ entry:
   ret i32 %6
 }
 
-; 34 occurrences:
+; 42 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -109,6 +109,10 @@ entry:
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -122,27 +126,34 @@ entry:
 ; wireshark/optimized/print.c.ll
 ; wireshark/optimized/sequence_analysis.c.ll
 ; wireshark/optimized/sharkd_session.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 13
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
-; 4 occurrences:
+; 7 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat.cpp.ll
 ; openjdk/optimized/gtk3_interface.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
@@ -169,7 +180,7 @@ entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 %3, 31
   %5 = or i32 %4, %1
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -184,7 +195,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl i32 %3, 21
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
@@ -197,7 +208,7 @@ define i32 @func000000000000001c(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -222,7 +233,7 @@ define i32 @func000000000000001a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -239,6 +250,18 @@ entry:
   ret i32 %6
 }
 
+; 1 occurrences:
+; linux/optimized/hda_codec.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = shl i32 %3, 20
+  %5 = or disjoint i32 %4, %1
+  %6 = or i32 %5, %0
+  ret i32 %6
+}
+
 ; 2 occurrences:
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/intel_gmbus.ll
@@ -247,7 +270,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 4
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -273,8 +296,8 @@ define i32 @func000000000000000e(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %4, %1
-  %6 = or i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

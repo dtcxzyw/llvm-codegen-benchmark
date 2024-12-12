@@ -1,10 +1,53 @@
 
-%"class.std::function.2521740" = type { %"class.std::_Function_base.2521741", ptr }
-%"class.std::_Function_base.2521741" = type { %"union.std::_Any_data.2521742", ptr }
-%"union.std::_Any_data.2521742" = type { %"union.std::_Nocopy_types.2521743" }
-%"union.std::_Nocopy_types.2521743" = type { { i64, i64 } }
+%"class.std::function.2636149" = type { %"class.std::_Function_base.2636150", ptr }
+%"class.std::_Function_base.2636150" = type { %"union.std::_Any_data.2636151", ptr }
+%"union.std::_Any_data.2636151" = type { %"union.std::_Nocopy_types.2636152" }
+%"union.std::_Nocopy_types.2636152" = type { { i64, i64 } }
+%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137949" = type { i16, [6 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3137948" = type { i8, [7 x i8] }
+%"class.clang::Qualifiers.3335873" = type { i64 }
+%"class.clang::FunctionEffect.3335875" = type { i8 }
 
-; 121 occurrences:
+; 28 occurrences:
+; mold/optimized/main.cc.ALPHA.cc.ll
+; mold/optimized/main.cc.ARM32.cc.ll
+; mold/optimized/main.cc.ARM64.cc.ll
+; mold/optimized/main.cc.I386.cc.ll
+; mold/optimized/main.cc.LOONGARCH32.cc.ll
+; mold/optimized/main.cc.LOONGARCH64.cc.ll
+; mold/optimized/main.cc.M68K.cc.ll
+; mold/optimized/main.cc.PPC32.cc.ll
+; mold/optimized/main.cc.PPC64V1.cc.ll
+; mold/optimized/main.cc.PPC64V2.cc.ll
+; mold/optimized/main.cc.RV32BE.cc.ll
+; mold/optimized/main.cc.RV32LE.cc.ll
+; mold/optimized/main.cc.RV64BE.cc.ll
+; mold/optimized/main.cc.RV64LE.cc.ll
+; mold/optimized/main.cc.S390X.cc.ll
+; mold/optimized/main.cc.SH4.cc.ll
+; mold/optimized/main.cc.SPARC64.cc.ll
+; mold/optimized/main.cc.X86_64.cc.ll
+; openusd/optimized/changeManager.cpp.ll
+; openusd/optimized/dirtyList.cpp.ll
+; openusd/optimized/primTypeIndex.cpp.ll
+; openusd/optimized/registryManager.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/resolver.cpp.ll
+; openusd/optimized/stageCacheContext.cpp.ll
+; openusd/optimized/usdzResolver.cpp.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -2
+  %4 = inttoptr i64 %1 to ptr
+  %5 = getelementptr nusw %"class.std::function.2636149", ptr %4, i64 %3
+  %6 = getelementptr nusw %"class.std::function.2636149", ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 92 occurrences:
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -97,42 +140,25 @@
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; mold/optimized/main.cc.ALPHA.cc.ll
-; mold/optimized/main.cc.ARM32.cc.ll
-; mold/optimized/main.cc.ARM64.cc.ll
-; mold/optimized/main.cc.I386.cc.ll
-; mold/optimized/main.cc.LOONGARCH32.cc.ll
-; mold/optimized/main.cc.LOONGARCH64.cc.ll
-; mold/optimized/main.cc.M68K.cc.ll
-; mold/optimized/main.cc.PPC32.cc.ll
-; mold/optimized/main.cc.PPC64V1.cc.ll
-; mold/optimized/main.cc.PPC64V2.cc.ll
-; mold/optimized/main.cc.RV32BE.cc.ll
-; mold/optimized/main.cc.RV32LE.cc.ll
-; mold/optimized/main.cc.RV64BE.cc.ll
-; mold/optimized/main.cc.RV64LE.cc.ll
-; mold/optimized/main.cc.S390X.cc.ll
-; mold/optimized/main.cc.SH4.cc.ll
-; mold/optimized/main.cc.SPARC64.cc.ll
-; mold/optimized/main.cc.X86_64.cc.ll
-; opencv/optimized/bilateral_filter.dispatch.cpp.ll
-; openusd/optimized/changeManager.cpp.ll
-; openusd/optimized/dirtyList.cpp.ll
-; openusd/optimized/primTypeIndex.cpp.ll
-; openusd/optimized/registryManager.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/resolver.cpp.ll
-; openusd/optimized/stageCacheContext.cpp.ll
-; openusd/optimized/usdzResolver.cpp.ll
-; openvdb/optimized/LevelSetSphere.cc.ll
-; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -2
+  %3 = and i64 %2, 1
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw %"class.std::function.2521740", ptr %4, i64 %3
-  %6 = getelementptr nusw %"class.std::function.2521740", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137949", ptr %4, i64 %3
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3137948", ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; llvm/optimized/TypePrinter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 1
+  %4 = inttoptr i64 %1 to ptr
+  %5 = getelementptr nusw nuw %"class.clang::Qualifiers.3335873", ptr %4, i64 %3
+  %6 = getelementptr nusw %"class.clang::FunctionEffect.3335875", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -148,6 +174,18 @@ entry:
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/bilateral_filter.dispatch.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -16
+  %4 = inttoptr i64 %1 to ptr
+  %5 = getelementptr nusw float, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw float, ptr %5, i64 %0
   ret ptr %6
 }
 

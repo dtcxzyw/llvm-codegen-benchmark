@@ -15,6 +15,12 @@ func000000000000001d:                   # @func000000000000001d
 	addl	%esi, %eax
 	addl	%edi, %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	leal	12(%rdi), %eax
+	testb	$1, %dl
+	cmovel	%edi, %eax
+	leal	(%rax,%rsi,4), %eax
+	retq
 func0000000000000010:                   # @func0000000000000010
 	leal	208(%rdi), %ecx
 	leal	201(%rdi), %eax

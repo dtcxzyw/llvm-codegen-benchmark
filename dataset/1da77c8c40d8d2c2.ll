@@ -1,5 +1,7 @@
 
-; 27 occurrences:
+; 29 occurrences:
+; boost/optimized/numeric.ll
+; cmake/optimized/cmELF.cxx.ll
 ; cpython/optimized/posixmodule.ll
 ; curl/optimized/libcurl_la-curl_sasl.ll
 ; libevent/optimized/evmap.c.ll
@@ -35,7 +37,8 @@ entry:
   ret i16 %4
 }
 
-; 28 occurrences:
+; 26 occurrences:
+; boost/optimized/numeric.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; libquic/optimized/ssl_lib.c.ll
@@ -44,8 +47,6 @@ entry:
 ; linux/optimized/io_uring.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/nsxfname.ll
-; linux/optimized/swphy.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/DbiStreamBuilder.cpp.ll
@@ -58,7 +59,6 @@ entry:
 ; openmpi/optimized/libmpi_c_profile_la-file_set_view.ll
 ; postgres/optimized/indexcmds.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; qemu/optimized/virtio.c.ll
 ; slurm/optimized/info_job.ll
 ; slurm/optimized/scancel.ll

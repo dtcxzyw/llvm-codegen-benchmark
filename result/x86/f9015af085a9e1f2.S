@@ -1,31 +1,31 @@
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000003f4:                   # @func00000000000003f4
 	shll	$16, %esi
 	shll	$8, %edi
 	orl	%esi, %edi
 	cmpl	$4352, %edi                     # imm = 0x1100
 	setb	%al
 	retq
-func00000000000001f1:                   # @func00000000000001f1
+func00000000000003e1:                   # @func00000000000003e1
 	shll	$16, %esi
 	shll	$8, %edi
 	orl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000178:                   # @func0000000000000178
+func00000000000002e8:                   # @func00000000000002e8
 	shll	$24, %esi
 	shll	$16, %edi
 	orl	%esi, %edi
 	cmpl	$1114112, %edi                  # imm = 0x110000
 	setae	%al
 	retq
-func0000000000000171:                   # @func0000000000000171
+func00000000000002e1:                   # @func00000000000002e1
 	shll	$24, %esi
 	shll	$16, %edi
 	orl	%esi, %edi
 	cmpl	$1668677632, %edi               # imm = 0x63760000
 	sete	%al
 	retq
-func000000000000017c:                   # @func000000000000017c
+func00000000000002ec:                   # @func00000000000002ec
 	shll	$24, %esi
 	shll	$16, %edi
 	orl	%esi, %edi
@@ -36,47 +36,47 @@ func000000000000000a:                   # @func000000000000000a
 	testl	$1073741824, %edi               # imm = 0x40000000
 	sete	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	orl	%esi, %edi
 	testl	$1073741824, %edi               # imm = 0x40000000
 	sete	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	orl	%esi, %edi
 	testl	$1073741824, %edi               # imm = 0x40000000
 	sete	%al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	orl	%esi, %edi
 	testl	$1073741824, %edi               # imm = 0x40000000
 	sete	%al
 	retq
-func00000000000001d1:                   # @func00000000000001d1
+func00000000000003a1:                   # @func00000000000003a1
 	shll	$8, %esi
 	shll	$16, %edi
 	orl	%esi, %edi
 	sete	%al
 	retq
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000003f8:                   # @func00000000000003f8
 	shll	$12, %esi
 	shll	$6, %edi
 	orl	%esi, %edi
 	cmpl	$56320, %edi                    # imm = 0xDC00
 	setae	%al
 	retq
-func0000000000000198:                   # @func0000000000000198
+func0000000000000328:                   # @func0000000000000328
 	shll	$24, %edi
 	leal	(%rdi,%rsi,2), %eax
 	cmpl	$-16777216, %eax                # imm = 0xFF000000
 	setae	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	shll	$24, %esi
 	leal	(%rsi,%rdi,2), %eax
 	cmpl	$-16777216, %eax                # imm = 0xFF000000
 	setae	%al
 	retq
-func0000000000000174:                   # @func0000000000000174
+func00000000000002e4:                   # @func00000000000002e4
 	shll	$24, %esi
 	shll	$16, %edi
 	orl	%esi, %edi

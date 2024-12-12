@@ -18,6 +18,11 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$1000000000, %eax               # imm = 0x3B9ACA00
 	setae	%al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	shrxq	%rsi, %rdi, %rax
+	cmpl	$100000000, %eax                # imm = 0x5F5E100
+	setae	%al
+	retq
 func0000000000000006:                   # @func0000000000000006
 	shrxq	%rsi, %rdi, %rax
 	testl	%eax, %eax

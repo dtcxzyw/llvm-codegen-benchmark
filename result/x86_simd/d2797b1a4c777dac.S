@@ -47,8 +47,8 @@ func0000000000000001:                   # @func0000000000000001
 	vpslld	$8, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
-func0000000000000000:                   # @func0000000000000000
-	vpslld	$4, %ymm2, %ymm2
+func0000000000000009:                   # @func0000000000000009
+	vpslld	$8, %ymm2, %ymm2
 	vextracti128	$1, %ymm0, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm1, %xmm4
@@ -96,7 +96,7 @@ func0000000000000000:                   # @func0000000000000000
 	vinserti128	$1, %xmm3, %ymm0, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000000:                   # @func0000000000000000
 	vpslld	$4, %ymm2, %ymm2
 	vextracti128	$1, %ymm0, %xmm3
 	vpextrd	$1, %xmm3, %eax

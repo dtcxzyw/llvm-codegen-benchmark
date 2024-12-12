@@ -3,7 +3,7 @@
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, ptr %1, ptr %2) #0 {
+define i8 @func0000000000000021(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = or disjoint i8 %0, 4
   %4 = icmp eq ptr %1, %2

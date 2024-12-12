@@ -21,8 +21,20 @@ func0000000000000004:                   # @func0000000000000004
 	vpblendmq	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
 .LCPI4_0:
+	.quad	65535                           # 0xffff
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleuq	.LCPI4_0(%rip){1to4}, %ymm1, %k1
+	vpblendmq	%ymm0, %ymm1, %ymm0 {%k1}
+	retq
+.LCPI5_0:
 	.quad	4                               # 0x4
 func000000000000000a:                   # @func000000000000000a
-	vpcmpgtq	.LCPI4_0(%rip){1to4}, %ymm1, %k1
+	vpcmpgtq	.LCPI5_0(%rip){1to4}, %ymm1, %k1
+	vpblendmq	%ymm0, %ymm1, %ymm0 {%k1}
+	retq
+.LCPI6_0:
+	.quad	4294967296                      # 0x100000000
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuq	.LCPI6_0(%rip){1to4}, %ymm1, %k1
 	vpblendmq	%ymm0, %ymm1, %ymm0 {%k1}
 	retq

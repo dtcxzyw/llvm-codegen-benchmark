@@ -18,17 +18,17 @@ func000000000000000d:                   # @func000000000000000d
 	addl	%esi, %eax
 	imull	%edi, %eax
 	retq
-func000000000000001c:                   # @func000000000000001c
-	movzwl	%dx, %eax
-	addl	%esi, %eax
-	imull	%edi, %eax
-	retq
 func000000000000000c:                   # @func000000000000000c
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	imull	%edi, %eax
 	retq
 func0000000000000011:                   # @func0000000000000011
+	movzwl	%dx, %eax
+	addl	%esi, %eax
+	imull	%edi, %eax
+	retq
+func000000000000001c:                   # @func000000000000001c
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	imull	%edi, %eax

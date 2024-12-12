@@ -1,5 +1,5 @@
 
-; 177 occurrences:
+; 181 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/gzread.c.ll
 ; abc/optimized/nwkMerge.c.ll
@@ -7,6 +7,7 @@
 ; abseil-cpp/optimized/mutex.cc.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; cmake/optimized/archive_read_set_format.c.ll
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
 ; cmake/optimized/gzread.c.ll
 ; cmake/optimized/json_value.cpp.ll
@@ -28,7 +29,6 @@
 ; gromacs/optimized/gmx_mindist.cpp.ll
 ; gromacs/optimized/shellfc.cpp.ll
 ; hdf5/optimized/H5Fint.c.ll
-; hdf5/optimized/H5I.c.ll
 ; hdf5/optimized/H5Lint.c.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
@@ -45,7 +45,6 @@
 ; libwebp/optimized/muxedit.c.ll
 ; lief/optimized/x509_crt.c.ll
 ; linux/optimized/af_unix.ll
-; linux/optimized/akcipher.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/cpuidle.ll
@@ -57,10 +56,8 @@
 ; linux/optimized/hub.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/info.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nexthop.ll
@@ -176,6 +173,13 @@
 ; yosys/optimized/genrtlil.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; z3/optimized/smt_clause.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/cguh9zihnfg4v76y73tdlg6o2.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zlib/optimized/gzread.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, ptr %2) #0 {
@@ -185,9 +189,8 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/index.cpp.ll
-; hdf5/optimized/H5HGdbg.c.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; openusd/optimized/cdef_block.c.ll

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/satProof.c.ll
 ; brotli/optimized/decode.c.ll
@@ -7,7 +7,6 @@
 ; lief/optimized/aes.c.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/intel_color.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/mballoc.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll

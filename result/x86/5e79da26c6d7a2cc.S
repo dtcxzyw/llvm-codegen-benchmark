@@ -54,3 +54,8 @@ func000000000000000b:                   # @func000000000000000b
 	setge	%al
 	negq	%rax
 	retq
+func0000000000000019:                   # @func0000000000000019
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	adcq	$-1, %rax
+	retq

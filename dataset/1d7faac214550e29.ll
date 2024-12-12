@@ -1,8 +1,18 @@
 
-; 51 occurrences:
+; 61 occurrences:
 ; clamav/optimized/chmd.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/json_writer.cpp.ll
+; hermes/optimized/AST2JS.cpp.ll
+; hermes/optimized/BytecodeGenerator.cpp.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/utf_impl.ll
 ; libphonenumber/optimized/unicodetext.cc.ll
@@ -62,9 +72,10 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; re2/optimized/re2.cc.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i8 %1) #0 {

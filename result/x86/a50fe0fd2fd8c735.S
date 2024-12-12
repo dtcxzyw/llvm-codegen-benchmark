@@ -1,28 +1,28 @@
-func0000000000000431:                   # @func0000000000000431
+func0000000000000861:                   # @func0000000000000861
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000501:                   # @func0000000000000501
+func0000000000000a01:                   # @func0000000000000a01
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000401:                   # @func0000000000000401
+func0000000000000801:                   # @func0000000000000801
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000c8a:                   # @func0000000000000c8a
+func000000000000190a:                   # @func000000000000190a
 	addl	$2, %esi
 	decl	%edi
 	cmpl	%esi, %edi
 	setg	%al
 	retq
-func0000000000000c9a:                   # @func0000000000000c9a
+func000000000000192a:                   # @func000000000000192a
 	addl	$2, %esi
 	addl	$-2, %edi
 	cmpl	%esi, %edi
 	setg	%al
 	retq
-func0000000000000c01:                   # @func0000000000000c01
+func0000000000001801:                   # @func0000000000001801
 	addl	$2, %esi
 	cmpl	%edi, %esi
 	sete	%al

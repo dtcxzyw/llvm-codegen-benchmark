@@ -1,6 +1,10 @@
 
-; 61 occurrences:
+; 66 occurrences:
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; casadi/optimized/cvodes.c.ll
 ; darktable/optimized/filtering.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -18,6 +22,7 @@
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/train_share_states.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; nori/optimized/chi2test.cpp.ll

@@ -9,3 +9,8 @@ func0000000000000008:                   # @func0000000000000008
 	addl	%esi, %edi
 	setb	%al
 	retq
+func0000000000000048:                   # @func0000000000000048
+	shll	$4, %edi
+	addl	%esi, %edi
+	setb	%al
+	retq

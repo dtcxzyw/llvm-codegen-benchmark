@@ -4,6 +4,12 @@ func0000000000000040:                   # @func0000000000000040
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
+func0000000000000054:                   # @func0000000000000054
+	shrq	$3, %rdx
+	imull	$-1227133513, %edx, %eax        # imm = 0xB6DB6DB7
+	addl	%edi, %eax
+	addl	%esi, %eax
+	retq
 func0000000000000014:                   # @func0000000000000014
 	movq	%rdx, %rax
 	movabsq	$1403534266930087369, %rcx      # imm = 0x137A5AFAC274C5C9
@@ -12,23 +18,6 @@ func0000000000000014:                   # @func0000000000000014
 	shrq	$63, %rax
 	shrq	$11, %rdx
 	addl	%edx, %eax
-	addl	%edi, %eax
-	addl	%esi, %eax
-	retq
-func0000000000000024:                   # @func0000000000000024
-	movq	%rdi, %rax
-	leal	(%rsi,%rdx), %ecx
-	movabsq	$-7378697629483820647, %rdx     # imm = 0x9999999999999999
-	imulq	%rdx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	shrq	$5, %rdx
-	addl	%edx, %eax
-	addl	%ecx, %eax
-	retq
-func0000000000000054:                   # @func0000000000000054
-	shrq	$3, %rdx
-	imull	$-1227133513, %edx, %eax        # imm = 0xB6DB6DB7
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq

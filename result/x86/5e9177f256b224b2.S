@@ -1,4 +1,4 @@
-func000000000000031c:                   # @func000000000000031c
+func0000000000000c2c:                   # @func0000000000000c2c
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	sete	%cl
@@ -7,7 +7,7 @@ func000000000000031c:                   # @func000000000000031c
 	setne	%al
 	orb	%cl, %al
 	retq
-func000000000000039c:                   # @func000000000000039c
+func0000000000000f2c:                   # @func0000000000000f2c
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setae	%al
@@ -15,7 +15,7 @@ func000000000000039c:                   # @func000000000000039c
 	andl	$1, %esi
 	orb	%sil, %al
 	retq
-func000000000000021c:                   # @func000000000000021c
+func000000000000082c:                   # @func000000000000082c
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	sete	%cl
@@ -24,7 +24,7 @@ func000000000000021c:                   # @func000000000000021c
 	setne	%al
 	orb	%cl, %al
 	retq
-func000000000000011c:                   # @func000000000000011c
+func000000000000042c:                   # @func000000000000042c
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	sete	%cl

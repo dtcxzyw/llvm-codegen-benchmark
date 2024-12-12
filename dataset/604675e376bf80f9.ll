@@ -1,7 +1,8 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/cuddEssent.c.ll
+; boost/optimized/approximately_equals.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_nested_loop_join.cpp.ll
 ; linux/optimized/intel_hotplug.ll

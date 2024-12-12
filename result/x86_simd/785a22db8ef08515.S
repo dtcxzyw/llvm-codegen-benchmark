@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	3067833783                      # 0xb6db6db7
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -13,7 +13,7 @@ func000000000000004a:                   # @func000000000000004a
 	.quad	7905747460161236407             # 0x6db6db6db6db6db7
 .LCPI1_1:
 	.quad	2147483648                      # 0x80000000
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
@@ -23,7 +23,7 @@ func0000000000000046:                   # @func0000000000000046
 	retq
 .LCPI2_0:
 	.long	3435973837                      # 0xcccccccd
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -36,7 +36,7 @@ func0000000000000041:                   # @func0000000000000041
 	.long	3435973837                      # 0xcccccccd
 .LCPI3_1:
 	.long	5                               # 0x5
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -47,7 +47,7 @@ func0000000000000044:                   # @func0000000000000044
 	retq
 .LCPI4_0:
 	.long	1                               # 0x1
-func0000000000000086:                   # @func0000000000000086
+func0000000000000106:                   # @func0000000000000106
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsraq	$63, %ymm0, %ymm1
 	vpsrlq	$62, %ymm1, %ymm1
@@ -62,7 +62,7 @@ func0000000000000086:                   # @func0000000000000086
 	.quad	-3689348814741910323            # 0xcccccccccccccccd
 .LCPI5_1:
 	.quad	4294967294                      # 0xfffffffe
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
 	vpmullq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
@@ -72,7 +72,7 @@ func0000000000000048:                   # @func0000000000000048
 	retq
 .LCPI6_0:
 	.long	2863311531                      # 0xaaaaaaab
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$4, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0

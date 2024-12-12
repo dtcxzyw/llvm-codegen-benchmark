@@ -16,7 +16,7 @@ func000000000000000c:                   # @func000000000000000c
 	.quad	16                              # 0x10
 .LCPI1_1:
 	.quad	8                               # 0x8
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vorpd	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2 {%k1}
@@ -30,7 +30,7 @@ func0000000000000031:                   # @func0000000000000031
 	.quad	15                              # 0xf
 .LCPI2_2:
 	.quad	4                               # 0x4
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vorpd	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2 {%k1}
@@ -42,7 +42,7 @@ func0000000000000038:                   # @func0000000000000038
 	.quad	2                               # 0x2
 .LCPI3_1:
 	.quad	131072                          # 0x20000
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vorpd	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2 {%k1}

@@ -38,11 +38,13 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; linux/optimized/intel_bw.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -72,7 +74,7 @@ define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 3
   %4 = mul i32 %3, %1
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -82,7 +84,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = mul nsw i32 %4, %0
   ret i32 %5
 }
@@ -93,8 +95,8 @@ entry:
 define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = mul nsw i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 

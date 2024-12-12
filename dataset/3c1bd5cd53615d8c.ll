@@ -7,7 +7,7 @@
 ; openjdk/optimized/UnixNativeDispatcher.ll
 ; redis/optimized/ldblib.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i1 %0, i32 %1, ptr %2) #0 {
+define i32 @func0000000000000043(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 8
   %4 = icmp eq ptr %2, null
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/parse.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i1 %0, i32 %1, ptr %2) #0 {
+define i32 @func0000000000000042(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 32
   %4 = icmp eq ptr %2, null

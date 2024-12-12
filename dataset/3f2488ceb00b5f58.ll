@@ -1,5 +1,7 @@
 
-; 24 occurrences:
+; 26 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; graphviz/optimized/arrows.c.ll
 ; ipopt/optimized/IpIpoptAlg.ll

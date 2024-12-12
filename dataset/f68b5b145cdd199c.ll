@@ -5,7 +5,7 @@
 ; luau/optimized/IrRegAllocX64.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -9
   %3 = icmp eq i8 %2, 3
@@ -14,7 +14,7 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -29,12 +29,14 @@ entry:
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; openusd/optimized/path.cpp.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; yoga/optimized/LayoutResults.cpp.ll
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/mbp_term_graph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 4
   %3 = icmp ne i8 %2, 0
@@ -43,12 +45,9 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
-; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
-; gromacs/optimized/dorm2l.cpp.ll
+; 10 occurrences:
 ; gromacs/optimized/dormlq.cpp.ll
 ; gromacs/optimized/dormql.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; gromacs/optimized/sormlq.cpp.ll
 ; gromacs/optimized/sormql.cpp.ll
 ; linux/optimized/namei_msdos.ll
@@ -58,7 +57,7 @@ entry:
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
 ; openjdk/optimized/library_call.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = icmp eq i8 %2, 12
@@ -75,7 +74,7 @@ entry:
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = icmp eq i8 %2, 5
@@ -88,7 +87,7 @@ entry:
 ; softposit-rs/optimized/4x7uq85ym1obejw4.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i8 %0, i8 %1) #0 {
+define i1 @func00000000000000cc(i8 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, %0
   %3 = icmp slt i8 %2, 0

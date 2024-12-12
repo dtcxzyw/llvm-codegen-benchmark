@@ -5,7 +5,8 @@ func0000000000000000:                   # @func0000000000000000
 	cmovel	%ecx, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	movl	%edi, %eax
-	andl	$1, %eax
-	shll	$12, %eax
+	xorl	%eax, %eax
+	testb	$1, %dil
+	sete	%al
+	leal	3(%rax,%rax,8), %eax
 	retq

@@ -4,7 +4,7 @@
 	.long	5                               # 0x5
 .LCPI0_2:
 	.long	128                             # 0x80
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -34,7 +34,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	1                               # 0x1
 .LCPI2_2:
 	.long	64                              # 0x40
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -49,7 +49,7 @@ func0000000000000008:                   # @func0000000000000008
 	.long	1                               # 0x1
 .LCPI3_2:
 	.long	16                              # 0x10
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -64,7 +64,7 @@ func0000000000000038:                   # @func0000000000000038
 	.long	65522                           # 0xfff2
 .LCPI4_2:
 	.long	1048576                         # 0x100000
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -79,7 +79,7 @@ func0000000000000021:                   # @func0000000000000021
 	.long	2                               # 0x2
 .LCPI5_2:
 	.long	2048                            # 0x800
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -92,7 +92,7 @@ func0000000000000034:                   # @func0000000000000034
 	.long	4                               # 0x4
 .LCPI6_1:
 	.long	8                               # 0x8
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1

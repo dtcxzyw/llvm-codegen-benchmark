@@ -1,5 +1,7 @@
 
-; 2 occurrences:
+; 4 occurrences:
+; eastl/optimized/BenchmarkDeque.cpp.ll
+; eastl/optimized/TestDeque.cpp.ll
 ; openjdk/optimized/bitMap.ll
 ; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
 ; Function Attrs: nounwind
@@ -36,24 +38,13 @@ entry:
 }
 
 ; 1 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = lshr exact i64 %2, 3
-  %4 = sub nuw i64 %1, %3
-  %5 = getelementptr i64, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = lshr exact i64 %2, 3
-  %4 = sub nuw i64 %1, %3
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %3 = lshr i64 %2, 1
+  %4 = sub nsw i64 %1, %3
+  %5 = getelementptr nusw { { i64, [1 x i64] }, { { { { ptr, i64 } }, {} }, {} }, i8, [7 x i8] }, ptr %0, i64 %4
   ret ptr %5
 }
 

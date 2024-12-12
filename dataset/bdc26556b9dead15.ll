@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -11,11 +11,10 @@
 ; cpython/optimized/compile.ll
 ; cpython/optimized/formatter_unicode.ll
 ; icu/optimized/icuexportdata.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; slurm/optimized/cgroup_v2.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = select i1 %0, i32 2, i32 %1
   %3 = icmp eq i32 %2, 2

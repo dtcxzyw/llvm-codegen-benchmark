@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/giaAgi.c.ll
@@ -13,7 +13,6 @@
 ; openjdk/optimized/vmatree.ll
 ; openmpi/optimized/libmpi_c_profile_la-type_create_f90_complex.ll
 ; openmpi/optimized/libmpi_c_profile_la-type_create_f90_real.ll
-; qemu/optimized/util_filemonitor-inotify.c.ll
 ; redis/optimized/hyperloglog.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {

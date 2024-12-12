@@ -1,9 +1,9 @@
 
-%struct.TCGTemp.2593549 = type { i48, i64, ptr, i64, ptr, i64, ptr }
-%"class.facebook::velox::CompactDoubleList.2686653" = type { i32, i32, i16, i16 }
-%"struct.zmq::command_t.3263998" = type { ptr, i32, %"union.zmq::command_t::args_t.3263999", [24 x i8] }
-%"union.zmq::command_t::args_t.3263999" = type { %struct.anon.19.3264000 }
-%struct.anon.19.3264000 = type { i64, ptr, ptr }
+%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%"class.facebook::velox::CompactDoubleList.2799404" = type { i32, i32, i16, i16 }
+%"struct.zmq::command_t.3454530" = type { ptr, i32, %"union.zmq::command_t::args_t.3454531", [24 x i8] }
+%"union.zmq::command_t::args_t.3454531" = type { %struct.anon.19.3454532 }
+%struct.anon.19.3454532 = type { i64, ptr, ptr }
 
 ; 4 occurrences:
 ; darktable/optimized/introspection_rgbcurve.c.ll
@@ -28,7 +28,7 @@ entry:
 define i1 @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [512 x %struct.TCGTemp.2593549], ptr %1, i64 0, i64 %3
+  %4 = getelementptr [512 x %struct.TCGTemp.2707225], ptr %1, i64 0, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
@@ -40,10 +40,10 @@ entry:
 ; libzmq/optimized/pipe.cpp.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw [3058 x %"class.facebook::velox::CompactDoubleList.2686653"], ptr %1, i64 0, i64 %3
+  %4 = getelementptr nusw [3058 x %"class.facebook::velox::CompactDoubleList.2799404"], ptr %1, i64 0, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
@@ -53,10 +53,10 @@ entry:
 ; libzmq/optimized/mailbox_safe.cpp.ll
 ; libzmq/optimized/pipe.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000004c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw [16 x %"struct.zmq::command_t.3263998"], ptr %1, i64 0, i64 %3
+  %4 = getelementptr nusw [16 x %"struct.zmq::command_t.3454530"], ptr %1, i64 0, i64 %3
   %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ppucd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw [3 x [4096 x i8]], ptr %1, i64 0, i64 %3

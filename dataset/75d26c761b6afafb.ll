@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -289,7 +290,8 @@ entry:
   ret i128 %6
 }
 
-; 164 occurrences:
+; 165 occurrences:
+; boost/optimized/src.ll
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll

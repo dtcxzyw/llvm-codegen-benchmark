@@ -58,13 +58,9 @@ entry:
   ret i32 %6
 }
 
-; 9 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
+; 5 occurrences:
 ; gromacs/optimized/conversions.cpp.ll
 ; icu/optimized/ucnvmbcs.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; yosys/optimized/equiv_struct.ll
@@ -138,21 +134,9 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; hyperscan/optimized/gtest-all.cc.ll
-; yosys/optimized/xaiger.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = lshr exact i64 %2, 4
-  %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %0, %1
-  %6 = add nsw i32 %5, %4
-  ret i32 %6
-}
-
-; 5 occurrences:
+; 6 occurrences:
 ; llvm/optimized/DeltaTree.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; nori/optimized/textarea.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
@@ -162,6 +146,19 @@ define i32 @func0000000000000025(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
+  %5 = add nsw i32 %0, %1
+  %6 = add nsw i32 %5, %4
+  ret i32 %6
+}
+
+; 2 occurrences:
+; hyperscan/optimized/gtest-all.cc.ll
+; yosys/optimized/xaiger.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000045(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = lshr exact i64 %2, 4
+  %4 = trunc i64 %3 to i32
   %5 = add nsw i32 %0, %1
   %6 = add nsw i32 %5, %4
   ret i32 %6

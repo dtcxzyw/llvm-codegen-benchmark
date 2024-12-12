@@ -239,9 +239,9 @@ entry:
 ; qemu/optimized/disas_riscv.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0) #0 {
+define i32 @func0000000000000029(i32 %0) #0 {
 entry:
-  %1 = icmp ult i32 %0, 2
+  %1 = icmp samesign ult i32 %0, 2
   %2 = select i1 %1, i32 8, i32 16
   %3 = or disjoint i32 %2, %0
   ret i32 %3

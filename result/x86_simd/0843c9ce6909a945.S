@@ -10,7 +10,7 @@
 	.long	536871273                       # 0x20000169
 .LCPI0_5:
 	.long	268435809                       # 0x10000161
-func0000000000000044:                   # @func0000000000000044
+func0000000000000294:                   # @func0000000000000294
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpltd	.LCPI0_1(%rip){1to8}, %ymm0, %k1
 	vpcmpltd	.LCPI0_2(%rip){1to8}, %ymm0, %k2
@@ -24,7 +24,7 @@ func0000000000000044:                   # @func0000000000000044
 	.long	2                               # 0x2
 .LCPI1_2:
 	.long	1                               # 0x1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [3,3,3,3,3,3,3,3]
 	vpand	%ymm1, %ymm0, %ymm2
 	vpbroadcastd	.LCPI1_1(%rip), %ymm3   # ymm3 = [2,2,2,2,2,2,2,2]
@@ -46,7 +46,7 @@ func0000000000000011:                   # @func0000000000000011
 	.long	16384                           # 0x4000
 .LCPI2_5:
 	.long	2                               # 0x2
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm1
 	vpcmpeqd	.LCPI2_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI2_2(%rip), %ymm0   # ymm0 = [3,3,3,3,3,3,3,3]

@@ -8,3 +8,8 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpq	$2, %rsi
+	setae	%al
+	andb	%dil, %al
+	retq

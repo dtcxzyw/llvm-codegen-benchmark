@@ -2,7 +2,7 @@
 	.long	255                             # 0xff
 .LCPI0_1:
 	.quad	16777216                        # 0x1000000
-func0000000000000344:                   # @func0000000000000344
+func0000000000000e94:                   # @func0000000000000e94
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2

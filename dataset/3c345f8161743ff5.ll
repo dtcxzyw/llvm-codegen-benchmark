@@ -23,21 +23,15 @@ entry:
   ret double %4
 }
 
-; 14 occurrences:
+; 8 occurrences:
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; hdf5/optimized/H5Tconv_enum.c.ll
 ; opencv/optimized/lsd.cpp.ll
 ; quantlib/optimized/bivariatestudenttdistribution.ll
 ; redis/optimized/geohash.ll
 ; wireshark/optimized/mcast_stream.c.ll
-; wireshark/optimized/packet-asap.c.ll
-; wireshark/optimized/packet-calcappprotocol.c.ll
 ; wireshark/optimized/packet-componentstatus.c.ll
-; wireshark/optimized/packet-enrp.c.ll
-; wireshark/optimized/packet-fractalgeneratorprotocol.c.ll
 ; wireshark/optimized/packet-netperfmeter.c.ll
-; wireshark/optimized/packet-pingpongprotocol.c.ll
-; wireshark/optimized/packet-scriptingservice.c.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:

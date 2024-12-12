@@ -15,7 +15,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	1073741824                      # 0x40000000
 .LCPI1_1:
 	.long	536870912                       # 0x20000000
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -37,7 +37,7 @@ func0000000000000031:                   # @func0000000000000031
 	.short	4                               # 0x4
 	.short	4                               # 0x4
 	.short	4                               # 0x4
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1

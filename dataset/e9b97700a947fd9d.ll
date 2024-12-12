@@ -6,7 +6,7 @@
 ; php/optimized/zend_API.ll
 ; php/optimized/zend_inheritance.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
@@ -20,7 +20,7 @@ entry:
 ; opencv/optimized/onnx_importer.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0

@@ -9,13 +9,13 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	andl	$7, %esi
-	cmpw	$3, %si
+func0000000000000014:                   # @func0000000000000014
+	andl	$16376, %esi                    # imm = 0x3FF8
+	cmpl	$2008, %esi                     # imm = 0x7D8
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$896, %esi                      # imm = 0x380
 	cmpl	$384, %esi                      # imm = 0x180
 	setae	%al

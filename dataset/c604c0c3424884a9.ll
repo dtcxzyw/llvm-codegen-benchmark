@@ -7,7 +7,7 @@
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sdiv i32 %3, %2
   ret i32 %4
 }
@@ -18,7 +18,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sdiv i32 %3, %2
   ret i32 %4
 }

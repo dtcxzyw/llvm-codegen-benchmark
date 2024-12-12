@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/swap_state.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; luau/optimized/isocline.c.ll
 ; qemu/optimized/source_s_addMagsF16.c.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
 ; spike/optimized/s_addMagsF16.ll

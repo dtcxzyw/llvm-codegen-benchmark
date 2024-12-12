@@ -5,10 +5,10 @@
 ; regex-rs/optimized/11vfjke4utuj478u.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0) #0 {
+define i1 @func0000000000000034(i8 %0) #0 {
 entry:
   %1 = or disjoint i8 %0, 8
-  %2 = icmp ult i8 %1, 10
+  %2 = icmp samesign ult i8 %1, 10
   ret i1 %2
 }
 
@@ -23,8 +23,7 @@ entry:
   ret i1 %2
 }
 
-; 3 occurrences:
-; llvm/optimized/MachOObjectFile.cpp.ll
+; 2 occurrences:
 ; nghttp2/optimized/url_parser.c.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; Function Attrs: nounwind
@@ -83,16 +82,26 @@ entry:
   ret i1 %2
 }
 
+; 1 occurrences:
+; llvm/optimized/MachOObjectFile.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i8 %0) #0 {
+entry:
+  %1 = or i8 %0, -16
+  %2 = icmp samesign ult i8 %1, -2
+  ret i1 %2
+}
+
 ; 4 occurrences:
 ; eastl/optimized/EATextUtil.cpp.ll
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; wireshark/optimized/packet-x25.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0) #0 {
+define i1 @func0000000000000038(i8 %0) #0 {
 entry:
   %1 = or disjoint i8 %0, 48
-  %2 = icmp ugt i8 %1, 57
+  %2 = icmp samesign ugt i8 %1, 57
   ret i1 %2
 }
 

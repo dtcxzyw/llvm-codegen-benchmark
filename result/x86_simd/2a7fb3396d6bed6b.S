@@ -18,7 +18,7 @@
 func000000000000003f:                   # @func000000000000003f
 	vmovdqa	.LCPI0_0(%rip), %xmm3           # xmm3 = [16,0,1,2,17,4,5,6,18,8,9,10,19,12,13,14]
 	vpermi2b	%xmm2, %xmm1, %xmm3
-	vpaddd	%xmm0, %xmm3, %xmm0
+	vpaddd	%xmm3, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI1_0:

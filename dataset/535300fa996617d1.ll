@@ -11,10 +11,10 @@
 ; raylib/optimized/rcore.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {
+define i32 @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = trunc i64 %6 to i32
@@ -39,9 +39,23 @@ entry:
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i64 %0, ptr %1, i64 %2) #0 {
+define i32 @func0000000000000032(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 17179869120
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %5, %0
+  %7 = trunc nuw i64 %6 to i32
+  ret i32 %7
+}
+
+; 2 occurrences:
+; hyperscan/optimized/fdr_compile.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000022(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0

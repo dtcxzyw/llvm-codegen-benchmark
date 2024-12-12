@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
@@ -8,6 +8,7 @@
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll
 ; gromacs/optimized/gmx_dipoles.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; openjdk/optimized/cmscam02.ll
 ; openjdk/optimized/xDirector.ll

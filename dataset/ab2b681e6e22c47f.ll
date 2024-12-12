@@ -32,7 +32,7 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
@@ -41,6 +41,7 @@ entry:
 ; linux/optimized/virtgpu_gem.ll
 ; llvm/optimized/CGObjCGNU.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
+; lvgl/optimized/lv_sdl_window.ll
 ; minetest/optimized/minimap.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; openexr/optimized/parse_header.c.ll

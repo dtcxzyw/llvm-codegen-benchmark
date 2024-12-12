@@ -5,7 +5,7 @@
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000302(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -2
   %3 = icmp ne i64 %2, %0
@@ -131,7 +131,7 @@ entry:
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000122(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000242(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = icmp eq i64 %2, 0
@@ -159,7 +159,7 @@ entry:
 ; folly/optimized/NestedCommandLineApp.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b0(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000150(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = icmp ule i64 %2, %0
@@ -173,7 +173,7 @@ entry:
 ; ropey-rs/optimized/2p9nf7n6i9ycxebu.ll
 ; ropey-rs/optimized/5d7dflnnetgxg8sm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = icmp eq i64 %2, 0
@@ -185,7 +185,7 @@ entry:
 ; 1 occurrences:
 ; ropey-rs/optimized/5d7dflnnetgxg8sm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000842(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = icmp eq i64 %2, 0
@@ -197,7 +197,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/util_vfio-helpers.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000032(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000052(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = icmp uge i64 %2, %0
@@ -209,12 +209,24 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000762(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001ac2(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = icmp sge i64 %2, %0
   %4 = icmp eq i64 %2, 50
   %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/environment.ll
+; Function Attrs: nounwind
+define i1 @func000000000000020a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 2
+  %3 = icmp ule i64 %2, %0
+  %4 = icmp ugt i64 %2, 15
+  %5 = or i1 %3, %4
   ret i1 %5
 }
 

@@ -1,17 +1,21 @@
 func00000000000000a2:                   # @func00000000000000a2
+	movq	%rdx, %rax
 	orq	%r8, %rcx
-	imulq	%rdx, %rsi
-	mulxq	%rdi, %rax, %rax
-	addq	%rsi, %rax
+	movq	%rdi, %rdx
+	mulxq	%rax, %rdx, %rdx
 	imulq	%rdi, %rcx
+	imulq	%rsi, %rax
+	addq	%rdx, %rax
 	addq	%rcx, %rax
 	retq
 func00000000000000aa:                   # @func00000000000000aa
+	movq	%rdx, %rax
 	orq	%r8, %rcx
-	imulq	%rdx, %rsi
-	mulxq	%rdi, %rax, %rax
-	addq	%rsi, %rax
+	movq	%rdi, %rdx
+	mulxq	%rax, %rdx, %rdx
 	imulq	%rdi, %rcx
+	imulq	%rsi, %rax
+	addq	%rdx, %rax
 	addq	%rcx, %rax
 	retq
 func00000000000000ae:                   # @func00000000000000ae
@@ -23,10 +27,12 @@ func00000000000000ae:                   # @func00000000000000ae
 	addq	%rcx, %rax
 	retq
 func0000000000000062:                   # @func0000000000000062
+	movq	%rdx, %rax
 	orq	%r8, %rcx
-	imulq	%rdx, %rsi
-	mulxq	%rdi, %rax, %rax
-	addq	%rsi, %rax
+	movq	%rdi, %rdx
+	mulxq	%rax, %rdx, %rdx
 	imulq	%rdi, %rcx
+	imulq	%rsi, %rax
+	addq	%rdx, %rax
 	addq	%rcx, %rax
 	retq

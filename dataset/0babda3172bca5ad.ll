@@ -1,7 +1,5 @@
 
-; 10 occurrences:
-; gromacs/optimized/dlamrg.cpp.ll
-; gromacs/optimized/slamrg.cpp.ll
+; 8 occurrences:
 ; mitsuba3/optimized/rgb2spec.c.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; wireshark/optimized/packet-kafka.c.ll

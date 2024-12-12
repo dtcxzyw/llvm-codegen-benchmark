@@ -22,5 +22,5 @@ func00000000000000a0:                   # @func00000000000000a0
 	vmv.v.i	v10, 6
 	vmerge.vim	v10, v10, 10, v0
 	vsub.vv	v8, v9, v8
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

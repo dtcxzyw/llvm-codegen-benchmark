@@ -1,10 +1,17 @@
 
-; 13 occurrences:
+; 20 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/giaPat.c.ll
 ; abc/optimized/giaTsim.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/LinkModules.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll

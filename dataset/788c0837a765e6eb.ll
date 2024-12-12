@@ -163,7 +163,7 @@ entry:
   ret i8 %4
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -198,6 +198,7 @@ entry:
 ; yosys/optimized/recover_names.ll
 ; yosys/optimized/test_cell.ll
 ; yosys/optimized/xprop.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:

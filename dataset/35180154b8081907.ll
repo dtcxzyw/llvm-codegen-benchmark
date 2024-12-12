@@ -14,7 +14,7 @@
 ; postgres/optimized/brin_minmax_multi.ll
 ; postgres/optimized/network.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 10
   %3 = select i1 %2, i64 32, i64 64

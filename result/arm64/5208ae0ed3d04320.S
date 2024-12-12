@@ -1,26 +1,16 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	v3.2d, v3.2d, v5.2d
-	add	v2.2d, v2.2d, v4.2d
-	usra	v0.2d, v2.2d, #51
-	usra	v1.2d, v3.2d, #51
-	xtn	v1.2s, v1.2d
-	xtn	v0.2s, v0.2d
-	ushr	v1.2s, v1.2s, #5
-	ushr	v0.2s, v0.2s, #5
-	uzp1	v0.4h, v0.4h, v1.4h
+	add	x8, x1, x2
+	add	x8, x0, x8, lsr #51
+	lsr	x0, x8, #5
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
 func00000000000000d8:                   // @func00000000000000d8
 // %bb.0:                               // %entry
-	add	v3.2d, v3.2d, v5.2d
-	add	v2.2d, v2.2d, v4.2d
-	usra	v0.2d, v2.2d, #32
-	usra	v1.2d, v3.2d, #32
-	xtn	v1.2s, v1.2d
-	xtn	v0.2s, v0.2d
-	ushr	v1.2s, v1.2s, #8
-	ushr	v0.2s, v0.2s, #8
-	uzp1	v0.4h, v0.4h, v1.4h
+	add	x8, x1, x2
+	add	x8, x0, x8, lsr #32
+	lsr	x0, x8, #8
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function

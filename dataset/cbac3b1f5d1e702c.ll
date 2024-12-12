@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
 ; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
 ; wireshark/optimized/packet-opensafety.c.ll

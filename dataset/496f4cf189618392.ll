@@ -1,5 +1,5 @@
 
-; 1738 occurrences:
+; 1756 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -74,6 +74,14 @@
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
 ; bdwgc/optimized/cordxtra.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/archive_exception.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/format_args.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/static_string.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/topology.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -232,7 +240,6 @@
 ; hwloc/optimized/hwloc-ps.ll
 ; hyperscan/optimized/charreach.cpp.ll
 ; hyperscan/optimized/gtest-all.cc.ll
-; hyperscan/optimized/huge.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
@@ -365,6 +372,9 @@
 ; luau/optimized/lstrlib.cpp.ll
 ; luau/optimized/lvmload.cpp.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; lvgl/optimized/lv_refr.ll
 ; meilisearch-rs/optimized/1cgo24wrkn2cjv53.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
@@ -384,7 +394,6 @@
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/archtraits.cpp.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; mitsuba3/optimized/linearcurve.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
@@ -446,7 +455,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -637,8 +645,6 @@
 ; pcg-cpp/optimized/make-partytrick.cpp.ll
 ; pcg-cpp/optimized/use-partytrick.cpp.ll
 ; php/optimized/crypt_blowfish.ll
-; php/optimized/crypt_sha256.ll
-; php/optimized/crypt_sha512.ll
 ; php/optimized/dirstream.ll
 ; php/optimized/hash_gost.ll
 ; php/optimized/hash_snefru.ll
@@ -1720,7 +1726,6 @@
 ; yalantinglibs/optimized/example.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; z3/optimized/euf_etable.cpp.ll
 ; z3/optimized/intblast_solver.cpp.ll
@@ -1733,20 +1738,33 @@
 ; z3/optimized/sat_lut_finder.cpp.ll
 ; z3/optimized/smt_almost_cg_table.cpp.ll
 ; z3/optimized/smt_cg_table.cpp.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/driumlpfhwzx6147be2mcsi4u.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/PerspectiveTransform.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967294
-  %3 = getelementptr nusw [256 x ptr], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [256 x ptr], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
-; 194 occurrences:
+; 192 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; cpython/optimized/_collectionsmodule.ll
 ; cpython/optimized/_ssl.ll
@@ -1801,7 +1819,6 @@ entry:
 ; linux/optimized/libata-sata.ll
 ; linux/optimized/link.ll
 ; linux/optimized/lskcipher.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/memfd.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/mlock.ll
@@ -1889,7 +1906,6 @@ entry:
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
-; qemu/optimized/hw_usb_imx-usb-phy.c.ll
 ; qemu/optimized/io_channel-websock.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
 ; qemu/optimized/migration_vmstate.c.ll
@@ -1946,6 +1962,17 @@ define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 134217727
   %3 = getelementptr [8 x i32], ptr %0, i64 0, i64 %2
+  ret ptr %3
+}
+
+; 2 occurrences:
+; php/optimized/crypt_sha256.ll
+; php/optimized/crypt_sha512.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -128
+  %3 = getelementptr nusw [256 x i8], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 

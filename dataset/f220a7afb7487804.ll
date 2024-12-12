@@ -26,12 +26,12 @@ entry:
 }
 
 ; 1 occurrences:
-; soc-simulator/optimized/verilated.ll
+; boost/optimized/area.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000077(i64 %0) #0 {
+define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = shl i32 %1, 5
+  %2 = shl i32 %1, 3
   ret i32 %2
 }
 

@@ -1,9 +1,9 @@
 
-; 79 occurrences:
+; 80 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaNf.c.ll
-; cmake/optimized/hex.c.ll
+; boost/optimized/gregorian.ll
 ; cpython/optimized/_stat.ll
 ; cpython/optimized/posixmodule.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -75,6 +75,7 @@
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; qemu/optimized/block.c.ll
 ; quickjs/optimized/libbf.ll
+; quickjs/optimized/quickjs.ll
 ; ruby/optimized/date_core.ll
 ; wireshark/optimized/ipaddr.c.ll
 ; wolfssl/optimized/rsa.c.ll
@@ -88,11 +89,36 @@ entry:
   ret i64 %3
 }
 
-; 250 occurrences:
+; 276 occurrences:
+; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/exor.c.ll
+; abc/optimized/extraUtilBitMatrix.c.ll
 ; abc/optimized/fraigUtil.c.ll
+; abc/optimized/ifMan.c.ll
+; abc/optimized/ivyCutTrav.c.ll
+; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/satInter.c.ll
+; arrow/optimized/compare.cc.ll
+; arrow/optimized/int_util.cc.ll
+; arrow/optimized/light_array.cc.ll
+; arrow/optimized/list_util.cc.ll
+; arrow/optimized/row_encoder.cc.ll
+; arrow/optimized/vector_selection_filter_internal.cc.ll
+; arrow/optimized/vector_selection_take_internal.cc.ll
+; boost/optimized/to_chars.ll
+; bullet3/optimized/b3BoundSearchCL.ll
+; bullet3/optimized/b3ConvexHullContact.ll
+; bullet3/optimized/b3FillCL.ll
+; bullet3/optimized/b3GpuGridBroadphase.ll
+; bullet3/optimized/b3GpuJacobiContactSolver.ll
+; bullet3/optimized/b3GpuParallelLinearBvh.ll
+; bullet3/optimized/b3GpuPgsConstraintSolver.ll
+; bullet3/optimized/b3GpuPgsContactSolver.ll
+; bullet3/optimized/b3GpuRaycast.ll
+; bullet3/optimized/b3GpuRigidBodyPipeline.ll
+; bullet3/optimized/b3GpuSapBroadphase.ll
+; bullet3/optimized/b3Solver.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; cpython/optimized/sre.ll
@@ -108,7 +134,9 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; git/optimized/ref-filter.ll
+; graphviz/optimized/neatoinit.c.ll
 ; graphviz/optimized/sfprint.c.ll
+; graphviz/optimized/spring_electrical.c.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
@@ -261,7 +289,6 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
-; qemu/optimized/hw_char_sifive_uart.c.ll
 ; qemu/optimized/hw_display_virtio-gpu-base.c.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -348,13 +375,12 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; libuv/optimized/idna.c.ll
 ; linux/optimized/nf_conntrack_core.ll
-; linux/optimized/nf_nat_sip.ll
 ; node/optimized/idna.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i32 %0) #0 {
+define i64 @func0000000000000030(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 2031616
   %2 = icmp ne i32 %1, 0
@@ -365,10 +391,10 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i32 %0) #0 {
+define i64 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 255
-  %2 = icmp ult i32 %1, 127
+  %2 = icmp samesign ult i32 %1, 127
   %3 = zext i1 %2 to i64
   ret i64 %3
 }

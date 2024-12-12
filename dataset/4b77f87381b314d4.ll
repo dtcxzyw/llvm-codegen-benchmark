@@ -13,7 +13,7 @@ entry:
   ret i32 %5
 }
 
-; 253 occurrences:
+; 250 occurrences:
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; clamav/optimized/bytecode.c.ll
@@ -58,7 +58,6 @@ entry:
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/inline.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/intel_vblank.ll
 ; linux/optimized/mballoc.ll
@@ -85,14 +84,13 @@ entry:
 ; llvm/optimized/SHA256.cpp.ll
 ; llvm/optimized/StackMaps.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; oiio/optimized/farmhash.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlantp.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsptri.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
@@ -241,7 +239,6 @@ entry:
 ; wireshark/optimized/packet-systemd-journal.c.ll
 ; wireshark/optimized/packet-tcpcl.c.ll
 ; wireshark/optimized/packet-tds.c.ll
-; wireshark/optimized/packet-teap.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; wireshark/optimized/packet-tn3270.c.ll
@@ -284,16 +281,15 @@ define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = add nuw i32 %3, 1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; arrow/optimized/tz.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
-; linux/optimized/gso.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openjdk/optimized/ad_x86.ll
@@ -317,18 +313,15 @@ entry:
   ret i32 %5
 }
 
-; 46 occurrences:
+; 44 occurrences:
 ; abc/optimized/cuddApa.c.ll
+; boost/optimized/to_chars.ll
 ; cvc5/optimized/bv_inverter_utils.cpp.ll
 ; git/optimized/xutils.ll
 ; gromacs/optimized/bwlzh.c.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
-; gromacs/optimized/dgetf2.cpp.ll
-; gromacs/optimized/dgetrf.cpp.ll
 ; gromacs/optimized/dlascl.cpp.ll
 ; gromacs/optimized/sbdsdc.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
-; gromacs/optimized/sgetrf.cpp.ll
 ; gromacs/optimized/slascl.cpp.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
@@ -342,6 +335,7 @@ entry:
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlasd2.c.ll
 ; openblas/optimized/dlasd3.c.ll
+; openblas/optimized/dsytf2_rk.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dsytri2x.c.ll
@@ -373,7 +367,7 @@ entry:
   ret i32 %5
 }
 
-; 41 occurrences:
+; 44 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/epd.c.ll
 ; abc/optimized/ioWriteEdgelist.c.ll
@@ -388,6 +382,10 @@ entry:
 ; libquic/optimized/url_parse_file.cc.ll
 ; libwebp/optimized/enc.c.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -397,7 +395,6 @@ entry:
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
@@ -448,7 +445,7 @@ entry:
   ret i32 %5
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; linux/optimized/intel_tv.ll
 ; openmpi/optimized/opal_object.ll
 ; openmpi/optimized/pmix_object.ll
@@ -467,7 +464,6 @@ entry:
 ; wireshark/optimized/packet-mysql.c.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; wireshark/optimized/packet-reload.c.ll
-; wireshark/optimized/packet-sametime.c.ll
 ; wireshark/optimized/packet-srvloc.c.ll
 ; wireshark/optimized/packet-tns.c.ll
 ; wolfssl/optimized/internal.c.ll
@@ -484,16 +480,13 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 8 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; gromacs/optimized/bwlzh.c.ll
-; gromacs/optimized/dlasd6.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
 ; libquic/optimized/url_parse.cc.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlasd7.c.ll
 ; openblas/optimized/dlasyf.c.ll
-; openblas/optimized/dsytf2_rk.c.ll
 ; quantlib/optimized/date.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
@@ -501,7 +494,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add nsw i32 %3, -12
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -516,15 +509,47 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/abcHieNew.c.ll
+; lvgl/optimized/lv_calendar.ll
 ; openspiel/optimized/SolverIF.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, -63
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
+  ret i32 %5
+}
+
+; 8 occurrences:
+; boost/optimized/src.ll
+; wireshark/optimized/packet-cip.c.ll
+; wireshark/optimized/packet-dcp-etsi.c.ll
+; wireshark/optimized/packet-messageanalyzer.c.ll
+; wireshark/optimized/packet-mux27010.c.ll
+; wireshark/optimized/packet-ncp2222.c.ll
+; wireshark/optimized/packet-netmon.c.ll
+; wireshark/optimized/packet-zbee-zdp-management.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = add nuw nsw i32 %3, -56613888
+  %5 = add i32 %4, %0
+  ret i32 %5
+}
+
+; 3 occurrences:
+; boost/optimized/src.ll
+; clamav/optimized/pe.c.ll
+; wolfssl/optimized/asn.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = add nuw nsw i32 %3, -56613888
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -537,28 +562,13 @@ define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = add nsw i32 %3, -48
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 2 occurrences:
-; clamav/optimized/pe.c.ll
-; wolfssl/optimized/asn.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %1, %2
-  %4 = add nuw nsw i32 %3, 133
-  %5 = add i32 %4, %0
-  ret i32 %5
-}
-
-; 7 occurrences:
-; gromacs/optimized/dlasd6.cpp.ll
+; 4 occurrences:
 ; gromacs/optimized/dlasd7.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
 ; gromacs/optimized/slasd7.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; recastnavigation/optimized/imgui.cpp.ll
 ; wolfssl/optimized/api.c.ll
 ; Function Attrs: nounwind
@@ -581,61 +591,6 @@ define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nuw i32 %3, 1
-  %5 = add i32 %4, %0
-  ret i32 %5
-}
-
-; 2 occurrences:
-; gromacs/optimized/dlasd1.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000002d(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw i32 %1, %2
-  %4 = add nuw nsw i32 %3, 1
-  %5 = add nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 2 occurrences:
-; gromacs/optimized/dlasd1.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw i32 %1, %2
-  %4 = add i32 %3, 2
-  %5 = add nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 4 occurrences:
-; gromacs/optimized/dlasd0.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
-; openblas/optimized/dlasd0.c.ll
-; openblas/optimized/dlasda.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = add nsw i32 %3, -2
-  %5 = add i32 %4, %0
-  ret i32 %5
-}
-
-; 7 occurrences:
-; wireshark/optimized/packet-cip.c.ll
-; wireshark/optimized/packet-dcp-etsi.c.ll
-; wireshark/optimized/packet-messageanalyzer.c.ll
-; wireshark/optimized/packet-mux27010.c.ll
-; wireshark/optimized/packet-ncp2222.c.ll
-; wireshark/optimized/packet-netmon.c.ll
-; wireshark/optimized/packet-zbee-zdp-management.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = add nuw nsw i32 %3, 30
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -670,7 +625,7 @@ define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nuw nsw i32 %3, 8
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -717,6 +672,18 @@ entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, 1047040
   %5 = add nuw i32 %4, %0
+  ret i32 %5
+}
+
+; 2 occurrences:
+; openblas/optimized/dlasd0.c.ll
+; openblas/optimized/dlasda.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = add nsw i32 %3, -2
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

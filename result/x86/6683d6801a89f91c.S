@@ -26,3 +26,11 @@ func0000000000000004:                   # @func0000000000000004
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	movl	%edx, %eax
+	shrl	$31, %eax
+	addl	%edx, %eax
+	sarl	%eax
+	subl	%eax, %esi
+	leal	(%rsi,%rdi), %eax
+	retq

@@ -15,7 +15,7 @@
 ; qemu/optimized/tcg.c.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp eq i64 %0, 0
@@ -43,7 +43,7 @@ entry:
 ; meshlab/optimized/filter_measure.cpp.ll
 ; quantlib/optimized/bespokecalendar.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = icmp eq i64 %0, 0
@@ -51,7 +51,7 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -62,12 +62,11 @@ entry:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifMan.c.ll
 ; abc/optimized/ifTruth.c.ll
-; postgres/optimized/dynahash.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000054(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = icmp ult i64 %0, 7
+  %3 = icmp samesign ult i64 %0, 7
   %4 = select i1 %3, i32 1, i32 %2
   ret i32 %4
 }
@@ -76,10 +75,10 @@ entry:
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000074(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
-  %3 = icmp ult i64 %0, 7
+  %3 = icmp samesign ult i64 %0, 7
   %4 = select i1 %3, i32 1, i32 %2
   ret i32 %4
 }
@@ -87,11 +86,22 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = icmp eq i64 %0, 0
   %4 = select i1 %3, i32 0, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; postgres/optimized/dynahash.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000044(i64 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 1, %1
+  %3 = icmp ult i64 %0, 2
+  %4 = select i1 %3, i32 1, i32 %2
   ret i32 %4
 }
 

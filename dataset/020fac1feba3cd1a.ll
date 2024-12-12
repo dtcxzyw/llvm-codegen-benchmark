@@ -1,5 +1,5 @@
 
-; 131 occurrences:
+; 130 occurrences:
 ; abc/optimized/giaFront.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; abseil-cpp/optimized/generate_real_test.cc.ll
@@ -56,7 +56,6 @@
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
@@ -226,8 +225,8 @@ entry:
 ; wireshark/optimized/packet-synphasor.c.ll
 ; wireshark/optimized/packet-ulp.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
-; wireshark/optimized/packet-x2ap.c.ll
 ; wireshark/optimized/packet-xnap.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {
 entry:

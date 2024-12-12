@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; cpython/optimized/action_helpers.ll
 ; cpython/optimized/ceval.ll
@@ -7,7 +7,6 @@
 ; cpython/optimized/xmlparse.ll
 ; gromacs/optimized/pme_solve.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
-; libwebp/optimized/huffman_encode_utils.c.ll
 ; linux/optimized/audit_tree.ll
 ; linux/optimized/calibrate.ll
 ; linux/optimized/coredump.ll
@@ -36,12 +35,12 @@
 define i64 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 228 occurrences:
+; 229 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcPart.c.ll
@@ -115,6 +114,7 @@ entry:
 ; abc/optimized/wlcNdr.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/huf_compress.c.ll
@@ -274,7 +274,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -286,12 +286,12 @@ entry:
 define i64 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 97 occurrences:
+; 96 occurrences:
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/arith_ite_utils.cpp.ll
 ; cvc5/optimized/bounded_integers.cpp.ll
@@ -347,7 +347,6 @@ entry:
 ; cvc5/optimized/sep_skolem_emp.cpp.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; cvc5/optimized/single_inv_partition.cpp.ll
-; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/strings_entail.cpp.ll
 ; cvc5/optimized/subs_minimize.cpp.ll
@@ -393,7 +392,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

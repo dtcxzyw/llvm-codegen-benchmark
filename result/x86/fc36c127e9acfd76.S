@@ -13,3 +13,18 @@ func0000000000000011:                   # @func0000000000000011
 	shlb	$7, %al
 	orb	%cl, %al
 	retq
+func0000000000000031:                   # @func0000000000000031
+	movl	%edi, %ecx
+	andb	$127, %cl
+	cmpq	$127, %rdi
+	seta	%al
+	shlb	$7, %al
+	orb	%cl, %al
+	retq
+func00000000000000a1:                   # @func00000000000000a1
+	cmpq	$127, %rdi
+	seta	%al
+	shlb	$7, %al
+	andb	$127, %dil
+	orb	%dil, %al
+	retq

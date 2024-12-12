@@ -1,10 +1,11 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
+; gromacs/optimized/gen_vsite.cpp.ll
 ; gromacs/optimized/gmx_sigeps.cpp.ll
 ; gromacs/optimized/slarrbx.cpp.ll
 ; opencv/optimized/deblurring.cpp.ll

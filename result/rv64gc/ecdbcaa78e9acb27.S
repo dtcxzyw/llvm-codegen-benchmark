@@ -32,3 +32,11 @@ func000000000000001e:                   # @func000000000000001e
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
+func000000000000000c:                   # @func000000000000000c
+	andi	a2, a2, 255
+	slli	a2, a2, 8
+	or	a0, a0, a1
+	or	a0, a0, a2
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret

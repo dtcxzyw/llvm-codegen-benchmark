@@ -44,3 +44,26 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddb	.LCPI1_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
+.LCPI2_0:
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000011:                   # @func0000000000000011
+	vpsubd	%ymm1, %ymm0, %ymm0
+	vpmovdb	%ymm0, %xmm0
+	vpaddb	.LCPI2_0(%rip), %xmm0, %xmm0
+	vzeroupper
+	retq

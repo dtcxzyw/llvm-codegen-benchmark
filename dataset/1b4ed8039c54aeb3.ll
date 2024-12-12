@@ -104,7 +104,7 @@
 define ptr @func0000000000000006(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw [8 x ptr], ptr %0, i64 0, i64 %5
   ret ptr %6
@@ -116,13 +116,13 @@ entry:
 define ptr @func0000000000000002(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw [0 x { i32, i16, i16 }], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
-; 95 occurrences:
+; 94 occurrences:
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/arith_ite_utils.cpp.ll
 ; cvc5/optimized/bounded_integers.cpp.ll
@@ -178,7 +178,6 @@ entry:
 ; cvc5/optimized/sep_skolem_emp.cpp.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; cvc5/optimized/single_inv_partition.cpp.ll
-; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/strings_entail.cpp.ll
 ; cvc5/optimized/subs_minimize.cpp.ll
@@ -222,7 +221,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw [14 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
@@ -234,7 +233,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr [8 x ptr], ptr %0, i64 0, i64 %5
   ret ptr %6

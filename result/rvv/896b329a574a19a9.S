@@ -50,8 +50,9 @@ func0000000000000003:                   # @func0000000000000003
 	vmadd.vv	v8, v10, v12
 	ret
 func0000000000000007:                   # @func0000000000000007
+	li	a0, 80
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v12, 1
+	vmv.v.x	v12, a0
 	vmadd.vv	v8, v10, v12
 	ret
 func0000000000000008:                   # @func0000000000000008

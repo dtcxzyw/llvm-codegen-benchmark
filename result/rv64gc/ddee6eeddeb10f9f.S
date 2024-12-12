@@ -14,7 +14,7 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000020:                   # @func0000000000000020
 	subw	a1, a1, a2
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	addi	a0, a0, 128
 	sraiw	a0, a0, 4
 	ret

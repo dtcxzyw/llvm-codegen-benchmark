@@ -45,12 +45,12 @@
 ; openssl/optimized/libcrypto-lib-ec_mult.ll
 ; openssl/optimized/libcrypto-shlib-ec_mult.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ne ptr %1, null
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -60,7 +60,7 @@ entry:
 ; openmpi/optimized/libmpi_c_profile_la-allreduce_init.ll
 ; openmpi/optimized/libmpi_c_profile_la-iallreduce.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ne ptr %1, null
@@ -72,12 +72,12 @@ entry:
 ; 1 occurrences:
 ; hwloc/optimized/topology-synthetic.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000184(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, null
   %4 = icmp ult ptr %1, %2
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

@@ -16,7 +16,7 @@ entry:
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000401(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 63
   %3 = lshr i64 %2, 6
@@ -30,7 +30,7 @@ entry:
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000406(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 63
   %3 = lshr i64 %2, 6
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/tsgistidx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000601(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000c01(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 17179869176
   %3 = lshr i64 %2, 2
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000606(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000c06(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 17592186040353
   %3 = lshr i64 %2, 12
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000060a(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000c0a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 17592186040353
   %3 = lshr i64 %2, 12

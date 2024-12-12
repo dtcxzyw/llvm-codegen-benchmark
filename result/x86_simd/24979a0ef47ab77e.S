@@ -1,4 +1,14 @@
 .LCPI0_0:
+	.long	32                              # 0x20
+.LCPI0_1:
+	.long	64                              # 0x40
+func0000000000000007:                   # @func0000000000000007
+	vpsrld	$3, %ymm2, %ymm2
+	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
+	vpor	%ymm1, %ymm0, %ymm0
+	vpternlogd	$254, .LCPI0_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
+	retq
+.LCPI1_0:
 	.byte	2                               # 0x2
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
@@ -31,20 +41,10 @@
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.zero	1
-.LCPI0_1:
+.LCPI1_1:
 	.long	4278190080                      # 0xff000000
 func0000000000000006:                   # @func0000000000000006
-	vpshufb	.LCPI0_0(%rip), %ymm2, %ymm2    # ymm2 = ymm2[2],zero,zero,ymm2[u,6],zero,zero,ymm2[u,10],zero,zero,ymm2[u,14],zero,zero,ymm2[u,18],zero,zero,ymm2[u,22],zero,zero,ymm2[u,26],zero,zero,ymm2[u,30],zero,zero,ymm2[u]
-	vpor	%ymm1, %ymm0, %ymm0
-	vpternlogd	$254, .LCPI0_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
-	retq
-.LCPI1_0:
-	.long	26                              # 0x1a
-.LCPI1_1:
-	.long	512                             # 0x200
-func0000000000000007:                   # @func0000000000000007
-	vpsrld	$22, %ymm2, %ymm2
-	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
+	vpshufb	.LCPI1_0(%rip), %ymm2, %ymm2    # ymm2 = ymm2[2],zero,zero,ymm2[u,6],zero,zero,ymm2[u,10],zero,zero,ymm2[u,14],zero,zero,ymm2[u,18],zero,zero,ymm2[u,22],zero,zero,ymm2[u,26],zero,zero,ymm2[u,30],zero,zero,ymm2[u]
 	vpor	%ymm1, %ymm0, %ymm0
 	vpternlogd	$254, .LCPI1_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq

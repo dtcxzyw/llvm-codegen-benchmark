@@ -1,14 +1,16 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = lshr i64 %1, 21
   %6 = add nuw nsw i64 %4, %5
   ret i64 %6
@@ -23,7 +25,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = lshr i64 %1, 32
   %6 = add nuw nsw i64 %4, %5
   ret i64 %6
@@ -53,7 +55,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = lshr i64 %1, 12
   %6 = add i64 %4, %5
   ret i64 %6
@@ -65,7 +67,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = lshr exact i64 %1, 2
   %6 = add nuw i64 %4, %5
   ret i64 %6
@@ -77,20 +79,27 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = lshr exact i64 %1, 3
   %6 = add i64 %4, %5
   ret i64 %6
 }
 
-; 2 occurrences:
+; 9 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = lshr i64 %0, 1
   %6 = add i64 %5, %4
   ret i64 %6
@@ -187,7 +196,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = lshr i64 %1, 1
   %6 = add nuw i64 %4, %5
   ret i64 %6

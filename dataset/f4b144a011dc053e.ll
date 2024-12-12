@@ -8,7 +8,7 @@
 ; slurm/optimized/job_scheduler.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 true, i1 %0
@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/openssl-bin-cmp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000186(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 true, i1 %0
@@ -36,7 +36,7 @@ entry:
 ; openssl/optimized/openssl-bin-cmp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 true, i1 %0
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/sslapitest-bin-filterprov.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 true, i1 %0
@@ -65,7 +65,7 @@ entry:
 ; redis/optimized/redis-cli.ll
 ; redis/optimized/script.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 true, i1 %0
@@ -79,7 +79,7 @@ entry:
 ; openjdk/optimized/compile.ll
 ; openusd/optimized/write.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 true, i1 %0
@@ -95,7 +95,7 @@ entry:
 ; linux/optimized/xfrm_state.ll
 ; slurm/optimized/job_scheduler.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 true, i1 %0
@@ -107,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/processor_perflib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 true, i1 %0

@@ -1,18 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
-	movl	%edx, %ecx
-	andl	$1, %esi
-	leaq	(%rsi,%rsi,2), %rax
-	testl	%edi, %edi
-	cmovneq	%rcx, %rax
-	retq
-func0000000000000011:                   # @func0000000000000011
-	movl	%edx, %ecx
-	andl	$1, %esi
-	leaq	(%rsi,%rsi,2), %rax
-	testl	%edi, %edi
-	cmovneq	%rcx, %rax
-	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movl	%edx, %ecx
 	notb	%sil
 	movzbl	%sil, %eax

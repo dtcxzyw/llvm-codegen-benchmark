@@ -16,7 +16,7 @@ define i32 @func0000000000000020(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = sub i32 %0, %5
   ret i32 %6
 }
@@ -86,21 +86,34 @@ define i32 @func0000000000000025(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = sub nsw i32 %0, %5
   ret i32 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
+; opencv/optimized/find_ellipses.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000040(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = sub i32 %0, %5
+  ret i32 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000035(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 48
+  %4 = trunc nuw nsw i64 %3 to i32
+  %5 = add nsw i32 %1, %4
+  %6 = sub nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -111,7 +124,7 @@ define i32 @func0000000000000048(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 1
   %4 = trunc i64 %3 to i32
-  %5 = add nuw i32 %4, %1
+  %5 = add nuw i32 %1, %4
   %6 = sub i32 %0, %5
   ret i32 %6
 }
@@ -124,7 +137,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = sub i32 %0, %5
   ret i32 %6
 }
@@ -136,7 +149,19 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 16
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
+  %6 = sub nsw i32 %0, %5
+  ret i32 %6
+}
+
+; 1 occurrences:
+; freetype/optimized/sdf.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003d(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 16
+  %4 = trunc nuw nsw i64 %3 to i32
+  %5 = add nuw nsw i32 %1, %4
   %6 = sub nsw i32 %0, %5
   ret i32 %6
 }

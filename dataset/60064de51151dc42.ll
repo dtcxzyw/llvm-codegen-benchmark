@@ -1,7 +1,14 @@
 
-; 17 occurrences:
+; 24 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/scpgen.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; cmake/optimized/cmList.cxx.ll
@@ -41,6 +48,21 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
+  %3 = srem i64 %2, %0
+  ret i64 %3
+}
+
+; 6 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/within_pointlike_geometry.ll
+; casadi/optimized/feasiblesqpmethod.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 1
   %3 = srem i64 %2, %0
   ret i64 %3
 }

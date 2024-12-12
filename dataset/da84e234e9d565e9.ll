@@ -41,19 +41,19 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 12
   %3 = lshr i64 %2, 6
   %4 = add i64 %0, 1
-  %5 = icmp ule i64 %4, %3
+  %5 = icmp samesign ule i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/approx.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 3
   %3 = lshr i64 %2, 1

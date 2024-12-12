@@ -23,7 +23,7 @@ entry:
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = icmp eq i32 %1, 0

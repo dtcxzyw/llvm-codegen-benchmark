@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	li	a1, 1
 	subw	a1, a1, a0
 	lui	a0, 699051
@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a1, a1, 1366
 	sltu	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	negw	a0, a0
 	lui	a1, 944962
 	addi	a1, a1, -939
@@ -26,18 +26,4 @@ func000000000000001c:                   # @func000000000000001c
 	lui	a1, 4145
 	addiw	a1, a1, -1765
 	sltu	a0, a1, a0
-	ret
-func0000000000000004:                   # @func0000000000000004
-	li	a1, 1396
-	lui	a2, 31301
-	subw	a1, a1, a0
-	addiw	a0, a2, -917
-	zext.w	a2, a1
-	mul	a0, a0, a2
-	srli	a0, a0, 33
-	sh1add	a2, a0, a0
-	slli	a0, a0, 6
-	add	a0, a0, a2
-	subw	a1, a1, a0
-	sltiu	a0, a1, 34
 	ret

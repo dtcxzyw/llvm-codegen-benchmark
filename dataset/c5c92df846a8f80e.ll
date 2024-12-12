@@ -1,8 +1,9 @@
 
-; 29 occurrences:
+; 31 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/sswSim.c.ll
+; clamav/optimized/cpio.c.ll
 ; clamav/optimized/upx.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; cmake/optimized/archive_write_disk_posix.c.ll
@@ -22,6 +23,7 @@
 ; node/optimized/simdutf.ll
 ; opencv/optimized/subdivision2d.cpp.ll
 ; php/optimized/zend_ssa.ll
+; rocksdb/optimized/filter_policy.cc.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; z3/optimized/sat_elim_eqs.cpp.ll

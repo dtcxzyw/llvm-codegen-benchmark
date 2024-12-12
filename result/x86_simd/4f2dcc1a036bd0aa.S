@@ -9,5 +9,5 @@ func0000000000000005:                   # @func0000000000000005
 	vpsllvd	%ymm1, %ymm2, %ymm1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
 	vpxord	%ymm2, %ymm1, %ymm3 {%k1}
-	vpand	%ymm0, %ymm3, %ymm0
+	vpand	%ymm3, %ymm0, %ymm0
 	retq

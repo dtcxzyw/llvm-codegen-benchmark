@@ -1,20 +1,12 @@
-func0000000000000422:                   # @func0000000000000422
-	addi	a2, a0, 104
+func0000000000000042:                   # @func0000000000000042
+	addi	a2, a0, 4
 	xor	a0, a0, a1
 	xor	a1, a1, a2
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
-	addi	a2, a0, 8
-	xor	a0, a0, a1
-	xor	a1, a1, a2
-	seqz	a1, a1
-	seqz	a0, a0
-	or	a0, a0, a1
-	ret
-func00000000000000b0:                   # @func00000000000000b0
+func0000000000000150:                   # @func0000000000000150
 	lui	a2, 4
 	add	a2, a2, a0
 	sltu	a2, a1, a2

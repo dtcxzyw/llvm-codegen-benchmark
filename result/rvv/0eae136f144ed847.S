@@ -29,3 +29,13 @@ func0000000000000006:                   # @func0000000000000006
 	vmsle.vi	v10, v8, 5
 	vmand.mm	v0, v0, v10
 	ret
+func0000000000000014:                   # @func0000000000000014
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vmsleu.vi	v10, v8, 1
+	vmand.mm	v0, v0, v10
+	ret
+func0000000000000018:                   # @func0000000000000018
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vmsgtu.vi	v10, v8, 7
+	vmand.mm	v0, v0, v10
+	ret

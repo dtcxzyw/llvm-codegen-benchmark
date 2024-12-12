@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
@@ -8,7 +8,6 @@
 ; casadi/optimized/ipqp.cpp.ll
 ; casadi/optimized/kinsol.c.ll
 ; gromacs/optimized/dlaed6.cpp.ll
-; gromacs/optimized/dlarfg.cpp.ll
 ; icu/optimized/units_converter.ll
 ; msdfgen/optimized/sdf-error-estimation.cpp.ll
 ; ocio/optimized/MatrixOp.cpp.ll

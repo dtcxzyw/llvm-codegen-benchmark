@@ -7,7 +7,7 @@ func0000000000000008:                   # @func0000000000000008
 	mulw	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	sext.w	a0, a0
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
@@ -16,7 +16,7 @@ func0000000000000048:                   # @func0000000000000048
 	mulw	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	sext.w	a0, a0
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
@@ -24,22 +24,4 @@ func0000000000000076:                   # @func0000000000000076
 	slli	a2, a1, 2
 	addw	a1, a1, a2
 	slt	a0, a1, a0
-	ret
-func000000000000007a:                   # @func000000000000007a
-	sext.w	a0, a0
-	sraiw	a2, a1, 31
-	xor	a1, a1, a2
-	subw	a1, a1, a2
-	slli	a2, a1, 8
-	subw	a2, a2, a1
-	slt	a0, a0, a2
-	ret
-func0000000000000078:                   # @func0000000000000078
-	sext.w	a0, a0
-	sraiw	a2, a1, 31
-	xor	a1, a1, a2
-	subw	a1, a1, a2
-	slli	a2, a1, 8
-	subw	a2, a2, a1
-	sltu	a0, a0, a2
 	ret

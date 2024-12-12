@@ -41,7 +41,7 @@ entry:
   %3 = and i64 %2, 3689348814741910323
   %4 = and i64 %1, 3689348814741910323
   %5 = add nuw nsw i64 %3, %4
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

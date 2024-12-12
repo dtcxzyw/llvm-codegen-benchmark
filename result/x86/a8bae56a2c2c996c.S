@@ -8,17 +8,17 @@ func0000000000000004:                   # @func0000000000000004
 	shrq	$2, %rdx
 	leaq	(%rdx,%rdi), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	subq	%rsi, %rdx
 	andq	$-8, %rdx
 	leaq	(%rdx,%rdi), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	subq	%rsi, %rdx
 	andq	$-32, %rdx
 	leaq	(%rdx,%rdi), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	subq	%rsi, %rdx
 	shrq	%rdx
 	leaq	(%rdx,%rdi), %rax

@@ -5,7 +5,7 @@
 ; linux/optimized/vfs_inode_dotl.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000042c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -22,7 +22,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_mul.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -40,7 +40,7 @@ entry:
 ; redis/optimized/lgc.ll
 ; zxing/optimized/ReadBarcode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -64,22 +64,9 @@ entry:
 }
 
 ; 1 occurrences:
-; php/optimized/pcre2_compile.ll
-; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or i32 %1, %2
-  %4 = icmp ult i32 %3, 128
-  %5 = and i32 %0, 128
-  %6 = icmp ne i32 %5, 0
-  %7 = and i1 %6, %4
-  ret i1 %7
-}
-
-; 1 occurrences:
 ; assimp/optimized/zip.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000058c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -94,25 +81,12 @@ entry:
 ; slurm/optimized/priority_multifactor.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000581(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 0
   %5 = and i32 %0, 262144
   %6 = icmp eq i32 %5, 0
-  %7 = and i1 %6, %4
-  ret i1 %7
-}
-
-; 1 occurrences:
-; icu/optimized/collationfastlatinbuilder.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %1, %2
-  %4 = icmp eq i32 %3, 0
-  %5 = and i32 %0, 896
-  %6 = icmp ugt i32 %5, 383
   %7 = and i1 %6, %4
   ret i1 %7
 }

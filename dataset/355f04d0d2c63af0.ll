@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; rocksdb/optimized/udt_util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000308(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 6
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   %4 = icmp ult i64 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
@@ -388,10 +388,10 @@ entry:
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   %4 = icmp ult i64 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
@@ -408,10 +408,10 @@ entry:
 ; qemu/optimized/util_range.c.ll
 ; qemu/optimized/util_reserved-region.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = icmp ule i64 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
@@ -420,10 +420,10 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/util_reserved-region.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a2(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000142(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = icmp uge i64 %2, %0
+  %3 = icmp ule i64 %0, %2
   %4 = icmp eq i64 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
@@ -434,10 +434,10 @@ entry:
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; velox/optimized/CoverageUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = icmp eq i64 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
@@ -447,10 +447,10 @@ entry:
 ; delta-rs/optimized/2gd5h5hcnilezwzy.ll
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000202(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   %4 = icmp eq i64 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5

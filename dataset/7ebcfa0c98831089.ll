@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/duration.cc.ll
@@ -16,6 +16,7 @@
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
 ; postgres/optimized/date.ll
 ; velox/optimized/Timestamp.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:

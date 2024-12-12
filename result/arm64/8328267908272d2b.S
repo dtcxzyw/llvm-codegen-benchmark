@@ -1,36 +1,21 @@
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	sshll	v4.2d, v0.2s, #0
-	sshll2	v5.2d, v0.4s, #0
-	cmhi	v3.2d, v3.2d, v5.2d
-	cmhi	v2.2d, v2.2d, v4.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	bif	v0.16b, v1.16b, v2.16b
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
-	ret
-                                        // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	sshll	v4.2d, v0.2s, #0
-	sshll2	v5.2d, v0.4s, #0
-	cmgt	v3.2d, v5.2d, v3.2d
-	cmgt	v2.2d, v4.2d, v2.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	bif	v0.16b, v1.16b, v2.16b
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	cmp	x2, w0, sxtw
+	csel	w8, w0, w1, lt
+	sxtw	x0, w8
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sshll	v4.2d, v0.2s, #0
-	sshll2	v5.2d, v0.4s, #0
-	cmgt	v3.2d, v3.2d, v5.2d
-	cmgt	v2.2d, v2.2d, v4.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	bif	v0.16b, v1.16b, v2.16b
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	cmp	x2, w0, sxtw
+	csel	w8, w0, w1, gt
+	sxtw	x0, w8
+	ret
+                                        // -- End function
+func0000000000000008:                   // @func0000000000000008
+// %bb.0:                               // %entry
+	cmp	x2, w0, sxtw
+	csel	w8, w0, w1, hi
+	sxtw	x0, w8
 	ret
                                         // -- End function

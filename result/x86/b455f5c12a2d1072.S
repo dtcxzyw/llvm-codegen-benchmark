@@ -1,8 +1,8 @@
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000346:                   # @func0000000000000346
 	shrq	$32, %rdx
 	testl	%esi, %esi
 	setg	%cl
-	cmpl	%edi, %edx
-	setg	%al
+	cmpl	%edx, %edi
+	setl	%al
 	andb	%cl, %al
 	retq

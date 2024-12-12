@@ -1,12 +1,11 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/filter.ll
-; linux/optimized/gso.ll
 ; linux/optimized/inet_fragment.ll
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/ip_fragment.ll

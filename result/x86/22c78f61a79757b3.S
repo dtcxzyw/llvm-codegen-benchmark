@@ -8,7 +8,7 @@ func0000000000000028:                   # @func0000000000000028
 	setg	%al
 	andb	%dil, %al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000128:                   # @func0000000000000128
 	testl	%esi, %esi
 	setg	%al
 	andb	%dil, %al

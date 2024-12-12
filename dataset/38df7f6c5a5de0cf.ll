@@ -1,20 +1,4 @@
 
-; 6 occurrences:
-; imgui/optimized/imgui_draw.cpp.ll
-; opencv/optimized/data.cpp.ll
-; opencv/optimized/ts_func.cpp.ll
-; php/optimized/engine_combinedlcg.ll
-; postgres/optimized/generic_xlog.ll
-; slurm/optimized/slurm_protocol_api.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %2, 0
-  %4 = select i1 %3, i32 %1, i32 %2
-  %5 = sub nsw i32 %4, %0
-  ret i32 %5
-}
-
 ; 1 occurrences:
 ; flac/optimized/metadata_iterators.c.ll
 ; Function Attrs: nounwind
@@ -44,6 +28,36 @@ entry:
   ret i32 %5
 }
 
+; 5 occurrences:
+; imgui/optimized/imgui_draw.cpp.ll
+; opencv/optimized/data.cpp.ll
+; opencv/optimized/ts_func.cpp.ll
+; postgres/optimized/generic_xlog.ll
+; slurm/optimized/slurm_protocol_api.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp slt i32 %2, 1
+  %4 = select i1 %3, i32 %1, i32 %2
+  %5 = sub nsw i32 %4, %0
+  ret i32 %5
+}
+
+; 5 occurrences:
+; icu/optimized/mlbe.ll
+; lvgl/optimized/lv_switch.ll
+; nori/optimized/layout.cpp.ll
+; openmpi/optimized/nbc_ibcast.ll
+; xgboost/optimized/gbtree.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, -1
+  %4 = select i1 %3, i32 %1, i32 %2
+  %5 = sub nsw i32 %4, %0
+  ret i32 %5
+}
+
 ; 3 occurrences:
 ; icu/optimized/calendar.ll
 ; icu/optimized/gregocal.ll
@@ -54,20 +68,6 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = sub i32 %4, %0
-  ret i32 %5
-}
-
-; 4 occurrences:
-; icu/optimized/mlbe.ll
-; nori/optimized/layout.cpp.ll
-; openmpi/optimized/nbc_ibcast.ll
-; xgboost/optimized/gbtree.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 %1, i32 %2
-  %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
 

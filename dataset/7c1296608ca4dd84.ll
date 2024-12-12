@@ -1,8 +1,7 @@
 
-; 15 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaMini.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
-; git/optimized/diff.ll
 ; icu/optimized/formatted_string_builder.ll
 ; libwebp/optimized/backward_references_enc.c.ll
 ; linux/optimized/message.ll
@@ -12,7 +11,6 @@
 ; node/optimized/libnode.node_sockaddr.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/tree.cpp.ll
-; postgres/optimized/regcomp.ll
 ; raylib/optimized/rtext.c.ll
 ; ruby/optimized/date_strftime.ll
 ; Function Attrs: nounwind
@@ -39,7 +37,7 @@ entry:
   ret i64 %4
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hermes/optimized/BytecodeProviderFromSrc.cpp.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
@@ -78,7 +76,6 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; openexr/optimized/ImfTiledOutputFile.cpp.ll
 ; postgres/optimized/pg_walsummary.ll
-; postgres/optimized/xlogprefetcher.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:

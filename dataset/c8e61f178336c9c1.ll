@@ -23,12 +23,11 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; ceres/optimized/inner_product_computer.cc.ll
 ; g2o/optimized/solver_cholmod.cpp.ll
 ; g2o/optimized/solver_csparse.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
-; opencv/optimized/version.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -4,7 +4,7 @@
 ; openssl/optimized/libssl-shlib-rec_layer_s3.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 772
   %3 = select i1 %2, i32 771, i32 %1
@@ -18,7 +18,7 @@ entry:
 ; wireshark/optimized/proto.c.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 4, i32 %1

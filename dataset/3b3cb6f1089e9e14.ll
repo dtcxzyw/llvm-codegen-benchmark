@@ -14,10 +14,12 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; rust-analyzer-rs/optimized/2jyyuxshs9vnz9u0.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
+; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
+; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
@@ -36,6 +38,16 @@ entry:
 define i64 @func0000000000000005(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 16
+  %3 = select i1 %0, i64 0, i64 %2
+  ret i64 %3
+}
+
+; 1 occurrences:
+; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
   %3 = select i1 %0, i64 0, i64 %2
   ret i64 %3
 }

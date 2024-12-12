@@ -1,10 +1,9 @@
 
-; 115 occurrences:
+; 114 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/textdet.c.ll
 ; cmake/optimized/RegularExpression.cxx.ll

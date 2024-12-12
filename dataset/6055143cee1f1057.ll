@@ -1,5 +1,5 @@
 
-; 736 occurrences:
+; 716 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/fraSat.c.ll
@@ -19,6 +19,19 @@
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/casadi_low.cpp.ll
 ; casadi/optimized/constant_mx.cpp.ll
@@ -30,7 +43,6 @@
 ; casadi/optimized/idaa.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/im_instantiator.cpp.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; casadi/optimized/linear_interpolant.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll
 ; casadi/optimized/mx_node.cpp.ll
@@ -111,7 +123,6 @@
 ; gromacs/optimized/dlaed6.cpp.ll
 ; gromacs/optimized/dlarrbx.cpp.ll
 ; gromacs/optimized/dlas2.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasd4.cpp.ll
 ; gromacs/optimized/dlasd5.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
@@ -267,20 +278,8 @@
 ; openblas/optimized/dpprfs.c.ll
 ; openblas/optimized/dsbmv_thread_L.c.ll
 ; openblas/optimized/dsbmv_thread_U.c.ll
-; openblas/optimized/dspmv_thread_L.c.ll
-; openblas/optimized/dspmv_thread_U.c.ll
-; openblas/optimized/dspr2_thread_L.c.ll
-; openblas/optimized/dspr2_thread_U.c.ll
-; openblas/optimized/dspr_thread_L.c.ll
-; openblas/optimized/dspr_thread_U.c.ll
 ; openblas/optimized/dsprfs.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsyequb.c.ll
-; openblas/optimized/dsymv_thread_L.c.ll
-; openblas/optimized/dsyr2_thread_L.c.ll
-; openblas/optimized/dsyr2_thread_U.c.ll
-; openblas/optimized/dsyr_thread_L.c.ll
-; openblas/optimized/dsyr_thread_U.c.ll
 ; openblas/optimized/dsyrfs.c.ll
 ; openblas/optimized/dsytf2_rk.c.ll
 ; openblas/optimized/dtbmv_thread_NLN.c.ll
@@ -293,24 +292,7 @@
 ; openblas/optimized/dtbmv_thread_TUU.c.ll
 ; openblas/optimized/dtbrfs.c.ll
 ; openblas/optimized/dtgevc.c.ll
-; openblas/optimized/dtgsna.c.ll
-; openblas/optimized/dtpmv_thread_NLN.c.ll
-; openblas/optimized/dtpmv_thread_NLU.c.ll
-; openblas/optimized/dtpmv_thread_NUN.c.ll
-; openblas/optimized/dtpmv_thread_NUU.c.ll
-; openblas/optimized/dtpmv_thread_TLN.c.ll
-; openblas/optimized/dtpmv_thread_TLU.c.ll
-; openblas/optimized/dtpmv_thread_TUN.c.ll
-; openblas/optimized/dtpmv_thread_TUU.c.ll
 ; openblas/optimized/dtprfs.c.ll
-; openblas/optimized/dtrmv_thread_NLN.c.ll
-; openblas/optimized/dtrmv_thread_NLU.c.ll
-; openblas/optimized/dtrmv_thread_NUN.c.ll
-; openblas/optimized/dtrmv_thread_NUU.c.ll
-; openblas/optimized/dtrmv_thread_TLN.c.ll
-; openblas/optimized/dtrmv_thread_TLU.c.ll
-; openblas/optimized/dtrmv_thread_TUN.c.ll
-; openblas/optimized/dtrmv_thread_TUU.c.ll
 ; openblas/optimized/dtrrfs.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/arithm.dispatch.cpp.ll
@@ -468,11 +450,9 @@
 ; proj/optimized/stere.cpp.ll
 ; proj/optimized/sterea.cpp.ll
 ; proj/optimized/sts.cpp.ll
-; proj/optimized/tcc.cpp.ll
 ; proj/optimized/tcea.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
 ; proj/optimized/vandg.cpp.ll
-; proj/optimized/vertoffset.cpp.ll
 ; qemu/optimized/util_qdist.c.ll
 ; quantlib/optimized/abcdcalibration.ll
 ; quantlib/optimized/abcdmathfunction.ll

@@ -12,7 +12,7 @@ func0000000000000007:                   # @func0000000000000007
 	movl	$16, %eax
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	andq	$-4, %rsi
 	cmpq	$16, %rdi
 	movl	$16, %eax

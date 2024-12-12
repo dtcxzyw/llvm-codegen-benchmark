@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 55 occurrences:
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/saigSwitch.c.ll
@@ -54,6 +54,7 @@
 ; raylib/optimized/rcore.c.ll
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; redis/optimized/defrag.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:

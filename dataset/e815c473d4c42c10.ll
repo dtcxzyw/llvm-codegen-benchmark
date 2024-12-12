@@ -10,7 +10,7 @@
 define ptr @func0000000000000038(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sext i32 %1 to i64
-  %4 = mul nsw i64 %3, %2
+  %4 = mul nsw i64 %2, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
   %7 = getelementptr i8, ptr %5, i64 %6

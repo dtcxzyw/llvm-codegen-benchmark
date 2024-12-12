@@ -1,8 +1,7 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
 ; cpython/optimized/longobject.ll
-; darktable/optimized/jpeg.c.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; hdf5/optimized/h5diff_array.c.ll
 ; hdf5/optimized/h5tools.c.ll
@@ -43,7 +42,7 @@ entry:
   ret i64 %4
 }
 
-; 48 occurrences:
+; 21 occurrences:
 ; abc/optimized/sswClass.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -56,34 +55,7 @@ entry:
 ; meshlab/optimized/solver.cpp.ll
 ; oiio/optimized/exroutput.cpp.ll
 ; openblas/optimized/dimatcopy.c.ll
-; openblas/optimized/lapacke_dgbcon_work.c.ll
-; openblas/optimized/lapacke_dgbtrf_work.c.ll
 ; openblas/optimized/lapacke_dgesdd_work.c.ll
-; openblas/optimized/lapacke_dlacpy_work.c.ll
-; openblas/optimized/lapacke_dlapmr_work.c.ll
-; openblas/optimized/lapacke_dlapmt_work.c.ll
-; openblas/optimized/lapacke_dlarfb_work.c.ll
-; openblas/optimized/lapacke_dlarft_work.c.ll
-; openblas/optimized/lapacke_dlarfx_work.c.ll
-; openblas/optimized/lapacke_dlaset_work.c.ll
-; openblas/optimized/lapacke_dlaswp_work.c.ll
-; openblas/optimized/lapacke_dopmtr_work.c.ll
-; openblas/optimized/lapacke_dpftrs_work.c.ll
-; openblas/optimized/lapacke_dpprfs_work.c.ll
-; openblas/optimized/lapacke_dppsv_work.c.ll
-; openblas/optimized/lapacke_dppsvx_work.c.ll
-; openblas/optimized/lapacke_dpptrs_work.c.ll
-; openblas/optimized/lapacke_dsfrk_work.c.ll
-; openblas/optimized/lapacke_dspevx_work.c.ll
-; openblas/optimized/lapacke_dspgvx_work.c.ll
-; openblas/optimized/lapacke_dsprfs_work.c.ll
-; openblas/optimized/lapacke_dspsv_work.c.ll
-; openblas/optimized/lapacke_dspsvx_work.c.ll
-; openblas/optimized/lapacke_dsptrs_work.c.ll
-; openblas/optimized/lapacke_dtfsm_work.c.ll
-; openblas/optimized/lapacke_dtprfb_work.c.ll
-; openblas/optimized/lapacke_dtprfs_work.c.ll
-; openblas/optimized/lapacke_dtptrs_work.c.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
@@ -110,7 +82,7 @@ define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 2
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   ret i64 %4
 }
 

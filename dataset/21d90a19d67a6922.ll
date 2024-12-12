@@ -35,9 +35,8 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; libquic/optimized/curve25519.c.ll
-; libquic/optimized/d1_lib.c.ll
 ; libquic/optimized/p224-64.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll

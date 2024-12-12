@@ -1,13 +1,18 @@
 
-; 6 occurrences:
+; 11 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; csmith/optimized/VariableSelector.cpp.ll
 ; cvc5/optimized/conjecture_generator.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
 ; wasmedge/optimized/variableInstr.cpp.ll
 ; xgboost/optimized/indexed_recordio_split.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = icmp ult i64 %3, %1
@@ -23,7 +28,7 @@ entry:
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = icmp eq i64 %3, %1

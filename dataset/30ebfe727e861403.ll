@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; eastl/optimized/EARandom.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
@@ -30,11 +30,12 @@
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; tokio-rs/optimized/r9h5225tdo2hxm6.ll
 ; tokio-rs/optimized/rq81hdouiclvz49.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000012(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
@@ -48,7 +49,7 @@ entry:
 define i32 @func000000000000003a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 26
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
@@ -60,7 +61,7 @@ entry:
 define i32 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
@@ -73,7 +74,7 @@ entry:
 define i32 @func000000000000001a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 13
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
@@ -85,7 +86,7 @@ entry:
 define i32 @func000000000000003f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = lshr exact i64 %3, 3
   %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
@@ -104,7 +105,7 @@ entry:
 define i32 @func000000000000003b(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
@@ -119,7 +120,7 @@ entry:
 define i32 @func000000000000001b(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
@@ -132,7 +133,7 @@ entry:
 define i32 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = lshr i64 %3, 10
   %5 = trunc i64 %4 to i32
   ret i32 %5
@@ -144,7 +145,7 @@ entry:
 define i32 @func0000000000000020(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = lshr i64 %3, 1
   %5 = trunc i64 %4 to i32
   ret i32 %5
@@ -156,7 +157,7 @@ entry:
 define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = lshr i64 %3, 14
   %5 = trunc i64 %4 to i32
   ret i32 %5
@@ -172,20 +173,8 @@ entry:
 define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   %4 = lshr exact i64 %3, 16
-  %5 = trunc i64 %4 to i32
-  ret i32 %5
-}
-
-; 1 occurrences:
-; eastl/optimized/EAFixedPoint.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = mul nuw i64 %2, %0
-  %4 = lshr i64 %3, 16
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }

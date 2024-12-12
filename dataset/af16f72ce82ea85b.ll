@@ -6,7 +6,7 @@
 ; openssl/optimized/libssl-lib-ssl_rsa.ll
 ; openssl/optimized/libssl-shlib-ssl_rsa.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b1(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000361(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/crypto_der.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl i64 %1, 8
@@ -33,7 +33,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b8(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000368(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5Odrvinfo.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000328(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5Oattr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000191(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000321(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8

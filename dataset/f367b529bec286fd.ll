@@ -1,7 +1,7 @@
 
-%class.TrafficTypesRowData.3252260 = type <{ i32, [4 x i8], %class.QString.3252249, i8, [7 x i8] }>
-%class.QString.3252249 = type { %struct.QArrayDataPointer.3252250 }
-%struct.QArrayDataPointer.3252250 = type { ptr, ptr, i64 }
+%class.TrafficTypesRowData.3443372 = type <{ i32, [4 x i8], %class.QString.3443361, i8, [7 x i8] }>
+%class.QString.3443361 = type { %struct.QArrayDataPointer.3443362 }
+%struct.QArrayDataPointer.3443362 = type { ptr, ptr, i64 }
 
 ; 13 occurrences:
 ; assimp/optimized/zip.c.ll
@@ -18,18 +18,17 @@
 ; openssl/optimized/libcrypto-lib-mem_sec.ll
 ; openssl/optimized/libcrypto-shlib-mem_sec.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp ult ptr %3, %0
+  %4 = icmp ugt ptr %0, %3
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
 }
 
-; 83 occurrences:
+; 82 occurrences:
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
-; freetype/optimized/sfnt.c.ll
 ; git/optimized/ref-filter.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hyperscan/optimized/mpv.c.ll
@@ -111,10 +110,24 @@ entry:
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i64, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
+  %5 = select i1 %4, ptr %0, ptr %3
+  ret ptr %5
+}
+
+; 4 occurrences:
+; freetype/optimized/sfnt.c.ll
+; hermes/optimized/HadesGC.cpp.ll
+; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll
+; openjdk/optimized/g1RemSet.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw ptr, ptr %1, i64 %2
+  %4 = icmp ult ptr %0, %3
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
 }
@@ -128,8 +141,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.TrafficTypesRowData.3252260, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %3 = getelementptr %class.TrafficTypesRowData.3443372, ptr %1, i64 %2
+  %4 = icmp ult ptr %0, %3
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
 }

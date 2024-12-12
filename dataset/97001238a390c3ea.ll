@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/collect.c.ll
 ; darktable/optimized/filtering.c.ll
 ; hermes/optimized/DependencyExtractor.cpp.ll
@@ -7,7 +7,6 @@
 ; hermes/optimized/JSRegExp.cpp.ll
 ; hermes/optimized/RegexParser.cpp.ll
 ; hermes/optimized/RegexSerialization.cpp.ll
-; nuttx/optimized/lib_gmtimer.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:

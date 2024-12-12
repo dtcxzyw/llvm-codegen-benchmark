@@ -7,6 +7,15 @@ func0000000000000015:                   # @func0000000000000015
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmacc.vx	v8, a0, v10
 	ret
+func0000000000000017:                   # @func0000000000000017
+	li	a0, 60
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmul.vx	v8, v8, a0
+	lui	a0, 1
+	addi	a0, a0, -496
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwmacc.vx	v8, a0, v10
+	ret
 func0000000000000010:                   # @func0000000000000010
 	lui	a0, 59605
 	addiw	a0, a0, -1455

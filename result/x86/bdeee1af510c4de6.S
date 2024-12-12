@@ -26,9 +26,3 @@ func0000000000000008:                   # @func0000000000000008
 	shlxq	%rdi, %rax, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000068:                   # @func0000000000000068
-	movl	$1, %eax
-	shlxq	%rsi, %rax, %rcx
-	shlxq	%rdi, %rax, %rax
-	addq	%rcx, %rax
-	retq

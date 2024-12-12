@@ -1,13 +1,13 @@
 
-%"class.folly::hazptr_detail::shared_head_only_list.2570280" = type <{ %"struct.std::atomic.10.2570277", %"struct.std::atomic.67.2570284", i32, [4 x i8] }>
-%"struct.std::atomic.10.2570277" = type { %"struct.std::__atomic_base.11.2570286" }
-%"struct.std::__atomic_base.11.2570286" = type { i64 }
-%"struct.std::atomic.67.2570284" = type { %"class.std::thread::id.2570285" }
-%"class.std::thread::id.2570285" = type { i64 }
-%struct.OHCIPort.2592826 = type { %struct.USBPort.2592827, i32 }
-%struct.USBPort.2592827 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2592828 }
-%union.anon.5.2592828 = type { %struct.QTailQLink.2592824 }
-%struct.QTailQLink.2592824 = type { ptr, ptr }
+%"class.folly::hazptr_detail::shared_head_only_list.2684645" = type <{ %"struct.std::atomic.10.2684642", %"struct.std::atomic.67.2684649", i32, [4 x i8] }>
+%"struct.std::atomic.10.2684642" = type { %"struct.std::__atomic_base.11.2684651" }
+%"struct.std::__atomic_base.11.2684651" = type { i64 }
+%"struct.std::atomic.67.2684649" = type { %"class.std::thread::id.2684650" }
+%"class.std::thread::id.2684650" = type { i64 }
+%struct.OHCIPort.2706560 = type { %struct.USBPort.2706561, i32 }
+%struct.USBPort.2706561 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2706562 }
+%union.anon.5.2706562 = type { %struct.QTailQLink.2706558 }
+%struct.QTailQLink.2706558 = type { ptr, ptr }
 
 ; 6 occurrences:
 ; darktable/optimized/amaze.cc.ll
@@ -17,16 +17,16 @@
 ; mitsuba3/optimized/zone.cpp.ll
 ; slurm/optimized/cpu_frequency.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 137438953440
   %3 = lshr i64 %2, 5
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw [10 x ptr], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [10 x ptr], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
@@ -49,13 +49,15 @@ entry:
 ; spike/optimized/execute.ll
 ; spike/optimized/flq.ll
 ; spike/optimized/fsq.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = lshr i64 %2, 8
   %4 = and i64 %3, 7
-  %5 = getelementptr nusw [8 x %"class.folly::hazptr_detail::shared_head_only_list.2570280"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [8 x %"class.folly::hazptr_detail::shared_head_only_list.2684645"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -68,7 +70,7 @@ entry:
   %2 = add nuw nsw i64 %1, 17179869100
   %3 = lshr exact i64 %2, 2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr [15 x %struct.OHCIPort.2592826], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [15 x %struct.OHCIPort.2706560], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -92,24 +94,24 @@ entry:
 ; darktable/optimized/amaze.cc.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 34359738320
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw [8 x ptr], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [8 x ptr], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/X86TargetParser.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967295
   %3 = lshr i64 %2, 6
   %4 = and i64 %3, 67108863
-  %5 = getelementptr nusw [2 x i64], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [2 x i64], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

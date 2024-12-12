@@ -1,7 +1,6 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; hermes/optimized/GlobalObject.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; minetest/optimized/l_server.cpp.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll

@@ -1,18 +1,23 @@
 
-; 37 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
 ; libquic/optimized/p224-64.c.ll
 ; lief/optimized/ecp_curves.c.ll
 ; linux/optimized/fault.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/maple_tree.ll
+; linux/optimized/memory.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/set_memory.ll
+; linux/optimized/vsprintf.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/IRTranslator.cpp.ll
@@ -43,7 +48,7 @@ entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 4294967295, i64 -4294967296
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

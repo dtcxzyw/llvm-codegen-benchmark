@@ -1,10 +1,11 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; git/optimized/apply.ll
 ; linux/optimized/flow_dissector.ll
 ; linux/optimized/gre_offload.ll
 ; linux/optimized/ioam6.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
@@ -16,14 +17,13 @@ entry:
   %2 = lshr i16 %1, 10
   %3 = and i16 %2, 60
   %4 = zext nneg i16 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; c3c/optimized/sema_decls.c.ll
 ; linux/optimized/filter.ll
-; linux/optimized/gso.ll
 ; linux/optimized/tcp_input.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
@@ -32,7 +32,7 @@ entry:
   %2 = lshr i16 %1, 5
   %3 = and i16 %2, 63
   %4 = zext nneg i16 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -63,7 +63,7 @@ entry:
   %2 = lshr i16 %1, 8
   %3 = and i16 %2, 1
   %4 = zext nneg i16 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -75,7 +75,7 @@ entry:
   %2 = lshr i16 %1, 1
   %3 = and i16 %2, 31
   %4 = zext nneg i16 %3 to i32
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 

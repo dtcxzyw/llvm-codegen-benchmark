@@ -7,7 +7,7 @@ define i1 @func000000000000000a(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = add i16 %2, -1
-  %4 = icmp slt i16 %3, %0
+  %4 = icmp sgt i16 %0, %3
   ret i1 %4
 }
 
@@ -23,7 +23,7 @@ define i1 @func0000000000000008(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = add i16 %2, -1
-  %4 = icmp ult i16 %3, %0
+  %4 = icmp ugt i16 %0, %3
   ret i1 %4
 }
 
@@ -34,7 +34,7 @@ define i1 @func0000000000000001(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = add i16 %2, -1
-  %4 = icmp eq i16 %3, %0
+  %4 = icmp eq i16 %0, %3
   ret i1 %4
 }
 
@@ -43,33 +43,33 @@ entry:
 ; wireshark/optimized/packet-m3ua.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = add i16 %2, 1
-  %4 = icmp eq i16 %3, %0
+  %4 = icmp eq i16 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; icu/optimized/olsontz.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i16 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = add i16 %2, -1
-  %4 = icmp slt i16 %3, %0
+  %4 = icmp sgt i16 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000188(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = add i16 %2, -175
-  %4 = icmp ult i16 %3, %0
+  %4 = icmp ugt i16 %0, %3
   ret i1 %4
 }
 

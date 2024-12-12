@@ -1,75 +1,75 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	decb	%sil
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	decb	%sil
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000ec:                   # @func00000000000000ec
+func00000000000001cc:                   # @func00000000000001cc
 	decb	%sil
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func00000000000001e4:                   # @func00000000000001e4
+func00000000000003c4:                   # @func00000000000003c4
 	addb	$3, %sil
 	shrxq	%rsi, %rdi, %rax
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	incb	%sil
 	shrxq	%rsi, %rdi, %rax
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	decb	%sil
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	incb	%sil
 	movl	$16, %eax
 	shlxq	%rsi, %rax, %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func00000000000000e6:                   # @func00000000000000e6
+func00000000000001c6:                   # @func00000000000001c6
 	decb	%sil
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
-func00000000000000e8:                   # @func00000000000000e8
+func00000000000001c8:                   # @func00000000000001c8
 	incb	%sil
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
-func00000000000000eb:                   # @func00000000000000eb
+func00000000000001cb:                   # @func00000000000001cb
 	decb	%sil
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
-	cmpq	%rdi, %rax
-	setle	%al
+	cmpq	%rax, %rdi
+	setge	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	addb	$-3, %sil
 	movl	$7, %eax
 	shlxq	%rsi, %rax, %rax
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
 	retq

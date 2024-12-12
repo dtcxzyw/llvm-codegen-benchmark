@@ -25,9 +25,8 @@ entry:
   ret i32 %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; glslang/optimized/Constant.cpp.ll
-; gromacs/optimized/vals16.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openjdk/optimized/ad_x86.ll
 ; Function Attrs: nounwind
@@ -41,11 +40,10 @@ entry:
   ret i32 %7
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/msatClause.c.ll
 ; abc/optimized/rwrLib.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll

@@ -9,7 +9,7 @@
 ; opencv/optimized/reorg_layer.cpp.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %0
   %3 = mul nsw i32 %2, %0

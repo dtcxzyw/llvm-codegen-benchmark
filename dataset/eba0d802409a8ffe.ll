@@ -1,18 +1,10 @@
 
-; 85 occurrences:
-; assimp/optimized/IFCUtil.cpp.ll
+%class.aiVector3t.2828902 = type { double, double, double }
+
+; 59 occurrences:
 ; assimp/optimized/LWOAnimation.cpp.ll
-; cvc5/optimized/word.cpp.ll
+; boost/optimized/calculate_point_order.ll
 ; eastl/optimized/EAString.cpp.ll
-; grpc/optimized/work_serializer.cc.ll
-; hermes/optimized/DependencyExtractor.cpp.ll
-; hermes/optimized/ESTreeIRGen-expr.cpp.ll
-; hermes/optimized/JSLibInternal.cpp.ll
-; hermes/optimized/JSRegExp.cpp.ll
-; hermes/optimized/Operations.cpp.ll
-; hermes/optimized/RegexParser.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
-; hermes/optimized/SemanticValidator.cpp.ll
 ; lightgbm/optimized/network.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
@@ -38,7 +30,6 @@
 ; llvm/optimized/PPDirectives.cpp.ll
 ; llvm/optimized/Pointer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaHLSL.cpp.ll
@@ -70,6 +61,43 @@
 ; pocketpy/optimized/pocketpy.cpp.ll
 ; ruby/optimized/date_strftime.ll
 ; sentencepiece/optimized/sentencepiece_processor.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000144(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -1
+  %5 = icmp ult ptr %1, %4
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 3 occurrences:
+; cpython/optimized/listobject.ll
+; qemu/optimized/util_cutils.c.ll
+; quickjs/optimized/cutils.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -1
+  %5 = icmp ult ptr %1, %4
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 27 occurrences:
+; assimp/optimized/IFCUtil.cpp.ll
+; boost/optimized/area.ll
+; grpc/optimized/work_serializer.cc.ll
+; hermes/optimized/DependencyExtractor.cpp.ll
+; hermes/optimized/ESTreeIRGen-expr.cpp.ll
+; hermes/optimized/JSLibInternal.cpp.ll
+; hermes/optimized/JSRegExp.cpp.ll
+; hermes/optimized/Operations.cpp.ll
+; hermes/optimized/RegexParser.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/SemanticValidator.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; z3/optimized/ast_smt2_pp.cpp.ll
 ; z3/optimized/bool_rewriter.cpp.ll
 ; z3/optimized/bv1_blaster_tactic.cpp.ll
@@ -86,25 +114,11 @@
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/var_subst.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001c4(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -1
-  %5 = icmp ugt ptr %4, %1
-  %6 = select i1 %0, i1 %5, i1 false
-  ret i1 %6
-}
-
-; 3 occurrences:
-; cpython/optimized/listobject.ll
-; qemu/optimized/util_cutils.c.ll
-; quickjs/optimized/cutils.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -1
-  %5 = icmp ugt ptr %4, %1
+  %3 = getelementptr nusw nuw %class.aiVector3t.2828902, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -24
+  %5 = icmp ult ptr %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }

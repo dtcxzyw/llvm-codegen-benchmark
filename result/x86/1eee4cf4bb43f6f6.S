@@ -1,4 +1,4 @@
-func0000000000000aac:                   # @func0000000000000aac
+func0000000000001fec:                   # @func0000000000001fec
 	leaq	(%rdx,%rsi,8), %rax
 	leaq	(%rax,%rsi,8), %rax
 	leaq	(%rax,%rsi,8), %rax
@@ -6,7 +6,7 @@ func0000000000000aac:                   # @func0000000000000aac
 	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func0000000000000aa1:                   # @func0000000000000aa1
+func0000000000001fe1:                   # @func0000000000001fe1
 	leaq	(%rdx,%rsi,8), %rax
 	leaq	(%rax,%rsi,8), %rax
 	leaq	(%rax,%rsi,8), %rax
@@ -14,7 +14,7 @@ func0000000000000aa1:                   # @func0000000000000aa1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000aa4:                   # @func0000000000000aa4
+func0000000000001fe4:                   # @func0000000000001fe4
 	addq	%rsi, %rdx
 	addq	%rsi, %rsi
 	addq	%rdx, %rsi

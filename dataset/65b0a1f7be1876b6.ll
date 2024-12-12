@@ -1,5 +1,5 @@
 
-; 287 occurrences:
+; 296 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
@@ -65,6 +65,7 @@
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_exposure.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_gamma.c.ll
@@ -114,6 +115,7 @@
 ; libjpeg-turbo/optimized/jfdctflt.c.ll
 ; libjpeg-turbo/optimized/jidctflt.c.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -124,7 +126,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -287,6 +288,14 @@
 ; xgboost/optimized/quantile.cc.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

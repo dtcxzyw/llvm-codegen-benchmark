@@ -24,7 +24,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI2_0:
 	.long	192                             # 0xc0
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpsllw	$15, %xmm0, %xmm0
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
@@ -74,7 +74,7 @@ func0000000000000004:                   # @func0000000000000004
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpsllw	$15, %xmm0, %xmm0
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1

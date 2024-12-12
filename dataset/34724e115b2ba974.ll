@@ -1,7 +1,8 @@
 
-; 93 occurrences:
+; 92 occurrences:
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/light_array.cc.ll
+; boost/optimized/gregorian.ll
 ; casadi/optimized/idas.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/parsedate.c.ll
@@ -23,7 +24,6 @@
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; freetype/optimized/raster.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -46,8 +46,8 @@
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; luau/optimized/lgc.cpp.ll
 ; luau/optimized/lgcdebug.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/layerDialog.cpp.ll
-; nuttx/optimized/lib_calendar2utc.c.ll
 ; oiio/optimized/Codec.cpp.ll
 ; oiio/optimized/icooutput.cpp.ll
 ; opencv/optimized/lrn_layer.cpp.ll
@@ -77,7 +77,6 @@
 ; openssl/optimized/libcrypto-shlib-ecp_oct.ll
 ; openssl/optimized/libssl-lib-s3_enc.ll
 ; openssl/optimized/libssl-shlib-s3_enc.ll
-; php/optimized/dow.ll
 ; php/optimized/parse_posix.ll
 ; php/optimized/unixtime2tm.ll
 ; postgres/optimized/brin_minmax_multi.ll
@@ -102,7 +101,7 @@ entry:
   ret i64 %5
 }
 
-; 420 occurrences:
+; 418 occurrences:
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; darktable/optimized/export.c.ll
 ; darktable/optimized/histogram.c.ll
@@ -293,7 +292,6 @@ entry:
 ; opencv/optimized/graph.pb.cc.ll
 ; opencv/optimized/hash_tsdf.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
-; opencv/optimized/samplers.cpp.ll
 ; openjdk/optimized/archiveBuilder.ll
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/archiveHeapWriter.ll
@@ -426,7 +424,6 @@ entry:
 ; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
 ; ozz-animation/optimized/skeleton.cc.ll
 ; php/optimized/ZendAccelerator.ll
-; php/optimized/dow.ll
 ; postgres/optimized/buffile.ll
 ; postgres/optimized/formatting.ll
 ; postgres/optimized/inv_api.ll
@@ -532,7 +529,7 @@ entry:
   ret i64 %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
@@ -547,7 +544,6 @@ entry:
 ; memcached/optimized/memcached_debug-items.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; memcached/optimized/memcached_debug-slabs.ll
-; opencv/optimized/samplers.cpp.ll
 ; openjdk/optimized/zip_util.ll
 ; redis/optimized/ziplist.ll
 ; ruby/optimized/iseq.ll
@@ -609,6 +605,21 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %0, %1
   %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 5 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = add nuw nsw i64 %0, %1
+  %5 = add nuw nsw i64 %4, %3
   ret i64 %5
 }
 

@@ -12,7 +12,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	vmfeq.vv	v16, v8, v12
 	vmxor.mm	v0, v16, v18
 	ret
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmflt.vv	v10, v16, v12
 	vsetvli	zero, zero, e32, m2, ta, ma

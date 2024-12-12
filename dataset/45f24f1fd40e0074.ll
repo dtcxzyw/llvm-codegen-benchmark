@@ -6,7 +6,7 @@
 ; libquic/optimized/deflate.c.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000034(i16 %0) #0 {
+define i16 @func0000000000000064(i16 %0) #0 {
 entry:
   %1 = lshr i16 %0, 7
   %2 = add nuw nsw i16 %1, 256

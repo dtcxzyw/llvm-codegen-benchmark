@@ -1,5 +1,5 @@
 
-; 70 occurrences:
+; 71 occurrences:
 ; clamav/optimized/kwajd.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/if2ip.c.ll
@@ -70,6 +70,7 @@
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000001e(i32 %0, i8 %1) #0 {
 entry:
@@ -121,10 +122,9 @@ entry:
   ret i16 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; node/optimized/simdutf.ll
 ; wireshark/optimized/packet-scsi-mmc.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000003f(i32 %0, i8 %1) #0 {

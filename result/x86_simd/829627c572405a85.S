@@ -11,7 +11,7 @@
 	.long	1                               # 0x1
 .LCPI0_2:
 	.short	32                              # 0x20
-func00000000000000e9:                   # @func00000000000000e9
+func00000000000001e9:                   # @func00000000000001e9
 	vpabsd	%ymm1, %ymm1
 	vpbroadcastw	.LCPI0_2(%rip), %xmm2   # xmm2 = [32,32,32,32,32,32,32,32]
 	vpsubw	%xmm0, %xmm2, %xmm2

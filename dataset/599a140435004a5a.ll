@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000190(i32 %0) #0 {
+define i32 @func0000000000000310(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %2 = icmp ne i32 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; linux/optimized/scsi_error.ll
 ; linux/optimized/sg.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000198(i32 %0) #0 {
+define i32 @func0000000000000318(i32 %0) #0 {
 entry:
   %1 = and i32 %0, -2
   %2 = icmp ne i32 %1, 6
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/arrows.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0) #0 {
+define i32 @func0000000000000058(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 15
   %2 = icmp eq i32 %1, 0

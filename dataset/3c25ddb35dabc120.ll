@@ -1,5 +1,5 @@
 
-; 117 occurrences:
+; 120 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -7,6 +7,7 @@
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ioReadPla.c.ll
 ; abc/optimized/rsbDec6.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/hashtab.c.ll
 ; clamav/optimized/lzwdec.c.ll
 ; clamav/optimized/mpool.c.ll
@@ -117,6 +118,8 @@
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

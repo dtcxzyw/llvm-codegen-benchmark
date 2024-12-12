@@ -1,10 +1,8 @@
 
-; 12 occurrences:
-; abc/optimized/dauDsd.c.ll
+; 10 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifSat.c.ll
-; abc/optimized/lpkMux.c.ll
 ; linux/optimized/cgroup.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; php/optimized/zend_jit.ll
@@ -25,9 +23,9 @@ entry:
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
+; cpython/optimized/io.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; soc-simulator/optimized/sim_mycpu.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/packet-zbee-tlv.c.ll
 ; wireshark/optimized/packet-zbee-zdp.c.ll
 ; Function Attrs: nounwind

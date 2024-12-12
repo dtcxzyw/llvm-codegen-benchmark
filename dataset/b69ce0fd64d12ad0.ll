@@ -1,15 +1,4 @@
 
-; 2 occurrences:
-; just-rs/optimized/53slus9exfz9w045.ll
-; qemu/optimized/system_cpus.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = select i1 %1, i64 %2, i64 1024
-  %4 = icmp eq i64 %3, %0
-  ret i1 %4
-}
-
 ; 6 occurrences:
 ; quantlib/optimized/analyticcevengine.ll
 ; quantlib/optimized/cevrndcalculator.ll
@@ -18,7 +7,7 @@ entry:
 ; quantlib/optimized/squarerootclvmodel.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 %2, i64 0
   %4 = sub nsw i64 %0, %3
@@ -44,7 +33,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 %2, i64 0
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 

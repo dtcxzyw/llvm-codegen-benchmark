@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 23 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
@@ -14,9 +14,7 @@
 ; lief/optimized/SegmentCommand.cpp.ll
 ; lief/optimized/bignum.c.ll
 ; linux/optimized/dm-stats.ll
-; linux/optimized/generic_mpih-add1.ll
 ; linux/optimized/key.ll
-; linux/optimized/mpih-mul.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; openssl/optimized/libssl-lib-quic_rstream.ll
 ; openssl/optimized/libssl-lib-quic_sstream.ll
@@ -53,7 +51,7 @@ entry:
 ; cpython/optimized/crt.ll
 ; spike/optimized/f128_sqrt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = xor i64 %0, -1

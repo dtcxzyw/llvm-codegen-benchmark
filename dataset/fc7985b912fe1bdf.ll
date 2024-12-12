@@ -1,6 +1,5 @@
 
-; 16 occurrences:
-; clamav/optimized/explode.c.ll
+; 15 occurrences:
 ; cmake/optimized/zstd_fast.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; hdf5/optimized/H5HFsection.c.ll
@@ -20,7 +19,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %.neg = add i32 %3, %2
+  %.neg = add i32 %2, %3
   %4 = add i32 %.neg, %0
   ret i32 %4
 }
@@ -31,23 +30,37 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %.neg = add i32 %3, %2
+  %.neg = add i32 %2, %3
   %4 = add i32 %.neg, %0
   ret i32 %4
 }
 
-; 6 occurrences:
+; 2 occurrences:
+; c3c/optimized/llvm_codegen_expr.c.ll
+; clamav/optimized/explode.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = xor i32 %1, -1
+  %.neg = add i32 %2, %3
+  %4 = add i32 %.neg, %0
+  ret i32 %4
+}
+
+; 8 occurrences:
+; boost/optimized/to_chars.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/number_rounding.ll
 ; jq/optimized/decNumber.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
 ; openexr/optimized/ImfOutputFile.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %.neg = add i32 %3, %2
+  %.neg = add i32 %2, %3
   %4 = add i32 %.neg, %0
   ret i32 %4
 }

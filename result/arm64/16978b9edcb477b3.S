@@ -1,9 +1,8 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	cmlt	v1.4s, v0.4s, #0
-	usra	v0.4s, v1.4s, #27
-	sshr	v0.4s, v0.4s, #5
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	add	w8, w0, #31
+	cmp	w0, #0
+	csel	w8, w8, w0, lt
+	sbfx	x0, x8, #5, #27
 	ret
                                         // -- End function

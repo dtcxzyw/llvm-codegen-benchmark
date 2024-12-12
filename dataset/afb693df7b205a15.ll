@@ -12,7 +12,7 @@ entry:
   %2 = trunc nsw i32 %1 to i16
   %3 = sdiv i16 %2, 365
   %4 = sext i16 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = sdiv i16 %2, 400
   %4 = sext i16 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -36,7 +36,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = sdiv i16 %2, 400
   %4 = sext i16 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

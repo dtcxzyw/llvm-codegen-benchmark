@@ -17,3 +17,9 @@ func0000000000000043:                   # @func0000000000000043
 	sbbl	$-1, %edi
 	leal	5(%rdi), %eax
 	retq
+func00000000000000c3:                   # @func00000000000000c3
+	andl	$1, %edi
+	cmpl	$100000, %esi                   # imm = 0x186A0
+	sbbl	$-1, %edi
+	leal	5(%rdi), %eax
+	retq

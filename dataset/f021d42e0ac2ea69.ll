@@ -2,9 +2,9 @@
 ; 9 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; libquic/optimized/div.c.ll
 ; protobuf/optimized/time_util.cc.ll
-; qemu/optimized/target_riscv_m128_helper.c.ll
 ; ruby/optimized/bignum.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll

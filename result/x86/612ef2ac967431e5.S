@@ -1,63 +1,63 @@
-func00000000000001d1:                   # @func00000000000001d1
+func00000000000003a1:                   # @func00000000000003a1
 	testq	%rdx, %rdx
 	movl	$32, %eax
 	cmovneq	%rdx, %rax
 	subq	%rax, %rsi
 	incq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func00000000000001f1:                   # @func00000000000001f1
+func00000000000003e1:                   # @func00000000000003e1
 	testq	%rdx, %rdx
 	movl	$8, %eax
 	cmovneq	%rdx, %rax
 	subq	%rax, %rsi
 	incq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	testq	%rdx, %rdx
 	notq	%rdx
 	movq	$-5, %rax
 	cmovneq	%rdx, %rax
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000341:                   # @func0000000000000341
 	testq	%rdx, %rdx
 	movl	$32, %eax
 	cmovneq	%rdx, %rax
 	subq	%rax, %rsi
 	incq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	testq	%rdx, %rdx
 	movl	$4, %eax
 	cmovneq	%rdx, %rax
 	subq	%rax, %rsi
 	incq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000191:                   # @func0000000000000191
+func0000000000000321:                   # @func0000000000000321
 	testq	%rdx, %rdx
 	movl	$8, %eax
 	cmovneq	%rdx, %rax
 	subq	%rax, %rsi
 	incq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000121:                   # @func0000000000000121
+func0000000000000241:                   # @func0000000000000241
 	testq	%rdx, %rdx
 	movl	$4, %eax
 	cmovneq	%rdx, %rax
 	subq	%rax, %rsi
 	incq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq

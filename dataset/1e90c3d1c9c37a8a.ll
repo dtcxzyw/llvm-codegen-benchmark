@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; box2d/optimized/b2_weld_joint.cpp.ll
 ; bullet3/optimized/b3GjkEpa.ll
@@ -32,6 +32,7 @@
 ; pbrt-v4/optimized/interaction.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 84 occurrences:
 ; abc/optimized/dsdTree.c.ll
 ; abc/optimized/ivyRwr.c.ll
 ; abc/optimized/ivySeq.c.ll
@@ -79,7 +79,6 @@
 ; postgres/optimized/typecmds.ll
 ; qemu/optimized/audio_mixeng.c.ll
 ; redis/optimized/lparser.ll
-; ruby/optimized/closure.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/io_buffer.ll
 ; ruby/optimized/memory_view.ll

@@ -39,9 +39,10 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; libpng/optimized/pngread.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; Function Attrs: nounwind
@@ -54,6 +55,21 @@ entry:
   ret i32 %6
 }
 
+; 4 occurrences:
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000055(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 10, %1
+  %4 = mul nsw i32 %2, %3
+  %5 = mul nsw i32 %0, %1
+  %6 = add nsw i32 %5, %4
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; openusd/optimized/blend_a64_mask.c.ll
 ; Function Attrs: nounwind
@@ -62,19 +78,6 @@ entry:
   %3 = sub nsw i32 64, %1
   %4 = mul nsw i32 %3, %0
   %5 = mul nuw nsw i32 %1, %2
-  %6 = add nsw i32 %4, %5
-  ret i32 %6
-}
-
-; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000055(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 16384, %2
-  %4 = mul nsw i32 %3, %0
-  %5 = mul nsw i32 %1, %2
   %6 = add nsw i32 %4, %5
   ret i32 %6
 }

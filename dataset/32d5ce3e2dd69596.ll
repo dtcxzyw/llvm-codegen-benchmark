@@ -14,7 +14,7 @@
 define double @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sitofp i32 %3 to double
   ret double %4
 }
@@ -28,7 +28,7 @@ entry:
 define double @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sitofp i32 %3 to double
   ret double %4
 }

@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; cpython/optimized/floatobject.ll
 ; darktable/optimized/introspection_clahe.c.ll
@@ -12,7 +12,6 @@
 ; minetest/optimized/imagefilters.cpp.ll
 ; openjdk/optimized/threadLocalAllocBuffer.ll
 ; postgres/optimized/selfuncs.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; wireshark/optimized/io_graph_item.c.ll
 ; wireshark/optimized/packet-mq-pcf.c.ll
 ; wireshark/optimized/packet-uftp4.c.ll

@@ -25,7 +25,7 @@ entry:
   ret i32 %5
 }
 
-; 962 occurrences:
+; 961 occurrences:
 ; clamav/optimized/hash.c.ll
 ; clamav/optimized/hashtab.c.ll
 ; git/optimized/diff-delta.ll
@@ -660,7 +660,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll

@@ -23,7 +23,7 @@
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; yosys/optimized/cxxrtl_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
   %2 = sdiv exact i64 %1, 48

@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func000000000000005e:                   # @func000000000000005e
 	decl	%edx
 	imull	%esi, %edx
 	movslq	%edx, %rax
@@ -15,12 +15,6 @@ func0000000000000050:                   # @func0000000000000050
 	imull	%esi, %edx
 	movslq	%edx, %rax
 	leaq	8(%rdi,%rax), %rax
-	retq
-func0000000000000000:                   # @func0000000000000000
-	incl	%edx
-	imull	%esi, %edx
-	movslq	%edx, %rax
-	leaq	8(%rdi,%rax,8), %rax
 	retq
 func00000000000000d0:                   # @func00000000000000d0
 	incl	%edx

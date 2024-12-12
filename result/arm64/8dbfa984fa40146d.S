@@ -1,26 +1,8 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	sshll	v4.2d, v2.2s, #0
-	dup	v3.2d, x8
-	mov	x8, v4.d[1]
-	fmov	x10, d4
-	add	v0.2d, v0.2d, v3.2d
-	add	v1.2d, v1.2d, v3.2d
-	mov	x9, v0.d[1]
-	sdiv	x8, x9, x8
-	fmov	x9, d0
-	sshll2	v0.2d, v2.4s, #0
-	fmov	x11, d0
-	mov	x12, v0.d[1]
-	sdiv	x9, x9, x10
-	fmov	x10, d1
-	sdiv	x10, x10, x11
-	mov	x11, v1.d[1]
-	fmov	d0, x9
-	mov	v0.d[1], x8
-	sdiv	x11, x11, x12
-	fmov	d1, x10
-	mov	v1.d[1], x11
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	add	x9, x0, #1
+	sdiv	x0, x9, x8
 	ret
                                         // -- End function

@@ -32,26 +32,41 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; ruby/optimized/string.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = icmp ne i64 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
+entry:
+  %2 = freeze i64 %1
+  %3 = icmp ult i64 %2, 9
+  %4 = or i1 %0, %3
+  ret i1 %4
+}
+
+; 4 occurrences:
+; hdf5/optimized/H5Shyper.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; redis/optimized/rio.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = icmp ugt i64 %2, 128
-  %4 = or i1 %3, %0
+  %3 = icmp ugt i64 %2, 4294967295
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

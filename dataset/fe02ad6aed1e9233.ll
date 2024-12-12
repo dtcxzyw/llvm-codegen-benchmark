@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; libquic/optimized/spdy_framer.cc.ll
@@ -10,6 +10,7 @@
 ; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i1 %2) #0 {
 entry:
@@ -19,7 +20,8 @@ entry:
   ret i1 %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
+; boost/optimized/alloc_lib.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseables.cpp.ll
 ; hermes/optimized/ItaniumDemangle.cpp.ll
@@ -84,31 +86,18 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 3, i64 1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ugt i64 %4, %0
-  ret i1 %5
-}
-
-; 3 occurrences:
-; git/optimized/pack-redundant.ll
-; protobuf/optimized/generated_enum_util.cc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %2, i64 36, i64 32
-  %4 = add nuw i64 %3, %1
-  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; git/optimized/xemit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 -1, i64 1
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp ne i64 %4, %0
   ret i1 %5
 }
@@ -119,10 +108,10 @@ entry:
 ; spike/optimized/s_mulAddF128.ll
 ; spike/optimized/s_mulAddF32.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 -16383, i64 -16382
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
@@ -130,10 +119,10 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 3, i64 4
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
@@ -144,8 +133,20 @@ entry:
 define i1 @func0000000000000005(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 4, i64 7
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ule i64 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; opencv/optimized/tflite_importer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 2, i64 1
+  %4 = add nuw nsw i64 %3, %1
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -153,10 +154,10 @@ entry:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 4, i64 0
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -164,35 +165,34 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/restoration.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 1, i64 2
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/zstd_compress_superblock.c.ll
-; opencv/optimized/tflite_importer.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 3, i64 2
   %4 = add nuw nsw i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp samesign ult i64 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/truncate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 1, i64 2
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
@@ -200,11 +200,23 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/evdev.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 24, i64 16
   %4 = add nsw i64 %3, %1
   %5 = icmp ugt i64 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; protobuf/optimized/generated_enum_util.cc.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 1, i64 2
+  %4 = add nuw i64 %3, %1
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 

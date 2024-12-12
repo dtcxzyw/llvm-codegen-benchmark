@@ -12,8 +12,7 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; linux/optimized/8250_lpss.ll
+; 2 occurrences:
 ; linux/optimized/gen6_ppgtt.ll
 ; spike/optimized/disasm.ll
 ; Function Attrs: nounwind

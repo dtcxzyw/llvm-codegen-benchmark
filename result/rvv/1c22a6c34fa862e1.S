@@ -7,5 +7,5 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 895
 	slli	a0, a0, 24
 	vmul.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

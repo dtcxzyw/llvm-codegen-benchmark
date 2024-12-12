@@ -29,18 +29,6 @@ entry:
 }
 
 ; 1 occurrences:
-; libquic/optimized/x_long.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i8 %1) #0 {
-entry:
-  %2 = xor i8 %1, -1
-  %3 = zext i8 %2 to i64
-  %4 = shl i64 %0, 8
-  %5 = or disjoint i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
 ; linux/optimized/nls_base.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i8 %1) #0 {

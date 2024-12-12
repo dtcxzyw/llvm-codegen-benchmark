@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; openjdk/optimized/Ushort4444Argb.ll
 ; ruby/optimized/time.ll
+; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
@@ -59,7 +60,7 @@ define i64 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = mul nuw i32 %2, 17
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

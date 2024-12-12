@@ -1,50 +1,50 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000025:                   # @func0000000000000025
 	orl	%edx, %esi
-	cmpw	%di, %si
-	setae	%al
+	cmpw	%si, %di
+	setbe	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	orl	%edx, %esi
-	cmpw	%di, %si
-	setb	%al
+	cmpw	%si, %di
+	seta	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	orl	%edx, %esi
-	cmpw	%di, %si
-	setl	%al
-	retq
-func0000000000000016:                   # @func0000000000000016
-	orl	%edx, %esi
-	cmpw	%di, %si
+	cmpw	%si, %di
 	setg	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000026:                   # @func0000000000000026
 	orl	%edx, %esi
-	cmpw	%di, %si
+	cmpw	%si, %di
+	setl	%al
+	retq
+func0000000000000021:                   # @func0000000000000021
+	orl	%edx, %esi
+	cmpw	%si, %di
 	sete	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	orl	%edx, %esi
-	cmpw	%di, %si
-	seta	%al
+	cmpw	%si, %di
+	setb	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	orl	%edx, %esi
-	cmpw	%di, %si
+	cmpw	%si, %di
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	orl	%edx, %esi
-	cmpw	%di, %si
+	cmpw	%si, %di
 	setne	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	orl	%edx, %esi
-	cmpw	%di, %si
+	cmpw	%si, %di
 	setne	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	orl	%edx, %esi
-	cmpw	%di, %si
-	setb	%al
+	cmpw	%si, %di
+	seta	%al
 	retq

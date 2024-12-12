@@ -63,6 +63,11 @@ func0000000000000004:                   # @func0000000000000004
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func000000000000000d:                   # @func000000000000000d
+	add.uw	a1, a2, a1
+	slli	a0, a0, 48
+	or	a0, a0, a1
+	ret
 func0000000000000009:                   # @func0000000000000009
 	slli	a2, a2, 34
 	slli	a0, a0, 32
@@ -75,13 +80,6 @@ func0000000000000007:                   # @func0000000000000007
 	or	a0, a0, a2
 	slli	a1, a1, 13
 	or	a0, a0, a1
-	ret
-func000000000000000d:                   # @func000000000000000d
-	srliw	a2, a2, 16
-	slli	a0, a0, 32
-	slli	a2, a2, 16
-	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 func0000000000000001:                   # @func0000000000000001
 	lui	a3, 32

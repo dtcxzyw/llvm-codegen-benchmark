@@ -1,13 +1,12 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; hermes/optimized/Operations.cpp.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/intel_cdclk.ll
 ; llvm/optimized/JSONNodeDumper.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
-; llvm/optimized/TypePrinter.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; proxygen/optimized/RFC2616.cpp.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; Function Attrs: nounwind

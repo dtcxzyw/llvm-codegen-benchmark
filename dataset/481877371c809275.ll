@@ -1,16 +1,13 @@
 
-%"class.llvm::Use.2946688" = type { ptr, ptr, ptr, ptr }
-%struct.audit_node.3359086 = type { %struct.list_head.3359078, ptr, i32 }
-%struct.list_head.3359078 = type { ptr, ptr }
+%struct.Mig_Obj_t_.2876713 = type { [4 x %struct.Mig_Fan_t_.2876714] }
+%struct.Mig_Fan_t_.2876714 = type { i32 }
+%struct.audit_node.3545998 = type { %struct.list_head.3545989, ptr, i32 }
+%struct.list_head.3545989 = type { ptr, ptr }
 
-; 193 occurrences:
+; 192 occurrences:
 ; abc/optimized/giaCof.c.ll
-; abc/optimized/mpmAbc.c.ll
-; abc/optimized/mpmMap.c.ll
-; abc/optimized/mpmMig.c.ll
 ; gromacs/optimized/pme_gather.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
-; icu/optimized/normalizer2impl.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
@@ -38,6 +35,7 @@
 ; llvm/optimized/CGStmtOpenMP.cpp.ll
 ; llvm/optimized/CGVTables.cpp.ll
 ; llvm/optimized/CaptureTracking.cpp.ll
+; llvm/optimized/CloneFunction.cpp.ll
 ; llvm/optimized/CodeExtractor.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
@@ -76,6 +74,7 @@
 ; llvm/optimized/GlobalOpt.cpp.ll
 ; llvm/optimized/GlobalStatus.cpp.ll
 ; llvm/optimized/Globals.cpp.ll
+; llvm/optimized/GuardWidening.cpp.ll
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; llvm/optimized/IRTranslator.cpp.ll
 ; llvm/optimized/IndirectCallPromotion.cpp.ll
@@ -114,6 +113,7 @@
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
 ; llvm/optimized/LoopPeel.cpp.ll
+; llvm/optimized/LoopPredication.cpp.ll
 ; llvm/optimized/LoopRotationUtils.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
@@ -150,7 +150,6 @@
 ; llvm/optimized/PseudoProbe.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
@@ -167,6 +166,7 @@
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/SeparateConstOffsetFromGEP.cpp.ll
 ; llvm/optimized/ShadowStackGCLowering.cpp.ll
+; llvm/optimized/SimpleLoopUnswitch.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/SimplifyIndVar.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
@@ -180,8 +180,8 @@
 ; llvm/optimized/TargetTransformInfo.cpp.ll
 ; llvm/optimized/ThreadSanitizer.cpp.ll
 ; llvm/optimized/TypeMetadataUtils.cpp.ll
-; llvm/optimized/User.cpp.ll
 ; llvm/optimized/VNCoercion.cpp.ll
+; llvm/optimized/VPlan.cpp.ll
 ; llvm/optimized/Value.cpp.ll
 ; llvm/optimized/ValueMapper.cpp.ll
 ; llvm/optimized/ValueProfileCollector.cpp.ll
@@ -198,13 +198,30 @@
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000005b(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16777215
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
+  ret ptr %6
+}
+
+; 5 occurrences:
+; abc/optimized/mpmAbc.c.ll
+; abc/optimized/mpmMap.c.ll
+; abc/optimized/mpmMig.c.ll
+; icu/optimized/normalizer2impl.ll
+; llvm/optimized/User.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 4095
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw %struct.Mig_Obj_t_.2876713, ptr %0, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -16
   ret ptr %6
 }
 
@@ -222,42 +239,6 @@ entry:
   ret ptr %6
 }
 
-; 25 occurrences:
-; llvm/optimized/CloneFunction.cpp.ll
-; llvm/optimized/CodeExtractor.cpp.ll
-; llvm/optimized/CodeGenPrepare.cpp.ll
-; llvm/optimized/Constants.cpp.ll
-; llvm/optimized/CoroEarly.cpp.ll
-; llvm/optimized/Coroutines.cpp.ll
-; llvm/optimized/DeadStoreElimination.cpp.ll
-; llvm/optimized/EarlyCSE.cpp.ll
-; llvm/optimized/GuardWidening.cpp.ll
-; llvm/optimized/HWAddressSanitizer.cpp.ll
-; llvm/optimized/InferAddressSpaces.cpp.ll
-; llvm/optimized/InlineFunction.cpp.ll
-; llvm/optimized/InstCombineCalls.cpp.ll
-; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/IntrinsicInst.cpp.ll
-; llvm/optimized/LoopPredication.cpp.ll
-; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/ObjCARCOpts.cpp.ll
-; llvm/optimized/OpenMPOpt.cpp.ll
-; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
-; llvm/optimized/SROA.cpp.ll
-; llvm/optimized/SimpleLoopUnswitch.cpp.ll
-; llvm/optimized/SimplifyLibCalls.cpp.ll
-; llvm/optimized/TailRecursionElimination.cpp.ll
-; llvm/optimized/VPlan.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000005b(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 134217727
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr %"class.llvm::Use.2946688", ptr %0, i64 %4, i32 1
-  ret ptr %5
-}
-
 ; 1 occurrences:
 ; linux/optimized/audit_tree.ll
 ; Function Attrs: nounwind
@@ -266,7 +247,7 @@ entry:
   %2 = and i32 %1, 2147483647
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.audit_node.3359086, ptr %0, i64 %4
+  %5 = getelementptr %struct.audit_node.3545998, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -64
   ret ptr %6
 }

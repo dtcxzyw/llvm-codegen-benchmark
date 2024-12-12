@@ -1,9 +1,8 @@
 
-; 76 occurrences:
+; 77 occurrences:
 ; abc/optimized/fraClau.c.ll
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/memory_pool.cc.ll
-; cmake/optimized/archive_read_support_filter_zstd.c.ll
 ; cpython/optimized/obmalloc.ll
 ; curl/optimized/libcurl_la-rtsp.ll
 ; flac/optimized/main.c.ll
@@ -18,7 +17,6 @@
 ; influxdb-rs/optimized/2i5qqg1f0a0eo8eq.ll
 ; libevent/optimized/evutil.c.ll
 ; libpng/optimized/pngread.c.ll
-; libquic/optimized/d1_both.c.ll
 ; libquic/optimized/example_mul.c.ll
 ; lief/optimized/BinaryStream.cpp.ll
 ; lief/optimized/Handler.cpp.ll
@@ -29,6 +27,7 @@
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/ControlFlowUtils.cpp.ll
 ; llvm/optimized/DeclObjC.cpp.ll
+; llvm/optimized/GlobalsModRef.cpp.ll
 ; llvm/optimized/LiveRangeCalc.cpp.ll
 ; llvm/optimized/LoopInfo.cpp.ll
 ; llvm/optimized/MachineBlockPlacement.cpp.ll
@@ -65,6 +64,7 @@
 ; php/optimized/main.ll
 ; proj/optimized/factors.cpp.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
+; redis/optimized/anet.ll
 ; rocksdb/optimized/block.cc.ll
 ; slurm/optimized/reservation.ll
 ; sqlite/optimized/sqlite3.ll
@@ -72,6 +72,7 @@
 ; tev/optimized/ImageCanvas.cpp.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/50oljwux3amwt8rq.ll
+; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/profile_dialog.cpp.ll
@@ -80,7 +81,7 @@
 define i1 @func0000000000000002(i1 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }

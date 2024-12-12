@@ -6,7 +6,7 @@
 ; meshlab/optimized/filterqualitymapper.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000063(i32 %0) #0 {
+define i64 @func00000000000000c3(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 1
   %2 = icmp eq i32 %1, 3
@@ -54,7 +54,7 @@ entry:
 ; openmpi/optimized/alfg.ll
 ; openmpi/optimized/pmix_alfg.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i32 %0) #0 {
+define i64 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = icmp eq i32 %1, 63

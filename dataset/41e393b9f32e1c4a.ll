@@ -24,7 +24,7 @@ entry:
   ret i64 %4
 }
 
-; 148 occurrences:
+; 162 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
@@ -38,6 +38,20 @@ entry:
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/barrier.ll
+; boost/optimized/condition_variable.ll
+; boost/optimized/context.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/mutex.ll
+; boost/optimized/recursive_mutex.ll
+; boost/optimized/recursive_timed_mutex.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/src.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/timed_mutex.ll
+; boost/optimized/work_stealing.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/timefn.cpp.ll
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
@@ -182,7 +196,7 @@ entry:
   ret i64 %4
 }
 
-; 30 occurrences:
+; 32 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
@@ -190,6 +204,8 @@ entry:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; jq/optimized/jv.ll
@@ -234,9 +250,12 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 13 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; icu/optimized/double-conversion-strtod.ll
@@ -251,23 +270,6 @@ entry:
   %2 = mul nuw i64 %1, 10
   %3 = add i64 %2, -48
   %4 = add i64 %3, %0
-  ret i64 %4
-}
-
-; 7 occurrences:
-; eastl/optimized/TestDeque.cpp.ll
-; git/optimized/combine-diff.ll
-; libquic/optimized/time_support.c.ll
-; libwebp/optimized/io_dec.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; qemu/optimized/hw_virtio_vhost-shadow-virtqueue.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003d(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw nsw i64 %1, 100
-  %3 = add nuw nsw i64 %2, 4294962396
-  %4 = add nsw i64 %3, %0
   ret i64 %4
 }
 
@@ -310,6 +312,21 @@ entry:
   ret i64 %4
 }
 
+; 5 occurrences:
+; eastl/optimized/TestDeque.cpp.ll
+; git/optimized/combine-diff.ll
+; libquic/optimized/time_support.c.ll
+; libwebp/optimized/io_dec.c.ll
+; qemu/optimized/hw_virtio_vhost-shadow-virtqueue.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw nsw i64 %1, 18
+  %3 = add nuw nsw i64 %2, 5
+  %4 = add nsw i64 %3, %0
+  ret i64 %4
+}
+
 ; 3 occurrences:
 ; nghttp2/optimized/url_parser.c.ll
 ; php/optimized/parse_posix.ll
@@ -323,8 +340,9 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/work_stealing.ll
 ; freetype/optimized/ftstroke.c.ll
 ; hermes/optimized/ESTreeIRGen-func.cpp.ll
 ; hermes/optimized/RegexParser.cpp.ll
@@ -359,20 +377,19 @@ define i64 @func000000000000003c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 59536
   %3 = add nuw nsw i64 %2, 119072
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003e(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 544
   %3 = add nuw nsw i64 %2, 1096
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 

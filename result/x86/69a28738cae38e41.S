@@ -9,10 +9,10 @@ func0000000000000001:                   # @func0000000000000001
 	shll	$3, %ecx
 	leal	(%rcx,%rcx,2), %ecx
 	subl	%ecx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	incl	%esi
 	movslq	%esi, %rax
 	imulq	$274877907, %rax, %rcx          # imm = 0x10624DD3
@@ -22,6 +22,6 @@ func0000000000000011:                   # @func0000000000000011
 	addl	%edx, %ecx
 	imull	$1000, %ecx, %ecx               # imm = 0x3E8
 	subl	%ecx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

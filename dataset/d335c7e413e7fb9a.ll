@@ -4,7 +4,7 @@
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 36
   %3 = icmp eq i8 %0, 40

@@ -142,29 +142,6 @@ entry:
 }
 
 ; 2 occurrences:
-; linux/optimized/blk-settings.ll
-; meshlab/optimized/miniz.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = shl nuw i32 %2, 9
-  %4 = sub i32 %0, %3
-  ret i32 %4
-}
-
-; 1 occurrences:
-; linux/optimized/rpl.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003c(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = shl nuw nsw i32 %2, 12
-  %4 = sub i32 %0, %3
-  ret i32 %4
-}
-
-; 2 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
@@ -185,6 +162,17 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %2, 1
   %4 = sub nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; meshlab/optimized/miniz.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000038(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = shl nuw i32 %2, 3
+  %4 = sub i32 %0, %3
   ret i32 %4
 }
 

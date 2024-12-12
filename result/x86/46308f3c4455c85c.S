@@ -5,14 +5,14 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$33, %eax
 	setae	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	leal	-1(%rsi,%rdi), %eax
 	xorl	%edx, %edx
 	divl	%edi
 	cmpl	$1, %eax
 	sete	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	leal	-1(%rsi,%rdi), %eax
 	xorl	%edx, %edx
 	divl	%edi

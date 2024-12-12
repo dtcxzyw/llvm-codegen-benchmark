@@ -1,5 +1,5 @@
 
-; 160 occurrences:
+; 155 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; brotli/optimized/backward_references.c.ll
@@ -27,7 +27,6 @@
 ; hyperscan/optimized/noodle_engine.c.ll
 ; icu/optimized/ucase.ll
 ; icu/optimized/ucnv2022.ll
-; libquic/optimized/custom_extensions.c.ll
 ; libwebp/optimized/cost_enc.c.ll
 ; libwebp/optimized/lossless_enc_sse2.c.ll
 ; lief/optimized/ResourceAccelerator.cpp.ll
@@ -45,12 +44,10 @@
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/evevent.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/hub.ll
-; linux/optimized/hwxface.ll
 ; linux/optimized/i915_gem_domain.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/icl_dsi.ll
@@ -61,7 +58,6 @@
 ; linux/optimized/kyber-iosched.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/libata-transport.ll
 ; linux/optimized/link.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/mprotect.ll
@@ -93,6 +89,7 @@
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/CImage.cpp.ll
@@ -113,7 +110,6 @@
 ; openssl/optimized/libcrypto-shlib-ctype.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
-; openvdb/optimized/Half.cc.ll
 ; php/optimized/session.ll
 ; php/optimized/url.ll
 ; postgres/optimized/blkreftable.ll
@@ -134,7 +130,6 @@
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/hw_virtio_vhost-shadow-virtqueue.c.ll
-; qemu/optimized/io_channel-watch.c.ll
 ; qemu/optimized/nbd_server.c.ll
 ; qemu/optimized/virtio-pci.c.ll
 ; snappy/optimized/snappy.cc.ll
@@ -164,11 +159,11 @@
 define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/fretFlow.c.ll
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/fretMain.c.ll
@@ -188,7 +183,6 @@ entry:
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/TypeRecordMapping.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; slurm/optimized/node_features_knl_generic.ll
@@ -198,7 +192,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 

@@ -15,7 +15,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rax, %rsi
 	seta	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$1, %esi
 	orq	%rdi, %rsi
 	sete	%al

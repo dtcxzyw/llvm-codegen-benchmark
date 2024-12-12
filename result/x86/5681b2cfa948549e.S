@@ -22,6 +22,13 @@ func0000000000000008:                   # @func0000000000000008
 	orl	%esi, %edi
 	andb	%dil, %al
 	retq
+func000000000000000a:                   # @func000000000000000a
+	orl	%edx, %esi
+	movabsq	$-9223372036854775805, %rax     # imm = 0x8000000000000003
+	cmpq	%rax, %rdi
+	setg	%al
+	andb	%sil, %al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	testq	%rdx, %rdx
 	setne	%al

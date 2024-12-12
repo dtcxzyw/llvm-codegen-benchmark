@@ -1,15 +1,15 @@
 
-%"class.btAxisSweep3Internal<unsigned short>::Edge.2706531" = type { i16, i16 }
+%"class.btAxisSweep3Internal<unsigned short>::Edge.2819245" = type { i16, i16 }
 
 ; 2 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
 ; hyperscan/optimized/mcclellan.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = shl i16 %1, 1
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw %"class.btAxisSweep3Internal<unsigned short>::Edge.2706531", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.btAxisSweep3Internal<unsigned short>::Edge.2819245", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -19,11 +19,11 @@ entry:
 ; icu/optimized/olsontz.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 1
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -43,11 +43,11 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 1
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

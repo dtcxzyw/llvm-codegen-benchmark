@@ -35,7 +35,7 @@ func0000000000000014:                   # @func0000000000000014
 	sarq	$3, %rsi
 	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
 	imulq	%rsi, %rax
-	leaq	-2(%rax,%rdi), %rax
+	leaq	-2(%rdi,%rax), %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movq	%rsi, %rax

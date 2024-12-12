@@ -1,5 +1,5 @@
 
-; 107 occurrences:
+; 106 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; arrow/optimized/strtod.cc.ll
@@ -18,7 +18,6 @@
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/dm-log.ll
 ; linux/optimized/evdev.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/memtype.ll
 ; linux/optimized/snapshot.ll
@@ -116,9 +115,8 @@ entry:
   ret i64 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_sharpen.c.ll
-; linux/optimized/kvmclock.ll
 ; llvm/optimized/SemaModule.cpp.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
@@ -134,7 +132,7 @@ entry:
   ret i64 %3
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; clamav/optimized/regexec.c.ll
 ; hermes/optimized/regcomp.c.ll
@@ -149,7 +147,6 @@ entry:
 ; llvm/optimized/regexec.c.ll
 ; openssl/optimized/libcrypto-lib-a_strex.ll
 ; openssl/optimized/libcrypto-shlib-a_strex.ll
-; postgres/optimized/nbtdedup.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:

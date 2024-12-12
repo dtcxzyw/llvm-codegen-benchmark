@@ -10,7 +10,7 @@
 ; spike/optimized/clrs32.ll
 ; spike/optimized/clz32.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000144(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = select i1 %1, i32 %3, i32 %2
@@ -28,7 +28,7 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000146(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 4
   %4 = select i1 %1, i32 %3, i32 %2
@@ -42,7 +42,7 @@ entry:
 ; spike/optimized/clrs32.ll
 ; spike/optimized/clz32.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000014a(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 4
   %4 = select i1 %1, i32 %3, i32 %2

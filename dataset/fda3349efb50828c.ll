@@ -1,11 +1,9 @@
 
-; 330 occurrences:
+; 329 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/saigMiter.c.ll
 ; abseil-cpp/optimized/mutex.cc.ll
-; cmake/optimized/setopt.c.ll
-; curl/optimized/libcurl_la-setopt.ll
 ; git/optimized/unpack-trees.ll
 ; hwloc/optimized/distances.ll
 ; libjpeg-turbo/optimized/jchuff.c.ll
@@ -15,6 +13,7 @@
 ; linux/optimized/core.ll
 ; linux/optimized/dmaengine.ll
 ; linux/optimized/ds.ll
+; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/input.ll
 ; linux/optimized/intel_display.ll

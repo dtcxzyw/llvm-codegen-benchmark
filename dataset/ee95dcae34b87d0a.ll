@@ -8,7 +8,7 @@ define i16 @func0000000000000031(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i16
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 

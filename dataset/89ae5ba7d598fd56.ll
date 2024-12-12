@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
@@ -9,6 +9,8 @@
 ; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i8 %0) #0 {
 entry:
@@ -37,6 +39,17 @@ define i64 @func0000000000000006(i8 %0) #0 {
 entry:
   %1 = shl i8 %0, 1
   %2 = add nuw nsw i8 %1, 64
+  %3 = zext i8 %2 to i64
+  ret i64 %3
+}
+
+; 1 occurrences:
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001e(i8 %0) #0 {
+entry:
+  %1 = shl nuw nsw i8 %0, 1
+  %2 = add nuw nsw i8 %1, -92
   %3 = zext i8 %2 to i64
   ret i64 %3
 }

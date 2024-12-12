@@ -21,18 +21,18 @@ func000000000000000f:                   # @func000000000000000f
 	sh1add	a0, a0, a0
 	addi	a0, a0, 8
 	ret
+func000000000000001f:                   # @func000000000000001f
+	sext.w	a0, a0
+	sh1add	a0, a0, a0
+	slli	a0, a0, 3
+	addi	a0, a0, 32
+	ret
 func0000000000000010:                   # @func0000000000000010
 	sh1add	a0, a0, a0
 	li	a1, 39
 	slli	a0, a0, 32
 	slli	a1, a1, 29
 	add	a0, a0, a1
-	ret
-func000000000000001f:                   # @func000000000000001f
-	sext.w	a0, a0
-	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 39
 	ret
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a0, a0

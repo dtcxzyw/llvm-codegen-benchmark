@@ -27,13 +27,13 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	subl	%edx, %esi
 	cmpl	$163, %esi
 	setge	%al
 	andb	%dil, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	subl	%edx, %esi
 	cmpl	$47, %esi
 	setb	%al

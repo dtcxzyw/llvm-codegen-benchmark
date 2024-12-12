@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; php/optimized/decode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a90(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000002910(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, -39467
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/json_parser.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000888(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000002108(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add i32 %3, -56671232
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/json_parser.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a88(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000002908(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, -56613888
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvscsu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a28(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000002848(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, -56613888

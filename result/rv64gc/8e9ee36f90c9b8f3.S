@@ -7,12 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	mv	a0, a2
 	ret
 .LBB0_3:
-	lui	a1, 913408
-	addiw	a1, a1, 1919
-	and	a2, a2, a1
+	andi	a2, a2, -2
 	bnez	a0, .LBB0_2
 .LBB0_4:
-	lui	a0, 262144
-	addiw	a0, a0, -961
-	and	a0, a0, a2
+	andi	a0, a2, -3
 	ret

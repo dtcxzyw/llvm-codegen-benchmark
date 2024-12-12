@@ -58,6 +58,11 @@ func0000000000000007:                   # @func0000000000000007
 	orl	%esi, %edx
 	leal	-56613888(%rdi,%rdx), %eax
 	retq
+func0000000000000073:                   # @func0000000000000073
+	shll	$9, %edx
+	orl	%esi, %edx
+	leal	1(%rdi,%rdx), %eax
+	retq
 func0000000000000044:                   # @func0000000000000044
 	shll	$24, %edx
 	orl	%edi, %edx

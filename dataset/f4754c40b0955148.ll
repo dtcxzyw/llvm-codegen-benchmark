@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; abc/optimized/giaPat2.c.ll
 ; gromacs/optimized/manage_threading.cpp.ll
 ; oiio/optimized/Codec.cpp.ll
 ; raylib/optimized/rmodels.c.ll
@@ -8,12 +9,12 @@
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 4
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 60 occurrences:
+; 61 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; assimp/optimized/HMPLoader.cpp.ll
 ; clamav/optimized/matcher-hash.c.ll
@@ -40,6 +41,7 @@ entry:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_array.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; minetest/optimized/png.cpp.ll
@@ -78,7 +80,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -106,18 +108,17 @@ entry:
 define i64 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 40 occurrences:
+; 39 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; hwloc/optimized/topology-x86.ll
 ; libpng/optimized/pngread.c.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/uncore_discovery.ll
 ; minetest/optimized/mesh_generator_thread.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
@@ -150,35 +151,33 @@ entry:
 ; opencv/optimized/umatrix.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; openusd/optimized/grain_synthesis.c.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
 ; sentencepiece/optimized/generated_message_table_driven_lite.cc.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 2
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hda_sysfs.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/scsi_lib.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 21 occurrences:
+; 24 occurrences:
 ; abc/optimized/bmcCexCare.c.ll
 ; abc/optimized/cuddLinear.c.ll
 ; abc/optimized/giaMinLut2.c.ll
@@ -190,6 +189,8 @@ entry:
 ; darktable/optimized/SamsungV0Decompressor.cpp.ll
 ; libjpeg-turbo/optimized/jdmainct.c.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
 ; openjdk/optimized/jdmainct.ll
 ; openjdk/optimized/splashscreen_sys.ll
 ; openmpi/optimized/tm_tree.ll
@@ -200,11 +201,12 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; tinympc/optimized/codegen.cpp.ll
+; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 2
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -253,7 +255,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -280,25 +282,26 @@ entry:
 define i64 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; bullet3/optimized/btGImpactCollisionAlgorithm.ll
 ; bullet3/optimized/btGImpactShape.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; libwebp/optimized/dwebp.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; oiio/optimized/iffinput.cpp.ll
 ; oiio/optimized/jpegoutput.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -314,12 +317,13 @@ entry:
 define i64 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 16
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/linearize.cpp.ll
@@ -334,7 +338,18 @@ entry:
 define i64 @func000000000000001b(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; abc/optimized/bmcBmcAnd.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000013(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw i32 %1, 1
+  %3 = mul nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -362,11 +377,10 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/powerspect.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -376,7 +390,7 @@ entry:
 define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -387,7 +401,18 @@ entry:
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 1
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

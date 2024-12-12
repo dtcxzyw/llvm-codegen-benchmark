@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; clamav/optimized/yara_exec.c.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; php/optimized/html.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; z3/optimized/seq_rewriter.cpp.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

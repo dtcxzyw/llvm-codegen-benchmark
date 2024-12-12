@@ -94,6 +94,17 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp olt float %2, %1
+  %4 = fcmp oge float %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; ozz-animation/optimized/track_triggering_job.cc.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000005b(float %0, float %1, float %2) #0 {

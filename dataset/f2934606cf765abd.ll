@@ -4,7 +4,7 @@
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
 ; wireshark/optimized/packet-nas_5gs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 4
   %4 = add i32 %1, %0
@@ -29,7 +29,7 @@ entry:
 ; jq/optimized/decNumber.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = add i32 %1, %0
@@ -41,10 +41,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-nas_eps.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = icmp sle i32 %4, %0
   ret i1 %5
 }

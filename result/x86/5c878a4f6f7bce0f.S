@@ -1,4 +1,4 @@
-func00000000000001a0:                   # @func00000000000001a0
+func0000000000000320:                   # @func0000000000000320
 	movl	%esi, %eax
 	shll	$8, %eax
 	shrq	$32, %rdx
@@ -6,7 +6,7 @@ func00000000000001a0:                   # @func00000000000001a0
 	orl	%edi, %eax
 	addl	$33554432, %eax                 # imm = 0x2000000
 	retq
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	movl	%esi, %eax
 	shll	$8, %eax
 	testq	%rdx, %rdx

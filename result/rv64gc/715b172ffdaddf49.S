@@ -1,6 +1,6 @@
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	sext.w	a1, a1
-	add	a2, a1, a0
+	add	a2, a0, a1
 	addw	a0, a0, a1
 	xor	a0, a0, a2
 	seqz	a0, a0

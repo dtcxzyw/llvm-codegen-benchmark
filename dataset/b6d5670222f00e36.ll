@@ -1,5 +1,5 @@
 
-; 126 occurrences:
+; 120 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -41,8 +41,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -108,8 +106,6 @@
 ; php/optimized/dtoa.ll
 ; php/optimized/strtod.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; rocksdb/optimized/blob_file_cache.cc.ll
 ; rocksdb/optimized/block_cache_tracer.cc.ll
@@ -122,8 +118,6 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/f64_div.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
@@ -175,7 +169,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 32
   ret i64 %4
 }
@@ -186,7 +180,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 28
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = lshr i64 %3, 28
   ret i64 %4
 }

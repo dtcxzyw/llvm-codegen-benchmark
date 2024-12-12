@@ -1,9 +1,14 @@
 
-; 276 occurrences:
+; 281 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/double-to-string.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/_codecs_cn.ll
 ; cpython/optimized/longobject.ll
 ; double_conversion/optimized/double-to-string.cc.ll

@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 30 occurrences:
 ; abc/optimized/cgtAig.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddBddIte.c.ll
@@ -20,17 +20,22 @@
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i915_request.ll
+; llvm/optimized/AnalysisBasedWarnings.cpp.ll
+; llvm/optimized/IndexBody.cpp.ll
+; llvm/optimized/Interp.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; llvm/optimized/SemaStmt.cpp.ll
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/shenandoahAsserts.ll
 ; protobuf/optimized/arena.cc.ll
 ; z3/optimized/algebraic_numbers.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i1 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = select i1 %0, ptr %1, ptr %3
-  %5 = getelementptr nusw i8, ptr %4, i64 68
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 68
   ret ptr %5
 }
 
@@ -44,21 +49,6 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = select i1 %0, ptr %1, ptr %3
   %5 = getelementptr i8, ptr %4, i64 36
-  ret ptr %5
-}
-
-; 5 occurrences:
-; llvm/optimized/IndexBody.cpp.ll
-; llvm/optimized/Interp.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/SemaStmt.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = inttoptr i64 %2 to ptr
-  %4 = select i1 %0, ptr %1, ptr %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 

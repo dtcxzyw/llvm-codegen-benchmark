@@ -12,7 +12,7 @@ func00000000000000a5:                   # @func00000000000000a5
 	retq
 .LCPI1_0:
 	.long	4                               # 0x4
-func0000000000000044:                   # @func0000000000000044
+func0000000000000144:                   # @func0000000000000144
 	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm2, %k1
 	vmovapd	%zmm1, %zmm1 {%k1} {z}
 	vcmpltpd	%zmm0, %zmm1, %k0

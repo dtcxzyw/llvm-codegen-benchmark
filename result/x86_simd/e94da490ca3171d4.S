@@ -1,13 +1,13 @@
 .LCPI0_0:
-	.long	39                              # 0x27
+	.long	8                               # 0x8
 .LCPI0_1:
-	.long	41                              # 0x29
+	.long	16                              # 0x10
 .LCPI0_2:
-	.long	256                             # 0x100
+	.long	134742016                       # 0x8080000
 func0000000000000007:                   # @func0000000000000007
 	vptestnmb	%xmm1, %xmm1, %k1
-	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [39,39,39,39,39,39,39,39]
-	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [41,41,41,41,41,41,41,41]
+	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [8,8,8,8,8,8,8,8]
+	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [16,16,16,16,16,16,16,16]
 	vpternlogd	$254, .LCPI0_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
 .LCPI1_0:
@@ -90,33 +90,4 @@ func0000000000000006:                   # @func0000000000000006
 	vpcmpeqb	.LCPI3_0(%rip), %xmm1, %k1
 	vorps	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vorps	.LCPI3_2(%rip){1to8}, %ymm0, %ymm0
-	retq
-.LCPI4_0:
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI4_1:
-	.long	285216768                       # 0x11001000
-.LCPI4_2:
-	.long	285212672                       # 0x11000000
-.LCPI4_3:
-	.long	524288                          # 0x80000
-func0000000000000010:                   # @func0000000000000010
-	vpcmpltub	.LCPI4_0(%rip), %xmm1, %k1
-	vpbroadcastd	.LCPI4_1(%rip), %ymm1   # ymm1 = [285216768,285216768,285216768,285216768,285216768,285216768,285216768,285216768]
-	vpbroadcastd	.LCPI4_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [285212672,285212672,285212672,285212672,285212672,285212672,285212672,285212672]
-	vpternlogd	$254, .LCPI4_3(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq

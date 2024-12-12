@@ -39,31 +39,21 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI4_0:
-	.long	65536                           # 0x10000
-func0000000000000008:                   # @func0000000000000008
-	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpnltw	%xmm2, %xmm0, %k1
-	vpslld	$16, %ymm1, %ymm1
-	vpbroadcastd	.LCPI4_0(%rip), %ymm0   # ymm0 = [65536,65536,65536,65536,65536,65536,65536,65536]
-	vpaddd	%ymm0, %ymm1, %ymm0 {%k1}
-	retq
-.LCPI5_0:
 	.long	4294967292                      # 0xfffffffc
 func0000000000000003:                   # @func0000000000000003
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpslld	$2, %ymm1, %ymm0
 	knotb	%k0, %k1
-	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0 {%k1} {z}
+	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0 {%k1} {z}
 	retq
-.LCPI6_0:
+.LCPI5_0:
 	.long	256                             # 0x100
 func000000000000000e:                   # @func000000000000000e
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltw	%xmm2, %xmm0, %k1
 	vpaddd	%ymm1, %ymm1, %ymm1
-	vpbroadcastd	.LCPI6_0(%rip), %ymm0   # ymm0 = [256,256,256,256,256,256,256,256]
+	vpbroadcastd	.LCPI5_0(%rip), %ymm0   # ymm0 = [256,256,256,256,256,256,256,256]
 	vpaddd	%ymm0, %ymm1, %ymm0 {%k1}
 	retq

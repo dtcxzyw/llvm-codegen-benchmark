@@ -1,6 +1,7 @@
 
 ; 21 occurrences:
 ; abc/optimized/abcStrash.c.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/collationfastlatinbuilder.ll
@@ -16,7 +17,6 @@
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
-; qemu/optimized/hw_pci-host_gpex.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; ruby/optimized/time.ll
 ; slurm/optimized/job_test.ll
@@ -27,7 +27,7 @@ entry:
   %2 = lshr i32 %1, 8
   %3 = and i32 %2, 992
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -64,7 +64,7 @@ entry:
   %2 = lshr i32 %1, 12
   %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

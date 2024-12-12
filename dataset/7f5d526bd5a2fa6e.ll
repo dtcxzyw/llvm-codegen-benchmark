@@ -47,7 +47,7 @@
 ; z3/optimized/solve_eqs.cpp.ll
 ; z3/optimized/spacer_quant_generalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000028a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = add nsw i64 %2, -2

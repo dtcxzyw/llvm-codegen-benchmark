@@ -1,7 +1,5 @@
 
-; 6 occurrences:
-; gromacs/optimized/dlasd6.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
+; 4 occurrences:
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; openssl/optimized/libcrypto-lib-txt_db.ll
 ; openssl/optimized/libcrypto-shlib-txt_db.ll
@@ -16,7 +14,8 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; openblas/optimized/dorcsd2by1.c.ll
 ; openjdk/optimized/methodData.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
@@ -28,9 +27,10 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/export.c.ll
 ; openblas/optimized/dlalsd.c.ll
+; openblas/optimized/dorcsd2by1.c.ll
 ; opencv/optimized/fuzzy_F0_math.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; Function Attrs: nounwind
@@ -60,6 +60,19 @@ define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = add i32 %0, %1
+  %5 = add i32 %4, %3
+  %6 = sext i32 %5 to i64
+  ret i64 %6
+}
+
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; opencv/optimized/edgeboxes.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add nsw i32 %0, -3
   %5 = add i32 %4, %3
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -113,18 +126,6 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
-; opencv/optimized/edgeboxes.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %0, 1
-  %5 = add i32 %4, %3
-  %6 = sext i32 %5 to i64
-  ret i64 %6
-}
-
 ; 5 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
@@ -153,16 +154,27 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dlaed0.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 3
+  %4 = add i32 %0, %1
+  %5 = add i32 %4, %3
+  %6 = sext i32 %5 to i64
+  ret i64 %6
+}
+
+; 2 occurrences:
+; openblas/optimized/dlatms.c.ll
+; openblas/optimized/dlatmt.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw i32 %2, 1
   %4 = add i32 %0, %1
   %5 = add i32 %4, %3
   %6 = sext i32 %5 to i64

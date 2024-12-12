@@ -61,7 +61,7 @@ entry:
 ; opencv/optimized/array.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = icmp slt i64 %2, 0

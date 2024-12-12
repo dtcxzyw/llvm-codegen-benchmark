@@ -12,7 +12,7 @@
 ; openusd/optimized/schemaRegistry.cpp.ll
 ; ruby/optimized/encoding.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -33
   %3 = sext i8 %2 to i32

@@ -9,17 +9,12 @@ func0000000000000019:                   # @func0000000000000019
 	vandps	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.long	49152                           # 0xc000
-func0000000000000011:                   # @func0000000000000011
+	.long	128                             # 0x80
+func0000000000000002:                   # @func0000000000000002
 	vandps	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.long	128                             # 0x80
-func0000000000000002:                   # @func0000000000000002
-	vandps	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
-	retq
-.LCPI4_0:
-	.long	128                             # 0x80
 func0000000000000018:                   # @func0000000000000018
-	vandps	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
+	vandps	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	retq

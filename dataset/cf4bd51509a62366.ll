@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 20 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
@@ -10,7 +10,9 @@
 ; oiio/optimized/ddsinput.cpp.ll
 ; openjdk/optimized/pngrtran.ll
 ; qemu/optimized/hw_audio_ac97.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; raylib/optimized/rtextures.c.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; stb/optimized/stb_voxel_render.c.ll
 ; wireshark/optimized/eyesdn.c.ll
 ; wireshark/optimized/packet-e212.c.ll
@@ -26,12 +28,13 @@ entry:
   ret i8 %2
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; wireshark/optimized/packet-camel.c.ll
 ; wireshark/optimized/packet-diameter_3gpp.c.ll
 ; wireshark/optimized/packet-etsi_card_app_toolkit.c.ll
-; wireshark/optimized/packet-gprscdr.c.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-gtp.c.ll

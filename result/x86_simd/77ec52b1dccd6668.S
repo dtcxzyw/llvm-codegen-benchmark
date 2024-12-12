@@ -86,30 +86,22 @@ func0000000000000014:                   # @func0000000000000014
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
-func0000000000000035:                   # @func0000000000000035
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpsubq	%ymm3, %ymm2, %ymm2
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpblendd	$170, %ymm3, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm3[1],ymm2[2],ymm3[3],ymm2[4],ymm3[5],ymm2[6],ymm3[7]
+.LCPI9_0:
+	.quad	2                               # 0x2
+.LCPI9_1:
+	.quad	1020                            # 0x3fc
+func000000000000003f:                   # @func000000000000003f
+	vpaddq	.LCPI9_0(%rip){1to4}, %ymm2, %ymm2
+	vpandq	.LCPI9_1(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm2, %ymm0
 	retq
 .LCPI10_0:
-	.quad	2                               # 0x2
-.LCPI10_1:
-	.quad	1020                            # 0x3fc
-func000000000000003f:                   # @func000000000000003f
-	vpaddq	.LCPI10_0(%rip){1to4}, %ymm2, %ymm2
-	vpandq	.LCPI10_1(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
-	retq
-.LCPI11_0:
 	.quad	4294967294                      # 0xfffffffe
 func000000000000000f:                   # @func000000000000000f
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
-	vpandq	.LCPI11_0(%rip){1to4}, %ymm2, %ymm2
+	vpandq	.LCPI10_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
 	retq

@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -12,6 +12,7 @@
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -32,7 +33,7 @@ define i16 @func000000000000001f(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i16
   %4 = shl nuw nsw i16 %3, 10
-  %5 = or disjoint i16 %4, %1
+  %5 = or disjoint i16 %1, %4
   %6 = or disjoint i16 %5, %0
   ret i16 %6
 }
@@ -60,7 +61,7 @@ define i16 @func000000000000001b(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i16
   %4 = shl nuw i16 %3, 11
-  %5 = or disjoint i16 %4, %1
+  %5 = or disjoint i16 %1, %4
   %6 = or disjoint i16 %5, %0
   ret i16 %6
 }
@@ -75,17 +76,18 @@ define i16 @func0000000000000003(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
   %4 = shl i16 %3, 12
-  %5 = or disjoint i16 %4, %1
+  %5 = or disjoint i16 %1, %4
   %6 = or disjoint i16 %5, %0
   ret i16 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; libquic/optimized/poly.c.ll
 ; linux/optimized/alps.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; opencv/optimized/obsensor_uvc_stream_channel.cpp.ll
 ; wireshark/optimized/packet-e164.c.ll
@@ -115,6 +117,19 @@ entry:
   ret i16 %6
 }
 
+; 2 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000b(i16 %0, i16 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i16
+  %4 = shl nuw i16 %3, 8
+  %5 = or disjoint i16 %1, %4
+  %6 = or disjoint i16 %5, %0
+  ret i16 %6
+}
+
 ; 8 occurrences:
 ; cpython/optimized/_codecs_kr.ll
 ; linux/optimized/ata_piix.ll
@@ -129,7 +144,7 @@ define i16 @func0000000000000000(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
   %4 = shl i16 %3, 11
-  %5 = or i16 %4, %1
+  %5 = or i16 %1, %4
   %6 = or i16 %5, %0
   ret i16 %6
 }
@@ -151,6 +166,18 @@ entry:
 }
 
 ; 1 occurrences:
+; wireshark/optimized/ftype-ieee-11073-float.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000018(i16 %0, i16 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i16
+  %4 = shl nuw i16 %3, 12
+  %5 = or i16 %1, %4
+  %6 = or i16 %5, %0
+  ret i16 %6
+}
+
+; 1 occurrences:
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000a(i16 %0, i16 %1, i8 %2) #0 {
@@ -158,7 +185,7 @@ entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %3, 8
   %5 = or disjoint i16 %4, %1
-  %6 = or i16 %5, %0
+  %6 = or i16 %0, %5
   ret i16 %6
 }
 
@@ -169,7 +196,7 @@ define i16 @func000000000000001c(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i16
   %4 = shl nuw nsw i16 %3, 13
-  %5 = or i16 %4, %1
+  %5 = or i16 %1, %4
   %6 = or i16 %5, %0
   ret i16 %6
 }
@@ -195,18 +222,6 @@ entry:
   %4 = shl i16 %3, 11
   %5 = or disjoint i16 %4, %1
   %6 = or i16 %5, %0
-  ret i16 %6
-}
-
-; 1 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
-; Function Attrs: nounwind
-define i16 @func000000000000000b(i16 %0, i16 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i16
-  %4 = shl nuw i16 %3, 8
-  %5 = or disjoint i16 %4, %1
-  %6 = or disjoint i16 %5, %0
   ret i16 %6
 }
 

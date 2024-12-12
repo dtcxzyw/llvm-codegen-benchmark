@@ -2,6 +2,7 @@
 ; 280 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
@@ -173,7 +174,6 @@
 ; protobuf/optimized/struct.pb.cc.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; rand-rs/optimized/2lnmku48it2ei9m4.ll
 ; ruby/optimized/bignum.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
@@ -287,10 +287,11 @@ entry:
   ret i32 %1
 }
 
-; 111 occurrences:
+; 115 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -399,6 +400,9 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i128 %0) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 132 occurrences:
+; 130 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
@@ -39,7 +39,6 @@
 ; gromacs/optimized/slaev2.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
-; gromacs/optimized/tabulatednormaldistribution.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; gromacs/optimized/update.cpp.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
@@ -60,7 +59,6 @@
 ; meshlab/optimized/filter_sdfgpu.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/levmarmethods.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/parameters.cpp.ll
 ; meshlab/optimized/solver.cpp.ll

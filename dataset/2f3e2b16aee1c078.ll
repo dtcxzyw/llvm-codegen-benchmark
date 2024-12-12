@@ -12,12 +12,13 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_vector.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, float %1, float %2) #0 {
 entry:
-  %3 = fmul float %2, 0x3F70101020000000
+  %3 = fmul float %2, 5.000000e-01
   %4 = select i1 %0, float %3, float %1
   %5 = fcmp oeq float %4, 0.000000e+00
   ret i1 %5

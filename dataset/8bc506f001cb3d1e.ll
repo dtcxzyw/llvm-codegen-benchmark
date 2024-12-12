@@ -10,9 +10,9 @@
 define i1 @func0000000000000014(double %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = bitcast i64 %4 to double
-  %6 = fcmp olt double %5, %0
+  %6 = fcmp ogt double %0, %5
   ret i1 %6
 }
 

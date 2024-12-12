@@ -1,5 +1,5 @@
 
-; 776 occurrences:
+; 786 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -43,6 +43,20 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/message.ll
+; boost/optimized/partition.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/fmu.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/fmu_function.cpp.ll
@@ -174,7 +188,6 @@
 ; gromacs/optimized/forcebuffers.cpp.ll
 ; gromacs/optimized/forcerec.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/gen_vsite.cpp.ll
 ; gromacs/optimized/genhydro.cpp.ll
 ; gromacs/optimized/gmx_bundle.cpp.ll
@@ -336,7 +349,6 @@
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -368,7 +380,6 @@
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -408,7 +419,6 @@
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/CZipReader.cpp.ll
 ; minetest/optimized/MaterialRenderer.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
@@ -777,7 +787,7 @@
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000075(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e5(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 164703072086692425, %1
   %3 = sdiv exact i64 %0, 56
@@ -793,7 +803,7 @@ entry:
 ; rocksdb/optimized/transaction_base.cc.ll
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = sdiv exact i64 %0, 80
@@ -827,7 +837,7 @@ entry:
 ; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/select3dobj.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 8, %1
   %3 = sdiv exact i64 %0, 12
@@ -839,7 +849,7 @@ entry:
 ; opencv/optimized/cascadedetect.cpp.ll
 ; quantlib/optimized/bumpinstrumentjacobian.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = sdiv exact i64 %0, 24
@@ -853,7 +863,7 @@ entry:
 ; openusd/optimized/testSdfPathExpression.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = sdiv exact i64 %0, 48

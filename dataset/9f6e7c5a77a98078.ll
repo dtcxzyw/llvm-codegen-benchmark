@@ -1,11 +1,20 @@
 
-; 10 occurrences:
+; 19 occurrences:
 ; folly/optimized/farmhash.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/ltable.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
+; mitsuba3/optimized/multijitter.cpp.ll
+; mitsuba3/optimized/orthogonal.cpp.ll
+; mitsuba3/optimized/stratified.cpp.ll
 ; oiio/optimized/farmhash.cpp.ll
 ; openvdb/optimized/Merge.cc.ll
+; pbrt-v4/optimized/camera.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
+; pbrt-v4/optimized/lowdiscrepancy.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; pbrt-v4/optimized/samples.cpp.ll
 ; ruby/optimized/static_literals.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll

@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; opencv/optimized/approx.cpp.ll
 ; pbrt-v4/optimized/film.cpp.ll
@@ -31,7 +32,7 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
   %5 = sub i32 %1, %4
-  %6 = mul i32 %5, %0
+  %6 = mul i32 %0, %5
   ret i32 %6
 }
 

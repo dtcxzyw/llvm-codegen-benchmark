@@ -55,7 +55,7 @@ func000000000000002c:                   # @func000000000000002c
 	vcmpltps	%zmm1, %zmm0, %k1
 	vbroadcastss	.LCPI3_0(%rip), %zmm2   # zmm2 = [5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1]
 	vbroadcastss	.LCPI3_1(%rip), %zmm2 {%k1} # zmm2 {%k1} = [-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1]
-	vaddps	%zmm0, %zmm2, %zmm0
+	vaddps	%zmm2, %zmm0, %zmm0
 	vcmpleps	%zmm0, %zmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

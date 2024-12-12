@@ -1,15 +1,4 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/x86assembler.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %1, %2
-  %4 = or i32 %3, %0
-  %5 = icmp ugt i32 %4, 128
-  ret i1 %5
-}
-
 ; 7 occurrences:
 ; libquic/optimized/tls_cbc.c.ll
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
@@ -22,7 +11,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = icmp sgt i32 %4, 0
   ret i1 %5
 }
@@ -59,7 +48,7 @@ entry:
 ; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = or disjoint i32 %3, %0
@@ -75,7 +64,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }

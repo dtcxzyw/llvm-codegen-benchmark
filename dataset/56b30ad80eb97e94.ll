@@ -74,7 +74,7 @@
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; z3/optimized/tactical.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i32 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp ne i32 %2, 0
@@ -83,7 +83,7 @@ entry:
   ret i1 %5
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -109,7 +109,6 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; node/optimized/stream.ll
 ; nori/optimized/nanovg.c.ll
-; nuttx/optimized/fs_findblockdriver.c.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oniguruma/optimized/regcomp.ll
@@ -131,7 +130,7 @@ entry:
 ; yosys/optimized/deminout.ll
 ; yosys/optimized/peepopt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
@@ -140,8 +139,7 @@ entry:
   ret i1 %5
 }
 
-; 77 occurrences:
-; abc/optimized/ifSeq.c.ll
+; 74 occurrences:
 ; cmake/optimized/archive_acl.c.ll
 ; git/optimized/read-cache.ll
 ; git/optimized/sequencer.ll
@@ -162,7 +160,6 @@ entry:
 ; linux/optimized/drm_mode_object.ll
 ; linux/optimized/evxface.ll
 ; linux/optimized/extents.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/fork.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/hcd-pci.ll
@@ -186,7 +183,6 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
-; nuttx/optimized/sched_waitpid.c.ll
 ; openjdk/optimized/cmsxform.ll
 ; openjdk/optimized/jdapistd.ll
 ; openjdk/optimized/jdtrans.ll
@@ -219,7 +215,7 @@ entry:
 ; wireshark/optimized/proto.c.ll
 ; wireshark/optimized/traffic_tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
@@ -240,7 +236,6 @@ entry:
 ; git/optimized/update-index.ll
 ; gromacs/optimized/compiler.cpp.ll
 ; icu/optimized/uresbund.ll
-; libevent/optimized/event.c.ll
 ; libwebp/optimized/anim_decode.c.ll
 ; libwebp/optimized/anim_encode.c.ll
 ; linux/optimized/mlme.ll
@@ -280,6 +275,7 @@ entry:
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/trace.cpp.ll
@@ -305,24 +301,12 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 128
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne ptr %0, null
   %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/mean.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 508
-  %3 = icmp eq i32 %2, 0
-  %4 = icmp ne ptr %0, null
-  %5 = and i1 %3, %4
   ret i1 %5
 }
 

@@ -1,12 +1,11 @@
 
-; 2 occurrences:
-; abc/optimized/dsdTree.c.ll
+; 1 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i16 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ult i16 %0, 7
+  %3 = icmp ult i16 %0, 6
   %4 = select i1 %3, i64 1, i64 %2
   ret i64 %4
 }

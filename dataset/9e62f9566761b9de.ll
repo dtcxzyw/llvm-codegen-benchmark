@@ -16,9 +16,9 @@ define i128 @func0000000000000012(i128 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = xor i64 %4, %1
+  %5 = xor i64 %1, %4
   %6 = zext i64 %5 to i128
-  %7 = mul nuw i128 %6, %0
+  %7 = mul nuw i128 %0, %6
   ret i128 %7
 }
 

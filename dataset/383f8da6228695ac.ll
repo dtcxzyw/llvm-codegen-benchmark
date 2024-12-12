@@ -14,11 +14,13 @@ entry:
   ret float %4
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; gromacs/optimized/topsort.cpp.ll
 ; lightgbm/optimized/boosting.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_render.ll
 ; ncnn/optimized/gridsample_x86.cpp.ll
 ; ncnn/optimized/gridsample_x86_avx.cpp.ll
 ; ncnn/optimized/gridsample_x86_avx512.cpp.ll
@@ -71,7 +73,7 @@ entry:
 define float @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sitofp i32 %3 to float
   ret float %4
 }

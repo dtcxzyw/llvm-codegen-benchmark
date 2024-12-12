@@ -1,25 +1,26 @@
 
-%struct.loopargs_st.2518833 = type { ptr, ptr, ptr, ptr, ptr, ptr, ptr, i64, i64, i64, [7 x ptr], [7 x ptr], [7 x ptr], [7 x ptr], [2 x ptr], [2 x ptr], [22 x ptr], [22 x ptr], [24 x ptr], [2 x ptr], [2 x ptr], [1 x ptr], [1 x ptr], [1 x ptr], ptr, ptr, [24 x i64], [5 x ptr], ptr, ptr, ptr, ptr, [111 x ptr], [111 x ptr], [111 x ptr], [111 x i64], [111 x i64], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x i64], [111 x i64], [111 x ptr] }
-%"struct.folly::f14::detail::F14Chunk.2568933" = type { %"struct.std::array.2568934", i8, i8, %"struct.std::array.53.2568935" }
-%"struct.std::array.2568934" = type { [14 x i8] }
-%"struct.std::array.53.2568935" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2568893"] }
-%"union.std::aligned_storage<8, 8>::type.2568893" = type { [8 x i8] }
-%struct.CPUTLBEntryFull.2593593 = type { i64, i64, %struct.MemTxAttrs.2593595, i8, i8, [3 x i8], %union.anon.3.2593596 }
-%struct.MemTxAttrs.2593595 = type { i32 }
-%union.anon.3.2593596 = type { %struct.anon.4.2593597 }
-%struct.anon.4.2593597 = type { i8, i8, i8 }
-%struct.quic_pp_cipher.3245521 = type { ptr, [12 x i8] }
-%struct.hid_report_enum.3349968 = type { i32, %struct.list_head.3349962, [256 x ptr] }
-%struct.list_head.3349962 = type { ptr, ptr }
-%struct.mq.3668822 = type { ptr, i32, i32, ptr, ptr, i64, ptr, i64, ptr, i64, ptr, i8, ptr, ptr, [10 x %struct.mq_item.3668823] }
-%struct.mq_item.3668823 = type { i32, i64, i64 }
+%struct.loopargs_st.2633793 = type { ptr, ptr, ptr, ptr, ptr, ptr, ptr, i64, i64, i64, [7 x ptr], [7 x ptr], [7 x ptr], [7 x ptr], [2 x ptr], [2 x ptr], [22 x ptr], [22 x ptr], [24 x ptr], [2 x ptr], [2 x ptr], [1 x ptr], [1 x ptr], [1 x ptr], ptr, ptr, [24 x i64], [5 x ptr], ptr, ptr, ptr, ptr, [111 x ptr], [111 x ptr], [111 x ptr], [111 x i64], [111 x i64], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x i64], [111 x i64], [111 x ptr] }
+%"struct.folly::f14::detail::F14Chunk.2683307" = type { %"struct.std::array.2683308", i8, i8, %"struct.std::array.53.2683309" }
+%"struct.std::array.2683308" = type { [14 x i8] }
+%"struct.std::array.53.2683309" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2683267"] }
+%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
+%"union.std::aligned_storage<8, 8>::type.2684258" = type { [8 x i8] }
+%"struct.folly::f14::detail::F14Chunk.2684259" = type { %"struct.std::array.59.2684260", i8, i8, %"struct.std::array.60.2684261" }
+%"struct.std::array.59.2684260" = type { [14 x i8] }
+%"struct.std::array.60.2684261" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2684258"] }
+%struct.CPUTLBEntryFull.2707266 = type { i64, i64, %struct.MemTxAttrs.2707268, i8, i8, [3 x i8], %union.anon.3.2707269 }
+%struct.MemTxAttrs.2707268 = type { i32 }
+%union.anon.3.2707269 = type { %struct.anon.4.2707270 }
+%struct.anon.4.2707270 = type { i8, i8, i8 }
+%struct.quic_pp_cipher.3436945 = type { ptr, [12 x i8] }
+%struct.hid_report_enum.3538081 = type { i32, %struct.list_head.3538075, [256 x ptr] }
+%struct.list_head.3538075 = type { ptr, ptr }
 
-; 41 occurrences:
+; 32 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaEmbed.c.ll
-; abc/optimized/giaForce.c.ll
 ; abc/optimized/solver.c.ll
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -34,52 +35,38 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
-; folly/optimized/dynamic.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/goughcompile.cpp.ll
-; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/shengcompile.cpp.ll
+; hyperscan/optimized/stream.c.ll
 ; openjdk/optimized/chaitin.ll
 ; openjdk/optimized/coalesce.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/ifg.ll
 ; openjdk/optimized/indexSet.ll
 ; openssl/optimized/openssl-bin-speed.ll
-; proxygen/optimized/HTTPSession.cpp.ll
 ; raylib/optimized/rmodels.c.ll
-; spike/optimized/plic.ll
-; velox/optimized/BaseVector.cpp.ll
-; velox/optimized/DeserializationRegistry.cpp.ll
-; velox/optimized/Filter.cpp.ll
-; velox/optimized/JsonType.cpp.ll
+; stb/optimized/stb_connected_components.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000006f(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = zext i32 %0 to i64
-  %4 = getelementptr %struct.loopargs_st.2518833, ptr %1, i64 %2, i32 10, i64 %3
+  %4 = getelementptr nuw %struct.loopargs_st.2633793, ptr %1, i64 %2, i32 10, i64 %3
   ret ptr %4
 }
 
-; 153 occurrences:
-; abc/optimized/absGlaOld.c.ll
+; 88 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaEmbed.c.ll
-; abc/optimized/giaForce.c.ll
 ; abc/optimized/giaGlitch.c.ll
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaStr.c.ll
-; abc/optimized/lpkCut.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; assimp/optimized/AssbinLoader.cpp.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/Importer.cpp.ll
-; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
@@ -102,7 +89,6 @@ entry:
 ; folly/optimized/dynamic.cpp.ll
 ; folly/optimized/json.cpp.ll
 ; folly/optimized/json_patch.cpp.ll
-; gromacs/optimized/nsfactor.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff-common.cc.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
@@ -115,8 +101,6 @@ entry:
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; meshlab/optimized/meshselect.cpp.ll
-; opencv/optimized/calibinit.cpp.ll
 ; openjdk/optimized/chaitin.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-face.ll
@@ -127,9 +111,6 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-set.ll
 ; openjdk/optimized/ifg.ll
-; pbrt-v4/optimized/aggregate.cpp.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/media.cpp.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; proxygen/optimized/HeaderTable.cpp.ll
@@ -139,55 +120,81 @@ entry:
 ; proxygen/optimized/Service.cpp.ll
 ; proxygen/optimized/SynchronizedLruQuicPskCache.cpp.ll
 ; raylib/optimized/raudio.c.ll
-; spike/optimized/plic.ll
+; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_vorbis.c.ll
+; velox/optimized/ArrayDuplicates.cpp.ll
+; velox/optimized/AsyncDataCache.cpp.ll
+; velox/optimized/CastExpr.cpp.ll
+; velox/optimized/Expr.cpp.ll
+; velox/optimized/ExprCompiler.cpp.ll
+; velox/optimized/ExprToSubfieldFilter.cpp.ll
+; velox/optimized/Filter.cpp.ll
+; velox/optimized/InPredicate.cpp.ll
+; velox/optimized/JsonType.cpp.ll
+; velox/optimized/LambdaExpr.cpp.ll
+; velox/optimized/PlanNode.cpp.ll
+; velox/optimized/Re2Functions.cpp.ll
+; velox/optimized/ScanTracker.cpp.ll
+; velox/optimized/SsdFile.cpp.ll
+; velox/optimized/StringIdMap.cpp.ll
+; velox/optimized/SubscriptUtil.cpp.ll
+; velox/optimized/TimeZoneMap.cpp.ll
+; velox/optimized/Type.cpp.ll
+; velox/optimized/VectorEncoding.cpp.ll
+; yosys/optimized/SimpSolver.ll
+; yosys/optimized/Solver.ll
+; z3/optimized/sat_local_search.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007f(i32 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nuw %"struct.folly::f14::detail::F14Chunk.2683307", ptr %1, i64 %2, i32 3
+  %4 = zext nneg i32 %0 to i64
+  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %3, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 60 occurrences:
+; abc/optimized/absGlaOld.c.ll
+; abc/optimized/giaForce.c.ll
+; abc/optimized/giaGlitch.c.ll
+; abc/optimized/giaLf.c.ll
+; abc/optimized/giaStr.c.ll
+; abc/optimized/lpkCut.c.ll
+; abc/optimized/satSolver.c.ll
+; abc/optimized/satSolver2.c.ll
+; abc/optimized/satSolver3.c.ll
+; assimp/optimized/SIBImporter.cpp.ll
+; folly/optimized/dynamic.cpp.ll
+; gromacs/optimized/nsfactor.cpp.ll
+; llvm/optimized/CoverageMapping.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; meshlab/optimized/meshselect.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
+; pbrt-v4/optimized/aggregate.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/media.cpp.ll
+; spike/optimized/plic.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
-; taskflow/optimized/cancel.cpp.ll
 ; taskflow/optimized/composition.cpp.ll
-; taskflow/optimized/condition.cpp.ll
-; taskflow/optimized/corun.cpp.ll
 ; taskflow/optimized/dependent_async.cpp.ll
 ; taskflow/optimized/dependent_async_algorithm.cpp.ll
-; taskflow/optimized/do_while_loop.cpp.ll
-; taskflow/optimized/exception.cpp.ll
 ; taskflow/optimized/exclusive_scan.cpp.ll
-; taskflow/optimized/fibonacci.cpp.ll
-; taskflow/optimized/if_else.cpp.ll
 ; taskflow/optimized/inclusive_scan.cpp.ll
-; taskflow/optimized/limited_concurrency.cpp.ll
-; taskflow/optimized/multi_condition.cpp.ll
-; taskflow/optimized/nested_if_else.cpp.ll
-; taskflow/optimized/observer.cpp.ll
 ; taskflow/optimized/parallel_for.cpp.ll
-; taskflow/optimized/parallel_graph_pipeline.cpp.ll
 ; taskflow/optimized/parallel_sort.cpp.ll
-; taskflow/optimized/pipeline.cpp.ll
-; taskflow/optimized/pipeline_with_deferred_tokens.cpp.ll
-; taskflow/optimized/priority.cpp.ll
 ; taskflow/optimized/reduce.cpp.ll
-; taskflow/optimized/run.cpp.ll
-; taskflow/optimized/runtime.cpp.ll
 ; taskflow/optimized/scalable_pipeline.cpp.ll
 ; taskflow/optimized/scalable_pipeline_with_deferred_tokens.cpp.ll
-; taskflow/optimized/simple.cpp.ll
-; taskflow/optimized/subflow.cpp.ll
 ; taskflow/optimized/subflow_async.cpp.ll
-; taskflow/optimized/switch_case.cpp.ll
-; taskflow/optimized/taskflow_pipeline.cpp.ll
-; taskflow/optimized/text_pipeline.cpp.ll
-; taskflow/optimized/visualization.cpp.ll
-; taskflow/optimized/while_loop.cpp.ll
 ; velox/optimized/ArrayDistinct.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ArrayIntersectExcept.cpp.ll
-; velox/optimized/AsyncDataCache.cpp.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
-; velox/optimized/CastExpr.cpp.ll
 ; velox/optimized/EvalCtx.cpp.ll
-; velox/optimized/Expr.cpp.ll
-; velox/optimized/ExprCompiler.cpp.ll
 ; velox/optimized/ExprToSubfieldFilter.cpp.ll
 ; velox/optimized/Expressions.cpp.ll
 ; velox/optimized/Filter.cpp.ll
@@ -199,31 +206,44 @@ entry:
 ; velox/optimized/IsNull.cpp.ll
 ; velox/optimized/JsonFunctions.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
-; velox/optimized/LambdaExpr.cpp.ll
 ; velox/optimized/Not.cpp.ll
 ; velox/optimized/PlanNode.cpp.ll
 ; velox/optimized/Re2Functions.cpp.ll
-; velox/optimized/ScanTracker.cpp.ll
 ; velox/optimized/SequenceVector.cpp.ll
 ; velox/optimized/Split.cpp.ll
-; velox/optimized/SsdFile.cpp.ll
-; velox/optimized/StringIdMap.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
-; velox/optimized/TimeZoneMap.cpp.ll
 ; velox/optimized/ToUtf8.cpp.ll
 ; velox/optimized/Type.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
-; velox/optimized/VectorEncoding.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
-; yosys/optimized/SimpSolver.ll
-; yosys/optimized/Solver.ll
-; z3/optimized/sat_local_search.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000005f(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.2568933", ptr %1, i64 %2, i32 3
-  %4 = zext nneg i32 %0 to i64
-  %5 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2568893"], ptr %3, i64 0, i64 %4
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
+  %5 = zext nneg i32 %0 to i64
+  %6 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %4, i64 0, i64 %5
+  ret ptr %6
+}
+
+; 11 occurrences:
+; abc/optimized/giaForce.c.ll
+; folly/optimized/dynamic.cpp.ll
+; hyperscan/optimized/goughcompile.cpp.ll
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; hyperscan/optimized/shengcompile.cpp.ll
+; proxygen/optimized/HTTPSession.cpp.ll
+; spike/optimized/plic.ll
+; velox/optimized/BaseVector.cpp.ll
+; velox/optimized/DeserializationRegistry.cpp.ll
+; velox/optimized/Filter.cpp.ll
+; velox/optimized/JsonType.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000004f(i32 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.2684259", ptr %1, i64 %2, i32 3
+  %4 = zext i32 %0 to i64
+  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %3, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -237,10 +257,10 @@ entry:
 ; linux/optimized/virtio_ring.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000000c(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = zext i32 %0 to i64
-  %4 = getelementptr %struct.CPUTLBEntryFull.2593593, ptr %1, i64 %2, i32 5, i64 %3
+  %4 = getelementptr %struct.CPUTLBEntryFull.2707266, ptr %1, i64 %2, i32 5, i64 %3
   ret ptr %4
 }
 
@@ -258,34 +278,35 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-nbap.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000001c(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i32 %0 to i64
-  %4 = getelementptr %struct.CPUTLBEntryFull.2593593, ptr %1, i64 %2, i32 5, i64 %3
+  %4 = getelementptr %struct.CPUTLBEntryFull.2707266, ptr %1, i64 %2, i32 5, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-quic.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000007c(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr [2 x %struct.quic_pp_cipher.3245521], ptr %4, i64 0, i64 %5
+  %6 = getelementptr [2 x %struct.quic_pp_cipher.3436945], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; linux/optimized/hiddev.ll
+; wireshark/optimized/packet-nbap.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.hid_report_enum.3349968, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -2048
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 528
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr [256 x ptr], ptr %4, i64 0, i64 %5
+  %6 = getelementptr [64 x i32], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -294,22 +315,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.hid_report_enum.3349968, ptr %1, i64 %2
+  %3 = getelementptr %struct.hid_report_enum.3538081, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -2048
   %5 = zext i32 %0 to i64
   %6 = getelementptr [256 x ptr], ptr %4, i64 0, i64 %5
   ret ptr %6
-}
-
-; 2 occurrences:
-; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/stream.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(i32 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = zext i32 %0 to i64
-  %4 = getelementptr %struct.mq.3668822, ptr %1, i64 %2, i32 14, i64 %3
-  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -1,5 +1,6 @@
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/src.ll
 ; c3c/optimized/bigint.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -25,7 +26,8 @@ entry:
   ret i64 %4
 }
 
-; 152 occurrences:
+; 150 occurrences:
+; boost/optimized/topology.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; linux/optimized/vmstat.ll
 ; llvm/optimized/DLangDemangle.cpp.ll
@@ -116,13 +118,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll

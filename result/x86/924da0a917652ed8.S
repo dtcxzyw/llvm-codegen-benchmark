@@ -1,10 +1,10 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	xorl	%eax, %eax
 	vucomiss	%xmm0, %xmm1
 	setbe	%al
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	xorl	%eax, %eax
 	vucomiss	%xmm1, %xmm0
 	setbe	%al

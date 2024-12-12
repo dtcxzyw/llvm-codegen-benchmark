@@ -20,7 +20,7 @@ entry:
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/IRTranslator.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i16 %0, i8 %1) #0 {
+define i16 @func0000000000000021(i16 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i16 %0, 8
   %3 = icmp eq i8 %1, 14

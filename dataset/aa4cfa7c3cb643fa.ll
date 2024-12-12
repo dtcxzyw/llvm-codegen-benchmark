@@ -1,9 +1,10 @@
 
-; 12 occurrences:
+; 16 occurrences:
 ; coreutils-rs/optimized/4ws6541n7p4pbb05.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
@@ -12,8 +13,11 @@
 ; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; syn/optimized/59s55fjcmu2d325w.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = freeze i32 %2
@@ -31,7 +35,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = freeze i32 %2
@@ -53,7 +57,7 @@ entry:
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/TpiStream.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = freeze i32 %2
@@ -77,7 +81,7 @@ entry:
 ; eastl/optimized/TestBitset.cpp.ll
 ; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = freeze i32 %2

@@ -61,13 +61,13 @@
 define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, -3
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 35 occurrences:
+; 33 occurrences:
 ; abc/optimized/cnfWrite.c.ll
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/saigConstr2.c.ll
@@ -84,12 +84,10 @@ entry:
 ; meshlab/optimized/solver.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
 ; openblas/optimized/dbdsdc.c.ll
-; openblas/optimized/dstein.c.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/nonrigid_icp.cpp.ll
@@ -107,9 +105,22 @@ entry:
 define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; ncnn/optimized/convolution_x86_avx2.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %2, 3
+  %4 = add nsw i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -137,7 +148,7 @@ entry:
 define ptr @func0000000000000032(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 3
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i32, ptr %0, i64 %5
   ret ptr %6
@@ -171,7 +182,7 @@ entry:
 define ptr @func0000000000000036(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 720
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i64, ptr %0, i64 %5
   ret ptr %6
@@ -185,7 +196,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i32, ptr %0, i64 %5
   ret ptr %6
@@ -199,7 +210,7 @@ entry:
 define ptr @func0000000000000014(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 66
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i64, ptr %0, i64 %5
   ret ptr %6
@@ -211,7 +222,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 6
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr float, ptr %0, i64 %5
   ret ptr %6

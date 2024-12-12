@@ -1,10 +1,10 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	movl	%edi, %eax
 	xorl	%esi, %eax
 	andb	$4, %al
 	shrb	$2, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andb	$7, %sil
 	cmpb	$5, %sil
 	sete	%cl
@@ -13,7 +13,7 @@ func000000000000001c:                   # @func000000000000001c
 	setne	%al
 	xorb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	andb	$7, %sil
 	cmpb	$5, %sil
 	setne	%cl
@@ -22,7 +22,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	sete	%al
 	xorb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andb	$-2, %sil
 	cmpb	$56, %sil
 	sete	%cl

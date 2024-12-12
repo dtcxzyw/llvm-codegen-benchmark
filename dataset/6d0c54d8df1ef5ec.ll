@@ -15,11 +15,11 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; regex-rs/optimized/33whcn8n29l9c6ys.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = and i64 %2, 65534
-  %4 = getelementptr nusw [65536 x i16], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [65536 x i16], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -27,34 +27,35 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = and i64 %2, 65534
-  %4 = getelementptr nusw [65536 x i16], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [65536 x i16], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = and i64 %2, 2
-  %4 = getelementptr nusw [4 x i32], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [4 x i32], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; clamav/optimized/asn1.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = and i64 %2, 4294967294
-  %4 = getelementptr nusw [65 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [65 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

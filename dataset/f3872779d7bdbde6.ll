@@ -9,8 +9,8 @@
 define i1 @func0000000000000001(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
-  %4 = xor i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = xor i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -23,7 +23,7 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = xor i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

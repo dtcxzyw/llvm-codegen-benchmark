@@ -3,15 +3,15 @@
 func0000000000000006:                   # @func0000000000000006
 	vmulsd	.LCPI0_0(%rip), %xmm0, %xmm0
 	vcvttsd2si	%xmm0, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
 .LCPI1_0:
 	.quad	0x41f0000000000000              # double 4294967296
 func0000000000000001:                   # @func0000000000000001
 	vmulsd	.LCPI1_0(%rip), %xmm0, %xmm0
 	vcvttsd2si	%xmm0, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 .LCPI2_0:
@@ -19,6 +19,6 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000004:                   # @func0000000000000004
 	vmulsd	.LCPI2_0(%rip), %xmm0, %xmm0
 	vcvttsd2si	%xmm0, %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq

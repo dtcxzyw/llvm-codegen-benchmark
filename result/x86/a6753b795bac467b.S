@@ -14,11 +14,11 @@ func0000000000000002:                   # @func0000000000000002
 	orq	%rsi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	notb	%dl
-	movzbl	%dl, %eax
-	andl	$1, %eax
-	shll	$5, %eax
-	andl	$187, %esi
+	xorl	%ecx, %ecx
+	testb	$1, %dl
+	movl	$6, %eax
+	cmoveq	%rcx, %rax
+	andq	$-256, %rsi
 	orq	%rdi, %rsi
 	orq	%rsi, %rax
 	retq

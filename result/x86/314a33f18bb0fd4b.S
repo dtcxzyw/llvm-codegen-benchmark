@@ -21,5 +21,5 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000006:                   # @func0000000000000006
 	movl	%edi, %eax
 	testl	%edx, %edx
-	cmovnsl	%esi, %eax
+	cmovgl	%esi, %eax
 	retq

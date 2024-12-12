@@ -10,7 +10,7 @@
 define i8 @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fdiv float %1, %0
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fptoui float %3 to i8
   ret i8 %4
 }

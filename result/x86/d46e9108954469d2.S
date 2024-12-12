@@ -40,5 +40,5 @@ func0000000000000004:                   # @func0000000000000004
 func000000000000000f:                   # @func000000000000000f
 	andl	$1, %esi
 	addq	%rdi, %rsi
-	leaq	(%rsi,%rsi,8), %rax
+	imulq	$1441151881, %rsi, %rax         # imm = 0x55E63B89
 	retq

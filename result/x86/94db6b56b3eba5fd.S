@@ -8,7 +8,7 @@ func0000000000000028:                   # @func0000000000000028
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	xorl	%ecx, %ecx
 	cmpl	$65536, %edx                    # imm = 0x10000
 	setb	%cl
@@ -18,7 +18,7 @@ func0000000000000010:                   # @func0000000000000010
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	cmpl	$65536, %edx                    # imm = 0x10000
 	movl	$4, %ecx
 	sbbq	$0, %rcx
@@ -27,13 +27,12 @@ func0000000000000013:                   # @func0000000000000013
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
-	xorl	%eax, %eax
-	cmpl	$2, %edx
-	setl	%al
-	leaq	32(,%rax,4), %rcx
-	xorl	%eax, %eax
+func0000000000000010:                   # @func0000000000000010
+	cmpl	$65536, %edx                    # imm = 0x10000
+	movl	$4, %ecx
+	sbbq	$0, %rcx
 	testb	$1, %sil
+	movl	$2, %eax
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq

@@ -8,3 +8,8 @@ func0000000000000073:                   # @func0000000000000073
 	shlq	$3, %rdi
 	leaq	24(%rdi,%rdi,2), %rax
 	retq
+func0000000000000043:                   # @func0000000000000043
+	decl	%edi
+	shlq	$3, %rdi
+	leaq	(%rdi,%rdi,2), %rax
+	retq

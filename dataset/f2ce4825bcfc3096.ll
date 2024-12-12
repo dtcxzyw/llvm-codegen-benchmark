@@ -1,15 +1,14 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; libevent/optimized/buffer.c.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/ata_piix.ll
-; linux/optimized/gso.ll
 ; linux/optimized/i8042.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_cx0_phy.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/InstCombineMulDivRem.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll

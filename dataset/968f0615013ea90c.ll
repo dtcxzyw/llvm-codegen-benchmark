@@ -1,7 +1,6 @@
 
 ; 29 occurrences:
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; eastl/optimized/EARandom.cpp.ll
 ; faiss/optimized/utils.cpp.ll
 ; libwebp/optimized/rescaler.c.ll
@@ -29,6 +28,7 @@
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; tokio-rs/optimized/r9h5225tdo2hxm6.ll
 ; tokio-rs/optimized/rq81hdouiclvz49.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:

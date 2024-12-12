@@ -17,7 +17,7 @@
 	.zero	1
 .LCPI0_1:
 	.long	3                               # 0x3
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	vpmovzxbd	%xmm1, %ymm2            # ymm2 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
 	vpcmpnleub	.LCPI0_0(%rip), %xmm1, %k1
 	vmovdqa32	%ymm0, %ymm2 {%k1}

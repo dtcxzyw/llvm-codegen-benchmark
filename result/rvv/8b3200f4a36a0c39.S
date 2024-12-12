@@ -16,7 +16,7 @@ func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v12, v12, 1
 	vsrl.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000001b:                   # @func000000000000001b
 	li	a0, 58

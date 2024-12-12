@@ -4,11 +4,18 @@ func0000000000000006:                   # @func0000000000000006
 	movl	%edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
+	movq	%rdi, %rax
 	testl	%edx, %edx
-	cmovneq	%rsi, %rdi
-	movl	%edi, %eax
+	cmovneq	%rsi, %rax
+	andl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	retq
 func0000000000000004:                   # @func0000000000000004
+	movq	%rdi, %rax
+	cmpl	$2, %edx
+	cmovaeq	%rsi, %rax
+	andl	$15, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
 	movq	%rdi, %rax
 	cmpl	$2, %edx
 	cmovaeq	%rsi, %rax

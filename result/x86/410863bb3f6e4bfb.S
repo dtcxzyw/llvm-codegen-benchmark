@@ -11,9 +11,3 @@ func0000000000000001:                   # @func0000000000000001
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	testb	%dl, %dl
-	setns	%al
-	andb	%dil, %sil
-	andb	%sil, %al
-	retq

@@ -1,14 +1,12 @@
 
-; 12 occurrences:
-; linux/optimized/ptp_kvm_x86.ll
+; 10 occurrences:
+; boost/optimized/area.ll
 ; linux/optimized/pvclock.ll
-; linux/optimized/vclock_gettime.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openexr/optimized/ImfRle.cpp.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; soc-simulator/optimized/verilated.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_mulAddF16.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll

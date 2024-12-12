@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; hyperscan/optimized/rose_build_matchers.cpp.ll
 ; lief/optimized/psa_crypto.c.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
 ; verilator/optimized/V3SplitVar.cpp.ll
 ; wireshark/optimized/packet-gsm_gsup.c.ll
 ; Function Attrs: nounwind

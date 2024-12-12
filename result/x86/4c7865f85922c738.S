@@ -11,7 +11,7 @@ func0000000000000018:                   # @func0000000000000018
 	andb	%dil, %al
 	retq
 func0000000000000010:                   # @func0000000000000010
-	cmpb	$64, %dl
+	cmpb	$8, %dl
 	setae	%al
 	orb	%sil, %al
 	andb	%dil, %al

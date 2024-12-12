@@ -8,35 +8,46 @@ func0000000000000040:                   # @func0000000000000040
 	addq	%rsi, %rax
 	leaq	8(%rdi,%rax), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000003f:                   # @func000000000000003f
 	movzwl	%dx, %eax
 	addq	%rsi, %rax
-	leaq	2(%rdi,%rax), %rax
+	leaq	46(%rdi,%rax), %rax
 	retq
-func0000000000000020:                   # @func0000000000000020
+func000000000000003e:                   # @func000000000000003e
 	movzwl	%dx, %eax
 	addq	%rsi, %rax
-	leaq	-1(%rdi,%rax), %rax
+	leaq	1(%rdi,%rax), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000007f:                   # @func000000000000007f
+	movzwl	%dx, %eax
+	addq	%rsi, %rax
+	leaq	1(%rdi,%rax), %rax
+	retq
+func0000000000000030:                   # @func0000000000000030
+	movzwl	%dx, %eax
+	shll	$5, %eax
+	addq	%rsi, %rax
+	leaq	35(%rdi,%rax), %rax
+	retq
+func000000000000000c:                   # @func000000000000000c
 	movzwl	%dx, %eax
 	addq	%rsi, %rax
 	shlq	$4, %rdi
 	leaq	8(%rdi,%rax), %rax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func000000000000007e:                   # @func000000000000007e
 	movzwl	%dx, %eax
 	shll	$5, %eax
 	addq	%rsi, %rax
 	shlq	$5, %rdi
 	leaq	32(%rdi,%rax), %rax
 	retq
-func0000000000000060:                   # @func0000000000000060
+func0000000000000070:                   # @func0000000000000070
 	movzwl	%dx, %eax
 	leaq	(%rsi,%rax,2), %rax
 	leaq	-15616(%rax,%rdi,2), %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func000000000000003c:                   # @func000000000000003c
 	movzwl	%dx, %eax
 	leaq	(%rsi,%rax,2), %rax
 	leaq	32(%rax,%rdi,2), %rax

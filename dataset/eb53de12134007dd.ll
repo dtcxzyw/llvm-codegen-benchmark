@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; cpython/optimized/long.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; eastl/optimized/EAScanfCore.cpp.ll
@@ -18,7 +18,6 @@
 ; pcg-cpp/optimized/pcg-demo.cpp.ll
 ; postgres/optimized/localtime.ll
 ; postgres/optimized/nodeWindowAgg.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/monitor_hmp.c.ll
 ; qemu/optimized/optimize.c.ll
 ; qemu/optimized/util_cutils.c.ll
@@ -40,7 +39,7 @@ entry:
   ret i64 %3
 }
 
-; 46 occurrences:
+; 44 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; cpython/optimized/mpdecimal.ll
 ; cvc5/optimized/cadical.cpp.ll
@@ -75,8 +74,6 @@ entry:
 ; quantlib/optimized/numericaldifferentiation.ll
 ; quickjs/optimized/libbf.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64_r_minMag.ll
 ; spike/optimized/f64_to_i64_r_minMag.ll

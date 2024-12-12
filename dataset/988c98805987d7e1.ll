@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/timekeeping.ll
-; linux/optimized/vclock_gettime.ll
 ; qemu/optimized/block_qcow.c.ll
 ; qemu/optimized/block_qcow2-bitmap.c.ll
 ; qemu/optimized/block_qcow2.c.ll
@@ -42,7 +41,7 @@ entry:
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %3, %0
@@ -50,7 +49,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; Function Attrs: nounwind
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %3, %0

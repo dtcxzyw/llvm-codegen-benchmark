@@ -19,8 +19,8 @@ func000000000000001b:                   // @func000000000000001b
 	mul	x8, x2, x8
 	extr	x8, x9, x8, #51
 	lsr	x9, x9, #51
-	adds	x0, x8, x0
-	adc	x1, x9, x1
+	adds	x0, x0, x8
+	adc	x1, x1, x9
 	ret
                                         // -- End function
 func0000000000000012:                   // @func0000000000000012
@@ -37,7 +37,7 @@ func000000000000001a:                   // @func000000000000001a
 	mov	x8, #-1                         // =0xffffffffffffffff
 	umulh	x8, x2, x8
 	sub	x8, x8, x3
-	adds	x0, x8, x0
+	adds	x0, x0, x8
 	cinc	x1, x1, hs
 	ret
                                         // -- End function

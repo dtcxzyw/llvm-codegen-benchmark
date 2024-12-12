@@ -8,7 +8,7 @@
 define i32 @func000000000000001e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 2
   %5 = and i32 %4, 252
   ret i32 %5
@@ -26,16 +26,20 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 5 occurrences:
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/message.ll
 ; clamav/optimized/Bra.c.ll
 ; cmake/optimized/sparc.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %0, 2
-  %3 = add i32 %2, %1
-  %4 = and i32 %3, 4128768
-  ret i32 %4
+  %2 = shl i32 %1, 4
+  %3 = add i32 %2, %0
+  %4 = lshr i32 %3, 24
+  %5 = and i32 %4, 240
+  ret i32 %5
 }
 
 ; 4 occurrences:
@@ -59,7 +63,7 @@ entry:
 define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 10
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 5
   %5 = and i32 %4, 63
   ret i32 %5

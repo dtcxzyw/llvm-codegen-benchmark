@@ -12,29 +12,12 @@
 ; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
 ; rocksdb/optimized/block_based_table_iterator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 80
   %5 = icmp sge i64 %4, %0
   ret i1 %5
-}
-
-; 6 occurrences:
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
-; eastl/optimized/TestVectorMap.cpp.ll
-; eastl/optimized/TestVectorSet.cpp.ll
-; libquic/optimized/hpack_header_table.cc.ll
-; rocksdb/optimized/block_based_table_iterator.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 80
-  %5 = sub nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 6
-  ret i1 %6
 }
 
 ; 6 occurrences:
@@ -45,7 +28,7 @@ entry:
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
@@ -57,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_physical_plan.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
@@ -68,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/beblid.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
@@ -80,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/shengcompile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 96
@@ -89,10 +72,25 @@ entry:
   ret i1 %6
 }
 
+; 4 occurrences:
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 48
+  %5 = sub nsw i64 %4, %0
+  %6 = icmp ult i64 %5, 4
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24

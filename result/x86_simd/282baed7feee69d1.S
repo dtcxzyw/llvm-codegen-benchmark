@@ -35,7 +35,7 @@ func000000000000000a:                   # @func000000000000000a
 	.long	2                               # 0x2
 .LCPI5_1:
 	.long	31                              # 0x1f
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpcmpnleud	.LCPI5_0(%rip){1to8}, %ymm0, %k1
 	vxorps	.LCPI5_1(%rip){1to8}, %ymm1, %ymm0 {%k1} {z}
 	retq

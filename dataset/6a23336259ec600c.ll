@@ -49,7 +49,7 @@
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2305843009213693951
   %3 = add nuw nsw i64 %2, 1
@@ -63,7 +63,7 @@ entry:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483647
   %3 = add nsw i64 %2, -1
@@ -80,7 +80,7 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775807
   %3 = add nuw i64 %2, 1
@@ -93,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = add nsw i64 %2, -1

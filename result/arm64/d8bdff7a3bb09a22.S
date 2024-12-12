@@ -1,24 +1,13 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	bic	v1.4h, #255, lsl #8
-	movi	v2.4s, #48
-	ushr	v1.4h, v1.4h, #4
-	and	v0.16b, v0.16b, v2.16b
-	ushll	v1.4s, v1.4h, #0
-	orr	v0.16b, v0.16b, v1.16b
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	and	w0, w0, #0x30
+	bfxil	w0, w1, #4, #4
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	bic	v1.4h, #255, lsl #8
-	movi	v2.4s, #127
-	ushr	v1.4h, v1.4h, #5
-	and	v0.16b, v0.16b, v2.16b
-	ushll	v1.4s, v1.4h, #0
-	orr	v0.16b, v0.16b, v1.16b
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	and	w8, w1, #0xe0
+	and	w9, w0, #0x7f
+	orr	w0, w9, w8, lsr #5
 	ret
                                         // -- End function

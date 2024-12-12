@@ -1,5 +1,6 @@
 
-; 224 occurrences:
+; 225 occurrences:
+; boost/optimized/context.ll
 ; c3c/optimized/llvm_codegen.c.ll
 ; casadi/optimized/cs_add.c.ll
 ; casadi/optimized/external.cpp.ll
@@ -127,7 +128,6 @@
 ; llvm/optimized/PredicateInfo.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
 ; llvm/optimized/ProvenanceAnalysis.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
@@ -224,6 +224,7 @@
 ; wireshark/optimized/tvbuff_zlib.c.ll
 ; yosys/optimized/opt_expr.ll
 ; z3/optimized/bv2fpa_converter.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, ptr %2) #0 {
 entry:
@@ -233,17 +234,15 @@ entry:
   ret i1 %5
 }
 
-; 231 occurrences:
+; 220 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/mainReal.c.ll
 ; arrow/optimized/memory_pool.cc.ll
 ; assimp/optimized/BlenderCustomData.cpp.ll
 ; c3c/optimized/semantic_analyser.c.ll
 ; casadi/optimized/cs_chol.c.ll
-; casadi/optimized/cs_cholsol.c.ll
 ; casadi/optimized/cs_counts.c.ll
 ; casadi/optimized/cs_lu.c.ll
-; casadi/optimized/cs_lusol.c.ll
 ; casadi/optimized/cs_qr.c.ll
 ; casadi/optimized/cs_qrsol.c.ll
 ; casadi/optimized/cs_scc.c.ll
@@ -283,11 +282,9 @@ entry:
 ; linux/optimized/hpet.ll
 ; linux/optimized/ibss.ll
 ; linux/optimized/ndisc.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/pmsr.ll
 ; linux/optimized/s2idle.ll
-; linux/optimized/seq_info.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/virtio_blk.ll
 ; linux/optimized/virtio_console.ll
@@ -365,9 +362,6 @@ entry:
 ; postgres/optimized/subselect.ll
 ; postgres/optimized/tlist.ll
 ; postgres/optimized/tupdesc.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/crs.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/oputils.cpp.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
@@ -398,12 +392,10 @@ entry:
 ; wireshark/optimized/decode_as_model.cpp.ll
 ; wireshark/optimized/display_filter_edit.cpp.ll
 ; wireshark/optimized/dissector_tables_model.cpp.ll
-; wireshark/optimized/dissector_tables_view.cpp.ll
 ; wireshark/optimized/enabled_protocols_model.cpp.ll
 ; wireshark/optimized/expert_info_dialog.cpp.ll
 ; wireshark/optimized/expert_info_model.cpp.ll
 ; wireshark/optimized/expert_info_proxy_model.cpp.ll
-; wireshark/optimized/expert_info_view.cpp.ll
 ; wireshark/optimized/export_object_dialog.cpp.ll
 ; wireshark/optimized/export_objects_model.cpp.ll
 ; wireshark/optimized/extcap.c.ll
@@ -425,7 +417,6 @@ entry:
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ldap.c.ll
-; wireshark/optimized/packet-lin.c.ll
 ; wireshark/optimized/packet-mbim.c.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; wireshark/optimized/packet-rpcrdma.c.ll
@@ -449,7 +440,6 @@ entry:
 ; wireshark/optimized/req_resp_hdrs.c.ll
 ; wireshark/optimized/rsa_keys_frame.cpp.ll
 ; wireshark/optimized/supported_protocols_model.cpp.ll
-; wireshark/optimized/tabnav_tree_view.cpp.ll
 ; wireshark/optimized/tabnav_tree_widget.cpp.ll
 ; wireshark/optimized/timeline_delegate.cpp.ll
 ; wireshark/optimized/traffic_tab.cpp.ll

@@ -23,7 +23,7 @@ func0000000000000019:                   # @func0000000000000019
 	cmovll	%edi, %esi
 	leal	1(%rsi), %eax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000052:                   # @func0000000000000052
 	cmpl	%edx, %edi
 	cmovbl	%edi, %esi
 	leal	1(%rsi), %eax

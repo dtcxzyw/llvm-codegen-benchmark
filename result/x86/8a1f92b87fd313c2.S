@@ -20,9 +20,3 @@ func0000000000000001:                   # @func0000000000000001
 	andl	$1, %eax
 	leaq	16(%rsi,%rax,8), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	andq	$-4, %rsi
-	leaq	12(%rsi), %rax
-	testb	$1, %dil
-	cmovneq	%rsi, %rax
-	retq

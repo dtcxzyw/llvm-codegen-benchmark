@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	li	a0, -2
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma

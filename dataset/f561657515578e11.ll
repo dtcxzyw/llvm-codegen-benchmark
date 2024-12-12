@@ -1,9 +1,11 @@
 
-; 21 occurrences:
+; 23 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
@@ -39,7 +41,7 @@ entry:
   %3 = add nuw nsw i64 %2, 4095
   %4 = and i64 %3, 4190208
   %5 = sub nsw i64 %4, %1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

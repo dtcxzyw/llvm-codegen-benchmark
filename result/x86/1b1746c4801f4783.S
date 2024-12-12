@@ -38,9 +38,15 @@ func0000000000000011:                   # @func0000000000000011
 	shll	$8, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000e:                   # @func000000000000000e
 	movl	%esi, %eax
 	subl	%edx, %eax
 	shll	$9, %eax
+	orl	%edi, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movl	%esi, %eax
+	subl	%edx, %eax
+	shll	$4, %eax
 	orl	%edi, %eax
 	retq

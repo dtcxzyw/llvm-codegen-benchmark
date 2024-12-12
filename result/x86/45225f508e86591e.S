@@ -12,14 +12,14 @@ func0000000000000002:                   # @func0000000000000002
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	andl	$7936, %edx                     # imm = 0x1F00
 	cmpl	$257, %edx                      # imm = 0x101
 	setae	%al
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	andl	$124, %edx
 	cmpl	$28, %edx
 	setb	%al

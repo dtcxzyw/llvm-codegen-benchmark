@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-lib-asn1_dsa.ll
 ; openssl/optimized/libcrypto-shlib-asn1_dsa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000058(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 1
   %3 = icmp ne i8 %0, 2
@@ -55,7 +55,7 @@ entry:
 ; openjdk/optimized/unsigned5.ll
 ; openjdk/optimized/vframe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000682(i8 %0, i64 %1) #0 {
+define i1 @func0000000000001902(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 3
   %3 = icmp ult i8 %0, -64
@@ -67,7 +67,7 @@ entry:
 ; libpng/optimized/png.c.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000842(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 5
   %3 = icmp eq i8 %0, 0
@@ -76,9 +76,20 @@ entry:
 }
 
 ; 1 occurrences:
+; php/optimized/ZendAccelerator.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000302(i8 %0, i64 %1) #0 {
+entry:
+  %2 = icmp eq i64 %1, 16
+  %3 = icmp ne i8 %0, 58
+  %4 = or i1 %2, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000102(i8 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 292275055
   %3 = icmp ult i64 %2, 584554050
@@ -90,19 +101,30 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000090(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000510(i8 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = icmp ult i64 %2, -8
-  %4 = icmp ult i8 %0, 64
+  %4 = icmp samesign ult i8 %0, 64
   %5 = or i1 %3, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
+; boost/optimized/cstring_ref.ll
+; Function Attrs: nounwind
+define i1 @func0000000000001b02(i8 %0, i64 %1) #0 {
+entry:
+  %2 = icmp eq i64 %1, 2
+  %3 = icmp ne i8 %0, 0
+  %4 = or i1 %2, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; linux/optimized/cipso_ipv4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000622(i8 %0, i64 %1) #0 {
+define i1 @func0000000000001842(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 4
   %3 = icmp eq i8 %0, 0
@@ -113,7 +135,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000118(i8 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -2147483584
   %3 = icmp ult i64 %2, -2147483648

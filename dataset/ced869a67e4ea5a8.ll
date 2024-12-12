@@ -1,30 +1,29 @@
 
-%class.btVector3.2705784 = type { [4 x float] }
-%struct.btSpatialForceVector.2705790 = type { %class.btVector3.2705784, %class.btVector3.2705784 }
-%struct.btSpatialMotionVector.2705786 = type { %class.btVector3.2705784, %class.btVector3.2705784 }
+%class.btVector3.2818499 = type { [4 x float] }
+%struct.btSpatialForceVector.2818505 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
+%struct.btSpatialMotionVector.2818501 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
 
 ; 2 occurrences:
 ; bullet3/optimized/btMultiBody.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %class.btVector3.2705784, ptr %0, i64 %3
+  %4 = getelementptr %class.btVector3.2818499, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 64
-  %6 = getelementptr %struct.btSpatialForceVector.2705790, ptr %5, i64 %1
+  %6 = getelementptr %struct.btSpatialForceVector.2818505, ptr %5, i64 %1
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; bullet3/optimized/btMultiBody.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000005b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %class.btVector3.2705784, ptr %0, i64 %3
-  %5 = getelementptr %struct.btSpatialMotionVector.2705786, ptr %4, i64 %1
+  %4 = getelementptr %class.btVector3.2818499, ptr %0, i64 %3
+  %5 = getelementptr %struct.btSpatialMotionVector.2818501, ptr %4, i64 %1
   ret ptr %5
 }
 
@@ -42,19 +41,6 @@ entry:
 }
 
 ; 1 occurrences:
-; darktable/optimized/introspection_demosaic.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 8
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
-  %6 = getelementptr float, ptr %5, i64 %1
-  %7 = getelementptr i8, ptr %6, i64 4
-  ret ptr %7
-}
-
-; 1 occurrences:
 ; abc/optimized/cmdUtils.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000050(ptr %0, i64 %1, i32 %2) #0 {
@@ -64,6 +50,19 @@ entry:
   %5 = getelementptr i8, ptr %4, i64 -16
   %6 = getelementptr ptr, ptr %5, i64 %1
   ret ptr %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define ptr @func000000000000009a(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw i32 %2, 2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %6 = getelementptr i32, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 4
+  ret ptr %7
 }
 
 ; 1 occurrences:
@@ -77,6 +76,18 @@ entry:
   %6 = getelementptr i8, ptr %5, i64 %1
   %7 = getelementptr i8, ptr %6, i64 2
   ret ptr %7
+}
+
+; 1 occurrences:
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005a(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i16, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 30
+  %6 = getelementptr i16, ptr %5, i64 %1
+  ret ptr %6
 }
 
 ; 1 occurrences:

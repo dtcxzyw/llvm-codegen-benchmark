@@ -1,6 +1,7 @@
 
-; 259 occurrences:
+; 265 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/h16_rule.ll
 ; c3c/optimized/context.c.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -123,7 +124,8 @@
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/JumpThreading.cpp.ll
 ; llvm/optimized/LoopInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaPPC.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/isocline.c.ll
@@ -259,6 +261,10 @@
 ; wireshark/optimized/vwr.c.ll
 ; yosys/optimized/liberty.ll
 ; z3/optimized/ast_smt_pp.cpp.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i8 %0) #0 {
 entry:

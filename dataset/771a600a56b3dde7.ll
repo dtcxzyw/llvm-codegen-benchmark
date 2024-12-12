@@ -1,11 +1,10 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/logips2pp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; node/optimized/libnode.string_bytes.ll
 ; opencv/optimized/persistence_base64_encoding.cpp.ll

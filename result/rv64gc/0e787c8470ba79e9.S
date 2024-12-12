@@ -6,11 +6,11 @@ func000000000000001d:                   # @func000000000000001d
 	or	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
-	slli	a1, a1, 48
-	slli	a0, a0, 32
-	srli	a1, a1, 48
-	slli	a1, a1, 8
-	srli	a0, a0, 8
+	slli	a1, a1, 32
+	slli	a0, a0, 48
+	srli	a1, a1, 8
+	srli	a0, a0, 48
+	slli	a0, a0, 8
 	or	a0, a0, a1
 	ret
 func000000000000003d:                   # @func000000000000003d

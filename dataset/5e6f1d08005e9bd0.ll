@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 53 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; git/optimized/log.ll
@@ -47,6 +47,11 @@
 ; wireshark/optimized/packet-snmp.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/packet-zbee-nwk-gp.c.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
@@ -57,7 +62,7 @@ entry:
   ret i1 %5
 }
 
-; 40 occurrences:
+; 35 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cpython/optimized/compile.ll
@@ -71,15 +76,6 @@ entry:
 ; llvm/optimized/Constants.cpp.ll
 ; llvm/optimized/ELF.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; minetest/optimized/localplayer.cpp.ll
@@ -97,21 +93,28 @@ entry:
 ; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-quakeworld.c.ll
 ; wireshark/optimized/packet-rpcrdma.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; hdf5/optimized/H5Otest.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; openusd/optimized/reconinter.c.ll
 ; wireshark/optimized/packet-btrfcomm.c.ll
@@ -125,19 +128,26 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 14 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
+; boost/optimized/ipv6_address_rule.ll
+; boost/optimized/ipvfuture_rule.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; openjdk/optimized/vectornode.ll
 ; php/optimized/zend_ast.ll
 ; postgres/optimized/formatting.ll
 ; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
+; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; wireshark/optimized/packet-radius.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 8
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -153,7 +163,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, 96
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

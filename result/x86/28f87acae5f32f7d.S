@@ -1,12 +1,6 @@
-func000000000000000d:                   # @func000000000000000d
-	movswl	%si, %eax
-	sarl	$15, %eax
-	andl	%edi, %eax
-	movzwl	%ax, %eax
-	retq
-func0000000000000009:                   # @func0000000000000009
-	cmpw	$120, %si
-	movl	$30, %eax
+func0000000000000029:                   # @func0000000000000029
+	xorl	%eax, %eax
+	cmpw	$6, %si
 	cmovbl	%edi, %eax
 	movzwl	%ax, %eax
 	retq

@@ -46,10 +46,10 @@
 define i32 @func0000000000000000(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = trunc i64 %4 to i32
   %6 = xor i32 %5, -1
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

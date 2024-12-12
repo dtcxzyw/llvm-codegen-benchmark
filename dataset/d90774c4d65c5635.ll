@@ -1,9 +1,11 @@
 
-; 14 occurrences:
+; 16 occurrences:
 ; clamav/optimized/libfreshclam_internal.c.ll
 ; cpython/optimized/floatobject.ll
 ; cpython/optimized/mathmodule.ll
 ; darktable/optimized/introspection_ashift.c.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; hermes/optimized/DateUtil.cpp.ll
 ; ockam-rs/optimized/3spcfx0kj7tua4em.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; oiio/optimized/strutil.cpp.ll

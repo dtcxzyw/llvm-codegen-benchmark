@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vptestnmd	%ymm1, %ymm1, %k0 {%k1}
@@ -7,7 +7,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	retq
 .LCPI1_0:
 	.long	8                               # 0x8
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vpsllw	$15, %xmm0, %xmm0
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k0

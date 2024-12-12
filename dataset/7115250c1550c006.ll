@@ -36,8 +36,8 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 67108864, i32 83886080
-  %.masked = and i32 %0, 83951615
-  %4 = or i32 %3, %.masked
+  %.masked = and i32 %0, 16842751
+  %4 = or i32 %.masked, %3
   ret i32 %4
 }
 
@@ -49,7 +49,7 @@ entry:
   %2 = icmp ult i32 %1, 1501
   %3 = select i1 %2, i32 0, i32 32
   %.masked = and i32 %0, -33783809
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   ret i32 %4
 }
 

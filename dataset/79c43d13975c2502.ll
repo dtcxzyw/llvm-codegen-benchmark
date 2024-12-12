@@ -11,7 +11,7 @@ entry:
   %3 = xor i8 %2, -128
   %4 = zext i8 %3 to i32
   %5 = shl nuw nsw i32 %1, 12
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -26,7 +26,7 @@ entry:
   %3 = xor i8 %2, -128
   %4 = zext nneg i8 %3 to i32
   %5 = shl nuw nsw i32 %1, 12
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

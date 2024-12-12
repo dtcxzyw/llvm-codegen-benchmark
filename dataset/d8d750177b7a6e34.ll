@@ -26,7 +26,7 @@ entry:
   ret i64 %4
 }
 
-; 72 occurrences:
+; 74 occurrences:
 ; abc/optimized/sswRarity.c.ll
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; base64-rs/optimized/25sh13l3jgkilua2.ll
@@ -99,16 +99,18 @@ entry:
 ; spike/optimized/processor.ll
 ; xgboost/optimized/aft_obj.cc.ll
 ; z3/optimized/smt_internalizer.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 3
   %3 = select i1 %2, i64 32, i64 0
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 123 occurrences:
+; 121 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -224,8 +226,6 @@ entry:
 ; llvm/optimized/VirtualCallChecker.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
-; openssl/optimized/libssl-lib-ssl_init.ll
-; openssl/optimized/libssl-shlib-ssl_init.ll
 ; redis/optimized/memtest.ll
 ; ruby/optimized/vm.ll
 ; slurm/optimized/reservation.ll
@@ -252,36 +252,29 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/SplitStringSimd.cpp.ll
 ; linux/optimized/nf_conntrack_core.ll
-; llvm/optimized/DeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000029(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 50
+  %2 = icmp samesign ult i64 %1, 50
   %3 = select i1 %2, i64 0, i64 8
   %4 = or disjoint i64 %3, %0
   ret i64 %4
 }
 
-; 9 occurrences:
+; 3 occurrences:
 ; lief/optimized/DynamicEntryFlags.cpp.ll
-; linux/optimized/reciprocal_div.ll
-; llvm/optimized/AArch64AsmParser.cpp.ll
-; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; llvm/optimized/DeclCXX.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 4294968320
+  %2 = icmp samesign ugt i64 %1, 4294968320
   %3 = select i1 %2, i64 264, i64 8
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -311,7 +304,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 15
   %3 = select i1 %2, i64 4, i64 8
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -322,7 +315,33 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, -16
   %3 = select i1 %2, i64 16, i64 32
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/DeclCXX.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ult i64 %1, 4
+  %3 = select i1 %2, i64 0, i64 4611686018427387904
+  %4 = or disjoint i64 %0, %3
+  ret i64 %4
+}
+
+; 5 occurrences:
+; llvm/optimized/AArch64AsmParser.cpp.ll
+; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/DeclCXX.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ugt i64 %1, 3
+  %3 = select i1 %2, i64 8, i64 0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

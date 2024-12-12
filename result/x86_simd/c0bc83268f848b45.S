@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	4008636143                      # 0xeeeeeeef
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpmulld	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
@@ -12,7 +12,7 @@ func0000000000000106:                   # @func0000000000000106
 	retq
 .LCPI1_0:
 	.long	1332920885                      # 0x4f72c235
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpmulld	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
@@ -69,7 +69,7 @@ func000000000000000c:                   # @func000000000000000c
 	.long	4294967293                      # 0xfffffffd
 .LCPI3_2:
 	.long	4294967292                      # 0xfffffffc
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpmulld	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
@@ -80,7 +80,7 @@ func0000000000000104:                   # @func0000000000000104
 	retq
 .LCPI4_0:
 	.long	3435973837                      # 0xcccccccd
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	vpsrlq	$4, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpmulld	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
@@ -92,23 +92,11 @@ func0000000000000101:                   # @func0000000000000101
 	.long	2863311531                      # 0xaaaaaaab
 .LCPI5_1:
 	.long	1                               # 0x1
-func0000000000000111:                   # @func0000000000000111
-	vpsrlq	$5, %ymm0, %ymm0
+func000000000000020c:                   # @func000000000000020c
+	vpsrlq	$2, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpmulld	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
 	vpbroadcastd	.LCPI5_1(%rip), %xmm1   # xmm1 = [1,1,1,1]
-	vpcmpeqd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
-.LCPI6_0:
-	.long	2863311531                      # 0xaaaaaaab
-.LCPI6_1:
-	.long	1                               # 0x1
-func000000000000010c:                   # @func000000000000010c
-	vpsrlq	$2, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
-	vpmulld	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
-	vpbroadcastd	.LCPI6_1(%rip), %xmm1   # xmm1 = [1,1,1,1]
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	vzeroupper

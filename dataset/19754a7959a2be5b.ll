@@ -1,13 +1,14 @@
 
-%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2511718" = type { i64, i64 }
-%"struct.(anonymous namespace)::ValuePair.3719995" = type { i32, i32 }
+%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852" = type { i64, i64 }
+%"struct.(anonymous namespace)::ValuePair.3899211" = type { i32, i32 }
 
-; 175 occurrences:
+; 215 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -101,13 +102,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -167,44 +165,6 @@
 ; openspiel/optimized/leduc_poker.cc.ll
 ; openspiel/optimized/sheriff.cc.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
-; velox/optimized/Filter.cpp.ll
-; velox/optimized/SimpleFunctionRegistry.cpp.ll
-; verilator/optimized/V3VariableOrder.cpp.ll
-; yosys/optimized/mem.ll
-; yosys/optimized/memory_bmux2rom.ll
-; yosys/optimized/memory_dff.ll
-; yosys/optimized/memory_libmap.ll
-; yosys/optimized/pmux2shiftx.ll
-; yosys/optimized/proc_rom.ll
-; yosys/optimized/sim.ll
-; zxing/optimized/PDFWriter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = add i64 %3, 63
-  %5 = lshr i64 %4, 6
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 5 occurrences:
-; arrow/optimized/bit_run_reader.cc.ll
-; eastl/optimized/TestExtra.cpp.ll
-; hyperscan/optimized/ng_calc_components.cpp.ll
-; ninja/optimized/build_test.cc.ll
-; rocksdb/optimized/seqno_to_time_mapping.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = add nsw i64 %3, -2
-  %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2511718", ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 43 occurrences:
 ; quantlib/optimized/assetswap.ll
 ; quantlib/optimized/basisswapratehelpers.ll
 ; quantlib/optimized/btp.ll
@@ -220,7 +180,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -248,6 +207,17 @@ entry:
 ; quantlib/optimized/tenorswaptionvts.ll
 ; quantlib/optimized/vanillaswap.ll
 ; quantlib/optimized/yearonyearinflationswap.ll
+; velox/optimized/Filter.cpp.ll
+; velox/optimized/SimpleFunctionRegistry.cpp.ll
+; verilator/optimized/V3VariableOrder.cpp.ll
+; yosys/optimized/mem.ll
+; yosys/optimized/memory_bmux2rom.ll
+; yosys/optimized/memory_dff.ll
+; yosys/optimized/memory_libmap.ll
+; yosys/optimized/pmux2shiftx.ll
+; yosys/optimized/proc_rom.ll
+; yosys/optimized/sim.ll
+; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000023(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -258,8 +228,32 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
+; 5 occurrences:
+; arrow/optimized/bit_run_reader.cc.ll
+; eastl/optimized/TestExtra.cpp.ll
+; hyperscan/optimized/ng_calc_components.cpp.ll
+; ninja/optimized/build_test.cc.ll
+; rocksdb/optimized/seqno_to_time_mapping.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = add nsw i64 %3, -2
+  %5 = lshr i64 %4, 1
+  %6 = getelementptr nusw nuw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852", ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 9 occurrences:
+; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
+; abseil-cpp/optimized/cord_test.cc.ll
+; brotli/optimized/brotli_bit_stream.c.ll
+; eastl/optimized/TestBitVector.cpp.ll
+; hdf5/optimized/H5Tbit.c.ll
+; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
 ; quantlib/optimized/generalizedhullwhite.ll
+; yosys/optimized/eval.ll
+; zxing/optimized/ODCodabarWriter.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -270,35 +264,16 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
-; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
-; abseil-cpp/optimized/cord_test.cc.ll
-; brotli/optimized/brotli_bit_stream.c.ll
-; eastl/optimized/TestBitVector.cpp.ll
-; hdf5/optimized/H5Tbit.c.ll
-; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
-; yosys/optimized/eval.ll
-; zxing/optimized/ODCodabarWriter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %1, %2
-  %4 = add i64 %3, -1
-  %5 = lshr i64 %4, 3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
 ; 2 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw %"struct.(anonymous namespace)::ValuePair.3719995", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.(anonymous namespace)::ValuePair.3899211", ptr %0, i64 %5
   ret ptr %6
 }
 

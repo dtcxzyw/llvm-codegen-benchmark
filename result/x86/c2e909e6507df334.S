@@ -27,20 +27,10 @@ func0000000000000000:                   # @func0000000000000000
 	imulq	%rdi, %rax
 	shrq	$8, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movabsq	$2082041510483722240, %rax      # imm = 0x1CE4E5B900000000
-	imulq	%rdi, %rax
-	shrq	$31, %rax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	shlq	$4, %rdi
 	leaq	(%rdi,%rdi,4), %rax
 	shrq	$20, %rax
-	retq
-func000000000000000c:                   # @func000000000000000c
-	shlq	$3, %rdi
-	leaq	(%rdi,%rdi,2), %rax
-	shrq	$2, %rax
 	retq
 func0000000000000012:                   # @func0000000000000012
 	movq	%rdi, %rax

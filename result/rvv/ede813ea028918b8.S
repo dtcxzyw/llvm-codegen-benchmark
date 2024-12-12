@@ -68,7 +68,7 @@ func0000000000000005:                   # @func0000000000000005
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	lui	a0, 3503
 	addi	a0, a0, 619
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -77,7 +77,14 @@ func0000000000000011:                   # @func0000000000000011
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
-func0000000000000020:                   # @func0000000000000020
+func0000000000000050:                   # @func0000000000000050
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsleu.vi	v0, v12, 15
+	vmerge.vvm	v10, v10, v8, v0
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vnsrl.wi	v8, v10, 0
+	ret
+func0000000000000060:                   # @func0000000000000060
 	lui	a0, 8
 	addi	a0, a0, -1025
 	vsetivli	zero, 8, e32, m2, ta, ma

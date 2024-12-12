@@ -14,7 +14,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = uitofp nneg i32 %3 to double
   %5 = fdiv double %1, %4
-  %6 = fadd double %5, %0
+  %6 = fadd double %0, %5
   ret double %6
 }
 
@@ -30,7 +30,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = uitofp nneg i32 %3 to double
   %5 = fdiv double %1, %4
-  %6 = fadd double %5, %0
+  %6 = fadd double %0, %5
   ret double %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = uitofp i32 %3 to double
   %5 = fdiv double %1, %4
-  %6 = fadd double %5, %0
+  %6 = fadd double %0, %5
   ret double %6
 }
 

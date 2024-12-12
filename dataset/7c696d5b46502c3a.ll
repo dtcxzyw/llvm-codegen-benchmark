@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; wireshark/optimized/packet-tecmp.c.ll
 ; wireshark/optimized/tap-iostat.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i64 %0, i64 %1) #0 {
 entry:
@@ -14,8 +15,7 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; linux/optimized/nmi.ll
+; 2 occurrences:
 ; postgres/optimized/streamutil.ll
 ; wireshark/optimized/packet-netflow.c.ll
 ; Function Attrs: nounwind

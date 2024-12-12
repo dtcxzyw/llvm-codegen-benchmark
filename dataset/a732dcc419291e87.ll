@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; velox/optimized/ArraySort.cpp.ll
-; zxing/optimized/PDFDecoder.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -32,25 +31,9 @@ entry:
 }
 
 ; 3 occurrences:
-; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; libphonenumber/optimized/geocoding_data_test.cc.ll
-; openspiel/optimized/best_response.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000014(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = shl nsw i64 %4, 2
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 5 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaNf.c.ll
 ; darktable/optimized/amaze.cc.ll
-; gromacs/optimized/dorg2r.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:

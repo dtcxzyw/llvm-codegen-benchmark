@@ -1,10 +1,11 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; graphviz/optimized/hedges.c.ll
 ; gromacs/optimized/matio.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; hwloc/optimized/topology-xml-nolibxml.ll
 ; libquic/optimized/x509name.c.ll
+; lvgl/optimized/lv_animimage.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -121,8 +122,7 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; icu/optimized/ucptrie.ll
+; 1 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {

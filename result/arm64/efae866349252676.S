@@ -1,40 +1,24 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	movi	v3.8b, #3
-	ushr	v2.8b, v2.8b, #5
-	and	v2.8b, v2.8b, v3.8b
-	ushll	v2.8h, v2.8b, #0
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
+	ubfx	w8, w1, #5, #2
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v3.8b, #1
-	ushr	v2.8b, v2.8b, #1
-	and	v2.8b, v2.8b, v3.8b
-	ushll	v2.8h, v2.8b, #0
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
+	ubfx	w8, w1, #1, #1
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	movi	v3.8b, #1
-	ushr	v2.8b, v2.8b, #1
-	and	v2.8b, v2.8b, v3.8b
-	ushll	v2.8h, v2.8b, #0
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
+	ubfx	w8, w1, #1, #1
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	movi	v3.8b, #1
-	ushr	v2.8b, v2.8b, #3
-	and	v2.8b, v2.8b, v3.8b
-	ushll	v2.8h, v2.8b, #0
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
+	ubfx	w8, w1, #3, #1
+	add	w0, w0, w8
 	ret
                                         // -- End function

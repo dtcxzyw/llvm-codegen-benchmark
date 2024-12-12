@@ -16,9 +16,9 @@
 ; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; meshlab/optimized/trackmode.cpp.ll
-; openjdk/optimized/sharedRuntime.ll
-; openjdk/optimized/signature.ll
 ; openssl/optimized/libssl-lib-s3_lib.ll
 ; openssl/optimized/libssl-shlib-s3_lib.ll
 ; postgres/optimized/ruleutils.ll
@@ -32,7 +32,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
@@ -49,7 +49,7 @@ entry:
 ; redis/optimized/db.ll
 ; ruby/optimized/coverage.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp ne i64 %2, 0
@@ -64,7 +64,6 @@ entry:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; linux/optimized/hid-core.ll
 ; linux/optimized/libps2.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -82,13 +81,14 @@ entry:
 ; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
+; lvgl/optimized/lv_obj.ll
 ; postgres/optimized/regexp.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/ancdata.ll
 ; ruby/optimized/option.ll
 ; ruby/optimized/range.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp ne i64 %2, 1
@@ -98,7 +98,7 @@ entry:
   ret i1 %6
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/cuddSat.c.ll
 ; linux/optimized/bugs.ll
 ; llvm/optimized/InitPreprocessor.cpp.ll
@@ -111,8 +111,9 @@ entry:
 ; spike/optimized/pack.ll
 ; spike/optimized/packw.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
   %3 = icmp eq i64 %2, 27

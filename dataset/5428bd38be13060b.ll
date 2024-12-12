@@ -1,5 +1,6 @@
 
-; 171 occurrences:
+; 172 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -183,7 +184,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/collisionGroup.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %0, 1
@@ -213,22 +214,11 @@ entry:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/status_internal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %0, 1
   %5 = icmp eq i64 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/set_memory.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000065(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = lshr i64 %0, 12
-  %5 = icmp ule i64 %4, %3
   ret i1 %5
 }
 
@@ -246,7 +236,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/generated_enum_util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000045(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %0, 5
@@ -255,20 +245,9 @@ entry:
 }
 
 ; 1 occurrences:
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = lshr i64 %0, 10
-  %5 = icmp ult i64 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %0, 3

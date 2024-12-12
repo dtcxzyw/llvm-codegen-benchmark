@@ -8,8 +8,9 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000002:                   # @func0000000000000002
 	andl	$1, %esi
-	xorl	$213, %esi
+	leal	-1(%rsi), %ecx
+	orl	$1, %ecx
+	xorl	%eax, %eax
 	testb	$1, %dil
-	movl	$214, %eax
-	cmovel	%esi, %eax
+	cmovel	%ecx, %eax
 	retq

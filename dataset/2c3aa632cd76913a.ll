@@ -1,5 +1,5 @@
 
-; 168 occurrences:
+; 153 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/ifDec10.c.ll
 ; clamav/optimized/yara_exec.c.ll
@@ -31,7 +31,6 @@
 ; linux/optimized/exfldio.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/hwregs.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/intel-gtt.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
@@ -117,20 +116,6 @@
 ; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
-; luajit/optimized/lib_ffi.ll
-; luajit/optimized/lib_ffi_dyn.ll
-; luajit/optimized/lib_table.ll
-; luajit/optimized/lib_table_dyn.ll
-; luajit/optimized/lj_carith.ll
-; luajit/optimized/lj_carith_dyn.ll
-; luajit/optimized/lj_cconv.ll
-; luajit/optimized/lj_cconv_dyn.ll
-; luajit/optimized/lj_err.ll
-; luajit/optimized/lj_err_dyn.ll
-; luajit/optimized/lj_ffrecord.ll
-; luajit/optimized/lj_ffrecord_dyn.ll
-; luajit/optimized/lj_serialize.ll
-; luajit/optimized/lj_serialize_dyn.ll
 ; mimalloc/optimized/bitmap.c.ll
 ; mimalloc/optimized/segment.c.ll
 ; mitsuba3/optimized/bitmap.cpp.ll

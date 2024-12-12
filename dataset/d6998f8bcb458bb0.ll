@@ -11,7 +11,6 @@
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
@@ -73,13 +72,14 @@
 ; openjdk/optimized/jfrTypeSet.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/target_riscv_pmu.c.ll
+; redis/optimized/networking.ll
 ; spike/optimized/csrs.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 2147483648, i64 -9223372036854775808
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -148,7 +148,7 @@ entry:
 ; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
 ; spike/optimized/disasm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 1792, i64 768
   %3 = and i64 %2, %0
@@ -159,11 +159,11 @@ entry:
 ; 1 occurrences:
 ; mimalloc/optimized/segment.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 -524288, i64 -65536
-  %3 = and i64 %2, %0
-  %4 = icmp ugt i64 %3, 2293760
+  %3 = and i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 2293760
   ret i1 %4
 }
 

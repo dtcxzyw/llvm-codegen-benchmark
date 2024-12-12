@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/src.ll
 ; git/optimized/date.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/drm_dsc_helper.ll

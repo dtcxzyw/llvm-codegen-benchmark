@@ -20,15 +20,15 @@ func000000000000000d:                   # @func000000000000000d
 	setbe	%al
 	andb	%dil, %al
 	retq
-func0000000000000001:                   # @func0000000000000001
-	vmovq	%rsi, %xmm0
-	vucomisd	%xmm0, %xmm0
-	setp	%al
-	andb	%dil, %al
-	retq
 func000000000000000e:                   # @func000000000000000e
 	vmovq	%rsi, %xmm0
 	vucomisd	%xmm0, %xmm0
 	setnp	%al
+	andb	%dil, %al
+	retq
+func0000000000000001:                   # @func0000000000000001
+	vmovq	%rsi, %xmm0
+	vucomisd	%xmm0, %xmm0
+	setp	%al
 	andb	%dil, %al
 	retq

@@ -1,46 +1,5 @@
 
-; 31 occurrences:
-; clamav/optimized/autoit.c.ll
-; cmake/optimized/Base64.c.ll
-; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; duckdb/optimized/ub_duckdb_func_table.cpp.ll
-; duckdb/optimized/ub_duckdb_planner_subquery.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
-; hwloc/optimized/topology-linux.ll
-; image-rs/optimized/1clnprdgqfw2q9lq.ll
-; libzmq/optimized/ws_engine.cpp.ll
-; linux/optimized/intel_audio.ll
-; linux/optimized/namei_vfat.ll
-; linux/optimized/tcp_ipv4.ll
-; linux/optimized/tcp_ipv6.ll
-; linux/optimized/update.ll
-; llvm/optimized/DataLayout.cpp.ll
-; luau/optimized/IrDump.cpp.ll
-; minetest/optimized/CGUIScrollBar.cpp.ll
-; minetest/optimized/localplayer.cpp.ll
-; mitsuba3/optimized/sdfgrid.cpp.ll
-; openjdk/optimized/cmstypes.ll
-; openjdk/optimized/elfFile.ll
-; openusd/optimized/stageSceneIndex.cpp.ll
-; php/optimized/avifinfo.ll
-; proxygen/optimized/HTTP1xCodec.cpp.ll
-; ruby/optimized/regexec.ll
-; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
-; stb/optimized/stb_herringbone_wang_tile.c.ll
-; stb/optimized/stb_voxel_render.c.ll
-; wireshark/optimized/packet-grpc.c.ll
-; yosys/optimized/verilog_backend.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = icmp eq i8 %2, 95
-  %4 = select i1 %0, i1 true, i1 %1
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
-; 50 occurrences:
+; 51 occurrences:
 ; abc/optimized/cuddHarwell.c.ll
 ; assimp/optimized/MMDPmxParser.cpp.ll
 ; clamav/optimized/autoit.c.ll
@@ -91,6 +50,7 @@ entry:
 ; wireshark/optimized/packet-rftap.c.ll
 ; wireshark/optimized/packet-someip-sd.c.ll
 ; yosys/optimized/verilog_backend.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -100,15 +60,50 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
-; arrow/optimized/scalar.cc.ll
-; arrow/optimized/scalar_cast_temporal.cc.ll
-; arrow/optimized/value_parsing.cc.ll
+; 30 occurrences:
+; clamav/optimized/autoit.c.ll
+; cmake/optimized/Base64.c.ll
+; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_func_table.cpp.ll
+; duckdb/optimized/ub_duckdb_planner_subquery.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; hwloc/optimized/topology-linux.ll
+; image-rs/optimized/1clnprdgqfw2q9lq.ll
+; libzmq/optimized/ws_engine.cpp.ll
+; linux/optimized/namei_vfat.ll
+; linux/optimized/tcp_ipv4.ll
+; linux/optimized/tcp_ipv6.ll
+; linux/optimized/update.ll
+; llvm/optimized/DataLayout.cpp.ll
+; luau/optimized/IrDump.cpp.ll
+; minetest/optimized/CGUIScrollBar.cpp.ll
+; minetest/optimized/localplayer.cpp.ll
+; mitsuba3/optimized/sdfgrid.cpp.ll
+; openjdk/optimized/cmstypes.ll
+; openjdk/optimized/elfFile.ll
+; openusd/optimized/stageSceneIndex.cpp.ll
+; php/optimized/avifinfo.ll
+; proxygen/optimized/HTTP1xCodec.cpp.ll
+; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
+; stb/optimized/stb_herringbone_wang_tile.c.ll
+; stb/optimized/stb_voxel_render.c.ll
+; wireshark/optimized/packet-grpc.c.ll
+; yosys/optimized/verilog_backend.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp eq i8 %2, 0
+  %4 = select i1 %0, i1 true, i1 %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 4 occurrences:
 ; linux/optimized/e100.ll
-; linux/optimized/x509_cert_parser.ll
 ; rocksdb/optimized/error_handler.cc.ll
 ; wireshark/optimized/commview.c.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; wolfssl/optimized/coding.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
@@ -119,17 +114,28 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 5 occurrences:
+; arrow/optimized/scalar.cc.ll
+; arrow/optimized/scalar_cast_temporal.cc.ll
+; arrow/optimized/value_parsing.cc.ll
+; linux/optimized/x509_cert_parser.ll
+; openjdk/optimized/utf8.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i8 %2, 1
+  %4 = select i1 %0, i1 true, i1 %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 9 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; coreutils-rs/optimized/1487bf2zeluccyme.ll
 ; cpython/optimized/_codecs_cn.ll
 ; freetype/optimized/ftbase.c.ll
 ; icu/optimized/pkg_genc.ll
 ; luau/optimized/isocline.c.ll
-; openusd/optimized/fileIO.cpp.ll
-; openusd/optimized/prim.cpp.ll
-; openusd/optimized/schemaRegistry.cpp.ll
-; openusd/optimized/textFileFormat.cpp.ll
 ; postgres/optimized/like_support.ll
 ; wireshark/optimized/commview.c.ll
 ; wolfssl/optimized/coding.c.ll
@@ -142,7 +148,24 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 6 occurrences:
+; coreutils-rs/optimized/1487bf2zeluccyme.ll
+; openusd/optimized/fileIO.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/schemaRegistry.cpp.ll
+; openusd/optimized/textFileFormat.cpp.ll
+; wireshark/optimized/packet-rtmpt.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %2, 64
+  %4 = select i1 %0, i1 true, i1 %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; opencv/optimized/stringutils.cpp.ll
 ; openusd/optimized/unicodeUtils.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i1 %1, i8 %2) #0 {

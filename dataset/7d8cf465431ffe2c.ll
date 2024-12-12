@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rocksdb/optimized/block_cache_tier_file.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 64
   %3 = icmp ult i64 %2, %0
@@ -16,7 +16,7 @@ entry:
 ; clamav/optimized/ishield.c.ll
 ; grpc/optimized/slice.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = icmp uge i64 %2, %0
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/sre.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = icmp slt i64 %2, %0

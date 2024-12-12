@@ -1,16 +1,5 @@
 
-; 1 occurrences:
-; ruby/optimized/array.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000058(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp sge i64 %0, %1
-  %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
-  ret i64 %4
-}
-
-; 32 occurrences:
+; 33 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -43,20 +32,22 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000a3(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %0, %1
+  %2 = icmp samesign ult i64 %0, %1
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
-; 243 occurrences:
+; 250 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/3t9yvjig6ylv2f7b.ll
 ; coreutils-rs/optimized/592w9u2os9g8yndg.ll
 ; coreutils-rs/optimized/5dmrxisq30bb0giv.ll
@@ -296,12 +287,18 @@ entry:
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, %1
   %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -319,20 +316,23 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, %1
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 3 occurrences:
+; 6 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; gromacs/optimized/qmmmoptions.cpp.ll
 ; verilator/optimized/V3EmitCSyms.cpp.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, %1
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -343,7 +343,7 @@ define i64 @func000000000000003b(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sle i64 %0, %1
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -354,7 +354,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, %1
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -365,7 +365,7 @@ define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ule i64 %0, %1
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -378,7 +378,7 @@ define i64 @func0000000000000060(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %0, %1
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -390,7 +390,18 @@ define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %0, %1
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000023(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ult i64 %0, %1
+  %3 = zext i1 %2 to i64
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -401,18 +412,7 @@ define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %0, %1
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; cpython/optimized/unicode.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000032(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp slt i64 %0, %1
-  %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

@@ -35,13 +35,12 @@ func0000000000000022:                   # @func0000000000000022
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
-func0000000000000023:                   # @func0000000000000023
-	vpcmpltud	%ymm1, %ymm0, %k0
-	vpmovm2d	%k0, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	retq
 func0000000000000031:                   # @func0000000000000031
 	vpcmpgtd	%ymm0, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	retq
+func0000000000000009:                   # @func0000000000000009
+	vpcmpeqd	%ymm1, %ymm0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 func000000000000004b:                   # @func000000000000004b
@@ -66,10 +65,6 @@ func0000000000000033:                   # @func0000000000000033
 func0000000000000048:                   # @func0000000000000048
 	vpcmpnltud	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	retq
-func0000000000000009:                   # @func0000000000000009
-	vpcmpeqd	%ymm1, %ymm0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000058:                   # @func0000000000000058

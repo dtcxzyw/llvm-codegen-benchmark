@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$178956971, %eax                # imm = 0xAAAAAAB
 	setb	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movl	%edi, %eax
 	movl	$2290649225, %ecx               # imm = 0x88888889
 	imulq	%rax, %rcx

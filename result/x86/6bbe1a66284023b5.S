@@ -13,11 +13,6 @@ func000000000000007c:                   # @func000000000000007c
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000003f:                   # @func000000000000003f
-	leal	-1(%rdx), %eax
-	imulq	%rsi, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	-2(%rdx), %eax
 	imulq	%rsi, %rax
@@ -48,12 +43,22 @@ func000000000000003c:                   # @func000000000000003c
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
+func000000000000003f:                   # @func000000000000003f
+	leal	16(%rdx), %eax
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000040:                   # @func0000000000000040
 	leal	100(%rdx), %eax
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
 func0000000000000034:                   # @func0000000000000034
+	leal	-1(%rdx), %eax
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000030:                   # @func0000000000000030
 	leal	-1(%rdx), %eax
 	imulq	%rsi, %rax
 	addq	%rdi, %rax

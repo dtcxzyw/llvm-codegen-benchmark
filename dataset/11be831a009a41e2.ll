@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 19 occurrences:
 ; delta-rs/optimized/tyvgsemgcx0yw30.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
@@ -13,6 +13,12 @@
 ; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; zed-rs/optimized/7fmm0tfd68kkbfwadepm13y36.ll
+; zed-rs/optimized/8pzylepo63jgxs9pcfvvb1oj4.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/b9ty0axfl2ld0co5krahg7gfq.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:

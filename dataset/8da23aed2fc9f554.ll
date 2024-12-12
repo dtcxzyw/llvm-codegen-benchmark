@@ -1,7 +1,9 @@
 
-; 109 occurrences:
+; 111 occurrences:
 ; abc/optimized/abcIvy.c.ll
-; cmake/optimized/common.c.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; cpython/optimized/_xxinterpchannelsmodule.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; graphviz/optimized/csettings.cpp.ll
@@ -113,15 +115,14 @@
 define i1 @func0000000000000002(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp eq i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 528 occurrences:
+; 527 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cpython/optimized/faulthandler.ll
-; linux/optimized/maccess.ll
 ; llvm/optimized/AArch64MCExpr.cpp.ll
 ; llvm/optimized/AArch64MachineFunctionInfo.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
@@ -651,12 +652,12 @@ entry:
 define i1 @func0000000000000010(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ult i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; cpython/optimized/faulthandler.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
@@ -665,13 +666,14 @@ entry:
 ; qemu/optimized/system_dma-helpers.c.ll
 ; redis/optimized/extent_dss.ll
 ; redis/optimized/extent_dss.sym.ll
+; regex-rs/optimized/3ixfkxlmcuecmmus.ll
 ; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -684,8 +686,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp uge i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ule i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -696,8 +698,8 @@ entry:
 define i1 @func0000000000000018(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ne i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ne i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

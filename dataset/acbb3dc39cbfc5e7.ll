@@ -2,14 +2,15 @@
 ; 106 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
-; git/optimized/apply.ll
 ; git/optimized/files-backend.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5Dsingle.c.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/DeclBase.cpp.ll
+; llvm/optimized/ModuleMap.cpp.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; openjdk/optimized/shenandoahHeap.ll
@@ -21,7 +22,6 @@
 ; postgres/optimized/dependencies.ll
 ; postgres/optimized/dict.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/like.ll
 ; postgres/optimized/mcv.ll
@@ -107,11 +107,11 @@
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
-  %5 = getelementptr nusw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
   %6 = select i1 %4, ptr %0, ptr %5
   ret ptr %6
 }
@@ -124,6 +124,18 @@ entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
   %5 = getelementptr i8, ptr %1, i64 1116
+  %6 = select i1 %4, ptr %0, ptr %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; git/optimized/apply.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 2
+  %4 = icmp eq i8 %3, 0
+  %5 = getelementptr nusw i8, ptr %1, i64 -10
   %6 = select i1 %4, ptr %0, ptr %5
   ret ptr %6
 }

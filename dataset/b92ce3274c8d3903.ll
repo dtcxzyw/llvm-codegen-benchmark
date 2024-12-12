@@ -6,7 +6,7 @@
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000408(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000808(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = shl i64 %3, 32

@@ -1,11 +1,10 @@
 func0000000000000001:                   # @func0000000000000001
-	li	a0, 255
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vand.vi	v10, v10, 1
 	vsub.vv	v8, v10, v8
 	ret
 func0000000000000000:                   # @func0000000000000000
-	li	a0, -1793
+	li	a0, 252
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vsub.vv	v8, v10, v8

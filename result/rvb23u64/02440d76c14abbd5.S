@@ -24,19 +24,13 @@ func000000000000003f:                   # @func000000000000003f
 	add	a0, a0, a1
 	addiw	a0, a0, 21
 	ret
-func0000000000000010:                   # @func0000000000000010
-	add	a0, a0, a1
-	li	a1, -1250
-	sh3add	a0, a1, a0
-	sext.w	a0, a0
-	ret
-func0000000000000011:                   # @func0000000000000011
-	add	a0, a0, a1
-	addiw	a0, a0, -1900
-	ret
 func000000000000003b:                   # @func000000000000003b
 	add	a0, a0, a1
 	addiw	a0, a0, 4
+	ret
+func0000000000000010:                   # @func0000000000000010
+	add	a0, a0, a1
+	addiw	a0, a0, 8
 	ret
 func0000000000000012:                   # @func0000000000000012
 	add	a0, a0, a1
@@ -59,6 +53,12 @@ func000000000000000f:                   # @func000000000000000f
 	lui	a1, 1048512
 	addi	a1, a1, 8
 	addw	a0, a0, a1
+	ret
+func0000000000000011:                   # @func0000000000000011
+	add	a0, a0, a1
+	li	a1, -1250
+	sh3add	a0, a1, a0
+	sext.w	a0, a0
 	ret
 func0000000000000009:                   # @func0000000000000009
 	add	a0, a0, a1

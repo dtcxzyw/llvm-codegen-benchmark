@@ -11,7 +11,8 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
 ; wasmtime-rs/optimized/1r2x5absurxbrq18.ll

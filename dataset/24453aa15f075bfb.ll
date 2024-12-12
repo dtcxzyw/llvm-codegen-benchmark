@@ -13,7 +13,7 @@ entry:
   %4 = xor i64 %1, -1
   %5 = icmp ugt i64 %3, %4
   %6 = zext i1 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -28,7 +28,7 @@ entry:
   %4 = xor i64 %1, -1
   %5 = icmp ugt i64 %3, %4
   %6 = zext i1 %5 to i64
-  %7 = add nuw nsw i64 %6, %0
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -43,7 +43,7 @@ entry:
   %4 = xor i64 %1, -1
   %5 = icmp ugt i64 %3, %4
   %6 = zext i1 %5 to i64
-  %7 = add nuw i64 %6, %0
+  %7 = add nuw i64 %0, %6
   ret i64 %7
 }
 

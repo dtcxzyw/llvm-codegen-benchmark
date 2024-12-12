@@ -7,7 +7,7 @@
 ; opencv/optimized/kdtree.cpp.ll
 ; php/optimized/ir_ra.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000166(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = or disjoint i32 %2, 2
@@ -20,7 +20,7 @@ entry:
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/ns.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; php/optimized/fastcgi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
+define i1 @func0000000000000081(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = add nsw i32 %1, 7

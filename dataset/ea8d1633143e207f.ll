@@ -18,7 +18,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-e_aria.ll
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %0, 3
   %3 = icmp eq i32 %1, 0
@@ -30,7 +30,7 @@ entry:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i64 %0, 2
   %3 = icmp eq i32 %1, 16

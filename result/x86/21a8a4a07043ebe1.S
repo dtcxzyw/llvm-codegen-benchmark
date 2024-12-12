@@ -1,10 +1,10 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	leaq	(%rsi,%rdx,2), %rax
 	addq	%rdi, %rax
 	cmpq	$100, %rax
 	setae	%al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
 	addq	%rdi, %rdx

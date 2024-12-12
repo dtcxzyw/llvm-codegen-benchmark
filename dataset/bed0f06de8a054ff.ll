@@ -1,8 +1,6 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; linux/optimized/blk-map.ll
-; linux/optimized/map.ll
-; linux/optimized/utaddress.ll
 ; mold/optimized/arch-ppc32.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {

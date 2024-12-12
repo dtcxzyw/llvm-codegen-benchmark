@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 52 occurrences:
 ; clap-rs/optimized/thb07xvb2pkztra.ll
 ; cmake/optimized/archive_string.c.ll
 ; coreutils-rs/optimized/4akyoq84dmd3ywue.ll
@@ -46,6 +46,12 @@
 ; velox/optimized/AllocationPool.cpp.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/a0mwohwi8w2ksrje9uu757r3h.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:

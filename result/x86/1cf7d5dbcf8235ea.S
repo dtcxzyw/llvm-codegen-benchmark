@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	$268435455, %edi                # imm = 0xFFFFFFF
 	sete	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	addl	%esi, %edi
 	shll	$3, %edi
 	cmpl	$161, %edi
@@ -20,7 +20,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$32768, %edi                    # imm = 0x8000
 	setne	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addl	%esi, %edi
 	addl	%edi, %edi
 	cmpl	$15, %edi
@@ -37,7 +37,7 @@ func0000000000000008:                   # @func0000000000000008
 	testl	$1073741760, %edi               # imm = 0x3FFFFFC0
 	setne	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	addl	%esi, %edi
 	addl	%edi, %edi
 	cmpl	$94, %edi

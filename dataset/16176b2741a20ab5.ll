@@ -22,7 +22,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; crow/optimized/example.cpp.ll
 ; yosys/optimized/rename.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = call i32 @llvm.abs.i32(i32 %2, i1 false)
@@ -34,7 +34,7 @@ entry:
 ; crow/optimized/example.cpp.ll
 ; yosys/optimized/rename.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = call i32 @llvm.abs.i32(i32 %2, i1 false)
@@ -45,11 +45,11 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)
-  %4 = icmp ult i32 %3, 8388608
+  %4 = icmp samesign ult i32 %3, 8388608
   ret i1 %4
 }
 
@@ -58,11 +58,11 @@ entry:
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; redis/optimized/lcode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)
-  %4 = icmp ugt i32 %3, 10922
+  %4 = icmp samesign ugt i32 %3, 10922
   ret i1 %4
 }
 
@@ -70,23 +70,35 @@ entry:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; clamav/optimized/crtmgr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000b8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)
-  %4 = icmp ugt i32 %3, 1
+  %4 = icmp samesign ugt i32 %3, 1
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_math.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000b4(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)
-  %4 = icmp ult i32 %3, 10
+  %4 = icmp samesign ult i32 %3, 2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %0, %1
+  %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 false)
+  %4 = icmp ult i32 %3, 309
   ret i1 %4
 }
 

@@ -12,3 +12,11 @@ func0000000000000008:                   # @func0000000000000008
 .LBB1_2:                                # %entry
 	srliw	a0, a0, 8
 	ret
+func0000000000000028:                   # @func0000000000000028
+	sext.w	a2, a0
+	li	a3, 256
+	bltu	a2, a3, .LBB2_2
+	mv	a0, a1
+.LBB2_2:                                # %entry
+	srliw	a0, a0, 4
+	ret

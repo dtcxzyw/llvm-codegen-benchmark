@@ -1,8 +1,5 @@
 
-; 8 occurrences:
-; abc/optimized/extraUtilBitMatrix.c.ll
-; abc/optimized/ivyCutTrav.c.ll
-; abc/optimized/mvcUtils.c.ll
+; 5 occurrences:
 ; graphviz/optimized/gvdevice_kitty.c.ll
 ; lief/optimized/bignum.c.ll
 ; openssl/optimized/libcrypto-lib-http_client.ll
@@ -13,12 +10,12 @@ define i64 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl i64 %4, 2
   ret i64 %5
 }
 
-; 50 occurrences:
+; 51 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; cpython/optimized/gcmodule.ll
 ; cpython/optimized/sysmodule.ll
@@ -69,12 +66,13 @@ entry:
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000018f(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl nuw nsw i64 %4, 3
   ret i64 %5
 }
@@ -88,7 +86,7 @@ define i64 @func000000000000018e(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 2147483647
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl nuw i64 %4, 3
   ret i64 %5
 }
@@ -98,11 +96,11 @@ entry:
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000010e(i64 %0, i64 %1) #0 {
+define i64 @func000000000000030e(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 281474976710655
+  %2 = icmp samesign ugt i64 %1, 281474976710655
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl nuw i64 %4, 48
   ret i64 %5
 }
@@ -115,7 +113,7 @@ define i64 @func0000000000000187(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl nuw nsw i64 %4, 3
   ret i64 %5
 }
@@ -129,22 +127,33 @@ define i64 @func0000000000000180(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %4, 3
   ret i64 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; simdjson/optimized/simdjson.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000030f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 18014398509481983
+  %3 = zext i1 %2 to i64
+  %4 = add nuw nsw i64 %0, %3
+  %5 = shl nuw nsw i64 %4, 52
+  ret i64 %5
+}
+
+; 2 occurrences:
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000010f(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 18014398509481983
+  %2 = icmp ugt i64 %1, 4294967295
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
-  %5 = shl nuw nsw i64 %4, 52
+  %4 = add nuw nsw i64 %0, %3
+  %5 = shl nuw nsw i64 %4, 3
   ret i64 %5
 }
 
@@ -155,7 +164,7 @@ define i64 @func0000000000000100(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 4294967295
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %4, 3
   ret i64 %5
 }
@@ -163,11 +172,11 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000107(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000307(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 18014398509481983
+  %2 = icmp samesign ugt i64 %1, 18014398509481983
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl nuw nsw i64 %4, 52
   ret i64 %5
 }
@@ -179,7 +188,7 @@ define i64 @func0000000000000183(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl nuw nsw i64 %4, 3
   ret i64 %5
 }
@@ -191,7 +200,7 @@ define i64 @func0000000000000185(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl nsw i64 %4, 3
   ret i64 %5
 }

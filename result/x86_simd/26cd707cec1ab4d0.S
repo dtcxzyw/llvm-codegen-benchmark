@@ -25,15 +25,22 @@ func0000000000000008:                   # @func0000000000000008
 	vpsrld	$31, %ymm0, %ymm0
 	retq
 .LCPI4_0:
-	.long	1                               # 0x1
-func0000000000000014:                   # @func0000000000000014
+	.long	4294821199                      # 0xfffdc54f
+func0000000000000028:                   # @func0000000000000028
+	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm0, %k0
+	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
-	vpandnd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI5_0:
 	.long	1                               # 0x1
+func0000000000000014:                   # @func0000000000000014
+	vpsrld	$31, %ymm0, %ymm0
+	vpandnd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
+	retq
+.LCPI6_0:
+	.long	1                               # 0x1
 func0000000000000010:                   # @func0000000000000010
-	vpcmpnleud	.LCPI5_0(%rip){1to8}, %ymm0, %k0
+	vpcmpnleud	.LCPI6_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq

@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/memfd.ll
@@ -9,6 +9,8 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; ruby/optimized/gc.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:

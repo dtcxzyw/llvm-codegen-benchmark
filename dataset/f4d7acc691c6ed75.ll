@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; rust-analyzer-rs/optimized/68ytxs4wk5ncclk.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
 ; Function Attrs: nounwind
 define { i32, i32 } @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:

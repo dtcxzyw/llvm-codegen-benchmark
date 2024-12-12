@@ -1,34 +1,16 @@
+.LCPI0_0:
+	.xword	0x3ca1a62633145c07              // double 1.2246467991473532E-16
+.LCPI0_1:
+	.xword	0x3ff921fb54442d18              // double 1.5707963267948966
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	x8, #11544                      // =0x2d18
-	movi	v17.2d, #0000000000000000
-	movk	x8, #21572, lsl #16
-	movk	x8, #8699, lsl #32
-	movk	x8, #49177, lsl #48
-	dup	v16.2d, x8
-	fmul	v0.2d, v0.2d, v16.2d
-	fmul	v1.2d, v1.2d, v16.2d
-	fmul	v2.2d, v2.2d, v16.2d
-	fmul	v3.2d, v3.2d, v16.2d
-	fmul	v4.2d, v4.2d, v16.2d
-	fmul	v5.2d, v5.2d, v16.2d
-	fmul	v6.2d, v6.2d, v16.2d
-	fmul	v7.2d, v7.2d, v16.2d
-	fmul	v1.2d, v1.2d, v17.2d
-	fmul	v0.2d, v0.2d, v17.2d
-	fmul	v2.2d, v2.2d, v17.2d
-	fmul	v4.2d, v4.2d, v17.2d
-	fmul	v3.2d, v3.2d, v17.2d
-	fmul	v5.2d, v5.2d, v17.2d
-	fmul	v7.2d, v7.2d, v17.2d
-	fmul	v6.2d, v6.2d, v17.2d
-	fadd	v0.2d, v0.2d, v17.2d
-	fadd	v1.2d, v1.2d, v17.2d
-	fadd	v2.2d, v2.2d, v17.2d
-	fadd	v3.2d, v3.2d, v17.2d
-	fadd	v4.2d, v4.2d, v17.2d
-	fadd	v5.2d, v5.2d, v17.2d
-	fadd	v6.2d, v6.2d, v17.2d
-	fadd	v7.2d, v7.2d, v17.2d
+	fmov	d1, #-1.50000000
+	adrp	x8, .LCPI0_0
+	fmul	d0, d0, d1
+	ldr	d1, [x8, :lo12:.LCPI0_0]
+	adrp	x8, .LCPI0_1
+	fmul	d0, d0, d1
+	ldr	d1, [x8, :lo12:.LCPI0_1]
+	fadd	d0, d0, d1
 	ret
                                         // -- End function

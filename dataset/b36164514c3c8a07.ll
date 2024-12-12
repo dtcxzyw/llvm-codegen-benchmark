@@ -7,7 +7,7 @@
 ; hdf5/optimized/h5ls.c.ll
 ; icu/optimized/locdispnames.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000054(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = icmp sgt i32 %2, 1
@@ -21,7 +21,7 @@ entry:
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i8 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = icmp slt i32 %2, 32768

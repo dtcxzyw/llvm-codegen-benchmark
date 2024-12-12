@@ -1,5 +1,15 @@
 
-; 22 occurrences:
+; 32 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; graphviz/optimized/visibility.c.ll
 ; icu/optimized/units_converter.ll

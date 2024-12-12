@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; abc/optimized/giaFanout.c.ll
+; 7 occurrences:
 ; ocio/optimized/FileFormatCSP.cpp.ll
 ; ocio/optimized/FileFormatCTF.cpp.ll
 ; opencv/optimized/synthetic_seq.cpp.ll

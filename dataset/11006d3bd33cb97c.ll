@@ -1,9 +1,10 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; libquic/optimized/url_canon_ip.cc.ll
 ; linux/optimized/udp.ll
+; lvgl/optimized/lv_math.ll
 ; ruby/optimized/regcomp.ll
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; Function Attrs: nounwind
@@ -54,9 +55,7 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
-; cmake/optimized/archive_read_support_format_cab.c.ll
-; cmake/optimized/archive_read_support_format_lha.c.ll
+; 5 occurrences:
 ; glslang/optimized/linkValidate.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; postgres/optimized/snprintf.ll
@@ -71,6 +70,17 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000053(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 128
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = sub nuw nsw i32 255, %4
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; freetype/optimized/sdf.c.ll
 ; openusd/optimized/mvref_common.c.ll
@@ -80,6 +90,18 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = sub nsw i32 0, %4
+  ret i32 %5
+}
+
+; 2 occurrences:
+; cmake/optimized/archive_read_support_format_cab.c.ll
+; cmake/optimized/archive_read_support_format_lha.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = sub nuw nsw i32 16, %4
   ret i32 %5
 }
 

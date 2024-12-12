@@ -3,11 +3,11 @@
 ; abc/optimized/sswCore.c.ll
 ; icu/optimized/collationdatawriter.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, ptr %1) #0 {
+define i32 @func0000000000000021(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -31,14 +31,14 @@ define i32 @func0000000000000001(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/xfrm_user.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, ptr %1) #0 {
+define i32 @func0000000000000041(i32 %0, ptr %1) #0 {
 entry:
   %2 = add nuw i32 %0, 72
   %3 = icmp eq ptr %1, null
@@ -50,7 +50,7 @@ entry:
 ; linux/optimized/nexthop.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, ptr %1) #0 {
+define i32 @func0000000000000061(i32 %0, ptr %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 8
   %3 = icmp eq ptr %1, null

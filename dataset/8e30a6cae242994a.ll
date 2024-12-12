@@ -28,16 +28,17 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
   %4 = and i64 %3, 32512
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; folly/optimized/DeterministicSchedule.cpp.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; libquic/optimized/poly1305_vec.c.ll
-; linux/optimized/capability.ll
 ; linux/optimized/p4.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
@@ -57,7 +58,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 7
   %4 = and i64 %3, 1920
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -71,7 +72,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 %2, 56
   %4 = and i64 %3, 9151314442816847872
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -102,7 +103,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl i64 %2, 39
   %4 = and i64 %3, 17042430230528
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

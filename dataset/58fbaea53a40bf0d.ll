@@ -1,6 +1,8 @@
 
-; 35 occurrences:
+; 37 occurrences:
 ; abc/optimized/sclBufSize.c.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -55,7 +57,9 @@ entry:
   ret i32 %3
 }
 
-; 22 occurrences:
+; 24 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btBoxBoxDetector.ll
 ; bullet3/optimized/btGhostObject.ll
 ; gromacs/optimized/forcetable.cpp.ll
@@ -135,7 +139,9 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; php/optimized/ir.ll
 ; Function Attrs: nounwind

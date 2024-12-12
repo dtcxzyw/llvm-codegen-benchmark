@@ -8,7 +8,7 @@ entry:
   %3 = fdiv float 1.000000e+00, %2
   %4 = fcmp ueq float %1, 0x7FF0000000000000
   %5 = select i1 %4, float 0.000000e+00, float %3
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = fdiv float 2.000000e+00, %2
   %4 = fcmp ule float %1, 0x3E45798EE0000000
   %5 = select i1 %4, float 0.000000e+00, float %3
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = fdiv float 1.000000e+00, %2
   %4 = fcmp oeq float %1, 0.000000e+00
   %5 = select i1 %4, float 0.000000e+00, float %3
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 
@@ -47,7 +47,7 @@ entry:
   %3 = fdiv float 1.000000e+00, %2
   %4 = fcmp olt float %1, 0x3E45798EE0000000
   %5 = select i1 %4, float 0.000000e+00, float %3
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 

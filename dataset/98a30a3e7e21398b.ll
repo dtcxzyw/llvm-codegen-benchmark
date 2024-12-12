@@ -9,7 +9,7 @@
 ; folly/optimized/MemoryMapping.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, -8

@@ -3,8 +3,8 @@ func0000000000000008:                   # @func0000000000000008
 	testb	$1, %sil
 	movq	$-16, %rax
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	andb	$1, %sil
@@ -13,10 +13,10 @@ func0000000000000001:                   # @func0000000000000001
 	cmpb	$1, %sil
 	sbbq	%rax, %rax
 	orq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	addq	$-2, %rdx
 	cmpq	%rdi, %rdx
 	setb	%al

@@ -1,5 +1,5 @@
 
-; 303 occurrences:
+; 304 occurrences:
 ; abc/optimized/pdrUtil.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/sbdCore.c.ll
@@ -98,6 +98,9 @@
 ; lua/optimized/lstring.ll
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CBillboardSceneNode.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
@@ -127,8 +130,6 @@
 ; oiio/optimized/imagebufalgo_draw.cpp.ll
 ; oiio/optimized/imageio.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgels.c.ll
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsy.c.ll
@@ -136,11 +137,9 @@
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dhsein.c.ll
 ; openblas/optimized/dlaeda.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlarrv.c.ll
 ; openblas/optimized/dlatm7.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorghr.c.ll
 ; openblas/optimized/dorgql.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrevc.c.ll
@@ -302,6 +301,8 @@
 ; z3/optimized/spacer_unsat_core_learner.cpp.ll
 ; z3/optimized/spacer_unsat_core_plugin.cpp.ll
 ; z3/optimized/totalizer.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
@@ -483,7 +484,7 @@ entry:
   ret i64 %4
 }
 
-; 30 occurrences:
+; 36 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; ceres/optimized/gradient_checker.cc.ll
@@ -498,8 +499,6 @@ entry:
 ; luajit/optimized/lj_dispatch_dyn.ll
 ; mitsuba3/optimized/builder.cpp.ll
 ; openblas/optimized/dlansf.c.ll
-; openblas/optimized/dorgl2.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
@@ -507,13 +506,21 @@ entry:
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/jexec.ll
 ; openjdk/optimized/nmethod.ll
-; openspiel/optimized/2048.cc.ll
 ; openusd/optimized/irregularPatchBuilder.cpp.ll
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
@@ -523,7 +530,7 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; c3c/optimized/compiler.c.ll
 ; casadi/optimized/cs_counts.c.ll
@@ -535,6 +542,7 @@ entry:
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/dpm_feature.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; postgres/optimized/acl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
@@ -706,11 +714,12 @@ entry:
   ret i64 %4
 }
 
-; 51 occurrences:
+; 54 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
+; abc/optimized/cuddSplit.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -740,9 +749,12 @@ entry:
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/threadControl.ll
 ; openmpi/optimized/ad_io_coll.ll
+; openmpi/optimized/ad_read_coll.ll
+; openmpi/optimized/ad_write_coll.ll
 ; openmpi/optimized/comm.ll
 ; openmpi/optimized/opal_object.ll
 ; openmpi/optimized/pmix_object.ll
+; openspiel/optimized/chess_board.cc.ll
 ; openspiel/optimized/crazy_eights.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; php/optimized/pcre2_jit_compile.ll
@@ -753,7 +765,6 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; redis/optimized/db.ll
-; slurm/optimized/optz.ll
 ; stb/optimized/stb_truetype.c.ll
 ; yosys/optimized/Solver.ll
 ; yosys/optimized/ezminisat.ll

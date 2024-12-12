@@ -1,4 +1,4 @@
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setne	%al
@@ -7,7 +7,7 @@ func00000000000000c6:                   # @func00000000000000c6
 	movl	$1, %eax
 	cmovsq	%rcx, %rax
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	xorl	%ecx, %ecx
 	cmpq	$33, %rsi
 	setb	%cl
@@ -17,7 +17,7 @@ func0000000000000088:                   # @func0000000000000088
 	cmpq	$2, %rdi
 	cmovaeq	%rcx, %rax
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	testq	%rsi, %rsi
 	setne	%al
 	testq	%rdi, %rdi
@@ -26,7 +26,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	movzbl	%cl, %eax
 	shll	$14, %eax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	movabsq	$9223372036854775807, %rcx      # imm = 0x7FFFFFFFFFFFFFFF
 	leaq	2(%rcx), %rax
 	testq	%rsi, %rsi
@@ -34,7 +34,7 @@ func000000000000006a:                   # @func000000000000006a
 	testq	%rdi, %rdi
 	cmovsq	%rcx, %rax
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	testq	%rsi, %rsi
 	sete	%al
 	testq	%rdi, %rdi
@@ -43,7 +43,7 @@ func000000000000001c:                   # @func000000000000001c
 	movzbl	%cl, %eax
 	shll	$3, %eax
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
 	leaq	1(%rax), %rcx
 	testq	%rsi, %rsi
@@ -51,7 +51,7 @@ func0000000000000061:                   # @func0000000000000061
 	testq	%rdi, %rdi
 	cmovneq	%rcx, %rax
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testq	%rsi, %rsi
 	movl	$33554452, %eax                 # imm = 0x2000014
 	movl	$513, %ecx                      # imm = 0x201
@@ -59,7 +59,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	testq	%rdi, %rdi
 	cmoveq	%rcx, %rax
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000198:                   # @func0000000000000198
 	testq	%rsi, %rsi
 	setne	%al
 	shrq	$32, %rdi

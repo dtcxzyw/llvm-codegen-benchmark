@@ -1,10 +1,9 @@
 
-; 68 occurrences:
+; 75 occurrences:
 ; actix-rs/optimized/bcivtj360kt2ve.ll
 ; clamav/optimized/readdb.c.ll
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
 ; coreutils-rs/optimized/2praalz1q844ogmk.ll
-; coreutils-rs/optimized/52j8pvnsrfusu9z8.ll
 ; darktable/optimized/pdf.c.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; flac/optimized/utils.c.ll
@@ -16,16 +15,13 @@
 ; graphviz/optimized/pathcat.c.ll
 ; gromacs/optimized/cmdlineparser.cpp.ll
 ; hwloc/optimized/hwloc-ps.ll
-; hwloc/optimized/pci-common.ll
 ; icu/optimized/locid.ll
 ; icu/optimized/uloc_tag.ll
 ; linux/optimized/dm-ioctl.ll
-; linux/optimized/libata-eh.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/pcm_misc.ll
 ; linux/optimized/tdls.ll
 ; linux/optimized/tx.ll
-; llvm/optimized/AsmLexer.cpp.ll
 ; llvm/optimized/DeclarationFragments.cpp.ll
 ; llvm/optimized/ExprConcepts.cpp.ll
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
@@ -68,10 +64,21 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; z3/optimized/datalog_parser.cpp.ll
+; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/38pyrye3lmvdaenlt6t0na0m3.ll
+; zed-rs/optimized/455yb6ma6j3a5kpbn5166o5rm.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/7la7lih0ughh74a0k2a34khk7.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8wvy5aljfw2qmbxbtkkewwal7.ll
+; zed-rs/optimized/8x58xp4s22l8izlb56sviitm3.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(i8 %0, ptr %1) #0 {
+define ptr @func0000000000000061(i8 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 32
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 32
   %3 = icmp eq i8 %0, 0
   %4 = select i1 %3, ptr null, ptr %2
   ret ptr %4
@@ -80,17 +87,18 @@ entry:
 ; 1 occurrences:
 ; ring-rs/optimized/36n9a21mmta9vg69.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i8 %0, ptr %1) #0 {
+define ptr @func000000000000006a(i8 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = icmp sgt i8 %0, -1
   %4 = select i1 %3, ptr null, ptr %2
   ret ptr %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; cpython/optimized/initconfig.ll
 ; git/optimized/ref-filter.ll
+; hwloc/optimized/pci-common.ll
 ; linux/optimized/base.ll
 ; linux/optimized/sta_info.ll
 ; postgres/optimized/heaptoast.ll
@@ -111,16 +119,16 @@ entry:
 }
 
 ; 8 occurrences:
-; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; hermes/optimized/InstructionEscapeAnalysis.cpp.ll
 ; hermes/optimized/LowerBuiltinCalls.cpp.ll
 ; hermes/optimized/Passes.cpp.ll
 ; hermes/optimized/RegAlloc.cpp.ll
 ; hermes/optimized/Utils.cpp.ll
-; influxdb-rs/optimized/380gcqze52ow6205.ll
-; llvm/optimized/Metadata.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/SimpleLoopUnswitch.cpp.ll
+; llvm/optimized/StandardInstrumentations.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(i8 %0, ptr %1) #0 {
+define ptr @func0000000000000044(i8 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -16
   %3 = icmp ult i8 %0, -8
@@ -128,10 +136,36 @@ entry:
   ret ptr %4
 }
 
+; 2 occurrences:
+; llvm/optimized/DXContainer.cpp.ll
+; llvm/optimized/Metadata.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000064(i8 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 20
+  %3 = icmp ult i8 %0, -3
+  %4 = select i1 %3, ptr null, ptr %2
+  ret ptr %4
+}
+
+; 4 occurrences:
+; coreutils-rs/optimized/52j8pvnsrfusu9z8.ll
+; llvm/optimized/AsmLexer.cpp.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(i8 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %3 = icmp eq i8 %0, 48
+  %4 = select i1 %3, ptr null, ptr %2
+  ret ptr %4
+}
+
 ; 1 occurrences:
 ; llvm/optimized/FunctionPropertiesAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002c(i8 %0, ptr %1) #0 {
+define ptr @func000000000000004c(i8 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -24
   %.not = icmp eq i8 %0, 85
@@ -142,9 +176,9 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/resowner.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i8 %0, ptr %1) #0 {
+define ptr @func0000000000000068(i8 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 568
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 568
   %3 = icmp ugt i8 %0, 15
   %4 = select i1 %3, ptr null, ptr %2
   ret ptr %4
@@ -165,9 +199,9 @@ entry:
 ; nix/optimized/derivation-goal.ll
 ; nix/optimized/derivations.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(i8 %0, ptr %1) #0 {
+define ptr @func0000000000000066(i8 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 96
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 96
   %3 = icmp slt i8 %0, 0
   %4 = select i1 %3, ptr null, ptr %2
   ret ptr %4

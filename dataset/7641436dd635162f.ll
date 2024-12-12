@@ -15,10 +15,7 @@ entry:
   ret i1 %5
 }
 
-; 42 occurrences:
-; postgres/optimized/blkreftable.ll
-; postgres/optimized/blkreftable_shlib.ll
-; postgres/optimized/blkreftable_srv.ll
+; 39 occurrences:
 ; wasmedge/optimized/alias.cpp.ll
 ; wasmedge/optimized/aot_section.cpp.ll
 ; wasmedge/optimized/canon.cpp.ll
@@ -73,11 +70,11 @@ entry:
 ; postgres/optimized/blkreftable_shlib.ll
 ; postgres/optimized/blkreftable_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 127
   %4 = select i1 %1, i32 %3, i32 127
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -86,7 +83,20 @@ entry:
 ; postgres/optimized/blkreftable_shlib.ll
 ; postgres/optimized/blkreftable_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 65535
+  %4 = select i1 %1, i32 %3, i32 0
+  %5 = icmp samesign ult i32 %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; postgres/optimized/blkreftable.ll
+; postgres/optimized/blkreftable_shlib.ll
+; postgres/optimized/blkreftable_srv.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = icmp ule i32 %3, %0

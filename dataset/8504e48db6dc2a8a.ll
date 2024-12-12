@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; jq/optimized/execute.ll
 ; libquic/optimized/mul.c.ll
@@ -8,7 +8,6 @@
 ; openssl/optimized/libcrypto-lib-bn_mul.ll
 ; openssl/optimized/libcrypto-shlib-bn_mul.ll
 ; qemu/optimized/util_readline.c.ll
-; ruby/optimized/compar.ll
 ; ruby/optimized/io_buffer.ll
 ; ruby/optimized/rational.ll
 ; Function Attrs: nounwind
@@ -20,7 +19,7 @@ entry:
   ret i64 %3
 }
 
-; 46 occurrences:
+; 47 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -46,11 +45,11 @@ entry:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifMan.c.ll
 ; abc/optimized/ifTruth.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sfmCnf.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sfmLib.c.ll
 ; abc/optimized/wlcMem.c.ll
+; bullet3/optimized/b3GpuSapBroadphase.ll
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/gradient_checker.cc.ll
 ; ceres/optimized/line_search_minimizer.cc.ll
@@ -67,6 +66,7 @@ entry:
 ; velox/optimized/VectorStream.cpp.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0) #0 {
 entry:

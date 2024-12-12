@@ -1,4 +1,4 @@
-func000000000000029a:                   # @func000000000000029a
+func000000000000052a:                   # @func000000000000052a
 	xorl	%eax, %eax
 	cmpl	$1240, %edx                     # imm = 0x4D8
 	setge	%al
@@ -10,7 +10,7 @@ func000000000000029a:                   # @func000000000000029a
 	addl	%edi, %ecx
 	setns	%al
 	retq
-func0000000000000288:                   # @func0000000000000288
+func0000000000000508:                   # @func0000000000000508
 	cmpl	$80, %edx
 	movl	$-1980, %eax                    # imm = 0xF844
 	movl	$-1880, %ecx                    # imm = 0xF8A8

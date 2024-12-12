@@ -1,4 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	testl	%esi, %esi
 	sete	%cl
 	andl	$-65538, %edi                   # imm = 0xFFFEFFFE

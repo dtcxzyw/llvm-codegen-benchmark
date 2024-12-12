@@ -1,6 +1,8 @@
 
-; 64 occurrences:
+; 66 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll

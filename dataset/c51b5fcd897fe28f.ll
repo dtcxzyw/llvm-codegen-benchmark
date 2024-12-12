@@ -25,12 +25,11 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
 ; icu/optimized/parse.ll
 ; linux/optimized/af_unix.ll
 ; linux/optimized/gup.ll
-; linux/optimized/intel_engine_user.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/LTOModule.cpp.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll

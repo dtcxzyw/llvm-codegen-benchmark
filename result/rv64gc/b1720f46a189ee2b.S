@@ -20,6 +20,6 @@ func0000000000000027:                   # @func0000000000000027
 	fmv.d	fa1, fa2
 .LBB2_2:                                # %entry
 	fcvt.s.d	fa5, fa1
-	feq.s	a0, fa5, fa0
+	feq.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret

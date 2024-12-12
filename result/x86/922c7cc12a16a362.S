@@ -40,10 +40,9 @@ func0000000000000003:                   # @func0000000000000003
 	subq	%rcx, %rax
 	retq
 func000000000000000b:                   # @func000000000000000b
-	movabsq	$4503599627370494, %rax         # imm = 0xFFFFFFFFFFFFE
-	addq	%rdi, %rax
-	shrq	$51, %rax
-	imulq	$-19, %rax, %rax
+	addq	$-36, %rdi
+	andq	$-4, %rdi
+	leaq	(%rdi,%rdi,4), %rax
 	retq
 func0000000000000018:                   # @func0000000000000018
 	leaq	4(,%rdi,4), %rax

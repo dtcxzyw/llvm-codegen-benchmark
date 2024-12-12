@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; icu/optimized/smpdtfmt.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; openjdk/optimized/loopnode.ll
 ; openvdb/optimized/StreamCompression.cc.ll
 ; Function Attrs: nounwind

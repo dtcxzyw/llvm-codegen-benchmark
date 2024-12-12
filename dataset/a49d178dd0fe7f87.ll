@@ -11,57 +11,105 @@ entry:
   ret ptr %6
 }
 
-; 26 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
-; faiss/optimized/ProductQuantizer.cpp.ll
+; 14 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; hyperscan/optimized/scratch.c.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; opencv/optimized/bilateral_filter.dispatch.cpp.ll
-; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
-; opencv/optimized/stackblur.cpp.ll
 ; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
-; openjdk/optimized/mlib_ImageScanPoly.ll
-; openmpi/optimized/ad_read_coll.ll
-; openmpi/optimized/ad_write_coll.ll
-; openmpi/optimized/coll_base_allgatherv.ll
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; openusd/optimized/openexr-c.c.ll
-; osqp/optimized/amd_1.c.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000ff(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 15 occurrences:
+; bullet3/optimized/btMultiBodyDynamicsWorld.ll
+; casadi/optimized/feasiblesqpmethod.cpp.ll
+; casadi/optimized/lsqr.cpp.ll
+; casadi/optimized/sparsity_internal.cpp.ll
+; faiss/optimized/ProductQuantizer.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; opencv/optimized/bilateral_filter.dispatch.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; opencv/optimized/stackblur.cpp.ll
+; openjdk/optimized/mlib_ImageScanPoly.ll
+; openmpi/optimized/ad_read_coll.ll
+; openmpi/optimized/ad_write_coll.ll
+; openmpi/optimized/coll_base_allgatherv.ll
+; osqp/optimized/amd_1.c.ll
 ; php/optimized/compact_literals.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000ab(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 %1
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %1
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 3 occurrences:
+; opencv/optimized/stackblur.cpp.ll
+; openjdk/optimized/mlib_ImageScanPoly.ll
+; osqp/optimized/amd_1.c.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000aa(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 %1
   %4 = getelementptr nusw i8, ptr %3, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %6 = getelementptr nusw ptr, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 6 occurrences:
-; bullet3/optimized/btMultiBodyDynamicsWorld.ll
+; 2 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
-; gromacs/optimized/lmmin.cpp.ll
 ; oiio/optimized/maketexture.cpp.ll
-; openmpi/optimized/ad_read_coll.ll
-; openmpi/optimized/ad_write_coll.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr float, ptr %2, i64 %1
   %4 = getelementptr float, ptr %3, i64 %1
   %5 = getelementptr float, ptr %4, i64 %1
-  %6 = getelementptr nusw float, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw float, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; gromacs/optimized/lmmin.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; gromacs/optimized/lmmin.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %1
+  %6 = getelementptr nusw double, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -78,16 +126,39 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
-; casadi/optimized/feasiblesqpmethod.cpp.ll
-; casadi/optimized/lsqr.cpp.ll
+; 1 occurrences:
+; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000fc(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr double, ptr %2, i64 %1
-  %4 = getelementptr double, ptr %3, i64 %1
-  %5 = getelementptr nusw double, ptr %4, i64 %1
-  %6 = getelementptr nusw double, ptr %5, i64 %0
+  %3 = getelementptr nusw nuw i16, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i16, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i16, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/gfluidimgproc.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fe(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw float, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw float, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %1
+  %6 = getelementptr nusw float, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; casadi/optimized/sparsity_internal.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i64, ptr %2, i64 %1
+  %4 = getelementptr i64, ptr %3, i64 %1
+  %5 = getelementptr i64, ptr %4, i64 %1
+  %6 = getelementptr nusw i64, ptr %5, i64 %0
   ret ptr %6
 }
 

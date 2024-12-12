@@ -1,7 +1,8 @@
 
-; 119 occurrences:
+; 125 occurrences:
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/fraClaus.c.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/b3File.ll
 ; cmake/optimized/nghttp2_stream.c.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
@@ -42,6 +43,11 @@
 ; libwebp/optimized/predictor_enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; linux/optimized/hid-lg4ff.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/alignset.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -127,7 +133,7 @@ entry:
   ret i32 %4
 }
 
-; 53 occurrences:
+; 52 occurrences:
 ; bullet3/optimized/b3File.ll
 ; faiss/optimized/VectorTransform.cpp.ll
 ; gromacs/optimized/fft5d.cpp.ll
@@ -138,7 +144,6 @@ entry:
 ; libwebp/optimized/frame_enc.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
-; linux/optimized/acpi_lpat.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/ff-memless.ll
 ; linux/optimized/inetpeer.ll

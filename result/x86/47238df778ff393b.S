@@ -1,108 +1,108 @@
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	movl	$2, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	setg	%al
 	retq
-func0000000000000086:                   # @func0000000000000086
+func0000000000000106:                   # @func0000000000000106
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func00000000000000fb:                   # @func00000000000000fb
+func00000000000001eb:                   # @func00000000000001eb
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	setge	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	addl	%esi, %edi
 	shrxl	%edx, %edi, %eax
 	testl	%eax, %eax
 	sete	%al
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	setne	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	movl	$-1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	setg	%al
 	retq
-func00000000000000b6:                   # @func00000000000000b6
+func0000000000000166:                   # @func0000000000000166
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func000000000000009b:                   # @func000000000000009b
+func000000000000012b:                   # @func000000000000012b
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	setge	%al
 	retq
-func000000000000008b:                   # @func000000000000008b
+func000000000000010b:                   # @func000000000000010b
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	setge	%al
 	retq
-func000000000000009a:                   # @func000000000000009a
+func000000000000012a:                   # @func000000000000012a
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%esi, %edi

@@ -1,3 +1,8 @@
+func000000000000000c:                   # @func000000000000000c
+	vpmovqd	%ymm0, %xmm0
+	vpslld	$4, %xmm0, %xmm0
+	vzeroupper
+	retq
 func000000000000000e:                   # @func000000000000000e
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$3, %xmm0, %xmm0
@@ -19,11 +24,6 @@ func000000000000000f:                   # @func000000000000000f
 	vzeroupper
 	retq
 func000000000000000a:                   # @func000000000000000a
-	vpmovqd	%ymm0, %xmm0
-	vpaddd	%xmm0, %xmm0, %xmm0
-	vzeroupper
-	retq
-func000000000000000c:                   # @func000000000000000c
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
 	vzeroupper

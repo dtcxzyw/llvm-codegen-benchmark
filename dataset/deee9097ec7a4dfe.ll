@@ -1,32 +1,4 @@
 
-; 3 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000065(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 4294962396
-  %4 = add nsw i64 %3, %0
-  %5 = sdiv i64 %1, 26917
-  %6 = add nsw i64 %4, %5
-  ret i64 %6
-}
-
-; 3 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %2, 31
-  %4 = add nsw i64 %3, %1
-  %5 = sdiv i64 %0, -80
-  %6 = add nsw i64 %5, %4
-  ret i64 %6
-}
-
 ; 1 occurrences:
 ; php/optimized/parse_posix.ll
 ; Function Attrs: nounwind
@@ -63,18 +35,6 @@ entry:
   %3 = add nsw i64 %2, -719050
   %4 = add nsw i64 %3, %0
   %5 = sdiv i64 %1, -100
-  %6 = add nsw i64 %4, %5
-  ret i64 %6
-}
-
-; 1 occurrences:
-; nlohmann_json/optimized/unit-hash.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000007d(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 2654435769
-  %4 = add nuw nsw i64 %3, %0
-  %5 = sdiv exact i64 %1, 48
   %6 = add nsw i64 %4, %5
   ret i64 %6
 }

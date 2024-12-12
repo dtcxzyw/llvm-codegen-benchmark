@@ -1,11 +1,9 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/source_s_addMagsF16.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; spike/optimized/s_addMagsF16.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
 ; Function Attrs: nounwind
@@ -13,7 +11,7 @@ define i64 @func0000000000000003(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
   %3 = shl nuw nsw i64 %0, %2
-  %4 = and i64 %3, 4294967295
+  %4 = and i64 %3, 65535
   ret i64 %4
 }
 

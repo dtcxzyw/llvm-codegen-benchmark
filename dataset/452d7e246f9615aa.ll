@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -10,6 +10,9 @@
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; rocksdb/optimized/plain_table_bloom.cc.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:

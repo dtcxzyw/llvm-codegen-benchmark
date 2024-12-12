@@ -9,7 +9,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8388608
   %.masked = and i32 %0, -7340033
-  %3 = or i32 %2, %.masked
+  %3 = or i32 %.masked, %2
   %4 = or disjoint i32 %3, 1048576
   ret i32 %4
 }
@@ -21,7 +21,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1024
   %.masked = and i32 %0, 251659265
-  %3 = or i32 %2, %.masked
+  %3 = or i32 %.masked, %2
   %4 = or disjoint i32 %3, -520094722
   ret i32 %4
 }
@@ -65,7 +65,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 123000
   %.masked = and i32 %0, 123003
-  %3 = or i32 %2, %.masked
+  %3 = or i32 %.masked, %2
   %4 = or disjoint i32 %3, 128
   ret i32 %4
 }

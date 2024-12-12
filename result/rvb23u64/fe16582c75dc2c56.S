@@ -31,13 +31,13 @@ func0000000000000006:                   # @func0000000000000006
 	fle.s	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret
-func0000000000000018:                   # @func0000000000000018
-	fmv.w.x	fa5, zero
-	fle.s	a0, fa5, fa0
-	ret
 func0000000000000002:                   # @func0000000000000002
 	feq.s	a0, fa0, fa0
 	xori	a0, a0, 1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	fmv.w.x	fa5, zero
+	fle.s	a0, fa5, fa0
 	ret
 func000000000000001c:                   # @func000000000000001c
 	feq.s	a0, fa0, fa0

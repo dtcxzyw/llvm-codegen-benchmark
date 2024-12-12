@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; raylib/optimized/raudio.c.ll
-; spike/optimized/s_mul64To128M.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:

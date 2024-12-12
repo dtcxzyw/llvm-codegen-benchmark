@@ -1,4 +1,4 @@
-func0000000000000032:                   # @func0000000000000032
+func000000000000003b:                   # @func000000000000003b
 	shlq	$3, %rdx
 	subq	%rdx, %rsi
 	leaq	-8(%rsi,%rdi), %rax
@@ -13,10 +13,10 @@ func00000000000000d0:                   # @func00000000000000d0
 	subq	%rdx, %rsi
 	leaq	20(%rsi,%rdi), %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
-	shlq	$5, %rdx
+func0000000000000000:                   # @func0000000000000000
+	shlq	$6, %rdx
 	subq	%rdx, %rsi
-	leaq	-32(%rsi,%rdi), %rax
+	leaq	64(%rsi,%rdi), %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	shlq	$2, %rdx

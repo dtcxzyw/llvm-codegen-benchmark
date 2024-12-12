@@ -1,8 +1,10 @@
 
-; 119 occurrences:
+; 118 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/nwkSpeedup.c.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; brotli/optimized/metablock.c.ll
 ; casadi/optimized/fmu_function.cpp.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
@@ -47,8 +49,6 @@
 ; graphviz/optimized/spring_electrical.c.ll
 ; graphviz/optimized/tree_map.c.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
-; gromacs/optimized/dlange.cpp.ll
-; gromacs/optimized/dlanst.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/dlasd4.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
@@ -75,7 +75,6 @@
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlaqtr.c.ll
 ; openblas/optimized/dlasd4.c.ll
-; openblas/optimized/dlatdf.c.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
@@ -127,9 +126,10 @@ entry:
   ret i1 %4
 }
 
-; 49 occurrences:
+; 50 occurrences:
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/LWOAnimation.cpp.ll
+; boost/optimized/within_sph_geo.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_crop.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -185,7 +185,7 @@ entry:
   ret i1 %4
 }
 
-; 123 occurrences:
+; 125 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
@@ -195,6 +195,7 @@ entry:
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/within_sph_geo.ll
 ; brotli/optimized/block_splitter.c.ll
 ; brotli/optimized/metablock.c.ll
 ; casadi/optimized/ipqp.cpp.ll
@@ -306,6 +307,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; yosys/optimized/qwp.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
@@ -384,7 +386,7 @@ entry:
   ret i1 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/edge-selectors.cpp.ll
@@ -394,7 +396,6 @@ entry:
 ; openblas/optimized/dlaic1.c.ll
 ; openblas/optimized/dlaln2.c.ll
 ; openblas/optimized/dlaqtr.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openjdk/optimized/ScaledBlit.ll
 ; postgres/optimized/float.ll
@@ -422,7 +423,9 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; opencv/optimized/quadsubpix.cpp.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll

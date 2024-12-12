@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp ugt i32 %0, %1
@@ -68,7 +68,7 @@ entry:
 ; nuttx/optimized/lib_libvscanf.c.ll
 ; openmpi/optimized/rmaps_rr_mappers.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002b(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000004b(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp sge i32 %0, %1
@@ -79,7 +79,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/minimize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp sgt i32 %0, %1
@@ -103,7 +103,7 @@ entry:
 ; postgres/optimized/cash.ll
 ; z3/optimized/sat_watched.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp ne i32 %0, %1
@@ -114,7 +114,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/seq_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000045(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp ule i32 %0, %1
@@ -126,7 +126,7 @@ entry:
 ; postgres/optimized/print.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000049(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp uge i32 %0, %1
@@ -149,7 +149,7 @@ entry:
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000027(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000047(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp sle i32 %0, %1

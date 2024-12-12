@@ -33,7 +33,7 @@ func0000000000000008:                   # @func0000000000000008
 	imull	$1000000, %ecx, %ecx            # imm = 0xF4240
 	subl	%ecx, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	leal	4(%rdi), %ecx
 	cmpl	$-4, %edi
 	cmovll	%edi, %ecx

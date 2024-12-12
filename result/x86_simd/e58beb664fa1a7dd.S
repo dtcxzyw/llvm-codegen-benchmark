@@ -22,7 +22,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovb2m	%xmm1, %k1
 	vpbroadcastb	.LCPI1_2(%rip), %xmm1   # xmm1 = [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
 	vmovdqu8	.LCPI1_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqb	%xmm1, %xmm0, %xmm0
 	retq

@@ -1,9 +1,8 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; icu/optimized/collationdatabuilder.ll
 ; icu/optimized/collationsets.ll
 ; icu/optimized/dtfmtsym.ll
-; icu/optimized/dtptngen.ll
 ; icu/optimized/esctrn.ll
 ; icu/optimized/extradata.ll
 ; icu/optimized/rbt_pars.ll
@@ -17,20 +16,6 @@
 define i16 @func0000000000000018(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = trunc i32 %4 to i16
-  ret i16 %5
-}
-
-; 4 occurrences:
-; libevent/optimized/evmap.c.ll
-; linux/optimized/ff-memless.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = trunc i32 %4 to i16
   ret i16 %5

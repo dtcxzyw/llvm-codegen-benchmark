@@ -35,14 +35,13 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/kitIsop.c.ll
 ; abc/optimized/kitPla.c.ll
 ; abc/optimized/mpmPre.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sfmCnf.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; Function Attrs: nounwind

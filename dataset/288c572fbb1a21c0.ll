@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; llama.cpp/optimized/ggml.c.ll
@@ -41,25 +41,23 @@
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; openblas/optimized/dlauum_U_single.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 
-; 53 occurrences:
+; 57 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_array.cpp.ll
 ; entt/optimized/organizer.cpp.ll
-; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -72,7 +70,6 @@ entry:
 ; linux/optimized/buffer.ll
 ; llvm/optimized/ExpandMemCmp.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; ocio/optimized/MatrixOpData.cpp.ll
 ; openjdk/optimized/g1RegionToSpaceMapper.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; openvdb/optimized/Archive.cc.ll
@@ -106,6 +103,12 @@ entry:
 ; xgboost/optimized/simple_dmatrix.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/5m9bjvwazi0alu2tzwf9y1ejc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -114,7 +117,7 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -122,11 +125,13 @@ entry:
 ; linux/optimized/fan_core.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   ret i64 %3
 }
 

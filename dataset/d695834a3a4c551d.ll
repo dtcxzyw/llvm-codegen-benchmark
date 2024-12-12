@@ -1,5 +1,5 @@
 
-; 653 occurrences:
+; 669 occurrences:
 ; abc/optimized/cmdAuto.c.ll
 ; abc/optimized/sclLibScl.c.ll
 ; abc/optimized/sclLiberty.c.ll
@@ -22,6 +22,7 @@
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
+; boost/optimized/to_chars.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; bullet3/optimized/gim_contact.ll
 ; bullet3/optimized/gim_tri_collision.ll
@@ -470,7 +471,6 @@
 ; openusd/optimized/xformCommonAPI.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -653,6 +653,22 @@
 ; yoga/optimized/Node.cpp.ll
 ; yoga/optimized/YGNodeStyle.cpp.ll
 ; z3/optimized/mpf.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4km3eupdnqqnodg5d7nrlf2sf.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; zed-rs/optimized/exru7xor9i4a4ixpzw7x9xk8s.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(float %0) #0 {
 entry:

@@ -1,11 +1,10 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/ioWriteBlif.c.ll
 ; abc/optimized/ioWriteEdgelist.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; icu/optimized/collationbuilder.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
-; opencv/optimized/convolution.cpp.ll
 ; php/optimized/zend_persist.ll
 ; php/optimized/zend_persist_calc.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
@@ -19,13 +18,11 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; rocksdb/optimized/hash.cc.ll
-; spike/optimized/f16_to_f128.ll
-; spike/optimized/f16_to_f64.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -46,9 +43,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; jq/optimized/jv.ll
-; spike/optimized/f16_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:

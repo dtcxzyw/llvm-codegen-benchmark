@@ -1,5 +1,5 @@
 
-; 158 occurrences:
+; 156 occurrences:
 ; abc/optimized/wlcUif.c.ll
 ; abseil-cpp/optimized/match.cc.ll
 ; cmake/optimized/json_value.cpp.ll
@@ -32,7 +32,6 @@
 ; llvm/optimized/Lint.cpp.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
@@ -152,7 +151,6 @@
 ; spike/optimized/f16_mul.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; wireshark/optimized/crc11.c.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/packet-fcip.c.ll
 ; wireshark/optimized/packet-ifcp.c.ll
 ; wireshark/optimized/packet-mstp.c.ll

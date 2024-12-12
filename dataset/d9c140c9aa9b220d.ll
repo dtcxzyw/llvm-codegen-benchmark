@@ -25,6 +25,20 @@ entry:
   ret i64 %4
 }
 
+; 3 occurrences:
+; llvm/optimized/TypePrinter.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
+; postgres/optimized/nbtdedup.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i16 %0) #0 {
+entry:
+  %1 = and i16 %0, 63
+  %2 = zext nneg i16 %1 to i32
+  %3 = add nsw i32 %2, -1
+  %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/udpdump.c.ll
 ; Function Attrs: nounwind
@@ -34,18 +48,6 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = add nuw nsw i32 %2, 40
   %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; postgres/optimized/nbtdedup.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i16 %0) #0 {
-entry:
-  %1 = and i16 %0, 4095
-  %2 = zext nneg i16 %1 to i32
-  %3 = add nsw i32 %2, -1
-  %4 = zext i32 %3 to i64
   ret i64 %4
 }
 

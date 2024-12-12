@@ -1,5 +1,5 @@
 
-; 652 occurrences:
+; 663 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -221,7 +221,6 @@
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; gromacs/optimized/hizzie.cpp.ll
 ; gromacs/optimized/hxprops.cpp.ll
-; gromacs/optimized/kernel_common.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
 ; gromacs/optimized/md_support.cpp.ll
 ; gromacs/optimized/mttk.cpp.ll
@@ -246,8 +245,6 @@
 ; gromacs/optimized/slae2.cpp.ll
 ; gromacs/optimized/slaed6.cpp.ll
 ; gromacs/optimized/slaev2.cpp.ll
-; gromacs/optimized/slagtf.cpp.ll
-; gromacs/optimized/slanst.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; gromacs/optimized/slasd5.cpp.ll
@@ -286,6 +283,7 @@
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -652,11 +650,24 @@
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; yoga/optimized/FlexLine.cpp.ll
 ; yoga/optimized/Node.cpp.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 

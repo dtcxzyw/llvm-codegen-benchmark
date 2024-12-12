@@ -1,17 +1,16 @@
 
-%"class.clang::Qualifiers.2948875" = type { i64 }
-%"class.clang::FunctionEffect.2948876" = type { i8 }
-%struct.page.3359703 = type { i64, %union.anon.12.3359704, %union.anon.20.3359705, %struct.atomic_t.3359685, [8 x i8] }
-%union.anon.12.3359704 = type { %struct.anon.13.3359706 }
-%struct.anon.13.3359706 = type { %union.anon.14.3359707, ptr, %union.anon.16.3359708, i64 }
-%union.anon.14.3359707 = type { %struct.list_head.3359678 }
-%struct.list_head.3359678 = type { ptr, ptr }
-%union.anon.16.3359708 = type { i64 }
-%union.anon.20.3359705 = type { %struct.atomic_t.3359685 }
-%struct.atomic_t.3359685 = type { i32 }
+%"class.clang::Qualifiers.3142438" = type { i64 }
+%"class.clang::FunctionEffect.3142439" = type { i8 }
+%struct.page.3546594 = type { i64, %union.anon.12.3546595, %union.anon.20.3546596, %struct.atomic_t.3546576, [8 x i8] }
+%union.anon.12.3546595 = type { %struct.anon.13.3546597 }
+%struct.anon.13.3546597 = type { %union.anon.14.3546598, ptr, %union.anon.16.3546599, i64 }
+%union.anon.14.3546598 = type { %struct.list_head.3546569 }
+%struct.list_head.3546569 = type { ptr, ptr }
+%union.anon.16.3546599 = type { i64 }
+%union.anon.20.3546596 = type { %struct.atomic_t.3546576 }
+%struct.atomic_t.3546576 = type { i32 }
 
-; 30 occurrences:
-; libwebp/optimized/webp_enc.c.ll
+; 28 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -40,13 +39,12 @@
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
-; opencv/optimized/lapack.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw %"class.clang::Qualifiers.2948875", ptr %3, i64 %1
-  %5 = getelementptr nusw %"class.clang::FunctionEffect.2948876", ptr %4, i64 %0
+  %4 = getelementptr nusw nuw %"class.clang::Qualifiers.3142438", ptr %3, i64 %1
+  %5 = getelementptr nusw nuw %"class.clang::FunctionEffect.3142439", ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   %7 = add i64 %6, 7
   ret i64 %7
@@ -58,10 +56,24 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr %struct.page.3359703, ptr %3, i64 %1
-  %5 = getelementptr %struct.page.3359703, ptr %4, i64 %0
+  %4 = getelementptr %struct.page.3546594, ptr %3, i64 %1
+  %5 = getelementptr %struct.page.3546594, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   %7 = add i64 %6, 4094
+  ret i64 %7
+}
+
+; 2 occurrences:
+; libwebp/optimized/webp_enc.c.ll
+; opencv/optimized/lapack.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %6 = ptrtoint ptr %5 to i64
+  %7 = add i64 %6, 15
   ret i64 %7
 }
 

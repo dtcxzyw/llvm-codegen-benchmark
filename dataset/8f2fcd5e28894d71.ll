@@ -96,7 +96,7 @@
 ; tinympc/optimized/codegen.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0) #0 {
+define i1 @func0000000000000026(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 2
   %2 = shl nsw i64 %1, 1

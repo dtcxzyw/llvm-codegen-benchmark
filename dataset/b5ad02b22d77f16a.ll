@@ -1,5 +1,6 @@
 
-; 235 occurrences:
+; 236 occurrences:
+; boost/optimized/from_chars.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll

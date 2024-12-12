@@ -12,7 +12,8 @@ entry:
   ret i64 %6
 }
 
-; 172 occurrences:
+; 171 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -91,9 +92,7 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/ptp_kvm_x86.ll
 ; linux/optimized/pvclock.ll
-; linux/optimized/vclock_gettime.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -189,6 +188,20 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 40, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = sub i64 %0, %1
+  %6 = lshr i64 %5, %4
+  ret i64 %6
+}
+
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sub nuw nsw i32 38, %2
   %4 = zext nneg i32 %3 to i64
   %5 = sub i64 %0, %1
   %6 = lshr i64 %5, %4

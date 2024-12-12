@@ -12,7 +12,7 @@
 ; postgres/optimized/pg_dump_sort.ll
 ; ruby/optimized/re.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, %1
   ret i1 %2
@@ -23,7 +23,7 @@ entry:
 ; openspiel/optimized/dark_chess.cc.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, i8 %1) #0 {
+define i1 @func000000000000002a(i8 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = sext i8 %0 to i32

@@ -12,7 +12,7 @@ func0000000000000044:                   # @func0000000000000044
 	vmfgt.vf	v16, v12, fa5
 	vmfgt.vf	v12, v8, fa5
 	vmand.mm	v8, v12, v16
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	ret
 func0000000000000088:                   # @func0000000000000088
 	fmv.w.x	fa5, zero
@@ -28,7 +28,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	vmfle.vf	v16, v12, fa5
 	vmfle.vf	v12, v8, fa5
 	vmand.mm	v8, v12, v16
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	ret
 func0000000000000042:                   # @func0000000000000042
 	fmv.w.x	fa5, zero
@@ -36,5 +36,5 @@ func0000000000000042:                   # @func0000000000000042
 	vmfgt.vf	v16, v12, fa5
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v8, v12, v16
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	ret

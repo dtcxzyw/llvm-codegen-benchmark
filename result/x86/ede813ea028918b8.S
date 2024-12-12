@@ -48,12 +48,17 @@ func0000000000000005:                   # @func0000000000000005
 	cmpl	$3, %edx
 	cmovnel	%esi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	movl	%edi, %eax
 	cmpl	$14348907, %edx                 # imm = 0xDAF26B
 	cmovael	%esi, %eax
 	retq
-func0000000000000020:                   # @func0000000000000020
+func0000000000000050:                   # @func0000000000000050
+	movl	%edi, %eax
+	cmpl	$16, %edx
+	cmovael	%esi, %eax
+	retq
+func0000000000000060:                   # @func0000000000000060
 	movl	%edi, %eax
 	cmpl	$31744, %edx                    # imm = 0x7C00
 	cmovbl	%esi, %eax

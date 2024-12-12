@@ -1,12 +1,12 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	decl	%esi
 	movl	$2863311531, %eax               # imm = 0xAAAAAAAB
 	imulq	%rsi, %rax
 	shrq	$34, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addl	$18, %esi
 	movl	$2938661835, %eax               # imm = 0xAF286BCB
 	imulq	%rsi, %rax
@@ -15,14 +15,14 @@ func0000000000000011:                   # @func0000000000000011
 	shrl	%esi
 	addl	%eax, %esi
 	shrl	$4, %esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	addl	$-16, %esi
 	movl	$2863311531, %eax               # imm = 0xAAAAAAAB
 	imulq	%rsi, %rax
 	shrq	$35, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

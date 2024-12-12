@@ -1,7 +1,7 @@
 
-%"class.clang::SourceLocation.3116592" = type { i32 }
+%"class.clang::SourceLocation.3309293" = type { i32 }
 
-; 85 occurrences:
+; 82 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; assimp/optimized/ACLoader.cpp.ll
 ; cmake/optimized/lz_encoder_mf.c.ll
@@ -46,9 +46,6 @@
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
@@ -88,12 +85,12 @@
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/model_based_opt.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -133,12 +130,12 @@ entry:
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -151,7 +148,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr i32, ptr %0, i64 %5
   ret ptr %6
@@ -173,24 +170,24 @@ entry:
 ; llvm/optimized/ExprCXX.cpp.ll
 ; openusd/optimized/reformat.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 22
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/DiagnosticRenderer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nuw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"class.clang::SourceLocation.3116592", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.clang::SourceLocation.3309293", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -214,7 +211,7 @@ entry:
 define ptr @func000000000000003c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 26
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -266,12 +263,12 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = add nsw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 

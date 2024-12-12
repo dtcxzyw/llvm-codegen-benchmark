@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/giaSwitch.c.ll
@@ -10,7 +10,6 @@
 ; nori/optimized/imageview.cpp.ll
 ; opencv/optimized/camshiftdemo.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
-; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/simple_color_balance.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
@@ -21,7 +20,7 @@
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fdiv float %3, 5.000000e+04
   ret float %4
 }

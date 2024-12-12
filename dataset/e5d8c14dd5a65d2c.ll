@@ -1,6 +1,5 @@
 
-; 15 occurrences:
-; imgui/optimized/imgui.cpp.ll
+; 14 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll

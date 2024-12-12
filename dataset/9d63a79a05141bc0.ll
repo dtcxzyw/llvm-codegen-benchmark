@@ -4,7 +4,7 @@
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %0, %2
   %4 = select i1 %3, i64 %0, i64 %1
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/sort.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %0, %2
   %4 = select i1 %3, i64 %0, i64 %1
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/sort.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %0, %2
   %4 = select i1 %3, i64 %0, i64 %1

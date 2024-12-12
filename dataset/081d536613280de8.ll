@@ -47,4 +47,17 @@ entry:
   ret i8 %3
 }
 
+; 3 occurrences:
+; lvgl/optimized/lv_bin_decoder.ll
+; openusd/optimized/faceVertex.cpp.ll
+; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000003(i8 %0) #0 {
+entry:
+  %1 = shl nuw nsw i8 %0, 4
+  %2 = and i8 %1, 16
+  %3 = xor i8 %2, 16
+  ret i8 %3
+}
+
 attributes #0 = { nounwind }

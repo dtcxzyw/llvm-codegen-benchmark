@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	8192                            # 0x2000
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	%xmm1, %xmm1, %k0
 	vptestnmd	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k1
@@ -8,7 +8,7 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 .LCPI1_0:
 	.quad	20                              # 0x14
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vptestnmd	%xmm1, %xmm1, %k0
 	vpmovd2m	%xmm0, %k1
 	korw	%k0, %k1, %k0

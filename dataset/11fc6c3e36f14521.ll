@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/bacReadVer.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -38,9 +38,10 @@
 ; postgres/optimized/formatting.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; qemu/optimized/util_uri.c.ll
+; quickjs/optimized/libregexp.ll
 ; redis/optimized/sds.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000084(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -33
   %3 = add i8 %2, -91
@@ -53,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/util_uri.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000088(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -33
   %3 = add i8 %2, -71
@@ -66,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000481(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = add nsw i8 %2, -4
@@ -79,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-memcache.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000008c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -17
   %3 = add i8 %2, -4

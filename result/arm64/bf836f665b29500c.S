@@ -1,63 +1,49 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	cmeq	v4.4s, v4.4s, #0
-	cmeq	v5.4s, v5.4s, #0
-	bif	v1.16b, v3.16b, v5.16b
-	bif	v0.16b, v2.16b, v4.16b
-	ushr	v0.4s, v0.4s, #8
-	ushr	v1.4s, v1.4s, #8
+	cmp	w2, #0
+	csel	w8, w0, w1, eq
+	lsr	w0, w8, #8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	cmeq	v4.4s, v4.4s, v6.4s
-	cmeq	v5.4s, v5.4s, v6.4s
-	bif	v1.16b, v3.16b, v5.16b
-	bif	v0.16b, v2.16b, v4.16b
-	ushr	v0.4s, v0.4s, #4
-	ushr	v1.4s, v1.4s, #4
+	cmp	w2, #1
+	csel	w8, w0, w1, eq
+	lsr	w0, w8, #4
 	ret
                                         // -- End function
-func0000000000000009:                   // @func0000000000000009
+func0000000000000029:                   // @func0000000000000029
 // %bb.0:                               // %entry
-	movi	v6.4s, #16, lsl #16
-	cmhi	v4.4s, v6.4s, v4.4s
-	cmhi	v5.4s, v6.4s, v5.4s
-	bif	v1.16b, v3.16b, v5.16b
-	bif	v0.16b, v2.16b, v4.16b
-	ushr	v0.4s, v0.4s, #1
-	ushr	v1.4s, v1.4s, #1
+	cmp	w2, #256, lsl #12               // =1048576
+	csel	w8, w0, w1, lo
+	lsr	w0, w8, #1
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	movi	v6.4s, #26
-	cmhi	v4.4s, v6.4s, v4.4s
-	cmhi	v5.4s, v6.4s, v5.4s
-	bif	v1.16b, v3.16b, v5.16b
-	bif	v0.16b, v2.16b, v4.16b
-	ushr	v0.4s, v0.4s, #18
-	ushr	v1.4s, v1.4s, #18
+	cmp	w2, #26
+	csel	w8, w0, w1, lo
+	lsr	w0, w8, #18
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	cmeq	v4.4s, v4.4s, #0
-	cmeq	v5.4s, v5.4s, #0
-	bit	v1.16b, v3.16b, v5.16b
-	bit	v0.16b, v2.16b, v4.16b
-	ushr	v0.4s, v0.4s, #6
-	ushr	v1.4s, v1.4s, #6
+	cmp	w2, #0
+	csel	w8, w1, w0, eq
+	lsr	w0, w8, #6
+	ret
+                                        // -- End function
+func0000000000000028:                   // @func0000000000000028
+// %bb.0:                               // %entry
+	cmp	w2, #2
+	csel	w8, w0, w1, lo
+	lsr	w0, w8, #1
 	ret
                                         // -- End function
 func0000000000000019:                   // @func0000000000000019
 // %bb.0:                               // %entry
-	cmeq	v4.4s, v4.4s, #0
-	cmeq	v5.4s, v5.4s, #0
-	bit	v1.16b, v3.16b, v5.16b
-	bit	v0.16b, v2.16b, v4.16b
-	ushr	v0.4s, v0.4s, #8
-	ushr	v1.4s, v1.4s, #8
+	cmp	w2, #0
+	csel	w8, w1, w0, eq
+	lsr	w0, w8, #8
 	ret
                                         // -- End function

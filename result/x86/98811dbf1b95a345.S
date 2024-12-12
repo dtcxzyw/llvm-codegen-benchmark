@@ -1,4 +1,4 @@
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	notb	%dl
 	movzbl	%dl, %ecx
 	andl	$1, %ecx
@@ -10,7 +10,7 @@ func0000000000000068:                   # @func0000000000000068
 	cmovel	%ecx, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	notb	%dl
 	movzbl	%dl, %ecx
 	andl	$1, %ecx

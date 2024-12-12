@@ -2,15 +2,15 @@
 ; 1 occurrences:
 ; hermes/optimized/RegexParser.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i16 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -65
-  %3 = icmp ult i16 %2, 6
+  %3 = icmp samesign ult i16 %2, 6
   %4 = select i1 %3, i32 %0, i32 undef
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
 ; icu/optimized/tzfmt.ll
 ; icu/optimized/ushape.ll
@@ -22,6 +22,7 @@ entry:
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
+; llvm/optimized/X86FrameLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:

@@ -1,6 +1,7 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/to_chars.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
@@ -13,7 +14,8 @@ entry:
   ret i128 %2
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll

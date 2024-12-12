@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 73 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/target.c.ll
@@ -45,6 +45,7 @@
 ; llvm/optimized/TargetMachine.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_display.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
 ; mold/optimized/input-files.cc.ARM64.cc.ll

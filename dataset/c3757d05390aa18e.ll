@@ -39,12 +39,12 @@
 ; wolfssl/optimized/client.c.ll
 ; wolfssl/optimized/server.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 64
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/jvmtiImpl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 64
   %3 = zext nneg i32 %2 to i64

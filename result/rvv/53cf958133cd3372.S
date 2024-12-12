@@ -30,5 +30,5 @@ func00000000000000a8:                   # @func00000000000000a8
 	li	a0, 1461
 	vmacc.vx	v12, a0, v10
 	vsra.vi	v10, v12, 2
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

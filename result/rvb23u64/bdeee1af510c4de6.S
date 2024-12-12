@@ -23,8 +23,3 @@ func0000000000000008:                   # @func0000000000000008
 	bset	a0, zero, a0
 	add	a0, a0, a1
 	ret
-func0000000000000068:                   # @func0000000000000068
-	bset	a1, zero, a1
-	bset	a0, zero, a0
-	add	a0, a0, a1
-	ret

@@ -1,22 +1,22 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	orl	%edx, %esi
 	andl	$1, %esi
 	orl	$52, %esi
-	cmpl	%edi, %esi
-	setb	%al
+	cmpl	%esi, %edi
+	seta	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	orl	%edx, %esi
 	andl	$1, %esi
 	orl	$2, %esi
-	cmpl	%edi, %esi
-	seta	%al
+	cmpl	%esi, %edi
+	setb	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	orl	%edx, %esi
 	andl	$1, %esi
 	xorl	$3, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -25,6 +25,6 @@ func0000000000000006:                   # @func0000000000000006
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	leal	9(,%rax,8), %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq

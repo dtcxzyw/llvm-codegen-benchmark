@@ -1,5 +1,5 @@
-func0000000000000358:                   # @func0000000000000358
-	leal	-2(%rsi,%rdi), %eax
+func00000000000006b8:                   # @func00000000000006b8
+	leal	-2(%rdi,%rsi), %eax
 	cmpl	$-64, %eax
 	setb	%al
 	retq

@@ -24,7 +24,7 @@ func000000000000000c:                   # @func000000000000000c
 	.zero	16,2
 .LCPI2_1:
 	.zero	4,2
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vandnps	.LCPI2_1(%rip){1to4}, %xmm0, %xmm0
 	retq
 .LCPI3_0:
@@ -39,7 +39,7 @@ func0000000000000004:                   # @func0000000000000004
 	.zero	4,14
 .LCPI3_5:
 	.byte	48                              # 0x30
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpandd	.LCPI3_4(%rip){1to4}, %xmm0, %xmm0
 	vpcmpgtb	.LCPI3_1(%rip), %xmm0, %k1
 	vpbroadcastb	.LCPI3_5(%rip), %xmm0   # xmm0 = [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
@@ -7,8 +7,6 @@
 ; curl/optimized/libcurl_la-ftp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
-; hermes/optimized/IR.cpp.ll
-; hermes/optimized/StringRef.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-bss_mem.ll

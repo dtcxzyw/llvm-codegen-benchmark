@@ -1,5 +1,6 @@
 
-; 109 occurrences:
+; 111 occurrences:
+; eastl/optimized/TestMemory.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; hermes/optimized/TDZDedup.cpp.ll
 ; icu/optimized/messagepattern.ll
@@ -39,6 +40,7 @@
 ; llvm/optimized/Globals.cpp.ll
 ; llvm/optimized/IndirectBrExpandPass.cpp.ll
 ; llvm/optimized/InferAddressSpaces.cpp.ll
+; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/ItaniumCXXABI.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll

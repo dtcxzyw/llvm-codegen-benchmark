@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 31 occurrences:
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddLevelQ.c.ll
@@ -13,10 +13,6 @@
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/hopTruth.c.ll
-; abc/optimized/ifDec08.c.ll
-; abc/optimized/ifDec10.c.ll
-; abc/optimized/ifDec16.c.ll
-; abc/optimized/kitTruth.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; flac/optimized/format.c.ll
@@ -44,17 +40,14 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 3 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
-; abc/optimized/ifDec08.c.ll
-; abc/optimized/ifDec10.c.ll
-; abc/optimized/ifDec16.c.ll
+; abc/optimized/giaMini.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/kitTruth.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = shl i32 4, %0
+  %1 = shl i32 255, %0
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 2
   ret i64 %3

@@ -4,7 +4,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$131072, %rdi                   # imm = 0x20000
 	cmovbq	%rsi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shrq	$2, %rsi
 	xorl	%eax, %eax
 	movabsq	$-9223372036854775752, %rcx     # imm = 0x8000000000000038

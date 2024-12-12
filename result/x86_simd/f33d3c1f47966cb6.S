@@ -17,7 +17,7 @@
 	.short	6                               # 0x6
 	.short	6                               # 0x6
 	.short	6                               # 0x6
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	vpmovwb	%ymm1, %xmm1
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k0
 	vpcmpneqw	.LCPI0_1(%rip), %ymm0, %k1

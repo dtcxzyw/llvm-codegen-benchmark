@@ -30,21 +30,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = lshr i32 %3, 12
   %5 = and i32 %4, 15
-  ret i32 %5
-}
-
-; 1 occurrences:
-; arrow/optimized/value_parsing.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 23
-  %3 = or i32 %2, %0
-  %4 = lshr i32 %3, 23
-  %5 = and i32 %4, 255
   ret i32 %5
 }
 

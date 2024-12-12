@@ -18,7 +18,7 @@ entry:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = xor i1 %3, true
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-eth.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = xor i1 %3, true

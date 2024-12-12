@@ -21,10 +21,12 @@ func0000000000000008:                   # @func0000000000000008
 	vcmpeqss	%xmm1, %xmm0, %k1
 	vmovss	.LCPI3_0(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	retq
+.LCPI4_0:
+	.long	0x41400000                      # float 12
 func000000000000000a:                   # @func000000000000000a
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpless	%xmm1, %xmm0, %k1
-	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
+	vmovss	.LCPI4_0(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [1.2E+1,0.0E+0,0.0E+0,0.0E+0]
 	retq
 .LCPI5_0:
 	.long	0xdd5e0b6b                      # float -9.99999984E+17

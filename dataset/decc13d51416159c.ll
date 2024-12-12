@@ -1,5 +1,5 @@
 
-%"struct.V3NumberData::ValueAndX.2640850" = type { i32, i32 }
+%"struct.V3NumberData::ValueAndX.2754159" = type { i32, i32 }
 
 ; 2 occurrences:
 ; hdf5/optimized/H5Tbit.c.ll
@@ -11,7 +11,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = sdiv i32 %4, 4
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %"struct.V3NumberData::ValueAndX.2640850", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.V3NumberData::ValueAndX.2754159", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -24,7 +24,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = sdiv i32 %4, 32
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %"struct.V3NumberData::ValueAndX.2640850", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.V3NumberData::ValueAndX.2754159", ptr %0, i64 %6
   ret ptr %7
 }
 

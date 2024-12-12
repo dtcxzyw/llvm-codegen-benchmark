@@ -11,7 +11,7 @@ define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = icmp eq i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -22,29 +22,29 @@ define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = icmp ne i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/oopRecorder.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 1
   %4 = icmp ne i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = icmp eq i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -53,11 +53,11 @@ entry:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000079(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
-  %4 = icmp uge i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp samesign uge i32 %3, %1
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -66,10 +66,10 @@ entry:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000075(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 2
-  %4 = icmp ule i32 %3, %1
+  %4 = icmp samesign ule i32 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -382,7 +382,7 @@ define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = icmp ult i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -406,14 +406,14 @@ define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = icmp uge i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -435,7 +435,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = icmp eq i32 %3, %1
@@ -443,7 +443,7 @@ entry:
   ret i1 %5
 }
 
-; 286 occurrences:
+; 285 occurrences:
 ; wolfssl/optimized/ecc.c.ll
 ; z3/optimized/act_cache.cpp.ll
 ; z3/optimized/aig.cpp.ll
@@ -483,7 +483,6 @@ entry:
 ; z3/optimized/bv_solver.cpp.ll
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/char_decl_plugin.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/core_solver_pretty_printer.cpp.ll
@@ -735,7 +734,7 @@ define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 5
   %4 = icmp ugt i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -743,11 +742,11 @@ entry:
 ; luajit/optimized/minilua.ll
 ; redis/optimized/lgc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
   %4 = icmp slt i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

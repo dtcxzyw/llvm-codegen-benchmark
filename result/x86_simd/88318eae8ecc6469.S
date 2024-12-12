@@ -64,7 +64,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI1_0:
 	.quad	16807                           # 0x41a7
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrq	$1, %xmm3, %rdx

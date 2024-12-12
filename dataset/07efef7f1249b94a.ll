@@ -10,7 +10,7 @@
 ; verilator/optimized/V3Premit.cpp.ll
 ; verilator/optimized/V3Timing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp ne i64 %3, 0
@@ -25,7 +25,7 @@ entry:
 ; verilator/optimized/V3Inline.cpp.ll
 ; verilator/optimized/V3Timing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 12
   %4 = icmp eq i64 %3, 12

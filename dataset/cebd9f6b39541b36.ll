@@ -10,7 +10,7 @@
 define i1 @func000000000000000a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %4, %0
   %6 = icmp sgt i64 %5, 0
   ret i1 %6
@@ -52,7 +52,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %4, %0
   %6 = icmp ult i64 %5, -4294967296
   ret i1 %6
@@ -67,7 +67,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %4, %0
   %6 = icmp slt i64 %5, 3
   ret i1 %6
@@ -89,15 +89,26 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
-; 6 occurrences:
+; 1 occurrences:
+; folly/optimized/Dump.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = add i64 %1, %3
+  %5 = sub i64 %4, %0
+  %6 = icmp samesign ugt i64 %5, 2147483647
+  ret i1 %6
+}
+
+; 5 occurrences:
 ; cmake/optimized/cookie.c.ll
 ; curl/optimized/libcurl_la-cookie.ll
-; folly/optimized/Dump.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
@@ -105,9 +116,9 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %4, %0
-  %6 = icmp ugt i64 %5, 2147483647
+  %6 = icmp ugt i64 %5, 1
   ret i1 %6
 }
 

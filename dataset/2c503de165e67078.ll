@@ -22,7 +22,7 @@ entry:
 ; spike/optimized/s_addMagsF32.ll
 ; spike/optimized/s_subMagsF32.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 %2, %0

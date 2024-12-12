@@ -4,7 +4,7 @@
 ; qemu/optimized/hw_display_vga.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i32 9, i32 8
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/arp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i8 %0, i8 %1) #0 {
+define i32 @func000000000000002a(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i32 0, i32 2

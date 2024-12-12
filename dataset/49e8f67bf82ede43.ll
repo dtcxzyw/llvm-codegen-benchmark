@@ -16,7 +16,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = icmp eq i32 %1, 2
@@ -45,7 +45,7 @@ entry:
 ; verilator/optimized/V3PreProc.cpp.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = icmp slt i32 %1, 1
@@ -80,7 +80,7 @@ entry:
 ; abc/optimized/wlcGraft.c.ll
 ; opencv/optimized/aruco_detector.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = icmp eq i32 %1, 0
@@ -105,7 +105,7 @@ entry:
 ; redis/optimized/ldo.ll
 ; wireshark/optimized/packet-p_mul.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = icmp slt i32 %1, 1
@@ -120,7 +120,7 @@ entry:
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; llvm/optimized/MCCodeView.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = icmp slt i32 %1, 0
@@ -132,10 +132,10 @@ entry:
 ; freetype/optimized/psaux.c.ll
 ; wireshark/optimized/in_cksum.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = icmp ugt i32 %1, 65535
+  %3 = icmp samesign ugt i32 %1, 65535
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }

@@ -142,6 +142,13 @@ func00000000000000c4:                   # @func00000000000000c4
 	vmfgt.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v16
 	ret
+func0000000000000084:                   # @func0000000000000084
+	fmv.w.x	fa5, zero
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmfeq.vf	v16, v12, fa5
+	vmfgt.vf	v12, v8, fa5
+	vmand.mm	v0, v12, v16
+	ret
 func00000000000000bb:                   # @func00000000000000bb
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmax.vv	v8, v8, v12

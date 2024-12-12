@@ -3,7 +3,7 @@
 ; git/optimized/revision.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp slt i32 %0, %1
@@ -15,7 +15,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-buffer-verify.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = icmp ne i32 %0, 4
@@ -67,7 +67,7 @@ entry:
 ; php/optimized/pcre2_auto_possess.ll
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = icmp eq i32 %0, 15
@@ -78,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = icmp sgt i32 %0, %1
@@ -91,7 +91,7 @@ entry:
 ; cpython/optimized/_decimal.ll
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = icmp eq i32 %0, 1
@@ -107,7 +107,7 @@ entry:
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %0, %1
@@ -118,7 +118,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/Conformance.test.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp sgt i32 %0, %1
@@ -129,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/Conformance.test.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp slt i32 %0, %1
@@ -140,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/Conformance.test.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ugt i32 %0, %1
@@ -151,10 +151,21 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/Conformance.test.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ult i32 %0, %1
+  %5 = xor i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sge i32 %1, %2
+  %4 = icmp sgt i32 %0, 179
   %5 = xor i1 %4, %3
   ret i1 %5
 }
@@ -163,7 +174,7 @@ entry:
 ; icu/optimized/calendar.ll
 ; llvm/optimized/AArch64ConditionOptimizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = icmp eq i32 %0, 11
@@ -175,7 +186,7 @@ entry:
 ; freetype/optimized/autofit.c.ll
 ; linux/optimized/ip_tables.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne i32 %0, %1
@@ -186,7 +197,7 @@ entry:
 ; 1 occurrences:
 ; nlohmann_json/optimized/unit-udt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cb(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp sge i32 %0, %1
@@ -197,7 +208,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ugt i32 %0, %1
@@ -208,7 +219,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/spacer_qe_project.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000144(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp ult i32 %0, %1
@@ -219,7 +230,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/run_length_morphology.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = icmp ne i32 %0, 0

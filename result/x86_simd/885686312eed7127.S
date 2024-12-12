@@ -9,7 +9,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpltud	.LCPI0_1(%rip){1to8}, %ymm2, %k1
-	korb	%k0, %k1, %k1
+	korb	%k1, %k0, %k1
 	vpcmpgtw	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

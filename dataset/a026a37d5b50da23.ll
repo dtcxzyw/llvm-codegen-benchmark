@@ -2,20 +2,16 @@
 ; 1 occurrences:
 ; openjdk/optimized/ciStreams.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr i32, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 5 occurrences:
-; clamav/optimized/upx.c.ll
-; git/optimized/apply.ll
-; icu/optimized/rematch.ll
-; opencv/optimized/cascadedetect.cpp.ll
+; 1 occurrences:
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i32 %1, i64 %2) #0 {
@@ -55,6 +51,22 @@ entry:
   %4 = getelementptr i64, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr i64, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 5 occurrences:
+; boost/optimized/to_chars.ll
+; clamav/optimized/upx.c.ll
+; git/optimized/apply.ll
+; icu/optimized/rematch.ll
+; opencv/optimized/cascadedetect.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 2147483647
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = sext i32 %1 to i64
+  %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

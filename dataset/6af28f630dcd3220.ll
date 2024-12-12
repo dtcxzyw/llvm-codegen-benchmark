@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 54 occurrences:
 ; clamav/optimized/chmd.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/zstd_compress_literals.c.ll
@@ -23,13 +23,11 @@
 ; icu/optimized/usprep.ll
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utrie2.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/uncore_nhmex.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/FoldingSet.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
@@ -65,7 +63,8 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/text_file_backend.ll
 ; cvc5/optimized/single_inv_partition.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
@@ -84,7 +83,7 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; bullet3/optimized/btBoxBoxDetector.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
@@ -95,7 +94,9 @@ entry:
 ; linux/optimized/blktrace.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
 ; minetest/optimized/CFileSystem.cpp.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; openusd/optimized/detokenize.c.ll
@@ -111,12 +112,12 @@ entry:
 define i64 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 1, i32 -1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
@@ -141,9 +142,7 @@ entry:
 ; llvm/optimized/MDBuilder.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; luau/optimized/lvmload.cpp.ll
 ; openjdk/optimized/matcher.ll
@@ -158,6 +157,7 @@ entry:
 ; redis/optimized/zipmap.ll
 ; wireshark/optimized/uat.c.ll
 ; z3/optimized/eliminate_predicates.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:

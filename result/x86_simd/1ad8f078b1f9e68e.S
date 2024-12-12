@@ -8,7 +8,7 @@
 	.quad	6                               # 0x6
 .LCPI0_4:
 	.quad	4                               # 0x4
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	vpcmpnleud	.LCPI0_0(%rip){1to4}, %xmm0, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm1   # ymm1 = [5,5,5,5]
 	vpbroadcastq	.LCPI0_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [6,6,6,6]
@@ -26,7 +26,7 @@ func0000000000000088:                   # @func0000000000000088
 	.quad	2                               # 0x2
 .LCPI1_4:
 	.quad	4                               # 0x4
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	vpcmpltud	.LCPI1_0(%rip){1to4}, %xmm0, %k1
 	vpbroadcastq	.LCPI1_1(%rip), %ymm1   # ymm1 = [1,1,1,1]
 	vpbroadcastq	.LCPI1_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2]
@@ -44,7 +44,7 @@ func0000000000000048:                   # @func0000000000000048
 	.quad	4                               # 0x4
 .LCPI2_4:
 	.quad	2                               # 0x2
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	vpcmpgtd	.LCPI2_0(%rip){1to4}, %xmm0, %k1
 	vpbroadcastq	.LCPI2_1(%rip), %ymm1   # ymm1 = [3,3,3,3]
 	vpbroadcastq	.LCPI2_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [4,4,4,4]

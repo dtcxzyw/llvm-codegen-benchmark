@@ -1,5 +1,5 @@
 
-; 406 occurrences:
+; 422 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/deflate.c.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
@@ -7,6 +7,16 @@
 ; actix-rs/optimized/4ijdjw7p9m6gnufo.ll
 ; arrow/optimized/light_array.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; c3c/optimized/sema_asm.c.ll
@@ -105,7 +115,6 @@
 ; lief/optimized/DyldInfo.cpp.ll
 ; lief/optimized/iostream.cpp.ll
 ; lief/optimized/ssl_msg.c.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/af_netlink.ll
@@ -115,11 +124,9 @@
 ; linux/optimized/drm_atomic_helper.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/drm_scdc_helper.ll
 ; linux/optimized/dvo_ch7xxx.ll
 ; linux/optimized/dvo_ivch.ll
 ; linux/optimized/eeepc-laptop.ll
-; linux/optimized/evregion.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/hda_jack.ll
@@ -137,7 +144,6 @@
 ; linux/optimized/keyboard.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/nfs4proc.ll
@@ -146,7 +152,6 @@
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/pcm_native.ll
 ; linux/optimized/pmsr.ll
-; linux/optimized/pty.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/scsi_lib.ll
 ; linux/optimized/sd.ll
@@ -252,6 +257,16 @@
 ; luajit/optimized/minilua.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/UnwindBuilderDwarf2.cpp.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_group.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_textarea.ll
+; lvgl/optimized/lv_timer.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mimalloc/optimized/page.c.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
@@ -334,7 +349,6 @@
 ; pybind11/optimized/test_tagbased_polymorphic.cpp.ll
 ; pybind11/optimized/test_type_caster_pyobject_ptr.cpp.ll
 ; qemu/optimized/block_file-posix.c.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -348,6 +362,8 @@
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; rust-analyzer-rs/optimized/3fmes56s5ij0nccc.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; verilator/optimized/V3EmitCBase.cpp.ll
 ; verilator/optimized/V3EmitCImp.cpp.ll
 ; verilator/optimized/V3EmitCSyms.cpp.ll
@@ -414,7 +430,7 @@ entry:
   ret i8 %3
 }
 
-; 162 occurrences:
+; 171 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
@@ -469,6 +485,7 @@ entry:
 ; lief/optimized/ccm.c.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/i8042.ll
+; linux/optimized/keyboard.ll
 ; linux/optimized/reboot.ll
 ; linux/optimized/scsi_common.ll
 ; linux/optimized/seq_clientmgr.ll
@@ -575,13 +592,21 @@ entry:
 ; wireshark/optimized/pcap-common.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
 ; yosys/optimized/viz.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/b9ty0axfl2ld0co5krahg7gfq.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i8 1, i8 2
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   ret i8 %3
 }
 

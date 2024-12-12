@@ -37,6 +37,14 @@ func00000000000000c7:                   # @func00000000000000c7
 	addi	a1, a1, 1024
 	addw	a0, a0, a1
 	ret
+func00000000000000d7:                   # @func00000000000000d7
+	slli	a2, a2, 10
+	add	a0, a0, a1
+	lui	a1, 1034754
+	add	a0, a0, a2
+	addi	a1, a1, 1024
+	addw	a0, a0, a1
+	ret
 func00000000000000ff:                   # @func00000000000000ff
 	slli	a2, a2, 1
 	add	a0, a0, a1

@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v12, v10, a0

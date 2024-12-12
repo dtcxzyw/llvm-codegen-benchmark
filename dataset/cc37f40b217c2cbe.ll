@@ -13,7 +13,7 @@ entry:
   %3 = icmp eq i32 %2, 273
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -28,12 +28,12 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; cmake/optimized/testDirectory.cxx.ll
 ; flac/optimized/main.c.ll
@@ -44,14 +44,13 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; php/optimized/pcre2_jit_compile.ll
-; slurm/optimized/ebpf.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000030f(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -66,7 +65,7 @@ entry:
   %3 = icmp eq i32 %2, 1
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -85,7 +84,7 @@ entry:
   %3 = icmp sgt i32 %2, 11
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -98,7 +97,7 @@ entry:
   %3 = icmp slt i32 %2, -15736
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -116,7 +115,20 @@ entry:
   %3 = icmp ugt i32 %2, 9999999
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
+  %7 = add nuw nsw i32 %6, %4
+  ret i32 %7
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000060f(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 9999999
+  %4 = zext i1 %3 to i32
+  %5 = zext i1 %1 to i32
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -130,7 +142,7 @@ entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }
@@ -145,7 +157,7 @@ entry:
   %3 = icmp ugt i32 %2, 16383
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -162,7 +174,7 @@ entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -170,12 +182,12 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/brightedges.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000010f(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func000000000000050f(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 1020
+  %3 = icmp samesign ult i32 %2, 1020
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -189,7 +201,7 @@ entry:
   %3 = icmp sgt i32 %2, 8191
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }

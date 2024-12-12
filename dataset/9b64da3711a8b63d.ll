@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
-; hyperscan/optimized/ng_util.cpp.ll
 ; php/optimized/zend_hash.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1, i64 %2) #0 {

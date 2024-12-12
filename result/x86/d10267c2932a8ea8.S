@@ -3,11 +3,6 @@ func0000000000000001:                   # @func0000000000000001
 	cmoveq	%rdx, %rsi
 	movslq	%esi, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
-	testb	$1, %dil
-	cmoveq	%rdx, %rsi
-	movslq	%esi, %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi

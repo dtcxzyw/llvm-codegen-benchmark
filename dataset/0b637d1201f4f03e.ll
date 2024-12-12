@@ -5,7 +5,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/related_packet_delegate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0) #0 {
+define i1 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 1, %0
   %2 = icmp slt i32 %1, %0

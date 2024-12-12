@@ -1,13 +1,10 @@
 
-; 16 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; linux/optimized/printk.ll
-; linux/optimized/uptime.ll
 ; openssl/optimized/libcrypto-lib-bss_dgram.ll
-; openssl/optimized/libcrypto-lib-ct_prn.ll
 ; openssl/optimized/libcrypto-lib-ts_rsp_sign.ll
 ; openssl/optimized/libcrypto-shlib-bss_dgram.ll
-; openssl/optimized/libcrypto-shlib-ct_prn.ll
 ; openssl/optimized/libcrypto-shlib-ts_rsp_sign.ll
 ; openssl/optimized/libssl-lib-d1_lib.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll

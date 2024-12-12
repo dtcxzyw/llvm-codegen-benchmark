@@ -1,8 +1,9 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; gromacs/optimized/enxio.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll
-; linux/optimized/pcc.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/StringRef.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
@@ -14,7 +15,7 @@
 ; raylib/optimized/rtextures.c.ll
 ; velox/optimized/TimeZoneMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000084(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 2
   %3 = icmp ult i8 %2, 4
@@ -31,7 +32,7 @@ entry:
 ; openusd/optimized/read.c.ll
 ; protobuf/optimized/text_format_decode_data.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000184(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = icmp ult i8 %2, 2
@@ -47,7 +48,7 @@ entry:
 ; wireshark/optimized/packet-cattp.c.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -99
   %3 = icmp ult i8 %2, 2
@@ -61,11 +62,23 @@ entry:
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000484(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -1
   %3 = icmp ult i8 %2, 31
   %4 = icmp ult i8 %0, -7
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/pcc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000284(i8 %0, i8 %1) #0 {
+entry:
+  %2 = add i8 %1, -8
+  %3 = icmp ult i8 %2, 57
+  %4 = icmp samesign ult i8 %0, 2
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }

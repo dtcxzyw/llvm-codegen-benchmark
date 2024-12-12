@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/giaTsim.c.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/hooks.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/ASTWriter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll

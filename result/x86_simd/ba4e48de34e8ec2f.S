@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpsrlq	$1, %ymm1, %ymm0
 	vmovdqa	%ymm0, %ymm2
 	vpternlogq	$15, %ymm0, %ymm0, %ymm2 # ymm2 = ~ymm2
-	vpaddq	%ymm1, %ymm2, %ymm0 {%k1}
+	vpaddq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpslld	$31, %xmm0, %xmm0
@@ -12,5 +12,5 @@ func0000000000000000:                   # @func0000000000000000
 	vpsrlq	$1, %ymm1, %ymm0
 	vmovdqa	%ymm0, %ymm2
 	vpternlogq	$15, %ymm0, %ymm0, %ymm2 # ymm2 = ~ymm2
-	vpaddq	%ymm1, %ymm2, %ymm0 {%k1}
+	vpaddq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq

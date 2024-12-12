@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vextracti128	$1, %ymm1, %xmm3
@@ -99,7 +99,7 @@ func0000000000000006:                   # @func0000000000000006
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vextracti128	$1, %ymm1, %xmm3
@@ -145,7 +145,7 @@ func0000000000000016:                   # @func0000000000000016
 	idivl	%ecx
 	vpinsrd	$3, %edx, %xmm3, %xmm1
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpcmpnltd	%ymm0, %ymm1, %k0
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

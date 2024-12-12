@@ -16,12 +16,12 @@
 ; openjdk/optimized/hb-ot-var.ll
 ; wireshark/optimized/k12.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = and i32 %1, 32512
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp samesign ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -34,7 +34,7 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = and i32 %1, 3840
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = and i32 %1, 1984
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = and i32 %1, 1984
@@ -73,7 +73,7 @@ entry:
 ; postgres/optimized/pg_lzcompress_shlib.ll
 ; postgres/optimized/pg_lzcompress_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = and i32 %1, 16128
@@ -85,12 +85,12 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = and i32 %1, 16256
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp samesign ugt i32 %5, %0
   ret i1 %6
 }
 

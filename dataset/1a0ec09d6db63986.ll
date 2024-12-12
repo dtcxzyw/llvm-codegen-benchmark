@@ -1,12 +1,10 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/giaSweeper.c.ll
 ; abc/optimized/sscSat.c.ll
 ; bdwgc/optimized/gc.c.ll
-; cmake/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:

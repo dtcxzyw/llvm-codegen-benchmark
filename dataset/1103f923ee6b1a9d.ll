@@ -1,5 +1,5 @@
 
-; 271 occurrences:
+; 270 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; cpython/optimized/setobject.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -226,7 +226,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -275,7 +274,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, 47
-  %3 = xor i64 %2, %1
+  %3 = xor i64 %1, %2
   %4 = xor i64 %3, %0
   %5 = mul i64 %4, -7070675565921424023
   ret i64 %5

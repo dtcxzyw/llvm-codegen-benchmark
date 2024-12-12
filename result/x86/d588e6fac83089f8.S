@@ -1,7 +1,7 @@
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	shrl	$3, %edx
 	incl	%edx
 	imull	%esi, %edx
-	cmpl	%edi, %edx
-	seta	%al
+	cmpl	%edx, %edi
+	setb	%al
 	retq

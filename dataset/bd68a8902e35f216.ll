@@ -40,7 +40,7 @@
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/ir_cfg.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000191(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000321(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 %0, 6
@@ -67,7 +67,7 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000003e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 %0, 6
@@ -81,7 +81,7 @@ entry:
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001dc(i32 %0, i64 %1) #0 {
+define i1 @func00000000000003ac(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 %0, 6
@@ -118,7 +118,7 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000003a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 %0, 6
@@ -130,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ehci-hcd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %0, 3
@@ -142,7 +142,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/castle.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000019c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000032c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 %0, 6

@@ -1,10 +1,16 @@
 
-; 15 occurrences:
+; 21 occurrences:
 ; abc/optimized/abcSweep.c.ll
 ; abc/optimized/sswConstr.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; git/optimized/imap-send.ll
-; libevent/optimized/evthread_pthread.c.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
 ; openblas/optimized/cblas_dgemm.c.ll

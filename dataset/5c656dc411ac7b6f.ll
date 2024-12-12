@@ -27,9 +27,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -57,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add i64 %1, -1
@@ -70,7 +71,7 @@ entry:
 ; openusd/optimized/animMapper.cpp.ll
 ; openusd/optimized/bakeSkinning.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000301(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw i64 %1, 1

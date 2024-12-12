@@ -2,20 +2,20 @@
 	.long	0x3f800000                      # float 1
 func0000000000000013:                   # @func0000000000000013
 	vcvtsi2ss	%edi, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vucomiss	.LCPI0_0(%rip), %xmm0
 	setb	%al
 	retq
 func0000000000000014:                   # @func0000000000000014
 	vcvtsi2ss	%edi, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	seta	%al
 	retq
 func000000000000001c:                   # @func000000000000001c
 	vcvtsi2ss	%edi, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setae	%al
@@ -24,7 +24,7 @@ func000000000000001c:                   # @func000000000000001c
 	.long	0x43000000                      # float 128
 func000000000000001a:                   # @func000000000000001a
 	vcvtsi2ss	%edi, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vmovss	.LCPI3_0(%rip), %xmm1           # xmm1 = [1.28E+2,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm0, %xmm1
 	setae	%al
@@ -33,27 +33,27 @@ func000000000000001a:                   # @func000000000000001a
 	.long	0x3f800000                      # float 1
 func0000000000000004:                   # @func0000000000000004
 	vcvtusi2ss	%edi, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vucomiss	.LCPI4_0(%rip), %xmm0
 	seta	%al
 	retq
 func0000000000000012:                   # @func0000000000000012
 	vcvtsi2ss	%edi, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
 	seta	%al
 	retq
 func0000000000000017:                   # @func0000000000000017
 	vcvtsi2ss	%edi, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vcvtusi2ss	%edi, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax

@@ -1,17 +1,11 @@
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	cmlt	v5.2d, v4.2d, #0
-	cmlt	v6.2d, v3.2d, #0
-	mov	x8, #-4                         // =0xfffffffffffffffc
-	usra	v4.2d, v5.2d, #62
-	usra	v3.2d, v6.2d, #62
-	dup	v5.2d, x8
-	and	v3.16b, v3.16b, v5.16b
-	and	v4.16b, v4.16b, v5.16b
-	cmgt	v2.2d, v4.2d, v2.2d
-	cmgt	v1.2d, v3.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	and	v0.8b, v0.8b, v1.8b
+	add	x8, x2, #3
+	cmp	x2, #0
+	csel	x8, x8, x2, lt
+	and	x8, x8, #0xfffffffffffffffc
+	cmp	x8, x1
+	cset	w8, gt
+	and	w0, w0, w8
 	ret
                                         // -- End function

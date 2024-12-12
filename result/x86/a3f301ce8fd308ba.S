@@ -19,3 +19,11 @@ func0000000000000009:                   # @func0000000000000009
 	setb	%al
 	leaq	(%rsi,%rax,4), %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	andq	$-256, %rsi
+	xorl	%ecx, %ecx
+	cmpl	$16, %edi
+	movl	$6, %eax
+	cmovneq	%rcx, %rax
+	orq	%rsi, %rax
+	retq

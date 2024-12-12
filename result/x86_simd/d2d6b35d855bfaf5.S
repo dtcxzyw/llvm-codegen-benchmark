@@ -30,7 +30,7 @@ func0000000000000069:                   # @func0000000000000069
 	retq
 func0000000000000021:                   # @func0000000000000021
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm1, %ymm0
 	vpsllq	$32, %ymm0, %ymm0
 	vpsraq	$30, %ymm0, %ymm0
 	retq

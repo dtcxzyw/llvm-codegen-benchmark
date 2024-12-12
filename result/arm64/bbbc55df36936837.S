@@ -1,40 +1,20 @@
-func000000000000008d:                   // @func000000000000008d
+func000000000000028d:                   // @func000000000000028d
 // %bb.0:                               // %entry
-	mov	w8, #8190                       // =0x1ffe
-	dup	v4.2d, x8
-	mov	x8, #-8190                      // =0xffffffffffffe002
-	dup	v6.2d, x8
-	cmhi	v5.2d, v4.2d, v2.2d
-	cmhi	v4.2d, v4.2d, v3.2d
-	bic	v7.16b, v6.16b, v4.16b
-	bic	v6.16b, v6.16b, v5.16b
-	sub	v4.2d, v7.2d, v4.2d
-	sub	v5.2d, v6.2d, v5.2d
-	add	v2.2d, v5.2d, v2.2d
-	add	v3.2d, v4.2d, v3.2d
-	shl	v3.2d, v3.2d, #51
-	shl	v2.2d, v2.2d, #51
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	lsr	x9, x1, #1
+	mov	w8, #-8190                      // =0xffffe002
+	cmp	x9, #4095
+	csinc	w8, w8, wzr, hs
+	add	w8, w8, w1
+	orr	x0, x0, x8, lsl #51
 	ret
                                         // -- End function
 func0000000000000085:                   // @func0000000000000085
 // %bb.0:                               // %entry
-	mov	w8, #8190                       // =0x1ffe
-	dup	v4.2d, x8
-	mov	x8, #-8190                      // =0xffffffffffffe002
-	dup	v6.2d, x8
-	cmhi	v5.2d, v4.2d, v2.2d
-	cmhi	v4.2d, v4.2d, v3.2d
-	bic	v7.16b, v6.16b, v4.16b
-	bic	v6.16b, v6.16b, v5.16b
-	sub	v4.2d, v7.2d, v4.2d
-	sub	v5.2d, v6.2d, v5.2d
-	add	v2.2d, v5.2d, v2.2d
-	add	v3.2d, v4.2d, v3.2d
-	shl	v3.2d, v3.2d, #51
-	shl	v2.2d, v2.2d, #51
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	lsr	x9, x1, #1
+	mov	w8, #-8190                      // =0xffffe002
+	cmp	x9, #4095
+	csinc	w8, w8, wzr, hs
+	add	w8, w1, w8
+	orr	x0, x0, x8, lsl #51
 	ret
                                         // -- End function

@@ -77,6 +77,18 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; mitsuba3/optimized/bitmap.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i1 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 1
+  %3 = or disjoint i64 %2, 1
+  %4 = add nuw nsw i64 %2, 2
+  %5 = select i1 %0, i64 %4, i64 %3
+  ret i64 %5
+}
+
 ; 2 occurrences:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll

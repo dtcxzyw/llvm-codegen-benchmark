@@ -20,9 +20,9 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%edi, %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
-	shll	$14, %edx
+	shll	$10, %edx
 	testb	$1, %sil
-	movl	$32768, %eax                    # imm = 0x8000
+	movl	$1047552, %eax                  # imm = 0xFFC00
 	cmovel	%edx, %eax
 	addl	%edi, %eax
 	retq

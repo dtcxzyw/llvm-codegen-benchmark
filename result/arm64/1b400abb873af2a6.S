@@ -1,12 +1,8 @@
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	usra	v0.4s, v0.4s, #31
-	mov	w8, #64                         // =0x40
-	dup	v3.2d, x8
-	sshr	v0.4s, v0.4s, #1
-	sshll	v2.2d, v0.2s, #3
-	sshll2	v0.2d, v0.4s, #3
-	add	v1.2d, v0.2d, v3.2d
-	add	v0.2d, v2.2d, v3.2d
+	add	w8, w0, w0, lsr #31
+	asr	w8, w8, #1
+	sbfiz	x8, x8, #3, #32
+	add	x0, x8, #64
 	ret
                                         // -- End function

@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; mitsuba3/optimized/bitmap.cpp.ll
-; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, ptr %1) #0 {
 entry:

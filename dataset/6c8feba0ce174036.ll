@@ -1,5 +1,5 @@
 
-; 479 occurrences:
+; 473 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcAttach.c.ll
@@ -47,7 +47,6 @@
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/cecSeq.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/decFactor.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
@@ -173,12 +172,10 @@
 ; linux/optimized/msi.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/pcm_native.ll
-; linux/optimized/pkeys.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/raw.ll
 ; linux/optimized/selection.ll
 ; linux/optimized/services.ll
-; linux/optimized/utownerid.ll
 ; linux/optimized/vector.ll
 ; linux/optimized/xfrm_replay.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
@@ -219,7 +216,6 @@
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -248,7 +244,6 @@
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; nuttx/optimized/fs_select.c.ll
@@ -362,7 +357,6 @@
 ; z3/optimized/bv2real_rewriter.cpp.ll
 ; z3/optimized/bv_slice.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll
@@ -484,7 +478,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -506,13 +500,12 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nsw i32 -1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
-; 338 occurrences:
+; 333 occurrences:
 ; abc/optimized/bmcCexMin2.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; arrow/optimized/array_base.cc.ll
@@ -599,7 +592,6 @@ entry:
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/ng_width.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -750,7 +742,6 @@ entry:
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; nghttp2/optimized/url_parser.c.ll
 ; node/optimized/linux.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; openexr/optimized/ImfPizCompressor.cpp.ll
 ; openexr/optimized/internal_piz.c.ll
@@ -780,7 +771,6 @@ entry:
 ; postgres/optimized/bloomfilter.ll
 ; postgres/optimized/brin_bloom.ll
 ; postgres/optimized/catcache.ll
-; postgres/optimized/datapagemap.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/event_trigger.ll
 ; postgres/optimized/execExprInterp.ll
@@ -821,7 +811,6 @@ entry:
 ; quickjs/optimized/libunicode.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; redis/optimized/cluster_legacy.ll
-; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/plain_table_reader.cc.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; sqlite/optimized/sqlite3.ll

@@ -11,7 +11,7 @@ entry:
   ret i64 %5
 }
 
-; 673 occurrences:
+; 675 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -34,6 +34,11 @@ entry:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -134,7 +139,6 @@ entry:
 ; cvc5/optimized/transcendental_state.cpp.ll
 ; cvc5/optimized/zero_level_learner.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
-; darktable/optimized/DeflateDecompressor.cpp.ll
 ; draco/optimized/float_points_tree_encoder.cc.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -422,7 +426,6 @@ entry:
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -677,7 +680,6 @@ entry:
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
 ; yosys/optimized/sta.ll

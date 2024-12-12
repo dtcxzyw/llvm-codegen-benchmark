@@ -8,7 +8,7 @@
 define double @func0000000000000001(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = bitcast i64 %3 to double
   ret double %4
 }
@@ -23,7 +23,7 @@ entry:
 define double @func0000000000000000(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = bitcast i64 %3 to double
   ret double %4
 }

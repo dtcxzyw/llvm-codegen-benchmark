@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/simSupp.c.ll
 ; folly/optimized/EventBase.cpp.ll
@@ -10,7 +10,6 @@
 ; glslang/optimized/Versions.cpp.ll
 ; icu/optimized/utf8collationiterator.ll
 ; libwebp/optimized/io_dec.c.ll
-; linux/optimized/fonts.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_guc.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -46,7 +45,7 @@ entry:
   ret i1 %5
 }
 
-; 27 occurrences:
+; 30 occurrences:
 ; abc/optimized/pdrInv.c.ll
 ; abc/optimized/simSymStr.c.ll
 ; bullet3/optimized/b3GpuPgsConstraintSolver.ll
@@ -62,6 +61,8 @@ entry:
 ; linux/optimized/metrics.ll
 ; linux/optimized/serial_core.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
@@ -70,6 +71,7 @@ entry:
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
+; sqlite/optimized/sqlite3.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; verilator/optimized/V3Tristate.cpp.ll
 ; yyjson/optimized/yyjson.c.ll

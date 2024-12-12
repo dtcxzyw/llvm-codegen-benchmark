@@ -44,29 +44,21 @@ func000000000000001f:                   # @func000000000000001f
 	vpbroadcastq	.LCPI5_0(%rip), %ymm2   # ymm2 = [1,1,1,1]
 	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI6_0:
 	.quad	1                               # 0x1
-func0000000000000010:                   # @func0000000000000010
+func0000000000000012:                   # @func0000000000000012
 	vpbroadcastq	.LCPI6_0(%rip), %ymm2   # ymm2 = [1,1,1,1]
 	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI7_0:
 	.quad	1                               # 0x1
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	vpbroadcastq	.LCPI7_0(%rip), %ymm2   # ymm2 = [1,1,1,1]
 	vpsllvq	%ymm1, %ymm2, %ymm1
-	vpsrlq	$1, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	retq
-.LCPI8_0:
-	.quad	1                               # 0x1
-func0000000000000013:                   # @func0000000000000013
-	vpbroadcastq	.LCPI8_0(%rip), %ymm2   # ymm2 = [1,1,1,1]
-	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

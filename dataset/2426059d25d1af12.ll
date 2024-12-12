@@ -6,7 +6,7 @@
 ; luau/optimized/Transpiler.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false
@@ -21,7 +21,7 @@ entry:
 ; llvm/optimized/SemaObjC.cpp.ll
 ; llvm/optimized/TemplateName.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false

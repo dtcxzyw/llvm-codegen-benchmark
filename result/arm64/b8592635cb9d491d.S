@@ -1,69 +1,40 @@
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
-	cmlt	v2.8b, v2.8b, #0
-	ushll	v3.8h, v3.8b, #0
-	sshll	v2.8h, v2.8b, #0
-	ushll	v4.4s, v3.4h, #0
-	ushll2	v3.4s, v3.8h, #0
-	sshll	v5.4s, v2.4h, #0
-	sshll2	v2.4s, v2.8h, #0
-	bif	v1.16b, v3.16b, v2.16b
-	bif	v0.16b, v4.16b, v5.16b
-	ret
-                                        // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v4.8b, #26
-	ushll	v3.8h, v3.8b, #0
-	cmhi	v2.8b, v4.8b, v2.8b
-	ushll	v4.4s, v3.4h, #0
-	ushll2	v3.4s, v3.8h, #0
-	sshll	v2.8h, v2.8b, #0
-	sshll	v5.4s, v2.4h, #0
-	sshll2	v2.4s, v2.8h, #0
-	bif	v1.16b, v3.16b, v2.16b
-	bif	v0.16b, v4.16b, v5.16b
+	and	w8, w1, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, #26
+	csel	w0, w0, w9, lo
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	movi	v4.8b, #10
-	ushll	v3.8h, v3.8b, #0
-	cmhi	v2.8b, v4.8b, v2.8b
-	ushll	v4.4s, v3.4h, #0
-	ushll2	v3.4s, v3.8h, #0
-	sshll	v2.8h, v2.8b, #0
-	sshll	v5.4s, v2.4h, #0
-	sshll2	v2.4s, v2.8h, #0
-	bif	v1.16b, v3.16b, v2.16b
-	bif	v0.16b, v4.16b, v5.16b
+	sxtb	w8, w1
+	and	w9, w2, #0xff
+	cmp	w8, #0
+	csel	w0, w0, w9, lt
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	movi	v4.8b, #5
-	ushll	v3.8h, v3.8b, #0
-	cmhi	v2.8b, v2.8b, v4.8b
-	ushll	v4.4s, v3.4h, #0
-	ushll2	v3.4s, v3.8h, #0
-	sshll	v2.8h, v2.8b, #0
-	sshll	v5.4s, v2.4h, #0
-	sshll2	v2.4s, v2.8h, #0
-	bif	v1.16b, v3.16b, v2.16b
-	bif	v0.16b, v4.16b, v5.16b
+	and	w8, w1, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, #10
+	csel	w0, w0, w9, lo
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	movi	v4.8b, #160
-	ushll	v3.8h, v3.8b, #0
-	cmgt	v2.8b, v4.8b, v2.8b
-	ushll	v4.4s, v3.4h, #0
-	ushll2	v3.4s, v3.8h, #0
-	sshll	v2.8h, v2.8b, #0
-	sshll	v5.4s, v2.4h, #0
-	sshll2	v2.4s, v2.8h, #0
-	bif	v1.16b, v3.16b, v2.16b
-	bif	v0.16b, v4.16b, v5.16b
+	and	w8, w1, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, #5
+	csel	w0, w0, w9, hi
+	ret
+                                        // -- End function
+func0000000000000026:                   // @func0000000000000026
+// %bb.0:                               // %entry
+	sxtb	w8, w1
+	and	w9, w2, #0xff
+	cmn	w8, #96
+	csel	w0, w0, w9, lt
 	ret
                                         // -- End function

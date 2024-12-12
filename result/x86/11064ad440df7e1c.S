@@ -11,3 +11,11 @@ func0000000000000003:                   # @func0000000000000003
 	andl	%edi, %eax
 	andl	$1, %eax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	andb	$1, %dil
+	movzwl	%si, %ecx
+	xorl	%eax, %eax
+	cmpb	$1, %dil
+	sbbl	%eax, %eax
+	orl	%ecx, %eax
+	retq

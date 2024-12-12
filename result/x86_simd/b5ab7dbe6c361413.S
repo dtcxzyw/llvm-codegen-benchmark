@@ -19,7 +19,7 @@ func00000000000000fd:                   # @func00000000000000fd
 func00000000000000ee:                   # @func00000000000000ee
 	vpslld	$8, %ymm2, %ymm2
 	vpslld	$24, %ymm1, %ymm1
-	vpternlogd	$254, %ymm0, %ymm2, %ymm1 # ymm1 = ymm1 | ymm2 | ymm0
+	vpternlogd	$254, %ymm2, %ymm0, %ymm1 # ymm1 = ymm1 | ymm0 | ymm2
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm0
 	retq
 func0000000000000002:                   # @func0000000000000002

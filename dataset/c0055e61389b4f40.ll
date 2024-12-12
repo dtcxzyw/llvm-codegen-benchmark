@@ -1,5 +1,5 @@
 
-; 194 occurrences:
+; 193 occurrences:
 ; cmake/optimized/cmGeneratorExpression.cxx.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
@@ -20,7 +20,6 @@
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/LogConfigParser.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; hyperscan/optimized/gough.c.ll
 ; hyperscan/optimized/mcclellan.c.ll
 ; hyperscan/optimized/sheng.c.ll

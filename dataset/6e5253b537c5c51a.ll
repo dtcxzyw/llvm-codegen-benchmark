@@ -4,7 +4,6 @@
 ; linux/optimized/8139too.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/nfs4proc.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/tls.ll
 ; linux/optimized/vgacon.ll
 ; llvm/optimized/DeclObjC.cpp.ll
@@ -15,12 +14,13 @@
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wolfssl/optimized/ssl.c.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i8
   %4 = and i8 %3, 32
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   %6 = and i8 %1, -128
   %7 = or disjoint i8 %5, %6
   ret i8 %7
@@ -46,7 +46,7 @@ entry:
 define i8 @func000000000000000c(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw nsw i32 %2 to i8
-  %4 = or i8 %3, %1
+  %4 = or i8 %1, %3
   %5 = and i8 %4, 3
   %6 = or i8 %5, %0
   ret i8 %6

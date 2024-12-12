@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; llvm/optimized/ASTContext.cpp.ll
+; 2 occurrences:
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; Function Attrs: nounwind
@@ -12,9 +11,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; clamav/optimized/disasm.c.ll
-; llvm/optimized/SemaAccess.cpp.ll
 ; php/optimized/ir_emit.ll
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; Function Attrs: nounwind

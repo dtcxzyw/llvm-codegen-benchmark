@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 54 occurrences:
 ; hermes/optimized/CommandLine.cpp.ll
 ; hermes/optimized/FileCheck.cpp.ll
 ; hermes/optimized/StringMap.cpp.ll
@@ -33,7 +33,6 @@
 ; llvm/optimized/LLVMContextImpl.cpp.ll
 ; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/LayoutOverrideSource.cpp.ll
-; llvm/optimized/LegacyPassManager.cpp.ll
 ; llvm/optimized/MCCodeView.cpp.ll
 ; llvm/optimized/MacroExpander.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll

@@ -1,9 +1,10 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/xmlparser.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll

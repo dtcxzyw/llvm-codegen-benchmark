@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000062(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c2(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, %1
   %3 = and i32 %2, 3
@@ -33,7 +33,7 @@ entry:
 ; abc/optimized/sswMan.c.ll
 ; abc/optimized/utilCex.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = and i32 %2, 31
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_dxt.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = and i32 %2, 6
@@ -75,7 +75,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000098(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %0, %1
   %3 = and i32 %2, 7
@@ -87,11 +87,11 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000070(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000f0(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, %1
   %3 = and i32 %2, 255
-  %4 = icmp ugt i32 %3, 62
+  %4 = icmp samesign ugt i32 %3, 62
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	addl	$67, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	xorl	%eax, %eax
 	testl	$768, %edi                      # imm = 0x300
 	setne	%al

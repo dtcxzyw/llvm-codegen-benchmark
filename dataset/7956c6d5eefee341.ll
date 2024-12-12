@@ -27,8 +27,9 @@ entry:
   ret ptr %7
 }
 
-; 26 occurrences:
+; 32 occurrences:
 ; abc/optimized/inflate.c.ll
+; boost/optimized/xml_woarchive.ll
 ; cmake/optimized/inflate.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -41,10 +42,8 @@ entry:
 ; hermes/optimized/SynthTraceParser.cpp.ll
 ; libquic/optimized/inflate.c.ll
 ; llvm/optimized/DependencyDirectivesScanner.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/LiveInterval.cpp.ll
 ; llvm/optimized/OMP.cpp.ll
-; opencv/optimized/finder_pattern_finder.cpp.ll
 ; openjdk/optimized/relocator.ll
 ; php/optimized/string.ll
 ; php/optimized/zend_API.ll
@@ -54,18 +53,6 @@ entry:
 ; zlib/optimized/inflate.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000008a(ptr %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
-  %4 = ptrtoint ptr %3 to i64
-  %5 = sub i64 %1, %4
-  %6 = getelementptr nusw i8, ptr %0, i64 4
-  %7 = getelementptr nusw i8, ptr %6, i64 %5
-  ret ptr %7
-}
-
-; 7 occurrences:
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -74,12 +61,42 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000ce(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
-  %6 = getelementptr i8, ptr %0, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %7 = getelementptr nusw i8, ptr %6, i64 %5
+  ret ptr %7
+}
+
+; 5 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/src.ll
+; boost/optimized/token_ids.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000cf(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %1, %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %5
+  ret ptr %7
+}
+
+; 1 occurrences:
+; llvm/optimized/LiteralSupport.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000ca(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %1, %4
+  %6 = getelementptr nusw i8, ptr %0, i64 -1
   %7 = getelementptr nusw i8, ptr %6, i64 %5
   ret ptr %7
 }
@@ -87,13 +104,27 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 5
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
-  %6 = getelementptr nusw i8, ptr %0, i64 23
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 23
   %7 = getelementptr i8, ptr %6, i64 %5
+  ret ptr %7
+}
+
+; 2 occurrences:
+; eastl/optimized/TestVector.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000008e(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %1, %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 32
+  %7 = getelementptr nusw i8, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -103,12 +134,12 @@ entry:
 ; cpython/optimized/multibytecodec.ll
 ; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000088(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000cc(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 32
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
-  %6 = getelementptr nusw i8, ptr %0, i64 32
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 32
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
 }

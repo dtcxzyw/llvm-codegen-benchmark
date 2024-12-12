@@ -14,7 +14,7 @@ define i32 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -134217728
   %.masked = and i32 %1, -67108865
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   %5 = select i1 %0, i32 0, i32 67108864
   %6 = or disjoint i32 %5, %4
   ret i32 %6

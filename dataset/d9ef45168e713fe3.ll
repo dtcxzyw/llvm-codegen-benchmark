@@ -1,5 +1,5 @@
 
-; 1007 occurrences:
+; 1032 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -54,6 +54,16 @@
 ; assimp/optimized/mesh_splitter.cpp.ll
 ; bdwgc/optimized/cordprnt.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/localization_backend.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/message.ll
+; boost/optimized/partition.ll
+; boost/optimized/range.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/static_string.ll
+; boost/optimized/topology.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; c3c/optimized/lexer.c.ll
 ; casadi/optimized/bspline.cpp.ll
@@ -81,6 +91,7 @@
 ; clamav/optimized/yara_lexer.c.ll
 ; cmake/optimized/System.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmUVProcessChain.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cmake/optimized/protocol_events.cpp.ll
@@ -369,7 +380,6 @@
 ; linux/optimized/ipconfig.ll
 ; linux/optimized/md.ll
 ; linux/optimized/namei_msdos.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/opt.ll
 ; linux/optimized/slub.ll
 ; llama.cpp/optimized/common.cpp.ll
@@ -443,7 +453,6 @@
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_e57.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
@@ -459,7 +468,6 @@
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
@@ -578,7 +586,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -687,6 +694,7 @@
 ; openspiel/optimized/efg_game.cc.ll
 ; openspiel/optimized/external_sampling_mccfr.cc.ll
 ; openspiel/optimized/fsicfr.cc.ll
+; openspiel/optimized/kuhn_poker.cc.ll
 ; openspiel/optimized/markov_soccer.cc.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; openspiel/optimized/oh_hell.cc.ll
@@ -746,7 +754,6 @@
 ; pybind11/optimized/test_numpy_vectorize.cpp.ll
 ; qemu/optimized/io_channel-websock.c.ll
 ; quantlib/optimized/accountingengine.ll
-; quantlib/optimized/actualactual.ll
 ; quantlib/optimized/analyticcliquetengine.ll
 ; quantlib/optimized/analyticperformanceengine.ll
 ; quantlib/optimized/asianoption.ll
@@ -760,9 +767,9 @@
 ; quantlib/optimized/exerciseadapter.ll
 ; quantlib/optimized/fdmsimpleprocess1dmesher.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dcapfloorengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
 ; quantlib/optimized/himalayaoption.ll
 ; quantlib/optimized/inflationcapfloorengines.ll
 ; quantlib/optimized/irregularswap.ll
@@ -978,7 +985,6 @@
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/arith_eq_solver.cpp.ll
 ; z3/optimized/automaton.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/emonics.cpp.ll
 ; z3/optimized/factor_rewriter.cpp.ll
@@ -1004,6 +1010,25 @@
 ; z3/optimized/substitution_tree.cpp.ll
 ; z3/optimized/theory_str_mc.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
+; zed-rs/optimized/19l54bkp73b8vpqg6elueqjm7.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4yr6g2ok92pf18o3rcyc7uswo.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5q8zw1h1kdgz0fiksol53zkaa.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/914lh5mzek2kam75czht77x9a.ll
+; zed-rs/optimized/9eafvdu9qxyugp5or14xw795l.ll
+; zed-rs/optimized/9p59c0slbkpkbmcp28i14dl74.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/c6zcqmm1tlbhiy5p6czlxqg9e.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/dhtd8mxtyja4srmt3ddrqkjib.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/erzde9u7wnx5zkvy3kzdy8721.ll
 ; zxing/optimized/GenericGFPoly.cpp.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll

@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; openusd/optimized/convolve.c.ll
+; ruby/optimized/rjit_c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -26,8 +27,7 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
-; openblas/optimized/dgbtrf.c.ll
+; 1 occurrences:
 ; openblas/optimized/dsbgst.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {

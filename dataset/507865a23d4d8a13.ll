@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/mmconfig-shared.ll
 ; llvm/optimized/ValueTracking.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -6,7 +6,8 @@ func0000000000000001:                   // @func0000000000000001
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmp	w0, #2048
+	lsr	w8, w0, #24
+	cmp	w8, #51
 	csel	x0, x1, xzr, lo
 	ret
                                         // -- End function

@@ -1,4 +1,4 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -20,7 +20,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI2_0:
 	.long	1542                            # 0x606
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
@@ -39,7 +39,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 .LCPI4_0:
 	.long	8                               # 0x8
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -52,7 +52,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	.long	4294967294                      # 0xfffffffe
 .LCPI5_1:
 	.long	3                               # 0x3
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
@@ -73,7 +73,7 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 .LCPI7_0:
 	.long	20                              # 0x14
-func0000000000000206:                   # @func0000000000000206
+func0000000000000406:                   # @func0000000000000406
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -86,7 +86,7 @@ func0000000000000206:                   # @func0000000000000206
 	.long	64                              # 0x40
 .LCPI8_1:
 	.long	128                             # 0x80
-func00000000000003aa:                   # @func00000000000003aa
+func000000000000074a:                   # @func000000000000074a
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI8_0(%rip){1to4}, %xmm0, %xmm0
@@ -98,7 +98,7 @@ func00000000000003aa:                   # @func00000000000003aa
 	.long	11                              # 0xb
 .LCPI9_1:
 	.long	65                              # 0x41
-func00000000000003a6:                   # @func00000000000003a6
+func0000000000000746:                   # @func0000000000000746
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI9_0(%rip){1to4}, %xmm0, %xmm0
@@ -108,7 +108,7 @@ func00000000000003a6:                   # @func00000000000003a6
 	retq
 .LCPI10_0:
 	.long	64                              # 0x40
-func0000000000000304:                   # @func0000000000000304
+func0000000000000604:                   # @func0000000000000604
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

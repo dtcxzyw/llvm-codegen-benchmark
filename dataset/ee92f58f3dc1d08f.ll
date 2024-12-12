@@ -6,7 +6,7 @@
 ; postgres/optimized/f2s_srv.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = or disjoint i32 %2, 7
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = icmp ne i32 %0, 0

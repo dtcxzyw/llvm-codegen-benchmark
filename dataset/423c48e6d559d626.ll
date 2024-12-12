@@ -1,9 +1,10 @@
 
-; 155 occurrences:
+; 172 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; assimp/optimized/OptimizeMeshes.cpp.ll
+; boost/optimized/wait_for.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; cmake/optimized/cmake.cxx.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -47,6 +48,7 @@
 ; llvm/optimized/LoopRotationUtils.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
+; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
@@ -124,19 +126,20 @@
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
 ; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
 ; rust-analyzer-rs/optimized/266k6bqg3m0kg73d.ll
-; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
 ; rust-analyzer-rs/optimized/2bwlvqntjk72kr6f.ll
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; rust-analyzer-rs/optimized/4x4kq4gfl0tghxcw.ll
+; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f128_classify.ll
 ; sundials/optimized/sundials_profiler.c.ll
 ; tls-rs/optimized/2xhpv4vf07do7r8g.ll
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
 ; vcpkg/optimized/vcpkgpaths.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/PeeledEncoding.cpp.ll
@@ -154,6 +157,20 @@
 ; z3/optimized/nla_intervals.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/3hyavwlupfwy674k0u5ll7gv6.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f4g1cwrteaiub5fsoifj5amxy.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {

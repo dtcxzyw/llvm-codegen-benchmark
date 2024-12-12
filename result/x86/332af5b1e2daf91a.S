@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addq	%rdx, %rsi
 	movabsq	$4611686018427387904, %rax      # imm = 0x4000000000000000
 	cmpq	%rax, %rsi
@@ -22,16 +22,22 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$40, %eax
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	addq	%rdx, %rsi
 	cmpq	$65521, %rsi                    # imm = 0xFFF1
 	movl	$65520, %eax                    # imm = 0xFFF0
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	addq	%rdx, %rsi
 	cmpq	$65536, %rsi                    # imm = 0x10000
 	movq	$-1, %rax
+	cmovbq	%rdi, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	addq	%rdx, %rsi
+	cmpq	$508, %rsi                      # imm = 0x1FC
+	movl	$1, %eax
 	cmovbq	%rdi, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -39,7 +45,7 @@ func0000000000000006:                   # @func0000000000000006
 	sarq	$63, %rax
 	andq	%rdi, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	xorl	%eax, %eax
 	addq	%rdx, %rsi
 	cmovgq	%rdi, %rax

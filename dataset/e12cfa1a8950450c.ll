@@ -1,5 +1,5 @@
 
-; 148 occurrences:
+; 147 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; cmake/optimized/frm_driver.c.ll
 ; coremark/optimized/core_list_join.c.ll
@@ -44,7 +44,6 @@
 ; libwebp/optimized/enc.c.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/hda_auto_parser.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/sem.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll

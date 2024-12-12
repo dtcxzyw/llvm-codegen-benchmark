@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	testb	$12, %dil
+	testb	$62, %dil
 	setne	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -16,7 +16,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpb	$33, %dil
 	setge	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	testb	$64, %dil
 	sete	%al
 	retq

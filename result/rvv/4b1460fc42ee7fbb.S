@@ -15,14 +15,6 @@ func00000000000000d4:                   # @func00000000000000d4
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vv	v0, v8, v16
 	ret
-func00000000000000c2:                   # @func00000000000000c2
-	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfge.vf	v0, v16, fa5
-	vfneg.v	v24, v16
-	vmerge.vvm	v16, v24, v16, v0
-	vmflt.vv	v0, v16, v8
-	ret
 func00000000000000cc:                   # @func00000000000000cc
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -39,6 +31,14 @@ func00000000000000c3:                   # @func00000000000000c3
 	vmerge.vvm	v16, v24, v16, v0
 	vmfle.vv	v24, v8, v16
 	vmnot.m	v0, v24
+	ret
+func00000000000000c2:                   # @func00000000000000c2
+	fmv.d.x	fa5, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfge.vf	v0, v16, fa5
+	vfneg.v	v24, v16
+	vmerge.vvm	v16, v24, v16, v0
+	vmflt.vv	v0, v16, v8
 	ret
 func00000000000000cb:                   # @func00000000000000cb
 	fmv.d.x	fa5, zero

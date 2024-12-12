@@ -1,10 +1,4 @@
-func0000000000000058:                   # @func0000000000000058
-	xorl	%eax, %eax
-	cmpq	%rsi, %rdi
-	setge	%al
-	addq	%rdi, %rax
-	retq
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	movq	%rdi, %rax
 	cmpq	%rsi, %rdi
 	adcq	$0, %rax
@@ -54,15 +48,14 @@ func0000000000000030:                   # @func0000000000000030
 	setl	%al
 	addq	%rdi, %rax
 	retq
+func0000000000000023:                   # @func0000000000000023
+	movq	%rdi, %rax
+	cmpq	%rsi, %rdi
+	adcq	$0, %rax
+	retq
 func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	setne	%al
-	addq	%rdi, %rax
-	retq
-func0000000000000032:                   # @func0000000000000032
-	xorl	%eax, %eax
-	cmpq	%rsi, %rdi
-	setl	%al
 	addq	%rdi, %rax
 	retq

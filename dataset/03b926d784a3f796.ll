@@ -1,8 +1,9 @@
 
-; 57 occurrences:
+; 58 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; arrow/optimized/validate.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/value_semantic.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/integration_tools.cpp.ll
 ; casadi/optimized/scpgen.cpp.ll
@@ -58,7 +59,7 @@
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
@@ -67,10 +68,11 @@ entry:
   ret i1 %6
 }
 
-; 42 occurrences:
+; 43 occurrences:
 ; arrow/optimized/sparse_tensor.cc.ll
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/ext.ll
 ; cvc5/optimized/core_solver.cpp.ll
 ; cvc5/optimized/relevance_manager.cpp.ll
 ; cvc5/optimized/single_inv_partition.cpp.ll
@@ -111,7 +113,7 @@ entry:
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/indexed_recordio_split.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
@@ -120,7 +122,7 @@ entry:
   ret i1 %6
 }
 
-; 46 occurrences:
+; 44 occurrences:
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/integration_tools.cpp.ll
 ; casadi/optimized/scpgen.cpp.ll
@@ -135,8 +137,6 @@ entry:
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
-; eastl/optimized/BenchmarkTupleVector.cpp.ll
-; eastl/optimized/BenchmarkVector.cpp.ll
 ; entt/optimized/meta_container.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; gromacs/optimized/mshift.cpp.ll
@@ -168,7 +168,7 @@ entry:
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -180,12 +180,25 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a9(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
   %5 = add nsw i64 %4, 1
   %6 = icmp uge i64 %5, %0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; boost/optimized/limit_fd.ll
+; cvc5/optimized/core_solver.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a5(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 2
+  %5 = add nsw i64 %4, 2
+  %6 = icmp ule i64 %5, %0
   ret i1 %6
 }
 
@@ -196,7 +209,7 @@ entry:
 ; hermes/optimized/dtoa.c.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -208,7 +221,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr i64 %3, 6
@@ -228,7 +241,7 @@ entry:
 ; postgres/optimized/dict_thesaurus.ll
 ; tev/optimized/Image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4

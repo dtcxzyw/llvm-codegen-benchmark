@@ -1,19 +1,12 @@
-func0000000000000014:                   # @func0000000000000014
-	movzbl	%sil, %eax
-	addl	$-48, %eax
-	cmpl	$10, %eax
-	setb	%al
-	orb	%dil, %al
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpb	$37, %sil
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	movzbl	%sil, %eax
-	addl	$-30, %eax
-	cmpl	$11, %eax
+	addl	$-72, %eax
+	cmpl	$-2, %eax
 	setb	%al
 	orb	%dil, %al
 	retq

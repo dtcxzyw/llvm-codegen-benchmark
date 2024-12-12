@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -21,7 +21,6 @@
 ; oiio/optimized/targainput.cpp.ll
 ; opencv/optimized/homography_decomp.cpp.ll
 ; postgres/optimized/describe.ll
-; slurm/optimized/ebpf.ll
 ; stockfish/optimized/search.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/packet-c1222.c.ll

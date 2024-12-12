@@ -41,11 +41,9 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; luajit/optimized/lj_snap.ll
-; luajit/optimized/lj_snap_dyn.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:

@@ -10,15 +10,14 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; icu/optimized/locdistance.ll
 ; linux/optimized/vmstat.ll
 ; opencv/optimized/hough.cpp.ll
-; wireshark/optimized/packet-h450-ros.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = ashr i32 %1, 3
+  %2 = ashr i32 %1, 12
   %3 = select i1 %0, i32 %2, i32 %1
   ret i32 %3
 }

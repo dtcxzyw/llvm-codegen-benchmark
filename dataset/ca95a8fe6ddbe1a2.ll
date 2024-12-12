@@ -1,9 +1,10 @@
 
-; 139 occurrences:
+; 146 occurrences:
 ; abc/optimized/extraBddCas.c.ll
 ; abc/optimized/fraigTable.c.ll
 ; abc/optimized/mapperCreate.c.ll
 ; c3c/optimized/asm_target.c.ll
+; cpython/optimized/typeobject.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
@@ -139,6 +140,12 @@
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; rust-analyzer-rs/optimized/sdlo5r5xb34d3pv.ll
 ; rust-analyzer-rs/optimized/vccy6rg1lgzb14e.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0) #0 {
 entry:
@@ -147,13 +154,17 @@ entry:
   ret i64 %2
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; ockam-rs/optimized/y59h8jnu9k73im6.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/5m9ru6gkfb0eyi0yuooi8wdok.ll
+; zed-rs/optimized/7od02cvs02zg2t1jcuk4h4evv.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
-  %2 = mul nuw i64 %1, 104
+  %2 = mul nuw i64 %1, 208
   ret i64 %2
 }
 

@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 48 occurrences:
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; cpython/optimized/mpdecimal.ll
 ; eastl/optimized/EAString.cpp.ll
@@ -29,7 +29,6 @@
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/SortJavaScriptImports.cpp.ll
 ; llvm/optimized/UnwrappedLineFormatter.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; nix/optimized/build-result.ll
 ; openssl/optimized/libcrypto-lib-a_int.ll
 ; openssl/optimized/libcrypto-lib-bss_dgram_pair.ll
@@ -58,7 +57,7 @@ entry:
   ret i1 %4
 }
 
-; 104 occurrences:
+; 99 occurrences:
 ; abseil-cpp/optimized/layout_test.cc.ll
 ; cmake/optimized/cmCustomCommandGenerator.cxx.ll
 ; cmake/optimized/cmGlobVerificationManager.cxx.ll
@@ -110,10 +109,6 @@ entry:
 ; llvm/optimized/SimpleSValBuilder.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/SortJavaScriptImports.cpp.ll
-; luajit/optimized/lj_opt_fold.ll
-; luajit/optimized/lj_opt_fold_dyn.ll
-; luajit/optimized/lj_opt_narrow.ll
-; luajit/optimized/lj_opt_narrow_dyn.ll
 ; msgpack/optimized/msgpack_variant_capitalize.cpp.ll
 ; msgpack/optimized/msgpack_variant_mapbased.cpp.ll
 ; nlohmann_json/optimized/unit-algorithms.cpp.ll
@@ -143,7 +138,6 @@ entry:
 ; qemu/optimized/system_memory.c.ll
 ; rocksdb/optimized/error_handler.cc.ll
 ; sentencepiece/optimized/trainer_interface.cc.ll
-; velox/optimized/GreatestLeast.cpp.ll
 ; velox/optimized/Variant.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
@@ -164,11 +158,11 @@ entry:
 ; yosys/optimized/share.ll
 ; yosys/optimized/sim.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = and i8 %0, 1
-  %4 = icmp ult i8 %3, %2
+  %4 = icmp samesign ult i8 %3, %2
   ret i1 %4
 }
 
@@ -183,15 +177,15 @@ entry:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; sentencepiece/optimized/trainer_interface.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000019(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = and i8 %0, 1
-  %4 = icmp uge i8 %3, %2
+  %4 = icmp samesign uge i8 %3, %2
   ret i1 %4
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; cmake/optimized/cmGlobVerificationManager.cxx.ll
 ; git/optimized/midx.ll
 ; glslang/optimized/iomapper.cpp.ll
@@ -223,14 +217,13 @@ entry:
 ; postgres/optimized/pathnode.ll
 ; qemu/optimized/optimize.c.ll
 ; qemu/optimized/system_memory.c.ll
-; velox/optimized/GreatestLeast.cpp.ll
 ; verilator/optimized/V3Config.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = and i8 %0, 1
-  %4 = icmp ugt i8 %3, %2
+  %4 = icmp samesign ugt i8 %3, %2
   ret i1 %4
 }
 
@@ -242,11 +235,11 @@ entry:
 ; llvm/optimized/Interp.cpp.ll
 ; openusd/optimized/variableExpressionImpl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000015(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = and i8 %0, 1
-  %4 = icmp ule i8 %3, %2
+  %4 = icmp samesign ule i8 %3, %2
   ret i1 %4
 }
 
@@ -264,6 +257,20 @@ entry:
   %2 = xor i8 %0, %1
   %3 = and i8 %2, 15
   %4 = icmp ne i8 %3, 0
+  ret i1 %4
+}
+
+; 4 occurrences:
+; luajit/optimized/lj_opt_fold.ll
+; luajit/optimized/lj_opt_fold_dyn.ll
+; luajit/optimized/lj_opt_narrow.ll
+; luajit/optimized/lj_opt_narrow_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, -128
+  %3 = and i8 %0, -128
+  %4 = icmp ult i8 %3, %2
   ret i1 %4
 }
 

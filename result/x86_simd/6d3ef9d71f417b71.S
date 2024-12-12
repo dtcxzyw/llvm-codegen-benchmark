@@ -4,7 +4,7 @@
 	.long	32                              # 0x20
 .LCPI0_2:
 	.long	1                               # 0x1
-func00000000000000d8:                   # @func00000000000000d8
+func0000000000000198:                   # @func0000000000000198
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2   # ymm2 = [32,32,32,32,32,32,32,32]
 	vpsubd	%ymm1, %ymm2, %ymm1

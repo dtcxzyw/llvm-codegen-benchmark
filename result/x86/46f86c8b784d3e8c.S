@@ -5,7 +5,13 @@ func0000000000000006:                   # @func0000000000000006
 	shll	$4, %eax
 	leaq	-16(%rax,%rdi), %rax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000007:                   # @func0000000000000007
+	xorl	%eax, %eax
+	cmpq	%rdi, %rsi
+	setne	%al
+	leaq	(%rdi,%rax,8), %rax
+	retq
+func0000000000000027:                   # @func0000000000000027
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi
 	setae	%al

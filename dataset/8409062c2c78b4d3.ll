@@ -5,18 +5,19 @@
 ; qemu/optimized/block_nvme.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
 
-; 100 occurrences:
+; 101 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; linux/optimized/dcache.ll
 ; linux/optimized/dmar.ll
@@ -117,12 +118,12 @@ entry:
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; z3/optimized/hwf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -131,12 +132,12 @@ entry:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000ac(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
@@ -145,12 +146,12 @@ entry:
 ; postgres/optimized/bitmapset.ll
 ; slurm/optimized/fed_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -158,12 +159,12 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/fed_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
@@ -171,12 +172,12 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/idr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }

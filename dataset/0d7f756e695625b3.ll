@@ -28,6 +28,7 @@
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; php/optimized/zend_compile.ll
 ; postgres/optimized/gindesc.ll
@@ -44,7 +45,6 @@
 ; wireshark/optimized/packet-l2tp.c.ll
 ; wireshark/optimized/packet-mpeg-pes.c.ll
 ; wireshark/optimized/packet-qnet6.c.ll
-; wireshark/optimized/packet-usb-i1d3.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i16 %0) #0 {
 entry:
@@ -71,10 +71,10 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/big5.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i16 %0) #0 {
+define i32 @func0000000000000018(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 255
-  %2 = icmp ugt i16 %1, 160
+  %2 = icmp samesign ugt i16 %1, 160
   %3 = select i1 %2, i32 65438, i32 65472
   ret i32 %3
 }

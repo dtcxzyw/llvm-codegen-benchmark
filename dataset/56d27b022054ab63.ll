@@ -41,7 +41,7 @@ entry:
   ret i64 %5
 }
 
-; 20 occurrences:
+; 18 occurrences:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; graphviz/optimized/stress.c.ll
@@ -49,7 +49,6 @@ entry:
 ; jq/optimized/regparse.ll
 ; linux/optimized/skl_watermark.ll
 ; oniguruma/optimized/regparse.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlansf.c.ll
@@ -58,7 +57,6 @@ entry:
 ; openblas/optimized/dpbtrf.c.ll
 ; opencv/optimized/augmented_unscented_kalman.cpp.ll
 ; opencv/optimized/unscented_kalman.cpp.ll
-; openjdk/optimized/OGLPaints.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
@@ -72,8 +70,9 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; opencv/optimized/mean.dispatch.cpp.ll
+; openjdk/optimized/OGLPaints.ll
 ; php/optimized/zend_alloc.ll
 ; postgres/optimized/bitmapset.ll
 ; Function Attrs: nounwind
@@ -82,7 +81,7 @@ entry:
   %2 = add nsw i32 %1, -2
   %3 = sub nsw i32 %2, %0
   %4 = zext i32 %3 to i64
-  %5 = shl nuw nsw i64 %4, 3
+  %5 = shl nuw nsw i64 %4, 2
   ret i64 %5
 }
 
@@ -94,7 +93,7 @@ entry:
 define i64 @func0000000000000013(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 3
   ret i64 %5
@@ -128,7 +127,7 @@ entry:
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 3
   ret i64 %5

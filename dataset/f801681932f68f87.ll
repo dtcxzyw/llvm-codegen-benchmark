@@ -16,7 +16,7 @@ entry:
 ; rust-analyzer-rs/optimized/53ntv1pfq7fnns7g.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = xor i1 %2, true
@@ -37,10 +37,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = xor i1 %2, true

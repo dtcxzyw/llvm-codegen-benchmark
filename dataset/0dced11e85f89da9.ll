@@ -55,8 +55,16 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 13 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; eastl/optimized/EAString.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
@@ -70,7 +78,7 @@ entry:
   ret i1 %4
 }
 
-; 50 occurrences:
+; 66 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv_test.cc.ll
@@ -102,6 +110,21 @@ entry:
 ; abseil-cpp/optimized/uniform_helper_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; eastl/optimized/EAString.cpp.ll
 ; entt/optimized/any.cpp.ll
 ; entt/optimized/handle.cpp.ll
@@ -112,6 +135,7 @@ entry:
 ; entt/optimized/meta_prop.cpp.ll
 ; entt/optimized/meta_type.cpp.ll
 ; entt/optimized/registry.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; nuklear/optimized/unity.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/array.ll
@@ -130,7 +154,22 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 26 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/arrows.c.ll
 ; opencv/optimized/geometry.cpp.ll
@@ -139,6 +178,7 @@ entry:
 ; quantlib/optimized/bivariatenormaldistribution.ll
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/sequence_dialog.cpp.ll
 ; Function Attrs: nounwind
@@ -146,11 +186,26 @@ define i1 @func0000000000000004(i1 %0, double %1) #0 {
 entry:
   %2 = fneg double %1
   %3 = select i1 %0, double %2, double %1
-  %4 = fcmp ogt double %3, 0.000000e+00
+  %4 = fcmp ogt double %3, -1.000000e+02
   ret i1 %4
 }
 
-; 2 occurrences:
+; 17 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
@@ -158,7 +213,7 @@ define i1 @func0000000000000005(i1 %0, double %1) #0 {
 entry:
   %2 = fneg double %1
   %3 = select i1 %0, double %2, double %1
-  %4 = fcmp ugt double %3, 0x3D719799812DEA11
+  %4 = fcmp ugt double %3, 0x10000000000000
   ret i1 %4
 }
 

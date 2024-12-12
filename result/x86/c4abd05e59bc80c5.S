@@ -5,9 +5,9 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setg	%al
+	cmpq	%rax, %rsi
+	setl	%al
 	andb	%dil, %al
 	retq

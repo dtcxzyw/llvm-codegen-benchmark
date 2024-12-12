@@ -17,7 +17,7 @@ entry:
   %.fr = freeze i32 %3
   %4 = urem i32 %.fr, 365
   %5 = sub i32 %4, %.fr
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -30,7 +30,7 @@ entry:
   %.fr = freeze i32 %3
   %4 = urem i32 %.fr, 12
   %5 = sub i32 %4, %.fr
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %.fr = freeze i32 %3
   %4 = urem i32 %.fr, 5
   %5 = sub i32 %4, %.fr
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -59,7 +59,7 @@ entry:
   %.fr = freeze i32 %3
   %4 = urem i32 %.fr, 365
   %5 = sub i32 %4, %.fr
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

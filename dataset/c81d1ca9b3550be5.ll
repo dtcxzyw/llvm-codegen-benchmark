@@ -1,10 +1,10 @@
 
-%"struct.mold::elf::FdeRecord.2523069" = type <{ i32, i32, i32, i16, %"struct.mold::Atomic.2523070", i8 }>
-%"struct.mold::Atomic.2523070" = type { %"struct.std::atomic.94.2522994" }
-%"struct.std::atomic.94.2522994" = type { %"struct.std::__atomic_base.95.2522997" }
-%"struct.std::__atomic_base.95.2522997" = type { i8 }
+%"struct.mold::elf::FdeRecord.2637478" = type <{ i32, i32, i32, i16, %"struct.mold::Atomic.2637479", i8 }>
+%"struct.mold::Atomic.2637479" = type { %"struct.std::atomic.94.2637403" }
+%"struct.std::atomic.94.2637403" = type { %"struct.std::__atomic_base.95.2637406" }
+%"struct.std::__atomic_base.95.2637406" = type { i8 }
 
-; 128 occurrences:
+; 127 occurrences:
 ; hermes/optimized/CommandLine.cpp.ll
 ; hermes/optimized/FileCheck.cpp.ll
 ; hermes/optimized/StringMap.cpp.ll
@@ -38,7 +38,6 @@
 ; llvm/optimized/LLVMContextImpl.cpp.ll
 ; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/LayoutOverrideSource.cpp.ll
-; llvm/optimized/LegacyPassManager.cpp.ll
 ; llvm/optimized/MCCodeView.cpp.ll
 ; llvm/optimized/MacroExpander.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
@@ -139,7 +138,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = icmp eq i32 %2, -1
   %5 = select i1 %4, i64 %1, i64 %3
-  %6 = getelementptr nusw %"struct.mold::elf::FdeRecord.2523069", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.mold::elf::FdeRecord.2637478", ptr %0, i64 %5
   ret ptr %6
 }
 

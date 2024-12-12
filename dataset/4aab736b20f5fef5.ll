@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 73 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
@@ -13,6 +13,8 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/jidctflt.c.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll

@@ -16,13 +16,13 @@ entry:
 }
 
 ; 3 occurrences:
-; llvm/optimized/MachineUniformityAnalysis.cpp.ll
-; llvm/optimized/UniformityAnalysis.cpp.ll
-; opencv/optimized/dxt.cpp.ll
+; linux/optimized/memory.ll
+; lvgl/optimized/lv_draw_sw.ll
+; openblas/optimized/dsbgst.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000030(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = trunc nuw nsw i64 %2 to i32
+  %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
   %5 = add i32 %0, %1
   %6 = add i32 %5, %4
@@ -30,13 +30,14 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
-; linux/optimized/memory.ll
-; openblas/optimized/dsbgst.c.ll
+; 3 occurrences:
+; llvm/optimized/MachineUniformityAnalysis.cpp.ll
+; llvm/optimized/UniformityAnalysis.cpp.ll
+; opencv/optimized/dxt.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000030(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = xor i32 %3, -1
   %5 = add i32 %0, %1
   %6 = add i32 %5, %4

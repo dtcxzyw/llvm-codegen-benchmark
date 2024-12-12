@@ -1,18 +1,18 @@
-func0000000000000435:                   # @func0000000000000435
+func0000000000002875:                   # @func0000000000002875
 	movzwl	%si, %eax
 	cmpq	%rax, %rdi
 	adcq	$0, %rdi
 	cmpq	%rax, %rdi
 	setbe	%al
 	retq
-func0000000000000465:                   # @func0000000000000465
+func00000000000008c5:                   # @func00000000000008c5
 	movzwl	%si, %eax
 	cmpq	%rax, %rdi
 	adcq	$0, %rdi
 	cmpq	%rax, %rdi
 	setbe	%al
 	retq
-func0000000000000425:                   # @func0000000000000425
+func0000000000000845:                   # @func0000000000000845
 	movzwl	%si, %eax
 	cmpq	%rax, %rdi
 	adcq	$0, %rdi

@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; gromacs/optimized/gmx_densorder.cpp.ll
 ; gromacs/optimized/gmx_gyrate.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -11,7 +11,6 @@
 ; opencv/optimized/boostdesc.cpp.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
-; stb/optimized/stb_hexwave.c.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:

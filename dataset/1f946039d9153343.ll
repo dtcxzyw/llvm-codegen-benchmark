@@ -10,7 +10,7 @@ entry:
   %4 = icmp ne i32 %3, 0
   %5 = select i1 %4, i1 %1, i1 false
   %6 = zext i1 %5 to i32
-  %7 = or disjoint i32 %6, %0
+  %7 = or disjoint i32 %0, %6
   ret i32 %7
 }
 

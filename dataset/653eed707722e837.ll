@@ -3,10 +3,10 @@
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; linux/optimized/ioremap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000089(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = icmp uge ptr %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -15,10 +15,10 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp eq ptr %3, %0
+  %4 = icmp eq ptr %0, %3
   %5 = icmp eq ptr %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -31,10 +31,10 @@ entry:
 ; redis/optimized/extent_dss.ll
 ; redis/optimized/extent_dss.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000124(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = icmp uge ptr %0, %1
   %6 = and i1 %4, %5
   ret i1 %6

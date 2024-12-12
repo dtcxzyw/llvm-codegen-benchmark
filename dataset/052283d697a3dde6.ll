@@ -1,55 +1,23 @@
 
-%"class.std::optional.661.3097548" = type { %"struct.std::_Optional_base.662.3097549" }
-%"struct.std::_Optional_base.662.3097549" = type { %"struct.std::_Optional_payload.664.3097550" }
-%"struct.std::_Optional_payload.664.3097550" = type { %"struct.std::_Optional_payload.base.668.3097551", [7 x i8] }
-%"struct.std::_Optional_payload.base.668.3097551" = type { %"struct.std::_Optional_payload_base.base.667.3097552" }
-%"struct.std::_Optional_payload_base.base.667.3097552" = type { %"union.std::_Optional_payload_base<llvm::object::VersionEntry>::_Storage.3097553", i8 }
-%"union.std::_Optional_payload_base<llvm::object::VersionEntry>::_Storage.3097553" = type { %"struct.llvm::object::VersionEntry.3097524" }
-%"struct.llvm::object::VersionEntry.3097524" = type <{ %"class.std::__cxx11::basic_string.3097455", i8, [7 x i8] }>
-%"class.std::__cxx11::basic_string.3097455" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3097456", i64, %union.anon.45.3097457 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3097456" = type { ptr }
-%union.anon.45.3097457 = type { i64, [8 x i8] }
-
-; 5 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-static.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; openjdk/optimized/hb-common.ll
-; openjdk/optimized/hb-ot-font.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001e5(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  %6 = icmp ule ptr %5, %0
-  ret i1 %6
-}
-
-; 5 occurrences:
-; imgui/optimized/imgui_draw.cpp.ll
-; nuklear/optimized/unity.c.ll
-; recastnavigation/optimized/fastlz.c.ll
-; snappy/optimized/snappy.cc.ll
-; yosys/optimized/fastlz.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001e8(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 1
-  %6 = icmp ugt ptr %5, %0
-  ret i1 %6
-}
+%"class.std::optional.661.3290297" = type { %"struct.std::_Optional_base.662.3290298" }
+%"struct.std::_Optional_base.662.3290298" = type { %"struct.std::_Optional_payload.664.3290299" }
+%"struct.std::_Optional_payload.664.3290299" = type { %"struct.std::_Optional_payload.base.668.3290300", [7 x i8] }
+%"struct.std::_Optional_payload.base.668.3290300" = type { %"struct.std::_Optional_payload_base.base.667.3290301" }
+%"struct.std::_Optional_payload_base.base.667.3290301" = type { %"union.std::_Optional_payload_base<llvm::object::VersionEntry>::_Storage.3290302", i8 }
+%"union.std::_Optional_payload_base<llvm::object::VersionEntry>::_Storage.3290302" = type { %"struct.llvm::object::VersionEntry.3290273" }
+%"struct.llvm::object::VersionEntry.3290273" = type <{ %"class.std::__cxx11::basic_string.3290204", i8, [7 x i8] }>
+%"class.std::__cxx11::basic_string.3290204" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3290205", i64, %union.anon.45.3290206 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3290205" = type { ptr }
+%union.anon.45.3290206 = type { i64, [8 x i8] }
 
 ; 1 occurrences:
 ; assimp/optimized/NDOLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000128(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000268(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 76
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
@@ -65,11 +33,11 @@ entry:
 ; luajit/optimized/lj_opt_mem_dyn.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000068(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -6
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
@@ -81,7 +49,7 @@ entry:
 ; hyperscan/optimized/teddy_avx2.c.ll
 ; postgres/optimized/visibilitymap.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000384(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -100,12 +68,27 @@ entry:
 ; redis/optimized/lzf_c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ult ptr %5, %0
+  ret i1 %6
+}
+
+; 4 occurrences:
+; imgui/optimized/imgui_draw.cpp.ll
+; nuklear/optimized/unity.c.ll
+; recastnavigation/optimized/fastlz.c.ll
+; yosys/optimized/fastlz.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003e8(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 1
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -113,7 +96,7 @@ entry:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -128,11 +111,11 @@ entry:
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -140,11 +123,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000161(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -153,21 +136,20 @@ entry:
 ; llvm/optimized/ELF.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.std::optional.661.3097548", ptr %1, i64 %3
+  %4 = getelementptr %"class.std::optional.661.3290297", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 48
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
-; 3 occurrences:
-; icu/optimized/ustring.ll
+; 2 occurrences:
 ; lz4/optimized/lz4.c.ll
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -193,7 +175,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/ngsniffer.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000388(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -217,11 +199,11 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000168(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
@@ -229,11 +211,11 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000065(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 4
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ule ptr %5, %0
   ret i1 %6
 }

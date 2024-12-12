@@ -1,13 +1,14 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/abcRec3.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/default_formatter_factory.ll
 ; cmake/optimized/pingpong.c.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; cpython/optimized/memoryobject.ll
 ; curl/optimized/libcurl_la-pingpong.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; linux/optimized/drm_mipi_dsi.ll
-; linux/optimized/drm_prime.ll
 ; llvm/optimized/HashTable.cpp.ll
 ; php/optimized/math.ll
 ; Function Attrs: nounwind
@@ -31,8 +32,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/AutoUpgrade.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {

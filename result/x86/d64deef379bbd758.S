@@ -6,7 +6,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$262144, %ecx                   # imm = 0x40000
 	setb	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	notb	%dil
 	movzbl	%dil, %eax
 	andl	$1, %eax

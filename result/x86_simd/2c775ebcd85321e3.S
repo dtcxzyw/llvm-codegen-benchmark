@@ -21,7 +21,7 @@
 	.zero	16,56
 .LCPI0_3:
 	.zero	4,254
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vptestnmw	.LCPI0_0(%rip), %ymm1, %k0
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqb	.LCPI0_2(%rip), %xmm0, %k1

@@ -13,7 +13,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 .LCPI2_0:
 	.long	65535                           # 0xffff
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpternlogd	$30, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 ^ (ymm1 | ymm2)
 	vpcmpeqd	.LCPI2_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -26,7 +26,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpternlogd	$30, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 ^ (ymm1 | ymm2)
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpcmpneqd	%ymm1, %ymm0, %k0

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/retDelay.c.ll
 ; abc/optimized/satInter.c.ll
@@ -8,7 +8,6 @@
 ; abc/optimized/satInterP.c.ll
 ; abc/optimized/sfmLib.c.ll
 ; gromacs/optimized/grid.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/sampler.cpp.ll
 ; openjdk/optimized/xRelocationSetSelector.ll

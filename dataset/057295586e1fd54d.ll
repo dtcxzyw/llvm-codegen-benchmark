@@ -83,8 +83,9 @@ entry:
   ret i64 %4
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/fraClaus.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/divsufsort.c.ll
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll

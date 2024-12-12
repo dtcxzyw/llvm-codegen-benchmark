@@ -1,42 +1,42 @@
 
-%class.aiVector3t.2716369 = type { double, double, double }
-%class.CVertexO.3632004 = type { %"class.vcg::Vertex.base.3632005", [4 x i8] }
-%"class.vcg::Vertex.base.3632005" = type { %"class.vcg::VertexArityMax.base.3632006" }
-%"class.vcg::VertexArityMax.base.3632006" = type { %"class.vcg::Arity12.base.3632007" }
-%"class.vcg::Arity12.base.3632007" = type { %"class.vcg::DefaultDeriver.base.3632008" }
-%"class.vcg::DefaultDeriver.base.3632008" = type { %"class.vcg::Arity11.base.3632009" }
-%"class.vcg::Arity11.base.3632009" = type { %"class.vcg::vertex::RadiusmOcf.base.3632010" }
-%"class.vcg::vertex::RadiusmOcf.base.3632010" = type { %"class.vcg::vertex::RadiusOcf.base.3632011" }
-%"class.vcg::vertex::RadiusOcf.base.3632011" = type { %"class.vcg::Arity10.base.3632012" }
-%"class.vcg::Arity10.base.3632012" = type { %"class.vcg::vertex::CurvatureDirmOcf.base.3632013" }
-%"class.vcg::vertex::CurvatureDirmOcf.base.3632013" = type { %"class.vcg::vertex::CurvatureDirOcf.base.3632014" }
-%"class.vcg::vertex::CurvatureDirOcf.base.3632014" = type { %"class.vcg::Arity9.base.3632015" }
-%"class.vcg::Arity9.base.3632015" = type { %"class.vcg::vertex::TexCoordfOcf.base.3632016" }
-%"class.vcg::vertex::TexCoordfOcf.base.3632016" = type { %"class.vcg::vertex::TexCoordOcf.base.3632017" }
-%"class.vcg::vertex::TexCoordOcf.base.3632017" = type { %"class.vcg::Arity8.base.3632018" }
-%"class.vcg::Arity8.base.3632018" = type { %"class.vcg::vertex::MarkOcf.base.3632019" }
-%"class.vcg::vertex::MarkOcf.base.3632019" = type { %"class.vcg::Arity7.base.3632020" }
-%"class.vcg::Arity7.base.3632020" = type { %"class.vcg::vertex::VFAdjOcf.base.3632021" }
-%"class.vcg::vertex::VFAdjOcf.base.3632021" = type { %"class.vcg::Arity6.base.3632022" }
-%"class.vcg::Arity6.base.3632022" = type { %"class.vcg::vertex::Color4b.base.3632023" }
-%"class.vcg::vertex::Color4b.base.3632023" = type { %"class.vcg::vertex::Color.base.3632024" }
-%"class.vcg::vertex::Color.base.3632024" = type { %"class.vcg::Arity5.3632025", %"class.vcg::Color4.3631885" }
-%"class.vcg::Arity5.3632025" = type { %"class.vcg::vertex::Qualitym.3632026" }
-%"class.vcg::vertex::Qualitym.3632026" = type { %"class.vcg::vertex::Quality.3632027" }
-%"class.vcg::vertex::Quality.3632027" = type { %"class.vcg::Arity4.base.3632028", float }
-%"class.vcg::Arity4.base.3632028" = type { %"class.vcg::vertex::Normal3m.base.3632029" }
-%"class.vcg::vertex::Normal3m.base.3632029" = type { %"class.vcg::vertex::Normal.base.3632030" }
-%"class.vcg::vertex::Normal.base.3632030" = type { %"class.vcg::Arity3.3632031", %"class.vcg::Point3.3631964" }
-%"class.vcg::Arity3.3632031" = type { %"class.vcg::vertex::BitFlags.3632032" }
-%"class.vcg::vertex::BitFlags.3632032" = type { %"class.vcg::Arity2.base.3632033", i32 }
-%"class.vcg::Arity2.base.3632033" = type { %"class.vcg::vertex::Coord3m.base.3632034" }
-%"class.vcg::vertex::Coord3m.base.3632034" = type { %"class.vcg::vertex::Coord.base.3632035" }
-%"class.vcg::vertex::Coord.base.3632035" = type <{ %"class.vcg::Arity1.3632036", %"class.vcg::Point3.3631964" }>
-%"class.vcg::Arity1.3632036" = type { %"class.vcg::vertex::InfoOcf.3632037" }
-%"class.vcg::vertex::InfoOcf.3632037" = type { ptr }
-%"class.vcg::Point3.3631964" = type { [3 x float] }
-%"class.vcg::Color4.3631885" = type { %"class.vcg::Point4.3631886" }
-%"class.vcg::Point4.3631886" = type { [4 x i8] }
+%class.aiVector3t.2828902 = type { double, double, double }
+%class.CVertexO.3812399 = type { %"class.vcg::Vertex.base.3812400", [4 x i8] }
+%"class.vcg::Vertex.base.3812400" = type { %"class.vcg::VertexArityMax.base.3812401" }
+%"class.vcg::VertexArityMax.base.3812401" = type { %"class.vcg::Arity12.base.3812402" }
+%"class.vcg::Arity12.base.3812402" = type { %"class.vcg::DefaultDeriver.base.3812403" }
+%"class.vcg::DefaultDeriver.base.3812403" = type { %"class.vcg::Arity11.base.3812404" }
+%"class.vcg::Arity11.base.3812404" = type { %"class.vcg::vertex::RadiusmOcf.base.3812405" }
+%"class.vcg::vertex::RadiusmOcf.base.3812405" = type { %"class.vcg::vertex::RadiusOcf.base.3812406" }
+%"class.vcg::vertex::RadiusOcf.base.3812406" = type { %"class.vcg::Arity10.base.3812407" }
+%"class.vcg::Arity10.base.3812407" = type { %"class.vcg::vertex::CurvatureDirmOcf.base.3812408" }
+%"class.vcg::vertex::CurvatureDirmOcf.base.3812408" = type { %"class.vcg::vertex::CurvatureDirOcf.base.3812409" }
+%"class.vcg::vertex::CurvatureDirOcf.base.3812409" = type { %"class.vcg::Arity9.base.3812410" }
+%"class.vcg::Arity9.base.3812410" = type { %"class.vcg::vertex::TexCoordfOcf.base.3812411" }
+%"class.vcg::vertex::TexCoordfOcf.base.3812411" = type { %"class.vcg::vertex::TexCoordOcf.base.3812412" }
+%"class.vcg::vertex::TexCoordOcf.base.3812412" = type { %"class.vcg::Arity8.base.3812413" }
+%"class.vcg::Arity8.base.3812413" = type { %"class.vcg::vertex::MarkOcf.base.3812414" }
+%"class.vcg::vertex::MarkOcf.base.3812414" = type { %"class.vcg::Arity7.base.3812415" }
+%"class.vcg::Arity7.base.3812415" = type { %"class.vcg::vertex::VFAdjOcf.base.3812416" }
+%"class.vcg::vertex::VFAdjOcf.base.3812416" = type { %"class.vcg::Arity6.base.3812417" }
+%"class.vcg::Arity6.base.3812417" = type { %"class.vcg::vertex::Color4b.base.3812418" }
+%"class.vcg::vertex::Color4b.base.3812418" = type { %"class.vcg::vertex::Color.base.3812419" }
+%"class.vcg::vertex::Color.base.3812419" = type { %"class.vcg::Arity5.3812420", %"class.vcg::Color4.3812292" }
+%"class.vcg::Arity5.3812420" = type { %"class.vcg::vertex::Qualitym.3812421" }
+%"class.vcg::vertex::Qualitym.3812421" = type { %"class.vcg::vertex::Quality.3812422" }
+%"class.vcg::vertex::Quality.3812422" = type { %"class.vcg::Arity4.base.3812423", float }
+%"class.vcg::Arity4.base.3812423" = type { %"class.vcg::vertex::Normal3m.base.3812424" }
+%"class.vcg::vertex::Normal3m.base.3812424" = type { %"class.vcg::vertex::Normal.base.3812425" }
+%"class.vcg::vertex::Normal.base.3812425" = type { %"class.vcg::Arity3.3812426", %"class.vcg::Point3.3812358" }
+%"class.vcg::Arity3.3812426" = type { %"class.vcg::vertex::BitFlags.3812427" }
+%"class.vcg::vertex::BitFlags.3812427" = type { %"class.vcg::Arity2.base.3812428", i32 }
+%"class.vcg::Arity2.base.3812428" = type { %"class.vcg::vertex::Coord3m.base.3812429" }
+%"class.vcg::vertex::Coord3m.base.3812429" = type { %"class.vcg::vertex::Coord.base.3812430" }
+%"class.vcg::vertex::Coord.base.3812430" = type <{ %"class.vcg::Arity1.3812431", %"class.vcg::Point3.3812358" }>
+%"class.vcg::Arity1.3812431" = type { %"class.vcg::vertex::InfoOcf.3812432" }
+%"class.vcg::vertex::InfoOcf.3812432" = type { ptr }
+%"class.vcg::Point3.3812358" = type { [3 x float] }
+%"class.vcg::Color4.3812292" = type { %"class.vcg::Point4.3812368" }
+%"class.vcg::Point4.3812368" = type { [4 x i8] }
 
 ; 16 occurrences:
 ; assimp/optimized/IFCUtil.cpp.ll
@@ -62,11 +62,11 @@ entry:
   %4 = sub i64 %2, %3
   %5 = sdiv exact i64 %4, 24
   %6 = sub nsw i64 %5, %1
-  %7 = getelementptr nusw %class.aiVector3t.2716369, ptr %0, i64 %6
+  %7 = getelementptr nusw %class.aiVector3t.2828902, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 44 occurrences:
+; 42 occurrences:
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/cmesh.cpp.ll
@@ -78,7 +78,6 @@ entry:
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_layer.cpp.ll
@@ -102,7 +101,6 @@ entry:
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/mesh_graph.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -118,7 +116,7 @@ entry:
   %4 = sub i64 %2, %3
   %5 = sdiv exact i64 %4, 48
   %6 = sub i64 %5, %1
-  %7 = getelementptr nusw %class.CVertexO.3632004, ptr %0, i64 %6
+  %7 = getelementptr nusw %class.CVertexO.3812399, ptr %0, i64 %6
   ret ptr %7
 }
 

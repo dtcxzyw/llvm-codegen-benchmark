@@ -2,16 +2,29 @@
 ; 1 occurrences:
 ; openjdk/optimized/psParallelCompact.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000065(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -524288
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 524288
-  %5 = icmp uge ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 524288
+  %5 = icmp ule ptr %0, %4
   ret i1 %5
 }
 
-; 81 occurrences:
+; 2 occurrences:
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(ptr %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -2
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw i8, ptr %3, i64 -72
+  %5 = icmp ult ptr %0, %4
+  ret i1 %5
+}
+
+; 82 occurrences:
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -38,6 +51,7 @@ entry:
 ; llvm/optimized/LICM.cpp.ll
 ; llvm/optimized/LoopAnalysisManager.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/LoopUnrollAndJam.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
@@ -94,37 +108,24 @@ entry:
 ; llvm/optimized/WinEHPrepare.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000061(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 281474976710655
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 32
-  %5 = icmp eq ptr %4, %0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/SROA.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000031(ptr %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, -8
-  %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 48
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 32
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000006c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 24
-  %5 = icmp ne ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 24
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
@@ -136,7 +137,7 @@ entry:
   %2 = and i64 %1, -4
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 -160
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
@@ -148,7 +149,7 @@ entry:
   %2 = and i64 %1, -2
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 82
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -156,12 +157,12 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; mimalloc/optimized/segment.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000068(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -33554432
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 264
-  %5 = icmp ult ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 264
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 

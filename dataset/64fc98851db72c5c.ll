@@ -6,13 +6,25 @@
 define i64 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl i64 %3, 1
   ret i64 %4
 }
 
-; 55 occurrences:
+; 68 occurrences:
 ; abc/optimized/ioReadBlif.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/iso9660.c.ll
 ; clamav/optimized/yara_lexer.c.ll
 ; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
@@ -29,6 +41,7 @@ entry:
 ; jq/optimized/lexer.ll
 ; linux/optimized/skbuff.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; ninja/optimized/depfile_parser.cc.ll
 ; nix/optimized/lexer-tab.ll
 ; openjdk/optimized/parse2.ll
@@ -71,7 +84,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl i64 %3, 32
   ret i64 %4
 }

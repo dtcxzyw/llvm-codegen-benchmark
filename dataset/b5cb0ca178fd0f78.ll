@@ -1,20 +1,16 @@
 
-; 48 occurrences:
+; 44 occurrences:
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; linux/optimized/cfg.ll
-; linux/optimized/drm_hdmi_helper.ll
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_atomic_plane.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_display_debugfs.ll
-; linux/optimized/intel_display_device.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_display_power_well.ll
@@ -52,7 +48,7 @@
 define i1 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -64,7 +60,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
@@ -76,10 +72,10 @@ entry:
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/rx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -87,10 +83,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_fb.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }

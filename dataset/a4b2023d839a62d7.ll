@@ -6,7 +6,7 @@
 ; gromacs/optimized/colvarparse.cpp.ll
 ; php/optimized/ir_check.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000002a1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 90
   %4 = sext i1 %3 to i32
@@ -20,7 +20,7 @@ entry:
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000456(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000008a6(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 3
   %4 = sext i1 %3 to i32
@@ -37,7 +37,7 @@ entry:
 ; wireshark/optimized/packet-bthfp.c.ll
 ; wireshark/optimized/packet-bthsp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000201(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 91
   %.neg = zext i1 %3 to i32
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/persistence_xml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000286(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 62
   %4 = sext i1 %3 to i32

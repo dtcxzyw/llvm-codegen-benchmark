@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
@@ -9,6 +9,7 @@
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openssl/optimized/libcrypto-lib-curve448.ll
 ; openssl/optimized/libcrypto-shlib-curve448.ll
+; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:

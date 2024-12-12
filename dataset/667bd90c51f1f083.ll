@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 28 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -12,7 +12,6 @@
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; linux/optimized/dm-table.ll
 ; linux/optimized/md.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/nfs4xdr.ll
 ; llvm/optimized/HipStdPar.cpp.ll
 ; llvm/optimized/Type.cpp.ll
@@ -24,38 +23,34 @@
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
-; stockfish/optimized/tbprobe.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 4
   %4 = icmp eq i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 21 occurrences:
-; abc/optimized/sclBuffer.c.ll
+; 13 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/e100.ll
-; linux/optimized/virtio_net.ll
-; llvm/optimized/MachineCopyPropagation.cpp.ll
-; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; ozz-animation/optimized/jsoncpp.cpp.ll
 ; rocksdb/optimized/lock_request.cc.ll
 ; rocksdb/optimized/locktree.cc.ll
 ; rocksdb/optimized/manager.cc.ll
 ; rocksdb/optimized/txnid_set.cc.ll
 ; rocksdb/optimized/wfg.cc.ll
-; z3/optimized/dd_pdd.cpp.ll
 ; z3/optimized/opt_preprocess.cpp.ll
-; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_consequences.cpp.ll
-; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -75,7 +70,7 @@ define i1 @func000000000000000b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = icmp sge i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -86,7 +81,7 @@ define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = icmp slt i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -126,8 +121,21 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 4 occurrences:
+; abc/optimized/sclBuffer.c.ll
+; linux/optimized/virtio_net.ll
+; z3/optimized/dd_pdd.cpp.ll
+; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 12
+  %4 = icmp samesign ult i32 %3, %1
+  %5 = and i1 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; Function Attrs: nounwind
@@ -139,7 +147,7 @@ entry:
   ret i1 %5
 }
 
-; 299 occurrences:
+; 297 occurrences:
 ; linux/optimized/vgacon.ll
 ; llvm/optimized/ExpandLargeDivRem.cpp.ll
 ; z3/optimized/act_cache.cpp.ll
@@ -181,7 +189,6 @@ entry:
 ; z3/optimized/bv_solver.cpp.ll
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/char_decl_plugin.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/core_solver_pretty_printer.cpp.ll
@@ -341,7 +348,6 @@ entry:
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_aig_finder.cpp.ll
 ; z3/optimized/sat_bcd.cpp.ll
-; z3/optimized/sat_binspr.cpp.ll
 ; z3/optimized/sat_cut_simplifier.cpp.ll
 ; z3/optimized/sat_drat.cpp.ll
 ; z3/optimized/sat_local_search.cpp.ll
@@ -444,17 +450,38 @@ define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 8
   %4 = icmp ugt i32 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 2 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 1 occurrences:
 ; linux/optimized/intel_crt.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 16
+  %4 = icmp samesign uge i32 %3, %1
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; z3/optimized/sat_binspr.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 1
+  %4 = icmp samesign ugt i32 %3, %1
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 16
+  %3 = lshr i32 %2, 1
   %4 = icmp uge i32 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5

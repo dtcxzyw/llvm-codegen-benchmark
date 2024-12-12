@@ -14,12 +14,14 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 24 occurrences:
+; 26 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/_codecs_jp.ll
 ; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -48,7 +50,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 4
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -102,7 +104,7 @@ define i1 @func0000000000000004(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 2
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -113,7 +115,7 @@ define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 28
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

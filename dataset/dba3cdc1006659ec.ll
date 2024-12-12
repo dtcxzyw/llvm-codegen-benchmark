@@ -1,5 +1,5 @@
 
-; 122 occurrences:
+; 124 occurrences:
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcProve.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -32,11 +32,15 @@
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_roller.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/imageinput.cpp.ll
 ; oiio/optimized/imageoutput.cpp.ll
@@ -94,8 +98,6 @@
 ; openjdk/optimized/memnode.ll
 ; openjdk/optimized/os_linux.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
-; openmpi/optimized/monitoring_test.ll
-; openmpi/optimized/test_pvar_access.ll
 ; openspiel/optimized/cards.cc.ll
 ; openspiel/optimized/human_bot.cc.ll
 ; openspiel/optimized/tarok.cc.ll

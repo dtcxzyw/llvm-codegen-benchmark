@@ -30,7 +30,7 @@ entry:
   ret i64 %4
 }
 
-; 542 occurrences:
+; 557 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -293,6 +293,7 @@ entry:
 ; logos-rs/optimized/35hhwit62mt57vn1.ll
 ; luau/optimized/Config.test.cpp.ll
 ; luau/optimized/Parser.test.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
 ; meshlab/optimized/mesh_graph.cpp.ll
 ; meshlab/optimized/meshio.cpp.ll
@@ -569,6 +570,20 @@ entry:
 ; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/4km3eupdnqqnodg5d7nrlf2sf.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/exru7xor9i4a4ixpzw7x9xk8s.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll
@@ -596,7 +611,10 @@ entry:
   ret i64 %4
 }
 
-; 41 occurrences:
+; 47 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; jemalloc/optimized/emap.ll
 ; jemalloc/optimized/emap.pic.ll
 ; jemalloc/optimized/emap.sym.ll
@@ -633,10 +651,13 @@ entry:
 ; llvm/optimized/SplitKit.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; mitsuba3/optimized/string.cpp.ll
 ; redis/optimized/emap.ll
 ; redis/optimized/emap.sym.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/thread.ll
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
@@ -647,7 +668,7 @@ entry:
   ret i64 %4
 }
 
-; 563 occurrences:
+; 567 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -950,7 +971,6 @@ entry:
 ; llvm/optimized/AArch64MachObjectWriter.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
-; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTMatchersInternal.cpp.ll
@@ -1009,9 +1029,8 @@ entry:
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_image.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
@@ -1145,7 +1164,9 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
-; tokio-rs/optimized/46apu3hqx0w07xoc.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; vcpkg/optimized/tools.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; verilator/optimized/V3LinkDot.cpp.ll
@@ -1211,6 +1232,10 @@ entry:
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
@@ -1243,7 +1268,7 @@ entry:
   ret i64 %4
 }
 
-; 309 occurrences:
+; 307 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/cuddBddAbs.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
@@ -1270,7 +1295,6 @@ entry:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
-; brotli/optimized/bit_reader.c.ll
 ; c3c/optimized/bigint.c.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/pdfng.c.ll
@@ -1308,8 +1332,6 @@ entry:
 ; linux/optimized/mm_init.ll
 ; linux/optimized/mpih-div.ll
 ; linux/optimized/read_write.ll
-; linux/optimized/sys_ia32.ll
-; linux/optimized/umh.ll
 ; linux/optimized/workingset.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -1361,6 +1383,7 @@ entry:
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; memcached/optimized/memcached-util.ll
 ; memcached/optimized/memcached_debug-util.ll
 ; memcached/optimized/util.ll
@@ -1449,7 +1472,6 @@ entry:
 ; qemu/optimized/hw_dma_sifive_pdma.c.ll
 ; qemu/optimized/hw_intc_riscv_aclint.c.ll
 ; qemu/optimized/hw_net_tulip.c.ll
-; qemu/optimized/hw_rtc_goldfish_rtc.c.ll
 ; qemu/optimized/optimize.c.ll
 ; quantlib/optimized/fftengine.ll
 ; quantlib/optimized/garch.ll
@@ -1552,6 +1574,7 @@ entry:
 ; wolfssl/optimized/aes.c.ll
 ; wolfssl/optimized/poly1305.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
@@ -1562,7 +1585,7 @@ entry:
   ret i64 %4
 }
 
-; 41 occurrences:
+; 39 occurrences:
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; linux/optimized/generic.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
@@ -1598,8 +1621,6 @@ entry:
 ; luajit/optimized/lj_cconv_dyn.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
-; luajit/optimized/lj_obj.ll
-; luajit/optimized/lj_obj_dyn.ll
 ; luajit/optimized/lj_serialize.ll
 ; luajit/optimized/lj_serialize_dyn.ll
 ; spike/optimized/disasm.ll

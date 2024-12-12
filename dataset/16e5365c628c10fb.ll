@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/darLib.c.ll
@@ -21,6 +21,7 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; opencv/optimized/lapack.cpp.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
 ; redis/optimized/rax.ll
 ; wireshark/optimized/packet-pldm.c.ll
 ; z3/optimized/mpf.cpp.ll

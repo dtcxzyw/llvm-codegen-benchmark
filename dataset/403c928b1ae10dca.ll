@@ -6,12 +6,12 @@
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = and i32 %2, 16
   %4 = shl nuw nsw i32 128, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -64,7 +64,7 @@ entry:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/giaTsim.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 30
@@ -79,13 +79,13 @@ entry:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = and i32 %2, 28
   %4 = lshr i32 %0, %3
   %5 = and i32 %4, 14
-  %6 = icmp ult i32 %5, 10
+  %6 = icmp samesign ult i32 %5, 10
   ret i1 %6
 }
 
@@ -93,7 +93,7 @@ entry:
 ; abc/optimized/covBuild.c.ll
 ; abc/optimized/covCore.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = and i32 %2, 30
@@ -103,15 +103,14 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterBankInfo.cpp.ll
 ; llvm/optimized/X86RegisterBankInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = and i32 %2, 30

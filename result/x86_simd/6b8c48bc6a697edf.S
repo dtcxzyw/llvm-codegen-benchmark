@@ -9,7 +9,7 @@
 	.short	8192                            # 0x2000
 func00000000000000c0:                   # @func00000000000000c0
 	vpslld	$6, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vzeroupper

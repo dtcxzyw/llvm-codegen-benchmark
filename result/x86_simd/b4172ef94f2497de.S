@@ -1,10 +1,10 @@
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	vpmovqd	%ymm1, %xmm1
 	vpcmpgtd	%xmm1, %xmm0, %k1
 	vpsubd	%xmm1, %xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpmovqd	%ymm1, %xmm1
 	vpcmpgtd	%xmm1, %xmm0, %k1
 	vpsubd	%xmm1, %xmm0, %xmm0 {%k1} {z}

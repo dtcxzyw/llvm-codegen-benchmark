@@ -1,19 +1,19 @@
 
-%struct._zend_jit_trace_stack.2681823 = type { %union.anon.14.2681824, i32 }
-%union.anon.14.2681824 = type { i32 }
+%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
+%union.anon.14.2794583 = type { i32 }
 
 ; 3 occurrences:
 ; hermes/optimized/DictPropertyMap.cpp.ll
 ; hermes/optimized/HiddenClass.cpp.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = add nsw i32 %2, -5
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %struct._zend_jit_trace_stack.2681823, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %5 = getelementptr nusw nuw %struct._zend_jit_trace_stack.2794582, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 
@@ -21,7 +21,7 @@ entry:
 ; hdf5/optimized/H5Pdcpl.c.ll
 ; hdf5/optimized/H5Pfapl.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = zext nneg i32 %2 to i64

@@ -18,19 +18,22 @@
 define i1 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 3 occurrences:
+; 6 occurrences:
 ; coreutils-rs/optimized/2fxrwnovw97v41kk.ll
 ; coreutils-rs/optimized/4ko2om1892k99n4t.ll
 ; postgres/optimized/jsonpath_exec.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 

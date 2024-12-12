@@ -1,5 +1,5 @@
 
-; 363 occurrences:
+; 367 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcIvy.c.ll
@@ -140,7 +140,6 @@
 ; lief/optimized/pk_wrap.c.ll
 ; linux/optimized/8139too.ll
 ; linux/optimized/alternative.ll
-; linux/optimized/cap_audit.ll
 ; linux/optimized/cpu_entry_area.ll
 ; linux/optimized/cpuset.ll
 ; linux/optimized/e100.ll
@@ -151,11 +150,9 @@
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
-; linux/optimized/i915_mm.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/ioremap.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/n_tty.ll
@@ -248,9 +245,9 @@
 ; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/xxhash.cpp.ll
-; luajit/optimized/lj_prng.ll
-; luajit/optimized/lj_prng_dyn.ll
 ; luau/optimized/Generalization.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
@@ -361,6 +358,13 @@
 ; wireshark/optimized/packet-erf.c.ll
 ; wolfssl/optimized/aes.c.ll
 ; z3/optimized/factor_equivs.cpp.ll
+; zed-rs/optimized/20wexgg4z3ww9j4h4iowli6fi.ll
+; zed-rs/optimized/5eo3r6xqgcl9c03ocnkjc70d3.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/etkkpijil810uxaq6a1xhpkj9.ll
 ; zlib/optimized/crc32.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; Function Attrs: nounwind

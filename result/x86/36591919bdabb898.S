@@ -1,7 +1,7 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movzwl	%si, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	cmpw	$6, %di
 	movl	$7, %eax
 	cmovbl	%esi, %eax

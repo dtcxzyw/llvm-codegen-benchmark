@@ -1,11 +1,10 @@
 
-; 188 occurrences:
+; 190 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_generator_testing.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
@@ -188,6 +187,9 @@
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; typst-rs/optimized/w6iknwszr5npyaz.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

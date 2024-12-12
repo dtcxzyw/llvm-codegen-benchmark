@@ -4,7 +4,7 @@
 	.long	60                              # 0x3c
 func00000000000001ff:                   # @func00000000000001ff
 	vpmulld	.LCPI0_0(%rip){1to4}, %xmm2, %xmm2
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmulld	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
@@ -16,7 +16,7 @@ func00000000000001e0:                   # @func00000000000001e0
 	vpaddd	%xmm1, %xmm1, %xmm3
 	vpaddd	%xmm3, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI2_0:
@@ -25,7 +25,7 @@ func00000000000001e0:                   # @func00000000000001e0
 	.long	100                             # 0x64
 func0000000000000000:                   # @func0000000000000000
 	vpmulld	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmulld	.LCPI2_1(%rip){1to4}, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero

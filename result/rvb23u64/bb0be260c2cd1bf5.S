@@ -1,6 +1,6 @@
 func00000000000000f5:                   # @func00000000000000f5
-	add.uw	a1, a2, a1
 	sh1add	a0, a1, a0
+	sh1add.uw	a0, a2, a0
 	ret
 func00000000000000ec:                   # @func00000000000000ec
 	slli	a2, a2, 32
@@ -25,8 +25,9 @@ func0000000000000170:                   # @func0000000000000170
 	add	a0, a0, a2
 	ret
 func000000000000018c:                   # @func000000000000018c
-	add.uw	a1, a1, a2
-	slli	a1, a1, 4
+	slli	a2, a2, 4
+	add	a0, a0, a2
+	slli.uw	a1, a1, 4
 	add	a0, a0, a1
 	ret
 func0000000000000070:                   # @func0000000000000070

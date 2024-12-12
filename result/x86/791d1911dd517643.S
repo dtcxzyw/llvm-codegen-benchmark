@@ -1,24 +1,23 @@
-func000000000000001c:                   # @func000000000000001c
-	movl	%edi, %eax
-	andl	$64512, %eax                    # imm = 0xFC00
-	negw	%ax
-	seto	%cl
-	testl	$32767, %edi                    # imm = 0x7FFF
-	setne	%al
-	andb	%cl, %al
-	retq
-func00000000000000c1:                   # @func00000000000000c1
-	testl	$1023, %edi                     # imm = 0x3FF
+func0000000000000181:                   # @func0000000000000181
+	testb	$127, %dil
 	setne	%cl
-	testl	$31744, %edi                    # imm = 0x7C00
-	sete	%al
+	testb	%dil, %dil
+	setns	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testl	$15360, %edi                    # imm = 0x3C00
 	setne	%cl
 	andl	$504, %edi                      # imm = 0x1F8
 	cmpw	$8, %di
+	setne	%al
+	andb	%cl, %al
+	retq
+func000000000000002c:                   # @func000000000000002c
+	cmpb	$34, %dil
+	sete	%cl
+	andl	$3840, %edi                     # imm = 0xF00
+	cmpl	$512, %edi                      # imm = 0x200
 	setne	%al
 	andb	%cl, %al
 	retq

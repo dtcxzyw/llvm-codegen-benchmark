@@ -23,14 +23,28 @@ func0000000000000009:                   # @func0000000000000009
 	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000014:                   # @func0000000000000014
+	movb	$40, %al
+	bzhiq	%rax, %rdx, %rax
+	cmpq	%rsi, %rax
+	setb	%al
+	orb	%dil, %al
+	retq
+func0000000000000019:                   # @func0000000000000019
+	movb	$40, %al
+	bzhiq	%rax, %rdx, %rax
+	cmpq	%rsi, %rax
+	setae	%al
+	orb	%dil, %al
+	retq
+func0000000000000015:                   # @func0000000000000015
 	movb	$63, %al
 	bzhiq	%rax, %rdx, %rax
 	cmpq	%rsi, %rax
 	setbe	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$-2, %edx
 	cmpq	%rsi, %rdx
 	seta	%al

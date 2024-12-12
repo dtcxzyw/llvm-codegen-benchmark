@@ -38,7 +38,7 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpternlogd	$120, .LCPI4_0(%rip){1to8}, %ymm1, %ymm2 # ymm2 = ymm2 ^ (ymm1 & mem)
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI5_0:
 	.long	2147483647                      # 0x7fffffff

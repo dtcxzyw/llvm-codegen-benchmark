@@ -1,5 +1,11 @@
 
-; 14 occurrences:
+; 20 occurrences:
+; llvm/optimized/BranchProbabilityInfo.cpp.ll
+; llvm/optimized/CGCXX.cpp.ll
+; llvm/optimized/CodeViewDebug.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
+; llvm/optimized/VTableBuilder.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/ltable.cpp.ll

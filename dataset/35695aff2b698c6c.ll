@@ -9,7 +9,7 @@ define i64 @func0000000000000029(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, 0
   %2 = sext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

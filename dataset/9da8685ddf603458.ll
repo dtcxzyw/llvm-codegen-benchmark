@@ -6,7 +6,7 @@
 ; openjdk/optimized/c1_LinearScan.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000043(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = icmp eq i64 %2, 7

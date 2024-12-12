@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; gromacs/optimized/xtc3.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, %1
   %3 = icmp sgt i32 %0, 0
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-eth.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = icmp ult i32 %2, 60
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/procarray.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c8(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = icmp slt i32 %2, 0

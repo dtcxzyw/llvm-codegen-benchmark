@@ -5,7 +5,7 @@
 ; curl/optimized/libcurl_la-http.ll
 ; graphviz/optimized/pathfind.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp eq ptr %0, null

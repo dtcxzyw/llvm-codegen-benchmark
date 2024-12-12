@@ -11,7 +11,7 @@ entry:
   ret i64 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; linux/optimized/swap_state.ll
 ; mimalloc/optimized/random.c.ll
@@ -23,6 +23,7 @@ entry:
 ; php/optimized/zend_hash.ll
 ; soc-simulator/optimized/verilated.ll
 ; yaml-cpp/optimized/stream.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:

@@ -45,7 +45,7 @@ func000000000000003f:                   # @func000000000000003f
 	.zero	4,192
 func0000000000000038:                   # @func0000000000000038
 	vpslld	$3, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpord	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
@@ -71,7 +71,7 @@ func0000000000000038:                   # @func0000000000000038
 	.zero	4,5
 func000000000000003d:                   # @func000000000000003d
 	vpslld	$3, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpord	.LCPI2_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
@@ -97,7 +97,7 @@ func000000000000003d:                   # @func000000000000003d
 	.zero	4,192
 func0000000000000008:                   # @func0000000000000008
 	vpslld	$3, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpord	.LCPI3_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
@@ -123,7 +123,7 @@ func0000000000000008:                   # @func0000000000000008
 	.zero	4,192
 func000000000000003e:                   # @func000000000000003e
 	vpslld	$3, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpord	.LCPI4_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
@@ -149,7 +149,7 @@ func000000000000003e:                   # @func000000000000003e
 	.zero	4,5
 func0000000000000009:                   # @func0000000000000009
 	vpslld	$6, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpord	.LCPI5_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
@@ -227,7 +227,7 @@ func0000000000000018:                   # @func0000000000000018
 	.zero	4,64
 func0000000000000010:                   # @func0000000000000010
 	vpslld	$3, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpord	.LCPI8_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
@@ -253,7 +253,7 @@ func0000000000000010:                   # @func0000000000000010
 	.zero	4,192
 func000000000000003c:                   # @func000000000000003c
 	vpslld	$3, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpord	.LCPI9_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper

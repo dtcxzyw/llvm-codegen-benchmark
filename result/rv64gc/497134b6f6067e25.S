@@ -17,10 +17,11 @@ func0000000000000004:                   # @func0000000000000004
 	ori	a0, a0, 1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	xor	a0, a0, a1
-	seqz	a0, a0
-	addi	a0, a0, -1
-	andi	a0, a0, 80
+	beq	a0, a1, .LBB3_2
+	li	a0, 16
+	ret
+.LBB3_2:
+	li	a0, 24
 	ret
 func0000000000000009:                   # @func0000000000000009
 	sltu	a0, a0, a1

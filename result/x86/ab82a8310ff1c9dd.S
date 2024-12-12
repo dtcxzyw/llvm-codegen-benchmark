@@ -1,23 +1,23 @@
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	decl	%edx
 	incl	%esi
 	cmpl	%edx, %esi
 	setl	%al
 	andb	%dil, %al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	addl	$-3, %edx
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	setne	%al
 	andb	%dil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	addl	$-2, %edx
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	decl	%edx
 	incl	%esi
 	cmpl	%edx, %esi
@@ -29,6 +29,13 @@ func0000000000000006:                   # @func0000000000000006
 	addl	$-20, %esi
 	cmpl	%edx, %esi
 	setl	%al
+	andb	%dil, %al
+	retq
+func00000000000000a4:                   # @func00000000000000a4
+	addl	$-8, %edx
+	addl	$-14, %esi
+	cmpl	%edx, %esi
+	setb	%al
 	andb	%dil, %al
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -45,29 +52,22 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	addl	$-4, %edx
 	addl	$4, %esi
 	cmpl	%edx, %esi
 	setl	%al
 	andb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addl	$8, %edx
 	addl	$8, %esi
 	cmpl	%edx, %esi
 	seta	%al
 	andb	%dil, %al
 	retq
-func0000000000000054:                   # @func0000000000000054
-	addl	$-3, %edx
-	decl	%esi
+func00000000000000a6:                   # @func00000000000000a6
 	cmpl	%edx, %esi
-	setb	%al
-	andb	%dil, %al
-	retq
-func0000000000000056:                   # @func0000000000000056
-	cmpl	%esi, %edx
-	setge	%al
+	setle	%al
 	andb	%dil, %al
 	retq

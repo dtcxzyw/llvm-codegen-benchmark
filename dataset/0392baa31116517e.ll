@@ -5,26 +5,26 @@
 ; slurm/optimized/read_config.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = add nuw nsw i64 %4, %5
-  %7 = icmp ugt i64 %6, 4294967295
+  %7 = icmp samesign ugt i64 %6, 4294967295
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = add nuw nsw i64 %4, %5
-  %7 = icmp ult i64 %6, 4294967296
+  %7 = icmp samesign ult i64 %6, 4294967296
   ret i1 %7
 }
 
@@ -34,7 +34,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = add i64 %4, %5
   %7 = icmp ugt i64 %6, 122784
@@ -44,10 +44,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/file-elf.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002f4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000005e4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = add nuw nsw i64 %4, %5
   %7 = icmp ult i64 %6, 2147483648
@@ -62,7 +62,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = sub nsw i64 0, %5
   %7 = icmp eq i64 %4, %6
@@ -77,7 +77,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = add i64 %4, %5
   %7 = icmp ult i64 %6, 256
@@ -87,10 +87,10 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/block_util.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000548(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = add nuw i64 %4, %5
   %7 = icmp ugt i64 %6, 9223372036854775804

@@ -3,7 +3,7 @@
 ; hermes/optimized/TypeInference.cpp.ll
 ; php/optimized/zend_func_info.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp eq i32 %0, 0
@@ -16,7 +16,7 @@ entry:
 ; linux/optimized/ohci-hcd.ll
 ; postgres/optimized/xlog.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp eq i32 %0, 0

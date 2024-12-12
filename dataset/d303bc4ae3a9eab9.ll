@@ -52,7 +52,7 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
@@ -60,7 +60,6 @@ entry:
 ; graphviz/optimized/constrained_majorization_ipsep.c.ll
 ; graphviz/optimized/stress.c.ll
 ; linux/optimized/skl_watermark.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlatms.c.ll

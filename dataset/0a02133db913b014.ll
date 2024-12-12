@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; libquic/optimized/time.cc.ll
 ; libquic/optimized/time_posix.cc.ll
@@ -23,7 +23,6 @@
 ; spike/optimized/kmsda32.ll
 ; spike/optimized/kmsxda32.ll
 ; spike/optimized/kmxda32.ll
-; spike/optimized/vsadd_vi.ll
 ; spike/optimized/vsadd_vv.ll
 ; spike/optimized/vsadd_vx.ll
 ; Function Attrs: nounwind

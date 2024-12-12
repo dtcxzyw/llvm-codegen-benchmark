@@ -109,15 +109,6 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-.LCPI15_0:
-	.word	0x38d1b717                      # float 9.99999974E-5
-func000000000000002e:                   # @func000000000000002e
-	lui	a0, %hi(.LCPI15_0)
-	flw	fa5, %lo(.LCPI15_0)(a0)
-	flt.s	a0, fa1, fa5
-	feq.s	a1, fa0, fa0
-	and	a0, a0, a1
-	ret
 func000000000000001e:                   # @func000000000000001e
 	feq.s	a0, fa1, fa1
 	xori	a0, a0, 1
@@ -162,6 +153,15 @@ func0000000000000042:                   # @func0000000000000042
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
+.LCPI21_0:
+	.word	0x41102d33                      # float 9.01103496
+func00000000000000bb:                   # @func00000000000000bb
+	lui	a0, %hi(.LCPI21_0)
+	flw	fa5, %lo(.LCPI21_0)(a0)
+	fmax.s	fa4, fa0, fa1
+	flt.s	a0, fa5, fa4
+	xori	a0, a0, 1
+	ret
 func0000000000000055:                   # @func0000000000000055
 	fmin.s	fa5, fa0, fa1
 	fmv.w.x	fa4, zero
@@ -187,24 +187,17 @@ func0000000000000066:                   # @func0000000000000066
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
+func0000000000000048:                   # @func0000000000000048
+	fmv.w.x	fa5, zero
+	flt.s	a0, fa5, fa1
+	feq.s	a1, fa0, fa5
+	and	a0, a0, a1
+	ret
 func0000000000000078:                   # @func0000000000000078
 	fmv.w.x	fa5, zero
 	feq.s	a0, fa1, fa5
 	xori	a0, a0, 1
 	feq.s	a1, fa0, fa5
-	and	a0, a0, a1
-	ret
-.LCPI26_0:
-	.word	0xff7fffff                      # float -3.40282347E+38
-.LCPI26_1:
-	.word	0x7f7fffff                      # float 3.40282347E+38
-func00000000000000ca:                   # @func00000000000000ca
-	lui	a0, %hi(.LCPI26_0)
-	lui	a1, %hi(.LCPI26_1)
-	flw	fa5, %lo(.LCPI26_0)(a0)
-	flw	fa4, %lo(.LCPI26_1)(a1)
-	fle.s	a0, fa5, fa1
-	fle.s	a1, fa0, fa4
 	and	a0, a0, a1
 	ret
 func000000000000002a:                   # @func000000000000002a
@@ -217,6 +210,13 @@ func00000000000000c8:                   # @func00000000000000c8
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa5, fa1
 	feq.s	a1, fa0, fa5
+	and	a0, a0, a1
+	ret
+func0000000000000074:                   # @func0000000000000074
+	fmv.w.x	fa5, zero
+	feq.s	a0, fa1, fa5
+	xori	a0, a0, 1
+	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
 func0000000000000065:                   # @func0000000000000065
@@ -257,6 +257,15 @@ func0000000000000082:                   # @func0000000000000082
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
+.LCPI35_0:
+	.word	0x40490fdb                      # float 3.14159274
+func00000000000000ca:                   # @func00000000000000ca
+	lui	a0, %hi(.LCPI35_0)
+	flw	fa5, %lo(.LCPI35_0)(a0)
+	fle.s	a0, fa5, fa1
+	fle.s	a1, fa0, fa5
+	and	a0, a0, a1
+	ret
 func0000000000000087:                   # @func0000000000000087
 	fmv.w.x	fa5, zero
 	feq.s	a0, fa1, fa5
@@ -264,11 +273,11 @@ func0000000000000087:                   # @func0000000000000087
 	not	a1, a1
 	and	a0, a0, a1
 	ret
-.LCPI35_0:
+.LCPI37_0:
 	.word	0x358637bd                      # float 9.99999997E-7
 func00000000000000dd:                   # @func00000000000000dd
-	lui	a0, %hi(.LCPI35_0)
-	flw	fa5, %lo(.LCPI35_0)(a0)
+	lui	a0, %hi(.LCPI37_0)
+	flw	fa5, %lo(.LCPI37_0)(a0)
 	fmin.s	fa4, fa0, fa1
 	flt.s	a0, fa4, fa5
 	xori	a0, a0, 1

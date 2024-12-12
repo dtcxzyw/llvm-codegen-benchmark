@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; assimp/optimized/MD5Loader.cpp.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_rotatepixels.c.ll
@@ -11,6 +11,7 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; raylib/optimized/rcore.c.ll
 ; wireshark/optimized/packet-oran.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:
@@ -20,11 +21,10 @@ entry:
   ret float %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; gromacs/optimized/anadih.cpp.ll
 ; gromacs/optimized/gmx_densmap.cpp.ll
 ; gromacs/optimized/gmx_tcaf.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; ncnn/optimized/psroipooling.cpp.ll
 ; ncnn/optimized/roialign.cpp.ll

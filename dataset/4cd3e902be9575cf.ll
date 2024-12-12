@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; wireshark/optimized/packet-smtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000d51(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001aa1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 100
   %4 = add nsw i32 %3, -5328
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000556(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000aa6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 188
   %4 = add nsw i32 %3, -64

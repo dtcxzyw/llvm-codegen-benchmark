@@ -1,12 +1,11 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; clamav/optimized/arcread.cpp.ll
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/intel_hdcp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; miniaudio/optimized/unity.c.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; openmpi/optimized/coll_basic_neighbor_allgather.ll
 ; openmpi/optimized/coll_basic_neighbor_allgatherv.ll
 ; openmpi/optimized/coll_basic_neighbor_alltoall.ll
@@ -54,8 +53,7 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
-; opencv/optimized/demosaicing.cpp.ll
+; 2 occurrences:
 ; openjdk/optimized/interp_masm_x86.ll
 ; spike/optimized/spike-log-parser.ll
 ; Function Attrs: nounwind
@@ -68,17 +66,6 @@ entry:
 }
 
 ; 1 occurrences:
-; verilator/optimized/V3String.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000002d(i64 %0) #0 {
-entry:
-  %1 = trunc nuw i64 %0 to i32
-  %2 = shl nuw nsw i32 %1, 3
-  %3 = sub nsw i32 24, %2
-  ret i32 %3
-}
-
-; 1 occurrences:
 ; vcpkg/optimized/hash.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000002f(i64 %0) #0 {
@@ -86,6 +73,17 @@ entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = shl nuw nsw i32 %1, 3
   %3 = sub nuw nsw i32 24, %2
+  ret i32 %3
+}
+
+; 1 occurrences:
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000035(i64 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i64 %0 to i32
+  %2 = shl nsw i32 %1, 4
+  %3 = sub nsw i32 128, %2
   ret i32 %3
 }
 

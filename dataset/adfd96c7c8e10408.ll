@@ -1,4 +1,6 @@
 
+%struct._zend_ssa_op.2792342 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+
 ; 7 occurrences:
 ; postgres/optimized/gram.ll
 ; postgres/optimized/pl_gram.ll
@@ -15,7 +17,7 @@ entry:
   ret ptr %4
 }
 
-; 741 occurrences:
+; 734 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -32,7 +34,6 @@ entry:
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/time_zone_impl.cc.ll
 ; abseil-cpp/optimized/waiter_test.cc.ll
-; arrow/optimized/row_encoder.cc.ll
 ; arrow/optimized/thread_pool.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -223,7 +224,6 @@ entry:
 ; hyperscan/optimized/ng_depth.cpp.ll
 ; hyperscan/optimized/ng_dominators.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
-; hyperscan/optimized/ng_limex_accel.cpp.ll
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; hyperscan/optimized/ng_netflow.cpp.ll
@@ -452,7 +452,6 @@ entry:
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -583,8 +582,6 @@ entry:
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; ozz-animation/optimized/track_optimizer.cc.ll
-; ozz-animation/optimized/track_sampling_job.cc.ll
-; php/optimized/zend_inference.ll
 ; php/optimized/zend_language_parser.ll
 ; pocketpy/optimized/collections.cpp.ll
 ; proj/optimized/pipeline.cpp.ll
@@ -682,7 +679,6 @@ entry:
 ; taskflow/optimized/text_pipeline.cpp.ll
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
-; tev/optimized/Image.cpp.ll
 ; vcpkg/optimized/tools.cpp.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; velox/optimized/tz.cpp.ll
@@ -748,7 +744,6 @@ entry:
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
@@ -763,6 +758,87 @@ entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 %3
   ret ptr %4
+}
+
+; 2 occurrences:
+; hyperscan/optimized/ng_limex_accel.cpp.ll
+; php/optimized/zend_inference.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 5
+  %5 = getelementptr %struct._zend_ssa_op.2792342, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 40
+  ret ptr %6
+}
+
+; 45 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 4 occurrences:
+; arrow/optimized/row_encoder.cc.ll
+; gromacs/optimized/muParserBytecode.cpp.ll
+; ozz-animation/optimized/track_sampling_job.cc.ll
+; tev/optimized/Image.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -8
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

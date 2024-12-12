@@ -13,7 +13,6 @@
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; folly/optimized/LogName.cpp.ll
 ; git/optimized/show-branch.ll
 ; gromacs/optimized/pdb2gmx.cpp.ll
 ; hdf5/optimized/h5diff_array.c.ll
@@ -36,6 +35,7 @@
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/vmstat.ll
 ; lua/optimized/lcode.ll
+; lvgl/optimized/lv_string_builtin.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; mimalloc/optimized/options.c.ll
 ; minetest/optimized/particles.cpp.ll

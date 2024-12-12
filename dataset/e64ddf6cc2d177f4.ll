@@ -29,9 +29,10 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaPat2.c.ll
 ; linux/optimized/vt.ll
+; lvgl/optimized/lv_circle_buf.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; raylib/optimized/rmodels.c.ll

@@ -1,7 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	cmovel	%edx, %esi
-	testb	%sil, %sil
+	testb	$4, %sil
 	sete	%al
 	retq
 func000000000000000c:                   # @func000000000000000c

@@ -11,7 +11,7 @@ entry:
   ret i64 %4
 }
 
-; 32 occurrences:
+; 34 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/nghttp2_frame.c.ll
@@ -43,6 +43,8 @@ entry:
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; tls-rs/optimized/4klah4jfox7oqufu.ll
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
@@ -53,7 +55,7 @@ entry:
   ret i64 %4
 }
 
-; 56 occurrences:
+; 57 occurrences:
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/udf.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
@@ -103,6 +105,7 @@ entry:
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -119,7 +122,7 @@ entry:
   ret i64 %4
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; cpython/optimized/longobject.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -146,6 +149,7 @@ entry:
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wireshark/optimized/wtap.c.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i16 %1) #0 {
 entry:

@@ -13,7 +13,7 @@ entry:
   %3 = and i8 %2, 8
   %4 = zext nneg i8 %3 to i16
   %5 = and i16 %1, 4096
-  %6 = or disjoint i16 %5, %0
+  %6 = or disjoint i16 %0, %5
   %7 = or disjoint i16 %6, %4
   ret i16 %7
 }

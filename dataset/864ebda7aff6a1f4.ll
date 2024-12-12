@@ -19,7 +19,7 @@
 ; mold/optimized/icf.cc.SPARC64.cc.ll
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000066(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 3
   %4 = icmp slt i32 %1, 0
@@ -47,7 +47,7 @@ entry:
 ; mold/optimized/icf.cc.SPARC64.cc.ll
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000046(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 6
   %4 = icmp slt i32 %1, 0
@@ -59,7 +59,7 @@ entry:
 ; redis/optimized/sentinel.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -64
   %4 = icmp eq i32 %1, 0

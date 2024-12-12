@@ -18,8 +18,8 @@ func0000000000000032:                   # @func0000000000000032
 	notl	%edx
 	movl	%edi, %eax
 	orl	$4, %eax
-	testb	$1, %sil
-	cmovnel	%edi, %eax
 	testb	$6, %dl
+	cmovnel	%edi, %eax
+	testb	$1, %sil
 	cmovnel	%edi, %eax
 	retq

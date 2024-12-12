@@ -9,7 +9,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
-func00000000000001a8:                   # @func00000000000001a8
+func0000000000000348:                   # @func0000000000000348
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm2
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpltuw	.LCPI0_1(%rip), %xmm0, %k1

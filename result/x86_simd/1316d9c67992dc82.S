@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k0
 	knotb	%k0, %k0

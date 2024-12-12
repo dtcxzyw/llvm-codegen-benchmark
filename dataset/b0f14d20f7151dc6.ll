@@ -30,12 +30,14 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
+; c3c/optimized/target.c.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
+; php/optimized/pcre2_dfa_match.ll
 ; regex-rs/optimized/33whcn8n29l9c6ys.ll
 ; regex-rs/optimized/4sqmacerw61c696o.ll
 ; yosys/optimized/fstapi.ll
@@ -48,7 +50,7 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; glog/optimized/logging.cc.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
@@ -61,7 +63,6 @@ entry:
 ; openjdk/optimized/jfrTraceIdKlassQueue.ll
 ; php/optimized/cdf_time.ll
 ; postgres/optimized/pgstat_io.ll
-; regex-rs/optimized/4sqmacerw61c696o.ll
 ; rocksdb/optimized/version_edit_handler.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {
@@ -72,7 +73,7 @@ entry:
   ret i1 %5
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/bmcBmci.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -82,6 +83,8 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/sscClass.c.ll
 ; abc/optimized/sscCore.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; casadi/optimized/mx.cpp.ll
 ; cpython/optimized/obmalloc.ll
 ; cvc5/optimized/theory_model.cpp.ll
@@ -98,7 +101,6 @@ entry:
 ; mimalloc/optimized/arena.c.ll
 ; openjdk/optimized/loopnode.ll
 ; postgres/optimized/pg_locale.ll
-; quickjs/optimized/quickjs.ll
 ; spike/optimized/socketif.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; velox/optimized/URLFunctions.cpp.ll
@@ -150,23 +152,7 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; c3c/optimized/target.c.ll
-; hyperscan/optimized/ng_violet.cpp.ll
-; libwebp/optimized/predictor_enc.c.ll
-; openusd/optimized/frustum.cpp.ll
-; openusd/optimized/shaderProperty.cpp.ll
-; php/optimized/pcre2_dfa_match.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = or i1 %1, %2
-  %4 = icmp ugt i64 %0, 3
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 18 occurrences:
+; 33 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; lief/optimized/asn1parse.c.ll
@@ -185,6 +171,21 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; rust-analyzer-rs/optimized/2hvuxgck7heujc9c.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2xv7gcyhgnpwydetyfctbxzbn.ll
+; zed-rs/optimized/4h84anocrn0e2zexjpu5utgbx.ll
+; zed-rs/optimized/655upmhuk5u49g6wx9tv0hih8.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/9ydmyaey957xyuywtl3djlzml.ll
+; zed-rs/optimized/anp459b0r1vn8pok0ofwmqun4.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i1 %1, i1 %2) #0 {
 entry:
@@ -206,6 +207,18 @@ define i1 @func0000000000000006(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = icmp slt i64 %0, 0
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; hyperscan/optimized/ng_violet.cpp.ll
+; openusd/optimized/shaderProperty.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, 8
+  %4 = or i1 %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
 }

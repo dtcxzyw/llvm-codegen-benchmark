@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -8,7 +8,6 @@
 ; freetype/optimized/ftcache.c.ll
 ; hdf5/optimized/H5EAcache.c.ll
 ; hdf5/optimized/H5EAiblock.c.ll
-; linux/optimized/tbfadt.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
@@ -20,14 +19,13 @@
 define i64 @func000000000000000c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
-; faiss/optimized/ProductQuantizer.cpp.ll
 ; hdf5/optimized/H5EAcache.c.ll
 ; hdf5/optimized/H5EAdblock.c.ll
 ; hdf5/optimized/H5FAcache.c.ll
@@ -43,11 +41,13 @@ entry:
 ; ruby/optimized/addr2line.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -93,7 +93,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -107,16 +107,15 @@ entry:
 define i64 @func000000000000001f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; freetype/optimized/cff.c.ll
-; linux/optimized/tbfadt.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
@@ -124,15 +123,15 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
 ; 6 occurrences:
 ; freetype/optimized/ftbitmap.c.ll
 ; llvm/optimized/DWARFAbbreviationDeclaration.cpp.ll
-; miniaudio/optimized/unity.c.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
@@ -140,8 +139,8 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -155,8 +154,8 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -168,8 +167,8 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

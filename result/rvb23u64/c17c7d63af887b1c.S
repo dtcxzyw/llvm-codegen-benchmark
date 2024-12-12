@@ -1,6 +1,11 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	and	a1, a1, a2
 	sltiu	a0, a0, 2
+	or	a0, a0, a1
+	ret
+func0000000000000008:                   # @func0000000000000008
+	and	a1, a1, a2
+	sltiu	a0, a0, 4
 	or	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
@@ -29,6 +34,12 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000014:                   # @func0000000000000014
 	and	a1, a1, a2
 	slti	a0, a0, 3
+	xori	a0, a0, 1
+	or	a0, a0, a1
+	ret
+func0000000000000030:                   # @func0000000000000030
+	and	a1, a1, a2
+	sltiu	a0, a0, 2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

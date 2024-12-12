@@ -5,13 +5,13 @@ func000000000000000c:                   // @func000000000000000c
 	add	x0, x0, w8, uxtw #2
 	ret
                                         // -- End function
-func000000000000000a:                   // @func000000000000000a
+func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	orr	w8, w1, #0x1
 	add	x0, x0, w8, uxtw #3
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	orr	w8, w1, #0x1
 	add	x0, x0, w8, uxtw #2

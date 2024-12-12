@@ -1,6 +1,5 @@
 
-; 43 occurrences:
-; clamav/optimized/phishcheck.c.ll
+; 41 occurrences:
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
@@ -19,7 +18,6 @@
 ; linux/optimized/rscalc.ll
 ; linux/optimized/sem.ll
 ; linux/optimized/tables.ll
-; linux/optimized/tbxfroot.ll
 ; linux/optimized/trace_output.ll
 ; linux/optimized/utcksum.ll
 ; linux/optimized/utresrc.ll
@@ -131,11 +129,10 @@ entry:
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000048(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw ptr, ptr %0, i64 %1
-  %3 = icmp ugt ptr %2, %0
-  ret i1 %3
+  %2 = icmp sgt i64 %1, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

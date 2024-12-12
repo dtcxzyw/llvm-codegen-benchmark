@@ -1,13 +1,14 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 5.000000e-01
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   %4 = select i1 %3, float %2, float %0
   ret float %4
 }
@@ -51,7 +52,7 @@ entry:
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3E112E0BE0000000
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   %4 = select i1 %3, float %2, float %0
   ret float %4
 }
@@ -63,7 +64,7 @@ entry:
 define float @func000000000000000a(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3F70101020000000
-  %3 = fcmp oge float %2, %0
+  %3 = fcmp ole float %0, %2
   %4 = select i1 %3, float %2, float %0
   ret float %4
 }

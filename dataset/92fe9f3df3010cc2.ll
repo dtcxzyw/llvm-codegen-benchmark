@@ -28,17 +28,6 @@ entry:
 }
 
 ; 1 occurrences:
-; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = add i64 %1, %0
-  %5 = sub i64 %3, %4
-  ret i64 %5
-}
-
-; 1 occurrences:
 ; abc/optimized/luckyFast16.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
@@ -59,17 +48,6 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add i64 %1, %0
   %5 = sub i64 %3, %4
-  ret i64 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/ThreadSafety.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %0
-  %5 = sub nuw nsw i64 %3, %4
   ret i64 %5
 }
 

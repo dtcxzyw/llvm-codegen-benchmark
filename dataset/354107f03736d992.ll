@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 27 occurrences:
 ; darktable/optimized/introspection_bloom.c.ll
 ; darktable/optimized/introspection_colormapping.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
@@ -8,16 +8,13 @@
 ; darktable/optimized/introspection_lowlight.c.ll
 ; darktable/optimized/introspection_sharpen.c.ll
 ; fmt/optimized/chrono-test.cc.ll
+; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
+; mixbox/optimized/mixbox.ll
 ; nanosvg/optimized/nanosvg.ll
-; ncnn/optimized/roialign.cpp.ll
-; ncnn/optimized/roialign_x86.cpp.ll
-; ncnn/optimized/roialign_x86_avx.cpp.ll
-; ncnn/optimized/roialign_x86_avx512.cpp.ll
-; ncnn/optimized/roialign_x86_fma.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/filter.cpp.ll

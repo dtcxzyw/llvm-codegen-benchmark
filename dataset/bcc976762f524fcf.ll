@@ -1,7 +1,8 @@
 
-; 43 occurrences:
+; 44 occurrences:
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
+; darktable/optimized/introspection_tonemap.cc.ll
 ; gromacs/optimized/kernel_ref.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; meshlab/optimized/glarea.cpp.ll

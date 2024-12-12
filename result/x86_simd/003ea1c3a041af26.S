@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	248                             # 0xf8
 .LCPI1_1:
 	.long	8                               # 0x8
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm0, %k1
 	vpord	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

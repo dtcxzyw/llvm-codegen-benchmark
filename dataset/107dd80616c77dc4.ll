@@ -1,6 +1,8 @@
 
-; 1 occurrences:
+; 3 occurrences:
 ; ruby/optimized/sprintf.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000060(i32 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -60,6 +62,19 @@ entry:
   ret i32 %6
 }
 
+; 2 occurrences:
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; Function Attrs: nounwind
+define i32 @func000000000000006d(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp slt i32 %2, 0
+  %4 = select i1 %3, i32 %0, i32 0
+  %5 = trunc nuw nsw i64 %1 to i32
+  %6 = add nsw i32 %4, %5
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; linux/optimized/irqdesc.ll
 ; Function Attrs: nounwind
@@ -68,6 +83,18 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %0, i32 -28
   %5 = trunc i64 %1 to i32
+  %6 = add i32 %4, %5
+  ret i32 %6
+}
+
+; 1 occurrences:
+; linux/optimized/irqdesc.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001c(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 %0, i32 -28
+  %5 = trunc nuw nsw i64 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6
 }

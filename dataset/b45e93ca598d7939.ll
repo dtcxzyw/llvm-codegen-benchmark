@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; icu/optimized/numparse_impl.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
@@ -11,6 +11,7 @@
 ; openjdk/optimized/jfrMemorySizer.ll
 ; openjdk/optimized/metaspaceDCmd.ll
 ; yosys/optimized/extract_fa.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1, i8 %2) #0 {
 entry:

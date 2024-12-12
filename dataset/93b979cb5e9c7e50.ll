@@ -23,7 +23,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = select i1 %1, i64 53, i64 24
   %6 = ashr i64 %4, %5
   ret i64 %6

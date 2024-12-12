@@ -7,9 +7,9 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000008:                   # @func0000000000000008
 	leaq	57(%rsi,%rdi), %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	leaq	16(%rsi,%rdi), %rax
-	retq
 func0000000000000004:                   # @func0000000000000004
+	leaq	-8(%rsi,%rdi), %rax
+	retq
+func000000000000000c:                   # @func000000000000000c
 	leaq	16(%rsi,%rdi), %rax
 	retq

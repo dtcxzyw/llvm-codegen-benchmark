@@ -1,6 +1,8 @@
 
-; 22 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/sema_asm.c.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; linux/optimized/dma-iommu.ll
@@ -30,7 +32,7 @@ entry:
   ret i64 %2
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; llvm/optimized/AArch64AsmBackend.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -43,6 +45,7 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
+; lvgl/optimized/lv_freetype_glyph.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/plic.ll
 ; Function Attrs: nounwind

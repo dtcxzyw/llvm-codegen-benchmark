@@ -3,7 +3,7 @@
 ; clamav/optimized/aspack.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 8, %2
   %4 = lshr i32 %1, %3
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 16, %2
   %4 = lshr i32 %1, %3

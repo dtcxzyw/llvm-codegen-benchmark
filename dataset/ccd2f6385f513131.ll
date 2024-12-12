@@ -25,7 +25,7 @@ entry:
   ret i32 %5
 }
 
-; 85 occurrences:
+; 84 occurrences:
 ; abc/optimized/extraUtilPerm.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; git/optimized/delta-islands.ll
@@ -97,7 +97,6 @@ entry:
 ; qemu/optimized/hw_display_ati.c.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; qemu/optimized/linux-user_thunk.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1r2x5absurxbrq18.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
@@ -120,7 +119,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_canvas.ll
 ; mitsuba3/optimized/func.cpp.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; Function Attrs: nounwind
@@ -156,7 +156,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 5190199
   %4 = add nuw nsw i32 %3, %1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -167,7 +167,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 6673113
   %4 = add i32 %3, %1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -178,7 +178,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1024
   %4 = add nsw i32 %3, %1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

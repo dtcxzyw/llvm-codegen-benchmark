@@ -16,7 +16,7 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; clamav/optimized/Bcj2.c.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/unsp.c.ll
@@ -27,7 +27,6 @@ entry:
 ; cmake/optimized/lzma_encoder.c.ll
 ; linux/optimized/decompress_unlzma.ll
 ; linux/optimized/xz_dec_lzma2.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; Function Attrs: nounwind

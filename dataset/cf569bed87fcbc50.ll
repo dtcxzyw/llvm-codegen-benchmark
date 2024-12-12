@@ -1,5 +1,18 @@
 
 ; 3 occurrences:
+; abc/optimized/solver.c.ll
+; abc/optimized/xsatSolver.c.ll
+; linux/optimized/tcp_input.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %1, %2
+  %4 = select i1 %3, i32 15, i32 7
+  %5 = and i32 %4, %0
+  ret i32 %5
+}
+
+; 3 occurrences:
 ; opencv/optimized/array.cpp.ll
 ; stockfish/optimized/position.ll
 ; stockfish/optimized/search.ll
@@ -32,18 +45,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = select i1 %3, i32 2, i32 0
-  %5 = and i32 %4, %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; linux/optimized/tcp_input.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %1, %2
-  %4 = select i1 %3, i32 52, i32 4
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

@@ -1,8 +1,9 @@
 
-; 217 occurrences:
+; 220 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; assimp/optimized/FindDegenerates.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/message.ll
 ; brotli/optimized/block_splitter.c.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
 ; cvc5/optimized/cegis.cpp.ll
@@ -86,6 +87,7 @@
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/ConstraintSolver.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/game.cpp.ll
@@ -131,7 +133,6 @@
 ; openmpi/optimized/pmix_hash_table.ll
 ; openssl/optimized/libdefault-lib-krb5kdf.ll
 ; openssl/optimized/libdefault-lib-scrypt.ll
-; openssl/optimized/quicfaultstest-bin-quicfaultstest.ll
 ; openusd/optimized/mallocTag.cpp.ll
 ; php/optimized/hash.ll
 ; postgres/optimized/tsgistidx.ll
@@ -216,6 +217,8 @@
 ; z3/optimized/static_matrix.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/value_generator.cpp.ll
+; zed-rs/optimized/1mwyngh2duuoqbqyg0d7k37yf.ll
+; zed-rs/optimized/dkpymwf72m1w0twqv9sm36jup.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {

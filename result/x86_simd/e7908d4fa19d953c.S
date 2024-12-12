@@ -15,7 +15,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
 	vpcmpltub	.LCPI0_0(%rip), %xmm0, %k1
@@ -25,7 +25,7 @@ func0000000000000034:                   # @func0000000000000034
 	retq
 .LCPI1_0:
 	.long	255                             # 0xff
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm1            # ymm1 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
@@ -51,7 +51,7 @@ func000000000000001c:                   # @func000000000000001c
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
 	vpcmpltub	.LCPI2_0(%rip), %xmm0, %k1

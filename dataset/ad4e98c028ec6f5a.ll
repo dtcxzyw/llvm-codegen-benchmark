@@ -35,7 +35,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 24
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = udiv i64 %6, 3
   ret i64 %7
 }

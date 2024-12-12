@@ -80,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
   %4 = icmp ne i32 %3, %0
@@ -99,33 +99,10 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; linux/optimized/intel_bw.ll
-; linux/optimized/isadma.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %1, %2
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; icu/optimized/collationiterator.ll
-; linux/optimized/input-mt.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 %1, %2
-  %4 = icmp slt i32 %3, %0
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; linux/optimized/xz_dec_lzma2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
   %4 = icmp ugt i32 %3, %0
@@ -147,10 +124,30 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationiterator.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 %1, %2
+  %4 = icmp slt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; icu/optimized/collationiterator.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %1, %2
   %4 = icmp sgt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %1, %2
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
@@ -158,7 +155,7 @@ entry:
 ; brotli/optimized/encode.c.ll
 ; brotli/optimized/metablock.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
   %4 = icmp eq i32 %3, %0

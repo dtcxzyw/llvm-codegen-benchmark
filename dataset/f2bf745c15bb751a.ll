@@ -16,7 +16,7 @@
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d1(i64 %0, i64 %1) #0 {
+define i32 @func00000000000001a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 2047
@@ -43,7 +43,7 @@ entry:
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 1792

@@ -20,7 +20,7 @@
 ; recastnavigation/optimized/MeshLoaderObj.cpp.ll
 ; recastnavigation/optimized/TestCase.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i32 %0) #0 {
+define i64 @func00000000000000a6(i32 %0) #0 {
 entry:
   %1 = mul nsw i32 %0, 5
   %2 = sext i32 %1 to i64
@@ -35,7 +35,7 @@ entry:
 ; opencv/optimized/optflowgf.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i32 %0) #0 {
+define i64 @func00000000000000e6(i32 %0) #0 {
 entry:
   %1 = mul nsw i32 %0, 3
   %2 = sext i32 %1 to i64

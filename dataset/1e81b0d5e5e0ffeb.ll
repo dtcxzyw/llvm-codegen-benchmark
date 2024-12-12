@@ -27,7 +27,7 @@ define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 14
   %3 = icmp eq i8 %2, 6
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

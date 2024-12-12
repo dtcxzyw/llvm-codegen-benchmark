@@ -8,26 +8,26 @@
 ; postgres/optimized/heapam.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = icmp eq i32 %3, 2
   %5 = icmp ne i32 %1, 16
   %6 = and i1 %4, %5
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; re2/optimized/parse.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000186(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2052
   %4 = icmp ne i32 %3, 4
   %5 = icmp slt i32 %1, 11
   %6 = and i1 %5, %4
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 
@@ -38,7 +38,7 @@ entry:
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65534
   %4 = icmp ne i32 %3, 65534
@@ -62,13 +62,13 @@ entry:
 ; postgres/optimized/jsonfuncs.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16
   %4 = icmp eq i32 %3, 0
   %5 = icmp ne i32 %1, 258
   %6 = and i1 %5, %4
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 
@@ -98,7 +98,7 @@ entry:
 ; quantlib/optimized/unitedkingdom.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = icmp eq i32 %3, 2
@@ -123,7 +123,7 @@ entry:
 ; wireshark/optimized/packet-ip.c.ll
 ; wireshark/optimized/packet-iso14443.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 918272
   %4 = icmp ne i32 %3, 0
@@ -137,33 +137,33 @@ entry:
 ; quantlib/optimized/australia.ll
 ; quantlib/optimized/canada.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -3
   %4 = icmp eq i32 %3, 8
   %5 = icmp slt i32 %1, 8
   %6 = and i1 %5, %4
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; quantlib/optimized/southkorea.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = icmp eq i32 %3, 2
   %5 = icmp sgt i32 %1, 2021
   %6 = and i1 %4, %5
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; glslang/optimized/Initialize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1310720
   %4 = icmp eq i32 %3, 1048576
@@ -177,52 +177,26 @@ entry:
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 127
   %4 = icmp ne i32 %3, 69
   %5 = icmp ult i32 %1, -10
   %6 = and i1 %4, %5
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; postgres/optimized/jsonfuncs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %4 = icmp ne i32 %3, 0
   %5 = icmp sgt i32 %1, 0
   %6 = and i1 %4, %5
-  %7 = and i1 %6, %0
-  ret i1 %7
-}
-
-; 1 occurrences:
-; icu/optimized/collationdatabuilder.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a4(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 31
-  %4 = icmp ult i32 %3, 29
-  %5 = icmp sgt i32 %1, 0
-  %6 = and i1 %4, %5
-  %7 = and i1 %6, %0
-  ret i1 %7
-}
-
-; 1 occurrences:
-; icu/optimized/ucptrie.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 2
-  %4 = icmp eq i32 %3, 0
-  %5 = icmp ult i32 %1, 3
-  %6 = and i1 %5, %4
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 

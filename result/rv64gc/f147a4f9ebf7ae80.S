@@ -1,3 +1,10 @@
+func000000000000001b:                   # @func000000000000001b
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 305
+	add	a0, a0, a1
+	addiw	a0, a0, 308
+	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 63
 	srai	a0, a0, 63

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 18
   %3 = xor i64 %2, %1
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 18
   %3 = xor i64 %2, %1

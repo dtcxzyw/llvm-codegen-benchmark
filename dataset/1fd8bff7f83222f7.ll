@@ -1,5 +1,5 @@
 
-%class.btVector3.2705429 = type { [4 x float] }
+%class.btVector3.2818144 = type { [4 x float] }
 
 ; 37 occurrences:
 ; bullet3/optimized/btGImpactBvh.ll
@@ -13,7 +13,6 @@
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -38,14 +37,15 @@
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000031a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000061f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 2
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr nusw [3 x %class.btVector3.2705429], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw [3 x %class.btVector3.2818144], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

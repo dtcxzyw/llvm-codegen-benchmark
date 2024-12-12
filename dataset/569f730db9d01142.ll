@@ -15,7 +15,7 @@ entry:
   ret i8 %2
 }
 
-; 117 occurrences:
+; 124 occurrences:
 ; linux/optimized/hid-ntrig.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
@@ -94,7 +94,6 @@ entry:
 ; llvm/optimized/RISCVCallLowering.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/RegisterScavenging.cpp.ll
@@ -133,6 +132,14 @@ entry:
 ; mitsuba3/optimized/qmc.cpp.ll
 ; openjdk/optimized/chunklevel.ll
 ; rust-analyzer-rs/optimized/lt4f7k28xei9pok.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/ch3ywh4ed1oz4ae4c1dkspuyz.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/dd8ztmg64g4x9ypkzwkofy6vi.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000d(i64 %0) #0 {
 entry:
@@ -141,7 +148,7 @@ entry:
   ret i8 %2
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; cpython/optimized/dictobject.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -172,6 +179,7 @@ entry:
 ; spike/optimized/s_shiftRightJam256M.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000f(i64 %0) #0 {
 entry:
@@ -182,6 +190,7 @@ entry:
 
 ; 39 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -190,7 +199,6 @@ entry:
 ; eastl/optimized/EATest.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; eastl/optimized/TestCharTraits.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
@@ -201,7 +209,6 @@ entry:
 ; eastl/optimized/TestOptional.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; eastl/optimized/TestVariant.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
@@ -215,6 +222,7 @@ entry:
 ; llvm/optimized/InstrProfReader.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
+; lvgl/optimized/lv_mem_core_builtin.ll
 ; openspiel/optimized/amazons.cc.ll
 ; proxygen/optimized/HPACKDecodeBuffer.cpp.ll
 ; ring-rs/optimized/36n9a21mmta9vg69.ll
@@ -228,7 +236,8 @@ entry:
   ret i8 %2
 }
 
-; 37 occurrences:
+; 39 occurrences:
+; boost/optimized/src.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -266,6 +275,7 @@ entry:
 ; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; velox/optimized/StackTrace.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000b(i64 %0) #0 {
 entry:
@@ -314,24 +324,19 @@ entry:
   ret i8 %2
 }
 
-; 2 occurrences:
+; 7 occurrences:
 ; eastl/optimized/TestFixedString.cpp.ll
 ; ockam-rs/optimized/3pv8r5vqgt8gdr9t.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000009(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i8
   %2 = sub nsw i8 2, %1
-  ret i8 %2
-}
-
-; 1 occurrences:
-; eastl/optimized/TestRingBuffer.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000008(i64 %0) #0 {
-entry:
-  %1 = trunc nuw i64 %0 to i8
-  %2 = sub i8 23, %1
   ret i8 %2
 }
 

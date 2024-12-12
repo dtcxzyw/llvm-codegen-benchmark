@@ -1,4 +1,4 @@
-func0000000000000161:                   # @func0000000000000161
+func00000000000002c1:                   # @func00000000000002c1
 	li	a3, 32
 	czero.nez	a3, a3, a2
 	or	a2, a2, a3
@@ -7,7 +7,7 @@ func0000000000000161:                   # @func0000000000000161
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000003c1:                   # @func00000000000003c1
 	li	a3, 8
 	czero.nez	a3, a3, a2
 	or	a2, a2, a3
@@ -16,7 +16,7 @@ func00000000000001e1:                   # @func00000000000001e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000171:                   # @func0000000000000171
+func00000000000002e1:                   # @func00000000000002e1
 	li	a3, 8
 	czero.nez	a3, a3, a2
 	or	a2, a2, a3
@@ -25,7 +25,7 @@ func0000000000000171:                   # @func0000000000000171
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000341:                   # @func0000000000000341
 	li	a3, 32
 	czero.nez	a3, a3, a2
 	or	a2, a2, a3
@@ -34,7 +34,7 @@ func00000000000001a1:                   # @func00000000000001a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000121:                   # @func0000000000000121
+func0000000000000241:                   # @func0000000000000241
 	li	a3, 4
 	czero.nez	a3, a3, a2
 	or	a2, a2, a3
@@ -43,7 +43,7 @@ func0000000000000121:                   # @func0000000000000121
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001b1:                   # @func00000000000001b1
+func0000000000000361:                   # @func0000000000000361
 	li	a3, 8
 	czero.nez	a3, a3, a2
 	or	a2, a2, a3
@@ -52,7 +52,7 @@ func00000000000001b1:                   # @func00000000000001b1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001f1:                   # @func00000000000001f1
+func00000000000003e1:                   # @func00000000000003e1
 	li	a3, 4
 	czero.nez	a3, a3, a2
 	or	a2, a2, a3

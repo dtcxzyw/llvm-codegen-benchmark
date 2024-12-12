@@ -1,5 +1,8 @@
 
-; 33 occurrences:
+; 35 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/extract.cpp.ll
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
 ; cmake/optimized/SystemInformation.cxx.ll
@@ -12,7 +15,6 @@
 ; folly/optimized/Uri.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; hyperscan/optimized/rose_build_engine_blob.cpp.ll
-; linux/optimized/intel_engine_user.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/ExprEngine.cpp.ll

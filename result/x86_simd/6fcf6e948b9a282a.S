@@ -1,6 +1,6 @@
 func0000000000000025:                   # @func0000000000000025
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
-	vpaddq	%ymm0, %ymm2, %ymm2
+	vpaddq	%ymm2, %ymm0, %ymm2
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrq	$1, %xmm3, %rax
 	vextracti128	$1, %ymm1, %xmm4

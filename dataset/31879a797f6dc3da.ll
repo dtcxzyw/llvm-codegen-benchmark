@@ -1,10 +1,11 @@
 
-; 115 occurrences:
+; 117 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/ivyHaig.c.ll
 ; abc/optimized/pdrTsim.c.ll
 ; abc/optimized/saigSynch.c.ll
+; boost/optimized/numeric.ll
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/lzma_encoder_presets.c.ll
 ; cmake/optimized/pipe.c.ll
@@ -32,17 +33,16 @@
 ; icu/optimized/rulebasedcollator.ll
 ; libuv/optimized/pipe.c.ll
 ; lief/optimized/nist_kw.c.ll
+; linux/optimized/drbg.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/exit.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/hda_auto_parser.ll
-; linux/optimized/i915_debugfs.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_hdmi.ll
-; linux/optimized/mii.ll
 ; linux/optimized/net.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/pci.ll
@@ -66,6 +66,8 @@
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; luajit/optimized/buildvm.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; ncnn/optimized/concat_x86_avx.cpp.ll
 ; ncnn/optimized/concat_x86_fma.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
@@ -122,19 +124,6 @@ entry:
   %3 = icmp eq i32 %2, 2064
   %4 = select i1 %3, i32 2, i32 0
   %5 = select i1 %0, i32 1, i32 %4
-  ret i32 %5
-}
-
-; 2 occurrences:
-; mitsuba3/optimized/x86emithelper.cpp.ll
-; opencv/optimized/deriv.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 254
-  %3 = icmp ult i32 %2, 33
-  %4 = select i1 %3, i32 536871273, i32 1073742193
-  %5 = select i1 %0, i32 268435809, i32 %4
   ret i32 %5
 }
 

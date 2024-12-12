@@ -1,5 +1,6 @@
 
-; 71 occurrences:
+; 68 occurrences:
+; abc/optimized/abcFx.c.ll
 ; abc/optimized/bmcCexCare.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/sbdCut2.c.ll
@@ -32,14 +33,12 @@
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; openjdk/optimized/jvmFlagConstraintsCompiler.ll
-; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; openssl/optimized/bftest-bin-bftest.ll
 ; openssl/optimized/ca_internals_test-bin-apps.ll
 ; openssl/optimized/cmp_ctx_test-bin-cmp_ctx_test.ll
 ; openssl/optimized/ectest-bin-ectest.ll
 ; openssl/optimized/exdatatest-bin-exdatatest.ll
 ; openssl/optimized/hpke_test-bin-hpke_test.ll
-; openssl/optimized/igetest-bin-igetest.ll
 ; openssl/optimized/libapps-lib-apps.ll
 ; openssl/optimized/libcrypto-lib-curve448.ll
 ; openssl/optimized/libcrypto-lib-siv128.ll
@@ -47,10 +46,8 @@
 ; openssl/optimized/libcrypto-shlib-siv128.ll
 ; openssl/optimized/libssl-lib-dtls_meth.ll
 ; openssl/optimized/libssl-shlib-dtls_meth.ll
-; openssl/optimized/rc2test-bin-rc2test.ll
 ; openssl/optimized/sslapitest-bin-filterprov.ll
 ; openssl/optimized/threadstest-bin-threadstest.ll
-; openssl/optimized/x509_time_test-bin-x509_time_test.ll
 ; openusd/optimized/decodeframe.c.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_match.ll
@@ -98,7 +95,7 @@ entry:
   ret i32 %4
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/llb2Flow.c.ll
 ; abc/optimized/sbdWin.c.ll
@@ -133,7 +130,6 @@ entry:
 ; openssl/optimized/openssl-bin-passwd.ll
 ; openssl/optimized/openssl-bin-s_client.ll
 ; openssl/optimized/quic_multistream_test-bin-quic_multistream_test.ll
-; php/optimized/mmap.ll
 ; qemu/optimized/system_runstate.c.ll
 ; redis/optimized/networking.ll
 ; redis/optimized/server.ll
@@ -189,9 +185,7 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
-; opencv/optimized/edge_drawing.cpp.ll
-; postgres/optimized/regcomp.ll
+; 2 occurrences:
 ; postgres/optimized/relcache.ll
 ; wireshark/optimized/packet-pw-atm.c.ll
 ; Function Attrs: nounwind

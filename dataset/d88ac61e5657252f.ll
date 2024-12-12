@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; grpc/optimized/frame_settings.cc.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; libjpeg-turbo/optimized/jfdctint.c.ll
@@ -23,6 +23,7 @@
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -33,7 +34,7 @@ entry:
   ret i64 %6
 }
 
-; 332 occurrences:
+; 330 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -53,6 +54,7 @@ entry:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -228,9 +230,6 @@ entry:
 ; php/optimized/stream.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -425,11 +424,35 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000035(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = zext nneg i32 %1 to i64
+  %5 = sub nsw i64 %4, %3
+  %6 = add nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
 ; linux/optimized/pipe.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
+  %4 = zext nneg i32 %1 to i64
+  %5 = sub nsw i64 %4, %3
+  %6 = add i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; delta-rs/optimized/11w0at10aiwuq3yr.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
   %4 = zext nneg i32 %1 to i64
   %5 = sub nsw i64 %4, %3
   %6 = add i64 %5, %0

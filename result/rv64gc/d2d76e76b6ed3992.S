@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	-8737931403336103397            # 0x86bca1af286bca1b
-func0000000000000151:                   # @func0000000000000151
+func00000000000003a1:                   # @func00000000000003a1
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
 	sub	a1, a1, a2

@@ -47,10 +47,9 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; icu/optimized/ustrtrns.ll
 ; imgui/optimized/imgui.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/utf8.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll

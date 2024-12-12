@@ -12,8 +12,8 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, double %1, double %2) #0 {
 entry:
-  %3 = fneg double %1
-  %.neg = fmul double %3, %2
+  %3 = fneg double %2
+  %.neg = fmul double %1, %3
   %4 = select i1 %0, double %.neg, double -1.000000e+00
   ret double %4
 }

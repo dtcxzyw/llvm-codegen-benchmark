@@ -4,13 +4,13 @@
 ; libuv/optimized/pipe.c.ll
 ; node/optimized/pipe.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1, i1 %2) #0 {
+define i32 @func0000000000000068(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 292
   %4 = or disjoint i32 %3, 146
-  %5 = icmp ult i32 %1, 2
+  %5 = icmp samesign ult i32 %1, 2
   %6 = select i1 %5, i32 %3, i32 %4
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 
@@ -19,7 +19,7 @@ entry:
 ; linux/optimized/tg3.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1, i1 %2) #0 {
+define i32 @func0000000000000043(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 32, i32 0
   %4 = or disjoint i32 %3, 128

@@ -27,7 +27,7 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000146(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, 0
   %4 = and i1 %3, %0
@@ -36,13 +36,27 @@ entry:
   ret i1 %6
 }
 
+; 3 occurrences:
+; abc/optimized/abcDfs.c.ll
+; opencv/optimized/morph.dispatch.cpp.ll
+; openspiel/optimized/checkers.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000154(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sgt i32 %1, -1
+  %4 = and i1 %3, %0
+  %5 = icmp samesign ult i32 %1, %2
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; stockfish/optimized/thread.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, -31506
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp slt i32 %1, %2
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -54,7 +68,7 @@ entry:
 ; stockfish/optimized/thread.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000186(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, -32001
   %4 = and i1 %3, %0
@@ -66,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000144(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, -1
   %4 = and i1 %3, %0
@@ -78,24 +92,11 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a7(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000147(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, 0
   %4 = and i1 %3, %0
   %5 = icmp sle i32 %1, %2
-  %6 = select i1 %4, i1 %5, i1 false
-  ret i1 %6
-}
-
-; 2 occurrences:
-; opencv/optimized/stereo_binary_bm.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000086(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %1, 3
-  %4 = and i1 %3, %0
-  %5 = icmp slt i32 %1, %2
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }

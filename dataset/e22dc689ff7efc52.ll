@@ -3,12 +3,12 @@
 ; meshlab/optimized/parameters.cpp.ll
 ; qemu/optimized/hw_usb_dev-audio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i64 8, i64 2
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -29,7 +29,7 @@ entry:
 ; gromacs/optimized/gmx_tcaf.cpp.ll
 ; meshlab/optimized/parameters.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i64 6, i64 4

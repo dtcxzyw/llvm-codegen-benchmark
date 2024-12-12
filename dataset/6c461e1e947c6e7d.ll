@@ -1,10 +1,9 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
-; slurm/optimized/srun_job.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0) #0 {
+define i64 @func0000000000000026(i64 %0) #0 {
 entry:
   %1 = mul nsw i64 %0, 1000
   %2 = icmp slt i64 %0, 9223372036854775
@@ -29,7 +28,7 @@ entry:
 ; llvm/optimized/GCOVProfiling.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i64 %0) #0 {
+define i64 @func0000000000000044(i64 %0) #0 {
 entry:
   %1 = mul nuw i64 %0, 1000
   %2 = icmp ult i64 %0, 18446744073709551
@@ -44,7 +43,7 @@ entry:
 ; grpc/optimized/xds_api.cc.ll
 ; grpc/optimized/xds_common_types.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0) #0 {
+define i64 @func000000000000002a(i64 %0) #0 {
 entry:
   %1 = mul nsw i64 %0, 1000
   %2 = icmp sgt i64 %0, -9223372036854775

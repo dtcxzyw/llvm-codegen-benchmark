@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 60 occurrences:
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -7,13 +7,11 @@
 ; darktable/optimized/introspection_colortransfer.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; flatbuffers/optimized/reflection.cpp.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/dstein.cpp.ll
 ; gromacs/optimized/dsymv.cpp.ll
 ; gromacs/optimized/dsyr2.cpp.ll
 ; gromacs/optimized/dsyr2k.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
 ; gromacs/optimized/sstein.cpp.ll
 ; gromacs/optimized/ssymv.cpp.ll
@@ -30,6 +28,8 @@
 ; linux/optimized/printk.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/smpboot.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_refr.ll
 ; minetest/optimized/noise.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -44,11 +44,8 @@
 ; oiio/optimized/Writer.cpp.ll
 ; oiio/optimized/bmpoutput.cpp.ll
 ; oiio/optimized/iffoutput.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dggsvp3.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dorbdb.c.ll
-; openblas/optimized/dorghr.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/freak.cpp.ll
@@ -98,7 +95,7 @@ entry:
   ret i32 %5
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; icu/optimized/vtzone.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; ncnn/optimized/deconvolution.cpp.ll
@@ -112,7 +109,6 @@ entry:
 ; ncnn/optimized/deconvolutiondepthwise1d.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise3d.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dlaeda.c.ll
 ; openblas/optimized/dlalsd.c.ll
@@ -140,7 +136,7 @@ entry:
   ret i32 %5
 }
 
-; 69 occurrences:
+; 68 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecClass.c.ll
@@ -181,7 +177,6 @@ entry:
 ; openblas/optimized/dpbtrf.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
@@ -280,21 +275,22 @@ define i32 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = add nuw i32 %3, 1
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/extraUtilPath.c.ll
 ; graphviz/optimized/graph_generator.c.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = add nuw i32 %3, 1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

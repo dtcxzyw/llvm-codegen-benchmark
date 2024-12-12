@@ -11,11 +11,11 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %sil
 	movl	$1, %ecx
 	cmovel	%edx, %ecx
-	testb	$1, %dil
-	movl	$8, %eax
-	cmovel	%ecx, %eax
 	cmpl	$-1, %ecx
+	movl	$8, %eax
 	cmovnel	%ecx, %eax
+	testb	$1, %dil
+	cmovel	%ecx, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	testb	$1, %sil
@@ -26,7 +26,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	$28, %edx
 	cmovll	%edx, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	testb	$1, %sil
 	movl	$-22, %ecx
 	cmovel	%edx, %ecx

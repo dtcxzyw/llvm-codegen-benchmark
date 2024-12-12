@@ -1,18 +1,10 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	bic	v0.4h, #255, lsl #8
-	movi	v1.2d, #0000000000000000
 	mov	x8, #562958543486978            // =0x2000200020002
+                                        // kill: def $w0 killed $w0 def $x0
 	movk	x8, #517
 	movk	x8, #517, lsl #32
-	ushll	v0.4s, v0.4h, #0
-	ushll	v2.2d, v0.2s, #0
-	usubw2	v0.2d, v1.2d, v0.4s
-	dup	v1.2d, x8
-	neg	v2.2d, v2.2d
-	ushl	v0.2d, v1.2d, v0.2d
-	ushl	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	lsr	x8, x8, x0
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

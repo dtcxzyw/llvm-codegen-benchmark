@@ -32,10 +32,24 @@ func000000000000000c:                   # @func000000000000000c
 .LBB4_2:                                # %entry
 	mv	a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	sext.w	a2, a2
 	li	a3, 12
 	bltu	a3, a2, .LBB5_2
 	mv	a0, a1
 .LBB5_2:                                # %entry
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a2, a2
+	li	a3, 10
+	bltu	a2, a3, .LBB6_2
+	mv	a0, a1
+.LBB6_2:                                # %entry
+	ret
+func0000000000000008:                   # @func0000000000000008
+	sext.w	a2, a2
+	li	a3, 1
+	bltu	a3, a2, .LBB7_2
+	mv	a0, a1
+.LBB7_2:                                # %entry
 	ret

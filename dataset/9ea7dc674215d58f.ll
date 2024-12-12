@@ -1,5 +1,5 @@
 
-; 202 occurrences:
+; 204 occurrences:
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/addition.cpp.ll
 ; cvc5/optimized/alethe_let_binding.cpp.ll
@@ -202,6 +202,8 @@
 ; lightgbm/optimized/bin.cpp.ll
 ; llvm/optimized/CloneFunction.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
+; lvgl/optimized/lv_calendar.ll
+; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:

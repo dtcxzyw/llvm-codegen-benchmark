@@ -18,8 +18,3 @@ func000000000000000a:                   # @func000000000000000a
 	setns	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpb	$29, %sil
-	setae	%al
-	andb	%dil, %al
-	retq

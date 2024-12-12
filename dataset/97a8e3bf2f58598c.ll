@@ -24,7 +24,8 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/src.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
@@ -35,7 +36,7 @@ define i32 @func0000000000000006(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
   %2 = icmp slt i64 %1, 0
-  %3 = select i1 %2, i32 2, i32 1
+  %3 = select i1 %2, i32 4, i32 3
   ret i32 %3
 }
 

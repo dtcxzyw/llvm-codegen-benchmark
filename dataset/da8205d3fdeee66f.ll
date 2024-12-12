@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/bblif.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -7,6 +7,7 @@
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/SemaChecking.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; zstd/optimized/zstd_lazy.c.ll
@@ -15,12 +16,13 @@ define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 2
   %4 = select i1 %1, i32 %3, i32 1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
 ; 74 occurrences:
 ; abc/optimized/ioReadBlifMv.c.ll
+; boost/optimized/area.ll
 ; libquic/optimized/tls_cbc.c.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -30,7 +32,6 @@ entry:
 ; z3/optimized/bv2real_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll
@@ -99,7 +100,7 @@ define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -111,7 +112,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

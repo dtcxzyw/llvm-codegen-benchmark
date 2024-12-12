@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; cmake/optimized/cmProcess.cxx.ll
 ; mitsuba3/optimized/sensor.cpp.ll
@@ -8,7 +8,6 @@
 ; proj/optimized/affine.cpp.ll
 ; proj/optimized/healpix.cpp.ll
 ; proj/optimized/helmert.cpp.ll
-; proj/optimized/vertoffset.cpp.ll
 ; proj/optimized/wag3.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; stat-rs/optimized/11haqsqxcf11j877.ll

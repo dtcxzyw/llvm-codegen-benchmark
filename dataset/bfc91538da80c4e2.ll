@@ -285,6 +285,19 @@ entry:
   ret i32 %4
 }
 
+; 3 occurrences:
+; memcached/optimized/memcached-items.ll
+; memcached/optimized/memcached_debug-items.ll
+; opencv/optimized/persistence.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i16 %0, i16 %1) #0 {
+entry:
+  %2 = or i16 %0, %1
+  %3 = zext i16 %2 to i32
+  %4 = shl nuw nsw i32 %3, 2
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; oiio/optimized/Codec.cpp.ll
 ; Function Attrs: nounwind
@@ -304,17 +317,6 @@ entry:
   %2 = or disjoint i16 %0, %1
   %3 = zext i16 %2 to i32
   %4 = shl i32 %3, 24
-  ret i32 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/persistence.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i16 %0, i16 %1) #0 {
-entry:
-  %2 = or i16 %0, %1
-  %3 = zext i16 %2 to i32
-  %4 = shl nuw nsw i32 %3, 13
   ret i32 %4
 }
 

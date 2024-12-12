@@ -76,7 +76,7 @@ entry:
   %3 = or i64 %1, %2
   %4 = and i64 %3, 7
   %.masked = and i64 %0, -9
-  %5 = or i64 %4, %.masked
+  %5 = or i64 %.masked, %4
   ret i64 %5
 }
 

@@ -1,9 +1,11 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; icu/optimized/ucnv_lmb.ll
 ; linux/optimized/nfnetlink.ll
 ; llvm/optimized/InlineFunction.cpp.ll
+; llvm/optimized/LinkModules.cpp.ll
+; llvm/optimized/MergeFunctions.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; velox/optimized/Re2Functions.cpp.ll

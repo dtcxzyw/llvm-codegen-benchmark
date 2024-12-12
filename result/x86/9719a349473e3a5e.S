@@ -12,3 +12,12 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$4, %eax
 	cmovael	%ecx, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	notb	%sil
+	movzbl	%sil, %ecx
+	shll	$5, %ecx
+	orl	$-39, %ecx
+	xorl	%eax, %eax
+	cmpw	$65, %di
+	cmovael	%ecx, %eax
+	retq

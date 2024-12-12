@@ -3,32 +3,42 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	addq	$24, %rdi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000041:                   # @func0000000000000041
+	decq	%rdi
+	cmpq	%rsi, %rdi
+	sete	%al
+	retq
+func0000000000000064:                   # @func0000000000000064
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addq	$-4, %rdi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func0000000000000044:                   # @func0000000000000044
+	addq	$-2, %rdi
+	cmpq	%rsi, %rdi
+	setb	%al
+	retq
+func0000000000000068:                   # @func0000000000000068
+	addq	$8, %rdi
+	cmpq	%rsi, %rdi
+	seta	%al
+	retq
+func000000000000004c:                   # @func000000000000004c
 	decq	%rdi
 	cmpq	%rsi, %rdi
 	setne	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
-	addq	$328, %rdi                      # imm = 0x148
-	cmpq	%rsi, %rdi
-	sete	%al
-	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	addq	$328, %rdi                      # imm = 0x148
 	cmpq	%rsi, %rdi
 	setne	%al

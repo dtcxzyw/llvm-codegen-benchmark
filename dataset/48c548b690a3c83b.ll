@@ -1,5 +1,7 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; hermes/optimized/APInt.cpp.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll

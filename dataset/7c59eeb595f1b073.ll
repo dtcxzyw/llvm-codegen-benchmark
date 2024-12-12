@@ -44,10 +44,9 @@ entry:
   ret i8 %2
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/mpmPre.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sfmCnf.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000011(i32 %0) #0 {

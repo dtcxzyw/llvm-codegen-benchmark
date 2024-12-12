@@ -14,14 +14,12 @@ entry:
   ret i32 %5
 }
 
-; 28 occurrences:
+; 25 occurrences:
 ; abc/optimized/resSim.c.ll
 ; cmake/optimized/gzlib.c.ll
 ; darktable/optimized/image.c.ll
-; grpc/optimized/socket_utils_linux.cc.ll
 ; grpc/optimized/tcp_socket_utils.cc.ll
 ; imgui/optimized/imgui.cpp.ll
-; libquic/optimized/gzlib.c.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/g4x_hdmi.ll
@@ -42,7 +40,6 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; z3/optimized/goal.cpp.ll
-; zlib/optimized/gzlib.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
@@ -67,43 +64,17 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/zstd_compress_literals.c.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; linux/optimized/intel_dsb.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 1114111
-  %3 = select i1 %2, i32 256, i32 0
-  %4 = select i1 %0, i32 64, i32 0
+  %2 = icmp ugt i32 %1, 7
+  %3 = select i1 %2, i32 2, i32 0
+  %4 = select i1 %0, i32 4, i32 0
   %5 = or disjoint i32 %4, %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; glslang/optimized/Initialize.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000019(i1 %0, i32 %1) #0 {
-entry:
-  %.not = icmp eq i32 %1, 0
-  %2 = select i1 %.not, i32 0, i32 262144
-  %3 = select i1 %0, i32 131072, i32 0
-  %4 = or disjoint i32 %3, %2
-  ret i32 %4
-}
-
-; 2 occurrences:
-; linux/optimized/e1000_main.ll
-; llvm/optimized/InlineAsmLowering.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000009(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 1073741823
-  %3 = select i1 %2, i32 50331648, i32 16777216
-  %4 = select i1 %0, i32 1073741824, i32 0
-  %5 = or disjoint i32 %3, %4
   ret i32 %5
 }
 

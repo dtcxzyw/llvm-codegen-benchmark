@@ -1,12 +1,8 @@
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	ushr	v4.8h, v4.8h, #1
-	cmgt	v0.4s, v0.4s, v2.4s
-	cmgt	v1.4s, v1.4s, v3.4s
-	bic	v4.8h, #1
-	ushll	v2.4s, v4.4h, #0
-	ushll2	v4.4s, v4.8h, #0
-	and	v1.16b, v4.16b, v1.16b
-	and	v0.16b, v2.16b, v0.16b
+	lsr	w8, w2, #1
+	cmp	w0, w1
+	and	w8, w8, #0x7ffe
+	csel	w0, w8, wzr, gt
 	ret
                                         // -- End function

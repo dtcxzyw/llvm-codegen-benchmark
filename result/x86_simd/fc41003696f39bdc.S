@@ -23,7 +23,7 @@ func0000000000000006:                   # @func0000000000000006
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm1, %xmm1
 	vpord	.LCPI1_3(%rip){1to4}, %xmm1, %xmm2
 	vmovdqu8	%xmm1, %xmm2 {%k1}
-	vpor	%xmm0, %xmm2, %xmm0
+	vpor	%xmm2, %xmm0, %xmm0
 	retq
 .LCPI2_0:
 	.zero	16,64

@@ -9,7 +9,7 @@ func0000000000000014:                   # @func0000000000000014
 	addl	%edx, %eax
 	retq
 func0000000000000056:                   # @func0000000000000056
-	shrq	$7, %rdx
+	shrq	$6, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq

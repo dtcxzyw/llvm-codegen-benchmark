@@ -1,9 +1,7 @@
 
-; 9 occurrences:
+; 7 occurrences:
 ; abc/optimized/extraUtilUtil.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
-; nuttx/optimized/lib_strftime.c.ll
-; php/optimized/dow.ll
 ; php/optimized/php_date.ll
 ; postgres/optimized/pgtz.ll
 ; postgres/optimized/postgres.ll

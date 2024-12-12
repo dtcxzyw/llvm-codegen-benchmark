@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; hdf5/optimized/H5HFhuge.c.ll
 ; linux/optimized/dcache.ll
 ; linux/optimized/exfldio.ll
@@ -18,7 +18,6 @@
 ; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/serialBlockOffsetTable.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
-; qemu/optimized/hw_net_can_ctucan_pci.c.ll
 ; ruby/optimized/random.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i32 %0) #0 {

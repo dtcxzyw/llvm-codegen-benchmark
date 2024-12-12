@@ -1,17 +1,5 @@
 
 ; 1 occurrences:
-; openjdk/optimized/cmsio0.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000047(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 9
-  %4 = select i1 %3, i32 9, i32 %1
-  %5 = shl nuw nsw i32 %0, 8
-  %6 = or disjoint i32 %5, %4
-  ret i32 %6
-}
-
-; 1 occurrences:
 ; linux/optimized/netdev.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {

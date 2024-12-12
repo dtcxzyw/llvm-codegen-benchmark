@@ -1,9 +1,10 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; clamav/optimized/yara_grammar.c.ll
 ; cmake/optimized/cmDependsJavaParser.cxx.ll
 ; cmake/optimized/cmFortranParser.cxx.ll
 ; glslang/optimized/glslang_tab.cpp.ll
+; icu/optimized/ucharstriebuilder.ll
 ; jq/optimized/parser.ll
 ; nix/optimized/parser-tab.ll
 ; php/optimized/zend_language_parser.ll
@@ -11,6 +12,7 @@
 ; proj/optimized/wkt2_generated_parser.c.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
+; stockfish/optimized/position.ll
 ; velox/optimized/TypeCalculation.yy.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i16 %1) #0 {
@@ -33,7 +35,7 @@ entry:
   ret i32 %3
 }
 
-; 63 occurrences:
+; 62 occurrences:
 ; abc/optimized/wlcAbc.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -53,7 +55,6 @@ entry:
 ; linux/optimized/bio.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mmu_gather.ll
 ; linux/optimized/mprotect.ll
@@ -64,6 +65,7 @@ entry:
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
@@ -92,7 +94,6 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
 ; sqlite/optimized/sqlite3.ll
-; stockfish/optimized/position.ll
 ; verilator/optimized/V3Case.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
@@ -105,25 +106,13 @@ entry:
   ret i32 %3
 }
 
-; 20 occurrences:
-; clamav/optimized/clamdtop.c.ll
+; 8 occurrences:
 ; icu/optimized/collationfastlatinbuilder.ll
-; icu/optimized/ufmt_cmn.ll
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dmc.ll
-; linux/optimized/intel_dsi_dcs_backlight.ll
 ; linux/optimized/skl_universal_plane.ll
-; openjdk/optimized/archiveBuilder.ll
-; openjdk/optimized/constantPool.ll
-; openjdk/optimized/klass.ll
-; openjdk/optimized/metaspaceShared.ll
-; openjdk/optimized/moduleEntry.ll
-; openjdk/optimized/packageEntry.ll
-; openjdk/optimized/systemDictionaryShared.ll
-; openjdk/optimized/vmSymbols.ll
 ; qemu/optimized/hw_pci_msix.c.ll
-; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-openflow_v4.c.ll
 ; Function Attrs: nounwind
@@ -134,14 +123,8 @@ entry:
   ret i32 %3
 }
 
-; 28 occurrences:
+; 22 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
-; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
-; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
-; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
-; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
-; delta-rs/optimized/9v8xvedf69luuxb.ll
-; hermes/optimized/RegexParser.cpp.ll
 ; icu/optimized/tzfmt.ll
 ; icu/optimized/uchar.ll
 ; icu/optimized/ucnvmbcs.ll
@@ -156,11 +139,11 @@ entry:
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
+; llvm/optimized/X86FrameLowering.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; openjdk/optimized/SctpChannelImpl.ll
 ; wireshark/optimized/packet-btmesh.c.ll
-; wireshark/optimized/packet-erf.c.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/q_mam.cpp.ll
 ; Function Attrs: nounwind
@@ -168,6 +151,34 @@ define i32 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 5
   %3 = select i1 %2, i32 %0, i32 0
+  ret i32 %3
+}
+
+; 3 occurrences:
+; clamav/optimized/clamdtop.c.ll
+; icu/optimized/ufmt_cmn.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i16 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i16 %1, 1
+  %3 = select i1 %2, i32 %0, i32 0
+  ret i32 %3
+}
+
+; 7 occurrences:
+; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
+; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
+; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
+; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
+; delta-rs/optimized/9v8xvedf69luuxb.ll
+; hermes/optimized/RegexParser.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i16 %1) #0 {
+entry:
+  %2 = icmp samesign ult i16 %1, 6
+  %3 = select i1 %2, i32 %0, i32 undef
   ret i32 %3
 }
 

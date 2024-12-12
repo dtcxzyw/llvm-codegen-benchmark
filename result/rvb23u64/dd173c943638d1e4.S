@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	999999999999999999              # 0xde0b6b3a763ffff
-func00000000000004a8:                   # @func00000000000004a8
+func0000000000000948:                   # @func0000000000000948
 	mul	a4, a4, a1
 	mulhu	a1, a1, a3
 	add	a1, a1, a4
@@ -11,7 +11,7 @@ func00000000000004a8:                   # @func00000000000004a8
 	add	a0, a0, a1
 	sltu	a0, a4, a0
 	ret
-func00000000000004a4:                   # @func00000000000004a4
+func0000000000000944:                   # @func0000000000000944
 	mul	a4, a4, a1
 	mulhu	a1, a1, a3
 	mul	a2, a2, a3
@@ -20,7 +20,7 @@ func00000000000004a4:                   # @func00000000000004a4
 	add	a0, a0, a1
 	sltiu	a0, a0, 100
 	ret
-func0000000000000488:                   # @func0000000000000488
+func0000000000000908:                   # @func0000000000000908
 	mul	a4, a4, a1
 	mulhu	a1, a1, a3
 	mul	a2, a2, a3

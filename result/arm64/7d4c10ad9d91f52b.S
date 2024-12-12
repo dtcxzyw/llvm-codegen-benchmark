@@ -1,56 +1,45 @@
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v1.2d, v1.2d, v3.2d
-	sshll	v3.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	ushr	v2.2d, v2.2d, #2
-	ushr	v1.2d, v1.2d, #2
-	sub	v2.2d, v0.2d, v2.2d
-	sub	v0.2d, v3.2d, v1.2d
-	shl	v0.2d, v0.2d, #2
-	shl	v1.2d, v2.2d, #2
+                                        // kill: def $w0 killed $w0 def $x0
+	sxtw	x8, w0
+	sub	x9, x1, x2
+	sub	x8, x8, x9, lsr #2
+	lsl	x0, x8, #2
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v1.2d, v1.2d, v3.2d
-	sshll	v3.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	ushr	v2.2d, v2.2d, #2
-	ushr	v1.2d, v1.2d, #2
-	sub	v2.2d, v0.2d, v2.2d
-	sub	v0.2d, v3.2d, v1.2d
-	shl	v0.2d, v0.2d, #2
-	shl	v1.2d, v2.2d, #2
+                                        // kill: def $w0 killed $w0 def $x0
+	sxtw	x8, w0
+	sub	x9, x1, x2
+	sub	x8, x8, x9, lsr #2
+	lsl	x0, x8, #2
 	ret
                                         // -- End function
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v1.2d, v1.2d, v3.2d
-	sshll	v3.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	ushr	v2.2d, v2.2d, #1
-	ushr	v1.2d, v1.2d, #1
-	sub	v2.2d, v0.2d, v2.2d
-	sub	v0.2d, v3.2d, v1.2d
-	add	v0.2d, v0.2d, v0.2d
-	add	v1.2d, v2.2d, v2.2d
+                                        // kill: def $w0 killed $w0 def $x0
+	sxtw	x8, w0
+	sub	x9, x1, x2
+	sub	x8, x8, x9, lsr #1
+	lsl	x0, x8, #1
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v1.2d, v1.2d, v3.2d
-	sshll	v3.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	ushr	v2.2d, v2.2d, #2
-	ushr	v1.2d, v1.2d, #2
-	sub	v2.2d, v0.2d, v2.2d
-	sub	v0.2d, v3.2d, v1.2d
-	shl	v0.2d, v0.2d, #2
-	shl	v1.2d, v2.2d, #2
+                                        // kill: def $w0 killed $w0 def $x0
+	sxtw	x8, w0
+	sub	x9, x1, x2
+	sub	x8, x8, x9, lsr #2
+	lsl	x0, x8, #2
+	ret
+                                        // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+                                        // kill: def $w0 killed $w0 def $x0
+	sxtw	x8, w0
+	sub	x9, x1, x2
+	sub	x8, x8, x9, lsr #2
+	lsl	x0, x8, #2
 	ret
                                         // -- End function

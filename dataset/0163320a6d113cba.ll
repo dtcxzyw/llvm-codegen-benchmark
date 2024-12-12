@@ -49,8 +49,7 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
-; cpython/optimized/Hacl_Hash_SHA3.ll
+; 10 occurrences:
 ; cpython/optimized/ceval.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/InjectedSourceStream.cpp.ll

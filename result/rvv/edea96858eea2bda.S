@@ -22,6 +22,13 @@ func000000000000000a:                   # @func000000000000000a
 	vand.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	lui	a0, 256
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsltu.vx	v0, v10, a0
+	addi	a0, a0, -1
+	vand.vx	v8, v12, a0, v0.t
+	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
@@ -33,6 +40,15 @@ func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgtu.vx	v0, v10, a0
 	lui	a0, 524288
+	addi	a0, a0, -1
+	vand.vx	v8, v12, a0, v0.t
+	ret
+func0000000000000018:                   # @func0000000000000018
+	lui	a0, 1
+	addi	a0, a0, -975
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsgtu.vx	v0, v10, a0
+	lui	a0, 16
 	addi	a0, a0, -1
 	vand.vx	v8, v12, a0, v0.t
 	ret

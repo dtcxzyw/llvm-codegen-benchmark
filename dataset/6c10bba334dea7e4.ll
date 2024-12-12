@@ -225,7 +225,7 @@ define i64 @func0000000000000020(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 31
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = ashr i64 %1, 32
   %7 = add i64 %5, %6
   ret i64 %7

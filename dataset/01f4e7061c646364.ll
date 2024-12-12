@@ -22,13 +22,12 @@ entry:
   ret i32 %5
 }
 
-; 49 occurrences:
+; 47 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/scsicam.ll
 ; nlohmann_json/optimized/unit-deserialization.cpp.ll
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; node/optimized/simdutf.ll
@@ -50,7 +49,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -92,7 +90,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = and i32 %2, -2147483648
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = add nuw nsw i32 %4, 939524096
   ret i32 %5
 }
@@ -104,7 +102,7 @@ define i32 @func0000000000000017(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
   %3 = and i32 %2, -2147483648
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = add nuw nsw i32 %4, 939524096
   ret i32 %5
 }
@@ -145,7 +143,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 18
   %3 = and i32 %2, 1835008
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = add nsw i32 %4, -65536
   ret i32 %5
 }

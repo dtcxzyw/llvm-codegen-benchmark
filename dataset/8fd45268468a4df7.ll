@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; linux/optimized/namei.ll
 ; linux/optimized/orphan.ll
 ; linux/optimized/sock_reuseport.ll
@@ -8,6 +8,7 @@
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/VarLenCodeEmitterGen.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; openjdk/optimized/g1FullGCCompactionPoint.ll
 ; postgres/optimized/heapam.ll
 ; qemu/optimized/block_vhdx-log.c.ll
@@ -32,14 +33,13 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/cecProve.c.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
 ; cmake/optimized/cmDependsFortran.cxx.ll
-; openblas/optimized/blas_server.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 0
@@ -47,7 +47,7 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 8 occurrences:
 ; linux/optimized/aio.ll
 ; proxygen/optimized/HPACKDecoder.cpp.ll
 ; proxygen/optimized/HPACKEncoder.cpp.ll
@@ -55,9 +55,7 @@ entry:
 ; proxygen/optimized/QPACKEncoder.cpp.ll
 ; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
-; slurm/optimized/priority_basic.ll
 ; wasmedge/optimized/controlInstr.cpp.ll
-; wireshark/optimized/packet-gprs-llc.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -72,7 +70,6 @@ entry:
 ; memcached/optimized/memcached_debug-slabs.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; nori/optimized/textbox.cpp.ll
 ; nuttx/optimized/serial.c.ll
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/guided_filter.cpp.ll
@@ -118,8 +115,9 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/d2w35dg2d82avud97ap9t4v42.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -3
   %4 = select i1 %1, i32 %3, i32 6
@@ -131,7 +129,7 @@ entry:
 ; abc/optimized/exor.c.ll
 ; gromacs/optimized/pdb2top.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 0
@@ -142,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 1024
@@ -153,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 1024
@@ -164,7 +162,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = select i1 %1, i32 %3, i32 0
@@ -175,7 +173,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/dl_mk_simple_joins.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 0
@@ -184,20 +182,9 @@ entry:
 }
 
 ; 1 occurrences:
-; postgres/optimized/regcomp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = select i1 %1, i32 %3, i32 100000
-  %5 = icmp sgt i32 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; postgres/optimized/heapam_handler.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 0
@@ -220,7 +207,7 @@ entry:
 ; arrow/optimized/datum.cc.ll
 ; opencv/optimized/convhull.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 0

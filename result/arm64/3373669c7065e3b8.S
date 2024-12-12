@@ -7,10 +7,10 @@ func0000000000000004:                   // @func0000000000000004
 	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000000a1:                   // @func00000000000000a1
+func00000000000001c1:                   // @func00000000000001c1
 // %bb.0:                               // %entry
-	add	x8, x2, x1, lsl #3
-	add	x8, x8, #8
+	add	x8, x2, x1
+	add	x8, x8, #16
 	cmp	x8, x0
 	cset	w0, eq
 	ret

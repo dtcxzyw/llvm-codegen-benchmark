@@ -1,8 +1,10 @@
 
-; 50 occurrences:
+; 54 occurrences:
 ; abc/optimized/giaBalAig.c.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/UriQuery.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; bullet3/optimized/btMLCPSolver.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
@@ -12,6 +14,8 @@
 ; linux/optimized/hid-lg4ff.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_theme_default.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; nori/optimized/popup.cpp.ll
@@ -58,7 +62,7 @@ entry:
   ret i32 %3
 }
 
-; 48 occurrences:
+; 47 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; cxxopts/optimized/example.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -80,7 +84,6 @@ entry:
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
-; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -115,13 +118,17 @@ entry:
   ret i32 %3
 }
 
-; 22 occurrences:
+; 26 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -142,7 +149,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 6, i32 2
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 

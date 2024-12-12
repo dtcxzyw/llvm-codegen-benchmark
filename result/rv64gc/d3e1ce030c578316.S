@@ -3,8 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	beqz	a2, .LBB0_2
 	mv	a0, a1
 .LBB0_2:                                # %entry
-	lui	a1, 4080
-	and	a0, a0, a1
+	andi	a0, a0, 15
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 255

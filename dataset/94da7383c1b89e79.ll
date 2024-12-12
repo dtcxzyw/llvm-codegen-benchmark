@@ -15,7 +15,7 @@ entry:
   ret double %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; ceres/optimized/trust_region_step_evaluator.cc.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; ipopt/optimized/IpBacktrackingLineSearch.ll
@@ -33,6 +33,7 @@ entry:
 ; rocksdb/optimized/version_set.cc.ll
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind

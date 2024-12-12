@@ -127,7 +127,7 @@ define i8 @func0000000000000008(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = mul nuw nsw i128 %2, 105
-  %4 = xor i128 %3, %0
+  %4 = xor i128 %0, %3
   %5 = trunc i128 %4 to i8
   %6 = and i8 %5, 127
   ret i8 %6

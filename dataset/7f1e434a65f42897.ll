@@ -1,7 +1,7 @@
 
-%"class.re2::SparseArray<int>::IndexValue.2486787" = type { i32, i32 }
+%"class.re2::SparseArray<int>::IndexValue.2602231" = type { i32, i32 }
 
-; 521 occurrences:
+; 517 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
@@ -17,6 +17,12 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
@@ -48,10 +54,6 @@
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; draco/optimized/mesh_are_equivalent.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_metadata.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
@@ -155,7 +157,6 @@
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/ProfileSummaryBuilder.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
-; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
@@ -163,6 +164,7 @@
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
@@ -183,7 +185,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -218,10 +219,6 @@
 ; meshlab/optimized/seams.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
 ; meshlab/optimized/transferfunction.cpp.ll
-; minetest/optimized/CIrrDeviceSDL.cpp.ll
-; minetest/optimized/clientmap.cpp.ll
-; minetest/optimized/mg_biome.cpp.ll
-; minetest/optimized/nodedef.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
@@ -449,7 +446,6 @@
 ; verilator/optimized/V3Gate.cpp.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; verilator/optimized/V3TSP.cpp.ll
-; xgboost/optimized/indexed_recordio_split.cc.ll
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/random.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
@@ -677,8 +673,30 @@ define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 3
   %3 = or i64 %2, 1
-  %4 = getelementptr %"class.re2::SparseArray<int>::IndexValue.2486787", ptr %0, i64 %3
+  %4 = getelementptr %"class.re2::SparseArray<int>::IndexValue.2602231", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
+  ret ptr %5
+}
+
+; 11 occurrences:
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_metadata.cpp.ll
+; llvm/optimized/RangeConstraintManager.cpp.ll
+; minetest/optimized/CIrrDeviceSDL.cpp.ll
+; minetest/optimized/clientmap.cpp.ll
+; minetest/optimized/mg_biome.cpp.ll
+; minetest/optimized/nodedef.cpp.ll
+; xgboost/optimized/indexed_recordio_split.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 1
+  %3 = or i64 %2, 1
+  %4 = getelementptr i16, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -4
   ret ptr %5
 }
 

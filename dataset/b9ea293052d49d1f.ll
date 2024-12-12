@@ -1,11 +1,11 @@
 
-; 239 occurrences:
+; 233 occurrences:
 ; abc/optimized/crc32.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/sscClass.c.ll
 ; arrow/optimized/message.cc.ll
+; boost/optimized/alloc_lib.ll
 ; c3c/optimized/llvm_codegen_type.c.ll
-; clamav/optimized/crc.cpp.ll
 ; cmake/optimized/crc32.c.ll
 ; cmake/optimized/formdata.c.ll
 ; cpython/optimized/_decimal.ll
@@ -53,7 +53,6 @@
 ; llvm/optimized/LazyCallGraph.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; llvm/optimized/MachineRegisterInfo.cpp.ll
@@ -72,6 +71,7 @@
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
@@ -80,7 +80,6 @@
 ; mitsuba3/optimized/medium.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
-; oiio/optimized/Writer.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/compilerOracle.ll
 ; openjdk/optimized/dfa_x86.ll
@@ -194,13 +193,8 @@
 ; ruby/optimized/rational.ll
 ; ruby/optimized/string.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
-; slurm/optimized/job_features.ll
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f16_rem.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f32_rem.ll
 ; spike/optimized/f64_mul.ll
@@ -248,7 +242,7 @@ entry:
   ret i1 %4
 }
 
-; 342 occurrences:
+; 353 occurrences:
 ; abc/optimized/aigObj.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaSatEdge.c.ll
@@ -265,11 +259,15 @@ entry:
 ; arrow/optimized/string-to-double.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/process.ll
+; boost/optimized/src.ll
 ; brotli/optimized/decode.c.ll
 ; c3c/optimized/llvm_codegen.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cpython/optimized/_ssl.ll
 ; cpython/optimized/codeobject.ll
+; cpython/optimized/dtoa.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/typeobject.ll
 ; double_conversion/optimized/string-to-double.cc.ll
@@ -289,6 +287,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/JSObject.cpp.ll
+; hermes/optimized/dtoa.c.ll
 ; hermes/optimized/gtest-all.cc.ll
 ; hyperscan/optimized/gtest-all.cc.ll
 ; icu/optimized/double-conversion-string-to-double.ll
@@ -296,9 +295,11 @@ entry:
 ; icu/optimized/nfrs.ll
 ; icu/optimized/ucnvscsu.ll
 ; jq/optimized/jv.ll
+; jq/optimized/jv_dtoa.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
 ; libphonenumber/optimized/phonenumber.pb.cc.ll
+; libquic/optimized/dtoa.cc.ll
 ; libquic/optimized/persistent_memory_allocator.cc.ll
 ; libquic/optimized/ssl_test.cc.ll
 ; libquic/optimized/x509_vfy.c.ll
@@ -324,17 +325,14 @@ entry:
 ; linux/optimized/libata-sata.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/link_watch.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/orphan.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/process.ll
 ; linux/optimized/ring_buffer.ll
 ; linux/optimized/scsi_scan.ll
 ; linux/optimized/set_memory.ll
-; linux/optimized/severity.ll
 ; linux/optimized/sock.ll
 ; linux/optimized/sta_info.ll
 ; linux/optimized/trace_events.ll
@@ -386,6 +384,7 @@ entry:
 ; llvm/optimized/LangOptions.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoopDistribute.cpp.ll
+; llvm/optimized/MCAsmStreamer.cpp.ll
 ; llvm/optimized/MCStreamer.cpp.ll
 ; llvm/optimized/MSVC.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
@@ -438,6 +437,8 @@ entry:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luajit/optimized/lj_carith.ll
 ; luajit/optimized/lj_carith_dyn.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_flex.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; meilisearch-rs/optimized/50l87gnpqq82g6pe.ll
 ; minetest/optimized/gameui.cpp.ll
@@ -474,6 +475,7 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/memnode.ll
 ; openjdk/optimized/vm_version_x86.ll
+; openmpi/optimized/crc.ll
 ; openmpi/optimized/libdatatype_reliable_la-opal_datatype_pack.ll
 ; openmpi/optimized/libdatatype_reliable_la-opal_datatype_unpack.ll
 ; openmpi/optimized/opal_datatype_pack.ll
@@ -481,8 +483,6 @@ entry:
 ; openmpi/optimized/ptl_base_connection_hdlr.ll
 ; openspiel/optimized/checkers.cc.ll
 ; openspiel/optimized/tarok.cc.ll
-; openssl/optimized/libcrypto-lib-params_from_text.ll
-; openssl/optimized/libcrypto-shlib-params_from_text.ll
 ; openssl/optimized/libssl-lib-extensions.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
@@ -510,10 +510,10 @@ entry:
 ; php/optimized/phpdbg_prompt.ll
 ; php/optimized/strtod.ll
 ; php/optimized/zend_jit.ll
+; php/optimized/zend_strtod.ll
 ; postgres/optimized/aclchk.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; pugixml/optimized/pugixml.cpp.ll
-; qemu/optimized/hw_vfio_container.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
 ; qemu/optimized/target_riscv_pmp.c.ll
 ; qemu/optimized/tcg.c.ll
@@ -539,16 +539,19 @@ entry:
 ; sentencepiece/optimized/sentencepiece_model.pb.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; slurm/optimized/reservation.ll
-; spike/optimized/f16_classify.ll
 ; spike/optimized/f16_rem.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; spike/optimized/fmax_d.ll
+; spike/optimized/fmax_s.ll
 ; spike/optimized/fmaxm_d.ll
+; spike/optimized/fmaxm_h.ll
 ; spike/optimized/fmaxm_q.ll
+; spike/optimized/fmaxm_s.ll
 ; spike/optimized/fmin_d.ll
+; spike/optimized/fmin_s.ll
 ; spike/optimized/fminm_d.ll
+; spike/optimized/fminm_h.ll
 ; spike/optimized/fminm_q.ll
+; spike/optimized/fminm_s.ll
 ; spike/optimized/isa_parser.ll
 ; spike/optimized/pack.ll
 ; spike/optimized/packw.ll
@@ -582,6 +585,7 @@ entry:
 ; verilator/optimized/V3Task.cpp.ll
 ; verilator/optimized/V3Timing.cpp.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
+; wireshark/optimized/packet-ssh.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; yalantinglibs/optimized/conformance.pb.cc.ll
 ; yalantinglibs/optimized/data_def.pb.cc.ll
@@ -591,6 +595,7 @@ entry:
 ; yosys/optimized/opt_dff.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
@@ -600,31 +605,66 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; eastl/optimized/TestFixedString.cpp.ll
-; eastl/optimized/TestString.cpp.ll
-; linux/optimized/sparse-vmemmap.ll
+; 22 occurrences:
+; brotli/optimized/encode.c.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; llvm/optimized/AArch64.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/CGDebugInfo.cpp.ll
+; llvm/optimized/CheckSecuritySyntaxOnly.cpp.ll
+; llvm/optimized/Darwin.cpp.ll
+; llvm/optimized/OSTargets.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
+; postgres/optimized/basebackup.ll
+; postgres/optimized/inv_api.ll
+; postgres/optimized/nodeHash.ll
+; qemu/optimized/tcg.c.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; spike/optimized/f128_to_i32_r_minMag.ll
+; spike/optimized/f32_to_i64_r_minMag.ll
+; spike/optimized/f32_to_ui64_r_minMag.ll
+; spike/optimized/f64_to_i32_r_minMag.ll
+; spike/optimized/s_addMagsF32.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 288230376151711680
-  %3 = icmp ugt i64 %2, 128
+  %2 = and i64 %1, 255
+  %3 = icmp samesign ult i64 %2, 31
   %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; eastl/optimized/TestFixedString.cpp.ll
+; eastl/optimized/TestString.cpp.ll
+; linux/optimized/sparse-vmemmap.ll
+; llvm/optimized/AArch64.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/MSVC.cpp.ll
+; php/optimized/php_pcre.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 255
+  %3 = icmp samesign ugt i64 %2, 2
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
+}
+
+; 5 occurrences:
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
-; postgres/optimized/nodeHash.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 17179869176
-  %3 = icmp ult i64 %2, 8193
+  %2 = and i64 %1, -2
+  %3 = icmp ult i64 %2, 4097
   %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
 }

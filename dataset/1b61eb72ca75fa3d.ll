@@ -1,8 +1,7 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; git/optimized/diff.ll
 ; git/optimized/dir.ll
-; linux/optimized/md-autodetect.ll
 ; php/optimized/php_spl.ll
 ; postgres/optimized/elog.ll
 ; postgres/optimized/pgc.ll

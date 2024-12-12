@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
-; linux/optimized/he.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i8 %0, i8 %1) #0 {

@@ -19,3 +19,6 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000d:                   # @func000000000000000d
 	leal	1(%rsi,%rdi), %eax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	leal	-48(%rsi,%rdi), %eax
+	retq

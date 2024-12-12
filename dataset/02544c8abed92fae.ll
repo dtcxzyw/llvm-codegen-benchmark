@@ -1,5 +1,5 @@
 
-; 346 occurrences:
+; 349 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -58,6 +58,10 @@
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/decode.c.ll
 ; c3c/optimized/bigint.c.ll
 ; clamav/optimized/regexec.c.ll
@@ -297,7 +301,6 @@
 ; spike/optimized/fsr.ll
 ; spike/optimized/fsri.ll
 ; spike/optimized/fsrw.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/rol.ll
 ; spike/optimized/rolw.ll
 ; spike/optimized/ror.ll

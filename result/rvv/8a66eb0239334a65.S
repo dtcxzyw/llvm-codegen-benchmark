@@ -2,7 +2,7 @@ func000000000000003f:                   # @func000000000000003f
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vxor.vx	v14, v12, a0
-	vmul.vv	v8, v14, v8
+	vmul.vv	v8, v8, v14
 	vmacc.vv	v8, v12, v10
 	ret
 func0000000000000028:                   # @func0000000000000028

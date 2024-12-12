@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/approximately_equals.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -14,7 +15,7 @@
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; ruby/optimized/parse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 1
@@ -66,7 +67,6 @@ entry:
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; qemu/optimized/migration_qemu-file.c.ll
-; qemu/optimized/util_filemonitor-inotify.c.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/squarerootclvmodel.ll
 ; verilator/optimized/V3Slice.cpp.ll
@@ -79,8 +79,9 @@ entry:
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 1
@@ -88,7 +89,7 @@ entry:
   ret i1 %4
 }
 
-; 43 occurrences:
+; 46 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
 ; bullet3/optimized/b3GpuPgsConstraintSolver.ll
@@ -112,6 +113,8 @@ entry:
 ; node/optimized/libnode.util.ll
 ; oiio/optimized/printinfo.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; qemu/optimized/fdt_sw.c.ll
 ; qemu/optimized/libqos.c.ll
@@ -132,8 +135,9 @@ entry:
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 16
@@ -144,7 +148,7 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3PreProc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000025(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, -1
@@ -159,7 +163,7 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 4
@@ -167,8 +171,9 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
+; boost/optimized/approximately_equals.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; icu/optimized/plurrule.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
@@ -185,7 +190,7 @@ entry:
 ; openspiel/optimized/state_distribution.cc.ll
 ; openusd/optimized/meshUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 1
@@ -196,7 +201,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 17

@@ -1,7 +1,8 @@
 
-; 102 occurrences:
+; 103 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -103,7 +104,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i128 %0) #0 {
+define i1 @func0000000000000061(i128 %0) #0 {
 entry:
   %1 = mul nuw nsw i128 %0, 20
   %2 = and i128 %1, 18446744073709551600
@@ -111,15 +112,18 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
+; 5 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i128 %0) #0 {
+define i1 @func000000000000006c(i128 %0) #0 {
 entry:
   %1 = mul nuw nsw i128 %0, 1000000000
-  %2 = and i128 %1, 4503599627369984
-  %3 = icmp ne i128 %2, 2251799813685248
+  %2 = and i128 %1, 18446744073709551104
+  %3 = icmp ne i128 %2, 9223372036854775808
   ret i1 %3
 }
 

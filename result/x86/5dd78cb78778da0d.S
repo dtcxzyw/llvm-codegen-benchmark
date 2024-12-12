@@ -3,19 +3,19 @@ func0000000000000001:                   # @func0000000000000001
 	shrq	$32, %rdi
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	shrq	$12, %rsi
 	shrq	$12, %rdi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	shrq	%rsi
 	shrq	%rdi
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	shrq	$3, %rsi
 	shrq	$6, %rdi
 	cmpq	%rsi, %rdi
@@ -26,33 +26,33 @@ func000000000000000c:                   # @func000000000000000c
 	shrq	$48, %rdi
 	setne	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	shrq	%rsi
 	shrq	%rdi
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	shrq	$2, %rsi
 	shrq	$2, %rdi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000019:                   # @func0000000000000019
 	shrq	$32, %rsi
 	shrq	$32, %rdi
 	cmpl	%esi, %edi
 	setae	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq

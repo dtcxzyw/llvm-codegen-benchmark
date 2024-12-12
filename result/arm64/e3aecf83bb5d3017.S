@@ -1,16 +1,10 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ushr	v3.2d, v3.2d, #3
-	ushr	v2.2d, v2.2d, #3
-	and	v0.16b, v2.16b, v0.16b
-	and	v1.16b, v3.16b, v1.16b
+	and	x0, x0, x1, lsr #3
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ushr	v3.2d, v3.2d, #8
-	ushr	v2.2d, v2.2d, #8
-	and	v0.16b, v2.16b, v0.16b
-	and	v1.16b, v3.16b, v1.16b
+	and	x0, x0, x1, lsr #8
 	ret
                                         // -- End function

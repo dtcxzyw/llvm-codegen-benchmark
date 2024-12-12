@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -19,7 +19,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -31,7 +30,7 @@
 define i16 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32768
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   %5 = add i16 %4, 1
   ret i16 %5

@@ -4,6 +4,6 @@ func0000000000000025:                   # @func0000000000000025
 	li	a0, 511
 	vand.vx	v10, v10, a0
 	vsrl.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsll.vi	v8, v8, 8
 	ret

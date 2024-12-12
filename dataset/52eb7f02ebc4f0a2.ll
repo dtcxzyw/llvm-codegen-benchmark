@@ -15,19 +15,6 @@ entry:
   ret i32 %7
 }
 
-; 1 occurrences:
-; velox/optimized/CastExpr.cpp.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000c5(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %2, 1
-  %4 = select i1 %3, i32 1, i32 2
-  %5 = add nsw i32 %4, %0
-  %6 = zext i1 %1 to i32
-  %7 = add nsw i32 %5, %6
-  ret i32 %7
-}
-
 ; 2 occurrences:
 ; cpython/optimized/assemble.ll
 ; stockfish/optimized/search.ll
@@ -58,19 +45,6 @@ entry:
   ret i32 %7
 }
 
-; 1 occurrences:
-; slurm/optimized/ebpf.ll
-; Function Attrs: nounwind
-define i32 @func000000000000008f(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 2
-  %4 = select i1 %3, i32 2, i32 1
-  %5 = add nuw nsw i32 %4, %0
-  %6 = zext i1 %1 to i32
-  %7 = add nuw nsw i32 %5, %6
-  ret i32 %7
-}
-
 ; 2 occurrences:
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wireshark/optimized/packet-ucp.c.ll
@@ -79,7 +53,7 @@ define i32 @func0000000000000020(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 8, i32 2
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext i1 %1 to i32
   %7 = add i32 %5, %6
   ret i32 %7
@@ -113,7 +87,7 @@ define i32 @func0000000000000140(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 65535
   %4 = select i1 %3, i32 2, i32 1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext i1 %1 to i32
   %7 = add i32 %5, %6
   ret i32 %7

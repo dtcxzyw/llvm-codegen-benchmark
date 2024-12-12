@@ -6,7 +6,7 @@
 define i32 @func000000000000000e(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp une float %2, %0
+  %3 = fcmp une float %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -17,7 +17,7 @@ entry:
 define i32 @func0000000000000004(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -28,7 +28,7 @@ entry:
 define i32 @func0000000000000008(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

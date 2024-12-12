@@ -22,19 +22,11 @@ func0000000000000029:                   # @func0000000000000029
 	vpcmpgtd	%ymm1, %ymm0, %k1
 	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
-func0000000000000024:                   # @func0000000000000024
-	vpcmpnltud	%ymm1, %ymm0, %k1
-	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
-	retq
 func0000000000000022:                   # @func0000000000000022
 	vpcmpnleud	%ymm1, %ymm0, %k1
 	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 func0000000000000020:                   # @func0000000000000020
-	vpcmpnleud	%ymm1, %ymm0, %k1
-	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
-	retq
-func0000000000000021:                   # @func0000000000000021
 	vpcmpnleud	%ymm1, %ymm0, %k1
 	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq

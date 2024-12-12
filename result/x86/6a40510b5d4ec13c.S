@@ -1,7 +1,9 @@
 func0000000000000004:                   # @func0000000000000004
+	andb	$1, %dil
 	subq	%rdx, %rsi
-	shrq	$2, %rsi
+	shrq	$5, %rsi
 	xorl	%eax, %eax
-	testb	$1, %dil
-	cmovnel	%esi, %eax
+	cmpb	$1, %dil
+	sbbl	%eax, %eax
+	orl	%esi, %eax
 	retq

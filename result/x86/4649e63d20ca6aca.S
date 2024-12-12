@@ -1,22 +1,24 @@
 func0000000000000000:                   # @func0000000000000000
 	movzbl	%dl, %eax
-	leaq	(%rdi,%rax,8), %rax
+	leaq	(%rax,%rax,2), %rax
+	leaq	(%rdi,%rax,4), %rax
 	movzbl	%sil, %ecx
-	leaq	(%rax,%rcx,8), %rax
+	leaq	(%rcx,%rcx,2), %rcx
+	leaq	(%rax,%rcx,4), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	movzbl	%dl, %ecx
 	addq	%rdi, %rcx
 	movzbl	%sil, %eax
 	addq	%rcx, %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	movzbl	%dl, %ecx
 	addq	%rdi, %rcx
 	movzbl	%sil, %eax
 	addq	%rcx, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	movzbl	%dl, %eax
 	imulq	$88, %rax, %rcx
 	movzbl	%sil, %eax
@@ -29,13 +31,7 @@ func0000000000000020:                   # @func0000000000000020
 	movzbl	%sil, %eax
 	addq	%rcx, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movzbl	%dl, %eax
-	leaq	(%rdi,%rax,4), %rax
-	movzbl	%sil, %ecx
-	leaq	(%rax,%rcx,4), %rax
-	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	movzbl	%dl, %ecx
 	addq	%rdi, %rcx
 	movzbl	%sil, %eax

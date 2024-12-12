@@ -13,8 +13,8 @@
 define i64 @func0000000000000015(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = mul nsw i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = mul nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   %7 = shl nsw i64 %6, 3
   ret i64 %7
@@ -27,7 +27,7 @@ entry:
 define i64 @func0000000000000005(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = mul nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   %7 = shl nsw i64 %6, 3

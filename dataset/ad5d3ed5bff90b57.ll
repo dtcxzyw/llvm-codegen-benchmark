@@ -44,11 +44,10 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; icu/optimized/ustrtrns.ll
 ; imgui/optimized/imgui.cpp.ll
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/utf8.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
@@ -73,16 +72,15 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
-; linux/optimized/intel_display_irq.ll
+; 2 occurrences:
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i16 %1) #0 {
 entry:
-  %2 = icmp ugt i16 %1, 8
-  %3 = select i1 %2, i32 234881025, i32 1
-  %4 = select i1 %0, i32 1040187393, i32 %3
+  %2 = icmp ugt i16 %1, 11
+  %3 = select i1 %2, i32 16384, i32 32768
+  %4 = select i1 %0, i32 0, i32 %3
   ret i32 %4
 }
 

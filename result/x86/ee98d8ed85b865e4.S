@@ -1,4 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	testl	$1073741824, %edx               # imm = 0x40000000
 	sete	%cl
 	testb	%sil, %sil
@@ -6,7 +6,7 @@ func0000000000000044:                   # @func0000000000000044
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000050:                   # @func0000000000000050
+func0000000000000090:                   # @func0000000000000090
 	testb	$15, %dl
 	sete	%cl
 	cmpb	$16, %sil
@@ -14,13 +14,21 @@ func0000000000000050:                   # @func0000000000000050
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000304:                   # @func0000000000000304
+func0000000000000098:                   # @func0000000000000098
+	testb	$1, %dl
+	sete	%cl
+	testb	%sil, %sil
+	sets	%al
+	orb	%cl, %al
+	orb	%dil, %al
+	retq
+func0000000000000604:                   # @func0000000000000604
 	cmpb	$61, %sil
 	sete	%al
 	orb	%dil, %dl
 	orb	%dl, %al
 	retq
-func0000000000000318:                   # @func0000000000000318
+func0000000000000618:                   # @func0000000000000618
 	shrl	$10, %edx
 	andl	$1, %edx
 	testb	%sil, %sil

@@ -7,7 +7,7 @@ entry:
   %2 = trunc i64 %1 to i16
   %3 = udiv i16 %2, 40
   %4 = zext nneg i16 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -19,7 +19,7 @@ entry:
   %2 = trunc nuw i64 %1 to i16
   %3 = udiv i16 %2, 255
   %4 = zext nneg i16 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -33,7 +33,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i16
   %3 = udiv i16 %2, 60
   %4 = zext nneg i16 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -47,7 +47,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i16
   %3 = udiv i16 %2, 400
   %4 = zext nneg i16 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -59,7 +59,7 @@ entry:
   %2 = trunc i64 %1 to i16
   %3 = udiv i16 %2, 99
   %4 = zext nneg i16 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

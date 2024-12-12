@@ -1,7 +1,6 @@
 
-; 63 occurrences:
+; 60 occurrences:
 ; abc/optimized/deflate.c.ll
-; cmake/optimized/compress.c.ll
 ; cmake/optimized/deflate.c.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
@@ -16,7 +15,6 @@
 ; folly/optimized/TimedDrivableExecutor.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
 ; folly/optimized/json_patch.cpp.ll
-; gromacs/optimized/compress.c.ll
 ; gromacs/optimized/deflate.c.ll
 ; libquic/optimized/deflate.c.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
@@ -61,13 +59,12 @@
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
-; zlib/optimized/compress.c.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %1, 5
   %5 = add i64 %3, %4
   ret i64 %5
@@ -84,7 +81,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = lshr i64 %1, 5
   %5 = add nuw nsw i64 %3, %4
   ret i64 %5

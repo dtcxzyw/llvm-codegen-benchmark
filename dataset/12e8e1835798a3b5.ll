@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 27 occurrences:
 ; actix-rs/optimized/1h8rqhjcnbkmnywj.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/JSLexer.cpp.ll
@@ -24,6 +24,9 @@
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_consequences.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
@@ -32,7 +35,7 @@ entry:
   ret i32 %2
 }
 
-; 65 occurrences:
+; 69 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; actix-rs/optimized/4oxclimtnmaa5ft9.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -61,6 +64,7 @@ entry:
 ; llvm/optimized/JSON.cpp.ll
 ; lua/optimized/lobject.ll
 ; luau/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; nuttx/optimized/lib_strtold.c.ll
 ; oiio/optimized/formatspec.cpp.ll
@@ -98,6 +102,9 @@ entry:
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wireshark/optimized/packet-ipmi.c.ll
 ; wireshark/optimized/packet-olsr.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:

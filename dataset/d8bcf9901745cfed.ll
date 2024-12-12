@@ -1,11 +1,18 @@
 
-; 323 occurrences:
+; 330 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/dsc.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/numeric.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; clamav/optimized/extract.cpp.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
@@ -34,11 +41,12 @@
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; git/optimized/connect.ll
+; gromacs/optimized/dsteqr.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
-; gromacs/optimized/kernel_ref.cpp.ll
 ; gromacs/optimized/position_restraints.cpp.ll
 ; gromacs/optimized/reversetopology.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
+; gromacs/optimized/ssteqr.cpp.ll
 ; gromacs/optimized/trjcat.cpp.ll
 ; gromacs/optimized/xtc2.c.ll
 ; grpc/optimized/google_default_credentials.cc.ll
@@ -50,7 +58,6 @@
 ; hwloc/optimized/hwloc-info.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/olsontz.ll
-; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jemalloc/optimized/pac.ll
 ; jemalloc/optimized/pac.pic.ll
@@ -187,13 +194,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -248,38 +252,40 @@
 ; nix/optimized/verify.ll
 ; nix/optimized/why-depends.ll
 ; nix/optimized/worker.ll
+; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dgegv.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
+; openblas/optimized/dgges.c.ll
+; openblas/optimized/dgges3.c.ll
+; openblas/optimized/dggesx.c.ll
 ; openblas/optimized/dggev.c.ll
 ; openblas/optimized/dggev3.c.ll
 ; openblas/optimized/dggevx.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dhsein.c.ll
 ; openblas/optimized/dhseqr.c.ll
-; openblas/optimized/dstevd.c.ll
+; openblas/optimized/dstedc.c.ll
 ; openblas/optimized/dtgsja.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrsen.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
+; opencv/optimized/norm.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/addnode.ll
+; openjdk/optimized/check_code.ll
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/g1HeapSizingPolicy.ll
 ; openjdk/optimized/graphKit.ll
 ; openjdk/optimized/zPage.ll
 ; openmpi/optimized/rmaps_base_support_fns.ll
-; openspiel/optimized/Moves.cpp.ll
 ; openssl/optimized/asynciotest-bin-asynciotest.ll
 ; openusd/optimized/bigRWMutex.cpp.ll
 ; openusd/optimized/clip.cpp.ll
-; ozz-animation/optimized/jsoncpp.cpp.ll
 ; php/optimized/pcre2_match.ll
 ; php/optimized/string.ll
 ; php/optimized/zend_compile.ll
@@ -312,7 +318,6 @@
 ; spike/optimized/socketif.ll
 ; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/tbprobe.ll
-; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
@@ -322,6 +327,8 @@
 ; yosys/optimized/simplify.ll
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; zxing/optimized/PDFBoundingBox.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {

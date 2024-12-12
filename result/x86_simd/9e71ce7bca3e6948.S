@@ -41,7 +41,7 @@
 func000000000000001e:                   # @func000000000000001e
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2   # ymm2 = [2155905153,2155905153,2155905153,2155905153,2155905153,2155905153,2155905153,2155905153]
 	vpmuludq	%ymm2, %ymm1, %ymm1

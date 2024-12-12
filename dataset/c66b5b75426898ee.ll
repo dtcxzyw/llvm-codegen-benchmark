@@ -1,5 +1,7 @@
 
-; 16 occurrences:
+; 18 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
@@ -20,8 +22,8 @@
 define double @func0000000000000000(double %0) #0 {
 entry:
   %1 = fmul double %0, %0
-  %2 = fmul double %1, %0
-  %3 = fmul double %2, %0
+  %2 = fmul double %0, %1
+  %3 = fmul double %0, %2
   ret double %3
 }
 

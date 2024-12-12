@@ -1,7 +1,9 @@
 
-; 18 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/sort_by_side.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; gromacs/optimized/colvarcomp_gpath.cpp.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; gromacs/optimized/msd.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll

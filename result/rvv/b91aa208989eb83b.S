@@ -31,6 +31,14 @@ func00000000000000bb:                   # @func00000000000000bb
 	vmorn.mm	v8, v8, v24
 	vmor.mm	v0, v8, v0
 	ret
+func0000000000000088:                   # @func0000000000000088
+	fli.d	fa5, 2.0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfeq.vf	v24, v16, fa5
+	vmfeq.vf	v16, v8, fa5
+	vmor.mm	v8, v16, v24
+	vmor.mm	v0, v8, v0
+	ret
 func0000000000000022:                   # @func0000000000000022
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmin.vv	v8, v8, v16
@@ -50,14 +58,6 @@ func0000000000000087:                   # @func0000000000000087
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vf	v24, v16, fa5
 	vmfne.vf	v16, v8, fa5
-	vmor.mm	v8, v16, v24
-	vmor.mm	v0, v8, v0
-	ret
-func0000000000000088:                   # @func0000000000000088
-	fli.d	fa5, inf
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfeq.vf	v24, v16, fa5
-	vmfeq.vf	v16, v8, fa5
 	vmor.mm	v8, v16, v24
 	vmor.mm	v0, v8, v0
 	ret

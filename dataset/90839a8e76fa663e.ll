@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; hermes/optimized/Host.cpp.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/Host.cpp.ll
@@ -7,7 +7,6 @@
 ; ncnn/optimized/innerproduct_x86.cpp.ll
 ; openusd/optimized/decodemv.c.ll
 ; rocksdb/optimized/log_writer.cc.ll
-; spike/optimized/interactive.ll
 ; sundials/optimized/arkode_arkstep.c.ll
 ; wireshark/optimized/iax2_analysis_dialog.cpp.ll
 ; Function Attrs: nounwind

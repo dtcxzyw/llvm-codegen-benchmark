@@ -1,4 +1,4 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -9,7 +9,7 @@ func0000000000000084:                   # @func0000000000000084
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpbroadcastd	.LCPI1_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
@@ -21,7 +21,7 @@ func000000000000008c:                   # @func000000000000008c
 	retq
 .LCPI2_0:
 	.long	1                               # 0x1
-func000000000000018a:                   # @func000000000000018a
+func000000000000030a:                   # @func000000000000030a
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpbroadcastd	.LCPI2_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
@@ -33,7 +33,7 @@ func000000000000018a:                   # @func000000000000018a
 	retq
 .LCPI3_0:
 	.long	1                               # 0x1
-func0000000000000196:                   # @func0000000000000196
+func0000000000000326:                   # @func0000000000000326
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpbroadcastd	.LCPI3_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
@@ -45,7 +45,7 @@ func0000000000000196:                   # @func0000000000000196
 	retq
 .LCPI4_0:
 	.long	1                               # 0x1
-func0000000000000186:                   # @func0000000000000186
+func0000000000000306:                   # @func0000000000000306
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpbroadcastd	.LCPI4_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
@@ -57,7 +57,7 @@ func0000000000000186:                   # @func0000000000000186
 	retq
 .LCPI5_0:
 	.long	1                               # 0x1
-func000000000000019b:                   # @func000000000000019b
+func000000000000032b:                   # @func000000000000032b
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpbroadcastd	.LCPI5_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
@@ -69,7 +69,7 @@ func000000000000019b:                   # @func000000000000019b
 	retq
 .LCPI6_0:
 	.long	1                               # 0x1
-func000000000000019a:                   # @func000000000000019a
+func000000000000032a:                   # @func000000000000032a
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpbroadcastd	.LCPI6_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]

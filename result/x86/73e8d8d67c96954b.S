@@ -1,6 +1,6 @@
 func0000000000000003:                   # @func0000000000000003
 	andq	$-983041, %rsi                  # imm = 0xFFF0FFFF
-	leaq	524288(%rsi,%rdi), %rax
+	leaq	524288(%rdi,%rsi), %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	movq	%rsi, %rax

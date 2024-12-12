@@ -12,7 +12,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = udiv i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = mul i64 %5, %0
+  %6 = mul i64 %0, %5
   ret i64 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = udiv i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = mul i64 %5, %0
+  %6 = mul i64 %0, %5
   ret i64 %6
 }
 
@@ -39,7 +39,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = udiv i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = mul nsw i64 %5, %0
+  %6 = mul nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -51,7 +51,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = udiv i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = mul i64 %5, %0
+  %6 = mul i64 %0, %5
   ret i64 %6
 }
 

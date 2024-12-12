@@ -4,7 +4,7 @@
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/scsi_proc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp eq i32 %0, 0

@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 13 occurrences:
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
 ; actix-rs/optimized/3u1jix79tu9frq3m.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
@@ -8,12 +8,17 @@
 ; rust-analyzer-rs/optimized/2ydioyxkoxez3z9r.ll
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = icmp eq i64 %2, %0
+  %4 = icmp eq i64 %0, %2
   %5 = select i1 %4, i64 8, i64 %3
   ret i64 %5
 }

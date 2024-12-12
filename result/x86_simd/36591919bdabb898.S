@@ -1,4 +1,4 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpmovzxwq	%xmm1, %ymm0            # ymm0 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
 	retq
 .LCPI1_0:
@@ -21,7 +21,7 @@ func000000000000001c:                   # @func000000000000001c
 	.zero	2
 .LCPI1_2:
 	.short	7                               # 0x7
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpcmpltuw	.LCPI1_0(%rip), %xmm0, %k1
 	vpbroadcastw	.LCPI1_2(%rip), %xmm0   # xmm0 = [7,7,7,7,7,7,7,7]
 	vmovdqu16	%xmm1, %xmm0 {%k1}

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; clamav/optimized/fmap.c.ll
 ; git/optimized/archive-zip.ll
 ; hdf5/optimized/H5Pdxpl.c.ll
@@ -10,7 +10,6 @@
 ; nuklear/optimized/unity.c.ll
 ; openssl/optimized/openssl-bin-req.ll
 ; php/optimized/spl_array.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; rocksdb/optimized/forward_iterator.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind

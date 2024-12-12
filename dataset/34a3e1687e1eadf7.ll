@@ -1,6 +1,5 @@
 
-; 57 occurrences:
-; abc/optimized/covMinUtil.c.ll
+; 54 occurrences:
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/fs.c.ll
@@ -22,7 +21,6 @@
 ; linux/optimized/linkstate.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/percpu.ll
-; linux/optimized/pse-pd.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/xhci-mem.ll
@@ -37,7 +35,6 @@
 ; nuklear/optimized/unity.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/brightedges.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/cmstypes.ll
 ; openjdk/optimized/countbitsnode.ll
 ; openusd/optimized/cdef_block.c.ll
@@ -58,7 +55,7 @@
 ; wireshark/optimized/packet-rtps.c.ll
 ; yaml-cpp/optimized/emitterstate.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 456, i32 1184
@@ -73,11 +70,11 @@ entry:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; node/optimized/pipe.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 292
-  %5 = icmp ult i32 %1, 2
+  %5 = icmp samesign ult i32 %1, 2
   %6 = select i1 %5, i32 %4, i32 %0
   ret i32 %6
 }
@@ -90,7 +87,7 @@ entry:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86ExpandPseudo.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %2, 0
   %3 = select i1 %.not, i32 0, i32 2
@@ -99,11 +96,12 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/intel_display_power_well.ll
+; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; wireshark/optimized/packet-babel.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 4, i32 16
@@ -116,7 +114,7 @@ entry:
 ; linux/optimized/intel_cdclk.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 83, i32 87
@@ -129,7 +127,7 @@ entry:
 ; linux/optimized/dnotify.ll
 ; linux/optimized/sg.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i32 -3, i32 -1
@@ -141,22 +139,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/act_api.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000301(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 8
+  %3 = icmp samesign ugt i32 %2, 8
   %4 = select i1 %3, i32 -22, i32 0
-  %5 = icmp eq i32 %1, 0
-  %6 = select i1 %5, i32 %4, i32 %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; linux/optimized/fib_trie.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 2
-  %4 = select i1 %3, i32 512, i32 0
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i32 %4, i32 %0
   ret i32 %6
@@ -165,25 +151,24 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_cdclk.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 320000, i32 333333
-  %5 = icmp ugt i32 %1, 266667
+  %5 = icmp samesign ugt i32 %1, 266667
   %6 = select i1 %5, i32 %4, i32 %0
   ret i32 %6
 }
 
-; 3 occurrences:
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; 2 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000094(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 65536
   %4 = select i1 %3, i32 0, i32 16
-  %5 = icmp ult i32 %1, 256
+  %5 = icmp samesign ult i32 %1, 256
   %6 = select i1 %5, i32 %4, i32 %0
   ret i32 %6
 }
@@ -191,7 +176,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.inv = icmp slt i32 %2, 1
   %3 = select i1 %.inv, i32 1, i32 2
@@ -203,11 +188,35 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/big5.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000318(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 160
+  %3 = icmp samesign ugt i32 %2, 160
   %4 = select i1 %3, i32 0, i32 -34
-  %5 = icmp ugt i32 %1, 160
+  %5 = icmp samesign ugt i32 %1, 160
+  %6 = select i1 %5, i32 %4, i32 %0
+  ret i32 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/box_filter.dispatch.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000286(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 5
+  %4 = select i1 %3, i32 5, i32 6
+  %5 = icmp slt i32 %1, 0
+  %6 = select i1 %5, i32 %4, i32 %0
+  ret i32 %6
+}
+
+; 1 occurrences:
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 7
+  %4 = select i1 %3, i32 8, i32 11
+  %5 = icmp ult i32 %1, 4
   %6 = select i1 %5, i32 %4, i32 %0
   ret i32 %6
 }
@@ -215,7 +224,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_testbuffer.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 2, i32 0

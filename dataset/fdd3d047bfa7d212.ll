@@ -20,7 +20,7 @@ entry:
   ret ptr %4
 }
 
-; 40 occurrences:
+; 42 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcNtk.c.ll
@@ -53,20 +53,22 @@ entry:
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/idct.c.ll
+; openusd/optimized/patchTableFactory.cpp.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; redis/optimized/redis-cli.ll
+; stb/optimized/stb_connected_components.c.ll
 ; stockfish/optimized/movepick.ll
 ; stockfish/optimized/position.ll
 ; stockfish/optimized/search.ll
 ; stockfish/optimized/tbprobe.ll
 ; yosys/optimized/fastlz.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw [2 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

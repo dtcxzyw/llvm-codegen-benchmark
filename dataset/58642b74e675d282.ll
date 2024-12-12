@@ -1,13 +1,10 @@
 
-; 15 occurrences:
+; 12 occurrences:
 ; eastl/optimized/TestFunctional.cpp.ll
 ; eastl/optimized/TestStringMap.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; llvm/optimized/MsgPackDocument.cpp.ll
-; llvm/optimized/RangedConstraintManager.cpp.ll
-; llvm/optimized/SimpleSValBuilder.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
 ; openspiel/optimized/QuickTricks.cpp.ll
@@ -23,7 +20,7 @@ entry:
   ret i1 %3
 }
 
-; 111 occurrences:
+; 110 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; cpp-httplib/optimized/httplib.cc.ll
@@ -97,7 +94,6 @@ entry:
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -189,6 +185,19 @@ entry:
 define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %0, %1
+  %3 = freeze i1 %2
+  ret i1 %3
+}
+
+; 4 occurrences:
+; llama.cpp/optimized/llama.cpp.ll
+; llvm/optimized/MsgPackDocument.cpp.ll
+; llvm/optimized/RangedConstraintManager.cpp.ll
+; llvm/optimized/SimpleSValBuilder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ult i8 %0, %1
   %3 = freeze i1 %2
   ret i1 %3
 }

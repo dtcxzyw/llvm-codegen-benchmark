@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -32,7 +32,6 @@
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; postgres/optimized/subselect.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i8 %0) #0 {

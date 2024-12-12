@@ -2,13 +2,13 @@
 ; 1 occurrences:
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = add i32 %3, %4
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
@@ -16,13 +16,13 @@ entry:
 ; cmake/optimized/zdict.c.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = add i32 %3, %4
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 

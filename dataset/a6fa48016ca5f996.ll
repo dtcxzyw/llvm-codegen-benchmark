@@ -22,9 +22,9 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000308(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = zext i32 %1 to i64
@@ -47,9 +47,9 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000105(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000305(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = zext i32 %1 to i64
@@ -65,9 +65,9 @@ entry:
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000306(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 32
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = zext i32 %1 to i64
@@ -78,9 +78,9 @@ entry:
 ; 1 occurrences:
 ; php/optimized/phpdbg_help.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000030a(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = zext i32 %1 to i64
@@ -93,9 +93,9 @@ entry:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000304(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = zext i32 %1 to i64
@@ -106,9 +106,9 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000386(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 64
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 64
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = zext nneg i32 %1 to i64
@@ -119,7 +119,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ieee80211-radiotap-iter.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000008a(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64
@@ -132,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/tvbuff_zlib.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000086(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
@@ -145,9 +145,9 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000388(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1056
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1056
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = zext nneg i32 %1 to i64
@@ -171,7 +171,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/exit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64

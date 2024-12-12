@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/src.ll
 ; git/optimized/diff-merges.ll
 ; spike/optimized/isa_parser.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll

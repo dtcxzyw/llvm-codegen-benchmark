@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; clamav/optimized/extract.cpp.ll
 ; cvc5/optimized/minisat.cpp.ll
 ; glslang/optimized/iomapper.cpp.ll
@@ -16,6 +16,7 @@
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:

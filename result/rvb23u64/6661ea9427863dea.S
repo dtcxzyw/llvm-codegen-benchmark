@@ -10,9 +10,9 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000007:                   # @func0000000000000007
 	andi	a1, a1, 1
 	snez	a2, a2
-	slli	a2, a2, 3
+	slli	a2, a2, 18
 	or	a0, a0, a2
-	li	a2, 2
+	lui	a2, 256
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret

@@ -6,7 +6,7 @@
 ; openjdk/optimized/OGLPaints.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i8 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 4
   %4 = select i1 %1, i32 %3, i32 %2
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/g4x_hdmi.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i8 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000041(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 201326592
   %4 = select i1 %1, i32 %3, i32 %2

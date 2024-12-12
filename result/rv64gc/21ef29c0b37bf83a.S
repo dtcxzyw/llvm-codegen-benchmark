@@ -13,12 +13,12 @@ func0000000000000001:                   # @func0000000000000001
 .LBB1_2:
 	li	a0, 258
 	ret
-func0000000000000014:                   # @func0000000000000014
-	addi	a0, a0, -48
-	li	a1, 10
-	bltu	a0, a1, .LBB2_2
-	li	a0, 2
+func0000000000000024:                   # @func0000000000000024
+	addi	a0, a0, -1
+	srli	a0, a0, 32
+	beqz	a0, .LBB2_2
+	li	a0, 33
 	ret
 .LBB2_2:
-	li	a0, 4
+	li	a0, 1
 	ret

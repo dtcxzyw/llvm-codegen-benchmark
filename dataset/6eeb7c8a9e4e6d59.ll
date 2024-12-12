@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 79 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/darCut.c.ll
@@ -9,6 +9,8 @@
 ; abc/optimized/ivyDfs.c.ll
 ; abc/optimized/mapperCreate.c.ll
 ; abc/optimized/saigIsoFast.c.ll
+; abc/optimized/solver.c.ll
+; abc/optimized/xsatSolver.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/collationsettings.ll
@@ -20,7 +22,6 @@
 ; linux/optimized/early_printk.ll
 ; linux/optimized/fs_context.ll
 ; linux/optimized/g4x_dp.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_backlight.ll
@@ -34,6 +35,18 @@
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
+; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/CGCUDANV.cpp.ll
+; llvm/optimized/CodeGenModule.cpp.ll
+; llvm/optimized/CoroSplit.cpp.ll
+; llvm/optimized/ExpandVariadics.cpp.ll
+; llvm/optimized/FunctionImport.cpp.ll
+; llvm/optimized/FunctionImportUtils.cpp.ll
+; llvm/optimized/GlobalOpt.cpp.ll
+; llvm/optimized/IRMover.cpp.ll
+; llvm/optimized/InstrProfiling.cpp.ll
+; llvm/optimized/LowerEmuTLS.cpp.ll
+; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
@@ -49,6 +62,7 @@
 ; php/optimized/zend_jit.ll
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
+; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; qemu/optimized/tcg.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -69,11 +83,11 @@
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 364 occurrences:
+; 363 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
@@ -101,6 +115,10 @@ entry:
 ; abc/optimized/saigSynch.c.ll
 ; abseil-cpp/optimized/spinlock_wait.cc.ll
 ; assimp/optimized/Exporter.cpp.ll
+; boost/optimized/basic_text_iprimitive.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_wiprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; clamav/optimized/sha1.cpp.ll
 ; clamav/optimized/sha256.cpp.ll
@@ -175,17 +193,13 @@ entry:
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/fib_frontend.ll
 ; linux/optimized/filter.ll
-; linux/optimized/hwsleep.ll
-; linux/optimized/hwxface.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_display_power_well.ll
-; linux/optimized/intel_dkl_phy.ll
 ; linux/optimized/intel_dpio_phy.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_dsi_vbt.ll
@@ -253,7 +267,6 @@ entry:
 ; llvm/optimized/MIRFSDiscriminator.cpp.ll
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/SHA1.cpp.ll
 ; llvm/optimized/SHA256.cpp.ll
@@ -276,6 +289,7 @@ entry:
 ; luau/optimized/BuiltinFolding.cpp.ll
 ; luau/optimized/lbitlib.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
+; lvgl/optimized/lv_canvas.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
 ; minetest/optimized/clientpackethandler.cpp.ll
@@ -284,7 +298,6 @@ entry:
 ; minetest/optimized/settings.cpp.ll
 ; minetest/optimized/sha1.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; node/optimized/linux.ll
@@ -442,7 +455,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

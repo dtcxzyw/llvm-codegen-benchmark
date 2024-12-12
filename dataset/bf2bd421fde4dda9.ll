@@ -5,7 +5,7 @@
 ; miniaudio/optimized/unity.c.ll
 ; spike/optimized/spike.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = select i1 %0, i64 %2, i64 %1
@@ -18,7 +18,7 @@ entry:
 ; abc/optimized/rsbDec6.c.ll
 ; spike/optimized/spike.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 2
   %3 = select i1 %0, i64 %2, i64 %1

@@ -10,3 +10,11 @@ func0000000000000005:                   # @func0000000000000005
 	cmpb	%dil, %sil
 	setbe	%al
 	retq
+func0000000000000009:                   # @func0000000000000009
+	cmpb	%dil, %sil
+	setae	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	cmpb	%dil, %sil
+	seta	%al
+	retq

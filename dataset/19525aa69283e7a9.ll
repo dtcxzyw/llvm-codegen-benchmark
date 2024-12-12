@@ -151,7 +151,7 @@ entry:
   ret i64 %3
 }
 
-; 271 occurrences:
+; 272 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/DeboneProcess.cpp.ll
@@ -159,6 +159,7 @@ entry:
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/SplitByBoneCountProcess.cpp.ll
+; boost/optimized/to_chars.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
@@ -432,7 +433,7 @@ entry:
   ret i64 %3
 }
 
-; 123 occurrences:
+; 122 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/table.cc.ll
@@ -534,7 +535,6 @@ entry:
 ; proj/optimized/singleoperation.cpp.ll
 ; protobuf/optimized/context.cc.ll
 ; protobuf/optimized/message_differencer.cc.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/nonstandardswap.ll
@@ -671,18 +671,6 @@ entry:
   %1 = shl i64 %0, 1
   %2 = add i64 %1, 2
   %3 = and i64 %2, -4
-  ret i64 %3
-}
-
-; 2 occurrences:
-; hyperscan/optimized/ng_find_matches.cpp.ll
-; hyperscan/optimized/ng_squash.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000013(i64 %0) #0 {
-entry:
-  %1 = add nuw i64 %0, 1
-  %2 = lshr i64 %1, 3
-  %3 = and i64 %2, 2305843009213693944
   ret i64 %3
 }
 

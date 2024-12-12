@@ -19,7 +19,7 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000f:                   # @func000000000000000f
 	vpsrld	$16, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
-	vpor	%xmm1, %xmm0, %xmm0
+	vpor	%xmm0, %xmm1, %xmm0
 	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
 	retq
 .LCPI3_0:
@@ -63,7 +63,7 @@ func000000000000000b:                   # @func000000000000000b
 func000000000000000a:                   # @func000000000000000a
 	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
 	vpslld	$24, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpsrld	$7, %ymm0, %ymm0
 	vpandd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq

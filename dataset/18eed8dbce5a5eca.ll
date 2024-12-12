@@ -24,9 +24,9 @@ entry:
 ; 1 occurrences:
 ; php/optimized/crypt_freesec.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i1 %0, i8 %1) #0 {
+define i32 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %1, 96
+  %2 = icmp samesign ugt i8 %1, 96
   %3 = select i1 %2, i32 5, i32 11
   %4 = select i1 %0, i32 %3, i32 18
   ret i32 %4

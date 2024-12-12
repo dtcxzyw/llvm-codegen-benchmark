@@ -13,7 +13,7 @@
 ; redis/optimized/ldblib.ll
 ; slurm/optimized/slurm_protocol_defs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000321(ptr %0, ptr %1) #0 {
+define i32 @func0000000000000641(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32

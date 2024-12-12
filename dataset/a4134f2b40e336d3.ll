@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/src.ll
 ; qemu/optimized/hw_ide_core.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000060(i32 %0, i32 %1) #0 {
@@ -96,7 +97,7 @@ entry:
 define i8 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 2
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 24
   %5 = trunc nuw i32 %4 to i8
   ret i8 %5
@@ -108,7 +109,7 @@ entry:
 define i8 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 16384
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 8
   %5 = trunc i32 %4 to i8
   ret i8 %5
@@ -120,7 +121,7 @@ entry:
 define i8 @func0000000000000022(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -49152
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 24
   %5 = trunc nuw i32 %4 to i8
   ret i8 %5
@@ -135,6 +136,18 @@ entry:
   %3 = add nuw i32 %2, %0
   %4 = lshr i32 %3, 24
   %5 = trunc nuw i32 %4 to i8
+  ret i8 %5
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000062(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 9216
+  %3 = add i32 %2, %0
+  %4 = lshr i32 %3, 12
+  %5 = trunc i32 %4 to i8
   ret i8 %5
 }
 

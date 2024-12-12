@@ -1,6 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
 	vpmovsxdq	%xmm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
 	shrq	$2, %rdx
@@ -26,7 +26,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000002:                   # @func0000000000000002
 	vpmovsxdq	%xmm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
 	movabsq	$4835703278458516699, %rax      # imm = 0x431BDE82D7B634DB

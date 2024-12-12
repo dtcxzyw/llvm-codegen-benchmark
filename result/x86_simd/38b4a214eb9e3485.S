@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	100                             # 0x64
-func0000000000000256:                   # @func0000000000000256
+func00000000000004a6:                   # @func00000000000004a6
 	vpmovqd	%ymm2, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
@@ -13,7 +13,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovqd	%ymm2, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
-	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000009:                   # @func0000000000000009
@@ -21,16 +21,16 @@ func0000000000000009:                   # @func0000000000000009
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpcmpleud	%xmm0, %xmm1, %k0
+	vpcmpnltud	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000020c:                   # @func000000000000020c
+func000000000000040c:                   # @func000000000000040c
 	vpmovqd	%ymm2, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	vzeroupper
 	retq
@@ -40,11 +40,11 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovqd	%ymm2, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpaddd	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
-	vpcmpnleud	%xmm0, %xmm1, %k0
+	vpcmpltud	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpmovqd	%ymm2, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2

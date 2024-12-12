@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	cmpl	$16, %edx
 	setne	%cl
 	xorb	$1, %sil
@@ -7,7 +7,7 @@ func0000000000000016:                   # @func0000000000000016
 	setl	%al
 	orb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testl	%edx, %edx
 	sete	%cl
 	xorb	$1, %sil

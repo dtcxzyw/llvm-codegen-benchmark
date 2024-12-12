@@ -1,9 +1,12 @@
 
-; 341 occurrences:
+; 335 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOAnimation.cpp.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/casadi_low.cpp.ll
 ; casadi/optimized/cvodea.c.ll
@@ -65,7 +68,6 @@
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; gromacs/optimized/colvartypes.cpp.ll
 ; gromacs/optimized/dlaed6.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasd4.cpp.ll
 ; gromacs/optimized/dlasd5.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
@@ -91,7 +93,6 @@
 ; meshlab/optimized/eqhandle.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
@@ -305,7 +306,6 @@
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/geohash.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; stat-rs/optimized/350eqnsjcoc7kbdy.ll
 ; stat-rs/optimized/rkxxfn3f5mhspne.ll
 ; stb/optimized/stb_image_resize2.c.ll
@@ -325,14 +325,8 @@
 ; wireshark/optimized/capture_file_properties_dialog.cpp.ll
 ; wireshark/optimized/gsm_map_summary_dialog.cpp.ll
 ; wireshark/optimized/mtp3_summary_dialog.cpp.ll
-; wireshark/optimized/packet-asap.c.ll
-; wireshark/optimized/packet-calcappprotocol.c.ll
 ; wireshark/optimized/packet-componentstatus.c.ll
-; wireshark/optimized/packet-enrp.c.ll
-; wireshark/optimized/packet-fractalgeneratorprotocol.c.ll
 ; wireshark/optimized/packet-netperfmeter.c.ll
-; wireshark/optimized/packet-pingpongprotocol.c.ll
-; wireshark/optimized/packet-scriptingservice.c.ll
 ; wireshark/optimized/protocol_hierarchy_dialog.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll

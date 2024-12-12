@@ -102,7 +102,7 @@ define i64 @func0000000000000048(i64 %0, i32 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   %6 = zext nneg i32 %1 to i64
   %7 = shl i64 %5, %6
   ret i64 %7
@@ -212,7 +212,7 @@ define i64 @func0000000000000058(i64 %0, i32 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   %6 = zext nneg i32 %1 to i64
   %7 = shl i64 %5, %6
   ret i64 %7
@@ -321,20 +321,21 @@ define i64 @func0000000000000070(i64 %0, i32 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw nsw i128 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = zext nneg i32 %1 to i64
   %7 = shl i64 %5, %6
   ret i64 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000050(i64 %0, i32 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = zext nneg i32 %1 to i64
   %7 = shl i64 %5, %6
   ret i64 %7

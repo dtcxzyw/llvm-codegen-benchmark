@@ -1,7 +1,6 @@
 
-; 243 occurrences:
+; 245 occurrences:
 ; abc/optimized/dauEnum.c.ll
-; actix-rs/optimized/10n8xwgzwz186p0h.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/3a93ytv6s0x7lrtz.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
@@ -243,6 +242,9 @@
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; yosys/optimized/firrtl.ll
 ; z3/optimized/smt_case_split_queue.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i8 %0, i1 %1, i1 %2) #0 {
 entry:
@@ -273,7 +275,7 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; linux/optimized/namei_msdos.ll
 ; llvm/optimized/SemaType.cpp.ll
@@ -281,6 +283,8 @@ entry:
 ; openusd/optimized/mvref_common.c.ll
 ; php/optimized/url.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -290,18 +294,17 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; hyperscan/optimized/rose_build_program.cpp.ll
-; image-rs/optimized/5ez7udly19o3uj1p.ll
+; openjdk/optimized/verifier.ll
 ; php/optimized/url.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
-; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000010(i8 %0, i1 %1, i1 %2) #0 {
+define i1 @func0000000000000010(i1 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = and i1 %1, %2
-  %4 = icmp ugt i8 %0, 3
+  %3 = icmp ugt i8 %2, -5
+  %4 = and i1 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
 }
@@ -316,17 +319,6 @@ define i1 @func0000000000000014(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = icmp sgt i8 %0, 96
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; git/optimized/wildmatch.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = icmp slt i8 %2, 0
-  %4 = and i1 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
 }

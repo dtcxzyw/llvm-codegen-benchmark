@@ -1,9 +1,9 @@
 
-%"struct.re2::WalkState.2486319" = type { ptr, i32, %"struct.re2::Frag.2486279", %"struct.re2::Frag.2486279", %"struct.re2::Frag.2486279", ptr }
-%"struct.re2::Frag.2486279" = type <{ i32, %"struct.re2::PatchList.2486280", i8, [3 x i8] }>
-%"struct.re2::PatchList.2486280" = type { i32, i32 }
+%"struct.re2::WalkState.2601763" = type { ptr, i32, %"struct.re2::Frag.2601723", %"struct.re2::Frag.2601723", %"struct.re2::Frag.2601723", ptr }
+%"struct.re2::Frag.2601723" = type <{ i32, %"struct.re2::PatchList.2601724", i8, [3 x i8] }>
+%"struct.re2::PatchList.2601724" = type { i32, i32 }
 
-; 159 occurrences:
+; 160 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
@@ -12,7 +12,9 @@
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
-; cmake/optimized/archive_write_disk_set_standard_lookup.c.ll
+; boost/optimized/area.ll
+; boost/optimized/numeric.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
 ; cmake/optimized/cmMakefile.cxx.ll
@@ -86,7 +88,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -117,6 +118,7 @@
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPConnectorWithFizz.cpp.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
+; quantlib/optimized/twofactormodel.ll
 ; re2/optimized/compile.cc.ll
 ; re2/optimized/mimics_pcre.cc.ll
 ; re2/optimized/prefilter.cc.ll
@@ -160,14 +162,13 @@
 ; yaml-cpp/optimized/scanner.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %1, 7
-  %3 = getelementptr nusw %"struct.re2::WalkState.2486319", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.re2::WalkState.2601763", ptr %0, i64 %2
   ret ptr %3
 }
 

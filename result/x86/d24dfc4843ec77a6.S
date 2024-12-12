@@ -28,7 +28,7 @@ func0000000000000014:                   # @func0000000000000014
 	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000144:                   # @func0000000000000144
 	cmpl	$99, %edi
 	setb	%cl
 	vucomiss	%xmm1, %xmm0
@@ -49,7 +49,7 @@ func00000000000000a4:                   # @func00000000000000a4
 	seta	%al
 	andb	%cl, %al
 	retq
-func000000000000004d:                   # @func000000000000004d
+func000000000000014d:                   # @func000000000000014d
 	cmpl	$2, %edi
 	setb	%cl
 	vucomiss	%xmm0, %xmm1

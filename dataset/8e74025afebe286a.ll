@@ -18,7 +18,7 @@
 ; wireshark/optimized/wireshark_main_window_slots.cpp.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000018c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false
@@ -33,7 +33,7 @@ entry:
 ; llvm/optimized/TypeRecordMapping.cpp.ll
 ; ockam-rs/optimized/59na08zlxqp9p17s.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false

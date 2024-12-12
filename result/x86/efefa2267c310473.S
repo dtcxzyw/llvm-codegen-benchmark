@@ -26,7 +26,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	shrl	$16, %edx
 	andl	$63, %edx
 	cmpl	%esi, %edx
@@ -37,6 +37,13 @@ func0000000000000004:                   # @func0000000000000004
 	shrl	$3, %edx
 	andl	$268435455, %edx                # imm = 0xFFFFFFF
 	cmpl	%esi, %edx
+	setb	%al
+	andb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	shrl	$3, %edx
+	movzwl	%dx, %eax
+	cmpl	%esi, %eax
 	setb	%al
 	andb	%dil, %al
 	retq

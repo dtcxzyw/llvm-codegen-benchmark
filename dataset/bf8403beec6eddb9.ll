@@ -34,7 +34,7 @@ entry:
   ret i64 %3
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/kitGraph.c.ll
 ; abc/optimized/rwrDec.c.ll
@@ -58,7 +58,6 @@ entry:
 ; postgres/optimized/tuplestore.ll
 ; postgres/optimized/tzparser.ll
 ; postgres/optimized/wparser_def.ll
-; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:

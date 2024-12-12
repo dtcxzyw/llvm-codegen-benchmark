@@ -5,9 +5,9 @@ func0000000000000010:                   # @func0000000000000010
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000050:                   # @func0000000000000050
-	addl	$-65, %edx
-	cmpl	$26, %edx
+func0000000000000090:                   # @func0000000000000090
+	addl	$-1938, %edx                    # imm = 0xF86E
+	cmpl	$-3875, %edx                    # imm = 0xF0DD
 	setb	%al
 	orb	%dil, %sil
 	orb	%sil, %al

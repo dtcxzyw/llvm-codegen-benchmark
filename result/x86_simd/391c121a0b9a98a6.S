@@ -69,7 +69,7 @@ func000000000000000c:                   # @func000000000000000c
 .LCPI3_1:
 	.short	2                               # 0x2
 	.short	2                               # 0x2
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpord	.LCPI3_1(%rip){1to4}, %xmm0, %xmm2
 	vptestnmd	%ymm1, %ymm1, %k1
 	vmovdqu16	%xmm2, %xmm0 {%k1}
@@ -89,7 +89,7 @@ func0000000000000011:                   # @func0000000000000011
 .LCPI4_2:
 	.short	256                             # 0x100
 	.short	256                             # 0x100
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpord	.LCPI4_2(%rip){1to4}, %xmm0, %xmm2
 	vpcmpnleud	.LCPI4_1(%rip){1to8}, %ymm1, %k1
 	vmovdqu16	%xmm2, %xmm0 {%k1}

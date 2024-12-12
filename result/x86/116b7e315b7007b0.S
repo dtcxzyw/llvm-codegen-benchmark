@@ -36,10 +36,10 @@ func0000000000000010:                   # @func0000000000000010
 .LCPI4_0:
 	.long	0x437f0000                      # float 255
 func000000000000000a:                   # @func000000000000000a
-	kmovd	%edi, %k1
-	vcmpnless	.LCPI4_0(%rip), %xmm1, %k2
+	vcmpnless	.LCPI4_0(%rip), %xmm1, %k1
 	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
-	vmovss	%xmm0, %xmm1, %xmm1 {%k2}
+	kmovd	%edi, %k1
+	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
 	vmovaps	%xmm1, %xmm0
 	retq
 func0000000000000006:                   # @func0000000000000006

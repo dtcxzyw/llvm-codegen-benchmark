@@ -1,4 +1,4 @@
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	andb	$15, %sil
 	movzbl	%sil, %eax
 	leaq	12(%rdi,%rax,4), %rax

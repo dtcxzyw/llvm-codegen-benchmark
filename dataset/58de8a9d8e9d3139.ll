@@ -6,12 +6,12 @@
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/facemarkAAM.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -24
   %3 = ashr exact i64 %1, 3
   %4 = add nsw i64 %.neg, %3
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 

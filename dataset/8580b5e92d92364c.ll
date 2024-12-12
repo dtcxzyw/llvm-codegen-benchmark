@@ -19,17 +19,15 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
-; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
-; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = icmp ult i8 %2, 6
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -46,13 +44,36 @@ entry:
 }
 
 ; 2 occurrences:
-; icu/optimized/simpletz.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
+entry:
+  %2 = trunc i32 %1 to i8
+  %3 = icmp samesign ult i8 %2, 5
+  %4 = or i1 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
 ; openusd/optimized/obu.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = icmp ugt i8 %2, 23
+  %4 = or i1 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; icu/optimized/simpletz.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 248
+  %3 = icmp ne i32 %2, 0
   %4 = or i1 %3, %0
   ret i1 %4
 }

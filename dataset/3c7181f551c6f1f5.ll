@@ -11,7 +11,7 @@ define i32 @func000000000000000a(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr i32 %4, 4
   ret i32 %5
 }
@@ -101,7 +101,7 @@ define i32 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 10
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr exact i32 %4, 6
   ret i32 %5
 }
@@ -140,7 +140,9 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; spike/optimized/aes64dsm.ll
 ; spike/optimized/aes64esm.ll
 ; sqlite/optimized/sqlite3.ll
@@ -164,6 +166,17 @@ entry:
   %4 = or i32 %3, %0
   %5 = lshr i32 %4, 16
   ret i32 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = lshr i32 %0, 24
+  %4 = or i32 %3, %2
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

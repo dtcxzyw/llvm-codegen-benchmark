@@ -28,6 +28,16 @@ func0000000000000009:                   # @func0000000000000009
 	cmpl	%edx, %esi
 	cmovbl	%esi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movl	%edi, %eax
+	cmpl	%edx, %esi
+	cmovael	%esi, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%edi, %eax
+	cmpl	%edx, %esi
+	cmovbel	%esi, %eax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
 	cmpl	%edx, %esi

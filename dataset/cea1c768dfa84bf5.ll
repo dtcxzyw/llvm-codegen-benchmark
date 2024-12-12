@@ -1,8 +1,11 @@
 
-; 6 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; yyjson/optimized/yyjson.c.ll
@@ -10,14 +13,16 @@
 define i64 @func0000000000000012(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = add nuw i128 %2, %0
+  %3 = add nuw i128 %0, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
   ret i64 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
 ; openssl/optimized/libcrypto-shlib-f_impl64.ll
@@ -25,13 +30,14 @@ entry:
 define i64 @func000000000000003b(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
-  %3 = add nuw nsw i128 %2, %0
+  %3 = add nuw nsw i128 %0, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw nsw i128 %4 to i64
   ret i64 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/approximately_equals.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
 ; openssl/optimized/libcrypto-lib-scalar.ll
 ; openssl/optimized/libcrypto-shlib-f_impl64.ll
@@ -44,7 +50,7 @@ entry:
 define i64 @func000000000000001b(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = add nuw nsw i128 %2, %0
+  %3 = add nuw nsw i128 %0, %2
   %4 = lshr i128 %3, 56
   %5 = trunc nuw nsw i128 %4 to i64
   ret i64 %5
@@ -65,7 +71,7 @@ entry:
 define i64 @func0000000000000002(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = add i128 %2, %0
+  %3 = add i128 %0, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
   ret i64 %5
@@ -78,7 +84,7 @@ entry:
 define i64 @func000000000000001a(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = add nuw nsw i128 %2, %0
+  %3 = add nuw nsw i128 %0, %2
   %4 = lshr i128 %3, 1
   %5 = trunc nuw i128 %4 to i64
   ret i64 %5
@@ -90,7 +96,7 @@ entry:
 define i64 @func0000000000000022(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
-  %3 = add i128 %2, %0
+  %3 = add i128 %0, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
   ret i64 %5
@@ -102,7 +108,7 @@ entry:
 define i64 @func000000000000000a(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = add nsw i128 %2, %0
+  %3 = add nsw i128 %0, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
   ret i64 %5

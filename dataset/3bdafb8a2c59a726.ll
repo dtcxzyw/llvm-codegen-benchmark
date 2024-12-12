@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/upx.c.ll
 ; libjpeg-turbo/optimized/jdapistd.c.ll
@@ -7,6 +7,7 @@
 ; linux/optimized/percpu.ll
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_roller.ll
 ; postgres/optimized/brin.ll
 ; qemu/optimized/block_block-copy.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll

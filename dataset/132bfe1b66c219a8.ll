@@ -1,5 +1,5 @@
 
-; 117 occurrences:
+; 120 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -17,6 +17,10 @@
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; assimp/optimized/FBXConverter.cpp.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_l.ll
 ; brotli/optimized/utf8_util.c.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/idas.c.ll
@@ -62,7 +66,6 @@
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlar1v.c.ll
 ; openblas/optimized/dlasq2.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; openblas/optimized/dsyequb.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
@@ -125,7 +128,7 @@ entry:
   ret i1 %4
 }
 
-; 106 occurrences:
+; 108 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/xsatSolver.c.ll
@@ -136,6 +139,9 @@ entry:
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_l.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/cvodes_bandpre.c.ll
 ; casadi/optimized/cvodes_bbdpre.c.ll
@@ -150,6 +156,7 @@ entry:
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; graphviz/optimized/circpos.c.ll
+; graphviz/optimized/spring_electrical.c.ll
 ; gromacs/optimized/colvarbias_histogram_reweight_amd.cpp.ll
 ; gromacs/optimized/dlarrbx.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
@@ -163,10 +170,8 @@ entry:
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
-; openblas/optimized/dgesc2.c.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dhgeqz.c.ll
-; openblas/optimized/dlatdf.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
@@ -240,7 +245,7 @@ entry:
   ret i1 %4
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; arrow/optimized/tdigest.cc.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/idas.c.ll
@@ -264,7 +269,6 @@ entry:
 ; openblas/optimized/dlaed2.c.ll
 ; openblas/optimized/dlaed8.c.ll
 ; openblas/optimized/dlahqr.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlaqr5.c.ll
@@ -304,8 +308,9 @@ entry:
   ret i1 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -357,7 +362,7 @@ entry:
   ret i1 %4
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv_test.cc.ll
@@ -389,6 +394,7 @@ entry:
 ; abseil-cpp/optimized/uniform_helper_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area_box_sg.ll
 ; cpython/optimized/mathmodule.ll
 ; graphviz/optimized/legal.c.ll
 ; icu/optimized/plurrule.ll
@@ -405,10 +411,9 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; casadi/optimized/sundials_sptfqmr.c.ll
 ; openblas/optimized/dbbcsd.c.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dlahqr.c.ll
 ; openblas/optimized/dlaln2.c.ll
@@ -431,9 +436,10 @@ entry:
   ret i1 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/cuddZddReord.c.ll
 ; abc/optimized/solver.c.ll
+; boost/optimized/expand_on_spheroid.ll
 ; casadi/optimized/kinsol.c.ll
 ; ceres/optimized/line_search.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll

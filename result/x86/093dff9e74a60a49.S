@@ -1,4 +1,4 @@
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000581:                   # @func0000000000000581
 	xorb	$127, %dl
 	cmpq	$-1, %rsi
 	setne	%cl
@@ -7,7 +7,7 @@ func00000000000001c1:                   # @func00000000000001c1
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000184:                   # @func0000000000000184
+func0000000000000504:                   # @func0000000000000504
 	testb	%dl, %dl
 	sete	%al
 	cmpq	$2, %rsi
@@ -17,7 +17,7 @@ func0000000000000184:                   # @func0000000000000184
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	cmpb	$1, %dl
 	sete	%al
 	cmpq	$1970, %rsi                     # imm = 0x7B2
@@ -25,15 +25,5 @@ func0000000000000111:                   # @func0000000000000111
 	andb	%al, %cl
 	cmpb	$1, %dil
 	sete	%al
-	andb	%cl, %al
-	retq
-func0000000000000114:                   # @func0000000000000114
-	cmpb	$3, %dl
-	sete	%al
-	negq	%rsi
-	seto	%cl
-	andb	%al, %cl
-	cmpb	$2, %dil
-	setb	%al
 	andb	%cl, %al
 	retq

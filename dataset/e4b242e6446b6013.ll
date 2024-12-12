@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; diesel-rs/optimized/6cb7zukciz78xvw.ll
 ; meilisearch-rs/optimized/1cgo24wrkn2cjv53.ll
 ; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define { i32, float } @func0000000000000001(i32 %0) #0 {
 entry:

@@ -1,4 +1,20 @@
 
+; 5 occurrences:
+; abc/optimized/absRpm.c.ll
+; abc/optimized/bmcCexCare.c.ll
+; abc/optimized/fraigMan.c.ll
+; opencv/optimized/filter.dispatch.cpp.ll
+; php/optimized/zend_inheritance.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = xor i32 %1, %2
+  %4 = and i32 %3, 16
+  %5 = icmp ne i32 %4, 0
+  %6 = select i1 %5, i1 true, i1 %0
+  ret i1 %6
+}
+
 ; 10 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
@@ -16,20 +32,6 @@ entry:
   %3 = xor i32 %1, %2
   %4 = and i32 %3, 1
   %5 = icmp eq i32 %4, 0
-  %6 = select i1 %5, i1 true, i1 %0
-  ret i1 %6
-}
-
-; 3 occurrences:
-; abc/optimized/absRpm.c.ll
-; abc/optimized/bmcCexCare.c.ll
-; abc/optimized/fraigMan.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = xor i32 %1, %2
-  %4 = and i32 %3, 1
-  %5 = icmp ne i32 %4, 0
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }

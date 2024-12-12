@@ -1,4 +1,11 @@
 
+%"class.std::vector.15.3650747" = type { %"struct.std::_Bvector_base.3650748" }
+%"struct.std::_Bvector_base.3650748" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3650749" }
+%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3650749" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3650750" }
+%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3650750" = type { %"struct.std::_Bit_iterator.3650751", %"struct.std::_Bit_iterator.3650751", ptr }
+%"struct.std::_Bit_iterator.3650751" = type { %"struct.std::_Bit_iterator_base.base.3650752", [4 x i8] }
+%"struct.std::_Bit_iterator_base.base.3650752" = type <{ ptr, i32 }>
+
 ; 1 occurrences:
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; Function Attrs: nounwind
@@ -15,13 +22,33 @@ entry:
 ; lodepng/optimized/pngdetail.cpp.ll
 ; openjdk/optimized/node.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %1, 3
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %3
   ret ptr %6
+}
+
+; 9 occurrences:
+; arrow/optimized/api_scalar.cc.ll
+; arrow/optimized/diff.cc.ll
+; draco/optimized/adaptive_rans_bit_encoder.cc.ll
+; hyperscan/optimized/ng_depth.cpp.ll
+; nlohmann_json/optimized/unit-regression1.cpp.ll
+; opencv/optimized/infer_ie_onnx_hybrid.cpp.ll
+; opencv/optimized/layers_common.cpp.ll
+; quantlib/optimized/laplaceinterpolation.ll
+; yosys/optimized/rtlil.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %.idx = shl i64 %1, 6
+  %4 = getelementptr i8, ptr %0, i64 %.idx
+  %5 = getelementptr i64, ptr %4, i64 %3
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -66,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %.idx = shl i64 %1, 2
@@ -75,25 +102,17 @@ entry:
   ret ptr %5
 }
 
-; 10 occurrences:
-; arrow/optimized/api_scalar.cc.ll
-; arrow/optimized/diff.cc.ll
-; draco/optimized/adaptive_rans_bit_encoder.cc.ll
-; hyperscan/optimized/ng_depth.cpp.ll
-; nlohmann_json/optimized/unit-regression1.cpp.ll
+; 2 occurrences:
 ; opencv/optimized/core_detect.cpp.ll
-; opencv/optimized/infer_ie_onnx_hybrid.cpp.ll
-; opencv/optimized/layers_common.cpp.ll
-; yosys/optimized/rtlil.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = shl nsw i64 %1, 3
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %3
-  ret ptr %6
+  %.idx = mul i64 %1, 320
+  %4 = getelementptr i8, ptr %0, i64 %.idx
+  %5 = getelementptr %"class.std::vector.15.3650747", ptr %4, i64 %3
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -111,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/fmu2.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000056(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000057(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %.idx = shl i64 %1, 6

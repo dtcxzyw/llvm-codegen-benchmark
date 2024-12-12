@@ -13,11 +13,11 @@ define i1 @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
-; 98 occurrences:
+; 99 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; linux/optimized/gro_cells.ll
@@ -25,6 +25,7 @@ entry:
 ; linux/optimized/io_uring.ll
 ; linux/optimized/rock.ll
 ; linux/optimized/slab_common.ll
+; lvgl/optimized/lv_tlsf.ll
 ; mimalloc/optimized/alloc-aligned.c.ll
 ; openjdk/optimized/archiveBuilder.ll
 ; openjdk/optimized/archiveHeapWriter.ll
@@ -121,7 +122,7 @@ define i1 @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -132,7 +133,7 @@ define i1 @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ne ptr %4, %0
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
@@ -265,7 +266,7 @@ define i1 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
@@ -337,7 +338,7 @@ define i1 @func0000000000000005(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp uge ptr %4, %0
+  %5 = icmp ule ptr %0, %4
   ret i1 %5
 }
 
@@ -414,11 +415,11 @@ entry:
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
@@ -490,11 +491,11 @@ entry:
 ; openjdk/optimized/shenandoahHeapRegion.ll
 ; openjdk/optimized/whitebox.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000025(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp uge ptr %4, %0
+  %5 = icmp ule ptr %0, %4
   ret i1 %5
 }
 
@@ -502,22 +503,22 @@ entry:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; openjdk/optimized/continuationWrapper.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ule ptr %4, %0
+  %5 = icmp uge ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/shenandoahMark.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
@@ -525,11 +526,11 @@ entry:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; openjdk/optimized/constMethod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -537,33 +538,33 @@ entry:
 ; llvm/optimized/DIExpressionOptimizer.cpp.ll
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ne ptr %4, %0
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/DIExpressionOptimizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -574,7 +575,7 @@ define i1 @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ule ptr %4, %0
+  %5 = icmp uge ptr %0, %4
   ret i1 %5
 }
 

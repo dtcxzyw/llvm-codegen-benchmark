@@ -1,6 +1,7 @@
 
-; 45 occurrences:
+; 47 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/h16_rule.ll
 ; c3c/optimized/context.c.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; graphviz/optimized/chresc.c.ll
@@ -24,7 +25,8 @@
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/JumpThreading.cpp.ll
 ; llvm/optimized/LoopInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaPPC.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; openjdk/optimized/classFileParser.ll

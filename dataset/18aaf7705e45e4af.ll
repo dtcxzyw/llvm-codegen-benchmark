@@ -1,8 +1,11 @@
 
-; 51 occurrences:
+; 55 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; clamav/optimized/cmddata.cpp.ll
 ; cmake/optimized/transfer.c.ll
+; flatbuffers/optimized/idl_gen_swift.cpp.ll
 ; git/optimized/sequencer.ll
 ; glslang/optimized/Intermediate.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -51,6 +54,7 @@
 ; z3/optimized/mpbq.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -60,10 +64,9 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; arrow/optimized/UriParse.c.ll
-; clamav/optimized/xz_iface.c.ll
 ; git/optimized/fast-export.ll
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
@@ -100,7 +103,8 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/area.ll
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
@@ -118,11 +122,11 @@ entry:
 }
 
 ; 5 occurrences:
+; boost/optimized/text_file_backend.ll
 ; icu/optimized/indiancal.ll
 ; jsonnet/optimized/formatter.cpp.ll
 ; llvm/optimized/GlobalMerge.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; opencv/optimized/grfmt_exr.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -132,10 +136,9 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; cmake/optimized/inet.c.ll
 ; freetype/optimized/type1cid.c.ll
-; glslang/optimized/Initialize.cpp.ll
 ; libuv/optimized/inet.c.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/CGLoopInfo.cpp.ll
@@ -145,13 +148,38 @@ entry:
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; luau/optimized/main.cpp.ll
+; nlohmann_json/optimized/unit.cpp.ll
 ; node/optimized/inet.ll
-; opencv/optimized/hough.cpp.ll
+; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; wireshark/optimized/packet-mbim.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 255
+  %4 = select i1 %0, i1 %1, i1 false
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; glslang/optimized/Initialize.cpp.ll
+; opencv/optimized/hough.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 3
+  %4 = select i1 %0, i1 %1, i1 false
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/grfmt_exr.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 4
   %4 = select i1 %0, i1 %1, i1 false
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5

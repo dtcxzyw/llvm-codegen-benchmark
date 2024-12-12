@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; cpython/optimized/dtoa.ll
+; 6 occurrences:
 ; lightgbm/optimized/gbdt_prediction.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll

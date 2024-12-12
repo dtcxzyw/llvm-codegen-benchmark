@@ -4,14 +4,14 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	movzwl	%dx, %eax
 	shll	$4, %esi
 	addl	%eax, %esi
 	cmpl	%edi, %esi
 	seta	%al
 	retq
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	movzwl	%dx, %eax
 	leal	(%rax,%rsi,2), %eax
 	cmpl	%edi, %eax

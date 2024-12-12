@@ -24,11 +24,12 @@ entry:
   %3 = lshr i128 %2, 64
   %4 = xor i128 %3, %2
   %5 = trunc i128 %4 to i64
-  %6 = xor i64 %5, %0
+  %6 = xor i64 %0, %5
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/src.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
 ; quantlib/optimized/gaussian1dmodel.ll
@@ -40,7 +41,7 @@ entry:
   %3 = lshr i128 %2, 64
   %4 = xor i128 %3, %2
   %5 = trunc i128 %4 to i64
-  %6 = xor i64 %5, %0
+  %6 = xor i64 %0, %5
   ret i64 %6
 }
 

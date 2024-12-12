@@ -27,7 +27,7 @@
 define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = or disjoint i64 %4, 1
   %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
@@ -37,12 +37,12 @@ entry:
 ; ncnn/optimized/lstm_x86_avx2.cpp.ll
 ; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = or disjoint i64 %4, 1
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -52,7 +52,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = or disjoint i64 %4, 1
   %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6

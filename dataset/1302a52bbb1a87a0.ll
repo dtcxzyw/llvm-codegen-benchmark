@@ -31,7 +31,7 @@
 ; abc/optimized/sfmSat.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000137(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000237(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp slt i32 %0, 7
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000127(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000227(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp ult i32 %0, 117440512
@@ -61,7 +61,7 @@ entry:
 ; abc/optimized/kitIsop.c.ll
 ; abc/optimized/mioParse.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000133(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000233(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp slt i32 %0, 7
@@ -76,27 +76,39 @@ entry:
 ; abc/optimized/abcRpo.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000001a7(i32 %0, i32 %1) #0 {
+define i64 @func00000000000003a7(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
-  %3 = icmp ult i32 %0, 7
+  %3 = icmp samesign ult i32 %0, 7
   %4 = select i1 %3, i32 1, i32 %2
   %5 = zext nneg i32 %4 to i64
   %6 = shl nuw nsw i64 %5, 3
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
-; llvm/optimized/MetadataLoader.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000123(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000223(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp ult i32 %0, 7
   %4 = select i1 %3, i32 1, i32 %2
   %5 = zext i32 %4 to i64
   %6 = shl nuw nsw i64 %5, 3
+  ret i64 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/MetadataLoader.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000002a3(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 1, %1
+  %3 = icmp samesign ult i32 %0, 16
+  %4 = select i1 %3, i32 64, i32 %2
+  %5 = zext i32 %4 to i64
+  %6 = shl nuw nsw i64 %5, 2
   ret i64 %6
 }
 

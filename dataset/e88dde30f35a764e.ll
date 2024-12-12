@@ -11,12 +11,13 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/ivyCheck.c.ll
 ; abc/optimized/ivyDfs.c.ll
 ; abc/optimized/ivyUtil.c.ll
 ; icu/optimized/usprep.ll
 ; icu/optimized/utrie2.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; velox/optimized/LzoDecompressor.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
@@ -53,13 +54,12 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; hyperscan/optimized/repeatcompile.cpp.ll
+; 1 occurrences:
 ; icu/optimized/ucasemap.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a3(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 880
+  %2 = icmp samesign ult i32 %1, 880
   %3 = select i1 %2, i32 320, i32 0
   %4 = lshr i32 %0, 5
   %5 = add nuw nsw i32 %4, %3
@@ -67,11 +67,23 @@ entry:
 }
 
 ; 1 occurrences:
+; hyperscan/optimized/repeatcompile.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 254
+  %3 = select i1 %2, i32 2, i32 4
+  %4 = lshr i32 %0, 3
+  %5 = add nuw nsw i32 %3, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; cpython/optimized/_codecs_jp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a2(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 62
+  %2 = icmp samesign ult i32 %1, 62
   %3 = select i1 %2, i32 129, i32 193
   %4 = lshr i32 %0, 1
   %5 = add nuw i32 %3, %4

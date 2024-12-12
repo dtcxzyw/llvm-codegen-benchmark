@@ -47,26 +47,41 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a0, a0, -33
 	addi	a0, a0, 361
 	ret
-func000000000000000a:                   # @func000000000000000a
+func0000000000000018:                   # @func0000000000000018
 	sext.w	a1, a1
-	bgtz	a1, .LBB4_2
-	li	a1, 100
+	li	a2, 28
+	bltu	a2, a1, .LBB4_2
+	li	a1, -20
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret
 .LBB4_2:
+	li	a1, -13
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	and	a0, a0, a1
+	ret
+func000000000000000a:                   # @func000000000000000a
+	sext.w	a1, a1
+	bgtz	a1, .LBB5_2
+	li	a1, 100
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	and	a0, a0, a1
+	ret
+.LBB5_2:
 	li	a1, -100
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andi	a0, a0, 1
-	bnez	a0, .LBB5_2
+	bnez	a0, .LBB6_2
 	li	a0, -126
 	ret
-.LBB5_2:
+.LBB6_2:
 	sext.w	a1, a1
 	sltiu	a0, a1, 127
 	addi	a0, a0, -32

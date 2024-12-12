@@ -24,7 +24,7 @@ entry:
 define double @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sitofp i32 %3 to double
   ret double %4
 }
@@ -40,14 +40,13 @@ entry:
   ret double %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openblas/optimized/dgegv.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; Function Attrs: nounwind
 define double @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sitofp i32 %3 to double
   ret double %4
 }

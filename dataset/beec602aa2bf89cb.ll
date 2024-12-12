@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_edge_shape.cpp.ll
@@ -39,6 +39,7 @@
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

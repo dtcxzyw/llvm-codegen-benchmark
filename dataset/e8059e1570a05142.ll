@@ -1,10 +1,8 @@
 
-; 32 occurrences:
+; 30 occurrences:
 ; abc/optimized/abcHaig.c.ll
 ; abc/optimized/cutMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/mapperCut.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_clipping.c.ll

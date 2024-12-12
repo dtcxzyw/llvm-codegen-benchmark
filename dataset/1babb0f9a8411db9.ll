@@ -1,9 +1,7 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; linux/optimized/dm-stats.ll
-; linux/optimized/ich8lan.ll
-; linux/optimized/netdev.ll
 ; luajit/optimized/buildvm_lib.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; wireshark/optimized/packet-acr122.c.ll

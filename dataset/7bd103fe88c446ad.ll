@@ -82,7 +82,7 @@ entry:
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fmul float %4, 5.000000e-01
   %6 = fcmp ult float %5, 0x400921FB60000000
   ret i1 %6

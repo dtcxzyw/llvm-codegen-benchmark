@@ -1,14 +1,26 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; lief/optimized/pem.c.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(i64 %0, ptr %1, i8 %2) #0 {
+define i64 @func000000000000002f(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 13
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = ptrtoint ptr %6 to i64
+  ret i64 %7
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002e(i64 %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = icmp eq i8 %2, 45
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7

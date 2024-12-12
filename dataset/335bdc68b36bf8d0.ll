@@ -1,12 +1,11 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/acecCl.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sbdCut2.c.ll
+; abc/optimized/sbdWin.c.ll
 ; gromacs/optimized/gmx_tcaf.cpp.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openjdk/optimized/mlib_ImageCreate.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind

@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.quad	0xbf50624dd2f1a9fc              # double -0.001
+	.quad	0x3f747ae147ae147b              # double 0.0050000000000000001
 .LCPI0_1:
-	.quad	0x3fd3333333333333              # double 0.29999999999999999
+	.quad	0x3ff0000000000000              # double 1
 func0000000000000004:                   # @func0000000000000004
 	vaddsd	.LCPI0_0(%rip), %xmm1, %xmm1
 	kmovd	%edi, %k1

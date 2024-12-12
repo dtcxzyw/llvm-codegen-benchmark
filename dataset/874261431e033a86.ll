@@ -17,7 +17,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000001ad(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000002ad(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smin.i32(i32 %2, i32 0)
   %4 = add i32 %3, %0
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000001ac(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000002ac(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smin.i32(i32 %2, i32 0)
   %4 = add i32 %3, %0

@@ -32,7 +32,7 @@
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-xml.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i16 %0) #0 {
+define i32 @func0000000000000021(i16 %0) #0 {
 entry:
   %1 = icmp eq i16 %0, 10
   %2 = select i1 %1, i32 28, i32 0
@@ -47,7 +47,7 @@ entry:
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i16 %0) #0 {
+define i32 @func0000000000000084(i16 %0) #0 {
 entry:
   %1 = icmp ult i16 %0, 10000
   %2 = select i1 %1, i32 4, i32 5
@@ -57,21 +57,9 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/intel_display_irq.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000081(i16 %0) #0 {
-entry:
-  %1 = icmp ugt i16 %0, 8
-  %2 = select i1 %1, i32 234881025, i32 1
-  %3 = icmp eq i16 %0, 11
-  %4 = select i1 %3, i32 1040187393, i32 %2
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; linux/optimized/intel_dp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000088(i16 %0) #0 {
+define i32 @func0000000000000108(i16 %0) #0 {
 entry:
   %1 = icmp ugt i16 %0, 10
   %2 = select i1 %1, i32 61440, i32 49152
@@ -83,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/i9xx_wm.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i16 %0) #0 {
+define i32 @func0000000000000028(i16 %0) #0 {
 entry:
   %1 = icmp eq i16 %0, 7
   %2 = select i1 %1, i32 768, i32 512

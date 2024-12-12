@@ -1,10 +1,10 @@
 
-%"class.easylog::record_t.2663349" = type { %"class.std::chrono::time_point.2663350", i32, i32, %"class.std::__cxx11::basic_string.2663237", %"class.std::__cxx11::basic_string.2663237" }
-%"class.std::chrono::time_point.2663350" = type { %"class.std::chrono::duration.2663323" }
-%"class.std::chrono::duration.2663323" = type { i64 }
-%"class.std::__cxx11::basic_string.2663237" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2663245", i64, %union.anon.76.2663246 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2663245" = type { ptr }
-%union.anon.76.2663246 = type { i64, [8 x i8] }
+%"class.easylog::record_t.2776466" = type { %"class.std::chrono::time_point.2776467", i32, i32, %"class.std::__cxx11::basic_string.2776354", %"class.std::__cxx11::basic_string.2776354" }
+%"class.std::chrono::time_point.2776467" = type { %"class.std::chrono::duration.2776440" }
+%"class.std::chrono::duration.2776440" = type { i64 }
+%"class.std::__cxx11::basic_string.2776354" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2776362", i64, %union.anon.76.2776363 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2776362" = type { ptr }
+%union.anon.76.2776363 = type { i64, [8 x i8] }
 
 ; 93 occurrences:
 ; openjdk/optimized/archiveHeapLoader.ll
@@ -101,12 +101,12 @@
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000148(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i64, ptr %3, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 -16
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -118,19 +118,19 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -1
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/continuation.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a9(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000149(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw ptr, ptr %3, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 -16
-  %6 = icmp ule ptr %5, %0
+  %6 = icmp uge ptr %0, %5
   ret i1 %6
 }
 
@@ -162,11 +162,11 @@ entry:
 ; z3/optimized/rule_properties.cpp.ll
 ; z3/optimized/smt_consequences.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr %"class.easylog::record_t.2663349", ptr %3, i64 %1, i32 4, i32 2
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr nuw %"class.easylog::record_t.2776466", ptr %3, i64 %1, i32 4, i32 2
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -178,19 +178,19 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 16
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001ec(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 32
-  %6 = icmp ne ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 32
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 

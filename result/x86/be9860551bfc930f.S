@@ -27,9 +27,15 @@ func0000000000000019:                   # @func0000000000000019
 	movl	%edi, %eax
 	cmoveq	%rsi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	xorl	%eax, %eax
 	cmpq	$8, %rsi
+	movl	%edi, %ecx
+	cmovaeq	%rcx, %rax
+	retq
+func0000000000000011:                   # @func0000000000000011
+	xorl	%eax, %eax
+	cmpq	$9, %rsi
 	movl	%edi, %ecx
 	cmovaeq	%rcx, %rax
 	retq

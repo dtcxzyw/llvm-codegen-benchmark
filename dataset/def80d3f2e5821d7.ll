@@ -26,8 +26,7 @@ entry:
   ret ptr %7
 }
 
-; 3 occurrences:
-; git/optimized/worktree.ll
+; 2 occurrences:
 ; slurm/optimized/hostlist.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

@@ -80,6 +80,16 @@ func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a1
 	addi	a0, a0, 12
 	ret
+func0000000000000008:                   # @func0000000000000008
+	sub	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, -1
+	ret
+func0000000000000028:                   # @func0000000000000028
+	sub	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, -1
+	ret
 func0000000000000006:                   # @func0000000000000006
 	sub	a1, a1, a2
 	add	a0, a0, a1

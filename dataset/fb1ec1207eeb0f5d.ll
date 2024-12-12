@@ -32,15 +32,13 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; linux/optimized/centaur.ll
+; 2 occurrences:
 ; linux/optimized/therm_throt.ll
-; linux/optimized/zhaoxin.ll
 ; postgres/optimized/gram.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
-  %2 = or i32 %1, 128
+  %2 = or i32 %1, 33554432
   %3 = zext i32 %2 to i64
   %4 = and i64 %0, -4294967296
   %5 = or disjoint i64 %4, %3

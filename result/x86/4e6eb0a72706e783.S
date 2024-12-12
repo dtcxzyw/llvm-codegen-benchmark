@@ -1,4 +1,4 @@
-func00000000000000a6:                   # @func00000000000000a6
+func00000000000000ae:                   # @func00000000000000ae
 	movb	$4, %al
 	subb	%sil, %al
 	cmpl	$-1085, %edx                    # imm = 0xFBC3

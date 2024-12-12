@@ -58,7 +58,7 @@ func0000000000000001:                   # @func0000000000000001
 .LCPI1_2:
 	.short	65534                           # 0xfffe
 	.short	65534                           # 0xfffe
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpternlogd	$168, .LCPI1_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = mem & (ymm0 | ymm1)
 	vpcmpeqw	.LCPI1_1(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -104,7 +104,7 @@ func000000000000000c:                   # @func000000000000000c
 	.short	154                             # 0x9a
 	.short	154                             # 0x9a
 	.short	154                             # 0x9a
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpor	%ymm1, %ymm0, %ymm0
 	vptestmw	.LCPI3_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0

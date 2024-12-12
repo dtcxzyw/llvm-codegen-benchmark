@@ -1,22 +1,14 @@
 
-; 10 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
+; 2 occurrences:
 ; linux/optimized/drm_hdcp_helper.ll
-; openjdk/optimized/hb-aat-layout.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-ot-shape-fallback.ll
-; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = or disjoint i32 %0, %1
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ult i32 %5, 2
+  %6 = icmp samesign ult i32 %5, 2
   ret i1 %6
 }
 
@@ -27,7 +19,7 @@ entry:
 ; linux/optimized/mac.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000bc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000016c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = or disjoint i32 %0, %1
@@ -59,7 +51,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; spike/optimized/fdt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = or disjoint i32 %0, %1
@@ -75,7 +67,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; spike/optimized/fdt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000164(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
   %4 = or disjoint i32 %0, %1
@@ -95,7 +87,7 @@ entry:
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001ec(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %0, %1
@@ -124,7 +116,7 @@ entry:
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %0, %1
@@ -144,7 +136,7 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %0, %1
@@ -153,11 +145,30 @@ entry:
   ret i1 %6
 }
 
+; 8 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-shape-fallback.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e4(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 8
+  %4 = or disjoint i32 %0, %1
+  %5 = or disjoint i32 %4, %3
+  %6 = icmp ult i32 %5, 65537
+  ret i1 %6
+}
+
 ; 2 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or i32 %0, %1
@@ -170,12 +181,12 @@ entry:
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000178(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
   %4 = or disjoint i32 %0, %1
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ugt i32 %5, 1
+  %6 = icmp samesign ugt i32 %5, 1
   ret i1 %6
 }
 
@@ -183,7 +194,7 @@ entry:
 ; hdf5/optimized/H5Cimage.c.ll
 ; hdf5/optimized/H5Olayout.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = shl nuw i32 %0, 24
@@ -193,9 +204,33 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000108(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw i32 %2, 24
+  %4 = or i32 %0, %1
+  %5 = or i32 %4, %3
+  %6 = icmp ugt i32 %5, -50331649
+  ret i1 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000104(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw i32 %2, 24
+  %4 = or i32 %0, %1
+  %5 = or i32 %4, %3
+  %6 = icmp ult i32 %5, 50331648
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; regex-rs/optimized/11vfjke4utuj478u.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 27
   %4 = or i32 %0, %1
@@ -210,7 +245,7 @@ entry:
 ; llvm/optimized/NativeEnumInjectedSources.cpp.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 7
   %4 = or disjoint i32 %0, %1
@@ -225,7 +260,7 @@ entry:
 ; libjpeg-turbo/optimized/rdbmp.c.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ba(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
   %4 = or disjoint i32 %0, %1

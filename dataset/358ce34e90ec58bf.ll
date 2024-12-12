@@ -30,25 +30,6 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
-; openblas/optimized/dtrmv_thread_NLN.c.ll
-; openblas/optimized/dtrmv_thread_NLU.c.ll
-; openblas/optimized/dtrmv_thread_NUN.c.ll
-; openblas/optimized/dtrmv_thread_NUU.c.ll
-; openblas/optimized/dtrmv_thread_TLN.c.ll
-; openblas/optimized/dtrmv_thread_TLU.c.ll
-; openblas/optimized/dtrmv_thread_TUN.c.ll
-; openblas/optimized/dtrmv_thread_TUU.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 9223372036854775804
-  %4 = add nuw nsw i64 %3, 16
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = getelementptr nusw double, ptr %0, i64 %5
-  ret ptr %6
-}
-
 ; 2 occurrences:
 ; openblas/optimized/dtrsm_kernel_LN.c.ll
 ; openblas/optimized/strsm_kernel_LN.c.ll

@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/tcp_timer.ll
 ; php/optimized/tar.ll
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i1 %1, i1 %2) #0 {
 entry:

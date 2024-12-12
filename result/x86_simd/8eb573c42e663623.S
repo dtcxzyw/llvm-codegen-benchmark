@@ -44,10 +44,18 @@ func0000000000000011:                   # @func0000000000000011
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI6_0:
+	.long	4294967289                      # 0xfffffff9
+func0000000000000035:                   # @func0000000000000035
+	vpmovqd	%ymm0, %xmm0
+	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
+	vpsrld	$3, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+.LCPI7_0:
 	.long	4095                            # 0xfff
 func000000000000002d:                   # @func000000000000002d
 	vpmovqd	%ymm0, %xmm0
-	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
+	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrld	$12, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq

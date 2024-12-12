@@ -23,17 +23,17 @@ func000000000000003f:                   # @func000000000000003f
 	imull	%esi, %edi
 	imull	%edi, %eax
 	retq
-func000000000000003c:                   # @func000000000000003c
-	leal	1(%rdx), %eax
-	imull	%esi, %edi
-	imull	%edi, %eax
-	retq
 func0000000000000035:                   # @func0000000000000035
 	leal	1(%rdx), %eax
 	imull	%esi, %edi
 	imull	%edi, %eax
 	retq
 func000000000000003d:                   # @func000000000000003d
+	leal	1(%rdx), %eax
+	imull	%esi, %edi
+	imull	%edi, %eax
+	retq
+func000000000000003c:                   # @func000000000000003c
 	leal	1(%rdx), %eax
 	imull	%esi, %edi
 	imull	%edi, %eax

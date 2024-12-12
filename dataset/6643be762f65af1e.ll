@@ -6,15 +6,15 @@
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000004(i16 %0, i16 %1, i16 %2) #0 {
+define i16 @func0000000000000014(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 3584
-  %4 = icmp ult i16 %3, 2560
+  %4 = icmp samesign ult i16 %3, 2560
   %5 = select i1 %4, i16 %0, i16 %1
   ret i16 %5
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
@@ -23,7 +23,6 @@ entry:
 ; linux/optimized/amd64-agp.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/ht.ll
 ; linux/optimized/i2c-core-base.ll
 ; linux/optimized/intel_sdvo.ll
 ; llvm/optimized/ProgramState.cpp.ll

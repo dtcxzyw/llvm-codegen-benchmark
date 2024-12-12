@@ -10,7 +10,7 @@ entry:
   ret i32 %4
 }
 
-; 14 occurrences:
+; 18 occurrences:
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
@@ -25,6 +25,10 @@ entry:
 ; xgboost/optimized/quantile_obj.cc.ll
 ; xgboost/optimized/regression_obj.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -34,7 +38,7 @@ entry:
   ret i32 %4
 }
 
-; 54 occurrences:
+; 52 occurrences:
 ; eastl/optimized/TestFixedHash.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -43,7 +47,6 @@ entry:
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -80,7 +83,6 @@ entry:
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/proc_mux.ll
 ; yosys/optimized/proc_rmdead.ll
-; yosys/optimized/qwp.ll
 ; yosys/optimized/scopeinfo.ll
 ; yosys/optimized/share.ll
 ; yosys/optimized/sim.ll
@@ -98,12 +100,11 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; eastl/optimized/TestFixedHash.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; llvm/optimized/CheckPlacementNew.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -124,19 +125,14 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 7 occurrences:
 ; eastl/optimized/TestFixedHash.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; yosys/optimized/iopadmap.ll
 ; yosys/optimized/memory_share.ll
-; yosys/optimized/opt_demorgan.ll
-; yosys/optimized/opt_dff.ll
 ; yosys/optimized/opt_lut.ll
 ; yosys/optimized/opt_muxtree.ll
-; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/qwp.ll
-; yosys/optimized/verilog_backend.ll
-; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
@@ -152,17 +148,6 @@ entry:
 define i32 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = trunc nuw i64 %0 to i32
-  %4 = urem i32 %3, %2
-  ret i32 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i64 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw i64 %1 to i32
   %3 = trunc nuw i64 %0 to i32
   %4 = urem i32 %3, %2
   ret i32 %4

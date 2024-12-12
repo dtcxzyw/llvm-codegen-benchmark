@@ -1,6 +1,13 @@
 
-; 221 occurrences:
+; 213 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cpython/optimized/cmathmodule.ll
 ; cpython/optimized/complexobject.ll
 ; graphviz/optimized/arrows.c.ll
@@ -49,7 +56,6 @@
 ; proj/optimized/aitoff.cpp.ll
 ; proj/optimized/august.cpp.ll
 ; proj/optimized/axisswap.cpp.ll
-; proj/optimized/bacon.cpp.ll
 ; proj/optimized/bertin1953.cpp.ll
 ; proj/optimized/bipc.cpp.ll
 ; proj/optimized/boggs.cpp.ll
@@ -57,16 +63,12 @@
 ; proj/optimized/calcofi.cpp.ll
 ; proj/optimized/cart.cpp.ll
 ; proj/optimized/cass.cpp.ll
-; proj/optimized/cc.cpp.ll
 ; proj/optimized/ccon.cpp.ll
 ; proj/optimized/cea.cpp.ll
 ; proj/optimized/chamb.cpp.ll
 ; proj/optimized/col_urban.cpp.ll
-; proj/optimized/collg.cpp.ll
 ; proj/optimized/comill.cpp.ll
-; proj/optimized/crast.cpp.ll
 ; proj/optimized/denoy.cpp.ll
-; proj/optimized/eck1.cpp.ll
 ; proj/optimized/eck2.cpp.ll
 ; proj/optimized/eck3.cpp.ll
 ; proj/optimized/eck4.cpp.ll
@@ -74,10 +76,8 @@
 ; proj/optimized/eqc.cpp.ll
 ; proj/optimized/eqdc.cpp.ll
 ; proj/optimized/eqearth.cpp.ll
-; proj/optimized/fahey.cpp.ll
 ; proj/optimized/fouc_s.cpp.ll
 ; proj/optimized/fwd.cpp.ll
-; proj/optimized/gall.cpp.ll
 ; proj/optimized/gauss.cpp.ll
 ; proj/optimized/generic_inverse.cpp.ll
 ; proj/optimized/geocent.cpp.ll
@@ -102,24 +102,20 @@
 ; proj/optimized/labrd.cpp.ll
 ; proj/optimized/laea.cpp.ll
 ; proj/optimized/lagrng.cpp.ll
-; proj/optimized/larr.cpp.ll
 ; proj/optimized/lask.cpp.ll
 ; proj/optimized/latlong.cpp.ll
 ; proj/optimized/lcc.cpp.ll
 ; proj/optimized/lcca.cpp.ll
 ; proj/optimized/loxim.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpp.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/merc.cpp.ll
-; proj/optimized/mill.cpp.ll
 ; proj/optimized/mod_ster.cpp.ll
 ; proj/optimized/moll.cpp.ll
 ; proj/optimized/molodensky.cpp.ll
 ; proj/optimized/natearth.cpp.ll
 ; proj/optimized/natearth2.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/nicol.cpp.ll
 ; proj/optimized/nsper.cpp.ll
 ; proj/optimized/nzmg.cpp.ll
@@ -147,7 +143,6 @@
 ; proj/optimized/stere.cpp.ll
 ; proj/optimized/sterea.cpp.ll
 ; proj/optimized/sts.cpp.ll
-; proj/optimized/tcc.cpp.ll
 ; proj/optimized/tcea.cpp.ll
 ; proj/optimized/times.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
@@ -161,9 +156,6 @@
 ; proj/optimized/vandg4.cpp.ll
 ; proj/optimized/wag2.cpp.ll
 ; proj/optimized/wag3.cpp.ll
-; proj/optimized/wag7.cpp.ll
-; proj/optimized/wink1.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; proj/optimized/zpoly1.cpp.ll
 ; quantlib/optimized/analytic_cont_geom_av_price_heston.ll
 ; quantlib/optimized/analytic_discr_geom_av_price_heston.ll

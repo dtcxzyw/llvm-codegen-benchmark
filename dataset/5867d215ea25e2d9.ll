@@ -52,10 +52,9 @@ entry:
   ret i1 %2
 }
 
-; 79 occurrences:
-; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
+; 77 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/binfmt_elf.ll
-; linux/optimized/capability.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/reg.ll
@@ -131,7 +130,6 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; opencv/optimized/rlof_localflow.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:
@@ -140,7 +138,7 @@ entry:
   ret i1 %2
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; gromacs/optimized/pme_redistribute.cpp.ll
 ; linux/optimized/drm_vblank.ll
 ; linux/optimized/intel_display.ll
@@ -149,6 +147,7 @@ entry:
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/panic.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
 ; postgres/optimized/allpaths.ll
@@ -195,7 +194,53 @@ entry:
   ret i1 %2
 }
 
-; 85 occurrences:
+; 2 occurrences:
+; libwebp/optimized/quant_enc.c.ll
+; qemu/optimized/chardev_char-serial.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = mul i32 %0, 10
+  %2 = icmp samesign ult i32 %1, 836
+  ret i1 %2
+}
+
+; 5 occurrences:
+; libpng/optimized/png.c.ll
+; openjdk/optimized/png.ll
+; postgres/optimized/f2s.ll
+; postgres/optimized/f2s_shlib.ll
+; postgres/optimized/f2s_srv.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0) #0 {
+entry:
+  %1 = mul nsw i32 %0, 77
+  %2 = icmp samesign ult i32 %1, 256
+  ret i1 %2
+}
+
+; 2 occurrences:
+; php/optimized/zend_hash.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i32 %0) #0 {
+entry:
+  %1 = mul i32 %0, -2
+  %2 = icmp ne i32 %1, 0
+  ret i1 %2
+}
+
+; 1 occurrences:
+; darktable/optimized/IiqDecoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004a(i32 %0) #0 {
+entry:
+  %1 = mul nuw i32 %0, 12
+  %2 = icmp sgt i32 %1, -1
+  ret i1 %2
+}
+
+; 84 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
@@ -279,72 +324,53 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; qemu/optimized/chardev_char-serial.c.ll
 ; wireshark/optimized/ws_strptime.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = mul i32 %0, 10
-  %2 = icmp ult i32 %1, 836
-  ret i1 %2
-}
-
-; 7 occurrences:
-; libpng/optimized/png.c.ll
-; linux/optimized/select.ll
-; openjdk/optimized/png.ll
-; openusd/optimized/decodemv.c.ll
-; postgres/optimized/f2s.ll
-; postgres/optimized/f2s_shlib.ll
-; postgres/optimized/f2s_srv.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
-entry:
-  %1 = mul nsw i32 %0, 77
-  %2 = icmp ult i32 %1, 256
+  %1 = mul i32 %0, 6
+  %2 = icmp ult i32 %1, 32
   ret i1 %2
 }
 
 ; 2 occurrences:
-; php/optimized/zend_hash.ll
-; quickjs/optimized/quickjs.ll
+; linux/optimized/select.ll
+; openusd/optimized/decodemv.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000c(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
-  %1 = mul i32 %0, -2
-  %2 = icmp ne i32 %1, 0
+  %1 = mul nsw i32 %0, 11
+  %2 = icmp ult i32 %1, 32
   ret i1 %2
 }
 
 ; 1 occurrences:
-; darktable/optimized/IiqDecoder.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0) #0 {
+define i1 @func0000000000000018(i32 %0) #0 {
 entry:
-  %1 = mul nuw i32 %0, 12
-  %2 = icmp sgt i32 %1, -1
+  %1 = mul i32 %0, 3
+  %2 = icmp samesign ugt i32 %1, 520
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; opencv/optimized/fast_window_binarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0) #0 {
+define i1 @func0000000000000046(i32 %0) #0 {
 entry:
   %1 = mul nuw i32 %0, 6
   %2 = icmp slt i32 %1, 2147483642
   ret i1 %2
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
-; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
-; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; opencv/optimized/odometry.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = mul nsw i32 %0, 3
   %2 = icmp ugt i32 %1, 264

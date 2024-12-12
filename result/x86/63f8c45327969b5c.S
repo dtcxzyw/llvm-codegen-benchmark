@@ -1,50 +1,50 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movslq	%esi, %rax
 	movabsq	$1152921504606846975, %rcx      # imm = 0xFFFFFFFFFFFFFFF
 	subq	%rax, %rcx
-	cmpq	%rdi, %rcx
-	setl	%al
+	cmpq	%rcx, %rdi
+	setg	%al
 	retq
-func0000000000000015:                   # @func0000000000000015
+func0000000000000025:                   # @func0000000000000025
 	movslq	%esi, %rax
 	negq	%rax
-	cmpq	%rdi, %rax
-	setae	%al
+	cmpq	%rax, %rdi
+	setbe	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movslq	%esi, %rax
 	negq	%rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movslq	%esi, %rax
 	movq	$-16, %rcx
 	subq	%rax, %rcx
-	cmpq	%rdi, %rcx
-	seta	%al
+	cmpq	%rcx, %rdi
+	setb	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movslq	%esi, %rax
 	movabsq	$9223372036854775807, %rcx      # imm = 0x7FFFFFFFFFFFFFFF
 	xorq	%rax, %rcx
-	cmpq	%rdi, %rcx
-	setb	%al
+	cmpq	%rcx, %rdi
+	seta	%al
 	retq
-func0000000000000017:                   # @func0000000000000017
+func0000000000000027:                   # @func0000000000000027
 	movslq	%esi, %rax
 	negq	%rax
-	cmpq	%rdi, %rax
-	setge	%al
+	cmpq	%rax, %rdi
+	setle	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movslq	%esi, %rax
 	negq	%rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq

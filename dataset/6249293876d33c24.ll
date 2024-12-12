@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/UDTLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000002c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
@@ -27,7 +27,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000164(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000002c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
@@ -48,7 +48,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000169(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000002c9(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
@@ -63,7 +63,7 @@ entry:
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000284(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
@@ -77,7 +77,7 @@ entry:
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/huf_decompress.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000149(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000289(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64

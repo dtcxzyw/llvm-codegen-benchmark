@@ -1,5 +1,5 @@
 
-; 148 occurrences:
+; 149 occurrences:
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; box2d/optimized/b2_polygon_shape.cpp.ll
 ; bullet3/optimized/b3ConvexUtility.ll
@@ -29,7 +29,6 @@
 ; darktable/optimized/introspection_colorize.c.ll
 ; darktable/optimized/introspection_colormapping.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
-; darktable/optimized/introspection_denoiseprofile.c.ll
 ; darktable/optimized/introspection_dither.c.ll
 ; darktable/optimized/introspection_exposure.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
@@ -148,6 +147,8 @@
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

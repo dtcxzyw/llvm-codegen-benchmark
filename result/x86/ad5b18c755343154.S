@@ -1,6 +1,6 @@
 func0000000000000008:                   # @func0000000000000008
 	subq	%rsi, %rdx
-	addq	$32, %rdx
+	addq	$2, %rdx
 	subq	%rsi, %rdi
 	cmpq	%rdi, %rdx
 	seta	%al

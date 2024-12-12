@@ -1,48 +1,26 @@
-func0000000000000024:                   // @func0000000000000024
+func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	uzp2	v1.4s, v1.4s, v2.4s
+	lsr	x9, x1, #32
 	mov	w8, #16                         // =0x10
+	cmp	w0, w9
 	mov	w9, #24                         // =0x18
-	dup	v3.2d, x8
-	dup	v4.2d, x9
-	cmhi	v0.4s, v1.4s, v0.4s
-	sshll	v2.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	mov	v1.16b, v0.16b
-	mov	v0.16b, v2.16b
-	bsl	v1.16b, v4.16b, v3.16b
-	bsl	v0.16b, v4.16b, v3.16b
+	csel	x0, x9, x8, lo
 	ret
                                         // -- End function
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	uzp2	v1.4s, v1.4s, v2.4s
-	ushr	v1.4s, v1.4s, #31
-	cmeq	v0.4s, v1.4s, v0.4s
-	movi	v1.2d, #0xffffffffffffffff
-	sshll	v2.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	fneg	v3.2d, v1.2d
-	mvn	v1.16b, v0.16b
-	mvn	v4.16b, v2.16b
-	bit	v1.16b, v0.16b, v3.16b
-	mov	v0.16b, v3.16b
-	bsl	v0.16b, v2.16b, v4.16b
+	lsr	x9, x1, #63
+	mov	x8, #9223372036854775807        // =0x7fffffffffffffff
+	cmp	w0, w9
+	cinv	x0, x8, ne
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	uzp2	v1.4s, v1.4s, v2.4s
+	lsr	x9, x1, #32
 	mov	w8, #24                         // =0x18
+	cmp	w0, w9
 	mov	w9, #16                         // =0x10
-	dup	v3.2d, x8
-	dup	v4.2d, x9
-	cmhi	v0.4s, v0.4s, v1.4s
-	sshll	v2.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	mov	v1.16b, v0.16b
-	mov	v0.16b, v2.16b
-	bsl	v1.16b, v4.16b, v3.16b
-	bsl	v0.16b, v4.16b, v3.16b
+	csel	x0, x9, x8, hi
 	ret
                                         // -- End function

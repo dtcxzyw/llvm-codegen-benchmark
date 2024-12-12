@@ -109,7 +109,7 @@
 ; tev/optimized/main.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d1(i64 %0, i64 %1) #0 {
+define i32 @func00000000000001a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -1023

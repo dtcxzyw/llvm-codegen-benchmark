@@ -1,12 +1,10 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	seqz	a1, a1
 	sub	a0, a0, a1
 	srli	a0, a0, 63
 	ret
-func0000000000000051:                   # @func0000000000000051
-	snez	a1, a1
-	addi	a1, a1, -1
-	neg	a0, a0
+func00000000000000a1:                   # @func00000000000000a1
+	seqz	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

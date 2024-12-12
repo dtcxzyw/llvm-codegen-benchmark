@@ -1,23 +1,22 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; mitsuba3/optimized/integrator.cpp.ll
-; mitsuba3/optimized/x86instapi.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = icmp ugt i32 %0, 8
-  %4 = select i1 %3, i32 %2, i32 0
+  %3 = icmp ugt i32 %0, 1
+  %4 = select i1 %3, i32 %2, i32 1
   ret i32 %4
 }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/ldsampler.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp ult i32 %0, -2
@@ -31,7 +30,7 @@ entry:
 ; opencv/optimized/corner.cpp.ll
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp sgt i32 %0, 0
@@ -56,7 +55,7 @@ entry:
 ; openjdk/optimized/zGeneration.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp eq i32 %0, 3
@@ -71,7 +70,7 @@ entry:
 ; linux/optimized/82571.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 65536, %1
   %3 = icmp eq i32 %0, 3
@@ -94,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = icmp eq i32 %0, 2
@@ -106,7 +105,7 @@ entry:
 ; gromacs/optimized/gmx_lmcurve.cpp.ll
 ; lua/optimized/lvm.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %.not = icmp eq i32 %0, 0
@@ -117,7 +116,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/decodemv.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp slt i32 %0, 0
@@ -139,7 +138,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = icmp slt i32 %0, 0
@@ -150,7 +149,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/grfmt_sunras.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 3, %1
   %3 = icmp ult i32 %0, 8
@@ -161,7 +160,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = icmp slt i32 %0, 8

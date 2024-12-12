@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/ifTune.c.ll
 ; clamav/optimized/bzlib.c.ll
@@ -10,7 +10,6 @@
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; hyperscan/optimized/multibit_build.cpp.ll
-; linux/optimized/hdac_regmap.ll
 ; openjdk/optimized/jdhuff.ll
 ; wireshark/optimized/packet-per.c.ll
 ; zstd/optimized/zstd_fast.c.ll

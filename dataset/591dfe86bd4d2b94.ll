@@ -1,5 +1,6 @@
 
-; 64 occurrences:
+; 63 occurrences:
+; boost/optimized/options_description.ll
 ; csmith/optimized/FunctionInvocationUser.cpp.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
 ; cvc5/optimized/regexp_elim.cpp.ll
@@ -59,18 +60,16 @@
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000002e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %3, -1
   %5 = sdiv i64 %4, 64
-  %6 = getelementptr nusw i64, ptr %1, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %1, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 %0
   ret ptr %7
 }

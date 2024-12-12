@@ -40,7 +40,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	1                               # 0x1
 func0000000000000000:                   # @func0000000000000000
 	vpslld	$16, %ymm1, %ymm1
-	vpxor	%ymm0, %ymm1, %ymm0
+	vpxor	%ymm1, %ymm0, %ymm0
 	vpsrld	$16, %ymm0, %ymm0
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq

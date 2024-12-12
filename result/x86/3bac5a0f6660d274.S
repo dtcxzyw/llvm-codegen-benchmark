@@ -10,7 +10,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$127, %esi
 	seta	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sarl	$9, %esi
 	xorl	%edi, %esi
 	cmpl	$256, %esi                      # imm = 0x100

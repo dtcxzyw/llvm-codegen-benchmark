@@ -1,17 +1,19 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; openjdk/optimized/hb-ot-layout.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 9
   %4 = shl nuw nsw i32 %1, 1
   %5 = or disjoint i32 %4, %3
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -38,7 +40,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = shl nuw nsw i32 %1, 4
   %5 = or disjoint i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -51,18 +53,6 @@ entry:
   %4 = shl nuw i32 %1, 28
   %5 = or disjoint i32 %4, %3
   %6 = add nuw nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; linux/optimized/int_log.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 24
-  %4 = shl nuw nsw i32 %1, 8
-  %5 = or disjoint i32 %4, %3
-  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -87,7 +77,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = shl nuw i32 %1, 24
   %5 = or disjoint i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

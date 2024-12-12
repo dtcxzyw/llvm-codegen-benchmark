@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 28 occurrences:
 ; abc/optimized/solver.c.ll
 ; bullet3/optimized/b3OpenCLUtils.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
@@ -26,12 +26,14 @@
 ; regex-rs/optimized/32jw1oy2yofrhudk.ll
 ; ruby/optimized/regparse.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = lshr i64 %0, 4
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -74,11 +76,11 @@ entry:
 ; z3/optimized/sat_lookahead.cpp.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = lshr i64 %0, 6
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
@@ -113,11 +115,11 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/XRBackendNative.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr exact i64 %0, 2
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -131,53 +133,55 @@ entry:
 ; luau/optimized/lutf8lib.cpp.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %0, 12
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; assimp/optimized/SceneCombiner.cpp.ll
+; cvc5/optimized/string.cpp.ll
 ; linux/optimized/netprio_cgroup.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; opencv/optimized/dpm_nms.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = lshr exact i64 %0, 3
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
+; opencv/optimized/tf_importer.cpp.ll
 ; postgres/optimized/aset.ll
 ; postgres/optimized/generation.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %0, 10
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr exact i64 %0, 3
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
@@ -188,7 +192,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; postgres/optimized/predicate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %0, 59
@@ -199,7 +203,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/acecTree.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = lshr exact i64 %0, 1
@@ -213,18 +217,18 @@ entry:
 ; protobuf/optimized/map_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000019(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = lshr i64 %0, 32
-  %4 = icmp uge i64 %3, %2
+  %4 = icmp samesign uge i64 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/md.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %0, 1
@@ -235,22 +239,22 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000059(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %0, 2
-  %4 = icmp uge i64 %3, %2
+  %4 = icmp samesign uge i64 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; mimalloc/optimized/segment.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000035(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = lshr exact i64 %0, 16
-  %4 = icmp ule i64 %3, %2
+  %4 = icmp samesign ule i64 %3, %2
   ret i1 %4
 }
 

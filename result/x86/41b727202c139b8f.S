@@ -29,6 +29,12 @@ func0000000000000050:                   # @func0000000000000050
 	addl	%edi, %esi
 	leal	4(%rsi,%rsi), %eax
 	retq
+func000000000000005d:                   # @func000000000000005d
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
+	shll	$10, %eax
+	addl	$-56613888, %eax                # imm = 0xFCA02400
+	retq
 func0000000000000005:                   # @func0000000000000005
 	addl	%edx, %esi
 	addl	%edi, %esi

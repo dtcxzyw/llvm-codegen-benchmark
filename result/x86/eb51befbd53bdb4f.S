@@ -1,9 +1,9 @@
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	leal	1(%rdx), %eax
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	incl	%edx
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,8), %rax
@@ -23,7 +23,7 @@ func0000000000000000:                   # @func0000000000000000
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	leal	-1(%rdx), %eax
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
@@ -38,10 +38,15 @@ func0000000000000044:                   # @func0000000000000044
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	decl	%edx
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,4), %rax
+	retq
+func0000000000000033:                   # @func0000000000000033
+	addl	$-2, %edx
+	imulq	%rsi, %rdx
+	leaq	(%rdi,%rdx,8), %rax
 	retq
 func0000000000000014:                   # @func0000000000000014
 	incl	%edx
@@ -83,6 +88,11 @@ func000000000000000a:                   # @func000000000000000a
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,4), %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	incl	%edx
+	imulq	%rsi, %rdx
+	leaq	(%rdi,%rdx,4), %rax
+	retq
 func000000000000007c:                   # @func000000000000007c
 	incl	%edx
 	imulq	%rsi, %rdx
@@ -113,7 +123,12 @@ func0000000000000012:                   # @func0000000000000012
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000003e:                   # @func000000000000003e
+	leal	1(%rdx), %eax
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func000000000000001f:                   # @func000000000000001f
 	leal	-1(%rdx), %eax
 	imulq	%rsi, %rax
 	addq	%rdi, %rax

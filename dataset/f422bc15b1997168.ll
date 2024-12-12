@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
 ; cvc5/optimized/cegis_core_connective.cpp.ll
@@ -14,6 +14,8 @@
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; smol-rs/optimized/2nf71p5qpqz0dmgo.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:

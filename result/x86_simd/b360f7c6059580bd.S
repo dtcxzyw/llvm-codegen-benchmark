@@ -13,8 +13,8 @@ func0000000000000000:                   # @func0000000000000000
 	.long	15                              # 0xf
 func0000000000000014:                   # @func0000000000000014
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq

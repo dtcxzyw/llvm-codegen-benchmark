@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; clamav/optimized/lzma_iface.c.ll
+; 6 occurrences:
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; llvm/optimized/DAGISelMatcherGen.cpp.ll
 ; qemu/optimized/optimize.c.ll
@@ -16,13 +15,11 @@ entry:
   ret i64 %4
 }
 
-; 34 occurrences:
+; 32 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; grpc/optimized/frame_ping.cc.ll
 ; linux/optimized/exfldio.ll
 ; linux/optimized/fatent.ll
-; linux/optimized/gen_estimator.ll
-; linux/optimized/maccess.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/move_extent.ll
 ; linux/optimized/pt.ll

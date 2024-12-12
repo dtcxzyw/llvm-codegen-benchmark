@@ -6,9 +6,9 @@ func0000000000000001:                   # @func0000000000000001
 	cmovneq	%rdi, %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
+	xorl	%eax, %eax
 	testb	$1, %sil
-	movl	$1, %eax
 	cmoveq	%rdi, %rax
-	testb	$1, %dl
+	testl	$1073741824, %edx               # imm = 0x40000000
 	cmoveq	%rdi, %rax
 	retq

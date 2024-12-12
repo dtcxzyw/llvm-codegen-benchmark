@@ -6,8 +6,8 @@ func000000000000000a:                   // @func000000000000000a
 	movk	x8, #38296, lsl #48
 	mul	x9, x3, x8
 	umulh	x8, x3, x8
-	adds	x0, x9, x0
-	adc	x1, x8, x1
+	adds	x0, x0, x9
+	adc	x1, x1, x8
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
@@ -18,8 +18,8 @@ func000000000000000f:                   // @func000000000000000f
 	movk	x8, #30223, lsl #48
 	mul	x9, x3, x8
 	umulh	x8, x3, x8
-	adds	x0, x9, x0
-	adc	x1, x8, x1
+	adds	x0, x0, x9
+	adc	x1, x1, x8
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
@@ -28,9 +28,9 @@ func0000000000000005:                   // @func0000000000000005
 	add	x9, x3, x3, lsl #32
 	umulh	x8, x3, x8
 	neg	x9, x9
-	adds	x0, x9, x0
+	adds	x0, x0, x9
 	sub	x8, x8, x3
-	adc	x1, x8, x1
+	adc	x1, x1, x8
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
@@ -38,7 +38,7 @@ func000000000000000e:                   // @func000000000000000e
 	mov	x8, #-1                         // =0xffffffffffffffff
 	neg	x9, x3
 	umulh	x8, x3, x8
-	adds	x0, x9, x0
-	adc	x1, x8, x1
+	adds	x0, x0, x9
+	adc	x1, x1, x8
 	ret
                                         // -- End function

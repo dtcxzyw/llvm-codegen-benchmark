@@ -21,7 +21,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %.not = icmp eq i32 %2, 0
   %3 = select i1 %.not, i32 0, i32 64
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -45,12 +45,11 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 320
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 2 occurrences:
-; icu/optimized/uparse.ll
+; 1 occurrences:
 ; redis/optimized/ziplist.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i64 %1) #0 {

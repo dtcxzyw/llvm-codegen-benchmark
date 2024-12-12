@@ -1,5 +1,5 @@
 
-; 112 occurrences:
+; 109 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/X3DExporter.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -25,10 +25,8 @@
 ; gromacs/optimized/sbdsqr.cpp.ll
 ; gromacs/optimized/slae2.cpp.ll
 ; gromacs/optimized/slaev2.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
-; gromacs/optimized/slassq.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
 ; gromacs/optimized/snrm2.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
@@ -83,7 +81,6 @@
 ; ocio/optimized/GradingToneOpCPU.cpp.ll
 ; oiio/optimized/environment.cpp.ll
 ; oiio/optimized/filter.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/adaptive_manifold_filter_n.cpp.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
 ; opencv/optimized/mathfuncs_core.dispatch.cpp.ll

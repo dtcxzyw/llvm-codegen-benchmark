@@ -4,7 +4,7 @@
 ; nix/optimized/local-derivation-goal.ll
 ; rocksdb/optimized/compaction_iterator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -19,7 +19,7 @@ entry:
 ; rust-analyzer-rs/optimized/2zm9eul0ycl9zsz3.ll
 ; rust-analyzer-rs/optimized/4z0mti9ae01vbv1s.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 2
   %4 = select i1 %0, i1 true, i1 %3
@@ -34,7 +34,7 @@ entry:
 ; libuv/optimized/stream.c.ll
 ; node/optimized/stream.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000081(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 16
   %4 = select i1 %0, i1 true, i1 %3
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/aio.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %0, i1 true, i1 %3

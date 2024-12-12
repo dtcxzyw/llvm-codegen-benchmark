@@ -8,7 +8,7 @@
 ; openssl/optimized/openssl-bin-crl.ll
 ; openssl/optimized/openssl-bin-x509.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = icmp eq i64 %2, %0
@@ -36,7 +36,7 @@ entry:
 ; curl/optimized/libcurl_la-tftp.ll
 ; php/optimized/zend_jit_vm_helpers.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i32 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 4
   %3 = icmp sgt i64 %2, %0
@@ -67,17 +67,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/nf_nat_proto.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000038(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 20
-  %3 = icmp ugt i64 %2, %0
-  %4 = select i1 %3, i32 8, i32 20
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; node/optimized/libnode.application.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0, i64 %1) #0 {
@@ -91,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/kinsol.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = icmp slt i64 %2, %0

@@ -1,5 +1,5 @@
 
-; 591 occurrences:
+; 625 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcFunc.c.ll
 ; abc/optimized/abcHieGia.c.ll
@@ -15,19 +15,18 @@
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cecSolveG.c.ll
 ; abc/optimized/dauGia.c.ll
-; abc/optimized/fraigUtil.c.ll
 ; abc/optimized/fretMain.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaBound.c.ll
 ; abc/optimized/giaDup.c.ll
-; abc/optimized/giaEra2.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/giaScript.c.ll
+; abc/optimized/giaStr.c.ll
 ; abc/optimized/giaTim.c.ll
 ; abc/optimized/giaTsim.c.ll
 ; abc/optimized/ifTune.c.ll
@@ -42,6 +41,46 @@
 ; abc/optimized/xsatSolver.c.ll
 ; abseil-cpp/optimized/exception_safety_testing.cc.ll
 ; arrow/optimized/key_map.cc.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/throw_on_error.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; brotli/optimized/decode.c.ll
 ; c3c/optimized/c_abi_aarch64.c.ll
 ; c3c/optimized/codegen_asm.c.ll
@@ -103,13 +142,14 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5FDcore.c.ll
 ; hdf5/optimized/H5SM.c.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; hermes/optimized/Path.cpp.ll
 ; hermes/optimized/Program.cpp.ll
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; hermes/optimized/gtest-all.cc.ll
 ; hyperscan/optimized/gtest-all.cc.ll
+; hyperscan/optimized/mcclellan.c.ll
+; hyperscan/optimized/mcsheng.c.ll
 ; icu/optimized/coleitr.ll
 ; icu/optimized/collationcompare.ll
 ; icu/optimized/collationdatabuilder.ll
@@ -167,14 +207,12 @@
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/flow_dissector.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hdac_bus.ll
 ; linux/optimized/hooks.ll
-; linux/optimized/i915_irq.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_display_power.ll
@@ -253,7 +291,6 @@
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/Path.cpp.ll
 ; llvm/optimized/Program.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
@@ -307,6 +344,9 @@
 ; luajit/optimized/lj_cparse_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshoptimizer/optimized/spatialorder.cpp.ll
@@ -452,9 +492,6 @@
 ; postgres/optimized/spell.ll
 ; postgres/optimized/spgscan.ll
 ; postgres/optimized/tsquery_gist.ll
-; postgres/optimized/wait_error.ll
-; postgres/optimized/wait_error_shlib.ll
-; postgres/optimized/wait_error_srv.ll
 ; postgres/optimized/xact.ll
 ; protobuf/optimized/subprocess.cc.ll
 ; qemu/optimized/.._libqtest.c.ll
@@ -481,14 +518,12 @@
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; qemu/optimized/io_channel-socket.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/tcg-op-vec.c.ll
 ; qemu/optimized/tcg.c.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; qemu/optimized/util_mmap-alloc.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quickjs/optimized/libunicode.ll
 ; quickjs/optimized/quickjs-libc.ll
@@ -513,7 +548,6 @@
 ; slurm/optimized/jobcomp_script.ll
 ; slurm/optimized/launch.ll
 ; slurm/optimized/mgr.ll
-; slurm/optimized/pdebug.ll
 ; slurm/optimized/prep_script_slurmd.ll
 ; slurm/optimized/prep_slurmctld.ll
 ; slurm/optimized/salloc.ll
@@ -599,10 +633,7 @@ entry:
   ret i32 %2
 }
 
-; 52 occurrences:
-; abc/optimized/giaCof.c.ll
-; abc/optimized/giaEra2.c.ll
-; abc/optimized/giaMf.c.ll
+; 45 occurrences:
 ; abc/optimized/ivyUtil.c.ll
 ; cpython/optimized/pystrtod.ll
 ; eastl/optimized/EAMemory.cpp.ll
@@ -616,7 +647,6 @@ entry:
 ; harfbuzz/optimized/hb-subset-input.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; libquic/optimized/des.c.ll
 ; libquic/optimized/e_rc2.c.ll
@@ -635,13 +665,10 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; postgres/optimized/jsonb_gin.ll
 ; qemu/optimized/hw_misc_ivshmem.c.ll
 ; qemu/optimized/tcg.c.ll

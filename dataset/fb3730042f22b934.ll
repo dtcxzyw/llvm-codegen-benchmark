@@ -1,7 +1,4 @@
 
-%struct.ItemPointerData.3470519 = type { %struct.BlockIdData.3470520, i16 }
-%struct.BlockIdData.3470520 = type { i16, i16 }
-
 ; 178 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
@@ -182,22 +179,11 @@
 ; slurm/optimized/burst_buffer_common.ll
 ; slurm/optimized/job_info.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = urem i32 %1, 293
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 1 occurrences:
-; postgres/optimized/brin_revmap.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
-entry:
-  %2 = urem i32 %1, 1360
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.ItemPointerData.3470519, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   ret ptr %4
 }
 

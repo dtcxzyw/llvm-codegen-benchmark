@@ -67,13 +67,36 @@ entry:
 }
 
 ; 1 occurrences:
-; libwebp/optimized/extras.c.ll
+; quantlib/optimized/lineartsrpricer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(double %0, double %1, i32 %2) #0 {
+define i1 @func00000000000000c2(double %0, double %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 4
+  %.not = icmp eq i32 %2, 1
+  %3 = select i1 %.not, double %1, double %0
+  %4 = fcmp olt double %3, 0.000000e+00
+  ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/area.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000062(double %0, double %1, i32 %2) #0 {
+entry:
+  %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, double %0, double %1
-  %5 = fcmp ogt double %4, 0.000000e+00
+  %5 = fcmp olt double %4, 1.000000e+00
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/area.ll
+; nuklear/optimized/unity.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(double %0, double %1, i32 %2) #0 {
+entry:
+  %3 = icmp slt i32 %2, 0
+  %4 = select i1 %3, double %0, double %1
+  %5 = fcmp ogt double %4, 1.000000e+00
   ret i1 %5
 }
 

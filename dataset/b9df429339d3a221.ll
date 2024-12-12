@@ -1,17 +1,15 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/intel_psr.ll
-; openssl/optimized/libcrypto-lib-lh_stats.ll
-; openssl/optimized/libcrypto-shlib-lh_stats.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw nsw i64 %0, 100
+  %3 = mul nuw nsw i64 %0, 1000000
   %4 = udiv i64 %3, %2
   ret i64 %4
 }

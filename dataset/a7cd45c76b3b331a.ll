@@ -28,7 +28,7 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btContinuousConvexCollision.ll
@@ -47,6 +47,7 @@ entry:
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; pbrt-v4/optimized/transform.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, float %1, float %2) #0 {
 entry:

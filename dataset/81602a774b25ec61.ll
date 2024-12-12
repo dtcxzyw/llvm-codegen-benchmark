@@ -1,5 +1,5 @@
 
-; 538 occurrences:
+; 531 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/bblif.c.ll
@@ -35,7 +35,6 @@
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; faiss/optimized/IndexIVFAdditiveQuantizerFastScan.cpp.ll
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
@@ -89,7 +88,6 @@
 ; lightgbm/optimized/objective_function.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/aperfmperf.ll
 ; linux/optimized/balloc.ll
 ; linux/optimized/blk-iocost.ll
@@ -105,7 +103,6 @@
 ; linux/optimized/ialloc.ll
 ; linux/optimized/indirect.ll
 ; linux/optimized/intel_atomic_plane.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_display.ll
@@ -117,7 +114,6 @@
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/intel_vblank.ll
-; linux/optimized/jiffies.ll
 ; linux/optimized/kyber-iosched.ll
 ; linux/optimized/md.ll
 ; linux/optimized/mempolicy.ll
@@ -134,7 +130,6 @@
 ; linux/optimized/resize.ll
 ; linux/optimized/route.ll
 ; linux/optimized/sch_generic.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/seq_timer.ll
 ; linux/optimized/serial_core.ll
 ; linux/optimized/skl_watermark.ll
@@ -324,9 +319,7 @@
 ; openmpi/optimized/topo_base_dist_graph_create.ll
 ; openspiel/optimized/tarok.cc.ll
 ; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-lib-lh_stats.ll
 ; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-shlib-lh_stats.ll
 ; openssl/optimized/libdefault-lib-krb5kdf.ll
 ; openssl/optimized/safe_math_test-bin-safe_math_test.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -356,7 +349,6 @@
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/xlog.ll
 ; postgres/optimized/xlogarchive.ll
-; postgres/optimized/xlogbackup.ll
 ; postgres/optimized/xlogfuncs.ll
 ; postgres/optimized/xlogreader.ll
 ; postgres/optimized/xlogrecovery.ll
@@ -376,7 +368,6 @@
 ; qemu/optimized/block_vmdk.c.ll
 ; qemu/optimized/block_vpc.c.ll
 ; qemu/optimized/dump_dump.c.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
 ; qemu/optimized/hw_nvme_ns.c.ll
@@ -385,7 +376,6 @@
 ; qemu/optimized/hw_vfio_common.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/latency.ll
 ; redis/optimized/linenoise.ll
@@ -533,6 +523,9 @@
 ; wireshark/optimized/tap-sipstat.c.ll
 ; yosys/optimized/subcircuit.ll
 ; z3/optimized/smt_context_stat.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; zstd/optimized/fse_compress.c.ll
@@ -546,17 +539,15 @@ entry:
   ret i32 %3
 }
 
-; 21 occurrences:
+; 19 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/hexdump.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_dpll.ll
-; linux/optimized/intel_snps_phy.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/lmem.cpp.ll
@@ -576,7 +567,7 @@ entry:
   ret i32 %3
 }
 
-; 55 occurrences:
+; 53 occurrences:
 ; clamav/optimized/message.c.ll
 ; darktable/optimized/PanasonicV6Decompressor.cpp.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
@@ -588,7 +579,6 @@ entry:
 ; linux/optimized/ialloc.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/resize.ll
-; linux/optimized/scsicam.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/CheckPlacementNew.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
@@ -597,7 +587,6 @@ entry:
 ; llvm/optimized/LoadStoreVectorizer.cpp.ll
 ; llvm/optimized/LoopUtils.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll

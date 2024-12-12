@@ -30,11 +30,3 @@ func0000000000000006:                   // @func0000000000000006
 	and	w0, w8, w0
 	ret
                                         // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
-	cmp	x4, x2
-	sbcs	xzr, x5, x3
-	cset	w8, hs
-	and	w0, w8, w0
-	ret
-                                        // -- End function

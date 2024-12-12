@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	testw	%di, %di
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leal	1(%rdi), %ecx
 	xorl	%eax, %eax
 	testw	%di, %di

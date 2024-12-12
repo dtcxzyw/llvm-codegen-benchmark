@@ -1,39 +1,58 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffffffffffffff
-	cmeq	v3.8h, v3.8h, v4.8h
-	cmeq	v2.8h, v2.8h, v4.8h
-	uzp1	v2.16b, v2.16b, v3.16b
-	and	v1.16b, v1.16b, v2.16b
-	orr	v0.16b, v1.16b, v0.16b
+	mov	w8, #65535                      // =0xffff
+	bics	wzr, w8, w2
+	cset	w8, eq
+	and	w8, w1, w8
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
+	ret
+                                        // -- End function
+func0000000000000006:                   // @func0000000000000006
+// %bb.0:                               // %entry
+	sxth	w8, w2
+	cmn	w8, #7, lsl #12                 // =28672
+	cset	w8, lt
+	and	w8, w1, w8
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	movi	v4.8h, #32
-	cmhi	v3.8h, v3.8h, v4.8h
-	cmhi	v2.8h, v2.8h, v4.8h
-	uzp1	v2.16b, v2.16b, v3.16b
-	and	v1.16b, v1.16b, v2.16b
-	orr	v0.16b, v1.16b, v0.16b
+	and	w8, w2, #0xffff
+	cmp	w8, #32
+	cset	w8, hi
+	and	w8, w1, w8
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v4.8h, #2
-	cmhi	v3.8h, v4.8h, v3.8h
-	cmhi	v2.8h, v4.8h, v2.8h
-	uzp1	v2.16b, v2.16b, v3.16b
-	and	v1.16b, v1.16b, v2.16b
-	orr	v0.16b, v1.16b, v0.16b
+	tst	w2, #0xfffe
+	cset	w8, eq
+	and	w8, w1, w8
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	cmeq	v3.8h, v3.8h, #0
-	cmeq	v2.8h, v2.8h, #0
-	uzp1	v2.16b, v2.16b, v3.16b
-	bic	v1.16b, v1.16b, v2.16b
-	orr	v0.16b, v1.16b, v0.16b
+	tst	w2, #0xffff
+	cset	w8, ne
+	and	w8, w1, w8
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
+	ret
+                                        // -- End function
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	sxth	w8, w2
+	cmp	w8, #0
+	cset	w8, gt
+	and	w8, w1, w8
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

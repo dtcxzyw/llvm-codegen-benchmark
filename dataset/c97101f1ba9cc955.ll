@@ -1,10 +1,10 @@
 
-%"struct.mold::elf::ElfRel.2528404" = type { %"class.mold::BigEndian.317.2528270", %"class.mold::BigEndian.2528268", %"class.mold::BigEndian.458.2528405", i8, %"class.mold::BigEndian.459.2528406" }
-%"class.mold::BigEndian.317.2528270" = type { [8 x i8] }
-%"class.mold::BigEndian.2528268" = type { [4 x i8] }
-%"class.mold::BigEndian.458.2528405" = type { [3 x i8] }
-%"class.mold::BigEndian.459.2528406" = type { [8 x i8] }
-%struct.Elf64_Sym.2570512 = type { i32, i8, i8, i16, i64, i64 }
+%"struct.mold::elf::ElfRel.2642810" = type { %"class.mold::BigEndian.317.2642676", %"class.mold::BigEndian.2642674", %"class.mold::BigEndian.458.2642811", i8, %"class.mold::BigEndian.459.2642812" }
+%"class.mold::BigEndian.317.2642676" = type { [8 x i8] }
+%"class.mold::BigEndian.2642674" = type { [4 x i8] }
+%"class.mold::BigEndian.458.2642811" = type { [3 x i8] }
+%"class.mold::BigEndian.459.2642812" = type { [8 x i8] }
+%struct.Elf64_Sym.2684877 = type { i32, i8, i8, i16, i64, i64 }
 
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
@@ -13,7 +13,7 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 3
   %4 = getelementptr i32, ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -37,22 +37,22 @@ entry:
 ; opencv/optimized/3calibration.cpp.ll
 ; openusd/optimized/testWorkLoops.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 24
-  %4 = getelementptr nusw %"struct.mold::elf::ElfRel.2528404", ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2642810", ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; folly/optimized/Elf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 24
-  %4 = getelementptr nusw %struct.Elf64_Sym.2570512, ptr %1, i64 %3
-  %5 = icmp ugt ptr %4, %0
+  %4 = getelementptr nusw nuw %struct.Elf64_Sym.2684877, ptr %1, i64 %3
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -63,7 +63,7 @@ define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 3
   %4 = getelementptr i64, ptr %1, i64 %3
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 

@@ -1,6 +1,5 @@
 
-; 10 occurrences:
-; cmake/optimized/file.c.ll
+; 9 occurrences:
 ; curl/optimized/libcurl_la-file.ll
 ; lief/optimized/CodeViewPDB.cpp.ll
 ; lief/optimized/DynamicEntryArray.cpp.ll

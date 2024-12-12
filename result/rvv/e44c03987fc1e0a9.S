@@ -29,7 +29,7 @@ func0000000000000007:                   # @func0000000000000007
 	vfmul.vf	v16, v16, fa5
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfncvt.f.f.w	v12, v16
-	vmfne.vv	v0, v12, v8
+	vmfne.vv	v0, v8, v12
 	ret
 .LCPI3_0:
 	.quad	0x404ca5dc1a63c1f8              # double 57.295779513082323

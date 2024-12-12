@@ -17,7 +17,7 @@
 	.short	243                             # 0xf3
 	.short	243                             # 0xf3
 	.short	243                             # 0xf3
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqb	.LCPI0_0(%rip), %xmm2, %k1

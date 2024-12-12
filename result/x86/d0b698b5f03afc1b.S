@@ -24,10 +24,3 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	cmovnel	%edx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	shll	$20, %edx
-	orl	%esi, %edx
-	xorl	%eax, %eax
-	testb	$1, %dil
-	cmovnel	%edx, %eax
-	retq

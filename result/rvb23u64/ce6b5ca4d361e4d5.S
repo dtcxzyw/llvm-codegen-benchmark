@@ -25,6 +25,16 @@ func000000000000000e:                   # @func000000000000000e
 	slliw	a0, a0, 1
 	andi	a0, a0, -16
 	ret
+.LCPI3_0:
+	.quad	-6067343680855748867            # 0xabcc77118461cefd
+func0000000000000003:                   # @func0000000000000003
+	lui	a1, %hi(.LCPI3_0)
+	ld	a1, %lo(.LCPI3_0)(a1)
+	mulhu	a0, a0, a1
+	srli	a0, a0, 25
+	andi	a0, a0, -2
+	sext.w	a0, a0
+	ret
 func0000000000000001:                   # @func0000000000000001
 	lui	a1, 699051
 	addiw	a1, a1, -1365

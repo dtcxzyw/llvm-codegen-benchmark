@@ -17,7 +17,7 @@
 	.zero	1
 .LCPI0_1:
 	.long	4294967209                      # 0xffffffa9
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpmovsxbd	%xmm1, %ymm1
 	vpcmpltub	.LCPI0_0(%rip), %xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0

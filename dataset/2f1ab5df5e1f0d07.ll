@@ -29,15 +29,14 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 77 occurrences:
+; 76 occurrences:
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
-; linux/optimized/map.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -151,18 +150,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; icu/optimized/gregoimp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 2
-  %3 = sub nuw nsw i32 %0, %2
-  %4 = add nsw i32 %3, 1721422
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

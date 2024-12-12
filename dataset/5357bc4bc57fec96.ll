@@ -1,5 +1,9 @@
 
-; 27 occurrences:
+; 31 occurrences:
+; boost/optimized/any_params_iter.ll
+; boost/optimized/any_segments_iter.ll
+; boost/optimized/format_args.ll
+; boost/optimized/url_base.ll
 ; cpython/optimized/mpdecimal.ll
 ; hyperscan/optimized/charreach.cpp.ll
 ; hyperscan/optimized/rose_build_engine_blob.cpp.ll
@@ -41,10 +45,10 @@ entry:
 ; velox/optimized/ExprCompiler.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i1 %1) #0 {
+define i64 @func0000000000000018(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 1, i64 2
-  %3 = icmp ugt i64 %0, 1
+  %3 = icmp samesign ugt i64 %0, 1
   %4 = select i1 %3, i64 %2, i64 1
   ret i64 %4
 }

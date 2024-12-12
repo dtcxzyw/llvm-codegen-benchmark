@@ -8,12 +8,12 @@ func000000000000000c:                   # @func000000000000000c
 	shll	$3, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	cmpl	$-16777216, %edx                # imm = 0xFF000000
-	sete	%al
-	andb	%sil, %al
-	orb	%dil, %al
-	movzbl	%al, %ecx
-	andl	$1, %ecx
-	movl	$4, %eax
-	subl	%ecx, %eax
+	xorl	%ecx, %ecx
+	testb	$1, %dil
+	movl	$34, %eax
+	cmovnel	%eax, %ecx
+	testl	%edx, %edx
+	cmovnel	%ecx, %eax
+	testb	$1, %sil
+	cmovel	%ecx, %eax
 	retq

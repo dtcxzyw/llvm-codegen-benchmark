@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/mask.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000204(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = icmp eq i32 %1, -1
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -36,12 +36,12 @@ entry:
 ; postgres/optimized/mbutils.ll
 ; z3/optimized/euf_egraph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = icmp eq i32 %1, 0
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -52,12 +52,12 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000304(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = icmp eq i32 %1, 0
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -69,12 +69,12 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-set.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000404(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %1, %2
   %4 = icmp eq i32 %1, -1
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -85,7 +85,7 @@ entry:
 ; openjdk/optimized/jcmaster.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000298(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000518(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, 63
   %4 = icmp slt i32 %1, %2
@@ -98,16 +98,16 @@ entry:
 ; abc/optimized/abcOrchestration.c.ll
 ; luau/optimized/EmitInstructionX64.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = icmp slt i32 %1, 0
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/dauGia.c.ll
 ; abc/optimized/giaBalAig.c.ll
@@ -124,15 +124,14 @@ entry:
 ; abc/optimized/wlnRead.c.ll
 ; gromacs/optimized/pdb2top.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; nuttx/optimized/lib_wcsncmp.c.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000604(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = icmp eq i32 %1, 536870911
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -141,12 +140,12 @@ entry:
 ; openspiel/optimized/pathfinding.cc.ll
 ; wireshark/optimized/filter_list_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002d8(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000598(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = icmp slt i32 %1, 0
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -154,24 +153,24 @@ entry:
 ; postgres/optimized/spi.ll
 ; wireshark/optimized/packet-megaco.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000284(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000504(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = icmp eq i32 %1, -1
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/rw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000098(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = icmp slt i32 %1, 1
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

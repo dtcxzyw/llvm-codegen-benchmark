@@ -8,22 +8,22 @@ func0000000000000000:                   # @func0000000000000000
 	andl	$-4, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	leal	3(%rsi), %eax
 	andl	$-4, %eax
 	addq	%rdi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	incl	%esi
 	andl	$63, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	decl	%esi
 	andl	$131071, %esi                   # imm = 0x1FFFF
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	leal	-1(%rsi), %eax
 	andl	$4095, %eax                     # imm = 0xFFF
 	shll	$4, %eax
@@ -44,7 +44,7 @@ func000000000000000c:                   # @func000000000000000c
 	movzwl	%si, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	leal	9(%rsi), %eax
 	andl	$-2, %eax
 	addq	%rdi, %rax

@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 35 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
 ; actix-rs/optimized/3u1jix79tu9frq3m.ll
@@ -32,6 +32,9 @@
 ; wasmtime-rs/optimized/24tijvi11z3k9odl.ll
 ; wasmtime-rs/optimized/4cnvf14b3xea7eab.ll
 ; wasmtime-rs/optimized/4hvnupd8slkxulls.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
+; zed-rs/optimized/8mdllj80pcyls7aec0okf6fww.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
@@ -40,7 +43,7 @@ entry:
   ret i1 %3
 }
 
-; 16 occurrences:
+; 20 occurrences:
 ; actix-rs/optimized/1a89q5mj3jl9opyq.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -57,6 +60,10 @@ entry:
 ; wasmtime-rs/optimized/4cnvf14b3xea7eab.ll
 ; wasmtime-rs/optimized/4hvnupd8slkxulls.ll
 ; wasmtime-rs/optimized/lin3yywv836im8d.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/4539sm9s3e94vv18ffp5lvtyk.ll
+; zed-rs/optimized/9ld5vmlj2ufuzyru6e6aorg0l.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:

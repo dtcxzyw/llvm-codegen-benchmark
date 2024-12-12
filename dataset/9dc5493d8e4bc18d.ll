@@ -11,9 +11,8 @@ entry:
   ret double %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openjdk/optimized/compilationPolicy.ll
-; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:

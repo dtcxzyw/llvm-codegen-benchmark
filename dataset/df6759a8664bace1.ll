@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; linux/optimized/cpu.ll
 ; linux/optimized/hda_codec.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
@@ -9,13 +9,14 @@
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 21
   %4 = and i32 %3, 4
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = or disjoint i32 %5, 56
   ret i32 %6
 }
@@ -28,7 +29,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 21
   %4 = and i32 %3, 4
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = or i32 %5, 56
   ret i32 %6
 }

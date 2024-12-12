@@ -10,7 +10,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovw2m	%xmm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubd	%ymm2, %ymm1, %ymm2 {%k1}
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpsllw	$15, %xmm1, %xmm1

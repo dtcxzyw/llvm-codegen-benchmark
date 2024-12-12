@@ -1,10 +1,12 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/date.ll
 ; linux/optimized/kapi.ll
-; nuttx/optimized/lib_timegm.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_refr.ll
 ; quantlib/optimized/date.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; wireshark/optimized/netmon.c.ll
@@ -35,7 +37,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 10000
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul i32 %3, 8389
   ret i32 %4
 }

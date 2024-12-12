@@ -4,6 +4,7 @@
 ; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/giaSatEdge.c.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
+; boost/optimized/to_chars.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -123,7 +124,6 @@
 ; meshoptimizer/optimized/vcacheanalyzer.cpp.ll
 ; minetest/optimized/sha256.c.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
-; nuttx/optimized/lib_libvsprintf.c.ll
 ; oiio/optimized/SHA1.cpp.ll
 ; oiio/optimized/imagebufalgo_deep.cpp.ll
 ; oiio/optimized/imagebufalgo_draw.cpp.ll
@@ -196,12 +196,12 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/cbaReadVer.c.ll
 ; clamav/optimized/packlibs.c.ll
 ; cmake/optimized/zstd_opt.c.ll
@@ -213,6 +213,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; icu/optimized/propsvec.ll
+; icu/optimized/ubidiln.ll
 ; llvm/optimized/DAGISelMatcherEmitter.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -235,7 +236,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -523,7 +524,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -587,6 +588,7 @@ entry:
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_math.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/brightedges.cpp.ll
@@ -612,7 +614,6 @@ entry:
 ; qemu/optimized/net_socket.c.ll
 ; quest/optimized/QuEST.c.ll
 ; redis/optimized/object.ll
-; slurm/optimized/ebpf.ll
 ; stockfish/optimized/search.ll
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; velox/optimized/MemoryArbitrator.cpp.ll
@@ -635,15 +636,14 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/cuddLinear.c.ll
 ; abc/optimized/cuddReorder.c.ll
-; icu/optimized/ubidiln.ll
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/persistence_xml.cpp.ll
 ; openjdk/optimized/ByteGray.ll
@@ -667,7 +667,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -679,8 +679,8 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
-  %5 = add nuw i32 %4, %0
+  %4 = add nuw nsw i32 %1, %3
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -693,7 +693,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -713,12 +713,13 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add nuw nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; nuttx/optimized/lib_libvsprintf.c.ll
 ; stockfish/optimized/search.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/packet-eigrp.c.ll
@@ -727,7 +728,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -738,7 +739,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = add nuw i32 %4, %0
   ret i32 %5
 }

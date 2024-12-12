@@ -6,5 +6,5 @@ func0000000000000020:                   # @func0000000000000020
 	vmsgtu.vx	v0, v10, a0
 	lui	a0, 10
 	vmerge.vxm	v10, v14, a0, v0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret

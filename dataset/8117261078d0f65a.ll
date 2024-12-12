@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 50 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; clamav/optimized/unpack.cpp.ll
 ; clamav/optimized/wwunpack.c.ll
@@ -35,7 +35,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll

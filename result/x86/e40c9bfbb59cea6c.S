@@ -7,10 +7,10 @@ func0000000000000002:                   # @func0000000000000002
 	cmovel	%edx, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	andl	$8, %edx
+	andl	$4, %edx
 	orl	%esi, %edx
 	movl	%edx, %eax
-	orl	$16, %eax
+	orl	$8, %eax
 	testb	$1, %dil
 	cmovel	%edx, %eax
 	retq

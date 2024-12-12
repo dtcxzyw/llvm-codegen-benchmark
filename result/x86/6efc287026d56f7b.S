@@ -4,21 +4,18 @@ func0000000000000020:                   # @func0000000000000020
 	cmovbl	%edi, %eax
 	addl	$4, %eax
 	retq
-func00000000000000d4:                   # @func00000000000000d4
-	leal	-1(%rsi), %eax
+func0000000000000154:                   # @func0000000000000154
+	leal	1(%rdi), %eax
 	cmpl	%edi, %esi
-	cmovgl	%edi, %eax
-	incl	%eax
+	cmovlel	%esi, %eax
 	retq
-func00000000000000a4:                   # @func00000000000000a4
-	leal	-1(%rsi), %eax
+func00000000000001a4:                   # @func00000000000001a4
+	leal	1(%rdi), %eax
 	cmpl	%esi, %edi
-	cmovbl	%edi, %eax
-	incl	%eax
+	cmovael	%esi, %eax
 	retq
-func00000000000000b4:                   # @func00000000000000b4
-	leal	-1(%rsi), %eax
+func0000000000000134:                   # @func0000000000000134
+	leal	1(%rdi), %eax
 	cmpl	%esi, %edi
-	cmovll	%edi, %eax
-	incl	%eax
+	cmovgel	%esi, %eax
 	retq

@@ -6,19 +6,18 @@
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = lshr i32 %3, 8
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; git/optimized/show-branch.ll
-; linux/optimized/i8259.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 64, %1
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = lshr i32 %3, 4
   ret i32 %4
 }

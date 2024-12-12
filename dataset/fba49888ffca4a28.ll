@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/rscalc.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/packet-5co-legacy.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i16 %0, i16 %1, i16 %2) #0 {
 entry:

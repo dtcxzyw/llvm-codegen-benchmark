@@ -12,9 +12,10 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; libquic/optimized/padding.c.ll
+; lvgl/optimized/lv_area.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; verilator/optimized/V3Inst.cpp.ll
 ; wireshark/optimized/capture_filter_edit.cpp.ll

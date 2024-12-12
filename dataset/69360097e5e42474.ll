@@ -1,5 +1,11 @@
 
-; 23 occurrences:
+; 29 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; gromacs/optimized/calculate_spline_moduli.cpp.ll
 ; gromacs/optimized/pull.cpp.ll
 ; gromacs/optimized/sfactor.cpp.ll

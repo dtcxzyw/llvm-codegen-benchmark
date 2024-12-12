@@ -1,4 +1,4 @@
-func00000000000001fa:                   # @func00000000000001fa
+func00000000000001ff:                   # @func00000000000001ff
 	movl	$5, %eax
 	subl	%edx, %eax
 	movzwl	%ax, %eax

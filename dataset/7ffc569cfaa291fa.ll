@@ -11,8 +11,9 @@ entry:
   ret i8 %2
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/cuddUtil.c.ll
+; boost/optimized/format_args.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/fault.ll

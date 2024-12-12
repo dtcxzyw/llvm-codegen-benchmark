@@ -1,5 +1,5 @@
 
-; 523 occurrences:
+; 514 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -8,7 +8,6 @@
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
-; abc/optimized/abcAttach.c.ll
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -21,7 +20,6 @@
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcLatch.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/abcMini.c.ll
 ; abc/optimized/abcNames.c.ll
 ; abc/optimized/abcPart.c.ll
@@ -90,7 +88,6 @@
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -231,8 +228,6 @@
 ; abc/optimized/llb4Cex.c.ll
 ; abc/optimized/lpkMap.c.ll
 ; abc/optimized/mfsResub.c.ll
-; abc/optimized/mfsSat.c.ll
-; abc/optimized/mioFunc.c.ll
 ; abc/optimized/mioSop.c.ll
 ; abc/optimized/mpmAbc.c.ll
 ; abc/optimized/mpmDsd.c.ll
@@ -278,7 +273,6 @@
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver2i.c.ll
 ; abc/optimized/satSolver3.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdPath.c.ll
 ; abc/optimized/sbdSat.c.ll
@@ -289,7 +283,6 @@
 ; abc/optimized/sfmLib.c.ll
 ; abc/optimized/sfmSat.c.ll
 ; abc/optimized/simSupp.c.ll
-; abc/optimized/simSym.c.ll
 ; abc/optimized/simSymSat.c.ll
 ; abc/optimized/simSymSim.c.ll
 ; abc/optimized/sscSat.c.ll
@@ -348,7 +341,6 @@
 ; icu/optimized/uitercollationiterator.ll
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utrie.ll
-; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libjpeg-turbo/optimized/jquant2.c.ll
@@ -357,7 +349,6 @@
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/io_dec.c.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/palette.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -532,11 +523,10 @@ entry:
   ret ptr %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; icu/optimized/dtitvinf.ll
 ; icu/optimized/utrie.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/mpih-mul.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; opencv/optimized/hfs_core.cpp.ll
@@ -555,7 +545,7 @@ entry:
   ret ptr %4
 }
 
-; 66 occurrences:
+; 67 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/bacPrsTrans.c.ll
@@ -578,6 +568,7 @@ entry:
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/utf8collationiterator.ll
 ; libwebp/optimized/iterator_enc.c.ll
+; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/addrlabel.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/build_policy.ll
@@ -587,6 +578,7 @@ entry:
 ; linux/optimized/ialloc.ll
 ; linux/optimized/ip6_fib.ll
 ; linux/optimized/percpu.ll
+; opencv/optimized/morph.dispatch.cpp.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_D64.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_F32.ll
@@ -617,7 +609,6 @@ entry:
 ; postgres/optimized/tzparser.ll
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
 ; raylib/optimized/raudio.c.ll
-; slurm/optimized/bitstring.ll
 ; soc-simulator/optimized/verilated.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
@@ -631,8 +622,7 @@ entry:
   ret ptr %4
 }
 
-; 93 occurrences:
-; abc/optimized/abcDetect.c.ll
+; 90 occurrences:
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/cuddZddUtil.c.ll
@@ -641,7 +631,6 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ioJson.c.ll
 ; abc/optimized/mioParse.c.ll
-; abc/optimized/mioUtils.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/sfmDec.c.ll
@@ -660,7 +649,6 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
-; opencv/optimized/stereo_calib.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/frame.ll
 ; openjdk/optimized/interpreterRuntime.ll
@@ -731,6 +719,40 @@ entry:
   %2 = ashr exact i32 %1, 3
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i64, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 9 occurrences:
+; abc/optimized/abcAttach.c.ll
+; abc/optimized/dauTree.c.ll
+; abc/optimized/extraUtilPerm.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/mioFunc.c.ll
+; abc/optimized/sbdWin.c.ll
+; abc/optimized/utilIsop.c.ll
+; imgui/optimized/imgui.cpp.ll
+; libwebp/optimized/palette.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
+entry:
+  %2 = ashr i32 %1, 1
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 5 occurrences:
+; abc/optimized/abcDetect.c.ll
+; abc/optimized/mioUtils.c.ll
+; abc/optimized/sfmLib.c.ll
+; llama.cpp/optimized/ggml.c.ll
+; opencv/optimized/stereo_calib.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
+entry:
+  %2 = ashr exact i32 %1, 1
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   ret ptr %4
 }
 

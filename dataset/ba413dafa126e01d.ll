@@ -7,7 +7,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 -1, %2
   %4 = select i1 %1, i32 0, i32 %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -34,7 +34,7 @@ define i32 @func0000000000000002(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = select i1 %1, i32 0, i32 %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -45,7 +45,7 @@ define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 262144, %2
   %4 = select i1 %1, i32 1048576, i32 %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

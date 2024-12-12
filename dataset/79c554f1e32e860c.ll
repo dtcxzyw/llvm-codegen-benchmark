@@ -3,7 +3,7 @@
 ; icu/optimized/pkgitems.ll
 ; php/optimized/strtod.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -17,7 +17,7 @@ entry:
 ; opencv/optimized/tree.cpp.ll
 ; php/optimized/strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -73,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000020a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000040a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = add i32 %0, %1
@@ -85,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = add i32 %0, %1
@@ -97,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000351(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000006a1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -110,7 +110,7 @@ entry:
 ; cpython/optimized/sixstep.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -135,7 +135,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/tx.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000018a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nuw nsw i32 %0, %1
@@ -147,7 +147,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/xfrm_output.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nuw nsw i32 %0, %1
@@ -160,7 +160,7 @@ entry:
 ; opencv/optimized/rand.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -172,7 +172,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000306(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000606(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add i32 %0, %1
@@ -184,7 +184,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000601(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add i32 %0, %1

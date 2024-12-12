@@ -1,11 +1,10 @@
 
-; 67 occurrences:
+; 66 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; linux/optimized/ipmr.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/X86AsmBackend.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; openjdk/optimized/nmethod.ll
@@ -76,7 +75,7 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; icu/optimized/ustr.ll
 ; linux/optimized/dm-table.ll
 ; linux/optimized/ehci-hcd.ll
@@ -89,7 +88,6 @@ entry:
 ; llvm/optimized/IRSymtab.cpp.ll
 ; llvm/optimized/LTOModule.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll

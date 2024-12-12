@@ -14,9 +14,8 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
-; linux/optimized/ich8lan.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0, i32 %1, i64 %2) #0 {
 entry:

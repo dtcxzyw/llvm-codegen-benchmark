@@ -1,8 +1,8 @@
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	movq	%rdi, %rax
 	subq	%rdx, %rax
-	cmpq	%rsi, %rax
-	setg	%cl
+	cmpq	%rax, %rsi
+	setl	%cl
 	testq	%rdi, %rdi
 	setg	%al
 	andb	%cl, %al

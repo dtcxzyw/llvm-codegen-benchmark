@@ -6,7 +6,7 @@
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl i64 %3, 1
   %5 = and i64 %4, 8589934590
   %6 = add nuw nsw i64 %5, 2
@@ -25,7 +25,7 @@ entry:
 define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl i64 %3, 4
   %5 = and i64 %4, 68719476720
   %6 = add nuw nsw i64 %5, 16
@@ -43,7 +43,7 @@ entry:
 define i64 @func0000000000000017(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nsw i64 %3, 2
   %5 = and i64 %4, 17179869180
   %6 = add nuw nsw i64 %5, 4
@@ -90,7 +90,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nsw i64 %3, 3
   %5 = and i64 %4, -16
   %6 = add i64 %5, 16
@@ -181,7 +181,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl i64 %3, 3
   %5 = and i64 %4, -16
   %6 = add i64 %5, 16
@@ -230,7 +230,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl i64 %3, 3
   %5 = and i64 %4, -16
   %6 = add i64 %5, 16
@@ -245,7 +245,7 @@ entry:
 define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nuw nsw i64 %3, 3
   %5 = and i64 %4, 9223372036854775792
   %6 = add nuw nsw i64 %5, 16

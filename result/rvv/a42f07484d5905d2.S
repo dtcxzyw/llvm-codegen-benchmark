@@ -1,27 +1,32 @@
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vfncvt.f.x.w	v9, v10
-	vmfeq.vv	v0, v9, v8
+	vmfeq.vv	v0, v8, v9
 	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vfncvt.f.x.w	v9, v10
-	vmfne.vv	v0, v9, v8
+	vmfne.vv	v0, v8, v9
 	ret
-func000000000000000c:                   # @func000000000000000c
+func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vfncvt.f.x.w	v9, v10
-	vmfle.vv	v0, v9, v8
+	vmflt.vv	v0, v8, v9
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vfncvt.f.x.w	v9, v10
 	vmflt.vv	v0, v9, v8
 	ret
-func0000000000000002:                   # @func0000000000000002
+func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vfncvt.f.x.w	v9, v10
-	vmflt.vv	v0, v8, v9
+	vmfle.vv	v0, v8, v9
+	ret
+func000000000000000c:                   # @func000000000000000c
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vfncvt.f.x.w	v9, v10
+	vmfle.vv	v0, v9, v8
 	ret
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 4, e32, m1, ta, ma

@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000002a1:                   # @func00000000000002a1
+func0000000000000541:                   # @func0000000000000541
 	zext.w	a3, a2
 	slli	a2, a2, 32
 	sub	a2, a2, a3
@@ -17,14 +17,14 @@ func00000000000002a1:                   # @func00000000000002a1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000003f1:                   # @func00000000000003f1
+func00000000000007e1:                   # @func00000000000007e1
 	slli.uw	a2, a2, 1
 	sh2add	a2, a2, a2
 	add	a1, a1, a2
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000055a:                   # @func000000000000055a
+func0000000000000aaa:                   # @func0000000000000aaa
 	sext.w	a2, a2
 	lui	a3, 1033928
 	addiw	a3, a3, -1792

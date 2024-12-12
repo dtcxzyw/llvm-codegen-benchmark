@@ -1,5 +1,5 @@
 
-; 201 occurrences:
+; 203 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -8,6 +8,10 @@
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_distance_measure.ll
 ; casadi/optimized/cvodes.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
@@ -82,10 +86,8 @@
 ; gromacs/optimized/dlaed6.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/splineutil.cpp.ll
-; hdf5/optimized/io_timer.c.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/uperf.ll
 ; ipopt/optimized/IpCGPenaltyCq.ll

@@ -49,7 +49,7 @@ entry:
   ret i64 %4
 }
 
-; 37 occurrences:
+; 39 occurrences:
 ; freetype/optimized/cff.c.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -60,7 +60,6 @@ entry:
 ; libpng/optimized/pngset.c.ll
 ; libpng/optimized/pngwrite.c.ll
 ; libpng/optimized/pngwutil.c.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
 ; oiio/optimized/dpxoutput.cpp.ll
@@ -87,6 +86,9 @@ entry:
 ; openjdk/optimized/pngrutil.ll
 ; openjdk/optimized/pngset.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i8 %0, i32 %1) #0 {
 entry:

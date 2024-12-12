@@ -19,7 +19,7 @@ func000000000000000a:                   # @func000000000000000a
 	.long	8                               # 0x8
 .LCPI2_2:
 	.long	4294967279                      # 0xffffffef
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vorps	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vandps	.LCPI2_2(%rip){1to8}, %ymm0, %ymm0

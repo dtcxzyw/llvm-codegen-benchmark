@@ -3,10 +3,25 @@ func0000000000000032:                   # @func0000000000000032
 	addq	%rsi, %rdx
 	leaq	(%rdi,%rdx,8), %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	andl	$1, %edx
 	addq	%rsi, %rdx
 	leaq	(%rdi,%rdx,8), %rax
+	retq
+func000000000000003b:                   # @func000000000000003b
+	andl	$1, %edx
+	addq	%rsi, %rdx
+	leaq	(%rdi,%rdx,2), %rax
+	retq
+func0000000000000016:                   # @func0000000000000016
+	andl	$1, %edx
+	addq	%rsi, %rdx
+	leaq	(%rdi,%rdx,8), %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	andl	$1, %edx
+	addq	%rsi, %rdx
+	leaq	(%rdi,%rdx,2), %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	andl	$1, %edx

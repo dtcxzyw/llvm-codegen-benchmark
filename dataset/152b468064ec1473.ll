@@ -1,6 +1,8 @@
 
-; 26 occurrences:
+; 28 occurrences:
 ; abc/optimized/giaSimBase.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -8,6 +10,7 @@
 ; hyperscan/optimized/charreach.cpp.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/intel_hotplug.ll
+; linux/optimized/process_64.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGExpr.cpp.ll
@@ -19,7 +22,6 @@
 ; openjdk/optimized/bytecodeUtils.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; ruby/optimized/gc.ll
 ; slurm/optimized/fed_mgr.ll

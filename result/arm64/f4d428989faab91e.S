@@ -1,4 +1,4 @@
-func0000000000001982:                   // @func0000000000001982
+func0000000000006302:                   // @func0000000000006302
 // %bb.0:                               // %entry
 	cmp	w1, #1
 	ccmp	w2, #1, #8, ge
@@ -6,7 +6,7 @@ func0000000000001982:                   // @func0000000000001982
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000003304:                   // @func0000000000003304
+func000000000000c604:                   // @func000000000000c604
 // %bb.0:                               // %entry
 	cmp	w1, #19
 	mov	w8, #331                        // =0x14b
@@ -15,7 +15,7 @@ func0000000000003304:                   // @func0000000000003304
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000001984:                   // @func0000000000001984
+func0000000000006304:                   // @func0000000000006304
 // %bb.0:                               // %entry
 	cmp	w1, #1
 	ccmp	w2, #1, #8, ge
@@ -23,7 +23,7 @@ func0000000000001984:                   // @func0000000000001984
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000444:                   // @func0000000000000444
+func0000000000001084:                   // @func0000000000001084
 // %bb.0:                               // %entry
 	cmp	w1, #0
 	ccmp	w2, #0, #4, ne
@@ -31,7 +31,15 @@ func0000000000000444:                   // @func0000000000000444
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000003042:                   // @func0000000000003042
+func0000000000001082:                   // @func0000000000001082
+// %bb.0:                               // %entry
+	cmp	w1, #0
+	ccmp	w2, #0, #4, ne
+	ccmp	x0, #0, #4, ne
+	cset	w0, eq
+	ret
+                                        // -- End function
+func000000000000c082:                   // @func000000000000c082
 // %bb.0:                               // %entry
 	cmp	w1, #0
 	ccmp	x0, #0, #4, ne
@@ -39,7 +47,7 @@ func0000000000003042:                   // @func0000000000003042
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000504:                   // @func0000000000000504
+func0000000000001204:                   // @func0000000000001204
 // %bb.0:                               // %entry
 	cmp	w2, #32
 	ccmp	x0, #0, #4, ne
@@ -47,7 +55,7 @@ func0000000000000504:                   // @func0000000000000504
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000704:                   // @func0000000000000704
+func0000000000001604:                   // @func0000000000001604
 // %bb.0:                               // %entry
 	cmp	w2, #8
 	ccmp	x0, #0, #4, ne
@@ -55,15 +63,7 @@ func0000000000000704:                   // @func0000000000000704
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000502:                   // @func0000000000000502
-// %bb.0:                               // %entry
-	cmp	w2, #0
-	ccmp	x0, #0, #4, ne
-	ccmp	w1, #4, #0, ne
-	cset	w0, lo
-	ret
-                                        // -- End function
-func0000000000000702:                   // @func0000000000000702
+func0000000000001602:                   // @func0000000000001602
 // %bb.0:                               // %entry
 	cmp	w2, #0
 	ccmp	x0, #0, #4, ne
@@ -71,7 +71,7 @@ func0000000000000702:                   // @func0000000000000702
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000002842:                   // @func0000000000002842
+func000000000000a082:                   // @func000000000000a082
 // %bb.0:                               // %entry
 	cmp	w1, #0
 	ccmp	x0, #0, #4, ne
@@ -79,7 +79,7 @@ func0000000000002842:                   // @func0000000000002842
 	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000001102:                   // @func0000000000001102
+func0000000000004202:                   // @func0000000000004202
 // %bb.0:                               // %entry
 	mov	w8, #2                          // =0x2
 	movk	w8, #32768, lsl #16

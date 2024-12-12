@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	sltiu	a1, a1, 1093
 	and	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	slli	a2, a1, 48
 	lui	a3, 1
 	srli	a2, a2, 50
@@ -37,22 +37,5 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a1, a1, 48
 	addiw	a2, a2, -976
 	sltu	a1, a2, a1
-	and	a0, a0, a1
-	ret
-func0000000000000008:                   # @func0000000000000008
-	slli	a2, a1, 48
-	lui	a3, 1
-	srli	a2, a2, 50
-	addiw	a3, a3, 1147
-	mul	a2, a2, a3
-	li	a3, 100
-	srli	a2, a2, 17
-	mul	a2, a2, a3
-	lui	a3, 16
-	sub	a1, a1, a2
-	addiw	a3, a3, -1
-	and	a1, a1, a3
-	sltiu	a1, a1, 11
-	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

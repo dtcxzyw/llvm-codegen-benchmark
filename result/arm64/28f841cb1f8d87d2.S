@@ -2,30 +2,21 @@ func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
 	mov	w8, #34953                      // =0x8889
 	movk	w8, #34952, lsl #16
-	dup	v2.4s, w8
-	mov	w8, #1                          // =0x1
-	smull2	v3.2d, v1.4s, v2.4s
-	smull	v4.2d, v1.2s, v2.2s
-	uzp2	v3.4s, v4.4s, v3.4s
-	movi	v4.4s, #60
-	add	v1.4s, v3.4s, v1.4s
-	sshr	v3.4s, v1.4s, #5
-	usra	v3.4s, v1.4s, #31
-	smull2	v1.2d, v3.4s, v2.4s
-	smull	v2.2d, v3.2s, v2.2s
-	uzp2	v1.4s, v2.4s, v1.4s
-	add	v1.4s, v1.4s, v3.4s
-	sshr	v2.4s, v1.4s, #5
-	usra	v2.4s, v1.4s, #31
-	mls	v3.4s, v2.4s, v4.4s
-	dup	v2.2d, x8
-	cmtst	v1.4s, v3.4s, v3.4s
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v0.8b, v1.8b
-	ushll	v0.4s, v0.4h, #0
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
+	smull	x9, w1, w8
+	lsr	x9, x9, #32
+	add	w9, w9, w1
+	asr	w10, w9, #5
+	add	w9, w10, w9, lsr #31
+	smull	x8, w9, w8
+	lsr	x8, x8, #32
+	add	w8, w8, w9
+	asr	w10, w8, #5
+	add	w8, w10, w8, lsr #31
+	mov	w10, #60                        // =0x3c
+	msub	w8, w8, w10, w9
+	cmp	w8, #0
+	cset	w8, ne
+	orr	w8, w0, w8
+	and	x0, x8, #0x1
 	ret
                                         // -- End function

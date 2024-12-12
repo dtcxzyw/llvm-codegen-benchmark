@@ -1,5 +1,5 @@
 
-; 178 occurrences:
+; 176 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -37,8 +37,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -222,8 +220,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -289,11 +285,13 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/6hbnfszf6gkk4nniq4f5ts2z6.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = lshr i64 %1, 32
   %6 = add i64 %4, %5
   ret i64 %6
@@ -321,7 +319,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = lshr exact i64 %1, 3
   %6 = add i64 %4, %5
   ret i64 %6
@@ -356,28 +354,7 @@ entry:
   ret i64 %6
 }
 
-; 10 occurrences:
-; libsodium/optimized/libsodium_la-poly1305_donna.ll
-; libsodium/optimized/libsse2_la-poly1305_sse2.ll
-; linux/optimized/intel_ggtt.ll
-; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; wolfssl/optimized/poly1305.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = lshr i64 %2, 25
-  %4 = add nuw nsw i64 %3, %1
-  %5 = lshr i64 %0, 48
-  %6 = add nuw nsw i64 %5, %4
-  ret i64 %6
-}
-
-; 95 occurrences:
+; 93 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -406,8 +383,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -477,9 +452,26 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = lshr i64 %1, 32
   %6 = add i64 %4, %5
+  ret i64 %6
+}
+
+; 6 occurrences:
+; libsodium/optimized/libsodium_la-poly1305_donna.ll
+; libsodium/optimized/libsse2_la-poly1305_sse2.ll
+; linux/optimized/intel_ggtt.ll
+; opencv/optimized/softfloat.cpp.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; wolfssl/optimized/poly1305.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 21
+  %4 = add nuw nsw i64 %3, %1
+  %5 = lshr i64 %0, 46
+  %6 = add nuw nsw i64 %5, %4
   ret i64 %6
 }
 
@@ -489,7 +481,7 @@ entry:
 define i64 @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = lshr exact i64 %1, 2
   %6 = add nuw i64 %4, %5
   ret i64 %6

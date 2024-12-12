@@ -1,5 +1,5 @@
 
-; 79 occurrences:
+; 80 occurrences:
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; darktable/optimized/histogram.c.ll
@@ -79,6 +79,7 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

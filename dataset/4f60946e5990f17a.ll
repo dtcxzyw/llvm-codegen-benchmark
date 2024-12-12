@@ -20,7 +20,7 @@
 ; mold/optimized/cmdline.cc.X86_64.cc.ll
 ; openusd/optimized/stringUtils.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000044(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000084(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 6
   %3 = select i1 %2, i8 -87, i8 -55
@@ -32,25 +32,12 @@ entry:
 ; 1 occurrences:
 ; yoga/optimized/Node.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000024(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 2
   %3 = select i1 %2, i8 0, i8 2
   %4 = icmp ult i8 %0, 2
   %5 = select i1 %4, i8 3, i8 %3
-  ret i8 %5
-}
-
-; 2 occurrences:
-; icu/optimized/ucnv2022.ll
-; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000041(i8 %0, i8 %1) #0 {
-entry:
-  %2 = icmp ult i8 %1, 2
-  %3 = select i1 %2, i8 2, i8 1
-  %4 = icmp eq i8 %0, 5
-  %5 = select i1 %4, i8 0, i8 %3
   ret i8 %5
 }
 
@@ -62,7 +49,7 @@ entry:
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; wireshark/optimized/packet-usb.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i8 2, i8 3

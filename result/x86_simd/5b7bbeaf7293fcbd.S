@@ -112,17 +112,9 @@ func000000000000000a:                   # @func000000000000000a
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI11_0:
-	.short	65527                           # 0xfff7
-	.short	65527                           # 0xfff7
-	.short	65527                           # 0xfff7
-	.short	65527                           # 0xfff7
-	.short	65527                           # 0xfff7
-	.short	65527                           # 0xfff7
-	.short	65527                           # 0xfff7
-	.short	65527                           # 0xfff7
 func0000000000000003:                   # @func0000000000000003
 	vpmovdw	%ymm0, %xmm0
-	vpaddw	.LCPI11_0(%rip), %xmm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

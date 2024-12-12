@@ -6,7 +6,7 @@
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; ruby/optimized/io.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 1
   %4 = icmp ne i32 %1, 0
@@ -20,7 +20,7 @@ entry:
 ; php/optimized/zend_virtual_cwd.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne i32 %1, 7
@@ -62,7 +62,7 @@ entry:
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp eq i64 %1, 47
@@ -71,12 +71,11 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; llvm/optimized/InstCombineCompares.cpp.ll
+; 2 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp ugt i64 %1, 4294967295
@@ -88,10 +87,10 @@ entry:
 ; 1 occurrences:
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000114(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 20
-  %4 = icmp ult i32 %1, 64
+  %4 = icmp samesign ult i32 %1, 64
   %5 = and i1 %4, %3
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
@@ -101,7 +100,7 @@ entry:
 ; jq/optimized/jv.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ult i64 %1, 4294967296
@@ -121,7 +120,7 @@ entry:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i64 %1, 2
@@ -130,13 +129,14 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; spike/optimized/f32_classify.ll
+; 2 occurrences:
+; boost/optimized/area.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp eq i64 %2, 255
-  %4 = icmp slt i32 %1, 0
+  %3 = icmp eq i32 %2, 0
+  %4 = icmp sgt i64 %1, -5
   %5 = and i1 %4, %3
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
@@ -145,10 +145,10 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/pe.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000198(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = icmp ugt i64 %1, 15
+  %4 = icmp samesign ugt i64 %1, 15
   %5 = and i1 %4, %3
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
@@ -157,22 +157,10 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 65536
   %4 = icmp ne i32 %1, 0
-  %5 = and i1 %4, %3
-  %6 = select i1 %5, i1 %0, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/MCWin64EH.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = icmp eq i64 %2, 72
-  %4 = icmp sgt i32 %1, -1
   %5 = and i1 %4, %3
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
@@ -183,10 +171,22 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ult i32 %1, -15
+  %5 = and i1 %4, %3
+  %6 = select i1 %5, i1 %0, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/InstCombineCompares.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i1 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = icmp samesign ugt i64 %1, 63
   %5 = and i1 %4, %3
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6

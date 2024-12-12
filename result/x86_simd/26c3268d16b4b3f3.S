@@ -30,7 +30,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubq	%ymm1, %ymm2, %ymm2
 	vextracti128	$1, %ymm2, %xmm3

@@ -19,7 +19,7 @@ entry:
   ret i32 %2
 }
 
-; 79 occurrences:
+; 77 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/cuddZddUtil.c.ll
 ; abc/optimized/giaResub.c.ll
@@ -55,8 +55,7 @@ entry:
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_calendar.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/emerge.cpp.ll
@@ -85,7 +84,6 @@ entry:
 ; postgres/optimized/nodeModifyTable.ll
 ; postgres/optimized/orderedsetaggs.ll
 ; postgres/optimized/parse_merge.ll
-; postgres/optimized/parse_utilcmd.ll
 ; postgres/optimized/regcomp.ll
 ; postgres/optimized/relnode.ll
 ; postgres/optimized/tablecmds.ll
@@ -107,7 +105,7 @@ entry:
   ret i32 %2
 }
 
-; 427 occurrences:
+; 437 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -155,14 +153,17 @@ entry:
 ; abc/optimized/xsatSolver.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
-; abseil-cpp/optimized/cordz_info.cc.ll
 ; abseil-cpp/optimized/cordz_info_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
+; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/mew.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
@@ -224,7 +225,6 @@ entry:
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libquic/optimized/dtoa.cc.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/sharpyuv_gamma.c.ll
@@ -316,6 +316,9 @@ entry:
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
@@ -519,6 +522,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; wireshark/optimized/packet-csn1.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-h225.c.ll
@@ -533,6 +537,10 @@ entry:
 ; yosys/optimized/aiger.ll
 ; yosys/optimized/xaiger.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind

@@ -78,8 +78,10 @@ func000000000000000e:                   # @func000000000000000e
 	feq.d	a0, fa5, fa5
 	ret
 func0000000000000009:                   # @func0000000000000009
-	flt.d	a0, fa0, fa1
-	flt.d	a1, fa1, fa0
+	fsub.d	fa5, fa0, fa1
+	fli.d	fa4, inf
+	flt.d	a0, fa5, fa4
+	flt.d	a1, fa4, fa5
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret

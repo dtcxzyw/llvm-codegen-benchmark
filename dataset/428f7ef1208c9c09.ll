@@ -1,6 +1,7 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/kernel_timeout.cc.ll
+; boost/optimized/default_formatter_factory.ll
 ; cpython/optimized/timemodule.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll

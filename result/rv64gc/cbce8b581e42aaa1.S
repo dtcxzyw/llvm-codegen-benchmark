@@ -5,7 +5,7 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a1, a1, 1328
 .LBB0_2:                                # %entry
 	sext.w	a1, a1
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a2, a1
@@ -15,5 +15,5 @@ func0000000000000008:                   # @func0000000000000008
 .LBB1_2:                                # %entry
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret

@@ -1,10 +1,9 @@
 
-; 75 occurrences:
+; 73 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; cmake/optimized/RegularExpression.cxx.ll
 ; cmake/optimized/blocksort.c.ll
@@ -66,7 +65,6 @@
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; openusd/optimized/stbImage.cpp.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pcre2_study.ll
 ; raylib/optimized/rmodels.c.ll
@@ -76,26 +74,26 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; libquic/optimized/cbs.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl i32 %1, 8
   %5 = or disjoint i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -119,26 +117,26 @@ entry:
 ; z3/optimized/sat_prob.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000004b(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl i32 %1, 1
   %5 = or disjoint i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005e(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000005f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nsw i32 %1, 4
   %5 = or disjoint i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i16, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i16, ptr %0, i64 %6
   ret ptr %7
 }
 

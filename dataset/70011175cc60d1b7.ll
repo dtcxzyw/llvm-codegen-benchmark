@@ -1,5 +1,5 @@
 
-; 438 occurrences:
+; 437 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -63,7 +63,6 @@
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; clamav/optimized/mbox.c.ll
 ; clamav/optimized/message.c.ll
-; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/openioc.c.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/pdfng.c.ll
@@ -72,7 +71,6 @@
 ; clamav/optimized/sigtool.c.ll
 ; clamav/optimized/str.c.ll
 ; clamav/optimized/upack.c.ll
-; clamav/optimized/vba_extract.c.ll
 ; clamav/optimized/www.c.ll
 ; cmake/optimized/bzlib.c.ll
 ; cmake/optimized/frm_driver.c.ll
@@ -127,7 +125,6 @@
 ; icu/optimized/ctest.ll
 ; icu/optimized/gencnval.ll
 ; icu/optimized/ucnv_ext.ll
-; icu/optimized/ucnv_lmb.ll
 ; icu/optimized/ucnvbocu.ll
 ; icu/optimized/ucnvmbcs.ll
 ; icu/optimized/uscanf_p.ll
@@ -221,6 +218,8 @@
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
+; lvgl/optimized/lv_svg_token.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; opencv/optimized/feature.cpp.ll
@@ -446,9 +445,8 @@ entry:
   ret ptr %3
 }
 
-; 173 occurrences:
-; abc/optimized/aigCuts.c.ll
-; abc/optimized/cswCut.c.ll
+; 172 occurrences:
+; abc/optimized/abcExact.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; arrow/optimized/builder.cc.ll
 ; cpython/optimized/dictobject.ll
@@ -457,11 +455,12 @@ entry:
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
-; linux/optimized/hooks.ll
 ; linux/optimized/lzo1x_compress.ll
 ; linux/optimized/rate.ll
 ; linux/optimized/tcp_output.ll
 ; llama.cpp/optimized/ggml.c.ll
+; luajit/optimized/lib_jit.ll
+; luajit/optimized/lib_jit_dyn.ll
 ; ncnn/optimized/einsum.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -611,7 +610,6 @@ entry:
 ; wireshark/optimized/busmaster_parser.c.ll
 ; wireshark/optimized/candump_parser.c.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
-; wireshark/optimized/ftype-string.c.ll
 ; wireshark/optimized/grammar.c.ll
 ; wireshark/optimized/mate_grammar.c.ll
 ; wireshark/optimized/packet-dect-nwk.c.ll
@@ -625,6 +623,36 @@ define ptr @func0000000000000000(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
+  ret ptr %3
+}
+
+; 21 occurrences:
+; abc/optimized/dauCanon.c.ll
+; abc/optimized/ifDec16.c.ll
+; boost/optimized/area.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; fmt/optimized/format-impl-test.cc.ll
+; icu/optimized/ucnv_lmb.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVInstructionSelector.cpp.ll
+; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
+; llvm/optimized/X86InstructionSelector.cpp.ll
+; openusd/optimized/decodemv.c.ll
+; php/optimized/ir_emit.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
+entry:
+  %2 = sext i8 %1 to i64
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   ret ptr %3
 }
 

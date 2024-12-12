@@ -5,7 +5,7 @@
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000017a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002ea(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = add nsw i64 %3, -4
@@ -21,7 +21,7 @@ entry:
 ; mold/optimized/rust-demangle.c.ll
 ; ring-rs/optimized/36n9a21mmta9vg69.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -35,11 +35,11 @@ entry:
 ; qemu/optimized/hw_acpi_core.c.ll
 ; vcpkg/optimized/postbuildlint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, 35
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -47,7 +47,7 @@ entry:
 ; cmake/optimized/nghttp2_session.c.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, 1
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -3, %0
   %4 = sub i64 %2, %1
@@ -73,18 +73,18 @@ entry:
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, -3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000164(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = add nsw i64 %3, 1
@@ -123,7 +123,7 @@ entry:
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; quantlib/optimized/lmdif.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -139,7 +139,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -151,7 +151,7 @@ entry:
 ; hdf5/optimized/H5PB.c.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, 1
@@ -163,7 +163,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000221(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000441(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -174,7 +174,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000361(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1
@@ -185,7 +185,7 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, 1
@@ -197,7 +197,7 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, 1
@@ -222,7 +222,7 @@ entry:
 ; 1 occurrences:
 ; node/optimized/libnode.node_buffer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, 1
@@ -234,7 +234,7 @@ entry:
 ; 1 occurrences:
 ; g2o/optimized/solver_dense.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000017c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002ec(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i64 %2, %1

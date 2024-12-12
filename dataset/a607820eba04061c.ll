@@ -9,11 +9,11 @@ entry:
   %4 = shl i64 %3, 49
   %5 = and i64 %1, 562949953421310
   %6 = or disjoint i64 %4, %5
-  %7 = or i64 %6, %0
+  %7 = or i64 %0, %6
   ret i64 %7
 }
 
-; 71 occurrences:
+; 72 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -82,6 +82,7 @@ entry:
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
 ; llvm/optimized/StackMaps.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; quickjs/optimized/quickjs.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; yyjson/optimized/yyjson.c.ll

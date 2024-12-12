@@ -7,7 +7,7 @@
 define float @func0000000000000005(float %0, i32 %1, i32 %2) #0 {
 entry:
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %1
+  %3 = add i32 %1, %.neg
   %4 = sitofp i32 %3 to float
   %5 = fdiv float %0, %4
   ret float %5
@@ -19,7 +19,7 @@ entry:
 define float @func0000000000000001(float %0, i32 %1, i32 %2) #0 {
 entry:
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %1
+  %3 = add i32 %1, %.neg
   %4 = sitofp i32 %3 to float
   %5 = fdiv float %0, %4
   ret float %5

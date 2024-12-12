@@ -31,12 +31,6 @@ func0000000000000008:                   # @func0000000000000008
 	srli	a0, a0, 3
 	mul	a0, a0, a1
 	ret
-func0000000000000007:                   # @func0000000000000007
-	slli	a1, a1, 32
-	srli	a1, a1, 32
-	srli	a0, a0, 32
-	mul	a0, a0, a1
-	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a1, a1, 32
 	srli	a1, a1, 32

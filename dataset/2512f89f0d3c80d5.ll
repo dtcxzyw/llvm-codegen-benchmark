@@ -7,7 +7,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = shl i32 %3, 3
   %5 = zext i32 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = shl i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
@@ -28,12 +28,12 @@ entry:
 ; ocio/optimized/Lut3DOpCPU_AVX2.cpp.ll
 ; ocio/optimized/Lut3DOpCPU_SSE2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000174(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = shl nsw i32 %3, 2
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp samesign ult i64 %0, %5
   ret i1 %6
 }
 
@@ -42,12 +42,12 @@ entry:
 ; ocio/optimized/Lut1DOpCPU_AVX2.cpp.ll
 ; ocio/optimized/Lut1DOpCPU_SSE2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = shl nsw i32 %3, 2
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp samesign ult i64 %0, %5
   ret i1 %6
 }
 

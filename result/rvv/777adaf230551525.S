@@ -44,6 +44,18 @@ func0000000000000015:                   # @func0000000000000015
 	vadd.vi	v10, v10, 14
 	vwsubu.wv	v8, v8, v10
 	ret
+func000000000000000f:                   # @func000000000000000f
+	li	a0, -64
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vadd.vx	v10, v10, a0
+	vwsubu.wv	v8, v8, v10
+	ret
+func0000000000000005:                   # @func0000000000000005
+	li	a0, -48
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vadd.vx	v10, v10, a0
+	vwsubu.wv	v8, v8, v10
+	ret
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v10, v10, -1
@@ -59,11 +71,6 @@ func0000000000000009:                   # @func0000000000000009
 	vadd.vi	v10, v10, -4
 	vwsubu.wv	v8, v8, v10
 	ret
-func000000000000000f:                   # @func000000000000000f
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v10, v10, -8
-	vwsubu.wv	v8, v8, v10
-	ret
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v10, v10, 1
@@ -72,12 +79,6 @@ func000000000000000a:                   # @func000000000000000a
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v10, v10, -1
-	vwsubu.wv	v8, v8, v10
-	ret
-func0000000000000005:                   # @func0000000000000005
-	li	a0, -20
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vx	v10, v10, a0
 	vwsubu.wv	v8, v8, v10
 	ret
 func0000000000000006:                   # @func0000000000000006

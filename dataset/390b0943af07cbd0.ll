@@ -3,7 +3,7 @@
 ; opencv/optimized/undistort.dispatch.cpp.ll
 ; openjdk/optimized/cmspcs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0) #0 {
+define i32 @func00000000000000c1(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 4
   %2 = select i1 %1, i32 23, i32 49
@@ -19,7 +19,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 4
   %2 = select i1 %1, i32 1, i32 -5
@@ -30,7 +30,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0) #0 {
+define i32 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 10
   %2 = select i1 %1, i32 2, i32 1

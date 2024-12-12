@@ -12,3 +12,10 @@ func00000000000000ff:                   # @func00000000000000ff
 	or	a0, a0, a1
 	addi	a0, a0, 30
 	ret
+func00000000000000db:                   # @func00000000000000db
+	slli	a2, a2, 1
+	or	a1, a1, a2
+	slli	a0, a0, 2
+	or	a0, a0, a1
+	addi	a0, a0, 1
+	ret

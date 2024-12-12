@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 68 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
 ; abc/optimized/absOut.c.ll
@@ -39,7 +39,6 @@
 ; linux/optimized/hugetlb_vmemmap.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/pti.ll
@@ -74,14 +73,13 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
   %4 = and i64 %3, 4032
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; linux/optimized/cpu_entry_area.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/i915_mm.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/ioremap.ll
 ; linux/optimized/memory.ll

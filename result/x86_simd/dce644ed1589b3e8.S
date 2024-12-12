@@ -14,7 +14,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	9007199254740990                # 0x1ffffffffffffe
 .LCPI1_1:
 	.quad	9007199254740992                # 0x20000000000000
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vandpd	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vptestmq	%ymm0, %ymm0, %k1
 	vorpd	.LCPI1_1(%rip){1to4}, %ymm1, %ymm1 {%k1}

@@ -15,7 +15,7 @@ entry:
   %4 = icmp eq i32 %3, 63
   %5 = xor i64 %1, -1
   %6 = select i1 %4, i64 -1, i64 %5
-  %7 = and i64 %6, %0
+  %7 = and i64 %0, %6
   ret i64 %7
 }
 

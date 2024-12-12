@@ -7,6 +7,14 @@ func0000000000000004:                   # @func0000000000000004
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
+.LCPI1_0:
+	.quad	0x7ff0000000000000              # double +Inf
+func000000000000000c:                   # @func000000000000000c
+	vucomisd	.LCPI1_0(%rip), %xmm0
+	setne	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0

@@ -13,6 +13,13 @@ func0000000000000155:                   # @func0000000000000155
 	vmadd.vx	v10, a0, v8
 	vmul.vx	v8, v10, a0
 	ret
+func0000000000000222:                   # @func0000000000000222
+	li	a0, 10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vmadd.vx	v10, a0, v8
+	vmul.vx	v8, v10, a0
+	ret
 func0000000000000154:                   # @func0000000000000154
 	li	a0, 60
 	vsetivli	zero, 4, e64, m2, ta, ma

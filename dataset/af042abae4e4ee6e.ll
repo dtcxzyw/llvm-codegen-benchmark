@@ -1,7 +1,9 @@
 
-; 33 occurrences:
+; 35 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
@@ -37,8 +39,8 @@
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, %1
-  %3 = fmul double %2, %1
-  %4 = fmul double %3, %0
+  %3 = fmul double %1, %2
+  %4 = fmul double %0, %3
   ret double %4
 }
 

@@ -1,5 +1,9 @@
 
-; 1 occurrences:
+; 5 occurrences:
+; boost/optimized/console_buffer.ll
+; boost/optimized/cstdio.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_stackstring.ll
 ; re2/optimized/rune.cc.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i32 %1) #0 {
@@ -11,7 +15,11 @@ entry:
   ret i8 %5
 }
 
-; 5 occurrences:
+; 9 occurrences:
+; boost/optimized/console_buffer.ll
+; boost/optimized/cstdio.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_stackstring.ll
 ; cmake/optimized/archive_string.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-name.ll

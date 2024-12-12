@@ -1,5 +1,6 @@
 
-; 130 occurrences:
+; 129 occurrences:
+; boost/optimized/topology.ll
 ; cmake/optimized/hostip.c.ll
 ; cmake/optimized/socks.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
@@ -81,7 +82,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -128,35 +128,28 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i32 8, i32 4
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
-; 11 occurrences:
-; icu/optimized/collation.ll
+; 5 occurrences:
 ; icu/optimized/wrtjava.ll
 ; linux/optimized/e1000_main.ll
-; linux/optimized/insn-eval.ll
 ; minetest/optimized/clientmap.cpp.ll
-; postgres/optimized/network.ll
-; postgres/optimized/wchar.ll
-; postgres/optimized/wchar_shlib.ll
-; postgres/optimized/wchar_srv.ll
 ; wireshark/optimized/packet-ansi_a.c.ll
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i32 50, i32 200
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -170,83 +163,130 @@ entry:
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-scte35.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 10
   %3 = select i1 %2, i32 32, i32 64
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/loopTransform.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i8 %1) #0 {
 entry:
   %.not = icmp eq i8 %1, 10
   %2 = select i1 %.not, i32 246, i32 247
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; cmake/optimized/json_reader.cpp.ll
 ; icu/optimized/ucptrie.ll
-; linux/optimized/intel_fbc.ll
 ; php/optimized/zend_compile.ll
-; postgres/optimized/network.ll
 ; xgboost/optimized/context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 4
   %3 = select i1 %2, i32 4, i32 1
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; llvm/optimized/Lexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 85
   %3 = select i1 %2, i32 8, i32 4
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
-; 2 occurrences:
-; wireshark/optimized/packet-scte35.c.ll
+; 1 occurrences:
+; llvm/optimized/MDBuilder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp ult i8 %1, 31
+  %3 = select i1 %2, i32 4, i32 3
+  %4 = icmp ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; wireshark/optimized/packet-tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000144(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, -1
   %3 = select i1 %2, i32 3, i32 2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-mpls-echo.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 2
   %3 = select i1 %2, i32 32, i32 16
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-scte35.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000154(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp sgt i8 %1, -1
+  %3 = select i1 %2, i32 1, i32 5
+  %4 = icmp samesign ult i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/intel_dp_link_training.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 19
   %3 = select i1 %2, i32 10, i32 80
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
+  ret i1 %4
+}
+
+; 6 occurrences:
+; icu/optimized/collation.ll
+; linux/optimized/insn-eval.ll
+; postgres/optimized/network.ll
+; postgres/optimized/wchar.ll
+; postgres/optimized/wchar_shlib.ll
+; postgres/optimized/wchar_srv.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp eq i8 %1, 0
+  %3 = select i1 %2, i32 8, i32 16
+  %4 = icmp samesign ult i32 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; linux/optimized/intel_fbc.ll
+; postgres/optimized/network.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp eq i8 %1, 2
+  %3 = select i1 %2, i32 2, i32 1
+  %4 = icmp samesign ugt i32 %0, %3
   ret i1 %4
 }
 
@@ -255,11 +295,11 @@ entry:
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000094(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 63
   %3 = select i1 %2, i32 1, i32 2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ult i32 %0, %3
   ret i1 %4
 }
 
@@ -268,22 +308,22 @@ entry:
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000c6(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp slt i8 %1, 0
   %3 = select i1 %2, i32 2, i32 1
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i32 16, i32 26
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 

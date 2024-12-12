@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; cmake/optimized/nghttp2_stream.c.ll
 ; flac/optimized/stream_encoder.c.ll
 ; hdf5/optimized/H5Dchunk.c.ll
@@ -18,7 +18,6 @@
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/kfifo.ll
-; linux/optimized/reciprocal_div.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/StringRef.cpp.ll
 ; memcached/optimized/memcached-slab_automove.ll
@@ -105,13 +104,12 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; cpython/optimized/longobject.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/skl_watermark.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1, i32 %2) #0 {

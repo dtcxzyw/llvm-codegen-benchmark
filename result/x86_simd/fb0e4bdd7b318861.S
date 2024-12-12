@@ -30,7 +30,7 @@ func0000000000000004:                   # @func0000000000000004
 	.quad	11                              # 0xb
 .LCPI2_1:
 	.quad	3                               # 0x3
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
@@ -44,7 +44,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	.quad	32                              # 0x20
 .LCPI3_1:
 	.quad	64                              # 0x40
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpbroadcastq	.LCPI3_0(%rip), %ymm2   # ymm2 = [32,32,32,32]
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm2, %ymm0, %ymm0

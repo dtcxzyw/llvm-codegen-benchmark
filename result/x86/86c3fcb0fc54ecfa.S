@@ -9,12 +9,12 @@ func0000000000000000:                   # @func0000000000000000
 	orl	%esi, %edi
 	leal	1(%rdi), %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	leal	369099008(%rdi,%rsi), %eax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	orl	%esi, %edi
 	leal	21(%rdi), %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	leal	13(%rdi,%rsi), %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	leal	1518500249(%rdi,%rsi), %eax

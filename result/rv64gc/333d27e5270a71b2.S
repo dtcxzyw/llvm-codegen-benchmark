@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002f:                   # @func000000000000002f
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	add	a0, a0, a1
@@ -20,37 +20,81 @@ func0000000000000040:                   # @func0000000000000040
 	add	a0, a0, a2
 	addi	a0, a0, 19
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000003:                   # @func0000000000000003
+	slli	a2, a2, 48
+	slli	a1, a1, 4
+	srli	a2, a2, 48
+	add	a0, a0, a1
+	slli	a2, a2, 4
+	add	a0, a0, a2
+	addi	a0, a0, 8
+	ret
+func000000000000003f:                   # @func000000000000003f
+	slli	a2, a2, 48
+	srli	a2, a2, 48
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 24
+	ret
+func000000000000003c:                   # @func000000000000003c
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 1
 	ret
-func0000000000000068:                   # @func0000000000000068
+func000000000000007c:                   # @func000000000000007c
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 1
 	ret
-func000000000000006a:                   # @func000000000000006a
+func000000000000007f:                   # @func000000000000007f
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 1
+	ret
+func000000000000002c:                   # @func000000000000002c
+	slli	a2, a2, 48
+	slli	a1, a1, 5
+	srli	a2, a2, 48
+	add	a0, a0, a1
+	slli	a2, a2, 5
+	add	a0, a0, a2
+	addi	a0, a0, 35
+	ret
+func0000000000000000:                   # @func0000000000000000
+	slli	a2, a2, 48
+	srli	a2, a2, 48
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, -1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	slli	a2, a2, 48
-	slli	a1, a1, 2
 	srli	a2, a2, 48
 	add	a0, a0, a1
-	slli	a2, a2, 2
 	add	a0, a0, a2
-	addi	a0, a0, 2
+	addi	a0, a0, -8
 	ret
-func0000000000000000:                   # @func0000000000000000
+func000000000000003e:                   # @func000000000000003e
+	slli	a2, a2, 48
+	srli	a2, a2, 48
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, -8
+	ret
+func0000000000000030:                   # @func0000000000000030
+	slli	a2, a2, 48
+	srli	a2, a2, 48
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, -4
+	ret
+func000000000000002e:                   # @func000000000000002e
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	add	a0, a0, a1
@@ -66,7 +110,7 @@ func0000000000000060:                   # @func0000000000000060
 	add	a0, a0, a2
 	addi	a0, a0, -2
 	ret
-func0000000000000062:                   # @func0000000000000062
+func0000000000000063:                   # @func0000000000000063
 	slli	a2, a2, 48
 	slli	a1, a1, 1
 	srli	a2, a2, 48

@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/matcher-bm.c.ll
 ; openjdk/optimized/zip_util.ll
 ; pbrt-v4/optimized/image.cpp.ll

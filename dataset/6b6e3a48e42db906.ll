@@ -1,5 +1,17 @@
 
-; 8 occurrences:
+; 20 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/static_string.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; cmake/optimized/cmMakefile.cxx.ll
 ; cmake/optimized/cmStringCommand.cxx.ll
 ; cmake/optimized/cmStringReplaceHelper.cxx.ll
@@ -12,15 +24,13 @@
 define i64 @func0000000000000000(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = ptrtoint ptr %1 to i64
-  %.neg = sub i64 %4, %3
-  %5 = sub i64 %0, %4
-  %6 = add i64 %.neg, %5
-  ret i64 %6
+  %4 = sub i64 %0, %3
+  ret i64 %4
 }
 
-; 48 occurrences:
+; 49 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/static_string.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/IR.cpp.ll
 ; hermes/optimized/Instrs.cpp.ll
@@ -72,11 +82,8 @@ entry:
 define i64 @func0000000000000001(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %0, %4
-  %.neg = sub i64 %4, %3
-  %6 = add i64 %.neg, %5
-  ret i64 %6
+  %4 = sub i64 %0, %3
+  ret i64 %4
 }
 
 ; 3 occurrences:
@@ -87,11 +94,8 @@ entry:
 define i64 @func0000000000000002(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %0, %4
-  %.neg = sub i64 %4, %3
-  %6 = add i64 %.neg, %5
-  ret i64 %6
+  %4 = sub i64 %0, %3
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

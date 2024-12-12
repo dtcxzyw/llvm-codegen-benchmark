@@ -1,6 +1,5 @@
 
 ; 8 occurrences:
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/slub.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -8,6 +7,7 @@
 ; php/optimized/zend_jit.ll
 ; qemu/optimized/hw_9pfs_9p-local.c.ll
 ; qemu/optimized/hw_scsi_mptsas.c.ll
+; verilator/optimized/V3Task.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

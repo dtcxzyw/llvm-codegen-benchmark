@@ -3,7 +3,7 @@
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; nanosvg/optimized/nanosvg.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000075(i32 %0) #0 {
+define i64 @func00000000000000d5(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 %0, 1
   %2 = icmp sgt i32 %0, 0

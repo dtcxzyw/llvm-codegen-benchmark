@@ -1,22 +1,14 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	ushr	v4.4s, v4.4s, #31
-	ushll2	v5.2d, v4.4s, #0
-	ushll	v4.2d, v4.2s, #0
-	ushl	v2.2d, v4.2d, v2.2d
-	ushl	v3.2d, v5.2d, v3.2d
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
+	lsr	w8, w2, #31
+	lsl	x8, x8, x1
+	orr	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	ushr	v4.4s, v4.4s, #5
-	ushll2	v5.2d, v4.4s, #0
-	ushll	v4.2d, v4.2s, #0
-	ushl	v2.2d, v4.2d, v2.2d
-	ushl	v3.2d, v5.2d, v3.2d
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
+	lsr	w8, w2, #5
+	lsl	x8, x8, x1
+	orr	x0, x0, x8
 	ret
                                         // -- End function

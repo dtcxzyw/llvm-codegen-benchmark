@@ -4,7 +4,7 @@
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0) #0 {
+define i1 @func00000000000000a4(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
   %2 = and i64 %1, 4294967295
@@ -13,7 +13,7 @@ entry:
   ret i1 %4
 }
 
-; 86 occurrences:
+; 99 occurrences:
 ; cmake/optimized/sha512.c.ll
 ; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
 ; coreutils-rs/optimized/2zjxva3p2avqok6n.ll
@@ -100,8 +100,21 @@ entry:
 ; rust-analyzer-rs/optimized/56qlbpwvg5r6rv1.ll
 ; smol-rs/optimized/21eidrukyvr99qqv.ll
 ; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
+; zed-rs/optimized/22ahis4uxapmr5sot3uwhf47g.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/6hxn0twt3h5sh337x4zo515i3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/bx60353v5ms1nsmjqyoxenjec.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/ept7l7id9yl52ab8m2qhombt7.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 62
   %2 = icmp eq i64 %1, 60
@@ -180,7 +193,7 @@ entry:
 ; spike/optimized/vfslide1down_vf.ll
 ; spike/optimized/vfslide1up_vf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 15
   %2 = and i64 %1, 31
@@ -192,7 +205,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0) #0 {
+define i1 @func00000000000000a8(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967292
   %2 = icmp eq i64 %1, 0
@@ -204,7 +217,7 @@ entry:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 52
   %2 = and i64 %1, 2047
@@ -218,7 +231,7 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0) #0 {
+define i1 @func000000000000002c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
   %2 = icmp ne i64 %1, 4607182418800017408
@@ -229,7 +242,7 @@ entry:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
   %2 = icmp eq i64 %1, 9218868437227405312
@@ -239,7 +252,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/type.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0) #0 {
+define i1 @func00000000000000a1(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 2032
   %2 = icmp eq i64 %1, 16

@@ -4,19 +4,6 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	leal	-1(,%rax,4), %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	xorl	%eax, %eax
-	cmpb	$-33, %dil
-	setae	%al
-	shll	$6, %eax
-	orl	$48, %eax
-	retq
-func000000000000000a:                   # @func000000000000000a
-	xorl	%eax, %eax
-	testb	%dil, %dil
-	setns	%al
-	orl	$96, %eax
-	retq
 func0000000000000006:                   # @func0000000000000006
 	shrb	$7, %dil
 	movzbl	%dil, %eax
@@ -32,5 +19,29 @@ func0000000000000008:                   # @func0000000000000008
 	cmpb	$32, %dil
 	movl	$536871273, %ecx                # imm = 0x20000169
 	movl	$268435809, %eax                # imm = 0x10000161
+	cmovael	%ecx, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpb	$58, %dil
+	movl	$-48, %ecx
+	movl	$-55, %eax
+	cmovbl	%ecx, %eax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	xorl	%eax, %eax
+	testb	%dil, %dil
+	sets	%al
+	addl	$3, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	xorl	%eax, %eax
+	cmpb	$12, %dil
+	setb	%al
+	shll	$11, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpb	$97, %dil
+	movl	$5, %ecx
+	movl	$11, %eax
 	cmovael	%ecx, %eax
 	retq

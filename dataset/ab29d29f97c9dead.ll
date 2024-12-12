@@ -1,7 +1,8 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_lens.cc.ll
 ; gromacs/optimized/gmx_densmap.cpp.ll
 ; gromacs/optimized/gmx_sorient.cpp.ll
 ; gromacs/optimized/kernel_gpu_ref.cpp.ll

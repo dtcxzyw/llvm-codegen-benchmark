@@ -1,9 +1,8 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; cmake/optimized/smb.c.ll
 ; curl/optimized/libcurl_la-smb.ll
 ; node/optimized/libnode.crypto_clienthello.ll
-; openjdk/optimized/jexec.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
 ; typst-rs/optimized/2lj01bfl72moc27l.ll
@@ -12,10 +11,10 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000001e8(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nuw nsw i64 %1, 30
+  %4 = add nuw nsw i64 %1, 4
   %5 = add nuw nsw i64 %4, %3
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
@@ -24,7 +23,7 @@ entry:
 ; 1 occurrences:
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
   %4 = add i64 %1, 1
@@ -60,28 +59,27 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; clamav/optimized/hfsplus.c.ll
-; node/optimized/libnode.crypto_clienthello.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i64
-  %4 = add nuw nsw i64 %1, 14
-  %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ult i64 %5, %0
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000308(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
   %4 = add nuw i64 %1, 3
   %5 = add i64 %4, %3
   %6 = icmp ugt i64 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; node/optimized/libnode.crypto_clienthello.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e4(i64 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = add nuw nsw i64 %1, 3
+  %5 = add nuw nsw i64 %4, %3
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -91,7 +89,7 @@ entry:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f8(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000003e8(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
   %4 = add nuw nsw i64 %1, 4

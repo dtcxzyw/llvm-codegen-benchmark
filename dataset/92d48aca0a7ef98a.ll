@@ -14,7 +14,7 @@ define i1 @func0000000000000006(i1 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
   %3 = icmp slt i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -33,8 +33,7 @@ entry:
   ret i1 %4
 }
 
-; 84 occurrences:
-; abc/optimized/epd.c.ll
+; 81 occurrences:
 ; lief/optimized/File.cpp.ll
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
@@ -57,8 +56,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -122,7 +119,18 @@ entry:
 define i1 @func0000000000000008(i1 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
-  %3 = icmp ugt i64 %2, -4503599627370497
+  %3 = icmp ugt i64 %2, 9007199254740991
+  %4 = and i1 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, double %1) #0 {
+entry:
+  %2 = bitcast double %1 to i64
+  %3 = icmp ult i64 %2, 4503599627370496
   %4 = and i1 %3, %0
   ret i1 %4
 }

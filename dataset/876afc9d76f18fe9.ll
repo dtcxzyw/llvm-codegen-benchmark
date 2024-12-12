@@ -49,7 +49,7 @@
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 27
   %3 = add i64 %2, 4294967296
@@ -107,24 +107,12 @@ entry:
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 27
   %3 = add i64 %2, 4294967296
   %4 = ashr exact i64 %3, 32
   %5 = icmp ult i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openjdk/optimized/stringopts.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = add i64 %2, 4294967296
-  %4 = ashr exact i64 %3, 32
-  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 
@@ -166,7 +154,7 @@ entry:
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add i64 %2, 17179869184
@@ -180,7 +168,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = add nsw i64 %2, -4294967296

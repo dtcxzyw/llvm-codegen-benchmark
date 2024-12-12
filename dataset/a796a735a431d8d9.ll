@@ -29,7 +29,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 10
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -41,7 +41,19 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 2
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
+  ret i64 %5
+}
+
+; 2 occurrences:
+; gromacs/optimized/tng_io.c.ll
+; llvm/optimized/DWARFAbbreviationDeclaration.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = icmp eq i8 %2, 0
+  %4 = select i1 %3, i64 0, i64 %1
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 

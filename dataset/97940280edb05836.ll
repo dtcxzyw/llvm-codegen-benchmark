@@ -1,38 +1,15 @@
 
-; 41 occurrences:
-; abc/optimized/acbPush.c.ll
-; abc/optimized/fraSim.c.ll
-; abc/optimized/giaExist.c.ll
-; abc/optimized/giaGen.c.ll
-; abc/optimized/giaIf.c.ll
-; abc/optimized/giaMinLut.c.ll
-; abc/optimized/giaSimBase.c.ll
-; abc/optimized/ioReadPlaMo.c.ll
-; abc/optimized/simSupp.c.ll
-; abc/optimized/sswSim.c.ll
-; arrow/optimized/key_map.cc.ll
-; brotli/optimized/decode.c.ll
-; git/optimized/record.ll
-; imgui/optimized/imgui_tables.cpp.ll
+; 18 occurrences:
 ; jq/optimized/big5.ll
 ; jq/optimized/euc_jp.ll
 ; jq/optimized/euc_kr.ll
 ; jq/optimized/euc_tw.ll
 ; jq/optimized/sjis.ll
-; llama.cpp/optimized/ggml.c.ll
-; llvm/optimized/CGCall.cpp.ll
-; ncnn/optimized/deconvolutiondepthwise_x86.cpp.ll
-; ncnn/optimized/deconvolutiondepthwise_x86_avx.cpp.ll
-; ncnn/optimized/deconvolutiondepthwise_x86_avx512.cpp.ll
-; ncnn/optimized/deconvolutiondepthwise_x86_fma.cpp.ll
 ; oniguruma/optimized/big5.ll
 ; oniguruma/optimized/euc_jp.ll
 ; oniguruma/optimized/euc_kr.ll
 ; oniguruma/optimized/euc_tw.ll
 ; oniguruma/optimized/sjis.ll
-; opencv/optimized/edge_drawing.cpp.ll
-; opencv/optimized/gfluidimgproc.cpp.ll
-; raylib/optimized/rcore.c.ll
 ; ruby/optimized/big5.ll
 ; ruby/optimized/cp949.ll
 ; ruby/optimized/euc_jp.ll
@@ -48,6 +25,40 @@ entry:
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = and i64 %1, -2
   %6 = getelementptr nusw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 23 occurrences:
+; abc/optimized/acbPush.c.ll
+; abc/optimized/fraSim.c.ll
+; abc/optimized/giaExist.c.ll
+; abc/optimized/giaGen.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaMinLut.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/ioReadPlaMo.c.ll
+; abc/optimized/simSupp.c.ll
+; abc/optimized/sswSim.c.ll
+; arrow/optimized/key_map.cc.ll
+; brotli/optimized/decode.c.ll
+; git/optimized/record.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; llama.cpp/optimized/ggml.c.ll
+; llvm/optimized/CGCall.cpp.ll
+; ncnn/optimized/deconvolutiondepthwise_x86.cpp.ll
+; ncnn/optimized/deconvolutiondepthwise_x86_avx.cpp.ll
+; ncnn/optimized/deconvolutiondepthwise_x86_avx512.cpp.ll
+; ncnn/optimized/deconvolutiondepthwise_x86_fma.cpp.ll
+; opencv/optimized/edge_drawing.cpp.ll
+; opencv/optimized/gfluidimgproc.cpp.ll
+; raylib/optimized/rcore.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw float, ptr %0, i64 %3
+  %5 = and i64 %1, 4294967292
+  %6 = getelementptr nusw nuw float, ptr %4, i64 %5
   ret ptr %6
 }
 

@@ -28,33 +28,17 @@ func0000000000000007:                   # @func0000000000000007
 .LBB3_2:
 	addiw	a0, a0, 1
 	ret
-func0000000000000020:                   # @func0000000000000020
-	lui	a2, 1
-	bgeu	a2, a1, .LBB4_2
-	addiw	a0, a2, -1
-	ret
-.LBB4_2:
-	addiw	a0, a0, -1
-	ret
-func0000000000000023:                   # @func0000000000000023
-	lui	a2, 1
-	bgeu	a2, a1, .LBB5_2
-	addiw	a0, a2, 1
-	ret
-.LBB5_2:
-	addiw	a0, a0, 1
-	ret
 func0000000000000018:                   # @func0000000000000018
-	bgez	a1, .LBB6_2
+	bgez	a1, .LBB4_2
 	li	a0, -3
 	ret
-.LBB6_2:
+.LBB4_2:
 	addiw	a0, a0, -3
 	ret
 func0000000000000019:                   # @func0000000000000019
-	bgez	a1, .LBB7_2
+	bgez	a1, .LBB5_2
 	li	a0, 1
 	ret
-.LBB7_2:
+.LBB5_2:
 	addiw	a0, a0, 1
 	ret

@@ -3,6 +3,6 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovw2m	%xmm0, %k1
 	vcvttpd2dq	%zmm1, %ymm0
 	vcvtdq2pd	%ymm0, %zmm0
-	vcmpneqpd	%zmm1, %zmm0, %k0 {%k1}
+	vcmpneqpd	%zmm0, %zmm1, %k0 {%k1}
 	vpmovm2d	%k0, %ymm0
 	retq

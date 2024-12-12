@@ -16,7 +16,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 1, %0
@@ -38,7 +38,7 @@ entry:
 ; yosys/optimized/freduce.ll
 ; z3/optimized/bit_blaster_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 1, %0
@@ -56,7 +56,7 @@ entry:
 ; yosys/optimized/anlogic_eqn.ll
 ; yosys/optimized/blifparse.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %0
@@ -65,7 +65,7 @@ entry:
   ret i1 %5
 }
 
-; 38 occurrences:
+; 36 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -88,7 +88,6 @@ entry:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -99,13 +98,12 @@ entry:
 ; abc/optimized/ioWriteEdgelist.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/rpo.c.ll
 ; abc/optimized/satTruth.c.ll
 ; abc/optimized/sbdSat.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ec(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001cc(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 1, %0
@@ -137,7 +135,7 @@ entry:
 ; yosys/optimized/test_abcloop.ll
 ; yosys/optimized/xilinx_dffopt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 1, %0
@@ -154,7 +152,7 @@ entry:
 ; abc/optimized/sfmNtk.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001ec(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %0
@@ -170,7 +168,7 @@ entry:
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw i32 1, %0

@@ -23,7 +23,7 @@ func000000000000000c:                   # @func000000000000000c
 	.quad	1000                            # 0x3e8
 .LCPI2_1:
 	.quad	1000000000                      # 0x3b9aca00
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm0

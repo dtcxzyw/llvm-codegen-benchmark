@@ -14,13 +14,11 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; clamav/optimized/XzIn.c.ll
 ; eastl/optimized/Int128_t.cpp.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/msync.ll
-; postgres/optimized/shm_toc.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {

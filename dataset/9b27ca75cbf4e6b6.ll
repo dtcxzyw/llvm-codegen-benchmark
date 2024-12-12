@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/math_normalize_spheroidal.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(i1 %0, float %1) #0 {

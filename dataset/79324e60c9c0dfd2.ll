@@ -72,7 +72,7 @@ entry:
 ; gromacs/optimized/biasstate.cpp.ll
 ; opencv/optimized/trackerMedianFlow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0) #0 {
+define i1 @func0000000000000088(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 1
   %2 = mul i64 %1, %0
@@ -84,33 +84,33 @@ entry:
 ; gromacs/optimized/biasstate.cpp.ll
 ; opencv/optimized/trackerMedianFlow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0) #0 {
+define i1 @func0000000000000094(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 1
   %2 = mul i64 %1, %0
-  %3 = icmp ult i64 %2, 2
+  %3 = icmp samesign ult i64 %2, 2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; casadi/optimized/sparsity.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0) #0 {
+define i1 @func00000000000001f8(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 1
   %2 = mul nuw nsw i64 %1, %0
-  %3 = icmp ugt i64 %2, 2305843009213693951
+  %3 = icmp samesign ugt i64 %2, 2305843009213693951
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; casadi/optimized/sparsity.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0) #0 {
+define i1 @func00000000000001f4(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 1
   %2 = mul nuw nsw i64 %1, %0
-  %3 = icmp ult i64 %2, 2
+  %3 = icmp samesign ult i64 %2, 2
   ret i1 %3
 }
 

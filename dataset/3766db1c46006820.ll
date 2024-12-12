@@ -11,11 +11,11 @@
 define i8 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
-; 41 occurrences:
+; 43 occurrences:
 ; arrow/optimized/UriNormalize.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -29,8 +29,6 @@ entry:
 ; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/ctr.c.ll
 ; libquic/optimized/pkcs8.c.ll
-; libsodium/optimized/libsodium_la-stream_salsa2012_ref.ll
-; libsodium/optimized/libsodium_la-stream_salsa208_ref.ll
 ; libzmq/optimized/xpub.cpp.ll
 ; lief/optimized/pkcs12.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -57,22 +55,27 @@ entry:
 ; proxygen/optimized/Huffman.cpp.ll
 ; qemu/optimized/ahci.c.ll
 ; qemu/optimized/pci.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll
 ; openjdk/optimized/relocator.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
@@ -83,7 +86,7 @@ entry:
 define i8 @func000000000000001c(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
@@ -95,7 +98,17 @@ entry:
 define i8 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
+  ret i8 %3
+}
+
+; 1 occurrences:
+; boost/optimized/dec_octet_rule.ll
+; Function Attrs: nounwind
+define i8 @func000000000000001e(i32 %0, i8 %1) #0 {
+entry:
+  %2 = trunc i32 %0 to i8
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
@@ -107,7 +120,7 @@ entry:
 define i8 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
@@ -117,7 +130,7 @@ entry:
 define i8 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
@@ -128,7 +141,7 @@ entry:
 define i8 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
@@ -139,7 +152,7 @@ entry:
 define i8 @func000000000000000e(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 
@@ -151,7 +164,7 @@ entry:
 define i8 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i8
-  %3 = add i8 %2, %1
+  %3 = add i8 %1, %2
   ret i8 %3
 }
 

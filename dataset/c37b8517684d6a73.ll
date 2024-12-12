@@ -9,22 +9,21 @@
 ; openvdb/optimized/TopologyToLevelSet.cc.ll
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000098(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 1, %1
-  %3 = and i32 %2, %0
-  %4 = icmp ne i32 %3, 0
-  %5 = zext i1 %4 to i8
-  ret i8 %5
+  %2 = lshr i32 %0, %1
+  %3 = trunc i32 %2 to i8
+  %4 = and i8 %3, 1
+  ret i8 %4
 }
 
 ; 1 occurrences:
 ; yosys/optimized/setundef.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000062(i32 %0, i32 %1) #0 {
+define i8 @func00000000000000c2(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 16, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   %5 = zext i1 %4 to i8
   ret i8 %5
@@ -35,13 +34,12 @@ entry:
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/packet-rtcp.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000078(i32 %0, i32 %1) #0 {
+define i8 @func00000000000000d8(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 1, %1
-  %3 = and i32 %2, %0
-  %4 = icmp ne i32 %3, 0
-  %5 = zext i1 %4 to i8
-  ret i8 %5
+  %2 = lshr i32 %0, %1
+  %3 = trunc i32 %2 to i8
+  %4 = and i8 %3, 1
+  ret i8 %4
 }
 
 ; 1 occurrences:
@@ -50,7 +48,7 @@ entry:
 define i8 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 4, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i8
   ret i8 %5

@@ -5,7 +5,7 @@
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %0
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -19,7 +19,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, %2
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -35,12 +35,10 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/dgebrd.cpp.ll
-; gromacs/optimized/dgeqrf.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
-; gromacs/optimized/sgeqrf.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
 ; openblas/optimized/dgeqrf.c.ll
 ; openblas/optimized/dgeqrfp.c.ll
@@ -54,8 +52,7 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; openblas/optimized/dorgr2.c.ll
+; 3 occurrences:
 ; openblas/optimized/dsytf2_rk.c.ll
 ; openblas/optimized/dtgex2.c.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
@@ -77,7 +74,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %0
   %4 = mul nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -99,7 +96,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, %0
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }

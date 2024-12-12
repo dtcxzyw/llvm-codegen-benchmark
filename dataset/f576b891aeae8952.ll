@@ -1,5 +1,12 @@
 
-; 24 occurrences:
+; 29 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/expand.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/write_dsv.ll
 ; cpython/optimized/_codecs_jp.ll
 ; nix/optimized/attr-path.ll
 ; nix/optimized/cgroup.ll
@@ -10,8 +17,6 @@
 ; nix/optimized/local-store.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/profiles.ll
 ; nix/optimized/shared.ll
@@ -28,7 +33,7 @@
 define i64 @func0000000000000000(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   %4 = zext i8 %3 to i64
   ret i64 %4
 }
@@ -42,7 +47,7 @@ entry:
 define i64 @func0000000000000007(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add nuw nsw i8 %0, %2
   %4 = zext nneg i8 %3 to i64
   ret i64 %4
 }
@@ -53,7 +58,7 @@ entry:
 define i64 @func0000000000000004(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = add nuw i8 %2, %0
+  %3 = add nuw i8 %0, %2
   %4 = zext i8 %3 to i64
   ret i64 %4
 }

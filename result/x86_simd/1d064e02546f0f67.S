@@ -6,5 +6,5 @@ func0000000000000001:                   # @func0000000000000001
 	vpbroadcastb	.LCPI0_1(%rip), %xmm3   # xmm3 = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vpcmpeqb	%xmm3, %xmm2, %k1
 	vmovdqu8	%xmm3, %xmm1 {%k1}
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	retq

@@ -12,10 +12,10 @@
 ; ruby/optimized/error.ll
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i64 20, i64 0
   ret i64 %5
@@ -28,7 +28,7 @@ entry:
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = and i32 %2, %0

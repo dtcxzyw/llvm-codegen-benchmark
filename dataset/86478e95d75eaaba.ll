@@ -12,7 +12,7 @@ entry:
   ret double %3
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; ceres/optimized/polynomial.cc.ll
 ; darktable/optimized/introspection_clahe.c.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -21,8 +21,6 @@ entry:
 ; gromacs/optimized/gmx_energy.cpp.ll
 ; icu/optimized/gregocal.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; opencv/optimized/termination.cpp.ll
 ; openusd/optimized/testVtCpp.cpp.ll

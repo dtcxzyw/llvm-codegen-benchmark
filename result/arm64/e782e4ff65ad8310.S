@@ -1,4 +1,4 @@
-func0000000000000075:                   // @func0000000000000075
+func00000000000000e5:                   // @func00000000000000e5
 // %bb.0:                               // %entry
 	mov	x9, #28087                      // =0x6db7
 	sub	x8, x2, x1
@@ -16,7 +16,7 @@ func0000000000000075:                   // @func0000000000000075
 	cset	w0, ls
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	mov	x9, #-3689348814741910324       // =0xcccccccccccccccc
@@ -27,7 +27,7 @@ func0000000000000011:                   // @func0000000000000011
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000074:                   // @func0000000000000074
+func00000000000000e4:                   // @func00000000000000e4
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
@@ -40,7 +40,7 @@ func0000000000000074:                   // @func0000000000000074
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
@@ -51,7 +51,7 @@ func0000000000000031:                   // @func0000000000000031
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa

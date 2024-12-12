@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/floatobject.ll
@@ -16,7 +16,6 @@
 ; libquic/optimized/modp_b64.cc.ll
 ; libwebp/optimized/extras.c.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/logips2pp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; node/optimized/libnode.string_bytes.ll
 ; oniguruma/optimized/utf16_be.ll
@@ -46,7 +45,7 @@ define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 7
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -60,7 +59,7 @@ define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 2
   %3 = zext nneg i8 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

@@ -1,8 +1,11 @@
 
-; 3 occurrences:
+; 6 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/expand_on_spheroid.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
@@ -13,7 +16,6 @@ entry:
 }
 
 ; 23 occurrences:
-; c3c/optimized/number.c.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; gromacs/optimized/energyoutput.cpp.ll
@@ -23,6 +25,7 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/MCDisassembler.cpp.ll
+; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/SveEmitter.cpp.ll

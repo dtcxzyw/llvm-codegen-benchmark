@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = add nsw i64 %3, 4
@@ -22,7 +22,7 @@ entry:
 ; flatbuffers/optimized/reflection.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e4(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = add nuw nsw i64 %3, 4

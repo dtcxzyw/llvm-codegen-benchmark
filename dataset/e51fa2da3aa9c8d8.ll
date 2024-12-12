@@ -5,7 +5,7 @@
 define i1 @func000000000000000a(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 1
-  %2 = icmp slt i64 %1, %0
+  %2 = icmp sgt i64 %0, %1
   ret i1 %2
 }
 
@@ -23,10 +23,10 @@ entry:
 ; verilator/optimized/V3ParseGrammar.cpp.ll
 ; yosys/optimized/verilog_parser.tab.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0) #0 {
+define i1 @func000000000000002a(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 1
-  %2 = icmp slt i64 %1, %0
+  %2 = icmp sgt i64 %0, %1
   ret i1 %2
 }
 

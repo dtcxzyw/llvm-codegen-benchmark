@@ -23,14 +23,8 @@ func0000000000000001:                   # @func0000000000000001
 	fmv.d.x	fa0, zero
 .LBB3_2:                                # %entry
 	ret
-func0000000000000004:                   # @func0000000000000004
-	li	a1, 5
-	bltu	a0, a1, .LBB4_2
+func000000000000000c:                   # @func000000000000000c
+	bnez	a0, .LBB4_2
 	fmv.d.x	fa0, zero
 .LBB4_2:                                # %entry
-	ret
-func000000000000000c:                   # @func000000000000000c
-	bnez	a0, .LBB5_2
-	fmv.d.x	fa0, zero
-.LBB5_2:                                # %entry
 	ret

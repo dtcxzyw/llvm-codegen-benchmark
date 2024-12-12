@@ -1,5 +1,5 @@
 
-; 207 occurrences:
+; 217 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -9,6 +9,12 @@
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_internal.cc.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
+; boost/optimized/code_conversion.ll
+; boost/optimized/dump.ll
+; boost/optimized/dump_avx2.ll
+; boost/optimized/dump_ssse3.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
@@ -94,6 +100,8 @@
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/Magic.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -198,6 +206,7 @@
 ; spike/optimized/vwsub_wx.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_vorbis.c.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; velox/optimized/ExprToSubfieldFilter.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
@@ -207,6 +216,7 @@
 ; wireshark/optimized/packet-mq.c.ll
 ; wireshark/optimized/packet-rohc.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/055l6m6wb4e4jq2j59cjsdkaz.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i8 %0) #0 {
 entry:

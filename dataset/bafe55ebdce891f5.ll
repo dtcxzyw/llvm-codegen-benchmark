@@ -63,7 +63,7 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/giaCSat2.c.ll
@@ -73,6 +73,8 @@ entry:
 ; linux/optimized/lib.ll
 ; linux/optimized/tcp_cubic.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; qemu/optimized/target_riscv_monitor.c.ll
 ; Function Attrs: nounwind
@@ -84,7 +86,8 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/numeric.ll
 ; cmake/optimized/divsufsort.c.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; lightgbm/optimized/gbdt_model_text.cpp.ll

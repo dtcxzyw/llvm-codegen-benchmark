@@ -6,7 +6,7 @@
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %2, %1
   %4 = icmp ult i64 %3, -4611686018427387904
@@ -23,6 +23,17 @@ entry:
   %3 = sub i64 %2, %1
   %4 = icmp ult i64 %3, -1152921504606846976
   %5 = or i1 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %2, %1
+  %4 = icmp ugt i64 %3, -5
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

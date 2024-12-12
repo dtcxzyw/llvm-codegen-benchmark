@@ -19,7 +19,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpcmpeqw	.LCPI0_0(%rip), %ymm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -69,7 +69,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpcmpnleuw	.LCPI2_0(%rip), %ymm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -94,7 +94,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpcmpneqw	.LCPI3_0(%rip), %ymm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

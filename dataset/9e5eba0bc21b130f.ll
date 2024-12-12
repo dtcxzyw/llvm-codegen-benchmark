@@ -1,5 +1,5 @@
 
-; 74 occurrences:
+; 73 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; cmake/optimized/lz_encoder.c.ll
 ; cpython/optimized/dtoa.ll
@@ -54,7 +54,6 @@
 ; openusd/optimized/av1_loopfilter.c.ll
 ; qemu/optimized/block_vhdx.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
-; qemu/optimized/hw_ssi_sifive_spi.c.ll
 ; qemu/optimized/optimize.c.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/source_s_roundPackToF16.c.ll
@@ -96,7 +95,7 @@ entry:
   ret i32 %3
 }
 
-; 48 occurrences:
+; 50 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/dauNonDsd.c.ll
@@ -144,6 +143,8 @@ entry:
 ; yosys/optimized/opt_lut.ll
 ; yosys/optimized/opt_lut_ins.ll
 ; yosys/optimized/xilinx_dffopt.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zxing/optimized/MCDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i64 %1) #0 {

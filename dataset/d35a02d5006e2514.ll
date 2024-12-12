@@ -1,5 +1,19 @@
 
-; 138 occurrences:
+; 4 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; mitsuba3/optimized/string.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 9218868437227405312
+  %3 = or i64 %0, %2
+  %4 = lshr exact i64 %3, 52
+  ret i64 %4
+}
+
+; 134 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -25,6 +39,7 @@
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; bullet3/optimized/b3File.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
@@ -38,7 +53,6 @@
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/random.cpp.ll
 ; g2o/optimized/sampler.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; gromacs/optimized/coolstuff.cpp.ll
 ; gromacs/optimized/seed.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
@@ -62,13 +76,11 @@
 ; llvm/optimized/Randstruct.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; nix/optimized/filetransfer.ll
 ; ocio/optimized/Platform.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/backgammon_test.cc.ll
 ; openspiel/optimized/bargaining_instance_generator.cc.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
@@ -115,10 +127,8 @@
 ; quantlib/optimized/fireflyalgorithm.ll
 ; quantlib/optimized/mt19937uniformrng.ll
 ; quantlib/optimized/particleswarmoptimization.ll
-; quest/optimized/mt19937ar.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/geohash.ll
-; redis/optimized/mt19937-64.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; rocksdb/optimized/transaction_test_util.cc.ll
@@ -142,7 +152,7 @@
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2147483648
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = lshr exact i64 %3, 1
   ret i64 %4
 }
@@ -164,15 +174,14 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 6148914691236517204
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = lshr i64 %3, 2
   ret i64 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cpython/optimized/longobject.ll
 ; linux/optimized/intel.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; linux/optimized/pt.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/LoopInfo.cpp.ll

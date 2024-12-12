@@ -8,7 +8,7 @@ func0000000000000005:                   # @func0000000000000005
 	vptestnmd	.LCPI0_0(%rip){1to4}, %xmm1, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm1   # ymm1 = [5,5,5,5]
 	vpbroadcastq	.LCPI0_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [4,4,4,4]
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	2                               # 0x2
@@ -52,5 +52,5 @@ func0000000000000007:                   # @func0000000000000007
 	vptestnmd	.LCPI2_3(%rip){1to4}, %xmm1, %k1
 	vpbroadcastq	.LCPI2_1(%rip), %ymm1   # ymm1 = [3,3,3,3]
 	vpbroadcastq	.LCPI2_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2]
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

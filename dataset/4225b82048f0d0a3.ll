@@ -1,5 +1,5 @@
 
-; 273 occurrences:
+; 284 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; abseil-cpp/optimized/int128.cc.ll
 ; abseil-cpp/optimized/match.cc.ll
@@ -145,7 +145,6 @@
 ; luau/optimized/lnumprint.cpp.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -159,7 +158,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -219,7 +217,6 @@
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/lockcmds.ll
-; proj/optimized/io.cpp.ll
 ; proxygen/optimized/ServerIdleSessionController.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
@@ -248,28 +245,42 @@
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f128_classify.ll
 ; spike/optimized/f128_mul.ll
-; spike/optimized/f16_classify.ll
 ; spike/optimized/f16_div.ll
-; spike/optimized/f32_classify.ll
 ; spike/optimized/f32_div.ll
-; spike/optimized/f64_classify.ll
 ; spike/optimized/f64_div.ll
 ; spike/optimized/f64_sqrt.ll
 ; spike/optimized/s_addMagsF128.ll
 ; spike/optimized/s_mulAddF64.ll
 ; tokio-rs/optimized/4brh9kql6tjayli1.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; velox/optimized/SsdFile.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
+; wasmtime-rs/optimized/3sb71uj5mon9qr9k.ll
 ; xgboost/optimized/regression_obj.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/nnf.cpp.ll
 ; z3/optimized/pb2bv_tactic.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
+; zed-rs/optimized/22ahis4uxapmr5sot3uwhf47g.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/6hxn0twt3h5sh337x4zo515i3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/bx60353v5ms1nsmjqyoxenjec.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/ept7l7id9yl52ab8m2qhombt7.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/BitMatrixIO.cpp.ll
 ; zxing/optimized/ODCode39Reader.cpp.ll
@@ -277,12 +288,18 @@
 define i64 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   ret i64 %3
 }
 
-; 135 occurrences:
+; 142 occurrences:
 ; arrow/optimized/decimal.cc.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; diesel-rs/optimized/ejac3nrysber2ti.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -374,26 +391,19 @@ entry:
 ; spike/optimized/f128_div.ll
 ; spike/optimized/f128_mul.ll
 ; spike/optimized/f128_roundToInt.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f128_to_i32.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f128_to_ui64.ll
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f32_to_bf16.ll
-; spike/optimized/f32_to_f16.ll
 ; spike/optimized/f32_to_i32.ll
 ; spike/optimized/f32_to_ui32.ll
 ; spike/optimized/f64_mul.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; spike/optimized/f64_to_i32.ll
 ; spike/optimized/f64_to_ui32.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_addMagsF16.ll
 ; spike/optimized/s_addMagsF64.ll
 ; spike/optimized/s_mulAddF128.ll
@@ -417,11 +427,19 @@ entry:
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/9fz5l76t5byggb8exxkeuxjql.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 

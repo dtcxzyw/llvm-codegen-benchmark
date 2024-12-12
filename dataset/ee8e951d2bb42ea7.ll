@@ -7,13 +7,12 @@
 ; abc/optimized/xsatSolver.c.ll
 ; arrow/optimized/array_nested.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; clamav/optimized/chmd.c.ll
 ; cpython/optimized/arraymodule.ll
 ; cpython/optimized/sre.ll
 ; cpython/optimized/textio.ll
-; cpython/optimized/unicode.ll
 ; curl/optimized/libcurl_la-tftp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
 ; faiss/optimized/IndexIVF.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
@@ -47,6 +46,7 @@
 ; llvm/optimized/MCDwarf.cpp.ll
 ; luajit/optimized/lj_carith.ll
 ; luajit/optimized/lj_carith_dyn.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll

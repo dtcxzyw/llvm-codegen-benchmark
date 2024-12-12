@@ -1,12 +1,9 @@
 
-; 7 occurrences:
+; 4 occurrences:
 ; bdwgc/optimized/gc.c.ll
-; hermes/optimized/HadesGC.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
-; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; openjdk/optimized/cardTableRS.ll
 ; openjdk/optimized/psCardTable.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -77,6 +74,18 @@ entry:
   %3 = add nsw i64 %1, %2
   %.idx = shl nsw i64 %0, 3
   %4 = add i64 %3, %.idx
+  ret i64 %4
+}
+
+; 3 occurrences:
+; hermes/optimized/HadesGC.cpp.ll
+; llvm/optimized/XCOFFObjectFile.cpp.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = add nuw i64 %3, %0
   ret i64 %4
 }
 

@@ -1,9 +1,8 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
-; recastnavigation/optimized/NavMeshTesterTool.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 17
   %3 = getelementptr [0 x { [16 x i16] }], ptr %0, i64 0, i64 %2, i32 0, i64 15
@@ -35,11 +34,22 @@ entry:
 ; recastnavigation/optimized/NavMeshTesterTool.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
-  %3 = getelementptr nusw [18 x float], ptr %0, i64 0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 4
+  %3 = getelementptr nusw nuw [18 x float], ptr %0, i64 0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 4
+  ret ptr %4
+}
+
+; 1 occurrences:
+; recastnavigation/optimized/NavMeshTesterTool.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = mul i64 %1, 3
+  %3 = getelementptr nusw nuw [9 x float], ptr %0, i64 0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   ret ptr %4
 }
 
@@ -47,11 +57,11 @@ entry:
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
-  %3 = getelementptr nusw [99 x float], ptr %0, i64 0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 4
+  %3 = getelementptr nusw nuw [99 x float], ptr %0, i64 0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 4
   ret ptr %4
 }
 

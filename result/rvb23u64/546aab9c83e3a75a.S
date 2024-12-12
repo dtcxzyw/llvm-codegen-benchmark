@@ -5,7 +5,7 @@ func000000000000007c:                   # @func000000000000007c
 	addiw	a1, a1, 40
 	add	a0, a0, a1
 	ret
-func000000000000006a:                   # @func000000000000006a
+func000000000000006b:                   # @func000000000000006b
 	slli	a1, a1, 1
 	addi	a1, a1, -2
 	sh3add.uw	a0, a1, a0
@@ -20,7 +20,7 @@ func0000000000000004:                   # @func0000000000000004
 	addiw	a1, a1, 2
 	add	a0, a0, a1
 	ret
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	slli	a1, a1, 1
 	addi	a1, a1, -1
 	sh3add.uw	a0, a1, a0

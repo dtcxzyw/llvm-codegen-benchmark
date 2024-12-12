@@ -3,7 +3,7 @@
 ; clamav/optimized/infblock.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i16 %0) #0 {
+define i32 @func0000000000000021(i16 %0) #0 {
 entry:
   %1 = zext i16 %0 to i32
   %2 = add nsw i32 %1, -1
@@ -18,7 +18,7 @@ entry:
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i16 %0) #0 {
+define i32 @func00000000000000a1(i16 %0) #0 {
 entry:
   %1 = zext nneg i16 %0 to i32
   %2 = add nsw i32 %1, -1

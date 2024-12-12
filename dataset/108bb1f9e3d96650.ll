@@ -1,5 +1,5 @@
 
-; 135 occurrences:
+; 136 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -135,13 +135,14 @@
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -159,7 +160,7 @@ entry:
   %3 = and i32 %2, 7
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -181,8 +182,21 @@ entry:
   %3 = and i32 %2, 16711680
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
+  ret i64 %7
+}
+
+; 1 occurrences:
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = zext nneg i32 %1 to i64
+  %6 = or disjoint i64 %0, %5
+  %7 = or i64 %6, %4
   ret i64 %7
 }
 

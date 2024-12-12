@@ -28,7 +28,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-a_d2i_fp.ll
 ; qemu/optimized/fdt_rw.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = xor i64 %0, -1
@@ -50,7 +50,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
@@ -61,10 +61,10 @@ entry:
 ; wasmedge/optimized/proxy.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
@@ -75,7 +75,7 @@ entry:
 ; wasmedge/optimized/proxy.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = xor i64 %0, -1
@@ -89,7 +89,7 @@ entry:
 ; linux/optimized/printk.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000089(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = xor i64 %0, -1
@@ -97,10 +97,9 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/iov_iter.ll
-; linux/optimized/rseq.ll
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
 ; llvm/optimized/DWARFUnitIndex.cpp.ll
 ; llvm/optimized/DataExtractor.cpp.ll
@@ -118,10 +117,10 @@ entry:
 ; opencv/optimized/count_non_zero.dispatch.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
@@ -131,7 +130,7 @@ entry:
 ; opencv/optimized/count_non_zero.dispatch.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = xor i64 %0, -1

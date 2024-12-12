@@ -34,7 +34,7 @@ define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
   %4 = fadd double %3, 1.000000e+00
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   %6 = fcmp olt double %5, -1.000000e+00
   ret i1 %6
 }
@@ -47,7 +47,7 @@ define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
   %4 = fadd double %3, 1.000000e+00
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   %6 = fcmp oeq double %5, -1.000000e+00
   ret i1 %6
 }

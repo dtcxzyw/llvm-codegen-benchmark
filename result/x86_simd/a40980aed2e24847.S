@@ -59,6 +59,6 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000001:                   # @func0000000000000001
 	vpmovwb	%ymm1, %xmm1
 	vgf2p8affineqb	$0, .LCPI1_1(%rip){1to2}, %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

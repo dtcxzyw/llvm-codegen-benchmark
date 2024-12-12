@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; llvm/optimized/BitcodeAnalyzer.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -8,6 +8,7 @@
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
 ; nori/optimized/canvas.cpp.ll
 ; opencv/optimized/cv2_convert.cpp.ll
 ; opencv/optimized/perf_math.cpp.ll

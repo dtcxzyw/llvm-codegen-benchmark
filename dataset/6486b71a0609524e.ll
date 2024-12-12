@@ -17,7 +17,6 @@
 ; linux/optimized/ethtool.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/ipv6_sockglue.ll
-; linux/optimized/mii.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/trace_output.ll
@@ -46,27 +45,15 @@
 ; ring-rs/optimized/1vabw27ldssjsz66.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 128
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 3, i32 2
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, i32 %4, i32 1
-  ret i32 %6
-}
-
-; 1 occurrences:
-; php/optimized/output.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 4096
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 11, i32 10
-  %5 = icmp ugt i32 %0, 15
-  %6 = select i1 %5, i32 %4, i32 9
   ret i32 %6
 }
 

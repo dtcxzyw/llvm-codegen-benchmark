@@ -1,36 +1,30 @@
 func000000000000005f:                   // @func000000000000005f
 // %bb.0:                               // %entry
-	abs	v4.4s, v4.4s
-	abs	v5.4s, v5.4s
-	abs	v2.4s, v2.4s
-	abs	v3.4s, v3.4s
-	add	v2.4s, v2.4s, v4.4s
-	add	v3.4s, v3.4s, v5.4s
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
+	cmp	w2, #0
+	cneg	w8, w2, mi
+	cmp	w1, #0
+	cneg	w9, w1, mi
+	add	w8, w9, w8
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000005d:                   // @func000000000000005d
 // %bb.0:                               // %entry
-	abs	v4.4s, v4.4s
-	abs	v5.4s, v5.4s
-	abs	v2.4s, v2.4s
-	abs	v3.4s, v3.4s
-	add	v2.4s, v2.4s, v4.4s
-	add	v3.4s, v3.4s, v5.4s
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
+	cmp	w2, #0
+	cneg	w8, w2, mi
+	cmp	w1, #0
+	cneg	w9, w1, mi
+	add	w8, w9, w8
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000005c:                   // @func000000000000005c
 // %bb.0:                               // %entry
-	abs	v4.4s, v4.4s
-	abs	v5.4s, v5.4s
-	abs	v2.4s, v2.4s
-	abs	v3.4s, v3.4s
-	add	v2.4s, v2.4s, v4.4s
-	add	v3.4s, v3.4s, v5.4s
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
+	cmp	w2, #0
+	cneg	w8, w2, mi
+	cmp	w1, #0
+	cneg	w9, w1, mi
+	add	w8, w9, w8
+	add	w0, w8, w0
 	ret
                                         // -- End function

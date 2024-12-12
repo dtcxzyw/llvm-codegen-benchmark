@@ -13,7 +13,6 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000000:                   # @func0000000000000000
 	addl	%esi, %edi
 	movzwl	%di, %eax
-	shrl	%eax
-	imull	$18725, %eax, %eax              # imm = 0x4925
-	shrl	$17, %eax
+	imull	$11651, %eax, %eax              # imm = 0x2D83
+	shrl	$22, %eax
 	retq

@@ -1,9 +1,11 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000356(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000006a6(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 63
   %4 = trunc nuw nsw i64 %3 to i32
@@ -16,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000256(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000004a6(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
@@ -29,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/mutate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000446(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000886(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
@@ -42,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/seam_finders.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000025a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000004aa(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
@@ -55,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000041a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000082a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
@@ -68,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/pack.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000065a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000caa(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 32
   %4 = trunc nuw i64 %3 to i32

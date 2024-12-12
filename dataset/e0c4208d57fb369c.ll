@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 66 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
@@ -56,7 +56,6 @@
 ; qemu/optimized/chardev_char.c.ll
 ; qemu/optimized/migration_savevm.c.ll
 ; qemu/optimized/plugins_core.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; ruby/optimized/compile.ll
 ; velox/optimized/JsonType.cpp.ll
 ; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
@@ -73,17 +72,18 @@ entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; arrow/optimized/reader.cc.ll
+; boost/optimized/pin_thread.ll
+; boost/optimized/xml_grammar.ll
 ; draco/optimized/sequential_attribute_encoders_controller.cc.ll
 ; eastl/optimized/eathread.cpp.ll
 ; eastl/optimized/eathread_thread.cpp.ll
 ; gromacs/optimized/hardwaretopology.cpp.ll
-; gromacs/optimized/pthreads.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; libzmq/optimized/thread.cpp.ll
@@ -115,7 +115,7 @@ entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -129,7 +129,7 @@ entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

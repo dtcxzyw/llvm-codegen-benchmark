@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/ifTune.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -13,8 +13,9 @@
 ; php/optimized/dtoa.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; slurm/optimized/gres.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 512
   %4 = icmp eq i32 %3, 0
@@ -23,14 +24,15 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cpython/optimized/frameobject.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; linux/optimized/signal.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; php/optimized/pcre2_compile.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
   %4 = icmp eq i32 %3, 0
@@ -39,10 +41,37 @@ entry:
   ret i1 %6
 }
 
+; 2 occurrences:
+; linux/optimized/ptp_clock.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 32
+  %4 = icmp eq i32 %3, 0
+  %5 = select i1 %4, i64 %0, i64 %1
+  %6 = icmp ult i64 %5, 268435456
+  ret i1 %6
+}
+
+; 3 occurrences:
+; llvm/optimized/CodeGenModule.cpp.ll
+; llvm/optimized/RDFGraph.cpp.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 32
+  %4 = icmp eq i32 %3, 0
+  %5 = select i1 %4, i64 %0, i64 %1
+  %6 = icmp samesign ult i64 %5, 134217728
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; hermes/optimized/RegExp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -16777216
   %4 = icmp eq i32 %3, 1040187392
@@ -57,7 +86,7 @@ entry:
 ; llvm/optimized/DeclCXX.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 512
   %4 = icmp eq i32 %3, 0
@@ -66,24 +95,10 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; linux/optimized/ptp_clock.ll
-; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/RDFGraph.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 16777216
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i64 %0, i64 %1
-  %6 = icmp ult i64 %5, 4
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0

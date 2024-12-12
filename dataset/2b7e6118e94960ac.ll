@@ -20,7 +20,7 @@ entry:
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 26
   %3 = and i32 %2, 1

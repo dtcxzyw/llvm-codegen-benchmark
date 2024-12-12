@@ -31,7 +31,7 @@ func000000000000018f:                   # @func000000000000018f
 	.long	4294821199                      # 0xfffdc54f
 .LCPI3_1:
 	.long	146097                          # 0x23ab1
-func000000000000008c:                   # @func000000000000008c
+func000000000000028c:                   # @func000000000000028c
 	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -41,7 +41,7 @@ func000000000000008c:                   # @func000000000000008c
 	.long	4294821199                      # 0xfffdc54f
 .LCPI4_1:
 	.long	4294966896                      # 0xfffffe70
-func000000000000008d:                   # @func000000000000008d
+func000000000000028d:                   # @func000000000000028d
 	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0

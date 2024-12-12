@@ -1,22 +1,7 @@
 
-%struct.rb_backtrace_location_struct.2486145 = type { ptr, ptr, ptr }
-%struct.TCGTemp.2593549 = type { i48, i64, ptr, i64, ptr, i64, ptr }
-%struct.anon.2596889 = type { i32, %union.OnigValue.2596890 }
-%union.OnigValue.2596890 = type { %struct.anon.0.2596891 }
-%struct.anon.0.2596891 = type { ptr, ptr }
-%struct.dt_iop_colorzones_node_t.2761739 = type { float, float }
-%"struct.(anonymous namespace)::OMPInformationCache::InternalControlVarInfo.2960715" = type <{ i32, [4 x i8], %"class.llvm::StringRef.2960531", %"class.llvm::StringRef.2960531", i32, [4 x i8], ptr, i32, i32, i32, [4 x i8] }>
-%"class.llvm::StringRef.2960531" = type { ptr, i64 }
-%"class.std::optional.838.2961105" = type { %"struct.std::_Optional_base.839.2961106" }
-%"struct.std::_Optional_base.839.2961106" = type { %"struct.std::_Optional_payload.841.2961107" }
-%"struct.std::_Optional_payload.841.2961107" = type { %"struct.std::_Optional_payload_base.base.843.2961108", [7 x i8] }
-%"struct.std::_Optional_payload_base.base.843.2961108" = type <{ %"union.std::_Optional_payload_base<llvm::Value *>::_Storage.2961109", i8 }>
-%"union.std::_Optional_payload_base<llvm::Value *>::_Storage.2961109" = type { ptr }
-%"struct.Scheduler::listType.3297548" = type { i32, i32, i32 }
-%struct.ptp_extts_event.3346529 = type { %struct.ptp_clock_time.3346530, i32, i32, [2 x i32] }
-%struct.ptp_clock_time.3346530 = type { i64, i32, i32 }
+%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
 
-; 185 occurrences:
+; 179 occurrences:
 ; cpython/optimized/ceval_gil.ll
 ; cpython/optimized/compile.ll
 ; cpython/optimized/lexer.ll
@@ -24,7 +9,6 @@
 ; cpython/optimized/optimizer.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/audit_tree.ll
-; linux/optimized/blk-ia-ranges.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/bts.ll
 ; linux/optimized/cgroup.ll
@@ -54,8 +38,6 @@
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i915_pci.ll
 ; linux/optimized/icmp.ll
-; linux/optimized/input-mt.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_fb.ll
@@ -103,7 +85,6 @@
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_probe.ll
 ; linux/optimized/trace_uprobe.ll
-; linux/optimized/tsc_msr.ll
 ; linux/optimized/tso.ll
 ; linux/optimized/udp.ll
 ; linux/optimized/uncore.ll
@@ -165,7 +146,6 @@
 ; postgres/optimized/ri_triggers.ll
 ; postgres/optimized/rowtypes.ll
 ; postgres/optimized/selfuncs.ll
-; postgres/optimized/sharedtuplestore.ll
 ; postgres/optimized/sinvaladt.ll
 ; postgres/optimized/slab.ll
 ; postgres/optimized/tablecmds.ll
@@ -175,7 +155,6 @@
 ; postgres/optimized/varlena.ll
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/xlogdesc.ll
-; postgres/optimized/xlogprefetcher.ll
 ; postgres/optimized/xlogstats.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/block_nvme.c.ll
@@ -203,21 +182,32 @@
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/vm_backtrace.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 24
-  %4 = getelementptr [1 x %struct.rb_backtrace_location_struct.2486145], ptr %3, i64 0, i64 %2, i32 1
+  %.idx = mul nsw i64 %2, 24
+  %3 = getelementptr i8, ptr %0, i64 32
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 
-; 191 occurrences:
+; 231 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/mapperCutUtils.c.ll
 ; abc/optimized/mapperTime.c.ll
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
 ; bdwgc/optimized/cordbscs.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btConvexConvexAlgorithm.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
@@ -226,7 +216,6 @@ entry:
 ; bullet3/optimized/btPersistentManifold.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/rijndael.cpp.ll
-; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/doh.c.ll
 ; cmake/optimized/progress.c.ll
 ; crow/optimized/example.cpp.ll
@@ -251,8 +240,6 @@ entry:
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; darktable/optimized/print_settings.c.ll
-; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
-; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; draco/optimized/mesh_stripifier.cc.ll
 ; draco/optimized/point_cloud.cc.ll
 ; flac/optimized/replaygain_synthesis.c.ll
@@ -264,7 +251,6 @@ entry:
 ; graphviz/optimized/index.c.ll
 ; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
-; gromacs/optimized/domdec_network.cpp.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; gromacs/optimized/mk_angndx.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
@@ -290,6 +276,9 @@ entry:
 ; libwebp/optimized/vp8l_dec.c.ll
 ; lief/optimized/entropy.c.ll
 ; llama.cpp/optimized/ggml-backend.c.ll
+; llvm/optimized/AddressSanitizer.cpp.ll
+; llvm/optimized/OpenMPOpt.cpp.ll
+; llvm/optimized/blake3.c.ll
 ; lua/optimized/lstrlib.ll
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
@@ -319,12 +308,43 @@ entry:
 ; openjdk/optimized/zStackWatermark.ll
 ; openmpi/optimized/pml_ob1_recvreq.ll
 ; openmpi/optimized/pml_ob1_sendreq.ll
+; openspiel/optimized/ABsearch.cpp.ll
+; openspiel/optimized/CalcTables.cpp.ll
+; openspiel/optimized/LaterTricks.cpp.ll
+; openspiel/optimized/Moves.cpp.ll
+; openspiel/optimized/QuickTricks.cpp.ll
+; openspiel/optimized/Scheduler.cpp.ll
+; openspiel/optimized/SolverIF.cpp.ll
+; openspiel/optimized/TransTableL.cpp.ll
+; openspiel/optimized/bridge.cc.ll
+; openspiel/optimized/chess.cc.ll
+; openspiel/optimized/chess_board.cc.ll
+; openspiel/optimized/coop_box_pushing.cc.ll
+; openspiel/optimized/dark_chess.cc.ll
+; openspiel/optimized/euchre.cc.ll
+; openspiel/optimized/hearts.cc.ll
+; openspiel/optimized/kriegspiel.cc.ll
+; openspiel/optimized/rbc.cc.ll
+; openspiel/optimized/skat.cc.ll
+; openspiel/optimized/spades.cc.ll
+; openspiel/optimized/twixt.cc.ll
+; openspiel/optimized/twixtboard.cc.ll
 ; openssl/optimized/libcrypto-lib-asn1_gen.ll
 ; openssl/optimized/libcrypto-lib-cmac.ll
 ; openssl/optimized/libcrypto-shlib-asn1_gen.ll
 ; openssl/optimized/libcrypto-shlib-cmac.ll
 ; openssl/optimized/libssl-lib-quic_ackm.ll
 ; openssl/optimized/libssl-shlib-quic_ackm.ll
+; openusd/optimized/catmarkPatchBuilder.cpp.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
+; openusd/optimized/decodetxb.c.ll
+; openusd/optimized/detokenize.c.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
+; openusd/optimized/reconinter.c.ll
+; openusd/optimized/reconintra.c.ll
+; openusd/optimized/restoration.c.ll
+; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; php/optimized/ir_emit.ll
 ; raylib/optimized/raudio.c.ll
@@ -404,18 +424,17 @@ entry:
 ; zxing/optimized/QRDataBlock.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 104
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 104
   %4 = getelementptr nusw [32 x i8], ptr %3, i64 0, i64 %2
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/mcast.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/tg3.ll
@@ -427,11 +446,11 @@ entry:
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000030(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 664
-  %4 = getelementptr [512 x %struct.TCGTemp.2593549], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 664
+  %4 = getelementptr [512 x %struct.TCGTemp.2707225], ptr %3, i64 0, i64 %2
   %5 = getelementptr i8, ptr %4, i64 56
   ret ptr %5
 }
@@ -440,104 +459,39 @@ entry:
 ; jq/optimized/regexec.ll
 ; oniguruma/optimized/regexec.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr i8, ptr %0, i64 -120
-  %4 = getelementptr [5 x %struct.anon.2596889], ptr %3, i64 0, i64 %2, i32 1
+  %.idx = mul nsw i64 %2, 24
+  %3 = getelementptr i8, ptr %0, i64 -112
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; arrow/optimized/tdigest.cc.ll
 ; darktable/optimized/introspection_colorzones.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 4
-  %4 = getelementptr [3 x [20 x %struct.dt_iop_colorzones_node_t.2761739]], ptr %3, i64 0, i64 %2, i64 1
-  ret ptr %4
-}
-
-; 9 occurrences:
-; llvm/optimized/AddressSanitizer.cpp.ll
-; llvm/optimized/OpenMPOpt.cpp.ll
-; llvm/optimized/blake3.c.ll
-; openspiel/optimized/Moves.cpp.ll
-; openspiel/optimized/chess.cc.ll
-; openspiel/optimized/chess_board.cc.ll
-; openspiel/optimized/euchre.cc.ll
-; openspiel/optimized/hearts.cc.ll
-; openusd/optimized/decodemv.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 32832
-  %4 = getelementptr [5 x %"struct.(anonymous namespace)::OMPInformationCache::InternalControlVarInfo.2960715"], ptr %3, i64 0, i64 %2, i32 2
-  ret ptr %4
-}
-
-; 30 occurrences:
-; llvm/optimized/OpenMPOpt.cpp.ll
-; openspiel/optimized/ABsearch.cpp.ll
-; openspiel/optimized/CalcTables.cpp.ll
-; openspiel/optimized/LaterTricks.cpp.ll
-; openspiel/optimized/Moves.cpp.ll
-; openspiel/optimized/QuickTricks.cpp.ll
-; openspiel/optimized/Scheduler.cpp.ll
-; openspiel/optimized/SolverIF.cpp.ll
-; openspiel/optimized/TransTableL.cpp.ll
-; openspiel/optimized/bridge.cc.ll
-; openspiel/optimized/chess_board.cc.ll
-; openspiel/optimized/coop_box_pushing.cc.ll
-; openspiel/optimized/dark_chess.cc.ll
-; openspiel/optimized/euchre.cc.ll
-; openspiel/optimized/hearts.cc.ll
-; openspiel/optimized/kriegspiel.cc.ll
-; openspiel/optimized/rbc.cc.ll
-; openspiel/optimized/skat.cc.ll
-; openspiel/optimized/spades.cc.ll
-; openspiel/optimized/twixt.cc.ll
-; openspiel/optimized/twixtboard.cc.ll
-; openusd/optimized/catmarkPatchBuilder.cpp.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/decodetxb.c.ll
-; openusd/optimized/detokenize.c.ll
-; openusd/optimized/loopPatchBuilder.cpp.ll
-; openusd/optimized/reconinter.c.ll
-; openusd/optimized/reconintra.c.ll
-; openusd/optimized/restoration.c.ll
-; openusd/optimized/stbImage.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003b(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 96
-  %4 = getelementptr [5 x %"class.std::optional.838.2961105"], ptr %3, i64 0, i64 %2, i32 0, i32 0, i32 0, i32 1
-  ret ptr %4
-}
-
-; 1 occurrences:
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000038(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 13636
-  %4 = getelementptr [20 x [11 x i16]], ptr %3, i64 0, i64 %2, i64 5
+  %.idx = mul nsw i64 %2, 160
+  %3 = getelementptr i8, ptr %0, i64 12
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 
-; 1 occurrences:
-; openspiel/optimized/Scheduler.cpp.ll
+; 2 occurrences:
+; boost/optimized/sort_by_side.ll
+; openspiel/optimized/ABsearch.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002b(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 39212
-  %4 = getelementptr [200 x %"struct.Scheduler::listType.3297548"], ptr %3, i64 0, i64 %2, i32 1
+  %.idx = mul nuw nsw i64 %2, 168
+  %3 = getelementptr i8, ptr %0, i64 144
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 
@@ -553,12 +507,25 @@ entry:
 ; linux/optimized/tg3.ll
 ; linux/optimized/trace_eprobe.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr i8, ptr %0, i64 -4112
-  %4 = getelementptr [128 x %struct.ptp_extts_event.3346529], ptr %3, i64 0, i64 %2, i32 1
+  %.idx = shl nsw i64 %2, 5
+  %3 = getelementptr i8, ptr %0, i64 -4096
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
+}
+
+; 1 occurrences:
+; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %4 = getelementptr nusw [2048 x i8], ptr %3, i64 0, i64 %2
+  %5 = getelementptr nusw i8, ptr %4, i64 -1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

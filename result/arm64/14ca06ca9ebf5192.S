@@ -14,8 +14,8 @@ func0000000000000000:                   // @func0000000000000000
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	lsr	w8, w2, #1
+	lsr	w8, w2, #16
 	mul	w8, w8, w1
-	add	x0, x0, w8, sxtw #3
+	add	x0, x0, w8, sxtw #2
 	ret
                                         // -- End function

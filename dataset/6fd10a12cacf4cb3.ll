@@ -1,9 +1,12 @@
 
-; 8 occurrences:
+; 11 occurrences:
 ; linux/optimized/access.ll
 ; linux/optimized/xt_policy.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_obj_style.ll
+; postgres/optimized/trigger.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/packet-mausb.c.ll

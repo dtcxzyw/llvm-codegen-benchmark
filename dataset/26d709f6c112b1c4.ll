@@ -10,7 +10,7 @@
 ; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 6
   %3 = lshr exact i32 128, %2
@@ -26,7 +26,7 @@ entry:
 ; libwebp/optimized/webpinfo.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = lshr exact i32 128, %2

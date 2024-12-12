@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	subq	%rdx, %rsi
 	cmpq	$-1, %rsi
 	sete	%cl
@@ -6,7 +6,7 @@ func0000000000000022:                   # @func0000000000000022
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	subq	%rdx, %rsi
 	cmpq	$65, %rsi
 	setae	%cl
@@ -14,7 +14,7 @@ func0000000000000030:                   # @func0000000000000030
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	subq	%rdx, %rsi
 	cmpq	$33, %rsi
 	setb	%cl
@@ -22,8 +22,8 @@ func0000000000000028:                   # @func0000000000000028
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
-	cmpq	%rsi, %rdx
+func0000000000000058:                   # @func0000000000000058
+	cmpq	%rdx, %rsi
 	sete	%cl
 	testq	%rdi, %rdi
 	setne	%al

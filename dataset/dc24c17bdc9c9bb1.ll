@@ -17,12 +17,12 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
@@ -39,12 +39,12 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 214
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 214
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

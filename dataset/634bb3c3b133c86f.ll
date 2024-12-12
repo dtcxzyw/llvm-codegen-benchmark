@@ -9,7 +9,7 @@
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/packet-udt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 61440
   %2 = add nsw i32 %1, -8192
@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/elfFile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0) #0 {
+define i1 @func0000000000000078(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 7
   %2 = and i32 %1, 192
@@ -130,24 +130,25 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0) #0 {
+define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 254
   %2 = icmp ne i32 %1, 152
   ret i1 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; clamav/optimized/pe.c.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; php/optimized/zend_jit.ll
+; wireshark/optimized/packet-gmhdr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0) #0 {
+define i1 @func0000000000000074(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 63
   %2 = add nuw nsw i32 %1, 255
   %3 = and i32 %2, 254
-  %4 = icmp ult i32 %3, 6
+  %4 = icmp samesign ult i32 %3, 6
   ret i1 %4
 }
 
@@ -163,7 +164,7 @@ entry:
 ; opencv/optimized/samplers.cpp.ll
 ; xgboost/optimized/recordio.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 3
   %2 = add nuw nsw i32 %1, 1
@@ -178,12 +179,11 @@ entry:
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0) #0 {
+define i1 @func000000000000006c(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 1
-  %2 = and i32 %1, 7
-  %3 = icmp ne i32 %2, 0
-  ret i1 %3
+  %1 = and i32 %0, 7
+  %2 = icmp ne i32 %1, 7
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

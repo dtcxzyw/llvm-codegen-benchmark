@@ -24,3 +24,8 @@ func0000000000000045:                   # @func0000000000000045
 	sbbl	$0, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
+func0000000000000145:                   # @func0000000000000145
+	cmpb	$3, %dl
+	sbbl	$0, %esi
+	leal	(%rsi,%rdi), %eax
+	retq

@@ -11,7 +11,7 @@
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_inheritance.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = add i32 %3, %1
@@ -37,7 +37,7 @@ entry:
 ; php/optimized/zend_closures.ll
 ; php/optimized/zend_inheritance.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = add i32 %3, %1
@@ -49,26 +49,27 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; luau/optimized/OptimizeDeadStore.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; wireshark/optimized/packet-opa-mad.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = add nuw nsw i32 %3, %1
   %5 = add nuw nsw i32 %0, 1
-  %6 = icmp ult i32 %5, %4
+  %6 = icmp samesign ult i32 %5, %4
   ret i1 %6
 }
 
@@ -77,7 +78,7 @@ entry:
 ; wireshark/optimized/packet-x25.c.ll
 ; yosys/optimized/ezsat.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
   %4 = add nuw nsw i32 %3, %1
@@ -89,7 +90,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/aiger.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = add nsw i32 %3, %1
@@ -102,10 +103,10 @@ entry:
 ; cvc5/optimized/node_algorithm.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %0, 1
   %6 = icmp ugt i32 %5, %4
   ret i1 %6
@@ -126,7 +127,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = add nuw nsw i32 %3, %1
@@ -152,7 +153,7 @@ entry:
 ; cvc5/optimized/extended_rewrite.cpp.ll
 ; cvc5/optimized/sygus_unif_strat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 67108863
   %4 = add nsw i32 %3, %1
@@ -208,7 +209,7 @@ entry:
 ; cvc5/optimized/transition_inference.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 67108863
   %4 = add nsw i32 %3, %1
@@ -222,7 +223,7 @@ entry:
 ; cvc5/optimized/subs_minimize.cpp.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 67108863
   %4 = add nsw i32 %3, %1
@@ -239,7 +240,7 @@ entry:
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/theory_quantifiers_type_rules.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 67108863
   %4 = add nsw i32 %3, %1
@@ -251,7 +252,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/term_database_sygus.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 67108863
   %4 = add nsw i32 %3, %1
@@ -266,7 +267,7 @@ entry:
 define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %0, 1
   %6 = icmp uge i32 %5, %4
   ret i1 %6

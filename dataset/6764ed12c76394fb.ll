@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 89 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/solver.c.ll
 ; arrow/optimized/basic_decimal.cc.ll
@@ -10,7 +10,6 @@
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; flac/optimized/encode.c.ll
 ; flac/optimized/stream_encoder.c.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -64,8 +63,6 @@
 ; opencv/optimized/rand.cpp.ll
 ; openexr/optimized/parse_header.c.ll
 ; openjdk/optimized/screencast_pipewire.ll
-; openssl/optimized/libcrypto-lib-lh_stats.ll
-; openssl/optimized/libcrypto-shlib-lh_stats.ll
 ; openssl/optimized/safe_math_test-bin-safe_math_test.ll
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/ahci.c.ll
@@ -80,7 +77,6 @@
 ; qemu/optimized/dump_dump.c.ll
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/latency.ll
 ; ruby/optimized/bignum.ll
@@ -102,7 +98,7 @@ entry:
   ret i32 %4
 }
 
-; 24 occurrences:
+; 22 occurrences:
 ; abc/optimized/sfmDec.c.ll
 ; cpython/optimized/mathmodule.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
@@ -112,7 +108,6 @@ entry:
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/drm_vblank.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -126,7 +121,6 @@ entry:
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; openusd/optimized/scale_common.c.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
@@ -159,19 +153,6 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = udiv i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
-  ret i32 %4
-}
-
-; 3 occurrences:
-; linux/optimized/intel_cx0_phy.ll
-; linux/optimized/intel_dpll.ll
-; linux/optimized/intel_snps_phy.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000b(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = udiv i64 %0, %2
-  %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
 

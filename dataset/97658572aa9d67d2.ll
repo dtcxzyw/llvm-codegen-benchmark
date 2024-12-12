@@ -1,7 +1,5 @@
 
-%"class.rocksdb::Slice.2505797" = type { ptr, i64 }
-
-; 152 occurrences:
+; 153 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; assimp/optimized/PlyParser.cpp.ll
 ; cmake/optimized/cmCTest.cxx.ll
@@ -115,6 +113,7 @@
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
+; ozz-animation/optimized/animation_builder.cc.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
@@ -163,16 +162,13 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; folly/optimized/ElfCache.cpp.ll
-; nlohmann_json/optimized/unit-regression2.cpp.ll
-; ozz-animation/optimized/animation_builder.cc.ll
-; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
-  %3 = getelementptr %"class.rocksdb::Slice.2505797", ptr %0, i64 %.neg
+  %3 = getelementptr i8, ptr %0, i64 %.neg
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

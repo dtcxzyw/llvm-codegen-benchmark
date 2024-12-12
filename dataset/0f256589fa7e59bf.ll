@@ -79,7 +79,7 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(i32 %0, i128 %1) #0 {
+define i1 @func000000000000082c(i32 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 4294967295
   %3 = icmp ne i128 %2, 0

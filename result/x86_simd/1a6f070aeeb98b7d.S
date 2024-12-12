@@ -40,3 +40,10 @@ func000000000000000d:                   # @func000000000000000d
 	vpsllq	$63, %ymm0, %ymm0
 	vporq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
 	retq
+.LCPI6_0:
+	.quad	2                               # 0x2
+func0000000000000004:                   # @func0000000000000004
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpsllq	$32, %ymm0, %ymm0
+	vporq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
+	retq

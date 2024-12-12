@@ -8,7 +8,7 @@ entry:
   %3 = lshr i64 %2, 7
   %4 = trunc i64 %3 to i32
   %5 = udiv i32 %1, %4
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

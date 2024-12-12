@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/sre.ll
 ; cpython/optimized/stgdict.ll
@@ -7,7 +7,6 @@
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
-; ncnn/optimized/pooling3d.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/rowtypes.ll
 ; postgres/optimized/slru.ll
@@ -31,7 +30,7 @@ define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 14
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = add nsw i64 %4, 262144
   ret i64 %5
 }

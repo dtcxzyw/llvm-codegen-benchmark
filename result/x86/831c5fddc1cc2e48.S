@@ -1,9 +1,3 @@
-func0000000000000010:                   # @func0000000000000010
-	shll	$2, %esi
-	leal	(%rsi,%rsi,2), %eax
-	subl	%eax, %edi
-	leal	2(%rdi), %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	(%rsi,%rsi,2), %eax
 	leal	24(%rdi,%rax,8), %eax

@@ -1,4 +1,4 @@
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	shlq	$10, %rsi
 	testq	%rdi, %rsi
 	setne	%al
@@ -8,18 +8,18 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shlq	$40, %rsi
-	testq	%rdi, %rsi
+	testq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shlq	$8, %rsi
 	testq	%rdi, %rsi
 	sete	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	shlq	$49, %rsi
-	testq	%rdi, %rsi
+	testq	%rsi, %rdi
 	setne	%al
 	retq

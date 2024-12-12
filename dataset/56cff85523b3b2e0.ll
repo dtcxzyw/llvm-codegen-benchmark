@@ -9,7 +9,7 @@
 ; php/optimized/zend_jit.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 32
   %3 = icmp ne i32 %1, 16
@@ -25,7 +25,7 @@ entry:
 ; flatbuffers/optimized/idl_gen_kotlin_kmp.cpp.ll
 ; php/optimized/streamsfuncs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1024
   %3 = icmp ne i32 %1, -1
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000188(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 5
   %3 = icmp ugt i32 %1, 1

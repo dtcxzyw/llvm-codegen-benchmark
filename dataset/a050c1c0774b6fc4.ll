@@ -30,7 +30,7 @@
 ; slurm/optimized/step_mgr.ll
 ; stockfish/optimized/movepick.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000042(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %0, 0
   %3 = icmp eq i16 %0, %1
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/node_scheduler.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a2(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000142(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ule i16 %0, %1
   %3 = icmp eq i16 %0, -2
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000058(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %0, 0
   %3 = icmp ne i16 %0, %1
@@ -65,7 +65,7 @@ entry:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000302(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %0, %1
   %3 = icmp eq i16 %0, 0
@@ -79,7 +79,7 @@ entry:
 ; linux/optimized/mlme.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000090(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000110(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %0, 2
   %3 = icmp ugt i16 %0, %1
@@ -90,7 +90,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/nl80211.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000208(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %0, %1
   %3 = icmp ult i16 %0, 4
@@ -101,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/rewriteHandler.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i16 %0, i16 %1) #0 {
+define i1 @func000000000000028c(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp sgt i16 %0, %1
   %3 = icmp slt i16 %0, 1
@@ -110,20 +110,9 @@ entry:
 }
 
 ; 1 occurrences:
-; postgres/optimized/gistvacuum.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000088(i16 %0, i16 %1) #0 {
-entry:
-  %2 = icmp ult i16 %0, 2
-  %3 = icmp ult i16 %0, %1
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; postgres/optimized/relcache.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010c(i16 %0, i16 %1) #0 {
+define i1 @func000000000000020c(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %0, %1
   %3 = icmp slt i16 %0, 1
@@ -135,7 +124,7 @@ entry:
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000150(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000290(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp sgt i16 %0, -1
   %3 = icmp ugt i16 %0, %1
@@ -146,7 +135,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/normalizer2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000102(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %0, %1
   %3 = icmp eq i16 %0, -512
@@ -157,7 +146,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018c(i16 %0, i16 %1) #0 {
+define i1 @func000000000000030c(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %0, %1
   %3 = icmp slt i16 %0, 0

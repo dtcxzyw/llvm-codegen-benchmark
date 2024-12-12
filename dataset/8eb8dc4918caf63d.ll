@@ -1,8 +1,7 @@
 
-; 240 occurrences:
+; 259 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/cuddApa.c.ll
-; abc/optimized/cuddInit.c.ll
 ; abc/optimized/mpmMap.c.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
@@ -10,6 +9,35 @@
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
 ; assimp/optimized/STLLoader.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/src.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/wait.ll
+; boost/optimized/work_stealing.ll
 ; c3c/optimized/compiler.c.ll
 ; clamav/optimized/events.c.ll
 ; clamav/optimized/filefn.cpp.ll
@@ -152,12 +180,8 @@
 ; openspiel/optimized/TransTableS.cpp.ll
 ; openspiel/optimized/mcts.cc.ll
 ; openspiel/optimized/nine_mens_morris.cc.ll
-; openssl/optimized/libcrypto-lib-ct_prn.ll
 ; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-lib-sleep.ll
-; openssl/optimized/libcrypto-shlib-ct_prn.ll
 ; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-shlib-sleep.ll
 ; openssl/optimized/libssl-lib-extensions_clnt.ll
 ; openssl/optimized/libssl-lib-quic_reactor.ll
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
@@ -171,20 +195,16 @@
 ; php/optimized/image.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/phpdbg_watch.ll
-; postgres/optimized/freespace.ll
 ; postgres/optimized/gindatapage.ll
 ; postgres/optimized/heaptoast.ll
 ; postgres/optimized/localtime.ll
-; postgres/optimized/sharedtuplestore.ll
 ; postgres/optimized/to_tsany.ll
 ; qemu/optimized/audio_audio.c.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
 ; qemu/optimized/hw_core_loader.c.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/hw_usb_hcd-uhci.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; quickjs/optimized/quickjs.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
@@ -222,7 +242,6 @@
 ; wireshark/optimized/netscaler.c.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; wireshark/optimized/packet-dis.c.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; wireshark/optimized/tap-iostat.c.ll
 ; wireshark/optimized/tap-srt.c.ll
 ; yalantinglibs/optimized/channel.cpp.ll

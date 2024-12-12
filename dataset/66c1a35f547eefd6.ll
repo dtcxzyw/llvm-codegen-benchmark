@@ -35,6 +35,29 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
+; sentencepiece/optimized/strutil.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, 10
+  %3 = add i32 %2, 48
+  %4 = sub i32 %3, %0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, 22
+  %3 = add nsw i32 %2, -272
+  %4 = sub nsw i32 %3, %0
+  ret i32 %4
+}
+
+; 2 occurrences:
 ; gromacs/optimized/colvarbias_meta.cpp.ll
 ; gromacs/optimized/imd.cpp.ll
 ; Function Attrs: nounwind
@@ -55,17 +78,6 @@ entry:
   %2 = mul nuw nsw i32 %1, 9
   %3 = add nuw nsw i32 %2, 8
   %4 = sub nsw i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; sentencepiece/optimized/strutil.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 10
-  %3 = add i32 %2, 48
-  %4 = sub i32 %3, %0
   ret i32 %4
 }
 

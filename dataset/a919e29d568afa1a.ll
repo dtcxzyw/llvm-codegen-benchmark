@@ -15,9 +15,8 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/indirect.ll
-; linux/optimized/intel_audio.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; openjdk/optimized/cmstypes.ll
 ; Function Attrs: nounwind

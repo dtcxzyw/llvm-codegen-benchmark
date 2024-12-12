@@ -23,16 +23,15 @@ entry:
   ret i16 %2
 }
 
-; 4 occurrences:
-; actix-rs/optimized/comsm606o4zjj7a.ll
+; 3 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; llvm/optimized/ARMWinEH.cpp.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0) #0 {
 entry:
-  %1 = and i16 %0, 15
-  %2 = shl nsw i16 -1, %1
+  %1 = and i16 %0, 3
+  %2 = shl nsw i16 -2, %1
   ret i16 %2
 }
 

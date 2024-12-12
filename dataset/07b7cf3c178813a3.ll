@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000066c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000018cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = icmp slt i32 %0, 0
@@ -16,7 +16,7 @@ entry:
 ; openssl/optimized/libssl-lib-rec_layer_s3.ll
 ; openssl/optimized/libssl-shlib-rec_layer_s3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000428(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = icmp eq i32 %1, 0
@@ -30,7 +30,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-set.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000042c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -1
   %3 = icmp eq i32 %0, -1
@@ -44,7 +44,7 @@ entry:
 ; c3c/optimized/sema_expr.c.ll
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000661(i32 %0, i32 %1) #0 {
+define i1 @func00000000000018c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = icmp slt i32 %0, 0
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/related_packet_delegate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp eq i32 %0, 0

@@ -13,8 +13,7 @@ func0000000000000020:                   # @func0000000000000020
 	movq	%rcx, %rax
 	shrq	$28, %rax
 	xorq	%rcx, %rax
-	movq	%rax, %rcx
-	shlq	$31, %rcx
-	addq	%rdi, %rax
+	leaq	(%rdi,%rax), %rcx
+	shlq	$31, %rax
 	addq	%rcx, %rax
 	retq

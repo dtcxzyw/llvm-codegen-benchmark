@@ -18,7 +18,7 @@ entry:
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i1 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
   %3 = add nsw i32 %0, -1
@@ -31,7 +31,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
   %3 = add i32 %0, -1

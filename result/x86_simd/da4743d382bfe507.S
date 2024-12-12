@@ -7,7 +7,7 @@
 	.short	61440                           # 0xf000
 	.short	61440                           # 0xf000
 	.short	61440                           # 0xf000
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestmd	%ymm2, %ymm2, %k1
@@ -17,7 +17,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestmd	%ymm2, %ymm2, %k1
@@ -36,7 +36,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	.short	65526                           # 0xfff6
 	.short	65526                           # 0xfff6
 	.short	65526                           # 0xfff6
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestnmd	%ymm2, %ymm2, %k1
@@ -46,7 +46,7 @@ func0000000000000014:                   # @func0000000000000014
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestnmd	%ymm2, %ymm2, %k1

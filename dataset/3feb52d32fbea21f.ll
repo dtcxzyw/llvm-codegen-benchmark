@@ -1,5 +1,5 @@
 
-; 234 occurrences:
+; 235 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDetect.c.ll
@@ -52,7 +52,6 @@
 ; faiss/optimized/hamming.cpp.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
 ; flac/optimized/fixed_intrin_sse2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; flac/optimized/fixed_intrin_ssse3.c.ll
 ; gromacs/optimized/cluster_methods.cpp.ll
 ; gromacs/optimized/coder.c.ll
@@ -68,6 +67,7 @@
 ; icu/optimized/norms.ll
 ; icu/optimized/ucnvsel.ll
 ; icu/optimized/uniset.ll
+; icu/optimized/ustring.ll
 ; jemalloc/optimized/ckh.ll
 ; jemalloc/optimized/ckh.pic.ll
 ; jemalloc/optimized/ckh.sym.ll
@@ -156,6 +156,7 @@
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-param_build.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
+; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/yuv_scale.c.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
@@ -242,11 +243,12 @@ entry:
   ret i64 %2
 }
 
-; 87 occurrences:
+; 88 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; assimp/optimized/MMDImporter.cpp.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/b3GpuSapBroadphase.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll

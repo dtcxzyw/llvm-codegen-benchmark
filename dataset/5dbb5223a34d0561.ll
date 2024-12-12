@@ -235,11 +235,11 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003e4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
@@ -249,11 +249,11 @@ entry:
 ; minetest/optimized/COpenGLExtensionHandler.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nsw i8 %2, -48
   %4 = zext nneg i8 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
@@ -266,11 +266,11 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; wireshark/optimized/packet-rtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c8(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000388(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
@@ -282,11 +282,11 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nuw i8 %2, 1
   %4 = zext i8 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
@@ -294,11 +294,11 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/socketTransport.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000001aa(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nsw i8 %2, -48
   %4 = zext nneg i8 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
@@ -306,11 +306,11 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/relocator.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d7(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003a7(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = icmp sle i32 %5, %0
   ret i1 %6
 }
@@ -318,11 +318,11 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/ASEParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nsw i8 %2, -48
   %4 = zext nneg i8 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
@@ -335,7 +335,7 @@ define i1 @func0000000000000006(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -2
   %4 = zext i8 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
@@ -343,11 +343,11 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-rtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000384(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
@@ -355,11 +355,11 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003e1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
@@ -367,11 +367,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/block_mean_hash.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000381(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
@@ -379,11 +379,11 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/codeobject.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ca(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000038a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %2, 2
   %4 = zext nneg i8 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }

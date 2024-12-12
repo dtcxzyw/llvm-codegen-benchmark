@@ -11,16 +11,16 @@ func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vmsle.vi	v10, v8, -1
-	vmor.mm	v0, v10, v0
+	vmor.mm	v0, v0, v10
 	ret
-func00000000000000b0:                   # @func00000000000000b0
+func0000000000000150:                   # @func0000000000000150
 	li	a0, 3
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vmsgtu.vi	v10, v8, 6
-	vmor.mm	v0, v10, v0
+	vmor.mm	v0, v0, v10
 	ret
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	li	a0, 3
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v10

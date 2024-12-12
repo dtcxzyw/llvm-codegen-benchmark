@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/ifDsd.c.ll
+; boost/optimized/to_chars.ll
 ; icu/optimized/package.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {

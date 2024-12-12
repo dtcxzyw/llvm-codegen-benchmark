@@ -1,10 +1,9 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; gromacs/optimized/pme.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll

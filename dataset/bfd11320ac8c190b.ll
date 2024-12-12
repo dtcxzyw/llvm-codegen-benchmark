@@ -8,7 +8,7 @@
 ; recastnavigation/optimized/RecastLayers.cpp.ll
 ; wireshark/optimized/field_information.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000aa6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000002946(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
   %4 = icmp sgt i32 %0, -1

@@ -1,13 +1,15 @@
 
-%"union.absl::debian2::container_internal::map_slot_type.2748286" = type { %"struct.std::pair.2748287" }
-%"struct.std::pair.2748287" = type { i32, %"class.std::__cxx11::basic_string.2748263" }
-%"class.std::__cxx11::basic_string.2748263" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2748264", i64, %union.anon.2748265 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2748264" = type { ptr }
-%union.anon.2748265 = type { i64, [8 x i8] }
+%"union.absl::debian2::container_internal::map_slot_type.2860613" = type { %"struct.std::pair.2860614" }
+%"struct.std::pair.2860614" = type { i32, %"class.std::__cxx11::basic_string.2860583" }
+%"class.std::__cxx11::basic_string.2860583" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584", i64, %union.anon.2860585 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584" = type { ptr }
+%union.anon.2860585 = type { i64, [8 x i8] }
+%struct.mstate_aux.3855356 = type { i32, i32, i16, i32 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
+; boost/optimized/static_string.ll
 ; linux/optimized/alternative.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
@@ -22,25 +24,23 @@
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000040(i64 %0, i8 %1, ptr %2) #0 {
+define ptr @func0000000000000060(i64 %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 32
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = getelementptr i64, ptr %3, i64 %0
   %5 = zext i8 %1 to i64
   %6 = getelementptr i64, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 30 occurrences:
+; 33 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
-; cmake/optimized/fse_compress.c.ll
-; cmake/optimized/zstd_compress_sequences.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; hdf5/optimized/H5HFhuge.c.ll
 ; hdf5/optimized/H5HFman.c.ll
-; hyperscan/optimized/gough.c.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
+; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/InstrEmitter.cpp.ll
@@ -50,79 +50,58 @@ entry:
 ; llvm/optimized/ScheduleDAGFast.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
+; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; openspiel/optimized/dynamic_routing_utils.cc.ll
 ; openspiel/optimized/history_tree.cc.ll
 ; openspiel/optimized/spiel.cc.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; protobuf/optimized/command_line_interface.cc.ll
-; protobuf/optimized/descriptor_database.cc.ll
-; protobuf/optimized/enum.cc.ll
-; protobuf/optimized/field_mask_util.cc.ll
-; protobuf/optimized/file.cc.ll
-; zstd/optimized/fse_compress.c.ll
-; zstd/optimized/zstd_compress_sequences.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000004a(i64 %0, i8 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
-  %4 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2748286", ptr %3, i64 %0
-  %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2748286", ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 14 occurrences:
-; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/str_split_test.cc.ll
-; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; libphonenumber/optimized/geocoding_data_test.cc.ll
-; openspiel/optimized/best_response.cc.ll
-; protobuf/optimized/command_line_interface.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
+; protobuf/optimized/enum.cc.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/feature_resolver.cc.ll
+; protobuf/optimized/field_mask_util.cc.ll
 ; protobuf/optimized/file.cc.ll
 ; protobuf/optimized/map.cc.ll
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i8 %1, ptr %2) #0 {
+define ptr @func000000000000006f(i64 %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %2, i64 12
-  %4 = getelementptr i8, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %3, i64 %0
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw i32, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; lief/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i8 %1, ptr %2) #0 {
+define ptr @func000000000000000b(i64 %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -1
   %4 = getelementptr nusw i8, ptr %3, i64 %0
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; libquic/optimized/ec_asn1.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000048(i64 %0, i8 %1, ptr %2) #0 {
+define ptr @func000000000000006c(i64 %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 10
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 10
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   %5 = zext i8 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 40 occurrences:
-; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; 38 occurrences:
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
 ; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
@@ -147,7 +126,6 @@ entry:
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
@@ -163,27 +141,32 @@ entry:
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(i64 %0, i8 %1, ptr %2) #0 {
+define ptr @func000000000000007b(i64 %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = getelementptr nusw ptr, ptr %3, i64 %0
   %5 = zext nneg i8 %1 to i64
-  %6 = getelementptr nusw ptr, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 12 occurrences:
-; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/str_split_test.cc.ll
-; protobuf/optimized/command_line_interface.cc.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/descriptor_database.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/feature_resolver.cc.ll
-; protobuf/optimized/file.cc.ll
-; protobuf/optimized/map.cc.ll
-; protobuf/optimized/message_builder.cc.ll
-; protobuf/optimized/message_builder_lite.cc.ll
+; 5 occurrences:
+; cmake/optimized/fse_compress.c.ll
+; cmake/optimized/zstd_compress_sequences.c.ll
+; openusd/optimized/reconintra.c.ll
+; zstd/optimized/fse_compress.c.ll
+; zstd/optimized/zstd_compress_sequences.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006b(i64 %0, i8 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 102
+  %4 = getelementptr nusw i16, ptr %3, i64 %0
+  %5 = zext i8 %1 to i64
+  %6 = getelementptr nusw nuw i16, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, i8 %1, ptr %2) #0 {
@@ -192,6 +175,18 @@ entry:
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = zext i8 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007f(i64 %0, i8 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %0
+  %5 = zext nneg i8 %1 to i64
+  %6 = getelementptr nusw nuw ptr, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -210,24 +205,36 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/fast.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(i64 %0, i8 %1, ptr %2) #0 {
+define ptr @func0000000000000063(i64 %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 255
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 255
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; hyperscan/optimized/gough.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000004f(i64 %0, i8 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -64
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = zext i8 %1 to i64
+  %6 = getelementptr nusw nuw %struct.mstate_aux.3855356, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(i64 %0, i8 %1, ptr %2) #0 {
+define ptr @func0000000000000073(i64 %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 33
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 33
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = zext nneg i8 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

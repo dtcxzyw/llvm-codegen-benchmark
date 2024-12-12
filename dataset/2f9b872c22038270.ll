@@ -25,7 +25,7 @@
 define i64 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -37,13 +37,14 @@ entry:
 define i64 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/intel_bios.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
@@ -53,7 +54,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

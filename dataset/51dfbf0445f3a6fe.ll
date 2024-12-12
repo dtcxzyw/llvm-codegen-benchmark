@@ -21,7 +21,7 @@
 ; openssl/optimized/libcrypto-shlib-cmp_msg.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000008c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -256
   %3 = icmp ult i32 %2, -257
@@ -30,25 +30,21 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
-; linux/optimized/filter.ll
+; 12 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/CallEvent.cpp.ll
 ; llvm/optimized/ParsedAttr.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaLambda.cpp.ll
 ; llvm/optimized/SemaObjC.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/SimplifyIndVar.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; openssl/optimized/libssl-lib-quic_tserver.ll
 ; openssl/optimized/libssl-shlib-quic_tserver.ll
 ; postgres/optimized/funcapi.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000048c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = icmp ult i32 %2, 2
@@ -57,7 +53,7 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; cmake/optimized/multi.c.ll
 ; curl/optimized/libcurl_la-multi.ll
 ; curl/optimized/libcurl_la-smtp.ll
@@ -65,7 +61,6 @@ entry:
 ; flatbuffers/optimized/idl_gen_csharp.cpp.ll
 ; flatbuffers/optimized/idl_gen_kotlin_kmp.cpp.ll
 ; flatbuffers/optimized/idl_gen_swift.cpp.ll
-; flatbuffers/optimized/idl_parser.cpp.ll
 ; linux/optimized/auditsc.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -79,7 +74,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-cmp_msg.ll
 ; wireshark/optimized/traffic_tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000184(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = icmp ult i32 %2, 2
@@ -95,7 +90,7 @@ entry:
 ; minetest/optimized/clientpackethandler.cpp.ll
 ; qemu/optimized/ui_console.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 6
   %3 = icmp eq ptr %0, null
@@ -106,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/filemap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000421(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp eq ptr %0, null
@@ -129,7 +124,7 @@ entry:
 ; luajit/optimized/minilua.ll
 ; openjdk/optimized/filemap.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000042c(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp ne ptr %0, null
@@ -145,7 +140,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, -10
   %3 = icmp eq ptr %0, null
@@ -157,7 +152,7 @@ entry:
 ; flac/optimized/metadata_object.c.ll
 ; linux/optimized/page_io.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i32 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, -1
   %3 = icmp ne ptr %0, null
@@ -170,7 +165,7 @@ entry:
 ; memcached/optimized/memcached_debug-crawler.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000081(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -4
   %3 = icmp ult i32 %2, -2
@@ -179,14 +174,13 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; linux/optimized/filter.ll
+; 4 occurrences:
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000584(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -17
   %3 = icmp ult i32 %2, 2
@@ -199,7 +193,7 @@ entry:
 ; linux/optimized/scatterlist.ll
 ; llvm/optimized/StandardInstrumentations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cc(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000d8c(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 63
   %3 = icmp ne ptr %0, null
@@ -208,21 +202,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000141(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -56
-  %3 = icmp ult i32 %2, 3
-  %4 = icmp eq ptr %0, null
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; wireshark/optimized/packet-ua3g.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(ptr %0, i32 %1) #0 {
+define i1 @func000000000000058c(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %3 = icmp ne ptr %0, null
@@ -234,7 +216,7 @@ entry:
 ; linux/optimized/pci.ll
 ; linux/optimized/setup-bus.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000028(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -3
   %3 = icmp ult i32 %2, -4
@@ -248,7 +230,7 @@ entry:
 ; node/optimized/libnode.crypto_ec.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000024(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = icmp ult i32 %2, -15
@@ -260,7 +242,7 @@ entry:
 ; 1 occurrences:
 ; luajit/optimized/minilua.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000424(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp ult i32 %2, 32

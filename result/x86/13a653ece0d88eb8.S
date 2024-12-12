@@ -1,16 +1,16 @@
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	leal	-1(%rsi), %eax
 	vcvttss2si	%xmm0, %ecx
-	cmpl	%esi, %ecx
-	cmovll	%ecx, %eax
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%ecx, %esi
+	cmovgl	%ecx, %eax
+	cmpl	%eax, %edi
+	setg	%al
 	retq
-func00000000000001a7:                   # @func00000000000001a7
+func0000000000000547:                   # @func0000000000000547
 	leal	-1(%rsi), %eax
 	vcvttss2si	%xmm0, %ecx
-	cmpl	%esi, %ecx
-	cmovll	%ecx, %eax
-	cmpl	%edi, %eax
-	setge	%al
+	cmpl	%ecx, %esi
+	cmovgl	%ecx, %eax
+	cmpl	%eax, %edi
+	setle	%al
 	retq

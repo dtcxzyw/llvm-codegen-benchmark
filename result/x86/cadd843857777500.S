@@ -5,3 +5,9 @@ func0000000000000015:                   # @func0000000000000015
 	movl	$1, %eax
 	subl	%esi, %eax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	movl	%edx, %eax
+	andl	$1, %eax
+	addl	%esi, %edi
+	subl	%edi, %eax
+	retq

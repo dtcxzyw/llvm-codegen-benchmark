@@ -1,5 +1,5 @@
 
-; 523 occurrences:
+; 526 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; cmake/optimized/json_value.cpp.ll
 ; curl/optimized/libcurl_la-curl_sasl.ll
@@ -12,6 +12,8 @@
 ; hermes/optimized/Object.cpp.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
+; linux/optimized/af_inet.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/ds.ll
@@ -19,7 +21,6 @@
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_sdvo.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
@@ -335,7 +336,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -499,6 +499,10 @@
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_image.ll
 ; minetest/optimized/CImage.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -513,13 +517,12 @@
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
-; php/optimized/pcre2_maketables.ll
 ; php/optimized/phar_object.ll
 ; php/optimized/util.ll
 ; postgres/optimized/heapam.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/time.ll
+; stb/optimized/stb_connected_components.c.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; wireshark/optimized/packet-stun.c.ll
@@ -527,7 +530,7 @@
 define i16 @func0000000000000003(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 63
-  %4 = or disjoint i16 %3, %1
+  %4 = or disjoint i16 %1, %3
   %5 = and i16 %0, 448
   %6 = or disjoint i16 %5, %4
   ret i16 %6
@@ -547,7 +550,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, -2048
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   %5 = and i16 %1, 126
   %6 = or i16 %4, %5
   ret i16 %6
@@ -561,7 +564,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1536
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   %5 = and i16 %1, 8
   %6 = or i16 %4, %5
   ret i16 %6
@@ -578,7 +581,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 4096
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   %5 = and i16 %1, 2048
   %6 = or disjoint i16 %4, %5
   ret i16 %6

@@ -1,46 +1,46 @@
-func000000000000004c:                   // @func000000000000004c
+func000000000000008c:                   // @func000000000000008c
 // %bb.0:                               // %entry
 	tst	x1, #0xfffffc00
 	ccmp	x0, #0, #4, eq
 	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000000c4:                   // @func00000000000000c4
+func0000000000000184:                   // @func0000000000000184
 // %bb.0:                               // %entry
 	tst	x1, #0xfffffc00
 	ccmp	x0, #0, #4, eq
 	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000000cc:                   // @func00000000000000cc
+func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
 	cmp	x0, #0
 	ccmp	w1, #0, #4, ne
 	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000000ac:                   // @func00000000000000ac
+func000000000000014c:                   // @func000000000000014c
 // %bb.0:                               // %entry
 	cmp	x0, #0
 	ccmp	w1, #0, #4, ne
 	cset	w0, gt
 	ret
                                         // -- End function
-func00000000000000c1:                   // @func00000000000000c1
+func0000000000000181:                   // @func0000000000000181
 // %bb.0:                               // %entry
 	cmp	w1, #256
 	ccmp	x0, #0, #4, eq
 	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000000c8:                   // @func00000000000000c8
+func0000000000000188:                   // @func0000000000000188
 // %bb.0:                               // %entry
 	cmp	w1, #2
 	ccmp	x0, #0, #4, hi
 	cset	w0, ne
 	ret
                                         // -- End function
-func000000000000001c:                   // @func000000000000001c
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
 	cmp	w1, #0
 	ccmp	x0, #0, #0, ne

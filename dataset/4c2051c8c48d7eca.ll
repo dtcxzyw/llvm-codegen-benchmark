@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
@@ -31,6 +31,7 @@
 ; openspiel/optimized/rbc.cc.ll
 ; openssl/optimized/ca_internals_test-bin-apps.ll
 ; openssl/optimized/libapps-lib-apps.ll
+; openusd/optimized/value.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; php/optimized/zend_smart_str.ll
 ; regex-rs/optimized/3ixfkxlmcuecmmus.ll

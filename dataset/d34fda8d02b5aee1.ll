@@ -7,7 +7,7 @@
 ; osqp/optimized/auxil.c.ll
 ; qemu/optimized/util_block-helpers.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0) #0 {
+define i1 @func000000000000008c(i64 %0) #0 {
 entry:
   %1 = add i64 %0, -2097153
   %2 = icmp ult i64 %1, -2096641
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/zBarrierSetC2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0) #0 {
+define i1 @func0000000000000086(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 1999999999
   %2 = icmp ult i64 %1, -2
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/write.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0) #0 {
+define i1 @func0000000000000084(i64 %0) #0 {
 entry:
   %1 = add i64 %0, -60
   %2 = icmp ult i64 %1, -59

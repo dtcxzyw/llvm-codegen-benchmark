@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	testq	%rdx, %rdx
 	sete	%cl
 	xorb	$1, %sil

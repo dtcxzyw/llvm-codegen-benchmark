@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	192153584101141162              # 0x2aaaaaaaaaaaaaa
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	lui	a0, 699051
 	lui	a1, %hi(.LCPI0_0)
 	addiw	a0, a0, -1365

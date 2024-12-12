@@ -1,11 +1,8 @@
 
-; 52 occurrences:
-; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
+; 50 occurrences:
 ; freetype/optimized/ftstroke.c.ll
-; gromacs/optimized/dorm2l.cpp.ll
 ; gromacs/optimized/dormlq.cpp.ll
 ; gromacs/optimized/dormql.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; gromacs/optimized/sormlq.cpp.ll
 ; gromacs/optimized/sormql.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -15,14 +12,12 @@
 ; linux/optimized/8139too.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/gss_krb5_unseal.ll
 ; linux/optimized/gss_krb5_wrap.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/ip6_tables.ll
 ; linux/optimized/ip_tables.ll
-; linux/optimized/mii.ll
 ; linux/optimized/namei_msdos.ll
 ; linux/optimized/scan.ll
 ; linux/optimized/tcp_input.ll
@@ -36,6 +31,9 @@
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
 ; luau/optimized/IrCallWrapperX64.cpp.ll
+; lvgl/optimized/lv_group.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_textarea.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; nlohmann_json/optimized/unit-byte_container_with_subtype.cpp.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
@@ -61,7 +59,7 @@ entry:
   ret i1 %4
 }
 
-; 48 occurrences:
+; 49 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -69,7 +67,6 @@ entry:
 ; linux/optimized/filter.ll
 ; linux/optimized/i8042.ll
 ; linux/optimized/i915_perf.ll
-; linux/optimized/mii.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/xt_policy.ll
@@ -102,6 +99,8 @@ entry:
 ; softposit-rs/optimized/279qzdp4rwsfn4n0.ll
 ; softposit-rs/optimized/4x7uq85ym1obejw4.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; verilator/optimized/V3EmitMk.cpp.ll
 ; wireshark/optimized/packet-opensafety.c.ll
@@ -115,7 +114,7 @@ define i1 @func000000000000000c(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 2
   %3 = icmp ne i8 %2, 0
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 

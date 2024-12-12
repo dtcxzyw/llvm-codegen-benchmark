@@ -1,12 +1,11 @@
 
-; 70 occurrences:
+; 69 occurrences:
 ; llvm/optimized/SemaChecking.cpp.ll
 ; z3/optimized/add_bounds_tactic.cpp.ll
 ; z3/optimized/atom2bool_var.cpp.ll
 ; z3/optimized/bv2real_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll
@@ -75,7 +74,7 @@ define i64 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }

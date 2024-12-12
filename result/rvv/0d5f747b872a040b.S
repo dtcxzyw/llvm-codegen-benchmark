@@ -28,11 +28,6 @@ func000000000000001f:                   # @func000000000000001f
 	vsll.vi	v10, v10, 3
 	vwaddu.wv	v8, v8, v10
 	ret
-func000000000000000f:                   # @func000000000000000f
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vsll.vi	v10, v10, 2
-	vwaddu.wv	v8, v8, v10
-	ret
 func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v10, v10
@@ -51,6 +46,11 @@ func000000000000001e:                   # @func000000000000001e
 func0000000000000013:                   # @func0000000000000013
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v10, v10, 4
+	vwaddu.wv	v8, v8, v10
+	ret
+func000000000000000f:                   # @func000000000000000f
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vsll.vi	v10, v10, 2
 	vwaddu.wv	v8, v8, v10
 	ret
 func0000000000000008:                   # @func0000000000000008

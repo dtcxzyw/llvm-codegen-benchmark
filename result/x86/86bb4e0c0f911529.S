@@ -1,4 +1,4 @@
-func0000000000000085:                   # @func0000000000000085
+func0000000000000285:                   # @func0000000000000285
 	xorl	%ecx, %ecx
 	cmpl	$256, %esi                      # imm = 0x100
 	cmovbl	%edi, %ecx

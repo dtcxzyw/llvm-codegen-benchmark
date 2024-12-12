@@ -4,7 +4,7 @@ func000000000000000a:                   # @func000000000000000a
 	sbbq	%rsi, %rax
 	setl	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	xorl	%eax, %eax
 	cmpq	%rdi, %rdx
 	sbbq	%rsi, %rax
@@ -30,13 +30,18 @@ func0000000000000004:                   # @func0000000000000004
 	sbbq	$0, %rsi
 	setb	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func0000000000000014:                   # @func0000000000000014
+	cmpq	%rdx, %rdi
+	sbbq	$0, %rsi
+	setb	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
 	xorl	%eax, %eax
 	cmpq	%rdi, %rdx
 	sbbq	%rsi, %rax
 	setl	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorq	%rdx, %rdi
 	orq	%rsi, %rdi
 	sete	%al

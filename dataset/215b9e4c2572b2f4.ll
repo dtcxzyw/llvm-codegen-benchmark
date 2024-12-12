@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-lib-dh_key.ll
 ; openssl/optimized/libcrypto-shlib-dh_key.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = icmp sgt i32 %2, %0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 16
   %3 = sub nsw i32 %2, %0
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = sub nsw i32 %2, %0

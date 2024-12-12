@@ -1,10 +1,11 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; freetype/optimized/raster.c.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; libpng/optimized/pngrtran.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openjdk/optimized/pngrtran.ll
 ; php/optimized/avifinfo.ll
 ; ruby/optimized/bignum.ll
@@ -18,7 +19,7 @@ entry:
   ret i8 %3
 }
 
-; 34 occurrences:
+; 32 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; bullet3/optimized/btSoftBody.ll
 ; cmake/optimized/zstd_ldm.c.ll
@@ -28,10 +29,8 @@ entry:
 ; hdf5/optimized/H5Tbit.c.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/hwgpe.ll
-; linux/optimized/i8259.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/mii.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; nuklear/optimized/unity.c.ll

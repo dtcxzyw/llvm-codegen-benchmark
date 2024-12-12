@@ -10,10 +10,10 @@
 ; verilator/optimized/V3Number.cpp.ll
 ; wireshark/optimized/erf.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000070(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000f0(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
-  %3 = icmp ugt i64 %2, 4294967295
+  %3 = icmp samesign ugt i64 %2, 4294967295
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -22,20 +22,19 @@ entry:
 ; qemu/optimized/source_s_addMagsF16.c.ll
 ; spike/optimized/s_addMagsF16.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
-  %3 = icmp ult i64 %2, 1073741824
+  %3 = icmp samesign ult i64 %2, 1073741824
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; cpython/optimized/longobject.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; qemu/optimized/util_buffer.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -126,7 +125,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -134,7 +133,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/unixtime2tm.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i64 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = icmp slt i64 %2, 3
@@ -146,7 +145,7 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/s_subMagsF64.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000d8(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = icmp ne i64 %2, 0
@@ -169,14 +168,13 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cmake/optimized/ProcessUNIX.c.ll
 ; eastl/optimized/EATest.cpp.ll
 ; eastl/optimized/eathread_pool.cpp.ll
 ; libevent/optimized/event.c.ll
-; libevent/optimized/evthread_pthread.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000054(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = icmp sgt i64 %2, 999999
@@ -184,14 +182,13 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; opencv/optimized/softfloat.cpp.ll
+; 1 occurrences:
 ; wireshark/optimized/netmon.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = icmp ult i64 %2, -1000000000
+  %3 = icmp samesign ult i64 %2, -1000000000
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -199,10 +196,21 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/timeconv.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
-  %3 = icmp ult i64 %2, -86400
+  %3 = icmp samesign ult i64 %2, -86400
+  %4 = zext i1 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %0, %1
+  %3 = icmp ult i64 %2, 4611686018427387904
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -210,7 +218,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000042(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000082(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = icmp eq i64 %2, 0
@@ -221,7 +229,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000062(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000c2(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = icmp eq i64 %2, 0

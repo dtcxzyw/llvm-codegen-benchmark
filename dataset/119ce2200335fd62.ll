@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -56,6 +56,7 @@
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
 ; wireshark/optimized/packet-lldp.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(i32 %0) #0 {
 entry:

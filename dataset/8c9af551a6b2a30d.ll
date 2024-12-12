@@ -1,11 +1,9 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; freetype/optimized/psaux.c.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/kallsyms.ll
-; postgres/optimized/geqo_pool.ll
 ; postgres/optimized/integerset.ll
 ; postgres/optimized/nbtsearch.ll
 ; postgres/optimized/regcomp.ll
@@ -25,7 +23,6 @@ entry:
 ; 36 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/retLvalue.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
@@ -46,6 +43,7 @@ entry:
 ; icu/optimized/calendar.ll
 ; icu/optimized/uniset.ll
 ; libuv/optimized/core.c.ll
+; lvgl/optimized/lv_math.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/CGUIListBox.cpp.ll
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
@@ -68,7 +66,9 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/guiEngine.cpp.ll
 ; opencv/optimized/dnn_utils.cpp.ll
 ; Function Attrs: nounwind

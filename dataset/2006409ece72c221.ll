@@ -9,7 +9,7 @@ define i1 @func0000000000000012(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fcmp ogt double %4, %0
+  %5 = fcmp olt double %0, %4
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ define i1 @func0000000000000014(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fcmp olt double %4, %0
+  %5 = fcmp ogt double %0, %4
   ret i1 %5
 }
 
@@ -44,7 +44,7 @@ define i1 @func0000000000000015(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fcmp ult double %4, %0
+  %5 = fcmp ugt double %0, %4
   ret i1 %5
 }
 
@@ -55,7 +55,7 @@ define i1 @func0000000000000013(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fcmp ugt double %4, %0
+  %5 = fcmp ult double %0, %4
   ret i1 %5
 }
 

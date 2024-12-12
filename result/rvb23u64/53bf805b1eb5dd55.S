@@ -13,6 +13,11 @@ func000000000000000b:                   # @func000000000000000b
 	andi	a1, a1, 14
 	or	a0, a0, a1
 	ret
+func0000000000000000:                   # @func0000000000000000
+	slli	a1, a1, 5
+	andi	a1, a1, 128
+	or	a0, a0, a1
+	ret
 func0000000000000002:                   # @func0000000000000002
 	slli	a1, a1, 3
 	andi	a1, a1, 8

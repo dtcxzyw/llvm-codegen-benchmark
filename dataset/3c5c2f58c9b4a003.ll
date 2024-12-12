@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/amapLib.c.ll
 ; abc/optimized/mioRead.c.ll
+; boost/optimized/get_distance_measure.ll
 ; graphviz/optimized/legal.c.ll
 ; graphviz/optimized/maze.c.ll
 ; hermes/optimized/Array.cpp.ll

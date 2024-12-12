@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
 ; meilisearch-rs/optimized/5788mfqwwp628q0b.ll
@@ -26,10 +26,9 @@
 ; wasmtime-rs/optimized/2mw8cxzcp8dley0k.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/3xoiqyy2a9jbg7ae.ll
-; wasmtime-rs/optimized/3yr40www2jy0a6jn.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; Function Attrs: nounwind
-define { ptr, ptr } @func0000000000000021(ptr %0) #0 {
+define { ptr, ptr } @func0000000000000041(ptr %0) #0 {
 entry:
   %1 = getelementptr nusw i8, ptr %0, i64 -24
   %2 = icmp eq ptr %0, null

@@ -11,7 +11,7 @@
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -22,7 +22,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -34,7 +34,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -42,10 +42,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MappedBlockStream.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -56,7 +56,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -64,10 +64,10 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002e(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000004e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = icmp sge i64 %3, %0
+  %4 = icmp sle i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -76,10 +76,10 @@ entry:
 ; openblas/optimized/dsyrk_thread_LN.c.ll
 ; openblas/optimized/dsyrk_thread_LT.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = icmp sle i64 %3, %0
+  %4 = icmp sge i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }

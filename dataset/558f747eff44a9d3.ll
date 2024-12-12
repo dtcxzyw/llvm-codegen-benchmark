@@ -7,7 +7,7 @@
 ; ruby/optimized/bignum.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp eq i32 %0, 0
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/file.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp slt i32 %0, 0

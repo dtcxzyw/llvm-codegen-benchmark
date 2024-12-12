@@ -1,18 +1,4 @@
 
-; 3 occurrences:
-; hdf5/optimized/H5Pfapl.c.ll
-; postgres/optimized/clog.ll
-; ruby/optimized/sprintf.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000040(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %0, %1
-  %5 = add i64 %4, %3
-  %6 = add i64 %5, -4
-  ret i64 %6
-}
-
 ; 15 occurrences:
 ; cmake/optimized/lzma2_encoder.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -39,7 +25,7 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -47,6 +33,8 @@ entry:
 ; memcached/optimized/memcached_debug-items.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -67,6 +55,19 @@ entry:
   %4 = add nsw i64 %0, %1
   %5 = add nsw i64 %4, %3
   %6 = add nsw i64 %5, -32
+  ret i64 %6
+}
+
+; 2 occurrences:
+; hdf5/optimized/H5Pfapl.c.ll
+; postgres/optimized/clog.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000040(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add i64 %0, %1
+  %5 = add i64 %4, %3
+  %6 = add i64 %5, 1150
   ret i64 %6
 }
 

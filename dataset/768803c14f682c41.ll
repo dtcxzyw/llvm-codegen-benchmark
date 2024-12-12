@@ -74,14 +74,13 @@ entry:
   ret i64 %3
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
 ; faiss/optimized/distances_simd.cpp.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/memory.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; openjdk/optimized/ad_x86_gen.ll
 ; spike/optimized/cras16.ll
@@ -409,7 +408,8 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll

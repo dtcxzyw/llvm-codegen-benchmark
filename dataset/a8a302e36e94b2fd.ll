@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 70 occurrences:
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cvc5/optimized/extended_rewrite.cpp.ll
 ; darktable/optimized/introspection_crop.c.ll
@@ -40,11 +40,9 @@
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dhsein.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrsen.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/graycodepattern.cpp.ll
 ; openjdk/optimized/compileBroker.ll
 ; openjdk/optimized/gcm.ll

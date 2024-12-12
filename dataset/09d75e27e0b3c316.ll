@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
@@ -9,7 +9,6 @@
 ; lodepng/optimized/lodepng.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openmpi/optimized/crc.ll
-; php/optimized/hash_crc32.ll
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/tsquery.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll

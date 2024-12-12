@@ -1,9 +1,10 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/area.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; ruby/optimized/ossl_asn1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 86400
   %2 = add nsw i64 %1, 2147483648
@@ -11,7 +12,7 @@ entry:
   ret i1 %3
 }
 
-; 50 occurrences:
+; 51 occurrences:
 ; assimp/optimized/IFCCurve.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCProfile.cpp.ll
@@ -38,7 +39,6 @@ entry:
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/properties.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; mitsuba3/optimized/stokes.cpp.ll
@@ -46,6 +46,8 @@ entry:
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; openusd/optimized/simplify.cpp.ll
 ; openusd/optimized/testTs_HardToReach.cpp.ll
 ; quantlib/optimized/pascaltriangle.ll
 ; rocksdb/optimized/compaction_job.cc.ll
@@ -63,7 +65,7 @@ entry:
 ; wasmedge/optimized/serial_module.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0) #0 {
+define i1 @func00000000000000a8(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 56
   %2 = add nsw i64 %1, -329406144173384850
@@ -71,7 +73,7 @@ entry:
   ret i1 %3
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; abseil-cpp/optimized/str_replace_test.cc.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
@@ -99,6 +101,7 @@ entry:
 ; opencv/optimized/contours_approx.cpp.ll
 ; opencv/optimized/oilpainting.cpp.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
+; openusd/optimized/simplify.cpp.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; quantlib/optimized/differentialevolution.ll
 ; quantlib/optimized/genericlsregression.ll
@@ -111,13 +114,14 @@ entry:
 ; wasmedge/optimized/serial_module.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0) #0 {
+define i1 @func00000000000000a1(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 24
   ret i1 %1
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/conversion.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; opencv/optimized/graphsegmentation.cpp.ll
@@ -125,14 +129,15 @@ entry:
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
 ; openusd/optimized/blendShapeQuery.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %.off = add i64 %0, -88
   %1 = icmp ult i64 %.off, 88
   ret i1 %1
 }
 
-; 104 occurrences:
+; 103 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/smt2_state.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -214,7 +219,6 @@ entry:
 ; nix/optimized/diff-closures.ll
 ; nix/optimized/filetransfer.ll
 ; nix/optimized/gc.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/store-api.ll
 ; ocio/optimized/BuiltinConfigRegistry.cpp.ll
@@ -230,7 +234,6 @@ entry:
 ; openusd/optimized/evalUtils.cpp.ll
 ; openusd/optimized/mallocTag.cpp.ll
 ; openusd/optimized/reporter.cpp.ll
-; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Prune.cc.ll
 ; spike/optimized/spike-log-parser.ll
 ; vcpkg/optimized/tools.cpp.ll
@@ -238,7 +241,7 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0) #0 {
+define i1 @func00000000000000a4(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 24
   %2 = add nsw i64 %1, -13
@@ -247,9 +250,20 @@ entry:
 }
 
 ; 1 occurrences:
+; openvdb/optimized/FastSweeping.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b4(i64 %0) #0 {
+entry:
+  %1 = sdiv exact i64 %0, 80
+  %2 = add nsw i64 %1, 1
+  %3 = icmp samesign ult i64 %2, 6
+  ret i1 %3
+}
+
+; 1 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0) #0 {
+define i1 @func000000000000002c(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 1
   %2 = icmp ult i64 %1, -2
@@ -259,7 +273,7 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000038(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 2
   %2 = add nsw i64 %1, -2305843009213693951
@@ -270,7 +284,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/sx_function.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0) #0 {
+define i1 @func00000000000000ac(i64 %0) #0 {
 entry:
   %1 = icmp ne i64 %0, -40
   ret i1 %1

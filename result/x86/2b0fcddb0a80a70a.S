@@ -10,6 +10,11 @@ func000000000000000a:                   # @func000000000000000a
 	orq	%rdi, %rax
 	shrq	%rax
 	retq
+func000000000000000d:                   # @func000000000000000d
+	movq	%rdi, %rax
+	shrq	$52, %rax
+	orq	%rsi, %rax
+	retq
 func000000000000000e:                   # @func000000000000000e
 	movq	%rsi, %rax
 	shlq	$16, %rax

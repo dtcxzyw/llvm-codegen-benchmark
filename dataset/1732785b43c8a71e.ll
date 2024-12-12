@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %.fr = freeze i64 %0
   %1 = urem i64 %.fr, 100
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0) #0 {
+define i1 @func000000000000006c(i64 %0) #0 {
 entry:
   %.fr = freeze i64 %0
   %1 = urem i64 %.fr, 100
@@ -39,7 +39,7 @@ entry:
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; wasmtime-rs/optimized/jd0egfnydpuo3ak.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0) #0 {
+define i1 @func000000000000004c(i64 %0) #0 {
 entry:
   %.fr = freeze i64 %0
   %1 = urem i64 %.fr, 24
@@ -47,13 +47,27 @@ entry:
   ret i1 %2
 }
 
-; 1 occurrences:
+; 15 occurrences:
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
+; turborepo-rs/optimized/5oyfkcp83qeshlhfpeq645wiv.ll
+; zed-rs/optimized/0cyv10l6w91jqdqmhl8pbusw2.ll
+; zed-rs/optimized/0vyyug5k32h9xse2mwakvk78w.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/5lopn02otdgr3jtenihf9pnc6.ll
+; zed-rs/optimized/5xfke1jw0ac7pab611oym1u20.ll
+; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
+; zed-rs/optimized/9igphs4jh07znzucv85uqqzol.ll
+; zed-rs/optimized/9kzypu599rxw1s8z0tdtjo3oe.ll
+; zed-rs/optimized/ab01r9sf75x1uliqc5hdvn2v4.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/cerruq7gww65l7esxsyv0yj53.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %.fr = freeze i64 %0
-  %1 = urem i64 %.fr, 136
+  %1 = urem i64 %.fr, 56
   %2 = icmp eq i64 %1, 0
   ret i1 %2
 }

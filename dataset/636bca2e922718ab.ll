@@ -24,13 +24,14 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; brotli/optimized/huffman.c.ll
 ; darktable/optimized/filtering.c.ll
 ; lightgbm/optimized/network.cpp.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/ohci-hcd.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
 ; oiio/optimized/bmpinput.cpp.ll
 ; openusd/optimized/cdef_block.c.ll
 ; php/optimized/zend_compile.ll

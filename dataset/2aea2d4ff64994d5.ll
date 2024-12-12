@@ -1,17 +1,17 @@
 
-%"class.clang::QualType.2998822" = type { %"class.llvm::PointerIntPair.2998823" }
-%"class.llvm::PointerIntPair.2998823" = type { %"struct.llvm::detail::PunnedPointer.2998824" }
-%"struct.llvm::detail::PunnedPointer.2998824" = type { [8 x i8] }
+%"class.clang::QualType.3192275" = type { %"class.llvm::PointerIntPair.3192276" }
+%"class.llvm::PointerIntPair.3192276" = type { %"struct.llvm::detail::PunnedPointer.3192277" }
+%"struct.llvm::detail::PunnedPointer.3192277" = type { [8 x i8] }
 
 ; 1 occurrences:
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   %7 = icmp ult ptr %6, %0
   ret i1 %7
 }
@@ -19,12 +19,12 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 4
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
@@ -64,12 +64,12 @@ entry:
 ; llvm/optimized/SemaExprObjC.cpp.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 4
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
@@ -77,12 +77,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 127
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 48
-  %6 = getelementptr nusw %"class.clang::QualType.2998822", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 48
+  %6 = getelementptr nusw nuw %"class.clang::QualType.3192275", ptr %5, i64 %4
   %7 = icmp ne ptr %6, %0
   ret i1 %7
 }
@@ -90,7 +90,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/fatent.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000204(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64

@@ -1,9 +1,7 @@
 
-%"class.std::__cxx11::basic_string.2708195" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2708196", i64, %union.anon.2708197 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2708196" = type { ptr }
-%union.anon.2708197 = type { i64, [8 x i8] }
+%"class.WasmEdge::LLVM::Value.2763231" = type { ptr }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; assimp/optimized/NFFLoader.cpp.ll
 ; cvc5/optimized/datatypes_rewriter.cpp.ll
@@ -24,6 +22,7 @@
 ; openusd/optimized/testUsdStageThreading.cpp.ll
 ; openusd/optimized/usdcat.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
+; wasmedge/optimized/compiler.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -31,7 +30,7 @@ entry:
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = xor i64 %1, -1
-  %7 = getelementptr %"class.std::__cxx11::basic_string.2708195", ptr %5, i64 %6
+  %7 = getelementptr %"class.WasmEdge::LLVM::Value.2763231", ptr %5, i64 %6
   ret ptr %7
 }
 

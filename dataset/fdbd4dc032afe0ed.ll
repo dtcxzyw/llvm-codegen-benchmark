@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; linux/optimized/8250_dwlib.ll
+; 7 occurrences:
 ; linux/optimized/8250_early.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_display.ll

@@ -40,7 +40,7 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; clamav/optimized/aspack.c.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libdeflate/optimized/deflate_compress.c.ll
@@ -49,12 +49,14 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -65,7 +67,7 @@ define i32 @func000000000000000d(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -111,7 +113,18 @@ define i32 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001d(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = shl nuw nsw i32 1, %2
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

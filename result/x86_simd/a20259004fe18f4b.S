@@ -20,7 +20,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 .LCPI2_0:
 	.quad	1                               # 0x1
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpcmpneqq	.LCPI2_0(%rip){1to4}, %ymm0, %k1
@@ -30,7 +30,7 @@ func0000000000000058:                   # @func0000000000000058
 	retq
 .LCPI3_0:
 	.quad	2                               # 0x2
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpcmpltuq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
@@ -38,7 +38,7 @@ func0000000000000048:                   # @func0000000000000048
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
@@ -57,7 +57,7 @@ func0000000000000008:                   # @func0000000000000008
 	vzeroupper
 	retq
 .LCPI6_0:
-	.quad	-4294967297                     # 0xfffffffeffffffff
+	.quad	9                               # 0x9
 func0000000000000010:                   # @func0000000000000010
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -67,21 +67,11 @@ func0000000000000010:                   # @func0000000000000010
 	vzeroupper
 	retq
 .LCPI7_0:
-	.quad	65535                           # 0xffff
-func0000000000000050:                   # @func0000000000000050
-	vpsllw	$7, %xmm1, %xmm1
-	vpmovb2m	%xmm1, %k0
-	vpcmpnleuq	.LCPI7_0(%rip){1to4}, %ymm0, %k1
-	korw	%k0, %k1, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI8_0:
 	.quad	1                               # 0x1
 func000000000000000c:                   # @func000000000000000c
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
-	vpcmpltq	.LCPI8_0(%rip){1to4}, %ymm0, %k1
+	vpcmpltq	.LCPI7_0(%rip){1to4}, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

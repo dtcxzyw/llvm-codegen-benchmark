@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 76 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/cmdAuto.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -37,7 +37,6 @@
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
@@ -128,7 +127,7 @@ entry:
   ret i1 %2
 }
 
-; 75 occurrences:
+; 74 occurrences:
 ; abc/optimized/abc.c.ll
 ; annoy/optimized/annoymodule.ll
 ; darktable/optimized/introspection_channelmixer.c.ll
@@ -162,7 +161,6 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/environment.cpp.ll
 ; minetest/optimized/joystick_controller.cpp.ll
@@ -244,7 +242,7 @@ entry:
   ret i1 %2
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/poly34.ll
 ; flac/optimized/stream_encoder.c.ll
@@ -261,7 +259,6 @@ entry:
 ; ocio/optimized/FileFormatICC.cpp.ll
 ; oiio/optimized/imagebufalgo_yee.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/contours_approx.cpp.ll
 ; spike/optimized/vector_unit.ll

@@ -4,7 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	shrxl	%esi, %eax, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	leal	-48(%rdx,%rdi), %eax
+	leal	-1(%rdx,%rdi), %eax
 	decb	%sil
 	shrxl	%esi, %eax, %eax
 	retq

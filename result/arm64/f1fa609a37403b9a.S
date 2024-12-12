@@ -1,37 +1,21 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ushl	v3.4s, v3.4s, v5.4s
-	ushl	v2.4s, v2.4s, v4.4s
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	ushr	v1.4s, v1.4s, #16
-	ushr	v0.4s, v0.4s, #16
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	lsl	w8, w1, w2
+	add	w8, w8, w0
+	lsr	w0, w8, #16
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	ushl	v3.4s, v3.4s, v5.4s
-	ushl	v2.4s, v2.4s, v4.4s
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	ushr	v1.4s, v1.4s, #12
-	ushr	v0.4s, v0.4s, #12
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	lsl	w8, w1, w2
+	add	w8, w8, w0
+	lsr	w0, w8, #12
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	ushl	v3.4s, v3.4s, v5.4s
-	ushl	v2.4s, v2.4s, v4.4s
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	xtn	v1.4h, v1.4s
-	xtn	v0.4h, v0.4s
-	ushr	v1.4h, v1.4h, #6
-	ushr	v0.4h, v0.4h, #6
-	uzp1	v0.8b, v0.8b, v1.8b
+	lsl	w8, w1, w2
+	add	w8, w8, w0
+	lsr	w0, w8, #6
 	ret
                                         // -- End function

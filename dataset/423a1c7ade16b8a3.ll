@@ -209,7 +209,7 @@
 ; yosys/optimized/test_cell.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 36
@@ -256,13 +256,26 @@ entry:
 ; opencv/optimized/calibration.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 312
   %5 = and i64 %4, 4294967295
   %6 = add nuw nsw i64 %0, 1
-  %7 = icmp ult i64 %6, %5
+  %7 = icmp samesign ult i64 %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 36
+  %5 = and i64 %4, 4294967294
+  %6 = add nuw i64 %0, 2
+  %7 = icmp eq i64 %6, %5
   ret i1 %7
 }
 
@@ -272,7 +285,7 @@ entry:
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ec(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 112
@@ -285,7 +298,7 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 40

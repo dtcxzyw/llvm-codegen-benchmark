@@ -1,6 +1,7 @@
 
-; 64 occurrences:
+; 65 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/gradient_checker.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -65,7 +66,7 @@
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64
@@ -74,10 +75,7 @@ entry:
   ret i1 %5
 }
 
-; 25 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/gradient_checker.cc.ll
-; ceres/optimized/manifold.cc.ll
+; 22 occurrences:
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
@@ -101,7 +99,7 @@ entry:
 ; quantlib/optimized/levenbergmarquardt.ll
 ; quantlib/optimized/twofactormodel.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64
@@ -118,7 +116,7 @@ entry:
 ; opencv/optimized/array.cpp.ll
 ; openjdk/optimized/X11SurfaceData.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64
@@ -146,7 +144,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; openmpi/optimized/coll_base_allgather.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64
@@ -155,11 +153,12 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; oiio/optimized/targaoutput.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64
@@ -168,10 +167,24 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
+; ceres/optimized/manifold.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sext i32 %0 to i64
+  %4 = mul nsw i64 %3, %2
+  %5 = icmp samesign ugt i64 %4, 2305843009213693951
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; opencv/optimized/matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64

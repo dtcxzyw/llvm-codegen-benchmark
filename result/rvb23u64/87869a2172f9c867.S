@@ -12,7 +12,7 @@ func000000000000005a:                   # @func000000000000005a
 	sh1add	a0, a1, a0
 	addi	a0, a0, -2
 	ret
-func000000000000007a:                   # @func000000000000007a
+func000000000000007b:                   # @func000000000000007b
 	sh1add	a2, a2, a2
 	sext.w	a2, a2
 	sh1add	a0, a2, a0

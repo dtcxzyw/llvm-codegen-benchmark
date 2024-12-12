@@ -1,6 +1,6 @@
 
-%struct.smvt_control.2521029 = type { i32, i32 }
-%struct.iovec.2575990 = type { ptr, i64 }
+%struct.smvt_control.2635513 = type { i32, i32 }
+%struct.iovec.2690185 = type { ptr, i64 }
 
 ; 2 occurrences:
 ; ruby/optimized/compile.ll
@@ -15,8 +15,9 @@ entry:
   ret ptr %6
 }
 
-; 123 occurrences:
+; 126 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
+; boost/optimized/message.ll
 ; clamav/optimized/aspack.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/clamd.c.ll
@@ -42,6 +43,7 @@ entry:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/CloneDetection.cpp.ll
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
@@ -138,14 +140,15 @@ entry:
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 3
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -186,12 +189,12 @@ entry:
 ; slurm/optimized/pack.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %struct.smvt_control.2521029, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.smvt_control.2635513, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -205,12 +208,12 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000043(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %struct.iovec.2575990, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.iovec.2690185, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -231,28 +234,29 @@ entry:
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/CZipReader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000063(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; minetest/optimized/treegen.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000006b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; linux/optimized/rc80211_minstrel_ht.ll
 ; postgres/optimized/multixact.ll
 ; qemu/optimized/hw_pci_pcie_sriov.c.ll
 ; raylib/optimized/raudio.c.ll
@@ -296,13 +300,11 @@ entry:
   ret ptr %6
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; icu/optimized/ucptrie.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openjdk/optimized/zip_util.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; redis/optimized/rax.ll
@@ -312,12 +314,12 @@ entry:
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 4
   %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -337,12 +339,12 @@ entry:
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add nsw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -351,12 +353,12 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -6
   %4 = add nsw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -366,7 +368,7 @@ entry:
 define ptr @func000000000000002c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr float, ptr %0, i64 %5
   ret ptr %6
@@ -382,12 +384,12 @@ entry:
 ; opencv/optimized/bgfg_gsoc.cpp.ll
 ; opencv/optimized/merge.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = add i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -395,12 +397,12 @@ entry:
 ; abc/optimized/cuddApa.c.ll
 ; openblas/optimized/dlarrv.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000027(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -412,12 +414,12 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -427,12 +429,24 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000006f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = add nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000024(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -3
+  %4 = add i32 %3, %1
+  %5 = zext nneg i32 %4 to i64
+  %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -446,12 +460,12 @@ entry:
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 2
   %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -463,7 +477,7 @@ entry:
 define ptr @func0000000000000060(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 4
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -473,12 +487,12 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -526,12 +540,12 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 348
   %4 = add nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

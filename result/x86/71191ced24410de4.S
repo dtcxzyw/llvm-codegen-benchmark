@@ -1,14 +1,14 @@
-func0000000000000208:                   # @func0000000000000208
+func0000000000000408:                   # @func0000000000000408
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	bzhiq	%rdx, %rax, %rax
-	cmpq	%rdi, %rax
-	setb	%al
-	retq
-func0000000000000204:                   # @func0000000000000204
-	addq	%rsi, %rsi
-	leaq	(%rsi,%rsi,4), %rax
-	bzhiq	%rdx, %rax, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	seta	%al
+	retq
+func0000000000000404:                   # @func0000000000000404
+	addq	%rsi, %rsi
+	leaq	(%rsi,%rsi,4), %rax
+	bzhiq	%rdx, %rax, %rax
+	cmpq	%rax, %rdi
+	setb	%al
 	retq

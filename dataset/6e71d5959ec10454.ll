@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/obsensor_uvc_stream_channel.cpp.ll
 ; openjdk/optimized/xDirector.ll
@@ -10,6 +10,7 @@
 ; quantlib/optimized/incrementalstatistics.ll
 ; quantlib/optimized/sviinterpolatedsmilesection.ll
 ; raylib/optimized/raudio.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:

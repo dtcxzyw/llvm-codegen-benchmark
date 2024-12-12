@@ -8,14 +8,15 @@
 ; mitsuba3/optimized/zonevector.cpp.ll
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 448
   %2 = icmp eq i32 %1, 0
   ret i1 %2
 }
 
-; 19 occurrences:
+; 20 occurrences:
+; boost/optimized/to_chars.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -36,7 +37,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0) #0 {
+define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 65536
   %2 = icmp ne i32 %1, 0

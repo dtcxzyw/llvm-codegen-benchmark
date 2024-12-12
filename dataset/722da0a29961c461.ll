@@ -20,7 +20,7 @@
 define i128 @func0000000000000001(i128 %0, i64 %1) #0 {
 entry:
   %2 = sext i64 %1 to i128
-  %3 = mul nsw i128 %2, %0
+  %3 = mul nsw i128 %0, %2
   ret i128 %3
 }
 

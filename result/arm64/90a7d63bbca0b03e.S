@@ -1,4 +1,4 @@
-func0000000000000321:                   // @func0000000000000321
+func0000000000000661:                   // @func0000000000000661
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	mov	w8, #12                         // =0xc
@@ -9,7 +9,7 @@ func0000000000000321:                   // @func0000000000000321
 	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000003a1:                   // @func00000000000003a1
+func00000000000007e1:                   // @func00000000000007e1
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	mov	w8, #40                         // =0x28
@@ -20,7 +20,7 @@ func00000000000003a1:                   // @func00000000000003a1
 	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000003a4:                   // @func00000000000003a4
+func00000000000007e4:                   // @func00000000000007e4
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	mov	w8, #112                        // =0x70

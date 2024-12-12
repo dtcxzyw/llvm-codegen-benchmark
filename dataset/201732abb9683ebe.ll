@@ -230,13 +230,39 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000005a(i1 %0, i32 %1) #0 {
+define i64 @func00000000000000aa(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sub nsw i32 1, %1
   %4 = select i1 %0, i32 %3, i32 %2
   %5 = icmp sgt i32 %4, 999
   %6 = select i1 %5, i64 4, i64 3
+  ret i64 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000b8(i1 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -3
+  %3 = sub nsw i32 3, %1
+  %4 = select i1 %0, i32 %3, i32 %2
+  %5 = icmp samesign ugt i32 %4, 9
+  %6 = select i1 %5, i64 2, i64 1
+  ret i64 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000a8(i1 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -3
+  %3 = sub nsw i32 3, %1
+  %4 = select i1 %0, i32 %3, i32 %2
+  %5 = icmp ugt i32 %4, 999999999
+  %6 = select i1 %5, i64 10, i64 9
   ret i64 %6
 }
 

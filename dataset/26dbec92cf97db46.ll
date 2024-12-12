@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 7 occurrences:
 ; folly/optimized/Checksum.cpp.ll
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; linux/optimized/hda_auto_parser.ll
@@ -7,8 +7,6 @@
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; openssl/optimized/libcrypto-lib-a_strex.ll
 ; openssl/optimized/libcrypto-shlib-a_strex.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i1 %1, i1 %2) #0 {
 entry:

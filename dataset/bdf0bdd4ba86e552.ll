@@ -1,11 +1,9 @@
 
-; 22 occurrences:
+; 20 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; libquic/optimized/file_posix.cc.ll
-; linux/optimized/attr.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll

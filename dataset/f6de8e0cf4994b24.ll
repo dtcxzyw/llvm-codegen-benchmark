@@ -208,7 +208,7 @@ entry:
 ; llvm/optimized/CoverageMappingReader.cpp.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 62
   %3 = sdiv exact i64 %0, 40
@@ -219,7 +219,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/floodfill.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = sdiv exact i64 %0, 12

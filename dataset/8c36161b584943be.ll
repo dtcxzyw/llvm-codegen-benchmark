@@ -4,7 +4,7 @@
 ; nuklear/optimized/unity.c.ll
 ; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004d4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001194(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %0, %2
   %4 = or i32 %3, %2

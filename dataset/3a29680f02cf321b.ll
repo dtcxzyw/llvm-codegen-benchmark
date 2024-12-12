@@ -1,17 +1,18 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
+; minetest/optimized/mesh_compare.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; openssl/optimized/quic_tserver_test-bin-quic_tserver_test.ll
 ; proj/optimized/isea.cpp.ll
-; soc-simulator/optimized/verilated.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-m3ua.c.ll
 ; wireshark/optimized/packet-sctp.c.ll
@@ -46,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; lodepng/optimized/pngdetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = sdiv i32 %0, 6
   %2 = and i32 %1, 224

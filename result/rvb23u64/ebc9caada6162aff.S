@@ -24,12 +24,6 @@ func0000000000000010:                   # @func0000000000000010
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000020:                   # @func0000000000000020
-	zext.w	a2, a2
-	addi	a1, a1, 1
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	ret
 func000000000000005f:                   # @func000000000000005f
 	sext.w	a2, a2
 	addi	a1, a1, -1
@@ -42,14 +36,14 @@ func0000000000000055:                   # @func0000000000000055
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000003c:                   # @func000000000000003c
-	zext.w	a2, a2
-	addi	a1, a1, 2
+func0000000000000070:                   # @func0000000000000070
+	sext.w	a2, a2
+	addi	a1, a1, 1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000070:                   # @func0000000000000070
-	sext.w	a2, a2
+func000000000000003c:                   # @func000000000000003c
+	zext.w	a2, a2
 	addi	a1, a1, 1
 	mul	a1, a1, a2
 	add	a0, a0, a1

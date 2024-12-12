@@ -9,13 +9,13 @@ func0000000000000006:                   # @func0000000000000006
 	sarl	$31, %eax
 	andl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orl	%edx, %esi
 	xorl	%eax, %eax
 	cmpl	$1, %esi
 	cmovel	%edi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	orl	%edx, %esi
 	cmpl	$32, %esi
 	movl	$1, %eax

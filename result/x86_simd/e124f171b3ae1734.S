@@ -15,7 +15,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	16,3
 .LCPI1_2:
 	.byte	7                               # 0x7
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpbroadcastb	.LCPI1_2(%rip), %xmm2   # xmm2 = [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
 	vpand	%xmm2, %xmm1, %xmm1
 	vpcmpltb	.LCPI1_1(%rip), %xmm1, %k1

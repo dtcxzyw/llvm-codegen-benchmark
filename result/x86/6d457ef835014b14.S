@@ -11,14 +11,14 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orq	%rdx, %rsi
 	movabsq	$-4294967295, %rax              # imm = 0xFFFFFFFF00000001
 	testq	%rax, %rsi
 	sete	%al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	orq	%rdx, %rsi
 	shlq	$12, %rsi
 	setne	%al

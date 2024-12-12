@@ -88,6 +88,12 @@ func0000000000000008:                   # @func0000000000000008
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%edi, %eax
+	shll	$31, %edx
+	orl	%esi, %eax
+	orl	%edx, %eax
+	retq
 func000000000000001b:                   # @func000000000000001b
 	movl	%edi, %eax
 	shll	$26, %edx
@@ -100,21 +106,15 @@ func0000000000000016:                   # @func0000000000000016
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
-	movl	%edi, %eax
-	shll	$25, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+func0000000000000006:                   # @func0000000000000006
+	movzbl	%dl, %eax
+	shll	$8, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%edi, %eax
-	shll	$25, %edx
+	shll	$29, %edx
 	orl	%esi, %eax
 	orl	%edx, %eax
-	retq
-func0000000000000006:                   # @func0000000000000006
-	movzbl	%dl, %eax
-	shll	$16, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
 	retq

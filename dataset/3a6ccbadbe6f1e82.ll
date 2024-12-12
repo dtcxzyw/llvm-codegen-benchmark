@@ -7,7 +7,7 @@
 define i1 @func0000000000000012(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = xor i1 %4, true
   ret i1 %5
 }
@@ -43,7 +43,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = xor i1 %4, true
   ret i1 %5
 }
@@ -57,7 +57,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = xor i1 %4, true
   ret i1 %5
 }

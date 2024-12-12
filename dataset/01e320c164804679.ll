@@ -1,5 +1,5 @@
 
-; 134 occurrences:
+; 131 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; assimp/optimized/STEPFileEncoding.cpp.ll
@@ -27,7 +27,6 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5HG.c.ll
 ; hdf5/optimized/H5HGcache.c.ll
-; hdf5/optimized/H5HGdbg.c.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; libjpeg-turbo/optimized/jdsample.c.ll
@@ -43,7 +42,6 @@
 ; linux/optimized/cipso_ipv4.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/fatent.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/ialloc.ll
 ; linux/optimized/indirect.ll
@@ -118,7 +116,6 @@
 ; protobuf/optimized/file.cc.ll
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
-; qemu/optimized/hw_char_sifive_uart.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
 ; recastnavigation/optimized/DetourTileCache.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
@@ -143,7 +140,7 @@ entry:
   ret i64 %3
 }
 
-; 45 occurrences:
+; 43 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -163,9 +160,7 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
-; mitsuba3/optimized/archtraits.cpp.ll
 ; mitsuba3/optimized/func.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; opencc/optimized/Config.cpp.ll
 ; openjdk/optimized/PathCharsValidator.ll
 ; openspiel/optimized/solitaire.cc.ll
@@ -192,16 +187,17 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i8 %0) #0 {
 entry:
-  %1 = zext nneg i8 %0 to i64
-  %2 = add nuw nsw i64 %1, 4294967264
-  %3 = and i64 %2, 4294967295
+  %1 = add i8 %0, 7
+  %2 = and i8 %1, 56
+  %3 = zext nneg i8 %2 to i64
   ret i64 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; meilisearch-rs/optimized/nd5rqkzol64hjfl.ll
 ; ockam-rs/optimized/274k60s1efyiyv8u.ll
 ; ockam-rs/optimized/z0rkq6s90lca7cm.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i8 %0) #0 {
 entry:

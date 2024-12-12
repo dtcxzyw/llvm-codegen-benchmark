@@ -19,11 +19,18 @@ func0000000000000012:                   // @func0000000000000012
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func000000000000001e:                   // @func000000000000001e
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	add	x8, x1, w2, uxth
 	add	x0, x0, x8, lsl #2
+	ret
+                                        // -- End function
+func0000000000000007:                   // @func0000000000000007
+// %bb.0:                               // %entry
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x1, w2, uxth
+	add	x0, x0, x8, lsl #3
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c

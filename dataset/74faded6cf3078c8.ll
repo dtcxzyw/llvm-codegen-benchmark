@@ -41,7 +41,7 @@ entry:
 ; mitsuba3/optimized/serialized.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, 8
   %3 = icmp eq i32 %1, 0
@@ -49,12 +49,11 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; 2 occurrences:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i64 %0, -14
   %3 = icmp ult i32 %1, 14
@@ -71,7 +70,7 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; sentencepiece/optimized/time.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i64 %0, -2
   %3 = icmp eq i32 %1, 0
@@ -82,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i64 %0, 2
   %3 = icmp eq i32 %1, 0

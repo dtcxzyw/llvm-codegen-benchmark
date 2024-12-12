@@ -26,10 +26,3 @@ func0000000000000003:                   # @func0000000000000003
 	vcvtsi2sd	%edi, %xmm0, %xmm0
 	vmulsd	.LCPI3_0(%rip), %xmm0, %xmm0
 	retq
-.LCPI4_0:
-	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000002:                   # @func0000000000000002
-	addl	$-128, %edi
-	vcvtusi2sd	%edi, %xmm0, %xmm0
-	vmulsd	.LCPI4_0(%rip), %xmm0, %xmm0
-	retq

@@ -2,7 +2,7 @@
 	.long	128                             # 0x80
 .LCPI0_1:
 	.long	256                             # 0x100
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [128,128,128,128,128,128,128,128]
@@ -19,7 +19,7 @@ func0000000000000031:                   # @func0000000000000031
 	.long	8                               # 0x8
 .LCPI1_2:
 	.long	4294967294                      # 0xfffffffe
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [4,4,4,4,4,4,4,4]
@@ -33,7 +33,7 @@ func0000000000000011:                   # @func0000000000000011
 	.long	3                               # 0x3
 .LCPI2_1:
 	.long	2                               # 0x2
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [3,3,3,3,3,3,3,3]
@@ -48,7 +48,7 @@ func0000000000000034:                   # @func0000000000000034
 	.long	13                              # 0xd
 .LCPI3_1:
 	.long	15                              # 0xf
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [13,13,13,13,13,13,13,13]
@@ -108,7 +108,7 @@ func000000000000000c:                   # @func000000000000000c
 	.long	16                              # 0x10
 .LCPI7_1:
 	.long	48                              # 0x30
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI7_0(%rip), %ymm1   # ymm1 = [16,16,16,16,16,16,16,16]
@@ -122,7 +122,7 @@ func0000000000000038:                   # @func0000000000000038
 	.long	4                               # 0x4
 .LCPI8_1:
 	.long	2                               # 0x2
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI8_0(%rip), %ymm1   # ymm1 = [4,4,4,4,4,4,4,4]
@@ -137,7 +137,7 @@ func0000000000000021:                   # @func0000000000000021
 	.long	35                              # 0x23
 .LCPI9_1:
 	.long	131                             # 0x83
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI9_0(%rip), %ymm1   # ymm1 = [35,35,35,35,35,35,35,35]
@@ -184,7 +184,7 @@ func0000000000000006:                   # @func0000000000000006
 	.long	16                              # 0x10
 .LCPI12_2:
 	.long	3                               # 0x3
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI12_0(%rip), %ymm1  # ymm1 = [256,256,256,256,256,256,256,256]
@@ -200,7 +200,7 @@ func000000000000001a:                   # @func000000000000001a
 	.long	8                               # 0x8
 .LCPI13_2:
 	.long	4294967248                      # 0xffffffd0
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI13_0(%rip), %ymm1  # ymm1 = [5,5,5,5,5,5,5,5]

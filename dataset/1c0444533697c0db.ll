@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; bullet3/optimized/btContactConstraint.ll
 ; bullet3/optimized/btReducedDeformableContactConstraint.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -21,6 +21,7 @@
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/imgui.cpp.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:
@@ -73,23 +74,6 @@ entry:
   ret float %4
 }
 
-; 7 occurrences:
-; imgui/optimized/imgui.cpp.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; ncnn/optimized/roialign.cpp.ll
-; ncnn/optimized/roialign_x86.cpp.ll
-; ncnn/optimized/roialign_x86_avx.cpp.ll
-; ncnn/optimized/roialign_x86_avx512.cpp.ll
-; ncnn/optimized/roialign_x86_fma.cpp.ll
-; Function Attrs: nounwind
-define float @func000000000000000a(float %0, float %1) #0 {
-entry:
-  %2 = fadd float %0, %1
-  %3 = fcmp ole float %2, 0.000000e+00
-  %4 = select i1 %3, float 0.000000e+00, float %2
-  ret float %4
-}
-
 ; 10 occurrences:
 ; box2d/optimized/b2_prismatic_joint.cpp.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -107,6 +91,18 @@ entry:
   %2 = fadd float %0, %1
   %3 = fcmp oeq float %2, 0.000000e+00
   %4 = select i1 %3, float 0x3EB0C6F7A0000000, float %2
+  ret float %4
+}
+
+; 2 occurrences:
+; imgui/optimized/imgui.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; Function Attrs: nounwind
+define float @func000000000000000a(float %0, float %1) #0 {
+entry:
+  %2 = fadd float %0, %1
+  %3 = fcmp ole float %2, 0.000000e+00
+  %4 = select i1 %3, float 0.000000e+00, float %2
   ret float %4
 }
 

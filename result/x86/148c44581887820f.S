@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	movq	%rdx, %rcx
 	shrq	%rcx
 	movq	%rcx, %rax
@@ -7,7 +7,7 @@ func0000000000000024:                   # @func0000000000000024
 	cmpl	%esi, %edi
 	cmovbq	%rcx, %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	movq	%rdx, %rcx
 	shrq	%rcx
 	movq	%rcx, %rax
@@ -16,7 +16,7 @@ func000000000000002a:                   # @func000000000000002a
 	cmpl	%esi, %edi
 	cmovgq	%rcx, %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	movq	%rdx, %rcx
 	shrq	%rcx
 	movq	%rcx, %rax
@@ -25,7 +25,7 @@ func0000000000000028:                   # @func0000000000000028
 	cmpl	%esi, %edi
 	cmovaq	%rcx, %rax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	movq	%rdx, %rcx
 	shrq	%rcx
 	movq	%rcx, %rax
@@ -33,4 +33,22 @@ func0000000000000026:                   # @func0000000000000026
 	addq	%rdx, %rax
 	cmpl	%esi, %edi
 	cmovlq	%rcx, %rax
+	retq
+func0000000000000058:                   # @func0000000000000058
+	movq	%rdx, %rcx
+	shrq	%rcx
+	movq	%rcx, %rax
+	notq	%rax
+	addq	%rdx, %rax
+	cmpl	%esi, %edi
+	cmovaq	%rcx, %rax
+	retq
+func0000000000000054:                   # @func0000000000000054
+	movq	%rdx, %rcx
+	shrq	%rcx
+	movq	%rcx, %rax
+	notq	%rax
+	addq	%rdx, %rax
+	cmpl	%esi, %edi
+	cmovbq	%rcx, %rax
 	retq

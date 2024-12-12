@@ -30,9 +30,21 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/scrptrun.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i8 @func0000000000000031(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 65535
+  %2 = icmp samesign ugt i32 %1, 65535
+  %3 = select i1 %2, i8 16, i8 0
+  %4 = or disjoint i8 %3, 8
+  %5 = select i1 %0, i8 %4, i8 %3
+  ret i8 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000029(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 65536
   %3 = select i1 %2, i8 16, i8 0
   %4 = or disjoint i8 %3, 8
   %5 = select i1 %0, i8 %4, i8 %3

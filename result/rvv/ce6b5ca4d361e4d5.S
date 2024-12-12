@@ -32,6 +32,17 @@ func000000000000000e:                   # @func000000000000000e
 	vnsrl.wi	v10, v8, 3
 	vsll.vi	v8, v10, 4
 	ret
+.LCPI3_0:
+	.quad	-6067343680855748867            # 0xabcc77118461cefd
+func0000000000000003:                   # @func0000000000000003
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmulhu.vx	v8, v8, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 26
+	vadd.vv	v8, v10, v10
+	ret
 func0000000000000001:                   # @func0000000000000001
 	lui	a0, 699051
 	addiw	a0, a0, -1365

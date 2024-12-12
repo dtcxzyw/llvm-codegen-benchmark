@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/tethering.c.ll
@@ -22,11 +23,12 @@ entry:
   ret float %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_profile_gamma.c.ll
 ; minetest/optimized/guiHyperText.cpp.ll
 ; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:

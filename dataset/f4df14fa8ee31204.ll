@@ -10,7 +10,7 @@ entry:
   %3 = or i32 %1, 4
   %4 = icmp eq i8 %2, 16
   %5 = select i1 %4, i32 %3, i32 %1
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or i32 %6, 32
   ret i32 %7
 }
@@ -19,7 +19,7 @@ entry:
 ; linux/optimized/intel_lrc.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 536870912
   %4 = icmp eq i8 %2, 3

@@ -35,3 +35,17 @@ func000000000000000c:                   # @func000000000000000c
 	cmpw	$-1, %si
 	setne	%al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	testb	$1, %dil
+	cmovel	%edx, %esi
+	movzwl	%si, %eax
+	cmpl	$769, %eax                      # imm = 0x301
+	setae	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	testb	$1, %dil
+	cmovel	%edx, %esi
+	movzwl	%si, %eax
+	cmpl	$56320, %eax                    # imm = 0xDC00
+	setb	%al
+	retq

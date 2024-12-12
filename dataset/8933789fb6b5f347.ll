@@ -8,7 +8,7 @@
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0) #0 {
+define i32 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = urem i32 %0, 19
   %2 = sub nuw nsw i32 19, %1

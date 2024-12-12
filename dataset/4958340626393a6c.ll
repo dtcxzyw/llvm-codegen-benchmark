@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; assimp/optimized/MD5Loader.cpp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
@@ -7,6 +7,7 @@
 ; minetest/optimized/guiEngine.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; raylib/optimized/rcore.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1, i32 %2) #0 {
 entry:

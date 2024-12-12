@@ -12,11 +12,11 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = mul i32 %3, %1
-  %5 = mul i32 %4, %0
+  %5 = mul i32 %0, %4
   ret i32 %5
 }
 
-; 79 occurrences:
+; 78 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -67,7 +67,6 @@ entry:
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
@@ -100,7 +99,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = mul i32 %4, %0
   ret i32 %5
 }
@@ -210,9 +209,8 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/config.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/urb.ll
 ; opencv/optimized/array.cpp.ll
 ; Function Attrs: nounwind
@@ -221,21 +219,6 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul nuw nsw i32 %3, %1
   %5 = mul nuw nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 5 occurrences:
-; linux/optimized/scsicam.ll
-; opencv/optimized/filter.dispatch.cpp.ll
-; opencv/optimized/ocl_perf.cpp.ll
-; opencv/optimized/pyramids.cpp.ll
-; opencv/optimized/resize.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = mul i32 %4, %0
   ret i32 %5
 }
 
@@ -253,7 +236,7 @@ define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul nsw i32 %3, %1
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -271,8 +254,22 @@ entry:
 define i32 @func000000000000003d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = mul nsw i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = mul nsw i32 %0, %4
+  ret i32 %5
+}
+
+; 4 occurrences:
+; opencv/optimized/filter.dispatch.cpp.ll
+; opencv/optimized/ocl_perf.cpp.ll
+; opencv/optimized/pyramids.cpp.ll
+; opencv/optimized/resize.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 1
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = mul i32 %4, %0
   ret i32 %5
 }
 
@@ -282,7 +279,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = mul i32 %4, %0
   ret i32 %5
 }
@@ -293,7 +290,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = mul nsw i32 %4, %0
   ret i32 %5
 }

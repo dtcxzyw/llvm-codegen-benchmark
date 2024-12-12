@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 62 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/atom_requests.cpp.ll
@@ -45,7 +45,6 @@
 ; lief/optimized/Class.cpp.ll
 ; lief/optimized/File.cpp.ll
 ; lief/optimized/Method.cpp.ll
-; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; luajit/optimized/minilua.ll
@@ -64,9 +63,20 @@
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; verilator/optimized/V3TSP.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4611686018427387903
+  %4 = urem i64 %3, %1
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -5
   %4 = urem i64 %3, %1
   %5 = getelementptr nusw ptr, ptr %0, i64 %4
   ret ptr %5

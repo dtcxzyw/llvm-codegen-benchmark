@@ -1,5 +1,5 @@
 
-; 865 occurrences:
+; 866 occurrences:
 ; abc/optimized/bmcCexMin2.c.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -32,7 +32,9 @@
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; llvm/optimized/AnalysisConsumer.cpp.ll
 ; llvm/optimized/BugSuppression.cpp.ll
+; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
+; llvm/optimized/CGExprCXX.cpp.ll
 ; llvm/optimized/CalledOnceCheck.cpp.ll
 ; llvm/optimized/CastToStructChecker.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
@@ -195,7 +197,6 @@
 ; spike/optimized/bclri.ll
 ; spike/optimized/bext.ll
 ; spike/optimized/bexti.ll
-; spike/optimized/bf16_to_f32.ll
 ; spike/optimized/binv.ll
 ; spike/optimized/binvi.ll
 ; spike/optimized/bset.ll

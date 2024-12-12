@@ -14,7 +14,8 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/process.ll
 ; cpython/optimized/compile.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -25,22 +26,12 @@ entry:
 ; rocksdb/optimized/block_based_table_iterator.cc.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = icmp eq i64 %0, 0
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; spike/optimized/triggers.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %1, i1 %2, i1 false
-  %4 = icmp ugt i64 %0, 4
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }

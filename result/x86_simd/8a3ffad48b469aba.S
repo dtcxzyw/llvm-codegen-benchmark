@@ -27,7 +27,7 @@ func0000000000000011:                   # @func0000000000000011
 	.long	292                             # 0x124
 func0000000000000015:                   # @func0000000000000015
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmulld	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI4_0:

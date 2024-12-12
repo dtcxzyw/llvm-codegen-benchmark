@@ -1,8 +1,6 @@
 
-; 3 occurrences:
+; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
-; opencv/optimized/lkpyramid.cpp.ll
-; opencv/optimized/rlof_localflow.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -50,6 +48,19 @@ entry:
   %4 = inttoptr i64 %3 to ptr
   %5 = getelementptr float, ptr %4, i64 %0
   %6 = getelementptr float, ptr %5, i64 %1
+  ret ptr %6
+}
+
+; 2 occurrences:
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -16
+  %4 = inttoptr i64 %3 to ptr
+  %5 = getelementptr i16, ptr %4, i64 %0
+  %6 = getelementptr i16, ptr %5, i64 %1
   ret ptr %6
 }
 

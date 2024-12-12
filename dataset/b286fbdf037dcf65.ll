@@ -1,5 +1,5 @@
 
-%struct.dasm_Section.2678098 = type { ptr, ptr, i64, i32, i32, i32 }
+%struct.dasm_Section.2791035 = type { ptr, ptr, i64, i32, i32, i32 }
 
 ; 5 occurrences:
 ; cpython/optimized/ceval.ll
@@ -8,16 +8,16 @@
 ; postgres/optimized/localtime.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 5
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 2736
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 2736
   %5 = getelementptr [64 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 26 occurrences:
+; 29 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/amapOutput.c.ll
 ; abc/optimized/amapRule.c.ll
@@ -40,17 +40,20 @@ entry:
 ; libjpeg-turbo/optimized/rdgif.c.ll
 ; libwebp/optimized/cost_enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/buildvm.ll
 ; opencv/optimized/grfmt_bmp.cpp.ll
+; openspiel/optimized/ABsearch.cpp.ll
 ; php/optimized/ir_emit.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 24
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 80
-  %5 = getelementptr nusw [1 x %struct.dasm_Section.2678098], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 80
+  %5 = getelementptr nusw [1 x %struct.dasm_Section.2791035], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -78,42 +81,16 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/amaze.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = ashr exact i32 %1, 1
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 666368
-  %5 = getelementptr nusw [12800 x float], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 4 occurrences:
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; openspiel/optimized/ABsearch.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
-entry:
-  %2 = ashr i32 %1, 3
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 396761
-  %5 = getelementptr nusw [62 x i8], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 1 occurrences:
 ; openusd/optimized/cdef.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
 entry:
-  %2 = ashr exact i32 %1, 24
+  %2 = ashr exact i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 24032
-  %5 = getelementptr nusw [16 x i32], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 666368
+  %5 = getelementptr nusw [12800 x float], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

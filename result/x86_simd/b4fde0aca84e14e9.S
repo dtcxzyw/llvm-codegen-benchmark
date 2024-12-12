@@ -1,23 +1,23 @@
 .LCPI0_0:
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
 .LCPI0_1:
-	.long	127                             # 0x7f
+	.long	8                               # 0x8
 .LCPI0_2:
-	.long	1023                            # 0x3ff
+	.long	12                              # 0xc
 func0000000000000010:                   # @func0000000000000010
 	vpcmpeqw	.LCPI0_0(%rip), %xmm1, %k1
-	vpbroadcastd	.LCPI0_1(%rip), %ymm1   # ymm1 = [127,127,127,127,127,127,127,127]
-	vpbroadcastd	.LCPI0_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1023,1023,1023,1023,1023,1023,1023,1023]
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm0, %ymm0
+	vpbroadcastd	.LCPI0_1(%rip), %ymm1   # ymm1 = [8,8,8,8,8,8,8,8]
+	vpbroadcastd	.LCPI0_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [12,12,12,12,12,12,12,12]
 	vpaddd	%ymm1, %ymm0, %ymm0
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.short	7                               # 0x7

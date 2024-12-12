@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testb	$1, %dl
 	movl	$-520094722, %eax               # imm = 0xE0FFFBFE
 	movl	$553648126, %ecx                # imm = 0x20FFFFFE
@@ -20,13 +20,14 @@ func0000000000000001:                   # @func0000000000000001
 	orl	%ecx, %eax
 	orl	$1008, %eax                     # imm = 0x3F0
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	notb	%dl
 	movzbl	%dl, %ecx
 	andl	$1, %ecx
 	shll	$4, %ecx
-	leal	32(%rcx,%rsi), %eax
-	orl	%esi, %ecx
+	leal	32(%rsi,%rcx), %eax
+	movl	%esi, %edx
+	orl	%ecx, %edx
 	testl	%edi, %edi
-	cmovel	%ecx, %eax
+	cmovel	%edx, %eax
 	retq

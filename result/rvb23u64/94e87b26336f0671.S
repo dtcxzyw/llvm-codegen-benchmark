@@ -1,35 +1,35 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	li	a2, 64
 	subw	a2, a2, a1
 	srl	a0, a0, a2
 	seqz	a0, a0
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	li	a2, 63
 	subw	a2, a2, a1
 	srl	a0, a0, a2
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1
 	ret
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	li	a2, 64
 	subw	a2, a2, a1
 	srl	a0, a0, a2
 	seqz	a0, a0
 	ret
-func0000000000000068:                   # @func0000000000000068
+func00000000000000d8:                   # @func00000000000000d8
 	negw	a1, a1
 	srl	a0, a0, a1
 	srli	a0, a0, 32
 	snez	a0, a0
 	ret
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	li	a2, 11
 	subw	a2, a2, a1
 	srl	a0, a0, a2
 	sltiu	a0, a0, 10
 	ret
-func00000000000000e4:                   # @func00000000000000e4
+func00000000000001d4:                   # @func00000000000001d4
 	li	a2, 1075
 	subw	a2, a2, a1
 	lui	a1, 24414

@@ -34,7 +34,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/rational.ll
 ; freetype/optimized/ftbbox.c.ll
 ; freetype/optimized/raster.c.ll
 ; openjdk/optimized/ciArray.ll

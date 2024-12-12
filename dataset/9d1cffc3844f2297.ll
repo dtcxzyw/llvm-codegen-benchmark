@@ -7,7 +7,7 @@
 ; openssl/optimized/libcrypto-shlib-a_time.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -480
   %4 = add nsw i32 %3, %1
@@ -24,7 +24,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-a_time.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -480
   %4 = add nsw i32 %3, %1
@@ -63,18 +63,6 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; openjdk/optimized/zip_util.ll
-; Function Attrs: nounwind
-define i1 @func00000000000003f4(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 4
-  %4 = add nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, 4
-  %6 = icmp ult i32 %5, %0
-  ret i1 %6
-}
-
 ; 8 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; hermes/optimized/Sorting.cpp.ll
@@ -88,7 +76,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, 1
   %6 = icmp ult i32 %5, %0
   ret i1 %6
@@ -97,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000204(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -96
   %4 = add i32 %3, %1
@@ -109,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/autoit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000309(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000609(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 3
   %4 = add i32 %3, %1
@@ -135,7 +123,7 @@ entry:
 ; graphviz/optimized/dotsplines.c.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -64
   %4 = add nsw i32 %3, %1
@@ -161,7 +149,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ptp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003e8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007c8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 4
   %4 = add nuw nsw i32 %3, %1
@@ -173,7 +161,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000224(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000444(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 2
   %4 = add i32 %3, %1
@@ -185,7 +173,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-bgp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000206(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = add i32 %3, %1
@@ -197,7 +185,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-vcdu.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000286(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000506(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 7
   %4 = add nuw i32 %3, %1
@@ -209,7 +197,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = add nuw nsw i32 %3, %1
@@ -221,7 +209,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000288(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 12
   %4 = add nsw i32 %3, %1

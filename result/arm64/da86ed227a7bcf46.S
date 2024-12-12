@@ -1,28 +1,16 @@
-func00000000000000d1:                   // @func00000000000000d1
+func00000000000001a1:                   // @func00000000000001a1
 // %bb.0:                               // %entry
-	sub	v2.2d, v4.2d, v2.2d
-	sub	v1.2d, v3.2d, v1.2d
-	mov	w8, #1                          // =0x1
-	uaddw	v1.2d, v1.2d, v0.2s
-	uaddw2	v0.2d, v2.2d, v0.4s
-	dup	v2.2d, x8
-	cmeq	v0.2d, v0.2d, v2.2d
-	cmeq	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x2, x1
+	add	x8, x8, w0, uxtw
+	cmp	x8, #1
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000001d1:                   // @func00000000000001d1
+func00000000000003a1:                   // @func00000000000003a1
 // %bb.0:                               // %entry
-	sub	v2.2d, v4.2d, v2.2d
-	sub	v1.2d, v3.2d, v1.2d
-	mov	w8, #1                          // =0x1
-	uaddw	v1.2d, v1.2d, v0.2s
-	uaddw2	v0.2d, v2.2d, v0.4s
-	dup	v2.2d, x8
-	cmeq	v0.2d, v0.2d, v2.2d
-	cmeq	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x2, x1
+	add	x8, x8, w0, uxtw
+	cmp	x8, #1
+	cset	w0, eq
 	ret
                                         // -- End function

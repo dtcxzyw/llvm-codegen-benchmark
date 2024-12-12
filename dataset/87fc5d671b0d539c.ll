@@ -18,13 +18,12 @@ entry:
   ret i32 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; libquic/optimized/file_posix.cc.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/control.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/intel_cdclk.ll
-; linux/optimized/mii.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/skl_universal_plane.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -42,14 +41,13 @@ entry:
 define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 2, i32 %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or disjoint i32 %4, 64
   ret i32 %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; linux/optimized/intel_cdclk.ll
-; linux/optimized/mii.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/CGExprComplex.cpp.ll
@@ -72,7 +70,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 2, i32 %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or i32 %4, 56
   ret i32 %5
 }
@@ -86,7 +84,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = or disjoint i32 %4, 16
   ret i32 %5
 }

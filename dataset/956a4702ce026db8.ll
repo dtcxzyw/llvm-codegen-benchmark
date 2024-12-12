@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 22 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -17,7 +17,11 @@
 ; luajit/optimized/lj_record_dyn.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; ruby/optimized/time.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; z3/optimized/mpf.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
@@ -256,7 +260,7 @@ entry:
   %2 = lshr i32 %1, 23
   %3 = and i32 %2, 255
   %4 = add nsw i32 %3, -150
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

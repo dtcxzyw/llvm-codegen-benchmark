@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_fb.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -10,10 +9,10 @@
 ; ruby/optimized/gc.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp eq i64 %4, 0
   %6 = select i1 %5, i32 %0, i32 1
   ret i32 %6
@@ -112,10 +111,10 @@ entry:
 ; draco/optimized/mesh_cleanup.cc.ll
 ; php/optimized/compact_vars.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000004c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %.not = icmp eq i64 %4, 0
   %5 = select i1 %.not, i32 -1, i32 %0
   ret i32 %5
@@ -124,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/gen8_ppgtt.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -138,7 +137,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 -2, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %.not = icmp eq i64 %4, 0
   %5 = select i1 %.not, i32 -1, i32 %0
   ret i32 %5

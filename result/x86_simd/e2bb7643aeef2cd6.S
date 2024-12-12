@@ -44,7 +44,7 @@ func0000000000000002:                   # @func0000000000000002
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpsrld	$31, %ymm0, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrad	$1, %ymm0, %ymm0
@@ -97,7 +97,7 @@ func0000000000000000:                   # @func0000000000000000
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [1374389535,1374389535,1374389535,1374389535,1374389535,1374389535,1374389535,1374389535]
 	vpmuldq	%ymm2, %ymm1, %ymm1

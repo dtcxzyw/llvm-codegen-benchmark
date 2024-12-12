@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; lief/optimized/psa_crypto.c.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
@@ -10,8 +10,6 @@
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; postgres/optimized/hashpage.ll
-; postgres/optimized/hashsort.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {

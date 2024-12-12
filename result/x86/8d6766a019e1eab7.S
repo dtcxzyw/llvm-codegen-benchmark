@@ -1,11 +1,11 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	movl	%edx, %eax
 	imulq	$56, %rax, %rax
 	addq	%rsi, %rax
 	sete	%al
 	orb	%dil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000006c:                   # @func000000000000006c
 	movl	%edx, %eax
 	imulq	$56, %rax, %rax
 	addq	%rsi, %rax
@@ -26,7 +26,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000e1:                   # @func00000000000000e1
 	movl	%edx, %eax
 	shlq	$3, %rax
 	addq	%rsi, %rax

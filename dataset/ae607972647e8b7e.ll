@@ -19,7 +19,7 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; cmake/optimized/cmRST.cxx.ll
 ; jsonnet/optimized/formatter.cpp.ll
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
@@ -28,6 +28,7 @@ entry:
 ; php/optimized/main.ll
 ; wireshark/optimized/packet-snmp.c.ll
 ; yosys/optimized/sim.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
@@ -49,7 +50,8 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/src.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i8 %1) #0 {

@@ -1,4 +1,4 @@
-func0000000000000404:                   # @func0000000000000404
+func0000000000000804:                   # @func0000000000000804
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rdx
 	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
@@ -20,7 +20,7 @@ func0000000000000404:                   # @func0000000000000404
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vmovdqa	%ymm0, %ymm1
 	vpternlogq	$15, %ymm0, %ymm0, %ymm1 # ymm1 = ~ymm1
-	vpaddq	%ymm2, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm2, %ymm1
 	vpcmpltuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

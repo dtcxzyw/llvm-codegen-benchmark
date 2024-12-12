@@ -1,7 +1,8 @@
 func0000000000000000:                   # @func0000000000000000
-	movl	%edx, %ecx
+	movabsq	$9223372036852678656, %rcx      # imm = 0x7FFFFFFFFFE00000
+	andq	%rdx, %rcx
+	xorl	%eax, %eax
 	testb	$1, %sil
-	movl	$1024, %eax                     # imm = 0x400
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq

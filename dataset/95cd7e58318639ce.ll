@@ -1,5 +1,6 @@
 
-; 15 occurrences:
+; 16 occurrences:
+; boost/optimized/numeric.ll
 ; clamav/optimized/strfn.cpp.ll
 ; git/optimized/convert.ll
 ; gromacs/optimized/matio.cpp.ll

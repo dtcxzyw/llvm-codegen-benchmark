@@ -39,19 +39,19 @@ func0000000000000018:                   # @func0000000000000018
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000038:                   # @func0000000000000038
+func000000000000003c:                   # @func000000000000003c
 	andi	a2, a2, 1
 	bnez	a2, .LBB3_2
-	li	a2, 1
+	li	a2, 352
 	add	a0, a0, a2
-	slli	a2, a1, 1
-	add	a1, a1, a2
+	li	a2, 152
+	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 .LBB3_2:
-	li	a2, 4
+	li	a2, 348
 	add	a0, a0, a2
-	slli	a2, a1, 1
-	add	a1, a1, a2
+	li	a2, 152
+	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

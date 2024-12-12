@@ -28,7 +28,8 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; abc/optimized/ltl_parser.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; hermes/optimized/ISel.cpp.ll
@@ -58,10 +59,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; git/optimized/prio-queue.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/interaction.cpp.ll
 ; sundials/optimized/idas.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i32 %0, i64 %1) #0 {

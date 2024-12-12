@@ -34,8 +34,10 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; abc/optimized/bacNtk.c.ll
+; cmake/optimized/huf_compress.c.ll
+; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0) #0 {
 entry:

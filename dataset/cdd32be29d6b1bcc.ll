@@ -1,19 +1,45 @@
 
-; 9 occurrences:
+; 4 occurrences:
+; linux/optimized/e1000_main.ll
+; openblas/optimized/dbbcsd.c.ll
+; openjdk/optimized/jni.ll
+; postgres/optimized/indextuple.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 16, i64 20
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = sext i32 %1 to i64
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; php/optimized/zend_inference.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 -32, i64 0
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = sext i32 %1 to i64
+  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 8 occurrences:
 ; chibicc/optimized/tokenize.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
-; php/optimized/zend_inference.ll
 ; raylib/optimized/rtextures.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wolfssl/optimized/api.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i1 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i64 -32, i64 0
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %3 = select i1 %2, i64 3, i64 0
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
@@ -31,24 +57,10 @@ entry:
 ; postgres/optimized/tsearchcmds.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1, i1 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 3, i64 0
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = sext i32 %1 to i64
-  %6 = getelementptr i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 3 occurrences:
-; linux/optimized/e1000_main.ll
-; openblas/optimized/dbbcsd.c.ll
-; postgres/optimized/indextuple.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %2, i64 21504, i64 64
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

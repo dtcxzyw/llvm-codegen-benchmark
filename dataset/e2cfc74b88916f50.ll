@@ -1,11 +1,10 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; cmake/optimized/cmCTestRunTest.cxx.ll
 ; cvc5/optimized/portfolio_driver.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; ninja/optimized/metrics.cc.ll
-; openmpi/optimized/threads_pthreads_yield.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/EmptyImageLoader.cpp.ll

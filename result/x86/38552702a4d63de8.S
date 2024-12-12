@@ -1,11 +1,10 @@
 func000000000000000a:                   # @func000000000000000a
-	movq	%rdi, %rax
-	addq	%rdx, %rax
-	adcq	%rcx, %rsi
-	movabsq	$72057594037927935, %rdx        # imm = 0xFFFFFFFFFFFFFF
-	addq	%rsi, %rdx
-	shrdq	$16, %rdx, %rax
-	shrq	$16, %rdx
+	movq	%rsi, %rax
+	addq	%rdx, %rdi
+	adcq	%rcx, %rax
+	addq	$-1, %rdi
+	adcq	$-1, %rax
+	xorl	%edx, %edx
 	retq
 func000000000000000e:                   # @func000000000000000e
 	movq	%rdi, %rax

@@ -1,20 +1,29 @@
 
-%struct.pm_options_scope.2485661 = type { i64, ptr }
-%"struct.rocksdb::CompactionInputFiles.2508792" = type { i32, %"class.std::vector.0.2508787", %"class.std::vector.8.2508793" }
-%"class.std::vector.0.2508787" = type { %"struct.std::_Vector_base.1.2508788" }
-%"struct.std::_Vector_base.1.2508788" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2508789" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2508789" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2508790" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2508790" = type { ptr, ptr, ptr }
-%"class.std::vector.8.2508793" = type { %"struct.std::_Vector_base.9.2508794" }
-%"struct.std::_Vector_base.9.2508794" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2508795" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2508795" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2508796" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2508796" = type { ptr, ptr, ptr }
+%struct.pm_options_scope.2601139 = type { i64, ptr }
+%"struct.rocksdb::CompactionInputFiles.2623957" = type { i32, %"class.std::vector.0.2623944", %"class.std::vector.8.2623958" }
+%"class.std::vector.0.2623944" = type { %"struct.std::_Vector_base.1.2623945" }
+%"struct.std::_Vector_base.1.2623945" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623946" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623946" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623947" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623947" = type { ptr, ptr, ptr }
+%"class.std::vector.8.2623958" = type { %"struct.std::_Vector_base.9.2623959" }
+%"struct.std::_Vector_base.9.2623959" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623960" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623960" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623961" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623961" = type { ptr, ptr, ptr }
+%"class.QuantLib::Array.2855169" = type { %"class.std::unique_ptr.2855170", i64 }
+%"class.std::unique_ptr.2855170" = type { %"struct.std::__uniq_ptr_data.2855171" }
+%"struct.std::__uniq_ptr_data.2855171" = type { %"class.std::__uniq_ptr_impl.2855172" }
+%"class.std::__uniq_ptr_impl.2855172" = type { %"class.std::tuple.2855173" }
+%"class.std::tuple.2855173" = type { %"struct.std::_Tuple_impl.2855174" }
+%"struct.std::_Tuple_impl.2855174" = type { %"struct.std::_Head_base.28.2855175" }
+%"struct.std::_Head_base.28.2855175" = type { ptr }
+%"struct.std::pair.53.3484889" = type { i64, double }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; linux/optimized/base.ll
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dsbgst.c.ll
+; opencv/optimized/demosaicing.cpp.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/formatting.ll
 ; postgres/optimized/guc.ll
@@ -43,14 +52,13 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.pm_options_scope.2485661, ptr %0, i64 %5
+  %6 = getelementptr %struct.pm_options_scope.2601139, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; c3c/optimized/file_utils.c.ll
-; git/optimized/worktree.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; icu/optimized/ucnv_u32.ll
 ; opencv/optimized/convolution_layer.cpp.ll
@@ -72,28 +80,24 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
-; gromacs/optimized/gausstransform.cpp.ll
-; gromacs/optimized/gmx_hbond.cpp.ll
+; 2 occurrences:
 ; opencv/optimized/genericgfpoly.cpp.ll
-; opencv/optimized/radial_variance_hash.cpp.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000037(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"struct.rocksdb::CompactionInputFiles.2508792", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.rocksdb::CompactionInputFiles.2623957", ptr %0, i64 %5
   ret ptr %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cvc5/optimized/cardinality_extension.cpp.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; opencv/optimized/stringutils.cpp.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
-; openspiel/optimized/goofspiel.cc.ll
 ; openssl/optimized/libcrypto-lib-dh_key.ll
 ; openssl/optimized/libcrypto-shlib-dh_key.ll
 ; redis/optimized/ldebug.ll
@@ -104,6 +108,18 @@ entry:
   %4 = sub i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = sub nsw i32 %1, %3
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw %"class.QuantLib::Array.2855169", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -137,7 +153,8 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/area.ll
 ; lua/optimized/lstrlib.ll
 ; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
@@ -162,6 +179,20 @@ entry:
   ret ptr %6
 }
 
+; 3 occurrences:
+; gromacs/optimized/gausstransform.cpp.ll
+; gromacs/optimized/gmx_hbond.cpp.ll
+; opencv/optimized/radial_variance_hash.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000036(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = sub nsw i32 %1, %3
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  ret ptr %6
+}
+
 ; 2 occurrences:
 ; openblas/optimized/dsbgst.c.ll
 ; wireshark/optimized/packet-pkcs12.c.ll
@@ -172,6 +203,18 @@ entry:
   %4 = sub i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openspiel/optimized/goofspiel.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = sub i32 %1, %3
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw %"struct.std::pair.53.3484889", ptr %0, i64 %5
   ret ptr %6
 }
 

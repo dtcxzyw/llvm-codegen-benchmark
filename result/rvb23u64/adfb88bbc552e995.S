@@ -9,3 +9,8 @@ func000000000000000a:                   # @func000000000000000a
 	sgtz	a1, a1
 	andn	a0, a1, a0
 	ret
+func0000000000000011:                   # @func0000000000000011
+	xor	a1, a1, a2
+	seqz	a1, a1
+	andn	a0, a1, a0
+	ret

@@ -23,7 +23,7 @@ entry:
   ret i64 %4
 }
 
-; 29 occurrences:
+; 31 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/hopUtil.c.ll
@@ -51,13 +51,15 @@ entry:
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 7
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -92,7 +94,7 @@ entry:
 define i64 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 12
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -104,7 +106,7 @@ entry:
 define i64 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 31
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }

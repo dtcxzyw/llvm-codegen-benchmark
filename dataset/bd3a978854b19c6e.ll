@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -9,6 +9,7 @@
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; ruby/optimized/time.ll
+; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-gmr1_bcch.c.ll

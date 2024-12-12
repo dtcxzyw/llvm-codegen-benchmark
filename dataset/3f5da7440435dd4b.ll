@@ -6,7 +6,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 4
   %4 = zext nneg i8 %3 to i64
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -20,12 +20,12 @@ entry:
 ; openjdk/optimized/pngrtran.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 3
   %4 = zext nneg i8 %3 to i64
-  %5 = or disjoint i64 %4, %1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %5 = or disjoint i64 %1, %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

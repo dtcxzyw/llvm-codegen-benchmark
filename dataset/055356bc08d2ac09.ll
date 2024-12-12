@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; darktable/optimized/histogram.c.ll
+; 4 occurrences:
 ; darktable/optimized/introspection_gamma.c.ll
 ; gromacs/optimized/pairs.cpp.ll
 ; nori/optimized/tabwidget.cpp.ll
@@ -9,7 +8,7 @@
 define float @func0000000000000000(float %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, float 0.000000e+00, float 1.000000e+00
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fmul float %3, 0x4050DEF9A0000000
   ret float %4
 }

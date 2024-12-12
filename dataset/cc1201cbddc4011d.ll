@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; casadi/optimized/cvodes.c.ll
@@ -17,7 +17,6 @@
 ; ncnn/optimized/interp_x86_avx.cpp.ll
 ; ncnn/optimized/interp_x86_avx512.cpp.ll
 ; ncnn/optimized/interp_x86_fma.cpp.ll
-; openblas/optimized/dstein.c.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/phasecorr.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll

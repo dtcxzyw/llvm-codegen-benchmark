@@ -1,5 +1,12 @@
 
-; 18 occurrences:
+; 25 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll

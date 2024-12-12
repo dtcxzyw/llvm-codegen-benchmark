@@ -1,11 +1,12 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absUtil.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/extraUtilMult.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
+; linux/optimized/core.ll
 ; llvm/optimized/SemaHexagon.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {

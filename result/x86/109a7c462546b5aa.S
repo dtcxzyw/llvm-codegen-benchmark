@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movb	$60, %al
 	bzhiq	%rax, %rsi, %rax
 	shrxq	%rdi, %rax, %rax

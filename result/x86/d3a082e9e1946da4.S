@@ -16,15 +16,21 @@ func0000000000000006:                   # @func0000000000000006
 	andb	%sil, %al
 	movzbl	%al, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	andl	$1, %esi
+	cmpl	$6, %edi
+	movl	$2, %eax
+	cmovbl	%esi, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	andl	$1, %esi
+	cmpl	$42, %edi
+	movl	$2, %eax
+	cmovael	%esi, %eax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	andl	$1, %esi
 	testl	%edi, %edi
 	movl	$2, %eax
 	cmovlel	%esi, %eax
-	retq
-func0000000000000008:                   # @func0000000000000008
-	andl	$1, %esi
-	cmpl	$48, %edi
-	movl	$2, %eax
-	cmovbl	%esi, %eax
 	retq

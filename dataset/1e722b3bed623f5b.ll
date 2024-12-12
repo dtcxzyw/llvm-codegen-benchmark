@@ -12,7 +12,7 @@
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = trunc i64 %2 to i32
@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/countbitsnode.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0, i64 %1) #0 {
+define i32 @func00000000000000c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -38,7 +38,7 @@ entry:
 ; nori/optimized/layout.cpp.ll
 ; nori/optimized/widget.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

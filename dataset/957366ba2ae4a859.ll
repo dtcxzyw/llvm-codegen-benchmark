@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; graphviz/optimized/shapes.c.ll
 ; linux/optimized/auth_gss.ll
 ; linux/optimized/blk-mq.ll
@@ -22,7 +22,6 @@
 ; linux/optimized/sky2.ll
 ; linux/optimized/transport.ll
 ; linux/optimized/tree.ll
-; linux/optimized/umh.ll
 ; linux/optimized/urb.ll
 ; linux/optimized/virtgpu_ioctl.ll
 ; linux/optimized/virtgpu_kms.ll

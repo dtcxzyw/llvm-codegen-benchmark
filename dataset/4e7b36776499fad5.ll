@@ -1,5 +1,7 @@
 
-; 42 occurrences:
+; 99 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; bullet3/optimized/btGImpactShape.ll
 ; bullet3/optimized/btMultiBody.ll
 ; cpython/optimized/crossinterp.ll
@@ -19,72 +21,19 @@
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; libquic/optimized/dtls_record.c.ll
 ; libquic/optimized/quic_session.cc.ll
-; linux/optimized/pcmcia_cis.ll
 ; linux/optimized/route.ll
-; llvm/optimized/CGClass.cpp.ll
-; llvm/optimized/CGObjC.cpp.ll
-; llvm/optimized/Expr.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/UnsafeBufferUsage.cpp.ll
-; luau/optimized/ConstraintGenerator.cpp.ll
-; nori/optimized/popupbutton.cpp.ll
-; opencv/optimized/attention_layer.cpp.ll
-; opencv/optimized/retinafilter.cpp.ll
-; openmpi/optimized/pml_ob1_recvfrag.ll
-; proj/optimized/io.cpp.ll
-; qemu/optimized/hw_usb_core.c.ll
-; spike/optimized/socketif.ll
-; velox/optimized/URLFunctions.cpp.ll
-; zxing/optimized/PDFModulusPoly.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002a(i1 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 32
-  %4 = getelementptr nusw i8, ptr %1, i64 48
-  %5 = select i1 %0, ptr %4, ptr %3
-  %6 = getelementptr nusw i8, ptr %5, i64 8
-  ret ptr %6
-}
-
-; 2 occurrences:
-; jsonnet/optimized/formatter.cpp.ll
-; linux/optimized/pcmcia_cis.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000028(i1 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
-  %4 = getelementptr nusw i8, ptr %1, i64 80
-  %5 = select i1 %0, ptr %4, ptr %3
-  %6 = getelementptr i8, ptr %5, i64 8
-  ret ptr %6
-}
-
-; 1 occurrences:
-; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000022(i1 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 96
-  %4 = getelementptr i8, ptr %1, i64 16
-  %5 = select i1 %0, ptr %4, ptr %3
-  %6 = getelementptr nusw i8, ptr %5, i64 8
-  ret ptr %6
-}
-
-; 54 occurrences:
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/AsmWriter.cpp.ll
+; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
+; llvm/optimized/CGObjC.cpp.ll
+; llvm/optimized/CGStmtOpenMP.cpp.ll
+; llvm/optimized/COFFObjectFile.cpp.ll
+; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/ConstantFold.cpp.ll
@@ -96,6 +45,7 @@ entry:
 ; llvm/optimized/CycleInfo.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/Float2Int.cpp.ll
 ; llvm/optimized/GVN.cpp.ll
@@ -110,6 +60,7 @@ entry:
 ; llvm/optimized/InstCombineNegator.cpp.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
+; llvm/optimized/Instruction.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
@@ -118,31 +69,72 @@ entry:
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/MachineCycleAnalysis.cpp.ll
 ; llvm/optimized/NewGVN.cpp.ll
+; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86LoadValueInjectionLoadHardening.cpp.ll
+; luau/optimized/ConstraintGenerator.cpp.ll
+; nori/optimized/popupbutton.cpp.ll
+; opencv/optimized/retinafilter.cpp.ll
+; openmpi/optimized/pml_ob1_recvfrag.ll
+; qemu/optimized/hw_usb_core.c.ll
 ; quantlib/optimized/treecallablebondengine.ll
+; spike/optimized/socketif.ll
+; velox/optimized/URLFunctions.cpp.ll
+; zxing/optimized/PDFModulusPoly.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 544
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 48
   %5 = select i1 %0, ptr %4, ptr %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
-; 149 occurrences:
+; 1 occurrences:
+; jsonnet/optimized/formatter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003c(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 80
+  %5 = select i1 %0, ptr %4, ptr %3
+  %6 = getelementptr i8, ptr %5, i64 8
+  ret ptr %6
+}
+
+; 1 occurrences:
+; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000033(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 96
+  %4 = getelementptr i8, ptr %1, i64 16
+  %5 = select i1 %0, ptr %4, ptr %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
+  ret ptr %6
+}
+
+; 147 occurrences:
+; boost/optimized/topology.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
 ; nix/optimized/archive.ll
@@ -230,13 +222,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -293,17 +282,16 @@ entry:
 ; nix/optimized/worker.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i1 %0, ptr %1, ptr %2) #0 {
+define ptr @func000000000000000f(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %2, i64 -72
-  %4 = getelementptr nusw i8, ptr %1, i64 48
+  %3 = getelementptr i8, ptr %2, i64 -96
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 80
   %5 = select i1 %0, ptr %4, ptr %3
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
-; 3 occurrences:
-; llvm/optimized/COFFObjectFile.cpp.ll
+; 2 occurrences:
 ; llvm/optimized/MemorySSA.cpp.ll
 ; llvm/optimized/MemorySSAUpdater.cpp.ll
 ; Function Attrs: nounwind
@@ -316,18 +304,14 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
-; llvm/optimized/APFloat.cpp.ll
-; llvm/optimized/CGStmtOpenMP.cpp.ll
-; llvm/optimized/CodeGenModule.cpp.ll
+; 2 occurrences:
 ; llvm/optimized/ConstantRangeList.cpp.ll
-; llvm/optimized/Instruction.cpp.ll
-; llvm/optimized/OMPIRBuilder.cpp.ll
+; opencv/optimized/attention_layer.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000002f(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 56
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 24
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
   %5 = select i1 %0, ptr %4, ptr %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
@@ -336,12 +320,24 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/tx.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i1 %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000003(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -1368
   %4 = getelementptr i8, ptr %1, i64 272
   %5 = select i1 %0, ptr %4, ptr %3
-  %6 = getelementptr nusw i8, ptr %5, i64 12
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 12
+  ret ptr %6
+}
+
+; 1 occurrences:
+; grpc/optimized/stream_lists.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 72
+  %4 = getelementptr i8, ptr %1, i64 488
+  %5 = select i1 %0, ptr %4, ptr %3
+  %6 = getelementptr i8, ptr %5, i64 64
   ret ptr %6
 }
 

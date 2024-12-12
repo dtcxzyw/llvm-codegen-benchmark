@@ -1,4 +1,6 @@
 
+%"class.llvm::Use.3191562" = type { ptr, ptr, ptr, ptr }
+
 ; 3 occurrences:
 ; linux/optimized/gup.ll
 ; linux/optimized/vmalloc.ll
@@ -13,7 +15,7 @@ entry:
   ret ptr %6
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; hermes/optimized/HiddenClass.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
@@ -25,7 +27,6 @@ entry:
 ; llvm/optimized/CorrelatedValuePropagation.cpp.ll
 ; llvm/optimized/DFAJumpThreading.cpp.ll
 ; llvm/optimized/Dominators.cpp.ll
-; llvm/optimized/FunctionSpecialization.cpp.ll
 ; llvm/optimized/IndirectCallPromotion.cpp.ll
 ; llvm/optimized/Instruction.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
@@ -52,18 +53,16 @@ entry:
 ; llvm/optimized/WinEHPrepare.cpp.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i32, ptr %0, i64 %1
-  %6 = getelementptr nusw i32, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 134 occurrences:
-; abc/optimized/acbFunc.c.ll
-; abc/optimized/extraUtilMisc.c.ll
+; 19 occurrences:
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/giaExist.c.ll
@@ -71,18 +70,39 @@ entry:
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ioReadPlaMo.c.ll
-; abc/optimized/sbdWin.c.ll
-; abc/optimized/sfmDec.c.ll
 ; abc/optimized/simSupp.c.ll
 ; abc/optimized/sswSim.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; faiss/optimized/IndexPQ.cpp.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; llama.cpp/optimized/ggml.c.ll
+; opencv/optimized/boostdesc.cpp.ll
+; openexr/optimized/internal_piz.c.ll
+; openjdk/optimized/verifier.ll
+; velox/optimized/CompactRow.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 8
+  %4 = and i64 %3, 65535
+  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 118 occurrences:
+; abc/optimized/acbFunc.c.ll
+; abc/optimized/extraUtilMisc.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/sbdWin.c.ll
+; abc/optimized/sfmDec.c.ll
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/mpv.c.ll
-; imgui/optimized/imgui_tables.cpp.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
@@ -92,7 +112,6 @@ entry:
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
-; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -191,18 +210,26 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; opencv/optimized/boostdesc.cpp.ll
-; openexr/optimized/internal_piz.c.ll
-; openjdk/optimized/verifier.ll
 ; php/optimized/zend_inference.ll
-; velox/optimized/CompactRow.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 8
-  %4 = and i64 %3, 65535
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %3 = lshr i64 %2, 6
+  %4 = and i64 %3, 67108863
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; llvm/optimized/FunctionSpecialization.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr exact i64 %2, 5
+  %4 = and i64 %3, 4294967295
+  %5 = getelementptr nusw %"class.llvm::Use.3191562", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3191562", ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -1,5 +1,6 @@
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/get_distance_measure.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/sky2.ll

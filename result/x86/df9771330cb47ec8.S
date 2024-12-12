@@ -4,3 +4,8 @@ func000000000000000c:                   # @func000000000000000c
 	orl	%esi, %edi
 	setne	%al
 	retq
+func0000000000000001:                   # @func0000000000000001
+	orl	%esi, %edi
+	testb	$1, %dil
+	sete	%al
+	retq

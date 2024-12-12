@@ -11,16 +11,3 @@ func0000000000000001:                   # @func0000000000000001
 	vmv1r.v	v0, v10
 	vmerge.vxm	v8, v8, a0, v0
 	ret
-func0000000000000004:                   # @func0000000000000004
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmv1r.v	v10, v0
-	vmsltu.vv	v0, v8, v9
-	li	a0, 272
-	lui	a1, 1
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.x	v8, a0
-	addiw	a1, a1, -1744
-	vmerge.vxm	v8, v8, a1, v0
-	vmv1r.v	v0, v10
-	vmerge.vxm	v8, v8, a0, v0
-	ret

@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -25,8 +25,9 @@
 ; wasmtime-rs/optimized/3wy7qx4e8fg0rwt0.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000671(i64 %0, i16 %1, i64 %2) #0 {
+define i1 @func0000000000000ce1(i64 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = zext i16 %1 to i64
   %4 = sub i64 %2, %3

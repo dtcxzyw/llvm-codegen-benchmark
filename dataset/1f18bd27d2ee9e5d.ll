@@ -1,17 +1,5 @@
 
 ; 2 occurrences:
-; clamav/optimized/mpool.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = udiv i64 %2, %0
-  %4 = add nuw nsw i64 %3, %1
-  %5 = mul i64 %4, %0
-  ret i64 %5
-}
-
-; 2 occurrences:
 ; clamav/optimized/fmap.c.ll
 ; php/optimized/math.ll
 ; Function Attrs: nounwind
@@ -23,7 +11,9 @@ entry:
   ret i64 %5
 }
 
-; 102 occurrences:
+; 104 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/mpool.c.ll
 ; hdf5/optimized/H5EA.c.ll

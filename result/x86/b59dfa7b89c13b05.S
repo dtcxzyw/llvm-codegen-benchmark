@@ -12,3 +12,10 @@ func0000000000000009:                   # @func0000000000000009
 	cmovael	%edi, %eax
 	orl	$4, %eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	movl	%edx, %eax
+	andl	$1, %eax
+	cmpl	$4194304, %esi                  # imm = 0x400000
+	cmovael	%edi, %eax
+	orl	$4, %eax
+	retq

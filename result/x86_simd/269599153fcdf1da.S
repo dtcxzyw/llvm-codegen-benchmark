@@ -6,6 +6,6 @@ func0000000000000018:                   # @func0000000000000018
 	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm2
-	vpand	%ymm0, %ymm2, %ymm0
+	vpand	%ymm2, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq

@@ -3,7 +3,7 @@
 ; ruby/optimized/prism.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i32 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null
@@ -17,7 +17,7 @@ entry:
 ; linux/optimized/netlabel_kapi.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, ptr %1) #0 {
+define i1 @func000000000000002c(i32 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp ne ptr %2, null
@@ -31,7 +31,7 @@ entry:
 ; php/optimized/pdo_sql_parser.ll
 ; wireshark/optimized/print.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000181(i32 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp ne ptr %2, null

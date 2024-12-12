@@ -39,23 +39,21 @@ func0000000000000014:                   # @func0000000000000014
 	addq	%rdi, %rsi
 	imulq	$100, %rsi, %rax
 	retq
+func000000000000003d:                   # @func000000000000003d
+	addq	%rdx, %rsi
+	addq	%rdi, %rsi
+	imulq	$1000000, %rsi, %rax            # imm = 0xF4240
+	retq
 func000000000000003f:                   # @func000000000000003f
 	addq	%rdx, %rsi
 	addq	%rdi, %rsi
-	shlq	$2, %rsi
-	leaq	(%rsi,%rsi,4), %rax
+	imulq	$1000000, %rsi, %rax            # imm = 0xF4240
 	retq
 func000000000000002f:                   # @func000000000000002f
 	addq	%rdx, %rsi
 	addq	%rdi, %rsi
 	shlq	$2, %rsi
 	leaq	(%rsi,%rsi,4), %rax
-	retq
-func000000000000003d:                   # @func000000000000003d
-	leal	(%rsi,%rdx), %eax
-	addl	%edi, %eax
-	shlq	$32, %rax
-	negq	%rax
 	retq
 func0000000000000017:                   # @func0000000000000017
 	addq	%rdx, %rsi

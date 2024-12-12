@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpw	$3, %di
 	sete	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	decl	%edi
 	cmpw	$3, %di
 	setb	%al
@@ -18,25 +18,20 @@ func0000000000000004:                   # @func0000000000000004
 	cmpw	$9, %di
 	setb	%al
 	retq
-func00000000000000d8:                   # @func00000000000000d8
-	addl	$-6, %edi
-	cmpw	$-5, %di
-	setb	%al
-	retq
 func000000000000000c:                   # @func000000000000000c
 	cmpw	$-1, %di
 	setne	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addl	$-137, %edi
 	cmpw	$53, %di
 	setb	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	cmpw	$11, %di
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	cmpw	$9, %di
 	sete	%al
 	retq

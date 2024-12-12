@@ -1,34 +1,43 @@
-func0000000000000081:                   // @func0000000000000081
+func0000000000000101:                   // @func0000000000000101
 // %bb.0:                               // %entry
-	movi	v3.16b, #8
-	movi	v4.16b, #3
-	cmhi	v2.16b, v2.16b, v3.16b
-	cmeq	v1.16b, v1.16b, v4.16b
-	bit	v0.16b, v2.16b, v1.16b
+	and	w8, w2, #0xff
+	and	w9, w1, #0xff
+	cmp	w8, #8
+	cset	w8, hi
+	cmp	w9, #3
+	csel	w8, w8, w0, eq
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func00000000000000c1:                   // @func00000000000000c1
+func0000000000000181:                   // @func0000000000000181
 // %bb.0:                               // %entry
-	movi	v3.16b, #14
-	cmtst	v2.16b, v2.16b, v2.16b
-	cmeq	v1.16b, v1.16b, v3.16b
-	bit	v0.16b, v2.16b, v1.16b
+	and	w8, w1, #0xff
+	tst	w2, #0xff
+	cset	w9, ne
+	cmp	w8, #14
+	csel	w8, w9, w0, eq
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v3.16b, #2
-	movi	v4.16b, #1
-	cmeq	v2.16b, v2.16b, v3.16b
-	cmeq	v1.16b, v1.16b, v4.16b
-	bit	v0.16b, v2.16b, v1.16b
+	and	w8, w2, #0xff
+	and	w9, w1, #0xff
+	cmp	w8, #2
+	cset	w8, eq
+	cmp	w9, #1
+	csel	w8, w8, w0, eq
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000294:                   // @func0000000000000294
 // %bb.0:                               // %entry
-	movi	v3.16b, #3
-	cmhi	v2.16b, v3.16b, v2.16b
-	cmhi	v1.16b, v3.16b, v1.16b
-	bit	v0.16b, v2.16b, v1.16b
+	and	w8, w2, #0xff
+	and	w9, w1, #0xff
+	cmp	w8, #3
+	cset	w8, lo
+	cmp	w9, #3
+	csel	w8, w8, w0, lo
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

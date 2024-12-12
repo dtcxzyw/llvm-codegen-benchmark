@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 78 occurrences:
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/scanners.c.ll
 ; cmake/optimized/ntlm.c.ll
@@ -57,6 +57,7 @@
 ; openusd/optimized/usdzResolver.cpp.ll
 ; php/optimized/formatted_print.ll
 ; proj/optimized/4D_api.cpp.ll
+; protobuf/optimized/arena.cc.ll
 ; proxygen/optimized/ParseURL.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; re2/optimized/compile.cc.ll
@@ -72,6 +73,10 @@
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; wireshark/optimized/atap_data_model.cpp.ll
 ; wireshark/optimized/uat_model.cpp.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, ptr %2) #0 {
@@ -82,7 +87,7 @@ entry:
   ret i64 %5
 }
 
-; 26 occurrences:
+; 39 occurrences:
 ; clap-rs/optimized/3n9sdy3q5n8p0ad5.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; miniaudio/optimized/unity.c.ll
@@ -108,24 +113,41 @@ entry:
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/481g0nj22rl2z9g.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/83mjpyo5lbj96jldbmy8hsyj7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/dwdz33j6zk3evwqybph0x5e70.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; zed-rs/optimized/6fmtxmq32k2tm6vxa1i5afd46.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -138,7 +160,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i64 -62135683200, i64 %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

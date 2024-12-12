@@ -33,7 +33,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovd2m	%xmm1, %k0
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm2, %xmm1
 	vpcmpltud	.LCPI2_1(%rip){1to4}, %xmm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	knotw	%k0, %k1
 	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
 	retq

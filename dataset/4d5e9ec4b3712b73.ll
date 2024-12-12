@@ -3,10 +3,10 @@
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000016(i8 %0, i32 %1, i8 %2) #0 {
+define i8 @func0000000000000026(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp slt i32 %4, 0
   %6 = select i1 %5, i8 0, i8 %0
   ret i8 %6
@@ -19,7 +19,7 @@ entry:
 define i8 @func0000000000000006(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp slt i32 %4, 0
   %6 = select i1 %5, i8 0, i8 %0
   ret i8 %6
@@ -80,24 +80,12 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i32 %1, i8 %2) #0 {
+define i8 @func0000000000000021(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp eq i32 %4, 1
   %6 = select i1 %5, i8 0, i8 %0
-  ret i8 %6
-}
-
-; 1 occurrences:
-; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000041(i8 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext nneg i8 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp eq i32 %3, %4
-  %6 = select i1 %5, i8 1, i8 %0
   ret i8 %6
 }
 

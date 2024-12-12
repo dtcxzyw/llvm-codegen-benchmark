@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	orb	%dil, %dl
 	orb	%dl, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	xorb	$1, %dl
 	cmpl	$1, %esi
 	setne	%al

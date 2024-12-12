@@ -9,7 +9,9 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; quantlib/optimized/smilesectionutils.ll
 ; Function Attrs: nounwind

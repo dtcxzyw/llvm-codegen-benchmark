@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/State.cpp.ll
 ; qemu/optimized/blockdev.c.ll
+; slurm/optimized/priority_basic.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:

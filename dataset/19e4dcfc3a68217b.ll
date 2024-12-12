@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; folly/optimized/Compression.cpp.ll
 ; git/optimized/commit-graph.ll
@@ -16,6 +16,7 @@
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll

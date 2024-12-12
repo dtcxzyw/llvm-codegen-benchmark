@@ -57,7 +57,7 @@ entry:
   %3 = sub nsw i32 0, %2
   %4 = add i32 %1, %2
   %5 = and i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

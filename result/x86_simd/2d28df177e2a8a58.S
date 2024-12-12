@@ -11,7 +11,7 @@
 	.short	629                             # 0x275
 	.short	629                             # 0x275
 	.short	629                             # 0x275
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm1
@@ -67,7 +67,7 @@ func000000000000001c:                   # @func000000000000001c
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpneqw	.LCPI1_0(%rip), %xmm0, %k1
@@ -80,7 +80,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	.long	3840                            # 0xf00
 .LCPI2_1:
 	.long	2048                            # 0x800
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm1

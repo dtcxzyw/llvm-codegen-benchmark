@@ -1,6 +1,7 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
+; abc/optimized/ifDec16.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll

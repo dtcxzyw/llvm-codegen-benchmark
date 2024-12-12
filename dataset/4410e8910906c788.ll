@@ -12,7 +12,7 @@ entry:
   ret i32 %7
 }
 
-; 26 occurrences:
+; 30 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -39,27 +39,33 @@ entry:
 ; wireshark/optimized/packet-pdcp-lte.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-usb.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1023
   %4 = zext nneg i16 %3 to i32
   %5 = shl nuw nsw i32 %4, 13
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 15
   %4 = zext nneg i16 %3 to i32
   %5 = shl nuw i32 %4, 28
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }

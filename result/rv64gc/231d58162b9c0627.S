@@ -1,4 +1,4 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	sext.w	a0, a0
 	sext.w	a1, a1
 	fmv.d.x	fa5, zero

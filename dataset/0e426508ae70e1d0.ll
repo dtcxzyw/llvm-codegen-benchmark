@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -99,7 +100,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006c4(i128 %0) #0 {
+define i1 @func0000000000000d84(i128 %0) #0 {
 entry:
   %1 = mul nuw nsw i128 %0, 2361183241434822607
   %2 = lshr i128 %1, 71

@@ -1,5 +1,5 @@
 
-; 494 occurrences:
+; 497 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
@@ -208,6 +208,7 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -494,11 +495,13 @@
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 

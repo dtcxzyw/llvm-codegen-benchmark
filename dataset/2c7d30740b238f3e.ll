@@ -1,6 +1,7 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; linux/optimized/sch_api.ll
+; lvgl/optimized/lv_draw_label.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll

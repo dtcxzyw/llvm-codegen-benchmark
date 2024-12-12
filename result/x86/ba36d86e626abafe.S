@@ -1,18 +1,18 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000003a:                   # @func000000000000003a
 	leaq	(%rdi,%rdi,4), %rax
 	shlq	$5, %rax
 	addq	%rdx, %rax
 	movslq	%esi, %rcx
 	leaq	4(%rax,%rcx,8), %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000038:                   # @func0000000000000038
 	leaq	(%rdi,%rdi,4), %rax
 	shlq	$5, %rax
 	addq	%rdx, %rax
 	movslq	%esi, %rcx
 	leaq	4(%rax,%rcx,8), %rax
 	retq
-func0000000000000020:                   # @func0000000000000020
+func0000000000000030:                   # @func0000000000000030
 	leaq	(%rdx,%rdi,8), %rax
 	movslq	%esi, %rcx
 	movq	%rcx, %rdx

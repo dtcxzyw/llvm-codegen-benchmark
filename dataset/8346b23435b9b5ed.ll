@@ -35,8 +35,7 @@ entry:
   ret i32 %5
 }
 
-; 23 occurrences:
-; abc/optimized/fxuPair.c.ll
+; 22 occurrences:
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; darktable/optimized/image.c.ll
 ; hwloc/optimized/lstopo-lstopo-ascii.ll

@@ -31,7 +31,7 @@ entry:
   ret i32 %5
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; assimp/optimized/zip.c.ll
 ; bullet3/optimized/b3File.ll
 ; clamav/optimized/yara_parser.c.ll
@@ -71,7 +71,6 @@ entry:
 ; openjdk/optimized/pngread.ll
 ; openusd/optimized/dirtyBitsTranslator.cpp.ll
 ; quantlib/optimized/markovfunctional.ll
-; re2/optimized/onepass.cc.ll
 ; re2/optimized/re2.cc.ll
 ; ruby/optimized/date_parse.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
@@ -84,17 +83,15 @@ entry:
   ret i32 %5
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; gromacs/optimized/sasa.cpp.ll
 ; hermes/optimized/Host.cpp.ll
 ; icu/optimized/ucnvmbcs.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/cacheinfo.ll
 ; linux/optimized/e1000_main.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/g4x_hdmi.ll
 ; linux/optimized/i9xx_plane.ll
@@ -115,6 +112,7 @@ entry:
 ; opencv/optimized/dxt.cpp.ll
 ; openjdk/optimized/methodHandles.ll
 ; postgres/optimized/spell.ll
+; qemu/optimized/hw_9pfs_9p.c.ll
 ; redis/optimized/module.ll
 ; rocksdb/optimized/fs_posix.cc.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll

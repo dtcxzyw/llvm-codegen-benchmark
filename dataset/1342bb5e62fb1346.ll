@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; ceres/optimized/program.cc.ll
@@ -32,7 +32,6 @@
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; yosys/optimized/memory_libmap.ll
 ; yosys/optimized/mutate.ll
-; yosys/optimized/shregmap.ll
 ; yosys/optimized/viz.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind

@@ -6,3 +6,7 @@ func00000000000000b0:                   # @func00000000000000b0
 	addq	%rdx, %rdi
 	shrxq	%rsi, %rdi, %rax
 	retq
+func0000000000000080:                   # @func0000000000000080
+	addq	%rdx, %rdi
+	shrxq	%rsi, %rdi, %rax
+	retq

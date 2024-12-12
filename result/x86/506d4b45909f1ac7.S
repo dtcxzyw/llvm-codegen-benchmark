@@ -8,11 +8,12 @@ func0000000000000008:                   # @func0000000000000008
 	movabsq	$34359738368, %rax              # imm = 0x800000000
 	addq	%rdi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	andq	$-8, %rdi
-	leaq	-4(,%rdi,4), %rax
-	retq
 func000000000000000d:                   # @func000000000000000d
 	movl	%edi, %eax
 	leaq	-2(%rax,%rax), %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	andl	$28, %edi
+	shlq	$59, %rdi
+	leaq	-1(%rdi), %rax
 	retq

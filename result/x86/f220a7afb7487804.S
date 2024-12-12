@@ -5,9 +5,8 @@ func0000000000000040:                   # @func0000000000000040
 	shll	$6, %edi
 	leal	-65(%rdi), %eax
 	retq
-func0000000000000077:                   # @func0000000000000077
-	movq	%rdi, %rax
-	shll	$5, %eax
+func0000000000000000:                   # @func0000000000000000
+	leal	(,%rdi,8), %eax
 	retq
 func0000000000000055:                   # @func0000000000000055
 	leal	6(%rdi,%rdi), %eax

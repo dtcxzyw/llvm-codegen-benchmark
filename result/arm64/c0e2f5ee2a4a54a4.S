@@ -5,21 +5,22 @@ func0000000000000000:                   // @func0000000000000000
 	sub	x0, x8, x9, lsl #3
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
-// %bb.0:                               // %entry
-	mov	w8, #24                         // =0x18
-	add	x9, x0, x1, lsl #3
-	umaddl	x0, w2, w8, x9
-	ret
-                                        // -- End function
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
+	and	x8, x2, #0xf
+	mov	w9, #24                         // =0x18
+	add	x10, x0, x1
+	umaddl	x0, w8, w9, x10
+	ret
+                                        // -- End function
+func000000000000003c:                   // @func000000000000003c
+// %bb.0:                               // %entry
 	mov	w8, #24                         // =0x18
 	add	x9, x0, x1, lsl #3
 	umaddl	x0, w2, w8, x9
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
 	and	x8, x2, #0x1ffffffffffffffe
 	add	x9, x0, x1

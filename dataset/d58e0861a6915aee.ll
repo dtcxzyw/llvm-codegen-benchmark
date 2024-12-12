@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 13 occurrences:
 ; coreutils-rs/optimized/5dvo81hn4cx7e334.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -9,6 +9,10 @@
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/1g4llau8b68ay2vvwa3gtrt6g.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
 ; Function Attrs: nounwind
 define { ptr, i64 } @func0000000000000002(ptr %0, i8 %1) #0 {
 entry:

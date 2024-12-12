@@ -16,7 +16,8 @@ entry:
   ret i64 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; casadi/optimized/integration_tools.cpp.ll
 ; clamav/optimized/upack.c.ll
 ; flac/optimized/metadata.cpp.ll
 ; git/optimized/fast-import.ll
@@ -41,13 +42,13 @@ entry:
 }
 
 ; 30 occurrences:
-; casadi/optimized/integration_tools.cpp.ll
 ; casadi/optimized/interpolant.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; faiss/optimized/IndexHNSW.cpp.ll
 ; gromacs/optimized/splitter.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; llvm/optimized/JumpThreading.cpp.ll
 ; php/optimized/file.ll
 ; php/optimized/iptc.ll
 ; php/optimized/json_scanner.ll

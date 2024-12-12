@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	notb	%dil
 	xorl	%eax, %eax
 	testb	$3, %dil

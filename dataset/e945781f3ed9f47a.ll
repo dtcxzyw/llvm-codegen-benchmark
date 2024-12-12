@@ -55,16 +55,22 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 1000000000
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
 
-; 86 occurrences:
+; 92 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; cpython/optimized/longobject.ll
 ; git/optimized/date.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
@@ -226,7 +232,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 24
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -251,7 +257,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 1000
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
@@ -277,7 +283,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, -683901
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
@@ -289,7 +295,7 @@ entry:
 define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 5793
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
@@ -302,7 +308,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 17333
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }

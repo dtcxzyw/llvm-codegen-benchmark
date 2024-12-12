@@ -5,7 +5,7 @@ func000000000000000f:                   # @func000000000000000f
 	vsub.vv	v10, v14, v10
 	zext.w	a0, a0
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -37,5 +37,5 @@ func0000000000000007:                   # @func0000000000000007
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

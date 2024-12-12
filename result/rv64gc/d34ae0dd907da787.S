@@ -1,13 +1,14 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
+	sext.w	a0, a0
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 29
 	add	a1, a1, a2
 	sraiw	a1, a1, 3
-	negw	a0, a0
+	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	srliw	a2, a1, 31
 	add	a1, a1, a2
 	sraiw	a1, a1, 1
@@ -24,7 +25,7 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sext.w	a1, a1
 	lui	a2, 233017
 	addiw	a2, a2, -455
@@ -42,7 +43,7 @@ func0000000000000006:                   # @func0000000000000006
 	subw	a0, a0, a1
 	slti	a0, a0, 3
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	sext.w	a2, a1
 	lui	a3, 599186
 	addiw	a3, a3, 1171
@@ -56,7 +57,7 @@ func0000000000000018:                   # @func0000000000000018
 	sltiu	a0, a0, 52
 	xori	a0, a0, 1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 24
 	add	a1, a1, a2
@@ -77,14 +78,23 @@ func0000000000000008:                   # @func0000000000000008
 	xori	a0, a0, 1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	sext.w	a1, a1
-	lui	a2, 349525
-	addiw	a2, a2, 1366
-	mul	a1, a1, a2
-	srli	a2, a1, 63
-	srli	a1, a1, 32
-	addw	a1, a1, a2
-	negw	a0, a0
+	sext.w	a0, a0
+	sext.w	a2, a1
+	lui	a3, 349525
+	addiw	a3, a3, 1365
+	mul	a2, a2, a3
+	srli	a2, a2, 32
+	subw	a2, a2, a1
+	srliw	a1, a2, 31
+	sraiw	a2, a2, 1
+	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
+	ret
+func0000000000000024:                   # @func0000000000000024
+	srliw	a2, a1, 31
+	add	a1, a1, a2
+	sraiw	a1, a1, 1
+	addw	a0, a0, a1
+	sltiu	a0, a0, 3
 	ret

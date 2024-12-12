@@ -23,7 +23,7 @@ func000000000000002e:                   # @func000000000000002e
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v14, v10
 	vor.vv	v10, v12, v14
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func000000000000000b:                   # @func000000000000000b
 	li	a0, 32
@@ -67,7 +67,7 @@ func000000000000003b:                   # @func000000000000003b
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v14, v10
 	vor.vv	v10, v12, v14
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func000000000000000a:                   # @func000000000000000a
 	li	a0, 32

@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -10,7 +10,6 @@
 ; libquic/optimized/curve25519.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; libwebp/optimized/yuv.c.ll
-; opencv/optimized/cap_v4l.cpp.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; stb/optimized/stb_image.c.ll
@@ -46,7 +45,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 5
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 16
   ret i32 %4
 }
@@ -59,12 +58,12 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 52591
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 13
   ret i32 %4
 }
 
-; 37 occurrences:
+; 39 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
@@ -76,7 +75,9 @@ entry:
 ; libwebp/optimized/yuv.c.ll
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
+; mixbox/optimized/mixbox.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
@@ -106,7 +107,7 @@ entry:
 define i32 @func000000000000001e(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 19672
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 8
   ret i32 %4
 }
@@ -119,7 +120,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 32639
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = lshr i32 %3, 16
   ret i32 %4
 }
@@ -148,30 +149,8 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 5
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 3
-  ret i32 %4
-}
-
-; 1 occurrences:
-; mixbox/optimized/mixbox.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 85
-  %3 = add nuw nsw i32 %2, %0
-  %4 = lshr i32 %3, 8
-  ret i32 %4
-}
-
-; 1 occurrences:
-; libquic/optimized/reduce.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw i32 %1, 12289
-  %3 = add i32 %2, %0
-  %4 = lshr i32 %3, 18
   ret i32 %4
 }
 
@@ -181,7 +160,7 @@ entry:
 define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 75
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 16
   ret i32 %4
 }

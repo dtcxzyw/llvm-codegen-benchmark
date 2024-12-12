@@ -12,9 +12,8 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/grouper.cc.ll
-; git/optimized/worktree.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
 ; openmpi/optimized/tm_tree.ll
 ; slurm/optimized/hostlist.ll

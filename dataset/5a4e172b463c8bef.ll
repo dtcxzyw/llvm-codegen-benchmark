@@ -30,7 +30,7 @@ entry:
   ret float %3
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; coreutils-rs/optimized/4gs2z359bfnc1tys.ll
 ; darktable/optimized/introspection_hazeremoval.c.ll
 ; faiss/optimized/Clustering.cpp.ll
@@ -66,6 +66,7 @@ entry:
 ; wireshark/optimized/main.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -74,7 +75,7 @@ entry:
   ret float %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
 ; coreutils-rs/optimized/4gs2z359bfnc1tys.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -82,21 +83,12 @@ entry:
 ; taskflow/optimized/dependent_async_algorithm.cpp.ll
 ; taskflow/optimized/parallel_for.cpp.ll
 ; taskflow/optimized/reduce.cpp.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %0, %1
   %3 = uitofp i64 %2 to float
-  ret float %3
-}
-
-; 1 occurrences:
-; darktable/optimized/introspection_liquify.c.ll
-; Function Attrs: nounwind
-define float @func0000000000000007(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub nuw nsw i64 %0, %1
-  %3 = uitofp nneg i64 %2 to float
   ret float %3
 }
 

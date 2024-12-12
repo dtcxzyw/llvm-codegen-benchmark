@@ -15,7 +15,7 @@
 ; slurm/optimized/gres.ll
 ; slurm/optimized/slurm_protocol_defs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, ptr %1) #0 {
+define i32 @func0000000000000043(i32 %0, ptr %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 8
   %3 = icmp eq ptr %1, null
@@ -24,11 +24,10 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
 ; linux/optimized/af_unix.ll
 ; linux/optimized/gup.ll
-; linux/optimized/intel_engine_user.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/LTOModule.cpp.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
@@ -54,7 +53,7 @@ entry:
 ; slurm/optimized/gres.ll
 ; slurm/optimized/slurm_protocol_defs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, ptr %1) #0 {
+define i32 @func0000000000000042(i32 %0, ptr %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 524288
   %3 = icmp eq ptr %1, null

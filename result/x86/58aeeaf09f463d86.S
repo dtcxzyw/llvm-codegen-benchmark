@@ -22,16 +22,16 @@ func0000000000000000:                   # @func0000000000000000
 	andq	$-65536, %rax                   # imm = 0xFFFF0000
 	addq	$-16, %rax
 	retq
+func0000000000000005:                   # @func0000000000000005
+	andq	$-8, %rdi
+	leaq	-15(%rdi), %rax
+	andq	$-8, %rax
+	addq	$-8, %rax
+	retq
 func000000000000000f:                   # @func000000000000000f
 	movabsq	$34359738360, %rax              # imm = 0x7FFFFFFF8
 	andq	%rdi, %rax
 	addq	$15, %rax
-	andq	$-8, %rax
-	addq	$8, %rax
-	retq
-func0000000000000005:                   # @func0000000000000005
-	andl	$2047, %edi                     # imm = 0x7FF
-	leaq	-1(%rdi), %rax
 	andq	$-8, %rax
 	addq	$8, %rax
 	retq

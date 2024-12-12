@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ppp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = sub nsw i32 %2, %0
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dsytrf_aa.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sub nsw i32 %2, %0

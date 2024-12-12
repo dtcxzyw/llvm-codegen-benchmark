@@ -43,11 +43,6 @@ func0000000000000010:                   # @func0000000000000010
 	subq	%rsi, %rdi
 	leaq	(%rdi,%rdx), %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	notq	%rdx
-	subq	%rsi, %rdi
-	leaq	(%rdi,%rdx), %rax
-	retq
 func0000000000000022:                   # @func0000000000000022
 	notq	%rdx
 	subq	%rsi, %rdi
@@ -62,9 +57,4 @@ func000000000000003a:                   # @func000000000000003a
 	notq	%rdx
 	subq	%rsi, %rdi
 	leaq	(%rdi,%rdx), %rax
-	retq
-func0000000000000031:                   # @func0000000000000031
-	addq	%rdx, %rsi
-	subq	%rsi, %rdi
-	leaq	-8(%rdi), %rax
 	retq

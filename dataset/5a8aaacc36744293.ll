@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 34 occurrences:
 ; actix-rs/optimized/3sxbtmgc7txd1oqx.ll
 ; actix-rs/optimized/4fx1675rviyztxx0.ll
 ; actix-rs/optimized/d7z2ueos8qkfuul.ll
@@ -28,8 +28,14 @@
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/27pp1heeu8t47xv3.ll
+; zed-rs/optimized/1774ern7vmjezjfzajsdneavj.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
+; zed-rs/optimized/4u0dswi9tif78fn5u6xqz5z9a.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000230(i8 %0) #0 {
+define i1 @func0000000000000850(i8 %0) #0 {
 entry:
   %1 = add nsw i8 %0, -3
   %2 = icmp ugt i8 %1, 2
@@ -39,9 +45,21 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/2bmd7m579qu61sjfzthhk5yj1.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000050(i8 %0) #0 {
+entry:
+  %1 = add i8 %0, -4
+  %2 = icmp ugt i8 %1, 3
+  %3 = icmp eq i8 %1, 1
+  %4 = or i1 %2, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; cpython/optimized/_codecs_jp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i8 %0) #0 {
+define i1 @func0000000000000042(i8 %0) #0 {
 entry:
   %1 = add i8 %0, 33
   %2 = icmp eq i8 %1, 126

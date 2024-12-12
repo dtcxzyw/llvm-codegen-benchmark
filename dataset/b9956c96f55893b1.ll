@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 41 occurrences:
 ; abc/optimized/exorList.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/dlp.c.ll
@@ -10,6 +10,7 @@
 ; libpng/optimized/pngwutil.c.ll
 ; linux/optimized/ehci-hcd.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll
 ; nori/optimized/nanovg.c.ll

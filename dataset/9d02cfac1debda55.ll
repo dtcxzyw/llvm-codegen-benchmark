@@ -14,7 +14,7 @@
 ; minetest/optimized/guiTable.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = icmp eq i32 %2, -2
@@ -22,12 +22,11 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; clamav/optimized/mszipd.c.ll
 ; darktable/optimized/HasselbladDecompressor.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
-; icu/optimized/gregoimp.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/iov_iter.ll
@@ -60,11 +59,25 @@ entry:
 ; opencv/optimized/subdivision2d.cpp.ll
 ; openspiel/optimized/backgammon.cc.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = icmp sgt i32 %2, 23
   %4 = select i1 %3, i32 101, i32 %2
+  ret i32 %4
+}
+
+; 4 occurrences:
+; delta-rs/optimized/11f8x98axanecwnw.ll
+; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %0, %1
+  %3 = icmp eq i32 %2, 1000000000
+  %4 = select i1 %3, i32 0, i32 %2
   ret i32 %4
 }
 
@@ -80,25 +93,13 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; delta-rs/optimized/11f8x98axanecwnw.ll
-; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %0, %1
-  %3 = icmp eq i32 %2, 1000000000
-  %4 = select i1 %3, i32 0, i32 %2
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; icu/optimized/vtzone.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
-  %3 = icmp ugt i32 %2, 7
+  %3 = icmp samesign ugt i32 %2, 7
   %4 = select i1 %3, i32 1, i32 %2
   ret i32 %4
 }
@@ -106,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/decode.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = icmp slt i32 %2, 1

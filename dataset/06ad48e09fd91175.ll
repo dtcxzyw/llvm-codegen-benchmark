@@ -3,7 +3,7 @@
 ; openjdk/optimized/ThreadReferenceImpl.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000361(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000cc1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3PreProc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000004a1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -1
@@ -30,7 +30,7 @@ entry:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000426(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 1
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000546(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 1
@@ -59,7 +59,7 @@ entry:
 ; openmpi/optimized/check_monitoring.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000316(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000c26(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/devio.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000036c(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000ccc(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -85,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/tcp_output.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000004cc(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 132224
@@ -98,7 +98,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/geometry.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ca(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000058a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -1

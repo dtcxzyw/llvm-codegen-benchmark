@@ -19,7 +19,7 @@ define float @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp oeq float %2, 0.000000e+00
   %4 = select i1 %3, float 0.000000e+00, float %1
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   %6 = fadd float %5, 0x3FAC28F5C0000000
   ret float %6
 }

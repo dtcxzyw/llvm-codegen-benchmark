@@ -1,4 +1,4 @@
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	andi	a0, a0, 1
 	addi	a2, a2, 28
 	andi	a2, a2, 31
@@ -7,7 +7,7 @@ func000000000000007a:                   # @func000000000000007a
 	addw	a0, a0, a2
 	sgtz	a0, a0
 	ret
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	andi	a0, a0, 1
 	addi	a2, a2, 28
 	andi	a2, a2, 31

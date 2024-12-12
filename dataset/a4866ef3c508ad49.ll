@@ -66,11 +66,10 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; icu/optimized/collationfastlatin.ll
 ; icu/optimized/ucnv_u8.ll
-; linux/optimized/evgpeinit.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; php/optimized/pcre2_study.ll

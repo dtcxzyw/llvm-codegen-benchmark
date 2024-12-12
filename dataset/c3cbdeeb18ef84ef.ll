@@ -34,7 +34,7 @@ define i32 @func0000000000000029(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, 0
   %2 = sext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -80,7 +80,7 @@ define i32 @func0000000000000030(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 0
   %2 = sext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -91,7 +91,7 @@ define i32 @func0000000000000020(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 1
   %2 = sext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -102,7 +102,7 @@ define i32 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, 0
   %2 = sext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -123,7 +123,7 @@ define i32 @func0000000000000031(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 0
   %2 = sext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -134,7 +134,7 @@ define i32 @func0000000000000019(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 130
   %2 = sext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 

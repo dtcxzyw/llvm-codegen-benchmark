@@ -9,7 +9,7 @@ entry:
   %3 = sitofp i32 %2 to float
   %4 = sitofp i32 %1 to float
   %5 = fdiv float %4, %3
-  %6 = fcmp ogt float %5, %0
+  %6 = fcmp olt float %0, %5
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = sitofp i32 %2 to float
   %4 = sitofp i32 %1 to float
   %5 = fdiv float %4, %3
-  %6 = fcmp ugt float %5, %0
+  %6 = fcmp ult float %0, %5
   ret i1 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = sitofp i32 %2 to float
   %4 = sitofp i32 %1 to float
   %5 = fdiv float %4, %3
-  %6 = fcmp olt float %5, %0
+  %6 = fcmp ogt float %0, %5
   ret i1 %6
 }
 
@@ -47,7 +47,7 @@ entry:
   %3 = sitofp i32 %2 to float
   %4 = sitofp i32 %1 to float
   %5 = fdiv float %4, %3
-  %6 = fcmp ult float %5, %0
+  %6 = fcmp ugt float %0, %5
   ret i1 %6
 }
 

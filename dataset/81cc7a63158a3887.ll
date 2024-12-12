@@ -174,7 +174,7 @@ entry:
   ret i64 %4
 }
 
-; 65 occurrences:
+; 34 occurrences:
 ; actix-rs/optimized/4jlfyqkak9x9x2yv.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -187,16 +187,7 @@ entry:
 ; cmake/optimized/zstd_decompress.c.ll
 ; cpython/optimized/_pickle.ll
 ; cpython/optimized/unicodeobject.ll
-; csmith/optimized/FactMgr.cpp.ll
-; csmith/optimized/VariableSelector.cpp.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
-; gromacs/optimized/exclusionblocks.cpp.ll
-; gromacs/optimized/index.cpp.ll
-; gromacs/optimized/localtopology.cpp.ll
-; gromacs/optimized/mshift.cpp.ll
-; gromacs/optimized/splitter.cpp.ll
-; gromacs/optimized/topology.cpp.ll
-; gromacs/optimized/toppush.cpp.ll
 ; hdf5/optimized/H5PB.c.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; libsodium/optimized/libsodium_la-argon2-encoding.ll
@@ -207,27 +198,7 @@ entry:
 ; llvm/optimized/LoopUtils.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/WinCFGuard.cpp.ll
-; llvm/optimized/WinException.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
-; mold/optimized/passes.cc.ALPHA.cc.ll
-; mold/optimized/passes.cc.ARM32.cc.ll
-; mold/optimized/passes.cc.ARM64.cc.ll
-; mold/optimized/passes.cc.I386.cc.ll
-; mold/optimized/passes.cc.LOONGARCH32.cc.ll
-; mold/optimized/passes.cc.LOONGARCH64.cc.ll
-; mold/optimized/passes.cc.M68K.cc.ll
-; mold/optimized/passes.cc.PPC32.cc.ll
-; mold/optimized/passes.cc.PPC64V1.cc.ll
-; mold/optimized/passes.cc.PPC64V2.cc.ll
-; mold/optimized/passes.cc.RV32BE.cc.ll
-; mold/optimized/passes.cc.RV32LE.cc.ll
-; mold/optimized/passes.cc.RV64BE.cc.ll
-; mold/optimized/passes.cc.RV64LE.cc.ll
-; mold/optimized/passes.cc.S390X.cc.ll
-; mold/optimized/passes.cc.SH4.cc.ll
-; mold/optimized/passes.cc.SPARC64.cc.ll
-; mold/optimized/passes.cc.X86_64.cc.ll
 ; node/optimized/simdutf.ll
 ; openmpi/optimized/ptl_base_connection_hdlr.ll
 ; openssl/optimized/libcommon-lib-ciphercommon_ccm.ll
@@ -235,9 +206,7 @@ entry:
 ; qemu/optimized/linux-user_mmap.c.ll
 ; quantlib/optimized/laplaceinterpolation.ll
 ; quantlib/optimized/qrdecomposition.ll
-; spike/optimized/sim.ll
 ; syn/optimized/59s55fjcmu2d325w.ll
-; xgboost/optimized/adapter.cc.ll
 ; yosys/optimized/fstapi.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
@@ -249,22 +218,7 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
-; arrow/optimized/basic_decimal.cc.ll
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000035(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 68569
-  %3 = sub nsw i64 %2, %0
-  %4 = add nsw i64 %3, 31
-  ret i64 %4
-}
-
-; 11 occurrences:
+; 12 occurrences:
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/GlobalMerge.cpp.ll
@@ -275,6 +229,7 @@ entry:
 ; llvm/optimized/StackLifetime.cpp.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
+; opencv/optimized/motion_estimators.cpp.ll
 ; quantlib/optimized/qrdecomposition.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
@@ -427,7 +382,7 @@ entry:
 define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, -1
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = add nsw i64 %3, -1
   ret i64 %4
 }
@@ -471,6 +426,19 @@ entry:
   ret i64 %4
 }
 
+; 3 occurrences:
+; arrow/optimized/basic_decimal.cc.ll
+; libquic/optimized/time_support.c.ll
+; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000035(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 68569
+  %3 = sub nsw i64 %2, %0
+  %4 = add nsw i64 %3, 31
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
@@ -488,7 +456,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, -1
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = add i64 %3, 12622780800
   ret i64 %4
 }

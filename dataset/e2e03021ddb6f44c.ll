@@ -1,6 +1,5 @@
 
-; 19 occurrences:
-; c3c/optimized/decltable.c.ll
+; 18 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; linux/optimized/arp.ll
 ; linux/optimized/fib_semantics.ll

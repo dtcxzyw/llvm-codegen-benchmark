@@ -31,7 +31,7 @@
 func0000000000000051:                   # @func0000000000000051
 	vgf2p8affineqb	$0, .LCPI0_3(%rip){1to2}, %xmm2, %xmm2
 	vpaddb	.LCPI0_1(%rip), %xmm2, %xmm2
-	vpor	%xmm0, %xmm2, %xmm0
+	vpor	%xmm2, %xmm0, %xmm0
 	vpaddb	%xmm0, %xmm1, %xmm0
 	vpaddb	.LCPI0_2(%rip), %xmm0, %xmm0
 	retq
@@ -68,7 +68,7 @@ func0000000000000051:                   # @func0000000000000051
 func0000000000000001:                   # @func0000000000000001
 	vgf2p8affineqb	$0, .LCPI1_3(%rip){1to2}, %xmm2, %xmm2
 	vpaddb	.LCPI1_1(%rip), %xmm2, %xmm2
-	vpor	%xmm0, %xmm2, %xmm0
+	vpor	%xmm2, %xmm0, %xmm0
 	vpaddb	%xmm0, %xmm1, %xmm0
 	vpaddb	.LCPI1_2(%rip), %xmm0, %xmm0
 	retq

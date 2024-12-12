@@ -1,61 +1,32 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	w8, #24                         // =0x18
-	shl	v1.2d, v1.2d, #3
-	shl	v0.2d, v0.2d, #3
-	dup	v2.2d, x8
-	movi	v3.2d, #0x000000ffffffff
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v2.16b
-	ushl	v1.2d, v3.2d, v1.2d
-	ushl	v0.2d, v3.2d, v0.2d
-	mvn	v0.16b, v0.16b
-	mvn	v1.16b, v1.16b
+	ubfiz	x8, x0, #3, #2
+	mov	w9, #-1                         // =0xffffffff
+	lsl	x8, x9, x8
+	mvn	x0, x8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #-32                        // =0xffffffe0
-	shl	v1.2d, v1.2d, #5
-	shl	v0.2d, v0.2d, #5
-	dup	v2.2d, x8
-	mov	x8, #8589934590                 // =0x1fffffffe
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v2.16b
-	dup	v2.2d, x8
-	ushl	v1.2d, v2.2d, v1.2d
-	ushl	v0.2d, v2.2d, v0.2d
-	mvn	v0.16b, v0.16b
-	mvn	v1.16b, v1.16b
+	lsl	w8, w0, #5
+	mov	x9, #8589934590                 // =0x1fffffffe
+	lsl	x8, x9, x8
+	mvn	x0, x8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, #-32                        // =0xffffffe0
-	shl	v1.2d, v1.2d, #5
-	shl	v0.2d, v0.2d, #5
-	dup	v2.2d, x8
-	movi	v3.2d, #0x000000ffffffff
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v2.16b
-	ushl	v1.2d, v3.2d, v1.2d
-	ushl	v0.2d, v3.2d, v0.2d
-	mvn	v0.16b, v0.16b
-	mvn	v1.16b, v1.16b
+	lsl	w8, w0, #5
+	mov	w9, #-1                         // =0xffffffff
+	lsl	x8, x9, x8
+	mvn	x0, x8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #56                         // =0x38
-	shl	v1.2d, v1.2d, #3
-	shl	v0.2d, v0.2d, #3
-	dup	v2.2d, x8
-	movi	v3.2d, #0xffffffffffffffff
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v2.16b
-	ushl	v1.2d, v3.2d, v1.2d
-	ushl	v0.2d, v3.2d, v0.2d
-	mvn	v0.16b, v0.16b
-	mvn	v1.16b, v1.16b
+	ubfiz	x8, x0, #3, #3
+	mov	x9, #-1                         // =0xffffffffffffffff
+	lsl	x8, x9, x8
+	mvn	x0, x8
 	ret
                                         // -- End function

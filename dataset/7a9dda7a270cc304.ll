@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; box2d/optimized/b2_revolute_joint.cpp.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; darktable/optimized/introspection_atrous.c.ll
@@ -25,6 +25,7 @@
 ; nuklear/optimized/unity.c.ll
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll
 ; ocio/optimized/Lut3DOpCPU.cpp.ll
+; oiio/optimized/environment.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; opencv/optimized/face_detection_mtcnn.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll

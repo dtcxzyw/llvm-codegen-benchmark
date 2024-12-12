@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	lui	a0, 786432
 	addiw	a1, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -9,7 +9,7 @@ func0000000000000014:                   # @func0000000000000014
 	vmsltu.vx	v8, v10, a0
 	vmor.mm	v0, v0, v8
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	li	a0, -257
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0

@@ -30,18 +30,4 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 4294967295
-  %3 = shl nuw nsw i64 %0, %2
-  %4 = lshr i64 %3, 10
-  ret i64 %4
-}
-
 attributes #0 = { nounwind }

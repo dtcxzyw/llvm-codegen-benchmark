@@ -20,9 +20,20 @@ func0000000000000006:                   # @func0000000000000006
 	movq	%rsi, %rax
 	shrq	$63, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	testq	%rsi, %rsi
+	sete	%al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
 	movl	$99, %ecx
+	cmpq	%rdi, %rcx
+	sbbq	%rsi, %rax
+	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	movl	$9, %ecx
 	cmpq	%rdi, %rcx
 	sbbq	%rsi, %rax
 	setb	%al

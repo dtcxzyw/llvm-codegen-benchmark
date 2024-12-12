@@ -1,26 +1,14 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #7                          // =0x7
-	dup	v4.2d, x8
-	mov	w8, #3                          // =0x3
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	dup	v4.2d, x8
-	eor	v3.16b, v3.16b, v4.16b
-	eor	v2.16b, v2.16b, v4.16b
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	and	x8, x1, #0x7
+	eor	x8, x8, #0x3
+	add	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #7                          // =0x7
-	dup	v4.2d, x8
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	mvn	v3.16b, v3.16b
-	mvn	v2.16b, v2.16b
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
+	mvn	w8, w1
+	orr	x8, x8, #0xfffffffffffffff8
+	add	x0, x0, x8
 	ret
                                         // -- End function

@@ -4,7 +4,7 @@
 ; llvm/optimized/regcomp.c.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 2
   %2 = mul nsw i64 %1, 3
@@ -12,12 +12,11 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/gmx_chi.cpp.ll
 ; gromacs/optimized/pullutil.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0) #0 {
+define i1 @func00000000000000a8(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 272
   %2 = mul nsw i64 %1, 3

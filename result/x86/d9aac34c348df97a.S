@@ -1,0 +1,8 @@
+func0000000000000000:                   # @func0000000000000000
+	subq	%rdx, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	subq	%rdx, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq

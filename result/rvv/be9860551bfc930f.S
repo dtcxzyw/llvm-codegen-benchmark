@@ -35,9 +35,16 @@ func0000000000000019:                   # @func0000000000000019
 	vzext.vf2	v10, v8
 	vmerge.vim	v8, v10, 0, v0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vi	v0, v10, 7
+	vmv.v.i	v10, 0
+	vzext.vf2	v10, v8, v0.t
+	vmv.v.v	v8, v10
+	ret
+func0000000000000011:                   # @func0000000000000011
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vmsgtu.vi	v0, v10, 8
 	vmv.v.i	v10, 0
 	vzext.vf2	v10, v8, v0.t
 	vmv.v.v	v8, v10

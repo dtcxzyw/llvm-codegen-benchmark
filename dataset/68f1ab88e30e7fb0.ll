@@ -1,17 +1,12 @@
 
-; 13 occurrences:
-; arrow/optimized/strtod.cc.ll
+; 8 occurrences:
 ; cmake/optimized/archive_read_support_format_warc.c.ll
-; double_conversion/optimized/strtod.cc.ll
 ; git/optimized/shortlog.ll
-; icu/optimized/double-conversion-strtod.ll
 ; icu/optimized/number_decimalquantity.ll
 ; minetest/optimized/game.cpp.ll
 ; openblas/optimized/cblas_dgemm.c.ll
 ; openblas/optimized/cblas_dgemmt.c.ll
 ; openblas/optimized/dgemmt.c.ll
-; openusd/optimized/json.cpp.ll
-; openusd/optimized/strtod.cc.ll
 ; wireshark/optimized/editcap.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i1 %1, i32 %2) #0 {
@@ -23,7 +18,7 @@ entry:
   ret i1 %5
 }
 
-; 47 occurrences:
+; 49 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -48,11 +43,13 @@ entry:
 ; abc/optimized/sbdLut.c.ll
 ; abc/optimized/sfmSat.c.ll
 ; abc/optimized/wlcBlast.c.ll
+; boost/optimized/normalize.ll
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
 ; cpython/optimized/compile.ll
 ; cpython/optimized/formatter_unicode.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; git/optimized/pack-bitmap.ll
+; git/optimized/shortlog.ll
 ; hermes/optimized/APInt.cpp.ll
 ; icu/optimized/icuexportdata.ll
 ; icu/optimized/number_decimalquantity.ll
@@ -62,7 +59,6 @@ entry:
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/i915_gem_tiling.ll
 ; llvm/optimized/APInt.cpp.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; minetest/optimized/game.cpp.ll
@@ -71,6 +67,7 @@ entry:
 ; openspiel/optimized/solitaire.cc.ll
 ; slurm/optimized/cgroup_v2.ll
 ; wireshark/optimized/packet-aim.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -79,24 +76,6 @@ entry:
   %5 = xor i1 %4, true
   %6 = select i1 %5, i1 %3, i1 false
   ret i1 %6
-}
-
-; 7 occurrences:
-; abc/optimized/luckyFast6.c.ll
-; llvm/optimized/DwarfDebug.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; php/optimized/strtod.ll
-; stb/optimized/stb_sprintf.c.ll
-; wireshark/optimized/packet-bvlc.c.ll
-; wireshark/optimized/proto.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 4
-  %4 = select i1 %1, i1 true, i1 %3
-  %not. = xor i1 %0, true
-  %5 = select i1 %not., i1 %4, i1 false
-  ret i1 %5
 }
 
 ; 5 occurrences:
@@ -115,17 +94,32 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
-; wireshark/optimized/packet-tds.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 127
   %4 = select i1 %1, i1 true, i1 %3
   %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
+  ret i1 %5
+}
+
+; 5 occurrences:
+; abc/optimized/luckyFast6.c.ll
+; oiio/optimized/strutil.cpp.ll
+; stb/optimized/stb_sprintf.c.ll
+; wireshark/optimized/packet-bvlc.c.ll
+; wireshark/optimized/proto.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %0, i1 true, i1 %1
+  %4 = icmp ult i32 %2, 4
+  %not. = xor i1 %3, true
   %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
@@ -140,6 +134,29 @@ entry:
   %3 = icmp ne i32 %2, 7
   %4 = select i1 %0, i1 true, i1 %1
   %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/DwarfDebug.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 3
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 %3, i1 false
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-tds.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %0, i1 true, i1 %1
+  %4 = icmp ugt i32 %2, 1
+  %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
 

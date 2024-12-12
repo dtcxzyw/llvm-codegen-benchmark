@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; libpng/optimized/pngread.c.ll
+; lvgl/optimized/lv_color.ll
 ; node/optimized/simdutf.ll
 ; openjdk/optimized/pngread.ll
 ; wireshark/optimized/packet-usb-audio.c.ll

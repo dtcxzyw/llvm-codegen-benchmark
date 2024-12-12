@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_net_rocker_rocker.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 2
@@ -84,7 +84,7 @@ entry:
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000124(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000244(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
   %3 = add i32 %2, 64
@@ -124,7 +124,7 @@ entry:
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
   %3 = add i32 %2, 64
@@ -137,7 +137,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/faurersg.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, -1
@@ -147,17 +147,15 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/dlasq3.cpp.ll
 ; gromacs/optimized/dlasq5.cpp.ll
 ; gromacs/optimized/dlasq6.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = add i32 %2, -12
@@ -171,7 +169,7 @@ entry:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = add nsw i32 %2, -3
@@ -186,7 +184,7 @@ entry:
 ; gromacs/optimized/slasq2.cpp.ll
 ; openblas/optimized/dlasq2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000022a(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = add i32 %2, -12
@@ -196,24 +194,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; gromacs/optimized/dlasq1.cpp.ll
-; gromacs/optimized/slasq1.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000176(i64 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 1
-  %3 = add nsw i32 %2, -1
-  %4 = sext i32 %3 to i64
-  %5 = add nuw nsw i64 %0, 1
-  %6 = icmp slt i64 %5, %4
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; libwebp/optimized/alpha_processing_sse2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000017a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002ea(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = add nsw i32 %2, -3

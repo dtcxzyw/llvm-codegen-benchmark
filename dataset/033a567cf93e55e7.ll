@@ -6,15 +6,15 @@
 define i1 @func0000000000000008(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i16 25, i16 62
-  %3 = icmp ult i16 %2, %0
+  %3 = icmp ugt i16 %0, %2
   ret i1 %3
 }
 
 ; 12 occurrences:
+; image-rs/optimized/4srzh4wujeew249y.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/PPDirectives.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/UnwrappedLineParser.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
 ; postgres/optimized/nbtdedup.ll
@@ -27,7 +27,7 @@ entry:
 define i1 @func0000000000000001(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i16 10, i16 50
-  %3 = icmp eq i16 %2, %0
+  %3 = icmp eq i16 %0, %2
   ret i1 %3
 }
 
@@ -39,7 +39,7 @@ entry:
 define i1 @func0000000000000004(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i16 32, i16 64
-  %3 = icmp ugt i16 %2, %0
+  %3 = icmp ult i16 %0, %2
   ret i1 %3
 }
 

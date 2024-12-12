@@ -8,13 +8,13 @@
 ; redis/optimized/read.ll
 ; redis/optimized/util.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000003(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = and i64 %5, 4294967295
-  %7 = getelementptr nusw [1025 x i8], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw nuw [1025 x i8], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

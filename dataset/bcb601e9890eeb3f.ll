@@ -14,7 +14,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = trunc i64 %3 to i32
   %5 = trunc i64 %1 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = sub i32 %6, %4
   ret i32 %7
 }

@@ -1,14 +1,18 @@
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	mov	w8, #64                         // =0x40
-	ushl	v1.2d, v1.2d, v3.2d
-	ushl	v0.2d, v0.2d, v2.2d
-	dup	v6.2d, x8
-	sub	v7.2d, v3.2d, v6.2d
-	sub	v6.2d, v2.2d, v6.2d
-	ushl	v5.2d, v5.2d, v7.2d
-	ushl	v4.2d, v4.2d, v6.2d
-	orr	v0.16b, v0.16b, v4.16b
-	orr	v1.16b, v1.16b, v5.16b
+	lsr	x8, x2, #1
+	mvn	w9, w1
+	lsl	x10, x0, x1
+	lsr	x8, x8, x9
+	orr	x0, x10, x8
+	ret
+                                        // -- End function
+func0000000000000010:                   // @func0000000000000010
+// %bb.0:                               // %entry
+	lsr	x8, x0, #1
+	mvn	w9, w2
+	lsl	x10, x1, x2
+	lsr	x8, x8, x9
+	orr	x0, x10, x8
 	ret
                                         // -- End function

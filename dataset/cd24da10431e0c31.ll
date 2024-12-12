@@ -1,5 +1,6 @@
 
-; 17 occurrences:
+; 19 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
@@ -16,6 +17,7 @@
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; wolfssl/optimized/tls.c.ll
+; z3/optimized/pb2bv_rewriter.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
@@ -26,8 +28,10 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -64,12 +68,13 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; freetype/optimized/ftbase.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 65536
+  %3 = add nsw i32 %2, -1
   %4 = add nuw nsw i32 %3, %1
   %5 = lshr i32 %4, %0
   ret i32 %5

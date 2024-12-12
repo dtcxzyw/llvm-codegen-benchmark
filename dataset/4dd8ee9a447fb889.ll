@@ -29,7 +29,7 @@ entry:
 ; qemu/optimized/fdt_sw.c.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nsw i64 %0, %1
@@ -37,7 +37,7 @@ entry:
   ret i1 %5
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -52,7 +52,6 @@ entry:
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; nuttx/optimized/mm_realloc.c.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
 ; php/optimized/shared_alloc_mmap.ll
 ; postgres/optimized/gistutil.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
@@ -73,7 +72,7 @@ entry:
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 72057594037927424
   %4 = add nsw i64 %0, %1
@@ -89,7 +88,7 @@ entry:
 ; openjdk/optimized/memnode.ll
 ; openmpi/optimized/ad_read_str_naive.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nsw i64 %0, %1
@@ -101,11 +100,11 @@ entry:
 ; c3c/optimized/llvm_codegen.c.ll
 ; yosys/optimized/memlib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %0, %1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -119,11 +118,11 @@ entry:
 ; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
 ; wasmedge/optimized/refInstr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %0, %1
-  %5 = icmp ugt i64 %4, %3
+  %5 = icmp samesign ugt i64 %4, %3
   ret i1 %5
 }
 
@@ -151,7 +150,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nsw i64 %0, %1
@@ -162,7 +161,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000027(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nsw i64 %0, %1
@@ -181,7 +180,7 @@ entry:
 ; yosys/optimized/abc9_ops.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
   %4 = add nsw i64 %0, %1
@@ -192,7 +191,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000025(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65535
   %4 = add nsw i64 %0, %1
@@ -226,7 +225,7 @@ entry:
 ; linux/optimized/badblocks.ll
 ; linux/optimized/bitmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 18014398509481983
   %4 = add nuw nsw i64 %0, %1
@@ -237,7 +236,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/extents_status.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 576460752303423487
   %4 = add nuw nsw i64 %0, %1
@@ -248,7 +247,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
   %4 = add nuw nsw i64 %0, %1

@@ -35,7 +35,7 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; cpython/optimized/compile.ll
 ; cpython/optimized/typeobject.ll
 ; icu/optimized/number_decimalquantity.ll
@@ -43,6 +43,8 @@ entry:
 ; postgres/optimized/date.ll
 ; postgres/optimized/parse_func.ll
 ; slurm/optimized/srun.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; zxing/optimized/PDFModulusPoly.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind

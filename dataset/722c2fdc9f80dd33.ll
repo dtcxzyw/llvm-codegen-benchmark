@@ -57,32 +57,17 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/source_s_roundPackToF16.c.ll
 ; qemu/optimized/source_s_roundPackToF32.c.ll
-; qemu/optimized/source_s_shiftRightJam32.c.ll
 ; spike/optimized/s_roundPackToBF16.ll
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
-; spike/optimized/s_shiftRightJam32.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = sub nsw i32 0, %1
   %3 = and i32 %2, 31
-  ret i32 %3
-}
-
-; 5 occurrences:
-; arrow/optimized/bit_util.cc.ll
-; git/optimized/merge-ort.ll
-; lz4/optimized/lz4hc.c.ll
-; slurm/optimized/config_info.ll
-; wolfssl/optimized/ssl.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i64 %0) #0 {
-entry:
-  %1 = trunc i64 %0 to i32
-  %2 = sub nsw i32 3, %1
-  %3 = and i32 %2, 2
   ret i32 %3
 }
 
@@ -99,6 +84,19 @@ entry:
   %2 = sub nsw i32 0, %1
   %3 = and i32 %2, 255
   ret i32 %3
+}
+
+; 4 occurrences:
+; arrow/optimized/bit_util.cc.ll
+; lz4/optimized/lz4hc.c.ll
+; slurm/optimized/config_info.ll
+; wolfssl/optimized/ssl.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i32
+  %2 = and i32 %1, 1
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

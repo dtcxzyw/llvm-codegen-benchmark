@@ -41,7 +41,7 @@
 define i32 @func0000000000000004(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, -114
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -64,9 +64,8 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; git/optimized/gpg-interface.ll
-; linux/optimized/n_tty.ll
 ; linux/optimized/rw.ll
 ; openjdk/optimized/DrawPolygons.ll
 ; php/optimized/pcre2_jit_compile.ll
@@ -81,14 +80,48 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/tdls.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 28
+  %3 = or i1 %2, %0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 2 occurrences:
+; linux/optimized/n_tty.ll
+; openusd/optimized/pred_common.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i1 %0, i8 %1) #0 {
+entry:
+  %2 = icmp sgt i8 %1, 0
+  %3 = or i1 %2, %0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 2 occurrences:
+; opencv/optimized/stringutils.cpp.ll
+; zxing/optimized/TextDecoder.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000050(i1 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ult i8 %1, -64
+  %3 = or i1 %2, %0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000060(i1 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i8 %1, 2
   %3 = or i1 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4

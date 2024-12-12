@@ -1,5 +1,5 @@
 
-; 139 occurrences:
+; 142 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/amapMatch.c.ll
@@ -9,6 +9,8 @@
 ; abc/optimized/sclUpsize.c.ll
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/FindInstancesProcess.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; box2d/optimized/b2_prismatic_joint.cpp.ll
@@ -60,6 +62,7 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/balltree.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
@@ -147,13 +150,15 @@ entry:
   ret i1 %3
 }
 
-; 139 occurrences:
+; 142 occurrences:
 ; abc/optimized/sclUpsize.c.ll
 ; assimp/optimized/FixNormalsStep.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_collision.cpp.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
@@ -210,6 +215,7 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/histogram_enc.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -469,7 +475,8 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; yoga/optimized/Cache.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(float %0, float %1) #0 {
@@ -479,8 +486,10 @@ entry:
   ret i1 %3
 }
 
-; 41 occurrences:
+; 45 occurrences:
 ; assimp/optimized/X3DGeoHelper.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
@@ -521,6 +530,8 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; xgboost/optimized/auc.cc.ll
 ; xgboost/optimized/quantile.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(float %0, float %1) #0 {
 entry:

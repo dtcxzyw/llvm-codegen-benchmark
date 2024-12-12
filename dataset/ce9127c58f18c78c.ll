@@ -1,12 +1,10 @@
 
-; 9 occurrences:
+; 7 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; cpython/optimized/bytearrayobject.ll
 ; cpython/optimized/bytes_methods.ll
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/unicodeobject.ll
-; git/optimized/combine-diff.ll
-; linux/optimized/msr.ll
 ; rocksdb/optimized/memtable.cc.ll
 ; stockfish/optimized/bitboard.ll
 ; Function Attrs: nounwind

@@ -85,7 +85,7 @@ func0000000000000001:                   # @func0000000000000001
 	.byte	32                              # 0x20
 	.byte	16                              # 0x10
 	.byte	8                               # 0x8
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vgf2p8affineqb	$0, .LCPI2_1(%rip){1to2}, %xmm1, %xmm1
 	vpcmpnleub	%xmm0, %xmm1, %k0
 	vpmovm2b	%k0, %xmm0
@@ -147,7 +147,7 @@ func0000000000000004:                   # @func0000000000000004
 	.byte	8                               # 0x8
 	.byte	4                               # 0x4
 	.byte	2                               # 0x2
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vgf2p8affineqb	$0, .LCPI4_1(%rip){1to2}, %xmm1, %xmm1
 	vpcmpeqb	%xmm0, %xmm1, %xmm0
 	retq
@@ -177,13 +177,44 @@ func0000000000000011:                   # @func0000000000000011
 	.byte	16                              # 0x10
 	.byte	8                               # 0x8
 	.byte	4                               # 0x4
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vgf2p8affineqb	$0, .LCPI5_1(%rip){1to2}, %xmm1, %xmm1
 	vpcmpeqb	%xmm0, %xmm1, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	retq
 .LCPI6_0:
 	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	128                             # 0x80
+	.byte	64                              # 0x40
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	128                             # 0x80
+	.byte	64                              # 0x40
+.LCPI6_1:
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	128                             # 0x80
+	.byte	64                              # 0x40
+func0000000000000014:                   # @func0000000000000014
+	vgf2p8affineqb	$0, .LCPI6_1(%rip){1to2}, %xmm1, %xmm1
+	vpcmpltub	%xmm0, %xmm1, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+.LCPI7_0:
+	.byte	0                               # 0x0
 	.byte	128                             # 0x80
 	.byte	64                              # 0x40
 	.byte	32                              # 0x20
@@ -199,7 +230,38 @@ func000000000000001c:                   # @func000000000000001c
 	.byte	8                               # 0x8
 	.byte	4                               # 0x4
 	.byte	2                               # 0x2
-.LCPI6_1:
+.LCPI7_1:
+	.byte	0                               # 0x0
+	.byte	128                             # 0x80
+	.byte	64                              # 0x40
+	.byte	32                              # 0x20
+	.byte	16                              # 0x10
+	.byte	8                               # 0x8
+	.byte	4                               # 0x4
+	.byte	2                               # 0x2
+func0000000000000008:                   # @func0000000000000008
+	vgf2p8affineqb	$0, .LCPI7_1(%rip){1to2}, %xmm1, %xmm1
+	vpcmpnleub	%xmm0, %xmm1, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+.LCPI8_0:
+	.byte	0                               # 0x0
+	.byte	128                             # 0x80
+	.byte	64                              # 0x40
+	.byte	32                              # 0x20
+	.byte	16                              # 0x10
+	.byte	8                               # 0x8
+	.byte	4                               # 0x4
+	.byte	2                               # 0x2
+	.byte	0                               # 0x0
+	.byte	128                             # 0x80
+	.byte	64                              # 0x40
+	.byte	32                              # 0x20
+	.byte	16                              # 0x10
+	.byte	8                               # 0x8
+	.byte	4                               # 0x4
+	.byte	2                               # 0x2
+.LCPI8_1:
 	.byte	0                               # 0x0
 	.byte	128                             # 0x80
 	.byte	64                              # 0x40
@@ -209,7 +271,7 @@ func000000000000001c:                   # @func000000000000001c
 	.byte	4                               # 0x4
 	.byte	2                               # 0x2
 func0000000000000009:                   # @func0000000000000009
-	vgf2p8affineqb	$0, .LCPI6_1(%rip){1to2}, %xmm1, %xmm1
+	vgf2p8affineqb	$0, .LCPI8_1(%rip){1to2}, %xmm1, %xmm1
 	vpcmpnltub	%xmm0, %xmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

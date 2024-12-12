@@ -1,11 +1,10 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; linux/optimized/cppc_acpi.ll
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; llvm/optimized/MSFBuilder.cpp.ll
 ; llvm/optimized/Mangler.cpp.ll
 ; llvm/optimized/PDBFile.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/rust-demangle.c.ll

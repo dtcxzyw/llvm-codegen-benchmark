@@ -1,4 +1,4 @@
-func00000000000003c4:                   # @func00000000000003c4
+func0000000000000d84:                   # @func0000000000000d84
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	testl	$102631199, %eax                # imm = 0x61E071F
@@ -7,13 +7,12 @@ func00000000000003c4:                   # @func00000000000003c4
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000002c4:                   # @func00000000000002c4
+func0000000000000984:                   # @func0000000000000984
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
-	movabsq	$34357509982, %rcx              # imm = 0x7FFDDFF5E
-	testq	%rcx, %rax
+	testl	$131024, %eax                   # imm = 0x1FFD0
 	setne	%cl
-	cmpl	$35, %edi
+	cmpl	$6, %edi
 	setb	%al
 	andb	%cl, %al
 	retq

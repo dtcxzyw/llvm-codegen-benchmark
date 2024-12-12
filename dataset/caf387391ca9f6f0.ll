@@ -6,8 +6,8 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 45
   %4 = sext i1 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -23,8 +23,8 @@ define ptr @func0000000000000012(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 47
   %4 = sext i1 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -35,8 +35,8 @@ define ptr @func0000000000000014(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 10
   %4 = sext i1 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -47,8 +47,8 @@ define ptr @func0000000000000016(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 46
   %4 = sext i1 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 

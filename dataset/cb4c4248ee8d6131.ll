@@ -245,7 +245,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %0, 8
   %3 = icmp ult i64 %1, 4294967296
@@ -257,7 +257,7 @@ entry:
 ; fmt/optimized/compile-test.cc.ll
 ; linux/optimized/drm_gem_framebuffer_helper.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %0, 8
   %3 = icmp eq i64 %1, 0

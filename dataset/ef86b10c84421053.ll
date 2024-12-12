@@ -3,12 +3,12 @@
 ; cpython/optimized/dtoa.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i1 %1, double %2) #0 {
+define i1 @func0000000000000108(i32 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 0.000000e+00
   %4 = and i1 %3, %1
   %5 = sext i1 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = icmp ugt i32 %6, 22
   ret i1 %7
 }
@@ -19,12 +19,12 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, i1 %1, double %2) #0 {
+define i1 @func0000000000000128(i32 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 0.000000e+00
   %4 = and i1 %3, %1
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = icmp ugt i32 %6, 22
   ret i1 %7
 }

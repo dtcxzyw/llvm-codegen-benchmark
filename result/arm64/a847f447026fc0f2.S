@@ -1,11 +1,6 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v4.2d, #0x0000ff000000ff
-	sub	v2.4s, v2.4s, v3.4s
-	and	v2.16b, v2.16b, v4.16b
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	ushl	v1.2d, v1.2d, v2.2d
-	ushl	v0.2d, v0.2d, v3.2d
+	sub	w8, w1, w2
+	lsl	x0, x0, x8
 	ret
                                         // -- End function

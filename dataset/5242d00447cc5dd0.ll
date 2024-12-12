@@ -1,9 +1,11 @@
 
-; 53 occurrences:
+; 59 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
+; arrow/optimized/utf8.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/frameobject.ll
 ; cpython/optimized/listobject.ll
 ; cpython/optimized/unicodedata.ll
@@ -13,13 +15,16 @@
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
+; freetype/optimized/psaux.c.ll
 ; git/optimized/alias.ll
 ; grpc/optimized/service_config_impl.cc.ll
 ; hermes/optimized/BCP47Parser.cpp.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
+; jsonnet/optimized/desugarer.cpp.ll
 ; jsonnet/optimized/formatter.cpp.ll
+; jsonnet/optimized/parser.cpp.ll
 ; jsonnet/optimized/string_utils.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; libquic/optimized/string16.cc.ll
@@ -44,6 +49,7 @@
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; openusd/optimized/fast-dtoa.cc.ll
+; pbrt-v4/optimized/string.cpp.ll
 ; php/optimized/dtoa.ll
 ; quantlib/optimized/tqreigendecomposition.ll
 ; redis/optimized/fpconv_dtoa.ll
@@ -61,8 +67,10 @@ entry:
   ret i64 %4
 }
 
-; 37 occurrences:
+; 46 occurrences:
 ; abc/optimized/adler32.c.ll
+; bdwgc/optimized/gc.c.ll
+; boost/optimized/matches_relation_factory.ll
 ; casadi/optimized/cvodes_bbdpre.c.ll
 ; cmake/optimized/adler32.c.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
@@ -77,6 +85,7 @@ entry:
 ; eastl/optimized/TestSort.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; gromacs/optimized/adler32.c.ll
+; jsonnet/optimized/vm.cpp.ll
 ; libquic/optimized/adler32.c.ll
 ; libquic/optimized/quic_sent_packet_manager.cc.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
@@ -98,6 +107,12 @@ entry:
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/455yb6ma6j3a5kpbn5166o5rm.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8wvy5aljfw2qmbxbtkkewwal7.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
@@ -107,10 +122,14 @@ entry:
   ret i64 %4
 }
 
-; 157 occurrences:
+; 168 occurrences:
 ; abc/optimized/abcXsim.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/src.ll
 ; brotli/optimized/encode.c.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; clamav/optimized/lzxd.c.ll
@@ -130,10 +149,12 @@ entry:
 ; eastl/optimized/Int128_t.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
+; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestFixedVector.cpp.ll
 ; eastl/optimized/TestFunctional.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
+; eastl/optimized/TestTupleVector.cpp.ll
 ; faiss/optimized/AuxIndexStructures.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -171,12 +192,11 @@ entry:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
+; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
-; luajit/optimized/lj_prng.ll
-; luajit/optimized/lj_prng_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; minetest/optimized/texturesource.cpp.ll
@@ -247,7 +267,6 @@ entry:
 ; tev/optimized/StbiImageLoader.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/proto.c.ll
@@ -265,6 +284,13 @@ entry:
 ; yalantinglibs/optimized/server.cpp.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/ezsat.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; zed-rs/optimized/a48ncfl2mo4yu8srnhcxrs0e7.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -290,8 +316,8 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; miniaudio/optimized/unity.c.ll
+; proxygen/optimized/HTTPSession.cpp.ll
 ; spike/optimized/spike.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; wireshark/optimized/capture_file_dialog.cpp.ll
 ; wireshark/optimized/coloring_rules_dialog.cpp.ll
 ; wireshark/optimized/decode_as_delegate.cpp.ll

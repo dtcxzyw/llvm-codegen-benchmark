@@ -8,7 +8,7 @@
 ; velox/optimized/Type.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000588(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = add nuw nsw i64 %0, 1
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/checker_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000288(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = add nsw i64 %0, 1
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/checker_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = add nsw i64 %0, 1

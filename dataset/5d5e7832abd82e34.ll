@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/lpkCut.c.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
@@ -7,6 +7,7 @@
 ; gromacs/optimized/mtop_util.cpp.ll
 ; icu/optimized/punycode.ll
 ; libwebp/optimized/backward_references_enc.c.ll
+; lvgl/optimized/lv_flex.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; opencv/optimized/checker_detector.cpp.ll
 ; openjdk/optimized/splashscreen_gfx_impl.ll
@@ -16,7 +17,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = sdiv i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -27,7 +28,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sdiv i32 %1, %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -39,7 +40,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = sdiv i32 %1, %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

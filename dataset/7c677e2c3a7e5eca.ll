@@ -18,18 +18,16 @@ define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 2
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 39 occurrences:
+; 36 occurrences:
 ; flac/optimized/stream_encoder_framing.c.ll
 ; folly/optimized/IOBuf.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; gromacs/optimized/colvarmodule.cpp.ll
-; grpc/optimized/ev_poll_posix.cc.ll
 ; libwebp/optimized/webp_dec.c.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/mlme.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ParsePragma.cpp.ll
@@ -44,7 +42,7 @@ entry:
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/source_s_roundPackToF16.c.ll
 ; qemu/optimized/source_s_roundPackToF32.c.ll
-; qemu/optimized/source_s_shiftRightJam32.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/module.ll
@@ -57,7 +55,6 @@ entry:
 ; spike/optimized/s_roundPackToBF16.ll
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
-; spike/optimized/s_shiftRightJam32.ll
 ; spike/optimized/s_subMagsF32.ll
 ; stockfish/optimized/tbprobe.ll
 ; wireshark/optimized/disabled_protos.c.ll
@@ -67,11 +64,11 @@ define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; assimp/optimized/zip.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -85,6 +82,7 @@ entry:
 ; libwebp/optimized/thread_utils.c.ll
 ; linux/optimized/rtnetlink.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
@@ -101,11 +99,11 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 16
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 65 occurrences:
+; 67 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcExact.c.ll
@@ -137,6 +135,7 @@ entry:
 ; abc/optimized/resSat.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/sbdLut.c.ll
+; boost/optimized/alloc_lib.ll
 ; cpython/optimized/formatter_unicode.ll
 ; darktable/optimized/metadata.c.ll
 ; git/optimized/rebase.ll
@@ -171,27 +170,24 @@ entry:
 ; z3/optimized/sat_anf_simplifier.cpp.ll
 ; z3/optimized/sat_proof_trim.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 136
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 5 occurrences:
+; 1 occurrences:
 ; mitsuba3/optimized/bitmap.cpp.ll
-; openexr/optimized/ImfPxr24Compressor.cpp.ll
-; openexr/optimized/internal_pxr24.c.ll
-; openusd/optimized/ilmbase_half.cpp.ll
-; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, -3
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -289,11 +285,12 @@ define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 170 occurrences:
+; 171 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -469,7 +466,7 @@ define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 429496730
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -482,12 +479,23 @@ define i32 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 3 occurrences:
-; eastl/optimized/TestBitset.cpp.ll
+; 2 occurrences:
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp slt i32 %1, -1073741824
+  %3 = zext i1 %2 to i32
+  %4 = or i32 %0, %3
+  ret i32 %4
+}
+
+; 2 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; libwebp/optimized/dwebp.c.ll
 ; Function Attrs: nounwind
@@ -495,7 +503,7 @@ define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 67071
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -505,11 +513,25 @@ entry:
 ; linux/optimized/intel_guc_log.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 24577
+  %2 = icmp samesign ugt i32 %1, 24577
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
+  ret i32 %4
+}
+
+; 4 occurrences:
+; openexr/optimized/ImfPxr24Compressor.cpp.ll
+; openexr/optimized/internal_pxr24.c.ll
+; openusd/optimized/ilmbase_half.cpp.ll
+; openusd/optimized/openexr-c.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000050(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 256
+  %3 = zext i1 %2 to i32
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -525,7 +547,18 @@ define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; eastl/optimized/TestBitset.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000060(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 1
+  %3 = zext i1 %2 to i32
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

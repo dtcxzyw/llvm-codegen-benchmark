@@ -1,17 +1,17 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addq	$16, %rdx
 	testb	$1, %sil
 	movl	$32, %eax
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	decq	%rdx
 	testb	$1, %sil
 	movl	$1, %eax
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
@@ -19,24 +19,24 @@ func0000000000000004:                   # @func0000000000000004
 	testb	$1, %sil
 	movl	$1, %eax
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
 func0000000000000005:                   # @func0000000000000005
 	decq	%rdx
 	testb	$1, %sil
 	movl	$15, %eax
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setae	%al
+	cmpq	%rax, %rdi
+	setbe	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	decq	%rdx
 	testb	$1, %sil
 	movl	$15, %eax
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	addq	$-2, %rdx
@@ -48,22 +48,22 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
-	addq	$268435456, %rdx                # imm = 0x10000000
+func0000000000000041:                   # @func0000000000000041
+	incq	%rdx
 	testb	$1, %sil
-	movabsq	$1082600194048, %rax            # imm = 0xFC10000000
+	movl	$1, %eax
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	sete	%al
 	retq
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	addq	$8, %rdx
 	testb	$1, %sil
 	movl	$40, %eax
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setbe	%al
+	cmpq	%rax, %rdi
+	setae	%al
 	retq

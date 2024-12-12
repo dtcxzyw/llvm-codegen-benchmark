@@ -21,7 +21,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

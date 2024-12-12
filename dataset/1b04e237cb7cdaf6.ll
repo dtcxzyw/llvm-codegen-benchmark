@@ -1,5 +1,7 @@
 
-; 45 occurrences:
+; 48 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cpython/optimized/xmltok.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
@@ -33,6 +35,7 @@
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; verilator/optimized/V3AstNodes.cpp.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll

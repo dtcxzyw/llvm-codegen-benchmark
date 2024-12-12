@@ -5,13 +5,6 @@ func0000000000000053:                   # @func0000000000000053
 	ori	a1, a1, -65
 	addw	a0, a0, a1
 	ret
-func0000000000000023:                   # @func0000000000000023
-	sext.w	a1, a0
-	sltiu	a1, a1, 4
-	negw	a1, a1
-	ori	a1, a1, -4
-	addw	a0, a0, a1
-	ret
 func0000000000000040:                   # @func0000000000000040
 	sext.w	a1, a0
 	sltiu	a1, a1, 128
@@ -31,13 +24,13 @@ func0000000000000033:                   # @func0000000000000033
 func0000000000000020:                   # @func0000000000000020
 	sext.w	a1, a0
 	li	a2, 254
-	bltu	a1, a2, .LBB4_2
+	bltu	a1, a2, .LBB3_2
 	li	a1, 5
 	add	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
-.LBB4_2:
+.LBB3_2:
 	li	a1, 1
 	add	a0, a0, a1
 	slli	a0, a0, 32

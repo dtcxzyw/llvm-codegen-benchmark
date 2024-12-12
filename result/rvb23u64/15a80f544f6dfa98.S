@@ -37,7 +37,7 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a1, a1, 1
-	slliw	a1, a1, 15
-	slliw	a0, a0, 10
+	slliw	a1, a1, 12
+	slliw	a0, a0, 9
 	or	a0, a0, a1
 	ret

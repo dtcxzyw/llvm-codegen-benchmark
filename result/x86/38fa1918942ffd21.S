@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	leal	-1(%rsi,%rdi), %ecx
 	movl	%ecx, %eax
 	cltd

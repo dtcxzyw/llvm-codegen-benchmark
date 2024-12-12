@@ -4,27 +4,37 @@ func0000000000000100:                   # @func0000000000000100
 	add	a0, a0, a2
 	addi	a0, a0, -3
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000fb:                   # @func00000000000000fb
 	zext.h	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 7
 	ret
-func00000000000000ab:                   # @func00000000000000ab
+func00000000000000ff:                   # @func00000000000000ff
 	zext.h	a2, a2
-	sh1add	a2, a2, a2
-	sh1add	a1, a2, a1
-	sh1add	a0, a0, a0
-	sh1add	a0, a0, a1
-	addi	a0, a0, 34
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 32
 	ret
-func0000000000000080:                   # @func0000000000000080
+func00000000000000c0:                   # @func00000000000000c0
 	zext.h	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 5
 	ret
-func0000000000000082:                   # @func0000000000000082
+func00000000000000c2:                   # @func00000000000000c2
+	zext.h	a2, a2
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, -2
+	ret
+func00000000000000c3:                   # @func00000000000000c3
+	zext.h	a2, a2
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 12
+	ret
+func00000000000000fe:                   # @func00000000000000fe
 	zext.h	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

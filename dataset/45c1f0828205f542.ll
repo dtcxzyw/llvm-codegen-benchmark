@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
-; linux/optimized/icl_dsi.ll
 ; linux/optimized/net.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -17,47 +16,19 @@ entry:
   ret i32 %5
 }
 
-; 42 occurrences:
+; 14 occurrences:
 ; abc/optimized/rsbDec6.c.ll
-; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
-; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
-; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
-; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
-; delta-rs/optimized/9v8xvedf69luuxb.ll
-; diesel-rs/optimized/2zzzvc1em6im74h3.ll
-; hermes/optimized/dtoa.c.ll
-; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
-; jq/optimized/jv_dtoa.ll
-; libquic/optimized/dtoa.cc.ll
-; libwebp/optimized/upsampling.c.ll
-; libwebp/optimized/upsampling_sse2.c.ll
-; libwebp/optimized/yuv.c.ll
-; linux/optimized/lib.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/xhci-ring.ll
-; llvm/optimized/BitcodeReader.cpp.ll
-; llvm/optimized/CGCUDANV.cpp.ll
 ; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGVTT.cpp.ll
 ; llvm/optimized/CGVTables.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/CoroSplit.cpp.ll
-; llvm/optimized/ExpandVariadics.cpp.ll
-; llvm/optimized/FunctionImport.cpp.ll
-; llvm/optimized/FunctionImportUtils.cpp.ll
-; llvm/optimized/GlobalOpt.cpp.ll
-; llvm/optimized/IRMover.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/LTOCodeGenerator.cpp.ll
-; llvm/optimized/LowerEmuTLS.cpp.ll
-; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; ncnn/optimized/net.cpp.ll
-; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
-; php/optimized/zend_strtod.ll
 ; ruby/optimized/pack.ll
 ; wireshark/optimized/packet-dnp.c.ll
 ; Function Attrs: nounwind
@@ -85,31 +56,17 @@ entry:
   ret i32 %5
 }
 
-; 169 occurrences:
+; 156 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/mpmPre.c.ll
-; abc/optimized/rsbDec6.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; clamav/optimized/special.c.ll
 ; cmake/optimized/archive_pathmatch.c.ll
 ; cpython/optimized/dtoa.ll
-; crow/optimized/example.cpp.ll
-; crow/optimized/example_blueprint.cpp.ll
-; crow/optimized/example_catchall.cpp.ll
-; crow/optimized/example_chat.cpp.ll
-; crow/optimized/example_cookies.cpp.ll
-; crow/optimized/example_cors.cpp.ll
-; crow/optimized/example_file_upload.cpp.ll
-; crow/optimized/example_json_map.cpp.ll
-; crow/optimized/example_middleware.cpp.ll
-; crow/optimized/example_session.cpp.ll
-; crow/optimized/example_static_file.cpp.ll
-; crow/optimized/example_ws.cpp.ll
-; crow/optimized/helloworld.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; darktable/optimized/introspection_flip.c.ll
 ; draco/optimized/corner_table.cc.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
@@ -120,7 +77,10 @@ entry:
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; entt/optimized/registry.cpp.ll
+; freetype/optimized/cff.c.ll
 ; freetype/optimized/ftbase.c.ll
+; freetype/optimized/type1.c.ll
+; freetype/optimized/type1cid.c.ll
 ; git/optimized/list-objects-filter.ll
 ; git/optimized/pathspec.ll
 ; git/optimized/unpack-trees.ll
@@ -138,7 +98,6 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jq/optimized/jv_dtoa.ll
 ; jq/optimized/regcomp.ll
-; libevent/optimized/poll.c.ll
 ; libpng/optimized/pngwrite.c.ll
 ; libquic/optimized/dtoa.cc.ll
 ; libquic/optimized/file_util_posix.cc.ll
@@ -184,13 +143,15 @@ entry:
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
-; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/MIRCanonicalizerPass.cpp.ll
 ; llvm/optimized/MachOUniversal.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
+; lvgl/optimized/lv_text.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
@@ -212,7 +173,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/loadsave.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
+; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/classPrinter.ll
 ; openjdk/optimized/hb-buffer-verify.ll
 ; openjdk/optimized/hb-ot-shape.ll
@@ -231,15 +192,12 @@ entry:
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/spell.ll
 ; postgres/optimized/typcache.ll
-; qemu/optimized/accel_tcg_user-exec.c.ll
-; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; qemu/optimized/tcg-op-ldst.c.ll
 ; quantlib/optimized/markovfunctional.ll
 ; ruby/optimized/util.ll
-; slurm/optimized/node_mgr.ll
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
@@ -264,17 +222,45 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 17 occurrences:
+; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
+; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
+; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
+; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
+; delta-rs/optimized/9v8xvedf69luuxb.ll
+; diesel-rs/optimized/2zzzvc1em6im74h3.ll
+; hermes/optimized/dtoa.c.ll
+; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/dtoa.cc.ll
+; linux/optimized/lib.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
+; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
+; php/optimized/zend_strtod.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 1048576
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = and i32 %4, 7
+  ret i32 %5
+}
+
+; 5 occurrences:
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; eastl/optimized/TestBitset.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %2, 0
   %3 = select i1 %.not, i32 %1, i32 %0
-  %4 = and i32 %3, 63
+  %4 = and i32 %3, 1024
   ret i32 %4
 }
 

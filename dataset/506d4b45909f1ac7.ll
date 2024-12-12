@@ -1,21 +1,8 @@
 
-; 20 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; git/optimized/ewah_bitmap.ll
 ; linux/optimized/posix_acl.ll
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/RewriteModernObjC.cpp.ll
-; llvm/optimized/RewriteObjC.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/SemaCoroutine.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclAttr.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaLookup.cpp.ll
-; llvm/optimized/SemaOpenCL.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/USRGeneration.cpp.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; ruby/optimized/hash.ll
 ; tokio-rs/optimized/46apu3hqx0w07xoc.ll
@@ -44,22 +31,6 @@ entry:
   %1 = shl i64 %0, 32
   %2 = and i64 %1, -34359738368
   %3 = add i64 %2, 34359738368
-  ret i64 %3
-}
-
-; 6 occurrences:
-; linux/optimized/swiotlb.ll
-; minetest/optimized/enriched_string.cpp.ll
-; openblas/optimized/dscal_k.c.ll
-; openblas/optimized/sscal_k.c.ll
-; opencv/optimized/fully_connected_layer.cpp.ll
-; spike/optimized/f128_sqrt.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0) #0 {
-entry:
-  %1 = shl i64 %0, 2
-  %2 = and i64 %1, -32
-  %3 = add i64 %2, -4
   ret i64 %3
 }
 
@@ -120,6 +91,21 @@ entry:
   %1 = shl i64 %0, 1
   %2 = and i64 %1, 8589934590
   %3 = add nsw i64 %2, -2
+  ret i64 %3
+}
+
+; 5 occurrences:
+; linux/optimized/swiotlb.ll
+; openblas/optimized/dscal_k.c.ll
+; openblas/optimized/sscal_k.c.ll
+; opencv/optimized/fully_connected_layer.cpp.ll
+; spike/optimized/f128_sqrt.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0) #0 {
+entry:
+  %1 = shl i64 %0, 59
+  %2 = and i64 %1, -2305843009213693952
+  %3 = add i64 %2, -1
   ret i64 %3
 }
 

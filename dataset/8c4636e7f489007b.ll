@@ -8,11 +8,11 @@
 define i16 @func0000000000000000(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = mul i16 %2, %0
+  %3 = mul i16 %0, %2
   ret i16 %3
 }
 
-; 22 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -23,6 +23,22 @@ entry:
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/drm_fourcc.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
+; lvgl/optimized/lv_draw_sw_mask_rect.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_span.ll
 ; oiio/optimized/pnginput.cpp.ll
 ; oiio/optimized/targainput.cpp.ll
 ; openjdk/optimized/pngrtran.ll
@@ -39,7 +55,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = mul nuw i16 %2, %0
+  %3 = mul nuw i16 %0, %2
   ret i16 %3
 }
 
@@ -52,18 +68,50 @@ entry:
 define i16 @func0000000000000001(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = mul nsw i16 %2, %0
+  %3 = mul nsw i16 %0, %2
   ret i16 %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = mul nuw nsw i16 %2, %0
+  %3 = mul nuw nsw i16 %0, %2
+  ret i16 %3
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000007(i16 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i16
+  %3 = mul nuw nsw i16 %0, %2
+  ret i16 %3
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000006(i16 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i16
+  %3 = mul nuw i16 %0, %2
+  ret i16 %3
+}
+
+; 1 occurrences:
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000004(i16 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i16
+  %3 = mul i16 %0, %2
   ret i16 %3
 }
 

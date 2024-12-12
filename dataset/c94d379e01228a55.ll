@@ -1,7 +1,8 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; cmake/optimized/archive_read_support_filter_rpm.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
@@ -37,7 +38,7 @@
 define i64 @func000000000000001f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 61
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -67,7 +68,7 @@ entry:
   ret i64 %5
 }
 
-; 27 occurrences:
+; 29 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; c3c/optimized/bigint.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -95,6 +96,8 @@ entry:
 ; spike/optimized/umar64.ll
 ; wireshark/optimized/packet-per.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -104,15 +107,13 @@ entry:
   ret i64 %5
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; hermes/optimized/LowerBuiltinCalls.cpp.ll
 ; linux/optimized/generic.ll
-; linux/optimized/head64.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/mpih-div.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/tg3.ll
@@ -154,7 +155,7 @@ define i64 @func000000000000001d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
   %4 = or disjoint i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -176,7 +177,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -189,7 +190,7 @@ define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
   %4 = or i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -251,7 +252,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = add nuw i64 %4, %0
   ret i64 %5
 }
@@ -264,8 +265,8 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 56
-  %4 = or i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -276,7 +277,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }

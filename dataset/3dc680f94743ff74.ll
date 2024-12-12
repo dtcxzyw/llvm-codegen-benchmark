@@ -4,7 +4,6 @@
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
-; abc/optimized/satUtil.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
@@ -28,6 +27,7 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/work_stealing.ll
 ; ceres/optimized/coordinate_descent_minimizer.cc.ll
 ; cmake/optimized/EncodingCXX.cxx.ll
 ; cmake/optimized/cmMakefile.cxx.ll
@@ -183,7 +183,6 @@
 ; llvm/optimized/PreprocessingRecord.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
@@ -338,6 +337,7 @@
 ; yosys/optimized/blif.ll
 ; yosys/optimized/blifparse.ll
 ; yosys/optimized/btor.ll
+; yosys/optimized/bugpoint.ll
 ; yosys/optimized/cellaigs.ll
 ; yosys/optimized/check.ll
 ; yosys/optimized/chformal.ll
@@ -481,7 +481,7 @@ entry:
   ret i32 %5
 }
 
-; 227 occurrences:
+; 225 occurrences:
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ivyTable.c.ll
@@ -495,6 +495,7 @@ entry:
 ; arrow/optimized/tensor.cc.ll
 ; arrow/optimized/writer.cc.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/numeric.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; cmake/optimized/divsufsort.c.ll
@@ -578,7 +579,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -677,8 +677,6 @@ entry:
 ; pocketpy/optimized/expr.cpp.ll
 ; pocketpy/optimized/linalg.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; quantlib/optimized/gsrprocesscore.ll
@@ -731,7 +729,7 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; cvc5/optimized/regexp_elim.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -740,6 +738,7 @@ entry:
 ; gromacs/optimized/colvargrid.cpp.ll
 ; linux/optimized/vt.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; opencv/optimized/datablock.cpp.ll
 ; opencv/optimized/orb.cpp.ll
 ; openjdk/optimized/gcm.ll
@@ -772,7 +771,8 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000012(i64 %0, i64 %1) #0 {
@@ -784,16 +784,17 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; icu/optimized/messagepattern.ll
 ; luau/optimized/lcorolib.cpp.ll
+; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = lshr exact i64 %2, 4
+  %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
-  %5 = add nuw nsw i32 %4, 1
+  %5 = add nuw nsw i32 %4, 64
   ret i32 %5
 }
 

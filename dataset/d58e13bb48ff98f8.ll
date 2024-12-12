@@ -48,13 +48,15 @@ entry:
   ret ptr %7
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/JpegDecompressor.cpp.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256_nosse.ll
 ; miniaudio/optimized/unity.c.ll
+; z3/optimized/mam.cpp.ll
+; z3/optimized/q_mam.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000f0(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -93,37 +95,24 @@ entry:
   ret ptr %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; git/optimized/packfile.ll
-; Function Attrs: nounwind
-define ptr @func00000000000001fa(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = shl nuw nsw i64 %1, 2
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
-  ret ptr %7
-}
-
-; 1 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001f2(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000001ff(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = shl nuw nsw i64 %1, 3
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = shl nuw nsw i64 %1, 2
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/match.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -136,13 +125,13 @@ entry:
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 5
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = shl nuw nsw i64 %1, 2
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -150,11 +139,11 @@ entry:
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000000ce(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = shl i64 %1, 3
   %7 = getelementptr nusw i8, ptr %5, i64 %6
   ret ptr %7

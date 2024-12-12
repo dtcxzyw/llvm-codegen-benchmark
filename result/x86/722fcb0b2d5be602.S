@@ -1,11 +1,11 @@
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	subl	%edi, %eax
 	cmpl	$7, %eax
 	setb	%al
 	retq
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	subl	%edi, %eax
@@ -25,7 +25,7 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%eax, %eax
 	setg	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	subl	%edi, %eax
@@ -39,36 +39,36 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$65, %eax
 	setae	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movzwl	%dx, %eax
-	addl	%esi, %eax
-	subl	%edi, %eax
-	cmpl	$32, %eax
-	setb	%al
-	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	cmpl	%edi, %eax
 	setge	%al
 	retq
-func0000000000000144:                   # @func0000000000000144
+func0000000000000284:                   # @func0000000000000284
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	subl	%edi, %eax
 	cmpl	$65536, %eax                    # imm = 0x10000
 	setb	%al
 	retq
-func00000000000001d4:                   # @func00000000000001d4
+func00000000000003a4:                   # @func00000000000003a4
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	subl	%edi, %eax
 	cmpl	$65536, %eax                    # imm = 0x10000
 	setb	%al
 	retq
-func00000000000001d6:                   # @func00000000000001d6
+func00000000000003a6:                   # @func00000000000003a6
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	cmpl	%edi, %eax
 	setl	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movzwl	%dx, %eax
+	addl	%esi, %eax
+	subl	%edi, %eax
+	cmpl	$64, %eax
+	setb	%al
 	retq

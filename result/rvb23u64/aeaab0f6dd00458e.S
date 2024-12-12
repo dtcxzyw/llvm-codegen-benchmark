@@ -1,18 +1,20 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002e:                   # @func000000000000002e
 	sext.w	a2, a2
 	sext.w	a1, a1
+	addi	a2, a2, -1
 	seqz	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000028:                   # @func0000000000000028
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a2, a2
 	sext.w	a1, a1
+	addi	a2, a2, -1
 	seqz	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000014a:                   # @func000000000000014a
+func000000000000014e:                   # @func000000000000014e
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slti	a2, a2, 3

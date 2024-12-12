@@ -1,10 +1,9 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; linux/optimized/xprtsock.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; openjdk/optimized/superword.ll
 ; qemu/optimized/hw_pci_pci.c.ll
 ; Function Attrs: nounwind

@@ -10,7 +10,7 @@ define i64 @func0000000000000060(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, %0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -21,7 +21,7 @@ define i64 @func0000000000000040(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, %0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -32,7 +32,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, %0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -43,7 +43,7 @@ define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, %0
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -54,7 +54,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, %0
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

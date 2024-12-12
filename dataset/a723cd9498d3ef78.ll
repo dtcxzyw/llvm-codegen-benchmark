@@ -6,11 +6,11 @@ define i1 @func0000000000000006(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
   %4 = icmp slt i64 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 25 occurrences:
+; 27 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; jq/optimized/jv.ll
 ; linux/optimized/page_alloc.ll
@@ -36,12 +36,14 @@ entry:
 ; openusd/optimized/shaderProperty.cpp.ll
 ; openusd/optimized/unitTestDelegate.cpp.ll
 ; php/optimized/zend_jit.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
   %4 = icmp ult i64 %3, 4294967296
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -54,7 +56,7 @@ define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
   %4 = icmp ne i64 %3, -1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

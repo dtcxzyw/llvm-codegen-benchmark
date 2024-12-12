@@ -36,6 +36,15 @@ entry:
   ret i16 %1
 }
 
+; 1 occurrences:
+; velox/optimized/CastExpr.cpp.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000001(i128 %0) #0 {
+entry:
+  %1 = trunc nsw i128 %0 to i16
+  ret i16 %1
+}
+
 ; 3 occurrences:
 ; spike/optimized/vaaddu_vv.ll
 ; spike/optimized/vaaddu_vx.ll
@@ -44,6 +53,15 @@ entry:
 define i16 @func0000000000000002(i128 %0) #0 {
 entry:
   %1 = trunc nuw i128 %0 to i16
+  ret i16 %1
+}
+
+; 1 occurrences:
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000003(i128 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i128 %0 to i16
   ret i16 %1
 }
 

@@ -39,9 +39,7 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_trioptimize.cpp.ll
+; 3 occurrences:
 ; opencv/optimized/color_hsv.dispatch.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
@@ -50,18 +48,6 @@ define i64 @func0000000000000019(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 5
   %2 = select i1 %1, i32 1, i32 -5
-  %3 = add nsw i32 %2, %0
-  %4 = sext i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; meshlab/optimized/meshfilter.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000021(i32 %0) #0 {
-entry:
-  %1 = icmp ugt i32 %0, 1
-  %2 = select i1 %1, i32 -2, i32 1
   %3 = add nsw i32 %2, %0
   %4 = sext i32 %3 to i64
   ret i64 %4

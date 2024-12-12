@@ -8,7 +8,7 @@
 define i64 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = lshr i32 %3, 24
   %5 = zext nneg i32 %4 to i64
   ret i64 %5

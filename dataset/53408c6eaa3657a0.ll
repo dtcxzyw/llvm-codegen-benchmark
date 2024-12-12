@@ -1,8 +1,10 @@
 
-; 96 occurrences:
+; 95 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddInteract.c.ll
 ; abc/optimized/giaIf.c.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/unpack.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
@@ -30,10 +32,8 @@
 ; linux/optimized/memory.ll
 ; linux/optimized/mpicoder.ll
 ; linux/optimized/ndisc.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/net.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/regmap.ll
@@ -50,7 +50,6 @@
 ; minetest/optimized/noise.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; openjdk/optimized/c1_FrameMap.ll
-; openjdk/optimized/mlib_ImageScanPoly.ll
 ; openjdk/optimized/upcallLinker_x86_64.ll
 ; openmpi/optimized/btl_sm_component.ll
 ; openssl/optimized/libcrypto-lib-seed.ll
@@ -105,12 +104,11 @@ entry:
   ret i32 %4
 }
 
-; 155 occurrences:
+; 152 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
-; abc/optimized/satUtil.c.ll
 ; cmake/optimized/entropy_common.c.ll
 ; cpython/optimized/_codecs_kr.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -207,7 +205,6 @@ entry:
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/entropy_common.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/route.ll
@@ -252,7 +249,6 @@ entry:
 ; tev/optimized/main.cpp.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
-; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-capwap.c.ll
 ; wireshark/optimized/packet-ipdc.c.ll
 ; wireshark/optimized/packet-ppp.c.ll
@@ -290,7 +286,8 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/to_chars.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -316,6 +313,18 @@ entry:
   ret i32 %3
 }
 
+; 2 occurrences:
+; openjdk/optimized/mlib_ImageScanPoly.ll
+; wireshark/optimized/packet-ieee80211.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw i32 %1, 1
+  %3 = add nuw i32 %0, %2
+  %4 = and i32 %3, 3
+  ret i32 %4
+}
+
 ; 4 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; php/optimized/zend_alloc.ll
@@ -336,7 +345,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 1
   ret i32 %4
 }
@@ -353,17 +362,6 @@ entry:
   %2 = add i32 %1, 7
   %3 = add i32 %2, %0
   %4 = and i32 %3, 7
-  ret i32 %4
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-ieee80211.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw i32 %1, 2
-  %3 = add nuw i32 %2, %0
-  %4 = and i32 %3, 255
   ret i32 %4
 }
 

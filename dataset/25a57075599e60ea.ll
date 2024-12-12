@@ -8,7 +8,7 @@
 ; php/optimized/phpdbg_parser.ll
 ; spike/optimized/kslra32.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 13, %1
   %3 = icmp eq i64 %0, 0
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 11, %1
   %3 = icmp ult i64 %0, 4503599627370496
@@ -27,14 +27,12 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; cpython/optimized/_testinternalcapi.ll
-; nuttx/optimized/lib_flsl.c.ll
-; nuttx/optimized/lib_flsll.c.ll
 ; postgres/optimized/xlog.ll
 ; yosys/optimized/BigUnsigned.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 64, %1
   %3 = icmp eq i64 %0, 0
@@ -42,17 +40,13 @@ entry:
   ret i32 %4
 }
 
-; 14 occurrences:
+; 10 occurrences:
 ; cmake/optimized/entropy_common.c.ll
-; cmake/optimized/zbuff_common.c.ll
 ; cmake/optimized/zdict.c.ll
-; cmake/optimized/zstd_common.c.ll
 ; linux/optimized/entropy_common.ll
-; linux/optimized/zstd_common.ll
 ; lz4/optimized/lz4frame.c.ll
 ; zstd/optimized/entropy_common.c.ll
 ; zstd/optimized/zdict.c.ll
-; zstd/optimized/zstd_common.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
@@ -66,18 +60,28 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000074(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sub nuw nsw i32 32, %1
+  %3 = icmp samesign ult i64 %0, 64
+  %4 = select i1 %3, i32 6, i32 %2
+  ret i32 %4
+}
+
+; 3 occurrences:
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/huf_decompress.ll
 ; postgres/optimized/dynahash.ll
-; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sub nuw nsw i32 32, %1
-  %3 = icmp ult i64 %0, 64
-  %4 = select i1 %3, i32 6, i32 %2
+  %2 = sub nuw nsw i32 8, %1
+  %3 = icmp ult i64 %0, 72057594037927936
+  %4 = select i1 %3, i32 0, i32 %2
   ret i32 %4
 }
 

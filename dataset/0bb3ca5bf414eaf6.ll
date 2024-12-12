@@ -25,17 +25,18 @@
 define i1 @func0000000000000004(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
-  %3 = fcmp ugt double %2, %0
+  %3 = fcmp ult double %0, %2
   ret i1 %3
 }
 
@@ -64,7 +65,7 @@ entry:
 define i1 @func0000000000000002(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
@@ -74,11 +75,11 @@ entry:
 define i1 @func000000000000000b(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
-  %3 = fcmp uge double %2, %0
+  %3 = fcmp ule double %0, %2
   ret i1 %3
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; graphviz/optimized/exeval.c.ll
 ; hermes/optimized/JSObject.cpp.ll
@@ -87,8 +88,6 @@ entry:
 ; hermes/optimized/SynthTrace.cpp.ll
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
-; luajit/optimized/lj_obj.ll
-; luajit/optimized/lj_obj_dyn.ll
 ; luajit/optimized/minilua.ll
 ; openusd/optimized/delegate.cpp.ll
 ; php/optimized/softmagic.ll
@@ -99,7 +98,7 @@ entry:
 define i1 @func0000000000000008(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
@@ -113,19 +112,20 @@ entry:
 define i1 @func0000000000000007(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
-  %3 = fcmp ole double %2, %0
+  %3 = fcmp oge double %0, %2
   ret i1 %3
 }
 
@@ -137,7 +137,7 @@ entry:
 define i1 @func000000000000000a(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
-  %3 = fcmp oge double %2, %0
+  %3 = fcmp ole double %0, %2
   ret i1 %3
 }
 
@@ -147,7 +147,7 @@ entry:
 define i1 @func0000000000000001(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
-  %3 = fcmp uno double %2, %0
+  %3 = fcmp uno double %0, %2
   ret i1 %3
 }
 
@@ -157,7 +157,7 @@ entry:
 define i1 @func000000000000000d(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
-  %3 = fcmp ule double %2, %0
+  %3 = fcmp uge double %0, %2
   ret i1 %3
 }
 

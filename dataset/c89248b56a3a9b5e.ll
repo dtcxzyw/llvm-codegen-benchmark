@@ -4,7 +4,7 @@
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; lua/optimized/ldo.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000004a(i32 %0, i64 %1) #0 {
+define i32 @func000000000000008a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/datastructs.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i64 %1) #0 {
+define i32 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

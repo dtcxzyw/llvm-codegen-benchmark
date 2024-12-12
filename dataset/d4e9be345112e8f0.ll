@@ -1,10 +1,9 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; bullet3/optimized/btLemkeAlgorithm.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
 ; openjdk/optimized/img_colors.ll
 ; Function Attrs: nounwind
@@ -15,8 +14,9 @@ entry:
   ret i1 %2
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; mitsuba3/optimized/hair.cpp.ll
@@ -35,8 +35,9 @@ entry:
   ret i1 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
+; lvgl/optimized/lv_arc.ll
 ; mitsuba3/optimized/hair.cpp.ll
 ; mitsuba3/optimized/rayleigh.cpp.ll
 ; openvdb/optimized/points.cc.ll
@@ -64,7 +65,7 @@ entry:
   ret i1 %2
 }
 
-; 64 occurrences:
+; 65 occurrences:
 ; abc/optimized/sclLibUtil.c.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_revolute_joint.cpp.ll
@@ -88,6 +89,7 @@ entry:
 ; imgui/optimized/imgui_demo.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -137,7 +139,7 @@ entry:
   ret i1 %2
 }
 
-; 69 occurrences:
+; 70 occurrences:
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -177,6 +179,7 @@ entry:
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
@@ -259,12 +262,13 @@ entry:
   ret i1 %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; oiio/optimized/environment.cpp.ll
 ; openblas/optimized/slamch.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(float %0) #0 {
 entry:
-  %1 = fadd float %0, 1.000000e+00
+  %1 = fadd float %0, 5.000000e-01
   %2 = fcmp ord float %1, 0.000000e+00
   ret i1 %2
 }

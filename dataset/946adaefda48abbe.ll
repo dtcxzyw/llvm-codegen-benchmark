@@ -10,7 +10,8 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/crash_core.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
@@ -41,7 +42,9 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/attribute_value_set.ll
+; boost/optimized/default_filter_factory.ll
 ; cpython/optimized/dictobject.ll
 ; git/optimized/http-backend.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
@@ -66,9 +69,10 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; libjpeg-turbo/optimized/jfdctint.c.ll
 ; libquic/optimized/time_posix.cc.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; php/optimized/tm2unixtime.ll
@@ -80,6 +84,17 @@ entry:
   %2 = add nsw i64 %0, %1
   %3 = mul nsw i64 %2, 153
   %4 = add nsw i64 %3, 2
+  ret i64 %4
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %0, %1
+  %3 = mul nuw i64 %2, 10
+  %4 = add i64 %3, -48
   ret i64 %4
 }
 

@@ -1,6 +1,6 @@
 
-%"struct.drjit::divisor.2487265" = type <{ i32, i32, i8 }>
-%class.Polynomial.17.3640385 = type { [3 x double] }
+%"struct.drjit::divisor.2602697" = type <{ i32, i32, i8 }>
+%class.Polynomial.17.3820760 = type { [3 x double] }
 
 ; 18 occurrences:
 ; bullet3/optimized/b3GjkEpa.ll
@@ -22,31 +22,40 @@
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
 ; wasmtime-rs/optimized/4t73f85e8qqi02en.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 2, %1
-  %3 = getelementptr [3 x %"struct.drjit::divisor.2487265"], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr nuw [3 x %"struct.drjit::divisor.2602697"], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
 ; 1 occurrences:
 ; ockam-rs/optimized/4t3y03rrak2rtjym.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 64, %1
   %3 = getelementptr [0 x { { ptr, i64 }, { { i64 }, {} }, i64, i64 }], ptr %0, i64 0, i64 %2, i32 0, i32 1
   ret ptr %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; openblas/optimized/dsymv_thread_U.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 1, %1
-  %3 = getelementptr [3 x %class.Polynomial.17.3640385], ptr %0, i64 0, i64 %2, i32 0, i64 1
+  %3 = getelementptr nuw [3 x %class.Polynomial.17.3820760], ptr %0, i64 0, i64 %2, i32 0, i64 1
+  ret ptr %3
+}
+
+; 1 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 1, %1
+  %3 = getelementptr [3 x %class.Polynomial.17.3820760], ptr %0, i64 0, i64 %2, i32 0, i64 1
   ret ptr %3
 }
 
@@ -58,6 +67,17 @@ entry:
   %2 = sub i64 65536, %1
   %3 = getelementptr nusw [65536 x i8], ptr %0, i64 0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -1
+  ret ptr %4
+}
+
+; 1 occurrences:
+; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 65536, %1
+  %3 = getelementptr nusw [65536 x i8], ptr %0, i64 0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
   ret ptr %4
 }
 

@@ -1,5 +1,6 @@
 
-; 23 occurrences:
+; 25 occurrences:
+; boost/optimized/approximately_equals.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; hdf5/optimized/h5tools_utils.c.ll
@@ -8,6 +9,7 @@
 ; jq/optimized/decNumber.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; llvm/optimized/CompressInstEmitter.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; slurm/optimized/update_step.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
@@ -24,11 +26,11 @@
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; z3/optimized/mpq.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000014(i1 %0, i1 %1, ptr %2) #0 {
+define ptr @func000000000000001e(i1 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = or i1 %0, %1
   %.v = select i1 %3, i64 204, i64 200
-  %4 = getelementptr nusw i8, ptr %2, i64 %.v
+  %4 = getelementptr nusw nuw i8, ptr %2, i64 %.v
   ret ptr %4
 }
 

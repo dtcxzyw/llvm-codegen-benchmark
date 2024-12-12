@@ -1,5 +1,6 @@
 
-; 28 occurrences:
+; 29 occurrences:
+; freetype/optimized/ftbase.c.ll
 ; git/optimized/checkout.ll
 ; git/optimized/preload-index.ll
 ; hermes/optimized/IdentifierTable.cpp.ll
@@ -29,7 +30,7 @@
 ; slurm/optimized/node_scheduler.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 80
   %3 = icmp eq i32 %2, 16
@@ -55,7 +56,7 @@ entry:
 ; yosys/optimized/tribuf.ll
 ; yosys/optimized/xaiger.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4160
   %3 = icmp eq i32 %2, 64
@@ -64,13 +65,14 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
+; linux/optimized/libata-acpi.ll
 ; linux/optimized/slub.ll
 ; wireshark/optimized/packet-m2tp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i32 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
   %3 = icmp ne i32 %2, 0
@@ -83,7 +85,7 @@ entry:
 ; linux/optimized/nl80211.ll
 ; yosys/optimized/abc9_ops.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = icmp ne i32 %2, 1

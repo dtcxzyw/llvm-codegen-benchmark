@@ -6,7 +6,19 @@ func0000000000000000:                   # @func0000000000000000
 	imull	%esi, %edx
 	leal	1(%rdx,%rdi), %eax
 	retq
+func0000000000000080:                   # @func0000000000000080
+	imull	%esi, %edx
+	leal	-1(%rdx,%rdi), %eax
+	retq
+func0000000000000034:                   # @func0000000000000034
+	imull	%esi, %edx
+	leal	-1(%rdx,%rdi), %eax
+	retq
 func0000000000000005:                   # @func0000000000000005
+	imull	%esi, %edx
+	leal	5(%rdx,%rdi), %eax
+	retq
+func00000000000000d5:                   # @func00000000000000d5
 	imull	%esi, %edx
 	leal	5(%rdx,%rdi), %eax
 	retq

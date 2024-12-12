@@ -1,5 +1,5 @@
 
-; 168 occurrences:
+; 172 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -14,6 +14,7 @@
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/system_test2.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
 ; graphviz/optimized/grammar.c.ll
@@ -32,6 +33,7 @@
 ; grpc/optimized/xds_endpoint.cc.ll
 ; grpc/optimized/xds_resolver.cc.ll
 ; hdf5/optimized/H5LTparse.c.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; linux/optimized/ccm.ll
 ; linux/optimized/eventpoll.ll
 ; linux/optimized/gcm.ll
@@ -168,12 +170,14 @@
 ; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
-  %2 = and i64 %1, -4
-  %3 = or disjoint i64 %2, 1
+  %2 = and i64 %1, -65536
+  %3 = or disjoint i64 %2, 1024
   ret i64 %3
 }
 

@@ -10,7 +10,7 @@
 define i32 @func000000000000000a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %3, %1
+  %4 = icmp sgt i64 %1, %3
   %5 = select i1 %4, i32 -1, i32 %0
   ret i32 %5
 }
@@ -25,7 +25,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %.not = icmp slt i64 %3, %1
+  %.not = icmp sgt i64 %1, %3
   %4 = select i1 %.not, i32 %0, i32 0
   ret i32 %4
 }
@@ -38,7 +38,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = select i1 %4, i32 -1, i32 %0
   ret i32 %5
 }

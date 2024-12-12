@@ -11,7 +11,7 @@ entry:
   ret i32 %5
 }
 
-; 42 occurrences:
+; 30 occurrences:
 ; abc/optimized/abcUtil.c.ll
 ; hermes/optimized/Executor.cpp.ll
 ; hermes/optimized/RegexParser.cpp.ll
@@ -27,35 +27,23 @@ entry:
 ; linux/optimized/tg3.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
-; llvm/optimized/BitcodeReader.cpp.ll
-; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/CGCUDANV.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/CoroSplit.cpp.ll
-; llvm/optimized/ExpandVariadics.cpp.ll
 ; llvm/optimized/ExtractGV.cpp.ll
 ; llvm/optimized/Function.cpp.ll
-; llvm/optimized/FunctionImport.cpp.ll
-; llvm/optimized/FunctionImportUtils.cpp.ll
-; llvm/optimized/GlobalOpt.cpp.ll
 ; llvm/optimized/Globals.cpp.ll
-; llvm/optimized/IRMover.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
 ; llvm/optimized/JumpThreading.cpp.ll
-; llvm/optimized/LowerEmuTLS.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/ModuleSymbolTable.cpp.ll
-; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; php/optimized/pcre2_compile.ll
-; redis/optimized/siphash.ll
 ; ruby/optimized/pack.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -91
   %4 = icmp ult i32 %3, -26
@@ -63,8 +51,12 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 8 occurrences:
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
+; linux/optimized/irq.ll
 ; linux/optimized/sg.ll
+; lvgl/optimized/lv_flex.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
 ; ruby/optimized/compile.ll
@@ -80,15 +72,14 @@ entry:
 ; qemu/optimized/tcg.c.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = select i1 %3, i32 %0, i32 %1
   ret i32 %4
 }
 
-; 34 occurrences:
-; abc/optimized/rsbDec6.c.ll
+; 32 occurrences:
 ; c3c/optimized/llvm_codegen_builtins.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
@@ -113,7 +104,6 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/LTOCodeGenerator.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; ncnn/optimized/net.cpp.ll
@@ -131,11 +121,30 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 21 occurrences:
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; openjdk/optimized/ProcessHandleImpl_unix.ll
 ; openjdk/optimized/os_posix.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 16777216
   %4 = icmp sgt i32 %3, 33554431
@@ -151,7 +160,7 @@ entry:
 ; php/optimized/escape_analysis.ll
 ; wireshark/optimized/packet-hartip.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 %0, i32 %1

@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000034(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -52
-  %3 = icmp ult i8 %2, 26
+  %3 = icmp samesign ult i8 %2, 26
   %4 = select i1 %3, i8 %2, i8 %0
   ret i8 %4
 }

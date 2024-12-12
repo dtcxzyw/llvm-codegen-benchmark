@@ -82,15 +82,3 @@ func00000000000000cb:                   # @func00000000000000cb
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000c7:                   # @func00000000000000c7
-	vxorpd	%xmm6, %xmm6, %xmm6
-	vcmplepd	%zmm2, %zmm6, %k1
-	vcmplepd	%zmm3, %zmm6, %k2
-	vmovapd	%zmm3, %zmm5 {%k2}
-	vmovapd	%zmm2, %zmm4 {%k1}
-	vcmpneqpd	%zmm0, %zmm4, %k0
-	vcmpneqpd	%zmm1, %zmm5, %k1
-	kunpckbw	%k0, %k1, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/wlnRetime.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %0, %1
   %4 = icmp sgt i32 %2, 2
@@ -15,7 +15,7 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %0, %1
   %4 = icmp ult i32 %2, 2147483647

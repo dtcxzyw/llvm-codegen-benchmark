@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -7,11 +7,13 @@
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000022(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %.idx = shl i64 %4, 4
   %5 = getelementptr nusw i8, ptr %0, i64 %.idx
   ret ptr %5
@@ -24,7 +26,7 @@ entry:
 define ptr @func0000000000000070(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = shl i64 %4, 3
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -38,13 +40,13 @@ entry:
 define ptr @func0000000000000054(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = shl nsw i64 %4, 3
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_lens.cc.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -55,17 +57,19 @@ entry:
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; opencv/optimized/merge.dispatch.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %.idx = shl nsw i64 %4, 2
-  %5 = getelementptr nusw i8, ptr %0, i64 %.idx
+  %4 = add nuw nsw i64 %1, %3
+  %.idx = shl nuw nsw i64 %4, 2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
   ret ptr %5
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; arrow/optimized/key_hash.cc.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/JpegDecompressor.cpp.ll
@@ -73,11 +77,13 @@ entry:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; libquic/optimized/shift.c.ll
 ; opencv/optimized/resize.cpp.ll
+; raylib/optimized/raudio.c.ll
+; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000007c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = shl nuw nsw i64 %4, 1
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -89,7 +95,7 @@ entry:
 define ptr @func0000000000000078(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = shl nuw i64 %4, 2
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -104,7 +110,7 @@ entry:
 define ptr @func0000000000000040(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = shl i64 %4, 2
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -116,7 +122,7 @@ entry:
 define ptr @func0000000000000014(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = shl nsw i64 %4, 2
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -128,7 +134,7 @@ entry:
 define ptr @func0000000000000034(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = shl nsw i64 %4, 3
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -142,7 +148,7 @@ entry:
 define ptr @func0000000000000050(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = shl i64 %4, 4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -154,21 +160,24 @@ entry:
 define ptr @func0000000000000076(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = shl nsw i64 %4, 4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 3 occurrences:
+; 6 occurrences:
 ; darktable/optimized/JpegDecompressor.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; opencv/optimized/resize.cpp.ll
+; openspiel/optimized/chess_board.cc.ll
+; raylib/optimized/raudio.c.ll
+; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = shl nuw nsw i64 %4, 1
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -178,12 +187,12 @@ entry:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = shl nuw nsw i64 %4, 3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -193,7 +202,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = shl i64 %4, 1
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6

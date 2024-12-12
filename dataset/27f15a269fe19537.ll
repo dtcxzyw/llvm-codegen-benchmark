@@ -43,13 +43,12 @@ entry:
   ret float %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btInternalEdgeUtility.ll
 ; bullet3/optimized/poly34.ll
 ; draco/optimized/attribute_octahedron_transform.cc.ll
-; gromacs/optimized/slarfg.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
@@ -66,13 +65,12 @@ entry:
   ret float %4
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; bullet3/optimized/btBoxBoxDetector.ll
 ; bullet3/optimized/btSoftBody.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; gromacs/optimized/densityfit.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
 ; gromacs/optimized/ssteqr.cpp.ll

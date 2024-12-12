@@ -1,15 +1,14 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; cpython/optimized/listobject.ll
 ; hermes/optimized/escape.cpp.ll
 ; icu/optimized/ucnv_bld.ll
 ; linux/optimized/gup.ll
-; linux/optimized/seccomp.ll
 ; oiio/optimized/environment.cpp.ll
 ; stb/optimized/stb_ds.c.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null

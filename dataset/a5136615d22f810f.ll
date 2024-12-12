@@ -1,18 +1,14 @@
 
-; 15 occurrences:
+; 11 occurrences:
 ; abc/optimized/cuddZddUtil.c.ll
 ; abc/optimized/ifMan.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; icu/optimized/measunit.ll
 ; icu/optimized/number_usageprefs.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; openusd/optimized/decodemv.c.ll
-; postgres/optimized/heapam.ll
 ; postgres/optimized/nodeModifyTable.ll
-; postgres/optimized/parse_utilcmd.ll
 ; postgres/optimized/relnode.ll
 ; ruby/optimized/marshal.ll
 ; Function Attrs: nounwind
@@ -35,13 +31,13 @@ entry:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_test.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
+; arrow/optimized/light_array.cc.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cvc5/optimized/Solver.cc.ll
 ; darktable/optimized/introspection_sharpen.c.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; libjpeg-turbo/optimized/rdgif.c.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/webp_enc.c.ll
 ; linux/optimized/percpu.ll

@@ -1,5 +1,5 @@
 
-; 156 occurrences:
+; 158 occurrences:
 ; abc/optimized/abcFunc.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/acbUtil.c.ll
@@ -126,6 +126,7 @@
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; opencv/optimized/weighted_median_filter.cpp.ll
@@ -142,6 +143,7 @@
 ; qemu/optimized/hw_audio_intel-hda.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
+; qemu/optimized/hw_pci_shpc.c.ll
 ; qemu/optimized/hw_scsi_mptsas.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll

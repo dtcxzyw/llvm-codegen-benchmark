@@ -1,3 +1,9 @@
+func000000000000000d:                   # @func000000000000000d
+	movq	%rsi, %rax
+	shrq	$52, %rax
+	andl	$2047, %eax                     # imm = 0x7FF
+	orq	%rdi, %rax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	andl	$-2, %esi
 	shlq	$32, %rdi

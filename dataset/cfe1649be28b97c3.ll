@@ -1,5 +1,5 @@
 
-; 640 occurrences:
+; 658 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/sclLibScl.c.ll
 ; abc/optimized/timDump.c.ll
@@ -223,7 +223,6 @@
 ; minetest/optimized/particles.cpp.ll
 ; minetest/optimized/renderingengine.cpp.ll
 ; minetest/optimized/server.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; minetest/optimized/tileanimation.cpp.ll
 ; minetest/optimized/tool.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -444,7 +443,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/reformat.c.ll
 ; openusd/optimized/stbImage.cpp.ll
-; openusd/optimized/typeRegistry.cpp.ll
 ; openvdb/optimized/Activate.cc.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/ChangeBackground.cc.ll
@@ -452,7 +450,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -640,6 +637,27 @@
 ; yoga/optimized/Node.cpp.ll
 ; yoga/optimized/YGNodeStyle.cpp.ll
 ; z3/optimized/mpf.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4km3eupdnqqnodg5d7nrlf2sf.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/exru7xor9i4a4ixpzw7x9xk8s.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {
 entry:

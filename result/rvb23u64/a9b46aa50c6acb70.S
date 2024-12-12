@@ -43,3 +43,15 @@ func0000000000000008:                   # @func0000000000000008
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 1
+	czero.nez	a2, a2, a0
+	czero.eqz	a0, a1, a0
+	li	a1, 480
+	or	a0, a0, a2
+	sext.w	a2, a0
+	sltiu	a2, a2, 577
+	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
+	or	a0, a0, a1
+	ret

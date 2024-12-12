@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/domgraph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %2, %1
   %4 = icmp ult i32 %3, %0
@@ -23,7 +23,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/cmstypes.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000226(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -4
   %4 = sub i32 %3, %1
@@ -111,7 +111,7 @@ entry:
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 63
   %4 = sub nsw i32 %3, %1
@@ -123,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/crtmgr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -4
   %4 = sub nsw i32 %3, %1
@@ -135,31 +135,19 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/pe.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = add nsw i32 %4, -3
   %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-cdp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -2
-  %4 = sub nsw i32 %3, %1
-  %5 = add nsw i32 %4, -2
-  %6 = icmp ult i32 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -2
   %4 = sub nuw i32 %3, %1

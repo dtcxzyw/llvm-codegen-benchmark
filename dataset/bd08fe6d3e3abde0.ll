@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll

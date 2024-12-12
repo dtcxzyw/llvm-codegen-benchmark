@@ -8,7 +8,7 @@
 ; opencv/optimized/persistence_yml.cpp.ll
 ; openusd/optimized/resolver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000084(i8 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
   %3 = add i8 %2, -58

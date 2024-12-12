@@ -8,7 +8,7 @@ entry:
   %4 = add i32 %1, -16
   %5 = add nsw i32 %4, %3
   %6 = add i32 %5, 8
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -28,9 +28,8 @@ entry:
   ret i32 %7
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; flac/optimized/bitwriter.c.ll
-; linux/optimized/intel_audio.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; wireshark/optimized/packet-sflow.c.ll
 ; wireshark/optimized/packet-srvloc.c.ll

@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 36 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -12,6 +12,8 @@
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
@@ -32,18 +34,21 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
-; 238 occurrences:
+; 237 occurrences:
 ; abc/optimized/solver.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -146,8 +151,6 @@ entry:
 ; linux/optimized/sd.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/timekeeping.ll
-; linux/optimized/vclock_gettime.ll
-; linux/optimized/vsyscall.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
@@ -301,7 +304,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

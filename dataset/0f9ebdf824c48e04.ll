@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 38 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/cfilters.c.ll
@@ -22,6 +22,7 @@
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; openjdk/optimized/hb-ot-map.ll
 ; openusd/optimized/patchBuilder.cpp.ll

@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpeqd	%xmm1, %xmm0, %k1
 	vpaddq	%ymm3, %ymm2, %ymm0 {%k1} {z}
@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI2_0:
 	.quad	1                               # 0x1
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpcmpeqd	%ymm4, %ymm4, %ymm4
 	vpbroadcastq	.LCPI2_0(%rip), %ymm3   # ymm3 = [1,1,1,1]
 	vpcmpeqd	%xmm1, %xmm0, %k1

@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 30 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/acecPa.c.ll
 ; abc/optimized/acecTree.c.ll
@@ -24,6 +24,12 @@
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; linux/optimized/percpu.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:

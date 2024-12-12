@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; gromacs/optimized/poscalc.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -8,6 +8,7 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/md.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind

@@ -1,4 +1,15 @@
 
+; 1 occurrences:
+; bdwgc/optimized/gc.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %2, 1
+  %4 = select i1 %0, i64 %1, i64 %3
+  %5 = shl nsw i64 %4, 4
+  ret i64 %5
+}
+
 ; 6 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; g2o/optimized/isometry3d_mappings.cpp.ll
@@ -15,10 +26,15 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 10 occurrences:
+; arrow/optimized/utf8.cc.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
+; hermes/optimized/BCP47Parser.cpp.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
+; jsonnet/optimized/desugarer.cpp.ll
+; jsonnet/optimized/parser.cpp.ll
 ; jsonnet/optimized/string_utils.cpp.ll
+; jsonnet/optimized/vm.cpp.ll
 ; libquic/optimized/string16.cc.ll
 ; lief/optimized/BinaryStream.cpp.ll
 ; Function Attrs: nounwind

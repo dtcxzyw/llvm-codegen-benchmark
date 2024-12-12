@@ -4,6 +4,12 @@ func0000000000000003:                   # @func0000000000000003
 	orl	%esi, %eax
 	orq	%rdi, %rax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	movq	%rdx, %rax
+	andl	$-65536, %eax                   # imm = 0xFFFF0000
+	orl	%esi, %eax
+	orq	%rdi, %rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	movq	%rdx, %rax
 	andl	$-1073741824, %eax              # imm = 0xC0000000
@@ -13,12 +19,6 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000000:                   # @func0000000000000000
 	movq	%rdx, %rax
 	andl	$7, %eax
-	orl	%esi, %eax
-	orq	%rdi, %rax
-	retq
-func0000000000000001:                   # @func0000000000000001
-	movq	%rdx, %rax
-	andl	$-57, %eax
 	orl	%esi, %eax
 	orq	%rdi, %rax
 	retq

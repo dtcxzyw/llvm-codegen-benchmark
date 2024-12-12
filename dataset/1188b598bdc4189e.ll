@@ -1,8 +1,9 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nori/optimized/nanovg.c.ll
+; opencv/optimized/OpenEXRimages_HDR_Retina_toneMapping.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll

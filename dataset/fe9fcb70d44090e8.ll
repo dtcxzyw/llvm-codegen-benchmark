@@ -1,5 +1,5 @@
 
-; 82 occurrences:
+; 83 occurrences:
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_internal.cc.ll
@@ -13,6 +13,7 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_sdl_mouse.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll

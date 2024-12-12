@@ -1,6 +1,25 @@
 
-; 27 occurrences:
+; 46 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/channel.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; cpython/optimized/obmalloc.ll
 ; hdf5/optimized/H5FDcore.c.ll
 ; hdf5/optimized/H5FSsection.c.ll
@@ -33,14 +52,14 @@ entry:
   %3 = sub i64 %2, %1
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
 ; 1 occurrences:
 ; folly/optimized/MemoryMapping.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000045(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000085(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %2, %1
   %4 = icmp eq i64 %1, 0

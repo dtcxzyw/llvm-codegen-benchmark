@@ -12,6 +12,28 @@
 define i64 @func0000000000000002(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i64 %0, 1
+  %4 = or i1 %2, %3
+  %5 = select i1 %4, i64 %0, i64 %1
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/area.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = icmp ne i64 %0, 0
+  %4 = or i1 %3, %2
+  %5 = select i1 %4, i64 %0, i64 %1
+  ret i64 %5
+}
+
+; 1 occurrences:
+; nuklear/optimized/unity.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = icmp ult i64 %0, 5
   %4 = or i1 %3, %2
   %5 = select i1 %4, i64 %0, i64 %1
   ret i64 %5

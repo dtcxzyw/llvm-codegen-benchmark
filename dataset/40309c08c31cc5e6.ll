@@ -4,7 +4,7 @@
 ; linux/optimized/ehci-hcd.ll
 ; qemu/optimized/hw_net_rocker_rocker_of_dpa.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 4095
@@ -19,12 +19,12 @@ entry:
 ; icu/optimized/unames.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 65535
   %4 = zext i16 %0 to i32
-  %5 = icmp ugt i32 %3, %4
+  %5 = icmp samesign ugt i32 %3, %4
   ret i1 %5
 }
 
@@ -34,12 +34,12 @@ entry:
 ; jq/optimized/decNumber.ll
 ; linux/optimized/xhci.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 32767
   %4 = zext i16 %0 to i32
-  %5 = icmp ult i32 %3, %4
+  %5 = icmp samesign ult i32 %3, %4
   ret i1 %5
 }
 
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 19
   %3 = and i32 %2, 31

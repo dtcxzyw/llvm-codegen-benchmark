@@ -1,18 +1,16 @@
 
-; 20 occurrences:
+; 18 occurrences:
 ; linux/optimized/amdtopology.ll
 ; linux/optimized/tg3.ll
 ; minetest/optimized/CImage.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; spike/optimized/f32_classify.ll
 ; spike/optimized/f32_div.ll
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f32_rem.ll
 ; spike/optimized/f32_roundToInt.ll
 ; spike/optimized/f32_sqrt.ll
 ; spike/optimized/f32_to_bf16.ll
-; spike/optimized/f32_to_f16.ll
 ; spike/optimized/f32_to_i32.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64.ll
@@ -38,10 +36,10 @@ entry:
 ; spike/optimized/f32_to_ui32_r_minMag.ll
 ; spike/optimized/f32_to_ui64_r_minMag.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 2139095040
-  %2 = icmp ult i32 %1, 1065353216
+  %2 = icmp samesign ult i32 %1, 1065353216
   ret i1 %2
 }
 
@@ -57,10 +55,10 @@ entry:
 ; spike/optimized/f32_to_ui64.ll
 ; spike/optimized/f32_to_ui64_r_minMag.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0) #0 {
+define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 2139095040
-  %2 = icmp ugt i32 %1, 1325400064
+  %2 = icmp samesign ugt i32 %1, 1325400064
   ret i1 %2
 }
 

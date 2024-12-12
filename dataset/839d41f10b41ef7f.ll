@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
 ; graphviz/optimized/lab.c.ll
 ; gromacs/optimized/cstringutil.cpp.ll
@@ -13,7 +13,6 @@
 ; openjdk/optimized/multiVis.ll
 ; php/optimized/session.ll
 ; postgres/optimized/nbtcompare.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; slurm/optimized/common_as.ll

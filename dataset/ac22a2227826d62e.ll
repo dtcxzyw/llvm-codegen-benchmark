@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; assimp/optimized/zip.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
@@ -7,7 +7,6 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/h5import.c.ll
 ; hermes/optimized/zip.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -21,9 +20,9 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
-; postgres/optimized/refint.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; wireshark/optimized/packet-rtps.c.ll
 ; zxing/optimized/Error.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i16 %0) #0 {

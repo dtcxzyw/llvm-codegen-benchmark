@@ -1,13 +1,4 @@
-func0000000000000110:                   # @func0000000000000110
-	andb	$15, %sil
-	cmpb	$4, %sil
-	setae	%cl
-	cmpb	$2, %sil
-	setae	%al
-	andb	%dil, %al
-	orb	%cl, %al
-	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	andb	$7, %sil
 	cmpb	$4, %sil
 	sete	%cl
@@ -16,7 +7,7 @@ func0000000000000022:                   # @func0000000000000022
 	andb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	andb	$7, %sil
 	cmpb	$3, %sil
 	setne	%cl

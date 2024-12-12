@@ -32,8 +32,8 @@ func0000000000000003:                   # @func0000000000000003
 	vbroadcastsd	.LCPI2_0(%rip), %zmm6   # zmm6 = [3.0E+0,3.0E+0,3.0E+0,3.0E+0,3.0E+0,3.0E+0,3.0E+0,3.0E+0]
 	vdivpd	%zmm6, %zmm4, %zmm4
 	vdivpd	%zmm6, %zmm5, %zmm5
-	vaddpd	%zmm3, %zmm5, %zmm3
-	vaddpd	%zmm2, %zmm4, %zmm2
+	vaddpd	%zmm5, %zmm3, %zmm3
+	vaddpd	%zmm4, %zmm2, %zmm2
 	vcmpnlepd	%zmm2, %zmm0, %k0
 	vcmpnlepd	%zmm3, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0

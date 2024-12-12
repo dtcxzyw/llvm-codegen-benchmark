@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	sext.w	a2, a2
 	sext.w	a3, a1
 	xor	a2, a2, a3
@@ -12,7 +12,7 @@ func0000000000000008:                   # @func0000000000000008
 	czero.eqz	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	sext.w	a2, a2
 	sext.w	a3, a1
 	xor	a2, a2, a3

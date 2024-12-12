@@ -25,16 +25,16 @@ func000000000000000c:                   # @func000000000000000c
 	addl	%edi, %eax
 	imull	$-12289, %eax, %eax             # imm = 0xCFFF
 	retq
+func0000000000000004:                   # @func0000000000000004
+	movzwl	%si, %eax
+	addl	%edi, %eax
+	leal	(%rax,%rax,2), %eax
+	negl	%eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movzwl	%si, %ecx
 	addl	%edi, %ecx
 	movl	%ecx, %eax
 	shll	$10, %eax
 	addl	%ecx, %eax
-	retq
-func0000000000000004:                   # @func0000000000000004
-	movzwl	%si, %eax
-	addl	%edi, %eax
-	leal	(%rax,%rax,2), %ecx
-	leal	(%rax,%rcx,4), %eax
 	retq

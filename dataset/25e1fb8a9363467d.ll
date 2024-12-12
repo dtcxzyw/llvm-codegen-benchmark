@@ -13,7 +13,7 @@
 ; stb/optimized/stb_dxt.c.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 86400
   %3 = icmp slt i32 %1, 0
@@ -21,7 +21,7 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/fraHot.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
@@ -29,7 +29,6 @@ entry:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; c3c/optimized/bigint.c.ll
-; icu/optimized/taiwncal.ll
 ; openblas/optimized/dspgvd.c.ll
 ; opencv/optimized/spatialgradient.cpp.ll
 ; openspiel/optimized/Scheduler.cpp.ll
@@ -38,7 +37,7 @@ entry:
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; yosys/optimized/ezminisat.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -64
   %3 = icmp sgt i32 %1, 63
@@ -75,29 +74,27 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/trees.c.ll
-; wireshark/optimized/packet-eap.c.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = icmp ult i32 %1, 257
+  %3 = icmp samesign ult i32 %1, 257
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
 
-; 4 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 3 occurrences:
 ; icu/optimized/collationfastlatin.ll
 ; libquic/optimized/a_utctm.c.ll
 ; libquic/optimized/prtime.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 52
-  %3 = icmp ult i32 %1, 98
+  %3 = icmp samesign ult i32 %1, 98
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
@@ -105,7 +102,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/prtime.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 2000
   %3 = icmp slt i32 %1, 70
@@ -117,10 +114,10 @@ entry:
 ; clamav/optimized/strfn.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 87
-  %3 = icmp ugt i32 %1, 9
+  %3 = icmp samesign ugt i32 %1, 9
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
@@ -137,12 +134,34 @@ entry:
 }
 
 ; 1 occurrences:
+; wireshark/optimized/packet-eap.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, 1
+  %3 = icmp ult i32 %1, 4
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; z3/optimized/hwf.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1023
-  %3 = icmp ugt i32 %1, 1022
+  %3 = icmp samesign ugt i32 %1, 1022
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 1
+  %3 = icmp ult i32 %1, 256
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }

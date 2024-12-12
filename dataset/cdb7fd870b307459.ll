@@ -1,8 +1,9 @@
 
-; 80 occurrences:
+; 81 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
+; boost/optimized/attribute_name.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cmake/optimized/cmDependsC.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
@@ -109,7 +110,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = and i64 %6, 4294967295
   ret i64 %7
 }

@@ -50,9 +50,9 @@ entry:
 ; cpython/optimized/bytesio.ll
 ; cpython/optimized/stringio.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i64 @func000000000000014a(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 9
+  %2 = icmp samesign ult i64 %1, 9
   %3 = select i1 %2, i64 3, i64 6
   %4 = add nuw i64 %0, %1
   %5 = add nuw i64 %4, %3

@@ -1,6 +1,11 @@
 
-; 56 occurrences:
+; 61 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; casadi/optimized/idas_bbdpre.c.ll
 ; casadi/optimized/idas_direct.c.ll
 ; cpython/optimized/mathmodule.ll

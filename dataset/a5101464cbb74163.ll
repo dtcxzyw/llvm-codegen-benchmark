@@ -1,9 +1,8 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; llvm/optimized/LiveRangeCalc.cpp.ll
-; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; llvm/optimized/MemorySSAUpdater.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
@@ -21,13 +20,14 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
 ; graphviz/optimized/emit.c.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
 ; openjdk/optimized/loopnode.ll
 ; openssl/optimized/libcrypto-lib-decoder_meth.ll
 ; openssl/optimized/libcrypto-lib-encoder_meth.ll

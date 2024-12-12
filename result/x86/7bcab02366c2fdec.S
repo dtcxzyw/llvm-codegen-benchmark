@@ -1,4 +1,4 @@
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	andl	$-8, %esi
 	cmpl	$8, %esi
 	sete	%al
@@ -17,7 +17,7 @@ func0000000000000001:                   # @func0000000000000001
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	cmpl	$8, %esi
 	sete	%al
 	orb	%dil, %al

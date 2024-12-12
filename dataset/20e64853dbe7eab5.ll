@@ -1,11 +1,11 @@
 
 ; 12 occurrences:
+; boost/optimized/ipv6_address_rule.ll
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/sha3module.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; openspiel/optimized/pentago.cc.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/zend_hash.ll
@@ -33,10 +33,9 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_hotpixels.c.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
@@ -57,9 +56,8 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -69,16 +67,18 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/ipv6_address_rule.ll
 ; gromacs/optimized/lincs.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; openusd/optimized/aom_scale.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0) #0 {
 entry:
-  %1 = shl nsw i32 %0, 3
-  %2 = sub nsw i32 8, %1
+  %1 = shl nsw i32 %0, 1
+  %2 = sub nsw i32 16, %1
   %3 = sext i32 %2 to i64
   ret i64 %3
 }

@@ -28,7 +28,8 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; llvm/optimized/Commit.cpp.ll
 ; luau/optimized/Compiler.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
@@ -86,7 +87,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc i64 %1 to i32

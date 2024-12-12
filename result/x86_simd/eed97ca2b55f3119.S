@@ -12,14 +12,26 @@ func0000000000000022:                   # @func0000000000000022
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+func000000000000002a:                   # @func000000000000002a
+	vxorpd	%xmm6, %xmm6, %xmm6
+	vcmpltpd	%zmm6, %zmm4, %k1
+	vcmpltpd	%zmm6, %zmm5, %k2
+	vmovapd	%zmm3, %zmm5 {%k2}
+	vmovapd	%zmm2, %zmm4 {%k1}
+	vcmplepd	%zmm4, %zmm0, %k0
+	vcmplepd	%zmm5, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
 func0000000000000027:                   # @func0000000000000027
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmpltpd	%zmm6, %zmm4, %k1
 	vcmpltpd	%zmm6, %zmm5, %k2
 	vmovapd	%zmm3, %zmm5 {%k2}
 	vmovapd	%zmm2, %zmm4 {%k1}
-	vcmpneqpd	%zmm0, %zmm4, %k0
-	vcmpneqpd	%zmm1, %zmm5, %k1
+	vcmpneqpd	%zmm4, %zmm0, %k0
+	vcmpneqpd	%zmm5, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -54,8 +66,8 @@ func0000000000000028:                   # @func0000000000000028
 	vcmpltpd	%zmm6, %zmm5, %k2
 	vmovapd	%zmm3, %zmm5 {%k2}
 	vmovapd	%zmm2, %zmm4 {%k1}
-	vcmpeqpd	%zmm0, %zmm4, %k0
-	vcmpeqpd	%zmm1, %zmm5, %k1
+	vcmpeqpd	%zmm4, %zmm0, %k0
+	vcmpeqpd	%zmm5, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

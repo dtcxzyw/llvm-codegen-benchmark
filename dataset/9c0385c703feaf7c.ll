@@ -1,6 +1,5 @@
 
-; 78 occurrences:
-; abc/optimized/verStream.c.ll
+; 77 occurrences:
 ; bdwgc/optimized/cordprnt.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/pdf.c.ll
@@ -15,7 +14,6 @@
 ; git/optimized/apply.ll
 ; graphviz/optimized/excontext.c.ll
 ; hermes/optimized/APFloat.cpp.ll
-; hermes/optimized/circular_raw_ostream.cpp.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; icu/optimized/package.ll
 ; libquic/optimized/aead_test.cc.ll
@@ -24,7 +22,6 @@
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/trace_probe.ll
-; linux/optimized/wep.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
@@ -74,6 +71,8 @@
 ; php/optimized/phpdbg_utils.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/datetime.ll
+; proxygen/optimized/HPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
 ; redis/optimized/sds.ll
 ; redis/optimized/sort.ll
 ; regex-rs/optimized/6f4i3c8223u3bmw.ll

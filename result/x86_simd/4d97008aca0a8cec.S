@@ -15,18 +15,26 @@ func0000000000000008:                   # @func0000000000000008
 	vpaddq	%ymm2, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI2_0:
-	.quad	40                              # 0x28
-func000000000000000f:                   # @func000000000000000f
+	.quad	2                               # 0x2
+func000000000000000d:                   # @func000000000000000d
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI3_0:
+	.quad	40                              # 0x28
+func000000000000000f:                   # @func000000000000000f
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k1
+	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0 {%k1}
+	retq
+.LCPI4_0:
 	.quad	12                              # 0xc
 func0000000000000005:                   # @func0000000000000005
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
-	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0 {%k1}
 	retq

@@ -33,6 +33,12 @@ func000000000000001a:                   # @func000000000000001a
 	slli	a2, a2, 3
 	add	a0, a0, a2
 	ret
+func0000000000000017:                   # @func0000000000000017
+	srli	a2, a2, 3
+	sub	a2, a2, a1
+	slli	a2, a2, 3
+	add	a0, a0, a2
+	ret
 func000000000000001f:                   # @func000000000000001f
 	srli	a2, a2, 3
 	sub	a2, a2, a1
@@ -49,6 +55,12 @@ func000000000000000e:                   # @func000000000000000e
 	srai	a2, a2, 32
 	sub	a2, a2, a1
 	slli	a2, a2, 2
+	add	a0, a0, a2
+	ret
+func0000000000000013:                   # @func0000000000000013
+	srli	a2, a2, 3
+	sub	a2, a2, a1
+	slli	a2, a2, 3
 	add	a0, a0, a2
 	ret
 func0000000000000018:                   # @func0000000000000018

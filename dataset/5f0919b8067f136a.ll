@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 65 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/absRpm.c.ll
@@ -62,6 +62,8 @@
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/verilog_backend.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {

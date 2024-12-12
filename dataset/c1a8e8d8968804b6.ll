@@ -1,5 +1,50 @@
 
-; 48 occurrences:
+; 22 occurrences:
+; abc/optimized/kitTruth.c.ll
+; clamav/optimized/getbits.cpp.ll
+; clamav/optimized/pe_icons.c.ll
+; clamav/optimized/unpack.cpp.ll
+; flac/optimized/bitwriter.c.ll
+; git/optimized/packfile.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; libjpeg-turbo/optimized/jdlossls.c.ll
+; libsodium/optimized/libsse2_la-poly1305_sse2.ll
+; linux/optimized/hash.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; minetest/optimized/CGUIEditBox.cpp.ll
+; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
+; mitsuba3/optimized/measured.cpp.ll
+; openjdk/optimized/hb-face.ll
+; openjdk/optimized/hb-ot-font.ll
+; postgres/optimized/tsvector_op.ll
+; wireshark/optimized/packet-gcsna.c.ll
+; wireshark/optimized/packet-someip.c.ll
+; wireshark/optimized/wimax_harq_map_decoder.c.ll
+; yosys/optimized/stat.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = lshr i32 %3, 1
+  %5 = add i32 %0, %4
+  ret i32 %5
+}
+
+; 3 occurrences:
+; libquic/optimized/f_string.c.ll
+; openssl/optimized/libcrypto-lib-f_string.ll
+; openssl/optimized/libcrypto-shlib-f_string.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = lshr exact i32 %3, 1
+  %5 = add nuw nsw i32 %4, %0
+  ret i32 %5
+}
+
+; 47 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -45,7 +90,6 @@
 ; linux/optimized/md.ll
 ; linux/optimized/vlv_dsi.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; ruby/optimized/japanese.ll
 ; soc-simulator/optimized/verilated.ll
 ; wireshark/optimized/in_cksum.c.ll
 ; Function Attrs: nounwind
@@ -53,51 +97,6 @@ define i32 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 1
-  %5 = add nuw nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 22 occurrences:
-; abc/optimized/kitTruth.c.ll
-; clamav/optimized/getbits.cpp.ll
-; clamav/optimized/pe_icons.c.ll
-; clamav/optimized/unpack.cpp.ll
-; flac/optimized/bitwriter.c.ll
-; git/optimized/packfile.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; libjpeg-turbo/optimized/jdlossls.c.ll
-; libsodium/optimized/libsse2_la-poly1305_sse2.ll
-; linux/optimized/hash.ll
-; llvm/optimized/CGBuiltin.cpp.ll
-; minetest/optimized/CGUIEditBox.cpp.ll
-; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
-; mitsuba3/optimized/measured.cpp.ll
-; openjdk/optimized/hb-face.ll
-; openjdk/optimized/hb-ot-font.ll
-; postgres/optimized/tsvector_op.ll
-; wireshark/optimized/packet-gcsna.c.ll
-; wireshark/optimized/packet-someip.c.ll
-; wireshark/optimized/wimax_harq_map_decoder.c.ll
-; yosys/optimized/stat.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %1, %2
-  %4 = lshr i32 %3, 1
-  %5 = add i32 %4, %0
-  ret i32 %5
-}
-
-; 3 occurrences:
-; libquic/optimized/f_string.c.ll
-; openssl/optimized/libcrypto-lib-f_string.ll
-; openssl/optimized/libcrypto-shlib-f_string.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %1, %2
-  %4 = lshr exact i32 %3, 1
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -163,7 +162,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = lshr i32 %3, 31
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -176,7 +175,7 @@ define i32 @func0000000000000012(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = lshr i32 %3, 16
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -212,7 +211,7 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/kitTruth.c.ll
@@ -225,6 +224,7 @@ entry:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
 ; Function Attrs: nounwind
@@ -232,7 +232,7 @@ define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 2
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -260,16 +260,17 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; lvgl/optimized/lv_calendar.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = lshr i32 %3, 31
-  %5 = add nuw nsw i32 %4, %0
+  %4 = lshr i32 %3, 2
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

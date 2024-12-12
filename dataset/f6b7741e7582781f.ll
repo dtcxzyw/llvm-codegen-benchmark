@@ -1,10 +1,9 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
-; qemu/optimized/util_buffer.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -24,6 +24,14 @@ func0000000000000004:                   # @func0000000000000004
 	cmpw	$5, %si
 	cmovbl	%edi, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpw	$2, %si
+	cmovael	%edi, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movl	%edi, %eax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax
 	cmpw	$13, %si

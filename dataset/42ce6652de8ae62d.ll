@@ -1,5 +1,5 @@
 
-; 275 occurrences:
+; 273 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -106,8 +106,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -280,11 +278,11 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %notmask = shl nsw i64 -1, %1
   %2 = xor i64 %notmask, -1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   ret i64 %3
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
@@ -299,7 +297,6 @@ entry:
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/iterator.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/page-io.ll
 ; linux/optimized/read.ll
 ; linux/optimized/remap_range.ll
@@ -344,7 +341,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 2, %1
   %3 = add nsw i64 %2, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 
@@ -362,7 +359,7 @@ define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %notmask = shl nsw i64 -1, %1
   %2 = xor i64 %notmask, -1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   ret i64 %3
 }
 
@@ -374,7 +371,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = add nuw i64 %2, 3
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 
@@ -387,7 +384,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 4096, %1
   %3 = add nuw i64 %2, 4294967295
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -14,6 +14,7 @@
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -40,26 +41,6 @@ entry:
   %4 = mul nuw nsw i32 %1, 60
   %5 = add nuw nsw i32 %4, %3
   %6 = add nuw nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 9 occurrences:
-; libquic/optimized/time_support.c.ll
-; minetest/optimized/mapgen_v6.cpp.ll
-; opencv/optimized/brisk.cpp.ll
-; openjdk/optimized/jidctint.ll
-; openjdk/optimized/jidctred.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; quantlib/optimized/thirty360.ll
-; stb/optimized/stb_image.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nsw i32 %2, 3600
-  %4 = mul nsw i32 %1, 60
-  %5 = add i32 %4, %3
-  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -94,7 +75,7 @@ entry:
   %3 = mul i32 %2, 461845907
   %4 = mul i32 %1, -862048943
   %5 = add i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -107,6 +88,24 @@ define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 1013
   %4 = mul nsw i32 %1, 31337
+  %5 = add i32 %4, %3
+  %6 = add i32 %5, %0
+  ret i32 %6
+}
+
+; 7 occurrences:
+; libquic/optimized/time_support.c.ll
+; minetest/optimized/mapgen_v6.cpp.ll
+; opencv/optimized/brisk.cpp.ll
+; openjdk/optimized/jidctint.ll
+; openjdk/optimized/jidctred.ll
+; quantlib/optimized/thirty360.ll
+; stb/optimized/stb_image.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %2, 38134234
+  %4 = mul nsw i32 %1, 42123
   %5 = add i32 %4, %3
   %6 = add i32 %5, %0
   ret i32 %6
@@ -127,12 +126,11 @@ entry:
   ret i32 %6
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/extraUtilMult.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; cpython/optimized/_datetimemodule.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/tzfmt.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; libquic/optimized/prtime.cc.ll
@@ -201,7 +199,7 @@ entry:
   %3 = mul nuw nsw i32 %2, 3600
   %4 = mul nuw nsw i32 %1, 60
   %5 = add nuw i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

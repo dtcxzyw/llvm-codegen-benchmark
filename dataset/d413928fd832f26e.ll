@@ -1,10 +1,11 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/cnfWrite.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/src.ll
 ; git/optimized/date.ll
 ; minetest/optimized/noise.cpp.ll
 ; Function Attrs: nounwind
@@ -47,7 +48,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = mul nsw i32 %4, 9633
   ret i32 %5
 }
@@ -85,7 +86,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = mul i32 %4, 9633
   ret i32 %5
 }
@@ -96,7 +97,7 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = mul nsw i32 %4, 3
   ret i32 %5
 }
@@ -148,7 +149,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = mul i32 %4, 365
   ret i32 %5
 }
@@ -173,7 +174,7 @@ entry:
 define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = mul nsw i32 %4, 3
   ret i32 %5
 }

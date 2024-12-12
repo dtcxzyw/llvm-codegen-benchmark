@@ -12,7 +12,7 @@
 .LCPI0_2:
 	.short	63                              # 0x3f
 	.short	63                              # 0x3f
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
 	vpsrlvq	%ymm1, %ymm0, %ymm0
@@ -34,7 +34,7 @@ func0000000000000021:                   # @func0000000000000021
 .LCPI1_2:
 	.short	63                              # 0x3f
 	.short	63                              # 0x3f
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
 	vpsrlvq	%ymm1, %ymm0, %ymm0

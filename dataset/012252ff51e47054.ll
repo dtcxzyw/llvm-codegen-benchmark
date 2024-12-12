@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; re2/optimized/dfa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add i64 %0, -184
@@ -46,11 +46,13 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %0, 1087
@@ -59,10 +61,12 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; actix-rs/optimized/4jlfyqkak9x9x2yv.ll
 ; libquic/optimized/t1_lib.c.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:

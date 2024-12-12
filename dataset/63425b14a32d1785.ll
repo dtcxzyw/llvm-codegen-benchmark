@@ -34,7 +34,7 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 19 occurrences:
 ; cmake/optimized/cmFileCommand.cxx.ll
 ; cvc5/optimized/theory_sep.cpp.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
@@ -51,6 +51,9 @@ entry:
 ; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i8 %0, i1 %1) #0 {
 entry:

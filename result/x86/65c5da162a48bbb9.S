@@ -14,3 +14,7 @@ func0000000000000000:                   # @func0000000000000000
 	movb	$23, %al
 	subb	%dil, %al
 	retq
+func0000000000000002:                   # @func0000000000000002
+	movq	%rdi, %rax
+	negb	%al
+	retq

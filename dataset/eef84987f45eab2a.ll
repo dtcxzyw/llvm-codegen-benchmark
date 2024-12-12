@@ -9,7 +9,7 @@ entry:
   %3 = select i1 %1, i1 %2, i1 false
   %not. = xor i1 %3, true
   %4 = zext i1 %not. to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

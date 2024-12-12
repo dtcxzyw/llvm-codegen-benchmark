@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; git/optimized/diff-delta.ll
 ; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/Flang.cpp.ll
 ; openjdk/optimized/relocInfo.ll
 ; php/optimized/pcre2_compile.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

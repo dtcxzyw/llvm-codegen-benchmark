@@ -1,5 +1,5 @@
 
-; 317 occurrences:
+; 316 occurrences:
 ; abseil-cpp/optimized/status_internal.cc.ll
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/ACLoader.cpp.ll
@@ -195,7 +195,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -328,7 +327,7 @@ entry:
   ret i64 %6
 }
 
-; 685 occurrences:
+; 683 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -560,7 +559,6 @@ entry:
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -885,7 +883,6 @@ entry:
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -1025,7 +1022,7 @@ entry:
   ret i64 %6
 }
 
-; 473 occurrences:
+; 474 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_memory_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -1067,6 +1064,9 @@ entry:
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/XFileImporter.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/topology.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/interpolant.cpp.ll
 ; casadi/optimized/mx_node.cpp.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
@@ -1163,7 +1163,6 @@ entry:
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_layer.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
@@ -1207,7 +1206,6 @@ entry:
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/properties.cpp.ll
 ; mitsuba3/optimized/regular.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
@@ -1306,9 +1304,7 @@ entry:
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -1388,6 +1384,7 @@ entry:
 ; opencv/optimized/layer.cpp.ll
 ; opencv/optimized/logos.cpp.ll
 ; opencv/optimized/matchers.cpp.ll
+; opencv/optimized/moments_demo.cpp.ll
 ; opencv/optimized/motion_estimators.cpp.ll
 ; opencv/optimized/ransac_solvers.cpp.ll
 ; opencv/optimized/serialization.cpp.ll
@@ -1445,6 +1442,7 @@ entry:
 ; rocksdb/optimized/trace_record.cc.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; spike/optimized/spike-log-parser.ll
 ; tev/optimized/Common.cpp.ll
 ; tev/optimized/EmptyImageLoader.cpp.ll

@@ -1,9 +1,12 @@
 
-; 5 occurrences:
+; 8 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; quantlib/optimized/blackformula.ll
 ; stat-rs/optimized/2y2d191rk1p8v5y4.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1, double %2) #0 {

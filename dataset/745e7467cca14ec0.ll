@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; ruby/optimized/gc.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i16 %0) #0 {

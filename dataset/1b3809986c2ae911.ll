@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 64 occurrences:
 ; arrow/optimized/row_internal.cc.ll
 ; freetype/optimized/truetype.c.ll
 ; hermes/optimized/TypedArray.cpp.ll
@@ -55,6 +55,9 @@
 ; llvm/optimized/StmtPrinter.cpp.ll
 ; llvm/optimized/StmtProfile.cpp.ll
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; openjdk/optimized/cmspack.ll
 ; openjdk/optimized/xStat.ll
 ; openjdk/optimized/zStat.ll
@@ -70,7 +73,9 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; wireshark/optimized/packet-dcp-etsi.c.ll
 ; Function Attrs: nounwind
@@ -82,7 +87,7 @@ entry:
   ret i64 %4
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/kitCloud.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
@@ -91,7 +96,6 @@ entry:
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/uncore_discovery.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/arithm.cpp.ll
@@ -139,7 +143,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -150,7 +154,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

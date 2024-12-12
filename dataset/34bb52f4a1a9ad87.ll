@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; openjdk/optimized/vectorIntrinsics.ll
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/be-fsstubs.ll
@@ -11,7 +11,6 @@
 ; postgres/optimized/json.ll
 ; postgres/optimized/jsonb.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/jsonpath_exec.ll
@@ -40,7 +39,7 @@ define i32 @func0000000000000002(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -6
   %4 = icmp eq i8 %3, 0
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = select i1 %5, i32 138, i32 %0
   ret i32 %6
 }

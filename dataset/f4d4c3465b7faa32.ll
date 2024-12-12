@@ -1,16 +1,16 @@
 
-%struct.nghttp2_map_bucket.2616026 = type { i32, i32, ptr }
-%"struct.net::HpackHuffmanTable::DecodeEntry.2867736" = type { i8, i8, i16 }
+%struct.nghttp2_map_bucket.2729480 = type { i32, i32, ptr }
+%"struct.net::HpackHuffmanTable::DecodeEntry.3061345" = type { i8, i8, i16 }
 
 ; 1 occurrences:
 ; rocksdb/optimized/lru_cache.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 32, %2
   %4 = lshr i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -19,12 +19,12 @@ entry:
 ; abc/optimized/giaTtopt.cpp.ll
 ; rocksdb/optimized/lru_cache.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 31, %2
   %4 = lshr i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -42,12 +42,12 @@ entry:
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 32, %2
   %4 = lshr i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %struct.nghttp2_map_bucket.2616026, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729480, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -56,12 +56,12 @@ entry:
 ; libpng/optimized/png.c.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000037(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 8, %2
   %4 = lshr i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i16, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -69,12 +69,12 @@ entry:
 ; libpng/optimized/png.c.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 8, %2
   %4 = lshr i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i16, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -87,7 +87,7 @@ entry:
   %3 = sub nsw i32 32, %2
   %4 = lshr i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %"struct.net::HpackHuffmanTable::DecodeEntry.2867736", ptr %0, i64 %5
+  %6 = getelementptr %"struct.net::HpackHuffmanTable::DecodeEntry.3061345", ptr %0, i64 %5
   ret ptr %6
 }
 

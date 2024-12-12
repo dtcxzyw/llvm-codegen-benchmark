@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	64                              # 0x40
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vpsrld	$4, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

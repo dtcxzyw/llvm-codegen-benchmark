@@ -1,5 +1,7 @@
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_lowlight.c.ll
 ; nuklear/optimized/unity.c.ll
@@ -12,7 +14,7 @@ define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0x3FCC7B0700000000
   %4 = select i1 %1, float 0x3FCC7B0700000000, float %3
-  %5 = fadd float %4, %0
+  %5 = fadd float %0, %4
   ret float %5
 }
 

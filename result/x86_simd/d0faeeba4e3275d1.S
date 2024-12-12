@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	31                              # 0x1f
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -13,7 +13,7 @@ func000000000000007a:                   # @func000000000000007a
 	retq
 .LCPI1_0:
 	.long	31                              # 0x1f
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1

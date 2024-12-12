@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
@@ -15,12 +15,14 @@
 ; spike/optimized/vsha2ch_vv.ll
 ; spike/optimized/vsha2cl_vv.ll
 ; vcpkg/optimized/hash.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = and i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -33,12 +35,13 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; libdeflate/optimized/deflate_decompress.c.ll
@@ -52,7 +55,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = add nuw i64 %4, %0
   ret i64 %5
 }

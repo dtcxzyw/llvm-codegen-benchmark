@@ -28,7 +28,7 @@ func0000000000000030:                   # @func0000000000000030
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000020:                   # @func0000000000000020
+func00000000000000a0:                   # @func00000000000000a0
 	vpcmpltud	%ymm2, %ymm1, %k0
 	vpmovm2b	%k0, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0

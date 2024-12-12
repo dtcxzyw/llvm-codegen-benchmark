@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; cmake/optimized/archive_string.c.ll
-; linux/optimized/utownerid.ll
 ; re2/optimized/rune.cc.ll
 ; sentencepiece/optimized/util.cc.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
@@ -16,7 +15,7 @@ entry:
 
 ; 4 occurrences:
 ; cmake/optimized/huf_compress.c.ll
-; llvm/optimized/ASTContext.cpp.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind

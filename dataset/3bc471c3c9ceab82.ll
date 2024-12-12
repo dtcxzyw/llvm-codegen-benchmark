@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; graphviz/optimized/country_graph_coloring.c.ll
 ; hdf5/optimized/h5diff_array.c.ll
 ; icu/optimized/units_converter.ll
@@ -16,7 +16,6 @@
 ; openspiel/optimized/crowd_modelling.cc.ll
 ; openspiel/optimized/crowd_modelling_2d.cc.ll
 ; php/optimized/math.ll
-; proj/optimized/io.cpp.ll
 ; wireshark/optimized/packet-geonw.c.ll
 ; yosys/optimized/simplify.ll
 ; z3/optimized/sat_local_search.cpp.ll

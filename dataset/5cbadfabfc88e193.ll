@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; hermes/optimized/dtoa.c.ll
@@ -10,7 +11,7 @@
 ; ruby/optimized/util.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %0, 16
   %3 = icmp eq i32 %1, 0
@@ -23,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/pata_amd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %0, 8
   %3 = icmp eq i32 %1, 0

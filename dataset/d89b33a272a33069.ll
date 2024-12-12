@@ -1,5 +1,5 @@
 
-; 105 occurrences:
+; 110 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/compress.c.ll
 ; assimp/optimized/BlenderScene.cpp.ll
@@ -12,6 +12,9 @@
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/pshinter.c.ll
 ; freetype/optimized/sdf.c.ll
+; freetype/optimized/type1.c.ll
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/collationkeys.ll
@@ -44,13 +47,14 @@
 ; linux/optimized/pci.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/string_helpers.ll
-; linux/optimized/tx.ll
 ; linux/optimized/vmscan.ll
 ; llvm/optimized/OSTargets.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_calendar.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
@@ -58,7 +62,6 @@
 ; opencv/optimized/semantic_segmentation.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
-; opencv/optimized/ts_func.cpp.ll
 ; openjdk/optimized/ThreeByteBgr.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/cmsnamed.ll
@@ -73,7 +76,6 @@
 ; openusd/optimized/cdef_block.c.ll
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
-; php/optimized/pcre2_maketables.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/pg_lzcompress.ll
@@ -90,7 +92,6 @@
 ; rocksdb/optimized/env_encryption.cc.ll
 ; rocksdb/optimized/mock_env.cc.ll
 ; rocksdb/optimized/testutil.cc.ll
-; ruby/optimized/japanese.ll
 ; ruby/optimized/util.ll
 ; rust-analyzer-rs/optimized/3o0zta0tnq3ij8lb.ll
 ; rust-analyzer-rs/optimized/4xr6qa4j33qfqd4q.ll
@@ -105,6 +106,10 @@
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wireshark/optimized/g711.c.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -113,7 +118,7 @@ entry:
   ret i8 %4
 }
 
-; 29 occurrences:
+; 31 occurrences:
 ; abc/optimized/lpkAbcMux.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; clamav/optimized/strfn.cpp.ll
@@ -128,6 +133,7 @@ entry:
 ; icu/optimized/unames.ll
 ; libwebp/optimized/muxedit.c.ll
 ; linux/optimized/i2c-i801.ll
+; linux/optimized/intel_psr.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
@@ -143,6 +149,7 @@ entry:
 ; qemu/optimized/gdbstub.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; tomlplusplus/optimized/toml.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -151,12 +158,13 @@ entry:
   ret i8 %4
 }
 
-; 13 occurrences:
+; 17 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll
 ; linux/optimized/n_tty.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; mitsuba3/optimized/func.cpp.ll
 ; oiio/optimized/typedesc.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -165,6 +173,9 @@ entry:
 ; redis/optimized/lolwut5.ll
 ; stb/optimized/stb_dxt.c.ll
 ; stb/optimized/stb_image.c.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:

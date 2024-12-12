@@ -1,17 +1,7 @@
 
-%struct.PendingWriteback.3467765 = type { %struct.buftag.3467766 }
-%struct.buftag.3467766 = type { i32, i32, i32, i32, i32 }
+%struct.TestObject.3897129 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
 
-; 733 occurrences:
-; abc/optimized/absRpm.c.ll
-; abc/optimized/bmcCexCare.c.ll
-; abc/optimized/bmcCexMin2.c.ll
-; abc/optimized/bmcCexTools.c.ll
-; abc/optimized/giaBound.c.ll
-; abc/optimized/giaJf.c.ll
-; abc/optimized/giaKf.c.ll
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaSimBase.c.ll
+; 722 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -437,7 +427,6 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -726,7 +715,6 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
@@ -764,7 +752,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ce(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 24
@@ -809,7 +797,60 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
+; 54 occurrences:
+; abc/optimized/absRpm.c.ll
+; abc/optimized/bmcCexCare.c.ll
+; abc/optimized/bmcCexMin2.c.ll
+; abc/optimized/bmcCexTools.c.ll
+; abc/optimized/giaBound.c.ll
+; abc/optimized/giaJf.c.ll
+; abc/optimized/giaKf.c.ll
+; abc/optimized/giaLf.c.ll
+; abc/optimized/giaSimBase.c.ll
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000005e(ptr %0, i64 %1, i64 %2) #0 {
@@ -821,8 +862,7 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
-; abc/optimized/sclLiberty.c.ll
+; 2 occurrences:
 ; libsodium/optimized/libsodium_la-utils.ll
 ; wireshark/optimized/show_packet_bytes_dialog.cpp.ll
 ; Function Attrs: nounwind
@@ -848,31 +888,15 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; eastl/optimized/TestVector.cpp.ll
-; lz4/optimized/lz4.c.ll
-; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000de(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 4
+  %3 = getelementptr %struct.TestObject.3897129, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 24
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 3 occurrences:
-; cpython/optimized/listobject.ll
-; postgres/optimized/bufmgr.ll
-; postgres/optimized/tuplesort.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr %struct.PendingWriteback.3467765, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -20
-  %5 = sub nsw i64 0, %1
-  %6 = getelementptr %struct.PendingWriteback.3467765, ptr %4, i64 %5
+  %6 = getelementptr nusw %struct.TestObject.3897129, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -885,6 +909,18 @@ entry:
   %4 = getelementptr i8, ptr %3, i64 -56
   %5 = sub nsw i64 0, %1
   %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; cpython/optimized/listobject.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr ptr, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -8
+  %5 = sub nsw i64 0, %1
+  %6 = getelementptr ptr, ptr %4, i64 %5
   ret ptr %6
 }
 

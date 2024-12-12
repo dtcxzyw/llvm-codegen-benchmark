@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; bullet3/optimized/btKinematicCharacterController.ll
 ; bullet3/optimized/btMultiBodySphericalJointLimit.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
@@ -8,6 +8,7 @@
 ; meshlab/optimized/glarea.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; raylib/optimized/rcore.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1) #0 {
 entry:

@@ -9,7 +9,7 @@ entry:
   %4 = and i32 %3, 16376
   %5 = add nuw nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -87,9 +87,9 @@ define i64 @func000000000000001c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 1016
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -103,7 +103,7 @@ entry:
   %4 = and i32 %3, 7
   %5 = add nuw nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
-  %7 = add nuw nsw i64 %6, %0
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 

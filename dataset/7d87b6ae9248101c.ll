@@ -5,7 +5,7 @@
 ; rust-analyzer-rs/optimized/3hcpc53socutnyz5.ll
 ; rust-analyzer-rs/optimized/3nofq7oo06gx5fjm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i1 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 1114113, i32 1114112
   %3 = icmp eq i32 %0, 0
@@ -20,7 +20,7 @@ entry:
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; postgres/optimized/output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, -1
   %3 = add i32 %0, -4

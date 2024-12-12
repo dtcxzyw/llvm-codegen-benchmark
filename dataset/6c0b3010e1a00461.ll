@@ -20,7 +20,7 @@ entry:
 define float @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3840
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = uitofp nneg i32 %3 to float
   ret float %4
 }

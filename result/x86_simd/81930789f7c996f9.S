@@ -23,7 +23,7 @@ func0000000000000031:                   # @func0000000000000031
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 .LCPI3_0:
-	.long	4294967294                      # 0xfffffffe
+	.long	4                               # 0x4
 func0000000000000015:                   # @func0000000000000015
 	vpaddd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm0

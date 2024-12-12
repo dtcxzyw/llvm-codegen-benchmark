@@ -1,14 +1,13 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; lief/optimized/psa_crypto.c.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; slurm/optimized/data_parser_v0_0_39_la-parsers.ll
 ; slurm/optimized/data_parser_v0_0_40_la-parsers.ll
 ; typst-rs/optimized/57e1zo682pgyyw8m.ll
 ; wasmtime-rs/optimized/4geaf703ae2lxyqg.ll
-; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000028(i64 %0) #0 {
+define i16 @func0000000000000048(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i16
   %2 = icmp ugt i64 %0, 65528

@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/str.c.ll
@@ -14,7 +14,6 @@
 ; libquic/optimized/v3_utl.c.ll
 ; libwebp/optimized/syntax_enc.c.ll
 ; lief/optimized/constant_time.c.ll
-; linux/optimized/i8259.ll
 ; luau/optimized/lvmload.cpp.ll
 ; openssl/optimized/libcrypto-lib-v3_utl.ll
 ; openssl/optimized/libcrypto-shlib-v3_utl.ll
@@ -78,7 +77,7 @@ entry:
   ret i8 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; clamav/optimized/cabd.c.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; grpc/optimized/hpack_parser.cc.ll
@@ -94,6 +93,7 @@ entry:
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; velox/optimized/Base64.cpp.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
@@ -103,9 +103,10 @@ entry:
   ret i8 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cpython/optimized/assemble.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind

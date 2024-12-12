@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; arrow/optimized/counting_semaphore.cc.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; folly/optimized/ThreadedRepeatingFunctionRunner.cpp.ll
@@ -12,6 +12,8 @@
 ; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
 ; rocksdb/optimized/transaction_db_mutex_impl.cc.ll
 ; tev/optimized/ThreadPool.cpp.ll
+; verilator/optimized/V3EmitCImp.cpp.ll
+; verilator/optimized/V3ThreadPool.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; xgboost/optimized/coll_c_api.cc.ll
 ; yalantinglibs/optimized/conformance_test_runner.cc.ll

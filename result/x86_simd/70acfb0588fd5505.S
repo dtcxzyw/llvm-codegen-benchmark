@@ -30,7 +30,7 @@
 	.zero	4,15
 func000000000000000f:                   # @func000000000000000f
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm2, %xmm2
-	vpor	%xmm0, %xmm2, %xmm0
+	vpor	%xmm2, %xmm0, %xmm0
 	vpternlogd	$248, .LCPI0_3(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	retq
 .LCPI1_0:

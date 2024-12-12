@@ -33,3 +33,10 @@ func0000000000000007:                   # @func0000000000000007
 	andl	$1, %edi
 	leaq	(%rdi,%rdx,2), %rax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	andl	$524286, %edx                   # imm = 0x7FFFE
+	orq	%rsi, %rdx
+	shlq	$5, %rdx
+	andl	$31, %edi
+	leaq	(%rdi,%rdx), %rax
+	retq

@@ -2,7 +2,6 @@
 ; 79 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_stmts.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/ich8lan.ll
@@ -54,6 +53,7 @@
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; minetest/optimized/wieldmesh.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -89,8 +89,7 @@ entry:
   ret i16 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/LICM.cpp.ll
+; 1 occurrences:
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000e(i16 %0, i8 %1) #0 {
@@ -102,7 +101,7 @@ entry:
   ret i16 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; icu/optimized/rle.ll
 ; linux/optimized/vc_screen.ll
@@ -110,6 +109,7 @@ entry:
 ; openspiel/optimized/chess.cc.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000005(i16 %0, i8 %1) #0 {
 entry:

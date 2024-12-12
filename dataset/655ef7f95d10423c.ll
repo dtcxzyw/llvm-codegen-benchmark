@@ -16,10 +16,10 @@
 ; yosys/optimized/opt_share.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006b(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000cb(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = icmp sge i64 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -28,10 +28,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/g1IHOPControl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000055(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a5(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
   %5 = icmp ule i64 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -40,10 +40,10 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/c_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   %5 = icmp ult i64 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -56,10 +56,10 @@ entry:
 ; yosys/optimized/opt_clean.ll
 ; yosys/optimized/techmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = icmp slt i64 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -70,10 +70,10 @@ entry:
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   %5 = icmp sgt i64 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -82,10 +82,10 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   %5 = icmp ne i64 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -94,10 +94,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007b(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000eb(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sge i64 %3, %0
+  %4 = icmp sle i64 %0, %3
   %5 = icmp sge i64 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -107,35 +107,11 @@ entry:
 ; gromacs/optimized/biasstate.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = icmp sgt i64 %0, %1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
-; openmpi/optimized/pml_ob1_sendreq.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
-  %5 = icmp ult i64 %0, %1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/dpm_feature.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000069(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
-  %5 = icmp uge i64 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }

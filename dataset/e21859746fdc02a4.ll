@@ -4,7 +4,7 @@
 ; ruby/optimized/pack.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000029(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, -1
   %4 = icmp uge ptr %0, %1
@@ -20,7 +20,7 @@ entry:
 ; folly/optimized/Uri.cpp.ll
 ; rocksdb/optimized/configurable.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 1
   %4 = icmp eq ptr %0, %1
@@ -33,7 +33,7 @@ entry:
 ; rocksdb/optimized/db_impl.cc.ll
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp eq ptr %0, %1
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/verifier.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000085(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -2
   %4 = icmp ule ptr %0, %1
@@ -58,7 +58,7 @@ entry:
 ; php/optimized/zend_execute.ll
 ; php/optimized/zend_inheritance.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 4
   %4 = icmp ne ptr %0, %1
@@ -85,7 +85,7 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp ne ptr %0, %1
@@ -94,11 +94,24 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/topology.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000189(ptr %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = icmp ne i8 %2, 0
+  %4 = icmp uge ptr %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 3 occurrences:
+; llvm/optimized/InstructionCombining.cpp.ll
+; lvgl/optimized/lv_menu.ll
 ; oiio/optimized/softimageinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i8 %2) #0 {
 entry:
-  %3 = icmp ult i8 %2, 8
+  %3 = icmp ult i8 %2, 2
   %4 = icmp eq ptr %0, %1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
@@ -109,7 +122,7 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000089(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -10
   %4 = icmp uge ptr %0, %1

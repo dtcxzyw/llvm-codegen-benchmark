@@ -4,7 +4,7 @@
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0) #0 {
+define i1 @func00000000000000c1(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
   %2 = icmp eq i64 %1, 0
@@ -135,7 +135,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0) #0 {
+define i1 @func000000000000008c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 280375465082880
   %2 = icmp ne i64 %1, 0
@@ -146,7 +146,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
+define i1 @func0000000000000081(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
   %2 = icmp eq i64 %1, 0
@@ -157,20 +157,20 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0) #0 {
+define i1 @func0000000000000098(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
-  %2 = icmp ugt i64 %1, 4692750811720056832
+  %2 = icmp samesign ugt i64 %1, 4692750811720056832
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; cpython/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0) #0 {
+define i1 @func0000000000000094(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
-  %2 = icmp ult i64 %1, 481885160128643072
+  %2 = icmp samesign ult i64 %1, 481885160128643072
   ret i1 %2
 }
 

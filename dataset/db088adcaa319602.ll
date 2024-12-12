@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000301(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -18,7 +18,7 @@ entry:
 ; node/optimized/libnode.crypto_aes.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000186(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000306(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -31,12 +31,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -44,7 +44,7 @@ entry:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; abseil-cpp/optimized/substitute.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000030a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -58,7 +58,7 @@ entry:
 ; cmake/optimized/zstd_ldm.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000106(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -76,7 +76,7 @@ entry:
   %3 = sub i64 0, %2
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

@@ -1,13 +1,11 @@
 
-; 39 occurrences:
+; 35 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; gromacs/optimized/dlarft.cpp.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/dstein.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
 ; gromacs/optimized/sstein.cpp.ll
@@ -22,8 +20,6 @@
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; opencv/optimized/stereobm.cpp.ll
@@ -72,13 +68,13 @@ entry:
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 6
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   %5 = shl nsw i64 %4, 2
   ret i64 %5
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; abc/optimized/cmdUtils.c.ll
 ; abc/optimized/cnfWrite.c.ll
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
@@ -86,23 +82,18 @@ entry:
 ; linux/optimized/maple_tree.ll
 ; nori/optimized/nanovg.c.ll
 ; openblas/optimized/dlaeda.c.ll
-; openmpi/optimized/ad_read_coll.ll
-; openmpi/optimized/ad_write_coll.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 6
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   %5 = shl nsw i64 %4, 2
   ret i64 %5
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; abc/optimized/luckyFast16.c.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
@@ -113,7 +104,7 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -125,7 +116,6 @@ entry:
 ; cvc5/optimized/minisat.cpp.ll
 ; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/Solver.ll
-; yosys/optimized/ezminisat.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000035(i32 %0, i32 %1) #0 {
 entry:
@@ -160,7 +150,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; Function Attrs: nounwind

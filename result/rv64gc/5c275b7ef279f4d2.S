@@ -30,6 +30,11 @@ func000000000000000e:                   # @func000000000000000e
 	addiw	a1, a1, -2048
 	and	a0, a0, a1
 	ret
+func0000000000000008:                   # @func0000000000000008
+	or	a0, a0, a1
+	slli	a0, a0, 40
+	srli	a0, a0, 40
+	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a2, a2, 4
 	or	a0, a0, a1

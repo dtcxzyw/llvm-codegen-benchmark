@@ -1,5 +1,5 @@
 
-; 420 occurrences:
+; 429 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -11,7 +11,6 @@
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -51,6 +50,10 @@
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; cpython/optimized/basearith.ll
@@ -420,6 +423,12 @@
 ; wolfssl/optimized/poly1305.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -429,9 +438,8 @@ entry:
   ret i128 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/fair.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; qemu/optimized/util_cutils.c.ll
 ; ring-rs/optimized/1vabw27ldssjsz66.ll

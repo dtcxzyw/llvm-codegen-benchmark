@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	add	a0, a0, a1
 	srai	a0, a0, 32
 	sgtz	a0, a0
@@ -15,13 +15,13 @@ func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0
 	sgtz	a0, a0
 	ret
-func0000000000000086:                   # @func0000000000000086
+func0000000000000106:                   # @func0000000000000106
 	add	a0, a0, a1
 	srli	a0, a0, 16
 	sext.w	a0, a0
 	slti	a0, a0, 32
 	ret
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	add	a0, a0, a1
 	srli	a0, a0, 16
 	sext.w	a0, a0

@@ -3,12 +3,12 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%esi, %esi
 	cmovleq	%rdi, %rax
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	leaq	16(,%rdx,4), %rax
 	testl	%esi, %esi
 	cmovneq	%rdi, %rax
 	retq
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000001ea:                   # @func00000000000001ea
 	leaq	120(,%rdx,4), %rax
 	testl	%esi, %esi
 	cmovleq	%rdi, %rax

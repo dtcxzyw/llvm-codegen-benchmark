@@ -1,7 +1,8 @@
 func0000000000000002:                   # @func0000000000000002
-	leal	(%rdi,%rdi), %eax
+	movl	%edi, %eax
+	shll	$4, %eax
 	xorl	%esi, %eax
-	andl	$-1431655766, %eax              # imm = 0xAAAAAAAA
+	andl	$-252645136, %eax               # imm = 0xF0F0F0F0
 	retq
 func0000000000000003:                   # @func0000000000000003
 	shrl	$14, %esi

@@ -1,9 +1,11 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; linux/optimized/nf_reject_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_switch.ll
 ; minetest/optimized/CImage.cpp.ll
 ; postgres/optimized/tsrank.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll

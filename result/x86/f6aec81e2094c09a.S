@@ -18,3 +18,8 @@ func0000000000000054:                   # @func0000000000000054
 	imull	$360, %edi, %eax                # imm = 0x168
 	addl	%esi, %eax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	subl	%edx, %esi
+	addl	%edi, %esi
+	leal	(%rsi,%rsi,2), %eax
+	retq

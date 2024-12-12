@@ -96,7 +96,7 @@ define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16
   %.masked = and i16 %0, -97
-  %3 = or i16 %2, %.masked
+  %3 = or i16 %.masked, %2
   ret i16 %3
 }
 

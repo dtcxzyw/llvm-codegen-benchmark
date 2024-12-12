@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 11 occurrences:
 ; linux/optimized/rx.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
@@ -7,6 +7,10 @@
 ; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
 ; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:

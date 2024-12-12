@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; linux/optimized/eht.ll
+; 6 occurrences:
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll

@@ -43,22 +43,27 @@ entry:
   ret i64 %2
 }
 
-; 71 occurrences:
+; 87 occurrences:
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; clamav/optimized/aspack.c.ll
 ; flac/optimized/cuesheet.c.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; hyperscan/optimized/report_manager.cpp.ll
 ; hyperscan/optimized/slot_manager.cpp.ll
 ; libquic/optimized/a_object.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; libwebp/optimized/frame_enc.c.ll
+; libwebp/optimized/quant_enc.c.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/intel_hdcp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
 ; opencv/optimized/ocr_hmm_decoder.cpp.ll
 ; openspiel/optimized/dynamic_routing_utils.cc.ll
 ; openspiel/optimized/history_tree.cc.ll
@@ -90,6 +95,7 @@ entry:
 ; openusd/optimized/rootOverridesSceneIndex.cpp.ll
 ; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
 ; openusd/optimized/skeletonAdapter.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/stitchClips.cpp.ll
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testUsdImagingDelegateChanges.cpp.ll
@@ -102,6 +108,8 @@ entry:
 ; openusd/optimized/typeRegistry.cpp.ll
 ; openusd/optimized/value.cpp.ll
 ; openusd/optimized/variableExpressionImpl.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; php/optimized/avifinfo.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/file.cc.ll
@@ -113,8 +121,16 @@ entry:
 ; rust-analyzer-rs/optimized/jp4yq85z7wea9l3.ll
 ; rust-analyzer-rs/optimized/sdlo5r5xb34d3pv.ll
 ; rust-analyzer-rs/optimized/vccy6rg1lgzb14e.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-iec104.c.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
+; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/4gafs7cnqueum1wf7b8eca1yl.ll
+; zed-rs/optimized/5zwiozx0qizoaz5dy257szmof.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i8 %0) #0 {
 entry:
@@ -123,15 +139,19 @@ entry:
   ret i64 %2
 }
 
-; 103 occurrences:
+; 206 occurrences:
+; abseil-cpp/optimized/hash_instantiated_test.cc.ll
+; abseil-cpp/optimized/str_split_test.cc.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
 ; assimp/optimized/NDOLoader.cpp.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/special.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; clamav/optimized/vba_extract.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
+; cpython/optimized/obmalloc.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -158,26 +178,113 @@ entry:
 ; hdf5/optimized/H5Ofsinfo.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
+; imgui/optimized/imgui.cpp.ll
 ; libjpeg-turbo/optimized/jdmarker.c.ll
+; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libquic/optimized/ec.c.ll
+; libquic/optimized/quic_write_blocked_list.cc.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/gen8_ppgtt.ll
+; linux/optimized/hid-core.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/netdev.ll
+; linux/optimized/nf_conntrack_proto_tcp.ll
+; linux/optimized/nl80211.ll
+; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/serial_core.ll
+; linux/optimized/sta_info.ll
 ; linux/optimized/tx.ll
+; linux/optimized/usblp.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
+; luau/optimized/OptimizeConstProp.cpp.ll
+; lvgl/optimized/lv_style.ll
+; mimalloc/optimized/page.c.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
+; minetest/optimized/guiButton.cpp.ll
 ; miniaudio/optimized/unity.c.ll
+; mold/optimized/arch-arm32.cc.ll
+; mold/optimized/icf.cc.ALPHA.cc.ll
+; mold/optimized/icf.cc.ARM32.cc.ll
+; mold/optimized/icf.cc.ARM64.cc.ll
+; mold/optimized/icf.cc.I386.cc.ll
+; mold/optimized/icf.cc.LOONGARCH32.cc.ll
+; mold/optimized/icf.cc.LOONGARCH64.cc.ll
+; mold/optimized/icf.cc.M68K.cc.ll
+; mold/optimized/icf.cc.PPC32.cc.ll
+; mold/optimized/icf.cc.PPC64V1.cc.ll
+; mold/optimized/icf.cc.PPC64V2.cc.ll
+; mold/optimized/icf.cc.RV32BE.cc.ll
+; mold/optimized/icf.cc.RV32LE.cc.ll
+; mold/optimized/icf.cc.RV64BE.cc.ll
+; mold/optimized/icf.cc.RV64LE.cc.ll
+; mold/optimized/icf.cc.S390X.cc.ll
+; mold/optimized/icf.cc.SH4.cc.ll
+; mold/optimized/icf.cc.SPARC64.cc.ll
+; mold/optimized/icf.cc.X86_64.cc.ll
+; mold/optimized/input-files.cc.ALPHA.cc.ll
+; mold/optimized/input-files.cc.ARM32.cc.ll
+; mold/optimized/input-files.cc.ARM64.cc.ll
+; mold/optimized/input-files.cc.I386.cc.ll
+; mold/optimized/input-files.cc.LOONGARCH32.cc.ll
+; mold/optimized/input-files.cc.LOONGARCH64.cc.ll
+; mold/optimized/input-files.cc.M68K.cc.ll
+; mold/optimized/input-files.cc.PPC32.cc.ll
+; mold/optimized/input-files.cc.PPC64V1.cc.ll
+; mold/optimized/input-files.cc.PPC64V2.cc.ll
+; mold/optimized/input-files.cc.RV32BE.cc.ll
+; mold/optimized/input-files.cc.RV32LE.cc.ll
+; mold/optimized/input-files.cc.RV64BE.cc.ll
+; mold/optimized/input-files.cc.RV64LE.cc.ll
+; mold/optimized/input-files.cc.S390X.cc.ll
+; mold/optimized/input-files.cc.SH4.cc.ll
+; mold/optimized/input-files.cc.SPARC64.cc.ll
+; mold/optimized/input-files.cc.X86_64.cc.ll
+; mold/optimized/output-chunks.cc.ALPHA.cc.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.ARM64.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.RV64LE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; mold/optimized/passes.cc.ALPHA.cc.ll
+; mold/optimized/passes.cc.ARM32.cc.ll
+; mold/optimized/passes.cc.ARM64.cc.ll
+; mold/optimized/passes.cc.I386.cc.ll
+; mold/optimized/passes.cc.LOONGARCH32.cc.ll
+; mold/optimized/passes.cc.LOONGARCH64.cc.ll
+; mold/optimized/passes.cc.M68K.cc.ll
+; mold/optimized/passes.cc.PPC32.cc.ll
+; mold/optimized/passes.cc.PPC64V1.cc.ll
+; mold/optimized/passes.cc.PPC64V2.cc.ll
+; mold/optimized/passes.cc.RV32BE.cc.ll
+; mold/optimized/passes.cc.RV32LE.cc.ll
+; mold/optimized/passes.cc.RV64BE.cc.ll
+; mold/optimized/passes.cc.RV64LE.cc.ll
+; mold/optimized/passes.cc.S390X.cc.ll
+; mold/optimized/passes.cc.SH4.cc.ll
+; mold/optimized/passes.cc.SPARC64.cc.ll
+; mold/optimized/passes.cc.X86_64.cc.ll
 ; openjdk/optimized/Index12Gray.ll
 ; openjdk/optimized/Index8Gray.ll
+; openjdk/optimized/shenandoahFreeSet.ll
 ; openjdk/optimized/zip_util.ll
 ; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/best_response_test.cc.ll
@@ -190,16 +297,23 @@ entry:
 ; openspiel/optimized/state_distribution.cc.ll
 ; openspiel/optimized/tabular_exploitability.cc.ll
 ; openusd/optimized/cdef_block.c.ll
+; openusd/optimized/crateData.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openvdb/optimized/AttributeArrayString.cc.ll
+; openvdb/optimized/LevelSetMeasure.cc.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; php/optimized/apprentice.ll
+; php/optimized/decode.ll
 ; postgres/optimized/numeric.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; protobuf/optimized/field_mask_util.cc.ll
+; qemu/optimized/ahci.c.ll
 ; qemu/optimized/fdt_sw.c.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_ide_core.c.ll
 ; qemu/optimized/hw_input_hid.c.ll
+; qemu/optimized/hw_vfio_pci.c.ll
 ; qoi/optimized/qoi.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
@@ -210,6 +324,7 @@ entry:
 ; regex-rs/optimized/5gojg14e35fgi63k.ll
 ; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
 ; simdjson/optimized/simdjson.cpp.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
@@ -221,17 +336,21 @@ entry:
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; wireshark/optimized/main_window.cpp.ll
 ; wireshark/optimized/ngsniffer.c.ll
+; wireshark/optimized/packet-iwarp-mpa.c.ll
 ; wireshark/optimized/proto.c.ll
 ; wireshark/optimized/protocol_hierarchy_dialog.cpp.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i64
-  %2 = mul nuw nsw i64 %1, 20
+  %2 = mul nuw nsw i64 %1, 24
   ret i64 %2
 }
 
@@ -254,15 +373,13 @@ entry:
   ret i64 %2
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; linux/optimized/ioam6.ll
 ; linux/optimized/lzo1x_decompress_safe.ll
-; linux/optimized/mmconfig_64.ll
 ; linux/optimized/nf_conntrack_core.ll
 ; linux/optimized/nf_conntrack_netlink.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/nf_conntrack_proto_icmp.ll
 ; linux/optimized/nf_nat_core.ll
 ; openjdk/optimized/zip_util.ll
@@ -289,7 +406,8 @@ entry:
   ret i64 %2
 }
 
-; 19 occurrences:
+; 23 occurrences:
+; boost/optimized/src.ll
 ; llvm/optimized/IRSimilarityIdentifier.cpp.ll
 ; rust-analyzer-rs/optimized/1pxyofhmeataj0qk.ll
 ; rust-analyzer-rs/optimized/25eqaaqjz071ug6q.ll
@@ -309,6 +427,9 @@ entry:
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
+; zed-rs/optimized/1z9x99vx9jfns7mxpwa762fd3.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i8 %0) #0 {
 entry:
@@ -317,8 +438,14 @@ entry:
   ret i64 %2
 }
 
-; 1 occurrences:
+; 7 occurrences:
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
+; zed-rs/optimized/40uv8e2se7lrb6jj056xzrdug.ll
+; zed-rs/optimized/616rp2zngqhnd0pszesmvl987.ll
+; zed-rs/optimized/7rpe3bril898mttdoib5hjrj5.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
+; zed-rs/optimized/dc8nwjo4mgdxm2hch6qea078t.ll
+; zed-rs/optimized/eabk1i73d9nic55wlyvjkefow.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i8 %0) #0 {
 entry:

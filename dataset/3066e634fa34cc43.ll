@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 84 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/list.cpp.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -16,7 +16,6 @@
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_hdmi.ll
 ; linux/optimized/ip_tunnel.ll
-; linux/optimized/mii.ll
 ; linux/optimized/net.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/seq_clientmgr.ll
@@ -86,7 +85,7 @@
 ; wireshark/optimized/packet-packetbb.c.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 1, i32 2
@@ -99,7 +98,7 @@ entry:
 ; mitsuba3/optimized/struct.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
   %3 = select i1 %2, i32 1, i32 -1
@@ -111,7 +110,7 @@ entry:
 ; 1 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 12
   %3 = select i1 %2, i32 165, i32 171
@@ -120,14 +119,13 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/ustrtrns.ll
 ; icu/optimized/utf8collationiterator.ll
-; icu/optimized/wrtxml.ll
 ; linux/optimized/e1000_main.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, -6
   %3 = icmp ult i32 %0, 17
@@ -139,7 +137,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i32 636, i32 697
@@ -152,7 +150,7 @@ entry:
 ; graphviz/optimized/exparse.c.ll
 ; wireshark/optimized/lanalyzer.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, -2
   %3 = select i1 %2, i32 -8, i32 0
@@ -165,7 +163,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000084(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000104(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 14
   %3 = select i1 %2, i32 1, i32 2
@@ -177,24 +175,12 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/upolynomial.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1
   %3 = select i1 %2, i32 -1, i32 1
   %4 = icmp eq i32 %0, 0
   %5 = select i1 %4, i32 0, i32 %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; arrow/optimized/key_map.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 29
-  %3 = select i1 %2, i32 5, i32 6
-  %4 = icmp ult i32 %0, 14
-  %5 = select i1 %4, i32 4, i32 %3
   ret i32 %5
 }
 

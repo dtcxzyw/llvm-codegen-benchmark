@@ -40,7 +40,7 @@ entry:
   %3 = add i32 %2, 4096
   %4 = lshr i32 %3, 16
   %5 = and i32 %4, 32768
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -53,7 +53,7 @@ entry:
   %3 = add nuw i32 %2, 4096
   %4 = lshr i32 %3, 16
   %5 = and i32 %4, 32768
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -66,7 +66,7 @@ entry:
   %3 = add nuw i32 %2, 8388608
   %4 = lshr i32 %3, 16
   %5 = and i32 %4, 65280
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }

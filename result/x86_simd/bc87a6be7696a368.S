@@ -115,7 +115,7 @@ func0000000000000140:                   # @func0000000000000140
 	vpbroadcastd	.LCPI7_0(%rip), %ymm1   # ymm1 = [255,255,255,255,255,255,255,255]
 	vpbroadcastd	.LCPI7_1(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
 	vpbroadcastd	.LCPI7_2(%rip), %ymm3 {%k1} # ymm3 {%k1} = [2,2,2,2,2,2,2,2]
-	vpaddd	%ymm0, %ymm3, %ymm0
+	vpaddd	%ymm3, %ymm0, %ymm0
 	vpcmpgtd	%ymm1, %ymm2, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq

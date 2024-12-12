@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; clamav/optimized/lzwdec.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -14,13 +14,25 @@ entry:
   ret i8 %7
 }
 
-; 2 occurrences:
-; lz4/optimized/lz4.c.ll
+; 1 occurrences:
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000008a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  %6 = trunc nuw i64 %5 to i8
+  %7 = shl nuw i8 %6, 4
+  ret i8 %7
+}
+
+; 1 occurrences:
+; lz4/optimized/lz4.c.ll
+; Function Attrs: nounwind
+define i8 @func00000000000000ca(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = trunc nuw i64 %5 to i8

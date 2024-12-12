@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 62 occurrences:
 ; assimp/optimized/ProcessHelper.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/KodakDecompressor.cpp.ll
@@ -15,7 +15,6 @@
 ; libjpeg-turbo/optimized/jdphuff.c.ll
 ; libquic/optimized/f_int.c.ll
 ; linux/optimized/extents.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_dpll_mgr.ll
@@ -48,10 +47,6 @@
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/binaryheap.ll
 ; postgres/optimized/binaryheap_shlib.ll
-; postgres/optimized/wait_error.ll
-; postgres/optimized/wait_error_shlib.ll
-; postgres/optimized/wait_error_srv.ll
-; postgres/optimized/xlogprefetcher.ll
 ; ruby/optimized/date_strftime.ll
 ; ruby/optimized/process.ll
 ; stb/optimized/stb_image.c.ll
@@ -63,6 +58,10 @@
 ; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; wireshark/optimized/packet-btl2cap.c.ll
 ; wireshark/optimized/packet-mikey.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
@@ -71,7 +70,7 @@ entry:
   ret i32 %3
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; icu/optimized/collationdatabuilder.ll
@@ -85,13 +84,15 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/IntArgbBm.ll
 ; openjdk/optimized/library_call.ll
+; openusd/optimized/value.cpp.ll
 ; php/optimized/zend_inference.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
 ; slurm/optimized/fed_mgr.ll
 ; wireshark/optimized/packet-btl2cap.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = or i32 %1, -16777216
+  %2 = or i32 %1, 32768
   %3 = select i1 %0, i32 %2, i32 0
   ret i32 %3
 }

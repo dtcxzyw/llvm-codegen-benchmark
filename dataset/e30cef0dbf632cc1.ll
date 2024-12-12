@@ -1,7 +1,9 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_style.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; wireshark/optimized/packet-packetbb.c.ll
 ; Function Attrs: nounwind

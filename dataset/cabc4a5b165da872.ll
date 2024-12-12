@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/histogram.c.ll
@@ -8,7 +8,6 @@
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_crop.c.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
-; gromacs/optimized/slarfg.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll

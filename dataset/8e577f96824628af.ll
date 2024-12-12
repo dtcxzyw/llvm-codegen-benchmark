@@ -8,7 +8,7 @@ entry:
   %4 = add i64 %1, %2
   %5 = and i64 %4, %3
   %6 = add nsw i64 %5, -1
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

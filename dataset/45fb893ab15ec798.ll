@@ -11,9 +11,8 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; hdf5/optimized/H5B2int.c.ll
-; linux/optimized/ds.ll
 ; openblas/optimized/dgesvj.c.ll
 ; opencv/optimized/contours2.cpp.ll
 ; proxygen/optimized/HQFramer.cpp.ll
@@ -28,7 +27,7 @@ entry:
   ret i64 %4
 }
 
-; 152 occurrences:
+; 151 occurrences:
 ; z3/optimized/aig_exporter.cpp.ll
 ; z3/optimized/arith_axioms.cpp.ll
 ; z3/optimized/arith_diagnostics.cpp.ll
@@ -45,7 +44,6 @@ entry:
 ; z3/optimized/bv_bounds_tactic.cpp.ll
 ; z3/optimized/bv_size_reduction_tactic.cpp.ll
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_solver_simplify_tactic.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
 ; z3/optimized/degree_shift_tactic.cpp.ll

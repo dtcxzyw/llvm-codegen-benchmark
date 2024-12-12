@@ -66,7 +66,7 @@ entry:
   ret i64 %6
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absUtil.c.ll
@@ -82,7 +82,6 @@ entry:
 ; abc/optimized/giaRetime.c.ll
 ; abc/optimized/giaRex.c.ll
 ; abc/optimized/giaTsim.c.ll
-; abc/optimized/intM114.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/pdrMan.c.ll
 ; abc/optimized/saigSimFast.c.ll
@@ -142,7 +141,7 @@ define i64 @func0000000000000035(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -154,7 +153,7 @@ define i64 @func0000000000000015(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -167,7 +166,7 @@ define i64 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = sub i32 %3, %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }

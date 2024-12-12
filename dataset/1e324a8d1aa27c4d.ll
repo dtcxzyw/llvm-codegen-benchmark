@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 48 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cecProve.c.ll
 ; abc/optimized/dauNpn2.c.ll
@@ -23,10 +23,7 @@
 ; nix/optimized/parser-tab.ll
 ; node/optimized/libnode.node_errors.ll
 ; oiio/optimized/imagecache.cpp.ll
-; openblas/optimized/blas_server.c.ll
 ; openblas/optimized/dlaqr5.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/grayscale_bitmap.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
@@ -59,8 +56,9 @@ entry:
   ret i1 %4
 }
 
-; 129 occurrences:
+; 134 occurrences:
 ; arrow/optimized/datum.cc.ll
+; boost/optimized/calculate_point_order.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; clamav/optimized/untar.c.ll
@@ -102,16 +100,17 @@ entry:
 ; llvm/optimized/CGDecl.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/VarLenCodeEmitterGen.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/tabwidget.cpp.ll
-; nori/optimized/textbox.cpp.ll
 ; nuttx/optimized/serial.c.ll
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/convhull.cpp.ll
@@ -189,6 +188,9 @@ entry:
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; z3/optimized/nla_basics_lemmas.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/d2w35dg2d82avud97ap9t4v42.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -197,18 +199,15 @@ entry:
   ret i1 %4
 }
 
-; 36 occurrences:
+; 27 occurrences:
 ; flac/optimized/stream_encoder.c.ll
 ; folly/optimized/LogLevel.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/H5Aint.c.ll
 ; hdf5/optimized/H5Ofsinfo.c.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; linux/optimized/aio.ll
-; linux/optimized/hda_codec.ll
-; linux/optimized/processor_idle.ll
 ; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/MachinePostDominators.cpp.ll
@@ -216,23 +215,17 @@ entry:
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
-; postgres/optimized/blkreftable.ll
-; postgres/optimized/blkreftable_shlib.ll
-; postgres/optimized/blkreftable_srv.ll
 ; proxygen/optimized/HPACKDecoder.cpp.ll
 ; proxygen/optimized/HPACKEncoder.cpp.ll
 ; proxygen/optimized/HeaderTable.cpp.ll
 ; proxygen/optimized/QPACKEncoder.cpp.ll
 ; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
-; slurm/optimized/priority_basic.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; wasmedge/optimized/controlInstr.cpp.ll
 ; wireshark/optimized/editcap.c.ll
-; wireshark/optimized/packet-gprs-llc.c.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
@@ -269,10 +262,8 @@ entry:
   ret i1 %4
 }
 
-; 63 occurrences:
+; 59 occurrences:
 ; cmake/optimized/zstd_opt.c.ll
-; cpython/optimized/unicodeobject.ll
-; darktable/optimized/tagging.c.ll
 ; flac/optimized/stream_decoder.c.ll
 ; flac/optimized/stream_encoder.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -281,16 +272,12 @@ entry:
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; linux/optimized/cgroup.ll
-; linux/optimized/intel_display.ll
 ; linux/optimized/truncate.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openvdb/optimized/AttributeArrayString.cc.ll
-; postgres/optimized/blkreftable.ll
-; postgres/optimized/blkreftable_shlib.ll
-; postgres/optimized/blkreftable_srv.ll
 ; slurm/optimized/priority_multifactor.ll
 ; wasmedge/optimized/alias.cpp.ll
 ; wasmedge/optimized/aot_section.cpp.ll
@@ -332,6 +319,8 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; z3/optimized/dl_mk_simple_joins.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
@@ -341,7 +330,7 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/exor.c.ll
 ; cpython/optimized/_posixsubprocess.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -353,7 +342,6 @@ entry:
 ; oiio/optimized/imagecache.cpp.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; opencv/optimized/videocapture_gphoto2_autofocus.cpp.ll
-; postgres/optimized/regcomp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -362,9 +350,7 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
-; gromacs/optimized/dorm2l.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
+; 3 occurrences:
 ; openblas/optimized/dlatrs.c.ll
 ; postgres/optimized/zic.ll
 ; stockfish/optimized/thread.ll
@@ -376,26 +362,64 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
+; hdf5/optimized/H5Aint.c.ll
+; linux/optimized/hda_codec.ll
+; linux/optimized/processor_idle.ll
+; postgres/optimized/blkreftable.ll
+; postgres/optimized/blkreftable_shlib.ll
+; postgres/optimized/blkreftable_srv.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 %2, i32 3
+  %4 = icmp samesign ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 6 occurrences:
 ; clamav/optimized/filtering.c.ll
-; lodepng/optimized/lodepng.cpp.ll
 ; postgres/optimized/blkreftable.ll
 ; postgres/optimized/blkreftable_shlib.ll
 ; postgres/optimized/blkreftable_srv.ll
 ; protobuf/optimized/coded_stream.cc.ll
 ; sentencepiece/optimized/coded_stream.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000015(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 2
+  %4 = icmp samesign ule i32 %3, %0
+  ret i1 %4
+}
+
+; 6 occurrences:
+; cpython/optimized/unicodeobject.ll
+; linux/optimized/intel_display.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; postgres/optimized/blkreftable.ll
+; postgres/optimized/blkreftable_shlib.ll
+; postgres/optimized/blkreftable_srv.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 %2, i32 0
+  %4 = icmp samesign ult i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; lodepng/optimized/lodepng.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 %2, i32 8
   %4 = icmp ule i32 %3, %0
   ret i1 %4
 }
 
-; 5 occurrences:
-; gromacs/optimized/dorm2l.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
+; 4 occurrences:
 ; linux/optimized/md.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; Function Attrs: nounwind

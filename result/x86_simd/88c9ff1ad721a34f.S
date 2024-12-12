@@ -9,7 +9,7 @@ func000000000000001f:                   # @func000000000000001f
 	.long	512                             # 0x200
 func000000000000001d:                   # @func000000000000001d
 	vpord	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
-	vpmulld	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI2_0:
@@ -31,7 +31,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000014:                   # @func0000000000000014
 	vpord	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI5_0:
 	.long	1                               # 0x1

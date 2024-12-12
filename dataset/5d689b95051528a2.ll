@@ -1,7 +1,7 @@
 
 ; 16 occurrences:
+; boost/optimized/formatter.ll
 ; curl/optimized/libcurl_la-setopt.ll
-; linux/optimized/thermal_lib.ll
 ; llvm/optimized/AnalyzerOptions.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; llvm/optimized/VFABIDemangler.cpp.ll
@@ -26,24 +26,11 @@ entry:
 }
 
 ; 3 occurrences:
-; libdeflate/optimized/deflate_compress.c.ll
-; llvm/optimized/BasicAliasAnalysis.cpp.ll
-; openusd/optimized/openexr-c.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -8
-  %3 = icmp ult i64 %2, 72
-  %4 = select i1 %3, i32 %0, i32 7
-  ret i32 %4
-}
-
-; 3 occurrences:
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000038(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -20481
   %3 = icmp ult i64 %2, -20480
@@ -51,8 +38,18 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; opencv/optimized/matrix.cpp.ll
+; 1 occurrences:
+; llvm/optimized/BasicAliasAnalysis.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, 4194304
+  %3 = icmp ult i64 %2, 8388608
+  %4 = select i1 %3, i32 %0, i32 2
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; postgres/optimized/aset.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
@@ -60,6 +57,17 @@ entry:
   %2 = add i64 %1, -17
   %3 = icmp ult i64 %2, -9
   %4 = select i1 %3, i32 %0, i32 0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/matrix.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -2251799812636672
+  %3 = icmp ult i64 %2, -2251799812636673
+  %4 = select i1 %3, i32 %0, i32 1048576
   ret i32 %4
 }
 

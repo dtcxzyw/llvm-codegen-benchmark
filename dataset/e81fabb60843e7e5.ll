@@ -3,12 +3,12 @@
 ; libjpeg-turbo/optimized/jccoefct.c.ll
 ; openjdk/optimized/jccoefct.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw [64 x i16], ptr %1, i64 %4
-  %6 = getelementptr nusw [64 x i16], ptr %5, i64 %0
+  %5 = getelementptr nusw nuw [64 x i16], ptr %1, i64 %4
+  %6 = getelementptr nusw nuw [64 x i16], ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -24,8 +24,7 @@ entry:
   ret ptr %6
 }
 
-; 7 occurrences:
-; cpython/optimized/Hacl_Hash_SHA3.ll
+; 6 occurrences:
 ; hdf5/optimized/h5tools_dump.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; openusd/optimized/AVIFImage.cpp.ll
@@ -47,12 +46,24 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; wolfssl/optimized/pwdbased.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %1, i64 %4
-  %6 = getelementptr nusw float, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw float, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw float, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; wolfssl/optimized/pwdbased.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = freeze i32 %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 

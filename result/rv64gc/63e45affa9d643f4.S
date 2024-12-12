@@ -13,3 +13,14 @@ func0000000000000120:                   # @func0000000000000120
 	add	a0, a0, a1
 	mul	a0, a0, a4
 	ret
+func00000000000001bf:                   # @func00000000000001bf
+	lui	a3, 488281
+	addiw	a3, a3, 1024
+	mul	a2, a2, a3
+	mulhu	a1, a1, a3
+	lui	a3, 351844
+	add	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a1, a3, -1143
+	mul	a0, a0, a1
+	ret

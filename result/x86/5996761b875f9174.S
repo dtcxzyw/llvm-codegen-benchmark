@@ -1,9 +1,9 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000017:                   # @func0000000000000017
 	addl	%edx, %esi
 	shrl	$31, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	addl	%edx, %esi
 	shrl	%esi
 	leaq	(%rsi,%rsi,2), %rax

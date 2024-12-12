@@ -1,5 +1,5 @@
 .LCPI0_0:
-	.long	12288                           # 0x3000
+	.long	1                               # 0x1
 func0000000000000001:                   # @func0000000000000001
 	vptestnmd	.LCPI0_0(%rip){1to4}, %xmm2, %k1
 	vpxor	%xmm2, %xmm2, %xmm2

@@ -1,10 +1,9 @@
 
-; 172 occurrences:
+; 171 occurrences:
 ; abc/optimized/crc32.c.ll
 ; clamav/optimized/7zCrc.c.ll
 ; clamav/optimized/arc4.c.ll
 ; clamav/optimized/autoit.c.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/oabd.c.ll
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/spin.c.ll
@@ -84,6 +83,7 @@
 ; luau/optimized/Unifier2.test.cpp.ll
 ; luau/optimized/Variant.test.cpp.ll
 ; luau/optimized/VecDeque.test.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
@@ -143,7 +143,6 @@
 ; openjdk/optimized/elfFile.ll
 ; openjdk/optimized/symtab.ll
 ; php/optimized/crc32.ll
-; php/optimized/hash_crc32.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/zip.ll
 ; postgres/optimized/nodeWindowAgg.ll
@@ -176,7 +175,7 @@
 define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = xor i8 %2, %0
+  %3 = xor i8 %0, %2
   ret i8 %3
 }
 
@@ -187,16 +186,17 @@ entry:
 define i8 @func0000000000000003(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
-  %3 = xor i8 %2, %0
+  %3 = xor i8 %0, %2
   ret i8 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/regex_suffix.c.ll
 ; libquic/optimized/spake25519_test.cc.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openjdk/optimized/Any4Byte.ll
 ; openjdk/optimized/FourByteAbgr.ll
 ; openjdk/optimized/FourByteAbgrPre.ll
@@ -206,7 +206,7 @@ entry:
 define i8 @func0000000000000002(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
-  %3 = xor i8 %2, %0
+  %3 = xor i8 %0, %2
   ret i8 %3
 }
 

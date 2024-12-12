@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; llama.cpp/optimized/ggml.c.ll
@@ -8,7 +8,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll

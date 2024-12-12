@@ -32,7 +32,7 @@ func000000000000002b:                   # @func000000000000002b
 	ret
 func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vv	v10, v10, v10
+	vsll.vi	v10, v10, 12
 	vadd.vv	v8, v8, v9
 	vadd.vv	v10, v8, v10
 	vsetvli	zero, zero, e64, m2, ta, ma

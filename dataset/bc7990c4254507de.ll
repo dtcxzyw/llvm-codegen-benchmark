@@ -19,7 +19,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; slurm/optimized/KangarooTwelve.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 258, %2
   %4 = trunc nuw i64 %0 to i32
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/remote-curl.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 4, %2
   %4 = trunc i64 %0 to i32
@@ -44,7 +44,7 @@ entry:
 ; linux/optimized/devio.ll
 ; linux/optimized/i915_gem_shmem.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c4(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000184(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 18, %2
   %4 = trunc i64 %0 to i32

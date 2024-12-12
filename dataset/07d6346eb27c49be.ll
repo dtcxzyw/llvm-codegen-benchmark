@@ -1,5 +1,8 @@
 
-; 27 occurrences:
+; 30 occurrences:
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; g2o/optimized/edge_project_psi2uv.cpp.ll
 ; graphviz/optimized/shapes.c.ll
 ; hdf5/optimized/h5diff_array.c.ll

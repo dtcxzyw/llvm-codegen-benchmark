@@ -14,7 +14,7 @@ entry:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = mul nsw i64 %0, %1
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; xgboost/optimized/allreduce.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = mul i64 %0, %1
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 -9223372036854775808, %2
   %4 = mul i64 %0, %1

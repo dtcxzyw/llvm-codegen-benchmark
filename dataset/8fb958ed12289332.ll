@@ -8,7 +8,7 @@ entry:
   %3 = and i32 %2, 7680
   %4 = icmp slt i32 %1, 0
   %5 = select i1 %4, i32 512, i32 %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -107,19 +107,19 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 0, i32 %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/cmsio0.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
-  %4 = icmp ugt i32 %1, 2304
+  %4 = icmp samesign ugt i32 %1, 2304
   %5 = select i1 %4, i32 9, i32 %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

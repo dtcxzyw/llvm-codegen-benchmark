@@ -27,9 +27,31 @@ func0000000000000006:                   # @func0000000000000006
 	notb	%dil
 	andb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	$8, %rsi
+	setb	%al
+	notb	%dil
+	andb	%dil, %al
+	retq
+func000000000000001c:                   # @func000000000000001c
+	cmpq	$3, %rsi
+	setne	%al
+	orb	%dil, %al
+	retq
 func000000000000000a:                   # @func000000000000000a
 	testq	%rsi, %rsi
 	setns	%al
 	notb	%dil
 	andb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movabsq	$99999999999999999, %rax        # imm = 0x16345785D89FFFF
+	cmpq	%rax, %rsi
+	seta	%al
+	orb	%dil, %al
+	retq
+func0000000000000011:                   # @func0000000000000011
+	testq	%rsi, %rsi
+	sete	%al
+	orb	%dil, %al
 	retq

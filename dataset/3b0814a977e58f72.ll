@@ -1,11 +1,10 @@
 
-%"class.std::__cxx11::basic_string.2766536" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2766537", i64, %union.anon.2766538 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2766537" = type { ptr }
-%union.anon.2766538 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2878767" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2878768", i64, %union.anon.2878769 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2878768" = type { ptr }
+%union.anon.2878769 = type { i64, [8 x i8] }
 
-; 14 occurrences:
+; 13 occurrences:
 ; cmake/optimized/cmRST.cxx.ll
-; llvm/optimized/Reassociate.cpp.ll
 ; lz4/optimized/lz4.c.ll
 ; openusd/optimized/lz4.cpp.ll
 ; proxygen/optimized/HPACKCodec.cpp.ll
@@ -25,7 +24,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %5, %4
-  %7 = getelementptr nusw %"class.std::__cxx11::basic_string.2766536", ptr %0, i64 %6
+  %7 = getelementptr nusw %"class.std::__cxx11::basic_string.2878767", ptr %0, i64 %6
   ret ptr %7
 }
 

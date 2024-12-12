@@ -49,9 +49,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; gromacs/optimized/anadih.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000022(float %0, float %1, float %2) #0 {

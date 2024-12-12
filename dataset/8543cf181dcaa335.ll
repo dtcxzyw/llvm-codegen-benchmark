@@ -17,7 +17,7 @@ define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 24
   %4 = icmp eq i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -29,7 +29,7 @@ define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = icmp ne i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -41,33 +41,41 @@ define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = icmp sge i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 16 occurrences:
+; 3 occurrences:
+; libpng/optimized/pngtrans.c.ll
+; openjdk/optimized/pngtrans.ll
+; z3/optimized/dd_pdd.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 4
+  %4 = icmp samesign ugt i32 %3, %1
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 11 occurrences:
 ; abc/optimized/abcReconv.c.ll
 ; abc/optimized/abcRr.c.ll
-; abc/optimized/sbdCut.c.ll
-; abc/optimized/sfmDec.c.ll
 ; c3c/optimized/diagnostics.c.ll
 ; icu/optimized/collationrootelements.ll
-; libpng/optimized/pngtrans.c.ll
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll
 ; luau/optimized/IrAnalysis.cpp.ll
-; openjdk/optimized/pngtrans.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
-; z3/optimized/dd_pdd.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 4
+  %3 = lshr i32 %2, 24
   %4 = icmp ugt i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -98,7 +106,7 @@ define i1 @func000000000000000e(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 24
   %4 = icmp sle i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -110,27 +118,6 @@ define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 11
   %4 = icmp ule i32 %3, %1
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 11 occurrences:
-; abc/optimized/sbdCut.c.ll
-; arrow/optimized/compare_internal.cc.ll
-; linux/optimized/blk-mq.ll
-; linux/optimized/hooks.ll
-; linux/optimized/yenta_socket.ll
-; llvm/optimized/CodeGenPrepare.cpp.ll
-; llvm/optimized/LoadStoreVectorizer.cpp.ll
-; luau/optimized/IrAnalysis.cpp.ll
-; postgres/optimized/tsvector_op.ll
-; z3/optimized/dd_bdd.cpp.ll
-; z3/optimized/sat_model_converter.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 28
-  %4 = icmp ult i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -151,6 +138,34 @@ entry:
   ret i1 %5
 }
 
+; 5 occurrences:
+; linux/optimized/blk-mq.ll
+; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/LoadStoreVectorizer.cpp.ll
+; luau/optimized/IrAnalysis.cpp.ll
+; z3/optimized/sat_model_converter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 4
+  %4 = icmp ult i32 %3, %1
+  %5 = or i1 %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; linux/optimized/hooks.ll
+; linux/optimized/yenta_socket.ll
+; z3/optimized/dd_bdd.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 1
+  %4 = icmp samesign ult i32 %3, %1
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; z3/optimized/sat_gc.cpp.ll
 ; Function Attrs: nounwind
@@ -158,7 +173,7 @@ define i1 @func0000000000000012(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = icmp uge i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

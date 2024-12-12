@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; openssl/optimized/libcrypto-lib-wp_dgst.ll
 ; openssl/optimized/libcrypto-shlib-wp_dgst.ll
 ; postgres/optimized/varbit.ll
@@ -15,7 +16,7 @@ entry:
   ret i8 %4
 }
 
-; 48 occurrences:
+; 49 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; assimp/optimized/zip.c.ll
@@ -36,10 +37,11 @@ entry:
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/libps2.ll
-; linux/optimized/rsmisc.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; oiio/optimized/pnminput.cpp.ll

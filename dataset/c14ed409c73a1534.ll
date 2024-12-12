@@ -5,13 +5,13 @@
 define i64 @func000000000000006b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %4 = mul nuw i64 %1, %3
+  %5 = add nuw i64 %0, %4
   %6 = shl nuw nsw i64 %5, 15
   ret i64 %6
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -21,20 +21,21 @@ entry:
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = add nuw i64 %4, %0
   %6 = shl i64 %5, 2
   ret i64 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_blurs.c.ll
 ; faiss/optimized/pq4_fast_scan.cpp.ll
-; gromacs/optimized/forcerec.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
@@ -45,30 +46,32 @@ entry:
 define i64 @func000000000000007d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nuw nsw i64 %0, %4
   %6 = shl nsw i64 %5, 5
   ret i64 %6
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
 ; yosys/optimized/coolrunner2_sop.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nuw nsw i64 %0, %4
   %6 = shl nuw nsw i64 %5, 1
   ret i64 %6
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/abcMiter.c.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
@@ -78,7 +81,6 @@ entry:
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; gromacs/optimized/forcerec.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; ncnn/optimized/deformableconv2d.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
@@ -91,7 +93,7 @@ entry:
 define i64 @func000000000000007f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   %6 = shl nuw nsw i64 %5, 1
   ret i64 %6
@@ -110,7 +112,7 @@ entry:
 define i64 @func000000000000007c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   %6 = shl i64 %5, 2
   ret i64 %6
@@ -127,8 +129,8 @@ entry:
 define i64 @func000000000000003c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nuw nsw i64 %0, %4
   %6 = shl i64 %5, 6
   ret i64 %6
 }
@@ -143,7 +145,7 @@ entry:
 define i64 @func0000000000000055(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   %6 = shl nsw i64 %5, 1
   ret i64 %6
@@ -155,7 +157,7 @@ entry:
 define i64 @func000000000000007e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   %6 = shl nuw i64 %5, 2
   ret i64 %6
@@ -168,8 +170,8 @@ entry:
 define i64 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
   %6 = shl i64 %5, 4
   ret i64 %6
 }
@@ -180,8 +182,8 @@ entry:
 define i64 @func0000000000000050(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = add i64 %0, %4
   %6 = shl i64 %5, 4
   ret i64 %6
 }
@@ -192,7 +194,7 @@ entry:
 define i64 @func0000000000000040(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add i64 %4, %0
   %6 = shl i64 %5, 4
   ret i64 %6
@@ -204,7 +206,7 @@ entry:
 define i64 @func000000000000005d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   %6 = shl nsw i64 %5, 4
   ret i64 %6
@@ -216,7 +218,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add i64 %4, %0
   %6 = shl i64 %5, 2
   ret i64 %6
@@ -228,7 +230,7 @@ entry:
 define i64 @func0000000000000074(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   %6 = shl i64 %5, 2
   ret i64 %6
@@ -241,7 +243,7 @@ entry:
 define i64 @func0000000000000075(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   %6 = shl nsw i64 %5, 1
   ret i64 %6
@@ -253,8 +255,8 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = add i64 %0, %4
   %6 = shl i64 %5, 7
   ret i64 %6
 }

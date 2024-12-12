@@ -1,12 +1,10 @@
 
-; 82 occurrences:
+; 73 occurrences:
 ; clamav/optimized/yara_grammar.c.ll
 ; cmake/optimized/cmDependsJavaParser.cxx.ll
 ; cmake/optimized/cmFortranParser.cxx.ll
 ; cvc5/optimized/linear_equality.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
-; fmt/optimized/chrono-test.cc.ll
-; fmt/optimized/compile-test.cc.ll
 ; glslang/optimized/glslang_tab.cpp.ll
 ; gromacs/optimized/dgemv.cpp.ll
 ; gromacs/optimized/dsymv.cpp.ll
@@ -17,7 +15,6 @@
 ; gromacs/optimized/ssyr2.cpp.ll
 ; gromacs/optimized/strmv.cpp.ll
 ; hwloc/optimized/traversal.ll
-; icu/optimized/coptccal.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/gregocal.ll
 ; icu/optimized/punycode.ll
@@ -29,12 +26,6 @@
 ; libpng/optimized/png.c.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; nix/optimized/parser-tab.ll
-; nuttx/optimized/pthread_initialize.c.ll
-; nuttx/optimized/pthread_mutexconsistent.c.ll
-; nuttx/optimized/pthread_mutexdestroy.c.ll
-; nuttx/optimized/pthread_mutexinit.c.ll
-; nuttx/optimized/pthread_setschedprio.c.ll
-; nuttx/optimized/pthread_sigmask.c.ll
 ; opencv/optimized/CmShow.cpp.ll
 ; opencv/optimized/sqpnp.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
@@ -57,7 +48,6 @@
 ; openjdk/optimized/png.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
-; openusd/optimized/reconinter.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/zend_ini_parser.ll
 ; php/optimized/zend_language_parser.ll
@@ -81,6 +71,7 @@
 ; wireshark/optimized/packet-btmesh.c.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
@@ -90,7 +81,7 @@ entry:
   ret i32 %3
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; abc/optimized/inflate.c.ll
 ; cmake/optimized/inflate.c.ll
 ; gromacs/optimized/inflate.c.ll
@@ -124,7 +115,6 @@ entry:
 ; stb/optimized/stb_image_write.c.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; wasmtime-rs/optimized/4vgjsomnctxfipp1.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; yosys/optimized/yosys.ll
 ; zlib/optimized/inflate.c.ll
@@ -137,7 +127,8 @@ entry:
   ret i32 %3
 }
 
-; 29 occurrences:
+; 27 occurrences:
+; boost/optimized/formatter.ll
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
 ; cpython/optimized/_randommodule.ll
@@ -146,14 +137,11 @@ entry:
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; git/optimized/graph.ll
-; gromacs/optimized/gmx_h2order.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; linux/optimized/devinet.ll
-; linux/optimized/fib_notifier.ll
 ; linux/optimized/lskcipher.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll

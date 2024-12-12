@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; brotli/optimized/static_dict.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -11,7 +11,6 @@
 ; openssl/optimized/libcrypto-lib-a_utf8.ll
 ; openssl/optimized/libcrypto-shlib-a_utf8.ll
 ; php/optimized/pcre2_jit_compile.ll
-; protobuf/optimized/json.cc.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; sentencepiece/optimized/parse_context.cc.ll

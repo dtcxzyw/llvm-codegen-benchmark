@@ -6,7 +6,7 @@
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   %5 = add i32 %3, 1
   %6 = select i1 %4, i32 %0, i32 %5
   ret i32 %6
@@ -16,11 +16,11 @@ entry:
 ; oiio/optimized/imagebuf.cpp.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, -1
-  %5 = icmp sgt i32 %3, %0
+  %5 = icmp slt i32 %0, %3
   %6 = select i1 %5, i32 %0, i32 %4
   ret i32 %6
 }

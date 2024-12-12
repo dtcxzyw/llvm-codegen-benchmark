@@ -59,7 +59,7 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; z3/optimized/value_generator.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 54, %2
   %4 = icmp eq i32 %1, 0
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; stockfish/optimized/uci.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 11753, %2
   %4 = icmp sgt i32 %1, 0
@@ -81,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 9, %2
   %4 = icmp eq i32 %1, 0
@@ -93,10 +93,21 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 54, %2
   %4 = icmp slt i32 %1, -1021
+  %5 = select i1 %4, i32 %0, i32 %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; hermes/optimized/HadesGC.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nuw nsw i32 276, %2
+  %4 = icmp samesign ult i32 %1, 2048
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }
@@ -105,7 +116,7 @@ entry:
 ; hermes/optimized/HadesGC.cpp.ll
 ; postgres/optimized/md.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 276, %2
   %4 = icmp ult i32 %1, 2048
@@ -116,10 +127,21 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationkeys.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 69, %2
   %4 = icmp ult i32 %1, 1280
+  %5 = select i1 %4, i32 %0, i32 %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; icu/optimized/collationkeys.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 69, %2
+  %4 = icmp ult i32 %1, 83886080
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }
@@ -128,10 +150,10 @@ entry:
 ; icu/optimized/collationkeys.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sub i32 69, %2
-  %4 = icmp ult i32 %1, 83886080
+  %3 = sub i32 13, %2
+  %4 = icmp samesign ult i32 %1, 2
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }

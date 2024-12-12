@@ -1,6 +1,8 @@
 
-; 79 occurrences:
+; 81 occurrences:
 ; abc/optimized/giaIf.c.ll
+; boost/optimized/process_id.ll
+; boost/optimized/thread_id.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/compound_dictionary.c.ll
@@ -80,22 +82,19 @@
 ; stockfish/optimized/movepick.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = and i64 %3, 15
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 28 occurrences:
+; 24 occurrences:
 ; linux/optimized/efi_64.ll
 ; linux/optimized/fault.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/gup.ll
-; linux/optimized/head64.ll
-; linux/optimized/hibernate.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_syncmap.ll
 ; linux/optimized/init_64.ll
@@ -106,7 +105,6 @@ entry:
 ; linux/optimized/mprotect.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/pgtable.ll
 ; linux/optimized/poll.ll

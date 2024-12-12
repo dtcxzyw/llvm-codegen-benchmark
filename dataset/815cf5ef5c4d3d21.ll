@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
 ; jemalloc/optimized/malloc_io.ll
 ; jemalloc/optimized/malloc_io.pic.ll
@@ -12,8 +12,9 @@
 ; rust-analyzer-rs/optimized/4x4kq4gfl0tghxcw.ll
 ; rust-analyzer-rs/optimized/6geurunh5eorswv.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
+; zed-rs/optimized/8x58xp4s22l8izlb56sviitm3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = xor i1 %2, true
@@ -27,7 +28,7 @@ entry:
 ; rust-analyzer-rs/optimized/2zm9eul0ycl9zsz3.ll
 ; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = xor i1 %2, true
@@ -36,11 +37,10 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cvc5/optimized/statistics_value.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; luau/optimized/Normalize.cpp.ll
-; proj/optimized/io.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:

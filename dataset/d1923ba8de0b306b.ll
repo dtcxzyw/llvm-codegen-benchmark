@@ -7,8 +7,8 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw i32 1, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %1
-  %7 = and i32 %6, %0
+  %6 = and i32 %1, %5
+  %7 = and i32 %0, %6
   ret i32 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw i32 1, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %1
+  %6 = and i32 %1, %5
   %7 = and i32 %6, %0
   ret i32 %7
 }
@@ -38,8 +38,8 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nsw i32 -1, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %1
-  %7 = and i32 %6, %0
+  %6 = and i32 %1, %5
+  %7 = and i32 %0, %6
   ret i32 %7
 }
 

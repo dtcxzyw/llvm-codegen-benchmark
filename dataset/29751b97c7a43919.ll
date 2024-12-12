@@ -29,8 +29,10 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i32 %1) #0 {

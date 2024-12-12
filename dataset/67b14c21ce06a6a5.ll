@@ -17,11 +17,11 @@ entry:
 ; llvm/optimized/Format.cpp.ll
 ; openusd/optimized/path.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = xor i8 %2, 1
-  %4 = icmp ult i8 %3, %0
+  %4 = icmp samesign ult i8 %3, %0
   ret i1 %4
 }
 

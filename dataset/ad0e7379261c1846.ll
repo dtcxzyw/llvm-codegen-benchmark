@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/methodData.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 %0
@@ -63,14 +63,26 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
-; regex-rs/optimized/183h9dropc9vohym.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000018c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 %0
+  %5 = icmp ne ptr %4, null
+  ret i1 %5
+}
+
+; 1 occurrences:
+; regex-rs/optimized/183h9dropc9vohym.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw { i8, i8 }, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = icmp ne ptr %4, null
   ret i1 %5

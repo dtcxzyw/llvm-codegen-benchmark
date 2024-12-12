@@ -12,11 +12,11 @@ define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, -128
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; icu/optimized/bmpset.ll
 ; icu/optimized/escapesrc.ll
 ; icu/optimized/rulebasedcollator.ll
@@ -31,7 +31,6 @@ entry:
 ; libphonenumber/optimized/rune.c.ll
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/sd.ll
-; linux/optimized/umwait.ll
 ; llvm/optimized/CommandFlags.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
@@ -66,7 +65,7 @@ define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, -128
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -79,7 +78,7 @@ define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -90,7 +89,7 @@ define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, -32
   %3 = zext i8 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

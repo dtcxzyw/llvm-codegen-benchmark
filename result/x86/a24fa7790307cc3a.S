@@ -10,37 +10,43 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rsi, %rsi
 	setg	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000f8:                   # @func00000000000000f8
 	orq	%rdx, %rsi
 	subq	%rdi, %rsi
 	cmpq	$2, %rsi
 	setae	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	orq	%rdx, %rsi
 	subq	%rdi, %rsi
 	cmpq	$2, %rsi
 	setb	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	movq	%rsi, %rax
 	orq	%rdx, %rax
 	subq	%rdi, %rax
 	shrq	$63, %rax
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	orq	%rdx, %rsi
 	subq	%rdi, %rsi
 	cmpq	$64, %rsi
 	setae	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000e8:                   # @func00000000000000e8
+	orq	%rdx, %rsi
+	subq	%rdi, %rsi
+	cmpq	$268435457, %rsi                # imm = 0x10000001
+	setae	%al
+	retq
+func00000000000000a8:                   # @func00000000000000a8
 	orq	%rdx, %rsi
 	subq	%rdi, %rsi
 	cmpq	$20001, %rsi                    # imm = 0x4E21
 	setae	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	orq	%rdx, %rsi
 	subq	%rdi, %rsi
 	shrq	$35, %rsi
@@ -58,7 +64,7 @@ func0000000000000008:                   # @func0000000000000008
 	shrq	$44, %rsi
 	setne	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	orq	%rdx, %rsi
 	subq	%rdi, %rsi
 	cmpq	$127, %rsi

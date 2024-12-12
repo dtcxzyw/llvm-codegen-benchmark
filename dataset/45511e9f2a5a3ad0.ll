@@ -30,6 +30,22 @@ entry:
   ret i1 %6
 }
 
+; 5 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000043(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ogt double %1, %2
+  %4 = select i1 %3, double %1, double %2
+  %5 = fmul double %4, 0x3CB0000000000000
+  %6 = fcmp ult double %5, %0
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; gromacs/optimized/dlasq4.cpp.ll
 ; Function Attrs: nounwind

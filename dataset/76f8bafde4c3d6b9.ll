@@ -6,9 +6,9 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 4
   %4 = and i32 %3, 524288
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = shl nuw i32 %5, 8
-  %7 = or disjoint i32 %6, %0
+  %7 = or disjoint i32 %0, %6
   ret i32 %7
 }
 
@@ -20,7 +20,7 @@ define i32 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = and i32 %3, 65280
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = shl nuw nsw i32 %5, 16
   %7 = or i32 %6, %0
   ret i32 %7
@@ -67,7 +67,7 @@ entry:
   %4 = and i32 %3, 1024
   %5 = or disjoint i32 %4, %1
   %6 = shl i32 %5, 4
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 

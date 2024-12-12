@@ -1,5 +1,5 @@
 
-; 229 occurrences:
+; 240 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcDfs.c.ll
@@ -120,7 +120,6 @@
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/sswSat.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/superAnd.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -153,7 +152,6 @@
 ; linux/optimized/kfifo.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/maple_tree.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/poll.ll
 ; linux/optimized/rmap.ll
@@ -178,6 +176,18 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/ToString.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_flex_layout_ctrl_pad.ll
+; lvgl/optimized/lv_demo_render.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_layout.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_span.ll
 ; node/optimized/libnode.string_bytes.ll
 ; nuttx/optimized/intel64_map_region.c.ll
 ; oniguruma/optimized/regparse.ll
@@ -229,6 +239,7 @@
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(ptr %0) #0 {
 entry:

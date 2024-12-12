@@ -7,7 +7,7 @@
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000053(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000093(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 2
   %4 = icmp ult i32 %2, 1073741824
@@ -25,7 +25,7 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000047(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000087(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 2
   %4 = icmp eq i32 %2, 0

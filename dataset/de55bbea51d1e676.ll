@@ -9,7 +9,7 @@ entry:
   %3 = shl i64 %2, 10
   %4 = and i64 %3, 67107840
   %5 = select i1 %1, i64 32768, i64 0
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   %7 = add nuw nsw i64 %6, %4
   ret i64 %7
 }

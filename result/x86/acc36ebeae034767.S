@@ -1,4 +1,4 @@
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	shll	$8, %edx
 	orl	%esi, %edi
 	orl	%edx, %edi
@@ -7,7 +7,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	sete	%al
 	leal	-9(%rax,%rax,8), %eax
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001e4:                   # @func00000000000001e4
 	shll	$8, %edx
 	orl	%esi, %edi
 	orl	%edx, %edi

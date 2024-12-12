@@ -102,13 +102,13 @@
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000748(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001c98(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = icmp ult i64 %2, 4
   %4 = sub nuw nsw i64 5, %1
   %5 = select i1 %3, i64 %4, i64 5
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp samesign ugt i64 %5, %0
   ret i1 %6
 }
 

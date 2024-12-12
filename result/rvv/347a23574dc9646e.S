@@ -61,22 +61,12 @@ func0000000000000018:                   # @func0000000000000018
 	vand.vi	v8, v8, 1
 	vor.vv	v8, v8, v9
 	ret
-func0000000000000011:                   # @func0000000000000011
-	lui	a0, 16
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v0, v10, a0
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vand.vi	v8, v8, -2
-	vor.vv	v8, v8, v9
-	ret
 func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vi	v0, v10, 2
+	vmsgtu.vi	v0, v10, 1
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vand.vi	v8, v8, -2
+	vand.vi	v8, v8, -8
 	vor.vv	v8, v8, v9
 	ret

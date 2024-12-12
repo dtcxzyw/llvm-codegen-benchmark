@@ -20,6 +20,23 @@ entry:
   ret i64 %3
 }
 
+; 8 occurrences:
+; boost/optimized/approximately_equals.ll
+; rayon-rs/optimized/21gejo1m4tab0cb8.ll
+; rayon-rs/optimized/9qhkgr4qio1yp41.ll
+; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
+; tokio-rs/optimized/4brh9kql6tjayli1.ll
+; tokio-rs/optimized/um69cc05lgsv45r.ll
+; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i1 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nuw i128 %1 to i64
+  %3 = select i1 %0, i64 %2, i64 1
+  ret i64 %3
+}
+
 ; 71 occurrences:
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -97,22 +114,6 @@ define i64 @func0000000000000003(i1 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i64
   %3 = select i1 %0, i64 %2, i64 0
-  ret i64 %3
-}
-
-; 7 occurrences:
-; rayon-rs/optimized/21gejo1m4tab0cb8.ll
-; rayon-rs/optimized/9qhkgr4qio1yp41.ll
-; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
-; tokio-rs/optimized/4brh9kql6tjayli1.ll
-; tokio-rs/optimized/um69cc05lgsv45r.ll
-; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
-; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i1 %0, i128 %1) #0 {
-entry:
-  %2 = trunc nuw i128 %1 to i64
-  %3 = select i1 %0, i64 %2, i64 undef
   ret i64 %3
 }
 

@@ -1,5 +1,5 @@
 
-; 381 occurrences:
+; 380 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; arrow/optimized/expression.cc.ll
@@ -42,7 +42,6 @@
 ; gromacs/optimized/gmxcalculatorcpu.cpp.ll
 ; gromacs/optimized/manyautocorrelation.cpp.ll
 ; gromacs/optimized/muParserBase.cpp.ll
-; gromacs/optimized/quadraticsplinetable.cpp.ll
 ; gromacs/optimized/readir.cpp.ll
 ; grpc/optimized/event_log.cc.ll
 ; hermes/optimized/IdentifierTable.cpp.ll

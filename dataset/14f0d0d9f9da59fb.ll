@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; hyperscan/optimized/stream_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000344(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000684(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 7
   %4 = lshr i32 %3, 3

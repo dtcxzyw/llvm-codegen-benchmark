@@ -49,9 +49,7 @@ func000000000000000e:                   # @func000000000000000e
 	addl	%edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	notb	%dl
-	movzbl	%dl, %eax
-	andl	$1, %eax
-	leal	(%rsi,%rax,4), %eax
-	leal	-38(%rdi,%rax), %eax
+	andl	$1, %edx
+	addl	%esi, %edx
+	leal	3(%rdi,%rdx), %eax
 	retq

@@ -10,16 +10,15 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rsi, %rax
 	seta	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addq	%rsi, %rsi
 	andq	$-2, %rdi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
-	shlq	$2, %rsi
-	movabsq	$17179869180, %rax              # imm = 0x3FFFFFFFC
-	andq	%rdi, %rax
+func0000000000000061:                   # @func0000000000000061
+	shlq	$6, %rsi
+	movl	%edi, %eax
 	cmpq	%rsi, %rax
 	sete	%al
 	retq

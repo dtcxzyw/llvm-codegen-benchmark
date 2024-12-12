@@ -1,19 +1,6 @@
 
-; 17 occurrences:
+; 4 occurrences:
 ; git/optimized/ewah_bitmap.ll
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/RewriteModernObjC.cpp.ll
-; llvm/optimized/RewriteObjC.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/SemaCoroutine.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclAttr.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaLookup.cpp.ll
-; llvm/optimized/SemaOpenCL.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/USRGeneration.cpp.ll
 ; ruby/optimized/hash.ll
 ; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll

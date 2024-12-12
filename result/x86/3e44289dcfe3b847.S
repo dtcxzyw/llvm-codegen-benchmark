@@ -26,13 +26,6 @@ func0000000000000008:                   # @func0000000000000008
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	leal	-1(%rdx), %ecx
-	xorl	%eax, %eax
-	testb	$1, %sil
-	cmovel	%ecx, %eax
-	addl	%edi, %eax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	leal	2(%rdx), %ecx
 	xorl	%eax, %eax

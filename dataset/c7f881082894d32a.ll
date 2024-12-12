@@ -5,7 +5,7 @@
 ; openjdk/optimized/memnode.ll
 ; verilator/optimized/V3CCtors.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = srem i32 %0, %2

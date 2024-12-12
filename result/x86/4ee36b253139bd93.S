@@ -1,6 +1,6 @@
 func0000000000000014:                   # @func0000000000000014
-	movslq	%esi, %rax
-	leaq	(%rax,%rax,2), %rax
+	movsbq	%sil, %rax
+	imulq	$56, %rax, %rax
 	addq	%rdi, %rax
 	retq
 func0000000000000016:                   # @func0000000000000016

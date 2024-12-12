@@ -9,7 +9,7 @@
 ; postgres/optimized/pgbench.ll
 ; ruby/optimized/prism.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
   %4 = icmp eq ptr %1, null
@@ -29,7 +29,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bio_addr.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne ptr %1, null
@@ -54,12 +54,12 @@ entry:
 ; openjdk/optimized/doCall.ll
 ; wolfssl/optimized/aes.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000302(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq i32 %1, 2
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -69,24 +69,24 @@ entry:
 ; linux/optimized/slub.ll
 ; llvm/optimized/InlineSpiller.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne ptr %1, null
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; luau/optimized/Compiler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000198(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = icmp ne ptr %1, null
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -99,7 +99,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000308(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ult i32 %1, 2
@@ -114,12 +114,12 @@ entry:
 ; icu/optimized/ubrk.ll
 ; icu/optimized/uregex.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000142(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000282(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp eq ptr %1, null
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

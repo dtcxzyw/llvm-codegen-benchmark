@@ -1,12 +1,10 @@
 
-; 25 occurrences:
+; 23 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; grpc/optimized/weighted_target.cc.ll
 ; icu/optimized/collationbuilder.ll
 ; libquic/optimized/ssl_cipher.c.ll
 ; linux/optimized/i915_gem_context.ll
-; linux/optimized/i915_gem_gtt.ll
-; linux/optimized/intel_mocs.ll
 ; linux/optimized/processor_idle.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/traps.ll
@@ -34,15 +32,14 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; brotli/optimized/encode.c.ll
-; opencv/optimized/matrix.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 2147483647, i32 1073741824
-  %3 = icmp ugt i64 %0, 2251799812636672
-  %4 = select i1 %3, i32 %2, i32 1048576
+  %2 = select i1 %1, i32 2, i32 1
+  %3 = icmp ugt i64 %0, 65536
+  %4 = select i1 %3, i32 %2, i32 0
   ret i32 %4
 }
 

@@ -1,4 +1,4 @@
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	addl	%esi, %edi
@@ -18,39 +18,39 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%esi, %edi
 	sete	%al
 	retq
-func000000000000014a:                   # @func000000000000014a
+func000000000000028a:                   # @func000000000000028a
 	subq	%rdx, %rsi
 	shrq	$5, %rsi
 	addl	%esi, %edi
 	testl	%edi, %edi
 	setg	%al
 	retq
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	leal	(%rdi,%rsi), %eax
 	shrl	$31, %eax
 	retq
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	addl	%esi, %edi
 	sete	%al
 	retq
-func00000000000001ca:                   # @func00000000000001ca
+func000000000000038a:                   # @func000000000000038a
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	addl	%esi, %edi
 	cmpl	$2, %edi
 	setge	%al
 	retq
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000038c:                   # @func000000000000038c
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	addl	%esi, %edi
 	setne	%al
 	retq
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000381:                   # @func0000000000000381
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	addl	%esi, %edi

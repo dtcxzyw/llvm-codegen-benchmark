@@ -6,7 +6,7 @@ func0000000000000004:                   // @func0000000000000004
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	sxtb	x8, w2

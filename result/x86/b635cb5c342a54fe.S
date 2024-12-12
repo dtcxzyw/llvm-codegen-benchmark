@@ -9,10 +9,10 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rdi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
+	movabsq	$8796093034496, %rax            # imm = 0x80000003000
+	leaq	8(%rax), %rcx
 	testb	$1, %dl
-	movabsq	$72136758875290687, %rax        # imm = 0x100480000027C3F
-	movabsq	$72066390131081223, %rcx        # imm = 0x100080000020007
-	cmovneq	%rax, %rcx
+	cmoveq	%rax, %rcx
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rcx, %rax

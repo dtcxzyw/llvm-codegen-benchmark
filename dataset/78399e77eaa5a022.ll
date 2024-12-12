@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -21,28 +21,27 @@
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
-; 4 occurrences:
-; cmake/optimized/smb.c.ll
-; curl/optimized/libcurl_la-smb.ll
+; 2 occurrences:
 ; postgres/optimized/spgdoinsert.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000001e4(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = add nuw nsw i64 %1, 2
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 

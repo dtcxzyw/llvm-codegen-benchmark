@@ -1,5 +1,29 @@
 
-; 53 occurrences:
+; 77 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/testProcess.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -54,7 +78,7 @@
 ; z3/optimized/theory_array_base.cpp.ll
 ; z3/optimized/theory_array_full.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -256
   %3 = icmp eq i32 %2, 65024
@@ -68,44 +92,43 @@ entry:
 ; openssl/optimized/libcrypto-lib-v3_purp.ll
 ; openssl/optimized/libcrypto-shlib-v3_purp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000604(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -193
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i32 %1, 0
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 1 occurrences:
-; git/optimized/dir.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000310(i1 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 1
-  %3 = icmp ne i32 %2, 0
-  %4 = icmp ult i32 %1, 4
-  %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 6 occurrences:
-; icu/optimized/ucnvscsu.ll
-; linux/optimized/tg3.ll
+; 2 occurrences:
 ; llvm/optimized/Host.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-btatt.c.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000d0(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -32
   %3 = icmp eq i32 %2, 96
-  %4 = icmp ult i32 %1, 32
+  %4 = icmp samesign ult i32 %1, 32
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 4 occurrences:
+; icu/optimized/ucnvscsu.ll
+; linux/optimized/tg3.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-btatt.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000090(i1 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 65280
+  %3 = icmp eq i32 %2, 9984
+  %4 = icmp ult i32 %1, 6144
+  %5 = or i1 %4, %3
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

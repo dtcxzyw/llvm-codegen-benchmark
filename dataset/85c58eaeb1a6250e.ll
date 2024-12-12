@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; folly/optimized/HHWheelTimer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = icmp ult i64 %3, 256
   ret i1 %4
 }
@@ -19,12 +19,13 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = icmp ult i64 %3, 4096
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; darktable/optimized/print_settings.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; Function Attrs: nounwind
@@ -32,7 +33,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = xor i64 %2, %0
-  %4 = icmp eq i64 %3, 2
+  %4 = icmp eq i64 %3, 3
   ret i1 %4
 }
 
@@ -49,10 +50,10 @@ entry:
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; redis/optimized/t_zset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = icmp eq i64 %3, -1
   ret i1 %4
 }

@@ -18,11 +18,6 @@ func00000000000000cd:                   # @func00000000000000cd
 	flt.d	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
-func0000000000000041:                   # @func0000000000000041
-	sltu	a0, a0, a1
-	feq.d	a1, fa0, fa0
-	andn	a0, a0, a1
-	ret
 func0000000000000061:                   # @func0000000000000061
 	slt	a0, a0, a1
 	feq.d	a1, fa0, fa0

@@ -1,16 +1,12 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	shl	v0.16b, v0.16b, #7
-	neg	v2.16b, v1.16b
-	cmlt	v0.16b, v0.16b, #0
-	bsl	v0.16b, v2.16b, v1.16b
+	tst	w0, #0x1
+	cneg	w0, w1, ne
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	shl	v0.16b, v0.16b, #7
-	neg	v2.16b, v1.16b
-	cmlt	v0.16b, v0.16b, #0
-	bsl	v0.16b, v2.16b, v1.16b
+	tst	w0, #0x1
+	cneg	w0, w1, ne
 	ret
                                         // -- End function

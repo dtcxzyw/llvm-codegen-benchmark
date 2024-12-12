@@ -13,12 +13,6 @@ func0000000000000009:                   # @func0000000000000009
 	shll	$6, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	xorl	%eax, %eax
-	cmpl	%edx, %esi
-	seta	%al
-	leal	(%rdi,%rax,2), %eax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
 	cmpl	%edx, %esi

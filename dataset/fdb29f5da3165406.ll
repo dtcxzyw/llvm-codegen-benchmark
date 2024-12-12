@@ -31,7 +31,7 @@
 define i1 @func0000000000000001(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = select i1 %1, i16 2, i16 %2
-  %4 = icmp eq i16 %3, %0
+  %4 = icmp eq i16 %0, %3
   ret i1 %4
 }
 
@@ -41,15 +41,14 @@ entry:
 define i1 @func0000000000000004(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = select i1 %1, i16 31, i16 %2
-  %4 = icmp ugt i16 %3, %0
+  %4 = icmp ult i16 %0, %3
   ret i1 %4
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; minetest/optimized/game.cpp.ll
 ; opencv/optimized/gfluidcore.cpp.ll
 ; postgres/optimized/brin_pageops.ll
-; postgres/optimized/brin_revmap.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/ginfast.ll
@@ -72,12 +71,11 @@ entry:
 define i1 @func0000000000000008(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = select i1 %1, i16 31, i16 %2
-  %4 = icmp ult i16 %3, %0
+  %4 = icmp ugt i16 %0, %3
   ret i1 %4
 }
 
-; 4 occurrences:
-; postgres/optimized/bufpage.ll
+; 3 occurrences:
 ; postgres/optimized/ginget.ll
 ; postgres/optimized/gistvacuum.ll
 ; postgres/optimized/nbtsearch.ll
@@ -85,7 +83,7 @@ entry:
 define i1 @func0000000000000005(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = select i1 %1, i16 0, i16 %2
-  %4 = icmp uge i16 %3, %0
+  %4 = icmp ule i16 %0, %3
   ret i1 %4
 }
 

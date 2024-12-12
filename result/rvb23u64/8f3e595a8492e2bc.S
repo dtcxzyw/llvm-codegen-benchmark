@@ -1,10 +1,10 @@
-func000000000000021a:                   # @func000000000000021a
+func000000000000042a:                   # @func000000000000042a
 	sext.w	a0, a0
 	srli	a2, a2, 32
 	addw	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func000000000000025a:                   # @func000000000000025a
+func00000000000004aa:                   # @func00000000000004aa
 	sext.w	a0, a0
 	srli	a2, a2, 32
 	addw	a1, a1, a2

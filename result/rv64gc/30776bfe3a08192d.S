@@ -1,12 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
-	slli	a2, a2, 63
-	srai	a2, a2, 63
-	and	a1, a1, a2
-	addw	a0, a0, a1
-	sltiu	a0, a0, 2
-	xori	a0, a0, 1
-	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	slli	a2, a2, 63
 	srai	a2, a2, 63
 	and	a1, a1, a2
@@ -14,7 +6,7 @@ func0000000000000031:                   # @func0000000000000031
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	slli	a2, a2, 63
 	srai	a2, a2, 63
 	and	a1, a1, a2

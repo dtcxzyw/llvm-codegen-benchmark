@@ -1,18 +1,11 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	leaq	58(%rdi), %rax
 	leaq	52(%rdi), %rcx
 	testw	%si, %si
 	cmoveq	%rcx, %rax
 	addq	$2, %rax
 	retq
-func000000000000001b:                   # @func000000000000001b
-	xorl	%eax, %eax
-	cmpw	$13, %si
-	setne	%al
-	shll	$6, %eax
-	leaq	4(%rdi,%rax), %rax
-	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	cmpw	$48, %si
 	movl	$912, %eax                      # imm = 0x390
 	movl	$752, %ecx                      # imm = 0x2F0

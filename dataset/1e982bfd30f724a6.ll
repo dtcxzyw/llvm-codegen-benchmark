@@ -12,7 +12,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = icmp slt i32 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -33,11 +33,11 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = icmp ult i32 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
-; 60 occurrences:
+; 58 occurrences:
 ; abc/optimized/gzwrite.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -78,9 +78,7 @@ entry:
 ; oiio/optimized/imagebuf.cpp.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
 ; opencv/optimized/blend.cpp.ll
-; opencv/optimized/flann_search_dataset.cpp.ll
 ; opencv/optimized/loadsave.cpp.ll
-; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/pcaflow.cpp.ll
 ; opencv/optimized/slice_layer.cpp.ll
 ; opencv/optimized/va_intel.cpp.ll
@@ -112,7 +110,7 @@ entry:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc nuw nsw i64 %1 to i32
@@ -130,19 +128,19 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = icmp sgt i32 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; luau/optimized/lutf8lib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32
   %5 = icmp slt i32 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -175,58 +173,26 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = icmp ugt i32 %4, %3
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 3 occurrences:
-; icu/optimized/ustrtrns.ll
-; llvm/optimized/Commit.cpp.ll
-; llvm/optimized/EditedSource.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000b(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = trunc i64 %1 to i32
-  %5 = icmp sge i32 %4, %3
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 7 occurrences:
-; grpc/optimized/compression_filter.cc.ll
-; grpc/optimized/legacy_compression_filter.cc.ll
-; grpc/optimized/message_size_filter.cc.ll
-; llvm/optimized/CoverageMapping.cpp.ll
-; llvm/optimized/CoverageMappingReader.cpp.ll
-; llvm/optimized/CoverageMappingWriter.cpp.ll
-; llvm/optimized/DXILEmitter.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = trunc i64 %1 to i32
-  %5 = icmp uge i32 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/ToolChain.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32
   %5 = icmp ult i32 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc nuw nsw i64 %1 to i32
@@ -238,11 +204,26 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CoverageMappingReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = icmp ult i32 %4, %3
+  %6 = and i1 %0, %5
+  ret i1 %6
+}
+
+; 4 occurrences:
+; grpc/optimized/compression_filter.cc.ll
+; grpc/optimized/legacy_compression_filter.cc.ll
+; grpc/optimized/message_size_filter.cc.ll
+; llvm/optimized/CoverageMappingReader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = trunc i64 %1 to i32
+  %5 = icmp uge i32 %4, %3
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -256,7 +237,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = icmp ne i32 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -264,12 +245,12 @@ entry:
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000146(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32
   %5 = icmp slt i32 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -279,7 +260,7 @@ entry:
 ; opencv/optimized/umatrix.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000106(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -291,12 +272,12 @@ entry:
 ; 1 occurrences:
 ; nori/optimized/textarea.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32
   %5 = icmp sgt i32 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -304,11 +285,23 @@ entry:
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = icmp eq i32 %4, %3
+  %6 = and i1 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; icu/optimized/ustrtrns.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000b(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = trunc i64 %1 to i32
+  %5 = icmp sge i32 %4, %3
   %6 = and i1 %5, %0
   ret i1 %6
 }

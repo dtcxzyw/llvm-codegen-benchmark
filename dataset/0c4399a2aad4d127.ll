@@ -27,32 +27,19 @@ entry:
   %2 = shl i32 %1, 16
   %3 = icmp eq i32 %1, -1
   %4 = select i1 %3, i32 0, i32 %2
-  %5 = or disjoint i32 %4, %0
-  ret i32 %5
-}
-
-; 2 occurrences:
-; clamav/optimized/str.c.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 12
-  %3 = icmp slt i32 %1, 0
-  %4 = select i1 %3, i32 0, i32 %2
-  %5 = or i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-osi.c.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nsw i32 %1, 8
-  %3 = icmp eq i32 %1, 0
-  %4 = select i1 %3, i32 65280, i32 %2
-  %5 = or disjoint i32 %4, %0
+  %2 = shl i32 %1, 2
+  %3 = icmp slt i32 %1, 0
+  %4 = select i1 %3, i32 4, i32 %2
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -66,7 +53,7 @@ entry:
   %2 = shl i32 %1, 23
   %3 = icmp eq i32 %1, -1
   %4 = select i1 %3, i32 0, i32 %2
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

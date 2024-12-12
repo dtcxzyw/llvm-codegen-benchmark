@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 19 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; cpython/optimized/dtoa.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -17,6 +17,8 @@
 ; ruby/optimized/random.ll
 ; ruby/optimized/rational.ll
 ; ruby/optimized/vm.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(double %0, double %1) #0 {
 entry:

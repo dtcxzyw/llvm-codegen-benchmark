@@ -1,3 +1,7 @@
+func000000000000003e:                   # @func000000000000003e
+	leal	(%rsi,%rsi), %eax
+	addb	%dil, %al
+	retq
 func000000000000003c:                   # @func000000000000003c
 	leal	(%rsi,%rsi), %eax
 	addb	%dil, %al

@@ -1,30 +1,30 @@
 func0000000000000001:                   # @func0000000000000001
 	andl	$1, %edx
-	leaq	-1(%rdx,%rsi), %rax
-	cmpq	%rdi, %rax
+	leaq	-1(%rsi,%rdx), %rax
+	cmpq	%rax, %rdi
 	sete	%al
+	retq
+func0000000000000044:                   # @func0000000000000044
+	andl	$1, %edx
+	leaq	3(%rsi,%rdx), %rax
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
 func0000000000000024:                   # @func0000000000000024
 	andl	$1, %edx
-	leaq	3(%rdx,%rsi), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	leaq	-1(%rsi,%rdx), %rax
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func00000000000001a1:                   # @func00000000000001a1
 	andl	$1, %edx
-	leaq	-1(%rdx,%rsi), %rax
-	cmpq	%rdi, %rax
-	seta	%al
-	retq
-func00000000000000d1:                   # @func00000000000000d1
-	andl	$1, %edx
-	leaq	-2(%rdx,%rsi), %rax
-	cmpq	%rdi, %rax
+	leaq	-2(%rsi,%rdx), %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	andl	$1, %edx
-	leaq	-2(%rdx,%rsi), %rax
-	cmpq	%rdi, %rax
+	leaq	-2(%rsi,%rdx), %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

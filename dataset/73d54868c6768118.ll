@@ -62,7 +62,7 @@ entry:
   ret i64 %6
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; libquic/optimized/string16.cc.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
@@ -81,6 +81,7 @@ entry:
 ; openvdb/optimized/points.cc.ll
 ; quantlib/optimized/multistepperiodcapletswaptions.ll
 ; quantlib/optimized/volatilityinterpolationspecifierabcd.ll
+; yosys/optimized/equiv_mark.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:

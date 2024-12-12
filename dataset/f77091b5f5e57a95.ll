@@ -1,5 +1,5 @@
 
-; 86 occurrences:
+; 89 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; c3c/optimized/semantic_analyser.c.ll
 ; cmake/optimized/blocksort.c.ll
@@ -10,12 +10,14 @@
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libquic/optimized/prtime.cc.ll
 ; libquic/optimized/url_canon_path.cc.ll
+; linux/optimized/af_inet.ll
 ; linux/optimized/ats.ll
 ; linux/optimized/cacheinfo.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/e1000_hw.ll
+; linux/optimized/eth.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/hdac_controller.ll
+; linux/optimized/ip6_offload.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/runtime.ll
@@ -26,11 +28,14 @@
 ; linux/optimized/tcp_offload.ll
 ; linux/optimized/tcpv6_offload.ll
 ; linux/optimized/udp_offload.ll
+; linux/optimized/xfrm4_input.ll
+; linux/optimized/xfrm6_input.ll
 ; linux/optimized/xt_TCPMSS.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/Archive.cpp.ll
 ; llvm/optimized/Constants.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
@@ -67,8 +72,6 @@
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/eax.c.ll
 ; wireshark/optimized/erf.c.ll
-; wireshark/optimized/packet-asap.c.ll
-; wireshark/optimized/packet-enrp.c.ll
 ; wireshark/optimized/packet-epl.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
@@ -94,23 +97,17 @@ entry:
   ret i16 %2
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; icu/optimized/ucnv2022.ll
 ; icu/optimized/ucnvmbcs.ll
 ; icu/optimized/ushape.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
-; linux/optimized/af_inet.ll
-; linux/optimized/eth.ll
 ; linux/optimized/ethtool.ll
-; linux/optimized/gre_offload.ll
 ; linux/optimized/intel_color.ll
-; linux/optimized/ip6_offload.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/rx.ll
-; linux/optimized/xfrm4_input.ll
-; linux/optimized/xfrm6_input.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/CGException.cpp.ll
@@ -139,6 +136,11 @@ entry:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0) #0 {
 entry:
@@ -169,10 +171,9 @@ entry:
   ret i16 %2
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; coremark/optimized/core_list_join.c.ll
-; linux/optimized/hdac_controller.ll
 ; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i16 %0) #0 {

@@ -1,6 +1,7 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
 ; llvm/optimized/ASTUnit.cpp.ll

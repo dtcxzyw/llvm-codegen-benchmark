@@ -50,7 +50,7 @@
 ; yosys/optimized/rtlil_lexer.ll
 ; yosys/optimized/verilog_lexer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/connectionthreads.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/parse2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -86,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000136(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000266(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -98,7 +98,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000228(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -122,7 +122,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000608(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -134,7 +134,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000241(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -146,7 +146,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
@@ -160,7 +160,7 @@ entry:
 ; gromacs/optimized/snrm2.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003b6(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000766(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
@@ -172,7 +172,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/keyval_lex.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -184,7 +184,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/utrie.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000396(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000726(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
@@ -197,7 +197,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000039a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000072a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = trunc nuw i64 %3 to i32

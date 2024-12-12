@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; box2d/optimized/b2_body.cpp.ll
 ; c3c/optimized/sema_name_resolution.c.ll
 ; c3c/optimized/types.c.ll
@@ -17,8 +17,6 @@
 ; cvc5/optimized/transition_inference.cpp.ll
 ; darktable/optimized/introspection_dither.c.ll
 ; folly/optimized/EventHandler.cpp.ll
-; git/optimized/diffcore-break.ll
-; git/optimized/merge-ort.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
@@ -39,6 +37,7 @@
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; openusd/optimized/faceSurface.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
@@ -49,7 +48,7 @@ define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16
   %3 = icmp eq i16 %2, 0
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -71,8 +70,6 @@ entry:
 ; cvc5/optimized/theory_sep.cpp.ll
 ; darktable/optimized/introspection_dither.c.ll
 ; freetype/optimized/autofit.c.ll
-; git/optimized/diffcore-break.ll
-; git/optimized/merge-ort.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
 ; linux/optimized/intel_gmch.ll
@@ -93,15 +90,17 @@ entry:
 ; openusd/optimized/faceSurface.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
 ; softposit-rs/optimized/3yl6353p3hwrtv6y.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, -256
-  %3 = icmp ne i16 %2, 512
-  %4 = xor i1 %3, %0
+  %2 = and i16 %1, 256
+  %3 = icmp ne i16 %2, 0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 

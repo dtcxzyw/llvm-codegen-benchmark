@@ -20,7 +20,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; php/optimized/url.ll

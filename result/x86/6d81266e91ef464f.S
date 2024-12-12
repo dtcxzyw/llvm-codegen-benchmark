@@ -13,6 +13,16 @@ func000000000000000d:                   # @func000000000000000d
 	shlq	$32, %rdi
 	leaq	325353473(%rax,%rdi), %rax
 	retq
+func0000000000000057:                   # @func0000000000000057
+	xorl	%ecx, %ecx
+	testl	%esi, %esi
+	setns	%cl
+	shlq	$56, %rcx
+	shlq	$24, %rdi
+	movabsq	$-72057594037927936, %rax       # imm = 0xFF00000000000000
+	addq	%rdi, %rax
+	addq	%rcx, %rax
+	retq
 func000000000000000f:                   # @func000000000000000f
 	xorl	%eax, %eax
 	testl	%esi, %esi

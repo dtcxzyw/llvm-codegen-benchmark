@@ -1,10 +1,9 @@
 
-; 55 occurrences:
+; 54 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; cmake/optimized/archive_write_disk_posix.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; git/optimized/path.ll
-; grpc/optimized/ev_poll_posix.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/parse.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -114,7 +113,7 @@ entry:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = icmp eq i32 %2, 0
@@ -132,7 +131,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2146435072
   %3 = icmp eq i32 %2, 0

@@ -13,10 +13,17 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, 105
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a2, a0, 255
-	li	a0, 1
-	bgeu	a0, a2, .LBB1_2
-	andi	a0, a1, 1
-	slli	a0, a0, 1
-.LBB1_2:                                # %entry
+	andi	a1, a1, 1
+	andi	a0, a0, 255
+	bnez	a1, .LBB1_2
+	li	a1, -16
+	sltiu	a0, a0, 5
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, -8
+	sltiu	a0, a0, 5
+	addi	a0, a0, -1
+	and	a0, a0, a1
 	ret

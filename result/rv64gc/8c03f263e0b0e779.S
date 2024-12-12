@@ -61,10 +61,12 @@ func000000000000001b:                   # @func000000000000001b
 	ret
 func0000000000000020:                   # @func0000000000000020
 	sext.w	a1, a0
-	li	a2, 128
+	li	a2, -3
 	bgeu	a2, a1, .LBB7_2
-	li	a0, 126
+	lui	a0, 4096
+	addiw	a0, a0, -3
 	ret
 .LBB7_2:
-	addiw	a0, a0, -1
+	lui	a1, 4080
+	addw	a0, a0, a1
 	ret

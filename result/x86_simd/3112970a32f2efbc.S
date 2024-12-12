@@ -27,7 +27,7 @@
 func0000000000000000:                   # @func0000000000000000
 	vpor	%xmm2, %xmm1, %xmm1
 	vgf2p8affineqb	$0, .LCPI0_1(%rip){1to2}, %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI1_0:
 	.byte	16                              # 0x10
@@ -58,7 +58,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000009:                   # @func0000000000000009
 	vpor	%xmm2, %xmm1, %xmm1
 	vgf2p8affineqb	$0, .LCPI1_1(%rip){1to2}, %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq
 func000000000000000f:                   # @func000000000000000f
 	vpor	%xmm2, %xmm1, %xmm1
@@ -125,7 +125,7 @@ func000000000000000d:                   # @func000000000000000d
 func000000000000000e:                   # @func000000000000000e
 	vpor	%xmm2, %xmm1, %xmm1
 	vgf2p8affineqb	$0, .LCPI4_1(%rip){1to2}, %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vpor	%xmm2, %xmm1, %xmm1

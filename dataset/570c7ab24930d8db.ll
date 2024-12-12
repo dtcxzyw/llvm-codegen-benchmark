@@ -7,7 +7,7 @@
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -1
-  %2 = and i32 %1, %0
+  %2 = and i32 %0, %1
   ret i32 %2
 }
 
@@ -22,7 +22,7 @@ entry:
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -1
-  %2 = and i32 %1, %0
+  %2 = and i32 %0, %1
   ret i32 %2
 }
 

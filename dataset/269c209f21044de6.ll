@@ -39,7 +39,7 @@ entry:
   %3 = fcmp ole float %2, 0.000000e+00
   %4 = fcmp oge float %1, 0.000000e+00
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -54,13 +54,14 @@ entry:
   %3 = fcmp ogt float %2, 0.000000e+00
   %4 = fcmp ogt float %1, 0.000000e+00
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; bullet3/optimized/SphereTriangleDetector.ll
+; lodepng/optimized/lodepng_util.cpp.ll
 ; ocio/optimized/Config.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000aa(i1 %0, float %1, float %2) #0 {
@@ -68,7 +69,7 @@ entry:
   %3 = fcmp ole float %2, 0.000000e+00
   %4 = fcmp ole float %1, 0.000000e+00
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -82,29 +83,28 @@ entry:
   %3 = fcmp one float %2, 0x7FF0000000000000
   %4 = fcmp uge float %1, 0xC1E0000000000000
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
-; lodepng/optimized/lodepng_util.cpp.ll
+; oiio/optimized/exroutput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, float %1, float %2) #0 {
+define i1 @func0000000000000078(i1 %0, float %1, float %2) #0 {
 entry:
-  %3 = fcmp oge float %2, 0xC7EFFFFFE0000000
-  %4 = fcmp ole float %1, 0x47EFFFFFE0000000
+  %3 = fcmp une float %2, 0.000000e+00
+  %4 = fcmp oeq float %1, 0.000000e+00
   %5 = and i1 %4, %3
   %6 = and i1 %5, %0
   ret i1 %6
 }
 
-; 2 occurrences:
-; box2d/optimized/b2_distance.cpp.ll
+; 1 occurrences:
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, float %1, float %2) #0 {
+define i1 @func0000000000000074(i1 %0, float %1, float %2) #0 {
 entry:
-  %3 = fcmp olt float %2, 1.000000e+00
+  %3 = fcmp une float %2, 0.000000e+00
   %4 = fcmp ogt float %1, 0.000000e+00
   %5 = and i1 %4, %3
   %6 = and i1 %5, %0
@@ -119,7 +119,7 @@ entry:
   %3 = fcmp one float %2, 0x7FF0000000000000
   %4 = fcmp ugt float %1, -1.000000e+00
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -136,6 +136,18 @@ entry:
 }
 
 ; 1 occurrences:
+; box2d/optimized/b2_distance.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp olt float %2, 0.000000e+00
+  %4 = fcmp ogt float %1, 0.000000e+00
+  %5 = and i1 %4, %3
+  %6 = and i1 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; postgres/optimized/float.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000087(i1 %0, float %1, float %2) #0 {
@@ -143,21 +155,7 @@ entry:
   %3 = fcmp oeq float %2, 0.000000e+00
   %4 = fcmp une float %1, 0.000000e+00
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 3 occurrences:
-; opencv/optimized/optical_flow_evaluation.cpp.ll
-; opencv/optimized/pcaflow_demo.cpp.ll
-; opencv/optimized/tvl1_optical_flow.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002e(i1 %0, float %1, float %2) #0 {
-entry:
-  %3 = fcmp olt float %2, 1.000000e+09
-  %4 = fcmp ord float %1, 0.000000e+00
-  %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -169,7 +167,7 @@ entry:
   %3 = fcmp ole float %2, 0.000000e+00
   %4 = fcmp ogt float %1, 0.000000e+00
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

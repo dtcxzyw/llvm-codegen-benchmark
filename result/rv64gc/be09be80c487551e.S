@@ -52,3 +52,11 @@ func000000000000000a:                   # @func000000000000000a
 	and	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
+func000000000000000c:                   # @func000000000000000c
+	slli	a1, a1, 48
+	slli	a0, a0, 48
+	srai	a1, a1, 48
+	srai	a0, a0, 48
+	slt	a0, a0, a1
+	xori	a0, a0, 1
+	ret

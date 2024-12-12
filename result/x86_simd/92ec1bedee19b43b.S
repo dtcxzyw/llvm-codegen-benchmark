@@ -2,7 +2,7 @@
 	.long	15                              # 0xf
 .LCPI0_1:
 	.quad	7                               # 0x7
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm2
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm3   # ymm3 = [7,7,7,7]

@@ -11,7 +11,7 @@ func000000000000000c:                   # @func000000000000000c
 	vmv.v.x	v10, a0
 	lui	a0, 57344
 	vmerge.vxm	v10, v10, a0, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000000f:                   # @func000000000000000f
 	li	a0, 640
@@ -25,7 +25,7 @@ func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, 4
 	vmerge.vim	v10, v10, 2, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 8, e32, m2, ta, mu

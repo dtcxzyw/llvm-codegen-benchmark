@@ -33,7 +33,7 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000f:                   # @func000000000000000f
 	shrq	%rsi
 	addq	%rdi, %rsi
-	imulq	$464, %rsi, %rax                # imm = 0x1D0
+	imulq	$720575941, %rsi, %rax          # imm = 0x2AF31DC5
 	retq
 func0000000000000008:                   # @func0000000000000008
 	shrq	%rsi
@@ -46,6 +46,11 @@ func0000000000000010:                   # @func0000000000000010
 	leaq	(%rsi,%rdi), %rcx
 	movabsq	$-7046029254386353067, %rax     # imm = 0x9E3779B97F4A7C55
 	imulq	%rcx, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	shrq	%rsi
+	addq	%rdi, %rsi
+	imulq	$120, %rsi, %rax
 	retq
 func000000000000000d:                   # @func000000000000000d
 	shrq	$32, %rsi

@@ -1,5 +1,18 @@
 
 ; 2 occurrences:
+; lvgl/optimized/lv_anim.ll
+; postgres/optimized/utf8_and_gb18030.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i16 %0) #0 {
+entry:
+  %1 = add i16 %0, 5
+  %2 = udiv i16 %1, 10
+  %3 = zext nneg i16 %2 to i32
+  %4 = shl nuw nsw i32 %3, 10
+  ret i32 %4
+}
+
+; 2 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; Function Attrs: nounwind
@@ -45,18 +58,6 @@ entry:
 define i32 @func0000000000000017(i16 %0) #0 {
 entry:
   %1 = add nsw i16 %0, -26116
-  %2 = udiv i16 %1, 12600
-  %3 = zext nneg i16 %2 to i32
-  %4 = shl nuw nsw i32 %3, 24
-  ret i32 %4
-}
-
-; 1 occurrences:
-; postgres/optimized/utf8_and_gb18030.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i16 %0) #0 {
-entry:
-  %1 = add i16 %0, -21827
   %2 = udiv i16 %1, 12600
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 24

@@ -1,4 +1,17 @@
 
+; 2 occurrences:
+; boost/optimized/src.ll
+; ruby/optimized/strftime.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000033(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp slt i32 %1, 1
+  %3 = select i1 %2, i32 %0, i32 %1
+  %4 = add nsw i32 %3, -9
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
 ; 10 occurrences:
 ; c3c/optimized/diagnostics.c.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll

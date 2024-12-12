@@ -17,6 +17,20 @@ func000000000000000e:                   # @func000000000000000e
 	sh1add	a0, a0, a0
 	srliw	a0, a0, 6
 	ret
+func0000000000000008:                   # @func0000000000000008
+	add	a0, a0, a1
+	lui	a1, 297
+	addi	a1, a1, 847
+	mul	a0, a0, a1
+	srliw	a0, a0, 19
+	ret
+func000000000000001c:                   # @func000000000000001c
+	add	a0, a0, a1
+	lui	a1, 8
+	addi	a1, a1, 129
+	mul	a0, a0, a1
+	srliw	a0, a0, 23
+	ret
 func000000000000000a:                   # @func000000000000000a
 	add	a0, a0, a1
 	lui	a1, 1048279
@@ -30,13 +44,6 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a1, a1, 257
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
-	ret
-func0000000000000008:                   # @func0000000000000008
-	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 197
-	mul	a0, a0, a1
-	srliw	a0, a0, 23
 	ret
 func000000000000001a:                   # @func000000000000001a
 	add	a0, a0, a1

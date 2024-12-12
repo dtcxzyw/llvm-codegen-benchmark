@@ -9,7 +9,7 @@ entry:
   ret ptr %3
 }
 
-; 283 occurrences:
+; 295 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/aigDfs.c.ll
 ; abc/optimized/cloud.c.ll
@@ -22,6 +22,19 @@ entry:
 ; abc/optimized/hopDfs.c.ll
 ; arrow/optimized/UriParse.c.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/ext.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/process.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/std_backend.ll
 ; ceres/optimized/cgnr_solver.cc.ll
 ; clamav/optimized/infblock.c.ll
 ; cmake/optimized/cookie.c.ll
@@ -50,7 +63,6 @@ entry:
 ; entt/optimized/view.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
-; folly/optimized/Libgen.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; graphviz/optimized/red_black_tree.c.ll
@@ -69,7 +81,6 @@ entry:
 ; libevent/optimized/buffer.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; libzmq/optimized/proxy.cpp.ll
-; linux/optimized/checkpoint.ll
 ; linux/optimized/generic-radix-tree.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/ohci-hcd.ll
@@ -187,7 +198,6 @@ entry:
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
@@ -292,6 +302,8 @@ entry:
 ; z3/optimized/theory_str_regex.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
 ; z3/optimized/wmax.cpp.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, ptr %1, ptr %2) #0 {
@@ -342,8 +354,9 @@ entry:
   ret ptr %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/cuddSat.c.ll
+; boost/optimized/alloc_lib.ll
 ; lua/optimized/lstrlib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
@@ -353,6 +366,16 @@ entry:
   %3 = icmp ult ptr %1, %2
   %4 = select i1 %3, ptr %0, ptr %1
   ret ptr %4
+}
+
+; 1 occurrences:
+; turborepo-rs/optimized/avd1ga9yb4qq5g7sdqftppd4q.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %.not = icmp eq ptr %1, %2
+  %3 = select i1 %.not, ptr %1, ptr %0
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

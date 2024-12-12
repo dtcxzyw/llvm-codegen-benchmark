@@ -37,6 +37,14 @@ func0000000000000055:                   # @func0000000000000055
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccsu.vx	v8, a0, v12
 	ret
+func000000000000005f:                   # @func000000000000005f
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vv	v8, v8, v10
+	lui	a0, 1048575
+	addi	a0, a0, 496
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwmaccu.vx	v8, a0, v12
+	ret
 func0000000000000050:                   # @func0000000000000050
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10

@@ -14,10 +14,3 @@ func0000000000000010:                   // @func0000000000000010
 	smaddl	x0, w8, w9, x10
 	ret
                                         // -- End function
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
-	add	x8, x0, x1, lsl #3
-	eor	w9, w2, #0x3
-	add	x0, x8, w9, uxtw #3
-	ret
-                                        // -- End function

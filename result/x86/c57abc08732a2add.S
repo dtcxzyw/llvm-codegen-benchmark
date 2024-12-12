@@ -9,18 +9,18 @@ func0000000000000008:                   # @func0000000000000008
 	sete	%al
 	addq	%rdi, %rax
 	retq
-func0000000000000062:                   # @func0000000000000062
+func0000000000000063:                   # @func0000000000000063
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	setne	%al
 	addq	%rdi, %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	movq	%rdi, %rax
 	cmpq	%rsi, %rdi
 	adcq	$0, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	sete	%al

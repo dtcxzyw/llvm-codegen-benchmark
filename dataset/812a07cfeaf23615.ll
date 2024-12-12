@@ -11,9 +11,11 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000075(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -36,13 +38,14 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 16
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add i64 %4, 10
   %6 = add i64 %5, %0
   ret i64 %6
@@ -125,9 +128,20 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000080(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %2, 1
+  %4 = mul i64 %3, %1
+  %5 = add i64 %4, 1
+  %6 = add i64 %0, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {

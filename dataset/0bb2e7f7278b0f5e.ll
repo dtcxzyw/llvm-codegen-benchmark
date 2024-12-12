@@ -7,19 +7,18 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = and i32 %2, 8585216
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = xor i32 %4, 142405730
   ret i32 %5
 }
 
-; 54 occurrences:
+; 52 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/bmcBCore.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecSim.c.ll
 ; abc/optimized/cecSynth.c.ll
@@ -58,7 +57,6 @@ entry:
 ; lua/optimized/lcode.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll

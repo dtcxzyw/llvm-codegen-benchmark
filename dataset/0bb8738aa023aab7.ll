@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/static_string.ll
 ; opencv/optimized/arithm.dispatch.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
 ; stockfish/optimized/tbprobe.ll

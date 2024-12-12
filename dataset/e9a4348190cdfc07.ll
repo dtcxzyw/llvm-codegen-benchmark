@@ -44,25 +44,35 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngwutil.c.ll
-; llvm/optimized/LoopUnrollRuntime.cpp.ll
 ; openjdk/optimized/pngread.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 1
+  %3 = icmp samesign ugt i32 %0, 1
+  %4 = select i1 %3, i32 %2, i32 3
+  ret i32 %4
+}
+
+; 2 occurrences:
+; llvm/optimized/LoopUnrollRuntime.cpp.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
-  %3 = icmp ugt i32 %0, 1
-  %4 = select i1 %3, i32 %2, i32 3
+  %3 = icmp ugt i32 %0, 2
+  %4 = select i1 %3, i32 %2, i32 0
   ret i32 %4
 }
 
 ; 1 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %.not = icmp eq i32 %0, 0
@@ -70,15 +80,13 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/neighbour.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; wireshark/optimized/packet-ipmi.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 3
   %3 = icmp eq i32 %0, 0

@@ -5,6 +5,6 @@ func0000000000000020:                   // @func0000000000000020
 	movk	x8, #31153, lsl #32
 	movk	x8, #40503, lsl #48
 	madd	x8, x2, x8, x1
-	eor	x0, x8, x0
+	eor	x0, x0, x8
 	ret
                                         // -- End function

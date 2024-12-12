@@ -1,8 +1,8 @@
 
-%"struct.mold::elf::ElfShdr.555.2522015" = type { %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016", %"class.mold::LittleEndian.551.2522016" }
-%"class.mold::LittleEndian.551.2522016" = type { [4 x i8] }
-%struct.JSValue.3243652 = type { %union.JSValueUnion.3243653, i64 }
-%union.JSValueUnion.3243653 = type { double }
+%"struct.mold::elf::ElfShdr.555.2636424" = type { %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425" }
+%"class.mold::LittleEndian.551.2636425" = type { [4 x i8] }
+%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
+%union.JSValueUnion.3435082 = type { double }
 
 ; 59 occurrences:
 ; arrow/optimized/feather.cc.ll
@@ -65,12 +65,12 @@
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i16 %1 to i64
-  %6 = getelementptr nusw %"struct.mold::elf::ElfShdr.555.2522015", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.555.2636424", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -94,12 +94,12 @@ entry:
 ; php/optimized/ir_ra.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i16 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [4 x i8], ptr %0, i64 %3
+  %4 = getelementptr nusw nuw [4 x i8], ptr %0, i64 %3
   %5 = zext i16 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -113,29 +113,28 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i16 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext nneg i16 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/namei.ll
 ; linux/optimized/radiotap.ll
 ; postgres/optimized/heapam.ll
-; postgres/optimized/heapdesc.ll
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/k12.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000020(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.JSValue.3243652, ptr %0, i64 %3
+  %4 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %3
   %5 = zext i16 %1 to i64
-  %6 = getelementptr %struct.JSValue.3243652, ptr %4, i64 %5
+  %6 = getelementptr %struct.JSValue.3435081, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -169,10 +168,10 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i16 %1, i32 %2) #0 {
+define ptr @func000000000000002c(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i16 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

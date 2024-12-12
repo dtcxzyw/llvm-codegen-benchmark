@@ -82,7 +82,7 @@
 ; openjdk/optimized/zBarrierSet.ll
 ; z3/optimized/nlsat_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000085(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp ule ptr %0, %1
@@ -95,7 +95,7 @@ entry:
 ; openjdk/optimized/os_linux_x86.ll
 ; openjdk/optimized/vmError.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000128(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
   %4 = icmp ugt ptr %0, %1
@@ -108,7 +108,7 @@ entry:
 ; abc/optimized/cuddSymmetry.c.ll
 ; z3/optimized/proof_checker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp eq ptr %0, %1
@@ -116,10 +116,23 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a5(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ule ptr %1, %2
+  %4 = icmp ule ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; postgres/optimized/initdb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp ult ptr %0, %1
@@ -130,7 +143,7 @@ entry:
 ; 1 occurrences:
 ; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp eq ptr %0, %1
@@ -141,7 +154,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000108(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %1, %2
   %4 = icmp ugt ptr %0, %1

@@ -9,7 +9,7 @@ entry:
   %2 = lshr i64 %1, 44
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = or disjoint i32 %5, 520
   ret i32 %6
 }

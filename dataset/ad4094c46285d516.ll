@@ -4,7 +4,7 @@
 ; libquic/optimized/file_posix.cc.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000062(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000c2(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, 8192
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or i32 %3, 1627388926
@@ -46,7 +46,7 @@ entry:
 ; linux/optimized/hwgpe.ll
 ; linux/optimized/intel_fbc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000063(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000c3(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, 32

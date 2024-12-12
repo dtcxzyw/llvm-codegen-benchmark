@@ -16,7 +16,7 @@ func0000000000000013:                   # @func0000000000000013
 	cmovbl	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	cmpl	$57, %edi
 	movl	$8, %eax
 	cmovael	%esi, %eax
@@ -40,7 +40,7 @@ func0000000000000012:                   # @func0000000000000012
 	cmovbl	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	cmpl	$159, %edi
 	movl	$-126, %eax
 	cmovbl	%esi, %eax

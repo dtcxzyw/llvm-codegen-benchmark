@@ -11,7 +11,7 @@ entry:
   %3 = or i1 %1, %2
   %4 = select i1 %3, float 1.000000e+00, float 0.000000e+00
   %5 = xor i1 %2, true
-  %6 = or i1 %5, %1
+  %6 = or i1 %1, %5
   %7 = select i1 %6, float %4, float %0
   ret float %7
 }

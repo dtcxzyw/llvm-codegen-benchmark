@@ -6,7 +6,7 @@
 ; protobuf/optimized/coded_stream.cc.ll
 ; sentencepiece/optimized/coded_stream.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001994(i32 %0, i32 %1) #0 {
+define i1 @func0000000000006314(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, 1
   %3 = icmp slt i32 %1, 1
@@ -23,7 +23,7 @@ entry:
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/bv_invariant.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000442(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001082(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -1
   %3 = icmp eq i32 %0, -1
@@ -37,7 +37,7 @@ entry:
 ; icu/optimized/umutablecptrie.ll
 ; icu/optimized/utrie2_builder.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000002214(i32 %0, i32 %1) #0 {
+define i1 @func0000000000008414(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 1114111
   %3 = icmp ugt i32 %0, 1114111
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/number_rounding.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000002994(i32 %0, i32 %1) #0 {
+define i1 @func000000000000a314(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 999
   %3 = icmp slt i32 %0, 0
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/scrptrun.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001982(i32 %0, i32 %1) #0 {
+define i1 @func0000000000006302(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 2
   %3 = icmp slt i32 %0, 2
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/mathfuncs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001a8c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000650c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, 0
   %3 = icmp sgt i32 %1, 255

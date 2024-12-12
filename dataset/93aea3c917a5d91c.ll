@@ -1,11 +1,12 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; assimp/optimized/ScaleProcess.cpp.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/introspection_blurs.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
+; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_dither.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll

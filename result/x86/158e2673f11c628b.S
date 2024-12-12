@@ -1,7 +1,6 @@
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000541:                   # @func0000000000000541
 	andl	$1, %edx
-	negl	%edx
-	addl	%esi, %edx
+	cmpl	%edx, %esi
 	sete	%cl
 	testl	%edi, %edi
 	setns	%al

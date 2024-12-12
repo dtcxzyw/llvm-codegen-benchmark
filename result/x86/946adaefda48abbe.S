@@ -22,6 +22,11 @@ func0000000000000015:                   # @func0000000000000015
 	imulq	$153, %rdi, %rax
 	addq	$2, %rax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	addq	%rsi, %rdi
+	leaq	(%rdi,%rdi,4), %rax
+	leaq	-48(%rax,%rax), %rax
+	retq
 func0000000000000035:                   # @func0000000000000035
 	addq	%rsi, %rdi
 	leaq	1(%rdi,%rdi,2), %rax

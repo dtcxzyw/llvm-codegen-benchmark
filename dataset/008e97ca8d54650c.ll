@@ -1,18 +1,14 @@
 
-; 61 occurrences:
+; 54 occurrences:
 ; cmake/optimized/tty.c.ll
 ; freetype/optimized/ftbase.c.ll
-; git/optimized/pq.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jq/optimized/regcomp.ll
 ; libpng/optimized/png.c.ll
 ; libuv/optimized/tty.c.ll
-; linux/optimized/advise.ll
-; linux/optimized/attr.ll
 ; linux/optimized/cancel.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/epoll.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/futex.ll
 ; linux/optimized/i9xx_wm.ll
@@ -21,15 +17,12 @@
 ; linux/optimized/kbuf.ll
 ; linux/optimized/msg_ring.ll
 ; linux/optimized/net.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/p4.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/poll.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/rw.ll
-; linux/optimized/splice.ll
 ; linux/optimized/timeout.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/waitid.ll
 ; linux/optimized/xfrm_user.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -62,7 +55,7 @@
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 4
   %4 = icmp eq i32 %1, 0
@@ -70,15 +63,14 @@ entry:
   ret i32 %5
 }
 
-; 30 occurrences:
-; darktable/optimized/introspection_flip.c.ll
+; 28 occurrences:
+; boost/optimized/alloc_lib.ll
 ; freetype/optimized/cff.c.ll
 ; git/optimized/unpack-trees.ll
 ; grpc/optimized/socket_utils_common_posix.cc.ll
 ; grpc/optimized/tcp_socket_utils.cc.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libquic/optimized/exponentiation.c.ll
-; libquic/optimized/socket_helper.c.ll
 ; libwebp/optimized/muxedit.c.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/gen6_ppgtt.ll
@@ -88,7 +80,6 @@ entry:
 ; llvm/optimized/CallGraphUpdater.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -124,17 +115,16 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/collationcompare.ll
-; linux/optimized/netdev.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %2, 512
-  %4 = icmp ult i32 %1, 2097152
+  %4 = icmp samesign ult i32 %1, 2097152
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }
@@ -145,10 +135,21 @@ entry:
 ; wireshark/optimized/packet-ppi-sensor.c.ll
 ; wireshark/optimized/packet-ppi-vector.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 2
   %4 = icmp ult i32 %1, 1073741824
+  %5 = select i1 %4, i32 %0, i32 %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; linux/optimized/netdev.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %2, 32802
+  %4 = icmp ult i32 %1, 1501
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }

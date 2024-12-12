@@ -1,9 +1,8 @@
 
-%"class.clang::Qualifiers.2948875" = type { i64 }
-%"class.clang::FunctionEffect.2948876" = type { i8 }
+%"class.clang::Qualifiers.3142438" = type { i64 }
+%"class.clang::FunctionEffect.3142439" = type { i8 }
 
-; 9 occurrences:
-; clamav/optimized/unzip.c.ll
+; 7 occurrences:
 ; openjdk/optimized/barrierSetNMethod_x86.ll
 ; openjdk/optimized/ciMethod.ll
 ; openjdk/optimized/codeBlob.ll
@@ -11,13 +10,25 @@
 ; openjdk/optimized/jvmciEnv.ll
 ; openjdk/optimized/nmethod.ll
 ; openjdk/optimized/whitebox.ll
-; openusd/optimized/zipFile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i64 %1, i16 %2) #0 {
+define i64 @func000000000000000b(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 2 occurrences:
+; clamav/optimized/unzip.c.ll
+; openusd/optimized/zipFile.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(ptr %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -52,19 +63,18 @@ entry:
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(ptr %0, i64 %1, i16 %2) #0 {
+define i64 @func000000000000001f(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw %"class.clang::Qualifiers.2948875", ptr %0, i64 %1
-  %5 = getelementptr nusw %"class.clang::FunctionEffect.2948876", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw %"class.clang::Qualifiers.3142438", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"class.clang::FunctionEffect.3142439", ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; postgres/optimized/heapam.ll
-; postgres/optimized/heapdesc.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind

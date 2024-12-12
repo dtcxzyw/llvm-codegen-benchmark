@@ -1,30 +1,30 @@
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	shrq	$4, %rsi
 	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB
 	addl	%eax, %edi
 	sete	%al
 	retq
-func000000000000014a:                   # @func000000000000014a
+func000000000000028a:                   # @func000000000000028a
 	shrq	$3, %rsi
 	imull	$-858993459, %esi, %eax         # imm = 0xCCCCCCCD
 	addl	%eax, %edi
 	testl	%edi, %edi
 	setg	%al
 	retq
-func0000000000000141:                   # @func0000000000000141
+func0000000000000281:                   # @func0000000000000281
 	shrq	$3, %rsi
 	imull	$1884841763, %esi, %eax         # imm = 0x70586723
 	addl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000148:                   # @func0000000000000148
+func0000000000000288:                   # @func0000000000000288
 	shrq	$4, %rsi
 	imull	$-1227133513, %esi, %eax        # imm = 0xB6DB6DB7
 	addl	%eax, %edi
 	testl	$-2, %edi
 	setne	%al
 	retq
-func0000000000000144:                   # @func0000000000000144
+func0000000000000294:                   # @func0000000000000294
 	shrq	$3, %rsi
 	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB
 	addl	%eax, %edi

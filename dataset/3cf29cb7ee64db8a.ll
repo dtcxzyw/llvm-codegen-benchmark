@@ -1,5 +1,5 @@
 
-; 101 occurrences:
+; 99 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -30,8 +30,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -102,10 +100,10 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -115,7 +113,7 @@ entry:
 ; rocksdb/optimized/clock_cache.cc.ll
 ; velox/optimized/MemoryPool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = add nuw i64 %3, %1
@@ -127,7 +125,7 @@ entry:
 ; linux/optimized/memblock.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000148(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = add nuw i64 %3, %1
@@ -135,7 +133,7 @@ entry:
   ret i1 %5
 }
 
-; 89 occurrences:
+; 87 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -161,8 +159,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -226,10 +222,10 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000109(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp uge i64 %4, %0
   ret i1 %5
 }
@@ -241,7 +237,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 2, %2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -257,7 +253,7 @@ entry:
 ; redis/optimized/sc.ll
 ; redis/optimized/sc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = add i64 %3, %1
@@ -281,7 +277,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 4, %2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -291,10 +287,10 @@ entry:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/NewGVN.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 8, %2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -302,22 +298,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/timekeeping.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 1000000, %2
   %4 = add nuw i64 %3, %1
   %5 = icmp ult i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/pagewalk.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 4096, %2
-  %4 = add i64 %3, %1
-  %5 = icmp uge i64 %4, %0
   ret i1 %5
 }
 

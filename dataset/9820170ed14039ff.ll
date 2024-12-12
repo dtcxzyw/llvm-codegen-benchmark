@@ -6,24 +6,22 @@
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; lief/optimized/sha256.c.ll
 ; lief/optimized/sha512.c.ll
-; luajit/optimized/lj_strscan.ll
-; luajit/optimized/lj_strscan_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -3
-  %3 = icmp ult i64 %1, 3
+  %3 = icmp samesign ult i64 %1, 3
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -33,7 +31,18 @@ entry:
 ; cpython/optimized/sixstep.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000074(i32 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %0, 2
+  %3 = icmp samesign ult i64 %1, 4
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000064(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 2
   %3 = icmp ult i64 %1, 4
@@ -52,7 +61,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -77,10 +86,22 @@ entry:
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; wireshark/optimized/pcapio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 2
   %3 = icmp eq i64 %1, 0
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_strscan.ll
+; luajit/optimized/lj_strscan_dyn.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i32 %0, 2
+  %3 = icmp ult i64 %1, 4611686018427387904
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }

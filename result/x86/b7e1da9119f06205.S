@@ -27,8 +27,8 @@ func0000000000000010:                   # @func0000000000000010
 	subq	%rdi, %rax
 	retq
 func0000000000000055:                   # @func0000000000000055
-	imulq	$3897, %rdx, %rcx               # imm = 0xF39
-	imulq	$-6810, %rsi, %rax              # imm = 0xE566
+	imulq	$-3600, %rdx, %rcx              # imm = 0xF1F0
+	imulq	$-60, %rsi, %rax
 	addq	%rcx, %rax
 	subq	%rdi, %rax
 	retq

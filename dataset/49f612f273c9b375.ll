@@ -13,7 +13,7 @@ define i32 @func0000000000000030(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -26,7 +26,7 @@ define i32 @func0000000000000005(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -40,12 +40,11 @@ define i32 @func0000000000000004(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 5 occurrences:
-; abc/optimized/fxuPair.c.ll
+; 4 occurrences:
 ; cmake/optimized/archive_entry.c.ll
 ; icu/optimized/extradata.ll
 ; linux/optimized/i915_perf.ll
@@ -55,7 +54,7 @@ define i32 @func0000000000000031(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

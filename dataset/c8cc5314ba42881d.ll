@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; llvm/optimized/TypeIndexDiscovery.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i16 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 16
   %3 = select i1 %2, i64 12, i64 8
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

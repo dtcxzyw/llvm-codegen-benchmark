@@ -3,6 +3,7 @@
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/giaMinLut.c.ll
+; abc/optimized/giaPat2.c.ll
 ; bullet3/optimized/b3FixedConstraint.ll
 ; darktable/optimized/timeline.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
@@ -10,7 +11,6 @@
 ; icu/optimized/lstmbe.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; msdfgen/optimized/msdf-error-correction.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
@@ -28,7 +28,7 @@ entry:
   ret i32 %4
 }
 
-; 61 occurrences:
+; 59 occurrences:
 ; abc/optimized/giaCex.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; arrow/optimized/align_util.cc.ll
@@ -64,9 +64,7 @@ entry:
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgesvdq.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
@@ -112,7 +110,7 @@ define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, -1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -123,7 +121,7 @@ define i32 @func0000000000000037(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -161,24 +159,19 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaPat2.c.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorgl2.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgl2.cpp.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; openblas/optimized/dgges.c.ll
 ; openblas/optimized/dgges3.c.ll
 ; openblas/optimized/dggesx.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dorbdb1.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsen.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
@@ -208,6 +201,17 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
   %4 = mul nuw i32 %3, %0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_buf.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = add nsw i32 %2, -1
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -255,7 +259,7 @@ define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -269,7 +273,7 @@ define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -307,7 +311,7 @@ define i32 @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw nsw i32 %2, 2
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 

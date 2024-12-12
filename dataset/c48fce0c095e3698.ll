@@ -1,18 +1,19 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; msdfgen/optimized/msdf-error-correction.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
+; opencv/optimized/optflowgf.cpp.ll
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; recastnavigation/optimized/DetourCommon.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 10
   %3 = add i32 %2, 10
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 
@@ -222,26 +223,13 @@ entry:
 ; gromacs/optimized/kernel_ElecRF_VdwLJ_VF.cpp.ll
 ; gromacs/optimized/kernel_ElecRF_VdwLJ_VgrpF.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000005b(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 12
   %3 = sext i32 %2 to i64
   %4 = getelementptr float, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 24
   ret ptr %5
-}
-
-; 1 occurrences:
-; opencv/optimized/optflowgf.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
-entry:
-  %2 = mul i32 %1, 5
-  %3 = add i32 %2, 5
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr double, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 8
-  ret ptr %6
 }
 
 attributes #0 = { nounwind }

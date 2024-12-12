@@ -52,7 +52,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpcmpeqb	.LCPI1_1(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI1_2(%rip), %ymm1   # ymm1 = [553648127,553648127,553648127,553648127,553648127,553648127,553648127,553648127]
 	vpbroadcastd	.LCPI1_3(%rip), %ymm1 {%k1} # ymm1 {%k1} = [6357120,6357120,6357120,6357120,6357120,6357120,6357120,6357120]
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI2_0:
 	.long	4294922203                      # 0xffff4fdb

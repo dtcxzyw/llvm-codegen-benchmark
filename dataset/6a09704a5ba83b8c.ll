@@ -4,7 +4,7 @@
 ; php/optimized/fastcgi.ll
 ; rocksdb/optimized/log_reader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -23,7 +23,7 @@ entry:
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c6(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000586(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -38,7 +38,7 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; php/optimized/fastcgi.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000581(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -50,10 +50,10 @@ entry:
 ; 1 occurrences:
 ; sentencepiece/optimized/util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000186(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000706(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp ugt i32 %3, 65535
+  %4 = icmp samesign ugt i32 %3, 65535
   %5 = icmp slt i8 %0, -64
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -62,10 +62,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/utf_impl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000070a(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp ugt i32 %3, 64975
+  %4 = icmp samesign ugt i32 %3, 64975
   %5 = icmp sgt i8 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6

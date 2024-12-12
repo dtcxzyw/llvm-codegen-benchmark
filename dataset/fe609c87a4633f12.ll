@@ -1,5 +1,5 @@
 
-; 345 occurrences:
+; 343 occurrences:
 ; abc/optimized/covMinSop.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNonDsd.c.ll
@@ -17,6 +17,7 @@
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/sema_asm.c.ll
 ; clamav/optimized/7zIn.c.ll
 ; clamav/optimized/LzmaDec.c.ll
@@ -57,9 +58,7 @@
 ; linux/optimized/amd.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/exprep.ll
 ; linux/optimized/hexdump.ll
-; linux/optimized/i8259.ll
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/intel_hdmi.ll
 ; linux/optimized/intel_lrc.ll
@@ -100,7 +99,6 @@
 ; llvm/optimized/PseudoProbePrinter.cpp.ll
 ; llvm/optimized/RISCVExpandAtomicPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
@@ -126,13 +124,13 @@
 ; lodepng/optimized/lodepng.cpp.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; node/optimized/simdutf.ll
 ; oiio/optimized/texture3d.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/system.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
 ; openjdk/optimized/ByteBinary2Bit.ll
 ; openjdk/optimized/ByteBinary4Bit.ll

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/genmbcs.ll
 ; lief/optimized/psa_crypto.c.ll
@@ -13,6 +13,8 @@
 ; postgres/optimized/nbtsearch.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; qemu/optimized/ui_cursor.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i16 %0) #0 {
 entry:

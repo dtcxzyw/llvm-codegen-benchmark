@@ -1,78 +1,21 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	fmov	x8, d1
-	mov	x10, v1.d[1]
-	mov	x13, v0.d[1]
-	shl	v3.2d, v3.2d, #48
-	shl	v2.2d, v2.2d, #48
-	sshr	v3.2d, v3.2d, #48
-	sshr	v2.2d, v2.2d, #48
-	fmov	x9, d3
-	fmov	x12, d2
-	mov	x11, v3.d[1]
-	mov	x14, v2.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d0
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d1, x8
-	mul	x11, x14, x13
-	mov	v1.d[1], x10
-	fmov	d0, x9
-	mov	v0.d[1], x11
+                                        // kill: def $w1 killed $w1 def $x1
+	sxth	x8, w1
+	mul	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	fmov	x8, d1
-	mov	x10, v1.d[1]
-	mov	x13, v0.d[1]
-	shl	v3.2d, v3.2d, #56
-	shl	v2.2d, v2.2d, #56
-	sshr	v3.2d, v3.2d, #56
-	sshr	v2.2d, v2.2d, #56
-	fmov	x9, d3
-	fmov	x12, d2
-	mov	x11, v3.d[1]
-	mov	x14, v2.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d0
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d1, x8
-	mul	x11, x14, x13
-	mov	v1.d[1], x10
-	fmov	d0, x9
-	mov	v0.d[1], x11
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtb	x8, w1
+	mul	x0, x8, x0
 	ret
                                         // -- End function
 func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	fmov	x8, d1
-	mov	x10, v1.d[1]
-	mov	x13, v0.d[1]
-	shl	v3.2d, v3.2d, #48
-	shl	v2.2d, v2.2d, #48
-	sshr	v3.2d, v3.2d, #48
-	sshr	v2.2d, v2.2d, #48
-	fmov	x9, d3
-	fmov	x12, d2
-	mov	x11, v3.d[1]
-	mov	x14, v2.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d0
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d1, x8
-	mul	x11, x14, x13
-	mov	v1.d[1], x10
-	fmov	d0, x9
-	mov	v0.d[1], x11
+                                        // kill: def $w1 killed $w1 def $x1
+	sxth	x8, w1
+	mul	x0, x8, x0
 	ret
                                         // -- End function

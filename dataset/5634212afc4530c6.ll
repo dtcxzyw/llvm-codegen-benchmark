@@ -6,7 +6,7 @@
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = xor i32 %1, -1
   %6 = add nsw i32 %4, %5
   ret i32 %6

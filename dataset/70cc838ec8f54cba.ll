@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 37 occurrences:
 ; cvc5/optimized/entailment_check.cpp.ll
 ; cvc5/optimized/lfsc_node_converter.cpp.ll
 ; cvc5/optimized/proof_checker.cpp.ll
@@ -22,15 +22,10 @@
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/LICM.cpp.ll
-; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaPseudoObject.cpp.ll
-; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; postgres/optimized/heaptuple.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll

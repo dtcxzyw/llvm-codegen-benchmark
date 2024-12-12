@@ -17,16 +17,14 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; openjdk/optimized/hb-ot-name.ll
+; 1 occurrences:
 ; openjdk/optimized/vm_version_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, %1
   %3 = freeze i32 %2
-  %4 = icmp ult i32 %3, 24
+  %4 = icmp samesign ult i32 %3, 24
   ret i1 %4
 }
 
@@ -35,7 +33,7 @@ entry:
 ; icu/optimized/ucnv_u8.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, %1
   %3 = freeze i32 %2
@@ -43,8 +41,21 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 2 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; openjdk/optimized/hb-ot-name.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %0, %1
+  %3 = freeze i32 %2
+  %4 = icmp ult i32 %3, 65536
+  ret i1 %4
+}
+
+; 5 occurrences:
 ; abc/optimized/giaSupps.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; draco/optimized/corner_table.cc.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; php/optimized/zend_ssa.ll
@@ -71,7 +82,7 @@ entry:
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = freeze i32 %2
@@ -82,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/mfsResub.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = freeze i32 %2
@@ -95,11 +106,22 @@ entry:
 ; gromacs/optimized/toppush.cpp.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = freeze i32 %2
   %4 = icmp eq i32 %3, 0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; abc/optimized/sfmLib.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %0, %1
+  %3 = freeze i32 %2
+  %4 = icmp samesign ugt i32 %3, 1
   ret i1 %4
 }
 
@@ -108,22 +130,23 @@ entry:
 ; eastl/optimized/TestBitset.cpp.ll
 ; openusd/optimized/warped_motion.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, %1
   %3 = freeze i32 %2
-  %4 = icmp ugt i32 %3, 1
+  %4 = icmp ugt i32 %3, 6
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; wireshark/optimized/observer.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = freeze i32 %2
-  %4 = icmp slt i32 %3, 0
+  %4 = icmp slt i32 %3, 1
   ret i1 %4
 }
 
@@ -156,7 +179,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = freeze i32 %2
@@ -167,7 +190,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = freeze i32 %2

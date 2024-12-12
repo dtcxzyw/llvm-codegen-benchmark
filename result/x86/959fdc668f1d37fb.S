@@ -1,7 +1,6 @@
 func0000000000000007:                   # @func0000000000000007
-	movl	%esi, %eax
-	andl	$3, %eax
-	shll	$8, %eax
+	leal	(,%rsi,4), %eax
+	andl	$28, %eax
 	orl	%edi, %eax
 	retq
 func000000000000000f:                   # @func000000000000000f

@@ -1,5 +1,5 @@
 
-; 208 occurrences:
+; 210 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -208,6 +208,8 @@
 ; velox/optimized/ZipWith.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
@@ -215,11 +217,11 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
-; 186 occurrences:
+; 185 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/FindInvalidDataProcess.cpp.ll
@@ -314,7 +316,6 @@ entry:
 ; llvm/optimized/PHIElimination.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
@@ -413,7 +414,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
@@ -427,7 +428,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 

@@ -27,8 +27,13 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 9 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-keypair.ll
 ; opencv/optimized/resize.cpp.ll

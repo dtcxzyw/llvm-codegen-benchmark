@@ -9,19 +9,19 @@
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/intel_dpt.ll
 ; llvm/optimized/APFloat.cpp.ll
-; minetest/optimized/mapblock_mesh.cpp.ll
-; minetest/optimized/voxel.cpp.ll
-; minetest/optimized/voxelalgorithms.cpp.ll
+; opencv/optimized/contours_new.cpp.ll
+; openjdk/optimized/codeCache.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; spike/optimized/ns16550.ll
+; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-tr.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 16
-  %3 = icmp eq i8 %2, 0
-  %4 = and i8 %0, 15
-  %5 = select i1 %3, i8 0, i8 %4
+  %2 = and i8 %1, 3
+  %3 = icmp eq i8 %2, 3
+  %4 = and i8 %0, 3
+  %5 = select i1 %3, i8 1, i8 %4
   ret i8 %5
 }
 

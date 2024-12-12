@@ -16,10 +16,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cypress_ps2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000015(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 8, i32 3
-  %4 = icmp ule i32 %3, %1
+  %4 = icmp samesign ule i32 %3, %1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -27,10 +27,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_gmbus.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 511, i32 256
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp samesign ult i32 %3, %1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

@@ -46,7 +46,7 @@ define i64 @func0000000000000075(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 136657
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -94,20 +94,19 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/sr_vendor.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/packet-pn-ptcp.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, 18
+  %4 = mul nuw nsw i64 %3, 10
   %5 = add nuw nsw i64 %4, %1
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
@@ -126,7 +125,7 @@ define i64 @func0000000000000030(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 448
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -151,7 +150,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 1000000
   %5 = add nsw i64 %4, %1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -175,7 +174,7 @@ define i64 @func000000000000003d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 12
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -188,8 +187,8 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nsw i64 %3, -15137
-  %5 = add nsw i64 %4, %1
-  %6 = add nsw i64 %5, %0
+  %5 = add nsw i64 %1, %4
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -202,7 +201,7 @@ define i64 @func0000000000000035(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 2446
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }

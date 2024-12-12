@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
 ; ockam-rs/optimized/2n1wyoax2qficosw.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000006d(i32 %0, i32 %1) #0 {
 entry:

@@ -3,10 +3,10 @@
 ; openssl/optimized/libssl-lib-t1_trce.ll
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
@@ -16,7 +16,7 @@ entry:
 ; openssl/optimized/libssl-lib-t1_trce.ll
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 2
   %4 = sub i64 %1, %3
@@ -39,7 +39,7 @@ entry:
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = sub nuw i64 %1, %3
@@ -58,7 +58,7 @@ entry:
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; tls-rs/optimized/7y9936vu35zt2sp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 7
   %4 = sub nuw i64 %1, %3
@@ -66,7 +66,7 @@ entry:
   ret i1 %5
 }
 
-; 43 occurrences:
+; 45 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -110,17 +110,20 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
+; boost/optimized/approximately_equals.ll
 ; clamav/optimized/vba_extract.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; grpc/optimized/status_helper.cc.ll
@@ -134,11 +137,12 @@ entry:
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; tokenizers-rs/optimized/1ve5rid4048y19bt.ll
 ; wasmedge/optimized/filemgr.cpp.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
@@ -146,10 +150,10 @@ entry:
 ; 1 occurrences:
 ; ropey-rs/optimized/2p9nf7n6i9ycxebu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
@@ -158,7 +162,7 @@ entry:
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
 ; wasmtime-rs/optimized/11ww7ts55o8z8j6m.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = sub nuw i64 %1, %3
@@ -166,7 +170,7 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
 ; ockam-rs/optimized/1kl4v6vvko2mygns.ll
@@ -185,11 +189,12 @@ entry:
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
@@ -202,7 +207,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
@@ -212,10 +217,10 @@ entry:
 ; ockam-rs/optimized/1sh1jgeif2r7m14r.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
@@ -223,7 +228,7 @@ entry:
 ; 1 occurrences:
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = sub nsw i64 %1, %3
@@ -234,10 +239,10 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/2ebx9eutyph8un4i.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
@@ -245,10 +250,10 @@ entry:
 ; 1 occurrences:
 ; git/optimized/xprepare.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp slt i64 %3, %0
   ret i1 %4
 }
@@ -256,12 +261,25 @@ entry:
 ; 1 occurrences:
 ; git/optimized/pack-revindex.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 12
   %4 = sub nuw nsw i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
+}
+
+; 3 occurrences:
+; boost/optimized/area.ll
+; draco/optimized/adaptive_rans_bit_decoder.cc.ll
+; draco/optimized/direct_bit_decoder.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %.neg = xor i64 %2, -1
+  %3 = add i64 %1, %.neg
+  %4 = icmp slt i64 %3, %0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -271,49 +289,15 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp eq i64 %3, %0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; draco/optimized/adaptive_rans_bit_decoder.cc.ll
-; draco/optimized/direct_bit_decoder.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, 4
-  %4 = sub nsw i64 %1, %3
-  %5 = icmp slt i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; wasmtime-rs/optimized/45190zkycf5izngt.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
-  %4 = icmp eq i64 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; coreutils-rs/optimized/49fwg0b0m19bdvio.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
-  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/zstd_decompress.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 8
   %4 = sub nuw i64 %1, %3
@@ -324,10 +308,10 @@ entry:
 ; 1 occurrences:
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000148(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
@@ -335,10 +319,10 @@ entry:
 ; 1 occurrences:
 ; ockam-rs/optimized/4mv3oanfto174c2o.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
@@ -346,7 +330,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/networking.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 2
   %4 = sub i64 %1, %3

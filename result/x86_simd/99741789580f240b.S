@@ -2,7 +2,7 @@
 	.long	7                               # 0x7
 .LCPI0_1:
 	.long	448                             # 0x1c0
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpbroadcastd	.LCPI0_0(%rip), %ymm4   # ymm4 = [7,7,7,7,7,7,7,7]

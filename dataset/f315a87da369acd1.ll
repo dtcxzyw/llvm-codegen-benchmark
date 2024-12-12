@@ -1,5 +1,5 @@
 
-; 123 occurrences:
+; 122 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; chibicc/optimized/codegen.ll
@@ -40,7 +40,6 @@
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll

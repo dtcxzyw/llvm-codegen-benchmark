@@ -5,7 +5,7 @@
 ; openjdk/optimized/pngget.ll
 ; openusd/optimized/patchTree.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000cc(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func000000000000018c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null

@@ -27,8 +27,7 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/CommandFlags.cpp.ll
+; 1 occurrences:
 ; minetest/optimized/game.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i1 %0, i32 %1) #0 {
@@ -65,8 +64,10 @@ entry:
   ret i8 %4
 }
 
-; 21 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; clap-rs/optimized/5651dp9k16h53y8x.ll
 ; coreutils-rs/optimized/2da8x6qqhq5bzyna.ll
@@ -96,7 +97,14 @@ entry:
   ret i8 %4
 }
 
-; 11 occurrences:
+; 18 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/expand.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/write_dsv.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; nix/optimized/attr-path.ll
 ; nix/optimized/cgroup.ll
@@ -111,7 +119,7 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 384
+  %2 = icmp ugt i32 %1, 429496729
   %3 = select i1 %0, i1 true, i1 %2
   %4 = zext i1 %3 to i8
   ret i8 %4

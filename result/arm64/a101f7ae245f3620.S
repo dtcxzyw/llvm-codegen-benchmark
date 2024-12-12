@@ -3,13 +3,13 @@ func0000000000000010:                   // @func0000000000000010
 	and	w8, w2, #0xff
 	cmp	w8, #64
 	cset	w8, eq
-	tst	w8, w0
+	tst	w0, w8
 	mov	w8, #2                          // =0x2
 	cinc	x8, x8, ne
 	add	x0, x1, x8
 	ret
                                         // -- End function
-func000000000000004a:                   // @func000000000000004a
+func000000000000004f:                   // @func000000000000004f
 // %bb.0:                               // %entry
 	and	w8, w2, #0xff
 	cmp	w8, #58

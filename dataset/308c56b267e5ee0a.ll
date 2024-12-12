@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 18 occurrences:
 ; libquic/optimized/montgomery.c.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
@@ -12,18 +12,25 @@
 ; tokio-rs/optimized/4brh9kql6tjayli1.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; zed-rs/optimized/58eqxolkuiavjghtj45u3c5th.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; llvm/optimized/BasicBlock.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/Instruction.cpp.ll
+; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/LoopFuse.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MoveChecker.cpp.ll
@@ -62,7 +69,7 @@ entry:
 define i1 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 

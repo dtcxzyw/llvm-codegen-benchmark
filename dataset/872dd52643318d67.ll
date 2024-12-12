@@ -18,7 +18,7 @@ entry:
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
 ; wireshark/optimized/packet-gtpv2.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 4
   %4 = icmp eq i8 %1, 15

@@ -29,7 +29,7 @@ entry:
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i8 @func00000000000000d8(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = icmp ne i64 %2, 0
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000030(i64 %0, i64 %1) #0 {
+define i8 @func0000000000000050(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = icmp ugt i64 %2, 4294967295
@@ -51,10 +51,10 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000070(i64 %0, i64 %1) #0 {
+define i8 @func00000000000000f0(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
-  %3 = icmp ugt i64 %2, 4294967295
+  %3 = icmp samesign ugt i64 %2, 4294967295
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

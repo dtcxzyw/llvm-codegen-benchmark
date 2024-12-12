@@ -35,31 +35,21 @@ func000000000000000a:                   # @func000000000000000a
 	sraiw	a0, a0, 31
 	or	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
-	andi	a1, a1, 1
-	sext.w	a0, a0
-	beqz	a1, .LBB3_2
-	li	a2, 1
-.LBB3_2:                                # %entry
-	sltiu	a0, a0, 32
-	addi	a0, a0, -1
-	and	a0, a0, a2
-	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a0, a0
-	bnez	a0, .LBB4_2
+	bnez	a0, .LBB3_2
 	li	a0, 1
 	ret
-.LBB4_2:
+.LBB3_2:
 	andi	a1, a1, 1
 	addi	a0, a1, -1
 	and	a0, a0, a2
 	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a1, a1, 1
-	beqz	a1, .LBB5_2
+	beqz	a1, .LBB4_2
 	li	a2, 256
-.LBB5_2:                                # %entry
+.LBB4_2:                                # %entry
 	sraiw	a0, a0, 31
 	and	a0, a0, a2
 	ret

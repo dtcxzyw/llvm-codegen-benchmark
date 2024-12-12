@@ -1,4 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	sext.w	a2, a2
 	add	a0, a0, a2
 	sext.w	a1, a1
@@ -18,33 +18,33 @@ func000000000000000a:                   # @func000000000000000a
 	sext.w	a1, a1
 	slt	a0, a1, a0
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a2
 	sext.w	a1, a1
 	slt	a0, a1, a0
 	ret
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	sext.w	a2, a2
 	add	a0, a0, a2
 	sext.w	a1, a1
 	slt	a0, a0, a1
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	sext.w	a2, a2
 	add	a0, a0, a2
 	sext.w	a1, a1
 	slt	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a2
 	sext.w	a1, a1
 	sltu	a0, a1, a0
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	sext.w	a2, a2
 	add	a0, a0, a2
 	sext.w	a1, a1
@@ -57,27 +57,27 @@ func0000000000000004:                   # @func0000000000000004
 	sext.w	a1, a1
 	sltu	a0, a0, a1
 	ret
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	sext.w	a2, a2
 	add	a0, a0, a2
 	sext.w	a1, a1
 	slt	a0, a1, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a2
 	sext.w	a1, a1
 	sltu	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a2
 	sext.w	a1, a1
 	sltu	a0, a1, a0
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a2, a2
 	add	a0, a0, a2
 	sext.w	a1, a1

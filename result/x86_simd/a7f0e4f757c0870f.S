@@ -11,6 +11,6 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000002:                   # @func0000000000000002
 	vptestmq	%ymm2, %ymm2, %k1
 	vpsrlq	$8, %ymm1, %ymm1
-	vpxor	%ymm0, %ymm1, %ymm0
+	vpxor	%ymm1, %ymm0, %ymm0
 	vpxorq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq

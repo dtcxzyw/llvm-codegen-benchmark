@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 51 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/yara_arena.c.ll
 ; cmake/optimized/archive_read_support_format_cpio.c.ll
@@ -22,7 +22,6 @@
 ; linux/optimized/slub.ll
 ; linux/optimized/trace_probe.ll
 ; linux/optimized/virtio_net.ll
-; linux/optimized/wep.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
@@ -46,6 +45,8 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/datetime.ll
+; proxygen/optimized/HPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
 ; redis/optimized/sds.ll
 ; redis/optimized/sort.ll
 ; regex-rs/optimized/6f4i3c8223u3bmw.ll

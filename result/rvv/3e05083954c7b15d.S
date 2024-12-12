@@ -1,4 +1,4 @@
-func0000000000000310:                   # @func0000000000000310
+func0000000000000610:                   # @func0000000000000610
 	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
@@ -9,7 +9,7 @@ func0000000000000310:                   # @func0000000000000310
 	vadd.vi	v10, v12, 2
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000110:                   # @func0000000000000110
+func0000000000000210:                   # @func0000000000000210
 	li	a0, 56
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 0
@@ -20,7 +20,7 @@ func0000000000000110:                   # @func0000000000000110
 	vadd.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000115:                   # @func0000000000000115
+func0000000000000215:                   # @func0000000000000215
 	li	a0, 56
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 0
@@ -31,7 +31,7 @@ func0000000000000115:                   # @func0000000000000115
 	vadd.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func000000000000031f:                   # @func000000000000031f
+func000000000000061f:                   # @func000000000000061f
 	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 0

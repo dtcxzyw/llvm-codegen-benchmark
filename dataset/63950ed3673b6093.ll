@@ -28,7 +28,7 @@ entry:
   ret i32 %6
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; hermes/optimized/AST2JS.cpp.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; hermes/optimized/HBC.cpp.ll
@@ -43,6 +43,7 @@ entry:
 ; jsonnet/optimized/string_utils.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i8 %0, i32 %1) #0 {
@@ -79,17 +80,9 @@ entry:
   ret i32 %6
 }
 
-; 11 occurrences:
+; 3 occurrences:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_string.c.ll
-; hermes/optimized/AST2JS.cpp.ll
-; hermes/optimized/ConsecutiveStringStorage.cpp.ll
-; hermes/optimized/JSLexer.cpp.ll
-; hermes/optimized/JSONEmitter.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
-; hermes/optimized/Runtime.cpp.ll
-; hermes/optimized/SourceErrorManager.cpp.ll
-; hermes/optimized/UTF8.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i8 %1) #0 {

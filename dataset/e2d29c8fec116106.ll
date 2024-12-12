@@ -1,14 +1,11 @@
 
-; 123 occurrences:
+; 109 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/absVta.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/fraImp.c.ll
 ; abc/optimized/giaMan.c.ll
-; abc/optimized/ifDec08.c.ll
-; abc/optimized/ifDec10.c.ll
 ; abc/optimized/ivyMulti.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/kitTruth.c.ll
@@ -18,13 +15,10 @@
 ; abc/optimized/sswSim.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
-; cpython/optimized/io.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; folly/optimized/Unicode.cpp.ll
-; freetype/optimized/pshinter.c.ll
 ; gromacs/optimized/poscalc.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/stream.c.ll
 ; icu/optimized/collationkeys.ll
 ; icu/optimized/genmbcs.ll
@@ -42,7 +36,6 @@
 ; linux/optimized/ethtool.ll
 ; linux/optimized/filetable.ll
 ; linux/optimized/forcedeth.ll
-; linux/optimized/hdac_device.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/intel_ddi.ll
@@ -54,7 +47,6 @@
 ; linux/optimized/kapi.ll
 ; linux/optimized/legacy_freezer.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mmconfig-shared.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/page_alloc.ll
@@ -77,7 +69,6 @@
 ; nlohmann_json/optimized/unit-bson.cpp.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
 ; openssl/optimized/libssl-lib-ssl_ciph.ll
@@ -95,7 +86,6 @@
 ; postgres/optimized/pg_dump.ll
 ; proj/optimized/geodesic.c.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
-; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/block.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/hw_audio_ac97.c.ll
@@ -110,8 +100,6 @@
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; redis/optimized/ae.ll
-; redis/optimized/lolwut6.ll
-; rocksdb/optimized/filter_policy.cc.ll
 ; ruby/optimized/thread.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/extension_set.cc.ll
@@ -119,8 +107,6 @@
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/position.ll
-; wasmtime-rs/optimized/33slbp9da8waph2q.ll
-; wasmtime-rs/optimized/lin3yywv836im8d.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind

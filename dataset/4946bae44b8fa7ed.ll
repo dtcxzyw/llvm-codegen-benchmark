@@ -1,8 +1,6 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
-; eastl/optimized/BenchmarkString.cpp.ll
-; eastl/optimized/TestString.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; mini-lsm-rs/optimized/1mavrvqu7b39yar1.ll
 ; mini-lsm-rs/optimized/2y1m09w3fogtr6jd.ll
@@ -15,7 +13,6 @@
 ; ockam-rs/optimized/4df8gyzy0u3roc94.ll
 ; ockam-rs/optimized/548tb0vgebzwk35z.ll
 ; ockam-rs/optimized/7hitgxreqt236i.ll
-; opencv/optimized/scansegment.cpp.ll
 ; openjdk/optimized/stackChunkOop.ll
 ; openssl/optimized/libcrypto-lib-pem_lib.ll
 ; openssl/optimized/libcrypto-shlib-pem_lib.ll
@@ -29,6 +26,8 @@
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; wasmtime-rs/optimized/35t0vcavp8gy3o68.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/4gafs7cnqueum1wf7b8eca1yl.ll
+; zed-rs/optimized/di66y7a5lci7qvst4agi7dhs8.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000005a(ptr %0, i64 %1) #0 {
 entry:
@@ -52,15 +51,18 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
-; opencv/optimized/distransform.cpp.ll
+; 4 occurrences:
+; boost/optimized/to_chars.ll
+; eastl/optimized/BenchmarkString.cpp.ll
+; eastl/optimized/TestString.cpp.ll
+; opencv/optimized/scansegment.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(ptr %0, i64 %1) #0 {
+define ptr @func000000000000005b(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -4
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 2
   ret ptr %5
 }
 

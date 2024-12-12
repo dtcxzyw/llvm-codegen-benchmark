@@ -9,3 +9,8 @@ func0000000000000006:                   # @func0000000000000006
 	shlq	$3, %rcx
 	subq	%rcx, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	movq	%rdi, %rax
+	movslq	%esi, %rcx
+	subq	%rcx, %rax
+	retq

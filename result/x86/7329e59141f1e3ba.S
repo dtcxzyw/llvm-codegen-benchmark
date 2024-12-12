@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	cqto
@@ -7,7 +7,7 @@ func000000000000001a:                   # @func000000000000001a
 	cmpq	$2147483647, %rax               # imm = 0x7FFFFFFF
 	setg	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	cqto
@@ -16,7 +16,7 @@ func0000000000000018:                   # @func0000000000000018
 	shrq	$60, %rax
 	setne	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	cqto

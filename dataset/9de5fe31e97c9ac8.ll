@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -8,6 +8,7 @@
 ; linux/optimized/drm_mode_config.ll
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/xt_addrtype.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; php/optimized/spl_functions.ll
@@ -23,7 +24,7 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/simSymStr.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -38,6 +39,7 @@ entry:
 ; linux/optimized/xt_addrtype.ll
 ; linux/optimized/xt_conntrack.ll
 ; llvm/optimized/MachineInstr.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
@@ -49,7 +51,7 @@ define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, 0
-  %5 = xor i1 %4, %0
+  %5 = xor i1 %0, %4
   ret i1 %5
 }
 

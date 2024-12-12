@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_allocator_test.cc.ll
 ; libwebp/optimized/cwebp.c.ll
 ; llvm/optimized/AMDGPUEmitPrintf.cpp.ll
@@ -18,6 +18,7 @@
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wireshark/optimized/androiddump.c.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -60,7 +61,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = select i1 %1, i64 3, i64 6
   %6 = add nuw i64 %4, %5
   ret i64 %6
@@ -72,7 +73,7 @@ entry:
 define i64 @func000000000000003a(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = select i1 %1, i64 3, i64 6
   %6 = add nuw i64 %4, %5
   ret i64 %6

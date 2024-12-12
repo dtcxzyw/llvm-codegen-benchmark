@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/ivyDsd.c.ll
 ; linux/optimized/e1000_main.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll

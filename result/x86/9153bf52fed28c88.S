@@ -27,9 +27,9 @@ func000000000000003f:                   # @func000000000000003f
 	orl	%edi, %eax
 	retq
 func000000000000001c:                   # @func000000000000001c
-	shrb	$3, %dl
+	shrb	$6, %dl
 	movzbl	%dl, %eax
-	shll	$6, %eax
+	shll	$11, %eax
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq

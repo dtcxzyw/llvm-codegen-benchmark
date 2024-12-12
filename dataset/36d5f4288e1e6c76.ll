@@ -1,5 +1,5 @@
 
-; 121 occurrences:
+; 117 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
@@ -37,7 +37,6 @@
 ; hdf5/optimized/H5Odtype.c.ll
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; just-rs/optimized/2sotx4bdu006z307.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/cfg.ll
 ; linux/optimized/forcedeth.ll
@@ -47,7 +46,6 @@
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/ich8lan.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_fbc.ll
 ; linux/optimized/intel_ggtt_fencing.ll
@@ -68,7 +66,6 @@
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/Line.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/TemplateName.cpp.ll
 ; llvm/optimized/X86AsmBackend.cpp.ll
@@ -86,7 +83,6 @@
 ; openusd/optimized/patchTree.cpp.ll
 ; openusd/optimized/pred_common.c.ll
 ; postgres/optimized/utf8_and_gb18030.ll
-; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; redis/optimized/module.ll
@@ -126,12 +122,12 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 5
   %3 = and i32 %2, 7936
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or disjoint i32 %4, 67239938
   ret i32 %5
 }
 
-; 80 occurrences:
+; 79 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
@@ -159,7 +155,6 @@ entry:
 ; just-rs/optimized/2sotx4bdu006z307.ll
 ; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/hooks.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_guc_ads.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/intel_workarounds.ll
@@ -264,7 +259,7 @@ define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
   %3 = and i32 %2, 4128768
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or disjoint i32 %4, 8421600
   ret i32 %5
 }
@@ -282,12 +277,11 @@ entry:
   ret i32 %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/yara_parser.c.ll
 ; libevent/optimized/http.c.ll
 ; libpng/optimized/pngread.c.ll
-; linux/optimized/attr.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/i915_perf.ll
@@ -313,7 +307,7 @@ entry:
   ret i32 %5
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
@@ -331,7 +325,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -360,9 +353,8 @@ entry:
   ret i32 %4
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; git/optimized/revision.ll
-; linux/optimized/fixed_phy.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/iosf_mbi.ll
 ; linux/optimized/open.ll
@@ -380,7 +372,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = and i32 %2, -2147483648
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or i32 %4, 2139095040
   ret i32 %5
 }
@@ -392,7 +384,7 @@ define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
   %3 = and i32 %2, -2147483648
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or i32 %4, 2139095040
   ret i32 %5
 }
@@ -422,20 +414,8 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = and i32 %2, 33554430
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or disjoint i32 %4, 1
-  ret i32 %5
-}
-
-; 1 occurrences:
-; hermes/optimized/HBC.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 6
-  %3 = and i32 %2, 960
-  %4 = or i32 %3, %0
-  %5 = or i32 %4, 56320
   ret i32 %5
 }
 
@@ -447,7 +427,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 5
   %3 = and i32 %2, 256
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = or i32 %4, 8
   ret i32 %5
 }

@@ -34,18 +34,4 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; luajit/optimized/lj_snap.ll
-; luajit/optimized/lj_snap_dyn.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i8 %0) #0 {
-entry:
-  %1 = xor i8 %0, -1
-  %2 = sext i8 %1 to i32
-  %3 = zext i32 %2 to i64
-  ret i64 %3
-}
-
 attributes #0 = { nounwind }

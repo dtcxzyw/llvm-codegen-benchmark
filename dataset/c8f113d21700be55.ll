@@ -1,12 +1,10 @@
 
-; 182 occurrences:
+; 176 occurrences:
 ; c3c/optimized/float.c.ll
 ; c3c/optimized/types.c.ll
 ; casadi/optimized/cvodes.c.ll
-; casadi/optimized/kinsol_spgmr.c.ll
 ; chibicc/optimized/type.ll
 ; clamav/optimized/matcher.c.ll
-; cmake/optimized/archive_entry_strmode.c.ll
 ; cmake/optimized/archive_write_set_format.c.ll
 ; cmake/optimized/archive_write_set_format_gnutar.c.ll
 ; cmake/optimized/core.c.ll
@@ -155,22 +153,17 @@
 ; postgres/optimized/parse_expr.ll
 ; postgres/optimized/scan.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/hw_block_virtio-blk.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
 ; qemu/optimized/optimize.c.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/init.ll
 ; ruby/optimized/iseq.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; wireshark/optimized/file-jpeg.c.ll
-; wireshark/optimized/msg_ucd.c.ll
-; wireshark/optimized/packet-cmip.c.ll
 ; wireshark/optimized/packet-diameter.c.ll
 ; wireshark/optimized/packet-exported_pdu.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
@@ -182,6 +175,7 @@
 ; yalantinglibs/optimized/example.cpp.ll
 ; yaml-cpp/optimized/emitterstate.cpp.ll
 ; z3/optimized/lp_settings.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i32 %0) #0 {
 entry:

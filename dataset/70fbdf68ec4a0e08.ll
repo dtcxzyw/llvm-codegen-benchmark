@@ -5,7 +5,7 @@
 ; lodepng/optimized/lodepng.cpp.ll
 ; qemu/optimized/block_parallels.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %0, %1
   %.mask = and i64 %2, 36028797018963967
@@ -32,7 +32,7 @@ entry:
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; tev/optimized/Image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %.mask = and i64 %2, 4611686018427387903
@@ -44,7 +44,7 @@ entry:
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; oiio/optimized/pngoutput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = and i64 %2, 4611686018427387896
@@ -56,7 +56,7 @@ entry:
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; oiio/optimized/nullimageio.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000186(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %0, %1
   %.mask = and i64 %2, 2147483648
@@ -68,7 +68,7 @@ entry:
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; oiio/optimized/nullimageio.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %0, %1
   %.mask = and i64 %2, 4294967295
@@ -90,7 +90,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/ResidualQuantizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %0, %1
   %3 = and i64 %2, 2305843009213693952
@@ -103,7 +103,7 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = and i64 %2, 4467570830351532032
@@ -114,7 +114,7 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/Image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = and i64 %2, 3458764513820540928

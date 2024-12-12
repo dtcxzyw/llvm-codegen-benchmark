@@ -1,6 +1,6 @@
 func0000000000000012:                   # @func0000000000000012
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
 	movabsq	$3777893186295716171, %rax      # imm = 0x346DC5D63886594B
@@ -24,7 +24,7 @@ func0000000000000012:                   # @func0000000000000012
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
 	shrq	$2, %rdx
@@ -52,7 +52,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000010:                   # @func0000000000000010
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
 	movabsq	$4835703278458516699, %rax      # imm = 0x431BDE82D7B634DB

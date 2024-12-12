@@ -1,4 +1,7 @@
 
+%"struct.Yosys::RTLIL::SigBit.3121538" = type <{ ptr, %union.anon.129.3121539, [4 x i8] }>
+%union.anon.129.3121539 = type { i32 }
+
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind
@@ -11,28 +14,7 @@ entry:
   ret ptr %6
 }
 
-; 9 occurrences:
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
-; opencv/optimized/emdL1.cpp.ll
-; openspiel/optimized/chess_test.cc.ll
-; yosys/optimized/booth.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr i32, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 4
-  ret ptr %6
-}
-
-; 29 occurrences:
-; abc/optimized/giaStr.c.ll
+; 26 occurrences:
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
 ; bullet3/optimized/btSliderConstraint.ll
@@ -51,12 +33,10 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/pickpointsDialog.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dggevx.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; opencv/optimized/convolution.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/emdL1.cpp.ll
 ; opencv/optimized/mser.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
@@ -89,9 +69,8 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -99,6 +78,19 @@ entry:
   %4 = add i32 %3, 16
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw float, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; opencv/optimized/emdL1.cpp.ll
+; yosys/optimized/booth.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr %"struct.Yosys::RTLIL::SigBit.3121538", ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 -16
   ret ptr %6
 }
 

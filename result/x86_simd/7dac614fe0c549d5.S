@@ -1,13 +1,13 @@
-func0000000000000884:                   # @func0000000000000884
+func0000000000002104:                   # @func0000000000002104
 	vpmovqd	%ymm2, %xmm2
-	vpcmpltud	%xmm0, %xmm2, %k0
+	vpcmpnleud	%xmm2, %xmm0, %k0
 	vpmovqd	%ymm1, %xmm1
-	vpcmpnleud	%xmm0, %xmm1, %k1
+	vpcmpltud	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000008a6:                   # @func00000000000008a6
+func0000000000002146:                   # @func0000000000002146
 	vpmovqd	%ymm2, %xmm2
 	vpcmpgtd	%xmm2, %xmm0, %k0
 	vpmovqd	%ymm1, %xmm1
@@ -16,7 +16,7 @@ func00000000000008a6:                   # @func00000000000008a6
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	vpmovqd	%ymm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpminsd	%xmm2, %xmm1, %xmm1

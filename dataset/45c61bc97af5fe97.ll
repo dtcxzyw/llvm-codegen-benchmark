@@ -49,7 +49,7 @@ entry:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, 2147483648
   %2 = icmp ne i64 %.mask, 0

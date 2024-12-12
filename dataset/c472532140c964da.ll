@@ -1,7 +1,9 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
+; opencv/optimized/speech_recognition.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:

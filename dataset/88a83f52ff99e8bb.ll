@@ -1,5 +1,5 @@
 
-; 74 occurrences:
+; 75 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; cmake/optimized/openssl.c.ll
 ; cpython/optimized/fileio.ll
@@ -21,12 +21,12 @@
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/intel_dsi_vbt.ll
 ; linux/optimized/io_apic.ll
-; linux/optimized/mii.ll
 ; linux/optimized/route.ll
 ; linux/optimized/rtc-cmos.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/sta_info.ll
 ; linux/optimized/xfrm_policy.ll
+; linux/optimized/xhci.ll
 ; llvm/optimized/AsmLexer.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -38,6 +38,7 @@
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/map.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -86,10 +87,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
-  %3 = icmp ult i8 %2, 29
+  %3 = icmp samesign ult i8 %2, 29
   %4 = select i1 %3, i32 1, i32 %0
   ret i32 %4
 }
@@ -109,7 +110,7 @@ entry:
 ; freetype/optimized/ftlzw.c.ll
 ; linux/optimized/rx.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 8
   %.not = icmp eq i8 %2, 0

@@ -32,8 +32,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; linux/optimized/intel_tv.ll
+; 1 occurrences:
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
@@ -53,6 +52,17 @@ entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = icmp ugt i32 %3, 99
   %5 = select i1 %4, i32 3, i32 %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; linux/optimized/intel_tv.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %0, i32 %1, i32 %2
+  %4 = icmp samesign ult i32 %3, 577
+  %5 = select i1 %4, i32 480, i32 %3
   ret i32 %5
 }
 

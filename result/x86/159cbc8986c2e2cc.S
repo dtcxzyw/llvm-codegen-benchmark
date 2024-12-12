@@ -1,4 +1,4 @@
-func0000000000000130:                   # @func0000000000000130
+func0000000000000230:                   # @func0000000000000230
 	testb	$14, %dl
 	setne	%cl
 	cmpl	$-9, %esi
@@ -6,7 +6,7 @@ func0000000000000130:                   # @func0000000000000130
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	andl	$31, %edx
 	cmpl	$20, %edx
 	sete	%cl
@@ -15,7 +15,7 @@ func0000000000000044:                   # @func0000000000000044
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	testb	$32, %dl
 	sete	%cl
 	cmpl	$-2, %esi
@@ -23,7 +23,12 @@ func0000000000000104:                   # @func0000000000000104
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000304:                   # @func0000000000000304
+func0000000000000630:                   # @func0000000000000630
+	orl	%esi, %edx
+	setne	%al
+	orb	%dil, %al
+	retq
+func0000000000000604:                   # @func0000000000000604
 	movabsq	$3377699720527872, %rax         # imm = 0xC000000000000
 	andq	%rdx, %rax
 	movabsq	$1125899906842624, %rcx         # imm = 0x4000000000000
@@ -34,15 +39,7 @@ func0000000000000304:                   # @func0000000000000304
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000330:                   # @func0000000000000330
-	testb	%dl, %dl
-	sets	%cl
-	testl	%esi, %esi
-	setne	%al
-	orb	%cl, %al
-	orb	%dil, %al
-	retq
-func0000000000000070:                   # @func0000000000000070
+func00000000000000b0:                   # @func00000000000000b0
 	btq	$44, %rdx
 	setae	%cl
 	testl	%esi, %esi
@@ -50,7 +47,7 @@ func0000000000000070:                   # @func0000000000000070
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000310:                   # @func0000000000000310
+func0000000000000610:                   # @func0000000000000610
 	testb	$3, %dl
 	setne	%cl
 	cmpl	$-3, %esi

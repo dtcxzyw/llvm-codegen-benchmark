@@ -22,8 +22,5 @@ func0000000000000001:                   # @func0000000000000001
 	vpaddd	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
 func0000000000000002:                   # @func0000000000000002
-	vpsllw	$15, %xmm0, %xmm0
-	vpmovw2m	%xmm0, %k0
-	knotb	%k0, %k1
-	vpaddd	%ymm2, %ymm1, %ymm0 {%k1} {z}
+	vpaddd	%ymm2, %ymm1, %ymm0
 	retq

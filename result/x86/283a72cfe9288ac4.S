@@ -1,56 +1,56 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
 	cmpl	%ecx, %eax
 	seta	%al
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000019:                   # @func0000000000000019
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
 	cmpl	%ecx, %eax
 	setae	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
 	cmpl	%ecx, %eax
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	movzwl	%si, %eax
 	movzbl	%dil, %ecx
 	cmpl	%ecx, %eax
 	seta	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	andl	$1, %esi
 	movzbl	%dil, %eax
 	cmpl	%eax, %esi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	andl	$1, %esi
 	movzbl	%dil, %eax
 	cmpl	%eax, %esi
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	andl	$1, %esi
 	movzbl	%dil, %eax
 	cmpl	%eax, %esi
 	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	cmpb	%dil, %sil
+	cmpb	%sil, %dil
 	sete	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
 	cmpl	%ecx, %eax
 	setbe	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000d4:                   # @func00000000000000d4
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
 	cmpl	%ecx, %eax

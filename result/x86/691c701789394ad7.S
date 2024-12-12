@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testq	%rsi, %rsi
 	movl	$8388607, %eax                  # imm = 0x7FFFFF
 	movl	$2147483647, %ecx               # imm = 0x7FFFFFFF
@@ -7,7 +7,7 @@ func0000000000000011:                   # @func0000000000000011
 	cmpl	$108, %ecx
 	sete	%al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testq	%rsi, %rsi
 	movl	$8388607, %eax                  # imm = 0x7FFFFF
 	movl	$2147483647, %ecx               # imm = 0x7FFFFFFF

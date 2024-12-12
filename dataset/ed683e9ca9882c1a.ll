@@ -7,7 +7,7 @@
 define i64 @func0000000000000015(i1 %0, i64 %1) #0 {
 entry:
   %.v = select i1 %0, i64 -9, i64 -5
-  %2 = add nsw i64 %.v, %1
+  %2 = add nsw i64 %1, %.v
   %3 = add nsw i64 %2, -34
   ret i64 %3
 }
@@ -18,7 +18,7 @@ entry:
 define i64 @func000000000000003f(i1 %0, i64 %1) #0 {
 entry:
   %.v = select i1 %0, i64 1, i64 2
-  %2 = add nuw nsw i64 %.v, %1
+  %2 = add nuw nsw i64 %1, %.v
   %3 = add nuw nsw i64 %2, 1
   ret i64 %3
 }
@@ -36,7 +36,7 @@ entry:
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
   %.v = select i1 %0, i64 4, i64 3
-  %2 = add i64 %.v, %1
+  %2 = add i64 %1, %.v
   %3 = add i64 %2, 2
   ret i64 %3
 }

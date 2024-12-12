@@ -1,5 +1,6 @@
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/to_chars.ll
 ; folly/optimized/TimeUtil.cpp.ll
 ; git/optimized/line-log.ll
 ; libquic/optimized/quic_stream_sequencer_buffer.cc.ll
@@ -18,7 +19,7 @@ entry:
   ret i64 %4
 }
 
-; 23 occurrences:
+; 25 occurrences:
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cpython/optimized/mpdecimal.ll
 ; cpython/optimized/pystrtod.ll
@@ -41,6 +42,8 @@ entry:
 ; php/optimized/streams.ll
 ; redis/optimized/bitops.ll
 ; rust-analyzer-rs/optimized/2hhegu64ori9jrrl.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
@@ -61,12 +64,14 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_order.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; nuttx/optimized/mm_realloc.c.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/f1iubl8q66d2sxqoxpce2jw1m.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i1 %1, i64 %2) #0 {
 entry:

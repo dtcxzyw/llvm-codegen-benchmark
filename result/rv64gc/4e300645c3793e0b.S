@@ -26,30 +26,3 @@ func000000000000002b:                   # @func000000000000002b
 	addi	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
-	andi	a2, a2, 1
-	bnez	a2, .LBB2_2
-	li	a2, 32
-	sraiw	a1, a1, 31
-	and	a1, a1, a2
-	add	a0, a0, a1
-	ret
-.LBB2_2:
-	li	a2, 36
-	sraiw	a1, a1, 31
-	and	a1, a1, a2
-	add	a0, a0, a1
-	ret
-func0000000000000030:                   # @func0000000000000030
-	sext.w	a1, a1
-	li	a3, 192
-	bne	a1, a3, .LBB3_2
-	li	a1, 2
-	add	a0, a0, a1
-	ret
-.LBB3_2:
-	andi	a2, a2, 1
-	li	a1, 4
-	sub	a1, a1, a2
-	add	a0, a0, a1
-	ret

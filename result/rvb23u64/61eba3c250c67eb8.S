@@ -33,12 +33,6 @@ func0000000000000005:                   # @func0000000000000005
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000020:                   # @func0000000000000020
-	sext.w	a1, a0
-	sltiu	a1, a1, 128
-	slliw	a0, a0, 5
-	czero.eqz	a0, a0, a1
-	ret
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a1, a0
 	slliw	a0, a0, 6

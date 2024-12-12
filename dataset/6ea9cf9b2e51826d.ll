@@ -12,7 +12,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 2
   %6 = and i64 %5, 2147483647
-  %7 = mul nuw nsw i64 %6, %0
+  %7 = mul nuw nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -25,7 +25,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = and i64 %5, 4294967295
-  %7 = mul nsw i64 %6, %0
+  %7 = mul nsw i64 %0, %6
   ret i64 %7
 }
 

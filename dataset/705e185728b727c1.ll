@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; gromacs/optimized/hbond.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
@@ -9,6 +9,7 @@
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; z3/optimized/bool_rewriter.cpp.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

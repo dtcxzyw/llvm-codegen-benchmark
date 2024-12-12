@@ -21,7 +21,7 @@ entry:
 ; abc/optimized/xsatSolverAPI.c.ll
 ; php/optimized/ir.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = icmp slt i32 %1, 4096
@@ -29,14 +29,25 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
-; abc/optimized/solver_api.c.ll
+; 4 occurrences:
 ; php/optimized/zend_gc.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 1
+  %3 = icmp samesign ult i32 %1, 131072
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 2 occurrences:
+; abc/optimized/solver_api.c.ll
+; php/optimized/zend_gc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = icmp ult i32 %1, 131072
@@ -69,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ubx.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = icmp slt i32 %1, 0
@@ -80,10 +91,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dp_aux.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 9
-  %3 = icmp ugt i32 %1, 2
+  %3 = icmp samesign ugt i32 %1, 2
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }

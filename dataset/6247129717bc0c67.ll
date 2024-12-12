@@ -1,5 +1,5 @@
 
-; 103 occurrences:
+; 102 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -7,7 +7,6 @@
 ; abc/optimized/giaStr.c.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; clamav/optimized/chmd.c.ll
-; clamav/optimized/smallfn.cpp.ll
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
 ; curl/optimized/libcurl_la-tftp.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
@@ -15,7 +14,6 @@
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; faiss/optimized/IndexLattice.cpp.ll
 ; folly/optimized/Codel.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -43,6 +41,7 @@
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; miniaudio/optimized/unity.c.ll

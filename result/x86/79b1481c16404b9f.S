@@ -40,11 +40,6 @@ func0000000000000006:                   # @func0000000000000006
 	movl	%edi, %eax
 	orq	%rcx, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	movl	%esi, %eax
-	movl	%edi, %ecx
-	leaq	(%rcx,%rax,4), %rax
-	retq
 func000000000000001d:                   # @func000000000000001d
 	shlq	$52, %rsi
 	movl	%edi, %eax

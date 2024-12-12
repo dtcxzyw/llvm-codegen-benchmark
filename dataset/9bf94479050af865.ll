@@ -1,18 +1,19 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; freetype/optimized/type1.c.ll
 ; freetype/optimized/type42.c.ll
 ; icu/optimized/collationbuilder.ll
+; libwebp/optimized/predictor_enc.c.ll
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; qemu/optimized/block_qed.c.ll
-; ruby/optimized/big2str.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -2
-  %4 = icmp ult i32 %3, 35
+  %3 = add i32 %2, -4096
+  %4 = icmp ult i32 %3, 67104769
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

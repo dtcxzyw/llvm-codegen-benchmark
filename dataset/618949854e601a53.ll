@@ -1,12 +1,10 @@
 
-; 52 occurrences:
+; 50 occurrences:
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/DwarfUnit.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; z3/optimized/asserted_formulas.cpp.ll
 ; z3/optimized/bit_blaster_rewriter.cpp.ll
 ; z3/optimized/bound_simplifier.cpp.ll

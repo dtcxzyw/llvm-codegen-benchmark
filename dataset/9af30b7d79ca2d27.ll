@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_scsi_vmw_pvscsi.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001e4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = add i32 %2, 4
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/oopRecorder.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 2
@@ -73,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001e8(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 2
@@ -84,11 +84,11 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f5(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001f5(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 2
-  %4 = icmp ule i32 %3, %0
+  %4 = icmp samesign ule i32 %3, %0
   ret i1 %4
 }
 
@@ -98,7 +98,7 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -2
@@ -121,7 +121,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-isis-lsp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c6(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -2
@@ -133,7 +133,7 @@ entry:
 ; icu/optimized/ubidi.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 2
@@ -144,7 +144,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -2
@@ -155,7 +155,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ac(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -2
@@ -177,11 +177,11 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = add i32 %2, 8
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 

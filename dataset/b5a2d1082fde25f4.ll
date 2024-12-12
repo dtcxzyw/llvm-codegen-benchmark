@@ -40,7 +40,9 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; cpython/optimized/_datetimemodule.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind

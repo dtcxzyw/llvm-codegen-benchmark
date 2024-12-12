@@ -30,6 +30,12 @@ func0000000000000007:                   # @func0000000000000007
 	leal	2(,%rax,4), %eax
 	imull	%edi, %eax
 	retq
+func0000000000000051:                   # @func0000000000000051
+	movl	%edi, %eax
+	negl	%eax
+	cmpl	$128, %esi
+	cmovael	%edi, %eax
+	retq
 func000000000000002b:                   # @func000000000000002b
 	xorl	%eax, %eax
 	cmpl	$3, %esi

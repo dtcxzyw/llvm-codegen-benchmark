@@ -39,10 +39,8 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; libpng/optimized/pngwrite.c.ll
-; oiio/optimized/strutil.cpp.ll
-; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i1 %1, i1 %2) #0 {
 entry:
@@ -54,8 +52,37 @@ entry:
 }
 
 ; 6 occurrences:
+; boost/optimized/to_chars.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; libwebp/optimized/vp8l_dec.c.ll
+; llvm/optimized/X86FastISel.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; postgres/optimized/worker.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 4, i32 5
+  %4 = select i1 %1, i32 6, i32 %3
+  %5 = icmp sgt i32 %0, 99
+  %6 = select i1 %5, i32 5, i32 %4
+  ret i32 %6
+}
+
+; 2 occurrences:
+; oiio/optimized/strutil.cpp.ll
+; stb/optimized/stb_sprintf.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 4, i32 3
+  %4 = select i1 %1, i32 5, i32 %3
+  %5 = icmp samesign ugt i32 %0, 999
+  %6 = select i1 %5, i32 6, i32 %4
+  ret i32 %6
+}
+
+; 5 occurrences:
 ; icu/optimized/uprops.ll
-; icu/optimized/ustrtrns.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; openblas/optimized/cblas_dimatcopy.c.ll
 ; openspiel/optimized/solitaire.cc.ll
@@ -70,19 +97,16 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
-; imgui/optimized/imgui_draw.cpp.ll
-; libwebp/optimized/vp8l_dec.c.ll
-; llvm/optimized/X86FastISel.cpp.ll
-; meshlab/optimized/filter_create.cpp.ll
-; postgres/optimized/worker.ll
+; 2 occurrences:
+; icu/optimized/ustrtrns.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i1 %1, i1 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i1 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 2648, i32 2089
-  %4 = select i1 %1, i32 13832, i32 %3
-  %5 = icmp sgt i32 %0, 8
-  %6 = select i1 %5, i32 13821, i32 %4
+  %3 = select i1 %2, i32 3, i32 4
+  %4 = select i1 %1, i32 2, i32 %3
+  %5 = icmp samesign ult i32 %0, 128
+  %6 = select i1 %5, i32 1, i32 %4
   ret i32 %6
 }
 

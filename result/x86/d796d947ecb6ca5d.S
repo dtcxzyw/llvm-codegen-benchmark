@@ -12,7 +12,7 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%eax, %eax
 	setle	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movzbl	%dl, %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax

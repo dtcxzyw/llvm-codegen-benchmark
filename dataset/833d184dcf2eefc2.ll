@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; libwebp/optimized/alpha_processing.c.ll
 ; libwebp/optimized/alpha_processing_sse2.c.ll
 ; linux/optimized/intel_rps.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; nanosvg/optimized/nanosvg.ll
 ; openjdk/optimized/jdmarker.ll
 ; wireshark/optimized/file-jpeg.c.ll

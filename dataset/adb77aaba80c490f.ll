@@ -1,4 +1,16 @@
 
+; 2 occurrences:
+; gromacs/optimized/pairlist.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %1, %2
+  %4 = freeze i1 %0
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; gromacs/optimized/toppush.cpp.ll
 ; Function Attrs: nounwind

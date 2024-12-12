@@ -1,12 +1,13 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; freetype/optimized/sfnt.c.ll
-; icu/optimized/ucnvscsu.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; regex-rs/optimized/v8mcpnwv4glojx2.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000484(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -6
   %4 = icmp ult i32 %3, 5
@@ -22,7 +23,7 @@ entry:
 ; llvm/optimized/Darwin.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -3
   %4 = icmp ult i32 %3, -2
@@ -36,7 +37,7 @@ entry:
 ; sentencepiece/optimized/time.cc.ll
 ; wireshark/optimized/i4btrace.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -32
   %4 = icmp ult i32 %3, -31
@@ -49,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hub.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -255001
   %4 = icmp ult i32 %3, -256000

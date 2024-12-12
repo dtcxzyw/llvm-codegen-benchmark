@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 35 occurrences:
 ; abc/optimized/saigSwitch.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -15,15 +15,12 @@
 ; linux/optimized/hwmon.ll
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/iommu-traces.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/sched.ll
 ; linux/optimized/tables.ll
 ; linux/optimized/tx.ll
-; opencv/optimized/brisk.cpp.ll
 ; php/optimized/ir_emit.ll
 ; postgres/optimized/async.ll
 ; postgres/optimized/execParallel.ll
@@ -47,7 +44,7 @@ entry:
   ret i64 %4
 }
 
-; 31 occurrences:
+; 29 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
@@ -65,10 +62,8 @@ entry:
 ; openspiel/optimized/backgammon.cc.ll
 ; openssl/optimized/libcrypto-lib-ec2_oct.ll
 ; openssl/optimized/libcrypto-lib-ecp_oct.ll
-; openssl/optimized/libcrypto-lib-t_pkey.ll
 ; openssl/optimized/libcrypto-shlib-ec2_oct.ll
 ; openssl/optimized/libcrypto-shlib-ecp_oct.ll
-; openssl/optimized/libcrypto-shlib-t_pkey.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; ozz-animation/optimized/stream.cc.ll
 ; php/optimized/ir_emit.ll

@@ -30,7 +30,7 @@ func0000000000000018:                   # @func0000000000000018
 	.long	65532                           # 0xfffc
 .LCPI2_1:
 	.long	36                              # 0x24
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsllw	$15, %xmm1, %xmm0

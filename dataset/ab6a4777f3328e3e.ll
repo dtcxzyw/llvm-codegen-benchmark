@@ -1,5 +1,5 @@
 
-; 662 occurrences:
+; 670 occurrences:
 ; abc/optimized/aigObj.c.ll
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/giaSwitch.c.ll
@@ -51,6 +51,11 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/src.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_time_of_impact.cpp.ll
 ; box2d/optimized/b2_world.cpp.ll
@@ -217,7 +222,6 @@
 ; gromacs/optimized/shake.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgl2.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
 ; gromacs/optimized/toppush.cpp.ll
@@ -249,6 +253,7 @@
 ; llama.cpp/optimized/llama.cpp.ll
 ; llama.cpp/optimized/train.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -269,7 +274,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -289,7 +293,6 @@
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
@@ -371,7 +374,6 @@
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/path.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
 ; mitsuba3/optimized/principledthin.cpp.ll
@@ -662,6 +664,12 @@
 ; xgboost/optimized/quantile_obj.cc.ll
 ; xgboost/optimized/regression_obj.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9fdv7qxvc9ek9liffc7407f9x.ll
+; zed-rs/optimized/exru7xor9i4a4ixpzw7x9xk8s.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:

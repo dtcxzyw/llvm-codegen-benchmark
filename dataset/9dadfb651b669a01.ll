@@ -1,5 +1,5 @@
 
-; 911 occurrences:
+; 910 occurrences:
 ; hdf5/optimized/H5C.c.ll
 ; hdf5/optimized/H5Ctag.c.ll
 ; hdf5/optimized/H5Iint.c.ll
@@ -628,7 +628,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -915,7 +914,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 15
-  %4 = xor i32 %3, %1
+  %4 = xor i32 %1, %3
   %5 = add i32 %0, -1
   %6 = and i32 %5, %4
   ret i32 %6
@@ -928,7 +927,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 9
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = add i32 %1, -1
   %6 = and i32 %4, %5
   ret i32 %6

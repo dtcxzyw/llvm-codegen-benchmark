@@ -1,31 +1,31 @@
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	movzwl	%dx, %eax
 	shll	$8, %eax
 	orq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
+	seta	%al
+	retq
+func00000000000000e1:                   # @func00000000000000e1
+	shll	$16, %edx
+	orq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	sete	%al
+	retq
+func00000000000000a1:                   # @func00000000000000a1
+	shlq	$48, %rdx
+	orq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	sete	%al
+	retq
+func00000000000000a4:                   # @func00000000000000a4
+	shlq	$48, %rdx
+	orq	%rsi, %rdx
+	cmpq	%rdx, %rdi
 	setb	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e4:                   # @func00000000000000e4
 	shll	$16, %edx
 	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	sete	%al
-	retq
-func0000000000000051:                   # @func0000000000000051
-	shlq	$48, %rdx
-	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	sete	%al
-	retq
-func0000000000000054:                   # @func0000000000000054
-	shlq	$48, %rdx
-	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	seta	%al
-	retq
-func0000000000000074:                   # @func0000000000000074
-	shll	$16, %edx
-	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	seta	%al
+	cmpq	%rdx, %rdi
+	setb	%al
 	retq

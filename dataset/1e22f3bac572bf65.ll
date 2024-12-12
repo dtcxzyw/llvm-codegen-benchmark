@@ -1,4 +1,19 @@
 
+; 5 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
+; postgres/optimized/gindatapage.ll
+; postgres/optimized/heaptoast.ll
+; redis/optimized/ae.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i64 %0) #0 {
+entry:
+  %1 = udiv i64 %0, 10
+  %2 = trunc i64 %1 to i32
+  %3 = mul i32 %2, -10
+  ret i32 %3
+}
+
 ; 1 occurrences:
 ; gromacs/optimized/surfacearea.cpp.ll
 ; Function Attrs: nounwind
@@ -20,19 +35,6 @@ entry:
   %1 = udiv i64 %0, 12622780800
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = mul nuw nsw i32 %2, 400
-  ret i32 %3
-}
-
-; 3 occurrences:
-; postgres/optimized/gindatapage.ll
-; postgres/optimized/heaptoast.ll
-; redis/optimized/ae.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i64 %0) #0 {
-entry:
-  %1 = udiv i64 %0, 1996
-  %2 = trunc i64 %1 to i32
-  %3 = mul i32 %2, -1996
   ret i32 %3
 }
 

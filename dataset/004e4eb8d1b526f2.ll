@@ -1,5 +1,6 @@
 
-; 29 occurrences:
+; 30 occurrences:
+; boost/optimized/conversion.ll
 ; gromacs/optimized/mdatoms.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -30,7 +31,7 @@
 ; openusd/optimized/topologyDescriptor.cpp.ll
 ; yosys/optimized/wreduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub i64 %0, %1

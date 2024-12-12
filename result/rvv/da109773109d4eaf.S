@@ -16,7 +16,7 @@ func0000000000000002:                   # @func0000000000000002
 	vmacc.vx	v10, a1, v8
 	vror.vi	v8, v10, 2
 	vmsleu.vx	v10, v8, a2
-	vmor.mm	v0, v10, v0
+	vmor.mm	v0, v0, v10
 	ret
 .LCPI1_0:
 	.quad	368934881474191032              # 0x51eb851eb851eb8

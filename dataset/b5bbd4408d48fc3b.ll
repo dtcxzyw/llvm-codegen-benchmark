@@ -23,10 +23,11 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; libevent/optimized/http.c.ll
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i16 %0) #0 {
 entry:

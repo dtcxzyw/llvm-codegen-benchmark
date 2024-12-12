@@ -1,5 +1,5 @@
 
-; 281 occurrences:
+; 263 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/acbMfs.c.ll
@@ -7,14 +7,12 @@
 ; abc/optimized/giaMini.c.ll
 ; abc/optimized/giaScl.c.ll
 ; abc/optimized/trees.c.ll
-; abseil-cpp/optimized/cordz_info.cc.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
-; box2d/optimized/b2_collide_circle.cpp.ll
+; boost/optimized/approximately_equals.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; bullet3/optimized/b3RadixSort32CL.ll
-; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; bullet3/optimized/btMLCPSolver.ll
 ; bullet3/optimized/btMultiBodyMLCPConstraintSolver.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -26,6 +24,7 @@
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
+; diesel-rs/optimized/4dmkc4an6cvf22v6.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; freetype/optimized/raster.c.ll
 ; git/optimized/diffcore-delta.ll
@@ -38,7 +37,6 @@
 ; gromacs/optimized/dcopy.cpp.ll
 ; gromacs/optimized/ddot.cpp.ll
 ; gromacs/optimized/dgemv.cpp.ll
-; gromacs/optimized/dorm2l.cpp.ll
 ; gromacs/optimized/drot.cpp.ll
 ; gromacs/optimized/dswap.cpp.ll
 ; gromacs/optimized/dsymv.cpp.ll
@@ -46,13 +44,11 @@
 ; gromacs/optimized/dtrmv.cpp.ll
 ; gromacs/optimized/fft5d.cpp.ll
 ; gromacs/optimized/gmx_anaeig.cpp.ll
-; gromacs/optimized/gmx_h2order.cpp.ll
 ; gromacs/optimized/pull.cpp.ll
 ; gromacs/optimized/saxpy.cpp.ll
 ; gromacs/optimized/scopy.cpp.ll
 ; gromacs/optimized/sdot.cpp.ll
 ; gromacs/optimized/sgemv.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; gromacs/optimized/srot.cpp.ll
 ; gromacs/optimized/sswap.cpp.ll
 ; gromacs/optimized/ssymv.cpp.ll
@@ -65,7 +61,6 @@
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/uidna.ll
 ; icu/optimized/unistr.ll
-; icu/optimized/utext.ll
 ; jq/optimized/parser.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
 ; libquic/optimized/trees.c.ll
@@ -81,7 +76,6 @@
 ; linux/optimized/hid-lg-g15.ll
 ; linux/optimized/net-sysfs.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/signalfd.ll
 ; linux/optimized/skbuff.ll
@@ -94,6 +88,7 @@
 ; lua/optimized/lstrlib.ll
 ; luau/optimized/lstrlib.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -106,18 +101,12 @@
 ; minetest/optimized/serverenvironment.cpp.ll
 ; nix/optimized/parser-tab.ll
 ; nori/optimized/nanovg.c.ll
-; nori/optimized/textbox.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/tiffinput.cpp.ll
-; openblas/optimized/blas_server.c.ll
 ; openblas/optimized/cblas_drotm.c.ll
 ; openblas/optimized/dgemmt.c.ll
 ; openblas/optimized/dlaqr5.c.ll
-; openblas/optimized/dlarrv.c.ll
 ; openblas/optimized/dlatrs.c.ll
-; openblas/optimized/drotm.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/AKAZE_match.cpp.ll
 ; opencv/optimized/LATCH_match.cpp.ll
 ; opencv/optimized/PnPProblem.cpp.ll
@@ -213,7 +202,6 @@
 ; openjdk/optimized/mlib_ImageConv_16ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
-; openjdk/optimized/symbolTable.ll
 ; openjdk/optimized/upcallLinker_x86_64.ll
 ; openmpi/optimized/hook_comm_method_fns.ll
 ; openmpi/optimized/odls_base_default_fns.ll
@@ -221,12 +209,8 @@
 ; openmpi/optimized/proc.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/spades.cc.ll
-; openssl/optimized/ca_internals_test-bin-ca.ll
-; openssl/optimized/libcrypto-lib-property_parse.ll
 ; openssl/optimized/libcrypto-lib-v3_ncons.ll
-; openssl/optimized/libcrypto-shlib-property_parse.ll
 ; openssl/optimized/libcrypto-shlib-v3_ncons.ll
-; openssl/optimized/openssl-bin-ca.ll
 ; openusd/optimized/aom_scale.c.ll
 ; openusd/optimized/blendShapeQuery.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
@@ -267,12 +251,10 @@
 ; ruby/optimized/strftime.ll
 ; slurm/optimized/dist_tasks.ll
 ; slurm/optimized/port_mgr.ll
-; slurm/optimized/sbatch.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; tev/optimized/ImageViewer.cpp.ll
-; velox/optimized/JsonType.cpp.ll
 ; velox/optimized/NthValue.cpp.ll
 ; velox/optimized/TypeCalculation.yy.cc.ll
 ; velox/optimized/TypeParser.yy.cc.ll

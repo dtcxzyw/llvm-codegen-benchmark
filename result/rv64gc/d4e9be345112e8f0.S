@@ -82,7 +82,7 @@ func000000000000000a:                   # @func000000000000000a
 	fle.s	a0, fa5, fa4
 	ret
 func000000000000000e:                   # @func000000000000000e
-	lui	a0, 260096
+	lui	a0, 258048
 	fmv.w.x	fa5, a0
 	fadd.s	fa5, fa0, fa5
 	feq.s	a0, fa5, fa5

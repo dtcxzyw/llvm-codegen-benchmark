@@ -31,7 +31,7 @@ func000000000000003c:                   # @func000000000000003c
 	sub	a2, a2, a1
 	sh1add	a0, a2, a0
 	ret
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	zext.w	a2, a2
 	sub	a2, a2, a1
 	sh2add	a0, a2, a0

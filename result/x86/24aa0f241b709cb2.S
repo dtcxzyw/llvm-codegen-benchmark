@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testl	%edx, %edx
 	sete	%al
 	xorb	$35, %al
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	movzbl	%al, %eax
 	cmovel	%edi, %eax
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	cmpl	$65536, %edx                    # imm = 0x10000
 	setb	%al
 	shlb	$4, %al

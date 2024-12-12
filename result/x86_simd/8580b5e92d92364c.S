@@ -46,7 +46,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovw2m	%xmm0, %k0
 	vpmovdb	%ymm1, %xmm0
 	vpcmpltub	.LCPI1_0(%rip), %xmm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -77,6 +77,32 @@ func0000000000000018:                   # @func0000000000000018
 	vzeroupper
 	retq
 .LCPI3_0:
+	.byte	5                               # 0x5
+	.byte	5                               # 0x5
+	.byte	5                               # 0x5
+	.byte	5                               # 0x5
+	.byte	5                               # 0x5
+	.byte	5                               # 0x5
+	.byte	5                               # 0x5
+	.byte	5                               # 0x5
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000028:                   # @func0000000000000028
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k0
+	vpmovdb	%ymm1, %xmm0
+	vpcmpltub	.LCPI3_0(%rip), %xmm0, %k1
+	korb	%k1, %k0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
 	.byte	23                              # 0x17
 	.byte	23                              # 0x17
 	.byte	23                              # 0x17
@@ -97,7 +123,17 @@ func0000000000000010:                   # @func0000000000000010
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpmovdb	%ymm1, %xmm0
-	vpcmpnleub	.LCPI3_0(%rip), %xmm0, %k1
+	vpcmpnleub	.LCPI4_0(%rip), %xmm0, %k1
+	korb	%k0, %k1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
+	.long	248                             # 0xf8
+func0000000000000030:                   # @func0000000000000030
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k0
+	vptestmd	.LCPI5_0(%rip){1to8}, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

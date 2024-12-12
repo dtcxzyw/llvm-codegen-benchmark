@@ -188,8 +188,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; cmake/optimized/archive_read_support_format_rar5.c.ll
+; 1 occurrences:
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i32 %1) #0 {

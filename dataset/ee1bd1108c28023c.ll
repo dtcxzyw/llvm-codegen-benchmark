@@ -1,12 +1,12 @@
 
 ; 1 occurrences:
-; linux/optimized/readdir.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = icmp eq i64 %0, 0
-  %5 = select i1 %4, i32 %3, i32 -14
+  %4 = icmp eq i64 %0, 5
+  %5 = select i1 %4, i32 %3, i32 0
   ret i32 %5
 }
 
@@ -16,7 +16,7 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp eq i64 %0, 1

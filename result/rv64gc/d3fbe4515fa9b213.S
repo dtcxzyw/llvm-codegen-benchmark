@@ -55,7 +55,7 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a0, %hi(.LCPI6_0)
 	fld	fa5, %lo(.LCPI6_0)(a0)
 	fdiv.d	fa5, fa1, fa5
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	ret
 .LCPI7_0:
 	.quad	0x400921fb54442d18              # double 3.1415926535897931
@@ -63,6 +63,6 @@ func0000000000000007:                   # @func0000000000000007
 	lui	a0, %hi(.LCPI7_0)
 	fld	fa5, %lo(.LCPI7_0)(a0)
 	fdiv.d	fa5, fa1, fa5
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret

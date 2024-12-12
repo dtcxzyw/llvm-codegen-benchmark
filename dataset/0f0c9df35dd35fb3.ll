@@ -3,12 +3,12 @@
 ; gromacs/optimized/abstractdata.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000079(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f9(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 4294967295
   %5 = add nuw nsw i64 %1, 1
-  %6 = icmp uge i64 %5, %4
+  %6 = icmp samesign uge i64 %5, %4
   %7 = select i1 %6, i1 true, i1 %0
   ret i1 %7
 }
@@ -21,12 +21,12 @@ entry:
 ; hermes/optimized/RegExp.cpp.ll
 ; hermes/optimized/hermes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 4294967295
   %5 = add nuw nsw i64 %1, 32
-  %6 = icmp ugt i64 %5, %4
+  %6 = icmp samesign ugt i64 %5, %4
   %7 = select i1 %6, i1 true, i1 %0
   ret i1 %7
 }
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/GlobalsModRef.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 4294967295

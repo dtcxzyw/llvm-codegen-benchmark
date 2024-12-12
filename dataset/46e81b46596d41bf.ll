@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cca(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000318a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; cpython/optimized/preconfig.ll
 ; wolfssl/optimized/server.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c1c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000302c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/levmarq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000424(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp eq i32 %1, 1

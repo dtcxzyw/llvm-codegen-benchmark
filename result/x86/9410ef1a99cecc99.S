@@ -1,11 +1,11 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	shrl	$24, %esi
 	shrl	$24, %edi
 	xorl	%eax, %eax
 	cmpl	%esi, %edi
 	seta	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	shrl	%esi
 	shrl	%edi
 	xorl	%eax, %eax

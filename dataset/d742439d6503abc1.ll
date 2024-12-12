@@ -12,9 +12,9 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
-  %2 = fneg double %1
-  %3 = fmul double %2, %1
-  %4 = fmul double %3, %0
+  %2 = fmul double %1, %1
+  %3 = fneg double %0
+  %4 = fmul double %2, %3
   ret double %4
 }
 

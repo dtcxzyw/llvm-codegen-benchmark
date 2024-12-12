@@ -1,13 +1,7 @@
 
-%"struct.Assimp::MDL::Vertex_MDL4.2716875" = type { [3 x i16], i8, i8 }
+%"struct.Assimp::MDL::Vertex_MDL4.2829408" = type { [3 x i16], i8, i8 }
 
-; 40 occurrences:
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_2_3_d.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; 41 occurrences:
 ; coreutils-rs/optimized/29nuy7845ur4qr3s.ll
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
 ; coreutils-rs/optimized/592w9u2os9g8yndg.ll
@@ -40,35 +34,54 @@
 ; rust-analyzer-rs/optimized/635ry91nhs2ocdh.ll
 ; rust-analyzer-rs/optimized/v2z6ecwiine657n.ll
 ; tree-sitter-rs/optimized/4x741xowia4bwziy.ll
+; turborepo-rs/optimized/3l7xg3ikfppult5o2lclnyys7.ll
 ; typst-rs/optimized/31vebs4z0lpwpjgn.ll
 ; typst-rs/optimized/3gfld5k3k43fgjtj.ll
+; zed-rs/optimized/2gu8aea2dmgqxbormk5tspsrx.ll
+; zed-rs/optimized/2jcakdf65g6ofzlv4sxvfz01e.ll
+; zed-rs/optimized/39agu11sr34f1pihhhnx3cpe2.ll
+; zed-rs/optimized/6vfs8ti0m45cvpqthx5jydp5p.ll
+; zed-rs/optimized/84i9jtf3ksrb37ur8uqpg2f86.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, -24
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -24
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000006e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 12
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 36
-  %6 = getelementptr nusw %"struct.Assimp::MDL::Vertex_MDL4.2716875", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 36
+  %6 = getelementptr nusw %"struct.Assimp::MDL::Vertex_MDL4.2829408", ptr %5, i64 %0
   ret ptr %6
 }
 
-; 5 occurrences:
+; 1 occurrences:
+; assimp/optimized/MDLLoader.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006f(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %2, 12
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 36
+  %6 = getelementptr nusw nuw %"struct.Assimp::MDL::Vertex_MDL4.2829408", ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 6 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
+; linux/optimized/rc80211_minstrel_ht.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; Function Attrs: nounwind
@@ -95,6 +108,62 @@ entry:
   ret ptr %6
 }
 
+; 8 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; gromacs/optimized/grid.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000ff(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, 488
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 59536
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fc(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, 488
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 59536
+  %6 = getelementptr i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000c3(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, 488
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 59536
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 2 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; openspiel/optimized/euchre.cc.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000cf(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, 122
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 14884
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
 ; 1 occurrences:
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; Function Attrs: nounwind
@@ -107,49 +176,41 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
-; gromacs/optimized/grid.cpp.ll
-; pybind11/optimized/test_stl_binders.cpp.ll
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000006a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = mul nuw nsw i64 %2, 96
+  %3 = mul nsw i64 %2, -2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 48
-  %6 = getelementptr nusw float, ptr %5, i64 %0
+  %5 = getelementptr nusw i8, ptr %4, i64 -4
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 10 occurrences:
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_2_3_d.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; 2 occurrences:
 ; gromacs/optimized/forcetable.cpp.ll
-; gromacs/optimized/orires.cpp.ll
 ; gromacs/optimized/wall.cpp.ll
-; opencv/optimized/epnp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000002f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 48
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 16
-  %6 = getelementptr nusw float, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
+  %6 = getelementptr nusw nuw float, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 1 occurrences:
-; openspiel/optimized/euchre.cc.ll
+; 2 occurrences:
+; gromacs/optimized/orires.cpp.ll
+; opencv/optimized/epnp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000bf(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = mul nuw nsw i64 %2, 20
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 32
-  %6 = getelementptr nusw float, ptr %5, i64 %0
+  %3 = mul nuw i64 %2, 48
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 12
+  %6 = getelementptr nusw nuw float, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -161,12 +222,46 @@ entry:
 ; ceres/optimized/schur_eliminator_2_3_d.cc.ll
 ; ceres/optimized/schur_eliminator_3_3_3.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000002c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 24
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 24
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 24
   %6 = getelementptr i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 6 occurrences:
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002e(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %2, 24
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 24
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 6 occurrences:
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %2, 24
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 24
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -180,6 +275,18 @@ entry:
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 512
   %6 = getelementptr i16, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; pybind11/optimized/test_stl_binders.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fe(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, 24
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 24
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 

@@ -2,6 +2,10 @@ func000000000000002e:                   # @func000000000000002e
 	orq	$4, %rsi
 	leaq	-8(%rdi,%rsi), %rax
 	retq
+func000000000000002f:                   # @func000000000000002f
+	orq	$2, %rsi
+	leaq	-4(%rdi,%rsi), %rax
+	retq
 func000000000000000e:                   # @func000000000000000e
 	orq	$4, %rsi
 	andq	$-4, %rsi

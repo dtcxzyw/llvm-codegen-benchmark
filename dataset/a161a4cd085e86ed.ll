@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
@@ -15,7 +15,6 @@
 ; minetest/optimized/mg_ore.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
@@ -29,7 +28,7 @@ entry:
   ret i32 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
@@ -41,7 +40,6 @@ entry:
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll

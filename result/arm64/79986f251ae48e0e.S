@@ -1,11 +1,7 @@
 func0000000000000500:                   // @func0000000000000500
 // %bb.0:                               // %entry
-	cmge	v2.4s, v2.4s, #0
-	cmge	v1.4s, v1.4s, #0
-	uzp1	v1.8h, v1.8h, v2.8h
-	sub	v0.8h, v0.8h, v1.8h
-	movi	v1.8b, #48
-	xtn	v0.8b, v0.8h
-	add	v0.8b, v0.8b, v1.8b
+	mvn	w8, w1
+	add	w8, w0, w8, lsr #31
+	add	w0, w8, #48
 	ret
                                         // -- End function

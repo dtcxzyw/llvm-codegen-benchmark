@@ -11,13 +11,13 @@
 ; linux/optimized/mprotect.ll
 ; linux/optimized/nf_conntrack_core.ll
 ; linux/optimized/perfmon.ll
-; linux/optimized/process_keys.ll
 ; linux/optimized/task_mmu.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprClassification.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; openjdk/optimized/barrierSetC2.ll
@@ -36,7 +36,7 @@
 ; spike/optimized/isa_parser.ll
 ; spike/optimized/mmu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp eq i64 %2, 0
@@ -64,7 +64,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/candump_scanner.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
   %3 = icmp eq i64 %2, 27
@@ -149,7 +149,7 @@ entry:
 ; spike/optimized/f64_to_ui32_r_minMag.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000302(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -65521
   %3 = icmp ne i64 %2, 0
@@ -173,7 +173,7 @@ entry:
 ; spike/optimized/kwmmul.ll
 ; spike/optimized/kwmmul_u.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000318(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65535
   %3 = icmp ne i64 %2, 32768
@@ -188,10 +188,10 @@ entry:
 ; entt/optimized/sparse_set.cpp.ll
 ; entt/optimized/storage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000502(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2305843009213693951
-  %3 = icmp ult i64 %2, 7
+  %3 = icmp samesign ult i64 %2, 7
   %4 = and i64 %0, 2305843009213693948
   %5 = icmp eq i64 %4, 0
   %6 = or i1 %5, %3

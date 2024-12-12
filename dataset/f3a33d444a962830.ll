@@ -1,9 +1,10 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; coreutils-rs/optimized/53yhdh06nqcwsoo6.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; linux/optimized/dmar.ll
 ; linux/optimized/intel_pstate.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
@@ -47,7 +48,7 @@ entry:
   %2 = and i16 %1, -32768
   %3 = zext i16 %2 to i64
   %4 = shl nuw i64 %3, 48
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

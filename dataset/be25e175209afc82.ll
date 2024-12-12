@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; c3c/optimized/sema_stmts.c.ll
 ; clap-rs/optimized/1zp92zvstj9lufi9.ll
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
@@ -17,8 +17,9 @@
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
 ; yosys/optimized/register.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000098(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i32 %0, 0
@@ -26,9 +27,8 @@ entry:
   ret i1 %4
 }
 
-; 97 occurrences:
+; 96 occurrences:
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
-; clamav/optimized/ui.cpp.ll
 ; cmake/optimized/cmComputeLinkInformation.cxx.ll
 ; coreutils-rs/optimized/1487bf2zeluccyme.ll
 ; cvc5/optimized/theory_arrays.cpp.ll
@@ -105,8 +105,6 @@ entry:
 ; openjdk/optimized/jvmtiTrace.ll
 ; openmpi/optimized/pmix_iof.ll
 ; openspiel/optimized/chess_board.cc.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
 ; pocketpy/optimized/error.cpp.ll
 ; postgres/optimized/common.ll
 ; postgres/optimized/execExprInterp.ll
@@ -115,6 +113,7 @@ entry:
 ; postgres/optimized/subscriptioncmds.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; proxygen/optimized/HTTPConnectorWithFizz.cpp.ll
+; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/ui_input-linux.c.ll
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/nfa.cc.ll
@@ -124,6 +123,7 @@ entry:
 ; yosys/optimized/sim.ll
 ; z3/optimized/bv_solver.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
@@ -270,16 +270,16 @@ entry:
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; openjdk/optimized/signals_posix.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
 ; postgres/optimized/jsonfuncs.ll
 ; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
 ; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
 ; slurm/optimized/job_container_tmpfs.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; z3/optimized/bound_propagator.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000082(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i32 %0, 0
@@ -287,16 +287,13 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 10 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/rich_parameters.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
-; stockfish/optimized/search.ll
 ; verilator/optimized/V3EmitCConstPool.cpp.ll
 ; verilator/optimized/V3EmitCHeaders.cpp.ll
 ; verilator/optimized/V3EmitCImp.cpp.ll
@@ -313,7 +310,7 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/lt4f7k28xei9pok.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ult i32 %0, -2
@@ -324,10 +321,22 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/kahalesmilesection.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp slt i32 %0, 1
+  %4 = or i1 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; oiio/optimized/imagecache.cpp.ll
+; stockfish/optimized/search.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i32 %0, i8 %1) #0 {
+entry:
+  %2 = trunc i8 %1 to i1
+  %3 = icmp samesign ugt i32 %0, 10
   %4 = or i1 %3, %2
   ret i1 %4
 }
@@ -337,8 +346,8 @@ entry:
 ; hyperscan/optimized/ng_fuzzy.cpp.ll
 ; icu/optimized/ucnv_ct.ll
 ; llvm/optimized/SemaChecking.cpp.ll
-; postgres/optimized/varsup.ll
 ; raylib/optimized/rcore.c.ll
+; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
 entry:
@@ -351,7 +360,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/select.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000094(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp sgt i32 %0, -1
@@ -362,10 +371,10 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/register.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000b0(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
-  %3 = icmp ugt i32 %0, 1
+  %3 = icmp samesign ugt i32 %0, 1
   %4 = or i1 %3, %2
   ret i1 %4
 }

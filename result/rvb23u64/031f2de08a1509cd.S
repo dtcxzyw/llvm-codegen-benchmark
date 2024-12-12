@@ -1,17 +1,17 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	sh3add	a1, a2, a1
 	srliw	a1, a1, 6
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000003b:                   # @func000000000000003b
 	slli	a2, a2, 7
 	add	a1, a1, a2
 	srliw	a1, a1, 1
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func000000000000005b:                   # @func000000000000005b
 	sh1add	a1, a2, a1
 	srliw	a1, a1, 6
 	slli	a1, a1, 3
@@ -26,7 +26,7 @@ func0000000000000000:                   # @func0000000000000000
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000002b:                   # @func000000000000002b
 	slli	a2, a2, 13
 	add	a1, a1, a2
 	slli	a1, a1, 36

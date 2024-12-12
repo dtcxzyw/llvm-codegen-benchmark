@@ -1,22 +1,22 @@
 
-%struct._ir_insn.2676282 = type { %struct.anon.2676283, %union.anon.5.2676284 }
-%struct.anon.2676283 = type { %union.anon.2676285, %union.anon.4.2676286 }
-%union.anon.2676285 = type { i32 }
-%union.anon.4.2676286 = type { i32 }
-%union.anon.5.2676284 = type { %union._ir_val.2676287 }
-%union._ir_val.2676287 = type { double }
-%"struct.facebook::velox::StringView.2682901" = type { i32, [4 x i8], %union.anon.51.2682902 }
-%union.anon.51.2682902 = type { ptr }
+%struct._ir_insn.2789327 = type { %struct.anon.2789328, %union.anon.5.2789329 }
+%struct.anon.2789328 = type { %union.anon.2789330, %union.anon.4.2789331 }
+%union.anon.2789330 = type { i32 }
+%union.anon.4.2789331 = type { i32 }
+%union.anon.5.2789329 = type { %union._ir_val.2789332 }
+%union._ir_val.2789332 = type { double }
+%"struct.facebook::velox::StringView.2795660" = type { i32, [4 x i8], %union.anon.51.2795661 }
+%union.anon.51.2795661 = type { ptr }
 
 ; 1 occurrences:
 ; qemu/optimized/fdt_sw.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -63,11 +63,11 @@ entry:
 ; velox/optimized/Split.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct._ir_insn.2676282, ptr %0, i64 %4, i32 0, i32 1
+  %5 = getelementptr %struct._ir_insn.2789327, ptr %0, i64 %4, i32 0, i32 1
   ret ptr %5
 }
 
@@ -80,7 +80,7 @@ define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"struct.facebook::velox::StringView.2682901", ptr %0, i64 %4, i32 2
+  %5 = getelementptr %"struct.facebook::velox::StringView.2795660", ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

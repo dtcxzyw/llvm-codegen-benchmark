@@ -15,14 +15,15 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; assimp/optimized/unzip.c.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
   %4 = sub i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

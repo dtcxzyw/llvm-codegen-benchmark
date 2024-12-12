@@ -1,4 +1,4 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	shrl	$23, %edx
 	addb	$-94, %dl
 	shlxl	%edx, %esi, %eax
@@ -6,7 +6,7 @@ func000000000000004c:                   # @func000000000000004c
 	setno	%al
 	orb	%dil, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	shrl	$23, %edx
 	addb	$-94, %dl
 	shlxl	%edx, %esi, %eax

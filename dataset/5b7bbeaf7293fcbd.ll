@@ -1,8 +1,7 @@
 
-; 165 occurrences:
+; 160 occurrences:
 ; c3c/optimized/types.c.ll
 ; casadi/optimized/cvodes.c.ll
-; casadi/optimized/kinsol_spgmr.c.ll
 ; chibicc/optimized/type.ll
 ; clamav/optimized/matcher.c.ll
 ; cmake/optimized/archive_string.c.ll
@@ -128,7 +127,6 @@
 ; openjdk/optimized/methodHandles.ll
 ; openmpi/optimized/bfrop_v12.ll
 ; openmpi/optimized/hwloc_base_util.ll
-; openmpi/optimized/libmpi_c_profile_la-type_match_size.ll
 ; openmpi/optimized/libprrte_la-hwloc_base_util.ll
 ; openmpi/optimized/ptype_match_size_f.ll
 ; openspiel/optimized/dark_hex.cc.ll
@@ -143,8 +141,6 @@
 ; postgres/optimized/unicode_norm_shlib.ll
 ; postgres/optimized/unicode_norm_srv.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; qemu/optimized/hw_pci_pci.c.ll
 ; qemu/optimized/optimize.c.ll
@@ -154,8 +150,6 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; wireshark/optimized/file-jpeg.c.ll
-; wireshark/optimized/msg_ucd.c.ll
-; wireshark/optimized/packet-cmip.c.ll
 ; wireshark/optimized/packet-diameter.c.ll
 ; wireshark/optimized/packet-dtls.c.ll
 ; wireshark/optimized/packet-moldudp.c.ll
@@ -164,6 +158,7 @@
 ; wireshark/optimized/packet-rtps.c.ll
 ; wolfssl/optimized/hmac.c.ll
 ; yalantinglibs/optimized/FieldGenerator.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i32 %0) #0 {
@@ -173,11 +168,12 @@ entry:
   ret i16 %2
 }
 
-; 29 occurrences:
+; 31 occurrences:
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/exthdrs.ll
+; linux/optimized/ff-memless.ll
 ; linux/optimized/i2c-core-acpi.ll
 ; linux/optimized/intel_dsi_vbt.ll
 ; linux/optimized/intel_guc_submission.ll
@@ -202,6 +198,7 @@ entry:
 ; wireshark/optimized/packet-sccp.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-wai.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i32 %0) #0 {
@@ -211,7 +208,7 @@ entry:
   ret i16 %2
 }
 
-; 69 occurrences:
+; 70 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/ivyFastMap.c.ll
 ; abc/optimized/kitDsd.c.ll
@@ -244,6 +241,7 @@ entry:
 ; icu/optimized/uniset.ll
 ; icu/optimized/xmlparser.ll
 ; imgui/optimized/imgui.cpp.ll
+; libevent/optimized/evmap.c.ll
 ; libquic/optimized/trees.c.ll
 ; linux/optimized/deftree.ll
 ; linux/optimized/e100.ll
@@ -289,7 +287,7 @@ entry:
   ret i16 %2
 }
 
-; 88 occurrences:
+; 86 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -319,7 +317,6 @@ entry:
 ; linux/optimized/ip_tunnel_core.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/mpparse.ll
 ; linux/optimized/nlattr.ll
 ; linux/optimized/output_core.ll
@@ -375,7 +372,6 @@ entry:
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-tls.c.ll
-; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/packet-wsmp.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
@@ -429,9 +425,10 @@ entry:
   ret i16 %2
 }
 
-; 33 occurrences:
+; 34 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/kitDsd.c.ll
+; boost/optimized/init_from_settings.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/cf-socket.c.ll
@@ -444,12 +441,12 @@ entry:
 ; linux/optimized/netdev.ll
 ; linux/optimized/timeconv.ll
 ; linux/optimized/xfrm_user.ll
+; llvm/optimized/DbiStreamBuilder.cpp.ll
 ; postgres/optimized/gist.ll
 ; postgres/optimized/gistbuild.ll
 ; postgres/optimized/parse_relation.ll
 ; postgres/optimized/tablecmds.ll
 ; qemu/optimized/hw_ide_core.c.ll
-; qemu/optimized/i2c.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rmodels.c.ll
 ; sqlite/optimized/sqlite3.ll
@@ -471,11 +468,10 @@ entry:
   ret i16 %2
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; memcached/optimized/testapp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
@@ -548,15 +544,16 @@ entry:
   ret i16 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; hyperscan/optimized/report_manager.cpp.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; linux/optimized/pci.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i16
-  %2 = add i16 %1, -9
+  %2 = add i16 %1, 1
   ret i16 %2
 }
 

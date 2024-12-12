@@ -1,31 +1,18 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	cmeq	v2.4s, v2.4s, v3.4s
-	mov	x8, #-8193                      // =0xffffffffffffdfff
-	dup	v4.2d, x8
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	bif	v1.16b, v2.16b, v4.16b
-	bif	v0.16b, v3.16b, v4.16b
+	cmp	w1, w2
+	cset	w8, eq
+	bfi	x0, x8, #13, #1
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	cmeq	v2.4s, v2.4s, v3.4s
+	mov	w9, #2048                       // =0x800
+	cmp	w1, w2
 	mov	w8, #33554432                   // =0x2000000
-	dup	v3.2d, x8
-	mov	w8, #2048                       // =0x800
-	movk	w8, #512, lsl #16
-	sshll2	v4.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	dup	v5.2d, x8
-	mov	x8, #-1040187393                // =0xffffffffc1ffffff
-	dup	v6.2d, x8
-	bsl	v2.16b, v5.16b, v3.16b
-	bit	v3.16b, v5.16b, v4.16b
-	and	v0.16b, v0.16b, v6.16b
-	and	v1.16b, v1.16b, v6.16b
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
+	movk	w9, #512, lsl #16
+	csel	x8, x9, x8, eq
+	and	x9, x0, #0xffffffffc1ffffff
+	orr	x0, x9, x8
 	ret
                                         // -- End function

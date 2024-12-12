@@ -3,7 +3,7 @@
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000376(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000006e6(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nuw nsw i32 %1, 27
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ixiatrailer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add i32 %1, 2
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-eap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add i32 %1, 2

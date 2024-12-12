@@ -51,6 +51,18 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; rust-analyzer-rs/optimized/wcknfmhk1hydgx3.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000098(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = trunc nuw i8 %2 to i1
+  %4 = icmp ne i32 %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
 ; 42 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -138,6 +150,17 @@ define i1 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = icmp ult i32 %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; postgres/optimized/jsonfuncs.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000096(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = trunc nuw i8 %2 to i1
+  %4 = icmp sge i32 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
 }

@@ -1,6 +1,8 @@
 
-; 25 occurrences:
+; 27 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; hermes/optimized/APInt.cpp.ll
 ; lief/optimized/bignum.c.ll
 ; linux/optimized/init_64.ll
@@ -33,7 +35,8 @@ entry:
   ret i64 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/to_chars.ll
 ; entt/optimized/dense_map.cpp.ll
 ; entt/optimized/dense_set.cpp.ll
 ; postgres/optimized/pgbench.ll
@@ -53,8 +56,7 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
-; linux/optimized/gso.ll
+; 5 occurrences:
 ; linux/optimized/skbuff.ll
 ; linux/optimized/sock.ll
 ; linux/optimized/tcp_offload.ll

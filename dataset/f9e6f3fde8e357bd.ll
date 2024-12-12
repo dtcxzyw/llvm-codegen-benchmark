@@ -1,5 +1,5 @@
 
-; 344 occurrences:
+; 351 occurrences:
 ; abc/optimized/System.cpp.ll
 ; abc/optimized/System2.cpp.ll
 ; abc/optimized/abcIf.c.ll
@@ -34,6 +34,17 @@
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; brotli/optimized/encode.c.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/cvodes.c.ll
@@ -48,7 +59,6 @@
 ; coreutils-rs/optimized/3ntjj58b904wujzh.ll
 ; cpython/optimized/cmathmodule.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
-; darktable/optimized/darkroom.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_exposure.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
@@ -106,7 +116,6 @@
 ; ipopt/optimized/IpRestoIpoptNLP.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; libwebp/optimized/picture_psnr_enc.c.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
@@ -142,8 +151,6 @@
 ; openblas/optimized/dlasd5.c.ll
 ; openblas/optimized/dlasd7.c.ll
 ; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dtgsna.c.ll
-; openblas/optimized/parameter.c.ll
 ; opencv/optimized/ap3p.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
 ; opencv/optimized/ccalib.cpp.ll

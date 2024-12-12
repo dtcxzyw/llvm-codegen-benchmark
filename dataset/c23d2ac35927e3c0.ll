@@ -37,6 +37,7 @@
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/LazyValueInfo.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/ValueLattice.cpp.ll
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
@@ -47,7 +48,6 @@
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
-; qemu/optimized/hw_char_sifive_uart.c.ll
 ; ripgrep-rs/optimized/2425miidforqaenw.ll
 ; rust-analyzer-rs/optimized/2jyyuxshs9vnz9u0.ll
 ; velox/optimized/ArraySum.cpp.ll

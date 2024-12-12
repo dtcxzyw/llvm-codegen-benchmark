@@ -74,19 +74,18 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; hwloc/optimized/bitmap.ll
 ; hwloc/optimized/cpukinds.ll
 ; hwloc/optimized/topology-x86.ll
-; linux/optimized/fib_trie.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 2
-  %3 = select i1 %2, i32 512, i32 0
-  %4 = or disjoint i32 %3, 2
+  %2 = icmp ult i32 %1, 65536
+  %3 = select i1 %2, i32 0, i32 16
+  %4 = or disjoint i32 %3, 8
   %5 = select i1 %0, i32 %3, i32 %4
   ret i32 %5
 }

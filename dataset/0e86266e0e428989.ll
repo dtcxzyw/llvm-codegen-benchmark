@@ -104,7 +104,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 2047
   %4 = add nsw i32 %3, -1075
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = sub nsw i32 11, %5
   ret i32 %6
 }

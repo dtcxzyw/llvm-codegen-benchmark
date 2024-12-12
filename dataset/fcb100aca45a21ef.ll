@@ -1,7 +1,6 @@
 
-; 231 occurrences:
+; 234 occurrences:
 ; abc/optimized/giaEmbed.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTime.c.ll
 ; assimp/optimized/TextureTransform.cpp.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
@@ -68,6 +67,10 @@
 ; lightgbm/optimized/dcg_calculator.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll

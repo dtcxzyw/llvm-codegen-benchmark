@@ -85,6 +85,14 @@ func000000000000002c:                   # @func000000000000002c
 	sh1add	a0, a1, a0
 	addiw	a0, a0, 24
 	ret
+func0000000000000021:                   # @func0000000000000021
+	sh1add	a0, a1, a0
+	addiw	a0, a0, -28
+	ret
+func0000000000000025:                   # @func0000000000000025
+	sh1add	a0, a1, a0
+	addiw	a0, a0, -28
+	ret
 func0000000000000034:                   # @func0000000000000034
 	sh1add	a0, a1, a0
 	addiw	a0, a0, 1
@@ -122,8 +130,4 @@ func0000000000000032:                   # @func0000000000000032
 func0000000000000038:                   # @func0000000000000038
 	sh1add	a0, a1, a0
 	addiw	a0, a0, 1
-	ret
-func0000000000000001:                   # @func0000000000000001
-	sh1add	a0, a1, a0
-	addiw	a0, a0, -8
 	ret

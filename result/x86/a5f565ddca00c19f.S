@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%esi, %ecx
 	xorl	%eax, %eax
 	movabsq	$-9223372036854775752, %rdx     # imm = 0x8000000000000038
@@ -16,7 +16,7 @@ func0000000000000006:                   # @func0000000000000006
 	sarq	$63, %rax
 	andl	%esi, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movq	%rdi, %rax
 	sarq	$63, %rax
 	andl	%esi, %eax

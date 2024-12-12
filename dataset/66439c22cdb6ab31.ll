@@ -7,7 +7,7 @@
 define i1 @func000000000000000c(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -17,17 +17,28 @@ entry:
 define i1 @func000000000000000b(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp sge i16 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %1, %2
   %4 = xor i1 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = icmp ult i16 %1, %2
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -51,7 +62,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -61,7 +72,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp sgt i16 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 

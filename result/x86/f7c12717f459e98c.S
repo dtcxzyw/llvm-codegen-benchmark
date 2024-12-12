@@ -8,12 +8,12 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	xorb	%sil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	cmpb	$28, %dil
 	sete	%al
 	xorb	%sil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	testb	%dil, %dil
 	setne	%al
 	xorb	%sil, %al
@@ -38,7 +38,7 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	xorb	%sil, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	cmpb	$10, %dil
 	setb	%al
 	xorb	%sil, %al

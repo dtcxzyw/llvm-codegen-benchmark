@@ -3,7 +3,7 @@
 ; lightgbm/optimized/bin.cpp.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0) #0 {
+define i1 @func000000000000010a(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 63
   %2 = lshr i64 %1, 6
@@ -59,7 +59,7 @@ entry:
 ; qemu/optimized/hw_scsi_esp-pci.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0) #0 {
+define i1 @func0000000000000301(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 17179869120
   %2 = lshr i64 %1, 2
@@ -72,7 +72,7 @@ entry:
 ; linux/optimized/posix_acl.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
+define i1 @func0000000000000081(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 34359734268
   %2 = lshr exact i64 %1, 3
@@ -84,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0) #0 {
+define i1 @func0000000000000308(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 17179869172
   %2 = lshr i64 %1, 2
@@ -110,7 +110,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/optimize_temp_vars_5.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i64 %0) #0 {
+define i1 @func000000000000034a(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 15
   %2 = lshr i64 %1, 4
@@ -125,7 +125,7 @@ entry:
 ; linux/optimized/i2c-i801.ll
 ; postgres/optimized/tsgistidx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i64 %0) #0 {
+define i1 @func000000000000030a(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 34359738364
   %2 = lshr i64 %1, 3
@@ -137,19 +137,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/i915_gem_context.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c8(i64 %0) #0 {
-entry:
-  %1 = add nuw nsw i64 %0, 17179869176
-  %2 = lshr exact i64 %1, 2
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, 64
-  ret i1 %4
-}
-
-; 1 occurrences:
-; linux/optimized/i915_gem_context.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001c1(i64 %0) #0 {
+define i1 @func0000000000000381(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 17179869176
   %2 = lshr exact i64 %1, 2
@@ -161,7 +149,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/posix_acl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0) #0 {
+define i1 @func0000000000000086(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 34359738364
   %2 = and i64 %1, 17179869184
@@ -169,23 +157,11 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
-; linux/optimized/scm.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
-entry:
-  %1 = add i64 %0, 17179869168
-  %2 = lshr i64 %1, 2
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, 253
-  ret i1 %4
-}
-
 ; 2 occurrences:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0) #0 {
+define i1 @func0000000000000201(i64 %0) #0 {
 entry:
   %1 = add nuw i64 %0, 15
   %2 = lshr i64 %1, 8
@@ -198,7 +174,7 @@ entry:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0) #0 {
+define i1 @func0000000000000208(i64 %0) #0 {
 entry:
   %1 = add nuw i64 %0, 15
   %2 = and i64 %1, 1099494850560
@@ -209,7 +185,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/picture_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0) #0 {
+define i1 @func0000000000000106(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 1
   %2 = lshr i64 %1, 1
@@ -222,7 +198,7 @@ entry:
 ; libwebp/optimized/rescaler.c.ll
 ; libwebp/optimized/rescaler_sse2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000012a(i64 %0) #0 {
+define i1 @func000000000000024a(i64 %0) #0 {
 entry:
   %1 = add nuw i64 %0, 2147483648
   %2 = lshr i64 %1, 32

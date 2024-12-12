@@ -1,6 +1,5 @@
 
-; 17 occurrences:
-; assimp/optimized/BlenderModifier.cpp.ll
+; 16 occurrences:
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; bullet3/optimized/btInternalEdgeUtility.ll
 ; darktable/optimized/darkroom.c.ll
@@ -31,9 +30,9 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define float @func0000000000000004(float %0, i32 %1) #0 {
+define float @func0000000000000014(float %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 1024
+  %2 = icmp samesign ult i32 %1, 1024
   %3 = select i1 %2, float 1.600000e+01, float 2.560000e+02
   %4 = fmul float %3, %0
   ret float %4

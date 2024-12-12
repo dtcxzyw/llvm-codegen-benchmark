@@ -17,7 +17,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0) #0 {
+define i1 @func00000000000000a1(i64 %0) #0 {
 entry:
   %.fr = freeze i64 %0
   %1 = urem i64 %.fr, 10
@@ -29,11 +29,11 @@ entry:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0) #0 {
+define i1 @func00000000000000a6(i64 %0) #0 {
 entry:
   %.fr = freeze i64 %0
   %1 = urem i64 %.fr, 60
-  %2 = icmp ult i64 %1, 10
+  %2 = icmp samesign ult i64 %1, 10
   ret i1 %2
 }
 
@@ -45,7 +45,7 @@ define i1 @func0000000000000006(i64 %0) #0 {
 entry:
   %.fr = freeze i64 %0
   %1 = urem i64 %.fr, 10000
-  %2 = icmp ult i64 %1, 5000
+  %2 = icmp samesign ult i64 %1, 5000
   ret i1 %2
 }
 
@@ -53,18 +53,18 @@ entry:
 ; graphviz/optimized/sfcvt.c.ll
 ; graphviz/optimized/sfprint.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0) #0 {
+define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %.fr = freeze i64 %0
   %1 = urem i64 %.fr, 10000
-  %2 = icmp ult i64 %1, 7000
+  %2 = icmp samesign ult i64 %1, 7000
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
+define i1 @func0000000000000081(i64 %0) #0 {
 entry:
   %.fr = freeze i64 %0
   %1 = urem i64 %.fr, 19

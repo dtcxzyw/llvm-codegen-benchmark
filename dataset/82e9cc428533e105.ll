@@ -1,8 +1,11 @@
 
-; 86 occurrences:
+; 88 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/get_distance_measure.ll
 ; cvc5/optimized/Solver.cc.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -75,7 +78,6 @@
 ; redis/optimized/hyperloglog.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wireshark/optimized/packet-gsm_a_common.c.ll
-; wireshark/optimized/packet-lcsap.c.ll
 ; wireshark/optimized/packet-lpp.c.ll
 ; wireshark/optimized/packet-ulp.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

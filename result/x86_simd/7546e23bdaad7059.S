@@ -1,16 +1,8 @@
-.LCPI0_0:
-	.short	999                             # 0x3e7
-	.short	999                             # 0x3e7
-	.short	999                             # 0x3e7
-	.short	999                             # 0x3e7
-	.short	999                             # 0x3e7
-	.short	999                             # 0x3e7
-	.short	999                             # 0x3e7
-	.short	999                             # 0x3e7
 func0000000000000034:                   # @func0000000000000034
 	vpsubd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
-	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
@@ -29,14 +21,14 @@ func0000000000000014:                   # @func0000000000000014
 	vzeroupper
 	retq
 .LCPI2_0:
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
+	.short	4800                            # 0x12c0
+	.short	4800                            # 0x12c0
+	.short	4800                            # 0x12c0
+	.short	4800                            # 0x12c0
+	.short	4800                            # 0x12c0
+	.short	4800                            # 0x12c0
+	.short	4800                            # 0x12c0
+	.short	4800                            # 0x12c0
 func0000000000000000:                   # @func0000000000000000
 	vpsubd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -68,7 +60,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq

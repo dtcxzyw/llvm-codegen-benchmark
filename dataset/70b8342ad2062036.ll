@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/algorithm.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; gromacs/optimized/energyoutput.cpp.ll

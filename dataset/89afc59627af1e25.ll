@@ -1,7 +1,6 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; git/optimized/cbtree.ll
-; graphviz/optimized/randomkit.c.ll
 ; lua/optimized/lmathlib.ll
 ; openssl/optimized/libcrypto-lib-bn_div.ll
 ; openssl/optimized/libcrypto-lib-bn_shift.ll

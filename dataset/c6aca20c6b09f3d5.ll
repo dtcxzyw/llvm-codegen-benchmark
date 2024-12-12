@@ -1,4 +1,6 @@
 
+%struct.GCRef.3680589 = type { i64 }
+
 ; 102 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
@@ -14,12 +16,8 @@
 ; icu/optimized/number_simple.ll
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
-; luajit/optimized/lj_ffrecord.ll
-; luajit/optimized/lj_ffrecord_dyn.ll
 ; luajit/optimized/lj_meta.ll
 ; luajit/optimized/lj_meta_dyn.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -32,7 +30,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -60,6 +57,11 @@
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
 ; nuklear/optimized/unity.c.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
+; openusd/optimized/obu.c.ll
+; openusd/optimized/ray.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
@@ -103,44 +105,65 @@
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = getelementptr nusw i8, ptr %0, i64 24
-  %5 = getelementptr nusw [3 x ptr], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1160
+  %5 = getelementptr nusw nuw [3 x ptr], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 3 occurrences:
-; openusd/optimized/loopPatchBuilder.cpp.ll
-; openusd/optimized/obu.c.ll
-; openusd/optimized/ray.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = select i1 %1, i64 1, i64 %2
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %5 = getelementptr nusw [3 x double], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 10 occurrences:
+; 9 occurrences:
 ; cpython/optimized/listobject.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/intel_ddi.ll
 ; postgres/optimized/dsa.ll
-; postgres/optimized/freepage.ll
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtsearch.ll
 ; postgres/optimized/tidbitmap.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = getelementptr nusw i8, ptr %0, i64 1860
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1860
   %5 = getelementptr [2 x i32], ptr %4, i64 0, i64 %3
+  ret ptr %5
+}
+
+; 4 occurrences:
+; luajit/optimized/lj_ffrecord.ll
+; luajit/optimized/lj_ffrecord_dyn.ll
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 35, i64 %2
+  %4 = getelementptr nusw i8, ptr %0, i64 -304
+  %5 = getelementptr nusw nuw [38 x %struct.GCRef.3680589], ptr %4, i64 0, i64 %3
+  ret ptr %5
+}
+
+; 11 occurrences:
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 2, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = getelementptr nusw [3 x ptr], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

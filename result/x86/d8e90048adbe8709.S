@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	addl	$-176, %esi
 	xorl	%ecx, %ecx
 	cmpl	$-128, %esi
@@ -9,7 +9,7 @@ func0000000000000018:                   # @func0000000000000018
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addl	$-8, %esi
 	cmpl	$-6, %esi
 	setb	%al

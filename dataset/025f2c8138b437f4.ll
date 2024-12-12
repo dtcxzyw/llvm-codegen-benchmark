@@ -6,7 +6,7 @@
 ; rocksdb/optimized/sst_file_dumper.cc.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = icmp ugt i64 %2, %0
@@ -19,7 +19,7 @@ entry:
 ; assimp/optimized/unzip.c.ll
 ; pyo3-rs/optimized/4w6r7rh8tcoxwvbr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = icmp eq i64 %2, %0
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/serialHeap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = icmp uge i64 %2, %0
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/rcache_base_vma.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000050c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = icmp ugt i64 %2, %0
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/t_list.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000042c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = icmp eq i64 %2, %0

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; icu/optimized/unesctrn.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/af_inet.ll
@@ -13,16 +13,18 @@
 ; qemu/optimized/hw_pci_pci.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; abc/optimized/trees.c.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -38,6 +40,7 @@ entry:
 ; lua/optimized/lparser.ll
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_bre.cpp.ll
 ; meshlab/optimized/meshio.cpp.ll
@@ -68,7 +71,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -84,7 +87,7 @@ entry:
 define i64 @func0000000000000005(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -98,7 +101,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -109,7 +112,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -120,7 +123,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

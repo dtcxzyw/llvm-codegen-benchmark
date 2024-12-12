@@ -1,31 +1,4 @@
 
-; 16 occurrences:
-; cpython/optimized/unicodeobject.ll
-; icu/optimized/ucptrie.ll
-; image-rs/optimized/ptscn4jakoj4p9m.ll
-; linux/optimized/sd.ll
-; llvm/optimized/ASTWriterDecl.cpp.ll
-; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_MidiIn.ll
-; php/optimized/zip.ll
-; qemu/optimized/hw_display_vga.c.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
-; sqlite/optimized/sqlite3.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
-; zstd/optimized/zstd_v05.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = and i32 %1, 768
-  %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, %0
-  ret i32 %6
-}
-
 ; 13 occurrences:
 ; eastl/optimized/string.cpp.ll
 ; linux/optimized/intel_vdsc.ll
@@ -45,6 +18,31 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = and i32 %1, 960
+  %5 = or disjoint i32 %4, %3
+  %6 = or disjoint i32 %0, %5
+  ret i32 %6
+}
+
+; 14 occurrences:
+; cpython/optimized/unicodeobject.ll
+; icu/optimized/ucptrie.ll
+; image-rs/optimized/ptscn4jakoj4p9m.ll
+; linux/optimized/sd.ll
+; llvm/optimized/ASTWriterDecl.cpp.ll
+; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_MidiIn.ll
+; php/optimized/zip.ll
+; qemu/optimized/hw_display_vga.c.ll
+; sqlite/optimized/sqlite3.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = and i32 %1, 2
   %5 = or disjoint i32 %4, %3
   %6 = or disjoint i32 %5, %0
   ret i32 %6

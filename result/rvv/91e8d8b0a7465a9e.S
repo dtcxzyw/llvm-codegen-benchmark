@@ -1,8 +1,3 @@
-func0000000000000008:                   # @func0000000000000008
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmerge.vim	v8, v8, 2, v0
-	vmsgtu.vi	v0, v8, 1
-	ret
 func000000000000000a:                   # @func000000000000000a
 	li	a0, 30
 	vsetivli	zero, 8, e32, m2, ta, ma

@@ -1,9 +1,10 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/cuddBddIte.c.ll
 ; abc/optimized/giaBidec.c.ll
 ; eastl/optimized/EAMemory.cpp.ll
 ; libdeflate/optimized/crc32.c.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/codeBuffer.ll
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
@@ -21,15 +22,18 @@ entry:
   ret i1 %5
 }
 
-; 31 occurrences:
+; 34 occurrences:
 ; git/optimized/fast-export.ll
+; icu/optimized/uhash.ll
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
 ; libphonenumber/optimized/phonenumber.pb.cc.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/consolemap.ll
 ; linux/optimized/i915_gem_context.ll
 ; linux/optimized/traps.ll
+; lvgl/optimized/lv_slider.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
+; openmpi/optimized/crc.ll
 ; openmpi/optimized/libdatatype_reliable_la-opal_datatype_pack.ll
 ; openmpi/optimized/libdatatype_reliable_la-opal_datatype_unpack.ll
 ; openmpi/optimized/opal_datatype_pack.ll

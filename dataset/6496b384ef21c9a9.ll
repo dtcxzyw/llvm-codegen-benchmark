@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 59 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/mpmMan.c.ll
@@ -40,6 +40,7 @@
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; openjdk/optimized/type.ll
+; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; openssl/optimized/hpke_test-bin-hpke_test.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
@@ -86,39 +87,9 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
-; arrow/optimized/strtod.cc.ll
-; double_conversion/optimized/strtod.cc.ll
-; icu/optimized/double-conversion-strtod.ll
-; imgui/optimized/imgui_draw.cpp.ll
-; libwebp/optimized/vp8l_dec.c.ll
-; libwebp/optimized/webp_enc.c.ll
-; llvm/optimized/X86FastISel.cpp.ll
-; meshlab/optimized/filter_create.cpp.ll
-; openblas/optimized/iparmq.c.ll
-; openusd/optimized/json.cpp.ll
-; openusd/optimized/strtod.cc.ll
-; php/optimized/strtod.ll
-; postgres/optimized/worker.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = select i1 %1, i32 0, i32 %2
-  %4 = icmp sgt i32 %0, -1086
-  %5 = select i1 %4, i32 53, i32 %3
-  ret i32 %5
-}
-
-; 8 occurrences:
+; 2 occurrences:
 ; jq/optimized/main.ll
 ; libpng/optimized/pngwrite.c.ll
-; linux/optimized/sbitmap.ll
-; linux/optimized/tcp_cubic.ll
-; meshoptimizer/optimized/quantization.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; openusd/optimized/reconintra.c.ll
-; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -128,10 +99,9 @@ entry:
   ret i32 %5
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/giaExist.c.ll
 ; icu/optimized/uprops.ll
-; icu/optimized/ustrtrns.ll
 ; linux/optimized/intel_psr.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
@@ -159,6 +129,50 @@ entry:
   %.not = icmp eq i32 %0, 0
   %4 = select i1 %.not, i32 %3, i32 4
   ret i32 %4
+}
+
+; 8 occurrences:
+; boost/optimized/to_chars.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; libwebp/optimized/vp8l_dec.c.ll
+; libwebp/optimized/webp_enc.c.ll
+; llvm/optimized/X86FastISel.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; postgres/optimized/worker.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 6, i32 %2
+  %4 = icmp sgt i32 %0, 99
+  %5 = select i1 %4, i32 5, i32 %3
+  ret i32 %5
+}
+
+; 4 occurrences:
+; meshoptimizer/optimized/quantization.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; openusd/optimized/reconintra.c.ll
+; stb/optimized/stb_sprintf.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 947912704, i32 %2
+  %4 = icmp samesign ugt i32 %0, 1199570943
+  %5 = select i1 %4, i32 31744, i32 %3
+  ret i32 %5
+}
+
+; 2 occurrences:
+; icu/optimized/ustrtrns.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 2, i32 %2
+  %4 = icmp samesign ult i32 %0, 128
+  %5 = select i1 %4, i32 1, i32 %3
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

@@ -8,7 +8,7 @@
 define i128 @func000000000000007b(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw nsw i128 %2, 8507059173023461586
-  %4 = add nuw nsw i128 %3, %1
+  %4 = add nuw nsw i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = add nuw nsw i128 %5, %0
   ret i128 %6
@@ -20,9 +20,9 @@ entry:
 define i128 @func0000000000000053(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %2, 10779635027931437427
-  %4 = add nuw i128 %3, %1
+  %4 = add nuw i128 %1, %3
   %5 = lshr i128 %4, 64
-  %6 = add nuw nsw i128 %5, %0
+  %6 = add nuw nsw i128 %0, %5
   ret i128 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = mul nuw nsw i128 %2, 18446744073709551615
   %4 = add nuw nsw i128 %3, %1
   %5 = lshr i128 %4, 32
-  %6 = add nuw i128 %5, %0
+  %6 = add nuw i128 %0, %5
   ret i128 %6
 }
 

@@ -18,7 +18,7 @@ entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = add i64 %6, %4
   ret i64 %7
 }
@@ -31,21 +31,8 @@ entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = add i64 %6, %4
-  ret i64 %7
-}
-
-; 1 occurrences:
-; opencv/optimized/opencv-caffe.pb.cc.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003f(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 6
-  %4 = zext nneg i32 %3 to i64
-  %5 = zext nneg i32 %1 to i64
-  %6 = add nuw nsw i64 %5, %0
-  %7 = add nuw nsw i64 %6, %4
   ret i64 %7
 }
 
@@ -57,7 +44,7 @@ entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }

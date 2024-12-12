@@ -1,32 +1,34 @@
 
-; 9 occurrences:
+; 3 occurrences:
+; abc/optimized/ifMap.c.ll
+; linux/optimized/build_policy.ll
+; linux/optimized/igmp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
+entry:
+  %2 = select i1 %0, i32 1, i32 %1
+  %3 = freeze i32 %2
+  %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
+; 10 occurrences:
+; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/dauCanon.c.ll
+; abc/optimized/giaIf.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; opencv/optimized/scale_layer.cpp.ll
 ; postgres/optimized/fe-connect.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = select i1 %0, i32 1, i32 %1
   %3 = freeze i32 %2
   %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 2 occurrences:
-; linux/optimized/build_policy.ll
-; linux/optimized/igmp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
-entry:
-  %2 = select i1 %0, i32 -1, i32 %1
-  %3 = freeze i32 %2
-  %4 = zext i32 %3 to i64
   ret i64 %4
 }
 

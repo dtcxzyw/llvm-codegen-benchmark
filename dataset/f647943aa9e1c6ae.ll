@@ -19,7 +19,7 @@
 ; wasmtime-rs/optimized/47nrdncov7567v7m.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 48
   %3 = shl i64 %0, 4
@@ -41,7 +41,7 @@ entry:
 ; rust-analyzer-rs/optimized/rilullg9p294yp1.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000008cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000218c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 24
   %3 = shl i64 %0, 5

@@ -1,43 +1,43 @@
-func00000000000001e3:                   # @func00000000000001e3
+func0000000000000363:                   # @func0000000000000363
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vv	v10, v10, v12
 	vand.vi	v10, v10, 1
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
-func000000000000010b:                   # @func000000000000010b
+func000000000000020b:                   # @func000000000000020b
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vv	v10, v10, v12
 	vand.vi	v10, v10, 3
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
-func0000000000000163:                   # @func0000000000000163
+func0000000000000263:                   # @func0000000000000263
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vv	v10, v10, v12
 	vand.vi	v10, v10, 1
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+func0000000000000361:                   # @func0000000000000361
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vv	v10, v10, v12
 	vand.vi	v10, v10, 1
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
-func0000000000000160:                   # @func0000000000000160
+func0000000000000260:                   # @func0000000000000260
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vv	v10, v10, v12
 	vand.vi	v10, v10, 1
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
-func00000000000001e0:                   # @func00000000000001e0
+func0000000000000360:                   # @func0000000000000360
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vv	v10, v10, v12
 	vand.vi	v10, v10, 1
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
-func0000000000000189:                   # @func0000000000000189
+func0000000000000309:                   # @func0000000000000309
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vv	v10, v10, v12
 	lui	a0, 64
@@ -45,5 +45,5 @@ func0000000000000189:                   # @func0000000000000189
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

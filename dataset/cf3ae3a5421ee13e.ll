@@ -1,12 +1,13 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/src.ll
 ; crow/optimized/example.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = shl nsw i32 %3, 4
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = lshr i32 %5, 6
   ret i32 %6
 }
@@ -25,9 +26,10 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; libwebp/optimized/upsampling.c.ll
 ; linux/optimized/vlv_dsi.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007e(i32 %0, i32 %1, i32 %2) #0 {
 entry:

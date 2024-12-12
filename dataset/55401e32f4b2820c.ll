@@ -1,5 +1,5 @@
 
-; 101 occurrences:
+; 102 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/target.c.ll
@@ -63,6 +63,7 @@
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_display.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
 ; mold/optimized/input-files.cc.ARM64.cc.ll
@@ -105,7 +106,7 @@
 define i16 @func0000000000000001(i16 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   ret i16 %3
 }
 
@@ -200,6 +201,7 @@ entry:
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/tcp_offload.ll
 ; linux/optimized/yenta_socket.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; nix/optimized/daemon.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
@@ -293,7 +295,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -382,7 +383,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 

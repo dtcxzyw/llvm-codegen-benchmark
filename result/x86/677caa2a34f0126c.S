@@ -22,3 +22,15 @@ func0000000000000020:                   # @func0000000000000020
 	orb	%dil, %al
 	andb	$1, %al
 	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpq	%rdx, %rsi
+	sete	%al
+	orb	%dil, %al
+	andb	$1, %al
+	retq
+func0000000000000024:                   # @func0000000000000024
+	cmpq	%rdx, %rsi
+	setae	%al
+	orb	%dil, %al
+	andb	$1, %al
+	retq

@@ -8,7 +8,9 @@ func00000000000000a1:                   # @func00000000000000a1
 	retq
 func0000000000000011:                   # @func0000000000000011
 	movl	%esi, %eax
+	xorl	%ecx, %ecx
 	cmpl	$1, %edx
-	sbbl	$0, %eax
+	sete	%cl
+	subl	%ecx, %eax
 	subl	%edi, %eax
 	retq

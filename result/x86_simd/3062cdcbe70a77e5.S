@@ -22,12 +22,9 @@ func0000000000000002:                   # @func0000000000000002
 	vpsllq	$5, %ymm1, %ymm0
 	vpbroadcastq	.LCPI2_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [32,32,32,32]
 	retq
-.LCPI3_0:
-	.quad	4096                            # 0x1000
 func0000000000000001:                   # @func0000000000000001
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpnltd	%xmm2, %xmm0, %k1
-	vpbroadcastq	.LCPI3_0(%rip), %ymm0   # ymm0 = [4096,4096,4096,4096]
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpmovd2m	%xmm0, %k0
+	knotw	%k0, %k1
+	vpsllq	$3, %ymm1, %ymm0 {%k1} {z}
 	retq

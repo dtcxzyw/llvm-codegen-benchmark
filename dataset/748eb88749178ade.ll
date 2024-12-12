@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; darktable/optimized/RawImage.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_blurs.c.ll
@@ -9,7 +9,6 @@
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/skl_watermark.ll
 ; llvm/optimized/CGBlocks.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
@@ -89,13 +88,14 @@ entry:
   ret i32 %4
 }
 
-; 231 occurrences:
+; 228 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -194,13 +194,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -276,7 +273,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -357,7 +353,7 @@ entry:
 define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -368,7 +364,7 @@ entry:
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -397,7 +393,7 @@ entry:
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
@@ -459,7 +455,7 @@ entry:
 define i32 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -470,7 +466,7 @@ entry:
 define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 8
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -500,7 +496,7 @@ entry:
 define i32 @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 6
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
@@ -523,7 +519,7 @@ entry:
 define i32 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
@@ -534,7 +530,7 @@ entry:
 define i32 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

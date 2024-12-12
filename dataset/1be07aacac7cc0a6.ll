@@ -14,8 +14,7 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
-; linux/optimized/rsmisc.ll
+; 2 occurrences:
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; stb/optimized/stb_voxel_render.c.ll
 ; Function Attrs: nounwind
@@ -24,19 +23,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %3, -1
   %5 = mul nsw i32 %4, %1
-  %6 = add i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; linux/optimized/scsi_transport_spi.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, -48
-  %5 = mul nuw nsw i32 %4, %1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -48,19 +35,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %3, -183
   %5 = mul nsw i32 %4, %1
-  %6 = add nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; linux/optimized/rsmisc.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003c(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, 65535
-  %5 = mul nuw nsw i32 %4, %1
-  %6 = add i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

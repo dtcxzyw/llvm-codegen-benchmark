@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; opencv/optimized/fisheye.cpp.ll
+; quantlib/optimized/noarbsabr.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
@@ -9,7 +10,7 @@ define i1 @func0000000000000002(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 6.553600e+04
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

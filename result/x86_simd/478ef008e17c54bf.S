@@ -1,4 +1,4 @@
-func0000000000000caa:                   # @func0000000000000caa
+func000000000000314a:                   # @func000000000000314a
 	vpor	%ymm0, %ymm1, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpgtd	%ymm3, %ymm2, %k1
@@ -8,7 +8,7 @@ func0000000000000caa:                   # @func0000000000000caa
 	retq
 .LCPI1_0:
 	.long	4                               # 0x4
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [4,4,4,4,4,4,4,4]
 	vpcmpneqd	%ymm2, %ymm1, %k1
 	vpcmpneqd	%ymm1, %ymm0, %k1 {%k1}

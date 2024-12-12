@@ -6,7 +6,7 @@ define i16 @func0000000000000030(i16 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i16
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 
@@ -32,7 +32,7 @@ define i16 @func0000000000000005(i16 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 21
   %3 = zext i1 %2 to i16
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
@@ -45,7 +45,7 @@ define i16 @func0000000000000031(i16 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i16
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 

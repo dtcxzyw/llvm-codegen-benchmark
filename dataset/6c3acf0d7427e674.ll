@@ -1,10 +1,11 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; clamav/optimized/sigtool.c.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; linux/optimized/virtio_net.ll
 ; llvm/optimized/GCOVProfiling.cpp.ll
 ; nix/optimized/chunked-vector.ll
+; opencv/optimized/tf_importer.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; ruby/optimized/sha1.ll
 ; Function Attrs: nounwind
@@ -102,8 +103,7 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
-; abc/optimized/satUtil.c.ll
+; 10 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; gromacs/optimized/mshift.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
@@ -117,9 +117,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000040(i32 %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 2
+  %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, -1
+  %4 = add i32 %3, 1
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -229,6 +229,18 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nsw i32 %3, -1640531527
   %5 = add nsw i32 %4, %0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_imagebutton.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 48
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = add nsw i32 %3, -1
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

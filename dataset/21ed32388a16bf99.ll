@@ -1,5 +1,5 @@
 
-; 564 occurrences:
+; 567 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/absGla.c.ll
@@ -23,6 +23,14 @@
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/within_sph_geo.ll
 ; brotli/optimized/bit_cost.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/scpgen.cpp.ll
@@ -210,8 +218,6 @@
 ; gromacs/optimized/dlae2.cpp.ll
 ; gromacs/optimized/dlaed6.cpp.ll
 ; gromacs/optimized/dlaev2.cpp.ll
-; gromacs/optimized/dlagtf.cpp.ll
-; gromacs/optimized/dlanst.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/dlasd4.cpp.ll
 ; gromacs/optimized/dlasd5.cpp.ll
@@ -317,7 +323,6 @@
 ; openblas/optimized/dlasd5.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dstebz.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsyr2k_kernel_L.c.ll
 ; openblas/optimized/dsyr2k_kernel_U.c.ll
 ; opencv/optimized/PnPProblem.cpp.ll
@@ -426,11 +431,9 @@
 ; postgres/optimized/selfuncs.ll
 ; postgres/optimized/subselect.ll
 ; postgres/optimized/vacuumlazy.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/imw_p.cpp.ll
 ; proj/optimized/inv.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/labrd.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
@@ -568,7 +571,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 

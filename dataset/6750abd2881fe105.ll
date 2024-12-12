@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000082(i64 %0, i64 %1, i64 %2) #0 {
 entry:

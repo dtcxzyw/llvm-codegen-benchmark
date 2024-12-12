@@ -1,4 +1,4 @@
-func00000000000000d9:                   # @func00000000000000d9
+func0000000000000199:                   # @func0000000000000199
 	sext.w	a2, a2
 	lui	a3, 2
 	sh2add	a1, a1, a1
@@ -8,7 +8,7 @@ func00000000000000d9:                   # @func00000000000000d9
 	czero.eqz	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	sext.w	a2, a2
 	lui	a3, 2
 	slt	a2, a2, a3
@@ -18,7 +18,7 @@ func0000000000000059:                   # @func0000000000000059
 	czero.eqz	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	sext.w	a2, a2
 	lui	a3, 2
 	slt	a2, a2, a3

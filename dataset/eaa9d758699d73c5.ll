@@ -5,7 +5,7 @@
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; qemu/optimized/hw_acpi_core.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp ne i16 %2, 0
@@ -23,7 +23,7 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 96
   %3 = icmp ne i16 %2, 0
@@ -38,7 +38,7 @@ entry:
 ; hermes/optimized/JSProxy.cpp.ll
 ; linux/optimized/hub.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16
   %3 = icmp eq i16 %2, 0
@@ -48,34 +48,19 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; cvc5/optimized/proof.cpp.ll
-; linux/optimized/read_write.ll
-; linux/optimized/remap_range.ll
 ; linux/optimized/rtnetlink.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/ValueLattice.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 127
   %3 = icmp eq i16 %2, 16
   %4 = and i16 %0, 127
   %5 = icmp eq i16 %4, 16
-  %6 = and i1 %5, %3
-  ret i1 %6
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-ieee80211-radio.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(i16 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 3
-  %3 = icmp ne i16 %2, 3
-  %4 = and i16 %0, 14
-  %5 = icmp ult i16 %4, 10
   %6 = and i1 %5, %3
   ret i1 %6
 }

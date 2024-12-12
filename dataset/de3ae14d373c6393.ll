@@ -1,5 +1,5 @@
 
-; 138 occurrences:
+; 136 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -10,6 +10,8 @@
 ; abc/optimized/giaPf.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; abc/optimized/utilCex.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_colormapping.c.ll
 ; darktable/optimized/introspection_colortransfer.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
@@ -42,11 +44,9 @@
 ; gromacs/optimized/wallcycle.cpp.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
 ; libwebp/optimized/picture_psnr_enc.c.ll
-; libwebp/optimized/quant_levels_utils.c.ll
 ; meshlab/optimized/edit_select.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
@@ -58,11 +58,9 @@
 ; openblas/optimized/dgeqrf.c.ll
 ; openblas/optimized/dgeqrfp.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetri.c.ll
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dlaswlq.c.ll
 ; openblas/optimized/dlatsqr.c.ll
-; openblas/optimized/dorghr.c.ll
 ; openblas/optimized/dorgql.c.ll
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
@@ -179,8 +177,9 @@ entry:
   ret double %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; casadi/optimized/cvodes.c.ll
+; libwebp/optimized/quant_levels_utils.c.ll
 ; sundials/optimized/cvode.c.ll
 ; sundials/optimized/cvodes.c.ll
 ; Function Attrs: nounwind

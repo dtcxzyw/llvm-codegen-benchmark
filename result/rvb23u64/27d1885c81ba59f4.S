@@ -10,13 +10,13 @@ func000000000000007a:                   # @func000000000000007a
 	add	a0, a0, a1
 	srliw	a0, a0, 8
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	li	a2, 85
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 8
 	ret
-func000000000000003b:                   # @func000000000000003b
+func000000000000007b:                   # @func000000000000007b
 	li	a2, 85
 	mul	a1, a1, a2
 	add	a0, a0, a1

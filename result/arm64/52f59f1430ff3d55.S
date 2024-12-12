@@ -1,9 +1,7 @@
-func0000000000000241:                   // @func0000000000000241
+func0000000000000c81:                   // @func0000000000000c81
 // %bb.0:                               // %entry
-	add	x8, x2, #28
-	cmp	w1, #12
-	csel	x8, x8, x0, lo
-	cmp	x8, #0
+	cmp	w1, #11
+	ccmp	x0, #0, #0, hi
 	cset	w0, eq
 	ret
                                         // -- End function

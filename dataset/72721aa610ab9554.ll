@@ -6,7 +6,7 @@
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -9223372036854775807
   %3 = icmp slt i64 %1, -9223372036854775803

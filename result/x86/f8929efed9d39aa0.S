@@ -1,28 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
 	movl	%edi, %eax
-	shrl	$12, %edx
-	andl	$3072, %edx                     # imm = 0xC00
-	orl	%esi, %eax
-	orl	%edx, %eax
-	retq
-func000000000000000b:                   # @func000000000000000b
-	movl	%edi, %eax
-	shrl	$16, %edx
-	andl	$4096, %edx                     # imm = 0x1000
-	orl	%esi, %eax
-	orl	%edx, %eax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	movl	%edi, %eax
-	shrl	$17, %edx
-	andl	$8192, %edx                     # imm = 0x2000
-	orl	%esi, %eax
-	orl	%edx, %eax
-	retq
-func000000000000000c:                   # @func000000000000000c
-	movl	%edi, %eax
-	shrl	$18, %edx
-	andl	$32, %edx
+	shrl	$10, %edx
+	andl	$1024, %edx                     # imm = 0x400
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq

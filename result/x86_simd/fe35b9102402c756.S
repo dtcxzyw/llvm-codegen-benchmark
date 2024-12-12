@@ -7,7 +7,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000008:                   # @func0000000000000008
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
 	vpmovsxdq	%xmm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.quad	-4                              # 0xfffffffffffffffc
@@ -31,7 +31,7 @@ func0000000000000007:                   # @func0000000000000007
 func000000000000000d:                   # @func000000000000000d
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
 	vpmovsxdq	%xmm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI6_0:
 	.quad	1073741824                      # 0x40000000

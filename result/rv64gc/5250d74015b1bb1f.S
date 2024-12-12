@@ -164,15 +164,6 @@ func00000000000000fd:                   # @func00000000000000fd
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func0000000000000071:                   # @func0000000000000071
-	li	a3, 365
-	add	a0, a0, a1
-	lui	a1, 420
-	mul	a2, a2, a3
-	add	a0, a0, a2
-	addi	a1, a1, 1103
-	addw	a0, a0, a1
-	ret
 func00000000000000fa:                   # @func00000000000000fa
 	lui	a3, 1023
 	add	a0, a0, a1

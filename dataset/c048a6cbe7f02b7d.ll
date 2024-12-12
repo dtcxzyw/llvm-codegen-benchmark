@@ -5,7 +5,7 @@
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/OMPContext.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 1
@@ -14,10 +14,11 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cpython/optimized/frameobject.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
+; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:

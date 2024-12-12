@@ -1,3 +1,12 @@
+.LCPI0_0:
+	.quad	0x400921fb54442d18              # double 3.1415926535897931
+func0000000000000224:                   # @func0000000000000224
+	vminsd	%xmm2, %xmm1, %xmm1
+	vmovsd	.LCPI0_0(%rip), %xmm2           # xmm2 = [3.1415926535897931E+0,0.0E+0]
+	vcmpltpd	%xmm0, %xmm2, %k1
+	vcmpltpd	%xmm2, %xmm1, %k0 {%k1}
+	kmovd	%k0, %eax
+	retq
 func0000000000000478:                   # @func0000000000000478
 	vmaxsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -54,24 +63,24 @@ func0000000000000228:                   # @func0000000000000228
 	vcmpltpd	%xmm2, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
-.LCPI8_0:
+.LCPI9_0:
 	.quad	0x3ff0000000000000              # double 1
 func0000000000000245:                   # @func0000000000000245
 	vminsd	%xmm2, %xmm1, %xmm1
-	vmovsd	.LCPI8_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0]
+	vmovsd	.LCPI9_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0]
 	vcmpnlepd	%xmm2, %xmm1, %k1
 	vcmpltpd	%xmm0, %xmm2, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
-.LCPI9_0:
+.LCPI10_0:
 	.quad	0x3ff8000000000000              # double 1.5
-.LCPI9_1:
+.LCPI10_1:
 	.quad	0x3fe0000000000000              # double 0.5
 func00000000000004ca:                   # @func00000000000004ca
 	vmaxsd	%xmm2, %xmm1, %xmm1
-	vmovsd	.LCPI9_0(%rip), %xmm2           # xmm2 = [1.5E+0,0.0E+0]
+	vmovsd	.LCPI10_0(%rip), %xmm2          # xmm2 = [1.5E+0,0.0E+0]
 	vcmplepd	%xmm2, %xmm0, %k1
-	vmovsd	.LCPI9_1(%rip), %xmm0           # xmm0 = [5.0E-1,0.0E+0]
+	vmovsd	.LCPI10_1(%rip), %xmm0          # xmm0 = [5.0E-1,0.0E+0]
 	vcmplepd	%xmm1, %xmm0, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq

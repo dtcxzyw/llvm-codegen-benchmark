@@ -10,7 +10,7 @@ func0000000000000009:                   # @func0000000000000009
 	vand.vv	v8, v8, v10
 	vmsleu.vv	v0, v14, v8
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	vand.vv	v8, v8, v10
@@ -28,6 +28,12 @@ func0000000000000004:                   # @func0000000000000004
 	vand.vv	v8, v8, v10
 	vmsltu.vv	v0, v8, v14
 	ret
+func0000000000000014:                   # @func0000000000000014
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vand.vv	v8, v8, v10
+	vmsltu.vv	v0, v8, v14
+	ret
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
@@ -40,13 +46,13 @@ func0000000000000008:                   # @func0000000000000008
 	vand.vv	v8, v8, v10
 	vmsltu.vv	v0, v14, v8
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	vand.vv	v8, v8, v10
 	vmsltu.vv	v0, v14, v8
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	vand.vv	v8, v8, v10

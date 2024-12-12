@@ -26,3 +26,10 @@ func000000000000001d:                   # @func000000000000001d
 	subq	%rsi, %rax
 	shlq	$2, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	subq	%rdx, %rsi
+	shrq	$2, %rsi
+	movslq	%edi, %rax
+	subq	%rsi, %rax
+	shlq	$2, %rax
+	retq

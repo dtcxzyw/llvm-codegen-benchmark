@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; qemu/optimized/linux-user_elfload.c.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

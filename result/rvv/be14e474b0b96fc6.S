@@ -1,4 +1,4 @@
-func0000000000000354:                   # @func0000000000000354
+func00000000000006a4:                   # @func00000000000006a4
 	li	a0, 39
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 3
@@ -8,7 +8,7 @@ func0000000000000354:                   # @func0000000000000354
 	li	a0, 289
 	vmsltu.vx	v0, v8, a0
 	ret
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, -2
 	vsrl.vi	v10, v10, 1
@@ -16,7 +16,7 @@ func000000000000015a:                   # @func000000000000015a
 	vadd.vv	v8, v8, v10
 	vmsgt.vi	v0, v8, -1
 	ret
-func0000000000000154:                   # @func0000000000000154
+func00000000000002b4:                   # @func00000000000002b4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, -2
 	vsra.vi	v8, v8, 4
@@ -25,7 +25,7 @@ func0000000000000154:                   # @func0000000000000154
 	li	a0, 32
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000356:                   # @func0000000000000356
+func00000000000006a6:                   # @func00000000000006a6
 	li	a0, 39
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 3
@@ -35,7 +35,15 @@ func0000000000000356:                   # @func0000000000000356
 	li	a0, 289
 	vmslt.vx	v0, v8, a0
 	ret
-func0000000000000194:                   # @func0000000000000194
+func00000000000002a4:                   # @func00000000000002a4
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v10, v10, -2
+	vsrl.vi	v10, v10, 1
+	vsra.vi	v8, v8, 6
+	vadd.vv	v8, v8, v10
+	vmsleu.vi	v0, v8, 3
+	ret
+func0000000000000324:                   # @func0000000000000324
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, -1
 	vsrl.vi	v10, v10, 1

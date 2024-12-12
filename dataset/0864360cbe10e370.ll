@@ -1,4 +1,18 @@
 
+; 3 occurrences:
+; glslang/optimized/reflection.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; ruby/optimized/prism.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(i8 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 48
+  %3 = icmp ne i32 %2, 0
+  %4 = trunc nuw i8 %0 to i1
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
 ; 5 occurrences:
 ; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll

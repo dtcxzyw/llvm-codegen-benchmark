@@ -1,4 +1,4 @@
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000000ff:                   # @func00000000000000ff
 	or	a1, a1, a2
 	slliw	a1, a1, 1
 	add	a0, a0, a1
@@ -10,7 +10,7 @@ func00000000000000f0:                   # @func00000000000000f0
 	add	a0, a0, a1
 	addi	a0, a0, 36
 	ret
-func000000000000008a:                   # @func000000000000008a
+func000000000000008f:                   # @func000000000000008f
 	or	a1, a1, a2
 	slli	a1, a1, 34
 	srli	a1, a1, 32

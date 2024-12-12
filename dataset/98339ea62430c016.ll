@@ -13,12 +13,13 @@ entry:
   ret double %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; icu/optimized/double-conversion-strtod.ll
 ; openusd/optimized/json.cpp.ll
 ; openusd/optimized/strtod.cc.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0) #0 {
 entry:

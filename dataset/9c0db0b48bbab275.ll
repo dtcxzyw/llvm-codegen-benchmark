@@ -1,13 +1,53 @@
 
-%"class.std::__cxx11::basic_string.2690171" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2690172", i64, %union.anon.2690173 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2690172" = type { ptr }
-%union.anon.2690173 = type { i64, [8 x i8] }
-%struct.btSolverConstraint.2707066 = type { %class.btVector3.2707065, %class.btVector3.2707065, %class.btVector3.2707065, %class.btVector3.2707065, %class.btVector3.2707065, %class.btVector3.2707065, float, float, float, float, float, float, float, float, float, %union.anon.24.2707067, i32, i32, i32, i32 }
-%class.btVector3.2707065 = type { [4 x float] }
-%union.anon.24.2707067 = type { ptr }
+%"class.std::__cxx11::basic_string.2802902" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903", i64, %union.anon.2802904 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903" = type { ptr }
+%union.anon.2802904 = type { i64, [8 x i8] }
+%struct.btSolverConstraint.2819779 = type { %class.btVector3.2819778, %class.btVector3.2819778, %class.btVector3.2819778, %class.btVector3.2819778, %class.btVector3.2819778, %class.btVector3.2819778, float, float, float, float, float, float, float, float, float, %union.anon.24.2819780, i32, i32, i32, i32 }
+%class.btVector3.2819778 = type { [4 x float] }
+%union.anon.24.2819780 = type { ptr }
+%"class.clang::DeclAccessPair.3137956" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.3137957" }
+%"struct.llvm::support::detail::packed_endian_specific_integral.3137957" = type { %struct.anon.3137958 }
+%struct.anon.3137958 = type { [8 x i8] }
 
-; 62 occurrences:
+; 1 occurrences:
+; velox/optimized/Filter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001c1(i32 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2802902", ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -32
+  %5 = icmp eq i32 %0, 0
+  %6 = select i1 %5, ptr null, ptr %4
+  ret ptr %6
+}
+
+; 3 occurrences:
+; bullet3/optimized/btSequentialImpulseConstraintSolverMt.ll
+; gromacs/optimized/params.cpp.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000001(i32 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %struct.btSolverConstraint.2819779, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 160
+  %5 = icmp eq i32 %0, 0
+  %6 = select i1 %5, ptr null, ptr %4
+  ret ptr %6
+}
+
+; 1 occurrences:
 ; git/optimized/kwset.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000141(i32 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -1
+  %5 = icmp eq i32 %0, 0
+  %6 = select i1 %5, ptr null, ptr %4
+  ret ptr %6
+}
+
+; 60 occurrences:
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -68,26 +108,11 @@
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a1(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000001e1(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.std::__cxx11::basic_string.2690171", ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -32
-  %5 = icmp eq i32 %0, 0
-  %6 = select i1 %5, ptr null, ptr %4
-  ret ptr %6
-}
-
-; 3 occurrences:
-; bullet3/optimized/btSequentialImpulseConstraintSolverMt.ll
-; gromacs/optimized/params.cpp.ll
-; typst-rs/optimized/4qskctz4kwc33g7b.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000001(i32 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr %struct.btSolverConstraint.2707066, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 160
+  %3 = getelementptr nusw nuw %"class.clang::DeclAccessPair.3137956", ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, ptr null, ptr %4
   ret ptr %6

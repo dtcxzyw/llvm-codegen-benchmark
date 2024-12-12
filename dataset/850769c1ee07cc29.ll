@@ -12,24 +12,6 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
-; abc/optimized/abc.c.ll
-; abc/optimized/ifDsd.c.ll
-; cvc5/optimized/core_solver.cpp.ll
-; cvc5/optimized/strings_entail.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestIterator.cpp.ll
-; opencv/optimized/core_detect.cpp.ll
-; wasmedge/optimized/executor.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
-entry:
-  %2 = xor i64 %1, -1
-  %3 = ashr exact i64 %0, 3
-  %4 = add nsw i64 %3, %2
-  ret i64 %4
-}
-
 ; 12 occurrences:
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
@@ -49,6 +31,21 @@ entry:
   %2 = xor i64 %1, -1
   %3 = ashr exact i64 %0, 3
   %4 = add i64 %3, %2
+  ret i64 %4
+}
+
+; 5 occurrences:
+; cvc5/optimized/core_solver.cpp.ll
+; cvc5/optimized/strings_entail.cpp.ll
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestIterator.cpp.ll
+; opencv/optimized/core_detect.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
+entry:
+  %2 = xor i64 %1, -1
+  %3 = ashr exact i64 %0, 3
+  %4 = add nsw i64 %3, %2
   ret i64 %4
 }
 

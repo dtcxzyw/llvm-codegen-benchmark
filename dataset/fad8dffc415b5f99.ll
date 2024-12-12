@@ -1,5 +1,5 @@
 
-; 961 occurrences:
+; 958 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcLatch.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -34,7 +34,6 @@
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; hdf5/optimized/H5C.c.ll
 ; hdf5/optimized/H5Ctag.c.ll
@@ -664,7 +663,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -946,7 +944,6 @@
 ; pbrt-v4/optimized/samples.cpp.ll
 ; slurm/optimized/xhash.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
-; wireshark/optimized/golay.c.ll
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/bv_ackerman.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
@@ -965,7 +962,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
-  %4 = xor i32 %3, %1
+  %4 = xor i32 %1, %3
   %5 = and i32 %4, %0
   ret i32 %5
 }

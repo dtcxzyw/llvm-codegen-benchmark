@@ -39,7 +39,7 @@ define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 32
   %3 = zext nneg i8 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -56,7 +56,7 @@ define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 15
   %3 = zext nneg i8 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -86,7 +86,7 @@ define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -100,7 +100,7 @@ define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -112,7 +112,7 @@ define i64 @func0000000000000003(i64 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 85
   %3 = zext i8 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 

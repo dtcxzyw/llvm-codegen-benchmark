@@ -1,10 +1,9 @@
 
-; 3 occurrences:
-; darktable/optimized/introspection_ashift.c.ll
+; 2 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -3
   %4 = icmp ult i32 %3, -2

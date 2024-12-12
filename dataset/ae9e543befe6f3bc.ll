@@ -2,23 +2,22 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000284(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 24
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp samesign ult i32 %1, %3
   %5 = icmp ult i32 %0, 67108864
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/kitDsd.c.ll
-; cmake/optimized/json_value.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 26
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp ult i32 %1, %3
   %5 = icmp eq i32 %0, 320
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -28,10 +27,10 @@ entry:
 ; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
 ; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 8
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = icmp eq i32 %0, 5
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -142,11 +141,24 @@ entry:
 ; z3/optimized/ufbv_tactic.cpp.ll
 ; z3/optimized/unit_subsumption_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000028c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp samesign ult i32 %1, %3
   %5 = icmp ne i32 %0, 3
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 2 occurrences:
+; cmake/optimized/json_value.cpp.ll
+; ozz-animation/optimized/jsoncpp.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000281(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 2
+  %4 = icmp samesign ult i32 %1, %3
+  %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }

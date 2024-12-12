@@ -1,9 +1,10 @@
 
-; 202 occurrences:
+; 198 occurrences:
 ; abseil-cpp/optimized/match.cc.ll
 ; abseil-cpp/optimized/pool_urbg_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/SystemTools.cxx.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
@@ -112,13 +113,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -173,14 +171,12 @@
 ; nix/optimized/verify.ll
 ; nix/optimized/why-depends.ll
 ; nix/optimized/worker.ll
-; openssl/optimized/igetest-bin-igetest.ll
 ; openssl/optimized/libcrypto-lib-conf_def.ll
 ; openssl/optimized/libcrypto-shlib-conf_def.ll
 ; openusd/optimized/lz4.cpp.ll
 ; openusd/optimized/path.cpp.ll
 ; php/optimized/file.ll
 ; php/optimized/string.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/network.ll
 ; postgres/optimized/stringutils.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
@@ -210,10 +206,9 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
-; postgres/optimized/char.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i8 %0, i8 %1) #0 {
@@ -223,10 +218,9 @@ entry:
   ret i64 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; openusd/optimized/decodeframe.c.ll
-; postgres/optimized/char.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
 ; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
@@ -240,7 +234,7 @@ entry:
   ret i64 %3
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; brotli/optimized/block_splitter.c.ll
 ; casadi/optimized/options.cpp.ll
@@ -252,7 +246,6 @@ entry:
 ; opencv/optimized/end_to_end_recognition.cpp.ll
 ; opencv/optimized/tr_icdar_benchmark.cpp.ll
 ; opencv/optimized/tr_svt_benchmark.cpp.ll
-; postgres/optimized/char.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_h368ace38__0.ll
 ; vcpkg/optimized/strings.cpp.ll
@@ -276,10 +269,9 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
-; postgres/optimized/char.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
 ; wasmtime-rs/optimized/2ugglko29ilmqwzu.ll
@@ -305,9 +297,8 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; opencv/optimized/matrix_operations.cpp.ll
-; postgres/optimized/char.ll
 ; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
@@ -336,6 +327,28 @@ entry:
 define i64 @func0000000000000016(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp sge i8 %0, %1
+  %3 = zext i1 %2 to i64
+  ret i64 %3
+}
+
+; 3 occurrences:
+; zed-rs/optimized/2stbxmle5qyblpbm85idqsgvv.ll
+; zed-rs/optimized/b8qgowmgtglca3x1tojob83nm.ll
+; zed-rs/optimized/bjeparp10jwpmju7lihptx53f.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i8 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ult i8 %0, %1
+  %3 = zext i1 %2 to i64
+  ret i64 %3
+}
+
+; 1 occurrences:
+; zed-rs/optimized/2stbxmle5qyblpbm85idqsgvv.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000032(i8 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign uge i8 %0, %1
   %3 = zext i1 %2 to i64
   ret i64 %3
 }

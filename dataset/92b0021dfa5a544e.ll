@@ -20,13 +20,17 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 10 occurrences:
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/ivyRwr.c.ll
 ; abc/optimized/ivySeq.c.ll
 ; abc/optimized/saigStrSim.c.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_refr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(ptr %0) #0 {
 entry:

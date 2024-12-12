@@ -1,6 +1,8 @@
 
-; 57 occurrences:
+; 59 occurrences:
 ; abc/optimized/giaLf.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/furtherest_point.c.ll
 ; graphviz/optimized/gvloadimage_pango.c.ll

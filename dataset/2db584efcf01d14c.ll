@@ -56,9 +56,9 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000085(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000185(i32 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %1, -96
+  %2 = icmp samesign ugt i8 %1, -96
   %3 = select i1 %2, i32 -64, i32 0
   %4 = add nsw i32 %0, -129
   %5 = add nsw i32 %4, %3

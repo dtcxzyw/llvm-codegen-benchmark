@@ -16,7 +16,7 @@ entry:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000028(i16 %0, i8 %1, i32 %2) #0 {
+define i16 @func0000000000000048(i16 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw i32 %2 to i16
   %4 = icmp ugt i8 %1, 15
@@ -40,7 +40,7 @@ entry:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func000000000000002a(i16 %0, i8 %1, i32 %2) #0 {
+define i16 @func000000000000004a(i16 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw i32 %2 to i16
   %4 = icmp sgt i8 %1, 15

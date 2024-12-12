@@ -1,6 +1,8 @@
 
-; 21 occurrences:
+; 25 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
@@ -13,6 +15,7 @@
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; faiss/optimized/sorting.cpp.ll
 ; freetype/optimized/truetype.c.ll
+; gromacs/optimized/tng_io.c.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/mm_init.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
@@ -21,6 +24,7 @@
 ; qemu/optimized/dump_dump.c.ll
 ; quickjs/optimized/libbf.ll
 ; regex-rs/optimized/33whcn8n29l9c6ys.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -29,13 +33,16 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 9 occurrences:
 ; brotli/optimized/decode.c.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/xarray.ll
 ; postgres/optimized/dshash.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_nvme_dif.c.ll
+; yalantinglibs/optimized/benchmark.cpp.ll
+; yalantinglibs/optimized/data_gen.cpp.ll
+; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
@@ -44,9 +51,10 @@ entry:
   ret i64 %3
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
+; gromacs/optimized/tng_io.c.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; icu/optimized/number_decimalquantity.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll

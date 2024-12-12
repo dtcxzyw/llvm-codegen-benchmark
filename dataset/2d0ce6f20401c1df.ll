@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/approximately_equals.ll
 ; linux/optimized/exfldio.ll
 ; lua/optimized/lstrlib.ll
 ; openssl/optimized/libdefault-lib-scrypt.ll

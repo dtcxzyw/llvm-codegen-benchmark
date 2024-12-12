@@ -10,7 +10,7 @@ func0000000000000008:                   # @func0000000000000008
 	bnez	a0, .LBB1_2
 	fneg.d	fa1, fa1
 .LBB1_2:                                # %entry
-	feq.d	a0, fa1, fa0
+	feq.d	a0, fa0, fa1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 1
@@ -55,13 +55,5 @@ func000000000000000b:                   # @func000000000000000b
 	fneg.d	fa1, fa1
 .LBB7_2:                                # %entry
 	flt.d	a0, fa1, fa0
-	xori	a0, a0, 1
-	ret
-func0000000000000007:                   # @func0000000000000007
-	andi	a0, a0, 1
-	bnez	a0, .LBB8_2
-	fneg.d	fa1, fa1
-.LBB8_2:                                # %entry
-	feq.d	a0, fa1, fa0
 	xori	a0, a0, 1
 	ret

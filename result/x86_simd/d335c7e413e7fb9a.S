@@ -36,7 +36,7 @@
 	.long	457                             # 0x1c9
 .LCPI0_3:
 	.long	453                             # 0x1c5
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k0
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %k1
 	kandb	%k0, %k1, %k1

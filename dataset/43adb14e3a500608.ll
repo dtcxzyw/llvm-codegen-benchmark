@@ -7,11 +7,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %0, -2053
-  %3 = icmp ugt i64 %1, 255
-  %4 = select i1 %3, i64 %2, i64 %0
-  %5 = and i64 %4, -2049
-  ret i64 %5
+  %2 = icmp ugt i64 %1, 255
+  %.v = select i1 %2, i64 -2053, i64 -2049
+  %3 = and i64 %0, %.v
+  ret i64 %3
 }
 
 ; 10 occurrences:

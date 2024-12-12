@@ -6,14 +6,14 @@ func0000000000000001:                   # @func0000000000000001
 	srli	a0, a0, 32
 .LBB0_2:                                # %entry
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	andi	a1, a1, 255
 	li	a3, 65
 	bltu	a1, a3, .LBB1_2
 	sext.w	a0, a2
 .LBB1_2:                                # %entry
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andi	a1, a1, 255
 	li	a3, 7
 	beq	a1, a3, .LBB2_2

@@ -13,7 +13,7 @@
 ; velox/optimized/Timestamp.cpp.ll
 ; wireshark/optimized/packet-p_mul.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 7
   %3 = trunc nsw i64 %2 to i32

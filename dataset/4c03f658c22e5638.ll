@@ -3,7 +3,7 @@
 ; linux/optimized/nfs4proc.ll
 ; openjdk/optimized/gtk3_interface.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000304(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000604(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -31,7 +31,7 @@ entry:
 ; linux/optimized/hooks.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000306(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000606(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 6
   %4 = icmp eq i32 %1, 0

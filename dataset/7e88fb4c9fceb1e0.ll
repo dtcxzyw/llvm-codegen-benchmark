@@ -1,9 +1,8 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_hazeremoval.c.ll
 ; gromacs/optimized/slaed6.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/decorate_background.cpp.ll

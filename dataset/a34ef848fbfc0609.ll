@@ -52,7 +52,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = mul i64 %2, -1395
   %3 = add i64 %.neg, %1
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -63,7 +63,7 @@ define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = mul i64 %2, -10033
   %3 = add i64 %.neg, %1
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

@@ -14,7 +14,7 @@ func0000000000000004:                   # @func0000000000000004
 	sub	a1, a1, a0
 	sltiu	a0, a1, 16
 	ret
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	addi	a1, a0, 3
 	li	a2, 1
 	slli	a2, a2, 33
@@ -30,24 +30,15 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a1, 65
 	xori	a0, a0, 1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addi	a1, a0, 7
 	andi	a1, a1, -8
 	slt	a0, a0, a1
 	ret
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	addi	a1, a0, 63
 	lui	a2, 786432
 	srli	a2, a2, 24
 	and	a1, a1, a2
 	slt	a0, a0, a1
-	ret
-func00000000000000d8:                   # @func00000000000000d8
-	addi	a1, a0, 63
-	lui	a2, 786432
-	srli	a2, a2, 24
-	and	a1, a1, a2
-	sub	a1, a1, a0
-	sltiu	a0, a1, 64
-	xori	a0, a0, 1
 	ret

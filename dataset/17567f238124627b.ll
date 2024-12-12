@@ -1,6 +1,8 @@
 
-; 73 occurrences:
+; 76 occurrences:
 ; abc/optimized/sclLibUtil.c.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3GpuRaycast.ll
 ; bullet3/optimized/btConvexConvexAlgorithm.ll
 ; bullet3/optimized/btDantzigLCP.ll
@@ -31,6 +33,7 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libphonenumber/optimized/regexp_cache.cc.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -94,11 +97,10 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; entt/optimized/dense_map.cpp.ll
 ; entt/optimized/dense_set.cpp.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
 ; minetest/optimized/collision.cpp.ll
@@ -115,7 +117,7 @@ entry:
   ret i1 %4
 }
 
-; 90 occurrences:
+; 92 occurrences:
 ; abc/optimized/giaRex.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/nwkTiming.c.ll
@@ -139,6 +141,7 @@ entry:
 ; gromacs/optimized/membed.cpp.ll
 ; hwloc/optimized/lstopo-lstopo-cairo.ll
 ; libphonenumber/optimized/regexp_cache.cc.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
 ; minetest/optimized/player_sao.cpp.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
@@ -206,6 +209,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/DetourCommon.cpp.ll
 ; velox/optimized/ConjunctExpr.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
@@ -226,7 +230,7 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
@@ -237,10 +241,8 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/primitive.cpp.ll
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; Function Attrs: nounwind
@@ -260,7 +262,7 @@ entry:
 ; entt/optimized/meta_type.cpp.ll
 ; entt/optimized/registry.cpp.ll
 ; ocio/optimized/FileFormatICC.cpp.ll
-; openblas/optimized/ieeeck.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
@@ -293,7 +295,7 @@ entry:
   ret i1 %4
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv_test.cc.ll
 ; abseil-cpp/optimized/compressed_tuple_test.cc.ll
@@ -308,6 +310,8 @@ entry:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/uniform_helper_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; faiss/optimized/extra_distances.cpp.ll
 ; nix/optimized/build-remote.ll
 ; openblas/optimized/slamch.c.ll

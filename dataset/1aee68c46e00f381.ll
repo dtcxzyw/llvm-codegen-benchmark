@@ -1,5 +1,5 @@
 
-; 227 occurrences:
+; 213 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -118,11 +118,9 @@
 ; abc/optimized/wlcWriteVer.c.ll
 ; abc/optimized/wlnWlc.c.ll
 ; arrow/optimized/light_array.cc.ll
-; ceres/optimized/cuda_block_structure.cc.ll
 ; draco/optimized/kd_tree_attributes_decoder.cc.ll
 ; freetype/optimized/pshinter.c.ll
 ; gromacs/optimized/bench_system.cpp.ll
-; gromacs/optimized/biasgrid.cpp.ll
 ; gromacs/optimized/biassharing.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/p2p_protocol.cpp.ll
@@ -147,7 +145,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_io_nxs.cpp.ll
@@ -190,25 +187,17 @@
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/qhull_tools.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; ncnn/optimized/c_api.cpp.ll
 ; opencv/optimized/adaptive_manifold_filter_n.cpp.ll
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/autocalib.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll
-; opencv/optimized/denoising.cpp.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
-; opencv/optimized/edgeboxes.cpp.ll
 ; opencv/optimized/guided_filter.cpp.ll
 ; opencv/optimized/matrix_wrap.cpp.ll
 ; opencv/optimized/multicalib.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
-; opencv/optimized/sinusoidalpattern.cpp.ll
-; opencv/optimized/webcam_demo.cpp.ll
 ; openjdk/optimized/jvmFlagAccess.ll
 ; openjdk/optimized/writeableFlags.ll
-; openspiel/optimized/bargaining.cc.ll
-; openspiel/optimized/colored_trails.cc.ll
-; openspiel/optimized/matrix_game.cc.ll
 ; openusd/optimized/cpuPatchTable.cpp.ll
 ; openusd/optimized/patchTree.cpp.ll
 ; ozz-animation/optimized/animation_optimizer.cc.ll
@@ -223,10 +212,7 @@
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; sqlite/optimized/sqlite3.ll
-; tev/optimized/Ipc.cpp.ll
 ; yalantinglibs/optimized/FieldGenerator.cpp.ll
-; yosys/optimized/opt_muxtree.ll
-; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000026(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -259,6 +245,32 @@ entry:
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 29
   %7 = getelementptr i8, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 14 occurrences:
+; ceres/optimized/cuda_block_structure.cc.ll
+; gromacs/optimized/biasgrid.cpp.ll
+; gromacs/optimized/biasstate.cpp.ll
+; ncnn/optimized/c_api.cpp.ll
+; opencv/optimized/denoising.cpp.ll
+; opencv/optimized/edgeboxes.cpp.ll
+; opencv/optimized/sinusoidalpattern.cpp.ll
+; opencv/optimized/webcam_demo.cpp.ll
+; openspiel/optimized/bargaining.cc.ll
+; openspiel/optimized/colored_trails.cc.ll
+; openspiel/optimized/matrix_game.cc.ll
+; tev/optimized/Ipc.cpp.ll
+; yosys/optimized/opt_muxtree.ll
+; yosys/optimized/rtlil.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000027(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 72
+  %5 = shl i64 %4, 32
+  %6 = ashr exact i64 %5, 29
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

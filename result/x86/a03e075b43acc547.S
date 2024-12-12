@@ -39,12 +39,7 @@ func0000000000000018:                   # @func0000000000000018
 	setl	%cl
 	subq	%rcx, %rax
 	retq
-func0000000000000020:                   # @func0000000000000020
-	movq	%rdi, %rax
-	cmpq	$2, %rsi
-	adcq	$-1, %rax
-	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	movq	%rdi, %rax
 	shrq	$54, %rsi
 	cmpq	$1, %rsi
@@ -56,8 +51,18 @@ func0000000000000011:                   # @func0000000000000011
 	cmpq	$1, %rsi
 	sbbq	$0, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	movq	%rdi, %rax
 	cmpq	$2, %rsi
+	sbbq	$0, %rax
+	retq
+func0000000000000051:                   # @func0000000000000051
+	movq	%rdi, %rax
+	cmpq	$-86400, %rsi                   # imm = 0xFFFEAE80
+	sbbq	$0, %rax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	movq	%rdi, %rax
+	cmpq	$10, %rsi
 	sbbq	$0, %rax
 	retq

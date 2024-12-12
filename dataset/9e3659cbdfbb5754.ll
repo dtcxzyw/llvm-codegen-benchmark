@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001a4(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -1
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000124(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -1
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/hostlist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add i64 %1, 16
@@ -42,7 +42,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000328(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1904

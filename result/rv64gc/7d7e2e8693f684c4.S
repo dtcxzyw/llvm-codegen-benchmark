@@ -15,3 +15,20 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	sub	a0, a0, a1
 	ret
+.LCPI1_0:
+	.quad	4835703278458516699             # 0x431bde82d7b634db
+func0000000000000003:                   # @func0000000000000003
+	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
+	mulh	a1, a0, a1
+	srli	a2, a1, 63
+	srai	a1, a1, 18
+	add	a1, a1, a2
+	lui	a2, 244
+	addiw	a2, a2, 576
+	mul	a1, a1, a2
+	sub	a0, a0, a1
+	srai	a1, a0, 63
+	xor	a0, a0, a1
+	sub	a0, a0, a1
+	ret

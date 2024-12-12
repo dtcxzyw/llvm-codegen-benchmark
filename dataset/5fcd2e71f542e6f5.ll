@@ -1,8 +1,6 @@
 
-; 33 occurrences:
+; 31 occurrences:
 ; abc/optimized/utilSort.c.ll
-; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; folly/optimized/TDigest.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; gromacs/optimized/inputrec.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -34,7 +32,7 @@
 ; yosys/optimized/opt_muxtree.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = add nuw nsw i64 %2, 4294967295
@@ -44,7 +42,7 @@ entry:
   ret i1 %6
 }
 
-; 217 occurrences:
+; 216 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -234,7 +232,6 @@ entry:
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
@@ -263,12 +260,26 @@ entry:
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4611686018427387900
   %5 = add nuw i64 %0, 4
+  %6 = icmp eq i64 %5, %4
+  ret i1 %6
+}
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; folly/optimized/TDigest.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000381(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 4
+  %3 = add nuw nsw i64 %2, 1
+  %4 = and i64 %3, 3
+  %5 = add i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
 }
@@ -289,7 +300,7 @@ entry:
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = add nuw i64 %2, 1
@@ -299,15 +310,16 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_colorcontrast.c.ll
 ; darktable/optimized/introspection_colormapping.c.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = add nuw nsw i64 %2, 1
@@ -317,16 +329,15 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; draco/optimized/hash_utils.cc.ll
-; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; faiss/optimized/IndexShards.cpp.ll
 ; faiss/optimized/IndexShardsIVF.cpp.ll
 ; opencv/optimized/motionSaliencyBinWangApr2014.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = add nuw nsw i64 %2, 1
@@ -339,7 +350,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000341(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = add nuw i64 %2, 1
@@ -352,7 +363,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000003c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = add nuw nsw i64 %2, 1
@@ -369,7 +380,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = add nsw i64 %2, -1

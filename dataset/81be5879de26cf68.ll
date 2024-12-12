@@ -3,7 +3,7 @@
 ; abc/optimized/extraUtilPath.c.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = or disjoint i32 %0, 15
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/msg_dlmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = or disjoint i32 %0, 2

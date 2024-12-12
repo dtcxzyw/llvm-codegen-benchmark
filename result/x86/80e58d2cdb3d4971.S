@@ -18,9 +18,17 @@ func000000000000000c:                   # @func000000000000000c
 	shll	$4, %edi
 	leaq	262144(%rdi), %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	xorl	%eax, %eax
 	testb	$6, %dil
 	setne	%al
 	leaq	8(,%rax,8), %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	andl	$7, %edi
+	xorl	%eax, %eax
+	cmpl	$3, %edi
+	setb	%al
+	shll	$4, %eax
+	addq	$16, %rax
 	retq

@@ -1,11 +1,12 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
 ; fmt/optimized/os.cc.ll
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
+; icu/optimized/calendar.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind

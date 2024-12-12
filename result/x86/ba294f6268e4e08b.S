@@ -1,9 +1,9 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	orw	%dx, %si
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	orw	%dx, %si
 	sete	%al
 	orb	%dil, %al
@@ -13,7 +13,7 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	orl	%edx, %esi
 	movzwl	%si, %eax
 	cmpl	$60001, %eax                    # imm = 0xEA61
@@ -27,7 +27,7 @@ func0000000000000010:                   # @func0000000000000010
 	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	orl	%edx, %esi
 	movzwl	%si, %eax
 	cmpl	$301, %eax                      # imm = 0x12D

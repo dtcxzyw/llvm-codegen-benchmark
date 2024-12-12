@@ -13,7 +13,7 @@
 define i16 @func0000000000000003(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 15
-  %4 = or disjoint i16 %3, %1
+  %4 = or disjoint i16 %1, %3
   %5 = or disjoint i16 %4, %0
   %6 = and i16 %5, -129
   ret i16 %6

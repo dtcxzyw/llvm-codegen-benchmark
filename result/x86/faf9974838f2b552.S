@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmovsl	%esi, %eax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	movl	%esi, %eax
 	negl	%eax
 	cmovsl	%esi, %eax
@@ -12,7 +12,7 @@ func000000000000000e:                   # @func000000000000000e
 	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	movl	%esi, %eax
 	negl	%eax
 	cmovsl	%esi, %eax

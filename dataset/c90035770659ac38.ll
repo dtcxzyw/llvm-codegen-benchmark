@@ -38,7 +38,7 @@ entry:
   ret i64 %7
 }
 
-; 48 occurrences:
+; 57 occurrences:
 ; clap-rs/optimized/5651dp9k16h53y8x.ll
 ; ockam-rs/optimized/18drj88gqh6dyxft.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
@@ -86,7 +86,16 @@ entry:
 ; tokio-rs/optimized/3k1p5lcuq1gqdulf.ll
 ; tokio-rs/optimized/4mr1mvhll2ekuv31.ll
 ; tokio-rs/optimized/4ni18r7xt9z3j0r8.ll
+; turborepo-rs/optimized/2nr6c96xnmy9oph33ghqn67cs.ll
+; turborepo-rs/optimized/5oyfkcp83qeshlhfpeq645wiv.ll
+; turborepo-rs/optimized/allq2hqzkn1ywqvzl6k501g1q.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002f(i64 %0, i64 %1, ptr %2) #0 {
 entry:

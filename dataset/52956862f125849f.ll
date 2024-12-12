@@ -1,12 +1,11 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; openmpi/optimized/coll_base_allreduce.ll
 ; openmpi/optimized/coll_base_reduce.ll
 ; openmpi/optimized/nbc_ireduce.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; raylib/optimized/rcore.c.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind

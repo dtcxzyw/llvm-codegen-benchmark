@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/classListWriter.ll
@@ -21,7 +21,6 @@
 ; openjdk/optimized/unregisteredClasses.ll
 ; openjdk/optimized/verifier.ll
 ; openjdk/optimized/zVerify.ll
-; postgres/optimized/checksum.ll
 ; postgres/optimized/file.ll
 ; postgres/optimized/pg_checksums.ll
 ; sqlite/optimized/sqlite3.ll

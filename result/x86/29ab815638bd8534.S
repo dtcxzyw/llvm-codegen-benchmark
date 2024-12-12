@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	imull	$-858993459, %esi, %eax         # imm = 0xCCCCCCCD
 	addl	$-858993459, %eax               # imm = 0xCCCCCCCD
 	rorxl	$1, %eax, %eax

@@ -13,7 +13,7 @@
 ; wireshark/optimized/packet-sync.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2052
   %3 = icmp ne i16 %2, 4
@@ -25,25 +25,12 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/node_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 128
   %3 = icmp eq i16 %2, 0
   %4 = icmp eq i32 %0, 6
   %5 = and i1 %3, %4
-  ret i1 %5
-}
-
-; 2 occurrences:
-; actix-rs/optimized/comsm606o4zjj7a.ll
-; wireshark/optimized/packet-ieee80211.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 7
-  %3 = icmp ult i16 %2, 3
-  %4 = icmp eq i32 %0, 7
-  %5 = and i1 %4, %3
   ret i1 %5
 }
 
@@ -60,7 +47,7 @@ entry:
 ; postgres/optimized/nbtutils.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16384
   %3 = icmp eq i16 %2, 0
@@ -76,7 +63,7 @@ entry:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16384
   %3 = icmp ne i16 %2, 0
@@ -85,23 +72,22 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; wireshark/optimized/packet-dhcp.c.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 3
-  %3 = icmp eq i16 %2, 3
-  %4 = icmp ult i32 %0, 18
-  %5 = and i1 %4, %3
+  %2 = and i16 %1, 14
+  %3 = icmp eq i16 %2, 0
+  %4 = icmp eq i32 %0, 15
+  %5 = and i1 %3, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; postgres/optimized/format_type.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i16 %1) #0 {
+define i1 @func000000000000018a(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp ne i16 %2, 0
@@ -114,11 +100,11 @@ entry:
 ; icu/optimized/collationfastlatinbuilder.ll
 ; icu/optimized/unisetspan.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -1024
   %3 = icmp eq i16 %2, -9216
-  %4 = icmp ugt i32 %0, 1
+  %4 = icmp samesign ugt i32 %0, 1
   %5 = and i1 %4, %3
   ret i1 %5
 }
@@ -128,7 +114,7 @@ entry:
 ; icu/optimized/ubidiwrt.ll
 ; icu/optimized/uniset.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -1024
   %3 = icmp eq i16 %2, -9216
@@ -138,21 +124,9 @@ entry:
 }
 
 ; 1 occurrences:
-; icu/optimized/ucptrie.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 7
-  %3 = icmp ult i16 %2, 3
-  %4 = icmp ult i32 %0, 2
-  %5 = and i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -33
   %3 = icmp ne i16 %2, 83

@@ -17,17 +17,17 @@
 define i1 @func000000000000000c(i1 %0, i8 %1) #0 {
 entry:
   %.not = icmp eq i8 %1, 22
-  %2 = and i1 %.not, %0
+  %2 = and i1 %0, %.not
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 2
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
@@ -44,17 +44,18 @@ entry:
 define i1 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, -1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; wasmtime-rs/optimized/377rrvl9zeztt32x.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 2
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 

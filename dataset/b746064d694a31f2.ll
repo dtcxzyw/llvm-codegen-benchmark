@@ -78,17 +78,20 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 100
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   ret i32 %3
 }
 
-; 58 occurrences:
+; 66 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -98,7 +101,6 @@ entry:
 ; darktable/optimized/OrfDecoder.cpp.ll
 ; darktable/optimized/Rw2Decoder.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
-; darktable/optimized/jpeg.c.ll
 ; darktable/optimized/timeline.c.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
@@ -119,10 +121,14 @@ entry:
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/vlv_dsi.ll
 ; llvm/optimized/GlobalsStream.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_calendar.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_refr.ll
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; minetest/optimized/texturesource.cpp.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; oiio/optimized/jpegoutput.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/UshortGray.ll
@@ -139,17 +145,19 @@ entry:
 ; wireshark/optimized/netmon.c.ll
 ; wireshark/optimized/packet-btavrcp.c.ll
 ; yosys/optimized/lz4.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 100
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 
-; 37 occurrences:
+; 44 occurrences:
 ; abc/optimized/darScript.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -159,6 +167,13 @@ entry:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/parsedate.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; curl/optimized/libcurl_la-parsedate.ll
@@ -166,7 +181,6 @@ entry:
 ; hwloc/optimized/lstopo-lstopo-ascii.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-ascii.ll
 ; icu/optimized/decNumber.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/islamcal.ll
 ; jq/optimized/decNumber.ll
 ; linux/optimized/timeconv.ll
@@ -175,6 +189,7 @@ entry:
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_calendar.ll
 ; postgres/optimized/dt_common.ll
 ; postgres/optimized/localtime.ll
 ; protobuf/optimized/parser.cc.ll
@@ -191,7 +206,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 400
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 

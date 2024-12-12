@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/lucky.c.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; clamav/optimized/bytecode_api.c.ll
@@ -13,7 +13,6 @@
 ; openblas/optimized/dimatcopy.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
-; openmpi/optimized/name_fns.ll
 ; openmpi/optimized/ompi_rte.ll
 ; openmpi/optimized/os_dirpath.ll
 ; php/optimized/strnatcmp.ll

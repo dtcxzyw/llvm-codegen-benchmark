@@ -1,11 +1,11 @@
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	zext.h	a1, a1
 	zext.h	a0, a0
 	sltu	a1, a0, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	zext.h	a0, a0
 	zext.h	a1, a1
 	xor	a1, a1, a0
@@ -13,7 +13,7 @@ func000000000000001c:                   # @func000000000000001c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	zext.h	a0, a0
 	zext.h	a1, a1
 	lui	a2, 12
@@ -24,7 +24,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	zext.h	a1, a1
 	zext.h	a0, a0
 	lui	a2, 16

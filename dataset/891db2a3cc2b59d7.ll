@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; abc/optimized/giaPat2.c.ll
 ; linux/optimized/hdmi.ll
 ; llvm/optimized/Visitor.cpp.ll
@@ -9,6 +9,8 @@
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; yosys/optimized/aigerparse.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
@@ -38,14 +40,13 @@ entry:
 define i8 @func000000000000000c(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 96
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i8 104, i8 96
   ret i8 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i1 %0, i8 %1) #0 {
 entry:
@@ -62,7 +63,7 @@ entry:
 define i8 @func0000000000000004(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 3
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i8 4, i8 1
   ret i8 %4
 }

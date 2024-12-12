@@ -4,12 +4,12 @@
 ; linux/optimized/drm_edid.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = zext nneg i8 %2 to i64
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -19,7 +19,7 @@ entry:
 ; libquic/optimized/cbs.c.ll
 ; qemu/optimized/crypto_der.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 127
   %3 = zext nneg i8 %2 to i64
@@ -28,7 +28,7 @@ entry:
   ret i1 %5
 }
 
-; 38 occurrences:
+; 40 occurrences:
 ; brotli/optimized/static_dict.c.ll
 ; clamav/optimized/7zIn.c.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
@@ -66,9 +66,11 @@ entry:
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-iuup.c.ll
 ; wireshark/optimized/packet-x25.c.ll
-; wireshark/optimized/packet-zbee-zcl-ha.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 127
   %3 = zext nneg i8 %2 to i64
@@ -80,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/cbs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 127
   %3 = zext nneg i8 %2 to i64

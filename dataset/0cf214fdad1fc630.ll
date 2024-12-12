@@ -7,7 +7,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = uitofp nneg i32 %3 to double
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 
@@ -27,7 +27,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
   %4 = uitofp nneg i32 %3 to double
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

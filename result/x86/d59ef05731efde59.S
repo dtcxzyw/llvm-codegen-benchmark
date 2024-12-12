@@ -39,3 +39,10 @@ func000000000000004f:                   # @func000000000000004f
 	cmpq	$1, %rdx
 	adcq	%rdi, %rax
 	retq
+func0000000000000280:                   # @func0000000000000280
+	notq	%rdx
+	shrq	$63, %rdx
+	andl	$1, %esi
+	leaq	(%rsi,%rdi), %rax
+	addq	%rdx, %rax
+	retq

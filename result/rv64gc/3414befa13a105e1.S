@@ -1,10 +1,10 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a1
 	beqz	a1, .LBB0_2
 	negw	a0, a0
 .LBB0_2:                                # %entry
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sext.w	a1, a1
 	li	a2, 4
 	bltu	a1, a2, .LBB1_2
@@ -23,20 +23,20 @@ func000000000000000a:                   # @func000000000000000a
 	negw	a0, a0
 .LBB3_2:                                # %entry
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sext.w	a1, a1
 	bgez	a1, .LBB4_2
 	negw	a0, a0
 .LBB4_2:                                # %entry
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sext.w	a1, a1
 	beqz	a1, .LBB5_2
 	li	a1, 8
 	subw	a0, a1, a0
 .LBB5_2:                                # %entry
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	sext.w	a1, a1
 	li	a2, 7
 	bltu	a2, a1, .LBB6_2
@@ -44,13 +44,13 @@ func0000000000000038:                   # @func0000000000000038
 	subw	a0, a1, a0
 .LBB6_2:                                # %entry
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a1, a1
 	bnez	a1, .LBB7_2
 	negw	a0, a0
 .LBB7_2:                                # %entry
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sext.w	a1, a1
 	bltz	a1, .LBB8_2
 	negw	a0, a0
@@ -62,7 +62,7 @@ func0000000000000006:                   # @func0000000000000006
 	negw	a0, a0
 .LBB9_2:                                # %entry
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	srliw	a1, a1, 24
 	li	a2, 129
 	bltu	a1, a2, .LBB10_2

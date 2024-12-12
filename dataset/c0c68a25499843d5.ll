@@ -10,12 +10,14 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/inet_connection_sock.ll
 ; linux/optimized/tcp_minisocks.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/packet-rtcp.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:

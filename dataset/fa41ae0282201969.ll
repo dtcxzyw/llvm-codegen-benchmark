@@ -117,10 +117,9 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; postgres/optimized/float.ll
 ; qdrant-rs/optimized/4iacc535829shmz2.ll
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000182(float %0, float %1) #0 {
 entry:
@@ -148,17 +147,6 @@ define i1 @func00000000000001a6(float %0, float %1) #0 {
 entry:
   %2 = fcmp uge float %0, %1
   %3 = fcmp ult float %0, 0.000000e+00
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/weighted_median_filter.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000110(float %0, float %1) #0 {
-entry:
-  %2 = fcmp oeq float %0, 0.000000e+00
-  %3 = fcmp oeq float %0, %1
   %4 = or i1 %3, %2
   ret i1 %4
 }

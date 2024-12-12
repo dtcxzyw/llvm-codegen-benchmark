@@ -49,18 +49,6 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = shl nuw nsw i32 %2, 21
-  %4 = lshr i32 %0, 2
-  %5 = or i32 %4, %3
-  ret i32 %5
-}
-
 ; 2 occurrences:
 ; cpython/optimized/floatobject.ll
 ; wireshark/optimized/packet-fp_hint.c.ll

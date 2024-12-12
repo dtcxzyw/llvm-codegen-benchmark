@@ -1,8 +1,9 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; postgres/optimized/wchar.ll
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll

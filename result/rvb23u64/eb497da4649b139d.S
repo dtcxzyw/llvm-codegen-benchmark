@@ -29,6 +29,15 @@ func00000000000000f8:                   # @func00000000000000f8
 	sh2add	a0, a1, a0
 	add	a0, a0, a2
 	ret
+func00000000000000fc:                   # @func00000000000000fc
+	li	a3, 1
+	slli	a3, a3, 33
+	addi	a3, a3, -4
+	sh1add	a2, a2, a3
+	and	a2, a2, a3
+	sh3add	a0, a1, a0
+	sh3add	a0, a2, a0
+	ret
 func00000000000000f0:                   # @func00000000000000f0
 	li	a3, 1
 	slli	a3, a3, 34

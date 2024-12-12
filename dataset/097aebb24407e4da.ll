@@ -12,7 +12,7 @@ define float @func0000000000000000(float %0, i8 %1) #0 {
 entry:
   %2 = uitofp i8 %1 to float
   %3 = fmul float %2, 0x3F847AE140000000
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 

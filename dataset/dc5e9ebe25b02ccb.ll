@@ -248,13 +248,12 @@ entry:
   ret i64 %3
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/inet_hashtables.ll
-; linux/optimized/kvmclock.ll
 ; linux/optimized/mballoc.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll

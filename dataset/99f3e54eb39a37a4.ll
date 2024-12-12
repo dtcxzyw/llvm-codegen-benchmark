@@ -16,7 +16,7 @@ entry:
 define i8 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = trunc nuw i32 %3 to i8
   ret i8 %4
 }
@@ -47,6 +47,17 @@ entry:
 define i8 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 64
+  %3 = sub i32 %2, %0
+  %4 = trunc i32 %3 to i8
+  ret i8 %4
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 239
   %3 = sub i32 %2, %0
   %4 = trunc i32 %3 to i8
   ret i8 %4

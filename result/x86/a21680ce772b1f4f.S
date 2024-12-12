@@ -10,6 +10,12 @@ func0000000000000006:                   # @func0000000000000006
 	cltq
 	leaq	(%rdi,%rax,2), %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	sarl	$16, %esi
+	imull	$104, %esi, %eax
+	cltq
+	addq	%rdi, %rax
+	retq
 func0000000000000016:                   # @func0000000000000016
 	sarl	%esi
 	leal	(%rsi,%rsi,2), %eax

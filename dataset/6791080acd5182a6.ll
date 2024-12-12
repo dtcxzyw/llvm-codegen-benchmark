@@ -125,7 +125,8 @@ entry:
   ret i1 %5
 }
 
-; 71 occurrences:
+; 72 occurrences:
+; boost/optimized/to_chars.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll

@@ -1,9 +1,13 @@
 
-; 4 occurrences:
+; 8 occurrences:
 ; base64-rs/optimized/1a4jkh1d8jsuhv4c.ll
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/2coqqf198wkzirvxqog0epalb.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
+; zed-rs/optimized/a4ig8dgz5t1q56qsxep8b7iux.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i1 %1) #0 {
 entry:

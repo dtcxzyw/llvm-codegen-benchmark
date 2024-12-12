@@ -17,15 +17,28 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/AArch64ISelLowering.cpp.ll
+; 1 occurrences:
 ; openspiel/optimized/maedn.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i8 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -11
-  %3 = icmp ult i32 %2, -4
+  %2 = add nsw i32 %1, -1
+  %3 = icmp ult i32 %2, 2
   %4 = trunc i8 %0 to i1
+  %5 = and i1 %3, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; cmake/optimized/cmInstallCommand.cxx.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c4(i8 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -91
+  %3 = icmp ult i32 %2, -26
+  %4 = trunc nuw i8 %0 to i1
   %5 = and i1 %3, %4
   ret i1 %5
 }

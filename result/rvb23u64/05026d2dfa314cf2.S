@@ -46,13 +46,17 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, -1
 	slli	a0, a0, 49
 	ret
+func000000000000001b:                   # @func000000000000001b
+	addi	a0, a0, 1
+	slli.uw	a0, a0, 4
+	ret
+func0000000000000017:                   # @func0000000000000017
+	addiw	a0, a0, 1
+	slli	a0, a0, 3
+	ret
 func0000000000000012:                   # @func0000000000000012
 	addi	a0, a0, 1
 	slli	a0, a0, 32
-	ret
-func000000000000001b:                   # @func000000000000001b
-	addi	a0, a0, 1846
-	slli.uw	a0, a0, 1
 	ret
 func000000000000001c:                   # @func000000000000001c
 	slli	a0, a0, 48
@@ -74,8 +78,4 @@ func000000000000000e:                   # @func000000000000000e
 	li	a1, -1
 	slli	a1, a1, 58
 	add	a0, a0, a1
-	ret
-func0000000000000017:                   # @func0000000000000017
-	addiw	a0, a0, 1
-	slli	a0, a0, 4
 	ret

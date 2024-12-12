@@ -89,6 +89,20 @@ entry:
   ret i32 %4
 }
 
+; 4 occurrences:
+; boost/optimized/to_chars.ll
+; faiss/optimized/ProductQuantizer.cpp.ll
+; icu/optimized/ucnv_u8.ll
+; libquic/optimized/print.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i8 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = zext nneg i8 %0 to i32
+  %4 = add nsw i32 %3, %2
+  ret i32 %4
+}
+
 ; 5 occurrences:
 ; libquic/optimized/spdy_framer.cc.ll
 ; linux/optimized/hooks.ll
@@ -104,23 +118,9 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; faiss/optimized/ProductQuantizer.cpp.ll
-; icu/optimized/ucnv_u8.ll
-; libquic/optimized/print.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i8 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = zext nneg i8 %0 to i32
-  %4 = add nsw i32 %3, %2
-  ret i32 %4
-}
-
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/ip_fragment.ll
 ; linux/optimized/nf_conntrack_core.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; llvm/optimized/StackMaps.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll

@@ -1,4 +1,4 @@
-func0000000000000244:                   # @func0000000000000244
+func0000000000000884:                   # @func0000000000000884
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -10,7 +10,7 @@ func0000000000000244:                   # @func0000000000000244
 	srliw	a0, a0, 28
 	seqz	a0, a0
 	ret
-func0000000000000246:                   # @func0000000000000246
+func0000000000000886:                   # @func0000000000000886
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -21,7 +21,7 @@ func0000000000000246:                   # @func0000000000000246
 	sllw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
-func000000000000024a:                   # @func000000000000024a
+func000000000000088a:                   # @func000000000000088a
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

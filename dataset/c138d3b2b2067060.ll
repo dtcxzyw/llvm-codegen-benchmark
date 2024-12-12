@@ -1,7 +1,9 @@
 
-; 111 occurrences:
+; 113 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/giaShrink7.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll
 ; ceres/optimized/corrector.cc.ll

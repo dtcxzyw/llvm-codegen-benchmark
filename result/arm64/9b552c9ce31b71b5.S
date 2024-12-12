@@ -1,54 +1,32 @@
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	movi	v5.4s, #31
-	add	v1.4s, v1.4s, v3.4s
-	add	v2.4s, v2.4s, v4.4s
-	ushll	v3.4s, v0.4h, #0
-	ushll2	v0.4s, v0.8h, #0
-	and	v1.16b, v1.16b, v5.16b
-	and	v2.16b, v2.16b, v5.16b
-	cmeq	v0.4s, v2.4s, v0.4s
-	cmeq	v1.4s, v1.4s, v3.4s
-	uzp1	v0.8h, v1.8h, v0.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w1, w2
+	and	w8, w8, #0x1f
+	cmp	w8, w0, uxth
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000061:                   // @func0000000000000061
+func00000000000000c1:                   // @func00000000000000c1
 // %bb.0:                               // %entry
-	add	v2.4s, v2.4s, v4.4s
-	add	v1.4s, v1.4s, v3.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	cmeq	v0.8h, v1.8h, v0.8h
-	xtn	v0.8b, v0.8h
+	and	w8, w0, #0xffff
+	add	w9, w1, w2
+	cmp	w8, w9, uxth
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000004:                   // @func0000000000000004
+func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	movi	v5.2d, #0x00ffff0000ffff
-	add	v1.4s, v1.4s, v3.4s
-	add	v2.4s, v2.4s, v4.4s
-	ushll	v3.4s, v0.4h, #0
-	ushll2	v0.4s, v0.8h, #0
-	and	v1.16b, v1.16b, v5.16b
-	and	v2.16b, v2.16b, v5.16b
-	cmhi	v0.4s, v0.4s, v2.4s
-	cmhi	v1.4s, v3.4s, v1.4s
-	uzp1	v0.8h, v1.8h, v0.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w1, w2
+	and	w8, w8, #0xffff
+	cmp	w8, w0, uxth
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000064:                   // @func0000000000000064
+func00000000000000d4:                   // @func00000000000000d4
 // %bb.0:                               // %entry
-	movi	v5.2d, #0x00ffff0000ffff
-	add	v1.4s, v1.4s, v3.4s
-	add	v2.4s, v2.4s, v4.4s
-	ushll	v3.4s, v0.4h, #0
-	ushll2	v0.4s, v0.8h, #0
-	and	v1.16b, v1.16b, v5.16b
-	and	v2.16b, v2.16b, v5.16b
-	cmhi	v0.4s, v0.4s, v2.4s
-	cmhi	v1.4s, v3.4s, v1.4s
-	uzp1	v0.8h, v1.8h, v0.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w1, w2
+	and	w8, w8, #0xffff
+	cmp	w8, w0, uxth
+	cset	w0, lo
 	ret
                                         // -- End function

@@ -14,13 +14,13 @@
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1) #0 {
 entry:
   %2 = shl i64 %0, 1
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
   %5 = select i1 %1, i64 %4, i64 %3
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

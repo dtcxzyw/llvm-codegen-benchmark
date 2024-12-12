@@ -1,5 +1,5 @@
 
-; 260 occurrences:
+; 257 occurrences:
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inflate.c.ll
 ; clamav/optimized/BraIA64.c.ll
@@ -22,7 +22,6 @@
 ; linux/optimized/i915_syncmap.ll
 ; linux/optimized/inflate.ll
 ; linux/optimized/md-bitmap.ll
-; linux/optimized/vclock_gettime.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
@@ -251,9 +250,7 @@
 ; qemu/optimized/util_hbitmap.c.ll
 ; raylib/optimized/rcore.c.ll
 ; rocksdb/optimized/crc32c.cc.ll
-; rocksdb/optimized/version_set.cc.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
-; spike/optimized/s_shortShiftLeft64To96M.ll
 ; vcpkg/optimized/uuid.cpp.ll
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll

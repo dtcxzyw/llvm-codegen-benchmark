@@ -1,8 +1,6 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v0.16b, v2.16b
-	ushr	v1.8h, v1.8h, #8
-	ushr	v0.8h, v0.8h, #8
+	and	w8, w0, w1
+	ubfx	w0, w8, #8, #8
 	ret
                                         // -- End function

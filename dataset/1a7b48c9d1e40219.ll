@@ -24,7 +24,7 @@
 ; meshlab/optimized/normalize_unitbox.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000025a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = sdiv i64 %3, 4

@@ -3,7 +3,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$3, %eax
 	cmovll	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%esi, %eax
 	addl	$-48, %eax
 	cmovel	%edi, %eax
@@ -28,7 +28,12 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$3, %eax
 	cmovbl	%edi, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000014:                   # @func0000000000000014
+	leal	15(%rsi), %eax
+	cmpl	$1024, %eax                     # imm = 0x400
+	cmovbl	%edi, %eax
+	retq
+func0000000000000028:                   # @func0000000000000028
 	leal	-48(%rsi), %eax
 	cmpl	$10, %eax
 	cmovael	%edi, %eax

@@ -3,7 +3,7 @@
 ; flac/optimized/cuesheet.c.ll
 ; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = freeze i64 %2
@@ -11,11 +11,12 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/default_formatter_factory.ll
 ; flac/optimized/cuesheet.c.ll
 ; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = freeze i64 %2
@@ -23,7 +24,20 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 1 occurrences:
+; flac/optimized/cuesheet.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %0, %1
+  %3 = freeze i64 %2
+  %4 = icmp samesign ugt i64 %3, 255
+  ret i1 %4
+}
+
+; 9 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; git/optimized/trace.ll
@@ -40,7 +54,9 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; lief/optimized/bignum.c.ll
 ; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
@@ -53,15 +69,14 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; hermes/optimized/Lowering.cpp.ll
-; hermes/optimized/Operations.cpp.ll
+; 1 occurrences:
+; lief/optimized/bignum.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %0, %1
+  %2 = add i64 %0, %1
   %3 = freeze i64 %2
-  %4 = icmp ult i64 %3, 4294967296
+  %4 = icmp samesign ugt i64 %3, 239
   ret i1 %4
 }
 
@@ -69,7 +84,19 @@ entry:
 ; hermes/optimized/Lowering.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %0, %1
+  %3 = freeze i64 %2
+  %4 = icmp samesign ult i64 %3, 4294967296
+  ret i1 %4
+}
+
+; 2 occurrences:
+; hermes/optimized/Lowering.cpp.ll
+; hermes/optimized/Operations.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = freeze i64 %2
@@ -81,7 +108,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %0, %1
   %3 = freeze i64 %2
@@ -103,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_groups.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = freeze i64 %2
@@ -114,7 +141,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = freeze i64 %2

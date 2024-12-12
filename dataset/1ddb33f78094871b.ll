@@ -37,7 +37,7 @@
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000a6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -53,7 +53,7 @@ entry:
 ; opencv/optimized/graphsegmentation.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -105,7 +105,7 @@ entry:
 ; openusd/optimized/cpuVertexBuffer.cpp.ll
 ; pocketpy/optimized/array2d.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000e6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -121,7 +121,7 @@ entry:
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/seamless_cloning_impl.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000066(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = icmp slt i32 %3, 0

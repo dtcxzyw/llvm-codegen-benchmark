@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
@@ -9,6 +9,7 @@
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
+; boost/optimized/static_string.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -42,12 +43,14 @@
 ; wasmtime-rs/optimized/1r2x5absurxbrq18.ll
 ; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
@@ -65,27 +68,28 @@ entry:
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/static_string.ll
 ; hwloc/optimized/hwloc_dump_hwdata-hwloc-dump-hwdata-knl.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; redis/optimized/ldo.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
@@ -93,11 +97,11 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000003e4(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 3
   %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
@@ -105,11 +109,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MCInstrDesc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000001ec(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i16, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 2
+  %4 = getelementptr nusw nuw i16, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 2
   %6 = icmp ne ptr %5, %4
   ret i1 %6
 }
@@ -117,11 +121,11 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000003ec(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp ne ptr %5, %4
   ret i1 %6
 }
@@ -141,7 +145,7 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr i32, ptr %1, i64 %3

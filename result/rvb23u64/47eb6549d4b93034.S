@@ -1,9 +1,3 @@
-func000000000000001f:                   # @func000000000000001f
-	or	a0, a0, a1
-	slli	a0, a0, 10
-	lui	a1, 16
-	addw	a0, a0, a1
-	ret
 func000000000000000e:                   # @func000000000000000e
 	or	a0, a0, a1
 	slli	a0, a0, 2
@@ -40,6 +34,11 @@ func0000000000000010:                   # @func0000000000000010
 	or	a0, a0, a1
 	slli	a0, a0, 1
 	addiw	a0, a0, -4
+	ret
+func000000000000001f:                   # @func000000000000001f
+	or	a0, a0, a1
+	slli	a0, a0, 2
+	addiw	a0, a0, 4
 	ret
 func0000000000000000:                   # @func0000000000000000
 	or	a0, a0, a1

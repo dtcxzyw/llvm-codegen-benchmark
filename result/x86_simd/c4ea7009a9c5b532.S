@@ -20,7 +20,7 @@ func0000000000000001:                   # @func0000000000000001
 	.short	4                               # 0x4
 	.short	4                               # 0x4
 	.short	4                               # 0x4
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestmw	.LCPI1_0(%rip), %xmm1, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq

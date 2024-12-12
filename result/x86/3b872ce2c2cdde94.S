@@ -20,8 +20,3 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$96, %eax
 	setb	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
-	imull	$1000000, %edi, %eax            # imm = 0xF4240
-	cmpl	$2000000000, %eax               # imm = 0x77359400
-	setae	%al
-	retq

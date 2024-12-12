@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 72 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
@@ -68,11 +68,15 @@
 ; wireshark/optimized/packet-windows-common.c.ll
 ; wireshark/optimized/packet_list.cpp.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, %0
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
@@ -114,6 +118,7 @@ entry:
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
@@ -170,7 +175,6 @@ entry:
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wbxml.c.ll
 ; wireshark/optimized/packet-zbee-nwk-gp.c.ll
-; wireshark/optimized/wimax_utils.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; z3/optimized/bit_blaster_rewriter.cpp.ll
 ; z3/optimized/dl_util.cpp.ll
@@ -188,7 +192,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 
@@ -299,7 +303,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = icmp ult i32 %2, %1
+  %3 = icmp ugt i32 %1, %2
   ret i1 %3
 }
 
@@ -311,7 +315,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -330,7 +334,7 @@ entry:
 define i1 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = icmp uge i32 %2, %1
+  %3 = icmp ule i32 %1, %2
   ret i1 %3
 }
 
@@ -341,7 +345,7 @@ entry:
 define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, %0
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
   ret i1 %3
 }
 
@@ -349,40 +353,40 @@ entry:
 ; clamav/optimized/bytecode.c.ll
 ; wolfssl/optimized/pkcs12.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, %0
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-bgp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %0, %1
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; openspiel/optimized/infostate_tree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = icmp ult i32 %2, %1
+  %3 = icmp ugt i32 %1, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; openblas/optimized/dlantp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, %0
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 

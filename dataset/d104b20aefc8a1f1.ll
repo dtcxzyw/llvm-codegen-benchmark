@@ -1,14 +1,15 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; proj/optimized/adams.cpp.ll
 ; quantlib/optimized/bivariatenormaldistribution.ll
 ; quantlib/optimized/cdsoption.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 0.000000e+00
   %4 = select i1 %3, double %0, double %1
-  %5 = fsub double 1.000000e-01, %4
+  %5 = fsub double 4.000000e+00, %4
   ret double %5
 }
 

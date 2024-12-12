@@ -1,5 +1,5 @@
 func0000000000000000:                   # @func0000000000000000
 	movq	%rdi, %rax
 	subl	%esi, %eax
-	shrl	$24, %eax
+	shrl	$3, %eax
 	retq

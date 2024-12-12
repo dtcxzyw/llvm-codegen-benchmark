@@ -1,5 +1,6 @@
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/cmdline.ll
 ; cvc5/optimized/cegis_core_connective.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -11,7 +12,7 @@
 ; openjdk/optimized/splashscreen_impl.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -21,7 +22,7 @@ entry:
   ret i1 %7
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -39,9 +40,10 @@ entry:
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/pipeline.cpp.ll
+; velox/optimized/SparseHll.cpp.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -51,7 +53,7 @@ entry:
   ret i1 %7
 }
 
-; 37 occurrences:
+; 39 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ProcessHelper.cpp.ll
@@ -80,8 +82,10 @@ entry:
 ; openspiel/optimized/efg_game.cc.ll
 ; openusd/optimized/collisionGroup.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
+; velox/optimized/SparseHll.cpp.ll
 ; velox/optimized/Variant.cpp.ll
 ; wasmedge/optimized/global.cpp.ll
+; wasmedge/optimized/tableInstr.cpp.ll
 ; wasmedge/optimized/validator.cpp.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; xgboost/optimized/iterative_dmatrix.cc.ll
@@ -90,7 +94,7 @@ entry:
 ; yosys/optimized/smv.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -100,10 +104,24 @@ entry:
   ret i1 %7
 }
 
+; 2 occurrences:
+; minetest/optimized/CB3DMeshFileLoader.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = ashr exact i64 %4, 2
+  %6 = and i64 %0, 4294967295
+  %7 = icmp samesign ult i64 %5, %6
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; linux/optimized/compaction.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

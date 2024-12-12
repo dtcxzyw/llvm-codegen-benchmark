@@ -8,7 +8,7 @@
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 6
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = srem i32 %3, 24
   ret i32 %4
 }
@@ -19,7 +19,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, -10
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = srem i32 %3, 40
   ret i32 %4
 }

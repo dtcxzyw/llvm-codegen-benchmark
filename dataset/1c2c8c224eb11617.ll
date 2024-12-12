@@ -21,17 +21,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; qemu/optimized/hw_pci_pcie_sriov.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nuw i32 %1, %2
-  %4 = icmp ugt i32 %3, 8
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
-}
-
 ; 29 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
@@ -63,7 +52,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sle i32 %1, %2
   %4 = select i1 %3, i1 true, i1 %0
@@ -75,7 +64,7 @@ entry:
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = icmp ult i32 %3, 9
@@ -107,8 +96,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
+; llvm/optimized/LegalizeIntegerTypes.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
 ; Function Attrs: nounwind
@@ -131,17 +122,6 @@ define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp ult i32 %3, 15
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; abc/optimized/cbaBlast.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = icmp ult i32 %3, 3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -178,7 +158,7 @@ entry:
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; redis/optimized/lauxlib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 127
@@ -186,11 +166,23 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; sqlite/optimized/sqlite3.ll
+; zxing/optimized/PDFDetectionResultColumn.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %1, %2
+  %4 = select i1 %3, i1 true, i1 %0
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; oiio/optimized/strutil.cpp.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = select i1 %3, i1 true, i1 %0
@@ -200,7 +192,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/virtio_net.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp ne i32 %3, 1
@@ -208,22 +200,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; sqlite/optimized/sqlite3.ll
-; zxing/optimized/PDFDetectionResultColumn.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = icmp eq i32 %3, 1
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp ugt i32 %3, 15

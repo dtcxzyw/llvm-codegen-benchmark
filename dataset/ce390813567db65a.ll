@@ -1,9 +1,10 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/SemaAccess.cpp.ll
 ; rocksdb/optimized/block.cc.ll
+; wireshark/optimized/dot11decrypt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq i64 %1, 0
@@ -19,7 +20,7 @@ entry:
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; luau/optimized/Parser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000318(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 1
   %4 = icmp ne ptr %1, null
@@ -31,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ult i64 %1, 256
@@ -44,7 +45,7 @@ entry:
 ; osqp/optimized/osqp_api.c.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000058(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne ptr %1, null

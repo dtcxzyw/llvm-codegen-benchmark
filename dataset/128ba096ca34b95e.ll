@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/classFileParser.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i16 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = mul nuw nsw i32 %2, 10
@@ -181,7 +181,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i32 %0, i16 %1) #0 {
+define i1 @func00000000000003a1(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = mul nuw nsw i32 %2, 27
@@ -190,11 +190,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; wireshark/optimized/packet-cip.c.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i16 %1) #0 {
+define i1 @func00000000000001e8(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = mul nuw nsw i32 %2, 6

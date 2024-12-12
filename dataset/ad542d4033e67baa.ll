@@ -1,21 +1,14 @@
 
-; 50 occurrences:
+; 43 occurrences:
 ; cvc5/optimized/cegis_core_connective.cpp.ll
 ; cvc5/optimized/cegis_unif.cpp.ll
 ; cvc5/optimized/sygus_enumerator.cpp.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
-; flatbuffers/optimized/binary_annotator.cpp.ll
 ; git/optimized/pretty.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
-; hermes/optimized/Executor.cpp.ll
-; linux/optimized/badblocks.ll
 ; linux/optimized/ehci-dbgp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/GlobalSplit.cpp.ll
-; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; slurm/optimized/file_functions.ll
-; spike/optimized/vslideup_vi.ll
 ; yosys/optimized/abc.ll
 ; yosys/optimized/aiger.ll
 ; yosys/optimized/async2sync.ll
@@ -51,11 +44,11 @@
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp ugt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp samesign ult i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -88,8 +81,8 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4095
-  %4 = icmp eq i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -99,7 +92,7 @@ entry:
 define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4096
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp ule i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -111,16 +104,31 @@ entry:
 define i1 @func0000000000000006(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 9 occurrences:
-; actix-rs/optimized/4mbibhikoaniv1dm.ll
-; hermes/optimized/CharacterProperties.cpp.ll
+; 7 occurrences:
+; flatbuffers/optimized/binary_annotator.cpp.ll
+; hermes/optimized/Executor.cpp.ll
 ; linux/optimized/badblocks.ll
-; linux/optimized/cap_audit.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/GlobalSplit.cpp.ll
+; llvm/optimized/LegalizeVectorTypes.cpp.ll
+; spike/optimized/vslideup_vi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = icmp ult i64 %1, %3
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 7 occurrences:
+; actix-rs/optimized/4mbibhikoaniv1dm.ll
+; linux/optimized/badblocks.ll
 ; linux/optimized/hugetlb.ll
 ; llvm/optimized/ControlFlowUtils.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
@@ -130,7 +138,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -145,25 +153,30 @@ entry:
 define i1 @func0000000000000007(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp sge i64 %3, %1
+  %4 = icmp sle i64 %1, %3
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; hermes/optimized/CharacterProperties.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = icmp samesign ugt i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 8 occurrences:
+; 2 occurrences:
 ; hermes/optimized/CharacterProperties.cpp.ll
-; icu/optimized/rematch.ll
-; linux/optimized/drm_buddy.ll
-; linux/optimized/gup.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
-; llvm/optimized/GlobalSplit.cpp.ll
-; llvm/optimized/RegAllocGreedy.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000019(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp samesign uge i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -180,7 +193,22 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
+  %5 = and i1 %4, %0
+  ret i1 %5
+}
+
+; 5 occurrences:
+; icu/optimized/rematch.ll
+; linux/optimized/drm_buddy.ll
+; linux/optimized/gup.ll
+; llvm/optimized/GlobalSplit.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = icmp uge i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -191,8 +219,8 @@ entry:
 define i1 @func000000000000000b(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65535
-  %4 = icmp sle i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp sge i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

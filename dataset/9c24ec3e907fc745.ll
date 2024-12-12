@@ -5,7 +5,7 @@
 ; openssl/optimized/libcrypto-shlib-asymcipher.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000842(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = icmp eq i32 %1, 2
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/quic_multistream_test-bin-quic_multistream_test.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000882(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000002102(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = icmp ult i32 %1, 2
@@ -33,7 +33,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-cms_smime.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000394(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000b14(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -49,7 +49,7 @@ entry:
 ; wireshark/optimized/packet-do-irp.c.ll
 ; z3/optimized/dimacs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000822(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000002042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
   %4 = icmp eq i32 %1, 28
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ping.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000382(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000b02(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 18
   %4 = icmp ne i32 %1, 0

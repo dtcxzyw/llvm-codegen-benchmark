@@ -1,17 +1,11 @@
 
-; 29 occurrences:
+; 23 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/skl_watermark.ll
 ; qemu/optimized/ahci.c.ll
 ; qemu/optimized/block_qed-check.c.ll
 ; slurm/optimized/job_mgr.ll
-; spike/optimized/kdmabt16.ll
-; spike/optimized/kdmatt16.ll
-; spike/optimized/kdmbt16.ll
-; spike/optimized/kdmtt16.ll
-; spike/optimized/khmbt16.ll
-; spike/optimized/khmtt16.ll
 ; spike/optimized/pbsad.ll
 ; spike/optimized/pbsada.ll
 ; spike/optimized/smaqa_su.ll

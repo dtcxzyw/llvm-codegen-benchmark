@@ -1,5 +1,5 @@
 
-; 125 occurrences:
+; 126 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -19,10 +19,13 @@
 ; cpython/optimized/_asynciomodule.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; darktable/optimized/introspection_lens.cc.ll
+; freetype/optimized/psaux.c.ll
 ; git/optimized/shortlog.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/tng_compress.c.ll
 ; grpc/optimized/ev_poll_posix.cc.ll
+; grpc/optimized/socket_utils_posix.cc.ll
+; grpc/optimized/tcp_socket_utils.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/regexec.c.ll
 ; hyperscan/optimized/ng_depth.cpp.ll
@@ -37,13 +40,10 @@
 ; libwebp/optimized/alpha_enc.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; libzmq/optimized/pipe.cpp.ll
-; linux/optimized/bitmap-str.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/nls_utf8.ll
 ; linux/optimized/sys.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/vsyscall_64.ll
@@ -61,7 +61,6 @@
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RegisterScavenging.cpp.ll
@@ -115,7 +114,6 @@
 ; slurm/optimized/mpi_cray_shasta_la-apinfo.ll
 ; slurm/optimized/reservation.ll
 ; soc-simulator/optimized/sim_mycpu.ll
-; spike/optimized/triggers.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/prefs.c.ll
 ; wolfssl/optimized/signature.c.ll
@@ -124,6 +122,9 @@
 ; yosys/optimized/simplify.ll
 ; z3/optimized/expr_context_simplifier.cpp.ll
 ; z3/optimized/pb_pb.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
 ; zxing/optimized/MCDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {

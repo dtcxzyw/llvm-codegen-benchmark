@@ -1,26 +1,20 @@
 
-%union.yyalloc.2485222 = type { %union.YYSTYPE.2485221, [8 x i8] }
-%union.YYSTYPE.2485221 = type { i64 }
-%union.yyalloc.2486236 = type { %union.YYSTYPE.2486235, [8 x i8] }
-%union.YYSTYPE.2486235 = type { i64 }
-%"class.std::__1::tuple.2487529" = type { %"struct.std::__1::__tuple_impl.2487530" }
-%"struct.std::__1::__tuple_impl.2487530" = type <{ %"class.std::__1::__tuple_leaf.2487531", %"class.std::__1::__tuple_leaf.50.2487532", %"class.std::__1::__tuple_leaf.51.2487533", [7 x i8] }>
-%"class.std::__1::__tuple_leaf.2487531" = type { %"class.std::__1::basic_string.2487482" }
-%"class.std::__1::basic_string.2487482" = type { %"class.std::__1::__compressed_pair.1.2487483" }
-%"class.std::__1::__compressed_pair.1.2487483" = type { %"struct.std::__1::__compressed_pair_elem.2.2487484" }
-%"struct.std::__1::__compressed_pair_elem.2.2487484" = type { %"struct.std::__1::basic_string<char>::__rep.2487485" }
-%"struct.std::__1::basic_string<char>::__rep.2487485" = type { %union.anon.2487486 }
-%union.anon.2487486 = type { %"struct.std::__1::basic_string<char>::__long.2487487" }
-%"struct.std::__1::basic_string<char>::__long.2487487" = type { %struct.anon.3.2487488, i64, ptr }
-%struct.anon.3.2487488 = type { i64 }
-%"class.std::__1::__tuple_leaf.50.2487532" = type { %"class.std::__1::basic_string.2487482" }
-%"class.std::__1::__tuple_leaf.51.2487533" = type { i8 }
-%"class.std::__1::vector.113.2493797" = type { ptr, ptr, %"class.std::__1::__compressed_pair.114.2493798" }
-%"class.std::__1::__compressed_pair.114.2493798" = type { %"struct.std::__1::__compressed_pair_elem.115.2493799" }
-%"struct.std::__1::__compressed_pair_elem.115.2493799" = type { ptr }
-%"class.std::__1::vector.25.3666321" = type { ptr, ptr, %"class.std::__1::__compressed_pair.26.3666322" }
-%"class.std::__1::__compressed_pair.26.3666322" = type { %"struct.std::__1::__compressed_pair_elem.27.3666323" }
-%"struct.std::__1::__compressed_pair_elem.27.3666323" = type { ptr }
+%union.yyalloc.2600711 = type { %union.YYSTYPE.2600710, [8 x i8] }
+%union.YYSTYPE.2600710 = type { i64 }
+%union.yyalloc.2601680 = type { %union.YYSTYPE.2601679, [8 x i8] }
+%union.YYSTYPE.2601679 = type { i64 }
+%"class.std::__1::tuple.2602961" = type { %"struct.std::__1::__tuple_impl.2602962" }
+%"struct.std::__1::__tuple_impl.2602962" = type <{ %"class.std::__1::__tuple_leaf.2602963", %"class.std::__1::__tuple_leaf.50.2602964", %"class.std::__1::__tuple_leaf.51.2602965", [7 x i8] }>
+%"class.std::__1::__tuple_leaf.2602963" = type { %"class.std::__1::basic_string.2602914" }
+%"class.std::__1::basic_string.2602914" = type { %"class.std::__1::__compressed_pair.1.2602915" }
+%"class.std::__1::__compressed_pair.1.2602915" = type { %"struct.std::__1::__compressed_pair_elem.2.2602916" }
+%"struct.std::__1::__compressed_pair_elem.2.2602916" = type { %"struct.std::__1::basic_string<char>::__rep.2602917" }
+%"struct.std::__1::basic_string<char>::__rep.2602917" = type { %union.anon.2602918 }
+%union.anon.2602918 = type { %"struct.std::__1::basic_string<char>::__long.2602919" }
+%"struct.std::__1::basic_string<char>::__long.2602919" = type { %struct.anon.3.2602920, i64, ptr }
+%struct.anon.3.2602920 = type { i64 }
+%"class.std::__1::__tuple_leaf.50.2602964" = type { %"class.std::__1::basic_string.2602914" }
+%"class.std::__1::__tuple_leaf.51.2602965" = type { i8 }
 
 ; 6 occurrences:
 ; arrow/optimized/diff.cc.ll
@@ -33,8 +27,8 @@
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 16
-  %4 = getelementptr %union.yyalloc.2485222, ptr %0, i64 %1
-  %5 = getelementptr %union.yyalloc.2485222, ptr %4, i64 %3
+  %4 = getelementptr %union.yyalloc.2600711, ptr %0, i64 %1
+  %5 = getelementptr %union.yyalloc.2600711, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -46,12 +40,12 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 16
-  %4 = getelementptr nusw %union.yyalloc.2486236, ptr %0, i64 %1
-  %5 = getelementptr nusw %union.yyalloc.2486236, ptr %4, i64 %3
+  %4 = getelementptr nusw %union.yyalloc.2601680, ptr %0, i64 %1
+  %5 = getelementptr nusw %union.yyalloc.2601680, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 68 occurrences:
+; 64 occurrences:
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
@@ -68,7 +62,6 @@ entry:
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; llvm/optimized/ConstraintElimination.cpp.ll
 ; llvm/optimized/DylibVerifier.cpp.ll
-; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/InterfaceFile.cpp.ll
 ; llvm/optimized/LiveInterval.cpp.ll
@@ -102,8 +95,6 @@ entry:
 ; mitsuba3/optimized/filesystem.cpp.ll
 ; mitsuba3/optimized/mitsuba.cpp.ll
 ; mitsuba3/optimized/moment.cpp.ll
-; mitsuba3/optimized/obj.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/properties.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; mold/optimized/input-files.cc.LOONGARCH32.cc.ll
@@ -118,25 +109,13 @@ entry:
 ; tev/optimized/ExrImageLoader.cpp.ll
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/ImageButton.cpp.ll
-; tev/optimized/Ipc.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, -56
-  %4 = getelementptr nusw %"class.std::__1::tuple.2487529", ptr %0, i64 %1
-  %5 = getelementptr nusw %"class.std::__1::tuple.2487529", ptr %4, i64 %3
-  ret ptr %5
-}
-
-; 1 occurrences:
-; mitsuba3/optimized/blender.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sdiv exact i64 %2, -24
-  %4 = getelementptr nusw %"class.std::__1::vector.113.2493797", ptr %0, i64 %1
-  %5 = getelementptr %"class.std::__1::vector.113.2493797", ptr %4, i64 %3
+  %4 = getelementptr nusw i8, ptr %0, i64 %1
+  %5 = getelementptr nusw %"class.std::__1::tuple.2602961", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -151,15 +130,14 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
-; tev/optimized/Ipc.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, -24
-  %4 = getelementptr %"class.std::__1::vector.25.3666321", ptr %0, i64 %1
-  %5 = getelementptr %"class.std::__1::vector.25.3666321", ptr %4, i64 %3
+  %3 = sdiv exact i64 %2, 3
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 

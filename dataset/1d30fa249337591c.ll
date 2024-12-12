@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/filtering.c.ll
 ; openssl/optimized/openssl-bin-engine.ll
-; spike/optimized/interactive.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i64 %1) #0 {
@@ -13,14 +12,14 @@ entry:
   ret i32 %4
 }
 
-; 50 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
+; 54 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; git/optimized/object-name.ll
-; git/optimized/packfile.ll
 ; git/optimized/progress.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -37,8 +36,6 @@ entry:
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; minetest/optimized/chat.cpp.ll
@@ -46,6 +43,12 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; postgres/optimized/joinrels.ll
+; proxygen/optimized/HPACKDecoder.cpp.ll
+; proxygen/optimized/HPACKEncoder.cpp.ll
+; proxygen/optimized/HeaderTable.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKHeaderTable.cpp.ll
+; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; rust-analyzer-rs/optimized/150tm5mq81nfdpak.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
@@ -73,8 +76,7 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
-; abseil-cpp/optimized/charconv_parse.cc.ll
+; 19 occurrences:
 ; curl/optimized/libcurl_la-setopt.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hwloc/optimized/bitmap.ll
@@ -87,14 +89,12 @@ entry:
 ; opencv/optimized/calibration.cpp.ll
 ; opencv/optimized/data.cpp.ll
 ; openmpi/optimized/libprrte_la-hwloc_base_util.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
 ; rust-analyzer-rs/optimized/4il2q1fg8uiz7yqm.ll
 ; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
-; slurm/optimized/hostlist.ll
 ; verilator/optimized/V3Reloop.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i64 %1) #0 {
@@ -105,21 +105,15 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 2 occurrences:
 ; llvm/optimized/Debugify.cpp.ll
 ; llvm/optimized/MachineCheckDebugify.cpp.ll
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, 32
-  %4 = select i1 %0, i32 %3, i32 31
+  %3 = add i32 %2, -1
+  %4 = select i1 %0, i32 %3, i32 -2
   ret i32 %4
 }
 

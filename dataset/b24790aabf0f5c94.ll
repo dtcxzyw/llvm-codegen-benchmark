@@ -103,14 +103,13 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -254464
   %.masked = and i32 %1, -512
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/intel_audio.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/AliasSetTracker.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -120,8 +119,8 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8388608
   %.masked = and i32 %1, -7340033
-  %4 = or i32 %3, %.masked
-  %5 = or disjoint i32 %4, %0
+  %4 = or i32 %.masked, %3
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -132,8 +131,8 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2097120
   %.masked = and i32 %1, -9
-  %4 = or i32 %3, %.masked
-  %5 = or i32 %4, %0
+  %4 = or i32 %.masked, %3
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -145,7 +144,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2129719296
   %.masked = and i32 %1, 2130702336
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }

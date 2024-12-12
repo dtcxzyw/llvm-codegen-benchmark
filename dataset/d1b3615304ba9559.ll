@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/utilBridge.c.ll
 ; darktable/optimized/filtering.c.ll
 ; git/optimized/read-cache.ll
@@ -8,7 +8,6 @@
 ; jq/optimized/regcomp.ll
 ; libwebp/optimized/cwebp.c.ll
 ; libwebp/optimized/histogram_enc.c.ll
-; linux/optimized/i915_gem_busy.ll
 ; linux/optimized/xfrm_policy.ll
 ; luau/optimized/lbitlib.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
@@ -28,7 +27,7 @@ entry:
   ret i32 %4
 }
 
-; 58 occurrences:
+; 60 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -47,7 +46,6 @@ entry:
 ; hermes/optimized/JSLexer.cpp.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; icu/optimized/utf_impl.ll
-; libquic/optimized/gzlib.c.ll
 ; libuv/optimized/idna.c.ll
 ; linux/optimized/acct.ll
 ; linux/optimized/boot.ll
@@ -59,6 +57,7 @@ entry:
 ; linux/optimized/tg3.ll
 ; linux/optimized/vt.ll
 ; llvm/optimized/InjectedSourceStream.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/NativeEnumInjectedSources.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
@@ -79,6 +78,8 @@ entry:
 ; qemu/optimized/target_riscv_translate.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; sqlite/optimized/sqlite3.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
@@ -86,7 +87,7 @@ entry:
 ; wireshark/optimized/packet-fc.c.ll
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/sls_engine.cpp.ll
-; zlib/optimized/gzlib.c.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:

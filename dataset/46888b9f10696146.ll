@@ -21,11 +21,12 @@ entry:
   ret i64 %2
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; abseil-cpp/optimized/substitute_test.cc.ll
+; boost/optimized/pool_resource.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; jemalloc/optimized/hpdata.ll

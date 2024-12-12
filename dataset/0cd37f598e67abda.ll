@@ -1,5 +1,5 @@
 
-; 134 occurrences:
+; 133 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/absGla.c.ll
@@ -62,7 +62,6 @@
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; msdfgen/optimized/Contour.cpp.ll
-; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; nuttx/optimized/lib_lgamma.c.ll
 ; openblas/optimized/dlamch.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll

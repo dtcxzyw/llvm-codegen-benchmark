@@ -4,7 +4,7 @@
 ; openssl/optimized/servername_test-bin-servername_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000061(i64 %0) #0 {
+define i64 @func00000000000000a1(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -34
   %2 = icmp ugt i64 %0, 33
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/eathread_pool.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(i64 %0) #0 {
+define i64 @func00000000000000a8(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -1000000000
   %2 = icmp sgt i64 %0, 999999999
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/eathread_pool.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000069(i64 %0) #0 {
+define i64 @func00000000000000a9(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -1000000000
   %2 = icmp sgt i64 %0, 999999999

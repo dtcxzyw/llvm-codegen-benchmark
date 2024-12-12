@@ -20,12 +20,11 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = add i32 %3, -2
   %5 = sub i32 %4, %1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
-; 6 occurrences:
-; gromacs/optimized/slasq5.cpp.ll
+; 5 occurrences:
 ; hdf5/optimized/H5C.c.ll
 ; hdf5/optimized/H5Ctag.c.ll
 ; hermes/optimized/APFloat.cpp.ll

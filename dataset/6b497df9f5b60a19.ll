@@ -1,7 +1,9 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/within.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; opencv/optimized/degeneracy.cpp.ll

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	86400000                        # 0x5265c00
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	movabsq	$1749024623285053783, %rcx      # imm = 0x1845C8A0CE512957

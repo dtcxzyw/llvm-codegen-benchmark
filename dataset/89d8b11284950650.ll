@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/absGla.c.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -12,6 +12,7 @@
 ; linux/optimized/intel_timeline.ll
 ; linux/optimized/irq.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll

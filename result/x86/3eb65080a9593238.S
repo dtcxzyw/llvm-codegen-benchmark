@@ -13,7 +13,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpw	%di, %si
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orl	$512, %esi                      # imm = 0x200
 	cmpw	%di, %si
 	sete	%al

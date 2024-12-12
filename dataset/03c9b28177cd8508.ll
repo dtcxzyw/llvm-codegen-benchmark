@@ -16,7 +16,7 @@
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; spike/optimized/plic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = and i64 %0, 4294967295
@@ -36,7 +36,7 @@ entry:
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
 ; opencv/optimized/nbayes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = and i64 %0, 4294967295
@@ -48,7 +48,7 @@ entry:
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = and i64 %0, 1073741823

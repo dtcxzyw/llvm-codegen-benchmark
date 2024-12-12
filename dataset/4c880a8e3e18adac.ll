@@ -1,5 +1,13 @@
 
-; 429 occurrences:
+%"struct.folly::symbolizer::SymbolizedFrame.2683664" = type { i8, i64, ptr, %"struct.folly::symbolizer::LocationInfo.2683665", %"class.std::shared_ptr.2683666" }
+%"struct.folly::symbolizer::LocationInfo.2683665" = type { i8, i8, %"class.folly::symbolizer::Path.2683667", %"class.folly::symbolizer::Path.2683667", i64 }
+%"class.folly::symbolizer::Path.2683667" = type { %"class.folly::Range.2683668", %"class.folly::Range.2683668", %"class.folly::Range.2683668" }
+%"class.folly::Range.2683668" = type { ptr, ptr }
+%"class.std::shared_ptr.2683666" = type { %"class.std::__shared_ptr.2683669" }
+%"class.std::__shared_ptr.2683669" = type { ptr, %"class.std::__shared_count.2683670" }
+%"class.std::__shared_count.2683670" = type { ptr }
+
+; 424 occurrences:
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -9,7 +17,6 @@
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
-; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -59,15 +66,12 @@
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
-; delta-rs/optimized/4say4x9grcidoih4.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_generic.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; faiss/optimized/distances_simd.cpp.ll
 ; faiss/optimized/partitioning.cpp.ll
@@ -79,11 +83,9 @@
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
-; folly/optimized/Symbolizer.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; freetype/optimized/pshinter.c.ll
-; git/optimized/hash-lookup.ll
 ; git/optimized/imap-send.ll
 ; graphviz/optimized/rectangle.c.ll
 ; gromacs/optimized/bonded.cpp.ll
@@ -163,7 +165,6 @@
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; hyperscan/optimized/trufflecompile.cpp.ll
 ; icu/optimized/ucnv_err.ll
-; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -279,8 +280,6 @@
 ; php/optimized/hash_gost.ll
 ; php/optimized/hash_md.ll
 ; php/optimized/pcre2_match.ll
-; php/optimized/random.ll
-; php/optimized/string.ll
 ; protobuf/optimized/csharp_enum.cc.ll
 ; protobuf/optimized/csharp_message.cc.ll
 ; protobuf/optimized/csharp_reflection_class.cc.ll
@@ -419,25 +418,54 @@
 ; stb/optimized/stb_truetype.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; typst-rs/optimized/4qskctz4kwc33g7b.ll
-; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/pkcs12.c.ll
 ; wolfssl/optimized/sha256.c.ll
 ; wolfssl/optimized/wc_encrypt.c.ll
 ; xgboost/optimized/indexed_recordio_split.cc.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zxing/optimized/ODITFWriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr nusw [256 x ptr], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [256 x ptr], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
-; 38 occurrences:
+; 16 occurrences:
+; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; darktable/optimized/introspection_basecurve.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; delta-rs/optimized/4say4x9grcidoih4.ll
+; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
+; folly/optimized/Symbolizer.cpp.ll
+; git/optimized/hash-lookup.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; image-rs/optimized/5ez7udly19o3uj1p.ll
+; php/optimized/random.ll
+; php/optimized/string.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+entry:
+  %2 = or disjoint i64 %1, 1
+  %3 = getelementptr nusw [100 x %"struct.folly::symbolizer::SymbolizedFrame.2683664"], ptr %0, i64 0, i64 %2
+  ret ptr %3
+}
+
+; 37 occurrences:
 ; cpython/optimized/blake2b_impl.ll
 ; cpython/optimized/blake2s_impl.ll
 ; cpython/optimized/funcobject.ll
@@ -446,7 +474,6 @@ entry:
 ; cpython/optimized/weakrefobject.ll
 ; darktable/optimized/KodakDecompressor.cpp.ll
 ; libsodium/optimized/libsodium_la-argon2-fill-block-ref.ll
-; libsodium/optimized/libsodium_la-crypto_kx.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/blake2s-generic.ll

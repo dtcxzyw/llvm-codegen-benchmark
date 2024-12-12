@@ -1,25 +1,25 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testq	%rsi, %rsi
 	sete	%cl
 	cmpl	$6, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	cmpq	$1, %rsi
 	setne	%cl
 	testl	%edi, %edi
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
 	setl	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movl	$4294967294, %eax               # imm = 0xFFFFFFFE
 	cmpq	%rax, %rsi
 	seta	%cl
@@ -27,66 +27,52 @@ func0000000000000041:                   # @func0000000000000041
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	cmpq	$2, %rsi
 	setb	%cl
 	cmpl	$-2, %edi
 	setge	%al
 	orb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	cmpq	$5, %rsi
 	setae	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	testq	%rsi, %rsi
 	sets	%cl
 	cmpl	$5, %edi
 	setae	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	cmpq	$3, %rsi
 	setae	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	testq	%rsi, %rsi
 	sete	%cl
 	cmpl	$128, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	testq	%rsi, %rsi
-	sete	%cl
-	cmpl	$2, %edi
-	setb	%al
-	andb	%cl, %al
-	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	shrq	$32, %rsi
 	sete	%cl
 	cmpl	$24, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	shrq	$32, %rsi
 	setne	%cl
 	cmpl	$24, %edi
 	setae	%al
-	orb	%cl, %al
-	retq
-func0000000000000084:                   # @func0000000000000084
-	cmpq	$8, %rsi
-	setb	%cl
-	cmpl	$5, %edi
-	setb	%al
 	orb	%cl, %al
 	retq

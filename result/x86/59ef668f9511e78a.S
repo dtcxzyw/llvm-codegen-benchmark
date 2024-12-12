@@ -1,23 +1,14 @@
-func0000000000000381:                   # @func0000000000000381
-	cmpl	$57, %edi
-	setb	%al
-	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	cmpl	$2, %edi
 	setl	%al
 	retq
-func0000000000000161:                   # @func0000000000000161
+func00000000000004c1:                   # @func00000000000004c1
 	xorl	%eax, %eax
 	retq
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	movb	$1, %al
 	retq
-func00000000000003c8:                   # @func00000000000003c8
-	decl	%edi
-	cmpl	$223, %edi
-	setb	%al
-	retq
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	cmpl	$8, %edi
 	setl	%al
 	retq

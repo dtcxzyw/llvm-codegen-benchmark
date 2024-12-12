@@ -28,3 +28,8 @@ func000000000000000a:                   # @func000000000000000a
 	testb	%dl, %dl
 	cmovleq	%rsi, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movq	%rdi, %rax
+	cmpb	$2, %dl
+	cmovaeq	%rsi, %rax
+	retq

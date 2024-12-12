@@ -4,8 +4,8 @@ func000000000000001f:                   # @func000000000000001f
 	vpsrld	$5, %xmm2, %xmm2
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpmullq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm2, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	15                              # 0xf
@@ -13,7 +13,7 @@ func000000000000001c:                   # @func000000000000001c
 	vpsrld	$17, %xmm2, %xmm2
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpmullq	%ymm1, %ymm2, %ymm1
+	vpmullq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI2_0:
@@ -22,7 +22,7 @@ func0000000000000015:                   # @func0000000000000015
 	vpsrld	$3, %xmm2, %xmm2
 	vpandd	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpmullq	%ymm1, %ymm2, %ymm1
+	vpmullq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI3_0:
@@ -31,6 +31,6 @@ func0000000000000010:                   # @func0000000000000010
 	vpsrld	$2, %xmm2, %xmm2
 	vpandd	.LCPI3_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpmullq	%ymm1, %ymm2, %ymm1
+	vpmullq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq

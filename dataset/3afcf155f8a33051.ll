@@ -1,16 +1,4 @@
 
-; 2 occurrences:
-; graphviz/optimized/fmtesc.c.ll
-; php/optimized/is_simh.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = select i1 %0, i64 4294967295, i64 %4
-  ret i64 %5
-}
-
 ; 23 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -81,6 +69,17 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = select i1 %0, i64 2147483647, i64 %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; graphviz/optimized/fmtesc.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = select i1 %0, i64 0, i64 %4
   ret i64 %5
 }
 

@@ -14,7 +14,7 @@ func0000000000000017:                   # @func0000000000000017
 	vor.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	ret
-func0000000000000043:                   # @func0000000000000043
+func0000000000000143:                   # @func0000000000000143
 	lui	a0, 8
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v12, a0

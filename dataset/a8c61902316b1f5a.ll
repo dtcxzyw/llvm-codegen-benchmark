@@ -1,7 +1,9 @@
 
-; 26 occurrences:
+; 28 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
@@ -27,7 +29,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000241(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %0, %1
   %3 = and i128 %2, 5070602400894470861913103269888
@@ -35,7 +37,8 @@ entry:
   ret i1 %4
 }
 
-; 79 occurrences:
+; 80 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -116,7 +119,7 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000012c(i128 %0, i128 %1) #0 {
+define i1 @func000000000000024c(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %0, %1
   %3 = and i128 %2, 79228162495817593519834398720

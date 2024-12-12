@@ -28,27 +28,21 @@ func0000000000000005:                   # @func0000000000000005
 	cmovel	%edx, %eax
 	imull	%edi, %eax
 	retq
-func0000000000000029:                   # @func0000000000000029
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	cmovlel	%esi, %eax
-	imull	%edi, %eax
-	retq
 func0000000000000019:                   # @func0000000000000019
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	cmovnsl	%esi, %eax
 	imull	%edi, %eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	testl	%edx, %edx
+	movl	$1, %eax
+	cmovlel	%esi, %eax
+	imull	%edi, %eax
+	retq
 func000000000000001b:                   # @func000000000000001b
 	testl	%edx, %edx
 	movl	$100, %eax
 	cmovnsl	%esi, %eax
-	imull	%edi, %eax
-	retq
-func0000000000000030:                   # @func0000000000000030
-	testl	%edx, %edx
-	movl	$7, %eax
-	cmovel	%esi, %eax
 	imull	%edi, %eax
 	retq

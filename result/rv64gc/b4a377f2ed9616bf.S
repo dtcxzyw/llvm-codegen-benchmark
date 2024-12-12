@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.quad	0x41cf400000000000              # double 1048576000
+	.quad	0x4020000000000000              # double 8
 .LCPI0_1:
-	.quad	0x3fc0000000000000              # double 0.125
+	.quad	0xbfe0000000000000              # double -0.5
 func0000000000000000:                   # @func0000000000000000
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)

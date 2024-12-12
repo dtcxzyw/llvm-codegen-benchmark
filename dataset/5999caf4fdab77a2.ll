@@ -7,7 +7,7 @@
 ; openjdk/optimized/gifdecoder.ll
 ; openjdk/optimized/shenandoahMark.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0) #0 {
+define i1 @func00000000000000ca(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = shl nuw i32 1, %1
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/kitIsop.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0) #0 {
+define i1 @func000000000000008a(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -6
   %2 = shl i32 2, %1

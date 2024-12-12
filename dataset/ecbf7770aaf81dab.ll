@@ -22,7 +22,7 @@ entry:
   %.tr = trunc i32 %1 to i16
   %.narrow = sub i16 %.tr, %2
   %3 = zext i16 %.narrow to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 

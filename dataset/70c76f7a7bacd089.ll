@@ -11,12 +11,13 @@ entry:
   ret i32 %3
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRpo.c.ll
 ; abc/optimized/bdcDec.c.ll
 ; abc/optimized/giaQbf.c.ll
 ; abc/optimized/giaSimBase.c.ll
+; boost/optimized/utf8_codecvt_facet.ll
 ; cmake/optimized/archive_write_add_filter_xz.c.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; lightgbm/optimized/network.cpp.ll
@@ -35,7 +36,8 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/utf8_codecvt_facet.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; Function Attrs: nounwind

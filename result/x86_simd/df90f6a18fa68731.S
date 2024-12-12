@@ -226,49 +226,60 @@ func0000000000000050:                   # @func0000000000000050
 .LCPI22_0:
 	.long	0x4f000000                      # float 2.14748365E+9
 .LCPI22_1:
-	.long	0xcf000000                      # float -2.14748365E+9
-func00000000000001a6:                   # @func00000000000001a6
-	vcmpnltps	.LCPI22_0(%rip){1to16}, %zmm0, %k0
-	vcmpngeps	.LCPI22_1(%rip){1to16}, %zmm0, %k1
+	.long	0x7f800000                      # float +Inf
+func0000000000000192:                   # @func0000000000000192
+	vcmpgeps	.LCPI22_0(%rip){1to16}, %zmm0, %k0
+	vcmpeq_uqps	.LCPI22_1(%rip){1to16}, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI23_0:
+	.long	0x4f000000                      # float 2.14748365E+9
+.LCPI23_1:
+	.long	0xcf000000                      # float -2.14748365E+9
+func00000000000001a6:                   # @func00000000000001a6
+	vcmpnltps	.LCPI23_0(%rip){1to16}, %zmm0, %k0
+	vcmpngeps	.LCPI23_1(%rip){1to16}, %zmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI24_0:
 	.long	0x00800000                      # float 1.17549435E-38
 func0000000000000102:                   # @func0000000000000102
-	vcmpeqps	.LCPI23_0(%rip){1to16}, %zmm0, %k0
+	vcmpeqps	.LCPI24_0(%rip){1to16}, %zmm0, %k0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpunordps	%zmm1, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI24_0:
+.LCPI25_0:
 	.long	0x447a0000                      # float 1000
-.LCPI24_1:
+.LCPI25_1:
 	.long	0x3f800000                      # float 1
 func0000000000000146:                   # @func0000000000000146
-	vcmpleps	.LCPI24_0(%rip){1to16}, %zmm0, %k0
-	vcmpngeps	.LCPI24_1(%rip){1to16}, %zmm0, %k1
-	korw	%k0, %k1, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI25_0:
-	.long	0x7f7fffff                      # float 3.40282347E+38
-func0000000000000058:                   # @func0000000000000058
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpltps	%zmm1, %zmm0, %k0
-	vcmpgeps	.LCPI25_0(%rip){1to16}, %zmm0, %k1
+	vcmpleps	.LCPI25_0(%rip){1to16}, %zmm0, %k0
+	vcmpngeps	.LCPI25_1(%rip){1to16}, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI26_0:
+	.long	0x7f7fffff                      # float 3.40282347E+38
+func0000000000000058:                   # @func0000000000000058
+	vxorps	%xmm1, %xmm1, %xmm1
+	vcmpltps	%zmm1, %zmm0, %k0
+	vcmpgeps	.LCPI26_0(%rip){1to16}, %zmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI27_0:
 	.long	0x3f800000                      # float 1
 func0000000000000042:                   # @func0000000000000042
-	vcmpltps	.LCPI26_0(%rip){1to16}, %zmm0, %k0
+	vcmpltps	.LCPI27_0(%rip){1to16}, %zmm0, %k0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpunordps	%zmm1, %zmm0, %k1
 	korw	%k0, %k1, %k0

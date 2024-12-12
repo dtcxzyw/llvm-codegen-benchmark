@@ -1,27 +1,28 @@
 func0000000000000035:                   // @func0000000000000035
 // %bb.0:                               // %entry
-	movi	v6.8h, #9
-	add	v1.8h, v1.8h, v3.8h
-	add	v0.8h, v0.8h, v2.8h
-	mla	v0.8h, v4.8h, v6.8h
-	mla	v1.8h, v5.8h, v6.8h
+	add	w8, w2, w2, lsl #3
+	add	w9, w0, w1
+	add	w0, w9, w8
+	ret
+                                        // -- End function
+func000000000000002e:                   // @func000000000000002e
+// %bb.0:                               // %entry
+	mov	w8, #613                        // =0x265
+	add	w9, w0, w1
+	madd	w0, w2, w8, w9
 	ret
                                         // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	movi	v6.8h, #3
-	add	v1.8h, v1.8h, v3.8h
-	add	v0.8h, v0.8h, v2.8h
-	mla	v0.8h, v4.8h, v6.8h
-	mla	v1.8h, v5.8h, v6.8h
+	add	w8, w2, w2, lsl #1
+	add	w9, w0, w1
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	movi	v6.8h, #51
-	add	v1.8h, v1.8h, v3.8h
-	add	v0.8h, v0.8h, v2.8h
-	mla	v0.8h, v4.8h, v6.8h
-	mla	v1.8h, v5.8h, v6.8h
+	mov	w8, #51                         // =0x33
+	add	w9, w0, w1
+	madd	w0, w2, w8, w9
 	ret
                                         // -- End function

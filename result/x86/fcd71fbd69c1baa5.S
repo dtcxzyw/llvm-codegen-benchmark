@@ -11,13 +11,18 @@ func0000000000000000:                   # @func0000000000000000
 	negq	%rsi
 	shlxq	%rsi, %rdi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
-	movb	$56, %al
+func000000000000000d:                   # @func000000000000000d
+	movb	$21, %al
 	subb	%sil, %al
 	shlxq	%rax, %rdi, %rax
 	retq
 func000000000000000f:                   # @func000000000000000f
-	movb	$48, %al
+	movb	$21, %al
+	subb	%sil, %al
+	shlxq	%rax, %rdi, %rax
+	retq
+func000000000000000e:                   # @func000000000000000e
+	movb	$56, %al
 	subb	%sil, %al
 	shlxq	%rax, %rdi, %rax
 	retq

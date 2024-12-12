@@ -1,8 +1,9 @@
 
-; 200 occurrences:
+; 197 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
+; abc/optimized/fraigUtil.c.ll
+; boost/optimized/topology.ll
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
-; cmake/optimized/archive_write_disk_set_standard_lookup.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/cmFileCopier.cxx.ll
 ; cpp-httplib/optimized/httplib.cc.ll
@@ -26,11 +27,9 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; libevent/optimized/poll.c.ll
 ; libpng/optimized/png.c.ll
 ; lief/optimized/Builder.cpp.ll
 ; linux/optimized/addrconf.ll
-; linux/optimized/inotify_fsnotify.ll
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/md.ll
 ; linux/optimized/p4.ll
@@ -45,6 +44,7 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/IrDump.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshoptimizer/optimized/quantization.cpp.ll
@@ -115,7 +115,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -134,7 +133,6 @@
 ; openjdk/optimized/jdmarker.ll
 ; openjdk/optimized/jvmtiEnvBase.ll
 ; openjdk/optimized/png.ll
-; openmpi/optimized/monitoring_test.ll
 ; openusd/optimized/changeTracker.cpp.ll
 ; openusd/optimized/env.cpp.ll
 ; openusd/optimized/info.cpp.ll
@@ -149,7 +147,6 @@
 ; php/optimized/zend_ssa.ll
 ; proj/optimized/geodesic.c.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
-; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/optimize.c.ll

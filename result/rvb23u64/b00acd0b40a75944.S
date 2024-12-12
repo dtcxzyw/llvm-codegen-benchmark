@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	ori	a2, a2, 1
 	sext.w	a2, a2
 	mul	a1, a1, a2
@@ -10,7 +10,7 @@ func000000000000001c:                   # @func000000000000001c
 	mul	a1, a1, a2
 	sh3add	a0, a1, a0
 	ret
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	ori	a2, a2, 1
 	sext.w	a2, a2
 	mul	a1, a1, a2
@@ -22,7 +22,7 @@ func0000000000000034:                   # @func0000000000000034
 	mul	a1, a1, a2
 	sh2add	a0, a1, a0
 	ret
-func000000000000002e:                   # @func000000000000002e
+func000000000000002f:                   # @func000000000000002f
 	ori	a2, a2, 1
 	zext.w	a2, a2
 	mul	a1, a1, a2

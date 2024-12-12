@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; assimp/optimized/PretransformVertices.cpp.ll
 ; bullet3/optimized/btBoxBoxDetector.ll
 ; bullet3/optimized/btRigidBody.ll
@@ -36,6 +36,7 @@
 ; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rshapes.c.ll
 ; raylib/optimized/rtext.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

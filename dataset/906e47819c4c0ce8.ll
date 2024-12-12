@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 47 occurrences:
 ; abc/optimized/simSymStr.c.ll
 ; cvc5/optimized/equality_engine.cpp.ll
 ; draco/optimized/corner_table.cc.ll
@@ -24,7 +24,6 @@
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll

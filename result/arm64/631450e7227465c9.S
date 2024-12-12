@@ -1,30 +1,9 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	x8, #-4                         // =0xfffffffffffffffc
-	fmov	x12, d3
-	fmov	x15, d2
-	dup	v4.2d, x8
-	mov	x8, v3.d[1]
-	mov	x17, v2.d[1]
-	and	v1.16b, v1.16b, v4.16b
-	and	v0.16b, v0.16b, v4.16b
-	mov	x9, v1.d[1]
-	fmov	x11, d1
-	fmov	x14, d0
-	mov	x18, v0.d[1]
-	sdiv	x13, x12, x11
-	sdiv	x10, x8, x9
-	sdiv	x16, x15, x14
-	msub	x8, x10, x9, x8
-	msub	x9, x13, x11, x12
-	fmov	d2, x9
-	mov	v2.d[1], x8
-	sub	v1.2d, v1.2d, v2.2d
-	sdiv	x0, x17, x18
-	msub	x10, x16, x14, x15
-	fmov	d3, x10
-	msub	x11, x0, x18, x17
-	mov	v3.d[1], x11
-	sub	v0.2d, v0.2d, v3.2d
+	and	x8, x0, #0xfffffffffffffffc
+	neg	x10, x1
+	sdiv	x9, x1, x8
+	madd	x9, x9, x8, x10
+	add	x0, x8, x9
 	ret
                                         // -- End function

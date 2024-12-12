@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
@@ -8,12 +8,13 @@
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/ObjCMT.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
+; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/loopfilter.c.ll
 ; verilator/optimized/V3Options.cpp.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; z3/optimized/theory_char.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp ne i8 %1, 0
@@ -22,7 +23,7 @@ entry:
   ret i1 %6
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -33,7 +34,6 @@ entry:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
-; assimp/optimized/glTF2Importer.cpp.ll
 ; linux/optimized/tcp_ipv6.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
@@ -56,11 +56,13 @@ entry:
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wireshark/optimized/packet-acdr.c.ll
-; wireshark/optimized/packet-cops.c.ll
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; wireshark/optimized/packet-telnet.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 75
   %4 = icmp eq i8 %1, 80
@@ -76,16 +78,40 @@ entry:
 ; curl/optimized/libcurl_la-parsedate.ll
 ; wireshark/optimized/packet-memcache.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -10
   %4 = icmp ne i8 %1, 0
+  %5 = and i1 %4, %3
+  %6 = and i1 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; assimp/optimized/glTF2Importer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c4(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp slt i8 %2, -64
+  %4 = icmp ult i8 %1, 48
   %5 = and i1 %4, %3
   %6 = and i1 %5, %0
   ret i1 %6
 }
 
-; 7 occurrences:
+; 1 occurrences:
+; assimp/optimized/glTF2Importer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c6(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp slt i8 %2, -64
+  %4 = icmp slt i8 %1, -64
+  %5 = and i1 %4, %3
+  %6 = and i1 %5, %0
+  ret i1 %6
+}
+
+; 8 occurrences:
 ; abc/optimized/mioUtils.c.ll
 ; abc/optimized/sclLibUtil.c.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
@@ -93,36 +119,38 @@ entry:
 ; llvm/optimized/IRBuilder.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
+; quickjs/optimized/libregexp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -26
   %4 = icmp ult i8 %1, -10
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; git/optimized/combine-diff.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp ne i8 %1, 95
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/LoadStoreVectorizer.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 28
   %4 = icmp ugt i8 %1, 28
@@ -132,25 +160,13 @@ entry:
 }
 
 ; 2 occurrences:
+; linux/optimized/ip_options.ll
 ; llvm/optimized/LoopFlatten.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 68
   %4 = icmp ugt i8 %1, 28
-  %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/SLPVectorizer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ne i8 %2, 12
-  %4 = icmp ult i8 %1, 22
   %5 = and i1 %4, %3
   %6 = and i1 %5, %0
   ret i1 %6
@@ -161,24 +177,24 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-btrfcomm.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp eq i8 %1, -17
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; protobuf/optimized/lexer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 46
   %4 = icmp ult i8 %1, 10
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

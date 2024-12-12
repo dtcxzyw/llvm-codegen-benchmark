@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 100 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; assimp/optimized/TextureTransform.cpp.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -23,6 +23,8 @@
 ; harfbuzz/optimized/hb-subset-instancer-solver.cc.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/predictor_enc.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/client.cpp.ll
@@ -95,6 +97,9 @@
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; xgboost/optimized/multiclass_obj.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1) #0 {
 entry:

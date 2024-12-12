@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; wireshark/optimized/packet-openvpn.c.ll
 ; yosys/optimized/mem.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:

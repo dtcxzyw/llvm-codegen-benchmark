@@ -66,7 +66,6 @@
 ; rust-analyzer-rs/optimized/wcknfmhk1hydgx3.ll
 ; slurm/optimized/select_linear.ll
 ; slurm/optimized/slurmstepd_job.ll
-; spike/optimized/f16_classify.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
@@ -83,8 +82,9 @@
 ; wireshark/optimized/packet-epl.c.ll
 ; wireshark/optimized/packet-nbap.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i16 %0) #0 {
+define i1 @func0000000000000042(i16 %0) #0 {
 entry:
   %1 = icmp eq i16 %0, 6
   %2 = icmp eq i16 %0, 1
@@ -97,7 +97,7 @@ entry:
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/job_test.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000142(i16 %0) #0 {
+define i1 @func0000000000000282(i16 %0) #0 {
 entry:
   %1 = icmp sgt i16 %0, 127
   %2 = icmp eq i16 %0, 0
@@ -105,16 +105,14 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; icu/optimized/normalizer2impl.ll
-; libquic/optimized/url_canon_internal.cc.ll
 ; linux/optimized/md.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
-; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; slurm/optimized/dist_tasks.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i16 %0) #0 {
+define i1 @func0000000000000048(i16 %0) #0 {
 entry:
   %1 = icmp eq i16 %0, -2
   %2 = icmp ult i16 %0, -32767
@@ -126,7 +124,7 @@ entry:
 ; clamav/optimized/matcher-ac.c.ll
 ; icu/optimized/ucnvscsu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i16 %0) #0 {
+define i1 @func0000000000000202(i16 %0) #0 {
 entry:
   %1 = icmp ugt i16 %0, 561
   %2 = icmp eq i16 %0, 559
@@ -134,15 +132,14 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; ockam-rs/optimized/1j8f46ag92qmaepd.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; typst-rs/optimized/5bbfp39e2yjrl2ey.ll
 ; wireshark/optimized/packet-netlink-net_dm.c.ll
-; wireshark/optimized/packet-netlink-psample.c.ll
 ; wireshark/optimized/sharkd_session.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i16 %0) #0 {
+define i1 @func0000000000000050(i16 %0) #0 {
 entry:
   %1 = icmp eq i16 %0, 4
   %2 = icmp ugt i16 %0, 45

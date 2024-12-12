@@ -1,22 +1,16 @@
-func0000000000000011:                   # @func0000000000000011
-	cmpq	$1, %rsi
-	movl	$2, %eax
-	sbbq	$0, %rax
-	testq	%rdi, %rdi
-	cmoveq	%rdi, %rax
+func0000000000000021:                   # @func0000000000000021
+	xorl	%ecx, %ecx
+	cmpq	$63, %rsi
+	sete	%cl
+	shll	$3, %ecx
+	cmpq	$31, %rdi
+	movl	$6, %eax
+	cmovneq	%rcx, %rax
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	movq	%rsi, %rax
 	sarq	$63, %rax
 	orq	$1, %rax
-	testq	%rdi, %rdi
-	cmoveq	%rdi, %rax
-	retq
-func0000000000000041:                   # @func0000000000000041
-	shrq	$32, %rsi
-	cmpq	$1, %rsi
-	movl	$2, %eax
-	sbbq	$0, %rax
 	testq	%rdi, %rdi
 	cmoveq	%rdi, %rax
 	retq

@@ -7,7 +7,7 @@
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 4
   %4 = select i1 %1, i32 %3, i32 %2
@@ -28,13 +28,13 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = select i1 %1, i32 %3, i32 %2
   %5 = lshr i32 %4, 8
   %6 = select i1 %0, i32 %5, i32 %4
-  %7 = icmp ugt i32 %6, 15
+  %7 = icmp samesign ugt i32 %6, 15
   ret i1 %7
 }
 

@@ -21,7 +21,7 @@ entry:
   ret i64 %4
 }
 
-; 50 occurrences:
+; 49 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -62,7 +62,6 @@ entry:
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/giaStr.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/giaSweeper.c.ll
 ; abc/optimized/giaTis.c.ll

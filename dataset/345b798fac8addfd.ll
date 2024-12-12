@@ -45,7 +45,7 @@ entry:
   ret i32 %3
 }
 
-; 78 occurrences:
+; 79 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/giaGen.c.ll
@@ -71,6 +71,7 @@ entry:
 ; libwebp/optimized/webpdec.c.ll
 ; linux/optimized/ff-memless.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -128,7 +129,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -138,7 +139,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 

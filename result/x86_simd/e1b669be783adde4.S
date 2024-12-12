@@ -51,27 +51,27 @@ func0000000000000006:                   # @func0000000000000006
 	vzeroupper
 	retq
 .LCPI2_0:
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
 .LCPI2_1:
-	.short	7                               # 0x7
-	.short	7                               # 0x7
+	.short	16                              # 0x10
+	.short	16                              # 0x10
 func0000000000000007:                   # @func0000000000000007
-	vpsrlw	$8, %ymm1, %ymm1
+	vpsrlw	$9, %ymm1, %ymm1
 	vpternlogd	$236, .LCPI2_1(%rip){1to8}, %ymm0, %ymm1 # ymm1 = (ymm1 & mem) | ymm0
 	vpmovwb	%ymm1, %xmm0
 	vzeroupper

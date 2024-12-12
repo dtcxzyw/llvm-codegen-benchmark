@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
 ; libquic/optimized/convert.c.ll

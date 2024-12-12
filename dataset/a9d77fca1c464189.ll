@@ -4,7 +4,7 @@
 ; libuv/optimized/inet.c.ll
 ; node/optimized/inet.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000191(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000321(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 2
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000341(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 0
@@ -32,7 +32,7 @@ entry:
 ; postgres/optimized/inet_net_ntop_shlib.ll
 ; postgres/optimized/inet_net_ntop_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000301(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 2

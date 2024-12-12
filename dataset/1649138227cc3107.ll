@@ -1,5 +1,5 @@
 
-; 423 occurrences:
+; 436 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
@@ -13,6 +13,23 @@
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; assimp/optimized/IFCUtil.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/partition.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/fmu_function.cpp.ll
 ; casadi/optimized/ipqp.cpp.ll
@@ -174,7 +191,6 @@
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dlasv2.c.ll
 ; openblas/optimized/dstebz.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/autocalib.cpp.ll
@@ -230,7 +246,6 @@
 ; openjdk/optimized/zDirector.ll
 ; openmpi/optimized/comm_ft_detector.ll
 ; openmpi/optimized/reachable_netlink_module.ll
-; openmpi/optimized/reachable_weighted.ll
 ; openmpi/optimized/tm_tree.ll
 ; openmpi/optimized/topo_treematch_dist_graph_create.ll
 ; openspiel/optimized/TransTableL.cpp.ll
@@ -278,7 +293,6 @@
 ; proj/optimized/adams.cpp.ll
 ; proj/optimized/aea.cpp.ll
 ; proj/optimized/aitoff.cpp.ll
-; proj/optimized/bacon.cpp.ll
 ; proj/optimized/col_urban.cpp.ll
 ; proj/optimized/conversion.cpp.ll
 ; proj/optimized/ell_set.cpp.ll
@@ -298,7 +312,6 @@
 ; proj/optimized/som.cpp.ll
 ; proj/optimized/tpeqd.cpp.ll
 ; proj/optimized/vandg.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/alphafinder.ll
 ; quantlib/optimized/analytic_cont_geom_av_price.ll
 ; quantlib/optimized/analyticgjrgarchengine.ll

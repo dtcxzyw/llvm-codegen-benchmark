@@ -6,7 +6,7 @@ define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = freeze i1 %3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -32,18 +32,7 @@ define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = freeze i1 %3
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/intel_dpll.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %1, %2
-  %4 = freeze i1 %3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -55,7 +44,7 @@ define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %1, %2
   %4 = freeze i1 %3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

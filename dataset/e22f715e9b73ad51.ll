@@ -1,6 +1,5 @@
 
-; 41 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 39 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -40,9 +39,8 @@
 ; openssl/optimized/ssl_test-bin-handshake.ll
 ; openssl/optimized/tls13ccstest-bin-tls13ccstest.ll
 ; php/optimized/pcre2_compile.ll
-; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i8 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
@@ -64,13 +62,13 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; php/optimized/zip.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i8 %0, i8 %1) #0 {
+define i1 @func00000000000000f8(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
   %4 = zext i8 %0 to i64
   %5 = or disjoint i64 %3, %4
-  %6 = icmp ugt i64 %5, 256
+  %6 = icmp samesign ugt i64 %5, 256
   ret i1 %6
 }
 
@@ -92,13 +90,13 @@ entry:
 ; openssl/optimized/tls13ccstest-bin-tls13ccstest.ll
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i8 %0, i8 %1) #0 {
+define i1 @func00000000000000f4(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
   %4 = zext i8 %0 to i64
   %5 = or disjoint i64 %3, %4
-  %6 = icmp ult i64 %5, 4
+  %6 = icmp samesign ult i64 %5, 4
   ret i1 %6
 }
 
@@ -108,7 +106,7 @@ entry:
 ; openssl/optimized/libssl-lib-extensions_srvr.ll
 ; openssl/optimized/libssl-shlib-extensions_srvr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i8 %0, i8 %1) #0 {
+define i1 @func00000000000000ec(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
@@ -118,36 +116,50 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; libquic/optimized/s3_srvr.c.ll
+; 2 occurrences:
+; freetype/optimized/sfnt.c.ll
+; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000178(i8 %0, i8 %1) #0 {
+define i1 @func00000000000000f1(i8 %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i64
+  %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
   %4 = zext i8 %0 to i64
   %5 = or disjoint i64 %3, %4
-  %6 = icmp ugt i64 %5, 4096
+  %6 = icmp samesign eq i64 %5, 0
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; libquic/optimized/s3_srvr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000174(i8 %0, i8 %1) #0 {
+define i1 @func00000000000002f8(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
   %4 = zext i8 %0 to i64
   %5 = or disjoint i64 %3, %4
-  %6 = icmp ult i64 %5, 3
+  %6 = icmp samesign ugt i64 %5, 4096
+  ret i1 %6
+}
+
+; 1 occurrences:
+; libquic/optimized/s3_srvr.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000002f4(i8 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = shl nuw nsw i64 %2, 8
+  %4 = zext i8 %0 to i64
+  %5 = or disjoint i64 %3, %4
+  %6 = icmp samesign ult i64 %5, 3
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/blake3.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i8 %0, i8 %1) #0 {
+define i1 @func00000000000000c1(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 6
@@ -160,7 +172,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_hdmi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000017c(i8 %0, i8 %1) #0 {
+define i1 @func00000000000002ec(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8

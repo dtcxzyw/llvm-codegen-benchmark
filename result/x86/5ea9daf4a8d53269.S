@@ -1,7 +1,7 @@
 func0000000000000007:                   # @func0000000000000007
 	movzbl	%sil, %eax
 	orl	%edi, %eax
-	shll	$10, %eax
+	shll	$8, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movzbl	%sil, %eax

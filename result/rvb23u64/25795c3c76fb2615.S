@@ -48,7 +48,7 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func000000000000003f:                   # @func000000000000003f
 	slli.uw	a2, a2, 1
-	sh3add	a2, a2, a2
+	sh2add	a2, a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

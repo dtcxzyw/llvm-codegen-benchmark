@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -21,6 +21,7 @@
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
@@ -52,7 +53,7 @@ entry:
 define i16 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 65534
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i16
   ret i16 %4
 }
@@ -89,7 +90,7 @@ entry:
 define i16 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 2399
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i16
   ret i16 %4
 }

@@ -1,12 +1,11 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; coreutils-rs/optimized/12t1ilskwpg6ujrn.ll
 ; coreutils-rs/optimized/1rbyfrcls7o9si8f.ll
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
 ; coreutils-rs/optimized/3dtpqeqvk0qwjdno.ll
 ; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
-; coreutils-rs/optimized/4owqs476p8ji9j9u.ll
 ; coreutils-rs/optimized/4v5uagu1uwzkiygu.ll
 ; coreutils-rs/optimized/54i42m66wtythwaw.ll
 ; coreutils-rs/optimized/h500puk7vtt6aeh.ll

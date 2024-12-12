@@ -1,9 +1,9 @@
 
-; 51 occurrences:
+; 55 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/readdb.c.ll
-; cmake/optimized/noproxy.c.ll
 ; cpython/optimized/mpdecimal.ll
-; curl/optimized/libcurl_la-noproxy.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -20,7 +20,6 @@
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/progress.cpp.ll
 ; mitsuba3/optimized/sensor.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
@@ -51,6 +50,11 @@
 ; yalantinglibs/optimized/struct.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/5yhp42dn62csd0zd7b3dkqa52.ll
+; zed-rs/optimized/ah806xtyxsx7hl93l9t0n6y56.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i8 %2) #0 {
 entry:

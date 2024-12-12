@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
@@ -12,6 +12,8 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmtime-rs/optimized/kpzz8s92vshq6im.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/bzs5z51c7x0xt2thexp0lbkvh.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i64 %0) #0 {
 entry:
@@ -20,8 +22,10 @@ entry:
   ret i8 %2
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; c3c/optimized/sema_asm.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0) #0 {
 entry:

@@ -31,7 +31,7 @@
 define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
@@ -243,7 +243,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub nsw i64 %0, %4
   ret i64 %5
 }
@@ -266,7 +266,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
@@ -315,12 +315,12 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nuw i64 %0, %4
   ret i64 %5
 }
 
-; 145 occurrences:
+; 143 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -396,8 +396,6 @@ entry:
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/softmagic.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -470,7 +468,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
@@ -498,7 +496,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nuw nsw i64 %0, %4
   ret i64 %5
 }
@@ -517,17 +515,16 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub nuw i64 %0, %4
   ret i64 %5
 }
 
-; 86 occurrences:
+; 84 occurrences:
 ; clamav/optimized/XzIn.c.ll
 ; clamav/optimized/upx.c.ll
 ; clamav/optimized/vba_extract.c.ll
 ; cmake/optimized/block_buffer_encoder.c.ll
-; cmake/optimized/uncompr.c.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; folly/optimized/Compression.cpp.ll
@@ -608,12 +605,11 @@ entry:
 ; wireshark/optimized/androiddump.c.ll
 ; wireshark/optimized/netscaler.c.ll
 ; wireshark/optimized/packet-riemann.c.ll
-; zlib/optimized/uncompr.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
@@ -627,7 +623,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nuw i64 %0, %4
   ret i64 %5
 }
@@ -642,7 +638,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nsw i64 %0, %4
   ret i64 %5
 }
@@ -655,7 +651,7 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
@@ -668,7 +664,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %0, %4
   ret i64 %5
 }
@@ -679,7 +675,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nsw i64 %0, %4
   ret i64 %5
 }
@@ -690,7 +686,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub nuw i64 %0, %4
   ret i64 %5
 }
@@ -701,7 +697,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub nuw nsw i64 %0, %4
   ret i64 %5
 }
@@ -713,7 +709,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub nsw i64 %0, %4
   ret i64 %5
 }

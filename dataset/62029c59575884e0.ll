@@ -1,9 +1,10 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; eastl/optimized/EATest.cpp.ll
 ; gromacs/optimized/gmx_hydorder.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/environment.cpp.ll
 ; minetest/optimized/guiEngine.cpp.ll
 ; minetest/optimized/l_env.cpp.ll

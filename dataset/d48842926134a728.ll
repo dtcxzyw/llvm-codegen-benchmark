@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 37 occurrences:
 ; abc/optimized/wlcAbc.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; icu/optimized/collationfastlatinbuilder.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/aspm.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mmu_gather.ll
 ; linux/optimized/mprotect.ll
@@ -38,7 +37,6 @@
 ; quickjs/optimized/quickjs.ll
 ; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
 ; sqlite/optimized/sqlite3.ll
-; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:

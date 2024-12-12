@@ -1,5 +1,5 @@
 
-; 237 occurrences:
+; 244 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4ijdjw7p9m6gnufo.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -41,8 +41,6 @@
 ; linux/optimized/airtime.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/drm_scdc_helper.ll
-; linux/optimized/dvo_sil164.ll
 ; linux/optimized/dvo_tfp410.ll
 ; linux/optimized/genetlink.ll
 ; linux/optimized/i8042.ll
@@ -50,7 +48,6 @@
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/intel_tc.ll
 ; linux/optimized/ip_options.ll
-; linux/optimized/mii.ll
 ; linux/optimized/net_failover.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/pcm_native.ll
@@ -64,7 +61,6 @@
 ; linux/optimized/sys.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/wol.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -104,6 +100,16 @@
 ; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
 ; llvm/optimized/driver.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_freetype_glyph.ll
+; lvgl/optimized/lv_group.ll
+; lvgl/optimized/lv_keyboard.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_observer.ll
+; lvgl/optimized/lv_textarea.ll
 ; mimalloc/optimized/page.c.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
@@ -184,6 +190,7 @@
 ; qemu/optimized/system_memory.c.ll
 ; ruby/optimized/stringio.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; verilator/optimized/V3Assert.cpp.ll
 ; verilator/optimized/V3AssertPre.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
@@ -246,7 +253,7 @@ entry:
   ret i8 %4
 }
 
-; 147 occurrences:
+; 144 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -321,7 +328,6 @@ entry:
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/SimplifyCFGPass.cpp.ll
 ; llvm/optimized/SimplifyIndVar.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/ValueMapper.cpp.ll
@@ -354,7 +360,6 @@ entry:
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/ginlogic.ll
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/pgc.ll
 ; postgres/optimized/relcache.ll
@@ -381,7 +386,6 @@ entry:
 ; yosys/optimized/Solver.ll
 ; yosys/optimized/cxxrtl_backend.ll
 ; z3/optimized/asserted_formulas.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/context_params.cpp.ll
 ; z3/optimized/euf_completion.cpp.ll
 ; z3/optimized/mbp_arith.cpp.ll

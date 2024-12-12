@@ -7,7 +7,7 @@ define i64 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, 0
   %4 = select i1 %3, i64 %1, i64 %2
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -33,7 +33,7 @@ define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, 999999999999999999
   %4 = select i1 %3, i64 %1, i64 %2
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -102,7 +102,7 @@ define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, 128
   %4 = select i1 %3, i64 %1, i64 %2
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -114,7 +114,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, 4611686018427387904
   %4 = select i1 %3, i64 %1, i64 %2
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

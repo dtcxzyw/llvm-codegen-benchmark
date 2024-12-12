@@ -8,7 +8,7 @@ define i1 @func0000000000000008(i64 %0, double %1) #0 {
 entry:
   %2 = fadd double %1, -1.000000e+00
   %3 = fptoui double %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 

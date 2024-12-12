@@ -16,13 +16,6 @@ func0000000000000009:                   # @func0000000000000009
 	slli	a1, a1, 6
 	or	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
-	sext.w	a1, a1
-	sext.w	a2, a2
-	sltu	a1, a2, a1
-	slli	a1, a1, 1
-	or	a0, a0, a1
-	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a2, a2
 	sext.w	a1, a1
@@ -50,11 +43,11 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a1, a1
 	sext.w	a2, a2
-	blt	a2, a1, .LBB6_2
+	blt	a2, a1, .LBB5_2
 	li	a1, 3
 	or	a0, a0, a1
 	ret
-.LBB6_2:
+.LBB5_2:
 	li	a1, 5
 	or	a0, a0, a1
 	ret

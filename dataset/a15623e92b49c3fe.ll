@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; libjpeg-turbo/optimized/jccoefct.c.ll
 ; linux/optimized/hdac_stream.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; openjdk/optimized/jccoefct.ll
 ; Function Attrs: nounwind

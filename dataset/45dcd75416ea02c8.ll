@@ -10,7 +10,7 @@
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = add nuw nsw i32 %2, 1
@@ -26,7 +26,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; abc/optimized/wlcAbs2.c.ll
 ; abc/optimized/wlcUif.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = add nuw nsw i32 %2, 1

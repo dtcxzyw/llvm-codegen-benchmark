@@ -4,7 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpcmpnltw	%xmm3, %xmm0, %k1
 	vpsrld	$1, %ymm2, %ymm2
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpaddd	%ymm1, %ymm2, %ymm0 {%k1}
+	vpaddd	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
 .LCPI1_0:
 	.long	16                              # 0x10
@@ -24,5 +24,5 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpnltw	%xmm3, %xmm0, %k1
 	vpsrld	$4, %ymm2, %ymm2
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0   # ymm0 = [255,255,255,255,255,255,255,255]
-	vpaddd	%ymm1, %ymm2, %ymm0 {%k1}
+	vpaddd	%ymm2, %ymm1, %ymm0 {%k1}
 	retq

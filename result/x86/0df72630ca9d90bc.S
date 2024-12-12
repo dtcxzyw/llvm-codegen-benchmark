@@ -1,4 +1,4 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	decl	%edx
 	addl	%esi, %edi
 	testl	%edx, %edi
@@ -10,16 +10,9 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	decl	%edx
 	addl	%esi, %edi
 	testl	%edx, %edi
 	sete	%al
-	retq
-func0000000000000048:                   # @func0000000000000048
-	decl	%edx
-	addl	%esi, %edi
-	andl	%edx, %edi
-	cmpl	$16, %edi
-	setae	%al
 	retq

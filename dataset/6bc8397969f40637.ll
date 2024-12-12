@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; libjpeg-turbo/optimized/jdsample.c.ll
 ; libpng/optimized/pngread.c.ll
@@ -7,6 +7,7 @@
 ; libwebp/optimized/yuv.c.ll
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -30,7 +31,7 @@ define i32 @func000000000000001e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = mul nuw nsw i32 %2, 19672
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = lshr i32 %4, 8
   ret i32 %5
 }
@@ -46,7 +47,7 @@ define i32 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = mul nuw nsw i32 %2, 5
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = lshr i32 %4, 3
   ret i32 %5
 }
@@ -59,7 +60,7 @@ define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = mul i32 %2, 268435123
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = lshr i32 %4, 12
   ret i32 %5
 }

@@ -31,6 +31,15 @@ func0000000000000008:                   # @func0000000000000008
 	negl	%eax
 	orl	$1, %eax
 	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpb	$32, %sil
+	setb	%al
+	orb	%dil, %al
+	movzbl	%al, %eax
+	andl	$1, %eax
+	negl	%eax
+	orl	$1, %eax
+	retq
 func0000000000000014:                   # @func0000000000000014
 	testb	%sil, %sil
 	setns	%al

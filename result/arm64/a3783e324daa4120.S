@@ -1,27 +1,21 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	v2.4s, v2.4s, v3.4s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	ushl	v1.2d, v2.2d, v1.2d
-	ushl	v0.2d, v3.2d, v0.2d
+	add	w8, w1, w2
+	sxtw	x8, w8
+	lsl	x0, x8, x0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	v2.4s, v2.4s, v3.4s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	ushl	v1.2d, v2.2d, v1.2d
-	ushl	v0.2d, v3.2d, v0.2d
+	add	w8, w1, w2
+	sxtw	x8, w8
+	lsl	x0, x8, x0
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	add	v2.4s, v2.4s, v3.4s
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	ushl	v1.2d, v2.2d, v1.2d
-	ushl	v0.2d, v3.2d, v0.2d
+	add	w8, w1, w2
+	sxtw	x8, w8
+	lsl	x0, x8, x0
 	ret
                                         // -- End function

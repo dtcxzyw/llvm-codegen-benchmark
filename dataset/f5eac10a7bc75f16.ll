@@ -1,9 +1,8 @@
 
-; 93 occurrences:
+; 97 occurrences:
 ; clamav/optimized/bytecode_vm.c.ll
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
 ; cmake/optimized/nghttp2_frame.c.ll
-; cmake/optimized/xmltok.c.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; cvc5/optimized/core_solver.cpp.ll
 ; cvc5/optimized/transition_inference.cpp.ll
@@ -17,9 +16,7 @@
 ; hyperscan/optimized/ng_calc_components.cpp.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
-; jq/optimized/utf16_le.ll
 ; libevent/optimized/evmap.c.ll
-; libquic/optimized/custom_extensions.c.ll
 ; linux/optimized/exec.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/i915_gem_pages.ll
@@ -28,6 +25,8 @@
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/sem.ll
 ; linux/optimized/seq_queue.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/BypassSlowDivision.cpp.ll
 ; llvm/optimized/FrontendActions.cpp.ll
 ; llvm/optimized/MacroInfo.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
@@ -41,19 +40,18 @@
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; nghttp2/optimized/nghttp2_frame.c.ll
 ; ockam-rs/optimized/1j8f46ag92qmaepd.ll
-; oniguruma/optimized/utf16_le.ll
 ; opencv/optimized/persistence.cpp.ll
 ; openjdk/optimized/frame_x86.ll
 ; openjdk/optimized/jfrCheckpointManager.ll
 ; openjdk/optimized/jfrStringPool.ll
 ; openjdk/optimized/jfrTraceIdKlassQueue.ll
+; openusd/optimized/faceVertex.cpp.ll
 ; openvdb/optimized/AttributeArrayString.cc.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pcre2_xclass.ll
 ; postgres/optimized/be-fsstubs.ll
 ; postgres/optimized/cryptohashfuncs.ll
 ; postgres/optimized/datum.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/like_support.ll
 ; postgres/optimized/mbutils.ll
@@ -77,6 +75,7 @@
 ; postgres/optimized/varchar.ll
 ; postgres/optimized/varlena.ll
 ; protobuf/optimized/descriptor.cc.ll
+; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/field.cc.ll
 ; proxygen/optimized/HPACKDecoderBase.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
@@ -84,8 +83,13 @@
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_pci_pcie_sriov.c.ll
 ; qemu/optimized/hw_scsi_vmw_pvscsi.c.ll
+; sentencepiece/optimized/extension_set.cc.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
+; turborepo-rs/optimized/7r1ggvy9mvit53mkmhrbr5w1w.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
+; turborepo-rs/optimized/c500hnb79kuh9h85697qija6o.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; wireshark/optimized/dot11decrypt_ccmp.c.ll
 ; wireshark/optimized/packet-ipmi.c.ll
@@ -94,19 +98,18 @@
 ; wolfssl/optimized/ssl.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 30
   %3 = icmp eq i8 %2, 12
   %4 = select i1 %3, i64 212, i64 211
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; cpython/optimized/xmltok.ll
 ; graphviz/optimized/dotsplines.c.ll
-; linux/optimized/he.ll
 ; linux/optimized/kstrtox.ll
 ; linux/optimized/neighbour.ll
 ; postgres/optimized/oracle_compat.ll
@@ -123,41 +126,32 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 5 occurrences:
+; cmake/optimized/nghttp2_frame.c.ll
+; cmake/optimized/xmltok.c.ll
+; jq/optimized/utf16_le.ll
+; nghttp2/optimized/nghttp2_frame.c.ll
+; oniguruma/optimized/utf16_le.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, -4
+  %3 = icmp eq i8 %2, -40
+  %4 = select i1 %3, i64 -2, i64 0
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 3 occurrences:
+; openusd/optimized/reporter.cpp.ll
 ; openvdb/optimized/AttributeSet.cc.ll
 ; wireshark/optimized/packet-afs.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 8
   %.not = icmp eq i8 %2, 0
   %3 = select i1 %.not, i64 40, i64 32
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 3 occurrences:
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/BypassSlowDivision.cpp.ll
-; openusd/optimized/faceVertex.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, -2
-  %3 = icmp eq i8 %2, 48
-  %4 = select i1 %3, i64 24, i64 32
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; openusd/optimized/reporter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000033(ptr %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 4
-  %.not = icmp eq i8 %2, 0
-  %3 = select i1 %.not, i64 56, i64 64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }

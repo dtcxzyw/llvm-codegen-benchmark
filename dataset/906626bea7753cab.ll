@@ -34,8 +34,7 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
-; darktable/optimized/tagging.c.ll
+; 5 occurrences:
 ; git/optimized/graph.ll
 ; gromacs/optimized/pull.cpp.ll
 ; icu/optimized/punycode.ll
@@ -44,29 +43,14 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp sgt i32 %2, 4
-  %4 = select i1 %3, i32 %1, i32 10
-  %5 = select i1 %0, i32 -1, i32 %4
+  %3 = icmp sgt i32 %2, 1
+  %4 = select i1 %3, i32 %1, i32 -1
+  %5 = select i1 %0, i32 0, i32 %4
   ret i32 %5
 }
 
-; 4 occurrences:
-; faiss/optimized/sorting.cpp.ll
-; git/optimized/index-pack.ll
-; llvm/optimized/CGOpenMPRuntime.cpp.ll
-; lodepng/optimized/pngdetail.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 40
-  %4 = select i1 %3, i32 %1, i32 20
-  %5 = select i1 %0, i32 3, i32 %4
-  ret i32 %5
-}
-
-; 4 occurrences:
+; 3 occurrences:
 ; libwebp/optimized/vp8_dec.c.ll
-; linux/optimized/hwdep.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; Function Attrs: nounwind
@@ -75,6 +59,18 @@ entry:
   %3 = icmp slt i32 %2, 1811939328
   %4 = select i1 %3, i32 %1, i32 -2147483648
   %5 = select i1 %0, i32 0, i32 %4
+  ret i32 %5
+}
+
+; 2 occurrences:
+; llvm/optimized/CGOpenMPRuntime.cpp.ll
+; lodepng/optimized/pngdetail.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 3
+  %4 = select i1 %3, i32 %1, i32 0
+  %5 = select i1 %0, i32 7, i32 %4
   ret i32 %5
 }
 

@@ -79,7 +79,7 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000c1(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000181(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp eq i64 %3, 0

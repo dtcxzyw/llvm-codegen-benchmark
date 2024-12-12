@@ -1,5 +1,7 @@
 
-; 55 occurrences:
+; 57 occurrences:
+; abc/optimized/abcOrchestration.c.ll
+; abc/optimized/abcResub.c.ll
 ; abc/optimized/rwrEva.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; cmake/optimized/divsufsort.c.ll

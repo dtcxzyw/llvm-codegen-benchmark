@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; darktable/optimized/introspection_soften.c.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; minetest/optimized/gameui.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
 ; Function Attrs: nounwind

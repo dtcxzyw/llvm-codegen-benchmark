@@ -17,12 +17,12 @@
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = and i32 %3, 63
   ret i32 %4
 }
 
-; 86 occurrences:
+; 87 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/bbrCex.c.ll
@@ -38,6 +38,7 @@ entry:
 ; abc/optimized/wlnRead.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
+; cmake/optimized/index.c.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -57,7 +58,6 @@ entry:
 ; hyperscan/optimized/teddy.c.ll
 ; hyperscan/optimized/teddy_avx2.c.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
-; linux/optimized/8250_dma.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/i915_perf.ll
@@ -90,6 +90,7 @@ entry:
 ; mitsuba3/optimized/qmc.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-ppc32.cc.ll
+; opencv/optimized/lsd.cpp.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; openspiel/optimized/Init.cpp.ll
 ; openspiel/optimized/SolverIF.cpp.ll
@@ -113,7 +114,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 63
   ret i32 %4
 }
@@ -134,7 +135,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 65535
   ret i32 %4
 }
@@ -159,7 +160,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 63
   ret i32 %4
 }
@@ -170,7 +171,7 @@ entry:
 define i32 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = and i32 %3, 1048575
   ret i32 %4
 }
@@ -201,7 +202,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = and i32 %3, 63
   ret i32 %4
 }
@@ -212,7 +213,7 @@ entry:
 define i32 @func000000000000000b(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = and i32 %3, 63
   ret i32 %4
 }
@@ -236,7 +237,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = and i32 %3, 7
   ret i32 %4
 }
@@ -247,7 +248,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 63
   ret i32 %4
 }
@@ -258,7 +259,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = and i32 %3, 1
   ret i32 %4
 }
@@ -270,7 +271,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = and i32 %3, -2147483648
   ret i32 %4
 }

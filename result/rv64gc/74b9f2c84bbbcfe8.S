@@ -1,37 +1,26 @@
-func0000000000000031:                   # @func0000000000000031
-	lui	a2, 699051
-	addiw	a2, a2, -1365
-	slli	a3, a2, 32
-	add	a2, a2, a3
-	mulhu	a1, a1, a2
-	srli	a1, a1, 1
-	addi	a0, a0, 1
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
-func0000000000000021:                   # @func0000000000000021
-	lui	a2, 699051
-	addiw	a2, a2, -1365
-	slli	a3, a2, 32
-	add	a2, a2, a3
-	mulhu	a1, a1, a2
-	srli	a1, a1, 1
-	addi	a0, a0, 1
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
 func0000000000000061:                   # @func0000000000000061
-	srli	a1, a1, 4
-	lui	a2, 838861
-	addiw	a2, a2, -819
+	lui	a2, 699051
+	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
-	mul	a1, a1, a2
+	mulhu	a1, a1, a2
+	srli	a1, a1, 1
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000041:                   # @func0000000000000041
+	lui	a2, 699051
+	addiw	a2, a2, -1365
+	slli	a3, a2, 32
+	add	a2, a2, a3
+	mulhu	a1, a1, a2
+	srli	a1, a1, 1
+	addi	a0, a0, 1
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func00000000000000c1:                   # @func00000000000000c1
 	srli	a1, a1, 4
 	lui	a2, 838861
 	addiw	a2, a2, -819
@@ -42,7 +31,18 @@ func0000000000000041:                   # @func0000000000000041
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000071:                   # @func0000000000000071
+func0000000000000081:                   # @func0000000000000081
+	srli	a1, a1, 4
+	lui	a2, 838861
+	addiw	a2, a2, -819
+	slli	a3, a2, 32
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	addi	a0, a0, 1
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func00000000000000e1:                   # @func00000000000000e1
 	srli	a1, a1, 3
 	lui	a2, 699051
 	addiw	a2, a2, -1365
@@ -53,7 +53,7 @@ func0000000000000071:                   # @func0000000000000071
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	srli	a1, a1, 3
 	lui	a2, 699051
 	addiw	a2, a2, -1365
@@ -78,7 +78,7 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	lui	a2, 526344
 	addiw	a2, a2, 129
 	slli	a3, a2, 32
@@ -90,7 +90,7 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 .LCPI8_0:
 	.quad	-8737931403336103397            # 0x86bca1af286bca1b
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	lui	a2, %hi(.LCPI8_0)
 	ld	a2, %lo(.LCPI8_0)(a2)
 	srli	a1, a1, 4
@@ -100,7 +100,7 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 .LCPI9_0:
 	.quad	2635249153387078803             # 0x2492492492492493
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	lui	a2, %hi(.LCPI9_0)
 	ld	a2, %lo(.LCPI9_0)(a2)
 	mulhu	a2, a1, a2

@@ -1,5 +1,5 @@
 
-; 145 occurrences:
+; 144 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -76,7 +76,6 @@
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; gromacs/optimized/readir.cpp.ll
 ; gromacs/optimized/sfactor.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll

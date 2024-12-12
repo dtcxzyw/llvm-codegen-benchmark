@@ -1,19 +1,21 @@
 
-; 243 occurrences:
+; 246 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; arrow/optimized/UriParse.c.ll
 ; assimp/optimized/OpenDDLParser.cpp.ll
-; clamav/optimized/pdf.c.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/format_parser.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; cmake/optimized/nghttp2_http.c.ll
-; cpp-httplib/optimized/httplib.cc.ll
 ; eastl/optimized/TestString.cpp.ll
 ; fmt/optimized/printf-test.cc.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/Conv.cpp.ll
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
-; git/optimized/packed-backend.ll
 ; glog/optimized/symbolize.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; icu/optimized/localeprioritylist.ll
@@ -93,6 +95,7 @@
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; node/optimized/libnode.Protocol.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -244,10 +247,10 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, ptr %1) #0 {
+define ptr @func000000000000000c(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %2, %4
   %6 = getelementptr i8, ptr %3, i64 %5
@@ -270,7 +273,7 @@ entry:
   ret ptr %6
 }
 
-; 35 occurrences:
+; 32 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -281,7 +284,7 @@ entry:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
-; cmake/optimized/nghttp2_http.c.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; folly/optimized/Compression.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -289,8 +292,6 @@ entry:
 ; llvm/optimized/DAGISelMatcherEmitter.cpp.ll
 ; llvm/optimized/HeaderAnalysis.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
-; llvm/optimized/LLLexer.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/SampleProf.cpp.ll
 ; llvm/optimized/SearchableTableEmitter.cpp.ll
 ; oiio/optimized/formatspec.cpp.ll
@@ -303,14 +304,72 @@ entry:
 ; php/optimized/zend_compile.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; pugixml/optimized/pugixml.cpp.ll
-; velox/optimized/HashStringAllocator.cpp.ll
 ; verilator/optimized/V3SchedAcyclic.cpp.ll
 ; yosys/optimized/recover_names.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 344
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %2, %4
+  %6 = getelementptr nusw i8, ptr %3, i64 %5
+  ret ptr %6
+}
+
+; 4 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
+; cmake/optimized/nghttp2_http.c.ll
+; velox/optimized/HashStringAllocator.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %2, %4
+  %6 = getelementptr nusw nuw i8, ptr %3, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
+; clamav/optimized/pdf.c.ll
+; cpp-httplib/optimized/httplib.cc.ll
+; git/optimized/packed-backend.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000008(ptr %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = getelementptr nusw i8, ptr %0, i64 -1
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %2, %4
+  %6 = getelementptr i8, ptr %3, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/pattern.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = getelementptr nusw i8, ptr %0, i64 -16
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %2, %4
+  %6 = getelementptr nusw nuw i8, ptr %3, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; llvm/optimized/LLLexer.cpp.ll
+; llvm/optimized/LiteralSupport.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 344
+  %3 = getelementptr nusw i8, ptr %0, i64 -1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %2, %4
   %6 = getelementptr nusw i8, ptr %3, i64 %5

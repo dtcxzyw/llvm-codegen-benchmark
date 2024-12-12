@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 105 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
@@ -89,6 +89,21 @@
 ; velox/optimized/VectorSaver.cpp.ll
 ; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
+; zed-rs/optimized/22ahis4uxapmr5sot3uwhf47g.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/6hxn0twt3h5sh337x4zo515i3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
+; zed-rs/optimized/bx60353v5ms1nsmjqyoxenjec.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/ept7l7id9yl52ab8m2qhombt7.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
 ; zxing/optimized/MultiFormatReader.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
@@ -98,7 +113,7 @@ entry:
   ret i1 %2
 }
 
-; 41 occurrences:
+; 48 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; cmake/optimized/trees.c.ll
@@ -139,17 +154,24 @@ entry:
 ; rocksdb/optimized/memtable.cc.ll
 ; ruby/optimized/signal.ll
 ; spike/optimized/ukstsa32.ll
+; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
+; zed-rs/optimized/32ztje2vviv0ao8s7rdc7yqwm.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 12
   %3 = lshr i64 %0, 12
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
-; 256 occurrences:
+; 255 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -191,7 +213,6 @@ entry:
 ; linux/optimized/memtype.ll
 ; linux/optimized/mm_init.ll
 ; linux/optimized/page-writeback.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/swapfile.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -407,11 +428,11 @@ entry:
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = lshr i64 %0, 1
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -419,15 +440,15 @@ entry:
 ; llvm/optimized/Evaluator.cpp.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = lshr i64 %0, 6
-  %4 = icmp ule i64 %3, %2
+  %4 = icmp samesign ule i64 %3, %2
   ret i1 %4
 }
 
-; 33 occurrences:
+; 37 occurrences:
 ; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
 ; coreutils-rs/optimized/3xc4e7mmntf4esc6.ll
 ; coreutils-rs/optimized/942h4e64iw767xo.ll
@@ -461,6 +482,10 @@ entry:
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
 ; z3/optimized/seq_rewriter.cpp.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/6hxn0twt3h5sh337x4zo515i3.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
@@ -469,7 +494,7 @@ entry:
   ret i1 %2
 }
 
-; 10 occurrences:
+; 15 occurrences:
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; regex-rs/optimized/244spg1j3kwmcjv5.ll
@@ -480,12 +505,17 @@ entry:
 ; rust-analyzer-rs/optimized/84mgk0fwp2eksq1.ll
 ; rust-analyzer-rs/optimized/egul20e4uygvok2.ll
 ; stat-rs/optimized/20o1n4zmlkej35p7.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/1mwyngh2duuoqbqyg0d7k37yf.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = lshr exact i64 %0, 1
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -493,7 +523,7 @@ entry:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; qemu/optimized/system_physmem.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, %1
   ret i1 %2
@@ -503,11 +533,11 @@ entry:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = lshr exact i64 %0, 2
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
@@ -515,7 +545,7 @@ entry:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; actix-rs/optimized/4vksfexudgt1qids.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, %1
   ret i1 %2
@@ -524,18 +554,18 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/EditedSource.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = lshr i64 %0, 32
-  %4 = icmp uge i64 %3, %2
+  %4 = icmp samesign uge i64 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %0, %1
   ret i1 %2

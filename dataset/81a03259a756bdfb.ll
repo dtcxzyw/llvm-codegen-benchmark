@@ -4,7 +4,7 @@
 ; openspiel/optimized/garnet.cc.ll
 ; vcpkg/optimized/commands.ci.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000348(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000688(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -22,7 +22,7 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000408(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = trunc i64 %3 to i32

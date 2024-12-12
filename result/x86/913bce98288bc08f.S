@@ -1,42 +1,42 @@
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	movl	%esi, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	movl	$-1, %eax
-	cmovael	%edi, %eax
+	cmovbel	%edi, %eax
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movl	%esi, %ecx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	cmovnel	%edi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movl	%esi, %ecx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	cmovnel	%edi, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	%esi, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	movl	$-1, %eax
 	cmovnel	%edi, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%esi, %ecx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	cmovael	%edi, %eax
+	cmpq	%rcx, %rdi
+	cmovbel	%edi, %eax
 	retq
 func0000000000000009:                   # @func0000000000000009
 	movl	%esi, %ecx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	cmoval	%edi, %eax
+	cmpq	%rcx, %rdi
+	cmovbl	%edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movl	%esi, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	movl	$-1, %eax
 	cmovnel	%edi, %eax
 	retq

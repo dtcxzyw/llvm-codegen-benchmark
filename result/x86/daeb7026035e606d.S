@@ -6,7 +6,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$10001, %rax                    # imm = 0x2711
 	setae	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	leaq	-65521(%rdx), %rax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
@@ -14,7 +14,7 @@ func0000000000000078:                   # @func0000000000000078
 	cmpq	$65521, %rax                    # imm = 0xFFF1
 	setae	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	leaq	1000000(%rdx), %rax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
@@ -22,7 +22,7 @@ func000000000000005a:                   # @func000000000000005a
 	cmpq	$1000000, %rax                  # imm = 0xF4240
 	setge	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	leaq	146097(%rdx), %rax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax

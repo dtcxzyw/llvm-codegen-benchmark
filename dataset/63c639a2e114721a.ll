@@ -1,5 +1,5 @@
 
-; 329 occurrences:
+; 331 occurrences:
 ; abc/optimized/epd.c.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -7,6 +7,8 @@
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
@@ -199,7 +201,7 @@
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luau/optimized/lnumprint.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -411,9 +413,15 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 11 occurrences:
 ; git/optimized/pack-bitmap-write.ll
 ; glslang/optimized/ParseHelper.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_image.ll
+; lvgl/optimized/lv_draw_rect.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; regex-rs/optimized/1hv7a9vv5ulvjrv1.ll

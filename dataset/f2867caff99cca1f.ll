@@ -1,7 +1,7 @@
 
-%"struct.rocksdb::FdWithKeyRange.2499118" = type { %"struct.rocksdb::FileDescriptor.2499119", ptr, %"class.rocksdb::Slice.2499098", %"class.rocksdb::Slice.2499098" }
-%"struct.rocksdb::FileDescriptor.2499119" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2499098" = type { ptr, i64 }
+%"struct.rocksdb::FdWithKeyRange.2614359" = type { %"struct.rocksdb::FileDescriptor.2614360", ptr, %"class.rocksdb::Slice.2614339", %"class.rocksdb::Slice.2614339" }
+%"struct.rocksdb::FileDescriptor.2614360" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2614339" = type { ptr, i64 }
 
 ; 11 occurrences:
 ; cmake/optimized/cmLocalGenerator.cxx.ll
@@ -16,26 +16,38 @@
 ; vcpkg/optimized/ci-baseline.cpp.ll
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a6(ptr %0, i32 %1, i64 %2) #0 {
+define i64 @func00000000000001e6(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.rocksdb::FdWithKeyRange.2499118", ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 80
+  %3 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2614359", ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 80
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, ptr %4, ptr %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
 
-; 3 occurrences:
-; lz4/optimized/lz4.c.ll
-; openusd/optimized/lz4.cpp.ll
+; 1 occurrences:
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a8(ptr %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000158(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -65536
-  %5 = icmp ugt i32 %1, 65536
+  %5 = icmp samesign ugt i32 %1, 65536
+  %6 = select i1 %5, ptr %4, ptr %0
+  %7 = ptrtoint ptr %6 to i64
+  ret i64 %7
+}
+
+; 2 occurrences:
+; lz4/optimized/lz4.c.ll
+; openusd/optimized/lz4.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000001d8(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -65536
+  %5 = icmp samesign ugt i32 %1, 65536
   %6 = select i1 %5, ptr %4, ptr %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
@@ -57,10 +69,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a1(ptr %0, i32 %1, i64 %2) #0 {
+define i64 @func00000000000001e1(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i32, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 4
+  %3 = getelementptr nusw nuw i32, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 4
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, ptr %4, ptr %0
   %7 = ptrtoint ptr %6 to i64

@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; cpython/optimized/lock.ll
 ; icu/optimized/rbt_rule.ll
 ; linux/optimized/libata-sff.ll
@@ -8,7 +8,6 @@
 ; llvm/optimized/DylibVerifier.cpp.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

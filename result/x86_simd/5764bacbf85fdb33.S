@@ -6,8 +6,15 @@ func0000000000000012:                   # @func0000000000000012
 	retq
 .LCPI1_0:
 	.quad	0x4066800000000000              # double 180
+func000000000000001a:                   # @func000000000000001a
+	vpxor	%xmm2, %xmm2, %xmm2
+	vcmplepd	.LCPI1_0(%rip){1to8}, %zmm1, %k1
+	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
+	retq
+.LCPI2_0:
+	.quad	0x4066800000000000              # double 180
 func0000000000000014:                   # @func0000000000000014
 	vpxor	%xmm2, %xmm2, %xmm2
-	vcmpgtpd	.LCPI1_0(%rip){1to8}, %zmm1, %k1
+	vcmpgtpd	.LCPI2_0(%rip){1to8}, %zmm1, %k1
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
 	retq

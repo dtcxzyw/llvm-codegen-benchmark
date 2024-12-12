@@ -4,14 +4,14 @@ func0000000000000004:                   # @func0000000000000004
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a2, a2
 	addi	a2, a2, -1
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addiw	a2, a2, -58
 	sltiu	a2, a2, -10
 	and	a0, a0, a1

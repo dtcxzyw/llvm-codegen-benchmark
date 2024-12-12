@@ -65,7 +65,7 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; zxing/optimized/ODReader.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i32 %1, 0
@@ -73,11 +73,10 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; minetest/optimized/texturesource.cpp.ll
-; openusd/optimized/mvref_common.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp ult i32 %1, 4
@@ -85,7 +84,7 @@ entry:
   ret i32 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; gromacs/optimized/reduce.cpp.ll
 ; icu/optimized/ucase.ll
@@ -93,6 +92,7 @@ entry:
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_math.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; postgres/optimized/pg_backup_archiver.ll
@@ -129,19 +129,21 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaSif.c.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_dpll.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_indev.ll
 ; raylib/optimized/rtextures.c.ll
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/lar_solver.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp slt i32 %1, 0
@@ -154,7 +156,7 @@ entry:
 ; llvm/optimized/RISCVTargetParser.cpp.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 8, %0
   %3 = icmp eq i32 %1, 0
@@ -165,7 +167,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVTargetParser.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 8, %0
   %3 = icmp ugt i32 %1, 7
@@ -177,7 +179,7 @@ entry:
 ; gromacs/optimized/coder.c.ll
 ; gromacs/optimized/xtc2.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %.not = icmp eq i32 %1, 0
@@ -188,7 +190,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv_ext.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp slt i32 %1, 0
@@ -210,7 +212,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/palette.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 256, %0
   %3 = icmp ult i32 %1, -2130706432

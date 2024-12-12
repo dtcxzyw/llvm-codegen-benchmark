@@ -1,10 +1,20 @@
 func0000000000000001:                   # @func0000000000000001
 	movzbl	%sil, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movzbl	%sil, %eax
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movzbl	%sil, %eax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movzbl	%sil, %eax
+	cmpq	%rax, %rdi
+	setb	%al
 	retq

@@ -19,17 +19,4 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %3, %1
-  %5 = add i64 %4, %0
-  %6 = shl nuw i64 %5, 32
-  ret i64 %6
-}
-
 attributes #0 = { nounwind }

@@ -1,10 +1,9 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/ioReadBaf.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:

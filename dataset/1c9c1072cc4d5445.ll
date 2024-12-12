@@ -31,4 +31,28 @@ entry:
   ret double %5
 }
 
+; 12 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; Function Attrs: nounwind
+define double @func0000000000000022(double %0) #0 {
+entry:
+  %1 = fcmp olt double %0, 1.800000e+02
+  %2 = select i1 %1, double 1.800000e+02, double %0
+  %3 = fcmp olt double %2, 1.000000e+00
+  %4 = select i1 %3, double 1.000000e+00, double %2
+  %5 = fmul double %4, 0x3CB0000000000000
+  ret double %5
+}
+
 attributes #0 = { nounwind }

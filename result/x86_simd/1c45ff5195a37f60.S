@@ -52,6 +52,6 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovqw	%ymm2, %xmm2
 	vpsllw	$12, %xmm2, %xmm2
 	vpandd	.LCPI2_1(%rip){1to4}, %xmm2, %xmm2
-	vpternlogq	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vzeroupper
 	retq

@@ -11,7 +11,7 @@
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 32
   %3 = add nsw i32 %2, 1
@@ -24,13 +24,13 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/sbdCore.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 3
   %3 = add nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
@@ -41,7 +41,7 @@ entry:
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nsw i32 %2, 3
@@ -57,7 +57,7 @@ entry:
 ; opencv/optimized/optflowgf.cpp.ll
 ; opencv/optimized/orb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
   %3 = add nuw nsw i32 %2, 1

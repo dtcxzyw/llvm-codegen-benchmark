@@ -11,7 +11,7 @@ func0000000000000003:                   # @func0000000000000003
 	cmovnel	%esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	andl	$3584, %edx                     # imm = 0xE00
 	cmpl	$2305, %edx                     # imm = 0x901
 	movl	$9, %eax

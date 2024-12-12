@@ -18,7 +18,7 @@ entry:
 ; clamav/optimized/dll.cpp.ll
 ; openjdk/optimized/jdmarker.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000044(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -32
   %4 = icmp ult i64 %3, %1
@@ -31,10 +31,10 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-outline.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000e4(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func00000000000001d4(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp samesign ult i64 %3, %1
   %5 = trunc nuw i64 %3 to i32
   %6 = select i1 %4, i32 %5, i32 %0
   ret i32 %6
@@ -43,10 +43,10 @@ entry:
 ; 1 occurrences:
 ; git/optimized/sha256.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f4(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func00000000000001f4(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp samesign ult i64 %3, %1
   %5 = trunc nuw nsw i64 %3 to i32
   %6 = select i1 %4, i32 %5, i32 %0
   ret i32 %6
@@ -79,7 +79,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/staticSaliencyFineGrained.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000076(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func00000000000000e6(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = icmp slt i64 %3, %1
@@ -91,7 +91,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/staticSaliencyFineGrained.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func00000000000000a6(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = trunc nsw i64 %3 to i32

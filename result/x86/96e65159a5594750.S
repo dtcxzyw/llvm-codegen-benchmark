@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000063:                   # @func0000000000000063
 	cmpl	$57, %edx
 	movl	$8, %eax
 	cmovaeq	%rsi, %rax
@@ -16,7 +16,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmoveq	%rsi, %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002b:                   # @func000000000000002b
 	xorl	%eax, %eax
 	cmpl	$2, %edx
 	cmovgeq	%rsi, %rax
@@ -28,19 +28,37 @@ func0000000000000028:                   # @func0000000000000028
 	cmovgq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000007:                   # @func0000000000000007
+	xorl	%eax, %eax
+	testl	%edx, %edx
+	cmoveq	%rsi, %rax
+	leaq	(%rdi,%rax,4), %rax
+	retq
+func0000000000000013:                   # @func0000000000000013
 	xorl	%eax, %eax
 	cmpl	$2, %edx
 	cmovbq	%rsi, %rax
 	leaq	(%rdi,%rax,2), %rax
 	retq
-func0000000000000032:                   # @func0000000000000032
+func000000000000002a:                   # @func000000000000002a
+	xorl	%eax, %eax
+	testl	%edx, %edx
+	cmovnsq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000033:                   # @func0000000000000033
 	testl	%edx, %edx
 	movl	$8, %eax
 	cmovneq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func0000000000000062:                   # @func0000000000000062
+	xorl	%eax, %eax
+	cmpl	$2, %edx
+	cmovaeq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func000000000000001b:                   # @func000000000000001b
 	xorl	%eax, %eax
 	cmpl	$2, %edx
 	cmovlq	%rsi, %rax
@@ -51,6 +69,12 @@ func0000000000000030:                   # @func0000000000000030
 	testl	%edx, %edx
 	movl	$4, %eax
 	cmovneq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	xorl	%eax, %eax
+	testl	%edx, %edx
+	cmovsq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
 func0000000000000018:                   # @func0000000000000018

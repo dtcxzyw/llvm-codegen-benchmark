@@ -1,5 +1,14 @@
-func0000000000000060:                   # @func0000000000000060
+func00000000000000e0:                   # @func00000000000000e0
 	movabsq	$-2305843009213693953, %rax     # imm = 0xDFFFFFFFFFFFFFFF
+	addq	%rax, %rdx
+	incq	%rax
+	cmpq	%rax, %rdx
+	setb	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq
+func00000000000000a0:                   # @func00000000000000a0
+	movabsq	$-4294967297, %rax              # imm = 0xFFFFFFFEFFFFFFFF
 	addq	%rax, %rdx
 	incq	%rax
 	cmpq	%rax, %rdx
@@ -26,6 +35,12 @@ func0000000000000010:                   # @func0000000000000010
 	addq	$178608, %rdx                   # imm = 0x2B9B0
 	cmpq	$32, %rdx
 	setb	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq
+func0000000000000084:                   # @func0000000000000084
+	cmpq	$5, %rdx
+	sete	%al
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq

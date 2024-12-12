@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 25 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
@@ -9,14 +9,12 @@
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/decompress.c.ll
-; darktable/optimized/AbstractLJpegDecoder.cpp.ll
-; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
-; darktable/optimized/PentaxDecompressor.cpp.ll
 ; gromacs/optimized/libxdrf.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/rate.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; minetest/optimized/reflowscan.cpp.ll
 ; opencv/optimized/bitarray.cpp.ll
 ; openjdk/optimized/directivesParser.ll
@@ -28,11 +26,11 @@
 ; wireshark/optimized/tvbuff_lz77.c.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 9
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -70,7 +68,7 @@ entry:
 ; wireshark/optimized/packet-usb-hid.c.ll
 ; zxing/optimized/BarcodeFormat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -97
   %3 = shl nuw nsw i32 1, %2
@@ -95,7 +93,7 @@ entry:
   ret i1 %5
 }
 
-; 27 occurrences:
+; 25 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -105,11 +103,9 @@ entry:
 ; clamav/optimized/filtering.c.ll
 ; clamav/optimized/infblock.c.ll
 ; cpython/optimized/longobject.ll
-; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/history.c.ll
 ; eastl/optimized/eathread_pool.cpp.ll
 ; lief/optimized/x509_crt.c.ll
-; linux/optimized/fonts.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll_mgr.ll
@@ -124,7 +120,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 6
   %3 = shl nuw i32 1, %2
@@ -133,7 +129,7 @@ entry:
   ret i1 %5
 }
 
-; 35 occurrences:
+; 33 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -155,7 +151,6 @@ entry:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -165,12 +160,11 @@ entry:
 ; abc/optimized/ioWriteBlif.c.ll
 ; abc/optimized/ioWriteEdgelist.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/satTruth.c.ll
 ; abc/optimized/sbdSat.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -5
   %3 = shl nuw i32 1, %2
@@ -187,7 +181,7 @@ entry:
 ; abc/optimized/sfmNtk.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -6
   %3 = shl nuw nsw i32 1, %2
@@ -203,7 +197,7 @@ entry:
 ; gromacs/optimized/gmx_lmcurve.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = shl nuw i32 1, %2
@@ -217,7 +211,7 @@ entry:
 ; wireshark/optimized/packet-zbee-tlv.c.ll
 ; wireshark/optimized/packet-zbee-zdp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = shl nuw nsw i32 1, %2
@@ -229,7 +223,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -31
   %3 = lshr i32 %0, %2

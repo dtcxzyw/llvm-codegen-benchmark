@@ -32,15 +32,6 @@ func00000000000000a0:                   # @func00000000000000a0
 	vadd.vv	v9, v9, v8, v0.t
 	vmv.v.v	v8, v9
 	ret
-func0000000000000088:                   # @func0000000000000088
-	li	a0, 31
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vx	v0, v12, a0
-	vsetvli	zero, zero, e32, m1, ta, mu
-	vnsrl.wi	v9, v10, 0
-	vadd.vv	v9, v9, v8, v0.t
-	vmv.v.v	v8, v9
-	ret
 func0000000000000048:                   # @func0000000000000048
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0

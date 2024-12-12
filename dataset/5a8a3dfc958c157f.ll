@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll

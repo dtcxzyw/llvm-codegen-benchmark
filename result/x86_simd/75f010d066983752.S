@@ -125,7 +125,7 @@ func000000000000000e:                   # @func000000000000000e
 	vpaddd	.LCPI11_2(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI12_0:
-	.long	35                              # 0x23
+	.long	36                              # 0x24
 .LCPI12_1:
 	.long	4294967288                      # 0xfffffff8
 .LCPI12_2:

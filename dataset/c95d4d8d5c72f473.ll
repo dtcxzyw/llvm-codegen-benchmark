@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 30 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/plaRead.c.ll
@@ -8,6 +8,8 @@
 ; gromacs/optimized/sgebrd.cpp.ll
 ; icu/optimized/csr2022.ll
 ; libwebp/optimized/frame_enc.c.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
@@ -36,7 +38,7 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/cbaReadVer.c.ll
@@ -44,6 +46,7 @@ entry:
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/nexthop.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; postgres/optimized/array_selfuncs.ll
 ; postgres/optimized/varlena.ll
 ; zxing/optimized/PDFWriter.cpp.ll

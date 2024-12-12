@@ -18,11 +18,11 @@ func0000000000000008:                   # @func0000000000000008
 	.long	0x7f800000                      # float +Inf
 func0000000000000010:                   # @func0000000000000010
 	andb	$1, %sil
-	xorl	%ecx, %ecx
-	negb	%sil
-	sbbl	%ecx, %ecx
-	orl	%edi, %ecx
 	vucomiss	.LCPI2_0(%rip), %xmm0
-	movl	$-1, %eax
-	cmovbl	%ecx, %eax
+	movl	$-1, %ecx
+	cmovbl	%edi, %ecx
+	xorl	%eax, %eax
+	negb	%sil
+	sbbl	%eax, %eax
+	orl	%ecx, %eax
 	retq

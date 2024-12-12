@@ -45,8 +45,7 @@ entry:
   ret i16 %3
 }
 
-; 2 occurrences:
-; linux/optimized/intel_guc_slpc.ll
+; 1 occurrences:
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i32 %0) #0 {

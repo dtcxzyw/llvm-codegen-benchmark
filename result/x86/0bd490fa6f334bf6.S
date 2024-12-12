@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$8, %eax
 	cmovneq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$524280, %edx                   # imm = 0x7FFF8
 	xorl	%eax, %eax
 	orq	%rsi, %rdx

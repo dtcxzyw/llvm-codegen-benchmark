@@ -1,5 +1,5 @@
 
-; 648 occurrences:
+; 646 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -19,6 +19,8 @@
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; brotli/optimized/encode.c.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; casadi/optimized/convexify.cpp.ll
@@ -281,7 +283,6 @@
 ; ocio/optimized/RangeOpData.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; openblas/optimized/dgegv.c.ll
-; openblas/optimized/dgesc2.c.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dggev.c.ll
 ; openblas/optimized/dggev3.c.ll
@@ -299,7 +300,6 @@
 ; openblas/optimized/dlarre.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
-; openblas/optimized/dlatdf.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; openblas/optimized/dsyequb.c.ll
@@ -490,7 +490,6 @@
 ; openvdb/optimized/Transform.cc.ll
 ; openvdb/optimized/VectorTransformer.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
-; osqp/optimized/scaling.c.ll
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; pbrt-v4/optimized/stats.cpp.ll
@@ -519,7 +518,6 @@
 ; proj/optimized/rpoly.cpp.ll
 ; proj/optimized/s2.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
-; proj/optimized/wag7.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; quantlib/optimized/analyticcompoundoptionengine.ll
 ; quantlib/optimized/analyticdoublebarrierbinaryengine.ll

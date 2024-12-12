@@ -1,16 +1,16 @@
 func0000000000000002:                   # @func0000000000000002
+	cmpb	$102, %sil
 	movzbl	%sil, %ecx
-	testb	$1, %dil
 	movl	$4, %eax
-	cmovel	%ecx, %eax
-	cmpb	$102, %cl
 	cmovnel	%ecx, %eax
+	testb	$1, %dil
+	cmovel	%ecx, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018
+	cmpb	$45, %sil
 	movzbl	%sil, %ecx
-	testb	$1, %dil
 	movl	$63, %eax
 	cmovel	%ecx, %eax
-	cmpb	$45, %cl
+	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq

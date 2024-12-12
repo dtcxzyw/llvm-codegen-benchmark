@@ -1,31 +1,31 @@
-func00000000000000da:                   # @func00000000000000da
+func00000000000000df:                   # @func00000000000000df
 	add	a1, a1, a2
 	srliw	a1, a1, 1
 	sh2add	a1, a1, a1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 4
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	add	a1, a1, a2
 	srliw	a1, a1, 1
 	sh3add	a1, a1, a1
 	sh2add	a0, a1, a0
 	addi	a0, a0, 20
 	ret
-func000000000000005a:                   # @func000000000000005a
+func000000000000005f:                   # @func000000000000005f
 	add	a1, a1, a2
 	srliw	a1, a1, 5
 	sh3add	a0, a1, a0
 	addi	a0, a0, 4
 	ret
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000000dc:                   # @func00000000000000dc
 	add	a1, a1, a2
 	srliw	a1, a1, 1
 	slli	a1, a1, 1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 4
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	add	a1, a1, a2
 	srliw	a1, a1, 1
 	sh1add	a1, a1, a1

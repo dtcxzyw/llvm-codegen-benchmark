@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = and i64 %2, 3
@@ -57,23 +57,11 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000062(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000c2(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = and i64 %2, 3
   %4 = icmp eq i64 %3, 1
-  %5 = zext i1 %4 to i64
-  ret i64 %5
-}
-
-; 1 occurrences:
-; linux/optimized/timekeeping.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %0, %1
-  %3 = and i64 %2, 4294966784
-  %4 = icmp ugt i64 %3, 999999999
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -84,7 +72,7 @@ entry:
 ; arrow/optimized/bridge.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000058(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = and i64 %2, 7

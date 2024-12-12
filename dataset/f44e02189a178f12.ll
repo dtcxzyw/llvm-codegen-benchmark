@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 30 occurrences:
 ; casadi/optimized/cs_amd.c.ll
 ; casadi/optimized/cs_counts.c.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
@@ -19,7 +19,6 @@
 ; opencv/optimized/dpm_feature.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; opencv/optimized/synthetic_seq.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; openjdk/optimized/mlib_ImageAffine_BL_D64.ll
 ; openjdk/optimized/mlib_ImageAffine_BL_F32.ll
@@ -31,7 +30,6 @@
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -111,38 +109,14 @@ entry:
   ret ptr %7
 }
 
-; 12 occurrences:
-; casadi/optimized/cs_amd.c.ll
-; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
-; ceres/optimized/eigensparse.cc.ll
-; ceres/optimized/reorder_program.cc.ll
-; g2o/optimized/slam2d_linear.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_slam2d_linear.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_geodesic.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/filter_unsharp.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nsw i32 %2, 5
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr i32, ptr %0, i64 %4
-  %6 = sext i32 %1 to i64
-  %7 = getelementptr nusw i32, ptr %5, i64 %6
-  ret ptr %7
-}
-
 ; 1 occurrences:
 ; opencv/optimized/optflowgf.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr float, ptr %0, i64 %4
+  %5 = getelementptr nusw float, ptr %0, i64 %4
   %6 = sext i32 %1 to i64
   %7 = getelementptr float, ptr %5, i64 %6
   ret ptr %7

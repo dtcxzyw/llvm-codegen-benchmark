@@ -1,56 +1,37 @@
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	bic	v2.4h, #255, lsl #8
-	movi	v3.4s, #150
-	mov	w8, #128                        // =0x80
-	movi	v4.2s, #150
-	ushll	v2.4s, v2.4h, #0
-	umlal	v0.2d, v2.2s, v4.2s
-	umlal2	v1.2d, v2.4s, v3.4s
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+                                        // kill: def $w1 killed $w1 def $x1
+	mov	w8, #150                        // =0x96
+	and	x9, x1, #0xff
+	umaddl	x8, w9, w8, x0
+	add	x0, x8, #128
 	ret
                                         // -- End function
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	bic	v2.4h, #255, lsl #8
-	movi	v3.4s, #18
+                                        // kill: def $w1 killed $w1 def $x1
 	mov	w8, #18                         // =0x12
-	movi	v4.2s, #18
-	ushll	v2.4s, v2.4h, #0
-	umlal	v0.2d, v2.2s, v4.2s
-	umlal2	v1.2d, v2.4s, v3.4s
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	and	x9, x1, #0xff
+	umaddl	x8, w9, w8, x0
+	add	x0, x8, #18
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	bic	v2.4h, #255, lsl #8
-	movi	v3.4s, #18
-	mov	w8, #17                         // =0x11
-	movi	v4.2s, #18
-	ushll	v2.4s, v2.4h, #0
-	umlal	v0.2d, v2.2s, v4.2s
-	umlal2	v1.2d, v2.4s, v3.4s
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+                                        // kill: def $w1 killed $w1 def $x1
+	mov	w8, #18                         // =0x12
+	and	x9, x1, #0xff
+	umaddl	x8, w9, w8, x0
+	add	x0, x8, #17
 	ret
                                         // -- End function
 func0000000000000035:                   // @func0000000000000035
 // %bb.0:                               // %entry
-	bic	v2.4h, #255, lsl #8
 	mov	w8, #51712                      // =0xca00
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x9, x1, #0xff
 	movk	w8, #15258, lsl #16
-	dup	v3.4s, w8
-	ushll	v2.4s, v2.4h, #0
-	umlal	v0.2d, v2.2s, v3.2s
-	umlal2	v1.2d, v2.4s, v3.4s
-	movi	v2.2d, #0xffffffffffffffff
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	umaddl	x8, w9, w8, x0
+	sub	x0, x8, #1
 	ret
                                         // -- End function

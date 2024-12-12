@@ -10,7 +10,7 @@ func0000000000000010:                   # @func0000000000000010
 	addl	%edi, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+func0000000000000080:                   # @func0000000000000080
 	leal	1899(%rdx), %eax
 	addl	$1902, %edx                     # imm = 0x76E
 	testl	%eax, %eax
@@ -20,15 +20,15 @@ func0000000000000000:                   # @func0000000000000000
 	imull	$365, %esi, %eax                # imm = 0x16D
 	addl	%edi, %eax
 	retq
-func0000000000000080:                   # @func0000000000000080
-	leal	7(%rdx), %eax
-	leal	14(%rdx), %ecx
+func0000000000000000:                   # @func0000000000000000
+	leal	1899(%rdx), %eax
+	addl	$1902, %edx                     # imm = 0x76E
 	testl	%eax, %eax
-	cmovnsl	%eax, %ecx
-	sarl	$3, %ecx
-	imull	$56, %esi, %eax
+	cmovnsl	%eax, %edx
+	sarl	$2, %edx
+	subl	%edx, %edi
+	imull	$365, %esi, %eax                # imm = 0x16D
 	addl	%edi, %eax
-	addl	%ecx, %eax
 	retq
 func0000000000000090:                   # @func0000000000000090
 	decl	%edx

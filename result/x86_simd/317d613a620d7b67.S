@@ -50,3 +50,15 @@ func0000000000000006:                   # @func0000000000000006
 	vmovdqa32	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
+.LCPI4_0:
+	.quad	4294967296                      # 0x100000000
+.LCPI4_1:
+	.long	32                              # 0x20
+func0000000000000014:                   # @func0000000000000014
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k1
+	vpcmpltuq	.LCPI4_0(%rip){1to4}, %ymm2, %k2
+	vpbroadcastd	.LCPI4_1(%rip), %xmm0 {%k2} {z} # xmm0 {%k2} {z} = [32,32,32,32]
+	vmovdqa32	%xmm1, %xmm0 {%k1}
+	vzeroupper
+	retq

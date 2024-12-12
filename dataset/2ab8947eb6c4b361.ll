@@ -10,7 +10,7 @@
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 12
   %4 = select i1 %3, i32 0, i32 %1
@@ -18,15 +18,14 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; postgres/optimized/brin_xlog.ll
+; 1 occurrences:
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000094(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 25
   %4 = select i1 %3, i32 1, i32 %1
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp samesign ult i32 %4, %0
   ret i1 %5
 }
 

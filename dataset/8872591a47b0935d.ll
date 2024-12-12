@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/entropy_encode.c.ll
@@ -8,7 +8,6 @@
 ; cmake/optimized/zstd_lazy.c.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
-; linux/optimized/drm_scdc_helper.ll
 ; linux/optimized/intel_hdmi.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; ozz-animation/optimized/skeleton_builder.cc.ll
@@ -27,7 +26,7 @@ entry:
   ret i16 %2
 }
 
-; 54 occurrences:
+; 58 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -40,6 +39,7 @@ entry:
 ; linux/optimized/irq.ll
 ; linux/optimized/tcp_ipv4.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
@@ -82,6 +82,9 @@ entry:
 ; wireshark/optimized/packet-enttec.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i64 %0) #0 {
 entry:
@@ -90,7 +93,7 @@ entry:
   ret i16 %2
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; cmake/optimized/zstd_opt.c.ll
@@ -101,6 +104,7 @@ entry:
 ; minetest/optimized/serverenvironment.cpp.ll
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
 ; redis/optimized/sds.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; velox/optimized/ExprToSubfieldFilter.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
@@ -113,10 +117,9 @@ entry:
   ret i16 %2
 }
 
-; 45 occurrences:
+; 43 occurrences:
 ; abc/optimized/dsdProc.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
-; abc/optimized/reoProfile.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/frm_def.c.ll
@@ -137,7 +140,6 @@ entry:
 ; postgres/optimized/brin.ll
 ; postgres/optimized/brin_tuple.ll
 ; postgres/optimized/funcapi.ll
-; postgres/optimized/gininsert.ll
 ; postgres/optimized/ginutil.ll
 ; postgres/optimized/gistsplit.ll
 ; postgres/optimized/index.ll
@@ -178,7 +180,7 @@ entry:
   ret i16 %2
 }
 
-; 31 occurrences:
+; 33 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
 ; freetype/optimized/sfnt.c.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -210,6 +212,8 @@ entry:
 ; postgres/optimized/tsquery_gist.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; qemu/optimized/virtio.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000e(i64 %0) #0 {
 entry:
@@ -218,7 +222,9 @@ entry:
   ret i16 %2
 }
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; libevent/optimized/evdns.c.ll
 ; llvm/optimized/X86MCTargetDesc.cpp.ll

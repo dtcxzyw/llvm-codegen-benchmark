@@ -1,4 +1,4 @@
-func0000000000000210:                   # @func0000000000000210
+func0000000000000410:                   # @func0000000000000410
 	leal	-160(%rdi), %eax
 	cmpl	$55136, %eax                    # imm = 0xD760
 	setb	%al
@@ -7,7 +7,7 @@ func0000000000000210:                   # @func0000000000000210
 	orb	%al, %cl
 	movzbl	%cl, %eax
 	retq
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	leal	-48(%rdi), %eax
 	cmpl	$10, %eax
 	setb	%al
@@ -16,7 +16,7 @@ func0000000000000104:                   # @func0000000000000104
 	orb	%al, %cl
 	movzbl	%cl, %eax
 	retq
-func0000000000000504:                   # @func0000000000000504
+func0000000000001204:                   # @func0000000000001204
 	leal	-46(%rdi), %eax
 	cmpl	$3, %eax
 	setb	%al

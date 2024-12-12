@@ -1,5 +1,7 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/loss_function.cc.ll
 ; opencv/optimized/pnp_solver.cpp.ll
 ; proj/optimized/geodesic.c.ll

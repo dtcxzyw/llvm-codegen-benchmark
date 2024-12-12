@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = or disjoint i64 %3, 8589934592

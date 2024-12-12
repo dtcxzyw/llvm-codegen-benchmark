@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/irqdesc.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:

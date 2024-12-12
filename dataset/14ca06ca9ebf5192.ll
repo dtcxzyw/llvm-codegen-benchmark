@@ -1,12 +1,9 @@
 
-; 11 occurrences:
+; 8 occurrences:
 ; abc/optimized/cecSatG3.c.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/picture_rescale_enc.c.ll
-; openblas/optimized/dtfsm.c.ll
 ; opencv/optimized/datastructs.cpp.ll
-; openssl/optimized/libcrypto-lib-bsearch.ll
-; openssl/optimized/libcrypto-shlib-bsearch.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; raylib/optimized/raudio.c.ll
@@ -33,16 +30,15 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
+; 1 occurrences:
+; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 1
+  %3 = lshr i32 %2, 16
   %4 = mul nsw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr double, ptr %0, i64 %5
+  %6 = getelementptr float, ptr %0, i64 %5
   ret ptr %6
 }
 

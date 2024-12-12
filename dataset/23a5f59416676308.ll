@@ -1,13 +1,14 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; hermes/optimized/ConvertUTF.cpp.ll
 ; hyperscan/optimized/hwlm.c.ll
 ; llvm/optimized/ConvertUTF.cpp.ll
+; llvm/optimized/LoopNestAnalysis.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -1
   %4 = icmp ult i8 %3, 2

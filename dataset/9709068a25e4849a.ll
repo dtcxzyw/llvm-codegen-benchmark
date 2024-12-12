@@ -19,7 +19,7 @@ entry:
   ret i64 %3
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; freetype/optimized/truetype.c.ll
@@ -39,9 +39,11 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/audio_audio.c.ll
 ; rocksdb/optimized/rate_limiter.cc.ll
-; rust-analyzer-rs/optimized/3y3c2rwk30mfhcuc.ll
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/step_mgr.ll
+; turborepo-rs/optimized/25oh6shdavuruchclucpqksw7.ll
+; turborepo-rs/optimized/9by3g1opovplsencotx7u8qhp.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i64 %1) #0 {
 entry:
@@ -62,8 +64,9 @@ entry:
   ret i64 %3
 }
 
-; 29 occurrences:
+; 33 occurrences:
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; boost/optimized/path_traits.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; cpython/optimized/sliceobject.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
@@ -78,12 +81,8 @@ entry:
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
 ; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
-; mold/optimized/output-chunks.cc.RV64BE.cc.ll
 ; mold/optimized/output-chunks.cc.RV64LE.cc.ll
-; mold/optimized/output-chunks.cc.S390X.cc.ll
-; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; opencv/optimized/canny.cpp.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
@@ -92,6 +91,13 @@ entry:
 ; quantlib/optimized/cmsmarket.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; quantlib/optimized/tapcorrelations.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

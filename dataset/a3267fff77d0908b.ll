@@ -31,10 +31,9 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/p4.ll
-; linux/optimized/reciprocal_div.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll

@@ -16,7 +16,7 @@ entry:
   ret i32 %5
 }
 
-; 85 occurrences:
+; 89 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -102,6 +102,10 @@ entry:
 ; spike/optimized/processor.ll
 ; wolfssl/optimized/benchmark.c.ll
 ; z3/optimized/util.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -111,18 +115,19 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; hwloc/optimized/bitmap.ll
+; openjdk/optimized/g1CardSet.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp eq i64 %2, 0
+  %3 = icmp eq i64 %2, 1
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
@@ -153,28 +158,25 @@ entry:
   ret i32 %5
 }
 
-; 17 occurrences:
-; postgres/optimized/basebackup_incremental.ll
-; postgres/optimized/blkreftable.ll
-; postgres/optimized/blkreftable_shlib.ll
-; postgres/optimized/blkreftable_srv.ll
-; postgres/optimized/execExprInterp.ll
-; postgres/optimized/execGrouping.ll
-; postgres/optimized/filemap.ll
-; postgres/optimized/load_manifest.ll
-; postgres/optimized/namespace.ll
-; postgres/optimized/nodeMemoize.ll
-; postgres/optimized/pg_dumpall.ll
-; postgres/optimized/pg_verifybackup.ll
-; postgres/optimized/pgstat.ll
-; postgres/optimized/pgstat_shmem.ll
-; postgres/optimized/tidbitmap.ll
+; 1 occurrences:
+; lvgl/optimized/lv_tlsf.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, 4294967296
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = trunc nuw i64 %4 to i32
+  ret i32 %5
+}
+
+; 3 occurrences:
 ; quickjs/optimized/quickjs.ll
+; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 4294967296
+  %3 = icmp ult i64 %2, 4
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = trunc i64 %4 to i32
   ret i32 %5
@@ -212,6 +214,31 @@ entry:
   %3 = icmp ugt i64 %2, 60
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = trunc nuw i64 %4 to i32
+  ret i32 %5
+}
+
+; 15 occurrences:
+; postgres/optimized/basebackup_incremental.ll
+; postgres/optimized/blkreftable.ll
+; postgres/optimized/blkreftable_shlib.ll
+; postgres/optimized/blkreftable_srv.ll
+; postgres/optimized/execExprInterp.ll
+; postgres/optimized/execGrouping.ll
+; postgres/optimized/filemap.ll
+; postgres/optimized/load_manifest.ll
+; postgres/optimized/namespace.ll
+; postgres/optimized/nodeMemoize.ll
+; postgres/optimized/pg_dumpall.ll
+; postgres/optimized/pg_verifybackup.ll
+; postgres/optimized/pgstat.ll
+; postgres/optimized/pgstat_shmem.ll
+; postgres/optimized/tidbitmap.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 2
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = trunc i64 %4 to i32
   ret i32 %5
 }
 

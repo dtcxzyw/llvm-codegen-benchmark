@@ -76,7 +76,7 @@
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = select i1 %3, ptr null, ptr %1
@@ -89,7 +89,7 @@ entry:
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/DWARFContext.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = select i1 %3, ptr null, ptr %1
@@ -100,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/kobject_uevent.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000028(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ugt ptr %1, %0

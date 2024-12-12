@@ -18,6 +18,11 @@ func0000000000000010:                   # @func0000000000000010
 	cmpl	%esi, %edi
 	seta	%al
 	retq
+func0000000000000030:                   # @func0000000000000030
+	xorl	%eax, %eax
+	cmpl	%esi, %edi
+	seta	%al
+	retq
 func0000000000000018:                   # @func0000000000000018
 	xorl	%eax, %eax
 	cmpl	%esi, %edi
@@ -43,8 +48,23 @@ func0000000000000014:                   # @func0000000000000014
 	cmpl	%esi, %edi
 	setg	%al
 	retq
+func0000000000000032:                   # @func0000000000000032
+	xorl	%eax, %eax
+	cmpl	%esi, %edi
+	setae	%al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	xorl	%eax, %eax
+	cmpl	%esi, %edi
+	setb	%al
+	retq
 func0000000000000012:                   # @func0000000000000012
 	xorl	%eax, %eax
 	cmpl	%esi, %edi
 	setae	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
+	xorl	%eax, %eax
+	cmpl	%esi, %edi
+	setbe	%al
 	retq

@@ -5,7 +5,7 @@
 ; raylib/optimized/rtextures.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0) #0 {
+define i1 @func0000000000000081(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = and i32 %1, -8

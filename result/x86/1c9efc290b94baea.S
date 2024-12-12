@@ -1,8 +1,8 @@
 func0000000000000007:                   # @func0000000000000007
 	xorl	%eax, %eax
-	testl	%edx, %edx
+	cmpl	$1, %edx
 	sete	%al
-	shll	$8, %eax
+	shll	$3, %eax
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq

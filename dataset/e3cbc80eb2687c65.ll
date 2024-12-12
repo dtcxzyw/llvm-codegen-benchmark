@@ -1,5 +1,5 @@
 
-; 79 occurrences:
+; 82 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
@@ -31,6 +31,7 @@
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/imageDecompressor.ll
@@ -65,6 +66,7 @@
 ; spike/optimized/csrs.ll
 ; spike/optimized/fdt_ro.ll
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/k12.c.ll
@@ -78,17 +80,18 @@
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/sp_int.c.ll
+; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
 
-; 190 occurrences:
+; 209 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; abseil-cpp/optimized/bind.cc.ll
@@ -173,6 +176,7 @@ entry:
 ; luau/optimized/IrCallWrapperX64.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; minetest/optimized/servermap.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -236,6 +240,7 @@ entry:
 ; rust-analyzer-rs/optimized/3yqkws4dawqbgt35.ll
 ; rust-analyzer-rs/optimized/4nk4vk785ylcn5k7.ll
 ; rust-analyzer-rs/optimized/4xl67loow1v11x6s.ll
+; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
@@ -250,6 +255,9 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; tomlplusplus/optimized/toml.cpp.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
@@ -278,6 +286,20 @@ entry:
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
@@ -361,7 +383,6 @@ entry:
 ; spike/optimized/aes64ds.ll
 ; spike/optimized/aes64es.ll
 ; spike/optimized/fdt_ro.ll
-; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wireshark/optimized/erf.c.ll
@@ -376,6 +397,7 @@ entry:
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -385,7 +407,7 @@ entry:
   ret i64 %5
 }
 
-; 694 occurrences:
+; 719 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -577,7 +599,6 @@ entry:
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; hdf5/optimized/H5Tvlen.c.ll
-; hdf5/optimized/H5VLnative_blob.c.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; hyperscan/optimized/limex_64.c.ll
@@ -638,7 +659,6 @@ entry:
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/manager.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/transport.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -682,6 +702,8 @@ entry:
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_image.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; memcached/optimized/memcached-hash.ll
@@ -997,7 +1019,6 @@ entry:
 ; spike/optimized/aes64ds.ll
 ; spike/optimized/aes64es.ll
 ; spike/optimized/aes64ks1i.ll
-; spike/optimized/bf16_to_f32.ll
 ; spike/optimized/execute.ll
 ; spike/optimized/fdt.ll
 ; spike/optimized/fdt_ro.ll
@@ -1013,6 +1034,10 @@ entry:
 ; stockfish/optimized/tbprobe.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; tls-rs/optimized/7y9936vu35zt2sp.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
@@ -1028,11 +1053,9 @@ entry:
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/1uw8h1oeggq2kq40.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
-; wasmtime-rs/optimized/3sb71uj5mon9qr9k.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
@@ -1072,10 +1095,34 @@ entry:
 ; wolfssl/optimized/sp_int.c.ll
 ; yosys/optimized/xprop.ll
 ; yyjson/optimized/yyjson.c.ll
-; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
@@ -1084,7 +1131,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 9
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
@@ -1102,8 +1149,10 @@ entry:
   ret i64 %5
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; abc/optimized/sscSim.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; icu/optimized/ucoleitr.ll
 ; linux/optimized/badblocks.ll
@@ -1120,12 +1169,12 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 56
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -1150,11 +1199,12 @@ entry:
 ; wasmtime-rs/optimized/2lz954crgst412nx.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/btsnoop.c.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 63
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
@@ -1176,7 +1226,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 56
   %4 = or disjoint i64 %3, %1
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -1224,15 +1274,17 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 31
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
 
-; 44 occurrences:
+; 46 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; clamav/optimized/regexec.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -1244,7 +1296,6 @@ entry:
 ; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/ds.ll
-; linux/optimized/msr.ll
 ; linux/optimized/uncore_nhmex.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -1267,6 +1318,7 @@ entry:
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/memtest.ll
+; regex-rs/optimized/33whcn8n29l9c6ys.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/s_subMagsF128.ll
@@ -1278,7 +1330,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 49
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
@@ -1292,7 +1344,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 40
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }

@@ -47,3 +47,12 @@ func0000000000000015:                   // @func0000000000000015
 	madd	x0, x8, x9, x0
 	ret
                                         // -- End function
+func0000000000000016:                   // @func0000000000000016
+// %bb.0:                               // %entry
+	sub	x8, x1, x2
+	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	lsr	x8, x8, #4
+	movk	x9, #43691
+	madd	x0, x8, x9, x0
+	ret
+                                        // -- End function

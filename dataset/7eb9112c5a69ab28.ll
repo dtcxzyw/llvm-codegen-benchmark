@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
 ; hermes/optimized/Path.cpp.ll
@@ -15,6 +15,8 @@
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

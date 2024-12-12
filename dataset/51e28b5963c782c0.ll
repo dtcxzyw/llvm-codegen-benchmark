@@ -21,7 +21,7 @@ entry:
 define i1 @func0000000000000022(double %0, i1 %1) #0 {
 entry:
   %2 = fcmp olt double %0, 8.000000e+03
-  %3 = and i1 %2, %1
+  %3 = and i1 %1, %2
   %4 = fcmp olt double %0, 0.000000e+00
   %not. = xor i1 %3, true
   %5 = select i1 %not., i1 %4, i1 false
@@ -50,7 +50,7 @@ entry:
 define i1 @func0000000000000024(double %0, i1 %1) #0 {
 entry:
   %2 = fcmp olt double %0, 8.000000e+03
-  %3 = and i1 %2, %1
+  %3 = and i1 %1, %2
   %4 = fcmp ogt double %0, -8.000000e+03
   %5 = or i1 %3, %4
   ret i1 %5
@@ -75,7 +75,7 @@ entry:
 define i1 @func0000000000000042(double %0, i1 %1) #0 {
 entry:
   %2 = fcmp ogt double %0, -1.000000e-10
-  %3 = and i1 %2, %1
+  %3 = and i1 %1, %2
   %4 = fcmp olt double %0, 0.000000e+00
   %not. = xor i1 %3, true
   %5 = select i1 %not., i1 %4, i1 false
@@ -88,7 +88,7 @@ entry:
 define i1 @func0000000000000044(double %0, i1 %1) #0 {
 entry:
   %2 = fcmp ogt double %0, -1.000000e-10
-  %3 = and i1 %2, %1
+  %3 = and i1 %1, %2
   %4 = fcmp ogt double %0, 1.000000e+00
   %not. = xor i1 %3, true
   %5 = select i1 %not., i1 %4, i1 false

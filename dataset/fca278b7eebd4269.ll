@@ -21,7 +21,7 @@
 ; openssl/optimized/libcrypto-shlib-cmp_status.ll
 ; qemu/optimized/hw_audio_intel-hda.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = icmp eq i32 %0, 0
@@ -92,7 +92,7 @@ entry:
 ; z3/optimized/sat_cut_simplifier.cpp.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 2, %1
   %3 = icmp eq i32 %0, 0
@@ -133,7 +133,7 @@ entry:
   ret i32 %4
 }
 
-; 100 occurrences:
+; 95 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/abcDec.c.ll
@@ -152,14 +152,12 @@ entry:
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/bdcDec.c.ll
-; abc/optimized/bdcTable.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cnfCut.c.ll
 ; abc/optimized/cswCut.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -209,11 +207,8 @@ entry:
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; abc/optimized/lpkCut.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/lpkMulti.c.ll
-; abc/optimized/lpkMux.c.ll
 ; abc/optimized/luckySwap.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/nwkBidec.c.ll
@@ -235,7 +230,7 @@ entry:
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp slt i32 %0, 7
@@ -243,42 +238,19 @@ entry:
   ret i32 %4
 }
 
-; 56 occurrences:
-; abc/optimized/abcDec.c.ll
-; abc/optimized/abcExact.c.ll
+; 33 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRenode.c.ll
-; abc/optimized/abcRpo.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/amapLib.c.ll
 ; abc/optimized/amapParse.c.ll
 ; abc/optimized/amapPerm.c.ll
-; abc/optimized/bmcMaj.c.ll
-; abc/optimized/bmcMaj2.c.ll
-; abc/optimized/bmcMaj3.c.ll
-; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauDsd.c.ll
-; abc/optimized/dauTree.c.ll
-; abc/optimized/extraBddThresh.c.ll
-; abc/optimized/extraUtilMaj.c.ll
-; abc/optimized/extraUtilTruth.c.ll
-; abc/optimized/giaDecs.c.ll
 ; abc/optimized/giaIf.c.ll
-; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/ifDec08.c.ll
-; abc/optimized/ifDec10.c.ll
-; abc/optimized/ifDec16.c.ll
-; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/kitTruth.c.ll
-; abc/optimized/lpkCut.c.ll
-; abc/optimized/luckyRead.c.ll
-; abc/optimized/sfmLib.c.ll
-; abc/optimized/utilIsop.c.ll
 ; linux/optimized/af_netlink.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
@@ -301,7 +273,7 @@ entry:
 ; llvm/optimized/StructurizeCFG.cpp.ll
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp ult i32 %0, 117440512
@@ -309,40 +281,88 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 9 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcRpo.c.ll
-; abc/optimized/aigCanon.c.ll
-; abc/optimized/cnfCut.c.ll
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/cutTruth.c.ll
-; abc/optimized/dauTree.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
-; abc/optimized/ifDsd.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
-; cmake/optimized/zstd_opt.c.ll
-; libquic/optimized/quic_crypto_client_stream.cc.ll
-; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
-  %3 = icmp ult i32 %0, 6
+  %3 = icmp samesign ult i32 %0, 6
   %4 = select i1 %3, i32 1, i32 %2
   ret i32 %4
 }
 
-; 5 occurrences:
+; 27 occurrences:
+; abc/optimized/abcDec.c.ll
+; abc/optimized/abcExact.c.ll
+; abc/optimized/abcRpo.c.ll
+; abc/optimized/aigCanon.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/bmcMaj2.c.ll
+; abc/optimized/bmcMaj3.c.ll
+; abc/optimized/dauCanon.c.ll
+; abc/optimized/dauDsd.c.ll
+; abc/optimized/dauTree.c.ll
+; abc/optimized/extraBddThresh.c.ll
+; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/extraUtilTruth.c.ll
+; abc/optimized/giaDecs.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/ifDec08.c.ll
+; abc/optimized/ifDec10.c.ll
+; abc/optimized/ifDec16.c.ll
+; abc/optimized/ifDsd.c.ll
+; abc/optimized/ifMap.c.ll
+; abc/optimized/kitTruth.c.ll
+; abc/optimized/lpkCut.c.ll
+; abc/optimized/luckyRead.c.ll
+; abc/optimized/sfmLib.c.ll
+; abc/optimized/utilIsop.c.ll
+; llvm/optimized/MetadataLoader.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000054(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 1, %1
+  %3 = icmp samesign ult i32 %0, 7
+  %4 = select i1 %3, i32 1, i32 %2
+  ret i32 %4
+}
+
+; 7 occurrences:
+; abc/optimized/aigCanon.c.ll
+; abc/optimized/cnfCut.c.ll
+; abc/optimized/dauTree.c.ll
+; abc/optimized/ifDsd.c.ll
+; cmake/optimized/zstd_opt.c.ll
+; libquic/optimized/quic_crypto_client_stream.cc.ll
+; zstd/optimized/zstd_opt.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 1, %1
+  %3 = icmp ult i32 %0, 939524096
+  %4 = select i1 %3, i32 1, i32 %2
+  ret i32 %4
+}
+
+; 6 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; wireshark/optimized/packet-usb-hid.c.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = icmp eq i32 %0, 0
@@ -350,20 +370,19 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cutMan.c.ll
 ; abc/optimized/cutOracle.c.ll
 ; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/ioReadBench.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = icmp slt i32 %0, 7
-  %4 = select i1 %3, i32 4, i32 %2
+  %4 = select i1 %3, i32 1, i32 %2
   ret i32 %4
 }
 

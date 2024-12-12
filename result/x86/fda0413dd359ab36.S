@@ -11,7 +11,7 @@ func0000000000000004:                   # @func0000000000000004
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testl	%esi, %esi
 	sete	%al
 	notb	%dil
@@ -29,13 +29,13 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	orb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	testl	%esi, %esi
 	sets	%al
 	notb	%dil
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	testl	%esi, %esi
 	setg	%al
 	orb	%dil, %al

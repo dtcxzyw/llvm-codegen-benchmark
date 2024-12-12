@@ -10,7 +10,7 @@ func0000000000000003:                   # @func0000000000000003
 	.long	2123724318                      # 0x7e95761e
 func0000000000000002:                   # @func0000000000000002
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$5, %ymm0, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq

@@ -2,7 +2,8 @@ func000000000000000a:                   # @func000000000000000a
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmfle.vf	v0, v8, fa5
-	vmerge.vim	v8, v8, 0, v0
+	lui	a0, 267264
+	vmerge.vxm	v8, v8, a0, v0
 	vfcvt.rtz.x.f.v	v8, v8
 	ret
 func0000000000000004:                   # @func0000000000000004

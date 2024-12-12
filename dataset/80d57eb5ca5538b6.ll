@@ -5,7 +5,7 @@
 ; tev/optimized/ImageViewer.cpp.ll
 ; wireshark/optimized/packet-megaco.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = icmp eq i32 %0, 0
@@ -23,7 +23,7 @@ entry:
 ; opencv/optimized/torch_importer.cpp.ll
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 29
   %3 = icmp slt i32 %0, 0

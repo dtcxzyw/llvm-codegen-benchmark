@@ -1,9 +1,12 @@
 
-; 6 occurrences:
+%union.StackValue.3713429 = type { %struct.TValue.3713430 }
+%struct.TValue.3713430 = type { %union.Value.3713431, i8 }
+%union.Value.3713431 = type { ptr }
+
+; 5 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; linux/optimized/d_path.ll
 ; postgres/optimized/numutils.ll
-; raylib/optimized/rcore.c.ll
 ; ruby/optimized/random.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
@@ -16,7 +19,33 @@ entry:
   ret ptr %5
 }
 
-; 67 occurrences:
+; 15 occurrences:
+; hermes/optimized/Interpreter.cpp.ll
+; hermes/optimized/RegExp.cpp.ll
+; lua/optimized/ldo.ll
+; luau/optimized/lvmutils.cpp.ll
+; ncnn/optimized/mat_pixel_rotate.cpp.ll
+; opencv/optimized/brisk.cpp.ll
+; opencv/optimized/canny.cpp.ll
+; opencv/optimized/find_ellipses.cpp.ll
+; opencv/optimized/oilpainting.cpp.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; openjdk/optimized/continuationFreezeThaw.ll
+; openusd/optimized/reconintra.c.ll
+; openusd/optimized/restoration.c.ll
+; pocketpy/optimized/vm.cpp.ll
+; stb/optimized/stb_image_write.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw i64, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -16
+  ret ptr %5
+}
+
+; 56 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/giaGlitch.c.ll
@@ -50,13 +79,9 @@ entry:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; freetype/optimized/psaux.c.ll
-; hermes/optimized/Interpreter.cpp.ll
-; hermes/optimized/RegExp.cpp.ll
-; lua/optimized/lapi.ll
+; icu/optimized/rematch.ll
 ; lua/optimized/ldo.ll
 ; luau/optimized/ldebug.cpp.ll
-; luau/optimized/lvmutils.cpp.ll
-; ncnn/optimized/mat_pixel_rotate.cpp.ll
 ; openblas/optimized/lapacke_dlascl.c.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/canny.cpp.ll
@@ -65,32 +90,25 @@ entry:
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/matrix_iterator.cpp.ll
 ; opencv/optimized/matrix_sparse.cpp.ll
-; opencv/optimized/oilpainting.cpp.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
-; openjdk/optimized/continuationFreezeThaw.ll
 ; openmpi/optimized/coll_adapt_ireduce.ll
-; openusd/optimized/reconintra.c.ll
-; openusd/optimized/restoration.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/phar_object.ll
 ; php/optimized/php_xmlreader.ll
 ; php/optimized/simplexml.ll
-; pocketpy/optimized/vm.cpp.ll
+; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
-; stb/optimized/stb_image_write.c.ll
 ; stockfish/optimized/search.ll
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i64, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 -16
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 
@@ -113,17 +131,28 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
-; icu/optimized/rematch.ll
-; linux/optimized/readdir.ll
-; raylib/optimized/rcore.c.ll
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; opencv/optimized/smooth.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
+  ret ptr %5
+}
+
+; 1 occurrences:
+; lua/optimized/lapi.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw nuw %union.StackValue.3713429, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -16
   ret ptr %5
 }
 

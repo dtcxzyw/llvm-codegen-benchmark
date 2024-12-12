@@ -11,16 +11,4 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; icu/optimized/collationiterator.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 65535
-  %3 = select i1 %2, i32 %0, i32 %1
-  %4 = and i32 %3, 31
-  %5 = shl nuw i32 1, %4
-  ret i32 %5
-}
-
 attributes #0 = { nounwind }

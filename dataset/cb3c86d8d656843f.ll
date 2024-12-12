@@ -3,7 +3,7 @@
 ; glog/optimized/symbolize.cc.ll
 ; llvm/optimized/CachePruning.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq i64 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/gen8_ppgtt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000811(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000002021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 2097151
   %4 = icmp eq i64 %1, 0

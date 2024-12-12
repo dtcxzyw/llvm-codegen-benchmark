@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; darktable/optimized/introspection_primaries.c.ll
+; 3 occurrences:
 ; minetest/optimized/sky.cpp.ll
 ; openjdk/optimized/mlib_ImageAffine_BL_F32.ll
 ; raylib/optimized/rshapes.c.ll

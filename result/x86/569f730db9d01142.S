@@ -34,7 +34,3 @@ func0000000000000009:                   # @func0000000000000009
 	movb	$2, %al
 	subb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movb	$23, %al
-	subb	%dil, %al
-	retq

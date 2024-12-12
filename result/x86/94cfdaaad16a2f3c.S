@@ -20,6 +20,6 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
-	shll	$8, %esi
+	addl	%esi, %esi
 	subl	%esi, %eax
 	retq

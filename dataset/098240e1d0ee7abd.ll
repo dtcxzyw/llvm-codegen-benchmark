@@ -7,18 +7,17 @@
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %1, 2
   %5 = mul nuw nsw i64 %4, %3
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
-; darktable/optimized/jpeg.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/psCardTable.ll
 ; raylib/optimized/raudio.c.ll
@@ -30,6 +29,18 @@ entry:
   %4 = shl nuw nsw i64 %1, 7
   %5 = mul i64 %4, %3
   %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; yalantinglibs/optimized/user_defined_serialization.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000033(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw nsw i64 %1, 2
+  %5 = mul i64 %4, %3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -100,8 +111,9 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_filmicrgb.c.ll
+; stockfish/optimized/tbprobe.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003c(ptr %0, i64 %1, i32 %2) #0 {
@@ -154,12 +166,12 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %1, 1
   %5 = mul nuw nsw i64 %4, %3
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -182,10 +194,23 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %1, 1
+  %5 = mul i64 %4, %3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl i64 %1, 2
   %5 = mul i64 %4, %3
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6

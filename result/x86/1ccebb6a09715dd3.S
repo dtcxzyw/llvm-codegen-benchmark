@@ -1,4 +1,4 @@
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	addl	%esi, %edi
 	imull	$9363, %edi, %eax               # imm = 0x2493
 	shrl	$16, %eax
@@ -15,14 +15,14 @@ func00000000000000f4:                   # @func00000000000000f4
 	cmpw	$6, %ax
 	setb	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	addl	%esi, %edi
 	imull	$6203, %edi, %eax               # imm = 0x183B
 	movzwl	%ax, %eax
 	cmpl	$270, %eax                      # imm = 0x10E
 	setb	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	addl	%esi, %edi
 	imull	$7253, %edi, %eax               # imm = 0x1C55
 	movzwl	%ax, %eax

@@ -10,22 +10,7 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
-; arrow/optimized/scalar_cast_temporal.cc.ll
-; libquic/optimized/time_support.c.ll
-; openjdk/optimized/os.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sdiv i64 %1, -4
-  %3 = add nsw i64 %2, %0
-  %4 = mul nsw i64 %3, 80
-  ret i64 %4
-}
-
-; 47 occurrences:
+; 48 occurrences:
 ; assimp/optimized/Q3DLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
@@ -68,6 +53,7 @@ entry:
 ; minetest/optimized/wieldmesh.cpp.ll
 ; msgpack/optimized/speed_test_nested_array.cpp.ll
 ; opencv/optimized/fast_hough_transform.cpp.ll
+; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/learning_based_color_balance.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/select3dobj.cpp.ll
@@ -77,7 +63,7 @@ entry:
 define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul nuw nsw i64 %3, 12
   ret i64 %4
 }
@@ -100,6 +86,19 @@ entry:
   ret i64 %4
 }
 
+; 3 occurrences:
+; arrow/optimized/scalar_cast_temporal.cc.ll
+; libquic/optimized/time_support.c.ll
+; openjdk/optimized/os.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sdiv i64 %1, 3600
+  %3 = add nsw i64 %0, %2
+  %4 = mul nsw i64 %3, -60
+  ret i64 %4
+}
+
 ; 2 occurrences:
 ; php/optimized/parse_posix.ll
 ; php/optimized/tm2unixtime.ll
@@ -107,7 +106,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, -100
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul i64 %3, 86400
   ret i64 %4
 }
@@ -123,8 +122,20 @@ entry:
 define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul nuw nsw i64 %3, 24
+  ret i64 %4
+}
+
+; 2 occurrences:
+; boost/optimized/src.ll
+; hermes/optimized/HadesGC.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sdiv exact i64 %1, -24
+  %3 = add nsw i64 %2, %0
+  %4 = mul i64 %3, 24
   ret i64 %4
 }
 
@@ -141,23 +152,12 @@ entry:
 }
 
 ; 1 occurrences:
-; hermes/optimized/HadesGC.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sdiv exact i64 %1, 6408
-  %3 = add nsw i64 %2, %0
-  %4 = mul i64 %3, 6408
-  ret i64 %4
-}
-
-; 1 occurrences:
 ; wireshark/optimized/interface_toolbar.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, -24
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul i64 %3, 24
   ret i64 %4
 }
@@ -168,7 +168,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul i64 %3, 24
   ret i64 %4
 }

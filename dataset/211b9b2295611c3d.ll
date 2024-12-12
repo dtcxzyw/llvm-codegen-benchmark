@@ -6,7 +6,7 @@
 ; openssl/optimized/libssl-shlib-extensions.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2048
   %4 = icmp ne i32 %3, 0
@@ -16,21 +16,7 @@ entry:
   ret i1 %7
 }
 
-; 1 occurrences:
-; clamav/optimized/pe_icons.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 31
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i1 %1, i1 false
-  %6 = icmp ult i32 %0, 3
-  %7 = or i1 %6, %5
-  ret i1 %7
-}
-
-; 82 occurrences:
-; linux/optimized/feat_ctl.ll
+; 81 occurrences:
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDumper.cpp.ll
@@ -113,7 +99,7 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2048
   %4 = icmp eq i32 %3, 0
@@ -127,7 +113,7 @@ entry:
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 127
   %4 = icmp ne i32 %3, 40

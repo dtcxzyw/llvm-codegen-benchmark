@@ -6,7 +6,7 @@ define i8 @func0000000000000043(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 1
   %3 = zext i1 %2 to i8
-  %4 = add nuw nsw i8 %3, %0
+  %4 = add nuw nsw i8 %0, %3
   ret i8 %4
 }
 
@@ -19,7 +19,7 @@ define i8 @func0000000000000060(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i8
-  %4 = add i8 %3, %0
+  %4 = add i8 %0, %3
   ret i8 %4
 }
 
@@ -30,7 +30,7 @@ define i8 @func0000000000000063(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i8
-  %4 = add nuw nsw i8 %3, %0
+  %4 = add nuw nsw i8 %0, %3
   ret i8 %4
 }
 
@@ -42,7 +42,7 @@ define i8 @func0000000000000061(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -9223372036854775808
   %3 = zext i1 %2 to i8
-  %4 = add nsw i8 %3, %0
+  %4 = add nsw i8 %0, %3
   ret i8 %4
 }
 

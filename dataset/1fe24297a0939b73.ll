@@ -308,7 +308,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -48
   %4 = add i32 %3, %1
@@ -320,10 +320,10 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001c1(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = icmp eq i32 %4, 4
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -333,7 +333,7 @@ entry:
 ; cmake/optimized/ftp.c.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -528
   %4 = add nsw i32 %3, %1
@@ -368,13 +368,25 @@ entry:
   ret i1 %6
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a6(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -272
+  %4 = add nsw i32 %1, %3
+  %5 = icmp slt i32 %4, 17
+  %6 = select i1 %0, i1 true, i1 %5
+  ret i1 %6
+}
+
 ; 4 occurrences:
 ; hermes/optimized/RegExp.cpp.ll
 ; lua/optimized/lcode.ll
 ; luajit/optimized/minilua.ll
 ; redis/optimized/lcode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -48
   %4 = sub i32 0, %1
@@ -388,23 +400,11 @@ entry:
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; recastnavigation/optimized/DetourLocalBoundary.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a6(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp slt i32 %4, 9
-  %6 = select i1 %0, i1 true, i1 %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/clntxdr.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, -1
-  %4 = add i32 %3, %1
-  %5 = icmp slt i32 %4, 0
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }
@@ -412,10 +412,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ip6_output.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001ec(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 40
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = icmp ne i32 %4, 40
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -426,7 +426,7 @@ entry:
 ; luajit/optimized/minilua.ll
 ; redis/optimized/lcode.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a1(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = add nsw i32 %3, %1
@@ -438,7 +438,7 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/ImfRle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add i32 %3, %1

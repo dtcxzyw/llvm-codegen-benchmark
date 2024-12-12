@@ -1,13 +1,13 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/wlcWriteVer.c.ll
 ; freetype/optimized/truetype.c.ll
 ; git/optimized/merge-ort.ll
 ; icu/optimized/collationfastlatin.ll
 ; icu/optimized/ucase.ll
+; libevent/optimized/http.c.ll
 ; linux/optimized/af_inet6.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/i915_irq.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/message.ll
@@ -16,7 +16,6 @@
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
-; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; llvm/optimized/TargetPassConfig.cpp.ll
 ; llvm/optimized/ThreadSafety.cpp.ll
@@ -32,7 +31,7 @@
 ; slurm/optimized/job_mgr.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000042(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1024
   %3 = icmp eq i16 %2, 0
@@ -68,7 +67,7 @@ entry:
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-usbll.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000302(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 304
   %3 = icmp ne i16 %2, 304
@@ -77,8 +76,9 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; c3c/optimized/sema_types.c.ll
+; libevent/optimized/event.c.ll
 ; linux/optimized/i2c-algo-bit.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/tcp_input.ll
@@ -92,7 +92,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; z3/optimized/smt_internalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000058(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 64
   %3 = icmp eq i16 %2, 0
@@ -105,7 +105,7 @@ entry:
 ; linux/optimized/filter.ll
 ; openjdk/optimized/cmscgats.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000308(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2048
   %3 = icmp ne i16 %2, 0
@@ -118,7 +118,7 @@ entry:
 ; libpng/optimized/png.c.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000054(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2
   %3 = icmp eq i16 %2, 0
@@ -127,8 +127,7 @@ entry:
   ret i1 %5
 }
 
-; 34 occurrences:
-; cvc5/optimized/theory_sep.cpp.ll
+; 33 occurrences:
 ; fmt/optimized/printf-test.cc.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -163,7 +162,7 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 15
   %3 = icmp eq i16 %2, 1
@@ -176,7 +175,7 @@ entry:
 ; abc/optimized/wlcNtk.c.ll
 ; abc/optimized/wlcWin.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000202(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 63
   %3 = icmp eq i16 %2, 22
@@ -191,41 +190,12 @@ entry:
 ; libevent/optimized/event.c.ll
 ; linux/optimized/vt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000030c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8
   %3 = icmp ne i16 %2, 0
   %4 = icmp slt i32 %0, 0
   %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/X86ISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d8(i32 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 3
-  %3 = icmp ne i16 %2, 0
-  %4 = icmp slt i32 %0, 2
-  %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 6 occurrences:
-; cvc5/optimized/type_node.cpp.ll
-; linux/optimized/tx.ll
-; llvm/optimized/ASTCommon.cpp.ll
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ItaniumMangle.cpp.ll
-; llvm/optimized/SemaCXXScopeSpec.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 127
-  %3 = icmp eq i16 %2, 59
-  %4 = icmp ult i32 %0, 4
-  %5 = or i1 %3, %4
   ret i1 %5
 }
 
@@ -242,7 +212,7 @@ entry:
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; wireshark/optimized/packet-btl2cap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000318(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 512
   %3 = icmp ne i16 %2, 0
@@ -252,21 +222,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i32 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 31
-  %3 = icmp eq i16 %2, 4
-  %4 = icmp ugt i32 %0, 127
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; llvm/optimized/DeclSpec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000310(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 256
   %3 = icmp ne i16 %2, 0
@@ -278,7 +236,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/rx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000118(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 252
   %3 = icmp ne i16 %2, 208
@@ -288,39 +246,26 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/tcp_minisocks.ll
+; linux/optimized/tx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000102(i32 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 512
-  %3 = icmp eq i16 %2, 0
-  %4 = icmp slt i32 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; postgres/optimized/heaptuple.ll
-; postgres/optimized/indextuple.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c2(i32 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 2
-  %3 = icmp eq i16 %2, 0
-  %4 = icmp slt i32 %0, 0
+  %2 = and i16 %1, 252
+  %3 = icmp eq i16 %2, 200
+  %4 = icmp ult i32 %0, 24
   %5 = or i1 %3, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
+; linux/optimized/tcp_minisocks.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i32 %0, i16 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 96
-  %3 = icmp ne i16 %2, 0
-  %4 = icmp sgt i32 %0, -1
-  %5 = or i1 %3, %4
+  %2 = and i16 %1, 512
+  %3 = icmp eq i16 %2, 0
+  %4 = icmp slt i32 %0, 0
+  %5 = or i1 %4, %3
   ret i1 %5
 }
 

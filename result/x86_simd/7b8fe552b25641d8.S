@@ -7,7 +7,7 @@
 	.short	32                              # 0x20
 	.short	32                              # 0x20
 	.short	32                              # 0x20
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestmw	.LCPI0_0(%rip), %xmm2, %k1
@@ -26,7 +26,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	.short	8                               # 0x8
 	.short	8                               # 0x8
 	.short	8                               # 0x8
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestmw	.LCPI1_0(%rip), %xmm2, %k1

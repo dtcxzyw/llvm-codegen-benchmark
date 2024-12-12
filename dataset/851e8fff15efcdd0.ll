@@ -9,7 +9,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
   %5 = shl nuw nsw i32 %1, 8
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -43,7 +43,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = shl nuw nsw i32 %1, 16
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -62,7 +62,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 4
   %5 = shl nuw nsw i32 %1, 8
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }
@@ -77,7 +77,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 6
   %5 = shl nuw nsw i32 %1, 18
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -91,7 +91,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
   %5 = shl nuw nsw i32 %1, 16
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -105,7 +105,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
   %5 = shl nuw i32 %1, 24
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -116,7 +116,7 @@ entry:
 define i32 @func000000000000008c(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 5
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = shl nuw nsw i32 %5, 3
   %7 = add i32 %6, %4
@@ -129,7 +129,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 5
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = shl nuw nsw i32 %5, 3
   %7 = add i32 %6, %4
@@ -141,11 +141,12 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000018c(i32 %0, i8 %1, i32 %2) #0 {
 entry:
-  %3 = zext i8 %1 to i32
-  %4 = add i32 %3, %2
-  %5 = shl i32 %4, 8
-  %6 = add i32 %5, %0
-  ret i32 %6
+  %3 = shl nuw nsw i32 %2, 8
+  %4 = add i32 %0, %3
+  %5 = zext i8 %1 to i32
+  %6 = shl nuw nsw i32 %5, 8
+  %7 = add i32 %6, %4
+  ret i32 %7
 }
 
 ; 1 occurrences:
@@ -182,7 +183,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 12
   %5 = shl nuw i32 %1, 24
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }

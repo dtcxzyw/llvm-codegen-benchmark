@@ -50,7 +50,9 @@ entry:
   ret i32 %2
 }
 
-; 31 occurrences:
+; 33 occurrences:
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
 ; clamav/optimized/libfreshclam_internal.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll

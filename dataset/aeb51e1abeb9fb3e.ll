@@ -14,17 +14,16 @@
 define i32 @func0000000000000002(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 6
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = select i1 %3, i32 -28, i32 -22
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; icu/optimized/usearch.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll

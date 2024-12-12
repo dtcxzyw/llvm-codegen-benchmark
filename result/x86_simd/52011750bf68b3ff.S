@@ -9,7 +9,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [16,16,16,16,16,16,16,16]
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [12,12,12,12,12,12,12,12]
-	vpcmpneqd	%ymm0, %ymm1, %k1
+	vpcmpneqd	%ymm1, %ymm0, %k1
 	vmovdqu8	.LCPI0_2(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq
@@ -24,7 +24,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [2000000,2000000,2000000,2000000,2000000,2000000,2000000,2000000]
 	vpbroadcastd	.LCPI1_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [20000000,20000000,20000000,20000000,20000000,20000000,20000000,20000000]
-	vpcmpnltud	%ymm0, %ymm1, %k1
+	vpcmpleud	%ymm1, %ymm0, %k1
 	vmovdqu8	.LCPI1_2(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq

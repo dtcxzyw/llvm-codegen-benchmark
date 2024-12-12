@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %sil
 	movl	$5, %ecx
 	cmovneq	%rax, %rcx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	sete	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -13,6 +13,6 @@ func0000000000000006:                   # @func0000000000000006
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	cmovneq	%rax, %rcx
-	cmpq	%rdi, %rcx
-	setg	%al
+	cmpq	%rcx, %rdi
+	setl	%al
 	retq

@@ -15,12 +15,20 @@ func0000000000000006:                   # @func0000000000000006
 	sarb	$7, %dil
 	andb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	andb	$1, %sil
+	orb	$2, %sil
+	xorl	%ecx, %ecx
+	cmpb	$2, %dil
+	movzbl	%sil, %eax
+	cmovael	%ecx, %eax
+	retq
 func0000000000000004:                   # @func0000000000000004
-	xorl	%eax, %eax
-	testb	$1, %sil
-	movl	$243, %ecx
-	cmovnel	%eax, %ecx
-	cmpb	$59, %dil
-	movl	$230, %eax
+	andb	$1, %sil
+	shlb	$5, %sil
+	orb	$65, %sil
+	cmpb	$26, %dil
+	movzbl	%sil, %ecx
+	movl	$24, %eax
 	cmovbl	%ecx, %eax
 	retq

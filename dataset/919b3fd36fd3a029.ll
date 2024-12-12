@@ -10,7 +10,7 @@ entry:
   ret i32 %3
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; clamav/optimized/dll.cpp.ll
 ; git/optimized/packfile.ll
 ; gromacs/optimized/colvarcomp_volmaps.cpp.ll
@@ -36,6 +36,7 @@ entry:
 ; openjdk/optimized/pngread.ll
 ; php/optimized/decode.ll
 ; postgres/optimized/nodeSort.ll
+; postgres/optimized/rangetypes_gist.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; wireshark/optimized/netxray.c.ll
 ; wireshark/optimized/packet-epl.c.ll

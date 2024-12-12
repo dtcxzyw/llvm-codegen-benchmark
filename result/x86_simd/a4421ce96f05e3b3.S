@@ -6,7 +6,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpsrlq	$47, %ymm1, %ymm3
 	vpxor	%ymm1, %ymm3, %ymm1
 	vpmullq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.quad	21                              # 0x15
@@ -15,6 +15,6 @@ func0000000000000020:                   # @func0000000000000020
 	vpsrlq	$28, %ymm1, %ymm2
 	vpxor	%ymm1, %ymm2, %ymm1
 	vpsllq	$31, %ymm1, %ymm2
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq

@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/src.ll
 ; linux/optimized/lzo1x_compress.ll
 ; llvm/optimized/SourceManager.cpp.ll
 ; openjdk/optimized/heap.ll

@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/tsc.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll

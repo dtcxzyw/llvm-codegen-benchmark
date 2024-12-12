@@ -1,5 +1,5 @@
 
-%"struct.std::pair.28.2486663" = type <{ i64, i32, [4 x i8] }>
+%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
 
 ; 242 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -245,10 +245,10 @@
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000019(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw %"struct.std::pair.28.2486663", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::pair.28.2602107", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = ashr exact i64 %6, 4
@@ -268,15 +268,18 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
+; 6 occurrences:
+; hyperscan/optimized/dfa_min.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/ng_find_matches.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
+; hyperscan/optimized/ng_squash.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000018(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 6
-  %4 = getelementptr nusw i64, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = ashr i64 %6, 5

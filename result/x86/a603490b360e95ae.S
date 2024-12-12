@@ -1,10 +1,10 @@
-func0000000000000188:                   # @func0000000000000188
-	addl	%edi, %esi
-	cmpq	%rdi, %rsi
-	setb	%al
+func0000000000000318:                   # @func0000000000000318
+	leal	(%rdi,%rsi), %eax
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	addl	%edi, %esi
-	cmpq	%rdi, %rsi
-	setb	%al
+	leal	(%rdi,%rsi), %eax
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

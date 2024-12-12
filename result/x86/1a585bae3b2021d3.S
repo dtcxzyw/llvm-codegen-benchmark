@@ -28,3 +28,13 @@ func0000000000000004:                   # @func0000000000000004
 	shrq	$32, %rsi
 	cmovnel	%edi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpq	$9, %rsi
+	cmovael	%edi, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
+	cmovbel	%edi, %eax
+	retq

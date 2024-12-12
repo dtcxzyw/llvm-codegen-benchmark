@@ -1,7 +1,9 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; openusd/optimized/types.cpp.ll
 ; qemu/optimized/block_vhdx.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:

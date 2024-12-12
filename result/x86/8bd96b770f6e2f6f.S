@@ -1,71 +1,71 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000114:                   # @func0000000000000114
 	addl	$-14, %esi
-	cmpl	%edi, %esi
-	setb	%cl
+	cmpl	%esi, %edi
+	seta	%cl
 	cmpl	$20, %edi
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000311:                   # @func0000000000000311
+func0000000000000c21:                   # @func0000000000000c21
 	incl	%esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%cl
 	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	decl	%esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%cl
 	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000001a4:                   # @func00000000000001a4
+func0000000000000554:                   # @func0000000000000554
 	addl	$-3, %esi
-	cmpl	%edi, %esi
-	setl	%cl
+	cmpl	%esi, %edi
+	setg	%cl
 	cmpl	$2, %edi
 	setb	%al
 	orb	%cl, %al
 	retq
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	incl	%esi
-	cmpl	%edi, %esi
-	setl	%cl
+	cmpl	%esi, %edi
+	setg	%cl
 	testl	%edi, %edi
 	setle	%al
 	orb	%cl, %al
 	retq
-func00000000000003a6:                   # @func00000000000003a6
+func0000000000000d46:                   # @func0000000000000d46
 	addl	$127, %esi
-	cmpl	%edi, %esi
-	setl	%cl
+	cmpl	%esi, %edi
+	setg	%cl
 	cmpl	$-128, %edi
 	setl	%al
 	orb	%cl, %al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	incl	%esi
-	cmpl	%edi, %esi
-	setl	%cl
+	cmpl	%esi, %edi
+	setg	%cl
 	testl	%edi, %edi
 	setle	%al
 	orb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	incl	%esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%cl
 	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000001b6:                   # @func00000000000001b6
+func0000000000000566:                   # @func0000000000000566
 	addl	$-2, %esi
-	cmpl	%edi, %esi
-	setle	%cl
+	cmpl	%esi, %edi
+	setge	%cl
 	cmpl	$2, %edi
 	setl	%al
 	orb	%cl, %al

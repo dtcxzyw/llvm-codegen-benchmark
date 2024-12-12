@@ -34,12 +34,6 @@ func00000000000000c3:                   # @func00000000000000c3
 	setne	%al
 	leal	(%rax,%rdi,2), %eax
 	retq
-func0000000000000041:                   # @func0000000000000041
-	xorl	%eax, %eax
-	cmpl	%edx, %esi
-	setb	%al
-	leal	(%rax,%rdi,2), %eax
-	retq
 func00000000000000c1:                   # @func00000000000000c1
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
@@ -59,6 +53,12 @@ func00000000000000b1:                   # @func00000000000000b1
 	leal	(%rax,%rdi,2), %eax
 	retq
 func0000000000000047:                   # @func0000000000000047
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	setb	%al
+	leal	(%rax,%rdi,2), %eax
+	retq
+func0000000000000041:                   # @func0000000000000041
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	setb	%al

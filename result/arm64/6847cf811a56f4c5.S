@@ -2,7 +2,7 @@ func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	cmp	w2, #1
 	cset	w8, eq
-	tst	w8, w1
+	tst	w1, w8
 	csel	x0, xzr, x0, ne
 	ret
                                         // -- End function

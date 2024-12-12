@@ -7,7 +7,7 @@
 ; protobuf/optimized/csharp_message.cc.ll
 ; re2/optimized/mimics_pcre.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f0(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001b0(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp ne i64 %3, %1
@@ -31,19 +31,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/hizzie.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i8 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = icmp slt i64 %3, %1
-  %5 = trunc i8 %0 to i1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
-; z3/optimized/udoc_relation.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d0(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000190(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp ult i64 %3, %1
@@ -52,23 +40,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; icu/optimized/units_data.ll
-; ozz-animation/optimized/import2ozz_track.cc.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000da(i8 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = icmp slt i64 %3, %1
-  %5 = trunc nuw i8 %0 to i1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; proj/optimized/singleoperation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000092(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000112(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ult i64 %3, %1
@@ -85,7 +60,7 @@ entry:
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; g2o/optimized/edge_se3_plane_calib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b0(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000130(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ne i64 %3, %1

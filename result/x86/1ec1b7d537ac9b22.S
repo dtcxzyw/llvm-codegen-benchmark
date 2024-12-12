@@ -24,11 +24,11 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 func0000000000000000:                   # @func0000000000000000
 	subl	%edx, %esi
-	leal	8(%rsi,%rdi), %eax
+	leal	8(%rdi,%rsi), %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	subl	%edx, %esi
-	leal	-1(%rsi,%rdi), %eax
+	leal	-1(%rdi,%rsi), %eax
 	retq
 func0000000000000020:                   # @func0000000000000020
 	subl	%edx, %esi

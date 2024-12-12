@@ -1,17 +1,14 @@
 
-; 20 occurrences:
+; 17 occurrences:
 ; git/optimized/path.ll
 ; graphviz/optimized/graph.c.ll
 ; hyperscan/optimized/ng_asserts.cpp.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/intel_fbc.ll
 ; linux/optimized/intel_rps.ll
-; linux/optimized/irq.ll
 ; linux/optimized/libahci.ll
 ; llvm/optimized/ODRHash.cpp.ll
-; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/zend_jit.ll

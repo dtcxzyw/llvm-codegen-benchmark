@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; brotli/optimized/cluster.c.ll
 ; icu/optimized/astro.ll
 ; meshlab/optimized/Factor.cpp.ll
@@ -15,6 +15,7 @@
 ; openusd/optimized/patchBasis.cpp.ll
 ; openusd/optimized/testTs_HardToReach.cpp.ll
 ; openusd/optimized/typeRegistry.cpp.ll
+; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/tqreigendecomposition.ll
 ; stat-rs/optimized/rkxxfn3f5mhspne.ll
 ; Function Attrs: nounwind

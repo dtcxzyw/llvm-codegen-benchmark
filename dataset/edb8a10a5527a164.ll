@@ -123,31 +123,6 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; spike/optimized/f32_classify.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i32 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = or i1 %1, %2
-  %4 = xor i1 %3, true
-  %5 = icmp slt i32 %0, 0
-  %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 2 occurrences:
-; clamav/optimized/file.cpp.ll
-; postgres/optimized/zic.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i32 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = or i1 %1, %2
-  %4 = xor i1 %3, true
-  %5 = icmp sgt i32 %0, -1
-  %6 = and i1 %5, %4
-  ret i1 %6
-}
-
 ; 4 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll

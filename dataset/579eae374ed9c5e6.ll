@@ -1,12 +1,10 @@
 
-; 21 occurrences:
+; 19 occurrences:
 ; libquic/optimized/tls_record.c.ll
 ; llvm/optimized/CodeExtractor.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/IRMover.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
-; llvm/optimized/LinkModules.cpp.ll
-; llvm/optimized/MergeFunctions.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
 ; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll

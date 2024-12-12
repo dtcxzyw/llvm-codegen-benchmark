@@ -10,12 +10,6 @@ func0000000000000039:                   # @func0000000000000039
 	srliw	a0, a0, 6
 	addi	a0, a0, -2
 	ret
-func0000000000000079:                   # @func0000000000000079
-	add	a0, a0, a1
-	addi	a0, a0, 32
-	srliw	a0, a0, 5
-	addi	a0, a0, -1
-	ret
 func000000000000003b:                   # @func000000000000003b
 	add	a0, a0, a1
 	lui	a1, 1034754

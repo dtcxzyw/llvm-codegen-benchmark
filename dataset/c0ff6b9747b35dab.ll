@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sub i32 %3, %1
@@ -15,7 +15,7 @@ entry:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
   %4 = sub i32 %3, %1
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/psdinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp sgt i32 %3, -1
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp ult i32 %3, -16

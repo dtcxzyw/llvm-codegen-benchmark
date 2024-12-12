@@ -27,15 +27,14 @@ func0000000000000001:                   # @func0000000000000001
 	vzeroupper
 	retq
 .LCPI3_0:
-	.long	31                              # 0x1f
-.LCPI3_1:
-	.long	32                              # 0x20
+	.long	4294967294                      # 0xfffffffe
 func0000000000000008:                   # @func0000000000000008
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpmovqd	%ymm1, %xmm1
-	vpbroadcastd	.LCPI3_0(%rip), %xmm0   # xmm0 = [31,31,31,31]
-	vpaddd	.LCPI3_1(%rip){1to4}, %xmm1, %xmm0 {%k1}
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpbroadcastd	.LCPI3_0(%rip), %xmm0   # xmm0 = [4294967294,4294967294,4294967294,4294967294]
+	vpaddd	%xmm2, %xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
 func000000000000000d:                   # @func000000000000000d

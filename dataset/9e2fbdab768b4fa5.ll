@@ -1,5 +1,9 @@
 
-; 19 occurrences:
+; 23 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; linux/optimized/migrate.ll
 ; nanobind/optimized/nb_type.cpp.ll

@@ -1,5 +1,6 @@
 
-; 41 occurrences:
+; 42 occurrences:
+; boost/optimized/conversion.ll
 ; cmake/optimized/cmProcess.cxx.ll
 ; gromacs/optimized/atomsbuilder.cpp.ll
 ; gromacs/optimized/mdatoms.cpp.ll
@@ -43,18 +44,6 @@
 ; yosys/optimized/wreduce.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %.neg = sub i64 %1, %3
-  %4 = sext i32 %0 to i64
-  %5 = add i64 %.neg, %4
-  ret i64 %5
-}
-
-; 1 occurrences:
-; oiio/optimized/pnminput.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %1, %3

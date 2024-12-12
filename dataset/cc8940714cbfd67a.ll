@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp eq i32 %2, 0
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/geo_ops.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = icmp slt i32 %2, 0

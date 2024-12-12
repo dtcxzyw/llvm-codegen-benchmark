@@ -26,13 +26,6 @@ func0000000000000020:                   # @func0000000000000020
 	andl	$55, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	xorl	%eax, %eax
-	cmpl	$24578, %esi                    # imm = 0x6002
-	setae	%al
-	andl	$2, %edi
-	orl	%edi, %eax
-	retq
 func0000000000000030:                   # @func0000000000000030
 	xorl	%eax, %eax
 	testl	%esi, %esi

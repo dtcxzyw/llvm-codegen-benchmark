@@ -25,7 +25,7 @@ entry:
   ret i32 %5
 }
 
-; 19 occurrences:
+; 21 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; cvc5/optimized/linear_equality.cpp.ll
@@ -36,6 +36,8 @@ entry:
 ; linux/optimized/xdp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/LoopPeel.cpp.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
@@ -72,6 +74,23 @@ entry:
   ret i32 %5
 }
 
+; 7 occurrences:
+; icu/optimized/unistr.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; openmpi/optimized/ad_aggregate_new.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = select i1 %0, i32 0, i32 %1
+  %5 = add nsw i32 %4, %3
+  ret i32 %5
+}
+
 ; 3 occurrences:
 ; draco/optimized/obj_encoder.cc.ll
 ; linux/optimized/vc_screen.ll
@@ -82,19 +101,6 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = select i1 %0, i32 -1, i32 %1
   %5 = add i32 %4, %3
-  ret i32 %5
-}
-
-; 3 occurrences:
-; icu/optimized/unistr.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; openmpi/optimized/ad_aggregate_new.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = select i1 %0, i32 1, i32 %1
-  %5 = add nsw i32 %4, %3
   ret i32 %5
 }
 

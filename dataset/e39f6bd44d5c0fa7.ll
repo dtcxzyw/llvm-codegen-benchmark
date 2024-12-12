@@ -1,5 +1,5 @@
 
-; 140 occurrences:
+; 128 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/cuddUtil.c.ll
@@ -61,12 +61,10 @@
 ; linux/optimized/hooks.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/i915_gem_context.ll
-; linux/optimized/i915_gem_gtt.ll
 ; linux/optimized/i915_gem_pages.ll
 ; linux/optimized/i915_gem_tiling.ll
 ; linux/optimized/i915_query.ll
 ; linux/optimized/intel_execlists_submission.ll
-; linux/optimized/intel_mocs.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/ioctl.ll
 ; linux/optimized/ipv6_sockglue.ll
@@ -74,7 +72,6 @@
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/pcm_native.ll
 ; linux/optimized/processor_idle.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/select.ll
 ; linux/optimized/shm.ll
@@ -106,11 +103,9 @@
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
-; nuttx/optimized/lib_puts.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; opencv/optimized/guided_filter.cpp.ll
 ; openexr/optimized/parse_header.c.ll
-; openjdk/optimized/Inet6AddressImpl.ll
 ; openjdk/optimized/modRefBarrierSetAssembler_x86.ll
 ; openjdk/optimized/type.ll
 ; openssl/optimized/evp_test-bin-evp_test.ll
@@ -121,14 +116,7 @@
 ; openssl/optimized/ossl_store_test-bin-ossl_store_test.ll
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/zend_inference.ll
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; pyo3-rs/optimized/5cngl7ehxnf7u52x.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; redis/optimized/rdb.ll
@@ -160,17 +148,6 @@ entry:
   %.not = icmp eq i64 %2, 0
   %3 = select i1 %.not, i32 0, i32 %0
   ret i32 %3
-}
-
-; 1 occurrences:
-; spike/optimized/triggers.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 14
-  %3 = icmp ult i64 %2, 6
-  %4 = select i1 %3, i32 %0, i32 0
-  ret i32 %4
 }
 
 attributes #0 = { nounwind }

@@ -1,5 +1,5 @@
 
-; 1062 occurrences:
+; 1065 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -44,6 +44,8 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/compiler.c.ll
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -104,7 +106,6 @@
 ; git/optimized/object.ll
 ; git/optimized/read-cache.ll
 ; git/optimized/resolve-undo.ll
-; git/optimized/verify-commit.ll
 ; git/optimized/walker.ll
 ; git/optimized/wt-status.ll
 ; glslang/optimized/Constant.cpp.ll
@@ -239,7 +240,6 @@
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hda_intel.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hid-debug.ll
 ; linux/optimized/hpet.ll
 ; linux/optimized/hub.ll
@@ -248,7 +248,6 @@
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/insn.ll
 ; linux/optimized/intel-gtt.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_dpll.ll
@@ -258,7 +257,6 @@
 ; linux/optimized/intel_opregion.ll
 ; linux/optimized/intel_ring.ll
 ; linux/optimized/intel_rps.ll
-; linux/optimized/intel_tcc.ll
 ; linux/optimized/intel_uc_fw.ll
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/libata-core.ll
@@ -282,7 +280,6 @@
 ; linux/optimized/vc.ll
 ; linux/optimized/vector.ll
 ; linux/optimized/vlv_dsi_pll.ll
-; linux/optimized/vsmp_64.ll
 ; linux/optimized/xhci-debugfs.ll
 ; linux/optimized/xhci-mem.ll
 ; linux/optimized/xhci-ring.ll
@@ -431,7 +428,6 @@
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
@@ -538,6 +534,12 @@
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_image_decoder.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -724,7 +726,6 @@
 ; openusd/optimized/stackTrace.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -1024,7 +1025,6 @@
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
-; wireshark/optimized/packet-ipmi-trace.c.ll
 ; wireshark/optimized/packet-isobus.c.ll
 ; wireshark/optimized/packet-linx.c.ll
 ; wireshark/optimized/packet-lwm2mtlv.c.ll
@@ -1036,6 +1036,7 @@
 ; wireshark/optimized/packet-raknet.c.ll
 ; wireshark/optimized/packet-rf4ce-nwk.c.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll
+; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-sctp.c.ll
 ; wireshark/optimized/packet-selfm.c.ll
 ; wireshark/optimized/packet-tetra.c.ll
@@ -1055,6 +1056,8 @@
 ; wolfssl/optimized/tls13.c.ll
 ; xgboost/optimized/charconv.cc.ll
 ; yalantinglibs/optimized/conformance_test_runner.cc.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -1070,7 +1073,7 @@ entry:
   ret i1 %2
 }
 
-; 304 occurrences:
+; 305 occurrences:
 ; abc/optimized/resSim.c.ll
 ; abc/optimized/simUtils.c.ll
 ; c3c/optimized/diagnostics.c.ll
@@ -1371,6 +1374,7 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wireshark/optimized/packet-cimd.c.ll
+; wireshark/optimized/packet-gmhdr.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-mp2t.c.ll
 ; wireshark/optimized/packet-zbee-nwk.c.ll
@@ -1383,7 +1387,7 @@ entry:
   ret i1 %2
 }
 
-; 193 occurrences:
+; 196 occurrences:
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -1427,7 +1431,6 @@ entry:
 ; linux/optimized/ds.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/huf_decompress.ll
-; linux/optimized/intel_step.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/maple_tree.ll
@@ -1435,7 +1438,6 @@ entry:
 ; linux/optimized/seq_clientmgr.ll
 ; linux/optimized/uncore_nhmex.ll
 ; linux/optimized/vlv_dsi.ll
-; linux/optimized/wep.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/ASTCommon.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -1576,16 +1578,21 @@ entry:
 ; xgboost/optimized/charconv.cc.ll
 ; yosys/optimized/yosys.ll
 ; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/67gayid14ydsuhkv0lcnhbsvb.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 224
-  %2 = icmp ult i32 %1, 160
+  %2 = icmp samesign ult i32 %1, 160
   ret i1 %2
 }
 
-; 146 occurrences:
+; 144 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inflate.c.ll
@@ -1677,12 +1684,10 @@ entry:
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; ncnn/optimized/mat.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/dnn_utils.cpp.ll
-; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
@@ -1733,10 +1738,10 @@ entry:
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0) #0 {
+define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 504
-  %2 = icmp ugt i32 %1, 448
+  %2 = icmp samesign ugt i32 %1, 448
   ret i1 %2
 }
 
@@ -1759,7 +1764,7 @@ entry:
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; wireshark/optimized/packet-rdp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 2016
   %2 = icmp eq i32 %1, 0
@@ -1770,17 +1775,17 @@ entry:
 ; opencv/optimized/calibrate.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000034(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 4088
-  %2 = icmp ult i32 %1, 24
+  %2 = icmp samesign ult i32 %1, 24
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000038(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 4064
   %2 = icmp ne i32 %1, 0
@@ -1790,7 +1795,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/lkpyramid.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0) #0 {
+define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 4088
   %2 = icmp ne i32 %1, 0

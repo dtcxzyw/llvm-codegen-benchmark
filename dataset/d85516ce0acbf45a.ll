@@ -1,28 +1,25 @@
 
-; 36 occurrences:
+; 33 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; c3c/optimized/parse_global.c.ll
 ; folly/optimized/Checksum.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; linux/optimized/af_inet.ll
-; linux/optimized/eth.ll
-; linux/optimized/gre_offload.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/intel_display_power_well.ll
-; linux/optimized/ip6_offload.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
-; linux/optimized/xfrm4_input.ll
-; linux/optimized/xfrm6_input.ll
 ; llvm/optimized/DebugLinesSubsection.cpp.ll
 ; llvm/optimized/FunctionImport.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
+; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/reformat.c.ll
 ; openusd/optimized/regularPatchBuilder.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
@@ -44,8 +41,7 @@ entry:
   ret i16 %2
 }
 
-; 5 occurrences:
-; cmake/optimized/cmELF.cxx.ll
+; 4 occurrences:
 ; llvm/optimized/LazyValueInfo.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
 ; llvm/optimized/ValueLattice.cpp.ll

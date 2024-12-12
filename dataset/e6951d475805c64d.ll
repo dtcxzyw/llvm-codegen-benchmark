@@ -1,8 +1,15 @@
 
-; 8 occurrences:
+; 15 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
+; abc/optimized/giaFx.c.ll
+; abc/optimized/giaMinLut.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/giaMini.c.ll
+; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/ifDec16.c.ll
+; abc/optimized/ifTune.c.ll
+; abc/optimized/kitGraph.c.ll
 ; abc/optimized/luckyFast16.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll

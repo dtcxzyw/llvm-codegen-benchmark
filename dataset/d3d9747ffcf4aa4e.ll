@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; ruby/optimized/time.ll
+; stb/optimized/stb_connected_components.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i32 %0, i32 %1) #0 {

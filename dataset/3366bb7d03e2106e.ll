@@ -92,6 +92,17 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; boost/optimized/gregorian.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = xor i32 %1, -1
+  %3 = add nuw i32 %0, 14
+  %4 = add i32 %3, %2
+  ret i32 %4
+}
+
 ; 6 occurrences:
 ; cmake/optimized/zstd_opt.c.ll
 ; luajit/optimized/lj_crecord.ll

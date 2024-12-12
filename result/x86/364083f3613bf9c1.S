@@ -12,7 +12,7 @@ func00000000000000c5:                   # @func00000000000000c5
 	addq	%rdi, %rsi
 	leaq	(%rsi,%rax,8), %rax
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000014a:                   # @func000000000000014a
 	xorl	%eax, %eax
 	cmpq	$9, %rsi
 	setae	%al

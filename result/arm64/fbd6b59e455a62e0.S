@@ -1,99 +1,65 @@
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
+	add	x9, x1, #1
 	mov	w8, #9                          // =0x9
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	dup	v4.2d, x8
-	cmeq	v1.2d, v3.2d, v1.2d
-	cmeq	v0.2d, v2.2d, v0.2d
-	bsl	v0.16b, v4.16b, v2.16b
-	bsl	v1.16b, v4.16b, v3.16b
+	cmp	x9, x0
+	csinc	x0, x8, x1, eq
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	cmeq	v1.2d, v3.2d, v1.2d
-	cmeq	v0.2d, v2.2d, v0.2d
-	bic	v0.16b, v2.16b, v0.16b
-	bic	v1.16b, v3.16b, v1.16b
+	add	x8, x1, #1
+	cmp	x8, x0
+	csinc	x0, xzr, x1, eq
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	mov	w8, #4                          // =0x4
-	dup	v4.2d, x8
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	cmgt	v1.2d, v3.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	bic	v0.16b, v2.16b, v0.16b
-	bic	v1.16b, v3.16b, v1.16b
+	add	x8, x1, #4
+	cmp	x8, x0
+	csel	x0, xzr, x8, gt
 	ret
                                         // -- End function
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	cmeq	v1.2d, v3.2d, v1.2d
-	cmeq	v0.2d, v2.2d, v0.2d
-	bic	v0.16b, v2.16b, v0.16b
-	bic	v1.16b, v3.16b, v1.16b
+	add	x8, x1, #1
+	cmp	x8, x0
+	csinc	x0, xzr, x1, eq
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffffffffffffff
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	bic	v0.16b, v2.16b, v0.16b
-	bic	v1.16b, v3.16b, v1.16b
+	sub	x8, x1, #1
+	cmp	x8, x0
+	csel	x0, xzr, x8, lo
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	cmeq	v1.2d, v3.2d, v1.2d
-	cmeq	v0.2d, v2.2d, v0.2d
-	bic	v0.16b, v2.16b, v0.16b
-	bic	v1.16b, v3.16b, v1.16b
+	add	x8, x1, #1
+	cmp	x8, x0
+	csinc	x0, xzr, x1, eq
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
-	dup	v4.2d, x8
+	add	x9, x1, #8
 	mov	x8, #-72                        // =0xffffffffffffffb8
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	dup	v4.2d, x8
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	bsl	v0.16b, v4.16b, v2.16b
-	bsl	v1.16b, v4.16b, v3.16b
+	cmp	x9, x0
+	csel	x0, x8, x9, hi
+	ret
+                                        // -- End function
+func0000000000000049:                   // @func0000000000000049
+// %bb.0:                               // %entry
+	add	x8, x1, #1
+	cmp	x8, x0
+	csinc	x0, xzr, x1, hs
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	bic	v0.16b, v2.16b, v0.16b
-	bic	v1.16b, v3.16b, v1.16b
+	add	x8, x1, #1
+	cmp	x8, x0
+	csinc	x0, xzr, x1, hi
 	ret
                                         // -- End function

@@ -1,5 +1,5 @@
 
-; 496 occurrences:
+; 498 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
@@ -16,6 +16,8 @@
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
@@ -500,7 +502,7 @@
 define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = add nsw i64 %3, %2
+  %4 = add nsw i64 %2, %3
   %5 = select i1 %0, i64 %1, i64 %4
   ret i64 %5
 }
@@ -546,7 +548,7 @@ entry:
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = select i1 %0, i64 %1, i64 %4
   ret i64 %5
 }

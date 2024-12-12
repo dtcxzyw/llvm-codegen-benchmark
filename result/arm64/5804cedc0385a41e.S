@@ -1,15 +1,14 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	shrn	v0.4h, v0.4s, #9
-	shrn2	v0.8h, v1.4s, #9
-	cmeq	v0.8h, v0.8h, #0
-	xtn	v0.8b, v0.8h
+	mov	w8, #65535                      // =0xffff
+	tst	w8, w0, lsr #9
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000026:                   // @func0000000000000026
+func0000000000000046:                   // @func0000000000000046
 // %bb.0:                               // %entry
-	uzp2	v0.8h, v0.8h, v1.8h
-	cmle	v0.8h, v0.8h, #0
-	xtn	v0.8b, v0.8h
+	asr	w8, w0, #16
+	cmp	w8, #1
+	cset	w0, lt
 	ret
                                         // -- End function

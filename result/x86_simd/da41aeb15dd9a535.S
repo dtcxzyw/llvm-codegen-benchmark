@@ -24,7 +24,7 @@ func0000000000000001:                   # @func0000000000000001
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpaddd	%xmm2, %xmm1, %xmm2
@@ -52,5 +52,5 @@ func0000000000000000:                   # @func0000000000000000
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq

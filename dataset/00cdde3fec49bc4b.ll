@@ -8,9 +8,9 @@
 define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -22,24 +22,25 @@ entry:
   %3 = shl nuw nsw i32 %2, 18
   %4 = or i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; folly/optimized/Singleton.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 24
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -51,11 +52,11 @@ entry:
   %3 = shl nuw i32 %2, 16
   %4 = or disjoint i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; glslang/optimized/Constant.cpp.ll
@@ -72,13 +73,14 @@ entry:
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
   %4 = or disjoint i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -90,7 +92,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = or i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -103,20 +105,19 @@ entry:
   %3 = shl nuw i32 %2, 8
   %4 = or disjoint i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; glslang/optimized/Initialize.cpp.ll
-; linux/optimized/intel_tcc.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 7
   %4 = or disjoint i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -126,9 +127,9 @@ entry:
 define i64 @func0000000000000007(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 30
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -138,9 +139,9 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 20
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -150,9 +151,9 @@ entry:
 define i64 @func0000000000000009(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 3
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -162,9 +163,9 @@ entry:
 define i64 @func000000000000001a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 4
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -174,9 +175,9 @@ entry:
 define i64 @func000000000000001d(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 7
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 

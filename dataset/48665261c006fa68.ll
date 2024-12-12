@@ -53,8 +53,10 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; git/optimized/pack-bitmap.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i8 %2) #0 {
 entry:

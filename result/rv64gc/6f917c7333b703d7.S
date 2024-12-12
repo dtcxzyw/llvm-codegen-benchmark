@@ -1,4 +1,4 @@
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000001ca:                   # @func00000000000001ca
 	slli	a0, a0, 57
 	lui	a1, 4096
 	srli	a0, a0, 33
@@ -7,19 +7,13 @@ func00000000000000ea:                   # @func00000000000000ea
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret
-func00000000000000d8:                   # @func00000000000000d8
-	slli	a0, a0, 3
-	andi	a0, a0, 2032
-	addi	a0, a0, -176
-	sltiu	a0, a0, -128
-	ret
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	slli	a0, a0, 56
 	srli	a0, a0, 53
 	addi	a0, a0, -49
 	sltiu	a0, a0, 127
 	ret
-func00000000000000e6:                   # @func00000000000000e6
+func00000000000001c6:                   # @func00000000000001c6
 	slli	a0, a0, 57
 	lui	a1, 4096
 	srli	a0, a0, 33

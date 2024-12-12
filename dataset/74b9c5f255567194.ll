@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; linux/optimized/hexdump.ll
-; linux/optimized/utbuffer.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {

@@ -1,4 +1,4 @@
-func00000000000001a2:                   # @func00000000000001a2
+func0000000000000342:                   # @func0000000000000342
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -7,7 +7,7 @@ func00000000000001a2:                   # @func00000000000001a2
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func0000000000000096:                   # @func0000000000000096
+func0000000000000116:                   # @func0000000000000116
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0

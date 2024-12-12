@@ -1,42 +1,36 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	orq	%rdx, %rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq
 func0000000000000018:                   # @func0000000000000018
 	orq	%rdx, %rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	setne	%al
 	retq
 func0000000000000010:                   # @func0000000000000010
 	orq	%rdx, %rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	setb	%al
+	cmpq	%rsi, %rdi
+	seta	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	orq	%rdx, %rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	setg	%al
+	cmpq	%rsi, %rdi
+	setl	%al
 	retq
 func000000000000000e:                   # @func000000000000000e
 	orq	%rdx, %rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	setge	%al
+	cmpq	%rsi, %rdi
+	setle	%al
 	retq
 func0000000000000014:                   # @func0000000000000014
 	orq	%rdx, %rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	setl	%al
-	retq
-func0000000000000030:                   # @func0000000000000030
-	orq	%rdx, %rsi
-	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	setb	%al
+	cmpq	%rsi, %rdi
+	setg	%al
 	retq

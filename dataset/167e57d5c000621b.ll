@@ -3,7 +3,7 @@
 ; llvm/optimized/DeclarationName.cpp.ll
 ; openjdk/optimized/reg_split.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000084(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
@@ -109,11 +109,11 @@ entry:
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; z3/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(ptr %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000082(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2048
   %4 = icmp eq i64 %3, 0
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp eq ptr %0, null
   %7 = or i1 %6, %5
   ret i1 %7

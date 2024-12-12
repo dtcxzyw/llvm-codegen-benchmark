@@ -1,11 +1,13 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -19,7 +21,7 @@ entry:
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -31,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -43,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 0

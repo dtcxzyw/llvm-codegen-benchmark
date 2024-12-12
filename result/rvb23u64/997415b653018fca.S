@@ -1,12 +1,4 @@
-func0000000000000045:                   # @func0000000000000045
-	andi	a0, a0, 255
-	andi	a2, a2, 255
-	andi	a1, a1, 255
-	sltu	a2, a1, a2
-	sltu	a0, a1, a0
-	andn	a0, a2, a0
-	ret
-func0000000000000077:                   # @func0000000000000077
+func00000000000000e7:                   # @func00000000000000e7
 	sext.b	a0, a0
 	sext.b	a1, a1
 	sext.b	a2, a2
@@ -15,7 +7,7 @@ func0000000000000077:                   # @func0000000000000077
 	or	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	andi	a2, a2, 255
@@ -23,7 +15,7 @@ func0000000000000088:                   # @func0000000000000088
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	andi	a0, a0, 255
 	andi	a2, a2, 255
 	andi	a1, a1, 255
@@ -31,14 +23,14 @@ func0000000000000044:                   # @func0000000000000044
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xor	a2, a2, a1
 	xor	a0, a0, a1
 	or	a0, a0, a2
 	andi	a0, a0, 255
 	seqz	a0, a0
 	ret
-func0000000000000055:                   # @func0000000000000055
+func00000000000000a5:                   # @func00000000000000a5
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	andi	a2, a2, 255
@@ -47,7 +39,7 @@ func0000000000000055:                   # @func0000000000000055
 	or	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	sext.b	a1, a1
 	sext.b	a2, a2
 	sext.b	a0, a0
@@ -55,7 +47,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	slt	a0, a1, a0
 	and	a0, a0, a2
 	ret
-func0000000000000099:                   # @func0000000000000099
+func0000000000000129:                   # @func0000000000000129
 	andi	a0, a0, 255
 	andi	a2, a2, 255
 	andi	a1, a1, 255

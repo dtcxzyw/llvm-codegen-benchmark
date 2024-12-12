@@ -1,4 +1,4 @@
-func00000000000001b6:                   # @func00000000000001b6
+func0000000000000366:                   # @func0000000000000366
 	leal	(%rdx,%rdi), %eax
 	shrl	%eax
 	incl	%eax

@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; cmake/optimized/select.c.ll
 ; curl/optimized/libcurl_la-select.ll
 ; linux/optimized/cgroup.ll
@@ -10,6 +10,7 @@
 ; openssl/optimized/libcrypto-lib-a_strex.ll
 ; openssl/optimized/libcrypto-shlib-a_strex.ll
 ; openusd/optimized/faceVertex.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
@@ -20,7 +21,7 @@ entry:
   ret i16 %4
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -41,6 +42,7 @@ entry:
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll

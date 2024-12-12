@@ -1,5 +1,6 @@
 
-; 38 occurrences:
+; 39 occurrences:
+; boost/optimized/src.ll
 ; llvm/optimized/CGVTables.cpp.ll
 ; mold/optimized/gdb-index.cc.ALPHA.cc.ll
 ; mold/optimized/gdb-index.cc.ARM32.cc.ll
@@ -47,8 +48,10 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; assimp/optimized/RemoveComments.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -86,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Constants.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = freeze i64 %0

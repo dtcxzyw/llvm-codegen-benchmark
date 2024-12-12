@@ -1,46 +1,46 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000001f1:                   # @func00000000000001f1
+func00000000000003e1:                   # @func00000000000003e1
 	incb	%sil
 	movzbl	%sil, %eax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000131:                   # @func0000000000000131
+func0000000000000261:                   # @func0000000000000261
 	addb	$4, %sil
 	movzbl	%sil, %eax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	incb	%sil
 	movzbl	%sil, %eax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	incb	%sil
 	movzbl	%sil, %eax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	incb	%sil
 	movzbl	%sil, %eax
 	decq	%rdi
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	incb	%sil
 	movzbl	%sil, %eax
 	incq	%rdi
@@ -54,14 +54,14 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	decb	%sil
 	movzbl	%sil, %eax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	addb	$-4, %sil
 	movzbl	%sil, %eax
 	addq	$2, %rdi

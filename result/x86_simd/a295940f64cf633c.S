@@ -87,10 +87,18 @@ func0000000000000033:                   # @func0000000000000033
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm2, %ymm0
 	retq
 .LCPI3_0:
+	.long	33554432                        # 0x2000000
+func0000000000000000:                   # @func0000000000000000
+	vpslld	$16, %ymm1, %ymm1
+	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
+	vpor	%ymm0, %ymm1, %ymm0
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
+	retq
+.LCPI4_0:
 	.long	4294955008                      # 0xffffd000
 func000000000000003b:                   # @func000000000000003b
 	vpslld	$6, %ymm1, %ymm1
 	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq

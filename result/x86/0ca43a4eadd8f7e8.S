@@ -1,23 +1,23 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movb	$61, %al
 	bzhiq	%rax, %rsi, %rax
 	incq	%rax
 	andq	$-4, %rax
-	cmpq	%rdi, %rax
-	sete	%al
-	retq
-func0000000000000011:                   # @func0000000000000011
-	andl	$2147483647, %esi               # imm = 0x7FFFFFFF
-	decq	%rsi
-	andq	$-16, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 func0000000000000021:                   # @func0000000000000021
+	andl	$2147483647, %esi               # imm = 0x7FFFFFFF
+	decq	%rsi
+	andq	$-16, %rsi
+	cmpq	%rsi, %rdi
+	sete	%al
+	retq
+func0000000000000041:                   # @func0000000000000041
 	movb	$63, %al
 	bzhiq	%rax, %rsi, %rax
 	incq	%rax
 	andq	$-64, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

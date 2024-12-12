@@ -49,16 +49,15 @@
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
-; 7 occurrences:
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; 6 occurrences:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; postgres/optimized/fe-misc.ll
@@ -70,15 +69,14 @@ define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
   %3 = sext i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; bullet3/optimized/btConvexHull.ll
 ; cpython/optimized/pegen.ll
 ; darktable/optimized/introspection_lens.cc.ll
-; linux/optimized/bitmap-str.ll
 ; openblas/optimized/dsyequb.c.ll
 ; openjdk/optimized/zip_util.ll
 ; qemu/optimized/hw_ide_core.c.ll
@@ -88,7 +86,7 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 9
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -125,11 +123,11 @@ entry:
 ; proj/optimized/grids.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -147,7 +145,7 @@ define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = sext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -175,7 +173,7 @@ define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
@@ -183,11 +181,11 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = sext i32 %2 to i64
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
@@ -203,7 +201,7 @@ define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
@@ -241,11 +239,11 @@ entry:
 ; proj/optimized/grids.cpp.ll
 ; zxing/optimized/PDFModulusGF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
   %3 = sext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -266,11 +264,11 @@ entry:
 ; redis/optimized/lvm.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
@@ -301,22 +299,22 @@ entry:
 ; proj/optimized/grids.cpp.ll
 ; zxing/optimized/PDFModulusGF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = icmp sle i64 %3, %0
+  %4 = icmp sge i64 %0, %3
   ret i1 %4
 }
 
@@ -328,7 +326,18 @@ define i1 @func000000000000000b(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = icmp sle i64 %3, %0
+  %4 = icmp sge i64 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 1
+  %3 = sext i32 %2 to i64
+  %4 = icmp samesign ugt i64 %0, %3
   ret i1 %4
 }
 

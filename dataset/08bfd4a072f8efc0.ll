@@ -12,7 +12,7 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -29,7 +29,6 @@ entry:
 ; ninja/optimized/deps_log.cc.ll
 ; openblas/optimized/dhsein.c.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
-; php/optimized/engine_combinedlcg.ll
 ; php/optimized/zend_virtual_cwd.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; tinyrenderer/optimized/main.cpp.ll
@@ -37,7 +36,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 2147483562
+  %2 = add nsw i32 %1, 3
   %3 = select i1 %0, i32 %2, i32 %1
   %4 = sext i32 %3 to i64
   ret i64 %4

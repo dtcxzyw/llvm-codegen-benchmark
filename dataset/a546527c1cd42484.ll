@@ -3,7 +3,7 @@
 ; libquic/optimized/aead.c.ll
 ; ruby/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000108(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %0
   %4 = icmp ugt ptr %0, %1
@@ -32,7 +32,7 @@ entry:
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000109(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %0
   %4 = icmp uge ptr %0, %1
@@ -47,7 +47,7 @@ entry:
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; hyperscan/optimized/rose_in_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000010c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %0
   %4 = icmp ne ptr %0, %1
@@ -59,7 +59,7 @@ entry:
 ; llvm/optimized/IfConversion.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, %0
   %4 = icmp ne ptr %0, %1
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/ml_render_gui.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, %0
   %4 = icmp eq ptr %0, %1
@@ -88,7 +88,7 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000099(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000129(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %2, %0
   %4 = icmp uge ptr %0, %1

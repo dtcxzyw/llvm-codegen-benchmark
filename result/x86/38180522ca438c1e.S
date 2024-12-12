@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%cl
 	subq	%rcx, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movq	%rdi, %rax
 	xorl	%ecx, %ecx
 	cmpb	$47, %sil

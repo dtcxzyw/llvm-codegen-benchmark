@@ -29,3 +29,11 @@ func0000000000000006:                   # @func0000000000000006
 	testb	$1, %dil
 	cmovnel	%esi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	shrq	$32, %rdx
+	sete	%al
+	shll	$5, %eax
+	testb	$1, %dil
+	cmovnel	%esi, %eax
+	retq

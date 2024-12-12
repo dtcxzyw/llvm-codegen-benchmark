@@ -1,8 +1,7 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; git/optimized/apply.ll
 ; git/optimized/tree-walk.ll
-; icu/optimized/pkgitems.ll
 ; jq/optimized/regexec.ll
 ; oniguruma/optimized/regexec.ll
 ; opencv/optimized/demosaicing.cpp.ll
@@ -80,10 +79,22 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 29
+  %3 = ashr exact i64 %2, 30
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr nusw double, ptr %4, i64 %5
+  %6 = getelementptr nusw i32, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/stardetector.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 30
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = sext i32 %1 to i64
+  %6 = getelementptr nusw nuw i32, ptr %4, i64 %5
   ret ptr %6
 }
 

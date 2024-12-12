@@ -1,11 +1,13 @@
 
-; 23 occurrences:
+; 25 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; nuklear/optimized/unity.c.ll

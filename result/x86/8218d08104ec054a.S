@@ -5,7 +5,14 @@ func0000000000000023:                   # @func0000000000000023
 	shll	$5, %eax
 	orl	$64, %eax
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000063:                   # @func0000000000000063
+	xorl	%eax, %eax
+	cmpl	$5, %edi
+	setae	%al
+	shll	$5, %eax
+	orl	$64, %eax
+	retq
+func0000000000000053:                   # @func0000000000000053
 	cmpl	$16384, %edi                    # imm = 0x4000
 	movl	$192000, %ecx                   # imm = 0x2EE00
 	movl	$176400, %eax                   # imm = 0x2B110
@@ -37,7 +44,14 @@ func0000000000000005:                   # @func0000000000000005
 	shll	$5, %eax
 	addl	$-16, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000013:                   # @func0000000000000013
+	xorl	%eax, %eax
+	cmpl	$2, %edi
+	setb	%al
+	shll	$6, %eax
+	addl	$64, %eax
+	retq
+func0000000000000050:                   # @func0000000000000050
 	xorl	%eax, %eax
 	cmpl	$16, %edi
 	setb	%al

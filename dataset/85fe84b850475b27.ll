@@ -1,11 +1,12 @@
 
-; 26 occurrences:
+; 30 occurrences:
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; hermes/optimized/Program.cpp.ll
 ; lief/optimized/CoreAuxv.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/RegisterBankInfo.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
 ; mold/optimized/input-files.cc.I386.cc.ll
 ; mold/optimized/input-files.cc.LOONGARCH32.cc.ll
@@ -26,6 +27,9 @@
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/2ysit6xak1d4lr67.ll
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
+; zed-rs/optimized/0fv2ekz5cqmfp10c07ot56iad.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define { i64, ptr } @func0000000000000000(i32 %0) #0 {
 entry:
@@ -34,13 +38,20 @@ entry:
   ret { i64, ptr } %2
 }
 
-; 6 occurrences:
+; 13 occurrences:
+; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/ValueTypes.cpp.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
 ; rust-analyzer-rs/optimized/54f0pj1u367tkav7.ll
 ; rust-analyzer-rs/optimized/59xtetyz59tgy0g8.ll
+; zed-rs/optimized/3u7utqtgdovrxzbad3tfrps40.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/59wnsznecs6we2kopjyje48jo.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000001(i32 %0) #0 {
 entry:

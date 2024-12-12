@@ -77,9 +77,10 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; regex-rs/optimized/4sqmacerw61c696o.ll
+; turborepo-rs/optimized/6jkgkc1600lrz2u0oa3gubskw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000040(i32 %0, i64 %1) #0 {
 entry:
@@ -90,8 +91,9 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; regex-rs/optimized/32jw1oy2yofrhudk.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000067(i32 %0, i64 %1) #0 {
 entry:

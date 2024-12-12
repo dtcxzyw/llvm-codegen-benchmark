@@ -4,7 +4,7 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	addb	$-48, %sil
 	cmpb	$10, %sil
 	setb	%al

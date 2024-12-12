@@ -10,16 +10,16 @@
 ; ncnn/optimized/deconvolutiondepthwise_x86_avx.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise_x86_avx512.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise_x86_fma.cpp.ll
-; openblas/optimized/dlasyf_aa.c.ll
-; openblas/optimized/dorghr.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
 ; postgres/optimized/crosstabview.ll
+; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, -1
   %6 = add i32 %5, %0
   ret i32 %6
@@ -33,7 +33,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 16384
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add i32 %4, 32768
   %6 = add i32 %5, %0
   ret i32 %6
@@ -91,7 +91,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul nuw nsw i32 %3, %1
   %5 = add nuw i32 %4, 1
-  %6 = add nuw i32 %5, %0
+  %6 = add nuw i32 %0, %5
   ret i32 %6
 }
 
@@ -147,20 +147,7 @@ entry:
 define i32 @func00000000000000c0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul i32 %3, %1
-  %5 = add i32 %4, 1
-  %6 = add i32 %5, %0
-  ret i32 %6
-}
-
-; 2 occurrences:
-; gromacs/optimized/dorg2r.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, 1
   %6 = add i32 %5, %0
   ret i32 %6
@@ -197,7 +184,7 @@ entry:
 define i32 @func00000000000000ff(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, 3
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
@@ -209,9 +196,9 @@ entry:
 define i32 @func00000000000000d5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, 1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

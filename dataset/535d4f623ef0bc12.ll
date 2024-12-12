@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/rational.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vrem_vx.ll
 ; Function Attrs: nounwind

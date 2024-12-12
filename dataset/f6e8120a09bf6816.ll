@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/sswSim.c.ll
@@ -21,6 +21,7 @@
 ; linux/optimized/intel_guc_ct.ll
 ; linux/optimized/md.ll
 ; linux/optimized/reg.ll
+; lvgl/optimized/lv_calendar.ll
 ; lz4/optimized/lz4.c.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/msd.cpp.ll

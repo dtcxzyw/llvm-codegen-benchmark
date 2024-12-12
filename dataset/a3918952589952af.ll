@@ -1,10 +1,9 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/filesystem.cpp.ll
 ; mitsuba3/optimized/logger.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind

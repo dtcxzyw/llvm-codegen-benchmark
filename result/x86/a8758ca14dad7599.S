@@ -12,6 +12,13 @@ func0000000000000018:                   # @func0000000000000018
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	cmpl	$3601, %edx                     # imm = 0xE11
+	cmovll	%edx, %esi
+	leal	3600(%rsi), %eax
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	testl	%edx, %edx
 	cmovnel	%edx, %esi
@@ -23,13 +30,6 @@ func0000000000000019:                   # @func0000000000000019
 	cmpl	$-2450244, %edx                 # imm = 0xFFDA9CBC
 	cmovgel	%edx, %esi
 	leal	-2143607405(%rsi), %eax
-	testb	$1, %dil
-	cmovel	%esi, %eax
-	retq
-func0000000000000029:                   # @func0000000000000029
-	cmpl	$36, %edx
-	cmovll	%edx, %esi
-	leal	36(%rsi), %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq

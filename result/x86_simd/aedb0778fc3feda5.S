@@ -1,4 +1,4 @@
-func000000000000011a:                   # @func000000000000011a
+func000000000000042a:                   # @func000000000000042a
 	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmd	%ymm1, %ymm1, %k1
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
@@ -6,7 +6,7 @@ func000000000000011a:                   # @func000000000000011a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmd	%ymm1, %ymm1, %k1
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
@@ -14,7 +14,7 @@ func0000000000000016:                   # @func0000000000000016
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmd	%ymm1, %ymm1, %k1
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
@@ -22,7 +22,7 @@ func0000000000000111:                   # @func0000000000000111
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000116:                   # @func0000000000000116
+func0000000000000426:                   # @func0000000000000426
 	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmd	%ymm1, %ymm1, %k1
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
@@ -34,7 +34,7 @@ func0000000000000116:                   # @func0000000000000116
 	.long	1                               # 0x1
 .LCPI4_1:
 	.long	4294967293                      # 0xfffffffd
-func00000000000001a8:                   # @func00000000000001a8
+func0000000000000548:                   # @func0000000000000548
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpltd	.LCPI4_0(%rip){1to8}, %ymm1, %k1
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
@@ -44,7 +44,7 @@ func00000000000001a8:                   # @func00000000000001a8
 	retq
 .LCPI5_0:
 	.long	1                               # 0x1
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpltd	.LCPI5_0(%rip){1to8}, %ymm1, %k1
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
@@ -52,7 +52,7 @@ func00000000000001aa:                   # @func00000000000001aa
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmd	%ymm1, %ymm1, %k1
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}

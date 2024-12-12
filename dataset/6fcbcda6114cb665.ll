@@ -238,7 +238,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-bacnet.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw i8 %2, 1
   %4 = icmp ult i8 %3, %1

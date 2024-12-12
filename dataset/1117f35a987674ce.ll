@@ -11,7 +11,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = xor i32 %4, -1
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 

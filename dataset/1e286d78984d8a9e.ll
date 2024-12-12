@@ -1,6 +1,8 @@
 
-; 31 occurrences:
+; 33 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
 ; graphviz/optimized/neatosplines.c.ll
 ; graphviz/optimized/position.c.ll
 ; gromacs/optimized/dger.cpp.ll
@@ -39,7 +41,9 @@ entry:
   ret i1 %3
 }
 
-; 16 occurrences:
+; 18 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; cpython/optimized/floatobject.ll
 ; darktable/optimized/gamepad.c.ll
 ; ipopt/optimized/IpPiecewisePenalty.ll
@@ -64,7 +68,9 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; opencv/optimized/magnitude.cpp.ll
@@ -106,7 +112,8 @@ entry:
   ret i1 %3
 }
 
-; 35 occurrences:
+; 36 occurrences:
+; boost/optimized/algorithm.ll
 ; graphviz/optimized/adjust.c.ll
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/postproc.c.ll
@@ -150,7 +157,9 @@ entry:
   ret i1 %3
 }
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; graphviz/optimized/poly.c.ll
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -222,8 +231,16 @@ entry:
   ret i1 %3
 }
 
-; 11 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cpython/optimized/cmathmodule.ll
 ; cpython/optimized/complexobject.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -242,7 +259,8 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/within_sph_geo.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; meshlab/optimized/texture_optimization.cpp.ll
 ; openjdk/optimized/bytecodeInfo.ll
@@ -258,8 +276,13 @@ entry:
   ret i1 %3
 }
 
-; 39 occurrences:
+; 42 occurrences:
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ceres/optimized/array_utils.cc.ll
 ; cpython/optimized/cmathmodule.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
@@ -274,7 +297,6 @@ entry:
 ; openblas/optimized/dlag2.c.ll
 ; openblas/optimized/dlaqr2.c.ll
 ; openblas/optimized/dlaqr3.c.ll
-; openblas/optimized/drotm.c.ll
 ; opencv/optimized/lr.cpp.ll
 ; opencv/optimized/matrix_expressions.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
@@ -294,7 +316,6 @@ entry:
 ; quantlib/optimized/inflationindex.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/stickyratchet.ll
-; wireshark/optimized/time_util.c.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; z3/optimized/pb_pb.cpp.ll

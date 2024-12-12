@@ -1,26 +1,7 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fcvtzs	v2.2d, v2.2d
-	fcvtzs	v3.2d, v3.2d
-	fmov	x8, d0
-	mov	x10, v0.d[1]
-	mov	x13, v1.d[1]
-	xtn	v2.2s, v2.2d
-	xtn	v3.2s, v3.2d
-	sshll	v2.2d, v2.2s, #0
-	sshll	v3.2d, v3.2s, #0
-	fmov	x9, d2
-	fmov	x12, d3
-	mov	x11, v2.d[1]
-	mov	x14, v3.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d1
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d0, x8
-	mul	x11, x14, x13
-	mov	v0.d[1], x10
-	fmov	d1, x9
-	mov	v1.d[1], x11
+	fcvtzs	w8, d0
+	sxtw	x8, w8
+	mul	x0, x0, x8
 	ret
                                         // -- End function

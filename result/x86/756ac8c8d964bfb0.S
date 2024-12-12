@@ -20,3 +20,16 @@ func0000000000000042:                   # @func0000000000000042
 	vmaxss	%xmm0, %xmm1, %xmm0
 	vmulss	.LCPI1_1(%rip), %xmm0, %xmm0
 	retq
+.LCPI2_0:
+	.long	0x42b40000                      # float 90
+.LCPI2_1:
+	.long	0x3f800000                      # float 1
+.LCPI2_2:
+	.long	0x34000000                      # float 1.1920929E-7
+func0000000000000022:                   # @func0000000000000022
+	vmovss	.LCPI2_0(%rip), %xmm1           # xmm1 = [9.0E+1,0.0E+0,0.0E+0,0.0E+0]
+	vmaxss	%xmm0, %xmm1, %xmm0
+	vmovss	.LCPI2_1(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmaxss	%xmm0, %xmm1, %xmm0
+	vmulss	.LCPI2_2(%rip), %xmm0, %xmm0
+	retq

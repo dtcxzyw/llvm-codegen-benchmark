@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -13,7 +13,6 @@
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ifTruth.c.ll
-; abc/optimized/lpkMux.c.ll
 ; abc/optimized/satProof.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; clamav/optimized/LzmaDec.c.ll
@@ -66,7 +65,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 

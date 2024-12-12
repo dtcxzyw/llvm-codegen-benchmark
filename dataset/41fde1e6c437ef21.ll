@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 37 occurrences:
 ; cmake/optimized/md4.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; hermes/optimized/MD5.cpp.ll
@@ -30,6 +30,10 @@
 ; wireshark/optimized/packet-dof.c.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/q_mam.cpp.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
@@ -42,30 +46,24 @@ entry:
   ret i64 %2
 }
 
-; 35 occurrences:
+; 28 occurrences:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; hyperscan/optimized/AsciiComponentClass.cpp.ll
 ; hyperscan/optimized/Utf8ComponentClass.cpp.ll
-; jq/optimized/gb18030.ll
 ; libquic/optimized/icu_utf.cc.ll
 ; libquic/optimized/p256-x86_64.c.ll
 ; linux/optimized/intel_bios.ll
-; linux/optimized/sch_mq.ll
 ; linux/optimized/seccomp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/GlobalSplit.cpp.ll
 ; lua/optimized/lvm.ll
-; luajit/optimized/lj_strfmt.ll
-; luajit/optimized/lj_strfmt_dyn.ll
 ; miniaudio/optimized/unity.c.ll
 ; nanobind/optimized/nb_type.cpp.ll
-; oniguruma/optimized/gb18030.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; opencv/optimized/guided_filter.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
-; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
@@ -77,7 +75,6 @@ entry:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_pci_msix.c.ll
 ; quickjs/optimized/quickjs.ll
-; wireshark/optimized/packet-homeplug-av.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0) #0 {
 entry:
@@ -87,18 +84,17 @@ entry:
   ret i64 %3
 }
 
-; 24 occurrences:
+; 22 occurrences:
 ; libwebp/optimized/muxread.c.ll
 ; linux/optimized/cipso_ipv4.ll
-; linux/optimized/gcm.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/intel-gtt.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/skbuff.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/CGCoroutine.cpp.ll
 ; llvm/optimized/CGException.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
 ; ncnn/optimized/convolution1d_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -111,7 +107,6 @@ entry:
 ; php/optimized/zend_optimizer.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0) #0 {
 entry:

@@ -5,7 +5,7 @@ func000000000000000a:                   # @func000000000000000a
 	setge	%al
 	andb	%dil, %al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	subl	%esi, %edx
 	incl	%edx
 	testl	%edx, %edx

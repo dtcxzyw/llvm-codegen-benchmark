@@ -1,5 +1,5 @@
 
-; 111 occurrences:
+; 110 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/cecSat.c.ll
@@ -17,7 +17,6 @@
 ; abc/optimized/saigConstr2.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
-; hermes/optimized/JSProxy.cpp.ll
 ; icu/optimized/bmpset.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_record.ll
@@ -115,7 +114,7 @@
 define i1 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i1
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 
@@ -132,7 +131,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i1
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 

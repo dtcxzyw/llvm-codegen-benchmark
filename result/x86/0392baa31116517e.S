@@ -1,4 +1,4 @@
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	movl	%edx, %eax
 	addq	%rdi, %rax
 	movl	%esi, %ecx
@@ -6,7 +6,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	shrq	$32, %rcx
 	setne	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	movl	%edx, %eax
 	addq	%rdi, %rax
 	movl	%esi, %ecx
@@ -22,7 +22,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$122785, %rcx                   # imm = 0x1DFA1
 	setae	%al
 	retq
-func00000000000002f4:                   # @func00000000000002f4
+func00000000000005e4:                   # @func00000000000005e4
 	movl	%edx, %eax
 	addq	%rdi, %rax
 	movl	%esi, %ecx
@@ -45,7 +45,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$256, %rcx                      # imm = 0x100
 	setb	%al
 	retq
-func00000000000002a8:                   # @func00000000000002a8
+func0000000000000548:                   # @func0000000000000548
 	movl	%edx, %eax
 	addq	%rdi, %rax
 	movl	%esi, %ecx

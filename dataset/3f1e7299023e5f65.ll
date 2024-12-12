@@ -55,8 +55,10 @@ entry:
   ret i8 %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; grpc/optimized/slice_buffer.cc.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i8 %0, i64 %1) #0 {
 entry:

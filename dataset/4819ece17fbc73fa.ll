@@ -16,7 +16,7 @@
 ; xgboost/optimized/io.cc.ll
 ; yosys/optimized/extract_reduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
   %4 = add nsw i64 %3, %0
@@ -30,7 +30,7 @@ entry:
 ; opencv/optimized/cap_mjpeg_decoder.cpp.ll
 ; opencv/optimized/container_avi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002ac(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
   %4 = add nsw i64 %3, %0
@@ -43,7 +43,7 @@ entry:
 ; g2o/optimized/line3d.cpp.ll
 ; g2o/optimized/structure_only.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = add nsw i64 %3, %0
@@ -60,7 +60,7 @@ entry:
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000286(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = add i64 %3, %0
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/matching.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = add nsw i64 %3, %0

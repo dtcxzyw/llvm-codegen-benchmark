@@ -10,11 +10,11 @@ func000000000000001f:                   # @func000000000000001f
 	movzwl	%si, %eax
 	addl	%edi, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
+func000000000000000d:                   # @func000000000000000d
 	movzwl	%si, %eax
 	addl	%edi, %eax
 	retq
-func000000000000000d:                   # @func000000000000000d
+func000000000000000c:                   # @func000000000000000c
 	movzwl	%si, %eax
 	addl	%edi, %eax
 	retq

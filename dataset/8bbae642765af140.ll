@@ -12,12 +12,13 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; darktable/optimized/ErfDecoder.cpp.ll
 ; darktable/optimized/OrfDecoder.cpp.ll
 ; darktable/optimized/Rw2Decoder.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind

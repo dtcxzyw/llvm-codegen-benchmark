@@ -1,11 +1,7 @@
 
-; 163 occurrences:
+; 157 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/amapMerge.c.ll
-; abc/optimized/satSolver.c.ll
-; abc/optimized/satSolver2.c.ll
-; abc/optimized/satSolver3.c.ll
-; hdf5/optimized/H5B2int.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; icu/optimized/collationfastlatin.ll
 ; libdeflate/optimized/deflate_decompress.c.ll
@@ -19,7 +15,6 @@
 ; linux/optimized/r8169_firmware.ll
 ; linux/optimized/xfrm_replay.ll
 ; llvm/optimized/APFloat.cpp.ll
-; llvm/optimized/ExprConstant.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
@@ -106,7 +101,6 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/zend_alloc.ll
-; postgres/optimized/bitmapset.ll
 ; postgres/optimized/gist.ll
 ; postgres/optimized/gistbuild.ll
 ; postgres/optimized/gistvacuum.ll
@@ -173,7 +167,7 @@ entry:
   ret i64 %4
 }
 
-; 57 occurrences:
+; 58 occurrences:
 ; git/optimized/checkout.ll
 ; git/optimized/diff-lib.ll
 ; git/optimized/resolve-undo.ll
@@ -216,6 +210,7 @@ entry:
 ; luajit/optimized/lj_snap_dyn.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; lz4/optimized/lz4frame.c.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; openjdk/optimized/NativeUtil.ll
@@ -241,7 +236,7 @@ entry:
   ret i64 %4
 }
 
-; 52 occurrences:
+; 51 occurrences:
 ; hwloc/optimized/topology-x86.ll
 ; linux/optimized/cistpl.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
@@ -293,7 +288,6 @@ entry:
 ; luau/optimized/IrBuilder.cpp.ll
 ; openjdk/optimized/cmspack.ll
 ; openjdk/optimized/dependencies.ll
-; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:
@@ -323,9 +317,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; opencv/optimized/calibrate.cpp.ll
-; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/mat_mask_operations.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
 ; Function Attrs: nounwind

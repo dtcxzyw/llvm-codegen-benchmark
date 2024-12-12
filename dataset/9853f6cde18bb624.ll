@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 72 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
@@ -68,12 +68,16 @@
 ; recastnavigation/optimized/NavMeshTesterTool.cpp.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
   %4 = fmul float %3, 5.000000e-01
-  %5 = fadd float %4, %0
+  %5 = fadd float %0, %4
   ret float %5
 }
 

@@ -1,36 +1,36 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	uzp1	v0.4s, v0.4s, v1.4s
 	mov	w8, #52429                      // =0xcccd
-	dup	v1.4h, w8
-	xtn	v0.4h, v0.4s
-	umull	v0.4s, v0.4h, v1.4h
-	ushr	v0.4s, v0.4s, #20
-	xtn	v0.4h, v0.4s
-	bic	v0.4h, #1
+	and	w9, w0, #0xffff
+	mul	w8, w9, w8
+	lsr	w8, w8, #20
+	and	w0, w8, #0xffe
 	ret
                                         // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	uzp1	v0.4s, v0.4s, v1.4s
-	mov	w8, #5243                       // =0x147b
-	dup	v1.4h, w8
-	xtn	v0.4h, v0.4s
-	ushr	v0.4h, v0.4h, #2
-	umull	v0.4s, v0.4h, v1.4h
-	shrn	v0.4h, v0.4s, #16
-	bic	v0.4h, #1
+	ubfx	w8, w0, #2, #14
+	mov	w9, #5243                       // =0x147b
+	mul	w8, w8, w9
+	lsr	w8, w8, #16
+	and	w0, w8, #0x7fe
 	ret
                                         // -- End function
 func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
-	uzp1	v0.4s, v0.4s, v1.4s
-	mov	w8, #5243                       // =0x147b
-	dup	v1.4h, w8
-	xtn	v0.4h, v0.4s
-	ushr	v0.4h, v0.4h, #2
-	umull	v0.4s, v0.4h, v1.4h
-	shrn	v0.4h, v0.4s, #16
-	bic	v0.4h, #1
+	ubfx	w8, w0, #2, #14
+	mov	w9, #5243                       // =0x147b
+	mul	w8, w8, w9
+	lsr	w8, w8, #16
+	and	w0, w8, #0x7fe
+	ret
+                                        // -- End function
+func000000000000000b:                   // @func000000000000000b
+// %bb.0:                               // %entry
+	ubfx	w8, w0, #2, #14
+	mov	w9, #5243                       // =0x147b
+	mul	w8, w8, w9
+	lsr	w8, w8, #16
+	and	w0, w8, #0x7fe
 	ret
                                         // -- End function

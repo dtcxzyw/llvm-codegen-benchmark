@@ -27,6 +27,7 @@ func0000000000000040:                   # @func0000000000000040
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sext.w	a1, a1
+	addi	a1, a1, -1
 	seqz	a1, a1
 	not	a1, a1
 	addw	a0, a0, a1

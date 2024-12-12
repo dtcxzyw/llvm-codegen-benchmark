@@ -1,5 +1,7 @@
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/p3p.cpp.ll

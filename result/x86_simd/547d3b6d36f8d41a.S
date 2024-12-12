@@ -16,7 +16,7 @@ func000000000000000a:                   # @func000000000000000a
 	.long	1024                            # 0x400
 func000000000000000c:                   # @func000000000000000c
 	vpsrad	$10, %ymm2, %ymm2
-	vpcmpeqd	%ymm1, %ymm2, %k1
+	vpcmpeqd	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [1024,1024,1024,1024,1024,1024,1024,1024]
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0

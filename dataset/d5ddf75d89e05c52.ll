@@ -12,8 +12,7 @@ entry:
   ret i32 %6
 }
 
-; 9 occurrences:
-; arrow/optimized/float16.cc.ll
+; 8 occurrences:
 ; linux/optimized/gup.ll
 ; linux/optimized/rate.ll
 ; linux/optimized/xhci-hub.ll

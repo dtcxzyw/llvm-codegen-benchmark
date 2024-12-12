@@ -75,7 +75,7 @@
 ; oiio/optimized/zfile.cpp.ll
 ; openssl/optimized/libdefault-lib-scrypt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 7
   %4 = mul i64 %3, %1
@@ -83,41 +83,43 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = mul nuw nsw i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ugt i64 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; quantlib/optimized/fdm3dimsolver.ll
 ; quantlib/optimized/fdmmesherintegral.ll
 ; quantlib/optimized/hestonslvfdmmodel.ll
 ; quantlib/optimized/jointstochasticprocess.ll
-; yosys/optimized/satgen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = mul i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp samesign eq i64 %4, %0
   ret i1 %5
 }
 
@@ -125,7 +127,7 @@ entry:
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = mul i64 %3, %1
@@ -140,11 +142,22 @@ entry:
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; node/optimized/libnode.node_i18n.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = mul i64 %3, %1
   %5 = icmp ugt i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; yosys/optimized/satgen.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 2
+  %4 = mul i64 %3, %1
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -156,7 +169,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -168,11 +181,24 @@ entry:
 ; openusd/optimized/skeletonAdapter.cpp.ll
 ; openusd/optimized/skinningQuery.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = mul i64 %3, %1
   %5 = icmp eq i64 %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e8(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = mul nuw nsw i64 %3, %1
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

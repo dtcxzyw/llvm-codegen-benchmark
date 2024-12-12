@@ -1,6 +1,10 @@
 
-; 13 occurrences:
+; 17 occurrences:
 ; assimp/optimized/BlenderDNA.cpp.ll
+; boost/optimized/any_params_iter.ll
+; boost/optimized/any_segments_iter.ll
+; boost/optimized/format_args.ll
+; boost/optimized/url_base.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; llvm/optimized/DWARFContext.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll

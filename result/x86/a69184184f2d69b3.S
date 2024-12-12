@@ -2,72 +2,72 @@ func0000000000000006:                   # @func0000000000000006
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	setg	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	testb	$1, %sil
 	movl	$1, %eax
 	cmovnel	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	testb	$1, %sil
 	movl	$1023, %eax                     # imm = 0x3FF
 	cmovnel	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
-	cmpl	%edi, %edx
-	setb	%al
+func0000000000000048:                   # @func0000000000000048
+	cmpl	%edx, %edi
+	seta	%al
 	andb	%sil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
-	cmpl	%edi, %eax
-	setb	%al
-	retq
-func0000000000000024:                   # @func0000000000000024
-	cmpl	%edi, %edx
+	cmpl	%eax, %edi
 	seta	%al
+	retq
+func0000000000000044:                   # @func0000000000000044
+	cmpl	%edx, %edi
+	setb	%al
 	andb	%sil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
-	retq
-func0000000000000016:                   # @func0000000000000016
-	xorl	%eax, %eax
-	testb	$1, %sil
-	cmovnel	%edx, %eax
-	cmpl	%edi, %eax
-	setg	%al
 	retq
 func0000000000000026:                   # @func0000000000000026
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
+	retq
+func0000000000000046:                   # @func0000000000000046
+	xorl	%eax, %eax
+	testb	$1, %sil
+	cmovnel	%edx, %eax
+	cmpl	%eax, %edi
+	setl	%al
 	retq

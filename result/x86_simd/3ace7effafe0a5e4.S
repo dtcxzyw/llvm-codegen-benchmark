@@ -25,8 +25,8 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000020:                   # @func0000000000000020
 	vpslld	$3, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpsrad	$31, %ymm0, %ymm1
 	vpsrld	$29, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

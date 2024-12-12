@@ -1,56 +1,52 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	cmeq	v2.2d, v2.2d, #0
-	cmeq	v1.2d, v1.2d, #0
-	uzp1	v1.4s, v1.4s, v2.4s
-	and	v0.16b, v0.16b, v1.16b
-	mvn	v1.16b, v1.16b
-	sub	v0.4s, v0.4s, v1.4s
+	cmp	x1, #0
+	csinc	w0, w0, wzr, eq
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	cmgt	v2.2d, v2.2d, #0
-	cmgt	v1.2d, v1.2d, #0
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.16b, v0.16b, v1.16b
+	cmp	x1, #0
+	csel	w0, wzr, w0, gt
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmeq	v2.2d, v2.2d, #0
-	cmeq	v1.2d, v1.2d, #0
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.16b, v0.16b, v1.16b
+	cmp	x1, #0
+	csel	w0, wzr, w0, eq
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
+	lsr	x9, x1, #31
 	mov	w8, #2147483647                 // =0x7fffffff
-	dup	v3.2d, x8
-	cmhi	v2.2d, v2.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.16b, v0.16b, v1.16b
-	bic	v1.4s, #128, lsl #24
-	orr	v0.16b, v1.16b, v0.16b
+	cmp	x9, #0
+	csel	w0, w8, w0, ne
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	cmle	v2.2d, v2.2d, #0
-	cmle	v1.2d, v1.2d, #0
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.16b, v0.16b, v1.16b
+	cmp	x1, #1
+	csel	w0, wzr, w0, lt
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	x8, #4294967296                 // =0x100000000
-	dup	v3.2d, x8
-	cmhi	v2.2d, v3.2d, v2.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.16b, v0.16b, v1.16b
+	lsr	x8, x1, #32
+	cmp	x8, #0
+	csel	w0, wzr, w0, eq
+	ret
+                                        // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	cmp	x1, #9
+	csel	w0, wzr, w0, lo
+	ret
+                                        // -- End function
+func0000000000000018:                   // @func0000000000000018
+// %bb.0:                               // %entry
+	lsr	x8, x1, #31
+	cmp	x8, #0
+	csel	w0, wzr, w0, ne
 	ret
                                         // -- End function

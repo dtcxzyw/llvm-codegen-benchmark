@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 29 occurrences:
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; c3c/optimized/parse_expr.c.ll
 ; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
@@ -25,7 +25,10 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/9jkx32jki2vcljeo0xctxc8uw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1, i64 %2) #0 {
 entry:

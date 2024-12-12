@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 27 occurrences:
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; coreutils-rs/optimized/4qccn4mjmdouwvjm.ll
 ; coreutils-rs/optimized/59rj03aw6jgy8z12.ll
@@ -8,6 +8,7 @@
 ; llvm/optimized/CFGPrinter.cpp.ll
 ; llvm/optimized/MemorySSA.cpp.ll
 ; llvm/optimized/NamespaceEndCommentsFixer.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; opencv/optimized/shared_lock.cpp.ll
 ; openjdk/optimized/jfrTypeSet.ll
@@ -22,6 +23,10 @@
 ; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
 ; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
 ; rust-analyzer-rs/optimized/k57ct4r8b4mvzu9.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
@@ -31,7 +36,7 @@ entry:
   ret i1 %4
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
@@ -49,7 +54,6 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/Delinearization.cpp.ll
 ; llvm/optimized/PPDirectives.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/StackColoring.cpp.ll

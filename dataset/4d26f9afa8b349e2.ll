@@ -1,6 +1,7 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/static_string.ll
 ; git/optimized/fast-import.ll
 ; jq/optimized/jv.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
@@ -10,12 +11,12 @@
 ; redis/optimized/read.ll
 ; redis/optimized/util.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw [1025 x i8], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [1025 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

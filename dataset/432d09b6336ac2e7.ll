@@ -6,7 +6,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, %0
+  %2 = add i64 %0, %1
   %3 = shl i64 %2, 32
   ret i64 %3
 }
@@ -19,23 +19,22 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, %0
+  %2 = add i64 %0, %1
   %3 = shl i64 %2, 32
   ret i64 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; openmpi/optimized/osc_rdma_dynamic.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
-; php/optimized/dow.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2097151
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nsw i64 %3, 3
   ret i64 %4
 }
@@ -76,7 +75,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967292
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl nuw nsw i64 %3, 4
   ret i64 %4
 }
@@ -123,25 +122,8 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65535
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl nsw i64 %3, 16
-  ret i64 %4
-}
-
-; 7 occurrences:
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 4294967295
-  %3 = add i64 %2, %0
-  %4 = shl nuw i64 %3, 32
   ret i64 %4
 }
 
@@ -156,7 +138,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl nuw i64 %3, 31
   ret i64 %4
 }
@@ -168,7 +150,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967288
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl i64 %3, 32
   ret i64 %4
 }

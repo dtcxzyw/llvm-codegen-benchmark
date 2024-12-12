@@ -1,6 +1,7 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; linux/optimized/hub.ll
+; llvm/optimized/NestedNameSpecifier.cpp.ll
 ; openjdk/optimized/instanceKlass.ll
 ; openmpi/optimized/comm_ishrink.ll
 ; openmpi/optimized/pcomm_ishrink.ll

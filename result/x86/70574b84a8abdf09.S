@@ -1,16 +1,16 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002b:                   # @func000000000000002b
 	movl	%edx, %eax
 	subq	%rax, %rdi
 	movl	%esi, %eax
 	addq	%rdi, %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000003b:                   # @func000000000000003b
 	movl	%edx, %eax
 	subq	%rax, %rdi
 	movl	%esi, %eax
 	addq	%rdi, %rax
 	retq
-func00000000000000ba:                   # @func00000000000000ba
+func00000000000000bb:                   # @func00000000000000bb
 	movl	%edx, %eax
 	subq	%rax, %rdi
 	movl	%esi, %eax
@@ -22,7 +22,7 @@ func0000000000000020:                   # @func0000000000000020
 	movl	%esi, %eax
 	addq	%rdi, %rax
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000ab:                   # @func00000000000000ab
 	movl	%edx, %eax
 	shlq	$5, %rax
 	subq	%rax, %rdi
@@ -36,7 +36,7 @@ func00000000000000b0:                   # @func00000000000000b0
 	movl	%esi, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	movl	%edx, %eax
 	subq	%rax, %rdi
 	movl	%esi, %eax

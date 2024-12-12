@@ -64,9 +64,9 @@ entry:
 ; meshlab/optimized/parameters.cpp.ll
 ; stb/optimized/stb_easy_font.c.ll
 ; Function Attrs: nounwind
-define float @func0000000000000010(i32 %0) #0 {
+define float @func0000000000000030(i32 %0) #0 {
 entry:
-  %1 = icmp ugt i32 %0, 1
+  %1 = icmp samesign ugt i32 %0, 1
   %2 = uitofp i1 %1 to float
   ret float %2
 }

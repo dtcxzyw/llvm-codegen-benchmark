@@ -28,39 +28,42 @@ func0000000000000022:                   # @func0000000000000022
 .LBB1_4:                                # %entry
 	fmv.d	fa0, fa1
 	ret
-func0000000000000033:                   # @func0000000000000033
-	fmv.d.x	fa5, zero
-	fle.d	a0, fa5, fa2
-	bnez	a0, .LBB2_3
-	fle.d	a0, fa5, fa1
-	bnez	a0, .LBB2_4
+.LCPI2_0:
+	.quad	0xc00921fb54442d18              # double -3.1415926535897931
+.LCPI2_1:
+	.quad	0x400921fb54442d18              # double 3.1415926535897931
+func0000000000000024:                   # @func0000000000000024
+	lui	a0, %hi(.LCPI2_0)
+	fld	fa5, %lo(.LCPI2_0)(a0)
+	flt.d	a0, fa2, fa5
+	beqz	a0, .LBB2_3
+	lui	a0, %hi(.LCPI2_1)
+	fld	fa5, %lo(.LCPI2_1)(a0)
+	flt.d	a0, fa5, fa1
+	beqz	a0, .LBB2_4
 .LBB2_2:                                # %entry
 	ret
 .LBB2_3:                                # %entry
 	fmv.d	fa1, fa2
-	fle.d	a0, fa5, fa2
-	beqz	a0, .LBB2_2
+	lui	a0, %hi(.LCPI2_1)
+	fld	fa5, %lo(.LCPI2_1)(a0)
+	flt.d	a0, fa5, fa2
+	bnez	a0, .LBB2_2
 .LBB2_4:                                # %entry
 	fmv.d	fa0, fa1
 	ret
-.LCPI3_0:
-	.quad	0x4066800000000000              # double 180
-func0000000000000024:                   # @func0000000000000024
+func0000000000000033:                   # @func0000000000000033
 	fmv.d.x	fa5, zero
-	flt.d	a0, fa2, fa5
-	beqz	a0, .LBB3_3
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
-	flt.d	a0, fa5, fa1
-	beqz	a0, .LBB3_4
+	fle.d	a0, fa5, fa2
+	bnez	a0, .LBB3_3
+	fle.d	a0, fa5, fa1
+	bnez	a0, .LBB3_4
 .LBB3_2:                                # %entry
 	ret
 .LBB3_3:                                # %entry
 	fmv.d	fa1, fa2
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
-	flt.d	a0, fa5, fa2
-	bnez	a0, .LBB3_2
+	fle.d	a0, fa5, fa2
+	beqz	a0, .LBB3_2
 .LBB3_4:                                # %entry
 	fmv.d	fa0, fa1
 	ret

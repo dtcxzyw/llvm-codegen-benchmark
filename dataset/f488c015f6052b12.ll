@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngwutil.c.ll
+; lvgl/optimized/lv_canvas.ll
 ; openjdk/optimized/pngread.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {

@@ -318,8 +318,10 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i8 %0, i32 %1) #0 {
 entry:

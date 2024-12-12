@@ -1,6 +1,7 @@
 
-; 185 occurrences:
+; 183 occurrences:
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -166,7 +167,6 @@
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
@@ -180,10 +180,8 @@
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/mt19937uniformrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
-; redis/optimized/mt19937-64.ll
 ; rocksdb/optimized/hash.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -191,8 +189,8 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = xor i64 %3, %2
   %5 = mul i64 %4, 637979407623780425
-  %6 = xor i64 %5, %1
-  %7 = add i64 %6, %0
+  %6 = xor i64 %1, %5
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

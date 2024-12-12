@@ -90,7 +90,7 @@
 ; z3/optimized/sat_lut_finder.cpp.ll
 ; z3/optimized/sat_xor_finder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %0, %2
@@ -98,37 +98,17 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
-; fmt/optimized/format-impl-test.cc.ll
-; qemu/optimized/block_qcow2-cluster.c.ll
-; qemu/optimized/util_hbitmap.c.ll
-; rocksdb/optimized/version_set.cc.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = lshr i64 %0, %2
-  %4 = icmp ult i64 %3, 16
-  ret i1 %4
-}
-
-; 12 occurrences:
-; arrow/optimized/fixed-dtoa.cc.ll
-; double_conversion/optimized/fixed-dtoa.cc.ll
+; 8 occurrences:
 ; git/optimized/fast-import.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/timekeeping.ll
-; linux/optimized/vclock_gettime.ll
 ; linux/optimized/vmscan.ll
 ; linux/optimized/xarray.ll
-; openusd/optimized/fixed-dtoa.cc.ll
 ; qemu/optimized/block_qcow2-bitmap.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %0, %2
@@ -153,11 +133,25 @@ entry:
 ; linux/optimized/clocksource.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %0, %2
   %4 = icmp sgt i64 %3, 2147483647
+  ret i1 %4
+}
+
+; 4 occurrences:
+; boost/optimized/to_chars.ll
+; fmt/optimized/format-impl-test.cc.ll
+; qemu/optimized/block_qcow2-cluster.c.ll
+; qemu/optimized/util_hbitmap.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = lshr i64 %0, %2
+  %4 = icmp ult i64 %3, 2199023255553
   ret i1 %4
 }
 
@@ -191,11 +185,37 @@ entry:
 ; stb/optimized/stb_sprintf.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %0, %2
   %4 = icmp ne i64 %3, 0
+  ret i1 %4
+}
+
+; 4 occurrences:
+; arrow/optimized/fixed-dtoa.cc.ll
+; double_conversion/optimized/fixed-dtoa.cc.ll
+; linux/optimized/sd.ll
+; openusd/optimized/fixed-dtoa.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = lshr i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 4294967295
+  ret i1 %4
+}
+
+; 2 occurrences:
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = lshr i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 4294967296
   ret i1 %4
 }
 
@@ -218,11 +238,23 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/clocksource.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %0, %2
   %4 = icmp slt i64 %3, 125001
+  ret i1 %4
+}
+
+; 2 occurrences:
+; hyperscan/optimized/catchup.c.ll
+; hyperscan/optimized/repeat.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = lshr i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 64
   ret i1 %4
 }
 

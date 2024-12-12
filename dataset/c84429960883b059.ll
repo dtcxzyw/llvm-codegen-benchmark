@@ -1,5 +1,5 @@
 
-; 931 occurrences:
+; 929 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
@@ -30,7 +30,6 @@
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BlockScopingTransformations.cpp.ll
@@ -657,7 +656,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -936,8 +934,8 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = lshr i32 %3, 29
-  %5 = xor i32 %4, %1
-  %6 = and i32 %5, %0
+  %5 = xor i32 %1, %4
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 
@@ -949,7 +947,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = lshr exact i32 %3, 9
-  %5 = xor i32 %4, %1
+  %5 = xor i32 %1, %4
   %6 = and i32 %5, %0
   ret i32 %6
 }

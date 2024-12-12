@@ -1,6 +1,7 @@
 
-%class.CellTypeState.2618392 = type { i32 }
-%class.QCPBarsData.3260434 = type { double, double }
+%class.CellTypeState.2731841 = type { i32 }
+%"struct.LightGBM::Tree::PathElement.2907705" = type { i32, double, double, double }
+%class.QCPBarsData.3451180 = type { double, double }
 
 ; 22 occurrences:
 ; abc/optimized/wlcBlast.c.ll
@@ -29,41 +30,52 @@
 define ptr @func0000000000000060(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %class.CellTypeState.2618392, ptr %0, i64 %3
+  %4 = getelementptr nusw %class.CellTypeState.2731841, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %class.CellTypeState.2618392, ptr %4, i64 %5
+  %6 = getelementptr %class.CellTypeState.2731841, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -4
   ret ptr %7
 }
 
-; 18 occurrences:
+; 6 occurrences:
 ; abc/optimized/ifDsd.c.ll
+; freetype/optimized/sdf.c.ll
+; icu/optimized/unistr.ll
+; lightgbm/optimized/sample_strategy.cpp.ll
+; protobuf/optimized/coded_stream.cc.ll
+; sentencepiece/optimized/coded_stream.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006e(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i64, ptr %0, i64 %3
+  %5 = zext nneg i32 %1 to i64
+  %6 = getelementptr nusw nuw i64, ptr %4, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 -8
+  ret ptr %7
+}
+
+; 12 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; freetype/optimized/sdf.c.ll
 ; gromacs/optimized/grid.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; icu/optimized/pkgitems.ll
 ; icu/optimized/ucnv_ext.ll
 ; icu/optimized/unames.ll
-; icu/optimized/unistr.ll
-; lightgbm/optimized/sample_strategy.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; luau/optimized/BytecodeAnalysis.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; openmpi/optimized/nbc.ll
-; protobuf/optimized/coded_stream.cc.ll
-; sentencepiece/optimized/coded_stream.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000006f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i64, ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907705", ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i64, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 -8
-  ret ptr %7
+  %6 = getelementptr nuw %"struct.LightGBM::Tree::PathElement.2907705", ptr %4, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 7 occurrences:
@@ -75,30 +87,19 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 49
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 49
   ret ptr %7
 }
 
-; 1 occurrences:
-; wireshark/optimized/qcustomplot.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr %class.QCPBarsData.3260434, ptr %0, i64 %3
-  %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %class.QCPBarsData.3260434, ptr %4, i64 %5, i32 1
-  ret ptr %6
-}
-
-; 2 occurrences:
+; 3 occurrences:
 ; cmake/optimized/zdict.c.ll
+; quickjs/optimized/quickjs.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
@@ -107,8 +108,20 @@ entry:
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 -1
+  %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7
+}
+
+; 1 occurrences:
+; wireshark/optimized/qcustomplot.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000043(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr %class.QCPBarsData.3451180, ptr %0, i64 %3
+  %5 = zext nneg i32 %1 to i64
+  %6 = getelementptr %class.QCPBarsData.3451180, ptr %4, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 4 occurrences:
@@ -124,6 +137,19 @@ entry:
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 1
+  ret ptr %7
+}
+
+; 1 occurrences:
+; hyperscan/optimized/program_runtime.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007e(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = zext nneg i32 %1 to i64
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 -8
   ret ptr %7
 }
 

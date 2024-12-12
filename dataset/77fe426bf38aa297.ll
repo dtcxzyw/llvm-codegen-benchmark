@@ -1,9 +1,7 @@
 
-; 10 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
-; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_levels.c.ll
-; darktable/optimized/introspection_rgblevels.c.ll
 ; minetest/optimized/clientlauncher.cpp.ll
 ; mitsuba3/optimized/envmap.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll

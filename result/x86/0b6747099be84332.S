@@ -1,9 +1,9 @@
-func0000000000000005:                   # @func0000000000000005
-	shrb	$7, %sil
+func0000000000000007:                   # @func0000000000000007
+	shrb	%sil
 	movzbl	%sil, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
+func0000000000000005:                   # @func0000000000000005
 	shrb	%sil
 	movzbl	%sil, %eax
 	addl	%edi, %eax

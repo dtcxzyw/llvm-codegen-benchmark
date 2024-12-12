@@ -110,7 +110,7 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i128 %0, i128 %1) #0 {
 entry:
-  %2 = add i128 %1, %0
+  %2 = add i128 %0, %1
   %3 = trunc i128 %2 to i32
   ret i32 %3
 }

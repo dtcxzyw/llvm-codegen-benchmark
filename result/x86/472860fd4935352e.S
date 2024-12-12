@@ -39,10 +39,3 @@ func0000000000000025:                   # @func0000000000000025
 	shrq	$34, %rax
 	leal	-719468(%rax,%rdi), %eax
 	retq
-func000000000000002c:                   # @func000000000000002c
-	addl	$-12, %esi
-	movl	$2863311531, %eax               # imm = 0xAAAAAAAB
-	imulq	%rsi, %rax
-	shrq	$35, %rax
-	leal	1(%rax,%rdi), %eax
-	retq

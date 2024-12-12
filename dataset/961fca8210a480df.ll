@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000da(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000001aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, %2
   %4 = icmp sgt i32 %3, %1
@@ -17,7 +17,7 @@ entry:
 ; opencv/optimized/dpm_cascade.cpp.ll
 ; openmpi/optimized/allreduce.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %0
   %4 = icmp sgt i32 %3, %1
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %0, %2
   %4 = icmp ugt i32 %3, %1
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %0
   %4 = icmp ugt i32 %3, %1

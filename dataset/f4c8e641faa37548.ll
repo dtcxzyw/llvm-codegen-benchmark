@@ -1,7 +1,10 @@
 
-; 5 occurrences:
+; 8 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/tzfmt.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_font.ll
 ; minetest/optimized/reflowscan.cpp.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; postgres/optimized/slru.ll

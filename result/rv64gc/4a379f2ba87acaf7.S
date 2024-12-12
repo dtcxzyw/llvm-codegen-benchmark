@@ -5,7 +5,7 @@ func0000000000000006:                   # @func0000000000000006
 	mv	a0, a2
 .LBB0_2:                                # %entry
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	sext.w	a1, a1
 	addw	a2, a2, a0
 	blt	a1, a2, .LBB1_2
@@ -26,7 +26,7 @@ func000000000000000a:                   # @func000000000000000a
 	mv	a0, a2
 .LBB3_2:                                # %entry
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sext.w	a1, a1
 	addw	a2, a2, a0
 	blt	a1, a2, .LBB4_2

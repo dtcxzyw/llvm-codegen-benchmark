@@ -1,11 +1,11 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movq	%rdi, %rax
 	notq	%rax
 	addq	%rdx, %rax
 	testl	%esi, %esi
 	cmovsq	%rdi, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movq	%rdi, %rax
 	notq	%rax
 	addq	%rdx, %rax

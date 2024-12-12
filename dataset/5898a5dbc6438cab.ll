@@ -18,11 +18,12 @@ entry:
   ret i8 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; linux/optimized/vt.ll
 ; slurm/optimized/parse_time.ll
 ; velox/optimized/CastExpr.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {
 entry:
@@ -41,12 +42,13 @@ entry:
   ret i8 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/drm_edid.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-xra.c.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000f(i8 %0) #0 {
 entry:

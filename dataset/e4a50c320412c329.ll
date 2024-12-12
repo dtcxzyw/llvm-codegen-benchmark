@@ -1,5 +1,5 @@
 
-; 218 occurrences:
+; 231 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddCache.c.ll
@@ -9,6 +9,19 @@
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/writer.cc.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll

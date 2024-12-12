@@ -12,7 +12,7 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, 2
 .LBB1_2:                                # %entry
 	ret
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000001ea:                   # @func00000000000001ea
 	sext.w	a1, a1
 	bgtz	a1, .LBB2_2
 	slli	a2, a2, 2

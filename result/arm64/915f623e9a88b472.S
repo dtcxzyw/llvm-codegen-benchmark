@@ -1,49 +1,38 @@
-func0000000000000184:                   // @func0000000000000184
+func0000000000000304:                   // @func0000000000000304
 // %bb.0:                               // %entry
-	movi	v3.4s, #40
-	sub	v2.4s, v3.4s, v2.4s
-	movi	v3.2d, #0000000000000000
-	ushll	v4.2d, v2.2s, #0
-	usubw2	v2.2d, v3.2d, v2.4s
-	neg	v3.2d, v4.2d
-	ushl	v1.2d, v1.2d, v2.2d
-	ushl	v0.2d, v0.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	movi	v1.4s, #10
-	cmhi	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, #40                         // =0x28
+	sub	w8, w8, w1
+	lsr	x8, x0, x8
+	cmp	w8, #10
+	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mvni	v3.4s, #53
-	sub	v2.4s, v3.4s, v2.4s
-	movi	v3.2d, #0000000000000000
-	ushll	v4.2d, v2.2s, #0
-	usubw2	v2.2d, v3.2d, v2.4s
-	neg	v3.2d, v4.2d
-	ushl	v1.2d, v1.2d, v2.2d
-	ushl	v0.2d, v0.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	movi	v1.4s, #10
-	cmhi	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, #-54                        // =0xffffffca
+	sub	w8, w8, w1
+	lsr	x8, x0, x8
+	cmp	w8, #10
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000188:                   // @func0000000000000188
+func0000000000000308:                   // @func0000000000000308
 // %bb.0:                               // %entry
-	neg	v2.4s, v2.4s
-	movi	v3.2d, #0000000000000000
-	mov	w8, #51711                      // =0xc9ff
-	movk	w8, #15258, lsl #16
-	ushll	v4.2d, v2.2s, #0
-	usubw2	v2.2d, v3.2d, v2.4s
-	neg	v3.2d, v4.2d
-	ushl	v1.2d, v1.2d, v2.2d
-	ushl	v0.2d, v0.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	dup	v1.4s, w8
-	cmhi	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	neg	w8, w1
+	mov	w9, #51711                      // =0xc9ff
+	lsr	x8, x0, x8
+	movk	w9, #15258, lsl #16
+	cmp	w8, w9
+	cset	w0, hi
+	ret
+                                        // -- End function
+func0000000000000318:                   // @func0000000000000318
+// %bb.0:                               // %entry
+	neg	w8, w1
+	mov	w9, #57599                      // =0xe0ff
+	lsr	x8, x0, x8
+	movk	w9, #1525, lsl #16
+	cmp	w8, w9
+	cset	w0, hi
 	ret
                                         // -- End function

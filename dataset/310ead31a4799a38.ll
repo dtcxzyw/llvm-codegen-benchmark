@@ -1,5 +1,6 @@
 
-; 22 occurrences:
+; 23 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cpython/optimized/dtoa.ll
@@ -23,7 +24,7 @@
 ; wireshark/optimized/packet-macsec.c.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65528
   %4 = icmp eq i32 %3, 0
@@ -33,11 +34,10 @@ entry:
   ret i32 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -7
   %4 = icmp eq i32 %3, 0

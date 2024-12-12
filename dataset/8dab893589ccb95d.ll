@@ -1,4 +1,16 @@
 
+; 1 occurrences:
+; rust-analyzer-rs/optimized/6218mmeycy2lka1.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 16777215
+  %4 = add i32 %0, %3
+  %5 = and i32 %1, -16777216
+  %6 = or i32 %4, %5
+  ret i32 %6
+}
+
 ; 5 occurrences:
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/saigIsoFast.c.ll
@@ -9,7 +21,7 @@
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = and i32 %1, 131064
   %6 = or disjoint i32 %4, %5
   ret i32 %6
@@ -33,7 +45,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147483647
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = and i32 %0, -2147483648
   %6 = or disjoint i32 %5, %4
   ret i32 %6
@@ -58,7 +70,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -1024
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = and i32 %0, 1023
   %6 = or disjoint i32 %5, %4
   ret i32 %6

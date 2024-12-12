@@ -1,42 +1,22 @@
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	sub	v0.4s, v0.4s, v1.4s
-	ext	v1.16b, v0.16b, v0.16b, #8
-	sshll	v3.2d, v0.2s, #0
-	sshll	v0.2d, v0.2s, #2
-	cmlt	v3.2d, v3.2d, #0
-	sshll	v2.2d, v1.2s, #0
-	sshll	v1.2d, v1.2s, #2
-	orr	v0.16b, v3.16b, v0.16b
-	cmlt	v2.2d, v2.2d, #0
-	orr	v1.16b, v2.16b, v1.16b
+	sub	w8, w0, w1
+	sbfiz	x9, x8, #2, #32
+	cmp	w8, #0
+	csinv	x0, x9, xzr, ge
 	ret
                                         // -- End function
-func0000000000000056:                   // @func0000000000000056
+func00000000000000a6:                   // @func00000000000000a6
 // %bb.0:                               // %entry
-	sub	v0.4s, v0.4s, v1.4s
-	ext	v1.16b, v0.16b, v0.16b, #8
-	sshll	v3.2d, v0.2s, #0
-	sshll	v0.2d, v0.2s, #4
-	cmlt	v3.2d, v3.2d, #0
-	sshll	v2.2d, v1.2s, #0
-	sshll	v1.2d, v1.2s, #4
-	orr	v0.16b, v3.16b, v0.16b
-	cmlt	v2.2d, v2.2d, #0
-	orr	v1.16b, v2.16b, v1.16b
+	subs	w8, w0, w1
+	sbfiz	x8, x8, #4, #32
+	csinv	x0, x8, xzr, ge
 	ret
                                         // -- End function
-func0000000000000076:                   // @func0000000000000076
+func00000000000000e6:                   // @func00000000000000e6
 // %bb.0:                               // %entry
-	sub	v0.4s, v0.4s, v1.4s
-	ext	v1.16b, v0.16b, v0.16b, #8
-	sshll	v3.2d, v0.2s, #0
-	sshll	v0.2d, v0.2s, #4
-	cmlt	v3.2d, v3.2d, #0
-	sshll	v2.2d, v1.2s, #0
-	sshll	v1.2d, v1.2s, #4
-	orr	v0.16b, v3.16b, v0.16b
-	cmlt	v2.2d, v2.2d, #0
-	orr	v1.16b, v2.16b, v1.16b
+	subs	w8, w0, w1
+	sbfiz	x8, x8, #4, #32
+	csinv	x0, x8, xzr, ge
 	ret
                                         // -- End function

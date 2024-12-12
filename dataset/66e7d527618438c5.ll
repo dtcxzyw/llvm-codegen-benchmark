@@ -1,10 +1,21 @@
 
-; 226 occurrences:
+; 3 occurrences:
+; cmake/optimized/nghttp2_map.c.ll
+; nghttp2/optimized/nghttp2_map.c.ll
+; ruby/optimized/random.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %1, %2
+  %4 = icmp samesign ult i64 %0, %3
+  ret i1 %4
+}
+
+; 251 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; clamav/optimized/unpack.cpp.ll
-; cmake/optimized/nghttp2_map.c.ll
 ; coreutils-rs/optimized/1pz43lsbr7l0inxv.ll
 ; influxdb-rs/optimized/55ksfxb2g8gj9lwh.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -100,7 +111,6 @@
 ; mini-lsm-rs/optimized/wk9xduxamtyfjix.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; mitsuba3/optimized/zone.cpp.ll
-; nghttp2/optimized/nghttp2_map.c.ll
 ; ockam-rs/optimized/10k16szy9z0gnoyc.ll
 ; ockam-rs/optimized/1u7cc2g6nvmoyh9z.ll
 ; ockam-rs/optimized/2v5jo34gglxi7dx1.ll
@@ -226,15 +236,42 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/0b2hqzlwilt32lfvaqs2arfgd.ll
+; zed-rs/optimized/1wjst2j1bd1xnipyz033svz8u.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/3xkvahxsem1hdyf3ef4aq8akj.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/4m25zm6spqfgpymm9gqw6hgqq.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/5qba05g0dyedoh8rydwnrszty.ll
+; zed-rs/optimized/7435o5as5af1nwuofltvv4x7w.ll
+; zed-rs/optimized/7nj8apu4jlzv057e0kkcpojil.ll
+; zed-rs/optimized/7v45b7y7t6bpxkoxn6aktlghb.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8l6j9aar0oaoyhr62czfg3g36.ll
+; zed-rs/optimized/9halndrg3dxenpyuljfpbk2q0.ll
+; zed-rs/optimized/asge4ovzpoi4j0hgzjom7idmo.ll
+; zed-rs/optimized/bmmi5kkbn5ov6774do5bqdg37.ll
+; zed-rs/optimized/bvs73film05xborh0f0ab3jqk.ll
+; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
+; zed-rs/optimized/cwm1jtpn2hj5f4ljdx4klnhqs.ll
+; zed-rs/optimized/daazuwy5q4pkhw5qv9dy4nfnq.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
+; zed-rs/optimized/eb0f70f7qg0lwhfftqxruwlu9.ll
+; zed-rs/optimized/eh70uus3omn48t7itznx7bc3r.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/enfie1bj6h9p5lyhzskn3992o.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
-; 100 occurrences:
+; 102 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -334,29 +371,29 @@ entry:
 ; z3/optimized/sat_cut_simplifier.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/sat_lut_finder.cpp.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; openssl/optimized/libdefault-lib-ssl3_cbc.ll
 ; openssl/optimized/libssl-shlib-ssl3_cbc.ll
-; qemu/optimized/block_qcow2.c.ll
-; spike/optimized/csrs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp samesign uge i64 %0, %3
   ret i1 %4
 }
 
-; 65 occurrences:
+; 88 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; bdwgc/optimized/gc.c.ll
@@ -364,17 +401,14 @@ entry:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/nghttp2_map.c.ll
 ; coreutils-rs/optimized/1pz43lsbr7l0inxv.ll
-; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; influxdb-rs/optimized/55ksfxb2g8gj9lwh.ll
 ; linux/optimized/buffer.ll
-; linux/optimized/i915_gem_gtt.ll
 ; linux/optimized/mm_init.ll
 ; linux/optimized/setup-bus.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DeadStoreElimination.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
@@ -407,7 +441,6 @@ entry:
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/hw_vfio_common.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
-; qemu/optimized/target_riscv_pmu.c.ll
 ; rust-analyzer-rs/optimized/11fzjzs7q1iz2s6j.ll
 ; rust-analyzer-rs/optimized/188uieohttaywily.ll
 ; rust-analyzer-rs/optimized/1ritseoble5k1o6v.ll
@@ -422,11 +455,49 @@ entry:
 ; smol-rs/optimized/45vbdutx5dtz1hlf.ll
 ; spike/optimized/triggers.ll
 ; spike/optimized/vmsgtu_vi.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/0b2hqzlwilt32lfvaqs2arfgd.ll
+; zed-rs/optimized/1wjst2j1bd1xnipyz033svz8u.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/3xkvahxsem1hdyf3ef4aq8akj.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/4m25zm6spqfgpymm9gqw6hgqq.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/5qba05g0dyedoh8rydwnrszty.ll
+; zed-rs/optimized/7435o5as5af1nwuofltvv4x7w.ll
+; zed-rs/optimized/7nj8apu4jlzv057e0kkcpojil.ll
+; zed-rs/optimized/7v45b7y7t6bpxkoxn6aktlghb.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8l6j9aar0oaoyhr62czfg3g36.ll
+; zed-rs/optimized/9halndrg3dxenpyuljfpbk2q0.ll
+; zed-rs/optimized/asge4ovzpoi4j0hgzjom7idmo.ll
+; zed-rs/optimized/bmmi5kkbn5ov6774do5bqdg37.ll
+; zed-rs/optimized/bvs73film05xborh0f0ab3jqk.ll
+; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
+; zed-rs/optimized/cwm1jtpn2hj5f4ljdx4klnhqs.ll
+; zed-rs/optimized/daazuwy5q4pkhw5qv9dy4nfnq.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
+; zed-rs/optimized/eb0f70f7qg0lwhfftqxruwlu9.ll
+; zed-rs/optimized/eh70uus3omn48t7itznx7bc3r.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/enfie1bj6h9p5lyhzskn3992o.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; qemu/optimized/block_qcow2.c.ll
+; spike/optimized/csrs.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %1, %2
+  %4 = icmp uge i64 %0, %3
   ret i1 %4
 }
 
@@ -438,7 +509,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
@@ -451,7 +522,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
@@ -469,7 +540,25 @@ entry:
 define i1 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
+  ret i1 %4
+}
+
+; 9 occurrences:
+; cmake/optimized/archive_read_support_format_rar5.c.ll
+; cmake/optimized/nghttp2_map.c.ll
+; delta-rs/optimized/47qjbhol909h8zu7.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; nghttp2/optimized/nghttp2_map.c.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %1, %2
+  %4 = icmp samesign ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -482,7 +571,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 

@@ -14,7 +14,7 @@
 ; slurm/optimized/gres.ll
 ; slurm/optimized/slurm_protocol_defs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i1 %0, i32 %1, ptr %2) #0 {
+define i32 @func0000000000000043(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 8
   %4 = icmp eq ptr %2, null
@@ -24,8 +24,7 @@ entry:
   ret i32 %7
 }
 
-; 5 occurrences:
-; linux/optimized/intel_engine_user.ll
+; 4 occurrences:
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; postgres/optimized/rewriteHandler.ll
 ; qemu/optimized/ui_keymaps.c.ll
@@ -48,7 +47,7 @@ entry:
 ; slurm/optimized/gres.ll
 ; slurm/optimized/slurm_protocol_defs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i1 %0, i32 %1, ptr %2) #0 {
+define i32 @func0000000000000042(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 524288
   %4 = icmp eq ptr %2, null

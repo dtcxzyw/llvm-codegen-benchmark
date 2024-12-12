@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	movabsq	$137438953440, %rcx             # imm = 0x1FFFFFFFE0
 	addq	%rsi, %rcx
 	shrq	$2, %rcx
@@ -6,7 +6,7 @@ func000000000000001a:                   # @func000000000000001a
 	andq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	incl	%esi
 	shrl	$8, %esi
 	andl	$7, %esi
@@ -29,14 +29,14 @@ func0000000000000018:                   # @func0000000000000018
 	andq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	movabsq	$34359738320, %rcx              # imm = 0x7FFFFFFD0
 	addq	%rsi, %rcx
 	movabsq	$34359738360, %rax              # imm = 0x7FFFFFFF8
 	andq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	decl	%esi
 	shrl	$6, %esi
 	leaq	(%rdi,%rsi,8), %rax

@@ -61,7 +61,7 @@ entry:
   ret i32 %4
 }
 
-; 57 occurrences:
+; 59 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; assimp/optimized/zip.c.ll
@@ -90,6 +90,8 @@ entry:
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; nlohmann_json/optimized/unit-deserialization.cpp.ll
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; node/optimized/libnode.Protocol.ll
@@ -128,8 +130,10 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; cmake/optimized/archive_write_set_format_pax.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; spike/optimized/aes64esm.ll
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
 ; yyjson/optimized/yyjson.c.ll

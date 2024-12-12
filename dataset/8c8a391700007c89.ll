@@ -5,7 +5,7 @@
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000671(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000ce1(i64 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 429392688
   %2 = select i1 %.not, i32 1, i32 2
@@ -33,7 +33,7 @@ entry:
 ; php/optimized/avifinfo.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 12
   %3 = select i1 %2, i32 4096, i32 256
@@ -47,7 +47,7 @@ entry:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; linux/optimized/intel_color.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000571(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000ae1(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 24
   %3 = select i1 %2, i32 7, i32 6

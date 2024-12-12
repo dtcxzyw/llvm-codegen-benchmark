@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%edi, %edi
 	cmovel	%edi, %eax
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	movl	%edi, %eax
 	shll	$13, %eax
 	addl	$57344, %eax                    # imm = 0xE000
@@ -19,7 +19,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$3, %edi
 	cmovgel	%ecx, %eax
 	retq
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	leal	129(%rdi,%rdi), %ecx
 	andl	$-128, %ecx
 	cmpl	$127, %edi

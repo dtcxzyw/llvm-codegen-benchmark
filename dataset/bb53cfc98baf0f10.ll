@@ -13,6 +13,21 @@ entry:
   ret i32 %6
 }
 
+; 3 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 2
+  %3 = udiv i32 %2, 1530
+  %4 = mul i32 %3, 65524
+  %5 = add nuw nsw i32 %0, 3
+  %6 = add i32 %5, %4
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; Function Attrs: nounwind

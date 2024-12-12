@@ -1,5 +1,6 @@
 
 ; 45 occurrences:
+; boost/optimized/expand_on_spheroid.ll
 ; duckdb/optimized/ub_duckdb_catalog_entries.cpp.ll
 ; gromacs/optimized/gmx_traj.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -37,7 +38,6 @@
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; php/optimized/zend_jit.ll
-; proj/optimized/crs.cpp.ll
 ; proxygen/optimized/HTTPPriorityFunctions.cpp.ll
 ; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
@@ -50,7 +50,7 @@ define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = xor i1 %3, true
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

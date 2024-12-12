@@ -1,9 +1,9 @@
 
-%"union.absl::debian2::container_internal::map_slot_type.85.2748295" = type { %"struct.std::pair.43.2748296" }
-%"struct.std::pair.43.2748296" = type { %"class.std::__cxx11::basic_string.2748263", %"class.std::__cxx11::basic_string.2748263" }
-%"class.std::__cxx11::basic_string.2748263" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2748264", i64, %union.anon.2748265 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2748264" = type { ptr }
-%union.anon.2748265 = type { i64, [8 x i8] }
+%"union.absl::debian2::container_internal::map_slot_type.85.2860615" = type { %"struct.std::pair.43.2860616" }
+%"struct.std::pair.43.2860616" = type { %"class.std::__cxx11::basic_string.2860583", %"class.std::__cxx11::basic_string.2860583" }
+%"class.std::__cxx11::basic_string.2860583" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584", i64, %union.anon.2860585 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584" = type { ptr }
+%union.anon.2860585 = type { i64, [8 x i8] }
 
 ; 7 occurrences:
 ; gromacs/optimized/binsearch.cpp.ll
@@ -55,17 +55,17 @@ entry:
 ; abc/optimized/wlcAbs2.c.ll
 ; php/optimized/zend_alloc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = ashr i32 %3, 6
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 456
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 456
   %7 = getelementptr nusw i64, ptr %6, i64 %5
   ret ptr %7
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absOut.c.ll
@@ -87,6 +87,7 @@ entry:
 ; abc/optimized/saigDup.c.ll
 ; abc/optimized/saigSimSeq.c.ll
 ; abc/optimized/utilCex.c.ll
+; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/bzlib.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
@@ -97,18 +98,17 @@ entry:
 ; openspiel/optimized/state_distribution.cc.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = ashr i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 16
-  %7 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.85.2748295", ptr %6, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %7 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.85.2860615", ptr %6, i64 %5
   ret ptr %7
 }
 
-; 2 occurrences:
-; clamav/optimized/bzlib.c.ll
+; 1 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {

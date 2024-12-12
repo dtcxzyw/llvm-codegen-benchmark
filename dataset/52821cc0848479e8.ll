@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; lief/optimized/ssl_msg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = add i64 %1, 1
   %5 = select i1 %3, i64 1, i64 %4
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -68,29 +68,63 @@ entry:
 ; luau/optimized/Unifier2.cpp.ll
 ; luau/optimized/ValueTracking.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000085(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = add i64 %1, -1
   %5 = select i1 %3, i64 15, i64 %4
-  %6 = icmp uge i64 %5, %0
+  %6 = icmp ule i64 %0, %5
   ret i1 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; luau/optimized/Compiler.cpp.ll
 ; luau/optimized/ConstraintGenerator.cpp.ll
 ; luau/optimized/Linter.cpp.ll
 ; luau/optimized/RequireTracer.cpp.ll
 ; luau/optimized/RequireTracer.test.cpp.ll
 ; luau/optimized/Subtyping.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = add i64 %1, -1
   %5 = select i1 %3, i64 15, i64 %4
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, 23
+  %4 = add i64 %1, 32
+  %5 = select i1 %3, i64 64, i64 %4
+  %6 = icmp ugt i64 %0, %5
+  ret i1 %6
+}
+
+; 10 occurrences:
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
+; zed-rs/optimized/3ovedgaw1yidfseciw93ubpv7.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/5xevyi85tx7z64jdpnqwqtx9p.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/blc07kmo6cnkd0np8c4wtnq7t.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/epsv5gdpg9wii0jlawu81wh31.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = add nuw i64 %1, 1
+  %5 = select i1 %3, i64 1, i64 %4
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -98,12 +132,12 @@ entry:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000129(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000249(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 23
   %4 = add nuw i64 %1, 8
   %5 = select i1 %3, i64 40, i64 %4
-  %6 = icmp ule i64 %5, %0
+  %6 = icmp uge i64 %0, %5
   ret i1 %6
 }
 

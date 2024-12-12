@@ -1,23 +1,11 @@
 func0000000000000020:                   // @func0000000000000020
 // %bb.0:                               // %entry
 	mov	w8, #26215                      // =0x6667
-	add	v3.4s, v3.4s, v3.4s
-	add	v2.4s, v2.4s, v2.4s
+	add	w9, w0, w1, lsl #1
 	movk	w8, #26214, lsl #16
-	dup	v4.4s, w8
-	smull2	v5.2d, v1.4s, v4.4s
-	smull	v6.2d, v1.2s, v4.2s
-	smull2	v7.2d, v0.4s, v4.4s
-	smull	v4.2d, v0.2s, v4.2s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	uzp2	v5.4s, v6.4s, v5.4s
-	uzp2	v4.4s, v4.4s, v7.4s
-	sshr	v6.4s, v5.4s, #1
-	sshr	v7.4s, v4.4s, #1
-	usra	v6.4s, v5.4s, #31
-	usra	v7.4s, v4.4s, #31
-	add	v1.4s, v1.4s, v6.4s
-	add	v0.4s, v0.4s, v7.4s
+	smull	x8, w0, w8
+	asr	x8, x8, #33
+	add	w8, w8, w8, lsr #31
+	add	w0, w9, w8
 	ret
                                         // -- End function

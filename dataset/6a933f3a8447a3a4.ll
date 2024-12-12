@@ -22,14 +22,13 @@ entry:
   ret double %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; oiio/optimized/imageio.cpp.ll
 ; openblas/optimized/dlaein.c.ll
 ; openblas/optimized/dlag2.c.ll
 ; openblas/optimized/dlaic1.c.ll
 ; openblas/optimized/dlaln2.c.ll
 ; openblas/optimized/dlaqtr.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; Function Attrs: nounwind
 define double @func000000000000000c(double %0, double %1, double %2) #0 {
@@ -40,11 +39,9 @@ entry:
   ret double %5
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/circpos.c.ll
-; gromacs/optimized/dlange.cpp.ll
-; gromacs/optimized/dlanst.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/dstebz.cpp.ll
 ; gromacs/optimized/dstein.cpp.ll

@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	xorl	%eax, %eax
 	testb	%sil, %sil
 	setne	%al
@@ -7,11 +7,10 @@ func0000000000000021:                   # @func0000000000000021
 	testl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
-	xorl	%eax, %eax
+func0000000000000061:                   # @func0000000000000061
 	testb	%sil, %sil
-	setne	%al
-	shll	$2, %eax
-	orl	%edi, %eax
+	sete	%cl
+	testl	%edi, %edi
 	sete	%al
+	andb	%cl, %al
 	retq

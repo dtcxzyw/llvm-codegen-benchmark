@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/anadih.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; openspiel/optimized/bargaining.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(double %0, double %1) #0 {

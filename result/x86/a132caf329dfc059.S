@@ -3,7 +3,7 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	movl	%edi, %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
@@ -25,6 +25,6 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func000000000000000a:                   # @func000000000000000a
 	movl	%edi, %eax
-	testl	%esi, %esi
-	cmovlel	%esi, %eax
+	cmpl	$16, %esi
+	cmovll	%esi, %eax
 	retq

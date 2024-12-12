@@ -23,16 +23,17 @@ entry:
 ; quantlib/optimized/sweden.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = and i32 %3, 7
   %5 = icmp ne i32 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
-; 23 occurrences:
+; 24 occurrences:
+; postgres/optimized/inv_api.ll
 ; quantlib/optimized/argentina.ll
 ; quantlib/optimized/australia.ll
 ; quantlib/optimized/brazil.ll
@@ -57,12 +58,12 @@ entry:
 ; redis/optimized/t_stream.ll
 ; redis/optimized/t_zset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = and i32 %3, -4
   %5 = icmp eq i32 %4, 4
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -75,7 +76,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = and i32 %3, -4
   %5 = icmp ne i32 %4, 4
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

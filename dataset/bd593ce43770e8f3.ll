@@ -10,7 +10,7 @@ entry:
   ret i32 %3
 }
 
-; 65 occurrences:
+; 64 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/ifMan.c.ll
@@ -40,8 +40,7 @@ entry:
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_calendar.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/emerge.cpp.ll

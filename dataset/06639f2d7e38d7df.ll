@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, -4
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001aa(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 31

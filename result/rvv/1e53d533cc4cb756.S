@@ -19,5 +19,5 @@ func0000000000000006:                   # @func0000000000000006
 	vmv.v.i	v12, 0
 	fli.s	fa5, 1.0
 	vfrdiv.vf	v12, v16, fa5, v0.t
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret

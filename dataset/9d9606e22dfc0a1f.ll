@@ -8,7 +8,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 

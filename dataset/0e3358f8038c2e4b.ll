@@ -15,21 +15,6 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
-; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = lshr i64 %0, 48
-  %5 = add nuw nsw i64 %4, %3
-  %6 = and i64 %5, 2147483648
-  ret i64 %6
-}
-
 ; 3 occurrences:
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; lief/optimized/poly1305.c.ll
@@ -52,6 +37,19 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 51
   %4 = add nuw nsw i64 %0, %1
+  %5 = add nuw nsw i64 %4, %3
+  %6 = and i64 %5, 2251799813685247
+  ret i64 %6
+}
+
+; 2 occurrences:
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = lshr i64 %0, 51
   %5 = add nuw nsw i64 %4, %3
   %6 = and i64 %5, 2251799813685247
   ret i64 %6

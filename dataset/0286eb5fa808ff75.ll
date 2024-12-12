@@ -11,9 +11,10 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; hdf5/optimized/H5T.c.ll
-; hdf5/optimized/h5tools_type.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll

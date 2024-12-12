@@ -5,7 +5,7 @@ func0000000000000024:                   # @func0000000000000024
 	bnez	a0, .LBB0_2
 	fmv.d	fa4, fa1
 .LBB0_2:                                # %entry
-	fmul.d	fa4, fa4, fa0
+	fmul.d	fa4, fa0, fa4
 	flt.d	a0, fa5, fa4
 	ret
 .LCPI1_0:
@@ -18,7 +18,7 @@ func0000000000000025:                   # @func0000000000000025
 .LBB1_2:                                # %entry
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa4, %lo(.LCPI1_0)(a0)
-	fmul.d	fa5, fa5, fa0
+	fmul.d	fa5, fa0, fa5
 	fle.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
@@ -35,13 +35,15 @@ func0000000000000021:                   # @func0000000000000021
 	feq.d	a0, fa5, fa5
 	xori	a0, a0, 1
 	ret
-func000000000000001e:                   # @func000000000000001e
+func0000000000000015:                   # @func0000000000000015
 	feq.d	a0, fa1, fa1
+	fmv.d.x	fa5, zero
 	bnez	a0, .LBB3_2
-	fmv.d.x	fa1, zero
+	fmv.d	fa1, fa5
 .LBB3_2:                                # %entry
-	fmul.d	fa5, fa1, fa0
-	feq.d	a0, fa5, fa5
+	fmul.d	fa4, fa0, fa1
+	fle.d	a0, fa4, fa5
+	xori	a0, a0, 1
 	ret
 func00000000000000ae:                   # @func00000000000000ae
 	fmv.d.x	fa5, zero
@@ -49,7 +51,7 @@ func00000000000000ae:                   # @func00000000000000ae
 	bnez	a0, .LBB4_2
 	fmv.d	fa5, fa1
 .LBB4_2:                                # %entry
-	fmul.d	fa5, fa5, fa0
+	fmul.d	fa5, fa0, fa5
 	feq.d	a0, fa5, fa5
 	ret
 .LCPI5_0:
@@ -61,7 +63,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	bnez	a0, .LBB5_2
 	fmv.d	fa5, fa1
 .LBB5_2:                                # %entry
-	fmul.d	fa5, fa5, fa0
+	fmul.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
 	fle.d	a0, fa4, fa5
 	ret
@@ -74,7 +76,7 @@ func00000000000000ad:                   # @func00000000000000ad
 	bnez	a0, .LBB6_2
 	fmv.d	fa5, fa1
 .LBB6_2:                                # %entry
-	fmul.d	fa5, fa5, fa0
+	fmul.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
 	flt.d	a0, fa5, fa4
 	xori	a0, a0, 1

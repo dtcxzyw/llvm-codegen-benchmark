@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/index_hash.c.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
-; redis/optimized/quicklist.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -19,7 +18,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4
   %3 = add i64 %2, %0
@@ -55,7 +54,7 @@ entry:
 ; cvc5/optimized/term_formula_removal.cpp.ll
 ; cvc5/optimized/theory_preprocessor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = add i64 %2, %0
@@ -70,7 +69,7 @@ entry:
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = add nuw nsw i64 %2, %0
@@ -84,7 +83,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967293
   %3 = add i64 %2, %0
@@ -103,7 +102,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 3
   %3 = add i64 %2, %0
@@ -115,7 +114,7 @@ entry:
 ; 1 occurrences:
 ; tinyrenderer/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
   %3 = and i64 %2, 1
@@ -126,12 +125,24 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/kobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = add i64 %2, %0
   %4 = and i64 %3, 4294967295
   %5 = icmp eq i64 %4, 0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; redis/optimized/quicklist.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 4294967289
+  %3 = add i64 %2, %0
+  %4 = and i64 %3, 4294967295
+  %5 = icmp samesign ugt i64 %4, 8192
   ret i1 %5
 }
 

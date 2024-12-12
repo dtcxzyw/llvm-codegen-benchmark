@@ -13,9 +13,8 @@ entry:
   ret i16 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/cgroup.ll
-; linux/optimized/he.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/vht.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
@@ -78,10 +77,9 @@ entry:
   ret i16 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/ata_piix.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
@@ -93,13 +91,12 @@ entry:
   ret i16 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; icu/optimized/ucnv2022.ll
 ; linux/optimized/ahci.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/pkeys.ll
 ; llvm/optimized/Function.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i32 %0) #0 {

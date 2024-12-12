@@ -18,7 +18,7 @@
 define i16 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -34,20 +34,21 @@ entry:
 define i16 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; linux/optimized/ipconfig.ll
 ; linux/optimized/phy-c45.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
-  %2 = xor i32 %1, 2
-  %3 = and i32 %2, %0
+  %2 = xor i32 %1, -1
+  %3 = and i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }

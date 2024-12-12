@@ -46,8 +46,9 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-woww.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {

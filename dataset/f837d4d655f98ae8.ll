@@ -17,11 +17,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -65
   %3 = icmp ult i32 %2, -10
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = select i1 %4, i64 8, i64 0
   ret i64 %5
 }

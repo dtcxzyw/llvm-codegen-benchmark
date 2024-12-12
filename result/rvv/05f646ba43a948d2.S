@@ -24,11 +24,11 @@ func0000000000000010:                   # @func0000000000000010
 	vmerge.vim	v10, v10, 8, v0
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000052:                   # @func0000000000000052
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, 1
 	vmsleu.vi	v0, v10, 8
 	vmv.v.i	v10, 6
 	vmerge.vim	v10, v10, 3, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

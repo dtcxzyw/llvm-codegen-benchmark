@@ -12,7 +12,7 @@ func00000000000000ab:                   # @func00000000000000ab
 	.long	1                               # 0x1
 .LCPI1_1:
 	.long	2                               # 0x2
-func000000000000008b:                   # @func000000000000008b
+func000000000000018b:                   # @func000000000000018b
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm2, %k0

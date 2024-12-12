@@ -5,7 +5,7 @@ func000000000000000f:                   # @func000000000000000f
 	vpand	%ymm3, %ymm2, %ymm2
 	vpand	%ymm3, %ymm1, %ymm1
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.quad	68719476608                     # 0xfffffff80
@@ -41,5 +41,5 @@ func000000000000000d:                   # @func000000000000000d
 	vpand	%ymm3, %ymm2, %ymm2
 	vpand	%ymm3, %ymm1, %ymm1
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

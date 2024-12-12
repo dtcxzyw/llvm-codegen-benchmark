@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	4294963200                      # 0xfffff000
 func000000000000000a:                   # @func000000000000000a
 	vpaddd	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpandd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
@@ -50,7 +50,7 @@ func0000000000000000:                   # @func0000000000000000
 	.long	63                              # 0x3f
 func000000000000000f:                   # @func000000000000000f
 	vpaddd	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpandd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq

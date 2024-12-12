@@ -4,10 +4,9 @@ func0000000000000006:                   # @func0000000000000006
 	shrl	$31, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	subl	%edi, %esi
-	incl	%esi
-	cmpl	$2, %esi
-	setb	%al
+	subl	%esi, %edi
+	cmpl	$-3, %edi
+	setae	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	subl	%edi, %esi
@@ -15,15 +14,15 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%esi, %esi
 	setg	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	subl	%edi, %esi
 	addl	$-27, %esi
 	cmpl	$-2, %esi
 	setb	%al
 	retq
-func0000000000000351:                   # @func0000000000000351
+func00000000000006a1:                   # @func00000000000006a1
 	decl	%esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -31,7 +30,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$-1, %esi
 	sete	%al
 	retq
-func0000000000000354:                   # @func0000000000000354
+func00000000000006a4:                   # @func00000000000006a4
 	subl	%edi, %esi
 	addl	$63, %esi
 	cmpl	$7, %esi
@@ -39,16 +38,16 @@ func0000000000000354:                   # @func0000000000000354
 	retq
 func000000000000000c:                   # @func000000000000000c
 	decl	%esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	setne	%al
 	retq
-func000000000000020a:                   # @func000000000000020a
+func000000000000040a:                   # @func000000000000040a
 	subl	%edi, %esi
 	incl	%esi
 	cmpl	$2, %esi
 	setge	%al
 	retq
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	subl	%edi, %esi
 	addl	$-3, %esi
 	cmpl	$-4, %esi

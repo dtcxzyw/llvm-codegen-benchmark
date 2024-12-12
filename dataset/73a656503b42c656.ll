@@ -3,7 +3,7 @@
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; openjdk/optimized/dgif_lib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000004cc(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 1
@@ -19,7 +19,7 @@ entry:
 ; velox/optimized/Reverse.cpp.ll
 ; velox/optimized/StringFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000058c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 1
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/msxml.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000088c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw i64 %1, 1
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/expire.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000368(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000cc8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1

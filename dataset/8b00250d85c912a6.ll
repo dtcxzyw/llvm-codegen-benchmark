@@ -29,7 +29,7 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = shl nuw i64 %3, 3
   ret i64 %4
 }
@@ -44,7 +44,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = shl i64 %3, 3
   ret i64 %4
 }
@@ -91,7 +91,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 2
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = shl i64 %3, 2
   ret i64 %4
 }
@@ -102,7 +102,7 @@ entry:
 define i64 @func0000000000000033(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = shl nuw nsw i64 %3, 2
   ret i64 %4
 }
@@ -135,7 +135,7 @@ entry:
 define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = shl nuw nsw i64 %3, 2
   ret i64 %4
 }
@@ -146,7 +146,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = shl nsw i64 %3, 1
   ret i64 %4
 }

@@ -2,7 +2,7 @@
 	.long	8                               # 0x8
 .LCPI0_1:
 	.long	2                               # 0x2
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [8,8,8,8,8,8,8,8]
 	vpcmpnleud	.LCPI0_1(%rip){1to8}, %ymm0, %k1
 	vpsrlvd	%ymm1, %ymm2, %ymm2 {%k1}

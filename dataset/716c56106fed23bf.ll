@@ -6,7 +6,7 @@
 ; minetest/optimized/gameui.cpp.ll
 ; redis/optimized/redis-check-aof.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, -1
   %4 = select i1 %0, i1 %3, i1 false
@@ -19,7 +19,7 @@ entry:
 ; postgres/optimized/parse_expr.ll
 ; qemu/optimized/hw_net_e1000x_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -28,7 +28,7 @@ entry:
   ret i1 %6
 }
 
-; 33 occurrences:
+; 34 occurrences:
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; icu/optimized/decNumber.ll
@@ -62,8 +62,9 @@ entry:
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %0, i1 %3, i1 false
@@ -75,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/avifinfo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -87,9 +88,9 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/ws_strptime.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000304(i1 %0, i8 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 9
+  %3 = icmp samesign ugt i32 %2, 9
   %4 = select i1 %0, i1 %3, i1 false
   %5 = icmp ult i8 %1, 10
   %6 = select i1 %4, i1 %5, i1 false
@@ -102,7 +103,7 @@ entry:
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false

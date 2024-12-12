@@ -1,25 +1,27 @@
 
-; 27 occurrences:
+; 29 occurrences:
+; freetype/optimized/cff.c.ll
 ; freetype/optimized/ftbase.c.ll
+; freetype/optimized/type1.c.ll
+; freetype/optimized/type1cid.c.ll
 ; gromacs/optimized/poscalc.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; libevent/optimized/poll.c.ll
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/md.ll
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; openjdk/optimized/classPrinter.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_ssa.ll
-; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll

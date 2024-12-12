@@ -11,9 +11,8 @@ entry:
   ret i8 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
-; linux/optimized/rsmisc.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i32 %0, i8 %1) #0 {
 entry:
@@ -36,8 +35,7 @@ entry:
   ret i8 %5
 }
 
-; 4 occurrences:
-; linux/optimized/rsmisc.ll
+; 3 occurrences:
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/X86FoldTablesEmitter.cpp.ll
 ; llvm/optimized/X86InstrMappingEmitter.cpp.ll

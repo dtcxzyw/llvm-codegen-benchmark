@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; assimp/optimized/IFCUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = sub i64 %0, %1
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/hpack_header_table.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = sdiv exact i64 %0, 120
@@ -38,19 +38,19 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/hpack_header_table.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002b4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = sdiv exact i64 %0, 120
   %5 = add nsw i64 %4, %3
-  %6 = icmp ult i64 %5, 4
+  %6 = icmp samesign ult i64 %5, 4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; libquic/optimized/quic_unacked_packet_map.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %0, 80
@@ -59,19 +59,15 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
-; eastl/optimized/TestVectorMap.cpp.ll
-; eastl/optimized/TestVectorSet.cpp.ll
+; 1 occurrences:
 ; libquic/optimized/quic_unacked_packet_map.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000b4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %0, 80
   %5 = add nsw i64 %4, %3
-  %6 = icmp ult i64 %5, 6
+  %6 = icmp samesign ult i64 %5, 6
   ret i1 %6
 }
 
@@ -88,7 +84,7 @@ entry:
 ; wireshark/optimized/traffic_tree.cpp.ll
 ; wireshark/optimized/voip_calls_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, -24
   %4 = sub i64 %0, %1
@@ -103,7 +99,7 @@ entry:
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; wireshark/optimized/interface_toolbar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, -24
   %4 = sub i64 %0, %1
@@ -118,7 +114,22 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %0, 48
+  %5 = add nsw i64 %4, %3
+  %6 = icmp ult i64 %5, 4
+  ret i1 %6
+}
+
+; 4 occurrences:
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = sdiv exact i64 %0, 48
@@ -130,7 +141,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = sub i64 %0, %1
@@ -143,7 +154,7 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000022a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = sub i64 %0, %1

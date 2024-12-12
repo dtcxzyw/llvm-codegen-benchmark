@@ -1,4 +1,4 @@
-func0000000000000016:                   // @func0000000000000016
+func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
 	mov	x8, #-1                         // =0xffffffffffffffff
                                         // kill: def $w2 killed $w2 def $x2
@@ -7,7 +7,7 @@ func0000000000000016:                   // @func0000000000000016
 	add	x0, x0, x8, lsl #6
 	ret
                                         // -- End function
-func0000000000000006:                   // @func0000000000000006
+func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	mov	x8, #-1                         // =0xffffffffffffffff
                                         // kill: def $w2 killed $w2 def $x2

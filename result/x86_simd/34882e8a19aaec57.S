@@ -40,7 +40,7 @@ func0000000000000006:                   # @func0000000000000006
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpcmpleub	%xmm2, %xmm1, %k1
@@ -51,6 +51,27 @@ func000000000000000a:                   # @func000000000000000a
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpcmpgtb	%xmm2, %xmm1, %k1
+	korw	%k1, %k0, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+func0000000000000005:                   # @func0000000000000005
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k0
+	vpcmpleub	%xmm2, %xmm1, %k1
+	korw	%k1, %k0, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+func0000000000000018:                   # @func0000000000000018
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k0
+	vpcmpnleub	%xmm2, %xmm1, %k1
+	korw	%k1, %k0, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+func0000000000000014:                   # @func0000000000000014
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k0
+	vpcmpltub	%xmm2, %xmm1, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 20 occurrences:
 ; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
 ; hermes/optimized/RegAlloc.cpp.ll
 ; linux/optimized/byd.ll
@@ -18,12 +18,14 @@
 ; z3/optimized/nex_creator.cpp.ll
 ; z3/optimized/pb2bv_tactic.cpp.ll
 ; z3/optimized/pb_rewriter.cpp.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, -1
   %4 = select i1 %3, i1 %1, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -92,22 +94,14 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
-; llvm/optimized/InstCombineAddSub.cpp.ll
-; llvm/optimized/InstCombineMulDivRem.cpp.ll
-; llvm/optimized/InstCombineVectorOps.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
-; llvm/optimized/InstructionSimplify.cpp.ll
-; llvm/optimized/LICM.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/VectorCombine.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 18
   %4 = select i1 %3, i1 %1, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -131,7 +125,7 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 1
   %4 = select i1 %3, i1 %1, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

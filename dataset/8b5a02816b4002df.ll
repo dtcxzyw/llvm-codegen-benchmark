@@ -8,7 +8,7 @@ entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 1073741816
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -22,14 +22,12 @@ entry:
   %2 = add i64 %1, 63
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2305843009213693944
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; linux/optimized/swiotlb.ll
-; linux/optimized/ttm_range_manager.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/filemap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
@@ -50,7 +48,7 @@ entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 1073741816
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -78,7 +76,7 @@ entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 1073741816
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

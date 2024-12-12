@@ -22,7 +22,7 @@
 ; postgres/optimized/regexec.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, %1
   %4 = icmp eq ptr %0, %1
@@ -40,7 +40,7 @@ entry:
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; openjdk/optimized/mathexactnode.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, %1
   %4 = icmp ne ptr %0, %1
@@ -53,7 +53,7 @@ entry:
 ; openjdk/optimized/frame_x86.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000104(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = icmp ult ptr %0, %1
@@ -68,7 +68,7 @@ entry:
 ; openjdk/optimized/mutableNUMASpace.ll
 ; openjdk/optimized/rootResolver.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000085(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000105(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = icmp ule ptr %0, %1
@@ -80,7 +80,7 @@ entry:
 ; openjdk/optimized/psPromotionManager.ll
 ; openjdk/optimized/psScavenge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000124(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %2, %1
   %4 = icmp ult ptr %0, %1
@@ -91,7 +91,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, %1
   %4 = icmp eq ptr %0, %1
@@ -103,7 +103,7 @@ entry:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ClangASTNodesEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, %1
   %4 = icmp ne ptr %0, %1
@@ -116,7 +116,7 @@ entry:
 ; postgres/optimized/path_shlib.ll
 ; postgres/optimized/path_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000108(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = icmp ugt ptr %0, %1
@@ -132,7 +132,7 @@ entry:
 ; redis/optimized/extent_dss.ll
 ; redis/optimized/extent_dss.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %2, %1
   %4 = icmp ult ptr %0, %1
@@ -143,7 +143,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000028(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, %1
   %4 = icmp ugt ptr %0, %1
@@ -155,7 +155,7 @@ entry:
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000055(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000a5(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ule ptr %2, %1
   %4 = icmp ule ptr %0, %1

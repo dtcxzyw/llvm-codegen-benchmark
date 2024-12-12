@@ -1,15 +1,27 @@
 
+; 4 occurrences:
+; assimp/optimized/ACLoader.cpp.ll
+; git/optimized/sh-i18n--envsubst.ll
+; openssl/optimized/libapps-lib-opt.ll
+; openssl/optimized/libtestutil-lib-opt.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000186(ptr %0, i8 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = icmp eq i8 %1, 45
+  %5 = select i1 %4, ptr %0, ptr %3
+  %6 = getelementptr nusw i8, ptr %5, i64 -1
+  ret ptr %6
+}
+
 ; 60 occurrences:
 ; abc/optimized/cbaBlast.c.ll
-; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/ASEParser.cpp.ll
 ; assimp/optimized/PlyLoader.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
-; git/optimized/sh-i18n--envsubst.ll
 ; hermes/optimized/CommandLine.cpp.ll
 ; lief/optimized/pem.c.ll
-; linux/optimized/pcmcia_cis.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/CGObjC.cpp.ll
 ; llvm/optimized/CommandLine.cpp.ll
@@ -47,6 +59,7 @@
 ; mold/optimized/main.cc.X86_64.cc.ll
 ; openssl/optimized/libapps-lib-opt.ll
 ; openssl/optimized/libtestutil-lib-opt.ll
+; openusd/optimized/dispatcher.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/TopologyToLevelSet.cc.ll
 ; postgres/optimized/brin_minmax_multi.ll
@@ -60,13 +73,15 @@
 ; tev/optimized/Common.cpp.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; z3/optimized/main.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000086(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func0000000000000187(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp eq i8 %1, 45
   %5 = select i1 %4, ptr %0, ptr %3
-  %6 = getelementptr nusw i8, ptr %5, i64 -1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 
@@ -76,12 +91,12 @@ entry:
 ; libquic/optimized/prtime.cc.ll
 ; php/optimized/php_pcre.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000092(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func0000000000000193(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ult i8 %1, 10
   %5 = select i1 %4, ptr %0, ptr %3
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 
@@ -89,24 +104,12 @@ entry:
 ; llvm/optimized/MemorySSA.cpp.ll
 ; llvm/optimized/MemorySSAUpdater.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000087(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func0000000000000107(ptr %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -96
   %4 = icmp eq i8 %1, 26
   %5 = select i1 %4, ptr %0, ptr %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openusd/optimized/dispatcher.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000c7(ptr %0, i8 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw i8, ptr %2, i64 144
-  %4 = icmp eq i8 %1, -1
-  %5 = select i1 %4, ptr %0, ptr %3
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 15
   ret ptr %6
 }
 
@@ -124,17 +127,16 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
-; linux/optimized/pcmcia_cis.ll
+; 2 occurrences:
 ; postgres/optimized/dependencies.ll
 ; postgres/optimized/mcv.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000084(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func0000000000000184(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 128
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp eq i8 %1, 0
   %5 = select i1 %4, ptr %0, ptr %3
-  %6 = getelementptr i8, ptr %5, i64 16
+  %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
 }
 

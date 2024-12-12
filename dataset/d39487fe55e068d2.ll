@@ -13,6 +13,9 @@
 ; assimp/optimized/UniqueNameGenerator.cpp.ll
 ; assimp/optimized/Value.cpp.ll
 ; assimp/optimized/X3DExporter.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/to_chars.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx.cpp.ll
@@ -362,8 +365,6 @@
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
@@ -544,8 +545,6 @@
 ; pocketpy/optimized/str.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/php_generator.cc.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
@@ -812,6 +811,7 @@
 ; yosys/optimized/cxxrtl_backend.ll
 ; yosys/optimized/fmt.ll
 ; z3/optimized/ast_smt2_pp.cpp.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
 ; zlib/optimized/adler32.c.ll
 ; zxing/optimized/DMWriter.cpp.ll
 ; zxing/optimized/ODCode39Writer.cpp.ll

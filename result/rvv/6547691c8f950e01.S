@@ -31,5 +31,5 @@ func000000000000003e:                   # @func000000000000003e
 	vwaddu.vx	v12, v11, a0
 	csrwi	vxrm, 2
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vaaddu.vv	v8, v12, v8
+	vaaddu.vv	v8, v8, v12
 	ret

@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; linux/optimized/dw.ll
+; 7 occurrences:
 ; luajit/optimized/lj_bcread.ll
 ; luajit/optimized/lj_bcread_dyn.ll
 ; luajit/optimized/lj_parse.ll

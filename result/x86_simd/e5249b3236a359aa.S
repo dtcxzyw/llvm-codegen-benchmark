@@ -20,7 +20,7 @@
 	.short	1                               # 0x1
 .LCPI0_3:
 	.short	32                              # 0x20
-func0000000000000174:                   # @func0000000000000174
+func00000000000002f4:                   # @func00000000000002f4
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpabsd	%ymm1, %ymm1
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm1, %k1

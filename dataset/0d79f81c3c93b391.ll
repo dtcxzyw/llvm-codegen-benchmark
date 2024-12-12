@@ -17,7 +17,7 @@ entry:
 ; php/optimized/php_http_parser.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000088(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -48
   %3 = add i16 %2, %0

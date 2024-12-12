@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	17                              # 0x11
-func00000000000003f1:                   # @func00000000000003f1
+func00000000000007e1:                   # @func00000000000007e1
 	vpsubq	%ymm0, %ymm1, %ymm2
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3

@@ -1,0 +1,9 @@
+.LCPI0_0:
+	.quad	1                               # 0x1
+func0000000000000005:                   # @func0000000000000005
+	vpbroadcastq	.LCPI0_0(%rip), %ymm2   # ymm2 = [1,1,1,1]
+	vpmaxuq	%ymm2, %ymm1, %ymm1
+	vpmullq	%ymm1, %ymm1, %ymm1
+	vpmaxuq	%ymm2, %ymm0, %ymm0
+	vpmullq	%ymm0, %ymm1, %ymm0
+	retq

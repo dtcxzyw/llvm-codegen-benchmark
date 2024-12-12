@@ -18,3 +18,8 @@ func0000000000000014:                   # @func0000000000000014
 	testw	%di, %di
 	setns	%al
 	retq
+func0000000000000030:                   # @func0000000000000030
+	movzwl	%di, %eax
+	cmpl	$16384, %eax                    # imm = 0x4000
+	setae	%al
+	retq

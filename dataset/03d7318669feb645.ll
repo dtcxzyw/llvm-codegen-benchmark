@@ -1,11 +1,10 @@
 
-; 4 occurrences:
-; hermes/optimized/escape.cpp.ll
+; 3 occurrences:
 ; icu/optimized/ucnv_bld.ll
 ; stb/optimized/stb_ds.c.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000211(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000821(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = icmp eq ptr %1, null
@@ -19,7 +18,7 @@ entry:
 ; cpython/optimized/listobject.ll
 ; linux/optimized/gup.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr ptr, ptr %1, i64 %2
   %4 = icmp eq ptr %1, null

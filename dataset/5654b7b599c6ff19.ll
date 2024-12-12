@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; actix-rs/optimized/1a89q5mj3jl9opyq.ll
 ; actix-rs/optimized/1flt9r9cbevpwous.ll
 ; actix-rs/optimized/1h6chd9qxbb3rt70.ll
@@ -14,6 +14,7 @@
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/src.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; influxdb-rs/optimized/54bldmpi534adbqh.ll
 ; llvm/optimized/xxhash.cpp.ll
@@ -34,7 +35,7 @@ entry:
   %2 = lshr i128 %1, 64
   %3 = xor i128 %2, %1
   %4 = trunc i128 %3 to i64
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 

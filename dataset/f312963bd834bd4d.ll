@@ -7,7 +7,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 136
   %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -30,31 +30,31 @@ define i32 @func0000000000000063(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bblif.c.ll
 ; icu/optimized/regexcmp.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; flac/optimized/stream_encoder_framing.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; gromacs/optimized/colvarmodule.cpp.ll
-; linux/optimized/i915_driver.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
@@ -63,20 +63,8 @@ define i32 @func0000000000000060(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; openusd/optimized/ilmbase_half.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 8192
-  %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %1
-  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -88,20 +76,8 @@ define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 16384
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %1
-  %6 = or i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; linux/optimized/intel_guc_log.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 1
-  %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %1
-  %6 = or i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

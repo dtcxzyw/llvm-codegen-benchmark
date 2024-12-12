@@ -72,10 +72,10 @@
 ; openjdk/optimized/whitebox.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000068(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   %6 = select i1 %5, ptr %0, ptr %4
   ret ptr %6
@@ -84,10 +84,10 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/aom_scale.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ult ptr %4, %0
   %6 = select i1 %5, ptr %0, ptr %4
   ret ptr %6
@@ -100,10 +100,10 @@ entry:
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000068(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   %6 = select i1 %5, ptr %0, ptr %4
   ret ptr %6

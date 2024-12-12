@@ -19,14 +19,14 @@
 	.byte	8                               # 0x8
 func0000000000000003:                   # @func0000000000000003
 	vpmovdb	%ymm1, %xmm1
-	vpaddb	%xmm0, %xmm1, %xmm0
+	vpaddb	%xmm1, %xmm0, %xmm0
 	vpbroadcastb	.LCPI0_1(%rip), %xmm1   # xmm1 = [8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]
 	vpsubb	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 func0000000000000020:                   # @func0000000000000020
 	vpmovdb	%ymm1, %xmm1
-	vpaddb	%xmm0, %xmm1, %xmm0
+	vpaddb	%xmm1, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubb	%xmm0, %xmm1, %xmm0
 	vzeroupper
@@ -52,7 +52,7 @@ func0000000000000020:                   # @func0000000000000020
 	.byte	32                              # 0x20
 func0000000000000030:                   # @func0000000000000030
 	vpmovdb	%ymm1, %xmm1
-	vpaddb	%xmm0, %xmm1, %xmm0
+	vpaddb	%xmm1, %xmm0, %xmm0
 	vpbroadcastb	.LCPI2_1(%rip), %xmm1   # xmm1 = [32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32]
 	vpsubb	%xmm0, %xmm1, %xmm0
 	vzeroupper

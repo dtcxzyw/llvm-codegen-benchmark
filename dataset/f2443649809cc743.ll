@@ -19,10 +19,10 @@ entry:
 ; abc/optimized/luckyFast16.c.ll
 ; sentencepiece/optimized/int128.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1, i1 %2) #0 {
+define i32 @func0000000000000031(i32 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 32, i32 0
-  %4 = icmp ugt i64 %1, 65535
+  %4 = icmp samesign ugt i64 %1, 65535
   %5 = select i1 %4, i32 %0, i32 %3
   %6 = or disjoint i32 %5, 8
   ret i32 %6

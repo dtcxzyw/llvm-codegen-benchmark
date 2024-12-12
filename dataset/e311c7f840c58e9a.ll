@@ -46,7 +46,7 @@ entry:
   ret i64 %3
 }
 
-; 24 occurrences:
+; 28 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -71,6 +71,10 @@ entry:
 ; redis/optimized/linenoise.ll
 ; slurm/optimized/auth_munge.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; zed-rs/optimized/1mwyngh2duuoqbqyg0d7k37yf.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

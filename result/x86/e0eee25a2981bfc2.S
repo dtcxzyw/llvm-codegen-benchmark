@@ -1,7 +1,6 @@
 func0000000000000037:                   # @func0000000000000037
-	andl	$3, %esi
-	shll	$8, %esi
+	andl	$384, %esi                      # imm = 0x180
 	movzbl	%dil, %eax
-	orl	%esi, %eax
-	shll	$10, %eax
+	leal	(%rax,%rsi,2), %eax
+	shll	$16, %eax
 	retq

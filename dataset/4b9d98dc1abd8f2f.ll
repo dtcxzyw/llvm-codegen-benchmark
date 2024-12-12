@@ -4,7 +4,7 @@
 ; lief/optimized/exports_trie.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000c2c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %1, 1
@@ -19,7 +19,7 @@ entry:
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000c21(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %1, 1

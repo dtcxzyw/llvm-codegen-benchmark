@@ -76,17 +76,6 @@ entry:
 }
 
 ; 1 occurrences:
-; imgui/optimized/imgui.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c2(float %0, float %1, float %2) #0 {
-entry:
-  %3 = fcmp oge float %2, %1
-  %4 = fcmp olt float %0, %1
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; meshlab/optimized/transferfunction.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(float %0, float %1, float %2) #0 {

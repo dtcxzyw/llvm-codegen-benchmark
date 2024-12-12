@@ -19,10 +19,25 @@
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/ThreadPool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = add nsw i64 %2, 2
+  %4 = icmp slt i64 %3, %0
+  ret i1 %4
+}
+
+; 5 occurrences:
+; eastl/optimized/BenchmarkDeque.cpp.ll
+; eastl/optimized/BenchmarkTupleVector.cpp.ll
+; eastl/optimized/TestAlgorithm.cpp.ll
+; luau/optimized/isocline.c.ll
+; mitsuba3/optimized/bitmap.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e6(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 1
+  %3 = add nuw nsw i64 %2, 2
   %4 = icmp slt i64 %3, %0
   ret i1 %4
 }
@@ -58,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/serverenvironment.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ea(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 4
   %3 = add nuw nsw i64 %2, 16
@@ -87,7 +102,7 @@ entry:
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = add nsw i64 %2, -1
@@ -107,7 +122,7 @@ entry:
   ret i1 %4
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; brotli/optimized/encode.c.ll
@@ -119,7 +134,6 @@ entry:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; libevent/optimized/event.c.ll
-; linux/optimized/machine_kexec_64.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; nghttp2/optimized/nghttp2_map.c.ll
 ; openusd/optimized/bboxCache.cpp.ll
@@ -132,6 +146,8 @@ entry:
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -144,7 +160,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = add nsw i64 %2, 4
@@ -154,8 +170,6 @@ entry:
 
 ; 17 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
-; linux/optimized/reg.ll
-; ocio/optimized/FileFormatICC.cpp.ll
 ; qdrant-rs/optimized/3pzdaqjo344xoo11.ll
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; regex-rs/optimized/4sqmacerw61c696o.ll
@@ -170,8 +184,10 @@ entry:
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 6
   %3 = add nuw nsw i64 %2, 64
@@ -184,7 +200,7 @@ entry:
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = add nuw nsw i64 %2, 2
@@ -210,21 +226,18 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 9 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
-; eastl/optimized/TestHeap.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
-; llvm/optimized/COFFObjectFile.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
-; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e4(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = add nuw nsw i64 %2, 4
@@ -232,32 +245,16 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/RawImage.cpp.ll
-; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f5(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f5(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = add nuw nsw i64 %2, 4
-  %4 = icmp ule i64 %3, %0
-  ret i1 %4
-}
-
-; 5 occurrences:
-; cmake/optimized/stream.c.ll
-; eastl/optimized/BenchmarkDeque.cpp.ll
-; eastl/optimized/BenchmarkTupleVector.cpp.ll
-; eastl/optimized/TestAlgorithm.cpp.ll
-; luau/optimized/isocline.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f6(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw nsw i64 %1, 1
-  %3 = add nuw nsw i64 %2, 2
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp samesign ule i64 %3, %0
   ret i1 %4
 }
 
@@ -275,11 +272,24 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; eastl/optimized/TestHeap.cpp.ll
+; llvm/optimized/COFFObjectFile.cpp.ll
+; wireshark/optimized/packet-nvme.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001f4(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 1
+  %3 = add nuw nsw i64 %2, 8
+  %4 = icmp samesign ult i64 %3, %0
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = add nsw i64 %2, -4
@@ -290,7 +300,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/cdef.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ec(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 4
   %3 = add nuw nsw i64 %2, 16
@@ -298,10 +308,44 @@ entry:
   ret i1 %4
 }
 
+; 10 occurrences:
+; linux/optimized/reg.ll
+; ocio/optimized/FileFormatICC.cpp.ll
+; typst-rs/optimized/18i60ist7isq7y2m.ll
+; typst-rs/optimized/1ojadsqfk0rsifsx.ll
+; typst-rs/optimized/2lj01bfl72moc27l.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001f8(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 2
+  %3 = add nuw nsw i64 %2, 4
+  %4 = icmp samesign ugt i64 %3, %0
+  ret i1 %4
+}
+
+; 4 occurrences:
+; typst-rs/optimized/53ug9lwflkq7ucu8.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 2
+  %3 = add nuw i64 %2, 4
+  %4 = icmp ugt i64 %3, %0
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; linux/optimized/i915_query.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
   %3 = add nsw i64 %2, 48
@@ -312,7 +356,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/formattedval_iterimpl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = add nuw nsw i64 %2, 4
@@ -321,20 +365,20 @@ entry:
 }
 
 ; 1 occurrences:
-; typst-rs/optimized/53ug9lwflkq7ucu8.ll
+; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e5(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 1
-  %3 = add nuw i64 %2, 2
-  %4 = icmp ugt i64 %3, %0
+  %2 = shl nuw nsw i64 %1, 1
+  %3 = add nuw nsw i64 %2, 12
+  %4 = icmp ule i64 %3, %0
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; xgboost/optimized/comm.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 6
   %3 = add nuw nsw i64 %2, 64
@@ -351,7 +395,7 @@ entry:
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = add nsw i64 %2, 2
@@ -362,7 +406,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = add nuw i64 %2, 2
@@ -373,7 +417,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/arraymodule.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 16
   %3 = add nuw nsw i64 %2, 65536

@@ -1,10 +1,8 @@
 
-%struct.ExprEvalStep.3470120 = type { i64, ptr, ptr, %union.anon.3470121 }
-%union.anon.3470121 = type { %struct.anon.22.3470122 }
-%struct.anon.22.3470122 = type { ptr, ptr, i32, i32, ptr, ptr }
-%struct.Vector3.3609444 = type { float, float, float }
+%"class.colvarmodule::rvector.3353209" = type { double, double, double }
+%struct.Vector3.3789992 = type { float, float, float }
 
-; 599 occurrences:
+; 549 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -25,6 +23,8 @@
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DImporter_Metadata.cpp.ll
+; boost/optimized/options_description.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/fmu.cpp.ll
@@ -50,7 +50,6 @@
 ; cmake/optimized/cmInstallCommand.cxx.ll
 ; csmith/optimized/ArrayVariable.cpp.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
-; csmith/optimized/FunctionInvocationUser.cpp.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/attempt_solution_simplex.cpp.ll
 ; cvc5/optimized/congruence_manager.cpp.ll
@@ -131,7 +130,6 @@
 ; hyperscan/optimized/ng_redundancy.cpp.ll
 ; ipopt/optimized/IpCompoundMatrix.ll
 ; ipopt/optimized/IpCompoundSymMatrix.ll
-; jsonnet/optimized/vm.cpp.ll
 ; lightgbm/optimized/c_api.cpp.ll
 ; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
@@ -168,7 +166,6 @@
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/mesh_model_state.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -195,12 +192,10 @@
 ; nix/optimized/command.ll
 ; nix/optimized/common-args.ll
 ; nix/optimized/config-check.ll
-; nix/optimized/config.ll
 ; nix/optimized/current-process.ll
 ; nix/optimized/daemon.ll
 ; nix/optimized/derivation-add.ll
 ; nix/optimized/derivation-goal.ll
-; nix/optimized/derivation.ll
 ; nix/optimized/derivations.ll
 ; nix/optimized/develop.ll
 ; nix/optimized/diff-closures.ll
@@ -246,7 +241,6 @@
 ; nix/optimized/installable-value.ll
 ; nix/optimized/installables.ll
 ; nix/optimized/json-to-value.ll
-; nix/optimized/json-utils.ll
 ; nix/optimized/legacy-ssh-store.ll
 ; nix/optimized/lexer-tab.ll
 ; nix/optimized/local-binary-cache-store.ll
@@ -265,19 +259,14 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
 ; nix/optimized/path-from-hash-part.ll
-; nix/optimized/path-info.ll
 ; nix/optimized/pathlocks.ll
 ; nix/optimized/personality.ll
 ; nix/optimized/posix-fs-canonicalise.ll
@@ -327,38 +316,8 @@
 ; nix/optimized/verify.ll
 ; nix/optimized/why-depends.ll
 ; nix/optimized/worker.ll
-; nlohmann_json/optimized/unit-alt-string.cpp.ll
-; nlohmann_json/optimized/unit-binary_formats.cpp.ll
-; nlohmann_json/optimized/unit-bjdata.cpp.ll
-; nlohmann_json/optimized/unit-bson.cpp.ll
-; nlohmann_json/optimized/unit-cbor.cpp.ll
-; nlohmann_json/optimized/unit-class_parser.cpp.ll
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
-; nlohmann_json/optimized/unit-deserialization.cpp.ll
-; nlohmann_json/optimized/unit-diagnostics.cpp.ll
-; nlohmann_json/optimized/unit-disabled_exceptions.cpp.ll
-; nlohmann_json/optimized/unit-inspection.cpp.ll
-; nlohmann_json/optimized/unit-json_patch.cpp.ll
-; nlohmann_json/optimized/unit-json_pointer.cpp.ll
-; nlohmann_json/optimized/unit-large_json.cpp.ll
-; nlohmann_json/optimized/unit-merge_patch.cpp.ll
-; nlohmann_json/optimized/unit-msgpack.cpp.ll
-; nlohmann_json/optimized/unit-readme.cpp.ll
-; nlohmann_json/optimized/unit-regression1.cpp.ll
-; nlohmann_json/optimized/unit-regression2.cpp.ll
-; nlohmann_json/optimized/unit-testsuites.cpp.ll
-; nlohmann_json/optimized/unit-ubjson.cpp.ll
-; nlohmann_json/optimized/unit-udl.cpp.ll
-; nlohmann_json/optimized/unit-udt.cpp.ll
-; nlohmann_json/optimized/unit-udt_macro.cpp.ll
-; nlohmann_json/optimized/unit-unicode1.cpp.ll
-; nlohmann_json/optimized/unit-unicode2.cpp.ll
-; nlohmann_json/optimized/unit-unicode3.cpp.ll
-; nlohmann_json/optimized/unit-unicode4.cpp.ll
-; nlohmann_json/optimized/unit-unicode5.cpp.ll
-; nlohmann_json/optimized/unit-user_defined_input.cpp.ll
-; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/bindings_onnx.cpp.ll
 ; opencv/optimized/bitmatrix.cpp.ll
@@ -414,9 +373,6 @@
 ; openspiel/optimized/leduc_poker.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; openspiel/optimized/sheriff.cc.ll
-; openssl/optimized/clienthellotest-bin-clienthellotest.ll
-; openssl/optimized/servername_test-bin-servername_test.ll
-; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; openusd/optimized/bakeSkinning.cpp.ll
 ; openusd/optimized/changes.cpp.ll
@@ -429,17 +385,10 @@
 ; openusd/optimized/testJsConverter.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; ozz-animation/optimized/animation_optimizer.cc.ll
-; ozz-animation/optimized/gltf2ozz.cc.ll
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pbrt-v4/optimized/plytool.cpp.ll
-; pocketpy/optimized/vm.cpp.ll
-; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
-; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -517,7 +466,6 @@
 ; quantlib/optimized/fdm3dimsolver.ll
 ; quantlib/optimized/fdmarithmeticaveragecondition.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dcapfloorengine.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
@@ -564,7 +512,6 @@
 ; soc-simulator/optimized/sim_mycpu.ll
 ; spike/optimized/debug_module.ll
 ; stockfish/optimized/tbprobe.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/PeeledEncoding.cpp.ll
 ; velox/optimized/SimpleFunctionRegistry.cpp.ll
@@ -598,6 +545,7 @@
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/test_cell.ll
 ; yosys/optimized/torder.ll
+; yosys/optimized/verilog_backend.ll
 ; zxing/optimized/ODCodabarWriter.cpp.ll
 ; zxing/optimized/ODCode128Writer.cpp.ll
 ; zxing/optimized/ODCode93Writer.cpp.ll
@@ -614,15 +562,24 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
+; 3 occurrences:
+; openssl/optimized/clienthellotest-bin-clienthellotest.ll
+; openssl/optimized/servername_test-bin-servername_test.ll
+; openssl/optimized/sslapitest-bin-sslapitest.ll
+; Function Attrs: nounwind
+define ptr @func000000000000008f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %.inv = icmp ult i64 %2, 34
+  %3 = select i1 %.inv, i64 0, i64 34
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 3 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
-; gromacs/optimized/colvartypes.cpp.ll
-; gromacs/optimized/dssp.cpp.ll
-; hermes/optimized/BigIntSupport.cpp.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
-; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
-; wasmtime-rs/optimized/3tddp02mhmdocq2m.ll
-; wolfssl/optimized/internal.c.ll
+; protobuf/optimized/arena.cc.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -633,7 +590,82 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
+; 63 occurrences:
+; boost/optimized/options_description.ll
+; csmith/optimized/FunctionInvocationUser.cpp.ll
+; cvc5/optimized/query_generator_sample_sat.cpp.ll
+; cvc5/optimized/regexp_elim.cpp.ll
+; cvc5/optimized/term_formula_removal.cpp.ll
+; cvc5/optimized/theory_preprocessor.cpp.ll
+; draco/optimized/sequential_integer_attribute_decoder.cc.ll
+; hermes/optimized/OSCompatPosix.cpp.ll
+; jsonnet/optimized/vm.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nix/optimized/binary-cache-store.ll
+; nix/optimized/cache.ll
+; nix/optimized/config.ll
+; nix/optimized/derivation-add.ll
+; nix/optimized/derivation.ll
+; nix/optimized/develop.ll
+; nix/optimized/github.ll
+; nix/optimized/json-to-value.ll
+; nix/optimized/json-utils.ll
+; nix/optimized/lockfile.ll
+; nix/optimized/nar-accessor.ll
+; nix/optimized/nar-info.ll
+; nix/optimized/parsed-derivations.ll
+; nix/optimized/path-info.ll
+; nix/optimized/profile.ll
+; nlohmann_json/optimized/unit-alt-string.cpp.ll
+; nlohmann_json/optimized/unit-binary_formats.cpp.ll
+; nlohmann_json/optimized/unit-bjdata.cpp.ll
+; nlohmann_json/optimized/unit-bson.cpp.ll
+; nlohmann_json/optimized/unit-cbor.cpp.ll
+; nlohmann_json/optimized/unit-class_parser.cpp.ll
+; nlohmann_json/optimized/unit-deserialization.cpp.ll
+; nlohmann_json/optimized/unit-diagnostics.cpp.ll
+; nlohmann_json/optimized/unit-disabled_exceptions.cpp.ll
+; nlohmann_json/optimized/unit-inspection.cpp.ll
+; nlohmann_json/optimized/unit-json_patch.cpp.ll
+; nlohmann_json/optimized/unit-json_pointer.cpp.ll
+; nlohmann_json/optimized/unit-large_json.cpp.ll
+; nlohmann_json/optimized/unit-merge_patch.cpp.ll
+; nlohmann_json/optimized/unit-msgpack.cpp.ll
+; nlohmann_json/optimized/unit-readme.cpp.ll
+; nlohmann_json/optimized/unit-regression1.cpp.ll
+; nlohmann_json/optimized/unit-regression2.cpp.ll
+; nlohmann_json/optimized/unit-testsuites.cpp.ll
+; nlohmann_json/optimized/unit-ubjson.cpp.ll
+; nlohmann_json/optimized/unit-udl.cpp.ll
+; nlohmann_json/optimized/unit-udt.cpp.ll
+; nlohmann_json/optimized/unit-udt_macro.cpp.ll
+; nlohmann_json/optimized/unit-unicode1.cpp.ll
+; nlohmann_json/optimized/unit-unicode2.cpp.ll
+; nlohmann_json/optimized/unit-unicode3.cpp.ll
+; nlohmann_json/optimized/unit-unicode4.cpp.ll
+; nlohmann_json/optimized/unit-unicode5.cpp.ll
+; nlohmann_json/optimized/unit-user_defined_input.cpp.ll
+; nlohmann_json/optimized/unit-wstring.cpp.ll
+; openspiel/optimized/deep_sea.cc.ll
+; openspiel/optimized/sheriff.cc.ll
+; ozz-animation/optimized/gltf2ozz.cc.ll
+; pocketpy/optimized/vm.cpp.ll
+; proj/optimized/defmodel.cpp.ll
+; proj/optimized/tinshift.cpp.ll
+; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000008e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, -9223372036854775808
+  %4 = select i1 %3, i64 -8, i64 0
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %1
+  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 4 occurrences:
+; brotli/optimized/backward_references_hq.c.ll
 ; cpython/optimized/listobject.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; velox/optimized/TypeCalculation.yy.cc.ll
@@ -647,6 +679,24 @@ entry:
   ret ptr %6
 }
 
+; 7 occurrences:
+; eastl/optimized/TestBitVector.cpp.ll
+; gromacs/optimized/dssp.cpp.ll
+; openusd/optimized/faceVertex.cpp.ll
+; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
+; wasmtime-rs/optimized/3tddp02mhmdocq2m.ll
+; zed-rs/optimized/7vgle1vcww8f84ro2xl2r2u8f.ll
+; zed-rs/optimized/a48ncfl2mo4yu8srnhcxrs0e7.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, -9223372036854775808
+  %4 = select i1 %3, i64 8, i64 0
+  %5 = getelementptr nusw { i64, [5 x i64] }, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; Function Attrs: nounwind
@@ -657,6 +707,19 @@ entry:
   %4 = getelementptr i32, ptr %0, i64 %1
   %5 = getelementptr i32, ptr %4, i64 %3
   ret ptr %5
+}
+
+; 2 occurrences:
+; eastl/optimized/TestBitVector.cpp.ll
+; hermes/optimized/BigIntSupport.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i64 -24, i64 -16
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %1
+  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  ret ptr %6
 }
 
 ; 10 occurrences:
@@ -680,15 +743,30 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
-; postgres/optimized/execExpr.ll
+; 2 occurrences:
+; gromacs/optimized/colvartypes.cpp.ll
+; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp eq i64 %2, 63
-  %4 = select i1 %3, i64 40, i64 24
-  %5 = getelementptr %struct.ExprEvalStep.3470120, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %3 = icmp eq i64 %2, 2
+  %4 = select i1 %3, i64 16, i64 0
+  %5 = getelementptr nusw nuw %"class.colvarmodule::rvector.3353209", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 3 occurrences:
+; postgres/optimized/execExpr.ll
+; zed-rs/optimized/7vgle1vcww8f84ro2xl2r2u8f.ll
+; zed-rs/optimized/a48ncfl2mo4yu8srnhcxrs0e7.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, -9223372036854775808
+  %4 = select i1 %3, i64 44, i64 52
+  %5 = getelementptr { i64, [12 x i64] }, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -696,11 +774,11 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rshapes.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 -24, i64 -12
-  %5 = getelementptr nusw %struct.Vector3.3609444, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %struct.Vector3.3789992, ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }

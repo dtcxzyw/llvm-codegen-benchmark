@@ -29,7 +29,7 @@ func0000000000000018:                   # @func0000000000000018
 	andb	$1, %al
 	retq
 func0000000000000010:                   # @func0000000000000010
-	cmpl	$385, %esi                      # imm = 0x181
+	cmpl	$429496730, %esi                # imm = 0x1999999A
 	setae	%al
 	orb	%dil, %al
 	andb	$1, %al

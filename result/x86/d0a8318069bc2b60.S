@@ -28,5 +28,5 @@ func0000000000000019:                   # @func0000000000000019
 	retq
 func0000000000000006:                   # @func0000000000000006
 	shll	$5, %esi
-	leal	1(%rsi,%rdi), %eax
+	leal	1(%rdi,%rsi), %eax
 	retq

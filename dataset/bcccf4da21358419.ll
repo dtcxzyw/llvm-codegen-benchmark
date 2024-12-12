@@ -12,8 +12,11 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
+; boost/optimized/basic_text_iprimitive.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
 ; linux/optimized/decompress_bunzip2.ll
 ; openusd/optimized/reconinter.c.ll
 ; Function Attrs: nounwind

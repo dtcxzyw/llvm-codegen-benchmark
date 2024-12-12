@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 24 occurrences:
 ; abc/optimized/ifMan.c.ll
 ; abc/optimized/ivyDsd.c.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -8,7 +8,6 @@
 ; linux/optimized/fops.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/ldt.ll
@@ -23,7 +22,6 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; postgres/optimized/utf8_and_gb18030.ll
 ; protobuf/optimized/tokenizer.cc.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; Function Attrs: nounwind

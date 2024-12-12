@@ -1,12 +1,11 @@
 
-; 57 occurrences:
+; 56 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatOld.c.ll
 ; abc/optimized/giaCSatP.c.ll
 ; abc/optimized/giaCTas.c.ll
 ; assimp/optimized/zip.c.ll
-; clamav/optimized/autoit.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; hermes/optimized/zip.c.ll
 ; libquic/optimized/a_int.c.ll
@@ -35,11 +34,11 @@
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/X86AsmBackend.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; openjdk/optimized/g1ConcurrentMark.ll
@@ -66,13 +65,12 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
-; freetype/optimized/ftbase.c.ll
+; 3 occurrences:
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; openjdk/optimized/cmsalpha.ll
 ; wireshark/optimized/packet-usb-hid.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 6
   %3 = icmp ne i32 %2, 0
@@ -88,7 +86,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 12
   %3 = icmp eq i32 %2, 0
@@ -109,6 +107,17 @@ entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
   ret i1 %4
+}
+
+; 1 occurrences:
+; freetype/optimized/ftbase.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %1, 134217727
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

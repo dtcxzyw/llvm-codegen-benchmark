@@ -1,20 +1,24 @@
 
-; 185 occurrences:
+; 190 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRefactor.c.ll
 ; abc/optimized/abcSpeedup.c.ll
+; abc/optimized/amapPerm.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/fxuReduce.c.ll
+; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaKf.c.ll
 ; abc/optimized/giaMfs.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/ifDec75.c.ll
+; abc/optimized/ifMap.c.ll
 ; abc/optimized/ioReadBlif.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -84,7 +88,6 @@
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/pci-driver.ll
 ; linux/optimized/pci-sysfs.ll
-; linux/optimized/pci_hotplug_core.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/seccomp.ll
 ; linux/optimized/selinuxfs.ll
@@ -96,6 +99,8 @@
 ; lua/optimized/ltm.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -111,6 +116,7 @@
 ; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/kdtree.cpp.ll
+; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
@@ -163,7 +169,6 @@
 ; postgres/optimized/mvdistinct.ll
 ; postgres/optimized/varlena.ll
 ; postgres/optimized/walsummarizer.ll
-; proj/optimized/factory.cpp.ll
 ; qemu/optimized/block_mirror.c.ll
 ; qemu/optimized/block_nvme.c.ll
 ; qemu/optimized/util_thread-context.c.ll

@@ -17,7 +17,7 @@ entry:
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000061(i128 %0, i128 %1) #0 {
 entry:
   %2 = or i128 %0, %1
   %3 = icmp eq i128 %2, 0
@@ -133,7 +133,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000041(i128 %0, i128 %1) #0 {
 entry:
   %2 = or i128 %0, %1
   %3 = icmp eq i128 %2, 0
@@ -151,39 +151,62 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
+; boost/optimized/approximately_equals.ll
+; wolfssl/optimized/sp_int.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i128 %0, i128 %1) #0 {
+entry:
+  %2 = add nuw i128 %0, %1
+  %3 = icmp ult i128 %2, 18446744073709551616
+  ret i1 %3
+}
+
+; 4 occurrences:
+; boost/optimized/approximately_equals.ll
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/47jrn73ttlkllmrg.ll
 ; wasmtime-rs/optimized/51r9csr3d9dou1a2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000078(i128 %0, i128 %1) #0 {
 entry:
   %2 = add nuw nsw i128 %0, %1
+  %3 = icmp samesign ugt i128 %2, 18446744073709551615
+  ret i1 %3
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i128 %0, i128 %1) #0 {
+entry:
+  %2 = add nuw i128 %0, %1
   %3 = icmp ugt i128 %2, 18446744073709551615
   ret i1 %3
 }
 
-; 5 occurrences:
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i128 %0, i128 %1) #0 {
+entry:
+  %2 = sub i128 0, %1
+  %3 = icmp eq i128 %0, %2
+  ret i1 %3
+}
+
+; 6 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
 ; tokio-rs/optimized/4brh9kql6tjayli1.ll
 ; tokio-rs/optimized/um69cc05lgsv45r.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000074(i128 %0, i128 %1) #0 {
 entry:
   %2 = add nuw nsw i128 %0, %1
-  %3 = icmp ult i128 %2, 18446744073709551616
-  ret i1 %3
-}
-
-; 1 occurrences:
-; wolfssl/optimized/sp_int.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i128 %0, i128 %1) #0 {
-entry:
-  %2 = add nuw i128 %0, %1
-  %3 = icmp ult i128 %2, 18446744073709551616
+  %3 = icmp samesign ult i128 %2, 18446744073709551616
   ret i1 %3
 }
 

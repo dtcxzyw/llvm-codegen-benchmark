@@ -8,8 +8,3 @@ func0000000000000018:                   # @func0000000000000018
 	orl	%edi, %eax
 	shlq	$32, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	shlxq	%rdx, %rsi, %rax
-	orl	%edi, %eax
-	shlq	$32, %rax
-	retq

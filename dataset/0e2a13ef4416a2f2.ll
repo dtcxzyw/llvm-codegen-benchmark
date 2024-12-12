@@ -1,25 +1,4 @@
 
-; 11 occurrences:
-; abc/optimized/bacWriteVer.c.ll
-; crow/optimized/example.cpp.ll
-; luajit/optimized/lj_strfmt_num.ll
-; luajit/optimized/lj_strfmt_num_dyn.ll
-; opencv/optimized/freetype.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
-; openjdk/optimized/mlib_c_ImageAffine_BL.ll
-; ruby/optimized/japanese.ll
-; wireshark/optimized/packet-mp2t.c.ll
-; yosys/optimized/verilog_backend.ll
-; zxing/optimized/DMHighLevelEncoder.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
-  %5 = trunc i32 %4 to i8
-  ret i8 %5
-}
-
 ; 2 occurrences:
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -32,8 +11,9 @@ entry:
   ret i8 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/lpkSets.c.ll
+; boost/optimized/src.ll
 ; brotli/optimized/transform.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; cpython/optimized/_codecs_jp.ll
@@ -60,7 +40,27 @@ entry:
   ret i8 %5
 }
 
-; 27 occurrences:
+; 10 occurrences:
+; abc/optimized/bacWriteVer.c.ll
+; crow/optimized/example.cpp.ll
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; opencv/optimized/freetype.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; openjdk/optimized/mlib_c_ImageAffine_BL.ll
+; wireshark/optimized/packet-mp2t.c.ll
+; yosys/optimized/verilog_backend.ll
+; zxing/optimized/DMHighLevelEncoder.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add nsw i32 %0, %3
+  %5 = trunc i32 %4 to i8
+  ret i8 %5
+}
+
+; 28 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/Bra.c.ll
 ; cmake/optimized/powerpc.c.ll
@@ -75,6 +75,7 @@ entry:
 ; linux/optimized/xarray.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/function.pb.cc.ll
 ; opencv/optimized/graph.pb.cc.ll
@@ -109,8 +110,9 @@ entry:
   ret i8 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/src.ll
 ; hermes/optimized/zip.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; nuklear/optimized/unity.c.ll
@@ -159,6 +161,28 @@ entry:
   ret i8 %5
 }
 
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i8 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add nuw nsw i32 %3, %0
+  %5 = trunc i32 %4 to i8
+  ret i8 %5
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000012(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add i32 %0, %3
+  %5 = trunc nuw i32 %4 to i8
+  ret i8 %5
+}
+
 ; 3 occurrences:
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
@@ -200,7 +224,7 @@ entry:
 define i8 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }

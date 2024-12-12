@@ -16,7 +16,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bio_dump.ll
 ; openssl/optimized/libcrypto-shlib-bio_dump.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f6(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001e6(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, %0
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %0
@@ -56,7 +56,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; velox/optimized/NthValue.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %0
@@ -83,10 +83,10 @@ entry:
 ; openusd/optimized/meshUtil.cpp.ll
 ; postgres/optimized/tsquery.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp slt i64 %4, %5
   ret i1 %6
@@ -96,10 +96,10 @@ entry:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp ult i64 %4, %5
   ret i1 %6
@@ -109,7 +109,7 @@ entry:
 ; darktable/optimized/print_settings.c.ll
 ; protobuf/optimized/enum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 68
   %4 = add nsw i64 %3, %0
@@ -130,13 +130,32 @@ entry:
   ret i1 %6
 }
 
+; 8 occurrences:
+; arrow/optimized/builder_run_end.cc.ll
+; arrow/optimized/ree_util.cc.ll
+; gromacs/optimized/gmx_disre.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; nuttx/optimized/lib_strtold.c.ll
+; openblas/optimized/dlatms.c.ll
+; openblas/optimized/dlatmt.c.ll
+; postgres/optimized/tsquery.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a6(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, -1
+  %4 = add nsw i64 %3, %0
+  %5 = sext i32 %1 to i64
+  %6 = icmp slt i64 %4, %5
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; oiio/optimized/imageinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e6(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001c6(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp slt i64 %4, %5
   ret i1 %6
@@ -147,27 +166,9 @@ entry:
 ; yosys/optimized/proc_mux.ll
 ; yosys/optimized/setundef.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a6(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nsw i64 %3, %0
-  %5 = sext i32 %1 to i64
-  %6 = icmp slt i64 %4, %5
-  ret i1 %6
-}
-
-; 7 occurrences:
-; arrow/optimized/builder_run_end.cc.ll
-; arrow/optimized/ree_util.cc.ll
-; gromacs/optimized/gmx_disre.cpp.ll
-; nuttx/optimized/lib_strtold.c.ll
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
-; postgres/optimized/tsquery.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %2, 1
   %4 = add nsw i64 %3, %0
   %5 = sext i32 %1 to i64
   %6 = icmp slt i64 %4, %5
@@ -177,10 +178,10 @@ entry:
 ; 1 occurrences:
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000106(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp slt i64 %4, %5
   ret i1 %6
@@ -201,10 +202,10 @@ entry:
 ; 1 occurrences:
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp ult i64 %4, %5
   ret i1 %6
@@ -214,7 +215,7 @@ entry:
 ; linux/optimized/drm_displayid.ll
 ; linux/optimized/drm_edid.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 3
   %4 = add nsw i64 %3, %0
@@ -226,7 +227,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/control.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000010a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 320
   %4 = add i64 %3, %0
@@ -238,7 +239,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000057(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a7(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 16
   %4 = add nsw i64 %3, %0
@@ -250,7 +251,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/descriptor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = add nsw i64 %3, %0
@@ -274,7 +275,7 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/chunk.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %0

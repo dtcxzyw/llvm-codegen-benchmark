@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	$2147483647, %edi               # imm = 0x7FFFFFFF
 	sete	%al
 	retq
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	shll	$2, %edi
 	addl	$-8, %edi
 	setns	%al

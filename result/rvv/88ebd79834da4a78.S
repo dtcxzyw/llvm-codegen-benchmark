@@ -7,7 +7,7 @@ func0000000000000004:                   # @func0000000000000004
 	vmv.v.x	v10, a0
 	lui	a0, 196608
 	vmerge.vxm	v10, v10, a0, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	lui	a0, 16384
 	vor.vx	v8, v8, a0
 	ret
@@ -40,7 +40,7 @@ func0000000000000005:                   # @func0000000000000005
 	vmv.v.x	v10, a0
 	li	a0, 16
 	vmerge.vxm	v10, v10, a0, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	li	a0, 128
 	vor.vx	v8, v8, a0
 	ret

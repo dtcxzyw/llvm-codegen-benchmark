@@ -37,7 +37,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 3
   %4 = add i32 %3, 128
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

@@ -9,14 +9,8 @@ func0000000000000001:                   # @func0000000000000001
 	orw	%si, %di
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	orl	%edx, %esi
 	orw	%si, %di
 	sete	%al
-	retq
-func0000000000000034:                   # @func0000000000000034
-	orl	%edx, %esi
-	orl	%edi, %esi
-	cmpw	$13, %si
-	setb	%al
 	retq

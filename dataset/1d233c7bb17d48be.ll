@@ -27,30 +27,4 @@ entry:
   ret ptr %7
 }
 
-; 1 occurrences:
-; opencv/optimized/emd.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000001ba(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = shl nsw i64 %1, 3
-  %4 = getelementptr nusw i8, ptr %2, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
-  %6 = shl nuw nsw i64 %1, 4
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
-  ret ptr %7
-}
-
-; 1 occurrences:
-; opencv/optimized/emd.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000039a(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %1, 4
-  %4 = getelementptr nusw i8, ptr %2, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
-  %6 = shl nsw i64 %1, 3
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
-  ret ptr %7
-}
-
 attributes #0 = { nounwind }

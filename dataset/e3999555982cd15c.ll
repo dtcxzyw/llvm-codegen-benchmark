@@ -1,8 +1,11 @@
 
-; 252 occurrences:
+; 241 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
+; boost/optimized/cstdio.ll
+; boost/optimized/directory.ll
+; boost/optimized/test_stackstring.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/dense_sparse_matrix.cc.ll
@@ -10,7 +13,6 @@
 ; ceres/optimized/power_series_expansion_preconditioner.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
-; ceres/optimized/visibility_based_preconditioner.cc.ll
 ; cmake/optimized/cmCMakePathCommand.cxx.ll
 ; cmake/optimized/cmListCommand.cxx.ll
 ; cmake/optimized/cmStringCommand.cxx.ll
@@ -33,11 +35,7 @@
 ; eastl/optimized/TestSort.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
-; entt/optimized/benchmark.cpp.ll
-; entt/optimized/group.cpp.ll
-; entt/optimized/registry.cpp.ll
 ; entt/optimized/storage.cpp.ll
-; entt/optimized/view.cpp.ll
 ; faiss/optimized/IndexIVFSpectralHash.cpp.ll
 ; faiss/optimized/IndexLSH.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
@@ -48,19 +46,16 @@
 ; gromacs/optimized/gen_ad.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/indexutil.cpp.ll
-; gromacs/optimized/lifetime.cpp.ll
 ; gromacs/optimized/muParserTokenReader.cpp.ll
 ; gromacs/optimized/params.cpp.ll
 ; gromacs/optimized/splitter.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/Exceptions.cpp.ll
 ; hermes/optimized/JSObject.cpp.ll
-; hyperscan/optimized/ng_calc_components.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; ipopt/optimized/IpTNLPReducer.ll
 ; libphonenumber/optimized/phonenumberutil.cc.ll
 ; libquic/optimized/histogram.cc.ll
-; libquic/optimized/persistent_histogram_allocator.cc.ll
 ; lightgbm/optimized/config.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; linux/optimized/callback_xdr.ll
@@ -72,7 +67,6 @@
 ; llvm/optimized/AccelTable.cpp.ll
 ; llvm/optimized/CalledOnceCheck.cpp.ll
 ; llvm/optimized/CodeGenSchedule.cpp.ll
-; llvm/optimized/DFAJumpThreading.cpp.ll
 ; llvm/optimized/DependenceGraphBuilder.cpp.ll
 ; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
@@ -119,7 +113,6 @@
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; ninja/optimized/build_test.cc.ll
 ; nix/optimized/attr-set.ll
 ; ocio/optimized/CTFReaderHelper.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
@@ -168,15 +161,12 @@
 ; proxygen/optimized/QPACKEncoder.cpp.ll
 ; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; proxygen/optimized/StaticHeaderTable.cpp.ll
-; pybind11/optimized/test_stl.cpp.ll
 ; qemu/optimized/ui_input-barrier.c.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/schedule.ll
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/prog.cc.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
-; rocksdb/optimized/seqno_to_time_mapping.cc.ll
-; rocksdb/optimized/stringappend2.cc.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/util.ll
 ; spike/optimized/interactive.ll
@@ -187,7 +177,6 @@
 ; verilator/optimized/V3EmitCConstPool.cpp.ll
 ; verilator/optimized/V3EmitCSyms.cpp.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
-; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
@@ -253,7 +242,7 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0) #0 {
+define i1 @func00000000000000a4(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 32
   %2 = add nsw i64 %1, -2
@@ -300,7 +289,7 @@ entry:
 ; ruby/optimized/time.ll
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = ashr i64 %0, 1
   %2 = add nsw i64 %1, -86401
@@ -468,14 +457,14 @@ entry:
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/symmetry_reduce_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %.mask = and i64 %0, -8
   %1 = icmp eq i64 %.mask, 16
   ret i1 %1
 }
 
-; 247 occurrences:
+; 243 occurrences:
 ; abseil-cpp/optimized/statusor_test.cc.ll
 ; arrow/optimized/builder_binary.cc.ll
 ; arrow/optimized/chunk_resolver.cc.ll
@@ -490,6 +479,10 @@ entry:
 ; assimp/optimized/IRRLoader.cpp.ll
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/collate.ll
+; boost/optimized/env.ll
+; boost/optimized/ext.ll
+; boost/optimized/process.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
@@ -568,16 +561,11 @@ entry:
 ; libquic/optimized/histogram.cc.ll
 ; libquic/optimized/sample_vector.cc.ll
 ; lightgbm/optimized/c_api.cpp.ll
-; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; lightgbm/optimized/metadata.cpp.ll
 ; linux/optimized/trace_probe.ll
 ; llvm/optimized/CodeGenSchedule.cpp.ll
-; llvm/optimized/IRSymtab.cpp.ll
-; llvm/optimized/InferAddressSpaces.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/ToolChain.cpp.ll
 ; luau/optimized/Normalize.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -613,14 +601,12 @@ entry:
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
-; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
 ; mitsuba3/optimized/principledthin.cpp.ll
 ; mitsuba3/optimized/properties.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; mitsuba3/optimized/regular.cpp.ll
 ; mitsuba3/optimized/retarder.cpp.ll
-; mitsuba3/optimized/roughconductor.cpp.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/scene.cpp.ll
@@ -677,7 +663,6 @@ entry:
 ; quantlib/optimized/fdsimpleklugeextouvppengine.ll
 ; quantlib/optimized/fixedratecoupon.ll
 ; quantlib/optimized/flatvol.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/genericlsregression.ll
 ; quantlib/optimized/gmres.ll
 ; quantlib/optimized/gsr.ll
@@ -724,7 +709,7 @@ entry:
 ; z3/optimized/theory_str.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0) #0 {
+define i1 @func00000000000000a8(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 3
   %2 = add nsw i64 %1, -2305843009213693951
@@ -732,7 +717,7 @@ entry:
   ret i1 %3
 }
 
-; 226 occurrences:
+; 232 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
@@ -751,6 +736,13 @@ entry:
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/async.ll
+; boost/optimized/collate.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/process.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
@@ -873,6 +865,7 @@ entry:
 ; opencv/optimized/perf_rlof.cpp.ll
 ; opencv/optimized/rtrees.cpp.ll
 ; opencv/optimized/scatterND_layer.cpp.ll
+; opencv/optimized/speech_recognition.cpp.ll
 ; opencv/optimized/trackerMedianFlow.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; openusd/optimized/renderSettingsFilteringSceneIndex.cpp.ll
@@ -887,7 +880,6 @@ entry:
 ; pybind11/optimized/test_numpy_dtypes.cpp.ll
 ; pybind11/optimized/test_numpy_vectorize.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
-; quantlib/optimized/actualactual.ll
 ; quantlib/optimized/analyticptdhestonengine.ll
 ; quantlib/optimized/averagebmacoupon.ll
 ; quantlib/optimized/brownianbridge.ll
@@ -905,7 +897,6 @@ entry:
 ; quantlib/optimized/fdsimpleklugeextouvppengine.ll
 ; quantlib/optimized/fixedratecoupon.ll
 ; quantlib/optimized/flatvol.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/fwdperiodadapter.ll
 ; quantlib/optimized/genericlsregression.ll
 ; quantlib/optimized/glued1dmesher.ll
@@ -960,10 +951,36 @@ entry:
 ; yalantinglibs/optimized/server.cpp.ll
 ; yosys/optimized/blifparse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0) #0 {
+define i1 @func00000000000000a1(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, -8
   ret i1 %1
+}
+
+; 16 occurrences:
+; ceres/optimized/visibility_based_preconditioner.cc.ll
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; eastl/optimized/BenchmarkDeque.cpp.ll
+; entt/optimized/benchmark.cpp.ll
+; entt/optimized/group.cpp.ll
+; entt/optimized/registry.cpp.ll
+; entt/optimized/storage.cpp.ll
+; entt/optimized/view.cpp.ll
+; gromacs/optimized/lifetime.cpp.ll
+; hyperscan/optimized/ng_calc_components.cpp.ll
+; llvm/optimized/DFAJumpThreading.cpp.ll
+; ninja/optimized/build_test.cc.ll
+; pybind11/optimized/test_stl.cpp.ll
+; rocksdb/optimized/seqno_to_time_mapping.cc.ll
+; rocksdb/optimized/stringappend2.cc.ll
+; verilator/optimized/V3OrderProcessDomains.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b4(i64 %0) #0 {
+entry:
+  %1 = ashr exact i64 %0, 4
+  %2 = add nsw i64 %1, 1
+  %3 = icmp samesign ult i64 %2, 32
+  ret i1 %3
 }
 
 ; 11 occurrences:
@@ -979,16 +996,35 @@ entry:
 ; quantlib/optimized/extendedblackvariancecurve.ll
 ; quantlib/optimized/extendedblackvariancesurface.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0) #0 {
+define i1 @func00000000000000ac(i64 %0) #0 {
 entry:
   %1 = icmp ne i64 %0, -8
   ret i1 %1
 }
 
+; 9 occurrences:
+; casadi/optimized/integration_tools.cpp.ll
+; gromacs/optimized/context.cpp.ll
+; lightgbm/optimized/linear_tree_learner.cpp.ll
+; llvm/optimized/IRSymtab.cpp.ll
+; llvm/optimized/InferAddressSpaces.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/ToolChain.cpp.ll
+; openusd/optimized/renderSettingsFilteringSceneIndex.cpp.ll
+; quantlib/optimized/multiproductmultistep.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b8(i64 %0) #0 {
+entry:
+  %1 = ashr exact i64 %0, 3
+  %2 = add nsw i64 %1, -576460752303423489
+  %3 = icmp ult i64 %2, -576460752303423488
+  ret i1 %3
+}
+
 ; 1 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = ashr i64 %0, 1
   %2 = add nsw i64 %1, -127

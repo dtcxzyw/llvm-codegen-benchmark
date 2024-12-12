@@ -131,11 +131,12 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/darLib.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -158,9 +159,8 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
-; linux/optimized/intel_tcc.ll
 ; llvm/optimized/DXILResource.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i32 %1, i32 %2) #0 {

@@ -1,4 +1,4 @@
-func00000000000000e0:                   # @func00000000000000e0
+func0000000000000160:                   # @func0000000000000160
 	addl	$-1075, %esi                    # imm = 0xFBCD
 	andl	$-2, %esi
 	xorl	%eax, %eax
@@ -6,9 +6,9 @@ func00000000000000e0:                   # @func00000000000000e0
 	setne	%al
 	addq	%rdi, %rax
 	retq
-func00000000000001e0:                   # @func00000000000001e0
+func0000000000000360:                   # @func0000000000000360
 	movq	%rdi, %rax
-	incl	%esi
+	notl	%esi
 	andl	$7, %esi
 	cmpl	$1, %esi
 	sbbq	$-1, %rax

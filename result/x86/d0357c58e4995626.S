@@ -1,11 +1,11 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	shrl	$20, %edi
 	movl	%edi, %eax
 	orl	$8, %eax
 	testl	%esi, %esi
 	cmovel	%edi, %eax
 	retq
-func0000000000000029:                   # @func0000000000000029
+func0000000000000069:                   # @func0000000000000069
 	shrl	%edi
 	movl	%edi, %eax
 	orl	$524288, %eax                   # imm = 0x80000

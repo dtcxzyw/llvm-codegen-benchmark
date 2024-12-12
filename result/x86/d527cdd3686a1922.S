@@ -8,7 +8,7 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%eax, %eax
 	cmovgl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	-2(%rdi), %eax
 	cmpl	$-1, %eax
 	cmovel	%edi, %eax

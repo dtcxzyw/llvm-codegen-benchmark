@@ -14,11 +14,10 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; hdf5/optimized/H5Gstab.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
-; openblas/optimized/dgbmv_thread_t.c.ll
 ; openblas/optimized/dsbmv_thread_L.c.ll
 ; openblas/optimized/dsbmv_thread_U.c.ll
 ; postgres/optimized/mcv.ll
@@ -51,7 +50,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 3
   %3 = and i64 %2, 4294967295
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -72,7 +71,11 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 15 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; duckdb/optimized/generators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_system.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -89,7 +92,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 16
   %3 = and i64 %2, 4294967295
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -100,21 +103,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = and i64 %2, 4294967295
-  %4 = mul i64 %3, %0
-  ret i64 %4
-}
-
-; 4 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 4294967295
-  %3 = and i64 %2, 4294967295
-  %4 = mul nsw i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -168,6 +157,19 @@ define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 4294967288
   %3 = and i64 %2, 4294967294
+  %4 = mul nsw i64 %3, %0
+  ret i64 %4
+}
+
+; 3 occurrences:
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 1
+  %3 = and i64 %2, -2
   %4 = mul nsw i64 %3, %0
   ret i64 %4
 }

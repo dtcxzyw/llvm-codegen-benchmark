@@ -37,7 +37,7 @@ define i64 @func000000000000000e(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = shl i64 %0, 3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = sub i64 %3, %5
   %7 = and i64 %6, -8
   ret i64 %7

@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
+; lvgl/optimized/lv_color.ll
 ; openjdk/optimized/UshortGray.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; ruby/optimized/time.ll

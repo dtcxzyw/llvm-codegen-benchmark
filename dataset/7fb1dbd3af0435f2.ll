@@ -4,7 +4,7 @@
 ; glslang/optimized/Pp.cpp.ll
 ; glslang/optimized/PpAtom.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %3, 1

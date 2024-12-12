@@ -11,21 +11,28 @@ entry:
   ret ptr %3
 }
 
-; 8 occurrences:
+; 15 occurrences:
 ; g2o/optimized/structure_only.cpp.ll
 ; g2o/optimized/vertex_intrinsics.cpp.ll
 ; g2o/optimized/vertex_line2d.cpp.ll
 ; g2o/optimized/vertex_line3d.cpp.ll
 ; g2o/optimized/vertex_point_xy.cpp.ll
 ; g2o/optimized/vertex_segment2d.cpp.ll
+; openusd/optimized/matrix4d.cpp.ll
+; openusd/optimized/matrix4f.cpp.ll
 ; php/optimized/parse_tz.ll
 ; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
+; z3/optimized/subpaving_hwf.cpp.ll
+; z3/optimized/subpaving_mpf.cpp.ll
+; z3/optimized/subpaving_mpff.cpp.ll
+; z3/optimized/subpaving_mpfx.cpp.ll
+; z3/optimized/subpaving_mpq.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(i64 %0, ptr %1) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %0, 2
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   ret ptr %4
 }
 
@@ -42,18 +49,14 @@ entry:
   ret ptr %3
 }
 
-; 5 occurrences:
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; openusd/optimized/matrix4d.cpp.ll
-; openusd/optimized/matrix4f.cpp.ll
+; 1 occurrences:
+; lvgl/optimized/lv_style.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, ptr %1) #0 {
+define ptr @func000000000000003c(i64 %0, ptr %1) #0 {
 entry:
-  %2 = shl nsw i64 %0, 5
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw double, ptr %3, i64 %0
+  %2 = shl nuw nsw i64 %0, 3
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 %0
   ret ptr %4
 }
 
@@ -102,11 +105,24 @@ entry:
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(i64 %0, ptr %1) #0 {
+define ptr @func000000000000001c(i64 %0, ptr %1) #0 {
 entry:
   %2 = shl nsw i64 %0, 3
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = getelementptr float, ptr %3, i64 %0
+  ret ptr %4
+}
+
+; 3 occurrences:
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(i64 %0, ptr %1) #0 {
+entry:
+  %2 = shl nsw i64 %0, 5
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw double, ptr %3, i64 %0
   ret ptr %4
 }
 

@@ -5,20 +5,20 @@ func000000000000000a:                   # @func000000000000000a
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	cmpl	$1096, %edx                     # imm = 0x448
 	setl	%al
 	orb	%sil, %al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	cmpl	$1, %edx
 	setne	%al
 	notb	%sil
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	testl	%edx, %edx
 	setns	%al
 	orb	%sil, %al

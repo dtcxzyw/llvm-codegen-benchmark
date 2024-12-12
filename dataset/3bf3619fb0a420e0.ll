@@ -15,13 +15,13 @@
 ; opencv/optimized/distransform.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw float, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 32
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 32
   ret ptr %6
 }
 
@@ -67,26 +67,39 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr double, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/demosaicing.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = shl i32 %2, 1
+  %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 2
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/demosaicing.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000010(ptr %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = shl nsw i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 -2
   ret ptr %6
 }
 

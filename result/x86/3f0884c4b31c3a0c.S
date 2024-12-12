@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	subq	%rsi, %rdx
 	cmpq	$17, %rdx
 	setge	%cl
@@ -6,7 +6,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	setge	%al
 	andb	%cl, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	subq	%rsi, %rdx
 	cmpq	$4, %rdi
 	setae	%al
@@ -16,14 +16,7 @@ func0000000000000088:                   # @func0000000000000088
 .LBB1_1:                                # %select.false
 	xorl	%eax, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	subq	%rsi, %rdx
-	xorq	$16, %rdx
-	xorq	$16, %rdi
-	orq	%rdx, %rdi
-	sete	%al
-	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subq	%rsi, %rdx
 	cmpq	$4, %rdx
 	setge	%cl
@@ -31,7 +24,14 @@ func000000000000001a:                   # @func000000000000001a
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+func0000000000000021:                   # @func0000000000000021
+	subq	%rsi, %rdx
+	xorq	$56, %rdx
+	xorq	$1, %rdi
+	orq	%rdx, %rdi
+	sete	%al
+	retq
+func000000000000010c:                   # @func000000000000010c
 	subq	%rsi, %rdx
 	cmpq	$400, %rdx                      # imm = 0x190
 	setne	%cl

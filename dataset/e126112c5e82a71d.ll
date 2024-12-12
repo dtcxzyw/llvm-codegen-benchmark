@@ -11,7 +11,7 @@ entry:
   ret i1 %4
 }
 
-; 595 occurrences:
+; 591 occurrences:
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn2.c.ll
@@ -58,7 +58,6 @@ entry:
 ; linux/optimized/ethtool.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/fib_frontend.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/inftrees.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_ddi.ll
@@ -71,7 +70,6 @@ entry:
 ; linux/optimized/intel_uc.ll
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/netlabel_addrlist.ll
 ; linux/optimized/nf_conntrack_netlink.ll
 ; linux/optimized/nls_base.ll
 ; linux/optimized/pci-acpi.ll
@@ -83,7 +81,6 @@ entry:
 ; linux/optimized/xfrm_policy.ll
 ; linux/optimized/xfrm_state.ll
 ; linux/optimized/xhci.ll
-; linux/optimized/xt_mark.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
@@ -265,7 +262,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
@@ -615,120 +611,34 @@ entry:
   ret i1 %4
 }
 
-; 54 occurrences:
-; abc/optimized/mvcCompare.c.ll
-; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
-; brotli/optimized/encode.c.ll
-; bullet3/optimized/b3BulletFile.ll
-; bullet3/optimized/b3ConvexUtility.ll
-; bullet3/optimized/b3DNA.ll
-; bullet3/optimized/b3File.ll
-; bullet3/optimized/btCollisionWorld.ll
-; bullet3/optimized/btCollisionWorldImporter.ll
-; bullet3/optimized/btConvexPolyhedron.ll
-; bullet3/optimized/btDeformableContactProjection.ll
-; bullet3/optimized/btInternalEdgeUtility.ll
-; bullet3/optimized/btSoftBody.ll
-; bullet3/optimized/btSoftBodyConcaveCollisionAlgorithm.ll
-; cmake/optimized/cover.c.ll
-; cmake/optimized/entropy_common.c.ll
-; freetype/optimized/truetype.c.ll
+; 8 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; hyperscan/optimized/fdr_compile.cpp.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/entropy_common.ll
-; linux/optimized/extents.ll
-; linux/optimized/i915_cmd_parser.ll
-; linux/optimized/ialloc.ll
-; linux/optimized/intel_guc_ct.ll
-; linux/optimized/intel_ring.ll
-; linux/optimized/xfrm_policy.ll
+; linux/optimized/hdac_device.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-math.ll
 ; openssl/optimized/libcrypto-lib-rsa_pk1.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
-; qemu/optimized/block_qed.c.ll
-; qemu/optimized/hw_audio_hda-codec.c.ll
-; qemu/optimized/hw_display_vga.c.ll
-; qemu/optimized/hw_virtio_virtio-pci.c.ll
-; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
-; z3/optimized/arith_axioms.cpp.ll
-; z3/optimized/arith_sls.cpp.ll
-; z3/optimized/arith_solver.cpp.ll
-; z3/optimized/hnf_cutter.cpp.ll
-; z3/optimized/lar_solver.cpp.ll
-; z3/optimized/nla_core.cpp.ll
-; z3/optimized/theory_lra.cpp.ll
-; zstd/optimized/cover.c.ll
-; zstd/optimized/entropy_common.c.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
-; zstd/optimized/zstd_v05.c.ll
-; zstd/optimized/zstd_v06.c.ll
-; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 
-; 45 occurrences:
-; abc/optimized/mvcCompare.c.ll
-; cmake/optimized/fse_compress.c.ll
-; cmake/optimized/fse_decompress.c.ll
-; cmake/optimized/zstd_decompress_block.c.ll
+; 5 occurrences:
 ; libwebp/optimized/predictor_enc.c.ll
-; linux/optimized/blk-merge.ll
-; linux/optimized/fse_decompress.ll
-; linux/optimized/i915_gem_execbuffer.ll
-; linux/optimized/pipe.ll
-; linux/optimized/slab_common.ll
-; linux/optimized/tcp_output.ll
-; linux/optimized/xfrm_policy.ll
-; linux/optimized/zstd_decompress_block.ll
+; linux/optimized/hdac_device.ll
 ; openssl/optimized/libcrypto-lib-evp_enc.ll
 ; openssl/optimized/libcrypto-shlib-evp_enc.ll
-; postgres/optimized/basebackup_incremental.ll
-; postgres/optimized/blkreftable.ll
-; postgres/optimized/blkreftable_shlib.ll
-; postgres/optimized/blkreftable_srv.ll
-; postgres/optimized/dynahash.ll
-; postgres/optimized/execExprInterp.ll
-; postgres/optimized/execGrouping.ll
-; postgres/optimized/filemap.ll
-; postgres/optimized/hashutil.ll
-; postgres/optimized/load_manifest.ll
-; postgres/optimized/namespace.ll
-; postgres/optimized/nodeMemoize.ll
-; postgres/optimized/pg_dumpall.ll
-; postgres/optimized/pg_verifybackup.ll
-; postgres/optimized/pgstat.ll
-; postgres/optimized/pgstat_shmem.ll
-; postgres/optimized/tidbitmap.ll
-; recastnavigation/optimized/DetourTileCache.cpp.ll
-; velox/optimized/Filter.cpp.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
-; zstd/optimized/fse_compress.c.ll
-; zstd/optimized/fse_decompress.c.ll
-; zstd/optimized/zstd_decompress_block.c.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
-; zstd/optimized/zstd_v05.c.ll
-; zstd/optimized/zstd_v06.c.ll
-; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ugt i32 %3, %0
   ret i1 %4
 }
 
@@ -756,6 +666,60 @@ define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp sgt i32 %3, %0
+  ret i1 %4
+}
+
+; 45 occurrences:
+; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; brotli/optimized/encode.c.ll
+; bullet3/optimized/b3BulletFile.ll
+; bullet3/optimized/b3ConvexUtility.ll
+; bullet3/optimized/b3DNA.ll
+; bullet3/optimized/b3File.ll
+; bullet3/optimized/btCollisionWorld.ll
+; bullet3/optimized/btCollisionWorldImporter.ll
+; bullet3/optimized/btConvexPolyhedron.ll
+; bullet3/optimized/btDeformableContactProjection.ll
+; bullet3/optimized/btInternalEdgeUtility.ll
+; bullet3/optimized/btSoftBody.ll
+; bullet3/optimized/btSoftBodyConcaveCollisionAlgorithm.ll
+; cmake/optimized/cover.c.ll
+; cmake/optimized/entropy_common.c.ll
+; freetype/optimized/truetype.c.ll
+; hyperscan/optimized/fdr_compile.cpp.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/entropy_common.ll
+; linux/optimized/extents.ll
+; linux/optimized/ialloc.ll
+; linux/optimized/intel_guc_ct.ll
+; linux/optimized/intel_ring.ll
+; linux/optimized/xfrm_policy.ll
+; qemu/optimized/block_qed.c.ll
+; qemu/optimized/hw_audio_hda-codec.c.ll
+; qemu/optimized/hw_display_vga.c.ll
+; qemu/optimized/hw_virtio_virtio-pci.c.ll
+; recastnavigation/optimized/DetourNavMesh.cpp.ll
+; z3/optimized/arith_axioms.cpp.ll
+; z3/optimized/arith_sls.cpp.ll
+; z3/optimized/arith_solver.cpp.ll
+; z3/optimized/hnf_cutter.cpp.ll
+; z3/optimized/lar_solver.cpp.ll
+; z3/optimized/nla_core.cpp.ll
+; z3/optimized/theory_lra.cpp.ll
+; zstd/optimized/cover.c.ll
+; zstd/optimized/entropy_common.c.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %1, %2
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
@@ -792,6 +756,55 @@ define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp slt i32 %3, %0
+  ret i1 %4
+}
+
+; 40 occurrences:
+; cmake/optimized/fse_compress.c.ll
+; cmake/optimized/fse_decompress.c.ll
+; cmake/optimized/zstd_decompress_block.c.ll
+; linux/optimized/blk-merge.ll
+; linux/optimized/fse_decompress.ll
+; linux/optimized/i915_gem_execbuffer.ll
+; linux/optimized/pipe.ll
+; linux/optimized/slab_common.ll
+; linux/optimized/tcp_output.ll
+; linux/optimized/xfrm_policy.ll
+; linux/optimized/zstd_decompress_block.ll
+; postgres/optimized/basebackup_incremental.ll
+; postgres/optimized/blkreftable.ll
+; postgres/optimized/blkreftable_shlib.ll
+; postgres/optimized/blkreftable_srv.ll
+; postgres/optimized/dynahash.ll
+; postgres/optimized/execExprInterp.ll
+; postgres/optimized/execGrouping.ll
+; postgres/optimized/filemap.ll
+; postgres/optimized/hashutil.ll
+; postgres/optimized/load_manifest.ll
+; postgres/optimized/namespace.ll
+; postgres/optimized/nodeMemoize.ll
+; postgres/optimized/pg_dumpall.ll
+; postgres/optimized/pg_verifybackup.ll
+; postgres/optimized/pgstat.ll
+; postgres/optimized/pgstat_shmem.ll
+; postgres/optimized/tidbitmap.ll
+; recastnavigation/optimized/DetourTileCache.cpp.ll
+; velox/optimized/Filter.cpp.ll
+; zstd/optimized/fse_compress.c.ll
+; zstd/optimized/fse_decompress.c.ll
+; zstd/optimized/zstd_decompress_block.c.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %1, %2
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 

@@ -5,7 +5,7 @@
 ; php/optimized/pcre2_compile.ll
 ; slurm/optimized/parse_time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000224(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 26
   %4 = select i1 %3, i32 %0, i32 %1

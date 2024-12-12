@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; mitsuba3/optimized/spiral.cpp.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
 ; opencv/optimized/falsecolor.cpp.ll
@@ -12,6 +11,8 @@
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/media.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:

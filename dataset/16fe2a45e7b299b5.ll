@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
@@ -21,6 +21,7 @@
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
+; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

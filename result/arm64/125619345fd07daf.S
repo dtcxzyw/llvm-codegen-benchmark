@@ -5,14 +5,6 @@ func0000000000000040:                   // @func0000000000000040
 	add	x0, x8, #8
 	ret
                                         // -- End function
-func00000000000000f8:                   // @func00000000000000f8
-// %bb.0:                               // %entry
-	mov	w8, #12                         // =0xc
-	add	x9, x0, x1, lsl #1
-	madd	x8, x2, x8, x9
-	add	x0, x8, #12
-	ret
-                                        // -- End function
 func00000000000000c0:                   // @func00000000000000c0
 // %bb.0:                               // %entry
 	mov	w8, #72                         // =0x48

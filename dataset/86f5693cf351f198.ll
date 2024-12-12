@@ -1,10 +1,11 @@
 
-; 377 occurrences:
+; 374 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/abcMini.c.ll
 ; abc/optimized/abcQuant.c.ll
+; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/acecCo.c.ll
@@ -142,7 +143,6 @@
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/pasid.ll
-; linux/optimized/sd.ll
 ; linux/optimized/sha3_generic.ll
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/virtio_ring.ll
@@ -179,7 +179,6 @@
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterBank.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -198,6 +197,7 @@
 ; llvm/optimized/X86ShuffleDecodeConstantPool.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/buildvm.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; memcached/optimized/memcached-hash.ll
 ; memcached/optimized/memcached_debug-hash.ll
 ; meshlab/optimized/levmarmethods.cpp.ll
@@ -281,10 +281,6 @@
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; nuklear/optimized/unity.c.ll
 ; ocio/optimized/HashUtils.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtpttf.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
@@ -297,7 +293,6 @@
 ; openjdk/optimized/pngrutil.ll
 ; openssl/optimized/libcrypto-lib-bn_rand.ll
 ; openssl/optimized/libcrypto-shlib-bn_rand.ll
-; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/tessellation.cpp.ll
@@ -331,11 +326,13 @@
 ; rocksdb/optimized/xxhash.cc.ll
 ; slurm/optimized/KeccakP-1600-opt64.ll
 ; soc-simulator/optimized/verilated.ll
+; sqlite/optimized/sqlite3.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; wireshark/optimized/osi-utils.c.ll
 ; wireshark/optimized/packet-at.c.ll
 ; wireshark/optimized/packet-cigi.c.ll
 ; wireshark/optimized/packet-cipmotion.c.ll
+; wireshark/optimized/packet-erf.c.ll
 ; wireshark/optimized/packet-gsm_abis_pgsl.c.ll
 ; wireshark/optimized/packet-gsmtap.c.ll
 ; wireshark/optimized/packet-isakmp.c.ll
@@ -378,7 +375,7 @@
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = zext nneg i32 %2 to i64
@@ -387,7 +384,7 @@ entry:
   ret i1 %5
 }
 
-; 82 occurrences:
+; 80 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -429,7 +426,6 @@ entry:
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver2i.c.ll
 ; abc/optimized/satSolver3.c.ll
-; abc/optimized/satUtil.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sfmLib.c.ll
 ; assimp/optimized/AssxmlFileWriter.cpp.ll
@@ -447,7 +443,6 @@ entry:
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/event_inode.ll
 ; linux/optimized/forcedeth.ll
-; linux/optimized/intel_mocs.ll
 ; linux/optimized/perfmon.ll
 ; linux/optimized/quota_tree.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -471,12 +466,12 @@ entry:
 ; yosys/optimized/Solver.ll
 ; z3/optimized/doc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -484,7 +479,7 @@ entry:
 ; libwebp/optimized/webpinfo.c.ll
 ; minetest/optimized/chat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
@@ -497,7 +492,7 @@ entry:
 ; llvm/optimized/TargetRegisterInfo.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000ec(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = zext nneg i32 %2 to i64
@@ -521,7 +516,7 @@ entry:
 ; llvm/optimized/UDTLayout.cpp.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = zext nneg i32 %2 to i64
@@ -535,7 +530,7 @@ entry:
 ; lief/optimized/BinaryParser.cpp.ll
 ; nix/optimized/lock.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = zext nneg i32 %2 to i64
@@ -544,20 +539,19 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; linux/optimized/nl80211.ll
+; linux/optimized/sd.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; slurm/optimized/callerid.ll
 ; sqlite/optimized/sqlite3.ll
 ; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 2
   %3 = zext nneg i32 %2 to i64
@@ -569,7 +563,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 3
   %3 = zext nneg i32 %2 to i64
@@ -578,12 +572,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = zext nneg i32 %2 to i64
@@ -592,12 +584,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; linux/optimized/event_inode.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = zext nneg i32 %2 to i64
@@ -609,7 +599,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 4
   %3 = zext nneg i32 %2 to i64
@@ -621,19 +611,19 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f9(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001f9(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 4
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %0, 4
-  %5 = icmp uge i64 %4, %3
+  %5 = icmp samesign uge i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = zext nneg i32 %2 to i64

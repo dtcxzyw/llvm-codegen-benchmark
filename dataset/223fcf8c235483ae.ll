@@ -5,16 +5,17 @@
 define i128 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 18446744073709551615
-  %3 = mul i128 %2, %0
+  %3 = mul i128 %0, %2
   ret i128 %3
 }
 
-; 129 occurrences:
+; 135 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; actix-rs/optimized/34v80y29y6uwgxas.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -139,6 +140,11 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000002(i128 %0, i128 %1) #0 {
 entry:
@@ -270,7 +276,7 @@ entry:
 define i128 @func0000000000000001(i128 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 72057594037927935
-  %3 = mul nsw i128 %2, %0
+  %3 = mul nsw i128 %0, %2
   ret i128 %3
 }
 

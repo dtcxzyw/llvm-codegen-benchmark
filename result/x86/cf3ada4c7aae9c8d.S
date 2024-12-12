@@ -1,8 +1,3 @@
-func0000000000000040:                   # @func0000000000000040
-	movl	%edx, %eax
-	addq	%rsi, %rdi
-	leaq	-4(%rax,%rdi), %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%edx, %eax
 	addq	%rsi, %rdi
@@ -17,6 +12,11 @@ func0000000000000055:                   # @func0000000000000055
 	movl	%edx, %eax
 	addq	%rsi, %rdi
 	leaq	-32(%rax,%rdi), %rax
+	retq
+func0000000000000040:                   # @func0000000000000040
+	movl	%edx, %eax
+	addq	%rsi, %rdi
+	leaq	1150(%rax,%rdi), %rax
 	retq
 func000000000000002a:                   # @func000000000000002a
 	movl	%edx, %eax

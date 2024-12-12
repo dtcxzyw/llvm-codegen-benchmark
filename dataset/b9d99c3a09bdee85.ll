@@ -4,7 +4,7 @@
 ; abc/optimized/giaQbf.c.ll
 ; yosys/optimized/mem.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/hbc-attribute.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
   %4 = add nuw i32 %0, 1
@@ -27,7 +27,7 @@ entry:
 ; yosys/optimized/mem.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
   %4 = add nsw i32 %0, 1
@@ -42,7 +42,7 @@ entry:
 ; redis/optimized/stats.ll
 ; redis/optimized/stats.sym.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/jcsample.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
   %4 = add nuw i32 %0, 1

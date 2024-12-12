@@ -1,6 +1,8 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/satSolver2.c.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; gromacs/optimized/grid.cpp.ll
@@ -8,9 +10,6 @@
 ; libjpeg-turbo/optimized/jcphuff.c.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/decodemv.c.ll
-; openusd/optimized/decodetxb.c.ll
-; openusd/optimized/detokenize.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind

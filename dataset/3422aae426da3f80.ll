@@ -45,7 +45,7 @@ define i32 @func000000000000007c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
   %4 = or disjoint i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -65,7 +65,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %0
+  %3 = add i64 %0, %1
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -103,7 +103,7 @@ define i32 @func0000000000000060(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 30
   %4 = or i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }

@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vx	v0, v8, a0
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	lui	a0, 349525
 	addi	a0, a0, 1372
 	vsetivli	zero, 8, e32, m2, ta, ma

@@ -13,8 +13,8 @@ define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr float, ptr %0, i64 %4
-  %6 = getelementptr float, ptr %5, i64 %1
+  %5 = getelementptr float, ptr %0, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -25,12 +25,12 @@ entry:
 ; ncnn/optimized/lstm_x86_avx2.cpp.ll
 ; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr float, ptr %0, i64 %4
-  %6 = getelementptr float, ptr %5, i64 %1
+  %5 = getelementptr float, ptr %0, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -41,8 +41,8 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr i32, ptr %0, i64 %4
-  %6 = getelementptr i32, ptr %5, i64 %1
+  %5 = getelementptr i32, ptr %0, i64 %1
+  %6 = getelementptr i32, ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-; 113 occurrences:
+; 114 occurrences:
 ; abc/optimized/cuddZddMisc.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/chi_square_test.cc.ll
@@ -7,6 +7,8 @@
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/within.ll
 ; darktable/optimized/camera.c.ll
 ; darktable/optimized/darkroom.c.ll
 ; darktable/optimized/gamepad.c.ll
@@ -44,7 +46,6 @@
 ; hdf5/optimized/H5Ztrans.c.ll
 ; icu/optimized/indiancal.ll
 ; imgui/optimized/imgui.cpp.ll
-; libwebp/optimized/quant_levels_utils.c.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll

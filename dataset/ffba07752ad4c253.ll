@@ -33,14 +33,15 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; icu/optimized/collationdata.ll
+; lvgl/optimized/lv_color.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 256
+  %2 = add nsw i32 %1, 360
   %3 = select i1 %0, i32 %2, i32 %1
-  %4 = and i32 %3, 65280
+  %4 = and i32 %3, 65535
   ret i32 %4
 }
 

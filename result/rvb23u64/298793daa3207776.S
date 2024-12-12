@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	zext.w	a2, a1
 	lui	a3, 33825
 	addiw	a3, a3, 133

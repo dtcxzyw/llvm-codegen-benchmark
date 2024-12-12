@@ -27,7 +27,7 @@
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i32 %0) #0 {
+define i64 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
   %2 = icmp eq i32 %0, 7
@@ -39,9 +39,9 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000082(i32 %0) #0 {
+define i64 @func0000000000000502(i32 %0) #0 {
 entry:
-  %1 = icmp ult i32 %0, 3
+  %1 = icmp samesign ult i32 %0, 3
   %2 = icmp eq i32 %0, 5
   %3 = or i1 %2, %1
   %4 = select i1 %3, i64 13, i64 5
@@ -58,7 +58,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; sentencepiece/optimized/time.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000142(i32 %0) #0 {
+define i64 @func0000000000000282(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, 300
   %2 = icmp eq i32 %0, 0

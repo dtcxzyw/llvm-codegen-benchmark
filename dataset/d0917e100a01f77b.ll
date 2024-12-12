@@ -1,11 +1,10 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/covCore.c.ll
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/cutTruth.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/fraigNode.c.ll
 ; abc/optimized/giaQbf.c.ll

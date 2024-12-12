@@ -1,23 +1,25 @@
 
-%"class.std::__cxx11::basic_string.2580329" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2580330", i64, %union.anon.2580331 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2580330" = type { ptr }
-%union.anon.2580331 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2694469" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694470", i64, %union.anon.2694471 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694470" = type { ptr }
+%union.anon.2694471 = type { i64, [8 x i8] }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
 ; openssl/optimized/clienthellotest-bin-clienthellotest.ll
 ; openssl/optimized/servername_test-bin-servername_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000008a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000008f(ptr %0, i64 %1) #0 {
 entry:
   %.inv = icmp ult i64 %1, 34
   %2 = select i1 %.inv, i64 0, i64 34
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
   ret ptr %4
 }
 
-; 46 occurrences:
+; 62 occurrences:
 ; abc/optimized/mioUtils.c.ll
 ; folly/optimized/CustomLogFormatter.cpp.ll
 ; folly/optimized/GlogStyleFormatter.cpp.ll
@@ -35,10 +37,17 @@ entry:
 ; hyperscan/optimized/limex_simd512.c.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; libjpeg-turbo/optimized/jchuff.c.ll
+; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
+; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
+; llvm/optimized/DiagnosticBuilderWrappers.cpp.ll
+; llvm/optimized/GlobalDCE.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/MemorySSAUpdater.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/ValistChecker.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
@@ -63,18 +72,27 @@ entry:
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; tls-rs/optimized/526n7g8rwc65lc9b.ll
 ; tls-rs/optimized/z2cy5bf5cayilz9.ll
+; turborepo-rs/optimized/667fw7b0fgqo2a1672jmft41u.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/5c6qu0nt7rwrjz6em8cry1wl2.ll
+; zed-rs/optimized/bx05yi7k15cz36qdtwh95aj38.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 432, i64 560
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 
-; 308 occurrences:
+; 307 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -98,7 +116,6 @@ entry:
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
-; hyperscan/optimized/fdr.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -384,12 +401,12 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000006b(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
   %3 = select i1 %2, i64 -32, i64 -16
   %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 
@@ -397,11 +414,11 @@ entry:
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/SplitStringSimd.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000014e(ptr %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 50
+  %2 = icmp samesign ult i64 %1, 50
   %3 = select i1 %2, i64 0, i64 8
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -8
   ret ptr %5
 }
@@ -414,9 +431,23 @@ define ptr @func0000000000000010(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, -1
   %3 = select i1 %2, i64 2, i64 3
-  %4 = getelementptr %"class.std::__cxx11::basic_string.2580329", ptr %0, i64 %3
+  %4 = getelementptr %"class.std::__cxx11::basic_string.2694469", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 32
   ret ptr %5
+}
+
+; 3 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
+; openusd/optimized/materialBindingAPI.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000004f(ptr %0, i64 %1) #0 {
+entry:
+  %.inv = icmp ugt i64 %1, 16
+  %2 = select i1 %.inv, i64 16, i64 0
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
+  ret ptr %4
 }
 
 ; 9 occurrences:
@@ -430,53 +461,90 @@ entry:
 ; oiio/optimized/filesystem.cpp.ll
 ; xgboost/optimized/context.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000043(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 4
   %3 = select i1 %2, i64 -72, i64 -48
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
-  ret ptr %5
-}
-
-; 6 occurrences:
-; llvm/optimized/CodeGenPrepare.cpp.ll
-; llvm/optimized/DiagnosticBuilderWrappers.cpp.ll
-; llvm/optimized/GlobalDCE.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/MemorySSAUpdater.cpp.ll
-; llvm/optimized/VarLocBasedImpl.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
-entry:
-  %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i64 0, i64 32
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 
-; 1 occurrences:
-; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
+; 2 occurrences:
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/336xmb53s74x7fvnwv8sppb05.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000006f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i64 0, i64 32
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
-  ret ptr %5
+  %2 = icmp slt i64 %1, 0
+  %3 = select i1 %2, i64 3, i64 2
+  %4 = getelementptr nuw { { { { ptr, i64 } }, {}, {} }, { { { { i64, ptr, {} }, i64 } }, { { { i64, ptr, {} }, i64 } }, { i64, [2 x i64] } } }, ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
+}
+
+; 5 occurrences:
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
+; zed-rs/optimized/dqryhdkxpzkfeay9pjzpwnhia.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006c(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp slt i64 %1, 0
+  %3 = select i1 %2, i64 3, i64 2
+  %4 = getelementptr { { { { ptr, i64 } }, {}, {} } }, ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
-; openusd/optimized/materialBindingAPI.cpp.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004f(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000ac(ptr %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 8
-  %3 = select i1 %2, i64 32, i64 8
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  %2 = icmp sgt i64 %1, 0
+  %3 = select i1 %2, i64 3, i64 2
+  %4 = getelementptr { { { { i64, ptr, {} }, i64 } }, { { { i64, ptr, {} }, i64 } } }, ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
+}
+
+; 2 occurrences:
+; linux/optimized/nf_conntrack_sip.ll
+; linux/optimized/nf_nat_core.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000183(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 2
+  %3 = select i1 %2, i64 72, i64 16
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 20
+  ret ptr %5
+}
+
+; 3 occurrences:
+; linux/optimized/nf_conntrack_sip.ll
+; linux/optimized/nf_nat_proto.ll
+; linux/optimized/nf_nat_sip.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000140(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 3
+  %3 = select i1 %2, i64 16, i64 72
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 2 occurrences:
+; linux/optimized/nf_nat_proto.ll
+; linux/optimized/nf_nat_sip.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000143(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 3
+  %3 = select i1 %2, i64 16, i64 72
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   ret ptr %5
 }
 
@@ -484,12 +552,36 @@ entry:
 ; linux/optimized/fast_commit.ll
 ; linux/optimized/tg3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 1944, i64 1960
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 1 occurrences:
+; linux/optimized/nf_conntrack_sip.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000180(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 2
+  %3 = select i1 %2, i64 72, i64 16
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 1 occurrences:
+; hyperscan/optimized/fdr.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp slt i64 %1, 17
+  %3 = select i1 %2, i64 0, i64 -16
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -16
   ret ptr %5
 }
 

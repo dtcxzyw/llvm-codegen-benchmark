@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 12 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; clamav/optimized/pdf.c.ll
@@ -9,6 +9,21 @@
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
 ; luajit/optimized/buildvm.ll
+; opencc/optimized/Config.cpp.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = xor i64 %0, -1
+  %5 = add i64 %3, %4
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
+}
+
+; 71 occurrences:
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -80,13 +95,10 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; opencc/optimized/Config.cpp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %0, -1
   %5 = add i64 %3, %4

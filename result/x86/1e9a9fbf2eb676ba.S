@@ -1,16 +1,16 @@
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	notb	%dl
 	movl	$2, %eax
 	shlxl	%edx, %eax, %eax
 	subl	%esi, %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	notb	%dl
 	movl	$2, %eax
 	shlxl	%edx, %eax, %eax
 	subl	%esi, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

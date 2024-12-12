@@ -1,16 +1,12 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mul	v2.4s, v2.4s, v4.4s
-	mul	v3.4s, v3.4s, v5.4s
-	eor	v0.16b, v2.16b, v0.16b
-	eor	v1.16b, v3.16b, v1.16b
+	mul	w8, w1, w2
+	eor	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mul	v2.4s, v2.4s, v4.4s
-	mul	v3.4s, v3.4s, v5.4s
-	eor	v0.16b, v2.16b, v0.16b
-	eor	v1.16b, v3.16b, v1.16b
+	mul	w8, w1, w2
+	eor	w0, w8, w0
 	ret
                                         // -- End function

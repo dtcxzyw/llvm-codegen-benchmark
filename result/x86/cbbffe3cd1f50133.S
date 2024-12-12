@@ -19,7 +19,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$23, %rsi
 	setb	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
 	leaq	1(%rsi), %rax
@@ -37,7 +37,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$-10, %rsi
 	sete	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
 	addq	$-8, %rsi
@@ -50,7 +50,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpq	$2, %rsi
 	setne	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
 	cmpq	$1, %rsi

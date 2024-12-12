@@ -82,9 +82,3 @@ func0000000000000010:                   # @func0000000000000010
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func000000000000000d:                   # @func000000000000000d
-	vpmovqd	%ymm1, %xmm1
-	vpmovzxwd	%xmm0, %xmm0            # xmm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq

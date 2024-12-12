@@ -14,7 +14,7 @@ func0000000000000007:                   # @func0000000000000007
 	andl	$167, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	movl	$15, %eax
+	movl	$255, %eax
 	shrxl	%edi, %eax, %eax
 	shlxl	%edi, %eax, %eax
 	retq

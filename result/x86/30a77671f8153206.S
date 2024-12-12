@@ -4,7 +4,7 @@ func000000000000000a:                   # @func000000000000000a
 	negl	%eax
 	orl	$1, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vmovd	%xmm0, %ecx
 	xorl	%eax, %eax
 	cmpl	$2139095041, %ecx               # imm = 0x7F800001

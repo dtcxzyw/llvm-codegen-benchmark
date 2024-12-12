@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_cpu.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 3
   %3 = icmp eq i8 %0, 0
@@ -21,7 +21,7 @@ entry:
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; wireshark/optimized/packet-eap.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
   %3 = icmp eq i8 %0, 0
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_voxel_render.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000068(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 14
   %3 = icmp ugt i8 %0, 13

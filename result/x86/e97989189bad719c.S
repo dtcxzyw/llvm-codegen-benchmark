@@ -84,11 +84,6 @@ func0000000000000044:                   # @func0000000000000044
 	imull	$365, %esi, %eax                # imm = 0x16D
 	leal	-2472633(%rax,%rdi), %eax
 	retq
-func0000000000000040:                   # @func0000000000000040
-	addl	%edx, %esi
-	imull	$-36524, %edi, %eax             # imm = 0xFFFF7154
-	leal	719162(%rax,%rsi), %eax
-	retq
 func00000000000000c0:                   # @func00000000000000c0
 	addl	%edx, %edi
 	imull	$268435123, %esi, %eax          # imm = 0xFFFFEB3

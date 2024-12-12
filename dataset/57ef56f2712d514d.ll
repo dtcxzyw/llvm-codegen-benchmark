@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; box2d/optimized/b2_collide_circle.cpp.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_collision.cpp.ll
@@ -29,7 +29,6 @@
 ; opencv/optimized/select3dobj.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/typeRegistry.cpp.ll
 ; postgres/optimized/float.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; raylib/optimized/raudio.c.ll
@@ -39,6 +38,8 @@
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; yoga/optimized/Node.cpp.ll
 ; yoga/optimized/YGNodeStyle.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:

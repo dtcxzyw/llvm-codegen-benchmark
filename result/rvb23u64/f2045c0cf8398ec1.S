@@ -8,6 +8,11 @@ func000000000000001b:                   # @func000000000000001b
 	slli	a0, a0, 1
 	addi	a0, a0, -200
 	ret
+func000000000000003f:                   # @func000000000000003f
+	andi	a0, a0, 255
+	slli	a0, a0, 3
+	addi	a0, a0, 80
+	ret
 func000000000000001a:                   # @func000000000000001a
 	andi	a0, a0, 255
 	slli	a0, a0, 1

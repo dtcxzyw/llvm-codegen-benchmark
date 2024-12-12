@@ -10,12 +10,12 @@ define i64 @func0000000000000065(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1048576
   %4 = lshr i64 %3, 21
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
@@ -23,12 +23,14 @@ entry:
 ; protobuf/optimized/wire_format.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000060(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1048576
   %4 = lshr i64 %3, 21
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -44,8 +46,8 @@ define i64 @func000000000000006c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1048576
   %4 = lshr i64 %3, 21
-  %5 = add nuw nsw i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = add nuw nsw i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -60,8 +62,8 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -2
   %4 = lshr i64 %3, 9
-  %5 = add i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -76,7 +78,7 @@ define i64 @func000000000000006f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 63
   %4 = lshr i64 %3, 6
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
@@ -89,7 +91,7 @@ define i64 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1048576
   %4 = lshr i64 %3, 21
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -101,7 +103,7 @@ define i64 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 7
   %4 = lshr i64 %3, 3
-  %5 = add nuw i64 %4, %1
+  %5 = add nuw i64 %1, %4
   %6 = add nuw i64 %5, %0
   ret i64 %6
 }
@@ -125,7 +127,7 @@ define i64 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 2654435769
   %4 = lshr i64 %3, 2
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }

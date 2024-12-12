@@ -1,6 +1,8 @@
 
-; 43 occurrences:
+; 45 occurrences:
 ; abc/optimized/saigSimMv.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; entt/optimized/benchmark.cpp.ll
 ; entt/optimized/custom_identifier.cpp.ll
 ; entt/optimized/entity_copy.cpp.ll
@@ -81,9 +83,8 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; jq/optimized/main.ll
-; meshoptimizer/optimized/quantization.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -94,9 +95,8 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; entt/optimized/handle.cpp.ll
-; opencv/optimized/filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -104,6 +104,18 @@ entry:
   %4 = select i1 %3, i32 0, i32 %1
   %5 = and i32 %0, 1048575
   %6 = or disjoint i32 %5, %4
+  ret i32 %6
+}
+
+; 1 occurrences:
+; openusd/optimized/value.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp slt i32 %2, 0
+  %4 = select i1 %3, i32 0, i32 %0
+  %5 = and i32 %1, 65536
+  %6 = or i32 %4, %5
   ret i32 %6
 }
 
@@ -120,8 +132,7 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; arrow/optimized/float16.cc.ll
+; 1 occurrences:
 ; linux/optimized/buffered-io.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {

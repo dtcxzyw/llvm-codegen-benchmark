@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; openssl/optimized/exdatatest-bin-exdatatest.ll
+; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -37,7 +37,7 @@ func0000000000000003:                   # @func0000000000000003
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	fdiv.d	fa5, fa1, fa5
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1

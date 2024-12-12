@@ -6,9 +6,9 @@ func0000000000000001:                   # @func0000000000000001
 	cmovnel	%edi, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	testb	$1, %sil
+	testb	$1, %dl
 	movl	$1, %eax
 	cmovel	%edi, %eax
-	testb	$1, %dl
+	testb	$1, %sil
 	cmovel	%edi, %eax
 	retq

@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll

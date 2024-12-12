@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 28 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; abc/optimized/utilCex.c.ll
 ; clamav/optimized/filtering.c.ll
@@ -10,8 +10,8 @@
 ; gromacs/optimized/wall.cpp.ll
 ; icu/optimized/unistr.ll
 ; llama.cpp/optimized/llama.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
@@ -24,11 +24,7 @@
 ; openjdk/optimized/mlib_ImageConv_16ext.ll
 ; openjdk/optimized/mlib_ImageConv_8ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
 ; postgres/optimized/utilities.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; wireshark/optimized/packet-ppp.c.ll
@@ -40,7 +36,7 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 20 occurrences:
 ; c3c/optimized/sema_stmts.c.ll
 ; cmake/optimized/lzma_encoder_optimum_fast.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -49,6 +45,9 @@ entry:
 ; linux/optimized/eventpoll.ll
 ; linux/optimized/intel_gsc_uc_heci_cmd_submit.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_tick.ll
 ; lz4/optimized/lz4.c.ll
 ; opencv/optimized/convolution.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll

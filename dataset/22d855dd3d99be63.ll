@@ -26,8 +26,9 @@ entry:
   ret i64 %2
 }
 
-; 33 occurrences:
+; 39 occurrences:
 ; abc/optimized/abcIf.c.ll
+; boost/optimized/pattern.ll
 ; crow/optimized/example.cpp.ll
 ; duckdb/optimized/ub_duckdb_adbc.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -47,6 +48,7 @@ entry:
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
@@ -60,6 +62,10 @@ entry:
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i8 %0) #0 {
 entry:
@@ -68,7 +74,7 @@ entry:
   ret i64 %2
 }
 
-; 42 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; actix-rs/optimized/1rfb1t3n8679w74r.ll
@@ -108,9 +114,12 @@ entry:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; sqlite/optimized/sqlite3.ll
 ; tomlplusplus/optimized/toml.cpp.ll
+; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wolfssl/optimized/sha3.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i8 %0) #0 {
 entry:

@@ -1,11 +1,11 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000003f:                   # @func000000000000003f
 	leaq	96(%rsi), %rax
 	addq	$144, %rsi
 	testb	$1, %dl
 	cmoveq	%rax, %rsi
 	leaq	24(%rsi,%rdi,4), %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func000000000000003c:                   # @func000000000000003c
 	leaq	288(%rsi), %rax
 	addq	$208, %rsi
 	testb	$1, %dl

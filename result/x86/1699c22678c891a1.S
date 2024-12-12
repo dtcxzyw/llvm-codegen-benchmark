@@ -1,45 +1,45 @@
 func0000000000000004:                   # @func0000000000000004
 	incb	%sil
-	cmpb	%dil, %sil
-	seta	%al
+	cmpb	%sil, %dil
+	setb	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	incb	%sil
-	cmpb	%dil, %sil
+	cmpb	%sil, %dil
 	sete	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	incb	%sil
-	cmpb	%dil, %sil
-	setb	%al
-	retq
-func0000000000000011:                   # @func0000000000000011
-	addb	$5, %sil
-	cmpb	%dil, %sil
-	sete	%al
-	retq
-func0000000000000028:                   # @func0000000000000028
-	incb	%sil
-	cmpb	%dil, %sil
-	setb	%al
+	cmpb	%sil, %dil
+	seta	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	incb	%sil
-	cmpb	%dil, %sil
+	addb	$2, %sil
+	cmpb	%sil, %dil
 	sete	%al
+	retq
+func0000000000000021:                   # @func0000000000000021
+	addb	$5, %sil
+	cmpb	%sil, %dil
+	sete	%al
+	retq
+func0000000000000048:                   # @func0000000000000048
+	incb	%sil
+	cmpb	%sil, %dil
+	seta	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	decb	%sil
-	cmpb	%dil, %sil
-	setl	%al
+	cmpb	%sil, %dil
+	setg	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
-	incb	%sil
-	cmpb	%dil, %sil
+func0000000000000064:                   # @func0000000000000064
+	addb	$2, %sil
+	cmpb	%sil, %dil
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	decb	%sil
-	cmpb	%dil, %sil
-	setb	%al
+	cmpb	%sil, %dil
+	seta	%al
 	retq

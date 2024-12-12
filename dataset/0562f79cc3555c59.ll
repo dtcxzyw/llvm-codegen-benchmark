@@ -32,14 +32,30 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p256-64.c.ll
 ; qemu/optimized/system_memory.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add i128 %1, %2
-  %4 = add i128 %3, %0
+  %4 = add i128 %0, %3
+  %5 = lshr i128 %4, 64
+  %6 = trunc nuw i128 %5 to i64
+  ret i64 %6
+}
+
+; 4 occurrences:
+; abseil-cpp/optimized/generators_test.cc.ll
+; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/approximately_equals.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000052(i128 %0, i128 %1, i128 %2) #0 {
+entry:
+  %3 = add nuw i128 %1, %2
+  %4 = add nuw i128 %3, %0
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
   ret i64 %6
@@ -70,20 +86,6 @@ entry:
   %4 = add nuw nsw i128 %3, %0
   %5 = lshr i128 %4, 42
   %6 = trunc i128 %5 to i64
-  ret i64 %6
-}
-
-; 3 occurrences:
-; abseil-cpp/optimized/generators_test.cc.ll
-; abseil-cpp/optimized/wide_multiply_test.cc.ll
-; quickjs/optimized/libbf.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000052(i128 %0, i128 %1, i128 %2) #0 {
-entry:
-  %3 = add nuw i128 %1, %2
-  %4 = add nuw i128 %3, %0
-  %5 = lshr i128 %4, 64
-  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 

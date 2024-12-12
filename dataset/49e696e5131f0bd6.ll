@@ -7,7 +7,7 @@ define i32 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr i64 %2, 48
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   %5 = trunc nsw i64 %4 to i32
   ret i32 %5
 }
@@ -20,7 +20,7 @@ define i32 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 48
   %3 = ashr exact i64 %2, 48
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   %5 = trunc nsw i64 %4 to i32
   ret i32 %5
 }
@@ -31,7 +31,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, %0
+  %2 = mul i64 %0, %1
   %3 = trunc i64 %2 to i32
   ret i32 %3
 }

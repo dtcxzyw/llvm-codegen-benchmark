@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; libpng/optimized/png.c.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/osl.ll
 ; openjdk/optimized/png.ll
 ; wasmedge/optimized/inode-linux.cpp.ll

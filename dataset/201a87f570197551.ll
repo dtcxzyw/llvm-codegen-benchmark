@@ -148,13 +148,12 @@ entry:
   ret i32 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; hdf5/optimized/H5Tinit_float.c.ll
 ; lief/optimized/ssl_msg.c.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/socklib.ll
 ; linux/optimized/xhci.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVOptWInstrs.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

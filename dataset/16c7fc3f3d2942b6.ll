@@ -1,25 +1,26 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; linux/optimized/extents.ll
 ; linux/optimized/i9xx_wm.ll
 ; php/optimized/dfa_pass.ll
 ; php/optimized/zend_inference.ll
+; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; quickjs/optimized/quickjs.ll
+; verilator/optimized/V3Task.cpp.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = or disjoint i32 %2, -2147483648
-  %4 = and i32 %1, 2047
+  %3 = or disjoint i32 %2, 1
+  %4 = and i32 %1, 7
   %5 = select i1 %0, i32 %4, i32 %3
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/e1000_hw.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll

@@ -3,8 +3,3 @@ func0000000000000001:                   # @func0000000000000001
 	notl	%eax
 	andl	$1, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	movq	%rdi, %rax
-	notl	%eax
-	orl	$-8, %eax
-	retq

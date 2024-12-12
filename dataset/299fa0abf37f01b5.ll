@@ -13,7 +13,7 @@ entry:
   ret double %2
 }
 
-; 153 occurrences:
+; 152 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/saigIoa.c.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
@@ -60,9 +60,9 @@ entry:
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/train.cpp.ll
 ; luau/optimized/DataFlowGraph.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/mesh_graph.cpp.ll
-; minetest/optimized/mt_opengl_loader.cpp.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
 ; node/optimized/libnode.node_builtins.ll
 ; ocio/optimized/Lut1DOpData.cpp.ll
@@ -88,7 +88,6 @@ entry:
 ; openusd/optimized/testUsdUtilsTimeCodeRange.cpp.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/pg_test_timing.ll
-; proj/optimized/factory.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; pybind11/optimized/test_sequences_and_iterators.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
@@ -181,6 +180,7 @@ entry:
 ; abc/optimized/fraigMan.c.ll
 ; abc/optimized/giaEra.c.ll
 ; abc/optimized/ifMan.c.ll
+; abseil-cpp/optimized/cordz_info.cc.ll
 ; arrow/optimized/slow.cc.ll
 ; assimp/optimized/IFCCurve.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
@@ -189,7 +189,6 @@ entry:
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; libquic/optimized/histogram.cc.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
 ; opencv/optimized/brisque_eval_tid2008.cpp.ll
 ; opencv/optimized/ocr_beamsearch_decoder.cpp.ll
@@ -213,7 +212,13 @@ entry:
   ret double %2
 }
 
-; 13 occurrences:
+; 19 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; gromacs/optimized/colvarbias_restraint.cpp.ll
 ; qemu/optimized/util_qdist.c.ll
 ; quantlib/optimized/brownianbridge.ll
@@ -255,7 +260,7 @@ entry:
   ret double %2
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/bit_cost.c.ll
@@ -267,6 +272,7 @@ entry:
 ; libwebp/optimized/frame_enc.c.ll
 ; osqp/optimized/amd_order.c.ll
 ; postgres/optimized/pgbench.ll
+; quantlib/optimized/analytich1hwengine.ll
 ; quantlib/optimized/knuthuniformrng.ll
 ; quantlib/optimized/lfmcovarparam.ll
 ; quantlib/optimized/lfmcovarproxy.ll

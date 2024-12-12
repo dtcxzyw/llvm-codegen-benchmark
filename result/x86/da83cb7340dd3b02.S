@@ -19,7 +19,7 @@ func000000000000000f:                   # @func000000000000000f
 	retq
 func000000000000001f:                   # @func000000000000001f
 	imull	$1000, %edi, %eax               # imm = 0x3E8
-	addq	$50, %rax
+	addl	$50, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	imull	$1000, %edi, %eax               # imm = 0x3E8

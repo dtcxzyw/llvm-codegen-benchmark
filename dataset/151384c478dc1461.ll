@@ -1,8 +1,9 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
+; boost/optimized/src.ll
 ; graphviz/optimized/fmtesc.c.ll
 ; gromacs/optimized/trjconv.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -47,8 +48,9 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 22 occurrences:
 ; arrow/optimized/double-to-string.cc.ll
+; boost/optimized/numeric.ll
 ; cmake/optimized/SystemInformation.cxx.ll
 ; double_conversion/optimized/double-to-string.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -65,6 +67,7 @@ entry:
 ; openmpi/optimized/onesided_aggregation.ll
 ; openusd/optimized/double-to-string.cc.ll
 ; redis/optimized/db.ll
+; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; spike/optimized/csrs.ll
 ; z3/optimized/dl_mk_scale.cpp.ll
 ; z3/optimized/theory_array_full.cpp.ll

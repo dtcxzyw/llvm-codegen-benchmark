@@ -37,8 +37,7 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
-; abseil-cpp/optimized/symbolize.cc.ll
+; 9 occurrences:
 ; linux/optimized/gen8_engine_cs.ll
 ; linux/optimized/intel_psr.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -53,6 +52,17 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = freeze i8 %2
   %4 = icmp ult i8 %3, 29
+  %5 = select i1 %4, i32 %0, i32 %1
+  ret i32 %5
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/symbolize.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = freeze i8 %2
+  %4 = icmp samesign ult i8 %3, 65
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }

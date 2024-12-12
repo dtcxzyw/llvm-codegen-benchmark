@@ -1,16 +1,10 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	andl	$15, %esi
-	shll	$6, %esi
-	leaq	28(%rdi,%rsi), %rax
+	leaq	280(%rdi,%rsi,4), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	andl	$63, %esi
 	leaq	28(%rdi,%rsi), %rax
-	retq
-func000000000000001e:                   # @func000000000000001e
-	andl	$1, %esi
-	shll	$4, %esi
-	leaq	360(%rdi,%rsi), %rax
 	retq
 func0000000000000010:                   # @func0000000000000010
 	andl	$1, %esi

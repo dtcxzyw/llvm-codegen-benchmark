@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 49 occurrences:
 ; assimp/optimized/OpenGEXImporter.cpp.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; clamav/optimized/unzip.c.ll
@@ -11,25 +11,41 @@
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
-; git/optimized/fetch.ll
 ; llvm/optimized/MasmParser.cpp.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
 ; mitsuba3/optimized/zone.cpp.ll
-; node/optimized/libnode.node_report.ll
-; openjdk/optimized/stringUtils.ll
 ; php/optimized/math.ll
 ; php/optimized/phpdbg_lexer.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
-; re2/optimized/re2.cc.ll
 ; rocksdb/optimized/random_access_file_reader.cc.ll
 ; ruby/optimized/date_strptime.ll
 ; rust-analyzer-rs/optimized/57yy3hfi5uyj25tj.ll
 ; slurm/optimized/data_parser_v0_0_39_la-parsers.ll
 ; slurm/optimized/data_parser_v0_0_40_la-parsers.ll
 ; slurm/optimized/data_parser_v0_0_41_la-parsers.ll
-; tomlplusplus/optimized/toml.cpp.ll
 ; tree-sitter-rs/optimized/4sxnw2peombwi3hz.ll
 ; typst-rs/optimized/2llfsdqplv1n1omy.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5kpr1irzb57viu7vn1ci12z94.ll
+; zed-rs/optimized/5rpya7la6h7ws9z99n4ku3sd5.ll
+; zed-rs/optimized/5syv1375c7i7870jctt3co1ip.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/6hbnfszf6gkk4nniq4f5ts2z6.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/an9c1nbjiirpzpjk20en0tyzy.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_v07.c.ll
@@ -37,26 +53,25 @@
 define ptr @func0000000000000002(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 4 occurrences:
-; cpython/optimized/file_tokenizer.ll
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; linux/optimized/zstd_decompress.ll
-; ruby/optimized/array.ll
+; 3 occurrences:
+; node/optimized/libnode.node_report.ll
+; re2/optimized/re2.cc.ll
+; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i64 %1, i1 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr i64, ptr %0, i64 %3
-  %5 = getelementptr i64, ptr %4, i64 %1
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 67 occurrences:
+; 71 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/int_util.cc.ll
 ; arrow/optimized/list_util.cc.ll
@@ -122,18 +137,22 @@ entry:
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; yosys/optimized/simplify.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i1 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr ptr, ptr %0, i64 %3
-  %5 = getelementptr ptr, ptr %4, i64 %1
+  %4 = getelementptr ptr, ptr %0, i64 %1
+  %5 = getelementptr ptr, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 17 occurrences:
+; 29 occurrences:
 ; actix-rs/optimized/34v80y29y6uwgxas.ll
 ; coreutils-rs/optimized/gag8htnqkrxvy02.ll
 ; delta-rs/optimized/17fowff2nvfrfdbu.ll
@@ -151,12 +170,24 @@ entry:
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
+; zed-rs/optimized/1058j2jmz8vfpblqgu0wznwf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1v7j1lpugnisv9daukqm09uho.ll
+; zed-rs/optimized/3r1m4prp00pk2zcmrznfgmdke.ll
+; zed-rs/optimized/56i9d5rrx6hrud8ee30t4acpd.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr i64, ptr %0, i64 %3
-  %5 = getelementptr i64, ptr %4, i64 %1
+  %4 = getelementptr i64, ptr %0, i64 %1
+  %5 = getelementptr i64, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -169,12 +200,12 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 154 occurrences:
+; 150 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/int_util.cc.ll
 ; arrow/optimized/list_util.cc.ll
@@ -182,9 +213,7 @@ entry:
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; cmake/optimized/archive_write_set_format_pax.c.ll
 ; cmake/optimized/cmList.cxx.ll
-; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; git/optimized/diff-delta.ll
-; nix/optimized/nixexpr.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -256,8 +285,6 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; openblas/optimized/dsyrk_thread_LN.c.ll
-; openblas/optimized/dsyrk_thread_LT.c.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -333,8 +360,33 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; nix/optimized/nixexpr.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr i64, ptr %0, i64 %1
+  %5 = getelementptr i64, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 3 occurrences:
+; cpython/optimized/file_tokenizer.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; linux/optimized/zstd_decompress.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -345,8 +397,8 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr i64, ptr %0, i64 %3
-  %5 = getelementptr i64, ptr %4, i64 %1
+  %4 = getelementptr i64, ptr %0, i64 %1
+  %5 = getelementptr i64, ptr %4, i64 %3
   ret ptr %5
 }
 

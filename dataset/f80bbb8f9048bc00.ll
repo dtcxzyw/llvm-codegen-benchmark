@@ -1,5 +1,5 @@
 
-; 334 occurrences:
+; 337 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -57,12 +57,14 @@
 ; llvm/optimized/BlockCounter.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
+; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BuildLibCalls.cpp.ll
 ; llvm/optimized/ByteCodeEmitter.cpp.ll
 ; llvm/optimized/CFGReachabilityAnalysis.cpp.ll
 ; llvm/optimized/CFIInstrInserter.cpp.ll
 ; llvm/optimized/CGAtomic.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CStringChecker.cpp.ll
 ; llvm/optimized/CXXInheritance.cpp.ll
 ; llvm/optimized/CalcSpillWeights.cpp.ll
@@ -279,6 +281,7 @@
 ; llvm/optimized/VPlan.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/VPlanTransforms.cpp.ll
+; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/ValistChecker.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; llvm/optimized/VarLenCodeEmitterGen.cpp.ll
@@ -381,7 +384,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 257
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 
@@ -394,7 +397,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 37
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 

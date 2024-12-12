@@ -5,7 +5,7 @@
 ; git/optimized/tree-walk.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0

@@ -13,7 +13,7 @@ define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, -208
   %3 = add i32 %2, 26624
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = ashr i32 %4, 8
   ret i32 %5
 }

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000310(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -32767
   %3 = icmp ult i32 %2, -32768
@@ -11,27 +11,7 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
-; llvm/optimized/CGExpr.cpp.ll
-; llvm/optimized/CGExprAgg.cpp.ll
-; llvm/optimized/ExprEngineCXX.cpp.ll
-; llvm/optimized/Pointer.cpp.ll
-; llvm/optimized/Sema.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; qemu/optimized/hw_nvme_ctrl.c.ll
-; z3/optimized/api_array.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000228(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -257
-  %3 = icmp ult i32 %2, -256
-  %4 = icmp eq ptr %0, null
-  %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 57 occurrences:
+; 58 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/qtmd.c.ll
@@ -48,6 +28,7 @@ entry:
 ; llvm/optimized/DylibReader.cpp.ll
 ; llvm/optimized/GlobalISelCombinerEmitter.cpp.ll
 ; llvm/optimized/InstrProfCorrelator.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/MemProfReader.cpp.ll
 ; llvm/optimized/MemRegion.cpp.ll
 ; llvm/optimized/Patterns.cpp.ll
@@ -90,7 +71,7 @@ entry:
 ; wolfssl/optimized/rsa.c.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000102(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -27
   %3 = icmp ult i32 %2, -3
@@ -99,18 +80,17 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; gromacs/optimized/pdb2gmx.cpp.ll
 ; grpc/optimized/subchannel.cc.ll
-; llvm/optimized/MachineInstr.cpp.ll
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/interpreterRuntime.ll
 ; openjdk/optimized/subtypenode.ll
 ; velox/optimized/DecodedVector.cpp.ll
 ; verilator/optimized/V3Expand.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000048(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -27
   %3 = icmp ult i32 %2, -3
@@ -124,7 +104,7 @@ entry:
 ; linux/optimized/poll.ll
 ; linux/optimized/scatterlist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000042(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -1
   %3 = icmp eq ptr %0, null
@@ -132,11 +112,10 @@ entry:
   ret i1 %4
 }
 
-; 348 occurrences:
+; 339 occurrences:
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -160,7 +139,6 @@ entry:
 ; llvm/optimized/Attributor.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
-; llvm/optimized/BDCE.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -215,7 +193,6 @@ entry:
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/CodeGenTBAA.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/Comment.cpp.ll
 ; llvm/optimized/CommentToXML.cpp.ll
 ; llvm/optimized/ComparisonCategories.cpp.ll
@@ -245,7 +222,6 @@ entry:
 ; llvm/optimized/DereferenceChecker.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/ErrnoModeling.cpp.ll
-; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; llvm/optimized/ExpandMemCmp.cpp.ll
 ; llvm/optimized/ExpandReductions.cpp.ll
@@ -255,7 +231,6 @@ entry:
 ; llvm/optimized/ExprClassification.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/ExprEngine.cpp.ll
-; llvm/optimized/ExprEngineCXX.cpp.ll
 ; llvm/optimized/ExprInspectionChecker.cpp.ll
 ; llvm/optimized/ExternalASTMerger.cpp.ll
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
@@ -373,7 +348,6 @@ entry:
 ; llvm/optimized/QualTypeNames.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
@@ -428,7 +402,6 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
-; llvm/optimized/SemaWasm.cpp.ll
 ; llvm/optimized/SemaX86.cpp.ll
 ; llvm/optimized/SeparateConstOffsetFromGEP.cpp.ll
 ; llvm/optimized/ShadowStackGCLowering.cpp.ll
@@ -455,7 +428,6 @@ entry:
 ; llvm/optimized/TransGCAttrs.cpp.ll
 ; llvm/optimized/TruncInstCombine.cpp.ll
 ; llvm/optimized/TypePromotion.cpp.ll
-; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UndefResultChecker.cpp.ll
 ; llvm/optimized/UndefinedAssignmentChecker.cpp.ll
@@ -463,7 +435,6 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/VPlanAnalysis.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
-; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/Value.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/VarBypassDetector.cpp.ll
@@ -482,7 +453,7 @@ entry:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000282(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000902(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -19
   %3 = icmp ult i32 %2, -2
@@ -491,22 +462,28 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; llvm/optimized/ExprEngineCXX.cpp.ll
+; 7 occurrences:
+; llvm/optimized/CGExpr.cpp.ll
+; llvm/optimized/CGExprAgg.cpp.ll
+; llvm/optimized/Pointer.cpp.ll
+; llvm/optimized/Sema.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; z3/optimized/api_array.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000298(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000848(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -2
-  %3 = icmp ult i32 %2, 5
-  %4 = icmp ne ptr %0, null
-  %5 = or i1 %4, %3
+  %2 = add nsw i32 %1, -49
+  %3 = icmp ult i32 %2, -3
+  %4 = icmp eq ptr %0, null
+  %5 = or i1 %3, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/indexutil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000118(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -4
   %3 = icmp ult i32 %2, -2
@@ -518,7 +495,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/delegatedCountPtr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000382(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000b02(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %3 = icmp eq ptr %0, null
@@ -529,7 +506,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/setup-bus.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000308(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = icmp ult i32 %2, 4
@@ -542,7 +519,7 @@ entry:
 ; linux/optimized/proc_sysctl.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000302(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %3 = icmp eq ptr %0, null
@@ -553,7 +530,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/lpsolver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000842(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp eq ptr %0, null
@@ -564,7 +541,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000230(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000850(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -58
   %3 = icmp ult i32 %2, -10

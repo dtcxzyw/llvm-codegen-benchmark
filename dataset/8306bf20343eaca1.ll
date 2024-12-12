@@ -14,7 +14,8 @@ entry:
   ret i16 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000001c(i16 %0, i32 %1) #0 {

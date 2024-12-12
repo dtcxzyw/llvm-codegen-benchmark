@@ -1,5 +1,5 @@
 
-; 919 occurrences:
+; 923 occurrences:
 ; abc/optimized/bmcChain.c.ll
 ; abc/optimized/dchSim.c.ll
 ; abc/optimized/fraCore.c.ll
@@ -53,7 +53,6 @@
 ; hermes/optimized/TimeLimitMonitor.cpp.ll
 ; hermes/optimized/TraverseLiteralStrings.cpp.ll
 ; hermes/optimized/TypeInference.cpp.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64ConditionalCompares.cpp.ll
 ; llvm/optimized/AArch64ELFStreamer.cpp.ll
@@ -643,7 +642,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -918,6 +916,12 @@
 ; llvm/optimized/X86WinCOFFTargetStreamer.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
+; pbrt-v4/optimized/camera.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
+; pbrt-v4/optimized/lowdiscrepancy.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; pbrt-v4/optimized/samples.cpp.ll
 ; spike/optimized/aes64im.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {

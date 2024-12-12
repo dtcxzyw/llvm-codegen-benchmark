@@ -14,13 +14,13 @@ func0000000000000002:                   # @func0000000000000002
 	cmpq	$7, %rdi
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addq	$-8173, %rdi                    # imm = 0xE013
 	xorl	%eax, %eax
 	cmpq	$-8193, %rdi                    # imm = 0xDFFF
 	setb	%al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	xorl	%eax, %eax
 	cmpq	$-1, %rdi
 	sete	%al

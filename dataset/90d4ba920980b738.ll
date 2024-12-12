@@ -17,7 +17,7 @@ entry:
   ret i8 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; clamav/optimized/regex_list.c.ll
 ; git/optimized/writer.ll
 ; grpc/optimized/flow_control.cc.ll
@@ -28,7 +28,6 @@ entry:
 ; llvm/optimized/SemaAvailability.cpp.ll
 ; llvm/optimized/Targets.cpp.ll
 ; llvm/optimized/X86AsmBackend.cpp.ll
-; openblas/optimized/lapacke_dlarfb_work.c.ll
 ; openspiel/optimized/oshi_zumo.cc.ll
 ; quickjs/optimized/quickjs.ll
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
@@ -41,7 +40,7 @@ entry:
 define i8 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = select i1 %3, i8 -128, i8 0
   ret i8 %4
 }
@@ -56,7 +55,7 @@ entry:
 define i8 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = select i1 %3, i8 4, i8 0
   ret i8 %4
 }

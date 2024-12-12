@@ -37,3 +37,21 @@ func0000000000000070:                   # @func0000000000000070
 	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, 4
 	ret
+func0000000000000026:                   # @func0000000000000026
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v10, v10, 3
+	vadd.vi	v10, v10, 15
+	vand.vi	v10, v10, -16
+	vadd.vv	v8, v8, v10
+	li	a0, 17
+	vadd.vx	v8, v8, a0
+	ret
+func00000000000000a2:                   # @func00000000000000a2
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v10, v10, 3
+	vadd.vi	v10, v10, 15
+	vand.vi	v10, v10, -16
+	vadd.vv	v8, v8, v10
+	li	a0, 17
+	vadd.vx	v8, v8, a0
+	ret

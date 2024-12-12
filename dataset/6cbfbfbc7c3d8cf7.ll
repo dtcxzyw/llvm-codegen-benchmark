@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/mapperTree.c.ll
 ; abc/optimized/utilNam.c.ll
@@ -20,7 +20,6 @@
 ; linux/optimized/auditsc.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/gro.ll
-; linux/optimized/mcast_snoop.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
 ; luajit/optimized/buildvm.ll
@@ -53,7 +52,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = add i32 %4, 1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -66,7 +65,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = add i32 %4, 5
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -88,6 +87,18 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = trunc i64 %3 to i32
+  %5 = add nuw nsw i32 %4, 1
+  %6 = add nsw i32 %0, %5
+  ret i32 %6
+}
+
+; 1 occurrences:
 ; openmpi/optimized/onesided_aggregation.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000045(i32 %0, i64 %1, i64 %2) #0 {
@@ -95,7 +106,7 @@ entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = add nsw i32 %4, 1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

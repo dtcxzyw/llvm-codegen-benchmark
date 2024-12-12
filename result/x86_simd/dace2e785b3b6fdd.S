@@ -58,7 +58,7 @@ func000000000000001c:                   # @func000000000000001c
 	vpmovsxbw	.LCPI0_3(%rip), %ymm2   # ymm2 = [1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0]
 	vpsllvw	%ymm1, %ymm2, %ymm1
 	vpmovwb	%ymm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
@@ -121,7 +121,7 @@ func000000000000007c:                   # @func000000000000007c
 	vpmovsxbw	.LCPI1_3(%rip), %ymm2   # ymm2 = [1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0]
 	vpsllvw	%ymm1, %ymm2, %ymm1
 	vpmovwb	%ymm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI2_0:
@@ -184,7 +184,7 @@ func000000000000003c:                   # @func000000000000003c
 	vpmovsxbw	.LCPI2_3(%rip), %ymm2   # ymm2 = [1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0]
 	vpsllvw	%ymm1, %ymm2, %ymm1
 	vpmovwb	%ymm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI3_0:
@@ -247,6 +247,6 @@ func000000000000005c:                   # @func000000000000005c
 	vpmovsxbw	.LCPI3_3(%rip), %ymm2   # ymm2 = [1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0]
 	vpsllvw	%ymm1, %ymm2, %ymm1
 	vpmovwb	%ymm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

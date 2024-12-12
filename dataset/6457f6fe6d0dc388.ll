@@ -61,8 +61,8 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
-  %4 = or i32 %3, %1
-  %5 = or i32 %4, %0
+  %4 = or i32 %1, %3
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -84,15 +84,14 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
-; linux/optimized/nvram.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 8
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
@@ -208,7 +207,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 12
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }

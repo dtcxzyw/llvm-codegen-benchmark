@@ -1,5 +1,5 @@
 
-; 119 occurrences:
+; 115 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; c3c/optimized/llvm_codegen_function.c.ll
@@ -20,7 +20,6 @@
 ; hermes/optimized/JSProxy.cpp.ll
 ; linux/optimized/coredump.ll
 ; linux/optimized/dm.ll
-; linux/optimized/fils_aead.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/i2c-core-smbus.ll
@@ -111,9 +110,6 @@
 ; ruby/optimized/iseq.ll
 ; ruby/optimized/raddrinfo.ll
 ; ruby/optimized/time.ll
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i64.ll
-; spike/optimized/f16_to_ui32.ll
 ; sqlite/optimized/sqlite3.ll
 ; verilator/optimized/V3Param.cpp.ll
 ; wasmedge/optimized/vinode.cpp.ll

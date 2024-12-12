@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; assimp/optimized/JoinVerticesProcess.cpp.ll
 ; hwloc/optimized/topology-linux.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -9,6 +9,7 @@
 ; openusd/optimized/mallocTag.cpp.ll
 ; redis/optimized/dict.ll
 ; wasmtime-rs/optimized/fn3cxi5qpl58ixq.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i64 %1) #0 {
 entry:

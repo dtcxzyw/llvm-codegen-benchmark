@@ -36,9 +36,10 @@ entry:
   ret i32 %7
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; icu/optimized/package.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll

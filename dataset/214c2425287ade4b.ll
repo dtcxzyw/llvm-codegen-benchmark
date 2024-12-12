@@ -11,11 +11,10 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_colortransfer.c.ll
 ; flac/optimized/bitwriter.c.ll
 ; linux/optimized/af_netlink.ll
-; linux/optimized/nfs4renewd.ll
 ; linux/optimized/tg3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i64 %0) #0 {
@@ -40,8 +39,12 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; llvm/optimized/SemaAttr.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0) #0 {
 entry:

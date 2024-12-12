@@ -31,6 +31,23 @@ func000000000000000a:                   // @func000000000000000a
 	eor	w0, w8, #0x1
 	ret
                                         // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	add	x8, x1, x2
+	sub	x8, x0, x8
+	cmp	x8, #512
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000018:                   // @func0000000000000018
+// %bb.0:                               // %entry
+	add	x8, x1, x2
+	sub	x8, x0, x8
+	lsr	x8, x8, #22
+	cmp	x8, #24
+	cset	w0, hi
+	ret
+                                        // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
 	add	x8, x1, x2

@@ -51,6 +51,7 @@
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -65,7 +66,6 @@
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; php/optimized/dirstream.ll
-; php/optimized/pcre2_maketables.ll
 ; php/optimized/phar.ll
 ; ripgrep-rs/optimized/17szqs4crgj36yow.ll
 ; ruby/optimized/time.ll
@@ -86,7 +86,7 @@ entry:
   ret i16 %3
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/types.c.ll
 ; git/optimized/fast-import.ll
@@ -109,7 +109,6 @@ entry:
 ; php/optimized/tar.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/ripper.ll
 ; sqlite/optimized/sqlite3.ll
@@ -136,6 +135,7 @@ entry:
 ; llvm/optimized/TokenLexer.cpp.ll
 ; llvm/optimized/X86InstrFoldTables.cpp.ll
 ; lua/optimized/lapi.ll
+; lvgl/optimized/lv_obj.ll
 ; openjdk/optimized/bytecodes.ll
 ; openusd/optimized/mvref_common.c.ll
 ; php/optimized/ir_ra.ll
@@ -145,14 +145,13 @@ entry:
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; rust-analyzer-rs/optimized/68ytxs4wk5ncclk.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = or i16 %0, %1
-  %3 = or i16 %2, 128
+  %3 = or i16 %2, 256
   ret i16 %3
 }
 

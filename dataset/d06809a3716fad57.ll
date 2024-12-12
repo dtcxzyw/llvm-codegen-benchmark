@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 19 occurrences:
 ; assimp/optimized/MD5Loader.cpp.ll
 ; assimp/optimized/Subdivision.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -16,6 +16,9 @@
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll
 ; z3/optimized/dl_mk_simple_joins.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:
@@ -48,7 +51,7 @@ define float @func0000000000000001(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = uitofp nneg i32 %2 to float
   %4 = fdiv float %1, %3
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

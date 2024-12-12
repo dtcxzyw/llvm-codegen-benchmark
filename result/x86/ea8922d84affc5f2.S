@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	xorb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	cmpl	$1, %esi
+	testl	%esi, %esi
 	setne	%al
 	xorb	%dil, %al
 	retq

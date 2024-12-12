@@ -12,12 +12,13 @@ entry:
   ret i64 %7
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; entt/optimized/group.cpp.ll
 ; entt/optimized/storage.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/zMark.ll
 ; zstd/optimized/divsufsort.c.ll

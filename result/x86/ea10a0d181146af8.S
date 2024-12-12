@@ -193,20 +193,31 @@ func0000000000000047:                   # @func0000000000000047
 	kmovd	%k0, %eax
 	retq
 .LCPI20_0:
+	.long	0x7f800000                      # float +Inf
+.LCPI20_1:
+	.long	0x5f000000                      # float 9.22337203E+18
+func0000000000000036:                   # @func0000000000000036
+	vmovss	.LCPI20_0(%rip), %xmm1          # xmm1 = [+Inf,0.0E+0,0.0E+0,0.0E+0]
+	vcmpneq_oqps	%xmm1, %xmm0, %k1
+	vmovss	.LCPI20_1(%rip), %xmm1          # xmm1 = [9.22337203E+18,0.0E+0,0.0E+0,0.0E+0]
+	vcmpnleps	%xmm0, %xmm1, %k0 {%k1}
+	kmovd	%k0, %eax
+	retq
+.LCPI21_0:
 	.long	0x447a0000                      # float 1000
 func0000000000000074:                   # @func0000000000000074
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpltps	%xmm0, %xmm1, %k1
-	vmovss	.LCPI20_0(%rip), %xmm1          # xmm1 = [1.0E+3,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI21_0(%rip), %xmm1          # xmm1 = [1.0E+3,0.0E+0,0.0E+0,0.0E+0]
 	vcmpneqps	%xmm1, %xmm0, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
-.LCPI21_0:
+.LCPI22_0:
 	.long	0x3f800000                      # float 1
 func000000000000007e:                   # @func000000000000007e
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpordps	%xmm1, %xmm0, %k1
-	vmovss	.LCPI21_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI22_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vcmpneqps	%xmm1, %xmm0, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq

@@ -1,13 +1,11 @@
 
-%"struct.std::atomic.29.2510618" = type { %"struct.std::__atomic_base.30.2510619" }
-%"struct.std::__atomic_base.30.2510619" = type { ptr }
+%"struct.std::atomic.29.2625758" = type { %"struct.std::__atomic_base.30.2625759" }
+%"struct.std::__atomic_base.30.2625759" = type { ptr }
 
-; 78 occurrences:
+; 61 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/giaForce.c.ll
 ; abc/optimized/giaGlitch.c.ll
-; abc/optimized/kitIsop.c.ll
-; assimp/optimized/Assimp.cpp.ll
 ; cpython/optimized/arraymodule.ll
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/flowgraph.ll
@@ -21,8 +19,6 @@
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/JSCallableProxy.cpp.ll
 ; hermes/optimized/hermes.cpp.ll
-; icu/optimized/rematch.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/calipso.ll
 ; linux/optimized/compat_binfmt_elf.ll
@@ -30,25 +26,17 @@
 ; linux/optimized/datagram.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/filter.ll
-; linux/optimized/generic_mpih-add1.ll
-; linux/optimized/generic_mpih-sub1.ll
 ; linux/optimized/icmp.ll
 ; linux/optimized/lz4_decompress.ll
 ; linux/optimized/percpu.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/trace_events_filter.ll
 ; linux/optimized/vsprintf.ll
 ; linux/optimized/xfrm_output.ll
 ; linux/optimized/zstd_decompress_block.ll
-; luau/optimized/lapi.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; mixbox/optimized/mixbox.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
-; nori/optimized/nanovg.c.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
 ; postgres/optimized/backend_status.ll
 ; postgres/optimized/like_support.ll
 ; postgres/optimized/numutils.ll
@@ -64,9 +52,6 @@
 ; qemu/optimized/fdt_sw.c.ll
 ; qemu/optimized/hw_ide_atapi.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
-; raylib/optimized/rcore.c.ll
-; raylib/optimized/rmodels.c.ll
-; raylib/optimized/rtextures.c.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/numeric.ll
@@ -77,8 +62,6 @@
 ; ruby/optimized/string.ll
 ; ruby/optimized/transcode.ll
 ; ruby/optimized/vm.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/dot11decrypt_ccmp.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
@@ -90,7 +73,7 @@ entry:
   ret ptr %4
 }
 
-; 329 occurrences:
+; 337 occurrences:
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bblif.c.ll
@@ -119,6 +102,8 @@ entry:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
+; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
@@ -198,7 +183,6 @@ entry:
 ; icu/optimized/unisetspan.ll
 ; icu/optimized/uresdata.ll
 ; icu/optimized/ustring.ll
-; icu/optimized/utrie.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jq/optimized/execute.ll
@@ -210,6 +194,7 @@ entry:
 ; libwebp/optimized/filters_sse2.c.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/io_dec.c.ll
+; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/tree_enc.c.ll
 ; libwebp/optimized/webp_enc.c.ll
@@ -225,6 +210,7 @@ entry:
 ; llvm/optimized/CloneFunction.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/Core.cpp.ll
+; llvm/optimized/CoroSplit.cpp.ll
 ; llvm/optimized/CycleAnalysis.cpp.ll
 ; llvm/optimized/CycleInfo.cpp.ll
 ; llvm/optimized/DeadArgumentElimination.cpp.ll
@@ -236,6 +222,7 @@ entry:
 ; llvm/optimized/MustExecute.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SourceMgr.cpp.ll
+; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; lua/optimized/lapi.ll
 ; lua/optimized/ldebug.ll
@@ -255,12 +242,17 @@ entry:
 ; luau/optimized/ldo.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; luau/optimized/lvmutils.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
 ; lz4/optimized/lz4.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
+; mixbox/optimized/mixbox.ll
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
 ; ncnn/optimized/padding.cpp.ll
 ; ncnn/optimized/padding_x86.cpp.ll
@@ -300,7 +292,6 @@ entry:
 ; opencv/optimized/persistence_types.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
@@ -335,7 +326,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-e_chacha20_poly1305.ll
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
 ; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-lib-rsa_none.ll
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-lib-v3_utl.ll
 ; openssl/optimized/libcrypto-shlib-cms_pwri.ll
@@ -344,7 +334,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-e_chacha20_poly1305.ll
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
 ; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-shlib-rsa_none.ll
 ; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-shlib-v3_utl.ll
 ; openusd/optimized/convolve.c.ll
@@ -374,6 +363,8 @@ entry:
 ; protobuf/optimized/coded_stream.cc.ll
 ; protobuf/optimized/parse_context.cc.ll
 ; raylib/optimized/raudio.c.ll
+; raylib/optimized/rcore.c.ll
+; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/lapi.ll
 ; redis/optimized/ldo.ll
@@ -425,7 +416,23 @@ define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"struct.std::atomic.29.2510618", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.std::atomic.29.2625758", ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 6 occurrences:
+; boost/optimized/to_chars.ll
+; cmake/optimized/divsufsort.c.ll
+; icu/optimized/utrie.ll
+; lua/optimized/lapi.ll
+; opencv/optimized/smooth.dispatch.cpp.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

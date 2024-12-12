@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/acecCl.c.ll
@@ -23,13 +23,14 @@
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/pdrTsim2.c.ll
 ; abc/optimized/sbdCore.c.ll
+; abc/optimized/sbdWin.c.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 62
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = and i32 %4, 1
   ret i32 %5
 }
@@ -41,7 +42,7 @@ define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = and i32 %4, 1023
   ret i32 %5
 }
@@ -53,7 +54,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 3
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = and i32 %4, 4095
   ret i32 %5
 }

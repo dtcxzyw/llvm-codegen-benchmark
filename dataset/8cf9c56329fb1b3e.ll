@@ -1,5 +1,7 @@
 
-; 49 occurrences:
+; 51 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/polynomial.cc.ll
 ; flac/optimized/window.c.ll
 ; g2o/optimized/dquat2mat.cpp.ll

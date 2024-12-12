@@ -1,13 +1,14 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000194(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 31
   %3 = lshr i32 %2, 5
   %4 = lshr i32 %0, 5
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
@@ -17,7 +18,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %.unshifted = xor i32 %2, %0
+  %.unshifted = xor i32 %0, %2
   %3 = icmp ult i32 %.unshifted, 2
   ret i1 %3
 }
@@ -28,10 +29,10 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %.unshifted = xor i32 %2, %0
+  %.unshifted = xor i32 %0, %2
   %3 = icmp ult i32 %.unshifted, 2
   ret i1 %3
 }
@@ -71,12 +72,12 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 64
   %3 = lshr i32 %2, 6
   %4 = lshr i32 %0, 6
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   ret i1 %5
 }
 
@@ -86,12 +87,12 @@ entry:
 ; z3/optimized/sat_proof_trim.cpp.ll
 ; z3/optimized/state_graph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1047
   %3 = lshr i32 %2, 10
   %4 = lshr i32 %0, 16
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 

@@ -1,10 +1,24 @@
 
-; 147 occurrences:
+; 161 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; eastl/optimized/EAString.cpp.ll
 ; git/optimized/skipping.ll
+; icu/optimized/anytrans.ll
+; icu/optimized/datamap.ll
+; icu/optimized/derb.ll
+; icu/optimized/emojiprops.ll
+; icu/optimized/filterednormalizer2.ll
+; icu/optimized/messagepattern.ll
+; icu/optimized/msgfmt.ll
+; icu/optimized/name2uni.ll
+; icu/optimized/smpdtfmt.ll
+; icu/optimized/translit.ll
+; icu/optimized/uconv.ll
+; icu/optimized/uniset_closure.ll
+; icu/optimized/uts46.ll
+; icu/optimized/wrtxml.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; linux/optimized/inet_connection_sock.ll
 ; linux/optimized/ip6_input.ll
@@ -12,7 +26,6 @@
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/nf_reject_ipv4.ll
 ; linux/optimized/nf_reject_ipv6.ll
-; linux/optimized/sta_info.ll
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
 ; llvm/optimized/BodyFarm.cpp.ll
@@ -42,6 +55,7 @@
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/Sarif.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
@@ -155,10 +169,59 @@ entry:
   ret ptr %3
 }
 
-; 32 occurrences:
+; 81 occurrences:
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/ASTStructuralEquivalence.cpp.ll
 ; llvm/optimized/BodyFarm.cpp.ll
+; llvm/optimized/CGClass.cpp.ll
+; llvm/optimized/CGDebugInfo.cpp.ll
+; llvm/optimized/CGExpr.cpp.ll
+; llvm/optimized/CGExprAgg.cpp.ll
+; llvm/optimized/CGExprConstant.cpp.ll
+; llvm/optimized/CGNonTrivialStruct.cpp.ll
+; llvm/optimized/CGOpenMPRuntime.cpp.ll
+; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
+; llvm/optimized/CGStmtOpenMP.cpp.ll
+; llvm/optimized/Compiler.cpp.ll
+; llvm/optimized/Decl.cpp.ll
+; llvm/optimized/DeclBase.cpp.ll
+; llvm/optimized/DeclObjC.cpp.ll
+; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/ItaniumMangle.cpp.ll
+; llvm/optimized/MemRegion.cpp.ll
+; llvm/optimized/MemberPointer.cpp.ll
+; llvm/optimized/ODRHash.cpp.ll
+; llvm/optimized/ParseCXXInlineMethods.cpp.ll
+; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
+; llvm/optimized/ParseOpenMP.cpp.ll
+; llvm/optimized/Pointer.cpp.ll
+; llvm/optimized/RecordLayoutBuilder.cpp.ll
+; llvm/optimized/RegionStore.cpp.ll
+; llvm/optimized/Sema.cpp.ll
+; llvm/optimized/SemaBoundsSafety.cpp.ll
+; llvm/optimized/SemaCUDA.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/SemaDeclObjC.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaExprMember.cpp.ll
+; llvm/optimized/SemaLambda.cpp.ll
+; llvm/optimized/SemaStmt.cpp.ll
+; llvm/optimized/SemaStmtAsm.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; llvm/optimized/SemaType.cpp.ll
+; llvm/optimized/SimpleSValBuilder.cpp.ll
+; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; node/optimized/libnode.process_wrap.ll
 ; verilator/optimized/V3ActiveTop.cpp.ll
 ; verilator/optimized/V3Ast.cpp.ll

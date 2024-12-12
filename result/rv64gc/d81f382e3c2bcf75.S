@@ -4,19 +4,25 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sll	a1, a1, a2
 	seqz	a0, a0
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sll	a1, a1, a2
 	seqz	a0, a0
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
+	sll	a1, a1, a2
+	sltiu	a0, a0, 64
+	addi	a0, a0, -1
+	or	a0, a0, a1
+	ret
+func0000000000000018:                   # @func0000000000000018
 	sll	a1, a1, a2
 	sltiu	a0, a0, 64
 	addi	a0, a0, -1

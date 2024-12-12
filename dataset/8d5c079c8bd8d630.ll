@@ -28,8 +28,7 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; opencv/optimized/lkpyramid.cpp.ll
+; 3 occurrences:
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll

@@ -20,5 +20,5 @@ func0000000000000005:                   # @func0000000000000005
 	vzext.vf4	v12, v10
 	vsll.vi	v8, v8, 8
 	vor.vv	v8, v8, v12
-	vmerge.vim	v8, v8, -1, v0
+	vmerge.vim	v8, v8, 0, v0
 	ret

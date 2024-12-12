@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/kernel_timeout.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
@@ -8,7 +8,6 @@
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; glog/optimized/logging.cc.ll
 ; llvm/optimized/CGAtomic.cpp.ll
-; openblas/optimized/dpotrf_U_single.c.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/pgbench.ll
 ; qemu/optimized/block_block-copy.c.ll
@@ -33,7 +32,7 @@ entry:
   ret i64 %3
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; clamav/optimized/gpt.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
@@ -63,6 +62,7 @@ entry:
 ; rocksdb/optimized/version_set.cc.ll
 ; ruby/optimized/pack.ll
 ; yosys/optimized/cxxrtl_backend.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
@@ -72,7 +72,7 @@ entry:
   ret i64 %3
 }
 
-; 42 occurrences:
+; 45 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/OpenGEXImporter.cpp.ll
@@ -111,10 +111,13 @@ entry:
 ; qemu/optimized/hw_virtio_virtio-balloon.c.ll
 ; qemu/optimized/migration_ram.c.ll
 ; qemu/optimized/system_dma-helpers.c.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
 ; wasmtime-rs/optimized/2rxishkjui70pb7b.ll
 ; wasmtime-rs/optimized/4xu6ecb82tc69emg.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; wireshark/optimized/tap-iostat.c.ll
+; zed-rs/optimized/01673j3qy7vs5no0rm7cvabqs.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:

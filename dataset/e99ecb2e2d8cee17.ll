@@ -38,7 +38,9 @@ entry:
   ret i1 %4
 }
 
-; 28 occurrences:
+; 31 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -67,6 +69,7 @@ entry:
 ; pbrt-v4/optimized/cameras.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rshapes.c.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, float %1, float %2) #0 {
 entry:
@@ -75,7 +78,7 @@ entry:
   ret i1 %4
 }
 
-; 98 occurrences:
+; 108 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
@@ -83,6 +86,9 @@ entry:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/DXFLoader.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_rgblevels.c.ll
@@ -95,6 +101,8 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/point3_value.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
@@ -174,6 +182,11 @@ entry:
 ; postgres/optimized/rangetypes_gist.ll
 ; pybind11/optimized/test_operator_overloading.cpp.ll
 ; pybind11/optimized/test_sequences_and_iterators.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, float %1, float %2) #0 {
 entry:
@@ -182,7 +195,7 @@ entry:
   ret i1 %4
 }
 
-; 54 occurrences:
+; 60 occurrences:
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btCollisionWorld.ll
@@ -217,14 +230,19 @@ entry:
 ; mitsuba3/optimized/ptracer.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
+; opencv/optimized/ar_hmdb_benchmark.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/degeneracy.cpp.ll
 ; opencv/optimized/fast_icp.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
+; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/motempl.cpp.ll
 ; opencv/optimized/nonrigid_icp.cpp.ll
+; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; opencv/optimized/warpers.cpp.ll
+; opencv/optimized/warpfield.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
@@ -237,6 +255,7 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, float %1, float %2) #0 {
 entry:
@@ -375,13 +394,14 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; graphviz/optimized/clusteredges.c.ll
 ; opencv/optimized/alignment_pattern_finder.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
 ; openexr/optimized/ImfChromaticities.cpp.ll
 ; openusd/optimized/dataSourceLegacyPrim.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
+; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(i1 %0, float %1, float %2) #0 {
 entry:

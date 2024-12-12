@@ -170,7 +170,7 @@
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = add nsw i32 %0, -9001
@@ -182,7 +182,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/deoptimization.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000194(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000324(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = add nsw i32 %0, -1
@@ -191,7 +191,8 @@ entry:
   ret i1 %5
 }
 
-; 143 occurrences:
+; 144 occurrences:
+; freetype/optimized/ftgzip.c.ll
 ; nanobind/optimized/nb_type.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -336,7 +337,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = add i32 %0, -9001
@@ -348,7 +349,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/msgfmt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000224(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2
   %3 = add nsw i32 %0, -3

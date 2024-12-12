@@ -1,5 +1,5 @@
 
-; 339 occurrences:
+; 354 occurrences:
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclDnsize.c.ll
 ; abc/optimized/sclLoad.c.ll
@@ -144,6 +144,9 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/jfdctflt.c.ll
 ; libjpeg-turbo/optimized/jidctflt.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
@@ -157,7 +160,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -263,12 +265,15 @@
 ; opencv/optimized/rho.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/select3dobj.cpp.ll
+; opencv/optimized/short_term_imageless_tracker.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
+; opencv/optimized/tracker.cpp.ll
 ; opencv/optimized/tvl1flow.cpp.ll
 ; opencv/optimized/vgg.cpp.ll
 ; opencv/optimized/warpfield.cpp.ll
+; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openjdk/optimized/OGLRenderer.ll
@@ -339,6 +344,16 @@
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/tree_model.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7z2xfgroq6luy23s4a62wgt90.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

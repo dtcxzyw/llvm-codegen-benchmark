@@ -1,9 +1,11 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %0, 1
@@ -30,7 +32,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bio_b64.ll
 ; openssl/optimized/libcrypto-shlib-bio_b64.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000010a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw i32 %0, 1542
@@ -39,13 +41,12 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; linux/optimized/i915_gem_wait.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i915_request.ll
 ; linux/optimized/i915_scheduler.ll
-; linux/optimized/intel_display_rps.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/intel_gt_irq.ll
 ; linux/optimized/intel_guc_submission.ll
@@ -66,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw nsw i32 %0, 1
@@ -79,7 +80,7 @@ entry:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %0, -2
@@ -107,7 +108,7 @@ entry:
 ; wireshark/optimized/lte_rlc_graph_dialog.cpp.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000406(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %0, 1
@@ -119,7 +120,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003aa(i32 %0, i64 %1) #0 {
+define i1 @func000000000000074a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw i32 %0, 64
@@ -131,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a6(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000746(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw i32 %0, 11
@@ -143,7 +144,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/repeat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000604(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add i32 %0, 1

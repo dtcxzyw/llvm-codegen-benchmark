@@ -17,6 +17,14 @@ func00000000000000bb:                   # @func00000000000000bb
 	vmfgt.vf	v17, v8, fa5
 	vmorn.mm	v0, v16, v17
 	ret
+func0000000000000088:                   # @func0000000000000088
+	fli.d	fa5, 2.0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfeq.vf	v24, v16, fa5
+	vmor.mm	v16, v0, v24
+	vmfeq.vf	v17, v8, fa5
+	vmor.mm	v0, v16, v17
+	ret
 func0000000000000022:                   # @func0000000000000022
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -30,14 +38,6 @@ func0000000000000011:                   # @func0000000000000011
 	vmfne.vv	v24, v16, v16
 	vmor.mm	v16, v0, v24
 	vmfne.vv	v17, v8, v8
-	vmor.mm	v0, v16, v17
-	ret
-func0000000000000088:                   # @func0000000000000088
-	fli.d	fa5, inf
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfeq.vf	v24, v16, fa5
-	vmor.mm	v16, v0, v24
-	vmfeq.vf	v17, v8, fa5
 	vmor.mm	v0, v16, v17
 	ret
 .LCPI5_0:

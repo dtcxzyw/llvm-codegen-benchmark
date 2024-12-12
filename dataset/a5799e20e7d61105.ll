@@ -163,7 +163,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000124(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000244(i128 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
   %3 = lshr i64 %2, 63

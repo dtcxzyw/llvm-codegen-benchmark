@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	lui	a0, 5
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -22,7 +22,7 @@ func0000000000000004:                   # @func0000000000000004
 	addiw	a0, a0, -1
 	vrsub.vx	v8, v10, a0, v0.t
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsleu.vi	v0, v8, 3
 	vmv.v.i	v8, 5

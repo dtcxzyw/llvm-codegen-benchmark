@@ -1,8 +1,8 @@
 
-%"struct.irr::scene::ISkinnedMesh::SRotationKey.2589146" = type { float, %"class.irr::core::quaternion.2589143" }
-%"class.irr::core::quaternion.2589143" = type { float, float, float, float }
+%"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991" = type { float, %"class.irr::core::quaternion.2702988" }
+%"class.irr::core::quaternion.2702988" = type { float, float, float, float }
 
-; 115 occurrences:
+; 114 occurrences:
 ; assimp/optimized/IFCUtil.cpp.ll
 ; brotli/optimized/static_dict.c.ll
 ; clamav/optimized/infblock.c.ll
@@ -100,7 +100,6 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
 ; php/optimized/dfa_pass.ll
-; php/optimized/is_simh.ll
 ; php/optimized/softmagic.ll
 ; redis/optimized/listpack.ll
 ; rocksdb/optimized/plain_table_index.cc.ll
@@ -119,16 +118,16 @@
 ; zstd/optimized/zstd_ldm.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   ret i64 %6
 }
 
-; 50 occurrences:
+; 53 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaOf.c.ll
 ; brotli/optimized/backward_references.c.ll
@@ -147,6 +146,7 @@ entry:
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/control_verbs.cpp.ll
 ; icu/optimized/reslist.ll
+; imgui/optimized/imgui_widgets.cpp.ll
 ; libphonenumber/optimized/unicodetext.cc.ll
 ; llvm/optimized/Statistic.cpp.ll
 ; lua/optimized/lvm.ll
@@ -158,6 +158,8 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; node/optimized/libnode.inspector_socket.ll
+; opencv/optimized/geometry.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-buffer-serialize.ll
@@ -180,22 +182,21 @@ entry:
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000001c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2589146", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   ret i64 %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/rx.ll
-; opencv/optimized/geometry.cpp.ll
 ; postgres/optimized/tsvector.ll
 ; postgres/optimized/varlena.ll
 ; qemu/optimized/accel_tcg_translate-all.c.ll
@@ -212,7 +213,7 @@ entry:
   ret i64 %6
 }
 
-; 43 occurrences:
+; 40 occurrences:
 ; cpython/optimized/sre.ll
 ; linux/optimized/act_api.ll
 ; linux/optimized/addrconf.ll
@@ -222,7 +223,6 @@ entry:
 ; linux/optimized/cls_cgroup.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/ematch.ll
-; linux/optimized/fec.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/genetlink.ll
 ; linux/optimized/gro.ll
@@ -230,7 +230,6 @@ entry:
 ; linux/optimized/intel_lrc.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/ipmr_base.ll
-; linux/optimized/mm.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/netlabel_cipso_v4.ll
 ; linux/optimized/netlabel_mgmt.ll
@@ -240,7 +239,6 @@ entry:
 ; linux/optimized/nf_nat_helper.ll
 ; linux/optimized/nfnetlink_log.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/pause.ll
 ; linux/optimized/pmsr.ll
 ; linux/optimized/policy.ll
 ; linux/optimized/route.ll

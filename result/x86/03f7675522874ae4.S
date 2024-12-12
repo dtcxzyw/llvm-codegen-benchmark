@@ -1,8 +1,8 @@
 func0000000000000003:                   # @func0000000000000003
 	andl	$1, %edx
-	leal	4(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
+	leal	2048(%rsi,%rdx), %eax
+	movl	%esi, %ecx
+	orl	%edx, %ecx
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

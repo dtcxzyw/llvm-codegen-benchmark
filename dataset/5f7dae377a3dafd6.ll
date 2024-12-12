@@ -39,13 +39,13 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000006f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = add nuw nsw i64 %3, 4294967295
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -53,13 +53,13 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000066(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000067(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = add nuw nsw i64 %3, 4294967295
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 

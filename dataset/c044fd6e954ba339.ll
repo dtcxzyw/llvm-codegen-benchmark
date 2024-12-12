@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; abc/optimized/fxuPair.c.ll
+; 5 occurrences:
 ; git/optimized/refs.ll
 ; linux/optimized/tree.ll
 ; llvm/optimized/ExprCXX.cpp.ll

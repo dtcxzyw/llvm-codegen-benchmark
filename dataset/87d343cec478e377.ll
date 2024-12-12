@@ -82,8 +82,9 @@ entry:
   ret i64 %3
 }
 
-; 51 occurrences:
+; 55 occurrences:
 ; abc/optimized/plaRead.c.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; cmake/optimized/fse_compress.c.ll
@@ -110,6 +111,7 @@ entry:
 ; linux/optimized/lbr.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/xarray.ll
+; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
@@ -133,6 +135,8 @@ entry:
 ; spike/optimized/xperm8.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

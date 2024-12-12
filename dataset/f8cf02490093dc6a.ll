@@ -12,7 +12,7 @@ entry:
   ret i32 %7
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; assimp/optimized/COBLoader.cpp.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; hermes/optimized/DateUtil.cpp.ll
@@ -23,6 +23,7 @@ entry:
 ; libwebp/optimized/yuv.c.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; oiio/optimized/termoutput.cpp.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
@@ -35,7 +36,7 @@ entry:
   %4 = add nsw i32 %3, 1024
   %5 = mul nsw i32 %1, -16069
   %6 = add nsw i32 %4, %5
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -56,7 +57,7 @@ entry:
   %4 = add i32 %3, 1024
   %5 = mul i32 %1, -16069
   %6 = add i32 %4, %5
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

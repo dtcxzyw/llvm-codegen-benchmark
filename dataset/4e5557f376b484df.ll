@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; darktable/optimized/introspection_lut3d.c.ll
 ; icu/optimized/chnsecal.ll
 ; linux/optimized/cistpl.ll
@@ -16,19 +16,21 @@
 ; ruby/optimized/compile.ll
 ; ruby/optimized/sprintf.ll
 ; z3/optimized/sat_lookahead.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; gromacs/optimized/trjconv.cpp.ll
+; icu/optimized/ubidiln.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
@@ -48,7 +50,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -67,7 +69,7 @@ define i32 @func0000000000000003(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -78,7 +80,7 @@ define i32 @func0000000000000002(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 

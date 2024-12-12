@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; hermes/optimized/ASTBuilder.cpp.ll
 ; hermes/optimized/BlockScopingTransformations.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -26,6 +26,7 @@
 ; llvm/optimized/MicrosoftDemangle.cpp.ll
 ; llvm/optimized/Signals.cpp.ll
 ; luau/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_grid.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:

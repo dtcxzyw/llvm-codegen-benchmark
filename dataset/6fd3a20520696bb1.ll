@@ -1,15 +1,16 @@
 
-%struct.resource.3359651 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
+%struct.resource.3546544 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
 
-; 1 occurrences:
+; 2 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
+; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000008a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000008f(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 8
   %3 = select i1 %2, i64 9, i64 8
-  %4 = getelementptr nusw i8, ptr %0, i64 1320
-  %5 = getelementptr nusw [10 x i32], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1320
+  %5 = getelementptr nusw nuw [10 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -17,16 +18,16 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000082(ptr %0, i32 %1) #0 {
+define ptr @func000000000000018f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 8
+  %2 = icmp samesign ugt i32 %1, 8
   %3 = select i1 %2, i64 9, i64 8
-  %4 = getelementptr i8, ptr %0, i64 1320
-  %5 = getelementptr nusw [10 x i32], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1320
+  %5 = getelementptr nusw nuw [10 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 226 occurrences:
+; 228 occurrences:
 ; cvc5/optimized/abduction_solver.cpp.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/alethe_node_converter.cpp.ll
@@ -249,54 +250,31 @@ entry:
 ; cvc5/optimized/unconstrained_simplifier.cpp.ll
 ; cvc5/optimized/witness_form.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
+; llvm/optimized/Stmt.cpp.ll
 ; luajit/optimized/lj_meta.ll
 ; luajit/optimized/lj_meta_dyn.ll
+; openspiel/optimized/mancala.cc.ll
 ; php/optimized/util.ll
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i64 14, i64 12
-  %4 = getelementptr nusw i8, ptr %0, i64 24
-  %5 = getelementptr nusw [1 x i8], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 2 occurrences:
-; llvm/optimized/Stmt.cpp.ll
-; openspiel/optimized/mancala.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i64 4, i64 3
   %4 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %5 = getelementptr nusw [4 x ptr], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 1 occurrences:
-; openusd/optimized/openexr-c.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000008e(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 8
-  %3 = select i1 %2, i64 9, i64 8
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 1312
-  %5 = getelementptr nusw [10 x i32], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [1 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/intel-gtt.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000088(ptr %0, i32 %1) #0 {
+define ptr @func000000000000018c(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 2
+  %2 = icmp samesign ugt i32 %1, 2
   %3 = select i1 %2, i64 2, i64 0
-  %4 = getelementptr nusw i8, ptr %0, i64 920
-  %5 = getelementptr [11 x %struct.resource.3359651], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 920
+  %5 = getelementptr [11 x %struct.resource.3546544], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

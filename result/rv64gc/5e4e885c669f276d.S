@@ -22,3 +22,9 @@ func000000000000001d:                   # @func000000000000001d
 	sub	a0, a0, a1
 	slli	a0, a0, 2
 	ret
+func0000000000000014:                   # @func0000000000000014
+	srli	a1, a1, 2
+	sext.w	a0, a0
+	sub	a0, a0, a1
+	slli	a0, a0, 2
+	ret

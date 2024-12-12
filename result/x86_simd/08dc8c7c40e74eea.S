@@ -18,7 +18,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vcvtqq2pd	%ymm2, %ymm0
-	vcmpeqpd	%ymm1, %ymm0, %k0 {%k1}
+	vcmpeqpd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -34,7 +34,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vcvtqq2pd	%ymm2, %ymm0
-	vcmpneqpd	%ymm1, %ymm0, %k0 {%k1}
+	vcmpneqpd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

@@ -1,5 +1,7 @@
 
-; 20 occurrences:
+; 22 occurrences:
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/intersection_box.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; gromacs/optimized/forcetable.cpp.ll
@@ -29,7 +31,8 @@ entry:
   ret double %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/intersection_box.ll
 ; opencv/optimized/quality.cpp.ll
 ; openusd/optimized/ray.cpp.ll
 ; openvdb/optimized/RayTracer.cc.ll

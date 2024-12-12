@@ -1,32 +1,32 @@
-func00000000000007ba:                   # @func00000000000007ba
+func0000000000000f6a:                   # @func0000000000000f6a
 	cmpq	%rsi, %rdi
 	setg	%al
 	retq
-func00000000000007b6:                   # @func00000000000007b6
+func0000000000000f66:                   # @func0000000000000f66
 	cmpq	%rsi, %rdi
 	setle	%al
 	retq
-func00000000000002aa:                   # @func00000000000002aa
+func0000000000000568:                   # @func0000000000000568
+	subq	%rsi, %rdi
+	cmpq	$16, %rdi
+	setae	%al
+	retq
+func000000000000054a:                   # @func000000000000054a
 	subq	%rsi, %rdi
 	cmpq	$4, %rdi
 	setge	%al
 	retq
-func00000000000006aa:                   # @func00000000000006aa
+func0000000000000d4a:                   # @func0000000000000d4a
 	subq	%rsi, %rdi
 	cmpq	$4, %rdi
 	setge	%al
 	retq
-func00000000000006ba:                   # @func00000000000006ba
+func0000000000000d6a:                   # @func0000000000000d6a
 	cmpq	%rsi, %rdi
 	setg	%al
 	retq
-func00000000000007aa:                   # @func00000000000007aa
+func0000000000000f4a:                   # @func0000000000000f4a
 	subq	%rsi, %rdi
 	cmpq	$4, %rdi
 	setge	%al
-	retq
-func00000000000002b8:                   # @func00000000000002b8
-	subq	%rsi, %rdi
-	shrq	$60, %rdi
-	setne	%al
 	retq

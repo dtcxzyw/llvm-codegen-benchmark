@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	sub	a1, a1, a2
 	lui	a2, 1
 	andi	a0, a0, 15
@@ -7,7 +7,7 @@ func0000000000000061:                   # @func0000000000000061
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sub	a1, a1, a2
 	slli	a0, a0, 43
 	binvi	a1, a1, 21
@@ -15,14 +15,14 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andi	a2, a2, 1024
 	xor	a0, a0, a1
 	seqz	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	sub	a1, a1, a2
 	andi	a0, a0, -8
 	slti	a1, a1, 1025

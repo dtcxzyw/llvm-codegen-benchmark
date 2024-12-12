@@ -5,7 +5,7 @@
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; proj/optimized/c_api.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000158(i64 %0) #0 {
+define i64 @func00000000000002a8(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 3
   %2 = add nsw i64 %1, 1
@@ -20,7 +20,7 @@ entry:
 ; quantlib/optimized/gmres.ll
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000178(i64 %0) #0 {
+define i64 @func00000000000002e8(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 5
   %2 = add nsw i64 %1, 1
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000148(i64 %0) #0 {
+define i64 @func0000000000000288(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 3
   %2 = add nsw i64 %1, 1
@@ -47,7 +47,7 @@ entry:
 ; quantlib/optimized/gsr.ll
 ; quantlib/optimized/markovfunctional.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000168(i64 %0) #0 {
+define i64 @func00000000000002c8(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 3
   %2 = add nsw i64 %1, 1

@@ -1,4 +1,4 @@
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001d8:                   # @func00000000000001d8
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setp	%al
@@ -8,22 +8,12 @@ func00000000000000f8:                   # @func00000000000000f8
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000178:                   # @func0000000000000178
+func00000000000002d8:                   # @func00000000000002d8
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setbe	%cl
 	testq	%rdi, %rdi
 	setne	%al
-	orb	%cl, %al
-	retq
-func00000000000000f0:                   # @func00000000000000f0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vucomiss	%xmm1, %xmm0
-	setp	%al
-	setne	%cl
-	orb	%al, %cl
-	cmpq	$2, %rdi
-	setae	%al
 	orb	%cl, %al
 	retq
 func00000000000000c8:                   # @func00000000000000c8
@@ -34,7 +24,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	seta	%al
 	orb	%cl, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setnp	%al
@@ -44,7 +34,7 @@ func0000000000000102:                   # @func0000000000000102
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setnp	%al

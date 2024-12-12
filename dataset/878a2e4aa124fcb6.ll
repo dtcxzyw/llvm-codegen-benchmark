@@ -308,10 +308,10 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000318(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000c38(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 2147483647
+  %4 = icmp samesign ugt i64 %3, 2147483647
   %5 = icmp eq i32 %0, -1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -321,10 +321,10 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/f64_rem.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -333,10 +333,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ARM.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = icmp ugt i32 %0, 5
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6

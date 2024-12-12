@@ -1,21 +1,17 @@
 
-; 24 occurrences:
-; abc/optimized/amapPerm.c.ll
+; 20 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/dauCanon.c.ll
+; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/giaEra.c.ll
-; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaMfs.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/ifDec75.c.ll
-; abc/optimized/ifMap.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/lpkMan.c.ll
 ; cmake/optimized/inet.c.ll
 ; libuv/optimized/inet.c.ll
 ; linux/optimized/aio.ll

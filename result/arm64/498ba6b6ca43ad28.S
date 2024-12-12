@@ -7,7 +7,15 @@ func0000000000000022:                   // @func0000000000000022
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func0000000000000012:                   // @func0000000000000012
+// %bb.0:                               // %entry
+	mov	x8, #-16                        // =0xfffffffffffffff0
+	cmp	x1, #17
+	csel	x8, xzr, x8, lo
+	add	x0, x0, x8
+	ret
+                                        // -- End function
+func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
 	mov	x8, #-576460752303423487        // =0xf800000000000001
 	cmp	x1, x8
@@ -16,12 +24,36 @@ func000000000000001a:                   // @func000000000000001a
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000012:                   // @func0000000000000012
+func0000000000000006:                   // @func0000000000000006
+// %bb.0:                               // %entry
+	mov	x8, #-8                         // =0xfffffffffffffff8
+	cmp	x1, #0
+	mov	x9, #-16                        // =0xfffffffffffffff0
+	csel	x8, x9, x8, eq
+	add	x0, x0, x8
+	ret
+                                        // -- End function
+func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
 	mov	w8, #56                         // =0x38
 	cmp	x1, #8
 	mov	w9, #24                         // =0x18
 	csel	x8, x9, x8, lo
+	add	x0, x0, x8
+	ret
+                                        // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	cmp	x1, #0
+	cset	w8, ne
+	add	x0, x0, x8, lsl #11
+	ret
+                                        // -- End function
+func000000000000001a:                   // @func000000000000001a
+// %bb.0:                               // %entry
+	mov	x8, #-16                        // =0xfffffffffffffff0
+	cmp	x1, #17
+	csel	x8, xzr, x8, lt
 	add	x0, x0, x8
 	ret
                                         // -- End function

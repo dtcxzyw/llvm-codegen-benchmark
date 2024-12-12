@@ -7,7 +7,7 @@ func0000000000000084:                   # @func0000000000000084
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
 	fmv.w.x	fa5, a0
-	vmor.mm	v12, v16, v0
+	vmor.mm	v12, v0, v16
 	vmflt.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
@@ -15,7 +15,7 @@ func0000000000000210:                   # @func0000000000000210
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vf	v16, v12, fa5
-	vmor.mm	v12, v16, v0
+	vmor.mm	v12, v0, v16
 	vmfeq.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
@@ -34,7 +34,7 @@ func0000000000000088:                   # @func0000000000000088
 	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
-	vmor.mm	v12, v16, v0
+	vmor.mm	v12, v0, v16
 	vmflt.vf	v13, v8, fa5
 	vmor.mm	v0, v12, v13
 	ret
@@ -42,7 +42,7 @@ func00000000000001dc:                   # @func00000000000001dc
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfne.vf	v16, v12, fa5
-	vmor.mm	v12, v16, v0
+	vmor.mm	v12, v0, v16
 	vmfne.vf	v13, v8, fa5
 	vmor.mm	v0, v12, v13
 	ret
@@ -62,7 +62,7 @@ func0000000000000110:                   # @func0000000000000110
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v16, v12, fa5
 	fmv.w.x	fa5, zero
-	vmor.mm	v12, v16, v0
+	vmor.mm	v12, v0, v16
 	vmfeq.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
@@ -71,7 +71,7 @@ func0000000000000108:                   # @func0000000000000108
 	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v16, v12, fa5
-	vmor.mm	v12, v16, v0
+	vmor.mm	v12, v0, v16
 	vmfgt.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
@@ -80,7 +80,7 @@ func00000000000001ce:                   # @func00000000000001ce
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfne.vf	v16, v12, fa5
 	fli.s	fa5, 1.0
-	vmor.mm	v12, v16, v0
+	vmor.mm	v12, v0, v16
 	vmfne.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
@@ -88,7 +88,7 @@ func0000000000000220:                   # @func0000000000000220
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vf	v16, v12, fa5
-	vmor.mm	v12, v16, v0
+	vmor.mm	v12, v0, v16
 	vmfeq.vf	v13, v8, fa5
 	vmor.mm	v0, v12, v13
 	ret
@@ -107,39 +107,17 @@ func00000000000000d4:                   # @func00000000000000d4
 	vmfle.vf	v13, v8, fa4
 	vmorn.mm	v0, v12, v13
 	ret
-func0000000000000060:                   # @func0000000000000060
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfne.vv	v16, v12, v12
-	fli.s	fa5, inf
-	vmor.mm	v12, v16, v0
-	vmfeq.vf	v13, v8, fa5
-	vmor.mm	v0, v12, v13
-	ret
-func0000000000000260:                   # @func0000000000000260
+func0000000000000264:                   # @func0000000000000264
 	fli.s	fa5, inf
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
 	vmfgt.vf	v17, v12, fa5
-	vmor.mm	v12, v17, v16
-	vmorn.mm	v12, v0, v12
-	vmfeq.vf	v13, v8, fa5
-	vmor.mm	v0, v12, v13
-	ret
-func0000000000000202:                   # @func0000000000000202
-	fli.s	fa5, inf
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfeq.vf	v16, v12, fa5
-	vmor.mm	v12, v16, v0
-	vmfne.vv	v13, v8, v8
-	vmor.mm	v0, v13, v12
-	ret
-func0000000000000050:                   # @func0000000000000050
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfne.vv	v16, v12, v12
-	fli.s	fa5, inf
-	vmor.mm	v12, v16, v0
-	vmfeq.vf	v13, v8, fa5
-	vmor.mm	v0, v13, v12
+	vmflt.vf	v12, v8, fa5
+	vmfgt.vf	v13, v8, fa5
+	vmor.mm	v8, v17, v16
+	vmorn.mm	v8, v0, v8
+	vmor.mm	v9, v13, v12
+	vmorn.mm	v0, v8, v9
 	ret
 func0000000000000258:                   # @func0000000000000258
 	fli.s	fa5, inf
@@ -174,7 +152,7 @@ func0000000000000104:                   # @func0000000000000104
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v16, v12, fa5
 	fmv.w.x	fa5, zero
-	vmor.mm	v12, v16, v0
+	vmor.mm	v12, v0, v16
 	vmflt.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
@@ -182,14 +160,7 @@ func00000000000001d0:                   # @func00000000000001d0
 	fli.s	fa5, inf
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfne.vf	v16, v12, fa5
-	vmor.mm	v12, v16, v0
+	vmor.mm	v12, v0, v16
 	vmfeq.vf	v13, v8, fa5
-	vmor.mm	v0, v13, v12
-	ret
-func000000000000039c:                   # @func000000000000039c
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfeq.vv	v16, v12, v12
-	vmor.mm	v12, v16, v0
-	vmfeq.vv	v13, v8, v8
 	vmor.mm	v0, v13, v12
 	ret

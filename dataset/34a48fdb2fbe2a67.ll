@@ -1,5 +1,5 @@
 
-; 721 occurrences:
+; 717 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -21,7 +21,6 @@
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcLatch.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/abcMini.c.ll
 ; abc/optimized/abcNames.c.ll
 ; abc/optimized/abcPart.c.ll
@@ -93,7 +92,6 @@
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -246,7 +244,6 @@
 ; abc/optimized/llb4Cex.c.ll
 ; abc/optimized/lpkMap.c.ll
 ; abc/optimized/mfsResub.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mioFunc.c.ll
 ; abc/optimized/mioSop.c.ll
 ; abc/optimized/mpmAbc.c.ll
@@ -298,7 +295,6 @@
 ; abc/optimized/satSolver2i.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/satTruth.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdPath.c.ll
 ; abc/optimized/sbdSat.c.ll
@@ -309,7 +305,6 @@
 ; abc/optimized/sfmLib.c.ll
 ; abc/optimized/sfmSat.c.ll
 ; abc/optimized/simSupp.c.ll
-; abc/optimized/simSym.c.ll
 ; abc/optimized/simSymSat.c.ll
 ; abc/optimized/simSymSim.c.ll
 ; abc/optimized/sscSat.c.ll
@@ -352,8 +347,12 @@
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/key_map.cc.ll
+; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/format_args.ll
+; boost/optimized/pct_format.ll
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; cmake/optimized/bzlib.c.ll
@@ -455,7 +454,6 @@
 ; llvm/optimized/AliasAnalysis.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/LiveIntervalCalc.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/buildvm.ll
@@ -463,6 +461,8 @@
 ; luau/optimized/IrTranslation.cpp.ll
 ; luau/optimized/ltable.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_draw_sw.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -477,8 +477,6 @@
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
 ; nuttx/optimized/fs_select.c.ll
-; nuttx/optimized/lib_calendar2utc.c.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
@@ -563,13 +561,11 @@
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-lib-bn_exp2.ll
 ; openssl/optimized/libcrypto-lib-curve448.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp2.ll
 ; openssl/optimized/libcrypto-shlib-curve448.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
@@ -618,7 +614,6 @@
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll
-; slurm/optimized/bitstring.ll
 ; soc-simulator/optimized/verilated.ll
 ; spike/optimized/khmbb16.ll
 ; spike/optimized/khmbt16.ll
@@ -712,6 +707,7 @@
 ; wolfssl/optimized/sp_int.c.ll
 ; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/Solver.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zstd/optimized/entropy_common.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -729,7 +725,7 @@ entry:
   ret i64 %2
 }
 
-; 142 occurrences:
+; 141 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/amapPerm.c.ll
@@ -767,7 +763,6 @@ entry:
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/mpih-mul.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; luajit/optimized/lj_asm.ll

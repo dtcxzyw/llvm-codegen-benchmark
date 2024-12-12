@@ -1,5 +1,5 @@
 
-; 390 occurrences:
+; 385 occurrences:
 ; abc/optimized/ioReadPlaMo.c.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/city.cc.ll
@@ -28,6 +28,7 @@
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/io_util.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/benchmark_fstream.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -45,7 +46,6 @@
 ; faiss/optimized/random.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
 ; g2o/optimized/sampler.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; gromacs/optimized/coolstuff.cpp.ll
 ; gromacs/optimized/seed.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
@@ -232,14 +232,12 @@
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; mimalloc/optimized/random.c.ll
 ; mini-lsm-rs/optimized/2y1m09w3fogtr6jd.ll
 ; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -270,7 +268,6 @@
 ; oiio/optimized/texturesys.cpp.ll
 ; oiio/optimized/ustring.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/backgammon_test.cc.ll
 ; openspiel/optimized/bargaining_instance_generator.cc.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
@@ -336,12 +333,10 @@
 ; quantlib/optimized/seedgenerator.ll
 ; quantlib/optimized/sobolrsg.ll
 ; quantlib/optimized/zigguratrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; quickjs/optimized/quickjs.ll
 ; rayon-rs/optimized/5ev50in5ju1pej99.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/memtest.ll
-; redis/optimized/mt19937-64.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; rocksdb/optimized/hash.cc.ll

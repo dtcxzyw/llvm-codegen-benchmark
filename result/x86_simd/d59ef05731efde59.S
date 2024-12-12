@@ -62,3 +62,12 @@ func000000000000004f:                   # @func000000000000004f
 	vpcmpeqq	%ymm3, %ymm2, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
+func0000000000000280:                   # @func0000000000000280
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpslld	$31, %xmm1, %xmm1
+	vpsrad	$31, %xmm1, %xmm1
+	vpmovsxdq	%xmm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	vpcmpgtq	%ymm3, %ymm2, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq

@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leaq	(%rsi,%rsi), %rcx
 	movabsq	$9007199254740990, %rax         # imm = 0x1FFFFFFFFFFFFE
 	andq	%rax, %rcx
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	testq	%rdi, %rdi
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	leaq	(%rsi,%rsi), %rcx
 	movabsq	$9007199254740990, %rax         # imm = 0x1FFFFFFFFFFFFE
 	andq	%rax, %rcx

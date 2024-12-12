@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; assimp/optimized/MD2Loader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; darktable/optimized/introspection_overlay.c.ll
@@ -9,12 +9,13 @@
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, i8 %2) #0 {
 entry:
   %3 = uitofp i8 %2 to float
-  %4 = fmul float %3, %1
-  %5 = fadd float %4, %0
+  %4 = fmul float %1, %3
+  %5 = fadd float %0, %4
   ret float %5
 }
 
@@ -24,7 +25,7 @@ entry:
 define float @func0000000000000001(float %0, float %1, i8 %2) #0 {
 entry:
   %3 = uitofp nneg i8 %2 to float
-  %4 = fmul float %3, %1
+  %4 = fmul float %1, %3
   %5 = fadd float %4, %0
   ret float %5
 }

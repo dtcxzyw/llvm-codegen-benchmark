@@ -61,66 +61,49 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = and i64 %2, 15
-  %4 = getelementptr nusw i8, ptr %0, i64 40
-  %5 = getelementptr nusw i32, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 40
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %3
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; ruby/optimized/sha2.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 14
   %3 = and i64 %2, 15
-  %4 = getelementptr nusw i8, ptr %0, i64 40
-  %5 = getelementptr nusw i32, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 40
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 31 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; brotli/optimized/backward_references.c.ll
-; git/optimized/mem-pool.ll
 ; git/optimized/tree-walk.ll
 ; grpc/optimized/channel_stack.cc.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; llvm/optimized/Archive.cpp.ll
-; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/InstrProfReader.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/wildcard.ll
 ; openssl/optimized/openssl-bin-s_server.ll
 ; openusd/optimized/openexr-c.c.ll
-; php/optimized/block_pass.ll
-; php/optimized/compact_literals.ll
-; php/optimized/dce.ll
-; php/optimized/optimize_func_calls.ll
-; php/optimized/scdf.ll
-; php/optimized/zend_API.ll
-; php/optimized/zend_call_graph.ll
-; php/optimized/zend_cfg.ll
-; php/optimized/zend_enum.ll
-; php/optimized/zend_extensions.ll
-; php/optimized/zend_file_cache.ll
-; php/optimized/zend_inference.ll
-; php/optimized/zend_jit.ll
-; php/optimized/zend_ssa.ll
 ; redis/optimized/rax.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967291
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %0, i64 5
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 5
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -153,16 +136,16 @@ entry:
 ; postgres/optimized/sha2_srv.ll
 ; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = and i64 %2, 8589934560
-  %4 = getelementptr nusw i8, ptr %0, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 2
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 69 occurrences:
+; 87 occurrences:
 ; coreutils-rs/optimized/12z6icc2yyeo0v0b.ll
 ; coreutils-rs/optimized/4h7z3ghynwnbx7iw.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -232,6 +215,24 @@ entry:
 ; wireshark/optimized/packet-pvfs2.c.ll
 ; wireshark/optimized/wmem_allocator_block.c.ll
 ; xgboost/optimized/data.cc.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/cogvsa3bjgiftuxgwhwbiuj8x.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
@@ -242,27 +243,65 @@ entry:
   ret ptr %5
 }
 
-; 14 occurrences:
+; 8 occurrences:
 ; brotli/optimized/encode.c.ll
 ; gromacs/optimized/nbsearch.cpp.ll
-; lightgbm/optimized/dataset_loader.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; openjdk/optimized/classLoader.ll
 ; openjdk/optimized/constantPool.ll
 ; openjdk/optimized/heapInspection.ll
+; z3/optimized/elim_small_bv_tactic.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 4294967295
+  %3 = and i64 %2, 4294967295
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 6
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 16 occurrences:
+; git/optimized/mem-pool.ll
+; llvm/optimized/InstrProfReader.cpp.ll
+; php/optimized/block_pass.ll
+; php/optimized/compact_literals.ll
+; php/optimized/dce.ll
+; php/optimized/optimize_func_calls.ll
+; php/optimized/scdf.ll
+; php/optimized/zend_API.ll
+; php/optimized/zend_call_graph.ll
+; php/optimized/zend_cfg.ll
+; php/optimized/zend_enum.ll
+; php/optimized/zend_extensions.ll
+; php/optimized/zend_file_cache.ll
+; php/optimized/zend_inference.ll
+; php/optimized/zend_jit.ll
+; php/optimized/zend_ssa.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 7
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 24
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 6 occurrences:
 ; php/optimized/block_pass.ll
 ; php/optimized/compact_literals.ll
 ; php/optimized/zend_closures.ll
 ; php/optimized/zend_execute.ll
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_ssa.ll
-; z3/optimized/elim_small_bv_tactic.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 4294967295
-  %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %0, i64 6
+  %2 = add nsw i64 %1, 7
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 104
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -271,11 +310,11 @@ entry:
 ; postgres/optimized/pgarch.ll
 ; vcpkg/optimized/git.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -6
   %3 = and i64 %2, -4
-  %4 = getelementptr nusw i8, ptr %0, i64 6
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 6
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -297,6 +336,18 @@ entry:
   ret ptr %5
 }
 
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add nuw i64 %1, 23
+  %3 = and i64 %2, -16
+  %4 = getelementptr nusw i8, ptr %0, i64 -16
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
 ; 8 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/uri.cc.ll
@@ -307,11 +358,11 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; openusd/optimized/resolver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -8
   %3 = and i64 %2, -32
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -319,12 +370,12 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/spacer_qe_project.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
   %4 = getelementptr i8, ptr %0, i64 8
-  %5 = getelementptr nusw i32, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -333,11 +384,11 @@ entry:
 ; postgres/optimized/sha2_shlib.ll
 ; postgres/optimized/sha2_srv.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 14
   %3 = and i64 %2, 15
-  %4 = getelementptr nusw i8, ptr %0, i64 40
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 40
   %5 = getelementptr i32, ptr %4, i64 %3
   ret ptr %5
 }

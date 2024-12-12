@@ -12,7 +12,7 @@
 ; folly/optimized/OpenSSLHash.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000244(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000484(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sub nsw i32 %0, %2
@@ -21,23 +21,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; php/optimized/strtod.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = sub i32 %0, %2
-  %4 = add nsw i32 %3, 64
-  %5 = icmp ult i32 %4, -1073
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; proxygen/optimized/Logging.cpp.ll
 ; velox/optimized/md5.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub nsw i32 %0, %2
@@ -49,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000351(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub nsw i32 %0, %2
@@ -60,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/psa_crypto_rsa.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000406(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sub i32 %0, %2
@@ -69,11 +57,13 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; clamav/optimized/egg.c.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; z3/optimized/pb2bv_tactic.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
@@ -91,7 +81,7 @@ entry:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006a4(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub nsw i32 %0, %2
@@ -103,35 +93,23 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000020c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000040c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %0, -1
-  %4 = icmp ne i32 %3, %2
-  ret i1 %4
+  %.neg = add i32 %2, 1
+  %3 = icmp ne i32 %0, %.neg
+  ret i1 %3
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000401(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %0, -1
-  %4 = icmp eq i32 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; openusd/optimized/json.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000314(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = sub i32 %0, %2
-  %4 = add nsw i32 %3, 64
-  %5 = icmp ult i32 %4, -1073
-  ret i1 %5
+  %.neg = add i32 %2, 1
+  %3 = icmp eq i32 %0, %.neg
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -152,24 +130,12 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000020a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000040a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sub i32 %0, %2
   %4 = add i32 %3, 1
   %5 = icmp sgt i32 %4, 1
-  ret i1 %5
-}
-
-; 1 occurrences:
-; abseil-cpp/optimized/float_conversion.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000358(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = sub nsw i32 %0, %2
-  %4 = add i32 %3, -65
-  %5 = icmp ult i32 %4, -129
   ret i1 %5
 }
 
@@ -204,7 +170,7 @@ entry:
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000408(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sub i32 %0, %2

@@ -1,11 +1,9 @@
-.LCPI0_0:
-	.quad	18446741926225904               # 0x418936cbc6a7f0
 func0000000000000010:                   # @func0000000000000010
-	lui	a3, %hi(.LCPI0_0)
-	ld	a3, %lo(.LCPI0_0)(a3)
 	andi	a2, a2, 1
+	lui	a3, 1048565
+	addiw	a3, a3, -2042
 	czero.nez	a2, a3, a2
-	lui	a3, 524288
+	lui	a3, 16
 	addiw	a3, a3, -1
 	add	a2, a2, a3
 	sltu	a1, a2, a1
@@ -13,9 +11,9 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000012:                   # @func0000000000000012
 	andi	a2, a2, 1
-	li	a3, 64
+	li	a3, -1792
 	czero.nez	a2, a3, a2
-	addi	a2, a2, 64
+	addi	a2, a2, 2015
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1

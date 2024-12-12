@@ -1,6 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
 	subq	%rsi, %rdx
-	leaq	16(%rdx,%rdi), %rax
+	leaq	16(%rdi,%rdx), %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	subq	%rsi, %rdx

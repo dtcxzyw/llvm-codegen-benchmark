@@ -20,3 +20,9 @@ func0000000000000017:                   # @func0000000000000017
 	shlq	$4, %rax
 	addq	$16, %rax
 	retq
+func0000000000000013:                   # @func0000000000000013
+	subl	%esi, %edi
+	incl	%edi
+	movslq	%edi, %rax
+	shlq	$2, %rax
+	retq

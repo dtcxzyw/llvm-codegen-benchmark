@@ -1,6 +1,7 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; arrow/optimized/trie.cc.ll
+; boost/optimized/static_string.ll
 ; draco/optimized/attribute_quantization_transform.cc.ll
 ; draco/optimized/kd_tree_attributes_decoder.cc.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
@@ -21,6 +22,7 @@ entry:
 ; 71 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
+; boost/optimized/static_string.ll
 ; coreutils-rs/optimized/505489it2i89bi1c.ll
 ; cpython/optimized/_codecs_cn.ll
 ; cpython/optimized/_codecs_hk.ll
@@ -36,7 +38,6 @@ entry:
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -126,12 +127,14 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
+; cpython/optimized/_codecs_kr.ll
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; proxygen/optimized/Huffman.cpp.ll
 ; rayon-rs/optimized/1j5m2t9gtbur4l2z.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
@@ -140,7 +143,8 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/static_string.ll
 ; brotli/optimized/backward_references.c.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/catchup.c.ll
@@ -153,6 +157,16 @@ define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = sub i64 %2, %0
+  ret i64 %3
+}
+
+; 1 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = sub nuw i64 %2, %0
   ret i64 %3
 }
 

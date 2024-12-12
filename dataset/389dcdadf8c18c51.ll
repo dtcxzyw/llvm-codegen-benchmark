@@ -1,6 +1,7 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/src.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; gromacs/optimized/position_restraints.cpp.ll
 ; hwloc/optimized/hwloc-bind.ll

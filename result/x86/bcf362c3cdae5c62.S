@@ -44,12 +44,28 @@ func0000000000000019:                   # @func0000000000000019
 	andl	$-2049, %edi                    # imm = 0xF7FF
 	orl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	xorl	%eax, %eax
 	cmpl	$10, %esi
 	setb	%al
 	shll	$4, %eax
 	andl	$-25, %edi
+	orl	%edi, %eax
+	retq
+func0000000000000011:                   # @func0000000000000011
+	xorl	%eax, %eax
+	cmpl	$2, %esi
+	setae	%al
+	shll	$7, %eax
+	andl	$127, %edi
+	orl	%edi, %eax
+	retq
+func0000000000000029:                   # @func0000000000000029
+	xorl	%eax, %eax
+	cmpl	$8, %esi
+	setae	%al
+	shll	$26, %eax
+	andl	$50331648, %edi                 # imm = 0x3000000
 	orl	%edi, %eax
 	retq
 func0000000000000014:                   # @func0000000000000014

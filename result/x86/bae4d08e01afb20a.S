@@ -13,8 +13,3 @@ func0000000000000003:                   # @func0000000000000003
 	decl	%eax
 	vcvtsi2sd	%eax, %xmm0, %xmm0
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movzbl	%dil, %eax
-	addl	$-128, %eax
-	vcvtusi2sd	%eax, %xmm0, %xmm0
-	retq

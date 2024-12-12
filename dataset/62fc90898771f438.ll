@@ -1,5 +1,5 @@
 
-; 143 occurrences:
+; 142 occurrences:
 ; abc/optimized/aigOper.c.ll
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cuddAddAbs.c.ll
@@ -17,6 +17,8 @@
 ; abc/optimized/giaCTas.c.ll
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/key_value_metadata.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/scheduler.ll
 ; box2d/optimized/b2_fixture.cpp.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/types.c.ll
@@ -36,8 +38,6 @@
 ; hermes/optimized/JSParserImpl-ts.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; hermes/optimized/SemanticValidator.cpp.ll
-; linux/optimized/checkpoint.ll
-; linux/optimized/mpi-div.ll
 ; linux/optimized/scsi_sysfs.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
@@ -120,7 +120,6 @@
 ; openjdk/optimized/mulnode.ll
 ; openjdk/optimized/shenandoahBarrierSetC2.ll
 ; openjdk/optimized/subnode.ll
-; openusd/optimized/copyUtils.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; protobuf/optimized/helpers.cc.ll
 ; protobuf/optimized/message_field.cc.ll
@@ -144,7 +143,7 @@
 ; z3/optimized/spacer_qe_project.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000042(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, %1
   %4 = icmp eq ptr %0, %1
@@ -157,7 +156,7 @@ entry:
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000302(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, %1
   %4 = icmp eq ptr %0, %1
@@ -171,7 +170,7 @@ entry:
 ; vcpkg/optimized/commands.set-installed.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000318(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, %1
   %4 = icmp ne ptr %0, %1
@@ -182,7 +181,7 @@ entry:
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000132(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000252(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %2, %1
   %4 = icmp uge ptr %0, %1
@@ -195,7 +194,7 @@ entry:
 ; linux/optimized/hcd.ll
 ; openjdk/optimized/mutableNUMASpace.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b0(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000150(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ule ptr %2, %1
   %4 = icmp ugt ptr %0, %1
@@ -206,7 +205,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/defNewGeneration.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000092(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000112(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %2, %1
   %4 = icmp uge ptr %0, %1
@@ -217,7 +216,7 @@ entry:
 ; 1 occurrences:
 ; flatbuffers/optimized/reflection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000090(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000110(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %2, %1
   %4 = icmp ugt ptr %0, %1
@@ -229,7 +228,7 @@ entry:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000108(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %2, %1
   %4 = icmp ult ptr %0, %1
@@ -240,7 +239,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/urlmatch.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000122(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000242(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %2, %1
   %4 = icmp eq ptr %0, %1
@@ -253,7 +252,7 @@ entry:
 ; llvm/optimized/RISCVISAInfo.cpp.ll
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000058(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, %1
   %4 = icmp ne ptr %0, %1
@@ -264,7 +263,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/ofbx.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000210(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = icmp ugt ptr %0, %1
@@ -275,7 +274,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000112(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000212(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = icmp uge ptr %0, %1
@@ -286,7 +285,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b2(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000152(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ule ptr %2, %1
   %4 = icmp uge ptr %0, %1

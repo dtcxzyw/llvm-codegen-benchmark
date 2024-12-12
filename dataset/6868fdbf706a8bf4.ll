@@ -1,5 +1,5 @@
 
-; 419 occurrences:
+; 404 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
@@ -31,7 +31,6 @@
 ; clamav/optimized/unicode.cpp.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
-; cmake/optimized/poll.c.ll
 ; cmake/optimized/transfer.c.ll
 ; coreutils-rs/optimized/1nj6h5colnkxfn01.ll
 ; coreutils-rs/optimized/2vlueqjvzu597xlx.ll
@@ -41,6 +40,7 @@
 ; cpython/optimized/pegen.ll
 ; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-transfer.ll
+; darktable/optimized/introspection_flip.c.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/5c4w4ukc3cdb4cwa.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
@@ -61,16 +61,7 @@
 ; hdf5/optimized/H5FDlog.c.ll
 ; hdf5/optimized/H5FDsec2.c.ll
 ; hermes/optimized/APFloat.cpp.ll
-; hermes/optimized/AST2JS.cpp.ll
-; hermes/optimized/ConsecutiveStringStorage.cpp.ll
-; hermes/optimized/HBC.cpp.ll
 ; hermes/optimized/Host.cpp.ll
-; hermes/optimized/JSLexer.cpp.ll
-; hermes/optimized/JSONEmitter.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
-; hermes/optimized/Runtime.cpp.ll
-; hermes/optimized/SourceErrorManager.cpp.ll
-; hermes/optimized/UTF8.cpp.ll
 ; icu/optimized/coleitr.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/umutablecptrie.ll
@@ -89,10 +80,8 @@
 ; libevent/optimized/poll.c.ll
 ; libquic/optimized/des.c.ll
 ; libquic/optimized/p256-64.c.ll
-; libuv/optimized/poll.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; lief/optimized/BinaryStream.cpp.ll
 ; lief/optimized/des.c.ll
 ; linux/optimized/8139too.ll
@@ -107,7 +96,6 @@
 ; linux/optimized/early-lookup.ll
 ; linux/optimized/ethtool.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/fsmap.ll
@@ -119,7 +107,6 @@
 ; linux/optimized/idma32.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/initramfs.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_display_irq.ll
@@ -130,7 +117,6 @@
 ; linux/optimized/intel_pcode.ll
 ; linux/optimized/intel_pmdemand.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/ioctl.ll
 ; linux/optimized/lbr.ll
@@ -139,9 +125,7 @@
 ; linux/optimized/libata-sata.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/loop.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/md.ll
-; linux/optimized/mii.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/nfs2xdr.ll
 ; linux/optimized/open.ll
@@ -152,9 +136,7 @@
 ; linux/optimized/scsi_ioctl.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/slub.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/super.ll
-; linux/optimized/sys_ia32.ll
 ; linux/optimized/taskstats.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/transaction.ll
@@ -252,6 +234,9 @@
 ; luajit/optimized/lib_jit_dyn.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_svg_parser.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -279,7 +264,6 @@
 ; mold/optimized/output-chunks.cc.PPC32.cc.ll
 ; mold/optimized/output-chunks.cc.RV32BE.cc.ll
 ; nanosvg/optimized/nanosvg.ll
-; node/optimized/poll.ll
 ; node/optimized/simdutf.ll
 ; nuklear/optimized/unity.c.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
@@ -331,7 +315,6 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
@@ -419,6 +402,8 @@
 ; z3/optimized/goal.cpp.ll
 ; z3/optimized/mpf.cpp.ll
 ; z3/optimized/sat_clause.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -430,8 +415,7 @@ entry:
   ret i32 %7
 }
 
-; 7 occurrences:
-; darktable/optimized/introspection_flip.c.ll
+; 6 occurrences:
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/vfs_inode.ll
@@ -449,8 +433,34 @@ entry:
   ret i32 %7
 }
 
-; 4 occurrences:
-; linux/optimized/mii.ll
+; 15 occurrences:
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 3840
+  %4 = and i32 %1, 240
+  %5 = or disjoint i32 %4, %3
+  %6 = and i32 %0, 15
+  %7 = or disjoint i32 %6, %5
+  ret i32 %7
+}
+
+; 3 occurrences:
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; wireshark/optimized/packet-uavcan-can.c.ll

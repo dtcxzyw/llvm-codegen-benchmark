@@ -39,7 +39,7 @@ entry:
   ret i1 %6
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/bmcBmci.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -53,7 +53,6 @@ entry:
 ; linux/optimized/truncate.ll
 ; linux/optimized/vmscan.ll
 ; linux/optimized/workingset.ll
-; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i64 %2) #0 {
 entry:

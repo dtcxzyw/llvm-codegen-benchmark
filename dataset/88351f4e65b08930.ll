@@ -9,8 +9,8 @@
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/rx.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; ruby/optimized/gc.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; wireshark/optimized/packet-tibia.c.ll
@@ -20,7 +20,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = lshr i16 %2, 11
   %4 = and i16 %3, 4
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 
@@ -35,7 +35,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = lshr i16 %2, 3
   %4 = and i16 %3, 1
-  %5 = or i16 %4, %0
+  %5 = or i16 %0, %4
   ret i16 %5
 }
 

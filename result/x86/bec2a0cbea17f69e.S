@@ -1,4 +1,4 @@
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	testq	%rsi, %rsi
 	setne	%al
 	testq	%rdi, %rdi
@@ -6,7 +6,7 @@ func0000000000000198:                   # @func0000000000000198
 	xorb	%al, %cl
 	movzbl	%cl, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	testq	%rsi, %rsi
 	sete	%al
 	testq	%rdi, %rdi
@@ -14,7 +14,7 @@ func0000000000000022:                   # @func0000000000000022
 	xorb	%al, %cl
 	movzbl	%cl, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	testq	%rsi, %rsi
 	sete	%al
 	testq	%rdi, %rdi

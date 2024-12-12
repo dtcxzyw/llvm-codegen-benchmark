@@ -1,5 +1,7 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; graphviz/optimized/lab.c.ll
 ; hermes/optimized/DateUtil.cpp.ll

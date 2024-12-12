@@ -13,8 +13,8 @@
 ; icu/optimized/utf8collationiterator.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/vp8l_dec.c.ll
+; linux/optimized/buffer.ll
 ; linux/optimized/fib_frontend.ll
-; linux/optimized/fonts.ll
 ; linux/optimized/intel_tc.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll

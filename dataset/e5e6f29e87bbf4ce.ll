@@ -1,6 +1,5 @@
 
-; 71 occurrences:
-; coremark/optimized/core_util.c.ll
+; 76 occurrences:
 ; freetype/optimized/bdf.c.ll
 ; icu/optimized/ucmndata.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -10,7 +9,6 @@
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/hbm.ll
 ; linux/optimized/ich8lan.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/uhci-hcd.ll
@@ -55,6 +53,8 @@
 ; ruby/optimized/ripper.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
@@ -71,6 +71,11 @@
 ; wireshark/optimized/packet-umts_mac.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i16 %1, i8 %2) #0 {
 entry:

@@ -25,7 +25,7 @@ define double @func0000000000000005(double %0) #0 {
 entry:
   %1 = fcmp ugt double %0, 1.300000e+01
   %2 = select i1 %1, double -1.300000e+01, double -1.000000e+00
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 
@@ -41,7 +41,7 @@ define double @func0000000000000004(double %0) #0 {
 entry:
   %1 = fcmp ogt double %0, 0.000000e+00
   %2 = select i1 %1, double 5.000000e-01, double -5.000000e-01
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 
@@ -74,7 +74,19 @@ define double @func0000000000000002(double %0) #0 {
 entry:
   %1 = fcmp olt double %0, 0.000000e+00
   %2 = select i1 %1, double -5.000000e-01, double 5.000000e-01
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
+  ret double %3
+}
+
+; 2 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; graphviz/optimized/arrows.c.ll
+; Function Attrs: nounwind
+define double @func000000000000000a(double %0) #0 {
+entry:
+  %1 = fcmp ole double %0, 0.000000e+00
+  %2 = select i1 %1, double 1.800000e+02, double -1.800000e+02
+  %3 = fadd double %0, %2
   ret double %3
 }
 
@@ -91,7 +103,7 @@ define double @func000000000000000c(double %0) #0 {
 entry:
   %1 = fcmp oge double %0, 0.000000e+00
   %2 = select i1 %1, double 5.000000e-01, double -5.000000e-01
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 
@@ -115,18 +127,7 @@ define double @func0000000000000003(double %0) #0 {
 entry:
   %1 = fcmp ult double %0, 0.000000e+00
   %2 = select i1 %1, double -5.000000e-01, double 5.000000e-01
-  %3 = fadd double %2, %0
-  ret double %3
-}
-
-; 1 occurrences:
-; graphviz/optimized/arrows.c.ll
-; Function Attrs: nounwind
-define double @func000000000000000a(double %0) #0 {
-entry:
-  %1 = fcmp ole double %0, 0xC00921FB54442D18
-  %2 = select i1 %1, double 0x401921FB54442D18, double 0.000000e+00
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 

@@ -1,5 +1,5 @@
 
-; 335 occurrences:
+; 334 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -90,7 +90,6 @@
 ; abc/optimized/cecSplit.c.ll
 ; abc/optimized/cecSweep.c.ll
 ; abc/optimized/cgtCore.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cutMan.c.ll
 ; abc/optimized/cutNode.c.ll
 ; abc/optimized/darLib.c.ll
@@ -169,7 +168,6 @@
 ; abc/optimized/kitCloud.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/lpkCut.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; abc/optimized/mem.c.ll
 ; abc/optimized/mfsDiv.c.ll
@@ -271,6 +269,7 @@
 ; libjpeg-turbo/optimized/jdphuff.c.ll
 ; libwebp/optimized/iterator_enc.c.ll
 ; lightgbm/optimized/train_share_states.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nuttx/optimized/task_setup.c.ll
@@ -440,8 +439,8 @@ entry:
 }
 
 ; 3 occurrences:
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; postgres/optimized/be-fsstubs.ll
+; redis/optimized/module.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0) #0 {

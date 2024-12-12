@@ -1,12 +1,16 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	li	a0, 360
-	lui	a1, 3
+	li	a0, 700
 	vadd.vx	v9, v10, a0
-	addi	a1, a1, -637
-	vmulhu.vx	v8, v9, a1
-	vsrl.vi	v8, v8, 6
+	lui	a0, 2
+	addi	a0, a0, 1171
+	vmulhu.vx	v8, v9, a0
+	vsub.vv	v10, v9, v8
+	vsrl.vi	v10, v10, 1
+	vadd.vv	v8, v10, v8
+	vsrl.vi	v8, v8, 2
+	li	a0, 7
 	vnmsub.vx	v8, a0, v9
 	ret
 func0000000000000009:                   # @func0000000000000009

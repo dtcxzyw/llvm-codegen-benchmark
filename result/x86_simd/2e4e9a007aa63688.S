@@ -19,29 +19,29 @@ func00000000000000ca:                   # @func00000000000000ca
 	vzeroupper
 	retq
 .LCPI2_0:
+	.long	0x3b808081                      # float 0.00392156886
+func0000000000000022:                   # @func0000000000000022
+	vmulps	.LCPI2_0(%rip){1to16}, %zmm2, %zmm2
+	vminps	%zmm2, %zmm1, %zmm1
+	vcmpltps	%zmm1, %zmm0, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
 	.long	0x0c000000                      # float 9.86076131E-32
 func0000000000000045:                   # @func0000000000000045
-	vmulps	.LCPI2_0(%rip){1to16}, %zmm2, %zmm2
+	vmulps	.LCPI3_0(%rip){1to16}, %zmm2, %zmm2
 	vmaxps	%zmm2, %zmm1, %zmm1
 	vcmpnleps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI3_0:
-	.long	0x3f800003                      # float 1.00000036
-func0000000000000024:                   # @func0000000000000024
-	vmulps	.LCPI3_0(%rip){1to16}, %zmm2, %zmm2
-	vminps	%zmm2, %zmm1, %zmm1
-	vcmpltps	%zmm0, %zmm1, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
 .LCPI4_0:
 	.long	0x3f800003                      # float 1.00000036
-func0000000000000022:                   # @func0000000000000022
+func0000000000000024:                   # @func0000000000000024
 	vmulps	.LCPI4_0(%rip){1to16}, %zmm2, %zmm2
 	vminps	%zmm2, %zmm1, %zmm1
-	vcmpltps	%zmm1, %zmm0, %k0
+	vcmpltps	%zmm0, %zmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

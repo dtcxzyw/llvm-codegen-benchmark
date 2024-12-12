@@ -16,7 +16,7 @@ entry:
 ; slurm/optimized/read_config.ll
 ; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = mul nuw nsw i32 %0, %1
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000069(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = mul nuw nsw i32 %0, %1
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = mul nuw nsw i32 %0, %1
@@ -49,11 +49,11 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000039(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = mul nsw i32 %0, %1
-  %5 = icmp uge i32 %4, %3
+  %5 = icmp samesign uge i32 %4, %3
   ret i1 %5
 }
 
@@ -62,11 +62,11 @@ entry:
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/read_config.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = mul nuw nsw i32 %0, %1
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   ret i1 %5
 }
 
@@ -76,7 +76,7 @@ entry:
 ; slurm/optimized/gres_filter.ll
 ; slurm/optimized/select_cons_tres.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = mul nsw i32 %0, %1
@@ -88,7 +88,7 @@ entry:
 ; slurm/optimized/gres_filter.ll
 ; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = mul nsw i32 %0, %1
@@ -100,11 +100,11 @@ entry:
 ; slurm/optimized/gres_filter.ll
 ; slurm/optimized/job_test.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = mul nuw nsw i32 %0, %1
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 

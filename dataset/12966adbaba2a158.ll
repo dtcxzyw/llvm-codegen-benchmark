@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
@@ -13,6 +13,7 @@
 ; hdf5/optimized/H5Znbit.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/stream.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i8 %1, i32 %2) #0 {

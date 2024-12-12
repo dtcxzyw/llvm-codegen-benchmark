@@ -1,6 +1,7 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; arrow/optimized/key_map.cc.ll
+; boost/optimized/mo_lambda.ll
 ; llvm/optimized/MCExpr.cpp.ll
 ; ockam-rs/optimized/2kn3t03vxm4q238t.ll
 ; ockam-rs/optimized/y9mp3cipt8wluu6.ll

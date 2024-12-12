@@ -11,7 +11,7 @@
 ; openjdk/optimized/IntArgbPre.ll
 ; openjdk/optimized/OGLBlitLoops.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0) #0 {
+define i1 @func0000000000000048(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 16777216
   %2 = icmp ult i32 %1, 33554432

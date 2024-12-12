@@ -1,32 +1,13 @@
 
-; 8 occurrences:
-; openjdk/optimized/memnode.ll
-; z3/optimized/q_ematch.cpp.ll
-; z3/optimized/sat_drat.cpp.ll
-; z3/optimized/seq_rewriter.cpp.ll
-; z3/optimized/theory_array_base.cpp.ll
-; z3/optimized/theory_str_mc.cpp.ll
-; z3/optimized/theory_str_regex.cpp.ll
-; z3/optimized/udoc_relation.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000072(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %1, 1
-  %5 = icmp uge i64 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000d8(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = icmp ne i64 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -36,7 +17,7 @@ entry:
 ; abc/optimized/hopDfs.c.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000062(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c2(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -50,24 +31,24 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f0(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001f0(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 2
-  %5 = icmp ugt i64 %4, %3
-  %6 = or i1 %5, %0
+  %5 = icmp samesign ugt i64 %4, %3
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; kcp/optimized/ikcp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %1, -24
-  %5 = icmp ult i64 %4, %3
-  %6 = or i1 %5, %0
+  %5 = icmp samesign ult i64 %4, %3
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -79,11 +60,11 @@ entry:
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f2(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001f2(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
-  %5 = icmp uge i64 %4, %3
+  %5 = icmp samesign uge i64 %4, %3
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -92,12 +73,12 @@ entry:
 ; gromacs/optimized/gmx_current.cpp.ll
 ; wireshark/optimized/tap-follow.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e2(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001c2(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = icmp eq i64 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -105,17 +86,16 @@ entry:
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000168(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %1, -3
-  %5 = icmp ult i64 %4, %3
-  %6 = or i1 %5, %0
+  %5 = icmp samesign ult i64 %4, %3
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 2 occurrences:
-; cpython/optimized/sre.ll
+; 1 occurrences:
 ; linux/optimized/printk_ringbuffer.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i32 %2) #0 {
@@ -123,7 +103,37 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add i64 %1, -8
   %5 = icmp ult i64 %4, %3
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; cvc5/optimized/core_solver.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004a(i1 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nsw i64 %1, -1
+  %5 = icmp ule i64 %4, %3
   %6 = or i1 %5, %0
+  ret i1 %6
+}
+
+; 7 occurrences:
+; z3/optimized/q_ematch.cpp.ll
+; z3/optimized/sat_drat.cpp.ll
+; z3/optimized/seq_rewriter.cpp.ll
+; z3/optimized/theory_array_base.cpp.ll
+; z3/optimized/theory_str_mc.cpp.ll
+; z3/optimized/theory_str_regex.cpp.ll
+; z3/optimized/udoc_relation.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f2(i1 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nuw nsw i64 %1, 1
+  %5 = icmp samesign uge i64 %4, %3
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -131,12 +141,24 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000f0(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 20
-  %5 = icmp ugt i64 %4, %3
-  %6 = or i1 %5, %0
+  %5 = icmp samesign ugt i64 %4, %3
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; cpython/optimized/sre.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add i64 %1, 1
+  %5 = icmp samesign ult i64 %4, %3
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

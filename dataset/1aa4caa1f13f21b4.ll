@@ -19,11 +19,11 @@ entry:
 ; lz4/optimized/lz4.c.ll
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = udiv i16 %1, 1000
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   ret ptr %4
 }
 

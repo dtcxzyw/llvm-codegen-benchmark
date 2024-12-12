@@ -9,7 +9,7 @@
 ; protobuf/optimized/text_format.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 80
@@ -28,7 +28,7 @@ entry:
 ; yosys/optimized/viz.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 12
@@ -53,7 +53,7 @@ entry:
 ; yosys/optimized/muxcover.ll
 ; yosys/optimized/opt_lut.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 12
@@ -67,7 +67,7 @@ entry:
 ; draco/optimized/float_points_tree_encoder.cc.ll
 ; llvm/optimized/Gnu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 12
@@ -80,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/equiv_make.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 80
@@ -93,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/indirect.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000107(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000207(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24

@@ -63,12 +63,11 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/lincs.cpp.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; oiio/optimized/deepdata.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
-; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1, i8 %2) #0 {
 entry:
@@ -107,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Scalarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp eq i32 %0, %1
@@ -123,6 +122,17 @@ define i1 @func000000000000000a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = icmp sgt i32 %0, %1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000047(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = trunc nuw i8 %2 to i1
+  %4 = icmp sle i32 %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
 }

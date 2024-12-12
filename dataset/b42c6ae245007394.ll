@@ -1,7 +1,9 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; icu/optimized/ucnvmbcs.ll
 ; libjpeg-turbo/optimized/jdsample.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; node/optimized/libnode.string_decoder.ll
 ; openjdk/optimized/jdsample.ll
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
 ; wireshark/optimized/packet-usb-audio.c.ll
@@ -10,7 +12,7 @@ define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -27,7 +29,7 @@ define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -38,7 +40,7 @@ define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

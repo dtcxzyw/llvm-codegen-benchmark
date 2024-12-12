@@ -5,9 +5,22 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	and	a0, a0, a2
 	ret
+func0000000000000030:                   # @func0000000000000030
+	andi	a2, a2, 63
+	sltiu	a2, a2, 17
+	xori	a2, a2, 1
+	or	a0, a0, a1
+	and	a0, a0, a2
+	ret
 func0000000000000018:                   # @func0000000000000018
 	slli	a2, a2, 53
 	srli	a2, a2, 63
+	or	a0, a0, a1
+	and	a0, a0, a2
+	ret
+func0000000000000028:                   # @func0000000000000028
+	andi	a2, a2, 15
+	sltiu	a2, a2, 11
 	or	a0, a0, a1
 	and	a0, a0, a2
 	ret

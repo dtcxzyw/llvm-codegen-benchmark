@@ -36,7 +36,7 @@
 	.zero	1
 .LCPI0_3:
 	.byte	2                               # 0x2
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm0, %k0
 	vptestnmd	%ymm0, %ymm0, %k1
 	korb	%k0, %k1, %k1

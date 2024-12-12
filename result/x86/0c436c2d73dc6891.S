@@ -1,8 +1,3 @@
-func000000000000028c:                   # @func000000000000028c
-	leaq	8(%rsi,%rdx,8), %rax
-	cmpq	%rdi, %rax
-	setne	%al
-	retq
 func0000000000000004:                   # @func0000000000000004
 	leaq	-8(%rsi,%rdx,8), %rax
 	cmpq	%rdi, %rax

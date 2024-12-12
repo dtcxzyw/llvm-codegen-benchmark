@@ -19,7 +19,7 @@ func000000000000007f:                   # @func000000000000007f
 	movzbl	%sil, %eax
 	leal	(%rax,%rax,2), %eax
 	shll	$4, %eax
-	leal	32860(%rax,%rdi), %eax
+	leal	32860(%rdi,%rax), %eax
 	retq
 func000000000000003d:                   # @func000000000000003d
 	movzbl	%sil, %eax

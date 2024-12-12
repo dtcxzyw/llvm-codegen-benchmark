@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; coreutils-rs/optimized/4gs2z359bfnc1tys.ll
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/dbhzlm53ys8w4y2p8y2woz44v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:

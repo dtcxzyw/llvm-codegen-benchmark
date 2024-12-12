@@ -1,5 +1,5 @@
 
-; 158 occurrences:
+; 155 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/darPrec.c.ll
@@ -95,7 +95,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -118,7 +117,6 @@
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/source_s_roundPackToF16.c.ll
 ; qemu/optimized/source_s_roundPackToF32.c.ll
-; qemu/optimized/source_s_shiftRightJam32.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rtextures.c.ll
@@ -137,7 +135,6 @@
 ; spike/optimized/s_roundPackToBF16.ll
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
-; spike/optimized/s_shiftRightJam32.ll
 ; spike/optimized/s_subMagsF32.ll
 ; spike/optimized/vrol_vv.ll
 ; spike/optimized/vrol_vx.ll

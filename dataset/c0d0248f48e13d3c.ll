@@ -21,7 +21,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/gregorian.ll
 ; icu/optimized/calendar.ll
 ; opencv/optimized/checker_detector.cpp.ll
 ; openspiel/optimized/rbc.cc.ll

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; re2/optimized/re2.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = and i1 %0, %1
@@ -15,7 +15,7 @@ entry:
 ; abc/optimized/abcBm.c.ll
 ; re2/optimized/re2.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i1 %0, %1
   %4 = icmp slt i32 %2, -1

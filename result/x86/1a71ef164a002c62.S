@@ -2,63 +2,63 @@ func0000000000000001:                   # @func0000000000000001
 	addq	$-2, %rdx
 	shrq	%rdx
 	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func00000000000001a4:                   # @func00000000000001a4
+func0000000000000364:                   # @func0000000000000364
 	addq	$7, %rdx
 	shrq	$3, %rdx
 	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	seta	%al
+	cmpq	%rdx, %rdi
+	setb	%al
 	retq
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000361:                   # @func0000000000000361
 	incq	%rdx
 	shrq	%rdx
 	imulq	$56, %rdx, %rax
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	addq	$63, %rdx
 	shrq	$6, %rdx
 	leaq	(%rsi,%rdx,8), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000161:                   # @func0000000000000161
 	addq	$1023, %rdx                     # imm = 0x3FF
 	shrq	$10, %rdx
 	leaq	(%rsi,%rdx,8), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000068:                   # @func0000000000000068
 	addq	$3, %rdx
 	shrq	$2, %rdx
 	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setb	%al
-	retq
-func0000000000000024:                   # @func0000000000000024
-	addq	$3, %rdx
-	shrq	$2, %rdx
-	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	seta	%al
+	retq
+func0000000000000064:                   # @func0000000000000064
+	addq	$3, %rdx
+	shrq	$2, %rdx
+	addq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	setb	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	addq	$3, %rdx
 	shrq	$2, %rdx
 	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setb	%al
+	cmpq	%rdx, %rdi
+	seta	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	addq	$3, %rdx
 	shrq	$2, %rdx
 	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	seta	%al
+	cmpq	%rdx, %rdi
+	setb	%al
 	retq

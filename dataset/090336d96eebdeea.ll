@@ -1,10 +1,9 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; cpython/optimized/dtoa.ll
 ; gromacs/optimized/dstein.cpp.ll
 ; libwebp/optimized/quant_levels_utils.c.ll
-; openblas/optimized/dstein.c.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/cevrndcalculator.ll
 ; quantlib/optimized/chebyshevinterpolation.ll
@@ -25,18 +24,7 @@ entry:
 }
 
 ; 2 occurrences:
-; ipopt/optimized/IpCGPenaltyLSAcceptor.ll
-; ipopt/optimized/IpUtils.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fmul double %2, 0x3CE4000000000000
-  %4 = fsub double %0, %1
-  %5 = fcmp ole double %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
+; boost/optimized/expand_on_spheroid.ll
 ; ipopt/optimized/IpCGPenaltyLSAcceptor.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(double %0, double %1, double %2) #0 {

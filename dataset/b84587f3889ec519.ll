@@ -25,7 +25,7 @@
 ; ncnn/optimized/scale_x86_avx512.cpp.ll
 ; ncnn/optimized/scale_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sdiv i32 %3, 8
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000261(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sdiv i32 %3, 2
@@ -52,7 +52,7 @@ entry:
 ; opencv/optimized/tree.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sdiv i32 %3, 32

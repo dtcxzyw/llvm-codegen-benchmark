@@ -17,10 +17,9 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
-; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -33,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-icmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
   %4 = sub nsw i32 %0, %1
@@ -44,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/floodfill.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
   %4 = sub nsw i32 %0, %1

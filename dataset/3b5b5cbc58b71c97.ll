@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/epsilonInitLogger.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2305843009079476224
   %3 = icmp ne i64 %2, 0
@@ -73,7 +73,7 @@ entry:
 ; tinympc/optimized/admm.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i61
   %3 = icmp ult i61 %2, 4001
@@ -85,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014c(i64 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, 4294967295
   %2 = icmp ne i64 %.mask, 0
@@ -98,7 +98,7 @@ entry:
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; portaudio/optimized/pa_converters.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, 65535
   %2 = icmp ne i64 %.mask, 65535
@@ -110,7 +110,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/dynahash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i61
   %3 = icmp ult i61 %2, 129

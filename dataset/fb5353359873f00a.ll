@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001022(i32 %0, i64 %1) #0 {
+define i1 @func0000000000004042(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 255
   %3 = icmp eq i32 %0, 64
@@ -18,7 +18,7 @@ entry:
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/WarnMissedTransforms.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001990(i32 %0, i64 %1) #0 {
+define i1 @func0000000000006310(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp ne i32 %0, 0
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVDisassembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001910(i32 %0, i64 %1) #0 {
+define i1 @func0000000000006210(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp ugt i32 %0, 15
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/InitHeaderSearch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001822(i32 %0, i64 %1) #0 {
+define i1 @func0000000000006042(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp eq i32 %0, 8
@@ -58,7 +58,7 @@ entry:
 ; opencv/optimized/convolution_layer.cpp.ll
 ; openusd/optimized/collectionExpressionEvaluator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000822(i32 %0, i64 %1) #0 {
+define i1 @func0000000000002042(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 4294967296
   %3 = icmp eq i32 %0, 0
@@ -71,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_width.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001830(i32 %0, i64 %1) #0 {
+define i1 @func0000000000006050(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp eq i32 %0, 1

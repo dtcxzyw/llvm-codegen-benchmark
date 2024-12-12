@@ -101,16 +101,25 @@ entry:
   ret double %4
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
-; openjdk/optimized/stringDedupStat.ll
-; openusd/optimized/drawModeAdapter.cpp.ll
-; openvdb/optimized/LevelSetFracture.cc.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(double %0, double %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 4503599627370496
+  %4 = select i1 %3, double %0, double %1
+  ret double %4
+}
+
+; 3 occurrences:
+; openjdk/optimized/stringDedupStat.ll
+; openusd/optimized/drawModeAdapter.cpp.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; Function Attrs: nounwind
+define double @func0000000000000014(double %0, double %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 4
   %4 = select i1 %3, double %0, double %1
   ret double %4
 }

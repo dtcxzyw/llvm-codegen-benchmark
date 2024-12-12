@@ -19,9 +19,8 @@ entry:
   ret i32 %3
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/absVta.c.ll
-; icu/optimized/locid.ll
 ; linux/optimized/timerfd.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
@@ -53,7 +52,7 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/ioWriteAiger.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; cpython/optimized/object.ll
@@ -62,6 +61,7 @@ entry:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/Program.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; openjdk/optimized/library_call.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000004c(i64 %0) #0 {
+define i32 @func000000000000008c(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = icmp slt i32 %1, 1
@@ -89,7 +89,7 @@ entry:
 ; slurm/optimized/step_io.ll
 ; slurm/optimized/step_launch.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000054(i64 %0) #0 {
+define i32 @func0000000000000094(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = icmp sgt i32 %1, 0
@@ -99,14 +99,14 @@ entry:
 
 ; 4 occurrences:
 ; cmake/optimized/lz_encoder.c.ll
-; linux/optimized/apic_flat_64.ll
-; linux/optimized/isadma.ll
+; cmake/optimized/zstd_decompress_block.c.ll
 ; linux/optimized/lib.ll
+; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = icmp ugt i32 %1, 8
+  %2 = icmp ugt i32 %1, 6
   %3 = zext i1 %2 to i32
   ret i32 %3
 }

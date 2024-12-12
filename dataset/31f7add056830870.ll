@@ -1,5 +1,5 @@
 
-; 178 occurrences:
+; 177 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -169,7 +169,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -182,7 +181,7 @@
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = mul i64 %3, -7286425919675154353
   ret i64 %4
 }
@@ -208,8 +207,19 @@ entry:
 define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = mul nuw nsw i64 %3, 1000000
+  ret i64 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i64
+  %3 = or disjoint i64 %0, %2
+  %4 = mul nuw i64 %3, 24
   ret i64 %4
 }
 
@@ -219,7 +229,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = mul nsw i64 %3, -7
   ret i64 %4
 }

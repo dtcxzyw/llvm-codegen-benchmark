@@ -1,36 +1,32 @@
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	movi	v2.16b, #254
-	uzp1	v0.16b, v0.16b, v1.16b
-	movi	v1.16b, #61
-	sub	v0.16b, v2.16b, v0.16b
-	ushl	v0.16b, v1.16b, v0.16b
+	mov	w8, #61                         // =0x3d
+	add	w9, w0, #2
+	lsr	w8, w8, w9
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v2.16b, #253
-	uzp1	v0.16b, v0.16b, v1.16b
-	movi	v1.16b, #243
-	sub	v0.16b, v2.16b, v0.16b
-	ushl	v0.16b, v1.16b, v0.16b
+	mov	w8, #243                        // =0xf3
+	add	w9, w0, #3
+	lsr	w8, w8, w9
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	movi	v2.16b, #119
-	uzp1	v0.16b, v0.16b, v1.16b
-	movi	v1.16b, #47
-	sub	v0.16b, v2.16b, v0.16b
-	ushl	v0.16b, v1.16b, v0.16b
+	mov	w8, #47                         // =0x2f
+	sub	w9, w0, #119
+	lsr	w8, w8, w9
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	movi	v2.16b, #6
-	uzp1	v0.16b, v0.16b, v1.16b
-	movi	v1.16b, #47
-	sub	v0.16b, v2.16b, v0.16b
-	ushl	v0.16b, v1.16b, v0.16b
+	mov	w8, #47                         // =0x2f
+	sub	w9, w0, #6
+	lsr	w8, w8, w9
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; hdf5/optimized/H5HFdtable.c.ll
 ; linux/optimized/gss_krb5_wrap.ll
 ; luajit/optimized/lj_vmmath.ll
 ; luajit/optimized/lj_vmmath_dyn.ll
+; lvgl/optimized/lv_roller.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll

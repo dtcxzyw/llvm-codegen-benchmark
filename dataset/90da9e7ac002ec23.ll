@@ -1,10 +1,11 @@
 
-; 219 occurrences:
+; 216 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -99,13 +100,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -180,7 +178,6 @@
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -253,12 +250,12 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = shl nsw i64 %4, 3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = add i64 %6, 63
   ret i64 %7
 }
 
-; 19 occurrences:
+; 17 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; linux/optimized/bio.ll
@@ -270,11 +267,9 @@ entry:
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/kexec_core.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pt.ll
-; linux/optimized/secretmem.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/snapshot.ll
 ; linux/optimized/virtio_net.ll
@@ -285,7 +280,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 6
   %6 = add i64 %5, %0
-  %7 = add i64 %6, 4096
+  %7 = add i64 %6, 2147483648
   ret i64 %7
 }
 
@@ -297,7 +292,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = add nsw i64 %6, -2
   ret i64 %7
 }

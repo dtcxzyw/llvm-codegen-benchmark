@@ -16,3 +16,12 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%edi, %edi
 	setg	%al
 	retq
+func0000000000000006:                   # @func0000000000000006
+	movq	%rdx, %rcx
+	movq	%rsi, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	subl	%eax, %edi
+	shrl	$31, %edi
+	movl	%edi, %eax
+	retq

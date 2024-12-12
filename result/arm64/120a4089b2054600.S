@@ -1,4 +1,4 @@
-func000000000000006a:                   // @func000000000000006a
+func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	ubfiz	x8, x1, #2, #32
@@ -7,7 +7,7 @@ func000000000000006a:                   // @func000000000000006a
 	add	x0, x8, #4
 	ret
                                         // -- End function
-func0000000000000060:                   // @func0000000000000060
+func0000000000000070:                   // @func0000000000000070
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	ubfiz	x8, x1, #2, #32
@@ -16,7 +16,7 @@ func0000000000000060:                   // @func0000000000000060
 	sub	x0, x8, #4
 	ret
                                         // -- End function
-func000000000000002a:                   // @func000000000000002a
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	ubfiz	x8, x1, #3, #32

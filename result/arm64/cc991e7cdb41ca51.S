@@ -1,20 +1,15 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	bic	v1.8h, #192
-	bic	v0.8h, #192
-	orr	v1.8h, #64
-	orr	v0.8h, #64
+	orr	w8, w0, w1
+	and	w8, w8, #0xffffff3f
+	orr	w0, w8, #0x40
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	bic	v1.8h, #27
-	bic	v0.8h, #27
-	orr	v1.8h, #11
-	orr	v0.8h, #11
+	orr	w9, w0, w1
+	mov	w8, #11                         // =0xb
+	and	w9, w9, #0xffffffef
+	orr	w0, w9, w8
 	ret
                                         // -- End function

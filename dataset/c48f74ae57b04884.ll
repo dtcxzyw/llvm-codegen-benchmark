@@ -1,11 +1,36 @@
 
-; 375 occurrences:
+; 391 occurrences:
 ; abc/optimized/giaIso.c.ll
 ; abc/optimized/io.c.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; abseil-cpp/optimized/status_internal.cc.ll
 ; actix-rs/optimized/1xpd5itwjglolvjs.ll
 ; arrow/optimized/interfaces.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/this_thread.ll
+; boost/optimized/wait.ll
 ; c3c/optimized/sema_name_resolution.c.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cjson/optimized/cJSON.c.ll
@@ -104,11 +129,9 @@
 ; linux/optimized/hub.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_crt.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/intel_uc_fw.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/mark.ll
 ; linux/optimized/move_extent.ll
 ; linux/optimized/posix_acl.ll
@@ -124,22 +147,34 @@
 ; llama.cpp/optimized/train.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/Attributes.cpp.ll
+; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/CXXPredicates.cpp.ll
+; llvm/optimized/Constants.cpp.ll
 ; llvm/optimized/ControlHeightReduction.cpp.ll
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
 ; llvm/optimized/DWARFUnitIndex.cpp.ll
 ; llvm/optimized/DebugFrameDataSubsection.cpp.ll
+; llvm/optimized/DeclObjC.cpp.ll
+; llvm/optimized/Delinearization.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/LTO.cpp.ll
+; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MCPseudoProbe.cpp.ll
 ; llvm/optimized/MachineBasicBlock.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
+; llvm/optimized/MachinePostDominators.cpp.ll
+; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
+; llvm/optimized/SampleProf.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/SemaHLSL.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
+; llvm/optimized/SemaObjC.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
+; llvm/optimized/VPlanAnalysis.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
@@ -167,7 +202,12 @@
 ; openssl/optimized/libcrypto-shlib-async_wait.ll
 ; openssl/optimized/libcrypto-shlib-initthread.ll
 ; openssl/optimized/libcrypto-shlib-pcy_tree.ll
+; openusd/optimized/layerStack.cpp.ll
 ; openusd/optimized/mallocTag.cpp.ll
+; openusd/optimized/node.cpp.ll
+; openusd/optimized/piPrototypeSceneIndex.cpp.ll
+; openusd/optimized/primGather.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
 ; openusd/optimized/targetIndex.cpp.ll
 ; openusd/optimized/testUsdTimeValueAuthoring.cpp.ll
 ; php/optimized/ir_ra.ll
@@ -190,8 +230,6 @@
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; protobuf/optimized/unparser.cc.ll
-; qemu/optimized/hw_riscv_numa.c.ll
-; recastnavigation/optimized/fastlz.c.ll
 ; redis/optimized/cluster_legacy.ll
 ; rocksdb/optimized/blob_db_impl.cc.ll
 ; rocksdb/optimized/db_impl.cc.ll
@@ -278,7 +316,6 @@
 ; yosys/optimized/extract_counter.ll
 ; yosys/optimized/extract_fa.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/fastlz.ll
 ; yosys/optimized/ffmerge.ll
 ; yosys/optimized/firrtl.ll
 ; yosys/optimized/flatten.ll
@@ -351,39 +388,18 @@
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/zinit.ll
 ; z3/optimized/dd_bdd.cpp.ll
-; z3/optimized/dl_decl_plugin.cpp.ll
-; z3/optimized/dl_finite_product_relation.cpp.ll
-; z3/optimized/dl_mk_array_eq_rewrite.cpp.ll
-; z3/optimized/dl_mk_magic_sets.cpp.ll
-; z3/optimized/dl_product_relation.cpp.ll
-; z3/optimized/dl_sieve_relation.cpp.ll
-; z3/optimized/dl_sparse_table.cpp.ll
-; z3/optimized/dl_table.cpp.ll
 ; z3/optimized/emonics.cpp.ll
-; z3/optimized/euf_relevancy.cpp.ll
-; z3/optimized/factor_equivs.cpp.ll
-; z3/optimized/nla_core.cpp.ll
 ; z3/optimized/nlsat_solver.cpp.ll
-; z3/optimized/pb_solver.cpp.ll
-; z3/optimized/polymorphism_inst.cpp.ll
-; z3/optimized/polynomial.cpp.ll
-; z3/optimized/sat_aig_cuts.cpp.ll
-; z3/optimized/sat_drat.cpp.ll
-; z3/optimized/sat_proof_trim.cpp.ll
-; z3/optimized/seq_rewriter.cpp.ll
-; z3/optimized/spacer_generalizers.cpp.ll
-; z3/optimized/symmetry_reduce_tactic.cpp.ll
-; z3/optimized/theory_pb.cpp.ll
-; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0) #0 {
+define ptr @func0000000000000003(ptr %0) #0 {
 entry:
   %1 = freeze ptr %0
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   ret ptr %2
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/giaIso.c.ll
 ; abc/optimized/llb2Flow.c.ll
@@ -407,6 +423,7 @@ entry:
 ; llvm/optimized/LoadStoreVectorizer.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
 ; meshlab/optimized/filter_layer.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
 ; postgres/optimized/createplan.ll
 ; postgres/optimized/inherit.ll
@@ -424,35 +441,39 @@ entry:
   ret ptr %2
 }
 
-; 23 occurrences:
-; llvm/optimized/Attributes.cpp.ll
-; llvm/optimized/CGStmt.cpp.ll
-; llvm/optimized/Constants.cpp.ll
+; 27 occurrences:
 ; llvm/optimized/ControlHeightReduction.cpp.ll
-; llvm/optimized/DeclObjC.cpp.ll
-; llvm/optimized/Delinearization.cpp.ll
-; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/LegalizeVectorOps.cpp.ll
-; llvm/optimized/MachinePostDominators.cpp.ll
-; llvm/optimized/MallocChecker.cpp.ll
-; llvm/optimized/SampleProf.cpp.ll
-; llvm/optimized/SelectionDAG.cpp.ll
-; llvm/optimized/SemaHLSL.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
-; llvm/optimized/SemaObjC.cpp.ll
-; llvm/optimized/VPlanAnalysis.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
-; openusd/optimized/layerStack.cpp.ll
-; openusd/optimized/node.cpp.ll
-; openusd/optimized/piPrototypeSceneIndex.cpp.ll
-; openusd/optimized/primGather.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/targetIndex.cpp.ll
+; recastnavigation/optimized/fastlz.c.ll
+; yosys/optimized/fastlz.ll
+; z3/optimized/dl_decl_plugin.cpp.ll
+; z3/optimized/dl_finite_product_relation.cpp.ll
+; z3/optimized/dl_mk_array_eq_rewrite.cpp.ll
+; z3/optimized/dl_mk_magic_sets.cpp.ll
+; z3/optimized/dl_product_relation.cpp.ll
+; z3/optimized/dl_sieve_relation.cpp.ll
+; z3/optimized/dl_sparse_table.cpp.ll
+; z3/optimized/dl_table.cpp.ll
+; z3/optimized/euf_relevancy.cpp.ll
+; z3/optimized/factor_equivs.cpp.ll
+; z3/optimized/nla_core.cpp.ll
+; z3/optimized/pb_solver.cpp.ll
+; z3/optimized/polymorphism_inst.cpp.ll
+; z3/optimized/polynomial.cpp.ll
+; z3/optimized/sat_aig_cuts.cpp.ll
+; z3/optimized/sat_drat.cpp.ll
+; z3/optimized/sat_proof_trim.cpp.ll
+; z3/optimized/seq_rewriter.cpp.ll
+; z3/optimized/spacer_generalizers.cpp.ll
+; z3/optimized/symmetry_reduce_tactic.cpp.ll
+; z3/optimized/theory_pb.cpp.ll
+; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0) #0 {
+define ptr @func0000000000000002(ptr %0) #0 {
 entry:
   %1 = freeze ptr %0
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 32
+  %2 = getelementptr nusw i8, ptr %1, i64 -3
   ret ptr %2
 }
 

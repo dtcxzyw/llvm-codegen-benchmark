@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = sub nuw i64 %3, %1
@@ -16,7 +16,7 @@ entry:
 ; minetest/optimized/serverenvironment.cpp.ll
 ; velox/optimized/Re2Functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000003e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 256
   %4 = sub nuw nsw i64 %3, %1
@@ -34,7 +34,7 @@ entry:
 ; quantlib/optimized/pathwiseproductcallspecified.ll
 ; wasmedge/optimized/codegen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = sub nuw i64 %3, %1
@@ -52,7 +52,7 @@ entry:
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = sub nuw nsw i64 %3, %1
@@ -65,7 +65,7 @@ entry:
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/cc1gen_reproducer_main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000003a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = sub nuw i64 %3, %1
@@ -80,7 +80,7 @@ entry:
 ; casadi/optimized/sparsity.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = sub nuw i64 %3, %1

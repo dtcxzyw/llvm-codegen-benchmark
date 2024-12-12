@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/MD5Loader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
@@ -23,23 +23,33 @@
 ; opencv/optimized/rtrees.cpp.ll
 ; opencv/optimized/stitching_detailed.cpp.ll
 ; opencv/optimized/tracking_online_mil.cpp.ll
-; openjdk/optimized/zMark.ll
 ; openspiel/optimized/policy.cc.ll
 ; wasmedge/optimized/helper.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 1
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 4 occurrences:
+; 1 occurrences:
+; openjdk/optimized/zMark.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 3
+  %5 = and i64 %4, -512
+  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; opencv/optimized/find_ellipses.cpp.ll
-; opencv/optimized/nonrigid_icp.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {

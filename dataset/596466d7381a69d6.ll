@@ -1,5 +1,5 @@
 
-%"class.folly::TDigest::Centroid.2570106" = type { double, double }
+%"class.folly::TDigest::Centroid.2684471" = type { double, double }
 
 ; 50 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
@@ -118,7 +118,7 @@ entry:
   %2 = shl nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
   %4 = freeze ptr %0
-  %5 = getelementptr nusw %"class.folly::TDigest::Centroid.2570106", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.folly::TDigest::Centroid.2684471", ptr %4, i64 %3
   ret ptr %5
 }
 

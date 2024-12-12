@@ -1,7 +1,7 @@
 
 ; 3 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
-; opencv/optimized/motion_estimators.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000034(i64 %0, i64 %1) #0 {

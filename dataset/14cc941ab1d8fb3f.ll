@@ -1,6 +1,8 @@
 
-; 193 occurrences:
+; 195 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/finite_differences.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll

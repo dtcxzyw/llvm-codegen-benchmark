@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/histogram.c.ll
@@ -23,6 +23,7 @@
 ; mitsuba3/optimized/roughconductor.cpp.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {
 entry:

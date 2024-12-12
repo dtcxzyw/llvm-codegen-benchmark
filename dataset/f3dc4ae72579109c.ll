@@ -1,5 +1,7 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/gvpr.c.ll
 ; icu/optimized/ucnv2022.ll
@@ -13,7 +15,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = trunc i64 %5 to i8
-  %7 = add i8 %6, %0
+  %7 = add i8 %0, %6
   ret i8 %7
 }
 

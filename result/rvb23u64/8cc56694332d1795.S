@@ -23,3 +23,21 @@ func0000000000000020:                   # @func0000000000000020
 	orn	a0, a0, a1
 	andi	a0, a0, 1
 	ret
+func0000000000000028:                   # @func0000000000000028
+	sext.b	a1, a1
+	sgtz	a1, a1
+	or	a0, a0, a1
+	andi	a0, a0, 1
+	ret
+func0000000000000050:                   # @func0000000000000050
+	andi	a1, a1, 255
+	sltiu	a1, a1, 192
+	or	a0, a0, a1
+	andi	a0, a0, 1
+	ret
+func0000000000000060:                   # @func0000000000000060
+	andi	a1, a1, 255
+	sltiu	a1, a1, 3
+	orn	a0, a0, a1
+	andi	a0, a0, 1
+	ret

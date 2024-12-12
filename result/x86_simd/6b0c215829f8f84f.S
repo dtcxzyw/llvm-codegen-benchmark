@@ -8,7 +8,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [169,169,169,169,169,169,169,169]
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [4294967248,4294967248,4294967248,4294967248,4294967248,4294967248,4294967248,4294967248]
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
@@ -20,7 +20,7 @@ func0000000000000015:                   # @func0000000000000015
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpbroadcastd	.LCPI1_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2,2,2,2,2]
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	17                              # 0x11
@@ -32,7 +32,7 @@ func000000000000003c:                   # @func000000000000003c
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [17,17,17,17,17,17,17,17]
 	vpbroadcastd	.LCPI2_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [39,39,39,39,39,39,39,39]
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.long	4294967286                      # 0xfffffff6
@@ -44,7 +44,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [4294967286,4294967286,4294967286,4294967286,4294967286,4294967286,4294967286,4294967286]
 	vpbroadcastd	.LCPI3_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [4294967285,4294967285,4294967285,4294967285,4294967285,4294967285,4294967285,4294967285]
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	1                               # 0x1
@@ -56,5 +56,5 @@ func0000000000000010:                   # @func0000000000000010
 	vpbroadcastd	.LCPI4_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpbroadcastd	.LCPI4_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2,2,2,2,2]
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

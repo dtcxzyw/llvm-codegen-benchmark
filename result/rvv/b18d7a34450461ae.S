@@ -19,12 +19,6 @@ func00000000000000cd:                   # @func00000000000000cd
 	vmflt.vf	v10, v8, fa5
 	vmandn.mm	v0, v14, v10
 	ret
-func0000000000000041:                   # @func0000000000000041
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vv	v14, v10, v12
-	vmfne.vv	v10, v8, v8
-	vmand.mm	v0, v10, v14
-	ret
 func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vv	v14, v10, v12

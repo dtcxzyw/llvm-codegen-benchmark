@@ -53,7 +53,7 @@ func000000000000000b:                   # @func000000000000000b
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	vpandd	.LCPI1_3(%rip){1to8}, %ymm1, %ymm1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm2   # ymm2 = [127,127,127,127,127,127,127,127]
 	vpcmpgtd	%ymm1, %ymm2, %ymm1
@@ -102,7 +102,7 @@ func0000000000000023:                   # @func0000000000000023
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	vpandd	.LCPI2_3(%rip){1to8}, %ymm1, %ymm1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm2   # ymm2 = [127,127,127,127,127,127,127,127]
 	vpcmpgtd	%ymm1, %ymm2, %ymm1

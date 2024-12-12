@@ -17,10 +17,9 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000008:                   # @func0000000000000008
 	subq	%rsi, %rdx
-	movabsq	$9223372036854775804, %rax      # imm = 0x7FFFFFFFFFFFFFFC
-	cmpq	%rax, %rdx
-	movq	$-1, %rax
-	cmovbeq	%rdi, %rax
+	xorl	%eax, %eax
+	cmpq	$32, %rdx
+	cmovbq	%rdi, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	subq	%rsi, %rdx

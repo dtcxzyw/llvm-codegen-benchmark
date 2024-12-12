@@ -1,5 +1,7 @@
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; gromacs/optimized/biasgrid.cpp.ll
 ; opencv/optimized/lsd.cpp.ll
@@ -13,7 +15,22 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 19 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; proj/optimized/isea.cpp.ll
 ; raylib/optimized/rtextures.c.ll
@@ -24,7 +41,7 @@ entry:
   %3 = fsub double %1, %2
   %4 = fcmp olt double %3, 0.000000e+00
   %5 = select i1 %4, double %0, double %3
-  %6 = fcmp olt double %5, 0x3E70000000000000
+  %6 = fcmp olt double %5, 0.000000e+00
   ret i1 %6
 }
 

@@ -49,12 +49,30 @@ func0000000000000012:                   # @func0000000000000012
 	vzeroupper
 	retq
 .LCPI5_0:
-	.long	4                               # 0x4
-func0000000000000084:                   # @func0000000000000084
-	vpcmpnleud	.LCPI5_0(%rip){1to8}, %ymm2, %k1
-	vmovapd	%zmm0, %zmm1 {%k1}
-	vxorpd	%xmm0, %xmm0, %xmm0
+	.long	1                               # 0x1
+func00000000000000c2:                   # @func00000000000000c2
+	vpcmpeqd	.LCPI5_0(%rip){1to8}, %ymm2, %k1
+	vmovapd	%zmm1, %zmm0 {%k1}
+	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpltpd	%zmm1, %zmm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI6_0:
+	.quad	0x3ff0000000000000              # double 1
+func0000000000000062:                   # @func0000000000000062
+	vpmovd2m	%ymm2, %k1
+	vmovapd	%zmm0, %zmm1 {%k1}
+	vcmpltpd	.LCPI6_0(%rip){1to8}, %zmm1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.quad	0x3ff0000000000000              # double 1
+func0000000000000064:                   # @func0000000000000064
+	vpmovd2m	%ymm2, %k1
+	vmovapd	%zmm0, %zmm1 {%k1}
+	vcmpgtpd	.LCPI7_0(%rip){1to8}, %zmm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

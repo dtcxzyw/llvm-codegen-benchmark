@@ -32,7 +32,7 @@
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = and i64 %3, 2147483647
   ret i64 %4
 }
@@ -49,7 +49,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = and i64 %3, -32
   ret i64 %4
 }
@@ -63,7 +63,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %.tr = trunc i64 %0 to i32
-  %.narrow = mul i32 %.tr, %1
+  %.narrow = mul i32 %1, %.tr
   %2 = zext i32 %.narrow to i64
   ret i64 %2
 }

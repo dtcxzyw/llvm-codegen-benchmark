@@ -1,6 +1,7 @@
-func0000000000000011:                   # @func0000000000000011
-	andi	a2, a2, 1
-	negw	a1, a1
+func0000000000000021:                   # @func0000000000000021
+	sext.w	a1, a1
+	slli	a2, a2, 63
+	srai	a2, a2, 63
 	xor	a1, a1, a2
 	seqz	a1, a1
 	andn	a0, a1, a0

@@ -1,9 +1,10 @@
 
-; 306 occurrences:
+; 300 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/utf8_codecvt_facet.ll
 ; c3c/optimized/llvm_codegen_debug_info.c.ll
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
-; cmake/optimized/archive_read_support_filter_lz4.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -50,14 +51,12 @@
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/dvo_ch7xxx.ll
-; linux/optimized/dvo_sil164.ll
 ; linux/optimized/dvo_tfp410.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/eeepc-laptop.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/genetlink.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hid-sony.ll
 ; linux/optimized/hwgpe.ll
 ; linux/optimized/i915_perf.ll
@@ -72,7 +71,6 @@
 ; linux/optimized/io_apic.ll
 ; linux/optimized/irqdesc.ll
 ; linux/optimized/keyboard.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mpage.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nfs4proc.ll
@@ -154,15 +152,14 @@
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/archtraits.cpp.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mitsuba3/optimized/func.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll
@@ -172,7 +169,6 @@
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; node/optimized/libnode.inspector_socket.ll
 ; nori/optimized/nanovg.c.ll
-; nuttx/optimized/task_reparent.c.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
 ; ockam-rs/optimized/1j8f46ag92qmaepd.ll
 ; ockam-rs/optimized/59na08zlxqp9p17s.ll
@@ -207,7 +203,6 @@
 ; php/optimized/parse_date.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/php_http_parser.ll
-; php/optimized/php_pcre.ll
 ; php/optimized/sccp.ll
 ; php/optimized/type.ll
 ; php/optimized/zend_inference.ll
@@ -264,7 +259,6 @@
 ; wireshark/optimized/packet-fr.c.ll
 ; wireshark/optimized/packet-ftdi-mpsse.c.ll
 ; wireshark/optimized/packet-gmr1_bcch.c.ll
-; wireshark/optimized/packet-gprscdr.c.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
@@ -315,7 +309,7 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; linux/optimized/keyboard.ll
@@ -323,7 +317,6 @@ entry:
 ; llvm/optimized/CheckExprLifetime.cpp.ll
 ; llvm/optimized/JumpDiagnostics.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; oiio/optimized/targainput.cpp.ll
 ; regex-rs/optimized/6f4i3c8223u3bmw.ll
 ; wireshark/optimized/packet-cip.c.ll
@@ -334,19 +327,8 @@ define i32 @func000000000000000c(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 1
   %.not = icmp eq i8 %1, 0
-  %2 = select i1 %.not, i32 201326592, i32 301989888
+  %2 = select i1 %.not, i32 2, i32 1
   ret i32 %2
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-vnc.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i8 %0) #0 {
-entry:
-  %1 = and i8 %0, 7
-  %2 = icmp ult i8 %1, 5
-  %3 = select i1 %2, i32 8, i32 16
-  ret i32 %3
 }
 
 attributes #0 = { nounwind }

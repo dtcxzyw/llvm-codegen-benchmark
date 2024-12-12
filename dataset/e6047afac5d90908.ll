@@ -22,7 +22,7 @@ entry:
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached_debug-crawler.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp eq i32 %0, 0

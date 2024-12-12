@@ -1,8 +1,7 @@
 
-; 42 occurrences:
+; 39 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; eastl/optimized/TestHeap.cpp.ll
-; node/optimized/simdutf.ll
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/bfsClosure.ll
@@ -40,8 +39,6 @@
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; php/optimized/zend_inference.ll
-; zxing/optimized/BitMatrix.cpp.ll
-; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000045(i64 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -66,6 +63,20 @@ entry:
   %5 = sub i64 %4, %0
   %6 = ashr exact i64 %5, 3
   %7 = add nsw i64 %6, -1
+  ret i64 %7
+}
+
+; 2 occurrences:
+; zxing/optimized/BitMatrix.cpp.ll
+; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000065(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  %6 = ashr exact i64 %5, 1
+  %7 = add nsw i64 %6, 1
   ret i64 %7
 }
 

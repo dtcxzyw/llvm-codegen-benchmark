@@ -20,7 +20,7 @@ func000000000000001f:                   # @func000000000000001f
 	vzext.vf2	v12, v10
 	li	a0, 32
 	vmerge.vxm	v10, v12, a0, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000001c:                   # @func000000000000001c
 	vsetivli	zero, 4, e32, m1, ta, ma

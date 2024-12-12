@@ -1,8 +1,17 @@
 
-; 117 occurrences:
+; 124 occurrences:
 ; arrow/optimized/expression.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; assimp/optimized/JoinVerticesProcess.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; lief/optimized/File.cpp.ll
@@ -47,8 +56,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -167,7 +174,7 @@ entry:
   ret i64 %6
 }
 
-; 82 occurrences:
+; 80 occurrences:
 ; lief/optimized/File.cpp.ll
 ; linux/optimized/compress.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -189,8 +196,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

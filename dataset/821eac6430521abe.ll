@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000076(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, -1
   %4 = shl nuw nsw i32 %2, %3
@@ -15,7 +15,7 @@ entry:
 ; luajit/optimized/minilua.ll
 ; redis/optimized/lobject.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, -1
   %4 = shl i32 %2, %3
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/sharpyuv_gamma.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, -16
   %4 = shl i32 %2, %3

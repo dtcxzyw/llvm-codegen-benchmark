@@ -13,3 +13,8 @@ func0000000000000002:                   # @func0000000000000002
 	addl	%edi, %eax
 	shrl	$12, %eax
 	retq
+func000000000000001e:                   # @func000000000000001e
+	shlxl	%edx, %esi, %eax
+	addl	%edi, %eax
+	shrl	$4, %eax
+	retq

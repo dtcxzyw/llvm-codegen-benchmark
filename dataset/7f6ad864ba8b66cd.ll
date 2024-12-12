@@ -32,6 +32,7 @@
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/dump.ll
 ; bullet3/optimized/b3Solver.ll
 ; clamav/optimized/Bra.c.ll
 ; clamav/optimized/upack.c.ll
@@ -111,8 +112,6 @@
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/feat_ctl.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/hooks.ll
@@ -129,7 +128,6 @@
 ; linux/optimized/irq.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/libata-eh.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mlock.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/neighbour.ll
@@ -144,7 +142,6 @@
 ; linux/optimized/shmem.ll
 ; linux/optimized/skcipher.ll
 ; linux/optimized/slub.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/swap.ll
 ; linux/optimized/tcp_metrics.ll
 ; linux/optimized/tcp_minisocks.ll
@@ -179,7 +176,6 @@
 ; llvm/optimized/MIRSampleProfile.cpp.ll
 ; llvm/optimized/ParseTemplate.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SampleProf.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll
@@ -205,6 +201,10 @@
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-slabs.ll
@@ -301,9 +301,7 @@
 ; php/optimized/streamsfuncs.ll
 ; php/optimized/zend_compile.ll
 ; postgres/optimized/int8.ll
-; postgres/optimized/rangetypes_gist.ll
 ; pugixml/optimized/pugixml.cpp.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
@@ -373,7 +371,6 @@
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
-; wireshark/optimized/mpeg-audio.c.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; wireshark/optimized/packet-icq.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
@@ -386,6 +383,9 @@
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_bcd.cpp.ll
 ; z3/optimized/smtfd_solver.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
@@ -397,9 +397,8 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 25 occurrences:
 ; abc/optimized/giaResub.c.ll
-; linux/optimized/mii.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/socket.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
@@ -408,6 +407,21 @@ entry:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; opencv/optimized/phasecorr.cpp.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
 ; wireshark/optimized/packet-uavcan-can.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -419,7 +433,7 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; linux/optimized/shmem.ll
 ; llvm/optimized/AddDiscriminators.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
@@ -435,14 +449,13 @@ entry:
 ; llvm/optimized/X86InsertPrefetch.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr exact i32 %1, 19
-  %3 = and i32 %2, 640
-  %4 = and i32 %0, 1024
-  %5 = or disjoint i32 %3, %4
+  %2 = lshr exact i32 %1, 1
+  %3 = and i32 %2, 31
+  %4 = and i32 %0, 4064
+  %5 = or disjoint i32 %4, %3
   ret i32 %5
 }
 

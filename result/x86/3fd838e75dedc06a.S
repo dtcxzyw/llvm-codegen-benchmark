@@ -8,6 +8,14 @@ func0000000000000000:                   # @func0000000000000000
 	orb	%sil, %dil
 	orb	%dil, %al
 	retq
+func0000000000000003:                   # @func0000000000000003
+	andb	$1, %dl
+	shlb	$5, %dl
+	andb	$-40, %sil
+	leal	(%rsi,%rdx), %eax
+	andb	$7, %dil
+	orb	%dil, %al
+	retq
 func0000000000000002:                   # @func0000000000000002
 	notb	%dl
 	andb	$1, %dl
@@ -15,14 +23,6 @@ func0000000000000002:                   # @func0000000000000002
 	andb	$-65, %sil
 	leal	(%rsi,%rdx), %eax
 	andb	$-128, %dil
-	orb	%dil, %al
-	retq
-func0000000000000003:                   # @func0000000000000003
-	andb	$1, %dl
-	andb	$1, %sil
-	leal	(%rsi,%rsi), %eax
-	orb	%dl, %al
-	andb	$-4, %dil
 	orb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001

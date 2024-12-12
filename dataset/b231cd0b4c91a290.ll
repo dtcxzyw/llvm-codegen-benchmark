@@ -5,7 +5,7 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, %1
   %4 = icmp sgt i32 %1, -1
@@ -20,7 +20,7 @@ entry:
 ; ncnn/optimized/gridsample_x86_avx512.cpp.ll
 ; ncnn/optimized/gridsample_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, %1
   %4 = icmp sgt i32 %1, -1

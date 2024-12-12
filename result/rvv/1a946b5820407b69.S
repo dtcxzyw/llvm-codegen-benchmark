@@ -13,7 +13,7 @@ func0000000000000002:                   # @func0000000000000002
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
 	vrsub.vi	v9, v9, 2
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, 26
@@ -28,10 +28,9 @@ func000000000000000c:                   # @func000000000000000c
 	vor.vi	v8, v8, 7, v0.t
 	ret
 func0000000000000009:                   # @func0000000000000009
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsleu.vi	v0, v9, 7
-	vor.vi	v9, v8, 2
-	vmerge.vvm	v8, v9, v8, v0
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmsleu.vi	v0, v9, 4
+	vor.vi	v8, v8, 2, v0.t
 	ret
 func0000000000000019:                   # @func0000000000000019
 	vsetivli	zero, 16, e8, m1, ta, ma

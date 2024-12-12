@@ -20,8 +20,8 @@ define i32 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = add i32 %3, 4
-  %5 = add nsw i32 %4, %1
-  %6 = add i32 %5, %0
+  %5 = add nsw i32 %1, %4
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -32,7 +32,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
   %4 = add i32 %3, -1914802624
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -45,7 +45,7 @@ define i32 @func00000000000000f5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = add i32 %3, 2
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }

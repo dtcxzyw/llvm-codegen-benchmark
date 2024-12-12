@@ -33,7 +33,7 @@ define i1 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 5
   %3 = and i16 %2, 1
-  %4 = icmp eq i16 %3, %0
+  %4 = icmp eq i16 %0, %3
   ret i1 %4
 }
 
@@ -41,11 +41,11 @@ entry:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 2
   %3 = and i16 %2, 4095
-  %4 = icmp ugt i16 %3, %0
+  %4 = icmp samesign ult i16 %0, %3
   ret i1 %4
 }
 
@@ -54,11 +54,11 @@ entry:
 ; stockfish/optimized/position.ll
 ; stockfish/optimized/uci.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 6
   %3 = and i16 %2, 63
-  %4 = icmp ult i16 %3, %0
+  %4 = icmp samesign ugt i16 %0, %3
   ret i1 %4
 }
 

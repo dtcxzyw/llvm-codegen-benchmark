@@ -1,6 +1,7 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; libwebp/optimized/predictor_enc.c.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientenvironment.cpp.ll
 ; minetest/optimized/noise.cpp.ll

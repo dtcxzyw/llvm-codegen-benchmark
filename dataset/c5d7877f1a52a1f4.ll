@@ -1,13 +1,13 @@
 
-%struct.qht_bucket.2595227 = type { %struct.QemuSpin.2595228, %struct.QemuSeqLock.2595229, [4 x i32], [4 x ptr], ptr }
-%struct.QemuSpin.2595228 = type { i32 }
-%struct.QemuSeqLock.2595229 = type { i32 }
-%struct.nghttp2_map_bucket.2616026 = type { i32, i32, ptr }
-%class.XNMethodTableEntry.2618254 = type { i64 }
-%"struct.std::pair.87.2818471" = type { i32, i32 }
-%struct.prb_desc.3365108 = type { %struct.atomic64_t.3365109, %struct.prb_data_blk_lpos.3365110 }
-%struct.atomic64_t.3365109 = type { i64 }
-%struct.prb_data_blk_lpos.3365110 = type { i64, i64 }
+%struct.qht_bucket.2708813 = type { %struct.QemuSpin.2708814, %struct.QemuSeqLock.2708815, [4 x i32], [4 x ptr], ptr }
+%struct.QemuSpin.2708814 = type { i32 }
+%struct.QemuSeqLock.2708815 = type { i32 }
+%struct.nghttp2_map_bucket.2729480 = type { i32, i32, ptr }
+%class.XNMethodTableEntry.2731703 = type { i64 }
+%"struct.std::pair.87.2930392" = type { i32, i32 }
+%struct.prb_desc.3551378 = type { %struct.atomic64_t.3551379, %struct.prb_data_blk_lpos.3551380 }
+%struct.atomic64_t.3551379 = type { i64 }
+%struct.prb_data_blk_lpos.3551380 = type { i64, i64 }
 
 ; 3 occurrences:
 ; linux/optimized/balloc.ll
@@ -19,7 +19,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add i64 %1, 4294967295
   %5 = and i64 %4, %3
-  %6 = getelementptr %struct.qht_bucket.2595227, ptr %0, i64 %5
+  %6 = getelementptr %struct.qht_bucket.2708813, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -70,12 +70,12 @@ entry:
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
 ; nghttp2/optimized/nghttp2_map.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = and i64 %4, %3
-  %6 = getelementptr nusw %struct.nghttp2_map_bucket.2616026, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729480, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -96,12 +96,12 @@ entry:
 ; openjdk/optimized/zRelocate.ll
 ; openjdk/optimized/zVerify.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add i64 %1, 4294967295
   %5 = and i64 %4, %3
-  %6 = getelementptr nusw %class.XNMethodTableEntry.2618254, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.XNMethodTableEntry.2731703, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -115,12 +115,12 @@ entry:
 ; rust-analyzer-rs/optimized/oyyql3r86m1ry5s.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add i64 %1, 4294967295
   %5 = and i64 %4, %3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -129,24 +129,24 @@ entry:
 ; luau/optimized/IrLoweringA64.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add i64 %1, 2147483647
   %5 = and i64 %4, %3
-  %6 = getelementptr nusw %"struct.std::pair.87.2818471", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.std::pair.87.2930392", ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; entt/optimized/snapshot.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1048575
   %5 = and i64 %4, %3
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -158,7 +158,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = and i64 %4, %3
-  %6 = getelementptr %struct.prb_desc.3365108, ptr %0, i64 %5
+  %6 = getelementptr %struct.prb_desc.3551378, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -170,7 +170,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add i64 %1, 1
   %5 = and i64 %4, %3
-  %6 = getelementptr %struct.prb_desc.3365108, ptr %0, i64 %5
+  %6 = getelementptr %struct.prb_desc.3551378, ptr %0, i64 %5
   ret ptr %6
 }
 

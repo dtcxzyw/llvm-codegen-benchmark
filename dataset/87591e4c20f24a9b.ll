@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 40 occurrences:
 ; abc/optimized/ifTime.c.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_time_of_impact.cpp.ll
@@ -24,7 +24,6 @@
 ; mitsuba3/optimized/blendbsdf.cpp.ll
 ; mitsuba3/optimized/blendphase.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
-; ncnn/optimized/roialign.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/filter.cpp.ll
 ; oiio/optimized/targainput.cpp.ll
@@ -32,10 +31,15 @@
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll
-; opencv/optimized/tracker.cpp.ll
+; opencv/optimized/short_term_imageless_tracker.cpp.ll
+; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; raylib/optimized/rshapes.c.ll
 ; recastnavigation/optimized/main.cpp.ll
 ; yoga/optimized/PixelGrid.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:

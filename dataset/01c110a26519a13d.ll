@@ -239,15 +239,15 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; folly/optimized/JsonTestUtil.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
 ; freetype/optimized/ftbitmap.c.ll
@@ -256,13 +256,12 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; opencv/optimized/solvepnp.cpp.ll
 ; openjdk/optimized/DrawLine.ll
-; openjdk/optimized/awt_ImagingLib.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -3
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ult i32 %3, 2
   ret i1 %4
 }
@@ -275,7 +274,7 @@ entry:
 ; openjdk/optimized/postaloc.ll
 ; openjdk/optimized/xBarrierSetAssembler_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -64
   %3 = or disjoint i32 %2, %0
@@ -283,16 +282,15 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-buffer.ll
-; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -128
   %3 = or disjoint i32 %2, %0
-  %4 = icmp ult i32 %3, 2048
+  %4 = icmp samesign ult i32 %3, 2048
   ret i1 %4
 }
 
@@ -303,7 +301,7 @@ entry:
 ; nuttx/optimized/lib_mbrtowc.c.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -398458
   %3 = or i32 %2, %0
@@ -323,8 +321,18 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
-; imgui/optimized/imgui_demo.cpp.ll
+; 1 occurrences:
+; php/optimized/pcre2_jit_compile.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -917504
+  %3 = or disjoint i32 %0, %2
+  %4 = icmp ult i32 %3, 2048
+  ret i1 %4
+}
+
+; 6 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -332,7 +340,7 @@ entry:
 ; nuttx/optimized/lib_mbrtowc.c.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -917504
   %3 = or i32 %2, %0
@@ -360,7 +368,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 2
   %3 = or disjoint i32 %2, %0
@@ -374,10 +382,10 @@ entry:
 ; spike/optimized/kmmawt2.ll
 ; spike/optimized/kmmawt2_u.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 2147483647
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
@@ -385,10 +393,10 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/tls_cbc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
@@ -396,7 +404,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/packlibs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -256
   %3 = or disjoint i32 %2, %0
@@ -408,11 +416,11 @@ entry:
 ; llvm/optimized/AsmParser.cpp.ll
 ; quickjs/optimized/libregexp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -48
   %3 = or disjoint i32 %2, %0
-  %4 = icmp ugt i32 %3, 255
+  %4 = icmp samesign ugt i32 %3, 255
   ret i1 %4
 }
 
@@ -420,10 +428,10 @@ entry:
 ; gromacs/optimized/libxdrf.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -17
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ugt i32 %3, 1
   ret i1 %4
 }
@@ -431,10 +439,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -8
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }

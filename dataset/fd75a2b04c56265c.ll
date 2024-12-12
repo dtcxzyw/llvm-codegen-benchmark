@@ -1,16 +1,17 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; cmake/optimized/connect.c.ll
 ; curl/optimized/libcurl_la-connect.ll
 ; hermes/optimized/TypeInference.cpp.ll
+; libphonenumber/optimized/rune.c.ll
 ; libquic/optimized/ssl_lib.c.ll
 ; lief/optimized/net_sockets.c.ll
 ; linux/optimized/bugs.ll
 ; linux/optimized/ohci-hcd.ll
-; linux/optimized/openclose.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lua/optimized/lstrlib.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; mitsuba3/optimized/volpath.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; opencv/optimized/array.cpp.ll
@@ -83,9 +84,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; c3c/optimized/sema_asm.c.ll
-; quickjs/optimized/libunicode.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:

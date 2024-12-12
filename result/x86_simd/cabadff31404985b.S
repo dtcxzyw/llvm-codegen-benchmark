@@ -11,5 +11,5 @@ func000000000000000d:                   # @func000000000000000d
 	vpsllvd	%ymm1, %ymm2, %ymm1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm3   # ymm3 = [255,255,255,255,255,255,255,255]
 	vpxord	%ymm2, %ymm1, %ymm3 {%k1}
-	vpand	%ymm0, %ymm3, %ymm0
+	vpand	%ymm3, %ymm0, %ymm0
 	retq

@@ -10,10 +10,8 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; jq/optimized/execute.ll
-; linux/optimized/generic_mpih-add1.ll
-; linux/optimized/generic_mpih-sub1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:

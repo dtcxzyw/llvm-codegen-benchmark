@@ -1,14 +1,5 @@
 
-%struct.rb_size_pool_struct.2485546 = type { i16, i64, i64, i64, i64, i64, i64, i64, i64, i64, %struct.rb_heap_struct.2485547, %struct.rb_heap_struct.2485547 }
-%struct.rb_heap_struct.2485547 = type { ptr, %struct.ccan_list_head.2485548, ptr, ptr, i64, ptr, i64, i64 }
-%struct.ccan_list_head.2485548 = type { %struct.ccan_list_node.2485549 }
-%struct.ccan_list_node.2485549 = type { ptr, ptr }
-%"class.std::__cxx11::basic_string.2580329" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2580330", i64, %union.anon.2580331 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2580330" = type { ptr }
-%union.anon.2580331 = type { i64, [8 x i8] }
-%struct.TCGTemp.2593549 = type { i48, i64, ptr, i64, ptr, i64, ptr }
-%struct.FormData_pg_attribute.3467895 = type { i32, %struct.nameData.3467896, i32, i16, i16, i32, i32, i16, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i16, i32 }
-%struct.nameData.3467896 = type { [64 x i8] }
+%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
 
 ; 11 occurrences:
 ; linux/optimized/kyber-iosched.ll
@@ -23,16 +14,16 @@
 ; postgres/optimized/tupdesc.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000221(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000661(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 32
-  %4 = getelementptr [5 x %struct.rb_size_pool_struct.2485546], ptr %3, i64 0, i64 %1, i32 10, i32 1
-  %5 = icmp eq ptr %4, %0
+  %.idx = mul i64 %1, 224
+  %3 = getelementptr i8, ptr %2, i64 120
+  %4 = getelementptr i8, ptr %3, i64 %.idx
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
-; 16 occurrences:
-; assimp/optimized/ColladaExporter.cpp.ll
+; 15 occurrences:
 ; cvc5/optimized/bounded_integers.cpp.ll
 ; cvc5/optimized/inst_strategy_e_matching.cpp.ll
 ; cvc5/optimized/sygus_extension.cpp.ll
@@ -44,16 +35,17 @@ entry:
 ; glslang/optimized/iomapper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; grpc/optimized/xds_listener.cc.ll
-; minetest/optimized/c_content.cpp.ll
+; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; minetest/optimized/fontengine.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000007e1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 32
-  %4 = getelementptr [25 x %"class.std::__cxx11::basic_string.2580329"], ptr %3, i64 0, i64 %1, i32 2
-  %5 = icmp eq ptr %4, %0
+  %.idx = shl nuw i64 %1, 5
+  %3 = getelementptr i8, ptr %2, i64 48
+  %4 = getelementptr i8, ptr %3, i64 %.idx
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -62,24 +54,37 @@ entry:
 ; linux/optimized/page_alloc.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000601(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 664
-  %4 = getelementptr [512 x %struct.TCGTemp.2593549], ptr %3, i64 0, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 664
+  %4 = getelementptr [512 x %struct.TCGTemp.2707225], ptr %3, i64 0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 56
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
+}
+
+; 1 occurrences:
+; assimp/optimized/ColladaExporter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000761(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %.idx = mul i64 %1, 48
+  %3 = getelementptr i8, ptr %2, i64 152
+  %4 = getelementptr i8, ptr %3, i64 %.idx
+  %5 = icmp eq ptr %0, %4
+  ret i1 %5
 }
 
 ; 2 occurrences:
 ; postgres/optimized/procsignal.ll
 ; postgres/optimized/tupdesc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000604(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
-  %4 = getelementptr [0 x %struct.FormData_pg_attribute.3467895], ptr %3, i64 0, i64 %1, i32 2
-  %5 = icmp ugt ptr %4, %0
+  %.idx = mul i64 %1, 104
+  %3 = getelementptr i8, ptr %2, i64 92
+  %4 = getelementptr i8, ptr %3, i64 %.idx
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 

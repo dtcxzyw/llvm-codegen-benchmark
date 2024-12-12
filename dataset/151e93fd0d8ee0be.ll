@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; bdwgc/optimized/gc.c.ll
 ; linux/optimized/pagelist.ll
 ; mini-lsm-rs/optimized/45da4db1y19tqmo.ll
 ; openjdk/optimized/archiveBuilder.ll
@@ -8,8 +9,8 @@
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = lshr i64 %2, 12
-  %4 = and i64 %3, 4503599627370494
+  %3 = shl nuw nsw i64 %2, 3
+  %4 = and i64 %3, 9223372036854775792
   ret i64 %4
 }
 

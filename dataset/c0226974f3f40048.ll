@@ -1,10 +1,11 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; mitsuba3/optimized/rapass.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
+; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
@@ -33,13 +34,13 @@ entry:
 ; 1 occurrences:
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000de(ptr %0, i32 %1) #0 {
+define ptr @func00000000000000df(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 3
   %3 = lshr i32 %2, 2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 7
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

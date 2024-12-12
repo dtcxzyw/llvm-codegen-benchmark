@@ -2,7 +2,7 @@ func0000000000000003:                   # @func0000000000000003
 	xorl	%eax, %eax
 	testb	$1, %sil
 	sete	%al
-	leal	39(%rdi,%rax,2), %eax
+	leal	8(%rdi,%rax,8), %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	andb	$3, %sil

@@ -1,7 +1,7 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
 	mvn	x8, x2
-	adds	x0, x8, x0
+	adds	x0, x0, x8
 	mov	x8, #-1                         // =0xffffffffffffffff
 	adc	x1, x1, x8
 	ret

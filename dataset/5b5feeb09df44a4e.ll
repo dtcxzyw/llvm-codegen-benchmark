@@ -34,15 +34,16 @@ entry:
   ret i32 %2
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/edits.ll
-; linux/optimized/addrconf_core.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/random32.ll
 ; openspiel/optimized/TransTableL.cpp.ll
 ; qemu/optimized/tcg.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:

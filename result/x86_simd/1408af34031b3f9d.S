@@ -4,7 +4,7 @@
 	.quad	5210880                         # 0x4f8300
 func000000000000001b:                   # @func000000000000001b
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$20, %ymm0, %ymm0
 	vpaddq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
 	retq

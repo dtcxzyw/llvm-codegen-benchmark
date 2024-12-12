@@ -1,5 +1,6 @@
 
-; 183 occurrences:
+; 182 occurrences:
+; boost/optimized/alloc_lib.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; openjdk/optimized/archiveBuilder.ll
 ; openjdk/optimized/archiveHeapLoader.ll
@@ -146,9 +147,7 @@
 ; openjdk/optimized/serialFullGC.ll
 ; openjdk/optimized/serialHeap.ll
 ; openjdk/optimized/shenandoahBarrierSet.ll
-; openjdk/optimized/shenandoahConcurrentGC.ll
 ; openjdk/optimized/shenandoahFullGC.ll
-; openjdk/optimized/shenandoahGC.ll
 ; openjdk/optimized/shenandoahHeap.ll
 ; openjdk/optimized/shenandoahHeapRegion.ll
 ; openjdk/optimized/shenandoahMark.ll

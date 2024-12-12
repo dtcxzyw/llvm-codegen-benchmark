@@ -23,3 +23,8 @@ func0000000000000000:                   # @func0000000000000000
 	shrxl	%esi, %edi, %eax
 	decl	%eax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	decb	%sil
+	shrxl	%esi, %edi, %eax
+	decl	%eax
+	retq

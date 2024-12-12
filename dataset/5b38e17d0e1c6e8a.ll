@@ -1,5 +1,5 @@
 
-; 397 occurrences:
+; 395 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -51,9 +51,7 @@
 ; libquic/optimized/montgomery.c.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/core.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/exfldio.ll
-; linux/optimized/features.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/sys_x86_64.ll
@@ -401,12 +399,12 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
 
-; 62 occurrences:
+; 61 occurrences:
 ; abc/optimized/sfmDec.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; lief/optimized/constant_time.c.ll
@@ -468,12 +466,11 @@ entry:
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
-; z3/optimized/sat_aig_cuts.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }

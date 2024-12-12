@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rocksdb/optimized/dynamic_bloom.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, -1
   %3 = and i64 %2, %1
@@ -16,7 +16,7 @@ entry:
 ; bdwgc/optimized/gc.c.ll
 ; qemu/optimized/block_io.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, -1
   %3 = and i64 %2, %1
@@ -34,7 +34,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, -1
-  %3 = and i64 %2, %1
+  %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 0
   %5 = sub i64 %0, %3
   %6 = select i1 %4, i64 0, i64 %5

@@ -1,9 +1,22 @@
 
-; 20 occurrences:
+; 5 occurrences:
 ; linux/optimized/drm_format_helper.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/objdef.cpp.ll
+; spike/optimized/debug_module.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 196608
+  %4 = or i32 %0, %3
+  %5 = and i32 %1, 2130706432
+  %6 = or i32 %4, %5
+  %7 = lshr i32 %6, 16
+  ret i32 %7
+}
+
+; 15 occurrences:
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
@@ -19,16 +32,13 @@
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
-; spike/optimized/debug_module.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 196608
-  %4 = or i32 %3, %0
-  %5 = and i32 %1, 2130706432
-  %6 = or i32 %4, %5
-  %7 = lshr i32 %6, 16
-  ret i32 %7
+  %3 = and i32 %2, 3840
+  %4 = or i32 %1, %3
+  %5 = lshr i32 %4, 6
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -37,21 +47,23 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1024
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = and i32 %1, 512
   %6 = or i32 %4, %5
   %7 = lshr i32 %6, 8
   ret i32 %7
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; php/optimized/hash_haval.ll
 ; yosys/optimized/dfflegalize.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -33554432
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, 520192
   %6 = or disjoint i32 %4, %5
   %7 = lshr exact i32 %6, 12

@@ -1,11 +1,10 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_gem_object.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
@@ -26,7 +25,7 @@ entry:
   %2 = lshr i64 %1, 16
   %3 = trunc i64 %2 to i16
   %4 = and i16 %3, 255
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 
@@ -45,7 +44,7 @@ entry:
   %2 = lshr exact i64 %1, 32
   %3 = trunc nuw nsw i64 %2 to i16
   %4 = and i16 %3, -241
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 
@@ -83,7 +82,7 @@ entry:
   %2 = lshr i64 %1, 49
   %3 = trunc nuw nsw i64 %2 to i16
   %4 = and i16 %3, 1
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 

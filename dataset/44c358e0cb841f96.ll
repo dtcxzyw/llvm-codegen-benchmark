@@ -7,7 +7,7 @@
 ; php/optimized/pcre2_match.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0, i8 %1) #0 {
+define i32 @func00000000000000e1(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %0, 8
@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000091(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000121(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl i32 %0, 7

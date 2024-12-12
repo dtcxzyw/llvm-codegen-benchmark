@@ -1,4 +1,4 @@
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000541:                   # @func0000000000000541
 	addl	$64, %edx
 	cmpl	%edi, %edx
 	setg	%cl
@@ -6,7 +6,7 @@ func00000000000001a1:                   # @func00000000000001a1
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000001bc:                   # @func00000000000001bc
+func000000000000056c:                   # @func000000000000056c
 	incl	%edx
 	cmpl	%edi, %edx
 	setge	%cl
@@ -15,7 +15,7 @@ func00000000000001bc:                   # @func00000000000001bc
 	setne	%al
 	orb	%cl, %al
 	retq
-func000000000000011c:                   # @func000000000000011c
+func000000000000042c:                   # @func000000000000042c
 	incl	%edx
 	cmpl	%edi, %edx
 	sete	%cl

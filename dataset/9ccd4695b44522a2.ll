@@ -171,7 +171,7 @@ define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
 entry:
   %notmask = shl nsw i64 -1, %1
   %2 = xor i64 %notmask, -1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = shl nuw i64 %3, 1
   ret i64 %4
 }

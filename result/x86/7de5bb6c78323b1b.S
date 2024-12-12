@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	subq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	setl	%cl
@@ -6,7 +6,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	sets	%al
 	orb	%cl, %al
 	retq
-func00000000000000d0:                   # @func00000000000000d0
+func0000000000000190:                   # @func0000000000000190
 	subq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	seta	%cl
@@ -14,7 +14,7 @@ func00000000000000d0:                   # @func00000000000000d0
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	subq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	setne	%cl
@@ -22,7 +22,7 @@ func0000000000000038:                   # @func0000000000000038
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	subq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	seta	%cl

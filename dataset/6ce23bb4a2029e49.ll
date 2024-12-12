@@ -3,11 +3,11 @@
 ; qemu/optimized/hw_usb_desc.c.ll
 ; wireshark/optimized/packet-isis-clv.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = or disjoint i32 %0, 1
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
@@ -15,11 +15,11 @@ entry:
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; openjdk/optimized/jquant2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = or disjoint i32 %0, 4
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -27,11 +27,11 @@ entry:
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; openjdk/optimized/jquant2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = or i32 %0, 28
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
@@ -43,7 +43,7 @@ entry:
 ; sentencepiece/optimized/generated_message_table_driven_lite.cc.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = or disjoint i32 %0, 224

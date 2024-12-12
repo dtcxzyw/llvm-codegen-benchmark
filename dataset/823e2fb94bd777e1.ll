@@ -15,12 +15,11 @@ entry:
   %3 = add i32 %2, -1
   %4 = sitofp i32 %3 to double
   %5 = fdiv double %1, %4
-  %6 = fadd double %5, %0
+  %6 = fadd double %0, %5
   ret double %6
 }
 
-; 5 occurrences:
-; gromacs/optimized/frameaverager.cpp.ll
+; 4 occurrences:
 ; opencv/optimized/sc_dis.cpp.ll
 ; opencv/optimized/speech_recognition.cpp.ll
 ; opencv/optimized/ts_perf.cpp.ll
@@ -31,7 +30,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = sitofp i32 %3 to double
   %5 = fdiv double %1, %4
-  %6 = fadd double %5, %0
+  %6 = fadd double %0, %5
   ret double %6
 }
 

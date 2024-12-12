@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 53 occurrences:
 ; arrow/optimized/memory_pool.cc.ll
 ; clamav/optimized/scantree.cpp.ll
 ; cpython/optimized/obmalloc.ll
@@ -38,11 +38,9 @@
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/systemDictionaryShared.ll
 ; openmpi/optimized/nbc_ireduce_scatter.ll
-; php/optimized/pcre2_match.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/informix.ll
 ; postgres/optimized/multixact.ll
-; proj/optimized/crs.cpp.ll
 ; proj/optimized/projinfo.cpp.ll
 ; rust-analyzer-rs/optimized/1au8fupciwcmum6.ll
 ; rust-analyzer-rs/optimized/2ydioyxkoxez3z9r.ll
@@ -59,7 +57,7 @@
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }

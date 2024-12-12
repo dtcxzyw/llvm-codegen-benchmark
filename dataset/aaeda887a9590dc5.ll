@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; mitsuba3/optimized/builder.cpp.ll
+; wireshark/optimized/packet_list_model.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
@@ -134,14 +135,13 @@ entry:
   ret i64 %5
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; hermes/optimized/PlatformUnicodeICU.cpp.ll
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/ast_counter.cpp.ll
 ; z3/optimized/automaton.cpp.ll
 ; z3/optimized/bv_slice.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll
@@ -228,20 +228,6 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; gromacs/optimized/dorg2r.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
-; openblas/optimized/dorg2r.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -1
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nsw i64 %3, %0
-  %5 = shl i64 %4, 2
-  ret i64 %5
-}
-
 ; 1 occurrences:
 ; gromacs/optimized/tpi.cpp.ll
 ; Function Attrs: nounwind
@@ -266,6 +252,18 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %3, %0
   %5 = shl nsw i64 %4, 2
+  ret i64 %5
+}
+
+; 1 occurrences:
+; openblas/optimized/dorg2r.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000034(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 %3, %0
+  %5 = shl i64 %4, 3
   ret i64 %5
 }
 

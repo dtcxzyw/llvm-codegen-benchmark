@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -9,7 +9,6 @@
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; openusd/optimized/mvref_common.c.ll
 ; raylib/optimized/raudio.c.ll
-; rocksdb/optimized/testutil.cc.ll
 ; ruby/optimized/time.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
@@ -21,7 +20,7 @@ entry:
   ret i16 %3
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -41,6 +40,7 @@ entry:
 ; qemu/optimized/hw_nvme_dif.c.ll
 ; quantlib/optimized/date.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; wireshark/optimized/packet-cdma2k.c.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; wireshark/optimized/packet-mih.c.ll
@@ -54,7 +54,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i16 -8, i16 -16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
@@ -64,7 +64,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i16 -32768, i16 0
-  %3 = add nuw i16 %2, %0
+  %3 = add nuw i16 %0, %2
   ret i16 %3
 }
 
@@ -85,7 +85,7 @@ entry:
 define i16 @func0000000000000003(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i16 30, i16 24
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   ret i16 %3
 }
 

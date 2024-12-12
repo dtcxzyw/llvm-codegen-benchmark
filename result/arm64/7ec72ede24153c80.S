@@ -1,32 +1,30 @@
+func000000000000008a:                   // @func000000000000008a
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	cneg	w0, w1, le
+	ret
+                                        // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	cmeq	v0.4s, v0.4s, #0
-	neg	v2.4s, v1.4s
-	bsl	v0.16b, v1.16b, v2.16b
+	cmp	w0, #0
+	cneg	w0, w1, ne
 	ret
                                         // -- End function
-func0000000000000071:                   // @func0000000000000071
+func00000000000000e1:                   // @func00000000000000e1
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	cmeq	v0.4s, v0.4s, #0
-	neg	v2.4s, v1.4s
-	bsl	v0.16b, v1.16b, v2.16b
+	cmp	w0, #0
+	cneg	w0, w1, ne
 	ret
                                         // -- End function
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	cmeq	v0.4s, v0.4s, #0
-	neg	v2.4s, v1.4s
-	bsl	v0.16b, v1.16b, v2.16b
+	cmp	w0, #0
+	cneg	w0, w1, ne
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	cmlt	v0.4s, v0.4s, #0
-	neg	v2.4s, v1.4s
-	bsl	v0.16b, v1.16b, v2.16b
+	cmp	w0, #0
+	cneg	w0, w1, ge
 	ret
                                         // -- End function

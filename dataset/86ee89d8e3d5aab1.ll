@@ -4,7 +4,7 @@
 ; opencv/optimized/datastructs.cpp.ll
 ; openssl/optimized/openssl-bin-list.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %0, %1
   %3 = icmp eq i32 %2, 0

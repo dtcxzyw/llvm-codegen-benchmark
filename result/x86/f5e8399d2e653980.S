@@ -13,6 +13,6 @@ func000000000000001d:                   # @func000000000000001d
 func0000000000000015:                   # @func0000000000000015
 	movslq	%esi, %rax
 	leaq	(%rax,%rax,4), %rax
-	shlq	$3, %rax
-	leaq	(%rax,%rdi,4), %rax
+	shlq	$5, %rax
+	leaq	(%rax,%rdi,8), %rax
 	retq

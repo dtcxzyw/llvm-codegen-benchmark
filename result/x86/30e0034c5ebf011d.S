@@ -67,16 +67,16 @@ func000000000000001d:                   # @func000000000000001d
 	orl	%edi, %eax
 	orl	%ecx, %eax
 	retq
-func0000000000000019:                   # @func0000000000000019
-	movzbl	%dl, %ecx
-	shll	$8, %ecx
-	movzbl	%sil, %eax
-	orl	%edi, %eax
-	orl	%ecx, %eax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	shll	$30, %edx
 	orl	%edi, %edx
 	movzbl	%sil, %eax
 	orl	%edx, %eax
+	retq
+func0000000000000019:                   # @func0000000000000019
+	movzbl	%dl, %ecx
+	shll	$13, %ecx
+	movzbl	%sil, %eax
+	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq

@@ -36,7 +36,7 @@ entry:
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d6(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000001a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sub nsw i32 %0, %3

@@ -1,5 +1,5 @@
 
-; 169 occurrences:
+; 166 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -72,7 +72,6 @@
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -99,8 +98,6 @@
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -175,7 +172,7 @@ entry:
   %2 = sub nuw nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 -1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -189,7 +186,7 @@ entry:
   %2 = sub i32 64, %1
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 -9187201950435737472, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -201,7 +198,7 @@ entry:
   %2 = sub nsw i32 63, %1
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 -1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

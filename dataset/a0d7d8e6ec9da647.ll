@@ -23,6 +23,16 @@ entry:
   ret i32 %2
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000039(i32 %0) #0 {
+entry:
+  %1 = shl i32 %0, 2
+  %2 = add i32 %1, 4
+  ret i32 %2
+}
+
 ; 5 occurrences:
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/drm_edid.ll

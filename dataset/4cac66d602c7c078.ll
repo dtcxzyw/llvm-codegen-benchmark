@@ -1,5 +1,7 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; libquic/optimized/time_posix.cc.ll
 ; libwebp/optimized/vp8l_enc.c.ll

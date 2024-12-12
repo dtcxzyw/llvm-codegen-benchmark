@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btCollisionWorld.ll
@@ -11,7 +11,6 @@
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
 ; minetest/optimized/CBillboardSceneNode.cpp.ll
 ; minetest/optimized/CBoneSceneNode.cpp.ll

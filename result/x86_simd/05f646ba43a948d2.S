@@ -42,11 +42,11 @@ func0000000000000010:                   # @func0000000000000010
 	.quad	6                               # 0x6
 .LCPI3_2:
 	.quad	3                               # 0x3
-func0000000000000012:                   # @func0000000000000012
+func0000000000000052:                   # @func0000000000000052
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpcmpltuq	.LCPI3_0(%rip){1to4}, %ymm1, %k1
 	vpbroadcastq	.LCPI3_1(%rip), %ymm1   # ymm1 = [6,6,6,6]
 	vpbroadcastq	.LCPI3_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [3,3,3,3]
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

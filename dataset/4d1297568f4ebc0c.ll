@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; freetype/optimized/ftbitmap.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
@@ -27,7 +28,6 @@ entry:
 ; linux/optimized/dm-kcopyd.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/ff-memless.ll
-; linux/optimized/fonts.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/processor_thermal.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
@@ -37,6 +37,7 @@ entry:
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/WindowScheduler.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/l_env.cpp.ll
 ; minetest/optimized/renderingengine.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll

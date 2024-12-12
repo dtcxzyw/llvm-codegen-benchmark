@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
@@ -10,6 +10,8 @@
 ; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
 ; rust-analyzer-rs/optimized/z27qhj0ivx434rk.ll
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define { ptr, i64 } @func0000000000000001(ptr %0, i64 %1, ptr %2) #0 {
 entry:

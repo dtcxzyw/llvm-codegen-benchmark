@@ -4,7 +4,7 @@
 ; openssl/optimized/libssl-shlib-quic_rstream.ll
 ; qemu/optimized/block_block-copy.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %1, %2
   %4 = icmp eq ptr %0, null
@@ -17,7 +17,7 @@ entry:
 ; openjdk/optimized/filemap.ll
 ; php/optimized/phar.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp sgt i64 %3, 1
@@ -26,7 +26,7 @@ entry:
   ret i1 %6
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; grpc/optimized/xds_routing.cc.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
@@ -43,11 +43,10 @@ entry:
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
-; nix/optimized/nix-env.ll
 ; protobuf/optimized/name_resolver.cc.ll
 ; quantlib/optimized/asx.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ne i64 %3, -1
@@ -61,7 +60,7 @@ entry:
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; redis/optimized/replication.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp eq i64 %3, 3
@@ -73,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp sgt i64 %3, 6

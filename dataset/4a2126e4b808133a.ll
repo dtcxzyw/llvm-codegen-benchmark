@@ -12,7 +12,7 @@ entry:
   ret i64 %3
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; grpc/optimized/json_object_loader.cc.ll
@@ -21,7 +21,6 @@ entry:
 ; grpc/optimized/xds_api.cc.ll
 ; grpc/optimized/xds_common_types.cc.ll
 ; libquic/optimized/time_posix.cc.ll
-; slurm/optimized/srun_job.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {

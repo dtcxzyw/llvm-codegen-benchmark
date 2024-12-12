@@ -39,7 +39,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	3                               # 0x3
 .LCPI3_2:
 	.long	4291967293                      # 0xffd2393d
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm1
 	vpcmpltud	.LCPI3_1(%rip){1to8}, %ymm1, %k1
 	vpaddd	.LCPI3_2(%rip){1to8}, %ymm0, %ymm1 {%k1}

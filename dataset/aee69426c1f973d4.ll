@@ -1,7 +1,5 @@
 
-%"struct.open_spiel::chess::Piece.3288780" = type { i8, i8 }
-
-; 30 occurrences:
+; 36 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/timBox.c.ll
@@ -28,16 +26,22 @@
 ; openjdk/optimized/jccoefct.ll
 ; openjdk/optimized/jdcoefct.ll
 ; openjdk/optimized/methodData.ll
+; openspiel/optimized/PlayAnalyser.cpp.ll
+; openspiel/optimized/bridge.cc.ll
+; openspiel/optimized/euchre.cc.ll
+; openspiel/optimized/hearts.cc.ll
+; openspiel/optimized/spades.cc.ll
+; openusd/optimized/bignum.cc.ll
 ; php/optimized/json_scanner.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 28
+  %4 = add nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 28
   %6 = getelementptr nusw [256 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -45,11 +49,11 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 32
+  %4 = add nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 32
   %6 = getelementptr [2048 x [3 x i64]], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -60,11 +64,11 @@ entry:
 ; git/optimized/unpack-trees.ll
 ; php/optimized/password.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 24
+  %4 = add i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
   %6 = getelementptr nusw [1 x i8], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -75,39 +79,21 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 50176
   %6 = getelementptr nusw [12544 x float], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
-; 6 occurrences:
-; openspiel/optimized/PlayAnalyser.cpp.ll
-; openspiel/optimized/bridge.cc.ll
-; openspiel/optimized/euchre.cc.ll
-; openspiel/optimized/hearts.cc.ll
-; openspiel/optimized/spades.cc.ll
-; openusd/optimized/bignum.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
-  %6 = getelementptr nusw [128 x i32], ptr %5, i64 0, i64 %4
-  ret ptr %6
-}
-
-; 2 occurrences:
-; openspiel/optimized/chess_board.cc.ll
+; 1 occurrences:
 ; openspiel/optimized/skat.cc.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 6
-  %6 = getelementptr nusw [64 x %"struct.open_spiel::chess::Piece.3288780"], ptr %5, i64 0, i64 %4
+  %4 = add nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 68
+  %6 = getelementptr nusw [32 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

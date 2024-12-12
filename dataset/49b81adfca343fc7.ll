@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 82 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; clamav/optimized/extract.cpp.ll
@@ -36,8 +36,8 @@
 ; llvm/optimized/ParseStmtAsm.cpp.ll
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
-; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; memcached/optimized/memcached-slab_automove_extstore.ll
 ; memcached/optimized/memcached_debug-slab_automove_extstore.ll
@@ -63,9 +63,7 @@
 ; postgres/optimized/describe.ll
 ; postgres/optimized/postmaster.ll
 ; postgres/optimized/worker.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/geodesic.c.ll
-; proj/optimized/io.cpp.ll
 ; qemu/optimized/system_vl.c.ll
 ; rust-analyzer-rs/optimized/2hvuxgck7heujc9c.ll
 ; rust-analyzer-rs/optimized/2zm9eul0ycl9zsz3.ll
@@ -80,6 +78,10 @@
 ; yosys/optimized/sim.ll
 ; yosys/optimized/verilog_backend.ll
 ; z3/optimized/nlsat_solver.cpp.ll
+; zed-rs/optimized/1x0js6flb76ylaa82e6lu27uy.ll
+; zed-rs/optimized/8ncehfng1y5s06ypbycx8606d.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

@@ -1,7 +1,8 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; gromacs/optimized/sfactor.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/msd.cpp.ll

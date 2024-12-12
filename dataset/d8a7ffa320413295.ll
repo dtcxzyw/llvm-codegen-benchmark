@@ -60,17 +60,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/nfs4trace.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i1 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 16
-  %3 = add i32 %2, 65536
-  %4 = select i1 %0, i32 65536, i32 %3
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {

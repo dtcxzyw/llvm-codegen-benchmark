@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
@@ -24,6 +24,7 @@
 ; rocksdb/optimized/block.cc.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
@@ -33,7 +34,7 @@ entry:
   ret i64 %4
 }
 
-; 121 occurrences:
+; 120 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -49,7 +50,6 @@ entry:
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_nist.ll
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; xgboost/optimized/c_api.cc.ll
@@ -205,14 +205,16 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/luckySimple.c.ll
 ; freetype/optimized/sdf.c.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; luajit/optimized/minilua.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/reshape_layer.cpp.ll
+; opencv/optimized/tf_importer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:

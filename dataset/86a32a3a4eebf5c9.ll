@@ -12,8 +12,7 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; lz4/optimized/lz4hc.c.ll
+; 1 occurrences:
 ; rust-analyzer-rs/optimized/49gbmpy0w6vw8qx1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i64 %1) #0 {

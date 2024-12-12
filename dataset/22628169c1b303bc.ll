@@ -1,7 +1,8 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/rational.ll
 ; cpython/optimized/obmalloc.ll
 ; libquic/optimized/quic_sent_packet_manager.cc.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll

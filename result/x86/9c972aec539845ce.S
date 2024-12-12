@@ -5,13 +5,13 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$32768, %edi                    # imm = 0x8000
 	setb	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	incl	%edx
 	orl	%esi, %edx
 	orl	%edi, %edx
 	setns	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	incl	%edx
 	orl	%esi, %edi
 	orl	%edx, %edi

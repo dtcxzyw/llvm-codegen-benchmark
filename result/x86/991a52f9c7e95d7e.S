@@ -10,7 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	addq	%rdi, %rsi
 	setns	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	andl	$63, %edx
 	subq	%rdx, %rsi
 	addq	%rdi, %rsi

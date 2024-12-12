@@ -8,11 +8,11 @@ func0000000000000002:                   # @func0000000000000002
 	vmulpd	%zmm2, %zmm1, %zmm1
 	retq
 .LCPI1_0:
-	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10
+	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
 func0000000000000004:                   # @func0000000000000004
 	vmaxpd	%zmm3, %zmm1, %zmm1
 	vmaxpd	%zmm2, %zmm0, %zmm0
-	vbroadcastsd	.LCPI1_0(%rip), %zmm2   # zmm2 = [1.0E-10,1.0E-10,1.0E-10,1.0E-10,1.0E-10,1.0E-10,1.0E-10,1.0E-10]
+	vbroadcastsd	.LCPI1_0(%rip), %zmm2   # zmm2 = [2.2204460492503131E-16,2.2204460492503131E-16,2.2204460492503131E-16,2.2204460492503131E-16,2.2204460492503131E-16,2.2204460492503131E-16,2.2204460492503131E-16,2.2204460492503131E-16]
 	vmulpd	%zmm2, %zmm0, %zmm0
 	vmulpd	%zmm2, %zmm1, %zmm1
 	retq

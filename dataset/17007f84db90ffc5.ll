@@ -20,7 +20,7 @@ entry:
 define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
   %2 = sext i1 %0 to i32
-  %3 = xor i32 %2, %1
+  %3 = xor i32 %1, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

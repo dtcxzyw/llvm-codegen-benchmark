@@ -51,7 +51,7 @@ func0000000000000009:                   # @func0000000000000009
 	xori	a0, a0, 1
 	and	a0, a0, a2
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sext.w	a1, a1
 	sext.w	a0, a0
 	xor	a0, a0, a1
@@ -62,6 +62,13 @@ func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slt	a0, a1, a0
+	and	a0, a0, a2
+	ret
+func0000000000000047:                   # @func0000000000000047
+	sext.w	a0, a0
+	sext.w	a1, a1
+	slt	a0, a1, a0
+	xori	a0, a0, 1
 	and	a0, a0, a2
 	ret
 func000000000000000b:                   # @func000000000000000b

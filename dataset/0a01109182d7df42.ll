@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; arrow/optimized/thread_pool.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
@@ -7,6 +7,7 @@
 ; glslang/optimized/disassemble.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/GCBase.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; pocketpy/optimized/collections.cpp.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
@@ -73,13 +74,15 @@ define i32 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/cmdline.ll
 ; gromacs/optimized/qmmminputgenerator.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/IRSymtab.cpp.ll
 ; llvm/optimized/MemProf.cpp.ll
 ; opencv/optimized/objects_associator.cpp.ll
@@ -104,7 +107,7 @@ define i32 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -129,7 +132,7 @@ define i32 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = lshr exact i64 %3, 5
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }

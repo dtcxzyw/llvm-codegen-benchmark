@@ -6,7 +6,7 @@
 define { i64, i64 } @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = insertvalue { i64, i64 } poison, i64 %3, 0
   ret { i64, i64 } %4
 }
@@ -17,7 +17,7 @@ entry:
 define { i64, i32 } @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = insertvalue { i64, i32 } poison, i64 %3, 0
   ret { i64, i32 } %4
 }

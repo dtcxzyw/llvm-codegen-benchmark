@@ -4,11 +4,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 7
-  %4 = select i1 %1, i32 %3, i32 %2
-  %5 = add i32 %4, -7
-  %6 = add i32 %5, %0
-  ret i32 %6
+  %3 = add i32 %2, -7
+  %4 = select i1 %1, i32 %2, i32 %3
+  %5 = add i32 %4, %0
+  ret i32 %5
 }
 
 ; 2 occurrences:
@@ -20,7 +19,7 @@ entry:
   %3 = add nsw i32 %2, 12
   %4 = select i1 %1, i32 %3, i32 %2
   %5 = add nsw i32 %4, 1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

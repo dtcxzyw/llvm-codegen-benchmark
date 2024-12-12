@@ -31,3 +31,15 @@ func0000000000000006:                   # @func0000000000000006
 	slti	a1, a1, 0
 	and	a0, a0, a1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	slli	a1, a1, 48
+	srli	a1, a1, 58
+	sltiu	a1, a1, 55
+	and	a0, a0, a1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	zext.h	a1, a1
+	sltiu	a1, a1, 256
+	xori	a1, a1, 1
+	and	a0, a0, a1
+	ret

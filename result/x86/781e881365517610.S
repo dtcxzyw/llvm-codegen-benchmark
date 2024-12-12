@@ -7,11 +7,11 @@ func0000000000000002:                   # @func0000000000000002
 	seta	%al
 	retq
 func0000000000000007:                   # @func0000000000000007
-	vcmpneqsd	%xmm0, %xmm1, %k0
+	vcmpneqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004

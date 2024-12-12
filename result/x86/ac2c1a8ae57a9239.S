@@ -42,15 +42,15 @@ func0000000000000004:                   # @func0000000000000004
 	subl	%esi, %edi
 	leal	(%rdi,%rdx), %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	subl	%esi, %edi
-	leal	(%rdi,%rdx), %eax
-	retq
 func0000000000000028:                   # @func0000000000000028
 	subl	%esi, %edi
 	leal	(%rdi,%rdx), %eax
 	retq
 func000000000000003d:                   # @func000000000000003d
+	subl	%esi, %edi
+	leal	(%rdi,%rdx), %eax
+	retq
+func000000000000000c:                   # @func000000000000000c
 	subl	%esi, %edi
 	leal	(%rdi,%rdx), %eax
 	retq

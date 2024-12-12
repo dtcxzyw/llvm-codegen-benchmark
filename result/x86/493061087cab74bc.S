@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$63, %esi
 	decb	%dil
 	testl	%esi, %esi
@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$1, %eax
 	cmovsl	%ecx, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addb	$32, %dil
 	testb	$63, %sil
 	movzbl	%dil, %ecx

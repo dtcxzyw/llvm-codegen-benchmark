@@ -1,5 +1,5 @@
 
-; 199 occurrences:
+; 203 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
@@ -7,6 +7,10 @@
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/mpdecimal.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -206,13 +210,16 @@ entry:
   ret i128 %2
 }
 
-; 175 occurrences:
+; 179 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/bay6adxmosnf2qi.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -382,6 +389,7 @@ entry:
 ; wasmtime-rs/optimized/51r9csr3d9dou1a2.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000003(i128 %0, i128 %1) #0 {
 entry:
@@ -389,9 +397,10 @@ entry:
   ret i128 %2
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/p256-64.c.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
@@ -432,7 +441,7 @@ entry:
   ret i128 %2
 }
 
-; 236 occurrences:
+; 238 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -449,6 +458,8 @@ entry:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/1rgvgulc49uxow1y.ll
 ; coreutils-rs/optimized/3rajw6q0dpsvfeg2.ll
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll

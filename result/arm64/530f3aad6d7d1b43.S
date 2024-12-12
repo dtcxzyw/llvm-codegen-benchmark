@@ -1,28 +1,29 @@
+func0000000000000041:                   // @func0000000000000041
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	and	w8, w0, #0xff
+	and	x9, x1, #0x7
+	lsr	w8, w8, w9
+	tst	w8, #0x1
+	cset	w0, eq
+	ret
+                                        // -- End function
+func000000000000004c:                   // @func000000000000004c
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	and	w8, w0, #0xff
+	and	x9, x1, #0x7
+	lsr	w8, w8, w9
+	ubfx	w0, w8, #1, #1
+	ret
+                                        // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v2.16b, #7
-	movi	v3.16b, #1
-	and	v1.16b, v1.16b, v2.16b
-	ushl	v1.16b, v3.16b, v1.16b
-	and	v0.16b, v1.16b, v0.16b
-	cmeq	v0.16b, v0.16b, #0
-	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
-	movi	v2.16b, #7
-	movi	v3.16b, #2
-	and	v1.16b, v1.16b, v2.16b
-	ushl	v1.16b, v3.16b, v1.16b
-	cmtst	v0.16b, v1.16b, v0.16b
-	ret
-                                        // -- End function
-func0000000000000011:                   // @func0000000000000011
-// %bb.0:                               // %entry
-	movi	v2.16b, #7
-	and	v1.16b, v1.16b, v2.16b
-	neg	v1.16b, v1.16b
-	ushl	v0.16b, v0.16b, v1.16b
-	cmeq	v0.16b, v0.16b, #0
+                                        // kill: def $w1 killed $w1 def $x1
+	and	w8, w0, #0xff
+	and	x9, x1, #0x7
+	lsr	w8, w8, w9
+	cmp	w8, #0
+	cset	w0, eq
 	ret
                                         // -- End function

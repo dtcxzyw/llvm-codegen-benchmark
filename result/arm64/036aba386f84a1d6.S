@@ -1,24 +1,24 @@
-func0000000000000c01:                   // @func0000000000000c01
+func0000000000001801:                   // @func0000000000001801
 // %bb.0:                               // %entry
 	cmp	x2, #0
 	cinc	w8, w1, ne
-	cmp	x8, x0
+	cmp	x0, x8
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000c71:                   // @func0000000000000c71
+func00000000000018e1:                   // @func00000000000018e1
 // %bb.0:                               // %entry
 	cmp	x2, #0
 	cinc	w8, w1, ne
-	cmp	x8, x0
+	cmp	x0, x8
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000c11:                   // @func0000000000000c11
+func0000000000001821:                   // @func0000000000001821
 // %bb.0:                               // %entry
 	cmp	x2, #0
 	cinc	w8, w1, ne
-	cmp	x8, x0
+	cmp	x0, x8
 	cset	w0, eq
 	ret
                                         // -- End function

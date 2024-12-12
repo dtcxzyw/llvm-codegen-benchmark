@@ -12,20 +12,21 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; openjdk/optimized/runTimeClassInfo.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000001f(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, -9999
   %4 = select i1 %3, i64 24, i64 16
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -40,11 +41,11 @@ entry:
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000001c(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 13
   %4 = select i1 %3, i64 0, i64 64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -64,16 +65,17 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_wm.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000088(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000008c(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 8
   %4 = select i1 %3, i64 6918, i64 6888
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = getelementptr i16, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/ginutil.ll
 ; postgres/optimized/indextuple.ll
 ; Function Attrs: nounwind

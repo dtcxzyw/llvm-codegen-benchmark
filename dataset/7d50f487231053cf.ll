@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 49 occurrences:
 ; libpng/optimized/pngerror.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; linux/optimized/dev-ioctl.ll
@@ -29,7 +29,6 @@
 ; llvm/optimized/ParseHLSL.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -51,7 +50,7 @@
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = add nsw i32 %2, -6
@@ -67,7 +66,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
   %3 = icmp eq i32 %2, 36

@@ -1,5 +1,5 @@
 
-; 207 occurrences:
+; 224 occurrences:
 ; abc/optimized/cmdUtils.c.ll
 ; abc/optimized/extraUtilMemory.c.ll
 ; abc/optimized/mem.c.ll
@@ -16,6 +16,20 @@
 ; arrow/optimized/io_util.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
+; boost/optimized/barrier.ll
+; boost/optimized/condition_variable.ll
+; boost/optimized/context.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/mutex.ll
+; boost/optimized/numeric.ll
+; boost/optimized/partition.ll
+; boost/optimized/process_cpu_clocks.ll
+; boost/optimized/recursive_mutex.ll
+; boost/optimized/recursive_timed_mutex.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/timed_mutex.ll
+; boost/optimized/work_stealing.ll
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/iso9660.c.ll
 ; clamav/optimized/recvol.cpp.ll
@@ -81,7 +95,6 @@
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/MveEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
@@ -93,9 +106,13 @@
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; minetest/optimized/tool.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/zonevector.cpp.ll

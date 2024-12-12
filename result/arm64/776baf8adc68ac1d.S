@@ -1,30 +1,28 @@
 func0000000000000020:                   // @func0000000000000020
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xff000000ff0000
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
-	shrn	v0.4h, v0.4s, #10
-	shrn2	v0.8h, v1.4s, #10
-	orr	v0.8h, #216, lsl #8
+	mov	w8, #-10240                     // =0xffffd800
+	add	w9, w0, #4080, lsl #12          // =16711680
+	orr	w0, w8, w9, lsr #10
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xff000000ff0000
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
-	shrn	v0.4h, v0.4s, #10
-	shrn2	v0.8h, v1.4s, #10
-	orr	v0.8h, #216, lsl #8
+	mov	w8, #-10240                     // =0xffffd800
+	add	w9, w0, #4080, lsl #12          // =16711680
+	orr	w0, w8, w9, lsr #10
+	ret
+                                        // -- End function
+func0000000000000036:                   // @func0000000000000036
+// %bb.0:                               // %entry
+	mov	w8, #-10240                     // =0xffffd800
+	add	w9, w0, #4080, lsl #12          // =16711680
+	orr	w0, w8, w9, lsr #10
 	ret
                                         // -- End function
 func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xff000000ff0000
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
-	shrn	v0.4h, v0.4s, #10
-	shrn2	v0.8h, v1.4s, #10
-	orr	v0.8h, #216, lsl #8
+	mov	w8, #-10240                     // =0xffffd800
+	add	w9, w0, #4080, lsl #12          // =16711680
+	orr	w0, w8, w9, lsr #10
 	ret
                                         // -- End function

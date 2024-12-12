@@ -17,7 +17,7 @@ entry:
 ; opencv/optimized/sum.dispatch.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
   %4 = trunc i64 %3 to i32
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/norm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b6(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000166(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
   %4 = trunc nuw i64 %3 to i32
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/norm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000126(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
   %4 = trunc nuw i64 %3 to i32
@@ -54,7 +54,7 @@ entry:
 ; opencv/optimized/mean.dispatch.cpp.ll
 ; opencv/optimized/sum.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
   %4 = trunc i64 %3 to i32

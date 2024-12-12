@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 114 occurrences:
 ; abc/optimized/giaFanout.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaMini.c.ll
@@ -7,6 +7,20 @@
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/env.ll
+; boost/optimized/group.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/wargs_cmd.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cpython/optimized/_zoneinfo.ll
 ; cpython/optimized/dictobject.ll
@@ -92,9 +106,14 @@
 ; ruby/optimized/gc.ll
 ; rust-analyzer-rs/optimized/2025sm42y7i6frv5.ll
 ; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_connected_components.c.ll
 ; velox/optimized/SuccinctPrinter.cpp.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/data_printer.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
+; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -119,12 +138,14 @@ entry:
   ret i64 %2
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/kernel_timeout_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; freetype/optimized/psaux.c.ll
 ; grpc/optimized/jwt_credentials.cc.ll
 ; grpc/optimized/timer_manager.cc.ll

@@ -1,7 +1,7 @@
 
 ; 11 occurrences:
-; assimp/optimized/IFCGeometry.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; icu/optimized/number_decimalquantity.ll
 ; linux/optimized/percpu.ll
@@ -41,7 +41,7 @@ define i64 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 72057594037927935
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -57,7 +57,7 @@ define i64 @func0000000000000003(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = select i1 %1, i64 32, i64 %3
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

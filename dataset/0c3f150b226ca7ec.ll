@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/timDump.c.ll
 ; icu/optimized/uchar.ll
@@ -8,7 +8,6 @@
 ; openssl/optimized/libcrypto-lib-rsa_pss.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pss.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
-; zxing/optimized/AZToken.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i32 %0) #0 {
@@ -18,10 +17,9 @@ entry:
   ret i8 %2
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; cmake/optimized/hex.c.ll
 ; freetype/optimized/raster.c.ll
-; libquic/optimized/random.c.ll
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/hid-lg-g15.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
@@ -51,7 +49,7 @@ entry:
   ret i8 %2
 }
 
-; 72 occurrences:
+; 99 occurrences:
 ; arrow/optimized/type.cc.ll
 ; c3c/optimized/codegen_asm.c.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
@@ -93,7 +91,6 @@ entry:
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; rust-analyzer-rs/optimized/xh6m92l5tmfbxs4.ll
 ; slurm/optimized/job_mgr.ll
-; spike/optimized/interactive.ll
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll
 ; tls-rs/optimized/5b2dkiwfbrdnen43.ll
 ; tls-rs/optimized/z2cy5bf5cayilz9.ll
@@ -111,7 +108,6 @@ entry:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
-; wireshark/optimized/packet-fcct.c.ll
 ; wireshark/optimized/packet-gsm_map.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap-iter.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
@@ -122,6 +118,35 @@ entry:
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; yoga/optimized/Node.cpp.ll
 ; z3/optimized/tbv.cpp.ll
+; zed-rs/optimized/0aom8p2wor4n85al7fbg5160f.ll
+; zed-rs/optimized/1uum3gw9a30ezdy8xtn1px0l6.ll
+; zed-rs/optimized/1x0js6flb76ylaa82e6lu27uy.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/2qkwhwaatcoopjgi8iqvi1v8v.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/3r2dokv2dl5k20lnwkjewqs8s.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/5lopn02otdgr3jtenihf9pnc6.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/61xaugoldgcmtvmvu04ojyf44.ll
+; zed-rs/optimized/6ekeyfm197maw5n7s1cbq34ws.ll
+; zed-rs/optimized/6pzok54tcf7jgyfxt7910tckc.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9jrz8x0nc5lkiswz6iqpo0zcg.ll
+; zed-rs/optimized/9v4ru8f01y292a68uztwyin2n.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/ak4ykc5o2q07hp1jptfv0x87c.ll
+; zed-rs/optimized/anp459b0r1vn8pok0ofwmqun4.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/ayy5pqcx1yuz6kdx9ooq2ruee.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
+; zed-rs/optimized/dwj0ztyvjqu677mjkd8gksz15.ll
+; zed-rs/optimized/e8miey85a4w6kj2eow2y7dsus.ll
+; zed-rs/optimized/eqlhf2u6kdmwzzbnampe7imqv.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind

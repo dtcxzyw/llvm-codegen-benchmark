@@ -1,5 +1,5 @@
 
-%struct.TCGTemp.2593549 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
 
 ; 7 occurrences:
 ; libquic/optimized/pem_lib.c.ll
@@ -20,10 +20,7 @@ entry:
   ret ptr %7
 }
 
-; 5 occurrences:
-; git/optimized/dir.ll
-; opencv/optimized/scansegment.cpp.ll
-; opencv/optimized/tree.cpp.ll
+; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-pem_lib.ll
 ; openssl/optimized/libcrypto-shlib-pem_lib.ll
 ; Function Attrs: nounwind
@@ -37,37 +34,37 @@ entry:
   ret ptr %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; minetest/optimized/mapgen.cpp.ll
+; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000043(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 31
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr i16, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 16
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 16
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 23
   %4 = ashr i64 %3, 63
-  %5 = getelementptr %struct.TCGTemp.2593549, ptr %1, i64 %4
-  %6 = getelementptr %struct.TCGTemp.2593549, ptr %5, i64 %0, i32 3
+  %5 = getelementptr %struct.TCGTemp.2707225, ptr %1, i64 %4
+  %6 = getelementptr %struct.TCGTemp.2707225, ptr %5, i64 %0, i32 3
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openjdk/optimized/continuationFreezeThaw.ll
-; pocketpy/optimized/frame.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -92,6 +89,21 @@ entry:
   ret ptr %7
 }
 
+; 3 occurrences:
+; git/optimized/dir.ll
+; opencv/optimized/scansegment.cpp.ll
+; opencv/optimized/tree.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006f(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = ashr exact i64 %3, 32
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 1
+  ret ptr %7
+}
+
 ; 1 occurrences:
 ; icu/optimized/uscanf_p.ll
 ; Function Attrs: nounwind
@@ -102,6 +114,32 @@ entry:
   %5 = getelementptr nusw i16, ptr %1, i64 %4
   %6 = getelementptr i16, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 -2
+  ret ptr %7
+}
+
+; 1 occurrences:
+; opencv/optimized/scansegment.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006e(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = ashr exact i64 %3, 30
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %0
+  %7 = getelementptr nusw i8, ptr %6, i64 -4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; pocketpy/optimized/frame.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 31
+  %4 = ashr i64 %3, 32
+  %5 = getelementptr nusw ptr, ptr %1, i64 %4
+  %6 = getelementptr nusw ptr, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
 

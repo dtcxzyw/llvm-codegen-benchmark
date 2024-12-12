@@ -18,12 +18,3 @@ func000000000000000c:                   # @func000000000000000c
 .LBB1_2:
 	li	a0, 6
 	ret
-func0000000000000008:                   # @func0000000000000008
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	sltiu	a1, a1, 9
-	xori	a1, a1, 1
-	and	a0, a0, a1
-	addi	a0, a0, -1
-	ori	a0, a0, 2
-	ret

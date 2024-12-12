@@ -29,6 +29,7 @@
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/unique_path.ll
 ; bullet3/optimized/b3DynamicBvh.ll
 ; bullet3/optimized/b3RadixSort32CL.ll
 ; bullet3/optimized/btDbvt.ll
@@ -50,7 +51,6 @@
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/multibit_build.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll

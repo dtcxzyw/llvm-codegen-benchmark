@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/bacBac.c.ll
 ; abc/optimized/combination.c.ll
 ; abc/optimized/giaRex.c.ll
@@ -13,7 +13,6 @@
 ; grpc/optimized/xds_override_host.cc.ll
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; icu/optimized/utext.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/vc_screen.ll
 ; linux/optimized/xdp.ll
@@ -54,7 +53,7 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_F32nw.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp ugt i32 %2, 1600
@@ -93,7 +92,7 @@ entry:
 ; lief/optimized/ssl_msg.c.ll
 ; php/optimized/formatted_print.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp slt i32 %2, 1
@@ -105,7 +104,7 @@ entry:
 ; php/optimized/dow.ll
 ; quantlib/optimized/ratehelpers.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = icmp sgt i32 %2, 4
@@ -138,7 +137,7 @@ entry:
 ; quantlib/optimized/unitedkingdom.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = icmp eq i32 %2, 5
@@ -150,7 +149,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/bmaindex.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = icmp slt i32 %2, 4
@@ -162,7 +161,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/thailand.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = icmp ne i32 %2, 2
@@ -181,36 +180,35 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; linux/optimized/blk-sysfs.ll
+; 2 occurrences:
 ; linux/optimized/vc_screen.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967292
+  %2 = and i64 %1, 4294963200
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %0, i1 true, i1 %3
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 
-; 3 occurrences:
-; icu/optimized/utext.ll
+; 1 occurrences:
 ; linux/optimized/vc_screen.ll
-; linux/optimized/xattr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483648
   %3 = icmp ne i64 %2, 0
-  %4 = select i1 %0, i1 true, i1 %3
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; z3/optimized/nlqsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp eq i32 %2, -1
@@ -221,7 +219,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_string.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp sgt i32 %2, 1
@@ -234,7 +232,7 @@ entry:
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp eq i32 %2, 0
@@ -248,7 +246,7 @@ entry:
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp ne i32 %2, 0

@@ -4,7 +4,7 @@
 ; ruby/optimized/thread.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000228(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000848(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
   %4 = icmp eq i32 %1, 0

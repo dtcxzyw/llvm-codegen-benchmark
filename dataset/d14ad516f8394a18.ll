@@ -1,12 +1,13 @@
 
-; 40 occurrences:
-; abseil-cpp/optimized/arg.cc.ll
+; 41 occurrences:
 ; assimp/optimized/PlyParser.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/src.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; git/optimized/apply.ll
 ; git/optimized/sh-i18n--envsubst.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/rw.ll
@@ -41,9 +42,9 @@
 ; tev/optimized/main.cpp.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(ptr %0, i8 %1, ptr %2) #0 {
+define i64 @func0000000000000061(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp eq i8 %1, 0
   %5 = select i1 %4, ptr %3, ptr %0
   %6 = ptrtoint ptr %5 to i64
@@ -54,10 +55,23 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(ptr %0, i8 %1, ptr %2) #0 {
+define i64 @func0000000000000064(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ult i8 %1, 26
+  %5 = select i1 %4, ptr %3, ptr %0
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 2 occurrences:
+; abseil-cpp/optimized/arg.cc.ll
+; git/optimized/apply.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000041(ptr %0, i8 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -8
+  %4 = icmp eq i8 %1, 0
   %5 = select i1 %4, ptr %3, ptr %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
@@ -78,9 +92,9 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestString.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(ptr %0, i8 %1, ptr %2) #0 {
+define i64 @func0000000000000066(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 32
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = icmp slt i8 %1, 0
   %5 = select i1 %4, ptr %3, ptr %0
   %6 = ptrtoint ptr %5 to i64

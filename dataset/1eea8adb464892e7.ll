@@ -51,7 +51,7 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
@@ -65,11 +65,12 @@ entry:
 ; icu/optimized/collation.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; velox/optimized/FindFirst.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sdiv i32 %3, 64
   ret i32 %4
 }

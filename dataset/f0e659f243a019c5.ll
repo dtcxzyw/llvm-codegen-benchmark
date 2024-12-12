@@ -1,13 +1,10 @@
 
-; 65 occurrences:
-; assimp/optimized/zip.c.ll
+; 59 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/archive_blake2s_ref.c.ll
 ; cmake/optimized/archive_blake2sp_ref.c.ll
 ; cmake/optimized/block_buffer_encoder.c.ll
 ; cmake/optimized/formdata.c.ll
-; cmake/optimized/stream_buffer_encoder.c.ll
-; cmake/optimized/zstd_decompress_block.c.ll
 ; cpython/optimized/blake2b_impl.ll
 ; cpython/optimized/blake2s_impl.ll
 ; curl/optimized/libcurl_la-formdata.ll
@@ -15,7 +12,6 @@
 ; gromacs/optimized/decidegpuusage.cpp.ll
 ; grpc/optimized/fake_transport_security.cc.ll
 ; grpc/optimized/ssl_transport_security.cc.ll
-; hermes/optimized/zip.c.ll
 ; hwloc/optimized/hwloc-annotate.ll
 ; hwloc/optimized/hwloc-bind.ll
 ; hwloc/optimized/hwloc-calc.ll
@@ -44,8 +40,6 @@
 ; llvm/optimized/JumpThreading.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/miniz.c.ll
 ; node/optimized/libnode.js_native_api_v8.ll
 ; oniguruma/optimized/regparse.ll
 ; openjdk/optimized/library_call.ll
@@ -119,7 +113,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bio_addr.ll
 ; openssl/optimized/libcrypto-shlib-bio_lib.ll
 ; openssl/optimized/libcrypto-shlib-hpke.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/topocentric.cpp.ll
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
@@ -130,11 +123,12 @@ entry:
 ; verilator/optimized/V3LinkCells.cpp.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; z3/optimized/euf_ac_plugin.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

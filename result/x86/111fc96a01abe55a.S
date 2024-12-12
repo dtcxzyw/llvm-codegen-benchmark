@@ -1,8 +1,3 @@
-func0000000000000047:                   # @func0000000000000047
-	leal	(%rdx,%rdx,2), %eax
-	addl	%esi, %eax
-	leal	(%rdi,%rax,2), %eax
-	retq
 func00000000000000a0:                   # @func00000000000000a0
 	imull	$36969, %edx, %eax              # imm = 0x9069
 	addl	%esi, %eax

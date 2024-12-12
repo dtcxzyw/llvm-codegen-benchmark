@@ -3,12 +3,12 @@
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000388(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 16
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp ult i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -64,12 +64,12 @@ entry:
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 4
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %5 = add nuw nsw i64 %1, %4
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -303,36 +303,36 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000384(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; git/optimized/packfile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1024
   %4 = zext i32 %3 to i64
-  %5 = add nuw i64 %4, %1
-  %6 = icmp eq i64 %5, %0
+  %5 = add nuw i64 %1, %4
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; git/optimized/packfile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1032
   %4 = zext i32 %3 to i64
-  %5 = add nuw i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %5 = add nuw i64 %1, %4
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -341,12 +341,12 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 3
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -360,8 +360,8 @@ define i1 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -372,44 +372,44 @@ define i1 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -5
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp uge i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp ule i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -4
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
-  %6 = icmp ult i64 %5, %0
+  %5 = add nuw nsw i64 %1, %4
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000003a4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 4
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %5 = add nsw i64 %1, %4
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1920
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -417,12 +417,12 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp eq i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

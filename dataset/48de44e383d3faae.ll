@@ -24,14 +24,16 @@
 define ptr @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
 
-; 285 occurrences:
+; 286 occurrences:
 ; arrow/optimized/io_util.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
 ; folly/optimized/JemallocHugePageAllocator.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -282,7 +284,6 @@ entry:
 ; openmpi/optimized/mpool_hugepage_module.ll
 ; openmpi/optimized/opal_free_list.ll
 ; openusd/optimized/aom_mem.c.ll
-; ozz-animation/optimized/allocator.cc.ll
 ; php/optimized/phpdbg_watch.ll
 ; postgres/optimized/mcxt.ll
 ; protobuf/optimized/arena.cc.ll
@@ -319,7 +320,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

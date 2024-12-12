@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	7                               # 0x7
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpbroadcastq	.LCPI0_0(%rip), %ymm2   # ymm2 = [7,7,7,7]
 	vpand	%ymm2, %ymm1, %ymm1
 	vpcmpneqq	%ymm2, %ymm1, %k1

@@ -1,5 +1,5 @@
 
-; 200 occurrences:
+; 195 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
 ; assimp/optimized/zip.c.ll
 ; bullet3/optimized/b3File.ll
@@ -21,7 +21,6 @@
 ; gromacs/optimized/gmx_traj.cpp.ll
 ; gromacs/optimized/trajectory_writing.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/H5VLnative_file.c.ll
 ; hermes/optimized/Host.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/numparse_impl.ll
@@ -64,7 +63,6 @@
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_dpll.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_fbc.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/intel_vdsc.ll
@@ -168,10 +166,7 @@
 ; qemu/optimized/block.c.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
-; qemu/optimized/hw_net_cadence_gem.c.ll
-; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/net_tap-linux.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/ui_curses.c.ll
 ; qemu/optimized/ui_keymaps.c.ll
 ; quickjs/optimized/libbf.ll
@@ -208,7 +203,7 @@ entry:
   ret i32 %4
 }
 
-; 235 occurrences:
+; 249 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -231,6 +226,7 @@ entry:
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; clamav/optimized/manager.c.ll
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
@@ -242,6 +238,19 @@ entry:
 ; cpython/optimized/formatter_unicode.ll
 ; cpython/optimized/mpdecimal.ll
 ; cpython/optimized/sixstep.ll
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
 ; darktable/optimized/introspection_crop.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; double_conversion/optimized/strtod.cc.ll
@@ -295,7 +304,6 @@ entry:
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/mii.ll
 ; linux/optimized/open.ll
 ; linux/optimized/pata_amd.ll
 ; linux/optimized/pci_root.ll
@@ -444,6 +452,7 @@ entry:
 ; yosys/optimized/test_cell.ll
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/util.cpp.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:

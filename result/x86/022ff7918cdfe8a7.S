@@ -18,11 +18,3 @@ func0000000000000024:                   # @func0000000000000024
 	vucomisd	%xmm1, %xmm0
 	seta	%al
 	retq
-func00000000000000e5:                   # @func00000000000000e5
-	vmulsd	%xmm1, %xmm0, %xmm0
-	vcmpordsd	%xmm0, %xmm0, %k1
-	vmovsd	%xmm0, %xmm0, %xmm0 {%k1} {z}
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vucomisd	%xmm0, %xmm1
-	setb	%al
-	retq

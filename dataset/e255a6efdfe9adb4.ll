@@ -49,10 +49,12 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; clamav/optimized/lzwdec.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; hdf5/optimized/H5Pocpl.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:

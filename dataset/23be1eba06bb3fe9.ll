@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 32 occurrences:
 ; bullet3/optimized/btMultiBodySphericalJointLimit.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_crop.c.ll
@@ -22,11 +22,6 @@
 ; mitsuba3/optimized/roughdielectric.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; ncnn/optimized/priorbox.cpp.ll
-; ncnn/optimized/yolov3detectionoutput.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll

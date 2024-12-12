@@ -48,7 +48,7 @@
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000546(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %0, 4
   %3 = shl nsw i64 %2, 2
@@ -84,7 +84,7 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(i64 %0, i64 %1) #0 {
+define i1 @func00000000000004cc(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 4
   %3 = shl nsw i64 %2, 2
@@ -109,7 +109,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000004ca(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 4
   %3 = shl nsw i64 %2, 2

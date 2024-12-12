@@ -1,5 +1,5 @@
 
-; 170 occurrences:
+; 172 occurrences:
 ; llvm/optimized/FunctionAttrs.cpp.ll
 ; llvm/optimized/FunctionImport.cpp.ll
 ; llvm/optimized/LTO.cpp.ll
@@ -170,6 +170,8 @@
 ; spike/optimized/vxor_vv.ll
 ; spike/optimized/vxor_vx.ll
 ; z3/optimized/grobner.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

@@ -7,7 +7,7 @@
 ; openjdk/optimized/splashscreen_impl.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 29
@@ -23,7 +23,7 @@ entry:
 ; opencv/optimized/tree.cpp.ll
 ; openspiel/optimized/matrix_game_utils.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 28
@@ -45,7 +45,7 @@ entry:
 ; opencv/optimized/svm.cpp.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 30
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000334(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000664(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = shl i64 %3, 32
@@ -74,7 +74,7 @@ entry:
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 29
@@ -87,7 +87,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/updategroupscog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 30
@@ -101,7 +101,7 @@ entry:
 ; gromacs/optimized/pairlist.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 29
@@ -114,7 +114,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/readir.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 30
@@ -128,7 +128,7 @@ entry:
 ; opencv/optimized/torch_importer.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 32

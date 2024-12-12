@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000019:                   # @func0000000000000019
 	movq	%rdi, %rax
 	notb	%dl
 	movzbl	%dl, %ecx
@@ -8,7 +8,7 @@ func0000000000000011:                   # @func0000000000000011
 	subq	%rcx, %rax
 	sarq	$4, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000018:                   # @func0000000000000018
 	movq	%rdi, %rax
 	leaq	12(%rsi), %rcx
 	testb	$1, %dl

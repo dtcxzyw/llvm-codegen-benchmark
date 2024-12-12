@@ -35,7 +35,7 @@ entry:
 ; entt/optimized/dense_set.cpp.ll
 ; llvm/optimized/FunctionComparator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 15
   %3 = and i64 %2, 11
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 32
   %3 = add nsw i64 %0, 32

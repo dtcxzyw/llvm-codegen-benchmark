@@ -2,7 +2,7 @@
 	.long	4294967289                      # 0xfffffff9
 func0000000000000055:                   # @func0000000000000055
 	vpmovsxwd	%xmm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpslld	$3, %ymm1, %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0

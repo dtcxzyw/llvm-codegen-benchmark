@@ -1,5 +1,5 @@
 
-; 289 occurrences:
+; 284 occurrences:
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -152,9 +152,6 @@
 ; openmpi/optimized/crc.ll
 ; openmpi/optimized/tm_malloc.ll
 ; openspiel/optimized/Scheduler.cpp.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; ozz-animation/optimized/animation.cc.ll
 ; ozz-animation/optimized/math_archive.cc.ll
@@ -168,8 +165,6 @@
 ; pbrt-v4/optimized/interaction.cpp.ll
 ; pbrt-v4/optimized/pspec.cpp.ll
 ; pbrt-v4/optimized/samples.cpp.ll
-; php/optimized/engine_combinedlcg.ll
-; php/optimized/hash_crc32.ll
 ; php/optimized/hash_gost.ll
 ; postgres/optimized/lock.ll
 ; postgres/optimized/predicate.ll
@@ -297,20 +292,17 @@ entry:
   ret i32 %3
 }
 
-; 24 occurrences:
+; 21 occurrences:
 ; libquic/optimized/des.c.ll
 ; lief/optimized/aes.c.ll
 ; lief/optimized/des.c.ll
 ; linux/optimized/random32.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; ozz-animation/optimized/animation.cc.ll
 ; ozz-animation/optimized/raw_animation_archive.cc.ll
@@ -330,7 +322,7 @@ entry:
   ret i32 %3
 }
 
-; 69 occurrences:
+; 70 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/Exporter.cpp.ll
@@ -344,6 +336,7 @@ entry:
 ; assimp/optimized/PostStepRegistry.cpp.ll
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
@@ -404,13 +397,14 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 16
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; git/optimized/bloom.ll
 ; libquic/optimized/superfasthash.c.ll
+; lvgl/optimized/lv_lru.ll
 ; openjdk/optimized/ProcessPath.ll
 ; openjdk/optimized/vtableStubs.ll
 ; postgres/optimized/pg_lzcompress.ll
@@ -424,7 +418,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 

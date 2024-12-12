@@ -1,5 +1,5 @@
 
-; 223 occurrences:
+; 228 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -19,6 +19,7 @@
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/uniform_helper_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
+; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/ASEParser.cpp.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -47,6 +48,9 @@
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_edge_shape.cpp.ll
 ; box2d/optimized/b2_world.cpp.ll
@@ -152,6 +156,7 @@
 ; mitsuba3/optimized/roughconductor.cpp.ll
 ; mitsuba3/optimized/sphere.cpp.ll
 ; mitsuba3/optimized/stokes.cpp.ll
+; mitsuba3/optimized/string.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; ncnn/optimized/paramdict.cpp.ll

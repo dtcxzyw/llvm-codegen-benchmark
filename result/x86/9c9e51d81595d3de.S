@@ -1,31 +1,22 @@
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	movzbl	%sil, %eax
 	leaq	244(%rdi,%rax), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	movzbl	%sil, %eax
 	leaq	16(%rdi,%rax,8), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	movzbl	%sil, %eax
 	leaq	28(%rdi,%rax,4), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	movzbl	%sil, %eax
 	leaq	66(%rdi,%rax,2), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	movzbl	%sil, %eax
 	leaq	24(%rdi,%rax,8), %rax
-	retq
-func000000000000000e:                   # @func000000000000000e
-	movzbl	%sil, %eax
-	leaq	1(%rdi,%rax), %rax
-	retq
-func000000000000001e:                   # @func000000000000001e
-	movzbl	%sil, %eax
-	imulq	$720, %rax, %rax                # imm = 0x2D0
-	leaq	48(%rdi,%rax), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movzbl	%sil, %eax

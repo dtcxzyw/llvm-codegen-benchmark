@@ -4,15 +4,16 @@
 ; nanobind/optimized/nb_type.cpp.ll
 ; ruby/optimized/md5.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000063(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 56
+  %3 = icmp samesign ugt i32 %2, 56
   %4 = select i1 %3, i64 %1, i64 8
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
-; 29 occurrences:
+; 30 occurrences:
+; boost/optimized/alloc_lib.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
 ; folly/optimized/MemoryIdler.cpp.ll
@@ -286,11 +287,11 @@ define i64 @func000000000000002b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 99
   %4 = select i1 %3, i64 %1, i64 2
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -301,10 +302,8 @@ entry:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
-; brotli/optimized/utf8_util.c.ll
 ; hdf5/optimized/H5Fsuper.c.ll
 ; hdf5/optimized/H5Odtype.c.ll
-; linux/optimized/compaction.ll
 ; oiio/optimized/xmp.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
@@ -323,7 +322,7 @@ define i64 @func000000000000002a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -362,7 +361,7 @@ define i64 @func0000000000000030(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %2, 192
   %3 = select i1 %.not, i64 2, i64 %1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -468,7 +467,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -480,12 +479,11 @@ define i64 @func000000000000001b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 15
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 3 occurrences:
-; freetype/optimized/ftbase.c.ll
+; 2 occurrences:
 ; linux/optimized/drm_file.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
@@ -507,7 +505,7 @@ define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -518,6 +516,18 @@ define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %4 = select i1 %3, i64 %1, i64 0
+  %5 = add i64 %4, %0
+  ret i64 %5
+}
+
+; 2 occurrences:
+; brotli/optimized/utf8_util.c.ll
+; linux/optimized/compaction.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000050(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 11
+  %4 = select i1 %3, i64 %1, i64 0, !prof !0
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -540,8 +550,21 @@ define i64 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/ftbase.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000060(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 2
+  %4 = select i1 %3, i64 %1, i64 0
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
 attributes #0 = { nounwind }
+
+!0 = !{!"branch_weights", i32 2000, i32 1}

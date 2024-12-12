@@ -1,6 +1,7 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; darktable/optimized/amaze.cc.ll
+; llvm/optimized/Attributes.cpp.ll
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
 ; php/optimized/zend_alloc.ll
@@ -19,10 +20,10 @@
 ; protobuf/optimized/struct.pb.cc.ll
 ; protobuf/optimized/type.pb.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i32 %0, i64 %1) #0 {
+define ptr @func000000000000000e(i32 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 520
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 520
   %4 = sext i32 %0 to i64
   %5 = getelementptr nusw [512 x i32], ptr %3, i64 0, i64 %4
   ret ptr %5
@@ -40,19 +41,7 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
-; llvm/optimized/Attributes.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(i32 %0, i64 %1) #0 {
-entry:
-  %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw nuw i8, ptr %2, i64 12
-  %4 = sext i32 %0 to i64
-  %5 = getelementptr nusw [16 x i8], ptr %3, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 15 occurrences:
+; 13 occurrences:
 ; linux/optimized/assoc_array.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/hrtimer.ll
@@ -60,19 +49,17 @@ entry:
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/processor_idle.ll
 ; linux/optimized/sock.ll
-; linux/optimized/tsc_msr.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; postgres/optimized/gistproc.ll
 ; postgres/optimized/lsyscache.ll
 ; postgres/optimized/rangetypes_gist.ll
 ; postgres/optimized/sinvaladt.ll
-; postgres/optimized/xlogprefetcher.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i32 %0, i64 %1) #0 {
+define ptr @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = sext i32 %0 to i64
   %5 = getelementptr [0 x i16], ptr %3, i64 0, i64 %4
   ret ptr %5

@@ -21,7 +21,7 @@ define i64 @func0000000000000003(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = zext nneg i16 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -32,23 +32,19 @@ define i64 @func0000000000000001(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -256
   %3 = zext i16 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 6 occurrences:
+; 2 occurrences:
 ; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 1023
+  %2 = and i16 %1, 1
   %3 = zext nneg i16 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

@@ -26,4 +26,15 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_color.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i32
+  %3 = xor i32 %0, 255
+  %4 = mul nuw nsw i32 %3, %2
+  ret i32 %4
+}
+
 attributes #0 = { nounwind }

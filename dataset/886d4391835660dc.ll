@@ -7,7 +7,7 @@
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; openspiel/optimized/twixtboard.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0) #0 {
+define i1 @func0000000000000046(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 0
   ret i1 %1
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0) #0 {
+define i1 @func000000000000004a(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, -1
   ret i1 %1

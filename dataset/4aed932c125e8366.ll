@@ -12,7 +12,7 @@
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = freeze i32 %3
   ret i32 %4
 }

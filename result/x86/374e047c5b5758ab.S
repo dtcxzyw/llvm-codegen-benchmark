@@ -6,3 +6,7 @@ func0000000000000000:                   # @func0000000000000000
 	subl	%esi, %edi
 	leal	(,%rdi,8), %eax
 	retq
+func000000000000002f:                   # @func000000000000002f
+	subl	%esi, %edi
+	leal	(,%rdi,8), %eax
+	retq

@@ -1,8 +1,9 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
 ; duckdb/optimized/null_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; linux/optimized/aperfmperf.ll

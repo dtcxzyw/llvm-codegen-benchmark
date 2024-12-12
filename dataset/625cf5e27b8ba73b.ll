@@ -37,18 +37,6 @@ entry:
 }
 
 ; 1 occurrences:
-; mixbox/optimized/mixbox.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003d(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = mul nuw nsw i32 %0, 85
-  %4 = add nuw nsw i32 %3, %2
-  %5 = mul nsw i32 %4, 85
-  ret i32 %5
-}
-
-; 1 occurrences:
 ; libquic/optimized/prtime.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000055(i32 %0, i8 %1) #0 {

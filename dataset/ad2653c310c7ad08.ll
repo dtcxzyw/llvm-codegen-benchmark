@@ -1,9 +1,9 @@
 
 ; 8 occurrences:
 ; abc/optimized/kitTruth.c.ll
+; boost/optimized/to_chars.ll
 ; icu/optimized/utext.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openmpi/optimized/netpatterns_nary_tree.ll
 ; ruby/optimized/strftime.ll
@@ -13,7 +13,7 @@ define i1 @func0000000000000006(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %1, i64 4, i64 %3
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -28,14 +28,12 @@ define i1 @func000000000000000a(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %1, i64 4, i64 %3
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; cmake/optimized/inet.c.ll
-; gromacs/optimized/dorm2l.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; libuv/optimized/inet.c.ll
 ; node/optimized/inet.ll
 ; openblas/optimized/dlatrs.c.ll
@@ -47,13 +45,12 @@ define i1 @func000000000000000b(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %1, i64 -1, i64 %3
-  %5 = icmp sle i64 %4, %0
+  %5 = icmp sge i64 %0, %4
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; git/optimized/attr.ll
-; glslang/optimized/PoolAlloc.cpp.ll
 ; graphviz/optimized/emit.c.ll
 ; opencv/optimized/bagofwords.cpp.ll
 ; protobuf/optimized/php_generator.cc.ll
@@ -62,7 +59,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   %not. = xor i1 %1, true
   %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
@@ -80,7 +77,7 @@ define i1 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -91,20 +88,7 @@ define i1 @func0000000000000005(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = icmp uge i64 %4, %0
-  ret i1 %5
-}
-
-; 3 occurrences:
-; gromacs/optimized/dorm2l.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
-; openblas/optimized/dlatrs.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000007(i64 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = select i1 %1, i64 1, i64 %3
-  %5 = icmp sge i64 %4, %0
+  %5 = icmp ule i64 %0, %4
   ret i1 %5
 }
 
@@ -118,7 +102,18 @@ define i1 @func0000000000000008(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openblas/optimized/dlatrs.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = select i1 %1, i64 1, i64 %3
+  %5 = icmp sle i64 %0, %4
   ret i1 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -10,18 +10,17 @@
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(i1 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000006f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
   %5 = zext i1 %0 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -40,12 +39,12 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
   %5 = zext i1 %0 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

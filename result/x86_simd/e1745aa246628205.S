@@ -89,7 +89,7 @@ func0000000000000000:                   # @func0000000000000000
 	.zero	1
 .LCPI3_1:
 	.zero	4,3
-func0000000000000003:                   # @func0000000000000003
+func0000000000000006:                   # @func0000000000000006
 	vpmovdb	%ymm1, %xmm1
 	vpternlogd	$248, .LCPI3_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	vzeroupper
@@ -113,7 +113,7 @@ func0000000000000003:                   # @func0000000000000003
 	.zero	1
 .LCPI4_1:
 	.zero	4,3
-func0000000000000006:                   # @func0000000000000006
+func0000000000000004:                   # @func0000000000000004
 	vpmovdb	%ymm1, %xmm1
 	vpternlogd	$248, .LCPI4_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	vzeroupper
@@ -137,32 +137,8 @@ func0000000000000006:                   # @func0000000000000006
 	.zero	1
 .LCPI5_1:
 	.zero	4,3
-func0000000000000004:                   # @func0000000000000004
-	vpmovdb	%ymm1, %xmm1
-	vpternlogd	$248, .LCPI5_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
-	vzeroupper
-	retq
-.LCPI6_0:
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI6_1:
-	.zero	4,3
 func0000000000000005:                   # @func0000000000000005
 	vpmovdb	%ymm1, %xmm1
-	vpternlogd	$248, .LCPI6_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
+	vpternlogd	$248, .LCPI5_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	vzeroupper
 	retq

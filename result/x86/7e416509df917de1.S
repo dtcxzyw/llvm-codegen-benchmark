@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	movl	%edi, %eax
 	andb	$15, %al
 	cmpb	$11, %al
@@ -7,14 +7,14 @@ func0000000000000038:                   # @func0000000000000038
 	shrb	$5, %dil
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	testb	$12, %dil
 	sete	%cl
 	testb	$3, %dil
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	movl	%edi, %ecx
 	andb	$8, %cl
 	shrb	$3, %cl

@@ -21,6 +21,13 @@ func0000000000000008:                   # @func0000000000000008
 	imulq	%rdi, %rax
 	shrq	$35, %rax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	addl	%edx, %esi
+	subl	%esi, %edi
+	shrl	$3, %edi
+	imulq	$613566757, %rdi, %rax          # imm = 0x24924925
+	shrq	$32, %rax
+	retq
 func000000000000001a:                   # @func000000000000001a
 	addl	%edx, %esi
 	subl	%esi, %edi

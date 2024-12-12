@@ -4,7 +4,7 @@
 ; postgres/optimized/tsgistidx.ll
 ; qemu/optimized/block_qcow.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 511
   %3 = lshr i64 %2, 9
@@ -31,7 +31,7 @@ entry:
 ; qemu/optimized/block_vpc.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000c8(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 511
   %3 = lshr i64 %2, 9

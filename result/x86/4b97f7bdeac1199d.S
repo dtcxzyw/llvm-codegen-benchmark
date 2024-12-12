@@ -10,7 +10,7 @@ func0000000000000002:                   # @func0000000000000002
 	testq	%rdi, %rdi
 	sete	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	testq	%rsi, %rsi
 	setne	%al
 	testq	%rdi, %rdi

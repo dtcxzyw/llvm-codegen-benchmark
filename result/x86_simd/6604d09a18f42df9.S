@@ -37,7 +37,7 @@
 func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpcmpeqq	%ymm0, %ymm1, %k1
+	vpcmpeqq	%ymm1, %ymm0, %k1
 	vpbroadcastb	.LCPI0_2(%rip), %xmm0   # xmm0 = [44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44]
 	vmovdqu8	.LCPI0_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [10,10,10,10,u,u,u,u,u,u,u,u,u,u,u,u]
 	vzeroupper

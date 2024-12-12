@@ -1,8 +1,9 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; qemu/optimized/linux-user_elfload.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %1, 0
   %4 = and i1 %3, %0
@@ -17,7 +18,7 @@ entry:
 ; opencv/optimized/motionSaliencyBinWangApr2014.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000186(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %1, 0
   %4 = and i1 %3, %0
@@ -26,14 +27,12 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; casadi/optimized/dm_instantiator.cpp.ll
-; casadi/optimized/im_instantiator.cpp.ll
-; casadi/optimized/sx_instantiator.cpp.ll
+; 1 occurrences:
+; boost/optimized/area.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000146(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %1, 2
+  %3 = icmp sgt i64 %1, -5
   %4 = and i1 %3, %0
   %5 = icmp slt i64 %1, %2
   %6 = select i1 %4, i1 %5, i1 false

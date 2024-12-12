@@ -2,7 +2,7 @@
 	.long	6                               # 0x6
 .LCPI0_1:
 	.long	128                             # 0x80
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
 	vpsllvd	%ymm1, %ymm0, %ymm0
@@ -14,7 +14,7 @@ func0000000000000011:                   # @func0000000000000011
 	.long	7                               # 0x7
 .LCPI1_1:
 	.long	128                             # 0x80
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
 	vpsllvd	%ymm1, %ymm0, %ymm0

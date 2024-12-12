@@ -10,31 +10,19 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 49 occurrences:
 ; hermes/optimized/RegAlloc.cpp.ll
-; llvm/optimized/AliasAnalysis.cpp.ll
-; llvm/optimized/BasicBlock.cpp.ll
-; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/InlineFunction.cpp.ll
-; llvm/optimized/ObjCARCContract.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i1 %1, ptr %2) #0 {
-entry:
-  %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nusw i8, ptr %3, i64 16
-  %5 = icmp eq ptr %4, %0
-  ret i1 %5
-}
-
-; 43 occurrences:
 ; llvm/optimized/AArch64LowerHomogeneousPrologEpilog.cpp.ll
 ; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
+; llvm/optimized/AliasAnalysis.cpp.ll
+; llvm/optimized/BasicBlock.cpp.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll
 ; llvm/optimized/BlockCoverageInference.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/CFG.cpp.ll
+; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGHLSLRuntime.cpp.ll
 ; llvm/optimized/CodeExtractor.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
@@ -44,6 +32,7 @@ entry:
 ; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/GCOVProfiling.cpp.ll
 ; llvm/optimized/IRSimilarityIdentifier.cpp.ll
+; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/LegacyPassManager.cpp.ll
 ; llvm/optimized/LoopExtractor.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
@@ -52,6 +41,7 @@ entry:
 ; llvm/optimized/ModuleUtils.cpp.ll
 ; llvm/optimized/NewGVN.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
+; llvm/optimized/ObjCARCContract.cpp.ll
 ; llvm/optimized/ObjCARCOpts.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/PartiallyInlineLibCalls.cpp.ll
@@ -71,27 +61,15 @@ entry:
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000061(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 72
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/InlineFunction.cpp.ll
-; llvm/optimized/SelectionDAG.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i1 %1, ptr %2) #0 {
-entry:
-  %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
-  %5 = icmp ne ptr %4, %0
-  ret i1 %5
-}
-
-; 37 occurrences:
+; 38 occurrences:
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll
 ; llvm/optimized/BreakCriticalEdges.cpp.ll
@@ -123,6 +101,7 @@ entry:
 ; llvm/optimized/PartialInlining.cpp.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll
 ; llvm/optimized/SanitizerCoverage.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/SjLjEHPrepare.cpp.ll
 ; llvm/optimized/TailRecursionElimination.cpp.ll
@@ -130,10 +109,10 @@ entry:
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/WinEHPrepare.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000006c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 48
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = icmp ne ptr %4, %0
   ret i1 %5
 }

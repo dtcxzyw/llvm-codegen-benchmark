@@ -1,30 +1,18 @@
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	movi	v6.16b, #51
-	sub	v2.4s, v2.4s, v4.4s
-	sub	v3.4s, v3.4s, v5.4s
-	and	v2.16b, v2.16b, v6.16b
-	and	v3.16b, v3.16b, v6.16b
-	and	v0.16b, v0.16b, v6.16b
-	and	v1.16b, v1.16b, v6.16b
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v3.4s
-	ushr	v0.4s, v0.4s, #4
-	ushr	v1.4s, v1.4s, #4
+	sub	w8, w1, w2
+	and	w9, w0, #0x33333333
+	and	w8, w8, #0x33333333
+	add	w8, w9, w8
+	lsr	w0, w8, #4
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	movi	v6.16b, #51
-	sub	v2.4s, v2.4s, v4.4s
-	sub	v3.4s, v3.4s, v5.4s
-	and	v2.16b, v2.16b, v6.16b
-	and	v3.16b, v3.16b, v6.16b
-	and	v0.16b, v0.16b, v6.16b
-	and	v1.16b, v1.16b, v6.16b
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v3.4s
-	ushr	v0.4s, v0.4s, #4
-	ushr	v1.4s, v1.4s, #4
+	sub	w8, w1, w2
+	and	w9, w0, #0x33333333
+	and	w8, w8, #0x33333333
+	add	w8, w9, w8
+	lsr	w0, w8, #4
 	ret
                                         // -- End function

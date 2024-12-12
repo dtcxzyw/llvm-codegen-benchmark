@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bblif.c.ll
 ; clamav/optimized/client.c.ll
@@ -29,6 +29,7 @@
 ; z3/optimized/doc.cpp.ll
 ; z3/optimized/tbv.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1) #0 {

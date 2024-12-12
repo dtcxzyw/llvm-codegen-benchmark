@@ -4,6 +4,12 @@ func0000000000000005:                   # @func0000000000000005
 	testb	$1, %sil
 	cmovel	%edi, %eax
 	retq
+func0000000000000051:                   # @func0000000000000051
+	movl	%edi, %eax
+	negl	%eax
+	testb	%sil, %sil
+	cmovsl	%edi, %eax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	testl	$16384, %esi                    # imm = 0x4000
 	movl	$30, %ecx

@@ -21,10 +21,21 @@ func0000000000000019:                   # @func0000000000000019
 	add	a0, a0, a1
 	addi	a0, a0, 64
 	ret
+func000000000000000b:                   # @func000000000000000b
+	sh1add	a0, a1, a0
+	addi	a0, a0, -2
+	ret
 func0000000000000009:                   # @func0000000000000009
 	slli	a1, a1, 32
 	add	a0, a0, a1
 	li	a1, -1
+	slli	a1, a1, 32
+	add	a0, a0, a1
+	ret
+func000000000000001f:                   # @func000000000000001f
+	slli	a1, a1, 32
+	add	a0, a0, a1
+	li	a1, 3
 	slli	a1, a1, 32
 	add	a0, a0, a1
 	ret
@@ -36,12 +47,6 @@ func000000000000000d:                   # @func000000000000000d
 	add	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d
-	slli	a1, a1, 32
-	add	a0, a0, a1
-	bseti	a1, zero, 32
-	add	a0, a0, a1
-	ret
-func000000000000001f:                   # @func000000000000001f
 	slli	a1, a1, 32
 	add	a0, a0, a1
 	bseti	a1, zero, 32

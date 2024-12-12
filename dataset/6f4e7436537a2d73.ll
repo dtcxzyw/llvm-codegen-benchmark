@@ -1,6 +1,9 @@
 
-; 4 occurrences:
+; 7 occurrences:
+; clamav/optimized/Bra86.c.ll
+; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; libdeflate/optimized/deflate_decompress.c.ll
+; linux/optimized/xz_dec_bcj.ll
 ; openusd/optimized/openexr-c.c.ll
 ; raylib/optimized/rcore.c.ll
 ; yosys/optimized/pmux2shiftx.ll

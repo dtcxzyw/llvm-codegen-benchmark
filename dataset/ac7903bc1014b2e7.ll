@@ -7,7 +7,7 @@
 ; linux/optimized/deflate.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000085(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000105(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %2, %0
   %4 = icmp ugt i32 %3, 2

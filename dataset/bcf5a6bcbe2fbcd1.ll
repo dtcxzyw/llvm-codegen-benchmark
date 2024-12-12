@@ -1,10 +1,11 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; libdeflate/optimized/deflate_decompress.c.ll
 ; openjdk/optimized/addnode.ll
 ; openusd/optimized/openexr-c.c.ll
+; postgres/optimized/hashpage.ll
 ; raylib/optimized/rcore.c.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind

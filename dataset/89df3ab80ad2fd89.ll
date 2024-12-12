@@ -11,8 +11,9 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaGen.c.ll
+; boost/optimized/alloc_lib.ll
 ; hermes/optimized/Path.cpp.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
@@ -45,7 +46,6 @@ entry:
 ; abc/optimized/aigPartSat.c.ll
 ; abc/optimized/bmcBCore.c.ll
 ; abc/optimized/bmcFx.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/bmcMaxi.c.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -79,6 +79,7 @@ entry:
 ; abc/optimized/llb4Cex.c.ll
 ; abc/optimized/pdrSat.c.ll
 ; abc/optimized/resSat.c.ll
+; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sscSat.c.ll
 ; abc/optimized/sswCnf.c.ll
 ; abc/optimized/sswSat.c.ll

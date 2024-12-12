@@ -330,6 +330,83 @@ entry:
   ret i64 %7
 }
 
+; 65 occurrences:
+; assimp/optimized/3DSLoader.cpp.ll
+; lightgbm/optimized/feature_histogram.cpp.ll
+; lightgbm/optimized/objective_function.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/BitcodeAnalyzer.cpp.ll
+; llvm/optimized/CloneDetection.cpp.ll
+; llvm/optimized/CoverageMappingGen.cpp.ll
+; llvm/optimized/ELF.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/LoopCacheAnalysis.cpp.ll
+; llvm/optimized/MergeFunctions.cpp.ll
+; llvm/optimized/Metadata.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SampleProf.cpp.ll
+; llvm/optimized/SampleProfWriter.cpp.ll
+; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
+; llvm/optimized/SemaType.cpp.ll
+; mold/optimized/arch-alpha.cc.ll
+; mold/optimized/arch-ppc64v1.cc.ll
+; mold/optimized/passes.cc.ALPHA.cc.ll
+; mold/optimized/passes.cc.ARM32.cc.ll
+; mold/optimized/passes.cc.ARM64.cc.ll
+; mold/optimized/passes.cc.I386.cc.ll
+; mold/optimized/passes.cc.LOONGARCH32.cc.ll
+; mold/optimized/passes.cc.LOONGARCH64.cc.ll
+; mold/optimized/passes.cc.M68K.cc.ll
+; mold/optimized/passes.cc.PPC32.cc.ll
+; mold/optimized/passes.cc.PPC64V1.cc.ll
+; mold/optimized/passes.cc.PPC64V2.cc.ll
+; mold/optimized/passes.cc.RV32BE.cc.ll
+; mold/optimized/passes.cc.RV32LE.cc.ll
+; mold/optimized/passes.cc.RV64BE.cc.ll
+; mold/optimized/passes.cc.RV64LE.cc.ll
+; mold/optimized/passes.cc.S390X.cc.ll
+; mold/optimized/passes.cc.SH4.cc.ll
+; mold/optimized/passes.cc.SPARC64.cc.ll
+; mold/optimized/passes.cc.X86_64.cc.ll
+; nix/optimized/nixexpr.ll
+; opencc/optimized/louds-trie.cc.ll
+; opencv/optimized/bardetect.cpp.ll
+; opencv/optimized/detection_output_layer.cpp.ll
+; opencv/optimized/nms.cpp.ll
+; protobuf/optimized/text_format.cc.ll
+; protobuf/optimized/wire_format.cc.ll
+; re2/optimized/prefilter_tree.cc.ll
+; stockfish/optimized/tbprobe.ll
+; verilator/optimized/V3DfgRegularize.cpp.ll
+; verilator/optimized/V3GraphAlg.cpp.ll
+; xgboost/optimized/adaptive.cc.ll
+; xgboost/optimized/auc.cc.ll
+; xgboost/optimized/random.cc.ll
+; xgboost/optimized/rank_metric.cc.ll
+; xgboost/optimized/ranking_utils.cc.ll
+; xgboost/optimized/stats.cc.ll
+; z3/optimized/clp_context.cpp.ll
+; z3/optimized/pb_solver.cpp.ll
+; z3/optimized/pdd_simplifier.cpp.ll
+; z3/optimized/sat_gc.cpp.ll
+; z3/optimized/sat_simplifier.cpp.ll
+; z3/optimized/sat_solver.cpp.ll
+; z3/optimized/smt_context.cpp.ll
+; z3/optimized/spacer_context.cpp.ll
+; z3/optimized/theory_arith.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001c(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 4
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  %6 = ptrtoint ptr %0 to i64
+  %7 = sub i64 %6, %5
+  ret i64 %7
+}
+
 ; 2 occurrences:
 ; openjdk/optimized/psParallelCompact.ll
 ; rocksdb/optimized/xxhash.cc.ll
@@ -351,28 +428,14 @@ entry:
 ; php/optimized/cdf.ll
 ; z3/optimized/euf_proof.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000003c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
   %7 = sub i64 %6, %5
   ret i64 %7
-}
-
-; 2 occurrences:
-; eastl/optimized/BenchmarkSort.cpp.ll
-; oiio/optimized/deepdata.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %.idx = shl i64 %2, 3
-  %3 = getelementptr i8, ptr %1, i64 %.idx
-  %4 = ptrtoint ptr %3 to i64
-  %5 = ptrtoint ptr %0 to i64
-  %6 = sub i64 %5, %4
-  ret i64 %6
 }
 
 ; 1 occurrences:

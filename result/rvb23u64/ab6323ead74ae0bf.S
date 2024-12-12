@@ -45,12 +45,3 @@ func0000000000000011:                   # @func0000000000000011
 	sh2add	a0, a0, a1
 	sext.w	a0, a0
 	ret
-func000000000000004f:                   # @func000000000000004f
-	sext.w	a1, a1
-	li	a2, 24
-	sltiu	a1, a1, 4
-	czero.nez	a1, a2, a1
-	slli	a0, a0, 4
-	add	a0, a0, a1
-	addiw	a0, a0, 88
-	ret

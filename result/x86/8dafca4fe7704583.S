@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	testb	$1, %dl
 	cmovneq	%rsi, %rdi
 	shrq	%rdx

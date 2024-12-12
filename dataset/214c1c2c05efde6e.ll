@@ -135,11 +135,11 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967294
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw [256 x ptr], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [256 x ptr], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

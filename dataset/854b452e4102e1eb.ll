@@ -1,25 +1,17 @@
 
-; 10 occurrences:
-; linux/optimized/drm_modes.ll
-; linux/optimized/drm_vblank.ll
-; linux/optimized/intel_audio.ll
-; linux/optimized/intel_psr.ll
-; openjdk/optimized/codeHeapState.ll
-; openssl/optimized/libcrypto-lib-lh_stats.ll
-; openssl/optimized/libcrypto-shlib-lh_stats.ll
-; postgres/optimized/pg_basebackup.ll
-; postgres/optimized/pgbench.ll
-; wireshark/optimized/rtp_audio_stream.cpp.ll
+; 2 occurrences:
+; bdwgc/optimized/gc.c.ll
+; linux/optimized/md.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul nuw nsw i64 %1, 100
+  %2 = mul nuw i64 %1, 100
   %3 = udiv i64 %2, %0
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
 
-; 32 occurrences:
+; 30 occurrences:
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; cmake/optimized/fse_compress.c.ll
@@ -37,8 +29,6 @@ entry:
 ; openjdk/optimized/synchronizer.ll
 ; openjdk/optimized/whitebox.ll
 ; openjdk/optimized/zRelocationSetSelector.ll
-; openssl/optimized/libcrypto-lib-lh_stats.ll
-; openssl/optimized/libcrypto-shlib-lh_stats.ll
 ; postgres/optimized/pg_amcheck.ll
 ; postgres/optimized/pg_rewind.ll
 ; postgres/optimized/pg_verifybackup.ll
@@ -61,13 +51,18 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; bdwgc/optimized/gc.c.ll
-; linux/optimized/md.ll
+; 7 occurrences:
+; linux/optimized/drm_modes.ll
+; linux/optimized/drm_vblank.ll
+; linux/optimized/intel_psr.ll
+; openjdk/optimized/codeHeapState.ll
+; postgres/optimized/pg_basebackup.ll
+; postgres/optimized/pgbench.ll
+; wireshark/optimized/rtp_audio_stream.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul nuw i64 %1, 100
+  %2 = mul nuw nsw i64 %1, 200
   %3 = udiv i64 %2, %0
   %4 = trunc i64 %3 to i32
   ret i32 %4

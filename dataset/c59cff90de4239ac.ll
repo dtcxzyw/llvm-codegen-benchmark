@@ -11,7 +11,7 @@ define i16 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = add nuw nsw i32 %3, %1
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = trunc nsw i32 %5 to i16
   ret i16 %6
 }

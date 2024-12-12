@@ -1,52 +1,43 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
+	mov	w9, w1
 	mov	w8, #4                          // =0x4
-	dup	v4.2d, x8
-	cmeq	v0.2d, v2.2d, v0.2d
-	cmeq	v1.2d, v3.2d, v1.2d
-	bsl	v1.16b, v4.16b, v3.16b
-	bsl	v0.16b, v4.16b, v2.16b
+	cmp	x0, x9
+	csel	x0, x8, x9, eq
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	cmhi	v0.2d, v2.2d, v0.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	bic	v1.16b, v3.16b, v1.16b
-	bic	v0.16b, v2.16b, v0.16b
+	mov	w8, w1
+	cmp	x0, x8
+	csel	x0, xzr, x8, lo
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	cmhi	v0.2d, v2.2d, v0.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	bic	v1.16b, v3.16b, v1.16b
-	bic	v0.16b, v2.16b, v0.16b
+	mov	w8, w1
+	cmp	x0, x8
+	csel	x0, xzr, x8, lo
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	cmgt	v0.2d, v2.2d, v0.2d
-	cmgt	v1.2d, v3.2d, v1.2d
-	bic	v1.16b, v3.16b, v1.16b
-	bic	v0.16b, v2.16b, v0.16b
+	mov	w8, w1
+	cmp	x0, x8
+	csel	x0, xzr, x8, lo
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	cmeq	v0.2d, v2.2d, v0.2d
-	cmeq	v1.2d, v3.2d, v1.2d
-	bic	v1.16b, v3.16b, v1.16b
-	bic	v0.16b, v2.16b, v0.16b
+	mov	w8, w1
+	cmp	x0, x8
+	csel	x0, xzr, x8, lt
+	ret
+                                        // -- End function
+func0000000000000021:                   // @func0000000000000021
+// %bb.0:                               // %entry
+	mov	w8, w1
+	cmp	x0, x8
+	csel	x0, xzr, x8, eq
 	ret
                                         // -- End function

@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000541(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw i64 %3, 4294967295
@@ -32,7 +32,7 @@ entry:
 ; linux/optimized/sr_vendor.ll
 ; wireshark/optimized/packet-pn-ptcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f1(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000007e1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 10
@@ -47,12 +47,12 @@ entry:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000055a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000aaa(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = mul nsw i64 %3, -60000000
   %5 = add nsw i64 %4, %1
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = icmp sgt i64 %6, 99
   ret i1 %7
 }

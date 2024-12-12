@@ -13,7 +13,8 @@ entry:
   ret i32 %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_color.ll
 ; meshoptimizer/optimized/spatialorder.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; recastnavigation/optimized/DebugDraw.cpp.ll
@@ -23,7 +24,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 5
   %4 = and i32 %3, 153391689
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = and i32 %1, 613566756
   %7 = or disjoint i32 %5, %6
   ret i32 %7

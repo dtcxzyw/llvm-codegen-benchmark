@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; freetype/optimized/sdf.c.ll
 ; gromacs/optimized/libxdrf.cpp.ll
@@ -12,7 +12,6 @@
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; opencv/optimized/anisodiff.cpp.ll
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
 ; opencv/optimized/objectnessBING.cpp.ll
 ; openjdk/optimized/pngrtran.ll

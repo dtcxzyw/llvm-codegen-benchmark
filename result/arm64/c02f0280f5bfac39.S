@@ -14,7 +14,14 @@ func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	add	x8, x2, #7
 	and	x8, x8, #0xfffffffffffffff8
-	madd	x0, x8, x1, x0
+	madd	x0, x1, x8, x0
+	ret
+                                        // -- End function
+func0000000000000003:                   // @func0000000000000003
+// %bb.0:                               // %entry
+	add	x8, x2, #7
+	and	x8, x8, #0xfffffffffffffff8
+	madd	x0, x1, x8, x0
 	ret
                                         // -- End function
 func000000000000003c:                   // @func000000000000003c

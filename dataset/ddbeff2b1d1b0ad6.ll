@@ -14,10 +14,10 @@
 ; openusd/optimized/obu_util.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp ne ptr %1, null
   %6 = and i1 %4, %5
   ret i1 %6
@@ -62,7 +62,7 @@ entry:
 ; openusd/optimized/categoriesSchema.cpp.ll
 ; openusd/optimized/subset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000002c(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 1
   %4 = and i1 %3, %1
@@ -90,7 +90,7 @@ entry:
 ; cpython/optimized/zlibmodule.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000081(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 16
   %4 = and i1 %3, %0
@@ -102,10 +102,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGCall.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000181(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp eq ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6
@@ -114,7 +114,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000010c(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 7
   %4 = and i1 %3, %1
@@ -132,7 +132,7 @@ entry:
 ; cpython/optimized/zlibmodule.ll
 ; openusd/optimized/aom_integer.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000008c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 4294967296
   %4 = and i1 %3, %0
@@ -153,7 +153,7 @@ entry:
 ; cpython/optimized/posixmodule.ll
 ; linux/optimized/kernel_read_file.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000021(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = and i1 %3, %1
@@ -165,10 +165,10 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/idas_interface.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000014c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp ne ptr %1, null
   %6 = and i1 %4, %5
   ret i1 %6

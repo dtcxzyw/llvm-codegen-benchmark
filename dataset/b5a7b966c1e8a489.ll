@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; casadi/optimized/integrator.cpp.ll
 ; cvc5/optimized/term_tuple_enumerator.cpp.ll
 ; icu/optimized/decNumber.ll
@@ -13,7 +13,6 @@
 ; postgres/optimized/xlogreader.ll
 ; ruby/optimized/regexec.ll
 ; yyjson/optimized/yyjson.c.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll

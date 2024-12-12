@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/marshal.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0) #0 {
+define i1 @func00000000000000aa(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i8
   %2 = icmp sgt i8 %1, 0
@@ -12,7 +12,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/marshal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0) #0 {
+define i1 @func00000000000000a6(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i8
   %2 = icmp slt i8 %1, -4
@@ -22,17 +22,19 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/marshal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0) #0 {
+define i1 @func00000000000000b8(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 4
   ret i1 %1
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/rational.ll
 ; linux/optimized/battery.ll
+; lvgl/optimized/lv_calendar.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
@@ -45,7 +47,7 @@ entry:
 ; slurm/optimized/common_as.ll
 ; wireshark/optimized/packet-giop.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0) #0 {
+define i1 @func0000000000000026(i32 %0) #0 {
 entry:
   %.mask = and i32 %0, 32768
   %1 = icmp ne i32 %.mask, 0
@@ -65,7 +67,7 @@ entry:
 ; soc-simulator/optimized/verilated.ll
 ; wireshark/optimized/packet-idn.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0) #0 {
+define i1 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i16
   %2 = icmp sgt i16 %1, 0
@@ -83,11 +85,12 @@ entry:
   ret i1 %1
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/basic_text_iprimitive.ll
 ; fmt/optimized/xchar-test.cc.ll
-; php/optimized/metaphone.ll
+; lvgl/optimized/lv_calendar.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 224
   %2 = icmp eq i32 %1, 0
@@ -97,10 +100,20 @@ entry:
 ; 1 occurrences:
 ; php/optimized/metaphone.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000038(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i8
   %2 = icmp ugt i8 %1, 64
+  ret i1 %2
+}
+
+; 1 occurrences:
+; php/optimized/metaphone.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0) #0 {
+entry:
+  %1 = trunc i32 %0 to i8
+  %2 = icmp ult i8 %1, 91
   ret i1 %2
 }
 

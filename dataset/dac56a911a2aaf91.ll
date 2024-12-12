@@ -24,26 +24,24 @@
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i64 0, i64 %0
   ret i64 %5
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; abc/optimized/solver.c.ll
 ; libpng/optimized/pngrutil.c.ll
-; linux/optimized/clockevents.ll
-; linux/optimized/timekeeping.ll
 ; linux/optimized/vmstat.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp samesign ult i64 %1, %3
   %5 = select i1 %4, i64 2147483647, i64 %0
   ret i64 %5
 }
@@ -74,7 +72,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i64 -1, i64 %0
   ret i64 %5
 }
@@ -84,10 +82,10 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp samesign ugt i64 %1, %3
   %5 = select i1 %4, i64 3, i64 %0
   ret i64 %5
 }
@@ -100,7 +98,7 @@ entry:
 define i64 @func0000000000000009(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %.not = icmp ugt i64 %3, %1
+  %.not = icmp ult i64 %1, %3
   %4 = select i1 %.not, i64 %0, i64 1
   ret i64 %4
 }
@@ -111,7 +109,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = select i1 %4, i64 0, i64 %0
   ret i64 %5
 }
@@ -122,8 +120,20 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp slt i64 %3, %1
+  %4 = icmp sgt i64 %1, %3
   %5 = select i1 %4, i64 120, i64 %0
+  ret i64 %5
+}
+
+; 2 occurrences:
+; linux/optimized/clockevents.ll
+; linux/optimized/timekeeping.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = icmp ult i64 %1, %3
+  %5 = select i1 %4, i64 0, i64 %0
   ret i64 %5
 }
 
@@ -134,7 +144,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %4, i64 1, i64 %0
   ret i64 %5
 }

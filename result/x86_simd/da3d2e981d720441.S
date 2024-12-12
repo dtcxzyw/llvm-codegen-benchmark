@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
@@ -16,7 +16,7 @@ func0000000000000006:                   # @func0000000000000006
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpltud	%xmm1, %xmm0, %k0
@@ -29,7 +29,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
@@ -56,14 +56,14 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpnleud	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
@@ -97,41 +97,17 @@ func000000000000000b:                   # @func000000000000000b
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	vzeroupper
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000016:                   # @func0000000000000016
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpgtd	%xmm0, %xmm1, %xmm0
-	vzeroupper
-	retq
-func0000000000000081:                   # @func0000000000000081
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000014:                   # @func0000000000000014
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpltud	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-func0000000000000041:                   # @func0000000000000041
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
-func00000000000000a6:                   # @func00000000000000a6
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 func0000000000000026:                   # @func0000000000000026
@@ -140,108 +116,29 @@ func0000000000000026:                   # @func0000000000000026
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000101:                   # @func0000000000000101
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func000000000000008a:                   # @func000000000000008a
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpgtd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
-func0000000000000086:                   # @func0000000000000086
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpgtd	%xmm0, %xmm1, %xmm0
-	vzeroupper
-	retq
-func000000000000004a:                   # @func000000000000004a
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpgtd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000064:                   # @func0000000000000064
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpltud	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000081:                   # @func0000000000000081
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
-	vpcmpnleud	%xmm1, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func00000000000000c4:                   # @func00000000000000c4
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpltud	%xmm1, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-func00000000000000c8:                   # @func00000000000000c8
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpnleud	%xmm1, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000146:                   # @func0000000000000146
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
-	vzeroupper
-	retq
-func0000000000000061:                   # @func0000000000000061
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
-func00000000000000c1:                   # @func00000000000000c1
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
-func00000000000000cc:                   # @func00000000000000cc
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm0, %xmm0
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
-	vzeroupper
-	retq
-func000000000000002c:                   # @func000000000000002c
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm0, %xmm0
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
-	vzeroupper
-	retq
-func0000000000000038:                   # @func0000000000000038
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpnleud	%xmm1, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-func0000000000000091:                   # @func0000000000000091
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
-func00000000000000a7:                   # @func00000000000000a7
-	vpmovqd	%ymm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpcmpgtd	%xmm1, %xmm0, %xmm0
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	vzeroupper
 	retq
 func0000000000000046:                   # @func0000000000000046
@@ -250,17 +147,56 @@ func0000000000000046:                   # @func0000000000000046
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func00000000000000ab:                   # @func00000000000000ab
+func0000000000000021:                   # @func0000000000000021
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
-	vpcmpgtd	%xmm0, %xmm1, %xmm0
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func00000000000000ba:                   # @func00000000000000ba
+func000000000000010a:                   # @func000000000000010a
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000106:                   # @func0000000000000106
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpgtd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func000000000000008a:                   # @func000000000000008a
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000104:                   # @func0000000000000104
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpltud	%xmm1, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000048:                   # @func0000000000000048
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpnleud	%xmm1, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000184:                   # @func0000000000000184
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpltud	%xmm1, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000188:                   # @func0000000000000188
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpnleud	%xmm1, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 func0000000000000066:                   # @func0000000000000066
@@ -269,7 +205,85 @@ func0000000000000066:                   # @func0000000000000066
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func000000000000002a:                   # @func000000000000002a
+func00000000000000c1:                   # @func00000000000000c1
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000181:                   # @func0000000000000181
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000018:                   # @func0000000000000018
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpnleud	%xmm1, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000018c:                   # @func000000000000018c
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	vzeroupper
+	retq
+func000000000000004c:                   # @func000000000000004c
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	vzeroupper
+	retq
+func0000000000000068:                   # @func0000000000000068
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpnleud	%xmm1, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000121:                   # @func0000000000000121
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000147:                   # @func0000000000000147
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	vzeroupper
+	retq
+func0000000000000086:                   # @func0000000000000086
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpgtd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func000000000000014b:                   # @func000000000000014b
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpgtd	%xmm0, %xmm1, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	vzeroupper
+	retq
+func000000000000016a:                   # @func000000000000016a
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func00000000000000c6:                   # @func00000000000000c6
+	vpmovqd	%ymm1, %xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpcmpgtd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func000000000000004a:                   # @func000000000000004a
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpgtd	%xmm1, %xmm0, %xmm0

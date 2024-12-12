@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/approximately_equals.ll
 ; folly/optimized/SignalHandler.cpp.ll
 ; folly/optimized/Symbolizer.cpp.ll
 ; Function Attrs: nounwind
@@ -22,6 +23,17 @@ entry:
   ret i64 %4
 }
 
+; 1 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 1, %1
+  %3 = lshr i64 %2, 1
+  %4 = add nsw i64 %3, %0
+  ret i64 %4
+}
+
 ; 3 occurrences:
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/layout_test.cc.ll
@@ -31,7 +43,7 @@ define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 8, %1
   %3 = lshr exact i64 %2, 3
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 23 occurrences:
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; freetype/optimized/autofit.c.ll
 ; linux/optimized/80003es2lan.ll
@@ -14,8 +14,10 @@
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; openusd/optimized/refinement.cpp.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; wireshark/optimized/packet-nordic_ble.c.ll
 ; wireshark/optimized/packet-quic.c.ll

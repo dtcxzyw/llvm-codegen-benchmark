@@ -59,7 +59,7 @@ func0000000000000005:                   # @func0000000000000005
 	vpaddd	.LCPI5_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsllvd	%xmm1, %xmm2, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI6_0:
@@ -71,6 +71,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddd	.LCPI6_0(%rip){1to4}, %xmm1, %xmm1
 	vpbroadcastd	.LCPI6_1(%rip), %xmm2   # xmm2 = [4294967294,4294967294,4294967294,4294967294]
 	vpsllvd	%xmm1, %xmm2, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

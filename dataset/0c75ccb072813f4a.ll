@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; linux/optimized/mlme.ll
 ; minetest/optimized/mapnode.cpp.ll

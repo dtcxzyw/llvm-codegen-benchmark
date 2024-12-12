@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 53 occurrences:
 ; abc/optimized/luckySimple.c.ll
 ; clamav/optimized/autoit.c.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
@@ -12,6 +12,7 @@
 ; linux/optimized/neighbour.ll
 ; linux/optimized/sch_api.ll
 ; llvm/optimized/Hash.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll

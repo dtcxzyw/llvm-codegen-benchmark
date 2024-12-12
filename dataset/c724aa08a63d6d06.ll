@@ -16,19 +16,18 @@ entry:
   ret i1 %7
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; arrow/optimized/UriNormalize.c.ll
 ; icu/optimized/ucnvhz.ll
 ; opencv/optimized/datablock.cpp.ll
 ; openjdk/optimized/c1_Compilation.ll
 ; php/optimized/rfc1867.ll
-; proj/optimized/wkt_parser.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; yosys/optimized/formalff.ll
 ; zxing/optimized/DMDataBlock.cpp.ll
 ; zxing/optimized/QRDataBlock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -42,7 +41,7 @@ entry:
 ; arrow/optimized/UriRecompose.c.ll
 ; openjdk/optimized/c1_CodeStubs_x86.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -64,7 +63,7 @@ entry:
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000068(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -80,7 +79,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -95,7 +94,7 @@ entry:
 ; opencv/optimized/datablock.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -129,7 +128,7 @@ entry:
 ; yosys/optimized/calc.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -144,7 +143,7 @@ entry:
 ; yosys/optimized/aigerparse.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000066(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -195,7 +194,7 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000048(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

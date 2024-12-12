@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
@@ -20,7 +20,6 @@
 ; minetest/optimized/mg_schematic.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; Function Attrs: nounwind

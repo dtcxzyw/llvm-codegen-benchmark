@@ -115,7 +115,7 @@ entry:
 ; wireshark/optimized/wireshark_main_window_slots.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
   %4 = icmp eq i32 %1, 1

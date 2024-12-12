@@ -23,7 +23,7 @@
 ; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
 ; openjdk/optimized/mlib_ImageAffine_BL_D64.ll
 ; openjdk/optimized/mlib_ImageAffine_BL_S32.ll
-; typst-rs/optimized/3z60jkym58xbhjyi.ll
+; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-rmt-lct.c.ll
 ; z3/optimized/sat_ddfw.cpp.ll
 ; Function Attrs: nounwind
@@ -31,7 +31,7 @@ define double @func0000000000000001(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
   %3 = fmul double %2, 0x3EF0000000000000
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

@@ -1,0 +1,85 @@
+func000000000000036c:                   // @func000000000000036c
+// %bb.0:                               // %entry
+	fmov	d2, #1.00000000
+	fabs	d1, d1
+	fcmp	d0, d2
+	cset	w8, le
+	fcmp	d1, d2
+	csinc	w8, w8, wzr, mi
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
+	ret
+                                        // -- End function
+func0000000000000264:                   // @func0000000000000264
+// %bb.0:                               // %entry
+	mov	x8, #9218868437227405312        // =0x7ff0000000000000
+	mov	x10, #9218868437227405311       // =0x7fefffffffffffff
+	fmov	d2, x8
+	fmov	x8, d1
+	fcmp	d0, d2
+	and	x8, x8, #0x7fffffffffffffff
+	cset	w9, eq
+	csinc	w9, w9, wzr, vc
+	cmp	x8, x10
+	csinc	w8, w9, wzr, le
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
+	ret
+                                        // -- End function
+.LCPI2_0:
+	.xword	0x401921fb54442d18              // double 6.2831853071795862
+.LCPI2_1:
+	.xword	0x3eb0c6f7a0b5ed8d              // double 9.9999999999999995E-7
+func0000000000000090:                   // @func0000000000000090
+// %bb.0:                               // %entry
+	adrp	x8, .LCPI2_0
+	fabs	d1, d1
+	ldr	d2, [x8, :lo12:.LCPI2_0]
+	adrp	x8, .LCPI2_1
+	fcmp	d0, d2
+	ldr	d0, [x8, :lo12:.LCPI2_1]
+	cset	w8, gt
+	fcmp	d1, d0
+	csinc	w8, w8, wzr, pl
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
+	ret
+                                        // -- End function
+func00000000000001e0:                   // @func00000000000001e0
+// %bb.0:                               // %entry
+	mov	x8, #9218868437227405312        // =0x7ff0000000000000
+	fmov	x9, d1
+	fmov	d2, x8
+	and	x9, x9, #0x7fffffffffffffff
+	fcmp	d0, d2
+	ccmp	x9, x8, #0, ne
+	cset	w8, ne
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
+	ret
+                                        // -- End function
+func0000000000000220:                   // @func0000000000000220
+// %bb.0:                               // %entry
+	fmov	x8, d1
+	fcmp	d0, #0.0
+	mov	x9, #9218868437227405312        // =0x7ff0000000000000
+	and	x8, x8, #0x7fffffffffffffff
+	ccmp	x8, x9, #4, ne
+	cset	w8, eq
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
+	ret
+                                        // -- End function
+func0000000000000374:                   // @func0000000000000374
+// %bb.0:                               // %entry
+	mov	x8, #4372995238176751616        // =0x3cb0000000000000
+	fabs	d1, d1
+	fmov	d2, x8
+	fcmp	d0, d2
+	cset	w8, pl
+	fcmp	d1, d2
+	csinc	w8, w8, wzr, mi
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
+	ret
+                                        // -- End function

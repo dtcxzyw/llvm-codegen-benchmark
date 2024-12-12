@@ -6,6 +6,12 @@ func0000000000000006:                   # @func0000000000000006
 	orl	%edx, %eax
 	shrl	$16, %eax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	movl	%edx, %eax
+	andl	$3840, %eax                     # imm = 0xF00
+	orl	%esi, %eax
+	shrl	$6, %eax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%esi, %eax
 	andl	$1024, %edx                     # imm = 0x400

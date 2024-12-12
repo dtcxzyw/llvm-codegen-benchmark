@@ -158,7 +158,7 @@ entry:
   ret i1 %3
 }
 
-; 82 occurrences:
+; 84 occurrences:
 ; abc/optimized/ioWriteBlif.c.ll
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -241,6 +241,8 @@ entry:
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; postgres/optimized/float.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i1 %0, float %1) #0 {
 entry:

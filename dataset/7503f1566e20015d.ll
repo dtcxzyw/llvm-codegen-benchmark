@@ -17,17 +17,4 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; openssl/optimized/libcrypto-lib-x_int64.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i32 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = icmp slt i32 %1, 0
-  %4 = select i1 %2, i1 %3, i1 false
-  %5 = select i1 %4, i32 %0, i32 %1
-  %6 = zext i32 %5 to i64
-  ret i64 %6
-}
-
 attributes #0 = { nounwind }

@@ -14,7 +14,7 @@ entry:
   ret i32 %6
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/rebuildpe.c.ll
 ; clamav/optimized/upx.c.ll
@@ -43,22 +43,11 @@ entry:
 ; wireshark/optimized/sharkd_session.c.ll
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000c0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = zext i1 %3 to i32
-  %5 = udiv i32 %0, %1
-  %6 = add i32 %5, %4
-  ret i32 %6
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_net_pcnet.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 3
   %4 = zext i1 %3 to i32
   %5 = udiv i32 %0, %1
   %6 = add i32 %5, %4

@@ -1,10 +1,21 @@
 
+; 1 occurrences:
+; vcpkg/optimized/commands.ci.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 0, %1
+  %3 = urem i32 %2, %1
+  %4 = icmp samesign ugt i32 %3, %0
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; openspiel/optimized/colored_trails_board_generator.cc.ll
 ; openspiel/optimized/garnet.cc.ll
 ; vcpkg/optimized/commands.ci.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = urem i32 %2, %1
@@ -19,11 +30,11 @@ entry:
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 65536, %1
   %3 = urem i32 %2, %1
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ugt i32 %3, %0
   ret i1 %4
 }
 

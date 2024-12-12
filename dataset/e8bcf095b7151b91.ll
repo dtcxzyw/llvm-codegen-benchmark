@@ -10,7 +10,17 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 19 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; graphviz/optimized/triang.c.ll
 ; graphviz/optimized/visibility.c.ll
@@ -28,7 +38,16 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 14 occurrences:
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; openjdk/optimized/compileBroker.ll
 ; proj/optimized/tmerc.cpp.ll
 ; quantlib/optimized/cashflows.ll
@@ -52,10 +71,11 @@ entry:
   ret i32 %3
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/amapLib.c.ll
 ; abc/optimized/mioRead.c.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/get_distance_measure.ll
 ; graphviz/optimized/legal.c.ll
 ; graphviz/optimized/maze.c.ll
 ; hermes/optimized/Array.cpp.ll

@@ -1,7 +1,6 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; meshlab/optimized/edit_paint.cpp.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dlag2.c.ll
 ; openblas/optimized/dlaic1.c.ll
 ; openblas/optimized/dlanv2.c.ll

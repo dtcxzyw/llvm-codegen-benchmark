@@ -55,7 +55,9 @@ entry:
   ret double %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
@@ -63,7 +65,7 @@ entry:
 define double @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 52
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = bitcast i64 %3 to double
   ret double %4
 }
@@ -74,7 +76,7 @@ entry:
 define double @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 63
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = bitcast i64 %3 to double
   ret double %4
 }

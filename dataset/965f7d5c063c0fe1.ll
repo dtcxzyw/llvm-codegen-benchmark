@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/lossless_enc.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000054(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = icmp sgt i32 %2, 3

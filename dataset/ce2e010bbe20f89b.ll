@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 56 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
@@ -55,8 +55,6 @@
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; llvm/optimized/X86Subtarget.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; wasmtime-rs/optimized/1qo0tg1ju819b23h.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0) #0 {

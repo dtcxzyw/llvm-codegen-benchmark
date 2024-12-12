@@ -32,7 +32,7 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/cuddRef.c.ll
 ; abc/optimized/giaResub.c.ll
 ; opencv/optimized/torch_importer.cpp.ll
@@ -40,7 +40,6 @@ entry:
 ; openmpi/optimized/coll_base_allreduce.ll
 ; openmpi/optimized/coll_base_reduce_scatter.ll
 ; openmpi/optimized/coll_base_reduce_scatter_block.ll
-; openmpi/optimized/heap_sort.ll
 ; openmpi/optimized/nbc_iallreduce.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {

@@ -35,7 +35,7 @@ entry:
   ret i32 %4
 }
 
-; 37 occurrences:
+; 34 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/aigCuts.c.ll
@@ -54,10 +54,7 @@ entry:
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/hopTruth.c.ll
-; abc/optimized/ifTune.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/kitGraph.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; abc/optimized/luckyRead.c.ll
 ; abc/optimized/sbdSat.c.ll

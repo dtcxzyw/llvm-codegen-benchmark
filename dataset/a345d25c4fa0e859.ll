@@ -88,7 +88,7 @@ entry:
   ret i64 %3
 }
 
-; 67 occurrences:
+; 64 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/LWOBLoader.cpp.ll
 ; clamav/optimized/matcher-ac.c.ll
@@ -108,7 +108,6 @@ entry:
 ; icu/optimized/package.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/cdrom.ll
-; linux/optimized/clnt4xdr.ll
 ; linux/optimized/connector.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/flow_dissector.ll
@@ -127,7 +126,6 @@ entry:
 ; opencv/optimized/floodfill.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/hb-ot-font.ll
-; openjdk/optimized/instanceKlass.ll
 ; openjdk/optimized/jni.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openjdk/optimized/jvmciRuntime.ll
@@ -143,7 +141,6 @@ entry:
 ; postgres/optimized/bufpage.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_nvme_ns.c.ll
-; qemu/optimized/i2c.c.ll
 ; quickjs/optimized/quickjs.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
@@ -165,7 +162,7 @@ entry:
   ret i64 %3
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clamav/optimized/pe.c.ll
@@ -180,7 +177,6 @@ entry:
 ; llvm/optimized/InstrEmitter.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScheduleDAGFast.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
@@ -227,8 +223,10 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; clamav/optimized/cpio.c.ll
+; llvm/optimized/TypePrinter.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; postgres/optimized/nbtdedup.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i16 %0) #0 {

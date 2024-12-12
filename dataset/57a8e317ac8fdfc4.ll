@@ -14,10 +14,10 @@
 ; raylib/optimized/raudio.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i16 %0, i32 %1) #0 {
 entry:
   %2 = sext i16 %0 to i32
-  %3 = icmp eq i32 %2, %1
+  %3 = icmp eq i32 %1, %2
   %4 = icmp eq i16 %0, 0
   %5 = or i1 %4, %3
   ret i1 %5
@@ -26,10 +26,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ec(i16 %0, i32 %1) #0 {
+define i1 @func00000000000001cc(i16 %0, i32 %1) #0 {
 entry:
   %2 = sext i16 %0 to i32
-  %3 = icmp sge i32 %2, %1
+  %3 = icmp sle i32 %1, %2
   %4 = icmp slt i16 %0, -1
   %5 = or i1 %4, %3
   ret i1 %5
@@ -38,10 +38,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i16 %0, i32 %1) #0 {
 entry:
   %2 = sext i16 %0 to i32
-  %3 = icmp sgt i32 %2, %1
+  %3 = icmp slt i32 %1, %2
   %4 = icmp slt i16 %0, -2
   %5 = or i1 %4, %3
   ret i1 %5

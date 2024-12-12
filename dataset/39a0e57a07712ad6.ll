@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 55 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/extraUtilCube.c.ll
 ; abc/optimized/extraUtilDsd.c.ll
@@ -9,6 +9,7 @@
 ; abc/optimized/mpmDsd.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/utilNam.c.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
@@ -90,6 +91,33 @@ entry:
   ret i32 %4
 }
 
+; 5 occurrences:
+; boost/optimized/src.ll
+; libjpeg-turbo/optimized/jfdctfst.c.ll
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %0, %1
+  %3 = mul i32 %2, 1217359
+  %4 = lshr i32 %3, 19
+  ret i32 %4
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %0, %1
+  %3 = mul nuw i32 %2, 32897
+  %4 = lshr i32 %3, 23
+  ret i32 %4
+}
+
 ; 8 occurrences:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
@@ -116,20 +144,6 @@ entry:
   %2 = add nuw nsw i32 %0, %1
   %3 = mul i32 %2, 16843009
   %4 = lshr i32 %3, 24
-  ret i32 %4
-}
-
-; 4 occurrences:
-; libjpeg-turbo/optimized/jfdctfst.c.ll
-; luajit/optimized/lj_strfmt_num.ll
-; luajit/optimized/lj_strfmt_num_dyn.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %0, %1
-  %3 = mul i32 %2, 8389
-  %4 = lshr i32 %3, 23
   ret i32 %4
 }
 

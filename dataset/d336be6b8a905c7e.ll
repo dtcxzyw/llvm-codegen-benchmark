@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/wait_for.ll
 ; luau/optimized/TypePack.test.cpp.ll
 ; openjdk/optimized/jfrResolution.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

@@ -15,14 +15,13 @@ entry:
   ret i16 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/extents.ll
 ; linux/optimized/namei.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-ppc32.cc.ll
 ; mold/optimized/arch-ppc64v1.cc.ll
 ; mold/optimized/arch-ppc64v2.cc.ll
-; nuttx/optimized/lib_rand48.c.ll
 ; postgres/optimized/ginpostinglist.ll
 ; qemu/optimized/audio_mixeng.c.ll
 ; Function Attrs: nounwind

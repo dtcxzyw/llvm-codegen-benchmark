@@ -10,7 +10,7 @@ func0000000000000002:                   # @func0000000000000002
 	vror.vi	v8, v10, 2
 	addi	a0, a0, -984
 	vmsleu.vx	v10, v8, a0
-	vmor.mm	v0, v10, v0
+	vmor.mm	v0, v0, v10
 	ret
 func000000000000000c:                   # @func000000000000000c
 	lui	a0, 419430
@@ -43,5 +43,5 @@ func0000000000000014:                   # @func0000000000000014
 	vnmsub.vx	v10, a0, v8
 	li	a0, 96
 	vmsgt.vx	v8, v10, a0
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret

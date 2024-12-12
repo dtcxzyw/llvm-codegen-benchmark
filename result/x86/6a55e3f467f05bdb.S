@@ -4,7 +4,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmovneq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	xorl	%eax, %eax
 	cmpq	%rdi, %rdx
 	cmovbeq	%rsi, %rax

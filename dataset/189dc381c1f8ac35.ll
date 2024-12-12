@@ -1,9 +1,8 @@
 
-; 87 occurrences:
+; 86 occurrences:
 ; abc/optimized/System.cpp.ll
 ; abc/optimized/System2.cpp.ll
 ; abc/optimized/absOldCex.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/msatSolverCore.c.ll
 ; ceres/optimized/gradient_checker.cc.ll

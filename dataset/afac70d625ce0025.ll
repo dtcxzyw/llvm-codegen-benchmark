@@ -1,5 +1,6 @@
 
-; 33 occurrences:
+; 34 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
 ; darktable/optimized/gamepad.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
@@ -38,7 +39,7 @@ define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %2, 1.000000e-15
   %4 = fdiv double %1, %3
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

@@ -1,11 +1,9 @@
 
-; 15 occurrences:
-; darktable/optimized/introspection_flip.c.ll
+; 13 occurrences:
 ; git/optimized/unpack-trees.ll
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/CallGraphUpdater.cpp.ll
 ; llvm/optimized/ExtractGV.cpp.ll
-; llvm/optimized/MCWin64EH.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
@@ -30,9 +28,9 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %1, 1048576
+  %3 = icmp samesign ult i32 %1, 1048576
   %4 = select i1 %3, i32 %2, i32 %0
   %5 = and i32 %4, 7
   ret i32 %5

@@ -1,5 +1,5 @@
 
-; 238 occurrences:
+; 239 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/abcSymm.c.ll
@@ -238,6 +238,7 @@
 ; wireshark/optimized/packet-ieee1905.c.ll
 ; yosys/optimized/ezsat.ll
 ; z3/optimized/smt_clause.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
@@ -332,7 +333,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1016
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -503,23 +504,24 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3968
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; cvc5/optimized/cnf_stream.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/ubidiln.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; openjdk/optimized/dither.ll
 ; openjdk/optimized/mlib_ImageCopy_Bit.ll
+; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -531,7 +533,7 @@ entry:
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -550,7 +552,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

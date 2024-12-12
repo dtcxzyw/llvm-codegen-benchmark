@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; miniaudio/optimized/unity.c.ll
@@ -17,6 +17,8 @@
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:

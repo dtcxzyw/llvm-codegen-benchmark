@@ -72,6 +72,30 @@ entry:
   ret i64 %4
 }
 
+; 1 occurrences:
+; gromacs/optimized/pairlist.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003c(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 34
+  %3 = shl i64 %0, 32
+  %4 = add i64 %2, %3
+  ret i64 %4
+}
+
+; 3 occurrences:
+; openusd/optimized/testHioImage.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 10
+  %3 = shl i64 %0, 2
+  %4 = add i64 %2, %3
+  ret i64 %4
+}
+
 ; 3 occurrences:
 ; freetype/optimized/sdf.c.ll
 ; openmpi/optimized/ompi_datatype_args.ll

@@ -12,3 +12,9 @@ func000000000000003f:                   # @func000000000000003f
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm0
 	retq
+func000000000000001b:                   # @func000000000000001b
+	vpsllq	$2, %ymm0, %ymm0
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq

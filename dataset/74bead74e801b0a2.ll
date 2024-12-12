@@ -24,7 +24,6 @@
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -104,6 +103,7 @@
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
+; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i1 %0, i64 %1) #0 {
 entry:

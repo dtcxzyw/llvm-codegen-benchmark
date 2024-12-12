@@ -10,10 +10,6 @@ func0000000000000007:                   # @func0000000000000007
 	leal	127(%rdi), %eax
 	andl	$8184, %eax                     # imm = 0x1FF8
 	retq
-func0000000000000005:                   # @func0000000000000005
-	incl	%edi
-	movzbl	%dil, %eax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	leal	7(%rdi), %eax
 	andl	$65528, %eax                    # imm = 0xFFF8

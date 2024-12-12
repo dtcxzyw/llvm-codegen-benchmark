@@ -9,7 +9,7 @@ func0000000000000018:                   # @func0000000000000018
 	add	a1, a1, a2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vmul.vx	v8, v8, a1
 	li	a0, 56
 	vsrl.vx	v8, v8, a0
@@ -21,7 +21,7 @@ func0000000000000000:                   # @func0000000000000000
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, -8
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vmul.vx	v8, v8, a0
 	li	a0, 56
 	vsrl.vx	v8, v8, a0
@@ -32,7 +32,7 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, 127
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	li	a0, 103
 	vmul.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 10

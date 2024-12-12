@@ -24,22 +24,18 @@ entry:
   ret i64 %5
 }
 
-; 36 occurrences:
+; 29 occurrences:
 ; abc/optimized/abcSop.c.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; flac/optimized/stream_encoder.c.ll
-; gromacs/optimized/lmmin.cpp.ll
 ; icu/optimized/dayperiodrules.ll
 ; icu/optimized/name2uni.ll
 ; icu/optimized/nfsubs.ll
 ; icu/optimized/rbnf.ll
 ; icu/optimized/smpdtfmt.ll
-; icu/optimized/unisetspan.ll
-; jemalloc/optimized/fxp.ll
-; jemalloc/optimized/fxp.pic.ll
-; jemalloc/optimized/fxp.sym.ll
 ; linux/optimized/ip_options.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/harris_lapace_detector.cpp.ll
@@ -55,11 +51,8 @@ entry:
 ; postgres/optimized/scan.ll
 ; postgres/optimized/selfuncs.ll
 ; qemu/optimized/target_riscv_monitor.c.ll
-; redis/optimized/fxp.ll
-; redis/optimized/fxp.sym.ll
 ; ruby/optimized/strftime.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
-; wireshark/optimized/packet-babel.c.ll
 ; wireshark/optimized/packet-json_3gpp.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
@@ -70,16 +63,18 @@ entry:
   ret i64 %5
 }
 
-; 52 occurrences:
+; 54 occurrences:
 ; assimp/optimized/Subdivision.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bdwgc/optimized/cordprnt.c.ll
+; boost/optimized/collator.ll
 ; c3c/optimized/diagnostics.c.ll
 ; clamav/optimized/dll.cpp.ll
 ; cmake/optimized/zdict.c.ll
 ; flac/optimized/metadata_iterators.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/ws.ll
+; gromacs/optimized/gmx_current.cpp.ll
 ; gromacs/optimized/gmx_densorder.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5Shyper.c.ll
@@ -132,7 +127,7 @@ entry:
   ret i64 %5
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; bdwgc/optimized/cordprnt.c.ll
 ; clamav/optimized/archive.cpp.ll
 ; gromacs/optimized/selection.cpp.ll
@@ -140,9 +135,7 @@ entry:
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
-; openblas/optimized/dtfttp.c.ll
 ; openblas/optimized/dtgevc.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/deriv.cpp.ll
 ; opencv/optimized/phasecorr.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
@@ -156,16 +149,24 @@ entry:
   ret i64 %5
 }
 
-; 23 occurrences:
+; 31 occurrences:
+; gromacs/optimized/lmmin.cpp.ll
 ; icu/optimized/nfrs.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; jemalloc/optimized/fxp.ll
+; jemalloc/optimized/fxp.pic.ll
+; jemalloc/optimized/fxp.sym.ll
 ; libquic/optimized/x509name.c.ll
+; lightgbm/optimized/boosting.cpp.ll
+; lightgbm/optimized/gbdt.cpp.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; nuklear/optimized/unity.c.ll
 ; proj/optimized/4D_api.cpp.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; raylib/optimized/rtext.c.ll
 ; rayon-rs/optimized/1j5m2t9gtbur4l2z.ll
+; redis/optimized/fxp.ll
+; redis/optimized/fxp.sym.ll
 ; stb/optimized/stb_truetype.c.ll
 ; wireshark/optimized/packet-osi.c.ll
 ; yosys/optimized/eval.ll
@@ -189,9 +190,11 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; postgres/optimized/list.ll
 ; wireshark/optimized/reedsolomon.c.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:

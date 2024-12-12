@@ -28,7 +28,7 @@ entry:
   ret i64 %6
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -39,7 +39,6 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
-; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/BitstreamReader.cpp.ll
 ; openjdk/optimized/g1CardSet.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -131,7 +130,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext nneg i32 %1 to i64
   %5 = shl nuw i64 %4, %3
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 

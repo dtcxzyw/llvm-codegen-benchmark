@@ -10,7 +10,7 @@ entry:
   %3 = fmul double %2, %2
   %4 = fsub double %1, %3
   %5 = fneg double %4
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

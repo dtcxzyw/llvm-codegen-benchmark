@@ -50,11 +50,6 @@ func0000000000000030:                   # @func0000000000000030
 	imull	$400, %esi, %eax                # imm = 0x190
 	addl	%edi, %eax
 	retq
-func0000000000000037:                   # @func0000000000000037
-	addl	%edx, %esi
-	imull	$85, %esi, %eax
-	addl	%edi, %eax
-	retq
 func000000000000003e:                   # @func000000000000003e
 	addl	%edx, %esi
 	leal	(%rsi,%rsi,2), %eax

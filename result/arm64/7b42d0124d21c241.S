@@ -1,47 +1,35 @@
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v5.4s, #2
-	cmeq	v4.4s, v4.4s, #0
-	cmeq	v3.4s, v3.4s, #0
-	bic	v6.16b, v5.16b, v3.16b
-	bic	v5.16b, v5.16b, v4.16b
-	sub	v3.4s, v6.4s, v3.4s
-	sub	v4.4s, v5.4s, v4.4s
-	cmeq	v2.4s, v4.4s, v2.4s
-	cmeq	v1.4s, v3.4s, v1.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	orr	v0.8b, v0.8b, v1.8b
+	cmp	w2, #0
+	mov	w8, #1                          // =0x1
+	cinc	w8, w8, ne
+	cmp	w1, w8
+	cset	w8, eq
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	movi	v5.4s, #125
-	movi	v6.4s, #111
-	cmeq	v4.4s, v4.4s, #0
-	cmeq	v3.4s, v3.4s, #0
-	bsl	v3.16b, v6.16b, v5.16b
-	bsl	v4.16b, v6.16b, v5.16b
-	cmhi	v2.4s, v2.4s, v4.4s
-	cmhi	v1.4s, v1.4s, v3.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	orr	v0.8b, v0.8b, v1.8b
+	cmp	w2, #0
+	mov	w8, #125                        // =0x7d
+	mov	w9, #111                        // =0x6f
+	csel	w8, w9, w8, eq
+	cmp	w1, w8
+	cset	w8, hi
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000019:                   // @func0000000000000019
+func0000000000000039:                   // @func0000000000000039
 // %bb.0:                               // %entry
-	movi	v5.4s, #200
-	movi	v6.4s, #2
-	movi	v7.4s, #10
-	cmeq	v4.4s, v4.4s, v5.4s
-	cmeq	v3.4s, v3.4s, v5.4s
-	bsl	v3.16b, v7.16b, v6.16b
-	bsl	v4.16b, v7.16b, v6.16b
-	cmhs	v2.4s, v2.4s, v4.4s
-	cmhs	v1.4s, v1.4s, v3.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	orr	v0.8b, v0.8b, v1.8b
+	cmp	w2, #200
+	mov	w8, #2                          // =0x2
+	mov	w9, #10                         // =0xa
+	csel	w8, w9, w8, eq
+	cmp	w1, w8
+	cset	w8, hs
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

@@ -1,5 +1,5 @@
 
-; 222 occurrences:
+; 225 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/int128_stream_test.cc.ll
 ; arrow/optimized/reader.cc.ll
@@ -9,6 +9,12 @@
 ; assimp/optimized/StepExporter.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
@@ -145,7 +151,6 @@
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; quantlib/optimized/abcdvol.ll
-; quantlib/optimized/actualactual.ll
 ; quantlib/optimized/averagebmacoupon.ll
 ; quantlib/optimized/brownianbridge.ll
 ; quantlib/optimized/bspline.ll
@@ -161,7 +166,6 @@
 ; quantlib/optimized/expcorrelations.ll
 ; quantlib/optimized/fdsimpleextoustorageengine.ll
 ; quantlib/optimized/flatvol.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/fwdperiodadapter.ll
 ; quantlib/optimized/glued1dmesher.ll
 ; quantlib/optimized/gsr.ll
@@ -203,7 +207,6 @@
 ; wasmedge/optimized/compiler.cpp.ll
 ; xgboost/optimized/auc.cc.ll
 ; xgboost/optimized/hist_util.cc.ll
-; xgboost/optimized/indexed_recordio_split.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; xgboost/optimized/json.cc.ll
 ; xgboost/optimized/quantile.cc.ll
@@ -223,13 +226,13 @@
 ; z3/optimized/theory_str.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 2
   %6 = add nsw i64 %5, -1
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
@@ -243,23 +246,26 @@ entry:
 ; ruby/optimized/ripper.ll
 ; yosys/optimized/verilog_parser.tab.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 1
   %6 = add nsw i64 %5, 1
-  %7 = icmp slt i64 %6, %0
+  %7 = icmp sgt i64 %0, %6
   ret i1 %7
 }
 
-; 189 occurrences:
+; 190 occurrences:
 ; arrow/optimized/transform.cc.ll
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; assimp/optimized/ObjFileImporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/close_handles.ll
+; boost/optimized/ext.ll
+; boost/optimized/process.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/integrator.cpp.ll
@@ -382,7 +388,6 @@ entry:
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; opencc/optimized/DictEntry.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
@@ -400,7 +405,7 @@ entry:
 ; pbrt-v4/optimized/image.cpp.ll
 ; pbrt-v4/optimized/mesh.cpp.ll
 ; pbrt-v4/optimized/samplers.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
+; quantlib/optimized/actualactual.ll
 ; quantlib/optimized/analyticptdhestonengine.ll
 ; quantlib/optimized/blackcallablebondengine.ll
 ; quantlib/optimized/blackkarasinski.ll
@@ -411,7 +416,6 @@ entry:
 ; quantlib/optimized/fdklugeextouspreadengine.ll
 ; quantlib/optimized/fdsimpleklugeextouvppengine.ll
 ; quantlib/optimized/fixedratecoupon.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/generalizedhullwhite.ll
 ; quantlib/optimized/haganirregularswaptionengine.ll
@@ -444,17 +448,17 @@ entry:
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
   %6 = add nsw i64 %5, -1
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 
-; 80 occurrences:
+; 81 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
@@ -467,6 +471,7 @@ entry:
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
 ; cmake/optimized/cmCTestMemCheckHandler.cxx.ll
 ; cmake/optimized/cmCursesOptionsWidget.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
@@ -536,13 +541,13 @@ entry:
 ; quantlib/optimized/yoyinflationcoupon.ll
 ; spike/optimized/tsi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 2
   %6 = add nsw i64 %5, 1
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp ugt i64 %0, %6
   ret i1 %7
 }
 
@@ -551,13 +556,13 @@ entry:
 ; lightgbm/optimized/bin.cpp.ll
 ; luau/optimized/Parser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000ac(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 2
   %6 = add nsw i64 %5, -1
-  %7 = icmp ne i64 %6, %0
+  %7 = icmp ne i64 %0, %6
   ret i1 %7
 }
 
@@ -571,39 +576,39 @@ entry:
 ; gromacs/optimized/convert_tpr.cpp.ll
 ; gromacs/optimized/exclusionblocks.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 2
   %6 = add nsw i64 %5, -1
-  %7 = icmp sgt i64 %6, %0
+  %7 = icmp slt i64 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; proj/optimized/concatenatedoperation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a9(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 4
   %6 = add nsw i64 %5, -1
-  %7 = icmp ule i64 %6, %0
+  %7 = icmp uge i64 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr i64 %4, 2
   %6 = add nsw i64 %5, -1
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 

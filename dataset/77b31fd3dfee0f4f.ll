@@ -1,15 +1,14 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_net_e1000e.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
 ; qemu/optimized/hw_pci_pci_bridge.c.ll
-; qemu/optimized/hw_pci_pcie_sriov.c.ll
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci-pci.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000488(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp ult i64 %3, 4
@@ -153,10 +152,10 @@ entry:
 ; openjdk/optimized/whitebox.ll
 ; openjdk/optimized/zReferenceProcessor.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6
@@ -221,7 +220,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp ugt i64 %3, 4294967295
@@ -233,22 +232,10 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/entropy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp ult i64 %3, 64
-  %5 = icmp eq i32 %0, 0
-  %6 = select i1 %5, i1 true, i1 %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; delta-rs/optimized/43y2svfstmvqcl15.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 86399
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6

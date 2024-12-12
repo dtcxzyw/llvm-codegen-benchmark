@@ -8,3 +8,16 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%ecx, %edx
 	subl	%edx, %eax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	leal	(%rdi,%rsi), %ecx
+	imulq	$613566757, %rcx, %rdx          # imm = 0x24924925
+	shrq	$32, %rdx
+	movl	%ecx, %eax
+	subl	%edx, %eax
+	shrl	%eax
+	addl	%edx, %eax
+	shrl	$2, %eax
+	leal	(,%rax,8), %edx
+	subl	%edx, %eax
+	addl	%ecx, %eax
+	retq

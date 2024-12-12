@@ -1,5 +1,5 @@
 
-; 705 occurrences:
+; 700 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -38,6 +38,7 @@
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/SplitByBoneCountProcess.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/www.c.ll
@@ -45,7 +46,6 @@
 ; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/env.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
-; cvc5/optimized/equality_engine_iterator.cpp.ll
 ; cvc5/optimized/logic_info.cpp.ll
 ; draco/optimized/corner_table.cc.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
@@ -317,7 +317,6 @@
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMoveMerger.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
@@ -549,13 +548,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -699,7 +695,6 @@
 ; yosys/optimized/opt_mem.ll
 ; yosys/optimized/opt_mem_feedback.ll
 ; yosys/optimized/share.ll
-; yosys/optimized/verilog_backend.ll
 ; z3/optimized/bit_matrix.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/smt_enode.cpp.ll
@@ -711,7 +706,7 @@ entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -855,7 +850,7 @@ entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -873,7 +868,7 @@ entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 -2, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

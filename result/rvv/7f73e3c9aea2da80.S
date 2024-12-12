@@ -38,3 +38,8 @@ func0000000000000004:                   # @func0000000000000004
 	vmsltu.vv	v12, v8, v10
 	vmor.mm	v0, v12, v0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vmsltu.vv	v12, v8, v10
+	vmor.mm	v0, v12, v0
+	ret

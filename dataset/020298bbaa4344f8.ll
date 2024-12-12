@@ -4,7 +4,7 @@
 ; qemu/optimized/target_riscv_debug.c.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = shl nuw i64 1, %0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_debug.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = shl nuw i64 1, %0

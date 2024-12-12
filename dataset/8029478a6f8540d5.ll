@@ -23,9 +23,8 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/i915_gem_stolen.ll
-; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i8 %2) #0 {

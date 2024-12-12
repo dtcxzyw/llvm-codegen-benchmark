@@ -12,16 +12,18 @@
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; qemu/optimized/target_riscv_vector_internals.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = mul i32 %3, %1
@@ -39,7 +41,7 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul i32 %3, %1
@@ -58,7 +60,7 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul nuw nsw i32 %3, %1
@@ -73,10 +75,10 @@ entry:
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; openjdk/optimized/splashscreen_gfx_impl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
@@ -159,7 +161,7 @@ entry:
 ; oiio/optimized/zfile.cpp.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = mul i32 %3, %1
@@ -188,7 +190,7 @@ entry:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f9(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul nuw nsw i32 %3, %1
@@ -201,9 +203,21 @@ entry:
 ; opencv/optimized/corner.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
+  %4 = mul nsw i32 %1, %3
+  %5 = icmp eq i32 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; abc/optimized/giaPat2.c.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 1
   %4 = mul nsw i32 %3, %1
   %5 = icmp eq i32 %4, %0
   ret i1 %5
@@ -212,16 +226,15 @@ entry:
 ; 1 occurrences:
 ; kcp/optimized/ikcp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
-; 9 occurrences:
-; graphviz/optimized/graph_generator.c.ll
+; 8 occurrences:
 ; gromacs/optimized/updategroups.cpp.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj0.c.ll
@@ -231,7 +244,7 @@ entry:
 ; slurm/optimized/select_cons_tres.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = mul nsw i32 %3, %1
@@ -245,7 +258,7 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 6
   %4 = mul nuw nsw i32 %3, %1
@@ -253,12 +266,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
+; 1 occurrences:
 ; yosys/optimized/peepopt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul nsw i32 %3, %1
@@ -266,8 +277,7 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; linux/optimized/scsicam.ll
+; 2 occurrences:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; openspiel/optimized/oware.cc.ll
 ; Function Attrs: nounwind
@@ -280,23 +290,12 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/SLPVectorizer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, -1
-  %4 = mul nsw i32 %3, %1
-  %5 = icmp eq i32 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ab(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = icmp sge i32 %4, %0
   ret i1 %5
 }
@@ -304,10 +303,10 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/toppush.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -315,10 +314,10 @@ entry:
 ; 1 occurrences:
 ; sentencepiece/optimized/generated_message_table_driven_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001ea(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 8
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
@@ -326,10 +325,10 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/fe-print.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000106(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -339,10 +338,10 @@ entry:
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/matrix_c.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -351,7 +350,7 @@ entry:
 ; meshlab/optimized/io_bre.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul i32 %3, %1
@@ -362,7 +361,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/scansegment.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = mul nsw i32 %3, %1
@@ -373,7 +372,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/io_bre.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c7(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000187(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul i32 %3, %1
@@ -385,7 +384,7 @@ entry:
 ; libwebp/optimized/analysis_enc.c.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 2
   %4 = mul i32 %3, %1

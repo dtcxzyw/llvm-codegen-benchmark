@@ -1,16 +1,16 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	andl	$1, %edx
 	decl	%edx
 	orl	$1, %edx
 	addl	%esi, %edx
 	leaq	(%rdi,%rdx,8), %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	andl	$1, %edx
 	leal	1(%rdx,%rsi), %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	andl	$1, %edx
 	leal	(%rsi,%rdx,2), %eax
 	shlq	$4, %rax
@@ -23,12 +23,12 @@ func000000000000001c:                   # @func000000000000001c
 	cmovel	%ecx, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000017:                   # @func0000000000000017
 	andl	$1, %edx
 	leal	3(%rdx,%rsi), %eax
 	addq	%rdi, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	andl	$1, %edx
 	leal	-3(%rdx,%rsi), %eax
 	shlq	$5, %rax

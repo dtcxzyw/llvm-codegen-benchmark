@@ -23,7 +23,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %.not = xor i64 %1, -1
-  %2 = and i64 %.not, %0
+  %2 = and i64 %0, %.not
   ret i64 %2
 }
 
@@ -36,7 +36,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %.not = xor i64 %1, -1
-  %2 = and i64 %.not, %0
+  %2 = and i64 %0, %.not
   ret i64 %2
 }
 

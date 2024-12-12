@@ -14,3 +14,11 @@ func0000000000000012:                   # @func0000000000000012
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+func000000000000000a:                   # @func000000000000000a
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k1
+	vcvtudq2ps	%ymm2, %ymm0
+	vcmpleps	%ymm0, %ymm1, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

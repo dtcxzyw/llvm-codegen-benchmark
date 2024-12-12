@@ -1,11 +1,11 @@
 
-; 92 occurrences:
+; 91 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/superAnd.c.ll
 ; abseil-cpp/optimized/damerau_levenshtein_distance.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/archive_ppmd7.c.ll
-; cmake/optimized/delta_decoder.c.ll
-; cmake/optimized/delta_encoder.c.ll
 ; cmake/optimized/lzma2_encoder.c.ll
 ; cmake/optimized/lzma_encoder.c.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -59,7 +59,6 @@
 ; nix/optimized/path.ll
 ; node/optimized/libnode.cid.ll
 ; node/optimized/libnode.string_decoder.ll
-; nuttx/optimized/fs_blockpartition.c.ll
 ; ockam-rs/optimized/13b0iru6w2t4kov8.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; ockam-rs/optimized/on09w5afel7x9qz.ll
@@ -96,13 +95,14 @@
 define i8 @func0000000000000000(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
+; boost/optimized/static_string.ll
 ; lz4/optimized/lz4hc.c.ll
 ; node/optimized/libnode.string_decoder.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
@@ -123,14 +123,15 @@ entry:
 define i8 @func0000000000000008(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; actix-rs/optimized/2l54a10og4z99516.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
-; linux/optimized/he.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
 ; spike/optimized/vadc_vim.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
@@ -139,18 +140,16 @@ entry:
 define i8 @func000000000000000f(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i8
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add nuw nsw i8 %0, %2
   ret i8 %3
 }
 
-; 13 occurrences:
-; actix-rs/optimized/2l54a10og4z99516.ll
+; 11 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; llvm/optimized/blake3.c.ll
-; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
 ; postgres/optimized/sha1.ll
 ; postgres/optimized/sha1_shlib.ll
 ; postgres/optimized/sha1_srv.ll
@@ -161,11 +160,11 @@ entry:
 define i8 @func000000000000000c(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; just-rs/optimized/2sotx4bdu006z307.ll
 ; regex-rs/optimized/1wjkhjqt3xgxgj7z.ll
@@ -176,11 +175,13 @@ entry:
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmtime-rs/optimized/2ugglko29ilmqwzu.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = add nuw i8 %2, %0
+  %3 = add nuw i8 %0, %2
   ret i8 %3
 }
 
@@ -194,7 +195,7 @@ entry:
 define i8 @func0000000000000004(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
@@ -204,7 +205,7 @@ entry:
 define i8 @func0000000000000005(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i8
-  %3 = add nsw i8 %2, %0
+  %3 = add nsw i8 %0, %2
   ret i8 %3
 }
 
@@ -214,7 +215,7 @@ entry:
 define i8 @func000000000000000d(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i8
-  %3 = add nsw i8 %2, %0
+  %3 = add nsw i8 %0, %2
   ret i8 %3
 }
 
@@ -225,7 +226,7 @@ entry:
 define i8 @func000000000000000e(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i8
-  %3 = add nuw i8 %2, %0
+  %3 = add nuw i8 %0, %2
   ret i8 %3
 }
 

@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 56 occurrences:
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; box2d/optimized/b2_time_of_impact.cpp.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
@@ -41,13 +41,11 @@
 ; mitsuba3/optimized/spot.cpp.ll
 ; mitsuba3/optimized/thinlens.cpp.ll
 ; mixbox/optimized/mixbox.ll
-; ncnn/optimized/roialign.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; ocio/optimized/CDLOpCPU.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
-; opencv/optimized/short_term_imageless_tracker.cpp.ll
-; opencv/optimized/zero_term_imageless_tracker.cpp.ll
+; opencv/optimized/tracker.cpp.ll
 ; openusd/optimized/blackbody.cpp.ll
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
@@ -57,6 +55,7 @@
 ; recastnavigation/optimized/main.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; yoga/optimized/PixelGrid.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:

@@ -3,7 +3,7 @@
 ; rocksdb/optimized/backup_engine.cc.ll
 ; slurm/optimized/read_config.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i32 %1) #0 {
+define i1 @func000000000000014c(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 0
@@ -31,7 +31,7 @@ entry:
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 1
@@ -54,7 +54,7 @@ entry:
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 0
@@ -71,7 +71,7 @@ entry:
 ; postgres/optimized/inet_net_ntop_shlib.ll
 ; postgres/optimized/inet_net_ntop_srv.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 7
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/lighttable.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 0
@@ -93,21 +93,9 @@ entry:
 }
 
 ; 1 occurrences:
-; luau/optimized/isocline.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
-entry:
-  %2 = freeze i32 %1
-  %3 = icmp ult i32 %2, 5
-  %4 = icmp ult i32 %0, 5
-  %5 = select i1 %3, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; openspiel/optimized/checkers.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp sgt i32 %2, 0
@@ -119,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 3

@@ -1,9 +1,9 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	xorl	%edx, %edx
 	divq	%rcx
-	subq	%rdx, %rsi
-	addq	%rdi, %rsi
+	subq	%rsi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq

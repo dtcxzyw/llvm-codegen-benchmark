@@ -1,10 +1,9 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll

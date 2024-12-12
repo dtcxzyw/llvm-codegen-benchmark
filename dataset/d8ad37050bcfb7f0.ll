@@ -1,8 +1,9 @@
 
-; 161 occurrences:
+; 162 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/cuddBddAbs.c.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
 ; openjdk/optimized/ByteBinary2Bit.ll
 ; openjdk/optimized/ByteBinary4Bit.ll

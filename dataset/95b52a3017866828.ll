@@ -1,5 +1,5 @@
 
-; 468 occurrences:
+; 463 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -9,6 +9,7 @@
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/src.ll
 ; cmake/optimized/xxhash.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cpython/optimized/codeobject.ll
@@ -35,9 +36,7 @@
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; folly/optimized/FiberManager.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/Future.cpp.ll
 ; folly/optimized/GlobalExecutor.cpp.ll
 ; folly/optimized/GlobalShutdownSocketSet.cpp.ll
@@ -276,7 +275,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -351,7 +349,6 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-set.ll
 ; openjdk/optimized/shenandoahEvacOOMHandler.ll
-; openmpi/optimized/tm_mt.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
@@ -392,13 +389,11 @@
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/mt19937uniformrng.ll
 ; quantlib/optimized/xoshiro256starstaruniformrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; raylib/optimized/rcore.c.ll
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; redis/optimized/dict.ll
 ; redis/optimized/hyperloglog.ll
-; redis/optimized/mt19937-64.ll
 ; regex-rs/optimized/183h9dropc9vohym.ll
 ; regex-rs/optimized/6f4i3c8223u3bmw.ll
 ; rocksdb/optimized/hash.cc.ll
@@ -473,7 +468,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
   %4 = mul i64 %3, -4658895280553007687
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 
@@ -489,7 +484,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
   %4 = mul nsw i64 %3, 265
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 

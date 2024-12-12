@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; openjdk/optimized/jni_util.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll

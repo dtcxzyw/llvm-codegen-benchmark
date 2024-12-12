@@ -9,6 +9,6 @@ func0000000000000021:                   # @func0000000000000021
 	addiw	a0, a0, -3
 	ret
 func0000000000000023:                   # @func0000000000000023
-	srli	a0, a0, 2
-	addiw	a0, a0, -2
+	srli	a0, a0, 3
+	addiw	a0, a0, -1
 	ret

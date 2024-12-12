@@ -7,9 +7,9 @@
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = icmp eq i32 %2, 0
+  %3 = icmp eq i32 %2, 1
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -20,9 +20,9 @@ entry:
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = icmp eq i32 %2, 0
+  %3 = icmp eq i32 %2, 1
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }

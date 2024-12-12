@@ -1,7 +1,6 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/kitDsd.c.ll
-; linux/optimized/e1000_hw.ll
 ; linux/optimized/ldt.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
@@ -14,7 +13,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7680
   %.masked = and i32 %0, -254464
-  %3 = or i32 %2, %.masked
+  %3 = or i32 %.masked, %2
   %4 = or disjoint i32 %3, 8192
   ret i32 %4
 }

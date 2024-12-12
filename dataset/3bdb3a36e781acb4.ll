@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/area.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; graphviz/optimized/dtview.c.ll
 ; gromacs/optimized/cpuinfo.cpp.ll

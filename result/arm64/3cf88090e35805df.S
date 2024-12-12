@@ -1,14 +1,7 @@
-func0000000000000110:                   // @func0000000000000110
+func0000000000000210:                   // @func0000000000000210
 // %bb.0:                               // %entry
-	sub	v6.4s, v3.4s, v1.4s
-	sub	v7.4s, v2.4s, v0.4s
-	cmhi	v1.4s, v1.4s, v3.4s
-	cmhi	v0.4s, v0.4s, v2.4s
-	cmhi	v5.4s, v5.4s, v6.4s
-	cmhi	v4.4s, v4.4s, v7.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v2.8h, v4.8h, v5.8h
-	orr	v0.16b, v0.16b, v2.16b
-	xtn	v0.8b, v0.8h
+	subs	w8, w1, w0
+	ccmp	w2, w8, #2, hs
+	cset	w0, hi
 	ret
                                         // -- End function

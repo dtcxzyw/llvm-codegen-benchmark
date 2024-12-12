@@ -18,7 +18,7 @@
 ; zstd/optimized/zdict.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = zext nneg i32 %2 to i64
@@ -34,7 +34,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-curve448.ll
 ; openssl/optimized/libcrypto-shlib-rc2_skey.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 128, %1
   %3 = zext i32 %2 to i64
@@ -47,7 +47,7 @@ entry:
 ; abc/optimized/abcUtil.c.ll
 ; icu/optimized/ucnv_ext.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 145, %1
   %3 = zext i32 %2 to i64
@@ -56,10 +56,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; cmake/optimized/lzma_encoder.c.ll
 ; icu/optimized/ucnv_ext.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = zext nneg i32 %2 to i64
@@ -71,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv_ext.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = zext nneg i32 %2 to i64
@@ -83,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; g2o/optimized/types_seven_dof_expmap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 2, %1
   %3 = zext nneg i32 %2 to i64

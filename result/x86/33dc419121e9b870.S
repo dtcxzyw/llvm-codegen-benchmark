@@ -1,4 +1,4 @@
-func0000000000000062:                   # @func0000000000000062
+func00000000000000a2:                   # @func00000000000000a2
 	sarq	$4, %rsi
 	movabsq	$3353953467947191203, %rax      # imm = 0x2E8BA2E8BA2E8BA3
 	imulq	%rsi, %rax

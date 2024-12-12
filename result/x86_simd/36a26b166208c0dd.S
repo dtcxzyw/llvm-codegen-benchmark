@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	10                              # 0xa
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2

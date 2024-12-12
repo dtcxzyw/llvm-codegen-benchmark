@@ -1,8 +1,8 @@
-func0000000000000051:                   # @func0000000000000051
+func0000000000000021:                   # @func0000000000000021
 	bzhil	%esi, %edi, %eax
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func00000000000000a1:                   # @func00000000000000a1
 	bzhil	%esi, %edi, %eax
 	sete	%al
 	retq

@@ -3,7 +3,7 @@
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; openjdk/optimized/loopTransform.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv i64 %3, %0
@@ -23,20 +23,9 @@ entry:
 }
 
 ; 1 occurrences:
-; proxygen/optimized/HTTPTransaction.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %1, %2
-  %4 = sdiv i64 %3, %0
-  %5 = icmp ugt i64 %4, 10000
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv i64 %3, %0
@@ -48,7 +37,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; linux/optimized/fair.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv i64 %3, %0

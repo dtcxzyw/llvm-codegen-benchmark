@@ -15,9 +15,3 @@ func0000000000000014:                   # @func0000000000000014
 	setge	%al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	andl	%edx, %esi
-	cmpl	$32, %esi
-	setae	%al
-	orb	%dil, %al
-	retq

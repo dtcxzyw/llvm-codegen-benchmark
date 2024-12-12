@@ -1,5 +1,7 @@
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; glslang/optimized/Constant.cpp.ll
 ; hdf5/optimized/h5tools_str.c.ll

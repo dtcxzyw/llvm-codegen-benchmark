@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; flatbuffers/optimized/idl_gen_swift.cpp.ll
 ; linux/optimized/set_memory.ll
 ; llvm/optimized/MachineSink.cpp.ll
 ; llvm/optimized/MemoryDependenceAnalysis.cpp.ll

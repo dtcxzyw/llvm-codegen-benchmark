@@ -25,8 +25,8 @@ func0000000000000001:                   # @func0000000000000001
 	vmovss	.LCPI2_0(,%rax,4), %xmm0        # xmm0 = mem[0],zero,zero,zero
 	retq
 .LCPI3_0:
+	.long	0x3f000000                      # float 0.5
 	.long	0x3f800000                      # float 1
-	.long	0xbf800000                      # float -1
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
 	cmpq	$8, %rdi

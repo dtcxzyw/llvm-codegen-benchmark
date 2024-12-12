@@ -10,7 +10,7 @@ entry:
   ret ptr %4
 }
 
-; 504 occurrences:
+; 549 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -32,6 +32,53 @@ entry:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -275,7 +322,6 @@ entry:
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -357,6 +403,8 @@ entry:
 ; proxygen/optimized/HTTPConnectorWithFizz.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
+; quantlib/optimized/date.ll
+; quantlib/optimized/fdminnervaluecalculator.ll
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/nfa.cc.ll
 ; re2/optimized/parse.cc.ll
@@ -382,7 +430,6 @@ entry:
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; rocksdb/optimized/table_properties.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
-; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; spike/optimized/htif.ll
 ; spike/optimized/htif_pthread.ll
@@ -485,7 +532,6 @@ entry:
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; verilator/optimized/Verilator.cpp.ll
-; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; xgboost/optimized/adaptive.cc.ll
 ; xgboost/optimized/context.cc.ll
 ; xgboost/optimized/data.cc.ll
@@ -506,7 +552,6 @@ entry:
 ; yosys/optimized/dft_tag.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/sta.ll
 ; yosys/optimized/verilog_parser.tab.ll
@@ -516,7 +561,7 @@ entry:
 ; z3/optimized/static_matrix.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003e(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
   %3 = getelementptr ptr, ptr %0, i64 %2
@@ -528,7 +573,7 @@ entry:
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = getelementptr { i32, i16 }, ptr %0, i64 %2
@@ -542,7 +587,7 @@ entry:
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = getelementptr { i32, i16 }, ptr %0, i64 %2
@@ -550,16 +595,49 @@ entry:
   ret ptr %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 2
+  %3 = getelementptr { { i64, [3 x i64] }, ptr }, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -24
+  ret ptr %4
+}
+
+; 2 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
-; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = getelementptr { { i128, [2 x i64] }, i64, [1 x i64] }, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -32
+  ret ptr %4
+}
+
+; 2 occurrences:
+; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
+; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 2
+  %3 = getelementptr { { i128, [2 x i64] }, i64, [1 x i64] }, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 64
+  ret ptr %4
+}
+
+; 1 occurrences:
+; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 2
+  %3 = getelementptr { i32, i32, i32, i32 }, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -8
   ret ptr %4
 }
 

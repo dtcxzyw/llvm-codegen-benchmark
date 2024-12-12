@@ -26,7 +26,7 @@ func0000000000000010:                   # @func0000000000000010
 	vptestnmw	%xmm1, %xmm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [201,201,201,201,201,201,201,201]
 	vpbroadcastd	.LCPI1_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1,1,1,1,1]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpslld	$2, %ymm0, %ymm0
 	retq
 .LCPI2_0:

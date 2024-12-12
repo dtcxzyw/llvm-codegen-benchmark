@@ -1,16 +1,17 @@
 func0000000000000004:                   # @func0000000000000004
 	andi	a1, a1, 255
-	addi	a1, a1, -45
-	seqz	a1, a1
+	beqz	a1, .LBB0_2
+	li	a1, 4
 	add	a0, a0, a1
-	addi	a0, a0, -2
+	ret
+.LBB0_2:
+	li	a1, 8
+	add	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	andi	a2, a1, 255
-	lui	a1, 49152
-	beqz	a2, .LBB1_2
-	lui	a1, 90112
-.LBB1_2:                                # %entry
+	andi	a1, a1, 255
+	seqz	a1, a1
+	xori	a1, a1, -257
 	add	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
@@ -30,7 +31,7 @@ func0000000000000010:                   # @func0000000000000010
 	li	a1, 3
 	add	a0, a0, a1
 	ret
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	andi	a2, a1, 255
 	li	a1, 1
 	li	a3, 71
@@ -43,7 +44,7 @@ func0000000000000023:                   # @func0000000000000023
 	addi	a1, a1, -72
 	add	a0, a0, a1
 	ret
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	andi	a2, a1, 255
 	li	a1, 1
 	li	a3, 46
@@ -88,4 +89,15 @@ func0000000000000019:                   # @func0000000000000019
 	sub	a0, a0, a1
 	addi	a0, a0, 2047
 	addi	a0, a0, 353
+	ret
+func0000000000000013:                   # @func0000000000000013
+	andi	a1, a1, 255
+	li	a2, 254
+	bltu	a1, a2, .LBB10_2
+	li	a1, 5
+	add	a0, a0, a1
+	ret
+.LBB10_2:
+	li	a1, 1
+	add	a0, a0, a1
 	ret

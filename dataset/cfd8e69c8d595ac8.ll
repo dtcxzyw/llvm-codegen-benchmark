@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -10,6 +10,8 @@
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -20,7 +22,7 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -29,6 +31,8 @@ entry:
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0) #0 {
 entry:

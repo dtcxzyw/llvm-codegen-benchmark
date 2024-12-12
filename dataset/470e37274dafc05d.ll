@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; cmake/optimized/zstd_decompress_block.c.ll
 ; linux/optimized/xhci-mem.ll
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
 ; openusd/optimized/aom_image.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
+; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

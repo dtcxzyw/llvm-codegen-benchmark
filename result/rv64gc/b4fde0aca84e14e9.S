@@ -1,16 +1,16 @@
 func0000000000000010:                   # @func0000000000000010
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 13
+	li	a2, 16
 	beq	a1, a2, .LBB0_2
-	li	a1, 127
+	li	a1, 8
 	add	a0, a0, a1
-	addiw	a0, a0, -1
+	addiw	a0, a0, 1
 	ret
 .LBB0_2:
-	li	a1, 1023
+	li	a1, 12
 	add	a0, a0, a1
-	addiw	a0, a0, -1
+	addiw	a0, a0, 1
 	ret
 func000000000000001f:                   # @func000000000000001f
 	slli	a1, a1, 48

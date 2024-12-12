@@ -1,9 +1,11 @@
 
-; 438 occurrences:
+; 436 occurrences:
 ; abc/optimized/decPrint.c.ll
 ; abc/optimized/giaGen.c.ll
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/X3DGeoHelper.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; c3c/optimized/json_output.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_name_resolution.c.ll
@@ -12,7 +14,6 @@
 ; cmake/optimized/RegularExpression.cxx.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/xmlparse.c.ll
-; cmake/optimized/zstd_opt.c.ll
 ; cpython/optimized/memoryobject.ll
 ; cpython/optimized/object.ll
 ; cpython/optimized/xmlparse.ll
@@ -29,6 +30,7 @@
 ; duckdb/optimized/ub_duckdb_operator_projection.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_schema.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; faiss/optimized/IndexIVFPQ.cpp.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -56,6 +58,7 @@
 ; gromacs/optimized/ebin.cpp.ll
 ; gromacs/optimized/xvgr.cpp.ll
 ; hermes/optimized/DebugInfo.cpp.ll
+; hermes/optimized/Host.cpp.ll
 ; hermes/optimized/Unicode.cpp.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/locmap.ll
@@ -132,13 +135,11 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/act_api.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/drm_mipi_dsi.ll
-; linux/optimized/drm_prime.ll
 ; linux/optimized/drm_vblank.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/ioctl.ll
@@ -149,7 +150,6 @@
 ; linux/optimized/smpboot.ll
 ; linux/optimized/task_mmu.ll
 ; linux/optimized/trans_fd.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
@@ -165,14 +165,14 @@
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/OSTargets.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
-; llvm/optimized/SplitModule.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/Unicode.cpp.ll
 ; llvm/optimized/VPlan.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; lz4/optimized/lz4.c.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -370,7 +370,6 @@
 ; velox/optimized/ArraySort.cpp.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
-; velox/optimized/StringView.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; velox/optimized/TimeZoneMap.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
@@ -437,7 +436,6 @@
 ; z3/optimized/factor_equivs.cpp.ll
 ; z3/optimized/theory_dl.cpp.ll
 ; z3/optimized/value_factory.cpp.ll
-; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:

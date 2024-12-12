@@ -45,7 +45,7 @@ func000000000000000d:                   # @func000000000000000d
 	add	a1, a1, a2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v12, v12
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vand.vx	v10, v10, a0
 	vand.vx	v8, v8, a1
 	vor.vv	v8, v10, v8

@@ -37,7 +37,7 @@ func0000000000000005:                   # @func0000000000000005
 	.long	1900                            # 0x76c
 .LCPI3_3:
 	.long	2000                            # 0x7d0
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm1
 	vpcmpltd	.LCPI3_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI3_2(%rip), %ymm1   # ymm1 = [1900,1900,1900,1900,1900,1900,1900,1900]

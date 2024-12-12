@@ -1,8 +1,8 @@
 
-%"struct.OT::IntType.0.2622262" = type { %struct.BEInt.1.2622266 }
-%struct.BEInt.1.2622266 = type { [2 x i8] }
-%class.symbol.3428170 = type { ptr }
-%class.symbol.3428956 = type { ptr }
+%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
+%struct.BEInt.1.2735703 = type { [2 x i8] }
+%class.symbol.3612719 = type { ptr }
+%class.symbol.3613505 = type { ptr }
 
 ; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -10,13 +10,13 @@
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000016a(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func00000000000001ff(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 2
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 2
   %4 = zext nneg i32 %1 to i64
-  %5 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %3, i64 %4
-  %6 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %3, i64 %4
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -33,7 +33,7 @@ entry:
   ret ptr %7
 }
 
-; 137 occurrences:
+; 136 occurrences:
 ; z3/optimized/add_bounds_tactic.cpp.ll
 ; z3/optimized/api_quant.cpp.ll
 ; z3/optimized/asserted_formulas.cpp.ll
@@ -56,7 +56,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/decl_collector.cpp.ll
@@ -172,13 +171,13 @@ entry:
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/well_sorted.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000012a(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func00000000000001bf(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 80
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 80
   %4 = zext i32 %1 to i64
-  %5 = getelementptr nusw ptr, ptr %3, i64 %4
-  %6 = getelementptr nusw %class.symbol.3428170, ptr %5, i64 %4
-  %7 = getelementptr nusw ptr, ptr %6, i64 %0
+  %5 = getelementptr nusw nuw ptr, ptr %3, i64 %4
+  %6 = getelementptr nusw nuw %class.symbol.3612719, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw ptr, ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -229,12 +228,12 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000128(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func00000000000001bc(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 80
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 80
   %4 = zext i32 %1 to i64
-  %5 = getelementptr nusw ptr, ptr %3, i64 %4
-  %6 = getelementptr nusw %class.symbol.3428956, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %3, i64 %4
+  %6 = getelementptr nusw nuw %class.symbol.3613505, ptr %5, i64 %4
   %7 = getelementptr ptr, ptr %6, i64 %0
   ret ptr %7
 }

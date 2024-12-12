@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 	testl	%esi, %esi
 	cmovnsl	%edi, %eax
 	retq
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	leal	(,%rdx,4), %eax
 	testl	%esi, %esi
 	cmovnel	%edi, %eax

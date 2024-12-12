@@ -18,11 +18,6 @@ func0000000000000009:                   # @func0000000000000009
 	andb	$7, %dil
 	leal	-1(%rdi), %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	shrl	$24, %edi
-	andb	$7, %dil
-	leal	4(%rdi), %eax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	shrl	$24, %edi
 	andb	$-33, %dil
@@ -37,4 +32,9 @@ func000000000000000f:                   # @func000000000000000f
 	shrl	$27, %edi
 	andb	$3, %dil
 	leal	1(%rdi), %eax
+	retq
+func000000000000000b:                   # @func000000000000000b
+	shrl	$16, %edi
+	andb	$15, %dil
+	leal	87(%rdi), %eax
 	retq

@@ -7,7 +7,6 @@
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; lief/optimized/psa_crypto_aead.c.ll
 ; linux/optimized/open.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/tcp_input.ll
@@ -28,6 +27,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
@@ -73,9 +73,9 @@
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/bignum.ll
 ; slurm/optimized/fed_mgr.ll
-; slurm/optimized/slurm_protocol_socket.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
+; wireshark/optimized/packet-cops.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; z3/optimized/sat_simplifier.cpp.ll
@@ -85,14 +85,13 @@ entry:
   %3 = and i32 %2, 3
   %4 = icmp eq i32 %3, 2
   %5 = and i1 %4, %1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
-; 83 occurrences:
+; 82 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieGia.c.ll
-; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/giaBound.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -178,23 +177,8 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2052
   %4 = icmp ne i32 %3, 4
-  %5 = and i1 %4, %1
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 4 occurrences:
-; icu/optimized/collationdatabuilder.ll
-; icu/optimized/ucptrie.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; wireshark/optimized/packet-icmp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 2147483647
-  %4 = icmp ult i32 %3, 21600001
-  %5 = and i1 %4, %1
-  %6 = and i1 %5, %0
+  %5 = and i1 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

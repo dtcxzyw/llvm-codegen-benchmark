@@ -1,5 +1,7 @@
 
-; 37 occurrences:
+; 39 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/loss_function.cc.ll
 ; clamav/optimized/pe_icons.c.ll
 ; g2o/optimized/robust_kernel_impl.cpp.ll

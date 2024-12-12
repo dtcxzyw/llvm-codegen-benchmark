@@ -1,36 +1,36 @@
 func000000000000000b:                   # @func000000000000000b
 	sarq	$32, %rdx
-	cmpq	%rsi, %rdx
-	setle	%al
+	cmpq	%rdx, %rsi
+	setge	%al
 	orb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sarq	$3, %rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000019:                   # @func0000000000000019
+func0000000000000029:                   # @func0000000000000029
 	sarq	$2, %rdx
-	cmpq	%rsi, %rdx
-	setbe	%al
+	cmpq	%rdx, %rsi
+	setae	%al
 	orb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sarq	$32, %rdx
-	cmpq	%rsi, %rdx
-	setl	%al
+	cmpq	%rdx, %rsi
+	setg	%al
 	orb	%dil, %al
 	retq
 func0000000000000009:                   # @func0000000000000009
 	sarq	$12, %rdx
-	cmpq	%rsi, %rdx
-	setbe	%al
+	cmpq	%rdx, %rsi
+	setae	%al
 	orb	%dil, %al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	sarq	%rdx
-	cmpq	%rsi, %rdx
-	setl	%al
+	cmpq	%rdx, %rsi
+	setg	%al
 	orb	%dil, %al
 	retq

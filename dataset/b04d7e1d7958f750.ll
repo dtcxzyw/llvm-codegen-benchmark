@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 60 occurrences:
 ; coremark/optimized/core_matrix.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; graphviz/optimized/mincross.c.ll
@@ -24,7 +24,6 @@
 ; minetest/optimized/mg_schematic.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -65,12 +64,12 @@
 define i32 @func0000000000000005(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
@@ -93,7 +92,6 @@ entry:
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
@@ -101,8 +99,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = mul i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -137,8 +135,8 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = mul nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -154,7 +152,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }

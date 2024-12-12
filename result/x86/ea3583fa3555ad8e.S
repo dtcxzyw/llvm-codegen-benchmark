@@ -28,23 +28,23 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$64, %eax
 	subl	%edi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	movl	%edi, %eax
 	cmpl	$32, %esi
 	cmovbl	%esi, %eax
 	negl	%eax
+	retq
+func0000000000000029:                   # @func0000000000000029
+	cmpl	$16, %esi
+	cmovll	%esi, %edi
+	movl	$65535, %eax                    # imm = 0xFFFF
+	subl	%edi, %eax
 	retq
 func0000000000000020:                   # @func0000000000000020
 	cmpl	$-294967296, %esi               # imm = 0xEE6B2800
 	cmovbl	%esi, %edi
 	movl	$-294967296, %eax               # imm = 0xEE6B2800
 	subl	%edi, %eax
-	retq
-func0000000000000029:                   # @func0000000000000029
-	movl	%edi, %eax
-	testl	%esi, %esi
-	cmovlel	%esi, %eax
-	negl	%eax
 	retq
 func000000000000001b:                   # @func000000000000001b
 	testl	%esi, %esi

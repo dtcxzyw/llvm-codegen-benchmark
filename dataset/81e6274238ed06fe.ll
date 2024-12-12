@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 41 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; annoy/optimized/annoymodule.ll
 ; clamav/optimized/blob.c.ll
@@ -10,7 +10,6 @@
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/indirect.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/md.ll
 ; linux/optimized/mempolicy.ll
@@ -40,7 +39,6 @@
 ; php/optimized/string.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/block_vhdx.c.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind

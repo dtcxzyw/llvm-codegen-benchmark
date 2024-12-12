@@ -1,29 +1,25 @@
-func0000000000000051:                   # @func0000000000000051
-	zext.h	a1, a1
-	slliw	a0, a0, 16
-	or	a0, a0, a1
-	lui	a1, 999455
-	addiw	a1, a1, 1025
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000a1:                   # @func00000000000000a1
 	or	a0, a0, a1
 	zext.h	a0, a0
 	seqz	a0, a0
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e1:                   # @func00000000000000e1
+	or	a0, a0, a1
+	zext.h	a0, a0
+	seqz	a0, a0
+	ret
+func00000000000000f4:                   # @func00000000000000f4
 	zext.h	a1, a1
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	sltiu	a0, a0, 17
 	ret
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	or	a0, a0, a1
 	zext.h	a0, a0
 	snez	a0, a0
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	zext.h	a1, a1
 	slliw	a0, a0, 8
 	or	a0, a0, a1
@@ -32,26 +28,26 @@ func0000000000000061:                   # @func0000000000000061
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	zext.h	a1, a1
 	slliw	a0, a0, 24
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	zext.h	a1, a1
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	sltiu	a0, a0, -9
 	xori	a0, a0, 1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	zext.h	a1, a1
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	sltiu	a0, a0, 8
 	ret
-func0000000000000078:                   # @func0000000000000078
+func00000000000000f8:                   # @func00000000000000f8
 	zext.h	a1, a1
 	slliw	a0, a0, 16
 	or	a0, a0, a1

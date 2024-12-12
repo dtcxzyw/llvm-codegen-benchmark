@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/operations.ll
 ; c3c/optimized/parse_expr.c.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/lowdiscrepancy.cpp.ll
@@ -19,7 +20,7 @@ entry:
   ret i32 %6
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; c3c/optimized/build_options.c.ll
 ; c3c/optimized/c_abi.c.ll
 ; c3c/optimized/symtab.c.ll
@@ -28,6 +29,7 @@ entry:
 ; cmake/optimized/alone_encoder.c.ll
 ; cmake/optimized/core.c.ll
 ; cmake/optimized/lz_encoder.c.ll
+; cmake/optimized/lzma2_encoder.c.ll
 ; git/optimized/delta-islands.ll
 ; git/optimized/object-file.ll
 ; git/optimized/oidset.ll

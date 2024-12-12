@@ -1,31 +1,31 @@
-func00000000000000b4:                   # @func00000000000000b4
+func0000000000000164:                   # @func0000000000000164
 	zext.w	a2, a2
 	sh3add	a1, a1, a2
 	srai	a0, a0, 4
 	sltu	a0, a0, a1
 	ret
-func00000000000000b1:                   # @func00000000000000b1
-	zext.w	a2, a2
-	sh3add	a1, a1, a2
-	srai	a0, a0, 3
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	zext.w	a2, a2
 	sh3add	a1, a1, a2
 	srai	a0, a0, 32
 	sltu	a0, a1, a0
 	ret
-func00000000000000b8:                   # @func00000000000000b8
+func0000000000000168:                   # @func0000000000000168
 	zext.w	a2, a2
 	sh3add	a1, a1, a2
 	srai	a0, a0, 32
 	sltu	a0, a1, a0
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	zext.w	a2, a2
 	sh3add	a1, a1, a2
 	srai	a0, a0, 32
 	sltu	a0, a0, a1
+	ret
+func0000000000000161:                   # @func0000000000000161
+	zext.w	a2, a2
+	sh3add	a1, a1, a2
+	srai	a0, a0, 2
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret

@@ -21,7 +21,7 @@
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000085(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9218868437227405312
   %3 = icmp eq i64 %2, 0
@@ -35,7 +35,7 @@ entry:
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000047(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000087(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9218868437227405312
   %3 = icmp eq i64 %2, 0

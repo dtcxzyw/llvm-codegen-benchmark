@@ -31,10 +31,9 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
 ; openjdk/optimized/mlib_ImageAffine_BL_S32.ll

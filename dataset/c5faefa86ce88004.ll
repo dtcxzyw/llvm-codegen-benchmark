@@ -51,7 +51,7 @@ entry:
   ret i1 %6
 }
 
-; 41 occurrences:
+; 55 occurrences:
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/epd.c.ll
 ; abc/optimized/giaSweep.c.ll
@@ -64,7 +64,6 @@ entry:
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; hermes/optimized/Object.cpp.ll
 ; influxdb-rs/optimized/3jexax7r6nng0tve.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/manage.ll
 ; linux/optimized/mcast.ll
 ; linux/optimized/md.ll
@@ -93,6 +92,21 @@ entry:
 ; rust-analyzer-rs/optimized/lkt0vc36jo6l130.ll
 ; spike/optimized/mmu.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2xv7gcyhgnpwydetyfctbxzbn.ll
+; zed-rs/optimized/4h84anocrn0e2zexjpu5utgbx.ll
+; zed-rs/optimized/655upmhuk5u49g6wx9tv0hih8.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/9ydmyaey957xyuywtl3djlzml.ll
+; zed-rs/optimized/anp459b0r1vn8pok0ofwmqun4.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {
 entry:

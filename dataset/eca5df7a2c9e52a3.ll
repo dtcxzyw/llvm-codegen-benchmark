@@ -19,12 +19,26 @@
 ; ruby/optimized/sha2.ll
 ; velox/optimized/md5.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = sub nuw nsw i32 64, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; git/optimized/sha256.ll
+; php/optimized/md5.ll
+; php/optimized/sha1.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 63
+  %3 = sub nuw nsw i32 64, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
@@ -33,12 +47,12 @@ entry:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/text_import.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = sub nuw nsw i32 8, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 

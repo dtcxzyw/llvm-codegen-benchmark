@@ -13,14 +13,15 @@ func0000000000000006:                   # @func0000000000000006
 	setle	%al
 	xorb	%dil, %al
 	retq
+func000000000000000a:                   # @func000000000000000a
+	movswl	%si, %eax
+	cmpl	$-28672, %eax                   # imm = 0x9000
+	setge	%al
+	xorb	%dil, %al
+	retq
 func0000000000000004:                   # @func0000000000000004
 	cmpw	$21, %si
 	setb	%al
-	xorb	%dil, %al
-	retq
-func000000000000000a:                   # @func000000000000000a
-	testw	%si, %si
-	setns	%al
 	xorb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008

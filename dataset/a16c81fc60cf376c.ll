@@ -11,12 +11,12 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = and i64 %2, 65534
   %4 = or disjoint i64 %3, 1
-  %5 = getelementptr nusw [65536 x i16], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [65536 x i16], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -24,12 +24,12 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = and i64 %2, 65534
   %4 = or disjoint i64 %3, 1
-  %5 = getelementptr nusw [65536 x i16], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [65536 x i16], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -37,12 +37,12 @@ entry:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = and i64 %2, 2
   %4 = or disjoint i64 %3, 1
-  %5 = getelementptr nusw [4 x i32], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [4 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

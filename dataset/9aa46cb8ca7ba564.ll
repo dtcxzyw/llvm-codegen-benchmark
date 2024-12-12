@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/snapshots.c.ll
 ; graphviz/optimized/ellipse.c.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
@@ -10,6 +10,7 @@
 ; quantlib/optimized/analyticptdhestonengine.ll
 ; quantlib/optimized/coshestonengine.ll
 ; quantlib/optimized/fftvanillaengine.ll
+; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/hestonrndcalculator.ll
 ; quantlib/optimized/integralhestonvarianceoptionengine.ll
 ; Function Attrs: nounwind

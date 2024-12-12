@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 45 occurrences:
 ; clamav/optimized/qtmd.c.ll
 ; clamav/optimized/special.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -26,7 +26,6 @@
 ; linux/optimized/tx.ll
 ; linux/optimized/udp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -54,9 +53,10 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/xhci-ring.ll
+; lvgl/optimized/lv_refr.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; wireshark/optimized/packet-dcp-etsi.c.ll

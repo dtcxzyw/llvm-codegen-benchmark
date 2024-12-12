@@ -25,7 +25,7 @@ entry:
 ; ockam-rs/optimized/4i4les6ijtr4jgtl.ll
 ; ockam-rs/optimized/594kg43rtueps2cx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i8 %0, i64 %1) #0 {
+define i1 @func00000000000000c4(i8 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -3
   %3 = icmp ult i64 %2, -2

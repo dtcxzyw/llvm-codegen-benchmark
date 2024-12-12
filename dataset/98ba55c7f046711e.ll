@@ -5,7 +5,7 @@
 ; minetest/optimized/guiChatConsole.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 120
@@ -29,7 +29,7 @@ entry:
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; openusd/optimized/xformCommonAPI.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 232
@@ -45,7 +45,7 @@ entry:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 40
@@ -62,7 +62,7 @@ entry:
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 80
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000020c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 12

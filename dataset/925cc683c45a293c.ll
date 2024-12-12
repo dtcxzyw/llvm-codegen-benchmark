@@ -1,5 +1,6 @@
 
-; 47 occurrences:
+; 48 occurrences:
+; boost/optimized/area.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
@@ -26,6 +27,7 @@
 ; gromacs/optimized/colvarbias_meta.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; hdf5/optimized/h5diff_array.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -40,7 +42,6 @@
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dlanv2.c.ll
 ; opencv/optimized/lapack.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/lcc.cpp.ll
 ; proj/optimized/vandg.cpp.ll
 ; quantlib/optimized/riskyassetswapoption.ll

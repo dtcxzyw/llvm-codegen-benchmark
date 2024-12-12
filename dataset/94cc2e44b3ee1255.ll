@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 16 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; g2o/optimized/edge_se3_euler.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
@@ -11,33 +11,31 @@
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; opencv/optimized/fast.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; ruby/optimized/date_strftime.ll
-; ruby/optimized/strftime.ll
 ; velox/optimized/FindFirst.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 -8, %1
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
 ; 4 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/typeobject.ll
 ; linux/optimized/ptp_clock.ll
 ; ruby/optimized/date_strftime.ll
-; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 -4, %1
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
@@ -56,11 +54,11 @@ entry:
 ; mitsuba3/optimized/imageblock.cpp.ll
 ; openspiel/optimized/trade_comm.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 11, %1
   %3 = sext i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -74,7 +72,7 @@ define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 2048, %1
   %3 = sext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -88,11 +86,11 @@ entry:
 ; php/optimized/tm2unixtime.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
@@ -103,7 +101,7 @@ define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
   %3 = sext i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -115,7 +113,7 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -124,11 +122,11 @@ entry:
 ; hyperscan/optimized/program_runtime.c.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 4, %1
   %3 = sext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -136,11 +134,25 @@ entry:
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i32 %2 to i64
-  %4 = icmp sle i64 %3, %0
+  %4 = icmp sge i64 %0, %3
+  ret i1 %4
+}
+
+; 4 occurrences:
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 0, %1
+  %3 = sext i32 %2 to i64
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
@@ -155,22 +167,11 @@ entry:
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
 ; icu/optimized/ucnv_ext.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 -2, %1
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; openblas/optimized/dlasyf_aa.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sub i32 3, %1
-  %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 

@@ -4,7 +4,13 @@ func0000000000000002:                   # @func0000000000000002
 	sarq	$32, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000003:                   # @func0000000000000003
+	movl	%edx, %eax
+	addq	%rsi, %rax
+	sarq	$32, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000023:                   # @func0000000000000023
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	sarq	$32, %rax

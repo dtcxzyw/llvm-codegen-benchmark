@@ -1,14 +1,11 @@
 
-; 56 occurrences:
-; cpython/optimized/ceval.ll
+; 50 occurrences:
 ; cpython/optimized/unicodedata.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/simd_prune_kernel.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; gromacs/optimized/xtc3.c.ll
 ; linux/optimized/ah6.ll
@@ -28,7 +25,6 @@
 ; openblas/optimized/dgelsy.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dlalsd.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlasd0.c.ll
 ; openblas/optimized/dlatrs3.c.ll
@@ -36,7 +32,6 @@
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtprfs.c.ll
 ; openblas/optimized/dtrevc3.c.ll
-; openblas/optimized/lapacke_dlaswp_work.c.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
@@ -54,7 +49,6 @@
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/varbit.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
-; quickjs/optimized/libregexp.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
@@ -66,18 +60,11 @@ entry:
   ret ptr %6
 }
 
-; 71 occurrences:
-; abc/optimized/fraClaus.c.ll
-; abc/optimized/fraSim.c.ll
-; abc/optimized/sswSim.c.ll
-; cpython/optimized/ceval.ll
-; cpython/optimized/unicodeobject.ll
-; darktable/optimized/introspection_cacorrect.c.ll
+; 42 occurrences:
 ; gromacs/optimized/dbdsqr.cpp.ll
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/dstebz.cpp.ll
@@ -86,15 +73,9 @@ entry:
 ; gromacs/optimized/slar1vx.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
-; hyperscan/optimized/mcclellancompile.cpp.ll
-; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; libphonenumber/optimized/geocoding_data_test.cc.ll
-; linux/optimized/alternative.ll
-; linux/optimized/trans_virtio.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -120,24 +101,8 @@ entry:
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dstebz.c.ll
 ; openblas/optimized/dtrevc.c.ll
-; opencv/optimized/lrn_layer.cpp.ll
-; openjdk/optimized/classFileParser.ll
-; openjdk/optimized/fieldInfo.ll
-; openjdk/optimized/klass.ll
-; openjdk/optimized/methodData.ll
-; openspiel/optimized/best_response.cc.ll
-; openspiel/optimized/dynamic_routing.cc.ll
-; openspiel/optimized/dynamic_routing_utils.cc.ll
-; openspiel/optimized/history_tree.cc.ll
-; openspiel/optimized/spiel.cc.ll
-; openspiel/optimized/state_distribution.cc.ll
 ; openssl/optimized/libcrypto-lib-rsa_pk1.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
-; postgres/optimized/integerset.ll
-; postgres/optimized/inv_api.ll
-; qemu/optimized/ui_vnc-enc-zrle.c.ll
-; quickjs/optimized/libbf.ll
-; wireshark/optimized/packet-snort-config.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000020(i64 %0, ptr %1, i32 %2) #0 {
 entry:
@@ -148,69 +113,23 @@ entry:
   ret ptr %6
 }
 
-; 273 occurrences:
+; 216 occurrences:
 ; abc/optimized/acbMfs.c.ll
-; abc/optimized/bmcMaj3.c.ll
-; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/fraHot.c.ll
 ; abc/optimized/fraImp.c.ll
 ; abc/optimized/fraSim.c.ll
-; abc/optimized/ifTune.c.ll
-; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/sswSim.c.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
-; cmake/optimized/huf_decompress.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
-; gromacs/optimized/gmx_arpack.cpp.ll
-; gromacs/optimized/huffmem.c.ll
 ; icu/optimized/package.ll
 ; icu/optimized/ucnvsel.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libwebp/optimized/dec_sse2.c.ll
-; llvm/optimized/AArch64CallLowering.cpp.ll
-; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
-; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; llvm/optimized/AArch64LegalizerInfo.cpp.ll
-; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
-; llvm/optimized/AsmPrinter.cpp.ll
-; llvm/optimized/BasicBlockPathCloning.cpp.ll
-; llvm/optimized/CodeViewDebug.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
-; llvm/optimized/IfConversion.cpp.ll
-; llvm/optimized/Legalizer.cpp.ll
-; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/LoadStoreOpt.cpp.ll
-; llvm/optimized/MIRPrinter.cpp.ll
-; llvm/optimized/MachineCSE.cpp.ll
-; llvm/optimized/MachineFunction.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/ModuloSchedule.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/RISCVInstrInfo.cpp.ll
-; llvm/optimized/RISCVInstructionSelector.cpp.ll
-; llvm/optimized/RISCVLegalizerInfo.cpp.ll
-; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
-; llvm/optimized/TailDuplicator.cpp.ll
-; llvm/optimized/TargetInstrInfo.cpp.ll
-; llvm/optimized/X86CallLowering.cpp.ll
-; llvm/optimized/X86ExpandPseudo.cpp.ll
-; llvm/optimized/X86FixupBWInsts.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; llvm/optimized/X86InstructionSelector.cpp.ll
 ; lua/optimized/lobject.ll
 ; luau/optimized/lmem.cpp.ll
 ; meshlab/optimized/GLLogStream.cpp.ll
@@ -237,7 +156,6 @@ entry:
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_script_dialog.cpp.ll
 ; meshlab/optimized/filter_sdfgpu.cpp.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
@@ -263,7 +181,6 @@ entry:
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_Init.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
@@ -284,19 +201,10 @@ entry:
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; meshlab/optimized/radianceScalingRenderer.cpp.ll
 ; meshlab/optimized/render_raster.cpp.ll
-; meshlab/optimized/rich_enum.cpp.ll
-; meshlab/optimized/rich_file_open.cpp.ll
 ; meshlab/optimized/rich_parameter.cpp.ll
 ; meshlab/optimized/rich_parameters.cpp.ll
-; meshlab/optimized/save_project.cpp.ll
-; meshlab/optimized/solver.cpp.ll
-; meshlab/optimized/transferfunction.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; ninja/optimized/ninja.cc.ll
-; nuttx/optimized/lib_hexdumpstream.c.ll
-; opencv/optimized/binary_descriptor_matcher.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
-; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/bfsClosure.ll
@@ -370,7 +278,6 @@ entry:
 ; openjdk/optimized/instanceRefKlass.ll
 ; openjdk/optimized/iterator.ll
 ; openjdk/optimized/jvm.ll
-; openjdk/optimized/klassVtable.ll
 ; openjdk/optimized/method.ll
 ; openjdk/optimized/methodData.ll
 ; openjdk/optimized/mutableSpace.ll
@@ -402,142 +309,189 @@ entry:
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; openmpi/optimized/coll_sm_module.ll
-; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/dynamic_routing_utils.cc.ll
 ; openspiel/optimized/history_tree.cc.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
-; openusd/optimized/patchTreeBuilder.cpp.ll
-; openusd/optimized/stencilTableFactory.cpp.ll
 ; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; protobuf/optimized/enum.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/feature_resolver.cc.ll
 ; protobuf/optimized/field_mask_util.cc.ll
 ; protobuf/optimized/file.cc.ll
+; protobuf/optimized/map.cc.ll
+; protobuf/optimized/message_builder.cc.ll
+; protobuf/optimized/message_builder_lite.cc.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_herringbone_wang_tile.c.ll
-; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 20
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 20
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 10 occurrences:
+; 29 occurrences:
+; abc/optimized/fraClaus.c.ll
+; abc/optimized/fraSim.c.ll
+; abc/optimized/sswSim.c.ll
+; cpython/optimized/ceval.ll
+; cpython/optimized/unicodeobject.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; libphonenumber/optimized/generate_geocoding_data.cc.ll
+; libphonenumber/optimized/geocoding_data_test.cc.ll
+; linux/optimized/alternative.ll
+; linux/optimized/trans_virtio.ll
+; opencv/optimized/cornersubpix.cpp.ll
+; opencv/optimized/lrn_layer.cpp.ll
+; openjdk/optimized/classFileParser.ll
+; openjdk/optimized/fieldInfo.ll
+; openjdk/optimized/klass.ll
+; openjdk/optimized/methodData.ll
+; openspiel/optimized/best_response.cc.ll
+; openspiel/optimized/dynamic_routing.cc.ll
+; openspiel/optimized/dynamic_routing_utils.cc.ll
+; openspiel/optimized/history_tree.cc.ll
+; openspiel/optimized/spiel.cc.ll
+; openspiel/optimized/state_distribution.cc.ll
+; postgres/optimized/integerset.ll
+; postgres/optimized/inv_api.ll
+; qemu/optimized/ui_vnc-enc-zrle.c.ll
+; quickjs/optimized/libbf.ll
+; quickjs/optimized/libregexp.ll
+; wireshark/optimized/packet-snort-config.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000030(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 49824
+  %5 = getelementptr i32, ptr %4, i64 %3
+  %6 = getelementptr i32, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 8 occurrences:
 ; darktable/optimized/print_settings.c.ll
-; gromacs/optimized/gmx_arpack.cpp.ll
 ; meshlab/optimized/additionalgui.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_collada.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; openblas/optimized/dbdsvdx.c.ll
 ; openjdk/optimized/klassVtable.ll
 ; openjdk/optimized/methodData.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000038(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 304
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 304
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 77 occurrences:
+; 85 occurrences:
+; abc/optimized/bmcMaj3.c.ll
+; abc/optimized/cbaReadVer.c.ll
+; abc/optimized/fraClaus.c.ll
+; abc/optimized/fraSim.c.ll
 ; abc/optimized/ifTune.c.ll
-; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/str_split_test.cc.ll
+; abc/optimized/ioReadBlifMv.c.ll
+; abc/optimized/sswSim.c.ll
 ; bullet3/optimized/btMultiBody.ll
-; gromacs/optimized/simd_prune_kernel.cpp.ll
-; meshlab/optimized/GLLogStream.cpp.ll
-; meshlab/optimized/action_searcher.cpp.ll
-; meshlab/optimized/baseio.cpp.ll
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/decorate_base.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_camera.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
-; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/filter_io_nxs.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
-; meshlab/optimized/filter_layer.cpp.ll
-; meshlab/optimized/filter_mutualglobal.cpp.ll
-; meshlab/optimized/filter_mutualinfo.cpp.ll
-; meshlab/optimized/filter_plugin.cpp.ll
-; meshlab/optimized/filter_qhull.cpp.ll
-; meshlab/optimized/filter_sampling.cpp.ll
-; meshlab/optimized/filter_sdfgpu.cpp.ll
+; cmake/optimized/huf_decompress.c.ll
+; gromacs/optimized/huffmem.c.ll
+; llvm/optimized/AArch64CallLowering.cpp.ll
+; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
+; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/AArch64LegalizerInfo.cpp.ll
+; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AsmPrinter.cpp.ll
+; llvm/optimized/BasicBlockPathCloning.cpp.ll
+; llvm/optimized/CodeViewDebug.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/IfConversion.cpp.ll
+; llvm/optimized/Legalizer.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; llvm/optimized/LoadStoreOpt.cpp.ll
+; llvm/optimized/MIRPrinter.cpp.ll
+; llvm/optimized/MachineCSE.cpp.ll
+; llvm/optimized/MachineFunction.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/ModuloSchedule.cpp.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
+; llvm/optimized/RISCVInstructionSelector.cpp.ll
+; llvm/optimized/RISCVLegalizerInfo.cpp.ll
+; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
+; llvm/optimized/TailDuplicator.cpp.ll
+; llvm/optimized/TargetInstrInfo.cpp.ll
+; llvm/optimized/X86CallLowering.cpp.ll
+; llvm/optimized/X86ExpandPseudo.cpp.ll
+; llvm/optimized/X86FixupBWInsts.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; llvm/optimized/X86InstructionSelector.cpp.ll
+; meshlab/optimized/additionalgui.cpp.ll
+; meshlab/optimized/filter_script_dialog.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/filter_trioptimize.cpp.ll
-; meshlab/optimized/filter_unsharp.cpp.ll
-; meshlab/optimized/filter_voronoi.cpp.ll
-; meshlab/optimized/filterqualitymapper.cpp.ll
-; meshlab/optimized/function.cpp.ll
-; meshlab/optimized/function_parameter.cpp.ll
-; meshlab/optimized/function_set.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
-; meshlab/optimized/io_bre.cpp.ll
 ; meshlab/optimized/io_collada.cpp.ll
-; meshlab/optimized/io_ctm.cpp.ll
-; meshlab/optimized/io_e57.cpp.ll
 ; meshlab/optimized/io_expe.cpp.ll
-; meshlab/optimized/io_gltf.cpp.ll
-; meshlab/optimized/io_json.cpp.ll
-; meshlab/optimized/io_pdb.cpp.ll
-; meshlab/optimized/io_plugin_container.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
-; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
-; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_Init.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/meshio.cpp.ll
-; meshlab/optimized/meshselect.cpp.ll
-; meshlab/optimized/mlsplugin.cpp.ll
-; meshlab/optimized/mytrenderer.cpp.ll
-; meshlab/optimized/options_dialog.cpp.ll
-; meshlab/optimized/pickpointsDialog.cpp.ll
-; meshlab/optimized/plugin_info_dialog.cpp.ll
-; meshlab/optimized/plugin_manager.cpp.ll
-; meshlab/optimized/python_utils.cpp.ll
-; meshlab/optimized/rich_parameter.cpp.ll
-; meshlab/optimized/rich_parameters.cpp.ll
+; meshlab/optimized/ml_render_gui.cpp.ll
+; meshlab/optimized/multiViewer_Container.cpp.ll
+; meshlab/optimized/qualitymapperdialog.cpp.ll
+; meshlab/optimized/render_raster.cpp.ll
+; meshlab/optimized/rich_enum.cpp.ll
+; meshlab/optimized/rich_file_open.cpp.ll
+; meshlab/optimized/save_project.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
-; protobuf/optimized/command_line_interface.cc.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/descriptor_database.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/feature_resolver.cc.ll
-; protobuf/optimized/file.cc.ll
-; protobuf/optimized/map.cc.ll
-; protobuf/optimized/message_builder.cc.ll
-; protobuf/optimized/message_builder_lite.cc.ll
+; meshlab/optimized/transferfunction.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; nuttx/optimized/lib_hexdumpstream.c.ll
+; opencv/optimized/binary_descriptor_matcher.cpp.ll
+; opencv/optimized/tree.cpp.ll
+; openjdk/optimized/klassVtable.ll
+; openjdk/optimized/verifier.ll
+; openspiel/optimized/bridge.cc.ll
+; openusd/optimized/patchTreeBuilder.cpp.ll
+; openusd/optimized/reconintra.c.ll
+; openusd/optimized/stencilTableFactory.cpp.ll
+; raylib/optimized/raudio.c.ll
+; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_herringbone_wang_tile.c.ll
+; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 24
-  %5 = getelementptr float, ptr %4, i64 %3
-  %6 = getelementptr nusw float, ptr %5, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 56
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -557,6 +511,39 @@ entry:
   ret ptr %6
 }
 
+; 6 occurrences:
+; gromacs/optimized/gmx_arpack.cpp.ll
+; libwebp/optimized/dec_sse2.c.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; opencv/optimized/brisk.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002a(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %1, i64 -8
+  %5 = getelementptr nusw double, ptr %4, i64 %3
+  %6 = getelementptr nusw double, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 5 occurrences:
+; gromacs/optimized/gmx_arpack.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; openblas/optimized/dbdsvdx.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000028(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %1, i64 -8
+  %5 = getelementptr nusw double, ptr %4, i64 %3
+  %6 = getelementptr double, ptr %5, i64 %0
+  ret ptr %6
+}
+
 ; 1 occurrences:
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; Function Attrs: nounwind
@@ -566,6 +553,33 @@ entry:
   %4 = getelementptr nusw i8, ptr %1, i64 -8
   %5 = getelementptr double, ptr %4, i64 %3
   %6 = getelementptr nusw double, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 4 occurrences:
+; gromacs/optimized/simd_prune_kernel.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %1, i64 16
+  %5 = getelementptr float, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw float, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; ninja/optimized/ninja.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %1, i64 -8
+  %5 = getelementptr nusw ptr, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %0
   ret ptr %6
 }
 

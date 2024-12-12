@@ -46,7 +46,22 @@ func0000000000000013:                   # @func0000000000000013
 .LBB7_2:                                # %entry
 	addw	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000060:                   # @func0000000000000060
+	lui	a3, 1
+	bgeu	a3, a2, .LBB8_2
+	lui	a1, 1
+.LBB8_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+func0000000000000053:                   # @func0000000000000053
+	li	a3, 19
+	bgeu	a2, a3, .LBB9_2
+	li	a1, 17
+	slli	a1, a1, 8
+.LBB9_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+func0000000000000051:                   # @func0000000000000051
 	sltiu	a2, a2, 4
 	addi	a2, a2, -1
 	and	a1, a1, a2

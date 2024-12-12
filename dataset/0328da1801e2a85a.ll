@@ -12,10 +12,10 @@ entry:
 }
 
 ; 6 occurrences:
+; abc/optimized/fraigUtil.c.ll
 ; abc/optimized/giaDup.c.ll
 ; darktable/optimized/metadata.c.ll
 ; linux/optimized/neighbour.ll
-; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; Function Attrs: nounwind

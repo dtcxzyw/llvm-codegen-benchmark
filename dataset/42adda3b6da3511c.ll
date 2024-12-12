@@ -1,16 +1,16 @@
 
-%"struct.std::pair.295.2499510" = type { i64, %"struct.rocksdb::TrackedTrxInfo.2499499" }
-%"struct.rocksdb::TrackedTrxInfo.2499499" = type { %"class.rocksdb::autovector.50.2499484", i32, i8, %"class.std::__cxx11::basic_string.2499494" }
-%"class.rocksdb::autovector.50.2499484" = type { i64, [64 x i8], ptr, %"class.std::vector.51.2499485" }
-%"class.std::vector.51.2499485" = type { %"struct.std::_Vector_base.52.2499486" }
-%"struct.std::_Vector_base.52.2499486" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2499487" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2499487" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2499488" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2499488" = type { ptr, ptr, ptr }
-%"class.std::__cxx11::basic_string.2499494" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2499495", i64, %union.anon.2499496 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2499495" = type { ptr }
-%union.anon.2499496 = type { i64, [8 x i8] }
-%"class.QuantLib::Date.2722815" = type { i64 }
-%struct.Vec_Int_t_.2764346 = type { i32, i32, ptr }
+%"struct.std::pair.295.2614743" = type { i64, %"struct.rocksdb::TrackedTrxInfo.2614732" }
+%"struct.rocksdb::TrackedTrxInfo.2614732" = type { %"class.rocksdb::autovector.50.2614717", i32, i8, %"class.std::__cxx11::basic_string.2614727" }
+%"class.rocksdb::autovector.50.2614717" = type { i64, [64 x i8], ptr, %"class.std::vector.51.2614718" }
+%"class.std::vector.51.2614718" = type { %"struct.std::_Vector_base.52.2614719" }
+%"struct.std::_Vector_base.52.2614719" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2614720" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2614720" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2614721" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2614721" = type { ptr, ptr, ptr }
+%"class.std::__cxx11::basic_string.2614727" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2614728", i64, %union.anon.2614729 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2614728" = type { ptr }
+%union.anon.2614729 = type { i64, [8 x i8] }
+%"class.QuantLib::Date.2835313" = type { i64 }
+%struct.Vec_Int_t_.2876606 = type { i32, i32, ptr }
 
 ; 5 occurrences:
 ; rocksdb/optimized/compaction_merging_iterator.cc.ll
@@ -21,17 +21,16 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.std::pair.295.2499510", ptr %0, i64 %1
-  %4 = getelementptr %"struct.std::pair.295.2499510", ptr %3, i64 %2
+  %3 = getelementptr %"struct.std::pair.295.2614743", ptr %0, i64 %1
+  %4 = getelementptr %"struct.std::pair.295.2614743", ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -304
   ret ptr %5
 }
 
-; 2 occurrences:
-; clamav/optimized/pdf.c.ll
+; 1 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %2
@@ -44,8 +43,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.QuantLib::Date.2722815", ptr %0, i64 %1
-  %4 = getelementptr %"class.QuantLib::Date.2722815", ptr %3, i64 %2
+  %3 = getelementptr %"class.QuantLib::Date.2835313", ptr %0, i64 %1
+  %4 = getelementptr %"class.QuantLib::Date.2835313", ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -65,10 +64,10 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.Vec_Int_t_.2764346, ptr %0, i64 %1
-  %4 = getelementptr %struct.Vec_Int_t_.2764346, ptr %3, i64 %2
+  %3 = getelementptr %struct.Vec_Int_t_.2876606, ptr %0, i64 %1
+  %4 = getelementptr %struct.Vec_Int_t_.2876606, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 20
   ret ptr %5
 }
@@ -77,7 +76,7 @@ entry:
 ; lief/optimized/ssl_tls12_server.c.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000f8(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000fc(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %2
@@ -85,13 +84,12 @@ entry:
   ret ptr %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
-; brotli/optimized/backward_references_hq.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %2

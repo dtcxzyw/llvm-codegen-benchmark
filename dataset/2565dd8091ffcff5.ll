@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/bmcMaj.c.ll
-; icu/optimized/ubidiwrt.ll
 ; openssl/optimized/libcrypto-lib-curve448.ll
 ; openssl/optimized/libcrypto-shlib-curve448.ll
 ; wireshark/optimized/packet-f5ethtrailer.c.ll
@@ -29,10 +28,10 @@ entry:
 }
 
 ; 4 occurrences:
-; abc/optimized/bmcMaj.c.ll
 ; git/optimized/rebase.ll
 ; git/optimized/userdiff.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:

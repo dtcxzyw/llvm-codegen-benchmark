@@ -61,15 +61,4 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; openblas/optimized/parameter.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
-entry:
-  %2 = sdiv i64 %1, 16
-  %3 = shl nsw i64 %2, 4
-  %4 = select i1 %0, i64 64, i64 %3
-  ret i64 %4
-}
-
 attributes #0 = { nounwind }

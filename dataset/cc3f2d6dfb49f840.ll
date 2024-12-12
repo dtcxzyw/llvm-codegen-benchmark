@@ -20,27 +20,38 @@ entry:
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/g1CollectedHeap.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw ptr, ptr %3, i64 %0
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %0
   %5 = sub i64 0, %1
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 4 occurrences:
-; cmake/optimized/cmCTestBinPacker.cxx.ll
+; 1 occurrences:
 ; hermes/optimized/Interpreter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw i32, ptr %3, i64 %0
+  %5 = sub nsw i64 0, %1
+  %6 = getelementptr nusw i32, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
+; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/yv12extend.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i32, ptr %3, i64 %0
+  %4 = getelementptr nusw i16, ptr %3, i64 %0
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw i32, ptr %4, i64 %5
+  %6 = getelementptr nusw i16, ptr %4, i64 %5
   ret ptr %6
 }
 

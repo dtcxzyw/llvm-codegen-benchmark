@@ -1,6 +1,6 @@
 
-%struct.OnigCacheOpcode.2485740 = type { ptr, i64, i32, i64, i64, i32, ptr }
-%"struct.grpc_core::(anonymous namespace)::RingHash::Ring::RingEntry.3403416" = type { i64, i64 }
+%struct.OnigCacheOpcode.2601213 = type { ptr, i64, i32, i64, i64, i32, ptr }
+%"struct.grpc_core::(anonymous namespace)::RingHash::Ring::RingEntry.3588068" = type { i64, i64 }
 
 ; 2 occurrences:
 ; cpython/optimized/_posixsubprocess.ll
@@ -10,11 +10,11 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = sdiv i64 %3, 2
-  %5 = getelementptr %struct.OnigCacheOpcode.2485740, ptr %0, i64 %4
+  %5 = getelementptr %struct.OnigCacheOpcode.2601213, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 366 occurrences:
+; 361 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/align_util.cc.ll
@@ -35,6 +35,7 @@ entry:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function.cpp.ll
@@ -173,13 +174,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -253,8 +251,6 @@ entry:
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -323,7 +319,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -431,7 +426,7 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv i64 %3, 2
-  %5 = getelementptr %"struct.grpc_core::(anonymous namespace)::RingHash::Ring::RingEntry.3403416", ptr %0, i64 %4
+  %5 = getelementptr %"struct.grpc_core::(anonymous namespace)::RingHash::Ring::RingEntry.3588068", ptr %0, i64 %4
   ret ptr %5
 }
 

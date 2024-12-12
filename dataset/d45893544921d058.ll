@@ -1,8 +1,7 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; llvm/optimized/CGExprAgg.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
@@ -20,7 +19,8 @@ entry:
   ret i8 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; linux/optimized/keyboard.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 1017 occurrences:
+; 1009 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acbFunc.c.ll
@@ -70,6 +70,9 @@
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DImporter_Metadata.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/options_description.ll
+; boost/optimized/read_graphviz_new.ll
 ; c3c/optimized/asm_target.c.ll
 ; c3c/optimized/sema_asm.c.ll
 ; c3c/optimized/target.c.ll
@@ -87,7 +90,6 @@
 ; casadi/optimized/sx_function.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; clamav/optimized/communication.c.ll
-; clamav/optimized/fanotif.c.ll
 ; clamav/optimized/inotif.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/netcode.c.ll
@@ -236,7 +238,6 @@
 ; linux/optimized/hsu.ll
 ; linux/optimized/intel_display_power_map.ll
 ; linux/optimized/intel_modeset_setup.ll
-; linux/optimized/intel_pconfig.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/mpi-bit.ll
 ; linux/optimized/netlabel_kapi.ll
@@ -366,7 +367,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMoveMerger.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPushPopOptimizer.cpp.ll
@@ -522,13 +522,10 @@
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -792,9 +789,6 @@
 ; postgres/optimized/tidbitmap.ll
 ; postgres/optimized/tsquery_op.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/enum.cc.ll
 ; protobuf/optimized/subprocess.cc.ll
@@ -871,7 +865,6 @@
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -985,7 +978,6 @@
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wireshark/optimized/androiddump.c.ll
-; wireshark/optimized/ws_pipe.c.ll
 ; wolfssl/optimized/client.c.ll
 ; wolfssl/optimized/server.c.ll
 ; wolfssl/optimized/sp_int.c.ll
@@ -1022,11 +1014,11 @@ define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
-; 138 occurrences:
+; 136 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -1096,8 +1088,6 @@ entry:
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -1170,11 +1160,11 @@ define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
-; 245 occurrences:
+; 243 occurrences:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -1182,6 +1172,7 @@ entry:
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/nlp_builder.cpp.ll
 ; casadi/optimized/optistack_internal.cpp.ll
@@ -1217,7 +1208,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_serialization.cpp.ll
 ; entt/optimized/meta_container.cpp.ll
-; git/optimized/combine-diff.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; glslang/optimized/SpvPostProcess.cpp.ll
@@ -1303,8 +1293,6 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -1425,7 +1413,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -1456,7 +1444,7 @@ define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -1584,7 +1572,7 @@ define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -1600,7 +1588,7 @@ define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -1618,7 +1606,7 @@ define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 2, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

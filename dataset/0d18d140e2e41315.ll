@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_clahe.c.ll
 ; darktable/optimized/introspection_globaltonemap.c.ll
@@ -12,6 +12,7 @@
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/waldboost.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, double %1) #0 {
 entry:

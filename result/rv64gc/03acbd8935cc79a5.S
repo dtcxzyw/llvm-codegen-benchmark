@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	srlw	a1, a1, a2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
@@ -10,13 +10,13 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	srlw	a1, a1, a2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	srlw	a1, a1, a2
 	addiw	a0, a0, 1
 	slt	a0, a0, a1

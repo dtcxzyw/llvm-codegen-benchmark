@@ -1,17 +1,23 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	andi	a1, a1, 255
 	seqz	a1, a1
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
-func0000000000000062:                   # @func0000000000000062
+func00000000000000a3:                   # @func00000000000000a3
+	andi	a1, a1, 255
+	sltiu	a1, a1, 2
+	slli	a1, a1, 2
+	add	a0, a0, a1
+	ret
+func0000000000000063:                   # @func0000000000000063
 	andi	a1, a1, 255
 	snez	a1, a1
 	slli	a2, a1, 1
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	andi	a1, a1, 255
 	sltiu	a1, a1, 3
 	slli	a1, a1, 3
@@ -32,7 +38,7 @@ func0000000000000050:                   # @func0000000000000050
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
-func0000000000000052:                   # @func0000000000000052
+func0000000000000053:                   # @func0000000000000053
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	sgtz	a1, a1

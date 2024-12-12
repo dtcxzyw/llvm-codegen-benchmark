@@ -22,7 +22,7 @@ func0000000000000010:                   # @func0000000000000010
 	vsrl.vx	v14, v10, a0
 	vadd.vv	v10, v10, v14
 	vsra.vi	v12, v12, 1
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vsra.vi	v10, v10, 1
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v8
@@ -38,7 +38,7 @@ func0000000000000014:                   # @func0000000000000014
 	vsrl.vx	v14, v14, a1
 	vadd.vv	v10, v10, v14
 	vsra.vi	v12, v12, 2
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vsra.vi	v10, v10, 2
 	vadd.vv	v8, v8, v10
 	vsll.vi	v8, v8, 2

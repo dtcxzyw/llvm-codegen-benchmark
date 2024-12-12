@@ -5,7 +5,7 @@ func000000000000000a:                   # @func000000000000000a
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	subw	a2, a2, a1
 	addiw	a2, a2, 1
 	sgtz	a1, a2

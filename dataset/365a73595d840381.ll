@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; folly/optimized/Conv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000058(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -17,7 +17,7 @@ entry:
 ; folly/optimized/Conv.cpp.ll
 ; llvm/optimized/regcomp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000302(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/browscap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000108(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -40,10 +40,24 @@ entry:
   ret i1 %7
 }
 
+; 2 occurrences:
+; boost/optimized/query_rule.ll
+; llvm/optimized/DependencyDirectivesScanner.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000030c(i8 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = icmp slt i64 %4, 3
+  %6 = icmp ne i8 %0, 37
+  %7 = or i1 %5, %6
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; lodepng/optimized/pngdetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000048(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -53,24 +67,11 @@ entry:
   ret i1 %7
 }
 
-; 1 occurrences:
-; llvm/optimized/DependencyDirectivesScanner.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000018c(i8 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = icmp slt i64 %4, 2
-  %6 = icmp ne i8 %0, 47
-  %7 = or i1 %5, %6
-  ret i1 %7
-}
-
 ; 2 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000318(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -81,22 +82,9 @@ entry:
 }
 
 ; 1 occurrences:
-; cmake/optimized/json_writer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000010c(i8 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = icmp slt i64 %4, 4
-  %6 = icmp ugt i8 %0, -9
-  %7 = or i1 %5, %6
-  ret i1 %7
-}
-
-; 1 occurrences:
 ; cmake/optimized/archive_write_set_format_pax.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000054(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

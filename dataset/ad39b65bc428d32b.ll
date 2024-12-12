@@ -1,8 +1,11 @@
 
-; 94 occurrences:
+; 102 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/entropy_encode.c.ll
+; brotli/optimized/histogram.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -33,6 +36,7 @@
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/DWARFFormValue.cpp.ll
+; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/LangOptions.cpp.ll
 ; llvm/optimized/MachineRegisterInfo.cpp.ll
 ; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
@@ -57,9 +61,11 @@
 ; postgres/optimized/walreceiver.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/hw_pci_pci_bridge.c.ll
+; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; qemu/optimized/util_iov.c.ll
 ; regex-rs/optimized/43rm3k0zg7aeemwj.ll
 ; regex-rs/optimized/5gojg14e35fgi63k.ll
+; ring-rs/optimized/4krjvpwhiya9iudo.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/stringio.ll
@@ -85,6 +91,7 @@
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokio-rs/optimized/akiz5wks12hp4ug.ll
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/27y5mf4j2qnj7fax.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
@@ -92,8 +99,9 @@
 ; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
-; wireshark/optimized/syntax-tree.c.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/3ly3b3fonqg7nd45488b8bsgs.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i1 %2) #0 {
 entry:

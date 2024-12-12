@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; coreutils-rs/optimized/2tikf1yvlgbemzkv.ll
 ; cpython/optimized/exceptions.ll
 ; cvc5/optimized/synth_rew_rules.cpp.ll
@@ -8,7 +8,6 @@
 ; llvm/optimized/driver.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; php/optimized/zend_jit_vm_helpers.ll
-; proj/optimized/io.cpp.ll
 ; tree-sitter-rs/optimized/1cv8rmziqotlzxv3.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i32 %1) #0 {

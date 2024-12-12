@@ -58,13 +58,13 @@
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 27
   %4 = add i64 %3, 4294967296
   %5 = ashr exact i64 %4, 27
   %6 = getelementptr nusw i8, ptr %1, i64 %5
-  %7 = icmp eq ptr %6, %0
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
@@ -74,13 +74,13 @@ entry:
 ; opencv/optimized/ann_mlp.cpp.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 30
   %4 = add i64 %3, 4294967296
   %5 = ashr i64 %4, 32
   %6 = getelementptr nusw i32, ptr %1, i64 %5
-  %7 = icmp eq ptr %6, %0
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 

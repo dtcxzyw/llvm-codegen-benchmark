@@ -78,8 +78,8 @@ func000000000000003d:                   # @func000000000000003d
 	addiw	a0, a0, 2
 	ret
 func000000000000003f:                   # @func000000000000003f
-	slli	a0, a0, 10
-	addiw	a0, a0, 1024
+	slli	a0, a0, 2
+	addiw	a0, a0, 12
 	ret
 func000000000000003e:                   # @func000000000000003e
 	slli	a0, a0, 2

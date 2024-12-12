@@ -7,7 +7,7 @@ entry:
   %3 = fneg float %2
   %4 = fdiv float %3, %1
   %5 = fcmp une float %4, 0x7FF0000000000000
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = fneg float %2
   %4 = fdiv float %3, %1
   %5 = fcmp ole float %4, 1.000000e+00
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -63,7 +63,7 @@ entry:
   %3 = fneg float %2
   %4 = fdiv float %3, %1
   %5 = fcmp ule float %4, 1.000000e+00
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

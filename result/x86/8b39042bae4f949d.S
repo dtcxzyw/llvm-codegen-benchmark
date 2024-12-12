@@ -12,7 +12,7 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func0000000000000002:                   # @func0000000000000002
 	vmulsd	%xmm2, %xmm2, %xmm2
-	vmulsd	%xmm1, %xmm2, %xmm1
+	vmulsd	%xmm2, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%al
 	retq

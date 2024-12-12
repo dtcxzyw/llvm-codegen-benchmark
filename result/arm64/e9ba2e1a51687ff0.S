@@ -1,28 +1,24 @@
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
 	mov	w8, #360                        // =0x168
-	sub	v1.4s, v1.4s, v2.4s
-	dup	v2.4s, w8
-	mla	v0.4s, v1.4s, v2.4s
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	sub	w9, w1, w2
+	madd	w8, w9, w8, w0
+	sxtw	x0, w8
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	movi	v3.4s, #50
-	sub	v1.4s, v1.4s, v2.4s
-	mla	v0.4s, v1.4s, v3.4s
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	mov	w8, #50                         // =0x32
+	sub	w9, w1, w2
+	madd	w8, w9, w8, w0
+	sxtw	x0, w8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v3.4s, #12
-	sub	v1.4s, v1.4s, v2.4s
-	mla	v0.4s, v1.4s, v3.4s
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	mov	w8, #12                         // =0xc
+	sub	w9, w1, w2
+	madd	w8, w9, w8, w0
+	sxtw	x0, w8
 	ret
                                         // -- End function

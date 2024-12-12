@@ -1,22 +1,12 @@
 
-; 1 occurrences:
-; openjdk/optimized/vm_version_x86.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 1
-  %4 = select i1 %3, i64 %0, i64 %1
-  %5 = or i64 %4, 16
-  ret i64 %5
-}
-
-; 10 occurrences:
+; 11 occurrences:
 ; git/optimized/http.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/task_mmu.ll
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
@@ -30,7 +20,7 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; linux/optimized/ds.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/hid-sony.ll
@@ -39,6 +29,7 @@ entry:
 ; linux/optimized/page.ll
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/Solaris.cpp.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll

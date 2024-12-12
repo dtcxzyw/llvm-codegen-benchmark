@@ -39,7 +39,7 @@
 func0000000000000007:                   # @func0000000000000007
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm2, %xmm2
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
-	vpternlogq	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
 	retq
 .LCPI1_0:

@@ -1,5 +1,7 @@
 
-; 16 occurrences:
+; 18 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/rose_build_anchored.cpp.ll

@@ -13,23 +13,24 @@
 ; nuklear/optimized/unity.c.ll
 ; qemu/optimized/gdbstub.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = icmp ult i32 %2, 10
+  %3 = icmp samesign ult i32 %2, 10
   %4 = add nuw nsw i32 %2, 87
   %5 = select i1 %3, i32 %0, i32 %4
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = add nsw i32 %2, -127
-  %4 = icmp ult i32 %2, 127
+  %4 = icmp samesign ult i32 %2, 127
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }
@@ -38,11 +39,11 @@ entry:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = add nuw nsw i32 %2, 1
-  %4 = icmp ugt i32 %2, 15
+  %4 = icmp samesign ugt i32 %2, 15
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }
@@ -50,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vc_screen.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = icmp eq i32 %2, 0
@@ -62,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/ptsetreg.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 511
   %3 = add nuw nsw i32 %2, 1

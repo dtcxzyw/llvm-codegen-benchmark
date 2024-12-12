@@ -1,11 +1,10 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; cpython/optimized/_stat.ll
 ; cpython/optimized/assemble.ll
 ; icu/optimized/unames.ll
-; linux/optimized/eht.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/namei_msdos.ll
 ; linux/optimized/nl80211.ll

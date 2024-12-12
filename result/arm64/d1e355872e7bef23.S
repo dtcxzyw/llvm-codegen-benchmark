@@ -5,6 +5,18 @@ func000000000000000a:                   // @func000000000000000a
 	and	x0, x8, #0xfffffffffffffff8
 	ret
                                         // -- End function
+func000000000000000b:                   // @func000000000000000b
+// %bb.0:                               // %entry
+	add	x8, x1, x2
+	add	x8, x8, x0
+	and	x0, x8, #0xfffffffffffffff8
+	ret
+                                        // -- End function
+func000000000000000e:                   // @func000000000000000e
+// %bb.0:                               // %entry
+	and	x0, x1, #0x7
+	ret
+                                        // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	add	x8, x1, x2, lsl #3
@@ -13,6 +25,11 @@ func0000000000000000:                   // @func0000000000000000
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	and	x0, x1, #0x7
+	ret
+                                        // -- End function
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	and	x0, x1, #0x7
 	ret

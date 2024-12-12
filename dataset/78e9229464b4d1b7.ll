@@ -1,9 +1,8 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; cpython/optimized/instrumentation.ll
 ; cvc5/optimized/fc_simplex.cpp.ll
-; gromacs/optimized/domdec_network.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; jq/optimized/regexec.ll
 ; llvm/optimized/CGExprConstant.cpp.ll

@@ -10,5 +10,5 @@ func0000000000000005:                   # @func0000000000000005
 	subq	%rdx, %rax
 	testq	%rsi, %rsi
 	cmoveq	%rdi, %rax
-	decq	%rax
+	addq	$8, %rax
 	retq

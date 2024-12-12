@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/HBShaper.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = shl nsw i32 %3, 1
@@ -39,12 +39,12 @@ entry:
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007f8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 1
   %5 = add nuw nsw i32 %4, 5
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp samesign ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -52,7 +52,7 @@ entry:
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003d6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 1

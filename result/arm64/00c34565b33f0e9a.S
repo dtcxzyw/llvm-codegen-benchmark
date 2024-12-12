@@ -1,65 +1,36 @@
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	bic	v2.4h, #255, lsl #8
+                                        // kill: def $w1 killed $w1 def $x1
 	mov	x8, #-65536                     // =0xffffffffffff0000
+	and	x9, x1, #0xff
 	movk	x8, #64673, lsl #16
-	ushll	v2.4s, v2.4h, #0
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v3.16b, v0.16b
-	dup	v2.2d, x8
-	shl	v0.2d, v0.2d, #10
-	shl	v1.2d, v1.2d, #10
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	orr	x9, x0, x9
+	add	x0, x8, x9, lsl #10
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	bic	v2.4h, #255, lsl #8
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x9, x1, #0xff
 	mov	w8, #16777216                   // =0x1000000
-	ushll	v2.4s, v2.4h, #0
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v3.16b, v0.16b
-	dup	v2.2d, x8
-	shl	v0.2d, v0.2d, #24
-	shl	v1.2d, v1.2d, #24
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	orr	x9, x0, x9
+	add	x0, x8, x9, lsl #24
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	bic	v2.4h, #255, lsl #8
-	mov	w8, #2                          // =0x2
-	ushll	v2.4s, v2.4h, #0
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v3.16b, v0.16b
-	dup	v2.2d, x8
-	add	v0.2d, v0.2d, v0.2d
-	add	v1.2d, v1.2d, v1.2d
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0xff
+	orr	x8, x0, x8
+	lsl	x8, x8, #1
+	add	x0, x8, #2
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	bic	v2.4h, #255, lsl #8
+	and	w9, w1, #0xff
 	mov	x8, #140737488355328            // =0x800000000000
-	ushll	v2.4s, v2.4h, #0
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v0.16b, v3.16b, v0.16b
-	dup	v2.2d, x8
-	shl	v0.2d, v0.2d, #40
-	shl	v1.2d, v1.2d, #40
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	orr	w9, w0, w9
+	add	x0, x8, x9, lsl #40
 	ret
                                         // -- End function

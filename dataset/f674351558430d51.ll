@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; linux/optimized/uid16.ll
+; 3 occurrences:
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; ncnn/optimized/mat_pixel.cpp.ll

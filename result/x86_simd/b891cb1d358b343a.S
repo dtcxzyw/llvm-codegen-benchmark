@@ -55,10 +55,18 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI7_0:
+	.long	128                             # 0x80
+func000000000000000a:                   # @func000000000000000a
+	vpslld	$4, %xmm0, %xmm0
+	vpbroadcastd	.LCPI7_0(%rip), %xmm1   # xmm1 = [128,128,128,128]
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+.LCPI8_0:
 	.long	686                             # 0x2ae
 func000000000000000b:                   # @func000000000000000b
 	vpaddd	%xmm0, %xmm0, %xmm0
-	vpbroadcastd	.LCPI7_0(%rip), %xmm1   # xmm1 = [686,686,686,686]
+	vpbroadcastd	.LCPI8_0(%rip), %xmm1   # xmm1 = [686,686,686,686]
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq

@@ -62,17 +62,17 @@ entry:
 ; libwebp/optimized/anim_encode.c.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/beblid.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
-; openjdk/optimized/TransformHelper.ll
 ; openmpi/optimized/coll_adapt_ibcast.ll
 ; openmpi/optimized/coll_adapt_ireduce.ll
 ; postgres/optimized/selfuncs.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp slt i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 %1
+  %3 = icmp slt i32 %2, 7
+  %4 = select i1 %3, i32 1, i32 %1
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }

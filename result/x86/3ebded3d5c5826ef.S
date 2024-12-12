@@ -22,10 +22,10 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movq	%rdi, %rax
-	testb	$1, %dl
-	cmoveq	%rsi, %rax
 	cmpq	$2, %rsi
 	cmovaeq	%rsi, %rax
+	testb	$1, %dl
+	cmoveq	%rsi, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movq	%rdi, %rax

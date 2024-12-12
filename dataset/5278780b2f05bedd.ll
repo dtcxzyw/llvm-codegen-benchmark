@@ -1,5 +1,5 @@
 
-; 239 occurrences:
+; 237 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -101,7 +101,6 @@
 ; gromacs/optimized/sgemv.cpp.ll
 ; gromacs/optimized/slae2.cpp.ll
 ; gromacs/optimized/slaev2.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
@@ -162,7 +161,6 @@
 ; msdfgen/optimized/main.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/boostdesc.cpp.ll

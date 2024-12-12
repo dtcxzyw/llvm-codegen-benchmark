@@ -19,6 +19,12 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 127
 	vmsgtu.vx	v0, v8, a0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vxor.vv	v8, v8, v10
+	li	a0, 128
+	vmsltu.vx	v0, v8, a0
+	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vxor.vv	v8, v8, v10
@@ -36,4 +42,11 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a1, a0, 32
 	add.uw	a0, a0, a1
 	vmsne.vx	v0, v8, a0
+	ret
+func0000000000000018:                   # @func0000000000000018
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vxor.vv	v8, v8, v10
+	lui	a0, 524288
+	addiw	a0, a0, -1
+	vmsgtu.vx	v0, v8, a0
 	ret

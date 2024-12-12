@@ -73,7 +73,7 @@ entry:
   ret ptr %4
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; gromacs/optimized/bench_system.cpp.ll
@@ -84,7 +84,6 @@ entry:
 ; gromacs/optimized/listed_forces.cpp.ll
 ; gromacs/optimized/nbnxmsetuphelpers.cpp.ll
 ; gromacs/optimized/wallcycle.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
 ; minetest/optimized/CBillboardSceneNode.cpp.ll
 ; minetest/optimized/CBoneSceneNode.cpp.ll
@@ -97,7 +96,6 @@ entry:
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/sky.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
-; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/select3dobj.cpp.ll
 ; wireshark/optimized/atap_data_model.cpp.ll
 ; wireshark/optimized/decode_as_delegate.cpp.ll
@@ -113,19 +111,10 @@ entry:
   ret ptr %4
 }
 
-; 1 occurrences:
-; arrow/optimized/csx_converter.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = ptrtoint ptr %0 to i64
-  %.neg = sub i64 %1, %2
-  %3 = getelementptr i8, ptr %0, i64 %.neg
-  %4 = getelementptr i8, ptr %3, i64 16
-  ret ptr %4
-}
-
-; 1 occurrences:
+; 4 occurrences:
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; opencv/optimized/cv2.cpp.ll
+; opencv/optimized/select3dobj.cpp.ll
 ; tev/optimized/Ipc.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
@@ -133,7 +122,7 @@ entry:
   %2 = ptrtoint ptr %0 to i64
   %.neg = sub i64 %1, %2
   %3 = getelementptr i8, ptr %0, i64 %.neg
-  %4 = getelementptr i8, ptr %3, i64 4
+  %4 = getelementptr i8, ptr %3, i64 12
   ret ptr %4
 }
 

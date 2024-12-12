@@ -44,7 +44,6 @@
 ; faiss/optimized/hamming.cpp.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
 ; flac/optimized/fixed_intrin_sse2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; flac/optimized/fixed_intrin_ssse3.c.ll
 ; gromacs/optimized/cluster_methods.cpp.ll
 ; gromacs/optimized/coder.c.ll
@@ -120,6 +119,7 @@
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openmpi/optimized/tm_solution.ll
+; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/parse_manifest.ll
 ; postgres/optimized/parse_manifest_shlib.ll
@@ -142,7 +142,7 @@
 ; wireshark/optimized/text_import.c.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 3
   %3 = zext nneg i32 %2 to i64
@@ -162,7 +162,7 @@ entry:
 ; ncnn/optimized/lstm_x86_fma.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = zext i32 %2 to i64
@@ -177,12 +177,12 @@ entry:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/giaMini.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 5
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; clamav/optimized/htmlnorm.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -25,6 +25,7 @@
 ; ripgrep-rs/optimized/c8unzkdiauw9hyd.ll
 ; ruby/optimized/strftime.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/bkp2u7tfyqnnhpthgztcor9ly.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, ptr %1, ptr %2) #0 {
 entry:

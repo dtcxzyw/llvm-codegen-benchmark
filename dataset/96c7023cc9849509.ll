@@ -13,7 +13,22 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 18 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
@@ -24,7 +39,7 @@ entry:
   %3 = fcmp olt double %2, 0.000000e+00
   %4 = fneg double %2
   %5 = select i1 %3, double %4, double %2
-  %6 = fcmp olt double %5, 0x3E70000000000000
+  %6 = fcmp olt double %5, 0.000000e+00
   ret i1 %6
 }
 

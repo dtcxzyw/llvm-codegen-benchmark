@@ -1,5 +1,5 @@
 
-; 78 occurrences:
+; 79 occurrences:
 ; abc/optimized/giaRex.c.ll
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btGhostObject.ll
@@ -41,6 +41,7 @@
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
@@ -82,7 +83,7 @@
 define i1 @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 5.000000e-01
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   ret i1 %3
 }
 
@@ -123,6 +124,7 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
@@ -132,7 +134,6 @@ entry:
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -204,7 +205,7 @@ entry:
 define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0.000000e+00
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   ret i1 %3
 }
 
@@ -217,11 +218,18 @@ entry:
 define i1 @func0000000000000007(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3FEFF8AD00000000
-  %3 = fcmp une float %2, %0
+  %3 = fcmp une float %0, %2
   ret i1 %3
 }
 
-; 30 occurrences:
+; 37 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within.ll
 ; bullet3/optimized/btCompoundShape.ll
 ; bullet3/optimized/btConvexTriangleMeshShape.ll
 ; bullet3/optimized/btGjkPairDetector.ll
@@ -256,15 +264,16 @@ entry:
 define i1 @func0000000000000005(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3F847AE140000000
-  %3 = fcmp ult float %2, %0
+  %3 = fcmp ugt float %0, %2
   ret i1 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; darktable/optimized/introspection_colorbalance.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/renderingengine.cpp.ll
 ; minetest/optimized/shader.cpp.ll
@@ -275,11 +284,14 @@ entry:
 define i1 @func0000000000000008(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3F70101020000000
-  %3 = fcmp oeq float %2, %0
+  %3 = fcmp oeq float %0, %2
   ret i1 %3
 }
 
-; 13 occurrences:
+; 16 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -297,7 +309,7 @@ entry:
 define i1 @func000000000000000a(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3EF0000000000000
-  %3 = fcmp oge float %2, %0
+  %3 = fcmp ole float %0, %2
   ret i1 %3
 }
 
@@ -314,7 +326,7 @@ entry:
 define i1 @func000000000000000c(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3EF0000000000000
-  %3 = fcmp ole float %2, %0
+  %3 = fcmp oge float %0, %2
   ret i1 %3
 }
 
@@ -351,7 +363,7 @@ entry:
 define i1 @func0000000000000003(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 5.000000e-01
-  %3 = fcmp ugt float %2, %0
+  %3 = fcmp ult float %0, %2
   ret i1 %3
 }
 
@@ -362,7 +374,7 @@ entry:
 define i1 @func000000000000000b(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3F50624DE0000000
-  %3 = fcmp uge float %2, %0
+  %3 = fcmp ule float %0, %2
   ret i1 %3
 }
 
@@ -376,7 +388,7 @@ entry:
 define i1 @func000000000000000d(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3E80000000000000
-  %3 = fcmp ule float %2, %0
+  %3 = fcmp uge float %0, %2
   ret i1 %3
 }
 

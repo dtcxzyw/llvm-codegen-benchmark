@@ -71,12 +71,12 @@ func0000000000000027:                   # @func0000000000000027
 	sete	%al
 	leal	-1(%rdi,%rax), %eax
 	retq
-func0000000000000105:                   # @func0000000000000105
+func0000000000000305:                   # @func0000000000000305
 	cmpl	$2, %esi
 	sbbl	$-1, %edi
 	leal	-7(%rdi), %eax
 	retq
-func000000000000010f:                   # @func000000000000010f
+func000000000000030f:                   # @func000000000000030f
 	cmpl	$63, %esi
 	sbbl	$-1, %edi
 	leal	64(%rdi), %eax
@@ -87,7 +87,7 @@ func000000000000014f:                   # @func000000000000014f
 	setge	%al
 	leal	243(%rdi,%rax), %eax
 	retq
-func000000000000008f:                   # @func000000000000008f
+func000000000000028f:                   # @func000000000000028f
 	movl	%edi, %eax
 	cmpl	$10, %esi
 	adcl	$3, %eax

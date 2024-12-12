@@ -1,15 +1,15 @@
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	leaq	(%rdx,%rdx,2), %rax
 	testl	%esi, %esi
 	cmovsq	%rdi, %rax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	addq	%rdx, %rdx
 	leaq	(%rdx,%rdx,2), %rax
 	testl	%esi, %esi
 	cmovsq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rdx, %rax
 	shlq	$6, %rax
 	negq	%rax

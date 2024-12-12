@@ -16,15 +16,15 @@ func0000000000000001:                   // @func0000000000000001
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
-	cmp	x0, x1
-	cset	w0, lo
-	ret
-                                        // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	cmp	x0, x1
 	cset	w0, hs
+	ret
+                                        // -- End function
+func0000000000000009:                   // @func0000000000000009
+// %bb.0:                               // %entry
+	cmp	x0, x1
+	cset	w0, lo
 	ret
                                         // -- End function

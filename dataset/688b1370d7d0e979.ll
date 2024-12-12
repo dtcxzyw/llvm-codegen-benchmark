@@ -59,7 +59,7 @@ entry:
   ret i32 %5
 }
 
-; 142 occurrences:
+; 147 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -112,6 +112,7 @@ entry:
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
@@ -174,7 +175,6 @@ entry:
 ; openusd/optimized/vec3h.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -201,6 +201,11 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; yosys/optimized/ezsat.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/67gayid14ydsuhkv0lcnhbsvb.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
@@ -225,7 +230,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 7
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = lshr i32 %4, 2
   ret i32 %5
 }
@@ -251,7 +256,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 2
   %3 = and i32 %2, 50529027
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = lshr i32 %4, 8
   ret i32 %5
 }
@@ -277,7 +282,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = lshr i32 %4, 6
   ret i32 %5
 }

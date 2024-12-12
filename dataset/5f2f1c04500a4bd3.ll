@@ -1,17 +1,17 @@
 
-%"class.std::unique_ptr.334.2521376" = type { %"struct.std::__uniq_ptr_data.335.2521377" }
-%"struct.std::__uniq_ptr_data.335.2521377" = type { %"class.std::__uniq_ptr_impl.336.2521378" }
-%"class.std::__uniq_ptr_impl.336.2521378" = type { %"class.std::tuple.337.2521379" }
-%"class.std::tuple.337.2521379" = type { %"struct.std::_Tuple_impl.338.2521380" }
-%"struct.std::_Tuple_impl.338.2521380" = type { %"struct.std::_Head_base.341.2521381" }
-%"struct.std::_Head_base.341.2521381" = type { ptr }
+%"class.std::unique_ptr.334.2635786" = type { %"struct.std::__uniq_ptr_data.335.2635787" }
+%"struct.std::__uniq_ptr_data.335.2635787" = type { %"class.std::__uniq_ptr_impl.336.2635788" }
+%"class.std::__uniq_ptr_impl.336.2635788" = type { %"class.std::tuple.337.2635789" }
+%"class.std::tuple.337.2635789" = type { %"struct.std::_Tuple_impl.338.2635790" }
+%"struct.std::_Tuple_impl.338.2635790" = type { %"struct.std::_Head_base.341.2635791" }
+%"struct.std::_Head_base.341.2635791" = type { ptr }
 
-; 61 occurrences:
-; abc/optimized/reoProfile.c.ll
+; 62 occurrences:
 ; arrow/optimized/builder.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; clamav/optimized/unarj.c.ll
+; cmake/optimized/frm_driver.c.ll
 ; cpython/optimized/typeobject.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
@@ -64,6 +64,7 @@
 ; wireshark/optimized/packet-csn1.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
+; wolfssl/optimized/internal.c.ll
 ; zxing/optimized/GenericGFPoly.cpp.ll
 ; zxing/optimized/PDFModulusPoly.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
@@ -76,7 +77,7 @@ entry:
   ret ptr %3
 }
 
-; 139 occurrences:
+; 136 occurrences:
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/cnfCut.c.ll
@@ -85,7 +86,6 @@ entry:
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ivyFastMap.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abc/optimized/reoTransfer.c.ll
 ; arrow/optimized/bit_block_counter.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -123,7 +123,6 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; jq/optimized/unicode.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libjpeg-turbo/optimized/rdgif.c.ll
 ; libjpeg-turbo/optimized/wrppm.c.ll
@@ -176,7 +175,6 @@ entry:
 ; nuttx/optimized/serial_io.c.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
-; oniguruma/optimized/unicode.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/odometry.cpp.ll
@@ -220,7 +218,21 @@ entry:
 define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr nusw %"class.std::unique_ptr.334.2521376", ptr %0, i64 %2
+  %3 = getelementptr nusw %"class.std::unique_ptr.334.2635786", ptr %0, i64 %2
+  ret ptr %3
+}
+
+; 5 occurrences:
+; boost/optimized/basic_iarchive.ll
+; jq/optimized/unicode.ll
+; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
+; oniguruma/optimized/unicode.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
+entry:
+  %2 = sext i16 %1 to i64
+  %3 = getelementptr nusw nuw i32, ptr %0, i64 %2
   ret ptr %3
 }
 

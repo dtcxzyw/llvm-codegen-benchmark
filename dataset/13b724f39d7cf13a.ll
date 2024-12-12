@@ -11,7 +11,7 @@ entry:
   ret i64 %.neg1
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; cmake/optimized/cmExtraCodeLiteGenerator.cxx.ll
 ; cpython/optimized/bufferedio.ll
@@ -19,6 +19,8 @@ entry:
 ; linux/optimized/genalloc.ll
 ; linux/optimized/ring_buffer.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

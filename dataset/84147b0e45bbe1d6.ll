@@ -1,8 +1,7 @@
 
-%"class.clang::NestedNameSpecifierLoc.2989233" = type { ptr, ptr }
+%"class.clang::NestedNameSpecifierLoc.3182702" = type { ptr, ptr }
 
-; 28 occurrences:
-; abc/optimized/fraSim.c.ll
+; 27 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -31,26 +30,39 @@
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; php/optimized/pcre2_substitute.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 4
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; abc/optimized/fraSim.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 5
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 40
+  %6 = getelementptr nusw i32, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %4
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; llvm/optimized/Expr.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000ff(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 20
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 32
-  %6 = getelementptr nusw %"class.clang::NestedNameSpecifierLoc.2989233", ptr %5, i64 %0
-  %7 = getelementptr nusw ptr, ptr %6, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 32
+  %6 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3182702", ptr %5, i64 %0
+  %7 = getelementptr nusw nuw ptr, ptr %6, i64 %4
   ret ptr %7
 }
 

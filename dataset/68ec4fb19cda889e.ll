@@ -7,7 +7,7 @@
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = lshr i32 %3, 5
   ret i32 %4
 }
@@ -27,12 +27,13 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = lshr i32 %3, 24
   ret i32 %4
 }
 
 ; 62 occurrences:
+; clamav/optimized/str.c.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cpython/optimized/assemble.ll
 ; icu/optimized/ucptrie.ll
@@ -47,7 +48,6 @@ entry:
 ; linux/optimized/early-lookup.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/md.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/nfs4xdr.ll
 ; linux/optimized/page_io.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
@@ -104,9 +104,11 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; libquic/optimized/des.c.ll
 ; linux/optimized/aes.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; miniaudio/optimized/unity.c.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
@@ -115,7 +117,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = lshr i32 %3, 4
   ret i32 %4
 }
@@ -188,7 +190,7 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -201,6 +203,8 @@ entry:
 ; assimp/optimized/XGLLoader.cpp.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; oiio/optimized/xmp.cpp.ll
 ; openjdk/optimized/hb-unicode.ll
 ; openjdk/optimized/utf_util.ll
@@ -215,7 +219,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 10
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = lshr exact i32 %3, 6
   ret i32 %4
 }
@@ -227,7 +231,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 15
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = lshr exact i32 %3, 2
   ret i32 %4
 }
@@ -284,7 +288,9 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; spike/optimized/aes64dsm.ll
 ; spike/optimized/aes64esm.ll
 ; sqlite/optimized/sqlite3.ll
@@ -297,13 +303,34 @@ entry:
   ret i32 %4
 }
 
+; 2 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr exact i32 %0, 23
+  %3 = or i32 %2, %1
+  ret i32 %3
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %0, 24
+  %3 = or i32 %2, %1
+  ret i32 %3
+}
+
 ; 1 occurrences:
 ; cmake/optimized/archive_write_set_format_pax.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 16
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = lshr exact i32 %3, 12
   ret i32 %4
 }

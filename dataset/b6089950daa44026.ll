@@ -1,5 +1,6 @@
 
-; 177 occurrences:
+; 178 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -187,6 +188,20 @@ entry:
   ret i64 %5
 }
 
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; libsodium/optimized/libsse2_la-poly1305_sse2.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i128 %1) #0 {
+entry:
+  %2 = lshr i128 %1, 78
+  %3 = trunc nuw nsw i128 %2 to i64
+  %4 = mul nuw nsw i64 %3, 4194967296
+  %5 = add nuw nsw i64 %4, %0
+  ret i64 %5
+}
+
 ; 6 occurrences:
 ; libquic/optimized/poly1305_vec.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -201,19 +216,6 @@ entry:
   %3 = trunc i128 %2 to i64
   %4 = mul i64 %3, 5
   %5 = add i64 %4, %0
-  ret i64 %5
-}
-
-; 2 occurrences:
-; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; libsodium/optimized/libsse2_la-poly1305_sse2.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003f(i64 %0, i128 %1) #0 {
-entry:
-  %2 = lshr i128 %1, 51
-  %3 = trunc nuw nsw i128 %2 to i64
-  %4 = mul nuw nsw i64 %3, 19
-  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 

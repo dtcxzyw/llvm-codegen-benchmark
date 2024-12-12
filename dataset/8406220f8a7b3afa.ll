@@ -1,83 +1,5 @@
 
-; 66 occurrences:
-; arrow/optimized/array_base.cc.ll
-; arrow/optimized/array_dict.cc.ll
-; arrow/optimized/array_nested.cc.ll
-; arrow/optimized/bitmap_ops.cc.ll
-; arrow/optimized/builder.cc.ll
-; arrow/optimized/builder_dict.cc.ll
-; arrow/optimized/compare.cc.ll
-; arrow/optimized/data.cc.ll
-; arrow/optimized/diff.cc.ll
-; arrow/optimized/encode_internal.cc.ll
-; arrow/optimized/light_array.cc.ll
-; arrow/optimized/scalar_cast_numeric.cc.ll
-; arrow/optimized/vector_hash.cc.ll
-; arrow/optimized/vector_selection_filter_internal.cc.ll
-; arrow/optimized/vector_selection_internal.cc.ll
-; arrow/optimized/vector_selection_take_internal.cc.ll
-; crow/optimized/example.cpp.ll
-; crow/optimized/example_blueprint.cpp.ll
-; crow/optimized/example_catchall.cpp.ll
-; crow/optimized/example_chat.cpp.ll
-; crow/optimized/example_cookies.cpp.ll
-; crow/optimized/example_cors.cpp.ll
-; crow/optimized/example_file_upload.cpp.ll
-; crow/optimized/example_json_map.cpp.ll
-; crow/optimized/example_middleware.cpp.ll
-; crow/optimized/example_session.cpp.ll
-; crow/optimized/example_static_file.cpp.ll
-; crow/optimized/example_ws.cpp.ll
-; crow/optimized/helloworld.cpp.ll
-; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
-; duckdb/optimized/ub_duckdb_sort.cpp.ll
-; eastl/optimized/TestBitset.cpp.ll
-; faiss/optimized/IDSelector.cpp.ll
-; graphviz/optimized/dijkstra.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; linux/optimized/drm_dp_helper.ll
-; linux/optimized/sta_info.ll
-; llvm/optimized/AArch64AdvSIMDScalarPass.cpp.ll
-; llvm/optimized/AArch64AsmParser.cpp.ll
-; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
-; llvm/optimized/AArch64LowerHomogeneousPrologEpilog.cpp.ll
-; llvm/optimized/AArch64RegisterInfo.cpp.ll
-; llvm/optimized/Attributes.cpp.ll
-; llvm/optimized/DeadStoreElimination.cpp.ll
-; llvm/optimized/Function.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
-; llvm/optimized/MCInstPrinter.cpp.ll
-; llvm/optimized/MachineCopyPropagation.cpp.ll
-; llvm/optimized/MemoryOpRemark.cpp.ll
-; llvm/optimized/PartiallyInlineLibCalls.cpp.ll
-; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVInstrInfo.cpp.ll
-; llvm/optimized/RISCVMakeCompressible.cpp.ll
-; llvm/optimized/RISCVRegisterInfo.cpp.ll
-; llvm/optimized/X86AsmParser.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86ISelLoweringCall.cpp.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; llvm/optimized/X86MCTargetDesc.cpp.ll
-; llvm/optimized/X86RegisterInfo.cpp.ll
-; openjdk/optimized/hb-unicode.ll
-; ozz-animation/optimized/track_sampling_job.cc.ll
-; rocksdb/optimized/filter_policy.cc.ll
-; soc-simulator/optimized/sim_mycpu.ll
-; stb/optimized/stb_connected_components.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000003c(i8 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 7
-  %3 = shl nuw nsw i32 1, %2
-  %4 = zext i8 %0 to i32
-  %5 = and i32 %3, %4
-  %6 = icmp ne i32 %5, 0
-  ret i1 %6
-}
-
-; 282 occurrences:
+; 278 occurrences:
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/array_nested.cc.ll
@@ -145,7 +67,6 @@ entry:
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/ng_width.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -280,7 +201,6 @@ entry:
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; nghttp2/optimized/url_parser.c.ll
 ; node/optimized/linux.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; openexr/optimized/ImfPizCompressor.cpp.ll
 ; openexr/optimized/internal_piz.c.ll
 ; openmpi/optimized/hook_comm_method_fns.ll
@@ -301,7 +221,6 @@ entry:
 ; postgres/optimized/bloomfilter.ll
 ; postgres/optimized/brin_bloom.ll
 ; postgres/optimized/catcache.ll
-; postgres/optimized/datapagemap.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/event_trigger.ll
 ; postgres/optimized/execExprInterp.ll
@@ -338,7 +257,6 @@ entry:
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/ui_input-linux.c.ll
 ; redis/optimized/cluster_legacy.ll
-; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/plain_table_reader.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_connected_components.c.ll
@@ -361,13 +279,90 @@ entry:
 ; wolfssl/optimized/rsa.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = shl nuw nsw i32 1, %2
   %4 = zext i8 %0 to i32
   %5 = and i32 %3, %4
   %6 = icmp eq i32 %5, 0
+  ret i1 %6
+}
+
+; 65 occurrences:
+; arrow/optimized/array_base.cc.ll
+; arrow/optimized/array_dict.cc.ll
+; arrow/optimized/array_nested.cc.ll
+; arrow/optimized/bitmap_ops.cc.ll
+; arrow/optimized/builder.cc.ll
+; arrow/optimized/builder_dict.cc.ll
+; arrow/optimized/compare.cc.ll
+; arrow/optimized/data.cc.ll
+; arrow/optimized/diff.cc.ll
+; arrow/optimized/encode_internal.cc.ll
+; arrow/optimized/light_array.cc.ll
+; arrow/optimized/scalar_cast_numeric.cc.ll
+; arrow/optimized/vector_hash.cc.ll
+; arrow/optimized/vector_selection_filter_internal.cc.ll
+; arrow/optimized/vector_selection_internal.cc.ll
+; arrow/optimized/vector_selection_take_internal.cc.ll
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
+; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
+; duckdb/optimized/ub_duckdb_sort.cpp.ll
+; eastl/optimized/TestBitset.cpp.ll
+; faiss/optimized/IDSelector.cpp.ll
+; graphviz/optimized/dijkstra.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; linux/optimized/drm_dp_helper.ll
+; linux/optimized/sta_info.ll
+; llvm/optimized/AArch64AdvSIMDScalarPass.cpp.ll
+; llvm/optimized/AArch64AsmParser.cpp.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
+; llvm/optimized/AArch64LowerHomogeneousPrologEpilog.cpp.ll
+; llvm/optimized/AArch64RegisterInfo.cpp.ll
+; llvm/optimized/Attributes.cpp.ll
+; llvm/optimized/DeadStoreElimination.cpp.ll
+; llvm/optimized/Function.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/MCInstPrinter.cpp.ll
+; llvm/optimized/MachineCopyPropagation.cpp.ll
+; llvm/optimized/MemoryOpRemark.cpp.ll
+; llvm/optimized/PartiallyInlineLibCalls.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
+; llvm/optimized/RISCVMakeCompressible.cpp.ll
+; llvm/optimized/RISCVRegisterInfo.cpp.ll
+; llvm/optimized/X86AsmParser.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; llvm/optimized/X86MCTargetDesc.cpp.ll
+; llvm/optimized/X86RegisterInfo.cpp.ll
+; openjdk/optimized/hb-unicode.ll
+; ozz-animation/optimized/track_sampling_job.cc.ll
+; soc-simulator/optimized/sim_mycpu.ll
+; stb/optimized/stb_connected_components.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i8 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 7
+  %3 = shl nuw nsw i32 1, %2
+  %4 = zext i8 %0 to i32
+  %5 = and i32 %3, %4
+  %6 = icmp ne i32 %5, 0
   ret i1 %6
 }
 

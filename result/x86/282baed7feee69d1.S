@@ -26,7 +26,7 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$-1, %eax
 	cmovgl	%esi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	xorl	$31, %esi
 	xorl	%eax, %eax
 	cmpl	$3, %edi

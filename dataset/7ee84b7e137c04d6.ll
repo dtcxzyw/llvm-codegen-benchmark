@@ -4,7 +4,7 @@
 ; linux/optimized/intel_ddi.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i8 %0) #0 {
+define i32 @func0000000000000061(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i32
   %2 = shl nuw nsw i32 %1, 4
@@ -18,7 +18,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i8 %0) #0 {
+define i32 @func00000000000000e1(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i32
   %2 = shl nuw nsw i32 %1, 8

@@ -3,7 +3,7 @@
 ; ipopt/optimized/IpPardisoSolverInterface.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 1
   %4 = add nuw nsw i32 %0, 1
@@ -11,14 +11,12 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; abc/optimized/giaMini.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; oiio/optimized/tiffinput.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/boost.cpp.ll
 ; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
 ; opencv/optimized/svm.cpp.ll
@@ -29,10 +27,10 @@ entry:
 ; wireshark/optimized/packet-smb-pipe.c.ll
 ; yosys/optimized/calc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, 1
-  %4 = icmp eq i32 %3, %2
+  %4 = icmp eq i32 %2, %3
   %5 = select i1 %1, i1 %4, i1 false
   ret i1 %5
 }
@@ -43,7 +41,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 1
   %4 = add nuw i32 %0, 1
@@ -56,7 +54,7 @@ entry:
 ; lua/optimized/ldebug.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 1
   %4 = add nsw i32 %0, -1
@@ -101,7 +99,7 @@ entry:
 ; gromacs/optimized/localtopology.cpp.ll
 ; zxing/optimized/ODReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 1
   %4 = add nsw i32 %0, 1
@@ -112,22 +110,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/tree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 1
   %4 = add nsw i32 %0, 1
   %5 = icmp eq i32 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; raylib/optimized/rtext.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = select i1 %1, i32 %2, i32 95
-  %4 = add nuw nsw i32 %0, 1
-  %5 = icmp ult i32 %4, %3
   ret i1 %5
 }
 

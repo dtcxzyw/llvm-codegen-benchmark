@@ -3,7 +3,7 @@
 ; llvm/optimized/PPDirectives.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0) #0 {
+define i32 @func0000000000000085(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
   %2 = icmp eq i32 %0, 1
@@ -16,7 +16,7 @@ entry:
 ; linux/optimized/drm_edid.ll
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000047(i32 %0) #0 {
+define i32 @func0000000000000087(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 1
   %2 = icmp eq i32 %0, 0

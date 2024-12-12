@@ -3,7 +3,7 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = icmp ugt i64 %0, 169
@@ -17,7 +17,7 @@ entry:
 ; linux/optimized/uncore_snb.ll
 ; linux/optimized/uncore_snbep.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 536870911
   %3 = icmp eq i64 %0, 0
@@ -33,7 +33,7 @@ entry:
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i32 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 536870911
   %3 = icmp ne i64 %0, 0
@@ -46,7 +46,7 @@ entry:
 ; linux/optimized/hw_breakpoint.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 90
   %3 = icmp ult i64 %0, 271
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ExprCXX.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000188(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp ugt i64 %0, 4294967295
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/perf_regs.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i32 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = icmp ne i64 %0, 0

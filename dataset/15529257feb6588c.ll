@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 39 occurrences:
 ; abc/optimized/deflate.c.ll
 ; c3c/optimized/semantic_analyser.c.ll
 ; clamav/optimized/crypt.cpp.ll
@@ -16,6 +16,8 @@
 ; linux/optimized/nexthop.ll
 ; linux/optimized/sch_api.ll
 ; linux/optimized/xfrm_user.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_obj_style.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; postgres/optimized/rangetypes_gist.ll
@@ -29,6 +31,12 @@
 ; wireshark/optimized/packet-mpls-echo.c.ll
 ; wireshark/optimized/udpdump.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zlib/optimized/deflate.c.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -39,12 +47,11 @@ entry:
   ret i16 %2
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; freetype/optimized/smooth.c.ll
 ; hdf5/optimized/H5EAhdr.c.ll
-; image-rs/optimized/4srzh4wujeew249y.ll
 ; libpng/optimized/pngread.c.ll
 ; libwebp/optimized/vp8_dec.c.ll
 ; luajit/optimized/lj_asm.ll
@@ -58,8 +65,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i16 %0) #0 {
 entry:
-  %1 = add nuw nsw i16 %0, 254
-  %2 = lshr i16 %1, 1
+  %1 = add nuw nsw i16 %0, 130
+  %2 = lshr i16 %1, 8
   ret i16 %2
 }
 
@@ -114,9 +121,8 @@ entry:
   ret i16 %2
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/nl80211.ll
-; linux/optimized/rpl.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i16 %0) #0 {
 entry:

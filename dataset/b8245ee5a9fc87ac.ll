@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; postgres/optimized/tsrank.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/packet-ethercat-datagram.c.ll

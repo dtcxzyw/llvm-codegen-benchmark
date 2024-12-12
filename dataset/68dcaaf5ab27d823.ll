@@ -13,12 +13,11 @@ entry:
   ret i64 %6
 }
 
-; 48 occurrences:
+; 47 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/interfaces.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cmake/optimized/cmList.cxx.ll
-; cpython/optimized/listobject.ll
 ; darktable/optimized/PhaseOneDecompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll

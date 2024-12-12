@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; jq/optimized/jv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000221(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000441(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = add nuw i32 %3, 1
@@ -36,7 +36,7 @@ entry:
 ; git/optimized/versioncmp.ll
 ; openblas/optimized/dlasd2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add i32 %3, 1
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/x509_vfy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000206(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add i32 %3, 1
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add i32 %3, 1
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010c(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000020c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add i32 %3, 1
@@ -86,7 +86,7 @@ entry:
 ; icu/optimized/ucurr.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000221(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, -32
@@ -111,7 +111,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/trace_events_filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add nsw i32 %3, -1
@@ -135,7 +135,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/geometry.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000336(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000666(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = add nuw nsw i32 %3, 1

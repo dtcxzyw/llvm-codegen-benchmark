@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; darktable/optimized/introspection_colorbalance.c.ll
 ; darktable/optimized/introspection_vignette.c.ll
 ; faiss/optimized/IndexAdditiveQuantizerFastScan.cpp.ll
@@ -14,6 +14,7 @@
 ; opencv/optimized/select3dobj.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; raylib/optimized/rcore.c.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, double %1) #0 {
 entry:

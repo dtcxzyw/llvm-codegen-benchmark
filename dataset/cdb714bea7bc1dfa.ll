@@ -3,7 +3,7 @@
 ; gromacs/optimized/md5.c.ll
 ; gromacs/optimized/md5.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 56
   %not. = xor i1 %0, true
@@ -27,7 +27,7 @@ entry:
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; icu/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %not. = xor i1 %0, true
@@ -40,7 +40,7 @@ entry:
 ; icu/optimized/decNumber.ll
 ; opencv/optimized/sqpnp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %0, i1 %2, i1 false
@@ -52,19 +52,9 @@ entry:
 ; icu/optimized/decNumber.ll
 ; opencv/optimized/sqpnp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
-  %3 = select i1 %0, i1 %2, i1 false
-  ret i1 %3
-}
-
-; 1 occurrences:
-; icu/optimized/ucnvbocu.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 224
   %3 = select i1 %0, i1 %2, i1 false
   ret i1 %3
 }

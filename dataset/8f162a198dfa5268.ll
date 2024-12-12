@@ -50,8 +50,9 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
+; boost/optimized/monotonic_buffer_resource.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/CoroEarly.cpp.ll
 ; llvm/optimized/Coroutines.cpp.ll

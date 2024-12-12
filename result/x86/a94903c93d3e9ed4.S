@@ -17,13 +17,13 @@ func0000000000000005:                   # @func0000000000000005
 	leaq	32(%rdi), %rax
 	andq	$-64, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	cmpq	$128, %rdx
 	cmovaeq	%rsi, %rdi
 	leaq	32(%rdi), %rax
 	andq	$-64, %rax
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	cmpq	$40, %rdx
 	cmovaeq	%rsi, %rdi
 	leaq	32(%rdi), %rcx

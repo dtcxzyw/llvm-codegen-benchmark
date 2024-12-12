@@ -1,5 +1,5 @@
 
-; 321 occurrences:
+; 320 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/satSolver2.c.ll
@@ -113,7 +113,6 @@
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/ethtool.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_dpll_mgr.ll
@@ -142,7 +141,6 @@
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
@@ -235,6 +233,7 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pcre2_match.ll
 ; postgres/optimized/xact.ll
+; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
 ; qemu/optimized/hw_ufs_ufs.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -325,7 +324,7 @@
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = or disjoint i32 %3, 1
   ret i32 %4
 }
@@ -351,7 +350,7 @@ entry:
   ret i32 %4
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/aigRet.c.ll
@@ -361,7 +360,6 @@ entry:
 ; graphviz/optimized/node.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/event_inode.ll
-; linux/optimized/hda_codec.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/intel_tv.ll
@@ -395,18 +393,96 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = or disjoint i32 %3, 2
   ret i32 %4
 }
 
-; 42 occurrences:
-; abc/optimized/extraUtilMacc.c.ll
+; 19 occurrences:
+; abc/optimized/giaCof.c.ll
+; freetype/optimized/psnames.c.ll
+; hermes/optimized/BytecodeStream.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; libquic/optimized/strike_register.cc.ll
+; linux/optimized/drm_format_helper.ll
+; linux/optimized/e1000_hw.ll
+; linux/optimized/intel_backlight.ll
+; linux/optimized/lzo1x_compress.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; luau/optimized/AssemblyBuilderA64.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; minetest/optimized/sky.cpp.ll
+; redis/optimized/rax.ll
+; wasmtime-rs/optimized/48myxw210mngc99c.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; wireshark/optimized/packet-gsm_a_rr.c.ll
+; z3/optimized/mpf.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 8
+  %3 = or disjoint i32 %2, %0
+  %4 = or i32 %3, -65536
+  ret i32 %4
+}
+
+; 26 occurrences:
+; clamav/optimized/pe_icons.c.ll
+; icu/optimized/extradata.ll
+; icu/optimized/ucnvscsu.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/hdac_stream.ll
+; linux/optimized/hid-core.ll
+; linux/optimized/hub.ll
+; linux/optimized/icl_dsi.ll
+; linux/optimized/intel_display_power.ll
+; linux/optimized/intel_dsb.ll
+; linux/optimized/intel_gmbus.ll
+; linux/optimized/intel_tv.ll
+; linux/optimized/message.ll
+; linux/optimized/r8169_main.ll
+; linux/optimized/usblp.ll
+; llvm/optimized/CodeViewDebug.cpp.ll
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; oiio/optimized/ddsinput.cpp.ll
+; php/optimized/pcre2_jit_compile.ll
+; postgres/optimized/utf8_and_gb18030.ll
+; qemu/optimized/hw_net_igb_core.c.ll
+; wasmtime-rs/optimized/48myxw210mngc99c.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; wireshark/optimized/packet-6lowpan.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 14
+  %3 = or i32 %2, %0
+  %4 = or i32 %3, 262144
+  ret i32 %4
+}
+
+; 5 occurrences:
+; image-rs/optimized/34r8dryqmufipcqz.ll
+; ncnn/optimized/mat.cpp.ll
+; qemu/optimized/hw_net_e1000.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 16
+  %3 = or disjoint i32 %2, %0
+  %4 = or i32 %3, 16
+  ret i32 %4
+}
+
+; 38 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; icu/optimized/collationdatabuilder.ll
 ; icu/optimized/ucnvbocu.ll
 ; imgui/optimized/imgui.cpp.ll
-; linux/optimized/cacheinfo.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/hid-core.ll
@@ -429,7 +505,6 @@ entry:
 ; luajit/optimized/minilua.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; openjdk/optimized/assembler_x86.ll
-; php/optimized/zend_alloc.ll
 ; postgres/optimized/dsm.ll
 ; postgres/optimized/gram.ll
 ; qemu/optimized/hw_audio_intel-hda.c.ll
@@ -437,7 +512,6 @@ entry:
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; qemu/optimized/tcg-op-ldst.c.ll
-; re2/optimized/onepass.cc.ll
 ; redis/optimized/lcode.ll
 ; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
 ; rust-analyzer-rs/optimized/54f0pj1u367tkav7.ll
@@ -446,96 +520,15 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 16
-  %3 = or i32 %2, %0
-  %4 = or i32 %3, 64
+  %2 = shl i32 %1, 10
+  %3 = or i32 %0, %2
+  %4 = or i32 %3, 1
   ret i32 %4
 }
 
-; 29 occurrences:
-; clamav/optimized/pe_icons.c.ll
-; icu/optimized/extradata.ll
-; icu/optimized/ucnvscsu.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/hdac_stream.ll
-; linux/optimized/hid-core.ll
-; linux/optimized/hub.ll
-; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_display_power.ll
-; linux/optimized/intel_dsb.ll
-; linux/optimized/intel_gmbus.ll
-; linux/optimized/intel_tv.ll
-; linux/optimized/message.ll
-; linux/optimized/r8169_main.ll
-; linux/optimized/usblp.ll
-; llvm/optimized/CodeViewDebug.cpp.ll
-; luajit/optimized/lj_parse.ll
-; luajit/optimized/lj_parse_dyn.ll
-; mitsuba3/optimized/x86func.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; php/optimized/pcre2_jit_compile.ll
-; postgres/optimized/utf8_and_gb18030.ll
-; qemu/optimized/hw_net_igb_core.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
-; wasmtime-rs/optimized/48myxw210mngc99c.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
-; wireshark/optimized/packet-6lowpan.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 16
-  %3 = or i32 %2, %0
-  %4 = or i32 %3, 117440768
-  ret i32 %4
-}
-
-; 20 occurrences:
-; abc/optimized/giaCof.c.ll
-; freetype/optimized/psnames.c.ll
-; hermes/optimized/BytecodeStream.cpp.ll
-; hyperscan/optimized/teddy_compile.cpp.ll
-; libquic/optimized/strike_register.cc.ll
-; linux/optimized/drm_format_helper.ll
-; linux/optimized/e1000_hw.ll
-; linux/optimized/intel_backlight.ll
-; linux/optimized/lzo1x_compress.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; luau/optimized/AssemblyBuilderA64.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; minetest/optimized/sky.cpp.ll
-; qemu/optimized/pci-pc.c.ll
-; redis/optimized/rax.ll
-; wasmtime-rs/optimized/48myxw210mngc99c.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
-; wireshark/optimized/packet-gsm_a_rr.c.ll
-; z3/optimized/mpf.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 8
-  %3 = or disjoint i32 %2, %0
-  %4 = or i32 %3, -65536
-  ret i32 %4
-}
-
-; 3 occurrences:
-; image-rs/optimized/34r8dryqmufipcqz.ll
-; ncnn/optimized/mat.cpp.ll
-; qemu/optimized/hw_net_e1000.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw i32 %1, 16
-  %3 = or disjoint i32 %2, %0
-  %4 = or i32 %3, 16
-  ret i32 %4
-}
-
-; 16 occurrences:
+; 19 occurrences:
 ; arrow/optimized/float16.cc.ll
+; hermes/optimized/HBC.cpp.ll
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/ohci-hcd.ll
@@ -551,23 +544,24 @@ entry:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wolfssl/optimized/asn.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 13
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = or i32 %3, 2143289344
   ret i32 %4
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; icu/optimized/collationdatabuilder.ll
 ; linux/optimized/82571.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/intel_dp_aux.ll
-; linux/optimized/intel_dpio_phy.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; llvm/optimized/CGPointerAuth.cpp.ll
 ; lua/optimized/lcode.ll
@@ -590,7 +584,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 23
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = or disjoint i32 %3, 8373
   ret i32 %4
 }
@@ -612,7 +606,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 25
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = or i32 %3, 16777216
   ret i32 %4
 }
@@ -623,7 +617,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = or disjoint i32 %3, 2
   ret i32 %4
 }
@@ -651,7 +645,7 @@ entry:
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = or disjoint i32 %3, 1
   ret i32 %4
 }
@@ -665,7 +659,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = or disjoint i32 %3, 225
   ret i32 %4
 }

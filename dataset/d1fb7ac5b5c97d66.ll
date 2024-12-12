@@ -1,7 +1,7 @@
 
-%"struct.QHashPrivate::Span.3248910" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
+%"struct.QHashPrivate::Span.3440140" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
 
-; 307 occurrences:
+; 309 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/align_util.cc.ll
@@ -18,6 +18,7 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -180,9 +181,6 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -235,6 +233,10 @@
 ; pybind11/optimized/test_unnamed_namespace_b.cpp.ll
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
+; quantlib/optimized/abcdatmvolcurve.ll
+; quantlib/optimized/discretizedswap.ll
+; quantlib/optimized/laplaceinterpolation.ll
+; quantlib/optimized/schedule.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
@@ -310,21 +312,6 @@
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 63
-  %4 = lshr i64 %3, 6
-  %5 = select i1 %1, i64 144115188075855871, i64 %4
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 4 occurrences:
-; quantlib/optimized/abcdatmvolcurve.ll
-; quantlib/optimized/discretizedswap.ll
-; quantlib/optimized/laplaceinterpolation.ll
-; quantlib/optimized/schedule.ll
-; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 63
@@ -367,7 +354,7 @@ entry:
   %3 = add i64 %2, 1
   %4 = lshr i64 %3, 7
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr %"struct.QHashPrivate::Span.3248910", ptr %0, i64 %5
+  %6 = getelementptr %"struct.QHashPrivate::Span.3440140", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -375,12 +362,12 @@ entry:
 ; hyperscan/optimized/ue2string.cpp.ll
 ; libwebp/optimized/quality_estimate.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 63
   %4 = lshr i64 %3, 6
   %5 = select i1 %1, i64 144115188075855871, i64 %4
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 

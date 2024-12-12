@@ -60,7 +60,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpunpcklqdq	%xmm4, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm4[0]
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
-	vpcmpltud	%xmm0, %xmm1, %k0
+	vpcmpnleud	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

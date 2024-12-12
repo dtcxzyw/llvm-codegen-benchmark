@@ -32,7 +32,7 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; nori/optimized/layout.cpp.ll
@@ -41,6 +41,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; z3/optimized/intblast_solver.cpp.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i32 %1, i64 %2) #0 {
 entry:

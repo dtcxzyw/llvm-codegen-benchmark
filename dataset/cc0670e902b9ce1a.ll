@@ -4,7 +4,7 @@
 ; abc/optimized/FxchSCHashTable.c.ll
 ; qemu/optimized/block_vhdx-log.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 12
   %4 = add nuw nsw i32 %3, %1
@@ -19,9 +19,9 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
-  %4 = add i32 %3, %1
-  %5 = sub i32 0, %0
-  %6 = icmp eq i32 %4, %5
+  %4 = add i32 %1, %3
+  %5 = sub i32 0, %4
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
@@ -35,7 +35,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp ult i32 %5, 128
   ret i1 %6
@@ -45,10 +45,10 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp ult i32 %5, 128
   ret i1 %6
@@ -58,7 +58,7 @@ entry:
 ; php/optimized/zend_opcode.ll
 ; php/optimized/zend_persist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000201(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 13
   %4 = add i32 %3, %1
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/RafDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nuw i32 %3, %1
@@ -82,10 +82,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/lpkSets.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 8
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp slt i32 %5, 1
   ret i1 %6
@@ -94,10 +94,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp ne i32 %5, 1
   ret i1 %6
@@ -107,22 +107,22 @@ entry:
 ; abc/optimized/aigPack.c.ll
 ; libwebp/optimized/near_lossless_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
-  %6 = icmp ugt i32 %5, 32
+  %6 = icmp samesign ugt i32 %5, 32
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; glslang/optimized/Initialize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001da(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 17
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp sgt i32 %5, 4
   ret i1 %6
@@ -131,7 +131,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/common_ompio_file_open.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
   %4 = add nuw nsw i32 %3, %1
@@ -146,7 +146,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp ugt i32 %5, 127
   ret i1 %6
@@ -156,10 +156,10 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 25
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp slt i32 %5, 32768
   ret i1 %6

@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 52 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -31,7 +31,6 @@
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
 ; linux/optimized/blk-merge.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/gss_krb5_wrap.ll
 ; linux/optimized/intel_crt.ll
 ; linux/optimized/intel_display.ll

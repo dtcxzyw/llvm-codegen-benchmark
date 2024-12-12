@@ -9,7 +9,7 @@ define i1 @func0000000000000006(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp slt i32 %3, 768
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -44,11 +44,11 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp sgt i32 %3, 0
   %5 = and i1 %4, %1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/BaseVector.cpp.ll
@@ -58,14 +58,13 @@ entry:
 ; velox/optimized/JsonFunctions.cpp.ll
 ; velox/optimized/ToUtf8.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
-; wireshark/optimized/packet-resp.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp ult i32 %3, 13
   %5 = and i1 %4, %1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -80,8 +79,8 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, 16
-  %5 = and i1 %4, %1
-  %6 = and i1 %5, %0
+  %5 = and i1 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -93,8 +92,8 @@ define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp ugt i32 %3, 51
-  %5 = and i1 %4, %1
-  %6 = and i1 %5, %0
+  %5 = and i1 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

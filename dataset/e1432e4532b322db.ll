@@ -1,22 +1,15 @@
 
-%union._Py_CODEUNIT.3795952 = type { i16 }
+%union._Py_CODEUNIT.3974162 = type { i16 }
 
-; 8 occurrences:
-; clamav/optimized/mew.c.ll
+; 1 occurrences:
 ; openjdk/optimized/klassVtable.ll
-; wolfssl/optimized/rsa.c.ll
-; z3/optimized/smt_clause.cpp.ll
-; z3/optimized/smt_clause_proof.cpp.ll
-; z3/optimized/smt_conflict_resolution.cpp.ll
-; z3/optimized/smt_context.cpp.ll
-; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000005a(i64 %0, i32 %1, ptr %2) #0 {
+define i64 @func000000000000007b(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 464
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 464
   %4 = getelementptr nusw i64, ptr %3, i64 %0
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i64, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
@@ -32,12 +25,31 @@ entry:
 ; llvm/optimized/DXContainer.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000004a(i64 %0, i32 %1, ptr %2) #0 {
+define i64 @func000000000000006f(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = ptrtoint ptr %6 to i64
+  ret i64 %7
+}
+
+; 7 occurrences:
+; clamav/optimized/mew.c.ll
+; wolfssl/optimized/rsa.c.ll
+; z3/optimized/smt_clause.cpp.ll
+; z3/optimized/smt_clause_proof.cpp.ll
+; z3/optimized/smt_conflict_resolution.cpp.ll
+; z3/optimized/smt_context.cpp.ll
+; z3/optimized/theory_pb.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000007f(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 3692
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = zext nneg i32 %1 to i64
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
@@ -61,9 +73,9 @@ entry:
 define i64 @func0000000000000010(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 2
-  %4 = getelementptr %union._Py_CODEUNIT.3795952, ptr %3, i64 %0
+  %4 = getelementptr %union._Py_CODEUNIT.3974162, ptr %3, i64 %0
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %union._Py_CODEUNIT.3795952, ptr %4, i64 %5
+  %6 = getelementptr %union._Py_CODEUNIT.3974162, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

@@ -4,5 +4,5 @@ func000000000000000a:                   # @func000000000000000a
 	li	a0, 31
 	slli	a0, a0, 10
 	vadd.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

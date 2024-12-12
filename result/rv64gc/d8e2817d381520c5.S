@@ -1,27 +1,25 @@
-func0000000000000044:                   # @func0000000000000044
-	sext.w	a2, a2
-	lui	a3, 131072
-	addiw	a3, a3, -2
-	bgeu	a3, a2, .LBB0_2
-	lui	a1, 1024
-	addi	a1, a1, -1
-.LBB0_2:                                # %entry
-	sext.w	a1, a1
-	add	a0, a0, a1
-	ret
 func0000000000000027:                   # @func0000000000000027
 	srliw	a2, a2, 24
 	li	a3, 7
-	bgeu	a2, a3, .LBB1_2
+	bgeu	a2, a3, .LBB0_2
 	li	a1, 1
-.LBB1_2:                                # %entry
+.LBB0_2:                                # %entry
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
 func0000000000000037:                   # @func0000000000000037
 	sext.w	a2, a2
 	li	a3, 7
-	bge	a2, a3, .LBB2_2
+	bge	a2, a3, .LBB1_2
+	li	a1, 1
+.LBB1_2:                                # %entry
+	sext.w	a1, a1
+	add	a0, a0, a1
+	ret
+func00000000000000a7:                   # @func00000000000000a7
+	sext.w	a2, a2
+	li	a3, 7
+	bgeu	a2, a3, .LBB2_2
 	li	a1, 1
 .LBB2_2:                                # %entry
 	sext.w	a1, a1

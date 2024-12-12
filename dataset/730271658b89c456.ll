@@ -5,7 +5,7 @@
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
   %3 = add nuw nsw i64 %2, 8
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/clipCache.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000b8(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000168(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 2
   %3 = add nuw nsw i64 %2, 16
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000f4(i64 %0, i64 %1) #0 {
+define i64 @func00000000000001e4(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = add nuw nsw i64 %2, 24
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = add nsw i64 %2, 24

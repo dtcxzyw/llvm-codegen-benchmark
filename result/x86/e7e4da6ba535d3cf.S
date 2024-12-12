@@ -8,12 +8,7 @@ func0000000000000038:                   # @func0000000000000038
 	shlxl	%edx, %eax, %eax
 	orl	%edi, %eax
 	retq
-func000000000000000e:                   # @func000000000000000e
-	movzbl	%sil, %eax
-	shlxl	%edx, %eax, %eax
-	orl	%edi, %eax
-	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000003e:                   # @func000000000000003e
 	movzbl	%sil, %eax
 	shlxl	%edx, %eax, %eax
 	orl	%edi, %eax
@@ -23,17 +18,12 @@ func0000000000000000:                   # @func0000000000000000
 	shlxl	%edx, %eax, %eax
 	orl	%edi, %eax
 	retq
-func000000000000003e:                   # @func000000000000003e
-	movzbl	%sil, %eax
-	shlxl	%edx, %eax, %eax
-	orl	%edi, %eax
-	retq
 func0000000000000030:                   # @func0000000000000030
 	movzbl	%sil, %eax
 	shlxl	%edx, %eax, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000008:                   # @func0000000000000008
 	movzbl	%sil, %eax
 	shlxl	%edx, %eax, %eax
 	orl	%edi, %eax

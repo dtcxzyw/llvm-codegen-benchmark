@@ -29,7 +29,7 @@
 ; wireshark/optimized/wireshark_main_window.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 3
   %4 = icmp ult ptr %0, %1
@@ -44,7 +44,7 @@ entry:
 ; libdeflate/optimized/crc32.c.ll
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp ne i64 %3, 0
@@ -53,13 +53,14 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; linux/optimized/tg3.ll
 ; linux/optimized/truncate.ll
 ; llvm/optimized/ParseExpr.cpp.ll
 ; redis/optimized/tracking.ll
 ; slurm/optimized/partition_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 256
   %4 = icmp ne i64 %3, 0
@@ -77,7 +78,7 @@ entry:
 ; luajit/optimized/lib_jit.ll
 ; luajit/optimized/lib_jit_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp eq i64 %3, 0
@@ -89,23 +90,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/regexec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4160749568
   %4 = icmp eq i64 %3, 268435456
   %5 = icmp ult ptr %0, %1
-  %6 = select i1 %4, i1 %5, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 16
-  %4 = icmp eq i64 %3, 0
-  %5 = icmp ne ptr %0, %1
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }

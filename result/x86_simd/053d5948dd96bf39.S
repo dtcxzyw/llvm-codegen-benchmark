@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpblendd	$170, %ymm1, %ymm0, %ymm0       # ymm0 = ymm0[0],ymm1[1],ymm0[2],ymm1[3],ymm0[4],ymm1[5],ymm0[6],ymm1[7]
@@ -16,7 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI2_0:
 	.quad	2147483648                      # 0x80000000
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vptestnmq	.LCPI2_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -24,7 +24,7 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 .LCPI3_0:
 	.quad	2147483647                      # 0x7fffffff
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vptestmq	.LCPI3_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -32,7 +32,7 @@ func000000000000001c:                   # @func000000000000001c
 	retq
 .LCPI4_0:
 	.quad	7                               # 0x7
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vptestnmq	.LCPI4_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -47,23 +47,13 @@ func000000000000000c:                   # @func000000000000000c
 	vzeroupper
 	retq
 .LCPI6_0:
-	.quad	65                              # 0x41
-func0000000000000034:                   # @func0000000000000034
-	vpmullq	%ymm1, %ymm0, %ymm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpblendd	$170, %ymm1, %ymm0, %ymm0       # ymm0 = ymm0[0],ymm1[1],ymm0[2],ymm1[3],ymm0[4],ymm1[5],ymm0[6],ymm1[7]
-	vpcmpltq	.LCPI6_0(%rip){1to4}, %ymm0, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI7_0:
 	.quad	-9223372036854775745            # 0x800000000000003f
-.LCPI7_1:
+.LCPI6_1:
 	.quad	-9223372036854775808            # 0x8000000000000000
 func0000000000000008:                   # @func0000000000000008
 	vpmullq	%ymm1, %ymm0, %ymm0
-	vpandq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
-	vpcmpnleuq	.LCPI7_1(%rip){1to4}, %ymm0, %k0
+	vpandq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
+	vpcmpnleuq	.LCPI6_1(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

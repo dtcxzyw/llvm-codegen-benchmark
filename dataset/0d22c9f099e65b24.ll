@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 43 occurrences:
 ; clamav/optimized/bytecode_vm.c.ll
 ; coreutils-rs/optimized/31ndbnr1d3v04hlo.ll
 ; cpython/optimized/Hacl_Hash_SHA3.ll
@@ -17,7 +17,6 @@
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/MCDwarf.cpp.ll
 ; llvm/optimized/MicrosoftDemangle.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_avx.cpp.ll
@@ -41,6 +40,9 @@
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wireshark/optimized/packet-acn.c.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:

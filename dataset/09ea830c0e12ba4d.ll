@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
@@ -25,7 +25,6 @@
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/c_converter.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll

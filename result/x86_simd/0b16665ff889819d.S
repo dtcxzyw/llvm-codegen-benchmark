@@ -17,7 +17,7 @@
 	.zero	1
 .LCPI0_1:
 	.quad	4294967296                      # 0x100000000
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	vptestmb	.LCPI0_0(%rip), %xmm1, %k0
 	vpcmpltuq	.LCPI0_1(%rip){1to4}, %ymm0, %k1
 	korw	%k1, %k0, %k0
@@ -60,7 +60,7 @@ func000000000000004c:                   # @func000000000000004c
 	.zero	1
 .LCPI1_2:
 	.zero	4,3
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm1, %xmm1
 	vpcmpneqb	.LCPI1_1(%rip), %xmm1, %k0
 	vptestmq	%ymm0, %ymm0, %k1
@@ -85,7 +85,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vptestmb	.LCPI2_0(%rip), %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
 	korw	%k1, %k0, %k0
@@ -130,7 +130,7 @@ func000000000000001c:                   # @func000000000000001c
 	.quad	2305843009213693951             # 0x1fffffffffffffff
 .LCPI3_3:
 	.zero	4,248
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vpandd	.LCPI3_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpneqb	.LCPI3_1(%rip), %xmm1, %k0
 	vpcmpnleuq	.LCPI3_2(%rip){1to4}, %ymm0, %k1
@@ -155,7 +155,7 @@ func000000000000008c:                   # @func000000000000008c
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vptestnmb	.LCPI4_0(%rip), %xmm1, %k0
 	vptestmq	%ymm0, %ymm0, %k1
 	korw	%k1, %k0, %k0
@@ -181,7 +181,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	.zero	1
 .LCPI5_1:
 	.quad	16                              # 0x10
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vptestnmb	.LCPI5_0(%rip), %xmm1, %k0
 	vpcmpltuq	.LCPI5_1(%rip){1to4}, %ymm0, %k1
 	korw	%k1, %k0, %k0
@@ -205,7 +205,7 @@ func0000000000000041:                   # @func0000000000000041
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmb	.LCPI6_0(%rip), %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
 	korw	%k1, %k0, %k0

@@ -5,7 +5,7 @@
 ; llvm/optimized/CGSCCPassManager.cpp.ll
 ; llvm/optimized/GISelKnownBits.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000e1(i32 %0) #0 {
+define i32 @func00000000000001c1(i32 %0) #0 {
 entry:
   %1 = sub nuw nsw i32 33, %0
   %2 = shl nuw i32 1, %1
@@ -18,7 +18,7 @@ entry:
 ; cmake/optimized/zstd_opt.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0) #0 {
+define i32 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = sub i32 11, %0
   %2 = shl nuw i32 1, %1

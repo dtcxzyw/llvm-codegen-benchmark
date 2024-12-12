@@ -84,9 +84,8 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/DeclPrinter.cpp.ll
 ; llvm/optimized/DeclarationFragments.cpp.ll
 ; llvm/optimized/ObjCMT.cpp.ll

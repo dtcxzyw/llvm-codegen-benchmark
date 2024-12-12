@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/imageinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000301(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %.neg = add i64 %0, 1
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/imageinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000191(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000321(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %.neg = add i64 %0, 1
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/ProductAdditiveQuantizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %.neg = add i64 %0, 1
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/ProductAdditiveQuantizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %.neg = add i64 %0, 1

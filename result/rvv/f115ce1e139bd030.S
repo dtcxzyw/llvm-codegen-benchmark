@@ -108,17 +108,17 @@ func0000000000000010:                   # @func0000000000000010
 	srli	a0, a0, 2
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000037:                   # @func0000000000000037
+func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	vadd.vv	v8, v8, v8
 	vadd.vi	v8, v8, 2
 	ret
-func000000000000000f:                   # @func000000000000000f
+func0000000000000037:                   # @func0000000000000037
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	vadd.vv	v8, v8, v8
-	vadd.vi	v8, v8, 4
+	vadd.vi	v8, v8, 2
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e64, m2, ta, ma

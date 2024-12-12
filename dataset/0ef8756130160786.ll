@@ -3,10 +3,10 @@
 ; abc/optimized/extraBddThresh.c.ll
 ; opencv/optimized/reshape_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e6(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000003c6(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -20,10 +20,10 @@ entry:
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/localtopologychecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e6(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001c6(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -34,7 +34,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }

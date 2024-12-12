@@ -1,8 +1,8 @@
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	movl	%edi, %eax
 	movl	%esi, %ecx
-	cmpq	%rdx, %rcx
-	cmovlel	%esi, %eax
+	cmpq	%rcx, %rdx
+	cmovgel	%esi, %eax
 	testq	%rdx, %rdx
 	cmovsl	%esi, %eax
 	retq

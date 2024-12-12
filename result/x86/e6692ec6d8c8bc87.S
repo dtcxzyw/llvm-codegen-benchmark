@@ -2,22 +2,21 @@ func000000000000001a:                   # @func000000000000001a
 	subq	%rsi, %rdi
 	leaq	-20(%rdi), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001b:                   # @func000000000000001b
 	subq	%rsi, %rdi
-	leaq	12(%rdi), %rax
+	leaq	24(%rdi), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
-	subq	%rsi, %rdi
-	leaq	44(%rdi), %rax
-	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	subq	%rsi, %rdi
 	leaq	1(%rdi), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	shlq	$3, %rsi
+func000000000000003f:                   # @func000000000000003f
 	subq	%rsi, %rdi
-	leaq	8(%rdi), %rax
+	leaq	3104(%rdi), %rax
+	retq
+func0000000000000030:                   # @func0000000000000030
+	subq	%rsi, %rdi
+	leaq	1152(%rdi), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	subq	%rsi, %rdi

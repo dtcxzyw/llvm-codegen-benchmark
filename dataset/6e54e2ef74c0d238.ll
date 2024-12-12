@@ -7,19 +7,19 @@ define i1 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = sub i64 0, %0
-  %6 = icmp eq i64 %4, %5
+  %5 = sub nsw i64 0, %4
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp ugt i64 %5, 7
   ret i1 %6
 }
@@ -29,12 +29,12 @@ entry:
 ; linux/optimized/skbuff.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 65535
+  %5 = add nuw nsw i64 %0, %4
+  %6 = icmp samesign ult i64 %5, 65535
   ret i1 %6
 }
 
@@ -56,11 +56,11 @@ entry:
 ; zfp/optimized/encode4i.c.ll
 ; zfp/optimized/encode4l.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp ugt i64 %5, 63
   ret i1 %6
 }
@@ -72,7 +72,7 @@ define i1 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp ugt i64 %5, 65535
   ret i1 %6
 }
@@ -80,12 +80,12 @@ entry:
 ; 1 occurrences:
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ugt i64 %5, 1
+  %5 = add nuw nsw i64 %0, %4
+  %6 = icmp samesign ugt i64 %5, 1
   ret i1 %6
 }
 

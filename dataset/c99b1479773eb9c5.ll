@@ -1,5 +1,5 @@
 
-; 131 occurrences:
+; 130 occurrences:
 ; assimp/optimized/BVHLoader.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
@@ -69,7 +69,6 @@
 ; minetest/optimized/CSceneCollisionManager.cpp.ll
 ; minetest/optimized/CSceneManager.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/clientenvironment.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll

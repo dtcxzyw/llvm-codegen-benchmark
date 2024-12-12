@@ -1,7 +1,6 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
-; cpython/optimized/ceval.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; hdf5/optimized/H5B2internal.c.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
@@ -35,11 +34,12 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/tx.ll
 ; postgres/optimized/brin_minmax_multi.ll
+; postgres/optimized/refint.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i16 %0) #0 {

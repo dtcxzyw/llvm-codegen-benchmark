@@ -47,26 +47,26 @@ func0000000000000003:                   # @func0000000000000003
 	vzeroupper
 	retq
 .LCPI6_0:
-	.long	0xc0400000                      # float -3
-func000000000000000a:                   # @func000000000000000a
+	.long	0x3f800000                      # float 1
+func0000000000000008:                   # @func0000000000000008
 	vaddps	.LCPI6_0(%rip){1to16}, %zmm1, %zmm1
-	vcmpleps	%zmm0, %zmm1, %k0
+	vcmpeqps	%zmm0, %zmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI7_0:
-	.long	0x38d1b717                      # float 9.99999974E-5
-func000000000000000b:                   # @func000000000000000b
+	.long	0xc0400000                      # float -3
+func000000000000000a:                   # @func000000000000000a
 	vaddps	.LCPI7_0(%rip){1to16}, %zmm1, %zmm1
-	vcmpnltps	%zmm1, %zmm0, %k0
+	vcmpleps	%zmm0, %zmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI8_0:
-	.long	0x3f800000                      # float 1
-func0000000000000008:                   # @func0000000000000008
+	.long	0x38d1b717                      # float 9.99999974E-5
+func000000000000000b:                   # @func000000000000000b
 	vaddps	.LCPI8_0(%rip){1to16}, %zmm1, %zmm1
-	vcmpeqps	%zmm0, %zmm1, %k0
+	vcmpnltps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

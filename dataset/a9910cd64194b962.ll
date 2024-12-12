@@ -11,12 +11,11 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; clamav/optimized/binhex.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/attr.ll
 ; linux/optimized/nsaccess.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
@@ -26,7 +25,7 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %0, 0
@@ -39,7 +38,7 @@ entry:
 ; linux/optimized/skl_universal_plane.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp slt i32 %0, 0
@@ -54,7 +53,7 @@ entry:
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/hb-common.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ult i32 %0, 16369

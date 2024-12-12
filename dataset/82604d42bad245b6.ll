@@ -4,9 +4,9 @@
 ; php/optimized/phpdbg_help.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000080(i32 %0, i64 %1, ptr %2) #0 {
+define i32 @func00000000000000c0(i32 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = trunc i64 %5 to i32
@@ -20,9 +20,9 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i32 %0, i64 %1, ptr %2) #0 {
+define i32 @func00000000000000c1(i32 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 2
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = trunc i64 %5 to i32

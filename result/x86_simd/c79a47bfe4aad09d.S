@@ -2,7 +2,7 @@
 	.quad	2                               # 0x2
 .LCPI0_1:
 	.quad	4                               # 0x4
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm0, %k1
@@ -15,7 +15,7 @@ func0000000000000023:                   # @func0000000000000023
 	.quad	1095216660480                   # 0xff00000000
 .LCPI1_1:
 	.quad	4278190080                      # 0xff000000
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm0, %k1
@@ -56,7 +56,7 @@ func0000000000000014:                   # @func0000000000000014
 	.quad	2                               # 0x2
 .LCPI4_1:
 	.quad	4                               # 0x4
-func000000000000002d:                   # @func000000000000002d
+func000000000000004d:                   # @func000000000000004d
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm0, %k1
@@ -69,7 +69,7 @@ func000000000000002d:                   # @func000000000000002d
 	.quad	8                               # 0x8
 .LCPI5_1:
 	.quad	32                              # 0x20
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm0, %k1

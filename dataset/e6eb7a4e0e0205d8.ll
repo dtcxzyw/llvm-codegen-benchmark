@@ -1,9 +1,10 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcUnreach.c.ll
 ; abc/optimized/ioWriteBook.c.ll
 ; darktable/optimized/histogram.c.ll
 ; libpng/optimized/png.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openblas/optimized/dlamch.c.ll
 ; opencv/optimized/introduction_to_pca.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -5
   %4 = icmp ne i64 %3, 0
@@ -17,7 +17,7 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 34359738240
   %4 = icmp ne i64 %3, 0
@@ -31,7 +31,7 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 247
   %4 = icmp eq i64 %3, 0
@@ -63,7 +63,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %3, 6
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4096
   %4 = icmp ne i64 %3, 0

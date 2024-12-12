@@ -36,7 +36,18 @@ entry:
   ret i1 %6
 }
 
-; 11 occurrences:
+; 21 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; duckdb/optimized/ub_duckdb_catalog.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_set.cpp.ll
@@ -47,7 +58,6 @@ entry:
 ; icu/optimized/ucnv.ll
 ; minetest/optimized/enriched_string.cpp.ll
 ; opencv/optimized/subgraphs.cpp.ll
-; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, ptr %2) #0 {
 entry:

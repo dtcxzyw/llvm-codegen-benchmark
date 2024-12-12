@@ -1,5 +1,5 @@
 
-; 383 occurrences:
+; 398 occurrences:
 ; abseil-cpp/optimized/log_entry_test.cc.ll
 ; abseil-cpp/optimized/non_temporal_memcpy_test.cc.ll
 ; arrow/optimized/grouper.cc.ll
@@ -30,11 +30,26 @@
 ; assimp/optimized/Q3BSPFileParser.cpp.ll
 ; assimp/optimized/SMDLoader.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
+; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/XFileImporter.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/cmCTest.cxx.ll
@@ -388,7 +403,7 @@ define i1 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = xor i64 %3, 9223372036854775807
-  %5 = icmp uge i64 %4, %0
+  %5 = icmp ule i64 %0, %4
   ret i1 %5
 }
 
@@ -399,8 +414,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = add i64 %3, %2
-  %5 = icmp ult i64 %4, %0
+  %4 = add i64 %2, %3
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 

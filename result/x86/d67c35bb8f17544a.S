@@ -23,7 +23,7 @@ func000000000000004b:                   # @func000000000000004b
 	cmpq	%rdx, %rsi
 	sbbq	$-1, %rax
 	retq
-func00000000000001cb:                   # @func00000000000001cb
+func00000000000003cb:                   # @func00000000000003cb
 	movq	%rdi, %rax
 	addq	$40, %rdx
 	cmpq	%rdx, %rsi

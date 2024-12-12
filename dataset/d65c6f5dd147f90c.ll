@@ -24,7 +24,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 

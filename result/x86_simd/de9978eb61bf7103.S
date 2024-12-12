@@ -1,15 +1,15 @@
 .LCPI0_0:
 	.long	1                               # 0x1
-func000000000000000c:                   # @func000000000000000c
+func000000000000000e:                   # @func000000000000000e
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm0, %ymm1, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
-	.long	1                               # 0x1
-func000000000000000e:                   # @func000000000000000e
-	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
+	.long	3                               # 0x3
+func000000000000000c:                   # @func000000000000000c
+	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [3,3,3,3,3,3,3,3]
 	vpsllvd	%ymm0, %ymm1, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper

@@ -43,6 +43,19 @@ entry:
   ret i64 %5
 }
 
+; 2 occurrences:
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 8
+  %3 = shl nuw i64 %0, 40
+  %4 = or disjoint i64 %3, %2
+  %5 = lshr i64 %4, 32
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; linux/optimized/pt.ll
 ; Function Attrs: nounwind

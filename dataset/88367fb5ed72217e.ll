@@ -1,5 +1,6 @@
 
-; 16 occurrences:
+; 18 occurrences:
+; boost/optimized/code_conversion.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; flatbuffers/optimized/idl_gen_java.cpp.ll
 ; flatbuffers/optimized/idl_gen_python.cpp.ll
@@ -16,11 +17,12 @@
 ; raylib/optimized/raudio.c.ll
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; ruby/optimized/addr2line.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -57,9 +59,12 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
 ; linux/optimized/nfs4namespace.ll
 ; meshlab/optimized/save_project.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -67,10 +72,10 @@ entry:
 ; openjdk/optimized/parse2.ll
 ; yosys/optimized/ice40_braminit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = icmp ult i64 %3, 16777216
+  %4 = icmp samesign ult i64 %3, 16777216
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -125,7 +130,7 @@ entry:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; redis/optimized/t_string.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 7
@@ -136,25 +141,44 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_display_ati.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000078(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 106
+  %4 = icmp samesign ugt i64 %3, 106
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
+; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; libuv/optimized/idna.c.ll
 ; llvm/optimized/X86MachObjectWriter.cpp.ll
 ; node/optimized/idna.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 8 occurrences:
+; abseil-cpp/optimized/civil_time_test.cc.ll
+; abseil-cpp/optimized/time_zone_format.cc.ll
+; abseil-cpp/optimized/time_zone_info.cc.ll
+; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
+; clamav/optimized/clamdtop.c.ll
+; libwebp/optimized/predictor_enc.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = icmp sgt i64 %3, -1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -179,7 +203,7 @@ entry:
 ; libquic/optimized/convert.c.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = icmp ne i64 %3, 2147483647
@@ -187,31 +211,13 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
-; abseil-cpp/optimized/civil_time_test.cc.ll
-; abseil-cpp/optimized/time_zone_format.cc.ll
-; abseil-cpp/optimized/time_zone_info.cc.ll
-; abseil-cpp/optimized/time_zone_libc.cc.ll
-; clamav/optimized/clamdtop.c.ll
-; delta-rs/optimized/2braxl0lj34anf5z.ll
-; libwebp/optimized/predictor_enc.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = icmp sgt i64 %3, 0
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 2 occurrences:
-; cpython/optimized/gcmodule.ll
+; 1 occurrences:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = icmp ult i64 %3, 2
+  %4 = icmp samesign ult i64 %3, 2
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -222,7 +228,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp slt i64 %3, 0
@@ -234,7 +240,7 @@ entry:
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = icmp eq i64 %3, 3
@@ -246,7 +252,7 @@ entry:
 ; eastl/optimized/Int128_t.cpp.ll
 ; icu/optimized/number_decimalquantity.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = icmp ult i64 %3, 1000000000000000001
@@ -257,10 +263,21 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp eq i64 %3, 3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; cpython/optimized/gcmodule.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = icmp ult i64 %3, 100
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

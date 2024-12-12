@@ -231,8 +231,9 @@ entry:
   ret i8 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll

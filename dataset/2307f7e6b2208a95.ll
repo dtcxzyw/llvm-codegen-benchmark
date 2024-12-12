@@ -1,5 +1,7 @@
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
@@ -19,7 +21,7 @@ entry:
   ret i64 %6
 }
 
-; 56 occurrences:
+; 57 occurrences:
 ; cpython/optimized/bytearrayobject.ll
 ; cvc5/optimized/term_tuple_enumerator.cpp.ll
 ; duckdb/optimized/ub_duckdb_bind_statement.cpp.ll
@@ -46,6 +48,7 @@ entry:
 ; folly/optimized/dynamic.cpp.ll
 ; freetype/optimized/winfnt.c.ll
 ; graphviz/optimized/excontext.c.ll
+; gromacs/optimized/convert_tpr.cpp.ll
 ; libquic/optimized/quic_sent_entropy_manager.cc.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll

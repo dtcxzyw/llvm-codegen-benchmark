@@ -53,3 +53,14 @@ func0000000000000008:                   # @func0000000000000008
 	li	a1, 253
 	sltu	a0, a1, a0
 	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a1, a1, 1
+	andi	a0, a0, 255
+	bnez	a1, .LBB5_2
+	li	a1, 191
+	sltu	a0, a1, a0
+	ret
+.LBB5_2:
+	li	a1, 159
+	sltu	a0, a1, a0
+	ret

@@ -1,6 +1,9 @@
 
-; 6 occurrences:
+; 9 occurrences:
+; abc/optimized/giaStr.c.ll
 ; abc/optimized/kitCloud.c.ll
+; hyperscan/optimized/mcclellan.c.ll
+; hyperscan/optimized/mcsheng.c.ll
 ; linux/optimized/hdac_bus.ll
 ; linux/optimized/maple_tree.ll
 ; opencv/optimized/softfloat.cpp.ll

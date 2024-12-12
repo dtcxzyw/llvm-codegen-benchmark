@@ -1,11 +1,12 @@
 
-; 359 occurrences:
+; 367 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
+; boost/optimized/text_file_backend.ll
 ; c3c/optimized/parse_expr.c.ll
 ; c3c/optimized/parse_global.c.ll
 ; c3c/optimized/project.c.ll
@@ -14,7 +15,6 @@
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
 ; cmake/optimized/cmCMakePresetsGraphReadJSON.cxx.ll
 ; cmake/optimized/multi.c.ll
 ; cmake/optimized/xmltok.c.ll
@@ -60,7 +60,6 @@
 ; linux/optimized/cistpl.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/dvo_ivch.ll
-; linux/optimized/early.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/i2c-core-base.ll
 ; linux/optimized/ich8lan.ll
@@ -133,7 +132,6 @@
 ; llvm/optimized/ObjCARC.cpp.ll
 ; llvm/optimized/PackedVersion.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
@@ -179,6 +177,7 @@
 ; luajit/optimized/lj_opt_loop_dyn.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/pointabilities.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
@@ -227,6 +226,7 @@
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
+; openusd/optimized/patchTableFactory.cpp.ll
 ; openusd/optimized/refinement.cpp.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; openusd/optimized/value.cpp.ll
@@ -359,6 +359,14 @@
 ; wireshark/optimized/visual.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; yalantinglibs/optimized/example.cpp.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i8 %0) #0 {
 entry:
@@ -367,7 +375,7 @@ entry:
   ret i16 %2
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -380,6 +388,7 @@ entry:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; luau/optimized/UnwindBuilderWin.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll

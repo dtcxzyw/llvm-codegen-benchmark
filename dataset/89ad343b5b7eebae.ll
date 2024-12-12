@@ -1,8 +1,15 @@
 
-; 15 occurrences:
+%"class.std::__cxx11::basic_string.2825972" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2825975", i64, %union.anon.32.2825976 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2825975" = type { ptr }
+%union.anon.32.2825976 = type { i64, [8 x i8] }
+
+; 18 occurrences:
 ; cpython/optimized/codeobject.ll
+; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/simd_prune_kernel.cpp.ll
+; gromacs/optimized/slasq2.cpp.ll
+; openblas/optimized/dlasq2.c.ll
 ; openjdk/optimized/bootstrapInfo.ll
 ; openjdk/optimized/bytecodeTracer.ll
 ; openjdk/optimized/classListParser.ll
@@ -39,7 +46,6 @@ entry:
 ; abc/optimized/plaSimple.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; arrow/optimized/trie.cc.ll
-; assimp/optimized/BlenderDNA.cpp.ll
 ; cmake/optimized/divsufsort.c.ll
 ; git/optimized/midx.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -60,6 +66,7 @@ entry:
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; openjdk/optimized/methodComparator.ll
 ; openjdk/optimized/methodHandles.ll
+; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/oware.cc.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
@@ -180,6 +187,28 @@ entry:
   %3 = or i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i32, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; assimp/optimized/BlenderDNA.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2825972", ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; abc/optimized/fraClaus.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 

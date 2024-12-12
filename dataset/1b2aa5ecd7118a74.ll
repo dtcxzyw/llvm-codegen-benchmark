@@ -9,7 +9,7 @@
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; mitsuba3/optimized/zonevector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000002c1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %1, %3
@@ -19,7 +19,7 @@ entry:
   ret i1 %7
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/CompressionContextPoolSingletons.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
@@ -35,7 +35,6 @@ entry:
 ; folly/optimized/IOThreadPoolDeadlockDetectorObserver.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -56,7 +55,7 @@ entry:
 ; folly/optimized/VirtualEventBase.cpp.ll
 ; folly/optimized/Zstd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
@@ -72,7 +71,7 @@ entry:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub i64 %1, %3
@@ -86,7 +85,7 @@ entry:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
@@ -100,7 +99,7 @@ entry:
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %.tr = trunc i64 %1 to i32
   %.narrow = sub i32 %.tr, %2
@@ -108,19 +107,6 @@ entry:
   %4 = add nuw nsw i64 %0, 1
   %5 = icmp eq i64 %4, %3
   ret i1 %5
-}
-
-; 1 occurrences:
-; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = sub nsw i64 %1, %3
-  %5 = and i64 %4, 4611686018427387903
-  %6 = add nuw nsw i64 %0, 1
-  %7 = icmp eq i64 %6, %5
-  ret i1 %7
 }
 
 attributes #0 = { nounwind }

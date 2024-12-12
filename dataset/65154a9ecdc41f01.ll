@@ -1,8 +1,9 @@
 
-; 170 occurrences:
+; 171 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; assimp/optimized/FindDegenerates.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/message.ll
 ; brotli/optimized/block_splitter.c.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
 ; cvc5/optimized/cegis.cpp.ll
@@ -70,6 +71,7 @@
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; luau/optimized/ConstraintSolver.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/s_async.cpp.ll
 ; minetest/optimized/server.cpp.ll
@@ -91,7 +93,6 @@
 ; openmpi/optimized/opal_hash_table.ll
 ; openmpi/optimized/pmix_hash_table.ll
 ; openssl/optimized/libdefault-lib-krb5kdf.ll
-; openssl/optimized/quicfaultstest-bin-quicfaultstest.ll
 ; openusd/optimized/mallocTag.cpp.ll
 ; php/optimized/hash.ll
 ; proj/optimized/grids.cpp.ll
@@ -171,11 +172,11 @@
 ; z3/optimized/static_matrix.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = urem i64 %3, %1
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -219,11 +220,11 @@ entry:
 ; z3/optimized/lar_solver.cpp.ll
 ; z3/optimized/nla_core.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = urem i64 %3, %1
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 

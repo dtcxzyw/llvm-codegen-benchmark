@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	3                               # 0x3
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpsrld	$3, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%ymm1, %ymm2, %ymm1

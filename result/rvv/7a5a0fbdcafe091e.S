@@ -50,13 +50,30 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 99
 	vmsne.vx	v0, v8, a0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	lui	a0, 16
+	addiw	a0, a0, -1024
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vx	v8, v8, a0
+	vmseq.vi	v0, v8, 0
+	ret
 func0000000000000008:                   # @func0000000000000008
 	lui	a0, 3584
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000018:                   # @func0000000000000018
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 2
+	vsetvli	zero, zero, e16, mf2, ta, ma
+	vnsrl.wi	v8, v10, 0
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vnsrl.wi	v8, v8, 0
+	li	a0, 29
+	vmsgtu.vx	v0, v8, a0
+	ret
+func0000000000000086:                   # @func0000000000000086
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 4
 	vsetvli	zero, zero, e16, mf2, ta, ma

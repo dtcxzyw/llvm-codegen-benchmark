@@ -65,6 +65,19 @@ entry:
   ret i32 %4
 }
 
+; 3 occurrences:
+; hermes/optimized/APFloat.cpp.ll
+; llvm/optimized/APFloat.cpp.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 1
+  %3 = sub i32 %0, %2
+  %4 = add i32 %3, -2
+  ret i32 %4
+}
+
 ; 12 occurrences:
 ; abc/optimized/giaSatMap.c.ll
 ; abc/optimized/wlnRetime.c.ll
@@ -131,7 +144,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -309,22 +322,7 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
-; hermes/optimized/APFloat.cpp.ll
-; llvm/optimized/APFloat.cpp.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw i32 %1, 2
-  %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
-  ret i32 %4
-}
-
-; 7 occurrences:
-; linux/optimized/rpl.ll
+; 6 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-cip.c.ll

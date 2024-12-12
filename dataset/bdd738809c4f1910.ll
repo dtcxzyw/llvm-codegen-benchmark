@@ -17,14 +17,13 @@ entry:
   ret i64 %3
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; jemalloc/optimized/base.ll
 ; jemalloc/optimized/base.pic.ll
 ; jemalloc/optimized/base.sym.ll
 ; jemalloc/optimized/ctl.ll
 ; jemalloc/optimized/ctl.pic.ll
 ; jemalloc/optimized/ctl.sym.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll

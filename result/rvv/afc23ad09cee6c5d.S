@@ -11,12 +11,6 @@ func000000000000001d:                   # @func000000000000001d
 	vmul.vx	v10, v10, a0
 	vwaddu.wv	v8, v8, v10
 	ret
-func0000000000000003:                   # @func0000000000000003
-	li	a0, 3
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmul.vx	v10, v10, a0
-	vwaddu.wv	v8, v8, v10
-	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a0, 96
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -31,6 +25,12 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000b:                   # @func000000000000000b
 	li	a0, 3
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmul.vx	v10, v10, a0
+	vwaddu.wv	v8, v8, v10
+	ret
+func0000000000000003:                   # @func0000000000000003
+	li	a0, 48
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmul.vx	v10, v10, a0
 	vwaddu.wv	v8, v8, v10

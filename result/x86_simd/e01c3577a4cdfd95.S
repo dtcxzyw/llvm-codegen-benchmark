@@ -4,7 +4,7 @@
 	.long	8191                            # 0x1fff
 func0000000000000001:                   # @func0000000000000001
 	vpslld	$9, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI0_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
@@ -22,7 +22,7 @@ func000000000000000b:                   # @func000000000000000b
 	.long	4025479151                      # 0xefefefef
 func000000000000000f:                   # @func000000000000000f
 	vpslld	$8, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogd	$228, .LCPI2_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm1 ^ (mem & (ymm0 ^ ymm1))
 	retq
 .LCPI3_0:
@@ -67,7 +67,7 @@ func000000000000000f:                   # @func000000000000000f
 	.byte	255                             # 0xff
 func000000000000000d:                   # @func000000000000000d
 	vpslld	$23, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI3_2(%rip){1to8}, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI3_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq

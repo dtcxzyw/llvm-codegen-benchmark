@@ -13,7 +13,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpbroadcastq	.LCPI0_1(%rip), %ymm1 {%k2} # ymm1 {%k2} = [3,3,3,3]
 	vpbroadcastq	.LCPI0_2(%rip), %ymm2   # ymm2 = [2,2,2,2]
 	vmovdqa64	%ymm1, %ymm2 {%k1}
-	vpcmpeqq	%ymm0, %ymm2, %k0
+	vpcmpeqq	%ymm2, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

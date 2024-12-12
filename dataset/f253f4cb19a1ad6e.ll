@@ -17,11 +17,11 @@
 ; slurm/optimized/affinity.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = and i64 %2, 67108863
-  %4 = getelementptr nusw i64, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -44,11 +44,11 @@ entry:
 ; php/optimized/phpdbg_help.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 15
   %3 = and i64 %2, 4
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

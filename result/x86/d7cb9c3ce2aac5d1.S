@@ -14,14 +14,6 @@ func00000000000000c0:                   # @func00000000000000c0
 	cmpl	$1, %ecx
 	sbbl	$-1, %eax
 	retq
-func0000000000000040:                   # @func0000000000000040
-	movl	%edx, %ecx
-	movl	%edi, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	cmpl	$3, %ecx
-	adcl	$0, %eax
-	retq
 func00000000000000c2:                   # @func00000000000000c2
 	movl	%edx, %ecx
 	movl	%edi, %eax

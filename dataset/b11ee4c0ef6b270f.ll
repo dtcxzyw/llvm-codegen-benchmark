@@ -63,37 +63,43 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0) #0 {
+define i1 @func000000000000004a(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 1, %0
   %2 = icmp sgt i32 %1, 2048
   ret i1 %2
 }
 
-; 6 occurrences:
-; abc/optimized/abcOrchestration.c.ll
-; abc/optimized/abcResub.c.ll
+; 4 occurrences:
 ; abc/optimized/ifDec75.c.ll
 ; abc/optimized/plaMan.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; linux/optimized/ialloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0) #0 {
+define i1 @func0000000000000046(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 1, %0
-  %2 = icmp slt i32 %1, 33
+  %2 = icmp slt i32 %1, 2
   ret i1 %2
 }
 
-; 3 occurrences:
-; linux/optimized/mballoc.ll
-; linux/optimized/mq-deadline.ll
+; 1 occurrences:
 ; linux/optimized/tcp_output.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = shl i32 200, %0
   %2 = icmp ult i32 %1, 120000
+  ret i1 %2
+}
+
+; 1 occurrences:
+; linux/optimized/mballoc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = shl i32 2, %0
+  %2 = icmp samesign ult i32 %1, 4097
   ret i1 %2
 }
 

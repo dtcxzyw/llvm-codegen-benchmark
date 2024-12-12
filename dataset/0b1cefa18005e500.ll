@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 47 occurrences:
 ; freetype/optimized/bdf.c.ll
 ; freetype/optimized/truetype.c.ll
 ; glog/optimized/symbolize.cc.ll
@@ -36,6 +36,17 @@
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/file-elf.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
@@ -45,9 +56,11 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; qemu/optimized/ui_cursor.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i16 %0, i16 %1) #0 {
 entry:

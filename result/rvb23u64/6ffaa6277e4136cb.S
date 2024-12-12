@@ -16,6 +16,16 @@ func000000000000000f:                   # @func000000000000000f
 	and	a1, a1, a2
 	czero.nez	a0, a1, a0
 	ret
+func000000000000000e:                   # @func000000000000000e
+	andi	a0, a0, 1
+	slli	a1, a1, 6
+	li	a2, 56
+	addi	a1, a1, 120
+	zext.w	a1, a1
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
+	ret
 func000000000000000b:                   # @func000000000000000b
 	andi	a0, a0, 1
 	slli	a1, a1, 1

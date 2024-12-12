@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; graphviz/optimized/gvrender_core_pov.c.ll
 ; graphviz/optimized/htmltable.c.ll
 ; meshlab/optimized/decorate_background.cpp.ll
@@ -14,7 +14,6 @@
 ; wireshark/optimized/packet-bthci_cmd.c.ll
 ; wireshark/optimized/packet-bthci_evt.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
-; wireshark/optimized/packet-ieee80211-netmon.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-igmp.c.ll
 ; wireshark/optimized/packet-obd-ii.c.ll

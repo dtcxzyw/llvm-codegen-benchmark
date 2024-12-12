@@ -5,7 +5,7 @@
 ; llvm/optimized/Expr.cpp.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0) #0 {
+define i1 @func00000000000000c1(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = add nuw nsw i64 %1, 63

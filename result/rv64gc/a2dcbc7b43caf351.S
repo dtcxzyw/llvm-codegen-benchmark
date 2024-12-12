@@ -1,4 +1,4 @@
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000541:                   # @func0000000000000541
 	sext.w	a4, a2
 	sext.w	a5, a0
 	sext.w	a3, a1
@@ -15,7 +15,7 @@ func00000000000001a1:                   # @func00000000000001a1
 	beq	a3, a2, .LBB0_2
 .LBB0_4:                                # %entry
 	ret
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	sext.w	a4, a2
 	sext.w	a5, a0
 	sext.w	a3, a1

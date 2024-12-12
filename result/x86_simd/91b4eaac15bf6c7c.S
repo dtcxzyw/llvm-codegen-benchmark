@@ -55,7 +55,7 @@ func0000000000000005:                   # @func0000000000000005
 	.long	4294967292                      # 0xfffffffc
 func0000000000000004:                   # @func0000000000000004
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI3_0:
@@ -86,7 +86,7 @@ func0000000000000008:                   # @func0000000000000008
 	.long	1023                            # 0x3ff
 func0000000000000002:                   # @func0000000000000002
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
 	vpandd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI7_0:

@@ -1,18 +1,20 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; folly/optimized/EpollBackend.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
 ; minetest/optimized/map.cpp.ll
+; openusd/optimized/type.cpp.ll
 ; ruby/optimized/cont.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000023(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %1, %2
   %4 = select i1 %3, i64 160, i64 152
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 57 occurrences:
+; 53 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/fraigFanout.c.ll
 ; bullet3/optimized/btManifoldResult.ll
@@ -37,14 +39,12 @@ entry:
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AnalyzerStatsChecker.cpp.ll
 ; llvm/optimized/ClangAttrEmitter.cpp.ll
+; llvm/optimized/CodeLayout.cpp.ll
 ; llvm/optimized/ConstraintElimination.cpp.ll
 ; llvm/optimized/JSON.cpp.ll
-; llvm/optimized/LoopFuse.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
-; llvm/optimized/SelectOptimize.cpp.ll
-; llvm/optimized/SimplifyCFG.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -57,10 +57,7 @@ entry:
 ; openjdk/optimized/metaspaceArena.ll
 ; openmpi/optimized/opal_rb_tree.ll
 ; openvdb/optimized/Metadata.cc.ll
-; pocketpy/optimized/linalg.cpp.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
-; pocketpy/optimized/pocketpy_c.cpp.ll
-; pocketpy/optimized/vm.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
@@ -68,18 +65,19 @@ entry:
 ; verilator/optimized/V3Width.cpp.ll
 ; wireshark/optimized/packet-amqp.c.ll
 ; z3/optimized/bv_rewriter.cpp.ll
+; z3/optimized/euf_solver.cpp.ll
 ; z3/optimized/qe_datatype_plugin.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000007(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = select i1 %3, i64 8, i64 0
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 307 occurrences:
+; 976 occurrences:
 ; abseil-cpp/optimized/compressed_tuple_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_allocator_test.cc.ll
 ; abseil-cpp/optimized/str_replace_test.cc.ll
@@ -92,6 +90,103 @@ entry:
 ; assimp/optimized/OpenGEXImporter.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
 ; assimp/optimized/StepExporter.cpp.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/framework.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/thread.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/unit_test_parameters.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; casadi/optimized/casadi_call.cpp.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
@@ -169,7 +264,29 @@ entry:
 ; flatbuffers/optimized/idl_gen_java.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; folly/optimized/AtFork.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
+; g2o/optimized/edge_sba_cam.cpp.ll
+; g2o/optimized/edge_sba_scale.cpp.ll
+; g2o/optimized/edge_se2.cpp.ll
+; g2o/optimized/edge_se2_line2d.cpp.ll
+; g2o/optimized/edge_se2_offset.cpp.ll
+; g2o/optimized/edge_se2_pointxy.cpp.ll
+; g2o/optimized/edge_se2_pointxy_bearing.cpp.ll
+; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
+; g2o/optimized/edge_se2_pointxy_offset.cpp.ll
+; g2o/optimized/edge_se2_segment2d.cpp.ll
+; g2o/optimized/edge_se2_sensor_calib.cpp.ll
+; g2o/optimized/edge_se3.cpp.ll
+; g2o/optimized/edge_se3_offset.cpp.ll
+; g2o/optimized/edge_se3_pointxyz.cpp.ll
+; g2o/optimized/edge_se3_pointxyz_depth.cpp.ll
+; g2o/optimized/edge_se3_pointxyz_disparity.cpp.ll
+; g2o/optimized/estimate_propagator.cpp.ll
+; g2o/optimized/hyper_dijkstra.cpp.ll
+; g2o/optimized/hyper_graph.cpp.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/solver_slam2d_linear.cpp.ll
+; g2o/optimized/sparse_optimizer.cpp.ll
+; g2o/optimized/types_seven_dof_expmap.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/SymbolTable.cpp.ll
@@ -212,268 +329,8 @@ entry:
 ; libzmq/optimized/session_base.cpp.ll
 ; libzmq/optimized/xpub.cpp.ll
 ; lief/optimized/Builder.cpp.ll
-; linux/optimized/drm_prime.ll
 ; linux/optimized/drm_vma_manager.ll
 ; linux/optimized/tree_lookup.ll
-; luau/optimized/ConstraintSolver.cpp.ll
-; luau/optimized/Simplify.cpp.ll
-; luau/optimized/ToString.cpp.ll
-; luau/optimized/TopoSortStatements.cpp.ll
-; luau/optimized/Type.cpp.ll
-; luau/optimized/TypeAttach.cpp.ll
-; meshlab/optimized/TexturePainter.cpp.ll
-; meshlab/optimized/VisibilityCheck.cpp.ll
-; meshlab/optimized/action_searcher.cpp.ll
-; meshlab/optimized/alignDialog.cpp.ll
-; meshlab/optimized/baseio.cpp.ll
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/decorate_base.cpp.ll
-; meshlab/optimized/decorate_raster_proj.cpp.ll
-; meshlab/optimized/dirt_utils.cpp.ll
-; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_img_patch_param.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
-; meshlab/optimized/filter_layer.cpp.ll
-; meshlab/optimized/filter_plymc.cpp.ll
-; meshlab/optimized/filter_sample_gpu.cpp.ll
-; meshlab/optimized/filter_sampling.cpp.ll
-; meshlab/optimized/filter_sdfgpu.cpp.ll
-; meshlab/optimized/filter_ssynth.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/filter_texture_defragmentation.cpp.ll
-; meshlab/optimized/filter_voronoi.cpp.ll
-; meshlab/optimized/glarea.cpp.ll
-; meshlab/optimized/io_bre.cpp.ll
-; meshlab/optimized/io_pdb.cpp.ll
-; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/mainwindow_RunTime.cpp.ll
-; meshlab/optimized/mesh_graph.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/ml_render_gui.cpp.ll
-; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
-; meshlab/optimized/packing.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
-; meshlab/optimized/seam_remover.cpp.ll
-; meshlab/optimized/seams.cpp.ll
-; meshlab/optimized/shell.cpp.ll
-; meshlab/optimized/texture_optimization.cpp.ll
-; meshlab/optimized/trackball.cpp.ll
-; minetest/optimized/map.cpp.ll
-; ninja/optimized/build.cc.ll
-; ninja/optimized/clean.cc.ll
-; ninja/optimized/dyndep.cc.ll
-; ninja/optimized/dyndep_parser.cc.ll
-; ninja/optimized/dyndep_parser_test.cc.ll
-; ninja/optimized/graphviz.cc.ll
-; ninja/optimized/missing_deps.cc.ll
-; ninja/optimized/missing_deps_test.cc.ll
-; ninja/optimized/ninja.cc.ll
-; ninja/optimized/test.cc.ll
-; nix/optimized/filetransfer.ll
-; nix/optimized/flake.ll
-; nix/optimized/get-drvs.ll
-; nix/optimized/goal.ll
-; nix/optimized/lockfile.ll
-; nix/optimized/nixexpr.ll
-; nix/optimized/print-ambiguous.ll
-; nix/optimized/profile.ll
-; nlohmann_json/optimized/unit-constructor1.cpp.ll
-; node/optimized/libnode.agent.ll
-; node/optimized/libnode.node_binding.ll
-; node/optimized/libnode.node_messaging.ll
-; nori/optimized/screen.cpp.ll
-; opencv/optimized/chessboard.cpp.ll
-; opencv/optimized/net_impl_backend.cpp.ll
-; openvdb/optimized/Archive.cc.ll
-; pbrt-v4/optimized/loopsubdiv.cpp.ll
-; pocketpy/optimized/collections.cpp.ll
-; pocketpy/optimized/expr.cpp.ll
-; pocketpy/optimized/pocketpy.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proxygen/optimized/Service.cpp.ll
-; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; rocksdb/optimized/compaction_picker.cc.ll
-; rocksdb/optimized/db_impl.cc.ll
-; rocksdb/optimized/optimistic_transaction.cc.ll
-; rocksdb/optimized/write_batch.cc.ll
-; sentencepiece/optimized/bpe_model_trainer.cc.ll
-; vcpkg/optimized/dependencies.cpp.ll
-; verilator/optimized/V3Broken.cpp.ll
-; verilator/optimized/V3Case.cpp.ll
-; verilator/optimized/V3Class.cpp.ll
-; verilator/optimized/V3Const__gen.cpp.ll
-; verilator/optimized/V3Dead.cpp.ll
-; verilator/optimized/V3Delayed.cpp.ll
-; verilator/optimized/V3Descope.cpp.ll
-; verilator/optimized/V3DfgAstToDfg.cpp.ll
-; verilator/optimized/V3DfgPasses.cpp.ll
-; verilator/optimized/V3EmitCHeaders.cpp.ll
-; verilator/optimized/V3EmitCImp.cpp.ll
-; verilator/optimized/V3EmitCModel.cpp.ll
-; verilator/optimized/V3Fork.cpp.ll
-; verilator/optimized/V3LinkDot.cpp.ll
-; verilator/optimized/V3LinkResolve.cpp.ll
-; verilator/optimized/V3MergeCond.cpp.ll
-; verilator/optimized/V3OrderMoveGraph.cpp.ll
-; verilator/optimized/V3OrderParallel.cpp.ll
-; verilator/optimized/V3Param.cpp.ll
-; verilator/optimized/V3Randomize.cpp.ll
-; verilator/optimized/V3Sched.cpp.ll
-; verilator/optimized/V3SchedTiming.cpp.ll
-; verilator/optimized/V3Task.cpp.ll
-; verilator/optimized/V3Timing.cpp.ll
-; verilator/optimized/V3TraceDecl.cpp.ll
-; verilator/optimized/V3Tristate.cpp.ll
-; verilator/optimized/V3Width.cpp.ll
-; verilator/optimized/V3WidthCommit.cpp.ll
-; wasmedge/optimized/executor.cpp.ll
-; wasmedge/optimized/runtimeTool.cpp.ll
-; wasmedge/optimized/vm.cpp.ll
-; wasmedge/optimized/wasmedge.cpp.ll
-; wireshark/optimized/wireshark_main_window.cpp.ll
-; wireshark/optimized/wireshark_main_window_slots.cpp.ll
-; xgboost/optimized/aft_obj.cc.ll
-; xgboost/optimized/c_api.cc.ll
-; xgboost/optimized/context.cc.ll
-; xgboost/optimized/data.cc.ll
-; xgboost/optimized/elementwise_metric.cc.ll
-; xgboost/optimized/gblinear.cc.ll
-; xgboost/optimized/gbtree.cc.ll
-; xgboost/optimized/gbtree_model.cc.ll
-; xgboost/optimized/learner.cc.ll
-; xgboost/optimized/logging.cc.ll
-; xgboost/optimized/multiclass_obj.cc.ll
-; xgboost/optimized/param.cc.ll
-; xgboost/optimized/quantile_obj.cc.ll
-; xgboost/optimized/rank_metric.cc.ll
-; xgboost/optimized/regression_obj.cc.ll
-; xgboost/optimized/survival_metric.cc.ll
-; xgboost/optimized/tree_model.cc.ll
-; xgboost/optimized/updater_approx.cc.ll
-; xgboost/optimized/updater_colmaker.cc.ll
-; xgboost/optimized/updater_coordinate.cc.ll
-; xgboost/optimized/updater_quantile_hist.cc.ll
-; xgboost/optimized/updater_shotgun.cc.ll
-; yalantinglibs/optimized/MessageGenerator.cpp.ll
-; yaml-cpp/optimized/memory.cpp.ll
-; yaml-cpp/optimized/nodeevents.cpp.ll
-; yosys/optimized/cxxrtl_backend.ll
-; yosys/optimized/edif.ll
-; yosys/optimized/eval.ll
-; yosys/optimized/expose.ll
-; yosys/optimized/extract.ll
-; yosys/optimized/extract_fa.ll
-; yosys/optimized/flowmap.ll
-; yosys/optimized/freduce.ll
-; yosys/optimized/fsm_detect.ll
-; yosys/optimized/fsm_expand.ll
-; yosys/optimized/fsm_extract.ll
-; yosys/optimized/genrtlil.ll
-; yosys/optimized/hierarchy.ll
-; yosys/optimized/opt_expr.ll
-; yosys/optimized/opt_reduce.ll
-; yosys/optimized/opt_share.ll
-; yosys/optimized/proc_dff.ll
-; yosys/optimized/qbfsat.ll
-; yosys/optimized/recover_names.ll
-; yosys/optimized/sat.ll
-; yosys/optimized/select.ll
-; yosys/optimized/sim.ll
-; yosys/optimized/simplify.ll
-; yosys/optimized/smt2.ll
-; yosys/optimized/splitnets.ll
-; yosys/optimized/test_cell.ll
-; z3/optimized/aig_exporter.cpp.ll
-; z3/optimized/theory_str.cpp.ll
-; zxing/optimized/DMDetector.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ult ptr %1, %2
-  %4 = select i1 %3, i64 16, i64 24
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 44 occurrences:
-; cmake/optimized/cmOutputRequiredFilesCommand.cxx.ll
-; grpc/optimized/chttp2_server.cc.ll
-; grpc/optimized/outlier_detection.cc.ll
-; grpc/optimized/xds_override_host.cc.ll
-; grpc/optimized/xds_server_config_fetcher.cc.ll
-; hermes/optimized/gmock-all.cc.ll
-; hyperscan/optimized/goughcompile.cpp.ll
-; jsonnet/optimized/vm.cpp.ll
-; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
-; llvm/optimized/AsmMatcherEmitter.cpp.ll
-; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
-; llvm/optimized/FuchsiaHandleChecker.cpp.ll
-; llvm/optimized/FunctionAttrs.cpp.ll
-; llvm/optimized/InterfaceStubFunctionsConsumer.cpp.ll
-; llvm/optimized/LocalizationChecker.cpp.ll
-; llvm/optimized/LoopDistribute.cpp.ll
-; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
-; llvm/optimized/MallocChecker.cpp.ll
-; llvm/optimized/MemProfContextDisambiguation.cpp.ll
-; llvm/optimized/MoveChecker.cpp.ll
-; llvm/optimized/NeonEmitter.cpp.ll
-; llvm/optimized/NullabilityChecker.cpp.ll
-; llvm/optimized/ObjCSelfInitChecker.cpp.ll
-; llvm/optimized/PointerArithChecker.cpp.ll
-; llvm/optimized/PthreadLockChecker.cpp.ll
-; llvm/optimized/RangeConstraintManager.cpp.ll
-; llvm/optimized/RegionStore.cpp.ll
-; llvm/optimized/SimpleStreamChecker.cpp.ll
-; llvm/optimized/StackSafetyAnalysis.cpp.ll
-; llvm/optimized/StreamChecker.cpp.ll
-; llvm/optimized/TransAutoreleasePool.cpp.ll
-; llvm/optimized/UnsafeBufferUsage.cpp.ll
-; llvm/optimized/VarLocBasedImpl.cpp.ll
-; llvm/optimized/VirtualCallChecker.cpp.ll
-; openexr/optimized/ImfHeader.cpp.ll
-; proj/optimized/defmodel.cpp.ll
-; proj/optimized/gridshift.cpp.ll
-; wireshark/optimized/column_list_model.cpp.ll
-; wireshark/optimized/extcap_argument.cpp.ll
-; wireshark/optimized/extcap_options_dialog.cpp.ll
-; wireshark/optimized/label_stack.cpp.ll
-; wireshark/optimized/traffic_types_list.cpp.ll
-; yosys/optimized/expose.ll
-; yosys/optimized/submod.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000010(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ult ptr %1, %2
-  %4 = select i1 %3, i64 24, i64 16
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 576 occurrences:
-; g2o/optimized/edge_sba_cam.cpp.ll
-; g2o/optimized/edge_sba_scale.cpp.ll
-; g2o/optimized/edge_se2.cpp.ll
-; g2o/optimized/edge_se2_line2d.cpp.ll
-; g2o/optimized/edge_se2_offset.cpp.ll
-; g2o/optimized/edge_se2_pointxy.cpp.ll
-; g2o/optimized/edge_se2_pointxy_bearing.cpp.ll
-; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
-; g2o/optimized/edge_se2_pointxy_offset.cpp.ll
-; g2o/optimized/edge_se2_segment2d.cpp.ll
-; g2o/optimized/edge_se2_sensor_calib.cpp.ll
-; g2o/optimized/edge_se3.cpp.ll
-; g2o/optimized/edge_se3_offset.cpp.ll
-; g2o/optimized/edge_se3_pointxyz.cpp.ll
-; g2o/optimized/edge_se3_pointxyz_depth.cpp.ll
-; g2o/optimized/edge_se3_pointxyz_disparity.cpp.ll
-; g2o/optimized/estimate_propagator.cpp.ll
-; g2o/optimized/hyper_dijkstra.cpp.ll
-; g2o/optimized/hyper_graph.cpp.ll
-; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/solver_slam2d_linear.cpp.ll
-; g2o/optimized/sparse_optimizer.cpp.ll
-; g2o/optimized/types_seven_dof_expmap.cpp.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/ARMTargetDefEmitter.cpp.ll
@@ -582,6 +439,76 @@ entry:
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
+; luau/optimized/ConstraintSolver.cpp.ll
+; luau/optimized/Simplify.cpp.ll
+; luau/optimized/ToString.cpp.ll
+; luau/optimized/TopoSortStatements.cpp.ll
+; luau/optimized/Type.cpp.ll
+; luau/optimized/TypeAttach.cpp.ll
+; meshlab/optimized/TexturePainter.cpp.ll
+; meshlab/optimized/VisibilityCheck.cpp.ll
+; meshlab/optimized/action_searcher.cpp.ll
+; meshlab/optimized/alignDialog.cpp.ll
+; meshlab/optimized/baseio.cpp.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/decorate_base.cpp.ll
+; meshlab/optimized/decorate_raster_proj.cpp.ll
+; meshlab/optimized/dirt_utils.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/filter_img_patch_param.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_layer.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_sample_gpu.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_sdfgpu.cpp.ll
+; meshlab/optimized/filter_ssynth.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_texture_defragmentation.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/glarea.cpp.ll
+; meshlab/optimized/io_bre.cpp.ll
+; meshlab/optimized/io_pdb.cpp.ll
+; meshlab/optimized/io_x3d.cpp.ll
+; meshlab/optimized/mainwindow_RunTime.cpp.ll
+; meshlab/optimized/mesh_graph.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/ml_render_gui.cpp.ll
+; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
+; meshlab/optimized/packing.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; meshlab/optimized/seam_remover.cpp.ll
+; meshlab/optimized/seams.cpp.ll
+; meshlab/optimized/shell.cpp.ll
+; meshlab/optimized/texture_optimization.cpp.ll
+; meshlab/optimized/trackball.cpp.ll
+; minetest/optimized/map.cpp.ll
+; ninja/optimized/build.cc.ll
+; ninja/optimized/clean.cc.ll
+; ninja/optimized/dyndep.cc.ll
+; ninja/optimized/dyndep_parser.cc.ll
+; ninja/optimized/dyndep_parser_test.cc.ll
+; ninja/optimized/graphviz.cc.ll
+; ninja/optimized/missing_deps.cc.ll
+; ninja/optimized/missing_deps_test.cc.ll
+; ninja/optimized/ninja.cc.ll
+; ninja/optimized/test.cc.ll
+; nix/optimized/filetransfer.ll
+; nix/optimized/flake.ll
+; nix/optimized/get-drvs.ll
+; nix/optimized/goal.ll
+; nix/optimized/lockfile.ll
+; nix/optimized/nixexpr.ll
+; nix/optimized/print-ambiguous.ll
+; nix/optimized/profile.ll
+; nlohmann_json/optimized/unit-constructor1.cpp.ll
+; node/optimized/libnode.agent.ll
+; node/optimized/libnode.node_binding.ll
+; node/optimized/libnode.node_messaging.ll
+; nori/optimized/screen.cpp.ll
+; opencv/optimized/chessboard.cpp.ll
+; opencv/optimized/net_impl_backend.cpp.ll
 ; openspiel/optimized/twixtboard.cc.ll
 ; openusd/optimized/assetLocalizationDelegate.cpp.ll
 ; openusd/optimized/changes.cpp.ll
@@ -597,6 +524,12 @@ entry:
 ; openusd/optimized/pathNode.cpp.ll
 ; openusd/optimized/schemaRegistry.cpp.ll
 ; openusd/optimized/statistics.cpp.ll
+; openvdb/optimized/Archive.cc.ll
+; pbrt-v4/optimized/loopsubdiv.cpp.ll
+; pocketpy/optimized/collections.cpp.ll
+; pocketpy/optimized/expr.cpp.ll
+; pocketpy/optimized/pocketpy.cpp.ll
+; proxygen/optimized/Service.cpp.ll
 ; quantlib/optimized/abcdatmvolcurve.ll
 ; quantlib/optimized/amortizingcmsratebond.ll
 ; quantlib/optimized/amortizingfixedratebond.ll
@@ -814,7 +747,6 @@ entry:
 ; quantlib/optimized/flathazardrate.ll
 ; quantlib/optimized/flatsmilesection.ll
 ; quantlib/optimized/flatvol.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/floatfloatswaption.ll
 ; quantlib/optimized/floatingratebond.ll
 ; quantlib/optimized/floatingratecoupon.ll
@@ -1027,6 +959,101 @@ entry:
 ; quantlib/optimized/zerocouponinflationswap.ll
 ; quantlib/optimized/zerocouponswap.ll
 ; quantlib/optimized/zeroinflationcashflow.ll
+; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; rocksdb/optimized/compaction_picker.cc.ll
+; rocksdb/optimized/db_impl.cc.ll
+; rocksdb/optimized/optimistic_transaction.cc.ll
+; rocksdb/optimized/write_batch.cc.ll
+; sentencepiece/optimized/bpe_model_trainer.cc.ll
+; vcpkg/optimized/dependencies.cpp.ll
+; verilator/optimized/V3Broken.cpp.ll
+; verilator/optimized/V3Case.cpp.ll
+; verilator/optimized/V3Class.cpp.ll
+; verilator/optimized/V3Const__gen.cpp.ll
+; verilator/optimized/V3Dead.cpp.ll
+; verilator/optimized/V3Delayed.cpp.ll
+; verilator/optimized/V3Descope.cpp.ll
+; verilator/optimized/V3DfgAstToDfg.cpp.ll
+; verilator/optimized/V3DfgPasses.cpp.ll
+; verilator/optimized/V3EmitCHeaders.cpp.ll
+; verilator/optimized/V3EmitCImp.cpp.ll
+; verilator/optimized/V3EmitCModel.cpp.ll
+; verilator/optimized/V3Fork.cpp.ll
+; verilator/optimized/V3LinkDot.cpp.ll
+; verilator/optimized/V3LinkResolve.cpp.ll
+; verilator/optimized/V3MergeCond.cpp.ll
+; verilator/optimized/V3OrderMoveGraph.cpp.ll
+; verilator/optimized/V3OrderParallel.cpp.ll
+; verilator/optimized/V3Param.cpp.ll
+; verilator/optimized/V3Randomize.cpp.ll
+; verilator/optimized/V3Sched.cpp.ll
+; verilator/optimized/V3SchedTiming.cpp.ll
+; verilator/optimized/V3Task.cpp.ll
+; verilator/optimized/V3Timing.cpp.ll
+; verilator/optimized/V3TraceDecl.cpp.ll
+; verilator/optimized/V3Tristate.cpp.ll
+; verilator/optimized/V3Width.cpp.ll
+; verilator/optimized/V3WidthCommit.cpp.ll
+; wasmedge/optimized/executor.cpp.ll
+; wasmedge/optimized/runtimeTool.cpp.ll
+; wasmedge/optimized/vm.cpp.ll
+; wasmedge/optimized/wasmedge.cpp.ll
+; wireshark/optimized/wireshark_main_window.cpp.ll
+; wireshark/optimized/wireshark_main_window_slots.cpp.ll
+; xgboost/optimized/aft_obj.cc.ll
+; xgboost/optimized/c_api.cc.ll
+; xgboost/optimized/context.cc.ll
+; xgboost/optimized/data.cc.ll
+; xgboost/optimized/elementwise_metric.cc.ll
+; xgboost/optimized/gblinear.cc.ll
+; xgboost/optimized/gbtree.cc.ll
+; xgboost/optimized/gbtree_model.cc.ll
+; xgboost/optimized/learner.cc.ll
+; xgboost/optimized/logging.cc.ll
+; xgboost/optimized/multiclass_obj.cc.ll
+; xgboost/optimized/param.cc.ll
+; xgboost/optimized/quantile_obj.cc.ll
+; xgboost/optimized/rank_metric.cc.ll
+; xgboost/optimized/regression_obj.cc.ll
+; xgboost/optimized/survival_metric.cc.ll
+; xgboost/optimized/tree_model.cc.ll
+; xgboost/optimized/updater_approx.cc.ll
+; xgboost/optimized/updater_colmaker.cc.ll
+; xgboost/optimized/updater_coordinate.cc.ll
+; xgboost/optimized/updater_quantile_hist.cc.ll
+; xgboost/optimized/updater_shotgun.cc.ll
+; yalantinglibs/optimized/MessageGenerator.cpp.ll
+; yaml-cpp/optimized/memory.cpp.ll
+; yaml-cpp/optimized/nodeevents.cpp.ll
+; yosys/optimized/cxxrtl_backend.ll
+; yosys/optimized/edif.ll
+; yosys/optimized/eval.ll
+; yosys/optimized/expose.ll
+; yosys/optimized/extract.ll
+; yosys/optimized/extract_fa.ll
+; yosys/optimized/flowmap.ll
+; yosys/optimized/freduce.ll
+; yosys/optimized/fsm_detect.ll
+; yosys/optimized/fsm_expand.ll
+; yosys/optimized/fsm_extract.ll
+; yosys/optimized/genrtlil.ll
+; yosys/optimized/hierarchy.ll
+; yosys/optimized/opt_expr.ll
+; yosys/optimized/opt_reduce.ll
+; yosys/optimized/opt_share.ll
+; yosys/optimized/proc_dff.ll
+; yosys/optimized/qbfsat.ll
+; yosys/optimized/recover_names.ll
+; yosys/optimized/sat.ll
+; yosys/optimized/select.ll
+; yosys/optimized/sim.ll
+; yosys/optimized/simplify.ll
+; yosys/optimized/smt2.ll
+; yosys/optimized/splitnets.ll
+; yosys/optimized/test_cell.ll
+; z3/optimized/aig_exporter.cpp.ll
+; z3/optimized/theory_str.cpp.ll
+; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000013(ptr %0, ptr %1, ptr %2) #0 {
 entry:
@@ -1036,8 +1063,161 @@ entry:
   ret ptr %5
 }
 
-; 54 occurrences:
+; 44 occurrences:
+; cmake/optimized/cmOutputRequiredFilesCommand.cxx.ll
+; grpc/optimized/chttp2_server.cc.ll
+; grpc/optimized/outlier_detection.cc.ll
+; grpc/optimized/xds_override_host.cc.ll
+; grpc/optimized/xds_server_config_fetcher.cc.ll
+; hermes/optimized/gmock-all.cc.ll
+; hyperscan/optimized/goughcompile.cpp.ll
+; jsonnet/optimized/vm.cpp.ll
+; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
+; llvm/optimized/AsmMatcherEmitter.cpp.ll
+; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
+; llvm/optimized/FuchsiaHandleChecker.cpp.ll
+; llvm/optimized/FunctionAttrs.cpp.ll
+; llvm/optimized/InterfaceStubFunctionsConsumer.cpp.ll
+; llvm/optimized/LocalizationChecker.cpp.ll
+; llvm/optimized/LoopDistribute.cpp.ll
+; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
+; llvm/optimized/MallocChecker.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
+; llvm/optimized/MoveChecker.cpp.ll
+; llvm/optimized/NeonEmitter.cpp.ll
+; llvm/optimized/NullabilityChecker.cpp.ll
+; llvm/optimized/ObjCSelfInitChecker.cpp.ll
+; llvm/optimized/PointerArithChecker.cpp.ll
+; llvm/optimized/PthreadLockChecker.cpp.ll
+; llvm/optimized/RangeConstraintManager.cpp.ll
+; llvm/optimized/RegionStore.cpp.ll
+; llvm/optimized/SimpleStreamChecker.cpp.ll
+; llvm/optimized/StackSafetyAnalysis.cpp.ll
+; llvm/optimized/StreamChecker.cpp.ll
+; llvm/optimized/TransAutoreleasePool.cpp.ll
+; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
+; llvm/optimized/VirtualCallChecker.cpp.ll
+; openexr/optimized/ImfHeader.cpp.ll
+; proj/optimized/defmodel.cpp.ll
+; proj/optimized/gridshift.cpp.ll
+; wireshark/optimized/column_list_model.cpp.ll
+; wireshark/optimized/extcap_argument.cpp.ll
+; wireshark/optimized/extcap_options_dialog.cpp.ll
+; wireshark/optimized/label_stack.cpp.ll
+; wireshark/optimized/traffic_types_list.cpp.ll
+; yosys/optimized/expose.ll
+; yosys/optimized/submod.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000010(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ult ptr %1, %2
+  %4 = select i1 %3, i64 24, i64 16
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 153 occurrences:
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/unit_test_parameters.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; cvc5/optimized/symmetry_breaker.cpp.ll
+; llvm/optimized/AsmMatcherEmitter.cpp.ll
+; llvm/optimized/DAGDeltaAlgorithm.cpp.ll
+; llvm/optimized/DeltaAlgorithm.cpp.ll
+; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/build.ll
@@ -1092,49 +1272,28 @@ entry:
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/torder.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %.not = icmp eq ptr %1, %2
-  %3 = select i1 %.not, i64 24, i64 16
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 2 occurrences:
-; llvm/optimized/ASTWriter.cpp.ll
-; openusd/optimized/type.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000023(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ugt ptr %1, %2
-  %4 = select i1 %3, i64 16, i64 24
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; llvm/optimized/CodeLayout.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp eq ptr %1, %2
-  %4 = select i1 %3, i64 112, i64 113
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 4 occurrences:
-; llvm/optimized/AsmMatcherEmitter.cpp.ll
-; llvm/optimized/DAGDeltaAlgorithm.cpp.ll
-; llvm/optimized/DeltaAlgorithm.cpp.ll
-; llvm/optimized/InstrInfoEmitter.cpp.ll
-; Function Attrs: nounwind
 define ptr @func0000000000000033(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %.not = icmp eq ptr %1, %2
   %3 = select i1 %.not, i64 24, i64 16
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
+}
+
+; 6 occurrences:
+; llvm/optimized/LoopFuse.cpp.ll
+; llvm/optimized/SelectOptimize.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; pocketpy/optimized/linalg.cpp.ll
+; pocketpy/optimized/pocketpy_c.cpp.ll
+; pocketpy/optimized/vm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %1, %2
+  %4 = select i1 %3, i64 -32, i64 -64
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -1156,11 +1315,11 @@ entry:
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/ml_render_gui.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000027(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %.not = icmp ult ptr %1, %2
   %3 = select i1 %.not, i64 16, i64 8
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

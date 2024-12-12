@@ -5,7 +5,7 @@
 ; openssl/optimized/libcrypto-lib-a_time.ll
 ; openssl/optimized/libcrypto-shlib-a_time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %0, -480
@@ -88,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; libevent/optimized/http.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add i32 %0, -48
@@ -100,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/ImfRle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %0, -1

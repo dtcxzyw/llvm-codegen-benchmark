@@ -27,7 +27,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 .LCPI3_0:
 	.long	32768                           # 0x8000
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vptestmd	.LCPI3_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -61,6 +61,21 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000008:                   # @func0000000000000008
 	vpmovdw	%ymm0, %xmm0
 	vpcmpnleuw	.LCPI5_0(%rip), %xmm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI6_0:
+	.short	273                             # 0x111
+	.short	273                             # 0x111
+	.short	273                             # 0x111
+	.short	273                             # 0x111
+	.short	273                             # 0x111
+	.short	273                             # 0x111
+	.short	273                             # 0x111
+	.short	273                             # 0x111
+func0000000000000014:                   # @func0000000000000014
+	vpmovdw	%ymm0, %xmm0
+	vpcmpltuw	.LCPI6_0(%rip), %xmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

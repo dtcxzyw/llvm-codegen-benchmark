@@ -25,7 +25,7 @@ entry:
   %2 = shl i8 %1, 1
   %3 = and i8 %2, 64
   %.masked = and i8 %0, 96
-  %4 = or i8 %3, %.masked
+  %4 = or i8 %.masked, %3
   ret i8 %4
 }
 

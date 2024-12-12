@@ -154,10 +154,10 @@
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -330,14 +330,14 @@ entry:
 ; quantlib/optimized/garch.ll
 ; ruby/optimized/st.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
-; 272 occurrences:
+; 270 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -441,8 +441,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -611,7 +609,7 @@ entry:
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %.highbits = lshr i64 %0, %1
   %2 = icmp eq i64 %.highbits, 0
@@ -624,10 +622,10 @@ entry:
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   ret i1 %3
 }
 
@@ -636,10 +634,10 @@ entry:
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; openjdk/optimized/heapShared.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -649,20 +647,20 @@ entry:
 ; llvm/optimized/Constants.cpp.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -671,10 +669,10 @@ entry:
 ; brotli/optimized/encode.c.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000045(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = icmp uge i64 %2, %0
+  %3 = icmp ule i64 %0, %2
   ret i1 %3
 }
 
@@ -689,7 +687,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 512, %1
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -698,10 +696,10 @@ entry:
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -711,14 +709,14 @@ entry:
 ; quest/optimized/QuEST_validation.c.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; jemalloc/optimized/ckh.ll
@@ -733,7 +731,6 @@ entry:
 ; linux/optimized/skbuff.ll
 ; linux/optimized/timekeeping.ll
 ; linux/optimized/vmscan.ll
-; linux/optimized/vsyscall.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
@@ -743,17 +740,17 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 2, %1
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   ret i1 %3
 }
 
@@ -762,7 +759,7 @@ entry:
 ; postgres/optimized/dsa.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %.highbits = lshr i64 %0, %1
   %2 = icmp eq i64 %.highbits, 0
@@ -779,7 +776,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 8, %1
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -788,17 +785,17 @@ entry:
 ; quest/optimized/QuEST_validation.c.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; postgres/optimized/dsa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000069(i64 %0, i64 %1) #0 {
 entry:
   %.highbits = lshr i64 %0, %1
   %2 = icmp ne i64 %.highbits, 0
@@ -808,10 +805,10 @@ entry:
 ; 1 occurrences:
 ; quest/optimized/QuEST_validation.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002b(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004b(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = icmp sle i64 %2, %0
+  %3 = icmp sge i64 %0, %2
   ret i1 %3
 }
 
@@ -821,7 +818,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 7, %1
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 

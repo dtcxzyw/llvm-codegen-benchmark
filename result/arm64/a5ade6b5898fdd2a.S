@@ -1,52 +1,32 @@
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	mul	v2.4s, v2.4s, v4.4s
-	mul	v3.4s, v3.4s, v5.4s
-	add	v0.4s, v0.4s, v6.4s
-	add	v1.4s, v1.4s, v6.4s
-	cmeq	v1.4s, v1.4s, v3.4s
-	cmeq	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mul	w8, w1, w2
+	add	w9, w0, #1
+	cmp	w9, w8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000036:                   // @func0000000000000036
+func0000000000000066:                   // @func0000000000000066
 // %bb.0:                               // %entry
-	movi	v6.4s, #47
-	mul	v2.4s, v2.4s, v4.4s
-	mul	v3.4s, v3.4s, v5.4s
-	add	v0.4s, v0.4s, v6.4s
-	add	v1.4s, v1.4s, v6.4s
-	cmgt	v1.4s, v3.4s, v1.4s
-	cmgt	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mul	w8, w1, w2
+	add	w9, w0, #47
+	cmp	w9, w8
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000071:                   // @func0000000000000071
+func00000000000000e1:                   // @func00000000000000e1
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	mul	v2.4s, v2.4s, v4.4s
-	mul	v3.4s, v3.4s, v5.4s
-	add	v0.4s, v0.4s, v6.4s
-	add	v1.4s, v1.4s, v6.4s
-	cmeq	v1.4s, v1.4s, v3.4s
-	cmeq	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mul	w8, w1, w2
+	add	w9, w0, #1
+	cmp	w9, w8
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000f1:                   // @func00000000000000f1
+func00000000000001e1:                   // @func00000000000001e1
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	mul	v2.4s, v2.4s, v4.4s
-	mul	v3.4s, v3.4s, v5.4s
-	add	v0.4s, v0.4s, v6.4s
-	add	v1.4s, v1.4s, v6.4s
-	cmeq	v1.4s, v1.4s, v3.4s
-	cmeq	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mul	w8, w1, w2
+	add	w9, w0, #1
+	cmp	w9, w8
+	cset	w0, eq
 	ret
                                         // -- End function

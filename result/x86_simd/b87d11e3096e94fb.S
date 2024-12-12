@@ -41,13 +41,13 @@ func0000000000000014:                   # @func0000000000000014
 	retq
 .LCPI1_0:
 	.quad	7905747460161236407             # 0x6db6db6db6db6db7
-func0000000000000032:                   # @func0000000000000032
+func0000000000000052:                   # @func0000000000000052
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpsraq	$3, %ymm2, %ymm0
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
-	vpcmpleuq	%ymm1, %ymm0, %k1
-	korw	%k0, %k1, %k0
+	vpcmpnltuq	%ymm0, %ymm1, %k1
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

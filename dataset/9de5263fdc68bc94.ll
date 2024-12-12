@@ -1,7 +1,9 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; opencv/optimized/slice_layer.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -26,10 +28,11 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; openblas/optimized/dstedc.c.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

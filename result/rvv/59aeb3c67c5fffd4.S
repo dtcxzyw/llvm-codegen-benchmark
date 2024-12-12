@@ -28,7 +28,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v12, v12, v16
-	vmfeq.vv	v0, v12, v8
+	vmfeq.vv	v0, v8, v12
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -46,7 +46,7 @@ func000000000000000e:                   # @func000000000000000e
 	vfmul.vv	v12, v12, v16
 	vmfeq.vv	v16, v12, v12
 	vmfeq.vv	v12, v8, v8
-	vmand.mm	v0, v16, v12
+	vmand.mm	v0, v12, v16
 	ret
 func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -57,5 +57,5 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v12, v12, v16
-	vmfne.vv	v0, v12, v8
+	vmfne.vv	v0, v8, v12
 	ret

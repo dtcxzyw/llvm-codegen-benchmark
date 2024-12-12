@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 23 occurrences:
 ; actix-rs/optimized/1rfb1t3n8679w74r.ll
 ; arrow/optimized/int_util.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
@@ -19,7 +19,10 @@
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/59na08zlxqp9p17s.ll
 ; tomlplusplus/optimized/toml.cpp.ll
+; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0) #0 {
 entry:

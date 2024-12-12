@@ -16,7 +16,7 @@
 define i32 @func0000000000000000(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 

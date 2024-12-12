@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; openusd/optimized/changes.cpp.ll
@@ -7,6 +7,8 @@
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; rust-analyzer-rs/optimized/59dl6i7wymyjqg05.ll
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i1 %2) #0 {
 entry:

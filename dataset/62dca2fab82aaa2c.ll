@@ -1,9 +1,8 @@
 
-; 31 occurrences:
+; 28 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; git/optimized/object-name.ll
 ; hermes/optimized/APFloat.cpp.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/rx.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
@@ -18,19 +17,17 @@
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
 ; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
-; lua/optimized/lgc.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_cdata.ll
 ; luajit/optimized/lj_cdata_dyn.ll
-; openssl/optimized/quic_ackm_test-bin-quic_ackm_test.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; redis/optimized/bio.ll
 ; ruby/optimized/utf_16_32.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:

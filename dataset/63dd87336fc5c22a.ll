@@ -3,7 +3,7 @@
 ; openjdk/optimized/mlib_ImageConv_D64nw.ll
 ; openjdk/optimized/mlib_ImageConv_F32nw.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000144(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %1, %0
   %3 = icmp ult i32 %2, 2147483647
@@ -19,7 +19,7 @@ entry:
 ; postgres/optimized/rangetypes_gist.ll
 ; wireshark/optimized/packet-sip.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %1, %0
   %3 = icmp sgt i32 %2, 0

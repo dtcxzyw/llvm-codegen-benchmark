@@ -1,6 +1,7 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/ioReadBlifAig.c.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/cmCPackGenerator.cxx.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; freetype/optimized/autofit.c.ll
@@ -22,7 +23,7 @@
 define i32 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

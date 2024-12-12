@@ -1,11 +1,11 @@
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	andl	$8388607, %edx                  # imm = 0x7FFFFF
 	xorl	%eax, %eax
 	cmpl	%esi, %edx
 	setae	%al
 	leaq	16(%rdi,%rax,8), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	andl	$268435455, %edx                # imm = 0xFFFFFFF
 	leaq	16(%rdi), %rax
 	leaq	40(%rdi), %rcx

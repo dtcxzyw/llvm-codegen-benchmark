@@ -1,25 +1,18 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	andi	a1, a1, 1
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 8
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000031:                   # @func0000000000000031
-	andi	a1, a1, 1
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 48
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	andi	a1, a1, 1
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 48
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000068:                   # @func0000000000000068
 	andi	a1, a1, 1
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 88
@@ -32,7 +25,7 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	andi	a1, a1, 1
 	czero.nez	a1, a2, a1
 	addi	a1, a1, -3

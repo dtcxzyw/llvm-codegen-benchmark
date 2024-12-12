@@ -1,10 +1,10 @@
 func0000000000000006:                   # @func0000000000000006
 	add	a0, a0, a1
-	addi	a0, a0, -1
+	addi	a0, a0, 3
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	add	a0, a0, a1
 	addi	a0, a0, 30
 	sltiu	a0, a0, 31

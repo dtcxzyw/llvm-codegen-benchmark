@@ -10,7 +10,7 @@ func000000000000000c:                   // @func000000000000000c
                                         // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
-func0000000000000004:                   // @func0000000000000004
+func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
 	and	x8, x0, #0xfc0
 	cmp	x8, #3776

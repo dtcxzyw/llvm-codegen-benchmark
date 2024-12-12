@@ -13,7 +13,7 @@ entry:
   %4 = add nsw i64 %3, 32768
   %5 = lshr i64 %4, 16
   %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -28,7 +28,7 @@ entry:
   %4 = add nuw i64 %3, 1073741824
   %5 = lshr i64 %4, 31
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -41,7 +41,7 @@ entry:
   %4 = add nsw i64 %3, 32768
   %5 = lshr i64 %4, 16
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

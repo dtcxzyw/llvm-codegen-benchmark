@@ -66,19 +66,6 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; freetype/optimized/psaux.c.ll
-; linux/optimized/map.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 20
-  %3 = trunc i64 %2 to i32
-  %4 = sub i32 %3, %0
-  %5 = add i32 %4, 1
-  ret i32 %5
-}
-
 ; 5 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; luajit/optimized/lib_io.ll
@@ -92,6 +79,18 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %0
   %5 = add nsw i32 %4, 1
+  ret i32 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/psaux.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 16
+  %3 = trunc i64 %2 to i32
+  %4 = sub i32 %3, %0
+  %5 = add i32 %4, 32768
   ret i32 %5
 }
 

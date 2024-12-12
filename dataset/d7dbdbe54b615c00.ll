@@ -1,5 +1,5 @@
 
-; 184 occurrences:
+; 180 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; assimp/optimized/3DSConverter.cpp.ll
@@ -22,6 +22,9 @@
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/cmdline.ll
+; boost/optimized/parsers.ll
+; boost/optimized/variables_map.ll
 ; cmake/optimized/cmForEachCommand.cxx.ll
 ; cmake/optimized/cmOrderDirectories.cxx.ll
 ; crow/optimized/example.cpp.ll
@@ -65,10 +68,7 @@
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; jsonnet/optimized/formatter.cpp.ll
 ; llama.cpp/optimized/common.cpp.ll
-; llama.cpp/optimized/grammar-parser.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/APINotesYAMLCompiler.cpp.ll
-; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/BalancedPartitioning.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
@@ -77,13 +77,10 @@
 ; llvm/optimized/CloneDetection.cpp.ll
 ; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/Format.cpp.ll
-; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
-; llvm/optimized/MCCodeView.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
-; llvm/optimized/MasmParser.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; llvm/optimized/SampleProfWriter.cpp.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
@@ -126,7 +123,6 @@
 ; msdfgen/optimized/main.cpp.ll
 ; nori/optimized/obj.cpp.ll
 ; ocio/optimized/Baker.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/LookParse.cpp.ll
 ; ocio/optimized/LookTransform.cpp.ll
 ; opencv/optimized/LATCH_match.cpp.ll
@@ -185,29 +181,12 @@
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext i32 %2 to i64
   %4 = sdiv exact i64 %0, 24
   %5 = icmp ugt i64 %4, %3
-  ret i1 %5
-}
-
-; 6 occurrences:
-; assimp/optimized/TargetAnimation.cpp.ll
-; llvm/optimized/AsmWriterEmitter.cpp.ll
-; llvm/optimized/CodeGenSchedule.cpp.ll
-; llvm/optimized/DWARFDebugLine.cpp.ll
-; llvm/optimized/LowerTypeTests.cpp.ll
-; minetest/optimized/c_content.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, 1
-  %3 = zext i32 %2 to i64
-  %4 = sdiv exact i64 %0, 312
-  %5 = icmp eq i64 %4, %3
   ret i1 %5
 }
 
@@ -223,13 +202,29 @@ entry:
   ret i1 %5
 }
 
+; 5 occurrences:
+; assimp/optimized/TargetAnimation.cpp.ll
+; llvm/optimized/AsmWriterEmitter.cpp.ll
+; llvm/optimized/CodeGenSchedule.cpp.ll
+; llvm/optimized/DWARFDebugLine.cpp.ll
+; llvm/optimized/LowerTypeTests.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -1
+  %3 = zext i32 %2 to i64
+  %4 = sdiv exact i64 %0, 24
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
 ; 4 occurrences:
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
 ; opencv/optimized/bilateral_texture_filter.cpp.ll
 ; opencv/optimized/generalized_hough.cpp.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
@@ -238,7 +233,7 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 11 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
 ; cvc5/optimized/error_set.cpp.ll
@@ -247,17 +242,11 @@ entry:
 ; draco/optimized/ply_decoder.cc.ll
 ; draco/optimized/triangle_soup_mesh_builder.cc.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
-; llama.cpp/optimized/grammar-parser.cpp.ll
-; llvm/optimized/APINotesYAMLCompiler.cpp.ll
-; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/DFAEmitter.cpp.ll
-; llvm/optimized/GCOV.cpp.ll
-; llvm/optimized/MCCodeView.cpp.ll
-; llvm/optimized/MasmParser.cpp.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext i32 %2 to i64
@@ -269,7 +258,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
@@ -282,7 +271,7 @@ entry:
 ; lightgbm/optimized/bin.cpp.ll
 ; openspiel/optimized/solitaire.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e8(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
@@ -295,7 +284,7 @@ entry:
 ; llvm/optimized/LazyRandomTypeCollection.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -64
   %3 = zext i32 %2 to i64
@@ -304,12 +293,47 @@ entry:
   ret i1 %5
 }
 
+; 6 occurrences:
+; llama.cpp/optimized/grammar-parser.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
+; llvm/optimized/AsmParser.cpp.ll
+; llvm/optimized/GCOV.cpp.ll
+; llvm/optimized/MCCodeView.cpp.ll
+; llvm/optimized/MasmParser.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 1
+  %3 = zext i32 %2 to i64
+  %4 = sdiv exact i64 %0, 120
+  %5 = icmp samesign ult i64 %4, %3
+  ret i1 %5
+}
+
+; 7 occurrences:
+; llama.cpp/optimized/grammar-parser.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
+; llvm/optimized/AsmParser.cpp.ll
+; llvm/optimized/GCOV.cpp.ll
+; llvm/optimized/MCCodeView.cpp.ll
+; llvm/optimized/MasmParser.cpp.ll
+; llvm/optimized/SwitchLoweringUtils.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 1
+  %3 = zext i32 %2 to i64
+  %4 = sdiv exact i64 %0, 120
+  %5 = icmp samesign ugt i64 %4, %3
+  ret i1 %5
+}
+
 ; 3 occurrences:
 ; opencv/optimized/bilateral_texture_filter.cpp.ll
 ; opencv/optimized/generalized_hough.cpp.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e8(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
@@ -321,7 +345,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/solitaire.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -5
   %3 = zext nneg i32 %2 to i64
@@ -333,7 +357,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/generalized_hough.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
@@ -346,7 +370,7 @@ entry:
 ; hyperscan/optimized/mcclellancompile_util.cpp.ll
 ; opencv/optimized/perf_common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000025(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext i32 %2 to i64
@@ -359,12 +383,12 @@ entry:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext i32 %2 to i64
   %4 = sdiv i64 %0, 8
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -372,7 +396,7 @@ entry:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/meshio.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000128(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64

@@ -94,7 +94,7 @@ func000000000000000a:                   # @func000000000000000a
 	vzeroupper
 	retq
 .LCPI10_0:
-	.long	0x3f800000                      # float 1
+	.long	0x3f000000                      # float 0.5
 func000000000000000e:                   # @func000000000000000e
 	vaddps	.LCPI10_0(%rip){1to16}, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1

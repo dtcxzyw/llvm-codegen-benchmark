@@ -3,7 +3,9 @@
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
+; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/disasm.c.ll
+; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/phishcheck.c.ll
 ; clamav/optimized/regexec.c.ll
 ; clamav/optimized/xlm_extract.c.ll
@@ -18,7 +20,6 @@
 ; cvc5/optimized/theory_sep.cpp.ll
 ; cvc5/optimized/theory_sets_rewriter.cpp.ll
 ; cvc5/optimized/transition_inference.cpp.ll
-; git/optimized/diffcore-rename.ll
 ; git/optimized/fast-import.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; graphviz/optimized/dotsplines.c.ll
@@ -31,6 +32,7 @@
 ; icu/optimized/scrptrun.ll
 ; icu/optimized/serv.ll
 ; icu/optimized/smpdtfmt.ll
+; icu/optimized/unistr.ll
 ; icu/optimized/usc_impl.ll
 ; icu/optimized/usearch.ll
 ; linux/optimized/agg-tx.ll
@@ -59,7 +61,6 @@
 ; llvm/optimized/ModuleMap.cpp.ll
 ; llvm/optimized/PPDirectives.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -75,8 +76,8 @@
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; minetest/optimized/networkpacket.cpp.ll
-; nghttp2/optimized/http.c.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
+; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; openjdk/optimized/reg_split.ll
@@ -188,7 +189,6 @@
 ; wireshark/optimized/packet-rpcrdma.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; wireshark/optimized/packet-sctp.c.ll
-; wireshark/optimized/packet-smb-mailslot.c.ll
 ; wireshark/optimized/packet-smb-pipe.c.ll
 ; wireshark/optimized/packet-smb2.c.ll
 ; wireshark/optimized/packet-snort.c.ll
@@ -208,8 +208,10 @@ entry:
   ret i1 %4
 }
 
-; 204 occurrences:
+; 208 occurrences:
 ; abc/optimized/fretTime.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; box2d/optimized/b2_world.cpp.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; c3c/optimized/sema_expr.c.ll
@@ -244,6 +246,7 @@ entry:
 ; icu/optimized/locdspnm.ll
 ; icu/optimized/numparse_decimal.ll
 ; icu/optimized/unistr.ll
+; libevent/optimized/bufferevent_pair.c.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/fib_frontend.ll
 ; linux/optimized/filter.ll
@@ -251,7 +254,6 @@ entry:
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/i2c-core-base.ll
 ; linux/optimized/ich8lan.ll
-; linux/optimized/initramfs.ll
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/neighbour.ll
@@ -280,7 +282,6 @@ entry:
 ; llvm/optimized/PrintPreprocessedOutput.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
@@ -401,6 +402,7 @@ entry:
 ; spike/optimized/socketif.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/URLFunctions.cpp.ll
+; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/file.c.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/packet-aim.c.ll
@@ -408,11 +410,13 @@ entry:
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
-; wireshark/optimized/packet-netlink-generic.c.ll
 ; wireshark/optimized/packet-s7comm.c.ll
+; wireshark/optimized/packet-syslog.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-udp.c.ll
 ; wireshark/optimized/proto_hier_stats.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i16 %1) #0 {
 entry:
@@ -425,10 +429,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 60
-  %3 = icmp ugt i16 %2, 8
+  %3 = icmp samesign ugt i16 %2, 8
   %4 = select i1 %3, i1 %0, i1 false
   ret i1 %4
 }
@@ -438,10 +442,10 @@ entry:
 ; cvc5/optimized/sygus_repair_const.cpp.ll
 ; icu/optimized/ucnv2022.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1016
-  %3 = icmp ult i16 %2, 24
+  %3 = icmp samesign ult i16 %2, 24
   %4 = select i1 %3, i1 %0, i1 false
   ret i1 %4
 }

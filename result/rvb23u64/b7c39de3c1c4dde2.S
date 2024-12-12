@@ -31,14 +31,15 @@ func000000000000000b:                   # @func000000000000000b
 	or	a0, a0, a1
 	sext.w	a0, a0
 	ret
-func0000000000000002:                   # @func0000000000000002
-	lui	a2, 786432
+func0000000000000000:                   # @func0000000000000000
+	lui	a2, 1048560
 	and	a1, a1, a2
 	or	a0, a0, a1
 	zext.w	a0, a0
 	ret
-func0000000000000000:                   # @func0000000000000000
-	andi	a1, a1, 7
+func0000000000000002:                   # @func0000000000000002
+	lui	a2, 786432
+	and	a1, a1, a2
 	or	a0, a0, a1
 	zext.w	a0, a0
 	ret

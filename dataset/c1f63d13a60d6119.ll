@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; cpython/optimized/longobject.ll
 ; freetype/optimized/ftbitmap.c.ll
@@ -7,6 +7,7 @@
 ; libpng/optimized/pngrtran.c.ll
 ; libwebp/optimized/webp_enc.c.ll
 ; linux/optimized/intel_bw.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; nanosvg/optimized/nanosvg.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
@@ -24,15 +25,14 @@ entry:
   ret i32 %3
 }
 
-; 16 occurrences:
-; clamav/optimized/filtering.c.ll
+; 15 occurrences:
 ; icu/optimized/decNumber.ll
+; lvgl/optimized/lv_grid.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/content_cso.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
 ; mitsuba3/optimized/orthogonal.cpp.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dorghr.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; opencv/optimized/conv_depthwise.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
@@ -45,17 +45,18 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 1, %1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; freetype/optimized/ftbitmap.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; libpng/optimized/pngread.c.ll
 ; libwebp/optimized/anim_decode.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; openjdk/optimized/pngread.ll
@@ -83,7 +84,8 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; clamav/optimized/filtering.c.ll
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; draco/optimized/rans_bit_encoder.cc.ll
 ; minetest/optimized/texturesource.cpp.ll
@@ -92,11 +94,11 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 100, %1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
-; 42 occurrences:
+; 44 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/acbMfs.c.ll
@@ -108,23 +110,25 @@ entry:
 ; gromacs/optimized/dcopy.cpp.ll
 ; gromacs/optimized/ddot.cpp.ll
 ; gromacs/optimized/dger.cpp.ll
-; gromacs/optimized/dlaswp.cpp.ll
 ; gromacs/optimized/drot.cpp.ll
 ; gromacs/optimized/dswap.cpp.ll
 ; gromacs/optimized/saxpy.cpp.ll
 ; gromacs/optimized/scopy.cpp.ll
 ; gromacs/optimized/sdot.cpp.ll
 ; gromacs/optimized/sger.cpp.ll
-; gromacs/optimized/slaswp.cpp.ll
 ; gromacs/optimized/srot.cpp.ll
 ; gromacs/optimized/sswap.cpp.ll
 ; icu/optimized/punycode.ll
 ; libpng/optimized/pngrtran.c.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openblas/optimized/cblas_drotm.c.ll
-; openblas/optimized/drotm.c.ll
 ; openblas/optimized/dsytri_rook.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
@@ -148,7 +152,7 @@ entry:
 }
 
 ; 7 occurrences:
-; openblas/optimized/dlasyf_aa.c.ll
+; lvgl/optimized/lv_math.ll
 ; openblas/optimized/dsytri_rook.c.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll

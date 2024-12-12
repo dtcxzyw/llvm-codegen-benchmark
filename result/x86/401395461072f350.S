@@ -10,12 +10,12 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$2, %edi
 	adcb	$3, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpl	$1, %edi
 	setne	%al
 	shlb	$7, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addl	$-58, %edi
 	cmpl	$-10, %edi
 	movb	$2, %al

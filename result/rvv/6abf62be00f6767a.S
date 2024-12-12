@@ -12,13 +12,6 @@ func000000000000000d:                   # @func000000000000000d
 	vzext.vf2	v10, v8
 	vmerge.vim	v8, v10, 1, v0
 	ret
-func0000000000000009:                   # @func0000000000000009
-	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmsleu.vi	v0, v9, 6
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v8
-	vmerge.vim	v8, v10, 1, v0
-	ret
 func0000000000000002:                   # @func0000000000000002
 	li	a0, 72
 	vsetivli	zero, 4, e8, mf4, ta, ma

@@ -6,7 +6,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %.neg = add i64 %4, %1
+  %.neg = add i64 %1, %4
   %5 = add i64 %.neg, %0
   ret i64 %5
 }
@@ -44,7 +44,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %.neg = add i64 %4, %1
+  %.neg = add i64 %1, %4
   %5 = add i64 %.neg, %0
   ret i64 %5
 }
@@ -104,14 +104,16 @@ define i64 @func000000000000000e(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %.neg = add i64 %4, %1
+  %.neg = add i64 %1, %4
   %5 = add i64 %.neg, %0
   ret i64 %5
 }
 
-; 40 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/parse.cc.ll
 ; arrow/optimized/uri.cc.ll
+; boost/optimized/environment.ll
+; boost/optimized/shell.ll
 ; coreutils-rs/optimized/5dmrxisq30bb0giv.ll
 ; grpc/optimized/retry_service_config.cc.ll
 ; grpc/optimized/ssl_transport_security.cc.ll
@@ -155,12 +157,13 @@ define i64 @func000000000000000a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %.neg = add i64 %4, %1
+  %.neg = add i64 %1, %4
   %5 = add i64 %.neg, %0
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/url_view_base.ll
 ; grpc/optimized/uri_parser.cc.ll
 ; mold/optimized/rust-demangle.c.ll
 ; openexr/optimized/context.c.ll
@@ -189,19 +192,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %.neg = add i64 %4, %1
-  %5 = add i64 %.neg, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; proxygen/optimized/HTTPMessage.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = xor i64 %3, -1
-  %.neg = add i64 %4, %1
+  %.neg = add i64 %1, %4
   %5 = add i64 %.neg, %0
   ret i64 %5
 }

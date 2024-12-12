@@ -1,7 +1,10 @@
 
-%struct.vhost_virtqueue.2592196 = type { i32, i32, ptr, ptr, ptr, i32, i64, i32, i64, i32, i64, i32, %struct.EventNotifier.2592197, %struct.EventNotifier.2592197, %struct.EventNotifier.2592197, ptr }
-%struct.EventNotifier.2592197 = type { i32, i32, i8 }
-%struct.Gia_Obj_t_.2763706 = type <{ i64, i32 }>
+%struct.vhost_virtqueue.2705977 = type { i32, i32, ptr, ptr, ptr, i32, i64, i32, i64, i32, i64, i32, %struct.EventNotifier.2705978, %struct.EventNotifier.2705978, %struct.EventNotifier.2705978, ptr }
+%struct.EventNotifier.2705978 = type { i32, i32, i8 }
+%struct.Gia_Obj_t_.2875978 = type <{ i64, i32 }>
+%"class.boost::container::pmr::pool_data_t.3038812" = type { %"class.boost::container::pmr::block_slist_base.3038813", %"struct.boost::container::pmr::slist_node.3038814", i64 }
+%"class.boost::container::pmr::block_slist_base.3038813" = type { %"struct.boost::container::pmr::slist_node.3038814" }
+%"struct.boost::container::pmr::slist_node.3038814" = type { ptr }
 
 ; 8 occurrences:
 ; abc/optimized/abcDar.c.ll
@@ -16,11 +19,11 @@
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
-  %3 = getelementptr %struct.vhost_virtqueue.2592196, ptr %0, i64 %2, i32 12
+  %3 = getelementptr %struct.vhost_virtqueue.2705977, ptr %0, i64 %2, i32 12
   ret ptr %3
 }
 
-; 131 occurrences:
+; 130 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcHieCec.c.ll
@@ -141,7 +144,6 @@ entry:
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/TargetSchedule.cpp.ll
 ; llvm/optimized/X86AsmBackend.cpp.ll
@@ -156,7 +158,19 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
-  %3 = getelementptr nusw %struct.Gia_Obj_t_.2763706, ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw %struct.Gia_Obj_t_.2875978, ptr %0, i64 %2, i32 1
+  ret ptr %3
+}
+
+; 3 occurrences:
+; boost/optimized/pool_resource.ll
+; graphviz/optimized/neatosplines.c.ll
+; gromacs/optimized/pme_solve.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw nsw i64 60, %1
+  %3 = getelementptr nusw nuw %"class.boost::container::pmr::pool_data_t.3038812", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

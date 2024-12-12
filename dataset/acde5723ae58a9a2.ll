@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; oiio/optimized/benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000164(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, 3
@@ -17,7 +17,7 @@ entry:
 ; gromacs/optimized/redistribute.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -1
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000168(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, -1
@@ -44,7 +44,7 @@ entry:
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/redistribute.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 2

@@ -5,7 +5,7 @@
 ; linux/optimized/libata-core.ll
 ; qemu/optimized/net_tap-linux.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000043(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 4
   %4 = icmp eq i32 %2, 0
@@ -42,7 +42,7 @@ entry:
 ; llvm/optimized/LangOptions.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 16
   %4 = icmp eq i32 %2, 0

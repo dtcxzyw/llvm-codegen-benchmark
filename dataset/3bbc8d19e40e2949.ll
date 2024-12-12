@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -7,7 +7,6 @@
 ; curl/optimized/libcurl_la-progress.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; eastl/optimized/EATest.cpp.ll
-; php/optimized/unixtime2tm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:

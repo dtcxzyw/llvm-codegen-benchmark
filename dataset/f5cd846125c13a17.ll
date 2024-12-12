@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 95 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/darBalance.c.ll
 ; abc/optimized/giaGlitch.c.ll
@@ -36,6 +36,7 @@
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/PseudoProbe.cpp.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/alignset.cpp.ll
@@ -93,6 +94,7 @@
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; wireshark/optimized/packet-lldp.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(i32 %0) #0 {
 entry:

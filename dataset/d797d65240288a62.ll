@@ -6,7 +6,7 @@
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002e(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000004e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 2147483647
   %4 = mul nsw i32 %0, %1

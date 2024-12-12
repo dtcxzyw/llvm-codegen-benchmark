@@ -80,11 +80,11 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 73 occurrences:
+; 71 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/giaResub6.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -107,9 +107,6 @@ entry:
 ; gromacs/optimized/tpi.cpp.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; hermes/optimized/NativeFormatting.cpp.ll
-; jemalloc/optimized/bin.ll
-; jemalloc/optimized/bin.pic.ll
-; jemalloc/optimized/bin.sym.ll
 ; jemalloc/optimized/buf_writer.ll
 ; jemalloc/optimized/buf_writer.pic.ll
 ; jemalloc/optimized/buf_writer.sym.ll
@@ -134,6 +131,7 @@ entry:
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/ProgramPoint.cpp.ll
 ; llvm/optimized/TestAfterDivZeroChecker.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; ncnn/optimized/cpu.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
@@ -167,7 +165,7 @@ entry:
   ret i32 %4
 }
 
-; 57 occurrences:
+; 58 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absGla.c.ll
@@ -215,6 +213,7 @@ entry:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
@@ -267,7 +266,7 @@ define i32 @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 255
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -284,11 +283,11 @@ define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 7
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absOut.c.ll
@@ -296,6 +295,7 @@ entry:
 ; glslang/optimized/iomapper.cpp.ll
 ; hdf5/optimized/H5Iint.c.ll
 ; imgui/optimized/imgui.cpp.ll
+; lvgl/optimized/lv_draw_image.ll
 ; openjdk/optimized/multiVis.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; openusd/optimized/cpuEvaluator.cpp.ll
@@ -362,7 +362,7 @@ entry:
   ret i32 %4
 }
 
-; 27 occurrences:
+; 29 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -378,6 +378,8 @@ entry:
 ; jemalloc/optimized/pac.sym.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/PathDiagnostic.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; openexr/optimized/ImfHuf.cpp.ll
@@ -395,7 +397,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 255
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -414,7 +416,7 @@ define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 2047
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -426,7 +428,7 @@ define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 1431655765
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 

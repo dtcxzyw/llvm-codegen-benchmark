@@ -1,8 +1,8 @@
 
-%"union.std::aligned_storage<8, 8>::type.2568893" = type { [8 x i8] }
-%"class.folly::hazptr_tc_entry.2574409" = type { ptr }
+%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
+%"class.folly::hazptr_tc_entry.2688612" = type { ptr }
 
-; 47 occurrences:
+; 46 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -22,7 +22,6 @@
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; proxygen/optimized/Service.cpp.ll
-; raylib/optimized/raudio.c.ll
 ; velox/optimized/ArrayDistinct.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ArrayIntersectExcept.cpp.ll
@@ -51,11 +50,11 @@
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2568893"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -64,15 +63,15 @@ entry:
 ; oiio/optimized/strutil.cpp.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr nusw [9 x %"class.folly::hazptr_tc_entry.2574409"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [9 x %"class.folly::hazptr_tc_entry.2688612"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -81,10 +80,9 @@ entry:
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; nuttx/optimized/fs_procfs.c.ll
-; nuttx/optimized/lib_libvsprintf.c.ll
 ; openusd/optimized/decodemv.c.ll
-; php/optimized/crypt_freesec.ll
 ; redis/optimized/lparser.ll
 ; ropey-rs/optimized/21bl6c983bdkzf7g.ll
 ; slurm/optimized/cpu_frequency.ll
@@ -101,7 +99,7 @@ entry:
   ret ptr %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; linux/optimized/buffered_read.ll
 ; linux/optimized/buffered_write.ll
 ; linux/optimized/datagram.ll
@@ -111,7 +109,6 @@ entry:
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/iterator.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memfd.ll
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/shmem.ll
@@ -148,11 +145,24 @@ entry:
 ; zlib/optimized/deflate.c.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = add nuw nsw i64 %2, 257
-  %4 = getelementptr nusw [288 x i32], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [288 x i32], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 3 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
+; nuttx/optimized/lib_libvsprintf.c.ll
+; php/optimized/crypt_freesec.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i64
+  %3 = add nsw i64 %2, -1
+  %4 = getelementptr nusw nuw [64 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -169,9 +179,8 @@ entry:
   ret ptr %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/dswexec.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/intel_bios.ll
@@ -187,6 +196,17 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = add nsw i64 %2, -1
   %4 = getelementptr [15 x ptr], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000016(ptr %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = add nsw i64 %2, -1
+  %4 = getelementptr nusw [96 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

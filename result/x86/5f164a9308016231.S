@@ -1,38 +1,38 @@
-func0000000000000704:                   # @func0000000000000704
+func0000000000000e04:                   # @func0000000000000e04
 	movl	%edx, %eax
 	leaq	(%rax,%rax,2), %rax
-	leaq	4(%rsi,%rax,4), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	leaq	6(%rsi,%rax,2), %rax
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func00000000000003a1:                   # @func00000000000003a1
+func00000000000007e1:                   # @func00000000000007e1
 	movl	%edx, %eax
 	leaq	(%rax,%rax,2), %rax
-	leaq	28(%rsi,%rax,4), %rax
-	cmpq	%rdi, %rax
+	leaq	8(%rsi,%rax,8), %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000003ac:                   # @func00000000000003ac
+func00000000000007ec:                   # @func00000000000007ec
 	movl	%edx, %eax
-	leaq	(%rax,%rax,2), %rax
-	leaq	48(%rsi,%rax,8), %rax
-	cmpq	%rdi, %rax
+	leaq	(%rax,%rax,4), %rax
+	leaq	16(%rsi,%rax,8), %rax
+	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func0000000000000501:                   # @func0000000000000501
+func0000000000000a01:                   # @func0000000000000a01
 	movl	%edx, %eax
 	shlq	$4, %rax
 	leaq	(%rax,%rax,2), %rax
 	subq	%rax, %rsi
 	addq	$112, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	movl	%edx, %eax
 	shlq	$3, %rax
 	subq	%rax, %rsi
 	addq	$8, %rsi
-	cmpq	%rdi, %rsi
-	setb	%al
+	cmpq	%rsi, %rdi
+	seta	%al
 	retq

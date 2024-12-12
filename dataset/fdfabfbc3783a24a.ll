@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; mitsuba3/optimized/envmap.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; sqlite/optimized/sqlite3.ll
@@ -9,7 +10,7 @@
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = shl nuw i32 %4, 1
   %6 = or disjoint i32 %5, %0
   ret i32 %6
@@ -22,13 +23,13 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 524288
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = shl nuw i32 %4, 8
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; bullet3/optimized/b3Solver.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -50,13 +51,12 @@ entry:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
-; wireshark/optimized/mpeg-audio.c.ll
 ; wireshark/optimized/packet-fr.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 768
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = shl nuw nsw i32 %4, 8
   %6 = or disjoint i32 %5, %0
   ret i32 %6
@@ -69,7 +69,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65280
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = shl nuw nsw i32 %4, 16
   %6 = or i32 %5, %0
   ret i32 %6
@@ -83,9 +83,9 @@ entry:
 define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = shl i32 %4, 2
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -95,9 +95,9 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 268434431
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = shl i32 %4, 4
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
@@ -107,7 +107,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = shl nuw nsw i32 %4, 2
   %6 = or disjoint i32 %5, %0
   ret i32 %6

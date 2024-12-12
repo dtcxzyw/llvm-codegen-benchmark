@@ -1,9 +1,7 @@
 
-; 78 occurrences:
+; 74 occurrences:
 ; abc/optimized/crc32.c.ll
 ; clamav/optimized/7zCrc.c.ll
-; clamav/optimized/XzCrc64.c.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/oabd.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/crc32.c.ll
@@ -49,7 +47,6 @@
 ; openssl/optimized/libcrypto-shlib-rc2_skey.ll
 ; openssl/optimized/libssl-shlib-tls_pad.ll
 ; php/optimized/crc32.ll
-; php/optimized/hash_crc32.ll
 ; php/optimized/hash_md.ll
 ; php/optimized/ir.ll
 ; php/optimized/pcre2_jit_compile.ll
@@ -67,7 +64,6 @@
 ; wireshark/optimized/crc32.c.ll
 ; wireshark/optimized/crc6.c.ll
 ; wireshark/optimized/crc7.c.ll
-; wireshark/optimized/crc8-tvb.c.ll
 ; wireshark/optimized/crc8.c.ll
 ; wireshark/optimized/packet-atm.c.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll

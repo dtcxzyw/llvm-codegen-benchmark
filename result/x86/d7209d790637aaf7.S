@@ -10,7 +10,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %esi
 	seta	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	addl	$7, %esi
 	andl	$65528, %esi                    # imm = 0xFFF8
 	cmpl	%edi, %esi

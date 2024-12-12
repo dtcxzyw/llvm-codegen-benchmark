@@ -1,5 +1,5 @@
 
-%struct.chan.2595438 = type { i32, i32, i32, i32, i32 }
+%struct.chan.2709019 = type { i32, i32, i32, i32, i32 }
 
 ; 6 occurrences:
 ; brotli/optimized/encode.c.ll
@@ -9,12 +9,12 @@
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; mimalloc/optimized/page.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000006f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 7
   %3 = lshr i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %0, i64 5
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 5
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -54,38 +54,40 @@ entry:
 ; wireshark/optimized/tap_parameter_dialog.cpp.ll
 ; wireshark/optimized/voip_calls_dialog.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 7
   %3 = lshr i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %0, i64 32
-  %5 = getelementptr nusw i64, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 32
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %3
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_audio_es1370.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -3120
   %3 = lshr i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %0, i64 2912
-  %5 = getelementptr %struct.chan.2595438, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 2912
+  %5 = getelementptr %struct.chan.2709019, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; openspiel/optimized/best_response.cc.ll
+; openspiel/optimized/dynamic_routing.cc.ll
+; openspiel/optimized/spiel.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i64 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967296
   %3 = lshr exact i64 %2, 30
-  %4 = getelementptr nusw i8, ptr %0, i64 12
-  %5 = getelementptr i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 12
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -95,50 +97,36 @@ entry:
 ; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -4294967296
   %3 = lshr exact i64 %2, 30
-  %4 = getelementptr nusw i8, ptr %0, i64 12
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  ret ptr %5
-}
-
-; 3 occurrences:
-; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; openspiel/optimized/dynamic_routing.cc.ll
-; openspiel/optimized/spiel.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 4294967296
-  %3 = lshr exact i64 %2, 26
-  %4 = getelementptr nusw i8, ptr %0, i64 16
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 12
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000073(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 2
   %3 = lshr exact i64 %2, 1
   %4 = getelementptr i8, ptr %0, i64 922880
-  %5 = getelementptr nusw float, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %3
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1048575
   %3 = lshr i64 %2, 20
   %4 = getelementptr i8, ptr %0, i64 8
-  %5 = getelementptr nusw i64, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -164,12 +152,12 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %0, i64 1048592
-  %5 = getelementptr nusw ptr, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1048592
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -198,26 +186,29 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 4 occurrences:
+; hyperscan/optimized/dfa_min.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/ng_find_matches.cpp.ll
+; hyperscan/optimized/ng_squash.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000004f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = lshr i64 %2, 6
-  %4 = getelementptr nusw i8, ptr %0, i64 8
-  %5 = getelementptr nusw i64, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %3
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000068(ptr %0, i64 %1) #0 {
+define ptr @func000000000000006c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 7
   %3 = lshr i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = getelementptr ptr, ptr %4, i64 %3
   ret ptr %5
 }

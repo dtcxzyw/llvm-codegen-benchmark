@@ -84,7 +84,7 @@ func0000000000000088:                   # @func0000000000000088
 	bnez	a0, .LBB9_2
 	fmv.s	fa5, fa1
 .LBB9_2:                                # %entry
-	feq.s	a0, fa5, fa0
+	feq.s	a0, fa0, fa5
 	ret
 func0000000000000027:                   # @func0000000000000027
 	fmv.w.x	fa5, zero
@@ -92,7 +92,7 @@ func0000000000000027:                   # @func0000000000000027
 	bnez	a0, .LBB10_2
 	fmv.s	fa5, fa1
 .LBB10_2:                               # %entry
-	feq.s	a0, fa5, fa0
+	feq.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
 func0000000000000047:                   # @func0000000000000047
@@ -102,7 +102,7 @@ func0000000000000047:                   # @func0000000000000047
 	bnez	a0, .LBB11_2
 	fmv.s	fa5, fa1
 .LBB11_2:                               # %entry
-	feq.s	a0, fa5, fa0
+	feq.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
 func0000000000000048:                   # @func0000000000000048
@@ -111,7 +111,7 @@ func0000000000000048:                   # @func0000000000000048
 	bnez	a0, .LBB12_2
 	fmv.s	fa5, fa1
 .LBB12_2:                               # %entry
-	feq.s	a0, fa5, fa0
+	feq.s	a0, fa0, fa5
 	ret
 .LCPI13_0:
 	.word	0x3fac28f6                      # float 1.34500003
@@ -131,6 +131,6 @@ func00000000000000a7:                   # @func00000000000000a7
 	bnez	a0, .LBB14_2
 	fmv.s	fa5, fa1
 .LBB14_2:                               # %entry
-	feq.s	a0, fa5, fa0
+	feq.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret

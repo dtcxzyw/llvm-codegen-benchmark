@@ -8,14 +8,14 @@
 define i64 @func0000000000000069(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 1000
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %.fr = freeze i64 %3
   %4 = srem i64 %.fr, 1000000000
   %5 = sub i64 %4, %.fr
   ret i64 %5
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -29,6 +29,8 @@ entry:
 ; proxygen/optimized/PersistentQuicPskCache.cpp.ll
 ; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
+; verilator/optimized/V3EmitCImp.cpp.ll
+; verilator/optimized/V3ThreadPool.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; xgboost/optimized/coll_c_api.cc.ll
 ; yalantinglibs/optimized/conformance_test_runner.cc.ll
@@ -36,7 +38,7 @@ entry:
 define i64 @func0000000000000029(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 1000000
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %.fr = freeze i64 %3
   %4 = srem i64 %.fr, 1000000000
   %5 = sub i64 %4, %.fr
@@ -99,7 +101,7 @@ entry:
 define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, -60000
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = sdiv i64 %3, 1000
   %5 = mul i64 %4, 64536
   ret i64 %5

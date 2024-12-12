@@ -44,7 +44,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.long	128                             # 0x80
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllvd	%ymm1, %ymm0, %ymm0
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -58,7 +58,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI3_0:
 	.long	128                             # 0x80
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllvd	%ymm1, %ymm0, %ymm0
 	vptestmd	.LCPI3_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -69,7 +69,7 @@ func000000000000001c:                   # @func000000000000001c
 func0000000000000004:                   # @func0000000000000004
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsrlvd	%ymm1, %ymm2, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

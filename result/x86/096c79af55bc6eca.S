@@ -16,8 +16,8 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rdi, %rax
-	orl	%esi, %edx
-	andl	$7, %edx
+	orl	%edx, %esi
+	andl	$7, %esi
 	andq	$-449, %rax                     # imm = 0xFE3F
-	orq	%rdx, %rax
+	orq	%rsi, %rax
 	retq

@@ -1,5 +1,29 @@
 
-; 32 occurrences:
+; 13 occurrences:
+; abc/optimized/giaShow.c.ll
+; freetype/optimized/sfnt.c.ll
+; libjpeg-turbo/optimized/wrbmp.c.ll
+; lief/optimized/camellia.c.ll
+; linux/optimized/nl80211.ll
+; linux/optimized/selinuxfs.ll
+; oiio/optimized/CineonHeader.cpp.ll
+; oiio/optimized/Writer.cpp.ll
+; oiio/optimized/dpxinput.cpp.ll
+; openusd/optimized/catmarkPatchBuilder.cpp.ll
+; qemu/optimized/hw_audio_ac97.c.ll
+; qemu/optimized/hw_dma_sifive_pdma.c.ll
+; wireshark/optimized/packet-nbap.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i32 %0) #0 {
+entry:
+  %1 = mul nuw nsw i32 %0, 24
+  %2 = or disjoint i32 %1, 6
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
+}
+
+; 33 occurrences:
+; lvgl/optimized/lv_svg_parser.ll
 ; miniaudio/optimized/unity.c.ll
 ; php/optimized/parse_tz.ll
 ; raylib/optimized/raudio.c.ll
@@ -38,21 +62,6 @@ entry:
   %1 = mul i32 %0, 6
   %2 = or disjoint i32 %1, 1
   %3 = zext i32 %2 to i64
-  ret i64 %3
-}
-
-; 5 occurrences:
-; abc/optimized/giaShow.c.ll
-; freetype/optimized/sfnt.c.ll
-; libjpeg-turbo/optimized/wrbmp.c.ll
-; lief/optimized/camellia.c.ll
-; linux/optimized/selinuxfs.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i32 %0) #0 {
-entry:
-  %1 = mul nuw nsw i32 %0, 6
-  %2 = or disjoint i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 

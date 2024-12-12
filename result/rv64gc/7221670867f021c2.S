@@ -1,21 +1,21 @@
-func0000000000000581:                   # @func0000000000000581
+func0000000000001301:                   # @func0000000000001301
 	sext.w	a3, a2
 	sext.w	a4, a1
 	sext.w	a0, a0
-	blt	a4, a3, .LBB0_2
-	addi	a1, a2, -1
+	bge	a4, a3, .LBB0_2
+	addi	a2, a1, 1
 .LBB0_2:                                # %entry
-	addiw	a1, a1, 1
-	xor	a0, a0, a1
+	sext.w	a2, a2
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
-func0000000000000596:                   # @func0000000000000596
+func0000000000001326:                   # @func0000000000001326
 	sext.w	a3, a2
 	sext.w	a4, a1
 	sext.w	a0, a0
-	blt	a4, a3, .LBB1_2
-	addi	a1, a2, -1
+	bge	a4, a3, .LBB1_2
+	addi	a2, a1, 1
 .LBB1_2:                                # %entry
-	addiw	a1, a1, 1
-	slt	a0, a1, a0
+	sext.w	a2, a2
+	slt	a0, a2, a0
 	ret

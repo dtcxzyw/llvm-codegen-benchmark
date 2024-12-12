@@ -1,12 +1,14 @@
 
-%"struct.rocksdb::CacheAlignedWrapper.2500759" = type { %"class.rocksdb::port::Mutex.2500760", [24 x i8] }
-%"class.rocksdb::port::Mutex.2500760" = type { %union.pthread_mutex_t.2500761 }
-%union.pthread_mutex_t.2500761 = type { %struct.__pthread_mutex_s.2500762 }
-%struct.__pthread_mutex_s.2500762 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2500763 }
-%struct.__pthread_internal_list.2500763 = type { ptr, ptr }
-%struct.cdf_directory_t.2676293 = type { [32 x i16], i16, i8, i8, i32, i32, i32, [2 x i64], i32, i64, i64, i32, i32, i32 }
+%"struct.rocksdb::CacheAlignedWrapper.2615971" = type { %"class.rocksdb::port::Mutex.2615972", [24 x i8] }
+%"class.rocksdb::port::Mutex.2615972" = type { %union.pthread_mutex_t.2615973 }
+%union.pthread_mutex_t.2615973 = type { %struct.__pthread_mutex_s.2615974 }
+%struct.__pthread_mutex_s.2615974 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2615975 }
+%struct.__pthread_internal_list.2615975 = type { ptr, ptr }
+%"class.opencc::UTF8StringSliceBase.2749050" = type <{ ptr, i8, i8, [6 x i8] }>
+%struct.cdf_directory_t.2789338 = type { [32 x i16], i16, i8, i8, i32, i32, i32, [2 x i64], i32, i64, i64, i32, i32, i32 }
 
-; 2 occurrences:
+; 3 occurrences:
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
@@ -28,8 +30,8 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = mul nuw i64 %3, %1
-  %5 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2500759", ptr %0, i64 %4
+  %4 = mul nuw i64 %1, %3
+  %5 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2615971", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -38,15 +40,15 @@ entry:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 4
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; clamav/optimized/qsort.c.ll
@@ -66,7 +68,6 @@ entry:
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
 ; nuttx/optimized/lib_bsearch.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
-; opencc/optimized/PhraseExtract.cpp.ll
 ; opencv/optimized/batch_distance.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
@@ -97,7 +98,22 @@ entry:
   ret ptr %5
 }
 
-; 7 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_utils.ll
+; opencc/optimized/PhraseExtract.cpp.ll
+; quantlib/optimized/fixedlocalvolsurface.ll
+; quantlib/optimized/liborforwardmodel.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = mul i64 %1, %3
+  %5 = getelementptr nusw nuw %"class.opencc::UTF8StringSliceBase.2749050", ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 8 occurrences:
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ncnn/optimized/lstm_x86_avx.cpp.ll
 ; ncnn/optimized/lstm_x86_avx2.cpp.ll
@@ -109,7 +125,7 @@ entry:
 define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -122,7 +138,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 56
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -157,20 +173,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 7
-  %4 = mul i64 %3, %1
-  %5 = getelementptr %struct.cdf_directory_t.2676293, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 2 occurrences:
-; quantlib/optimized/fixedlocalvolsurface.ll
-; quantlib/optimized/liborforwardmodel.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = lshr i64 %2, 1
-  %4 = mul i64 %3, %1
-  %5 = getelementptr nusw nuw double, ptr %0, i64 %4
+  %4 = mul i64 %1, %3
+  %5 = getelementptr %struct.cdf_directory_t.2789338, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/shenandoahBarrierSetC2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, 4294967295
   %3 = icmp eq i64 %2, 56
@@ -15,7 +15,7 @@ entry:
 ; nix/optimized/terminal.ll
 ; openjdk/optimized/ps_proc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, 7
   %3 = icmp ne i64 %2, 0
@@ -31,7 +31,7 @@ entry:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, 3
   %3 = icmp eq i64 %2, 0
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a7(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000147(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, -9223372036854775801
   %3 = icmp sgt i64 %2, 0
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, 7
   %3 = icmp eq i64 %2, 0
@@ -67,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/concatenate.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, 63
   %3 = icmp eq i64 %2, 0

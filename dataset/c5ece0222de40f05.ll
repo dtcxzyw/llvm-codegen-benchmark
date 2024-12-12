@@ -15,11 +15,11 @@ entry:
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = or disjoint i64 %3, 1
-  %5 = getelementptr nusw [256 x float], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [256 x float], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

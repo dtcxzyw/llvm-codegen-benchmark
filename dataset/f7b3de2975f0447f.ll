@@ -1,10 +1,11 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; cmake/optimized/index.c.ll
 ; hdf5/optimized/H5Oattr.c.ll
 ; linux/optimized/vma.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; openjdk/optimized/xMark.ll
 ; redis/optimized/emap.ll
@@ -81,9 +82,10 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; libquic/optimized/p224-64.c.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:

@@ -1,38 +1,38 @@
 .LCPI0_0:
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
-	.short	65408                           # 0xff80
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
+	.short	65280                           # 0xff00
 .LCPI0_1:
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-func0000000000000014:                   # @func0000000000000014
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+	.short	65025                           # 0xfe01
+func0000000000000024:                   # @func0000000000000024
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpaddw	.LCPI0_0(%rip), %ymm1, %ymm0
@@ -174,7 +174,7 @@ func0000000000000008:                   # @func0000000000000008
 	.short	256                             # 0x100
 	.short	256                             # 0x100
 	.short	256                             # 0x100
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpcmpeqw	.LCPI5_0(%rip), %ymm1, %k0 {%k1}
@@ -198,7 +198,7 @@ func0000000000000031:                   # @func0000000000000031
 	.short	1                               # 0x1
 	.short	1                               # 0x1
 	.short	1                               # 0x1
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpcmpneqw	.LCPI6_0(%rip), %ymm1, %k0 {%k1}

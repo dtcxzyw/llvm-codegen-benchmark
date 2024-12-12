@@ -3,7 +3,7 @@
 ; hwloc/optimized/common-ps.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000221(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000841(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, %1
   %3 = icmp eq i64 %1, 0

@@ -24,15 +24,6 @@ entry:
 }
 
 ; 1 occurrences:
-; mitsuba3/optimized/x86instapi.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %0, 49152
-  ret i32 %3
-}
-
-; 1 occurrences:
 ; linux/optimized/workqueue.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i1 %1, i32 %2) #0 {

@@ -1,7 +1,7 @@
 func000000000000000f:                   # @func000000000000000f
 	notl	%esi
 	addl	%edi, %esi
-	leaq	4(,%rsi,4), %rax
+	leaq	2(%rsi,%rsi), %rax
 	retq
 func000000000000002f:                   # @func000000000000002f
 	notl	%esi

@@ -3,7 +3,7 @@ func0000000000000006:                   # @func0000000000000006
 	leal	(%rdi,%rdi), %eax
 	addb	$43, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	shrq	$36, %rdi
 	setne	%al
 	shlb	$3, %al

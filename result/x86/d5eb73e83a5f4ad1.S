@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	testw	%di, %di
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	movslq	%eax, %rcx

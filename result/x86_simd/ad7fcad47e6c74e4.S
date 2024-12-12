@@ -32,7 +32,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	0x3fe0000000000000              # double 0.5
 .LCPI3_1:
 	.long	1                               # 0x1
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vaddpd	.LCPI3_0(%rip){1to8}, %zmm0, %zmm0
 	vcvttpd2dq	%zmm0, %ymm0
 	vpcmpnleud	.LCPI3_1(%rip){1to8}, %ymm0, %k0

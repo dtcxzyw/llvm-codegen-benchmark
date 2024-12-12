@@ -21,4 +21,16 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = shl nuw i32 %2, 24
+  %4 = or disjoint i32 %0, %3
+  %5 = freeze i32 %4
+  ret i32 %5
+}
+
 attributes #0 = { nounwind }

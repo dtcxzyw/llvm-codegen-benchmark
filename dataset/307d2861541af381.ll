@@ -36,12 +36,14 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 102 occurrences:
+; 101 occurrences:
 ; arrow/optimized/type.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/sort_by_side.ll
 ; clamav/optimized/extract.cpp.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; cpython/optimized/_posixsubprocess.ll
@@ -56,7 +58,6 @@ entry:
 ; icu/optimized/numparse_decimal.ll
 ; icu/optimized/ucnv_u8.ll
 ; imgui/optimized/imgui.cpp.ll
-; libpng/optimized/pngread.c.ll
 ; libquic/optimized/err_test.cc.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/hub.ll
@@ -95,10 +96,8 @@ entry:
 ; opencv/optimized/ts_func.cpp.ll
 ; openexr/optimized/ImfB44Compressor.cpp.ll
 ; openexr/optimized/internal_b44.c.ll
-; openjdk/optimized/pngread.ll
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/filters.ll
-; php/optimized/ir_emit.ll
 ; php/optimized/pcre2_compile.ll
 ; postgres/optimized/nbtpage.ll
 ; quickjs/optimized/libregexp.ll
@@ -148,7 +147,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -170,25 +169,15 @@ define i1 @func0000000000000006(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 26 occurrences:
-; abc/optimized/bmcBmc3.c.ll
+; 14 occurrences:
 ; graphviz/optimized/write.c.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/InstCombineAddSub.cpp.ll
-; llvm/optimized/InstCombineMulDivRem.cpp.ll
-; llvm/optimized/InstCombineVectorOps.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
-; llvm/optimized/InstructionSimplify.cpp.ll
-; llvm/optimized/LICM.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
-; llvm/optimized/VectorCombine.cpp.ll
 ; logos-rs/optimized/3iimw0083jctljf1.ll
 ; logos-rs/optimized/4u2jgzug3prpt2ik.ll
 ; luajit/optimized/lj_crecord.ll
@@ -197,8 +186,6 @@ entry:
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll
 ; mitsuba3/optimized/thindielectric.cpp.ll
-; quickjs/optimized/libregexp.ll
-; quickjs/optimized/quickjs.ll
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; yosys/optimized/ql_dsp_macc.ll
 ; Function Attrs: nounwind
@@ -238,6 +225,41 @@ entry:
 define i1 @func000000000000000a(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
+  %4 = select i1 %1, i1 %3, i1 false
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 25 occurrences:
+; abc/optimized/bmcBmc3.c.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; icu/optimized/ucptrie.ll
+; llvm/optimized/MCWin64EH.cpp.ll
+; llvm/optimized/RISCVTargetParser.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; openssl/optimized/asynciotest-bin-ssltestlib.ll
+; openssl/optimized/dtls_mtu_test-bin-ssltestlib.ll
+; openssl/optimized/dtlstest-bin-ssltestlib.ll
+; openssl/optimized/fatalerrtest-bin-ssltestlib.ll
+; openssl/optimized/quic_multistream_test-bin-ssltestlib.ll
+; openssl/optimized/quic_newcid_test-bin-ssltestlib.ll
+; openssl/optimized/quic_srt_gen_test-bin-ssltestlib.ll
+; openssl/optimized/quicapitest-bin-ssltestlib.ll
+; openssl/optimized/quicfaultstest-bin-ssltestlib.ll
+; openssl/optimized/recordlentest-bin-ssltestlib.ll
+; openssl/optimized/rpktest-bin-ssltestlib.ll
+; openssl/optimized/servername_test-bin-ssltestlib.ll
+; openssl/optimized/ssl_handshake_rtt_test-bin-ssltestlib.ll
+; openssl/optimized/sslapitest-bin-ssltestlib.ll
+; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
+; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
+; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
+; quickjs/optimized/quickjs.ll
+; wireshark/optimized/packet-icmp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 50
   %4 = select i1 %1, i1 %3, i1 false
   %5 = and i1 %4, %0
   ret i1 %5

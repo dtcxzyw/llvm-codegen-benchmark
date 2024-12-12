@@ -17,8 +17,7 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; icu/optimized/uidna.ll
+; 4 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
@@ -32,13 +31,14 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
+; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000c(i16 %0, i1 %1, i1 %2) #0 {
+define i1 @func000000000000000c(i1 %0, i1 %1, i16 %2) #0 {
 entry:
-  %3 = select i1 %1, i1 %2, i1 false
-  %4 = icmp ne i16 %0, 2
+  %3 = icmp ne i16 %2, 3
+  %4 = select i1 %0, i1 %1, i1 false
   %5 = and i1 %4, %3
   ret i1 %5
 }

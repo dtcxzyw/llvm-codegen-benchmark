@@ -10,7 +10,7 @@ func000000000000005b:                   # @func000000000000005b
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
-	vmul.vv	v10, v12, v10
+	vmul.vv	v10, v10, v12
 	vsrl.vx	v10, v10, a0
 	vmadd.vv	v8, v12, v10
 	ret

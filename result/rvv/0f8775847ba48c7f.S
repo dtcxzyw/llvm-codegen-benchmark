@@ -29,6 +29,12 @@ func0000000000000002:                   # @func0000000000000002
 	li	a0, 3
 	vsub.vx	v8, v8, a0
 	ret
+func0000000000000035:                   # @func0000000000000035
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vv	v10, v12, v10
+	vnot.v	v10, v10
+	vadd.vv	v8, v8, v10
+	ret
 func0000000000000031:                   # @func0000000000000031
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v12, v10
@@ -57,12 +63,6 @@ func0000000000000036:                   # @func0000000000000036
 	vsub.vx	v8, v8, a0
 	ret
 func0000000000000034:                   # @func0000000000000034
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v12, v10
-	vnot.v	v10, v10
-	vadd.vv	v8, v8, v10
-	ret
-func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v12, v10
 	vnot.v	v10, v10
@@ -107,7 +107,7 @@ func0000000000000038:                   # @func0000000000000038
 	vnot.v	v10, v10
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000035:                   # @func0000000000000035
+func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v12, v10
 	vnot.v	v10, v10

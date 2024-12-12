@@ -1,11 +1,23 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
-; openjdk/optimized/countbitsnode.ll
 ; qemu/optimized/source_s_countLeadingZeros64.c.ll
 ; spike/optimized/s_countLeadingZeros64.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i1 %1, i64 %2) #0 {
+define i32 @func0000000000000054(i32 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 32
+  %4 = select i1 %1, i64 %2, i64 %3
+  %5 = trunc nuw i64 %4 to i32
+  %6 = icmp samesign ult i64 %4, 65536
+  %7 = select i1 %6, i32 %0, i32 %5
+  ret i32 %7
+}
+
+; 1 occurrences:
+; openjdk/optimized/countbitsnode.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000044(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = select i1 %1, i64 %2, i64 %3

@@ -59,7 +59,7 @@ func000000000000000e:                   # @func000000000000000e
 	addl	$32, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	leal	35(%rdi), %eax
+	leal	36(%rdi), %eax
 	andl	$-8, %eax
 	addl	$-4, %eax
 	retq

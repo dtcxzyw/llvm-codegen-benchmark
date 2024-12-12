@@ -1,5 +1,5 @@
 
-; 74 occurrences:
+; 78 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -33,6 +33,7 @@
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; node/optimized/libnode.node_i18n.ll
 ; openjdk/optimized/ciObjectFactory.ll
 ; openjdk/optimized/frame.ll
@@ -74,6 +75,9 @@
 ; wireshark/optimized/packet-riemann.c.ll
 ; wireshark/optimized/packet-steam-ihs-discovery.c.ll
 ; xgboost/optimized/c_api.cc.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -88,14 +92,14 @@ entry:
 ; openssl/optimized/libssl-shlib-quic_wire.ll
 ; wireshark/optimized/packet-erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 1
   %2 = icmp eq i64 %1, 0
   ret i1 %2
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/pci-acpi.ll
@@ -103,6 +107,7 @@ entry:
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; minetest/optimized/servermap.cpp.ll
 ; openspiel/optimized/observer.cc.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
@@ -123,10 +128,10 @@ entry:
 ; spike/optimized/s_addMagsF16.ll
 ; wireshark/optimized/packet-steam-ihs-discovery.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0) #0 {
+define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 7
-  %2 = icmp ult i64 %1, 3
+  %2 = icmp samesign ult i64 %1, 3
   ret i1 %2
 }
 
@@ -134,7 +139,7 @@ entry:
 ; llvm/optimized/MCPseudoProbe.cpp.ll
 ; wireshark/optimized/packet-erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0) #0 {
+define i1 @func000000000000004c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 32
   %2 = icmp ne i64 %1, 0

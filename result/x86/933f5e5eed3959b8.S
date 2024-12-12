@@ -14,7 +14,7 @@ func0000000000000004:                   # @func0000000000000004
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpltsd	%xmm2, %xmm4, %k1
 	vmovsd	%xmm3, %xmm1, %xmm1 {%k1}
-	vaddsd	%xmm0, %xmm1, %xmm0
+	vaddsd	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI2_0:
 	.quad	0x8000000000000000              # double -0

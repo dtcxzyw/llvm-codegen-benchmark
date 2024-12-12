@@ -10,10 +10,10 @@
 ; oniguruma/optimized/regcomp.ll
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp eq i32 %4, 0
   %6 = xor i1 %5, %0
   ret i1 %6
@@ -30,12 +30,12 @@ entry:
 ; z3/optimized/model_implicant.cpp.ll
 ; z3/optimized/spacer_legacy_mev.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp ne i32 %4, 0
-  %6 = xor i1 %5, %0
+  %6 = xor i1 %0, %5
   ret i1 %6
 }
 
@@ -49,12 +49,12 @@ entry:
 ; linux/optimized/sta_info.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = and i32 %3, %1
   %5 = icmp ne i32 %4, 0
-  %6 = xor i1 %5, %0
+  %6 = xor i1 %0, %5
   ret i1 %6
 }
 
@@ -63,12 +63,12 @@ entry:
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = and i32 %3, %1
   %5 = icmp eq i32 %4, 0
-  %6 = xor i1 %5, %0
+  %6 = xor i1 %0, %5
   ret i1 %6
 }
 
@@ -80,7 +80,7 @@ entry:
   %3 = shl i32 262144, %2
   %4 = and i32 %3, %1
   %5 = icmp ne i32 %4, 0
-  %6 = xor i1 %5, %0
+  %6 = xor i1 %0, %5
   ret i1 %6
 }
 

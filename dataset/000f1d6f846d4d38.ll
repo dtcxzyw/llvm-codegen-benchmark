@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -18,6 +18,7 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
 ; ncnn/optimized/gridsample.cpp.ll
 ; nori/optimized/colorwheel.cpp.ll
@@ -30,17 +31,19 @@
 define float @func0000000000000002(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   %4 = select i1 %3, float %0, float %2
   ret float %4
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; darktable/optimized/introspection_overlay.c.ll
 ; darktable/optimized/introspection_watermark.c.ll
 ; gromacs/optimized/gmx_cluster.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_line.ll
 ; minetest/optimized/mapgen_v5.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
@@ -50,7 +53,7 @@ entry:
 define float @func0000000000000004(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   %4 = select i1 %3, float %0, float %2
   ret float %4
 }
@@ -61,7 +64,7 @@ entry:
 define float @func000000000000000a(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp oge float %2, %0
+  %3 = fcmp ole float %0, %2
   %4 = select i1 %3, float %0, float %2
   ret float %4
 }

@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/cmDependsC.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
@@ -16,9 +17,9 @@ define i64 @func0000000000000011(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
   %4 = shl nsw i64 %3, 3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = and i64 %5, -8
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -32,9 +33,9 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
   %4 = shl nsw i64 %3, 3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = and i64 %5, -8
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -45,9 +46,9 @@ define i64 @func0000000000000013(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
   %4 = shl nsw i64 %3, 3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = and i64 %5, 4294967288
-  %7 = add nuw nsw i64 %6, %0
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 

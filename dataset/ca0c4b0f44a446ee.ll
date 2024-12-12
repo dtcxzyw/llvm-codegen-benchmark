@@ -297,18 +297,6 @@ entry:
 }
 
 ; 1 occurrences:
-; openspiel/optimized/2048.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000017(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = shl nuw nsw i64 %4, 2
-  %6 = or disjoint i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
 ; linux/optimized/swiotlb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i32 %1, i32 %2) #0 {

@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 67 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -8,6 +8,7 @@
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; assimp/optimized/ColladaHelper.cpp.ll
 ; assimp/optimized/unzip.c.ll
+; boost/optimized/url_base.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/obmalloc.ll
@@ -40,12 +41,12 @@
 ; llvm/optimized/UnicodeNameToCodepoint.cpp.ll
 ; luajit/optimized/lj_buf.ll
 ; luajit/optimized/lj_buf_dyn.ll
+; lvgl/optimized/lv_draw_label.ll
 ; mimalloc/optimized/options.c.ll
 ; msdfgen/optimized/main.cpp.ll
 ; ocio/optimized/FileFormatCSP.cpp.ll
 ; openblas/optimized/dgemmt.c.ll
 ; openblas/optimized/dimatcopy.c.ll
-; openblas/optimized/lsame.c.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; openjdk/optimized/zip_util.ll
 ; postgres/optimized/pgstrcasecmp.ll
@@ -65,6 +66,7 @@
 ; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/attrmap.ll
 ; yosys/optimized/dfflibmap.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
@@ -73,8 +75,7 @@ entry:
   ret i8 %3
 }
 
-; 20 occurrences:
-; abseil-cpp/optimized/memutil.cc.ll
+; 19 occurrences:
 ; cpython/optimized/_codecs_jp.ll
 ; cpython/optimized/_codecs_kr.ll
 ; linux/optimized/maple_tree.ll
@@ -102,7 +103,7 @@ entry:
   ret i8 %3
 }
 
-; 35 occurrences:
+; 41 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/BaseImporter.cpp.ll
 ; assimp/optimized/ColladaHelper.cpp.ll
@@ -114,6 +115,12 @@ entry:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/ci_string.ll
+; boost/optimized/normalize.ll
+; boost/optimized/params_base.ll
+; boost/optimized/params_encoded_base.ll
+; boost/optimized/scheme.ll
+; boost/optimized/url_base.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/decNumber.ll

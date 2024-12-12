@@ -14,6 +14,10 @@ func0000000000000002:                   # @func0000000000000002
 	addl	%esi, %edi
 	movzwl	%di, %eax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	addl	%esi, %edi
+	movzwl	%di, %eax
+	retq
 func0000000000000007:                   # @func0000000000000007
 	addl	%esi, %edi
 	movzwl	%di, %eax

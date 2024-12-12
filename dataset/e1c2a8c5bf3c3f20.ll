@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/ioWriteBook.c.ll
 ; cpython/optimized/floatobject.ll
@@ -21,7 +21,6 @@
 ; openssl/optimized/libcrypto-shlib-params.ll
 ; openusd/optimized/utils.c.ll
 ; quickjs/optimized/quickjs.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; ruby/optimized/bignum.ll
 ; wireshark/optimized/tap-rtp-common.c.ll
 ; Function Attrs: nounwind

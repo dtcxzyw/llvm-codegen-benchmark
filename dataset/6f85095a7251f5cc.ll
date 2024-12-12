@@ -27,9 +27,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/i915_vma.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:

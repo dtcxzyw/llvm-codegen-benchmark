@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	xorl	%ecx, %ecx
 	testl	%edx, %edx
 	setne	%cl
@@ -7,6 +7,17 @@ func0000000000000006:                   # @func0000000000000006
 	testb	$1, %sil
 	movl	$280, %eax                      # imm = 0x118
 	cmoveq	%rcx, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	xorl	%eax, %eax
+	cmpl	$4, %edx
+	sete	%al
+	leaq	-12917(%rax,%rax), %rcx
+	testb	$1, %sil
+	movq	$-12913, %rax                   # imm = 0xCD8F
+	cmoveq	%rcx, %rax
+	shlq	$5, %rax
 	addq	%rdi, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004

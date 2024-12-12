@@ -43,6 +43,27 @@ entry:
   ret i16 %5
 }
 
+; 10 occurrences:
+; lvgl/optimized/lv_font_fmt_txt.ll
+; opencv/optimized/convert.dispatch.cpp.ll
+; opencv/optimized/convert_scale.dispatch.cpp.ll
+; opencv/optimized/copy.cpp.ll
+; opencv/optimized/persistence.cpp.ll
+; openexr/optimized/ImfConvert.cpp.ll
+; openexr/optimized/pack.c.ll
+; openexr/optimized/unpack.c.ll
+; openusd/optimized/openexr-c.c.ll
+; openusd/optimized/reconintra.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000078(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 8
+  %3 = add nuw nsw i32 %2, %0
+  %4 = lshr i32 %3, 4
+  %5 = trunc i32 %4 to i16
+  ret i16 %5
+}
+
 ; 32 occurrences:
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/deepdata.cpp.ll
@@ -83,26 +104,6 @@ entry:
   %3 = add nuw nsw i32 %2, %0
   %4 = lshr i32 %3, 13
   %5 = trunc nuw nsw i32 %4 to i16
-  ret i16 %5
-}
-
-; 9 occurrences:
-; opencv/optimized/convert.dispatch.cpp.ll
-; opencv/optimized/convert_scale.dispatch.cpp.ll
-; opencv/optimized/copy.cpp.ll
-; opencv/optimized/persistence.cpp.ll
-; openexr/optimized/ImfConvert.cpp.ll
-; openexr/optimized/pack.c.ll
-; openexr/optimized/unpack.c.ll
-; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/reconintra.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000078(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 16
-  %3 = add nuw nsw i32 %2, %0
-  %4 = lshr i32 %3, 5
-  %5 = trunc i32 %4 to i16
   ret i16 %5
 }
 

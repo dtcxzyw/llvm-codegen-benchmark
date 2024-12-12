@@ -37,7 +37,7 @@ define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 24
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -48,11 +48,119 @@ define i1 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 14
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
-; 35 occurrences:
+; 13 occurrences:
+; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AMDGPUEmitPrintf.cpp.ll
+; llvm/optimized/AutoUpgrade.cpp.ll
+; llvm/optimized/CodeCompleteConsumer.cpp.ll
+; llvm/optimized/LegalizeIntegerTypes.cpp.ll
+; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
+; opencv/optimized/find_ellipses.cpp.ll
+; openjdk/optimized/compile.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = lshr i32 %2, 3
+  %4 = icmp ult i32 %0, %3
+  ret i1 %4
+}
+
+; 15 occurrences:
+; bullet3/optimized/gim_contact.ll
+; freetype/optimized/truetype.c.ll
+; linux/optimized/namei.ll
+; linux/optimized/pcm_lib.ll
+; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AMDGPUEmitPrintf.cpp.ll
+; llvm/optimized/LegalizeIntegerTypes.cpp.ll
+; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; openjdk/optimized/compile.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = lshr i32 %2, 1
+  %4 = icmp ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; darktable/optimized/CrwDecompressor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = lshr exact i32 %2, 2
+  %4 = icmp samesign ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; darktable/optimized/CrwDecompressor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nsw i64 %1 to i32
+  %3 = lshr exact i32 %2, 2
+  %4 = icmp samesign ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; darktable/optimized/CrwDecompressor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f8(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = lshr exact i32 %2, 2
+  %4 = icmp samesign ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; abc/optimized/ifCut.c.ll
+; abc/optimized/ifMap.c.ll
+; abc/optimized/ifTruth.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = lshr i32 %2, 24
+  %4 = icmp samesign ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 4 occurrences:
+; abc/optimized/ifCut.c.ll
+; abc/optimized/ifTruth.c.ll
+; abc/optimized/llb1Hint.c.ll
+; abc/optimized/nwkMap.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = lshr i32 %2, 24
+  %4 = icmp slt i32 %0, %3
+  ret i1 %4
+}
+
+; 23 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/aigDfs.c.ll
@@ -72,104 +180,16 @@ entry:
 ; abc/optimized/sswIslands.c.ll
 ; cvc5/optimized/SimpSolver.cc.ll
 ; icu/optimized/collationcompare.ll
-; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
-; llvm/optimized/AMDGPUEmitPrintf.cpp.ll
-; llvm/optimized/AutoUpgrade.cpp.ll
-; llvm/optimized/CodeCompleteConsumer.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
-; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; opencv/optimized/find_ellipses.cpp.ll
-; openjdk/optimized/compile.ll
 ; redis/optimized/quicklist.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = lshr i32 %2, 3
-  %4 = icmp ugt i32 %3, %0
-  ret i1 %4
-}
-
-; 19 occurrences:
-; abc/optimized/ifCut.c.ll
-; abc/optimized/ifMap.c.ll
-; abc/optimized/ifTruth.c.ll
-; bullet3/optimized/gim_contact.ll
-; freetype/optimized/truetype.c.ll
-; linux/optimized/namei.ll
-; linux/optimized/pcm_lib.ll
-; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
-; llvm/optimized/AMDGPUEmitPrintf.cpp.ll
-; llvm/optimized/LegalizeIntegerTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; openjdk/optimized/compile.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = lshr i32 %2, 1
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; darktable/optimized/CrwDecompressor.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = lshr exact i32 %2, 2
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; darktable/optimized/CrwDecompressor.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nsw i64 %1 to i32
-  %3 = lshr exact i32 %2, 2
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; darktable/optimized/CrwDecompressor.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = lshr exact i32 %2, 2
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
-}
-
-; 4 occurrences:
-; abc/optimized/ifCut.c.ll
-; abc/optimized/ifTruth.c.ll
-; abc/optimized/llb1Hint.c.ll
-; abc/optimized/nwkMap.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 24
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp samesign ult i32 %0, %3
   ret i1 %4
 }
 
@@ -181,11 +201,11 @@ entry:
 ; openspiel/optimized/skat.cc.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %2, 1
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -193,11 +213,11 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr exact i32 %2, 3
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -209,7 +229,7 @@ define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 31
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
@@ -218,11 +238,22 @@ entry:
 ; llvm/optimized/NewGVN.cpp.ll
 ; z3/optimized/sat_binspr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = lshr i32 %2, 6
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d4(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = lshr i32 %2, 3
+  %4 = icmp samesign ult i32 %0, %3
   ret i1 %4
 }
 

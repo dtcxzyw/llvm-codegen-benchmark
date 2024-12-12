@@ -50,16 +50,14 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; gromacs/optimized/gmx_h2order.cpp.ll
+; 1 occurrences:
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 3, %1
+  %2 = sub i32 0, %1
   %3 = sext i32 %2 to i64
-  %4 = select i1 %0, i64 %3, i64 2
+  %4 = select i1 %0, i64 %3, i64 0
   ret i64 %4
 }
 

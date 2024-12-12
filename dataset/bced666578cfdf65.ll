@@ -10,10 +10,9 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; hdf5/optimized/H5EAcache.c.ll
 ; hdf5/optimized/H5EAiblock.c.ll
-; linux/optimized/i915_debugfs.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_gem_shrinker.ll
 ; linux/optimized/i915_gem_tiling.ll

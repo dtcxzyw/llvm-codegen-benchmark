@@ -27,7 +27,8 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/markovfunctional.ll
 ; Function Attrs: nounwind

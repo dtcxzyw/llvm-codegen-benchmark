@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; bullet3/optimized/btInternalEdgeUtility.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_colisa.c.ll
@@ -30,6 +30,7 @@
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/math.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

@@ -1,8 +1,11 @@
 
-; 203 occurrences:
+; 205 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/satStore.c.ll
 ; abc/optimized/sclLiberty.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/asn1.c.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/phishcheck.c.ll
@@ -96,7 +99,6 @@
 ; git/optimized/archive.ll
 ; git/optimized/diff.ll
 ; git/optimized/git.ll
-; git/optimized/refs.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/ItaniumDemangle.cpp.ll
 ; hermes/optimized/SimpleBytecodeBuilder.cpp.ll
@@ -122,7 +124,6 @@
 ; linux/optimized/memory.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/swiotlb.ll
-; linux/optimized/tbxfroot.ll
 ; linux/optimized/vmcore.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/ByteCodeEmitter.cpp.ll
@@ -141,6 +142,7 @@
 ; llvm/optimized/SveEmitter.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
 ; luau/optimized/UnwindBuilderDwarf2.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/database-sqlite3.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
@@ -241,9 +243,8 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/inet.c.ll
-; git/optimized/refs.ll
 ; gromacs/optimized/topio.cpp.ll
 ; icu/optimized/pkgitems.ll
 ; libuv/optimized/inet.c.ll
@@ -259,8 +260,9 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/diff.cc.ll
+; boost/optimized/approximately_equals.ll
 ; cvc5/optimized/relational_match_generator.cpp.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; linux/optimized/svcauth_gss.ll

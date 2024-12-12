@@ -10,10 +10,10 @@ func0000000000000001:                   # @func0000000000000001
 	fmul.d	fa0, fa0, fa5
 	ret
 .LCPI1_0:
-	.quad	0x3e112e0be826d695              # double 1.0000000000000001E-9
-func000000000000000a:                   # @func000000000000000a
+	.quad	0x7fefffffffffffff              # double 1.7976931348623157E+308
+func0000000000000006:                   # @func0000000000000006
 	sext.w	a0, a0
-	bgtz	a0, .LBB1_2
+	bltz	a0, .LBB1_2
 	fmv.d	fa0, fa1
 .LBB1_2:                                # %entry
 	lui	a0, %hi(.LCPI1_0)
@@ -21,11 +21,10 @@ func000000000000000a:                   # @func000000000000000a
 	fmul.d	fa0, fa0, fa5
 	ret
 .LCPI2_0:
-	.quad	0x4059000000000000              # double 100
-func0000000000000008:                   # @func0000000000000008
+	.quad	0x3e112e0be826d695              # double 1.0000000000000001E-9
+func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0
-	li	a1, 4
-	bltu	a1, a0, .LBB2_2
+	bgtz	a0, .LBB2_2
 	fmv.d	fa0, fa1
 .LBB2_2:                                # %entry
 	lui	a0, %hi(.LCPI2_0)

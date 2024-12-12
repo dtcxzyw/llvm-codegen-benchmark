@@ -12,20 +12,19 @@ entry:
   ret ptr %7
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
 ; cmake/optimized/lz_encoder_mf.c.ll
 ; cmake/optimized/lzma_encoder.c.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
-; llvm/optimized/InstructionCombining.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000cb(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i16, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -2
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw i16, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i16, ptr %5, i64 %6
   ret ptr %7
 }
 

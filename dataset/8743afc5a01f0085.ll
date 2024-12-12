@@ -20,9 +20,9 @@ entry:
 ; openjdk/optimized/psParallelCompact.ll
 ; yosys/optimized/techmap.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, i1 %1, ptr %2) #0 {
+define i64 @func000000000000000c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %0, i64 1048576
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1048576
   %4 = select i1 %1, ptr %3, ptr %2
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64

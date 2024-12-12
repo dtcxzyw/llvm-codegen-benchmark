@@ -30,7 +30,7 @@ func0000000000000031:                   # @func0000000000000031
 	vpmovzxwd	%xmm2, %xmm2            # xmm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000070:                   # @func0000000000000070

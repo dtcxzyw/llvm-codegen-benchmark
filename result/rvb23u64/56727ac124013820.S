@@ -9,84 +9,84 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a0, a0, 1
 	sltu	a0, a1, a0
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	slt	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000251:                   # @func0000000000000251
+func00000000000004a1:                   # @func00000000000004a1
 	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addw	a1, a1, a2
 	addiw	a0, a0, -1
 	sltu	a0, a0, a1
 	ret
-func0000000000000308:                   # @func0000000000000308
+func0000000000000608:                   # @func0000000000000608
 	addw	a1, a1, a2
 	addiw	a0, a0, 2
 	sltu	a0, a1, a0
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	slt	a0, a0, a1
 	ret
-func0000000000000351:                   # @func0000000000000351
+func00000000000006a1:                   # @func00000000000006a1
 	addw	a1, a1, a2
 	addiw	a0, a0, -1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	addw	a1, a1, a2
 	addiw	a0, a0, -1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000256:                   # @func0000000000000256
+func00000000000004a6:                   # @func00000000000004a6
 	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	slt	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	slt	a0, a0, a1
 	ret
-func0000000000000336:                   # @func0000000000000336
+func0000000000000666:                   # @func0000000000000666
 	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	slt	a0, a0, a1
 	ret
-func0000000000000331:                   # @func0000000000000331
+func0000000000000661:                   # @func0000000000000661
 	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	addw	a1, a1, a2
 	addiw	a0, a0, 12
 	sltu	a0, a1, a0

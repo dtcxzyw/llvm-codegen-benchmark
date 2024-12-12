@@ -15,7 +15,7 @@
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -3
   %4 = icmp eq i32 %3, 0
@@ -30,7 +30,7 @@ entry:
 ; eastl/optimized/TestBitset.cpp.ll
 ; qemu/optimized/hw_net_e1000x_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp ne i32 %3, 0
@@ -47,7 +47,7 @@ entry:
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; php/optimized/is_csv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16779264
   %4 = icmp eq i32 %3, 0
@@ -61,7 +61,7 @@ entry:
 ; hermes/optimized/Host.cpp.ll
 ; llvm/optimized/Host.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2097152
   %4 = icmp ne i32 %3, 0
@@ -96,7 +96,7 @@ entry:
 ; wasmtime-rs/optimized/1zz7jsxv168dc7km.ll
 ; wireshark/optimized/packet-socketcan.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
   %4 = icmp ne i32 %3, 0

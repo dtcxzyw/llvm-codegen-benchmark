@@ -2,7 +2,7 @@
 	.long	55                              # 0x37
 .LCPI0_1:
 	.long	8                               # 0x8
-func0000000000000071:                   # @func0000000000000071
+func00000000000000f1:                   # @func00000000000000f1
 	vpsrld	$3, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpleud	.LCPI0_0(%rip){1to4}, %xmm0, %k1
@@ -14,7 +14,7 @@ func0000000000000071:                   # @func0000000000000071
 	.long	512                             # 0x200
 .LCPI1_1:
 	.long	3                               # 0x3
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	vpsrld	$3, %xmm1, %xmm1
 	vptestmd	%xmm0, %xmm0, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm0   # xmm0 = [512,512,512,512]

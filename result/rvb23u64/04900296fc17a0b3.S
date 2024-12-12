@@ -4,7 +4,7 @@ func0000000000000008:                   # @func0000000000000008
 	czero.eqz	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
-func000000000000018c:                   # @func000000000000018c
+func000000000000030c:                   # @func000000000000030c
 	sext.w	a2, a1
 	addiw	a1, a1, 4
 	czero.eqz	a1, a1, a2

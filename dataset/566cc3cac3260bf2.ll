@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; c3c/optimized/sema_asm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = icmp ult i32 %2, 127
@@ -14,7 +14,7 @@ entry:
 ; redis/optimized/aof.ll
 ; slurm/optimized/reservation.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, -2
   %3 = icmp ne i32 %1, 0

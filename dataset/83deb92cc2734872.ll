@@ -10,7 +10,7 @@
 ; postgres/optimized/unicode_norm_srv.ll
 ; quickjs/optimized/libunicode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i16
   %2 = add i16 %1, 21504
@@ -26,7 +26,7 @@ entry:
 ; unicode-normalization-rs/optimized/kwscsepwptyv51i.ll
 ; unicode-normalization-rs/optimized/ymmduj8w84wlz7n.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0) #0 {
+define i1 @func00000000000000c1(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i16
   %2 = add i16 %1, 21504

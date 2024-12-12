@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
 ; bullet3/optimized/btDbvtBroadphase.ll
 ; bullet3/optimized/btOverlappingPairCache.ll
@@ -7,7 +7,6 @@
 ; cvc5/optimized/int_blaster.cpp.ll
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; xgboost/optimized/adaptive.cc.ll
 ; xgboost/optimized/auc.cc.ll
 ; xgboost/optimized/quantile_obj.cc.ll

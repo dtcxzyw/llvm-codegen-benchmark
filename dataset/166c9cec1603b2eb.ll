@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; linux/optimized/gso.ll
+; 7 occurrences:
 ; linux/optimized/rx.ll
 ; llvm/optimized/SymbolDumper.cpp.ll
 ; llvm/optimized/TypeDumpVisitor.cpp.ll
@@ -17,7 +16,8 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; hermes/optimized/Executor.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; llvm/optimized/InstCombineMulDivRem.cpp.ll
@@ -28,7 +28,7 @@ define i1 @func000000000000000c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %1, %2
   %4 = icmp ne i8 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

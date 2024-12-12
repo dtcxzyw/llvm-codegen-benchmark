@@ -1,9 +1,8 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; icu/optimized/ucnvhz.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/intel_pch_refclk.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -21,24 +20,8 @@ define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, 2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or disjoint i32 %4, 4
-  ret i32 %5
-}
-
-; 5 occurrences:
-; linux/optimized/intel_display_power.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
-; wasmtime-rs/optimized/48myxw210mngc99c.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 26
-  %3 = and i32 %2, 201326592
-  %4 = or i32 %3, %0
-  %5 = or i32 %4, 262144
   ret i32 %5
 }
 
@@ -50,8 +33,23 @@ define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
   %3 = and i32 %2, 48
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or i32 %4, 16384
+  ret i32 %5
+}
+
+; 4 occurrences:
+; linux/optimized/intel_display_power.ll
+; wasmtime-rs/optimized/48myxw210mngc99c.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 21
+  %3 = and i32 %2, 6291456
+  %4 = or i32 %0, %3
+  %5 = or i32 %4, 50331648
   ret i32 %5
 }
 

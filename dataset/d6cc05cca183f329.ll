@@ -11,12 +11,13 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cmake/optimized/cmForEachCommand.cxx.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; nix/optimized/primops.ll
 ; nix/optimized/trivial.ll
 ; node/optimized/libnode.node_contextify.ll
+; postgres/optimized/nbtsplitloc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:

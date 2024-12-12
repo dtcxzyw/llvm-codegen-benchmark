@@ -1,12 +1,11 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/calendar.ll
-; icu/optimized/coptccal.ll
 ; icu/optimized/gregocal.ll
 ; openvdb/optimized/StreamCompression.cc.ll
 ; wireshark/optimized/g711.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0) #0 {
+define i32 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = call i32 @llvm.abs.i32(i32 %0, i1 true)
   ret i32 %1
@@ -15,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/loopnode.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0) #0 {
+define i32 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 0, %0
   %2 = icmp ult i32 %0, -2147483647
@@ -27,10 +26,10 @@ entry:
 ; libwebp/optimized/palette.c.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0) #0 {
+define i32 @func0000000000000074(i32 %0) #0 {
 entry:
   %1 = sub nuw nsw i32 512, %0
-  %2 = icmp ult i32 %0, 256
+  %2 = icmp samesign ult i32 %0, 256
   %3 = select i1 %2, i32 %0, i32 %1
   ret i32 %3
 }

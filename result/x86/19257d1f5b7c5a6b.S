@@ -1,34 +1,34 @@
-func0000000000000304:                   # @func0000000000000304
+func0000000000000604:                   # @func0000000000000604
 	leal	1(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	setb	%al
 	retq
-func00000000000003c1:                   # @func00000000000003c1
+func0000000000000781:                   # @func0000000000000781
 	leal	1(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	leal	1(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func00000000000003da:                   # @func00000000000003da
+func0000000000000006:                   # @func0000000000000006
 	leal	1(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
-	setg	%al
+	setl	%al
 	retq
-func0000000000000388:                   # @func0000000000000388
+func0000000000000708:                   # @func0000000000000708
 	leal	4(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	seta	%al
 	retq
-func0000000000000306:                   # @func0000000000000306
+func0000000000000606:                   # @func0000000000000606
 	leal	1(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func0000000000000384:                   # @func0000000000000384
+func0000000000000704:                   # @func0000000000000704
 	leal	1(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	setb	%al
@@ -38,17 +38,22 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%edi, %eax
 	setb	%al
 	retq
-func000000000000010a:                   # @func000000000000010a
+func0000000000000204:                   # @func0000000000000204
+	leal	-1(%rdx,%rsi), %eax
+	cmpl	%edi, %eax
+	setb	%al
+	retq
+func000000000000020a:                   # @func000000000000020a
 	leal	16(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	leal	-1(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	sete	%al
 	retq
-func000000000000011a:                   # @func000000000000011a
+func000000000000022a:                   # @func000000000000022a
 	leal	1(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	setg	%al

@@ -1,10 +1,9 @@
 
-%"struct.OT::IntType.6.2621899" = type { %struct.BEInt.7.2621900 }
-%struct.BEInt.7.2621900 = type { [4 x i8] }
+%"struct.OT::IntType.6.2735340" = type { %struct.BEInt.7.2735341 }
+%struct.BEInt.7.2735341 = type { [4 x i8] }
 
-; 38 occurrences:
+; 37 occurrences:
 ; assimp/optimized/zip.c.ll
-; clamav/optimized/dns.c.ll
 ; flac/optimized/picture.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -42,13 +41,13 @@
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 13
-  %7 = getelementptr nusw i8, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 13
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -65,13 +64,13 @@ entry:
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 5
-  %7 = getelementptr nusw %"struct.OT::IntType.6.2621899", ptr %6, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 5
+  %7 = getelementptr nusw nuw %"struct.OT::IntType.6.2735340", ptr %6, i64 %5
   ret ptr %7
 }
 

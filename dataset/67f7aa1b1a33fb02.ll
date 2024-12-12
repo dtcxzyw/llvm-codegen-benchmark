@@ -1,7 +1,9 @@
 
-; 21 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; linux/optimized/clocksource.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/i915_hwmon.ll
@@ -23,6 +25,16 @@
 ; spike/optimized/vssrl_vx.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000002(i128 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i128
+  %3 = lshr i128 %0, %2
+  ret i128 %3
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000000(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i128
   %3 = lshr i128 %0, %2

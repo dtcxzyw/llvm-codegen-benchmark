@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CImage.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i16 %0, i16 %1, i16 %2) #0 {
@@ -26,8 +27,10 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; cpython/optimized/unicodeobject.ll
+; memcached/optimized/memcached-items.ll
+; memcached/optimized/memcached_debug-items.ll
 ; wasmedge/optimized/engine.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i16 %0, i16 %1, i16 %2) #0 {
@@ -44,7 +47,7 @@ entry:
 define i32 @func0000000000000004(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   %5 = zext i16 %4 to i32
   ret i32 %5
 }

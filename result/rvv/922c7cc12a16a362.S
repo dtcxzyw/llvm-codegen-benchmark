@@ -62,13 +62,11 @@ func0000000000000003:                   # @func0000000000000003
 	vmul.vx	v8, v8, a0
 	ret
 func000000000000000b:                   # @func000000000000000b
-	lui	a0, 1048574
-	srli	a0, a0, 12
+	li	a0, -36
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	li	a0, 51
-	vsrl.vx	v8, v8, a0
-	li	a0, -19
+	vsrl.vi	v8, v8, 2
+	li	a0, 20
 	vmul.vx	v8, v8, a0
 	ret
 func0000000000000018:                   # @func0000000000000018

@@ -5,10 +5,10 @@
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp slt i32 %5, 0
   ret i1 %6
@@ -20,7 +20,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = sub i32 0, %0
   %6 = icmp ne i32 %4, %5
   ret i1 %6
@@ -33,8 +33,8 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = icmp sgt i32 %5, -1
   ret i1 %6
 }
@@ -45,7 +45,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp slt i32 %5, 0
   ret i1 %6
@@ -54,10 +54,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_sprite.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp ugt i32 %5, 4096
   ret i1 %6
@@ -71,7 +71,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp ugt i32 %5, 999999999
   ret i1 %6
@@ -80,11 +80,11 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = icmp ult i32 %5, 10
   ret i1 %6
 }
@@ -92,11 +92,11 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = icmp sgt i32 %5, -1
   ret i1 %6
 }

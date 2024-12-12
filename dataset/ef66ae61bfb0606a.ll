@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 75 occurrences:
 ; clamav/optimized/entconv.c.ll
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -10,7 +10,6 @@
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/toppush.cpp.ll
 ; icu/optimized/csrucode.ll
-; icu/optimized/hebrwcal.ll
 ; icu/optimized/umutablecptrie.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; libjpeg-turbo/optimized/jcmaster.c.ll
@@ -21,9 +20,9 @@
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/OMPContext.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -72,12 +71,15 @@
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; z3/optimized/arith_rewriter.cpp.ll
+; zed-rs/optimized/21d8bsf2bcvltxgcdrjl7oqzs.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:
   %2 = freeze i1 %1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 

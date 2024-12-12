@@ -25,6 +25,15 @@ func000000000000001c:                   # @func000000000000001c
 	cmovnel	%ecx, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movl	$-1, %eax
+	shlxl	%edx, %eax, %ecx
+	incl	%ecx
+	xorl	%eax, %eax
+	testb	$1, %sil
+	cmovnel	%ecx, %eax
+	addl	%edi, %eax
+	retq
 func0000000000000028:                   # @func0000000000000028
 	movl	$1, %eax
 	shlxl	%edx, %eax, %ecx

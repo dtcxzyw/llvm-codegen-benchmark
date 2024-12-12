@@ -28,7 +28,9 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; jemalloc/optimized/base.ll
 ; jemalloc/optimized/base.pic.ll
 ; jemalloc/optimized/base.sym.ll

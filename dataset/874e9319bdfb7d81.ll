@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
-; linux/optimized/csum-partial_64.ll
 ; qemu/optimized/hw_scsi_esp-pci.c.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/hyperloglog.ll

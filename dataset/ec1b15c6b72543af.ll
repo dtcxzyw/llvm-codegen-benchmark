@@ -1,7 +1,8 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
+; boost/optimized/to_chars.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/relocInfo.ll
 ; openusd/optimized/reconinter.c.ll
@@ -17,10 +18,11 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0) #0 {
 entry:

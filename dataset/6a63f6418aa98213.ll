@@ -1,5 +1,5 @@
 
-; 637 occurrences:
+; 631 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -22,7 +22,6 @@
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/reader.cc.ll
-; arrow/optimized/type_traits.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/FindDegenerates.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
@@ -30,6 +29,8 @@
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/huffman.c.ll
@@ -95,12 +96,10 @@
 ; linux/optimized/bitmap.ll
 ; linux/optimized/cpufreq.ll
 ; linux/optimized/cpuset.ll
-; linux/optimized/csum-partial_64.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/drm_client_modeset.ll
 ; linux/optimized/efi_64.ll
 ; linux/optimized/espfix_64.ll
-; linux/optimized/head64.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_engine_cs.ll
@@ -330,7 +329,6 @@
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
@@ -462,7 +460,6 @@
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/cap_v4l.cpp.ll
 ; opencv/optimized/core_detect.cpp.ll
@@ -509,8 +506,6 @@
 ; postgres/optimized/bitmapset.ll
 ; postgres/optimized/jsonpath.ll
 ; postgres/optimized/regcomp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -618,7 +613,6 @@
 ; wasmedge/optimized/segment.cpp.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wireshark/optimized/ftypes.c.ll
 ; wireshark/optimized/packet_list_utils.c.ll
 ; wireshark/optimized/preference_utils.c.ll

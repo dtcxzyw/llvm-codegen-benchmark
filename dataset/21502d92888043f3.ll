@@ -1,5 +1,7 @@
 
-; 20 occurrences:
+; 22 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; draco/optimized/ply_reader.cc.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -21,7 +23,7 @@
 ; yosys/optimized/share.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000136(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000266(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 56
   %3 = trunc i64 %2 to i32
@@ -30,8 +32,10 @@ entry:
   ret i1 %5
 }
 
-; 23 occurrences:
+; 25 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -55,7 +59,7 @@ entry:
 ; yosys/optimized/memory_share.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000226(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = trunc i64 %2 to i32
@@ -70,7 +74,7 @@ entry:
 ; minetest/optimized/CMeshCache.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 72
   %3 = trunc i64 %2 to i32
@@ -86,7 +90,7 @@ entry:
 ; draco/optimized/ply_encoder.cc.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000124(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000244(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 36
   %3 = trunc i64 %2 to i32
@@ -99,7 +103,7 @@ entry:
 ; minetest/optimized/l_mainmenu.cpp.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000206(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 96
   %3 = trunc i64 %2 to i32
@@ -113,7 +117,7 @@ entry:
 ; openmpi/optimized/io_ompio_file_open.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 26
   %3 = trunc i64 %2 to i32
@@ -133,7 +137,7 @@ entry:
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; yosys/optimized/recover_names.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000241(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = trunc i64 %2 to i32
@@ -147,7 +151,7 @@ entry:
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000221(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 48
   %3 = trunc i64 %2 to i32
@@ -173,7 +177,7 @@ entry:
 ; yosys/optimized/mem.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000261(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 376
   %3 = trunc i64 %2 to i32
@@ -187,7 +191,7 @@ entry:
 ; llvm/optimized/CodeGenSchedule.cpp.ll
 ; llvm/optimized/DAGISelMatcherGen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 248
   %3 = trunc i64 %2 to i32
@@ -199,7 +203,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gpp_atomtype.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 184
   %3 = trunc i64 %2 to i32
@@ -212,7 +216,7 @@ entry:
 ; linux/optimized/svc_xprt.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000208(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 192
   %3 = trunc i64 %2 to i32
@@ -224,7 +228,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/tracker_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000022a(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = trunc i64 %2 to i32

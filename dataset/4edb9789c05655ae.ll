@@ -37,7 +37,7 @@
 ; wireshark/optimized/packet-sdp.c.ll
 ; wireshark/optimized/voip_calls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = add nuw nsw i64 %0, 1
@@ -55,7 +55,7 @@ entry:
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = add nuw nsw i64 %0, 1
@@ -66,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/cnfCut.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = add nsw i64 %0, 1
@@ -89,7 +89,7 @@ entry:
 ; icu/optimized/ucnv_u8.ll
 ; icu/optimized/ucnvmbcs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = add nuw nsw i64 %0, 1

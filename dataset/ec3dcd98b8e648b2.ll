@@ -1,5 +1,5 @@
 
-; 92 occurrences:
+; 90 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
 ; clamav/optimized/upx.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -26,7 +26,6 @@
 ; linux/optimized/balloc.ll
 ; linux/optimized/gre_offload.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/skbuff.ll
@@ -61,7 +60,6 @@
 ; mold/optimized/arch-sh4.cc.ll
 ; mold/optimized/arch-sparc64.cc.ll
 ; mold/optimized/arch-x86-64.cc.ll
-; nuttx/optimized/lib_rdflush_unlocked.c.ll
 ; openjdk/optimized/ciMethod.ll
 ; openjdk/optimized/codeHeapState.ll
 ; openjdk/optimized/disassembler.ll

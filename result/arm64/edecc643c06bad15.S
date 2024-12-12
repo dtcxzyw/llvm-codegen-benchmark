@@ -26,7 +26,7 @@ func0000000000000006:                   // @func0000000000000006
 	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000026:                   // @func0000000000000026
+func0000000000000046:                   // @func0000000000000046
 // %bb.0:                               // %entry
 	sub	w8, w2, w1
 	cmp	w0, w8
@@ -40,7 +40,7 @@ func000000000000000c:                   // @func000000000000000c
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
 	sub	w8, w2, w1
 	cmp	w0, w8

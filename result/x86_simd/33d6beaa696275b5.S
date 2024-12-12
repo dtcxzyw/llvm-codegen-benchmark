@@ -15,7 +15,7 @@ func0000000000000075:                   # @func0000000000000075
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2   # ymm2 = [146097,146097,146097,146097]
 	vpmuludq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm2, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.quad	88                              # 0x58

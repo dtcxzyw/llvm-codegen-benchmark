@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/backgammon.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 676
   %3 = select i1 %0, i64 %1, i64 %2
@@ -52,26 +52,36 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; openspiel/optimized/backgammon.cc.ll
-; redis/optimized/memtest.ll
+; 1 occurrences:
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, 676
-  %3 = select i1 %0, i64 %1, i64 %2
-  %4 = icmp ult i64 %3, 1352
-  ret i1 %4
+  %not. = xor i1 %0, true
+  %.neg = zext i1 %not. to i64
+  %2 = icmp ne i64 %1, %.neg
+  ret i1 %2
 }
 
 ; 1 occurrences:
 ; linux/optimized/tunnels.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 12
   %3 = select i1 %0, i64 %1, i64 %2
   %4 = icmp slt i64 %3, 0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; redis/optimized/memtest.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -4096
+  %3 = select i1 %0, i64 %1, i64 %2
+  %4 = icmp ult i64 %3, 8
   ret i1 %4
 }
 

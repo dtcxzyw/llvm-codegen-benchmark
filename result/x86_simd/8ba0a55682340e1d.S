@@ -4,6 +4,12 @@ func0000000000000004:                   # @func0000000000000004
 	vpcmpnltd	%xmm3, %xmm2, %k1
 	vpminuq	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
+func0000000000000014:                   # @func0000000000000014
+	vpslld	$31, %xmm2, %xmm2
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%xmm3, %xmm2, %k1
+	vpminuq	%ymm1, %ymm0, %ymm0 {%k1}
+	retq
 func0000000000000008:                   # @func0000000000000008
 	vpslld	$31, %xmm2, %xmm2
 	vpxor	%xmm3, %xmm3, %xmm3

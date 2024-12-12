@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; cmake/optimized/cmELF.cxx.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; linux/optimized/orphan.ll
@@ -8,7 +8,6 @@
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; ncnn/optimized/deconvolution_x86_avx.cpp.ll

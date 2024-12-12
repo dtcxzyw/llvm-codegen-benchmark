@@ -7,7 +7,7 @@ func0000000000000001:                   # @func0000000000000001
 	vmulhu.vx	v10, v10, a0
 	vadd.vv	v10, v10, v10
 	vand.vi	v10, v10, -4
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 .LCPI1_0:
 	.quad	19342813113834067               # 0x44b82fa09b5a53
@@ -21,5 +21,5 @@ func0000000000000000:                   # @func0000000000000000
 	vsll.vi	v10, v10, 21
 	slli	a0, a0, 32
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

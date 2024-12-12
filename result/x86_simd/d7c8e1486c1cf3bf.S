@@ -36,7 +36,7 @@ func0000000000000076:                   # @func0000000000000076
 	vpermi2b	%ymm2, %ymm1, %ymm3
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm3, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.byte	32                              # 0x20

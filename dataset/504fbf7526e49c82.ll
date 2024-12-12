@@ -34,11 +34,11 @@ define i16 @func0000000000000004(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
   %3 = xor i16 %2, -1
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; logos-rs/optimized/1w5j7pvycf8p27lv.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
@@ -61,12 +61,13 @@ entry:
 ; wasmtime-rs/optimized/1yipc6g1ijw8sqf9.ll
 ; wasmtime-rs/optimized/30bs26v8gk3pt07g.ll
 ; wasmtime-rs/optimized/i5u7vsclgey2ddj.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
   %3 = xor i16 %2, -1
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 

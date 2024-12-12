@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 24 occurrences:
 ; git/optimized/packfile.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/af_unix.ll
@@ -11,10 +11,7 @@
 ; linux/optimized/iommu-traces.ll
 ; linux/optimized/main.ll
 ; linux/optimized/mei-trace.ll
-; linux/optimized/mmap_lock.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/regmap.ll
@@ -24,7 +21,6 @@
 ; linux/optimized/softirq.ll
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/thermal_core.ll
-; linux/optimized/virtgpu_trace_points.ll
 ; linux/optimized/workqueue.ll
 ; postgres/optimized/spgdoinsert.ll
 ; quantlib/optimized/lognormalfwdrateiballand.ll

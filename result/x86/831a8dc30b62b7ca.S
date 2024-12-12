@@ -22,7 +22,7 @@ func0000000000000006:                   # @func0000000000000006
 	movl	$2097151, %eax                  # imm = 0x1FFFFF
 	cmovgl	%edi, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi
 	movl	$-25344, %eax                   # imm = 0x9D00
@@ -34,13 +34,13 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$4, %rsi
 	cmovbl	%edi, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	subq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	$-1, %rsi
 	cmovgel	%edi, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	$31, %rsi

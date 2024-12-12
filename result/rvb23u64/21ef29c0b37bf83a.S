@@ -11,10 +11,10 @@ func0000000000000001:                   # @func0000000000000001
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 258
 	ret
-func0000000000000014:                   # @func0000000000000014
-	addi	a0, a0, -48
-	sltiu	a0, a0, 10
-	li	a1, -2
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 4
+func0000000000000024:                   # @func0000000000000024
+	addi	a0, a0, -1
+	srli	a0, a0, 32
+	li	a1, 32
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 1
 	ret

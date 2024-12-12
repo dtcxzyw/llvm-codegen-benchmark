@@ -28,12 +28,12 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/stream.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub nuw nsw i32 24, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

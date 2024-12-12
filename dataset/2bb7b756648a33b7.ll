@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/utownerid.ll
 ; openjdk/optimized/check_code.ll
 ; wireshark/optimized/packet-ntp.c.ll
 ; wireshark/optimized/packet-ptp.c.ll

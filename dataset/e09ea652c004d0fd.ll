@@ -1,15 +1,4 @@
 
-; 1 occurrences:
-; qemu/optimized/hw_net_igb_core.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sub nsw i32 8, %1
-  %3 = and i32 %2, 65535
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
-}
-
 ; 2 occurrences:
 ; php/optimized/PMurHash.ll
 ; php/optimized/PMurHash128.ll
@@ -30,7 +19,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = and i32 %2, 3

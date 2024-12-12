@@ -1,5 +1,7 @@
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
@@ -7,9 +9,9 @@
 define i64 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp ugt i64 %2, %3
   %5 = zext i1 %4 to i64
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   %7 = and i64 %6, 511
   ret i64 %7
 }
@@ -22,9 +24,9 @@ entry:
 define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp ugt i64 %2, %3
   %5 = zext i1 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = and i64 %6, -8446744073709551616
   ret i64 %7
 }

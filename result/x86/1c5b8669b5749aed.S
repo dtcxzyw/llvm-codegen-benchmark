@@ -3,12 +3,22 @@ func000000000000001a:                   # @func000000000000001a
 	andq	$-64, %rsi
 	leaq	64(%rdi,%rsi), %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000001e:                   # @func000000000000001e
 	subq	%rdx, %rdi
 	andq	$-64, %rsi
 	leaq	64(%rdi,%rsi), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000003e:                   # @func000000000000003e
+	subq	%rdx, %rdi
+	andq	$-64, %rsi
+	leaq	64(%rdi,%rsi), %rax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	subq	%rdx, %rdi
+	movzwl	%si, %eax
+	addq	%rdi, %rax
+	retq
+func000000000000002b:                   # @func000000000000002b
 	subq	%rdx, %rdi
 	movl	%esi, %eax
 	leaq	-8(%rdi,%rax), %rax

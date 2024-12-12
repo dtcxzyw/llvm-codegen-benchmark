@@ -2,24 +2,26 @@
 ; 1 occurrences:
 ; openjdk/optimized/oopMap.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001ea(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000001fe(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %1, i64 8
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   %7 = getelementptr nusw i8, ptr %6, i64 %0
   ret ptr %7
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
+; z3/optimized/mam.cpp.ll
+; z3/optimized/q_mam.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000e0(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000f0(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = getelementptr nusw i8, ptr %1, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 8
   %6 = getelementptr i8, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 %0
   ret ptr %7
@@ -58,11 +60,11 @@ entry:
 ; clamav/optimized/rijndael.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001e0(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000001f0(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %1, i64 2048
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 2048
   %6 = getelementptr i8, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 %0
   ret ptr %7
@@ -71,17 +73,17 @@ entry:
 ; 1 occurrences:
 ; git/optimized/packfile.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001ca(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000001cf(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
   %5 = getelementptr i8, ptr %1, i64 8
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 
-; 17 occurrences:
+; 15 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; hyperscan/optimized/block.c.ll
@@ -93,19 +95,31 @@ entry:
 ; hyperscan/optimized/tamarama.c.ll
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
-; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
-; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/linear_equation.cpp.ll
 ; z3/optimized/nlsat_solver.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000ff(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %1, i64 28
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 28
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 2 occurrences:
+; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
+; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fe(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 2
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   %7 = getelementptr nusw i8, ptr %6, i64 %0
   ret ptr %7
 }

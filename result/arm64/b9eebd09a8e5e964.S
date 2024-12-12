@@ -6,7 +6,7 @@ func000000000000001a:                   // @func000000000000001a
 	add	x0, x8, x0, lsl #2
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
+func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
 	mov	w8, #4                          // =0x4
 	orr	w8, w8, w2, lsl #3

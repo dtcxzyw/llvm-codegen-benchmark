@@ -6,11 +6,11 @@ func0000000000000048:                   // @func0000000000000048
 	sub	x0, x8, #4
 	ret
                                         // -- End function
-func000000000000000a:                   // @func000000000000000a
+func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	add	w9, w2, w2, lsl #2
 	mov	w8, #12                         // =0xc
-	add	w9, w9, w1
+	add	w9, w1, w9
 	smaddl	x8, w9, w8, x0
 	add	x0, x8, #4
 	ret

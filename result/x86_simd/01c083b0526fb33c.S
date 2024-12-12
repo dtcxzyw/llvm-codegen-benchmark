@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	70                              # 0x46
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2

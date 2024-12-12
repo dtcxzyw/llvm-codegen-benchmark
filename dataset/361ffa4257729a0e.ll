@@ -5,7 +5,7 @@
 ; openspiel/optimized/quoridor.cc.ll
 ; openspiel/optimized/tarok.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp eq i32 %2, %0
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/daisy.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp eq i32 %2, %0

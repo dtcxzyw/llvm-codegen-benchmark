@@ -8,13 +8,12 @@ define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
   %4 = icmp ugt i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/fair.ll
-; php/optimized/shared_alloc_shm.ll
 ; ruby/optimized/parser_st.ll
 ; ruby/optimized/st.ll
 ; Function Attrs: nounwind
@@ -35,56 +34,11 @@ define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
   %4 = icmp uge i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 1 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000003b(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 16
-  %4 = icmp sge i64 %3, %1
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 16
-  %4 = icmp ult i64 %3, %1
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000035(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 16
-  %4 = icmp ule i64 %3, %1
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; hdf5/optimized/H5HL.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 16
-  %4 = icmp ugt i64 %3, %1
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 33 occurrences:
+; 34 occurrences:
 ; actix-rs/optimized/2nm6r5hc2u1hk1e1.ll
 ; actix-rs/optimized/38w83wyqv1thu0n9.ll
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
@@ -117,35 +71,36 @@ entry:
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/47nrdncov7567v7m.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
-; wireshark/optimized/display_filter_expression_dialog.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 4
   %4 = icmp ne i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/oopRecorder.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 1
   %4 = icmp ne i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/loopTransform.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = icmp sgt i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -157,7 +112,7 @@ define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 10
   %4 = icmp ult i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -217,7 +172,7 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = icmp slt i64 %3, %1
@@ -229,22 +184,22 @@ entry:
 ; linux/optimized/bio.ll
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 32
   %4 = icmp eq i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
-; hdf5/optimized/H5EAhdr.c.ll
+; hdf5/optimized/H5HL.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = icmp uge i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ugt i64 %3, %1
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -255,7 +210,7 @@ define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = icmp eq i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -263,22 +218,22 @@ entry:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = icmp ne i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; cpython/optimized/complexobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000027(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000047(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 1
   %4 = icmp sle i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

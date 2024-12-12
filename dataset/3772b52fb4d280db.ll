@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/fraImp.c.ll
@@ -24,7 +24,6 @@
 ; linux/optimized/page_alloc.ll
 ; llvm/optimized/CGObjCGNU.cpp.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; ruby/optimized/unicode.ll

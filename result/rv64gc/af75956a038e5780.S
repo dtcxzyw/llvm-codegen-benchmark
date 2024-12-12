@@ -1,6 +1,6 @@
 func0000000000000020:                   # @func0000000000000020
 	addi	a2, a2, 5
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
@@ -20,12 +20,12 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000010:                   # @func0000000000000010
 	addi	a2, a2, 1
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
 	addi	a2, a2, 1
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
@@ -40,7 +40,7 @@ func0000000000000030:                   # @func0000000000000030
 	ret
 func0000000000000025:                   # @func0000000000000025
 	addi	a2, a2, 1
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000017:                   # @func0000000000000017
@@ -60,7 +60,7 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func0000000000000035:                   # @func0000000000000035
 	addi	a2, a2, 1
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func000000000000002d:                   # @func000000000000002d
@@ -95,7 +95,7 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func000000000000003d:                   # @func000000000000003d
 	addi	a2, a2, 1
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000021:                   # @func0000000000000021
@@ -115,16 +115,16 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func0000000000000037:                   # @func0000000000000037
 	addi	a2, a2, 1
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000033:                   # @func0000000000000033
 	addi	a2, a2, 1
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024
 	addi	a2, a2, 1
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

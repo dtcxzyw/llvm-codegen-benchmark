@@ -1,8 +1,7 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; cmake/optimized/lzma2_decoder.c.ll
 ; eastl/optimized/EATextUtil.cpp.ll
-; linux/optimized/hwesleep.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; opencv/optimized/imagelogpolprojection.cpp.ll
 ; openjdk/optimized/compilerDirectives.ll

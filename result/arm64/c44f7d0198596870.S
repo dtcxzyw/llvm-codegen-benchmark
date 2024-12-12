@@ -5,3 +5,10 @@ func0000000000000008:                   // @func0000000000000008
 	lsl	x0, x8, x0
 	ret
                                         // -- End function
+func0000000000000000:                   // @func0000000000000000
+// %bb.0:                               // %entry
+	orr	x8, x1, #0x1
+	mov	x1, #0                          // =0x0
+	lsl	x0, x8, x0
+	ret
+                                        // -- End function

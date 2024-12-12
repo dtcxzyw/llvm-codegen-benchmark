@@ -1,5 +1,5 @@
 
-; 348 occurrences:
+; 347 occurrences:
 ; arrow/optimized/exec.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/row_encoder.cc.ll
@@ -222,7 +222,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -349,13 +348,13 @@
 ; zxing/optimized/PDFDetectionResult.cpp.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000126(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 56
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
-  %7 = icmp sgt i64 %6, %0
+  %7 = icmp slt i64 %0, %6
   ret i1 %7
 }
 
@@ -365,13 +364,13 @@ entry:
 ; llama.cpp/optimized/llama.cpp.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 40
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
@@ -379,39 +378,39 @@ entry:
 ; gromacs/optimized/read_params.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000012b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 96
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
-  %7 = icmp sle i64 %6, %0
+  %7 = icmp sge i64 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; opencv/optimized/onlineBoosting.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 96
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; opencv/optimized/onlineBoosting.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000128(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 96
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp ugt i64 %0, %6
   ret i1 %7
 }
 

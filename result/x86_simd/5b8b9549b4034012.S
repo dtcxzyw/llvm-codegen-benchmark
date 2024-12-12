@@ -9,6 +9,6 @@ func000000000000003d:                   # @func000000000000003d
 	vpsrld	$3, %ymm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
-	vpmulld	%ymm0, %ymm1, %ymm0
-	vpmulld	%ymm0, %ymm2, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
+	vpmulld	%ymm2, %ymm0, %ymm0
 	retq

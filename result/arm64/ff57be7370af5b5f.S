@@ -20,9 +20,9 @@ func000000000000006e:                   // @func000000000000006e
 	mov	x8, #-1                         // =0xffffffffffffffff
 	neg	x9, x4
 	umulh	x8, x4, x8
-	adds	x9, x9, x0
+	adds	x9, x0, x9
 	sub	x8, x8, x5
-	adc	x8, x8, x1
+	adc	x8, x1, x8
 	adds	x0, x9, x3
 	cinc	x1, x8, hs
 	ret

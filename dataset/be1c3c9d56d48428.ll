@@ -8,11 +8,11 @@ define i1 @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
-; 146 occurrences:
+; 141 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -55,12 +55,10 @@ entry:
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
-; gromacs/optimized/matio.cpp.ll
 ; gromacs/optimized/update.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; hermes/optimized/OSCompatPosix.cpp.ll
 ; hyperscan/optimized/ng_redundancy.cpp.ll
-; icu/optimized/ustring.ll
 ; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
@@ -87,8 +85,6 @@ entry:
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -149,7 +145,6 @@ entry:
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/PeeledEncoding.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll
-; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; yosys/optimized/ezminisat.ll
@@ -160,11 +155,25 @@ entry:
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i64, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
+  ret i1 %5
+}
+
+; 4 occurrences:
+; darktable/optimized/ArwDecoder.cpp.ll
+; darktable/optimized/VC5Decompressor.cpp.ll
+; linux/optimized/namei.ll
+; minetest/optimized/mapnode.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 %1
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -175,37 +184,34 @@ define i1 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
-; 7 occurrences:
+; 1 occurrences:
+; php/optimized/softmagic.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c8(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = icmp ugt ptr %0, %4
+  ret i1 %5
+}
+
+; 6 occurrences:
 ; eastl/optimized/EAMemory.cpp.ll
 ; graphviz/optimized/gvgetfontlist_pango.c.ll
 ; grpc/optimized/slice.cc.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; php/optimized/softmagic.ll
 ; spike/optimized/fdt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000148(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = icmp ult ptr %4, %0
-  ret i1 %5
-}
-
-; 3 occurrences:
-; darktable/optimized/ArwDecoder.cpp.ll
-; darktable/optimized/VC5Decompressor.cpp.ll
-; linux/optimized/namei.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
@@ -218,11 +224,44 @@ entry:
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000144(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; gromacs/optimized/matio.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000161(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw float, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw float, ptr %3, i64 %1
+  %5 = icmp eq ptr %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e1(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i32, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i32, ptr %3, i64 %1
+  %5 = icmp eq ptr %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; icu/optimized/ustring.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c1(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i16, ptr %0, i64 %2
+  %4 = getelementptr nusw i16, ptr %3, i64 %1
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 

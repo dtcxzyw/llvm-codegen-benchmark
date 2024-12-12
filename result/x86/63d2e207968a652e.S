@@ -6,14 +6,7 @@ func0000000000000050:                   # @func0000000000000050
 	addq	%rdi, %rax
 	retq
 func0000000000000010:                   # @func0000000000000010
-	shrq	$2, %rsi
-	subl	%esi, %edi
-	shlq	$32, %rdi
-	movabsq	$-8589934592, %rax              # imm = 0xFFFFFFFE00000000
-	addq	%rdi, %rax
-	retq
-func0000000000000060:                   # @func0000000000000060
 	shrq	$3, %rsi
 	subq	%rsi, %rdi
-	leaq	-8(,%rdi,8), %rax
+	leaq	24(,%rdi,4), %rax
 	retq

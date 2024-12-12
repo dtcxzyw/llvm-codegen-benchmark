@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; clamav/optimized/unarj.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -9,6 +9,7 @@
 ; libpng/optimized/pngwtran.c.ll
 ; libquic/optimized/cfb64ede.c.ll
 ; linux/optimized/mac.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; oiio/optimized/icoinput.cpp.ll
 ; oiio/optimized/rlainput.cpp.ll
 ; opencv/optimized/dxt.cpp.ll

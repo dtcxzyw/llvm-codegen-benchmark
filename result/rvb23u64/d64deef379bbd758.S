@@ -8,7 +8,7 @@ func0000000000000004:                   # @func0000000000000004
 	srliw	a0, a0, 18
 	seqz	a0, a0
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	andi	a0, a0, 1
 	li	a2, 4
 	czero.nez	a0, a2, a0

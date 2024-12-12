@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	1(%rdi), %eax
 	cmpl	$65535, %edi                    # imm = 0xFFFF
 	movzwl	%ax, %ecx

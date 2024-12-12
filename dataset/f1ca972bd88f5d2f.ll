@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 56 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/socket.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
@@ -34,12 +34,12 @@
 ; linux/optimized/sta_info.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tsc.ll
-; linux/optimized/tsc_msr.ll
 ; linux/optimized/util.ll
 ; linux/optimized/vlv_dsi.ll
 ; linux/optimized/xfrm_policy.ll
 ; linux/optimized/xfrm_user.ll
 ; llvm/optimized/APFloat.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/UshortGray.ll
 ; openjdk/optimized/bytecodeInfo.ll
@@ -49,7 +49,6 @@
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/CrowdTool.cpp.ll
-; slurm/optimized/set_oomadj.ll
 ; sqlite/optimized/sqlite3.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; wireshark/optimized/packet-acr122.c.ll
@@ -65,8 +64,10 @@ entry:
   ret i32 %2
 }
 
-; 24 occurrences:
+; 26 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/pfr.c.ll
@@ -81,8 +82,8 @@ entry:
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/ohci-hcd.ll
+; lvgl/optimized/lv_color.ll
 ; quantlib/optimized/date.ll
-; slurm/optimized/set_oomadj.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-geonw.c.ll
 ; wireshark/optimized/packet-ipx.c.ll
@@ -95,6 +96,16 @@ define i32 @func0000000000000006(i32 %0) #0 {
 entry:
   %1 = mul nuw nsw i32 %0, 1000000
   %2 = udiv i32 %1, 3
+  ret i32 %2
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_calendar.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0) #0 {
+entry:
+  %1 = mul nsw i32 %0, 31
+  %2 = udiv i32 %1, 12
   ret i32 %2
 }
 

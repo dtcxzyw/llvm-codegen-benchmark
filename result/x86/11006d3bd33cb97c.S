@@ -28,11 +28,23 @@ func0000000000000005:                   # @func0000000000000005
 	cmovnel	%esi, %eax
 	negl	%eax
 	retq
+func0000000000000053:                   # @func0000000000000053
+	cmpl	$128, %edx
+	cmovael	%esi, %edi
+	movl	$255, %eax
+	subl	%edi, %eax
+	retq
 func0000000000000019:                   # @func0000000000000019
 	movl	%edi, %eax
 	testl	%edx, %edx
 	cmovnsl	%esi, %eax
 	negl	%eax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	testl	%edx, %edx
+	cmovnel	%esi, %edi
+	movl	$16, %eax
+	subl	%edi, %eax
 	retq
 func000000000000001a:                   # @func000000000000001a
 	testl	%edx, %edx

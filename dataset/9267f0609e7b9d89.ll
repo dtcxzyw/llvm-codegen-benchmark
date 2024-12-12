@@ -32,7 +32,7 @@
 ; wasmtime-rs/optimized/47nrdncov7567v7m.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 4
   %3 = icmp ne i64 %2, %1
@@ -45,7 +45,7 @@ entry:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000058c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %0, 2
   %3 = icmp ne i64 %2, %1

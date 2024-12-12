@@ -1,36 +1,18 @@
 
-%"class.Catch::TestCaseHandle.2914091" = type { ptr, ptr }
+%"class.Catch::TestCaseHandle.3108139" = type { ptr, ptr }
 
-; 111 occurrences:
+; 75 occurrences:
 ; abseil-cpp/optimized/escaping.cc.ll
-; arrow/optimized/message.cc.ll
-; arrow/optimized/metadata_internal.cc.ll
-; arrow/optimized/reader.cc.ll
 ; assimp/optimized/STLLoader.cpp.ll
-; brotli/optimized/compress_fragment_two_pass.c.ll
 ; clamav/optimized/upack.c.ll
 ; cmake/optimized/divsufsort.c.ll
-; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
-; cvc5/optimized/symmetry_breaker.cpp.ll
-; cvc5/optimized/theory_uf_rewriter.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
-; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
-; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
-; flatbuffers/optimized/binary_annotator.cpp.ll
-; flatbuffers/optimized/idl_parser.cpp.ll
-; flatbuffers/optimized/reflection.cpp.ll
 ; git/optimized/apply.ll
 ; git/optimized/diff-delta.ll
 ; grpc/optimized/frame_window_update.cc.ll
-; grpc/optimized/ssl_transport_security.cc.ll
-; harfbuzz/optimized/gsubgpos-context.cc.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-static.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/BCP47Parser.cpp.ll
 ; hermes/optimized/DependencyExtractor.cpp.ll
 ; hermes/optimized/JSLibInternal.cpp.ll
@@ -38,22 +20,15 @@
 ; hermes/optimized/RegexSerialization.cpp.ll
 ; icu/optimized/propsvec.ll
 ; icu/optimized/ucnv.ll
-; libquic/optimized/gzwrite.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/AArch64RedundantCopyElimination.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/ConvergenceVerifier.cpp.ll
-; llvm/optimized/EarlyIfConversion.cpp.ll
 ; llvm/optimized/GVNHoist.cpp.ll
 ; llvm/optimized/IRTranslator.cpp.ll
 ; llvm/optimized/InlineAsm.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
-; llvm/optimized/InstrProf.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
-; llvm/optimized/LoopInterchange.cpp.ll
-; llvm/optimized/MachineOutliner.cpp.ll
 ; llvm/optimized/MachineRegionInfo.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
 ; llvm/optimized/ObjCARC.cpp.ll
@@ -64,23 +39,15 @@
 ; llvm/optimized/SemaStmtAttr.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
-; llvm/optimized/SimplifyCFG.cpp.ll
-; llvm/optimized/WasmObjectFile.cpp.ll
-; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
-; llvm/optimized/YAMLParser.cpp.ll
 ; meshlab/optimized/ml_render_gui.cpp.ll
 ; ninja/optimized/string_piece_util.cc.ll
 ; node/optimized/simdutf.ll
 ; oiio/optimized/strutil.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
-; opencv/optimized/tflite_importer.cpp.ll
 ; openjdk/optimized/barrierSetNMethod_x86.ll
 ; openjdk/optimized/debugInit.ll
 ; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
-; openjdk/optimized/hb-common.ll
-; openjdk/optimized/hb-ot-font.ll
-; openjdk/optimized/jfrEventClassTransformer.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openjdk/optimized/nmethod.ll
 ; openusd/optimized/resolver.cpp.ll
@@ -106,9 +73,6 @@
 ; vcpkg/optimized/vcpkglib.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; velox/optimized/Re2Functions.cpp.ll
-; yosys/optimized/fstapi.ll
-; z3/optimized/watch_list.cpp.ll
-; zlib/optimized/gzwrite.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_fast.c.ll
@@ -124,7 +88,67 @@ entry:
   ret i64 %7
 }
 
-; 28 occurrences:
+; 48 occurrences:
+; arrow/optimized/message.cc.ll
+; arrow/optimized/metadata_internal.cc.ll
+; arrow/optimized/reader.cc.ll
+; boost/optimized/cmd.ll
+; boost/optimized/graphml.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/token_ids.ll
+; brotli/optimized/compress_fragment_two_pass.c.ll
+; cmake/optimized/gzwrite.c.ll
+; cvc5/optimized/symmetry_breaker.cpp.ll
+; cvc5/optimized/theory_uf_rewriter.cpp.ll
+; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
+; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
+; flatbuffers/optimized/binary_annotator.cpp.ll
+; flatbuffers/optimized/idl_parser.cpp.ll
+; flatbuffers/optimized/reflection.cpp.ll
+; grpc/optimized/ssl_transport_security.cc.ll
+; harfbuzz/optimized/gsubgpos-context.cc.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; libquic/optimized/gzwrite.c.ll
+; llvm/optimized/AArch64RedundantCopyElimination.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/EarlyIfConversion.cpp.ll
+; llvm/optimized/InstrProf.cpp.ll
+; llvm/optimized/LoopInterchange.cpp.ll
+; llvm/optimized/MachineOutliner.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/WasmObjectFile.cpp.ll
+; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
+; llvm/optimized/YAMLParser.cpp.ll
+; opencv/optimized/tflite_importer.cpp.ll
+; openjdk/optimized/hb-common.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/jfrEventClassTransformer.ll
+; php/optimized/string.ll
+; vcpkg/optimized/export.prefab.cpp.ll
+; yosys/optimized/fstapi.ll
+; zlib/optimized/gzwrite.c.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %0 to i64
+  %6 = sub i64 %4, %5
+  %7 = and i64 %6, 4294967292
+  ret i64 %7
+}
+
+; 25 occurrences:
 ; eastl/optimized/TestHeap.cpp.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
@@ -150,13 +174,10 @@ entry:
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; wireshark/optimized/file_wrappers.c.ll
 ; wireshark/optimized/rfc7468.c.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.Catch::TestCaseHandle.2914091", ptr %1, i64 %2
+  %3 = getelementptr %"class.Catch::TestCaseHandle.3108139", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %4, %5

@@ -24,10 +24,9 @@ entry:
   ret i64 %6
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll

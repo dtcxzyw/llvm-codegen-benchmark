@@ -19,13 +19,12 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; gromacs/optimized/pairlist_tuning.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/sd.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
@@ -35,6 +34,8 @@ entry:
 ; spike/optimized/s_shortShiftRightExtendM.ll
 ; spike/optimized/s_shortShiftRightM.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:

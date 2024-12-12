@@ -31,14 +31,13 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; clamav/optimized/upx.c.ll
 ; openusd/optimized/mapExpression.cpp.ll
 ; openusd/optimized/pathNode.cpp.ll
 ; openusd/optimized/primIndex.cpp.ll
 ; openusd/optimized/site.cpp.ll
 ; postgres/optimized/varbit.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:

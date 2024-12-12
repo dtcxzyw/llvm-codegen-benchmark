@@ -1,5 +1,5 @@
 
-; 135 occurrences:
+; 139 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/globals_test.cc.ll
@@ -8,17 +8,22 @@
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/message.cc.ll
-; c3c/optimized/number.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; cvc5/optimized/entailment_check.cpp.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
-; cvc5/optimized/nl_model.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/regexp_entail.cpp.ll
-; darktable/optimized/introspection_invert.c.ll
-; darktable/optimized/introspection_temperature.c.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; duckdb/optimized/is_distinct_from.cpp.ll
@@ -30,7 +35,6 @@
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
-; hermes/optimized/JSProxy.cpp.ll
 ; icu/optimized/measure.ll
 ; icu/optimized/msgfmt.ll
 ; icu/optimized/plurfmt.ll
@@ -120,7 +124,6 @@
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yoga/optimized/Node.cpp.ll
-; yosys/optimized/sim.ll
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/mpf.cpp.ll
@@ -134,6 +137,7 @@
 ; z3/optimized/theory_dense_diff_logic.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {

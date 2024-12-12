@@ -4,7 +4,7 @@
 ; linux/optimized/fault.ll
 ; ruby/optimized/coverage.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i32 %0, 1
   ret i32 %2
@@ -24,7 +24,7 @@ entry:
 ; cpython/optimized/dtoa.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i32 %0, 7
   ret i32 %2

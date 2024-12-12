@@ -13,14 +13,14 @@ func000000000000000c:                   // @func000000000000000c
 	csel	x0, x1, x0, eq
 	ret
                                         // -- End function
-func0000000000000004:                   // @func0000000000000004
+func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
 	mov	w8, #240                        // =0xf0
 	bics	wzr, w8, w2
 	csel	x0, x1, x0, eq
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
+func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
 	tst	w2, #0x20
 	csel	x0, x1, x0, eq

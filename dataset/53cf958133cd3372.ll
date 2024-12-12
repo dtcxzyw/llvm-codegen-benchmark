@@ -12,13 +12,14 @@ entry:
   ret i32 %7
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
 ; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; libquic/optimized/error_correction.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000a9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -40,7 +41,7 @@ entry:
   %4 = add nsw i32 %3, %1
   %5 = mul nsw i32 %4, 1461
   %6 = ashr i32 %5, 2
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

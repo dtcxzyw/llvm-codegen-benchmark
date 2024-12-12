@@ -65,7 +65,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -114,6 +114,19 @@ entry:
   ret i32 %5
 }
 
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_arc.ll
+; z3/optimized/dl_finite_product_relation.cpp.ll
+; z3/optimized/dl_sieve_relation.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000015(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = sub nsw i32 %3, %1
+  %5 = add nsw i32 %4, %0
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; wireshark/optimized/packet-bthci_cmd.c.ll
 ; wireshark/optimized/packet-thread.c.ll
@@ -122,7 +135,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nuw nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -134,18 +147,6 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = add nuw nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 2 occurrences:
-; z3/optimized/dl_finite_product_relation.cpp.ll
-; z3/optimized/dl_sieve_relation.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000015(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext nneg i8 %2 to i32
-  %4 = sub nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

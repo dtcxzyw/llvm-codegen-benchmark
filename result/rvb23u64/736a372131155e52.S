@@ -21,11 +21,6 @@ func00000000000000a0:                   # @func00000000000000a0
 	andn	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000088:                   # @func0000000000000088
-	sltiu	a2, a2, 32
-	czero.nez	a0, a0, a2
-	addw	a0, a0, a1
-	ret
 func0000000000000048:                   # @func0000000000000048
 	addw	a0, a0, a1
 	ret

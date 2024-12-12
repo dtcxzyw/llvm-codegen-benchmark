@@ -1,9 +1,14 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000004e:                   # @func000000000000004e
 	leal	3(%rsi,%rsi,2), %eax
 	cltq
 	leaq	4(%rdi,%rax,4), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func0000000000000042:                   # @func0000000000000042
+	leal	3(%rsi,%rsi,2), %eax
+	cltq
+	leaq	8(%rdi,%rax,8), %rax
+	retq
+func000000000000000e:                   # @func000000000000000e
 	imull	$122, %esi, %eax
 	addl	$-122, %eax
 	cltq

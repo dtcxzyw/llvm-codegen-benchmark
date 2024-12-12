@@ -1,14 +1,13 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; casadi/optimized/kinsol_interface.cpp.ll
-; just-rs/optimized/uwydcyn8qeoqoev.ll
 ; quest/optimized/QuEST_validation.c.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -21,7 +20,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -34,21 +33,20 @@ entry:
 define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 1152921504606846975, %2
-  %4 = icmp slt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp sgt i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
-; openjdk/optimized/divnode.ll
+; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-evp_enc.ll
 ; openssl/optimized/libcrypto-shlib-evp_enc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = icmp ult i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -136,8 +134,8 @@ entry:
 define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 -9223372036854775808, %2
-  %4 = icmp ult i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -146,10 +144,10 @@ entry:
 ; cpython/optimized/_collectionsmodule.ll
 ; z3/optimized/mpff.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002e(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004e(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = icmp sge i64 %3, %1
+  %4 = icmp sle i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -163,19 +161,19 @@ entry:
 define i1 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp eq i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000054(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = icmp slt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp sgt i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -185,8 +183,8 @@ entry:
 define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 3, %2
-  %4 = icmp sle i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp sge i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -196,7 +194,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp ule i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -207,7 +205,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

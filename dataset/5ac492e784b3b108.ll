@@ -11,9 +11,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; clamav/optimized/pe.c.ll
-; wireshark/optimized/packet-gmhdr.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {
 entry:

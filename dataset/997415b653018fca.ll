@@ -1,16 +1,6 @@
 
-; 1 occurrences:
-; ruby/optimized/string.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000045(i8 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ult i8 %1, %2
-  %4 = icmp ule i8 %0, %1
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 96 occurrences:
+; 95 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -79,7 +69,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -105,10 +94,9 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000077(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000e7(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp sle i8 %1, %2
   %4 = icmp sle i8 %0, %1
@@ -120,7 +108,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; qemu/optimized/ui_qemu-pixman.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000108(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %1, %2
   %4 = icmp ugt i8 %0, %1
@@ -132,7 +120,7 @@ entry:
 ; qemu/optimized/ui_qemu-pixman.c.ll
 ; regex-rs/optimized/183h9dropc9vohym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %1, %2
   %4 = icmp ult i8 %0, %1
@@ -144,7 +132,7 @@ entry:
 ; oiio/optimized/iffoutput.cpp.ll
 ; openjdk/optimized/awt_ImagingLib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %1, %2
   %4 = icmp eq i8 %0, %1
@@ -157,7 +145,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; regex-rs/optimized/43rm3k0zg7aeemwj.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000055(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000a5(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ule i8 %1, %2
   %4 = icmp ule i8 %0, %1
@@ -168,7 +156,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000014a(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, %0
   %4 = icmp sgt i8 %0, %1
@@ -179,7 +167,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000099(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000129(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp uge i8 %1, %2
   %4 = icmp uge i8 %0, %1

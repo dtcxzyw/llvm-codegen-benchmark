@@ -20,5 +20,5 @@ func000000000000000b:                   # @func000000000000000b
 	slli	a0, a0, 1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	slli	a0, a0, 51
+	slli	a0, a0, 32
 	ret

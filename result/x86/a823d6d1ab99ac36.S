@@ -6,8 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
-	andl	$4, %edx
-	shrl	$2, %edx
+	shrl	$10, %edx
+	andl	$1, %edx
 	andl	%esi, %eax
 	orl	%edx, %eax
 	retq

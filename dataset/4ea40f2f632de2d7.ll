@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; libwebp/optimized/quality_estimate.c.ll
 ; linux/optimized/swiotlb.ll
 ; qemu/optimized/block_vmdk.c.ll
+; ripgrep-rs/optimized/15yuur60snxgm6cb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

@@ -11,5 +11,5 @@ func0000000000000000:                   # @func0000000000000000
 	vmovdqu8	.LCPI0_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [241,241,241,241,241,241,241,241,241,241,241,241,241,241,241,241]
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddb	%xmm2, %xmm0, %xmm0
-	vpaddb	%xmm0, %xmm1, %xmm0
+	vpaddb	%xmm1, %xmm0, %xmm0
 	retq

@@ -1,6 +1,7 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; darktable/optimized/amaze.cc.ll
+; linux/optimized/dma-iommu.ll
 ; postgres/optimized/ts_selfuncs.ll
 ; postgres/optimized/tsginidx.ll
 ; postgres/optimized/tsquery.ll
@@ -23,12 +24,12 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, i32 %1) #0 {
+define ptr @func000000000000001e(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = mul nsw i64 %2, 120
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 512
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 512
   %6 = getelementptr nusw i8, ptr %5, i64 %3
   ret ptr %6
 }

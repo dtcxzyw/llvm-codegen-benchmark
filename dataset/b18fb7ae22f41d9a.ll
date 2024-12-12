@@ -1,6 +1,6 @@
 
 ; 3 occurrences:
-; linux/optimized/i915_driver.ll
+; boost/optimized/to_chars.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
@@ -27,7 +27,8 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/netlabel_kapi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i1 %0, i32 %1) #0 {

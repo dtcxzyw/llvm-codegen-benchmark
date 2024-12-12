@@ -15,9 +15,3 @@ func000000000000000e:                   # @func000000000000000e
 	addl	%ecx, %ecx
 	subl	%ecx, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	movl	%edi, %eax
-	movzwl	%si, %ecx
-	addl	%ecx, %ecx
-	subl	%ecx, %eax
-	retq

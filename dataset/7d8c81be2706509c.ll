@@ -1,4 +1,6 @@
 
+%"class.cv::Point_.3725830" = type { float, float }
+
 ; 7 occurrences:
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; linux/optimized/ah6.ll
@@ -17,15 +19,14 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
+; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauTree.c.ll
-; abc/optimized/ifDec16.c.ll
-; abc/optimized/kitDsd.c.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000010(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000050(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 2
+  %3 = icmp samesign ult i32 %2, 2
   %4 = select i1 %3, i32 0, i32 %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr i32, ptr %0, i64 %5
@@ -54,17 +55,15 @@ entry:
   ret ptr %6
 }
 
-; 39 occurrences:
+; 34 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bdcCore.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/dsc.c.ll
 ; abc/optimized/extraBddThresh.c.ll
@@ -75,7 +74,6 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/kitTruth.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; icu/optimized/stringpiece.ll
@@ -84,8 +82,6 @@ entry:
 ; icu/optimized/unistr_case.ll
 ; icu/optimized/unistr_cnv.ll
 ; luau/optimized/lvmexecute.cpp.ll
-; openblas/optimized/dorcsd.c.ll
-; openblas/optimized/dorcsd2by1.c.ll
 ; opencv/optimized/beblid.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
@@ -104,22 +100,10 @@ entry:
   ret ptr %6
 }
 
-; 16 occurrences:
-; abc/optimized/abcDec.c.ll
-; abc/optimized/abcExact.c.ll
-; abc/optimized/abcRpo.c.ll
-; abc/optimized/bmcMaj3.c.ll
-; abc/optimized/dauDsd.c.ll
-; abc/optimized/extraUtilMaj.c.ll
-; abc/optimized/giaDecs.c.ll
+; 4 occurrences:
 ; abc/optimized/giaIf.c.ll
-; abc/optimized/giaMfs.c.ll
-; abc/optimized/giaTruth.c.ll
-; abc/optimized/ifDec75.c.ll
-; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/luckyRead.c.ll
 ; verilator/optimized/V3Param.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
@@ -131,7 +115,7 @@ entry:
   ret ptr %6
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -143,11 +127,9 @@ entry:
 ; luau/optimized/lvmexecute.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/msd.cpp.ll
-; opencv/optimized/perf_pnp.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/resize.c.ll
 ; sqlite/optimized/sqlite3.ll
-; xgboost/optimized/allgather.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -158,11 +140,64 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
+; 13 occurrences:
+; abc/optimized/abcDec.c.ll
+; abc/optimized/abcExact.c.ll
+; abc/optimized/abcRpo.c.ll
+; abc/optimized/bmcMaj3.c.ll
+; abc/optimized/dauDsd.c.ll
+; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/giaDecs.c.ll
+; abc/optimized/giaMfs.c.ll
+; abc/optimized/giaTruth.c.ll
+; abc/optimized/ifDec16.c.ll
+; abc/optimized/ifDsd.c.ll
+; abc/optimized/ifMap.c.ll
+; abc/optimized/luckyRead.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000052(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 7
+  %4 = select i1 %3, i32 1, i32 %1
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
+; abc/optimized/bmcMaj3.c.ll
+; abc/optimized/dauDsd.c.ll
+; abc/optimized/ifDec75.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000053(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 7
+  %4 = select i1 %3, i32 1, i32 %1
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 5 occurrences:
+; abc/optimized/abcSymm.c.ll
+; abc/optimized/dauDsd.c.ll
+; abc/optimized/dauNonDsd.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/rsbDec6.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp slt i32 %2, 7
+  %4 = select i1 %3, i32 1, i32 %1
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
-; opencv/optimized/slice_layer.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -170,6 +205,19 @@ entry:
   %4 = select i1 %3, i32 1, i32 %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr i64, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; opencv/optimized/perf_pnp.cpp.ll
+; xgboost/optimized/allgather.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 2
+  %4 = select i1 %3, i32 4, i32 %1
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw %"class.cv::Point_.3725830", ptr %0, i64 %5
   ret ptr %6
 }
 

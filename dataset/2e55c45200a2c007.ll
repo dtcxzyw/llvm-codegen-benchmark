@@ -70,9 +70,10 @@ entry:
   ret i32 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
+; linux/optimized/fib_trie.ll
 ; linux/optimized/intel_rps.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; Function Attrs: nounwind

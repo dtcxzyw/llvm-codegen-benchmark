@@ -1,10 +1,11 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; freetype/optimized/ftlzw.c.ll
 ; openssl/optimized/libcrypto-lib-wp_dgst.ll
 ; openssl/optimized/libcrypto-shlib-wp_dgst.ll
 ; openssl/optimized/libdefault-lib-krb5kdf.ll
+; openusd/optimized/restoration.c.ll
 ; php/optimized/hash_whirlpool.ll
 ; postgres/optimized/varbit.ll
 ; redis/optimized/hyperloglog.ll

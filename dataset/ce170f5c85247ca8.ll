@@ -12,7 +12,7 @@ entry:
   ret i64 %3
 }
 
-; 50 occurrences:
+; 57 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/292e4dp0v9ceas5l.ll
@@ -63,6 +63,13 @@ entry:
 ; yalantinglibs/optimized/descriptor.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
@@ -102,8 +109,9 @@ entry:
   ret i64 %3
 }
 
-; 152 occurrences:
+; 153 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/core.c.ll
 ; cmake/optimized/fs.c.ll
 ; cmake/optimized/socks.c.ll
@@ -274,17 +282,6 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
-; luau/optimized/StringUtils.cpp.ll
-; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %0, %1
-  %3 = add i64 %2, 3
-  ret i64 %3
-}
-
 ; 6 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; hdf5/optimized/H5Rint.c.ll
@@ -297,6 +294,16 @@ define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %0, %1
   %3 = add nuw i64 %2, 4
+  ret i64 %3
+}
+
+; 1 occurrences:
+; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %0, %1
+  %3 = add i64 %2, 25
   ret i64 %3
 }
 

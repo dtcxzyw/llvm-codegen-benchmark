@@ -3,7 +3,7 @@
 ; imgui/optimized/imgui_tables.cpp.ll
 ; re2/optimized/parse.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000075(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000d5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp sgt i32 %0, %1
@@ -17,7 +17,7 @@ entry:
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000063(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000c3(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i32 %0, %1

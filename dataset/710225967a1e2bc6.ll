@@ -1,12 +1,11 @@
 
-; 33 occurrences:
+; 30 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRefactor.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/cecSolve.c.ll
@@ -19,11 +18,9 @@
 ; abc/optimized/giaEra.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/hopTruth.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/resSim.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigSynch.c.ll

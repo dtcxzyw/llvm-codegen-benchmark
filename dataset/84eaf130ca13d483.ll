@@ -1,19 +1,16 @@
 
-; 34 occurrences:
+; 30 occurrences:
 ; clamav/optimized/file.cpp.ll
 ; clamav/optimized/inotif.c.ll
 ; clamav/optimized/server-th.c.ll
 ; clamav/optimized/session.c.ll
 ; gromacs/optimized/toppush.cpp.ll
 ; libpng/optimized/png.c.ll
-; libquic/optimized/process_handle_linux.cc.ll
 ; libzmq/optimized/epoll.cpp.ll
-; linux/optimized/fec.ll
 ; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/kqid.ll
 ; linux/optimized/net.ll
 ; linux/optimized/sqpoll.ll
-; linux/optimized/trace_event_perf.ll
 ; linux/optimized/xprtsock.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
@@ -33,7 +30,6 @@
 ; postgres/optimized/pqcomm.ll
 ; ruby/optimized/date_core.ll
 ; wireshark/optimized/netscreen.c.ll
-; wolfssl/optimized/wolfio.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0) #0 {
 entry:

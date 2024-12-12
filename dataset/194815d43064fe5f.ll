@@ -23,7 +23,7 @@ define i16 @func0000000000000005(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 32
   %3 = zext i1 %2 to i16
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
@@ -37,7 +37,7 @@ define i16 @func0000000000000031(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = zext i1 %2 to i16
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
@@ -48,7 +48,7 @@ define i16 @func0000000000000029(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp sgt i16 %1, -1
   %3 = zext i1 %2 to i16
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
@@ -59,7 +59,18 @@ define i16 @func0000000000000030(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = zext i1 %2 to i16
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
+  ret i16 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/BitcodeWriter.cpp.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000011(i16 %0, i16 %1) #0 {
+entry:
+  %2 = icmp ult i16 %1, 2
+  %3 = zext i1 %2 to i16
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
@@ -70,7 +81,7 @@ define i16 @func0000000000000020(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, 1140
   %3 = zext i1 %2 to i16
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 

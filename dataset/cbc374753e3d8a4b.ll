@@ -8,7 +8,7 @@ define i32 @func000000000000001d(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = add nuw nsw i32 %2, 1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -110,16 +110,22 @@ entry:
   ret i32 %4
 }
 
-; 27 occurrences:
+; 35 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; brotli/optimized/huffman.c.ll
 ; cmake/optimized/trees.c.ll
-; eastl/optimized/EAScanfCore.cpp.ll
 ; graphviz/optimized/htmltable.c.ll
 ; gromacs/optimized/trees.c.ll
 ; icu/optimized/simpleformatter.ll
 ; icu/optimized/ufmt_cmn.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libquic/optimized/trees.c.ll
+; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/evgpeblk.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/ohci-hcd.ll
@@ -137,6 +143,8 @@ entry:
 ; wireshark/optimized/packet-openflow_v5.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/packet-xmcp.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i16 %1) #0 {
@@ -147,7 +155,7 @@ entry:
   ret i32 %4
 }
 
-; 48 occurrences:
+; 50 occurrences:
 ; abc/optimized/trees.c.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/deftree.ll
@@ -157,6 +165,8 @@ entry:
 ; linux/optimized/skbuff.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/tx.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_draw_label.ll
 ; postgres/optimized/indexam.ll
 ; postgres/optimized/nbtsplitloc.ll
 ; slurm/optimized/config_info.ll
@@ -377,7 +387,7 @@ define i32 @func000000000000000e(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = add nuw nsw i32 %2, 2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -395,7 +405,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; eastl/optimized/EAScanfCore.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; icu/optimized/messagepattern.ll
 ; linux/optimized/icl_dsi.ll

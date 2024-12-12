@@ -1,27 +1,20 @@
 
-%"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3222580" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3222581", %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.1.3222582" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3222581" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3222583" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3222583" = type { i32 }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.1.3222582" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3222584" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3222584" = type { i32 }
-
 ; 1 occurrences:
 ; ipopt/optimized/IpPiecewisePenalty.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000148(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -24
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
-; 174 occurrences:
-; abseil-cpp/optimized/container_test.cc.ll
+; 173 occurrences:
 ; assimp/optimized/LWOAnimation.cpp.ll
+; boost/optimized/calculate_point_order.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
-; cvc5/optimized/word.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
@@ -193,50 +186,60 @@ entry:
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000144(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -3
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; assimp/optimized/LWOAnimation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -40
-  %6 = icmp ne ptr %5, %0
-  ret i1 %6
-}
-
-; 3 occurrences:
-; opencv/optimized/gemm_layer.cpp.ll
-; openusd/optimized/textParserHelpers.cpp.ll
-; quantlib/optimized/tcopulapolicy.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 -8
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
-; openusd/optimized/pathExpressionEval.cpp.ll
+; quantlib/optimized/tcopulapolicy.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nuw i64 %1, %2
-  %4 = getelementptr nusw %"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3222580", ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
-  %6 = icmp eq ptr %5, %0
+  %3 = sub i64 %1, %2
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -8
+  %6 = icmp eq ptr %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openusd/optimized/textParserHelpers.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c1(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -4
+  %6 = icmp eq ptr %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/container_test.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c4(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -4
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -244,24 +247,36 @@ entry:
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a5(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000145(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -32
-  %6 = icmp uge ptr %5, %0
+  %6 = icmp ule ptr %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/gemm_layer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -8
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002ac(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000054c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -1
-  %6 = icmp ne ptr %5, %0
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 

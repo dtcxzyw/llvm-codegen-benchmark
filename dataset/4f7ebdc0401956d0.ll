@@ -29,7 +29,7 @@ entry:
 ; abc/optimized/saigSynch.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 30
   %3 = icmp ult i32 %0, 15
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/xsatSolver.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = icmp slt i32 %0, 4
@@ -65,7 +65,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-h224.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 50
   %3 = icmp eq i32 %0, 0
@@ -88,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; lua/optimized/ldo.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = icmp sgt i32 %0, 333332
@@ -99,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dlahqr.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 30
   %3 = icmp slt i32 %0, 10

@@ -15,7 +15,8 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/info.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; linux/optimized/uhci-hcd.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
@@ -23,11 +24,23 @@ entry:
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = icmp eq i32 %0, 0
   %4 = select i1 %3, i32 %2, i32 0
+  ret i32 %4
+}
+
+; 2 occurrences:
+; libdeflate/optimized/deflate_compress.c.ll
+; openusd/optimized/openexr-c.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = icmp ult i32 %0, 72
+  %4 = select i1 %3, i32 %2, i32 7
   ret i32 %4
 }
 

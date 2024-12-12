@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	1                               # 0x1
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vpsllvd	%xmm1, %xmm2, %xmm1
@@ -9,7 +9,7 @@ func0000000000000026:                   # @func0000000000000026
 	retq
 .LCPI1_0:
 	.long	4                               # 0x4
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [4,4,4,4]
 	vpsllvd	%xmm1, %xmm2, %xmm1
@@ -18,7 +18,7 @@ func00000000000000c6:                   # @func00000000000000c6
 	retq
 .LCPI2_0:
 	.long	1                               # 0x1
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vpsllvd	%xmm1, %xmm2, %xmm1
@@ -28,7 +28,7 @@ func0000000000000024:                   # @func0000000000000024
 	retq
 .LCPI3_0:
 	.long	1                               # 0x1
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI3_0(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vpsllvd	%xmm1, %xmm2, %xmm1

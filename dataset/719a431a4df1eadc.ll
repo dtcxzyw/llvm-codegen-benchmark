@@ -1,18 +1,15 @@
 
-%struct.ml_effect_state.3343863 = type { ptr, i64, i32, i64, i64, i64 }
+%struct.ml_effect_state.3532716 = type { ptr, i64, i32, i64, i64, i64 }
 
-; 42 occurrences:
+; 38 occurrences:
 ; abc/optimized/ivyCutTrav.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; clamav/optimized/unarj.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; double_conversion/optimized/bignum.cc.ll
-; eastl/optimized/EAScanfCore.cpp.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; libwebp/optimized/enc_sse2.c.ll
-; libwebp/optimized/enc_sse41.c.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -42,13 +39,25 @@
 ; nuklear/optimized/unity.c.ll
 ; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/decodemv.c.ll
-; php/optimized/hash_haval.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = getelementptr nusw [128 x i32], ptr %0, i64 0, i64 %2
+  ret ptr %3
+}
+
+; 4 occurrences:
+; eastl/optimized/EAScanfCore.cpp.ll
+; libwebp/optimized/enc_sse2.c.ll
+; libwebp/optimized/enc_sse41.c.ll
+; php/optimized/hash_haval.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
+entry:
+  %2 = sext i16 %1 to i64
+  %3 = getelementptr nusw nuw [8 x i32], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
@@ -63,7 +72,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr [16 x %struct.ml_effect_state.3343863], ptr %0, i64 0, i64 %2
+  %3 = getelementptr [16 x %struct.ml_effect_state.3532716], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 

@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 60 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
@@ -7,6 +7,7 @@
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; crow/optimized/example_session.cpp.ll
@@ -60,7 +61,7 @@
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = urem i32 %1, %3
@@ -96,6 +97,23 @@ entry:
   %3 = add i32 %2, 1
   %4 = urem i32 %1, %3
   %5 = icmp ugt i32 %4, %0
+  ret i1 %5
+}
+
+; 7 occurrences:
+; openspiel/optimized/colored_trails.cc.ll
+; openspiel/optimized/fsicfr.cc.ll
+; openspiel/optimized/random_uci_bot.cc.ll
+; openspiel/optimized/tabular_q_learning.cc.ll
+; openspiel/optimized/tabular_q_learning_test.cc.ll
+; openspiel/optimized/tabular_sarsa.cc.ll
+; openspiel/optimized/tabular_sarsa_test.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw i32 %2, 1
+  %4 = urem i32 %1, %3
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 

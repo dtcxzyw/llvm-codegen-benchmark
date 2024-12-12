@@ -1,17 +1,17 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	addq	%rdi, %rax
 	setb	%al
 	retq
-func00000000000001c8:                   # @func00000000000001c8
+func0000000000000388:                   # @func0000000000000388
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	addq	%rax, %rdi
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	addq	%rax, %rdi
@@ -28,6 +28,6 @@ func0000000000000009:                   # @func0000000000000009
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	notq	%rax
-	cmpq	%rdi, %rax
-	setae	%al
+	cmpq	%rax, %rdi
+	setbe	%al
 	retq

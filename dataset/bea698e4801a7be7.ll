@@ -10,7 +10,7 @@
 define i1 @func0000000000000015(i1 %0, float %1, i32 %2) #0 {
 entry:
   %3 = uitofp nneg i32 %2 to float
-  %4 = fcmp ult float %3, %1
+  %4 = fcmp ugt float %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -26,7 +26,7 @@ entry:
 define i1 @func0000000000000013(i1 %0, float %1, i32 %2) #0 {
 entry:
   %3 = uitofp nneg i32 %2 to float
-  %4 = fcmp ugt float %3, %1
+  %4 = fcmp ult float %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }

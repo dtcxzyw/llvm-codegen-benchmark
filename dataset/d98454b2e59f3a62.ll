@@ -28,11 +28,11 @@
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
 ; qemu/optimized/hw_char_virtio-serial-bus.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000003a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 %2, 5
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = icmp eq i32 %4, -1
   ret i1 %5
 }
@@ -44,7 +44,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-set.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000121(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl i32 %2, 6
@@ -56,11 +56,11 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/X11Renderer.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i64 %1) #0 {
+define i1 @func000000000000014a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nsw i32 %2, 1
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = icmp sgt i32 %4, -1
   ret i1 %5
 }
@@ -82,7 +82,7 @@ entry:
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001dc(i32 %0, i64 %1) #0 {
+define i1 @func00000000000003ac(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 %2, 6
@@ -94,11 +94,11 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/hbc-attribute.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000e8(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = icmp ugt i32 %4, -16777217
   ret i1 %5
 }
@@ -106,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/hbc-attribute.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000228(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 %2, 24
@@ -118,7 +118,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d6(i32 %0, i64 %1) #0 {
+define i1 @func00000000000003a6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 %2, 6

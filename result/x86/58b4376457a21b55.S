@@ -11,6 +11,10 @@ func000000000000001f:                   # @func000000000000001f
 	leal	(%rdi,%rdi,2), %eax
 	leal	12(,%rax,4), %eax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	imull	$88, %edi, %eax
+	addl	$-264, %eax                     # imm = 0xFEF8
+	retq
 func000000000000000a:                   # @func000000000000000a
 	leal	(%rdi,%rdi,2), %eax
 	leal	-6(%rax,%rax), %eax
@@ -27,8 +31,5 @@ func0000000000000019:                   # @func0000000000000019
 	leal	24(,%rax,4), %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	leal	-3(%rdi,%rdi,2), %eax
-	retq
-func0000000000000007:                   # @func0000000000000007
 	leal	-3(%rdi,%rdi,2), %eax
 	retq

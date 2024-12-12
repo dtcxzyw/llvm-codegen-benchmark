@@ -1,8 +1,8 @@
 
-%"class.mitsuba::filesystem::path.2488018" = type <{ %"class.std::__1::vector.2487981", i8, [7 x i8] }>
-%"class.std::__1::vector.2487981" = type { ptr, ptr, %"class.std::__1::__compressed_pair.55.2487982" }
-%"class.std::__1::__compressed_pair.55.2487982" = type { %"struct.std::__1::__compressed_pair_elem.56.2487983" }
-%"struct.std::__1::__compressed_pair_elem.56.2487983" = type { ptr }
+%"class.mitsuba::filesystem::path.2603450" = type <{ %"class.std::__1::vector.2603413", i8, [7 x i8] }>
+%"class.std::__1::vector.2603413" = type { ptr, ptr, %"class.std::__1::__compressed_pair.55.2603414" }
+%"class.std::__1::__compressed_pair.55.2603414" = type { %"struct.std::__1::__compressed_pair_elem.56.2603415" }
+%"struct.std::__1::__compressed_pair_elem.56.2603415" = type { ptr }
 
 ; 3 occurrences:
 ; linux/optimized/nf_conntrack_sip.ll
@@ -19,31 +19,14 @@ entry:
   ret ptr %7
 }
 
-; 48 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/reflection_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; arrow/optimized/ree_util.cc.ll
-; assimp/optimized/AMFImporter.cpp.ll
-; assimp/optimized/ColladaParser.cpp.ll
-; assimp/optimized/D3MFImporter.cpp.ll
-; assimp/optimized/D3MFOpcPackage.cpp.ll
-; assimp/optimized/IRRLoader.cpp.ll
-; assimp/optimized/IRRMeshLoader.cpp.ll
-; assimp/optimized/OgreImporter.cpp.ll
-; assimp/optimized/OgreXmlSerializer.cpp.ll
-; assimp/optimized/X3DImporter.cpp.ll
-; assimp/optimized/XGLLoader.cpp.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; folly/optimized/IOBufQueue.cpp.ll
 ; gromacs/optimized/listed_forces.cpp.ll
 ; gromacs/optimized/msd.cpp.ll
-; hermes/optimized/DependencyExtractor.cpp.ll
-; hermes/optimized/JSLibInternal.cpp.ll
-; hermes/optimized/JSRegExp.cpp.ll
-; hermes/optimized/RegexParser.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; lightgbm/optimized/gbdt_model_text.cpp.ll
 ; mitsuba3/optimized/argparser.cpp.ll
@@ -52,19 +35,13 @@ entry:
 ; mitsuba3/optimized/xml.cpp.ll
 ; ocio/optimized/CTFReaderHelper.cpp.ll
 ; ocio/optimized/XMLReaderHelper.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; oiio/optimized/xmp.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; protobuf/optimized/relative_path.cc.ll
 ; proxygen/optimized/ZstdStreamCompressor.cpp.ll
-; pugixml/optimized/pugixml.cpp.ll
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; zstd/optimized/zstd_ldm.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
@@ -72,14 +49,14 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = getelementptr nusw %"class.mitsuba::filesystem::path.2488018", ptr %0, i64 %1
+  %4 = getelementptr nusw %"class.mitsuba::filesystem::path.2603450", ptr %0, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %3, %5
   %7 = getelementptr nusw i8, ptr %4, i64 %6
   ret ptr %7
 }
 
-; 412 occurrences:
+; 408 occurrences:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; darktable/optimized/Camera.cpp.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
@@ -370,13 +347,10 @@ entry:
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
@@ -442,7 +416,6 @@ entry:
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
-; node/optimized/libnode.Protocol.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; ozz-animation/optimized/import2ozz.cc.ll
 ; ozz-animation/optimized/import2ozz_anim.cc.ll
@@ -497,6 +470,49 @@ define ptr @func0000000000000008(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %1
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %3, %5
+  %7 = getelementptr i8, ptr %4, i64 %6
+  ret ptr %7
+}
+
+; 16 occurrences:
+; assimp/optimized/AMFImporter.cpp.ll
+; assimp/optimized/ColladaParser.cpp.ll
+; assimp/optimized/D3MFImporter.cpp.ll
+; assimp/optimized/D3MFOpcPackage.cpp.ll
+; assimp/optimized/IRRLoader.cpp.ll
+; assimp/optimized/IRRMeshLoader.cpp.ll
+; assimp/optimized/OgreImporter.cpp.ll
+; assimp/optimized/OgreXmlSerializer.cpp.ll
+; assimp/optimized/X3DImporter.cpp.ll
+; assimp/optimized/XGLLoader.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; oiio/optimized/xmp.cpp.ll
+; pugixml/optimized/pugixml.cpp.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %3, %5
+  %7 = getelementptr nusw i8, ptr %4, i64 %6
+  ret ptr %7
+}
+
+; 3 occurrences:
+; boost/optimized/code_conversion.ll
+; boost/optimized/main.ll
+; node/optimized/libnode.Protocol.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %3, %5
   %7 = getelementptr i8, ptr %4, i64 %6

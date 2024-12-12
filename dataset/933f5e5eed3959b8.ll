@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas_bbdpre.c.ll
 ; casadi/optimized/idas_direct.c.ll
@@ -8,6 +8,7 @@
 ; proj/optimized/imw_p.cpp.ll
 ; proj/optimized/nicol.cpp.ll
 ; quantlib/optimized/bivariatenormaldistribution.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; sundials/optimized/arkode.c.ll
 ; sundials/optimized/cvode.c.ll
 ; sundials/optimized/cvodes.c.ll
@@ -35,7 +36,7 @@ entry:
   %3 = fneg double %1
   %4 = fcmp ogt double %2, 0.000000e+00
   %5 = select i1 %4, double %3, double %1
-  %6 = fadd double %5, %0
+  %6 = fadd double %0, %5
   ret double %6
 }
 

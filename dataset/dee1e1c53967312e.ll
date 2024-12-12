@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 59 occurrences:
 ; abc/optimized/sswRarity.c.ll
 ; clamav/optimized/sha1.cpp.ll
 ; cmake/optimized/md4.c.ll
@@ -57,6 +57,8 @@
 ; z3/optimized/occurs.cpp.ll
 ; z3/optimized/reduce_args_simplifier.cpp.ll
 ; z3/optimized/reduce_args_tactic.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

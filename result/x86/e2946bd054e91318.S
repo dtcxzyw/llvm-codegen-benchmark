@@ -17,12 +17,6 @@ func000000000000015a:                   # @func000000000000015a
 	subq	%rcx, %rax
 	subq	%rsi, %rax
 	retq
-func0000000000000150:                   # @func0000000000000150
-	movq	%rdi, %rax
-	movl	%edx, %ecx
-	subq	%rcx, %rax
-	subq	%rsi, %rax
-	retq
 func0000000000000050:                   # @func0000000000000050
 	movq	%rdi, %rax
 	movl	%edx, %ecx

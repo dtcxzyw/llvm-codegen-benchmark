@@ -14,7 +14,7 @@
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ogt double %4, 0.000000e+00
   ret i1 %5
 }
@@ -25,7 +25,7 @@ entry:
 define i1 @func0000000000000007(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp une double %4, 0.000000e+00
   ret i1 %5
 }
@@ -92,7 +92,7 @@ entry:
 define i1 @func000000000000000b(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ule double %4, 9.210000e+00
   ret i1 %5
 }

@@ -11,12 +11,13 @@
 define i1 @func0000000000000007(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fcmp une double %3, %1
-  %5 = and i1 %4, %0
+  %4 = fcmp une double %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/within.ll
 ; graphviz/optimized/position.c.ll
 ; graphviz/optimized/rank.c.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
@@ -32,31 +33,33 @@ entry:
 define i1 @func0000000000000002(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ogt double %3, %1
-  %5 = and i1 %4, %0
+  %4 = fcmp olt double %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/within.ll
 ; openjdk/optimized/MaskFill.ll
 ; postgres/optimized/nodeHash.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fcmp olt double %3, %1
+  %4 = fcmp ogt double %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/within.ll
 ; openjdk/optimized/ScaledBlit.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ole double %3, %1
-  %5 = and i1 %4, %0
+  %4 = fcmp oge double %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -79,8 +82,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fcmp oeq double %3, %1
-  %5 = and i1 %4, %0
+  %4 = fcmp oeq double %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -90,8 +93,19 @@ entry:
 define i1 @func000000000000000d(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ule double %3, %1
-  %5 = and i1 %4, %0
+  %4 = fcmp uge double %1, %3
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/within.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i1 %0, double %1, i32 %2) #0 {
+entry:
+  %3 = sitofp i32 %2 to double
+  %4 = fcmp ole double %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -101,8 +115,8 @@ entry:
 define i1 @func0000000000000003(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ugt double %3, %1
-  %5 = and i1 %4, %0
+  %4 = fcmp ult double %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

@@ -1,10 +1,13 @@
 
-; 18 occurrences:
+; 21 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/drm_dsc_helper.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_image_decoder.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nori/optimized/nanovg.c.ll
@@ -27,7 +30,7 @@ entry:
   ret i32 %4
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; c3c/optimized/types.c.ll
 ; cmake/optimized/fse_compress.c.ll
@@ -43,7 +46,6 @@ entry:
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/drm_gem_shmem_helper.ll
 ; linux/optimized/efi.ll
-; linux/optimized/eht.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/mlme.ll
@@ -52,6 +54,8 @@ entry:
 ; linux/optimized/vgacon.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/Codec.cpp.ll

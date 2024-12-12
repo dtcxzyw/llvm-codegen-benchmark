@@ -22,7 +22,7 @@ entry:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000018f(i32 %0, i32 %1) #0 {
+define i64 @func000000000000030f(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, %0
   %3 = icmp eq i32 %0, 0
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/reshape_layer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000008a(i32 %0, i32 %1) #0 {
+define i64 @func000000000000010a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, %0
   %3 = icmp eq i32 %0, -1

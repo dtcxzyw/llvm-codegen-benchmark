@@ -30,12 +30,12 @@
 ; velox/optimized/Re2Functions.cpp.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000023(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 13
   %4 = select i1 %3, ptr %0, ptr %1
   %5 = zext i32 %2 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

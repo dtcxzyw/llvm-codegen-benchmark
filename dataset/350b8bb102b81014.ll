@@ -1,8 +1,10 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; entt/optimized/meta_context.cpp.ll
 ; entt/optimized/meta_data.cpp.ll
 ; entt/optimized/meta_func.cpp.ll
+; freetype/optimized/cff.c.ll
+; freetype/optimized/type1cid.c.ll
 ; icu/optimized/calendar.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll

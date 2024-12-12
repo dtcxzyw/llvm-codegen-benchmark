@@ -18,48 +18,14 @@ entry:
   ret i32 %4
 }
 
-; 23 occurrences:
-; hermes/optimized/CodeBlock.cpp.ll
-; icu/optimized/localematcher.ll
-; icu/optimized/ustr.ll
-; imgui/optimized/imgui_tables.cpp.ll
-; linux/optimized/ht.ll
-; llvm/optimized/BitcodeWriter.cpp.ll
-; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/CGClass.cpp.ll
-; llvm/optimized/Globals.cpp.ll
-; lodepng/optimized/lodepng.cpp.ll
-; nlohmann_json/optimized/unit-conversions.cpp.ll
-; opencv/optimized/rmat.cpp.ll
-; postgres/optimized/brin_xlog.ll
-; postgres/optimized/heapam.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; softposit-rs/optimized/xadcarspawrhwb8.ll
-; wireshark/optimized/packet-ansi_683.c.ll
-; wireshark/optimized/packet-dof.c.ll
-; wireshark/optimized/packet-rtp-ed137.c.ll
-; wolfssl/optimized/ecc.c.ll
-; zxing/optimized/MCDecoder.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 15
-  %3 = add nuw nsw i32 %2, 1
-  %4 = select i1 %0, i32 0, i32 %3
-  ret i32 %4
-}
-
-; 138 occurrences:
-; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/lpkAbcUtil.c.ll
+; 137 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cpython/optimized/floatobject.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
@@ -89,7 +55,6 @@ entry:
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -187,6 +152,7 @@ entry:
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
 ; qemu/optimized/disas_riscv.c.ll
+; redis/optimized/fpconv_dtoa.ll
 ; spike/optimized/kslra16_u.ll
 ; spike/optimized/kslra8_u.ll
 ; xgboost/optimized/charconv.cc.ll
@@ -196,6 +162,36 @@ entry:
   %2 = and i32 %1, 15
   %3 = add nsw i32 %2, -3
   %4 = select i1 %0, i32 13, i32 %3
+  ret i32 %4
+}
+
+; 20 occurrences:
+; hermes/optimized/CodeBlock.cpp.ll
+; icu/optimized/localematcher.ll
+; icu/optimized/ustr.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/CGClass.cpp.ll
+; llvm/optimized/Globals.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
+; nlohmann_json/optimized/unit-conversions.cpp.ll
+; opencv/optimized/rmat.cpp.ll
+; postgres/optimized/heapam.ll
+; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; softposit-rs/optimized/xadcarspawrhwb8.ll
+; wireshark/optimized/packet-ansi_683.c.ll
+; wireshark/optimized/packet-dof.c.ll
+; wireshark/optimized/packet-rtp-ed137.c.ll
+; wolfssl/optimized/ecc.c.ll
+; zxing/optimized/MCDecoder.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 3
+  %3 = add nuw nsw i32 %2, 1
+  %4 = select i1 %0, i32 0, i32 %3
   ret i32 %4
 }
 

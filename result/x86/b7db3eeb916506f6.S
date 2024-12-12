@@ -8,11 +8,6 @@ func0000000000000007:                   # @func0000000000000007
 	shrl	$6, %eax
 	incl	%eax
 	retq
-func00000000000000d7:                   # @func00000000000000d7
-	leal	-7(%rdi), %eax
-	shrl	$3, %eax
-	incl	%eax
-	retq
 func0000000000000017:                   # @func0000000000000017
 	leal	-2(%rdi), %eax
 	shrl	%eax

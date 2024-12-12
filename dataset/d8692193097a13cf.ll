@@ -234,7 +234,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0) #0 {
+define i32 @func00000000000000a6(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = sub nsw i32 1, %0
@@ -243,14 +243,15 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000074(i32 %0) #0 {
+define i32 @func00000000000000f4(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -127
   %2 = sub nuw nsw i32 127, %0
-  %3 = icmp ult i32 %0, 127
+  %3 = icmp samesign ult i32 %0, 127
   %4 = select i1 %3, i32 %2, i32 %1
   ret i32 %4
 }
@@ -259,11 +260,11 @@ entry:
 ; linux/optimized/intel_dpll_mgr.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000054(i32 %0) #0 {
+define i32 @func00000000000000b4(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -160
   %2 = sub nsw i32 160, %0
-  %3 = icmp ult i32 %0, 161
+  %3 = icmp samesign ult i32 %0, 161
   %4 = select i1 %3, i32 %2, i32 %1
   ret i32 %4
 }
@@ -272,7 +273,7 @@ entry:
 ; cmake/optimized/entropy_common.c.ll
 ; zstd/optimized/entropy_common.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000004a(i32 %0) #0 {
+define i32 @func000000000000008a(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = sub i32 1, %0
@@ -284,7 +285,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000064(i32 %0) #0 {
+define i32 @func00000000000000c4(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1082130432
   %2 = sub nuw i32 -1082130432, %0
@@ -296,7 +297,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0) #0 {
+define i32 @func0000000000000044(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1082130432
   %2 = sub nuw i32 -1082130432, %0

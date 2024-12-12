@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 96 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -9,6 +9,19 @@
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/barrier.ll
+; boost/optimized/condition_variable.ll
+; boost/optimized/context.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/mutex.ll
+; boost/optimized/partition.ll
+; boost/optimized/process_cpu_clocks.ll
+; boost/optimized/recursive_mutex.ll
+; boost/optimized/recursive_timed_mutex.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/timed_mutex.ll
+; boost/optimized/work_stealing.ll
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/iso9660.c.ll
 ; cmake/optimized/linux-core.c.ll
@@ -26,10 +39,10 @@
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/lstrlib.cpp.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/merge.dispatch.cpp.ll
 ; opencv/optimized/split.dispatch.cpp.ll

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	1                               # 0x1
-func0000000000000308:                   # @func0000000000000308
+func0000000000000608:                   # @func0000000000000608
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm2, %xmm3, %xmm2
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
@@ -12,7 +12,7 @@ func0000000000000308:                   # @func0000000000000308
 	retq
 .LCPI1_0:
 	.long	4294967243                      # 0xffffffcb
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	vpbroadcastd	.LCPI1_0(%rip), %xmm3   # xmm3 = [4294967243,4294967243,4294967243,4294967243]
 	vpsubd	%xmm2, %xmm3, %xmm2
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero

@@ -12,7 +12,7 @@
 ; z3/optimized/tab_context.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = lshr i32 %2, 7
@@ -41,7 +41,6 @@ entry:
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/NewGVN.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/c1_LinearScan.ll
@@ -52,6 +51,7 @@ entry:
 ; z3/optimized/sat_binspr.cpp.ll
 ; z3/optimized/sat_clause.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
@@ -61,30 +61,29 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
-; openjdk/optimized/lcm.ll
-; openjdk/optimized/matcher.ll
 ; stockfish/optimized/tbprobe.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000d8(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %2, 3
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ugt i32 %3, %0
   ret i1 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; postgres/optimized/slru.ll
 ; stockfish/optimized/tbprobe.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %2, 3
@@ -92,15 +91,14 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; openjdk/optimized/lcm.ll
 ; openjdk/optimized/matcher.ll
 ; php/optimized/ir_sccp.ll
-; stockfish/optimized/tbprobe.ll
 ; yosys/optimized/calc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000c4(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %2, 5
@@ -129,13 +127,20 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
-; abc/optimized/abcIf.c.ll
-; abc/optimized/ifCut.c.ll
-; abc/optimized/ifMap.c.ll
+; 2 occurrences:
+; openjdk/optimized/lcm.ll
+; openjdk/optimized/matcher.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c8(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = lshr i32 %2, 6
+  %4 = icmp ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 4 occurrences:
 ; c3c/optimized/diagnostics.c.ll
-; cvc5/optimized/Solver.cc.ll
-; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; luajit/optimized/lj_buf.ll
 ; luajit/optimized/lj_buf_dyn.ll
 ; z3/optimized/spacer_context.cpp.ll
@@ -145,6 +150,21 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 24
   %4 = icmp ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 5 occurrences:
+; abc/optimized/abcIf.c.ll
+; abc/optimized/ifCut.c.ll
+; abc/optimized/ifMap.c.ll
+; cvc5/optimized/Solver.cc.ll
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = lshr i32 %2, 24
+  %4 = icmp samesign ugt i32 %3, %0
   ret i1 %4
 }
 
@@ -174,40 +194,44 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 9 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/llb1Hint.c.ll
 ; cvc5/optimized/SimpSolver.cc.ll
 ; freetype/optimized/truetype.c.ll
 ; icu/optimized/collationcompare.ll
-; linux/optimized/perfmon.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
-; z3/optimized/dl_finite_product_relation.cpp.ll
-; z3/optimized/dl_sparse_table.cpp.ll
-; z3/optimized/intblast_solver.cpp.ll
-; z3/optimized/sat_gc.cpp.ll
-; z3/optimized/sat_proof_trim.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 6
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr exact i32 %2, 1
   %4 = icmp slt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; stockfish/optimized/tbprobe.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d4(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = lshr i32 %2, 3
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 
@@ -223,6 +247,23 @@ entry:
   ret i1 %4
 }
 
+; 7 occurrences:
+; linux/optimized/perfmon.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; z3/optimized/dl_finite_product_relation.cpp.ll
+; z3/optimized/dl_sparse_table.cpp.ll
+; z3/optimized/intblast_solver.cpp.ll
+; z3/optimized/sat_gc.cpp.ll
+; z3/optimized/sat_proof_trim.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = lshr i32 %2, 1
+  %4 = icmp ult i32 %3, %0
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
@@ -235,10 +276,22 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = lshr exact i32 %2, 8
+  %4 = icmp eq i32 %3, %0
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; z3/optimized/opt_preprocess.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = lshr exact i32 %2, 5
@@ -250,7 +303,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = lshr i32 %2, 1
@@ -262,7 +315,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000c6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %2, 2
@@ -273,7 +326,7 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = lshr i32 %2, 9

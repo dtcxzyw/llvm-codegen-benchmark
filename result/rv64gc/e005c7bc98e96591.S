@@ -70,10 +70,6 @@ func000000000000001f:                   # @func000000000000001f
 	slli	a0, a0, 1
 	addw	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
-	slli	a0, a0, 1
-	addw	a0, a0, a1
-	ret
 func0000000000000025:                   # @func0000000000000025
 	slli	a0, a0, 3
 	addw	a0, a0, a1

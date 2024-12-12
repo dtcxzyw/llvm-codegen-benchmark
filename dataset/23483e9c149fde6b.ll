@@ -1,5 +1,5 @@
 
-; 177 occurrences:
+; 178 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -90,10 +90,10 @@
 ; libwebp/optimized/cwebp.c.ll
 ; libwebp/optimized/sharpyuv_csp.c.ll
 ; libwebp/optimized/sharpyuv_gamma.c.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -114,6 +114,7 @@
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
 ; ocio/optimized/FileFormatTruelight.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; oiio/optimized/imagebufalgo_draw.cpp.ll
@@ -185,7 +186,7 @@ entry:
   ret float %3
 }
 
-; 85 occurrences:
+; 90 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
 ; assimp/optimized/JoinVerticesProcess.cpp.ll
@@ -271,6 +272,11 @@ entry:
 ; xgboost/optimized/cpu_treeshap.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; z3/optimized/dl_mk_simple_joins.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5lgahps99tv0rsaolw3x59ow2.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:

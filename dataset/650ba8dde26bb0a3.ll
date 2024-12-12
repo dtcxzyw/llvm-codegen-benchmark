@@ -81,7 +81,7 @@ entry:
   ret i64 %6
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; hermes/optimized/RegexParser.cpp.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -92,7 +92,6 @@ entry:
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
-; llvm/optimized/SplitModule.cpp.ll
 ; llvm/optimized/TextDiagnostic.cpp.ll
 ; llvm/optimized/X86WinCOFFTargetStreamer.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll

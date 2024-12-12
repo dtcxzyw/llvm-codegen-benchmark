@@ -10,14 +10,25 @@ func000000000000001a:                   # @func000000000000001a
 	subq	%rax, %rdi
 	leaq	-16(%rdi), %rax
 	retq
+func000000000000001b:                   # @func000000000000001b
+	movslq	%esi, %rax
+	subq	%rax, %rdi
+	leaq	8(%rdi), %rax
+	retq
 func0000000000000018:                   # @func0000000000000018
 	movslq	%esi, %rax
 	shlq	$2, %rax
 	subq	%rax, %rdi
 	leaq	12(%rdi), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func000000000000001f:                   # @func000000000000001f
 	movslq	%esi, %rax
 	subq	%rax, %rdi
-	leaq	8(%rdi), %rax
+	leaq	1(%rdi), %rax
+	retq
+func000000000000001e:                   # @func000000000000001e
+	movslq	%esi, %rax
+	shlq	$4, %rax
+	subq	%rax, %rdi
+	leaq	-16(%rdi), %rax
 	retq

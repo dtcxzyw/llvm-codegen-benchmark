@@ -5,7 +5,7 @@
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000198(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000318(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, %0
   %3 = icmp ne i32 %0, 0
@@ -20,7 +20,7 @@ entry:
 ; ncnn/optimized/gridsample_x86_avx512.cpp.ll
 ; ncnn/optimized/gridsample_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000154(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000294(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, %0
   %3 = icmp sgt i32 %0, -1
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d8(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000198(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, %0
   %3 = icmp ne i32 %0, 1000000000
@@ -46,7 +46,7 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000094(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000114(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, %0
   %3 = icmp sgt i32 %0, -1

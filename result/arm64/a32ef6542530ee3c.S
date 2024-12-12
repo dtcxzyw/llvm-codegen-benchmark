@@ -1,88 +1,32 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	ldp	q17, q16, [sp]
-	fmul	v0.4s, v0.4s, v4.4s
-	ldp	q19, q18, [sp, #32]
-	fmul	v1.4s, v1.4s, v5.4s
-	fmul	v2.4s, v2.4s, v6.4s
-	fmul	v3.4s, v3.4s, v7.4s
-	fmul	v17.4s, v17.4s, v4.4s
-	fmul	v16.4s, v16.4s, v5.4s
-	fmul	v19.4s, v19.4s, v6.4s
-	fmul	v18.4s, v18.4s, v7.4s
-	fcmgt	v4.4s, v17.4s, v0.4s
-	fcmgt	v7.4s, v16.4s, v1.4s
-	fcmgt	v5.4s, v18.4s, v3.4s
-	fcmgt	v6.4s, v19.4s, v2.4s
-	bif	v0.16b, v17.16b, v4.16b
-	bif	v1.16b, v16.16b, v7.16b
-	bif	v2.16b, v19.16b, v6.16b
-	bif	v3.16b, v18.16b, v5.16b
+	fmul	s2, s2, s1
+	fmul	s0, s0, s1
+	fcmp	s0, s2
+	fcsel	s0, s0, s2, mi
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ldp	q17, q16, [sp]
-	fmul	v0.4s, v0.4s, v4.4s
-	ldp	q19, q18, [sp, #32]
-	fmul	v1.4s, v1.4s, v5.4s
-	fmul	v2.4s, v2.4s, v6.4s
-	fmul	v3.4s, v3.4s, v7.4s
-	fmul	v17.4s, v17.4s, v4.4s
-	fmul	v16.4s, v16.4s, v5.4s
-	fmul	v19.4s, v19.4s, v6.4s
-	fmul	v18.4s, v18.4s, v7.4s
-	fcmgt	v4.4s, v0.4s, v17.4s
-	fcmgt	v7.4s, v1.4s, v16.4s
-	fcmgt	v5.4s, v3.4s, v18.4s
-	fcmgt	v6.4s, v2.4s, v19.4s
-	bif	v0.16b, v17.16b, v4.16b
-	bif	v1.16b, v16.16b, v7.16b
-	bif	v2.16b, v19.16b, v6.16b
-	bif	v3.16b, v18.16b, v5.16b
+	fmul	s2, s2, s1
+	fmul	s0, s0, s1
+	fcmp	s0, s2
+	fcsel	s0, s0, s2, gt
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	ldp	q17, q16, [sp]
-	fmul	v0.4s, v0.4s, v4.4s
-	ldp	q19, q18, [sp, #32]
-	fmul	v1.4s, v1.4s, v5.4s
-	fmul	v2.4s, v2.4s, v6.4s
-	fmul	v3.4s, v3.4s, v7.4s
-	fmul	v17.4s, v4.4s, v17.4s
-	fmul	v16.4s, v5.4s, v16.4s
-	fmul	v19.4s, v6.4s, v19.4s
-	fmul	v18.4s, v7.4s, v18.4s
-	fcmge	v4.4s, v17.4s, v0.4s
-	fcmge	v7.4s, v16.4s, v1.4s
-	fcmge	v5.4s, v18.4s, v3.4s
-	fcmge	v6.4s, v19.4s, v2.4s
-	bif	v0.16b, v17.16b, v4.16b
-	bif	v1.16b, v16.16b, v7.16b
-	bif	v2.16b, v19.16b, v6.16b
-	bif	v3.16b, v18.16b, v5.16b
+	fmul	s2, s1, s2
+	fmul	s0, s0, s1
+	fcmp	s0, s2
+	fcsel	s0, s0, s2, ls
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	ldp	q17, q16, [sp]
-	fmul	v0.4s, v0.4s, v4.4s
-	ldp	q19, q18, [sp, #32]
-	fmul	v1.4s, v1.4s, v5.4s
-	fmul	v2.4s, v2.4s, v6.4s
-	fmul	v3.4s, v3.4s, v7.4s
-	fmul	v17.4s, v4.4s, v17.4s
-	fmul	v16.4s, v5.4s, v16.4s
-	fmul	v19.4s, v6.4s, v19.4s
-	fmul	v18.4s, v7.4s, v18.4s
-	fcmge	v4.4s, v0.4s, v17.4s
-	fcmge	v7.4s, v1.4s, v16.4s
-	fcmge	v5.4s, v3.4s, v18.4s
-	fcmge	v6.4s, v2.4s, v19.4s
-	bif	v0.16b, v17.16b, v4.16b
-	bif	v1.16b, v16.16b, v7.16b
-	bif	v2.16b, v19.16b, v6.16b
-	bif	v3.16b, v18.16b, v5.16b
+	fmul	s2, s1, s2
+	fmul	s0, s0, s1
+	fcmp	s0, s2
+	fcsel	s0, s0, s2, ge
 	ret
                                         // -- End function

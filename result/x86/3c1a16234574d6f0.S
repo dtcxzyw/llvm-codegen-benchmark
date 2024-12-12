@@ -5,11 +5,18 @@ func0000000000000008:                   # @func0000000000000008
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	subq	%rdx, %rsi
 	andl	$1, %edi
 	movl	$6, %eax
 	subq	%rdi, %rax
+	cmpq	%rsi, %rax
+	seta	%al
+	retq
+func0000000000000048:                   # @func0000000000000048
+	subq	%rdx, %rsi
+	andl	$1, %edi
+	leaq	12(,%rdi,4), %rax
 	cmpq	%rsi, %rax
 	seta	%al
 	retq

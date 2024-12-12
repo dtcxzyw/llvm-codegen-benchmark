@@ -14,12 +14,13 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; opencv/optimized/grfmt_sunras.cpp.ll
 ; php/optimized/fsmagic.ll
+; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

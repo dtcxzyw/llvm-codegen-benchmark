@@ -1,9 +1,9 @@
 
-%"class.llvm::Use.2987993" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3239024" = type { ptr, ptr, ptr, ptr }
 
-; 2 occurrences:
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
-; llvm/optimized/AbstractCallSite.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000005a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
@@ -20,12 +20,12 @@ entry:
 ; clamav/optimized/upx.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000001b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
@@ -39,8 +39,21 @@ define i64 @func0000000000000058(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.2987993", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3181463", ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %0
+  %7 = ptrtoint ptr %6 to i64
+  ret i64 %7
+}
+
+; 1 occurrences:
+; llvm/optimized/AbstractCallSite.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000005b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw %"class.llvm::Use.3239024", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3239024", ptr %5, i64 %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

@@ -1,5 +1,5 @@
 
-; 242 occurrences:
+; 239 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -19,12 +19,9 @@
 ; linux/optimized/build_utility.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/filemap.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/genalloc.ll
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/hw_breakpoint.ll
-; linux/optimized/i8259.ll
-; linux/optimized/intel-sdw-acpi.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/loop.ll
 ; linux/optimized/proc_namespace.ll
@@ -246,7 +243,7 @@
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   ret i64 %3
 }
 

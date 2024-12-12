@@ -8,7 +8,7 @@ define i32 @func0000000000000000(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = uitofp i32 %2 to float
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fptoui float %4 to i32
   ret i32 %5
 }
@@ -20,7 +20,7 @@ define i32 @func0000000000000004(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = uitofp i32 %2 to float
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fptoui float %4 to i32
   ret i32 %5
 }

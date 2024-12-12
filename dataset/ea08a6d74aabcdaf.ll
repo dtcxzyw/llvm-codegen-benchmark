@@ -109,10 +109,11 @@ entry:
   ret i64 %2
 }
 
-; 334 occurrences:
+; 337 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/monotonic_buffer_resource.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; hyperscan/optimized/charreach.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -438,6 +439,8 @@ entry:
 ; openvdb/optimized/points.cc.ll
 ; qemu/optimized/hw_core_platform-bus.c.ll
 ; qemu/optimized/hw_vfio_spapr.c.ll
+; ring-rs/optimized/4prppzcttbsz5zvc.ll
+; tree-sitter-rs/optimized/76by25jz7vi08g1.ll
 ; velox/optimized/AllocationPool.cpp.ll
 ; velox/optimized/LazyVector.cpp.ll
 ; velox/optimized/MemoryPool.cpp.ll

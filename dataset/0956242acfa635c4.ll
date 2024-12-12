@@ -1,5 +1,6 @@
 
-; 23 occurrences:
+; 25 occurrences:
+; abc/optimized/giaIf.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
@@ -21,6 +22,7 @@
 ; openjdk/optimized/mlib_ImageConv_D64nw.ll
 ; openjdk/optimized/mlib_ImageConv_F32nw.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
+; openusd/optimized/patchTreeBuilder.cpp.ll
 ; postgres/optimized/print.ll
 ; rocksdb/optimized/manager.cc.ll
 ; Function Attrs: nounwind
@@ -32,9 +34,10 @@ entry:
   ret i64 %3
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaSimBase.c.ll
+; abc/optimized/ifMap.c.ll
 ; assimp/optimized/ProcessHelper.cpp.ll
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -48,6 +51,7 @@ entry:
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/PDBStringTableBuilder.cpp.ll
 ; llvm/optimized/VPlanAnalysis.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask_rect.ll
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; openusd/optimized/testHdDataSourceLocator.cpp.ll
 ; postgres/optimized/pg_shmem.ll

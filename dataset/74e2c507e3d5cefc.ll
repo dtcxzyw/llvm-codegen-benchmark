@@ -22,7 +22,7 @@ entry:
   %2 = sdiv i32 %1, 16
   %3 = shl nsw i32 %2, 4
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -34,7 +34,7 @@ entry:
   %2 = sdiv i32 %1, 1000
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

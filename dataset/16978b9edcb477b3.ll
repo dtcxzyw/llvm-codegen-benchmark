@@ -1,5 +1,5 @@
 
-; 1193 occurrences:
+; 1178 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -58,7 +58,6 @@
 ; abc/optimized/giaRex.c.ll
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -109,7 +108,6 @@
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/bridge.cc.ll
-; arrow/optimized/cached-powers.cc.ll
 ; arrow/optimized/concatenate.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/key_map.cc.ll
@@ -123,6 +121,7 @@
 ; arrow/optimized/type.cc.ll
 ; assimp/optimized/MMDPmxParser.cpp.ll
 ; assimp/optimized/Q3BSPFileImporter.cpp.ll
+; boost/optimized/topology.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/b3ConvexUtility.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
@@ -159,7 +158,6 @@
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; clamav/optimized/communication.c.ll
 ; clamav/optimized/crtmgr.c.ll
-; clamav/optimized/fanotif.c.ll
 ; clamav/optimized/inotif.c.ll
 ; clamav/optimized/netcode.c.ll
 ; clamav/optimized/output.c.ll
@@ -195,7 +193,6 @@
 ; darktable/optimized/tiff.c.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/31i6j0ayu6bevt9n.ll
-; double_conversion/optimized/cached-powers.cc.ll
 ; draco/optimized/corner_table.cc.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
@@ -232,7 +229,6 @@
 ; faiss/optimized/index_read.cpp.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
 ; flac/optimized/fixed_intrin_sse2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; flac/optimized/fixed_intrin_ssse3.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -278,7 +274,6 @@
 ; gromacs/optimized/convertGmxToNblib.cpp.ll
 ; gromacs/optimized/convert_tpr.cpp.ll
 ; gromacs/optimized/disre.cpp.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/dlasrt.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
@@ -302,7 +297,6 @@
 ; gromacs/optimized/pme_solve.cpp.ll
 ; gromacs/optimized/reversetopology.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; gromacs/optimized/slasrt.cpp.ll
 ; gromacs/optimized/sm_same.cpp.ll
@@ -329,7 +323,6 @@
 ; icu/optimized/csrmbcs.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/derb.ll
-; icu/optimized/double-conversion-cached-powers.ll
 ; icu/optimized/erarules.ll
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/gregocal.ll
@@ -354,7 +347,6 @@
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libquic/optimized/a_bitstr.c.ll
 ; libquic/optimized/cfb64ede.c.ll
-; libquic/optimized/random.c.ll
 ; libquic/optimized/transport_common.cc.ll
 ; libwebp/optimized/buffer_dec.c.ll
 ; libwebp/optimized/cwebp.c.ll
@@ -417,6 +409,7 @@
 ; luajit/optimized/lj_profile_dyn.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/lgc.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
@@ -547,13 +540,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -790,11 +780,9 @@
 ; openssl/optimized/libcrypto-lib-cfb64ede.ll
 ; openssl/optimized/libcrypto-lib-ctrl_params_translate.ll
 ; openssl/optimized/libcrypto-lib-der_writer.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-lib-dh_key.ll
 ; openssl/optimized/libcrypto-lib-ec2_oct.ll
 ; openssl/optimized/libcrypto-lib-ec_key.ll
-; openssl/optimized/libcrypto-lib-ec_pmeth.ll
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
 ; openssl/optimized/libcrypto-lib-ecp_oct.ll
 ; openssl/optimized/libcrypto-lib-p_lib.ll
@@ -813,11 +801,9 @@
 ; openssl/optimized/libcrypto-shlib-cfb64ede.ll
 ; openssl/optimized/libcrypto-shlib-ctrl_params_translate.ll
 ; openssl/optimized/libcrypto-shlib-der_writer.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-shlib-dh_key.ll
 ; openssl/optimized/libcrypto-shlib-ec2_oct.ll
 ; openssl/optimized/libcrypto-shlib-ec_key.ll
-; openssl/optimized/libcrypto-shlib-ec_pmeth.ll
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
 ; openssl/optimized/libcrypto-shlib-ecp_oct.ll
 ; openssl/optimized/libcrypto-shlib-p_lib.ll
@@ -973,7 +959,6 @@
 ; quickjs/optimized/quickjs-libc.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
-; re2/optimized/bitmap256.cc.ll
 ; re2/optimized/bitstate.cc.ll
 ; re2/optimized/prog.cc.ll
 ; recastnavigation/optimized/DetourNode.cpp.ll
@@ -1152,7 +1137,6 @@
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/sharkd_session.c.ll
 ; wireshark/optimized/tap-iostat.c.ll
-; wireshark/optimized/ws_pipe.c.ll
 ; wolfssl/optimized/client.c.ll
 ; wolfssl/optimized/server.c.ll
 ; xgboost/optimized/cpu_treeshap.cc.ll
@@ -1182,6 +1166,7 @@
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/test_cell.ll
 ; yosys/optimized/torder.ll
+; yosys/optimized/verilog_backend.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zxing/optimized/BitMatrix.cpp.ll

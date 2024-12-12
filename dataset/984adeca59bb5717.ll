@@ -188,9 +188,9 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000105(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000305(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 1
+  %2 = icmp samesign ugt i32 %1, 1
   %3 = zext i1 %2 to i32
   %4 = add nsw i32 %0, -7
   %5 = add nsw i32 %4, %3
@@ -200,9 +200,9 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000010f(i32 %0, i32 %1) #0 {
+define i32 @func000000000000030f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 62
+  %2 = icmp samesign ugt i32 %1, 62
   %3 = zext i1 %2 to i32
   %4 = add nuw nsw i32 %0, 64
   %5 = add nuw nsw i32 %4, %3
@@ -225,9 +225,9 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000008f(i32 %0, i32 %1) #0 {
+define i32 @func000000000000028f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 10
+  %2 = icmp samesign ult i32 %1, 10
   %3 = zext i1 %2 to i32
   %4 = add nuw nsw i32 %0, 3
   %5 = add nuw nsw i32 %4, %3

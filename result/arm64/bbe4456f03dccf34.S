@@ -1,51 +1,39 @@
-func0000000000000c04:                   // @func0000000000000c04
+func0000000000001804:                   // @func0000000000001804
 // %bb.0:                               // %entry
-	uzp1	v3.4s, v3.4s, v4.4s
-	mvni	v4.4s, #99
-	uzp1	v1.4s, v1.4s, v2.4s
-	mla	v0.4s, v3.4s, v4.4s
-	cmhi	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, #-100                       // =0xffffff9c
+	madd	w8, w2, w8, w0
+	cmp	w8, w1
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000c08:                   // @func0000000000000c08
+func0000000000001808:                   // @func0000000000001808
 // %bb.0:                               // %entry
-	uzp1	v3.4s, v3.4s, v4.4s
-	mvni	v4.4s, #99
-	uzp1	v1.4s, v1.4s, v2.4s
-	mla	v0.4s, v3.4s, v4.4s
-	cmhi	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, #-100                       // =0xffffff9c
+	madd	w8, w2, w8, w0
+	cmp	w8, w1
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000096:                   // @func0000000000000096
+func0000000000000126:                   // @func0000000000000126
 // %bb.0:                               // %entry
-	uzp1	v3.4s, v3.4s, v4.4s
-	movi	v4.4s, #3
-	uzp1	v1.4s, v1.4s, v2.4s
-	mla	v0.4s, v3.4s, v4.4s
-	cmgt	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	add	w8, w2, w2, lsl #1
+	add	w8, w8, w0
+	cmp	w8, w1
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000896:                   // @func0000000000000896
+func0000000000001126:                   // @func0000000000001126
 // %bb.0:                               // %entry
-	uzp1	v3.4s, v3.4s, v4.4s
-	uzp1	v1.4s, v1.4s, v2.4s
-	add	v3.4s, v3.4s, v3.4s
-	sub	v0.4s, v0.4s, v3.4s
-	cmgt	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	sub	w8, w0, w2, lsl #1
+	cmp	w8, w1
+	cset	w0, lt
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	uzp1	v3.4s, v3.4s, v4.4s
 	mov	w8, #365                        // =0x16d
-	uzp1	v1.4s, v1.4s, v2.4s
-	dup	v4.4s, w8
-	mla	v0.4s, v3.4s, v4.4s
-	cmeq	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	madd	w8, w2, w8, w0
+	cmp	w8, w1
+	cset	w0, eq
 	ret
                                         // -- End function

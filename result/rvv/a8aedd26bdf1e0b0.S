@@ -8,7 +8,7 @@ func0000000000000006:                   # @func0000000000000006
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsext.vf2	v11, v10
 	vwadd.wv	v8, v8, v11
@@ -17,7 +17,7 @@ func0000000000000016:                   # @func0000000000000016
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsext.vf2	v11, v10
 	vwadd.wv	v8, v8, v11

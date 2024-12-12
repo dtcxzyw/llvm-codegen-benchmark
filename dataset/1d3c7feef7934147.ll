@@ -14,10 +14,10 @@
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
 ; wasmtime-rs/optimized/24tijvi11z3k9odl.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, i32 %1) #0 {
+define i64 @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = add i64 %4, 15
   %6 = and i64 %5, 15
@@ -48,10 +48,10 @@ entry:
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(ptr %0, i32 %1) #0 {
+define i64 @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = add i64 %4, 7
   %6 = and i64 %5, -8

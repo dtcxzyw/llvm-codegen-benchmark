@@ -8,13 +8,13 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = xor i64 %5, -1
-  %7 = and i64 %6, %0
+  %7 = and i64 %0, %6
   ret i64 %7
 }
 
-; 137 occurrences:
+; 135 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -83,8 +83,6 @@ entry:
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -157,9 +155,9 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = xor i64 %5, -1
-  %7 = and i64 %6, %0
+  %7 = and i64 %0, %6
   ret i64 %7
 }
 

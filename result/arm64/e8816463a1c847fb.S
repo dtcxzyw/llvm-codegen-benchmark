@@ -16,6 +16,29 @@ func0000000000000024:                   // @func0000000000000024
 	add	x0, x0, x8, asr #29
 	ret
                                         // -- End function
+func0000000000000027:                   // @func0000000000000027
+// %bb.0:                               // %entry
+	lsr	x8, x1, #3
+	mov	x9, #156375464280064            // =0x8e3900000000
+	movk	x9, #14563, lsl #48
+	mul	x8, x8, x9
+	add	x0, x0, x8, asr #29
+	ret
+                                        // -- End function
+func0000000000000007:                   // @func0000000000000007
+// %bb.0:                               // %entry
+	mov	x8, #8193                       // =0x2001
+	movk	x8, #64, lsl #32
+	movk	x8, #32768, lsl #48
+	smulh	x8, x1, x8
+	add	x8, x8, x1
+	lsr	x9, x8, #63
+	lsr	x8, x8, #25
+	add	w8, w8, w9
+	lsl	x8, x8, #32
+	add	x0, x0, x8, asr #29
+	ret
+                                        // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
 	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa

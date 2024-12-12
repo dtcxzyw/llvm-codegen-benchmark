@@ -70,8 +70,7 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
-; git/optimized/combine-diff.ll
+; 4 occurrences:
 ; linux/optimized/printk_ringbuffer.ll
 ; php/optimized/dtoa.ll
 ; qemu/optimized/system_physmem.c.ll
@@ -85,7 +84,7 @@ entry:
   ret i64 %2
 }
 
-; 268 occurrences:
+; 266 occurrences:
 ; abseil-cpp/optimized/fastmath_test.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
@@ -194,8 +193,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

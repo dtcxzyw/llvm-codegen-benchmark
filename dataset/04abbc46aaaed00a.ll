@@ -13,7 +13,7 @@
 define i8 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = and i64 %1, %2
   %6 = or i64 %4, %5
   %7 = trunc nuw i64 %6 to i8
@@ -32,7 +32,7 @@ entry:
 define i8 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = and i64 %1, %2
   %6 = or disjoint i64 %4, %5
   %7 = trunc nuw i64 %6 to i8
@@ -47,7 +47,7 @@ entry:
 define i8 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = and i64 %3, %2
+  %4 = and i64 %2, %3
   %5 = and i64 %0, %1
   %6 = or i64 %5, %4
   %7 = trunc i64 %6 to i8
@@ -60,7 +60,7 @@ entry:
 define i8 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = and i64 %1, %2
   %6 = or disjoint i64 %4, %5
   %7 = trunc i64 %6 to i8

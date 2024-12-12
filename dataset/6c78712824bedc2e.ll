@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cecPat.c.ll
@@ -7,7 +7,6 @@
 ; abc/optimized/giaTsim.c.ll
 ; icu/optimized/dtitvfmt.ll
 ; libwebp/optimized/alpha_enc.c.ll
-; linux/optimized/bitmap-str.ll
 ; postgres/optimized/pl_exec.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; z3/optimized/expr_context_simplifier.cpp.ll

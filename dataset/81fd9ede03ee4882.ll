@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; linux/optimized/link.ll
-; linux/optimized/mii.ll
 ; openssl/optimized/libcrypto-lib-err.ll
 ; openssl/optimized/libcrypto-shlib-err.ll
 ; Function Attrs: nounwind

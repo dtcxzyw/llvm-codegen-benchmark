@@ -11,21 +11,21 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rax, %rax
 	setg	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000c8:                   # @func00000000000000c8
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	subq	%rdi, %rax
 	cmpq	$64, %rax
 	setae	%al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000e8:                   # @func00000000000000e8
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	subq	%rdi, %rax
-	cmpq	$64, %rax
+	cmpq	$268435457, %rax                # imm = 0x10000001
 	setae	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	subq	%rdi, %rax

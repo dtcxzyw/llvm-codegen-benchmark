@@ -1,6 +1,10 @@
 
-; 30 occurrences:
+; 34 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; casadi/optimized/kinsol.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; gromacs/optimized/expfit.cpp.ll

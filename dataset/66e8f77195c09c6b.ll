@@ -1,6 +1,5 @@
 
-; 10 occurrences:
-; abc/optimized/cswMan.c.ll
+; 9 occurrences:
 ; abc/optimized/exorCubes.c.ll
 ; abc/optimized/ivyFastMap.c.ll
 ; abc/optimized/ivyFraig.c.ll
@@ -15,7 +14,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = add i32 %2, 4
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -31,8 +30,9 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -51,7 +51,7 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/ifMan.c.ll
 ; abc/optimized/saigSimSeq.c.ll
@@ -63,7 +63,9 @@ entry:
 ; llvm/optimized/InlineCost.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/raudio.c.ll
+; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
@@ -73,6 +75,18 @@ entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 2
   %4 = mul i32 %3, %0
+  ret i32 %4
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 8
+  %3 = add i32 %2, 256
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -153,7 +167,7 @@ define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nsw i32 %2, -1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -202,7 +216,7 @@ define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = add i32 %2, 2
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -229,24 +243,13 @@ entry:
 }
 
 ; 1 occurrences:
-; meshlab/optimized/filter_screened_poisson.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 1
-  %3 = add i32 %2, -2
-  %4 = mul nsw i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nuw nsw i32 %2, 2
-  %4 = mul nuw i32 %3, %0
+  %4 = mul nuw i32 %0, %3
   ret i32 %4
 }
 

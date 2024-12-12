@@ -1,11 +1,12 @@
 
-; 212 occurrences:
+; 213 occurrences:
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/luckyFast16.c.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/encode.c.ll
 ; c3c/optimized/sema_builtins.c.ll
@@ -15,6 +16,7 @@
 ; cmake/optimized/lzma_encoder.c.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
+; cmake/optimized/zstd_decompress_block.c.ll
 ; darktable/optimized/TiffEntry.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -108,7 +110,6 @@
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/decompress_unlzma.ll
 ; linux/optimized/drm_modes.ll
-; linux/optimized/dw.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/fdinfo.ll
 ; linux/optimized/io_uring.ll
@@ -131,7 +132,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
@@ -212,6 +212,7 @@
 ; wireshark/optimized/proto.c.ll
 ; zlib/optimized/inflate.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
+; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -220,7 +221,7 @@ entry:
   ret i64 %3
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -228,7 +229,6 @@ entry:
 ; cmake/optimized/zstd_lazy.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libwebp/optimized/pnmdec.c.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/maple_tree.ll

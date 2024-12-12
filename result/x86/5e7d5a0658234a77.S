@@ -28,3 +28,15 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	andb	%sil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	andl	%edx, %esi
+	cmpq	$4095, %rdi                     # imm = 0xFFF
+	setb	%al
+	andb	%sil, %al
+	retq
+func000000000000000a:                   # @func000000000000000a
+	andl	%edx, %esi
+	cmpq	$7, %rdi
+	setge	%al
+	andb	%sil, %al
+	retq

@@ -58,11 +58,11 @@ define i64 @func0000000000000002(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 26
   %3 = zext i1 %2 to i64
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 
-; 46 occurrences:
+; 49 occurrences:
 ; abc/optimized/bbrCex.c.ll
 ; abc/optimized/llb2Core.c.ll
 ; rust-analyzer-rs/optimized/13whla2w760i0ne3.ll
@@ -109,12 +109,15 @@ entry:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 27
   %3 = zext i1 %2 to i64
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 

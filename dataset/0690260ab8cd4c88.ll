@@ -1,5 +1,5 @@
 
-; 324 occurrences:
+; 326 occurrences:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -102,6 +102,8 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/cistpl.ll
 ; llama.cpp/optimized/grammar-parser.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/CoroFrame.cpp.ll
 ; luau/optimized/Transpiler.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -325,10 +327,10 @@
 ; wireshark/optimized/packet-dis.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000408(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000808(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 5
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = add i8 %1, 49
   %6 = icmp ult i8 %5, 17
   %7 = or i1 %6, %4
@@ -340,27 +342,28 @@ entry:
 ; php/optimized/zend_ast.ll
 ; wireshark/optimized/packet-memcache.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000210(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -65
   %4 = icmp ult i8 %3, 26
   %5 = icmp ult i8 %1, 10
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000208(i1 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = icmp eq i8 %2, 26
-  %4 = or i1 %3, %0
-  %5 = add i8 %1, -31
-  %6 = icmp ult i8 %5, 2
+  %3 = icmp eq i8 %2, 82
+  %4 = or i1 %0, %3
+  %5 = add i8 %1, -67
+  %6 = icmp ult i8 %5, 13
   %7 = or i1 %6, %4
   ret i1 %7
 }

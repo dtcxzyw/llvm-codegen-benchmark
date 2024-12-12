@@ -19,7 +19,7 @@ entry:
 ; velox/optimized/LazyVector.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000002aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
   %3 = add i32 %2, -64
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000020a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
   %3 = add i32 %2, -64
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/libxdrf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = add i32 %2, -8
@@ -63,7 +63,7 @@ entry:
 ; hyperscan/optimized/stream.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000301(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
   %3 = add i32 %2, -64

@@ -7,7 +7,7 @@
 ; qemu/optimized/linux-user_syscall.c.ll
 ; velox/optimized/SwitchExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0) #0 {
+define i1 @func000000000000010a(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 32
   %2 = lshr i64 %1, 2

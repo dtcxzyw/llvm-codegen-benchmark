@@ -1,12 +1,10 @@
 func00000000000001f3:                   // @func00000000000001f3
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	uzp1	v2.4s, v2.4s, v3.4s
-	add	v2.4s, v2.4s, v4.4s
-	ucvtf	v2.4s, v2.4s
-	fcmge	v1.4s, v1.4s, v2.4s
-	mvn	v1.16b, v1.16b
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
+	add	w8, w1, #1
+	ucvtf	s1, w8
+	fcmp	s0, s1
+	cset	w8, lt
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

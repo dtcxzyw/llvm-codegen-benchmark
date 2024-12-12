@@ -1,5 +1,5 @@
 
-; 141 occurrences:
+; 145 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; arrow/optimized/string-to-double.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -53,7 +53,6 @@
 ; linux/optimized/aio.ll
 ; linux/optimized/auth_gss.ll
 ; linux/optimized/blk-mq.ll
-; linux/optimized/capability.ll
 ; linux/optimized/clnt.ll
 ; linux/optimized/clntlock.ll
 ; linux/optimized/compaction.ll
@@ -79,7 +78,6 @@
 ; linux/optimized/transport.ll
 ; linux/optimized/tree.ll
 ; linux/optimized/tsc.ll
-; linux/optimized/umh.ll
 ; linux/optimized/urb.ll
 ; linux/optimized/virtgpu_ioctl.ll
 ; linux/optimized/virtgpu_kms.ll
@@ -125,21 +123,27 @@
 ; rust-analyzer-rs/optimized/2bwlvqntjk72kr6f.ll
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
+; rust-analyzer-rs/optimized/3aojx6tzw7bx942t.ll
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; rust-analyzer-rs/optimized/4x4kq4gfl0tghxcw.ll
 ; rust-analyzer-rs/optimized/53ntv1pfq7fnns7g.ll
+; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/rilullg9p294yp1.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
 ; tree-sitter-rs/optimized/2840d04zhlx99x1w.ll
 ; tree-sitter-rs/optimized/2qhtbpqvpvignqt5.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
 ; wasmedge/optimized/refInstr.cpp.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/file.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i1 %2) #0 {

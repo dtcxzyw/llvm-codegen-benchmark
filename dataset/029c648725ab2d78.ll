@@ -1,7 +1,7 @@
 
-%struct.code.2764381 = type { i8, i8, i16 }
+%struct.code.2876641 = type { i8, i8, i16 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/absUtil.c.ll
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inflate.c.ll
@@ -19,6 +19,7 @@
 ; lua/optimized/ltable.ll
 ; luau/optimized/ltable.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/DetourTileCache.cpp.ll
@@ -31,13 +32,13 @@
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw %struct.code.2764381, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.code.2876641, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -51,7 +52,7 @@ define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr i16, ptr %0, i64 %6
   ret ptr %7

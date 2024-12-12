@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; icu/optimized/calendar.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; qemu/optimized/ui_console-vc.c.ll
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -1,14 +1,23 @@
 
-; 7 occurrences:
-; folly/optimized/dynamic.cpp.ll
+; 3 occurrences:
 ; hdf5/optimized/H5FDmulti.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; rocksdb/optimized/db_impl_write.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = call i64 @llvm.umin.i64(i64 %0, i64 %1)
+  %4 = select i1 %2, i64 %0, i64 %3
+  ret i64 %4
+}
+
+; 4 occurrences:
+; folly/optimized/dynamic.cpp.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1, i1 %2) #0 {
+define i64 @func0000000000000014(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = call i64 @llvm.umin.i64(i64 %0, i64 %1)
   %4 = select i1 %2, i64 %0, i64 %3

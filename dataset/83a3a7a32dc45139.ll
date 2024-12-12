@@ -1,8 +1,8 @@
 
 ; 64 occurrences:
-; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; bdwgc/optimized/gc.c.ll
-; openjdk/optimized/g1ParScanThreadState.ll
+; llvm/optimized/FunctionImport.cpp.ll
+; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; rust-analyzer-rs/optimized/11aztavumsolyui7.ll
 ; rust-analyzer-rs/optimized/13a8uuxp2yipqyp9.ll
 ; rust-analyzer-rs/optimized/13whla2w760i0ne3.ll
@@ -65,11 +65,23 @@
 ; rust-analyzer-rs/optimized/vccy6rg1lgzb14e.ll
 ; rust-analyzer-rs/optimized/z27qhj0ivx434rk.ll
 ; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 32
+  %3 = ptrtoint ptr %2 to i64
+  %4 = xor i64 %0, %3
+  ret i64 %4
+}
+
+; 2 occurrences:
+; abseil-cpp/optimized/low_level_alloc.cc.ll
+; openjdk/optimized/g1ParScanThreadState.ll
+; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 32
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
   %3 = ptrtoint ptr %2 to i64
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 
@@ -81,19 +93,7 @@ define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 12
   %3 = ptrtoint ptr %2 to i64
-  %4 = xor i64 %3, %0
-  ret i64 %4
-}
-
-; 2 occurrences:
-; llvm/optimized/FunctionImport.cpp.ll
-; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 32
-  %3 = ptrtoint ptr %2 to i64
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 

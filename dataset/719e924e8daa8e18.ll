@@ -4,7 +4,7 @@
 ; linux/optimized/tcp_input.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i16 %0, i32 %1, i16 %2) #0 {
+define i16 @func0000000000000021(i16 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 32701
   %4 = or disjoint i16 %3, 2

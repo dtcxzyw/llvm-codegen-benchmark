@@ -9,7 +9,7 @@ define i1 @func0000000000000006(i64 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.000000e+02
   %3 = fptosi double %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
@@ -27,7 +27,7 @@ define i1 @func0000000000000001(i64 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 0x41F0000000000000
   %3 = fptosi double %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -45,7 +45,7 @@ define i1 @func0000000000000004(i64 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 0x41F0000000000000
   %3 = fptosi double %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 

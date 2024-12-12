@@ -63,7 +63,7 @@
 define i64 @func000000000000000f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl nuw nsw i64 %1, 8
   %6 = or disjoint i64 %4, %5
   %7 = xor i64 %6, 2267503259

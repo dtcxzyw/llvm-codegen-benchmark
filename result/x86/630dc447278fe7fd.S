@@ -18,8 +18,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmovnel	%esi, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	leal	(,%rsi,8), %ecx
-	leal	7(,%rsi,8), %eax
+	leal	(%rsi,%rsi), %ecx
+	leal	16777216(%rsi,%rsi), %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

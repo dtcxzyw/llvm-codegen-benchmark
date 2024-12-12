@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; opencv/optimized/disparity_filters.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {

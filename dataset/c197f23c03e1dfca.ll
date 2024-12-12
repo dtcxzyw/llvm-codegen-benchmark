@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; opencv/optimized/pooling_layer.cpp.ll
 ; ruby/optimized/compile.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -15,9 +14,8 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
-; arrow/optimized/light_array.cc.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; openjdk/optimized/generateOopMap.ll

@@ -30,9 +30,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/ifDec16.c.ll
-; eastl/optimized/Int128_t.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -42,10 +41,9 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; linux/optimized/exfldio.ll
-; llvm/optimized/NetBSD.cpp.ll
 ; llvm/optimized/OpenBSD.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; Function Attrs: nounwind
@@ -64,7 +62,7 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 7
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -76,7 +74,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 2
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

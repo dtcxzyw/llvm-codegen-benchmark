@@ -12,14 +12,24 @@ entry:
   ret double %4
 }
 
-; 2 occurrences:
-; llama.cpp/optimized/llama.cpp.ll
+; 1 occurrences:
 ; openjdk/optimized/stringDedupStat.ll
+; Function Attrs: nounwind
+define double @func0000000000000014(double %0, i64 %1) #0 {
+entry:
+  %2 = fmul double %0, 0x3F50000000000000
+  %3 = icmp samesign ult i64 %1, 102400
+  %4 = select i1 %3, double %0, double %2
+  ret double %4
+}
+
+; 1 occurrences:
+; llama.cpp/optimized/llama.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(double %0, i64 %1) #0 {
 entry:
   %2 = fmul double %0, 0x3F50000000000000
-  %3 = icmp ult i64 %1, 102400
+  %3 = icmp ult i64 %1, 1073741824
   %4 = select i1 %3, double %0, double %2
   ret double %4
 }

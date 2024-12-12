@@ -1,7 +1,8 @@
 
-; 183 occurrences:
+; 187 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/utf8_codecvt_facet.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
 ; cmake/optimized/nghttp2_frame.c.ll
@@ -35,12 +36,10 @@
 ; jemalloc/optimized/extent_dss.sym.ll
 ; jq/optimized/utf16_le.ll
 ; libevent/optimized/evmap.c.ll
-; libquic/optimized/custom_extensions.c.ll
 ; libzmq/optimized/v2_decoder.cpp.ll
 ; lief/optimized/ssl_tls.c.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/exec.ll
-; linux/optimized/he.ll
 ; linux/optimized/host.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/i915_gem_execbuffer.ll
@@ -93,7 +92,6 @@
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
 ; mitsuba3/optimized/assembler.cpp.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; nghttp2/optimized/nghttp2_frame.c.ll
 ; ockam-rs/optimized/1j8f46ag92qmaepd.ll
 ; ockam-rs/optimized/r526c2e8kd9diy6.ll
@@ -101,7 +99,6 @@
 ; opencv/optimized/persistence.cpp.ll
 ; openjdk/optimized/barrierSetC2.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
-; openjdk/optimized/check_classname.ll
 ; openjdk/optimized/dwarf.ll
 ; openjdk/optimized/frame_x86.ll
 ; openjdk/optimized/jfrCheckpointManager.ll
@@ -121,7 +118,6 @@
 ; postgres/optimized/be-fsstubs.ll
 ; postgres/optimized/cryptohashfuncs.ll
 ; postgres/optimized/datum.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/like_support.ll
 ; postgres/optimized/mbutils.ll
@@ -146,6 +142,7 @@
 ; postgres/optimized/varlena.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/extension_lite.cc.ll
+; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/field.cc.ll
 ; proxygen/optimized/HPACKDecoderBase.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
@@ -171,9 +168,14 @@
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
+; sentencepiece/optimized/extension_set.cc.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; spike/optimized/f16_sqrt.ll
+; turborepo-rs/optimized/7r1ggvy9mvit53mkmhrbr5w1w.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
+; turborepo-rs/optimized/c500hnb79kuh9h85697qija6o.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; wireshark/optimized/dot11decrypt_ccmp.c.ll
@@ -183,6 +185,8 @@
 ; wireshark/optimized/packet-quic.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0) #0 {
 entry:
@@ -192,10 +196,11 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; openusd/optimized/reporter.cpp.ll
 ; openvdb/optimized/AttributeSet.cc.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wireshark/optimized/packet-afs.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i8 %0) #0 {
@@ -203,17 +208,6 @@ entry:
   %1 = and i8 %0, 8
   %.not = icmp eq i8 %1, 0
   %2 = select i1 %.not, i64 40, i64 32
-  ret i64 %2
-}
-
-; 1 occurrences:
-; freetype/optimized/sfnt.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i8 %0) #0 {
-entry:
-  %1 = and i8 %0, 124
-  %.not = icmp eq i8 %1, 124
-  %2 = select i1 %.not, i64 4, i64 3
   ret i64 %2
 }
 

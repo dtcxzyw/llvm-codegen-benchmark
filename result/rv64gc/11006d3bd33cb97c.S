@@ -37,18 +37,35 @@ func0000000000000005:                   # @func0000000000000005
 .LBB4_2:                                # %entry
 	negw	a0, a0
 	ret
-func0000000000000019:                   # @func0000000000000019
+func0000000000000053:                   # @func0000000000000053
 	sext.w	a2, a2
-	bltz	a2, .LBB5_2
+	li	a3, 128
+	bltu	a2, a3, .LBB5_2
 	mv	a0, a1
 .LBB5_2:                                # %entry
-	negw	a0, a0
+	li	a1, 255
+	subw	a0, a1, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func0000000000000019:                   # @func0000000000000019
 	sext.w	a2, a2
 	bltz	a2, .LBB6_2
 	mv	a0, a1
 .LBB6_2:                                # %entry
+	negw	a0, a0
+	ret
+func0000000000000007:                   # @func0000000000000007
+	sext.w	a2, a2
+	beqz	a2, .LBB7_2
+	mv	a0, a1
+.LBB7_2:                                # %entry
+	li	a1, 16
+	subw	a0, a1, a0
+	ret
+func000000000000001a:                   # @func000000000000001a
+	sext.w	a2, a2
+	bltz	a2, .LBB8_2
+	mv	a0, a1
+.LBB8_2:                                # %entry
 	lui	a1, 524288
 	subw	a0, a1, a0
 	ret

@@ -4,7 +4,7 @@
 ; openssl/optimized/openssl-bin-dgst.ll
 ; postgres/optimized/parse_target.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000301(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = zext i1 %3 to i32
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/server.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000304(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ult i32 %1, 3
   %4 = select i1 %0, i1 true, i1 %3

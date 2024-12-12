@@ -29,7 +29,7 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; casadi/optimized/kinsol.c.ll
 ; msdfgen/optimized/import-svg.cpp.ll
 ; opencv/optimized/levmarq.cpp.ll
@@ -37,6 +37,7 @@ entry:
 ; proj/optimized/geodesic.c.ll
 ; stockfish/optimized/timeman.ll
 ; sundials/optimized/kinsol.c.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(double %0, double %1) #0 {
@@ -47,10 +48,9 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; gromacs/optimized/dlasd5.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dlasd5.c.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind

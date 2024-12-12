@@ -18,7 +18,7 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = add i32 %1, 1
   %5 = add i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -37,6 +37,18 @@ entry:
   ret i32 %6
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i32
+  %4 = add nsw i32 %1, 1
+  %5 = add i32 %4, %3
+  %6 = add i32 %5, %0
+  ret i32 %6
+}
+
 ; 2 occurrences:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
@@ -46,7 +58,7 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = add nuw nsw i32 %1, 1
   %5 = add nuw nsw i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -71,7 +83,7 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = add nsw i32 %1, -13
   %5 = add nuw nsw i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

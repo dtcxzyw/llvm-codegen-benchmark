@@ -1,4 +1,4 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	li	a0, 33
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmseq.vx	v0, v8, a0
@@ -7,7 +7,7 @@ func0000000000000051:                   # @func0000000000000051
 	vadd.vx	v8, v12, a0
 	vadd.vi	v8, v10, -1, v0.t
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001e8:                   # @func00000000000001e8
 	lui	a0, 16
 	li	a1, 57
 	vsetivli	zero, 8, e8, mf2, ta, ma
@@ -18,7 +18,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	addi	a0, a0, -55
 	vadd.vx	v8, v10, a0, v0.t
 	ret
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001b4:                   # @func00000000000001b4
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v12, 9
 	li	a0, 65
@@ -29,14 +29,14 @@ func00000000000000d4:                   # @func00000000000000d4
 	vadd.vx	v12, v10, a0, v0.t
 	vmv.v.v	v8, v12
 	ret
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vvm	v8, v12, v10, v0
 	vadd.vi	v8, v8, 1
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	li	a0, -48
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmseq.vi	v0, v8, 0
@@ -44,7 +44,7 @@ func0000000000000071:                   # @func0000000000000071
 	vadd.vx	v8, v12, a0
 	vadd.vi	v8, v10, 9, v0.t
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	li	a0, -48
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v12, v12, a0

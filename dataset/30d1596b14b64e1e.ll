@@ -33,7 +33,7 @@ entry:
   ret i16 %2
 }
 
-; 193 occurrences:
+; 194 occurrences:
 ; arrow/optimized/trie.cc.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/matcher-ac.c.ll
@@ -76,7 +76,6 @@ entry:
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/icmp.ll
 ; linux/optimized/input.ll
-; linux/optimized/iomap.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/netdev.ll
@@ -96,7 +95,6 @@ entry:
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RustDemangle.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/SimpleTypeSerializer.cpp.ll
@@ -105,6 +103,7 @@ entry:
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; llvm/optimized/TypeRecordMapping.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/io_collada.cpp.ll
 ; minetest/optimized/reflowscan.cpp.ll
@@ -225,6 +224,8 @@ entry:
 ; wireshark/optimized/observer.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; wireshark/optimized/udpdump.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
@@ -249,13 +250,15 @@ entry:
   ret i16 %2
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/intel_color.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; wireshark/optimized/packet-iso15765.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i64 %0) #0 {
 entry:
@@ -274,13 +277,25 @@ entry:
   ret i16 %2
 }
 
-; 6 occurrences:
+; 18 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; wireshark/optimized/wtap.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i64 %0) #0 {
 entry:

@@ -1,8 +1,7 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; cpython/optimized/longobject.ll
 ; gromacs/optimized/colvargrid.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/nonrigid_icp.cpp.ll
@@ -20,11 +19,11 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
-; 100 occurrences:
+; 99 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcSat.c.ll
 ; abc/optimized/abcSop.c.ll
@@ -40,7 +39,6 @@ entry:
 ; casadi/optimized/cvodes_spils.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/idas_spils.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; cmake/optimized/cmCMakePath.cxx.ll
 ; cmake/optimized/frm_driver.c.ll
 ; darktable/optimized/introspection_equalizer.c.ll
@@ -130,11 +128,11 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   ret i64 %4
 }
 
-; 121 occurrences:
+; 120 occurrences:
 ; abc/optimized/fraMan.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaKf.c.ll
@@ -142,6 +140,7 @@ entry:
 ; abc/optimized/resSim.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/satSolver2.c.ll
+; boost/optimized/sparring_partner.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_equalizer.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
@@ -174,8 +173,6 @@ entry:
 ; nix/optimized/globals.ll
 ; nix/optimized/lexer-tab.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/shared.ll
 ; nix/optimized/store-api.ll
@@ -261,7 +258,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -288,7 +285,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -299,7 +296,7 @@ define i64 @func0000000000000009(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -312,7 +309,7 @@ define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -323,7 +320,7 @@ define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -334,7 +331,7 @@ define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -346,7 +343,7 @@ define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 

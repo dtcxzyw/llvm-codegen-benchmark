@@ -1,4 +1,4 @@
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	testl	%edx, %edx
 	setne	%cl
 	andb	%dil, %cl
@@ -6,7 +6,7 @@ func0000000000000198:                   # @func0000000000000198
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
+func0000000000000602:                   # @func0000000000000602
 	cmpl	$12, %edx
 	setae	%cl
 	andb	%sil, %cl
@@ -14,40 +14,24 @@ func0000000000000102:                   # @func0000000000000102
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000082:                   # @func0000000000000082
-	cmpl	$7, %edx
-	setb	%cl
-	andb	%sil, %cl
-	movzwl	%di, %eax
-	cmpl	$198, %eax
+func0000000000000202:                   # @func0000000000000202
+	cmpl	$12, %edx
+	setae	%cl
+	andb	%dil, %cl
+	cmpw	$17, %si
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000090:                   # @func0000000000000090
-	cmpl	$10, %edx
-	setb	%cl
-	andb	%sil, %cl
-	cmpw	$97, %di
-	setae	%al
-	orb	%cl, %al
-	retq
-func0000000000000182:                   # @func0000000000000182
+func000000000000030c:                   # @func000000000000030c
 	testl	%edx, %edx
 	setne	%cl
 	andb	%sil, %cl
-	negw	%di
-	seto	%al
+	movswl	%di, %eax
+	cmpl	$-16384, %eax                   # imm = 0xC000
+	setl	%al
 	orb	%cl, %al
 	retq
-func0000000000000188:                   # @func0000000000000188
-	testl	%edx, %edx
-	setne	%cl
-	andb	%sil, %cl
-	cmpw	$2, %di
-	setb	%al
-	orb	%cl, %al
-	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	testl	%edx, %edx
 	sete	%cl
 	andb	%sil, %cl
@@ -56,7 +40,15 @@ func0000000000000022:                   # @func0000000000000022
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000302:                   # @func0000000000000302
+	cmpl	$64, %edx
+	setne	%cl
+	andb	%sil, %cl
+	cmpw	$64, %di
+	sete	%al
+	orb	%cl, %al
+	retq
+func0000000000000058:                   # @func0000000000000058
 	testl	%edx, %edx
 	sete	%cl
 	andb	%dil, %cl

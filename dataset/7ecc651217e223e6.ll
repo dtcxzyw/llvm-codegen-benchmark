@@ -8,7 +8,7 @@
 ; openssl/optimized/libcrypto-shlib-cmac.ll
 ; qemu/optimized/block_bochs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = udiv i64 %1, %3
@@ -16,13 +16,11 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
-; darktable/optimized/NefDecoder.cpp.ll
+; 9 occurrences:
 ; git/optimized/midx.ll
 ; hdf5/optimized/H5Dchunk.c.ll
 ; hermes/optimized/StringRef.cpp.ll
 ; linux/optimized/clocksource.ll
-; llvm/optimized/ExpandMemCmp.cpp.ll
 ; llvm/optimized/StringRef.cpp.ll
 ; memcached/optimized/memcached-slab_automove.ll
 ; memcached/optimized/memcached_debug-slab_automove.ll
@@ -52,10 +50,21 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 2 occurrences:
+; darktable/optimized/NefDecoder.cpp.ll
+; llvm/optimized/ExpandMemCmp.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = udiv i64 %1, %3
+  %5 = icmp samesign ult i64 %4, %0
+  ret i1 %5
+}
+
+; 8 occurrences:
 ; cmake/optimized/fse_compress.c.ll
 ; hdf5/optimized/H5Dint.c.ll
-; linux/optimized/ialloc.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; memcached/optimized/memcached-slab_automove.ll
 ; memcached/optimized/memcached-slab_automove_extstore.ll
@@ -75,7 +84,7 @@ entry:
 ; libevent/optimized/bufferevent_ratelim.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = udiv i64 %1, %3
@@ -95,9 +104,20 @@ entry:
 }
 
 ; 1 occurrences:
+; linux/optimized/ialloc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = udiv i64 %1, %3
+  %5 = icmp samesign ugt i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; opencv/optimized/matrix_wrap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = udiv i64 %1, %3

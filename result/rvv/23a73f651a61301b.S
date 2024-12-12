@@ -8,5 +8,5 @@ func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vsrl.vv	v8, v8, v9
 	vand.vi	v8, v8, 3
-	vmsne.vi	v0, v8, 0
+	vmsne.vi	v0, v8, 3
 	ret

@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; snappy/optimized/snappy.cc.ll
+; stockfish/optimized/evaluate_nnue.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000038(i32 %0, i64 %1, i8 %2) #0 {
 entry:
@@ -8,13 +9,12 @@ entry:
   %4 = zext nneg i8 %3 to i32
   %5 = trunc nuw nsw i64 %1 to i32
   %6 = shl i32 %4, %5
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
-; stockfish/optimized/evaluate_nnue.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i64 %1, i8 %2) #0 {
 entry:

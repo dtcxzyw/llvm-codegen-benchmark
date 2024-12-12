@@ -1,11 +1,9 @@
 
-; 125 occurrences:
+; 123 occurrences:
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/ifMap.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
-; cmake/optimized/fld_opts.c.ll
-; cmake/optimized/frm_opts.c.ll
 ; cmake/optimized/nghttp2_hd.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
@@ -54,7 +52,6 @@
 ; llvm/optimized/PHIElimination.cpp.ll
 ; llvm/optimized/RISCVExpandAtomicPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
@@ -75,6 +72,7 @@
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_canvas.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll

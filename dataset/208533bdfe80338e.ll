@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 50 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; git/optimized/revision.ll
@@ -40,6 +40,8 @@
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
+; openusd/optimized/testHdBufferSpec.cpp.ll
+; openusd/optimized/variableExpressionImpl.cpp.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/tcg.c.ll
@@ -49,7 +51,7 @@
 ; ruby/optimized/weakmap.ll
 ; slurm/optimized/node_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = icmp eq i32 %2, 27
@@ -107,7 +109,7 @@ entry:
 ; slurm/optimized/fed_mgr.ll
 ; slurm/optimized/slurm_protocol_defs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000302(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 248
   %3 = icmp ne i32 %2, 136
@@ -117,8 +119,7 @@ entry:
   ret i1 %6
 }
 
-; 10 occurrences:
-; linux/optimized/intel_snps_phy.ll
+; 9 occurrences:
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/manage.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
@@ -129,7 +130,7 @@ entry:
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000318(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 255
   %3 = icmp ne i64 %2, 1
@@ -152,52 +153,11 @@ entry:
 ; slurm/optimized/job_mgr.ll
 ; z3/optimized/nlsat_explain.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp eq i32 %2, 0
   %4 = and i64 %0, 65536
-  %5 = icmp ne i64 %4, 0
-  %6 = or i1 %5, %3
-  ret i1 %6
-}
-
-; 1 occurrences:
-; hermes/optimized/HermesBuiltin.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 2
-  %3 = icmp eq i64 %2, 0
-  %4 = and i32 %0, 268435455
-  %5 = icmp ult i32 %4, 13
-  %6 = or i1 %5, %3
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/nfs4proc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 4096
-  %3 = icmp eq i32 %2, 0
-  %4 = and i64 %0, 17592186040320
-  %5 = icmp ugt i64 %4, 65536
-  %6 = or i1 %5, %3
-  ret i1 %6
-}
-
-; 3 occurrences:
-; postgres/optimized/d2s.ll
-; postgres/optimized/d2s_shlib.ll
-; postgres/optimized/d2s_srv.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 2046
-  %3 = icmp eq i32 %2, 0
-  %4 = and i64 %0, 4503599627370495
   %5 = icmp ne i64 %4, 0
   %6 = or i1 %5, %3
   ret i1 %6

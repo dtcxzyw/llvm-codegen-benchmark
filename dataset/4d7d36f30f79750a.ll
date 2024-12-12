@@ -42,7 +42,6 @@
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/ipv6_sockglue.ll
-; linux/optimized/mii.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/pi.ll
@@ -114,6 +113,7 @@
 ; wolfssl/optimized/dh.c.ll
 ; z3/optimized/lar_solver.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zlib/optimized/gzread.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
@@ -124,7 +124,7 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; jq/optimized/utf16_be.ll
 ; jq/optimized/utf16_le.ll
@@ -132,7 +132,6 @@ entry:
 ; oniguruma/optimized/utf16_be.ll
 ; oniguruma/optimized/utf16_le.ll
 ; openjdk/optimized/generateOopMap.ll
-; php/optimized/output.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i1 %1) #0 {
 entry:
@@ -142,13 +141,11 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; c3c/optimized/llvm_codegen_builtins.c.ll
 ; gromacs/optimized/pairlistparams.cpp.ll
-; icu/optimized/ucnv2022.ll
 ; linux/optimized/dev_ioctl.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
-; postgres/optimized/oracle_compat.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i1 %1) #0 {
 entry:

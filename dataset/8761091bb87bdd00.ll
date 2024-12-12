@@ -1,11 +1,10 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; hdf5/optimized/H5Oalloc.c.ll
 ; hdf5/optimized/H5Oint.c.ll
-; linux/optimized/nfs3xdr.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution1d_x86_fma.cpp.ll
@@ -23,7 +22,7 @@ define i64 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 1
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
@@ -36,7 +35,7 @@ define i64 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 7
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
@@ -75,7 +74,7 @@ define i64 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 22
   %4 = and i32 %3, 1
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7

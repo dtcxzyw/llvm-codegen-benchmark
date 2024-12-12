@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; llvm/optimized/TargetLoweringObjectFile.cpp.ll
 ; luau/optimized/Transpiler.cpp.ll
 ; openjdk/optimized/instanceStackChunkKlass.ll
 ; rust-analyzer-rs/optimized/32bq2465pah9s0xr.ll
 ; slurm/optimized/fed_mgr.ll
 ; wireshark/optimized/packet-acdr.c.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, ptr %2) #0 {
 entry:

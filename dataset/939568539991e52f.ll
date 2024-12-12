@@ -4,7 +4,7 @@
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i16 %0, i8 %1) #0 {
+define i8 @func0000000000000061(i16 %0, i8 %1) #0 {
 entry:
   %2 = sub nuw nsw i8 16, %1
   %3 = icmp eq i16 %0, 0
@@ -27,7 +27,7 @@ entry:
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000034(i16 %0, i8 %1) #0 {
+define i8 @func0000000000000064(i16 %0, i8 %1) #0 {
 entry:
   %2 = sub nuw nsw i8 32, %1
   %3 = icmp ult i16 %0, 2

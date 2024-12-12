@@ -1,4 +1,4 @@
-func0000000000000064:                   # @func0000000000000064
+func00000000000000d4:                   # @func00000000000000d4
 	lui	a0, 524288
 	addi	a0, a0, 12
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -8,7 +8,7 @@ func0000000000000064:                   # @func0000000000000064
 	vmerge.vim	v8, v8, 1, v0
 	vsll.vi	v8, v8, 14
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	li	a0, 64
 	lui	a1, 8
 	vsetivli	zero, 8, e32, m2, ta, ma

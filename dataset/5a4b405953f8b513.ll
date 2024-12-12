@@ -56,7 +56,7 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i8 %0) #0 {
+define i32 @func0000000000000042(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 11
   %2 = icmp eq i8 %0, 7
@@ -70,10 +70,24 @@ entry:
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i8 %0) #0 {
+define i32 @func0000000000000048(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 127
   %2 = icmp ult i8 %0, 32
+  %3 = or i1 %2, %1
+  %4 = select i1 %3, i32 -1, i32 1
+  ret i32 %4
+}
+
+; 3 occurrences:
+; postgres/optimized/wchar.ll
+; postgres/optimized/wchar_shlib.ll
+; postgres/optimized/wchar_srv.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000068(i8 %0) #0 {
+entry:
+  %1 = icmp eq i8 %0, 127
+  %2 = icmp samesign ult i8 %0, 32
   %3 = or i1 %2, %1
   %4 = select i1 %3, i32 -1, i32 1
   ret i32 %4

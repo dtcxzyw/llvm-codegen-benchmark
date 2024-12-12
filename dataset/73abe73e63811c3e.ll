@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/x86func.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 16
-  %3 = and i32 %0, 255
-  %4 = or disjoint i32 %3, %2
-  %5 = add nuw nsw i32 %4, 369099008
-  ret i32 %5
-}
-
 ; 2 occurrences:
 ; php/optimized/html.ll
 ; sentencepiece/optimized/util.cc.ll

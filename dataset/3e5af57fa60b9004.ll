@@ -12,21 +12,13 @@ entry:
   ret i64 %1
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; redis/optimized/quicklist.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0) #0 {
 entry:
-  %.lobit = ashr i64 %0, 63
-  ret i64 %.lobit
-}
-
-; 1 occurrences:
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0) #0 {
-entry:
-  %1 = icmp ult i64 %0, 2
+  %1 = icmp slt i64 %0, 1
   %2 = sext i1 %1 to i64
   ret i64 %2
 }

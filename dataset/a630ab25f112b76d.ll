@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; bullet3/optimized/b3File.ll
 ; clamav/optimized/yara_parser.c.ll
 ; cpython/optimized/compile.ll
@@ -19,12 +19,13 @@
 ; llvm/optimized/ModuleSymbolTable.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/expandedrecord.ll
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
-; rocksdb/optimized/data_block_footer.cc.ll
 ; ruby/optimized/date_parse.ll
 ; ruby/optimized/parse.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
@@ -36,6 +37,26 @@ define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = or i32 %0, 64
   %3 = icmp eq i8 %1, 33
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 10 occurrences:
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/dtoa.cc.ll
+; linux/optimized/intel_lrc.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
+; quickjs/optimized/libbf.ll
+; redis/optimized/siphash.ll
+; ruby/optimized/parser_st.ll
+; ruby/optimized/st.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
+; wireshark/optimized/packet-diameter.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000024(i32 %0, i8 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, 32
+  %3 = icmp ult i8 %1, 26
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
@@ -79,7 +100,7 @@ entry:
 ; yosys/optimized/share.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 2
   %3 = icmp eq i8 %1, 10
@@ -99,44 +120,31 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; cpython/optimized/fileutils.ll
 ; icu/optimized/wrtjava.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/xhci-ring.ll
 ; php/optimized/decode.ll
+; postgres/optimized/rangetypes_gist.ll
+; qemu/optimized/hw_9pfs_9p.c.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
-  %2 = or disjoint i32 %0, 63232
+  %2 = or disjoint i32 %0, 1024
   %3 = icmp slt i8 %1, 0
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
 
-; 6 occurrences:
-; jq/optimized/jv_dtoa.ll
-; libquic/optimized/dtoa.cc.ll
-; linux/optimized/intel_lrc.ll
-; llvm/optimized/ELFObjectFile.cpp.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
-; wireshark/optimized/packet-diameter.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
-entry:
-  %2 = or disjoint i32 %0, 32
-  %3 = icmp ult i8 %1, 26
-  %4 = select i1 %3, i32 %2, i32 %0
-  ret i32 %4
-}
-
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/hid-core.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
+; redis/optimized/siphash.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
@@ -151,7 +159,7 @@ entry:
 ; openexr/optimized/write_header.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 1024
   %3 = icmp ugt i8 %1, 31
@@ -173,7 +181,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvmbcs.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i8 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, -1895792640
   %3 = icmp slt i8 %1, 0

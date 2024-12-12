@@ -1,5 +1,5 @@
 
-; 1402 occurrences:
+; 1431 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -26,7 +26,6 @@
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/ifDelay.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTime.c.ll
 ; abc/optimized/llb1Cluster.c.ll
 ; abc/optimized/mapperMatch.c.ll
@@ -81,6 +80,17 @@
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within.ll
 ; box2d/optimized/b2_chain_shape.cpp.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
@@ -490,7 +500,6 @@
 ; gromacs/optimized/slar1vx.cpp.ll
 ; gromacs/optimized/slarrbx.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
-; gromacs/optimized/slarrfx.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
@@ -498,11 +507,9 @@
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; gromacs/optimized/slasrt.cpp.ll
 ; gromacs/optimized/slasrt2.cpp.ll
-; gromacs/optimized/slassq.cpp.ll
 ; gromacs/optimized/sm_compare.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; gromacs/optimized/sm_keywords.cpp.ll
@@ -564,6 +571,16 @@
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; llvm/optimized/VLIWMachineScheduler.cpp.ll
 ; luau/optimized/Conformance.test.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_line.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_draw_triangle.ll
+; lvgl/optimized/lv_draw_vector.ll
+; lvgl/optimized/lv_matrix.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
@@ -597,7 +614,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -627,7 +643,6 @@
 ; meshlab/optimized/io_expe.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mesh_document.cpp.ll
 ; meshlab/optimized/mesh_graph.cpp.ll
@@ -668,7 +683,6 @@
 ; minetest/optimized/CSceneManager.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/activeobjectmgr.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientenvironment.cpp.ll
@@ -748,7 +762,6 @@
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
 ; mitsuba3/optimized/principledthin.cpp.ll
@@ -1393,6 +1406,22 @@
 ; z3/optimized/dl_mk_magic_sets.cpp.ll
 ; z3/optimized/q_queue.cpp.ll
 ; z3/optimized/qi_queue.cpp.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zfp/optimized/encode1f.c.ll
 ; zfp/optimized/encode2f.c.ll
 ; zfp/optimized/encode3f.c.ll
@@ -1409,7 +1438,7 @@ entry:
   ret i1 %2
 }
 
-; 1159 occurrences:
+; 1178 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abc.c.ll
@@ -1438,7 +1467,6 @@ entry:
 ; abc/optimized/ifLibLut.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ifReduce.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTime.c.ll
 ; abc/optimized/mapperLib.c.ll
 ; abc/optimized/mapperMatch.c.ll
@@ -1490,6 +1518,14 @@ entry:
 ; assimp/optimized/XFileImporter.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; box2d/optimized/b2_chain_shape.cpp.ll
 ; box2d/optimized/b2_collide_circle.cpp.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
@@ -1805,25 +1841,16 @@ entry:
 ; gromacs/optimized/slaebz.cpp.ll
 ; gromacs/optimized/slaed6.cpp.ll
 ; gromacs/optimized/slaev2.cpp.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; gromacs/optimized/slagts.cpp.ll
-; gromacs/optimized/slange.cpp.ll
-; gromacs/optimized/slanst.cpp.ll
 ; gromacs/optimized/slansy.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
 ; gromacs/optimized/slarrbx.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
-; gromacs/optimized/slarrfx.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/slartg.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slascl.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
 ; gromacs/optimized/slasd2.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
 ; gromacs/optimized/slasd7.cpp.ll
-; gromacs/optimized/slasq1.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
@@ -1893,6 +1920,17 @@ entry:
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; llvm/optimized/StackSlotColoring.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_line.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_draw_triangle.ll
+; lvgl/optimized/lv_draw_vector.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_matrix.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
@@ -1923,7 +1961,6 @@ entry:
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -1949,7 +1986,6 @@ entry:
 ; meshlab/optimized/io_expe.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mesh_document.cpp.ll
 ; meshlab/optimized/mesh_model.cpp.ll
@@ -2027,7 +2063,6 @@ entry:
 ; minetest/optimized/serverpackethandler.cpp.ll
 ; minetest/optimized/settings.cpp.ll
 ; minetest/optimized/sky.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
 ; minetest/optimized/tool.cpp.ll
 ; minetest/optimized/touchscreengui.cpp.ll
@@ -2562,6 +2597,19 @@ entry:
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; yoga/optimized/FlexLine.cpp.ll
 ; z3/optimized/cost_evaluator.cpp.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8mv6d566jv1jdve4gk2kn2bhk.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
@@ -2576,7 +2624,7 @@ entry:
   ret i1 %2
 }
 
-; 147 occurrences:
+; 149 occurrences:
 ; abc/optimized/mapperUtils.c.ll
 ; abc/optimized/nwkTiming.c.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -2585,6 +2633,8 @@ entry:
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; assimp/optimized/ObjExporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3DynamicBvh.ll
@@ -2619,7 +2669,6 @@ entry:
 ; eastl/optimized/TestSet.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
-; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; gromacs/optimized/pme_load_balancing.cpp.ll
 ; gromacs/optimized/position_restraints.cpp.ll
@@ -2720,6 +2769,7 @@ entry:
 ; xgboost/optimized/stats.cc.ll
 ; z3/optimized/dl_mk_simple_joins.cpp.ll
 ; z3/optimized/qi_queue.cpp.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
@@ -2731,7 +2781,7 @@ entry:
   ret i1 %2
 }
 
-; 542 occurrences:
+; 626 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcSweep.c.ll
 ; abc/optimized/abcTiming.c.ll
@@ -2779,6 +2829,17 @@ entry:
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/src.ll
+; boost/optimized/within.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/b3TypedConstraint.ll
@@ -2863,7 +2924,6 @@ entry:
 ; gromacs/optimized/box.cpp.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/constraint_gpu_helpers.cpp.ll
-; gromacs/optimized/densityfittingparameters.cpp.ll
 ; gromacs/optimized/gmx_enemat.cpp.ll
 ; gromacs/optimized/gmx_sham.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
@@ -2874,7 +2934,6 @@ entry:
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; gromacs/optimized/pairlist_tuning.cpp.ll
 ; gromacs/optimized/params.cpp.ll
-; gromacs/optimized/particletype.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
 ; gromacs/optimized/readir.cpp.ll
 ; gromacs/optimized/readrot.cpp.ll
@@ -2922,6 +2981,12 @@ entry:
 ; luau/optimized/lobject.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; luau/optimized/lvmutils.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -2931,7 +2996,6 @@ entry:
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_layer.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -2982,7 +3046,6 @@ entry:
 ; minetest/optimized/server.cpp.ll
 ; minetest/optimized/shader.cpp.ll
 ; minetest/optimized/test_map_settings_manager.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; minetest/optimized/unit_sao.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/blender.cpp.ll
@@ -3271,6 +3334,77 @@ entry:
 ; yoga/optimized/LayoutResults.cpp.ll
 ; yoga/optimized/YGNodeStyle.cpp.ll
 ; z3/optimized/cost_evaluator.cpp.ll
+; zed-rs/optimized/04ipwwk9ew5ywym1qtwkcf1qw.ll
+; zed-rs/optimized/0bnc87yviwo8pzd5mdfzedrf9.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0shzia4rq4g6h8kjkikjoiomb.ll
+; zed-rs/optimized/0x7wqp5rissflodl1t9m66szg.ll
+; zed-rs/optimized/1058j2jmz8vfpblqgu0wznwf9.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1ky49x1o0z7to43mxvl189ge3.ll
+; zed-rs/optimized/1v7j1lpugnisv9daukqm09uho.ll
+; zed-rs/optimized/2b5epevbd7jhjlkz6ehj52cc4.ll
+; zed-rs/optimized/2cln4wwtbatakisd00mkyigjx.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/2oaph1cqqe4jwh9vgndt1otw8.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/33rkokx33jojn4e2zze21122o.ll
+; zed-rs/optimized/3ovedgaw1yidfseciw93ubpv7.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/3yuucpqql1loab77fqweoks3j.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4f1otmtjdo0hqm1ge01hvpo1r.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4rde7ei8d9umgrx3gilbh5pcm.ll
+; zed-rs/optimized/4vnbxl9b4xhh0fa5m7w4apnkb.ll
+; zed-rs/optimized/4yqh3b8m7vpg06mecus93mbzu.ll
+; zed-rs/optimized/5bn6wrz9qaifqeni05lf8cibk.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5vh1wf9hqnwdftlb6xe6c9c43.ll
+; zed-rs/optimized/5vqglwavs7x5ah6w1ejgztrvj.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/5y1wsigytdd2raxioqt092gnl.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/7fpylfgkffh7dvcu6aaffmldn.ll
+; zed-rs/optimized/7z9gx9vsexnpaf0yku1i7eka7.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8bdv6qixt9qul7ot3pqkuv6y0.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9dixi1f5n9fsuw6rta4qv392p.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/9fsh6tyjlyb0bbg5pjtpyx575.ll
+; zed-rs/optimized/9kzypu599rxw1s8z0tdtjo3oe.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/9pzx6flqzrwt1xqpmg7mx7dne.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/aeb08iti0f05mbycbtihrb869.ll
+; zed-rs/optimized/aerl806rizuzji5cn088tqvgo.ll
+; zed-rs/optimized/ajrgaboxjz62fw3tsgontcvol.ll
+; zed-rs/optimized/b24zfxrgx5tc187baf12e3yvr.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/b9n71i4lowioxxv2urf6nba05.ll
+; zed-rs/optimized/bi6oar65okyh7kr2v7xl4jtt8.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/coubwx0ymivp1eppm9661q4wd.ll
+; zed-rs/optimized/csxkqny0wxpy2b3vgxe7eo7wr.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
+; zed-rs/optimized/d2w35dg2d82avud97ap9t4v42.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/d9ca0x39ei2n59u3v4jxmnvzg.ll
+; zed-rs/optimized/dqctrxtodg7m16ametxw8bpap.ll
+; zed-rs/optimized/e9q9l7f0w4ywe2gh59is8xhs3.ll
+; zed-rs/optimized/ebs384vwi5poocupeo8nd3jof.ll
+; zed-rs/optimized/egm0sjwfqjsh1euhtb2jbtx6o.ll
+; zed-rs/optimized/f1xl8k103at60m3wnvb71vdir.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
@@ -3281,7 +3415,7 @@ entry:
   ret i1 %2
 }
 
-; 355 occurrences:
+; 374 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/mapperTime.c.ll
 ; abc/optimized/sclUpsize.c.ll
@@ -3289,6 +3423,13 @@ entry:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
@@ -3400,8 +3541,6 @@ entry:
 ; gromacs/optimized/sfactor.cpp.ll
 ; gromacs/optimized/slaebz.cpp.ll
 ; gromacs/optimized/slaed6.cpp.ll
-; gromacs/optimized/slagtf.cpp.ll
-; gromacs/optimized/slamrg.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
 ; gromacs/optimized/slarrbx.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
@@ -3433,6 +3572,7 @@ entry:
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/BalancedPartitioning.cpp.ll
 ; llvm/optimized/FunctionImport.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/decorate_background.cpp.ll
@@ -3499,7 +3639,6 @@ entry:
 ; oiio/optimized/filter.cpp.ll
 ; oiio/optimized/imagebufalgo_compare.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/alignment_pattern.cpp.ll
 ; opencv/optimized/ar_hmdb_benchmark.cpp.ll
@@ -3633,6 +3772,20 @@ entry:
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; yoga/optimized/Cache.cpp.ll
 ; z3/optimized/qi_queue.cpp.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/a5zoltfqgma86dzb1rp0ilkm9.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; zxing/optimized/ODCodabarReader.cpp.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
 ; zxing/optimized/ODCode39Reader.cpp.ll
@@ -3644,7 +3797,7 @@ entry:
   ret i1 %2
 }
 
-; 366 occurrences:
+; 373 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abc.c.ll
@@ -3813,7 +3966,6 @@ entry:
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
@@ -3882,7 +4034,6 @@ entry:
 ; oiio/optimized/environment.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; openblas/optimized/slamch.c.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
@@ -3986,7 +4137,6 @@ entry:
 ; php/optimized/ir.ll
 ; php/optimized/ir_cfg.ll
 ; qdrant-rs/optimized/4iacc535829shmz2.ll
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll
@@ -4010,6 +4160,16 @@ entry:
 ; xgboost/optimized/multiclass_obj.cc.ll
 ; xgboost/optimized/quantile.cc.ll
 ; yoga/optimized/Cache.cpp.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(float %0, float %1) #0 {
@@ -4018,7 +4178,7 @@ entry:
   ret i1 %2
 }
 
-; 294 occurrences:
+; 305 occurrences:
 ; abc/optimized/ifLibLut.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; abc/optimized/timMan.c.ll
@@ -4046,6 +4206,7 @@ entry:
 ; assimp/optimized/TriangulateProcess.cpp.ll
 ; assimp/optimized/X3DExporter.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/default_filter_factory.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; box2d/optimized/b2_motor_joint.cpp.ll
 ; box2d/optimized/b2_mouse_joint.cpp.ll
@@ -4090,7 +4251,6 @@ entry:
 ; fmt/optimized/chrono-test.cc.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/constr.cpp.ll
-; gromacs/optimized/densityfittingparameters.cpp.ll
 ; gromacs/optimized/exclusionchecker.cpp.ll
 ; gromacs/optimized/forcerec.cpp.ll
 ; gromacs/optimized/gmx_anaeig.cpp.ll
@@ -4138,6 +4298,8 @@ entry:
 ; llvm/optimized/RegAllocEvictionAdvisor.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -4193,7 +4355,6 @@ entry:
 ; minetest/optimized/player_sao.cpp.ll
 ; minetest/optimized/profilergraph.cpp.ll
 ; minetest/optimized/sound.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/blender.cpp.ll
@@ -4214,7 +4375,6 @@ entry:
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; oiio/optimized/imagebufalgo_compare.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; openblas/optimized/slamch.c.ll
 ; opencv/optimized/agast.cpp.ll
 ; opencv/optimized/approx.cpp.ll
@@ -4313,6 +4473,17 @@ entry:
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; z3/optimized/cost_evaluator.cpp.ll
+; zed-rs/optimized/05btlo7ldoepff8rc85nwkmca.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(float %0, float %1) #0 {
 entry:
@@ -4320,11 +4491,14 @@ entry:
   ret i1 %2
 }
 
-; 114 occurrences:
+; 118 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/sclSize.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_wheel_joint.cpp.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/b3TypedConstraint.ll
@@ -4422,9 +4596,7 @@ entry:
 ; php/optimized/ir.ll
 ; php/optimized/ir_cfg.ll
 ; postgres/optimized/float.ll
-; qdrant-rs/optimized/35v8qqto4jkxz482.ll
 ; qdrant-rs/optimized/4iacc535829shmz2.ll
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
 ; raylib/optimized/rshapes.c.ll
 ; recastnavigation/optimized/DetourCommon.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
@@ -4435,6 +4607,9 @@ entry:
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; z3/optimized/cost_evaluator.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(float %0, float %1) #0 {
 entry:
@@ -4442,11 +4617,15 @@ entry:
   ret i1 %2
 }
 
-; 161 occurrences:
+; 170 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; arrow/optimized/compare.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; box2d/optimized/b2_circle_shape.cpp.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -4604,6 +4783,11 @@ entry:
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; z3/optimized/cost_evaluator.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(float %0, float %1) #0 {
 entry:
@@ -4611,9 +4795,11 @@ entry:
   ret i1 %2
 }
 
-; 113 occurrences:
+; 115 occurrences:
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
 ; box2d/optimized/b2_contact_manager.cpp.ll
 ; box2d/optimized/b2_world.cpp.ll
@@ -4632,7 +4818,6 @@ entry:
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/btSphereBoxCollisionAlgorithm.ll
 ; bullet3/optimized/btTriangleShapeEx.ll
-; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -4725,6 +4910,7 @@ entry:
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; yoga/optimized/FlexLine.cpp.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(float %0, float %1) #0 {
 entry:

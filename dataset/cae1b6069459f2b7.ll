@@ -1,8 +1,12 @@
 
-; 42 occurrences:
+; 46 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
 ; gromacs/optimized/transformations.cpp.ll
@@ -43,17 +47,21 @@
 ; openvdb/optimized/Prune.cc.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000146(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = udiv exact i64 %3, 12
   %5 = add nsw i64 %4, -1
   %6 = lshr i64 %5, 1
-  %7 = icmp sgt i64 %6, %0
+  %7 = icmp slt i64 %0, %6
   ret i1 %7
 }
 
-; 17 occurrences:
+; 21 occurrences:
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ipopt/optimized/IpTripletToCSRConverter.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/CGProfile.cpp.ll
@@ -72,13 +80,13 @@ entry:
 ; openusd/optimized/meshUtil.cpp.ll
 ; openvdb/optimized/Prune.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = udiv exact i64 %3, 12
   %5 = add nsw i64 %4, -2
   %6 = lshr exact i64 %5, 1
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
@@ -110,13 +118,13 @@ entry:
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = udiv exact i64 %3, 24
   %5 = add nsw i64 %4, -2
   %6 = lshr i64 %5, 1
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 

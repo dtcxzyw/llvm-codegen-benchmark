@@ -28,6 +28,11 @@ func000000000000001a:                   # @func000000000000001a
 	leaq	-3(%rdi), %rax
 	shrq	%rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	subq	%rsi, %rdi
+	leaq	-2(%rdi), %rax
+	shrq	%rax
+	retq
 func000000000000001c:                   # @func000000000000001c
 	subq	%rsi, %rdi
 	movl	$4294963200, %eax               # imm = 0xFFFFF000

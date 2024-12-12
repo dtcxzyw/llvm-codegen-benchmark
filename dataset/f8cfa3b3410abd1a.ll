@@ -14,7 +14,7 @@
 ; wireshark/optimized/packet-f5ethtrailer.c.ll
 ; wireshark/optimized/packet-h223.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 1
   %4 = select i1 %3, i32 %0, i32 %1
@@ -22,7 +22,8 @@ entry:
   ret i1 %5
 }
 
-; 67 occurrences:
+; 68 occurrences:
+; boost/optimized/formatter.ll
 ; icu/optimized/alphaindex.ll
 ; icu/optimized/caniter.ll
 ; icu/optimized/coll.ll
@@ -91,7 +92,7 @@ entry:
 ; libwebp/optimized/enc.c.ll
 ; openjdk/optimized/jcphuff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
   %4 = select i1 %3, i32 %0, i32 %1
@@ -103,7 +104,7 @@ entry:
 ; stockfish/optimized/search.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 196
   %4 = select i1 %3, i32 %0, i32 %1
@@ -115,7 +116,7 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; linux/optimized/udp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i32 %0, i32 %1
@@ -199,7 +200,7 @@ entry:
 ; libphonenumber/optimized/phonenumber_offline_geocoder.cc.ll
 ; libphonenumber/optimized/regexp_adapter_icu.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
   %4 = select i1 %3, i32 %0, i32 %1
@@ -207,7 +208,7 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 11 occurrences:
 ; icu/optimized/alphaindex.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/collationruleparser.ll
@@ -218,12 +219,9 @@ entry:
 ; icu/optimized/regexcmp.ll
 ; icu/optimized/timezone.ll
 ; icu/optimized/uni2name.ll
-; icu/optimized/unisetspan.ll
-; icu/optimized/uts46.ll
-; icu/optimized/vtzone.ll
 ; libphonenumber/optimized/phonenumbermatcher_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000c8(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
   %4 = select i1 %3, i32 %0, i32 %1
@@ -234,19 +232,20 @@ entry:
 ; 1 occurrences:
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i32 %0, i32 %1
-  %5 = icmp ugt i32 %4, 7
+  %5 = icmp samesign ugt i32 %4, 7
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_text.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i32 %0, i32 %1
@@ -258,7 +257,7 @@ entry:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000106(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, -258
   %4 = select i1 %3, i32 %0, i32 %1
@@ -270,7 +269,7 @@ entry:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, -258
   %4 = select i1 %3, i32 %0, i32 %1
@@ -282,7 +281,7 @@ entry:
 ; linux/optimized/extents.ll
 ; wireshark/optimized/packet-ospf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 9
   %4 = select i1 %3, i32 %0, i32 %1
@@ -291,20 +290,9 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/ff-memless.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = icmp ugt i16 %2, 180
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = icmp ugt i32 %4, 90
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; linux/optimized/fast_commit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, -32767
   %4 = select i1 %3, i32 %0, i32 %1
@@ -315,7 +303,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/i9xx_wm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 7
   %4 = select i1 %3, i32 %0, i32 %1
@@ -366,11 +354,24 @@ entry:
 ; icu/optimized/vtzone.ll
 ; icu/optimized/xmlparser.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000c6(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = icmp slt i32 %4, 1025
+  ret i1 %5
+}
+
+; 3 occurrences:
+; icu/optimized/unisetspan.ll
+; icu/optimized/uts46.ll
+; icu/optimized/vtzone.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d8(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = icmp slt i16 %2, 0
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = icmp samesign ugt i32 %4, 1
   ret i1 %5
 }
 
@@ -380,7 +381,7 @@ entry:
 ; icu/optimized/servlk.ll
 ; icu/optimized/transreg.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000cc(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
   %4 = select i1 %3, i32 %0, i32 %1
@@ -392,11 +393,11 @@ entry:
 ; icu/optimized/reslist.ll
 ; icu/optimized/unistr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000d4(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
   %4 = select i1 %3, i32 %0, i32 %1
-  %5 = icmp ult i32 %4, 2147483638
+  %5 = icmp samesign ult i32 %4, 2147483638
   ret i1 %5
 }
 

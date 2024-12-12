@@ -12,9 +12,10 @@ entry:
   ret ptr %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
+; opencv/optimized/tree.cpp.ll
 ; postgres/optimized/jsonpath.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind

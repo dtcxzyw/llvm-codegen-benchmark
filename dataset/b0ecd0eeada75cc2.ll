@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 14 occurrences:
+; boost/optimized/to_chars.ll
 ; llvm/optimized/ItaniumCXXABI.cpp.ll
 ; qemu/optimized/audio_audio.c.ll
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
@@ -11,6 +12,8 @@
 ; wasmtime-rs/optimized/1f0cdl9sv7ergjr2.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; zed-rs/optimized/0fv2ekz5cqmfp10c07ot56iad.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; darktable/optimized/colorpicker.c.ll
 ; darktable/optimized/introspection_channelmixer.c.ll
 ; darktable/optimized/introspection_clahe.c.ll
@@ -23,6 +23,7 @@
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/primitive.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
@@ -86,7 +87,7 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; oiio/optimized/maketexture.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
@@ -99,6 +100,7 @@ entry:
 ; pbrt-v4/optimized/primitive.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(float %0, float %1) #0 {
 entry:

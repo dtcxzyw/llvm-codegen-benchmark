@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$32, %rax
 	setb	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	andq	$-8, %rsi
 	leaq	7(%rdi,%rsi), %rax
 	cmpq	$8, %rax

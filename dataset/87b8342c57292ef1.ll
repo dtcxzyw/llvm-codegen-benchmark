@@ -24,7 +24,7 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 8
   %5 = mul nuw nsw i32 %4, 77
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -37,7 +37,7 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 5
   %5 = mul nuw nsw i32 %4, 17
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

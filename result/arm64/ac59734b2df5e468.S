@@ -1,52 +1,28 @@
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmhi	v3.2d, v2.2d, v5.2d
-	cmhi	v4.2d, v1.2d, v4.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bif	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w0, w8, hi
 	ret
                                         // -- End function
-func00000000000001f8:                   // @func00000000000001f8
+func00000000000003f8:                   // @func00000000000003f8
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmhi	v3.2d, v2.2d, v5.2d
-	cmhi	v4.2d, v1.2d, v4.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bif	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w0, w8, hi
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmgt	v3.2d, v2.2d, v5.2d
-	cmgt	v4.2d, v1.2d, v4.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bif	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w0, w8, gt
 	ret
                                         // -- End function
-func00000000000000a8:                   // @func00000000000000a8
+func0000000000000148:                   // @func0000000000000148
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	ushll	v4.2d, v0.2s, #0
-	ushll2	v5.2d, v0.4s, #0
-	sub	v1.2d, v1.2d, v3.2d
-	cmhi	v3.2d, v2.2d, v5.2d
-	cmhi	v4.2d, v1.2d, v4.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	uzp1	v3.4s, v4.4s, v3.4s
-	bif	v0.16b, v1.16b, v3.16b
+	sub	x8, x1, x2
+	cmp	x8, w0, uxtw
+	csel	w0, w0, w8, hi
 	ret
                                         // -- End function

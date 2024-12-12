@@ -36,7 +36,7 @@ entry:
   ret i32 %4
 }
 
-; 30 occurrences:
+; 27 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -45,7 +45,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; flac/optimized/bitwriter.c.ll
 ; hermes/optimized/APInt.cpp.ll
-; icu/optimized/gregoimp.ll
 ; libquic/optimized/shift.c.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/mpi-bit.ll
@@ -54,15 +53,13 @@ entry:
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; openblas/optimized/dsptrf.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; php/optimized/ir_gcm.ll
 ; postgres/optimized/network_selfuncs.ll
-; postgres/optimized/refint.ll
 ; postgres/optimized/spgdoinsert.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-dhcp.c.ll
+; wolfssl/optimized/sp_int.c.ll
 ; xgboost/optimized/charconv.cc.ll
 ; yosys/optimized/BigUnsigned.ll
 ; yosys/optimized/Solver.ll
@@ -72,7 +69,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = add nuw nsw i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -84,7 +81,6 @@ entry:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
-; abc/optimized/satUtil.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/fse_decompress.c.ll
@@ -104,6 +100,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/IrAnalysis.cpp.ll
 ; luau/optimized/OptimizeDeadStore.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
@@ -148,7 +145,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = add nuw nsw i32 %2, 7
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -181,7 +178,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = add nuw nsw i32 %2, 1
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -319,7 +316,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = add nsw i32 %2, -1
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 626 occurrences:
+; 627 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
@@ -23,6 +23,11 @@
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/topology.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; c3c/optimized/json_output.c.ll
 ; c3c/optimized/llvm_codegen_type.c.ll
@@ -168,10 +173,8 @@
 ; linux/optimized/ring_buffer.ll
 ; linux/optimized/rmap.ll
 ; linux/optimized/set_memory.ll
-; linux/optimized/severity.ll
 ; linux/optimized/sys.ll
 ; linux/optimized/tcp.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/virtio_console.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/vmalloc.ll
@@ -355,7 +358,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -547,7 +549,6 @@
 ; ruby/optimized/rjit_c.ll
 ; ruby/optimized/string.ll
 ; ruby/optimized/stringio.ll
-; ruby/optimized/type.ll
 ; ruby/optimized/vm.ll
 ; ruby/optimized/vm_backtrace.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
@@ -619,13 +620,13 @@
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract.ll
 ; yosys/optimized/ezsat.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/proc_dlatch.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/yosys.ll
 ; z3/optimized/aig.cpp.ll
 ; z3/optimized/factor_equivs.cpp.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -676,11 +677,11 @@ entry:
 ; llvm/optimized/OSTargets.cpp.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0) #0 {
+define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
   %2 = and i64 %1, 532676608
-  %3 = icmp ult i64 %2, 12582912
+  %3 = icmp samesign ult i64 %2, 12582912
   ret i1 %3
 }
 
@@ -688,11 +689,11 @@ entry:
 ; clamav/optimized/unzip.c.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
+define i1 @func0000000000000018(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
   %2 = and i64 %1, 4294967294
-  %3 = icmp ugt i64 %2, 45
+  %3 = icmp samesign ugt i64 %2, 45
   ret i1 %3
 }
 

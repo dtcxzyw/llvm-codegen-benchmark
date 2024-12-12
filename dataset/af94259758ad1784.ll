@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/instanceKlass.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000111(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000221(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 1
   %3 = select i1 %2, i32 3, i32 0
@@ -16,7 +16,7 @@ entry:
 ; openexr/optimized/write_header.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000068(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i32 2, i32 4098
@@ -30,7 +30,7 @@ entry:
 ; eastl/optimized/TestBitset.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000061(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 123
   %3 = select i1 %2, i32 5, i32 4

@@ -1,16 +1,16 @@
 
-%"struct.rocksdb::CacheAlignedWrapper.2500759" = type { %"class.rocksdb::port::Mutex.2500760", [24 x i8] }
-%"class.rocksdb::port::Mutex.2500760" = type { %union.pthread_mutex_t.2500761 }
-%union.pthread_mutex_t.2500761 = type { %struct.__pthread_mutex_s.2500762 }
-%struct.__pthread_mutex_s.2500762 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2500763 }
-%struct.__pthread_internal_list.2500763 = type { ptr, ptr }
-%struct.hlist_nulls_head.3373587 = type { ptr }
-%"class.eastl::basic_string.128.3718175" = type { %"class.eastl::compressed_pair.129.3718176" }
-%"class.eastl::compressed_pair.129.3718176" = type { %"class.eastl::compressed_pair_imp.130.3718177" }
-%"class.eastl::compressed_pair_imp.130.3718177" = type { %"struct.eastl::basic_string<char>::Layout.3718178" }
-%"struct.eastl::basic_string<char>::Layout.3718178" = type { %union.anon.131.3718179 }
-%union.anon.131.3718179 = type { %"struct.eastl::basic_string<char>::HeapLayout.3718164" }
-%"struct.eastl::basic_string<char>::HeapLayout.3718164" = type { ptr, i64, i64 }
+%"struct.rocksdb::CacheAlignedWrapper.2615971" = type { %"class.rocksdb::port::Mutex.2615972", [24 x i8] }
+%"class.rocksdb::port::Mutex.2615972" = type { %union.pthread_mutex_t.2615973 }
+%union.pthread_mutex_t.2615973 = type { %struct.__pthread_mutex_s.2615974 }
+%struct.__pthread_mutex_s.2615974 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2615975 }
+%struct.__pthread_internal_list.2615975 = type { ptr, ptr }
+%struct.hlist_nulls_head.3558355 = type { ptr }
+%"class.eastl::basic_string.128.3897401" = type { %"class.eastl::compressed_pair.129.3897402" }
+%"class.eastl::compressed_pair.129.3897402" = type { %"class.eastl::compressed_pair_imp.130.3897403" }
+%"class.eastl::compressed_pair_imp.130.3897403" = type { %"struct.eastl::basic_string<char>::Layout.3897404" }
+%"struct.eastl::basic_string<char>::Layout.3897404" = type { %union.anon.131.3897405 }
+%union.anon.131.3897405 = type { %"struct.eastl::basic_string<char>::HeapLayout.3897390" }
+%"struct.eastl::basic_string<char>::HeapLayout.3897390" = type { ptr, i64, i64 }
 
 ; 9 occurrences:
 ; linux/optimized/nf_conntrack_core.ll
@@ -27,7 +27,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2500759", ptr %0, i64 %4
+  %5 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2615971", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -38,11 +38,11 @@ entry:
 ; rocksdb/optimized/jemalloc_nodump_allocator.cc.ll
 ; rocksdb/optimized/memtable.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -71,11 +71,11 @@ entry:
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = lshr i64 %3, 6
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -96,11 +96,11 @@ entry:
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = lshr exact i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -108,21 +108,19 @@ entry:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; opencv/optimized/va_intel.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = lshr exact i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; linux/optimized/nf_conntrack_core.ll
 ; openblas/optimized/dtpmv_NLN.c.ll
 ; openblas/optimized/dtpmv_NLU.c.ll
-; openblas/optimized/dtpmv_TUN.c.ll
 ; openblas/optimized/dtpmv_TUU.c.ll
-; openblas/optimized/dtpsv_NUN.c.ll
 ; openblas/optimized/dtpsv_NUU.c.ll
 ; openblas/optimized/dtpsv_TLN.c.ll
 ; openblas/optimized/dtpsv_TLU.c.ll
@@ -131,7 +129,7 @@ define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = getelementptr %struct.hlist_nulls_head.3373587, ptr %0, i64 %4
+  %5 = getelementptr %struct.hlist_nulls_head.3558355, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -139,11 +137,11 @@ entry:
 ; casadi/optimized/sparsity.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = getelementptr nusw %"class.eastl::basic_string.128.3718175", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.eastl::basic_string.128.3897401", ptr %0, i64 %4
   ret ptr %5
 }
 

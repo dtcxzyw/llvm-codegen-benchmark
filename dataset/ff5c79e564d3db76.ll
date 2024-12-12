@@ -1,34 +1,27 @@
 
-%"struct.c4::yml::Parser::State.2661806" = type { i32, i64, i64, %"struct.c4::basic_substring.0.2661795", i64, %"struct.c4::yml::Location.2661793", %"struct.c4::yml::Parser::LineContents.2661807", i64 }
-%"struct.c4::basic_substring.0.2661795" = type { ptr, i64 }
-%"struct.c4::yml::Location.2661793" = type { %"struct.c4::yml::LineCol.2661794", %"struct.c4::basic_substring.0.2661795" }
-%"struct.c4::yml::LineCol.2661794" = type { i64, i64, i64 }
-%"struct.c4::yml::Parser::LineContents.2661807" = type { %"struct.c4::basic_substring.0.2661795", %"struct.c4::basic_substring.0.2661795", %"struct.c4::basic_substring.0.2661795", i64 }
-%"struct.boost::io::detail::format_item.3499619" = type <{ i32, [4 x i8], %"class.std::__cxx11::basic_string.3499430", %"class.std::__cxx11::basic_string.3499430", %"struct.boost::io::detail::stream_format_state.3499620", i64, i32, [4 x i8] }>
-%"class.std::__cxx11::basic_string.3499430" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3499431", i64, %union.anon.3499432 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3499431" = type { ptr }
-%union.anon.3499432 = type { i64, [8 x i8] }
-%"struct.boost::io::detail::stream_format_state.3499620" = type { i64, i64, i8, i32, i32, i32, %"class.boost::optional.3499604" }
-%"class.boost::optional.3499604" = type { %"class.boost::optional_detail::optional_base.3499613" }
-%"class.boost::optional_detail::optional_base.3499613" = type { i8, [7 x i8], %"class.boost::optional_detail::aligned_storage.3499614" }
-%"class.boost::optional_detail::aligned_storage.3499614" = type { %"union.boost::optional_detail::aligned_storage<std::locale>::dummy_u.3499615" }
-%"union.boost::optional_detail::aligned_storage<std::locale>::dummy_u.3499615" = type { [8 x i8] }
+%"struct.c4::yml::Parser::State.2774952" = type { i32, i64, i64, %"struct.c4::basic_substring.0.2774941", i64, %"struct.c4::yml::Location.2774939", %"struct.c4::yml::Parser::LineContents.2774953", i64 }
+%"struct.c4::basic_substring.0.2774941" = type { ptr, i64 }
+%"struct.c4::yml::Location.2774939" = type { %"struct.c4::yml::LineCol.2774940", %"struct.c4::basic_substring.0.2774941" }
+%"struct.c4::yml::LineCol.2774940" = type { i64, i64, i64 }
+%"struct.c4::yml::Parser::LineContents.2774953" = type { %"struct.c4::basic_substring.0.2774941", %"struct.c4::basic_substring.0.2774941", %"struct.c4::basic_substring.0.2774941", i64 }
+%"class.clang::SourceLocation.3222848" = type { i32 }
 
 ; 1 occurrences:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(i64 %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000064(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr %"struct.c4::yml::Parser::State.2661806", ptr %2, i64 %0
+  %3 = getelementptr %"struct.c4::yml::Parser::State.2774952", ptr %2, i64 %0
   %4 = getelementptr i8, ptr %3, i64 -288
-  %5 = getelementptr nusw i8, ptr %1, i64 40
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 40
   %6 = icmp ult i64 %0, 2
   %7 = select i1 %6, ptr %5, ptr %4
   ret ptr %7
 }
 
-; 149 occurrences:
+; 147 occurrences:
 ; casadi/optimized/switch.cpp.ll
+; llvm/optimized/IndexingContext.cpp.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
 ; nix/optimized/archive.ll
@@ -116,13 +109,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -178,12 +168,25 @@ entry:
 ; nix/optimized/why-depends.ll
 ; nix/optimized/worker.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(i64 %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000061(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr %"struct.boost::io::detail::format_item.3499619", ptr %2, i64 %0
-  %4 = getelementptr i8, ptr %3, i64 -96
-  %5 = getelementptr nusw i8, ptr %1, i64 80
+  %3 = getelementptr %"class.clang::SourceLocation.3222848", ptr %2, i64 %0
+  %4 = getelementptr i8, ptr %3, i64 -4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 24
   %6 = icmp eq i64 %0, 0
+  %7 = select i1 %6, ptr %5, ptr %4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; casadi/optimized/integrator.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000066(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr double, ptr %2, i64 %0
+  %4 = getelementptr i8, ptr %3, i64 -8
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1544
+  %6 = icmp slt i64 %0, 1
   %7 = select i1 %6, ptr %5, ptr %4
   ret ptr %7
 }

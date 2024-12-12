@@ -1,6 +1,9 @@
 
-; 10 occurrences:
+; 16 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; hyperscan/optimized/shengcompile.cpp.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
@@ -9,18 +12,22 @@
 ; postgres/optimized/bufpage.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
-; 119 occurrences:
+; 124 occurrences:
 ; actix-rs/optimized/1rmq6g519rw6hl6a.ll
 ; actix-rs/optimized/2l54a10og4z99516.ll
+; boost/optimized/static_string.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
@@ -53,7 +60,6 @@ entry:
 ; linux/optimized/ipmr.ll
 ; linux/optimized/mac.ll
 ; linux/optimized/mcast.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/nf_nat_proto.ll
 ; linux/optimized/nvm.ll
@@ -74,6 +80,10 @@ entry:
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_roller.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; minetest/optimized/collector.cpp.ll
 ; minetest/optimized/connection.cpp.ll
@@ -138,11 +148,12 @@ entry:
 ; wireshark/optimized/logcat.c.ll
 ; wireshark/optimized/packet-dect-nwk.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
@@ -157,53 +168,63 @@ entry:
 define i16 @func0000000000000004(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
-; 1 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = add nuw i16 %2, %0
+  %3 = add nuw i16 %0, %2
   ret i16 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; llvm/optimized/DAGISelMatcherGen.cpp.ll
 ; spike/optimized/vadc_vim.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000d(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i16
-  %3 = add nsw i16 %2, %0
+  %3 = add nsw i16 %0, %2
   ret i16 %3
 }
 
-; 5 occurrences:
+; 9 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; icu/optimized/ufmt_cmn.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; spike/optimized/vadc_vim.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i16
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   ret i16 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; cpython/optimized/obmalloc.ll
 ; faiss/optimized/partitioning.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; mimalloc/optimized/page.c.ll
 ; spike/optimized/vadc_vvm.ll
 ; spike/optimized/vadc_vxm.ll
@@ -213,7 +234,7 @@ entry:
 define i16 @func000000000000000c(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
@@ -223,7 +244,7 @@ entry:
 define i16 @func0000000000000005(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i16
-  %3 = add nsw i16 %2, %0
+  %3 = add nsw i16 %0, %2
   ret i16 %3
 }
 
@@ -233,7 +254,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = add nsw i16 %2, %0
+  %3 = add nsw i16 %0, %2
   ret i16 %3
 }
 
@@ -243,7 +264,7 @@ entry:
 define i16 @func0000000000000003(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   ret i16 %3
 }
 
@@ -253,7 +274,7 @@ entry:
 define i16 @func000000000000000e(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i16
-  %3 = add nuw i16 %2, %0
+  %3 = add nuw i16 %0, %2
   ret i16 %3
 }
 

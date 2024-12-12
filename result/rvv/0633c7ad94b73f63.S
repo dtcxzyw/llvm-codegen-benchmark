@@ -15,7 +15,7 @@ func000000000000000f:                   # @func000000000000000f
 	vand.vx	v12, v12, a0
 	vzext.vf8	v14, v10
 	vor.vv	v10, v12, v14
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func000000000000001f:                   # @func000000000000001f
 	vsetivli	zero, 4, e64, m2, ta, ma

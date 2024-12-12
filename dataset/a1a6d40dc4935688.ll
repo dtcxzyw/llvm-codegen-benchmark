@@ -1,7 +1,5 @@
 
-; 5 occurrences:
-; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/lpkAbcUtil.c.ll
+; 3 occurrences:
 ; libquic/optimized/exponentiation.c.ll
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll

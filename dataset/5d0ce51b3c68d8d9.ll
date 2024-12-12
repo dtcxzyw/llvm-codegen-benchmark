@@ -1,8 +1,6 @@
 
-; 3 occurrences:
-; abseil-cpp/optimized/cord_test.cc.ll
+; 1 occurrences:
 ; ipopt/optimized/IpTNLPAdapter.ll
-; opencv/optimized/hybrid_binarizer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -13,7 +11,7 @@ entry:
   ret i64 %6
 }
 
-; 18 occurrences:
+; 15 occurrences:
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/giaBidec.c.ll
 ; abc/optimized/giaMinLut2.c.ll
@@ -21,8 +19,6 @@ entry:
 ; abc/optimized/kitIsop.c.ll
 ; icu/optimized/unistr.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; openblas/optimized/dorcsd.c.ll
-; openblas/optimized/dorcsd2by1.c.ll
 ; opencv/optimized/edgeboxes.cpp.ll
 ; openjdk/optimized/Any3Byte.ll
 ; openjdk/optimized/Any4Byte.ll
@@ -31,13 +27,12 @@ entry:
 ; openjdk/optimized/AnyShort.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
-; redis/optimized/hdr_histogram.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -51,7 +46,19 @@ define i64 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
+  %6 = sext i32 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sgt i32 %2, 99
+  %4 = select i1 %3, i32 5, i32 %1
+  %5 = add i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -73,6 +80,19 @@ entry:
   ret i64 %6
 }
 
+; 2 occurrences:
+; abseil-cpp/optimized/cord_test.cc.ll
+; opencv/optimized/hybrid_binarizer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 67
+  %4 = select i1 %3, i32 -16, i32 %1
+  %5 = add nsw i32 %0, %4
+  %6 = sext i32 %5 to i64
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; opencv/optimized/approx.cpp.ll
 ; Function Attrs: nounwind
@@ -80,7 +100,7 @@ define i64 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -93,19 +113,6 @@ entry:
   %3 = icmp slt i32 %2, 2
   %4 = select i1 %3, i32 0, i32 %1
   %5 = add nuw nsw i32 %4, %0
-  %6 = sext i32 %5 to i64
-  ret i64 %6
-}
-
-; 2 occurrences:
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %2, 1
-  %4 = select i1 %3, i32 1, i32 %1
-  %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }

@@ -1,5 +1,5 @@
 
-; 214 occurrences:
+; 227 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/chi_square_test.cc.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
@@ -12,6 +12,19 @@
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/scpgen.cpp.ll
 ; ceres/optimized/gradient_checker.cc.ll
 ; ceres/optimized/line_search_minimizer.cc.ll

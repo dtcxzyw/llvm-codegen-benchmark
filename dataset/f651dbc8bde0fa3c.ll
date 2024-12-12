@@ -54,15 +54,14 @@
 define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 286 occurrences:
+; 284 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -84,7 +83,6 @@ entry:
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/filetable.ll
 ; linux/optimized/generic.ll
-; linux/optimized/hda_hwdep.ll
 ; linux/optimized/hiddev.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/io_uring.ll
@@ -128,7 +126,6 @@ entry:
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll
@@ -313,6 +310,7 @@ entry:
 ; llvm/optimized/WorkList.cpp.ll
 ; llvm/optimized/X86DomainReassignment.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openjdk/optimized/g1ConcurrentMark.ll
 ; postgres/optimized/execExprInterp.ll
 ; postgres/optimized/parsexlog.ll
@@ -350,7 +348,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -373,7 +371,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -386,7 +384,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -402,7 +400,7 @@ entry:
 define i64 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -413,7 +411,7 @@ entry:
 define i64 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

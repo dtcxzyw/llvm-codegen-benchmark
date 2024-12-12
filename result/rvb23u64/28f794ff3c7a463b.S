@@ -29,6 +29,18 @@ func0000000000000008:                   # @func0000000000000008
 	bseti	a1, a1, 14
 	sltu	a0, a1, a0
 	ret
+.LCPI5_0:
+	.quad	18446741926225904               # 0x418936cbc6a7f0
+func0000000000000018:                   # @func0000000000000018
+	lui	a2, %hi(.LCPI5_0)
+	ld	a2, %lo(.LCPI5_0)(a2)
+	andi	a1, a1, 1
+	czero.nez	a1, a2, a1
+	lui	a2, 524288
+	addiw	a2, a2, -1
+	add	a1, a1, a2
+	sltu	a0, a1, a0
+	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 1
 	li	a2, 4
@@ -36,6 +48,13 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a1, a1, 32
 	xor	a0, a0, a1
 	snez	a0, a0
+	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a1, a1, 1
+	li	a2, -6
+	czero.nez	a1, a2, a1
+	addi	a1, a1, 8
+	sltu	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	andi	a1, a1, 1
@@ -45,6 +64,14 @@ func000000000000000a:                   # @func000000000000000a
 	lui	a2, 524288
 	add	a1, a1, a2
 	slt	a0, a1, a0
+	ret
+func0000000000000011:                   # @func0000000000000011
+	andi	a1, a1, 1
+	li	a2, 4
+	czero.nez	a1, a2, a1
+	addi	a1, a1, 12
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000005:                   # @func0000000000000005
 	andi	a1, a1, 1

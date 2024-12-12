@@ -33,5 +33,5 @@ func0000000000000007:                   # @func0000000000000007
 	vzext.vf2	v20, v16
 	vfwcvt.f.xu.v	v24, v20
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vmfne.vv	v0, v24, v8
+	vmfne.vv	v0, v8, v24
 	ret

@@ -10,14 +10,13 @@ func000000000000000d:                   # @func000000000000000d
 	vzext.vf4	v8, v10
 	ret
 func0000000000000005:                   # @func0000000000000005
-	li	a0, -1000
+	li	a0, 55
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vadd.vx	v8, v8, a0
 	lui	a0, 2
 	vsrl.vi	v8, v8, 3
-	addi	a0, a0, 197
-	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v10, v8, 4
+	addi	a0, a0, 1171
+	vmulhu.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf4	v8, v10
 	ret

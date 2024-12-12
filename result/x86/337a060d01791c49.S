@@ -9,17 +9,17 @@ func000000000000000c:                   # @func000000000000000c
 	shrl	$16, %eax
 	andl	$1, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orl	%esi, %edi
 	testl	$16712191, %edi                 # imm = 0xFF01FF
 	sete	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	orl	%esi, %edi
 	testl	$832, %edi                      # imm = 0x340
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	orl	%esi, %edi
 	testl	$63488, %edi                    # imm = 0xF800
 	setne	%al

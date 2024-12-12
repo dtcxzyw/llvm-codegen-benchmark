@@ -1,9 +1,7 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -40,7 +38,7 @@ define i64 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = lshr i64 %5, 32
   ret i64 %6
 }
@@ -52,7 +50,7 @@ define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = lshr i64 %5, 32
   ret i64 %6
 }
@@ -64,7 +62,7 @@ define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = lshr i64 %5, 32
   ret i64 %6
 }

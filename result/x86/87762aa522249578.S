@@ -1,4 +1,4 @@
-func00000000000001b6:                   # @func00000000000001b6
+func0000000000000366:                   # @func0000000000000366
 	cmpq	$128, %rdi
 	cmovlq	%rdi, %rdx
 	addq	%rsi, %rdx

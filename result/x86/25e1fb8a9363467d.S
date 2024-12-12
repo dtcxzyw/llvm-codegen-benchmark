@@ -1,9 +1,9 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leal	86400(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%edi, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	leal	-64(%rsi), %eax
 	cmpl	$64, %esi
 	cmovll	%edi, %eax
@@ -18,22 +18,22 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$60001, %esi                    # imm = 0xEA61
 	cmovbl	%edi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	leal	-1(%rsi), %eax
 	cmpl	$257, %esi                      # imm = 0x101
 	cmovael	%edi, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	leal	52(%rsi), %eax
 	cmpl	$98, %esi
 	cmovael	%edi, %eax
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	leal	2000(%rsi), %eax
 	cmpl	$70, %esi
 	cmovgel	%edi, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	leal	87(%rsi), %eax
 	cmpl	$10, %esi
 	cmovbl	%edi, %eax
@@ -43,8 +43,18 @@ func000000000000000c:                   # @func000000000000000c
 	subl	$1, %eax
 	cmovbl	%edi, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000024:                   # @func0000000000000024
+	leal	1(%rsi), %eax
+	cmpl	$4, %esi
+	cmovael	%edi, %eax
+	retq
+func0000000000000038:                   # @func0000000000000038
 	leal	-1023(%rsi), %eax
 	cmpl	$1023, %esi                     # imm = 0x3FF
 	cmovbl	%edi, %eax
+	retq
+func0000000000000064:                   # @func0000000000000064
+	leal	1(%rsi), %eax
+	cmpl	$256, %esi                      # imm = 0x100
+	cmovael	%edi, %eax
 	retq

@@ -1,9 +1,8 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/fretMain.c.ll
 ; libquic/optimized/file_posix.cc.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_hti.ll
 ; linux/optimized/pcmcia_cis.ll
 ; linux/optimized/xhci.ll
 ; linux/optimized/zstd_decompress.ll
@@ -32,19 +31,6 @@ entry:
   %3 = and i32 %0, 32
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 0, i32 %2
-  ret i32 %5
-}
-
-; 1 occurrences:
-; openjdk/optimized/cmsio0.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0) #0 {
-entry:
-  %1 = lshr i32 %0, 8
-  %2 = and i32 %1, 240
-  %3 = and i32 %0, 61440
-  %4 = icmp ugt i32 %3, 36864
-  %5 = select i1 %4, i32 144, i32 %2
   ret i32 %5
 }
 

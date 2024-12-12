@@ -2,7 +2,7 @@
 	.long	128                             # 0x80
 .LCPI0_1:
 	.long	256                             # 0x100
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vpslld	$16, %ymm0, %ymm0
 	vpsrad	$16, %ymm0, %ymm0
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0

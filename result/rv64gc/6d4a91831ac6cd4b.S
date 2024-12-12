@@ -33,3 +33,17 @@ func0000000000000008:                   # @func0000000000000008
 	mv	a0, a1
 .LBB4_2:                                # %entry
 	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a3, a1
+	sext.w	a2, a2
+	bltu	a2, a3, .LBB5_2
+	mv	a0, a1
+.LBB5_2:                                # %entry
+	ret
+func0000000000000018:                   # @func0000000000000018
+	sext.w	a2, a2
+	sext.w	a3, a1
+	bltu	a3, a2, .LBB6_2
+	mv	a0, a1
+.LBB6_2:                                # %entry
+	ret

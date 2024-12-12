@@ -1,19 +1,4 @@
 
-; 5 occurrences:
-; freetype/optimized/sfnt.c.ll
-; gromacs/optimized/xtc3.c.ll
-; linux/optimized/drm_edid.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = or disjoint i32 %0, %1
-  %3 = shl nuw nsw i32 %2, 10
-  %4 = add nuw nsw i32 %3, 65536
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; ruby/optimized/symbol.ll
 ; Function Attrs: nounwind
@@ -106,6 +91,19 @@ entry:
   %2 = or disjoint i32 %0, %1
   %3 = shl i32 %2, 1
   %4 = add i32 %3, -4
+  ret i32 %4
+}
+
+; 3 occurrences:
+; freetype/optimized/sfnt.c.ll
+; gromacs/optimized/xtc3.c.ll
+; linux/optimized/drm_edid.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, %1
+  %3 = shl nuw nsw i32 %2, 2
+  %4 = add nuw nsw i32 %3, 4
   ret i32 %4
 }
 

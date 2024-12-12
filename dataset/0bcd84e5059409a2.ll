@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
 ; cvc5/optimized/match_trie.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -29,6 +29,7 @@
 ; minetest/optimized/guiTable.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/textdetection.cpp.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; zxing/optimized/QRDetector.cpp.ll

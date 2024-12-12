@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	1                               # 0x1
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
@@ -13,7 +13,7 @@ func00000000000000e1:                   # @func00000000000000e1
 	.long	48                              # 0x30
 .LCPI1_1:
 	.quad	8                               # 0x8
-func00000000000001f1:                   # @func00000000000001f1
+func00000000000003e1:                   # @func00000000000003e1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [48,48,48,48]
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
@@ -24,7 +24,7 @@ func00000000000001f1:                   # @func00000000000001f1
 	retq
 .LCPI2_0:
 	.long	32                              # 0x20
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2   # xmm2 = [32,32,32,32]
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
@@ -39,7 +39,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	.long	64                              # 0x40
 .LCPI3_1:
 	.quad	1                               # 0x1
-func00000000000000ec:                   # @func00000000000000ec
+func00000000000001cc:                   # @func00000000000001cc
 	vpbroadcastd	.LCPI3_0(%rip), %xmm2   # xmm2 = [64,64,64,64]
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
@@ -52,7 +52,7 @@ func00000000000000ec:                   # @func00000000000000ec
 	.long	4294966221                      # 0xfffffbcd
 .LCPI4_1:
 	.quad	1                               # 0x1
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000003c1:                   # @func00000000000003c1
 	vpbroadcastd	.LCPI4_0(%rip), %xmm2   # xmm2 = [4294966221,4294966221,4294966221,4294966221]
 	vpsubd	%xmm1, %xmm2, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero

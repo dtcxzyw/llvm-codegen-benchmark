@@ -5,6 +5,13 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	addl	$7, %edx
+	andl	$-8, %edx
+	movslq	%edx, %rax
+	addq	%rsi, %rax
+	leaq	(%rax,%rdi,8), %rax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	addl	$7, %edx
 	andl	$-8, %edx
@@ -12,7 +19,7 @@ func000000000000000a:                   # @func000000000000000a
 	addq	%rsi, %rax
 	leaq	(%rax,%rdi,8), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	addl	$7, %edx
 	andl	$-8, %edx
 	movslq	%edx, %rax

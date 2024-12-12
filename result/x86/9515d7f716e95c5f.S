@@ -1,20 +1,20 @@
 func0000000000000006:                   # @func0000000000000006
 	movslq	%esi, %rax
-	cmpq	%rdx, %rax
-	cmovgl	%edi, %eax
+	cmpq	%rax, %rdx
+	cmovll	%edi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movslq	%esi, %rax
-	cmpq	%rdx, %rax
-	cmoval	%edi, %eax
+	cmpq	%rax, %rdx
+	cmovbl	%edi, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	movslq	%esi, %rax
-	cmpq	%rdx, %rax
-	cmovll	%edi, %eax
+	cmpq	%rax, %rdx
+	cmovgl	%edi, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movslq	%esi, %rax
-	cmpq	%rdx, %rax
-	cmovbl	%edi, %eax
+	cmpq	%rax, %rdx
+	cmoval	%edi, %eax
 	retq

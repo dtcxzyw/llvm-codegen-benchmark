@@ -1,5 +1,6 @@
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/message.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; hermes/optimized/DebugInfo.cpp.ll
@@ -98,10 +99,10 @@
 ; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; Function Attrs: nounwind
-define { ptr, i64 } @func0000000000000002(i64 %0, ptr %1, i32 %2) #0 {
+define { ptr, i64 } @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = insertvalue { ptr, i64 } poison, ptr %4, 0
   %6 = insertvalue { ptr, i64 } %5, i64 %0, 1
   ret { ptr, i64 } %6

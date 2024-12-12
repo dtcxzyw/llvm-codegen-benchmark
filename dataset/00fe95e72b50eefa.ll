@@ -1,7 +1,8 @@
 
-; 49 occurrences:
+; 50 occurrences:
 ; assimp/optimized/ColladaHelper.cpp.ll
 ; assimp/optimized/unzip.c.ll
+; boost/optimized/url_base.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/obmalloc.ll
@@ -50,7 +51,7 @@
 ; yosys/optimized/attrmap.ll
 ; yosys/optimized/dfflibmap.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000024(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %0, -32
   %3 = icmp ult i8 %1, 6
@@ -58,7 +59,7 @@ entry:
   ret i8 %4
 }
 
-; 29 occurrences:
+; 35 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/BaseImporter.cpp.ll
 ; assimp/optimized/ColladaHelper.cpp.ll
@@ -70,6 +71,12 @@ entry:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/ci_string.ll
+; boost/optimized/normalize.ll
+; boost/optimized/params_base.ll
+; boost/optimized/params_encoded_base.ll
+; boost/optimized/scheme.ll
+; boost/optimized/url_base.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/zip.c.ll
 ; libquic/optimized/string_util.cc.ll
@@ -89,7 +96,7 @@ entry:
 ; spdlog/optimized/cfg.cpp.ll
 ; yaml-cpp/optimized/convert.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000034(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000064(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %0, 32
   %3 = icmp ult i8 %1, 26
@@ -97,8 +104,7 @@ entry:
   ret i8 %4
 }
 
-; 6 occurrences:
-; abseil-cpp/optimized/memutil.cc.ll
+; 5 occurrences:
 ; luau/optimized/Config.cpp.ll
 ; luau/optimized/Require.cpp.ll
 ; openusd/optimized/stringUtils.cpp.ll

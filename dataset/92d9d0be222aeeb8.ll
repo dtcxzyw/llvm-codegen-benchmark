@@ -1,5 +1,5 @@
 
-; 144 occurrences:
+; 148 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/bmcCexMin1.c.ll
@@ -57,6 +57,10 @@
 ; llvm/optimized/TextDiagnostic.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -148,12 +152,12 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
@@ -161,6 +165,7 @@ entry:
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaOf.c.ll
+; boost/optimized/gregorian.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; cvc5/optimized/alethe_let_binding.cpp.ll
 ; cvc5/optimized/cnf_stream.cpp.ll
@@ -195,7 +200,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -212,7 +217,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -268,7 +273,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nuw i32 %4, %0
   ret i32 %5
 }
@@ -298,7 +303,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 3
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -309,7 +314,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }

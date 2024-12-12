@@ -3,6 +3,11 @@ func0000000000000006:                   # @func0000000000000006
 	cmovgel	%edi, %esi
 	movslq	%esi, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	%rdx, %rsi
+	cmovael	%edi, %esi
+	movslq	%esi, %rax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdx, %rsi
 	cmovael	%edi, %esi
@@ -18,12 +23,17 @@ func0000000000000008:                   # @func0000000000000008
 	cmovbel	%edi, %esi
 	movslq	%esi, %rax
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	cmpq	%rdx, %rsi
 	cmovgel	%edi, %esi
 	movslq	%esi, %rax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
+	cmpq	%rdx, %rsi
+	cmovael	%edi, %esi
+	movslq	%esi, %rax
+	retq
+func0000000000000064:                   # @func0000000000000064
 	cmpq	%rdx, %rsi
 	cmovael	%edi, %esi
 	movslq	%esi, %rax

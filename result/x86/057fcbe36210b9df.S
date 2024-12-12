@@ -22,9 +22,21 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%sil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	andl	%edx, %esi
+	cmpl	$3, %edi
+	setb	%al
+	andb	%sil, %al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	andl	%edx, %esi
 	cmpl	$256, %edi                      # imm = 0x100
+	setae	%al
+	andb	%sil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	andl	%edx, %esi
+	cmpl	$2, %edi
 	setae	%al
 	andb	%sil, %al
 	retq

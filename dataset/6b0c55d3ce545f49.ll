@@ -60,7 +60,7 @@
 ; wasmtime-rs/optimized/4xu6ecb82tc69emg.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
   %3 = icmp sgt i64 %2, 0
@@ -74,7 +74,7 @@ entry:
 ; openjdk/optimized/os.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, %0
   %3 = icmp ne i64 %0, 0
@@ -87,7 +87,7 @@ entry:
 ; php/optimized/shared_alloc_mmap.ll
 ; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
   %3 = icmp ult i64 %2, 4294967295
@@ -100,7 +100,7 @@ entry:
 ; git/optimized/packfile.ll
 ; git/optimized/unpack-objects.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000054a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, %0
   %3 = icmp sgt i64 %0, 0
@@ -111,7 +111,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/filenm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
   %3 = icmp ugt i64 %2, 9
@@ -128,10 +128,10 @@ entry:
 ; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000070a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %1, %0
-  %3 = icmp ugt i64 %2, 3
+  %3 = icmp samesign ugt i64 %2, 3
   %4 = icmp sgt i64 %0, 0
   %5 = and i1 %4, %3
   ret i1 %5
@@ -142,7 +142,7 @@ entry:
 ; cpython/optimized/bytesobject.ll
 ; z3/optimized/hilbert_basis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c6(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
   %3 = icmp slt i64 %2, 1
@@ -154,7 +154,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/walmethods.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, %0
   %3 = icmp sgt i64 %0, -1
@@ -165,7 +165,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/walmethods.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, %0
   %3 = icmp sgt i64 %0, -1

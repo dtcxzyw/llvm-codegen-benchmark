@@ -1,7 +1,9 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; abc/optimized/luckyFast16.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
@@ -23,12 +25,11 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; openjdk/optimized/referenceProcessor.ll
 ; qemu/optimized/source_s_shiftRightJam256M.c.ll
 ; ruby/optimized/addr2line.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f64_to_i32_r_minMag.ll
 ; spike/optimized/f64_to_i64_r_minMag.ll
 ; spike/optimized/f64_to_ui32_r_minMag.ll
@@ -44,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
   %4 = icmp ult i64 %3, %0
@@ -61,10 +62,12 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; abc/optimized/luckyFast16.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; hdf5/optimized/H5HFdblock.c.ll
@@ -138,7 +141,7 @@ entry:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; linux/optimized/intel_fb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
   %4 = icmp ugt i64 %3, %0
@@ -148,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/FBXParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
   %4 = icmp eq i64 %3, %0
@@ -160,7 +163,7 @@ entry:
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %1, %2
   %4 = icmp ugt i64 %3, %0
@@ -171,7 +174,7 @@ entry:
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_ui32_r_minMag.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
   %4 = icmp ne i64 %3, %0
@@ -215,7 +218,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/perf_optflowpyrlk.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %1, %2
   %4 = icmp eq i64 %3, %0
@@ -225,7 +228,7 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %1, %2
   %4 = icmp ult i64 %3, %0
@@ -235,7 +238,7 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %1, %2
   %4 = icmp eq i64 %3, %0

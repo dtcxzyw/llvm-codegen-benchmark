@@ -1,6 +1,5 @@
 
-; 25 occurrences:
-; grpc/optimized/chttp2_server.cc.ll
+; 24 occurrences:
 ; llvm/optimized/ClangASTPropertiesEmitter.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -50,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i64 %1, i64 1
@@ -58,15 +57,17 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000054(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp samesign ult i64 %4, %0
   ret i1 %5
 }
 
@@ -94,6 +95,17 @@ entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i64 %1, i64 0
   %5 = icmp uge i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; grpc/optimized/chttp2_server.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = trunc i8 %2 to i1
+  %4 = select i1 %3, i64 %1, i64 120000
+  %5 = icmp samesign ugt i64 %4, %0
   ret i1 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 20 occurrences:
 ; abc/optimized/abcUnate.c.ll
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/cecChoice.c.ll
@@ -12,9 +12,7 @@
 ; abc/optimized/giaQbf.c.ll
 ; abc/optimized/lpkCore.c.ll
 ; abc/optimized/wlcAbs.c.ll
-; cpython/optimized/xxsubtype.ll
 ; graphviz/optimized/actions.c.ll
-; graphviz/optimized/timing.c.ll
 ; openjdk/optimized/os_posix.ll
 ; postgres/optimized/pg_regress.ll
 ; postgres/optimized/timestamp.ll
@@ -31,7 +29,7 @@ entry:
   ret double %4
 }
 
-; 166 occurrences:
+; 163 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -113,9 +111,7 @@ entry:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ifCore.c.ll
 ; abc/optimized/ifDsd.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/llb4Nonlin.c.ll
-; abc/optimized/mapperCore.c.ll
 ; abc/optimized/mfsMan.c.ll
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/pdrIncr.c.ll
@@ -136,8 +132,8 @@ entry:
 ; abc/optimized/wlcAbs.c.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; assimp/optimized/Importer.cpp.ll
+; boost/optimized/benchmark_fstream.ll
 ; brotli/optimized/brotli.c.ll
-; c3c/optimized/benchmark.c.ll
 ; clamav/optimized/clamdtop.c.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; cmake/optimized/cmCTestMemCheckHandler.cxx.ll
@@ -181,7 +177,6 @@ entry:
 ; opencv/optimized/security_barrier_camera.cpp.ll
 ; opencv/optimized/stabilizer.cpp.ll
 ; opencv/optimized/video_acceleration.cpp.ll
-; openmpi/optimized/libmpi_c_profile_la-wtime.ll
 ; openmpi/optimized/test_overhead.ll
 ; openmpi/optimized/tm_tree.ll
 ; openspiel/optimized/Timer.cpp.ll
@@ -203,7 +198,7 @@ define double @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = sitofp i64 %2 to double
-  %4 = fdiv double %3, 1.000000e+09
+  %4 = fdiv double %3, 8.640000e+04
   ret double %4
 }
 

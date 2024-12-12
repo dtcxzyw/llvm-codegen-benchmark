@@ -33,13 +33,13 @@
 ; llvm/optimized/MSFCommon.cpp.ll
 ; llvm/optimized/MachineTraceMetrics.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/TypeLoc.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; llvm/optimized/raw_ostream.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
 ; minetest/optimized/guiOpenURL.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -71,7 +71,7 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; c3c/optimized/llvm_codegen_function.c.ll
 ; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/idna.c.ll
@@ -81,7 +81,6 @@ entry:
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; node/optimized/idna.ll
-; postgres/optimized/brin_revmap.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -90,11 +89,10 @@ entry:
   ret i32 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; darktable/optimized/PanasonicV6Decompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; linux/optimized/isoch.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; openexr/optimized/ImfB44Compressor.cpp.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll

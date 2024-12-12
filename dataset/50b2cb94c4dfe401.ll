@@ -1,5 +1,5 @@
 
-; 660 occurrences:
+; 663 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -47,6 +47,9 @@
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_body.cpp.ll
 ; box2d/optimized/b2_chain_shape.cpp.ll
 ; box2d/optimized/b2_circle_shape.cpp.ll
@@ -335,7 +338,6 @@
 ; gromacs/optimized/slae2.cpp.ll
 ; gromacs/optimized/slaed6.cpp.ll
 ; gromacs/optimized/slaev2.cpp.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
 ; gromacs/optimized/slasd2.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
@@ -360,6 +362,8 @@
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; luau/optimized/Conformance.test.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/alignset.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -385,7 +389,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -664,7 +667,7 @@
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fneg float %1
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 

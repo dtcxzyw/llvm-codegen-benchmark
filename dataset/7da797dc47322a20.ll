@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
   %3 = xor i32 %2, %0
@@ -54,10 +54,10 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 8
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = icmp ugt i32 %3, 255
   ret i1 %4
 }

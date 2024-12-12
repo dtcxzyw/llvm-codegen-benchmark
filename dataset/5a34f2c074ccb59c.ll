@@ -1,8 +1,6 @@
 
-; 3 occurrences:
-; cmake/optimized/deflate.c.ll
+; 1 occurrences:
 ; flac/optimized/stream_encoder.c.ll
-; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:

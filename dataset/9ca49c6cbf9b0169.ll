@@ -1,6 +1,8 @@
 
-; 27 occurrences:
+; 29 occurrences:
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/live_view.c.ll
 ; g2o/optimized/edge_se3_expmap.cpp.ll

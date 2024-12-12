@@ -5,7 +5,7 @@ func000000000000000e:                   # @func000000000000000e
 	vmulhu.vx	v10, v10, a0
 	vsll.vi	v10, v10, 3
 	vand.vi	v10, v10, -16
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, 699051
@@ -14,7 +14,7 @@ func0000000000000000:                   # @func0000000000000000
 	vmulhu.vx	v10, v10, a0
 	vadd.vv	v10, v10, v10
 	vand.vi	v10, v10, -4
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000000f:                   # @func000000000000000f
 	lui	a0, 559241
@@ -25,5 +25,5 @@ func000000000000000f:                   # @func000000000000000f
 	vsrl.vi	v10, v10, 2
 	addi	a0, a0, -2
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

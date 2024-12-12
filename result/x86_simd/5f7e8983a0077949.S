@@ -22,7 +22,7 @@ func000000000000002e:                   # @func000000000000002e
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrld	$2, %ymm1, %ymm1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$8, %ymm0, %ymm0
 	retq
 .LCPI3_0:
@@ -40,7 +40,7 @@ func000000000000003e:                   # @func000000000000003e
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrld	$4, %ymm1, %ymm1
 	vpandd	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$16, %ymm0, %ymm0
 	retq
 .LCPI5_0:

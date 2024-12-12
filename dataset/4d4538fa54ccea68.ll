@@ -7,7 +7,7 @@
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-atn-ulcs.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, %0
@@ -22,7 +22,7 @@ entry:
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, %0

@@ -147,26 +147,26 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000294(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
   %5 = lshr i64 %0, 1
-  %6 = icmp ult i64 %4, %5
+  %6 = icmp samesign ult i64 %4, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000298(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = add nsw i64 %2, -1
   %4 = lshr i64 %3, 1
   %5 = lshr i64 %0, 1
-  %6 = icmp ugt i64 %4, %5
+  %6 = icmp samesign ugt i64 %4, %5
   ret i1 %6
 }
 

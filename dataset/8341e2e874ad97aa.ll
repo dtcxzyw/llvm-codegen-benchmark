@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -10,6 +10,7 @@
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
+; lvgl/optimized/lv_calendar_header_arrow.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; postgres/optimized/brin_pageops.ll
 ; postgres/optimized/ginvacuum.ll
@@ -24,7 +25,18 @@
 define i16 @func0000000000000000(i16 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
+  ret i16 %3
+}
+
+; 2 occurrences:
+; linux/optimized/rscalc.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000001(i16 %0, i1 %1) #0 {
+entry:
+  %2 = sext i1 %1 to i16
+  %3 = add nsw i16 %0, %2
   ret i16 %3
 }
 

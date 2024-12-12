@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 51 occurrences:
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/giaResub.c.ll
 ; clamav/optimized/regexec.c.ll
@@ -16,6 +16,7 @@
 ; icu/optimized/genmbcs.ll
 ; linux/optimized/buffered_read.ll
 ; linux/optimized/intel_hotplug.ll
+; linux/optimized/process_64.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/setup-bus.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
@@ -59,7 +60,7 @@ entry:
   ret i1 %5
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; assimp/optimized/DeboneProcess.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
@@ -71,6 +72,7 @@ entry:
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_uncore.ll
+; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
@@ -88,17 +90,6 @@ define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 0
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/X86ISelDAGToDAG.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %1, %2
-  %4 = icmp ult i64 %3, 128
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }

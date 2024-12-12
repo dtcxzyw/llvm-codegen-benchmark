@@ -1,5 +1,7 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -7,12 +9,12 @@
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000001ea(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp sgt i32 %3, 2
-  %5 = getelementptr nusw i8, ptr %1, i64 32
-  %6 = getelementptr nusw i8, ptr %0, i64 48
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 32
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 48
   %7 = select i1 %4, ptr %6, ptr %5
   ret ptr %7
 }
@@ -31,12 +33,12 @@ entry:
 ; velox/optimized/ToUtf8.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a4(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000001e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp ult i32 %3, 13
-  %5 = getelementptr nusw i8, ptr %1, i64 4
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = select i1 %4, ptr %6, ptr %5
   ret ptr %7
 }
@@ -46,12 +48,12 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp ult i32 %3, 13
   %5 = getelementptr i8, ptr %1, i64 -1
-  %6 = getelementptr nusw i8, ptr %0, i64 3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 3
   %7 = select i1 %4, ptr %6, ptr %5
   ret ptr %7
 }

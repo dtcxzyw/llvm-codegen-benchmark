@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; curl/optimized/libcurl_la-content_encoding.ll
@@ -10,7 +10,6 @@
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; openusd/optimized/av1_loopfilter.c.ll
-; php/optimized/is_simh.ll
 ; qemu/optimized/util_iov.c.ll
 ; rustfmt-rs/optimized/4gk399kploc9gcsb.ll
 ; slurm/optimized/reservation.ll

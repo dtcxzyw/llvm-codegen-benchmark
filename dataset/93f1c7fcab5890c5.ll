@@ -1,12 +1,10 @@
 
-; 14 occurrences:
+; 12 occurrences:
 ; nix/optimized/cgroup.ll
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/globals.ll
 ; nix/optimized/lexer-tab.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/shared.ll
 ; nix/optimized/store-api.ll

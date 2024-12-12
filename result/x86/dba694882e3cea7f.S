@@ -1,4 +1,4 @@
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	shlq	$4, %rdx
 	cmpq	%rsi, %rdx
 	setne	%cl
@@ -6,7 +6,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	setae	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	shlq	$4, %rdx
 	cmpq	%rdi, %rdx
 	setne	%cl
@@ -14,7 +14,7 @@ func000000000000008c:                   # @func000000000000008c
 	setae	%al
 	andb	%cl, %al
 	retq
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	shlq	$2, %rdx
 	cmpq	%rdi, %rdx
 	setl	%cl
@@ -22,15 +22,7 @@ func00000000000001a6:                   # @func00000000000001a6
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
-	shlq	$3, %rdx
-	cmpq	%rsi, %rdx
-	setne	%cl
-	testq	%rdi, %rdi
-	setne	%al
-	andb	%cl, %al
-	retq
-func000000000000016c:                   # @func000000000000016c
+func00000000000004cc:                   # @func00000000000004cc
 	shlq	$2, %rdx
 	cmpq	%rsi, %rdx
 	setl	%cl
@@ -38,7 +30,7 @@ func000000000000016c:                   # @func000000000000016c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	shlq	$2, %rdx
 	cmpq	%rsi, %rdx
 	setl	%cl
@@ -46,7 +38,7 @@ func000000000000016a:                   # @func000000000000016a
 	setg	%al
 	andb	%cl, %al
 	retq
-func000000000000009c:                   # @func000000000000009c
+func000000000000012c:                   # @func000000000000012c
 	shlq	$2, %rdx
 	cmpq	%rsi, %rdx
 	setae	%cl

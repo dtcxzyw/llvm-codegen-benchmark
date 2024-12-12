@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 22 occurrences:
 ; abc/optimized/deflate.c.ll
 ; cmake/optimized/deflate.c.ll
 ; eastl/optimized/EAString.cpp.ll
@@ -7,6 +7,7 @@
 ; libquic/optimized/deflate.c.ll
 ; linux/optimized/public_key.ll
 ; llvm/optimized/SymbolSerializer.cpp.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; minetest/optimized/map.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
@@ -17,6 +18,8 @@
 ; postgres/optimized/nbtsearch.ll
 ; qemu/optimized/dump_dump.c.ll
 ; recastnavigation/optimized/DetourTileCache.cpp.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; wolfssl/optimized/tls.c.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind

@@ -14,3 +14,7 @@ func0000000000000007:                   # @func0000000000000007
 	fmv.x.w	a0, fa0
 	srliw	a0, a0, 16
 	ret
+func0000000000000003:                   # @func0000000000000003
+	fmv.x.w	a0, fa0
+	srliw	a0, a0, 23
+	ret

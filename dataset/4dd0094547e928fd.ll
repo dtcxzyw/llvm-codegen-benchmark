@@ -4,7 +4,7 @@
 ; openspiel/optimized/bridge.cc.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1256584709268
   %3 = icmp eq i64 %2, 0

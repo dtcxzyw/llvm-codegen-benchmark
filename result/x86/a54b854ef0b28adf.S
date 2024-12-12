@@ -16,7 +16,7 @@ func0000000000000008:                   # @func0000000000000008
 	movq	$-1, %rax
 	cmovbq	%rsi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	notq	%rsi
 	xorl	%eax, %eax
 	cmpl	$2, %edi

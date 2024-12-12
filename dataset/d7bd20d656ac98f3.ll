@@ -15,7 +15,7 @@
 define double @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fdiv double 1.000000e+00, %1
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   %4 = select i1 %3, double %0, double %2
   ret double %4
 }
@@ -30,25 +30,22 @@ entry:
 define double @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fdiv double 1.000000e+00, %1
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   %4 = select i1 %3, double %0, double %2
   ret double %4
 }
 
-; 8 occurrences:
+; 5 occurrences:
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dsyequb.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
 ; Function Attrs: nounwind
 define double @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = fdiv double 1.000000e+00, %1
-  %3 = fcmp oge double %2, %0
+  %3 = fcmp ole double %0, %2
   %4 = select i1 %3, double %0, double %2
   ret double %4
 }

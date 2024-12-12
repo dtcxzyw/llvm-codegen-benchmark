@@ -7,5 +7,5 @@ func0000000000000003:                   # @func0000000000000003
 	vor.vi	v12, v10, 4
 	vmerge.vvm	v10, v12, v10, v0
 	vand.vx	v8, v8, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

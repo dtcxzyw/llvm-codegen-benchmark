@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
-; hermes/optimized/Interpreter.cpp.ll
 ; vcpkg/optimized/cmd-parser.cpp.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind

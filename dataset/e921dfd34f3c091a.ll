@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -8,6 +8,7 @@
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
+; zed-rs/optimized/67gayid14ydsuhkv0lcnhbsvb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:

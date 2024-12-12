@@ -6,7 +6,7 @@
 define i16 @func0000000000000004(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 
@@ -37,7 +37,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 
@@ -49,7 +49,7 @@ entry:
 define i16 @func0000000000000006(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 
@@ -90,7 +90,7 @@ entry:
 define i16 @func0000000000000007(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   ret i16 %3
 }
 
@@ -100,7 +100,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 
@@ -110,7 +110,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   ret i16 %3
 }
 
@@ -121,7 +121,7 @@ entry:
 define i16 @func0000000000000005(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   ret i16 %3
 }
 

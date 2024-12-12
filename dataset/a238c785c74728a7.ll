@@ -14,9 +14,8 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cxxopts/optimized/example.cpp.ll
-; oiio/optimized/pnminput.cpp.ll
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i64 %1, ptr %2) #0 {
@@ -51,7 +50,7 @@ entry:
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; regex-rs/optimized/4sqmacerw61c696o.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %3, %1
@@ -90,8 +89,7 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
-; hermes/optimized/Path.cpp.ll
+; 8 occurrences:
 ; mold/optimized/input-files.cc.ARM32.cc.ll
 ; mold/optimized/input-files.cc.I386.cc.ll
 ; mold/optimized/input-files.cc.LOONGARCH32.cc.ll
@@ -101,7 +99,7 @@ entry:
 ; mold/optimized/input-files.cc.RV32LE.cc.ll
 ; mold/optimized/input-files.cc.SH4.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %3, %1
@@ -119,7 +117,7 @@ entry:
 ; mold/optimized/input-files.cc.RV64BE.cc.ll
 ; mold/optimized/input-files.cc.RV64LE.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %3, %1
@@ -128,13 +126,50 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 41 occurrences:
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; folly/optimized/JSONSchema.cpp.ll
+; oiio/optimized/pnminput.cpp.ll
 ; quantlib/optimized/date.ll
 ; spike/optimized/htif_pthread.ll
 ; spike/optimized/socketif.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %3, %1
@@ -213,7 +248,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %3, %1
@@ -225,7 +260,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %3, %1
@@ -239,7 +274,7 @@ entry:
 ; openspiel/optimized/crowd_modelling_2d.cc.ll
 ; openspiel/optimized/spiel.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %3, %1
@@ -257,7 +292,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %3, %1
@@ -275,7 +310,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %3, %1

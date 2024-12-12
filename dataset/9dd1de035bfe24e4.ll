@@ -13,7 +13,6 @@
 ; linux/optimized/ds.ll
 ; linux/optimized/p4.ll
 ; linux/optimized/xt_policy.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.test.cpp.ll
 ; luau/optimized/Autocomplete.test.cpp.ll
 ; luau/optimized/CodeAllocator.test.cpp.ll
@@ -35,6 +34,7 @@
 ; luau/optimized/TypeInfer.tables.test.cpp.ll
 ; luau/optimized/TypeInfer.test.cpp.ll
 ; luau/optimized/Variant.test.cpp.ll
+; lvgl/optimized/lv_observer.ll
 ; nlohmann_json/optimized/unit-algorithms.cpp.ll
 ; nlohmann_json/optimized/unit-assert_macro.cpp.ll
 ; nlohmann_json/optimized/unit-bjdata.cpp.ll
@@ -67,7 +67,7 @@
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -83,13 +83,13 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/sfmDec.c.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; git/optimized/revision.ll
 ; icu/optimized/calendar.ll
 ; llvm/optimized/AArch64ConditionOptimizer.cpp.ll
 ; llvm/optimized/InlineOrder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86InstComments.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; luau/optimized/Conformance.test.cpp.ll
@@ -97,15 +97,16 @@ entry:
 ; openjdk/optimized/library_call.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; verilator/optimized/V3Width.cpp.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
-; 10 occurrences:
+; 16 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/chan.ll
 ; llvm/optimized/PPCaching.cpp.ll
@@ -116,11 +117,17 @@ entry:
 ; openjdk/optimized/hb-buffer-verify.ll
 ; rust-analyzer-rs/optimized/k57ct4r8b4mvzu9.ll
 ; z3/optimized/spacer_qe_project.cpp.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/4pyl8821jbmubnjyx7hxe0q2i.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -138,7 +145,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -156,13 +163,15 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sfmDec.c.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstComments.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; nlohmann_json/optimized/unit-udt.cpp.ll
 ; opencv/optimized/convhull.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
@@ -171,7 +180,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -198,14 +207,13 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; luau/optimized/Conformance.test.cpp.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
-; zxing/optimized/ODReader.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -50,18 +50,6 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; icu/optimized/utext.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000018(i64 %0) #0 {
-entry:
-  %1 = trunc i64 %0 to i32
-  %2 = add nsw i32 %1, 32
-  %3 = icmp ugt i64 %0, 2147483615
-  %4 = select i1 %3, i32 2147483647, i32 %2
-  ret i32 %4
-}
-
 ; 4 occurrences:
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
@@ -92,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; hwloc/optimized/topology-xml-nolibxml.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0) #0 {
+define i32 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = add nsw i32 %1, -1

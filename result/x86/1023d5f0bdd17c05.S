@@ -6,7 +6,7 @@ func0000000000000030:                   # @func0000000000000030
 	addl	%esi, %esi
 	leaq	2(%rdi,%rsi), %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	movzwl	%si, %eax
 	leaq	48(%rdi,%rax,8), %rax
 	retq

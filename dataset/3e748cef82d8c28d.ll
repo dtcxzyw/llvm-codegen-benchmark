@@ -1,9 +1,8 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; darktable/optimized/introspection_vignette.c.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll

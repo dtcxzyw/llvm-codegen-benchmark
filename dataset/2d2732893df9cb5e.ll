@@ -10,8 +10,9 @@ entry:
   ret i1 %3
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll

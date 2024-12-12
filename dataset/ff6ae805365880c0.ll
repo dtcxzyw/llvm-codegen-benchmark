@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 56 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/xsatSolver.c.ll
 ; arrow/optimized/value_parsing.cc.ll
@@ -49,10 +49,13 @@
 ; ruby/optimized/strftime.ll
 ; ruby/optimized/time.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; wireshark/optimized/packet-packetbb.c.ll
-; yosys/optimized/ezminisat.ll
 ; z3/optimized/mpf.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
@@ -76,7 +79,7 @@ entry:
   ret i32 %4
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; assimp/optimized/zip.c.ll
 ; cpython/optimized/codeobject.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -88,6 +91,7 @@ entry:
 ; linux/optimized/xarray.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
+; lvgl/optimized/lv_draw_image.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/mg_ore.cpp.ll
@@ -110,7 +114,7 @@ entry:
   ret i32 %4
 }
 
-; 297 occurrences:
+; 296 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -369,7 +373,6 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; redis/optimized/ldebug.ll
-; redis/optimized/rax.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; sqlite/optimized/sqlite3.ll
@@ -417,7 +420,7 @@ entry:
   ret i32 %4
 }
 
-; 79 occurrences:
+; 78 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/aigDfs.c.ll
 ; abc/optimized/aigTiming.c.ll
@@ -428,7 +431,6 @@ entry:
 ; abc/optimized/llb2Flow.c.ll
 ; abc/optimized/pdrTsim.c.ll
 ; abc/optimized/rwrUtil.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abc/optimized/saigStrSim.c.ll
 ; abc/optimized/saigWnd.c.ll
 ; abc/optimized/solver.c.ll
@@ -660,7 +662,7 @@ entry:
   ret i32 %4
 }
 
-; 40 occurrences:
+; 38 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
@@ -676,9 +678,7 @@ entry:
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/ccm.ll
 ; linux/optimized/compat_binfmt_elf.ll
-; linux/optimized/ctr.ll
 ; linux/optimized/gcm.ll
-; linux/optimized/rss.ll
 ; linux/optimized/slab_common.ll
 ; llvm/optimized/DbiStreamBuilder.cpp.ll
 ; llvm/optimized/Descriptor.cpp.ll
@@ -736,7 +736,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
   %3 = add nuw i32 %2, 2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

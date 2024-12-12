@@ -1,11 +1,25 @@
 
-; 34 occurrences:
+; 4 occurrences:
+; php/optimized/zend_ssa.ll
+; postgres/optimized/extended_stats.ll
+; postgres/optimized/slru.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nsw i64 %1, 3
+  %3 = add nsw i64 %2, 104
+  %4 = and i64 %0, -8
+  %5 = add nsw i64 %3, %4
+  ret i64 %5
+}
+
+; 33 occurrences:
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
-; folly/optimized/Subprocess.cpp.ll
 ; linux/optimized/deftree.ll
 ; llvm/optimized/ASTConcept.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -37,25 +51,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 3
+  %2 = shl i64 %1, 2
   %3 = add i64 %2, 8
-  %4 = and i64 %0, -8
+  %4 = and i64 %0, 4294967295
   %5 = add i64 %3, %4
-  ret i64 %5
-}
-
-; 4 occurrences:
-; php/optimized/zend_ssa.ll
-; postgres/optimized/extended_stats.ll
-; postgres/optimized/slru.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nsw i64 %1, 3
-  %3 = add nsw i64 %2, 104
-  %4 = and i64 %0, -8
-  %5 = add nsw i64 %3, %4
   ret i64 %5
 }
 

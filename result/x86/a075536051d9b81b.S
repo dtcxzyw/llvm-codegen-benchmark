@@ -1,3 +1,12 @@
+func0000000000000000:                   # @func0000000000000000
+	andb	$1, %dl
+	orb	$2, %dl
+	movzbl	%dl, %ecx
+	xorl	%eax, %eax
+	testb	$1, %sil
+	cmovnel	%ecx, %eax
+	orl	%edi, %eax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	andb	$1, %dl
 	movb	$2, %al

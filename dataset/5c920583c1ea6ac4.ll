@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 48 occurrences:
 ; abc/optimized/ivyDsd.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/ftp.c.ll
@@ -29,8 +29,6 @@
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/hwgpe.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dp_mst.ll
 ; linux/optimized/intel_dpio_phy.ll
 ; linux/optimized/intel_dsi_vbt.ll
@@ -40,7 +38,6 @@
 ; linux/optimized/mlme.ll
 ; linux/optimized/skl_watermark.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
-; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll

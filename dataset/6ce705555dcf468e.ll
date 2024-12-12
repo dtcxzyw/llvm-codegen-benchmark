@@ -52,7 +52,7 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; clamav/optimized/extract.cpp.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; llvm/optimized/InlineCost.cpp.ll
@@ -60,7 +60,6 @@ entry:
 ; llvm/optimized/ProfileSummaryInfo.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; rocksdb/optimized/compaction_outputs.cc.ll
-; velox/optimized/StringFunctions.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(i8 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -70,13 +69,11 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 17 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/Evaluator.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/Loads.cpp.ll
 ; llvm/optimized/ProfileSummaryInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/TypeStreamMerger.cpp.ll
 ; rocksdb/optimized/compaction_job.cc.ll
@@ -99,7 +96,7 @@ entry:
   ret i1 %5
 }
 
-; 131 occurrences:
+; 129 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
@@ -222,11 +219,9 @@ entry:
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/profiles.ll
 ; openspiel/optimized/observation_history.cc.ll
-; proj/optimized/io.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; rocksdb/optimized/block_based_table_iterator.cc.ll
 ; xgboost/optimized/learner.cc.ll
@@ -240,8 +235,7 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; gromacs/optimized/hizzie.cpp.ll
+; 3 occurrences:
 ; gromacs/optimized/hxprops.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; openjdk/optimized/memnode.ll
@@ -266,9 +260,10 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; cmake/optimized/lz_decoder.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
+; gromacs/optimized/hizzie.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/DWARFContext.cpp.ll
@@ -277,7 +272,6 @@ entry:
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/MachineFunctionSplitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -285,11 +279,21 @@ entry:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; nix/optimized/profiles.ll
 ; velox/optimized/FromUtf8.cpp.ll
-; z3/optimized/udoc_relation.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
+  %4 = trunc i8 %0 to i1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; velox/optimized/StringFunctions.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i8 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign uge i64 %1, %2
   %4 = trunc i8 %0 to i1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -335,6 +339,17 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; llvm/optimized/Evaluator.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000054(i8 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ule i64 %1, %2
+  %4 = trunc i8 %0 to i1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
 ; 5 occurrences:
 ; cvc5/optimized/conjecture_generator.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
@@ -350,14 +365,26 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
 ; postgres/optimized/zic.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = trunc nuw i8 %0 to i1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; z3/optimized/udoc_relation.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000050(i8 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %1, %2
+  %4 = trunc i8 %0 to i1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
@@ -385,14 +412,24 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; opencv/optimized/matmul.dispatch.cpp.ll
+; 2 occurrences:
 ; proj/optimized/singleoperation.cpp.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000012(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
+  %4 = trunc nuw i8 %0 to i1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/matmul.dispatch.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000052(i8 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %1, %2
   %4 = trunc nuw i8 %0 to i1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

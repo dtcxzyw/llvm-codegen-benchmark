@@ -1,6 +1,7 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/mvcUtils.c.ll
+; faiss/optimized/IndexIVFPQ.cpp.ll
 ; gromacs/optimized/xvgr.cpp.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; meshlab/optimized/Scanner.cpp.ll

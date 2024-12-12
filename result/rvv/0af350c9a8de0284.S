@@ -4,7 +4,8 @@ func000000000000000c:                   # @func000000000000000c
 	vmul.vx	v8, v8, a0
 	ret
 func000000000000001c:                   # @func000000000000001c
-	li	a0, 36
+	lui	a0, 10486
+	addi	a0, a0, -983
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	ret

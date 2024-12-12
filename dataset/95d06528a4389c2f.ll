@@ -1,12 +1,12 @@
 
 ; 15 occurrences:
+; boost/optimized/numeric.ll
 ; cpython/optimized/unicodeobject.ll
 ; hdf5/optimized/H5Oalloc.c.ll
 ; hdf5/optimized/H5Otest.c.ll
 ; hdf5/optimized/H5Tconv_float.c.ll
 ; linux/optimized/mmap.ll
 ; linux/optimized/ntp.ll
-; linux/optimized/nvram.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
@@ -23,7 +23,7 @@ entry:
   ret i64 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/key_hash.cc.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; g2o/optimized/edge_project_psi2uv.cpp.ll
@@ -35,6 +35,7 @@ entry:
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; qemu/optimized/hw_core_loader.c.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i1 %1) #0 {
 entry:
@@ -43,7 +44,8 @@ entry:
   ret i64 %3
 }
 
-; 22 occurrences:
+; 23 occurrences:
+; cpython/optimized/pystrtod.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll

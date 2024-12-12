@@ -1,12 +1,3 @@
-func0000000000000037:                   # @func0000000000000037
-	sext.w	a1, a1
-	slliw	a0, a0, 2
-	li	a2, 4
-	slti	a1, a1, 33
-	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
-	ret
 func0000000000000027:                   # @func0000000000000027
 	sext.w	a1, a1
 	slliw	a0, a0, 3
@@ -20,6 +11,24 @@ func0000000000000033:                   # @func0000000000000033
 	sext.w	a1, a1
 	slliw	a0, a0, 6
 	li	a2, 64
+	slti	a1, a1, 7
+	czero.nez	a0, a0, a1
+	czero.eqz	a1, a2, a1
+	or	a0, a0, a1
+	ret
+func00000000000000a7:                   # @func00000000000000a7
+	sext.w	a1, a1
+	slliw	a0, a0, 1
+	li	a2, 2
+	sltiu	a1, a1, 7
+	czero.nez	a0, a0, a1
+	czero.eqz	a1, a2, a1
+	or	a0, a0, a1
+	ret
+func0000000000000037:                   # @func0000000000000037
+	sext.w	a1, a1
+	slliw	a0, a0, 1
+	li	a2, 2
 	slti	a1, a1, 7
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

@@ -6,7 +6,7 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = icmp eq i32 %2, 6
@@ -20,7 +20,7 @@ entry:
 ; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/82571.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 28672
   %3 = icmp eq i32 %2, 8192

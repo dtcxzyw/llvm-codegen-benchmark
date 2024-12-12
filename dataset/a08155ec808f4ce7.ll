@@ -1,5 +1,5 @@
 
-; 415 occurrences:
+; 410 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/hashing.cc.ll
@@ -7,6 +7,7 @@
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/src.ll
 ; cmake/optimized/xxhash.c.ll
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/introspection_censorize.c.ll
@@ -29,9 +30,7 @@
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; folly/optimized/FiberManager.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/Future.cpp.ll
 ; folly/optimized/GlobalExecutor.cpp.ll
 ; folly/optimized/GlobalShutdownSocketSet.cpp.ll
@@ -237,7 +236,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -311,7 +309,6 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-set.ll
 ; openjdk/optimized/shenandoahEvacOOMHandler.ll
-; openmpi/optimized/tm_mt.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
@@ -352,13 +349,11 @@
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/mt19937uniformrng.ll
 ; quantlib/optimized/xoshiro256starstaruniformrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; raylib/optimized/rcore.c.ll
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; redis/optimized/dict.ll
 ; redis/optimized/hyperloglog.ll
-; redis/optimized/mt19937-64.ll
 ; rocksdb/optimized/hash.cc.ll
 ; rocksdb/optimized/murmurhash.cc.ll
 ; rocksdb/optimized/xxhash.cc.ll
@@ -421,7 +416,7 @@ entry:
   %2 = lshr i64 %1, 30
   %3 = xor i64 %2, %1
   %4 = mul i64 %3, -4658895280553007687
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 
@@ -438,7 +433,7 @@ entry:
   %2 = lshr i64 %1, 24
   %3 = xor i64 %2, %1
   %4 = mul nsw i64 %3, 265
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 

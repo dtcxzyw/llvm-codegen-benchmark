@@ -24,7 +24,7 @@ entry:
 ; opencv/optimized/tf_importer.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 8589934592
   %.not = icmp eq i64 %2, 0

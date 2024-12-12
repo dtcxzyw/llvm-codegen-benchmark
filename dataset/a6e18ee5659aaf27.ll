@@ -7,10 +7,9 @@
 define i32 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add nsw i32 %3, 24
-  %5 = select i1 %0, i32 %4, i32 %3
-  %6 = add nsw i32 %5, -24
-  ret i32 %6
+  %4 = add nsw i32 %3, -24
+  %5 = select i1 %0, i32 %3, i32 %4
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -38,6 +37,18 @@ entry:
   %4 = add nsw i32 %3, 2
   %5 = select i1 %0, i32 %4, i32 %3
   %6 = add nsw i32 %5, 2
+  ret i32 %6
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001d(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add nuw nsw i32 %3, 305
+  %5 = select i1 %0, i32 %4, i32 %3
+  %6 = add nsw i32 %5, 308
   ret i32 %6
 }
 

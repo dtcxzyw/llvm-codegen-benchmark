@@ -14,6 +14,7 @@
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/_struct.ll
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
@@ -34,7 +35,6 @@
 ; linux/optimized/iface.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/pt.ll
-; linux/optimized/scsiglue.ll
 ; linux/optimized/task_mmu.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/BasicObjCFoundationChecks.cpp.ll
@@ -178,7 +178,7 @@ entry:
   ret i64 %3
 }
 
-; 165 occurrences:
+; 164 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRefactor.c.ll
@@ -225,7 +225,6 @@ entry:
 ; linux/optimized/drm_property.ll
 ; linux/optimized/exmisc.ll
 ; linux/optimized/hw_breakpoint.ll
-; linux/optimized/i915_gem_gtt.ll
 ; linux/optimized/idr.ll
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/memory-tiers.ll

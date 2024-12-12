@@ -1,4 +1,4 @@
-func0000000000000191:                   # @func0000000000000191
+func0000000000000321:                   # @func0000000000000321
 	sext.w	a2, a2
 	bltz	a2, .LBB0_2
 	mv	a0, a1
@@ -7,7 +7,7 @@ func0000000000000191:                   # @func0000000000000191
 	addi	a0, a0, -11
 	seqz	a0, a0
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a2, a2
 	beqz	a2, .LBB1_2
 	mv	a0, a1
@@ -16,7 +16,7 @@ func0000000000000051:                   # @func0000000000000051
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	sext.w	a2, a2
 	li	a3, 1
 	beq	a2, a3, .LBB2_2
@@ -25,7 +25,7 @@ func0000000000000054:                   # @func0000000000000054
 	addiw	a0, a0, -1
 	sltiu	a0, a0, 10
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	sext.w	a2, a2
 	lui	a3, 14
 	addiw	a3, a3, -339
@@ -37,7 +37,7 @@ func0000000000000044:                   # @func0000000000000044
 	addw	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000114:                   # @func0000000000000114
+func0000000000000a24:                   # @func0000000000000a24
 	sext.w	a2, a2
 	li	a3, 127
 	bltu	a2, a3, .LBB4_2
@@ -46,21 +46,30 @@ func0000000000000114:                   # @func0000000000000114
 	addiw	a0, a0, -8
 	sltiu	a0, a0, 56
 	ret
-func000000000000004a:                   # @func000000000000004a
+func0000000000000224:                   # @func0000000000000224
 	sext.w	a2, a2
-	li	a3, -1
-	beq	a2, a3, .LBB5_2
+	li	a3, 26
+	bltu	a2, a3, .LBB5_2
 	mv	a0, a1
 .LBB5_2:                                # %entry
+	addiw	a0, a0, -48
+	sltiu	a0, a0, 10
+	ret
+func000000000000008a:                   # @func000000000000008a
+	sext.w	a2, a2
+	li	a3, -1
+	beq	a2, a3, .LBB6_2
+	mv	a0, a1
+.LBB6_2:                                # %entry
 	addiw	a0, a0, -1
 	sgtz	a0, a0
 	ret
-func0000000000000104:                   # @func0000000000000104
+func0000000000000a04:                   # @func0000000000000a04
 	sext.w	a2, a2
 	li	a3, 10
-	bltu	a2, a3, .LBB6_2
+	bltu	a2, a3, .LBB7_2
 	mv	a0, a1
-.LBB6_2:                                # %entry
+.LBB7_2:                                # %entry
 	addiw	a0, a0, -10
 	sltiu	a0, a0, 135
 	ret

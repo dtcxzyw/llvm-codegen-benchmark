@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 67 occurrences:
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; box2d/optimized/b2_weld_joint.cpp.ll
@@ -18,6 +18,7 @@
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_soften.c.ll
+; darktable/optimized/introspection_tonemap.cc.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
@@ -61,11 +62,16 @@
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; postgres/optimized/array_selfuncs.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float %2, float -1.000000e+00
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 

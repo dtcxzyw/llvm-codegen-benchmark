@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; cmake/optimized/cmGlobalGenerator.cxx.ll
 ; darktable/optimized/amaze.cc.ll
@@ -11,6 +11,7 @@
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; mitsuba3/optimized/spot.cpp.ll

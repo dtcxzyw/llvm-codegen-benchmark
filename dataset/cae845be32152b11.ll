@@ -1,9 +1,8 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; freetype/optimized/smooth.c.ll
 ; libquic/optimized/quic_framer.cc.ll
-; lz4/optimized/lz4hc.c.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/s_async.cpp.ll
 ; php/optimized/quot_print.ll

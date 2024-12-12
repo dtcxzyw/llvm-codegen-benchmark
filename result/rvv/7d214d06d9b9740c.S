@@ -30,7 +30,7 @@ func000000000000001f:                   # @func000000000000001f
 	bclri	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsll.vi	v12, v11, 18
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -43,7 +43,7 @@ func000000000000000c:                   # @func000000000000000c
 	vwsll.vi	v14, v13, 3
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vor.vv	v8, v8, v14
 	ret
 func000000000000001c:                   # @func000000000000001c
@@ -54,6 +54,6 @@ func000000000000001c:                   # @func000000000000001c
 	slli	a0, a0, 8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vor.vv	v8, v8, v14
 	ret

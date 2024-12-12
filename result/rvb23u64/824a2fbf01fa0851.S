@@ -17,7 +17,7 @@ func00000000000000d0:                   # @func00000000000000d0
 	sh2add	a0, a1, a0
 	addi	a0, a0, -8
 	ret
-func000000000000005a:                   # @func000000000000005a
+func000000000000005b:                   # @func000000000000005b
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	sub	a0, a0, a2

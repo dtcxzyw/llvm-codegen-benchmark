@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; oiio/optimized/exif.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 1
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MCAsmStreamer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 3

@@ -11,7 +11,7 @@
 ; postgres/optimized/network.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i8 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i64 3, i64 1

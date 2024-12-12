@@ -1,6 +1,8 @@
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i8 %0, i8 %1) #0 {
 entry:
@@ -10,13 +12,12 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; gromacs/optimized/sim_util.cpp.ll
 ; llvm/optimized/GlobalOpt.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; openjdk/optimized/nmtDCmd.ll
-; openmpi/optimized/mpiext_rocm.ll
 ; postgres/optimized/mcv.ll
 ; vcpkg/optimized/vcpkgpaths.cpp.ll
 ; yosys/optimized/dfflegalize.ll

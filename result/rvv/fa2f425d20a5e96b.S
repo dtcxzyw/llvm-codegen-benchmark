@@ -7,7 +7,7 @@ func0000000000000004:                   # @func0000000000000004
 	vfmul.vf	v16, v16, fa5
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfncvt.f.f.w	v12, v16
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	fli.s	fa5, 0.5
 	vmfgt.vf	v0, v8, fa5
 	ret
@@ -21,7 +21,7 @@ func0000000000000002:                   # @func0000000000000002
 	vfmul.vf	v16, v16, fa5
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfncvt.f.f.w	v12, v16
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
@@ -35,7 +35,7 @@ func000000000000000c:                   # @func000000000000000c
 	vfmul.vf	v16, v16, fa5
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfncvt.f.f.w	v12, v16
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	fmv.w.x	fa5, a0
 	vmfge.vf	v0, v8, fa5
 	ret
@@ -48,7 +48,7 @@ func0000000000000003:                   # @func0000000000000003
 	vfmul.vf	v16, v16, fa5
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfncvt.f.f.w	v12, v16
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	fli.s	fa5, 1.0
 	vmfge.vf	v12, v8, fa5
 	vmnot.m	v0, v12

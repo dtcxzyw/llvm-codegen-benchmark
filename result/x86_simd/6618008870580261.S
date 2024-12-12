@@ -40,7 +40,7 @@
 	.byte	0                               # 0x0
 func0000000000000004:                   # @func0000000000000004
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpsrld	$17, %ymm0, %ymm0
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -49,7 +49,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000007:                   # @func0000000000000007
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [31744,31744,31744,31744,31744,31744,31744,31744]
 	vpand	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpsrld	$15, %ymm0, %ymm0
 	vpand	%ymm2, %ymm0, %ymm0
 	retq
@@ -93,7 +93,7 @@ func0000000000000007:                   # @func0000000000000007
 	.byte	128                             # 0x80
 func0000000000000005:                   # @func0000000000000005
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpshufb	.LCPI2_1(%rip), %ymm0, %ymm0    # ymm0 = zero,ymm0[3],zero,zero,zero,ymm0[7],zero,zero,zero,ymm0[11],zero,zero,zero,ymm0[15],zero,zero,zero,ymm0[19],zero,zero,zero,ymm0[23],zero,zero,zero,ymm0[27],zero,zero,zero,ymm0[31],zero,zero
 	retq
 .LCPI3_0:

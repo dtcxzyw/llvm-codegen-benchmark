@@ -1,18 +1,13 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sext.w	a0, a0
 	sext.w	a1, a1
 	snez	a0, a0
-	beqz	a1, .LBB0_2
-	li	a1, 65
-	slli	a0, a0, 4
+	snez	a1, a1
+	slli	a1, a1, 13
+	slli	a0, a0, 1
 	or	a0, a0, a1
 	ret
-.LBB0_2:
-	li	a1, 1
-	slli	a0, a0, 4
-	or	a0, a0, a1
-	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sext.w	a2, a0
 	sext.w	a1, a1
 	lui	a0, 1048570

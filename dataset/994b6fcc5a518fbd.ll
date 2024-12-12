@@ -1,7 +1,7 @@
 
-%struct.pollfd.3352173 = type { i32, i16, i16 }
+%struct.pollfd.3539972 = type { i32, i16, i16 }
 
-; 88 occurrences:
+; 91 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/inflate.c.ll
 ; arrow/optimized/feather.cc.ll
@@ -12,8 +12,10 @@
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/chmd.c.ll
+; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/pe.c.ll
+; clamav/optimized/qtmd.c.ll
 ; clamav/optimized/sis.c.ll
 ; clamav/optimized/spin.c.ll
 ; clamav/optimized/upack.c.ll
@@ -56,6 +58,7 @@
 ; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/Rewriter.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -91,16 +94,16 @@
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 38 occurrences:
+; 40 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/cecChoice.c.ll
 ; abc/optimized/giaCof.c.ll
@@ -111,6 +114,7 @@ entry:
 ; abc/optimized/mpmMap.c.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; arrow/optimized/decimal.cc.ll
+; boost/optimized/src.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cvc5/optimized/generic_op.cpp.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
@@ -121,6 +125,7 @@ entry:
 ; icu/optimized/ustring.ll
 ; libwebp/optimized/backward_references_enc.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
+; libwebp/optimized/vp8l_dec.c.ll
 ; lz4/optimized/lz4.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; openjdk/optimized/mlib_ImageConv_D64nw.ll
@@ -140,22 +145,21 @@ entry:
 ; xgboost/optimized/charconv.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000005e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; cmake/optimized/archive_write_set_format_ar.c.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; cpython/optimized/Hacl_Hash_SHA3.ll
-; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
@@ -186,10 +190,8 @@ entry:
   ret ptr %6
 }
 
-; 31 occurrences:
+; 29 occurrences:
 ; clamav/optimized/Delta.c.ll
-; clamav/optimized/lzxd.c.ll
-; clamav/optimized/qtmd.c.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; cpython/optimized/Hacl_Hash_SHA3.ll
 ; cpython/optimized/bytearrayobject.ll
@@ -239,10 +241,10 @@ entry:
 ; hyperscan/optimized/behaviour.cpp.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sub i64 0, %1
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
@@ -252,10 +254,10 @@ entry:
 ; clamav/optimized/rarvm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000005c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
@@ -264,12 +266,12 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sub nuw nsw i64 7, %1
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -280,9 +282,9 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.pollfd.3352173, ptr %0, i64 %3
+  %4 = getelementptr %struct.pollfd.3539972, ptr %0, i64 %3
   %5 = sub i64 0, %1
-  %6 = getelementptr %struct.pollfd.3352173, ptr %4, i64 %5
+  %6 = getelementptr %struct.pollfd.3539972, ptr %4, i64 %5
   ret ptr %6
 }
 

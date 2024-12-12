@@ -1,7 +1,9 @@
 
-; 14 occurrences:
+; 16 occurrences:
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/sswMan.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/shapes.c.ll
 ; graphviz/optimized/tlayout.c.ll

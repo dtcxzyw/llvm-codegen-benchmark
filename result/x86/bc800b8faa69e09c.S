@@ -3,7 +3,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpb	$-10, %dil
 	setb	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addb	$-48, %dil
 	cmpb	$10, %dil
 	setb	%al
@@ -17,7 +17,12 @@ func000000000000000a:                   # @func000000000000000a
 	cmpb	$2, %dil
 	setge	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000034:                   # @func0000000000000034
+	decb	%dil
+	cmpb	$2, %dil
+	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
 	addb	$-54, %dil
 	cmpb	$-6, %dil
 	setb	%al
@@ -26,24 +31,29 @@ func000000000000000c:                   # @func000000000000000c
 	cmpb	$-1, %dil
 	setne	%al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	cmpb	$7, %dil
 	setne	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	cmpb	$7, %dil
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000008:                   # @func0000000000000008
+	addb	$-100, %dil
+	cmpb	$-101, %dil
+	setb	%al
+	retq
+func0000000000000041:                   # @func0000000000000041
 	cmpb	$-2, %dil
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	addb	$-6, %dil
 	cmpb	$-3, %dil
 	setb	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpb	$4, %dil
 	sete	%al
 	retq
@@ -52,21 +62,31 @@ func0000000000000006:                   # @func0000000000000006
 	testb	%dil, %dil
 	setle	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func0000000000000014:                   # @func0000000000000014
+	decb	%dil
+	cmpb	$4, %dil
+	setb	%al
+	retq
+func000000000000002c:                   # @func000000000000002c
 	cmpb	$1, %dil
 	setne	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	incb	%dil
 	cmpb	$2, %dil
 	setge	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000038:                   # @func0000000000000038
+	addb	$-57, %dil
+	cmpb	$-9, %dil
+	setb	%al
+	retq
+func0000000000000046:                   # @func0000000000000046
 	incb	%dil
 	cmpb	$2, %dil
 	setl	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	cmpb	$-2, %dil
 	setne	%al
 	retq

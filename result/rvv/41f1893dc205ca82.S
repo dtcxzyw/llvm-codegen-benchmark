@@ -20,7 +20,7 @@ func000000000000000d:                   # @func000000000000000d
 	vmacc.vx	v8, a0, v10
 	ret
 func000000000000000a:                   # @func000000000000000a
-	li	a0, 1326
+	li	a0, 613
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	ret

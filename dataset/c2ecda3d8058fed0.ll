@@ -1,8 +1,9 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; libwebp/optimized/anim_decode.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
+; lvgl/optimized/lv_color_op.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
 ; openjdk/optimized/splashscreen_gfx_impl.ll
@@ -18,11 +19,10 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; libpng/optimized/pngrutil.c.ll
 ; openjdk/optimized/pngrutil.ll
 ; wireshark/optimized/packet-vrt.c.ll
-; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:

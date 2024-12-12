@@ -11,5 +11,5 @@ func0000000000000000:                   # @func0000000000000000
 	vfmv.v.f	v16, fa5
 	vfmerge.vfm	v16, v16, fa4, v0
 	vfmul.vv	v12, v16, v12
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	ret

@@ -6,9 +6,9 @@
 ; grpc/optimized/channel_stack.cc.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000030(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = getelementptr { { i64, [1 x i64] } }, ptr %3, i64 %0
   %5 = xor i64 %1, -1
   %6 = getelementptr { { i64, [1 x i64] } }, ptr %4, i64 %5

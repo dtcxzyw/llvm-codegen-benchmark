@@ -1,10 +1,11 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/date.ll
 ; linux/optimized/kapi.ll
-; nuttx/optimized/lib_timegm.c.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_refr.ll
 ; quantlib/optimized/date.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; wireshark/optimized/netmon.c.ll

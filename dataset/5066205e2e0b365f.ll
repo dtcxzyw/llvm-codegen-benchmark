@@ -19,7 +19,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp olt float %4, %0
+  %5 = fcmp ogt float %0, %4
   ret i1 %5
 }
 
@@ -32,21 +32,22 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp uge float %4, %0
+  %5 = fcmp ule float %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/rho.cpp.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(float %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp oeq float %4, %0
+  %5 = fcmp oeq float %0, %4
   ret i1 %5
 }
 
@@ -58,7 +59,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp oge float %4, %0
+  %5 = fcmp ole float %0, %4
   ret i1 %5
 }
 
@@ -80,7 +81,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp ogt float %4, %0
+  %5 = fcmp olt float %0, %4
   ret i1 %5
 }
 
@@ -92,7 +93,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp ule float %4, %0
+  %5 = fcmp uge float %0, %4
   ret i1 %5
 }
 
@@ -104,7 +105,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp ugt float %4, %0
+  %5 = fcmp ult float %0, %4
   ret i1 %5
 }
 
@@ -116,7 +117,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp une float %4, %0
+  %5 = fcmp une float %0, %4
   ret i1 %5
 }
 
@@ -128,7 +129,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp ult float %4, %0
+  %5 = fcmp ugt float %0, %4
   ret i1 %5
 }
 

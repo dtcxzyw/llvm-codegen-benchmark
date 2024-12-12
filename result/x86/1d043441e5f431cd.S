@@ -18,7 +18,16 @@ func000000000000000c:                   # @func000000000000000c
 	cmpw	$20, %di
 	setne	%al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpw	$97, %di
+	setae	%al
+	retq
 func000000000000000a:                   # @func000000000000000a
 	testw	%di, %di
 	setg	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movzwl	%di, %eax
+	cmpl	$256, %eax                      # imm = 0x100
+	setb	%al
 	retq

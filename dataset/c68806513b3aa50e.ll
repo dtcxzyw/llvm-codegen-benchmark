@@ -5,19 +5,21 @@
 ; llvm/optimized/CoverageMappingReader.cpp.ll
 ; openjdk/optimized/pngrtran.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000ff(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 6
-  %5 = getelementptr nusw i8, ptr %1, i64 1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
+; linux/optimized/rc80211_minstrel_ht.ll
+; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000001c0(i64 %0, ptr %1, i32 %2) #0 {
 entry:
@@ -29,8 +31,9 @@ entry:
   ret ptr %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/amaze.cc.ll
+; icu/optimized/reldatefmt.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000c0(i64 %0, ptr %1, i32 %2) #0 {
 entry:

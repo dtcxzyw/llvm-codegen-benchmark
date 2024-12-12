@@ -1,6 +1,18 @@
 
-; 103 occurrences:
+; 115 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -84,7 +96,6 @@
 ; openusd/optimized/vec3d.cpp.ll
 ; openusd/optimized/vec3f.cpp.ll
 ; openusd/optimized/vec3h.cpp.ll
-; osqp/optimized/scaling.c.ll
 ; postgres/optimized/nodeAgg.ll
 ; proj/optimized/adams.cpp.ll
 ; proj/optimized/generic_inverse.cpp.ll
@@ -103,6 +114,7 @@
 ; wireshark/optimized/percent_bar_delegate.cpp.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; xgboost/optimized/aft_obj.cc.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, i1 %1, double %2) #0 {
 entry:

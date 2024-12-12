@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/3a6umeboy1uh9t01.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
@@ -7,6 +7,8 @@
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/31i6j0ayu6bevt9n.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
 entry:

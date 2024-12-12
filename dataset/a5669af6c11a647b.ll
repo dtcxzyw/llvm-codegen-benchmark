@@ -73,7 +73,7 @@ define i64 @func0000000000000001(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

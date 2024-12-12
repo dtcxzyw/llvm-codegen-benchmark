@@ -1,4 +1,4 @@
-func000000000000014c:                   # @func000000000000014c
+func000000000000048c:                   # @func000000000000048c
 	movsbl	%dil, %eax
 	leal	-14(%rax), %ecx
 	cmpl	$-5, %ecx
@@ -7,7 +7,7 @@ func000000000000014c:                   # @func000000000000014c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000014a:                   # @func000000000000014a
+func000000000000048a:                   # @func000000000000048a
 	movsbl	%dil, %eax
 	leal	-48(%rax), %ecx
 	cmpl	$10, %ecx

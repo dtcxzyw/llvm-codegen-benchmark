@@ -6,21 +6,18 @@
 define ptr @func000000000000000c(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 170 occurrences:
+; 158 occurrences:
 ; brotli/optimized/literal_cost.c.ll
 ; cmake/optimized/divsufsort.c.ll
-; coreutils-rs/optimized/4jcegsvljtrqsq46.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; faiss/optimized/utils.cpp.ll
 ; freetype/optimized/pfr.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/type1.c.ll
-; git/optimized/chunk-format.ll
 ; git/optimized/midx.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -29,10 +26,6 @@ entry:
 ; hdf5/optimized/H5Ocache.c.ll
 ; hdf5/optimized/H5Olayout.c.ll
 ; hdf5/optimized/H5Olink.c.ll
-; hdf5/optimized/H5Pdapl.c.ll
-; hdf5/optimized/H5Pdxpl.c.ll
-; hdf5/optimized/H5Pfapl.c.ll
-; hdf5/optimized/H5Plapl.c.ll
 ; hdf5/optimized/H5Rint.c.ll
 ; icu/optimized/unames.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -45,8 +38,6 @@ entry:
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
-; mini-lsm-rs/optimized/4c6shhrwpfde8fun.ll
-; mini-lsm-rs/optimized/5avg215hrxp5j19q.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-i386.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
@@ -175,19 +166,16 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; stockfish/optimized/tbprobe.ll
-; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
-; tree-sitter-rs/optimized/3w8fnbh84xi9yzxl.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
-; yosys/optimized/fstapi.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %4 = or disjoint i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -206,7 +194,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -220,10 +208,31 @@ entry:
 ; openjdk/optimized/pngrtran.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 11 occurrences:
+; coreutils-rs/optimized/4jcegsvljtrqsq46.ll
+; git/optimized/chunk-format.ll
+; hdf5/optimized/H5Pdapl.c.ll
+; hdf5/optimized/H5Pdxpl.c.ll
+; hdf5/optimized/H5Pfapl.c.ll
+; hdf5/optimized/H5Plapl.c.ll
+; mini-lsm-rs/optimized/4c6shhrwpfde8fun.ll
+; mini-lsm-rs/optimized/5avg215hrxp5j19q.ll
+; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
+; tree-sitter-rs/optimized/3w8fnbh84xi9yzxl.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = or disjoint i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }

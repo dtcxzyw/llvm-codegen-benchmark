@@ -10,7 +10,7 @@
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   ret i8 %3
 }
 

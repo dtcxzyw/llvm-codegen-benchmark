@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vmovd	%xmm0, %eax
 	andl	$8388607, %eax                  # imm = 0x7FFFFF
 	xorl	%ecx, %ecx

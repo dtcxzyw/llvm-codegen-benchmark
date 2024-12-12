@@ -23,10 +23,9 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 func0000000000000010:                   # @func0000000000000010
 	shrl	$5, %esi
-	movl	%esi, %eax
-	shll	$4, %eax
+	leal	(%rdi,%rsi), %eax
+	shll	$4, %esi
 	addl	%esi, %eax
-	addl	%edi, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	shrl	$19, %esi

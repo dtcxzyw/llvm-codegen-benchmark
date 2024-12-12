@@ -25,8 +25,8 @@ func0000000000000004:                   # @func0000000000000004
 	kshiftrw	$8, %k1, %k2
 	vminpd	%zmm4, %zmm2, %zmm4 {%k2} {z}
 	vminpd	%zmm3, %zmm2, %zmm2 {%k1} {z}
-	vmulpd	%zmm0, %zmm2, %zmm0
-	vmulpd	%zmm1, %zmm4, %zmm1
+	vmulpd	%zmm2, %zmm0, %zmm0
+	vmulpd	%zmm4, %zmm1, %zmm1
 	retq
 .LCPI2_0:
 	.quad	0x4059000000000000              # double 100
@@ -42,6 +42,6 @@ func000000000000000c:                   # @func000000000000000c
 	vbroadcastsd	.LCPI2_1(%rip), %zmm4   # zmm4 = [1.0E+1,1.0E+1,1.0E+1,1.0E+1,1.0E+1,1.0E+1,1.0E+1,1.0E+1]
 	vmovapd	%zmm4, %zmm2 {%k2}
 	vmovapd	%zmm4, %zmm3 {%k1}
-	vmulpd	%zmm0, %zmm3, %zmm0
-	vmulpd	%zmm1, %zmm2, %zmm1
+	vmulpd	%zmm3, %zmm0, %zmm0
+	vmulpd	%zmm2, %zmm1, %zmm1
 	retq

@@ -1,18 +1,18 @@
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	sub	a1, a1, a2
 	srli	a1, a1, 3
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slt	a0, a0, a1
 	ret
-func0000000000000124:                   # @func0000000000000124
+func0000000000000244:                   # @func0000000000000244
 	sub	a1, a1, a2
 	srli	a1, a1, 3
 	sext.w	a1, a1
 	sext.w	a0, a0
 	sltu	a0, a0, a1
 	ret
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	sub	a1, a1, a2
 	srli	a1, a1, 3
 	sext.w	a1, a1
@@ -27,14 +27,14 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000134:                   # @func0000000000000134
+func0000000000000264:                   # @func0000000000000264
 	sub	a1, a1, a2
 	srli	a1, a1, 3
 	sext.w	a1, a1
 	sext.w	a0, a0
 	sltu	a0, a0, a1
 	ret
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	sub	a1, a1, a2
 	srli	a1, a1, 3
 	sext.w	a1, a1
@@ -42,7 +42,7 @@ func0000000000000101:                   # @func0000000000000101
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000111:                   # @func0000000000000111
+func0000000000000221:                   # @func0000000000000221
 	sub	a1, a1, a2
 	srli	a1, a1, 3
 	sext.w	a1, a1
@@ -50,14 +50,14 @@ func0000000000000111:                   # @func0000000000000111
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000126:                   # @func0000000000000126
+func0000000000000246:                   # @func0000000000000246
 	sub	a1, a1, a2
 	srli	a1, a1, 3
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slt	a0, a0, a1
 	ret
-func000000000000010c:                   # @func000000000000010c
+func000000000000020c:                   # @func000000000000020c
 	sub	a1, a1, a2
 	srli	a1, a1, 4
 	sext.w	a1, a1
@@ -65,28 +65,28 @@ func000000000000010c:                   # @func000000000000010c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	sub	a1, a1, a2
 	srli	a1, a1, 4
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slt	a0, a1, a0
 	ret
-func0000000000000136:                   # @func0000000000000136
+func0000000000000266:                   # @func0000000000000266
 	sub	a1, a1, a2
 	srli	a1, a1, 2
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slt	a0, a0, a1
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	sub	a1, a1, a2
 	srli	a1, a1, 3
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slt	a0, a0, a1
 	ret
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	sub	a1, a1, a2
 	srli	a1, a1, 3
 	sext.w	a1, a1
@@ -107,14 +107,14 @@ func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0
 	slt	a0, a1, a0
 	ret
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	sub	a1, a1, a2
 	srli	a1, a1, 2
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slt	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sub	a1, a1, a2
 	srli	a1, a1, 2
 	sext.w	a1, a1
@@ -122,7 +122,7 @@ func0000000000000031:                   # @func0000000000000031
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000010b:                   # @func000000000000010b
+func000000000000020b:                   # @func000000000000020b
 	sub	a1, a1, a2
 	srli	a1, a1, 1
 	sext.w	a1, a1
@@ -137,7 +137,7 @@ func0000000000000006:                   # @func0000000000000006
 	sext.w	a0, a0
 	slt	a0, a0, a1
 	ret
-func0000000000000131:                   # @func0000000000000131
+func0000000000000261:                   # @func0000000000000261
 	sub	a1, a1, a2
 	srli	a1, a1, 2
 	sext.w	a1, a1
@@ -145,7 +145,7 @@ func0000000000000131:                   # @func0000000000000131
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000012a:                   # @func000000000000012a
+func000000000000024a:                   # @func000000000000024a
 	sub	a1, a1, a2
 	srli	a1, a1, 3
 	sext.w	a1, a1

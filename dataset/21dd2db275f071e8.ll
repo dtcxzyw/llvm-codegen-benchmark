@@ -1,19 +1,14 @@
 
-; 167 occurrences:
+; 156 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ifTime.c.ll
-; abseil-cpp/optimized/crc_memcpy_test.cc.ll
-; abseil-cpp/optimized/mock_distributions_test.cc.ll
-; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/zdict.c.ll
-; duckdb/optimized/ub_duckdb_parallel.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
@@ -23,14 +18,11 @@
 ; flatbuffers/optimized/reflection.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/truetype.c.ll
-; grpc/optimized/frame_rst_stream.cc.ll
-; grpc/optimized/weighted_round_robin.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; libquic/optimized/padding.c.ll
@@ -156,24 +148,21 @@
 ; mold/optimized/input-files.cc.SH4.cc.ll
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
-; nuttx/optimized/mm_free.c.ll
-; nuttx/optimized/mm_realloc.c.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; openjdk/optimized/ciStreams.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; openjdk/optimized/hb-ot-font.ll
-; openspiel/optimized/history_tree.cc.ll
 ; proj/optimized/param.cpp.ll
 ; rust-analyzer-rs/optimized/11fzjzs7q1iz2s6j.ll
 ; rust-analyzer-rs/optimized/yr8bg0giq9ukis7.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 8589934588
-  %4 = getelementptr nusw i8, ptr %1, i64 12
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 12
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -220,20 +209,26 @@ entry:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; openjdk/optimized/ciStreams.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %1, i64 1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = getelementptr i32, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 15 occurrences:
-; abc/optimized/abcRec3.c.ll
-; abc/optimized/abcRenode.c.ll
-; hyperscan/optimized/teddy.c.ll
-; hyperscan/optimized/teddy_avx2.c.ll
+; 21 occurrences:
+; abseil-cpp/optimized/crc_memcpy_test.cc.ll
+; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
+; duckdb/optimized/ub_duckdb_parallel.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; grpc/optimized/frame_rst_stream.cc.ll
+; grpc/optimized/weighted_round_robin.cc.ll
+; hyperscan/optimized/fdr_compile.cpp.ll
+; openspiel/optimized/history_tree.cc.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll
@@ -246,26 +241,88 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000003e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
-  %4 = getelementptr i8, ptr %1, i64 40
-  %5 = getelementptr i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 40
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; abc/optimized/abcRec3.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 255
+  %4 = getelementptr i8, ptr %1, i64 36
+  %5 = getelementptr i32, ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
 ; 3 occurrences:
+; abc/optimized/abcRenode.c.ll
+; hyperscan/optimized/teddy.c.ll
+; hyperscan/optimized/teddy_avx2.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 255
+  %4 = getelementptr i8, ptr %1, i64 36
+  %5 = getelementptr i32, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw i8, ptr %1, i64 -16
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 2 occurrences:
 ; cpython/optimized/longobject.ll
-; openblas/optimized/dlatrs3.c.ll
 ; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 2147483647
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %5 = getelementptr i16, ptr %4, i64 %3
+  %6 = getelementptr i16, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 2 occurrences:
+; nuttx/optimized/mm_free.c.ll
+; nuttx/optimized/mm_realloc.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -4
+  %4 = getelementptr nusw i8, ptr %1, i64 -16
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openblas/optimized/dlatrs3.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 2147483647
-  %4 = getelementptr nusw i8, ptr %1, i64 16
-  %5 = getelementptr i16, ptr %4, i64 %3
-  %6 = getelementptr i16, ptr %5, i64 %0
+  %3 = and i64 %2, 4294967295
+  %4 = getelementptr nusw i8, ptr %1, i64 -8
+  %5 = getelementptr double, ptr %4, i64 %3
+  %6 = getelementptr double, ptr %5, i64 %0
   ret ptr %6
 }
 

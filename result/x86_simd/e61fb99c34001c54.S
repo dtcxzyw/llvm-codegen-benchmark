@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	2                               # 0x2
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000003f8:                   # @func00000000000003f8
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm0, %ymm2, %ymm0
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [2,2,2,2,2,2,2,2]

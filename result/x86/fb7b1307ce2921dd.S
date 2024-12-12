@@ -4,12 +4,12 @@ func0000000000000006:                   # @func0000000000000006
 	shlxl	%esi, %eax, %eax
 	orl	%edi, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
+func000000000000001c:                   # @func000000000000001c
 	movl	%edi, %eax
 	addl	%esi, %esi
 	btsl	%esi, %eax
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
 	addl	%esi, %esi
 	btsl	%esi, %eax
@@ -42,8 +42,8 @@ func0000000000000014:                   # @func0000000000000014
 	btsl	%esi, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	shll	$2, %esi
-	movl	$4, %eax
+	addl	%esi, %esi
+	movl	$3, %eax
 	shlxl	%esi, %eax, %eax
 	orl	%edi, %eax
 	retq

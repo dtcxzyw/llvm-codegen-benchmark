@@ -22,7 +22,7 @@
 ; ruby/optimized/windows_1257.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 540672
   %3 = icmp eq i32 %2, 0
@@ -264,7 +264,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65280
   %3 = icmp eq i32 %2, 0
@@ -277,7 +277,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_vblank.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1048575
   %3 = icmp ne i32 %2, 0
@@ -291,7 +291,7 @@ entry:
 ; linux/optimized/neighbour.ll
 ; linux/optimized/rx.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16
   %3 = icmp ne i32 %2, 0

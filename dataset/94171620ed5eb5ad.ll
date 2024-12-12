@@ -5,7 +5,7 @@
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add nsw i64 %3, %0
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add nsw i64 %3, %0
@@ -47,7 +47,8 @@ entry:
   ret i1 %6
 }
 
-; 104 occurrences:
+; 105 occurrences:
+; boost/optimized/alloc_lib.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; git/optimized/get-tar-commit-id.ll
@@ -162,14 +163,15 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; arrow/optimized/concatenate.cc.ll
+; boost/optimized/static_string.ll
 ; spike/optimized/f16_sqrt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = and i64 %4, 32768
   %6 = icmp eq i64 %5, 0
   ret i1 %6
@@ -180,7 +182,7 @@ entry:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; yosys/optimized/eval.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = add i64 %3, %0
@@ -194,7 +196,7 @@ entry:
 ; opencv/optimized/infer_ie_onnx_hybrid.cpp.ll
 ; opencv/optimized/layers_common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add nsw i64 %3, %0
@@ -206,12 +208,12 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000b8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = and i64 %4, 65535
-  %6 = icmp ugt i64 %5, 2044
+  %6 = icmp samesign ugt i64 %5, 2044
   ret i1 %6
 }
 

@@ -47,8 +47,7 @@ entry:
   ret i8 %2
 }
 
-; 3 occurrences:
-; arrow/optimized/metadata_internal.cc.ll
+; 2 occurrences:
 ; openjdk/optimized/jni_util.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
@@ -59,9 +58,8 @@ entry:
   ret i8 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; icu/optimized/normalizer2impl.ll
-; icu/optimized/ufmt_cmn.ll
 ; linux/optimized/iface.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i8 %0, i16 %1) #0 {

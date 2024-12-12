@@ -38,24 +38,19 @@ entry:
   ret i64 %6
 }
 
-; 21 occurrences:
-; gromacs/optimized/dorg2r.cpp.ll
+; 16 occurrences:
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/dstein.cpp.ll
 ; gromacs/optimized/dsymv.cpp.ll
 ; gromacs/optimized/dsyr2.cpp.ll
 ; gromacs/optimized/dsyr2k.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
 ; gromacs/optimized/sstein.cpp.ll
 ; gromacs/optimized/ssymv.cpp.ll
 ; gromacs/optimized/ssyr2.cpp.ll
 ; gromacs/optimized/ssyr2k.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dggsvp3.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dorbdb.c.ll
-; openblas/optimized/dorghr.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openspiel/optimized/hex.cc.ll
 ; openusd/optimized/convolve.c.ll
@@ -70,9 +65,8 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; icu/optimized/vtzone.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dlaeda.c.ll
 ; openblas/optimized/dlatrs3.c.ll
@@ -83,7 +77,7 @@ define i64 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = add nsw i32 %3, -1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -95,7 +89,7 @@ define i64 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = add nsw i32 %3, 1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }

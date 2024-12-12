@@ -1,12 +1,11 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; clamav/optimized/special.c.ll
 ; cpython/optimized/longobject.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; hdf5/optimized/H5Gstab.c.ll
 ; hdf5/optimized/H5HFcache.c.ll
 ; hdf5/optimized/H5HL.c.ll
-; hdf5/optimized/H5HLdblk.c.ll
 ; hdf5/optimized/H5Oalloc.c.ll
 ; hyperscan/optimized/sheng.c.ll
 ; libquic/optimized/hpack_huffman_table.cc.ll
@@ -19,7 +18,7 @@
 define i64 @func0000000000000003(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = and i64 %3, 63
   ret i64 %4
 }
@@ -34,7 +33,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }
@@ -56,7 +55,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, -4294967296
   ret i64 %4
 }
@@ -68,7 +67,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }
@@ -80,7 +79,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }

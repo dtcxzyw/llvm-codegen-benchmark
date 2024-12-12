@@ -6,7 +6,14 @@ func000000000000001a:                   // @func000000000000001a
 	add	x0, x8, #64
 	ret
                                         // -- End function
-func000000000000005a:                   // @func000000000000005a
+func000000000000001b:                   // @func000000000000001b
+// %bb.0:                               // %entry
+	sub	x8, x0, w2, uxtw #2
+	and	x9, x1, #0xfffffffe
+	add	x0, x8, x9, lsl #3
+	ret
+                                        // -- End function
+func000000000000005b:                   // @func000000000000005b
 // %bb.0:                               // %entry
 	mov	w8, w2
 	mov	w9, w1

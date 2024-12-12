@@ -53,13 +53,6 @@ func0000000000000107:                   # @func0000000000000107
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
-	fmv.d.x	fa5, zero
-	flt.d	a1, fa1, fa5
-	or	a0, a0, a1
-	fle.d	a1, fa5, fa0
-	and	a0, a0, a1
-	ret
 func00000000000000c6:                   # @func00000000000000c6
 	fli.d	fa5, inf
 	flt.d	a1, fa1, fa5

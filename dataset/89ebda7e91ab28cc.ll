@@ -1,5 +1,7 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; opencv/optimized/colorspace.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; quantlib/optimized/noarbsabr.ll

@@ -1,6 +1,7 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; folly/optimized/farmhash.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
@@ -36,7 +37,7 @@ entry:
   %4 = mul i64 %3, 637979407623780425
   %5 = lshr i64 %4, 37
   %6 = xor i64 %5, %4
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

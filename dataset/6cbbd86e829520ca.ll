@@ -5,7 +5,7 @@
 ; wireshark/optimized/ngsniffer.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i1 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000158(i1 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %3, 8
@@ -35,7 +35,7 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a2(i1 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000142(i1 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %3, 8
@@ -52,13 +52,13 @@ entry:
 ; wireshark/optimized/packet-ppi.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i1 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000148(i1 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %3, 8
   %5 = or disjoint i16 %4, %1
   %6 = icmp ult i16 %5, -5535
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
@@ -66,7 +66,7 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b0(i1 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000150(i1 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %3, 8

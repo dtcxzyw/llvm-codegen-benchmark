@@ -34,3 +34,9 @@ func0000000000000010:                   # @func0000000000000010
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpl	$4, %edx
+	setb	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq

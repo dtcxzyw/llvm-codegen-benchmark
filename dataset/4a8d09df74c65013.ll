@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
 ; hermes/optimized/DataView.cpp.ll
@@ -28,19 +28,18 @@
 ; hermes/optimized/TypedArray.cpp.ll
 ; hermes/optimized/hermes.cpp.ll
 ; hermes/optimized/require.cpp.ll
-; linux/optimized/sleep.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; openjdk/optimized/screencast_pipewire.ll
 ; openjdk/optimized/xStat.ll
 ; openjdk/optimized/zStat.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i32 %1) #0 {
+define ptr @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 

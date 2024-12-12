@@ -1,50 +1,18 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
 	mov	w8, #1                          // =0x1
-	dup	v6.2d, x8
-	mov	x8, #-2                         // =0xfffffffffffffffe
-	ushll	v5.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	ushl	v4.2d, v6.2d, v4.2d
-	ushl	v3.2d, v6.2d, v3.2d
-	dup	v6.2d, x8
-	shl	v5.2d, v5.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v5.2d, v5.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	bic	v3.16b, v3.16b, v5.16b
-	bic	v4.16b, v4.16b, v0.16b
-	and	v0.16b, v2.16b, v0.16b
-	and	v2.16b, v4.16b, v6.16b
-	and	v4.16b, v1.16b, v5.16b
-	and	v3.16b, v3.16b, v6.16b
-	orr	v1.16b, v0.16b, v2.16b
-	orr	v0.16b, v4.16b, v3.16b
+	tst	w0, #0x1
+	lsl	x8, x8, x2
+	and	x8, x8, #0xfffffffffffffffe
+	csel	x0, x1, x8, ne
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
 	mov	x8, #-2                         // =0xfffffffffffffffe
-	dup	v6.2d, x8
-	mov	w8, #126                        // =0x7e
-	ushll	v5.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	ushl	v4.2d, v6.2d, v4.2d
-	ushl	v3.2d, v6.2d, v3.2d
-	dup	v6.2d, x8
-	shl	v5.2d, v5.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v5.2d, v5.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	bic	v3.16b, v3.16b, v5.16b
-	bic	v4.16b, v4.16b, v0.16b
-	and	v0.16b, v2.16b, v0.16b
-	and	v2.16b, v4.16b, v6.16b
-	and	v4.16b, v1.16b, v5.16b
-	and	v3.16b, v3.16b, v6.16b
-	orr	v1.16b, v0.16b, v2.16b
-	orr	v0.16b, v4.16b, v3.16b
+	tst	w0, #0x1
+	lsl	x8, x8, x2
+	and	x8, x8, #0x7e
+	csel	x0, x1, x8, ne
 	ret
                                         // -- End function

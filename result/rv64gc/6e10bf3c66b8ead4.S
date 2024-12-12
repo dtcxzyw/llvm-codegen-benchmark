@@ -1,4 +1,4 @@
-func000000000000061a:                   # @func000000000000061a
+func0000000000001c2a:                   # @func0000000000001c2a
 	sraiw	a3, a2, 31
 	xor	a2, a2, a3
 	subw	a2, a2, a3

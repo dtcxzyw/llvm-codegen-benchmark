@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; gromacs/optimized/colvarbias_alb.cpp.ll
 ; gromacs/optimized/colvarcomp_gpath.cpp.ll
@@ -11,7 +11,6 @@
 ; opencv/optimized/hough.cpp.ll
 ; openjdk/optimized/cmscam02.ll
 ; openusd/optimized/sphereMeshGenerator.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; quantlib/optimized/analyticbarrierengine.ll
 ; quantlib/optimized/analyticcontinuousfixedlookback.ll
 ; quantlib/optimized/analyticcontinuousfloatinglookback.ll

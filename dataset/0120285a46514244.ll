@@ -1,5 +1,17 @@
 
-; 21 occurrences:
+; 1 occurrences:
+; ruby/optimized/parser.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000041(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %3 = icmp eq ptr %1, null
+  %4 = select i1 %3, ptr %0, ptr %2
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 19 occurrences:
 ; git/optimized/connect.ll
 ; git/optimized/credential.ll
 ; git/optimized/dir.ll
@@ -18,13 +30,11 @@
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/glob_wrapper.ll
 ; php/optimized/phar_object.ll
-; redis/optimized/loadlib.ll
-; ruby/optimized/parser.ll
 ; yosys/optimized/techmap.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(ptr %0, ptr %1) #0 {
+define i64 @func0000000000000061(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = icmp eq ptr %1, null
   %4 = select i1 %3, ptr %0, ptr %2
   %5 = ptrtoint ptr %4 to i64

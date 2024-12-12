@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/qmmminputgenerator.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; mitsuba3/optimized/scene.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(i64 %0, ptr %1) #0 {
 entry:

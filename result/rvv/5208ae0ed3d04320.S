@@ -16,7 +16,7 @@ func00000000000000d8:                   # @func00000000000000d8
 	vadd.vv	v10, v10, v12
 	li	a0, 32
 	vsrl.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 8
 	vsetvli	zero, zero, e16, mf2, ta, ma

@@ -4,7 +4,7 @@
 ; mitsuba3/optimized/measured.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0) #0 {
+define i1 @func0000000000000101(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/imagefilters.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0) #0 {
+define i1 @func0000000000000104(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32
@@ -36,7 +36,7 @@ entry:
 ; opencv/optimized/dynafu_tsdf.cpp.ll
 ; opencv/optimized/kinfu_frame.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0) #0 {
+define i1 @func000000000000012a(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32
@@ -50,7 +50,7 @@ entry:
 ; opencv/optimized/perf_convolution.cpp.ll
 ; opencv/optimized/retinafasttonemapping.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0) #0 {
+define i1 @func0000000000000121(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32
@@ -65,7 +65,7 @@ entry:
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/retina.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0) #0 {
+define i1 @func0000000000000126(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32

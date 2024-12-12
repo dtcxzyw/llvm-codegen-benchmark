@@ -3,7 +3,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 363526
   %4 = icmp ne i32 %3, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/iface.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp eq i32 %3, 0

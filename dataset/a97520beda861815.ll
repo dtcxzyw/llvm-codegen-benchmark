@@ -16,18 +16,6 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; rust-analyzer-rs/optimized/1rhf3pjhhflazor1.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000023(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 17
-  %3 = zext i1 %2 to i64
-  %4 = select i1 %0, i64 2, i64 1
-  %5 = add nuw nsw i64 %4, %3
-  ret i64 %5
-}
-
 ; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll

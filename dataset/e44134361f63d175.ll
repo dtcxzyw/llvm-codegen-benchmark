@@ -5,7 +5,7 @@
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 6
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sdiv exact i64 %1, 6
   %6 = add i64 %4, %5
   %7 = and i64 %6, 4294967295
@@ -23,7 +23,7 @@ entry:
 define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 624
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sdiv exact i64 %1, 624
   %6 = add nsw i64 %4, %5
   %7 = and i64 %6, 4294967295

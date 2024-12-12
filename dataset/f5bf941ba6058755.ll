@@ -1,8 +1,12 @@
 
-; 3 occurrences:
+; 7 occurrences:
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; rust-analyzer-rs/optimized/4jgoi87ys7cbhj0l.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i16 %1) #0 {
 entry:
@@ -41,7 +45,6 @@ entry:
 ; ockam-rs/optimized/i22eb1mfvlgesy1.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; openjdk/optimized/jexec.ll
-; openjdk/optimized/zip_util.ll
 ; postgres/optimized/async.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/indexam.ll
@@ -62,6 +65,7 @@ entry:
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wireshark/optimized/wtap.c.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -95,7 +99,7 @@ entry:
   ret i64 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -116,6 +120,7 @@ entry:
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i16 %1) #0 {
 entry:
@@ -125,7 +130,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/static_string.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
@@ -158,7 +164,7 @@ define i64 @func000000000000001c(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = add nuw nsw i64 %2, 2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

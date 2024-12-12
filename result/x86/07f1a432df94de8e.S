@@ -23,3 +23,11 @@ func0000000000000005:                   # @func0000000000000005
 	decq	%rax
 	andq	%rdi, %rax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	leaq	64(%rsi), %rax
+	leaq	8(%rsi), %rcx
+	testb	$1, %dl
+	cmovneq	%rcx, %rax
+	addq	$12, %rax
+	andq	%rdi, %rax
+	retq

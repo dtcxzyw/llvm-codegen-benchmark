@@ -9,7 +9,7 @@
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   %6 = shl nuw nsw i64 %5, 56
   ret i64 %6
@@ -26,7 +26,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 255
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   %6 = shl nuw i64 %5, 48
   ret i64 %6
@@ -40,8 +40,8 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 15728880
-  %4 = or i64 %3, %1
-  %5 = or i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = or i64 %0, %4
   %6 = shl i64 %5, 32
   ret i64 %6
 }
@@ -53,7 +53,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3074457345618258602
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   %6 = shl i64 %5, 2
   ret i64 %6
@@ -65,7 +65,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3840
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   %6 = shl i64 %5, 1
   ret i64 %6
@@ -77,7 +77,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1152921504606846976
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   %6 = shl nuw i64 %5, 1
   ret i64 %6
@@ -89,8 +89,8 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 72057594037927936
-  %4 = or disjoint i64 %3, %1
-  %5 = or i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = or i64 %0, %4
   %6 = shl nuw i64 %5, 4
   ret i64 %6
 }
@@ -101,7 +101,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4096
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   %6 = shl nuw nsw i64 %5, 1
   ret i64 %6
@@ -113,7 +113,7 @@ entry:
 define i64 @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or i64 %4, %0
   %6 = shl nuw nsw i64 %5, 8
   ret i64 %6

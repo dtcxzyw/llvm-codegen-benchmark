@@ -12,15 +12,14 @@ define i16 @func0000000000000010(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = add i16 %2, 1
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/af_inet.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/tg3.ll
 ; wireshark/optimized/packet-eth.c.ll
 ; wireshark/optimized/packet-reload.c.ll
@@ -30,7 +29,7 @@ define i16 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = add i16 %2, -1
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -42,7 +41,7 @@ define i16 @func0000000000000014(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = add i16 %2, -32
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -57,7 +56,7 @@ define i16 @func000000000000003c(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = add i16 %2, 1
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -71,7 +70,7 @@ define i16 @func0000000000000030(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = add i16 %2, 2
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -82,7 +81,7 @@ define i16 @func0000000000000038(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = add i16 %2, 4
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 

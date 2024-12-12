@@ -16,7 +16,7 @@
 	.short	6                               # 0x6
 	.short	6                               # 0x6
 	.short	6                               # 0x6
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpmovdw	%ymm1, %xmm1
 	vpmulhuw	.LCPI0_0(%rip), %xmm1, %xmm2    # [9363,9363,9363,9363,9363,9363,9363,9363]
 	vpsubw	%xmm2, %xmm1, %xmm3

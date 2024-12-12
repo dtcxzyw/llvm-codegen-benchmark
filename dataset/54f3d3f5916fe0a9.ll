@@ -1,7 +1,6 @@
 
-; 143 occurrences:
+; 140 occurrences:
 ; cmake/optimized/lz_encoder_mf.c.ll
-; cpython/optimized/dtoa.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
@@ -36,7 +35,6 @@
 ; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
 ; proxygen/optimized/Service.cpp.ll
 ; proxygen/optimized/SynchronizedLruQuicPskCache.cpp.ll
-; ruby/optimized/util.ll
 ; velox/optimized/ArrayDistinct.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ArrayIntersectExcept.cpp.ll
@@ -79,7 +77,6 @@
 ; z3/optimized/bv2real_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll
@@ -163,7 +160,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -185,8 +182,9 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
+; lvgl/optimized/lv_obj_tree.ll
 ; opencv/optimized/fully_connected_layer.cpp.ll
 ; opencv/optimized/gather_elements_layer.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
@@ -197,14 +195,15 @@ entry:
 define i64 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; hyperscan/optimized/ng_extparam.cpp.ll
 ; linux/optimized/bio.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/flatten_layer.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/slice_layer.cpp.ll
@@ -212,7 +211,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

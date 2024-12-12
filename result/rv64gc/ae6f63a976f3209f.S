@@ -23,17 +23,27 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a1, a1, 2047
 	and	a0, a0, a1
 	ret
-func000000000000000c:                   # @func000000000000000c
+func0000000000000014:                   # @func0000000000000014
+	srli	a2, a2, 32
 	beqz	a2, .LBB3_2
-	mv	a1, a0
+	mv	a0, a1
 .LBB3_2:                                # %entry
+	li	a1, -7
+	slli	a1, a1, 41
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	ret
+func000000000000000c:                   # @func000000000000000c
+	beqz	a2, .LBB4_2
+	mv	a1, a0
+.LBB4_2:                                # %entry
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
 func0000000000000006:                   # @func0000000000000006
 	li	a3, 69
-	blt	a2, a3, .LBB4_2
+	blt	a2, a3, .LBB5_2
 	mv	a0, a1
-.LBB4_2:                                # %entry
+.LBB5_2:                                # %entry
 	andi	a0, a0, 3
 	ret

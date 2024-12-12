@@ -35,7 +35,7 @@ func0000000000000183:                   # @func0000000000000183
 	vsrl.vi	v8, v8, 3
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000113:                   # @func0000000000000113
+func0000000000000513:                   # @func0000000000000513
 	lui	a0, 1048540
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10

@@ -1,10 +1,14 @@
 
-; 190 occurrences:
+; 194 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/options.cpp.ll
 ; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll

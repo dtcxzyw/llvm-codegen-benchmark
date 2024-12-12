@@ -1,5 +1,5 @@
 
-; 273 occurrences:
+; 269 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -75,7 +75,6 @@
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -149,7 +148,6 @@
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaResub2.c.ll
 ; abc/optimized/giaRetime.c.ll
-; abc/optimized/giaSat3.c.ll
 ; abc/optimized/giaSatEdge.c.ll
 ; abc/optimized/giaSatLut.c.ll
 ; abc/optimized/giaSatMap.c.ll
@@ -182,7 +180,6 @@
 ; abc/optimized/ivyCutTrav.c.ll
 ; abc/optimized/ivyFastMap.c.ll
 ; abc/optimized/ivyFraig.c.ll
-; abc/optimized/ivyResyn.c.ll
 ; abc/optimized/ivySeq.c.ll
 ; abc/optimized/kitGraph.c.ll
 ; abc/optimized/kliveness.c.ll
@@ -215,7 +212,6 @@
 ; abc/optimized/retInit.c.ll
 ; abc/optimized/rwrExp.c.ll
 ; abc/optimized/rwrUtil.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigInd.c.ll
 ; abc/optimized/saigIso.c.ll
@@ -281,7 +277,7 @@ entry:
   ret double %3
 }
 
-; 85 occurrences:
+; 86 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/bmcBmcG.c.ll
@@ -297,6 +293,7 @@ entry:
 ; abc/optimized/saigSimSeq.c.ll
 ; abseil-cpp/optimized/per_thread_sem_test.cc.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/cpu_timer.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; cmake/optimized/ProcessUNIX.c.ll

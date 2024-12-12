@@ -3,7 +3,7 @@
 func0000000000000000:                   # @func0000000000000000
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
-	vpmullq	%ymm0, %ymm2, %ymm0
+	vpmullq	%ymm2, %ymm0, %ymm0
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rax
@@ -36,7 +36,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000018:                   # @func0000000000000018
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddq	%ymm3, %ymm2, %ymm2
-	vpmullq	%ymm0, %ymm2, %ymm0
+	vpmullq	%ymm2, %ymm0, %ymm0
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rax

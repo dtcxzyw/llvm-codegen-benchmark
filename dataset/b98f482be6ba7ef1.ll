@@ -16,11 +16,11 @@ entry:
 ; llvm/optimized/ASTStructuralEquivalence.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65535
   %3 = icmp ne i64 %2, 0
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -37,20 +37,9 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/xt_conntrack.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 7
-  %3 = icmp ult i64 %2, 3
-  %4 = xor i1 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; z3/optimized/sat_lookahead.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp ne i64 %2, 0
@@ -61,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/sat_lookahead.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0

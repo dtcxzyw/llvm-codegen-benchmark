@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movl	%edi, %eax
 	xorl	%edx, %edx
 	divl	%esi
@@ -8,7 +8,7 @@ func0000000000000018:                   # @func0000000000000018
 	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000019:                   # @func0000000000000019
+func0000000000000039:                   # @func0000000000000039
 	movl	%edi, %eax
 	xorl	%edx, %edx
 	divl	%esi

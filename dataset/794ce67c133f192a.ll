@@ -17,7 +17,7 @@
 ; quantlib/optimized/ukraine.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000441(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add i32 %3, -12
@@ -42,7 +42,7 @@ entry:
 ; quantlib/optimized/thailand.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000414(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add i32 %3, -8
@@ -58,7 +58,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp ne i32 %3, -1
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = add i32 %3, 32768
@@ -78,6 +78,19 @@ entry:
   %6 = icmp eq i32 %0, 108
   %7 = and i1 %6, %5
   ret i1 %7
+}
+
+; 2 occurrences:
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = icmp eq i32 %3, 2147483647
+  %5 = icmp eq i32 %0, -1
+  %6 = and i1 %4, %5
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

@@ -1,17 +1,17 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	movl	$1, %eax
 	shlxl	%edx, %eax, %ecx
 	testb	$1, %sil
 	cmovnel	%eax, %ecx
-	cmpl	%edi, %ecx
-	setg	%al
+	cmpl	%ecx, %edi
+	setl	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	movl	$1, %eax
 	shlxl	%edx, %eax, %ecx
 	testb	$1, %sil
 	cmovnel	%eax, %ecx
-	cmpl	%edi, %ecx
+	cmpl	%ecx, %edi
 	setne	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -19,35 +19,35 @@ func0000000000000006:                   # @func0000000000000006
 	shlxl	%edx, %eax, %ecx
 	testb	$1, %sil
 	cmovnel	%eax, %ecx
-	cmpl	%edi, %ecx
-	setg	%al
+	cmpl	%ecx, %edi
+	setl	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movl	$1, %eax
 	shlxl	%edx, %eax, %ecx
 	testb	$1, %sil
 	cmovnel	%eax, %ecx
-	cmpl	%edi, %ecx
+	cmpl	%ecx, %edi
 	sete	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	movl	$1, %eax
 	shlxl	%edx, %eax, %ecx
 	testb	$1, %sil
 	cmovnel	%eax, %ecx
-	cmpl	%edi, %ecx
-	seta	%al
+	cmpl	%ecx, %edi
+	setb	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	cmovel	%eax, %ecx
-	cmpl	%edi, %ecx
-	setb	%al
+	cmpl	%ecx, %edi
+	seta	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	movl	$64, %eax
 	shlxl	%edx, %eax, %eax
 	cmpl	%edi, %eax
@@ -61,7 +61,7 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	cmovel	%eax, %ecx
-	cmpl	%edi, %ecx
+	cmpl	%ecx, %edi
 	sete	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
@@ -70,15 +70,15 @@ func000000000000000c:                   # @func000000000000000c
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	cmovel	%eax, %ecx
-	cmpl	%edi, %ecx
+	cmpl	%ecx, %edi
 	setne	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	cmovel	%eax, %ecx
-	cmpl	%edi, %ecx
+	cmpl	%ecx, %edi
 	sete	%al
 	retq

@@ -1,33 +1,14 @@
 
-; 7 occurrences:
-; arrow/optimized/vector_selection_filter_internal.cc.ll
-; arrow/optimized/vector_selection_take_internal.cc.ll
-; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
-; llvm/optimized/AArch64InstPrinter.cpp.ll
-; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; qemu/optimized/tcg.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000062(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 15
-  %4 = shl nuw nsw i32 16, %3
-  %5 = and i32 %4, %1
-  %6 = icmp eq i32 %5, 0
-  %7 = or i1 %6, %0
-  ret i1 %7
-}
-
 ; 1 occurrences:
 ; openjdk/optimized/loopopts.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000082(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = icmp eq i32 %5, 0
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
@@ -54,13 +35,13 @@ entry:
 ; z3/optimized/theory_str_mc.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000098(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = icmp ne i32 %5, 0
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
@@ -84,13 +65,31 @@ entry:
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000d8(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = shl nuw nsw i32 1, %3
   %5 = and i32 %4, %1
   %6 = icmp ne i32 %5, 0
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
+  ret i1 %7
+}
+
+; 6 occurrences:
+; arrow/optimized/vector_selection_filter_internal.cc.ll
+; arrow/optimized/vector_selection_take_internal.cc.ll
+; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
+; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c2(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 7
+  %4 = shl nuw nsw i32 1, %3
+  %5 = and i32 %4, %1
+  %6 = icmp eq i32 %5, 0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

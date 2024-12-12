@@ -1,7 +1,10 @@
 
-; 45 occurrences:
+; 48 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/saigPhase.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/proof_node_to_sexpr.cpp.ll
 ; git/optimized/convert.ll
@@ -54,9 +57,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/stream_encoder_mt.c.ll
-; lief/optimized/bignum.c.ll
 ; lief/optimized/nist_kw.c.ll
 ; linux/optimized/io_pgtable_v2.ll
 ; Function Attrs: nounwind
@@ -68,9 +70,19 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 1 occurrences:
+; lief/optimized/bignum.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i64 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i32 40, i32 51
+  %3 = icmp samesign ugt i64 %0, 249
+  %4 = select i1 %3, i32 28, i32 %2
+  ret i32 %4
+}
+
+; 3 occurrences:
 ; draco/optimized/obj_decoder.cc.ll
-; icu/optimized/collationdatabuilder.ll
 ; redis/optimized/intset.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
@@ -103,6 +115,17 @@ entry:
   %2 = select i1 %1, i32 1, i32 2
   %3 = icmp sgt i64 %0, 0
   %4 = select i1 %3, i32 0, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; icu/optimized/collationdatabuilder.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i64 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i32 4430, i32 4480
+  %3 = icmp samesign ult i64 %0, 19
+  %4 = select i1 %3, i32 4352, i32 %2
   ret i32 %4
 }
 

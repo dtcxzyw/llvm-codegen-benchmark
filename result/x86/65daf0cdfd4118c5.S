@@ -25,3 +25,11 @@ func000000000000001f:                   # @func000000000000001f
 	shlq	$48, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	shlq	$56, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq
+func000000000000001e:                   # @func000000000000001e
+	shlq	$56, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq

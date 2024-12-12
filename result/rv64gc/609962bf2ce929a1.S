@@ -19,9 +19,9 @@ func0000000000000020:                   # @func0000000000000020
 	li	a2, 31
 	bltu	a2, a1, .LBB2_2
 	li	a1, 50
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret
 .LBB2_2:
 	li	a1, 30
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret

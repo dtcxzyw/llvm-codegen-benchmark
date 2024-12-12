@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; libjpeg-turbo/optimized/example.c.ll
@@ -24,7 +24,6 @@
 ; llvm/optimized/MemorySSAUpdater.cpp.ll
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll

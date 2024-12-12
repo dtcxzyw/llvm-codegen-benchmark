@@ -1,4 +1,19 @@
 
+; 5 occurrences:
+; openjdk/optimized/chunklevel.ll
+; openjdk/optimized/g1CardSet.ll
+; openjdk/optimized/g1CodeRootSet.ll
+; openjdk/optimized/xGlobals_x86.ll
+; openjdk/optimized/zAddress_x86.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw nsw i64 64, %2
+  %4 = icmp eq i64 %1, 1
+  %5 = select i1 %4, i64 %0, i64 %3
+  ret i64 %5
+}
+
 ; 4 occurrences:
 ; flac/optimized/util.c.ll
 ; linux/optimized/pcm_lib.ll
@@ -20,7 +35,7 @@ entry:
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
 ; wireshark/optimized/packet-lldp.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = icmp eq i64 %1, 0
@@ -38,7 +53,7 @@ entry:
 ; spike/optimized/kmsda32.ll
 ; spike/optimized/kmsxda32.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = icmp slt i64 %1, 0
@@ -57,12 +72,11 @@ entry:
   ret i64 %5
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; linux/optimized/ccm.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/efi_64.ll
 ; linux/optimized/espfix_64.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/hugetlb_vmemmap.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/init_64.ll
@@ -71,7 +85,6 @@ entry:
 ; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/kexec_core.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/main.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mon_bin.ll
@@ -107,9 +120,20 @@ entry:
 }
 
 ; 1 occurrences:
+; linux/optimized/gen8_ppgtt.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw nsw i64 512, %2
+  %4 = icmp ult i64 %1, 512
+  %5 = select i1 %4, i64 %0, i64 %3
+  ret i64 %5
+}
+
+; 1 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = icmp sgt i64 %1, 0

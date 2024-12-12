@@ -1,10 +1,11 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; cmake/optimized/bzlib.c.ll
 ; glslang/optimized/hlslParseables.cpp.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; lua/optimized/lobject.ll
+; lvgl/optimized/lv_animimage.ll
 ; slurm/optimized/parse_time.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind

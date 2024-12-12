@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 39 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/cecSweep.c.ll
@@ -27,13 +27,10 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/rand.cpp.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; php/optimized/engine_mt19937.ll
 ; php/optimized/hash_gost.ll
 ; pocketpy/optimized/random.cpp.ll

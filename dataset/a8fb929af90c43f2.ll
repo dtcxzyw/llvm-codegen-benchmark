@@ -42,26 +42,20 @@ entry:
   ret ptr %6
 }
 
-; 21 occurrences:
+; 15 occurrences:
 ; ceres/optimized/polynomial.cc.ll
-; gromacs/optimized/dgelq2.cpp.ll
 ; gromacs/optimized/dlansy.cpp.ll
 ; gromacs/optimized/dsytrd.cpp.ll
-; gromacs/optimized/dtrti2.cpp.ll
-; gromacs/optimized/sgelq2.cpp.ll
 ; gromacs/optimized/slansy.cpp.ll
 ; gromacs/optimized/ssytrd.cpp.ll
-; gromacs/optimized/strti2.cpp.ll
 ; openblas/optimized/dhsein.c.ll
 ; openblas/optimized/dlaein.c.ll
-; openblas/optimized/dlatdf.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dorbdb1.c.ll
 ; openblas/optimized/dorbdb2.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsen.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtrsen.c.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
@@ -78,12 +72,12 @@ entry:
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr double, ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 8
   %5 = mul nuw nsw i64 %1, %2
-  %6 = getelementptr nusw double, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw double, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -95,7 +89,7 @@ entry:
 ; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000de(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr double, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8

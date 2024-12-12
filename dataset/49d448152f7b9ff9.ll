@@ -1,6 +1,7 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
+; boost/optimized/text_file_backend.ll
 ; ceres/optimized/context_impl.cc.ll
 ; cmake/optimized/parsedate.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -34,6 +35,18 @@ define i16 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 3600
   %2 = trunc nsw i32 %1 to i16
+  ret i16 %2
+}
+
+; 3 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000003(i32 %0) #0 {
+entry:
+  %1 = srem i32 %0, 7
+  %2 = trunc nuw nsw i32 %1 to i16
   ret i16 %2
 }
 

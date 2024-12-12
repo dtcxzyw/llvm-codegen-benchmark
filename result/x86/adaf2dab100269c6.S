@@ -1,18 +1,18 @@
-func0000000000000086:                   # @func0000000000000086
+func0000000000000107:                   # @func0000000000000107
 	incl	%edx
 	xorl	%eax, %eax
 	cmpl	%esi, %edx
 	sete	%al
 	leaq	4(%rdi,%rax,4), %rax
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000187:                   # @func0000000000000187
 	incl	%edx
 	xorl	%eax, %eax
 	cmpl	%esi, %edx
 	sete	%al
 	leaq	4(%rdi,%rax,4), %rax
 	retq
-func00000000000000da:                   # @func00000000000000da
+func000000000000019b:                   # @func000000000000019b
 	incl	%edx
 	xorl	%eax, %eax
 	cmpl	%esi, %edx
@@ -26,14 +26,14 @@ func0000000000000010:                   # @func0000000000000010
 	setb	%al
 	leaq	16(%rdi,%rax,8), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	decl	%edx
 	xorl	%eax, %eax
 	cmpl	%esi, %edx
 	setae	%al
 	leaq	16(%rdi,%rax,8), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	decl	%edx
 	xorl	%eax, %eax
 	cmpl	%esi, %edx

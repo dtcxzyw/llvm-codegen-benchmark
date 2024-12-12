@@ -15,6 +15,11 @@ func000000000000003d:                   # @func000000000000003d
 	li	a0, 56
 	vadd.vx	v8, v8, a0
 	ret
+func0000000000000020:                   # @func0000000000000020
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vi	v8, v8, -2
+	vadd.vi	v8, v8, 4
+	ret
 func0000000000000039:                   # @func0000000000000039
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v8, v8, -8

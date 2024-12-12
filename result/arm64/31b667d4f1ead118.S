@@ -2,7 +2,7 @@ func0000000000000180:                   // @func0000000000000180
 // %bb.0:                               // %entry
 	cmp	x2, #0
 	cinc	w8, w1, ne
-	add	w0, w8, w0
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000185:                   // @func0000000000000185
@@ -23,6 +23,6 @@ func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
 	cmp	x2, #0
 	cinc	w8, w1, ne
-	add	w0, w8, w0
+	add	w0, w0, w8
 	ret
                                         // -- End function

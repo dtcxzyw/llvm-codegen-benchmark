@@ -1,4 +1,18 @@
 
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; grpc/optimized/timer_generic.cc.ll
+; linux/optimized/dm-table.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 0
+  %3 = select i1 %2, i32 -16447, i32 %0
+  %4 = zext nneg i32 %3 to i64
+  %5 = mul nuw nsw i64 %4, 169464822037455
+  ret i64 %5
+}
+
 ; 2 occurrences:
 ; libevent/optimized/evmap.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -33,19 +47,6 @@ entry:
   %3 = select i1 %2, i32 24, i32 %0
   %4 = zext nneg i32 %3 to i64
   %5 = mul nuw nsw i64 %4, 20
-  ret i64 %5
-}
-
-; 2 occurrences:
-; grpc/optimized/timer_generic.cc.ll
-; linux/optimized/dm-table.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 8, i32 %0
-  %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, 88
   ret i64 %5
 }
 

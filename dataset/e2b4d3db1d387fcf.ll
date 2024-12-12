@@ -6,7 +6,7 @@
 define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 3600
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -26,12 +26,12 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 7
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -43,6 +43,7 @@ entry:
 ; icu/optimized/gregocal.ll
 ; linux/optimized/reg.ll
 ; llvm/optimized/X86CmovConversion.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; minetest/optimized/guiScrollBar.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; openjdk/optimized/chaitin.ll
@@ -60,7 +61,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 60
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -76,7 +77,7 @@ entry:
   ret i32 %5
 }
 
-; 89 occurrences:
+; 90 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -84,6 +85,7 @@ entry:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/gregorian.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; freetype/optimized/sdf.c.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
@@ -206,7 +208,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 7
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }

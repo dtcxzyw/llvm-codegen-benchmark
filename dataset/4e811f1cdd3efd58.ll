@@ -1,7 +1,5 @@
 
-; 12 occurrences:
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
+; 10 occurrences:
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
@@ -21,11 +19,9 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; oiio/optimized/Codec.cpp.ll
 ; postgres/optimized/big5.ll
 ; wireshark/optimized/packet-cipsafety.c.ll

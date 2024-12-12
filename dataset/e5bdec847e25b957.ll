@@ -68,7 +68,7 @@ entry:
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ogt double %4, 1.000000e-02
   ret i1 %5
 }
@@ -88,7 +88,7 @@ entry:
 define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp oeq double %4, 0x47EFFFFFE0000000
   ret i1 %5
 }
@@ -102,7 +102,7 @@ entry:
 define i1 @func000000000000000a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ole double %4, 1.000000e+00
   ret i1 %5
 }
@@ -120,14 +120,15 @@ entry:
 define i1 @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp oge double %4, 1.000000e+00
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/dbdsqr.cpp.ll
 ; gromacs/optimized/lmmin.cpp.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(double %0, double %1, double %2) #0 {
@@ -161,7 +162,7 @@ entry:
 define i1 @func0000000000000007(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp une double %4, 0.000000e+00
   ret i1 %5
 }

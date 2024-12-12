@@ -5,15 +5,27 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000001c1:                   # @func00000000000001c1
 	add	a1, a1, a0
 	addi	a1, a1, 5
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func00000000000001e1:                   # @func00000000000001e1
+	add	a1, a1, a0
+	addi	a1, a1, 2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000061:                   # @func0000000000000061
 	sh1add	a1, a1, a0
 	addi	a1, a1, 2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000181:                   # @func0000000000000181
+	add	a1, a1, a0
+	addi	a1, a1, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

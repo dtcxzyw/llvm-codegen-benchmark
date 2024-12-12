@@ -1,8 +1,10 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/IntRgb.ll
 ; openjdk/optimized/IntRgbx.ll
@@ -15,8 +17,7 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
-; abc/optimized/mfsSat.c.ll
+; 11 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; linux/optimized/intel_dpio_phy.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

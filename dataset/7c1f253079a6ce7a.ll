@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 75 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -30,6 +30,8 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; luajit/optimized/lj_ffrecord.ll
 ; luajit/optimized/lj_ffrecord_dyn.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_math.ll
 ; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -71,6 +73,8 @@
 ; wireshark/optimized/packet-enttec.c.ll
 ; wireshark/optimized/packet-m2tp.c.ll
 ; wireshark/optimized/packet-qnet6.c.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0) #0 {
 entry:
@@ -78,7 +82,7 @@ entry:
   ret i16 %1
 }
 
-; 114 occurrences:
+; 123 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -86,6 +90,8 @@ entry:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; assimp/optimized/LWOBLoader.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/numeric.ll
+; boost/optimized/rational.ll
 ; clamav/optimized/qtmd.c.ll
 ; clamav/optimized/unarj.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -109,7 +115,6 @@ entry:
 ; icu/optimized/olsontz.ll
 ; icu/optimized/unames.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
-; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
@@ -142,6 +147,9 @@ entry:
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; lua/optimized/lapi.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_sdl_mousewheel.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
@@ -193,6 +201,11 @@ entry:
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-synphasor.c.ll
 ; yosys/optimized/BigInteger.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0) #0 {
 entry:
@@ -200,7 +213,7 @@ entry:
   ret i16 %1
 }
 
-; 60 occurrences:
+; 61 occurrences:
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
@@ -261,6 +274,7 @@ entry:
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/hmb8tiwife399k7.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i16 %0) #0 {
 entry:
@@ -268,8 +282,7 @@ entry:
   ret i16 %1
 }
 
-; 275 occurrences:
-; actix-rs/optimized/comsm606o4zjj7a.ll
+; 273 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -406,7 +419,6 @@ entry:
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/OffloadWrapper.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll

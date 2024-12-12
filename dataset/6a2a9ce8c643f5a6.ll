@@ -9,7 +9,7 @@
 ; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/Solver.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003da(i32 %0, i64 %1) #0 {
+define i1 @func00000000000007aa(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i64 %1) #0 {
+define i1 @func00000000000002aa(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %0, %2
@@ -32,7 +32,7 @@ entry:
 ; cmake/optimized/divsufsort.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000022a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %0, %2
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/varlena.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000020a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %0, %2

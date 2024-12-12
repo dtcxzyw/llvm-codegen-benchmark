@@ -1,5 +1,9 @@
 
-; 7 occurrences:
+; 11 occurrences:
+; boost/optimized/console_buffer.ll
+; boost/optimized/cstdio.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_stackstring.ll
 ; cmake/optimized/archive_string.c.ll
 ; cvc5/optimized/minisat.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll

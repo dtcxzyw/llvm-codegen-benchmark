@@ -1,12 +1,10 @@
 
-; 51 occurrences:
+; 49 occurrences:
 ; git/optimized/default.ll
 ; hermes/optimized/JSProxy.cpp.ll
 ; hyperscan/optimized/ng_limex.cpp.ll
 ; linux/optimized/libata-eh.ll
-; linux/optimized/maple_tree.ll
 ; linux/optimized/posix-timers.ll
-; linux/optimized/spectmgmt.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
@@ -52,7 +50,7 @@
 ; openjdk/optimized/memnode.ll
 ; openjdk/optimized/stringopts.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = icmp ne i32 %2, 30
@@ -103,7 +101,7 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 127
   %3 = icmp eq i32 %2, 35

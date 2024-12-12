@@ -1,14 +1,15 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andi	a0, a0, 255
 	srli	a1, a1, 5
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func00000000000000c1:                   # @func00000000000000c1
+	slli	a0, a0, 56
 	andi	a1, a1, 240
-	xori	a1, a1, 224
-	xori	a0, a0, 128
-	or	a0, a0, a1
-	andi	a0, a0, 255
-	seqz	a0, a0
+	srai	a0, a0, 56
+	addi	a1, a1, -32
+	seqz	a1, a1
+	slti	a0, a0, 0
+	and	a0, a0, a1
 	ret

@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; cvc5/optimized/miplib_trick.cpp.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; hyperscan/optimized/ng_squash.cpp.ll
@@ -20,7 +20,6 @@
 ; llvm/optimized/LazyValueInfo.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -32,7 +31,7 @@
 ; openjdk/optimized/vectornode.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, %0

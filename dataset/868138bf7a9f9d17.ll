@@ -28,7 +28,7 @@
 ; openjdk/optimized/UshortGray.ll
 ; openjdk/optimized/UshortIndexed.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %0
   %4 = mul nsw i32 %3, %2
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/X11TextRenderer_md.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %0
   %4 = mul i32 %3, %2
@@ -53,7 +53,7 @@ entry:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/ScaledBlit.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %0, %1
   %4 = mul nsw i32 %3, %2

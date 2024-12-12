@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 33 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -7,27 +7,10 @@
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
 ; html5ever-rs/optimized/427f68nqtcfpg289.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; influxdb-rs/optimized/4xdswox27ronf9w0.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; mini-lsm-rs/optimized/1m9jerzd56wr2irm.ll
-; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
-; ockam-rs/optimized/1kl4v6vvko2mygns.ll
-; ockam-rs/optimized/27nutj9k22uohtyi.ll
-; ockam-rs/optimized/2r89va29k151cr5y.ll
-; ockam-rs/optimized/2ugp26prskc4lvz4.ll
-; ockam-rs/optimized/2wtjkff0coegvdww.ll
-; ockam-rs/optimized/38s5hbhbeh1uyvuz.ll
-; ockam-rs/optimized/4muscr8i25faa6zl.ll
-; ockam-rs/optimized/4mw292rh9wiw0hhj.ll
-; ockam-rs/optimized/4vgir7i3jcnfee5s.ll
-; ockam-rs/optimized/51t9q4mnxr7eznlm.ll
-; ockam-rs/optimized/5d08dby0hzbl8sgj.ll
-; ockam-rs/optimized/aq9jti6tz0dykb7.ll
-; ockam-rs/optimized/i22eb1mfvlgesy1.ll
-; ockam-rs/optimized/luz5e0okyn0ri51.ll
-; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; qdrant-rs/optimized/2v88rld7ajfr8cux.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
 ; rust-analyzer-rs/optimized/2rdswb8f6bh7ph2o.ll
@@ -49,12 +32,13 @@
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000002b4(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = icmp ugt i64 %3, %0
-  %5 = icmp uge i64 %3, %1
+  %4 = icmp samesign ult i64 %0, %3
+  %5 = icmp samesign ule i64 %1, %3
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }
@@ -62,11 +46,11 @@ entry:
 ; 1 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func00000000000004a4(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = icmp ugt i64 %3, %0
-  %5 = icmp uge i64 %3, %1
+  %4 = icmp ult i64 %0, %3
+  %5 = icmp ule i64 %1, %3
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }
@@ -74,11 +58,39 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/primIndex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000085(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000105(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = icmp uge i64 %3, %0
-  %5 = icmp ult i64 %3, %1
+  %4 = icmp ule i64 %0, %3
+  %5 = icmp ugt i64 %1, %3
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 17 occurrences:
+; influxdb-rs/optimized/4xdswox27ronf9w0.ll
+; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
+; ockam-rs/optimized/1kl4v6vvko2mygns.ll
+; ockam-rs/optimized/27nutj9k22uohtyi.ll
+; ockam-rs/optimized/2r89va29k151cr5y.ll
+; ockam-rs/optimized/2ugp26prskc4lvz4.ll
+; ockam-rs/optimized/2wtjkff0coegvdww.ll
+; ockam-rs/optimized/38s5hbhbeh1uyvuz.ll
+; ockam-rs/optimized/4muscr8i25faa6zl.ll
+; ockam-rs/optimized/4mw292rh9wiw0hhj.ll
+; ockam-rs/optimized/4vgir7i3jcnfee5s.ll
+; ockam-rs/optimized/51t9q4mnxr7eznlm.ll
+; ockam-rs/optimized/5d08dby0hzbl8sgj.ll
+; ockam-rs/optimized/aq9jti6tz0dykb7.ll
+; ockam-rs/optimized/i22eb1mfvlgesy1.ll
+; ockam-rs/optimized/luz5e0okyn0ri51.ll
+; ockam-rs/optimized/u4cgd14nodyt386.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a4(i64 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = icmp ult i64 %0, %3
+  %5 = icmp ule i64 %1, %3
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }
@@ -86,11 +98,11 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b7(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000167(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = icmp sge i64 %3, %0
-  %5 = icmp sle i64 %3, %1
+  %4 = icmp sle i64 %0, %3
+  %5 = icmp sge i64 %1, %3
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }

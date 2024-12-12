@@ -18,3 +18,8 @@ func0000000000000006:                   # @func0000000000000006
 	shrxl	%edi, %eax, %eax
 	addl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	retq
+func0000000000000002:                   # @func0000000000000002
+	movl	$-1, %eax
+	shrxl	%edi, %eax, %eax
+	incl	%eax
+	retq

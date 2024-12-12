@@ -1,23 +1,23 @@
 
-%"struct.rocksdb::TransactionBaseImpl::SavePoint.2496950" = type { %"class.std::shared_ptr.2.2496938", i8, %"class.std::shared_ptr.2496935", i64, i64, i64, %"class.std::shared_ptr.372.2496951" }
-%"class.std::shared_ptr.2.2496938" = type { %"class.std::__shared_ptr.3.2496939" }
-%"class.std::__shared_ptr.3.2496939" = type { ptr, %"class.std::__shared_count.2496937" }
-%"class.std::__shared_count.2496937" = type { ptr }
-%"class.std::shared_ptr.2496935" = type { %"class.std::__shared_ptr.2496936" }
-%"class.std::__shared_ptr.2496936" = type { ptr, %"class.std::__shared_count.2496937" }
-%"class.std::shared_ptr.372.2496951" = type { %"class.std::__shared_ptr.373.2496952" }
-%"class.std::__shared_ptr.373.2496952" = type { ptr, %"class.std::__shared_count.2496937" }
-%"struct.mold::ConcurrentMap<mold::elf::SectionFragment<mold::elf::LOONGARCH64>>::Entry.2521534" = type <{ %"struct.mold::Atomic.446.2521535", %"struct.mold::elf::SectionFragment.2521529", i32, [4 x i8] }>
-%"struct.mold::Atomic.446.2521535" = type { %"struct.std::atomic.447.2521536" }
-%"struct.std::atomic.447.2521536" = type { %"struct.std::__atomic_base.448.2521537" }
-%"struct.std::__atomic_base.448.2521537" = type { ptr }
-%"struct.mold::elf::SectionFragment.2521529" = type <{ ptr, i32, %"struct.mold::Atomic.287.2521530", %"struct.mold::Atomic.2521531", [2 x i8] }>
-%"struct.mold::Atomic.287.2521530" = type { %"struct.std::atomic.94.2521532" }
-%"struct.std::atomic.94.2521532" = type { %"struct.std::__atomic_base.95.2521533" }
-%"struct.std::__atomic_base.95.2521533" = type { i8 }
-%"struct.mold::Atomic.2521531" = type { %"struct.std::atomic.100.2521435" }
-%"struct.std::atomic.100.2521435" = type { %"struct.std::__atomic_base.101.2521438" }
-%"struct.std::__atomic_base.101.2521438" = type { i8 }
+%"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209" = type { %"class.std::shared_ptr.2.2612197", i8, %"class.std::shared_ptr.2612194", i64, i64, i64, %"class.std::shared_ptr.372.2612210" }
+%"class.std::shared_ptr.2.2612197" = type { %"class.std::__shared_ptr.3.2612198" }
+%"class.std::__shared_ptr.3.2612198" = type { ptr, %"class.std::__shared_count.2612196" }
+%"class.std::__shared_count.2612196" = type { ptr }
+%"class.std::shared_ptr.2612194" = type { %"class.std::__shared_ptr.2612195" }
+%"class.std::__shared_ptr.2612195" = type { ptr, %"class.std::__shared_count.2612196" }
+%"class.std::shared_ptr.372.2612210" = type { %"class.std::__shared_ptr.373.2612211" }
+%"class.std::__shared_ptr.373.2612211" = type { ptr, %"class.std::__shared_count.2612196" }
+%"struct.mold::ConcurrentMap<mold::elf::SectionFragment<mold::elf::LOONGARCH64>>::Entry.2635943" = type <{ %"struct.mold::Atomic.446.2635944", %"struct.mold::elf::SectionFragment.2635938", i32, [4 x i8] }>
+%"struct.mold::Atomic.446.2635944" = type { %"struct.std::atomic.447.2635945" }
+%"struct.std::atomic.447.2635945" = type { %"struct.std::__atomic_base.448.2635946" }
+%"struct.std::__atomic_base.448.2635946" = type { ptr }
+%"struct.mold::elf::SectionFragment.2635938" = type <{ ptr, i32, %"struct.mold::Atomic.287.2635939", %"struct.mold::Atomic.2635940", [2 x i8] }>
+%"struct.mold::Atomic.287.2635939" = type { %"struct.std::atomic.94.2635941" }
+%"struct.std::atomic.94.2635941" = type { %"struct.std::__atomic_base.95.2635942" }
+%"struct.std::__atomic_base.95.2635942" = type { i8 }
+%"struct.mold::Atomic.2635940" = type { %"struct.std::atomic.100.2635845" }
+%"struct.std::atomic.100.2635845" = type { %"struct.std::__atomic_base.101.2635848" }
+%"struct.std::__atomic_base.101.2635848" = type { i8 }
 
 ; 4 occurrences:
 ; rocksdb/optimized/memtable_list.cc.ll
@@ -27,8 +27,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000040(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2496950", ptr %3, i64 %1
+  %3 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209", ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -640
   ret ptr %5
 }
@@ -90,8 +90,8 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 16
-  %4 = getelementptr %"struct.mold::ConcurrentMap<mold::elf::SectionFragment<mold::elf::LOONGARCH64>>::Entry.2521534", ptr %0, i64 %3
-  %5 = getelementptr %"struct.mold::ConcurrentMap<mold::elf::SectionFragment<mold::elf::LOONGARCH64>>::Entry.2521534", ptr %4, i64 %1
+  %4 = getelementptr %"struct.mold::ConcurrentMap<mold::elf::SectionFragment<mold::elf::LOONGARCH64>>::Entry.2635943", ptr %0, i64 %1
+  %5 = getelementptr %"struct.mold::ConcurrentMap<mold::elf::SectionFragment<mold::elf::LOONGARCH64>>::Entry.2635943", ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 -32
   ret ptr %6
 }
@@ -101,9 +101,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 3
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr ptr, ptr %4, i64 %1
+  %3 = getelementptr ptr, ptr %0, i64 %1
+  %4 = sdiv exact i64 %2, 3
+  %5 = getelementptr i8, ptr %3, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -16
   ret ptr %6
 }

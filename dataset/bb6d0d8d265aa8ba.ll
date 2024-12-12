@@ -1,9 +1,10 @@
 
-%struct.rb_id_item.2485427 = type { i32, i32, i64 }
-%struct.pm_constant_pool_bucket_t.2485450 = type { i32, i32 }
-%class.bucket.2622210 = type { i32, i32, ptr }
-%struct.code.2765430 = type { i8, i8, i16 }
-%struct.Abc_ZddEnt_.2765515 = type { i32, i32, i32, i32 }
+%struct.rb_id_item.2600909 = type { i32, i32, i64 }
+%struct.pm_constant_pool_bucket_t.2600930 = type { i32, i32 }
+%class.bucket.2735647 = type { i32, i32, ptr }
+%struct.SEntry.2748811 = type { ptr, ptr }
+%struct.code.2877665 = type { i8, i8, i16 }
+%struct.Abc_ZddEnt_.2877750 = type { i32, i32, i32, i32 }
 
 ; 4 occurrences:
 ; linux/optimized/drm_ioctl.ll
@@ -16,7 +17,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.rb_id_item.2485427, ptr %0, i64 %5
+  %6 = getelementptr %struct.rb_id_item.2600909, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -66,9 +67,9 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.pm_constant_pool_bucket_t.2485450, ptr %0, i64 %5
+  %6 = getelementptr %struct.pm_constant_pool_bucket_t.2600930, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -84,12 +85,11 @@ entry:
   ret ptr %6
 }
 
-; 1552 occurrences:
+; 1550 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; brotli/optimized/encode.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; clamav/optimized/qtmd.c.ll
@@ -903,7 +903,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1290,7 +1289,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
@@ -1635,15 +1633,16 @@ entry:
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %class.bucket.2622210, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.bucket.2735647, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -1661,17 +1660,16 @@ entry:
 ; raylib/optimized/rcore.c.ll
 ; yosys/optimized/memory_map.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 11 occurrences:
-; c3c/optimized/decltable.c.ll
+; 10 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; git/optimized/object.ll
 ; graphviz/optimized/dthash.c.ll
@@ -1683,16 +1681,16 @@ entry:
 ; luau/optimized/lstring.cpp.ll
 ; recastnavigation/optimized/DetourNode.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.SEntry.2748811, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 925 occurrences:
+; 924 occurrences:
 ; abc/optimized/inftrees.c.ll
 ; brotli/optimized/compound_dictionary.c.ll
 ; clamav/optimized/inflate64.c.ll
@@ -2336,7 +2334,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -2619,12 +2616,12 @@ entry:
 ; zlib/optimized/inftrees.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %struct.code.2765430, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.code.2877665, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -2632,12 +2629,12 @@ entry:
 ; abc/optimized/extraUtilPerm.c.ll
 ; nuttx/optimized/task_setup.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 9638941
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %struct.Abc_ZddEnt_.2765515, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.Abc_ZddEnt_.2877750, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -2654,7 +2651,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i16, ptr %0, i64 %5
   ret ptr %6

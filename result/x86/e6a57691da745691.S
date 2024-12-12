@@ -1,8 +1,11 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	imulq	$312, %rsi, %rax                # imm = 0x138
 	leaq	292(%rdi,%rax), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func000000000000000f:                   # @func000000000000000f
+	leaq	4(%rdi,%rsi,8), %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
 	leaq	(%rsi,%rsi,4), %rax
 	leaq	4(%rdi,%rax,4), %rax
 	retq
@@ -15,8 +18,13 @@ func0000000000000008:                   # @func0000000000000008
 	shlq	$4, %rax
 	leaq	24(%rdi,%rax), %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	leaq	(%rsi,%rsi,4), %rax
-	shlq	$4, %rax
-	leaq	4(%rdi,%rax), %rax
+func000000000000000c:                   # @func000000000000000c
+	shlq	$5, %rsi
+	leaq	16(%rdi,%rsi), %rax
+	retq
+func000000000000000e:                   # @func000000000000000e
+	leaq	-1(%rdi,%rsi), %rax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	leaq	-1(%rdi,%rsi), %rax
 	retq

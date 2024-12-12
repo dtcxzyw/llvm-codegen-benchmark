@@ -22,7 +22,7 @@
 ; openmpi/optimized/common_ompio_file_write.ll
 ; pbrt-v4/optimized/pspec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, double %1) #0 {
+define i1 @func0000000000000061(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nuw nsw i32 %0, 1
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/japan.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, double %1) #0 {
+define i1 @func0000000000000021(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %0, 1
@@ -46,7 +46,7 @@ entry:
 ; darktable/optimized/import.c.ll
 ; darktable/optimized/masks.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, double %1) #0 {
+define i1 @func0000000000000041(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nuw i32 %0, 1
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/freeenergyparameters.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, double %1) #0 {
+define i1 @func000000000000002c(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %0, -1
@@ -70,7 +70,7 @@ entry:
 ; msdfgen/optimized/render-sdf.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, double %1) #0 {
+define i1 @func0000000000000027(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %0, -1
@@ -93,7 +93,7 @@ entry:
 ; openmpi/optimized/tm_tree.ll
 ; pbrt-v4/optimized/math.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, double %1) #0 {
+define i1 @func000000000000006a(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nuw nsw i32 %0, 10
@@ -104,7 +104,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/libmpi_c_profile_la-dims_create.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000037(i32 %0, double %1) #0 {
+define i1 @func0000000000000067(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nuw nsw i32 %0, 2
@@ -115,7 +115,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, double %1) #0 {
+define i1 @func000000000000002b(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %0, 1
@@ -123,14 +123,13 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, double %1) #0 {
+define i1 @func000000000000002a(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %0, -2
@@ -141,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, double %1) #0 {
+define i1 @func0000000000000026(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %0, 1
@@ -152,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/samplers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, double %1) #0 {
+define i1 @func0000000000000028(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %0, -1
@@ -163,7 +162,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/edge_drawing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, double %1) #0 {
+define i1 @func0000000000000066(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nuw nsw i32 %0, 1

@@ -6,7 +6,7 @@ func000000000000002a:                   // @func000000000000002a
 	sub	x0, x8, #4
 	ret
                                         // -- End function
-func00000000000000aa:                   // @func00000000000000aa
+func00000000000000ff:                   // @func00000000000000ff
 // %bb.0:                               // %entry
 	lsl	x8, x0, #1
 	add	x9, x1, x8

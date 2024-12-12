@@ -9,7 +9,7 @@
 	.zero	2
 .LCPI0_1:
 	.long	256                             # 0x100
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	vpsrld	$7, %xmm0, %xmm2
 	vpcmpnltuw	.LCPI0_0(%rip), %xmm1, %k1
 	vpaddd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm0 {%k1}

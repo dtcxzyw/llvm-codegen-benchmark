@@ -31,7 +31,7 @@ entry:
   ret i32 %2
 }
 
-; 34 occurrences:
+; 38 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abc/optimized/lpkMulti.c.ll
@@ -66,6 +66,10 @@ entry:
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/sharkd_session.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i16 %0) #0 {
 entry:
@@ -74,11 +78,10 @@ entry:
   ret i32 %2
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/e100.ll
-; linux/optimized/i915_gem_busy.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
@@ -92,11 +95,10 @@ entry:
   ret i32 %2
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/ole2_extract.c.ll
 ; darktable/optimized/PanasonicV6Decompressor.cpp.ll
 ; linux/optimized/e100.ll
-; linux/optimized/i915_gem_busy.ll
 ; openusd/optimized/binary_codes_reader.c.ll
 ; openusd/optimized/bitreader_buffer.c.ll
 ; Function Attrs: nounwind
@@ -134,8 +136,7 @@ entry:
   ret i32 %2
 }
 
-; 18 occurrences:
-; linux/optimized/intel_dsi_dcs_backlight.ll
+; 19 occurrences:
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/xarray.ll
 ; luajit/optimized/lj_opt_fold.ll
@@ -153,6 +154,8 @@ entry:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wireshark/optimized/lte_rlc_graph_dialog.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i16 %0) #0 {
 entry:

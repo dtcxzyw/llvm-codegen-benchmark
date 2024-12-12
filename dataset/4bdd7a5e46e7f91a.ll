@@ -1,10 +1,17 @@
 
-; 9 occurrences:
+; 16 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_opregion.ll
 ; linux/optimized/vlv_dsi_pll.ll
+; lvgl/optimized/lv_theme_default.ll
 ; qemu/optimized/hw_usb_dev-audio.c.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
@@ -18,12 +25,14 @@ entry:
   ret i32 %3
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; darktable/optimized/avif.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; linux/optimized/blk-iocost.ll
@@ -50,12 +59,14 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; quantlib/optimized/date.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Sequence.cpp.ll

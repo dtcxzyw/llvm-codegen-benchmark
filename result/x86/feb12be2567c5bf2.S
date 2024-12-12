@@ -22,6 +22,12 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%sil, %al
 	retq
+func0000000000000006:                   # @func0000000000000006
+	cmpb	$-64, %dl
+	setl	%al
+	andl	%esi, %edi
+	andb	%dil, %al
+	retq
 func000000000000000a:                   # @func000000000000000a
 	testb	%dl, %dl
 	setns	%al

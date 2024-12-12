@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/MmapWriteExecChecker.cpp.ll
+; lvgl/optimized/lv_obj.ll
 ; ruby/optimized/range.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {

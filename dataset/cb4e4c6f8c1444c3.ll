@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 54 occurrences:
 ; abseil-cpp/optimized/sequence_lock_test.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; cpython/optimized/typeobject.ll
@@ -9,12 +9,10 @@
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; libquic/optimized/pickle.cc.ll
-; lightgbm/optimized/bin.cpp.ll
-; lightgbm/optimized/dataset_loader.cpp.ll
 ; linux/optimized/ah6.ll
-; linux/optimized/auth_unix.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/scm.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; minetest/optimized/numeric.cpp.ll

@@ -27,7 +27,7 @@ define i1 @func0000000000000002(i1 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 2.500000e-01
   %3 = fcmp olt double %2, 7.090000e+02
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -40,7 +40,7 @@ define i1 @func0000000000000008(i1 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 0x3F91DF46A2529D39
   %3 = fcmp oeq double %2, 0.000000e+00
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -63,7 +63,7 @@ define i1 @func000000000000000a(i1 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.000000e+01
   %3 = fcmp ole double %2, 1.000000e+04
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

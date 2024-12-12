@@ -32,12 +32,3 @@ func0000000000000008:                   # @func0000000000000008
 	imull	$1000000, %ecx, %ecx            # imm = 0xF4240
 	subl	%ecx, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movl	%edi, %eax
-	cmpl	$100000, %esi                   # imm = 0x186A0
-	cmovael	%esi, %eax
-	imulq	$1125899907, %rax, %rcx         # imm = 0x431BDE83
-	shrq	$50, %rcx
-	imull	$1000000, %ecx, %ecx            # imm = 0xF4240
-	subl	%ecx, %eax
-	retq

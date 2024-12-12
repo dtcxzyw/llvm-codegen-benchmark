@@ -27,7 +27,7 @@
 ; openusd/optimized/regularPatchBuilder.cpp.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16519168
   %4 = and i32 %1, 147456
@@ -44,24 +44,24 @@ entry:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; node/optimized/idna.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, 56
   %4 = or i32 %3, %0
-  %5 = icmp ugt i32 %4, 7
+  %5 = icmp samesign ugt i32 %4, 7
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
   %4 = and i32 %1, 1
   %5 = or disjoint i32 %4, %3
   %6 = or i32 %5, %0
-  %7 = icmp ugt i32 %6, 128
+  %7 = icmp samesign ugt i32 %6, 128
   ret i1 %7
 }
 
@@ -70,7 +70,7 @@ entry:
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = and i32 %1, 12
@@ -95,26 +95,26 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/lbr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 256
   %4 = and i32 %1, 30720
   %5 = or disjoint i32 %4, %3
   %6 = or i32 %5, %0
-  %7 = icmp ult i32 %6, 4
+  %7 = icmp samesign ult i32 %6, 4
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; icu/optimized/utf_impl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 48
   %4 = and i32 %1, 4032
   %5 = or disjoint i32 %4, %3
   %6 = or i32 %5, %0
-  %7 = icmp ult i32 %6, 65008
+  %7 = icmp samesign ult i32 %6, 65008
   ret i1 %7
 }
 

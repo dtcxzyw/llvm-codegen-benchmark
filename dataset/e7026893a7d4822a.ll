@@ -1,8 +1,47 @@
 
-; 291 occurrences:
+; 330 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/partition.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; brotli/optimized/cluster.c.ll
 ; casadi/optimized/kinsol.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -165,7 +204,6 @@
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/LevelSetMorph.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; osqp/optimized/scaling.c.ll
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; php/optimized/head.ll
 ; postgres/optimized/costsize.ll
@@ -291,6 +329,7 @@
 ; z3/optimized/dl_rule_transformer.cpp.ll
 ; z3/optimized/dl_util.cpp.ll
 ; z3/optimized/parallel_tactical.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(double %0) #0 {
 entry:
@@ -299,11 +338,20 @@ entry:
   ret double %2
 }
 
-; 180 occurrences:
+; 189 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; assimp/optimized/ScenePreprocessor.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
@@ -430,7 +478,6 @@ entry:
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMorph.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; osqp/optimized/scaling.c.ll
 ; portaudio/optimized/pa_converters.c.ll
 ; postgres/optimized/array_selfuncs.ll
 ; postgres/optimized/execExprInterp.ll
@@ -480,6 +527,7 @@ entry:
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; xgboost/optimized/aft_obj.cc.ll
 ; xgboost/optimized/auc.cc.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(double %0) #0 {
 entry:
@@ -696,7 +744,7 @@ entry:
   ret double %2
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -710,7 +758,6 @@ entry:
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dhgeqz.c.ll

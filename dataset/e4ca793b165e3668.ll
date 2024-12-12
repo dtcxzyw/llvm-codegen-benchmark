@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; git/optimized/ident.ll
 ; git/optimized/strbuf.ll
@@ -7,10 +7,8 @@
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; hyperscan/optimized/flood_compile.cpp.ll
 ; libpng/optimized/pngread.c.ll
-; linux/optimized/acpi_pnp.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/eht.ll
 ; linux/optimized/irq.ll
 ; linux/optimized/kallsyms.ll
 ; linux/optimized/keyboard.ll
@@ -34,6 +32,8 @@
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; minetest/optimized/mapblock_mesh.cpp.ll
+; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; openusd/optimized/level.cpp.ll
@@ -43,6 +43,7 @@
 ; qemu/optimized/hw_char_serial.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/prism.ll
+; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; wireshark/optimized/dot11decrypt_ccmp.c.ll
 ; wireshark/optimized/packet-camel.c.ll
@@ -90,10 +91,10 @@ entry:
 ; yosys/optimized/cxxrtl_backend.ll
 ; yosys/optimized/fmt.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000004(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000014(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 14
-  %4 = icmp ult i8 %3, 10
+  %4 = icmp samesign ult i8 %3, 10
   %5 = select i1 %4, i8 %0, i8 %1
   ret i8 %5
 }
@@ -102,10 +103,10 @@ entry:
 ; cmake/optimized/hex.c.ll
 ; wireshark/optimized/packet-iso8583.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000008(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000018(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 14
-  %4 = icmp ugt i8 %3, 9
+  %4 = icmp samesign ugt i8 %3, 9
   %5 = select i1 %4, i8 %0, i8 %1
   ret i8 %5
 }

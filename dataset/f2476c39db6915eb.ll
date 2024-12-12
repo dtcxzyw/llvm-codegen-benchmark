@@ -1,5 +1,15 @@
 
-; 9 occurrences:
+; 19 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; flac/optimized/file.c.ll
 ; libquic/optimized/transport_common.cc.ll
 ; linux/optimized/e1000_hw.ll

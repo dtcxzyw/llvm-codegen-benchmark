@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	1                               # 0x1
-func0000000000000190:                   # @func0000000000000190
+func0000000000000310:                   # @func0000000000000310
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm1   # ymm1 = [1,1,1,1]
@@ -14,7 +14,7 @@ func0000000000000190:                   # @func0000000000000190
 	.quad	4                               # 0x4
 .LCPI1_1:
 	.quad	1025                            # 0x401
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vptestmq	.LCPI1_0(%rip){1to4}, %ymm0, %k0 {%k1}

@@ -1,5 +1,5 @@
 
-; 213 occurrences:
+; 215 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/light_array.cc.ll
@@ -111,10 +111,12 @@
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/COpenGLSLMaterialRenderer.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/MaterialRenderer.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
+; minetest/optimized/guiTable.cpp.ll
 ; minetest/optimized/inventorymanager.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/mesh.cpp.ll
@@ -214,17 +216,16 @@
 ; yosys/optimized/test_cell.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 504
   %5 = and i64 %4, 4294967295
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
-; 39 occurrences:
-; assimp/optimized/ObjFileImporter.cpp.ll
+; 37 occurrences:
 ; assimp/optimized/Q3DLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -248,7 +249,6 @@ entry:
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/IrDump.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
@@ -264,12 +264,27 @@ entry:
 ; opencv/optimized/calibration.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 312
   %5 = and i64 %4, 4294967295
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp samesign ult i64 %0, %5
+  ret i1 %6
+}
+
+; 4 occurrences:
+; assimp/optimized/ObjFileImporter.cpp.ll
+; meshlab/optimized/trackmode.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; minetest/optimized/clientlauncher.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 56
+  %5 = and i64 %4, 4294967295
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -280,12 +295,12 @@ entry:
 ; luau/optimized/IrRegAllocX64.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 36
   %5 = and i64 %4, 4294967295
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -295,12 +310,12 @@ entry:
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 112
   %5 = and i64 %4, 2147483647
-  %6 = icmp ne i64 %5, %0
+  %6 = icmp ne i64 %0, %5
   ret i1 %6
 }
 

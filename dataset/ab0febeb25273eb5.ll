@@ -1,5 +1,17 @@
 
-; 47 occurrences:
+; 60 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; hermes/optimized/Operations.cpp.ll
@@ -41,6 +53,7 @@
 ; quantlib/optimized/conundrumpricer.ll
 ; quantlib/optimized/kahalesmilesection.ll
 ; quantlib/optimized/lognormalcmsspreadpricer.ll
+; quantlib/optimized/noarbsabr.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/geohash.ll
@@ -56,7 +69,9 @@ entry:
   ret i1 %3
 }
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_regr.cpp.ll
 ; openblas/optimized/dlasv2.c.ll
@@ -145,7 +160,6 @@ entry:
 ; openjdk/optimized/shenandoahNumberSeq.ll
 ; openjdk/optimized/xDirector.ll
 ; openusd/optimized/ray.cpp.ll
-; osqp/optimized/scaling.c.ll
 ; postgres/optimized/costsize.ll
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/selfuncs.ll
@@ -166,6 +180,7 @@ entry:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; xgboost/optimized/aft_obj.cc.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, double %1) #0 {
 entry:
@@ -210,9 +225,8 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; flac/optimized/encode.c.ll
-; proj/optimized/cs2cs.cpp.ll
 ; quantlib/optimized/concentrating1dmesher.ll
 ; sundials/optimized/arkode.c.ll
 ; Function Attrs: nounwind

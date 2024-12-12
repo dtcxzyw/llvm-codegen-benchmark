@@ -1,49 +1,42 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v2.16b, #31
-	movi	v3.16b, #127
-	cmeq	v1.16b, v1.16b, #0
-	movi	v4.16b, #128
-	bsl	v1.16b, v3.16b, v2.16b
-	and	v0.16b, v0.16b, v4.16b
-	orr	v0.16b, v1.16b, v0.16b
+	mov	w8, #31                         // =0x1f
+	tst	w1, #0xff
+	mov	w9, #127                        // =0x7f
+	csel	w8, w9, w8, eq
+	and	w9, w0, #0xffffff80
+	orr	w0, w8, w9
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	movi	v2.16b, #7
-	movi	v3.16b, #4
-	cmlt	v1.16b, v1.16b, #0
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v3.16b
-	orr	v0.16b, v0.16b, v1.16b
-	ret
-                                        // -- End function
-func0000000000000019:                   // @func0000000000000019
-// %bb.0:                               // %entry
-	movi	v2.16b, #223
-	cmtst	v1.16b, v1.16b, v1.16b
-	bif	v0.16b, v1.16b, v2.16b
+	sxtb	w8, w1
+	and	w9, w0, #0x4
+	ubfx	w8, w8, #7, #3
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	movi	v2.16b, #4
-	movi	v3.16b, #1
-	cmhi	v1.16b, v2.16b, v1.16b
-	and	v0.16b, v0.16b, v3.16b
-	and	v1.16b, v1.16b, v2.16b
-	orr	v0.16b, v1.16b, v0.16b
+	and	w8, w1, #0xff
+	cmp	w8, #5
+	cset	w8, lo
+	bfi	w0, w8, #1, #1
+	ret
+                                        // -- End function
+func0000000000000019:                   // @func0000000000000019
+// %bb.0:                               // %entry
+	tst	w1, #0xff
+	cset	w8, ne
+	bfi	w0, w8, #5, #1
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	movi	v2.16b, #2
-	movi	v3.16b, #4
-	movi	v4.16b, #249
-	cmhi	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v4.16b
-	and	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v1.16b
+	and	w8, w1, #0xff
+	and	w9, w0, #0xfffffff9
+	cmp	w8, #2
+	cset	w8, hi
+	orr	w0, w9, w8, lsl #2
 	ret
                                         // -- End function

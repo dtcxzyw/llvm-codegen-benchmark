@@ -1,8 +1,9 @@
 
-; 784 occurrences:
+; 783 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; abseil-cpp/optimized/city.cc.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/unzip.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
@@ -16,7 +17,6 @@
 ; folly/optimized/farmhash.cpp.ll
 ; git/optimized/attr.ll
 ; git/optimized/bulk-checkin.ll
-; git/optimized/diff.ll
 ; git/optimized/dir.ll
 ; git/optimized/line-log.ll
 ; git/optimized/pack-bitmap.ll
@@ -243,7 +243,6 @@
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/check_sat_result.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/cofactor_term_ite_tactic.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
@@ -820,7 +819,7 @@ entry:
   ret i32 %3
 }
 
-; 50 occurrences:
+; 61 occurrences:
 ; clamav/optimized/rarvm.cpp.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
@@ -871,6 +870,17 @@ entry:
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001e(i32 %0) #0 {
 entry:

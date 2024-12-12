@@ -4,7 +4,7 @@
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/date.ll
 ; linux/optimized/kapi.ll
-; nuttx/optimized/lib_timegm.c.ll
+; lvgl/optimized/lv_image.ll
 ; quantlib/optimized/date.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; wireshark/optimized/netmon.c.ll
@@ -15,7 +15,7 @@ entry:
   %4 = udiv i32 %1, 400
   %5 = add nuw nsw i32 %4, %3
   %6 = mul i32 %5, 400
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

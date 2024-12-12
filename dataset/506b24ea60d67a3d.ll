@@ -1,9 +1,11 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000488(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %0
   %4 = icmp ult i64 %3, %2
@@ -15,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000089(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %0
   %4 = icmp ult i64 %3, %2
@@ -29,7 +31,7 @@ entry:
 ; cmake/optimized/block_decoder.c.ll
 ; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000244(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000884(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %0, %1
   %4 = icmp ult i64 %3, %2
@@ -42,7 +44,7 @@ entry:
 ; cpython/optimized/socketmodule.ll
 ; libquic/optimized/quic_data_writer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000248(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000888(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %0
   %4 = icmp ult i64 %3, %2
@@ -54,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/repeat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %0, %1
   %4 = icmp ult i64 %3, %2
@@ -67,7 +69,7 @@ entry:
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000249(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000889(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %0
   %4 = icmp ult i64 %3, %2

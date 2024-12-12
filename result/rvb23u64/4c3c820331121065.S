@@ -1,30 +1,30 @@
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	subw	a0, a0, a1
 	negw	a1, a0
 	max	a0, a0, a1
 	sltiu	a0, a0, 4
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	subw	a0, a0, a1
 	negw	a1, a0
 	max	a0, a0, a1
 	sltiu	a0, a0, 16
 	xori	a0, a0, 1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	subw	a0, a0, a1
 	negw	a1, a0
 	max	a0, a0, a1
 	sltiu	a0, a0, 40
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	subw	a0, a0, a1
 	negw	a1, a0
 	max	a0, a0, a1
 	sltiu	a0, a0, 1051
 	xori	a0, a0, 1
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	subw	a0, a0, a1
 	negw	a1, a0
 	max	a0, a0, a1
@@ -57,7 +57,7 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 2
 	xori	a0, a0, 1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subw	a0, a0, a1
 	negw	a1, a0
 	max	a0, a0, a1

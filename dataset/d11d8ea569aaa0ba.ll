@@ -1,13 +1,15 @@
 
-; 220 occurrences:
+; 222 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
+; boost/optimized/alloc_lib.ll
 ; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/drm_color_mgmt.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/io_pgtable_v2.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/barrierSetNMethod.ll

@@ -1,12 +1,11 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 281474976579584
-  %3 = icmp ne i64 %2, 0
+  %2 = and i64 %1, 9223231299366420480
+  %3 = icmp eq i64 %2, 9223231299366420480
   %4 = select i1 %3, i1 %0, i1 false
   ret i1 %4
 }

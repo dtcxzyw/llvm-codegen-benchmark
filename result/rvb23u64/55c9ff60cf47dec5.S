@@ -34,3 +34,13 @@ func000000000000000c:                   # @func000000000000000c
 	not	a1, a1
 	add	a0, a0, a1
 	ret
+.LCPI3_0:
+	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
+func000000000000001e:                   # @func000000000000001e
+	lui	a2, %hi(.LCPI3_0)
+	ld	a2, %lo(.LCPI3_0)(a2)
+	srli	a1, a1, 4
+	mul	a1, a1, a2
+	not	a1, a1
+	add	a0, a0, a1
+	ret

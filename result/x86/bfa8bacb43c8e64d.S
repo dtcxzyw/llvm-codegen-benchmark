@@ -4,7 +4,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	leal	36(,%rsi,4), %eax
 	shll	$2, %edi
 	cmpl	%eax, %edi
@@ -16,13 +16,13 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%eax, %edi
 	setg	%al
 	retq
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	leal	-12(,%rsi,4), %eax
 	shll	$2, %edi
 	cmpl	%eax, %edi
 	setg	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	shll	$5, %esi
 	addl	$-24, %esi
 	addl	%edi, %edi

@@ -12,7 +12,7 @@ entry:
   ret i1 %1
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; coreutils-rs/optimized/4kgtcn9evb3aj2za.ll
 ; coreutils-rs/optimized/ufpgzz1exqdrn9i.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
@@ -37,6 +37,7 @@ entry:
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/xrijsyrxk2ciyk9.ll
 ; wasmtime-rs/optimized/1uw8h1oeggq2kq40.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i128 %0) #0 {
 entry:

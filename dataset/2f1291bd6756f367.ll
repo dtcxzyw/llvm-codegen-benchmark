@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 66 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -13,6 +13,7 @@
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/partition.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/equality_engine.cpp.ll
 ; cvc5/optimized/node_bitblaster.cpp.ll
@@ -23,6 +24,7 @@
 ; folly/optimized/Random.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
+; grpc/optimized/priority.cc.ll
 ; grpc/optimized/tcp_server_posix.cc.ll
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; icu/optimized/icuexportdata.ll
@@ -33,6 +35,7 @@
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; llvm/optimized/SymbolSize.cpp.ll
+; luau/optimized/IrAnalysis.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -85,7 +88,7 @@ entry:
   ret i32 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
@@ -107,7 +110,6 @@ entry:
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/einsum_layer.cpp.ll
 ; opencv/optimized/kdtree.cpp.ll
-; opencv/optimized/reduce_layer.cpp.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i64 %0, i64 %1) #0 {

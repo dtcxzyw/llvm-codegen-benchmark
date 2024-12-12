@@ -135,14 +135,11 @@ func000000000000000f:                   # @func000000000000000f
 	retq
 .LCPI6_0:
 	.long	256                             # 0x100
+.LCPI6_2:
+	.long	8388352                         # 0x7fff00
 .LCPI6_3:
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-.LCPI6_4:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
 .LCPI6_1:
@@ -178,41 +175,8 @@ func000000000000000f:                   # @func000000000000000f
 	.byte	0                               # 0x0
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
-.LCPI6_2:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
 func000000000000000e:                   # @func000000000000000e
 	vpaddd	.LCPI6_0(%rip){1to8}, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI6_3(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 & mem)
-	vpternlogd	$248, .LCPI6_4(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
+	vpternlogd	$248, .LCPI6_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq

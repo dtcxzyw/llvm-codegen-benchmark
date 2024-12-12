@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 82 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cuddCache.c.ll
@@ -7,6 +7,12 @@
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/dtoa.ll
 ; cvc5/optimized/Solver.cc.ll

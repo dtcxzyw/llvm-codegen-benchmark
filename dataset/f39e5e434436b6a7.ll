@@ -15,7 +15,7 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func0000000000000041(ptr %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq i8 %1, -1
   %4 = sext i1 %3 to i64

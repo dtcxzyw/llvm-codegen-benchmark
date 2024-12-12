@@ -1,7 +1,10 @@
 
-; 87 occurrences:
+; 90 occurrences:
+; boost/optimized/scheduler.ll
+; boost/optimized/waker.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; node/optimized/libnode.agent.ll
 ; node/optimized/libnode.application.ll
 ; node/optimized/libnode.async_wrap.ll
@@ -88,12 +91,12 @@
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; wireshark/optimized/voip_calls.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0) #0 {
+define ptr @func0000000000000003(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = add i64 %1, 552
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   ret ptr %4
 }
 
@@ -134,16 +137,16 @@ entry:
 ; protobuf/optimized/retention.cc.ll
 ; protobuf/optimized/type.pb.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0) #0 {
+define ptr @func0000000000000007(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = add nsw i64 %1, -960
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 1128
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1128
   ret ptr %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; linux/optimized/array.ll
 ; linux/optimized/auditsc.ll
 ; linux/optimized/binfmt_elf.ll
@@ -162,6 +165,7 @@ entry:
 ; linux/optimized/syscall.ll
 ; linux/optimized/syscall_user_dispatch.ll
 ; linux/optimized/vma.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openjdk/optimized/zPageAllocator.ll
 ; wireshark/optimized/voip_calls.c.ll
 ; Function Attrs: nounwind
@@ -183,6 +187,19 @@ entry:
   %2 = add nsw i64 %1, -960
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 800
+  ret ptr %4
+}
+
+; 2 occurrences:
+; node/optimized/libnode.node_file.ll
+; node/optimized/libnode.stream_wrap.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0) #0 {
+entry:
+  %1 = ptrtoint ptr %0 to i64
+  %2 = add i64 %1, -88
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw i8, ptr %3, i64 -16
   ret ptr %4
 }
 

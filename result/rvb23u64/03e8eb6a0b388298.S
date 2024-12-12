@@ -25,7 +25,7 @@ func0000000000000004:                   # @func0000000000000004
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andi	a0, a0, 1
 	sltiu	a1, a1, 150
 	li	a2, 11
@@ -42,6 +42,20 @@ func0000000000000006:                   # @func0000000000000006
 	neg	a1, a1
 	ori	a1, a1, 1
 	czero.nez	a0, a1, a0
+	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 1
+	sltiu	a1, a1, 40
+	li	a2, 50
+	czero.nez	a1, a2, a1
+	lui	a2, 1
+	addiw	a2, a2, 334
+	add	a1, a1, a2
+	li	a2, 17
+	slli	a2, a2, 8
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 1

@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; arrow/optimized/concatenate.cc.ll
 ; hyperscan/optimized/AsciiComponentClass.cpp.ll
 ; hyperscan/optimized/ComponentClass.cpp.ll
@@ -10,7 +10,6 @@
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
-; linux/optimized/build_utility.ll
 ; linux/optimized/find_bit.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; openvdb/optimized/Activate.cc.ll
@@ -46,11 +45,7 @@ entry:
   ret i64 %4
 }
 
-; 107 occurrences:
-; llvm/optimized/ParseOpenMP.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/StatepointLowering.cpp.ll
-; qemu/optimized/target_riscv_pmu.c.ll
+; 103 occurrences:
 ; spike/optimized/add32.ll
 ; spike/optimized/clrs32.ll
 ; spike/optimized/clz32.ll
@@ -158,7 +153,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = shl nuw i64 1, %0
+  %3 = shl nuw i64 4294967295, %0
   %4 = and i64 %3, %2
   ret i64 %4
 }

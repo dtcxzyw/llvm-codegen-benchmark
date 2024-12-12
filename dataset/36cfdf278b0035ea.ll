@@ -1,7 +1,8 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; linux/optimized/intel_display.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll

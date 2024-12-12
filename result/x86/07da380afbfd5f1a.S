@@ -1,6 +1,5 @@
 func0000000000000001:                   # @func0000000000000001
-	notl	%edx
-	testb	$31, %dl
+	testl	$65409, %edx                    # imm = 0xFF81
 	sete	%al
 	andb	%dil, %sil
 	andb	%sil, %al

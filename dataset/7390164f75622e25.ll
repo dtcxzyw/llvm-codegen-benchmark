@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 35 occurrences:
 ; abc/optimized/aigPack.c.ll
 ; graphviz/optimized/ellipse.c.ll
 ; graphviz/optimized/make_map.c.ll
@@ -12,8 +12,6 @@
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; msdfgen/optimized/import-svg.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/benchmark.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll

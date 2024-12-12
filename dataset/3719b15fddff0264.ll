@@ -1,20 +1,4 @@
 
-; 6 occurrences:
-; abc/optimized/cecSat.c.ll
-; abc/optimized/cecSatG.c.ll
-; abc/optimized/cecSim.c.ll
-; abc/optimized/giaSimBase.c.ll
-; abc/optimized/saigTrans.c.ll
-; qemu/optimized/ui_vnc-enc-zrle.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul i32 %1, %2
-  %4 = icmp ult i32 %0, 2
-  %5 = select i1 %4, i32 0, i32 %3
-  ret i32 %5
-}
-
 ; 8 occurrences:
 ; gromacs/optimized/fft5d.cpp.ll
 ; ncnn/optimized/gridsample_x86.cpp.ll
@@ -25,7 +9,7 @@ entry:
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openmpi/optimized/ompi_datatype_create_darray.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp eq i32 %0, 0
@@ -87,9 +71,24 @@ entry:
 ; abc/optimized/wlcMem.c.ll
 ; abc/optimized/wlcSim.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
+  %4 = icmp ult i32 %0, 15
+  %5 = select i1 %4, i32 16, i32 %3
+  ret i32 %5
+}
+
+; 5 occurrences:
+; abc/optimized/cecSat.c.ll
+; abc/optimized/cecSatG.c.ll
+; abc/optimized/cecSim.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/saigTrans.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
   %4 = icmp ult i32 %0, 15
   %5 = select i1 %4, i32 16, i32 %3
   ret i32 %5
@@ -99,7 +98,7 @@ entry:
 ; opencv/optimized/colorspace.cpp.ll
 ; opencv/optimized/linearize.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp sgt i32 %0, 1

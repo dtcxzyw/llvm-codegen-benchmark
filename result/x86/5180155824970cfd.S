@@ -46,6 +46,14 @@ func000000000000001a:                   # @func000000000000001a
 	adcq	%rsi, %rcx
 	movq	%rcx, %rdx
 	retq
+func0000000000000002:                   # @func0000000000000002
+	movq	%rcx, %rax
+	addq	%r8, %rdx
+	adcq	%r9, %rax
+	addq	%rdi, %rax
+	adcq	$0, %rsi
+	movq	%rsi, %rdx
+	retq
 func0000000000000019:                   # @func0000000000000019
 	movq	%rdx, %rax
 	addq	%r8, %rax

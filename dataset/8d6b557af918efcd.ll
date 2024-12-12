@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 23 occurrences:
 ; actix-rs/optimized/52qe9gl98lnufrop.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
@@ -20,8 +20,11 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/packet-rtmpt.c.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0) #0 {
+define i1 @func0000000000000021(i8 %0) #0 {
 entry:
   %1 = add nsw i8 %0, -1
   %2 = and i8 %1, -9
@@ -29,21 +32,18 @@ entry:
   ret i1 %3
 }
 
-; 84 occurrences:
+; 76 occurrences:
 ; abc/optimized/ioReadBlifAig.c.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/OpenDDLParser.cpp.ll
 ; assimp/optimized/PlyLoader.cpp.ll
 ; clamav/optimized/matcher-byte-comp.c.ll
-; cmake/optimized/zstd_lazy.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
-; gromacs/optimized/dlarfb.cpp.ll
 ; gromacs/optimized/dormbr.cpp.ll
 ; gromacs/optimized/dormlq.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; gromacs/optimized/sormbr.cpp.ll
 ; gromacs/optimized/sormlq.cpp.ll
 ; grpc/optimized/promise_based_filter.cc.ll
@@ -61,7 +61,6 @@ entry:
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; opencv/optimized/contours_new.cpp.ll
 ; openexr/optimized/context.c.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/arguments.ll
@@ -94,9 +93,6 @@ entry:
 ; php/optimized/iconv.ll
 ; php/optimized/parse_date.ll
 ; php/optimized/zend_jit.ll
-; postgres/optimized/sha1.ll
-; postgres/optimized/sha1_shlib.ll
-; postgres/optimized/sha1_srv.ll
 ; protobuf/optimized/lexer.cc.ll
 ; proxygen/optimized/HPACKDecoderBase.cpp.ll
 ; rust-analyzer-rs/optimized/2o0d131ok2fe9kmx.ll
@@ -113,7 +109,6 @@ entry:
 ; wireshark/optimized/packet-btatt.c.ll
 ; wireshark/optimized/packet-edonkey.c.ll
 ; wireshark/optimized/packet-isobus.c.ll
-; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0) #0 {
 entry:
@@ -144,7 +139,7 @@ entry:
 ; linux/optimized/tx.ll
 ; linux/optimized/xfrm_input.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0) #0 {
+define i1 @func0000000000000014(i8 %0) #0 {
 entry:
   %1 = add i8 %0, 1
   %2 = and i8 %1, 2

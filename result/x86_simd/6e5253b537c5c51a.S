@@ -107,7 +107,7 @@ func0000000000000000:                   # @func0000000000000000
 	.zero	4,3
 func000000000000000c:                   # @func000000000000000c
 	vpmovdb	%ymm2, %xmm2
-	vpor	%xmm1, %xmm2, %xmm1
+	vpor	%xmm2, %xmm1, %xmm1
 	vpternlogd	$248, .LCPI2_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	vzeroupper
 	retq

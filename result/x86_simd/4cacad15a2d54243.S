@@ -68,3 +68,24 @@ func000000000000000a:                   # @func000000000000000a
 	vmovdqu8	.LCPI9_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq
+.LCPI10_0:
+	.zero	16,1
+func0000000000000030:                   # @func0000000000000030
+	vpcmpnleud	%ymm1, %ymm0, %k1
+	vmovdqu8	.LCPI10_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI11_0:
+	.zero	16,1
+func0000000000000028:                   # @func0000000000000028
+	vpcmpltud	%ymm1, %ymm0, %k1
+	vmovdqu8	.LCPI11_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI12_0:
+	.zero	16,1
+func0000000000000032:                   # @func0000000000000032
+	vpcmpnltud	%ymm1, %ymm0, %k1
+	vmovdqu8	.LCPI12_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq

@@ -24,16 +24,16 @@ entry:
 ; vcpkg/optimized/ci-baseline.cpp.ll
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(ptr %0, i32 %1, ptr %2) #0 {
+define i64 @func0000000000000066(ptr %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp slt i32 %1, 0
   %5 = select i1 %4, ptr %0, ptr %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
 
-; 172 occurrences:
+; 171 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
@@ -55,7 +55,6 @@ entry:
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
-; icu/optimized/uconv.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -207,9 +206,9 @@ entry:
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(ptr %0, i32 %1, ptr %2) #0 {
+define i64 @func0000000000000061(ptr %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, ptr %0, ptr %3
   %6 = ptrtoint ptr %5 to i64

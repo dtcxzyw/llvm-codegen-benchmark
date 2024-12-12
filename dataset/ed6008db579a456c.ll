@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 54 occurrences:
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
@@ -30,21 +30,7 @@
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; faiss/optimized/IndexLSH.cpp.ll
-; g2o/optimized/edge_se3_euler.cpp.ll
-; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; g2o/optimized/types_icp.cpp.ll
-; g2o/optimized/types_seven_dof_expmap.cpp.ll
-; g2o/optimized/vertex_cam.cpp.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
-; g2o/optimized/vertex_se3.cpp.ll
-; g2o/optimized/vertex_se3_euler.cpp.ll
-; g2o/optimized/vertex_se3_expmap.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -64,10 +50,6 @@
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; oiio/optimized/texture3d.cpp.ll
-; openblas/optimized/dgemmt.c.ll
-; openblas/optimized/dgetrf_single.c.ll
-; openblas/optimized/dtrsm_kernel_RT.c.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/knearest.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
@@ -81,33 +63,23 @@ entry:
   ret ptr %5
 }
 
-; 31 occurrences:
+; 21 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; faiss/optimized/distances.cpp.ll
 ; faiss/optimized/utils.cpp.ll
-; image-rs/optimized/2s4mh02dvph60euq.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; ncnn/optimized/einsum.cpp.ll
 ; nuttx/optimized/lib_bsearch.c.ll
 ; openblas/optimized/dlaswp_minus.c.ll
-; opencv/optimized/calibration_handeye.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/dpm_feature.cpp.ll
 ; opencv/optimized/exposure_compensate.cpp.ll
-; opencv/optimized/lapack.cpp.ll
-; opencv/optimized/levmarq.cpp.ll
 ; opencv/optimized/mace.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
-; opencv/optimized/perf_math.cpp.ll
-; opencv/optimized/projectorcalibration.cpp.ll
-; opencv/optimized/ptsetreg.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
 ; opencv/optimized/trackerCSRTSegmentation.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
-; opencv/optimized/trackerKCF.cpp.ll
 ; opencv/optimized/va_intel.cpp.ll
 ; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
 ; openjdk/optimized/shenandoahHeap.ll
@@ -122,26 +94,46 @@ entry:
   ret ptr %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; image-rs/optimized/2s4mh02dvph60euq.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; ncnn/optimized/einsum.cpp.ll
+; opencv/optimized/calibration_handeye.cpp.ll
+; opencv/optimized/lapack.cpp.ll
+; opencv/optimized/levmarq.cpp.ll
+; opencv/optimized/perf_math.cpp.ll
+; opencv/optimized/projectorcalibration.cpp.ll
+; opencv/optimized/ptsetreg.cpp.ll
+; opencv/optimized/trackerKCF.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %2, %0
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 8 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; bullet3/optimized/btSoftBody.ll
 ; faiss/optimized/IndexLSH.cpp.ll
-; g2o/optimized/types_seven_dof_expmap.cpp.ll
 ; graphviz/optimized/smart_ini_x.c.ll
 ; gromacs/optimized/gmx_covar.cpp.ll
 ; openblas/optimized/cblas_dgemmt.c.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; opencv/optimized/va_intel.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %0, %2
-  %4 = getelementptr nusw i32, ptr %1, i64 %3
-  %5 = getelementptr nusw i32, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %0
   ret ptr %5
 }
 
-; 42 occurrences:
+; 43 occurrences:
+; lvgl/optimized/lv_utils.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
 ; quantlib/optimized/basecorrelationstructure.ll
 ; quantlib/optimized/bfgs.ll
@@ -221,8 +213,7 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; quantlib/optimized/qrdecomposition.ll
+; 1 occurrences:
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
@@ -233,9 +224,10 @@ entry:
   ret ptr %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; entt/optimized/flow.cpp.ll
 ; entt/optimized/organizer.cpp.ll
+; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; hdf5/optimized/H5PB.c.ll
 ; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256_nosse.ll
 ; libsodium/optimized/libsse2_la-pwhash_scryptsalsa208sha256_sse.ll
@@ -310,7 +302,7 @@ entry:
   ret ptr %5
 }
 
-; 67 occurrences:
+; 64 occurrences:
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_cholesky.cc.ll
@@ -359,9 +351,7 @@ entry:
 ; g2o/optimized/vertex_se3_euler.cpp.ll
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
 ; gromacs/optimized/dsymv.cpp.ll
-; gromacs/optimized/dtrtri.cpp.ll
 ; gromacs/optimized/ssymv.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -373,7 +363,6 @@ entry:
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlaein.c.ll
 ; openblas/optimized/dlahqr.c.ll
-; openblas/optimized/dsygst.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
@@ -390,11 +379,40 @@ entry:
 ; 1 occurrences:
 ; git/optimized/pack-revindex.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000002b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, %0
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i32, ptr %4, i64 %0
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 19 occurrences:
+; ceres/optimized/line_search_direction.cc.ll
+; g2o/optimized/edge_se3_euler.cpp.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; g2o/optimized/types_icp.cpp.ll
+; g2o/optimized/types_seven_dof_expmap.cpp.ll
+; g2o/optimized/vertex_cam.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; g2o/optimized/vertex_se3.cpp.ll
+; g2o/optimized/vertex_se3_euler.cpp.ll
+; g2o/optimized/vertex_se3_expmap.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; oiio/optimized/texture3d.cpp.ll
+; openblas/optimized/dgemmt.c.ll
+; openblas/optimized/dgetrf_single.c.ll
+; openblas/optimized/dtrsm_kernel_RT.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %2, %0
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -465,15 +483,36 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; faiss/optimized/distances_simd.cpp.ll
-; llama.cpp/optimized/ggml.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, %0
   %4 = getelementptr float, ptr %1, i64 %3
   %5 = getelementptr nusw float, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 1 occurrences:
+; llama.cpp/optimized/ggml.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %0, %2
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 1 occurrences:
+; g2o/optimized/types_seven_dof_expmap.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, %0
+  %4 = getelementptr nusw double, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw double, ptr %4, i64 %0
   ret ptr %5
 }
 

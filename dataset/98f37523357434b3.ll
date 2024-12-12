@@ -7,7 +7,7 @@
 ; vcpkg/optimized/postbuildlint.cpp.ll
 ; verilator/optimized/V3ExecGraph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 1
   %3 = zext i1 %2 to i64

@@ -41,6 +41,10 @@ func0000000000000016:                   # @func0000000000000016
 	sh3add	a1, a2, a1
 	sub	a0, a1, a0
 	ret
+func0000000000000038:                   # @func0000000000000038
+	sh2add	a1, a2, a1
+	sub	a0, a1, a0
+	ret
 func000000000000003c:                   # @func000000000000003c
 	slli	a2, a2, 6
 	sub	a0, a1, a0

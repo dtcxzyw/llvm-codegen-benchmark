@@ -1,7 +1,21 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	shl	v2.16b, v2.16b, #7
-	cmlt	v2.16b, v2.16b, #0
-	bif	v0.16b, v1.16b, v2.16b
+	tst	w2, #0x1
+	csel	w8, w0, w1, ne
+	and	w0, w8, #0x1
+	ret
+                                        // -- End function
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	tst	w2, #0x1
+	csel	w8, w0, w1, ne
+	and	w0, w8, #0xff
+	ret
+                                        // -- End function
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	tst	w2, #0x1
+	csel	w8, w0, w1, ne
+	and	w0, w8, #0xff
 	ret
                                         // -- End function

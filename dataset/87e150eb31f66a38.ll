@@ -12,22 +12,7 @@ entry:
 }
 
 ; 2 occurrences:
-; mitsuba3/optimized/bitmap.cpp.ll
-; opencv/optimized/sumpixels.dispatch.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000f2(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 2
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  %6 = getelementptr nusw float, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 4 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
-; casadi/optimized/sparsity_internal.cpp.ll
-; libwebp/optimized/webp_enc.c.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000005a(i64 %0, ptr %1, i64 %2) #0 {
@@ -96,24 +81,24 @@ entry:
 ; hyperscan/optimized/rdfa_merge.cpp.ll
 ; hyperscan/optimized/smallwrite_build.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %.idx = shl i64 %2, 5
   %3 = getelementptr i8, ptr %1, i64 %.idx
   %4 = getelementptr i8, ptr %3, i64 32
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }
 
 ; 1 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
+; libwebp/optimized/webp_enc.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000005b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = shl nsw i64 %2, 3
+  %3 = shl nsw i64 %2, 2
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  %6 = getelementptr i64, ptr %5, i64 %0
+  %5 = getelementptr i8, ptr %4, i64 31
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 

@@ -3,7 +3,7 @@ func0000000000000002:                   # @func0000000000000002
 	vdivsd	%xmm0, %xmm1, %xmm0
 	retq
 func0000000000000004:                   # @func0000000000000004
-	vmaxsd	%xmm2, %xmm1, %xmm1
+	vminsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
 	retq
 func000000000000000c:                   # @func000000000000000c

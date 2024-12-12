@@ -13,10 +13,6 @@ func0000000000000004:                   # @func0000000000000004
 	andq	$-4096, %rax                    # imm = 0xF000
 	subq	%rdi, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	leal	(%rsi,%rdx), %eax
-	subq	%rdi, %rax
-	retq
 func000000000000000f:                   # @func000000000000000f
 	leal	(%rsi,%rdx), %eax
 	subq	%rdi, %rax

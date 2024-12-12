@@ -33,3 +33,11 @@ func0000000000000009:                   # @func0000000000000009
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
+func0000000000000023:                   # @func0000000000000023
+	zext.h	a2, a2
+	lui	a3, 16
+	addiw	a3, a3, -4
+	sltu	a2, a2, a3
+	and	a1, a1, a2
+	addw	a0, a0, a1
+	ret

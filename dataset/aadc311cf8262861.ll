@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 69 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; clamav/optimized/cabd.c.ll
@@ -68,8 +68,9 @@
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; wireshark/optimized/packet-woww.c.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, %1
   %3 = icmp eq i64 %0, 4
@@ -92,7 +93,7 @@ entry:
 ; qemu/optimized/audio_audio.c.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, %1
   %3 = icmp eq i64 %0, 0
@@ -107,7 +108,7 @@ entry:
 ; rocksdb/optimized/fault_injection_fs.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, %1
   %3 = icmp slt i64 %0, 1
@@ -115,8 +116,9 @@ entry:
   ret i1 %4
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; arrow/optimized/memory.cc.ll
+; boost/optimized/matches_relation_factory.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/http.c.ll
 ; cpython/optimized/_ssl.ll
@@ -153,9 +155,22 @@ entry:
 ; velox/optimized/Re2Functions.cpp.ll
 ; wireshark/optimized/wireshark_zip_helper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000146(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %0, %1
+  %3 = icmp slt i64 %0, 0
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 3 occurrences:
+; luau/optimized/isocline.c.ll
+; openssl/optimized/libcrypto-lib-cmp_client.ll
+; openssl/optimized/libcrypto-shlib-cmp_client.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000306(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %0, %1
   %3 = icmp slt i64 %0, 0
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
@@ -223,7 +238,7 @@ entry:
 ; proj/optimized/concatenatedoperation.cpp.ll
 ; qemu/optimized/linux-user_signal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp uge i64 %0, %1
   %3 = icmp eq i64 %0, 0
@@ -248,7 +263,7 @@ entry:
 ; slurm/optimized/ping_nodes.ll
 ; slurm/optimized/priority_multifactor.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %0, %1
   %3 = icmp eq i64 %0, -1
@@ -263,7 +278,7 @@ entry:
 ; openjdk/optimized/assembler.ll
 ; quest/optimized/QuEST_validation.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000166(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sge i64 %0, %1
   %3 = icmp slt i64 %0, 0
@@ -275,7 +290,7 @@ entry:
 ; hdf5/optimized/H5Faccum.c.ll
 ; openjdk/optimized/libproc_impl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %0, %1
   %3 = icmp eq i64 %0, -1
@@ -286,7 +301,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/characterdata.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000148(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %0, %1
   %3 = icmp ugt i64 %0, 2147483647
@@ -297,7 +312,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000106(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %0, %1
   %3 = icmp slt i64 %0, 0
@@ -305,14 +320,35 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; slurm/optimized/acct_policy.ll
+; 1 occurrences:
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000286(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %0, %1
+  %3 = icmp slt i64 %0, 2048
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c6(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp slt i64 %0, %1
+  %3 = icmp slt i64 %0, 0
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; slurm/optimized/acct_policy.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, %1
-  %3 = icmp slt i64 %0, 2048
+  %3 = icmp slt i64 %0, 0
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }
@@ -322,7 +358,7 @@ entry:
 ; libquic/optimized/rtt_stats.cc.ll
 ; llvm/optimized/CGObjC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sge i64 %0, %1
   %3 = icmp eq i64 %0, 0
@@ -333,7 +369,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/crypto_utils.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %0, %1
   %3 = icmp eq i64 %0, 0
@@ -344,7 +380,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, %1
   %3 = icmp ult i64 %0, 16
@@ -355,7 +391,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000126(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp uge i64 %0, %1
   %3 = icmp slt i64 %0, 0
@@ -366,7 +402,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/mmconfig-shared.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, %1
   %3 = icmp ugt i64 %0, 16777215
@@ -378,7 +414,7 @@ entry:
 ; lua/optimized/lstrlib.ll
 ; redis/optimized/replication.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %0, %1
   %3 = icmp eq i64 %0, 0
@@ -389,7 +425,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/enum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, %1
   %3 = icmp ult i64 %0, 16
@@ -400,7 +436,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_threadmodule.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, %1
   %3 = icmp sgt i64 %0, -1

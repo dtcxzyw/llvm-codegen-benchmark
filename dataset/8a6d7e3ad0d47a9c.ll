@@ -1,5 +1,5 @@
 
-; 331 occurrences:
+; 332 occurrences:
 ; cpython/optimized/dtoa.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
@@ -175,6 +175,7 @@
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; opencv/optimized/phasecorr.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/createplan.ll
 ; postgres/optimized/syslogger.ll

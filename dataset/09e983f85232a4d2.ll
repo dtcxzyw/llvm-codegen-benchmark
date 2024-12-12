@@ -28,9 +28,9 @@ entry:
 ; vcpkg/optimized/ci-baseline.cpp.ll
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(ptr %0, i32 %1, ptr %2) #0 {
+define i64 @func0000000000000066(ptr %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 80
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 80
   %4 = icmp slt i32 %1, 0
   %5 = select i1 %4, ptr %3, ptr %0
   %6 = ptrtoint ptr %5 to i64
@@ -42,9 +42,9 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_string_regexp.cpp.ll
 ; velox/optimized/Re2Functions.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(ptr %0, i32 %1, ptr %2) #0 {
+define i64 @func0000000000000064(ptr %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = icmp ult i32 %1, 13
   %5 = select i1 %4, ptr %3, ptr %0
   %6 = ptrtoint ptr %5 to i64
@@ -56,10 +56,10 @@ entry:
 ; openusd/optimized/lz4.cpp.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(ptr %0, i32 %1, ptr %2) #0 {
+define i64 @func0000000000000058(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -65536
-  %4 = icmp ugt i32 %1, 65536
+  %4 = icmp samesign ugt i32 %1, 65536
   %5 = select i1 %4, ptr %3, ptr %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
@@ -70,9 +70,9 @@ entry:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(ptr %0, i32 %1, ptr %2) #0 {
+define i64 @func0000000000000061(ptr %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, ptr %3, ptr %0
   %6 = ptrtoint ptr %5 to i64

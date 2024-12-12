@@ -1,5 +1,11 @@
 
-; 89 occurrences:
+; 95 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/qtmd.c.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -27,12 +33,12 @@
 ; linux/optimized/ipmr.ll
 ; linux/optimized/nf_conntrack_ftp.ll
 ; linux/optimized/resize.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/sit.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/vsprintf.ll
 ; linux/optimized/wpa.ll
 ; linux/optimized/xfrm_output.ll
+; lvgl/optimized/lv_math.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
@@ -97,10 +103,12 @@ entry:
   ret i16 %3
 }
 
-; 17 occurrences:
+; 19 occurrences:
+; boost/optimized/init_from_settings.ll
 ; clamav/optimized/dlp.c.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/simpletz.ll
+; icu/optimized/ushape.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/rscalc.ll
 ; llvm/optimized/DAGISelMatcherGen.cpp.ll
@@ -123,8 +131,7 @@ entry:
   ret i16 %3
 }
 
-; 12 occurrences:
-; icu/optimized/ushape.ll
+; 11 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; minetest/optimized/areastore.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
@@ -241,13 +248,24 @@ entry:
   ret i16 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000d(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 1
   %3 = add nsw i16 %2, %0
+  ret i16 %3
+}
+
+; 1 occurrences:
+; icu/optimized/ushape.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000007(i16 %0, i16 %1) #0 {
+entry:
+  %2 = add nsw i16 %1, -48
+  %3 = add nuw nsw i16 %2, %0
   ret i16 %3
 }
 

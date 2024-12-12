@@ -1,5 +1,5 @@
 
-; 177 occurrences:
+; 176 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/cuddGroup.c.ll
@@ -21,7 +21,6 @@
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
 ; flac/optimized/fixed_intrin_sse2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; flac/optimized/fixed_intrin_ssse3.c.ll
 ; flac/optimized/lpc.c.ll
 ; flac/optimized/replaygain.c.ll
@@ -185,7 +184,7 @@ entry:
   ret double %3
 }
 
-; 217 occurrences:
+; 215 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/bmcMulti.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -210,6 +209,7 @@ entry:
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/wlnRetime.c.ll
 ; abseil-cpp/optimized/chi_square.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; casadi/optimized/cvodes.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -298,8 +298,6 @@ entry:
 ; nori/optimized/ttest.cpp.ll
 ; ocio/optimized/Lut1DOp.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dlatm1.c.ll
 ; openblas/optimized/dlatm7.c.ll
@@ -382,7 +380,6 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; redis/optimized/redis-cli.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; slurm/optimized/slurm_protocol_api.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; sundials/optimized/arkode_butcher.c.ll

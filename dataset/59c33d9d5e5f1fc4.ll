@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/Attributes.cpp.ll
@@ -10,7 +10,6 @@
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/Type.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
-; postgres/optimized/shm_toc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

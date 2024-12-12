@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	andb	%sil, %al
 	retq
 func000000000000000c:                   # @func000000000000000c
-	testl	%edx, %edx
+	testl	$102631199, %edx                # imm = 0x61E071F
 	setne	%al
 	andb	%dil, %sil
 	andb	%sil, %al

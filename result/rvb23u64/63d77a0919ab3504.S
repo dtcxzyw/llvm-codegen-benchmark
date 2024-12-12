@@ -1,4 +1,4 @@
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000194:                   # @func0000000000000194
 	binvi	a2, a0, 39
 	snez	a2, a2
 	or	a1, a1, a2
@@ -7,7 +7,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	addi	a2, a0, -216
 	addi	a0, a0, -144
 	snez	a2, a2
@@ -15,7 +15,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	seqz	a2, a0
 	or	a1, a1, a2
 	sltiu	a0, a0, 4

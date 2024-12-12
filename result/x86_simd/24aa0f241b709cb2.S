@@ -34,7 +34,7 @@
 	.zero	1
 .LCPI0_2:
 	.byte	35                              # 0x23
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	%ymm2, %ymm2, %k1
 	vpbroadcastb	.LCPI0_2(%rip), %xmm2   # xmm2 = [35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35]
 	vmovdqu8	.LCPI0_1(%rip), %xmm2 {%k1}     # xmm2 {%k1} = [34,34,34,34,34,34,34,34,u,u,u,u,u,u,u,u]
@@ -64,7 +64,7 @@ func0000000000000011:                   # @func0000000000000011
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm2, %k1
 	vmovdqu8	.LCPI1_1(%rip), %xmm2 {%k1} {z} # xmm2 {%k1} {z} = [16,16,16,16,16,16,16,16,u,u,u,u,u,u,u,u]
 	vpcmpltud	.LCPI1_2(%rip){1to8}, %ymm1, %k1

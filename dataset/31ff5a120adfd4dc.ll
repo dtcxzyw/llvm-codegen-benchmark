@@ -11,7 +11,7 @@ entry:
   %2 = lshr i32 %1, 6
   %3 = and i32 %2, 2097151
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = add nuw nsw i64 %5, 1048576
   ret i64 %6
 }
@@ -25,22 +25,8 @@ entry:
   %2 = lshr i32 %1, 10
   %3 = and i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = add i64 %5, 3
-  ret i64 %6
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 14
-  %3 = and i32 %2, 262140
-  %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
-  %6 = add nsw i64 %5, 4
   ret i64 %6
 }
 

@@ -1,6 +1,9 @@
 
-; 12 occurrences:
+; 15 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; graphviz/optimized/conc.c.ll
 ; hwloc/optimized/bitmap.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -51,7 +54,7 @@ entry:
   ret i32 %4
 }
 
-; 126 occurrences:
+; 128 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
@@ -97,6 +100,8 @@ entry:
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_grid.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -187,9 +192,10 @@ entry:
   ret i32 %4
 }
 
-; 306 occurrences:
+; 344 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/src.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
@@ -419,7 +425,6 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/convertnode.ll
@@ -494,6 +499,44 @@ entry:
 ; yosys/optimized/lz4.ll
 ; yosys/optimized/yosys.ll
 ; z3/optimized/lia2card_tactic.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2tseelemdefm2fo39q21ogou2.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4i7kbhd18au0o53jm2t49fldp.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/7diapbiz116z58qz43ov3nwc9.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/a1202jdosca6jpmc3o2s7syhq.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/apge5vvp9hwixphamezb75yuv.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bhm2bjcgbdwnubkgels8aniip.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/bz6p16t2qoqszqvs08hoy0zu5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -503,7 +546,8 @@ entry:
   ret i32 %4
 }
 
-; 56 occurrences:
+; 57 occurrences:
+; lvgl/optimized/lv_draw_sw_line.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll
@@ -569,10 +613,9 @@ entry:
   ret i32 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/saigIsoFast.c.ll
 ; cvc5/optimized/linear_equality.cpp.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; llvm/optimized/Commit.cpp.ll
 ; llvm/optimized/MacroInfo.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
@@ -940,6 +983,18 @@ entry:
   ret i32 %4
 }
 
+; 2 occurrences:
+; abc/optimized/ltl_parser.c.ll
+; openspiel/optimized/havannah.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = trunc nsw i64 %0 to i32
+  %4 = sub nsw i32 %3, %2
+  ret i32 %4
+}
+
 ; 3 occurrences:
 ; crow/optimized/example_chat.cpp.ll
 ; linux/optimized/vsprintf.ll
@@ -975,17 +1030,6 @@ define i32 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
-  %4 = sub nuw nsw i32 %3, %2
-  ret i32 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/ModuloSchedule.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000b(i64 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = trunc nuw i64 %0 to i32
   %4 = sub nuw nsw i32 %3, %2
   ret i32 %4
 }
@@ -1049,17 +1093,6 @@ define i32 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = trunc i64 %0 to i32
-  %4 = sub nsw i32 %3, %2
-  ret i32 %4
-}
-
-; 1 occurrences:
-; openspiel/optimized/havannah.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i64 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = trunc nsw i64 %0 to i32
   %4 = sub nsw i32 %3, %2
   ret i32 %4
 }

@@ -48,51 +48,7 @@ func000000000000000d:                   # @func000000000000000d
 	.long	15                              # 0xf
 func000000000000000c:                   # @func000000000000000c
 	vpslld	$4, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpsrld	$12, %ymm0, %ymm0
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
-	retq
-.LCPI3_0:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-.LCPI3_1:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-func0000000000000001:                   # @func0000000000000001
-	vpslld	$23, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
-	vpsrld	$23, %ymm0, %ymm0
-	vpandd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	retq

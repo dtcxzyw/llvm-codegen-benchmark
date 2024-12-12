@@ -10,7 +10,7 @@ define i8 @func000000000000003c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, %1
   %4 = trunc i32 %3 to i8
-  %5 = add i8 %4, %2
+  %5 = add i8 %2, %4
   ret i8 %5
 }
 
@@ -22,7 +22,7 @@ define i8 @func000000000000007c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, %1
   %4 = trunc i32 %3 to i8
-  %5 = add i8 %4, %2
+  %5 = add i8 %2, %4
   ret i8 %5
 }
 
@@ -33,7 +33,7 @@ define i8 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add i32 %0, %1
   %4 = trunc i32 %3 to i8
-  %5 = add i8 %4, %2
+  %5 = add i8 %2, %4
   ret i8 %5
 }
 

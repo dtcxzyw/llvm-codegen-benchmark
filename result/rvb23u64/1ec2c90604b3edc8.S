@@ -4,16 +4,6 @@ func0000000000000033:                   # @func0000000000000033
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
-func0000000000000023:                   # @func0000000000000023
-	andi	a2, a2, 15
-	sltiu	a2, a2, 3
-	xori	a2, a2, 1
-	and	a1, a1, a2
-	li	a2, -12
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addiw	a0, a0, 16
-	ret
 func0000000000000031:                   # @func0000000000000031
 	andi	a2, a2, 2047
 	addi	a2, a2, -1

@@ -52,3 +52,15 @@ func0000000000000002:                   # @func0000000000000002
 	shrq	$3, %rdx
 	subq	%rdx, %rax
 	retq
+func0000000000000016:                   # @func0000000000000016
+	movq	%rdi, %rax
+	subq	%rsi, %rdx
+	shrq	$3, %rdx
+	subq	%rdx, %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	movq	%rdi, %rax
+	subq	%rsi, %rdx
+	shrq	$2, %rdx
+	subq	%rdx, %rax
+	retq

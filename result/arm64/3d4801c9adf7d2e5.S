@@ -1,96 +1,72 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	ushll	v2.8h, v2.8b, #0
-	movi	v3.4s, #1
-	ushll2	v4.4s, v2.8h, #0
-	ushll	v2.4s, v2.4h, #0
-	ushl	v2.4s, v3.4s, v2.4s
-	ushl	v3.4s, v3.4s, v4.4s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	mov	w8, #1                          // =0x1
+                                        // kill: def $w1 killed $w1 def $x1
+	lsl	w8, w8, w1
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	ushll	v2.8h, v2.8b, #0
-	movi	v3.4s, #2
-	ushll2	v4.4s, v2.8h, #0
-	ushll	v2.4s, v2.4h, #0
-	ushl	v2.4s, v3.4s, v2.4s
-	ushl	v3.4s, v3.4s, v4.4s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	mov	w8, #2                          // =0x2
+                                        // kill: def $w1 killed $w1 def $x1
+	lsl	w8, w8, w1
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	ushll	v2.8h, v2.8b, #0
-	movi	v3.4s, #1
-	ushll2	v4.4s, v2.8h, #0
-	ushll	v2.4s, v2.4h, #0
-	ushl	v2.4s, v3.4s, v2.4s
-	ushl	v3.4s, v3.4s, v4.4s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	mov	w8, #1                          // =0x1
+                                        // kill: def $w1 killed $w1 def $x1
+	lsl	w8, w8, w1
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	ushll	v2.8h, v2.8b, #0
-	movi	v3.4s, #1
-	ushll2	v4.4s, v2.8h, #0
-	ushll	v2.4s, v2.4h, #0
-	ushl	v2.4s, v3.4s, v2.4s
-	ushl	v3.4s, v3.4s, v4.4s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	mov	w8, #1                          // =0x1
+                                        // kill: def $w1 killed $w1 def $x1
+	lsl	w8, w8, w1
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	ushll	v2.8h, v2.8b, #0
-	movi	v3.2d, #0xffffffffffffffff
-	ushll2	v4.4s, v2.8h, #0
-	ushll	v2.4s, v2.4h, #0
-	ushl	v2.4s, v3.4s, v2.4s
-	ushl	v3.4s, v3.4s, v4.4s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	mov	w8, #-1                         // =0xffffffff
+                                        // kill: def $w1 killed $w1 def $x1
+	lsl	w8, w8, w1
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	ushll	v2.8h, v2.8b, #0
-	movi	v3.4s, #1
-	ushll2	v4.4s, v2.8h, #0
-	ushll	v2.4s, v2.4h, #0
-	ushl	v2.4s, v3.4s, v2.4s
-	ushl	v3.4s, v3.4s, v4.4s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	mov	w8, #1                          // =0x1
+                                        // kill: def $w1 killed $w1 def $x1
+	lsl	w8, w8, w1
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	ushll	v2.8h, v2.8b, #0
-	movi	v3.4s, #3
-	ushll2	v4.4s, v2.8h, #0
-	ushll	v2.4s, v2.4h, #0
-	ushl	v2.4s, v3.4s, v2.4s
-	ushl	v3.4s, v3.4s, v4.4s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	mov	w8, #3                          // =0x3
+                                        // kill: def $w1 killed $w1 def $x1
+	lsl	w8, w8, w1
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	ushll	v2.8h, v2.8b, #0
-	movi	v3.4s, #1
-	ushll2	v4.4s, v2.8h, #0
-	ushll	v2.4s, v2.4h, #0
-	ushl	v2.4s, v3.4s, v2.4s
-	ushl	v3.4s, v3.4s, v4.4s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	mov	w8, #1                          // =0x1
+                                        // kill: def $w1 killed $w1 def $x1
+	lsl	w8, w8, w1
+	add	w0, w0, w8
+	ret
+                                        // -- End function
+func000000000000001d:                   // @func000000000000001d
+// %bb.0:                               // %entry
+	mov	w8, #1                          // =0x1
+                                        // kill: def $w1 killed $w1 def $x1
+	lsl	w8, w8, w1
+	add	w0, w0, w8
 	ret
                                         // -- End function

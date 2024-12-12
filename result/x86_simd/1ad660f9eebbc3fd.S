@@ -35,7 +35,7 @@ func00000000000000d5:                   # @func00000000000000d5
 	retq
 .LCPI4_0:
 	.long	4294967294                      # 0xfffffffe
-func0000000000000040:                   # @func0000000000000040
+func0000000000000010:                   # @func0000000000000010
 	vpmovqd	%ymm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm0
@@ -44,7 +44,7 @@ func0000000000000040:                   # @func0000000000000040
 	retq
 .LCPI5_0:
 	.long	4294967294                      # 0xfffffffe
-func0000000000000010:                   # @func0000000000000010
+func0000000000000040:                   # @func0000000000000040
 	vpmovqd	%ymm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm0

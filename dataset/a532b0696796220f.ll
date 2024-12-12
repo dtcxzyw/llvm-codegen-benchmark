@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; assimp/optimized/Q3BSPFileParser.cpp.ll
@@ -18,6 +18,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/netxray.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:

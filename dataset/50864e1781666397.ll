@@ -2,12 +2,12 @@
 ; 63 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/block_splitter.c.ll
 ; cmake/optimized/nghttp2_stream.c.ll
 ; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; faiss/optimized/random.cpp.ll
 ; folly/optimized/MemoryMapping.cpp.ll
-; graphviz/optimized/shapes.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hermes/optimized/ASTBuilder.cpp.ll
 ; hermes/optimized/JSParserImpl-flow.cpp.ll
@@ -15,7 +15,6 @@
 ; hermes/optimized/JSParserImpl-ts.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; hermes/optimized/OSCompatPosix.cpp.ll
-; linux/optimized/i915_gem_gtt.ll
 ; linux/optimized/relay.ll
 ; llama.cpp/optimized/ggml-alloc.c.ll
 ; llvm/optimized/CGObjCRuntime.cpp.ll
@@ -63,6 +62,7 @@
 ; rocksdb/optimized/sequence_file_reader.cc.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -84,7 +84,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -97,7 +97,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

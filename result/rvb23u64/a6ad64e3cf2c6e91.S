@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	andi	a1, a1, 255
 	andi	a2, a2, 1
 	li	a3, -2
@@ -9,7 +9,7 @@ func0000000000000041:                   # @func0000000000000041
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000114:                   # @func0000000000000114
+func0000000000000224:                   # @func0000000000000224
 	andi	a1, a1, 255
 	andi	a2, a2, 1
 	lui	a3, 183
@@ -25,14 +25,13 @@ func0000000000000114:                   # @func0000000000000114
 	addw	a0, a0, a1
 	sltiu	a0, a0, 65
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
+	sext.w	a0, a0
 	andi	a1, a1, 255
 	andi	a2, a2, 1
-	li	a3, -3
-	czero.nez	a2, a3, a2
-	addi	a2, a2, 4
+	addi	a2, a2, -1
+	ori	a2, a2, -4
 	czero.eqz	a1, a2, a1
-	negw	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

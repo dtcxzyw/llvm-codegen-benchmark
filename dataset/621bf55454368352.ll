@@ -232,7 +232,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 1, %1
   %3 = icmp slt i32 %1, 1
@@ -244,7 +244,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000166(i32 %0, i32 %1) #0 {
+define i1 @func00000000000004c6(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 1, %1
   %3 = icmp slt i32 %1, 1
@@ -254,21 +254,9 @@ entry:
 }
 
 ; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000168(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sub nsw i32 1, %1
-  %3 = icmp slt i32 %1, 1
-  %4 = select i1 %3, i32 %2, i32 %0
-  %5 = icmp ugt i32 %4, 99
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000244(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000884(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 -1082130432, %1
   %3 = icmp ult i32 %1, -1082130432

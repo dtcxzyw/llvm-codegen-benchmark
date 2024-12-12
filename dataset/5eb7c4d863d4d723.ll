@@ -31,7 +31,7 @@ entry:
   ret i32 %4
 }
 
-; 58 occurrences:
+; 61 occurrences:
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/cuddLCache.c.ll
@@ -49,6 +49,9 @@ entry:
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -99,27 +102,6 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
-; cpython/optimized/_datetimemodule.ll
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; hermes/optimized/DateUtil.cpp.ll
-; libquic/optimized/time_support.c.ll
-; minetest/optimized/mapgen_v6.cpp.ll
-; openblas/optimized/dlar1v.c.ll
-; openblas/optimized/dstemr.c.ll
-; openspiel/optimized/maedn.cc.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = mul nsw i32 %0, 3600
-  %4 = add i32 %3, %2
-  ret i32 %4
-}
-
 ; 2 occurrences:
 ; folly/optimized/TimeUtil.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
@@ -129,6 +111,25 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = mul nsw i32 %0, 1000
   %4 = add nsw i32 %3, %2
+  ret i32 %4
+}
+
+; 9 occurrences:
+; cpython/optimized/_datetimemodule.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; hermes/optimized/DateUtil.cpp.ll
+; libquic/optimized/time_support.c.ll
+; minetest/optimized/mapgen_v6.cpp.ll
+; openblas/optimized/dlar1v.c.ll
+; openblas/optimized/dstemr.c.ll
+; openspiel/optimized/maedn.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = mul nsw i32 %0, 42123
+  %4 = add i32 %3, %2
   ret i32 %4
 }
 
@@ -177,8 +178,9 @@ entry:
   ret i32 %4
 }
 
-; 108 occurrences:
+; 109 occurrences:
 ; abc/optimized/cuddTable.c.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

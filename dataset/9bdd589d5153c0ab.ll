@@ -18,7 +18,7 @@ entry:
   ret i1 %2
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; cvc5/optimized/iand_utils.cpp.ll
 ; cvc5/optimized/partition_generator.cpp.ll
@@ -30,6 +30,7 @@ entry:
 ; lightgbm/optimized/gbdt_model_text.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; mimalloc/optimized/arena.c.ll
 ; node/optimized/libnode.node_http_parser.ll
 ; node/optimized/libnode.string_bytes.ll
@@ -99,6 +100,19 @@ entry:
   ret i1 %2
 }
 
+; 4 occurrences:
+; openjdk/optimized/shenandoahAdaptiveHeuristics.ll
+; openjdk/optimized/shenandoahPacer.ll
+; openjdk/optimized/shenandoahPassiveHeuristics.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(double %0) #0 {
+entry:
+  %1 = fptoui double %0 to i64
+  %2 = icmp samesign ugt i64 %1, 104857599
+  ret i1 %2
+}
+
 ; 3 occurrences:
 ; quantlib/optimized/jumpdiffusionengine.ll
 ; xgboost/optimized/updater_approx.cc.ll
@@ -108,6 +122,17 @@ define i1 @func000000000000000c(double %0) #0 {
 entry:
   %1 = fptoui double %0 to i64
   %2 = icmp ne i64 %1, 0
+  ret i1 %2
+}
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_progress_bar.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(double %0) #0 {
+entry:
+  %1 = fptoui double %0 to i64
+  %2 = icmp samesign ult i64 %1, 59
   ret i1 %2
 }
 

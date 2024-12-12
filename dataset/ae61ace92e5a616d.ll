@@ -57,6 +57,25 @@ entry:
   ret i1 %5
 }
 
+; 8 occurrences:
+; opencv/optimized/ar_hmdb_benchmark.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
+; opencv/optimized/miniflann.cpp.ll
+; opencv/optimized/ppf_helpers.cpp.ll
+; opencv/optimized/rho.cpp.ll
+; opencv/optimized/warpfield.cpp.ll
+; postgres/optimized/float.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = bitcast i32 %2 to float
+  %4 = bitcast i32 %0 to float
+  %5 = fcmp oeq float %4, %3
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; opencv/optimized/degeneracy.cpp.ll
 ; pbrt-v4/optimized/textures.cpp.ll
@@ -67,24 +86,6 @@ entry:
   %3 = bitcast i32 %2 to float
   %4 = bitcast i32 %0 to float
   %5 = fcmp olt float %4, %3
-  ret i1 %5
-}
-
-; 7 occurrences:
-; opencv/optimized/ar_hmdb_benchmark.cpp.ll
-; opencv/optimized/calibinit.cpp.ll
-; opencv/optimized/miniflann.cpp.ll
-; opencv/optimized/ppf_helpers.cpp.ll
-; opencv/optimized/rho.cpp.ll
-; opencv/optimized/warpfield.cpp.ll
-; postgres/optimized/float.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = bitcast i32 %2 to float
-  %4 = bitcast i32 %0 to float
-  %5 = fcmp oeq float %4, %3
   ret i1 %5
 }
 

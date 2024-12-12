@@ -1,28 +1,14 @@
 
-; 17 occurrences:
-; hdf5/optimized/H5Faccum.c.ll
-; llvm/optimized/Commit.cpp.ll
-; llvm/optimized/CoverageMapping.cpp.ll
-; llvm/optimized/CoverageMappingWriter.cpp.ll
-; llvm/optimized/EditedSource.cpp.ll
-; llvm/optimized/RegAllocGreedy.cpp.ll
-; llvm/optimized/ValueEnumerator.cpp.ll
+; 3 occurrences:
 ; node/optimized/simdutf.ll
-; opencv/optimized/ar_hmdb_benchmark.cpp.ll
-; opencv/optimized/calibinit.cpp.ll
-; opencv/optimized/flann_search_dataset.cpp.ll
-; opencv/optimized/miniflann.cpp.ll
-; opencv/optimized/ppf_helpers.cpp.ll
-; opencv/optimized/warpfield.cpp.ll
-; qemu/optimized/system_physmem.c.ll
 ; qemu/optimized/util_buffer.c.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = icmp ugt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -56,8 +42,8 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = icmp eq i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -67,8 +53,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
-  %4 = icmp slt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp sgt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -82,7 +68,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -101,8 +87,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = icmp ult i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -122,8 +108,19 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = and i1 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openjdk/optimized/jfrMemorySizer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = icmp samesign uge i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -136,32 +133,43 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000015(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 6
-  %4 = icmp uge i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp samesign ule i64 %1, %3
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; hdf5/optimized/H5Faccum.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 3
+  %4 = icmp samesign ult i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/set_memory.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 12
-  %4 = icmp ule i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp uge i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; node/optimized/simdutf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 1
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -169,11 +177,11 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/ef603zin5qw49hb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 5
-  %4 = icmp eq i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

@@ -1,7 +1,8 @@
 
-; 15 occurrences:
+; 18 occurrences:
 ; arrow/optimized/string.cc.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; lvgl/optimized/lv_draw_label.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/serialize.cpp.ll
 ; nghttp2/optimized/libevent-server.c.ll
@@ -15,8 +16,10 @@
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
 ; wireshark/optimized/packet-pdcp-lte.c.ll
 ; wireshark/optimized/packet-pdcp-nr.c.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/8h2ladsi6pcbclrovmrkrncgn.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0) #0 {
+define i8 @func0000000000000024(i8 %0) #0 {
 entry:
   %1 = add i8 %0, -97
   %2 = icmp ult i8 %1, 6
@@ -45,19 +48,33 @@ entry:
   ret i8 %4
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; assimp/optimized/BaseImporter.cpp.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_session.cpp.ll
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; eastl/optimized/EATextUtil.cpp.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/5gzhlrfve63v3ndyg8t40tttn.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000054(i8 %0) #0 {
+define i8 @func00000000000000a4(i8 %0) #0 {
 entry:
   %1 = add nsw i8 %0, -65
   %2 = icmp ult i8 %1, 6
   %3 = add nsw i8 %0, -55
   %4 = select i1 %2, i8 %3, i8 -1
+  ret i8 %4
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; Function Attrs: nounwind
+define i8 @func00000000000000b4(i8 %0) #0 {
+entry:
+  %1 = add nsw i8 %0, -65
+  %2 = icmp samesign ult i8 %1, 6
+  %3 = add nsw i8 %0, -55
+  %4 = select i1 %2, i8 %3, i8 0
   ret i8 %4
 }
 

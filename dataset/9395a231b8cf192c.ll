@@ -1,13 +1,12 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; flac/optimized/md5.c.ll
 ; jsonnet/optimized/md5.cpp.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/md5.ll
 ; linux/optimized/n_tty.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = sub nuw nsw i32 64, %2
@@ -19,7 +18,7 @@ entry:
 ; linux/optimized/ehci-hcd.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 511
   %3 = sub nuw nsw i32 512, %2
@@ -32,7 +31,7 @@ entry:
 ; wireshark/optimized/tvbuff.c.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = sub nuw nsw i32 8, %2
@@ -48,11 +47,22 @@ entry:
 ; faiss/optimized/ProductAdditiveQuantizer.cpp.ll
 ; faiss/optimized/ResidualQuantizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = sub nuw nsw i32 8, %2
   %4 = icmp slt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 2047
+  %3 = sub nuw nsw i32 1075, %2
+  %4 = icmp samesign ugt i32 %3, %0
   ret i1 %4
 }
 

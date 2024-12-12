@@ -1,9 +1,8 @@
-func000000000000018a:                   // @func000000000000018a
+func000000000000050a:                   // @func000000000000050a
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmhs	v1.4s, v2.4s, v1.4s
-	sub	v0.4s, v0.4s, v1.4s
-	cmgt	v0.4s, v0.4s, #0
-	xtn	v0.4h, v0.4s
+	cmp	w1, w2
+	cinc	w8, w0, ls
+	cmp	w8, #0
+	cset	w0, gt
 	ret
                                         // -- End function

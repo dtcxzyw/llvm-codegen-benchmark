@@ -26,11 +26,10 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
-; git/optimized/diff.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; opencv/optimized/optflowgf.cpp.ll
 ; openjdk/optimized/hb-buffer-verify.ll
@@ -49,7 +48,7 @@ entry:
 ; opencv/optimized/omnidir.cpp.ll
 ; wolfssl/optimized/test.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0) #0 {
+define i1 @func00000000000000a1(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, -1
   ret i1 %1
@@ -86,7 +85,7 @@ entry:
 ; abc/optimized/saigSynch.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0) #0 {
+define i1 @func0000000000000084(i32 %0) #0 {
 entry:
   %1 = mul nsw i32 %0, 30
   %2 = add i32 %1, -1
@@ -136,7 +135,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-dmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0) #0 {
+define i1 @func00000000000001a1(i32 %0) #0 {
 entry:
   ret i1 false
 }
@@ -145,7 +144,7 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0) #0 {
+define i1 @func00000000000000a4(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 3
   %2 = add i32 %1, 127
@@ -157,7 +156,7 @@ entry:
 ; opencv/optimized/grfmt_bmp.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0) #0 {
+define i1 @func00000000000000a8(i32 %0) #0 {
 entry:
   %1 = mul nsw i32 %0, 3
   %2 = add i32 %1, -1001

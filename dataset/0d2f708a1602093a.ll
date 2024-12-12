@@ -1,5 +1,5 @@
 
-; 261 occurrences:
+; 266 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
@@ -260,6 +260,11 @@
 ; velox/optimized/MemoryArbitrator.cpp.ll
 ; velox/optimized/SpillStats.cpp.ll
 ; xgboost/optimized/elementwise_metric.cc.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {

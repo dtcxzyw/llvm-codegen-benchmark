@@ -12,7 +12,9 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; darktable/optimized/avif.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll

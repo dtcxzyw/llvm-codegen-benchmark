@@ -1,31 +1,31 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	zext.w	a2, a2
 	sh3add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	zext.w	a2, a2
 	sh3add	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	zext.w	a2, a2
 	sh3add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000059:                   # @func0000000000000059
+func00000000000000a9:                   # @func00000000000000a9
 	zext.w	a2, a2
 	sh3add	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	zext.w	a2, a2
 	sh3add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	sext.w	a2, a2
 	sh3add	a1, a1, a2
 	sltu	a0, a1, a0
@@ -36,12 +36,12 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	zext.w	a2, a2
 	sh3add	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	sext.w	a2, a2
 	sh3add	a1, a1, a2
 	sltu	a0, a0, a1

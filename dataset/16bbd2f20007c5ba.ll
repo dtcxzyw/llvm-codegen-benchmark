@@ -1,6 +1,5 @@
 
-; 115 occurrences:
-; abseil-cpp/optimized/cord_test.cc.ll
+; 93 occurrences:
 ; cmake/optimized/cmCMakePath.cxx.ll
 ; cmake/optimized/cmCMakePathCommand.cxx.ll
 ; cmake/optimized/cmGeneratorExpressionNode.cxx.ll
@@ -14,9 +13,6 @@
 ; gromacs/optimized/gmxcpp.cpp.ll
 ; gromacs/optimized/pdb2top.cpp.ll
 ; gromacs/optimized/qmmmoptions.cpp.ll
-; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
-; html5ever-rs/optimized/38n20yzo26sy51uu.ll
-; html5ever-rs/optimized/4e9vfrmeneic1jap.ll
 ; mold/optimized/cmdline.cc.ALPHA.cc.ll
 ; mold/optimized/cmdline.cc.ARM32.cc.ll
 ; mold/optimized/cmdline.cc.ARM64.cc.ll
@@ -92,6 +88,27 @@
 ; nix/optimized/file-system.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; pocketpy/optimized/io.cpp.ll
+; wasmedge/optimized/runtimeTool.cpp.ll
+; xgboost/optimized/result.cc.ll
+; yalantinglibs/optimized/client.cpp.ll
+; yalantinglibs/optimized/example.cpp.ll
+; yalantinglibs/optimized/file_client.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = and i64 %3, 3
+  %5 = icmp eq i64 %4, 0
+  %6 = getelementptr nusw i8, ptr %1, i64 -48
+  %7 = select i1 %5, ptr %6, ptr %0
+  ret ptr %7
+}
+
+; 27 occurrences:
+; abseil-cpp/optimized/cord_test.cc.ll
+; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
+; html5ever-rs/optimized/38n20yzo26sy51uu.ll
+; html5ever-rs/optimized/4e9vfrmeneic1jap.ll
 ; protobuf/optimized/api.pb.cc.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
@@ -110,18 +127,18 @@
 ; protobuf/optimized/unparser.cc.ll
 ; protobuf/optimized/untyped_message.cc.ll
 ; redis/optimized/dict.ll
-; wasmedge/optimized/runtimeTool.cpp.ll
-; xgboost/optimized/result.cc.ll
-; yalantinglibs/optimized/client.cpp.ll
-; yalantinglibs/optimized/example.cpp.ll
-; yalantinglibs/optimized/file_client.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = and i64 %3, 3
+  %4 = and i64 %3, 1
   %5 = icmp eq i64 %4, 0
-  %6 = getelementptr nusw i8, ptr %1, i64 -48
+  %6 = getelementptr nusw nuw i8, ptr %1, i64 12
   %7 = select i1 %5, ptr %6, ptr %0
   ret ptr %7
 }

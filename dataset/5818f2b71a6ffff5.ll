@@ -10,7 +10,7 @@
 ; postgres/optimized/zic.ll
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 1900
   %2 = srem i64 %1, 100
@@ -37,7 +37,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0) #0 {
+define i1 @func0000000000000026(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 4
   %2 = srem i64 %1, 7

@@ -8,7 +8,7 @@ entry:
   %4 = add i32 %3, 7
   %5 = add i32 %4, %1
   %6 = and i32 %5, -8
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -47,7 +47,7 @@ entry:
   %4 = add nuw nsw i32 %3, 127
   %5 = add nuw nsw i32 %4, %1
   %6 = and i32 %5, -64
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -78,7 +78,7 @@ entry:
   %4 = add nuw nsw i32 %3, 23
   %5 = add nsw i32 %4, %1
   %6 = and i32 %5, -8
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

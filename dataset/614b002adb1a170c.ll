@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = icmp ult i64 %4, 4294967296
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -32,10 +32,10 @@ entry:
 ; openssl/optimized/libcrypto-shlib-sm3.ll
 ; openssl/optimized/liblegacy-lib-md5_dgst.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = icmp ugt i64 %4, 63
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -44,10 +44,10 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000e8(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = icmp ugt i64 %4, 65535
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -56,10 +56,10 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_pci_pcie_sriov.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp ult i64 %4, 8
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -128,7 +128,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ugt i64 %4, 4294967295
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6

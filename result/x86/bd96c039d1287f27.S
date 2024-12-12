@@ -1,33 +1,28 @@
-func0000000000000063:                   # @func0000000000000063
-	leal	1(%rsi), %eax
-	testl	%edi, %edi
-	cmovel	%edi, %eax
-	retq
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	leal	1(%rsi), %ecx
 	cmpl	$5, %edi
 	movl	$5, %eax
 	cmovgel	%ecx, %eax
 	retq
-func000000000000006d:                   # @func000000000000006d
+func00000000000000cd:                   # @func00000000000000cd
 	leal	1(%rsi), %ecx
 	cmpl	$7, %edi
 	movl	$8, %eax
 	cmovgel	%ecx, %eax
 	retq
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	leal	1000(%rsi), %ecx
 	cmpl	$15, %edi
 	movl	$16, %eax
 	cmovael	%ecx, %eax
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000f1:                   # @func00000000000000f1
 	leal	1(%rsi), %ecx
 	cmpl	$56, %edi
 	movl	$8, %eax
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000049:                   # @func0000000000000049
+func0000000000000089:                   # @func0000000000000089
 	leal	1(%rsi), %ecx
 	xorl	%eax, %eax
 	cmpl	$4, %edi
@@ -45,29 +40,35 @@ func0000000000000003:                   # @func0000000000000003
 	cmpl	$63, %edi
 	cmovnel	%ecx, %eax
 	retq
+func00000000000000c3:                   # @func00000000000000c3
+	leal	3(%rsi), %ecx
+	testl	%edi, %edi
+	movl	$512, %eax                      # imm = 0x200
+	cmovnel	%ecx, %eax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	leal	4(%rsi), %eax
 	testl	%edi, %edi
 	cmovel	%edi, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	leal	-1(%rsi), %eax
 	testl	%edi, %edi
 	cmovel	%edi, %eax
 	retq
-func0000000000000069:                   # @func0000000000000069
+func00000000000000c9:                   # @func00000000000000c9
 	leal	13(%rsi), %ecx
 	cmpl	$20, %edi
 	movl	$32, %eax
 	cmovael	%ecx, %eax
 	retq
-func000000000000002d:                   # @func000000000000002d
+func000000000000004d:                   # @func000000000000004d
 	leal	-1(%rsi), %ecx
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	cmovnsl	%ecx, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	leal	-2(%rsi), %ecx
 	testl	%edi, %edi
 	movl	$30, %eax

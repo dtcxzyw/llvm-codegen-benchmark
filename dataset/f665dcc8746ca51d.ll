@@ -1,11 +1,15 @@
 
-; 18 occurrences:
+; 22 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
 ; mold/optimized/rust-demangle.c.ll
 ; php/optimized/var_unserializer.ll
 ; php/optimized/zend_operators.ll
+; spdlog/optimized/spdlog.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/oids.c.ll
 ; xgboost/optimized/gblinear.cc.ll
@@ -44,7 +48,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; llvm/optimized/DLangDemangle.cpp.ll
 ; Function Attrs: nounwind

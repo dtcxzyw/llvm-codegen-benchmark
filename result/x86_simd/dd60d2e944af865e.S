@@ -55,12 +55,27 @@ func0000000000000007:                   # @func0000000000000007
 	vzeroupper
 	retq
 .LCPI4_0:
+	.quad	0x3d719799812dea11              # double 9.9999999999999998E-13
+func0000000000000004:                   # @func0000000000000004
+	vpsllw	$7, %xmm0, %xmm0
+	vpsllw	$7, %xmm1, %xmm1
+	vpxor	%xmm4, %xmm4, %xmm4
+	vbroadcastsd	.LCPI4_0(%rip), %zmm5   # zmm5 = [9.9999999999999998E-13,9.9999999999999998E-13,9.9999999999999998E-13,9.9999999999999998E-13,9.9999999999999998E-13,9.9999999999999998E-13,9.9999999999999998E-13,9.9999999999999998E-13]
+	vcmpltpd	%zmm2, %zmm5, %k0
+	vcmpltpd	%zmm3, %zmm5, %k1
+	kunpckbw	%k0, %k1, %k1
+	vpcmpgtb	%xmm1, %xmm4, %k1 {%k1}
+	vpcmpgtb	%xmm0, %xmm4, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
 	.quad	0x7ff0000000000000              # double +Inf
 func0000000000000006:                   # @func0000000000000006
 	vpsllw	$7, %xmm0, %xmm0
 	vpsllw	$7, %xmm1, %xmm1
 	vpxor	%xmm4, %xmm4, %xmm4
-	vbroadcastsd	.LCPI4_0(%rip), %zmm5   # zmm5 = [+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf]
+	vbroadcastsd	.LCPI5_0(%rip), %zmm5   # zmm5 = [+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf]
 	vcmpneq_oqpd	%zmm5, %zmm2, %k0
 	vcmpneq_oqpd	%zmm5, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k1
@@ -76,21 +91,6 @@ func0000000000000001:                   # @func0000000000000001
 	vxorpd	%xmm5, %xmm5, %xmm5
 	vcmpunordpd	%zmm5, %zmm2, %k0
 	vcmpunordpd	%zmm5, %zmm3, %k1
-	kunpckbw	%k0, %k1, %k1
-	vpcmpgtb	%xmm1, %xmm4, %k1 {%k1}
-	vpcmpgtb	%xmm0, %xmm4, %k0 {%k1}
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI6_0:
-	.quad	0xbd71979980000000              # double -9.999999960041972E-13
-func0000000000000004:                   # @func0000000000000004
-	vpsllw	$7, %xmm0, %xmm0
-	vpsllw	$7, %xmm1, %xmm1
-	vpxor	%xmm4, %xmm4, %xmm4
-	vbroadcastsd	.LCPI6_0(%rip), %zmm5   # zmm5 = [-9.999999960041972E-13,-9.999999960041972E-13,-9.999999960041972E-13,-9.999999960041972E-13,-9.999999960041972E-13,-9.999999960041972E-13,-9.999999960041972E-13,-9.999999960041972E-13]
-	vcmpltpd	%zmm2, %zmm5, %k0
-	vcmpltpd	%zmm3, %zmm5, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpcmpgtb	%xmm1, %xmm4, %k1 {%k1}
 	vpcmpgtb	%xmm0, %xmm4, %k0 {%k1}

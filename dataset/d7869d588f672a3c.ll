@@ -3,7 +3,7 @@
 ; graphviz/optimized/triang.c.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000062(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000000c2(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
@@ -19,7 +19,7 @@ entry:
 ; meshlab/optimized/io_x3d.cpp.ll
 ; opencv/optimized/rapid.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000063(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000000c3(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1

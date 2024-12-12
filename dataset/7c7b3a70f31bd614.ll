@@ -10,10 +10,9 @@ entry:
   ret i8 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll
-; nuttx/optimized/fs_blockpartition.c.ll
 ; oiio/optimized/sgioutput.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0, i64 %1) #0 {

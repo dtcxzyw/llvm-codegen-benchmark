@@ -4,7 +4,7 @@ func0000000000000011:                   # @func0000000000000011
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func000000000000002b:                   # @func000000000000002b
 	sext.w	a3, a1
@@ -12,7 +12,7 @@ func000000000000002b:                   # @func000000000000002b
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
 	or	a1, a1, a2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a3, a1
@@ -27,5 +27,5 @@ func0000000000000031:                   # @func0000000000000031
 	czero.eqz	a1, a1, a3
 	czero.nez	a2, a2, a3
 	or	a1, a1, a2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret

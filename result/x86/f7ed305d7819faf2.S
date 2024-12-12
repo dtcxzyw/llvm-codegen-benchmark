@@ -1,4 +1,4 @@
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000003c1:                   # @func00000000000003c1
 	incb	%sil
 	andb	$31, %sil
 	negb	%sil

@@ -1,6 +1,7 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/cmdPlugin.c.ll
+; boost/optimized/parser_utils.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; hermes/optimized/escape.cpp.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
@@ -16,8 +17,7 @@ entry:
   ret i8 %4
 }
 
-; 6 occurrences:
-; linux/optimized/uprobes.ll
+; 5 occurrences:
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
@@ -62,7 +62,7 @@ entry:
 define i8 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }
@@ -87,7 +87,7 @@ entry:
 define i8 @func000000000000001e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw i32 %3 to i8
   ret i8 %4
 }
@@ -114,7 +114,7 @@ entry:
 define i8 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }
@@ -137,12 +137,13 @@ entry:
 define i8 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }
 
 ; 42 occurrences:
+; clamav/optimized/str.c.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/base64.c.ll
 ; cpython/optimized/assemble.ll
@@ -157,7 +158,6 @@ entry:
 ; linux/optimized/mlme.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/transport.ll
-; linux/optimized/uuid.ll
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; oiio/optimized/icoinput.cpp.ll
 ; oiio/optimized/pnginput.cpp.ll
@@ -189,7 +189,7 @@ entry:
 define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }
@@ -218,19 +218,18 @@ entry:
   ret i8 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/mpmPre.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sfmCnf.c.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }

@@ -26,21 +26,21 @@ func0000000000000008:                   # @func0000000000000008
 .LBB3_2:                                # %entry
 	mv	a0, a1
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	sext.w	a2, a0
 	blt	a1, a2, .LBB4_2
 	mv	a1, a0
 .LBB4_2:                                # %entry
 	mv	a0, a1
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	sext.w	a2, a0
 	blt	a2, a1, .LBB5_2
 	mv	a1, a0
 .LBB5_2:                                # %entry
 	mv	a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	sext.w	a2, a0
 	bltu	a1, a2, .LBB6_2
 	mv	a1, a0

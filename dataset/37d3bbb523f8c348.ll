@@ -1,4 +1,16 @@
 
+; 1 occurrences:
+; qemu/optimized/target_riscv_pmp.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = shl nuw nsw i32 %3, 4
+  %5 = zext nneg i32 %4 to i64
+  %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
 ; 27 occurrences:
 ; assimp/optimized/ColladaExporter.cpp.ll
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
@@ -28,12 +40,12 @@
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl i32 %3, 2
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw double, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw double, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -49,12 +61,12 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; z3/optimized/small_object_allocator.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -62,12 +74,12 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl nuw i32 %3, 2
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -75,12 +87,12 @@ entry:
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000006f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nsw i32 %3, 2
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -90,24 +102,36 @@ entry:
 ; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/tiff.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl nsw i32 %3, 2
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i16, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; linux/optimized/ich8lan.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007c(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = shl nuw nsw i32 %3, 2
+  %5 = zext nneg i32 %4 to i64
+  %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

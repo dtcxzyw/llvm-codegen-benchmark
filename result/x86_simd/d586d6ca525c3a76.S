@@ -1,11 +1,10 @@
 .LCPI0_0:
-	.long	1461                            # 0x5b5
-.LCPI0_1:
-	.long	7012800                         # 0x6b01c0
+	.long	3864292196                      # 0xe6546b64
 func0000000000000000:                   # @func0000000000000000
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpmulld	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
-	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
+	vpslld	$2, %ymm0, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	4433                            # 0x1151
@@ -100,28 +99,27 @@ func000000000000003d:                   # @func000000000000003d
 	vpaddd	.LCPI11_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI12_0:
-	.long	4294967159                      # 0xffffff77
-.LCPI12_1:
-	.long	136                             # 0x88
-func0000000000000013:                   # @func0000000000000013
+	.long	3600                            # 0xe10
+func0000000000000030:                   # @func0000000000000030
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpmulld	.LCPI12_0(%rip){1to8}, %ymm0, %ymm0
-	vpaddd	.LCPI12_1(%rip){1to8}, %ymm0, %ymm0
+	vpbroadcastd	.LCPI12_0(%rip), %ymm1  # ymm1 = [3600,3600,3600,3600,3600,3600,3600,3600]
+	vpmulld	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI13_0:
-	.long	100                             # 0x64
+	.long	4294967159                      # 0xffffff77
 .LCPI13_1:
-	.long	4294965396                      # 0xfffff894
-func000000000000000d:                   # @func000000000000000d
+	.long	136                             # 0x88
+func0000000000000013:                   # @func0000000000000013
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI13_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI13_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI14_0:
-	.long	10                              # 0xa
+	.long	100                             # 0x64
 .LCPI14_1:
-	.long	15                              # 0xf
-func0000000000000030:                   # @func0000000000000030
+	.long	4294965396                      # 0xfffff894
+func000000000000000d:                   # @func000000000000000d
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI14_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI14_1(%rip){1to8}, %ymm0, %ymm0

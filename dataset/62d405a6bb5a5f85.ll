@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; libquic/optimized/sample_vector.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = add nsw i64 %2, -1
@@ -17,7 +17,7 @@ entry:
 ; openspiel/optimized/gin_rummy_utils.cc.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000003a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = add nsw i64 %2, -3

@@ -10,7 +10,7 @@ entry:
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
   %4 = lshr i64 %1, 32
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   %6 = and i64 %5, %3
   ret i64 %6
 }
@@ -24,7 +24,7 @@ entry:
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
   %4 = lshr i64 %1, 32
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = and i64 %5, %3
   ret i64 %6
 }

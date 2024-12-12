@@ -1,11 +1,10 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; flac/optimized/metadata_iterators.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/cdrom.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/vt.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -14,6 +13,7 @@
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; openjdk/optimized/pngrtran.ll
 ; openjdk/optimized/shenandoahHeapRegionCounters.ll
@@ -28,13 +28,14 @@
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/packet-ebhscr.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 2
   %4 = and i8 %3, 24
   %5 = and i8 %1, 4
-  %6 = or disjoint i8 %5, %0
+  %6 = or disjoint i8 %0, %5
   %7 = or disjoint i8 %6, %4
   ret i8 %7
 }

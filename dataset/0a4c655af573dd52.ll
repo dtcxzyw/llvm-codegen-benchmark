@@ -15,7 +15,8 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll

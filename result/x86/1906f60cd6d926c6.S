@@ -70,14 +70,20 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%edi, %edx
 	movslq	%edx, %rax
 	retq
+func0000000000000011:                   # @func0000000000000011
+	decl	%edx
+	imull	%esi, %edx
+	addl	%edi, %edx
+	movslq	%edx, %rax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	decl	%edx
 	imull	%esi, %edx
 	addl	%edi, %edx
 	movslq	%edx, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	decl	%edx
+func0000000000000020:                   # @func0000000000000020
+	incl	%edx
 	imull	%esi, %edx
 	addl	%edi, %edx
 	movslq	%edx, %rax

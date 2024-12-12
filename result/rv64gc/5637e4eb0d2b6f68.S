@@ -24,11 +24,9 @@ func0000000000000007:                   # @func0000000000000007
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-.LCPI4_0:
-	.word	0x4e6e6b28                      # float 1.0E+9
 func0000000000000002:                   # @func0000000000000002
-	lui	a2, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a2)
+	lui	a2, 259072
+	fmv.w.x	fa5, a2
 	flt.s	a2, fa0, fa5
 	and	a0, a0, a1
 	and	a0, a0, a2

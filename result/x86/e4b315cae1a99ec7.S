@@ -1,9 +1,3 @@
-func0000000000000010:                   # @func0000000000000010
-	movq	%rdi, %rax
-	cmpl	$2, %edx
-	cmovbq	%rsi, %rax
-	orq	$16, %rax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	movq	%rdi, %rax
 	testl	%edx, %edx

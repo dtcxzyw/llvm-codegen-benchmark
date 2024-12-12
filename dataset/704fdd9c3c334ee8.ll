@@ -4,7 +4,7 @@
 ; rocksdb/optimized/cache_dump_load_impl.cc.ll
 ; rocksdb/optimized/io_tracer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nuw i64 %0, %2
@@ -13,7 +13,7 @@ entry:
   ret i1 %5
 }
 
-; 40 occurrences:
+; 38 occurrences:
 ; darktable/optimized/introspection_temperature.c.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/CompressionContextPoolSingletons.cpp.ll
@@ -30,7 +30,6 @@ entry:
 ; folly/optimized/IOThreadPoolDeadlockDetectorObserver.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -53,9 +52,8 @@ entry:
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/spades.cc.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nsw i64 %0, %2
@@ -67,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/AsyncBase.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nuw nsw i64 %0, %2
@@ -96,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 %0, %2

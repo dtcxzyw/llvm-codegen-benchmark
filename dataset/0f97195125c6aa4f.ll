@@ -9,7 +9,7 @@
 define i16 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i16
   ret i16 %4
 }
@@ -20,7 +20,7 @@ entry:
 define i16 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 512
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i16
   ret i16 %4
 }
@@ -31,17 +31,6 @@ entry:
 define i16 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 5
-  %3 = and i1 %2, %0
-  %4 = zext i1 %3 to i16
-  ret i16 %4
-}
-
-; 1 occurrences:
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000008(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 65536
   %3 = and i1 %2, %0
   %4 = zext i1 %3 to i16
   ret i16 %4

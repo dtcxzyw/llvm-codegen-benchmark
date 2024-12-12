@@ -4,13 +4,13 @@
 ; jq/optimized/jv_dtoa.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i32 %0, i64 %1, ptr %2) #0 {
+define i32 @func00000000000000c1(i32 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %.neg = sub i64 %1, %4
   %.neg1 = trunc i64 %.neg to i32
-  %5 = add i32 %.neg1, %0
+  %5 = add i32 %0, %.neg1
   ret i32 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %.neg = sub i64 %1, %4
   %.neg1 = trunc i64 %.neg to i32
-  %5 = add i32 %.neg1, %0
+  %5 = add i32 %0, %.neg1
   ret i32 %5
 }
 
@@ -44,7 +44,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %.neg = sub i64 %1, %4
   %.neg1 = trunc i64 %.neg to i32
-  %5 = add i32 %.neg1, %0
+  %5 = add i32 %0, %.neg1
   ret i32 %5
 }
 

@@ -19,12 +19,43 @@ func0000000000000015:                   # @func0000000000000015
 	vpandq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.quad	4294967296                      # 0x100000000
+	.quad	65280                           # 0xff00
 .LCPI2_1:
-	.quad	30064771072                     # 0x700000000
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
 func0000000000000000:                   # @func0000000000000000
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpsllq	$32, %ymm0, %ymm0
+	vpsllq	$8, %ymm0, %ymm0
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
-	vpandq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
+	vpandq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	retq

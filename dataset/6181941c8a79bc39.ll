@@ -34,8 +34,10 @@ entry:
   ret i32 %.neg1
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/unistr.ll

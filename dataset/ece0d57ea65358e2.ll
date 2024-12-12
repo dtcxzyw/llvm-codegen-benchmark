@@ -1,16 +1,12 @@
 
-; 7 occurrences:
-; cmake/optimized/frm_driver.c.ll
-; icu/optimized/package.ll
-; openjdk/optimized/methodData.ll
+; 3 occurrences:
 ; openjdk/optimized/nmethod.ll
 ; openssl/optimized/libcrypto-lib-cmp_util.ll
 ; openssl/optimized/libcrypto-shlib-cmp_util.ll
-; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000020a(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000060a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = trunc i64 %5 to i32
@@ -19,14 +15,29 @@ entry:
 }
 
 ; 4 occurrences:
-; git/optimized/apply.ll
+; cmake/optimized/frm_driver.c.ll
 ; icu/optimized/package.ll
+; openjdk/optimized/methodData.ll
+; zxing/optimized/DMHighLevelEncoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000040a(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  %6 = trunc i64 %5 to i32
+  %7 = icmp sgt i32 %6, 7
+  ret i1 %7
+}
+
+; 3 occurrences:
+; git/optimized/apply.ll
 ; oiio/optimized/strutil.cpp.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000601(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = trunc i64 %5 to i32
@@ -38,7 +49,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000406(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
@@ -51,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000404(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
@@ -75,9 +86,8 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/skbuff.ll
-; linux/optimized/tpm.ll
 ; redis/optimized/read.ll
 ; wireshark/optimized/dct3trace.c.ll
 ; Function Attrs: nounwind
@@ -128,6 +138,19 @@ entry:
   %5 = sub i64 %0, %4
   %6 = trunc i64 %5 to i32
   %7 = icmp ugt i32 %6, 325
+  ret i1 %7
+}
+
+; 1 occurrences:
+; icu/optimized/package.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000401(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  %6 = trunc i64 %5 to i32
+  %7 = icmp eq i32 %6, 0
   ret i1 %7
 }
 

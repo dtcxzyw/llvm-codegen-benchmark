@@ -1,28 +1,32 @@
 
-%"struct.folly::Subprocess::Pipe.2570912" = type <{ %"class.folly::File.2570905", i32, i32, i8, [3 x i8] }>
-%"class.folly::File.2570905" = type <{ i32, i8, [3 x i8] }>
+%"struct.folly::Subprocess::Pipe.2685269" = type <{ %"class.folly::File.2685261", i32, i32, i8, [3 x i8] }>
+%"class.folly::File.2685261" = type <{ i32, i8, [3 x i8] }>
+%struct.Gia_Obj_t_.2876078 = type <{ i64, i32 }>
 
-; 29 occurrences:
+; 32 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/giaShrink.c.ll
 ; abc/optimized/giaShrink6.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/process.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/topology.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; git/optimized/sequencer.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
-; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; nlohmann_json/optimized/unit-ordered_map.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/JvmLauncher.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/compactHashtable.ll
 ; openjdk/optimized/debugInit.ll
-; openspiel/optimized/morpion_solitaire.cc.ll
 ; openusd/optimized/dataSourceMapped.cpp.ll
 ; php/optimized/block_pass.ll
 ; php/optimized/dfa_pass.ll
@@ -36,15 +40,13 @@
 define i64 @func0000000000000018(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2570912", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2685269", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   ret i64 %6
 }
 
-; 237 occurrences:
-; abc/optimized/giaIso.c.ll
-; eastl/optimized/EASprintfCore.cpp.ll
+; 232 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -62,8 +64,6 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; hyperscan/optimized/Parser.cpp.ll
-; hyperscan/optimized/control_verbs.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -135,7 +135,6 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; luajit/optimized/minilua.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -281,17 +280,33 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = ashr i64 %2, 32
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %5, %0
+  ret i64 %6
+}
+
+; 5 occurrences:
+; abc/optimized/giaIso.c.ll
+; eastl/optimized/EASprintfCore.cpp.ll
+; hyperscan/optimized/Parser.cpp.ll
+; hyperscan/optimized/control_verbs.cpp.ll
+; luajit/optimized/minilua.ll
+; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw %struct.Gia_Obj_t_.2876078, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   ret i64 %6
 }
 
 ; 4 occurrences:
-; linux/optimized/filter.ll
+; git/optimized/sequencer.ll
 ; linux/optimized/memory.ll
 ; node/optimized/libnode.node.ll
 ; quickjs/optimized/quickjs.ll

@@ -17,7 +17,7 @@ func0000000000000008:                   # @func0000000000000008
 	vfcvt.f.x.v	v10, v10
 	fli.s	fa5, 1.52587890625e-05
 	vfmul.vf	v10, v10, fa5
-	vmfeq.vv	v0, v10, v8
+	vmfeq.vv	v0, v8, v10
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -60,5 +60,5 @@ func0000000000000007:                   # @func0000000000000007
 	vfcvt.f.x.v	v10, v10
 	fli.s	fa5, 1.52587890625e-05
 	vfmul.vf	v10, v10, fa5
-	vmfne.vv	v0, v10, v8
+	vmfne.vv	v0, v8, v10
 	ret

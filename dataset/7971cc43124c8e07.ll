@@ -27,19 +27,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/huf_decompress.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 8
-  %5 = add i32 %1, 33554432
-  %6 = or disjoint i32 %4, %5
-  %7 = or disjoint i32 %6, %0
-  ret i32 %7
-}
-
-; 1 occurrences:
 ; postgres/optimized/utf8_and_gb18030.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007e(i32 %0, i32 %1, i8 %2) #0 {

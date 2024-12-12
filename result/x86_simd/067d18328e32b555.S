@@ -22,7 +22,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	1                               # 0x1
 func0000000000000007:                   # @func0000000000000007
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
@@ -50,7 +50,7 @@ func000000000000003d:                   # @func000000000000003d
 	.long	1                               # 0x1
 func0000000000000003:                   # @func0000000000000003
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
@@ -62,7 +62,7 @@ func000000000000003c:                   # @func000000000000003c
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
 	vpandd	.LCPI6_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI7_0:
 	.long	7                               # 0x7
@@ -72,7 +72,7 @@ func0000000000000030:                   # @func0000000000000030
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	.LCPI7_0(%rip){1to8}, %ymm1, %ymm1
 	vpandd	.LCPI7_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI8_0:
 	.long	23                              # 0x17
@@ -82,5 +82,5 @@ func0000000000000034:                   # @func0000000000000034
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	.LCPI8_0(%rip){1to8}, %ymm1, %ymm1
 	vpandd	.LCPI8_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

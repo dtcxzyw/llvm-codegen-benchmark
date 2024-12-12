@@ -4,7 +4,7 @@
 ; qemu/optimized/tcg.c.ll
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i64 %0) #0 {
+define i8 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 136
   %2 = icmp ult i64 %1, 256

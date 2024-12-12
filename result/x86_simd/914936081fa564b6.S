@@ -1,4 +1,4 @@
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	vpmovqw	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm0, %xmm0
@@ -6,7 +6,7 @@ func00000000000000a4:                   # @func00000000000000a4
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	vpmovqw	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm0, %xmm0
@@ -14,7 +14,7 @@ func0000000000000084:                   # @func0000000000000084
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpmovqw	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm0, %xmm0
@@ -22,7 +22,7 @@ func0000000000000024:                   # @func0000000000000024
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	vpmovqw	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm0, %xmm0
@@ -38,14 +38,6 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000021:                   # @func0000000000000021
-	vpmovqw	%ymm1, %xmm1
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpsubw	%xmm2, %xmm0, %xmm0
-	vpcmpeqw	%xmm1, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
 func0000000000000001:                   # @func0000000000000001
 	vpmovqw	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -54,7 +46,15 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000041:                   # @func0000000000000041
+	vpmovqw	%ymm1, %xmm1
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpsubw	%xmm2, %xmm0, %xmm0
+	vpcmpeqw	%xmm1, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000184:                   # @func0000000000000184
 	vpmovqw	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddw	%xmm2, %xmm0, %xmm0

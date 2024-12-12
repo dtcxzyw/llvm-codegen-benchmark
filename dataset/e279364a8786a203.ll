@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; redis/optimized/geohash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001042(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000004082(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -32
   %4 = icmp eq ptr %1, null

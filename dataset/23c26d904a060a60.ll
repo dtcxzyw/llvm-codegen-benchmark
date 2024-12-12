@@ -5,7 +5,7 @@
 ; abc/optimized/aigRet.c.ll
 ; git/optimized/diff.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %0, 1
   %4 = select i1 %3, i32 2, i32 %2
@@ -18,7 +18,7 @@ entry:
 ; libwebp/optimized/sharpyuv.c.ll
 ; postgres/optimized/nbtutils.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %0, 0
   %4 = select i1 %3, i32 1, i32 %2

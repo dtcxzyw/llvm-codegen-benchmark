@@ -9,7 +9,7 @@
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32
   %3 = icmp eq i16 %2, 0
@@ -19,8 +19,7 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
-; git/optimized/diffcore-rename.ll
+; 8 occurrences:
 ; icu/optimized/serv.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -30,7 +29,7 @@ entry:
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
 ; wireshark/optimized/packet-ieee17221.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 256
   %3 = icmp eq i16 %2, 0
@@ -45,7 +44,7 @@ entry:
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16
   %3 = icmp ne i16 %2, 0
@@ -59,7 +58,7 @@ entry:
 ; cvc5/optimized/ceg_arith_instantiator.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32
   %3 = icmp ne i16 %2, 0

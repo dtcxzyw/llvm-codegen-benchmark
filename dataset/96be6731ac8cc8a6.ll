@@ -7,7 +7,7 @@
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; rocksdb/optimized/lru_cache.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -60
   %3 = icmp ult i32 %2, -61
@@ -15,14 +15,13 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
-; arrow/optimized/key_map.cc.ll
+; 4 occurrences:
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; openssl/optimized/openssl-bin-passwd.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -3
   %3 = icmp ult i32 %2, 2
@@ -34,20 +33,22 @@ entry:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 63
   %3 = select i1 %2, i64 0, i64 %0
   ret i64 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; linux/optimized/af_packet.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/DataLayout.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
@@ -63,14 +64,14 @@ entry:
 ; tinyrenderer/optimized/model.cpp.ll
 ; tinyrenderer/optimized/our_gl.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = select i1 %2, i64 0, i64 %0
   ret i64 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; linux/optimized/audit_tree.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/cgroup.ll
@@ -79,12 +80,13 @@ entry:
 ; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 2
+  %2 = add i32 %1, -1
   %3 = icmp slt i32 %2, 0
-  %4 = select i1 %3, i64 -1, i64 %0
+  %4 = select i1 %3, i64 0, i64 %0
   ret i64 %4
 }
 
@@ -114,7 +116,7 @@ entry:
 ; hyperscan/optimized/stream.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 63
   %3 = select i1 %2, i64 0, i64 %0

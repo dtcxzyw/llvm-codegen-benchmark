@@ -23,7 +23,6 @@
 ; hyperscan/optimized/smallwrite_build.cpp.ll
 ; libquic/optimized/d1_both.c.ll
 ; lief/optimized/constant_time.c.ll
-; linux/optimized/ht.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/nf_conntrack_proto_tcp.ll
 ; linux/optimized/pata_amd.ll
@@ -39,12 +38,13 @@
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %2, 1
   %4 = and i8 %3, %1
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

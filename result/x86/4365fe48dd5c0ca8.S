@@ -1,24 +1,24 @@
 func000000000000000a:                   # @func000000000000000a
 	vcvttsd2si	%xmm0, %eax
-	cmpl	%esi, %eax
-	setl	%al
+	cmpl	%eax, %esi
+	setg	%al
 	andb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vcvttsd2si	%xmm0, %eax
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
 	sete	%al
 	andb	%dil, %al
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vcvttsd2si	%xmm0, %eax
-	cmpl	%esi, %eax
-	setge	%al
+	cmpl	%eax, %esi
+	setle	%al
 	andb	%dil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	vcvttsd2si	%xmm0, %eax
-	cmpl	%esi, %eax
-	setg	%al
+	cmpl	%eax, %esi
+	setl	%al
 	andb	%dil, %al
 	retq

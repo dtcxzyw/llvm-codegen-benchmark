@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/amapRule.c.ll
 ; c3c/optimized/diagnostics.c.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
@@ -8,7 +8,6 @@
 ; proxygen/optimized/HeaderTable.cpp.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; rocksdb/optimized/plain_table_bloom.cc.ll
-; wireshark/optimized/packet-dcm.c.ll
 ; wireshark/optimized/packet-tipc.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {

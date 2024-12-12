@@ -26,16 +26,22 @@ func0000000000000009:                   # @func0000000000000009
 	vpsrad	$1, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
+func0000000000000001:                   # @func0000000000000001
+	vpaddd	%ymm1, %ymm1, %ymm2
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpsrad	$10, %ymm0, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
+	retq
 func0000000000000014:                   # @func0000000000000014
 	vpsrad	$24, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm0, %ymm2
 	vpaddd	%ymm2, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI5_0:
+.LCPI6_0:
 	.long	4294966896                      # 0xfffffe70
 func0000000000000015:                   # @func0000000000000015
 	vpsrad	$16, %ymm1, %ymm1
-	vpmulld	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
+	vpmulld	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

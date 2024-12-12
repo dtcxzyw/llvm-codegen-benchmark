@@ -1,26 +1,24 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	cmlt	v3.4s, v1.4s, #0
-	movi	v2.4s, #3
-	usra	v1.4s, v3.4s, #28
-	sshr	v1.4s, v1.4s, #4
-	mla	v0.4s, v1.4s, v2.4s
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	add	w8, w1, #15
+	cmp	w1, #0
+	csel	w8, w8, w1, lt
+	asr	w8, w8, #4
+	add	w8, w8, w8, lsl #1
+	add	w8, w8, w0
+	sxtw	x0, w8
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	mov	w8, #43691                      // =0xaaab
 	movk	w8, #10922, lsl #16
-	dup	v2.4s, w8
-	smull2	v3.2d, v1.4s, v2.4s
-	smull	v1.2d, v1.2s, v2.2s
-	movi	v2.4s, #5
-	uzp2	v1.4s, v1.4s, v3.4s
-	usra	v1.4s, v1.4s, #31
-	mla	v0.4s, v1.4s, v2.4s
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	smull	x8, w1, w8
+	lsr	x9, x8, #63
+	lsr	x8, x8, #32
+	add	w8, w8, w9
+	add	w8, w8, w8, lsl #2
+	add	w8, w0, w8
+	sxtw	x0, w8
 	ret
                                         // -- End function

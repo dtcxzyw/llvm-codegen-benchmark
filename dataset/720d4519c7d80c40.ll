@@ -1,9 +1,8 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; clamav/optimized/fmap.c.ll
 ; hdf5/optimized/H5MF.c.ll
 ; hdf5/optimized/H5MFaggr.c.ll
-; hdf5/optimized/H5MFsection.c.ll
 ; nuttx/optimized/circbuf.c.ll
 ; openssl/optimized/libssl-lib-quic_rstream.ll
 ; openssl/optimized/libssl-lib-quic_sstream.ll

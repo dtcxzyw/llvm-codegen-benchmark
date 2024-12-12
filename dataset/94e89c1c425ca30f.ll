@@ -21,6 +21,17 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; opencv/optimized/min_enclosing_triangle.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i1 %1, double %2) #0 {
+entry:
+  %3 = fcmp ogt double %2, 0.000000e+00
+  %4 = select i1 %0, i1 %3, i1 %1
+  ret i1 %4
+}
+
 ; 4 occurrences:
 ; opencv/optimized/erfilter.cpp.ll
 ; openspiel/optimized/value_iteration.cc.ll
@@ -54,16 +65,6 @@ entry:
 define i1 @func000000000000000e(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp ord double %2, 0.000000e+00
-  %4 = select i1 %0, i1 %3, i1 %1
-  ret i1 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/min_enclosing_triangle.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, double %2) #0 {
-entry:
-  %3 = fcmp ogt double %2, 0.000000e+00
   %4 = select i1 %0, i1 %3, i1 %1
   ret i1 %4
 }

@@ -5,7 +5,7 @@
 ; openssl/optimized/quic_stream_test-bin-quic_stream_test.ll
 ; ruby/optimized/md5.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000e0(i64 %0, i64 %1) #0 {
+define i64 @func00000000000001a0(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, %0
   %3 = icmp ugt i64 %2, 64
@@ -20,10 +20,10 @@ entry:
 ; openssl/optimized/evp_xof_test-bin-evp_xof_test.ll
 ; ruby/optimized/md5.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000003e3(i64 %0, i64 %1) #0 {
+define i64 @func00000000000007e3(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, %0
-  %3 = icmp ugt i64 %2, 64
+  %3 = icmp samesign ugt i64 %2, 64
   %4 = sub nuw nsw i64 64, %0
   %5 = select i1 %3, i64 %4, i64 %1
   %6 = add nuw nsw i64 %5, %0

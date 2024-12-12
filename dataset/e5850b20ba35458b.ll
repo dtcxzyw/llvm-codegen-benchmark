@@ -1,12 +1,12 @@
 
-%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2493385" = type { i8, i8, [6 x i8] }
-%"struct.llvm::reassociate::ValueEntry.3156707" = type { i32, ptr }
-%union.LWLockPadded.3466997 = type { %struct.LWLock.3466998, [112 x i8] }
-%struct.LWLock.3466998 = type { i16, %struct.pg_atomic_uint32.3466999, %struct.proclist_head.3467000 }
-%struct.pg_atomic_uint32.3466999 = type { i32 }
-%struct.proclist_head.3467000 = type { i32, i32 }
+%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686" = type { i8, i8, [6 x i8] }
+%"struct.llvm::reassociate::ValueEntry.3349344" = type { i32, ptr }
+%union.LWLockPadded.3651208 = type { %struct.LWLock.3651209, [112 x i8] }
+%struct.LWLock.3651209 = type { i16, %struct.pg_atomic_uint32.3651210, %struct.proclist_head.3651211 }
+%struct.pg_atomic_uint32.3651210 = type { i32 }
+%struct.proclist_head.3651211 = type { i32, i32 }
 
-; 323 occurrences:
+; 324 occurrences:
 ; cvc5/optimized/abduction_solver.cpp.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/addition.cpp.ll
@@ -321,6 +321,7 @@
 ; luajit/optimized/lj_snap_dyn.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
+; opencv/optimized/chessboard.cpp.ll
 ; php/optimized/phpdbg_bp.ll
 ; php/optimized/zend_accelerator_util_funcs.ll
 ; raylib/optimized/raudio.c.ll
@@ -331,17 +332,20 @@
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; z3/optimized/smt_case_split_queue.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2493385", ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686", ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 14 occurrences:
+; 17 occurrences:
 ; abc/optimized/dauTree.c.ll
+; abc/optimized/satSolver.c.ll
+; abc/optimized/satSolver2.c.ll
+; abc/optimized/satSolver3.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; icu/optimized/umutablecptrie.ll
@@ -356,12 +360,12 @@ entry:
 ; php/optimized/zend_file_cache.ll
 ; redis/optimized/lvm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1073741823
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -385,12 +389,12 @@ entry:
 ; llvm/optimized/InstCombineNegator.cpp.ll
 ; llvm/optimized/InstCombinePHI.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147483647
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i16, ptr %1, i64 %4
-  %6 = icmp ne ptr %5, %0
+  %5 = getelementptr nusw nuw i16, ptr %1, i64 %4
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
@@ -400,24 +404,24 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -8
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/Reassociate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %"struct.llvm::reassociate::ValueEntry.3156707", ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw %"struct.llvm::reassociate::ValueEntry.3349344", ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -436,36 +440,36 @@ entry:
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; wireshark/optimized/packet-p_mul.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; postgres/optimized/predicate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %union.LWLockPadded.3466997, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %5 = getelementptr %union.LWLockPadded.3651208, ptr %1, i64 %4
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; postgres/optimized/predicate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %union.LWLockPadded.3466997, ptr %1, i64 %4
-  %6 = icmp ult ptr %5, %0
+  %5 = getelementptr %union.LWLockPadded.3651208, ptr %1, i64 %4
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 

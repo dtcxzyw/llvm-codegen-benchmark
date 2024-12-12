@@ -1,5 +1,5 @@
 
-; 277 occurrences:
+; 273 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -71,7 +71,6 @@
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; faiss/optimized/hamming.cpp.ll
-; git/optimized/pq.ll
 ; git/optimized/sequencer.ll
 ; git/optimized/stack.ll
 ; graphviz/optimized/DotIO.c.ll
@@ -168,7 +167,6 @@
 ; ocio/optimized/GradingBSplineCurve.cpp.ll
 ; oiio/optimized/icoinput.cpp.ll
 ; openblas/optimized/dbdsqr.c.ll
-; openblas/optimized/dstein.c.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; opencv/optimized/bundle.cpp.ll
 ; opencv/optimized/checker_model.cpp.ll
@@ -184,7 +182,6 @@
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/fundamental_solver.cpp.ll
 ; opencv/optimized/homography_solver.cpp.ll
-; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/motion_estimators.cpp.ll
 ; opencv/optimized/motion_stabilizing.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
@@ -211,7 +208,6 @@
 ; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
 ; openmpi/optimized/flatten.ll
-; openmpi/optimized/heap_sort.ll
 ; openmpi/optimized/io_ompio.ll
 ; openmpi/optimized/nbc_iallreduce.ll
 ; openmpi/optimized/ompi_datatype_args.ll
@@ -286,7 +282,7 @@ entry:
   ret i64 %3
 }
 
-; 179 occurrences:
+; 169 occurrences:
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcStrash.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -309,8 +305,6 @@ entry:
 ; gromacs/optimized/dlarrbx.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/dlasd6.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/dlasq2.cpp.ll
@@ -325,8 +319,6 @@ entry:
 ; gromacs/optimized/slarrbx.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
@@ -359,14 +351,11 @@ entry:
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oniguruma/optimized/regparse.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dgedmdq.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgelsx.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dgerfs.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dgtrfs.c.ll
@@ -382,22 +371,19 @@ entry:
 ; openblas/optimized/dlasd3.c.ll
 ; openblas/optimized/dlasd8.c.ll
 ; openblas/optimized/dlasq2.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dporfs.c.ll
 ; openblas/optimized/dpprfs.c.ll
 ; openblas/optimized/dsprfs.c.ll
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dsyrfs.c.ll
-; openblas/optimized/dsytrs_aa.c.ll
 ; openblas/optimized/dtbrfs.c.ll
 ; openblas/optimized/dtgsen.c.ll
 ; openblas/optimized/dtprfs.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrrfs.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/core_detect.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
+; opencv/optimized/cornersubpix.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/nldiffusion_functions.cpp.ll
 ; openjdk/optimized/c1_FrameMap_x86.ll
@@ -483,7 +469,7 @@ entry:
 ; openblas/optimized/dlaror.c.ll
 ; openblas/optimized/dlasda.c.ll
 ; openblas/optimized/dsytrd_sb2st.c.ll
-; openblas/optimized/dtgsna.c.ll
+; opencv/optimized/edge_drawing.cpp.ll
 ; ruby/optimized/compile.ll
 ; wireshark/optimized/print.c.ll
 ; Function Attrs: nounwind

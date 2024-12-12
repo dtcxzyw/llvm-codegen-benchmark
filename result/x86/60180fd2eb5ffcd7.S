@@ -1,6 +1,6 @@
-func0000000000000014:                   # @func0000000000000014
-	addl	$-65, %edx
-	cmpl	$26, %edx
+func0000000000000024:                   # @func0000000000000024
+	addl	$-6, %edx
+	cmpl	$5, %edx
 	setb	%al
 	orb	%dil, %sil
 	orb	%sil, %al

@@ -5,14 +5,14 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$31, %dil
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	andl	$1, %edx
 	addl	%esi, %edi
 	addl	%edx, %edi
 	testb	$3, %dil
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$1, %edx
 	addl	%esi, %edi
 	addl	%edx, %edi

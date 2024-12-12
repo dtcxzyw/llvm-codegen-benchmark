@@ -1,6 +1,8 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cpython/optimized/dtoa.ll
 ; graphviz/optimized/output.c.ll
 ; graphviz/optimized/shapes.c.ll

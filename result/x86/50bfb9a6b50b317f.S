@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$14912, %eax                    # imm = 0x3A40
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andl	$8, %esi
 	leaq	72(%rsi), %rcx
 	testl	%edi, %edi

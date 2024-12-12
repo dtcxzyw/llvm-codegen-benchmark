@@ -35,6 +35,11 @@ func000000000000003d:                   # @func000000000000003d
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
+func000000000000002c:                   # @func000000000000002c
+	flt.s	a0, fa2, fa1
+	fle.s	a1, fa1, fa0
+	or	a0, a0, a1
+	ret
 func000000000000005b:                   # @func000000000000005b
 	fle.s	a0, fa2, fa1
 	flt.s	a1, fa1, fa0

@@ -1,5 +1,6 @@
 
-; 114 occurrences:
+; 115 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -17,9 +18,9 @@
 ; libzmq/optimized/socket_poller.cpp.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/cgroup.ll
-; linux/optimized/mii.ll
 ; linux/optimized/vht.ll
 ; llama.cpp/optimized/common.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
@@ -78,7 +79,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -112,17 +112,20 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   ret i16 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -133,7 +136,7 @@ entry:
 define i16 @func0000000000000003(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   ret i16 %3
 }
 
@@ -148,7 +151,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   ret i16 %3
 }
 
@@ -161,7 +164,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i16
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   ret i16 %3
 }
 

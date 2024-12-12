@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -15,6 +15,7 @@
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nuklear/optimized/unity.c.ll
+; php/optimized/crypt_sha256.ll
 ; qemu/optimized/tcg.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; zstd/optimized/zstd_v05.c.ll
@@ -26,7 +27,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = shl i32 %3, 8
   %5 = and i32 %4, 16711680
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -60,7 +61,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = shl i32 %3, 3
   %5 = and i32 %4, 56
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -73,14 +74,15 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 8
   %5 = and i32 %4, 63488
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/mpmPre.c.ll
 ; bullet3/optimized/b3Solver.ll
 ; linux/optimized/i9xx_wm.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; openjdk/optimized/IntArgbBm.ll
 ; php/optimized/crypt_freesec.ll
 ; postgres/optimized/utf8_and_gb18030.ll
@@ -154,7 +156,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 2
   %5 = and i32 %4, 16128
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

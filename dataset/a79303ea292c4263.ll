@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 105 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -89,7 +89,6 @@
 ; folly/optimized/Subprocess.cpp.ll
 ; folly/optimized/ThreadedRepeatingFunctionRunner.cpp.ll
 ; folly/optimized/Zstd.cpp.ll
-; gromacs/optimized/grompp.cpp.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
@@ -106,15 +105,13 @@
 ; minetest/optimized/shader.cpp.ll
 ; minetest/optimized/sidebyside.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
-; opencv/optimized/fast_gemm.cpp.ll
-; opencv/optimized/matmul_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = icmp ugt ptr %3, %1
+  %4 = icmp ult ptr %1, %3
   %5 = getelementptr i8, ptr %1, i64 %2
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   %7 = and i1 %6, %4
   ret i1 %7
 }

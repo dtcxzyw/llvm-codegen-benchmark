@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; c3c/optimized/lexer.c.ll
 ; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
@@ -7,6 +7,7 @@
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
 ; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; yoga/optimized/YGNodeStyle.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; Function Attrs: nounwind
@@ -32,16 +33,15 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
 ; grpc/optimized/compression_filter.cc.ll
 ; grpc/optimized/legacy_compression_filter.cc.ll
-; llvm/optimized/AArch64.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
+define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 1, i64 %2
-  %4 = shl i64 %0, 32
+  %3 = shl i64 %2, 32
+  %4 = select i1 %0, i64 0, i64 %1
   %5 = or disjoint i64 %4, %3
   ret i64 %5
 }

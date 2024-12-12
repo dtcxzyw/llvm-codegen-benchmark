@@ -50,19 +50,19 @@ func0000000000000005:                   # @func0000000000000005
 	leal	(%rdi,%rsi), %eax
 	subl	%edx, %eax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	leal	(%rdi,%rsi), %eax
+	subl	%edx, %eax
+	retq
+func0000000000000025:                   # @func0000000000000025
+	leal	(%rdi,%rsi), %eax
+	subl	%edx, %eax
+	retq
 func0000000000000031:                   # @func0000000000000031
 	leal	(%rdi,%rsi), %eax
 	subl	%edx, %eax
 	retq
 func000000000000003c:                   # @func000000000000003c
-	leal	(%rdi,%rsi), %eax
-	subl	%edx, %eax
-	retq
-func000000000000003d:                   # @func000000000000003d
-	leal	(%rdi,%rsi), %eax
-	subl	%edx, %eax
-	retq
-func0000000000000001:                   # @func0000000000000001
 	leal	(%rdi,%rsi), %eax
 	subl	%edx, %eax
 	retq

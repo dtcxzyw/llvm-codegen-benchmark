@@ -10,15 +10,3 @@ func0000000000000018:                   # @func0000000000000018
 	andb	%dil, %al
 	movzbl	%al, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	testq	%rsi, %rsi
-	setle	%al
-	andb	%dil, %al
-	movzbl	%al, %eax
-	retq
-func0000000000000014:                   # @func0000000000000014
-	testq	%rsi, %rsi
-	setg	%al
-	andb	%dil, %al
-	movzbl	%al, %eax
-	retq

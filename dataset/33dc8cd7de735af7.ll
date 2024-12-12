@@ -1,4 +1,6 @@
 
+%"class.llvm::Use.3184941" = type { ptr, ptr, ptr, ptr }
+
 ; 4 occurrences:
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtsearch.ll
@@ -14,7 +16,7 @@ entry:
   ret ptr %6
 }
 
-; 40 occurrences:
+; 39 occurrences:
 ; hyperscan/optimized/gough.c.ll
 ; icu/optimized/normalizer2impl.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -28,7 +30,6 @@ entry:
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/ConstraintElimination.cpp.ll
 ; llvm/optimized/JSONNodeDumper.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -56,12 +57,24 @@ entry:
 ; redis/optimized/lstrlib.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i16 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 32766
   %4 = zext nneg i16 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; llvm/optimized/ConstraintElimination.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = and i16 %2, 1
+  %4 = zext nneg i16 %3 to i64
+  %5 = getelementptr nusw %"class.llvm::Use.3184941", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3184941", ptr %5, i64 %4
   ret ptr %6
 }
 

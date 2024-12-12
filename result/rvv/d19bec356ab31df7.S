@@ -8,7 +8,7 @@ func0000000000000060:                   # @func0000000000000060
 	vzext.vf2	v12, v10
 	lui	a0, 10
 	vmerge.vxm	v10, v12, a0, v0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret
 func0000000000000063:                   # @func0000000000000063
 	li	a0, 64
@@ -20,5 +20,5 @@ func0000000000000063:                   # @func0000000000000063
 	vzext.vf2	v12, v10
 	lui	a0, 10
 	vmerge.vxm	v10, v12, a0, v0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret

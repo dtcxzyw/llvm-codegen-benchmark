@@ -19,7 +19,7 @@ func0000000000000005:                   # @func0000000000000005
 	vpmovw2m	%xmm0, %k0
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
 	knotb	%k0, %k1
-	vpaddd	%ymm2, %ymm1, %ymm0 {%k1} {z}
+	vpaddd	%ymm1, %ymm2, %ymm0 {%k1} {z}
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpsllw	$15, %xmm0, %xmm0
@@ -34,5 +34,5 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovw2m	%xmm0, %k0
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
 	knotb	%k0, %k1
-	vpaddd	%ymm2, %ymm1, %ymm0 {%k1} {z}
+	vpaddd	%ymm1, %ymm2, %ymm0 {%k1} {z}
 	retq

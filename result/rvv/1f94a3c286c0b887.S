@@ -15,6 +15,6 @@ func0000000000000008:                   # @func0000000000000008
 	vmfeq.vf	v0, v16, fa5
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	vmerge.vim	v12, v12, 0, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	vfadd.vf	v8, v8, fa5
 	ret

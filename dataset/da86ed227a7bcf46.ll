@@ -6,7 +6,7 @@
 ; spike/optimized/elfloader.ll
 ; wasmedge/optimized/vinode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = zext i32 %0 to i64
@@ -23,7 +23,7 @@ entry:
 ; oiio/optimized/strutil.cpp.ll
 ; yosys/optimized/ast.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000003a1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = zext nneg i32 %0 to i64

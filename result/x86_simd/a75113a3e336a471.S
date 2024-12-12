@@ -15,7 +15,7 @@
 	.short	3                               # 0x3
 	.short	3                               # 0x3
 	.short	3                               # 0x3
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmw	.LCPI0_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -43,22 +43,22 @@ func0000000000000001:                   # @func0000000000000001
 	vzeroupper
 	retq
 .LCPI2_0:
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
-	.short	127                             # 0x7f
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
+	.short	1023                            # 0x3ff
 func000000000000000c:                   # @func000000000000000c
 	vptestmw	.LCPI2_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0

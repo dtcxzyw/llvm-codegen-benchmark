@@ -9,6 +9,6 @@ func0000000000000001:                   # @func0000000000000001
 	cltq
 	retq
 func0000000000000021:                   # @func0000000000000021
-	addl	%edi, %esi
-	movslq	%esi, %rax
+	addl	%esi, %edi
+	movslq	%edi, %rax
 	retq

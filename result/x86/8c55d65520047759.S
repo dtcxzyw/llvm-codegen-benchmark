@@ -10,6 +10,12 @@ func000000000000000b:                   # @func000000000000000b
 	setge	%al
 	andb	%dil, %al
 	retq
+func0000000000000001:                   # @func0000000000000001
+	incl	%edx
+	cmpw	%si, %dx
+	sete	%al
+	andb	%dil, %al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	addl	$-4, %edx
 	cmpw	%si, %dx

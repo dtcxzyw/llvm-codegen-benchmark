@@ -1,4 +1,4 @@
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	xorl	%eax, %eax
 	cmpb	$47, %sil
 	cmovel	%eax, %esi
@@ -7,17 +7,17 @@ func0000000000000111:                   # @func0000000000000111
 	cmpb	%sil, %dil
 	sete	%al
 	retq
-func0000000000000114:                   # @func0000000000000114
+func0000000000000424:                   # @func0000000000000424
 	cmpb	$47, %sil
 	setne	%cl
 	xorl	%eax, %eax
 	cmpb	$47, %dil
 	cmovnel	%edi, %eax
-	cmpb	%sil, %al
-	setb	%al
+	cmpb	%al, %sil
+	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000116:                   # @func0000000000000116
+func0000000000000426:                   # @func0000000000000426
 	xorl	%eax, %eax
 	cmpb	$47, %sil
 	cmovel	%eax, %esi
@@ -26,7 +26,7 @@ func0000000000000116:                   # @func0000000000000116
 	cmpb	%sil, %dil
 	setl	%al
 	retq
-func000000000000011a:                   # @func000000000000011a
+func000000000000042a:                   # @func000000000000042a
 	xorl	%eax, %eax
 	cmpb	$47, %sil
 	cmovel	%eax, %esi

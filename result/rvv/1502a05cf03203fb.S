@@ -39,6 +39,12 @@ func00000000000000fd:                   # @func00000000000000fd
 	addiw	a0, a0, 576
 	vmacc.vx	v8, a0, v10
 	ret
+func0000000000000088:                   # @func0000000000000088
+	li	a0, 10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vmacc.vx	v8, a0, v10
+	ret
 func0000000000000040:                   # @func0000000000000040
 	lui	a0, 1048555
 	addiw	a0, a0, -384

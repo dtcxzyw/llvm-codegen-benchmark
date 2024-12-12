@@ -16,7 +16,7 @@ func000000000000000d:                   # @func000000000000000d
 	addl	%edi, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
-	imull	$1326, %esi, %eax               # imm = 0x52E
+	imull	$613, %esi, %eax                # imm = 0x265
 	addl	%edi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004

@@ -48,7 +48,7 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
@@ -56,6 +56,7 @@ entry:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; linux/optimized/drm_buddy.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; opencv/optimized/rand.cpp.ll
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll

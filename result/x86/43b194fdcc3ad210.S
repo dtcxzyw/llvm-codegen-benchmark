@@ -22,10 +22,18 @@ func0000000000000006:                   # @func0000000000000006
 	shlq	$24, %rdi
 	orq	%rdi, %rax
 	retq
-func000000000000000d:                   # @func000000000000000d
+func0000000000000007:                   # @func0000000000000007
 	movl	%edx, %ecx
 	testb	$1, %sil
-	movl	$6, %eax
+	movl	$1, %eax
+	cmoveq	%rcx, %rax
+	shlq	$32, %rdi
+	orq	%rdi, %rax
+	retq
+func000000000000000d:                   # @func000000000000000d
+	movl	%edx, %ecx
+	xorl	%eax, %eax
+	testb	$1, %sil
 	cmoveq	%rcx, %rax
 	shlq	$32, %rdi
 	orq	%rdi, %rax

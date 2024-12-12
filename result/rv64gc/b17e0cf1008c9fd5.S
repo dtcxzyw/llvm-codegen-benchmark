@@ -21,6 +21,14 @@ func0000000000000004:                   # @func0000000000000004
 	li	a0, 8
 .LBB3_2:                                # %entry
 	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a1, a1
+	li	a2, 17
+	bgeu	a1, a2, .LBB4_2
+	lui	a0, 65536
+	addiw	a0, a0, 353
+.LBB4_2:                                # %entry
+	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a1, a1
 	sltiu	a1, a1, 33
@@ -29,7 +37,14 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a1, a1
-	beqz	a1, .LBB5_2
+	beqz	a1, .LBB6_2
 	li	a0, 2
-.LBB5_2:                                # %entry
+.LBB6_2:                                # %entry
+	ret
+func0000000000000018:                   # @func0000000000000018
+	sext.w	a1, a1
+	lui	a2, 9
+	bgeu	a2, a1, .LBB7_2
+	li	a0, 144
+.LBB7_2:                                # %entry
 	ret

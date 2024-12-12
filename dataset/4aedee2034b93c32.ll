@@ -14,7 +14,7 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = shl i32 %1, %3
   %5 = udiv i32 2147483647, %4
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 

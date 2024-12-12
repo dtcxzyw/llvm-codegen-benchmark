@@ -1,11 +1,3 @@
-func0000000000000035:                   # @func0000000000000035
-	li	a3, -94
-	andi	a0, a0, 1
-	mul	a2, a2, a3
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addiw	a0, a0, 253
-	ret
 func0000000000000015:                   # @func0000000000000015
 	andi	a0, a0, 1
 	lui	a3, 1

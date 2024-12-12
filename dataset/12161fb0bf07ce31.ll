@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -106,6 +107,19 @@ entry:
   %4 = add nuw i64 %3, %2
   %5 = zext i64 %4 to i128
   %6 = mul nuw nsw i128 %5, 2361183241434822607
+  ret i128 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i128 @func00000000000000df(i1 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i128 %1 to i64
+  %3 = zext i1 %0 to i64
+  %4 = add nuw nsw i64 %3, %2
+  %5 = zext nneg i64 %4 to i128
+  %6 = mul nuw nsw i128 %5, 3022314549036573
   ret i128 %6
 }
 

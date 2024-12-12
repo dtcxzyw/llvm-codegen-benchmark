@@ -246,7 +246,7 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/compile-test.cc.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000008c(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func000000000000010c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 32
   %4 = trunc nuw i64 %3 to i32

@@ -11,7 +11,7 @@ entry:
   ret i32 %5
 }
 
-; 273 occurrences:
+; 277 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -285,19 +285,25 @@ entry:
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/packet-usb.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32512
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i16 %1) #0 {
 entry:
@@ -308,18 +314,21 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 7 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; linux/optimized/cacheinfo.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32767
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 %3, 17
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -334,7 +343,7 @@ entry:
   %2 = and i16 %1, 1
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 19
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

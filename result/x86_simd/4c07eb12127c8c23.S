@@ -36,7 +36,7 @@
 	.zero	1
 .LCPI0_3:
 	.byte	3                               # 0x3
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
 	vpbroadcastb	.LCPI0_3(%rip), %xmm2   # xmm2 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
 	vmovdqu8	.LCPI0_2(%rip), %xmm2 {%k1}     # xmm2 {%k1} = [4,4,4,4,4,4,4,4,u,u,u,u,u,u,u,u]

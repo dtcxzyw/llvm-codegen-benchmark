@@ -1,7 +1,6 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/clocksource.ll
-; linux/optimized/gen_estimator.ll
 ; linux/optimized/genalloc.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/mballoc.ll

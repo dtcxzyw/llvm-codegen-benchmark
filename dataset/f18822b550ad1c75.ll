@@ -1,5 +1,5 @@
 
-; 250 occurrences:
+; 248 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -94,8 +94,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -255,7 +253,7 @@ define i64 @func0000000000000080(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %notmask = shl nsw i64 -1, %1
   %3 = xor i64 %notmask, -1
-  %4 = and i64 %3, %2
+  %4 = and i64 %2, %3
   %5 = shl i64 %0, %1
   %6 = add i64 %5, %4
   ret i64 %6

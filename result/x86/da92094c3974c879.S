@@ -1,9 +1,9 @@
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	movzwl	%dx, %eax
 	leaq	(%rsi,%rax,8), %rax
 	subq	%rdi, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	movzwl	%dx, %eax
 	addq	%rsi, %rax
 	subq	%rdi, %rax
@@ -13,7 +13,7 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rsi, %rax
 	subq	%rdi, %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
+func000000000000000d:                   # @func000000000000000d
 	movzwl	%dx, %eax
 	addq	%rsi, %rax
 	subq	%rdi, %rax

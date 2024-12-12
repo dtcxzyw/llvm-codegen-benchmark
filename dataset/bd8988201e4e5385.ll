@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/abcRefactor.c.ll
 ; abc/optimized/absRpm.c.ll
 ; cvc5/optimized/inst_strategy_e_matching.cpp.ll
@@ -8,6 +8,7 @@
 ; eastl/optimized/TestOptional.cpp.ll
 ; git/optimized/merge-recursive.ll
 ; gromacs/optimized/localtopology.cpp.ll
+; icu/optimized/ucharstriebuilder.ll
 ; icu/optimized/unistr.ll
 ; ipopt/optimized/IpPardisoSolverInterface.ll
 ; linux/optimized/tree.ll
@@ -32,21 +33,18 @@
 define i1 @func0000000000000006(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 1
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
-; 95 occurrences:
+; 90 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
-; clamav/optimized/filtering.c.ll
 ; cmake/optimized/idna.c.ll
 ; cmake/optimized/zstd_compress.c.ll
-; cpython/optimized/unicodeobject.ll
 ; glog/optimized/logging.cc.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hermes/optimized/Passes.cpp.ll
 ; icu/optimized/collationweights.ll
-; icu/optimized/utrie2.ll
 ; kcp/optimized/ikcp.ll
 ; libuv/optimized/idna.c.ll
 ; linux/optimized/virtgpu_vq.ll
@@ -85,11 +83,7 @@ entry:
 ; node/optimized/idna.ll
 ; openssl/optimized/libcrypto-lib-punycode.ll
 ; openssl/optimized/libcrypto-shlib-punycode.ll
-; postgres/optimized/blkreftable.ll
-; postgres/optimized/blkreftable_shlib.ll
-; postgres/optimized/blkreftable_srv.ll
 ; postgres/optimized/pg_walsummary.ll
-; raylib/optimized/rtext.c.ll
 ; wasmedge/optimized/alias.cpp.ll
 ; wasmedge/optimized/aot_section.cpp.ll
 ; wasmedge/optimized/canon.cpp.ll
@@ -131,12 +125,14 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 1
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -297,9 +293,8 @@ entry:
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; oiio/optimized/tiffinput.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/boost.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
@@ -316,16 +311,13 @@ entry:
 ; openjdk/optimized/xBarrierSetAssembler_x86.ll
 ; openmpi/optimized/ompi_datatype_create_darray.ll
 ; openspiel/optimized/skat.cc.ll
-; openssl/optimized/libcrypto-lib-err_mark.ll
 ; openssl/optimized/libcrypto-lib-err_save.ll
-; openssl/optimized/libcrypto-shlib-err_mark.ll
 ; openssl/optimized/libcrypto-shlib-err_save.ll
 ; openusd/optimized/codec_aom.c.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/blkreftable.ll
 ; postgres/optimized/blkreftable_shlib.ll
 ; postgres/optimized/blkreftable_srv.ll
-; postgres/optimized/brin_revmap.ll
 ; postgres/optimized/dynahash.ll
 ; postgres/optimized/snprintf.ll
 ; postgres/optimized/snprintf_shlib.ll
@@ -414,13 +406,17 @@ entry:
 ; wireshark/optimized/packet-smb-pipe.c.ll
 ; yosys/optimized/calc.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; zed-rs/optimized/d2w35dg2d82avud97ap9t4v42.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 15
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -671,16 +667,13 @@ entry:
 define i1 @func000000000000000a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 -1
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
-; 22 occurrences:
+; 19 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; cpython/optimized/unicodeobject.ll
-; fmt/optimized/chrono-test.cc.ll
-; fmt/optimized/compile-test.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; icu/optimized/wrtjava.ll
 ; libdeflate/optimized/deflate_compress.c.ll
@@ -702,7 +695,51 @@ entry:
 define i1 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; openjdk/optimized/g1ConcurrentMark.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 %2, i32 0
+  %4 = icmp samesign ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 6 occurrences:
+; abc/optimized/absRpm.c.ll
+; boost/optimized/calculate_point_order.ll
+; fmt/optimized/chrono-test.cc.ll
+; fmt/optimized/compile-test.cc.ll
+; hermes/optimized/JSParserImpl-flow.cpp.ll
+; linux/optimized/blk-merge.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 %2, i32 0
+  %4 = icmp ne i32 %0, %3
+  ret i1 %4
+}
+
+; 10 occurrences:
+; clamav/optimized/filtering.c.ll
+; cmake/optimized/idna.c.ll
+; cpython/optimized/unicodeobject.ll
+; icu/optimized/utrie2.ll
+; libuv/optimized/idna.c.ll
+; node/optimized/idna.ll
+; postgres/optimized/blkreftable.ll
+; postgres/optimized/blkreftable_shlib.ll
+; postgres/optimized/blkreftable_srv.ll
+; raylib/optimized/rtext.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 %2, i32 1
+  %4 = icmp samesign ult i32 %0, %3
   ret i1 %4
 }
 
@@ -718,18 +755,6 @@ entry:
 }
 
 ; 3 occurrences:
-; abc/optimized/absRpm.c.ll
-; hermes/optimized/JSParserImpl-flow.cpp.ll
-; linux/optimized/blk-merge.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = select i1 %1, i32 %2, i32 1
-  %4 = icmp ne i32 %3, %0
-  ret i1 %4
-}
-
-; 3 occurrences:
 ; openblas/optimized/dlatrs.c.ll
 ; opencv/optimized/grfmt_sunras.cpp.ll
 ; stockfish/optimized/thread.ll
@@ -737,21 +762,20 @@ entry:
 define i1 @func0000000000000007(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/dsyevr.cpp.ll
 ; gromacs/optimized/ssyevr.cpp.ll
 ; openblas/optimized/dlatrs.c.ll
-; openblas/optimized/dsytrs_aa.c.ll
 ; redis/optimized/expire.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 1
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   ret i1 %4
 }
 

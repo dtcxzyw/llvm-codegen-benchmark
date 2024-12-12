@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	mulxq	%rax, %rax, %rax
 	shrq	%rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 func000000000000000a:                   # @func000000000000000a

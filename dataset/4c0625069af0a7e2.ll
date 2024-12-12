@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/symbol.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add i32 %2, -58
@@ -11,7 +11,7 @@ entry:
   ret i1 %5
 }
 
-; 41 occurrences:
+; 43 occurrences:
 ; abc/optimized/wlcNdr.c.ll
 ; abc/optimized/wlnNdr.c.ll
 ; git/optimized/date.ll
@@ -38,6 +38,8 @@ entry:
 ; llvm/optimized/SemaObjC.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_grid.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; openjdk/optimized/disassembler.ll
 ; openspiel/optimized/maedn.cc.ll
@@ -59,25 +61,25 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -3
   %4 = icmp ult i32 %3, 3
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_display_ati.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 624
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/dgif_lib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i1 %0, i64 %1) #0 {
+define i1 @func00000000000000ac(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = icmp ne i32 %2, -1
@@ -96,7 +98,7 @@ define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, -10
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -116,7 +118,7 @@ entry:
 ; git/optimized/date.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i1 %0, i64 %1) #0 {
+define i1 @func00000000000001a4(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -1
@@ -133,7 +135,7 @@ entry:
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, -8
@@ -145,12 +147,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaChecking.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000124(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add nsw i32 %2, -3
   %4 = icmp ult i32 %3, -2
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -169,7 +171,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/multicast_statistics_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = add i32 %2, -1
@@ -181,7 +183,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/fsopen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -2

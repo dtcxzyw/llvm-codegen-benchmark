@@ -1,15 +1,15 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	or	a0, a0, a1
 	not	a0, a0
 	bexti	a0, a0, 31
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	or	a0, a0, a1
 	sext.w	a0, a0
 	addi	a0, a0, -11
 	seqz	a0, a0
 	ret
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	or	a0, a0, a1
 	not	a0, a0
 	bexti	a0, a0, 31
@@ -19,7 +19,7 @@ func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	or	a0, a0, a1
 	srliw	a0, a0, 31
 	ret

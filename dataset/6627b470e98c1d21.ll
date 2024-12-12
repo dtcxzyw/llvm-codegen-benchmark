@@ -15,11 +15,11 @@
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/TopologyToLevelSet.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000198(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = icmp ne i64 %5, 0
   %7 = or i1 %6, %0
   ret i1 %7
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e2(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001c2(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
@@ -41,13 +41,13 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001d8(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
   %5 = and i64 %4, %1
   %6 = icmp ne i64 %5, 0
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
@@ -61,13 +61,13 @@ entry:
 ; verilator/optimized/V3Undriven.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000182(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = icmp eq i64 %5, 0
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
@@ -92,7 +92,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000102(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 4294967295, %3

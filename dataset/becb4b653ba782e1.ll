@@ -1,7 +1,6 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/fraClau.c.ll
-; cmake/optimized/archive_read_support_filter_zstd.c.ll
 ; git/optimized/diffcore-rename.ll
 ; icu/optimized/uregex.ll
 ; libpng/optimized/pngread.c.ll
@@ -19,7 +18,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/Image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000042(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -34,7 +33,7 @@ entry:
 ; postgres/optimized/partprune.ll
 ; verilator/optimized/V3LinkDot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000318(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null

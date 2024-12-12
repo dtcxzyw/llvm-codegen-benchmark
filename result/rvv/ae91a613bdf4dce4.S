@@ -6,7 +6,7 @@ func0000000000000007:                   # @func0000000000000007
 	vmerge.vim	v12, v12, -1, v0
 	vmv1r.v	v0, v11
 	vmerge.vim	v10, v12, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -16,5 +16,5 @@ func0000000000000002:                   # @func0000000000000002
 	vmerge.vim	v12, v12, -1, v0
 	vmv1r.v	v0, v11
 	vmerge.vim	v10, v12, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

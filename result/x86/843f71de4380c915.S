@@ -1,4 +1,4 @@
-func00000000000004cc:                   # @func00000000000004cc
+func000000000000118c:                   # @func000000000000118c
 	cmpb	$-26, %sil
 	setb	%cl
 	cmpb	$95, %dil

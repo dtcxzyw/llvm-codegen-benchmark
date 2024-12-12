@@ -1,9 +1,10 @@
 
-; 60 occurrences:
+; 61 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; cpython/optimized/marshal.ll
 ; hwloc/optimized/bitmap.ll
 ; icu/optimized/ucnvsel.ll
+; icu/optimized/ustring.ll
 ; libwebp/optimized/cwebp.c.ll
 ; node/optimized/libnode.crypto_dh.ll
 ; openssl/optimized/libcrypto-lib-cfb_enc.ll

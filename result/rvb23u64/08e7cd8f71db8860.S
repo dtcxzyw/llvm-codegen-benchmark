@@ -15,12 +15,6 @@ func0000000000000017:                   # @func0000000000000017
 	slli	a0, a0, 32
 	or	a0, a0, a1
 	ret
-func000000000000003f:                   # @func000000000000003f
-	zext.h	a1, a1
-	slli	a1, a1, 31
-	slli	a0, a0, 23
-	or	a0, a0, a1
-	ret
 func000000000000001e:                   # @func000000000000001e
 	zext.h	a1, a1
 	slli	a1, a1, 10
@@ -31,6 +25,12 @@ func0000000000000019:                   # @func0000000000000019
 	zext.h	a1, a1
 	slli	a1, a1, 32
 	slli	a0, a0, 60
+	or	a0, a0, a1
+	ret
+func000000000000003f:                   # @func000000000000003f
+	zext.h	a1, a1
+	slli	a1, a1, 13
+	slli	a0, a0, 21
 	or	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c

@@ -10,21 +10,21 @@ func000000000000000a:                   # @func000000000000000a
 	sub	a1, a1, a0
 	sgtz	a0, a1
 	ret
-func0000000000000078:                   # @func0000000000000078
+func00000000000000c8:                   # @func00000000000000c8
 	andi	a2, a2, 255
 	or	a1, a1, a2
 	sub	a1, a1, a0
 	sltiu	a0, a1, 64
 	xori	a0, a0, 1
 	ret
-func0000000000000068:                   # @func0000000000000068
+func00000000000000e8:                   # @func00000000000000e8
 	andi	a2, a2, 255
 	or	a1, a1, a2
 	sub	a1, a1, a0
-	sltiu	a0, a1, 64
-	xori	a0, a0, 1
+	lui	a0, 65536
+	sltu	a0, a0, a1
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	andi	a2, a2, 255
 	or	a1, a1, a2
 	lui	a2, 5

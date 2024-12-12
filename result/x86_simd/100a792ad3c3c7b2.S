@@ -54,9 +54,3 @@ func000000000000001d:                   # @func000000000000001d
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0
 	retq
-func0000000000000018:                   # @func0000000000000018
-	vpmulld	%ymm1, %ymm0, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	retq

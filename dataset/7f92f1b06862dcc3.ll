@@ -3,7 +3,7 @@
 ; lz4/optimized/lz4.c.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000104(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000108(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -103,7 +103,7 @@ entry:
 ; meshlab/optimized/render_raster.cpp.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000010a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -116,12 +116,12 @@ entry:
 ; 1 occurrences:
 ; pocketpy/optimized/io.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000101(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

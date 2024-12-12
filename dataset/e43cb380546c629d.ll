@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/net_failover.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SymbolizableObjectFile.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; qemu/optimized/optimize.c.ll

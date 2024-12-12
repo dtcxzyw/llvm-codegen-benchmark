@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpq	%rdi, %rax
 	setne	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	setb	%al
@@ -33,22 +33,22 @@ func0000000000000006:                   # @func0000000000000006
 	cmpq	%rdi, %rax
 	setl	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	setne	%al
@@ -68,17 +68,17 @@ func0000000000000009:                   # @func0000000000000009
 	cmpq	%rdi, %rax
 	setae	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	sete	%al

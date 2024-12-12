@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaSim.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = mul nsw i32 %0, %1
@@ -29,7 +29,7 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000079(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
   %4 = mul nuw nsw i32 %0, %1
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/pyramids.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = mul i32 %0, %1

@@ -25,10 +25,12 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/gmx_disre.cpp.ll
 ; gromacs/optimized/manage_threading.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:

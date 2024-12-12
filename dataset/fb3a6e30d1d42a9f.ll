@@ -74,7 +74,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = add nsw i32 %1, 1
   %5 = add nsw i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -148,7 +148,7 @@ entry:
   %3 = add nsw i32 %2, 80
   %4 = and i32 %1, -8
   %5 = add nsw i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

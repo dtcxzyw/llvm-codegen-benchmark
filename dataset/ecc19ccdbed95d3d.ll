@@ -1,5 +1,5 @@
 
-; 64 occurrences:
+; 63 occurrences:
 ; abc/optimized/plaHash.c.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -60,7 +60,6 @@
 ; postgres/optimized/multixact.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
-; redis/optimized/lolwut6.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; zstd/optimized/cover.c.ll
@@ -72,14 +71,13 @@ entry:
   ret i32 %4
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; abc/optimized/extraUtilMacc.c.ll
 ; abc/optimized/plaHash.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
-; linux/optimized/hda_hwdep.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
@@ -114,7 +112,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -125,7 +123,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

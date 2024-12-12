@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; libjpeg-turbo/optimized/jfdctfst.c.ll
 ; libjpeg-turbo/optimized/jidctfst.c.ll
@@ -11,12 +11,13 @@
 ; openjdk/optimized/cmsopt.ll
 ; openusd/optimized/decodemv.c.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = trunc nuw i32 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -63,7 +64,7 @@ define i16 @func000000000000000c(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
   %3 = trunc nuw nsw i32 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -87,7 +88,7 @@ define i16 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = trunc i32 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -98,7 +99,7 @@ define i16 @func0000000000000010(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = trunc i32 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -109,7 +110,7 @@ define i16 @func000000000000001c(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = trunc nuw nsw i32 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 

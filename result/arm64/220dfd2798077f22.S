@@ -1,14 +1,17 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ushll	v0.8h, v0.8b, #0
-	ushll2	v1.4s, v0.8h, #3
-	ushll	v0.4s, v0.4h, #3
+	and	w8, w0, #0xff
+	lsl	w0, w8, #3
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	ushll	v0.8h, v0.8b, #0
-	ushll2	v1.4s, v0.8h, #8
-	ushll	v0.4s, v0.4h, #8
+	and	w8, w0, #0xff
+	lsl	w0, w8, #8
+	ret
+                                        // -- End function
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	lsl	w0, w0, #24
 	ret
                                         // -- End function

@@ -16,21 +16,27 @@ func0000000000000010:                   # @func0000000000000010
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
+func0000000000000030:                   # @func0000000000000030
+	cmpq	$512, %rdx                      # imm = 0x200
+	setae	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	cmpq	$64, %rdx
 	setb	%al
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	testq	%rdx, %rdx
-	setns	%al
-	andb	%sil, %al
-	orb	%dil, %al
-	retq
 func000000000000000c:                   # @func000000000000000c
 	testq	%rdx, %rdx
 	sets	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	testq	%rdx, %rdx
+	setns	%al
 	andb	%sil, %al
 	orb	%dil, %al
 	retq

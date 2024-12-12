@@ -11,7 +11,7 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rcx, %rax
 	retq
 func000000000000006f:                   # @func000000000000006f
-	leaq	(%rdx,%rdx,8), %rax
+	leaq	(%rdx,%rdx,4), %rax
 	leaq	(%rdi,%rax,2), %rcx
 	movl	%esi, %eax
 	addq	%rcx, %rax

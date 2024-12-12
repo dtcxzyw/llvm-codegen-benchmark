@@ -1,5 +1,5 @@
 
-; 318 occurrences:
+; 322 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -99,6 +99,9 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; llama.cpp/optimized/grammar-parser.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/CoroFrame.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
 ; luau/optimized/Transpiler.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -164,6 +167,7 @@
 ; oiio/optimized/tiffoutput.cpp.ll
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
+; pocketpy/optimized/lexer.cpp.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
 ; regex-rs/optimized/v8mcpnwv4glojx2.ll
@@ -319,7 +323,7 @@
 ; wireshark/optimized/packet-memcache.c.ll
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000208(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 95
   %3 = or i1 %2, %0
@@ -336,7 +340,7 @@ entry:
 ; linux/optimized/cistpl.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a08(i1 %0, i8 %1) #0 {
+define i1 @func0000000000001408(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, 96
   %3 = or i1 %2, %0
@@ -349,12 +353,12 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_ast.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000210(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000410(i1 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -48
   %3 = icmp ult i8 %2, 10
   %4 = icmp ugt i8 %1, 126
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = or i1 %5, %3
   ret i1 %6
 }
@@ -364,12 +368,25 @@ entry:
 ; php/optimized/zend_ast.ll
 ; wireshark/optimized/packet-memcache.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000090(i1 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -48
   %3 = icmp ult i8 %2, 10
   %4 = icmp eq i8 %1, 95
   %5 = or i1 %4, %0
+  %6 = or i1 %5, %3
+  ret i1 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-iscsi.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000001090(i1 %0, i8 %1) #0 {
+entry:
+  %2 = add nsw i8 %1, -49
+  %3 = icmp ult i8 %2, 2
+  %4 = icmp eq i8 %1, 33
+  %5 = or i1 %0, %4
   %6 = or i1 %5, %3
   ret i1 %6
 }

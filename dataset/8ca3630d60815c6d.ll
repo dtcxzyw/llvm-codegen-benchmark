@@ -1,9 +1,8 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/bmcCexCare.c.ll
 ; linux/optimized/p4.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; ruby/optimized/bignum.ll
 ; z3/optimized/bv_internalize.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
@@ -12,7 +11,7 @@ define i64 @func0000000000000003(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = select i1 %3, i64 8192, i64 0
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -36,7 +35,7 @@ define i64 @func000000000000000c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = select i1 %3, i64 16, i64 32
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -89,7 +88,7 @@ define i64 @func0000000000000002(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = select i1 %3, i64 33556480, i64 33554432
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

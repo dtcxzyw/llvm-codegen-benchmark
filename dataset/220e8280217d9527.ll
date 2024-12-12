@@ -1,18 +1,13 @@
 
-; 8 occurrences:
-; eastl/optimized/eathread_barrier.cpp.ll
-; linux/optimized/mutex.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
-; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
-; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; qemu/optimized/accel_tcg_tb-maint.c.ll
+; 3 occurrences:
+; linux/optimized/hugetlb.ll
+; linux/optimized/insn-eval.ll
+; ruby/optimized/array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -4096
-  %4 = icmp eq i64 %3, %1
+  %3 = and i64 %2, 127
+  %4 = icmp ugt i64 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -29,8 +24,7 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
-; freetype/optimized/autofit.c.ll
+; 8 occurrences:
 ; lief/optimized/BinaryParser.cpp.ll
 ; linux/optimized/crash_core.ll
 ; linux/optimized/iterator.ll
@@ -59,27 +53,55 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; freetype/optimized/autofit.c.ll
-; linux/optimized/hugetlb.ll
-; linux/optimized/insn-eval.ll
+; hermes/optimized/CharacterProperties.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp samesign ugt i64 %3, %1
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 7 occurrences:
+; eastl/optimized/eathread_barrier.cpp.ll
+; linux/optimized/mutex.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -5
+  %4 = icmp eq i64 %3, %1
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 2 occurrences:
+; cvc5/optimized/quant_conflict_find.cpp.ll
+; ockam-rs/optimized/2c367xut2lvnpep0.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 1099511627775
+  %4 = icmp samesign uge i64 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
 ; 1 occurrences:
-; cvc5/optimized/quant_conflict_find.cpp.ll
+; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 1099511627775
-  %4 = icmp uge i64 %3, %1
+  %3 = and i64 %2, 63
+  %4 = icmp samesign ult i64 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

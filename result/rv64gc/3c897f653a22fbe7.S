@@ -15,7 +15,7 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	sext.w	a1, a1
 	bnez	a1, .LBB2_2
 	slli	a0, a2, 2

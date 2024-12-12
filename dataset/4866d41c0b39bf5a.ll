@@ -1,5 +1,7 @@
 
-; 16 occurrences:
+; 18 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/colvarcomp_angles.cpp.ll
 ; gromacs/optimized/pull.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -20,7 +22,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double 1.000000e+00, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fneg double %1
   %6 = fmul double %4, %5
   ret double %6

@@ -13,7 +13,7 @@
 ; minetest/optimized/CZipReader.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000481(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, 32
   %4 = icmp ult i32 %2, 26
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/CFileList.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000486(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, 32
   %4 = icmp ult i32 %2, 26
@@ -38,7 +38,7 @@ entry:
 ; minetest/optimized/CGUIListBox.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, 32
   %4 = icmp ult i32 %2, 26
@@ -52,7 +52,7 @@ entry:
 ; openjdk/optimized/jvm.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000042a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, -2
   %4 = icmp eq i32 %2, 2
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, -2
   %4 = icmp eq i32 %2, 2
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000346(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c86(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, 3
   %4 = icmp ult i32 %2, 5
@@ -88,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000341(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c81(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, -162
   %4 = icmp ult i32 %2, 26

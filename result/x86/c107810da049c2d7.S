@@ -10,9 +10,3 @@ func0000000000000001:                   # @func0000000000000001
 	xorb	%sil, %al
 	andb	%dil, %al
 	retq
-func0000000000000006:                   # @func0000000000000006
-	testl	%edx, %edx
-	sets	%al
-	xorb	%sil, %al
-	andb	%dil, %al
-	retq

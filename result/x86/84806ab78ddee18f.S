@@ -4,27 +4,20 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
-	andl	$7, %edx
-	addl	%esi, %edx
-	cmpl	$2, %edx
-	setae	%al
-	andb	%dil, %al
-	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	andl	$7, %edx
 	orl	%esi, %edx
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movzbl	%dl, %eax
 	addl	%esi, %eax
 	cmpl	$24, %eax
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andl	$12, %edx
 	addl	%esi, %edx
 	cmpl	$3, %edx

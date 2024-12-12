@@ -12,18 +12,6 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; qemu/optimized/block_export_vduse-blk.c.ll
-; qemu/optimized/hw_block_vhost-user-blk.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i16 %1) #0 {
-entry:
-  %2 = icmp ugt i16 %1, 1
-  %3 = select i1 %2, i64 5750, i64 1654
-  %4 = or i64 %3, %0
-  ret i64 %4
-}
-
 ; 5 occurrences:
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGObjCMac.cpp.ll
@@ -39,7 +27,7 @@ entry:
   ret i64 %4
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -56,7 +44,6 @@ entry:
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/LowLevelType.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll

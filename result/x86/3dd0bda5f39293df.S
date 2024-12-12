@@ -19,6 +19,10 @@ func0000000000000050:                   # @func0000000000000050
 	shlq	$32, %rax
 	leaq	1(%rdi,%rax), %rax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	movslq	%esi, %rax
+	leaq	-1(%rdi,%rax), %rax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	movslq	%esi, %rax
 	leaq	-1(%rdi,%rax), %rax

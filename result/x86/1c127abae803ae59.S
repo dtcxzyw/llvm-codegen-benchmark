@@ -1,78 +1,72 @@
-func0000000000000071:                   # @func0000000000000071
-	shrl	$3, %edx
+func0000000000000088:                   # @func0000000000000088
+	shrl	$7, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
-	sete	%al
+	seta	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	shrl	$2, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	seta	%al
 	retq
-func00000000000000f5:                   # @func00000000000000f5
+func00000000000001f5:                   # @func00000000000001f5
 	shrl	$2, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setbe	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
-	shrl	$5, %edx
+func00000000000000e1:                   # @func00000000000000e1
+	shrl	$3, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
-	seta	%al
+	sete	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	shrl	$16, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	seta	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	shrl	%edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	shrl	$9, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setg	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	shrl	$9, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	sete	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	shrl	$9, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	shrl	%edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func0000000000000076:                   # @func0000000000000076
+func00000000000000f8:                   # @func00000000000000f8
+	shrl	$17, %edx
+	addq	%rsi, %rdx
+	cmpq	%rdi, %rdx
+	seta	%al
+	retq
+func00000000000000e6:                   # @func00000000000000e6
 	shrl	%edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setl	%al
-	retq
-func0000000000000056:                   # @func0000000000000056
-	shrl	%edx
-	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setl	%al
-	retq
-func000000000000007a:                   # @func000000000000007a
-	shrl	%edx
-	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setg	%al
 	retq

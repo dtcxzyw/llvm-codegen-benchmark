@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; graphviz/optimized/gvrender_core_svg.c.ll
 ; graphviz/optimized/gvrender_core_tk.c.ll
@@ -23,6 +23,7 @@
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; wireshark/optimized/packet-dvbci.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(ptr %0) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/giaSwitch.c.ll
 ; clamav/optimized/cvd.c.ll
@@ -27,7 +27,6 @@
 ; meshlab/optimized/mesh.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nori/optimized/nanovg.c.ll
-; nuttx/optimized/sig_isemptyset.c.ll
 ; openblas/optimized/dlarrv.c.ll
 ; openspiel/optimized/System.cpp.ll
 ; openspiel/optimized/battleship.cc.ll
@@ -103,7 +102,6 @@ entry:
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
-; openssl/optimized/quic_srt_gen_test-bin-quic_srt_gen_test.ll
 ; openssl/optimized/quicapitest-bin-quicapitest.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -125,6 +123,7 @@ entry:
 ; z3/optimized/q_ematch.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_quantifier.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
@@ -146,16 +145,13 @@ entry:
   ret i32 %2
 }
 
-; 7 occurrences:
+; 4 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
-; cmake/optimized/cmTargetLinkLibrariesCommand.cxx.ll
 ; cmake/optimized/idna.c.ll
 ; libuv/optimized/idna.c.ll
 ; node/optimized/idna.ll
-; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll
-; opencv/optimized/gapi_video_perf_tests.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0) #0 {
+define i32 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 127
   %2 = zext i1 %1 to i32
@@ -182,6 +178,18 @@ entry:
 define i32 @func0000000000000010(i32 %0) #0 {
 entry:
   %1 = icmp ult i32 %0, 3
+  %2 = zext i1 %1 to i32
+  ret i32 %2
+}
+
+; 3 occurrences:
+; cmake/optimized/cmTargetLinkLibrariesCommand.cxx.ll
+; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll
+; opencv/optimized/gapi_video_perf_tests.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0) #0 {
+entry:
+  %1 = icmp ugt i32 %0, 7
   %2 = zext i1 %1 to i32
   ret i32 %2
 }

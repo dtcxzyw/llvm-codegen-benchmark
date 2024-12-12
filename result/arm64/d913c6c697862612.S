@@ -1,10 +1,22 @@
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	cmlt	v2.2d, v2.2d, #0
-	cmlt	v3.2d, v3.2d, #0
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	sub	x8, x1, x2
+	cmp	x8, #0
+	csinv	x0, x0, xzr, ge
+	ret
+                                        // -- End function
+func0000000000000038:                   // @func0000000000000038
+// %bb.0:                               // %entry
+	sub	x8, x1, x2
+	cmp	x8, #24
+	mov	w8, #3                          // =0x3
+	csel	x0, x8, x0, hi
+	ret
+                                        // -- End function
+func0000000000000024:                   // @func0000000000000024
+// %bb.0:                               // %entry
+	sub	x8, x1, x2
+	cmp	x8, #80
+	csinc	x0, x0, xzr, hs
 	ret
                                         // -- End function

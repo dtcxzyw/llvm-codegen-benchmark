@@ -21,7 +21,10 @@ entry:
   ret i64 %3
 }
 
-; 27 occurrences:
+; 30 occurrences:
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
 ; libjpeg-turbo/optimized/jcphuff.c.ll
 ; linux/optimized/mempolicy.ll
 ; llvm/optimized/ConstantRange.cpp.ll
@@ -80,20 +83,6 @@ entry:
   %1 = add nsw i32 %0, 1
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 8, %2
-  ret i64 %3
-}
-
-; 4 occurrences:
-; linux/optimized/io_pgtable.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/LegalizerHelper.cpp.ll
-; rocksdb/optimized/ribbon_config.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, 1
-  %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw i64 1, %2
   ret i64 %3
 }
 
@@ -193,7 +182,7 @@ entry:
   ret i64 %3
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cpython/optimized/frameobject.ll
 ; hyperscan/optimized/match.c.ll
@@ -204,7 +193,6 @@ entry:
 ; jemalloc/optimized/ckh.sym.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/kvmclock.ll
 ; linux/optimized/memalloc.ll
 ; linux/optimized/readahead.ll
 ; linux/optimized/slab_common.ll
@@ -293,7 +281,7 @@ entry:
   ret i64 %3
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; faiss/optimized/IDSelector.cpp.ll
 ; faiss/optimized/IndexBinaryHash.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -310,7 +298,6 @@ entry:
 ; linux/optimized/init_64.ll
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/kcore.ll
-; linux/optimized/list_lru.ll
 ; linux/optimized/memory-tiers.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/mm_init.ll
@@ -376,7 +363,7 @@ entry:
   ret i64 %3
 }
 
-; 86 occurrences:
+; 83 occurrences:
 ; abc/optimized/giaSatLut.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; flac/optimized/bitreader.c.ll
@@ -387,12 +374,10 @@ entry:
 ; linux/optimized/drm_buddy.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/evdev.ll
-; linux/optimized/hashtab.ll
 ; linux/optimized/hsu.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_gem_phys.ll
 ; linux/optimized/inet_hashtables.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_fb.ll
@@ -410,7 +395,6 @@ entry:
 ; linux/optimized/pipe.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/readahead.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/rhashtable.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/sky2.ll
@@ -536,6 +520,19 @@ entry:
   ret i64 %3
 }
 
+; 3 occurrences:
+; linux/optimized/io_pgtable.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, -1
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl nuw i64 1, %2
+  ret i64 %3
+}
+
 ; 2 occurrences:
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -548,9 +545,8 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; freetype/optimized/ftlzw.c.ll
-; linux/optimized/hashtab.ll
 ; linux/optimized/objpool.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; z3/optimized/sat_cut_simplifier.cpp.ll

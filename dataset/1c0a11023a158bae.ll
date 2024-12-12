@@ -1,5 +1,5 @@
 
-; 217 occurrences:
+; 219 occurrences:
 ; abc/optimized/epd.c.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -7,6 +7,8 @@
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
@@ -96,7 +98,7 @@
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luau/optimized/lnumprint.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll

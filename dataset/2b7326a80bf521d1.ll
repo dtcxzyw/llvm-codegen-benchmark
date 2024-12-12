@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; bullet3/optimized/btMiniSDF.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; gromacs/optimized/gen_vsite.cpp.ll
@@ -7,6 +7,7 @@
 ; gromacs/optimized/gmx_velacc.cpp.ll
 ; gromacs/optimized/hxprops.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(float %0, float %1) #0 {
 entry:

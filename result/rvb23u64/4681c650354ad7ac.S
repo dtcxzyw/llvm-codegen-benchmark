@@ -18,3 +18,8 @@ func0000000000000002:                   # @func0000000000000002
 	sh2add	a0, a0, a2
 	sh2add	a0, a1, a0
 	ret
+func000000000000000f:                   # @func000000000000000f
+	andi	a2, a2, -16
+	sh1add	a0, a0, a2
+	sh1add	a0, a1, a0
+	ret

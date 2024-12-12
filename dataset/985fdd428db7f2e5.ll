@@ -183,7 +183,7 @@ define i32 @func0000000000000040(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = add i128 %4, %0
+  %5 = add i128 %0, %4
   %6 = trunc i128 %5 to i32
   ret i32 %6
 }

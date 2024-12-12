@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; c3c/optimized/sema_casts.c.ll
 ; ceres/optimized/gradient_problem_solver.cc.ll
 ; ceres/optimized/solver.cc.ll
@@ -12,7 +12,6 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; llvm/optimized/X86MnemonicTables.cpp.ll
-; ocio/optimized/CDLOpData.cpp.ll
 ; quantlib/optimized/euribor.ll
 ; quantlib/optimized/eurlibor.ll
 ; quantlib/optimized/libor.ll
@@ -31,10 +30,9 @@ entry:
   ret i1 %1
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/cmTarget.cxx.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
-; rust-analyzer-rs/optimized/68ytxs4wk5ncclk.ll
 ; wireshark/optimized/packet-ieee1722.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i4 %0) #0 {

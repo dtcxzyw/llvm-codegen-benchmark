@@ -4,7 +4,8 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 func0000000000000000:                   # @func0000000000000000
 	subl	%edx, %esi
-	leal	3(%rsi,%rdi,2), %eax
+	shll	$4, %edi
+	leal	-2(%rsi,%rdi), %eax
 	retq
 func0000000000000054:                   # @func0000000000000054
 	subl	%edx, %esi

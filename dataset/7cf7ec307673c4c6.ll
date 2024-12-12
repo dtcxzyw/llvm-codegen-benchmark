@@ -17,10 +17,10 @@ entry:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; Function Attrs: nounwind
-define { ptr, i64 } @func000000000000000a(ptr %0, i64 %1) #0 {
+define { ptr, i64 } @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %0, i64 %1
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = insertvalue { ptr, i64 } poison, ptr %3, 0
   ret { ptr, i64 } %4
 }

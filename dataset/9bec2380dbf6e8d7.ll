@@ -38,7 +38,7 @@ entry:
   ret i64 %4
 }
 
-; 105 occurrences:
+; 104 occurrences:
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/slice.cpp.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
@@ -139,7 +139,6 @@ entry:
 ; qemu/optimized/block_vvfat.c.ll
 ; quest/optimized/QuEST_cpu.c.ll
 ; redis/optimized/server.ll
-; ruby/optimized/qsort.ll
 ; sqlite/optimized/sqlite3.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; velox/optimized/Ntile.cpp.ll

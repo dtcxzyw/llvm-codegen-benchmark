@@ -10,7 +10,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpb	%dil, %sil
 	seta	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	shrq	$32, %rsi
 	andb	$1, %sil
 	cmpb	%dil, %sil

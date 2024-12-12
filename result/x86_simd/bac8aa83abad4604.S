@@ -17,7 +17,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpsrld	$31, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.long	4294967292                      # 0xfffffffc
+	.long	94                              # 0x5e
 func0000000000000008:                   # @func0000000000000008
 	vpand	%xmm1, %xmm0, %xmm0
 	vpsllw	$15, %xmm0, %xmm0

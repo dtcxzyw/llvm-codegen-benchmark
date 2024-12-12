@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; clamav/optimized/clamdtop.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; hyperscan/optimized/repeatcompile.cpp.ll
@@ -7,6 +7,7 @@
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; linux/optimized/xhci-ring.ll
+; lvgl/optimized/lv_refr.ll
 ; qemu/optimized/dump_dump.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {

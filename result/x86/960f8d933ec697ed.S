@@ -73,6 +73,12 @@ func0000000000000019:                   # @func0000000000000019
 	shlq	$33, %rdi
 	leaq	(%rdi,%rax,2), %rax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	movq	%rdi, %rax
+	shlq	$52, %rsi
+	shlq	$63, %rax
+	orq	%rsi, %rax
+	retq
 func000000000000003c:                   # @func000000000000003c
 	shlq	$58, %rsi
 	leaq	(%rdi,%rdi), %rax

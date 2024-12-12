@@ -2,6 +2,8 @@
 ; 99 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/bignum.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -33,6 +35,7 @@
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; llvm/optimized/SyntheticCountsUtils.cpp.ll
+; lvgl/optimized/lv_freetype_glyph.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
@@ -59,9 +62,6 @@
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
 ; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/cfl.c.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/decodemv.c.ll
-; openusd/optimized/detokenize.c.ll
 ; openusd/optimized/loopfilter.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/spgxlog.ll
@@ -107,7 +107,7 @@ entry:
   ret i16 %3
 }
 
-; 20 occurrences:
+; 23 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -125,6 +125,9 @@ entry:
 ; minetest/optimized/inventory.cpp.ll
 ; openusd/optimized/binary_codes_reader.c.ll
 ; openusd/optimized/bitreader_buffer.c.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
+; openusd/optimized/detokenize.c.ll
 ; slurm/optimized/dist_tasks.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wolfssl/optimized/tls.c.ll
@@ -136,7 +139,7 @@ entry:
   ret i16 %3
 }
 
-; 30 occurrences:
+; 26 occurrences:
 ; clamav/optimized/Ppmd7Dec.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -153,11 +156,7 @@ entry:
 ; openusd/optimized/decodetxb.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/hw_net_tulip.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; wireshark/optimized/packet-dcom-cba-acco.c.ll
 ; wireshark/optimized/packet-infiniband.c.ll
 ; wireshark/optimized/packet-ipv6.c.ll
@@ -175,12 +174,11 @@ entry:
   ret i16 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/decodemv.c.ll
-; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/entdec.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll

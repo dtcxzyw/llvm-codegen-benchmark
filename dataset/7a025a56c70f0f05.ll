@@ -7,11 +7,11 @@
 ; openusd/optimized/restoration.c.ll
 ; openusd/optimized/thread_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = sdiv i32 %2, 2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -21,11 +21,11 @@ entry:
 ; opencv/optimized/minarea.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 5
   %3 = sdiv i32 %2, 8
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 

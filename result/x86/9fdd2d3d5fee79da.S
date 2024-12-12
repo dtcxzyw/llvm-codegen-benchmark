@@ -38,6 +38,11 @@ func000000000000000d:                   # @func000000000000000d
 	addq	%rdi, %rax
 	shlq	$3, %rax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	movslq	%esi, %rax
+	addq	%rdi, %rax
+	addq	%rax, %rax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	leal	(%rdi,%rsi), %eax
 	shlq	$32, %rax

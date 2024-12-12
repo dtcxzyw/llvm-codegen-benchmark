@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	%al, %al
 	sete	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	shrxl	%esi, %edi, %eax
 	testb	%al, %al
 	setns	%al
@@ -14,7 +14,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$4, %eax
 	setne	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	shrxl	%esi, %edi, %eax
 	andl	$15, %eax
 	cmpl	$5, %eax

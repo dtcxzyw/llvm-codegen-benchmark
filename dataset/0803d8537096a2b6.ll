@@ -1,65 +1,26 @@
 
-; 124 occurrences:
+%"struct.LightGBM::Tree::PathElement.2907705" = type { i32, double, double, double }
+
+; 77 occurrences:
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/bdcCore.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cutMan.c.ll
 ; abc/optimized/dsc.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btMultiBody.ll
-; ceres/optimized/block_random_access_sparse_matrix.cc.ll
-; ceres/optimized/block_sparse_matrix.cc.ll
-; ceres/optimized/evaluator.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_6.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
+; bullet3/optimized/btMultiBodyDynamicsWorld.ll
 ; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_4.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_4_6.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_4_8.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_3_3_3.cc.ll
 ; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
 ; ceres/optimized/partitioned_matrix_view_4_4_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_4.cc.ll
 ; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
-; ceres/optimized/problem_impl.cc.ll
-; ceres/optimized/schur_eliminator_2_2_2.cc.ll
-; ceres/optimized/schur_eliminator_2_2_3.cc.ll
-; ceres/optimized/schur_eliminator_2_2_4.cc.ll
-; ceres/optimized/schur_eliminator_2_2_d.cc.ll
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_2_3_d.cc.ll
-; ceres/optimized/schur_eliminator_2_4_3.cc.ll
-; ceres/optimized/schur_eliminator_2_4_4.cc.ll
-; ceres/optimized/schur_eliminator_2_4_6.cc.ll
-; ceres/optimized/schur_eliminator_2_4_8.cc.ll
-; ceres/optimized/schur_eliminator_2_4_9.cc.ll
-; ceres/optimized/schur_eliminator_2_4_d.cc.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_2.cc.ll
-; ceres/optimized/schur_eliminator_4_4_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_4.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; gromacs/optimized/collect.cpp.ll
@@ -76,23 +37,19 @@
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/maketexture.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
-; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/posit.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openexr/optimized/ImfB44Compressor.cpp.ll
 ; openexr/optimized/ImfPxr24Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
 ; openexr/optimized/internal_pxr24.c.ll
 ; openexr/optimized/parse_header.c.ll
 ; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_D64.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_F32.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
-; openjdk/optimized/mlib_ImageLookUp_64.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
-; openjdk/optimized/mlib_c_ImageLookUp_f.ll
 ; openmpi/optimized/ad_read_coll.ll
 ; openmpi/optimized/ad_write_coll.ll
 ; openmpi/optimized/coll_base_allgatherv.ll
@@ -100,9 +57,7 @@
 ; openmpi/optimized/mca_btl_smcuda_la-btl_smcuda.ll
 ; openmpi/optimized/topo_base_dist_graph_create.ll
 ; openspiel/optimized/oh_hell.cc.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; openusd/optimized/aom_scale.c.ll
@@ -133,7 +88,7 @@ entry:
   ret ptr %4
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; libwebp/optimized/predictor_enc.c.ll
 ; openjdk/optimized/mlib_ImageConv_16ext.ll
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
@@ -141,8 +96,6 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_8nw.ll
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
-; openmpi/optimized/ad_read_coll.ll
-; openmpi/optimized/ad_write_coll.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
@@ -152,20 +105,19 @@ entry:
   ret ptr %4
 }
 
-; 7 occurrences:
-; bullet3/optimized/btMultiBodyDynamicsWorld.ll
-; linux/optimized/drm_color_mgmt.ll
-; oiio/optimized/maketexture.cpp.ll
-; opencv/optimized/tree.cpp.ll
-; openmpi/optimized/ad_aggregate.ll
-; openmpi/optimized/ad_read_coll.ll
-; openmpi/optimized/ad_write_coll.ll
+; 6 occurrences:
+; opencv/optimized/dxt.cpp.ll
+; openexr/optimized/internal_b44.c.ll
+; openexr/optimized/unpack.c.ll
+; openjdk/optimized/mlib_ImageLookUp_64.ll
+; openjdk/optimized/mlib_c_ImageLookUp_f.ll
+; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr float, ptr %0, i64 %2
-  %4 = getelementptr float, ptr %3, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -178,6 +130,33 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr nusw i32, ptr %0, i64 %2
   %4 = getelementptr i32, ptr %3, i64 %2
+  ret ptr %4
+}
+
+; 1 occurrences:
+; lightgbm/optimized/tree.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907705", ptr %0, i64 %2
+  %4 = getelementptr nusw nuw %"struct.LightGBM::Tree::PathElement.2907705", ptr %3, i64 %2
+  ret ptr %4
+}
+
+; 6 occurrences:
+; linux/optimized/drm_color_mgmt.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; openmpi/optimized/ad_aggregate.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr float, ptr %0, i64 %2
+  %4 = getelementptr float, ptr %3, i64 %2
   ret ptr %4
 }
 

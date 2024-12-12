@@ -1,5 +1,7 @@
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/dlasv2.cpp.ll
 ; openblas/optimized/dlasv2.c.ll
 ; openspiel/optimized/mcts.cc.ll

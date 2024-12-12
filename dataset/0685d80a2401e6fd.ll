@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i32 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 287454023
   %3 = icmp eq ptr %0, null

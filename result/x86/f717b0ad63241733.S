@@ -1,4 +1,13 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000021:                   # @func0000000000000021
+	cmpl	$-1, %edi
+	sete	%cl
+	cmpl	$-1, %edx
+	sete	%al
+	xorb	$1, %sil
+	orb	%sil, %al
+	andb	%cl, %al
+	retq
+func0000000000000026:                   # @func0000000000000026
 	testb	$1, %sil
 	movl	$27, %eax
 	cmovnel	%edx, %eax
@@ -6,13 +15,4 @@ func0000000000000016:                   # @func0000000000000016
 	cmovnel	%edi, %eax
 	cmpl	$28, %eax
 	setl	%al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	testb	$1, %sil
-	movl	$26, %eax
-	cmovnel	%edx, %eax
-	cmpl	$-1, %edi
-	cmovnel	%edi, %eax
-	cmpl	$2147483638, %eax               # imm = 0x7FFFFFF6
-	setb	%al
 	retq

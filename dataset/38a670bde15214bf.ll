@@ -1,12 +1,7 @@
 
-; 35 occurrences:
+; 58 occurrences:
 ; clamav/optimized/bytecode.c.ll
-; diesel-rs/optimized/1k9itxwmy6phzvjw.ll
-; diesel-rs/optimized/2phdoksmzkii6al2.ll
 ; diesel-rs/optimized/3nhirlswgfgsoryk.ll
-; diesel-rs/optimized/53pwara59c5lk385.ll
-; diesel-rs/optimized/eteiwlvfezkcrkh.ll
-; diesel-rs/optimized/hznnvx0rqzdhedj.ll
 ; duckdb/optimized/ub_duckdb_common_types_column.cpp.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; llvm/optimized/NativeFunctionSymbol.cpp.ll
@@ -35,6 +30,34 @@
 ; wasmtime-rs/optimized/1qo0tg1ju819b23h.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/055l6m6wb4e4jq2j59cjsdkaz.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/9ydmyaey957xyuywtl3djlzml.ll
+; zed-rs/optimized/apge5vvp9hwixphamezb75yuv.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
@@ -45,15 +68,41 @@ entry:
   ret ptr %5
 }
 
-; 8 occurrences:
+; 5 occurrences:
+; image-rs/optimized/4srzh4wujeew249y.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 32
+  %4 = or disjoint i64 %3, %0
+  %5 = inttoptr i64 %4 to ptr
+  ret ptr %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000d(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl nuw i64 %2, 48
+  %4 = or disjoint i64 %0, %3
+  %5 = inttoptr i64 %4 to ptr
+  ret ptr %5
+}
+
+; 6 occurrences:
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
-; luajit/optimized/lj_obj.ll
-; luajit/optimized/lj_obj_dyn.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:

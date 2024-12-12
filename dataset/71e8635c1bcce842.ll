@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 42 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -31,10 +31,15 @@
 ; ruby/optimized/st.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
-; spike/optimized/i64_to_f32.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
@@ -46,8 +51,7 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
-; linux/optimized/msr.ll
+; 3 occurrences:
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/hw_core_qdev-properties.c.ll
 ; ripgrep-rs/optimized/3bctup5kmnkujhz5.ll

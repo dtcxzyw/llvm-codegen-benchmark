@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/collationcompare.ll
 ; linux/optimized/intel_color.ll
@@ -28,9 +28,8 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-cigi.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 10
   %3 = icmp eq i32 %2, 0
@@ -46,7 +45,7 @@ entry:
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 48
   %3 = icmp ne i32 %2, 0
@@ -60,7 +59,7 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; openjdk/optimized/hb-ot-shaper-myanmar.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000184(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 96
   %3 = icmp ne i32 %2, 0
@@ -81,7 +80,7 @@ entry:
 ; php/optimized/tar.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 96
   %3 = icmp ne i32 %2, 0
@@ -90,7 +89,7 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; icu/optimized/collationdatabuilder.ll
 ; linux/optimized/i915_gem_stolen.ll
 ; linux/optimized/iface.ll
@@ -99,6 +98,7 @@ entry:
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/DiagnosticIDs.cpp.ll
+; lvgl/optimized/lv_textarea.ll
 ; php/optimized/zend_execute.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
@@ -108,7 +108,7 @@ entry:
 ; wireshark/optimized/packet-obd-ii.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 131072
   %3 = icmp eq i32 %2, 0
@@ -125,7 +125,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = icmp eq i32 %2, 4
@@ -134,7 +134,8 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; icu/optimized/collationfastlatin.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -154,10 +155,10 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000301(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 267911168
-  %3 = icmp ugt i32 %2, 256901120
+  %3 = icmp samesign ugt i32 %2, 256901120
   %4 = icmp eq i8 %0, 13
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -167,7 +168,7 @@ entry:
 ; llvm/optimized/InstCombineAddSub.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp eq i32 %2, 22
@@ -179,7 +180,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-bfd.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000188(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %3 = icmp ne i32 %2, 0
@@ -191,10 +192,34 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000308(i8 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 2147483646
+  %3 = icmp ne i32 %2, 0
+  %4 = icmp ugt i8 %0, 1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func000000000000030c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1073741823
-  %3 = icmp ugt i32 %2, 4
+  %3 = icmp samesign ugt i32 %2, 4
+  %4 = icmp ne i8 %0, 0
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; icu/optimized/uresdata.ll
+; Function Attrs: nounwind
+define i1 @func000000000000028c(i8 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 248
+  %3 = icmp eq i32 %2, 0
   %4 = icmp ne i8 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

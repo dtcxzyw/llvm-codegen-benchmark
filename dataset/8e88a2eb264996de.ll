@@ -6,8 +6,8 @@
 define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp slt i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp sgt i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -17,10 +17,10 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_intern.ll
 ; openssl/optimized/libcrypto-shlib-bn_intern.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002e(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004e(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
-  %4 = icmp sge i32 %3, %1
+  %4 = icmp sle i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -30,10 +30,10 @@ entry:
 ; minetest/optimized/servermap.cpp.ll
 ; openjdk/optimized/loopTransform.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -41,11 +41,11 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/vectorization.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
-  %4 = icmp ne i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ne i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -60,19 +60,8 @@ entry:
 define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 6, %2
-  %4 = icmp eq i32 %3, %1
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openjdk/optimized/divnode.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 0, %2
-  %4 = icmp ult i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp eq i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -85,8 +74,8 @@ entry:
 define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 117, %2
-  %4 = icmp ult i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ugt i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -97,7 +86,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -106,11 +95,11 @@ entry:
 ; icu/optimized/unistr.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000054(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
-  %4 = icmp slt i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp sgt i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

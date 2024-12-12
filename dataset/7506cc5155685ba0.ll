@@ -10,9 +10,11 @@ entry:
   ret i32 %5
 }
 
-; 30 occurrences:
+; 33 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -23,6 +25,7 @@ entry:
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
+; icu/optimized/calendar.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; nori/optimized/screen.cpp.ll
@@ -50,7 +53,7 @@ entry:
   ret i32 %5
 }
 
-; 50 occurrences:
+; 52 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; cmake/optimized/lz_encoder_mf.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -61,6 +64,7 @@ entry:
 ; icu/optimized/gregocal.ll
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
+; lvgl/optimized/lv_display.ll
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -101,6 +105,7 @@ entry:
 ; yosys/optimized/show.ll
 ; yosys/optimized/simplify.ll
 ; z3/optimized/fpa2bv_converter.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -191,8 +196,9 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; graphviz/optimized/pack.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openblas/optimized/dggglm.c.ll
 ; openblas/optimized/dlasyf.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
@@ -204,8 +210,8 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = sub i32 %3, %0
-  %5 = add nsw i32 %4, 1
+  %4 = xor i32 %0, -1
+  %5 = add i32 %3, %4
   ret i32 %5
 }
 

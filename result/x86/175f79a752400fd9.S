@@ -35,3 +35,15 @@ func0000000000000006:                   # @func0000000000000006
 	andl	%esi, %edi
 	andb	%dil, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	shrq	$32, %rdx
+	setne	%al
+	andl	%esi, %edi
+	andb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	shrq	$32, %rdx
+	sete	%al
+	andl	%esi, %edi
+	andb	%dil, %al
+	retq

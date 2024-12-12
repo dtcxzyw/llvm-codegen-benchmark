@@ -11,7 +11,7 @@ entry:
   ret i32 %6
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -21,7 +21,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
-; slurm/optimized/ebpf.ll
 ; stockfish/optimized/search.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/packet-c1222.c.ll

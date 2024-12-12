@@ -46,7 +46,7 @@
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000106(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
   %4 = getelementptr nusw ptr, ptr %1, i64 %3
@@ -79,7 +79,7 @@ entry:
 ; velox/optimized/ComplexVector.cpp.ll
 ; z3/optimized/intblast_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000010a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
   %4 = getelementptr nusw i32, ptr %1, i64 %3

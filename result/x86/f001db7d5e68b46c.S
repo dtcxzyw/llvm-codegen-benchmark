@@ -3,7 +3,7 @@ func0000000000000002:                   # @func0000000000000002
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000056:                   # @func0000000000000056
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	setge	%al
@@ -23,12 +23,12 @@ func0000000000000012:                   # @func0000000000000012
 	cmpq	%rdi, %rsi
 	setae	%al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	setl	%al

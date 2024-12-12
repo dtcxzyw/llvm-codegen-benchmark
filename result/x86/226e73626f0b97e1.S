@@ -1,9 +1,0 @@
-func0000000000000021:                   # @func0000000000000021
-	testl	$251658240, %edi                # imm = 0xF000000
-	sete	%al
-	retq
-func0000000000000001:                   # @func0000000000000001
-	andl	$192, %edi
-	cmpl	$128, %edi
-	sete	%al
-	retq

@@ -60,25 +60,25 @@ func0000000000000011:                   # @func0000000000000011
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
-.LCPI8_0:
-	.long	96                              # 0x60
-func000000000000001f:                   # @func000000000000001f
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vpbroadcastd	.LCPI8_0(%rip), %xmm1   # xmm1 = [96,96,96,96]
-	vpsubd	%xmm0, %xmm1, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	retq
 func0000000000000002:                   # @func0000000000000002
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
-.LCPI10_0:
+.LCPI9_0:
 	.long	14                              # 0xe
 func000000000000001b:                   # @func000000000000001b
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpbroadcastd	.LCPI10_0(%rip), %xmm1  # xmm1 = [14,14,14,14]
+	vpbroadcastd	.LCPI9_0(%rip), %xmm1   # xmm1 = [14,14,14,14]
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+.LCPI10_0:
+	.long	8192                            # 0x2000
+func000000000000001f:                   # @func000000000000001f
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpbroadcastd	.LCPI10_0(%rip), %xmm1  # xmm1 = [8192,8192,8192,8192]
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq

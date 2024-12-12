@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
@@ -26,13 +26,12 @@
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; quantlib/optimized/discretizedswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/nonstandardswap.ll
 ; velox/optimized/PeeledEncoding.cpp.ll
 ; yosys/optimized/freduce.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = ashr exact i64 %2, 4

@@ -43,16 +43,6 @@ func0000000000000000:                   # @func0000000000000000
 	andl	$-8, %eax
 	addl	$-8, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	addl	$129, %edi
-	movzbl	%dil, %eax
-	decl	%eax
-	retq
-func000000000000001b:                   # @func000000000000001b
-	incl	%edi
-	movzbl	%dil, %eax
-	decl	%eax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	leal	8(%rdi), %eax
 	andl	$1073741823, %eax               # imm = 0x3FFFFFFF
@@ -62,9 +52,4 @@ func000000000000001a:                   # @func000000000000001a
 	leal	3(%rdi), %eax
 	andl	$1020, %eax                     # imm = 0x3FC
 	addl	$-2, %eax
-	retq
-func0000000000000017:                   # @func0000000000000017
-	leal	-1(%rdi), %eax
-	andl	$3, %eax
-	incl	%eax
 	retq

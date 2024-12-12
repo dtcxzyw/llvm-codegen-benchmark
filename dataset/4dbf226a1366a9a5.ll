@@ -1,5 +1,5 @@
 
-; 363 occurrences:
+; 345 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcRr.c.ll
@@ -57,7 +57,6 @@
 ; linux/optimized/aio.ll
 ; linux/optimized/anon_inodes.ll
 ; linux/optimized/api.ll
-; linux/optimized/audit_fsnotify.ll
 ; linux/optimized/audit_watch.ll
 ; linux/optimized/auditfilter.ll
 ; linux/optimized/auth.ll
@@ -68,14 +67,12 @@
 ; linux/optimized/bdev.ll
 ; linux/optimized/blk-cgroup.ll
 ; linux/optimized/blk-mq.ll
-; linux/optimized/bsg.ll
 ; linux/optimized/cabletest.ll
 ; linux/optimized/calipso.ll
 ; linux/optimized/callthunks.ll
 ; linux/optimized/cfg.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/chan.ll
-; linux/optimized/class.ll
 ; linux/optimized/client.ll
 ; linux/optimized/clnt.ll
 ; linux/optimized/clntlock.ll
@@ -94,7 +91,6 @@
 ; linux/optimized/drm_atomic_helper.ll
 ; linux/optimized/drm_bridge_connector.ll
 ; linux/optimized/drm_buddy.ll
-; linux/optimized/drm_client.ll
 ; linux/optimized/drm_crtc.ll
 ; linux/optimized/drm_drv.ll
 ; linux/optimized/drm_encoder.ll
@@ -104,7 +100,6 @@
 ; linux/optimized/drm_lease.ll
 ; linux/optimized/drm_mipi_dsi.ll
 ; linux/optimized/drm_plane.ll
-; linux/optimized/drm_prime.ll
 ; linux/optimized/drm_sysfs.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/ecb.ll
@@ -112,17 +107,14 @@
 ; linux/optimized/expfs.ll
 ; linux/optimized/ext4_jbd2.ll
 ; linux/optimized/extents.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/filter.ll
-; linux/optimized/fixed_phy.ll
 ; linux/optimized/fork.ll
 ; linux/optimized/fs_context.ll
 ; linux/optimized/gen6_ppgtt.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/genetlink.ll
 ; linux/optimized/geniv.ll
-; linux/optimized/gso.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hda_jack.ll
@@ -132,8 +124,6 @@
 ; linux/optimized/i2c-core-acpi.ll
 ; linux/optimized/i2c-core-base.ll
 ; linux/optimized/i2c-i801.ll
-; linux/optimized/i915_cmd_parser.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/i915_gem_context.ll
 ; linux/optimized/i915_gem_create.ll
@@ -171,7 +161,6 @@
 ; linux/optimized/intel_guc.ll
 ; linux/optimized/intel_guc_ct.ll
 ; linux/optimized/intel_guc_log.ll
-; linux/optimized/intel_guc_slpc.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_huc.ll
 ; linux/optimized/intel_memory_region.ll
@@ -202,11 +191,9 @@
 ; linux/optimized/memory-tiers.ll
 ; linux/optimized/message.ll
 ; linux/optimized/mmu_notifier.ll
-; linux/optimized/msgutil.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/namei_msdos.ll
 ; linux/optimized/namei_vfat.ll
-; linux/optimized/namespaces.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/net_failover.ll
 ; linux/optimized/netconsole.ll
@@ -232,7 +219,6 @@
 ; linux/optimized/posix_acl.ll
 ; linux/optimized/power_supply_core.ll
 ; linux/optimized/proc_sysctl.ll
-; linux/optimized/process_keys.ll
 ; linux/optimized/ptp_clock.ll
 ; linux/optimized/ptrace.ll
 ; linux/optimized/quota.ll
@@ -242,12 +228,9 @@
 ; linux/optimized/route.ll
 ; linux/optimized/rpc_pipe.ll
 ; linux/optimized/rtnetlink.ll
-; linux/optimized/runtime-map.ll
 ; linux/optimized/rw.ll
 ; linux/optimized/sch_api.ll
-; linux/optimized/sch_fifo.ll
 ; linux/optimized/seccomp.ll
-; linux/optimized/secretmem.ll
 ; linux/optimized/serial_base_bus.ll
 ; linux/optimized/sg.ll
 ; linux/optimized/shash.ll
@@ -273,11 +256,8 @@
 ; linux/optimized/vfs_inode.ll
 ; linux/optimized/vfs_inode_dotl.ll
 ; linux/optimized/vfs_super.ll
-; linux/optimized/virtgpu_prime.ll
-; linux/optimized/virtgpu_vram.ll
 ; linux/optimized/virtio_pci_modern.ll
 ; linux/optimized/vmalloc.ll
-; linux/optimized/wakeup_stats.ll
 ; linux/optimized/wmi.ll
 ; linux/optimized/workqueue.ll
 ; linux/optimized/write.ll
@@ -312,7 +292,6 @@
 ; qemu/optimized/hw_scsi_vhost-scsi.c.ll
 ; qemu/optimized/net_tap.c.ll
 ; qemu/optimized/ui_keymaps.c.ll
-; qemu/optimized/util_filemonitor-inotify.c.ll
 ; qemu/optimized/util_oslib-posix.c.ll
 ; redis/optimized/config.ll
 ; redis/optimized/eval.ll
@@ -363,6 +342,9 @@
 ; wireshark/optimized/proto.c.ll
 ; wireshark/optimized/protobuf_lang_tree.c.ll
 ; wireshark/optimized/tap-wspstat.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i32 %0) #0 {
 entry:

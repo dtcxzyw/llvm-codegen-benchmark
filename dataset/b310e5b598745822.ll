@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.2808887 = type { %union.Value.2808888, [1 x i32], i32 }
-%union.Value.2808888 = type { ptr }
+%struct.lua_TValue.2920887 = type { %union.Value.2920888, [1 x i32], i32 }
+%union.Value.2920888 = type { ptr }
 
 ; 6 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
@@ -14,7 +14,7 @@ define ptr @func0000000000000046(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 8
   %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i32, ptr %0, i64 %6
   ret ptr %7
@@ -27,7 +27,7 @@ define ptr @func0000000000000066(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 1
   %4 = trunc nuw i64 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i32, ptr %0, i64 %6
   ret ptr %7
@@ -47,9 +47,9 @@ define ptr @func0000000000000042(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 4
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %struct.lua_TValue.2808887, ptr %0, i64 %6
+  %7 = getelementptr nusw %struct.lua_TValue.2920887, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -60,7 +60,7 @@ define ptr @func0000000000000036(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 63
   %4 = trunc nuw nsw i64 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i8, ptr %0, i64 %6
   ret ptr %7
@@ -78,7 +78,7 @@ define ptr @func0000000000000026(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i8, ptr %0, i64 %6
   ret ptr %7
@@ -91,23 +91,22 @@ define ptr @func0000000000000030(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 63
   %4 = trunc nuw nsw i64 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; libjpeg-turbo/optimized/jdmerge.c.ll
-; opencv/optimized/genericgfpoly.cpp.ll
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 16
   %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i8, ptr %0, i64 %6
   ret ptr %7
@@ -121,7 +120,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 16
   %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7

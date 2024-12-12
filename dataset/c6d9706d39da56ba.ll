@@ -20,11 +20,11 @@ entry:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = urem i32 %1, %3
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 

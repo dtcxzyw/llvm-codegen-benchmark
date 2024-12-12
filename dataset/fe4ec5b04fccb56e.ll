@@ -60,7 +60,7 @@
 ; tinympc/optimized/quadrotor_tracking.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i61
   %3 = icmp ult i61 %2, 4000

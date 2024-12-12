@@ -7,7 +7,7 @@
 define double @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = uitofp i32 %3 to double
   ret double %4
 }
@@ -20,7 +20,7 @@ entry:
 define double @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = uitofp i32 %3 to double
   ret double %4
 }
@@ -37,7 +37,7 @@ entry:
 define double @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = uitofp i32 %3 to double
   ret double %4
 }

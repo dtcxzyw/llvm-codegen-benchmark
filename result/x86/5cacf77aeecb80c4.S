@@ -1,9 +1,9 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	orl	%edx, %esi
 	movzbl	%sil, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	orl	%edx, %esi
 	movzbl	%sil, %eax
 	addq	%rdi, %rax

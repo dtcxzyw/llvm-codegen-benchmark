@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; lvgl/optimized/lv_span.ll
 ; openjdk/optimized/instanceKlass.ll
 ; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/jfrStringPool.ll

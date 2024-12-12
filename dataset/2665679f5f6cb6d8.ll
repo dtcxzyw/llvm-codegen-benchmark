@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 57 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; cmake/optimized/netrc.c.ll
 ; cmake/optimized/nghttp2_stream.c.ll
@@ -32,7 +32,6 @@
 ; linux/optimized/hda_jack.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/mlme.ll
-; linux/optimized/pcm_misc.ll
 ; linux/optimized/tcp_sigpool.ll
 ; llvm/optimized/AArch64Subtarget.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -59,7 +58,7 @@
 ; wireshark/optimized/packet-isakmp.c.ll
 ; wireshark/optimized/wslog.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, ptr %1) #0 {
+define i1 @func000000000000018c(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ne i8 %0, 0
@@ -67,7 +66,7 @@ entry:
   ret i1 %4
 }
 
-; 59 occurrences:
+; 61 occurrences:
 ; bullet3/optimized/b3DNA.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; clamav/optimized/phishcheck.c.ll
@@ -127,8 +126,10 @@ entry:
 ; wireshark/optimized/packet-sane.c.ll
 ; wireshark/optimized/packet-sbus.c.ll
 ; wireshark/optimized/packet-smb.c.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, ptr %1) #0 {
+define i1 @func0000000000000181(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp eq i8 %0, 125
@@ -220,7 +221,7 @@ entry:
 ; wireshark/optimized/packet-s101.c.ll
 ; yosys/optimized/opt_expr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq i8 %0, 1
@@ -247,7 +248,7 @@ entry:
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; verilator/optimized/V3LinkDot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, ptr %1) #0 {
+define i1 @func000000000000002c(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ne i8 %0, 0
@@ -255,15 +256,16 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/type.cc.ll
 ; libpng/optimized/pngrtran.c.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
 ; openjdk/optimized/pngrtran.ll
 ; wireshark/optimized/packet-fcels.c.ll
 ; wireshark/optimized/packet-fcswils.c.ll
 ; wireshark/optimized/packet-icmpv6.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0, ptr %1) #0 {
+define i1 @func0000000000000184(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ult i8 %0, 9
@@ -271,8 +273,7 @@ entry:
   ret i1 %4
 }
 
-; 31 occurrences:
-; cpython/optimized/frameobject.ll
+; 30 occurrences:
 ; raylib/optimized/raudio.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; yosys/optimized/abc.ll
@@ -304,10 +305,45 @@ entry:
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i8 %0, ptr %1) #0 {
+define i1 @func0000000000000188(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ugt i8 %0, 1
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i8 %0, ptr %1) #0 {
+entry:
+  %2 = icmp eq ptr %1, null
+  %3 = icmp samesign ult i8 %0, 2
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000194(i8 %0, ptr %1) #0 {
+entry:
+  %2 = icmp ne ptr %1, null
+  %3 = icmp samesign ult i8 %0, 2
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 2 occurrences:
+; cpython/optimized/frameobject.ll
+; icu/optimized/numparse_affixes.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000198(i8 %0, ptr %1) #0 {
+entry:
+  %2 = icmp ne ptr %1, null
+  %3 = icmp samesign ugt i8 %0, 1
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }

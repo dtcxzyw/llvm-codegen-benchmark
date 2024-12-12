@@ -1,5 +1,5 @@
 
-; 202 occurrences:
+; 204 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -181,6 +181,7 @@
 ; openusd/optimized/vec3f.cpp.ll
 ; openusd/optimized/vec3h.cpp.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
 ; openvdb/optimized/RayTracer.cc.ll
 ; openvdb/optimized/VolumeAdvect.cc.ll
@@ -201,6 +202,7 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; xgboost/optimized/gbtree.cc.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/WhiteRectDetector.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(float %0, float %1) #0 {

@@ -1,17 +1,16 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/reoSwap.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; openjdk/optimized/jfrStackTrace.ll
 ; wireshark/optimized/io_graph_item.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = mul i64 %4, 31
   %6 = add i64 %5, %0
   ret i64 %6
@@ -33,8 +32,24 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul nsw i64 %4, 24
+  %6 = add nsw i64 %0, %5
+  ret i64 %6
+}
+
+; 5 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000035(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = mul nsw i64 %4, 1000000
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -45,7 +60,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul i64 %4, 1000000
   %6 = add i64 %5, %0
   ret i64 %6
@@ -57,9 +72,9 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul nsw i64 %4, 60
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

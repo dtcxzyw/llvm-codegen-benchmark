@@ -1,6 +1,7 @@
 
-; 309 occurrences:
+; 308 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/TestMemory.cpp.ll
 ; folly/optimized/JemallocHugePageAllocator.cpp.ll
@@ -10,7 +11,6 @@
 ; hermes/optimized/StringSaver.cpp.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; linux/optimized/ccm.ll
-; linux/optimized/ctr.ll
 ; linux/optimized/drbg.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/gcm.ll
@@ -279,7 +279,6 @@
 ; openusd/optimized/aom_image.c.ll
 ; openusd/optimized/aom_mem.c.ll
 ; openusd/optimized/yv12config.c.ll
-; ozz-animation/optimized/allocator.cc.ll
 ; postgres/optimized/mcxt.ll
 ; protobuf/optimized/arena.cc.ll
 ; qemu/optimized/tcg.c.ll

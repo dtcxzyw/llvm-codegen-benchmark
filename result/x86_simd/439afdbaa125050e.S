@@ -22,7 +22,7 @@ func0000000000000038:                   # @func0000000000000038
 	vpmovzxbd	%xmm2, %xmm2            # xmm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero
 	vpmovqd	%ymm1, %xmm1
 	vpsllvd	%xmm1, %xmm2, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:

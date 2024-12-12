@@ -58,7 +58,7 @@ func0000000000000001:                   # @func0000000000000001
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpandd	.LCPI2_2(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	.LCPI2_1(%rip){1to8}, %ymm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
@@ -69,7 +69,7 @@ func0000000000000021:                   # @func0000000000000021
 	retq
 .LCPI3_0:
 	.long	8                               # 0x8
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vptestmd	.LCPI3_0(%rip){1to8}, %ymm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1

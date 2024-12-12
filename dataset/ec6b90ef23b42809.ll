@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; regex-rs/optimized/4sqmacerw61c696o.ll
+; turborepo-rs/optimized/6jkgkc1600lrz2u0oa3gubskw.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -20,6 +21,19 @@ entry:
   %3 = shl nsw i64 %2, 2
   %4 = select i1 %0, i64 %3, i64 %1
   %5 = add nsw i64 %4, 24
+  ret i64 %5
+}
+
+; 3 occurrences:
+; hyperscan/optimized/teddy_compile.cpp.ll
+; regex-rs/optimized/32jw1oy2yofrhudk.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 1
+  %4 = select i1 %0, i64 %3, i64 %1
+  %5 = add nuw nsw i64 %4, 1
   ret i64 %5
 }
 

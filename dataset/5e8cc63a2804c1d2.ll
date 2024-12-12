@@ -1,12 +1,11 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; opencv/optimized/net_impl.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind

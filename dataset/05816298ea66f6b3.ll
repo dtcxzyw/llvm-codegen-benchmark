@@ -1,24 +1,15 @@
 
-; 15 occurrences:
-; hdf5/optimized/H5Fsuper_cache.c.ll
-; hdf5/optimized/H5HGcache.c.ll
-; hdf5/optimized/H5HLcache.c.ll
-; hdf5/optimized/H5Ocache.c.ll
-; hdf5/optimized/H5Ocont.c.ll
-; hdf5/optimized/H5Olayout.c.ll
-; hdf5/optimized/H5Ostab.c.ll
-; hdf5/optimized/H5Rint.c.ll
-; hdf5/optimized/H5Sall.c.ll
-; hdf5/optimized/H5Snone.c.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
+%union.IRIns.3680915 = type { %struct.GCRef.3680916 }
+%struct.GCRef.3680916 = type { i64 }
+
+; 3 occurrences:
 ; php/optimized/pass1.ll
 ; php/optimized/zend_builtin_functions.ll
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a0(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func00000000000000e0(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -2
   %5 = ptrtoint ptr %4 to i64
   %6 = add i64 %5, 1
@@ -55,6 +46,42 @@ entry:
   %4 = getelementptr i8, ptr %3, i64 21
   %5 = ptrtoint ptr %4 to i64
   %6 = add i64 %5, 1
+  %7 = sub i64 %6, %0
+  ret i64 %7
+}
+
+; 10 occurrences:
+; hdf5/optimized/H5Fsuper_cache.c.ll
+; hdf5/optimized/H5HGcache.c.ll
+; hdf5/optimized/H5HLcache.c.ll
+; hdf5/optimized/H5Ocache.c.ll
+; hdf5/optimized/H5Ocont.c.ll
+; hdf5/optimized/H5Olayout.c.ll
+; hdf5/optimized/H5Ostab.c.ll
+; hdf5/optimized/H5Rint.c.ll
+; hdf5/optimized/H5Sall.c.ll
+; hdf5/optimized/H5Snone.c.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000a0(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -1
+  %5 = ptrtoint ptr %4 to i64
+  %6 = add i64 %5, 1
+  %7 = sub i64 %6, %0
+  ret i64 %7
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000f0(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw %union.IRIns.3680915, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
+  %5 = ptrtoint ptr %4 to i64
+  %6 = add i64 %5, 2147483648
   %7 = sub i64 %6, %0
   ret i64 %7
 }

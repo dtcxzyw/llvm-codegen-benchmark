@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 70 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absOldSat.c.ll
@@ -50,7 +50,6 @@
 ; libwebp/optimized/histogram_enc.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; lightgbm/optimized/bin.cpp.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hwgpe.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
@@ -76,7 +75,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = and i32 %3, 1
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -89,7 +88,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = and i32 %3, 1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

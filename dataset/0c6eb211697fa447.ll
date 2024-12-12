@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000086(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000106(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %0, 6
   %3 = icmp eq i32 %1, 0
@@ -18,7 +18,7 @@ entry:
 ; oniguruma/optimized/regcomp.ll
 ; wireshark/optimized/pcapio.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c7(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000187(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 2
   %3 = icmp eq i32 %1, 0
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/countbitsnode.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000085(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -8
   %3 = icmp eq i32 %1, 0

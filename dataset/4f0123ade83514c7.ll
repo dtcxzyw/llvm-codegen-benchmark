@@ -129,7 +129,7 @@ entry:
   %3 = xor i128 %2, %1
   %4 = trunc i128 %3 to i64
   %5 = lshr i64 %4, 7
-  %6 = xor i64 %5, %0
+  %6 = xor i64 %0, %5
   ret i64 %6
 }
 

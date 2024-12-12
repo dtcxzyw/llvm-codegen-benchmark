@@ -1,28 +1,27 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; openjdk/optimized/escape.ll
-; postgres/optimized/procarray.ll
 ; z3/optimized/bv_solver.cpp.ll
 ; z3/optimized/smtfd_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, %1
   %4 = icmp eq i32 %1, -2000000001
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000250(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000490(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %2, %1
   %4 = icmp ult i32 %1, 2
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -31,12 +30,12 @@ entry:
 ; icu/optimized/usc_impl.ll
 ; openmpi/optimized/pfexec_linux.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000098(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, %1
   %4 = icmp slt i32 %1, 3
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -44,12 +43,12 @@ entry:
 ; linux/optimized/inline.ll
 ; linux/optimized/namei.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000220(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000420(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, %1
   %4 = icmp ugt i32 %1, 262144
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

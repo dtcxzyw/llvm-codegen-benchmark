@@ -33,7 +33,7 @@ func0000000000000050:                   # @func0000000000000050
 	addq	%rdi, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func000000000000001b:                   # @func000000000000001b
 	movslq	%esi, %rax
 	leaq	(%rdi,%rax,4), %rax
 	movslq	%edx, %rcx

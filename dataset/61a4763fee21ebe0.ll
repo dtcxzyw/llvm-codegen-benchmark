@@ -61,11 +61,12 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; flatbuffers/optimized/reflection.cpp.ll
 ; luau/optimized/Lexer.cpp.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:

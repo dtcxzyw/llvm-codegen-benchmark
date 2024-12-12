@@ -10,7 +10,7 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp eq ptr %0, null
@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000010c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ule ptr %1, %2
   %4 = icmp ne ptr %0, null
@@ -35,7 +35,7 @@ entry:
 ; llvm/optimized/DWARFDebugMacro.cpp.ll
 ; llvm/optimized/GlobalsModRef.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ne ptr %0, null

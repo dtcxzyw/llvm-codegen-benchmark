@@ -61,6 +61,12 @@ func0000000000000038:                   # @func0000000000000038
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func000000000000007d:                   # @func000000000000007d
+	slliw	a2, a2, 8
+	or	a0, a0, a2
+	slliw	a1, a1, 24
+	or	a0, a0, a1
+	ret
 func000000000000007e:                   # @func000000000000007e
 	zext.h	a2, a2
 	slliw	a1, a1, 16

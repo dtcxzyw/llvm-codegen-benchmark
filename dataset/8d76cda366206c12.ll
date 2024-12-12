@@ -1,9 +1,16 @@
 
-; 15 occurrences:
+; 22 occurrences:
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; libpng/optimized/pngread.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; openblas/optimized/dlatms.c.ll
@@ -19,7 +26,7 @@
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 255
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -75,7 +82,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
@@ -84,7 +91,7 @@ entry:
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/cecSim.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
-; linux/optimized/scsicam.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
 ; openjdk/optimized/mlib_ImageCreate.ll
@@ -93,7 +100,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 

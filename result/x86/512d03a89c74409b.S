@@ -10,9 +10,3 @@ func000000000000000a:                   # @func000000000000000a
 	subq	%rdi, %rax
 	sarq	%rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movq	%rsi, %rax
-	addq	%rdx, %rdi
-	subq	%rdi, %rax
-	sarq	$5, %rax
-	retq

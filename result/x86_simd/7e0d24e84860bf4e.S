@@ -1,99 +1,69 @@
 .LCPI0_0:
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
+	.short	96                              # 0x60
 .LCPI0_1:
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
+	.short	32                              # 0x20
 .LCPI0_2:
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
 .LCPI0_3:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-.LCPI0_4:
-	.short	1                               # 0x1
+	.short	96                              # 0x60
+	.short	96                              # 0x60
 .LCPI0_5:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+.LCPI0_4:
+	.short	32                              # 0x20
 func0000000000000003:                   # @func0000000000000003
-	vptestnmw	.LCPI0_0(%rip), %ymm0, %k1
-	vpbroadcastw	.LCPI0_4(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-	vmovdqu16	.LCPI0_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
-	vpternlogd	$236, .LCPI0_5(%rip){1to8}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
+	vpandd	.LCPI0_3(%rip){1to8}, %ymm0, %ymm1
+	vpbroadcastw	.LCPI0_4(%rip), %ymm2   # ymm2 = [32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32]
+	vpcmpeqw	%ymm2, %ymm1, %k1
+	vpandd	.LCPI0_5(%rip){1to8}, %ymm0, %ymm0
+	vpor	%ymm2, %ymm0, %ymm1
+	vmovdqu16	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI1_0:
 	.short	1024                            # 0x400

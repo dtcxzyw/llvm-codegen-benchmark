@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/gregorian.ll
 ; darktable/optimized/timeline.c.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; openssl/optimized/asn1_time_test-bin-a_time.ll
@@ -14,11 +15,11 @@ define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 100
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 30 occurrences:
+; 32 occurrences:
 ; abc/optimized/superAnd.c.ll
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
@@ -33,7 +34,6 @@ entry:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
@@ -48,6 +48,9 @@ entry:
 ; php/optimized/cdf_time.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-mp2t.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
@@ -58,7 +61,8 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/partition.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; postgres/optimized/strftime.ll
@@ -67,9 +71,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, -2147483645
+  %2 = srem i32 %1, 30
   %3 = icmp sgt i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -80,7 +84,7 @@ define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 8
   %3 = icmp ult i32 %2, 8
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -91,7 +95,7 @@ define i1 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 100
   %3 = icmp slt i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

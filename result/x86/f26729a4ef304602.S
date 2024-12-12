@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	addb	%al, %al
 	orb	$117, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	testl	$512, %edi                      # imm = 0x200
 	sete	%al
 	orb	$4, %al

@@ -1,11 +1,13 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
+; faiss/optimized/pq4_fast_scan_search_1.cpp.ll
+; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; openjdk/optimized/HBShaper.ll
 ; openjdk/optimized/constantPool.ll
@@ -39,9 +41,12 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 5 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; ruby/optimized/date_strptime.ll
+; zed-rs/optimized/2y3d15fhybcig6chysm503x7k.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
@@ -51,10 +56,9 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; pocketpy/optimized/random.cpp.ll
 ; ruby/optimized/gc.ll
-; ruby/optimized/intpack.ll
 ; ruby/optimized/io_buffer.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
@@ -65,7 +69,7 @@ entry:
   ret i64 %4
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/aigRet.c.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
@@ -80,7 +84,6 @@ entry:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; ncnn/optimized/deformableconv2d.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
@@ -93,6 +96,8 @@ entry:
 ; openusd/optimized/testHioImage.cpp.ll
 ; ruby/optimized/string.ll
 ; yosys/optimized/coolrunner2_sop.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
@@ -146,7 +151,7 @@ entry:
   ret i64 %4
 }
 
-; 23 occurrences:
+; 61 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; actix-rs/optimized/34v80y29y6uwgxas.ll
 ; coreutils-rs/optimized/4kegmj2upwa8iiok.ll
@@ -169,7 +174,45 @@ entry:
 ; rust-analyzer-rs/optimized/577813mpo9tvqnpt.ll
 ; rust-analyzer-rs/optimized/kgjdhswqfwvmeof.ll
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
+; turborepo-rs/optimized/ehv573y0pcjpsw1wgvk28541m.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/05btlo7ldoepff8rc85nwkmca.ll
+; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
+; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/1058j2jmz8vfpblqgu0wznwf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1v7j1lpugnisv9daukqm09uho.ll
+; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
+; zed-rs/optimized/2mbibkb4nlqbkrk4fshgkpe2t.ll
+; zed-rs/optimized/2stbxmle5qyblpbm85idqsgvv.ll
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/32ztje2vviv0ao8s7rdc7yqwm.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/3r1m4prp00pk2zcmrznfgmdke.ll
+; zed-rs/optimized/3x2e5qsisayoyul24y85pynrh.ll
+; zed-rs/optimized/3y76hj0efsluhdj732s0l4pjz.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/56i9d5rrx6hrud8ee30t4acpd.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/a48ncfl2mo4yu8srnhcxrs0e7.ll
+; zed-rs/optimized/b7n4ebe7bkw4hnagh8ndf0qla.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/ch3ywh4ed1oz4ae4c1dkspuyz.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
@@ -204,25 +247,6 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
-; libquic/optimized/dsa.c.ll
-; libquic/optimized/ecdsa_asn1.c.ll
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %0, %1
-  %3 = shl nuw i64 %2, 32
-  %4 = or disjoint i64 %3, 1
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; git/optimized/ewah_bitmap.ll
 ; Function Attrs: nounwind
@@ -242,6 +266,29 @@ entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = shl nuw i64 %2, 2
   %4 = or disjoint i64 %3, 1
+  ret i64 %4
+}
+
+; 1 occurrences:
+; libquic/optimized/dsa.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %0, %1
+  %3 = shl nuw i64 %2, 1
+  %4 = or disjoint i64 %3, 1
+  ret i64 %4
+}
+
+; 2 occurrences:
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw i64 %0, %1
+  %3 = shl nsw i64 %2, 2
+  %4 = or disjoint i64 %3, 2
   ret i64 %4
 }
 

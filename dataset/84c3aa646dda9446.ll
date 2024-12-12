@@ -3,9 +3,9 @@
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; git/optimized/name-rev.ll
+; lief/optimized/Builder.cpp.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/reassembly.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/tcp_ipv4.ll

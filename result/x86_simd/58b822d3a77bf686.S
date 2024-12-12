@@ -22,6 +22,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovqd	%ymm2, %xmm2
 	vpsrld	$1, %xmm2, %xmm2
 	vpternlogd	$236, .LCPI2_0(%rip){1to4}, %xmm1, %xmm2 # xmm2 = (xmm2 & mem) | xmm1
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq

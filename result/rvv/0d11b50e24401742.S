@@ -24,21 +24,21 @@ func0000000000000003:                   # @func0000000000000003
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
+func000000000000006f:                   # @func000000000000006f
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vsll.vi	v9, v9, 10
+	lui	a0, 1034754
+	vadd.vv	v8, v9, v8
+	addi	a0, a0, 1024
+	vadd.vx	v10, v8, a0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vzext.vf2	v8, v10
+	ret
 func000000000000007a:                   # @func000000000000007a
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v9, v9, 2
 	vadd.vv	v8, v9, v8
 	vadd.vi	v10, v8, 8
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v8, v10
-	ret
-func000000000000006f:                   # @func000000000000006f
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vsll.vi	v9, v9, 6
-	lui	a0, 1048573
-	vadd.vv	v8, v9, v8
-	addi	a0, a0, -128
-	vadd.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret

@@ -61,7 +61,7 @@ func000000000000000a:                   # @func000000000000000a
 	vzeroupper
 	retq
 .LCPI5_0:
-	.long	10                              # 0xa
+	.long	19                              # 0x13
 func0000000000000004:                   # @func0000000000000004
 	vpsllw	$15, %xmm0, %xmm0
 	vpsllw	$15, %xmm1, %xmm1

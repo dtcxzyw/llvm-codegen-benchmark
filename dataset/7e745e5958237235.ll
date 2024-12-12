@@ -29,7 +29,7 @@ define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -41,26 +41,47 @@ entry:
 ; wireshark/optimized/packet-rtcp.c.ll
 ; zxing/optimized/MCDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ugt i32 %0, %3
   ret i1 %4
 }
 
-; 5 occurrences:
-; clamav/optimized/asn1.c.ll
+; 4 occurrences:
 ; git/optimized/wildmatch.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ult i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; clamav/optimized/asn1.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 127
+  %3 = zext nneg i8 %2 to i32
+  %4 = icmp ult i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; freetype/optimized/pfr.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 15
+  %3 = zext nneg i8 %2 to i32
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 

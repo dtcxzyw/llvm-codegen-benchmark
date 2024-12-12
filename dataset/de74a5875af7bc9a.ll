@@ -1,5 +1,7 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -8,7 +10,7 @@
 ; Function Attrs: nounwind
 define double @func0000000000000002(double %0, double %1) #0 {
 entry:
-  %2 = fcmp olt double %0, %1
+  %2 = fcmp olt double %1, %0
   %3 = select i1 %2, double %0, double %1
   %4 = fmul double %3, %3
   ret double %4

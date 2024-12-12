@@ -1,7 +1,8 @@
 
-; 21 occurrences:
+; 26 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; folly/optimized/Conv.cpp.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/inet_fragment.ll
 ; linux/optimized/ioam6.ll
@@ -21,11 +22,15 @@
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; openjdk/optimized/shenandoahConcurrentGC.ll
+; openjdk/optimized/shenandoahGC.ll
+; openjdk/optimized/shenandoahHeap.ll
+; openjdk/optimized/shenandoahMark.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = icmp eq i64 %2, 0
+  %2 = and i64 %1, 65280
+  %3 = icmp eq i64 %2, 1792
   %4 = select i1 %3, i64 %0, i64 %2
   ret i64 %4
 }

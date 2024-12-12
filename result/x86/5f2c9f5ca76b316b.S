@@ -1,9 +1,9 @@
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	orb	%dl, %sil
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	cmpb	$1, %dl
 	setne	%cl
 	testb	%sil, %sil
@@ -11,7 +11,7 @@ func0000000000000182:                   # @func0000000000000182
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	cmpb	$3, %dl
 	sete	%cl
 	cmpb	$1, %sil
@@ -19,7 +19,7 @@ func0000000000000022:                   # @func0000000000000022
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	cmpb	$3, %dl
 	setb	%cl
 	cmpb	$3, %sil
@@ -27,7 +27,7 @@ func0000000000000088:                   # @func0000000000000088
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000118:                   # @func0000000000000118
+func0000000000000218:                   # @func0000000000000218
 	cmpb	$16, %dl
 	setae	%cl
 	cmpb	$25, %sil
@@ -35,7 +35,7 @@ func0000000000000118:                   # @func0000000000000118
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	cmpb	$99, %dl
 	sete	%cl
 	cmpb	$99, %sil
@@ -43,7 +43,7 @@ func0000000000000038:                   # @func0000000000000038
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000110:                   # @func0000000000000110
+func0000000000000210:                   # @func0000000000000210
 	cmpb	$3, %dl
 	setae	%cl
 	cmpb	$2, %sil

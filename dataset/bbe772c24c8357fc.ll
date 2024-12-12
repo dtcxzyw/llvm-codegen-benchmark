@@ -1,5 +1,5 @@
 
-; 353 occurrences:
+; 349 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abseil-cpp/optimized/ascii.cc.ll
 ; abseil-cpp/optimized/ascii_test.cc.ll
@@ -26,13 +26,11 @@
 ; git/optimized/merge-ort.ll
 ; graphviz/optimized/chresc.c.ll
 ; graphviz/optimized/strmatch.c.ll
-; gromacs/optimized/dorm2l.cpp.ll
 ; gromacs/optimized/dormbr.cpp.ll
 ; gromacs/optimized/dormlq.cpp.ll
 ; gromacs/optimized/dormql.cpp.ll
 ; gromacs/optimized/dormqr.cpp.ll
 ; gromacs/optimized/dormtr.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; gromacs/optimized/sormbr.cpp.ll
 ; gromacs/optimized/sormlq.cpp.ll
 ; gromacs/optimized/sormql.cpp.ll
@@ -49,7 +47,6 @@
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/message.ll
 ; linux/optimized/port.ll
-; linux/optimized/psutils.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/AsmLexer.cpp.ll
@@ -66,6 +63,7 @@
 ; lua/optimized/ldebug.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -146,7 +144,6 @@
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -234,7 +231,6 @@
 ; postgres/optimized/dependencies.ll
 ; postgres/optimized/dict.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/like.ll
 ; postgres/optimized/mcv.ll

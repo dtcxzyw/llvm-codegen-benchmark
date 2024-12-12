@@ -1,6 +1,8 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
@@ -9,11 +11,12 @@ entry:
   %3 = sub nsw i32 1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
-; 170 occurrences:
+; 171 occurrences:
+; boost/optimized/to_chars.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -217,7 +220,7 @@ entry:
   %3 = sub nuw nsw i32 1075, %2
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

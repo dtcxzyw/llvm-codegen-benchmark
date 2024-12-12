@@ -7,7 +7,7 @@
 ; php/optimized/html.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0) #0 {
+define i1 @func0000000000000084(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -57344
   %2 = icmp ult i32 %1, 1056768
@@ -21,7 +21,7 @@ entry:
 ; icu/optimized/n2builder.ll
 ; php/optimized/html.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000544(i32 %0) #0 {
+define i1 @func0000000000001484(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -57344
   %2 = icmp ult i32 %1, 1056768
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvscsu.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0) #0 {
+define i1 @func000000000000048c(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -56671232
   %2 = icmp ult i32 %1, 8176

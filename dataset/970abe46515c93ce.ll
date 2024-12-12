@@ -1,42 +1,21 @@
 
-; 37 occurrences:
-; assimp/optimized/AMFImporter.cpp.ll
-; assimp/optimized/ColladaParser.cpp.ll
-; assimp/optimized/D3MFImporter.cpp.ll
-; assimp/optimized/D3MFOpcPackage.cpp.ll
-; assimp/optimized/IRRLoader.cpp.ll
-; assimp/optimized/IRRMeshLoader.cpp.ll
-; assimp/optimized/OgreImporter.cpp.ll
-; assimp/optimized/OgreXmlSerializer.cpp.ll
-; assimp/optimized/X3DImporter.cpp.ll
-; assimp/optimized/XGLLoader.cpp.ll
+; 16 occurrences:
+; boost/optimized/cstdio.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_fs.ll
+; boost/optimized/test_stackstring.ll
 ; cpython/optimized/unicodeobject.ll
-; draco/optimized/obj_decoder.cc.ll
 ; eastl/optimized/EAString.cpp.ll
 ; eastl/optimized/Int128_t.cpp.ll
-; just-rs/optimized/53slus9exfz9w045.ll
-; linux/optimized/aspm.ll
-; linux/optimized/mlock.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
-; minetest/optimized/client.cpp.ll
-; minetest/optimized/database-files.cpp.ll
-; oiio/optimized/xmp.cpp.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/wire_format.cc.ll
-; pugixml/optimized/pugixml.cpp.ll
 ; ruby/optimized/string.ll
-; rust-analyzer-rs/optimized/1gmgjb2cqrqdy4oz.ll
-; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
-; rust-analyzer-rs/optimized/3lcvg5e4mhakwunj.ll
-; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
-; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
-; typst-rs/optimized/1mrwywpkq81cby93.ll
-; typst-rs/optimized/481g0nj22rl2z9g.ll
-; typst-rs/optimized/4khbogid70pr8yfn.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
@@ -46,7 +25,7 @@ entry:
   ret i64 %4
 }
 
-; 101 occurrences:
+; 107 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcXsim.c.ll
 ; abc/optimized/saigPhase.c.ll
@@ -57,6 +36,7 @@ entry:
 ; freetype/optimized/type42.c.ll
 ; graphviz/optimized/blocktree.c.ll
 ; hyperscan/optimized/som.cpp.ll
+; icu/optimized/hebrwcal.ll
 ; icu/optimized/number_simple.ll
 ; icu/optimized/rulebasedcollator.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -65,6 +45,7 @@ entry:
 ; libquic/optimized/hmac.cc.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/alarmtimer.ll
+; linux/optimized/drbg.ll
 ; linux/optimized/early-quirks.ll
 ; linux/optimized/fan_core.ll
 ; linux/optimized/gen8_ppgtt.ll
@@ -100,6 +81,8 @@ entry:
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openssl/optimized/libcrypto-lib-ecx_backend.ll
 ; openssl/optimized/libcrypto-shlib-ecx_backend.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; openusd/optimized/array.cpp.ll
 ; openusd/optimized/assetLocalizationDelegate.cpp.ll
@@ -138,6 +121,7 @@ entry:
 ; qemu/optimized/hw_core_loader.c.ll
 ; qemu/optimized/hw_scsi_scsi-bus.c.ll
 ; quickjs/optimized/quickjs.ll
+; rocksdb/optimized/clock_cache.cc.ll
 ; ruby/optimized/file.ll
 ; slurm/optimized/reservation.ll
 ; spike/optimized/csrs.ll
@@ -148,6 +132,7 @@ entry:
 ; wireshark/optimized/packet-dmp.c.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
@@ -169,13 +154,11 @@ entry:
   ret i64 %3
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; libquic/optimized/wnaf.c.ll
 ; lief/optimized/CorePrStatus.cpp.ll
 ; lief/optimized/LoadConfiguration.cpp.ll
 ; lief/optimized/Note.cpp.ll
-; lief/optimized/RelocationSizes.cpp.ll
-; lief/optimized/RelocationStrings.cpp.ll
 ; lief/optimized/ResourcesManager.cpp.ll
 ; lief/optimized/RichHeader.cpp.ll
 ; lief/optimized/Signature.cpp.ll
@@ -184,11 +167,55 @@ entry:
 ; openssl/optimized/libcrypto-lib-ec_mult.ll
 ; openssl/optimized/libcrypto-shlib-ec_mult.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i64 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 19
+  %2 = icmp samesign ugt i32 %1, 19
   %3 = select i1 %2, i64 2, i64 1
   %4 = select i1 %0, i64 3, i64 %3
+  ret i64 %4
+}
+
+; 34 occurrences:
+; assimp/optimized/AMFImporter.cpp.ll
+; assimp/optimized/ColladaParser.cpp.ll
+; assimp/optimized/D3MFImporter.cpp.ll
+; assimp/optimized/D3MFOpcPackage.cpp.ll
+; assimp/optimized/IRRLoader.cpp.ll
+; assimp/optimized/IRRMeshLoader.cpp.ll
+; assimp/optimized/OgreImporter.cpp.ll
+; assimp/optimized/OgreXmlSerializer.cpp.ll
+; assimp/optimized/X3DImporter.cpp.ll
+; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/codecvt_converter.ll
+; draco/optimized/obj_decoder.cc.ll
+; just-rs/optimized/53slus9exfz9w045.ll
+; linux/optimized/aspm.ll
+; linux/optimized/mlock.ll
+; minetest/optimized/client.cpp.ll
+; minetest/optimized/database-files.cpp.ll
+; oiio/optimized/xmp.cpp.ll
+; pugixml/optimized/pugixml.cpp.ll
+; rust-analyzer-rs/optimized/1gmgjb2cqrqdy4oz.ll
+; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
+; rust-analyzer-rs/optimized/3lcvg5e4mhakwunj.ll
+; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
+; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
+; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
+; typst-rs/optimized/1mrwywpkq81cby93.ll
+; typst-rs/optimized/481g0nj22rl2z9g.ll
+; typst-rs/optimized/4khbogid70pr8yfn.ll
+; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 100
+  %3 = select i1 %2, i64 2, i64 3
+  %4 = select i1 %0, i64 1, i64 %3
   ret i64 %4
 }
 
@@ -210,11 +237,10 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/key_map_avx2.cc.ll
 ; cvc5/optimized/taylor_generator.cpp.ll
-; git/optimized/pack-redundant.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/recurrent_layers.cpp.ll
 ; opencv/optimized/region_layer.cpp.ll
@@ -227,6 +253,18 @@ entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, i64 0, i64 2
   %4 = select i1 %0, i64 4, i64 %3
+  ret i64 %4
+}
+
+; 2 occurrences:
+; lief/optimized/RelocationSizes.cpp.ll
+; lief/optimized/RelocationStrings.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %1, 134217763
+  %3 = select i1 %2, i64 600, i64 536
+  %4 = select i1 %0, i64 664, i64 %3
   ret i64 %4
 }
 

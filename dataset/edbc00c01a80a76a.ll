@@ -1,35 +1,4 @@
 
-; 6 occurrences:
-; clamav/optimized/upack.c.ll
-; hyperscan/optimized/program_runtime.c.ll
-; llvm/optimized/CodeGenRegisters.cpp.ll
-; llvm/optimized/RegisterInfoEmitter.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
-  %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, -10000
-  ret i32 %6
-}
-
-; 3 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
-  %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, -1900
-  ret i32 %6
-}
-
 ; 10 occurrences:
 ; darktable/optimized/export.c.ll
 ; linux/optimized/nl80211.ll
@@ -72,6 +41,33 @@ entry:
   %4 = add i64 %3, %0
   %5 = trunc nuw nsw i64 %4 to i32
   %6 = add nuw nsw i32 %5, -262136
+  ret i32 %6
+}
+
+; 1 occurrences:
+; libquic/optimized/time_support.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = add nsw i64 %3, %0
+  %5 = trunc i64 %4 to i32
+  %6 = add nsw i32 %5, -10000
+  ret i32 %6
+}
+
+; 4 occurrences:
+; clamav/optimized/upack.c.ll
+; hyperscan/optimized/program_runtime.c.ll
+; llvm/optimized/CodeGenRegisters.cpp.ll
+; llvm/optimized/RegisterInfoEmitter.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = add nsw i64 %3, %0
+  %5 = trunc i64 %4 to i32
+  %6 = add i32 %5, 52
   ret i32 %6
 }
 

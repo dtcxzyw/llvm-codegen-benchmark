@@ -12,7 +12,7 @@ entry:
   ret i64 %5
 }
 
-; 53 occurrences:
+; 39 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcCut.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -20,24 +20,18 @@ entry:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/abcNtbdd.c.ll
-; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
-; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/acbUtil.c.ll
-; abc/optimized/acecCl.c.ll
 ; abc/optimized/acecNorm.c.ll
 ; abc/optimized/aigTiming.c.ll
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/bmcCexMin1.c.ll
-; abc/optimized/bmcClp.c.ll
 ; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cecSplit.c.ll
 ; abc/optimized/combination.c.ll
 ; abc/optimized/dauGia.c.ll
-; abc/optimized/fraClau.c.ll
 ; abc/optimized/fretMain.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/giaDfs.c.ll
@@ -47,25 +41,17 @@ entry:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaMf.c.ll
-; abc/optimized/giaPack.c.ll
 ; abc/optimized/giaRex.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/ivyMan.c.ll
-; abc/optimized/liveness.c.ll
-; abc/optimized/liveness_sim.c.ll
 ; abc/optimized/mioParse.c.ll
-; abc/optimized/mpmPre.c.ll
-; abc/optimized/nwkAig.c.ll
 ; abc/optimized/pdrIncr.c.ll
 ; abc/optimized/retLvalue.c.ll
-; abc/optimized/satSolver2i.c.ll
-; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcNtk.c.ll
-; abc/optimized/wlcUif.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:
@@ -99,7 +85,6 @@ entry:
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/extraUtilPath.c.ll
-; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -135,6 +120,7 @@ entry:
 ; abc/optimized/wlcGraft.c.ll
 ; abc/optimized/wlnNtk.c.ll
 ; abc/optimized/wlnRetime.c.ll
+; linux/optimized/filter.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

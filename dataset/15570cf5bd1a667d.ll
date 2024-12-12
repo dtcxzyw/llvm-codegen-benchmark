@@ -1,5 +1,5 @@
 
-; 149 occurrences:
+; 148 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/mapperTree.c.ll
@@ -12,7 +12,6 @@
 ; cmake/optimized/zdict.c.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; git/optimized/cache-tree.ll
-; git/optimized/xutils.ll
 ; graphviz/optimized/scan.c.ll
 ; gromacs/optimized/enerdata_utils.cpp.ll
 ; gromacs/optimized/listed_forces.cpp.ll
@@ -159,7 +158,7 @@ entry:
   ret i64 %6
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/zdict.c.ll
 ; cpython/optimized/optimizer.ll
@@ -167,7 +166,6 @@ entry:
 ; linux/optimized/alternative.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/printk.ll
-; linux/optimized/tpm.ll
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; openssl/optimized/libcrypto-lib-v3_ncons.ll
@@ -194,6 +192,19 @@ define i64 @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %0, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
+; git/optimized/xutils.ll
+; icu/optimized/package.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   ret i64 %6

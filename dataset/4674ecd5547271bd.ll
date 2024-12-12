@@ -12,10 +12,11 @@ entry:
   ret double %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; gromacs/optimized/coordstate.cpp.ll
+; gromacs/optimized/genconf.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000008(float %0, float %1) #0 {

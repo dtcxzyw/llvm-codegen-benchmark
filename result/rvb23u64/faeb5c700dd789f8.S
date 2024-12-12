@@ -31,3 +31,17 @@ func0000000000000004:                   # @func0000000000000004
 	sltiu	a1, a1, 10
 	and	a0, a0, a1
 	ret
+func0000000000000018:                   # @func0000000000000018
+	sub	a1, a1, a2
+	srli	a1, a1, 3
+	sltiu	a1, a1, 625
+	xori	a1, a1, 1
+	and	a0, a0, a1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sub	a1, a1, a2
+	lui	a2, 1221
+	addiw	a2, a2, -1216
+	sltu	a1, a1, a2
+	and	a0, a0, a1
+	ret

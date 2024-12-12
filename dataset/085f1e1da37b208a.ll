@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; mitsuba3/optimized/lanczos.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
@@ -16,6 +16,8 @@
 ; qemu/optimized/fpu_softfloat.c.ll
 ; velox/optimized/SsdCache.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(float %0, float %1) #0 {
 entry:

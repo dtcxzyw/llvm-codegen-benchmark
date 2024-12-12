@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -13,7 +13,6 @@
 ; linux/optimized/yenta_socket.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; postgres/optimized/rangetypes_gist.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; Function Attrs: nounwind

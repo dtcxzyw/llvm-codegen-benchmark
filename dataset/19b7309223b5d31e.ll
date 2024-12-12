@@ -10,11 +10,11 @@
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; openjdk/optimized/cmsintrp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = and i32 %1, 65535
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }
@@ -35,6 +35,18 @@ entry:
   ret i1 %6
 }
 
+; 1 occurrences:
+; lightgbm/optimized/bin.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 15
+  %4 = and i32 %1, 255
+  %5 = icmp samesign ugt i32 %4, %3
+  %6 = select i1 %5, i1 true, i1 %0
+  ret i1 %6
+}
+
 ; 3 occurrences:
 ; opencv/optimized/matrix.cpp.ll
 ; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
@@ -45,6 +57,18 @@ entry:
   %3 = xor i32 %1, %2
   %4 = and i32 %3, 255
   %5 = icmp ne i32 %4, 0
+  %6 = select i1 %5, i1 true, i1 %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; libwebp/optimized/predictor_enc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 255
+  %4 = and i32 %1, 255
+  %5 = icmp samesign ule i32 %4, %3
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }

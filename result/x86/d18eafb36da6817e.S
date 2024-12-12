@@ -5,14 +5,14 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	movq	%rdx, %rax
 	cltd
 	idivl	%esi
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	movq	%rdx, %rax
 	cltd
 	idivl	%esi

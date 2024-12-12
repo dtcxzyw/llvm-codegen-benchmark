@@ -9,6 +9,7 @@
 ; abc/optimized/covMinSop.c.ll
 ; abc/optimized/cswCut.c.ll
 ; abc/optimized/darCut.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/exorBits.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
@@ -43,7 +44,6 @@
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/utf8.cc.ll
-; arrow/optimized/value_parsing.cc.ll
 ; c3c/optimized/semantic_analyser.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/filtering.c.ll
@@ -132,8 +132,6 @@
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/filter.ll
-; linux/optimized/hdac_regmap.ll
-; linux/optimized/ht.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/hw_breakpoint.ll
 ; linux/optimized/hwregs.ll
@@ -142,7 +140,6 @@
 ; linux/optimized/i915_gem_tiling.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/idma32.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_lvds.ll
 ; linux/optimized/intel_pstate.ll
@@ -163,7 +160,6 @@
 ; linux/optimized/pata_amd.ll
 ; linux/optimized/pci-acpi.ll
 ; linux/optimized/phy_device.ll
-; linux/optimized/pty.ll
 ; linux/optimized/read_write.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/regset.ll
@@ -235,6 +231,7 @@
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luau/optimized/lutf8lib.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; memcached/optimized/memcached-extstore.ll
 ; memcached/optimized/memcached_debug-extstore.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -273,12 +270,10 @@
 ; opencv/optimized/trackerKCF.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; opencv/optimized/window_gtk.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openjdk/optimized/GraphicsPrimitiveMgr.ll
-; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/generateOopMap.ll
@@ -335,6 +330,7 @@
 ; qemu/optimized/hw_9pfs_9p-local.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_dma_sifive_pdma.c.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/hw_pci_msix.c.ll
@@ -398,6 +394,10 @@
 ; z3/optimized/matcher.cpp.ll
 ; z3/optimized/spacer_sem_matcher.cpp.ll
 ; z3/optimized/tbv.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -407,7 +407,7 @@ entry:
   ret i32 %3
 }
 
-; 234 occurrences:
+; 242 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -484,6 +484,7 @@ entry:
 ; icu/optimized/utf_impl.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; libphonenumber/optimized/rune.c.ll
 ; libpng/optimized/png.c.ll
@@ -547,6 +548,7 @@ entry:
 ; luajit/optimized/lj_cparse_dyn.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -623,7 +625,6 @@ entry:
 ; soc-simulator/optimized/sim_mycpu.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
-; velox/optimized/StringView.cpp.ll
 ; verilator/optimized/V3DepthBlock.cpp.ll
 ; verilator/optimized/V3Sched.cpp.ll
 ; verilator/optimized/V3SchedTiming.cpp.ll
@@ -642,6 +643,13 @@ entry:
 ; z3/optimized/mpf.cpp.ll
 ; z3/optimized/sat_clause.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

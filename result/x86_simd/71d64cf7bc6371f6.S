@@ -25,7 +25,7 @@ func000000000000002b:                   # @func000000000000002b
 	vpcmpgtd	.LCPI2_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastq	.LCPI2_1(%rip), %ymm2   # ymm2 = [8,8,8,8]
 	vpbroadcastq	.LCPI2_2(%rip), %ymm2 {%k1} # ymm2 {%k1} = [136,136,136,136]
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI3_0:
 	.long	134217743                       # 0x800000f
@@ -33,11 +33,11 @@ func000000000000002b:                   # @func000000000000002b
 	.quad	8                               # 0x8
 .LCPI3_2:
 	.quad	264                             # 0x108
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	vpcmpnleud	.LCPI3_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastq	.LCPI3_1(%rip), %ymm2   # ymm2 = [8,8,8,8]
 	vpbroadcastq	.LCPI3_2(%rip), %ymm2 {%k1} # ymm2 {%k1} = [264,264,264,264]
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI4_0:
 	.long	5                               # 0x5

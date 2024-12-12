@@ -1,5 +1,7 @@
 
-; 25 occurrences:
+; 27 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/Compression.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -29,7 +31,7 @@
 define ptr @func0000000000000002(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %5, %4
   %7 = getelementptr nusw i8, ptr %0, i64 %6
@@ -42,7 +44,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %5, %4
   %7 = getelementptr i8, ptr %0, i64 %6

@@ -58,6 +58,11 @@ func0000000000000003:                   # @func0000000000000003
 	imulq	%rdx, %rax
 	subq	%rdi, %rax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	movq	%rsi, %rax
+	imulq	%rdx, %rax
+	subq	%rdi, %rax
+	retq
 func000000000000000e:                   # @func000000000000000e
 	movq	%rsi, %rax
 	imulq	%rdx, %rax

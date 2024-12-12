@@ -5,7 +5,7 @@
 ; rocksdb/optimized/db_impl.cc.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32
@@ -60,7 +60,7 @@ entry:
 ; cmake/optimized/archive_write_add_filter_zstd.c.ll
 ; quantlib/optimized/period.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/equality_engine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc i64 %1 to i32
@@ -87,7 +87,7 @@ entry:
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ab(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014b(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32
@@ -100,7 +100,7 @@ entry:
 ; pbrt-v4/optimized/film.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000146(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32

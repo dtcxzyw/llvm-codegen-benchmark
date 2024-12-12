@@ -16,7 +16,7 @@ func000000000000018f:                   # @func000000000000018f
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	15                              # 0xf

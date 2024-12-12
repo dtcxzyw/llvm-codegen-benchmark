@@ -2,7 +2,7 @@ func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 7
 	lui	a0, 2
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	addi	a0, a0, 1171
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0

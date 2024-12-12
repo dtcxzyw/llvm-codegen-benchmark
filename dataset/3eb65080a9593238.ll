@@ -40,7 +40,7 @@ entry:
 ; cpython/optimized/floatobject.ll
 ; cpython/optimized/pystrtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i16 %1, 512
   %3 = icmp eq i16 %2, %0

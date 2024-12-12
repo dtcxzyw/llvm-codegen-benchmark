@@ -10,7 +10,7 @@
 ; opencv/optimized/speech_recognition.cpp.ll
 ; openjdk/optimized/instanceKlass.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sdiv i32 %3, 2
@@ -23,7 +23,7 @@ entry:
 ; icu/optimized/cal.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sdiv i32 %3, 2
@@ -36,7 +36,7 @@ entry:
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/contours_link.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sdiv i32 %3, 2

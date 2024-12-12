@@ -8,7 +8,7 @@ func0000000000000060:                   # @func0000000000000060
 	cmpl	$1, %esi
 	sbbl	$-1, %eax
 	retq
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	movl	%edi, %eax
 	cmpl	$2, %esi
 	sbbl	$-1, %eax

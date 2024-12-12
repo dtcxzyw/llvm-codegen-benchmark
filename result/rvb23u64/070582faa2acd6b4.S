@@ -8,11 +8,11 @@ func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	sh2add.uw	a0, a2, a0
 	sh1add.uw	a0, a1, a0
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	sext.w	a2, a2
 	li	a3, 328
 	mul	a2, a2, a3
@@ -20,13 +20,13 @@ func000000000000003a:                   # @func000000000000003a
 	sext.w	a1, a1
 	sh3add	a0, a1, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	slli.uw	a2, a2, 7
 	add	a0, a0, a2
 	sext.w	a1, a1
 	sh1add	a0, a1, a0
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000002f:                   # @func000000000000002f
 	sext.w	a2, a2
 	sh2add	a2, a2, a2
 	sh3add	a0, a2, a0

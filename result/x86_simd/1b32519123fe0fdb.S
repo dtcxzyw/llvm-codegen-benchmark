@@ -32,10 +32,10 @@
 	.byte	12                              # 0xc
 	.byte	13                              # 0xd
 	.byte	14                              # 0xe
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	vpmovsxbw	.LCPI0_1(%rip), %ymm3   # ymm3 = [16,0,1,2,17,4,5,6,18,8,9,10,19,12,13,14]
 	vpermi2w	%ymm2, %ymm1, %ymm3
-	vpcmpnleuq	%ymm0, %ymm3, %k0
+	vpcmpltuq	%ymm3, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

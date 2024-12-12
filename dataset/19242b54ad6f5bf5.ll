@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; linux/optimized/alps.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/tbxface.ll
 ; linux/optimized/trace_events.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
@@ -13,7 +12,7 @@
 ; wireshark/optimized/packet-vp9.c.ll
 ; wireshark/optimized/packet-wireguard.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = icmp ne i8 %2, 0
@@ -26,7 +25,7 @@ entry:
 ; minetest/optimized/servermap.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i8 %0, i8 %1) #0 {
+define i1 @func000000000000014c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -35,7 +34,7 @@ entry:
   ret i1 %5
 }
 
-; 53 occurrences:
+; 51 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/dauMerge.c.ll
 ; arrow/optimized/api_scalar.cc.ll
@@ -60,7 +59,6 @@ entry:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
-; opencv/optimized/stringutils.cpp.ll
 ; openusd/optimized/legacyDisplayStyleOverrideSceneIndex.cpp.ll
 ; php/optimized/zend_jit.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
@@ -80,7 +78,6 @@ entry:
 ; wireshark/optimized/packet-tds.c.ll
 ; wireshark/optimized/packet-uts.c.ll
 ; wireshark/optimized/vwr.c.ll
-; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/int_solver.cpp.ll
 ; z3/optimized/mpq.cpp.ll
 ; z3/optimized/mpz.cpp.ll
@@ -90,7 +87,7 @@ entry:
 ; z3/optimized/seq_rewriter.cpp.ll
 ; z3/optimized/tactic_cmds.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 64
   %3 = icmp eq i8 %2, 0
@@ -117,7 +114,7 @@ entry:
 ; wireshark/optimized/packet-thread.c.ll
 ; wireshark/optimized/packet-uts.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -137,7 +134,7 @@ entry:
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-tr.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 8
   %3 = icmp eq i8 %2, 0
@@ -150,7 +147,7 @@ entry:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ExprEngine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000008c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 28
   %3 = icmp ne i8 %2, 0
@@ -162,7 +159,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-bacapp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 8
   %3 = icmp eq i8 %2, 0

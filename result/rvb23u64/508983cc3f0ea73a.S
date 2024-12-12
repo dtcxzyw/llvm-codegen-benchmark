@@ -25,7 +25,3 @@ func000000000000001a:                   # @func000000000000001a
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
-	feq.s	a1, fa0, fa0
-	and	a0, a0, a1
-	ret

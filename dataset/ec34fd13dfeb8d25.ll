@@ -16,8 +16,9 @@ entry:
   ret i64 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
+; boost/optimized/test_stackstring.ll
 ; cmake/optimized/CommandLineArguments.cxx.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
@@ -60,10 +61,11 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/cmd.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i64 %1) #0 {
@@ -87,8 +89,15 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 19 occurrences:
 ; arrow/optimized/bridge.cc.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/test_stackstring.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; eastl/optimized/EATextUtil.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll

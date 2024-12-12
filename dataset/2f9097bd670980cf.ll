@@ -1,8 +1,6 @@
 
-; 5 occurrences:
-; graphviz/optimized/generate-constraints.cpp.ll
+; 3 occurrences:
 ; linux/optimized/regmap.ll
-; opencv/optimized/linemod.cpp.ll
 ; qemu/optimized/block.c.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; Function Attrs: nounwind
@@ -12,6 +10,20 @@ entry:
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
   %6 = select i1 %0, i64 %5, i64 127
+  ret i64 %6
+}
+
+; 3 occurrences:
+; boost/optimized/rational.ll
+; opencv/optimized/conv_depthwise.cpp.ll
+; opencv/optimized/convolution_layer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = shl i64 %3, 32
+  %5 = ashr exact i64 %4, 32
+  %6 = select i1 %0, i64 %5, i64 0
   ret i64 %6
 }
 
@@ -41,19 +53,6 @@ entry:
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
   %6 = select i1 %0, i64 %5, i64 2147483647
-  ret i64 %6
-}
-
-; 2 occurrences:
-; opencv/optimized/conv_depthwise.cpp.ll
-; opencv/optimized/convolution_layer.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = shl i64 %3, 32
-  %5 = ashr exact i64 %4, 32
-  %6 = select i1 %0, i64 %5, i64 0
   ret i64 %6
 }
 

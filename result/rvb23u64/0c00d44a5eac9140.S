@@ -33,8 +33,13 @@ func00000000000000c2:                   # @func00000000000000c2
 	addiw	a1, a1, -5
 	sh2add	a0, a1, a0
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	add	a1, a1, a2
 	addiw	a1, a1, -34
+	sh3add	a0, a1, a0
+	ret
+func0000000000000003:                   # @func0000000000000003
+	add	a1, a1, a2
+	addiw	a1, a1, -3
 	sh3add	a0, a1, a0
 	ret

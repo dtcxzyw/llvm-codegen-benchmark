@@ -16,6 +16,12 @@ func0000000000000018:                   # @func0000000000000018
 	addl	%esi, %eax
 	shrl	$2, %eax
 	retq
+func0000000000000028:                   # @func0000000000000028
+	movzbl	%dl, %eax
+	addl	%edi, %eax
+	addl	%esi, %eax
+	shrl	$18, %eax
+	retq
 func000000000000001a:                   # @func000000000000001a
 	movzbl	%dl, %eax
 	addl	%edi, %eax

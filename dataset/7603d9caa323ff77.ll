@@ -5,7 +5,7 @@
 ; slurm/optimized/backfill.ll
 ; stockfish/optimized/thread.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000d94(i32 %0) #0 {
+define i1 @func0000000000003314(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, -31506
   %2 = icmp ne i32 %0, -32001
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000982(i32 %0) #0 {
+define i1 @func0000000000002302(i32 %0) #0 {
 entry:
   %1 = icmp ult i32 %0, 32
   %2 = icmp ne i32 %0, 9

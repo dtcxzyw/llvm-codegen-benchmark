@@ -1,6 +1,7 @@
 
 ; 32 occurrences:
 ; arrow/optimized/bignum.cc.ll
+; boost/optimized/rational.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; icu/optimized/olsontz.ll
@@ -20,7 +21,6 @@
 ; minetest/optimized/pathfinder.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; openexr/optimized/ImfWav.cpp.ll
 ; openexr/optimized/internal_piz.c.ll

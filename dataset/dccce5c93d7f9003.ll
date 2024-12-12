@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; nanosvg/optimized/nanosvg.ll
@@ -60,6 +61,29 @@ entry:
   ret i8 %3
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000010(i32 %0) #0 {
+entry:
+  %1 = mul nuw i32 %0, 32897
+  %2 = lshr i32 %1, 23
+  %3 = trunc i32 %2 to i8
+  ret i8 %3
+}
+
+; 2 occurrences:
+; linux/optimized/rsa-pkcs1pad.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i8 @func000000000000001a(i32 %0) #0 {
+entry:
+  %1 = mul nuw nsw i32 %0, 255
+  %2 = lshr i32 %1, 8
+  %3 = trunc nuw i32 %2 to i8
+  ret i8 %3
+}
+
 ; 2 occurrences:
 ; icu/optimized/decNumber.ll
 ; openusd/optimized/intrapred.c.ll
@@ -69,17 +93,6 @@ entry:
   %1 = mul nuw nsw i32 %0, 21846
   %2 = lshr i32 %1, 16
   %3 = trunc i32 %2 to i8
-  ret i8 %3
-}
-
-; 1 occurrences:
-; linux/optimized/rsa-pkcs1pad.ll
-; Function Attrs: nounwind
-define i8 @func000000000000001a(i32 %0) #0 {
-entry:
-  %1 = mul nuw nsw i32 %0, 255
-  %2 = lshr i32 %1, 8
-  %3 = trunc nuw i32 %2 to i8
   ret i8 %3
 }
 

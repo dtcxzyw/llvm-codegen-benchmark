@@ -17,8 +17,9 @@ entry:
   ret i64 %4
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
+; boost/optimized/positional_options.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; gromacs/optimized/bench_system.cpp.ll
 ; gromacs/optimized/colvaratoms.cpp.ll

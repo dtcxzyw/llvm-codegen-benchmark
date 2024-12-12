@@ -1,5 +1,5 @@
 
-%struct.ar_table_pair_struct.2486121 = type { i64, i64 }
+%struct.ar_table_pair_struct.2601574 = type { i64, i64 }
 
 ; 7 occurrences:
 ; abc/optimized/giaNf.c.ll
@@ -10,13 +10,13 @@
 ; php/optimized/zend_alloc.ll
 ; ruby/optimized/sha2.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 63
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw [64 x i8], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [64 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -37,7 +37,7 @@ entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 15
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [8 x %struct.ar_table_pair_struct.2486121], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [8 x %struct.ar_table_pair_struct.2601574], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

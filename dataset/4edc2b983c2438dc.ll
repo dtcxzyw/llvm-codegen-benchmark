@@ -40,22 +40,6 @@ entry:
   ret i32 %7
 }
 
-; 4 occurrences:
-; cmake/optimized/zstd_compress_literals.c.ll
-; fmt/optimized/format-impl-test.cc.ll
-; linux/optimized/intel_dsb.ll
-; zstd/optimized/zstd_compress_literals.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 1114111
-  %4 = select i1 %3, i32 256, i32 0
-  %5 = select i1 %1, i32 64, i32 0
-  %6 = or disjoint i32 %5, %4
-  %7 = or disjoint i32 %6, %0
-  ret i32 %7
-}
-
 ; 1 occurrences:
 ; wireshark/optimized/busmaster.c.ll
 ; Function Attrs: nounwind
@@ -65,6 +49,21 @@ entry:
   %4 = select i1 %3, i32 536870912, i32 6
   %5 = select i1 %1, i32 1073741824, i32 2
   %6 = or i32 %5, %4
+  %7 = or disjoint i32 %6, %0
+  ret i32 %7
+}
+
+; 3 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
+; linux/optimized/intel_dsb.ll
+; zstd/optimized/zstd_compress_literals.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000023(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 7
+  %4 = select i1 %3, i32 2, i32 0
+  %5 = select i1 %1, i32 4, i32 0
+  %6 = or disjoint i32 %5, %4
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }

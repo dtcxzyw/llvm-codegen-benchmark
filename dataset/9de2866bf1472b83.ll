@@ -1,5 +1,6 @@
 
-; 99 occurrences:
+; 100 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -105,7 +106,7 @@ entry:
   %3 = mul nuw i128 %1, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   %7 = zext i64 %6 to i128
   ret i128 %7
 }
@@ -119,7 +120,7 @@ entry:
   %3 = mul nuw i128 %1, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = zext i64 %6 to i128
   ret i128 %7
 }

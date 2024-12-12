@@ -1,14 +1,10 @@
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	mvni	v4.2s, #1
-	ext	v5.16b, v3.16b, v3.16b, #8
-	fneg	v4.2s, v4.2s
-	smull	v5.2d, v5.2s, v4.2s
-	smull	v3.2d, v3.2s, v4.2s
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v2.2d, v5.2d, v2.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
+	mov	w8, #2147483646                 // =0x7ffffffe
+	smull	x8, w2, w8
+	cmp	x1, x8
+	cset	w8, lo
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

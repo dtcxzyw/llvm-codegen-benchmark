@@ -1,6 +1,7 @@
 
-; 5 occurrences:
-; graphviz/optimized/quad_prog_vpsc.c.ll
+; 6 occurrences:
+; fmt/optimized/chrono-test.cc.ll
+; fmt/optimized/compile-test.cc.ll
 ; libquic/optimized/string_util.cc.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll

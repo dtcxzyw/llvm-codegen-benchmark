@@ -1,19 +1,5 @@
 
-; 15 occurrences:
-; assimp/optimized/COBLoader.cpp.ll
-; assimp/optimized/ColladaLoader.cpp.ll
-; assimp/optimized/glTF2Importer.cpp.ll
-; g2o/optimized/slam2d_linear.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; hyperscan/optimized/goughcompile_reg.cpp.ll
-; opencv/optimized/linemod.cpp.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
-; proj/optimized/ctx.cpp.ll
+; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
@@ -24,8 +10,7 @@ entry:
   ret i64 %5
 }
 
-; 75 occurrences:
-; clamav/optimized/readdb.c.ll
+; 72 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/batch.cpp.ll
@@ -59,7 +44,6 @@ entry:
 ; mitsuba3/optimized/null.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
@@ -83,7 +67,6 @@ entry:
 ; mitsuba3/optimized/twosided.cpp.ll
 ; mitsuba3/optimized/volumegrid.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
-; qemu/optimized/migration_block.c.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -109,15 +92,13 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/sched.ll
 ; linux/optimized/srcutree.ll
 ; linux/optimized/xprt.ll
 ; opencv/optimized/softfloat.cpp.ll
-; openssl/optimized/libcrypto-lib-bn_blind.ll
 ; openssl/optimized/libcrypto-lib-bn_mod.ll
-; openssl/optimized/libcrypto-shlib-bn_blind.ll
 ; openssl/optimized/libcrypto-shlib-bn_mod.ll
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
 ; spike/optimized/f64_rem.ll
@@ -140,10 +121,9 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
-; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/EACallback.cpp.ll
 ; git/optimized/packed-backend.ll
 ; nori/optimized/tabwidget.cpp.ll
@@ -168,36 +148,25 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; php/optimized/streams.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp sgt i64 %1, %2
-  %4 = select i1 %3, i64 %0, i64 8192
-  ret i64 %4
-}
-
-; 6 occurrences:
+; 5 occurrences:
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/mx.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
-; slurm/optimized/srun_job.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = icmp slt i64 %3, 10
-  %5 = select i1 %4, i64 %0, i64 10000000
+  %4 = icmp slt i64 %3, 8
+  %5 = select i1 %4, i64 %0, i64 72340172838076673
   ret i64 %5
 }
 
 ; 1 occurrences:
 ; z3/optimized/bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp ult i64 %3, 64
@@ -210,10 +179,10 @@ entry:
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = icmp ult i64 %3, 64
+  %4 = icmp samesign ult i64 %3, 64
   %5 = select i1 %4, i64 %0, i64 -1
   ret i64 %5
 }
@@ -221,7 +190,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/repeat.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = icmp ult i64 %3, 65

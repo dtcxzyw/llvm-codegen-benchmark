@@ -72,14 +72,17 @@ entry:
   ret i64 %2
 }
 
-; 15 occurrences:
-; abc/optimized/nmApi.c.ll
+; 18 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
 ; coreutils-rs/optimized/2xf0tcanjahg0sla.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; linux/optimized/compress.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
 ; ninja/optimized/edit_distance.cc.ll
 ; opencv/optimized/multicalib.cpp.ll
 ; qemu/optimized/linux-user_syscall.c.ll
@@ -96,7 +99,7 @@ entry:
   ret i64 %2
 }
 
-; 36 occurrences:
+; 50 occurrences:
 ; abc/optimized/satTruth.c.ll
 ; actix-rs/optimized/1rmq6g519rw6hl6a.ll
 ; actix-rs/optimized/2d9c72efneckaqzp.ll
@@ -133,6 +136,20 @@ entry:
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/2bb4i5588q26z2k57jo8wskl3.ll
+; zed-rs/optimized/5daacodolt3kxkom7996krakh.ll
+; zed-rs/optimized/6hbnfszf6gkk4nniq4f5ts2z6.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9jkx32jki2vcljeo0xctxc8uw.ll
+; zed-rs/optimized/9ph9ik6f4o8cna26bqiztqhx1.ll
+; zed-rs/optimized/b7azyji7w0gj79cpvibdmzbyg.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/de4xf1plz4ya209x66ee15yyx.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0) #0 {
 entry:
@@ -141,7 +158,7 @@ entry:
   ret i64 %2
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; brotli/optimized/block_splitter.c.ll
@@ -162,7 +179,6 @@ entry:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
 ; faiss/optimized/pq4_fast_scan.cpp.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/mm_init.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/swiotlb.ll

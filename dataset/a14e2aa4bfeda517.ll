@@ -1,5 +1,5 @@
 
-; 139 occurrences:
+; 140 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
@@ -139,6 +139,7 @@
 ; stb/optimized/stb_truetype.c.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; xgboost/optimized/gbtree.cc.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

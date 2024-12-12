@@ -4,7 +4,7 @@
 ; freetype/optimized/autofit.c.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 64
   %4 = select i1 %1, i32 %2, i32 %3
@@ -34,12 +34,12 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %2, 32
   %4 = select i1 %1, i32 %2, i32 %3
   %5 = or i32 %4, 64
-  %6 = icmp ugt i32 %0, 1
+  %6 = icmp samesign ugt i32 %0, 1
   %7 = select i1 %6, i32 %5, i32 %4
   ret i32 %7
 }
@@ -47,12 +47,12 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000078(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 8
   %4 = select i1 %1, i32 %2, i32 %3
   %5 = or disjoint i32 %4, 16
-  %6 = icmp ugt i32 %0, 1
+  %6 = icmp samesign ugt i32 %0, 1
   %7 = select i1 %6, i32 %5, i32 %4
   ret i32 %7
 }
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cls_api.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 524288
   %4 = select i1 %1, i32 %2, i32 %3
@@ -73,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_display.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000064(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 16
   %4 = select i1 %1, i32 %2, i32 %3
@@ -89,7 +89,7 @@ entry:
 ; luajit/optimized/lib_debug_dyn.ll
 ; redis/optimized/ldblib.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func000000000000006a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 4
   %4 = select i1 %1, i32 %2, i32 %3

@@ -5,7 +5,7 @@
 ; openusd/optimized/faceSurface.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
   %3 = icmp eq i16 %2, 14
@@ -21,7 +21,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -9
   %3 = icmp ne i16 %2, 0
@@ -53,7 +53,7 @@ entry:
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2
   %3 = icmp ne i16 %2, 0
@@ -67,7 +67,7 @@ entry:
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 62
   %3 = icmp eq i16 %2, 32

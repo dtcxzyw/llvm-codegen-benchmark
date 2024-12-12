@@ -34,3 +34,8 @@ func000000000000001b:                   # @func000000000000001b
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func000000000000002b:                   # @func000000000000002b
+	slli	a2, a2, 48
+	add.uw	a0, a1, a0
+	or	a0, a0, a2
+	ret

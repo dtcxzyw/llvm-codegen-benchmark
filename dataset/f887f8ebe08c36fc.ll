@@ -4,7 +4,7 @@
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/macroAssembler_x86.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4
   %3 = icmp ne i64 %2, 0
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i64 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4
   %3 = icmp ne i64 %2, 0

@@ -8,7 +8,7 @@
 ; openssl/optimized/libcrypto-shlib-bio_enc.ll
 ; slurm/optimized/cbuf.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp eq i32 %1, %2
@@ -19,10 +19,10 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/DeterministicSchedule.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = icmp ult i32 %1, %2
+  %4 = icmp samesign ult i32 %1, %2
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }
@@ -47,7 +47,7 @@ entry:
 ; meshlab/optimized/packing.cpp.ll
 ; openjdk/optimized/regalloc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp slt i32 %1, %2
@@ -55,13 +55,14 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/cuddGroup.c.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; graphviz/optimized/gvplugin_vt.c.ll
 ; hdf5/optimized/h5diff_array.c.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; llvm/optimized/TargetLowering.cpp.ll
+; lvgl/optimized/lv_anim_timeline.ll
 ; ocio/optimized/MathUtils.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; proxygen/optimized/QPACKEncoder.cpp.ll
@@ -71,7 +72,7 @@ entry:
 ; wireshark/optimized/packet-netlink.c.ll
 ; wireshark/optimized/sequence_analysis.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %2, %1
   %4 = icmp ugt i32 %1, %2
@@ -79,7 +80,7 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/marshalling_test.cc.ll
 ; hermes/optimized/gtest-all.cc.ll
@@ -90,8 +91,9 @@ entry:
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; tls-rs/optimized/59h61akxu6z29dlt.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = icmp ult i32 %1, %2
@@ -129,10 +131,10 @@ entry:
 ; spike/optimized/pbsad.ll
 ; spike/optimized/pbsada.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %2, %1
-  %4 = icmp ugt i32 %1, %2
+  %4 = icmp samesign ugt i32 %1, %2
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }

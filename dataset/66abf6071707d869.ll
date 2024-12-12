@@ -1,9 +1,10 @@
 
-; 53 occurrences:
+; 54 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; cmake/optimized/core.c.ll
 ; icu/optimized/collationiterator.ll
 ; libuv/optimized/core.c.ll
+; linux/optimized/huf_decompress.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/uncore_snbep.ll
@@ -57,17 +58,16 @@
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
-; 108 occurrences:
+; 122 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -110,6 +110,21 @@ entry:
 ; openspiel/optimized/tabular_q_learning_test.cc.ll
 ; openspiel/optimized/tabular_sarsa.cc.ll
 ; openspiel/optimized/tabular_sarsa_test.cc.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; protobuf/optimized/cord_field.cc.ll
 ; protobuf/optimized/csharp_doc_comment.cc.ll
@@ -180,7 +195,7 @@ entry:
   ret i64 %5
 }
 
-; 119 occurrences:
+; 118 occurrences:
 ; bullet3/optimized/b3Solver.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -264,7 +279,6 @@ entry:
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
@@ -343,7 +357,6 @@ entry:
 ; lief/optimized/Builder.cpp.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/fault.ll
-; linux/optimized/huf_decompress.ll
 ; linux/optimized/insn-eval.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/loop.ll
@@ -351,7 +364,6 @@ entry:
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/step.ll
 ; linux/optimized/super.ll
-; linux/optimized/sys_ia32.ll
 ; linux/optimized/taskstats.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
@@ -410,6 +422,8 @@ entry:
 ; wireshark/optimized/packet-autosar-ipdu-multiplexer.c.ll
 ; wireshark/optimized/packet-nbap.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:

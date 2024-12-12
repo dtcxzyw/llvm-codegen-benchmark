@@ -50,7 +50,7 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; grpc/optimized/bin_encoder.cc.ll
 ; grpc/optimized/hpack_encoder.cc.ll
 ; grpc/optimized/hpack_parser.cc.ll
@@ -61,7 +61,6 @@ entry:
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/DWARFTypePrinter.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
@@ -82,6 +81,16 @@ entry:
   ret i1 %3
 }
 
+; 1 occurrences:
+; llvm/optimized/DWARFTypePrinter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ult i64 %1, 65536
+  %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
+}
+
 ; 4 occurrences:
 ; grpc/optimized/hpack_encoder.cc.ll
 ; grpc/optimized/service_config_impl.cc.ll
@@ -93,6 +102,17 @@ entry:
   %2 = and i64 %1, -456
   %3 = select i1 %0, i64 %2, i64 %1
   %4 = icmp ugt i64 %3, 7
+  ret i1 %4
+}
+
+; 1 occurrences:
+; grpc/optimized/service_config_impl.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 255
+  %3 = select i1 %0, i64 %2, i64 %1
+  %4 = icmp samesign ugt i64 %3, 8
   ret i1 %4
 }
 

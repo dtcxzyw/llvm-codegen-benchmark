@@ -1,10 +1,10 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	testq	%rsi, %rsi
 	sets	%al
 	xorb	$1, %dil
 	orb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	shrq	$33, %rsi
 	setne	%al
 	andb	%dil, %al
@@ -15,17 +15,17 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shrq	$32, %rsi
 	sete	%al
 	andb	%dil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	shrq	$32, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	shrq	$32, %rsi
 	cmpl	$65536, %esi                    # imm = 0x10000
 	setge	%al

@@ -1,5 +1,6 @@
 
-; 179 occurrences:
+; 181 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -87,6 +88,7 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; lvgl/optimized/lv_anim.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -185,6 +187,17 @@ entry:
   %1 = mul nsw i32 %0, 77
   %2 = ashr i32 %1, 8
   %3 = sub nsw i32 0, %2
+  ret i32 %3
+}
+
+; 1 occurrences:
+; linux/optimized/intel_pstate.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0) #0 {
+entry:
+  %1 = mul i32 %0, 100
+  %2 = ashr i32 %1, 8
+  %3 = sub nsw i32 100, %2
   ret i32 %3
 }
 

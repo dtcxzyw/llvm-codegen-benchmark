@@ -1,6 +1,6 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movzwl	%si, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
@@ -9,13 +9,13 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$128, %rax
 	setb	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movzwl	%si, %eax
 	subl	%edi, %eax
 	cmpl	$8, %eax
 	setb	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movzwl	%si, %eax
 	subq	%rdi, %rax
 	cmpq	$64, %rax
@@ -27,30 +27,30 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$4, %rax
 	setae	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movzwl	%si, %eax
 	subq	%rdi, %rax
 	cmpq	$4, %rax
 	setae	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movzwl	%si, %eax
 	subq	%rdi, %rax
 	cmpq	$4, %rax
 	setae	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	movzwl	%si, %eax
 	subq	%rdi, %rax
 	cmpq	$4, %rax
 	setae	%al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	movzwl	%si, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movzwl	%si, %eax
 	subl	%edi, %eax
 	cmpl	$1, %eax

@@ -9,12 +9,12 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = and i64 %5, %0
   ret i64 %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -22,7 +22,6 @@ entry:
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/vmalloc.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-layout.ll
@@ -33,7 +32,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
   %5 = add i64 %4, %1
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
@@ -73,7 +72,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 4096, %3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = and i64 %5, %0
   ret i64 %6
 }

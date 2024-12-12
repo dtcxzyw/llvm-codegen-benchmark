@@ -85,11 +85,11 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0) #0 {
+define i1 @func00000000000000aa(i32 %0) #0 {
 entry:
   %.fr = freeze i32 %0
   %1 = urem i32 %.fr, 100
-  %2 = icmp ugt i32 %1, 9
+  %2 = icmp samesign ugt i32 %1, 9
   ret i1 %2
 }
 
@@ -111,25 +111,25 @@ define i1 @func0000000000000006(i32 %0) #0 {
 entry:
   %.fr = freeze i32 %0
   %1 = urem i32 %.fr, 10000
-  %2 = icmp ult i32 %1, 5000
+  %2 = icmp samesign ult i32 %1, 5000
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; graphviz/optimized/sfprint.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %.fr = freeze i32 %0
   %1 = urem i32 %.fr, 10000
-  %2 = icmp ult i32 %1, 7000
+  %2 = icmp samesign ult i32 %1, 7000
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0) #0 {
+define i1 @func00000000000000a6(i32 %0) #0 {
 entry:
   ret i1 false
 }

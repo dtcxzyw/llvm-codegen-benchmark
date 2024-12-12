@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 52 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -48,7 +48,6 @@
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; nix/optimized/fetchMercurial.ll
 ; nix/optimized/gc.ll
-; nix/optimized/nix-build.ll
 ; ocio/optimized/FileRules.cpp.ll
 ; openusd/optimized/mallocTag.cpp.ll
 ; openusd/optimized/reporter.cpp.ll

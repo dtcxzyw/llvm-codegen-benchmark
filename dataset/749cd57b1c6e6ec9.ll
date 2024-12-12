@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 31 occurrences:
 ; crow/optimized/example.cpp.ll
 ; git/optimized/connect.ll
 ; git/optimized/convert.ll
@@ -9,14 +9,12 @@
 ; git/optimized/trailer.ll
 ; git/optimized/utf8.ll
 ; hermes/optimized/Interpreter.cpp.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/trace_events.ll
 ; linux/optimized/trace_events_filter.ll
 ; linux/optimized/trace_probe.ll
-; linux/optimized/utosi.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/Attributor.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
@@ -34,7 +32,7 @@
 ; wireshark/optimized/packet-scte35.c.ll
 ; wireshark/optimized/packet-sip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000302(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -66,7 +64,7 @@ entry:
 ; ruby/optimized/vm_backtrace.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000058(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
   %3 = icmp eq i8 %2, 11
@@ -75,11 +73,16 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 21 occurrences:
 ; git/optimized/usage.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; grpc/optimized/resolver_registry.cc.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/ConstraintElimination.cpp.ll
+; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; minetest/optimized/base64.cpp.ll
 ; openusd/optimized/unicodeUtils.cpp.ll
@@ -88,9 +91,12 @@ entry:
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
 ; protobuf/optimized/csharp_helpers.cc.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; wireshark/optimized/packet-infiniband.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000048(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -5
   %3 = icmp eq i8 %2, 43
@@ -99,7 +105,7 @@ entry:
   ret i1 %5
 }
 
-; 63 occurrences:
+; 62 occurrences:
 ; clamav/optimized/regex_list.c.ll
 ; cmake/optimized/cmCPackInnoSetupGenerator.cxx.ll
 ; git/optimized/dir.ll
@@ -113,7 +119,6 @@ entry:
 ; linux/optimized/cmdline.ll
 ; linux/optimized/fault.ll
 ; linux/optimized/filter.ll
-; linux/optimized/utosi.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
@@ -164,7 +169,7 @@ entry:
 ; wireshark/optimized/packet-rf4ce-nwk.c.ll
 ; wireshark/optimized/packet-scsi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000042(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 64
   %3 = icmp eq i8 %2, 0
@@ -177,7 +182,7 @@ entry:
 ; openjdk/optimized/superword.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000202(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = icmp eq i8 %2, 4
@@ -193,7 +198,7 @@ entry:
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; wireshark/optimized/packet-cemi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000318(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -202,10 +207,11 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; linux/optimized/amd.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/LoopPeel.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; postgres/optimized/wchar.ll
@@ -219,7 +225,7 @@ entry:
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; wireshark/optimized/packet-uds.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000102(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 126
   %3 = icmp eq i8 %2, 6
@@ -231,7 +237,7 @@ entry:
 ; 1 occurrences:
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000298(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -240,13 +246,15 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; git/optimized/name-rev.ll
 ; lief/optimized/ssl_tls.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
+; linux/optimized/trace_probe.ll
+; llvm/optimized/SanitizerCoverage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000308(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 2
   %3 = icmp ne i8 %2, 0
@@ -256,21 +264,9 @@ entry:
 }
 
 ; 1 occurrences:
-; libevent/optimized/ws.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000090(i8 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 15
-  %3 = icmp ugt i8 %2, 10
-  %4 = icmp ult i8 %0, 5
-  %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000050(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
@@ -279,11 +275,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; wireshark/optimized/packet-ip.c.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-nas_eps.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000118(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
   %3 = icmp ne i8 %2, 2
@@ -293,22 +288,9 @@ entry:
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-e212.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000110(i8 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 14
-  %3 = icmp ugt i8 %2, 9
-  %4 = icmp ugt i8 %0, -97
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; icu/optimized/utf_impl.ll
 ; wireshark/optimized/packet-alp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000310(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 16
   %3 = icmp ne i8 %2, 0

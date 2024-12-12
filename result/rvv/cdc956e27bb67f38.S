@@ -97,6 +97,14 @@ func00000000000000a4:                   # @func00000000000000a4
 	vmfgt.vf	v17, v8, fa5
 	vmandn.mm	v0, v17, v16
 	ret
+func00000000000000a2:                   # @func00000000000000a2
+	fli.d	fa5, min
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfle.vf	v0, v8, fa5
+	vfmerge.vfm	v8, v8, fa5, v0
+	fli.d	fa5, 1.0
+	vmflt.vf	v0, v8, fa5
+	ret
 func0000000000000028:                   # @func0000000000000028
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -111,30 +119,30 @@ func0000000000000021:                   # @func0000000000000021
 	vmerge.vim	v8, v8, 0, v0
 	vmfne.vv	v0, v8, v8
 	ret
-.LCPI11_0:
+.LCPI12_0:
 	.quad	0x4059000000000000              # double 100
-.LCPI11_1:
+.LCPI12_1:
 	.quad	0xc069000000000000              # double -200
 func0000000000000045:                   # @func0000000000000045
-	lui	a0, %hi(.LCPI11_0)
-	fld	fa5, %lo(.LCPI11_0)(a0)
-	lui	a0, %hi(.LCPI11_1)
-	fld	fa4, %lo(.LCPI11_1)(a0)
+	lui	a0, %hi(.LCPI12_0)
+	fld	fa5, %lo(.LCPI12_0)(a0)
+	lui	a0, %hi(.LCPI12_1)
+	fld	fa4, %lo(.LCPI12_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v0, v8, fa5
 	vfmerge.vfm	v8, v8, fa5, v0
 	vmfle.vf	v16, v8, fa4
 	vmnot.m	v0, v16
 	ret
-.LCPI12_0:
+.LCPI13_0:
 	.quad	0x4059000000000000              # double 100
-.LCPI12_1:
+.LCPI13_1:
 	.quad	0x4069000000000000              # double 200
 func0000000000000043:                   # @func0000000000000043
-	lui	a0, %hi(.LCPI12_0)
-	fld	fa5, %lo(.LCPI12_0)(a0)
-	lui	a0, %hi(.LCPI12_1)
-	fld	fa4, %lo(.LCPI12_1)(a0)
+	lui	a0, %hi(.LCPI13_0)
+	fld	fa5, %lo(.LCPI13_0)(a0)
+	lui	a0, %hi(.LCPI13_1)
+	fld	fa4, %lo(.LCPI13_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v0, v8, fa5
 	vfmerge.vfm	v8, v8, fa5, v0
@@ -156,11 +164,11 @@ func000000000000004e:                   # @func000000000000004e
 	vfmerge.vfm	v8, v8, fa5, v0
 	vmfeq.vv	v0, v8, v8
 	ret
-.LCPI15_0:
+.LCPI16_0:
 	.quad	0x3feccccccccccccd              # double 0.90000000000000002
 func0000000000000084:                   # @func0000000000000084
-	lui	a0, %hi(.LCPI15_0)
-	fld	fa5, %lo(.LCPI15_0)(a0)
+	lui	a0, %hi(.LCPI16_0)
+	fld	fa5, %lo(.LCPI16_0)(a0)
 	fmv.d.x	fa4, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfne.vf	v16, v8, fa4

@@ -19,6 +19,7 @@
 ; darktable/optimized/introspection_overlay.c.ll
 ; darktable/optimized/introspection_shadhi.c.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
+; darktable/optimized/introspection_vibrance.c.ll
 ; darktable/optimized/introspection_watermark.c.ll
 ; flac/optimized/window.c.ll
 ; gromacs/optimized/cellsizes.cpp.ll
@@ -42,7 +43,6 @@
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/io_e57.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/orthogonal_procrustes.cpp.ll

@@ -1,7 +1,6 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/ohci-hcd.ll
-; linux/optimized/rsmisc.ll
 ; openusd/optimized/binary_codes_reader.c.ll
 ; openusd/optimized/bitreader_buffer.c.ll
 ; qemu/optimized/migration_savevm.c.ll

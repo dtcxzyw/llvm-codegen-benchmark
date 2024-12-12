@@ -1,5 +1,5 @@
 
-; 422 occurrences:
+; 425 occurrences:
 ; abc/optimized/ioWriteBook.c.ll
 ; abc/optimized/reoSift.c.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
@@ -12,6 +12,10 @@
 ; arrow/optimized/slow.cc.ll
 ; assimp/optimized/IFCProfile.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; c3c/optimized/compiler.c.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/convexify.cpp.ll
@@ -245,7 +249,6 @@
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
-; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; php/optimized/http_fopen_wrapper.ll
 ; php/optimized/php_date.ll
@@ -269,7 +272,6 @@
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/mlfn.cpp.ll
 ; proj/optimized/moll.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/nzmg.cpp.ll
 ; proj/optimized/omerc.cpp.ll
 ; proj/optimized/phi2.cpp.ll
@@ -277,7 +279,6 @@
 ; proj/optimized/robin.cpp.ll
 ; proj/optimized/sconics.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; protobuf/optimized/time_util.cc.ll
 ; qemu/optimized/util_throttle.c.ll
 ; quantlib/optimized/abcdatmvolcurve.ll
@@ -409,6 +410,7 @@
 ; sundials/optimized/kinsol.c.ll
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/iax2_analysis_dialog.cpp.ll
 ; wireshark/optimized/io_graph_dialog.cpp.ll
@@ -422,6 +424,7 @@
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; wolfssl/optimized/client.c.ll
 ; yosys/optimized/qwp.ll
+; zed-rs/optimized/9llazb78bmu9grt6fsh6yj218.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:

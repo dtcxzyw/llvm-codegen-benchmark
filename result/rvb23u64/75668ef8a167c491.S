@@ -13,6 +13,10 @@ func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+func0000000000000033:                   # @func0000000000000033
+	sh3add	a1, a2, a1
+	add	a0, a0, a1
+	ret
 func0000000000000032:                   # @func0000000000000032
 	sh3add	a1, a2, a1
 	add	a0, a0, a1

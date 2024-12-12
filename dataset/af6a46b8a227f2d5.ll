@@ -1,10 +1,9 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/nlattr.ll
-; linux/optimized/rpl.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
@@ -27,7 +26,7 @@ entry:
   ret i32 %4
 }
 
-; 56 occurrences:
+; 55 occurrences:
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -46,7 +45,6 @@ entry:
 ; clamav/optimized/udf.c.ll
 ; hyperscan/optimized/limex_simd128.c.ll
 ; hyperscan/optimized/limex_simd256.c.ll
-; icu/optimized/calendar.ll
 ; icu/optimized/collation.ll
 ; icu/optimized/reslist.ll
 ; jemalloc/optimized/arena.ll

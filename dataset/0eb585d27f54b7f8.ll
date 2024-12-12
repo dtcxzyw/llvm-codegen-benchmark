@@ -1,8 +1,8 @@
 
-%"struct.irr::scene::ISkinnedMesh::SPositionKey.2589144" = type { float, %"class.irr::core::vector3d.2589142" }
-%"class.irr::core::vector3d.2589142" = type { float, float, float }
+%"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989" = type { float, %"class.irr::core::vector3d.2702987" }
+%"class.irr::core::vector3d.2702987" = type { float, float, float }
 
-; 11 occurrences:
+; 10 occurrences:
 ; linux/optimized/datagram.ll
 ; linux/optimized/deflate.ll
 ; linux/optimized/esp6.ll
@@ -10,7 +10,6 @@
 ; linux/optimized/gro.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/virtio_pci_legacy.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/fdt_rw.c.ll
 ; ruby/optimized/compile.ll
@@ -24,7 +23,7 @@ entry:
   ret ptr %6
 }
 
-; 64 occurrences:
+; 67 occurrences:
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/blocksort.c.ll
@@ -37,7 +36,6 @@ entry:
 ; cmake/optimized/divsufsort.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_dither.c.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; git/optimized/record.ll
 ; gromacs/optimized/deflate.c.ll
 ; icu/optimized/bytestriebuilder.ll
@@ -49,6 +47,8 @@ entry:
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; lua/optimized/lvm.ll
 ; luajit/optimized/minilua.ll
+; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached-proto_text.ll
@@ -62,44 +62,46 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/dpm_feature.cpp.ll
+; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/rotcalipers.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; openjdk/optimized/nativeInst_x86.ll
+; openmpi/optimized/ad_read_coll.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openusd/optimized/grain_synthesis.c.ll
-; openusd/optimized/matrix3d.cpp.ll
-; openusd/optimized/matrix3f.cpp.ll
-; openusd/optimized/matrix4d.cpp.ll
-; openusd/optimized/matrix4f.cpp.ll
 ; php/optimized/dfa_pass.ll
 ; php/optimized/escape_analysis.ll
 ; php/optimized/ir_sccp.ll
 ; php/optimized/zend_inference.ll
+; protobuf/optimized/descriptor.cc.ll
+; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/field_mask_util.cc.ll
+; protobuf/optimized/map.cc.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; redis/optimized/geo.ll
 ; redis/optimized/lvm.ll
 ; redis/optimized/rax.ll
+; redis/optimized/redis-cli.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zxing/optimized/ReadBarcode.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i64, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw i64, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 34 occurrences:
+; 38 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/giaEmbed.c.ll
 ; cmake/optimized/deflate.c.ll
@@ -116,8 +118,12 @@ entry:
 ; libquic/optimized/s3_srvr.c.ll
 ; libwebp/optimized/huffman_utils.c.ll
 ; llvm/optimized/MemorySSAUpdater.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; lz4/optimized/lz4hc.c.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
+; openjdk/optimized/buildOopMap.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; php/optimized/dfa_pass.ll
@@ -135,16 +141,16 @@ entry:
 ; z3/optimized/polynomial.cpp.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2589144", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989", ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2589144", ptr %4, i64 %5
+  %6 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989", ptr %4, i64 %5
   ret ptr %6
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -161,7 +167,6 @@ entry:
 ; linux/optimized/ethtool.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip_output.ll
-; linux/optimized/mmconfig_64.ll
 ; linux/optimized/rock.ll
 ; linux/optimized/virtio_net.ll
 ; postgres/optimized/clog.ll
@@ -187,14 +192,8 @@ entry:
   ret ptr %6
 }
 
-; 7 occurrences:
-; luau/optimized/lvmexecute.cpp.ll
-; opencv/optimized/geometry.cpp.ll
+; 1 occurrences:
 ; openjdk/optimized/SpanClipRenderer.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/map.cc.ll
-; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -211,24 +210,28 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 1 occurrences:
-; openjdk/optimized/buildOopMap.ll
+; 5 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; openusd/optimized/matrix3d.cpp.ll
+; openusd/optimized/matrix3f.cpp.ll
+; openusd/optimized/matrix4d.cpp.ll
+; openusd/optimized/matrix4f.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = getelementptr i32, ptr %0, i64 %3
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr nusw i32, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -244,10 +247,10 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

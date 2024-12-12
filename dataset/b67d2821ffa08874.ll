@@ -1,43 +1,43 @@
 
-%struct.ItemStack.2580389 = type { %"class.std::__cxx11::basic_string.2580329", i16, i16, %class.ItemStackMetadata.2580390 }
-%"class.std::__cxx11::basic_string.2580329" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2580330", i64, %union.anon.2580331 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2580330" = type { ptr }
-%union.anon.2580331 = type { i64, [8 x i8] }
-%class.ItemStackMetadata.2580390 = type { %class.SimpleMetadata.2580391, i8, [7 x i8], %struct.ToolCapabilities.2580392, %"class.std::optional.2580393" }
-%class.SimpleMetadata.2580391 = type { %class.IMetadata.2580394, i8, %"class.std::unordered_map.98.2580395" }
-%class.IMetadata.2580394 = type { ptr }
-%"class.std::unordered_map.98.2580395" = type { %"class.std::_Hashtable.99.2580396" }
-%"class.std::_Hashtable.99.2580396" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2580397", i64, %"struct.std::__detail::_Prime_rehash_policy.2580398", ptr }
-%"struct.std::__detail::_Hash_node_base.2580397" = type { ptr }
-%"struct.std::__detail::_Prime_rehash_policy.2580398" = type { float, i64 }
-%struct.ToolCapabilities.2580392 = type <{ float, i32, %"class.std::unordered_map.112.2580399", %"class.std::unordered_map.126.2580400", i32, [4 x i8] }>
-%"class.std::unordered_map.112.2580399" = type { %"class.std::_Hashtable.113.2580401" }
-%"class.std::_Hashtable.113.2580401" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2580397", i64, %"struct.std::__detail::_Prime_rehash_policy.2580398", ptr }
-%"class.std::unordered_map.126.2580400" = type { %"class.std::_Hashtable.127.2580402" }
-%"class.std::_Hashtable.127.2580402" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2580397", i64, %"struct.std::__detail::_Prime_rehash_policy.2580398", ptr }
-%"class.std::optional.2580393" = type { %"struct.std::_Optional_base.2580403" }
-%"struct.std::_Optional_base.2580403" = type { %"struct.std::_Optional_payload.2580404" }
-%"struct.std::_Optional_payload.2580404" = type { %"struct.std::_Optional_payload.base.2580405", [7 x i8] }
-%"struct.std::_Optional_payload.base.2580405" = type { %"struct.std::_Optional_payload_base.base.2580406" }
-%"struct.std::_Optional_payload_base.base.2580406" = type { %"union.std::_Optional_payload_base<WearBarParams>::_Storage.2580407", i8 }
-%"union.std::_Optional_payload_base<WearBarParams>::_Storage.2580407" = type { %struct.WearBarParams.2580408 }
-%struct.WearBarParams.2580408 = type <{ %"class.std::map.141.2580409", i8, [7 x i8] }>
-%"class.std::map.141.2580409" = type { %"class.std::_Rb_tree.142.2580410" }
-%"class.std::_Rb_tree.142.2580410" = type { %"struct.std::_Rb_tree<float, std::pair<const float, irr::video::SColor>, std::_Select1st<std::pair<const float, irr::video::SColor>>, std::less<float>>::_Rb_tree_impl.2580411" }
-%"struct.std::_Rb_tree<float, std::pair<const float, irr::video::SColor>, std::_Select1st<std::pair<const float, irr::video::SColor>>, std::less<float>>::_Rb_tree_impl.2580411" = type { %"struct.std::_Rb_tree_key_compare.146.2580412", %"struct.std::_Rb_tree_header.2580413" }
-%"struct.std::_Rb_tree_key_compare.146.2580412" = type { %"struct.std::less.147.2580414" }
-%"struct.std::less.147.2580414" = type { i8 }
-%"struct.std::_Rb_tree_header.2580413" = type { %"struct.std::_Rb_tree_node_base.2580415", i64 }
-%"struct.std::_Rb_tree_node_base.2580415" = type { i32, ptr, ptr, ptr }
-%"struct.OT::IntType.167.2617260" = type { %struct.BEInt.168.2617261 }
-%struct.BEInt.168.2617261 = type { i8 }
-%struct._Bucket.2678397 = type { %struct._zval_struct.2678383, i64, ptr }
-%struct._zval_struct.2678383 = type { %union._zend_value.2678392, %union.anon.3.2678393, %union.anon.6.2678394 }
-%union._zend_value.2678392 = type { i64 }
-%union.anon.3.2678393 = type { i32 }
-%union.anon.6.2678394 = type { i32 }
-%class.QString.3249626 = type { %struct.QArrayDataPointer.0.3249627 }
-%struct.QArrayDataPointer.0.3249627 = type { ptr, ptr, i64 }
+%struct.ItemStack.2694529 = type { %"class.std::__cxx11::basic_string.2694469", i16, i16, %class.ItemStackMetadata.2694530 }
+%"class.std::__cxx11::basic_string.2694469" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694470", i64, %union.anon.2694471 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694470" = type { ptr }
+%union.anon.2694471 = type { i64, [8 x i8] }
+%class.ItemStackMetadata.2694530 = type { %class.SimpleMetadata.2694531, i8, [7 x i8], %struct.ToolCapabilities.2694532, %"class.std::optional.2694533" }
+%class.SimpleMetadata.2694531 = type { %class.IMetadata.2694534, i8, %"class.std::unordered_map.98.2694535" }
+%class.IMetadata.2694534 = type { ptr }
+%"class.std::unordered_map.98.2694535" = type { %"class.std::_Hashtable.99.2694536" }
+%"class.std::_Hashtable.99.2694536" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2694537", i64, %"struct.std::__detail::_Prime_rehash_policy.2694538", ptr }
+%"struct.std::__detail::_Hash_node_base.2694537" = type { ptr }
+%"struct.std::__detail::_Prime_rehash_policy.2694538" = type { float, i64 }
+%struct.ToolCapabilities.2694532 = type <{ float, i32, %"class.std::unordered_map.112.2694539", %"class.std::unordered_map.126.2694540", i32, [4 x i8] }>
+%"class.std::unordered_map.112.2694539" = type { %"class.std::_Hashtable.113.2694541" }
+%"class.std::_Hashtable.113.2694541" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2694537", i64, %"struct.std::__detail::_Prime_rehash_policy.2694538", ptr }
+%"class.std::unordered_map.126.2694540" = type { %"class.std::_Hashtable.127.2694542" }
+%"class.std::_Hashtable.127.2694542" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2694537", i64, %"struct.std::__detail::_Prime_rehash_policy.2694538", ptr }
+%"class.std::optional.2694533" = type { %"struct.std::_Optional_base.2694543" }
+%"struct.std::_Optional_base.2694543" = type { %"struct.std::_Optional_payload.2694544" }
+%"struct.std::_Optional_payload.2694544" = type { %"struct.std::_Optional_payload.base.2694545", [7 x i8] }
+%"struct.std::_Optional_payload.base.2694545" = type { %"struct.std::_Optional_payload_base.base.2694546" }
+%"struct.std::_Optional_payload_base.base.2694546" = type { %"union.std::_Optional_payload_base<WearBarParams>::_Storage.2694547", i8 }
+%"union.std::_Optional_payload_base<WearBarParams>::_Storage.2694547" = type { %struct.WearBarParams.2694548 }
+%struct.WearBarParams.2694548 = type <{ %"class.std::map.141.2694549", i8, [7 x i8] }>
+%"class.std::map.141.2694549" = type { %"class.std::_Rb_tree.142.2694550" }
+%"class.std::_Rb_tree.142.2694550" = type { %"struct.std::_Rb_tree<float, std::pair<const float, irr::video::SColor>, std::_Select1st<std::pair<const float, irr::video::SColor>>, std::less<float>>::_Rb_tree_impl.2694551" }
+%"struct.std::_Rb_tree<float, std::pair<const float, irr::video::SColor>, std::_Select1st<std::pair<const float, irr::video::SColor>>, std::less<float>>::_Rb_tree_impl.2694551" = type { %"struct.std::_Rb_tree_key_compare.146.2694552", %"struct.std::_Rb_tree_header.2694553" }
+%"struct.std::_Rb_tree_key_compare.146.2694552" = type { %"struct.std::less.147.2694554" }
+%"struct.std::less.147.2694554" = type { i8 }
+%"struct.std::_Rb_tree_header.2694553" = type { %"struct.std::_Rb_tree_node_base.2694555", i64 }
+%"struct.std::_Rb_tree_node_base.2694555" = type { i32, ptr, ptr, ptr }
+%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
+%struct.BEInt.168.2730713 = type { i8 }
+%struct._Bucket.2791334 = type { %struct._zval_struct.2791320, i64, ptr }
+%struct._zval_struct.2791320 = type { %union._zend_value.2791329, %union.anon.3.2791330, %union.anon.6.2791331 }
+%union._zend_value.2791329 = type { i64 }
+%union.anon.3.2791330 = type { i32 }
+%union.anon.6.2791331 = type { i32 }
+%class.QString.3440839 = type { %struct.QArrayDataPointer.0.3440840 }
+%struct.QArrayDataPointer.0.3440840 = type { ptr, ptr, i64 }
 
 ; 27 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
@@ -68,7 +68,7 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -76,15 +76,14 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; linux/optimized/input-mt.ll
+; 5 occurrences:
 ; linux/optimized/ip6_tables.ll
 ; linux/optimized/ip_tables.ll
 ; linux/optimized/skcipher.ll
 ; opencv/optimized/keypoint.cpp.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -107,7 +106,7 @@ entry:
 ; ruby/optimized/string.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -115,7 +114,7 @@ entry:
   ret i1 %5
 }
 
-; 56 occurrences:
+; 54 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -123,7 +122,6 @@ entry:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/mpmTruth.c.ll
 ; abc/optimized/sbdCut.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/unsp.c.ll
@@ -140,7 +138,6 @@ entry:
 ; hermes/optimized/HadesGC.cpp.ll
 ; hyperscan/optimized/mpv.c.ll
 ; icu/optimized/reslist.ll
-; icu/optimized/ustring.ll
 ; jq/optimized/jv.ll
 ; jq/optimized/regexec.ll
 ; libpng/optimized/pngread.c.ll
@@ -173,21 +170,23 @@ entry:
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
-; 68 occurrences:
+; 70 occurrences:
 ; abc/optimized/utilNam.c.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
 ; assimp/optimized/StepExporter.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/options_description.ll
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/petite.c.ll
@@ -251,16 +250,17 @@ entry:
 ; z3/optimized/upolynomial.cpp.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
-; 77 occurrences:
+; 79 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
+; boost/optimized/to_chars.ll
 ; cvc5/optimized/alf_node_converter.cpp.ll
 ; cvc5/optimized/arith_rewriter.cpp.ll
 ; cvc5/optimized/bags_utils.cpp.ll
@@ -319,6 +319,7 @@ entry:
 ; ncnn/optimized/net.cpp.ll
 ; node/optimized/libnode.inspector_socket.ll
 ; ocio/optimized/CTFTransform.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; openjdk/optimized/arguments.ll
 ; openjdk/optimized/node.ll
 ; openspiel/optimized/cards.cc.ll
@@ -338,10 +339,10 @@ entry:
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
@@ -367,7 +368,7 @@ entry:
   ret i1 %5
 }
 
-; 165 occurrences:
+; 164 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
@@ -405,7 +406,6 @@ entry:
 ; hermes/optimized/RegexSerialization.cpp.ll
 ; hermes/optimized/SemanticValidator.cpp.ll
 ; hermes/optimized/StackPromotion.cpp.ll
-; hermes/optimized/circular_raw_ostream.cpp.ll
 ; hermes/optimized/hbcdump.cpp.ll
 ; lief/optimized/rsa.c.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
@@ -534,15 +534,15 @@ entry:
 ; z3/optimized/user_solver.cpp.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %struct.ItemStack.2580389, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.ItemStack.2694529, ptr %1, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
-; 20 occurrences:
+; 18 occurrences:
 ; clamav/optimized/upx.c.ll
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/sre.ll
@@ -553,11 +553,9 @@ entry:
 ; linux/optimized/acpi-dma.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/dm-ioctl.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/nf_conntrack_sip.ll
 ; linux/optimized/property.ll
 ; linux/optimized/rscalc.ll
-; linux/optimized/rsxface.ll
 ; linux/optimized/slub.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; qemu/optimized/block_vvfat.c.ll
@@ -590,7 +588,7 @@ entry:
   ret i1 %5
 }
 
-; 145 occurrences:
+; 144 occurrences:
 ; abc/optimized/gzread.c.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -621,7 +619,6 @@ entry:
 ; hermes/optimized/HadesGC.cpp.ll
 ; hermes/optimized/HostModel.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
-; hermes/optimized/JSArrayBuffer.cpp.ll
 ; hermes/optimized/JSError.cpp.ll
 ; hermes/optimized/JSRegExp.cpp.ll
 ; hermes/optimized/JSTypedArray.cpp.ll
@@ -737,10 +734,10 @@ entry:
 ; zstd/optimized/zstd_ldm.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000068(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
@@ -755,10 +752,10 @@ entry:
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000065(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e5(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ule ptr %4, %0
   ret i1 %5
 }
@@ -770,20 +767,19 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000065(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ule ptr %4, %0
   ret i1 %5
 }
 
-; 71 occurrences:
+; 70 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
-; clamav/optimized/dns.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/entropy_common.c.ll
@@ -851,10 +847,10 @@ entry:
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"struct.OT::IntType.167.2617260", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
@@ -863,10 +859,10 @@ entry:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openjdk/optimized/frame_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000069(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e9(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i64, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %1, i64 %3
   %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
@@ -884,10 +880,10 @@ entry:
 ; verilator/optimized/V3EmitCSyms.cpp.ll
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
@@ -910,10 +906,10 @@ entry:
 ; llvm/optimized/X86RegisterBankInfo.cpp.ll
 ; php/optimized/zend_hash.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000006c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %struct._Bucket.2678397, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._Bucket.2791334, ptr %1, i64 %3
   %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
@@ -921,10 +917,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/filter_list_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %class.QString.3249626, ptr %1, i64 %3
+  %4 = getelementptr %class.QString.3440839, ptr %1, i64 %3
   %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
@@ -935,10 +931,10 @@ entry:
 ; zstd/optimized/zstdmt_compress.c.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000069(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp uge ptr %4, %0
   ret i1 %5
 }

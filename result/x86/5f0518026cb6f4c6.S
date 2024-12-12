@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	xorl	%eax, %eax
 	cmpb	$6, %dl
 	setne	%al
@@ -7,7 +7,7 @@ func0000000000000014:                   # @func0000000000000014
 	shrq	$32, %rsi
 	cmovnel	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorl	%eax, %eax
 	cmpb	$6, %dl
 	setne	%al

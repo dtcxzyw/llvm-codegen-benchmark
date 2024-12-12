@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	incq	%rsi
 	cmpq	%rdi, %rsi
 	movl	$10, %ecx
@@ -12,7 +12,7 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	orl	$-18, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addq	$4, %rsi
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi
@@ -33,13 +33,6 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$-12, %eax
 	cmovael	%ecx, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
-	addq	$20, %rsi
-	cmpq	%rdi, %rsi
-	movl	$8, %ecx
-	movl	$20, %eax
-	cmoval	%ecx, %eax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	incq	%rsi
 	xorl	%eax, %eax
@@ -47,7 +40,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	addl	%eax, %eax
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	incq	%rsi
 	cmpq	%rdi, %rsi
 	movl	$-999, %ecx                     # imm = 0xFC19

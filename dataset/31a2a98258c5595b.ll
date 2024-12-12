@@ -1,10 +1,10 @@
 
 ; 5 occurrences:
-; linux/optimized/intel_engine_cs.ll
 ; minetest/optimized/chat.cpp.ll
 ; openjdk/optimized/deoptimization.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/packet-ber.c.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -82,14 +82,15 @@ entry:
   ret i8 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000a(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
-  %4 = select i1 %3, i8 %0, i8 0
+  %4 = select i1 %3, i8 %0, i8 3
   ret i8 %4
 }
 

@@ -4,7 +4,7 @@
 ; openssl/optimized/libssl-shlib-quic_txp.ll
 ; protobuf/optimized/text_format.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i8 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 2
   %3 = icmp eq i8 %2, 0

@@ -34,9 +34,3 @@ func0000000000000009:                   # @func0000000000000009
 	cmovael	%esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpw	$4, %dx
-	movl	$4, %eax
-	cmovael	%esi, %eax
-	orl	%edi, %eax
-	retq

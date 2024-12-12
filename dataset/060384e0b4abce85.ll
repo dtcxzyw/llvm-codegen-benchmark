@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2-cache.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c6(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000186(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, -28
   %3 = icmp slt i32 %0, 0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000084(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000104(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, -3
   %3 = icmp ult i32 %0, -2
@@ -29,7 +29,7 @@ entry:
 ; openmpi/optimized/pterm.ll
 ; openmpi/optimized/req_wait.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, 0
   %3 = icmp eq i32 %1, 0
@@ -47,7 +47,7 @@ entry:
 ; linux/optimized/ip_output.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 4
   %3 = icmp ne i32 %0, 4
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-sdp.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, -1
   %3 = icmp eq i32 %1, -1
@@ -71,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/phy-core.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000006a(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, 0
   %3 = icmp sgt i32 %1, -1

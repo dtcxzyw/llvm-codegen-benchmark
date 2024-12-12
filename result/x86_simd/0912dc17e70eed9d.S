@@ -1,4 +1,4 @@
-func0000000000000154:                   # @func0000000000000154
+func00000000000002b4:                   # @func00000000000002b4
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpabsd	%ymm1, %ymm1
 	vpabsd	%ymm0, %ymm0
@@ -6,7 +6,7 @@ func0000000000000154:                   # @func0000000000000154
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpabsd	%ymm1, %ymm1
 	vpabsd	%ymm0, %ymm0
@@ -14,7 +14,7 @@ func0000000000000051:                   # @func0000000000000051
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpabsd	%ymm1, %ymm1
 	vpabsd	%ymm0, %ymm0
@@ -22,7 +22,7 @@ func0000000000000151:                   # @func0000000000000151
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000158:                   # @func0000000000000158
+func00000000000002b8:                   # @func00000000000002b8
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpabsd	%ymm1, %ymm1
 	vpabsd	%ymm0, %ymm0
@@ -30,11 +30,19 @@ func0000000000000158:                   # @func0000000000000158
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000003f4:                   # @func00000000000003f4
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpabsd	%ymm1, %ymm1
 	vpabsd	%ymm0, %ymm0
 	vpcmpltud	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func00000000000003f9:                   # @func00000000000003f9
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpabsd	%ymm1, %ymm1
+	vpabsd	%ymm0, %ymm0
+	vpcmpnltud	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -46,7 +54,7 @@ func0000000000000006:                   # @func0000000000000006
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpabsd	%ymm1, %ymm1
 	vpabsd	%ymm0, %ymm0

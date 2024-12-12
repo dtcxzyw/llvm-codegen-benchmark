@@ -45,10 +45,10 @@ entry:
 ; faiss/optimized/VectorTransform.cpp.ll
 ; openblas/optimized/dgetrf_parallel.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, %1
-  %3 = getelementptr nusw double, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw double, ptr %0, i64 %2
   ret ptr %3
 }
 
@@ -58,10 +58,10 @@ entry:
 ; openblas/optimized/dgetrf_parallel.c.ll
 ; openblas/optimized/dgetrf_single.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, %1
-  %3 = getelementptr nusw double, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw double, ptr %0, i64 %2
   ret ptr %3
 }
 

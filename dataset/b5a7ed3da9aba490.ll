@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; linux/optimized/ds.ll
 ; luajit/optimized/lj_api.ll
@@ -8,12 +8,11 @@
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; ruby/optimized/ancdata.ll
 ; ruby/optimized/compile.ll
-; wireshark/optimized/packet-lbm.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 4
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -27,7 +26,7 @@ entry:
 define i32 @func0000000000000010(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 16
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -52,7 +51,7 @@ entry:
   ret i32 %4
 }
 
-; 24 occurrences:
+; 21 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -74,14 +73,11 @@ entry:
 ; llvm/optimized/CGStmt.cpp.ll
 ; openmpi/optimized/pml_ob1_accelerator.ll
 ; php/optimized/document.ll
-; postgres/optimized/d2s.ll
-; postgres/optimized/d2s_shlib.ll
-; postgres/optimized/d2s_srv.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

@@ -64,7 +64,7 @@ func0000000000000000:                   # @func0000000000000000
 	.quad	65536000                        # 0x3e80000
 func000000000000001e:                   # @func000000000000001e
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	vextracti128	$1, %ymm0, %xmm3
@@ -95,7 +95,7 @@ func000000000000001e:                   # @func000000000000001e
 	.quad	1000000000                      # 0x3b9aca00
 func000000000000001a:                   # @func000000000000001a
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	vextracti128	$1, %ymm0, %xmm3

@@ -1,5 +1,5 @@
 
-; 700 occurrences:
+; 707 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -32,6 +32,9 @@
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/numeric.ll
+; boost/optimized/operations.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3GjkEpa.ll
 ; bullet3/optimized/btGjkEpa2.ll
 ; clamav/optimized/arcread.cpp.ll
@@ -39,7 +42,6 @@
 ; clamav/optimized/list.cpp.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/matcher.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/archive_acl.c.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
 ; cmake/optimized/lz_encoder.c.ll
@@ -79,7 +81,6 @@
 ; fmt/optimized/xchar-test.cc.ll
 ; folly/optimized/Checksum.cpp.ll
 ; freetype/optimized/pfr.c.ll
-; freetype/optimized/psaux.c.ll
 ; git/optimized/archive-zip.ll
 ; git/optimized/http-push.ll
 ; git/optimized/ls-files.ll
@@ -210,6 +211,7 @@
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/devinet.ll
+; linux/optimized/drbg.ll
 ; linux/optimized/drm_ioctl.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/e1000_hw.ll
@@ -221,16 +223,12 @@
 ; linux/optimized/gup.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/hda_intel.ll
-; linux/optimized/ht.ll
-; linux/optimized/i915_debugfs.ll
 ; linux/optimized/insn-eval.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_ggtt_fencing.ll
-; linux/optimized/intel_hti.ll
 ; linux/optimized/intel_lvds.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/ip_tunnel.ll
@@ -238,12 +236,10 @@
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/locks.ll
 ; linux/optimized/md-bitmap.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/net.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/pcmcia_cis.ll
 ; linux/optimized/pt.ll
@@ -259,7 +255,6 @@
 ; linux/optimized/vlv_dsi.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; linux/optimized/vlv_sideband.ll
-; linux/optimized/vsmp_64.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/xhci-hub.ll
 ; linux/optimized/xhci.ll
@@ -297,6 +292,7 @@
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/LTOModule.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MIGChecker.cpp.ll
 ; llvm/optimized/MIRVRegNamerUtils.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
@@ -305,7 +301,6 @@
 ; llvm/optimized/ObjCMT.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
@@ -346,6 +341,9 @@
 ; luau/optimized/IrTranslation.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -491,6 +489,7 @@
 ; openjdk/optimized/ByteBinary1Bit.ll
 ; openjdk/optimized/ByteBinary2Bit.ll
 ; openjdk/optimized/ByteBinary4Bit.ll
+; openjdk/optimized/Inet6AddressImpl.ll
 ; openjdk/optimized/cmspack.ll
 ; openjdk/optimized/deoptimization.ll
 ; openjdk/optimized/hb-ot-map.ll
@@ -543,7 +542,6 @@
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/hw_pci_pci_host.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/hw_usb_core.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/migration_vmstate.c.ll
@@ -556,6 +554,7 @@
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rtextures.c.ll
+; redis/optimized/fpconv_dtoa.ll
 ; redis/optimized/net.ll
 ; redis/optimized/networking.ll
 ; redis/optimized/rax.ll
@@ -699,6 +698,14 @@
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; z3/optimized/spacer_pdr.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/ReadBarcode.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
@@ -709,7 +716,7 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -718,34 +725,31 @@ entry:
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; abc/optimized/lpkCut.c.ll
-; arrow/optimized/float16.cc.ll
 ; hermes/optimized/HBC.cpp.ll
 ; hermes/optimized/JSLexer.cpp.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
-; llvm/optimized/X86AsmBackend.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 254
-  %3 = icmp ult i32 %2, 17
+  %3 = icmp samesign ult i32 %2, 17
   %4 = select i1 %3, i32 268435809, i32 %0
   ret i32 %4
 }
 
-; 5 occurrences:
-; nuttx/optimized/lib_wcwidth.c.ll
-; opencv/optimized/filter.dispatch.cpp.ll
+; 4 occurrences:
+; lvgl/optimized/lv_math.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; openjdk/optimized/cmsio0.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 61440
-  %3 = icmp ugt i32 %2, 36864
+  %3 = icmp samesign ugt i32 %2, 36864
   %4 = select i1 %3, i32 144, i32 %0
   ret i32 %4
 }

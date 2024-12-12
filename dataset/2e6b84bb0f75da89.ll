@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -27,6 +27,7 @@
 ; wasmtime-rs/optimized/3wy7qx4e8fg0rwt0.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i16 %1) #0 {
 entry:
@@ -36,7 +37,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/static_string.ll
 ; openjdk/optimized/zip_util.ll
 ; postgres/optimized/nbtdedup.ll
 ; redis/optimized/networking.ll
@@ -61,15 +63,16 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/static_string.ll
 ; linux/optimized/ip6_offload.ll
-; rust-analyzer-rs/optimized/47txxwz9tojfkorr.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = xor i64 %0, -1
-  %4 = add i64 %3, %2
+  %3 = sub nsw i64 %2, %0
+  %4 = add nsw i64 %3, 1
   ret i64 %4
 }
 

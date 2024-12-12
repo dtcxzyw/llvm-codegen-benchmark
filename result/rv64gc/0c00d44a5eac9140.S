@@ -38,9 +38,15 @@ func00000000000000c2:                   # @func00000000000000c2
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	add	a1, a1, a2
 	addiw	a1, a1, -34
+	slli	a1, a1, 3
+	add	a0, a0, a1
+	ret
+func0000000000000003:                   # @func0000000000000003
+	add	a1, a1, a2
+	addiw	a1, a1, -3
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret

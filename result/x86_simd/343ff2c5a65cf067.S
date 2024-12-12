@@ -10,7 +10,7 @@
 .LCPI0_1:
 	.short	32766                           # 0x7ffe
 	.short	32766                           # 0x7ffe
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpsrlw	$1, %xmm2, %xmm2
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm2
 	vpcmpgtd	%ymm1, %ymm0, %k1

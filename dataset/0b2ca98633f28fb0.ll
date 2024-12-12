@@ -12,7 +12,7 @@ entry:
   %3 = or i1 %1, %2
   %4 = zext i1 %3 to i32
   %5 = sext i1 %3 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }

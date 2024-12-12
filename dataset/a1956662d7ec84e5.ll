@@ -67,7 +67,7 @@ entry:
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; ripgrep-rs/optimized/15yuur60snxgm6cb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i32 %0, 0
@@ -117,7 +117,8 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/dynamic_binding.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; cmake/optimized/stream_encoder_mt.c.ll
 ; coreutils-rs/optimized/4ws6541n7p4pbb05.ll
@@ -125,7 +126,7 @@ entry:
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i32 %0, 24
@@ -133,10 +134,11 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; lightgbm/optimized/tree.cpp.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp sgt i32 %0, 1
@@ -166,7 +168,7 @@ entry:
 ; postgres/optimized/geo_ops.ll
 ; postgres/optimized/regress.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp slt i32 %0, 0
@@ -177,7 +179,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/jpeg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ult i32 %0, 4

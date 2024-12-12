@@ -1,11 +1,12 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; libwebp/optimized/quant_enc.c.ll
 ; node/optimized/simdutf.ll
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/intrapred.c.ll
 ; openusd/optimized/reconintra.c.ll
 ; qemu/optimized/block_vhdx-log.c.ll
+; soc-simulator/optimized/verilated.ll
 ; stb/optimized/stb_dxt.c.ll
 ; stb/optimized/stb_image.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll
@@ -20,8 +21,9 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; assimp/optimized/XFileParser.cpp.ll
+; boost/optimized/to_chars.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/ucnvscsu.ll
 ; jq/optimized/decNumber.ll

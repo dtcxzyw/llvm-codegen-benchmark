@@ -1,12 +1,3 @@
-func000000000000001c:                   # @func000000000000001c
-	testl	%edi, %edi
-	sete	%al
-	kmovd	%eax, %k1
-	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
-	vxorps	%xmm0, %xmm0, %xmm0
-	vucomiss	%xmm0, %xmm1
-	setae	%al
-	retq
 func0000000000000013:                   # @func0000000000000013
 	cmpl	$4, %edi
 	sete	%al
@@ -16,9 +7,18 @@ func0000000000000013:                   # @func0000000000000013
 	vucomiss	%xmm0, %xmm1
 	setb	%al
 	retq
+func000000000000001c:                   # @func000000000000001c
+	cmpl	$4, %edi
+	sete	%al
+	kmovd	%eax, %k1
+	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
+	vxorps	%xmm0, %xmm0, %xmm0
+	vucomiss	%xmm0, %xmm1
+	setae	%al
+	retq
 .LCPI2_0:
 	.long	0x45908800                      # float 4625
-func0000000000000085:                   # @func0000000000000085
+func0000000000000185:                   # @func0000000000000185
 	cmpl	$12001, %edi                    # imm = 0x2EE1
 	setae	%al
 	kmovd	%eax, %k1
@@ -29,7 +29,7 @@ func0000000000000085:                   # @func0000000000000085
 	retq
 .LCPI3_0:
 	.long	0x45bf6800                      # float 6125
-func0000000000000083:                   # @func0000000000000083
+func0000000000000183:                   # @func0000000000000183
 	cmpl	$12001, %edi                    # imm = 0x2EE1
 	setae	%al
 	kmovd	%eax, %k1

@@ -31,7 +31,7 @@ entry:
   %3 = fcmp ogt double %2, 1.000000e+00
   %4 = select i1 %3, double 1.000000e+00, double %2
   %5 = select i1 %1, double 0.000000e+00, double %4
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = fcmp oge double %2, 1.000000e+02
   %4 = select i1 %3, double 1.000000e+02, double %2
   %5 = select i1 %1, double 1.000000e+01, double %4
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

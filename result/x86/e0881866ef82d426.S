@@ -60,5 +60,9 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 func000000000000000d:                   # @func000000000000000d
 	addq	%rsi, %rdi
-	leaq	(%rdi,%rdi,2), %rax
+	imulq	$1000000, %rdi, %rax            # imm = 0xF4240
+	retq
+func000000000000000b:                   # @func000000000000000b
+	addq	%rsi, %rdi
+	imulq	$104, %rdi, %rax
 	retq

@@ -3,7 +3,7 @@
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; nuttx/optimized/lib_strtold.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -33
   %4 = add nsw i32 %1, -1
@@ -16,7 +16,7 @@ entry:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add i32 %1, 15
@@ -29,7 +29,7 @@ entry:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a1(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = add nsw i32 %1, -29

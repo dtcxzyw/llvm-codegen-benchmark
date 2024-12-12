@@ -17,7 +17,7 @@
 ; postgres/optimized/aclchk.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %0, -1
@@ -46,7 +46,7 @@ entry:
 ; postgres/optimized/autoinc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %0, 1
@@ -66,7 +66,7 @@ entry:
 ; postgres/optimized/selfuncs.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %0, 1
@@ -110,7 +110,7 @@ entry:
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nuw nsw i32 %0, 1
@@ -127,6 +127,7 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/fse_decompress.ll
+; lvgl/optimized/lv_indev.ll
 ; minetest/optimized/emerge.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; nuklear/optimized/unity.c.ll
@@ -145,9 +146,8 @@ entry:
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
-; zxing/optimized/AZToken.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nuw nsw i32 %0, 1
@@ -183,7 +183,7 @@ entry:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; wireshark/optimized/packet-lldp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nuw i32 %0, 1
@@ -194,7 +194,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/g711.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nuw i32 %0, 132

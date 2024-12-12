@@ -23,7 +23,7 @@ func0000000000000001:                   # @func0000000000000001
 	.short	8                               # 0x8
 	.short	8                               # 0x8
 	.short	8                               # 0x8
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k1
 	vmovdqu16	%ymm0, %ymm1 {%k1}

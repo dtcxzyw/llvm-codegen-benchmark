@@ -1,11 +1,11 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vmovq	%xmm0, %rax
 	shrq	$52, %rax
 	andl	$2047, %eax                     # imm = 0x7FF
 	cmpl	$107, %eax
 	setb	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000058:                   # @func0000000000000058
 	vmovq	%xmm0, %rax
 	movabsq	$9218868437227405312, %rcx      # imm = 0x7FF0000000000000
 	andq	%rax, %rcx
@@ -13,7 +13,7 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vmovq	%xmm0, %rax
 	movabsq	$9218868437227405312, %rcx      # imm = 0x7FF0000000000000
 	andq	%rax, %rcx
@@ -21,20 +21,20 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	%rax, %rcx
 	sete	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000054:                   # @func0000000000000054
 	vmovq	%xmm0, %rax
 	shrq	$32, %rax
 	andl	$2146435072, %eax               # imm = 0x7FF00000
 	cmpl	$111149057, %eax                # imm = 0x6A00001
 	setb	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vmovq	%xmm0, %rax
 	movabsq	$9218868437227405312, %rcx      # imm = 0x7FF0000000000000
 	testq	%rcx, %rax
 	sete	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	vmovq	%xmm0, %rax
 	movabsq	$9218868437227405312, %rcx      # imm = 0x7FF0000000000000
 	andq	%rax, %rcx
@@ -42,7 +42,7 @@ func0000000000000038:                   # @func0000000000000038
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vmovq	%xmm0, %rax
 	shrq	$41, %rax
 	andl	$1, %eax

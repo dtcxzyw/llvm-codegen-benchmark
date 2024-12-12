@@ -9,8 +9,8 @@ func0000000000000000:                   # @func0000000000000000
 	ld	a0, %lo(.LCPI0_0)(a0)
 	lui	a1, %hi(.LCPI0_1)
 	ld	a1, %lo(.LCPI0_1)(a1)
-	vxor.vv	v10, v14, v10
+	vxor.vv	v10, v10, v14
 	vmul.vx	v10, v10, a0
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	vmul.vx	v8, v8, a1
 	ret

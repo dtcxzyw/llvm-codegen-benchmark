@@ -15,7 +15,7 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; cmake/optimized/inet.c.ll
 ; icu/optimized/umutablecptrie.ll
@@ -23,13 +23,12 @@ entry:
 ; libuv/optimized/inet.c.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; node/optimized/inet.ll
-; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

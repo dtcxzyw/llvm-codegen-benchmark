@@ -74,7 +74,7 @@ entry:
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/softmax_layer.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i8 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp ne i32 %3, %0
@@ -85,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/brief.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
+define i8 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, %0

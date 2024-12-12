@@ -46,3 +46,12 @@ func000000000000004f:                   # @func000000000000004f
 	sbbl	%edx, %edi
 	leal	4(%rdi), %eax
 	retq
+func000000000000014f:                   # @func000000000000014f
+	leal	94(%rdi), %eax
+	testb	$1, %dl
+	cmovnel	%edi, %eax
+	leal	67(%rax), %ecx
+	addl	$49, %eax
+	cmpl	$78, %esi
+	cmovael	%ecx, %eax
+	retq

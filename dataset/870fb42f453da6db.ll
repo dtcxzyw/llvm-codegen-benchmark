@@ -2,6 +2,7 @@
 ; 38 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/sbdSat.c.ll
+; boost/optimized/approximately_equals.ll
 ; ceres/optimized/dynamic_compressed_row_sparse_matrix.cc.ll
 ; darktable/optimized/introspection_clahe.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -14,11 +15,10 @@
 ; miniaudio/optimized/unity.c.ll
 ; nuklear/optimized/unity.c.ll
 ; oniguruma/optimized/regcomp.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; openjdk/optimized/X11Renderer.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/av1_scale.c.ll
 ; openusd/optimized/warped_motion.c.ll
 ; php/optimized/pack.ll
@@ -39,10 +39,10 @@
 ; yosys/optimized/ezsat.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp slt i64 %3, 1
   ret i1 %4
 }
@@ -91,13 +91,14 @@ entry:
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp eq i64 %2, %3
+  %3 = sub nsw i64 0, %2
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/cmdline.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
@@ -111,6 +112,7 @@ entry:
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/jvm.ll
 ; openjdk/optimized/type.ll
 ; openspiel/optimized/tarok.cc.ll
@@ -120,20 +122,18 @@ entry:
 ; php/optimized/json_scanner.ll
 ; ruby/optimized/cstr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp eq i64 %2, %3
+  %3 = sub nsw i64 0, %2
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; git/optimized/date.ll
 ; linux/optimized/cpufreq.ll
-; linux/optimized/csum-wrappers_64.ll
 ; linux/optimized/neighbour.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/scm.ll
 ; linux/optimized/seq_memory.ll
 ; linux/optimized/x_tables.ll
@@ -146,11 +146,14 @@ entry:
 ; verilator/optimized/V3PreProc.cpp.ll
 ; wireshark/optimized/follow_stream_text.cpp.ll
 ; wireshark/optimized/lanalyzer.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp sgt i64 %3, 128
   ret i1 %4
 }
@@ -188,7 +191,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, 4095
   ret i1 %4
 }
@@ -207,12 +210,12 @@ entry:
 define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
 
-; 25 occurrences:
+; 22 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
@@ -222,14 +225,11 @@ entry:
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/redistribute.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; linux/optimized/blk-iolatency.ll
 ; linux/optimized/cpufreq.ll
 ; linux/optimized/hid-lg4ff.ll
 ; linux/optimized/printk.ll
-; linux/optimized/sysfs_engines.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; node/optimized/libnode.node_http2.ll
 ; node/optimized/libnode.string_bytes.ll
 ; opencv/optimized/cascadedetect.cpp.ll
@@ -239,10 +239,10 @@ entry:
 ; postgres/optimized/timestamp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp ugt i64 %3, 20
   ret i1 %4
 }
@@ -261,27 +261,22 @@ entry:
 define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ult i64 %3, -1025
   ret i1 %4
 }
 
-; 26 occurrences:
+; 20 occurrences:
 ; cpython/optimized/gcmodule.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; git/optimized/parse-options.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/pipe.ll
 ; linux/optimized/scsi_logging.ll
-; linux/optimized/timeconv.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
 ; memcached/optimized/testapp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
-; opencv/optimized/cap_mjpeg_decoder.cpp.ll
-; opencv/optimized/erfilter.cpp.ll
 ; openssl/optimized/bio_dgram_test-bin-bio_dgram_test.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_net_e1000e.c.ll
@@ -292,18 +287,18 @@ entry:
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; redis/optimized/ziplist.ll
 ; stockfish/optimized/bitboard.ll
-; velox/optimized/AsyncDataCache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp ult i64 %3, 1048576
   ret i1 %4
 }
 
-; 53 occurrences:
+; 55 occurrences:
 ; abc/optimized/sbdSat.c.ll
+; boost/optimized/approximately_equals.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
@@ -328,6 +323,7 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lapi.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -357,11 +353,26 @@ entry:
 ; yosys/optimized/sim.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp sgt i64 %3, 66059279
+  ret i1 %4
+}
+
+; 5 occurrences:
+; hyperscan/optimized/program_runtime.c.ll
+; linux/optimized/timeconv.ll
+; opencv/optimized/cap_mjpeg_decoder.cpp.ll
+; opencv/optimized/erfilter.cpp.ll
+; velox/optimized/AsyncDataCache.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = add nsw i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 64
   ret i1 %4
 }
 
@@ -370,11 +381,11 @@ entry:
 ; node/optimized/libnode.crypto_util.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp ne i64 %2, %3
+  %3 = sub nsw i64 0, %2
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
@@ -383,10 +394,10 @@ entry:
 ; luajit/optimized/lj_ffrecord.ll
 ; luajit/optimized/lj_ffrecord_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = icmp sgt i64 %3, -1
   ret i1 %4
 }
@@ -397,19 +408,32 @@ entry:
 define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp ne i64 %2, %3
+  %3 = sub nsw i64 0, %2
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = icmp ult i64 %3, 65536
+  ret i1 %4
+}
+
+; 3 occurrences:
+; hyperscan/optimized/program_runtime.c.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = add nsw i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 2147483647
   ret i1 %4
 }
 
@@ -418,10 +442,10 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = icmp slt i64 %3, 1
   ret i1 %4
 }

@@ -8,7 +8,7 @@ func0000000000000015:                   # @func0000000000000015
 	addq	%rax, %rdx
 	leaq	(,%rdx,8), %rax
 	subq	%rdx, %rax
-	leaq	-2(%rax,%rdi), %rax
+	leaq	-2(%rdi,%rax), %rax
 	retq
 func0000000000000011:                   # @func0000000000000011
 	movabsq	$-7183739866224372601, %rcx     # imm = 0x9C4E3AA71AE25487
@@ -20,5 +20,5 @@ func0000000000000011:                   # @func0000000000000011
 	sarq	$15, %rdx
 	addq	%rax, %rdx
 	imulq	$-12211, %rdx, %rax             # imm = 0xD04D
-	leaq	2147483563(%rax,%rdi), %rax
+	leaq	2147483563(%rdi,%rax), %rax
 	retq

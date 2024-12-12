@@ -5,7 +5,7 @@
 ; openssl/optimized/libcrypto-lib-cms_smime.ll
 ; openssl/optimized/libcrypto-shlib-cms_smime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne ptr %1, null
@@ -14,16 +14,17 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; git/optimized/sequencer.ll
 ; icu/optimized/uloc.ll
 ; llvm/optimized/DeclObjC.cpp.ll
 ; llvm/optimized/MachineBlockPlacement.cpp.ll
 ; openjdk/optimized/matcher.ll
 ; openjdk/optimized/memnode.ll
+; redis/optimized/anet.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000302(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 6
   %4 = icmp eq ptr %1, null
@@ -36,7 +37,7 @@ entry:
 ; curl/optimized/libcurl_la-rtsp.ll
 ; git/optimized/commit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne i32 %1, 0
@@ -50,7 +51,7 @@ entry:
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000102(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -6
   %4 = icmp eq ptr %1, null
@@ -63,7 +64,7 @@ entry:
 ; wireshark/optimized/packet-protobuf.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq i32 %1, 0

@@ -1,5 +1,6 @@
 
-; 351 occurrences:
+; 513 occurrences:
+; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/sequence_lock_test.cc.ll
@@ -7,7 +8,105 @@
 ; anki-rs/optimized/1wav3jgc9yfcjc1.ll
 ; anki-rs/optimized/22lei7qbgq6q4wqu.ll
 ; arrow/optimized/api_scalar.cc.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/framework.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/numeric.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/topology.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; brotli/optimized/backward_references.c.ll
+; cmake/optimized/deflate.c.ll
 ; cmake/optimized/ftp.c.ll
 ; coreutils-rs/optimized/1rc3oz70a7y5cjew.ll
 ; coreutils-rs/optimized/1xrz1ag37fklzklg.ll
@@ -50,6 +149,7 @@
 ; g2o/optimized/filesys_tools.cpp.ll
 ; glog/optimized/logging.cc.ll
 ; graphviz/optimized/strmatch.c.ll
+; gromacs/optimized/deflate.c.ll
 ; gromacs/optimized/forcerec.cpp.ll
 ; gromacs/optimized/matio.cpp.ll
 ; gromacs/optimized/mpiinfo.cpp.ll
@@ -71,10 +171,10 @@
 ; just-rs/optimized/bulvmt5gknxyhsd.ll
 ; just-rs/optimized/xt6bvrk4jdo7mpy.ll
 ; libpng/optimized/pngrtran.c.ll
+; libquic/optimized/deflate.c.ll
 ; libquic/optimized/string_util.cc.ll
 ; linux/optimized/intel_dmc.ll
 ; linux/optimized/intel_dp.ll
-; linux/optimized/match.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/sky2.ll
 ; llama.cpp/optimized/common.cpp.ll
@@ -84,7 +184,6 @@
 ; llvm/optimized/CStringChecker.cpp.ll
 ; llvm/optimized/CallEvent.cpp.ll
 ; llvm/optimized/Clang.cpp.ll
-; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/DiagnosticBuilderWrappers.cpp.ll
 ; llvm/optimized/DylibVerifier.cpp.ll
 ; llvm/optimized/DynamicExtent.cpp.ll
@@ -108,6 +207,7 @@
 ; llvm/optimized/X86FoldTablesEmitter.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; meilisearch-rs/optimized/5788mfqwwp628q0b.ll
@@ -174,7 +274,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -351,6 +450,69 @@
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/test_pmgen.ll
 ; yosys/optimized/xilinx_srl.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1n9m1wio9iaaeyuit846udw38.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/1qoospyzgc86mrbrflush3m5b.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/1vv5j9nlfivum07q3z96mzhlk.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/20igqmfettcex48uahr8huyna.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/3quypyfrg8uizn5sealer8xsk.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/5kpr1irzb57viu7vn1ci12z94.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; zed-rs/optimized/62p0ysciwr0duwav9qlwb71rc.ll
+; zed-rs/optimized/67gayid14ydsuhkv0lcnhbsvb.ll
+; zed-rs/optimized/7aq90jycr3x842qyrhjbel971.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/7znph2z4y55emrpyaq53m67p1.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8fnqr4x4dcnr22hiqkfhgttys.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/9dvdqfymuqqao6fspz5y2pa1a.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/9tx3ef1bysuj1ynm6i6wgnanl.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/9ydmyaey957xyuywtl3djlzml.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/b7azyji7w0gj79cpvibdmzbyg.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bkp2u7tfyqnnhpthgztcor9ly.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
+; zed-rs/optimized/bx60353v5ms1nsmjqyoxenjec.ll
+; zed-rs/optimized/by8gv54o76v0inyrwjxd65d9p.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
+; zed-rs/optimized/etkkpijil810uxaq6a1xhpkj9.ll
+; zed-rs/optimized/f0amc3mihxn9sd1mhsostg4ox.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
+; zed-rs/optimized/f4wwu90a2y9t62jcyj6nqzu8v.ll
+; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -359,25 +521,44 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
+; 10 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; libzmq/optimized/mtrie.cpp.ll
 ; libzmq/optimized/trie.cpp.ll
 ; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/mlme.ll
-; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/InterfaceFile.cpp.ll
-; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/MCDwarf.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; mitsuba3/optimized/func.cpp.ll
 ; opencv/optimized/gfluidcore.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
-; sentencepiece/optimized/trainer_interface.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp uge i8 %1, %2
+  %4 = select i1 %3, i1 %0, i1 false
+  ret i1 %4
+}
+
+; 14 occurrences:
+; abc/optimized/Glucose.cpp.ll
+; abc/optimized/Glucose2.cpp.ll
+; boost/optimized/approximately_equals.ll
+; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
+; gromacs/optimized/pdb2gmx.cpp.ll
+; hyperscan/optimized/flood_compile.cpp.ll
+; linux/optimized/libata-core.ll
+; luau/optimized/isocline.c.ll
+; minetest/optimized/dynamicshadowsrender.cpp.ll
+; openspiel/optimized/chess_board.cc.ll
+; openssl/optimized/libssl-lib-rec_layer_s3.ll
+; openssl/optimized/libssl-shlib-rec_layer_s3.ll
+; ripgrep-rs/optimized/1blifwgi0jcy5tf4.ll
+; wireshark/optimized/packet-saphdb.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ne i8 %1, %2
   %4 = select i1 %3, i1 %0, i1 false
   ret i1 %4
 }
@@ -393,27 +574,7 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
-; abc/optimized/Glucose.cpp.ll
-; abc/optimized/Glucose2.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
-; gromacs/optimized/pdb2gmx.cpp.ll
-; hyperscan/optimized/flood_compile.cpp.ll
-; linux/optimized/libata-core.ll
-; luau/optimized/isocline.c.ll
-; minetest/optimized/dynamicshadowsrender.cpp.ll
-; openspiel/optimized/chess_board.cc.ll
-; ripgrep-rs/optimized/1blifwgi0jcy5tf4.ll
-; wireshark/optimized/packet-saphdb.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ne i8 %1, %2
-  %4 = select i1 %3, i1 %0, i1 false
-  ret i1 %4
-}
-
-; 13 occurrences:
+; 14 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
@@ -426,7 +587,8 @@ entry:
 ; ripgrep-rs/optimized/3bctup5kmnkujhz5.ll
 ; ripgrep-rs/optimized/nfnpl33n8tyk5ff.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
-; wireshark/optimized/packet-lbmc.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -458,6 +620,29 @@ entry:
 define i1 @func000000000000000b(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp sge i8 %1, %2
+  %4 = select i1 %3, i1 %0, i1 false
+  ret i1 %4
+}
+
+; 4 occurrences:
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/MCDwarf.cpp.ll
+; sentencepiece/optimized/trainer_interface.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign uge i8 %1, %2
+  %4 = select i1 %3, i1 %0, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-lbmc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %1, %2
   %4 = select i1 %3, i1 %0, i1 false
   ret i1 %4
 }

@@ -1,5 +1,7 @@
 
-; 147 occurrences:
+%struct.BackwardMatch.3843312 = type { i32, i32 }
+
+; 145 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -76,8 +78,6 @@
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pbrt-v4/optimized/plytool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -158,13 +158,37 @@ entry:
 }
 
 ; 2 occurrences:
-; abseil-cpp/optimized/time_zone_info.cc.ll
-; hyperscan/optimized/fdr.c.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(ptr %0, i64 %1) #0 {
+define i64 @func0000000000000012(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp ult i64 %1, 17
+  %3 = select i1 %2, i64 0, i64 -16
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/time_zone_info.cc.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, -576460752303423487
   %3 = select i1 %2, i64 48, i64 0
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; protobuf/optimized/arena.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp eq i64 %1, 0
+  %3 = select i1 %2, i64 -16, i64 -8
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
@@ -173,10 +197,34 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/arena.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000012(ptr %0, i64 %1) #0 {
+define i64 @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 8
   %3 = select i1 %2, i64 24, i64 56
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; brotli/optimized/backward_references_hq.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp eq i64 %1, 0
+  %3 = select i1 %2, i64 0, i64 256
+  %4 = getelementptr %struct.BackwardMatch.3843312, ptr %0, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; hyperscan/optimized/fdr.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = icmp slt i64 %1, 17
+  %3 = select i1 %2, i64 0, i64 -16
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5

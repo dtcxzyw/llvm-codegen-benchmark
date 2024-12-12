@@ -22,10 +22,10 @@ entry:
 ; Function Attrs: nounwind
 define double @func0000000000000002(double %0, double %1) #0 {
 entry:
-  %2 = fcmp olt double %1, %0
-  %3 = select i1 %2, double %1, double %0
-  %4 = select i1 %2, double %0, double %1
-  %5 = fsub double %4, %3
+  %2 = fcmp olt double %0, %1
+  %3 = select i1 %2, double %0, double %1
+  %4 = select i1 %2, double %1, double %0
+  %5 = fsub double %3, %4
   ret double %5
 }
 

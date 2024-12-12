@@ -1,4 +1,4 @@
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
 	addq	%rsi, %rax
 	sarq	$32, %rax
@@ -13,7 +13,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rax, %rsi
 	setg	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movabsq	$85899345920, %rax              # imm = 0x1400000000
 	addq	%rsi, %rax
 	sarq	$32, %rax

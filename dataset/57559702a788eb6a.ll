@@ -1,9 +1,29 @@
 
-%struct.VirtIONetQueue.2594922 = type { ptr, ptr, ptr, ptr, i32, %struct.anon.8.2594923, ptr }
-%struct.anon.8.2594923 = type { ptr }
+; 12 occurrences:
+; linux/optimized/insn-eval.ll
+; linux/optimized/intel_memory_region.ll
+; linux/optimized/process_64.ll
+; linux/optimized/sta_info.ll
+; postgres/optimized/blkreftable.ll
+; postgres/optimized/blkreftable_shlib.ll
+; postgres/optimized/blkreftable_srv.ll
+; postgres/optimized/refint.ll
+; postgres/optimized/tsrank.ll
+; postgres/optimized/uuid.ll
+; qemu/optimized/hw_net_virtio-net.c.ll
+; re2/optimized/dfa.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(ptr %0, i16 %1) #0 {
+entry:
+  %2 = lshr i16 %1, 1
+  %3 = zext nneg i16 %2 to i64
+  %4 = getelementptr i32, ptr %0, i64 %3
+  ret ptr %4
+}
 
-; 47 occurrences:
+; 49 occurrences:
 ; abc/optimized/abcOdc.c.ll
+; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; clamav/optimized/matcher-bm.c.ll
 ; gromacs/optimized/forcerec.cpp.ll
@@ -20,7 +40,6 @@
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/JSONNodeDumper.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -50,33 +69,14 @@
 ; openusd/optimized/openexr-c.c.ll
 ; stockfish/optimized/tbprobe.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 3
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 11 occurrences:
-; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
-; linux/optimized/insn-eval.ll
-; linux/optimized/intel_memory_region.ll
-; linux/optimized/process_64.ll
-; linux/optimized/sta_info.ll
-; postgres/optimized/blkreftable.ll
-; postgres/optimized/blkreftable_shlib.ll
-; postgres/optimized/blkreftable_srv.ll
-; postgres/optimized/tsrank.ll
-; postgres/optimized/uuid.ll
-; qemu/optimized/hw_net_virtio-net.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i16 %1) #0 {
-entry:
-  %2 = lshr i16 %1, 1
-  %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr %struct.VirtIONetQueue.2594922, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -84,11 +84,11 @@ entry:
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i16 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i16 %1) #0 {
 entry:
   %2 = lshr exact i16 %1, 8
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   ret ptr %4
 }
 

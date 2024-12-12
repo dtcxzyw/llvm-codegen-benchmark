@@ -33,7 +33,7 @@ entry:
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = sext i32 %3 to i64

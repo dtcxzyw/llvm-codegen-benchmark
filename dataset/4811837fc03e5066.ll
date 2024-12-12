@@ -3,7 +3,7 @@
 ; flac/optimized/stream_encoder.c.ll
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %0, %2
   %4 = select i1 %3, i32 %0, i32 %1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/Q3DLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %0, %2
   %4 = select i1 %3, i32 %0, i32 %1
@@ -63,7 +63,7 @@ entry:
 ; git/optimized/userdiff.ll
 ; git/optimized/worktree.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000146(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %0, %2
   %4 = select i1 %3, i32 %0, i32 %1
@@ -78,7 +78,7 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; openblas/optimized/dbbcsd.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %0, %2
   %4 = select i1 %3, i32 %0, i32 %1
@@ -89,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/extents.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %0, %2
   %4 = select i1 %3, i32 %0, i32 %1
@@ -100,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %0, %2
   %4 = select i1 %3, i32 %0, i32 %1

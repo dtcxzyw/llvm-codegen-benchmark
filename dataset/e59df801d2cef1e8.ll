@@ -1,10 +1,12 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i64 %0) #0 {
 entry:

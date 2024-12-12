@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; lightgbm/optimized/bin.cpp.ll
+; 5 occurrences:
 ; linux/optimized/nfnetlink_log.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll

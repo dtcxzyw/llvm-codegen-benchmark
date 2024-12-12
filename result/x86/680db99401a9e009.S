@@ -33,3 +33,10 @@ func000000000000000c:                   # @func000000000000000c
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
+func0000000000000028:                   # @func0000000000000028
+	shrq	$61, %rdx
+	sete	%al
+	notb	%sil
+	andb	%sil, %al
+	orb	%dil, %al
+	retq

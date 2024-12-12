@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; linux/optimized/wol.ll
+; 3 occurrences:
 ; linux/optimized/xfrm_user.ll
 ; ruby/optimized/regcomp.ll
 ; wireshark/optimized/packet-scte35.c.ll
@@ -12,7 +11,7 @@ entry:
   ret i32 %3
 }
 
-; 134 occurrences:
+; 132 occurrences:
 ; abc/optimized/ifUtil.c.ll
 ; abc/optimized/mpmTruth.c.ll
 ; abc/optimized/sswCore.c.ll
@@ -43,7 +42,6 @@ entry:
 ; icu/optimized/collationdatawriter.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; icu/optimized/double-conversion-string-to-double.ll
-; icu/optimized/ethpccal.ll
 ; icu/optimized/genmbcs.ll
 ; icu/optimized/gregocal.ll
 ; icu/optimized/loclikelysubtags.ll
@@ -52,7 +50,6 @@ entry:
 ; icu/optimized/ucnv_lmb.ll
 ; icu/optimized/ucnv_u8.ll
 ; jq/optimized/jv_dtoa.ll
-; libevent/optimized/evmap.c.ll
 ; libjpeg-turbo/optimized/jcmarker.c.ll
 ; libquic/optimized/a_strex.c.ll
 ; libquic/optimized/dtoa.cc.ll
@@ -155,10 +152,9 @@ entry:
   ret i32 %3
 }
 
-; 100 occurrences:
+; 97 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; clamav/optimized/unpack.cpp.ll
-; cpython/optimized/Hacl_Hash_SHA3.ll
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/dtoa.ll
 ; cvc5/optimized/fc_simplex.cpp.ll
@@ -172,7 +168,6 @@ entry:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/flow_dissector.ll
-; linux/optimized/fonts.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/linkmodes.ll
@@ -187,7 +182,6 @@ entry:
 ; linux/optimized/skcipher.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/trace_events_filter.ll
-; linux/optimized/tsinfo.ll
 ; linux/optimized/tso.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/xfrm_user.ll
@@ -261,11 +255,11 @@ define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
   %not. = xor i1 %0, true
   %2 = zext i1 %not. to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
-; 60 occurrences:
+; 62 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/float16.cc.ll
@@ -293,7 +287,6 @@ entry:
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/linkstate.ll
 ; linux/optimized/nexthop.ll
-; linux/optimized/pse-pd.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/skl_watermark.ll
@@ -326,6 +319,9 @@ entry:
 ; wireshark/optimized/packet-udld.c.ll
 ; wireshark/optimized/pcapio.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:

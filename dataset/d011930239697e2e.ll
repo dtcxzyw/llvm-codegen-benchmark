@@ -13,7 +13,7 @@ entry:
   ret ptr %6
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; hermes/optimized/DictPropertyMap.cpp.ll
@@ -21,19 +21,21 @@ entry:
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; openspiel/optimized/maedn.cc.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll
+; protobuf/optimized/descriptor.cc.ll
+; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/field_mask_util.cc.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = and i32 %3, 255
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/encode_internal.cc.ll
@@ -54,16 +56,17 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; redis/optimized/lzf_c.ll
+; redis/optimized/rax.ll
 ; stb/optimized/stb_image_write.c.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 63
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -71,12 +74,12 @@ entry:
 ; abc/optimized/ivyFraig.c.ll
 ; openjdk/optimized/classFileParser.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = and i32 %3, 255
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -96,12 +99,12 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, -2
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -123,12 +126,12 @@ entry:
 ; openusd/optimized/decodeframe.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = and i32 %3, 3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -150,13 +153,11 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; postgres/optimized/to_tsany.ll
 ; postgres/optimized/tsrank.ll
 ; postgres/optimized/tsvector.ll
 ; postgres/optimized/tsvector_op.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
 entry:

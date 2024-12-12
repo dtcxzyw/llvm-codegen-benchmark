@@ -4,10 +4,10 @@
 ; nanobind/optimized/nb_func.cpp.ll
 ; qemu/optimized/migration_ram.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nuw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -84,7 +84,7 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -2
   %4 = add nsw i64 %3, %1
@@ -114,7 +114,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4096
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %0, 4096
   %6 = icmp ugt i64 %5, %4
   ret i1 %6
@@ -127,7 +127,7 @@ entry:
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -2
   %4 = add i64 %3, %1
@@ -139,10 +139,10 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/call.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 9223372036854775807
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nuw nsw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6

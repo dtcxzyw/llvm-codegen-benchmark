@@ -1,11 +1,10 @@
 
-; 209 occurrences:
+; 215 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/ifDelay.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTime.c.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -53,6 +52,10 @@
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_vector.ll
+; lvgl/optimized/lv_line.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll
 ; meshlab/optimized/edit_select.cpp.ll
@@ -207,13 +210,16 @@
 ; tev/optimized/ImageViewer.cpp.ll
 ; tev/optimized/MultiGraph.cpp.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   ret float %3
 }
 

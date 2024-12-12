@@ -24,11 +24,10 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; linux/optimized/nfs4xdr.ll
 ; postgres/optimized/gindatapage.ll
 ; postgres/optimized/gindesc.ll
-; postgres/optimized/gininsert.ll
 ; postgres/optimized/ginvacuum.ll
 ; postgres/optimized/ginxlog.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll

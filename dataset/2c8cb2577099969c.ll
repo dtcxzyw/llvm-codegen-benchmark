@@ -1,10 +1,9 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; faiss/optimized/IndexIVF.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
 ; opencv/optimized/msd.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; quantlib/optimized/onefactormodel.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
@@ -16,9 +15,10 @@ entry:
   ret i64 %3
 }
 
-; 26 occurrences:
+; 28 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRefactor.c.ll
+; abc/optimized/amapPerm.c.ll
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTruth.c.ll
@@ -33,6 +33,7 @@ entry:
 ; linux/optimized/rsrc.ll
 ; oiio/optimized/imagebufalgo_deep.cpp.ll
 ; opencv/optimized/kdtree.cpp.ll
+; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
 ; opencv/optimized/scale_layer.cpp.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll

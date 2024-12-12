@@ -15,7 +15,7 @@ entry:
   ret i64 %5
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/VectorTransform.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -24,7 +24,6 @@ entry:
 ; gromacs/optimized/pme.cpp.ll
 ; gromacs/optimized/state.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -82,7 +81,8 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; linux/optimized/drm_dsc_helper.ll
 ; opencv/optimized/dxt.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {

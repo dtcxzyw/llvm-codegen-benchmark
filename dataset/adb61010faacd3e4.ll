@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; graphviz/optimized/pack.c.ll
-; icu/optimized/gregoimp.ll
 ; libjpeg-turbo/optimized/jdmainct.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll

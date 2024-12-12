@@ -7,7 +7,6 @@
 ; linux/optimized/dmar.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/intel_gt.ll
-; linux/optimized/reciprocal_div.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
@@ -23,6 +22,7 @@
 ; velox/optimized/tz.cpp.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i32 %1) #0 {
 entry:
@@ -33,7 +33,7 @@ entry:
   ret i64 %5
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/float16.cc.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
@@ -47,6 +47,8 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/multiVis.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003d(i64 %0, i32 %1) #0 {
 entry:
@@ -89,10 +91,11 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; linux/optimized/io_apic.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
@@ -105,7 +108,7 @@ entry:
   ret i64 %5
 }
 
-; 26 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; diesel-rs/optimized/1dr0ikhoh8prk7sr.ll
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
@@ -127,10 +130,16 @@ entry:
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
 ; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wireshark/optimized/packet-mysql.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
@@ -162,7 +171,7 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/pasid.ll
@@ -178,6 +187,7 @@ entry:
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/packet-http.c.ll
 ; wireshark/optimized/packet-mysql.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i64 %0, i32 %1) #0 {
@@ -254,6 +264,19 @@ entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = shl i64 %0, 33
   %5 = or disjoint i64 %4, %3
+  ret i64 %5
+}
+
+; 2 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = shl i64 %2, 52
+  %4 = shl nuw i64 %0, 63
+  %5 = or i64 %3, %4
   ret i64 %5
 }
 

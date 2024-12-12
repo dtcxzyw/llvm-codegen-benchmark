@@ -1,7 +1,21 @@
 
-%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2511718" = type { i64, i64 }
+%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852" = type { i64, i64 }
+%struct.netdev_queue.3545812 = type { ptr, %struct.netdevice_tracker.3545813, ptr, ptr, %struct.kobject.3545814, i32, i64, %struct.atomic64_t.3545815, ptr, ptr, %struct.spinlock.3545766, i32, i64, i64, [40 x i8], %struct.dql.3545816 }
+%struct.netdevice_tracker.3545813 = type {}
+%struct.kobject.3545814 = type { ptr, %struct.list_head.3545767, ptr, ptr, ptr, ptr, %struct.kref.3545817, i8 }
+%struct.list_head.3545767 = type { ptr, ptr }
+%struct.kref.3545817 = type { %struct.refcount_struct.3545818 }
+%struct.refcount_struct.3545818 = type { %struct.atomic_t.3545772 }
+%struct.atomic_t.3545772 = type { i32 }
+%struct.atomic64_t.3545815 = type { i64 }
+%struct.spinlock.3545766 = type { %union.anon.0.3545768 }
+%union.anon.0.3545768 = type { %struct.raw_spinlock.3545769 }
+%struct.raw_spinlock.3545769 = type { %struct.qspinlock.3545770 }
+%struct.qspinlock.3545770 = type { %union.anon.1.3545771 }
+%union.anon.1.3545771 = type { %struct.atomic_t.3545772 }
+%struct.dql.3545816 = type { i32, i32, i32, [52 x i8], i32, i32, i32, i32, i32, i32, i64, i32, i32, i32, [20 x i8] }
 
-; 55 occurrences:
+; 53 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/bytecode.c.ll
@@ -17,9 +31,7 @@
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
-; llvm/optimized/Archive.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/CGDeclCXX.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
@@ -42,6 +54,7 @@
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; llvm/optimized/X86EncodingOptimization.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_grid.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; minetest/optimized/client.cpp.ll
@@ -54,15 +67,14 @@
 ; opencv/optimized/retinacolor.cpp.ll
 ; openmpi/optimized/opal_datatype_optimize.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
-; php/optimized/zend_jit.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; z3/optimized/mpn.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -140,15 +152,15 @@ entry:
 ; yaml-cpp/optimized/scantag.cpp.ll
 ; yaml-cpp/optimized/scantoken.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 31
-  %5 = getelementptr nusw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2511718", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852", ptr %0, i64 %4
   ret ptr %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; folly/optimized/Subprocess.cpp.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/buffered-io.ll
@@ -161,7 +173,6 @@ entry:
 ; linux/optimized/namei.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/skbuff.ll
-; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; postgres/optimized/pg_lsn.ll
 ; postgres/optimized/xlog.ll
 ; qemu/optimized/block_parallels.c.ll
@@ -174,7 +185,7 @@ entry:
   ret ptr %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/encode.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
@@ -188,6 +199,7 @@ entry:
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; luau/optimized/Generalization.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
@@ -198,11 +210,11 @@ entry:
 ; wolfssl/optimized/test.c.ll
 ; z3/optimized/sat_clause.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -221,23 +233,24 @@ entry:
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 2 occurrences:
-; linux/optimized/tg3.ll
-; llvm/optimized/Stmt.cpp.ll
+; 3 occurrences:
+; llvm/optimized/Archive.cpp.ll
+; llvm/optimized/CGCleanup.cpp.ll
+; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %1, %2
-  %4 = and i64 %3, 4294967288
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %3 = add i64 %1, %2
+  %4 = and i64 %3, -8
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -249,6 +262,17 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
   %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; linux/optimized/tg3.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = and i64 %3, 4294967295
+  %5 = getelementptr %struct.netdev_queue.3545812, ptr %0, i64 %4
   ret ptr %5
 }
 

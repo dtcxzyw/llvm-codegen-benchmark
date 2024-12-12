@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; minetest/optimized/CImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 65280
-  %4 = mul nuw i32 %3, %0
+  %4 = mul nuw i32 %0, %3
   %5 = icmp ult i32 %4, 16777216
   ret i1 %5
 }
@@ -14,24 +14,12 @@ entry:
 ; 1 occurrences:
 ; jq/optimized/jv_print.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
   %3 = and i32 %2, 7
   %4 = mul nsw i32 %3, %0
   %5 = icmp eq i32 %4, 0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; glslang/optimized/hlslGrammar.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 16
-  %3 = and i32 %2, 15
-  %4 = mul nuw nsw i32 %3, %0
-  %5 = icmp ugt i32 %4, 4
   ret i1 %5
 }
 
@@ -83,7 +71,7 @@ entry:
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_rps.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
   %3 = and i32 %2, 255

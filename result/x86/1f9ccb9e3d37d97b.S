@@ -13,7 +13,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rcx, %rax
 	seta	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	leaq	20(%rdi), %rax
 	testb	$1, %dl
 	cmovneq	%rdi, %rax
@@ -21,7 +21,7 @@ func0000000000000044:                   # @func0000000000000044
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	andl	$1, %edx
 	subq	%rdx, %rdi
 	addq	$2, %rdi

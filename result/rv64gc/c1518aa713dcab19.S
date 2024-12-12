@@ -11,15 +11,9 @@ func0000000000000001:                   # @func0000000000000001
 	mv	a0, a1
 .LBB1_2:                                # %entry
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sext.w	a2, a1
 	beqz	a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:                                # %entry
-	ret
-func000000000000000a:                   # @func000000000000000a
-	sext.w	a2, a1
-	bgtz	a2, .LBB3_2
-	mv	a0, a1
-.LBB3_2:                                # %entry
 	ret

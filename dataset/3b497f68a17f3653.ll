@@ -7,12 +7,12 @@ entry:
   %3 = shl i32 %2, 3
   %4 = and i32 %3, -67108864
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or i64 %6, %0
   ret i64 %7
 }
 
-; 126 occurrences:
+; 128 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -130,6 +130,7 @@ entry:
 ; linux/optimized/io_apic.ll
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll
@@ -139,27 +140,29 @@ entry:
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 13
   %4 = and i32 %3, 262144
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 27
   %4 = and i32 %3, 1073741824
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or i64 %6, %0
   ret i64 %7
 }
@@ -175,8 +178,23 @@ entry:
   %3 = shl i32 %2, 5
   %4 = and i32 %3, 7936
   %5 = zext nneg i32 %4 to i64
-  %6 = or i64 %5, %1
+  %6 = or i64 %1, %5
   %7 = or i64 %6, %0
+  ret i64 %7
+}
+
+; 3 occurrences:
+; c3c/optimized/lexer.c.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; linux/optimized/dmar.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 16
+  %4 = and i32 %3, 16711680
+  %5 = zext nneg i32 %4 to i64
+  %6 = or disjoint i64 %1, %5
+  %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
 
@@ -190,7 +208,7 @@ entry:
   %3 = shl nuw i32 %2, 30
   %4 = and i32 %3, 1073741824
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
@@ -213,21 +231,7 @@ entry:
   %3 = shl i32 %2, 8
   %4 = and i32 %3, -16777216
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %1
-  %7 = or disjoint i64 %6, %0
-  ret i64 %7
-}
-
-; 2 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/dmar.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %2, 12
-  %4 = and i32 %3, 61440
-  %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }

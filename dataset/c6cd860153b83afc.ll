@@ -11,7 +11,7 @@ entry:
   %2 = icmp ne i32 %0, 0
   %3 = and i1 %2, %1
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = icmp ne i32 %0, -1
   %3 = and i1 %2, %1
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

@@ -1,14 +1,3 @@
-func000000000000000e:                   # @func000000000000000e
-	andi	a3, a1, 1
-	andi	a1, a2, 255
-	slli	a1, a1, 16
-	lui	a2, 24576
-	bnez	a3, .LBB0_2
-	lui	a2, 28672
-.LBB0_2:                                # %entry
-	or	a0, a0, a2
-	or	a0, a0, a1
-	ret
 func000000000000001f:                   # @func000000000000001f
 	andi	a2, a2, 255
 	andi	a1, a1, 1
@@ -20,12 +9,12 @@ func000000000000001f:                   # @func000000000000001f
 func0000000000000008:                   # @func0000000000000008
 	andi	a3, a1, 1
 	slliw	a1, a2, 24
-	bnez	a3, .LBB2_2
+	bnez	a3, .LBB1_2
 	li	a2, 992
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-.LBB2_2:
+.LBB1_2:
 	lui	a2, 524288
 	addiw	a2, a2, 992
 	or	a1, a1, a2
@@ -36,11 +25,18 @@ func000000000000001e:                   # @func000000000000001e
 	andi	a1, a2, 255
 	slli	a1, a1, 16
 	lui	a2, 524804
-	bnez	a3, .LBB3_2
+	bnez	a3, .LBB2_2
 	lui	a2, 516
-.LBB3_2:                                # %entry
+.LBB2_2:                                # %entry
 	or	a0, a0, a2
 	or	a0, a0, a1
+	ret
+func000000000000000e:                   # @func000000000000000e
+	andi	a2, a2, 255
+	slliw	a1, a1, 31
+	slli	a2, a2, 23
+	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 func000000000000000f:                   # @func000000000000000f
 	andi	a3, a1, 1

@@ -1,13 +1,12 @@
 
-%struct.Indirect.3341356 = type { ptr, i32, ptr }
+%struct.Indirect.3530524 = type { ptr, i32, ptr }
 
-; 7 occurrences:
+; 6 occurrences:
 ; clamav/optimized/upx.c.ll
 ; cpython/optimized/sre.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; linux/optimized/ccm.ll
 ; linux/optimized/gcm.ll
-; linux/optimized/tpm.ll
 ; qemu/optimized/block_parallels-ext.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i32 %1) #0 {
@@ -76,19 +75,18 @@ entry:
 ; openjdk/optimized/pngrutil.ll
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(ptr %0, i32 %1) #0 {
+define i64 @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 1
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
 
-; 37 occurrences:
-; abc/optimized/inffast.c.ll
+; 35 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/unsp.c.ll
-; gromacs/optimized/inffast.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/ArrayStorage.cpp.ll
@@ -121,14 +119,13 @@ entry:
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/jvmciCodeInstaller.ll
-; php/optimized/is_simh.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i32 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 12
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 12
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -136,11 +133,24 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000012(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 2
-  %4 = getelementptr nusw i16, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw i16, ptr %3, i64 %2
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 2 occurrences:
+; abc/optimized/inffast.c.ll
+; gromacs/optimized/inffast.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(ptr %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = getelementptr nusw i8, ptr %0, i64 -1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -165,7 +175,7 @@ define i64 @func0000000000000010(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 -24
-  %4 = getelementptr %struct.Indirect.3341356, ptr %3, i64 %2
+  %4 = getelementptr %struct.Indirect.3530524, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

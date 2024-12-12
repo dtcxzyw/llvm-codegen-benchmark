@@ -1,12 +1,11 @@
 
-; 37 occurrences:
+; 35 occurrences:
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
 ; cpython/optimized/mathmodule.ll
 ; gromacs/optimized/dlasv2.cpp.ll
 ; hdf5/optimized/h5diff_array.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
@@ -28,7 +27,6 @@
 ; openblas/optimized/dlasd7.c.ll
 ; openblas/optimized/dlasv2.c.ll
 ; openblas/optimized/dlatrs.c.ll
-; openblas/optimized/dstein.c.ll
 ; proj/optimized/horner.cpp.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dswaptionengine.ll

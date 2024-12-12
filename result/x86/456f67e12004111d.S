@@ -10,13 +10,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	addq	$2047, %rdx                     # imm = 0x7FF
 	andq	%rsi, %rdi
 	cmpq	%rdx, %rdi
 	seta	%al
 	retq
-func0000000000000035:                   # @func0000000000000035
+func0000000000000065:                   # @func0000000000000065
 	addq	$4094, %rdx                     # imm = 0xFFE
 	andq	%rsi, %rdi
 	cmpq	%rdx, %rdi

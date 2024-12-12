@@ -22,19 +22,21 @@ func0000000000000035:                   # @func0000000000000035
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpmulld	%ymm0, %ymm1, %ymm0
 	retq
-func0000000000000001:                   # @func0000000000000001
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpsubd	%ymm0, %ymm1, %ymm0
-	retq
-.LCPI4_0:
-	.long	1                               # 0x1
+.LCPI3_0:
+	.long	10                              # 0xa
 func0000000000000005:                   # @func0000000000000005
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpbroadcastd	.LCPI4_0(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
+	vpbroadcastd	.LCPI3_0(%rip), %ymm2   # ymm2 = [10,10,10,10,10,10,10,10]
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI4_0:
+	.long	1024                            # 0x400
+func0000000000000001:                   # @func0000000000000001
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpbroadcastd	.LCPI4_0(%rip), %ymm2   # ymm2 = [1024,1024,1024,1024,1024,1024,1024,1024]
+	vpsubd	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI5_0:
 	.long	1                               # 0x1

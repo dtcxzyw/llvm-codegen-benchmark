@@ -23,6 +23,11 @@ func0000000000000000:                   # @func0000000000000000
 	leal	4(%rdx,%rsi), %ecx
 	subq	%rcx, %rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	movq	%rdi, %rax
+	leal	2(%rdx,%rsi), %ecx
+	subq	%rcx, %rax
+	retq
 func0000000000000062:                   # @func0000000000000062
 	movq	%rdi, %rax
 	leal	144(%rdx,%rsi), %ecx

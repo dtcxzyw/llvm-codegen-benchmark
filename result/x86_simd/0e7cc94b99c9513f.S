@@ -75,7 +75,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vpmovdb	%ymm0, %xmm1
 	vpaddb	.LCPI1_0(%rip), %xmm1, %xmm1
 	vptestnmd	%ymm0, %ymm0, %k1
@@ -83,7 +83,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	vpmovdb	%ymm0, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vptestmd	%ymm0, %ymm0, %k1
@@ -126,7 +126,7 @@ func00000000000000d1:                   # @func00000000000000d1
 	.zero	1
 .LCPI3_1:
 	.long	185                             # 0xb9
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	vpmovdb	%ymm0, %xmm1
 	vpaddb	.LCPI3_0(%rip), %xmm1, %xmm1
 	vpcmpeqd	.LCPI3_1(%rip){1to8}, %ymm0, %k1

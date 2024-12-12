@@ -13,12 +13,12 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   %6 = lshr i64 %5, 32
   ret i64 %6
 }
 
-; 96 occurrences:
+; 94 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -49,8 +49,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -120,7 +118,7 @@ define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = lshr i64 %5, 32
   ret i64 %6
 }

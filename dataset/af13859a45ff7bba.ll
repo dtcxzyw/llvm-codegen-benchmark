@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; libphonenumber/optimized/rune.c.ll
 ; lief/optimized/ssl_msg.c.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:

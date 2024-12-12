@@ -14,19 +14,20 @@ func000000000000000c:                   # @func000000000000000c
 	cmpb	$10, %dil
 	setne	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
-	cmpb	$118, %dil
+func000000000000004a:                   # @func000000000000004a
+	cmpb	$49, %dil
 	setge	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
-	movl	%edi, %eax
-	shrb	$7, %al
+	andl	$192, %edi
+	cmpl	$128, %edi
+	sete	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	testb	%dil, %dil
 	setns	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	testb	$-64, %dil
 	sete	%al
 	retq

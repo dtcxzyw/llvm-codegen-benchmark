@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; assimp/optimized/ASEParser.cpp.ll
-; icu/optimized/ustrcase.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; Function Attrs: nounwind
@@ -24,8 +23,7 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; meshlab/optimized/filter_screened_poisson.cpp.ll
+; 1 occurrences:
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
@@ -47,6 +45,28 @@ entry:
   %3 = xor i32 %2, 2147483647
   %4 = add i32 %0, %1
   %5 = icmp slt i32 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; icu/optimized/ustrcase.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = xor i32 %2, 2147483647
+  %4 = add i32 %0, %1
+  %5 = icmp samesign ugt i32 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = xor i32 %2, -1
+  %4 = add i32 %0, %1
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 

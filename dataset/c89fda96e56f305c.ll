@@ -1,16 +1,11 @@
 
-%"struct.OT::IntType.0.2622262" = type { %struct.BEInt.1.2622266 }
-%struct.BEInt.1.2622266 = type { [2 x i8] }
-%class.symbol.3428956 = type { ptr }
+%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
+%struct.BEInt.1.2735703 = type { [2 x i8] }
+%class.symbol.3613505 = type { ptr }
 
-; 146 occurrences:
+; 140 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
-; lief/optimized/rsa.c.ll
-; llama.cpp/optimized/ggml.c.ll
-; opencv/optimized/canny.cpp.ll
-; opencv/optimized/channels.cpp.ll
-; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; z3/optimized/add_bounds_tactic.cpp.ll
@@ -35,7 +30,6 @@
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/decl_collector.cpp.ll
@@ -151,11 +145,23 @@
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/well_sorted.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000ff(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 2
-  %4 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %3, i64 %1
-  %5 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %4, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 2
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %3, i64 %1
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %4, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; lief/optimized/rsa.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fe(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -219,12 +225,38 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a8(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000fc(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 80
-  %4 = getelementptr nusw ptr, ptr %3, i64 %1
-  %5 = getelementptr nusw %class.symbol.3428956, ptr %4, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 80
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw %class.symbol.3613505, ptr %4, i64 %1
   %6 = getelementptr ptr, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 3 occurrences:
+; llama.cpp/optimized/ggml.c.ll
+; opencv/optimized/canny.cpp.ll
+; opencv/optimized/channels.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000ea(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 80
+  %4 = getelementptr nusw ptr, ptr %3, i64 %1
+  %5 = getelementptr nusw ptr, ptr %4, i64 %1
+  %6 = getelementptr nusw ptr, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/tree.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000eb(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
+  %4 = getelementptr nusw double, ptr %3, i64 %1
+  %5 = getelementptr nusw ptr, ptr %4, i64 %1
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %0
   ret ptr %6
 }
 

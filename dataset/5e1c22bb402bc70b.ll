@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 97 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -67,7 +68,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -96,10 +96,9 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000042(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = icmp eq i8 %2, 56
@@ -108,38 +107,12 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; spike/optimized/f16_to_ui32.ll
-; spike/optimized/f16_to_ui64.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008c(i16 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 31
-  %3 = icmp ult i8 %2, 25
-  %4 = icmp slt i16 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(i16 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 31
-  %3 = icmp eq i8 %2, 31
-  %4 = icmp slt i16 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
 ; 3 occurrences:
 ; linux/optimized/filter.ll
 ; quickjs/optimized/quickjs.ll
 ; slurm/optimized/parse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000302(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = icmp eq i8 %2, 44
@@ -149,21 +122,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000188(i16 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, -5
-  %3 = icmp ne i8 %2, 0
-  %4 = icmp ult i16 %0, 53
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000048(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -5
   %3 = icmp eq i8 %2, 0
@@ -176,7 +137,7 @@ entry:
 ; wireshark/optimized/packet-cemi.c.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000218(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -189,7 +150,7 @@ entry:
 ; linux/optimized/mlme.ll
 ; wireshark/optimized/packet-atm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000118(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 10
   %3 = icmp ne i8 %2, 0
@@ -202,12 +163,24 @@ entry:
 ; linux/optimized/rx.ll
 ; linux/optimized/tcp_output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000058(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 96
   %3 = icmp eq i8 %2, 32
   %4 = icmp ne i16 %0, 0
   %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; cmake/optimized/archive_read_support_format_zip.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000102(i16 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 4
+  %3 = icmp eq i8 %2, 0
+  %4 = icmp ult i16 %0, 4
+  %5 = or i1 %3, %4
   ret i1 %5
 }
 

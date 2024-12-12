@@ -1,8 +1,9 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; base64-rs/optimized/1a04td3ag2jefly3.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btMLCPSolver.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
@@ -34,31 +35,19 @@ entry:
   ret i32 %2
 }
 
-; 19 occurrences:
+; 7 occurrences:
 ; bullet3/optimized/btMLCPSolver.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; openjdk/optimized/AlphaMath.ll
-; openjdk/optimized/FourByteAbgr.ll
-; openjdk/optimized/FourByteAbgrPre.ll
-; openjdk/optimized/IntArgb.ll
-; openjdk/optimized/IntArgbBm.ll
-; openjdk/optimized/IntArgbPre.ll
-; openjdk/optimized/IntBgr.ll
-; openjdk/optimized/IntRgb.ll
-; openjdk/optimized/IntRgbx.ll
-; openjdk/optimized/ThreeByteBgr.ll
-; openjdk/optimized/Ushort555Rgb.ll
-; openjdk/optimized/Ushort555Rgbx.ll
-; openjdk/optimized/Ushort565Rgb.ll
 ; openspiel/optimized/dou_dizhu.cc.ll
 ; postgres/optimized/lock.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = mul i32 %1, 3
+  %2 = mul i32 %1, 65793
   ret i32 %2
 }
 
@@ -78,6 +67,28 @@ define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = mul i32 %1, -8
+  ret i32 %2
+}
+
+; 13 occurrences:
+; abseil-cpp/optimized/duration.cc.ll
+; abseil-cpp/optimized/duration_test.cc.ll
+; abseil-cpp/optimized/kernel_timeout_test.cc.ll
+; abseil-cpp/optimized/mutex_test.cc.ll
+; abseil-cpp/optimized/time_test.cc.ll
+; darktable/optimized/introspection_borders.c.ll
+; eastl/optimized/EADateTime.cpp.ll
+; gromacs/optimized/libxdrf.cpp.ll
+; gromacs/optimized/minimize.cpp.ll
+; grpc/optimized/jwt_credentials.cc.ll
+; grpc/optimized/timer_manager.cc.ll
+; grpc/optimized/work_stealing_thread_pool.cc.ll
+; meshlab/optimized/baseio.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i32
+  %2 = mul i32 %1, 3
   ret i32 %2
 }
 
@@ -111,11 +122,10 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -127,27 +137,6 @@ define i32 @func0000000000000005(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = mul i32 %1, 10
-  ret i32 %2
-}
-
-; 12 occurrences:
-; abseil-cpp/optimized/duration.cc.ll
-; abseil-cpp/optimized/duration_test.cc.ll
-; abseil-cpp/optimized/kernel_timeout_test.cc.ll
-; abseil-cpp/optimized/mutex_test.cc.ll
-; abseil-cpp/optimized/time_test.cc.ll
-; eastl/optimized/EADateTime.cpp.ll
-; gromacs/optimized/libxdrf.cpp.ll
-; gromacs/optimized/minimize.cpp.ll
-; grpc/optimized/jwt_credentials.cc.ll
-; grpc/optimized/timer_manager.cc.ll
-; grpc/optimized/work_stealing_thread_pool.cc.ll
-; meshlab/optimized/baseio.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i64 %0) #0 {
-entry:
-  %1 = trunc i64 %0 to i32
-  %2 = mul i32 %1, 3
   ret i32 %2
 }
 

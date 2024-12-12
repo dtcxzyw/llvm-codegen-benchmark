@@ -1,5 +1,12 @@
 
-; 5 occurrences:
+; 12 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; ceres/optimized/manifold.cc.ll
 ; graphviz/optimized/emit.c.ll
 ; openblas/optimized/dhgeqz.c.ll

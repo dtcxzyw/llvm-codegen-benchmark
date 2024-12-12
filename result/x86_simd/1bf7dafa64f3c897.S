@@ -8,7 +8,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3   # ymm3 = [536870911,536870911,536870911,536870911]
 	vpand	%ymm3, %ymm2, %ymm2
 	vpcmpeqq	%ymm3, %ymm2, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vpcmpgtd	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

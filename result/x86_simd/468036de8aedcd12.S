@@ -24,13 +24,13 @@ func0000000000000002:                   # @func0000000000000002
 	vpandd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI3_0:
-	.long	510                             # 0x1fe
+	.long	4294967293                      # 0xfffffffd
 .LCPI3_1:
-	.long	4294967146                      # 0xffffff6a
+	.long	4294967291                      # 0xfffffffb
 func0000000000000005:                   # @func0000000000000005
-	vpsrld	$23, %ymm0, %ymm0
-	vpandd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
-	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
+	vpsrld	$12, %ymm0, %ymm0
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
+	vpandd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	63                              # 0x3f

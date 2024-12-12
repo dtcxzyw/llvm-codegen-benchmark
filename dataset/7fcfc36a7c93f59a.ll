@@ -1,5 +1,5 @@
 
-; 109 occurrences:
+; 108 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; crow/optimized/example_cookies.cpp.ll
@@ -101,7 +101,6 @@
 ; rocksdb/optimized/sortlist.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; stockfish/optimized/tbprobe.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; wasmedge/optimized/global.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasimodule.cpp.ll

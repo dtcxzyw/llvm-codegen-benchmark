@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; postgres/optimized/varbit.ll
 ; spike/optimized/f128_rem.ll

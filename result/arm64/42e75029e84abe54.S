@@ -1,118 +1,62 @@
 func0000000000000020:                   // @func0000000000000020
 // %bb.0:                               // %entry
-	movi	v5.8h, #55
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	cmeq	v4.8h, v4.8h, v5.8h
-	movi	v5.4s, #1
-	ushll2	v6.4s, v4.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	and	v6.16b, v6.16b, v5.16b
-	and	v4.16b, v4.16b, v5.16b
-	add	v1.4s, v6.4s, v1.4s
-	add	v0.4s, v4.4s, v0.4s
+	and	w8, w2, #0xffff
+	cmp	w8, #55
+	cinc	w8, w1, eq
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000180:                   // @func0000000000000180
 // %bb.0:                               // %entry
-	cmtst	v4.8h, v4.8h, v4.8h
-	movi	v5.4s, #1
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	ushll2	v6.4s, v4.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	and	v6.16b, v6.16b, v5.16b
-	and	v4.16b, v4.16b, v5.16b
-	add	v1.4s, v6.4s, v1.4s
-	add	v0.4s, v4.4s, v0.4s
+	tst	w2, #0xffff
+	cinc	w8, w1, ne
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000018f:                   // @func000000000000018f
 // %bb.0:                               // %entry
-	cmtst	v4.8h, v4.8h, v4.8h
-	movi	v5.4s, #1
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	ushll2	v6.4s, v4.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	and	v6.16b, v6.16b, v5.16b
-	and	v4.16b, v4.16b, v5.16b
-	add	v1.4s, v6.4s, v1.4s
-	add	v0.4s, v4.4s, v0.4s
+	tst	w2, #0xffff
+	cinc	w8, w1, ne
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000010f:                   // @func000000000000010f
 // %bb.0:                               // %entry
-	movi	v5.8h, #99
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	cmhi	v4.8h, v4.8h, v5.8h
-	movi	v5.4s, #1
-	ushll2	v6.4s, v4.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	and	v6.16b, v6.16b, v5.16b
-	and	v4.16b, v4.16b, v5.16b
-	add	v1.4s, v6.4s, v1.4s
-	add	v0.4s, v4.4s, v0.4s
+	and	w8, w2, #0xffff
+	cmp	w8, #99
+	cinc	w8, w1, hi
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000100:                   // @func0000000000000100
 // %bb.0:                               // %entry
-	movi	v5.8h, #3
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	cmhi	v4.8h, v4.8h, v5.8h
-	movi	v5.4s, #1
-	ushll2	v6.4s, v4.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	and	v6.16b, v6.16b, v5.16b
-	and	v4.16b, v4.16b, v5.16b
-	add	v1.4s, v6.4s, v1.4s
-	add	v0.4s, v4.4s, v0.4s
+	and	w8, w2, #0xffff
+	cmp	w8, #3
+	cinc	w8, w1, hi
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000025:                   // @func0000000000000025
 // %bb.0:                               // %entry
-	movi	v5.8h, #22
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	cmeq	v4.8h, v4.8h, v5.8h
-	movi	v5.4s, #1
-	ushll2	v6.4s, v4.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	and	v6.16b, v6.16b, v5.16b
-	and	v4.16b, v4.16b, v5.16b
-	add	v1.4s, v6.4s, v1.4s
-	add	v0.4s, v4.4s, v0.4s
+	and	w8, w2, #0xffff
+	cmp	w8, #22
+	cinc	w8, w1, eq
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000002d:                   // @func000000000000002d
 // %bb.0:                               // %entry
-	movi	v5.8h, #22
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	cmeq	v4.8h, v4.8h, v5.8h
-	movi	v5.4s, #1
-	ushll2	v6.4s, v4.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	and	v6.16b, v6.16b, v5.16b
-	and	v4.16b, v4.16b, v5.16b
-	add	v1.4s, v6.4s, v1.4s
-	add	v0.4s, v4.4s, v0.4s
+	and	w8, w2, #0xffff
+	cmp	w8, #22
+	cinc	w8, w1, eq
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000002f:                   // @func000000000000002f
 // %bb.0:                               // %entry
-	movi	v5.8h, #2
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	cmeq	v4.8h, v4.8h, v5.8h
-	movi	v5.4s, #1
-	ushll2	v6.4s, v4.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	and	v6.16b, v6.16b, v5.16b
-	and	v4.16b, v4.16b, v5.16b
-	add	v1.4s, v6.4s, v1.4s
-	add	v0.4s, v4.4s, v0.4s
+	and	w8, w2, #0xffff
+	cmp	w8, #2
+	cinc	w8, w1, eq
+	add	w0, w8, w0
 	ret
                                         // -- End function

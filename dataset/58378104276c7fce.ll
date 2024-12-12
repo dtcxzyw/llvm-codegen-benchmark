@@ -1,5 +1,5 @@
 
-; 245 occurrences:
+; 274 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/cuddSat.c.ll
 ; abc/optimized/cuddTable.c.ll
@@ -8,6 +8,37 @@
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
@@ -89,7 +120,6 @@
 ; msdfgen/optimized/main.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
@@ -113,7 +143,6 @@
 ; openblas/optimized/dlasd7.c.ll
 ; openblas/optimized/dlasv2.c.ll
 ; openblas/optimized/dlatrs.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/utest_main.c.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll

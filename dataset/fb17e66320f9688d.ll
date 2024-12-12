@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 58 occurrences:
 ; glslang/optimized/linkValidate.cpp.ll
 ; hermes/optimized/Inlining.cpp.ll
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
@@ -22,6 +22,9 @@
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; llvm/optimized/X86ShuffleDecodeConstantPool.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; openjdk/optimized/escape.ll
@@ -43,6 +46,10 @@
 ; tev/optimized/main.cpp.ll
 ; wireshark/optimized/packet-kafka.c.ll
 ; yosys/optimized/BigUnsigned.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; zfp/optimized/encode1d.c.ll
 ; zfp/optimized/encode1l.c.ll
 ; zfp/optimized/encode2d.c.ll
@@ -56,7 +63,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -74,7 +81,7 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 15 occurrences:
 ; grpc/optimized/ring_hash.cc.ll
 ; hyperscan/optimized/dfa_min.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -83,6 +90,10 @@ entry:
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; hyperscan/optimized/ng_squash.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; openjdk/optimized/library_call.ll
 ; openmpi/optimized/ad_aggregate_new.ll
 ; openusd/optimized/tessellation.cpp.ll
@@ -95,16 +106,14 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
-; libjpeg-turbo/optimized/jdmarker.c.ll
-; linux/optimized/vc_screen.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 7
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -128,7 +137,7 @@ define i32 @func0000000000000028(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, -1
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -144,8 +153,7 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; icu/optimized/collationdatabuilder.ll
+; 3 occurrences:
 ; linux/optimized/page_alloc.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
@@ -154,6 +162,29 @@ define i32 @func0000000000000013(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 4096
   %4 = select i1 %3, i32 1, i32 %1
+  %5 = add nuw nsw i32 %0, %4
+  ret i32 %5
+}
+
+; 2 occurrences:
+; libjpeg-turbo/optimized/jdmarker.c.ll
+; linux/optimized/vc_screen.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000060(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %2, 4096
+  %4 = select i1 %3, i32 4096, i32 %1
+  %5 = add i32 %4, %0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; icu/optimized/collationdatabuilder.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000053(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 19
+  %4 = select i1 %3, i32 4352, i32 %1
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -161,9 +192,9 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000051(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 4
+  %3 = icmp samesign ult i64 %2, 4
   %4 = select i1 %3, i32 0, i32 %1
   %5 = add nsw i32 %4, %0
   ret i32 %5

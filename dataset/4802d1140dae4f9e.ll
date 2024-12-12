@@ -1,12 +1,12 @@
 
 ; 7 occurrences:
+; linux/optimized/ip_options.ll
 ; opencc/optimized/Dict.cpp.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
 ; openusd/optimized/pathExpression.cpp.ll
 ; openusd/optimized/pathParser.cpp.ll
 ; openusd/optimized/predicateExpression.cpp.ll
 ; postgres/optimized/mbprint.ll
-; wireshark/optimized/packet-cops.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -14,18 +14,6 @@ entry:
   %4 = icmp eq i8 %3, -64
   %5 = and i1 %0, %1
   %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-ieee80211-radiotap.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = and i8 %2, 15
-  %4 = icmp ult i8 %3, 9
-  %5 = and i1 %0, %1
-  %6 = and i1 %5, %4
   ret i1 %6
 }
 

@@ -26,5 +26,5 @@ func0000000000000003:                   # @func0000000000000003
 	vpcmpnltw	%xmm3, %xmm1, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [48,48,48,48,48,48,48,48]
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm2, %ymm1 {%k1}
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

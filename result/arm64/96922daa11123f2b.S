@@ -1,21 +1,9 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	zip1	v4.8b, v2.8b, v0.8b
-	zip2	v2.8b, v2.8b, v0.8b
-	movi	v5.4s, #12
-	ushll	v6.4s, v3.4h, #0
-	ushll2	v3.4s, v3.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	ushll	v2.4s, v2.4h, #0
-	add	v0.4s, v0.4s, v5.4s
-	add	v1.4s, v1.4s, v5.4s
-	shl	v4.4s, v4.4s, #31
-	shl	v2.4s, v2.4s, #31
-	cmge	v4.4s, v4.4s, #0
-	cmge	v2.4s, v2.4s, #0
-	and	v4.16b, v6.16b, v4.16b
-	and	v2.16b, v3.16b, v2.16b
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v2.4s
+	and	w8, w2, #0xffff
+	tst	w1, #0x1
+	csel	w8, wzr, w8, ne
+	add	w8, w0, w8
+	add	w0, w8, #12
 	ret
                                         // -- End function

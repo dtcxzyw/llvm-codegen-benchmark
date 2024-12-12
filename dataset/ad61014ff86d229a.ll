@@ -1,5 +1,5 @@
 
-; 632 occurrences:
+; 598 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -7,6 +7,7 @@
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDetect.c.ll
+; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcMini.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absOldCex.c.ll
@@ -28,11 +29,8 @@
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cgtCore.c.ll
-; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraBddAuto.c.ll
-; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/extraUtilEnum.c.ll
-; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/extraUtilMult.c.ll
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/fraClass.c.ll
@@ -49,9 +47,7 @@
 ; abc/optimized/giaExist.c.ll
 ; abc/optimized/giaFrames.c.ll
 ; abc/optimized/giaGig.c.ll
-; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaMf.c.ll
-; abc/optimized/giaMfs.c.ll
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/giaMini.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -61,15 +57,12 @@
 ; abc/optimized/giaResub6.c.ll
 ; abc/optimized/giaShrink7.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
-; abc/optimized/ifDec75.c.ll
 ; abc/optimized/ifMan.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/ivyUtil.c.ll
 ; abc/optimized/kitCloud.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/mioFunc.c.ll
 ; abc/optimized/mioUtils.c.ll
 ; abc/optimized/saigConstr2.c.ll
@@ -104,12 +97,15 @@
 ; bullet3/optimized/btMultiBody.ll
 ; bullet3/optimized/btPoint2PointConstraint.ll
 ; bullet3/optimized/btSliderConstraint.ll
+; casadi/optimized/cs_amd.c.ll
 ; casadi/optimized/cs_counts.c.ll
 ; casadi/optimized/cs_maxtrans.c.ll
 ; casadi/optimized/cs_post.c.ll
 ; casadi/optimized/sundials_iterative.c.ll
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
+; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
+; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
@@ -132,6 +128,7 @@
 ; ceres/optimized/partitioned_matrix_view_4_4_4.cc.ll
 ; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
+; ceres/optimized/reorder_program.cc.ll
 ; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
@@ -144,7 +141,6 @@
 ; darktable/optimized/introspection_blurs.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
-; darktable/optimized/jpeg.c.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
@@ -165,6 +161,9 @@
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/smooth.c.ll
 ; freetype/optimized/truetype.c.ll
+; g2o/optimized/slam2d_linear.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; git/optimized/diffcore-rename.ll
 ; git/optimized/record.ll
 ; graphviz/optimized/DotIO.c.ll
@@ -279,7 +278,6 @@
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/pairs.cpp.ll
-; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
 ; gromacs/optimized/redistribute.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
@@ -324,19 +322,20 @@
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
 ; lief/optimized/aes.c.ll
-; lief/optimized/aesni.c.ll
 ; lightgbm/optimized/gradient_discretizer.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
-; llvm/optimized/OMPIRBuilder.cpp.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; memcached/optimized/memcached-murmur3_hash.ll
 ; memcached/optimized/memcached_debug-murmur3_hash.ll
 ; memcached/optimized/murmur3_hash.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
+; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; minetest/optimized/numeric.cpp.ll
@@ -348,7 +347,6 @@
 ; msdfgen/optimized/render-sdf.cpp.ll
 ; msdfgen/optimized/sdf-error-estimation.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
-; ncnn/optimized/concat_x86.cpp.ll
 ; ncnn/optimized/concat_x86_avx.cpp.ll
 ; ncnn/optimized/concat_x86_avx512.cpp.ll
 ; ncnn/optimized/concat_x86_fma.cpp.ll
@@ -393,23 +391,15 @@
 ; ncnn/optimized/interp_x86_avx.cpp.ll
 ; ncnn/optimized/interp_x86_avx512.cpp.ll
 ; ncnn/optimized/interp_x86_fma.cpp.ll
-; ncnn/optimized/lstm_x86_avx512.cpp.ll
-; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
-; ncnn/optimized/mat_pixel.cpp.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
 ; ncnn/optimized/pooling_x86.cpp.ll
 ; ncnn/optimized/pooling_x86_avx.cpp.ll
 ; ncnn/optimized/pooling_x86_avx512.cpp.ll
 ; ncnn/optimized/pooling_x86_fma.cpp.ll
-; ncnn/optimized/slice_x86.cpp.ll
 ; ncnn/optimized/slice_x86_avx.cpp.ll
 ; ncnn/optimized/slice_x86_avx512.cpp.ll
 ; ncnn/optimized/slice_x86_fma.cpp.ll
-; ncnn/optimized/softmax_x86.cpp.ll
-; ncnn/optimized/softmax_x86_avx.cpp.ll
-; ncnn/optimized/softmax_x86_avx512.cpp.ll
-; ncnn/optimized/softmax_x86_fma.cpp.ll
 ; ncnn/optimized/yolov3detectionoutput.cpp.ll
 ; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
 ; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
@@ -431,7 +421,6 @@
 ; openblas/optimized/dlasdq.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dstemr.c.ll
-; openblas/optimized/dsytrs_aa.c.ll
 ; opencv/optimized/aruco_dictionary.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
@@ -454,23 +443,19 @@
 ; opencv/optimized/epnp.cpp.ll
 ; opencv/optimized/essential_solver.cpp.ll
 ; opencv/optimized/estimator.cpp.ll
-; opencv/optimized/facemarkLBF.cpp.ll
 ; opencv/optimized/feature.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/floodfill.cpp.ll
 ; opencv/optimized/fundamental_solver.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/homography_solver.cpp.ll
-; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/kdtree.cpp.ll
-; opencv/optimized/kuhn_munkres.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
-; opencv/optimized/orb.cpp.ll
 ; opencv/optimized/paillou_filter.cpp.ll
 ; opencv/optimized/rand.cpp.ll
 ; opencv/optimized/ransac_solvers.cpp.ll
@@ -478,7 +463,6 @@
 ; opencv/optimized/seam_finders.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
-; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; opencv/optimized/svm.cpp.ll
@@ -519,7 +503,6 @@
 ; openjdk/optimized/mlib_ImageConv_D64nw.ll
 ; openjdk/optimized/mlib_ImageConv_F32nw.ll
 ; openjdk/optimized/mlib_ImageCreate.ll
-; openjdk/optimized/mlib_ImageLookUp_64.ll
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
@@ -528,26 +511,19 @@
 ; openjdk/optimized/mlib_c_ImageAffine_BL_S16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BL_U16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_NN.ll
-; openjdk/optimized/mlib_c_ImageLookUp_f.ll
 ; openjdk/optimized/os.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openmpi/optimized/coll_sm_barrier.ll
 ; openmpi/optimized/comm.ll
-; openmpi/optimized/heap_sort.ll
 ; openmpi/optimized/mpl_argstr.ll
 ; openmpi/optimized/opal_bitmap.ll
 ; openmpi/optimized/pmix_bitmap.ll
-; openmpi/optimized/test_pvar_access.ll
 ; openmpi/optimized/topo_base_dist_graph_create.ll
-; openspiel/optimized/2048.cc.ll
-; openspiel/optimized/oware_board.cc.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openusd/optimized/aom_scale.c.ll
 ; openusd/optimized/av1_inv_txfm2d.c.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/cfl.c.ll
-; openusd/optimized/convolve.c.ll
 ; openusd/optimized/cpuKernel.cpp.ll
 ; openusd/optimized/faceSurface.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
@@ -578,20 +554,12 @@
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; openusd/optimized/tbbKernel.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
-; openusd/optimized/testHioAvif.cpp.ll
 ; openusd/optimized/topologyDescriptor.cpp.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; openusd/optimized/utils.cpp.ll
 ; openusd/optimized/yuv_scale.c.ll
-; pbrt-v4/optimized/aggregates.cpp.ll
-; pbrt-v4/optimized/file.cpp.ll
-; pbrt-v4/optimized/imgtool.cpp.ll
-; pbrt-v4/optimized/integrator.cpp.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/render.cpp.ll
-; pbrt-v4/optimized/scene.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; php/optimized/md5.ll
@@ -628,9 +596,7 @@
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/Solver.ll
-; yosys/optimized/const2ast.ll
 ; zxing/optimized/BinaryBitmap.cpp.ll
-; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/PDFModulusGF.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
@@ -657,7 +623,7 @@ entry:
   ret ptr %4
 }
 
-; 106 occurrences:
+; 103 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/blocksort.c.ll
@@ -699,7 +665,6 @@ entry:
 ; linux/optimized/hdac_stream.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/libahci.ll
-; linux/optimized/mpih-mul.ll
 ; linux/optimized/perfmon.ll
 ; linux/optimized/select.ll
 ; linux/optimized/tcp_fastopen.ll
@@ -721,18 +686,15 @@ entry:
 ; openblas/optimized/dlarrv.c.ll
 ; openblas/optimized/dlasd8.c.ll
 ; openblas/optimized/dlasq2.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dorgbr.c.ll
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrevc.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/ciMethodData.ll
-; openjdk/optimized/mlib_c_ImageCopy.ll
 ; openspiel/optimized/clobber_test.cc.ll
 ; postgres/optimized/basebackup.ll
 ; postgres/optimized/execParallel.ll
@@ -754,6 +716,7 @@ entry:
 ; qemu/optimized/migration_block.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; qemu/optimized/ui_vnc.c.ll
+; quickjs/optimized/libbf.ll
 ; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/libunicode.ll
 ; quickjs/optimized/quickjs.ll
@@ -773,8 +736,7 @@ entry:
   ret ptr %4
 }
 
-; 95 occurrences:
-; abc/optimized/abcExact.c.ll
+; 79 occurrences:
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/extraUtilPath.c.ll
@@ -790,22 +752,16 @@ entry:
 ; bullet3/optimized/b3Point2PointConstraint.ll
 ; bullet3/optimized/btBoxBoxDetector.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
+; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btHingeConstraint.ll
 ; bullet3/optimized/btMultiBody.ll
 ; bullet3/optimized/btPoint2PointConstraint.ll
 ; bullet3/optimized/btSliderConstraint.ll
-; casadi/optimized/cs_amd.c.ll
-; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
-; ceres/optimized/eigensparse.cc.ll
-; ceres/optimized/reorder_program.cc.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; darktable/optimized/introspection_defringe.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; faiss/optimized/IndexAdditiveQuantizer.cpp.ll
-; g2o/optimized/slam2d_linear.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; gromacs/optimized/atomdistribution.cpp.ll
 ; gromacs/optimized/biassharing.cpp.ll
 ; gromacs/optimized/enerdata_utils.cpp.ll
@@ -815,18 +771,8 @@ entry:
 ; gromacs/optimized/sm_keywords.cpp.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; libquic/optimized/exponentiation.c.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_geodesic.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; ncnn/optimized/gemm_x86.cpp.ll
-; ncnn/optimized/gemm_x86_avx.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; ncnn/optimized/prelu_x86_avx.cpp.ll
 ; ncnn/optimized/prelu_x86_avx512.cpp.ll
 ; ncnn/optimized/prelu_x86_fma.cpp.ll
@@ -838,6 +784,7 @@ entry:
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; opencv/optimized/conv_depthwise.cpp.ll
+; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
@@ -878,7 +825,7 @@ entry:
   ret ptr %4
 }
 
-; 114 occurrences:
+; 103 occurrences:
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcStrash.c.ll
@@ -906,7 +853,6 @@ entry:
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/slarrbx.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
-; gromacs/optimized/tpxio.cpp.ll
 ; libquic/optimized/pickle.cc.ll
 ; libwebp/optimized/anim_decode.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
@@ -919,13 +865,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/msdf-error-correction.cpp.ll
-; ncnn/optimized/concat_x86.cpp.ll
-; ncnn/optimized/concat_x86_avx.cpp.ll
-; ncnn/optimized/concat_x86_fma.cpp.ll
-; ncnn/optimized/convolution1d_x86.cpp.ll
-; ncnn/optimized/convolution1d_x86_avx.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
-; ncnn/optimized/convolution1d_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
@@ -946,9 +886,6 @@ entry:
 ; ncnn/optimized/pooling_x86_avx.cpp.ll
 ; ncnn/optimized/pooling_x86_avx512.cpp.ll
 ; ncnn/optimized/pooling_x86_fma.cpp.ll
-; ncnn/optimized/slice_x86.cpp.ll
-; ncnn/optimized/slice_x86_avx.cpp.ll
-; ncnn/optimized/slice_x86_fma.cpp.ll
 ; oiio/optimized/icoinput.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; openblas/optimized/dlaed0.c.ll
@@ -961,7 +898,6 @@ entry:
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
-; opencv/optimized/grid_sampler.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; opencv/optimized/nldiffusion_functions.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
@@ -976,10 +912,10 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_8nw.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
+; openjdk/optimized/mlib_c_ImageCopy.ll
 ; openjdk/optimized/node.ll
 ; openusd/optimized/cfl.c.ll
 ; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/level.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/triRefinement.cpp.ll
@@ -1002,7 +938,148 @@ entry:
   ret ptr %4
 }
 
-; 4 occurrences:
+; 93 occurrences:
+; abc/optimized/dauCanon.c.ll
+; abc/optimized/extraBddThresh.c.ll
+; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaMfs.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/giaTruth.c.ll
+; abc/optimized/ifDec75.c.ll
+; abc/optimized/ifTruth.c.ll
+; abc/optimized/sfmLib.c.ll
+; arrow/optimized/UriParse.c.ll
+; ceres/optimized/block_random_access_sparse_matrix.cc.ll
+; ceres/optimized/block_sparse_matrix.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_8.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_3_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; git/optimized/record.ll
+; gromacs/optimized/partition.cpp.ll
+; llvm/optimized/OMPIRBuilder.cpp.ll
+; ncnn/optimized/concat_x86.cpp.ll
+; ncnn/optimized/concat_x86_avx.cpp.ll
+; ncnn/optimized/concat_x86_avx512.cpp.ll
+; ncnn/optimized/concat_x86_fma.cpp.ll
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_avx2.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; ncnn/optimized/convolution_x86_xop.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86_avx.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86_avx512.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86_fma.cpp.ll
+; ncnn/optimized/lstm_x86_avx512.cpp.ll
+; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
+; ncnn/optimized/mat_pixel.cpp.ll
+; ncnn/optimized/pooling_x86.cpp.ll
+; ncnn/optimized/pooling_x86_avx.cpp.ll
+; ncnn/optimized/pooling_x86_avx512.cpp.ll
+; ncnn/optimized/pooling_x86_fma.cpp.ll
+; ncnn/optimized/slice_x86.cpp.ll
+; ncnn/optimized/slice_x86_avx.cpp.ll
+; ncnn/optimized/slice_x86_avx512.cpp.ll
+; ncnn/optimized/slice_x86_fma.cpp.ll
+; ncnn/optimized/softmax_x86.cpp.ll
+; ncnn/optimized/softmax_x86_avx.cpp.ll
+; ncnn/optimized/softmax_x86_avx512.cpp.ll
+; ncnn/optimized/softmax_x86_fma.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
+; opencv/optimized/demosaicing.cpp.ll
+; opencv/optimized/dxt.cpp.ll
+; opencv/optimized/facemarkLBF.cpp.ll
+; opencv/optimized/kuhn_munkres.cpp.ll
+; opencv/optimized/orb.cpp.ll
+; opencv/optimized/sparse_matching_gpc.cpp.ll
+; openexr/optimized/unpack.c.ll
+; openjdk/optimized/mlib_ImageLookUp_64.ll
+; openjdk/optimized/mlib_c_ImageLookUp_f.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
+; openspiel/optimized/2048.cc.ll
+; openspiel/optimized/oware_board.cc.ll
+; openusd/optimized/convolve.c.ll
+; openusd/optimized/openexr-c.c.ll
+; openusd/optimized/testHioAvif.cpp.ll
+; pbrt-v4/optimized/aggregates.cpp.ll
+; pbrt-v4/optimized/file.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; pbrt-v4/optimized/integrator.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/render.cpp.ll
+; pbrt-v4/optimized/scene.cpp.ll
+; yosys/optimized/const2ast.ll
+; zxing/optimized/ConcentricFinder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 1
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 25 occurrences:
+; gromacs/optimized/tpxio.cpp.ll
+; ncnn/optimized/concat_x86.cpp.ll
+; ncnn/optimized/concat_x86_avx.cpp.ll
+; ncnn/optimized/concat_x86_fma.cpp.ll
+; ncnn/optimized/convolution1d_x86.cpp.ll
+; ncnn/optimized/convolution1d_x86_avx.cpp.ll
+; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
+; ncnn/optimized/convolution1d_x86_fma.cpp.ll
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_avx2.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; ncnn/optimized/convolution_x86_xop.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86_avx.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86_avx512.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86_fma.cpp.ll
+; ncnn/optimized/slice_x86.cpp.ll
+; ncnn/optimized/slice_x86_avx.cpp.ll
+; ncnn/optimized/slice_x86_fma.cpp.ll
+; opencv/optimized/grid_sampler.cpp.ll
+; openusd/optimized/level.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 3
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 7 occurrences:
+; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll

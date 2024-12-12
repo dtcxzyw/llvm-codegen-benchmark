@@ -24,12 +24,12 @@ entry:
 define ptr @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 72
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -38,11 +38,12 @@ entry:
 ; llvm/optimized/ParsePragma.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TemplateBase.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 24
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
@@ -53,7 +54,7 @@ entry:
 define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 24
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

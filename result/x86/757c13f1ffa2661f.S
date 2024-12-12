@@ -16,15 +16,6 @@ func0000000000000007:                   # @func0000000000000007
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
-func0000000000000033:                   # @func0000000000000033
-	xorl	%eax, %eax
-	cmpl	$1, %edx
-	sete	%al
-	xorl	$5, %eax
-	andl	$136314880, %edi                # imm = 0x8200000
-	orl	%esi, %edi
-	orl	%edi, %eax
-	retq
 func0000000000000006:                   # @func0000000000000006
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -34,15 +25,6 @@ func0000000000000006:                   # @func0000000000000006
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
-	xorl	%ecx, %ecx
-	cmpl	$6, %edx
-	setae	%cl
-	shll	$5, %ecx
-	movzbl	%sil, %eax
-	orl	%edi, %eax
-	orl	%ecx, %eax
-	retq
 func000000000000002b:                   # @func000000000000002b
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -50,14 +32,6 @@ func000000000000002b:                   # @func000000000000002b
 	shll	$15, %eax
 	andl	$-262081, %esi                  # imm = 0xFFFC003F
 	orl	%edi, %esi
-	orl	%esi, %eax
-	retq
-func0000000000000013:                   # @func0000000000000013
-	xorl	%eax, %eax
-	cmpl	$512, %edx                      # imm = 0x200
-	setae	%al
-	leal	(%rdi,%rax,2), %eax
-	andl	$4, %esi
 	orl	%esi, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005

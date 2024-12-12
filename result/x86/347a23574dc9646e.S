@@ -40,15 +40,9 @@ func0000000000000018:                   # @func0000000000000018
 	andb	$1, %dil
 	orb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	cmpl	$65536, %esi                    # imm = 0x10000
-	setb	%al
-	andb	$-2, %dil
-	orb	%dil, %al
-	retq
 func0000000000000021:                   # @func0000000000000021
-	cmpl	$3, %esi
+	cmpl	$2, %esi
 	setae	%al
-	andb	$-2, %dil
+	andb	$-8, %dil
 	orb	%dil, %al
 	retq

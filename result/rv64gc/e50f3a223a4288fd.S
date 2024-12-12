@@ -1,4 +1,4 @@
-func00000000000003c8:                   # @func00000000000003c8
+func0000000000000798:                   # @func0000000000000798
 	lui	a3, 1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
@@ -8,7 +8,7 @@ func00000000000003c8:                   # @func00000000000003c8
 	sltiu	a0, a0, 675
 	xori	a0, a0, 1
 	ret
-func00000000000003ca:                   # @func00000000000003ca
+func000000000000078a:                   # @func000000000000078a
 	lui	a3, 1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
@@ -17,19 +17,19 @@ func00000000000003ca:                   # @func00000000000003ca
 	slti	a0, a1, 0
 	xori	a0, a0, 1
 	ret
-func00000000000003da:                   # @func00000000000003da
+func00000000000002aa:                   # @func00000000000002aa
+	sext.w	a0, a0
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	subw	a2, a2, a3
+	addw	a1, a1, a2
+	slt	a0, a0, a1
+	ret
+func00000000000007aa:                   # @func00000000000007aa
 	sext.w	a0, a0
 	slli	a3, a2, 1
 	add	a1, a1, a2
 	addw	a1, a1, a3
 	slt	a0, a1, a0
-	xori	a0, a0, 1
-	ret
-func000000000000015a:                   # @func000000000000015a
-	li	a3, 365
-	mul	a2, a2, a3
-	subw	a1, a1, a0
-	addw	a1, a1, a2
-	slti	a0, a1, -4
 	xori	a0, a0, 1
 	ret

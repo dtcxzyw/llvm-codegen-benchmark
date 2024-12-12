@@ -1,73 +1,34 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	zip2	v5.8b, v4.8b, v0.8b
-	zip1	v4.8b, v4.8b, v0.8b
-	movi	v6.4s, #4, lsl #8
-	movi	v7.4s, #4, lsl #16
-	ushll	v5.4s, v5.4h, #0
-	ushll	v4.4s, v4.4h, #0
-	and	v0.16b, v0.16b, v6.16b
-	and	v1.16b, v1.16b, v6.16b
-	shl	v5.4s, v5.4s, #31
-	shl	v4.4s, v4.4s, #31
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	cmlt	v5.4s, v5.4s, #0
-	cmlt	v4.4s, v4.4s, #0
-	and	v5.16b, v5.16b, v7.16b
-	and	v4.16b, v4.16b, v7.16b
-	orr	v1.16b, v1.16b, v5.16b
-	orr	v0.16b, v0.16b, v4.16b
-	orr	v0.4s, #2, lsl #8
-	orr	v1.4s, #2, lsl #8
+	tst	w2, #0x1
+	mov	w8, #262144                     // =0x40000
+	and	w9, w0, #0x400
+	csel	w8, w8, wzr, ne
+	orr	w9, w9, w1
+	orr	w8, w9, w8
+	orr	w0, w8, #0x200
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	zip2	v5.8b, v4.8b, v0.8b
-	zip1	v4.8b, v4.8b, v0.8b
-	mov	w8, #-260                       // =0xfffffefc
-	dup	v6.4s, w8
-	movi	v7.4s, #1, lsl #8
-	ushll	v5.4s, v5.4h, #0
-	ushll	v4.4s, v4.4h, #0
-	and	v2.16b, v2.16b, v6.16b
-	and	v3.16b, v3.16b, v6.16b
-	shl	v5.4s, v5.4s, #31
-	shl	v4.4s, v4.4s, #31
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	cmlt	v5.4s, v5.4s, #0
-	cmlt	v4.4s, v4.4s, #0
-	and	v5.16b, v5.16b, v7.16b
-	and	v4.16b, v4.16b, v7.16b
-	orr	v1.16b, v5.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
-	orr	v0.4s, #1
-	orr	v1.4s, #1
+	tst	w2, #0x1
+	mov	w8, #256                        // =0x100
+	mov	w9, #-260                       // =0xfffffefc
+	csel	w8, w8, wzr, ne
+	and	w9, w1, w9
+	orr	w8, w0, w8
+	orr	w8, w8, w9
+	orr	w0, w8, #0x1
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	zip2	v5.8b, v4.8b, v0.8b
-	zip1	v4.8b, v4.8b, v0.8b
-	movi	v6.4s, #254, lsl #24
-	movi	v7.4s, #2
-	ushll	v5.4s, v5.4h, #0
-	ushll	v4.4s, v4.4h, #0
-	and	v2.16b, v2.16b, v6.16b
-	and	v3.16b, v3.16b, v6.16b
-	shl	v5.4s, v5.4s, #31
-	shl	v4.4s, v4.4s, #31
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	cmlt	v5.4s, v5.4s, #0
-	cmlt	v4.4s, v4.4s, #0
-	and	v5.16b, v5.16b, v7.16b
-	and	v4.16b, v4.16b, v7.16b
-	orr	v1.16b, v5.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
-	orr	v0.4s, #8, lsl #8
-	orr	v1.4s, #8, lsl #8
+	tst	w2, #0x1
+	mov	w8, #2                          // =0x2
+	and	w9, w1, #0xfe000000
+	csel	w8, w8, wzr, ne
+	orr	w9, w0, w9
+	orr	w8, w8, w9
+	orr	w0, w8, #0x800
 	ret
                                         // -- End function

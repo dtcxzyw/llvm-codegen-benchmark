@@ -19,7 +19,7 @@ func000000000000001c:                   # @func000000000000001c
 	movl	%edi, %eax
 	imulq	%rcx, %rax
 	retq
-func000000000000006c:                   # @func000000000000006c
+func000000000000005c:                   # @func000000000000005c
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx

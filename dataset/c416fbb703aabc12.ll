@@ -12,18 +12,16 @@ entry:
   %4 = shl i64 %3, 48
   %5 = zext i32 %1 to i64
   %6 = or disjoint i64 %4, %5
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
-; 22 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; linux/optimized/generic.ll
-; linux/optimized/head64.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/virtio_pci_modern.ll
@@ -100,7 +98,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 30
   %5 = zext i32 %1 to i64
   %6 = or i64 %4, %5
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

@@ -17,15 +17,14 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; icu/optimized/icuexportdata.ll
-; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 32767
+  %3 = and i32 %2, 4095
   %4 = icmp ult i32 %3, %1
-  %5 = select i1 %4, i32 7, i32 %0
+  %5 = select i1 %4, i32 0, i32 %0
   ret i32 %5
 }
 

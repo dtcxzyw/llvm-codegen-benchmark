@@ -8,9 +8,9 @@
 ; linux/optimized/build_policy.ll
 ; linux/optimized/cypress_ps2.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/i8042.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/Symbol.cpp.ll
+; postgres/optimized/regcomp.ll
 ; softposit-rs/optimized/279qzdp4rwsfn4n0.ll
 ; softposit-rs/optimized/3x9ny7yhpewmwf1y.ll
 ; softposit-rs/optimized/4x7uq85ym1obejw4.ll

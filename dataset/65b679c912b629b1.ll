@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; abc/optimized/kitTruth.c.ll
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
@@ -12,6 +12,7 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
+; lvgl/optimized/lv_color.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/c_converter.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll

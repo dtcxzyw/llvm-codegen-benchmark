@@ -29,10 +29,10 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0) #0 {
+define i32 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = icmp ult i32 %1, -146097
+  %2 = icmp samesign ult i32 %1, -146097
   %3 = sext i1 %2 to i32
   ret i32 %3
 }

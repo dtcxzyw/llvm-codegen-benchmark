@@ -60,23 +60,11 @@
 ; tinympc/optimized/quadrotor_tracking.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 32000
   %3 = select i1 %2, i64 16, i64 4
   %4 = icmp slt i64 %0, 128
-  %5 = select i1 %4, i64 %0, i64 %3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; grpc/optimized/hpack_parser.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000044(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ult i64 %1, -12
-  %3 = select i1 %2, i64 4, i64 3
-  %4 = icmp ult i64 %0, 3
   %5 = select i1 %4, i64 %0, i64 %3
   ret i64 %5
 }

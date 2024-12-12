@@ -6,7 +6,7 @@
 ; openssl/optimized/libcrypto-shlib-a_strex.ll
 ; openusd/optimized/primData.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000182(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000302(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp eq i64 %0, 0

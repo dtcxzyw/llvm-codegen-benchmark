@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; cpython/optimized/_stat.ll
 ; icu/optimized/unames.ll
-; linux/optimized/eht.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/phy-c45.ll

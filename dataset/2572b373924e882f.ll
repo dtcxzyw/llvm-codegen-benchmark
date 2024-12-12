@@ -15,22 +15,21 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 32, i32 16
   %4 = or i32 %3, %1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; bullet3/optimized/btGhostObject.ll
 ; linux/optimized/serial_core.ll
 ; openusd/optimized/frustum.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
-; qemu/optimized/hw_ssi_sifive_spi.c.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 2, i32 0
-  %4 = or disjoint i32 %3, %1
+  %3 = select i1 %2, i32 8192, i32 0
+  %4 = or disjoint i32 %1, %3
   %5 = and i32 %4, %0
   ret i32 %5
 }

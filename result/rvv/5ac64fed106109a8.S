@@ -10,6 +10,6 @@ func0000000000000000:                   # @func0000000000000000
 	vmv.v.i	v10, 11
 	li	a0, 25
 	vmerge.vxm	v10, v10, a0, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsra.vi	v8, v8, 3
 	ret

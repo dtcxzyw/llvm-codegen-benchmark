@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; hermes/optimized/StringMap.cpp.ll
 ; linux/optimized/tg3.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/StringMap.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {

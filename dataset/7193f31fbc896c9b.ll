@@ -1,8 +1,11 @@
 
-; 40 occurrences:
+; 43 occurrences:
 ; abc/optimized/mpmAbc.c.ll
 ; abc/optimized/mpmGates.c.ll
 ; abc/optimized/mpmMap.c.ll
+; boost/optimized/basic_text_iprimitive.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombGeom_VgrpF.cpp.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombLB_VgrpF.cpp.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJEwCombGeom_VgrpF.cpp.ll

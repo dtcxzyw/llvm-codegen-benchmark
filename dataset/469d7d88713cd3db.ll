@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
@@ -10,6 +10,7 @@
 ; raylib/optimized/raudio.c.ll
 ; rocksdb/optimized/arena.cc.ll
 ; wireshark/optimized/pcapng.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i64 %1) #0 {
 entry:

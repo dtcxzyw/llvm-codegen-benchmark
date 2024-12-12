@@ -42,7 +42,7 @@
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vptestnmq	%ymm1, %ymm1, %k1
@@ -57,7 +57,7 @@ func0000000000000042:                   # @func0000000000000042
 	.quad	-65537                          # 0xfffffffffffeffff
 .LCPI1_1:
 	.quad	-4294901761                     # 0xffffffff0000ffff
-func0000000000000202:                   # @func0000000000000202
+func0000000000000402:                   # @func0000000000000402
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm1, %k1

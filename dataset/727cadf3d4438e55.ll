@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp eq i32 %3, %1
@@ -25,7 +25,7 @@ entry:
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; redis/optimized/util.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp eq i32 %3, %1
@@ -39,7 +39,7 @@ entry:
 ; ncnn/optimized/roialign_x86_avx512.cpp.ll
 ; ncnn/optimized/roialign_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp sgt i32 %3, %1
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/rangetypes_gist.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/levmarq.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i32 %3, %1

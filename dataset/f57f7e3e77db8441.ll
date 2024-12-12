@@ -1,5 +1,10 @@
 
-; 37 occurrences:
+; 39 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; ceres/optimized/loss_function.cc.ll
 ; darktable/optimized/introspection_globaltonemap.c.ll
 ; delta-rs/optimized/5d242f2by7re2olg.ll
@@ -18,11 +23,8 @@
 ; php/optimized/randomizer.ll
 ; postgres/optimized/costsize.ll
 ; proj/optimized/eck4.cpp.ll
-; proj/optimized/larr.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/putp2.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
 ; proj/optimized/vandg.cpp.ll

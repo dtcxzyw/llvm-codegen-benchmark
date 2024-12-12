@@ -11,8 +11,7 @@ entry:
   ret float %5
 }
 
-; 5 occurrences:
-; gromacs/optimized/slaruv.cpp.ll
+; 4 occurrences:
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll

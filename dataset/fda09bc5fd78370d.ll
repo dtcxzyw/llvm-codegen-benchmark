@@ -1,10 +1,10 @@
 
-%class.default_map_entry.3428190 = type { %class.default_hash_entry.3428191 }
-%class.default_hash_entry.3428191 = type { i32, i32, %struct._key_data.161.3428176 }
-%struct._key_data.161.3428176 = type <{ %class.symbol.3428170, i32, [4 x i8] }>
-%class.symbol.3428170 = type { ptr }
+%class.default_map_entry.3612739 = type { %class.default_hash_entry.3612740 }
+%class.default_hash_entry.3612740 = type { i32, i32, %struct._key_data.161.3612725 }
+%struct._key_data.161.3612725 = type <{ %class.symbol.3612719, i32, [4 x i8] }>
+%class.symbol.3612719 = type { ptr }
 
-; 122 occurrences:
+; 121 occurrences:
 ; z3/optimized/ackr_bound_probe.cpp.ll
 ; z3/optimized/api_ast_map.cpp.ll
 ; z3/optimized/api_context.cpp.ll
@@ -25,7 +25,6 @@
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
@@ -128,11 +127,11 @@
 ; z3/optimized/theory_utvpi.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %class.default_map_entry.3428190, ptr %0, i64 %3
-  %5 = icmp eq ptr %4, %1
+  %4 = getelementptr nusw nuw %class.default_map_entry.3612739, ptr %0, i64 %3
+  %5 = icmp eq ptr %1, %4
   %6 = select i1 %5, ptr %0, ptr %1
   ret ptr %6
 }
@@ -140,11 +139,11 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/oracle_compat.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = icmp eq ptr %4, %1
+  %5 = icmp eq ptr %1, %4
   %6 = select i1 %5, ptr %0, ptr %1
   ret ptr %6
 }
@@ -152,11 +151,11 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
-  %5 = icmp eq ptr %4, %1
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
+  %5 = icmp eq ptr %1, %4
   %6 = select i1 %5, ptr %0, ptr %1
   ret ptr %6
 }

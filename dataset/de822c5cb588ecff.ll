@@ -1,10 +1,11 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; libwebp/optimized/yuv.c.ll
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll

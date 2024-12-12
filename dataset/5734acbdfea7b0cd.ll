@@ -5,12 +5,12 @@
 ; llvm/optimized/SymbolRecordMapping.cpp.ll
 ; llvm/optimized/TypeRecordMapping.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne ptr %1, null
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -37,7 +37,7 @@ entry:
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -51,7 +51,7 @@ entry:
 ; ockam-rs/optimized/59na08zlxqp9p17s.ll
 ; openjdk/optimized/verifier.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -64,12 +64,12 @@ entry:
 ; slurm/optimized/job_info.ll
 ; slurm/optimized/job_step_info.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq ptr %1, null
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

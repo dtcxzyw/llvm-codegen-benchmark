@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; openspiel/optimized/backgammon.cc.ll
+; 1 occurrences:
 ; ruby/optimized/random.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0) #0 {
@@ -10,12 +9,11 @@ entry:
   ret i64 %2
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; linux/optimized/intel_opregion.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/rmap.ll
 ; linux/optimized/umip.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; llvm/optimized/X86FixupLEAs.cpp.ll

@@ -1,11 +1,12 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/dsdCheck.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; openjdk/optimized/jfrStackTrace.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -32,10 +33,23 @@ entry:
 define i64 @func0000000000000155(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 24
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul nsw i64 %4, 60
   %6 = add nsw i64 %5, %0
   %7 = mul nsw i64 %6, 60
+  ret i64 %7
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000222(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw i64 %2, 10
+  %4 = add i64 %3, %1
+  %5 = mul nuw i64 %4, 10
+  %6 = add i64 %5, %0
+  %7 = mul nuw i64 %6, 10
   ret i64 %7
 }
 

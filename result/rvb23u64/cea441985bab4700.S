@@ -1,0 +1,25 @@
+func0000000000000068:                   # @func0000000000000068
+	sext.w	a0, a0
+	fcvt.w.s	a2, fa0, rtz
+	addiw	a1, a1, -1
+	min	a1, a1, a2
+	max	a0, a0, zero
+	sltu	a0, a1, a0
+	ret
+func000000000000008a:                   # @func000000000000008a
+	sext.w	a0, a0
+	addiw	a1, a1, -1
+	fcvt.w.s	a2, fa0, rtz
+	min	a1, a2, a1
+	li	a2, -1
+	max	a0, a0, a2
+	slt	a0, a1, a0
+	ret
+func000000000000006a:                   # @func000000000000006a
+	sext.w	a0, a0
+	fcvt.w.s	a2, fa0, rtz
+	addiw	a1, a1, -1
+	min	a1, a1, a2
+	max	a0, a0, zero
+	slt	a0, a1, a0
+	ret

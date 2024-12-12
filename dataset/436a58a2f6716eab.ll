@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -23,12 +23,12 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -36,12 +36,12 @@ entry:
 ; libjpeg-turbo/optimized/jccoefct.c.ll
 ; openjdk/optimized/jccoefct.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000281(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -63,24 +63,12 @@ entry:
 ; opencv/optimized/scale_layer.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -233
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; assimp/optimized/FindDegenerates.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 4
-  %4 = select i1 %3, i32 %1, i32 %2
-  %5 = zext i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -88,12 +76,12 @@ entry:
 ; oiio/optimized/bmpinput.cpp.ll
 ; opencv/optimized/slice_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -101,12 +89,12 @@ entry:
 ; oiio/optimized/bmpinput.cpp.ll
 ; opencv/optimized/slice_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -115,26 +103,25 @@ entry:
 ; icu/optimized/locutil.ll
 ; yosys/optimized/calc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; hyperscan/optimized/ComponentRepeat.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = zext i32 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -142,12 +129,12 @@ entry:
 ; hyperscan/optimized/ComponentRepeat.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = zext i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 

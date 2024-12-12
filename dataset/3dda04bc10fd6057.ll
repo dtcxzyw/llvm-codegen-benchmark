@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-bio_print.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000584(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/diff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000318c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = icmp ne i32 %1, 0
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000541(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp sgt i32 %1, 0
@@ -43,7 +43,7 @@ entry:
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; redis/optimized/t_stream.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000003181(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 7
   %4 = icmp ne i32 %1, 7

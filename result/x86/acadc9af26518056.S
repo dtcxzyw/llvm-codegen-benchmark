@@ -14,10 +14,6 @@ func0000000000000000:                   # @func0000000000000000
 	movq	%rsi, %rax
 	subl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	subl	%edi, %esi
-	leal	23(%rsi), %eax
-	retq
 func0000000000000009:                   # @func0000000000000009
 	subl	%edi, %esi
 	leal	23(%rsi), %eax

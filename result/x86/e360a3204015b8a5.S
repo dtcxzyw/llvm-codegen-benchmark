@@ -24,3 +24,7 @@ func000000000000000c:                   # @func000000000000000c
 	leaq	(%rdi,%rsi,4), %rax
 	leaq	(%rax,%rdx,4), %rax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	leaq	(%rdi,%rsi,2), %rax
+	leaq	(%rax,%rdx,2), %rax
+	retq

@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 41 occurrences:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/vba_extract.c.ll
 ; clamav/optimized/xlm_extract.c.ll
@@ -32,7 +32,6 @@
 ; php/optimized/crypt_blowfish.ll
 ; postgres/optimized/ginget.ll
 ; postgres/optimized/pg_receivewal.ll
-; postgres/optimized/regcomp.ll
 ; protobuf/optimized/parser.cc.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; redis/optimized/acl.ll
@@ -46,7 +45,7 @@
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 

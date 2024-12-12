@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/src.ll
 ; crow/optimized/example.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func00000000000000a8(i32 %0, i32 %1, i32 %2) #0 {
@@ -10,6 +11,18 @@ entry:
   %6 = lshr i32 %5, 12
   %7 = trunc i32 %6 to i8
   ret i8 %7
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i8 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %0, %1
+  %4 = lshr i32 %3, 12
+  %5 = add i32 %4, %2
+  %6 = trunc i32 %5 to i8
+  ret i8 %6
 }
 
 ; 1 occurrences:
@@ -85,18 +98,6 @@ entry:
   %6 = lshr i32 %5, 3
   %7 = trunc nuw i32 %6 to i8
   ret i8 %7
-}
-
-; 1 occurrences:
-; opencv/optimized/cap_v4l.cpp.ll
-; Function Attrs: nounwind
-define i8 @func00000000000001a8(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %0, %1
-  %4 = lshr i32 %3, 16
-  %5 = add i32 %4, %2
-  %6 = trunc i32 %5 to i8
-  ret i8 %6
 }
 
 ; 2 occurrences:

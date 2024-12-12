@@ -1,5 +1,5 @@
 
-; 459 occurrences:
+; 462 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -22,7 +22,6 @@
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecRe.c.ll
-; abc/optimized/acecSt.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/acecUtil.c.ll
 ; abc/optimized/bmcBCore.c.ll
@@ -35,7 +34,6 @@
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMulti.c.ll
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -128,6 +126,8 @@
 ; abc/optimized/wlcSim.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/transform.c.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; bullet3/optimized/btDantzigLCP.ll
@@ -194,7 +194,6 @@
 ; linux/optimized/intel_crt.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/intel_rps.ll
-; linux/optimized/intel_tcc.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/metrics.ll
@@ -271,6 +270,10 @@
 ; luau/optimized/IrTranslation.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -467,7 +470,7 @@ entry:
   ret i32 %3
 }
 
-; 213 occurrences:
+; 211 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/inffast.c.ll
 ; abc/optimized/lpkCore.c.ll
@@ -488,7 +491,6 @@ entry:
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; cpython/optimized/dtoa.ll
-; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; double_conversion/optimized/bignum.cc.ll
@@ -548,11 +550,9 @@ entry:
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/seq_memory.ll
-; linux/optimized/sky2.ll
 ; linux/optimized/sock.ll
 ; linux/optimized/syncookies.ll
 ; linux/optimized/tg3.ll
@@ -585,6 +585,7 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll

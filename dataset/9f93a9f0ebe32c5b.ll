@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; freetype/optimized/ftbase.c.ll
@@ -30,7 +30,6 @@
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/util_thread-context.c.ll
 ; re2/optimized/simplify.cc.ll
-; spike/optimized/bf16_to_f32.ll
 ; spike/optimized/fall_reciprocal.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; Function Attrs: nounwind

@@ -53,7 +53,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovw2m	%xmm1, %k1
 	vpcmpeqb	.LCPI1_0(%rip), %xmm2, %k2
 	vpbroadcastd	.LCPI1_1(%rip), %ymm1 {%k2} {z} # ymm1 {%k2} {z} = [5,5,5,5,5,5,5,5]
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpord	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI2_0:
@@ -65,6 +65,6 @@ func0000000000000033:                   # @func0000000000000033
 	vpmovw2m	%xmm1, %k1
 	vptestmb	%xmm2, %xmm2, %k2
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1 {%k2} {z} # ymm1 {%k2} {z} = [4,4,4,4,4,4,4,4]
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpord	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

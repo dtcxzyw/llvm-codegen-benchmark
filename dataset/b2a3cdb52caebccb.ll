@@ -1,5 +1,5 @@
 
-; 188 occurrences:
+; 186 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
@@ -176,14 +176,12 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; oiio/optimized/farmhash.cpp.ll
 ; oiio/optimized/ustring.cpp.ll
-; openmpi/optimized/bml_base_btl.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; ruby/optimized/bignum.ll
 ; tev/optimized/Image.cpp.ll
@@ -315,8 +313,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -469,6 +465,8 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -507,7 +505,7 @@ entry:
   ret i64 %2
 }
 
-; 16 occurrences:
+; 23 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
@@ -524,6 +522,13 @@ entry:
 ; openusd/optimized/blendShapeQuery.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/search.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/6ekeyfm197maw5n7s1cbq34ws.ll
+; zed-rs/optimized/9jlworagd4ne92tsld97hkqun.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
@@ -548,7 +553,7 @@ entry:
   ret i64 %2
 }
 
-; 65 occurrences:
+; 64 occurrences:
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; llama.cpp/optimized/llama.cpp.ll
@@ -593,7 +598,6 @@ entry:
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; llvm/optimized/ParseCXXInlineMethods.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll

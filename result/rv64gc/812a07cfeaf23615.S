@@ -18,7 +18,7 @@ func000000000000007f:                   # @func000000000000007f
 	ret
 func0000000000000000:                   # @func0000000000000000
 	addi	a2, a2, 16
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 10
 	ret
@@ -61,6 +61,12 @@ func00000000000000d0:                   # @func00000000000000d0
 	mul	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, -1
+	ret
+func0000000000000080:                   # @func0000000000000080
+	addi	a2, a2, 1
+	mul	a1, a2, a1
+	add	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	addi	a2, a2, 1

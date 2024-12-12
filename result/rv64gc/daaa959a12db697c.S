@@ -42,10 +42,12 @@ func000000000000001c:                   # @func000000000000001c
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 255
-	andi	a1, a1, 63
+	lui	a3, 524304
 	slli	a2, a2, 16
-	or	a0, a0, a1
+	addiw	a3, a3, -1
+	and	a1, a1, a3
 	or	a0, a0, a2
+	or	a0, a0, a1
 	ret

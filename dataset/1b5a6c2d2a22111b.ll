@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 59 occurrences:
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
@@ -44,6 +44,7 @@
 ; openusd/optimized/ompEvaluator.cpp.ll
 ; openusd/optimized/patchBasis.cpp.ll
 ; openusd/optimized/tbbKernel.cpp.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -57,6 +58,7 @@
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:

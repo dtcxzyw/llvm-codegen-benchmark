@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; hyperscan/optimized/compiler.cpp.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/shm.ll
@@ -8,6 +8,7 @@
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; tokio-rs/optimized/1k577qo9p6sw2dlc.ll
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll

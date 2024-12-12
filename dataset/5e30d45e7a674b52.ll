@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 68 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/strtod.cc.ll
 ; brotli/optimized/compound_dictionary.c.ll
@@ -25,7 +25,6 @@
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/mpage.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/read.ll
 ; linux/optimized/readpage.ll
@@ -118,11 +117,11 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
-; 190 occurrences:
+; 189 occurrences:
 ; brotli/optimized/static_dict.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cpython/optimized/mpdecimal.ll
@@ -263,7 +262,6 @@ entry:
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -321,12 +319,13 @@ entry:
   ret i64 %3
 }
 
-; 323 occurrences:
+; 319 occurrences:
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
@@ -365,11 +364,9 @@ entry:
 ; linux/optimized/mprotect.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/posix-cpu-timers.ll
 ; linux/optimized/printk_ringbuffer.ll
 ; linux/optimized/pt.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/tlb.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
@@ -468,7 +465,6 @@ entry:
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -530,8 +526,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -649,7 +643,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
@@ -661,7 +655,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 
@@ -801,7 +795,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 2, %1
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   ret i64 %3
 }
 

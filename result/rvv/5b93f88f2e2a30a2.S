@@ -9,7 +9,7 @@ func0000000000000063:                   # @func0000000000000063
 	vmsgtu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000061:                   # @func0000000000000061
 	lui	a0, 963326
@@ -22,5 +22,5 @@ func0000000000000061:                   # @func0000000000000061
 	vmsgtu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

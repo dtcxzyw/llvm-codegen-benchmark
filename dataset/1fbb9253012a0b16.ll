@@ -35,9 +35,7 @@ entry:
   ret i64 %7
 }
 
-; 4 occurrences:
-; entt/optimized/helper.cpp.ll
-; llvm/optimized/CodeGenTarget.cpp.ll
+; 2 occurrences:
 ; node/optimized/simdutf.ll
 ; openjdk/optimized/zMark.ll
 ; Function Attrs: nounwind
@@ -48,6 +46,20 @@ entry:
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = ashr exact i64 %6, 1
+  ret i64 %7
+}
+
+; 2 occurrences:
+; entt/optimized/helper.cpp.ll
+; llvm/optimized/CodeGenTarget.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 1023
+  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %0, %5
+  %7 = ashr exact i64 %6, 2
   ret i64 %7
 }
 

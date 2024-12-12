@@ -14,8 +14,9 @@ entry:
   ret i32 %3
 }
 
-; 130 occurrences:
+; 131 occurrences:
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll

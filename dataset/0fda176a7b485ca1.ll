@@ -15,7 +15,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-rsa_pk1.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nsw i32 %0, 3
@@ -37,11 +37,11 @@ entry:
 ; wireshark/optimized/packet-ipv6.c.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %0, 1
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -50,7 +50,7 @@ entry:
 ; openjdk/optimized/OGLTextRenderer.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %0, 2
@@ -71,11 +71,11 @@ entry:
 ; zxing/optimized/ODCode39Reader.cpp.ll
 ; zxing/optimized/ODITFReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %0, 1
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
@@ -85,11 +85,11 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; wireshark/optimized/packet-ipv6.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000075(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %0, 2
-  %4 = icmp ule i32 %3, %2
+  %4 = icmp samesign ule i32 %3, %2
   ret i1 %4
 }
 
@@ -99,11 +99,11 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000079(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %0, 3
-  %4 = icmp uge i32 %3, %2
+  %4 = icmp samesign uge i32 %3, %2
   ret i1 %4
 }
 
@@ -135,11 +135,11 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nsw i32 %0, 4
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 

@@ -11,7 +11,7 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; llvm/optimized/LoopUtils.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
@@ -21,6 +21,8 @@ entry:
 ; openjdk/optimized/methodData.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
@@ -95,7 +97,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -400,6 +402,17 @@ entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = add nuw nsw i64 %0, 32
   %4 = sub nsw i64 %3, %2
+  ret i64 %4
+}
+
+; 1 occurrences:
+; quest/optimized/QuEST_common.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 2
+  %3 = add nuw nsw i64 %0, 4
+  %4 = sub i64 %3, %2
   ret i64 %4
 }
 

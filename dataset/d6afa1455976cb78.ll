@@ -1,12 +1,9 @@
 
-%struct.PhysPageEntry.2596346 = type { i32 }
+%struct.PhysPageEntry.2709868 = type { i32 }
 
-; 26 occurrences:
+; 22 occurrences:
 ; linux/optimized/fault.ll
 ; linux/optimized/gup.ll
-; linux/optimized/head64.ll
-; linux/optimized/hibernate.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_syncmap.ll
 ; linux/optimized/init_64.ll
@@ -17,7 +14,6 @@
 ; linux/optimized/mprotect.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/pgtable.ll
 ; linux/optimized/poll.ll
@@ -49,7 +45,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = and i64 %4, 511
-  %6 = getelementptr %struct.PhysPageEntry.2596346, ptr %0, i64 %5
+  %6 = getelementptr %struct.PhysPageEntry.2709868, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -127,12 +123,12 @@ entry:
 ; stockfish/optimized/movepick.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -41,7 +41,7 @@ entry:
   ret i16 %3
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; clamav/optimized/Ppmd7Dec.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -57,6 +57,7 @@ entry:
 ; qemu/optimized/hw_ide_core.c.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000001b(i32 %0) #0 {
 entry:
@@ -66,7 +67,8 @@ entry:
   ret i16 %3
 }
 
-; 22 occurrences:
+; 23 occurrences:
+; boost/optimized/test_codecvt.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -122,7 +124,7 @@ entry:
   ret i16 %3
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; flatbuffers/optimized/binary_annotator.cpp.ll
@@ -137,7 +139,6 @@ entry:
 ; openjdk/optimized/hb-ot-name.ll
 ; openusd/optimized/reconintra.c.ll
 ; postgres/optimized/brin_pageops.ll
-; postgres/optimized/brin_revmap.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/ginentrypage.ll
@@ -261,10 +262,9 @@ entry:
   ret i16 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/archive_entry_link_resolver.c.ll
 ; cmake/optimized/archive_read_set_format.c.ll
-; cmake/optimized/archive_read_support_format_by_code.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000e(i32 %0) #0 {
 entry:

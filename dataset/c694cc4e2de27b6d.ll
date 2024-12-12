@@ -14,13 +14,12 @@ entry:
   ret i32 %6
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
-; linux/optimized/feat_ctl.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; llvm/optimized/AnalysisOrderChecker.cpp.ll

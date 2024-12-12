@@ -1,5 +1,9 @@
 
-; 29 occurrences:
+; 33 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/dump_avx2.ll
+; boost/optimized/dump_ssse3.ll
+; boost/optimized/graphml.ll
 ; clamav/optimized/hash.cpp.ll
 ; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/zstd_compress.c.ll

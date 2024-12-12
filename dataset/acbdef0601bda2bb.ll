@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; cpython/optimized/longobject.ll
@@ -19,6 +19,7 @@
 ; linux/optimized/util.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openjdk/optimized/mlib_ImageConvMxN.ll
 ; openmpi/optimized/coll_base_allreduce.ll
 ; openmpi/optimized/coll_base_reduce.ll
@@ -40,16 +41,16 @@
 ; yosys/optimized/mem.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; cvc5/optimized/theory_id.cpp.ll
 ; icu/optimized/transreg.ll
 ; linux/optimized/hrtimer.ll
@@ -59,15 +60,16 @@ entry:
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/ir_ra.ll
 ; wireshark/optimized/packet-fmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -78,11 +80,11 @@ entry:
 ; wireshark/optimized/frame_data_sequence.c.ll
 ; z3/optimized/bit_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
@@ -92,11 +94,11 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -104,25 +106,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp ne i32 %4, 0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; postgres/optimized/hashutil.ll
-; quickjs/optimized/libbf.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 -1, %1
-  %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
-  %5 = icmp ult i32 %4, 10
   ret i1 %5
 }
 
@@ -133,7 +122,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 255, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }

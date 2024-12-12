@@ -10,7 +10,7 @@ func00000000000000e2:                   # @func00000000000000e2
 func0000000000000044:                   # @func0000000000000044
 	fmv.d.x	fa5, zero
 	fmax.d	fa4, fa1, fa5
-	fadd.d	fa4, fa4, fa0
+	fadd.d	fa4, fa0, fa4
 	flt.d	a0, fa5, fa4
 	ret
 func00000000000000e1:                   # @func00000000000000e1
@@ -27,7 +27,7 @@ func00000000000000ee:                   # @func00000000000000ee
 	bnez	a0, .LBB3_2
 	fmv.d.x	fa1, zero
 .LBB3_2:                                # %entry
-	fadd.d	fa5, fa1, fa0
+	fadd.d	fa5, fa0, fa1
 	feq.d	a0, fa5, fa5
 	ret
 func00000000000000ce:                   # @func00000000000000ce
@@ -36,6 +36,6 @@ func00000000000000ce:                   # @func00000000000000ce
 	bnez	a0, .LBB4_2
 	fmv.d	fa1, fa5
 .LBB4_2:                                # %entry
-	fadd.d	fa5, fa1, fa0
+	fadd.d	fa5, fa0, fa1
 	feq.d	a0, fa5, fa5
 	ret

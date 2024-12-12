@@ -6,7 +6,7 @@
 ; opencv/optimized/beblid.cpp.ll
 ; opencv/optimized/gstreamingexecutor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 12
   %4 = sub nuw nsw i64 %3, %1

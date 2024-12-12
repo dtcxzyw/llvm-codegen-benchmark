@@ -5,7 +5,7 @@ func0000000000000021:                   # @func0000000000000021
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsrad	$1, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vpsllq	$2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
@@ -17,7 +17,7 @@ func0000000000000024:                   # @func0000000000000024
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsrad	$3, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vpsllq	$7, %ymm0, %ymm0
 	retq
 .LCPI2_0:
@@ -29,7 +29,7 @@ func0000000000000025:                   # @func0000000000000025
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsrad	$6, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vpsllq	$3, %ymm0, %ymm0
 	retq
 func0000000000000027:                   # @func0000000000000027
@@ -39,6 +39,6 @@ func0000000000000027:                   # @func0000000000000027
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsrad	$1, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0
 	retq

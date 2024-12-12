@@ -19,7 +19,7 @@ func000000000000000c:                   # @func000000000000000c
 	li	a1, -1289
 	and	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	sext.w	a2, a1
 	li	a1, 15
 	bltu	a1, a2, .LBB2_2
@@ -27,26 +27,26 @@ func0000000000000008:                   # @func0000000000000008
 .LBB2_2:                                # %entry
 	and	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+func000000000000000a:                   # @func000000000000000a
 	sext.w	a1, a1
-	li	a2, 512
-	bltu	a1, a2, .LBB3_2
-	li	a1, 1
+	li	a2, 2
+	blt	a2, a1, .LBB3_2
+	li	a1, -16
 	and	a0, a0, a1
 	ret
 .LBB3_2:
-	li	a1, 15
+	li	a1, -32
 	and	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+func0000000000000004:                   # @func0000000000000004
 	sext.w	a1, a1
-	li	a2, 15
-	blt	a2, a1, .LBB4_2
-	li	a1, 240
+	li	a2, 512
+	bltu	a1, a2, .LBB4_2
+	li	a1, 1
 	and	a0, a0, a1
 	ret
 .LBB4_2:
-	li	a1, 224
+	li	a1, 15
 	and	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
@@ -55,5 +55,17 @@ func0000000000000006:                   # @func0000000000000006
 	bltz	a2, .LBB5_2
 	lui	a1, 64
 .LBB5_2:                                # %entry
+	and	a0, a0, a1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a2, a1
+	li	a3, 240
+	lui	a1, 64
+	bltu	a2, a3, .LBB6_2
+	addiw	a1, a1, -1
+	and	a0, a0, a1
+	ret
+.LBB6_2:
+	addiw	a1, a1, -256
 	and	a0, a0, a1
 	ret

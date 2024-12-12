@@ -1,9 +1,8 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/hwxface.ll
 ; linux/optimized/processor_throttling.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll

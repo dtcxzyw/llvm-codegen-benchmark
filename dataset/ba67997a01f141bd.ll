@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/numeric.ll
 ; icu/optimized/calendar.ll
 ; linux/optimized/alps.ll
 ; spike/optimized/fsr.ll
@@ -11,6 +12,18 @@ entry:
   %2 = add nsw i32 %1, -32
   %3 = select i1 %0, i32 %2, i32 %1
   %4 = sub nsw i32 0, %3
+  ret i32 %4
+}
+
+; 2 occurrences:
+; abseil-cpp/optimized/time_zone_fixed.cc.ll
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i1 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 305
+  %3 = select i1 %0, i32 %2, i32 %1
+  %4 = sub nsw i32 308, %3
   ret i32 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 139 occurrences:
+; 137 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -70,8 +70,6 @@
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -140,7 +138,7 @@
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = and i64 %2, 63
@@ -180,7 +178,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = and i64 %2, 1
@@ -189,20 +187,9 @@ entry:
 }
 
 ; 1 occurrences:
-; faiss/optimized/AdditiveQuantizer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %0, %1
-  %3 = and i64 %2, 7
-  %4 = icmp ugt i64 %3, 4
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; opencv/optimized/ts_arrtest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %0, %1
   %3 = and i64 %2, 6

@@ -18,7 +18,7 @@
 ; wasmtime-rs/optimized/cxg2cx8gn6v5trt.ll
 ; wasmtime-rs/optimized/jd0egfnydpuo3ak.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %0, 24
   %3 = icmp ne i64 %2, %1

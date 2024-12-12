@@ -7,7 +7,7 @@
 ; openjdk/optimized/hb-ot-math.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000d8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, %0
@@ -22,7 +22,7 @@ entry:
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-face.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000062(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000c2(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, %0
@@ -31,10 +31,9 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/phy-c45.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
@@ -49,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/commit-graph.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000070(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000d0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, %0

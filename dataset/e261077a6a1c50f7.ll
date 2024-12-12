@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 16 occurrences:
 ; darktable/optimized/TiffEntry.cpp.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -12,6 +12,10 @@
 ; minetest/optimized/treegen.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; quickjs/optimized/quickjs.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i16 %1, i16 %2) #0 {
 entry:

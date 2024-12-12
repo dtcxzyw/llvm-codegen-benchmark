@@ -1,5 +1,6 @@
 
-; 17 occurrences:
+; 20 occurrences:
+; boost/optimized/to_chars.ll
 ; folly/optimized/AsyncUDPSocket.cpp.ll
 ; lief/optimized/RelocationObject.cpp.ll
 ; lief/optimized/ecp.c.ll
@@ -17,6 +18,8 @@
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; yoga/optimized/AbsoluteLayout.cpp.ll
+; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:

@@ -1,9 +1,9 @@
 
-; 223 occurrences:
+; 221 occurrences:
 ; abc/optimized/kitDsd.c.ll
+; boost/optimized/h16_rule.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_stmts.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
 ; cmake/optimized/cmForEachCommand.cxx.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -24,14 +24,11 @@
 ; icu/optimized/unistr.ll
 ; icu/optimized/util.ll
 ; libquic/optimized/poly.c.ll
-; linux/optimized/af_inet.ll
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/eth.ll
-; linux/optimized/gre_offload.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/hosts.ll
 ; linux/optimized/hub.ll
@@ -41,13 +38,10 @@
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/ioam6.ll
-; linux/optimized/ip6_offload.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/vt.ll
-; linux/optimized/xfrm4_input.ll
-; linux/optimized/xfrm6_input.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -121,6 +115,10 @@
 ; llvm/optimized/SimplifyIndVar.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -231,7 +229,7 @@ entry:
   ret i16 %3
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/uri.cc.ll
@@ -246,7 +244,6 @@ entry:
 ; linux/optimized/ata_piix.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/drm_dsc_helper.ll
-; linux/optimized/ht.ll
 ; linux/optimized/isoch.ll
 ; llvm/optimized/CGAtomic.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
@@ -291,15 +288,20 @@ entry:
   ret i16 %3
 }
 
-; 407 occurrences:
+; 419 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/Assimp.cpp.ll
+; assimp/optimized/BlenderDNA.cpp.ll
+; assimp/optimized/BlenderScene.cpp.ll
+; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/STEPFileEncoding.cpp.ll
+; boost/optimized/h16_rule.ll
+; boost/optimized/ipv6_address.ll
+; boost/optimized/topology.ll
 ; brotli/optimized/transform.c.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/XzIn.c.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/ishield.c.ll
 ; clamav/optimized/rawread.cpp.ll
@@ -434,6 +436,9 @@ entry:
 ; lodepng/optimized/pngdetail.cpp.ll
 ; logos-rs/optimized/5f38ll801i7djw99.ll
 ; luau/optimized/UnwindBuilderWin.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
@@ -496,7 +501,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -594,7 +598,6 @@ entry:
 ; qemu/optimized/hw_scsi_esp-pci.c.ll
 ; qemu/optimized/hw_usb_dev-audio.c.ll
 ; qemu/optimized/hw_usb_u2f-passthru.c.ll
-; qemu/optimized/i2c.c.ll
 ; qemu/optimized/scsi_utils.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; quickjs/optimized/libunicode.ll
@@ -617,9 +620,9 @@ entry:
 ; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_image.c.ll
 ; stb/optimized/stb_truetype.c.ll
+; stockfish/optimized/tbprobe.ll
 ; tev/optimized/Common.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; tokio-rs/optimized/2i86qkpybymk1snv.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
@@ -637,9 +640,7 @@ entry:
 ; wireshark/optimized/aethra.c.ll
 ; wireshark/optimized/charsets.c.ll
 ; wireshark/optimized/commview.c.ll
-; wireshark/optimized/csids.c.ll
 ; wireshark/optimized/dot11decrypt.c.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/eyesdn.c.ll
@@ -651,7 +652,6 @@ entry:
 ; wireshark/optimized/ngsniffer.c.ll
 ; wireshark/optimized/packet-atm.c.ll
 ; wireshark/optimized/packet-bluetooth.c.ll
-; wireshark/optimized/packet-chdlc.c.ll
 ; wireshark/optimized/packet-cops.c.ll
 ; wireshark/optimized/packet-dect.c.ll
 ; wireshark/optimized/packet-dhcp.c.ll
@@ -682,7 +682,6 @@ entry:
 ; wireshark/optimized/pcap-common.c.ll
 ; wireshark/optimized/peekclassic.c.ll
 ; wireshark/optimized/peektagged.c.ll
-; wireshark/optimized/radcom.c.ll
 ; wireshark/optimized/snoop.c.ll
 ; wireshark/optimized/stanag4607.c.ll
 ; wireshark/optimized/tvbuff.c.ll
@@ -697,8 +696,18 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000005(i16 %0, i16 %1) #0 {
 entry:
@@ -707,14 +716,11 @@ entry:
   ret i16 %3
 }
 
-; 106 occurrences:
+; 105 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/uri.cc.ll
-; assimp/optimized/BlenderDNA.cpp.ll
-; assimp/optimized/BlenderScene.cpp.ll
-; assimp/optimized/PlyParser.cpp.ll
 ; clamav/optimized/events.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/xmltok.c.ll
@@ -776,6 +782,7 @@ entry:
 ; llvm/optimized/SCCPSolver.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaLambda.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
@@ -801,7 +808,6 @@ entry:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_truetype.c.ll
-; stockfish/optimized/tbprobe.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
@@ -814,11 +820,13 @@ entry:
 ; wireshark/optimized/packet-kingfisher.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/socket.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl i16 %1, 3
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   ret i16 %3
 }
 
@@ -847,7 +855,7 @@ entry:
 define i16 @func0000000000000006(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 4
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 
@@ -871,7 +879,7 @@ entry:
 define i16 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 11
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 
@@ -894,7 +902,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nsw i16 %1, 4
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 

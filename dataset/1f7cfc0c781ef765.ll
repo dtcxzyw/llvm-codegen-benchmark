@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 82 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/luckySimple.c.ll
 ; abseil-cpp/optimized/demangle.cc.ll
@@ -32,7 +32,6 @@
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlasq2.c.ll
-; openblas/optimized/dtgsen.c.ll
 ; opencv/optimized/grid_sampler.cpp.ll
 ; opencv/optimized/nldiffusion_functions.cpp.ll
 ; openjdk/optimized/IntArgbBm.ll
@@ -91,7 +90,7 @@ entry:
   ret i1 %2
 }
 
-; 59 occurrences:
+; 71 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaAigerExt.c.ll
@@ -151,6 +150,18 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/sat_simplifier.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0) #0 {
 entry:
@@ -159,7 +170,21 @@ entry:
   ret i1 %2
 }
 
-; 710 occurrences:
+; 3 occurrences:
+; clamav/optimized/autoit.c.ll
+; mitsuba3/optimized/rapass.cpp.ll
+; wireshark/optimized/packet-dof.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = shl i32 %0, 2
+  %2 = icmp samesign ult i32 %1, 129
+  ret i1 %2
+}
+
+; 709 occurrences:
+; abc/optimized/abcBm.c.ll
+; abc/optimized/abcSat.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/cuddTable.c.ll
@@ -188,6 +213,8 @@ entry:
 ; assimp/optimized/Subdivision.cpp.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/rational.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btConvexHull.ll
 ; c3c/optimized/sema_asm.c.ll
 ; clamav/optimized/autoit.c.ll
@@ -238,8 +265,6 @@ entry:
 ; libjpeg-turbo/optimized/jcarith.c.ll
 ; libjpeg-turbo/optimized/jdarith.c.ll
 ; libquic/optimized/quic_utils.cc.ll
-; linux/optimized/8250_lpss.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/dev_addr_lists.ll
 ; linux/optimized/dm-kcopyd.ll
@@ -247,7 +272,6 @@ entry:
 ; linux/optimized/i915_gem_ttm.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/netlabel_addrlist.ll
 ; linux/optimized/sit.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -303,7 +327,6 @@ entry:
 ; mitsuba3/optimized/linearcurve.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/serialized.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
@@ -542,7 +565,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
@@ -911,7 +933,7 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0) #0 {
+define i1 @func0000000000000046(i32 %0) #0 {
 entry:
   %.mask = and i32 %0, 1073741824
   %1 = icmp ne i32 %.mask, 0
@@ -1098,8 +1120,9 @@ entry:
   ret i1 %2
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/rational.ll
 ; clamav/optimized/message.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; gromacs/optimized/cstringutil.cpp.ll
@@ -1177,7 +1200,7 @@ entry:
 ; wasmedge/optimized/engine.cpp.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0) #0 {
+define i1 @func000000000000004a(i32 %0) #0 {
 entry:
   %.mask = and i32 %0, 128
   %1 = icmp eq i32 %.mask, 0
@@ -1196,7 +1219,7 @@ entry:
 ; darktable/optimized/introspection_spots.c.ll
 ; darktable/optimized/timeline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 2147418112
   %2 = icmp eq i32 %1, 0
@@ -1233,9 +1256,19 @@ entry:
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1610612736
+  %2 = icmp ne i32 %1, 0
+  ret i1 %2
+}
+
+; 1 occurrences:
+; grpc/optimized/json_writer.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0) #0 {
+entry:
+  %1 = and i32 %0, 67107840
   %2 = icmp ne i32 %1, 0
   ret i1 %2
 }

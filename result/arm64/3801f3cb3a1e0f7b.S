@@ -34,6 +34,13 @@ func000000000000000e:                   // @func000000000000000e
 	add	x0, x0, w8, sxtw #2
 	ret
                                         // -- End function
+func0000000000000017:                   // @func0000000000000017
+// %bb.0:                               // %entry
+	orr	w8, w1, w2, lsl #24
+	sxtw	x8, w8
+	add	x0, x0, x8, lsl #5
+	ret
+                                        // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	orr	w8, w1, w2, lsl #8

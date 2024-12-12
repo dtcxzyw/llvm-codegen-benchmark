@@ -18,6 +18,17 @@ func000000000000000f:                   # @func000000000000000f
 	vand.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 0, v0
 	ret
+func000000000000000e:                   # @func000000000000000e
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v8, v8, 6
+	li	a0, 120
+	vadd.vx	v8, v8, a0
+	li	a0, -8
+	zext.w	a0, a0
+	vand.vx	v8, v8, a0
+	li	a0, 56
+	vmerge.vxm	v8, v8, a0, v0
+	ret
 func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v8

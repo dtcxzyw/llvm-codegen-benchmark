@@ -48,7 +48,3 @@ func0000000000000030:                   # @func0000000000000030
 	vpmullq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	.LCPI6_1(%rip){1to4}, %ymm0, %ymm0
 	retq
-func000000000000003d:                   # @func000000000000003d
-	vpsllq	$6, %ymm0, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	retq

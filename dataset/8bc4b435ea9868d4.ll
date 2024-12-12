@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 41 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; darktable/optimized/introspection_colormapping.c.ll
@@ -22,7 +22,6 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/spdy_protocol.cc.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nori/optimized/nanovg.c.ll
@@ -30,11 +29,11 @@
 ; ocio/optimized/FileFormat3DL.cpp.ll
 ; ocio/optimized/FileFormatTruelight.cpp.ll
 ; openblas/optimized/dsytrd_sb2st.c.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/fed.cpp.ll
 ; opencv/optimized/resize_layer.cpp.ll
 ; openexr/optimized/ImfEnvmap.cpp.ll
+; openspiel/optimized/backgammon.cc.ll
 ; openusd/optimized/crease.cpp.ll
 ; openusd/optimized/parameterization.cpp.ll
 ; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
@@ -50,7 +49,7 @@ entry:
   ret float %2
 }
 
-; 33 occurrences:
+; 37 occurrences:
 ; darktable/optimized/introspection_levels.c.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
@@ -61,6 +60,7 @@ entry:
 ; llvm/optimized/RegAllocBasic.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
@@ -84,6 +84,9 @@ entry:
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; xgboost/optimized/cpu_treeshap.cc.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {
 entry:

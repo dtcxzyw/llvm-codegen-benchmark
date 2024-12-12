@@ -1,5 +1,44 @@
 
-; 65 occurrences:
+; 100 occurrences:
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/throw_on_error.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; c3c/optimized/compiler.c.ll
 ; clamav/optimized/clamfi.c.ll
 ; clamav/optimized/freshclam.c.ll
@@ -34,9 +73,6 @@
 ; php/optimized/proc_open.ll
 ; postgres/optimized/pg_regress.ll
 ; postgres/optimized/postmaster.ll
-; postgres/optimized/wait_error.ll
-; postgres/optimized/wait_error_shlib.ll
-; postgres/optimized/wait_error_srv.ll
 ; protobuf/optimized/subprocess.cc.ll
 ; qemu/optimized/.._libqtest.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
@@ -54,7 +90,6 @@
 ; slurm/optimized/jobcomp_script.ll
 ; slurm/optimized/launch.ll
 ; slurm/optimized/mgr.ll
-; slurm/optimized/pdebug.ll
 ; slurm/optimized/prep_script_slurmd.ll
 ; slurm/optimized/prep_slurmctld.ll
 ; slurm/optimized/salloc.ll
@@ -66,7 +101,7 @@
 ; yalantinglibs/optimized/conformance_test_runner.cc.ll
 ; yosys/optimized/exec.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ea(i32 %0) #0 {
+define i1 @func00000000000001ca(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 24
   %2 = and i32 %1, 2130706432
@@ -78,19 +113,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i32 %0) #0 {
-entry:
-  %1 = shl i32 %0, 3
-  %2 = and i32 %1, 2032
-  %3 = add nsw i32 %2, -176
-  %4 = icmp ult i32 %3, -128
-  ret i1 %4
-}
-
-; 1 occurrences:
-; qemu/optimized/tcg.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0) #0 {
+define i1 @func00000000000001a4(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 3
   %2 = and i32 %1, 2040
@@ -99,11 +122,48 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 39 occurrences:
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/throw_on_error.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; php/optimized/php_cli_server.ll
 ; slurm/optimized/launch.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e6(i32 %0) #0 {
+define i1 @func00000000000001c6(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 24
   %2 = and i32 %1, 2130706432

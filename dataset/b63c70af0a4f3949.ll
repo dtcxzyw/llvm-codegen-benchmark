@@ -33,7 +33,9 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
@@ -43,7 +45,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %1, 8
   %5 = or disjoint i32 %4, %3
-  %6 = select i1 %0, i32 -1, i32 %5
+  %6 = select i1 %0, i32 0, i32 %5
   ret i32 %6
 }
 

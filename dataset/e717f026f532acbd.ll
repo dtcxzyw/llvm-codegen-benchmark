@@ -7,7 +7,7 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i8 %0) #0 {
+define i1 @func000000000000014c(i8 %0) #0 {
 entry:
   %1 = icmp sgt i8 %0, -1
   %2 = icmp ne i8 %0, 95
@@ -15,33 +15,36 @@ entry:
   ret i1 %3
 }
 
-; 12 occurrences:
+; 14 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; cpython/optimized/_codecs_jp.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
-; linux/optimized/sky2.ll
 ; php/optimized/parse_date.ll
 ; php/optimized/phpdbg_lexer.ll
-; php/optimized/zend_ast.ll
 ; php/optimized/zend_ini_scanner.ll
 ; php/optimized/zend_language_scanner.ll
 ; postgres/optimized/euc2004_sjis2004.ll
 ; postgres/optimized/euc_jp_and_sjis.ll
 ; ruby/optimized/parser.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0) #0 {
+define i1 @func000000000000028c(i8 %0) #0 {
 entry:
-  %1 = icmp ult i8 %0, 58
+  %1 = icmp samesign ult i8 %0, 58
   %2 = icmp ne i8 %0, 47
   %3 = and i1 %2, %1
   ret i1 %3
 }
 
-; 280 occurrences:
+; 278 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/kitPla.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/SystemTools.cxx.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; cpp-httplib/optimized/httplib.cc.ll
@@ -62,6 +65,7 @@ entry:
 ; libquic/optimized/v3_utl.c.ll
 ; linux/optimized/nf_nat_core.ll
 ; llama.cpp/optimized/common.cpp.ll
+; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
@@ -206,13 +210,10 @@ entry:
 ; nix/optimized/names.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -315,14 +316,34 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0) #0 {
+define i1 @func000000000000018c(i8 %0) #0 {
 entry:
   %1 = icmp ne i8 %0, 0
   %2 = icmp ne i8 %0, 46
+  %3 = and i1 %2, %1
+  ret i1 %3
+}
+
+; 11 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; image-rs/optimized/5ez7udly19o3uj1p.ll
+; linux/optimized/sky2.ll
+; php/optimized/parse_date.ll
+; php/optimized/phpdbg_lexer.ll
+; php/optimized/zend_ast.ll
+; php/optimized/zend_ini_scanner.ll
+; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008c(i8 %0) #0 {
+entry:
+  %1 = icmp ult i8 %0, 8
+  %2 = icmp ne i8 %0, 4
   %3 = and i1 %2, %1
   ret i1 %3
 }
@@ -331,7 +352,7 @@ entry:
 ; c3c/optimized/headers.c.ll
 ; git/optimized/pretty.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i8 %0) #0 {
+define i1 @func000000000000018a(i8 %0) #0 {
 entry:
   %1 = icmp ne i8 %0, 34
   %2 = icmp sgt i8 %0, 31
@@ -339,8 +360,7 @@ entry:
   ret i1 %3
 }
 
-; 35 occurrences:
-; actix-rs/optimized/2d9c72efneckaqzp.ll
+; 36 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
@@ -368,15 +388,17 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; wasmtime-rs/optimized/4xf1ga97xrsmlkwm.ll
-; wasmtime-rs/optimized/sypijqrue6eq18l.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-gquic.c.ll
-; wireshark/optimized/packet-p_mul.c.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0) #0 {
+define i1 @func0000000000000184(i8 %0) #0 {
 entry:
   %1 = icmp ne i8 %0, 9
   %2 = icmp ult i8 %0, 32
@@ -384,8 +406,7 @@ entry:
   ret i1 %3
 }
 
-; 31 occurrences:
-; actix-rs/optimized/10n8xwgzwz186p0h.ll
+; 26 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/3a93ytv6s0x7lrtz.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
@@ -410,17 +431,29 @@ entry:
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; opencv/optimized/persistence_yml.cpp.ll
 ; php/optimized/mime_sniff.ll
-; php/optimized/parse_date.ll
-; php/optimized/phpdbg_lexer.ll
 ; php/optimized/sanitizing_filters.ll
-; php/optimized/zend_ini_scanner.ll
-; php/optimized/zend_language_scanner.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i8 %0) #0 {
+define i1 @func0000000000000188(i8 %0) #0 {
 entry:
   %1 = icmp ne i8 %0, 127
   %2 = icmp ugt i8 %0, 31
+  %3 = and i1 %2, %1
+  ret i1 %3
+}
+
+; 6 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; php/optimized/parse_date.ll
+; php/optimized/phpdbg_lexer.ll
+; php/optimized/zend_ini_scanner.ll
+; php/optimized/zend_language_scanner.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000198(i8 %0) #0 {
+entry:
+  %1 = icmp ne i8 %0, 97
+  %2 = icmp samesign ugt i8 %0, 90
   %3 = and i1 %2, %1
   ret i1 %3
 }
@@ -431,10 +464,34 @@ entry:
 ; wireshark/optimized/packet-quakeworld.c.ll
 ; wireshark/optimized/traffic_tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i8 %0) #0 {
+define i1 @func00000000000000cc(i8 %0) #0 {
 entry:
   %1 = icmp slt i8 %0, 65
   %2 = icmp ne i8 %0, 0
+  %3 = and i1 %2, %1
+  ret i1 %3
+}
+
+; 2 occurrences:
+; actix-rs/optimized/2d9c72efneckaqzp.ll
+; wireshark/optimized/packet-p_mul.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000194(i8 %0) #0 {
+entry:
+  %1 = icmp ne i8 %0, 3
+  %2 = icmp samesign ult i8 %0, 6
+  %3 = and i1 %2, %1
+  ret i1 %3
+}
+
+; 2 occurrences:
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; Function Attrs: nounwind
+define i1 @func000000000000030c(i8 %0) #0 {
+entry:
+  %1 = icmp samesign ugt i8 %0, 1
+  %2 = icmp ne i8 %0, 3
   %3 = and i1 %2, %1
   ret i1 %3
 }
@@ -444,7 +501,7 @@ entry:
 ; opencv/optimized/persistence_yml.cpp.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i8 %0) #0 {
+define i1 @func000000000000010c(i8 %0) #0 {
 entry:
   %1 = icmp ugt i8 %0, 28
   %2 = icmp ne i8 %0, 63

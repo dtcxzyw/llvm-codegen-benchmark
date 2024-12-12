@@ -1,23 +1,9 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	xtn	v1.4h, v1.4s
-	bic	v0.4h, #255, lsl #8
+	and	w9, w0, #0xff
 	mov	w8, #16                         // =0x10
-	dup	v2.2d, x8
-	mov	w8, #24                         // =0x18
-	dup	v4.2d, x8
-	bic	v1.4h, #255, lsl #8
-	cmhi	v0.4h, v1.4h, v0.4h
-	ushll	v0.4s, v0.4h, #0
-	ushll	v1.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	shl	v1.2d, v1.2d, #56
-	shl	v0.2d, v0.2d, #56
-	sshr	v3.2d, v1.2d, #56
-	sshr	v0.2d, v0.2d, #56
-	mov	v1.16b, v0.16b
-	mov	v0.16b, v3.16b
-	bsl	v1.16b, v4.16b, v2.16b
-	bsl	v0.16b, v4.16b, v2.16b
+	cmp	w9, w1, uxtb
+	mov	w9, #24                         // =0x18
+	csel	x0, x9, x8, lo
 	ret
                                         // -- End function

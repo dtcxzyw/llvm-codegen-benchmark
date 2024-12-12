@@ -1,5 +1,6 @@
 
-; 51 occurrences:
+; 53 occurrences:
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/1aqq6ooh2lp9lqic.ll
 ; coreutils-rs/optimized/1rgvgulc49uxow1y.ll
 ; coreutils-rs/optimized/1rq2clzuccjujjg1.ll
@@ -26,7 +27,6 @@
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; llvm/optimized/ODRHash.cpp.ll
-; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
@@ -46,11 +46,13 @@
 ; mold/optimized/input-files.cc.SH4.cc.ll
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
-; opencv/optimized/contours_new.cpp.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wireshark/optimized/packet-alp.c.ll
 ; wireshark/optimized/packet-dof.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0) #0 {
 entry:

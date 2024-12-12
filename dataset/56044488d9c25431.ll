@@ -1,5 +1,14 @@
 
-; 4 occurrences:
+; 13 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; llvm/optimized/SemaSwift.cpp.ll
 ; meshlab/optimized/filter_io_nxs.cpp.ll

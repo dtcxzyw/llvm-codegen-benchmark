@@ -1,10 +1,3 @@
-func00000000000000a5:                   # @func00000000000000a5
-	addl	%esi, %edi
-	xorl	%eax, %eax
-	cmpl	$130, %edi
-	setge	%al
-	leal	253(%rax,%rdi), %eax
-	retq
 func0000000000000064:                   # @func0000000000000064
 	leal	(%rdi,%rsi), %ecx
 	cmpl	$360, %ecx                      # imm = 0x168
@@ -18,7 +11,13 @@ func0000000000000065:                   # @func0000000000000065
 	leal	81(%rdi,%rsi), %eax
 	cmovll	%ecx, %eax
 	retq
-func000000000000008f:                   # @func000000000000008f
+func0000000000000080:                   # @func0000000000000080
+	leal	(%rdi,%rsi), %ecx
+	cmpl	$100000000, %ecx                # imm = 0x5F5E100
+	leal	-100000000(%rdi,%rsi), %eax
+	cmovbl	%ecx, %eax
+	retq
+func000000000000018f:                   # @func000000000000018f
 	leal	(%rdi,%rsi), %eax
 	cmpl	$50, %eax
 	leal	1900(%rdi,%rsi), %ecx

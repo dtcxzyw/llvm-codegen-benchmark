@@ -5,17 +5,39 @@ func0000000000000001:                   # @func0000000000000001
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	add	a2, a2, a1
 	addi	a1, a1, 1
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000002a:                   # @func000000000000002a
+func0000000000000061:                   # @func0000000000000061
+	add	a2, a2, a1
+	addi	a1, a1, 1
+	czero.eqz	a2, a2, a1
+	czero.nez	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000046:                   # @func0000000000000046
+	sh1add	a3, a1, a1
+	slti	a1, a1, 0
+	sh3add	a2, a3, a2
+	czero.eqz	a0, a0, a1
+	czero.nez	a1, a2, a1
+	or	a0, a0, a1
+	ret
+func000000000000004a:                   # @func000000000000004a
 	sh2add	a2, a1, a2
 	slti	a1, a1, 4
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000066:                   # @func0000000000000066
+	add	a2, a2, a1
+	slti	a1, a1, 0
+	czero.nez	a2, a2, a1
+	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret

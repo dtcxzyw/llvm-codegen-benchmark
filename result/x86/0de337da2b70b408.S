@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vcvtsd2ss	%xmm0, %xmm0, %xmm0
 	vmovd	%xmm0, %eax
 	testl	$2130706432, %eax               # imm = 0x7F000000

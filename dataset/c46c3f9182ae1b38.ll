@@ -1,0 +1,18 @@
+
+; 6 occurrences:
+; image-rs/optimized/1njpscpjlgoe3i07.ll
+; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
+; spike/optimized/vasubu_vv.ll
+; spike/optimized/vasubu_vx.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000005(i128 %0, i64 %1) #0 {
+entry:
+  %2 = zext i64 %1 to i128
+  %3 = xor i128 %0, -1
+  %4 = add i128 %3, %2
+  ret i128 %4
+}
+
+attributes #0 = { nounwind }

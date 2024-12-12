@@ -12,6 +12,27 @@ func0000000000000020:                   # @func0000000000000020
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+func0000000000000001:                   # @func0000000000000001
+	vpmovqd	%ymm2, %xmm2
+	vpmovqd	%ymm1, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000004:                   # @func0000000000000004
+	vpmovqd	%ymm2, %xmm2
+	vpmovqd	%ymm1, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000005:                   # @func0000000000000005
+	vpmovqd	%ymm2, %xmm2
+	vpmovqd	%ymm1, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
 func00000000000000a0:                   # @func00000000000000a0
 	vpmovqd	%ymm2, %xmm2
 	vpmovqd	%ymm1, %xmm1

@@ -1,9 +1,8 @@
 
-; 177 occurrences:
+; 173 occurrences:
 ; abc/optimized/sclLibUtil.c.ll
 ; assimp/optimized/unzip.c.ll
 ; cmake/optimized/SystemTools.cxx.ll
-; darktable/optimized/tagging.c.ll
 ; faiss/optimized/sorting.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -21,7 +20,6 @@
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; git/optimized/graph.ll
-; git/optimized/index-pack.ll
 ; git/optimized/pack-bitmap.ll
 ; git/optimized/wildmatch.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
@@ -111,7 +109,6 @@
 ; linux/optimized/dm.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/hdac_device.ll
-; linux/optimized/hwdep.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/net_namespace.ll
@@ -138,14 +135,12 @@
 ; openjdk/optimized/generateOopMap.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
 ; openjdk/optimized/pngread.ll
-; openmpi/optimized/topo_base_cart_map.ll
 ; openssl/optimized/libcrypto-lib-rsa_pk1.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
 ; openusd/optimized/json.cpp.ll
 ; php/optimized/hash_gost.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/heap.ll
-; rayon-rs/optimized/4h6yllo6psxznznq.ll
 ; redis/optimized/server.ll
 ; ruby/optimized/euc_jp.ll
 ; ruby/optimized/io.ll
@@ -177,6 +172,7 @@
 ; tev/optimized/main.cpp.ll
 ; wireshark/optimized/packet-atm.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1, i32 %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; grpc/optimized/call.cc.ll
 ; grpc/optimized/channel_init.cc.ll
 ; grpc/optimized/chttp2_transport.cc.ll
@@ -17,6 +17,7 @@
 ; llvm/optimized/IRBuilder.cpp.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
+; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/ModuleDependencyCollector.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SafeStack.cpp.ll

@@ -84,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/apm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -95,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 2147483647
@@ -107,10 +107,10 @@ entry:
 ; freetype/optimized/bdf.c.ll
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000078(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 2147483647
+  %4 = icmp samesign ugt i64 %3, 2147483647
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -120,21 +120,10 @@ entry:
 ; openblas/optimized/dgemmt.c.ll
 ; opencv/optimized/upcean_decoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp slt i64 %3, 0
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/sgemm_direct_performant.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul nsw i64 %1, %2
-  %4 = icmp ult i64 %3, 358401
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }

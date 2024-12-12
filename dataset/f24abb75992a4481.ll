@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 42 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; coreutils-rs/optimized/1y438ox107i37q6b.ll
@@ -39,6 +39,9 @@
 ; ockam-rs/optimized/y59h8jnu9k73im6.ll
 ; postgres/optimized/logtape.ll
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:

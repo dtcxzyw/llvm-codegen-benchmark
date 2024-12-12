@@ -25,7 +25,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	-6148914691236517206            # 0xaaaaaaaaaaaaaaaa
 func000000000000000d:                   # @func000000000000000d
 	vpaddq	%ymm2, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogq	$216, .LCPI3_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 ^ (mem & (ymm0 ^ ymm1))
 	retq
 .LCPI4_0:

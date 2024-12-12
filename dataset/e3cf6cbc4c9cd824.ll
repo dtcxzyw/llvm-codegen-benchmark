@@ -16,7 +16,7 @@
 ; ruby/optimized/strftime.ll
 ; wireshark/optimized/packet-eap.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i8 %0) #0 {
+define i64 @func0000000000000042(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 0
   %2 = icmp eq i8 %0, 48

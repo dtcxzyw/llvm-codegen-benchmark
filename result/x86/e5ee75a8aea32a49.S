@@ -1,4 +1,4 @@
-func000000000000021a:                   # @func000000000000021a
+func0000000000000c2a:                   # @func0000000000000c2a
 	addq	$16, %rdx
 	cmpq	%rsi, %rdx
 	sete	%cl
@@ -6,7 +6,7 @@ func000000000000021a:                   # @func000000000000021a
 	setns	%al
 	orb	%cl, %al
 	retq
-func0000000000000284:                   # @func0000000000000284
+func0000000000000d04:                   # @func0000000000000d04
 	incq	%rdx
 	cmpq	%rsi, %rdx
 	seta	%cl
@@ -14,7 +14,7 @@ func0000000000000284:                   # @func0000000000000284
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000291:                   # @func0000000000000291
+func0000000000000d21:                   # @func0000000000000d21
 	addq	$8, %rdx
 	cmpq	%rsi, %rdx
 	setae	%cl
@@ -22,7 +22,7 @@ func0000000000000291:                   # @func0000000000000291
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000021c:                   # @func000000000000021c
+func0000000000000c2c:                   # @func0000000000000c2c
 	addq	$40, %rdx
 	cmpq	%rsi, %rdx
 	sete	%cl
@@ -30,7 +30,7 @@ func000000000000021c:                   # @func000000000000021c
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000211:                   # @func0000000000000211
+func0000000000000c21:                   # @func0000000000000c21
 	addq	$32, %rdx
 	cmpq	%rsi, %rdx
 	sete	%cl
@@ -38,7 +38,15 @@ func0000000000000211:                   # @func0000000000000211
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000244:                   # @func0000000000000244
+func000000000000082c:                   # @func000000000000082c
+	addq	$-40, %rdx
+	cmpq	%rsi, %rdx
+	sete	%cl
+	testl	%edi, %edi
+	setne	%al
+	orb	%cl, %al
+	retq
+func0000000000000c84:                   # @func0000000000000c84
 	addq	$4, %rdx
 	cmpq	%rsi, %rdx
 	setb	%cl
@@ -46,7 +54,7 @@ func0000000000000244:                   # @func0000000000000244
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000251:                   # @func0000000000000251
+func0000000000000ca1:                   # @func0000000000000ca1
 	addq	$16, %rdx
 	cmpq	%rsi, %rdx
 	setbe	%cl
@@ -54,7 +62,7 @@ func0000000000000251:                   # @func0000000000000251
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000028c:                   # @func000000000000028c
+func0000000000000d0c:                   # @func0000000000000d0c
 	addq	$7, %rdx
 	cmpq	%rsi, %rdx
 	seta	%cl
@@ -62,7 +70,7 @@ func000000000000028c:                   # @func000000000000028c
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000241:                   # @func0000000000000241
+func0000000000000c81:                   # @func0000000000000c81
 	incq	%rdx
 	cmpq	%rsi, %rdx
 	setb	%cl
@@ -70,7 +78,7 @@ func0000000000000241:                   # @func0000000000000241
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000216:                   # @func0000000000000216
+func0000000000000c26:                   # @func0000000000000c26
 	addq	$40, %rdx
 	cmpq	%rsi, %rdx
 	sete	%cl
@@ -78,15 +86,15 @@ func0000000000000216:                   # @func0000000000000216
 	sets	%al
 	orb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
-	incq	%rdx
+func000000000000002c:                   # @func000000000000002c
+	addq	$8, %rdx
 	cmpq	%rsi, %rdx
 	sete	%cl
 	testl	%edi, %edi
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addq	$8, %rdx
 	cmpq	%rsi, %rdx
 	sete	%cl
@@ -94,7 +102,7 @@ func0000000000000011:                   # @func0000000000000011
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addq	$4, %rdx
 	cmpq	%rsi, %rdx
 	setb	%cl
@@ -102,7 +110,15 @@ func0000000000000041:                   # @func0000000000000041
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000214:                   # @func0000000000000214
+func0000000000000821:                   # @func0000000000000821
+	addq	$-2, %rdx
+	cmpq	%rsi, %rdx
+	sete	%cl
+	testl	%edi, %edi
+	sete	%al
+	orb	%cl, %al
+	retq
+func0000000000000c24:                   # @func0000000000000c24
 	addq	$24, %rdx
 	cmpq	%rsi, %rdx
 	sete	%cl

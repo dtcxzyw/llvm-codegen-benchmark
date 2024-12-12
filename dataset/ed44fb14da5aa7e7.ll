@@ -1,8 +1,9 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; oiio/optimized/imagebufalgo_compare.cpp.ll
 ; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll

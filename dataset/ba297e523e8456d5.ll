@@ -5,7 +5,7 @@
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
@@ -14,10 +14,10 @@ entry:
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; redis/optimized/lolwut6.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
@@ -31,10 +31,10 @@ entry:
 ; openjdk/optimized/jcmaster.ll
 ; postgres/optimized/nbtutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
@@ -46,7 +46,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -2
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
@@ -57,7 +57,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
@@ -68,7 +68,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 11
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
@@ -79,7 +79,7 @@ entry:
 define i1 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 14
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp ule i32 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
@@ -87,10 +87,10 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/lolwut6.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
@@ -98,10 +98,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }

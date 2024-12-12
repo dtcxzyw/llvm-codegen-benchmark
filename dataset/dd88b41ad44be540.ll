@@ -1,6 +1,8 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll
@@ -20,7 +22,7 @@
 define double @func0000000000000000(double %0) #0 {
 entry:
   %1 = fsub double 2.000000e+00, %0
-  %2 = fmul double %1, %0
+  %2 = fmul double %0, %1
   ret double %2
 }
 

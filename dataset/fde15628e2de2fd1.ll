@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 107 occurrences:
 ; abc/optimized/mapperTime.c.ll
 ; abc/optimized/mapperUtils.c.ll
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
@@ -102,32 +102,58 @@
 ; llvm/optimized/Visitor.cpp.ll
 ; openjdk/optimized/g1CardSet.ll
 ; openjdk/optimized/g1RemSet.ll
-; openjdk/optimized/psParallelCompact.ll
 ; php/optimized/zend_alloc.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/smt_context_pp.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1) #0 {
+define ptr @func000000000000000f(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, -4
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 16
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/psParallelCompact.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = and i64 %2, -524288
+  %4 = inttoptr i64 %3 to ptr
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 524288
   %6 = getelementptr nusw ptr, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 2 occurrences:
+; abc/optimized/mapperTime.c.ll
+; abc/optimized/mapperUtils.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = and i64 %2, -2
+  %4 = inttoptr i64 %3 to ptr
+  %5 = getelementptr i8, ptr %4, i64 104
+  %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/maple_tree.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, ptr %1) #0 {
+define ptr @func000000000000000c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, -256
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   %6 = getelementptr i64, ptr %5, i64 %0
   ret ptr %6
 }

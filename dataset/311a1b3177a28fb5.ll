@@ -5,7 +5,7 @@
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000384(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000704(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = zext nneg i32 %2 to i64
@@ -179,7 +179,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000304(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 -53, %1
   %3 = zext nneg i32 %2 to i64

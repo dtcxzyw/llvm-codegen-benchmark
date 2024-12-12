@@ -18,7 +18,7 @@ func000000000000000d:                   # @func000000000000000d
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vcvtsi2sd	%esi, %xmm1, %xmm1
-	vucomisd	%xmm0, %xmm1
+	vucomisd	%xmm1, %xmm0
 	setnp	%cl
 	sete	%al
 	andb	%cl, %al
@@ -26,7 +26,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vcvtsi2sd	%esi, %xmm1, %xmm1
-	vucomisd	%xmm0, %xmm1
+	vucomisd	%xmm1, %xmm0
 	setp	%cl
 	setne	%al
 	orb	%cl, %al

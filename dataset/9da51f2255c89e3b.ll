@@ -1,19 +1,20 @@
 
-%struct.MapNode.2587206 = type { i16, i8, i8 }
-%struct.iovec.2596656 = type { ptr, i64 }
-%"class.hermes::vm::GCHermesValueBase.2890852" = type { %"class.hermes::vm::HermesValue32.2890851" }
-%"class.hermes::vm::HermesValue32.2890851" = type { i32 }
-%"class.llvm::MachineOperand.2955741" = type { i32, %union.anon.152.2955742, ptr, %"union.llvm::MachineOperand::ContentsUnion.2955743" }
-%union.anon.152.2955742 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.2955743" = type { %"class.llvm::ArrayRef.153.2955744" }
-%"class.llvm::ArrayRef.153.2955744" = type { ptr, i64 }
-%"class.llvm::MachineOperand.3007166" = type { i32, %union.anon.365.3007167, ptr, %"union.llvm::MachineOperand::ContentsUnion.3007168" }
-%union.anon.365.3007167 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3007168" = type { %"class.llvm::ArrayRef.366.3007169" }
-%"class.llvm::ArrayRef.366.3007169" = type { ptr, i64 }
+%struct.MapNode.2701095 = type { i16, i8, i8 }
+%struct.iovec.2710123 = type { ptr, i64 }
+%"class.hermes::vm::GCHermesValueBase.3085360" = type { %"class.hermes::vm::HermesValue32.3085359" }
+%"class.hermes::vm::HermesValue32.3085359" = type { i32 }
+%"class.llvm::MachineOperand.3149279" = type { i32, %union.anon.152.3149280, ptr, %"union.llvm::MachineOperand::ContentsUnion.3149281" }
+%union.anon.152.3149280 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3149281" = type { %"class.llvm::ArrayRef.153.3149282" }
+%"class.llvm::ArrayRef.153.3149282" = type { ptr, i64 }
+%"class.llvm::MachineOperand.3200600" = type { i32, %union.anon.365.3200601, ptr, %"union.llvm::MachineOperand::ContentsUnion.3200602" }
+%union.anon.365.3200601 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3200602" = type { %"class.llvm::ArrayRef.366.3200603" }
+%"class.llvm::ArrayRef.366.3200603" = type { ptr, i64 }
 
-; 58 occurrences:
+; 61 occurrences:
 ; abc/optimized/deflate.c.ll
+; boost/optimized/message.ll
 ; clamav/optimized/clamd.c.ll
 ; cmake/optimized/deflate.c.ll
 ; cvc5/optimized/soi_simplex.cpp.ll
@@ -48,6 +49,7 @@
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; luajit/optimized/lib_io.ll
 ; luajit/optimized/lib_io_dyn.ll
+; lvgl/optimized/lv_text.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -60,6 +62,7 @@
 ; openjdk/optimized/parseHelper.ll
 ; openjdk/optimized/vectorIntrinsics.ll
 ; openusd/optimized/openexr-c.c.ll
+; quantlib/optimized/bspline.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/zipmap.ll
 ; sqlite/optimized/sqlite3.ll
@@ -72,12 +75,12 @@
 ; z3/optimized/mpn.cpp.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, 3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -86,7 +89,7 @@ entry:
 ; minetest/optimized/guiEditBox.cpp.ll
 ; openspiel/optimized/efg_game.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -99,12 +102,12 @@ entry:
 ; minetest/optimized/treegen.cpp.ll
 ; php/optimized/zend_language_scanner.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %struct.MapNode.2587206, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.MapNode.2701095, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -115,7 +118,7 @@ define ptr @func000000000000002c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.iovec.2596656, ptr %0, i64 %4
+  %5 = getelementptr %struct.iovec.2710123, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -16368
   ret ptr %6
 }
@@ -126,16 +129,17 @@ entry:
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; openjdk/optimized/callnode.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add nsw i32 %3, -1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/hfsplus.c.ll
 ; icu/optimized/ucptrie.ll
 ; opencv/optimized/color_lab.cpp.ll
@@ -145,7 +149,7 @@ entry:
 ; wolfssl/optimized/tls13.c.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -158,7 +162,7 @@ entry:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -170,7 +174,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -183,7 +187,7 @@ entry:
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000005f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -196,12 +200,12 @@ entry:
 ; hermes/optimized/RegExp.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, -1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.2890852", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3085360", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -209,24 +213,24 @@ entry:
 ; llvm/optimized/X86FixupLEAs.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000005b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = add nuw nsw i32 %3, 3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"class.llvm::MachineOperand.2955741", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3149279", ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000004b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = add nsw i32 %3, 3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"class.llvm::MachineOperand.3007166", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3200600", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -234,12 +238,12 @@ entry:
 ; freetype/optimized/autofit.c.ll
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000053(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = add nuw i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"class.llvm::MachineOperand.3007166", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3200600", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -298,36 +302,24 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add nuw i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nuw i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; cpython/optimized/ceval.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007c(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr ptr, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 

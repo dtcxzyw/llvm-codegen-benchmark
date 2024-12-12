@@ -9,7 +9,7 @@
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000104(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ult ptr %1, %0
   ret i1 %2

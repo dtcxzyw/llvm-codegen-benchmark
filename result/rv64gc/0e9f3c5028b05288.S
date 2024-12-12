@@ -1,14 +1,12 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	snez	a2, a2
 	slli	a2, a2, 14
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000023:                   # @func0000000000000023
-	seqz	a2, a2
-	lui	a3, 1536
-	addi	a2, a2, -1
-	and	a2, a2, a3
+func0000000000000043:                   # @func0000000000000043
+	snez	a2, a2
+	slli	a2, a2, 2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

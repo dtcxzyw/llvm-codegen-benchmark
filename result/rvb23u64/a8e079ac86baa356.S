@@ -58,8 +58,9 @@ func000000000000008f:                   # @func000000000000008f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000185:                   # @func0000000000000185
-	snez	a2, a2
+func0000000000000140:                   # @func0000000000000140
+	not	a2, a2
+	srli	a2, a2, 63
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

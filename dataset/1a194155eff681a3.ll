@@ -1,5 +1,5 @@
 
-; 240 occurrences:
+; 236 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcSymm.c.ll
@@ -30,11 +30,14 @@
 ; abc/optimized/sbdLut.c.ll
 ; abc/optimized/sclSize.c.ll
 ; abc/optimized/sfmSat.c.ll
+; abc/optimized/utilNam.c.ll
 ; abc/optimized/wlcBlast.c.ll
+; abseil-cpp/optimized/charconv.cc.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/key_map_avx2.cc.ll
-; arrow/optimized/strtod.cc.ll
+; boost/optimized/normalize.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; bullet3/optimized/btPersistentManifold.ll
 ; clamav/optimized/binhex.c.ll
@@ -55,7 +58,6 @@
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_toneequal.c.ll
-; double_conversion/optimized/strtod.cc.ll
 ; draco/optimized/prediction_scheme_encoder_factory.cc.ll
 ; flac/optimized/utils.c.ll
 ; folly/optimized/Compression.cpp.ll
@@ -76,7 +78,6 @@
 ; hyperscan/optimized/limex_simd384.c.ll
 ; hyperscan/optimized/limex_simd512.c.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
-; icu/optimized/double-conversion-strtod.ll
 ; icu/optimized/icuexportdata.ll
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/package.ll
@@ -92,7 +93,6 @@
 ; libwebp/optimized/random_utils.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; libwebp/optimized/webp_enc.c.ll
-; linux/optimized/clntxdr.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/eeepc-laptop.ll
 ; linux/optimized/hda_intel.ll
@@ -104,15 +104,12 @@
 ; linux/optimized/io_apic.ll
 ; linux/optimized/mlock.ll
 ; linux/optimized/netlabel.ll
-; linux/optimized/sbitmap.ll
-; linux/optimized/tcp_cubic.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64SLSHardening.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
@@ -152,14 +149,12 @@
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; ncnn/optimized/net.cpp.ll
 ; ncnn/optimized/reshape.cpp.ll
-; nuttx/optimized/lib_libvsprintf.c.ll
 ; ocio/optimized/FileFormatCSP.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
 ; openblas/optimized/cblas_dgemm.c.ll
 ; openblas/optimized/cblas_dgemmt.c.ll
 ; openblas/optimized/cblas_dimatcopy.c.ll
 ; openblas/optimized/dgemmt.c.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
@@ -178,6 +173,7 @@
 ; openspiel/optimized/backgammon.cc.ll
 ; openspiel/optimized/solitaire.cc.ll
 ; openspiel/optimized/tiny_hanabi.cc.ll
+; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; openssl/optimized/evp_test-bin-evp_test.ll
 ; openssl/optimized/hpke_test-bin-hpke_test.ll
 ; openssl/optimized/libcrypto-lib-cms_ec.ll
@@ -189,10 +185,8 @@
 ; openssl/optimized/libssl-lib-rec_layer_s3.ll
 ; openssl/optimized/libssl-shlib-rec_layer_s3.ll
 ; openssl/optimized/libtestutil-lib-driver.ll
-; openusd/optimized/json.cpp.ll
 ; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/rotation.cpp.ll
-; openusd/optimized/strtod.cc.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
@@ -200,7 +194,6 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; php/optimized/file.ll
 ; php/optimized/scanf.ll
-; php/optimized/strtod.ll
 ; postgres/optimized/worker.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
@@ -238,6 +231,9 @@
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/euf_internalize.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind

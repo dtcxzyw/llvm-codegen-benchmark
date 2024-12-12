@@ -1,6 +1,8 @@
 
-%struct.JSValue.3243652 = type { %union.JSValueUnion.3243653, i64 }
-%union.JSValueUnion.3243653 = type { double }
+%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
+%union.JSValueUnion.3435082 = type { double }
+%struct.nf_conn_counter.3558356 = type { %struct.atomic64_t.3558288, %struct.atomic64_t.3558288 }
+%struct.atomic64_t.3558288 = type { i64 }
 
 ; 3 occurrences:
 ; cpython/optimized/floatobject.ll
@@ -16,6 +18,7 @@ entry:
 }
 
 ; 34 occurrences:
+; boost/optimized/src.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; flatbuffers/optimized/idl_gen_rust.cpp.ll
@@ -33,7 +36,6 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/LoadStoreVectorizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -51,15 +53,15 @@ entry:
 ; redis/optimized/redis-benchmark.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000063(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 66 occurrences:
+; 65 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/sfmSat.c.ll
 ; clamav/optimized/pe.c.ll
@@ -93,7 +95,6 @@ entry:
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/Mangler.cpp.ll
 ; llvm/optimized/OverflowInstAnalysis.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SanitizerCoverage.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
@@ -127,11 +128,11 @@ entry:
 ; redis/optimized/async.ll
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp eq i32 %1, 0
+  %2 = icmp eq i32 %1, 1
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -142,15 +143,91 @@ entry:
 ; velox/optimized/Timestamp.cpp.ll
 ; zxing/optimized/ODDataBarExpandedBitDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 45 occurrences:
+; 3 occurrences:
+; gromacs/optimized/coder.c.ll
+; minetest/optimized/CImageLoaderBMP.cpp.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000a3(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 4
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 10 occurrences:
+; flatbuffers/optimized/idl_gen_json_schema.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; ncnn/optimized/binaryop.cpp.ll
+; openjdk/optimized/c1_Canonicalizer.ll
+; openjdk/optimized/mlib_ImageLookUp_Bit.ll
+; openusd/optimized/stbImage.cpp.ll
+; pugixml/optimized/pugixml.cpp.ll
+; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_image_write.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000053(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, 6
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
+; linux/optimized/nf_conntrack_core.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000c0(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 7
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 4 occurrences:
+; boost/optimized/to_chars.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; luajit/optimized/lj_serialize.ll
+; luajit/optimized/lj_serialize_dyn.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000c3(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 999
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 7 occurrences:
+; gromacs/optimized/huffman.c.ll
+; gromacs/optimized/xtc2.c.ll
+; hermes/optimized/CommandLine.cpp.ll
+; llvm/optimized/CommandLine.cpp.ll
+; luajit/optimized/lj_ccall.ll
+; luajit/optimized/lj_ccall_dyn.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000043(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %1, 1
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 40 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; gromacs/optimized/coder.c.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -169,8 +246,6 @@ entry:
 ; llvm/optimized/JSONNodeDumper.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/ParseCXXInlineMethods.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -193,68 +268,12 @@ entry:
 ; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
-; luau/optimized/lstrlib.cpp.ll
-; minetest/optimized/CImageLoaderBMP.cpp.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000023(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 4
+  %2 = icmp ult i32 %1, 3
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 10 occurrences:
-; flatbuffers/optimized/idl_gen_json_schema.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; ncnn/optimized/binaryop.cpp.ll
-; openjdk/optimized/c1_Canonicalizer.ll
-; openjdk/optimized/mlib_ImageLookUp_Bit.ll
-; openusd/optimized/stbImage.cpp.ll
-; pugixml/optimized/pugixml.cpp.ll
-; raylib/optimized/rtextures.c.ll
-; stb/optimized/stb_image_write.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, 6
-  %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 2 occurrences:
-; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
-; linux/optimized/nf_conntrack_core.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000040(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 7
-  %3 = zext i1 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 11 occurrences:
-; gromacs/optimized/huffman.c.ll
-; gromacs/optimized/xtc2.c.ll
-; hermes/optimized/CommandLine.cpp.ll
-; llvm/optimized/CommandLine.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; luajit/optimized/lj_ccall.ll
-; luajit/optimized/lj_ccall_dyn.ll
-; luajit/optimized/lj_serialize.ll
-; luajit/optimized/lj_serialize_dyn.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 1
-  %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -269,7 +288,7 @@ define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 7
   %3 = zext i1 %2 to i64
-  %4 = getelementptr %struct.JSValue.3243652, ptr %0, i64 %3
+  %4 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -293,6 +312,17 @@ entry:
   %2 = icmp slt i32 %1, 4
   %3 = zext i1 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; linux/optimized/nf_conntrack_core.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000040(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %1, 2
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr %struct.nf_conn_counter.3558356, ptr %0, i64 %3
   ret ptr %4
 }
 

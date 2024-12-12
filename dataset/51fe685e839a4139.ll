@@ -1,9 +1,16 @@
 
-; 217 occurrences:
+; 226 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/charconv.cc.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btSliderConstraint.ll
+; casadi/optimized/dm_instantiator.cpp.ll
+; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
+; casadi/optimized/sx_instantiator.cpp.ll
 ; cmake/optimized/cmake.cxx.ll
 ; cmake/optimized/testSystemTools.cxx.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
@@ -91,6 +98,7 @@
 ; luau/optimized/TypeInfer.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
@@ -120,7 +128,6 @@
 ; openjdk/optimized/exceptions.ll
 ; openjdk/optimized/loopTransform.ll
 ; openjdk/optimized/vectorIntrinsics.ll
-; openmpi/optimized/name_fns.ll
 ; openmpi/optimized/ompi_rte.ll
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
 ; openusd/optimized/layer.cpp.ll
@@ -138,7 +145,6 @@
 ; postgres/optimized/guc.ll
 ; postgres/optimized/name.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; proxygen/optimized/HTTPSessionBase.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
@@ -175,9 +181,6 @@
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
 ; slurm/optimized/reservation.ll
 ; slurm/optimized/xstring.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; tls-rs/optimized/1oa4q9ydtxtlathz.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
@@ -217,6 +220,12 @@
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

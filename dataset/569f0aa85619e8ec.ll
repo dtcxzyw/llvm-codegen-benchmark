@@ -1,10 +1,9 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; casadi/optimized/tinyxml2.cpp.ll
 ; gromacs/optimized/freeenergydispatch.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/TextStub.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll

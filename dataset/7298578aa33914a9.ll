@@ -1,10 +1,13 @@
 
-; 10 occurrences:
+; 13 occurrences:
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hwloc/optimized/lstopo-lstopo-draw.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
 ; llama.cpp/optimized/llama.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/connection.cpp.ll

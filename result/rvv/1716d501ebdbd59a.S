@@ -20,3 +20,8 @@ func0000000000000002:                   # @func0000000000000002
 	vfneg.v	v12, v12, v0.t
 	vmflt.vv	v0, v12, v8
 	ret
+func000000000000000a:                   # @func000000000000000a
+	vsetivli	zero, 16, e32, m4, ta, mu
+	vfneg.v	v12, v12, v0.t
+	vmfle.vv	v0, v12, v8
+	ret

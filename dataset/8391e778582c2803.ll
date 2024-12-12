@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
@@ -12,6 +12,7 @@
 ; linux/optimized/mlock.ll
 ; linux/optimized/vma.ll
 ; llvm/optimized/InterpBuiltin.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openblas/optimized/dsymv_U.c.ll
 ; protobuf/optimized/csharp_enum.cc.ll
 ; protobuf/optimized/descriptor.cc.ll

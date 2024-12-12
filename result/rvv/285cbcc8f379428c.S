@@ -43,7 +43,7 @@ func0000000000000010:                   # @func0000000000000010
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vadd.vi	v8, v8, -8, v0.t
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v0, v12, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -51,7 +51,7 @@ func0000000000000021:                   # @func0000000000000021
 	vmerge.vim	v9, v9, 1, v0
 	vadd.vv	v8, v9, v8
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000062:                   # @func0000000000000062
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v0, v12, v10
 	li	a0, 20

@@ -43,7 +43,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 470296
   %5 = mul nuw nsw i64 %1, 136657
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }
@@ -59,7 +59,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 666643
   %5 = mul nuw nsw i64 %1, 470296
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   %7 = add nuw nsw i64 %6, %4
   ret i64 %7
 }
@@ -75,7 +75,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = mul nsw i64 %3, -997805
   %5 = mul nuw nsw i64 %1, 654183
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }
@@ -102,7 +102,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 10033
   %5 = mul nuw nsw i64 %1, 5793
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }
@@ -116,7 +116,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = mul nsw i64 %3, -14924
   %5 = mul nsw i64 %1, 3529
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }
@@ -130,7 +130,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 17333
   %5 = mul nsw i64 %1, 20862
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }
@@ -157,7 +157,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 4732
   %5 = mul nuw nsw i64 %1, 46871
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   %7 = add nuw nsw i64 %6, %4
   ret i64 %7
 }

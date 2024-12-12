@@ -1,7 +1,7 @@
 func000000000000000f:                   # @func000000000000000f
-	andl	$768, %edx                      # imm = 0x300
-	orl	%esi, %edx
-	leal	65536(%rdi,%rdx), %eax
+	andl	$-4144891, %edx                 # imm = 0xFFC0C105
+	orl	%edi, %edx
+	leal	1024(%rsi,%rdx), %eax
 	retq
 func000000000000000b:                   # @func000000000000000b
 	andl	$61440, %edx                    # imm = 0xF000

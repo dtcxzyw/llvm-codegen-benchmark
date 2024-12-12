@@ -7,7 +7,7 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i16 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16
   %3 = icmp eq i32 %2, 0

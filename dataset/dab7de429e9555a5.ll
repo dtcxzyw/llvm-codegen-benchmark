@@ -1,7 +1,7 @@
 
-%class.QCPGraphData.3260420 = type { double, double }
+%class.QCPGraphData.3451166 = type { double, double }
 
-; 45 occurrences:
+; 44 occurrences:
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
@@ -20,7 +20,6 @@
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openblas/optimized/dgtsv.c.ll
 ; openblas/optimized/dgtts2.c.ll
@@ -57,22 +56,33 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
+; 1 occurrences:
+; openjdk/optimized/jvmciRuntime.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = ashr i64 %1, 5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 7 occurrences:
 ; meshlab/optimized/mainwindow_Init.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/multiViewer_Container.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; opencv/optimized/emd_new.cpp.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
-; openjdk/optimized/jvmciRuntime.ll
 ; openusd/optimized/level.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = ashr i64 %1, 5
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %4 = getelementptr nusw i64, ptr %0, i64 %3
+  %5 = ashr i64 %1, 32
+  %6 = getelementptr nusw i64, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -104,32 +114,43 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %class.QCPGraphData.3260420, ptr %0, i64 %3
+  %4 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %3
   %5 = ashr exact i64 %1, 28
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
-; icu/optimized/decNumber.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %5 = ashr exact i64 %1, 30
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; icu/optimized/decNumber.ll
+; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr i32, ptr %0, i64 %3
-  %5 = ashr exact i64 %1, 30
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %4 = getelementptr i64, ptr %0, i64 %3
+  %5 = ashr exact i64 %1, 2
+  %6 = getelementptr nusw i64, ptr %4, i64 %5
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/fraImp.c.ll
@@ -19,6 +19,7 @@
 ; libwebp/optimized/vp8l_dec.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; libwebp/optimized/webp_enc.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; opencv/optimized/hough.cpp.ll
@@ -46,7 +47,7 @@
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 16
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -60,7 +61,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -105,7 +106,7 @@ entry:
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

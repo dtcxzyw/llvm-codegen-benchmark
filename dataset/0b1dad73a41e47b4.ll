@@ -19,11 +19,11 @@ entry:
 ; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; llvm/optimized/CoverageMappingReader.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(ptr %0, i32 %1) #0 {
+define i64 @func000000000000003c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 1604
-  %4 = getelementptr nusw i16, ptr %3, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1604
+  %4 = getelementptr nusw nuw i16, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   %6 = add i64 %5, 2
   ret i64 %6

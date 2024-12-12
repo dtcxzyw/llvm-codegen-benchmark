@@ -1,13 +1,11 @@
 
-; 11 occurrences:
+; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; hyperscan/optimized/ng_prefilter.cpp.ll
 ; libquic/optimized/hpack_header_table.cc.ll
 ; libquic/optimized/time_support.c.ll
 ; opencv/optimized/persistence.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; qemu/optimized/block_qcow2-bitmap.c.ll
 ; ruby/optimized/numeric.ll
 ; sqlite/optimized/sqlite3.ll
@@ -52,22 +50,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestVectorMap.cpp.ll
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sdiv i64 %1, 1461001
-  %3 = add nuw nsw i64 %0, 4294962396
-  %4 = add nsw i64 %3, %2
-  ret i64 %4
-}
-
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
@@ -104,6 +88,19 @@ entry:
   %2 = sdiv i64 %1, -10
   %3 = add i64 %0, 1
   %4 = add i64 %3, %2
+  ret i64 %4
+}
+
+; 3 occurrences:
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; libquic/optimized/time_support.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sdiv i64 %1, 1461001
+  %3 = add nuw nsw i64 %0, 4294962396
+  %4 = add nsw i64 %3, %2
   ret i64 %4
 }
 

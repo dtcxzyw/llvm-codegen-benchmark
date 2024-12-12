@@ -75,12 +75,12 @@
 ; openssl/optimized/libssl-lib-dtls_meth.ll
 ; openssl/optimized/libssl-shlib-dtls_meth.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -103,7 +103,7 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 48, %1
   %3 = zext nneg i32 %2 to i64
@@ -113,7 +113,8 @@ entry:
   ret i1 %6
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -213,7 +214,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 32, %1
   %3 = zext nneg i32 %2 to i64
@@ -296,12 +297,12 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ec(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001cc(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
@@ -310,7 +311,7 @@ entry:
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 -1075, %1
   %3 = zext nneg i32 %2 to i64

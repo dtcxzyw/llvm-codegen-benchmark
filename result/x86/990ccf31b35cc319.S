@@ -1,14 +1,14 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	leal	-1(%rsi), %eax
 	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	incl	%esi
 	andl	$127, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	decl	%esi
 	movzbl	%sil, %eax
 	shll	$5, %eax
@@ -31,7 +31,7 @@ func0000000000000008:                   # @func0000000000000008
 	incl	%esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	addl	$14, %esi
 	andl	$15, %esi
 	leaq	(%rdi,%rsi,4), %rax

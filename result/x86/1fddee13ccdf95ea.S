@@ -5,6 +5,6 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 func0000000000000001:                   # @func0000000000000001
 	addl	%edx, %esi
-	testl	%edi, %esi
+	testl	%esi, %edi
 	sete	%al
 	retq

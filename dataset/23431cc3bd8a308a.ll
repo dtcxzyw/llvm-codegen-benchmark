@@ -12,10 +12,9 @@ entry:
   ret i64 %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; graphviz/optimized/stress.c.ll
 ; linux/optimized/skl_watermark.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlatms.c.ll

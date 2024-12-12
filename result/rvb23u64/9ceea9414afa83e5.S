@@ -1,17 +1,10 @@
-func0000000000000074:                   # @func0000000000000074
-	snez	a2, a1
-	addi	a2, a2, -1
-	or	a1, a1, a2
-	add	a0, a0, a1
-	sltiu	a0, a0, 64
-	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	addi	a2, a1, -2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addi	a2, a1, -1
 	lui	a3, 1
 	czero.eqz	a1, a1, a2

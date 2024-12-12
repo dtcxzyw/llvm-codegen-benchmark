@@ -38,6 +38,11 @@ func0000000000000018:                   # @func0000000000000018
 	vpternlogd	$254, %xmm1, %xmm0, %xmm2 # xmm2 = xmm2 | xmm0 | xmm1
 	vpmovzxdq	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	retq
+func000000000000000c:                   # @func000000000000000c
+	vpslld	$8, %xmm0, %xmm0
+	vpternlogd	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
 func0000000000000014:                   # @func0000000000000014
 	vpslld	$16, %xmm2, %xmm2
 	vpternlogd	$254, %xmm1, %xmm0, %xmm2 # xmm2 = xmm2 | xmm0 | xmm1

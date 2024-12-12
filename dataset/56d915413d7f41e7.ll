@@ -1,5 +1,5 @@
 
-; 199 occurrences:
+; 192 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
@@ -51,7 +51,6 @@
 ; linux/optimized/gro.ll
 ; linux/optimized/gss_rpc_xdr.ll
 ; linux/optimized/hugetlb_vmemmap.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_gem_object.ll
@@ -71,10 +70,8 @@
 ; linux/optimized/journal.ll
 ; linux/optimized/kbuf.ll
 ; linux/optimized/kexec_core.ll
-; linux/optimized/kvmclock.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/mapping.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/md-bitmap.ll
@@ -87,7 +84,6 @@
 ; linux/optimized/nfs4namespace.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/nfs4xdr.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/page-io.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pasid.ll
@@ -101,9 +97,7 @@
 ; linux/optimized/ring_buffer.ll
 ; linux/optimized/rock.ll
 ; linux/optimized/scatterlist.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/sd.ll
-; linux/optimized/secretmem.ll
 ; linux/optimized/selinuxfs.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/sg.ll
@@ -115,7 +109,6 @@
 ; linux/optimized/socklib.ll
 ; linux/optimized/sparse-vmemmap.ll
 ; linux/optimized/stackdepot.ll
-; linux/optimized/status.ll
 ; linux/optimized/svc_xprt.ll
 ; linux/optimized/svcauth_gss.ll
 ; linux/optimized/svcsock.ll
@@ -205,11 +198,11 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 542 occurrences:
+; 536 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
@@ -229,6 +222,7 @@ entry:
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DImporter_Metadata.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/fmu.cpp.ll
@@ -433,13 +427,10 @@ entry:
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -562,9 +553,6 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -634,7 +622,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -762,7 +749,7 @@ entry:
   ret i64 %6
 }
 
-; 328 occurrences:
+; 326 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -782,6 +769,7 @@ entry:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -954,9 +942,6 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -1097,7 +1082,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = shl nsw i64 %4, 3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

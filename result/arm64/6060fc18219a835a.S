@@ -14,7 +14,7 @@ func00000000000000a8:                   // @func00000000000000a8
 	add	x0, x8, #12
 	ret
                                         // -- End function
-func000000000000008a:                   // @func000000000000008a
+func000000000000008b:                   // @func000000000000008b
 // %bb.0:                               // %entry
 	lsr	x8, x1, #2
 	mov	w9, #144                        // =0x90
@@ -22,7 +22,7 @@ func000000000000008a:                   // @func000000000000008a
 	sub	x0, x8, #32
 	ret
                                         // -- End function
-func00000000000000aa:                   // @func00000000000000aa
+func00000000000000ab:                   // @func00000000000000ab
 // %bb.0:                               // %entry
 	lsr	x8, x1, #2
 	mov	w9, #144                        // =0x90

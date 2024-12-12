@@ -19,7 +19,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	4294967290                      # 0xfffffffa
 .LCPI1_1:
 	.long	32                              # 0x20
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -29,24 +29,45 @@ func0000000000000044:                   # @func0000000000000044
 	vzeroupper
 	retq
 .LCPI2_0:
-	.long	2                               # 0x2
-func00000000000000f1:                   # @func00000000000000f1
+	.long	4294967289                      # 0xfffffff9
+func0000000000000006:                   # @func0000000000000006
 	vpsllw	$15, %xmm2, %xmm2
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm2, %k1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpord	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
-	vptestnmd	%ymm0, %ymm0, %k0
+	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpmovd2m	%ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI3_0:
+func00000000000001e1:                   # @func00000000000001e1
+	vpsllw	$15, %xmm2, %xmm2
+	vpmovw2m	%xmm2, %k1
+	vpor	%ymm1, %ymm0, %ymm0
+	vptestnmd	%ymm0, %ymm0, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
+	.long	4294967262                      # 0xffffffde
+.LCPI4_1:
+	.long	13775                           # 0x35cf
+func00000000000000a6:                   # @func00000000000000a6
+	vpsllw	$15, %xmm2, %xmm2
+	vpmovw2m	%xmm2, %k1
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpcmpltd	.LCPI4_1(%rip){1to8}, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
 	.long	60                              # 0x3c
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpaddd	%ymm2, %ymm1, %ymm0
-	vpbroadcastd	.LCPI3_0(%rip), %ymm1 {%k1} {z} # ymm1 {%k1} {z} = [60,60,60,60,60,60,60,60]
+	vpbroadcastd	.LCPI5_0(%rip), %ymm1 {%k1} {z} # ymm1 {%k1} {z} = [60,60,60,60,60,60,60,60]
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm0, %ymm1, %k0

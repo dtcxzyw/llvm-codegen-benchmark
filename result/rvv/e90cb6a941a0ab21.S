@@ -1,4 +1,4 @@
-func00000000000004d4:                   # @func00000000000004d4
+func00000000000029a4:                   # @func00000000000029a4
 	li	a0, 56
 	li	a1, 120
 	vsetivli	zero, 8, e32, m2, ta, ma

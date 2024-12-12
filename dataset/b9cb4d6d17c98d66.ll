@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 5
   %4 = trunc i64 %3 to i32
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RDFGraph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 4
   %4 = trunc i64 %3 to i32
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/posit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000161(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
@@ -67,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/function.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 5
   %4 = trunc i64 %3 to i32

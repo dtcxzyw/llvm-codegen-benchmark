@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; linux/optimized/8250_lpss.ll
+; 3 occurrences:
 ; linux/optimized/sd.ll
 ; openjdk/optimized/codeHeapState.ll
 ; qemu/optimized/hw_riscv_virt.c.ll

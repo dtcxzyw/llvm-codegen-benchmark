@@ -51,26 +51,38 @@ func0000000000000004:                   # @func0000000000000004
 	li	a0, 19
 .LBB3_4:                                # %entry
 	ret
-func0000000000000009:                   # @func0000000000000009
+func0000000000000014:                   # @func0000000000000014
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	sext.w	a2, a2
 	sext.w	a1, a1
 	sltu	a0, a1, a2
-	addi	a0, a0, -1
-	andi	a0, a0, -34
+	xori	a0, a0, 1
+	slli	a0, a0, 1
 	ret
 .LBB4_2:
-	li	a0, -22
+	li	a0, 1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a0, a0, 1
+	bnez	a0, .LBB5_2
+	sext.w	a1, a1
+	sext.w	a2, a2
+	sltu	a0, a2, a1
+	xori	a0, a0, 1
+	slli	a0, a0, 1
+	ret
+.LBB5_2:
+	li	a0, 1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	andi	a0, a0, 1
-	bnez	a0, .LBB5_2
+	bnez	a0, .LBB6_2
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slt	a0, a2, a1
 	slli	a0, a0, 2
 	ret
-.LBB5_2:
+.LBB6_2:
 	li	a0, 2
 	ret

@@ -6,7 +6,7 @@
 define i32 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 32768
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = lshr i32 %1, 16
   %6 = add nuw i32 %4, %5
   ret i32 %6
@@ -75,7 +75,13 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 8 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind

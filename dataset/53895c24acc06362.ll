@@ -1,31 +1,23 @@
 
-; 115 occurrences:
+; 96 occurrences:
+; boost/optimized/ipv6_address_rule.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/chmd.c.ll
-; clamav/optimized/packlibs.c.ll
 ; clamav/optimized/swf.c.ll
 ; clamav/optimized/textdet.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/trees.c.ll
-; coreutils-rs/optimized/12183t08bisz8vo8.ll
 ; flac/optimized/picture.c.ll
 ; freetype/optimized/pfr.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
-; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libjpeg-turbo/optimized/rdtarga.c.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; libphonenumber/optimized/rune.c.ll
-; libpng/optimized/pngwutil.c.ll
-; libquic/optimized/bio.c.ll
-; libquic/optimized/cbs.c.ll
-; libquic/optimized/url_canon_host.cc.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/gen8_engine_cs.ll
 ; linux/optimized/i915_gem_create.ll
@@ -38,7 +30,6 @@
 ; linux/optimized/intel_reset.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/sr_vendor.ll
-; lodepng/optimized/pngdetail.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
@@ -47,7 +38,6 @@
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-font.ll
 ; openjdk/optimized/hb-ot-cff1-table.ll
-; openjdk/optimized/hb-ot-cff2-table.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-metrics.ll
@@ -94,19 +84,11 @@
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; php/optimized/image.ll
 ; php/optimized/pcre2_compile.ll
-; qemu/optimized/fdt.c.ll
-; qemu/optimized/fdt_ro.c.ll
-; qemu/optimized/fdt_rw.c.ll
 ; re2/optimized/rune.cc.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; redis/optimized/listpack.ll
-; spike/optimized/fdt.ll
-; spike/optimized/fdt_ro.ll
-; spike/optimized/fdt_rw.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
-; wireshark/optimized/iptrace.c.ll
-; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap-iter.c.ll
 ; wireshark/optimized/packet-iso7816.c.ll
 ; wireshark/optimized/stanag4607.c.ll
@@ -114,21 +96,19 @@
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; zlib/optimized/trees.c.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
-  %4 = icmp ult i32 %3, 128
+  %3 = or disjoint i32 %0, %2
+  %4 = icmp samesign ult i32 %3, 128
   ret i1 %4
 }
 
-; 231 occurrences:
+; 229 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/cabd.c.ll
 ; clamav/optimized/chmd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; clamav/optimized/oabd.c.ll
@@ -192,7 +172,6 @@ entry:
 ; linux/optimized/decompress_unlzma.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/gen8_engine_cs.ll
-; linux/optimized/i915_debugfs.ll
 ; linux/optimized/i915_gem_stolen.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/intel_engine_cs.ll
@@ -202,13 +181,10 @@ entry:
 ; linux/optimized/intel_guc.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_lrc.ll
-; linux/optimized/intel_mocs.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/intel_reset.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/scsi_transport_spi.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/virtio_blk.ll
 ; linux/optimized/virtio_scsi.ll
@@ -340,6 +316,7 @@ entry:
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/k12.c.ll
+; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-icmp.c.ll
 ; wireshark/optimized/packet-k12.c.ll
 ; wireshark/optimized/packet-knet.c.ll
@@ -353,15 +330,28 @@ entry:
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; zlib/optimized/trees.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp eq i32 %3, 0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; rocksdb/optimized/block.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = or i32 %0, %2
+  %4 = icmp samesign ult i32 %3, 128
   ret i1 %4
 }
 
@@ -371,7 +361,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ult i32 %3, 128
   ret i1 %4
 }
@@ -429,22 +419,17 @@ entry:
 ; wireshark/optimized/packet-ieee80211-radiotap-iter.c.ll
 ; wolfssl/optimized/api.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp ne i32 %3, 2
   ret i1 %4
 }
 
-; 93 occurrences:
-; clamav/optimized/chmd.c.ll
-; clamav/optimized/oabd.c.ll
+; 71 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/unicodeobject.ll
-; flac/optimized/picture.c.ll
-; git/optimized/commit-graph.ll
-; git/optimized/read-cache.ll
 ; gromacs/optimized/xtc3.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -457,9 +442,7 @@ entry:
 ; linux/optimized/i915_gem_mman.ll
 ; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/i915_gem_stolen.ll
-; linux/optimized/i915_getparam.ll
 ; linux/optimized/i915_gpu_error.ll
-; linux/optimized/i915_irq.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/intel_execlists_submission.ll
@@ -470,11 +453,9 @@ entry:
 ; linux/optimized/intel_gtt.ll
 ; linux/optimized/intel_guc_ads.ll
 ; linux/optimized/intel_guc_capture.ll
-; linux/optimized/intel_guc_hwconfig.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_lrc.ll
 ; linux/optimized/intel_migrate.ll
-; linux/optimized/intel_mocs.ll
 ; linux/optimized/intel_reset.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/intel_sseu.ll
@@ -483,7 +464,6 @@ entry:
 ; linux/optimized/mpicoder.ll
 ; linux/optimized/scsi_transport_spi.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
-; lodepng/optimized/pngdetail.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -510,21 +490,9 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/phar.ll
 ; postgres/optimized/euc_jp_and_sjis.ll
-; qemu/optimized/fdt.c.ll
-; qemu/optimized/fdt_ro.c.ll
-; qemu/optimized/fdt_rw.c.ll
 ; qemu/optimized/hw_usb_core.c.ll
-; qemu/optimized/ui_vnc.c.ll
-; spike/optimized/fdt.ll
-; spike/optimized/fdt_ro.ll
-; spike/optimized/fdt_rw.ll
-; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
-; wasmtime-rs/optimized/enal6epyb0tyurl.ll
-; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
-; wireshark/optimized/packet-ssh.c.ll
-; wireshark/optimized/stanag4607.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; zstd/optimized/zstd_v05.c.ll
@@ -532,11 +500,11 @@ entry:
 ; zstd/optimized/zstd_v07.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
-  %4 = icmp ugt i32 %3, 769
+  %3 = or disjoint i32 %0, %2
+  %4 = icmp samesign ugt i32 %3, 769
   ret i1 %4
 }
 
@@ -571,7 +539,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -628,12 +596,12 @@ entry:
 define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
-; 94 occurrences:
+; 112 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
 ; actix-rs/optimized/5f3qk1oomglisntr.ll
@@ -659,6 +627,7 @@ entry:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/5c4w4ukc3cdb4cwa.ll
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
+; egg-rs/optimized/2fp1d0strj8iokyf.ll
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; influxdb-rs/optimized/380gcqze52ow6205.ll
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
@@ -728,12 +697,98 @@ entry:
 ; wireshark/optimized/packet-atn-ulcs.c.ll
 ; wireshark/optimized/packet-mpls.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5gzhlrfve63v3ndyg8t40tttn.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/9jkx32jki2vcljeo0xctxc8uw.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/ak4ykc5o2q07hp1jptfv0x87c.ll
+; zed-rs/optimized/b0jacrvunbgse6y69p1vx4gkq.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp eq i32 %3, 1114112
+  ret i1 %4
+}
+
+; 24 occurrences:
+; clamav/optimized/chmd.c.ll
+; clamav/optimized/oabd.c.ll
+; flac/optimized/picture.c.ll
+; git/optimized/commit-graph.ll
+; git/optimized/read-cache.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; libpng/optimized/png.c.ll
+; lodepng/optimized/lodepng_util.cpp.ll
+; lodepng/optimized/pngdetail.cpp.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/png.ll
+; qemu/optimized/fdt.c.ll
+; qemu/optimized/fdt_ro.c.ll
+; qemu/optimized/fdt_rw.c.ll
+; qemu/optimized/ui_vnc.c.ll
+; spike/optimized/fdt.ll
+; spike/optimized/fdt_ro.ll
+; spike/optimized/fdt_rw.ll
+; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; wireshark/optimized/k12.c.ll
+; wireshark/optimized/packet-ssh.c.ll
+; wireshark/optimized/stanag4607.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = or disjoint i32 %0, %2
+  %4 = icmp ugt i32 %3, 16
+  ret i1 %4
+}
+
+; 25 occurrences:
+; clamav/optimized/chmd.c.ll
+; clamav/optimized/packlibs.c.ll
+; coreutils-rs/optimized/12183t08bisz8vo8.ll
+; freetype/optimized/sfnt.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
+; libpng/optimized/pngwutil.c.ll
+; libquic/optimized/bio.c.ll
+; libquic/optimized/cbs.c.ll
+; libquic/optimized/url_canon_host.cc.ll
+; lodepng/optimized/pngdetail.cpp.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-ot-cff2-table.ll
+; openjdk/optimized/hb-ot-layout.ll
+; qemu/optimized/fdt.c.ll
+; qemu/optimized/fdt_ro.c.ll
+; qemu/optimized/fdt_rw.c.ll
+; spike/optimized/fdt.ll
+; spike/optimized/fdt_ro.ll
+; spike/optimized/fdt_rw.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/iptrace.c.ll
+; wireshark/optimized/k12.c.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = or disjoint i32 %0, %2
+  %4 = icmp ult i32 %3, 16
   ret i1 %4
 }
 
@@ -741,10 +796,10 @@ entry:
 ; php/optimized/image.ll
 ; qemu/optimized/hw_riscv_boot.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp slt i32 %3, 1
   ret i1 %4
 }
@@ -762,10 +817,10 @@ entry:
 ; qemu/optimized/system_memory.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -790,26 +845,25 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
 
-; 5 occurrences:
-; clamav/optimized/explode.c.ll
+; 4 occurrences:
 ; icu/optimized/utf_impl.ll
 ; luau/optimized/isocline.c.ll
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
-; yosys/optimized/fstapi.ll
+; zed-rs/optimized/e41v0ag91t21no9hshe9jx8u4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
-  %4 = icmp ult i32 %3, 32
+  %3 = or disjoint i32 %0, %2
+  %4 = icmp samesign ult i32 %3, 32
   ret i1 %4
 }
 
@@ -820,10 +874,10 @@ entry:
 ; linux/optimized/loop.ll
 ; wireshark/optimized/packet-mpls.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -831,10 +885,10 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/icu_utf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp slt i32 %3, 272
   ret i1 %4
 }
@@ -843,33 +897,46 @@ entry:
 ; clamav/optimized/petite.c.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = icmp sgt i32 %3, 2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; clamav/optimized/explode.c.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = or disjoint i32 %0, %2
+  %4 = icmp ult i32 %3, 8
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %2, %0
-  %4 = icmp ugt i32 %3, 4072
+  %3 = or i32 %0, %2
+  %4 = icmp samesign ugt i32 %3, 4072
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; simdjson/optimized/simdjson.cpp.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp eq i32 %3, 1819047278
   ret i1 %4
 }
@@ -880,7 +947,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp slt i32 %3, 128
   ret i1 %4
 }
@@ -889,11 +956,11 @@ entry:
 ; icu/optimized/utf_impl.ll
 ; wireshark/optimized/packet-ansi_a.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
-  %4 = icmp ugt i32 %3, 1
+  %3 = or disjoint i32 %0, %2
+  %4 = icmp samesign ugt i32 %3, 1
   ret i1 %4
 }
 

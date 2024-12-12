@@ -1,5 +1,5 @@
 
-; 136 occurrences:
+; 135 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/api_vector.cc.ll
 ; arrow/optimized/data.cc.ll
@@ -79,7 +79,6 @@
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegionInfo.cpp.ll
 ; llvm/optimized/RegionPass.cpp.ll
 ; llvm/optimized/RegionPrinter.cpp.ll
@@ -141,7 +140,7 @@ define i1 @func0000000000000000(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %1, %2
   %4 = trunc i8 %3 to i1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

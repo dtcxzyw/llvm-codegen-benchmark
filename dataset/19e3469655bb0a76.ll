@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/craftdef.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp eq i32 %3, -1
@@ -17,7 +17,7 @@ entry:
 ; quantlib/optimized/poland.ll
 ; quantlib/optimized/switzerland.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000988(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000002308(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add i32 %3, -27
@@ -31,7 +31,7 @@ entry:
 ; quantlib/optimized/china.ll
 ; quantlib/optimized/israel.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000888(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000002108(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add i32 %3, -15

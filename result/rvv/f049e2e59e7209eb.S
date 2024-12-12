@@ -11,6 +11,10 @@ func0000000000000005:                   # @func0000000000000005
 	vmfle.vv	v24, v8, v16
 	vmnot.m	v0, v24
 	ret
+func000000000000000a:                   # @func000000000000000a
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfle.vv	v0, v8, v16
+	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vv	v0, v8, v16
@@ -19,10 +23,6 @@ func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vv	v24, v16, v8
 	vmnot.m	v0, v24
-	ret
-func000000000000000a:                   # @func000000000000000a
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfle.vv	v0, v8, v16
 	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 16, e64, m8, ta, ma

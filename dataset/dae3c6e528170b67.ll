@@ -1,8 +1,10 @@
 
-; 220 occurrences:
+; 219 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
+; boost/optimized/graphml.ll
+; boost/optimized/src.ll
 ; clamav/optimized/arcread.cpp.ll
 ; cmake/optimized/conncache.c.ll
 ; cmake/optimized/easy.c.ll
@@ -38,10 +40,8 @@
 ; linux/optimized/intel.ll
 ; linux/optimized/intel_gt_irq.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/intel_runtime_pm.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip_output.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/lzo1x_compress.ll
@@ -88,7 +88,6 @@
 ; llvm/optimized/PrecompiledPreamble.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVTargetStreamer.cpp.ll
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
@@ -108,7 +107,6 @@
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
-; meshlab/optimized/load_project.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
@@ -208,6 +206,7 @@
 ; spike/optimized/vsrl_vi.ll
 ; sqlite/optimized/sqlite3.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; velox/optimized/FromUtf8.cpp.ll
 ; verilator/optimized/V3LinkParse.cpp.ll
 ; verilator/optimized/V3ParseGrammar.cpp.ll

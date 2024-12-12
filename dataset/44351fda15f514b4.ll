@@ -5,7 +5,7 @@
 ; openmpi/optimized/pml_ob1_rdma.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nuw nsw i32 %1, 1
@@ -18,7 +18,7 @@ entry:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = add nsw i32 %1, -1
@@ -31,7 +31,7 @@ entry:
 ; abc/optimized/bmcMaj.c.ll
 ; openspiel/optimized/twixtboard.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %1, -1
@@ -68,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/proc_clean.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %1, 1
@@ -129,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/twixtboard.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = add nsw i32 %1, -1
@@ -142,7 +142,7 @@ entry:
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
 ; linux/optimized/buffered-io.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nuw i32 %1, 1
@@ -154,7 +154,7 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/ImfHuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f6(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001e6(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nuw nsw i32 %1, 8
@@ -166,7 +166,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_string.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a1(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nsw i32 %1, -1

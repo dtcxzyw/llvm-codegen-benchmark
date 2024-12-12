@@ -4,7 +4,7 @@
 	.long	32                              # 0x20
 .LCPI0_2:
 	.long	4294967294                      # 0xfffffffe
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000003e1:                   # @func00000000000003e1
 	vpabsd	%ymm1, %ymm1
 	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1   # ymm1 = [32,32,32,32,32,32,32,32]

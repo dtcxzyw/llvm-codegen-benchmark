@@ -20,7 +20,7 @@ define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 10
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -36,7 +36,7 @@ define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 2
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -49,7 +49,7 @@ define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 4
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -78,7 +78,7 @@ define i32 @func0000000000000031(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -93,7 +93,7 @@ define i32 @func0000000000000030(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 2
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -106,19 +106,29 @@ define i32 @func0000000000000010(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 2
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 2 occurrences:
-; eastl/optimized/TestBitset.cpp.ll
+; 1 occurrences:
 ; linux/optimized/forcedeth.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, -94
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; eastl/optimized/TestBitset.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000061(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i8 %1, 1
+  %3 = zext i1 %2 to i32
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

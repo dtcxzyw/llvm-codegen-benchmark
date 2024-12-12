@@ -14,11 +14,10 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
-; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000029(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000049(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -9
   %3 = icmp ult i32 %2, -2

@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/time_zone_fixed.cc.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -23,6 +23,7 @@
 ; postgres/optimized/strftime.ll
 ; slurm/optimized/assoc_mgr.ll
 ; wireshark/optimized/packet-h264.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:

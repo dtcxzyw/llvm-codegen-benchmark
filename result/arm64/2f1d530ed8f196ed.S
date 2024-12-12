@@ -1,59 +1,26 @@
-func000000000000014c:                   // @func000000000000014c
+func000000000000048c:                   // @func000000000000048c
 // %bb.0:                               // %entry
-	zip2	v3.8b, v0.8b, v0.8b
-	zip1	v0.8b, v0.8b, v0.8b
+	tst	w0, #0x1
 	mov	w8, #-11904                     // =0xffffd180
-	dup	v4.4s, w8
-	mov	w8, #30288                      // =0x7650
-	ushll	v3.4s, v3.4h, #0
-	ushll	v0.4s, v0.4h, #0
-	shl	v3.4s, v3.4s, #31
-	shl	v0.4s, v0.4s, #31
-	cmlt	v3.4s, v3.4s, #0
-	cmlt	v0.4s, v0.4s, #0
-	and	v2.16b, v2.16b, v3.16b
-	and	v1.16b, v1.16b, v0.16b
-	orn	v2.16b, v2.16b, v3.16b
-	orn	v0.16b, v1.16b, v0.16b
-	dup	v1.4s, w8
-	mov	w8, #12351                      // =0x303f
-	dup	v5.4s, w8
-	add	v3.4s, v2.4s, v4.4s
-	add	v4.4s, v0.4s, v4.4s
-	cmeq	v2.4s, v2.4s, v5.4s
-	cmeq	v0.4s, v0.4s, v5.4s
-	cmhi	v3.4s, v1.4s, v3.4s
-	cmhi	v1.4s, v1.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v2.8h
-	uzp1	v1.8h, v1.8h, v3.8h
-	bic	v0.16b, v1.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	mov	w10, #12351                     // =0x303f
+	csinv	w9, w1, wzr, ne
+	add	w8, w9, w8
+	cmp	w9, w10
+	mov	w9, #1893                       // =0x765
+	lsr	w8, w8, #4
+	ccmp	w8, w9, #2, ne
+	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000004c:                   // @func000000000000004c
+func000000000000008c:                   // @func000000000000008c
 // %bb.0:                               // %entry
-	zip2	v3.8b, v0.8b, v0.8b
-	zip1	v0.8b, v0.8b, v0.8b
-	mov	w8, #-67108353                  // =0xfc0001ff
-	mvni	v4.4s, #4, lsl #24
-	ushll	v3.4s, v3.4h, #0
-	ushll	v0.4s, v0.4h, #0
-	shl	v3.4s, v3.4s, #31
-	shl	v0.4s, v0.4s, #31
-	cmlt	v3.4s, v3.4s, #0
-	cmlt	v0.4s, v0.4s, #0
-	and	v2.16b, v2.16b, v3.16b
-	and	v0.16b, v1.16b, v0.16b
-	dup	v1.4s, w8
-	add	v3.4s, v2.4s, v4.4s
-	add	v4.4s, v0.4s, v4.4s
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	cmhi	v3.4s, v1.4s, v3.4s
-	cmhi	v1.4s, v1.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v2.8h
-	uzp1	v1.8h, v1.8h, v3.8h
-	bic	v0.16b, v1.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	tst	w0, #0x1
+	mov	w8, #-67108865                  // =0xfbffffff
+	csel	w9, w1, wzr, ne
+	cmp	w9, #0
+	add	w8, w9, w8
+	mov	w9, #-67108353                  // =0xfc0001ff
+	ccmp	w8, w9, #2, ne
+	cset	w0, lo
 	ret
                                         // -- End function

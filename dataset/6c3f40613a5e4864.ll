@@ -1,14 +1,22 @@
 
-%"struct.rocksdb::FdWithKeyRange.2499118" = type { %"struct.rocksdb::FileDescriptor.2499119", ptr, %"class.rocksdb::Slice.2499098", %"class.rocksdb::Slice.2499098" }
-%"struct.rocksdb::FileDescriptor.2499119" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2499098" = type { ptr, i64 }
-%"struct.rocksdb::(anonymous namespace)::Fsize.2500336" = type { i64, ptr }
+%"struct.rocksdb::FdWithKeyRange.2614359" = type { %"struct.rocksdb::FileDescriptor.2614360", ptr, %"class.rocksdb::Slice.2614339", %"class.rocksdb::Slice.2614339" }
+%"struct.rocksdb::FileDescriptor.2614360" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2614339" = type { ptr, i64 }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
 
-; 57 occurrences:
+; 65 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
 ; abseil-cpp/optimized/reflection.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
 ; cmake/optimized/cmArgumentParser.cxx.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; cmake/optimized/cmList.cxx.ll
@@ -63,11 +71,11 @@
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; verilator/optimized/V3TraceDecl.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a6(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000001e6(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw %"struct.rocksdb::FdWithKeyRange.2499118", ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 80
+  %4 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2614359", ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 80
   %6 = icmp slt i32 %1, 0
   %7 = select i1 %6, ptr %5, ptr %0
   ret ptr %7
@@ -78,11 +86,11 @@ entry:
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000001ea(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2500336", ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 16
+  %4 = getelementptr nusw nuw %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   %6 = icmp sgt i32 %1, 0
   %7 = select i1 %6, ptr %5, ptr %0
   ret ptr %7
@@ -92,11 +100,11 @@ entry:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a1(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000001e1(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   %6 = icmp eq i32 %1, 0
   %7 = select i1 %6, ptr %5, ptr %0
   ret ptr %7

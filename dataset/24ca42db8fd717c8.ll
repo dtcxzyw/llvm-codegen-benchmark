@@ -16,11 +16,11 @@
 ; ruby/optimized/weakmap.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000082(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = icmp eq i32 %2, 27
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq i32 %2, 10
   %6 = or i1 %5, %4
   ret i1 %6

@@ -21,14 +21,14 @@ func000000000000006f:                   # @func000000000000006f
 	retq
 func000000000000006c:                   # @func000000000000006c
 	vpsrlq	$44, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$44, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsllq	$24, %ymm0, %ymm0
 	retq
 func0000000000000048:                   # @func0000000000000048
 	vpsrlq	$32, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsllq	$32, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1

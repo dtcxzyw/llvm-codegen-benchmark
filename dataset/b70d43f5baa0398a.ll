@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 60 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/regexec.c.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
@@ -25,7 +25,6 @@
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/NonNullParamChecker.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMakeCompressible.cpp.ll
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
@@ -66,7 +65,7 @@ define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -171,7 +170,7 @@ define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ugt i64 %3, 269
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

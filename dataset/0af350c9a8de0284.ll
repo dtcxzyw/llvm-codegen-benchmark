@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/cpu_entry_area.ll
 ; linux/optimized/ip6_tables.ll
@@ -15,14 +16,15 @@ entry:
   ret i32 %1
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/do_mounts.ll
 ; linux/optimized/lib.ll
 ; slurm/optimized/mpi_cray_shasta_la-apinfo.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i32 %0) #0 {
 entry:
-  %1 = mul i32 %0, 36
+  %1 = mul i32 %0, 42949673
   ret i32 %1
 }
 

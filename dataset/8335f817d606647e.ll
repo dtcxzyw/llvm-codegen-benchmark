@@ -1,5 +1,5 @@
 
-; 889 occurrences:
+; 883 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcSymm.c.ll
@@ -67,6 +67,7 @@
 ; assimp/optimized/RemoveRedundantMaterials.cpp.ll
 ; assimp/optimized/SplitByBoneCountProcess.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/topology.ll
 ; c3c/optimized/asm_target.c.ll
 ; c3c/optimized/sema_asm.c.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
@@ -79,7 +80,6 @@
 ; csmith/optimized/Filter.cpp.ll
 ; cvc5/optimized/env.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
-; cvc5/optimized/equality_engine_iterator.cpp.ll
 ; cvc5/optimized/logic_info.cpp.ll
 ; cvc5/optimized/theory_datatypes.cpp.ll
 ; draco/optimized/corner_table.cc.ll
@@ -120,7 +120,6 @@
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/multibit_build.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -425,7 +424,6 @@
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMoveMerger.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
@@ -676,13 +674,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -878,7 +873,6 @@
 ; yosys/optimized/opt_mem_feedback.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/share.ll
-; yosys/optimized/verilog_backend.ll
 ; z3/optimized/bit_matrix.cpp.ll
 ; z3/optimized/euf_ac_plugin.cpp.ll
 ; z3/optimized/mam.cpp.ll
@@ -898,7 +892,7 @@ entry:
   ret i64 %3
 }
 
-; 275 occurrences:
+; 276 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff-common.cc.ll
@@ -994,7 +988,6 @@ entry:
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMoveMerger.cpp.ll
 ; llvm/optimized/RISCVPushPopOptimizer.cpp.ll
@@ -1174,6 +1167,8 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0) #0 {
 entry:

@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addq	%rdx, %rsi
 	imulq	%rdi, %rsi
 	testq	%rsi, %rsi
@@ -10,14 +10,14 @@ func0000000000000008:                   # @func0000000000000008
 	shrq	$59, %rsi
 	setne	%al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	addq	%rdx, %rsi
 	imulq	%rdi, %rsi
 	movabsq	$384307168202282325, %rax       # imm = 0x555555555555555
 	cmpq	%rax, %rsi
 	seta	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	addq	%rdx, %rsi
 	imulq	%rdi, %rsi
 	shrq	$61, %rsi
@@ -35,12 +35,12 @@ func000000000000000c:                   # @func000000000000000c
 	testq	%rsi, %rsi
 	setne	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	leaq	(%rsi,%rdx), %rax
 	imulq	%rdi, %rax
 	shrq	$63, %rax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	addq	%rdx, %rsi
 	imulq	%rdi, %rsi
 	cmpq	$134217729, %rsi                # imm = 0x8000001
@@ -52,19 +52,19 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$1000, %rsi                     # imm = 0x3E8
 	setb	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	addq	%rdx, %rsi
 	imulq	%rdi, %rsi
 	cmpq	$9, %rsi
 	setae	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	addq	%rdx, %rsi
 	imulq	%rdi, %rsi
 	cmpq	$21, %rsi
 	setb	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	addq	%rdx, %rsi
 	sete	%cl
 	testq	%rdi, %rdi

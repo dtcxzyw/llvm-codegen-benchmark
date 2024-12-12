@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; linux/optimized/cgroup-v1.ll
 ; linux/optimized/cgroup.ll
@@ -8,6 +8,7 @@
 ; linux/optimized/xt_addrtype.ll
 ; linux/optimized/xt_conntrack.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/CSceneManager.cpp.ll
 ; openssl/optimized/asn1_time_test-bin-ctype.ll
 ; openssl/optimized/ca_internals_test-bin-ctype.ll
@@ -20,12 +21,12 @@
 define i1 @func000000000000000c(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
 
-; 107 occurrences:
+; 103 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/unarj.c.ll
@@ -43,7 +44,6 @@ entry:
 ; hyperscan/optimized/noodle_engine.c.ll
 ; icu/optimized/ucase.ll
 ; icu/optimized/ucnv2022.ll
-; libquic/optimized/custom_extensions.c.ll
 ; libwebp/optimized/cost_enc.c.ll
 ; libwebp/optimized/lossless_enc_sse2.c.ll
 ; lief/optimized/ResourceAccelerator.cpp.ll
@@ -56,10 +56,8 @@ entry:
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/evevent.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/hub.ll
-; linux/optimized/hwxface.ll
 ; linux/optimized/i915_gem_domain.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/icl_dsi.ll
@@ -69,7 +67,6 @@ entry:
 ; linux/optimized/irq.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/libata-transport.ll
 ; linux/optimized/link.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/mprotect.ll
@@ -93,6 +90,7 @@ entry:
 ; llvm/optimized/TypeDumpVisitor.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
@@ -100,7 +98,6 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openspiel/optimized/Init.cpp.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
-; openvdb/optimized/Half.cc.ll
 ; php/optimized/url.ll
 ; postgres/optimized/blkreftable.ll
 ; postgres/optimized/blkreftable_shlib.ll
@@ -137,7 +134,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -158,10 +155,10 @@ entry:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-vrt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -171,44 +168,11 @@ entry:
 ; linux/optimized/metrics.ll
 ; slurm/optimized/node_features_knl_generic.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; openexr/optimized/IexMathFpu.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
-entry:
-  %2 = zext nneg i16 %1 to i32
-  %3 = and i32 %2, %0
-  %4 = icmp ult i32 %3, 32
-  ret i1 %4
-}
-
-; 1 occurrences:
-; openexr/optimized/IexMathFpu.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
-entry:
-  %2 = zext nneg i16 %1 to i32
-  %3 = and i32 %2, %0
-  %4 = icmp ugt i32 %3, 31
-  ret i1 %4
-}
-
-; 1 occurrences:
-; cpython/optimized/unicodeobject.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i32
-  %3 = and i32 %2, %0
-  %4 = icmp ult i32 %3, 2048
   ret i1 %4
 }
 

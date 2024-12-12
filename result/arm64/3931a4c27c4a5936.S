@@ -1,15 +1,7 @@
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	sub	w8, w1, w2
 	cmn	w8, w0
-	cset	w0, eq
-	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
-	sub	w8, w1, w2
-	add	w8, w8, w0
-	tst	x8, #0xfffffffc
 	cset	w0, eq
 	ret
                                         // -- End function
@@ -29,7 +21,7 @@ func0000000000000001:                   // @func0000000000000001
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	mov	x9, #-9223372036854775808       // =0x8000000000000000

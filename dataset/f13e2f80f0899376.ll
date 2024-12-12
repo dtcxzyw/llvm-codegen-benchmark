@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0) #0 {
+define i1 @func0000000000000094(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 80
   %2 = and i64 %1, 65534
@@ -15,7 +15,7 @@ entry:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
+define i1 @func0000000000000081(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 96
   %2 = and i64 %1, 536870911

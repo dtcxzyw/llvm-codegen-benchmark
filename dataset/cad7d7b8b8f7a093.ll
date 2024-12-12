@@ -22,7 +22,7 @@
 ; ruby/optimized/transcode.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp eq i64 %2, 0
@@ -158,7 +158,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1095216660480
   %.not = icmp eq i64 %2, 8589934592

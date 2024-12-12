@@ -27,8 +27,8 @@ func0000000000000006:                   # @func0000000000000006
 	shrl	$8, %eax
 	retq
 func000000000000001a:                   # @func000000000000001a
-	leal	-1075(%rdi), %eax
-	shrl	$6, %eax
+	leal	-1(%rdi), %eax
+	shrl	%eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	leal	1(%rdi), %eax

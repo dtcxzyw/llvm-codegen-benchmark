@@ -1,68 +1,22 @@
-func0000000000000098:                   // @func0000000000000098
+func0000000000000128:                   // @func0000000000000128
 // %bb.0:                               // %entry
-	movi	v5.8b, #127
-	shl	v3.4s, v3.4s, #7
-	shl	v2.4s, v2.4s, #7
-	and	v4.8b, v4.8b, v5.8b
-	ushll	v4.8h, v4.8b, #0
-	ushll2	v5.4s, v4.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	orr	v2.16b, v2.16b, v4.16b
-	orr	v3.16b, v3.16b, v5.16b
-	cmhi	v1.4s, v3.4s, v1.4s
-	cmhi	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	bfi	w2, w1, #7, #25
+	cmp	w2, w0
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000094:                   // @func0000000000000094
+func0000000000000124:                   // @func0000000000000124
 // %bb.0:                               // %entry
-	movi	v5.8b, #63
-	shl	v3.4s, v3.4s, #6
-	shl	v2.4s, v2.4s, #6
-	and	v4.8b, v4.8b, v5.8b
-	ushll	v4.8h, v4.8b, #0
-	ushll2	v5.4s, v4.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	orr	v2.16b, v2.16b, v4.16b
-	orr	v3.16b, v3.16b, v5.16b
-	cmhi	v1.4s, v1.4s, v3.4s
-	cmhi	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	bfi	w2, w1, #6, #26
+	cmp	w2, w0
+	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000000f8:                   // @func00000000000000f8
+func00000000000001e4:                   // @func00000000000001e4
 // %bb.0:                               // %entry
-	movi	v5.8b, #63
-	shl	v3.4s, v3.4s, #6
-	shl	v2.4s, v2.4s, #6
-	and	v4.8b, v4.8b, v5.8b
-	ushll	v4.8h, v4.8b, #0
-	ushll2	v5.4s, v4.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	orr	v2.16b, v2.16b, v4.16b
-	orr	v3.16b, v3.16b, v5.16b
-	cmhi	v1.4s, v3.4s, v1.4s
-	cmhi	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
-	ret
-                                        // -- End function
-func00000000000000f4:                   // @func00000000000000f4
-// %bb.0:                               // %entry
-	movi	v5.8b, #63
-	shl	v3.4s, v3.4s, #6
-	shl	v2.4s, v2.4s, #6
-	and	v4.8b, v4.8b, v5.8b
-	ushll	v4.8h, v4.8b, #0
-	ushll2	v5.4s, v4.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	orr	v2.16b, v2.16b, v4.16b
-	orr	v3.16b, v3.16b, v5.16b
-	cmhi	v1.4s, v1.4s, v3.4s
-	cmhi	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	and	w8, w2, #0x3f
+	orr	w8, w8, w1, lsl #6
+	cmp	w8, w0
+	cset	w0, lo
 	ret
                                         // -- End function

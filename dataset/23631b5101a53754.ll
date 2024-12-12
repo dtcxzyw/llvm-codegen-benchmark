@@ -14,6 +14,7 @@
 ; lief/optimized/psa_crypto_mac.c.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_record_rx.ll
 ; openssl/optimized/libssl-lib-quic_record_tx.ll
@@ -26,7 +27,6 @@
 ; openssl/optimized/libssl-shlib-quic_trace.ll
 ; openssl/optimized/quic_record_test-bin-quic_record_test.ll
 ; openusd/optimized/av1_inv_txfm2d.c.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/display_filter_expression_dialog.cpp.ll
 ; wireshark/optimized/packet-ansi_tcap.c.ll
 ; wireshark/optimized/packet-isup.c.ll
@@ -68,8 +68,8 @@ entry:
 
 ; 6 occurrences:
 ; php/optimized/apprentice.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/dot11decrypt.c.ll
-; wireshark/optimized/observer.c.ll
 ; wireshark/optimized/packet-amqp.c.ll
 ; wireshark/optimized/packet-m2m.c.ll
 ; wireshark/optimized/packet-scsi.c.ll

@@ -1,8 +1,7 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/genmbcs.ll
-; postgres/optimized/brin_xlog.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/gist.ll

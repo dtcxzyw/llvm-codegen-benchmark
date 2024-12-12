@@ -1,5 +1,6 @@
 
-; 14 occurrences:
+; 16 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
 ; graphviz/optimized/gvrender_core_pov.c.ll
 ; graphviz/optimized/output.c.ll
 ; graphviz/optimized/poly.c.ll
@@ -14,6 +15,7 @@
 ; wolfssl/optimized/client.c.ll
 ; wolfssl/optimized/server.c.ll
 ; wolfssl/optimized/tls_bench.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:

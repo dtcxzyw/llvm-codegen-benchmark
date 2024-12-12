@@ -15,6 +15,11 @@
 ; assimp/optimized/IFCLoader.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/intersection_box.ll
 ; bullet3/optimized/b3OptimizedBvh.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
@@ -193,16 +198,12 @@
 ; gromacs/optimized/sim_util.cpp.ll
 ; gromacs/optimized/slae2.cpp.ll
 ; gromacs/optimized/slaev2.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
-; gromacs/optimized/slarnv.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
 ; gromacs/optimized/thermochemistry.cpp.ll
 ; gromacs/optimized/tngio.cpp.ll
@@ -238,7 +239,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -536,7 +536,7 @@
 define double @func0000000000000000(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 

@@ -7,11 +7,11 @@
 ; verilator/optimized/V3Number.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -25,19 +25,18 @@ entry:
 ; rocksdb/optimized/dbformat.cc.ll
 ; spike/optimized/ukmar64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/bugs.ll
 ; linux/optimized/intel.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/msr.ll
 ; linux/optimized/tsc_sync.ll
 ; node/optimized/simdutf.ll
 ; rocksdb/optimized/clock_cache.cc.ll
@@ -46,7 +45,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 8
   %4 = or i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -59,11 +58,11 @@ entry:
 ; openssl/optimized/libssl-lib-extensions_clnt.ll
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ec(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = icmp ne i64 %4, %0
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 
@@ -112,22 +111,65 @@ entry:
 ; wasmedge/optimized/vinode.cpp.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 53 occurrences:
+; 35 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; libquic/optimized/crypto_handshake_message.cc.ll
+; libwebp/optimized/webp_dec.c.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openssl/optimized/asynciotest-bin-asynciotest.ll
+; openssl/optimized/clienthellotest-bin-clienthellotest.ll
+; openssl/optimized/libcrypto-lib-asn1_dsa.ll
+; openssl/optimized/libcrypto-shlib-asn1_dsa.ll
+; openssl/optimized/libssl-lib-extensions.ll
+; openssl/optimized/libssl-lib-extensions_srvr.ll
+; openssl/optimized/libssl-lib-ssl_rsa.ll
+; openssl/optimized/libssl-lib-statem_clnt.ll
+; openssl/optimized/libssl-lib-statem_lib.ll
+; openssl/optimized/libssl-lib-statem_srvr.ll
+; openssl/optimized/libssl-lib-t1_trce.ll
+; openssl/optimized/libssl-shlib-extensions.ll
+; openssl/optimized/libssl-shlib-extensions_srvr.ll
+; openssl/optimized/libssl-shlib-ssl_rsa.ll
+; openssl/optimized/libssl-shlib-statem_clnt.ll
+; openssl/optimized/libssl-shlib-statem_lib.ll
+; openssl/optimized/libssl-shlib-statem_srvr.ll
+; openssl/optimized/libssl-shlib-t1_trce.ll
+; openssl/optimized/quic_multistream_test-bin-quictestlib.ll
+; openssl/optimized/quic_newcid_test-bin-quictestlib.ll
+; openssl/optimized/quic_srt_gen_test-bin-quictestlib.ll
+; openssl/optimized/quicapitest-bin-quictestlib.ll
+; openssl/optimized/quicfaultstest-bin-quictestlib.ll
+; openssl/optimized/servername_test-bin-servername_test.ll
+; openssl/optimized/sslapitest-bin-sslapitest.ll
+; openssl/optimized/tls13ccstest-bin-tls13ccstest.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
+; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
+; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 8
+  %4 = or disjoint i64 %3, %1
+  %5 = icmp ult i64 %0, %4
+  ret i1 %5
+}
+
+; 27 occurrences:
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff-common.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; libquic/optimized/crypto_handshake_message.cc.ll
-; libwebp/optimized/webp_dec.c.ll
 ; lief/optimized/ssl_tls12_client.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -145,48 +187,21 @@ entry:
 ; openssl/optimized/libcrypto-shlib-asn1_dsa.ll
 ; openssl/optimized/libcrypto-shlib-ct_oct.ll
 ; openssl/optimized/libssl-lib-d1_lib.ll
-; openssl/optimized/libssl-lib-extensions.ll
-; openssl/optimized/libssl-lib-extensions_srvr.ll
-; openssl/optimized/libssl-lib-ssl_rsa.ll
-; openssl/optimized/libssl-lib-statem_clnt.ll
-; openssl/optimized/libssl-lib-statem_lib.ll
-; openssl/optimized/libssl-lib-statem_srvr.ll
-; openssl/optimized/libssl-lib-t1_trce.ll
 ; openssl/optimized/libssl-shlib-d1_lib.ll
-; openssl/optimized/libssl-shlib-extensions.ll
-; openssl/optimized/libssl-shlib-extensions_srvr.ll
-; openssl/optimized/libssl-shlib-ssl_rsa.ll
-; openssl/optimized/libssl-shlib-statem_clnt.ll
-; openssl/optimized/libssl-shlib-statem_lib.ll
-; openssl/optimized/libssl-shlib-statem_srvr.ll
-; openssl/optimized/libssl-shlib-t1_trce.ll
-; openssl/optimized/quic_multistream_test-bin-quictestlib.ll
-; openssl/optimized/quic_newcid_test-bin-quictestlib.ll
-; openssl/optimized/quic_srt_gen_test-bin-quictestlib.ll
-; openssl/optimized/quicapitest-bin-quictestlib.ll
-; openssl/optimized/quicfaultstest-bin-quictestlib.ll
 ; openssl/optimized/servername_test-bin-servername_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
-; openssl/optimized/tls13ccstest-bin-tls13ccstest.ll
 ; postgres/optimized/heapam.ll
-; qemu/optimized/hw_net_cadence_gem.c.ll
 ; redis/optimized/listpack.ll
-; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
-; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
-; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
-; 13 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/H5Cimage.c.ll
-; hdf5/optimized/H5Oefl.c.ll
+; 8 occurrences:
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
 ; mold/optimized/input-sections.cc.I386.cc.ll
@@ -194,15 +209,13 @@ entry:
 ; mold/optimized/input-sections.cc.RV32LE.cc.ll
 ; mold/optimized/input-sections.cc.SH4.cc.ll
 ; node/optimized/libnode.crypto_clienthello.ll
-; openjdk/optimized/hb-face.ll
 ; openssl/optimized/bad_dtls_test-bin-bad_dtls_test.ll
-; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -246,16 +259,17 @@ entry:
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; bdwgc/optimized/cordxtra.c.ll
+; boost/optimized/approximately_equals.ll
 ; hdf5/optimized/H5FDonion_history.c.ll
 ; hdf5/optimized/H5Pdcpl.c.ll
 ; hdf5/optimized/H5Pocpl.c.ll
@@ -264,11 +278,11 @@ entry:
 ; qemu/optimized/optimize.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -289,33 +303,33 @@ entry:
 ; yosys/optimized/memory_libmap.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000025(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp uge i64 %4, %0
+  %5 = icmp ule i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp ule i64 %4, %0
+  %5 = icmp uge i64 %0, %4
   ret i1 %5
 }
 
@@ -325,33 +339,33 @@ entry:
 ; abc/optimized/cuddBddIte.c.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000027(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp sge i64 %4, %0
+  %5 = icmp sle i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp sle i64 %4, %0
+  %5 = icmp sge i64 %0, %4
   ret i1 %5
 }
 
@@ -359,11 +373,11 @@ entry:
 ; qemu/optimized/optimize.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -371,15 +385,15 @@ entry:
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp ne i64 %4, %0
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; linux/optimized/virtio_pci_modern.ll
 ; postgres/optimized/gindatapage.ll
 ; postgres/optimized/rewriteheap.ll
@@ -388,12 +402,30 @@ entry:
 ; tomlplusplus/optimized/toml.cpp.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/0eh1fm3h72yjwo2ipis72ui0f.ll
+; zed-rs/optimized/adlc6qfcwjhvmcaovuwfkwg5s.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
+  ret i1 %5
+}
+
+; 5 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; hdf5/optimized/H5Cimage.c.ll
+; hdf5/optimized/H5Oefl.c.ll
+; openjdk/optimized/hb-face.ll
+; redis/optimized/listpack.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 8
+  %4 = or disjoint i64 %3, %1
+  %5 = icmp samesign ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -401,11 +433,11 @@ entry:
 ; lief/optimized/ssl_tls12_client.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -415,62 +447,61 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/type1.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; z3/optimized/mpn.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000065(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp uge i64 %4, %0
+  %5 = icmp ule i64 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
-; freetype/optimized/sfnt.c.ll
-; freetype/optimized/type1.c.ll
+; 1 occurrences:
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 32
-  %4 = or i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/MachineOperand.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -478,33 +509,33 @@ entry:
 ; postgres/optimized/walsummary.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a9(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp ule i64 %4, %0
+  %5 = icmp uge i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openmpi/optimized/comm_cid.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or i64 %3, %1
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -515,51 +546,63 @@ define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = or i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/generic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ea(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
   %4 = or disjoint i64 %3, %1
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; node/optimized/libnode.crypto_clienthello.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000075(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f5(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = icmp uge i64 %4, %0
+  %5 = icmp samesign ule i64 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; freetype/optimized/sfnt.c.ll
+; freetype/optimized/type1.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 16
+  %4 = or i64 %3, %1
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 30
   %4 = or i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; folly/optimized/AsyncFileWriter.cpp.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
@@ -13,7 +13,6 @@
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ObjectToString.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
 ; folly/optimized/SSLOptions.cpp.ll
@@ -53,12 +52,11 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i1 %0, i64 %1, i8 %2) #0 {
 entry:

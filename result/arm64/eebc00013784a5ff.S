@@ -1,52 +1,30 @@
-func0000000000000048:                   // @func0000000000000048
+func0000000000000088:                   // @func0000000000000088
 // %bb.0:                               // %entry
-	cmtst	v4.4s, v3.4s, v3.4s
-	cmtst	v5.4s, v2.4s, v2.4s
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v3.4s, v3.4s, #0
-	bic	v2.4s, #1
-	bic	v4.4s, #3
-	bic	v3.4s, #1
-	bic	v5.4s, #3
-	orr	v3.16b, v3.16b, v4.16b
-	orr	v2.16b, v2.16b, v5.16b
-	movi	v4.4s, #64
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	cmhi	v1.4s, v1.4s, v4.4s
-	cmhi	v0.4s, v0.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mov	w8, #-4                         // =0xfffffffc
+	cmp	w1, #0
+	mov	w9, #-2                         // =0xfffffffe
+	csel	w8, w9, w8, eq
+	add	w8, w8, w0
+	cmp	w8, #64
+	cset	w0, hi
 	ret
                                         // -- End function
-func000000000000005a:                   // @func000000000000005a
+func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
-	movi	v4.4s, #8
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v3.4s, v3.4s, #0
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	cmgt	v1.4s, v1.4s, #0
-	cmgt	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	cmp	w1, #0
+	cset	w8, eq
+	add	w8, w0, w8, lsl #3
+	cmp	w8, #0
+	cset	w0, gt
 	ret
                                         // -- End function
-func000000000000011a:                   // @func000000000000011a
+func000000000000022a:                   // @func000000000000022a
 // %bb.0:                               // %entry
-	movi	v4.4s, #1, lsl #16
-	cmhi	v2.4s, v4.4s, v2.4s
-	cmhi	v3.4s, v4.4s, v3.4s
-	mvni	v4.4s, #1
-	orr	v3.16b, v3.16b, v4.16b
-	orr	v2.16b, v2.16b, v4.16b
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	cmge	v1.4s, v1.4s, #0
-	cmge	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mov	w8, #-2                         // =0xfffffffe
+	cmp	w1, #16, lsl #12                // =65536
+	cinc	w8, w8, lo
+	add	w8, w8, w0
+	mvn	w8, w8
+	lsr	w0, w8, #31
 	ret
                                         // -- End function

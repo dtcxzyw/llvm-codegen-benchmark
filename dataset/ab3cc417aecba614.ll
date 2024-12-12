@@ -75,9 +75,9 @@ entry:
 }
 
 ; 10 occurrences:
+; boost/optimized/to_chars.ll
 ; brotli/optimized/decode.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; icu/optimized/calendar.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll

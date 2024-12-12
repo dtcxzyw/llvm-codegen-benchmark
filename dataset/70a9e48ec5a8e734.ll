@@ -12,9 +12,8 @@ entry:
   ret i16 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/LLParser.cpp.ll
-; openmpi/optimized/libmpi_c_profile_la-type_match_size.ll
 ; openmpi/optimized/ptype_match_size_f.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000b(i32 %0) #0 {

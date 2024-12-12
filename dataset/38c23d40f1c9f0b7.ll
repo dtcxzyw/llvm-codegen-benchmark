@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; cmake/optimized/archive_write_add_filter_uuencode.c.ll
 ; cpython/optimized/codeobject.ll
 ; linux/optimized/nf_log_syslog.ll
@@ -10,6 +10,8 @@
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-icmp.c.ll
 ; wireshark/optimized/packet-sbc.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0) #0 {
 entry:

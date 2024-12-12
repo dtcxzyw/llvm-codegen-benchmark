@@ -1,9 +1,8 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/giaUnate.c.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/spin.c.ll
 ; cmake/optimized/crc32.c.ll
 ; hdf5/optimized/H5checksum.c.ll

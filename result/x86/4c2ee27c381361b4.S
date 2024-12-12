@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi
@@ -18,7 +18,7 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	negq	%rax
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi
@@ -32,7 +32,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	negq	%rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi

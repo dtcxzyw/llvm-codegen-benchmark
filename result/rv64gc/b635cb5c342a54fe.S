@@ -15,24 +15,21 @@ func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	andi	a2, a2, 1
-	bnez	a2, .LBB1_2
-	lui	a2, 8193
-	slli	a2, a2, 14
-	addi	a2, a2, 1
-	slli	a2, a2, 17
-	addi	a2, a2, 7
+	andi	a3, a2, 1
+	li	a2, 1
+	bnez	a3, .LBB1_2
+	slli	a2, a2, 31
+	addi	a2, a2, 3
+	slli	a2, a2, 12
 	slli	a1, a1, 63
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 .LBB1_2:
-	lui	a2, 8201
-	slli	a2, a2, 16
-	addi	a2, a2, 5
-	slli	a2, a2, 15
-	addi	a2, a2, -961
+	slli	a2, a2, 40
+	addi	a2, a2, 1537
+	slli	a2, a2, 3
 	slli	a1, a1, 63
 	srai	a1, a1, 63
 	and	a1, a1, a2

@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	4294967262                      # 0xffffffde
 .LCPI1_1:
 	.long	32                              # 0x20
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vandps	.LCPI1_0(%rip){1to8}, %ymm1, %ymm2
 	vptestnmd	%ymm0, %ymm0, %k1
 	vorps	.LCPI1_1(%rip){1to8}, %ymm1, %ymm2 {%k1}

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openssl/optimized/openssl-bin-cmp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c6(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000586(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -17,7 +17,7 @@ entry:
 ; meshlab/optimized/shell.cpp.ll
 ; openssl/optimized/openssl-bin-cmp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000426(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -33,7 +33,7 @@ entry:
 ; openjdk/optimized/codeHeapState.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000421(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null

@@ -29,3 +29,9 @@ func0000000000000004:                   # @func0000000000000004
 	addl	$16, %esi
 	subq	%rsi, %rax
 	retq
+func0000000000000026:                   # @func0000000000000026
+	movq	%rdi, %rax
+	addq	$15, %rsi
+	andq	$-16, %rsi
+	subq	%rsi, %rax
+	retq

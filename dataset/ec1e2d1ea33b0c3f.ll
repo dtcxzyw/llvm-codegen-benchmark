@@ -27,14 +27,14 @@ entry:
 ; icu/optimized/uchar.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_vdsc.ll
-; llvm/optimized/CodeGenModule.cpp.ll
 ; luajit/optimized/lj_meta.ll
 ; luajit/optimized/lj_meta_dyn.ll
+; postgres/optimized/refint.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i16 %0) #0 {
 entry:
-  %1 = lshr i16 %0, 13
+  %1 = lshr i16 %0, 3
   %2 = zext nneg i16 %1 to i32
   %3 = add nsw i32 %2, -1
   ret i32 %3

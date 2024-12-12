@@ -45,10 +45,28 @@ func0000000000000044:                   # @func0000000000000044
 	kmovd	%k0, %eax
 	retq
 .LCPI6_0:
+	.quad	0x4066800000000000              # double 180
+func00000000000000a8:                   # @func00000000000000a8
+	vcmplepd	%xmm2, %xmm1, %k0
+	vmovsd	.LCPI6_0(%rip), %xmm1           # xmm1 = [1.8E+2,0.0E+0]
+	vcmpeqpd	%xmm1, %xmm0, %k1
+	korw	%k0, %k1, %k0
+	kmovd	%k0, %eax
+	retq
+.LCPI7_0:
+	.quad	0x7ff0000000000000              # double +Inf
+func0000000000000059:                   # @func0000000000000059
+	vcmpnlepd	%xmm2, %xmm1, %k0
+	vmovsd	.LCPI7_0(%rip), %xmm1           # xmm1 = [+Inf,0.0E+0]
+	vcmpeq_uqpd	%xmm1, %xmm0, %k1
+	korw	%k0, %k1, %k0
+	kmovd	%k0, %eax
+	retq
+.LCPI8_0:
 	.quad	0x41efffffffe00000              # double 4294967295
 func0000000000000024:                   # @func0000000000000024
 	vcmpltpd	%xmm2, %xmm1, %k0
-	vmovsd	.LCPI6_0(%rip), %xmm1           # xmm1 = [4.294967295E+9,0.0E+0]
+	vmovsd	.LCPI8_0(%rip), %xmm1           # xmm1 = [4.294967295E+9,0.0E+0]
 	vcmpltpd	%xmm0, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
@@ -60,11 +78,11 @@ func000000000000003b:                   # @func000000000000003b
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
-.LCPI8_0:
+.LCPI10_0:
 	.quad	0x43e0000000000000              # double 9.2233720368547758E+18
 func000000000000008c:                   # @func000000000000008c
 	vcmpeqpd	%xmm2, %xmm1, %k0
-	vmovsd	.LCPI8_0(%rip), %xmm1           # xmm1 = [9.2233720368547758E+18,0.0E+0]
+	vmovsd	.LCPI10_0(%rip), %xmm1          # xmm1 = [9.2233720368547758E+18,0.0E+0]
 	vcmplepd	%xmm0, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
@@ -83,11 +101,11 @@ func0000000000000038:                   # @func0000000000000038
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
-.LCPI11_0:
+.LCPI13_0:
 	.quad	0x3ff0000000000000              # double 1
 func000000000000003d:                   # @func000000000000003d
 	vcmpnlepd	%xmm1, %xmm2, %k0
-	vmovsd	.LCPI11_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0]
+	vmovsd	.LCPI13_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0]
 	vcmpnltpd	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax

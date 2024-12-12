@@ -10,10 +10,10 @@
 ; postgres/optimized/blkreftable_shlib.ll
 ; postgres/optimized/blkreftable_srv.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i32 %0, i32 8
   ret i32 %5
 }
@@ -32,45 +32,66 @@ entry:
 define i32 @func0000000000000001(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i32 %0, i32 0
   ret i32 %5
 }
 
-; 12 occurrences:
+; 8 occurrences:
+; boost/optimized/options_description.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; hyperscan/optimized/stream.c.ll
-; linux/optimized/addrconf.ll
-; linux/optimized/devinet.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; minetest/optimized/connectionthreads.cpp.ll
-; openjdk/optimized/output.ll
-; qemu/optimized/hw_net_e1000.c.ll
-; z3/optimized/sat_local_search.cpp.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
+  %5 = select i1 %4, i32 %0, i32 0
+  ret i32 %5
+}
+
+; 3 occurrences:
+; cpython/optimized/pystrhex.ll
+; hyperscan/optimized/teddy_engine_description.cpp.ll
+; minetest/optimized/game.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %4, i32 %0, i32 0
   ret i32 %5
 }
 
 ; 5 occurrences:
-; cpython/optimized/pystrhex.ll
-; hyperscan/optimized/teddy_engine_description.cpp.ll
-; minetest/optimized/game.cpp.ll
+; linux/optimized/addrconf.ll
+; linux/optimized/devinet.ll
+; openjdk/optimized/output.ll
+; qemu/optimized/hw_net_e1000.c.ll
+; z3/optimized/sat_local_search.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = icmp samesign ult i64 %1, %3
+  %5 = select i1 %4, i32 %0, i32 0
+  ret i32 %5
+}
+
+; 2 occurrences:
 ; openjdk/optimized/freetypeScaler.ll
 ; postgres/optimized/bufmgr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp ult i64 %3, %1
-  %5 = select i1 %4, i32 %0, i32 0
+  %4 = icmp samesign ugt i64 %1, %3
+  %5 = select i1 %4, i32 %0, i32 1024
   ret i32 %5
 }
 
@@ -83,24 +104,22 @@ entry:
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000034(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp samesign ult i64 %1, %3
   %5 = select i1 %4, i32 %0, i32 1
   ret i32 %5
 }
 
-; 4 occurrences:
-; hyperscan/optimized/program_runtime.c.ll
-; openusd/optimized/quadRefinement.cpp.ll
+; 2 occurrences:
 ; openusd/optimized/tessellation.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %4, i32 %0, i32 0
   ret i32 %5
 }
@@ -111,7 +130,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %.not = icmp eq i64 %3, %1
+  %.not = icmp eq i64 %1, %3
   %4 = select i1 %.not, i32 0, i32 %0
   ret i32 %4
 }
@@ -119,12 +138,24 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/centerofmass.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func000000000000002c(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %.not = icmp eq i64 %3, %1
+  %.not = icmp eq i64 %1, %3
   %4 = select i1 %.not, i32 0, i32 %0
   ret i32 %4
+}
+
+; 2 occurrences:
+; hyperscan/optimized/program_runtime.c.ll
+; openusd/optimized/quadRefinement.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000026(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp slt i64 %1, %3
+  %5 = select i1 %4, i32 %0, i32 0
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -133,7 +164,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = select i1 %4, i32 %0, i32 0
   ret i32 %5
 }
@@ -141,10 +172,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp slt i64 %3, %1
+  %4 = icmp sgt i64 %1, %3
   %5 = select i1 %4, i32 %0, i32 0
   ret i32 %5
 }

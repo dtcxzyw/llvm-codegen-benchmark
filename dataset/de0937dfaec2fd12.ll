@@ -21,15 +21,14 @@ define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = or disjoint i64 %4, 2
   ret i64 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/giaSim.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
 ; git/optimized/sequencer.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
@@ -55,12 +54,12 @@ define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 16
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = or disjoint i64 %4, 549772591104
   ret i64 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; cvc5/optimized/Solver.cc.ll
 ; diesel-rs/optimized/1dr0ikhoh8prk7sr.ll
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
@@ -69,7 +68,6 @@ entry:
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/collationsets.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
-; libwebp/optimized/backward_references_enc.c.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/pasid.ll
 ; luau/optimized/EmitCommonX64.cpp.ll
@@ -78,6 +76,8 @@ entry:
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; wasmedge/optimized/formchecker.cpp.ll
 ; wasmedge/optimized/validator.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i32 %1) #0 {
@@ -124,7 +124,7 @@ define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 49
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = or i64 %4, 18014398509481984
   ret i64 %5
 }
@@ -151,7 +151,7 @@ define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = or disjoint i64 %4, 2
   ret i64 %5
 }
@@ -209,7 +209,7 @@ define i64 @func000000000000001b(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 %2, 48
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = or disjoint i64 %4, 1
   ret i64 %5
 }
@@ -234,7 +234,7 @@ define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 29
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = or i64 %4, 9221120237041090560
   ret i64 %5
 }

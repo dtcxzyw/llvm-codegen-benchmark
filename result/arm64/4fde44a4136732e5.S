@@ -1,4 +1,4 @@
-func0000000000000042:                   // @func0000000000000042
+func0000000000000043:                   // @func0000000000000043
 // %bb.0:                               // %entry
 	add	x8, x0, x1
                                         // kill: def $w2 killed $w2 def $x2
@@ -6,7 +6,7 @@ func0000000000000042:                   // @func0000000000000042
 	add	x0, x8, #1
 	ret
                                         // -- End function
-func000000000000002a:                   // @func000000000000002a
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	add	x8, x0, x1
                                         // kill: def $w2 killed $w2 def $x2
@@ -14,7 +14,31 @@ func000000000000002a:                   // @func000000000000002a
 	add	x0, x8, #1
 	ret
                                         // -- End function
-func000000000000006a:                   // @func000000000000006a
+func000000000000002f:                   // @func000000000000002f
+// %bb.0:                               // %entry
+	add	x8, x0, x1
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x8, w2, uxtb
+	add	x0, x8, #11
+	ret
+                                        // -- End function
+func000000000000003e:                   // @func000000000000003e
+// %bb.0:                               // %entry
+	add	x8, x0, x1
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x8, w2, uxtb
+	sub	x0, x8, #1
+	ret
+                                        // -- End function
+func0000000000000030:                   // @func0000000000000030
+// %bb.0:                               // %entry
+	add	x8, x0, x1
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x8, w2, uxtb
+	sub	x0, x8, #1
+	ret
+                                        // -- End function
+func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
 	mov	w8, #10                         // =0xa
                                         // kill: def $w2 killed $w2 def $x2
@@ -32,7 +56,7 @@ func0000000000000000:                   // @func0000000000000000
 	add	x0, x8, #1
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	add	x8, x0, x1
                                         // kill: def $w2 killed $w2 def $x2
@@ -48,7 +72,7 @@ func0000000000000040:                   // @func0000000000000040
 	add	x0, x8, #20
 	ret
                                         // -- End function
-func000000000000004a:                   // @func000000000000004a
+func000000000000004f:                   // @func000000000000004f
 // %bb.0:                               // %entry
 	add	x8, x0, x1
                                         // kill: def $w2 killed $w2 def $x2

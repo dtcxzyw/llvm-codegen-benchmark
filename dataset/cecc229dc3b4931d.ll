@@ -12,10 +12,10 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000003c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   %5 = urem i16 %4, 31
   %6 = icmp eq i16 %5, 0

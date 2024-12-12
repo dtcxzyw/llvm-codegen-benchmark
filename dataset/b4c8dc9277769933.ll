@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; cmake/optimized/cmCTest.cxx.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; icu/optimized/vtzone.ll
@@ -12,13 +12,12 @@
 ; opencv/optimized/selectivesearchsegmentation_demo.cpp.ll
 ; openspiel/optimized/Moves.cpp.ll
 ; openspiel/optimized/tarok.cc.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; stockfish/optimized/search.ll
+; wireshark/optimized/packet-stun.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
-  %3 = add nsw i32 %0, 86400
+  %3 = add nsw i32 %0, -2
   %4 = select i1 %1, i1 %2, i1 false
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5

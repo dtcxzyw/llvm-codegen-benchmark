@@ -50,19 +50,19 @@ func0000000000000005:                   # @func0000000000000005
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	ret
+func0000000000000001:                   # @func0000000000000001
+	add	a0, a0, a1
+	subw	a0, a0, a2
+	ret
+func0000000000000025:                   # @func0000000000000025
+	add	a0, a0, a1
+	subw	a0, a0, a2
+	ret
 func0000000000000031:                   # @func0000000000000031
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	ret
 func000000000000003c:                   # @func000000000000003c
-	add	a0, a0, a1
-	subw	a0, a0, a2
-	ret
-func000000000000003d:                   # @func000000000000003d
-	add	a0, a0, a1
-	subw	a0, a0, a2
-	ret
-func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	ret

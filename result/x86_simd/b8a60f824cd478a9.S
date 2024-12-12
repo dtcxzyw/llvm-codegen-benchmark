@@ -22,8 +22,8 @@ func000000000000002a:                   # @func000000000000002a
 	.quad	10                              # 0xa
 func0000000000000020:                   # @func0000000000000020
 	vpaddq	%ymm1, %ymm1, %ymm2
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$3, %ymm0, %ymm0
 	retq

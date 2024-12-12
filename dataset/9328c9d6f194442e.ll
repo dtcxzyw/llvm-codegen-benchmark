@@ -1,7 +1,9 @@
 
-; 89 occurrences:
+; 91 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/ipqp.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -93,7 +95,7 @@
 define double @func0000000000000000(double %0) #0 {
 entry:
   %1 = fmul double %0, %0
-  %2 = fmul double %1, %0
+  %2 = fmul double %0, %1
   ret double %2
 }
 

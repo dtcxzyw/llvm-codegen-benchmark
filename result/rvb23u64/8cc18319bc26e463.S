@@ -5,19 +5,19 @@ func0000000000000004:                   # @func0000000000000004
 	sub	a2, a2, a0
 	sltu	a0, a2, a1
 	ret
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001a8:                   # @func00000000000001a8
 	addi	a1, a1, 32
 	li	a2, 32
 	sub	a2, a2, a0
 	sltu	a0, a1, a2
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	addi	a1, a1, 2
 	li	a2, 6
 	sub	a2, a2, a0
 	sltu	a0, a1, a2
 	ret
-func00000000000000b4:                   # @func00000000000000b4
+func0000000000000164:                   # @func0000000000000164
 	addi	a1, a1, 6
 	lui	a2, 4096
 	addiw	a2, a2, -1

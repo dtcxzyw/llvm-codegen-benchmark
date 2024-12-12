@@ -1,5 +1,5 @@
 
-; 567 occurrences:
+; 571 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; assimp/optimized/BlenderModifier.cpp.ll
@@ -12,7 +12,6 @@
 ; c3c/optimized/compiler.c.ll
 ; c3c/optimized/context.c.ll
 ; c3c/optimized/copying.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/file_utils.c.ll
 ; c3c/optimized/libraries.c.ll
 ; c3c/optimized/linker.c.ll
@@ -56,6 +55,8 @@
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
+; lvgl/optimized/lv_svg_parser.ll
+; lvgl/optimized/lv_tree.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/io_ctm.cpp.ll
@@ -67,7 +68,6 @@
 ; mitsuba3/optimized/linearcurve.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/serialized.cpp.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
@@ -114,6 +114,11 @@
 ; postgres/optimized/ginscan.ll
 ; postgres/optimized/worker.ll
 ; raylib/optimized/rmodels.c.ll
+; rocksdb/optimized/lock_request.cc.ll
+; rocksdb/optimized/locktree.cc.ll
+; rocksdb/optimized/manager.cc.ll
+; rocksdb/optimized/txnid_set.cc.ll
+; rocksdb/optimized/wfg.cc.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/pm_constant_pool.ll
 ; slurm/optimized/gang.ll
@@ -188,7 +193,6 @@
 ; z3/optimized/bvarray2uf_tactic.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/cofactor_term_ite_tactic.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
@@ -576,7 +580,7 @@ entry:
   ret i64 %3
 }
 
-; 633 occurrences:
+; 619 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -615,7 +619,6 @@ entry:
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcLatch.c.ll
 ; abc/optimized/abcLib.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/abcMap.c.ll
@@ -632,7 +635,6 @@ entry:
 ; abc/optimized/abcObj.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
-; abc/optimized/abcOrder.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/abcQbf.c.ll
@@ -735,7 +737,6 @@ entry:
 ; abc/optimized/bbrReach.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/bdcSpfd.c.ll
-; abc/optimized/bdcTable.c.ll
 ; abc/optimized/bmcBCore.c.ll
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/bmcBmc3.c.ll
@@ -758,7 +759,6 @@ entry:
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -801,7 +801,6 @@ entry:
 ; abc/optimized/covBuild.c.ll
 ; abc/optimized/covCore.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/csat_apis.c.ll
 ; abc/optimized/cutNode.c.ll
 ; abc/optimized/cutOracle.c.ll
 ; abc/optimized/darBalance.c.ll
@@ -947,7 +946,6 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/hopBalance.c.ll
 ; abc/optimized/hopDfs.c.ll
-; abc/optimized/hopMan.c.ll
 ; abc/optimized/hopObj.c.ll
 ; abc/optimized/hopUtil.c.ll
 ; abc/optimized/ifCache.c.ll
@@ -960,7 +958,6 @@ entry:
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ifReduce.c.ll
 ; abc/optimized/ifSelect.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTest.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/ifTune.c.ll
@@ -968,7 +965,6 @@ entry:
 ; abc/optimized/intCheck.c.ll
 ; abc/optimized/intContain.c.ll
 ; abc/optimized/intCore.c.ll
-; abc/optimized/intM114.c.ll
 ; abc/optimized/ioJson.c.ll
 ; abc/optimized/ioReadAiger.c.ll
 ; abc/optimized/ioReadBaf.c.ll
@@ -1025,11 +1021,9 @@ entry:
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/lpkSets.c.ll
 ; abc/optimized/ltl_parser.c.ll
-; abc/optimized/mapperVec.c.ll
 ; abc/optimized/mfsDiv.c.ll
 ; abc/optimized/mfsInter.c.ll
 ; abc/optimized/mfsResub.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/mioSop.c.ll
 ; abc/optimized/mioUtils.c.ll
@@ -1042,7 +1036,6 @@ entry:
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/mpmTruth.c.ll
 ; abc/optimized/msatVec.c.ll
-; abc/optimized/nmApi.c.ll
 ; abc/optimized/nwkAig.c.ll
 ; abc/optimized/nwkDfs.c.ll
 ; abc/optimized/nwkFanio.c.ll
@@ -1080,8 +1073,6 @@ entry:
 ; abc/optimized/rwrExp.c.ll
 ; abc/optimized/rwrLib.c.ll
 ; abc/optimized/rwtDec.c.ll
-; abc/optimized/rwtUtil.c.ll
-; abc/optimized/saigCone.c.ll
 ; abc/optimized/saigConstr.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigDup.c.ll
@@ -1106,7 +1097,6 @@ entry:
 ; abc/optimized/satSolver2i.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/sbd.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sbdCut2.c.ll
@@ -1140,7 +1130,6 @@ entry:
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/sscSat.c.ll
 ; abc/optimized/sscSim.c.ll
-; abc/optimized/sscUtil.c.ll
 ; abc/optimized/sswClass.c.ll
 ; abc/optimized/sswCnf.c.ll
 ; abc/optimized/sswConstr.c.ll
@@ -1202,6 +1191,7 @@ entry:
 ; openjdk/optimized/LCMS.ll
 ; openjdk/optimized/debugInfoRec.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
+; openmpi/optimized/ad_read_coll.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; pbrt-v4/optimized/image.cpp.ll
@@ -1219,7 +1209,7 @@ entry:
   ret i64 %3
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcStrash.c.ll
 ; abc/optimized/bacBlast.c.ll
@@ -1234,6 +1224,7 @@ entry:
 ; abc/optimized/giaResub2.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/sswAig.c.ll
+; abc/optimized/utilNam.c.ll
 ; bullet3/optimized/b3DynamicBvh.ll
 ; bullet3/optimized/btDbvt.ll
 ; bullet3/optimized/btLemkeAlgorithm.ll

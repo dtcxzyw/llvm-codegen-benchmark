@@ -1,5 +1,7 @@
 
-; 181 occurrences:
+; 184 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; cmake/optimized/ftp.c.ll
 ; cmake/optimized/http1.c.ll
 ; cmake/optimized/mprintf.c.ll
@@ -30,6 +32,7 @@
 ; linux/optimized/static_call_inline.ll
 ; linux/optimized/update.ll
 ; llvm/optimized/MachineOperand.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; node/optimized/libnode.crypto_common.ll
 ; node/optimized/libnode.node_builtins.ll
@@ -185,12 +188,14 @@
 define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp eq i64 %2, %3
+  %3 = sub i64 0, %2
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 22 occurrences:
+; 30 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -209,15 +214,21 @@ entry:
 ; luajit/optimized/lj_mcode_dyn.ll
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; redis/optimized/lzf_c.ll
-; redis/optimized/resp_parser.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
 ; wireshark/optimized/editcap.c.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7od02cvs02zg2t1jcuk4h4evv.ll
+; zed-rs/optimized/8wvy5aljfw2qmbxbtkkewwal7.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ult i64 %3, 2
   ret i1 %4
 }
@@ -312,12 +323,12 @@ entry:
 define i1 @func000000000000000c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp ne i64 %2, %3
+  %3 = sub i64 0, %2
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; clamav/optimized/htmlnorm.c.ll
 ; cmake/optimized/http1.c.ll
 ; cpython/optimized/io.ll
@@ -327,11 +338,12 @@ entry:
 ; llvm/optimized/InterpStack.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; php/optimized/pcre2_jit_compile.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, 8191
   ret i1 %4
 }
@@ -344,13 +356,12 @@ entry:
 define i1 @func0000000000000006(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp slt i64 %3, 1
   ret i1 %4
 }
 
-; 24 occurrences:
-; linux/optimized/csum-wrappers_64.ll
+; 21 occurrences:
 ; linux/optimized/devio.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/eventpoll.ll
@@ -363,8 +374,6 @@ entry:
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/read_write.ll
-; linux/optimized/readdir.ll
-; linux/optimized/rseq.ll
 ; linux/optimized/scm.ll
 ; linux/optimized/select.ll
 ; linux/optimized/seq_clientmgr.ll
@@ -378,8 +387,21 @@ entry:
 define i1 @func000000000000000a(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp sgt i64 %3, 100
+  ret i1 %4
+}
+
+; 3 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = sub i64 0, %2
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 

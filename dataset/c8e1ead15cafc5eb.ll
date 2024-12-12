@@ -1,5 +1,6 @@
 
-; 176 occurrences:
+; 174 occurrences:
+; boost/optimized/format_args.ll
 ; c3c/optimized/sema_expr.c.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -70,7 +71,6 @@
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/ialloc.ll
-; linux/optimized/jiffies.ll
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/vt.ll
@@ -85,7 +85,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TypeMetadataUtils.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
@@ -123,8 +122,6 @@
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; spike/optimized/clz16.ll
-; spike/optimized/clz8.ll
 ; spike/optimized/f32_div.ll
 ; spike/optimized/kmmawb2.ll
 ; spike/optimized/kmmawb2_u.ll
@@ -170,6 +167,7 @@
 ; spike/optimized/ursub8.ll
 ; stockfish/optimized/tbprobe.ll
 ; tinympc/optimized/tiny_api.cpp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll

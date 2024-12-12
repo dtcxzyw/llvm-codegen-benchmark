@@ -1,10 +1,28 @@
 
-; 228 occurrences:
+; 246 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; actix-rs/optimized/3afp9uuicyvwgbsz.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/area.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/expand.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/process.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/write_dsv.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; clap-rs/optimized/5651dp9k16h53y8x.ll
@@ -35,6 +53,7 @@
 ; entt/optimized/storage.cpp.ll
 ; entt/optimized/version.cpp.ll
 ; freetype/optimized/ftbase.c.ll
+; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/energyoutput.cpp.ll
 ; gromacs/optimized/ga2la.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
@@ -65,7 +84,6 @@
 ; llvm/optimized/AMDGPU.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
-; llvm/optimized/CommandFlags.cpp.ll
 ; llvm/optimized/DAGISelMatcherGen.cpp.ll
 ; llvm/optimized/DIE.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
@@ -74,7 +92,6 @@
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/ParsePragma.cpp.ll
@@ -163,10 +180,7 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/local-store.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/profiles.ll
 ; nix/optimized/remote-store.ll
@@ -228,6 +242,10 @@
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; z3/optimized/subpaving_hwf.cpp.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

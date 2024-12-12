@@ -8,7 +8,7 @@
 	.long	233                             # 0xe9
 .LCPI0_4:
 	.long	3                               # 0x3
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm1
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_2(%rip), %ymm1 {%k1} {z} # ymm1 {%k1} {z} = [4,4,4,4,4,4,4,4]

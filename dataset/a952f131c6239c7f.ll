@@ -1,9 +1,10 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; arrow/optimized/scalar_cast_nested.cc.ll
 ; ceres/optimized/cuda_block_structure.cc.ll
 ; cmake/optimized/divsufsort.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
+; glslang/optimized/Scan.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/symtab.cpp.ll
 ; icu/optimized/ustdio.ll
@@ -11,7 +12,7 @@
 ; rocksdb/optimized/file_indexer.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -24,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 5
@@ -37,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/pipeline.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -64,7 +65,7 @@ entry:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; pocketpy/optimized/expr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
@@ -77,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/updategroups.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = lshr exact i64 %3, 2
@@ -105,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/ftbitmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = lshr i64 %3, 6

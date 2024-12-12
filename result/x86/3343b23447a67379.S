@@ -1,5 +1,5 @@
 func0000000000000001:                   # @func0000000000000001
-	decl	%edi
+	addl	$-2, %edi
 	movslq	%edi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000

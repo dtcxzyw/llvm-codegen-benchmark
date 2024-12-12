@@ -4,13 +4,13 @@ func000000000000000a:                   # @func000000000000000a
 	incl	%esi
 	setns	%al
 	retq
-func000000000000040a:                   # @func000000000000040a
+func000000000000080a:                   # @func000000000000080a
 	addl	%edx, %edi
 	leal	-12(%rsi,%rdi), %eax
 	testl	%eax, %eax
 	setg	%al
 	retq
-func0000000000000451:                   # @func0000000000000451
+func00000000000008a1:                   # @func00000000000008a1
 	leal	-1(%rdx,%rdi), %eax
 	addl	%eax, %esi
 	sete	%al

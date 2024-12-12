@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 84 occurrences:
 ; actix-rs/optimized/1rfb1t3n8679w74r.ll
 ; clamav/optimized/dmg.c.ll
 ; clamav/optimized/scanners.c.ll
@@ -51,6 +51,39 @@
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; vcpkg/optimized/hash.cpp.ll
+; zed-rs/optimized/0l5q95ei94dcvnozucoiwn5qf.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0w1qh6yj06wybeh6h6bxok5y2.ll
+; zed-rs/optimized/12xam7q4l70h0vr8y5wvb4s4a.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1crfyvugkk4dx3liwlfw00ptd.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3ly3b3fonqg7nd45488b8bsgs.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/539jqkovt0x6g7ilfg6ddwnop.ll
+; zed-rs/optimized/7gcmdnlmglj1dyg8i59srq20u.ll
+; zed-rs/optimized/7rpe3bril898mttdoib5hjrj5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/8ssoz06l7e5x2c5xnrblffvll.ll
+; zed-rs/optimized/9jkx32jki2vcljeo0xctxc8uw.ll
+; zed-rs/optimized/9ld5vmlj2ufuzyru6e6aorg0l.ll
+; zed-rs/optimized/9sysltstjhp0j3770z48leqk1.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/aktvc84j83s8sqq1xgqfsdyza.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/c4c7jl64zv8zhv2ne6xdvhty4.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -59,9 +92,11 @@ entry:
   ret i64 %2
 }
 
-; 30 occurrences:
+; 39 occurrences:
 ; actix-rs/optimized/1rfb1t3n8679w74r.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; cxxopts/optimized/example.cpp.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
@@ -88,8 +123,15 @@ entry:
 ; postgres/optimized/xlog.ll
 ; qemu/optimized/semihosting_uaccess.c.ll
 ; ripgrep-rs/optimized/rwbxp5vay147miz.ll
+; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
+; typst-rs/optimized/1c2qpu6zljc8gscz.ll
+; typst-rs/optimized/377uk5tkmxagdt0q.ll
+; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wireshark/optimized/pcapio.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
@@ -111,7 +153,7 @@ entry:
   ret i64 %2
 }
 
-; 345 occurrences:
+; 342 occurrences:
 ; assimp/optimized/Compression.cpp.ll
 ; clamav/optimized/dmg.c.ll
 ; clamav/optimized/scanners.c.ll
@@ -327,9 +369,6 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
-; typst-rs/optimized/1c2qpu6zljc8gscz.ll
-; typst-rs/optimized/377uk5tkmxagdt0q.ll
-; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; vcpkg/optimized/archives.cpp.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
 ; vcpkg/optimized/binaryparagraph.cpp.ll
@@ -489,6 +528,19 @@ define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %reass.sub = sub i64 %0, %1
   %2 = add i64 %reass.sub, 1
+  ret i64 %2
+}
+
+; 4 occurrences:
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9k0j7f35vt58mons3nxvubmtw.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
+entry:
+  %reass.sub = sub i64 %0, %1
+  %2 = add i64 %reass.sub, 8192
   ret i64 %2
 }
 

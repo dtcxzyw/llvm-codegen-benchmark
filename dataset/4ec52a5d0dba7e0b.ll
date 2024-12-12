@@ -1,5 +1,5 @@
 
-; 495 occurrences:
+; 501 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/cutMan.c.ll
@@ -186,6 +186,11 @@
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/MLInlineAdvisor.cpp.ll
+; lvgl/optimized/lv_matrix.ll
+; lvgl/optimized/lv_sdl_mouse.ll
+; lvgl/optimized/lv_sdl_window.ll
+; lvgl/optimized/lv_svg_parser.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -196,7 +201,6 @@
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_dirt.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -485,6 +489,8 @@
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; xgboost/optimized/regression_obj.cc.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zfp/optimized/decode1f.c.ll
 ; zfp/optimized/decode2f.c.ll
 ; zfp/optimized/decode3f.c.ll
@@ -499,7 +505,7 @@
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 

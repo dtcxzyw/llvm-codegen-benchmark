@@ -62,7 +62,7 @@
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp ne i16 %0, 0
@@ -73,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
   %4 = icmp ne i16 %0, 0
@@ -81,16 +81,14 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; eastl/optimized/EAString.cpp.ll
+; 3 occurrences:
 ; linux/optimized/ucs2_string.ll
 ; minetest/optimized/dungeongen.cpp.ll
-; openmpi/optimized/output.ll
 ; postgres/optimized/print.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000028c(i16 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %1, %2
+  %3 = icmp samesign ult i64 %1, %2
   %4 = icmp ne i16 %0, 127
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -99,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/utf8.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %1, %2
   %4 = icmp ult i16 %0, 256
@@ -107,25 +105,34 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 1 occurrences:
+; c3c/optimized/sema_expr.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000321(i16 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign uge i64 %1, %2
+  %4 = icmp eq i16 %0, 0
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
 ; icu/optimized/ushape.ll
 ; icu/optimized/uts46.ll
-; nuttx/optimized/lib_libvsprintf.c.ll
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000281(i16 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %1, %2
+  %3 = icmp samesign ult i64 %1, %2
   %4 = icmp eq i16 %0, 538
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
 
-; 2 occurrences:
-; clamav/optimized/entconv.c.ll
+; 1 occurrences:
 ; php/optimized/pcre2_substitute.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = icmp ult i16 %0, -2
@@ -139,7 +146,7 @@ entry:
 ; stb/optimized/stb_connected_components.c.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp eq i16 %0, 24415
@@ -151,7 +158,7 @@ entry:
 ; freetype/optimized/autofit.c.ll
 ; git/optimized/graph.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000cc(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, %2
   %4 = icmp ne i16 %0, 0
@@ -164,7 +171,7 @@ entry:
 ; cpython/optimized/unicodeobject.ll
 ; icu/optimized/rematch.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, %2
   %4 = icmp eq i16 %0, 0
@@ -176,7 +183,7 @@ entry:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = icmp sgt i16 %0, -1
@@ -184,11 +191,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; cmake/optimized/cmForEachCommand.cxx.ll
+; 1 occurrences:
 ; sentencepiece/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
   %4 = icmp ult i16 %0, 257
@@ -200,7 +206,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %1, %2
   %4 = icmp eq i16 %0, 0
@@ -208,10 +214,23 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; eastl/optimized/EAString.cpp.ll
+; linux/optimized/ucs2_string.ll
+; openmpi/optimized/output.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008c(i16 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %1, %2
+  %4 = icmp ne i16 %0, 0
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; icu/optimized/rematch.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %1, %2
   %4 = icmp eq i16 %0, 13
@@ -223,10 +242,21 @@ entry:
 ; arrow/optimized/int_util.cc.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010a(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
   %4 = icmp sgt i16 %0, -1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; nuttx/optimized/lib_libvsprintf.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i16 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %1, %2
+  %4 = icmp eq i16 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
@@ -284,7 +314,7 @@ entry:
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
   %4 = icmp eq i16 %0, 0

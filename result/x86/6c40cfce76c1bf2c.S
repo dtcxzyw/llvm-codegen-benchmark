@@ -14,11 +14,3 @@ func0000000000000023:                   # @func0000000000000023
 	addq	%rsi, %rdi
 	leaq	6(,%rdi,4), %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
-	addq	%rsi, %rdi
-	leaq	5(%rdi,%rdi), %rax
-	retq
-func0000000000000065:                   # @func0000000000000065
-	addq	%rsi, %rdi
-	leaq	5(%rdi,%rdi), %rax
-	retq

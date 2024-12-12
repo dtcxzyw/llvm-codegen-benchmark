@@ -1,9 +1,9 @@
-func000000000000154c:                   # @func000000000000154c
+func000000000000528c:                   # @func000000000000528c
 	testl	%esi, %esi
 	movl	$16, %eax
 	cmovgl	%esi, %eax
-	cmpl	%edi, %eax
-	setl	%cl
+	cmpl	%eax, %edi
+	setg	%cl
 	cmpl	$-3, %edi
 	setl	%al
 	orb	%cl, %al

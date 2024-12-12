@@ -1,5 +1,5 @@
 
-; 614 occurrences:
+; 627 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/acecXor.c.ll
@@ -37,6 +37,12 @@
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/options_description.ll
 ; clamav/optimized/iso9660.c.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/rdwrfn.cpp.ll
@@ -416,6 +422,7 @@
 ; qemu/optimized/linux-user_mmap.c.ll
 ; qemu/optimized/migration_block.c.ll
 ; qemu/optimized/semihosting_uaccess.c.ll
+; qemu/optimized/system_cpus.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/util_bitops.c.ll
@@ -439,6 +446,7 @@
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/date_parse.ll
 ; ruby/optimized/string.ll
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; smol-rs/optimized/1p7wu8w0t94kgeq2.ll
 ; smol-rs/optimized/21eidrukyvr99qqv.ll
 ; snappy/optimized/snappy.cc.ll
@@ -612,6 +620,11 @@
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; Function Attrs: nounwind
@@ -622,7 +635,7 @@ entry:
   ret i64 %3
 }
 
-; 368 occurrences:
+; 363 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -681,24 +694,26 @@ entry:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/wait.ll
 ; c3c/optimized/unzipper.c.ll
 ; ceres/optimized/line_search_direction.cc.ll
 ; cpython/optimized/marshal.ll
 ; cpython/optimized/mpdecimal.ll
 ; cvc5/optimized/Solver.cc.ll
 ; cvc5/optimized/ite_utilities.cpp.ll
-; darktable/optimized/DeflateDecompressor.cpp.ll
-; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; entt/optimized/meta_container.cpp.ll
-; folly/optimized/File.cpp.ll
 ; folly/optimized/HHWheelTimer.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
 ; freetype/optimized/autofit.c.ll
@@ -715,7 +730,6 @@ entry:
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-keypair.ll
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll
-; lief/optimized/Builder.cpp.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/efi_64.ll
 ; linux/optimized/iov_iter.ll
@@ -750,9 +764,6 @@ entry:
 ; minetest/optimized/CGUIStaticText.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
-; minetest/optimized/COpenGLDriver.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
-; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/guiAnimatedImage.cpp.ll
@@ -908,8 +919,6 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; openblas/optimized/dgemm_beta.c.ll
-; openblas/optimized/dgemv_n.c.ll
-; openblas/optimized/dgemv_t.c.ll
 ; openblas/optimized/sgemm_beta.c.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
@@ -962,7 +971,6 @@ entry:
 ; qemu/optimized/source_s_subMagsF16.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/quickjs.ll
-; redis/optimized/lua_struct.ll
 ; rocksdb/optimized/block.cc.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/date_parse.ll
@@ -999,9 +1007,8 @@ entry:
   ret i64 %3
 }
 
-; 138 occurrences:
+; 63 occurrences:
 ; arrow/optimized/key_hash.cc.ll
-; base64-rs/optimized/3i18zkzed1c7jyoe.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -1033,23 +1040,11 @@ entry:
 ; cpython/optimized/mpdecimal.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; darktable/optimized/amaze.cc.ll
-; darktable/optimized/introspection_liquify.c.ll
-; darktable/optimized/introspection_lut3d.c.ll
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
-; duckdb/optimized/null_operations.cpp.ll
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
-; duckdb/optimized/ub_duckdb_func_list.cpp.ll
-; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
-; duckdb/optimized/ub_duckdb_transformer_expression.cpp.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; hyperscan/optimized/runtime.c.ll
 ; libquic/optimized/p224-64.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -1066,68 +1061,6 @@ entry:
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; minetest/optimized/CAttributes.cpp.ll
-; minetest/optimized/CFileList.cpp.ll
-; minetest/optimized/CFileSystem.cpp.ll
-; minetest/optimized/CGUIButton.cpp.ll
-; minetest/optimized/CGUICheckBox.cpp.ll
-; minetest/optimized/CGUIComboBox.cpp.ll
-; minetest/optimized/CGUIEditBox.cpp.ll
-; minetest/optimized/CGUIEnvironment.cpp.ll
-; minetest/optimized/CGUIFileOpenDialog.cpp.ll
-; minetest/optimized/CGUIFont.cpp.ll
-; minetest/optimized/CGUIImage.cpp.ll
-; minetest/optimized/CGUIListBox.cpp.ll
-; minetest/optimized/CGUIScrollBar.cpp.ll
-; minetest/optimized/CGUISkin.cpp.ll
-; minetest/optimized/CGUIStaticText.cpp.ll
-; minetest/optimized/CGUITTFont.cpp.ll
-; minetest/optimized/CGUITabControl.cpp.ll
-; minetest/optimized/CIrrDeviceSDL.cpp.ll
-; minetest/optimized/CLogger.cpp.ll
-; minetest/optimized/CNullDriver.cpp.ll
-; minetest/optimized/COBJMeshFileLoader.cpp.ll
-; minetest/optimized/COpenGLDriver.cpp.ll
-; minetest/optimized/COpenGLSLMaterialRenderer.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
-; minetest/optimized/CXMeshFileLoader.cpp.ll
-; minetest/optimized/CZipReader.cpp.ll
-; minetest/optimized/camera.cpp.ll
-; minetest/optimized/client.cpp.ll
-; minetest/optimized/clientlauncher.cpp.ll
-; minetest/optimized/dynamicshadowsrender.cpp.ll
-; minetest/optimized/filesys.cpp.ll
-; minetest/optimized/fontengine.cpp.ll
-; minetest/optimized/guiAnimatedImage.cpp.ll
-; minetest/optimized/guiBackgroundImage.cpp.ll
-; minetest/optimized/guiBox.cpp.ll
-; minetest/optimized/guiButton.cpp.ll
-; minetest/optimized/guiButtonImage.cpp.ll
-; minetest/optimized/guiButtonItemImage.cpp.ll
-; minetest/optimized/guiChatConsole.cpp.ll
-; minetest/optimized/guiEditBox.cpp.ll
-; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
-; minetest/optimized/guiEngine.cpp.ll
-; minetest/optimized/guiFormSpecMenu.cpp.ll
-; minetest/optimized/guiHyperText.cpp.ll
-; minetest/optimized/guiInventoryList.cpp.ll
-; minetest/optimized/guiItemImage.cpp.ll
-; minetest/optimized/guiKeyChangeMenu.cpp.ll
-; minetest/optimized/guiOpenURL.cpp.ll
-; minetest/optimized/guiPasswordChange.cpp.ll
-; minetest/optimized/guiPathSelectMenu.cpp.ll
-; minetest/optimized/guiScene.cpp.ll
-; minetest/optimized/guiScrollBar.cpp.ll
-; minetest/optimized/guiScrollContainer.cpp.ll
-; minetest/optimized/guiSkin.cpp.ll
-; minetest/optimized/guiTable.cpp.ll
-; minetest/optimized/guiVolumeChange.cpp.ll
-; minetest/optimized/modalMenu.cpp.ll
-; minetest/optimized/pipeline.cpp.ll
-; minetest/optimized/profilergraph.cpp.ll
-; minetest/optimized/renderingengine.cpp.ll
-; minetest/optimized/static_text.cpp.ll
-; minetest/optimized/texturesource.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; node/optimized/libnode.string_bytes.ll
 ; openblas/optimized/dasum_k.c.ll
@@ -1146,8 +1079,9 @@ entry:
   ret i64 %3
 }
 
-; 158 occurrences:
+; 159 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/dump_ssse3.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; darktable/optimized/camera.c.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll

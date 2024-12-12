@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; cmake/optimized/MD5.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; gromacs/optimized/md5.c.ll
@@ -17,6 +17,7 @@
 ; softposit-rs/optimized/3x9ny7yhpewmwf1y.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind

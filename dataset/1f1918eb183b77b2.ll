@@ -5,7 +5,7 @@
 ; postgres/optimized/heap.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 32
   %4 = icmp eq i8 %2, 30

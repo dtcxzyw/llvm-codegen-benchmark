@@ -52,3 +52,12 @@ func0000000000000007:                   # @func0000000000000007
 	subl	%ecx, %eax
 	incl	%eax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	leal	1(%rdi), %eax
+	movl	$2863311531, %ecx               # imm = 0xAAAAAAAB
+	imulq	%rax, %rcx
+	shrq	$33, %rcx
+	leal	(%rcx,%rcx,2), %ecx
+	subl	%ecx, %eax
+	addl	$3, %eax
+	retq

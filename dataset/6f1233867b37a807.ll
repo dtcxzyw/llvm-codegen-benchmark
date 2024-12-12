@@ -1,12 +1,11 @@
 
-; 40 occurrences:
+; 37 occurrences:
 ; c3c/optimized/float.c.ll
+; graphviz/optimized/splines.c.ll
 ; proj/optimized/aeqd.cpp.ll
 ; proj/optimized/ccon.cpp.ll
 ; proj/optimized/cea.cpp.ll
 ; proj/optimized/col_urban.cpp.ll
-; proj/optimized/crast.cpp.ll
-; proj/optimized/eck1.cpp.ll
 ; proj/optimized/eck2.cpp.ll
 ; proj/optimized/eck5.cpp.ll
 ; proj/optimized/eqc.cpp.ll
@@ -15,7 +14,6 @@
 ; proj/optimized/gn_sinu.cpp.ll
 ; proj/optimized/gstmerc.cpp.ll
 ; proj/optimized/lcca.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/merc.cpp.ll
 ; proj/optimized/natearth.cpp.ll
 ; proj/optimized/natearth2.cpp.ll
@@ -35,7 +33,6 @@
 ; proj/optimized/urmfps.cpp.ll
 ; proj/optimized/wag2.cpp.ll
 ; proj/optimized/wag3.cpp.ll
-; proj/optimized/wink1.cpp.ll
 ; quantlib/optimized/analytic_cont_geom_av_price_heston.ll
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/squarerootclvmodel.ll

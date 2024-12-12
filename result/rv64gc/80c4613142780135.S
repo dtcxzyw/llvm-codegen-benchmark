@@ -22,7 +22,7 @@ func000000000000000a:                   # @func000000000000000a
 	sext.w	a1, a1
 	sgtz	a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	srliw	a1, a2, 8
@@ -30,7 +30,7 @@ func0000000000000004:                   # @func0000000000000004
 	sext.w	a1, a1
 	sltiu	a0, a1, 128
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	srliw	a1, a2, 3

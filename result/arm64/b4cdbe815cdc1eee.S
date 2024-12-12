@@ -1,44 +1,18 @@
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	fmov	x9, d1
-	fmov	x12, d0
-	mov	x8, #23123                      // =0x5a53
-	movk	x8, #41115, lsl #16
-	mov	x10, v1.d[1]
-	mov	x13, v0.d[1]
-	movk	x8, #47151, lsl #32
-	lsr	x11, x9, #9
-	lsr	x14, x12, #9
-	movk	x8, #68, lsl #48
-	umulh	x11, x11, x8
-	lsr	x15, x10, #9
-	lsr	x16, x13, #9
-	umulh	x14, x14, x8
-	umulh	x15, x15, x8
-	lsr	x11, x11, #11
-	umulh	x8, x16, x8
-	mov	w16, #51712                     // =0xca00
-	lsr	x14, x14, #11
-	movk	w16, #15258, lsl #16
-	msub	w9, w11, w16, w9
-	msub	w12, w14, w16, w12
-	lsr	x11, x15, #11
+	mov	x9, #23123                      // =0x5a53
+	lsr	x8, x0, #9
+	movk	x9, #41115, lsl #16
+	movk	x9, #47151, lsl #32
+	movk	x9, #68, lsl #48
+	umulh	x8, x8, x9
+	mov	w9, #51712                      // =0xca00
+	movk	w9, #15258, lsl #16
 	lsr	x8, x8, #11
-	msub	w10, w11, w16, w10
-	fmov	d0, x9
-	fmov	d1, x12
-	msub	w8, w8, w16, w13
-	mov	v0.d[1], x10
-	mov	v1.d[1], x8
-	mov	w8, #19923                      // =0x4dd3
-	movk	w8, #4194, lsl #16
-	uzp1	v0.4s, v1.4s, v0.4s
-	dup	v1.4s, w8
-	umull2	v2.2d, v0.4s, v1.4s
-	umull	v0.2d, v0.2s, v1.2s
-	uzp2	v0.4s, v0.4s, v2.4s
-	ushr	v0.4s, v0.4s, #6
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	msub	x8, x8, x9, x0
+	mov	w9, #19923                      // =0x4dd3
+	movk	w9, #4194, lsl #16
+	mul	x8, x8, x9
+	lsr	x0, x8, #38
 	ret
                                         // -- End function

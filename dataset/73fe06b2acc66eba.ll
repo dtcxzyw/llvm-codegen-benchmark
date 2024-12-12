@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; assimp/optimized/OgreStructs.cpp.ll
@@ -30,6 +30,7 @@
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; z3/optimized/mpn.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -40,11 +41,10 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libwebp/optimized/buffer_dec.c.ll
-; linux/optimized/intel_snps_phy.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; Function Attrs: nounwind
@@ -53,12 +53,13 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext nneg i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
 ; 26 occurrences:
 ; arrow/optimized/bignum.cc.ll
+; boost/optimized/area.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; cpython/optimized/longobject.ll
@@ -68,7 +69,6 @@ entry:
 ; jq/optimized/decNumber.ll
 ; lief/optimized/poly1305.c.ll
 ; linux/optimized/blk-iocost.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_sprite.ll
 ; lodepng/optimized/lodepng.cpp.ll
@@ -94,15 +94,17 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext nneg i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -126,7 +128,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -170,7 +172,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

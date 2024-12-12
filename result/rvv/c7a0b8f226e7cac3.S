@@ -32,5 +32,5 @@ func000000000000000d:                   # @func000000000000000d
 	vadd.vi	v10, v10, 7
 	addi	a0, a0, -8
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

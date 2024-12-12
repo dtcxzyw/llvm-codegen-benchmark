@@ -1,7 +1,17 @@
 
-; 3 occurrences:
+; 13 occurrences:
 ; jq/optimized/regcomp.ll
+; llvm/optimized/CGCUDANV.cpp.ll
+; llvm/optimized/CoroSplit.cpp.ll
+; llvm/optimized/ExpandVariadics.cpp.ll
+; llvm/optimized/FunctionImport.cpp.ll
+; llvm/optimized/GlobalOpt.cpp.ll
+; llvm/optimized/IRMover.cpp.ll
+; llvm/optimized/InstrProfiling.cpp.ll
+; llvm/optimized/LowerEmuTLS.cpp.ll
+; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; oniguruma/optimized/regcomp.ll
+; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {

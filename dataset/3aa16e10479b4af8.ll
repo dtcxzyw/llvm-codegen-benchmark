@@ -12,7 +12,6 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/slab_common.ll
-; linux/optimized/uprobes.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -23,6 +22,7 @@
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
 ; typst-rs/optimized/377uk5tkmxagdt0q.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

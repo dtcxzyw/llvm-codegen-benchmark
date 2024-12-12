@@ -1,10 +1,9 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
 ; hyperscan/optimized/repeatcompile.cpp.ll
 ; linux/optimized/drm_gem_framebuffer_helper.ll
 ; linux/optimized/regcache-rbtree.ll
-; linux/optimized/scsicam.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
@@ -17,8 +16,10 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:

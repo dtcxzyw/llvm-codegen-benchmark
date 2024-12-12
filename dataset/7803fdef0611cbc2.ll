@@ -19,14 +19,13 @@ define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294901760
   %4 = or disjoint i64 %3, %1
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = or disjoint i64 %5, 1
   ret i64 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/ds.ll
-; linux/optimized/set_memory.ll
 ; linux/optimized/workingset.ll
 ; llvm/optimized/AArch64ExternalSymbolizer.cpp.ll
 ; openjdk/optimized/shenandoahMark.ll
@@ -55,9 +54,27 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65535
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or i64 %4, %0
   %6 = or i64 %5, 1711276032
+  ret i64 %6
+}
+
+; 7 occurrences:
+; abc/optimized/bdcSpfd.c.ll
+; jemalloc/optimized/extent.ll
+; jemalloc/optimized/extent.pic.ll
+; jemalloc/optimized/extent.sym.ll
+; redis/optimized/extent.ll
+; redis/optimized/extent.sym.ll
+; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -4503599627370496
+  %4 = or i64 %3, %1
+  %5 = or disjoint i64 %4, %0
+  %6 = or disjoint i64 %5, 1048576
   ret i64 %6
 }
 
@@ -69,7 +86,7 @@ define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4
   %4 = or disjoint i64 %3, %1
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = or i64 %5, 1
   ret i64 %6
 }
@@ -83,8 +100,8 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1152921504606846976
-  %4 = or i64 %3, %1
-  %5 = or i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = or i64 %0, %4
   %6 = or i64 %5, 8
   ret i64 %6
 }
@@ -95,26 +112,9 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   %6 = or disjoint i64 %5, 31744
-  ret i64 %6
-}
-
-; 6 occurrences:
-; jemalloc/optimized/extent.ll
-; jemalloc/optimized/extent.pic.ll
-; jemalloc/optimized/extent.sym.ll
-; redis/optimized/extent.ll
-; redis/optimized/extent.sym.ll
-; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 1099494850560
-  %4 = or i64 %3, %1
-  %5 = or disjoint i64 %4, %0
-  %6 = or disjoint i64 %5, 4611686018427387904
   ret i64 %6
 }
 

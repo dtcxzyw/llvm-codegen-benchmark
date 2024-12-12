@@ -22,7 +22,7 @@
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; wasmtime-rs/optimized/1jbxepb6u2xll6bg.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000004a(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp sgt i64 %1, -1
   %4 = sext i1 %3 to i64

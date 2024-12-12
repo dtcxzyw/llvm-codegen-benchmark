@@ -137,17 +137,6 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = or disjoint i32 %0, 1
-  %4 = sub nuw nsw i32 %3, %2
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; linux/optimized/maple_tree.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i64 %1) #0 {

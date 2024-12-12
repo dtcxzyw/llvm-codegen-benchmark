@@ -58,9 +58,30 @@ func0000000000000007:                   # @func0000000000000007
 	cmpl	%edi, %eax
 	setle	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000018:                   # @func0000000000000018
+	testb	$1, %sil
+	movl	$3, %eax
+	cmovnel	%edx, %eax
+	cmpl	%edi, %eax
+	seta	%al
+	retq
+func0000000000000015:                   # @func0000000000000015
 	testb	$1, %sil
 	movl	$2, %eax
+	cmovnel	%edx, %eax
+	cmpl	%edi, %eax
+	setbe	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	testb	$1, %sil
+	cmovnel	%edx, %eax
+	cmpl	%edi, %eax
+	setb	%al
+	retq
+func0000000000000005:                   # @func0000000000000005
+	testb	$1, %sil
+	movl	$8, %eax
 	cmovnel	%edx, %eax
 	cmpl	%edi, %eax
 	setbe	%al

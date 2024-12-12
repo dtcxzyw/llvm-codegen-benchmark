@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
 	movl	%esi, %eax
-	xorl	$31, %eax
+	xorl	$7936, %eax                     # imm = 0x1F00
 	testl	%edi, %edi
 	cmovel	%edi, %eax
 	retq

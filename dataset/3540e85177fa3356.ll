@@ -14,9 +14,9 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/object.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000184(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 60
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 60
   %4 = getelementptr i8, ptr %1, i64 1
   %5 = icmp ult ptr %4, %3
   %6 = select i1 %0, i1 %5, i1 false
@@ -42,17 +42,17 @@ entry:
 ; jq/optimized/regcomp.ll
 ; oniguruma/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000064(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 24
-  %4 = getelementptr nusw i8, ptr %1, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
   %5 = icmp ult ptr %4, %3
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
 
-; 86 occurrences:
-; abseil-cpp/optimized/container_test.cc.ll
+; 82 occurrences:
+; boost/optimized/src.ll
 ; cvc5/optimized/metakind.cpp.ll
 ; eastl/optimized/TestListMap.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -65,7 +65,6 @@ entry:
 ; llvm/optimized/BugSuppression.cpp.ll
 ; llvm/optimized/CGCoroutine.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
-; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
 ; llvm/optimized/CalledOnceCheck.cpp.ll
 ; llvm/optimized/CastToStructChecker.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
@@ -78,7 +77,6 @@ entry:
 ; llvm/optimized/IdenticalExprChecker.cpp.ll
 ; llvm/optimized/IndexBody.cpp.ll
 ; llvm/optimized/InterfaceStubFunctionsConsumer.cpp.ll
-; llvm/optimized/LivePhysRegs.cpp.ll
 ; llvm/optimized/LocalizationChecker.cpp.ll
 ; llvm/optimized/NoUncountedMembersChecker.cpp.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
@@ -102,7 +100,6 @@ entry:
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/StmtOpenACC.cpp.ll
 ; llvm/optimized/TransAPIUses.cpp.ll
 ; llvm/optimized/TransARCAssign.cpp.ll
@@ -127,7 +124,6 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
-; quantlib/optimized/generalstatistics.ll
 ; z3/optimized/ast_util.cpp.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/euf_ackerman.cpp.ll
@@ -139,32 +135,22 @@ entry:
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000001ec(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
-  %4 = getelementptr nusw i8, ptr %1, i64 6
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 6
   %5 = icmp ne ptr %4, %3
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
 
-; 22 occurrences:
+; 12 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
-; cmake/optimized/cmDebuggerAdapter.cxx.ll
-; cmake/optimized/cmDebuggerBreakpointManager.cxx.ll
-; cmake/optimized/cmDebuggerThread.cxx.ll
-; cmake/optimized/jsoncpp_json_serializer.cpp.ll
-; cmake/optimized/protocol_events.cpp.ll
-; cmake/optimized/protocol_requests.cpp.ll
-; cmake/optimized/protocol_response.cpp.ll
-; cmake/optimized/protocol_types.cpp.ll
-; cmake/optimized/typeof.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; llvm/optimized/LoopInfo.cpp.ll
 ; llvm/optimized/MachineLoopInfo.cpp.ll
 ; redis/optimized/util.ll
 ; redis/optimized/ziplist.ll
-; sqlite/optimized/sqlite3.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
@@ -172,24 +158,75 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000164(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -264
-  %4 = getelementptr nusw i8, ptr %1, i64 264
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 264
   %5 = icmp ult ptr %4, %3
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
 
-; 2 occurrences:
-; abseil-cpp/optimized/duration.cc.ll
+; 5 occurrences:
+; abseil-cpp/optimized/container_test.cc.ll
+; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
+; llvm/optimized/LivePhysRegs.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; quantlib/optimized/generalstatistics.ll
+; Function Attrs: nounwind
+define i1 @func000000000000016c(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %5 = icmp ne ptr %4, %3
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; quantlib/optimized/generalstatistics.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001cc(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = getelementptr nusw i8, ptr %1, i64 -16
+  %5 = icmp ne ptr %4, %3
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; openusd/optimized/testTraceEventContainer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000161(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -32
-  %4 = getelementptr nusw i8, ptr %1, i64 32
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 32
   %5 = icmp eq ptr %4, %3
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/duration.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e1(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 17
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %5 = icmp eq ptr %4, %3
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e4(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 10
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %5 = icmp ult ptr %4, %3
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -201,11 +238,31 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; mimalloc/optimized/page.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000001c8(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 104
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 104
   %4 = getelementptr nusw i8, ptr %1, i64 -4
   %5 = icmp ugt ptr %4, %3
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 9 occurrences:
+; cmake/optimized/cmDebuggerAdapter.cxx.ll
+; cmake/optimized/cmDebuggerBreakpointManager.cxx.ll
+; cmake/optimized/cmDebuggerThread.cxx.ll
+; cmake/optimized/jsoncpp_json_serializer.cpp.ll
+; cmake/optimized/protocol_events.cpp.ll
+; cmake/optimized/protocol_requests.cpp.ll
+; cmake/optimized/protocol_response.cpp.ll
+; cmake/optimized/protocol_types.cpp.ll
+; cmake/optimized/typeof.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c4(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 56
+  %4 = getelementptr nusw i8, ptr %1, i64 -1
+  %5 = icmp ult ptr %4, %3
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -213,9 +270,9 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000188(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1040
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1040
   %4 = getelementptr i8, ptr %1, i64 -24
   %5 = icmp ugt ptr %4, %3
   %6 = select i1 %0, i1 %5, i1 false

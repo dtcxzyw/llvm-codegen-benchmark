@@ -20,7 +20,7 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = mul nuw nsw i32 %2, %1
   %4 = lshr i32 %3, 1
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -37,17 +37,15 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; openblas/optimized/dsptrf.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000079(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = mul nuw nsw i32 %2, %1
   %4 = lshr i32 %3, 1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

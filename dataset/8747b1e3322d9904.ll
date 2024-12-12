@@ -15,7 +15,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; openspiel/optimized/chess_board.cc.ll
 ; wasmedge/optimized/formchecker.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind

@@ -5,10 +5,10 @@
 ; icu/optimized/double-conversion-strtod.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = lshr i64 %1, 32
   %6 = add i64 %4, %5
   %7 = icmp ult i64 %6, 18014398509481984
@@ -24,7 +24,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 28
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = lshr i64 %1, 28
   %6 = sub nsw i64 0, %5
   %7 = icmp eq i64 %4, %6
@@ -105,10 +105,10 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = lshr i64 %1, 32
   %6 = or i64 %4, %5
   %7 = icmp eq i64 %6, 0
@@ -118,10 +118,10 @@ entry:
 ; 1 occurrences:
 ; php/optimized/strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = lshr i64 %1, 32
   %6 = sub nsw i64 0, %5
   %7 = icmp eq i64 %4, %6
@@ -134,13 +134,13 @@ entry:
 ; abc/optimized/solver.c.ll
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 15
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = lshr i64 %1, 15
   %6 = add nuw nsw i64 %4, %5
-  %7 = icmp ugt i64 %6, 281474976710655
+  %7 = icmp samesign ugt i64 %6, 281474976710655
   ret i1 %7
 }
 

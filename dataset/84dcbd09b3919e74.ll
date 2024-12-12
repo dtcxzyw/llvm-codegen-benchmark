@@ -1,5 +1,7 @@
 
-; 24 occurrences:
+; 26 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/snapshots.c.ll
 ; g2o/optimized/robust_kernel_impl.cpp.ll
 ; graphviz/optimized/arrows.c.ll

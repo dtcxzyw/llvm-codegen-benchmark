@@ -1,6 +1,7 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; llvm/optimized/ASTWriter.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; php/optimized/util.ll
 ; ruby/optimized/ruby.ll

@@ -12,7 +12,7 @@ entry:
   ret i1 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; coreutils-rs/optimized/59rj03aw6jgy8z12.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -31,6 +31,7 @@ entry:
 ; openjdk/optimized/serialStringDedup.ll
 ; openjdk/optimized/shenandoahMark.ll
 ; php/optimized/spl_fixedarray.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -39,7 +40,7 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 21 occurrences:
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -57,6 +58,10 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; velox/optimized/SimpleComparisonMatcher.cpp.ll
+; zed-rs/optimized/13pr1pzdsvcd15h9bn5oaps4z.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; zed-rs/optimized/d236qqx54dpqso3cyloa7ybaj.ll
+; zed-rs/optimized/dd8ztmg64g4x9ypkzwkofy6vi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -65,7 +70,7 @@ entry:
   ret i1 %4
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; eastl/optimized/EATest.cpp.ll
 ; git/optimized/log.ll
 ; icu/optimized/utext.ll
@@ -91,6 +96,7 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; z3/optimized/hilbert_basis.cpp.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i1 %1, i64 %2) #0 {
 entry:

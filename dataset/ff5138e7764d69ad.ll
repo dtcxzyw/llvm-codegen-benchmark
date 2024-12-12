@@ -4,7 +4,7 @@
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; yaml-cpp/optimized/scantoken.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000ca(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, %1
   %4 = icmp sgt i8 %0, %1
@@ -17,7 +17,7 @@ entry:
 ; regex-rs/optimized/32jw1oy2yofrhudk.ll
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, %1
   %4 = icmp eq i8 %0, %1

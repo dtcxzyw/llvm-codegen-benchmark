@@ -16,7 +16,7 @@ func0000000000000004:                   # @func0000000000000004
 	or	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
-func00000000000000e9:                   # @func00000000000000e9
+func00000000000001a9:                   # @func00000000000001a9
 	sext.w	a3, a0
 	add	a1, a1, a2
 	slti	a2, a3, 15
@@ -25,7 +25,7 @@ func00000000000000e9:                   # @func00000000000000e9
 	or	a0, a0, a1
 	addiw	a0, a0, 3
 	ret
-func00000000000000e8:                   # @func00000000000000e8
+func00000000000001a8:                   # @func00000000000001a8
 	sext.w	a3, a0
 	add	a1, a1, a2
 	slti	a2, a3, 15

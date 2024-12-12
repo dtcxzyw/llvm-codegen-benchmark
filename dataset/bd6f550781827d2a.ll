@@ -5,7 +5,7 @@
 ; openssl/optimized/libcrypto-shlib-ec_mult.ll
 ; postgres/optimized/dshash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %1, %2
   %4 = add nuw i64 %0, 1
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
   %4 = add nuw i64 %0, 1

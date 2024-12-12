@@ -245,7 +245,7 @@
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = ashr exact i64 %0, 4
@@ -256,7 +256,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/linux-user_syscall.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = ashr exact i64 %0, 32
@@ -264,12 +264,11 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; assimp/optimized/ColladaLoader.cpp.ll
-; hyperscan/optimized/ng_netflow.cpp.ll
 ; llvm/optimized/MemProf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = ashr exact i64 %0, 4
@@ -281,7 +280,7 @@ entry:
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = ashr exact i64 %0, 2
@@ -292,7 +291,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 8
   %3 = ashr exact i64 %0, 3
@@ -305,7 +304,7 @@ entry:
 ; llvm/optimized/StackColoring.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
   %3 = ashr exact i64 %0, 29
@@ -317,7 +316,7 @@ entry:
 ; opencv/optimized/loadsave.cpp.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
   %3 = ashr exact i64 %0, 4
@@ -328,7 +327,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/display_filter_expression_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = ashr exact i64 %0, 3
@@ -339,7 +338,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/balloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = ashr exact i64 %0, 32
@@ -351,7 +350,7 @@ entry:
 ; faiss/optimized/IndexAdditiveQuantizerFastScan.cpp.ll
 ; faiss/optimized/IndexIVFAdditiveQuantizerFastScan.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = ashr exact i64 %0, 2

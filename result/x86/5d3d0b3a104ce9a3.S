@@ -7,10 +7,10 @@ func0000000000000025:                   # @func0000000000000025
 	addl	%esi, %eax
 	retq
 func0000000000000024:                   # @func0000000000000024
-	movl	%edi, %eax
 	andl	$8, %edx
 	cmpq	$1, %rdx
-	adcl	%esi, %eax
+	adcl	$0, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 func000000000000002f:                   # @func000000000000002f
 	andl	$3, %edx

@@ -83,9 +83,10 @@ entry:
   ret i64 %6
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/get_clusters.ll
 ; faiss/optimized/HNSW.cpp.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; gromacs/optimized/gmx_disre.cpp.ll

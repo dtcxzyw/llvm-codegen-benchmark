@@ -14,7 +14,7 @@
 .LCPI0_3:
 	.short	1                               # 0x1
 	.short	1                               # 0x1
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpsllw	$15, %xmm2, %xmm1
@@ -24,7 +24,7 @@ func0000000000000038:                   # @func0000000000000038
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
 	vpblendmd	.LCPI0_2(%rip){1to8}, %ymm2, %ymm3 {%k2}
 	vmovdqa32	%ymm3, %ymm1 {%k1}
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpnleud	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

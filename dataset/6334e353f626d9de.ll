@@ -1,6 +1,8 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/3z39203exqv32wuh.ll
 ; cpython/optimized/crt.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -9,16 +11,19 @@
 ; qemu/optimized/hw_vfio_common.c.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
-; 27 occurrences:
+; 31 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; cpython/optimized/basearith.ll
@@ -44,15 +49,16 @@ entry:
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
@@ -64,6 +70,7 @@ entry:
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/convolute.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/difradix2.ll
@@ -93,7 +100,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -102,10 +109,10 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_div.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -113,10 +120,10 @@ entry:
 ; linux/optimized/i915_hwmon.ll
 ; qemu/optimized/util_cutils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
@@ -124,10 +131,10 @@ entry:
 ; abseil-cpp/optimized/duration.cc.ll
 ; qemu/optimized/system_memory.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -137,10 +144,10 @@ entry:
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -148,20 +155,20 @@ entry:
 ; velox/optimized/Sequence.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i128 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nsw i128 %1 to i64
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nsw i128 %1 to i64
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   ret i1 %3
 }
 
@@ -170,10 +177,10 @@ entry:
 ; velox/optimized/CastExpr.cpp.ll
 ; velox/optimized/md5.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i64
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -197,7 +204,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 

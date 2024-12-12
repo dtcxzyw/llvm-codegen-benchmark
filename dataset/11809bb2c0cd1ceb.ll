@@ -8,20 +8,20 @@
 ; spike/optimized/vsm_v.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65535
   %3 = add nuw nsw i64 %2, 65520
   %4 = and i64 %0, 65535
   %5 = add nuw nsw i64 %3, %4
-  %6 = icmp ugt i64 %5, 65520
+  %6 = icmp samesign ugt i64 %5, 65520
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/synaptics.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 255
   %3 = add nuw nsw i64 %2, -2049

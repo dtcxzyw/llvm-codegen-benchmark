@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	slli	a0, a0, 48
 	li	a3, 15
 	srli	a0, a0, 48
@@ -9,7 +9,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	slli	a1, a1, 48
 	lui	a3, 8
 	addiw	a3, a3, 6
@@ -23,7 +23,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	slli	a1, a1, 48
 	andi	a2, a2, 1023
 	srli	a1, a1, 48
@@ -32,7 +32,7 @@ func0000000000000014:                   # @func0000000000000014
 	sltiu	a1, a1, 16
 	and	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	slli	a1, a1, 48
 	andi	a2, a2, 255
 	srli	a1, a1, 48
@@ -43,18 +43,7 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
-	slli	a1, a1, 48
-	andi	a2, a2, 12
-	srli	a1, a1, 48
-	addi	a2, a2, -12
-	snez	a2, a2
-	addi	a1, a1, -3
-	and	a0, a0, a2
-	snez	a1, a1
-	and	a0, a0, a1
-	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	slli	a1, a1, 48
 	andi	a2, a2, 255
 	srli	a1, a1, 48
@@ -63,4 +52,19 @@ func000000000000001c:                   # @func000000000000001c
 	and	a0, a0, a2
 	snez	a1, a1
 	and	a0, a0, a1
+	ret
+func0000000000000184:                   # @func0000000000000184
+	slli	a0, a0, 48
+	slli	a2, a2, 48
+	lui	a3, 1
+	srli	a2, a2, 50
+	addiw	a3, a3, -2045
+	xor	a2, a2, a3
+	lui	a3, 16
+	srli	a0, a0, 48
+	addiw	a3, a3, -4
+	sltu	a0, a0, a3
+	snez	a2, a2
+	and	a0, a0, a1
+	and	a0, a0, a2
 	ret

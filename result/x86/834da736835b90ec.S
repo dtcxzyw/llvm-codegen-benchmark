@@ -43,19 +43,19 @@ func000000000000000f:                   # @func000000000000000f
 	shll	$20, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	leal	(%rsi,%rdx), %eax
-	shll	$16, %eax
-	orl	%edi, %eax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	leal	(%rsi,%rdx), %eax
-	shll	$8, %eax
+	shll	$16, %eax
 	orl	%edi, %eax
 	retq
 func0000000000000019:                   # @func0000000000000019
 	leal	(%rsi,%rdx), %eax
 	shll	$24, %eax
+	orl	%edi, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	leal	(%rsi,%rdx), %eax
+	shll	$16, %eax
 	orl	%edi, %eax
 	retq
 func000000000000000b:                   # @func000000000000000b

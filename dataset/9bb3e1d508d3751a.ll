@@ -1,5 +1,5 @@
 
-; 126 occurrences:
+; 128 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/extraUtilCube.c.ll
@@ -21,6 +21,7 @@
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; bullet3/optimized/btDeformableContactProjection.ll
@@ -50,6 +51,7 @@
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; lz4/optimized/xxhash.c.ll
 ; memcached/optimized/memcached-murmur3_hash.ll
 ; memcached/optimized/memcached_debug-murmur3_hash.ll

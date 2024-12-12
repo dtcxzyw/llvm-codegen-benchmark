@@ -1,5 +1,5 @@
 
-; 451 occurrences:
+; 448 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchDiv.c.ll
@@ -193,7 +193,6 @@
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/satTruth.c.ll
 ; abc/optimized/sbdCore.c.ll
-; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sscClass.c.ll
 ; abc/optimized/sscCore.c.ll
@@ -202,7 +201,6 @@
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/sswSat.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; abc/optimized/wlcAbs.c.ll
@@ -214,6 +212,9 @@
 ; arrow/optimized/crc32.cc.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/message.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/archive.cpp.ll
 ; clamav/optimized/autoit.c.ll
@@ -221,7 +222,6 @@
 ; clamav/optimized/rijndael.c.ll
 ; clamav/optimized/spin.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
-; cmake/optimized/archive_write_disk_set_standard_lookup.c.ll
 ; cmake/optimized/bzlib.c.ll
 ; cmake/optimized/crc32_fast.c.ll
 ; cmake/optimized/decompress.c.ll
@@ -383,14 +383,11 @@
 ; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll

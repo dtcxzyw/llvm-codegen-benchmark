@@ -13,6 +13,11 @@ func0000000000000005:                   # @func0000000000000005
 	setbe	%al
 	andb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	%rdx, %rsi
+	setb	%al
+	andb	%dil, %al
+	retq
 func0000000000000006:                   # @func0000000000000006
 	cmpq	%rdx, %rsi
 	setl	%al

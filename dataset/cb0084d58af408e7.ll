@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 57 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -56,7 +56,6 @@
 ; wireshark/optimized/packet-ixveriwave.c.ll
 ; wireshark/optimized/packet-nfapi.c.ll
 ; wireshark/optimized/packet-solaredge.c.ll
-; wireshark/optimized/wimax_utils.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0) #0 {

@@ -22,7 +22,8 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; openspiel/optimized/2048.cc.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i64 %0, i64 %1) #0 {
@@ -86,7 +87,7 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; clamav/optimized/lzwdec.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
@@ -96,6 +97,8 @@ entry:
 ; jemalloc/optimized/hpdata.sym.ll
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:

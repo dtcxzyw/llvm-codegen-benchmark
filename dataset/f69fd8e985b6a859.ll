@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; opencv/optimized/demosaicing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = mul i64 %0, 631360192512
   %2 = icmp ugt i64 %1, 2233382993920
@@ -14,7 +14,7 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0) #0 {
+define i1 @func000000000000002a(i64 %0) #0 {
 entry:
   %1 = mul i64 %0, 631360192512
   %2 = icmp sgt i64 %1, -1
@@ -27,7 +27,7 @@ entry:
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0) #0 {
+define i1 @func0000000000000026(i64 %0) #0 {
 entry:
   %1 = mul i64 %0, -4294967296
   %2 = icmp slt i64 %1, 4294967296

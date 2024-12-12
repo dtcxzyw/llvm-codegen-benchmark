@@ -1,5 +1,5 @@
 
-; 637 occurrences:
+; 639 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -22,6 +22,10 @@
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -380,7 +384,6 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -629,7 +632,6 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
 ; yosys/optimized/sta.ll
@@ -680,7 +682,7 @@ entry:
 define i64 @func0000000000000025(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = ashr exact i64 %0, 3
   %6 = add nsw i64 %5, %4
   ret i64 %6
@@ -705,7 +707,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr exact i64 %1, 3
   %6 = add i64 %4, %5
   ret i64 %6
@@ -726,7 +728,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 6
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr exact i64 %1, 3
   %6 = add i64 %4, %5
   ret i64 %6
@@ -759,7 +761,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr exact i64 %1, 3
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -788,7 +790,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = ashr exact i64 %0, 3
   %6 = add nsw i64 %5, %4
   ret i64 %6

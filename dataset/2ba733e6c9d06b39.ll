@@ -1,6 +1,9 @@
 
-; 1 occurrences:
+; 4 occurrences:
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1, i64 %2) #0 {
 entry:

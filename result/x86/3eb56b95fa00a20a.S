@@ -10,9 +10,15 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%esi, %esi
 	cmovnel	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movl	%edx, %eax
 	xorl	$1, %eax
 	cmpl	$4096, %esi                     # imm = 0x1000
+	cmovael	%edi, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movl	%edx, %eax
+	xorl	$32, %eax
+	cmpl	$26, %esi
 	cmovael	%edi, %eax
 	retq

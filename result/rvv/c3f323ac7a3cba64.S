@@ -9,7 +9,7 @@ func0000000000000004:                   # @func0000000000000004
 	flw	fa4, %lo(.LCPI0_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v12, v12, fa5
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	vmfgt.vf	v0, v8, fa4
 	ret
 .LCPI1_0:
@@ -23,7 +23,7 @@ func0000000000000002:                   # @func0000000000000002
 	flw	fa4, %lo(.LCPI1_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v12, v12, fa5
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	vmflt.vf	v0, v8, fa4
 	ret
 .LCPI2_0:

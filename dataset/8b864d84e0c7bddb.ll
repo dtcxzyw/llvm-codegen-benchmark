@@ -1,13 +1,14 @@
 
-; 371 occurrences:
+; 372 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/STEPFileEncoding.cpp.ll
+; boost/optimized/ipv6_address.ll
+; boost/optimized/topology.ll
 ; brotli/optimized/transform.c.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/XzIn.c.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/ishield.c.ll
 ; clamav/optimized/rawread.cpp.ll
@@ -127,6 +128,7 @@
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; logos-rs/optimized/5f38ll801i7djw99.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
@@ -188,7 +190,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -276,7 +277,6 @@
 ; qemu/optimized/hw_scsi_esp-pci.c.ll
 ; qemu/optimized/hw_usb_dev-audio.c.ll
 ; qemu/optimized/hw_usb_u2f-passthru.c.ll
-; qemu/optimized/i2c.c.ll
 ; qemu/optimized/scsi_utils.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; quickjs/optimized/libunicode.ll
@@ -310,9 +310,7 @@
 ; wireshark/optimized/aethra.c.ll
 ; wireshark/optimized/charsets.c.ll
 ; wireshark/optimized/commview.c.ll
-; wireshark/optimized/csids.c.ll
 ; wireshark/optimized/dot11decrypt.c.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/eyesdn.c.ll
@@ -324,7 +322,6 @@
 ; wireshark/optimized/ngsniffer.c.ll
 ; wireshark/optimized/packet-atm.c.ll
 ; wireshark/optimized/packet-bluetooth.c.ll
-; wireshark/optimized/packet-chdlc.c.ll
 ; wireshark/optimized/packet-cops.c.ll
 ; wireshark/optimized/packet-dect.c.ll
 ; wireshark/optimized/packet-dhcp.c.ll
@@ -355,7 +352,6 @@
 ; wireshark/optimized/pcap-common.c.ll
 ; wireshark/optimized/peekclassic.c.ll
 ; wireshark/optimized/peektagged.c.ll
-; wireshark/optimized/radcom.c.ll
 ; wireshark/optimized/snoop.c.ll
 ; wireshark/optimized/stanag4607.c.ll
 ; wireshark/optimized/tvbuff.c.ll
@@ -369,8 +365,13 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000005(i16 %0, i8 %1) #0 {
 entry:
@@ -494,7 +495,7 @@ entry:
   ret i16 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/uri.cc.ll
@@ -503,6 +504,8 @@ entry:
 ; minetest/optimized/mapnode.cpp.ll
 ; wireshark/optimized/packet-dect.c.ll
 ; wireshark/optimized/packet-e164.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000009(i16 %0, i8 %1) #0 {
 entry:
@@ -549,14 +552,13 @@ entry:
   ret i16 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; lief/optimized/instructions.cpp.ll
 ; linux/optimized/tx.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; openusd/optimized/level.cpp.ll
 ; postgres/optimized/numutils.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
-; tokio-rs/optimized/2i86qkpybymk1snv.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll

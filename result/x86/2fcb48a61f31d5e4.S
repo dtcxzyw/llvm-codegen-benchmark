@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
 	addq	%rsi, %rdx
 	subq	%rdx, %rdi
@@ -8,7 +8,7 @@ func0000000000000048:                   # @func0000000000000048
 func0000000000000001:                   # @func0000000000000001
 	movl	%edx, %eax
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 func0000000000000006:                   # @func0000000000000006

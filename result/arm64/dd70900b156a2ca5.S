@@ -1,117 +1,47 @@
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v1.8h, #10
-	movi	v2.8h, #2
-	movi	v4.4s, #28
-	movi	v5.4s, #16
-	cmeq	v1.8h, v0.8h, v1.8h
-	cmeq	v0.8h, v0.8h, v2.8h
-	sshll2	v2.4s, v1.8h, #0
-	sshll2	v3.4s, v0.8h, #0
-	sshll	v1.4s, v1.4h, #0
-	sshll	v0.4s, v0.4h, #0
-	bic	v2.16b, v2.16b, v3.16b
-	and	v3.16b, v3.16b, v5.16b
-	bic	v1.16b, v1.16b, v0.16b
-	and	v0.16b, v0.16b, v5.16b
-	and	v2.16b, v2.16b, v4.16b
-	and	v4.16b, v1.16b, v4.16b
-	orr	v1.16b, v3.16b, v2.16b
-	orr	v0.16b, v0.16b, v4.16b
+	and	w9, w0, #0xffff
+	mov	w8, #28                         // =0x1c
+	cmp	w9, #10
+	csel	w8, w8, wzr, eq
+	cmp	w9, #2
+	mov	w9, #16                         // =0x10
+	csel	w0, w9, w8, eq
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	mov	w8, #10000                      // =0x2710
-	movi	v3.4s, #5
-	movi	v4.4s, #4
-	dup	v1.8h, w8
-	mov	w8, #1000                       // =0x3e8
-	dup	v2.8h, w8
-	cmhi	v1.8h, v1.8h, v0.8h
-	cmhi	v0.8h, v2.8h, v0.8h
-	sshll2	v5.4s, v1.8h, #0
-	sshll	v1.4s, v1.4h, #0
-	mov	v2.16b, v1.16b
-	mov	v1.16b, v5.16b
-	bsl	v2.16b, v4.16b, v3.16b
-	bsl	v1.16b, v4.16b, v3.16b
-	movi	v3.4s, #3
-	sshll	v4.4s, v0.4h, #0
-	sshll2	v0.4s, v0.8h, #0
-	bit	v1.16b, v3.16b, v0.16b
-	mov	v0.16b, v4.16b
-	bsl	v0.16b, v3.16b, v2.16b
+	ubfx	w9, w0, #4, #12
+	mov	w8, #4                          // =0x4
+	and	w10, w0, #0xffff
+	cmp	w9, #625
+	mov	w9, #3                          // =0x3
+	cinc	w8, w8, hs
+	cmp	w10, #1000
+	csel	w0, w9, w8, lo
 	ret
                                         // -- End function
-func0000000000000081:                   // @func0000000000000081
+func0000000000000108:                   // @func0000000000000108
 // %bb.0:                               // %entry
-	movi	v1.8h, #8
-	mov	w8, #1                          // =0x1
-	movi	v4.8h, #11
-	movk	w8, #3584, lsl #16
-	dup	v2.4s, w8
-	mov	w8, #1                          // =0x1
-	movk	w8, #15872, lsl #16
-	cmhi	v1.8h, v0.8h, v1.8h
-	cmeq	v0.8h, v0.8h, v4.8h
-	dup	v4.4s, w8
-	sshll	v3.4s, v1.4h, #0
-	sshll2	v1.4s, v1.8h, #0
-	and	v5.16b, v3.16b, v2.16b
-	and	v2.16b, v1.16b, v2.16b
-	mvn	v1.16b, v1.16b
-	mvn	v3.16b, v3.16b
-	sub	v1.4s, v2.4s, v1.4s
-	sshll	v2.4s, v0.4h, #0
-	sshll2	v0.4s, v0.8h, #0
-	sub	v3.4s, v5.4s, v3.4s
-	bit	v1.16b, v4.16b, v0.16b
-	mov	v0.16b, v2.16b
-	bsl	v0.16b, v4.16b, v3.16b
+	and	w9, w0, #0xffff
+	mov	w8, #49152                      // =0xc000
+	mov	w10, #61440                     // =0xf000
+	cmp	w9, #10
+	csel	w8, w10, w8, hi
+	cmp	w9, #12
+	mov	w9, #7168                       // =0x1c00
+	movk	w9, #2, lsl #16
+	csel	w0, w9, w8, hi
 	ret
                                         // -- End function
-func0000000000000088:                   // @func0000000000000088
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	movi	v1.8h, #10
-	movi	v2.8h, #12
-	mov	w8, #7168                       // =0x1c00
-	movi	v3.4s, #192, lsl #8
-	movi	v4.4s, #240, lsl #8
-	movk	w8, #2, lsl #16
-	cmhi	v1.8h, v0.8h, v1.8h
-	cmhi	v0.8h, v0.8h, v2.8h
-	sshll2	v5.4s, v1.8h, #0
-	sshll	v1.4s, v1.4h, #0
-	mov	v2.16b, v1.16b
-	mov	v1.16b, v5.16b
-	bsl	v1.16b, v4.16b, v3.16b
-	bsl	v2.16b, v4.16b, v3.16b
-	sshll	v3.4s, v0.4h, #0
-	sshll2	v0.4s, v0.8h, #0
-	dup	v4.4s, w8
-	bit	v1.16b, v4.16b, v0.16b
-	mov	v0.16b, v3.16b
-	bsl	v0.16b, v4.16b, v2.16b
-	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
-	movi	v1.8h, #7
-	movi	v3.4s, #2, lsl #8
-	movi	v4.4s, #3, lsl #8
-	cmeq	v2.8h, v0.8h, v1.8h
-	cmhi	v0.8h, v0.8h, v1.8h
-	sshll2	v5.4s, v2.8h, #0
-	sshll	v2.4s, v2.4h, #0
-	mov	v1.16b, v5.16b
-	bsl	v2.16b, v4.16b, v3.16b
-	bsl	v1.16b, v4.16b, v3.16b
-	movi	v3.4s, #12, lsl #8
-	sshll	v4.4s, v0.4h, #0
-	sshll2	v0.4s, v0.8h, #0
-	bit	v1.16b, v3.16b, v0.16b
-	mov	v0.16b, v4.16b
-	bsl	v0.16b, v3.16b, v2.16b
+	and	w9, w0, #0xffff
+	mov	w8, #512                        // =0x200
+	cmp	w9, #7
+	mov	w9, #768                        // =0x300
+	csel	w8, w9, w8, eq
+	mov	w9, #3072                       // =0xc00
+	csel	w0, w9, w8, hi
 	ret
                                         // -- End function

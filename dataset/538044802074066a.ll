@@ -11,15 +11,15 @@
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/md.ll
 ; linux/optimized/netdev.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; miniaudio/optimized/unity.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; openjdk/optimized/hb-ot-shape.ll
-; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %0, 1
+  %2 = and i32 %0, 32768
   %3 = icmp eq i32 %2, 0
   ret i1 %3
 }

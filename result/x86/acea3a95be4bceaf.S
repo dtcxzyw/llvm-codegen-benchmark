@@ -1,11 +1,11 @@
-func000000000000001f:                   # @func000000000000001f
-	shll	$10, %esi
-	leal	65536(%rsi,%rdi), %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	shll	$22, %esi
 	leal	4194304(%rsi), %eax
 	orl	%edi, %eax
+	retq
+func000000000000001f:                   # @func000000000000001f
+	shll	$22, %esi
+	leal	1013972992(%rsi,%rdi), %eax
 	retq
 func000000000000001a:                   # @func000000000000001a
 	shll	$13, %esi

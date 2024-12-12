@@ -16,7 +16,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 16
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = ashr i32 %3, 16
   ret i32 %4
 }
@@ -28,7 +28,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = ashr i32 %3, 16
   ret i32 %4
 }

@@ -11,7 +11,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 64, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

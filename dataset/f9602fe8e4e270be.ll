@@ -22,15 +22,14 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; clamav/optimized/mbr.c.ll
 ; hdf5/optimized/H5EAcache.c.ll
-; quantlib/optimized/tapcorrelations.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %0, %1
-  %3 = add i64 %0, 8
+  %2 = mul i64 %1, %0
+  %3 = add i64 %0, 10
   %4 = add i64 %3, %2
   ret i64 %4
 }

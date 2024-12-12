@@ -39,14 +39,13 @@ entry:
   ret i8 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; clamav/optimized/bytecode_vm.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; icu/optimized/emojiprops.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_uprobe.ll

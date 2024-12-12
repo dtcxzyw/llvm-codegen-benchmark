@@ -17,7 +17,7 @@
 ; openusd/optimized/usdtree.cpp.ll
 ; proxygen/optimized/Logging.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -34,7 +34,7 @@ entry:
 ; libquic/optimized/quic_framer.cc.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000061(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -64,7 +64,7 @@ entry:
 ; luau/optimized/Autocomplete.cpp.ll
 ; luau/optimized/ConstraintGenerator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000068(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

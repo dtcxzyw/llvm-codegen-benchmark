@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; hwloc/optimized/bitmap.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libwebp/optimized/lossless.c.ll
-; linux/optimized/blk-settings.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {

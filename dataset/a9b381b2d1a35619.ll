@@ -48,7 +48,7 @@
 ; minetest/optimized/texturesource.cpp.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, 32
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; entt/optimized/storage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000908(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, 32
@@ -75,7 +75,7 @@ entry:
 ; cvc5/optimized/term_tuple_enumerator.cpp.ll
 ; redis/optimized/debug.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp eq i64 %0, 1

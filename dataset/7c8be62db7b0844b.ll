@@ -1,11 +1,10 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; git/optimized/submodule--helper.ll
 ; hdf5/optimized/H5Olink.c.ll
 ; linux/optimized/intel_sdvo.ll
-; linux/optimized/keyboard.ll
 ; linux/optimized/pcm_native.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; openusd/optimized/patchTableFactory.cpp.ll

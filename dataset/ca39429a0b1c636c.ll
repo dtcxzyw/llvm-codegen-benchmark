@@ -43,12 +43,12 @@ entry:
 ; g2o/optimized/edge_se2_odom_differential_calib.cpp.ll
 ; g2o/optimized/edge_se2_sensor_calib.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 4
   %4 = zext nneg i32 %3 to i64
   %5 = sub nuw nsw i64 %1, %4
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

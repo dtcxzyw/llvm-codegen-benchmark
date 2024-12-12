@@ -15,7 +15,7 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -29,6 +29,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/subdivision2d.cpp.ll
 ; raylib/optimized/rmodels.c.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002a(float %0, float %1, float %2) #0 {
 entry:

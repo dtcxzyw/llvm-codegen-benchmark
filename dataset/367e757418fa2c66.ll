@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 5
   %4 = icmp ne i32 %3, 0
@@ -25,7 +25,7 @@ entry:
 ; ncnn/optimized/padding_x86_fma.cpp.ll
 ; openjdk/optimized/loopTransform.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = icmp eq i32 %3, 192
@@ -42,7 +42,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = icmp ne i32 %3, 144
@@ -58,7 +58,7 @@ entry:
 ; opencv/optimized/stereobm.cpp.ll
 ; php/optimized/html.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65534
   %4 = icmp ne i32 %3, 65534
@@ -81,7 +81,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16384
   %4 = icmp eq i32 %3, 0
@@ -98,7 +98,7 @@ entry:
 ; llvm/optimized/SplitKit.cpp.ll
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65280
   %4 = icmp ne i32 %3, 1536
@@ -109,22 +109,9 @@ entry:
 }
 
 ; 1 occurrences:
-; slurm/optimized/job_mgr.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 32768
-  %4 = icmp eq i32 %3, 0
-  %5 = icmp ugt i32 %1, 2
-  %6 = and i1 %5, %4
-  %7 = select i1 %6, i1 %0, i1 false
-  ret i1 %7
-}
-
-; 1 occurrences:
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 14
   %4 = icmp ne i32 %3, 4
@@ -137,7 +124,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/cmHexFileConverter.cxx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0

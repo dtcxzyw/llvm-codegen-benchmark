@@ -149,7 +149,7 @@ entry:
   ret i32 %2
 }
 
-; 28 occurrences:
+; 25 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; linux/optimized/amd.ll
@@ -158,15 +158,12 @@ entry:
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/knc.ll
 ; linux/optimized/kvm.ll
-; linux/optimized/kvmclock.ll
 ; linux/optimized/lbr.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; linux/optimized/p6.ll
 ; linux/optimized/pcmcia_resource.ll
 ; linux/optimized/process.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/step.ll
-; linux/optimized/tsx.ll
 ; linux/optimized/uncore_nhmex.ll
 ; linux/optimized/uncore_snb.ll
 ; linux/optimized/uncore_snbep.ll

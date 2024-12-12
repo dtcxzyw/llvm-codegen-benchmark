@@ -1,6 +1,5 @@
 
-; 12 occurrences:
-; proj/optimized/coordinateoperationfactory.cpp.ll
+; 11 occurrences:
 ; rocksdb/optimized/blob_compaction_filter.cc.ll
 ; rocksdb/optimized/blob_db_impl.cc.ll
 ; rocksdb/optimized/blob_garbage_meter.cc.ll
@@ -13,7 +12,7 @@
 ; ruby/optimized/dir.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -26,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/Autocomplete.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -39,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Clang.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000188(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

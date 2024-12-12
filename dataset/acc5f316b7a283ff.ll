@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; cmake/optimized/fse_compress.c.ll
 ; icu/optimized/utrace.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -18,6 +18,7 @@
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; yosys/optimized/ice40_braminit.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {

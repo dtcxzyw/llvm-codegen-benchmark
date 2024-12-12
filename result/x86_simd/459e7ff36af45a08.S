@@ -8,7 +8,7 @@ func0000000000000016:                   # @func0000000000000016
 	vpor	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 func000000000000001f:                   # @func000000000000001f
 	vpor	%ymm2, %ymm1, %ymm1

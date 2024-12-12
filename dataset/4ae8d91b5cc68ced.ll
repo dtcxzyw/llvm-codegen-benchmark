@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
 ; abc/optimized/bmcCexMin1.c.ll
@@ -11,6 +11,7 @@
 ; freetype/optimized/ftbitmap.c.ll
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
+; openjdk/optimized/check_code.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
@@ -21,15 +22,16 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; luajit/optimized/lj_parse.ll
-; luajit/optimized/lj_parse_dyn.ll
+; 4 occurrences:
+; git/optimized/wildmatch.ll
+; icu/optimized/uniset.ll
+; lightgbm/optimized/bin.cpp.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 60
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp samesign ugt i32 %3, %1
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -52,9 +54,8 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; cpython/optimized/unicodeobject.ll
-; linux/optimized/i915_irq.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
@@ -65,10 +66,10 @@ entry:
 ; openjdk/optimized/cmsintrp.ll
 ; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp samesign ult i32 %3, %1
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -101,10 +102,23 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000019(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
-  %4 = icmp uge i32 %3, %1
+  %4 = icmp samesign uge i32 %3, %1
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; clamav/optimized/pe.c.ll
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 65535
+  %4 = icmp ugt i32 %3, %1
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -143,6 +157,17 @@ define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = icmp sgt i32 %3, %1
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; libwebp/optimized/predictor_enc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 255
+  %4 = icmp samesign ule i32 %3, %1
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }

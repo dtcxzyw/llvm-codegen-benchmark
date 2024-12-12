@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	64                              # 0x40
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpaddd	%xmm1, %xmm2, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vpextrd	$1, %xmm1, %ecx
@@ -29,7 +29,7 @@ func0000000000000034:                   # @func0000000000000034
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	vpaddd	%xmm1, %xmm2, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vpextrd	$1, %xmm1, %ecx

@@ -27,3 +27,9 @@ func0000000000000008:                   # @func0000000000000008
 	subl	%esi, %eax
 	shll	$8, %eax
 	retq
+func0000000000000015:                   # @func0000000000000015
+	movl	%edi, %eax
+	imull	%edx, %esi
+	subl	%esi, %eax
+	shll	$8, %eax
+	retq

@@ -1,10 +1,10 @@
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	addi	a1, a1, 1
 	andi	a1, a1, 254
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addi	a1, a1, 1
 	andi	a1, a1, 254
 	seqz	a1, a1
@@ -18,19 +18,13 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a1, a1, 63
 	and	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
-	addi	a1, a1, -1
-	andi	a1, a1, 254
-	sltiu	a1, a1, 6
-	and	a0, a0, a1
-	ret
 func0000000000000001:                   # @func0000000000000001
 	addiw	a1, a1, -1
 	andi	a1, a1, -3
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	lui	a2, 14
 	addiw	a2, a2, -1025
 	sub	a2, a2, a1
@@ -40,19 +34,13 @@ func000000000000001c:                   # @func000000000000001c
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
-	addi	a1, a1, 1
-	andi	a1, a1, 128
-	seqz	a1, a1
-	and	a0, a0, a1
-	ret
 func0000000000000004:                   # @func0000000000000004
 	addiw	a1, a1, 63
 	andi	a1, a1, -64
 	sltiu	a1, a1, 321
 	and	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addiw	a1, a1, -1
 	lui	a2, 524288
 	addiw	a2, a2, 1

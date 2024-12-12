@@ -57,19 +57,19 @@ func000000000000000d:                   # @func000000000000000d
 	vmflt.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret
-.LCPI9_0:
+func000000000000000e:                   # @func000000000000000e
+	fli.s	fa5, 0.5
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfrsub.vf	v8, v8, fa5
+	vmfeq.vv	v0, v8, v8
+	ret
+.LCPI10_0:
 	.word	0x2b8cbccc                      # float 9.99999996E-13
 func000000000000000a:                   # @func000000000000000a
-	lui	a0, %hi(.LCPI9_0)
-	flw	fa5, %lo(.LCPI9_0)(a0)
+	lui	a0, %hi(.LCPI10_0)
+	flw	fa5, %lo(.LCPI10_0)(a0)
 	fli.s	fa4, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfrsub.vf	v8, v8, fa4
 	vmfle.vf	v0, v8, fa5
-	ret
-func000000000000000e:                   # @func000000000000000e
-	fli.s	fa5, 1.0
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfrsub.vf	v8, v8, fa5
-	vmfeq.vv	v0, v8, v8
 	ret

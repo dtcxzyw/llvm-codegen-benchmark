@@ -10,7 +10,7 @@
 ; openssl/optimized/openssl-bin-ca.ll
 ; velox/optimized/Slice.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sext i1 %0 to i32
@@ -28,7 +28,7 @@ entry:
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sext i1 %0 to i32
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = sext i1 %0 to i32
@@ -76,6 +76,30 @@ entry:
   ret i1 %3
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a4(i64 %0, i1 %1) #0 {
+entry:
+  %2 = sext i1 %1 to i32
+  %3 = trunc nuw nsw i64 %0 to i32
+  %4 = add nsw i32 %3, %2
+  %5 = icmp ult i32 %4, 2
+  ret i1 %5
+}
+
+; 1 occurrences:
+; clamav/optimized/filtering.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000184(i64 %0, i1 %1) #0 {
+entry:
+  %2 = sext i1 %1 to i32
+  %3 = trunc nuw nsw i64 %0 to i32
+  %4 = add i32 %3, %2
+  %5 = icmp ult i32 %4, 2
+  ret i1 %5
+}
+
 ; 4 occurrences:
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
@@ -109,7 +133,7 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1) #0 {
 entry:
   %.neg = zext i1 %1 to i32
   %2 = trunc i64 %0 to i32

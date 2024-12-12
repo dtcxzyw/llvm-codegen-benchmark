@@ -1,5 +1,5 @@
 
-; 78 occurrences:
+; 81 occurrences:
 ; abc/optimized/cuddHarwell.c.ll
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
 ; assimp/optimized/MMDPmxParser.cpp.ll
@@ -60,6 +60,7 @@
 ; postgres/optimized/f2s.ll
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
+; postgres/optimized/procarray.ll
 ; qemu/optimized/hw_core_loader.c.ll
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; raylib/optimized/raudio.c.ll
@@ -72,12 +73,14 @@
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
-; wireshark/optimized/hcidump.c.ll
 ; wireshark/optimized/packet-ber.c.ll
+; wireshark/optimized/packet-opa-mad.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; yosys/optimized/register.ll
 ; yosys/optimized/verilog_backend.ll
 ; z3/optimized/lar_solver.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -87,7 +90,7 @@ entry:
   ret i1 %5
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; cmake/optimized/Base64.c.ll
 ; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -95,11 +98,9 @@ entry:
 ; folly/optimized/TcpInfo.cpp.ll
 ; hwloc/optimized/topology-linux.ll
 ; libzmq/optimized/ws_engine.cpp.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/namei_vfat.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/update.ll
-; llvm/optimized/CodeMoverUtils.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
@@ -115,6 +116,7 @@ entry:
 ; wireshark/optimized/packet-grpc.c.ll
 ; wolfssl/optimized/coding.c.ll
 ; yosys/optimized/verilog_backend.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -124,14 +126,10 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 9 occurrences:
 ; cpython/optimized/_codecs_cn.ll
 ; freetype/optimized/ftbase.c.ll
 ; luau/optimized/isocline.c.ll
-; openusd/optimized/fileIO.cpp.ll
-; openusd/optimized/prim.cpp.ll
-; openusd/optimized/schemaRegistry.cpp.ll
-; openusd/optimized/textFileFormat.cpp.ll
 ; postgres/optimized/like_support.ll
 ; qemu/optimized/block_qcow2-bitmap.c.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
@@ -147,17 +145,12 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
-; arrow/optimized/scalar.cc.ll
-; arrow/optimized/scalar_cast_temporal.cc.ll
-; arrow/optimized/value_parsing.cc.ll
+; 6 occurrences:
 ; libjpeg-turbo/optimized/rdtarga.c.ll
 ; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/e100.ll
-; linux/optimized/x509_cert_parser.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; wireshark/optimized/commview.c.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; wolfssl/optimized/coding.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
@@ -168,12 +161,41 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 4 occurrences:
+; openusd/optimized/fileIO.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/schemaRegistry.cpp.ll
+; openusd/optimized/textFileFormat.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %2, 64
+  %4 = select i1 %1, i1 true, i1 %3
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; opencv/optimized/stringutils.cpp.ll
 ; openusd/optimized/unicodeUtils.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, -65
+  %4 = select i1 %1, i1 true, i1 %3
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 4 occurrences:
+; arrow/optimized/scalar.cc.ll
+; arrow/optimized/scalar_cast_temporal.cc.ll
+; arrow/optimized/value_parsing.cc.ll
+; linux/optimized/x509_cert_parser.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i8 %2, 24
   %4 = select i1 %1, i1 true, i1 %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5

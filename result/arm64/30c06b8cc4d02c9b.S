@@ -1,40 +1,16 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
 	mov	w8, #-1                         // =0xffffffff
-	mov	x9, v0.d[1]
-	fmov	x10, d0
-	add	v0.2d, v1.2d, v3.2d
-	fmov	x11, d0
-	mov	x12, v0.d[1]
-	udiv	x10, x8, x10
-	udiv	x11, x8, x11
-	fmov	d0, x10
-	udiv	x9, x8, x9
-	fmov	d1, x11
-	udiv	x8, x8, x12
-	mov	v0.d[1], x9
-	mov	v1.d[1], x8
+	add	x9, x0, x1
+	udiv	x0, x8, x9
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
 	mov	x8, #4286578688                 // =0xff800000
+	add	x9, x0, x1
 	movk	x8, #35813, lsl #32
 	movk	x8, #2, lsl #48
-	mov	x9, v0.d[1]
-	fmov	x10, d0
-	add	v0.2d, v1.2d, v3.2d
-	fmov	x11, d0
-	mov	x12, v0.d[1]
-	udiv	x10, x8, x10
-	udiv	x11, x8, x11
-	fmov	d0, x10
-	udiv	x9, x8, x9
-	fmov	d1, x11
-	udiv	x8, x8, x12
-	mov	v0.d[1], x9
-	mov	v1.d[1], x8
+	udiv	x0, x8, x9
 	ret
                                         // -- End function

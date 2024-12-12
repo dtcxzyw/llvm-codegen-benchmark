@@ -8,7 +8,7 @@
 ; quantlib/optimized/pathwiseproductcallspecified.ll
 ; wasmedge/optimized/codegen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000241(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = add i64 %0, 1
@@ -22,7 +22,7 @@ entry:
 ; gromacs/optimized/mshift.cpp.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = sub i64 %2, %0
@@ -39,7 +39,7 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = add i64 %0, 31
@@ -54,7 +54,7 @@ entry:
 ; casadi/optimized/sparsity.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = add nsw i64 %0, 1

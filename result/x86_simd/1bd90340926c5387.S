@@ -6,7 +6,7 @@ func0000000000000002:                   # @func0000000000000002
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	retq
 .LCPI1_0:
-	.zero	16,8
+	.zero	16,5
 .LCPI1_1:
 	.zero	16,3
 .LCPI1_2:

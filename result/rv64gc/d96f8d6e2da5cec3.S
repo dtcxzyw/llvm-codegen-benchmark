@@ -43,5 +43,5 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a0, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a0)
 	fdiv.d	fa5, fa5, fa1
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	ret

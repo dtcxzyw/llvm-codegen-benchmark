@@ -19,7 +19,7 @@ func0000000000000154:                   # @func0000000000000154
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v24, v16, fa5
-	vmor.mm	v16, v24, v0
+	vmor.mm	v16, v0, v24
 	vmfle.vf	v17, v8, fa5
 	vmor.mm	v0, v16, v17
 	ret

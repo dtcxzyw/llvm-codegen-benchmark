@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
+; zed-rs/optimized/8tfe8wg5a4084yrh8oiqzl6uy.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -10,7 +11,7 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
 ; rayon-rs/optimized/2xi93mrj8f00xnic.ll
@@ -19,6 +20,7 @@ entry:
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; zed-rs/optimized/8tfe8wg5a4084yrh8oiqzl6uy.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -145,7 +147,7 @@ entry:
 ; wireshark/optimized/wireshark_zip_helper.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = sub i64 %0, %1
@@ -154,20 +156,9 @@ entry:
 }
 
 ; 1 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sdiv i64 %2, 2
-  %4 = sub nsw i64 %0, %1
-  %5 = icmp eq i64 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; ceres/optimized/visibility.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 48
   %4 = sub nsw i64 %0, %1
@@ -179,7 +170,7 @@ entry:
 ; casadi/optimized/integration_tools.cpp.ll
 ; ceres/optimized/visibility.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 48
   %4 = sub nsw i64 %0, %1
@@ -191,7 +182,7 @@ entry:
 ; redis/optimized/cluster_legacy.ll
 ; redis/optimized/sentinel.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
   %4 = sub nsw i64 %0, %1
@@ -202,7 +193,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = sub nuw i64 %0, %1
@@ -213,7 +204,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = sub i64 %0, %1
@@ -224,7 +215,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = sub nsw i64 %0, %1
@@ -235,7 +226,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 40
   %4 = sub nuw nsw i64 %0, %1

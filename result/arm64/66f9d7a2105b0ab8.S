@@ -34,13 +34,13 @@ func0000000000000016:                   // @func0000000000000016
 	add	x0, x0, x8, lsl #3
 	ret
                                         // -- End function
-func000000000000003e:                   // @func000000000000003e
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	add	x8, x1, x2
 	add	x0, x0, x8, lsl #1
 	ret
                                         // -- End function
-func0000000000000036:                   // @func0000000000000036
+func0000000000000037:                   // @func0000000000000037
 // %bb.0:                               // %entry
 	add	x8, x1, x2
 	add	x0, x0, x8, lsl #5
@@ -106,15 +106,33 @@ func0000000000000020:                   // @func0000000000000020
 	add	x0, x0, x8, lsl #4
 	ret
                                         // -- End function
+func0000000000000036:                   // @func0000000000000036
+// %bb.0:                               // %entry
+	add	x8, x1, x2
+	add	x0, x0, x8, lsl #4
+	ret
+                                        // -- End function
+func000000000000000f:                   // @func000000000000000f
+// %bb.0:                               // %entry
+	add	x8, x1, x2
+	add	x0, x0, x8, lsl #2
+	ret
+                                        // -- End function
+func000000000000003b:                   // @func000000000000003b
+// %bb.0:                               // %entry
+	add	x8, x1, x2
+	add	x0, x0, x8, lsl #1
+	ret
+                                        // -- End function
+func0000000000000003:                   // @func0000000000000003
+// %bb.0:                               // %entry
+	add	x8, x1, x2
+	add	x0, x0, x8, lsl #1
+	ret
+                                        // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
 	add	x8, x1, x2
 	add	x0, x0, x8, lsl #5
-	ret
-                                        // -- End function
-func000000000000000e:                   // @func000000000000000e
-// %bb.0:                               // %entry
-	add	x8, x1, x2
-	add	x0, x0, x8, lsl #3
 	ret
                                         // -- End function

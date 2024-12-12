@@ -14,7 +14,7 @@ entry:
   %3 = sitofp i32 %2 to float
   %4 = fdiv float %1, %3
   %5 = fpext float %4 to double
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

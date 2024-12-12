@@ -1,8 +1,15 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	shlq	$4, %rdx
+	addq	%rdx, %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	shlq	$6, %rdx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
 	addq	%rdx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000

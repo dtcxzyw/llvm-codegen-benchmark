@@ -12,15 +12,16 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/resFilter.c.ll
+; boost/optimized/alloc_lib.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nuw i32 1, %3
-  %5 = or i32 %4, %1
-  %6 = and i32 %5, %0
+  %5 = or i32 %1, %4
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 

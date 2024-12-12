@@ -1,5 +1,5 @@
 
-; 116 occurrences:
+; 120 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; bullet3/optimized/MultiBodyTreeImpl.ll
 ; bullet3/optimized/btBatchedConstraints.ll
@@ -41,6 +41,7 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libjpeg-turbo/optimized/jfdctflt.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
@@ -116,12 +117,15 @@
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0.000000e+00
-  %4 = fadd float %3, %1
-  %5 = fadd float %4, %0
+  %4 = fadd float %1, %3
+  %5 = fadd float %0, %4
   ret float %5
 }
 

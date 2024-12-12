@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; eastl/optimized/TestAtomicBasic.cpp.ll
 ; linux/optimized/netpoll.ll
 ; postgres/optimized/nbtpage.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
@@ -24,9 +25,8 @@ entry:
   ret i16 %4
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; postgres/optimized/brin_pageops.ll
-; postgres/optimized/brin_revmap.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/ginfast.ll

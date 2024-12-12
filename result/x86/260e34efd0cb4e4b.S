@@ -56,7 +56,7 @@ func000000000000007d:                   # @func000000000000007d
 func0000000000000077:                   # @func0000000000000077
 	leal	(%rsi,%rsi,4), %eax
 	movzbl	%dil, %ecx
-	leal	-480(%rcx,%rax,2), %eax
+	leal	-48(%rcx,%rax,2), %eax
 	retq
 func0000000000000040:                   # @func0000000000000040
 	leal	(%rsi,%rsi,4), %eax

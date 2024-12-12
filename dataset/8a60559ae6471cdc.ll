@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/gregorian.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_zoneinfo.ll
 ; icu/optimized/cecal.ll
@@ -12,7 +13,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sdiv i32 %1, -100
   %5 = add i32 %3, %4
   ret i32 %5
@@ -27,7 +28,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 100
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sdiv i32 %1, -400
   %5 = add nsw i32 %3, %4
   ret i32 %5
@@ -39,7 +40,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sdiv i32 %1, -100
   %5 = add i32 %3, %4
   ret i32 %5
@@ -51,7 +52,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, -100
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sdiv i32 %1, 400
   %5 = add nsw i32 %3, %4
   ret i32 %5

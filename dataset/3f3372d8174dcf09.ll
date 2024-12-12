@@ -1,5 +1,5 @@
 
-; 586 occurrences:
+; 583 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -59,6 +59,8 @@
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; assimp/optimized/DeboneProcess.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/to_chars.ll
 ; casadi/optimized/propagating_sparsity.cpp.ll
 ; clamav/optimized/inflate64.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -114,9 +116,6 @@
 ; jemalloc/optimized/base.ll
 ; jemalloc/optimized/base.pic.ll
 ; jemalloc/optimized/base.sym.ll
-; jemalloc/optimized/bin.ll
-; jemalloc/optimized/bin.pic.ll
-; jemalloc/optimized/bin.sym.ll
 ; jemalloc/optimized/buf_writer.ll
 ; jemalloc/optimized/buf_writer.pic.ll
 ; jemalloc/optimized/buf_writer.sym.ll
@@ -397,8 +396,6 @@
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
-; redis/optimized/bin.ll
-; redis/optimized/bin.sym.ll
 ; redis/optimized/buf_writer.ll
 ; redis/optimized/buf_writer.sym.ll
 ; redis/optimized/eset.ll
@@ -595,11 +592,10 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; qemu/optimized/hw_display_ati.c.ll
-; qemu/optimized/target_riscv_machine.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
@@ -607,7 +603,7 @@ define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
   %3 = trunc nuw i64 %2 to i32
-  %4 = and i32 %3, 3
+  %4 = and i32 %3, 1
   ret i32 %4
 }
 

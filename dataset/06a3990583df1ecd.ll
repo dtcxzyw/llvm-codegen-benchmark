@@ -1,9 +1,8 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
 ; linux/optimized/cache.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/indirect.ll
 ; linux/optimized/mmap.ll
 ; linux/optimized/mtrr.ll

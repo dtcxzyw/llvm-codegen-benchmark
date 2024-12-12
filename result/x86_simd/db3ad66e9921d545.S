@@ -74,7 +74,7 @@ func000000000000001e:                   # @func000000000000001e
 	.quad	1023                            # 0x3ff
 func000000000000001a:                   # @func000000000000001a
 	vpmullq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$18, %ymm0, %ymm0
 	vpandq	.LCPI4_1(%rip){1to4}, %ymm0, %ymm0
 	retq

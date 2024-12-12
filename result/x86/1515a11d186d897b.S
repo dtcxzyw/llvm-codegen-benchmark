@@ -1,4 +1,4 @@
-func000000000000029a:                   # @func000000000000029a
+func000000000000052a:                   # @func000000000000052a
 	andl	$1, %edx
 	shll	$10, %edx
 	orl	$107, %edx
@@ -8,7 +8,7 @@ func000000000000029a:                   # @func000000000000029a
 	addl	%edi, %eax
 	setns	%al
 	retq
-func0000000000000288:                   # @func0000000000000288
+func0000000000000508:                   # @func0000000000000508
 	testb	$1, %dl
 	movl	$-1980, %eax                    # imm = 0xF844
 	movl	$-1880, %ecx                    # imm = 0xF8A8

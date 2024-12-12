@@ -26,3 +26,12 @@ func0000000000000016:                   # @func0000000000000016
 	vpaddq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$10, %ymm0, %ymm0
 	retq
+.LCPI3_0:
+	.quad	-2                              # 0xfffffffffffffffe
+func000000000000000a:                   # @func000000000000000a
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
+	vpsrlq	$1, %ymm0, %ymm0
+	retq

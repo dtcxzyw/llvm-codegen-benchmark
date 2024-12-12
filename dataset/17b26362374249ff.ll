@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000424(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000844(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 6
   %4 = trunc i64 %3 to i32
@@ -22,7 +22,7 @@ entry:
 ; gromacs/optimized/localtopologychecker.cpp.ll
 ; opencv/optimized/reshape_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000726(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000e46(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32

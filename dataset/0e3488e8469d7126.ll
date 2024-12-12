@@ -1,8 +1,13 @@
 
-; 1 occurrences:
+; 6 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/object_name.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 7
   %not. = xor i1 %0, true
@@ -38,7 +43,7 @@ entry:
 ; cmake/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 8
   %3 = select i1 %0, i1 true, i1 %2
@@ -48,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -19
   %3 = icmp ult i64 %2, -15
@@ -63,7 +68,7 @@ entry:
 ; g2o/optimized/types_seven_dof_expmap.cpp.ll
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 2
   %3 = select i1 %0, i1 true, i1 %2

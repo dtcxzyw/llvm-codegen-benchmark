@@ -1,13 +1,11 @@
 
-; 10 occurrences:
+; 8 occurrences:
 ; clamav/optimized/binhex.c.ll
 ; clamav/optimized/disasm.c.ll
 ; libquic/optimized/a_int.c.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/sit.ll
 ; llvm/optimized/Instructions.cpp.ll
-; openssl/optimized/libssl-lib-s3_msg.ll
-; openssl/optimized/libssl-shlib-s3_msg.ll
 ; openssl/optimized/openssl-bin-ocsp.ll
 ; openssl/optimized/openssl-bin-pkey.ll
 ; Function Attrs: nounwind
@@ -20,7 +18,7 @@ entry:
   ret i1 %5
 }
 
-; 47 occurrences:
+; 45 occurrences:
 ; c3c/optimized/llvm_codegen.c.ll
 ; c3c/optimized/llvm_codegen_type.c.ll
 ; c3c/optimized/sema_liveness.c.ll
@@ -48,8 +46,6 @@ entry:
 ; luau/optimized/isocline.c.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
-; nuttx/optimized/mq_timedreceive.c.ll
-; nuttx/optimized/mq_timedsend.c.ll
 ; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/pngrtran.ll
 ; openjdk/optimized/pngset.ll
@@ -77,13 +73,11 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; gromacs/optimized/gmx_densorder.cpp.ll
 ; msdfgen/optimized/edge-segments.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
-; openssl/optimized/libssl-lib-s3_msg.ll
-; openssl/optimized/libssl-shlib-s3_msg.ll
 ; qemu/optimized/fdt_overlay.c.ll
 ; spike/optimized/fdt_overlay.ll
 ; Function Attrs: nounwind
@@ -91,8 +85,7 @@ define i1 @func0000000000000006(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = icmp slt i32 %0, 0
-  %not. = xor i1 %3, true
-  %5 = select i1 %not., i1 %4, i1 false
+  %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -106,17 +99,6 @@ define i1 @func000000000000000a(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = icmp sgt i32 %0, 0
-  %5 = select i1 %3, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/sit.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %1, i1 %2, i1 false
-  %4 = icmp ult i32 %0, 2
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }

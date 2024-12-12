@@ -1,16 +1,12 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	add	v0.4s, v0.4s, v1.4s
-	cmlt	v0.4s, v0.4s, #0
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
-	ret
-                                        // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	add	v0.4s, v0.4s, v1.4s
-	sshr	v0.4s, v0.4s, #18
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	add	w8, w0, w1
+	sbfx	x0, x8, #18, #14
+	ret
+                                        // -- End function
+func0000000000000000:                   // @func0000000000000000
+// %bb.0:                               // %entry
+	add	w8, w0, w1
+	sbfx	x0, x8, #18, #14
 	ret
                                         // -- End function

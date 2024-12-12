@@ -28,5 +28,5 @@ func0000000000000002:                   # @func0000000000000002
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
 	vpord	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1 {%k1}
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

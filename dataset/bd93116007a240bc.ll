@@ -1,10 +1,11 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; cvc5/optimized/transcendental_state.cpp.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000084(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000104(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i32 %0, 2
@@ -16,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; Function Attrs: nounwind
-define i8 @func00000000000000b0(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000130(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i32 %0, 0

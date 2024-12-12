@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 59 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/utilSort.c.ll
@@ -54,6 +54,7 @@
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/substitution.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/ODReader.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll
@@ -288,19 +289,6 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; opencv/optimized/plot.cpp.ll
-; openspiel/optimized/2048.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000017(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = shl nuw nsw i64 %0, 2
-  %6 = or disjoint i64 %5, %4
-  ret i64 %6
-}
-
 ; 1 occurrences:
 ; openspiel/optimized/twixtboard.cc.ll
 ; Function Attrs: nounwind
@@ -321,6 +309,18 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = shl i64 %0, 32
+  %6 = or disjoint i64 %5, %4
+  ret i64 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/plot.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000017(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = shl nuw nsw i64 %0, 32
   %6 = or disjoint i64 %5, %4
   ret i64 %6
 }

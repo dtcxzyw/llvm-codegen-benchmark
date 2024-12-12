@@ -1,5 +1,5 @@
 
-; 114 occurrences:
+; 116 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/giaResub.c.ll
@@ -21,6 +21,7 @@
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
@@ -31,6 +32,7 @@
 ; llvm/optimized/StatepointLowering.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; openjdk/optimized/xHeap.ll
 ; php/optimized/zend_inference.ll
@@ -118,17 +120,18 @@
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %1
-  %5 = and i64 %4, %0
+  %4 = and i64 %1, %3
+  %5 = and i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; hyperscan/optimized/match.c.ll
 ; linux/optimized/cpuset.ll
+; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -140,7 +143,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = and i64 %4, %0
   %6 = icmp ne i64 %5, 0
   ret i1 %6
@@ -152,7 +155,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = and i64 %4, %0
   %6 = icmp ult i64 %5, 4294967296
   ret i1 %6

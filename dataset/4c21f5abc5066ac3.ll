@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -12,6 +12,7 @@
 ; openssl/optimized/libcrypto-lib-sha3.ll
 ; openssl/optimized/libcrypto-shlib-sha3.ll
 ; rust-analyzer-rs/optimized/4uaufavgtitxbs81.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:

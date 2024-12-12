@@ -1,14 +1,15 @@
 
-%"struct.std::pair.2884112" = type { %"class.hermes::vm::GCSymbolID.2884113", %"struct.hermes::vm::NamedPropertyDescriptor.2884114" }
-%"class.hermes::vm::GCSymbolID.2884113" = type { %"class.hermes::vm::SymbolID.2884115" }
-%"class.hermes::vm::SymbolID.2884115" = type { i32 }
-%"struct.hermes::vm::NamedPropertyDescriptor.2884114" = type { %"struct.hermes::vm::PropertyDescriptor.2884116" }
-%"struct.hermes::vm::PropertyDescriptor.2884116" = type { %union.anon.3.2884117, i32 }
-%union.anon.3.2884117 = type { i32 }
+%"struct.std::pair.3078635" = type { %"class.hermes::vm::GCSymbolID.3078636", %"struct.hermes::vm::NamedPropertyDescriptor.3078637" }
+%"class.hermes::vm::GCSymbolID.3078636" = type { %"class.hermes::vm::SymbolID.3078638" }
+%"class.hermes::vm::SymbolID.3078638" = type { i32 }
+%"struct.hermes::vm::NamedPropertyDescriptor.3078637" = type { %"struct.hermes::vm::PropertyDescriptor.3078639" }
+%"struct.hermes::vm::PropertyDescriptor.3078639" = type { %union.anon.3.3078640, i32 }
+%union.anon.3.3078640 = type { i32 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/inffast.c.ll
 ; assimp/optimized/IFCUtil.cpp.ll
+; boost/optimized/src.ll
 ; clamav/optimized/chmd.c.ll
 ; clamav/optimized/unsp.c.ll
 ; cmake/optimized/inffast.c.ll
@@ -36,16 +37,16 @@
 ; yosys/optimized/fstapi.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
 
-; 232 occurrences:
+; 227 occurrences:
 ; clamav/optimized/yc.c.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
@@ -57,9 +58,6 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-static.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -204,8 +202,6 @@ entry:
 ; oiio/optimized/zfile.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
-; openjdk/optimized/hb-common.ll
-; openjdk/optimized/hb-ot-font.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -279,11 +275,11 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001e(ptr %0, i32 %1) #0 {
+define i64 @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 4
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -294,11 +290,11 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i32 %1) #0 {
+define i64 @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.std::pair.2884112", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::pair.3078635", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -331,18 +327,6 @@ entry:
   %2 = add i32 %1, -5
   %3 = zext i32 %2 to i64
   %4 = getelementptr i64, ptr %0, i64 %3
-  %5 = ptrtoint ptr %4 to i64
-  ret i64 %5
-}
-
-; 1 occurrences:
-; linux/optimized/dns_key.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -1
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

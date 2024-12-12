@@ -1,6 +1,7 @@
 
-; 59 occurrences:
+; 60 occurrences:
 ; casadi/optimized/fmu2.cpp.ll
+; flac/optimized/window.c.ll
 ; g2o/optimized/robust_kernel_impl.cpp.ll
 ; graphviz/optimized/spring_electrical.c.ll
 ; gromacs/optimized/colvaratoms.cpp.ll
@@ -62,7 +63,7 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
-  %3 = fmul double %2, 3.000000e+00
+  %3 = fmul double %2, -5.000000e-01
   %4 = fsub double %0, %1
   %5 = fmul double %4, %3
   ret double %5

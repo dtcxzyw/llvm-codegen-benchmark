@@ -1,7 +1,3 @@
-func0000000000000013:                   # @func0000000000000013
-	mul	a0, a0, a1
-	srliw	a0, a0, 20
-	ret
 func000000000000000a:                   # @func000000000000000a
 	mul	a0, a0, a1
 	srliw	a0, a0, 16
@@ -21,6 +17,14 @@ func0000000000000003:                   # @func0000000000000003
 func000000000000001b:                   # @func000000000000001b
 	mul	a0, a0, a1
 	srliw	a0, a0, 13
+	ret
+func000000000000001a:                   # @func000000000000001a
+	mul	a0, a0, a1
+	srliw	a0, a0, 8
+	ret
+func0000000000000013:                   # @func0000000000000013
+	mul	a0, a0, a1
+	srliw	a0, a0, 20
 	ret
 func0000000000000008:                   # @func0000000000000008
 	mul	a0, a0, a1

@@ -3,7 +3,7 @@ func0000000000000180:                   # @func0000000000000180
 	cmpq	$1, %rdx
 	sbbl	$-1, %eax
 	retq
-func0000000000000107:                   # @func0000000000000107
+func0000000000000307:                   # @func0000000000000307
 	leal	(%rdi,%rsi), %eax
 	cmpq	$33554432, %rdx                 # imm = 0x2000000
 	sbbl	$-1, %eax
@@ -36,7 +36,12 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	$1, %rdx
 	adcl	%esi, %eax
 	retq
-func000000000000010f:                   # @func000000000000010f
+func000000000000030f:                   # @func000000000000030f
+	leal	(%rdi,%rsi), %eax
+	cmpq	$2, %rdx
+	sbbl	$-1, %eax
+	retq
+func0000000000000300:                   # @func0000000000000300
 	leal	(%rdi,%rsi), %eax
 	cmpq	$2, %rdx
 	sbbl	$-1, %eax
@@ -53,7 +58,15 @@ func000000000000002f:                   # @func000000000000002f
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func0000000000000101:                   # @func0000000000000101
+func000000000000010f:                   # @func000000000000010f
+	movl	$4294967294, %ecx               # imm = 0xFFFFFFFE
+	xorl	%eax, %eax
+	cmpq	%rcx, %rdx
+	seta	%al
+	addl	%edi, %eax
+	addl	%esi, %eax
+	retq
+func0000000000000301:                   # @func0000000000000301
 	leal	(%rdi,%rsi), %eax
 	cmpq	$5, %rdx
 	sbbl	$-1, %eax

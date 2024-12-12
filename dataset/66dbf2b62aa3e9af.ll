@@ -1,6 +1,5 @@
 
-; 111 occurrences:
-; cmake/optimized/xmltok.c.ll
+; 106 occurrences:
 ; entt/optimized/helper.cpp.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/IPAddressV4.cpp.ll
@@ -12,8 +11,6 @@
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hyperscan/optimized/Parser.cpp.ll
-; hyperscan/optimized/control_verbs.cpp.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -87,7 +84,6 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
-; llvm/optimized/Archive.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll
 ; llvm/optimized/ParseStmtAsm.cpp.ll
@@ -98,7 +94,6 @@
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; luau/optimized/ltable.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
-; node/optimized/simdutf.ll
 ; openjdk/optimized/codeBuffer.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
@@ -112,9 +107,28 @@
 ; velox/optimized/Re2Functions.cpp.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  %6 = ptrtoint ptr %0 to i64
+  %7 = sub i64 %5, %6
+  ret i64 %7
+}
+
+; 7 occurrences:
+; cmake/optimized/xmltok.c.ll
+; hyperscan/optimized/Parser.cpp.ll
+; hyperscan/optimized/control_verbs.cpp.ll
+; hyperscan/optimized/fdr_compile.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; llvm/optimized/Archive.cpp.ll
+; node/optimized/simdutf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64

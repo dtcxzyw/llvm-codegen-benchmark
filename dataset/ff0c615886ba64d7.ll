@@ -12,7 +12,7 @@ entry:
   %2 = and i32 %1, -16
   %3 = icmp eq i32 %2, 16
   %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -36,7 +36,24 @@ entry:
   %2 = and i32 %1, 248
   %3 = icmp eq i32 %2, 136
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
+  ret i32 %5
+}
+
+; 6 occurrences:
+; llvm/optimized/ASTReaderDecl.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; raylib/optimized/raudio.c.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 16383
+  %3 = icmp ne i32 %2, 0
+  %4 = zext i1 %3 to i32
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -60,24 +77,7 @@ entry:
   %2 = and i32 %1, 516
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %0
-  ret i32 %5
-}
-
-; 6 occurrences:
-; grpc/optimized/ev_poll_posix.cc.ll
-; llvm/optimized/ASTReaderDecl.cpp.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 96
-  %3 = icmp ne i32 %2, 0
-  %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -87,12 +87,12 @@ entry:
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8388352
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

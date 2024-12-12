@@ -25,7 +25,9 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 .LCPI4_0:
 	.zero	16,2
+.LCPI4_1:
+	.zero	16,3
 func0000000000000004:                   # @func0000000000000004
-	vpcmpnltub	.LCPI4_0(%rip), %xmm0, %k1
-	vmovdqu8	%xmm0, %xmm0 {%k1} {z}
+	vpcmpltub	.LCPI4_0(%rip), %xmm0, %k1
+	vmovdqu8	.LCPI4_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
 	retq

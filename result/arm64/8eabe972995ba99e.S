@@ -1,28 +1,24 @@
-func0000000000000026:                   // @func0000000000000026
+func0000000000000046:                   // @func0000000000000046
 // %bb.0:                               // %entry
-	uzp2	v0.4s, v0.4s, v1.4s
-	movi	v1.4s, #2
-	cmle	v0.4s, v0.4s, #0
-	bic	v1.16b, v1.16b, v0.16b
-	sub	v0.4s, v1.4s, v0.4s
+	lsr	x9, x0, #32
+	mov	w8, #1                          // =0x1
+	cmp	w9, #1
+	cinc	w0, w8, ge
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	shrn	v0.2s, v0.2d, #3
-	shrn2	v0.4s, v1.2d, #3
-	movi	v1.4s, #64
-	cmeq	v0.4s, v0.4s, #0
-	bic	v0.16b, v1.16b, v0.16b
+	lsr	x8, x0, #3
+	cmp	w8, #0
+	cset	w8, ne
+	lsl	w0, w8, #6
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	shrn	v0.2s, v0.2d, #22
+	lsr	x9, x0, #22
 	mov	w8, #320                        // =0x140
-	shrn2	v0.4s, v1.2d, #22
-	dup	v1.4s, w8
-	cmeq	v0.4s, v0.4s, #0
-	bic	v0.16b, v1.16b, v0.16b
+	cmp	w9, #0
+	csel	w0, wzr, w8, eq
 	ret
                                         // -- End function

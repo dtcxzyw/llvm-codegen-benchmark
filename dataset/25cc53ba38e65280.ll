@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
@@ -19,6 +19,7 @@
 ; soc-simulator/optimized/sim_mycpu.ll
 ; spike/optimized/s_mul128MTo256M.ll
 ; vcpkg/optimized/uuid.cpp.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:

@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$31, %esi
 	shrl	$27, %edi
 	cmpl	%esi, %edi
@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andl	$1073741823, %esi               # imm = 0x3FFFFFFF
 	shrl	$2, %edi
 	cmpl	%esi, %edi

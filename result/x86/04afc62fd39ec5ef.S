@@ -1,16 +1,16 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	movzbl	%sil, %eax
 	imull	%edi, %eax
 	cmpl	$32776, %eax                    # imm = 0x8008
 	setae	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	movzbl	%sil, %eax
 	imull	%edi, %eax
 	testl	%eax, %eax
 	setg	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movzbl	%sil, %eax
 	imull	%edi, %eax
 	cmpl	$50, %eax
@@ -28,7 +28,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%eax, %eax
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	testl	%edi, %edi
 	sete	%cl
 	testb	%sil, %sil
@@ -41,36 +41,37 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%eax, %eax
 	setg	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func0000000000000006:                   # @func0000000000000006
+	movzbl	%sil, %eax
+	imull	%edi, %eax
+	testl	%eax, %eax
+	setle	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
 	movzbl	%sil, %eax
 	imull	%edi, %eax
 	testl	%eax, %eax
 	setg	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testl	%edi, %edi
 	sete	%cl
 	testb	%sil, %sil
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movzbl	%sil, %eax
 	imull	%edi, %eax
 	testl	%eax, %eax
 	sete	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+func00000000000000e6:                   # @func00000000000000e6
 	movzbl	%sil, %eax
 	imull	%edi, %eax
 	shrl	$31, %eax
 	retq
-func0000000000000076:                   # @func0000000000000076
-	movzbl	%sil, %eax
-	imull	%edi, %eax
-	shrl	$31, %eax
-	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	testl	%edi, %edi
 	setne	%cl
 	testb	%sil, %sil

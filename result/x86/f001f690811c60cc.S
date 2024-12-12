@@ -4,17 +4,9 @@ func0000000000000010:                   # @func0000000000000010
 	movslq	%esi, %rcx
 	leaq	(%rax,%rcx,4), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	andl	$8, %edx
 	movslq	%esi, %rax
 	addq	%rdx, %rax
 	addq	%rdi, %rax
-	retq
-func0000000000000012:                   # @func0000000000000012
-	movzbl	%dl, %ecx
-	shll	$4, %ecx
-	addq	%rdi, %rcx
-	movslq	%esi, %rax
-	shlq	$4, %rax
-	addq	%rcx, %rax
 	retq

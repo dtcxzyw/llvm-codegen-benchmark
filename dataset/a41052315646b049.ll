@@ -11,7 +11,7 @@
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; quantlib/optimized/markovfunctional.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = add nsw i64 %2, -4611686018427387903

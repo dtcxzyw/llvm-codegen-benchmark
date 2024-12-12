@@ -1,5 +1,5 @@
 
-; 1955 occurrences:
+; 1966 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -140,6 +140,9 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_distance_measure.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/literal_cost.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
@@ -321,7 +324,6 @@
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
 ; flac/optimized/fixed_intrin_sse2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; flac/optimized/fixed_intrin_ssse3.c.ll
 ; flac/optimized/lpc.c.ll
 ; flac/optimized/replaygain.c.ll
@@ -373,7 +375,6 @@
 ; gromacs/optimized/anadih.cpp.ll
 ; gromacs/optimized/andersentemperaturecoupling.cpp.ll
 ; gromacs/optimized/angle.cpp.ll
-; gromacs/optimized/angle_correction.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/atomprop.cpp.ll
 ; gromacs/optimized/autocorr.cpp.ll
@@ -614,19 +615,14 @@
 ; gromacs/optimized/simulatoralgorithm.cpp.ll
 ; gromacs/optimized/slae2.cpp.ll
 ; gromacs/optimized/slaev2.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
-; gromacs/optimized/slarnv.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; gromacs/optimized/slasd5.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
 ; gromacs/optimized/specbond.cpp.ll
@@ -635,12 +631,10 @@
 ; gromacs/optimized/sstein.cpp.ll
 ; gromacs/optimized/ssteqr.cpp.ll
 ; gromacs/optimized/ssterf.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/state.cpp.ll
 ; gromacs/optimized/statistics.cpp.ll
 ; gromacs/optimized/strconvert.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
-; gromacs/optimized/tabulatednormaldistribution.cpp.ll
 ; gromacs/optimized/ter_db.cpp.ll
 ; gromacs/optimized/tgroup.cpp.ll
 ; gromacs/optimized/tng_compress.c.ll
@@ -855,7 +849,6 @@
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -887,7 +880,6 @@
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/levmarmethods.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -933,7 +925,6 @@
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/activeobjectmgr.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/c_converter.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/clientenvironment.cpp.ll
@@ -1068,7 +1059,6 @@
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_gamma.c.ll
 ; nuttx/optimized/lib_sqrt.c.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; ocio/optimized/ACES.cpp.ll
 ; ocio/optimized/CDLOpCPU.cpp.ll
 ; ocio/optimized/CTFReaderHelper.cpp.ll
@@ -1101,7 +1091,6 @@
 ; ocio/optimized/Lut3DOpData.cpp.ll
 ; ocio/optimized/MathUtils.cpp.ll
 ; ocio/optimized/MatrixOpCPU.cpp.ll
-; ocio/optimized/MatrixOpGPU.cpp.ll
 ; ocio/optimized/Op.cpp.ll
 ; ocio/optimized/OpHelpers.cpp.ll
 ; ocio/optimized/RangeOpCPU.cpp.ll
@@ -1181,7 +1170,6 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; openblas/optimized/iparmq.c.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/LSDDetector.cpp.ll
 ; opencv/optimized/Match.cpp.ll
@@ -1576,7 +1564,6 @@
 ; openjdk/optimized/subnode.ll
 ; openjdk/optimized/tableStatistics.ll
 ; openmpi/optimized/bml_r2.ll
-; openmpi/optimized/name_fns.ll
 ; openmpi/optimized/scheduler.ll
 ; openspiel/optimized/bargaining_test.cc.ll
 ; openspiel/optimized/battleship_test.cc.ll
@@ -1816,7 +1803,6 @@
 ; redis/optimized/lua_struct.ll
 ; redis/optimized/redis-benchmark.ll
 ; redis/optimized/redis-cli.ll
-; ruby/optimized/closure.ll
 ; ruby/optimized/date_core.ll
 ; ruby/optimized/io_buffer.ll
 ; ruby/optimized/pack.ll
@@ -1912,7 +1898,6 @@
 ; wireshark/optimized/stats_tree.c.ll
 ; wireshark/optimized/tap-iostat.c.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
-; wireshark/optimized/wimax_utils.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; xgboost/optimized/adaptive.cc.ll
 ; xgboost/optimized/aft_obj.cc.ll
@@ -1948,6 +1933,32 @@
 ; yosys/optimized/Solver.ll
 ; yosys/optimized/dpicall.ll
 ; z3/optimized/z3_replayer.cpp.ll
+; zed-rs/optimized/00laj72jeyttgatxd0myrfigl.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/10zh1v68f2nhlerzsork25it5.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3qd92cr7jt80yrt25363ufvvn.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/8r4rexl2hxk4mf5ojed4sh4ix.ll
+; zed-rs/optimized/9awmqr28bdho83r0fgrej0t00.ll
+; zed-rs/optimized/9m8v6uy2305b0acd84bvd598m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/b3fsiuvawj3jj0fngz22afvrc.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/PDFBoundingBox.cpp.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll

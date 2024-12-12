@@ -7,7 +7,7 @@ entry:
   %2 = freeze ptr %1
   %3 = icmp ne ptr %2, null
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = freeze ptr %1
   %3 = icmp ne ptr %2, null
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -34,7 +34,7 @@ entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

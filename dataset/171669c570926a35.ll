@@ -10,7 +10,7 @@ entry:
   ret i32 %4
 }
 
-; 27 occurrences:
+; 25 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -25,8 +25,6 @@ entry:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; libwebp/optimized/cwebp.c.ll
 ; linux/optimized/intel_cx0_phy.ll
-; linux/optimized/intel_engine_user.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/permission.ll
 ; llvm/optimized/CGCall.cpp.ll
@@ -58,7 +56,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -70,17 +68,6 @@ entry:
   %3 = icmp sgt i64 %2, -1
   %4 = select i1 %3, i32 0, i32 %1
   %5 = or i32 %4, %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; linux/optimized/i9xx_wm.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ugt i64 %2, 323840000
-  %4 = select i1 %3, i32 134217728, i32 %1
-  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -103,7 +90,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 2147483647
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

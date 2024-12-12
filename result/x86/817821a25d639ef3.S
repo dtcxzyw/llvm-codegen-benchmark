@@ -1,15 +1,15 @@
 func0000000000000007:                   # @func0000000000000007
 	movl	%esi, %eax
-	leaq	1(%rax,%rdi), %rax
+	leaq	1(%rdi,%rax), %rax
 	retq
 func0000000000000003:                   # @func0000000000000003
 	movl	%esi, %eax
-	leaq	1(%rax,%rdi), %rax
+	leaq	1(%rdi,%rax), %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%esi, %eax
 	orq	%rdi, %rax
-	orq	$128, %rax
+	orq	$8, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %eax

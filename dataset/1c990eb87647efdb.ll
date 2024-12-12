@@ -21,9 +21,9 @@ entry:
 ; libpng/optimized/pngrutil.c.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(ptr %0) #0 {
+define i64 @func000000000000000d(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 32
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 32
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 15
   %4 = sub nsw i64 0, %3
@@ -35,9 +35,9 @@ entry:
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000b(ptr %0) #0 {
+define i64 @func000000000000000f(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 464
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 464
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 3
   %4 = sub nuw nsw i64 4, %3

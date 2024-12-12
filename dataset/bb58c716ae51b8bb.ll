@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000152(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000292(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
@@ -20,7 +20,7 @@ entry:
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/x86compiler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000010a(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
@@ -45,7 +45,7 @@ entry:
 ; velox/optimized/CastExpr.cpp.ll
 ; velox/optimized/md5.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000108(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
@@ -59,7 +59,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-common.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000302(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/nmethod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000288(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
@@ -82,8 +82,7 @@ entry:
   ret i1 %7
 }
 
-; 7 occurrences:
-; clamav/optimized/uuencode.c.ll
+; 6 occurrences:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
@@ -91,7 +90,7 @@ entry:
 ; nori/optimized/obj.cpp.ll
 ; php/optimized/session.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000202(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
@@ -104,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/ecjpake.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000188(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
@@ -114,10 +113,26 @@ entry:
   ret i1 %7
 }
 
+; 4 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; gromacs/optimized/usergpuids.cpp.ll
+; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000042(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %3, %2
+  %5 = icmp eq i64 %4, -16
+  %6 = icmp eq ptr %0, %1
+  %7 = or i1 %6, %5
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; hermes/optimized/ItaniumDemangle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000050(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
@@ -127,24 +142,10 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
-; gromacs/optimized/usergpuids.cpp.ll
-; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = icmp eq i64 %4, -1
-  %6 = icmp eq ptr %0, %1
-  %7 = or i1 %5, %6
-  ret i1 %7
-}
-
 ; 1 occurrences:
 ; linux/optimized/ipconfig.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000142(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000282(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2

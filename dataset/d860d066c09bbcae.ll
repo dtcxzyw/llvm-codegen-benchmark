@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 79 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -20,8 +20,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -86,7 +84,7 @@ define i16 @func0000000000000145(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = trunc nsw i32 %4 to i16
   ret i16 %5
 }
@@ -99,20 +97,8 @@ define i16 @func0000000000000144(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = trunc i32 %4 to i16
-  ret i16 %5
-}
-
-; 1 occurrences:
-; slurm/optimized/ebpf.ll
-; Function Attrs: nounwind
-define i16 @func000000000000018f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ne i32 %1, -2
-  %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
-  %5 = trunc nuw nsw i32 %4 to i16
   ret i16 %5
 }
 
@@ -123,21 +109,8 @@ define i16 @func0000000000000180(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = trunc i32 %4 to i16
-  ret i16 %5
-}
-
-; 2 occurrences:
-; icu/optimized/bocsu.ll
-; icu/optimized/ucnvbocu.ll
-; Function Attrs: nounwind
-define i16 @func000000000000018e(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
-  %5 = trunc nuw i32 %4 to i16
   ret i16 %5
 }
 
@@ -148,7 +121,7 @@ define i16 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }
@@ -161,7 +134,7 @@ define i16 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 3
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }

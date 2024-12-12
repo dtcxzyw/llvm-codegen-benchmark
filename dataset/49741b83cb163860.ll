@@ -7,7 +7,7 @@
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; slurm/optimized/gres.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, %0
   %3 = icmp sgt i32 %2, 0

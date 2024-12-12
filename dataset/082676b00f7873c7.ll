@@ -1,5 +1,6 @@
 
-; 14 occurrences:
+; 16 occurrences:
+; boost/optimized/test_codecvt.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; folly/optimized/json.cpp.ll
 ; icu/optimized/genmbcs.ll
@@ -14,6 +15,7 @@
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
 ; velox/optimized/StringFunctions.cpp.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i16 %1) #0 {
 entry:
@@ -34,9 +36,8 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; clamav/optimized/explode.c.ll
-; icu/optimized/ucnvscsu.ll
 ; node/optimized/simdutf.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i16 %1) #0 {
@@ -85,6 +86,17 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = add nsw i32 %0, 537985024
   %4 = or disjoint i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; icu/optimized/ucnvscsu.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = add nuw nsw i32 %0, 57344
+  %4 = or i32 %3, %2
   ret i32 %4
 }
 

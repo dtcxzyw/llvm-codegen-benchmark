@@ -1,6 +1,7 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; clamav/optimized/rarvm.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; stb/optimized/stb_connected_components.c.ll
@@ -20,11 +21,12 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; icu/optimized/store.ll
 ; libjpeg-turbo/optimized/jidctfst.c.ll
 ; linux/optimized/nf_conntrack_sip.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/server.cpp.ll
 ; postgres/optimized/jsonb_util.ll
 ; qemu/optimized/hw_display_virtio-gpu.c.ll

@@ -40,7 +40,7 @@ func0000000000000008:                   # @func0000000000000008
 	vmovq	%rdx, %xmm1
 	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -55,5 +55,5 @@ func0000000000000000:                   # @func0000000000000000
 	vpsrlq	$62, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsraq	$2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

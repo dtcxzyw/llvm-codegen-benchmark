@@ -1,11 +1,12 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; openjdk/optimized/stringDedupTable.ll
+; postgres/optimized/fsmpage.ll
 ; ruby/optimized/date_core.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind

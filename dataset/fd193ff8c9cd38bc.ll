@@ -1,11 +1,10 @@
 
-; 54 occurrences:
+; 52 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; arrow/optimized/key_map.cc.ll
 ; folly/optimized/File.cpp.ll
 ; linux/optimized/acpi_lpit.ll
 ; linux/optimized/bitmap.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/find_bit.ll
 ; linux/optimized/genalloc.ll
 ; linux/optimized/intel_bw.ll
@@ -29,7 +28,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll

@@ -36,7 +36,7 @@
 	.quad	-3                              # 0xfffffffffffffffd
 .LCPI0_3:
 	.zero	4,6
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqb	.LCPI0_1(%rip), %xmm1, %k1
 	vpaddq	.LCPI0_2(%rip){1to4}, %ymm0, %ymm0 {%k1} {z}

@@ -1,4 +1,4 @@
-func00000000000000da:                   // @func00000000000000da
+func00000000000000de:                   // @func00000000000000de
 // %bb.0:                               // %entry
 	ret
                                         // -- End function
@@ -15,7 +15,7 @@ func00000000000001f0:                   // @func00000000000001f0
 	umaddl	x0, w1, w8, x9
 	ret
                                         // -- End function
-func00000000000001fa:                   // @func00000000000001fa
+func00000000000001ff:                   // @func00000000000001ff
 // %bb.0:                               // %entry
 	mov	w8, #160                        // =0xa0
 	mov	w9, w1

@@ -15,3 +15,9 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	$256, %edi                      # imm = 0x100
 	cmovll	%edi, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%edi, %eax
+	xorl	$24, %eax
+	cmpl	$4, %edi
+	cmovbl	%edi, %eax
+	retq

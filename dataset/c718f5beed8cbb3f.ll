@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; glslang/optimized/PpScanner.cpp.ll
 ; gromacs/optimized/tng_compress.c.ll
 ; grpc/optimized/flow_control.cc.ll
@@ -21,6 +21,7 @@
 ; wireshark/optimized/packet-erf.c.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
+; zed-rs/optimized/8x58xp4s22l8izlb56sviitm3.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

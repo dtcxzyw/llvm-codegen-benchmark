@@ -9,11 +9,11 @@ entry:
   %2 = trunc i64 %1 to i16
   %3 = shl i16 %2, 7
   %4 = and i16 %3, 896
-  %5 = or i16 %4, %0
+  %5 = or i16 %0, %4
   ret i16 %5
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; curl/optimized/libcurl_la-curl_sasl.ll
 ; git/optimized/merge-ort.ll
 ; hyperscan/optimized/ng_execute.cpp.ll
@@ -25,7 +25,6 @@ entry:
 ; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/phy_device.ll

@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	7168                            # 0x1c00
+	.long	1835008                         # 0x1c0000
 func000000000000001f:                   # @func000000000000001f
-	vpslld	$10, %ymm1, %ymm1
-	vpslld	$14, %ymm0, %ymm0
+	vpslld	$18, %ymm1, %ymm1
+	vpslld	$12, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI0_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI1_0:

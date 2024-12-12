@@ -108,7 +108,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 2
   %4 = add nuw nsw i64 %3, 8
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

@@ -64,9 +64,33 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI9_0:
 	.zero	16,1
-.LCPI9_1:
+func0000000000000028:                   # @func0000000000000028
+	vpcmpltub	%xmm1, %xmm0, %k1
+	vmovdqu8	.LCPI9_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	retq
+.LCPI10_0:
+	.zero	16,1
+func000000000000002a:                   # @func000000000000002a
+	vpcmpleub	%xmm1, %xmm0, %k1
+	vmovdqu8	.LCPI10_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	retq
+.LCPI11_0:
+	.zero	16,1
+.LCPI11_1:
 	.zero	4,1
 func0000000000000016:                   # @func0000000000000016
 	vpcmpgtb	%xmm0, %xmm1, %xmm0
-	vpandnd	.LCPI9_1(%rip){1to4}, %xmm0, %xmm0
+	vpandnd	.LCPI11_1(%rip){1to4}, %xmm0, %xmm0
+	retq
+.LCPI12_0:
+	.zero	16,1
+func0000000000000032:                   # @func0000000000000032
+	vpcmpnltub	%xmm1, %xmm0, %k1
+	vmovdqu8	.LCPI12_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	retq
+.LCPI13_0:
+	.zero	16,1
+func0000000000000030:                   # @func0000000000000030
+	vpcmpnleub	%xmm1, %xmm0, %k1
+	vmovdqu8	.LCPI13_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	retq

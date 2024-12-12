@@ -7,15 +7,15 @@
 ; openssl/optimized/libssl-shlib-quic_txp.ll
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
-; 41 occurrences:
+; 46 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
@@ -25,17 +25,13 @@ entry:
 ; linux/optimized/cfg.ll
 ; linux/optimized/chan.ll
 ; linux/optimized/driver-ops.ll
-; linux/optimized/eht.ll
-; linux/optimized/he.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_dsi_dcs_backlight.ll
 ; linux/optimized/intel_dsi_vbt.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/link.ll
-; linux/optimized/match.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/offchannel.ll
@@ -57,11 +53,20 @@ entry:
 ; spike/optimized/vclmul_vv.ll
 ; spike/optimized/vclmulh_vv.ll
 ; wireshark/optimized/packet-x11.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -74,19 +79,8 @@ entry:
 define i1 @func000000000000000c(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i64
-  %3 = and i64 %2, %0
-  %4 = icmp ult i64 %3, 4
   ret i1 %4
 }
 

@@ -12,7 +12,7 @@
 define i64 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 8
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -48,7 +48,7 @@ entry:
 define i64 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -59,7 +59,7 @@ entry:
 define i64 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }

@@ -32,11 +32,21 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 .LCPI3_0:
 	.quad	1                               # 0x1
-func0000000000000007:                   # @func0000000000000007
+func0000000000000006:                   # @func0000000000000006
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
 	vpsubd	%xmm0, %xmm1, %xmm1
 	vpbroadcastq	.LCPI3_0(%rip), %ymm0   # ymm0 = [1,1,1,1]
+	vpmovzxdq	%xmm1, %ymm0 {%k1}      # ymm0 {%k1} = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	retq
+.LCPI4_0:
+	.quad	1                               # 0x1
+func0000000000000007:                   # @func0000000000000007
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k1
+	vpcmpeqd	%xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm1
+	vpbroadcastq	.LCPI4_0(%rip), %ymm0   # ymm0 = [1,1,1,1]
 	vpmovzxdq	%xmm1, %ymm0 {%k1}      # ymm0 {%k1} = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	retq

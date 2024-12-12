@@ -1,5 +1,6 @@
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/src.ll
 ; freetype/optimized/ftbase.c.ll
 ; glslang/optimized/Scan.cpp.ll
 ; glslang/optimized/hlslScanContext.cpp.ll

@@ -1,5 +1,7 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; opencv/optimized/p3p.cpp.ll
 ; proj/optimized/geodesic.c.ll

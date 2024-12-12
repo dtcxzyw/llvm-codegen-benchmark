@@ -17,10 +17,9 @@ entry:
   ret i32 %7
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
-; linux/optimized/attr.ll
 ; linux/optimized/yenta_socket.ll
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll

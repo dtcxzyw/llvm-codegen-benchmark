@@ -1,17 +1,17 @@
 
-%struct._zend_ssa_op.2676844 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+%struct._zend_ssa_op.2789887 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 2 occurrences:
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000005f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = add nsw i64 %2, -2
   %4 = and i64 %3, -4
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -19,12 +19,12 @@ entry:
 ; opencv/optimized/detection_based_tracker.cpp.ll
 ; php/optimized/zend_ssa.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr %struct._zend_ssa_op.2676844, ptr %0, i64 %4, i32 3
+  %5 = getelementptr nuw %struct._zend_ssa_op.2789887, ptr %0, i64 %4, i32 3
   ret ptr %5
 }
 

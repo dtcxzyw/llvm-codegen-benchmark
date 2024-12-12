@@ -1,5 +1,5 @@
 
-; 146 occurrences:
+; 145 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -11,6 +11,7 @@
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/math_sqrt.ll
 ; bullet3/optimized/b3File.ll
 ; casadi/optimized/nlp_builder.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -51,12 +52,10 @@
 ; luau/optimized/lbuflib.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/plylib.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/test_collision.cpp.ll
 ; minetest/optimized/test_utilities.cpp.ll

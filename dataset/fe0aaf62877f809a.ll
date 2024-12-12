@@ -16,12 +16,10 @@
 ; icu/optimized/uconv.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; jq/optimized/regcomp.ll
-; libquic/optimized/cmp.c.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/fork.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/phy.ll
 ; linux/optimized/psmouse-base.ll
 ; linux/optimized/radiotap.ll
 ; linux/optimized/recovery.ll
@@ -51,6 +49,7 @@
 ; llvm/optimized/cc1gen_reproducer_main.cpp.ll
 ; llvm/optimized/driver.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_span.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; nori/optimized/renderpass_gl.cpp.ll
 ; oniguruma/optimized/regcomp.ll
@@ -58,7 +57,6 @@
 ; openjdk/optimized/jni.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
 ; openjdk/optimized/unsafe.ll
-; openmpi/optimized/name_fns.ll
 ; openmpi/optimized/ompi_rte.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-lib-decoder_pkey.ll
@@ -92,6 +90,8 @@
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/seq_skolem.cpp.ll
 ; z3/optimized/theory_user_propagator.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, ptr %1) #0 {
 entry:

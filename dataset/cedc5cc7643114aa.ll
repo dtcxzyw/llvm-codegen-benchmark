@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; recastnavigation/optimized/imgui.cpp.ll
 ; Function Attrs: nounwind

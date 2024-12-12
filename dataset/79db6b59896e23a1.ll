@@ -9,7 +9,7 @@ entry:
   %2 = freeze i8 %1
   %3 = icmp eq i8 %2, 94
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

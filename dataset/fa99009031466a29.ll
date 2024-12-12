@@ -1,5 +1,5 @@
 
-; 205 occurrences:
+; 203 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
@@ -58,7 +58,7 @@
 ; linux/optimized/bitmap.ll
 ; linux/optimized/commoncap.ll
 ; linux/optimized/core.ll
-; linux/optimized/cppc.ll
+; linux/optimized/cpuset.ll
 ; linux/optimized/genalloc.ll
 ; linux/optimized/string.ll
 ; linux/optimized/strncpy_from_user.ll
@@ -87,8 +87,6 @@
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_alloc.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -210,7 +208,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

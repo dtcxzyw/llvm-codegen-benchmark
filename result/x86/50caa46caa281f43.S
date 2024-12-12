@@ -1,3 +1,8 @@
+func0000000000000030:                   # @func0000000000000030
+	movq	%rdi, %rax
+	shrq	$32, %rsi
+	subl	%esi, %eax
+	retq
 func0000000000000029:                   # @func0000000000000029
 	movq	%rdi, %rax
 	shrq	$32, %rsi

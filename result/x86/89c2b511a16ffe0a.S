@@ -23,10 +23,10 @@ func0000000000000009:                   # @func0000000000000009
 	leal	32(%rdi), %eax
 	andl	$1023, %eax                     # imm = 0x3FF
 	retq
-func000000000000000a:                   # @func000000000000000a
-	shrq	%rdi
-	leal	3(%rdi), %eax
-	andl	$-4, %eax
+func0000000000000001:                   # @func0000000000000001
+	shrl	$11, %edi
+	leal	-1(%rdi), %eax
+	andl	$127, %eax
 	retq
 func000000000000000d:                   # @func000000000000000d
 	shrq	$57, %rdi

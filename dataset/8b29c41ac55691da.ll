@@ -13,7 +13,9 @@ entry:
   ret i64 %6
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -22,7 +24,6 @@ entry:
 ; folly/optimized/Uri.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/ItaniumDemangle.cpp.ll
-; hyperscan/optimized/rose_build_program.cpp.ll
 ; llvm/optimized/ByteCodeEmitter.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
@@ -33,11 +34,13 @@ entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, 7
   %5 = and i64 %4, -8
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -48,7 +51,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, 7
   %5 = and i64 %4, -8
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

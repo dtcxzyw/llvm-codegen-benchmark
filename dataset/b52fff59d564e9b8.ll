@@ -14,9 +14,8 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cvc5/optimized/Solver.cc.ll
-; libwebp/optimized/backward_references_enc.c.ll
 ; minetest/optimized/fontengine.cpp.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; rocksdb/optimized/error_handler.cc.ll
@@ -27,18 +26,6 @@ entry:
   %3 = shl nuw i64 %0, 40
   %4 = or disjoint i64 %3, %2
   %5 = or disjoint i64 %4, 4294967296
-  ret i64 %5
-}
-
-; 1 occurrences:
-; rocksdb/optimized/clock_cache.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = shl i64 %0, 8
-  %4 = or i64 %3, %2
-  %5 = or i64 %4, 128
   ret i64 %5
 }
 

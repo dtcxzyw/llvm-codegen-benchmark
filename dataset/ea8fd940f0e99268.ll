@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; hermes/optimized/Host.cpp.ll
 ; jemalloc/optimized/fxp.ll
 ; jemalloc/optimized/fxp.pic.ll
@@ -10,6 +10,8 @@
 ; redis/optimized/fxp.ll
 ; redis/optimized/fxp.sym.ll
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:

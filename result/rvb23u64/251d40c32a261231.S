@@ -32,7 +32,7 @@ func0000000000000008:                   # @func0000000000000008
 	seqz	a1, a1
 	addw	a0, a0, a1
 	ret
-func000000000000002b:                   # @func000000000000002b
+func00000000000000ab:                   # @func00000000000000ab
 	sext.w	a1, a1
 	srliw	a2, a2, 1
 	sltu	a1, a2, a1

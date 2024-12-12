@@ -1,5 +1,5 @@
 
-; 112 occurrences:
+; 113 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -20,6 +20,7 @@
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/cbaBlast.c.ll
+; abc/optimized/cmdUtils.c.ll
 ; abc/optimized/dauGia.c.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/fretInit.c.ll
@@ -45,7 +46,6 @@
 ; abc/optimized/mpmAbc.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/retInit.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/sfmCnf.c.ll
@@ -59,6 +59,7 @@
 ; cmake/optimized/nghttp2_session.c.ll
 ; cpython/optimized/longobject.ll
 ; cvc5/optimized/ceg_arith_instantiator.cpp.ll
+; flac/optimized/stream_encoder.c.ll
 ; git/optimized/add-interactive.ll
 ; linux/optimized/auditsc.ll
 ; linux/optimized/igmp.ll
@@ -116,7 +117,7 @@
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 

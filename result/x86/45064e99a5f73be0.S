@@ -1,8 +1,8 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	$1, %eax
 	shlxl	%edi, %eax, %eax
 	xorl	%ecx, %ecx
 	testb	%al, %sil
-	setne	%cl
-	leal	7(%rcx,%rcx,4), %eax
+	movl	$255, %eax
+	cmovel	%ecx, %eax
 	retq

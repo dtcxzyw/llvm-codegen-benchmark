@@ -18,6 +18,32 @@ entry:
   ret i64 %4
 }
 
+; 4 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; lightgbm/optimized/parser.cpp.ll
+; lightgbm/optimized/tree.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
+entry:
+  %isnotneg = icmp sgt i64 %1, -1
+  %2 = zext i1 %isnotneg to i64
+  %3 = add nuw nsw i64 %0, %2
+  ret i64 %3
+}
+
+; 2 occurrences:
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 7
+  %3 = xor i64 %2, -1
+  %4 = add i64 %0, %3
+  ret i64 %4
+}
+
 ; 8 occurrences:
 ; luajit/optimized/minilua.ll
 ; xgboost/optimized/adaptive.cc.ll
@@ -32,7 +58,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 5
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -44,7 +70,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = xor i64 %2, -1
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

@@ -3,13 +3,13 @@
 ; cmake/optimized/divsufsort.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000008e(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000008f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
   %5 = sub nsw i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 

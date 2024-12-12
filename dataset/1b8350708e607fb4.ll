@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; cpython/optimized/assemble.ll
 ; cpython/optimized/obmalloc.ll
 ; flatbuffers/optimized/flatc.cpp.ll
@@ -7,6 +7,7 @@
 ; linux/optimized/fib_rules.ll
 ; linux/optimized/task_mmu.ll
 ; llvm/optimized/MoveChecker.cpp.ll
+; llvm/optimized/RISCVMatInt.cpp.ll
 ; mimalloc/optimized/segment-map.c.ll
 ; node/optimized/libnode.crypto_keys.ll
 ; node/optimized/libnode.node_process_methods.ll
@@ -20,7 +21,7 @@ define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, -4294967296
   %2 = icmp eq i64 %.mask, 12884901888
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 

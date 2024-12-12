@@ -11,7 +11,7 @@ entry:
   %2 = lshr i64 %1, 10
   %3 = trunc i64 %2 to i8
   %4 = and i8 %3, 31
-  %5 = icmp eq i8 %4, %0
+  %5 = icmp eq i8 %0, %4
   ret i1 %5
 }
 

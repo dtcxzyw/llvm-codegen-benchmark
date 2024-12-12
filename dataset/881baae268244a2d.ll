@@ -1,5 +1,6 @@
 
 ; 33 occurrences:
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/special.c.ll
 ; hdf5/optimized/H5B2cache.c.ll
@@ -12,7 +13,6 @@
 ; hdf5/optimized/H5HFdbg.c.ll
 ; hdf5/optimized/H5HFman.c.ll
 ; hdf5/optimized/H5HL.c.ll
-; hdf5/optimized/H5HLdblk.c.ll
 ; hdf5/optimized/H5Oainfo.c.ll
 ; hdf5/optimized/H5Oefl.c.ll
 ; hdf5/optimized/H5Ofsinfo.c.ll
@@ -42,7 +42,7 @@ entry:
   ret i64 %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/adler32.c.ll
 ; cmake/optimized/adler32.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -65,7 +65,6 @@ entry:
 ; openssl/optimized/asynciotest-bin-asynciotest.ll
 ; openssl/optimized/libcommon-lib-tls_pad.ll
 ; openssl/optimized/libssl-shlib-tls_pad.ll
-; php/optimized/state.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
@@ -77,7 +76,8 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/pattern.ll
 ; clamav/optimized/jpeg.c.ll
 ; cmake/optimized/cmDocumentationFormatter.cxx.ll
 ; grpc/optimized/hpack_encoder.cc.ll
@@ -116,11 +116,11 @@ entry:
 }
 
 ; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/quic_protocol.cc.ll
 ; libquic/optimized/x509_vfy.c.ll
 ; nlohmann_json/optimized/unit-constructor1.cpp.ll
 ; nlohmann_json/optimized/unit-hash.cpp.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1, i8 %2) #0 {
 entry:

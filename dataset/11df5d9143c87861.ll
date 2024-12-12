@@ -1,14 +1,13 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; icu/optimized/collationfastlatin.ll
 ; icu/optimized/ucase.ll
+; libevent/optimized/http.c.ll
 ; linux/optimized/af_inet6.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/i915_irq.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/xt_policy.ll
-; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; php/optimized/streams.ll
@@ -19,7 +18,7 @@
 ; slurm/optimized/job_mgr.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32
   %3 = icmp eq i32 %2, 0
@@ -39,7 +38,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000302(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 304
   %3 = icmp ne i16 %2, 304
@@ -56,7 +55,7 @@ entry:
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000058(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 64
   %3 = icmp eq i16 %2, 0
@@ -70,7 +69,7 @@ entry:
 ; linux/optimized/io_uring.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000318(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 256
   %3 = icmp ne i16 %2, 0

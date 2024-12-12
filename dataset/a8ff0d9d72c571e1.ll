@@ -1,10 +1,11 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; icu/optimized/ucnvmbcs.ll
 ; libevent/optimized/evutil_rand.c.ll
 ; libwebp/optimized/alpha_processing.c.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/rx.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
@@ -82,18 +83,6 @@ entry:
   %4 = or i32 %0, %1
   %5 = or disjoint i32 %4, %3
   %6 = or i32 %5, -1342177280
-  ret i32 %6
-}
-
-; 1 occurrences:
-; linux/optimized/early.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = or i32 %0, %1
-  %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, -2147483648
   ret i32 %6
 }
 

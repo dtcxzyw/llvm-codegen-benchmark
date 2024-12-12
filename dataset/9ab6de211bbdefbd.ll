@@ -31,7 +31,7 @@ entry:
 ; abc/optimized/giaResub.c.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = add nuw nsw i32 %0, %1
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000037(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000067(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 8
   %4 = add nuw nsw i32 %0, %1
@@ -58,7 +58,7 @@ entry:
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = add nsw i32 %0, %1
@@ -73,7 +73,7 @@ entry:
 ; gromacs/optimized/pme_solve.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = add nsw i32 %0, %1
@@ -85,7 +85,7 @@ entry:
 ; abc/optimized/bmcMaj3.c.ll
 ; gromacs/optimized/pme_solve.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = add nsw i32 %0, %1

@@ -22,3 +22,9 @@ func000000000000001c:                   // @func000000000000001c
 	add	x0, x0, w8, sxtw #4
 	ret
                                         // -- End function
+func0000000000000017:                   // @func0000000000000017
+// %bb.0:                               // %entry
+	mul	w8, w1, w2
+	add	x0, x0, w8, sxtw #2
+	ret
+                                        // -- End function

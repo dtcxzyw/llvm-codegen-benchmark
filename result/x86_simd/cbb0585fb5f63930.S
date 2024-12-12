@@ -6,7 +6,7 @@
 	.long	1                               # 0x1
 .LCPI0_2:
 	.long	3                               # 0x3
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vpblendmd	.LCPI0_2(%rip){1to4}, %xmm2, %xmm1 {%k1}

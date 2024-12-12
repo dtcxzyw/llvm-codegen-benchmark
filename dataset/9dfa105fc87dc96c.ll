@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ipopt/optimized/IpAdaptiveMuUpdate.ll
 ; opencv/optimized/resize.cpp.ll
-; osqp/optimized/scaling.c.ll
 ; quantlib/optimized/gaussianlhplossmodel.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(i1 %0, double %1, double %2) #0 {

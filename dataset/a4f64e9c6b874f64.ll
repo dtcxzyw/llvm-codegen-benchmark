@@ -12,17 +12,6 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; openmpi/optimized/vprotocol_pessimist_sender_based.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = srem i64 %1, %2
-  %4 = sub i64 %1, %3
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
 ; 2 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; openmpi/optimized/ad_aggregate_new.ll
@@ -31,7 +20,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = srem i64 %1, %2
   %4 = sub nsw i64 %1, %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

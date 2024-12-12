@@ -1,5 +1,5 @@
 
-; 146 occurrences:
+; 145 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -47,7 +47,6 @@
 ; lief/optimized/ripemd160.c.ll
 ; lief/optimized/sha1.c.ll
 ; lief/optimized/sha256.c.ll
-; linux/optimized/akcipher.ll
 ; linux/optimized/blake2s-generic.ll
 ; linux/optimized/extents_status.ll
 ; linux/optimized/filter.ll
@@ -150,7 +149,7 @@
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = icmp ult i32 %2, %1
+  %3 = icmp ugt i32 %1, %2
   ret i1 %3
 }
 
@@ -160,14 +159,14 @@ entry:
 ; openssl/optimized/libcrypto-shlib-ec2_oct.ll
 ; openssl/optimized/libcrypto-shlib-ecp_oct.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, %0
   %3 = icmp ugt i32 %2, %0
   ret i1 %3
 }
 
-; 35 occurrences:
+; 33 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cmake/optimized/fastcover.c.ll
@@ -180,7 +179,6 @@ entry:
 ; linux/optimized/extents.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/intel-gtt.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/move_extent.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/read.ll
@@ -191,7 +189,6 @@ entry:
 ; oiio/optimized/iffoutput.cpp.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; php/optimized/dce.ll
-; qemu/optimized/monitor_hmp-cmds.c.ll
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/packet-bacapp.c.ll
@@ -211,11 +208,10 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/SourceManager.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
-; wireshark/optimized/packet-ieee80211-wlancap.c.ll
 ; wireshark/optimized/packet-ipv6.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i32 %0, i32 %1) #0 {
@@ -233,10 +229,10 @@ entry:
 ; protobuf/optimized/wire_format.cc.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = icmp ult i32 %2, %1
+  %3 = icmp ugt i32 %1, %2
   ret i1 %3
 }
 
@@ -354,7 +350,7 @@ entry:
 define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = icmp uge i32 %2, %1
+  %3 = icmp ule i32 %1, %2
   ret i1 %3
 }
 

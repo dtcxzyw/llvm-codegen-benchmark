@@ -20,7 +20,7 @@ entry:
   %4 = and i16 %3, 96
   %.masked = and i16 %1, -25
   %5 = or i16 %4, %.masked
-  %6 = or disjoint i16 %5, %0
+  %6 = or disjoint i16 %0, %5
   ret i16 %6
 }
 

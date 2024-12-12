@@ -47,3 +47,11 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$100000000, %eax                # imm = 0x5F5E100
 	setae	%al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	movabsq	$-6067343680855748867, %rax     # imm = 0xABCC77118461CEFD
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
+	shrq	$26, %rax
+	cmpl	$1000000, %eax                  # imm = 0xF4240
+	setae	%al
+	retq

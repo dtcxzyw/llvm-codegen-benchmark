@@ -1,9 +1,3 @@
-func000000000000001d:                   # @func000000000000001d
-	movslq	%edx, %rax
-	addq	%rsi, %rax
-	subq	%rdi, %rax
-	addq	$68569, %rax                    # imm = 0x10BD9
-	retq
 func0000000000000000:                   # @func0000000000000000
 	movslq	%edx, %rax
 	addq	%rsi, %rax

@@ -27,12 +27,12 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000005b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = shl nsw i64 %3, 5
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 32
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 32
   ret ptr %6
 }
 
@@ -69,12 +69,12 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; mimalloc/optimized/segment-map.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000053(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = shl nsw i64 %3, 25
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 216
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 216
   ret ptr %6
 }
 

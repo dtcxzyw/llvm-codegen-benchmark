@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/message.ll
 ; cmake/optimized/archive_read_support_filter_gzip.c.ll
 ; velox/optimized/ByteStream.cpp.ll
 ; Function Attrs: nounwind
@@ -16,7 +17,7 @@ entry:
 ; vcpkg/optimized/commands.install.cpp.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000044(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = icmp ult i64 %3, 24
@@ -35,22 +36,10 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; eastl/optimized/TestMemory.cpp.ll
-; nix/optimized/serialise.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = icmp ugt i64 %3, 64
-  %5 = select i1 %4, ptr null, ptr %0
-  ret ptr %5
-}
-
 ; 1 occurrences:
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000041(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = select i1 %3, ptr null, ptr %0

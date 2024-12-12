@@ -9,8 +9,19 @@
 define i1 @func0000000000000008(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   %4 = fcmp oeq float %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; pbrt-v4/optimized/mipmap.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000003(float %0, i32 %1) #0 {
+entry:
+  %2 = sitofp i32 %1 to float
+  %3 = fadd float %0, %2
+  %4 = fcmp ult float %3, %2
   ret i1 %4
 }
 

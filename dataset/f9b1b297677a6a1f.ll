@@ -1,9 +1,13 @@
 
-; 4 occurrences:
+; 8 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
@@ -12,7 +16,7 @@ entry:
   ret i16 %3
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/lzwdec.c.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -29,6 +33,8 @@ entry:
 ; slurm/optimized/data_parser_v0_0_40_la-parsing.ll
 ; slurm/optimized/data_parser_v0_0_41_la-parsing.ll
 ; spike/optimized/vsaddu_vi.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -37,10 +43,12 @@ entry:
   ret i16 %3
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; hdf5/optimized/h5tools_str.c.ll
 ; linux/optimized/nls_base.ll
 ; wasmtime-rs/optimized/2y3wfjzj02o80wks.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:

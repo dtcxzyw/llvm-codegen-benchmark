@@ -1,6 +1,7 @@
 
 ; 23 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/cmDependsC.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
@@ -10,7 +11,6 @@
 ; libquic/optimized/quic_header_list.cc.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/compress.ll
-; linux/optimized/i915_cmd_parser.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/DFAPacketizer.cpp.ll
 ; minetest/optimized/httpfetch.cpp.ll
@@ -47,10 +47,11 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cmake/optimized/json_reader.cpp.ll
 ; folly/optimized/ManualExecutor.cpp.ll
 ; libquic/optimized/quic_header_list.cc.ll
+; llvm/optimized/SelectionDAG.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {

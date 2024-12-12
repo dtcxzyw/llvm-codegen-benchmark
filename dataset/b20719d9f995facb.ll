@@ -1,5 +1,5 @@
 
-; 253 occurrences:
+; 250 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/bblif.c.ll
@@ -54,7 +54,6 @@
 ; linux/optimized/percpu.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/lgc.cpp.ll
@@ -201,7 +200,6 @@
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/xlog.ll
 ; postgres/optimized/xlogarchive.ll
-; postgres/optimized/xlogbackup.ll
 ; postgres/optimized/xlogfuncs.ll
 ; postgres/optimized/xlogreader.ll
 ; postgres/optimized/xlogrecovery.ll
@@ -216,7 +214,6 @@
 ; qemu/optimized/hw_nvme_ns.c.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/hw_vfio_helpers.c.ll
 ; qemu/optimized/monitor_hmp-cmds-target.c.ll
 ; qemu/optimized/system_dirtylimit.c.ll

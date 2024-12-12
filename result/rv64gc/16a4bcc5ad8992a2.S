@@ -32,25 +32,25 @@ func0000000000000019:                   # @func0000000000000019
 .LBB2_2:
 	addiw	a0, a1, -1
 	ret
-func000000000000001b:                   # @func000000000000001b
-	andi	a0, a0, 1
-	bnez	a0, .LBB3_2
-	addiw	a0, a2, 256
-	ret
-.LBB3_2:
-	addiw	a0, a1, -1
-	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
-	bnez	a0, .LBB4_2
-	addi	a1, a2, 1
+	bnez	a0, .LBB3_2
+	addi	a1, a2, 8
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
-.LBB4_2:
-	addi	a1, a1, -2
+.LBB3_2:
+	addi	a1, a1, 16
 	slli	a0, a1, 32
 	srli	a0, a0, 32
+	ret
+func000000000000001b:                   # @func000000000000001b
+	andi	a0, a0, 1
+	bnez	a0, .LBB4_2
+	addiw	a0, a2, 256
+	ret
+.LBB4_2:
+	addiw	a0, a1, -1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 1

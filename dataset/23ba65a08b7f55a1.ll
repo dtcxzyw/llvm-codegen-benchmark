@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; hermes/optimized/APInt.cpp.ll
-; linux/optimized/umh.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; spike/optimized/csrs.ll

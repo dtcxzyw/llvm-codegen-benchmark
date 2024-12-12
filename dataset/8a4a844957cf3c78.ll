@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/varsup.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0) #0 {
+define i32 @func0000000000000064(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -3000000
   %2 = icmp ult i32 %1, 3

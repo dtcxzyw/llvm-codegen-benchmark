@@ -1,11 +1,10 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; clamav/optimized/cvd.c.ll
 ; darktable/optimized/OrfDecoder.cpp.ll
 ; flac/optimized/decode.c.ll
 ; flac/optimized/encode.c.ll
-; freetype/optimized/psaux.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; icu/optimized/reslist.ll
 ; icu/optimized/ucnvsel.ll

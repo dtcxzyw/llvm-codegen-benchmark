@@ -20,7 +20,7 @@ entry:
   ret i8 %3
 }
 
-; 182 occurrences:
+; 211 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; arrow/optimized/bit_util.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -70,7 +70,6 @@ entry:
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/AlignmentFromAssumptions.cpp.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/CoroSplit.cpp.ll
 ; llvm/optimized/FrontendActions.cpp.ll
@@ -114,8 +113,6 @@ entry:
 ; openusd/optimized/decodemv.c.ll
 ; php/optimized/uuencode.ll
 ; postgres/optimized/freespace.ll
-; qdrant-rs/optimized/3ikx3rq9ywmfirmj.ll
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; rand-rs/optimized/qpqwmytuo9t2y51.ll
@@ -203,6 +200,38 @@ entry:
 ; wireshark/optimized/proto.c.ll
 ; yosys/optimized/memory_bram.ll
 ; yosys/optimized/memory_dff.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/12xam7q4l70h0vr8y5wvb4s4a.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/1zouf8lsjy712uoerw5fyy4vf.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/7z2xfgroq6luy23s4a62wgt90.ll
+; zed-rs/optimized/8epszlr2612bvdrsn7g83nprl.ll
+; zed-rs/optimized/8r4rexl2hxk4mf5ojed4sh4ix.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
+; zed-rs/optimized/a80esttvizzblelz7vl2fpyaz.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/c4c7jl64zv8zhv2ne6xdvhty4.ll
+; zed-rs/optimized/ca5us8h013in59yvcsgdq94h9.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/deqzoqcotewn9fb0m32sor9lr.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
+; zed-rs/optimized/f0amc3mihxn9sd1mhsostg4ox.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i64 %1) #0 {
 entry:
@@ -211,10 +240,8 @@ entry:
   ret i8 %3
 }
 
-; 9 occurrences:
-; grpc/optimized/hpack_parser.cc.ll
+; 7 occurrences:
 ; ropey-rs/optimized/21bl6c983bdkzf7g.ll
-; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; yalantinglibs/optimized/basic_usage.cpp.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; yalantinglibs/optimized/data_gen.cpp.ll
@@ -250,15 +277,25 @@ entry:
 ; hdf5/optimized/H5Shyper.c.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; llvm/optimized/DataLayout.cpp.ll
-; php/optimized/main.ll
 ; postgres/optimized/freespace.ll
 ; spike/optimized/vbrev_v.ll
 ; spike/optimized/vrev8_v.ll
 ; wasmtime-rs/optimized/4geaf703ae2lxyqg.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 2305843009213693951
+  %3 = select i1 %2, i8 1, i8 %0
+  ret i8 %3
+}
+
+; 1 occurrences:
+; php/optimized/main.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000018(i8 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 2
   %3 = select i1 %2, i8 1, i8 %0
   ret i8 %3
 }
@@ -271,6 +308,17 @@ entry:
   %.not = icmp eq i64 %1, 0
   %2 = select i1 %.not, i8 %0, i8 -1
   ret i8 %2
+}
+
+; 2 occurrences:
+; grpc/optimized/hpack_parser.cc.ll
+; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000014(i8 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 1023
+  %3 = select i1 %2, i8 1, i8 %0
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

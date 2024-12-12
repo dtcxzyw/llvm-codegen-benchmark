@@ -24,12 +24,6 @@ func0000000000000012:                   # @func0000000000000012
 	li	a1, 85
 	mulw	a0, a0, a1
 	ret
-func000000000000000d:                   # @func000000000000000d
-	andi	a1, a1, 255
-	add	a0, a0, a1
-	li	a1, 85
-	mulw	a0, a0, a1
-	ret
 func0000000000000017:                   # @func0000000000000017
 	andi	a1, a1, 255
 	add	a0, a0, a1

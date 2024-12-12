@@ -1,7 +1,12 @@
 
-; 51 occurrences:
+; 56 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll
 ; ceres/optimized/corrector.cc.ll

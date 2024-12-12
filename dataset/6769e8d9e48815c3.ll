@@ -13,13 +13,14 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; draco/optimized/corner_table.cc.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/p4.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; wireshark/optimized/pcapng.c.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -75,15 +76,14 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; openjdk/optimized/shenandoahEvacOOMHandler.ll
 ; postgres/optimized/ginfast.ll
 ; postgres/optimized/nodeHash.ll
-; redis/optimized/siphash.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000a7(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 2
+  %3 = icmp samesign ult i32 %2, 2
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = zext nneg i32 %4 to i64
   %6 = shl nuw nsw i64 %5, 6
@@ -117,13 +117,12 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; postgres/optimized/ginfast.ll
-; postgres/optimized/md.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000a3(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 2
+  %3 = icmp samesign ult i32 %2, 2
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = zext i32 %4 to i64
   %6 = shl nuw nsw i64 %5, 3
@@ -131,14 +130,14 @@ entry:
 }
 
 ; 1 occurrences:
-; redis/optimized/siphash.ll
+; postgres/optimized/md.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000023(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 26
+  %3 = icmp ult i32 %2, 131072
   %4 = select i1 %3, i32 %0, i32 %1
-  %5 = zext nneg i32 %4 to i64
-  %6 = shl nuw i64 %5, 56
+  %5 = zext i32 %4 to i64
+  %6 = shl nuw nsw i64 %5, 13
   ret i64 %6
 }
 

@@ -3,3 +3,6 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rsi, %rsi
 	cmovnel	%edi, %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	movl	%edi, %eax
+	retq

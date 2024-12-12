@@ -23,5 +23,5 @@ func0000000000000004:                   # @func0000000000000004
 	vfmerge.vfm	v12, v12, fa5, v0
 	vmv1r.v	v0, v16
 	vfmerge.vfm	v12, v12, fa4, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret

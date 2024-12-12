@@ -7,7 +7,7 @@
 ; openjdk/optimized/mlib_ImageConv_F32nw.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000388(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000d18(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp ult i32 %0, 32769
@@ -24,7 +24,7 @@ entry:
 ; abc/optimized/sclLibScl.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ugt i32 %0, 14
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineLICM.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ugt i32 %0, 24
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_color.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %0, 1
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cppc_acpi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ugt i32 %0, 3
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/nlqsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000821(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp eq i32 %0, 0

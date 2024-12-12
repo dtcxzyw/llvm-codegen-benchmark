@@ -1,5 +1,7 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; cmake/optimized/archive_read_support_format_cab.c.ll
+; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; openusd/optimized/reconintra.c.ll
@@ -13,11 +15,9 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 15 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
-; cmake/optimized/archive_read_support_format_cab.c.ll
-; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll

@@ -5,7 +5,7 @@
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 31
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp ugt i32 %5, 1
   ret i1 %6
@@ -14,10 +14,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 20
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub i32 0, %0
   %6 = icmp eq i32 %4, %5
   ret i1 %6
@@ -29,7 +29,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 31
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp ult i32 %5, 128
   ret i1 %6
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
   %4 = add nsw i32 %3, %1
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
   %4 = add nsw i32 %3, %1
@@ -62,10 +62,10 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/time_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 24
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp eq i32 %5, 365
   ret i1 %6
@@ -74,10 +74,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 5
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp slt i32 %5, 4126
   ret i1 %6
@@ -113,10 +113,10 @@ entry:
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp slt i32 %5, 0
   ret i1 %6

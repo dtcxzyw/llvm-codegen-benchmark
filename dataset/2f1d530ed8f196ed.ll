@@ -170,7 +170,7 @@
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000048c(i1 %0, i32 %1) #0 {
 entry:
   %2 = select i1 %0, i32 %1, i32 -1
   %3 = add nsw i32 %2, -11904
@@ -325,7 +325,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i1 %0, i32 %1) #0 {
 entry:
   %2 = select i1 %0, i32 %1, i32 0
   %3 = icmp ne i32 %2, 0

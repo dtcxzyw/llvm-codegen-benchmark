@@ -38,3 +38,8 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %esi
 	seta	%al
 	retq
+func0000000000000007:                   # @func0000000000000007
+	xorl	%edx, %esi
+	cmpl	%edi, %esi
+	setle	%al
+	retq

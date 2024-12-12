@@ -44,7 +44,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 32
   %5 = zext i32 %1 to i64
   %6 = or disjoint i64 %4, %5
-  %7 = or i64 %6, %0
+  %7 = or i64 %0, %6
   ret i64 %7
 }
 
@@ -73,13 +73,14 @@ entry:
   ret i64 %7
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/darLib.c.ll
 ; llvm/optimized/StackMaps.cpp.ll
 ; redis/optimized/siphash.ll
 ; wireshark/optimized/packet-flexray.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002f(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -128,7 +129,7 @@ entry:
   %4 = shl nuw i64 %3, 52
   %5 = zext nneg i32 %1 to i64
   %6 = or disjoint i64 %4, %5
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 

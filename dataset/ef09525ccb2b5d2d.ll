@@ -1,30 +1,12 @@
 
-; 11 occurrences:
-; abc/optimized/giaTransduction.cpp.ll
-; abc/optimized/kitDsd.c.ll
-; clamav/optimized/bytecode.c.ll
-; linux/optimized/netdev.ll
-; linux/optimized/xfrm_user.ll
-; qemu/optimized/i2c.c.ll
-; wireshark/optimized/observer.c.ll
-; wireshark/optimized/packet-classicstun.c.ll
-; wireshark/optimized/packet-reload.c.ll
-; wireshark/optimized/packet-thread.c.ll
-; wireshark/optimized/packet-wai.c.ll
-; Function Attrs: nounwind
-define i16 @func000000000000000c(i16 %0) #0 {
-entry:
-  %1 = add i16 %0, 1
-  ret i16 %1
-}
-
-; 12 occurrences:
+; 13 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; freetype/optimized/psaux.c.ll
 ; hdf5/optimized/H5B2internal.c.ll
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
+; libevent/optimized/evmap.c.ll
 ; linux/optimized/e100.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -35,6 +17,24 @@ entry:
 define i16 @func0000000000000004(i16 %0) #0 {
 entry:
   %1 = add i16 %0, -1
+  ret i16 %1
+}
+
+; 10 occurrences:
+; abc/optimized/giaTransduction.cpp.ll
+; abc/optimized/kitDsd.c.ll
+; clamav/optimized/bytecode.c.ll
+; linux/optimized/netdev.ll
+; linux/optimized/xfrm_user.ll
+; wireshark/optimized/observer.c.ll
+; wireshark/optimized/packet-classicstun.c.ll
+; wireshark/optimized/packet-reload.c.ll
+; wireshark/optimized/packet-thread.c.ll
+; wireshark/optimized/packet-wai.c.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000c(i16 %0) #0 {
+entry:
+  %1 = add i16 %0, 1
   ret i16 %1
 }
 

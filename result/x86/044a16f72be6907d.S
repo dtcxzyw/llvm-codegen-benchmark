@@ -1,4 +1,4 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	subl	%edi, %edx
 	addl	%edx, %esi
 	sete	%al
@@ -9,12 +9,12 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$801, %esi                      # imm = 0x321
 	setae	%al
 	retq
-func000000000000095a:                   # @func000000000000095a
+func00000000000012aa:                   # @func00000000000012aa
 	subl	%edi, %edx
 	addl	%edx, %esi
 	setns	%al
 	retq
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	subl	%edi, %edx
 	addl	%edx, %esi
 	setns	%al

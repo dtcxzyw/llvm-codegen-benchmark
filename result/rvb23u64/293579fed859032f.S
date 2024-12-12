@@ -114,19 +114,6 @@ func00000000000003fd:                   # @func00000000000003fd
 	addi	a1, a3, 1681
 	addw	a0, a0, a1
 	ret
-func0000000000000140:                   # @func0000000000000140
-	lui	a3, 1048540
-	addi	a3, a3, 1359
-	mul	a1, a1, a3
-	lui	a3, 1048567
-	addi	a3, a3, 340
-	mul	a0, a0, a3
-	lui	a3, 176
-	addi	a3, a3, -1734
-	add	a1, a1, a2
-	add	a0, a0, a3
-	addw	a0, a0, a1
-	ret
 func00000000000000c0:                   # @func00000000000000c0
 	lui	a3, 65536
 	addi	a3, a3, -1715

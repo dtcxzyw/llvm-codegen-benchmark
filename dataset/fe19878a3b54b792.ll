@@ -1,6 +1,7 @@
 
-; 106 occurrences:
+; 107 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/src.ll
 ; brotli/optimized/encode.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll

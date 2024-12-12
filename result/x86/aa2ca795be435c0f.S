@@ -12,12 +12,6 @@ func000000000000030f:                   # @func000000000000030f
 	cmpb	$1, %dl
 	sbbl	$-1, %eax
 	retq
-func0000000000000200:                   # @func0000000000000200
-	andl	$1, %esi
-	leal	(%rsi,%rdi), %eax
-	cmpb	$-32, %dl
-	sbbl	$-1, %eax
-	retq
 func0000000000000305:                   # @func0000000000000305
 	andl	$1, %esi
 	leal	(%rsi,%rdi), %eax

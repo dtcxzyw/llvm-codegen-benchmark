@@ -1,5 +1,5 @@
 func0000000000000012:                   # @func0000000000000012
-	vpsraq	$2, %ymm2, %ymm2
+	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vpsubq	%ymm2, %ymm0, %ymm0
 	retq

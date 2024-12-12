@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; linux/optimized/rss.ll
+; 3 occurrences:
 ; linux/optimized/slab_common.ll
 ; llvm/optimized/Descriptor.cpp.ll
 ; wireshark/optimized/packet-rtps.c.ll

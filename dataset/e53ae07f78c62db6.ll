@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; linux/optimized/head64.ll
 ; linux/optimized/lib.ll
 ; openspiel/optimized/TransTableL.cpp.ll
 ; ruby/optimized/iseq.ll

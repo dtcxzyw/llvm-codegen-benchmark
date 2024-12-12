@@ -81,16 +81,15 @@ entry:
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
-  %3 = getelementptr nusw [9 x double], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [9 x double], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
-; recastnavigation/optimized/NavMeshTesterTool.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
@@ -99,17 +98,36 @@ entry:
   ret ptr %3
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/calcvir.cpp.ll
-; opencv/optimized/AKAZEFeatures.cpp.ll
-; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
   %3 = getelementptr nusw [1 x i8], ptr %0, i64 0, i64 %2
+  ret ptr %3
+}
+
+; 3 occurrences:
+; opencv/optimized/AKAZEFeatures.cpp.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
+entry:
+  %2 = mul nsw i64 %1, 6
+  %3 = getelementptr nusw nuw [288 x i16], ptr %0, i64 0, i64 %2
+  ret ptr %3
+}
+
+; 1 occurrences:
+; recastnavigation/optimized/NavMeshTesterTool.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
+entry:
+  %2 = mul i64 %1, 3
+  %3 = getelementptr nusw nuw [9 x float], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 

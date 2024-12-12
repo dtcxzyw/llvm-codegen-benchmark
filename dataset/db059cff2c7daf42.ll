@@ -14,7 +14,7 @@ entry:
   ret i64 %2
 }
 
-; 93 occurrences:
+; 91 occurrences:
 ; abc/optimized/rwrUtil.c.ll
 ; abseil-cpp/optimized/escaping.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -47,7 +47,6 @@ entry:
 ; linux/optimized/agg-tx.ll
 ; linux/optimized/fault.ll
 ; linux/optimized/qspinlock.ll
-; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/sem.ll
 ; linux/optimized/tables.ll
 ; linux/optimized/tkip.ll
@@ -92,7 +91,6 @@ entry:
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/patchTableFactory.cpp.ll
 ; openvdb/optimized/points.cc.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; php/optimized/html.ll

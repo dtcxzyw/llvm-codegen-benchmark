@@ -28,11 +28,10 @@ entry:
   ret double %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/giaMan.c.ll
-; gromacs/optimized/dlaruv.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define double @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
@@ -43,13 +42,11 @@ entry:
   ret double %5
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/aigMan.c.ll
 ; abc/optimized/casDec.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/giaMan.c.ll
-; gromacs/optimized/dlaruv.cpp.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {

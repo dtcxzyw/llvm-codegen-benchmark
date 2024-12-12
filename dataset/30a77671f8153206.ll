@@ -24,10 +24,10 @@ entry:
 ; pbrt-v4/optimized/stats.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(float %0) #0 {
+define i32 @func0000000000000018(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
-  %2 = icmp ugt i32 %1, 2139095040
+  %2 = icmp samesign ugt i32 %1, 2139095040
   %3 = select i1 %2, i32 32256, i32 31744
   ret i32 %3
 }

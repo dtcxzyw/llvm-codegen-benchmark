@@ -20,6 +20,13 @@ func0000000000000030:                   # @func0000000000000030
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v14
 	ret
+func0000000000000010:                   # @func0000000000000010
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vwaddu.wv	v14, v10, v12
+	li	a0, -3
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmacc.vx	v8, a0, v14
+	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v14, v10, v12

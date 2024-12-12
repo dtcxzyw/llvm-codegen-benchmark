@@ -13,16 +13,4 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; linux/optimized/genetlink.ll
-; redis/optimized/rdb.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ult i8 %2, 4
-  %4 = select i1 %3, i1 true, i1 %1
-  %5 = select i1 %4, i32 %0, i32 0
-  ret i32 %5
-}
-
 attributes #0 = { nounwind }

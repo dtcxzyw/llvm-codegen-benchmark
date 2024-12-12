@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; openspiel/optimized/chess.cc.ll
@@ -9,6 +9,8 @@
 ; openspiel/optimized/kriegspiel.cc.ll
 ; openspiel/optimized/rbc.cc.ll
 ; openusd/optimized/decodemv.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i8 %2) #0 {
 entry:

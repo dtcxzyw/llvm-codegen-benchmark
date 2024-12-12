@@ -3,17 +3,17 @@ func0000000000000008:                   # @func0000000000000008
 	slliw	a0, a0, 1
 	sltu	a0, a1, a0
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	subw	a1, a1, a2
 	slliw	a0, a0, 1
 	slt	a0, a1, a0
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	subw	a1, a1, a2
 	slliw	a0, a0, 1
 	sltu	a0, a1, a0
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	subw	a1, a1, a2
 	slliw	a0, a0, 1
 	slt	a0, a0, a1
@@ -35,7 +35,7 @@ func0000000000000009:                   # @func0000000000000009
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	subw	a1, a1, a2
 	slliw	a0, a0, 2
 	sltu	a0, a1, a0

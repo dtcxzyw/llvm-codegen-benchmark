@@ -1,4 +1,4 @@
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	incq	%rdx
 	cmpq	%rsi, %rdx
 	seta	%cl
@@ -6,7 +6,7 @@ func0000000000000102:                   # @func0000000000000102
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000622:                   # @func0000000000000622
+func0000000000001842:                   # @func0000000000001842
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	sete	%cl
@@ -14,7 +14,7 @@ func0000000000000622:                   # @func0000000000000622
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000098:                   # @func0000000000000098
+func0000000000000118:                   # @func0000000000000118
 	incq	%rdx
 	cmpq	%rsi, %rdx
 	setb	%cl
@@ -22,7 +22,7 @@ func0000000000000098:                   # @func0000000000000098
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setb	%cl
@@ -30,7 +30,7 @@ func0000000000000188:                   # @func0000000000000188
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000122:                   # @func0000000000000122
+func0000000000000242:                   # @func0000000000000242
 	decq	%rdx
 	cmpq	%rsi, %rdx
 	setae	%cl
@@ -38,15 +38,7 @@ func0000000000000122:                   # @func0000000000000122
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000722:                   # @func0000000000000722
-	incq	%rdx
-	cmpq	%rsi, %rdx
-	setae	%cl
-	testq	%rdi, %rdi
-	sete	%al
-	orb	%cl, %al
-	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	incq	%rdx
 	cmpq	%rsi, %rdx
 	sete	%cl
@@ -54,7 +46,7 @@ func0000000000000022:                   # @func0000000000000022
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	sete	%cl

@@ -6,7 +6,7 @@ func0000000000000015:                   # @func0000000000000015
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [4294967170,4294967170,4294967170,4294967170,4294967170,4294967170,4294967170,4294967170]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm2, %ymm0
 	retq
 .LCPI1_0:

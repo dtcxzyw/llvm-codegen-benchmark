@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; c3c/optimized/lexer.c.ll
@@ -14,6 +14,7 @@
 ; icu/optimized/collationsets.ll
 ; icu/optimized/parse.ll
 ; icu/optimized/rulebasedcollator.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; ruby/optimized/compile.ll
@@ -30,7 +31,7 @@ entry:
   ret i64 %6
 }
 
-; 32 occurrences:
+; 34 occurrences:
 ; abc/optimized/abcFunc.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/acbUtil.c.ll
@@ -51,6 +52,7 @@ entry:
 ; c3c/optimized/parse_global.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libquic/optimized/a_utf8.c.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; openssl/optimized/libcrypto-lib-a_utf8.ll
@@ -62,18 +64,19 @@ entry:
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 49
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = or disjoint i64 %4, %5
   ret i64 %6
 }
 
-; 49 occurrences:
+; 53 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_main_capi.cpp.ll
 ; grpc/optimized/parsing.cc.ll
@@ -123,6 +126,10 @@ entry:
 ; velox/optimized/tz.cpp.ll
 ; verilator/optimized/V3Config.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i64 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -146,7 +153,7 @@ entry:
   ret i64 %6
 }
 
-; 22 occurrences:
+; 27 occurrences:
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
@@ -167,8 +174,13 @@ entry:
 ; rust-analyzer-rs/optimized/3yqkws4dawqbgt35.ll
 ; rust-analyzer-rs/optimized/4nk4vk785ylcn5k7.ll
 ; rust-analyzer-rs/optimized/4xl67loow1v11x6s.ll
+; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; velox/optimized/ComplexVector.cpp.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000013(i64 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -185,7 +197,7 @@ entry:
 define i64 @func000000000000001c(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 19
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = or i64 %4, %5
   ret i64 %6
@@ -198,7 +210,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 42
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = or i64 %4, %5
   ret i64 %6
@@ -226,7 +238,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 56
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = or i64 %4, %5
   ret i64 %6
@@ -264,7 +276,7 @@ entry:
 define i64 @func000000000000001a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 24
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = or i64 %4, %5
   ret i64 %6
@@ -291,7 +303,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = or disjoint i64 %4, %5
   ret i64 %6

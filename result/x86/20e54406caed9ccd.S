@@ -46,6 +46,5 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 func0000000000000010:                   # @func0000000000000010
 	movzbl	%sil, %eax
-	shll	$4, %edi
-	addl	%edi, %eax
+	leal	(%rax,%rdi,8), %eax
 	retq

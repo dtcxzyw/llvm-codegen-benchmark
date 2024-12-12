@@ -1,5 +1,5 @@
 
-; 776 occurrences:
+; 769 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchDiv.c.ll
@@ -163,6 +163,7 @@
 ; abc/optimized/saigTrans.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdSat.c.ll
+; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/sswAig.c.ll
 ; abc/optimized/sswFilter.c.ll
@@ -193,9 +194,9 @@
 ; assimp/optimized/SMDLoader.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/c_abi_x64.c.ll
 ; cjson/optimized/cJSON.c.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/rijndael.c.ll
 ; clamav/optimized/rijndael.cpp.ll
@@ -389,7 +390,6 @@
 ; linux/optimized/sysctl_net_ipv4.ll
 ; linux/optimized/tcp_offload.ll
 ; linux/optimized/tty_ioctl.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/xhci-mem.ll
 ; llvm/optimized/AArch64RedundantCopyElimination.cpp.ll
@@ -461,6 +461,7 @@
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; luau/optimized/IrTranslation.cpp.ll
+; lvgl/optimized/lv_obj.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
@@ -481,7 +482,6 @@
 ; mitsuba3/optimized/disk.cpp.ll
 ; mitsuba3/optimized/distant.cpp.ll
 ; mitsuba3/optimized/envmap.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
 ; mitsuba3/optimized/hg.cpp.ll
 ; mitsuba3/optimized/irradiancemeter.cpp.ll
@@ -620,7 +620,6 @@
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-lib-curve448.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-property.ll
 ; openssl/optimized/libcrypto-lib-seed.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
@@ -630,21 +629,17 @@
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-curve448.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-property.ll
 ; openssl/optimized/libcrypto-shlib-seed.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-sm4.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
-; openssl/optimized/libssl-lib-tlsany_meth.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
-; openssl/optimized/libssl-shlib-tlsany_meth.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; openusd/optimized/decoder.c.ll
 ; openusd/optimized/fileIO.cpp.ll
@@ -673,7 +668,6 @@
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_inheritance.ll
 ; php/optimized/zend_jit.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/network.ll
 ; postgres/optimized/pg_crc32c_sb8.ll
@@ -751,7 +745,6 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/packet-cipsafety.c.ll
 ; wireshark/optimized/packet-gprs-llc.c.ll
 ; wireshark/optimized/packet-mstp.c.ll

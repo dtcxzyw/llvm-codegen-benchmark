@@ -33,8 +33,7 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; linux/optimized/fs-writeback.ll
+; 1 occurrences:
 ; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {

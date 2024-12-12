@@ -12,7 +12,7 @@
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = and i64 %1, 31
   %6 = icmp eq i64 %4, %5
   ret i1 %6
@@ -21,24 +21,12 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000027(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = and i64 %1, 4294967295
   %6 = icmp sle i64 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; yosys/optimized/memlib.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4294967295
-  %4 = add nuw nsw i64 %3, %0
-  %5 = and i64 %1, 2147483647
-  %6 = icmp ult i64 %4, %5
   ret i1 %6
 }
 
@@ -46,10 +34,10 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = and i64 %1, 4294967295
   %6 = icmp sgt i64 %4, %5
   ret i1 %6
@@ -76,7 +64,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = and i64 %1, 4294967295
   %6 = icmp ult i64 %4, %5
   ret i1 %6
@@ -85,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/badblocks.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 18014398509481983
   %4 = add nuw nsw i64 %3, %0
@@ -97,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/extents_status.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 576460752303423487
   %4 = add nuw nsw i64 %3, %0

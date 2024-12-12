@@ -9,7 +9,7 @@ entry:
   %3 = and i8 %2, 64
   %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, i8 0, i8 6
-  %6 = or i8 %5, %1
+  %6 = or i8 %1, %5
   %7 = or i8 %6, %0
   ret i8 %7
 }
@@ -23,7 +23,7 @@ entry:
   %3 = and i8 %2, 7
   %4 = icmp eq i8 %3, 6
   %5 = select i1 %4, i8 4, i8 0
-  %6 = or disjoint i8 %5, %1
+  %6 = or disjoint i8 %1, %5
   %7 = or i8 %6, %0
   ret i8 %7
 }

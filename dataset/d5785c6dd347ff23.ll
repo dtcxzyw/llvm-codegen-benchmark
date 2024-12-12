@@ -59,7 +59,7 @@ define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = mul i32 %4, 60
   ret i32 %5
 }
@@ -71,7 +71,7 @@ define i32 @func0000000000000015(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = mul nsw i32 %4, 18
   ret i32 %5
 }

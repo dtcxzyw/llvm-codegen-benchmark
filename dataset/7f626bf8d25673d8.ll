@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; llvm/optimized/LowerExpectIntrinsic.cpp.ll
 ; lua/optimized/lvm.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
 ; openjdk/optimized/X11Renderer.ll
 ; openjdk/optimized/threadHeapSampler.ll

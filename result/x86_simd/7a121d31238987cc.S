@@ -31,3 +31,8 @@ func0000000000000006:                   # @func0000000000000006
 	vpsrlvd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	retq
+func0000000000000002:                   # @func0000000000000002
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsrlvd	%ymm0, %ymm1, %ymm0
+	vpsubd	%ymm1, %ymm0, %ymm0
+	retq

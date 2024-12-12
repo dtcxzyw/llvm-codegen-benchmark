@@ -1,25 +1,9 @@
 
-; 22 occurrences:
-; crow/optimized/example.cpp.ll
-; crow/optimized/example_blueprint.cpp.ll
-; crow/optimized/example_catchall.cpp.ll
-; crow/optimized/example_chat.cpp.ll
-; crow/optimized/example_cookies.cpp.ll
-; crow/optimized/example_cors.cpp.ll
-; crow/optimized/example_file_upload.cpp.ll
-; crow/optimized/example_json_map.cpp.ll
-; crow/optimized/example_middleware.cpp.ll
-; crow/optimized/example_session.cpp.ll
-; crow/optimized/example_static_file.cpp.ll
-; crow/optimized/example_ws.cpp.ll
-; crow/optimized/helloworld.cpp.ll
+; 6 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_cx0_phy.ll
 ; qemu/optimized/accel_tcg_translate-all.c.ll
 ; qemu/optimized/tcg-op-ldst.c.ll
 ; redis/optimized/server.ll
-; slurm/optimized/node_mgr.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-tibia.c.ll
 ; Function Attrs: nounwind

@@ -30,7 +30,6 @@
 ; llvm/optimized/OpenBSD.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
@@ -96,7 +95,6 @@
 ; openusd/optimized/usdtree.cpp.ll
 ; php/optimized/spl_array.ll
 ; php/optimized/zend_API.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/topocentric.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/block.c.ll
@@ -113,6 +111,8 @@
 ; wireshark/optimized/opcua.c.ll
 ; wireshark/optimized/packet-iscsi.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/8mv6d566jv1jdve4gk2kn2bhk.ll
+; zed-rs/optimized/etkkpijil810uxaq6a1xhpkj9.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(ptr %0) #0 {
 entry:
@@ -120,7 +120,7 @@ entry:
   ret i1 %.not
 }
 
-; 148 occurrences:
+; 157 occurrences:
 ; abc/optimized/mapperTime.c.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/1fcqyxrltkf78u1u.ll
@@ -140,7 +140,6 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5FD.c.ll
 ; imgui/optimized/imgui.cpp.ll
-; libquic/optimized/cmp.c.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
 ; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -151,15 +150,14 @@ entry:
 ; llvm/optimized/CallGraphSCCPass.cpp.ll
 ; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/ConstantHoisting.cpp.ll
-; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/LoopDistribute.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; luau/optimized/Builtins.cpp.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -209,7 +207,6 @@ entry:
 ; postgres/optimized/initsplan.ll
 ; postgres/optimized/lock.ll
 ; postgres/optimized/user.ll
-; proj/optimized/crs.cpp.ll
 ; protobuf/optimized/map_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
@@ -269,6 +266,18 @@ entry:
 ; yalantinglibs/optimized/server.cpp.ll
 ; z3/optimized/dl_interval_relation.cpp.ll
 ; z3/optimized/expr2polynomial.cpp.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8ps09f0y8mibhh9t1qb96p5es.ll
+; zed-rs/optimized/9pzx6flqzrwt1xqpmg7mx7dne.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/d6xu5i45b643l7z0mo8lfmzx0.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0) #0 {
 entry:

@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	andi	a1, a1, 1
 	zext.w	a2, a2
 	czero.nez	a1, a2, a1

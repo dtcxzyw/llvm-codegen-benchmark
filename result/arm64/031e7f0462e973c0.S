@@ -1,20 +1,14 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v5.2d
-	add	v3.2d, v3.2d, v1.2d
-	add	v2.2d, v2.2d, v0.2d
-	bic	v0.16b, v2.16b, v0.16b
-	bic	v1.16b, v3.16b, v1.16b
+	add	x8, x1, x2
+	add	x8, x0, x8
+	bic	x0, x8, x0
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v5.2d
-	add	v3.2d, v3.2d, v1.2d
-	add	v2.2d, v2.2d, v0.2d
-	bic	v0.16b, v2.16b, v0.16b
-	bic	v1.16b, v3.16b, v1.16b
+	add	x8, x1, x2
+	add	x8, x0, x8
+	bic	x0, x8, x0
 	ret
                                         // -- End function

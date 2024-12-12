@@ -7,6 +7,5 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000003:                   # @func0000000000000003
 	subl	%esi, %edi
 	movzwl	%di, %eax
-	shll	$3, %eax
-	leal	(%rax,%rax,2), %eax
+	imull	$365, %eax, %eax                # imm = 0x16D
 	retq

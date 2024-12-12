@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = lshr i32 %2, 4
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c4(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = lshr i32 %2, 2
@@ -53,22 +53,22 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/virtio_ring.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000069(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000d9(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = lshr i32 %2, 2
-  %4 = icmp uge i32 %3, %0
+  %4 = icmp samesign uge i32 %3, %0
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 100
   %3 = lshr i32 %2, 12
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ugt i32 %3, %0
   ret i1 %4
 }
 

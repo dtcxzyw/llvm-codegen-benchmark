@@ -16,7 +16,7 @@
 	.short	655                             # 0x28f
 	.short	655                             # 0x28f
 	.short	655                             # 0x28f
-func0000000000000438:                   # @func0000000000000438
+func0000000000001058:                   # @func0000000000001058
 	vpmovdw	%ymm1, %xmm1
 	vpmullw	.LCPI0_0(%rip), %xmm1, %xmm1    # [23593,23593,23593,23593,23593,23593,23593,23593]
 	vpshrdw	$2, %xmm1, %xmm1, %xmm1

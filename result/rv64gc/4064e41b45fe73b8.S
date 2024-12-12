@@ -38,16 +38,3 @@ func0000000000000007:                   # @func0000000000000007
 	li	a0, 3
 .LBB6_2:                                # %entry
 	ret
-func0000000000000013:                   # @func0000000000000013
-	li	a2, 1
-	bltu	a2, a1, .LBB7_2
-	li	a0, 1
-.LBB7_2:                                # %entry
-	ret
-func0000000000000029:                   # @func0000000000000029
-	li	a2, 1
-	slli	a2, a2, 11
-	blt	a1, a2, .LBB8_2
-	mv	a0, a2
-.LBB8_2:                                # %entry
-	ret

@@ -21,27 +21,25 @@ entry:
   ret ptr %7
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; abc/optimized/giaFanout.c.ll
 ; abc/optimized/giaJf.c.ll
+; abc/optimized/giaStr.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; libjpeg-turbo/optimized/jdarith.c.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; php/optimized/ir_ra.ll
 ; php/optimized/zend_jit.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000005f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -86,33 +84,30 @@ entry:
   ret ptr %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; icu/optimized/unames.ll
-; lz4/optimized/lz4hc.c.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000004f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw float, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw float, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw float, ptr %5, i64 %6
   ret ptr %7
 }
 
-; 3 occurrences:
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
+; 1 occurrences:
+; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000004b(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr double, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 -8
-  %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw double, ptr %5, i64 %6
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -2
+  %6 = zext i32 %0 to i64
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -121,13 +116,28 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000005b(i32 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw double, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -8
+  %6 = zext nneg i32 %0 to i64
+  %7 = getelementptr nusw nuw double, ptr %5, i64 %6
+  ret ptr %7
+}
+
+; 3 occurrences:
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000053(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw double, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -8
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw double, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw double, ptr %5, i64 %6
   ret ptr %7
 }
 

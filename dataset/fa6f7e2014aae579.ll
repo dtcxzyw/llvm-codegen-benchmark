@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/aigJust.c.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
 ; wireshark/optimized/packet-wbxml.c.ll
 ; Function Attrs: nounwind

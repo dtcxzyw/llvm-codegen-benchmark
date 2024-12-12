@@ -1,6 +1,5 @@
 func0000000000000001:                   # @func0000000000000001
-	orl	%edx, %esi
-	cmpb	$100, %dil
+	cmpb	$2, %dil
 	sete	%al
-	andb	%sil, %al
+	andb	%dl, %al
 	retq

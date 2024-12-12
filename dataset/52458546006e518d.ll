@@ -14,7 +14,7 @@
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 

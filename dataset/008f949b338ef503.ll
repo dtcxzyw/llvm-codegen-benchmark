@@ -13,10 +13,11 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; cpython/optimized/frameobject.ll
+; freetype/optimized/psaux.c.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; php/optimized/dtoa.ll

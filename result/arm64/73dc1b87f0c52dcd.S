@@ -1,4 +1,4 @@
-func0000000000001822:                   // @func0000000000001822
+func0000000000006042:                   // @func0000000000006042
 // %bb.0:                               // %entry
 	cmp	w0, #2
 	ccmp	x1, #0, #4, eq
@@ -6,7 +6,7 @@ func0000000000001822:                   // @func0000000000001822
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000222:                   // @func0000000000000222
+func0000000000000842:                   // @func0000000000000842
 // %bb.0:                               // %entry
 	cmp	w0, #0
 	ccmp	x1, #0, #0, eq
@@ -14,7 +14,7 @@ func0000000000000222:                   // @func0000000000000222
 	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000182c:                   // @func000000000000182c
+func000000000000604c:                   // @func000000000000604c
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	ccmp	w0, #0, #4, eq
@@ -22,7 +22,7 @@ func000000000000182c:                   // @func000000000000182c
 	cset	w0, lt
 	ret
                                         // -- End function
-func000000000000142c:                   // @func000000000000142c
+func000000000000504c:                   // @func000000000000504c
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	cset	w8, eq
@@ -31,7 +31,7 @@ func000000000000142c:                   // @func000000000000142c
 	csinc	w0, w8, wzr, ge
 	ret
                                         // -- End function
-func0000000000000234:                   // @func0000000000000234
+func0000000000000854:                   // @func0000000000000854
 // %bb.0:                               // %entry
 	cmp	w0, #0
 	cset	w8, eq

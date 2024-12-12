@@ -1,12 +1,12 @@
 func0000000000000003:                   # @func0000000000000003
 	orl	%edx, %esi
 	andl	$-7340033, %esi                 # imm = 0xFF8FFFFF
-	leal	1048576(%rsi,%rdi), %eax
+	leal	1048576(%rdi,%rsi), %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	orl	%edx, %esi
 	andl	$-4162048, %esi                 # imm = 0xFFC07E00
-	leal	32773(%rsi,%rdi), %eax
+	leal	32773(%rdi,%rsi), %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %eax

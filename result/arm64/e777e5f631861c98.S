@@ -1,18 +1,18 @@
-func0000000000000111:                   // @func0000000000000111
+func0000000000000421:                   // @func0000000000000421
 // %bb.0:                               // %entry
 	cmp	x0, #0
 	ccmn	x1, #1, #4, ne
 	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000031c:                   // @func000000000000031c
+func0000000000000c2c:                   // @func0000000000000c2c
 // %bb.0:                               // %entry
 	cmp	x0, #0
 	ccmp	x1, #4, #4, eq
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000041:                   // @func0000000000000041
+func0000000000000081:                   // @func0000000000000081
 // %bb.0:                               // %entry
 	add	x8, x1, #1
 	cmp	x0, #0
@@ -20,7 +20,7 @@ func0000000000000041:                   // @func0000000000000041
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000141:                   // @func0000000000000141
+func0000000000000481:                   // @func0000000000000481
 // %bb.0:                               // %entry
 	mov	x8, #-16777217                  // =0xfffffffffeffffff
 	cmp	x0, #0
@@ -30,21 +30,21 @@ func0000000000000141:                   // @func0000000000000141
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	cmp	x0, #0
 	ccmp	x1, #1, #4, ne
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000311:                   // @func0000000000000311
+func0000000000000c21:                   // @func0000000000000c21
 // %bb.0:                               // %entry
 	cmp	x0, #0
 	ccmp	x1, #7, #4, ne
 	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000011c:                   // @func000000000000011c
+func000000000000042c:                   // @func000000000000042c
 // %bb.0:                               // %entry
 	cmp	x0, #0
 	ccmp	x1, #1, #4, eq

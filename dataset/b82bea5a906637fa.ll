@@ -12,7 +12,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 20
   %4 = or disjoint i32 %3, 524288
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = ashr i32 %5, 20
   ret i32 %6
 }

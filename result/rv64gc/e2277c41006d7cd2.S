@@ -4,6 +4,12 @@ func0000000000000005:                   # @func0000000000000005
 	negw	a0, a0
 .LBB0_2:                                # %entry
 	ret
+func0000000000000051:                   # @func0000000000000051
+	andi	a1, a1, 128
+	bnez	a1, .LBB1_2
+	negw	a0, a0
+.LBB1_2:                                # %entry
+	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a1, a1, 49
 	srai	a1, a1, 63
@@ -13,27 +19,15 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000007:                   # @func0000000000000007
 	andi	a1, a1, 1024
-	beqz	a1, .LBB2_2
-	li	a1, 6
-	mulw	a0, a1, a0
-	ret
-.LBB2_2:
-	li	a1, 8
-	mulw	a0, a1, a0
-	ret
-func0000000000000031:                   # @func0000000000000031
-	lui	a2, 1
-	addiw	a2, a2, -8
-	and	a1, a1, a2
 	beqz	a1, .LBB3_2
-	li	a1, 3
-	mulw	a0, a1, a0
+	li	a1, 6
+	mulw	a0, a0, a1
 	ret
 .LBB3_2:
-	li	a1, 1
-	mulw	a0, a1, a0
+	li	a1, 8
+	mulw	a0, a0, a1
 	ret
-func0000000000000033:                   # @func0000000000000033
+func0000000000000031:                   # @func0000000000000031
 	lui	a2, 1
 	addiw	a2, a2, -8
 	and	a1, a1, a2
@@ -44,4 +38,16 @@ func0000000000000033:                   # @func0000000000000033
 .LBB4_2:
 	li	a1, 1
 	mulw	a0, a1, a0
+	ret
+func0000000000000033:                   # @func0000000000000033
+	lui	a2, 1
+	addiw	a2, a2, -8
+	and	a1, a1, a2
+	beqz	a1, .LBB5_2
+	li	a1, 3
+	mulw	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a1, 1
+	mulw	a0, a0, a1
 	ret

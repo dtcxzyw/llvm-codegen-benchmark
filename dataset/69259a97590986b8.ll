@@ -1,9 +1,8 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; chibicc/optimized/tokenize.ll
-; cmake/optimized/archive_write_disk_set_standard_lookup.c.ll
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; hermes/optimized/JSLexer.cpp.ll

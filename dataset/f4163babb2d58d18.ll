@@ -8,28 +8,17 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 256, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
-; 1 occurrences:
-; c3c/optimized/lexer.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 255
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
-  ret i64 %6
-}
-
-; 16 occurrences:
+; 18 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/ObjCMT.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
@@ -41,13 +30,14 @@ entry:
 ; opencv/optimized/data.cpp.ll
 ; xgboost/optimized/charconv.cc.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 undef, i32 %1
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -62,7 +52,7 @@ entry:
   %3 = icmp eq i32 %2, 2
   %4 = select i1 %3, i32 3, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -74,7 +64,7 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -86,7 +76,7 @@ entry:
   %3 = icmp ult i32 %2, 3
   %4 = select i1 %3, i32 0, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -99,7 +89,7 @@ entry:
   %3 = icmp sgt i32 %2, 8388606
   %4 = select i1 %3, i32 2147483392, i32 %1
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -111,7 +101,7 @@ entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i32 1024, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -123,19 +113,7 @@ entry:
   %3 = icmp sgt i32 %2, 32767
   %4 = select i1 %3, i32 32767, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/median_blur.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001b(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 

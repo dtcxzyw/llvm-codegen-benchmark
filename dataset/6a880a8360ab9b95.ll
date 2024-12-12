@@ -6,7 +6,7 @@
 ; php/optimized/streams.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
@@ -24,7 +24,7 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/stack_trace.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 100001
   %4 = select i1 %1, i1 %3, i1 false
@@ -49,7 +49,7 @@ entry:
 ; hyperscan/optimized/charreach.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %2, %1
   %4 = icmp eq i64 %3, 0
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/script.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
@@ -72,12 +72,26 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/entropy_encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 6
   %4 = select i1 %0, i1 %3, i1 false
   %5 = icmp ult i64 %1, -2
   %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+; 3 occurrences:
+; casadi/optimized/dm_instantiator.cpp.ll
+; casadi/optimized/im_instantiator.cpp.ll
+; casadi/optimized/sx_instantiator.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000014a(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp sgt i64 %2, 1000
+  %4 = select i1 %1, i1 %3, i1 false
+  %5 = icmp sgt i64 %0, 6
+  %6 = and i1 %5, %4
   ret i1 %6
 }
 

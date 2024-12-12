@@ -16,14 +16,15 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add nsw i32 %3, 1
-  %5 = mul i32 %4, %0
+  %5 = mul i32 %0, %4
   ret i32 %5
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/cuddGenetic.c.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
 ; openblas/optimized/dgghd3.c.ll
@@ -54,7 +55,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add nsw i32 %3, 1
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -103,7 +104,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = add i32 %3, 1
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -131,7 +132,7 @@ define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add nuw nsw i32 %3, 1
-  %5 = mul nuw nsw i32 %4, %0
+  %5 = mul nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -142,7 +143,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add i32 %3, 1
-  %5 = mul i32 %4, %0
+  %5 = mul i32 %0, %4
   ret i32 %5
 }
 

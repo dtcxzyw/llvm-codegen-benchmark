@@ -32,16 +32,3 @@ func000000000000001d:                   # @func000000000000001d
 	add	a1, a1, a2
 	mulw	a0, a1, a0
 	ret
-func000000000000004f:                   # @func000000000000004f
-	sext.w	a2, a2
-	li	a3, 4
-	bltu	a2, a3, .LBB4_2
-	li	a2, 112
-	add	a1, a1, a2
-	mulw	a0, a1, a0
-	ret
-.LBB4_2:
-	li	a2, 88
-	add	a1, a1, a2
-	mulw	a0, a1, a0
-	ret

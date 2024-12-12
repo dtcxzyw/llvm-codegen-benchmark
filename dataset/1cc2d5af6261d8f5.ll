@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/sky2.ll
+; linux/optimized/tg3.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i32 %1, i16 %2) #0 {

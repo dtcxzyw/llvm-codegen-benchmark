@@ -1,6 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpmullq	%ymm1, %ymm2, %ymm1
+	vpmullq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	vextracti128	$1, %ymm0, %xmm3
@@ -29,7 +29,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpmullq	%ymm1, %ymm2, %ymm1
+	vpmullq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	vextracti128	$1, %ymm0, %xmm3
@@ -58,7 +58,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func000000000000000e:                   # @func000000000000000e
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpmullq	%ymm1, %ymm2, %ymm1
+	vpmullq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	vextracti128	$1, %ymm0, %xmm3
@@ -87,7 +87,7 @@ func000000000000000e:                   # @func000000000000000e
 	retq
 func0000000000000006:                   # @func0000000000000006
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpmullq	%ymm1, %ymm2, %ymm1
+	vpmullq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	vextracti128	$1, %ymm0, %xmm3
@@ -116,7 +116,7 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 func0000000000000002:                   # @func0000000000000002
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpmullq	%ymm1, %ymm2, %ymm1
+	vpmullq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	vextracti128	$1, %ymm0, %xmm3
@@ -145,7 +145,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpmullq	%ymm1, %ymm2, %ymm1
+	vpmullq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	vextracti128	$1, %ymm0, %xmm3

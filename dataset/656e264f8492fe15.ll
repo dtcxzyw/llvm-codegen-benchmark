@@ -12,6 +12,20 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; llvm/optimized/ASTContext.cpp.ll
+; typst-rs/optimized/2hy987uth4sp8yoc.ll
+; wireshark/optimized/packet-wsp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp eq i8 %2, 35
+  %4 = select i1 %0, i1 true, i1 %1
+  %5 = xor i1 %4, true
+  %6 = select i1 %5, i1 %3, i1 false
+  ret i1 %6
+}
+
 ; 2 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; llvm/optimized/Format.cpp.ll
@@ -22,19 +36,6 @@ entry:
   %4 = select i1 %0, i1 true, i1 %1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
-}
-
-; 2 occurrences:
-; typst-rs/optimized/2hy987uth4sp8yoc.ll
-; wireshark/optimized/packet-wsp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = icmp eq i8 %2, 9
-  %4 = select i1 %0, i1 true, i1 %1
-  %5 = xor i1 %4, true
-  %6 = select i1 %5, i1 %3, i1 false
-  ret i1 %6
 }
 
 ; 5 occurrences:

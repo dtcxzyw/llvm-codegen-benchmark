@@ -21,8 +21,21 @@ define i64 @func0000000000000015(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = shl nsw i64 %5, 4
+  ret i64 %6
+}
+
+; 2 occurrences:
+; darktable/optimized/DngOpcodes.cpp.ll
+; opencv/optimized/cascadedetect.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000017(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = add nsw i64 %0, %4
+  %6 = shl nuw nsw i64 %5, 2
   ret i64 %6
 }
 
@@ -35,7 +48,7 @@ define i64 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = shl i64 %5, 32
   ret i64 %6
 }

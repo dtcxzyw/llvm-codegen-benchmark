@@ -10,7 +10,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = freeze i1 %1
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -22,23 +22,25 @@ define i32 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %2 = freeze i1 %1
   %3 = zext i1 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; abc/optimized/giaTim.c.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openusd/optimized/crease.cpp.ll
 ; z3/optimized/arith_rewriter.cpp.ll
 ; z3/optimized/bv_rewriter.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = freeze i1 %1
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -49,7 +51,7 @@ define i32 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
   %2 = freeze i1 %1
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 

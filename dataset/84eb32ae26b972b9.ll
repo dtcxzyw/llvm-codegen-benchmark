@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; freetype/optimized/cff.c.ll
 ; linux/optimized/gen8_ppgtt.ll
@@ -14,7 +14,6 @@
 ; openjdk/optimized/compileBroker.ll
 ; php/optimized/tar.ll
 ; ruby/optimized/ruby.ll
-; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; Function Attrs: nounwind
@@ -26,7 +25,20 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 3 occurrences:
+; redis/optimized/siphash.ll
+; ruby/optimized/parser_st.ll
+; ruby/optimized/st.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ult i8 %2, 26
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
+; 12 occurrences:
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/skl_universal_plane.ll
 ; llvm/optimized/CGBlocks.cpp.ll
@@ -37,6 +49,8 @@ entry:
 ; openssl/optimized/libcrypto-shlib-punycode.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; xgboost/optimized/context.cc.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1, i8 %2) #0 {
 entry:
@@ -58,7 +72,7 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -69,6 +83,7 @@ entry:
 ; openjdk/optimized/hb-ot-math.ll
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
+; postgres/optimized/rangetypes_gist.ll
 ; wireshark/optimized/netscaler.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i32 %0, i32 %1, i8 %2) #0 {
@@ -110,6 +125,17 @@ entry:
 define i64 @func0000000000000010(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 9
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = zext i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; redis/optimized/siphash.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ult i8 %2, 26
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = zext i32 %4 to i64
   ret i64 %5

@@ -4,15 +4,9 @@ func0000000000000004:                   # @func0000000000000004
 	cmoveq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
-	cmpw	$3, %dx
-	movl	$16, %eax
-	cmovaeq	%rsi, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000006:                   # @func0000000000000006
-	cmpw	$28, %dx
-	movl	$36, %eax
+	testw	%dx, %dx
+	movl	$27, %eax
 	cmoveq	%rsi, %rax
-	addq	%rdi, %rax
+	leaq	(%rdi,%rax,2), %rax
 	retq

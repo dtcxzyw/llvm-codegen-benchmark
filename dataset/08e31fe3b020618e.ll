@@ -20,7 +20,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i64 %0) #0 {
+define i8 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = icmp ult i64 %0, 68719476736
   %2 = select i1 %1, i8 16, i8 24

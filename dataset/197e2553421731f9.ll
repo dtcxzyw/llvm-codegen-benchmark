@@ -83,7 +83,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 4
   %narrow = add nuw i32 %2, 32
   %3 = zext i32 %narrow to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 

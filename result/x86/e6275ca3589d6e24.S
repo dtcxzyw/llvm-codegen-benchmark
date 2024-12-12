@@ -1,9 +1,8 @@
 func0000000000000003:                   # @func0000000000000003
-	movl	%esi, %eax
 	andb	$1, %dl
-	shlb	$5, %dl
-	orb	%dil, %al
-	orb	%dl, %al
+	leal	(%rdx,%rdx), %eax
+	orb	%dil, %sil
+	orb	%sil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%esi, %eax

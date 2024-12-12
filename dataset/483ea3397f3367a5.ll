@@ -3,7 +3,7 @@
 ; cpython/optimized/dtoa.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000002aa(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000052a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.inv = icmp slt i32 %2, 0
   %3 = select i1 %.inv, i32 %1, i32 0
@@ -19,7 +19,7 @@ entry:
 ; openusd/optimized/json.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000002ab(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000052b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.inv = icmp slt i32 %2, 0
   %3 = select i1 %.inv, i32 %1, i32 0

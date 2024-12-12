@@ -19,12 +19,12 @@ func0000000000000001:                   # @func0000000000000001
 	vmovdqa	%ymm1, %ymm0
 	retq
 .LCPI2_0:
-	.quad	57                              # 0x39
+	.quad	1                               # 0x1
 func0000000000000007:                   # @func0000000000000007
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm0, %k1
-	vpsllq	$8, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm2, %ymm0
 	vporq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq

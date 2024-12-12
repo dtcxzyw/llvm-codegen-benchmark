@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	%al, %al
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shlxl	%esi, %edi, %eax
 	testb	%al, %al
 	setns	%al
@@ -13,7 +13,7 @@ func000000000000000c:                   # @func000000000000000c
 	testl	%eax, %eax
 	setne	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	shlxl	%esi, %edi, %eax
 	shrb	$7, %al
 	retq

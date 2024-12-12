@@ -41,7 +41,7 @@ func0000000000000043:                   # @func0000000000000043
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
-func000000000000021e:                   # @func000000000000021e
+func000000000000061e:                   # @func000000000000061e
 	sext.w	a2, a2
 	sltiu	a2, a2, 2
 	xori	a2, a2, 1

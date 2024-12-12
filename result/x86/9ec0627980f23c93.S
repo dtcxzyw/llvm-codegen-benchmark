@@ -1,32 +1,32 @@
-func00000000000002c4:                   # @func00000000000002c4
+func0000000000000584:                   # @func0000000000000584
 	decl	%edx
 	leaq	(%rsi,%rdx,4), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func00000000000003c4:                   # @func00000000000003c4
+func0000000000000784:                   # @func0000000000000784
 	decl	%edx
 	leaq	(%rsi,%rdx,4), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	incl	%edx
 	shlq	$4, %rdx
 	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	seta	%al
+	cmpq	%rdx, %rdi
+	setb	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001e1:                   # @func00000000000001e1
 	decl	%edx
 	leaq	(%rsi,%rdx,8), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000002e4:                   # @func00000000000002e4
+func00000000000005e4:                   # @func00000000000005e4
 	addl	$-2, %edx
 	shlq	$4, %rdx
 	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	seta	%al
+	cmpq	%rdx, %rdi
+	setb	%al
 	retq

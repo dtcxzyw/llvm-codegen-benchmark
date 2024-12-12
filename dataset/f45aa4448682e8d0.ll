@@ -40,11 +40,11 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = shl nuw nsw i64 %3, 48
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; git/optimized/chunk-format.ll
 ; git/optimized/commit-graph.ll
@@ -70,6 +70,7 @@ entry:
 ; z3/optimized/bv_internalize.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -79,12 +80,14 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; clamav/optimized/lzwdec.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; lief/optimized/aes.c.ll
 ; redis/optimized/lua_struct.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -114,7 +117,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = shl nuw i64 %3, 8
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -140,14 +143,15 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = shl nuw nsw i64 %3, 16
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

@@ -10,6 +10,6 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000002:                   # @func0000000000000002
 	movl	%esi, %eax
-	andl	$1023, %eax                     # imm = 0x3FF
+	andl	$1, %eax
 	orq	%rdi, %rax
 	retq

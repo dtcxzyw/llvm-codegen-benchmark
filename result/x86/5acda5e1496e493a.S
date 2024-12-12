@@ -12,7 +12,7 @@ func0000000000000006:                   # @func0000000000000006
 	andq	%rdi, %rax
 	shrq	$63, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leaq	(%rsi,%rdi), %rax
 	xorq	%rax, %rdi
 	xorq	%rsi, %rax

@@ -1,9 +1,8 @@
 func0000000000000010:                   # @func0000000000000010
-	leal	127(%rdi), %ecx
-	leal	1023(%rdi), %eax
-	cmpw	$13, %si
-	cmovnel	%ecx, %eax
-	decl	%eax
+	xorl	%eax, %eax
+	cmpw	$16, %si
+	sete	%al
+	leal	9(%rdi,%rax,4), %eax
 	retq
 func000000000000001f:                   # @func000000000000001f
 	xorl	%eax, %eax

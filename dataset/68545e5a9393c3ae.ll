@@ -16,7 +16,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = select i1 %0, i32 1, i32 %2
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvscsu.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = select i1 %0, i32 8, i32 %2

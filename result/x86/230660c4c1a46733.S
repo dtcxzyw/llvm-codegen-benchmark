@@ -1,27 +1,27 @@
-func0000000000000077:                   # @func0000000000000077
+func00000000000000e7:                   # @func00000000000000e7
 	movzbl	%sil, %eax
 	imull	$171, %eax, %eax
 	shrl	$9, %eax
 	incb	%al
 	movzbl	%al, %eax
-	cmpl	%edi, %eax
-	setge	%al
+	cmpl	%eax, %edi
+	setle	%al
 	retq
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	movzbl	%sil, %eax
 	imull	$171, %eax, %eax
 	shrl	$9, %eax
 	incb	%al
 	movzbl	%al, %eax
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	setg	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movzbl	%sil, %eax
 	imull	$171, %eax, %eax
 	shrl	$9, %eax
 	incb	%al
 	movzbl	%al, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

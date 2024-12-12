@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	testw	%di, %di
 	sete	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	shrl	$16, %edi
 	testw	%di, %di
 	setle	%al

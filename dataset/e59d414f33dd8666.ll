@@ -1,7 +1,8 @@
 
-; 86 occurrences:
+; 93 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/PlyParser.cpp.ll
+; boost/optimized/ipv6_address.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -26,6 +27,10 @@
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CImage.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
@@ -63,7 +68,6 @@
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/aethra.c.ll
 ; wireshark/optimized/charsets.c.ll
-; wireshark/optimized/csids.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/eyesdn.c.ll
 ; wireshark/optimized/k12.c.ll
@@ -86,6 +90,9 @@
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
@@ -94,7 +101,8 @@ entry:
   ret i32 %3
 }
 
-; 128 occurrences:
+; 127 occurrences:
+; boost/optimized/topology.ll
 ; clamav/optimized/explode.c.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
@@ -113,7 +121,6 @@ entry:
 ; linux/optimized/8250_port.ll
 ; linux/optimized/access.ll
 ; linux/optimized/cgroup.ll
-; linux/optimized/hwsleep.ll
 ; linux/optimized/i2c-core-base.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/ohci-hcd.ll
@@ -121,6 +128,8 @@ entry:
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/xt_addrtype.ll
 ; llama.cpp/optimized/common.cpp.ll
+; memcached/optimized/memcached-items.ll
+; memcached/optimized/memcached_debug-items.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
@@ -176,7 +185,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -205,7 +213,6 @@ entry:
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_audio_ac97.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
-; qemu/optimized/io_channel-watch.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; spike/optimized/spike-log-parser.ll
 ; sqlite/optimized/sqlite3.ll
@@ -221,7 +228,6 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i16 %0, i16 %1) #0 {
@@ -231,13 +237,12 @@ entry:
   ret i32 %3
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; git/optimized/send-pack.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
 ; libpng/optimized/png.c.ll
 ; libwebp/optimized/vp8_dec.c.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/osl.ll
 ; linux/optimized/route.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll

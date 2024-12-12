@@ -102,8 +102,11 @@ entry:
   ret i1 %7
 }
 
-; 73 occurrences:
+; 76 occurrences:
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/any_params_iter.ll
+; boost/optimized/environment.ll
+; boost/optimized/message.ll
 ; cmake/optimized/cmQtAutoGenerator.cxx.ll
 ; duckdb/optimized/ub_duckdb_catalog.cpp.ll
 ; hdf5/optimized/H5Fsuper_cache.c.ll
@@ -209,14 +212,17 @@ entry:
   ret i1 %7
 }
 
-; 5 occurrences:
+; 8 occurrences:
 ; coreutils-rs/optimized/aci7fhqxjjsavmn.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
 ; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
+; zed-rs/optimized/0alphtuk5g34mh3kiiec4rpgf.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000044(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64

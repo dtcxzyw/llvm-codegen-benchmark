@@ -31,12 +31,11 @@ entry:
   ret i32 %7
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; meshlab/optimized/transferfunction.cpp.ll
@@ -50,7 +49,7 @@ entry:
   %3 = shl i32 %2, 16
   %4 = and i32 %1, 65280
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or i32 %6, -16777216
   ret i32 %7
 }
@@ -77,7 +76,7 @@ entry:
   %3 = and i32 %2, 65280
   %4 = shl nuw nsw i32 %1, 16
   %5 = or disjoint i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or i32 %6, -16777216
   ret i32 %7
 }

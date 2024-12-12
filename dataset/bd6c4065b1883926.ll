@@ -14,6 +14,19 @@ entry:
   ret i64 %6
 }
 
+; 2 occurrences:
+; linux/optimized/intel_atomic_plane.ll
+; lvgl/optimized/lv_sdl_window.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = mul nsw i32 %0, %1
+  %5 = mul i32 %4, %3
+  %6 = zext i32 %5 to i64
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; linux/optimized/skl_watermark.ll
 ; Function Attrs: nounwind
@@ -21,18 +34,6 @@ define i64 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = mul i32 %0, %1
-  %5 = mul i32 %4, %3
-  %6 = zext i32 %5 to i64
-  ret i64 %6
-}
-
-; 1 occurrences:
-; linux/optimized/intel_atomic_plane.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = mul nsw i32 %0, %1
   %5 = mul i32 %4, %3
   %6 = zext i32 %5 to i64
   ret i64 %6

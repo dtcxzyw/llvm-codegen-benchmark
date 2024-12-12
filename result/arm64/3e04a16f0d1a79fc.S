@@ -1,11 +1,11 @@
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
 	add	x8, x0, w2, sxtw
 	cmp	x8, x1
 	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000002c:                   // @func000000000000002c
+func000000000000004c:                   // @func000000000000004c
 // %bb.0:                               // %entry
 	add	x8, x0, w2, sxtw
 	cmp	x8, x1

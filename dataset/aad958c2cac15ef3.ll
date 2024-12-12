@@ -8,7 +8,7 @@
 ; openssl/optimized/libcrypto-lib-asn_mime.ll
 ; openssl/optimized/libcrypto-shlib-asn_mime.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000661(ptr %0, ptr %1) #0 {
+define i32 @func0000000000000c61(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32

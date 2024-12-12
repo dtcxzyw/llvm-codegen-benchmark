@@ -115,8 +115,7 @@ entry:
   ret i64 %4
 }
 
-; 136 occurrences:
-; abseil-cpp/optimized/exponential_biased.cc.ll
+; 132 occurrences:
 ; clamav/optimized/aspack.c.ll
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/clamdtop.c.ll
@@ -182,7 +181,6 @@ entry:
 ; linux/optimized/alternative.ll
 ; linux/optimized/callthunks.ll
 ; linux/optimized/ccm.ll
-; linux/optimized/ctr.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/fw_table.ll
 ; linux/optimized/gcm.ll
@@ -192,7 +190,6 @@ entry:
 ; linux/optimized/lskcipher.ll
 ; linux/optimized/pci_irq.ll
 ; linux/optimized/processor_core.ll
-; linux/optimized/rseq.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/skcipher.ll
 ; linux/optimized/slub.ll
@@ -251,7 +248,6 @@ entry:
 ; stb/optimized/stb_sprintf.c.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
@@ -373,8 +369,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; jq/optimized/decNumber.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:

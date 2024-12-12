@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 13 occurrences:
 ; graphviz/optimized/arrows.c.ll
 ; gromacs/optimized/calculate_spline_moduli.cpp.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
@@ -8,8 +8,6 @@
 ; osqp/optimized/amd_2.c.ll
 ; php/optimized/session.ll
 ; php/optimized/timelib.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/noarbsabr.ll
 ; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll

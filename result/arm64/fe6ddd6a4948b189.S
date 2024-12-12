@@ -1,57 +1,35 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	mov	w8, #365                        // =0x16d
-	cmlt	v7.4s, v4.4s, #0
-	cmlt	v16.4s, v5.4s, #0
-	dup	v6.4s, w8
-	mla	v2.4s, v4.4s, v6.4s
-	mla	v3.4s, v5.4s, v6.4s
-	usra	v4.4s, v7.4s, #30
-	usra	v5.4s, v16.4s, #30
-	ssra	v3.4s, v5.4s, #2
-	ssra	v2.4s, v4.4s, #2
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
+	add	w9, w2, #3
+	cmp	w2, #0
+	madd	w8, w2, w8, w1
+	csel	w9, w9, w2, lt
+	add	w8, w8, w9, asr #2
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000080:                   // @func0000000000000080
 // %bb.0:                               // %entry
 	mov	w8, #365                        // =0x16d
-	cmlt	v7.4s, v4.4s, #0
-	cmlt	v16.4s, v5.4s, #0
-	dup	v6.4s, w8
-	mla	v2.4s, v4.4s, v6.4s
-	mla	v3.4s, v5.4s, v6.4s
-	usra	v4.4s, v7.4s, #30
-	usra	v5.4s, v16.4s, #30
-	ssra	v3.4s, v5.4s, #2
-	ssra	v2.4s, v4.4s, #2
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
+	add	w9, w2, #3
+	cmp	w2, #0
+	madd	w8, w2, w8, w1
+	csel	w9, w9, w2, lt
+	add	w8, w8, w9, asr #2
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000095:                   // @func0000000000000095
 // %bb.0:                               // %entry
 	mov	w8, #31457                      // =0x7ae1
+	mov	w9, #365                        // =0x16d
 	movk	w8, #44564, lsl #16
-	dup	v6.4s, w8
-	mov	w8, #365                        // =0x16d
-	smull2	v7.2d, v4.4s, v6.4s
-	smull	v16.2d, v4.2s, v6.2s
-	smull2	v17.2d, v5.4s, v6.4s
-	smull	v6.2d, v5.2s, v6.2s
-	uzp2	v7.4s, v16.4s, v7.4s
-	dup	v16.4s, w8
-	uzp2	v6.4s, v6.4s, v17.4s
-	mla	v2.4s, v4.4s, v16.4s
-	mla	v3.4s, v5.4s, v16.4s
-	sshr	v4.4s, v7.4s, #5
-	sshr	v5.4s, v6.4s, #5
-	usra	v4.4s, v7.4s, #31
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	usra	v5.4s, v6.4s, #31
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v5.4s
+	madd	w9, w2, w9, w1
+	smull	x8, w2, w8
+	add	w9, w9, w0
+	asr	x8, x8, #37
+	add	w8, w8, w8, lsr #31
+	add	w0, w9, w8
 	ret
                                         // -- End function

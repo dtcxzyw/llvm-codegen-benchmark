@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; clamav/optimized/Ppmd7Dec.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -13,7 +13,6 @@
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
 ; linux/optimized/intel_sdvo.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/vlv_dsi.ll
 ; openexr/optimized/ImfWav.cpp.ll
 ; openexr/optimized/internal_piz.c.ll

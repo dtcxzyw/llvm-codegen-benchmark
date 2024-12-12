@@ -53,11 +53,11 @@
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -66,11 +66,11 @@ entry:
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 

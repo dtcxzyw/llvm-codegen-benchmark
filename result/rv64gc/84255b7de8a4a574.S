@@ -129,12 +129,14 @@ func00000000000000aa:                   # @func00000000000000aa
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func0000000000000032:                   # @func0000000000000032
-	feq.s	a0, fa1, fa1
-	lui	a1, 522240
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa0, fa5
-	flt.s	a2, fa5, fa0
+func0000000000000132:                   # @func0000000000000132
+	lui	a0, 522240
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa1, fa5
+	flt.s	a1, fa5, fa1
+	flt.s	a2, fa0, fa5
+	or	a0, a0, a1
+	flt.s	a1, fa5, fa0
 	or	a1, a1, a2
 	and	a0, a0, a1
 	xori	a0, a0, 1

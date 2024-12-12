@@ -1,0 +1,13 @@
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	and	w0, w0, #0xffffffe0
+	bfxil	w0, w1, #0, #4
+	ret
+                                        // -- End function
+func0000000000000007:                   // @func0000000000000007
+// %bb.0:                               // %entry
+	and	w8, w1, #0x8
+	and	w9, w0, #0xfffffff0
+	orr	w0, w9, w8
+	ret
+                                        // -- End function

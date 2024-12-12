@@ -12,9 +12,9 @@
 define i32 @func0000000000000004(i32 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = or i8 %3, %1
+  %4 = or i8 %1, %3
   %5 = zext nneg i8 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

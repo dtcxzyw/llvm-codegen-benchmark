@@ -1,7 +1,6 @@
 
-; 49 occurrences:
+; 54 occurrences:
 ; clamav/optimized/extract.cpp.ll
-; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; folly/optimized/IOBuf.cpp.ll
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
@@ -29,7 +28,6 @@
 ; ockam-rs/optimized/1l0fddpzpxfkvjvz.ll
 ; ockam-rs/optimized/29qu7xzozkf0g7sn.ll
 ; openjdk/optimized/barrierSetC1.ll
-; postgres/optimized/ginlogic.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/rewriteHandler.ll
 ; postgres/optimized/zic.ll
@@ -49,6 +47,13 @@
 ; wireshark/optimized/packet-nordic_ble.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; yosys/optimized/calc.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

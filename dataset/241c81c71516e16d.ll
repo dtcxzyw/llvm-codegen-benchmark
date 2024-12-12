@@ -1,18 +1,15 @@
 
-%struct.stbir__contributors.2906498 = type { i32, i32 }
-%struct.TPL_MV_REF.3194448 = type { %union.int_mv.3194445, i8 }
-%union.int_mv.3194445 = type { i32 }
-%struct.JSVarDef.3243668 = type { i32, i32, i32, i32 }
-%"class.cv::Mat.3554594" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3554595", %"struct.cv::MatStep.3554596" }
-%"struct.cv::MatSize.3554595" = type { ptr }
-%"struct.cv::MatStep.3554596" = type { ptr, [2 x i64] }
+%"struct.GUITable::Cell.2703225" = type { i32, i32, i32, i32, i32, i32, %"class.irr::video::SColor.2703211", i8, i32 }
+%"class.irr::video::SColor.2703211" = type { i32 }
+%"class.gmx::BasicVector.3373276" = type { [3 x float] }
+%struct.JSVarDef.3435097 = type { i32, i32, i32, i32 }
+%"class.cv::Mat.3735326" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3735327", %"struct.cv::MatStep.3735328" }
+%"struct.cv::MatSize.3735327" = type { ptr }
+%"struct.cv::MatStep.3735328" = type { ptr, [2 x i64] }
 
-; 26 occurrences:
-; clamav/optimized/manager.c.ll
+; 23 occurrences:
 ; linux/optimized/rx.ll
 ; nuttx/optimized/lib_fmemopen.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgedmd.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgesvdq.c.ll
@@ -44,7 +41,7 @@ entry:
   ret ptr %6
 }
 
-; 62 occurrences:
+; 61 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
@@ -94,10 +91,10 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; clamav/optimized/manager.c.ll
 ; gromacs/optimized/bwlzh.c.ll
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openblas/optimized/dlaeda.c.ll
 ; openblas/optimized/dlar1v.c.ll
@@ -106,7 +103,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
 ; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
 ; redis/optimized/hiredis.ll
-; wolfssl/optimized/api.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -117,13 +113,14 @@ entry:
   ret ptr %6
 }
 
-; 88 occurrences:
+; 89 occurrences:
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/bmcClp.c.ll
 ; abc/optimized/giaQbf.c.ll
 ; abc/optimized/giaSatMap.c.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; git/optimized/xutils.ll
@@ -146,7 +143,6 @@ entry:
 ; gromacs/optimized/slarrvx.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; hdf5/optimized/H5LTanalyze.c.ll
 ; icu/optimized/rbbi.ll
@@ -156,18 +152,17 @@ entry:
 ; libquic/optimized/url_canon_ip.cc.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; lightgbm/optimized/metadata.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
+; nori/optimized/nanovg.c.ll
 ; ocio/optimized/GradingBSplineCurve.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dggglm.c.ll
 ; openblas/optimized/dlaeda.c.ll
 ; openblas/optimized/dlar1v.c.ll
 ; openblas/optimized/dlarrv.c.ll
 ; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsptri.c.ll
 ; opencv/optimized/chessboard.cpp.ll
@@ -194,17 +189,19 @@ entry:
 ; openusd/optimized/entropymode.c.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/reconintra.c.ll
+; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; php/optimized/scdf.ll
 ; raylib/optimized/rtext.c.ll
+; raylib/optimized/rtextures.c.ll
 ; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_image_resize2.c.ll
 ; sundials/optimized/sunnonlinsol_fixedpoint.c.ll
 ; verilator/optimized/V3PreProc.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; xgboost/optimized/gradient_index.cc.ll
 ; yosys/optimized/booth.ll
 ; yosys/optimized/rtlil_lexer.ll
-; yosys/optimized/shregmap.ll
 ; yosys/optimized/verilog_lexer.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i32 %1, i32 %2) #0 {
@@ -216,7 +213,20 @@ entry:
   ret ptr %6
 }
 
-; 194 occurrences:
+; 2 occurrences:
+; fmt/optimized/chrono-test.cc.ll
+; folly/optimized/Singleton.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -2
+  ret ptr %6
+}
+
+; 199 occurrences:
 ; abseil-cpp/optimized/elf_mem_image.cc.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
@@ -277,9 +287,13 @@ entry:
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; faiss/optimized/NSG.cpp.ll
-; fmt/optimized/chrono-test.cc.ll
-; folly/optimized/Singleton.cpp.ll
 ; freetype/optimized/sdf.c.ll
+; g2o/optimized/edge_se2_lotsofxy.cpp.ll
+; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
+; g2o/optimized/edge_se2_twopointsxy.cpp.ll
+; g2o/optimized/edge_se3_calib.cpp.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; g2o/optimized/edge_se3_plane_calib.cpp.ll
 ; git/optimized/apply.ll
 ; git/optimized/index-pack.ll
 ; git/optimized/string-list.ll
@@ -327,7 +341,6 @@ entry:
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/pickpointsDialog.cpp.ll
-; meshlab/optimized/solver.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; nori/optimized/nanovg.c.ll
@@ -368,9 +381,11 @@ entry:
 ; openmpi/optimized/netpatterns_nary_tree.ll
 ; openmpi/optimized/ompi_datatype_module.ll
 ; openmpi/optimized/opal_datatype_dump.ll
+; openspiel/optimized/oh_hell.cc.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/meshUtil.cpp.ll
+; openusd/optimized/mvref_common.c.ll
 ; openusd/optimized/patchTable.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
@@ -412,13 +427,12 @@ entry:
 ; yosys/optimized/verilog_backend.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 -2
-  ret ptr %6
+  %5 = getelementptr %"struct.GUITable::Cell.2703225", ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 12 occurrences:
@@ -435,12 +449,12 @@ entry:
 ; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/ui_console-vc.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -531,23 +545,21 @@ entry:
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 2
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 2
   ret ptr %6
 }
 
-; 110 occurrences:
+; 108 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; graphviz/optimized/quad_prog_vpsc.c.ll
 ; gromacs/optimized/bwlzh.c.ll
-; gromacs/optimized/dgebd2.cpp.ll
-; gromacs/optimized/sgebd2.cpp.ll
 ; gromacs/optimized/wall.cpp.ll
 ; icu/optimized/uset.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -575,8 +587,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -636,7 +646,9 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; openblas/optimized/dlaed0.c.ll
+; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/magnitude.cpp.ll
 ; openjdk/optimized/ciObjArrayKlass.ll
 ; openusd/optimized/decodetxb.c.ll
@@ -661,15 +673,19 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
-; flac/optimized/fixed_intrin_sse42.c.ll
+; 5 occurrences:
+; darktable/optimized/introspection_colorequal.c.ll
+; freetype/optimized/sdf.c.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %1, %2
+  %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 -4
+  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -4
   ret ptr %6
 }
 
@@ -687,67 +703,76 @@ entry:
   ret ptr %6
 }
 
-; 10 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/gen_vsite.cpp.ll
 ; linux/optimized/genetlink.ll
 ; linux/optimized/power_supply_core.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rtextures.c.ll
-; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.stbir__contributors.2906498, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %"class.gmx::BasicVector.3373276", ptr %0, i64 %4, i32 0, i64 1
+  ret ptr %5
 }
 
-; 9 occurrences:
-; g2o/optimized/edge_se2_lotsofxy.cpp.ll
-; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
-; g2o/optimized/edge_se2_twopointsxy.cpp.ll
-; g2o/optimized/edge_se3_calib.cpp.ll
-; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
-; g2o/optimized/edge_se3_plane_calib.cpp.ll
-; openspiel/optimized/oh_hell.cc.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/mvref_common.c.ll
+; 1 occurrences:
+; openusd/optimized/decodetxb.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %struct.TPL_MV_REF.3194448, ptr %0, i64 %4
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.JSVarDef.3243668, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.JSVarDef.3435097, ptr %0, i64 %4, i32 1
   ret ptr %5
+}
+
+; 1 occurrences:
+; wolfssl/optimized/api.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 1
+  ret ptr %6
+}
+
+; 1 occurrences:
+; icu/optimized/unisetspan.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -2
+  ret ptr %6
 }
 
 ; 2 occurrences:
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"class.cv::Mat.3554594", ptr %0, i64 %4, i32 2
+  %5 = getelementptr %"class.cv::Mat.3735326", ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

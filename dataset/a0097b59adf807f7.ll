@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 41 occurrences:
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
 ; ockam-rs/optimized/1j8f46ag92qmaepd.ll
@@ -36,8 +36,13 @@
 ; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000154(i32 %0) #0 {
+define i64 @func00000000000002a4(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = add nsw i64 %1, -2

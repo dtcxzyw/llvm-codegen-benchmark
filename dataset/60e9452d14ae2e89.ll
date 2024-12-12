@@ -1,5 +1,5 @@
 
-; 121 occurrences:
+; 120 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
 ; box2d/optimized/b2_edge_shape.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -34,7 +34,6 @@
 ; gromacs/optimized/shellfc.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
-; gromacs/optimized/vsite_parm.cpp.ll
 ; hwloc/optimized/memattrs.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -54,7 +53,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -120,6 +118,7 @@
 ; pbrt-v4/optimized/textures.cpp.ll
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; recastnavigation/optimized/imgui.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, float %1) #0 {
@@ -129,7 +128,7 @@ entry:
   ret i1 %3
 }
 
-; 148 occurrences:
+; 153 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_edge_shape.cpp.ll
@@ -177,7 +176,6 @@ entry:
 ; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
 ; gromacs/optimized/vcm.cpp.ll
-; gromacs/optimized/vsite_parm.cpp.ll
 ; hwloc/optimized/lstopo-lstopo-draw.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -199,7 +197,6 @@ entry:
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -278,6 +275,13 @@ entry:
 ; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
 ; wireshark/optimized/file.c.ll
 ; z3/optimized/dl_mk_simple_joins.cpp.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1uum3gw9a30ezdy8xtn1px0l6.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9jrz8x0nc5lkiswz6iqpo0zcg.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0, float %1) #0 {
 entry:
@@ -286,10 +290,11 @@ entry:
   ret i1 %3
 }
 
-; 19 occurrences:
+; 21 occurrences:
 ; bullet3/optimized/b3GpuRaycast.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
+; gromacs/optimized/expanded.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/raycast.cpp.ll
@@ -306,6 +311,7 @@ entry:
 ; pbrt-v4/optimized/media.cpp.ll
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(float %0, float %1) #0 {
 entry:
@@ -348,7 +354,7 @@ entry:
   ret i1 %3
 }
 
-; 42 occurrences:
+; 52 occurrences:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -391,6 +397,16 @@ entry:
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; stb/optimized/stb_truetype.c.ll
 ; xgboost/optimized/random.cc.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(float %0, float %1) #0 {
 entry:
@@ -416,7 +432,7 @@ entry:
   ret i1 %3
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_clahe.c.ll
@@ -454,6 +470,7 @@ entry:
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/transform.cpp.ll
 ; raylib/optimized/rtext.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(float %0, float %1) #0 {
 entry:
@@ -462,7 +479,7 @@ entry:
   ret i1 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3GjkEpa.ll
 ; bullet3/optimized/btGjkEpa2.ll
@@ -478,7 +495,6 @@ entry:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/primitive.cpp.ll
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
@@ -490,10 +506,9 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/warpers.cpp.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll

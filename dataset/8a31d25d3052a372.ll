@@ -1,14 +1,13 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/fraClau.c.ll
-; cmake/optimized/archive_read_support_filter_zstd.c.ll
 ; icu/optimized/uregex.ll
 ; openjdk/optimized/gifdecoder.ll
 ; openssl/optimized/openssl-bin-ocsp.ll
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/Image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000842(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -22,7 +21,7 @@ entry:
 ; gromacs/optimized/gmx_vanhove.cpp.ll
 ; openjdk/optimized/threadService.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001998(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000006318(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -35,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/diffcore-rename.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000238(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000858(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null

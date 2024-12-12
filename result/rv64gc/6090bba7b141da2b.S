@@ -26,7 +26,7 @@ func0000000000000006:                   # @func0000000000000006
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	sext.w	a1, a1
 	sgtz	a1, a1
 	and	a0, a0, a1
@@ -36,7 +36,18 @@ func0000000000000004:                   # @func0000000000000004
 	sltiu	a1, a1, 14
 	and	a0, a0, a1
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000018:                   # @func0000000000000018
+	sext.w	a1, a1
+	sltiu	a1, a1, 6
+	xori	a1, a1, 1
+	and	a0, a0, a1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a1, a1
+	sltiu	a1, a1, 100
+	and	a0, a0, a1
+	ret
+func0000000000000046:                   # @func0000000000000046
 	sext.w	a1, a1
 	slti	a1, a1, 1
 	and	a0, a0, a1

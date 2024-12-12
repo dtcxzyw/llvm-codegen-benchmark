@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/ich8lan.ll
+; linux/optimized/intel_cx0_phy.ll
 ; openjdk/optimized/samplePriorityQueue.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; wireshark/optimized/packet-tibia.c.ll

@@ -27,50 +27,8 @@ entry:
   ret i32 %4
 }
 
-; 33 occurrences:
-; actix-rs/optimized/4pmtvrahn6eloepe.ll
-; brotli/optimized/compress_fragment.c.ll
-; icu/optimized/utrie_swap.ll
-; linux/optimized/intel_pps.ll
-; openblas/optimized/lapacke_ctp_trans.c.ll
-; openblas/optimized/lapacke_dtp_trans.c.ll
-; openblas/optimized/lapacke_stp_trans.c.ll
-; openblas/optimized/lapacke_ztp_trans.c.ll
-; opencv/optimized/lkpyramid.cpp.ll
-; openvdb/optimized/Diagnostics.cc.ll
-; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Filter.cc.ll
-; openvdb/optimized/LevelSetFracture.cc.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/LevelSetSphere.cc.ll
-; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
-; openvdb/optimized/Merge.cc.ll
-; openvdb/optimized/MultiResGrid.cc.ll
-; openvdb/optimized/PoissonSolver.cc.ll
-; openvdb/optimized/TopologyToLevelSet.cc.ll
-; openvdb/optimized/VolumeAdvect.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
-; openvdb/optimized/points.cc.ll
-; qemu/optimized/virtio-mmio.c.ll
-; quickjs/optimized/libregexp.ll
-; stockfish/optimized/movegen.ll
-; wireshark/optimized/file-elf.c.ll
-; wireshark/optimized/packet-dvb-s2-table.c.ll
-; wireshark/optimized/packet-gtp.c.ll
-; z3/optimized/pb2bv_rewriter.cpp.ll
-; z3/optimized/sortmax.cpp.ll
-; z3/optimized/theory_pb.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 3
-  %3 = or disjoint i32 %2, 6
-  %4 = add i32 %3, %0
-  ret i32 %4
-}
-
-; 46 occurrences:
+; 47 occurrences:
+; boost/optimized/message.ll
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; flac/optimized/bitwriter.c.ll
@@ -126,11 +84,8 @@ entry:
   ret i32 %4
 }
 
-; 23 occurrences:
+; 20 occurrences:
 ; freetype/optimized/sfnt.c.ll
-; jemalloc/optimized/bin.ll
-; jemalloc/optimized/bin.pic.ll
-; jemalloc/optimized/bin.sym.ll
 ; jemalloc/optimized/sec.ll
 ; jemalloc/optimized/sec.pic.ll
 ; jemalloc/optimized/sec.sym.ll
@@ -159,7 +114,7 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
 ; cmake/optimized/lzma_decoder.c.ll
 ; gromacs/optimized/dlar1vx.cpp.ll
@@ -179,7 +134,6 @@ entry:
 ; openblas/optimized/dlar1v.c.ll
 ; openblas/optimized/dstedc.c.ll
 ; openblas/optimized/dstemr.c.ll
-; openblas/optimized/dstevd.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; Function Attrs: nounwind
@@ -187,7 +141,48 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = or disjoint i32 %2, 4
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 31 occurrences:
+; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; brotli/optimized/compress_fragment.c.ll
+; icu/optimized/utrie_swap.ll
+; linux/optimized/intel_pps.ll
+; openblas/optimized/lapacke_ctp_trans.c.ll
+; openblas/optimized/lapacke_dtp_trans.c.ll
+; openblas/optimized/lapacke_stp_trans.c.ll
+; openblas/optimized/lapacke_ztp_trans.c.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; quickjs/optimized/libregexp.ll
+; stockfish/optimized/movegen.ll
+; wireshark/optimized/file-elf.c.ll
+; wireshark/optimized/packet-dvb-s2-table.c.ll
+; wireshark/optimized/packet-gtp.c.ll
+; z3/optimized/pb2bv_rewriter.cpp.ll
+; z3/optimized/sortmax.cpp.ll
+; z3/optimized/theory_pb.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 2
+  %3 = or disjoint i32 %2, 127
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -199,7 +194,7 @@ define i32 @func000000000000001b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = or i32 %2, 28
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -248,7 +243,7 @@ define i32 @func000000000000001d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -324,7 +319,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = or disjoint i32 %2, 1
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 

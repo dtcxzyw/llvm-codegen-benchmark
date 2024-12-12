@@ -1,13 +1,3 @@
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
-	add	x8, x2, #63
-	tst	w1, #0x1
-	mov	x9, #144115188075855871         // =0x1ffffffffffffff
-	lsr	x8, x8, #6
-	csel	x8, x9, x8, ne
-	add	x0, x0, x8, lsl #3
-	ret
-                                        // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
 	add	x8, x2, #63
@@ -28,7 +18,7 @@ func0000000000000000:                   // @func0000000000000000
 	madd	x0, x9, x8, x0
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	add	x8, x2, #63
 	tst	w1, #0x1

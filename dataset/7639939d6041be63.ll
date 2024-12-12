@@ -18,9 +18,8 @@ entry:
   ret i64 %2
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
-; gromacs/optimized/tng_io.c.ll
 ; mini-lsm-rs/optimized/2j7sj03n10nloiwr.ll
 ; mini-lsm-rs/optimized/4vkix0mjdn2idd4b.ll
 ; mini-lsm-rs/optimized/fxok0uwzlvxge5x.ll
@@ -28,9 +27,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = icmp ugt i64 %0, 1
-  %2 = select i1 %1, i64 42, i64 26
-  ret i64 %2
+  %.inv = icmp ult i64 %0, 4
+  %1 = select i1 %.inv, i64 1, i64 5
+  ret i64 %1
 }
 
 attributes #0 = { nounwind }

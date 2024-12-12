@@ -1,15 +1,14 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
 ; linux/optimized/intel_display.ll
 ; minetest/optimized/connectionthreads.cpp.ll
 ; opencv/optimized/gfluidcore.cpp.ll
 ; openusd/optimized/path.cpp.ll
-; postgres/optimized/bufpage.ll
 ; recastnavigation/optimized/RecastLayers.cpp.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i16 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = zext i16 %0 to i32
@@ -18,7 +17,7 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
 ; cmake/optimized/huf_compress.c.ll
 ; freetype/optimized/pfr.c.ll
@@ -26,6 +25,7 @@ entry:
 ; jq/optimized/decNumber.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/intel_vrr.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; minetest/optimized/connectionthreads.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; openjdk/optimized/nmethod.ll
@@ -37,7 +37,7 @@ entry:
 ; wireshark/optimized/tap-rtp-analysis.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i16 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = zext i16 %0 to i32
@@ -61,7 +61,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-drda.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = zext i16 %0 to i32
@@ -73,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i16 %0, i16 %1) #0 {
+define i1 @func00000000000001a4(i16 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = zext nneg i16 %0 to i32
@@ -87,7 +87,7 @@ entry:
 ; icu/optimized/uniset.ll
 ; postgres/optimized/nbtdedup.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000aa(i16 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = zext nneg i16 %0 to i32
@@ -99,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i16 %0, i16 %1) #0 {
+define i1 @func00000000000001aa(i16 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = zext nneg i16 %0 to i32
@@ -111,7 +111,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ip6_offload.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i16 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = zext i16 %0 to i32
@@ -123,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_display.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000126(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %0, %1
   ret i1 %2
@@ -132,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ustring.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %0, %1
   ret i1 %2
@@ -141,7 +141,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ushape.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000124(i16 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = zext i16 %0 to i32
@@ -154,7 +154,7 @@ entry:
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i16 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = zext i16 %0 to i32

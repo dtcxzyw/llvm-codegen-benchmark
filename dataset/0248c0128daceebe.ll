@@ -1,5 +1,5 @@
 
-; 106 occurrences:
+; 105 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; clamav/optimized/rs16.cpp.ll
 ; clamav/optimized/scantree.cpp.ll
@@ -30,7 +30,6 @@
 ; linux/optimized/ip_fragment.ll
 ; linux/optimized/ip_output.ll
 ; linux/optimized/nf_conntrack_core.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/nf_log_syslog.ll
 ; linux/optimized/nf_reject_ipv4.ll
 ; linux/optimized/pcm_lib.ll
@@ -111,7 +110,7 @@ define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -218,11 +217,11 @@ define i32 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; ceres/optimized/polynomial.cc.ll
 ; chibicc/optimized/preprocess.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll
@@ -235,6 +234,7 @@ entry:
 ; icu/optimized/rbt_rule.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
+; lvgl/optimized/lv_draw_rect.ll
 ; nori/optimized/canvas.cpp.ll
 ; nori/optimized/chi2test.cpp.ll
 ; nori/optimized/imageview.cpp.ll
@@ -264,7 +264,7 @@ define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
   %3 = zext nneg i8 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -276,7 +276,7 @@ define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -287,7 +287,7 @@ define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = zext i8 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -298,7 +298,7 @@ define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -309,7 +309,7 @@ define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -4
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

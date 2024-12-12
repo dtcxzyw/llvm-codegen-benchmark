@@ -34,7 +34,7 @@ func0000000000000002:                   # @func0000000000000002
 	.long	32768                           # 0x8000
 .LCPI2_3:
 	.long	32767                           # 0x7fff
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtd	.LCPI2_1(%rip){1to8}, %ymm1, %k1
 	vandps	.LCPI2_2(%rip){1to8}, %ymm0, %ymm0

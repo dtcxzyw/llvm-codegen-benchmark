@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openusd/optimized/irregularPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000186(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000306(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = select i1 %3, i32 -2, i32 -3
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/hebrwcal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000196(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000326(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = select i1 %3, i32 12, i32 13

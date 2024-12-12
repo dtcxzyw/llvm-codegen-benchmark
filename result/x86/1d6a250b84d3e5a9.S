@@ -10,6 +10,16 @@ func0000000000000004:                   # @func0000000000000004
 	sete	%al
 	andb	%dil, %al
 	retq
+func0000000000000060:                   # @func0000000000000060
+	testb	$14, %sil
+	setne	%al
+	andb	%dil, %al
+	retq
+func0000000000000062:                   # @func0000000000000062
+	testb	$14, %sil
+	setne	%al
+	andb	%dil, %al
+	retq
 func0000000000000030:                   # @func0000000000000030
 	movl	%edi, %eax
 	andl	%esi, %eax

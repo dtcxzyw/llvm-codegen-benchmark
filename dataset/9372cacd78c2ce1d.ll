@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 95 occurrences:
 ; abseil-cpp/optimized/bit_cast_test.cc.ll
 ; abseil-cpp/optimized/cordz_update_tracker_test.cc.ll
 ; abseil-cpp/optimized/stripping_test.cc.ll
@@ -92,6 +92,7 @@
 ; ruby/optimized/vm_backtrace.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; slurm/optimized/gres_ctld.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; vcpkg/optimized/dependencies.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
@@ -103,25 +104,12 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
-; cvc5/optimized/resolution_proofs_util.cpp.ll
-; eastl/optimized/EASprintfCore.cpp.ll
-; grpc/optimized/xds_client.cc.ll
-; hyperscan/optimized/ng_prefilter.cpp.ll
-; llvm/optimized/CoverageMappingReader.cpp.ll
-; llvm/optimized/HTMLDiagnostics.cpp.ll
-; llvm/optimized/InitHeaderSearch.cpp.ll
-; llvm/optimized/RetainCountChecker.cpp.ll
-; llvm/optimized/StmtProfile.cpp.ll
-; llvm/optimized/X86ISelLoweringCall.cpp.ll
-; ring-rs/optimized/2ynmf0orlf9ml2dm.ll
-; ring-rs/optimized/33m8pf8xuidn6qk2.ll
+; 1 occurrences:
 ; rocksdb/optimized/block_based_table_factory.cc.ll
-; rocksdb/optimized/db_impl_write.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000020(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000060(i8 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 1
+  %2 = icmp samesign ugt i64 %1, 1
   %3 = trunc i8 %0 to i1
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
@@ -154,7 +142,6 @@ entry:
 ; llvm/optimized/MemoryOpRemark.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/PPDirectives.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SampleProfWriter.cpp.ll
 ; llvm/optimized/SanitizerBinaryMetadata.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
@@ -205,6 +192,7 @@ entry:
 ; rocksdb/optimized/random_access_file_reader.cc.ll
 ; rocksdb/optimized/writable_file_writer.cc.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
+; turborepo-rs/optimized/8oe5vwmwwrst9p60jy1zusiyz.ll
 ; wasmedge/optimized/module.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yalantinglibs/optimized/data_gen.cpp.ll
@@ -220,7 +208,30 @@ entry:
   ret i1 %4
 }
 
-; 38 occurrences:
+; 13 occurrences:
+; cvc5/optimized/resolution_proofs_util.cpp.ll
+; eastl/optimized/EASprintfCore.cpp.ll
+; grpc/optimized/xds_client.cc.ll
+; hyperscan/optimized/ng_prefilter.cpp.ll
+; llvm/optimized/CoverageMappingReader.cpp.ll
+; llvm/optimized/HTMLDiagnostics.cpp.ll
+; llvm/optimized/InitHeaderSearch.cpp.ll
+; llvm/optimized/RetainCountChecker.cpp.ll
+; llvm/optimized/StmtProfile.cpp.ll
+; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; ring-rs/optimized/2ynmf0orlf9ml2dm.ll
+; ring-rs/optimized/33m8pf8xuidn6qk2.ll
+; rocksdb/optimized/db_impl_write.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000020(i8 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ugt i64 %1, 1
+  %3 = trunc i8 %0 to i1
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 37 occurrences:
 ; cmake/optimized/alone_decoder.c.ll
 ; hdf5/optimized/H5Faccum.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -236,7 +247,6 @@ entry:
 ; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
 ; mold/optimized/output-chunks.cc.RV64LE.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; opencv/optimized/aruco_detector.cpp.ll
 ; openjdk/optimized/c1_GraphBuilder.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/c1_RangeCheckElimination.ll
@@ -268,7 +278,8 @@ entry:
   ret i1 %4
 }
 
-; 26 occurrences:
+; 40 occurrences:
+; boost/optimized/approximately_equals.ll
 ; coreutils-rs/optimized/15uwc3zyhqyhtivg.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
 ; coreutils-rs/optimized/5emu7auail4dlu6v.ll
@@ -281,7 +292,6 @@ entry:
 ; nix/optimized/misc.ll
 ; php/optimized/phpdbg_utils.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
-; regex-rs/optimized/4sqmacerw61c696o.ll
 ; rust-analyzer-rs/optimized/150tm5mq81nfdpak.ll
 ; rust-analyzer-rs/optimized/1yigtuxmiuvrwpzt.ll
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
@@ -295,6 +305,20 @@ entry:
 ; soc-simulator/optimized/verilated.ll
 ; typst-rs/optimized/2hy987uth4sp8yoc.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/3quypyfrg8uizn5sealer8xsk.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/62p0ysciwr0duwav9qlwb71rc.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8fnqr4x4dcnr22hiqkfhgttys.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
+; zed-rs/optimized/ca5us8h013in59yvcsgdq94h9.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i8 %0, i64 %1) #0 {
 entry:
@@ -304,7 +328,8 @@ entry:
   ret i1 %4
 }
 
-; 68 occurrences:
+; 147 occurrences:
+; boost/optimized/format_args.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
@@ -331,6 +356,7 @@ entry:
 ; postgres/optimized/mcv.ll
 ; redis/optimized/malloc_io.ll
 ; redis/optimized/malloc_io.sym.ll
+; regex-rs/optimized/4sqmacerw61c696o.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
@@ -373,6 +399,83 @@ entry:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
 ; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/06lo9zvab5lvkkn9g2iqvtuth.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1qoospyzgc86mrbrflush3m5b.ll
+; zed-rs/optimized/1vv5j9nlfivum07q3z96mzhlk.ll
+; zed-rs/optimized/1z9x99vx9jfns7mxpwa762fd3.ll
+; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/2hcgat59uf5mvvzma6d9cb3g0.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/3quypyfrg8uizn5sealer8xsk.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/3wl8zjcwsyivuowbug1la08a1.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5kpr1irzb57viu7vn1ci12z94.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/62p0ysciwr0duwav9qlwb71rc.ll
+; zed-rs/optimized/6gy7cm9m32a7fdg31v3lbyxhl.ll
+; zed-rs/optimized/6pzok54tcf7jgyfxt7910tckc.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/7hsbxpr1hqy17ngn0bqyx5x8s.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8fnqr4x4dcnr22hiqkfhgttys.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9jlworagd4ne92tsld97hkqun.ll
+; zed-rs/optimized/9ph9ik6f4o8cna26bqiztqhx1.ll
+; zed-rs/optimized/9tx3ef1bysuj1ynm6i6wgnanl.ll
+; zed-rs/optimized/9v188il6gobltzymh9vfz7jsn.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/bqkhvme8kwgfmpydn1hdkle55.ll
+; zed-rs/optimized/bz6p16t2qoqszqvs08hoy0zu5.ll
+; zed-rs/optimized/bzk1je3s858jgu5p8vqae1j7s.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/coobscod1tjvofpoi7fi6r7gk.ll
+; zed-rs/optimized/czpyda74ta6m4oig1hr6iiwt6.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
+; zed-rs/optimized/d334eo7xhndhquqddprlqx6j8.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
+; zed-rs/optimized/f0amc3mihxn9sd1mhsostg4ox.ll
+; zed-rs/optimized/f1xl8k103at60m3wnvb71vdir.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000032(i8 %0, i64 %1) #0 {
 entry:
@@ -397,7 +500,8 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/console_buffer.ll
 ; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; Function Attrs: nounwind
@@ -456,15 +560,42 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
-; luau/optimized/ConstraintGenerator.cpp.ll
+; gromacs/optimized/vsite_parm.cpp.ll
 ; rust-analyzer-rs/optimized/2hvuxgck7heujc9c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000052(i8 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 9
+  %3 = trunc nuw i8 %0 to i1
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; luau/optimized/ConstraintGenerator.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000012(i8 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 9
+  %2 = icmp ult i64 %1, 2
   %3 = trunc nuw i8 %0 to i1
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 4 occurrences:
+; gromacs/optimized/muParserBase.cpp.ll
+; hdf5/optimized/H5Cint.c.ll
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; opencv/optimized/aruco_detector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000050(i8 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 10
+  %3 = trunc i8 %0 to i1
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }

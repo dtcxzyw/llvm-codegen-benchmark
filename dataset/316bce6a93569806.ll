@@ -83,6 +83,18 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, float %1) #0 {
+entry:
+  %2 = fneg float %1
+  %3 = select i1 %0, float %2, float %1
+  %4 = fcmp oge float %3, 0.000000e+00
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll

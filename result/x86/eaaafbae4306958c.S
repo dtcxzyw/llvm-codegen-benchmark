@@ -11,6 +11,20 @@ func0000000000000005:                   # @func0000000000000005
 	imull	$496, %ecx, %ecx                # imm = 0x1F0
 	subl	%ecx, %eax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	addl	%esi, %edi
+	movslq	%edi, %rcx
+	imulq	$-1840700269, %rcx, %rax        # imm = 0x92492493
+	shrq	$32, %rax
+	addl	%ecx, %eax
+	movl	%eax, %edx
+	shrl	$31, %edx
+	shrl	$2, %eax
+	addl	%edx, %eax
+	leal	(,%rax,8), %edx
+	subl	%edx, %eax
+	addl	%ecx, %eax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	leal	3(%rdi,%rsi), %ecx
 	movl	%edi, %eax

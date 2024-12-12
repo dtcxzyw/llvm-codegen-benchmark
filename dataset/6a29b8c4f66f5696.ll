@@ -1,7 +1,6 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; assimp/optimized/TriangulateProcess.cpp.ll
-; box2d/optimized/b2_collide_circle.cpp.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; git/optimized/xpatience.ll

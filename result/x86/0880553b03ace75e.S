@@ -1,4 +1,4 @@
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	addq	$8, %rsi
 	addq	$784, %rdi                      # imm = 0x310
 	cmpq	%rsi, %rdi
@@ -16,13 +16,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000181:                   # @func0000000000000181
 	subq	$-128, %rsi
 	addq	$-328, %rdi                     # imm = 0xFEB8
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func00000000000001c8:                   # @func00000000000001c8
 	addq	$8, %rsi
 	addq	$-8, %rdi
 	cmpq	%rsi, %rdi

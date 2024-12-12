@@ -1,4 +1,4 @@
-func00000000000000aa:                   // @func00000000000000aa
+func00000000000000af:                   // @func00000000000000af
 // %bb.0:                               // %entry
 	asr	x8, x1, #2
 	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa

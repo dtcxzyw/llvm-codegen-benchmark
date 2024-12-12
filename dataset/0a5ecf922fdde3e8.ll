@@ -1,10 +1,9 @@
 
-; 119 occurrences:
+; 112 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; arrow/optimized/interfaces.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
-; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; casadi/optimized/getnonzeros.cpp.ll
 ; casadi/optimized/mx.cpp.ll
@@ -14,15 +13,12 @@
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
-; cmake/optimized/cmFileAPI.cxx.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/BenchmarkVector.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
-; gromacs/optimized/colvargrid.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/gmx_chi.cpp.ll
@@ -37,7 +33,6 @@
 ; gromacs/optimized/topio.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
-; hyperscan/optimized/ng_netflow.cpp.ll
 ; hyperscan/optimized/rdfa_merge.cpp.ll
 ; ipopt/optimized/IpTNLPAdapter.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -48,11 +43,9 @@
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
-; meshlab/optimized/io_ctm.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; ncnn/optimized/detectionoutput.cpp.ll
@@ -120,7 +113,7 @@
 ; yosys/optimized/memory_bram.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 %1, %0
   %3 = xor i64 %0, 2305843009213693951
@@ -128,7 +121,7 @@ entry:
   ret i1 %4
 }
 
-; 607 occurrences:
+; 620 occurrences:
 ; abseil-cpp/optimized/log_entry_test.cc.ll
 ; abseil-cpp/optimized/non_temporal_memcpy_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -174,6 +167,21 @@ entry:
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/process.ll
+; boost/optimized/range.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; casadi/optimized/fmu.cpp.ll
 ; casadi/optimized/fmu_function.cpp.ll
 ; casadi/optimized/getnonzeros.cpp.ll
@@ -372,7 +380,6 @@ entry:
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -403,7 +410,6 @@ entry:
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -737,11 +743,27 @@ entry:
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %1, %0
   %3 = xor i64 %0, 576460752303423487
   %4 = icmp ult i64 %3, %2
+  ret i1 %4
+}
+
+; 6 occurrences:
+; assimp/optimized/SIBImporter.cpp.ll
+; cmake/optimized/cmFileAPI.cxx.ll
+; faiss/optimized/IndexPQ.cpp.ll
+; gromacs/optimized/colvargrid.cpp.ll
+; hyperscan/optimized/ng_netflow.cpp.ll
+; meshlab/optimized/io_ctm.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw nsw i64 %1, %0
+  %3 = xor i64 %0, 2305843009213693951
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 

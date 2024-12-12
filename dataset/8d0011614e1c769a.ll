@@ -31,7 +31,7 @@ entry:
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; verilator/optimized/V3String.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a8(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000148(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %1, %0
   %3 = sub nuw i64 %0, %1
@@ -40,7 +40,7 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/marshalling_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
@@ -57,8 +57,9 @@ entry:
 ; openjdk/optimized/trimCHeapDCmd.ll
 ; openjdk/optimized/trimNativeHeap.ll
 ; wireshark/optimized/packet-quic.c.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a4(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000144(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %0, %1
   %3 = sub nuw i64 %1, %0
@@ -70,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %0, %1
   %3 = sub i64 %1, %0
@@ -94,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %1, %0
   %3 = sub nsw i64 %0, %1
@@ -106,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %1, %0
   %3 = sub i64 %0, %1
@@ -116,21 +117,9 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/tcp_cubic.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000054(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub nsw i64 %0, %1
-  %3 = sub nsw i64 %1, %0
-  %4 = icmp ult i64 %0, %1
-  %5 = select i1 %4, i64 %3, i64 %2
-  ret i64 %5
-}
-
-; 1 occurrences:
 ; opencv/optimized/ocl_test.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000f8(i64 %0, i64 %1) #0 {
+define i64 @func00000000000001e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 %1, %0
   %3 = sub nuw nsw i64 %0, %1
@@ -144,7 +133,7 @@ entry:
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000e8(i64 %0, i64 %1) #0 {
+define i64 @func00000000000001c8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 %1, %0
   %3 = sub nuw i64 %0, %1

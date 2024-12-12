@@ -8,7 +8,7 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a0, a0, -1217
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	li	a0, 1000
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
@@ -22,7 +22,7 @@ func0000000000000004:                   # @func0000000000000004
 	li	a0, 600
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	li	a0, -1000
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
@@ -39,7 +39,7 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a0, a0, -769
 	vmsgt.vx	v0, v8, a0
 	ret
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	li	a0, 30
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/prism.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 12
   %3 = icmp eq i32 %1, 18
@@ -24,7 +24,7 @@ entry:
 ; llvm/optimized/VirtualFileSystem.cpp.ll
 ; mitsuba3/optimized/scene.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %3 = icmp eq i32 %1, 3
@@ -73,7 +73,7 @@ entry:
 ; rocksdb/optimized/wide_columns_helper.cc.ll
 ; verilator/optimized/V3SplitVar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = icmp eq i32 %1, 0
@@ -81,7 +81,7 @@ entry:
   ret i1 %4
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; darktable/optimized/copy_history.c.ll
 ; fmt/optimized/core-test.cc.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -98,7 +98,6 @@ entry:
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/NaryReassociate.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -117,7 +116,7 @@ entry:
 ; rocksdb/optimized/max.cc.ll
 ; rocksdb/optimized/wide_column_serialization.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
   %3 = icmp eq i32 %1, 0
@@ -125,14 +124,15 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; draco/optimized/options.cc.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp eq i32 %1, -1

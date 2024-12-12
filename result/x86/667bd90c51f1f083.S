@@ -34,6 +34,12 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	shrl	$12, %edx
+	cmpl	%esi, %edx
+	setb	%al
+	andb	%dil, %al
+	retq
 func0000000000000005:                   # @func0000000000000005
 	shrl	%edx
 	cmpl	%esi, %edx
@@ -46,8 +52,20 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	andb	%dil, %al
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000019:                   # @func0000000000000019
 	shrl	$16, %edx
+	cmpl	%esi, %edx
+	setae	%al
+	andb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	shrl	%edx
+	cmpl	%esi, %edx
+	seta	%al
+	andb	%dil, %al
+	retq
+func0000000000000009:                   # @func0000000000000009
+	shrl	%edx
 	cmpl	%esi, %edx
 	setae	%al
 	andb	%dil, %al

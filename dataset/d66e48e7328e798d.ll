@@ -1,8 +1,7 @@
 
-; 257 occurrences:
+; 253 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcLib.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/absOldCex.c.ll
@@ -34,7 +33,6 @@
 ; abc/optimized/covCore.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/exorBits.c.ll
 ; abc/optimized/extraUtilBitMatrix.c.ll
 ; abc/optimized/extraUtilFile.c.ll
@@ -57,7 +55,6 @@
 ; abc/optimized/llb4Cex.c.ll
 ; abc/optimized/mfsResub.c.ll
 ; abc/optimized/mvcLits.c.ll
-; abc/optimized/mvcPrint.c.ll
 ; abc/optimized/pdrTsim.c.ll
 ; abc/optimized/resSim.c.ll
 ; abc/optimized/rsbDec6.c.ll
@@ -80,6 +77,7 @@
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/light_array.cc.ll
+; boost/optimized/unique_path.ll
 ; clamav/optimized/rarvm.cpp.ll
 ; clamav/optimized/regex_suffix.c.ll
 ; cmake/optimized/entropy_common.c.ll
@@ -143,7 +141,6 @@
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; nuttx/optimized/fs_select.c.ll
-; nuttx/optimized/sig_ismember.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -240,7 +237,6 @@
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/block_qed-check.c.ll
 ; qemu/optimized/block_vvfat.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll

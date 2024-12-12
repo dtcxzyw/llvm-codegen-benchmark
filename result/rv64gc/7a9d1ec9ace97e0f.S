@@ -14,6 +14,11 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	fmv.x.d	a0, fa0
+	srli	a0, a0, 52
+	seqz	a0, a0
+	ret
 func0000000000000004:                   # @func0000000000000004
 	fmv.x.d	a0, fa0
 	srli	a0, a0, 52
@@ -21,10 +26,14 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmv.x.d	a0, fa0
-	li	a1, -1
-	slli	a1, a1, 52
-	addi	a1, a1, -1
-	sltu	a0, a1, a0
+	srli	a0, a0, 53
+	snez	a0, a0
+	ret
+func0000000000000018:                   # @func0000000000000018
+	fmv.x.d	a0, fa0
+	srli	a0, a0, 52
+	sltiu	a0, a0, 2047
+	xori	a0, a0, 1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	fmv.x.d	a0, fa0

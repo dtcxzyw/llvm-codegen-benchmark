@@ -9,7 +9,7 @@ entry:
   %3 = and i32 %2, -8
   %4 = and i32 %1, -8
   %5 = add i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   ret i32 %6
 }
 
-; 51 occurrences:
+; 49 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -47,7 +47,6 @@ entry:
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/nfs3xdr.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -60,7 +59,6 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; php/optimized/zend_jit.ll
-; postgres/optimized/trigger.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; redis/optimized/bitops.ll
 ; sentencepiece/optimized/builder.cc.ll
@@ -96,7 +94,7 @@ entry:
   %3 = and i32 %2, -8
   %4 = and i32 %1, 65528
   %5 = add nsw i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

@@ -71,7 +71,7 @@ entry:
   ret i64 %5
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -86,6 +86,7 @@ entry:
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll

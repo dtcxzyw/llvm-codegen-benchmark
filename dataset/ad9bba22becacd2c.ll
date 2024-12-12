@@ -17,7 +17,7 @@ entry:
   ret i16 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; linux/optimized/extents.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/rx.ll
@@ -35,6 +35,7 @@ entry:
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; wireshark/optimized/packet-gsm_rlcmac.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:

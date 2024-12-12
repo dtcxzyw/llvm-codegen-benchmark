@@ -5,13 +5,6 @@ func0000000000000001:                   # @func0000000000000001
 	andl	%esi, %edi
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	andb	$15, %dl
-	cmpb	$9, %dl
-	setb	%al
-	andl	%esi, %edi
-	andb	%dil, %al
-	retq
 func000000000000000c:                   # @func000000000000000c
 	andb	$-57, %dl
 	cmpb	$-62, %dl

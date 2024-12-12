@@ -1,10 +1,9 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
-; gromacs/optimized/dlasdt.cpp.ll
 ; gromacs/optimized/dstebz.cpp.ll
 ; gromacs/optimized/sbdsdc.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll

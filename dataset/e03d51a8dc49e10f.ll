@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 77 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/aigCanon.c.ll
@@ -15,6 +15,7 @@
 ; eastl/optimized/TestFunctional.cpp.ll
 ; eastl/optimized/TestStringHashMap.cpp.ll
 ; linux/optimized/nf_conntrack_helper.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll

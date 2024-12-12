@@ -1,19 +1,8 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ldp	q17, q16, [sp]
-	fsub	v3.2d, v3.2d, v7.2d
-	fsub	v2.2d, v2.2d, v6.2d
-	fsub	v4.2d, v4.2d, v17.2d
-	fsub	v5.2d, v5.2d, v16.2d
-	fcvtzs	v3.2d, v3.2d
-	fcvtzs	v2.2d, v2.2d
-	fcvtzs	v5.2d, v5.2d
-	fcvtzs	v4.2d, v4.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v3.4s, v4.4s, v5.4s
-	cmeq	v0.4s, v2.4s, v0.4s
-	cmeq	v1.4s, v3.4s, v1.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	fsub	d0, d0, d1
+	fcvtzs	w8, d0
+	cmp	w0, w8
+	cset	w0, eq
 	ret
                                         // -- End function

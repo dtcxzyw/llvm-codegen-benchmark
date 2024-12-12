@@ -5,6 +5,5 @@ func0000000000000001:                   # @func0000000000000001
 	vmseq.vi	v0, v12, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vvm	v8, v10, v8, v0
-	lui	a0, 4080
-	vand.vx	v8, v8, a0
+	vand.vi	v8, v8, 15
 	ret

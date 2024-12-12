@@ -14,13 +14,6 @@ func0000000000000019:                   # @func0000000000000019
 	movl	$6, %eax
 	subl	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	cmpl	$16777216, %esi                 # imm = 0x1000000
-	setae	%al
-	andb	%dil, %al
-	movzbl	%al, %eax
-	orl	$6, %eax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	testl	%esi, %esi
 	sete	%al

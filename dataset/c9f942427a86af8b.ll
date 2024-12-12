@@ -1,6 +1,6 @@
 
-%class.b3Vector3.2704959 = type { %union.anon.34.2704960 }
-%union.anon.34.2704960 = type { [4 x float] }
+%class.b3Vector3.2817674 = type { %union.anon.34.2817675 }
+%union.anon.34.2817675 = type { [4 x float] }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
@@ -41,11 +41,11 @@ entry:
 ; openusd/optimized/matrix4d.cpp.ll
 ; openusd/optimized/matrix4f.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [3 x %class.b3Vector3.2704959], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [3 x %class.b3Vector3.2817674], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -53,11 +53,11 @@ entry:
 ; hdf5/optimized/H5Dchunk.c.ll
 ; hwloc/optimized/topology.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw [33 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [33 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

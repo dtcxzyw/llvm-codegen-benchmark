@@ -40,11 +40,11 @@
 ; ruby/optimized/class.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
   %4 = icmp ne i64 %3, 27
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   %6 = icmp ne i64 %1, 27
   %7 = or i1 %5, %6
   ret i1 %7
@@ -63,11 +63,11 @@ entry:
 ; spike/optimized/processor.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4096
   %4 = icmp ne i64 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   %6 = icmp eq i64 %1, 28
   %7 = or i1 %5, %6
   ret i1 %7
@@ -114,11 +114,11 @@ entry:
 ; openjdk/optimized/g1BarrierSetC2.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4096
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = icmp ne i64 %0, 393216
   %7 = or i1 %6, %5
   ret i1 %7
@@ -139,7 +139,7 @@ entry:
 ; spike/optimized/mmu.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
@@ -149,41 +149,14 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
-; spike/optimized/f64_to_i64_r_minMag.ll
-; spike/optimized/f64_to_ui64_r_minMag.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 2047
-  %4 = icmp eq i64 %3, 2047
-  %5 = and i1 %4, %1
-  %6 = icmp sgt i64 %0, -1
-  %7 = or i1 %6, %5
-  ret i1 %7
-}
-
-; 1 occurrences:
-; llvm/optimized/Clang.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000010c(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 9223372019674906624
-  %4 = icmp ugt i64 %3, 425201762304
-  %5 = and i1 %4, %1
-  %6 = icmp slt i64 %0, 0
-  %7 = or i1 %6, %5
-  ret i1 %7
-}
-
 ; 1 occurrences:
 ; linux/optimized/fault.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = icmp ult i64 %0, 4294967296
   %7 = or i1 %6, %5
   ret i1 %7

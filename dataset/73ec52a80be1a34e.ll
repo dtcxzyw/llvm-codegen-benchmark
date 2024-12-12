@@ -1,7 +1,5 @@
 
-; 61 occurrences:
-; linux/optimized/kyber-iosched.ll
-; linux/optimized/utosi.ll
+; 59 occurrences:
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
@@ -66,15 +64,15 @@ define i1 @func0000000000000018(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 7
   %4 = icmp ne i8 %3, 3
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = and i1 %5, %0
   ret i1 %6
 }
 
 ; 12 occurrences:
+; gromacs/optimized/tng_io.c.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; linux/optimized/rx.ll
-; linux/optimized/utosi.ll
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
 ; llvm/optimized/InstCombineMulDivRem.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll

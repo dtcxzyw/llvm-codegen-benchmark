@@ -3,7 +3,7 @@ func0000000000000052:                   # @func0000000000000052
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmul.vv	v12, v12, v8
+	vmul.vv	v12, v8, v12
 	li	a0, 32
 	vsrl.vx	v12, v12, a0
 	vmadd.vv	v8, v10, v12
@@ -33,7 +33,7 @@ func0000000000000049:                   # @func0000000000000049
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmul.vv	v12, v12, v8
+	vmul.vv	v12, v8, v12
 	li	a0, 32
 	vsrl.vx	v12, v12, a0
 	vmadd.vv	v8, v10, v12
@@ -43,7 +43,7 @@ func000000000000004a:                   # @func000000000000004a
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmul.vv	v12, v12, v8
+	vmul.vv	v12, v8, v12
 	li	a0, 32
 	vsrl.vx	v12, v12, a0
 	vmadd.vv	v8, v10, v12

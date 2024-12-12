@@ -1,8 +1,10 @@
 
-; 50 occurrences:
+; 51 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/idas.c.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; graphviz/optimized/emit.c.ll
@@ -29,7 +31,6 @@
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; openblas/optimized/dsterf.c.ll
 ; opencv/optimized/fast_hough_transform.cpp.ll

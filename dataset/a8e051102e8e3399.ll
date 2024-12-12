@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/date_strftime.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002a(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -124,7 +124,7 @@ entry:
 ; openspiel/optimized/json.cc.ll
 ; spike/optimized/spike-dasm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000028(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -134,7 +134,7 @@ entry:
   ret i1 %7
 }
 
-; 157 occurrences:
+; 154 occurrences:
 ; cmake/optimized/cmSystemTools.cxx.ll
 ; coreutils-rs/optimized/1si88ckqec3ipkyo.ll
 ; coreutils-rs/optimized/2btly3o1576s0dhm.ll
@@ -229,13 +229,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -293,7 +290,7 @@ entry:
 ; node/optimized/libnode.node_blob.ll
 ; oiio/optimized/strutil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000044(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -307,7 +304,7 @@ entry:
 ; jq/optimized/regexec.ll
 ; oniguruma/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000026(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -372,7 +369,7 @@ entry:
 ; php/optimized/tar.ll
 ; php/optimized/zip.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -382,11 +379,10 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; coreutils-rs/optimized/2j3x034tyak3eas9.ll
-; proxygen/optimized/HTTPMessage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000041(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64

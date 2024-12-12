@@ -5,7 +5,7 @@ func0000000000000014:                   # @func0000000000000014
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vsll.vv	v10, v12, v10
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -14,7 +14,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vsll.vv	v10, v12, v10
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000064:                   # @func0000000000000064
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -23,7 +23,7 @@ func0000000000000064:                   # @func0000000000000064
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vsll.vv	v10, v12, v10
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000044:                   # @func0000000000000044
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -32,7 +32,7 @@ func0000000000000044:                   # @func0000000000000044
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vsll.vv	v10, v12, v10
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func00000000000000c6:                   # @func00000000000000c6
 	vsetivli	zero, 4, e32, m1, ta, ma

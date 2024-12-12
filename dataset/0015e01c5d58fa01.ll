@@ -7,7 +7,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = sdiv i64 %3, 86400000000
   %5 = trunc nsw i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv i64 %3, 86400
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv i64 %3, 86400000000
   %5 = trunc nsw i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv i64 %3, 2
   %5 = trunc nsw i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -55,7 +55,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = sdiv i64 %3, -4
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -67,7 +67,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv i64 %3, 365
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

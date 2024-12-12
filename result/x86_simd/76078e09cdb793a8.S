@@ -12,7 +12,7 @@ func0000000000000009:                   # @func0000000000000009
 	vpsrld	$10, %ymm2, %ymm2
 	vpternlogd	$236, .LCPI1_0(%rip){1to8}, %ymm1, %ymm2 # ymm2 = (ymm2 & mem) | ymm1
 	vpslld	$2, %ymm2, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	1048572                         # 0xffffc

@@ -99,7 +99,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000401(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -110,9 +110,48 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = trunc i64 %2 to i32
+  %4 = mul i32 %0, -10000000
+  %5 = add i32 %4, %3
+  %6 = icmp ugt i32 %5, 5000000
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = trunc i64 %2 to i32
+  %4 = mul i32 %0, -10000000
+  %5 = add i32 %4, %3
+  %6 = icmp eq i32 %5, 5000000
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func000000000000040c(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 32
+  %3 = trunc nuw i64 %2 to i32
+  %4 = mul i32 %0, -100
+  %5 = sub i32 0, %3
+  %6 = icmp ne i32 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006a4(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 24
   %3 = trunc nuw nsw i64 %2 to i32
@@ -125,7 +164,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000351(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 40
   %3 = trunc nuw nsw i64 %2 to i32

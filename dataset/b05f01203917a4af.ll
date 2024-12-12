@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 70 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/fraigMan.c.ll
@@ -67,6 +67,8 @@
 ; wireshark/optimized/packet-raknet.c.ll
 ; wireshark/optimized/packet-tetra.c.ll
 ; wolfssl/optimized/random.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1) #0 {
@@ -77,7 +79,8 @@ entry:
   ret i32 %4
 }
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

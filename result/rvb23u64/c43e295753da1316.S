@@ -31,15 +31,15 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000001:                   # @func0000000000000001
-	feq.d	a2, fa0, fa0
-	xori	a2, a2, 1
+func0000000000000008:                   # @func0000000000000008
+	fli.d	fa5, 2.0
+	feq.d	a2, fa0, fa5
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000008:                   # @func0000000000000008
-	fli.d	fa5, inf
-	feq.d	a2, fa0, fa5
+func0000000000000001:                   # @func0000000000000001
+	feq.d	a2, fa0, fa0
+	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

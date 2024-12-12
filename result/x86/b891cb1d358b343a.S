@@ -33,6 +33,11 @@ func0000000000000007:                   # @func0000000000000007
 	movl	$64, %eax
 	subl	%edi, %eax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	shll	$4, %edi
+	movl	$128, %eax
+	subl	%edi, %eax
+	retq
 func000000000000000b:                   # @func000000000000000b
 	addl	%edi, %edi
 	movl	$686, %eax                      # imm = 0x2AE

@@ -18,7 +18,7 @@ define i8 @func0000000000000038(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = add i8 %2, 1
-  %4 = add i8 %3, %0
+  %4 = add i8 %0, %3
   ret i8 %4
 }
 
@@ -31,7 +31,7 @@ define i8 @func0000000000000014(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = add i8 %2, -8
-  %4 = add i8 %3, %0
+  %4 = add i8 %0, %3
   ret i8 %4
 }
 
@@ -42,7 +42,7 @@ define i8 @func0000000000000018(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = add i8 %2, -4
-  %4 = add i8 %3, %0
+  %4 = add i8 %0, %3
   ret i8 %4
 }
 

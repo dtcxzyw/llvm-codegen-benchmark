@@ -1,8 +1,10 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -14,11 +16,12 @@ define i64 @func000000000000000b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 204 occurrences:
+; 203 occurrences:
+; boost/optimized/to_chars.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -111,8 +114,6 @@ entry:
 ; linux/optimized/resize.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/timekeeping.ll
-; linux/optimized/vclock_gettime.ll
-; linux/optimized/vsyscall.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/MachOUniversalWriter.cpp.ll

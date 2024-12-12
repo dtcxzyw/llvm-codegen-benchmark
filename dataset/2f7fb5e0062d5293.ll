@@ -20,20 +20,6 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i1 %2) #0 {
-entry:
-  %3 = sext i1 %2 to i64
-  %4 = sub nsw i64 %0, %1
-  %5 = add nsw i64 %4, %3
-  %6 = icmp slt i64 %5, 0
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind

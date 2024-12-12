@@ -8,7 +8,7 @@ define i16 @func0000000000000006(i16 %0, i16 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i16 32, i16 0
   %4 = or disjoint i16 %3, %1
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   %6 = or i16 %5, 18432
   ret i16 %6
 }

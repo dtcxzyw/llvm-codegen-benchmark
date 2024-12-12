@@ -1,9 +1,9 @@
-func0000000000000021:                   # @func0000000000000021
-	addq	$8, %rdx
+func0000000000000041:                   # @func0000000000000041
+	addq	$-16, %rdx
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -11,14 +11,14 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addq	$-64, %rdx
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

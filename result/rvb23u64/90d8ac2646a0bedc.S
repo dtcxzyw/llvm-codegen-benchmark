@@ -1,4 +1,4 @@
-func000000000000002d:                   # @func000000000000002d
+func000000000000004d:                   # @func000000000000004d
 	addw	a1, a1, a2
 	slti	a1, a1, 0
 	czero.nez	a0, a0, a1
@@ -22,7 +22,7 @@ func0000000000000008:                   # @func0000000000000008
 	or	a0, a0, a1
 	zext.w	a0, a0
 	ret
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	addw	a1, a1, a2
 	slti	a1, a1, 0
 	czero.nez	a0, a0, a1

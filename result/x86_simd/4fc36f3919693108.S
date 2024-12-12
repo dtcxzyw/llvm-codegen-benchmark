@@ -2,16 +2,16 @@
 	.long	32768                           # 0x8000
 .LCPI0_1:
 	.long	16384                           # 0x4000
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vorps	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vptestnmd	%ymm0, %ymm0, %k1
 	vorps	.LCPI0_1(%rip){1to8}, %ymm1, %ymm2 {%k1}
 	vmovaps	%ymm2, %ymm0
 	retq
 .LCPI1_0:
-	.long	4194304                         # 0x400000
+	.long	6                               # 0x6
 .LCPI1_1:
-	.long	256                             # 0x100
+	.long	4                               # 0x4
 func0000000000000021:                   # @func0000000000000021
 	vorps	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vptestnmd	%ymm0, %ymm0, %k1
@@ -19,10 +19,10 @@ func0000000000000021:                   # @func0000000000000021
 	vmovaps	%ymm2, %ymm0
 	retq
 .LCPI2_0:
-	.long	24                              # 0x18
+	.long	4194304                         # 0x400000
 .LCPI2_1:
-	.long	8                               # 0x8
-func0000000000000011:                   # @func0000000000000011
+	.long	256                             # 0x100
+func0000000000000041:                   # @func0000000000000041
 	vorps	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vptestnmd	%ymm0, %ymm0, %k1
 	vorps	.LCPI2_1(%rip){1to8}, %ymm1, %ymm2 {%k1}

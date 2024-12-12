@@ -16,6 +16,7 @@
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMfs.c.ll
 ; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/giaMini.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
@@ -30,7 +31,6 @@
 ; abc/optimized/utilIsop.c.ll
 ; clamav/optimized/unarj.c.ll
 ; libquic/optimized/mul.c.ll
-; linux/optimized/gen_estimator.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0) #0 {
 entry:
@@ -40,7 +40,7 @@ entry:
   ret i64 %3
 }
 
-; 66 occurrences:
+; 63 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -52,7 +52,6 @@ entry:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/dauDivs.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNonDsd.c.ll
@@ -97,9 +96,7 @@ entry:
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; cmake/optimized/zstd_opt.c.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; lightgbm/optimized/linker_topo.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll

@@ -22,6 +22,6 @@
 	.byte	0                               # 0x0
 func0000000000000003:                   # @func0000000000000003
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm2
-	vpternlogd	$254, %xmm1, %xmm0, %xmm2 # xmm2 = xmm2 | xmm0 | xmm1
+	vpternlogd	$254, %xmm0, %xmm1, %xmm2 # xmm2 = xmm2 | xmm1 | xmm0
 	vpmovsxdq	%xmm2, %ymm0
 	retq

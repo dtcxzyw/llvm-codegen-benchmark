@@ -22,17 +22,17 @@ func0000000000000002:                   # @func0000000000000002
 	vucomiss	%xmm1, %xmm0
 	seta	%al
 	retq
-func0000000000000022:                   # @func0000000000000022
-	vmovd	%esi, %xmm0
-	vmovd	%edi, %xmm1
-	vucomiss	%xmm1, %xmm0
-	seta	%al
-	retq
 func0000000000000008:                   # @func0000000000000008
 	vmovd	%esi, %xmm0
 	vmovd	%edi, %xmm1
 	vcmpeqss	%xmm0, %xmm1, %k0
 	kmovd	%k0, %eax
+	retq
+func0000000000000022:                   # @func0000000000000022
+	vmovd	%esi, %xmm0
+	vmovd	%edi, %xmm1
+	vucomiss	%xmm1, %xmm0
+	seta	%al
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vmovd	%esi, %xmm0

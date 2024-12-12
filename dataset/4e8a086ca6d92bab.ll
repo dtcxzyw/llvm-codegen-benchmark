@@ -1,9 +1,8 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; assimp/optimized/IFCCurve.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; opencv/optimized/dpm_feature.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll

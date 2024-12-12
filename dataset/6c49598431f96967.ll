@@ -21,7 +21,6 @@
 ; openjdk/optimized/downcallLinker_x86_64.ll
 ; openjdk/optimized/foreignGlobals_x86_64.ll
 ; openjdk/optimized/upcallLinker_x86_64.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; pyo3-rs/optimized/23tgpgxnh0x411j4.ll
 ; pyo3-rs/optimized/5cngl7ehxnf7u52x.ll
@@ -36,6 +35,7 @@
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/3qxuuvy9ipi9muus.ll
 ; wasmtime-rs/optimized/504voril3a5lulnh.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
@@ -45,10 +45,11 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; hdf5/optimized/H5Iint.c.ll
 ; icu/optimized/collationbuilder.ll
 ; linux/optimized/printk_ringbuffer.ll
+; lvgl/optimized/lv_dropdown.ll
 ; rustfmt-rs/optimized/3n0n7c4xrusd0kzl.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; Function Attrs: nounwind
@@ -80,18 +81,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i1 %0, i64 %1) #0 {
-entry:
-  %2 = lshr exact i64 %1, 5
-  %3 = trunc nuw i64 %2 to i32
-  %4 = select i1 %0, i32 %3, i32 undef
-  ret i32 %4
-}
-
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/positional_options.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; opencv/optimized/arg_layer.cpp.ll
 ; opencv/optimized/concat_layer.cpp.ll
@@ -108,9 +99,20 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 2
+  %2 = lshr exact i64 %1, 5
   %3 = trunc i64 %2 to i32
-  %4 = select i1 %0, i32 %3, i32 0
+  %4 = select i1 %0, i32 %3, i32 -1
+  ret i32 %4
+}
+
+; 1 occurrences:
+; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i1 %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 5
+  %3 = trunc nuw i64 %2 to i32
+  %4 = select i1 %0, i32 %3, i32 undef
   ret i32 %4
 }
 

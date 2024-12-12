@@ -1,6 +1,8 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/levenberg_marquardt_strategy.cc.ll
 ; gromacs/optimized/gmx_nmr.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll

@@ -1,34 +1,14 @@
 
-; 5 occurrences:
-; rocksdb/optimized/lock_request.cc.ll
-; rocksdb/optimized/locktree.cc.ll
-; rocksdb/optimized/manager.cc.ll
-; rocksdb/optimized/txnid_set.cc.ll
-; rocksdb/optimized/wfg.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0) #0 {
-entry:
-  %1 = shl i32 %0, 1
-  %2 = icmp ult i32 %0, 3
-  %3 = select i1 %2, i32 4, i32 %1
-  %4 = zext i32 %3 to i64
-  %5 = shl nuw nsw i64 %4, 3
-  ret i64 %5
-}
-
-; 4 occurrences:
-; c3c/optimized/decltable.c.ll
+; 1 occurrences:
 ; c3c/optimized/symtab.c.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000018f(i32 %0) #0 {
+define i64 @func000000000000030f(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 %0, 2
   %2 = icmp eq i32 %0, 0
   %3 = select i1 %2, i32 16, i32 %1
   %4 = zext nneg i32 %3 to i64
-  %5 = shl nuw nsw i64 %4, 2
+  %5 = shl nuw nsw i64 %4, 4
   ret i64 %5
 }
 
@@ -49,7 +29,7 @@ entry:
 ; icu/optimized/units_data.ll
 ; icu/optimized/units_router.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000008f(i32 %0) #0 {
+define i64 @func000000000000010f(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
   %2 = icmp eq i32 %0, 0
@@ -81,7 +61,7 @@ entry:
 ; libevent/optimized/poll.c.ll
 ; opencv/optimized/zmaxheap.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000001b7(i32 %0) #0 {
+define i64 @func0000000000000337(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 %0, 1
   %2 = icmp slt i32 %0, 16
@@ -94,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/localeprioritylist.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000b7(i32 %0) #0 {
+define i64 @func0000000000000137(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 2
   %2 = icmp slt i32 %0, 50

@@ -27,7 +27,11 @@ func000000000000000a:                   # @func000000000000000a
 	vmerge.vim	v8, v8, -1, v0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	bseti	a0, zero, 32
+	lui	a0, 227374
+	addiw	a0, a0, -1329
+	slli	a0, a0, 12
+	addi	a0, a0, -1575
+	slli	a0, a0, 18
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -36,9 +40,20 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 .LCPI5_0:
 	.quad	-153722867280912930             # 0xfdddddddddddddde
-func0000000000000006:                   # @func0000000000000006
+func0000000000000014:                   # @func0000000000000014
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsltu.vx	v0, v8, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, -1, v0
+	ret
+.LCPI6_0:
+	.quad	-153722867280912930             # 0xfdddddddddddddde
+func0000000000000006:                   # @func0000000000000006
+	lui	a0, %hi(.LCPI6_0)
+	ld	a0, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

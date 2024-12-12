@@ -1,19 +1,20 @@
 func000000000000000c:                   # @func000000000000000c
 	xorl	%ecx, %ecx
-	testb	$1, %dil
+	cmpl	$-1, %esi
 	movl	$7, %eax
 	cmovel	%ecx, %eax
-	cmpl	$-1, %esi
+	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	andb	$1, %dil
-	shlb	$2, %dil
-	orb	$8, %dil
 	testl	%esi, %esi
-	movzbl	%dil, %ecx
+	sete	%al
+	shlb	$2, %al
+	orb	$8, %al
+	movzbl	%al, %ecx
+	testb	$1, %dil
 	movl	$8, %eax
-	cmovel	%ecx, %eax
+	cmovnel	%ecx, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	notb	%dil

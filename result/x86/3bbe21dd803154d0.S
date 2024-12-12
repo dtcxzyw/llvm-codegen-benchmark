@@ -1,31 +1,23 @@
-func0000000000000598:                   # @func0000000000000598
+func0000000000001b18:                   # @func0000000000001b18
 	addq	$3592, %rdx                     # imm = 0xE08
 	xorq	%rdx, %rdi
 	xorq	%rsi, %rdx
 	orq	%rdi, %rdx
 	setne	%al
 	retq
-func0000000000000422:                   # @func0000000000000422
+func0000000000001842:                   # @func0000000000001842
 	addq	$48, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%cl
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000438:                   # @func0000000000000438
+func0000000000001858:                   # @func0000000000001858
 	addq	$8, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	setne	%cl
-	cmpq	%rsi, %rdx
-	sete	%al
-	orb	%cl, %al
-	retq
-func0000000000000622:                   # @func0000000000000622
-	addq	$8, %rdx
-	cmpq	%rdi, %rdx
-	sete	%cl
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	orb	%cl, %al
 	retq

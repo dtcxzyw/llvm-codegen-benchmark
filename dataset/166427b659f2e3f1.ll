@@ -15,11 +15,10 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
 ; openusd/optimized/cdef.c.ll
-; php/optimized/engine_combinedlcg.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:

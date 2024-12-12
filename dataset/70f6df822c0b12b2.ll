@@ -12,7 +12,7 @@ entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
@@ -27,7 +27,7 @@ entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 

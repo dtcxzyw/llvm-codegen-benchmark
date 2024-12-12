@@ -4,7 +4,7 @@
 ; openexr/optimized/part.c.ll
 ; openspiel/optimized/y.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %2, %0
   %4 = icmp sgt i32 %3, -1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %2, %0
   %4 = icmp ne i32 %3, 0
@@ -32,7 +32,7 @@ entry:
 ; opencv/optimized/depth_registration.cpp.ll
 ; openspiel/optimized/y.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000146(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %0, %2
   %4 = icmp sgt i32 %3, -1

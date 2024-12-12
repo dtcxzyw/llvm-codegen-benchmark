@@ -66,7 +66,8 @@ entry:
   ret i64 %6
 }
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -170,7 +171,7 @@ entry:
   %3 = sub nsw i32 64, %2
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 

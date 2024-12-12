@@ -1,220 +1,69 @@
-func0000000000000025:                   // @func0000000000000025
+func0000000000000045:                   // @func0000000000000045
 // %bb.0:                               // %entry
-	fmov	x10, d0
-	fmov	x11, d1
-	mov	x8, v1.d[1]
-	mov	x9, v0.d[1]
-	shl	v2.2d, v2.2d, #5
-	shl	v3.2d, v3.2d, #5
-	add	x10, x10, x10, lsl #1
-	add	x11, x11, x11, lsl #1
-	add	x8, x8, x8, lsl #1
-	lsl	x10, x10, #3
-	lsl	x11, x11, #3
-	add	x9, x9, x9, lsl #1
+	add	x8, x0, x0, lsl #1
 	lsl	x8, x8, #3
-	fmov	d0, x10
-	fmov	d1, x11
-	lsl	x9, x9, #3
-	mov	v0.d[1], x9
-	mov	v1.d[1], x8
-	cmhs	v1.2d, v3.2d, v1.2d
-	cmhs	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	x8, x1, lsl #5
+	cset	w0, ls
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	fmov	x10, d0
-	fmov	x11, d1
-	mov	x8, v1.d[1]
-	mov	x9, v0.d[1]
-	shl	v2.2d, v2.2d, #7
-	shl	v3.2d, v3.2d, #7
-	add	x10, x10, x10, lsl #1
-	add	x11, x11, x11, lsl #1
-	add	x8, x8, x8, lsl #1
-	lsl	x10, x10, #3
-	lsl	x11, x11, #3
-	add	x9, x9, x9, lsl #1
+	add	x8, x0, x0, lsl #1
 	lsl	x8, x8, #3
-	fmov	d0, x10
-	fmov	d1, x11
-	lsl	x9, x9, #3
-	mov	v0.d[1], x9
-	mov	v1.d[1], x8
-	cmeq	v1.2d, v1.2d, v3.2d
-	cmeq	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	mvn	v0.16b, v0.16b
-	xtn	v0.4h, v0.4s
+	cmp	x8, x1, lsl #7
+	cset	w0, ne
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fmov	x10, d0
-	fmov	x11, d1
-	mov	x8, v1.d[1]
-	mov	x9, v0.d[1]
-	add	v2.2d, v2.2d, v2.2d
-	add	v3.2d, v3.2d, v3.2d
-	add	x10, x10, x10, lsl #1
-	add	x11, x11, x11, lsl #1
-	add	x8, x8, x8, lsl #1
-	fmov	d0, x10
-	fmov	d1, x11
-	add	x9, x9, x9, lsl #1
-	mov	v0.d[1], x9
-	mov	v1.d[1], x8
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, x0, lsl #1
+	cmp	x8, x1, lsl #1
+	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	fmov	x10, d0
-	fmov	x11, d1
-	mov	x8, v1.d[1]
-	mov	x9, v0.d[1]
-	add	v2.2d, v2.2d, v2.2d
-	add	v3.2d, v3.2d, v3.2d
-	add	x10, x10, x10, lsl #1
-	add	x11, x11, x11, lsl #1
-	add	x8, x8, x8, lsl #1
-	fmov	d0, x10
-	fmov	d1, x11
-	add	x9, x9, x9, lsl #1
-	mov	v0.d[1], x9
-	mov	v1.d[1], x8
-	cmgt	v1.2d, v3.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, x0, lsl #1
+	cmp	x8, x1, lsl #1
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000034:                   // @func0000000000000034
+func0000000000000064:                   // @func0000000000000064
 // %bb.0:                               // %entry
-	fmov	x10, d0
-	fmov	x11, d1
-	mov	x8, v1.d[1]
-	mov	x9, v0.d[1]
-	shl	v2.2d, v2.2d, #10
-	shl	v3.2d, v3.2d, #10
-	add	x10, x10, x10, lsl #2
-	add	x11, x11, x11, lsl #2
-	add	x8, x8, x8, lsl #2
-	lsl	x10, x10, #8
-	lsl	x11, x11, #8
-	add	x9, x9, x9, lsl #2
+	add	x8, x0, x0, lsl #2
 	lsl	x8, x8, #8
-	fmov	d0, x10
-	fmov	d1, x11
-	lsl	x9, x9, #8
-	mov	v0.d[1], x9
-	mov	v1.d[1], x8
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	x8, x1, lsl #10
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000078:                   // @func0000000000000078
+func00000000000000e8:                   // @func00000000000000e8
 // %bb.0:                               // %entry
-	fmov	x10, d0
-	fmov	x11, d1
-	mov	x8, v1.d[1]
-	mov	x9, v0.d[1]
-	shl	v2.2d, v2.2d, #10
-	shl	v3.2d, v3.2d, #10
-	lsl	x12, x10, #13
-	lsl	x13, x11, #13
-	lsl	x15, x8, #13
-	sub	x10, x12, x10, lsl #5
-	sub	x11, x13, x11, lsl #5
-	lsl	x14, x9, #13
-	sub	x8, x15, x8, lsl #5
-	fmov	d0, x10
-	fmov	d1, x11
-	sub	x9, x14, x9, lsl #5
-	mov	v0.d[1], x9
-	mov	v1.d[1], x8
-	cmhi	v1.2d, v1.2d, v3.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	lsl	x8, x0, #13
+	sub	x8, x8, x0, lsl #5
+	cmp	x8, x1, lsl #10
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000056:                   // @func0000000000000056
+func00000000000000a6:                   // @func00000000000000a6
 // %bb.0:                               // %entry
-	fmov	x9, d0
-	fmov	x11, d1
 	mov	w8, #125                        // =0x7d
-	mov	x10, v0.d[1]
-	mov	x12, v1.d[1]
-	shl	v2.2d, v2.2d, #3
-	shl	v3.2d, v3.2d, #3
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d0, x9
-	mul	x8, x12, x8
-	fmov	d1, x11
-	mov	v0.d[1], x10
-	mov	v1.d[1], x8
-	cmgt	v0.2d, v2.2d, v0.2d
-	cmgt	v1.2d, v3.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x0, x8
+	cmp	x8, x1, lsl #3
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000041:                   // @func0000000000000041
+func0000000000000081:                   // @func0000000000000081
 // %bb.0:                               // %entry
-	fmov	x10, d0
-	fmov	x11, d1
-	mov	x8, v1.d[1]
-	mov	x9, v0.d[1]
-	shl	v2.2d, v2.2d, #2
-	shl	v3.2d, v3.2d, #2
-	add	x10, x10, x10, lsl #1
-	add	x11, x11, x11, lsl #1
-	add	x8, x8, x8, lsl #1
-	lsl	x10, x10, #2
-	lsl	x11, x11, #2
-	add	x9, x9, x9, lsl #1
+	add	x8, x0, x0, lsl #1
 	lsl	x8, x8, #2
-	fmov	d0, x10
-	fmov	d1, x11
-	lsl	x9, x9, #2
-	mov	v0.d[1], x9
-	mov	v1.d[1], x8
-	cmeq	v1.2d, v1.2d, v3.2d
-	cmeq	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	x8, x1, lsl #2
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000024:                   // @func0000000000000024
+func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	fmov	x10, d0
-	fmov	x11, d1
-	mov	x8, v1.d[1]
-	mov	x9, v0.d[1]
-	add	v2.2d, v2.2d, v2.2d
-	add	v3.2d, v3.2d, v3.2d
-	add	x10, x10, x10, lsl #1
-	add	x11, x11, x11, lsl #1
-	add	x8, x8, x8, lsl #1
-	fmov	d0, x10
-	fmov	d1, x11
-	add	x9, x9, x9, lsl #1
-	mov	v0.d[1], x9
-	mov	v1.d[1], x8
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, x0, lsl #1
+	cmp	x8, x1, lsl #1
+	cset	w0, lo
 	ret
                                         // -- End function

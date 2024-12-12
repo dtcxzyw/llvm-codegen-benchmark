@@ -5,7 +5,7 @@
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0) #0 {
+define i64 @func0000000000000048(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
   %2 = icmp ugt i64 %1, 4611686018427387903

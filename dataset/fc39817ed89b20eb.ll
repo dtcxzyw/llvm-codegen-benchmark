@@ -1,10 +1,12 @@
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp ne i32 %0, -1
@@ -13,12 +15,14 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp ugt i32 %0, 3

@@ -1,7 +1,10 @@
 
-; 130 occurrences:
+; 137 occurrences:
 ; abc/optimized/cuddGroup.c.ll
 ; arrow/optimized/encode_internal.cc.ll
+; casadi/optimized/dm_instantiator.cpp.ll
+; casadi/optimized/im_instantiator.cpp.ll
+; casadi/optimized/sx_instantiator.cpp.ll
 ; clamav/optimized/bytecode.c.ll
 ; cmake/optimized/stream.c.ll
 ; cvc5/optimized/inst_strategy_e_matching.cpp.ll
@@ -90,6 +93,7 @@
 ; openusd/optimized/primIndex.cpp.ll
 ; openusd/optimized/reconinter.c.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
+; php/optimized/pcre2_match.ll
 ; php/optimized/spl_array.ll
 ; php/optimized/zend_jit.ll
 ; pocketpy/optimized/error.cpp.ll
@@ -101,7 +105,6 @@
 ; postgres/optimized/pg_receivewal.ll
 ; postgres/optimized/selfuncs.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; redis/optimized/geo.ll
@@ -129,6 +132,10 @@
 ; z3/optimized/model_based_opt.cpp.ll
 ; z3/optimized/old_interval.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; zxing/optimized/ODDataBarCommon.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {

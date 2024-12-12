@@ -1,4 +1,4 @@
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	snez	a1, a1
 	lui	a2, 2
 	slli	a1, a1, 12
@@ -7,19 +7,25 @@ func0000000000000023:                   # @func0000000000000023
 	ret
 func0000000000000002:                   # @func0000000000000002
 	snez	a1, a1
-	lui	a2, 128
-	slli	a1, a1, 18
-	or	a0, a0, a2
+	slli	a1, a1, 14
 	or	a0, a0, a1
+	ori	a0, a0, 32
 	ret
-func0000000000000029:                   # @func0000000000000029
+func0000000000000069:                   # @func0000000000000069
 	srli	a1, a1, 16
 	snez	a1, a1
 	slli	a1, a1, 4
 	or	a0, a0, a1
 	ori	a0, a0, 8
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000049:                   # @func0000000000000049
+	srli	a1, a1, 16
+	snez	a1, a1
+	slli	a1, a1, 4
+	or	a0, a0, a1
+	ori	a0, a0, 8
+	ret
+func0000000000000042:                   # @func0000000000000042
 	seqz	a1, a1
 	lui	a2, 33
 	addi	a1, a1, -1
@@ -39,7 +45,7 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000068:                   # @func0000000000000068
 	sltiu	a1, a1, 16
 	xori	a1, a1, 1
 	slli	a1, a1, 2

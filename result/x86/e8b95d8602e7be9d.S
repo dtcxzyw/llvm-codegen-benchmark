@@ -22,7 +22,7 @@ func000000000000001c:                   # @func000000000000001c
 	leal	63(%rdi,%rdi), %eax
 	retq
 func000000000000001b:                   # @func000000000000001b
-	leal	-4(,%rdi,4), %eax
+	leal	-64(,%rdi,8), %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	leal	16(,%rdi,8), %eax
@@ -59,4 +59,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000009:                   # @func0000000000000009
 	leal	-8(,%rdi,8), %eax
+	retq
+func0000000000000017:                   # @func0000000000000017
+	leal	2(%rdi,%rdi), %eax
 	retq

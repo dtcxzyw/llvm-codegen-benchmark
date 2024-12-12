@@ -1,5 +1,5 @@
 
-; 332 occurrences:
+; 329 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/align_util.cc.ll
@@ -17,6 +17,7 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -111,7 +112,6 @@
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; llvm/optimized/IRSymtab.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
@@ -194,9 +194,6 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -341,8 +338,7 @@ entry:
   ret i64 %4
 }
 
-; 25 occurrences:
-; abc/optimized/lpkAbcUtil.c.ll
+; 24 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; cmake/optimized/zstd_decompress.c.ll

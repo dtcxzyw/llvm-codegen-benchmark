@@ -3,7 +3,7 @@
 ; libpng/optimized/png.c.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
   %3 = trunc nuw i32 %2 to i8

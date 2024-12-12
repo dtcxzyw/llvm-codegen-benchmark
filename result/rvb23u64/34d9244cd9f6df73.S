@@ -17,6 +17,11 @@ func00000000000000fc:                   # @func00000000000000fc
 	slli	a0, a0, 4
 	addiw	a0, a0, -768
 	ret
+func00000000000000d7:                   # @func00000000000000d7
+	sh3add	a0, a1, a0
+	slli	a0, a0, 3
+	addiw	a0, a0, -384
+	ret
 func0000000000000000:                   # @func0000000000000000
 	sh2add	a0, a1, a0
 	slli	a0, a0, 16
@@ -43,9 +48,4 @@ func00000000000000d1:                   # @func00000000000000d1
 	sh1add	a0, a1, a0
 	slli	a0, a0, 5
 	addiw	a0, a0, -64
-	ret
-func00000000000000d7:                   # @func00000000000000d7
-	sh3add	a0, a1, a0
-	slli	a0, a0, 3
-	addiw	a0, a0, -384
 	ret

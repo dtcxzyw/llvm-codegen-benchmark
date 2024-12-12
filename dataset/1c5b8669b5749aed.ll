@@ -1,14 +1,55 @@
 
-%"class.llvm::Use.2987993" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
 
-; 36 occurrences:
-; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
+; 8 occurrences:
 ; jemalloc/optimized/emap.ll
 ; jemalloc/optimized/emap.pic.ll
 ; jemalloc/optimized/emap.sym.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
+; openssl/optimized/libcrypto-lib-sha1dgst.ll
+; openssl/optimized/libcrypto-shlib-sha1dgst.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 64, %2
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = and i64 %1, -64
+  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; openssl/optimized/libcrypto-lib-sha1dgst.ll
+; openssl/optimized/libcrypto-shlib-sha1dgst.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 64, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = and i64 %1, -64
+  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 4 occurrences:
+; meilisearch-rs/optimized/nd5rqkzol64hjfl.ll
+; ockam-rs/optimized/274k60s1efyiyv8u.ll
+; ockam-rs/optimized/z0rkq6s90lca7cm.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw nsw i64 64, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = and i64 %1, -64
+  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 28 occurrences:
+; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
@@ -35,42 +76,26 @@
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; openjdk/optimized/verifier.ll
-; openssl/optimized/libcrypto-lib-sha1dgst.ll
-; openssl/optimized/libcrypto-shlib-sha1dgst.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 64, %2
+  %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = and i64 %1, -64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 3 occurrences:
-; meilisearch-rs/optimized/nd5rqkzol64hjfl.ll
-; ockam-rs/optimized/274k60s1efyiyv8u.ll
-; ockam-rs/optimized/z0rkq6s90lca7cm.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nuw nsw i64 64, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = and i64 %1, -64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %5 = and i64 %1, 65535
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; draco/optimized/encoder_buffer.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 -8, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = and i64 %1, 4294967295
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -84,7 +109,7 @@ entry:
 define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.2987993", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3181463", ptr %0, i64 %3
   %5 = and i64 %1, -128
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

@@ -1,20 +1,17 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	li	a3, 8
 	bltu	a1, a3, .LBB0_2
 	addi	a0, a2, -64
 .LBB0_2:                                # %entry
 	seqz	a0, a0
 	ret
-func0000000000000261:                   # @func0000000000000261
-	bltz	a1, .LBB1_2
-	addi	a0, a2, 8
-.LBB1_2:                                # %entry
+func0000000000000cc1:                   # @func0000000000000cc1
+	slti	a1, a1, 0
 	seqz	a0, a0
+	and	a0, a0, a1
 	ret
-func0000000000000241:                   # @func0000000000000241
-	li	a3, 5
-	bltu	a1, a3, .LBB2_2
-	addi	a0, a2, 28
-.LBB2_2:                                # %entry
+func0000000000000c81:                   # @func0000000000000c81
+	sltiu	a1, a1, 5
 	seqz	a0, a0
+	and	a0, a0, a1
 	ret

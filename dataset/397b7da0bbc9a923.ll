@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
+; lvgl/optimized/lv_math.ll
 ; wireshark/optimized/packet-tibia.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {

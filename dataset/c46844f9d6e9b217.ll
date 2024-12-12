@@ -3,12 +3,12 @@
 ; openssl/optimized/libcrypto-lib-bn_nist.ll
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = add nuw nsw i64 %0, %1
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ult i64 %5, 4294967296
+  %6 = icmp samesign ult i64 %5, 4294967296
   ret i1 %6
 }
 
@@ -18,7 +18,7 @@ entry:
 ; icu/optimized/double-conversion-strtod.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = add nuw i64 %0, %1
@@ -116,7 +116,7 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = add nuw i64 %0, %1
@@ -128,7 +128,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = add nuw i64 %0, %1
@@ -143,19 +143,19 @@ entry:
 ; abc/optimized/solver.c.ll
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 15
   %4 = add nuw nsw i64 %0, %1
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ugt i64 %5, 281474976710655
+  %6 = icmp samesign ugt i64 %5, 281474976710655
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = add i64 %0, %1
@@ -167,7 +167,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/VectorBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 32
   %4 = add i64 %0, %1

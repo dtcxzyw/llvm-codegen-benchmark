@@ -6,7 +6,7 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; wireshark/optimized/erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a1(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
@@ -30,12 +30,12 @@ entry:
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000aa(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
   %5 = icmp sgt i16 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -45,7 +45,7 @@ entry:
 ; wireshark/optimized/netscaler.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a8(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1

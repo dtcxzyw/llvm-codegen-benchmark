@@ -45,8 +45,8 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000011:                   # @func0000000000000011
 	leal	(%rsi,%rdx), %eax
-	subl	%edi, %eax
-	incl	%eax
+	notl	%edi
+	addl	%edi, %eax
 	retq
 func0000000000000030:                   # @func0000000000000030
 	leal	(%rsi,%rdx), %eax

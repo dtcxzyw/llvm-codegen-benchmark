@@ -1,10 +1,10 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	slli	a1, a1, 1
 	addiw	a1, a1, -2
 	sraiw	a0, a0, 31
 	and	a0, a0, a1
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001e8:                   # @func00000000000001e8
 	sext.w	a0, a0
 	slli	a1, a1, 2
 	addiw	a1, a1, 7
@@ -20,37 +20,29 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	slli	a1, a1, 1
 	addiw	a1, a1, 2
 	sraiw	a0, a0, 31
 	or	a0, a0, a1
 	ret
-func00000000000000f4:                   # @func00000000000000f4
-	sext.w	a0, a0
-	slli	a1, a1, 1
-	addiw	a1, a1, 9
-	sltiu	a0, a0, 4
-	neg	a0, a0
-	and	a0, a0, a1
-	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
 	li	a2, 2
-	beq	a0, a2, .LBB5_2
+	beq	a0, a2, .LBB4_2
 	li	a0, 1
 	ret
-.LBB5_2:
+.LBB4_2:
 	slli	a0, a1, 1
 	addiw	a0, a0, -1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	li	a2, 5
-	beq	a0, a2, .LBB6_2
+	beq	a0, a2, .LBB5_2
 	li	a0, 56
 	ret
-.LBB6_2:
+.LBB5_2:
 	slli	a1, a1, 3
 	addiw	a0, a1, 64
 	ret

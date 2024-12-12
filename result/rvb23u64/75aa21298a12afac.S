@@ -1,6 +1,6 @@
 func000000000000006f:                   # @func000000000000006f
 	slli.uw	a2, a2, 1
-	sh3add	a2, a2, a2
+	sh2add	a2, a2, a2
 	add	a0, a0, a2
 	add.uw	a0, a1, a0
 	ret

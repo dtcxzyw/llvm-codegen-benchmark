@@ -1,5 +1,5 @@
 
-; 876 occurrences:
+; 874 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -248,7 +248,6 @@
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/RISCVOptWInstrs.cpp.ll
@@ -635,10 +634,8 @@
 ; postgres/optimized/functions.ll
 ; postgres/optimized/gindesc.ll
 ; postgres/optimized/ginentrypage.ll
-; postgres/optimized/gistdesc.ll
 ; postgres/optimized/guc-file.ll
 ; postgres/optimized/guc.ll
-; postgres/optimized/heapdesc.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/jsonpath.ll
 ; postgres/optimized/jsonpath_exec.ll
@@ -698,7 +695,6 @@
 ; postgres/optimized/xlogrecovery.ll
 ; postgres/optimized/xlogutils.ll
 ; proj/optimized/4D_api.cpp.ll
-; proj/optimized/crs.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; proj/optimized/transformation.cpp.ll
@@ -711,7 +707,6 @@
 ; qemu/optimized/block.c.ll
 ; qemu/optimized/block_mirror.c.ll
 ; qemu/optimized/block_nbd.c.ll
-; qemu/optimized/block_null.c.ll
 ; qemu/optimized/block_vmdk.c.ll
 ; qemu/optimized/block_vpc.c.ll
 ; qemu/optimized/blockdev.c.ll
@@ -872,6 +867,9 @@
 ; z3/optimized/theory_dummy.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1g4llau8b68ay2vvwa3gtrt6g.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/Content.cpp.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
@@ -884,10 +882,15 @@ entry:
   ret i32 %2
 }
 
-; 73 occurrences:
+; 91 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; coreutils-rs/optimized/2wc2yx8ferzqfnf3.ll
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
@@ -945,17 +948,30 @@ entry:
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; velox/optimized/Filter.cpp.ll
-; wasmtime-rs/optimized/2niyyz8nbah1jl4k.ll
 ; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
-; wasmtime-rs/optimized/cxg2cx8gn6v5trt.ll
 ; yosys/optimized/cellaigs.ll
 ; yosys/optimized/liberty.ll
 ; z3/optimized/qe_mbi.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; zed-rs/optimized/757aerssmagtgltjzibkzoiku.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
+; zed-rs/optimized/8wv9z8bsh382qkns7z2j1g5g5.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/by8gv54o76v0inyrwjxd65d9p.ll
+; zed-rs/optimized/d2w35dg2d82avud97ap9t4v42.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; Function Attrs: nounwind

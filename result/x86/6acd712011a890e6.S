@@ -1,27 +1,37 @@
 func0000000000000008:                   # @func0000000000000008
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
-	leaq	(%rdx,%rdx,4), %rcx
-	shlq	$4, %rcx
-	addq	%rsi, %rcx
-	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
-	setne	%al
-	retq
-func0000000000000048:                   # @func0000000000000048
+func00000000000000d8:                   # @func00000000000000d8
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setne	%al
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000088:                   # @func0000000000000088
+	addq	%rdx, %rsi
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	setb	%al
+	retq
+func00000000000000c2:                   # @func00000000000000c2
 	leaq	(%rsi,%rdx,8), %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
+	sete	%al
+	retq
+func0000000000000098:                   # @func0000000000000098
+	leaq	(%rsi,%rdx,8), %rcx
+	xorl	%eax, %eax
+	cmpq	%rcx, %rdi
+	setne	%al
+	retq
+func0000000000000082:                   # @func0000000000000082
+	addq	%rdx, %rsi
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
 func0000000000000018:                   # @func0000000000000018
@@ -29,6 +39,6 @@ func0000000000000018:                   # @func0000000000000018
 	shlq	$4, %rcx
 	addq	%rsi, %rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	setne	%al
 	retq

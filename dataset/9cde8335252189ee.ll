@@ -16,10 +16,12 @@ entry:
   ret i16 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; linux/optimized/ehci-hcd.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i1 %1, i16 %2) #0 {
 entry:

@@ -66,12 +66,11 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; faiss/optimized/IndexPQ.cpp.ll
 ; glslang/optimized/PoolAlloc.cpp.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/ialloc.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/skl_watermark.ll
@@ -83,6 +82,8 @@ entry:
 ; qemu/optimized/audio_audio.c.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; qemu/optimized/block_mirror.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

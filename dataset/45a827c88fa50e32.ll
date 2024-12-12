@@ -171,7 +171,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -192,13 +191,14 @@
 ; tev/optimized/main.cpp.ll
 ; velox/optimized/BitUtil.cpp.ll
 ; velox/optimized/Variant.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, -7286425919675154353
-  %4 = xor i64 %3, %1
-  %5 = xor i64 %4, %0
+  %4 = xor i64 %1, %3
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 
@@ -212,7 +212,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 73856093
-  %4 = xor i64 %3, %1
+  %4 = xor i64 %1, %3
   %5 = xor i64 %4, %0
   ret i64 %5
 }
@@ -228,7 +228,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 73856093
-  %4 = xor i64 %3, %1
+  %4 = xor i64 %1, %3
   %5 = xor i64 %4, %0
   ret i64 %5
 }

@@ -1,20 +1,20 @@
 
-%struct.rb_id_item.2485427 = type { i32, i32, i64 }
-%struct.pm_constant_pool_bucket_t.2485450 = type { i32, i32 }
-%"class.rocksdb::lru_cache::LRUCacheShard.2497604" = type { %"class.rocksdb::CacheShardBase.2497605", i64, i64, i64, i8, double, double, double, double, %"struct.rocksdb::lru_cache::LRUHandle.2497606", ptr, ptr, %"class.rocksdb::lru_cache::LRUHandleTable.2497607", i64, i64, %"class.rocksdb::port::Mutex.2497608", ptr }
-%"class.rocksdb::CacheShardBase.2497605" = type { i32 }
-%"struct.rocksdb::lru_cache::LRUHandle.2497606" = type { ptr, ptr, ptr, ptr, ptr, i64, i64, i32, i32, i8, i8, [1 x i8] }
-%"class.rocksdb::lru_cache::LRUHandleTable.2497607" = type { i32, %"class.std::unique_ptr.2497609", i32, i32, ptr }
-%"class.std::unique_ptr.2497609" = type { %"struct.std::__uniq_ptr_data.2497610" }
-%"struct.std::__uniq_ptr_data.2497610" = type { %"class.std::__uniq_ptr_impl.2497611" }
-%"class.std::__uniq_ptr_impl.2497611" = type { %"class.std::tuple.2497612" }
-%"class.std::tuple.2497612" = type { %"struct.std::_Tuple_impl.2497613" }
-%"struct.std::_Tuple_impl.2497613" = type { %"struct.std::_Head_base.1.2497614" }
-%"struct.std::_Head_base.1.2497614" = type { ptr }
-%"class.rocksdb::port::Mutex.2497608" = type { %union.pthread_mutex_t.2497615 }
-%union.pthread_mutex_t.2497615 = type { %struct.__pthread_mutex_s.2497616 }
-%struct.__pthread_mutex_s.2497616 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2497617 }
-%struct.__pthread_internal_list.2497617 = type { ptr, ptr }
+%struct.rb_id_item.2600909 = type { i32, i32, i64 }
+%struct.pm_constant_pool_bucket_t.2600930 = type { i32, i32 }
+%"class.rocksdb::lru_cache::LRUCacheShard.2612862" = type { %"class.rocksdb::CacheShardBase.2612863", i64, i64, i64, i8, double, double, double, double, %"struct.rocksdb::lru_cache::LRUHandle.2612864", ptr, ptr, %"class.rocksdb::lru_cache::LRUHandleTable.2612865", i64, i64, %"class.rocksdb::port::Mutex.2612866", ptr }
+%"class.rocksdb::CacheShardBase.2612863" = type { i32 }
+%"struct.rocksdb::lru_cache::LRUHandle.2612864" = type { ptr, ptr, ptr, ptr, ptr, i64, i64, i32, i32, i8, i8, [1 x i8] }
+%"class.rocksdb::lru_cache::LRUHandleTable.2612865" = type { i32, %"class.std::unique_ptr.2612867", i32, i32, ptr }
+%"class.std::unique_ptr.2612867" = type { %"struct.std::__uniq_ptr_data.2612868" }
+%"struct.std::__uniq_ptr_data.2612868" = type { %"class.std::__uniq_ptr_impl.2612869" }
+%"class.std::__uniq_ptr_impl.2612869" = type { %"class.std::tuple.2612870" }
+%"class.std::tuple.2612870" = type { %"struct.std::_Tuple_impl.2612871" }
+%"struct.std::_Tuple_impl.2612871" = type { %"struct.std::_Head_base.1.2612872" }
+%"struct.std::_Head_base.1.2612872" = type { ptr }
+%"class.rocksdb::port::Mutex.2612866" = type { %union.pthread_mutex_t.2612873 }
+%union.pthread_mutex_t.2612873 = type { %struct.__pthread_mutex_s.2612874 }
+%struct.__pthread_mutex_s.2612874 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2612875 }
+%struct.__pthread_internal_list.2612875 = type { ptr, ptr }
 
 ; 25 occurrences:
 ; brotli/optimized/backward_references.c.ll
@@ -47,11 +47,11 @@ define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.rb_id_item.2485427, ptr %0, i64 %4
+  %5 = getelementptr %struct.rb_id_item.2600909, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 60 occurrences:
+; 59 occurrences:
 ; linux/optimized/avtab.ll
 ; linux/optimized/cancel.ll
 ; linux/optimized/cistpl.ll
@@ -61,7 +61,6 @@ entry:
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/filetable.ll
-; linux/optimized/hda_hwdep.ll
 ; linux/optimized/hiddev.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/inet6_hashtables.ll
@@ -117,11 +116,11 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.pm_constant_pool_bucket_t.2485450, ptr %0, i64 %4
+  %5 = getelementptr %struct.pm_constant_pool_bucket_t.2600930, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 1610 occurrences:
+; 1608 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/deflate.c.ll
@@ -137,7 +136,6 @@ entry:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; clamav/optimized/qtmd.c.ll
@@ -969,7 +967,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1384,7 +1381,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
@@ -1729,15 +1725,16 @@ entry:
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %"class.rocksdb::lru_cache::LRUCacheShard.2497604", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.rocksdb::lru_cache::LRUCacheShard.2612862", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -2419,7 +2416,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -2696,6 +2692,7 @@ entry:
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/ltable.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; nuttx/optimized/task_setup.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
@@ -2732,11 +2729,11 @@ entry:
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -1,6 +1,8 @@
 
-; 20 occurrences:
+; 22 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/isocline.c.ll
 ; php/optimized/ir_check.ll
 ; php/optimized/pcre2_jit_compile.ll
@@ -21,7 +23,7 @@
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -74
   %3 = icmp ult i8 %2, 5
@@ -29,7 +31,12 @@ entry:
   ret i1 %4
 }
 
-; 111 occurrences:
+; 122 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/ipvfuture_rule.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/src.ll
 ; cmake/optimized/archive_read_support_format_ar.c.ll
 ; cmake/optimized/cmParsePHPCoverage.cxx.ll
 ; folly/optimized/AsyncFdSocket.cpp.ll
@@ -47,15 +54,20 @@ entry:
 ; icu/optimized/ucnvhz.ll
 ; icu/optimized/writesrc.ll
 ; libquic/optimized/json_parser.cc.ll
+; libwebp/optimized/image_dec.c.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/scsi_error.ll
 ; linux/optimized/trackpoint.ll
 ; linux/optimized/vpd.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
+; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/ErrnoChecker.cpp.ll
 ; llvm/optimized/ExprEngine.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/NSErrorChecker.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/StringRef.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFile.cpp.ll
@@ -68,6 +80,7 @@ entry:
 ; openspiel/optimized/chess_board.cc.ll
 ; openusd/optimized/mvref_common.c.ll
 ; pbrt-v4/optimized/image.cpp.ll
+; php/optimized/decode.ll
 ; php/optimized/image.ll
 ; pyo3-rs/optimized/249pdmmr5286g8h9.ll
 ; qoi/optimized/qoi.ll
@@ -150,6 +163,21 @@ entry:
   ret i1 %4
 }
 
+; 5 occurrences:
+; boost/optimized/format_args.ll
+; boost/optimized/pct_format.ll
+; boost/optimized/port_rule.ll
+; boost/optimized/replacement_field_rule.ll
+; rocksdb/optimized/string_util.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
+entry:
+  %2 = add i8 %1, -54
+  %3 = icmp ult i8 %2, -6
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
+}
+
 ; 8 occurrences:
 ; jemalloc/optimized/tsd.ll
 ; jemalloc/optimized/tsd.pic.ll
@@ -172,7 +200,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i8 %1) #0 {
 entry:
-  %2 = add i8 %1, -1
+  %2 = add i8 %1, 1
   %3 = icmp sgt i8 %2, -1
   %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
@@ -192,7 +220,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000038(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -8
   %3 = icmp ne i8 %2, 48

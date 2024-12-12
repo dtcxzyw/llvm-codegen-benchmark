@@ -23,30 +23,28 @@ func0000000000000005:                   # @func0000000000000005
 	vpmovm2b	%k0, %xmm0
 	retq
 .LCPI3_0:
-	.zero	16,15
-func0000000000000008:                   # @func0000000000000008
-	vpsllw	$7, %xmm1, %xmm1
-	vpmovb2m	%xmm1, %k1
-	vmovdqu8	.LCPI3_0(%rip), %xmm2 {%k1}     # xmm2 {%k1} = [15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15]
-	vpcmpnleub	%xmm0, %xmm2, %k0
-	vpmovm2b	%k0, %xmm0
-	retq
-.LCPI4_0:
 	.zero	16,1
 func000000000000000a:                   # @func000000000000000a
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
-	vmovdqu8	.LCPI4_0(%rip), %xmm2 {%k1}     # xmm2 {%k1} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vmovdqu8	.LCPI3_0(%rip), %xmm2 {%k1}     # xmm2 {%k1} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vpcmpgtb	%xmm0, %xmm2, %xmm0
 	retq
-.LCPI5_0:
+.LCPI4_0:
 	.zero	16,12
 func000000000000000c:                   # @func000000000000000c
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
-	vmovdqu8	.LCPI5_0(%rip), %xmm2 {%k1}     # xmm2 {%k1} = [12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12]
+	vmovdqu8	.LCPI4_0(%rip), %xmm2 {%k1}     # xmm2 {%k1} = [12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12]
 	vpcmpeqb	%xmm0, %xmm2, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	retq
+func0000000000000008:                   # @func0000000000000008
+	vpsllw	$7, %xmm1, %xmm1
+	vpmovb2m	%xmm1, %k0
+	vpcmpnleub	%xmm0, %xmm2, %k1
+	kandnw	%k1, %k0, %k0
+	vpmovm2b	%k0, %xmm0
 	retq
 func0000000000000006:                   # @func0000000000000006
 	vpsllw	$7, %xmm1, %xmm1

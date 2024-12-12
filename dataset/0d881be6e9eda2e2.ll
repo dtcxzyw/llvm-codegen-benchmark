@@ -29,7 +29,11 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 6 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; spike/optimized/kmmwt2_u.ll
 ; Function Attrs: nounwind
@@ -59,7 +63,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65535
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = add nsw i64 %3, 32768
   ret i64 %4
 }

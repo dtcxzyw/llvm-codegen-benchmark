@@ -1,12 +1,12 @@
 
-%"struct.std::pair.2486414" = type { %"class.std::__cxx11::basic_string.2486415", ptr }
-%"class.std::__cxx11::basic_string.2486415" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2486416", i64, %union.anon.9.2486417 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2486416" = type { ptr }
-%union.anon.9.2486417 = type { i64, [8 x i8] }
-%class.QString.3259811 = type { %struct.QArrayDataPointer.5.3259812 }
-%struct.QArrayDataPointer.5.3259812 = type { ptr, ptr, i64 }
+%"struct.std::pair.2601858" = type { %"class.std::__cxx11::basic_string.2601859", ptr }
+%"class.std::__cxx11::basic_string.2601859" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860", i64, %union.anon.9.2601861 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860" = type { ptr }
+%union.anon.9.2601861 = type { i64, [8 x i8] }
+%class.QString.3450596 = type { %struct.QArrayDataPointer.5.3450597 }
+%struct.QArrayDataPointer.5.3450597 = type { ptr, ptr, i64 }
 
-; 207 occurrences:
+; 211 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
@@ -15,6 +15,14 @@
 ; arrow/optimized/key_value_metadata.cc.ll
 ; arrow/optimized/registry.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/test_system.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; cmake/optimized/cmAuxSourceDirectoryCommand.cxx.ll
@@ -125,8 +133,6 @@
 ; nix/optimized/print-ambiguous.ll
 ; nix/optimized/shared.ll
 ; nix/optimized/value-to-xml.ll
-; node/optimized/libnode.node_process_object.ll
-; node/optimized/libnode.node_report.ll
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/command_line_parser.cpp.ll
 ; opencv/optimized/function.pb.cc.ll
@@ -148,7 +154,6 @@
 ; openusd/optimized/sdffilter.cpp.ll
 ; openusd/optimized/textFileFormat.tab.cpp.ll
 ; openusd/optimized/textParserHelpers.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/helpers.cc.ll
 ; protobuf/optimized/message_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
@@ -212,16 +217,15 @@
 ; yosys/optimized/viz.ll
 ; z3/optimized/algebraic_numbers.cpp.ll
 ; z3/optimized/basic_cmds.cpp.ll
-; z3/optimized/smtlib_frontend.cpp.ll
 ; z3/optimized/statistics.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000009a(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, i64 %4, i64 %3
-  %7 = getelementptr nusw %"struct.std::pair.2486414", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.std::pair.2601858", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -235,7 +239,7 @@ entry:
 ; rocksdb/optimized/forward_iterator.cc.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000000aa(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
@@ -245,16 +249,33 @@ entry:
   ret ptr %7
 }
 
-; 1 occurrences:
-; wireshark/optimized/decode_as_delegate.cpp.ll
+; 5 occurrences:
+; llvm/optimized/RangeConstraintManager.cpp.ll
+; llvm/optimized/Record.cpp.ll
+; node/optimized/libnode.node_process_object.ll
+; node/optimized/libnode.node_report.ll
+; z3/optimized/smtlib_frontend.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000009b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, i64 %4, i64 %3
-  %7 = getelementptr %class.QString.3259811, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw ptr, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 1 occurrences:
+; wireshark/optimized/decode_as_delegate.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000098(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 2
+  %4 = or disjoint i64 %2, 1
+  %5 = icmp slt i32 %1, 0
+  %6 = select i1 %5, i64 %4, i64 %3
+  %7 = getelementptr %class.QString.3450596, ptr %0, i64 %6
   ret ptr %7
 }
 

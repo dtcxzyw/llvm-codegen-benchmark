@@ -34,7 +34,7 @@ func0000000000000025:                   # @func0000000000000025
 func0000000000000014:                   # @func0000000000000014
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI5_0:
@@ -57,7 +57,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$3, %xmm1, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI8_0:
@@ -73,7 +73,7 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000001:                   # @func0000000000000001
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI9_0(%rip){1to4}, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI10_0:
@@ -88,13 +88,13 @@ func000000000000000d:                   # @func000000000000000d
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$3, %xmm1, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func000000000000002c:                   # @func000000000000002c
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$2, %xmm1, %xmm2
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -103,13 +103,13 @@ func000000000000002c:                   # @func000000000000002c
 func0000000000000004:                   # @func0000000000000004
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI13_0(%rip){1to4}, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000003:                   # @func0000000000000003
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm1, %xmm2
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -132,6 +132,6 @@ func0000000000000035:                   # @func0000000000000035
 func000000000000002f:                   # @func000000000000002f
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI17_0(%rip){1to4}, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

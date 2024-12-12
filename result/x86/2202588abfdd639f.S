@@ -1,4 +1,4 @@
-func0000000000000050:                   # @func0000000000000050
+func0000000000000090:                   # @func0000000000000090
 	addl	$-48, %esi
 	leal	201(%rdi), %ecx
 	leal	208(%rdi), %eax
@@ -24,20 +24,20 @@ func0000000000000010:                   # @func0000000000000010
 	cmpl	$4, %esi
 	adcl	$1, %eax
 	retq
-func0000000000000053:                   # @func0000000000000053
+func0000000000000093:                   # @func0000000000000093
 	movl	%edi, %eax
 	addl	$-53, %esi
 	cmpl	$2, %esi
 	adcl	$1, %eax
 	retq
-func00000000000000c5:                   # @func00000000000000c5
+func0000000000000185:                   # @func0000000000000185
 	xorl	%eax, %eax
 	cmpl	$7, %esi
 	sete	%al
 	shll	$4, %eax
 	leal	1(%rdi,%rax), %eax
 	retq
-func0000000000000051:                   # @func0000000000000051
+func0000000000000091:                   # @func0000000000000091
 	addl	$-69, %esi
 	xorl	%eax, %eax
 	cmpl	$2, %esi
@@ -45,7 +45,7 @@ func0000000000000051:                   # @func0000000000000051
 	leal	(%rax,%rax,2), %eax
 	leal	-3(%rdi,%rax), %eax
 	retq
-func0000000000000052:                   # @func0000000000000052
+func0000000000000092:                   # @func0000000000000092
 	movl	%edi, %eax
 	addl	$-2, %esi
 	cmpl	$-3, %esi

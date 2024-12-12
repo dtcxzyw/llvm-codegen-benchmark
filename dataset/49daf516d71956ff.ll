@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000508(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -58
   %4 = icmp ult i64 %3, -10
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 9
   %4 = icmp ult i64 %3, 19
@@ -27,7 +27,7 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, -1
   %4 = icmp eq i64 %0, %1

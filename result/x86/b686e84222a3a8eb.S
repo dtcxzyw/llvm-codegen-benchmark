@@ -70,6 +70,11 @@ func000000000000003e:                   # @func000000000000003e
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
+func000000000000001f:                   # @func000000000000001f
+	imulq	$3600, %rdx, %rax               # imm = 0xE10
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
 func0000000000000017:                   # @func0000000000000017
 	imulq	$1000000, %rdx, %rax            # imm = 0xF4240
 	addq	%rdi, %rax

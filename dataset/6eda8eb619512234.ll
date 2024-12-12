@@ -1,7 +1,7 @@
 
-%union.YYSTYPE.2485221 = type { i64 }
-%struct.rb_code_location_struct.2486232 = type { %struct.rb_code_position_struct.2486233, %struct.rb_code_position_struct.2486233 }
-%struct.rb_code_position_struct.2486233 = type { i32, i32 }
+%union.YYSTYPE.2600710 = type { i64 }
+%struct.rb_code_location_struct.2601676 = type { %struct.rb_code_position_struct.2601677, %struct.rb_code_position_struct.2601677 }
+%struct.rb_code_position_struct.2601677 = type { i32, i32 }
 
 ; 10 occurrences:
 ; postgres/optimized/bootparse.ll
@@ -19,12 +19,13 @@ define ptr @func0000000000000004(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = sub nsw i64 1, %2
-  %4 = getelementptr %union.YYSTYPE.2485221, ptr %0, i64 %3
+  %4 = getelementptr %union.YYSTYPE.2600710, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 54 occurrences:
+; 43 occurrences:
 ; arrow/optimized/csx_converter.cc.ll
+; boost/optimized/area.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; cmake/optimized/cmCommandArgumentParser.cxx.ll
 ; cmake/optimized/cmDependsJavaParser.cxx.ll
@@ -46,21 +47,9 @@ entry:
 ; graphviz/optimized/grammar.c.ll
 ; graphviz/optimized/htmlparse.c.ll
 ; hdf5/optimized/H5LTparse.c.ll
-; icu/optimized/ucnv.ll
 ; icu/optimized/ucnvmbcs.ll
 ; jq/optimized/parser.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVInstructionSelector.cpp.ll
-; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
-; llvm/optimized/X86InstructionSelector.cpp.ll
 ; nix/optimized/parser-tab.ll
-; openusd/optimized/openexr-c.c.ll
 ; php/optimized/encode.ll
 ; php/optimized/json_parser.ll
 ; php/optimized/phpdbg_parser.ll
@@ -83,7 +72,30 @@ define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %struct.rb_code_location_struct.2486232, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.rb_code_location_struct.2601676, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 13 occurrences:
+; boost/optimized/src.ll
+; icu/optimized/ucnv.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVInstructionSelector.cpp.ll
+; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
+; llvm/optimized/X86InstructionSelector.cpp.ll
+; openusd/optimized/openexr-c.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
+entry:
+  %2 = sext i8 %1 to i64
+  %3 = sub nsw i64 14, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

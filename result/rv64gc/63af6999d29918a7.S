@@ -2,7 +2,7 @@ func0000000000000013:                   # @func0000000000000013
 	lui	a3, 16
 	addi	a3, a3, -256
 	and	a2, a2, a3
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	srliw	a1, a1, 31
 	addw	a0, a0, a1
 	ret

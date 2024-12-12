@@ -9,44 +9,44 @@
 ; minetest/optimized/clouds.cpp.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = sub nsw i32 0, %2
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; minetest/optimized/clouds.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = sub nsw i32 0, %2
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; minetest/optimized/clouds.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000027(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = sub nsw i32 0, %2
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = sub nsw i32 0, %2
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
@@ -58,22 +58,22 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = sub nsw i32 0, %2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000ac(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = sub nsw i32 1, %2
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
@@ -81,33 +81,22 @@ entry:
 ; linux/optimized/ff-memless.ll
 ; linux/optimized/sock_reuseport.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = sub nsw i32 0, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/intel_guc_submission.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = sub nsw i32 2048, %2
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; linux/optimized/intel_guc_submission.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i32
-  %3 = sub nsw i32 2048, %2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 

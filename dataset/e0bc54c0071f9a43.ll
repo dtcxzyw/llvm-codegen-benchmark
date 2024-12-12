@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -106
   %4 = icmp ult i32 %3, 3
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; nuttx/optimized/lib_strptime.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000446(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -10
   %4 = icmp ult i32 %3, -19
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000546(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001486(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -10
   %4 = icmp ult i32 %3, -19

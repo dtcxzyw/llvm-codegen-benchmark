@@ -6,7 +6,7 @@
 ; ruby/optimized/gc.ll
 ; wireshark/optimized/packet-lapdm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32768
   %3 = icmp eq i32 %2, 0
@@ -22,7 +22,7 @@ entry:
 ; linux/optimized/rw.ll
 ; slurm/optimized/opt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4194304
   %3 = icmp eq i32 %2, 0
@@ -35,10 +35,10 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000030c(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %2, 2
+  %3 = icmp samesign ugt i32 %2, 2
   %4 = and i16 %0, 2
   %5 = icmp ne i16 %4, 0
   %6 = select i1 %5, i1 %3, i1 false
@@ -49,7 +49,7 @@ entry:
 ; linux/optimized/intel_pps.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 67108864
   %3 = icmp ne i32 %2, 0
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/neighbour.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp ne i32 %2, 0
@@ -77,7 +77,7 @@ entry:
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000281(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65528
   %3 = icmp eq i32 %2, 0

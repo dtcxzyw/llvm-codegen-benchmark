@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 52 occurrences:
 ; clamav/optimized/rarvm.cpp.ll
 ; git/optimized/date.ll
 ; git/optimized/dir.ll
@@ -14,13 +14,13 @@
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/scsi_scan.ll
-; linux/optimized/tx.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/AArch64Subtarget.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/RISCVTargetParser.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; mitsuba3/optimized/func.cpp.ll
 ; msdfgen/optimized/main.cpp.ll
@@ -31,7 +31,6 @@
 ; openspiel/optimized/spiel.cc.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
-; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/zic.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; qoi/optimized/qoi.ll

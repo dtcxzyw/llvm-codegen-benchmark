@@ -4,13 +4,13 @@ func0000000000000001:                   # @func0000000000000001
 	testw	%di, %di
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%esi, %ecx
 	testw	%di, %di
 	movl	$32, %eax
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movl	%esi, %ecx
 	movzwl	%di, %eax
 	cmpl	$1000, %eax                     # imm = 0x3E8

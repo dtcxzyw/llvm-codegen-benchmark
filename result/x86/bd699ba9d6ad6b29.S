@@ -1,4 +1,4 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001e1:                   # @func00000000000001e1
 	andl	$1023, %esi                     # imm = 0x3FF
 	addl	%edi, %esi
 	cmpl	$640, %esi                      # imm = 0x280

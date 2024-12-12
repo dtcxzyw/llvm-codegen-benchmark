@@ -34,18 +34,24 @@ func0000000000000019:                   # @func0000000000000019
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	sltiu	a1, a1, 8
 	sext.w	a0, a0
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
+func0000000000000011:                   # @func0000000000000011
+	sltiu	a1, a1, 9
+	sext.w	a0, a0
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	ret
 func0000000000000018:                   # @func0000000000000018
-	bnez	a1, .LBB6_2
+	bnez	a1, .LBB7_2
 	li	a0, -1
 	srli	a0, a0, 32
 	ret
-.LBB6_2:
+.LBB7_2:
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret

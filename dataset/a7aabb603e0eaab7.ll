@@ -1,5 +1,6 @@
 
-; 23 occurrences:
+; 24 occurrences:
+; boost/optimized/alloc_lib.ll
 ; clamav/optimized/sigtool.c.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; folly/optimized/SimpleSimdStringUtils.cpp.ll
@@ -11,10 +12,10 @@
 ; linux/optimized/init_64.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/ioremap.ll
-; llvm/optimized/MCAsmStreamer.cpp.ll
 ; llvm/optimized/MicrosoftDemangle.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH64.cc.ll
 ; msgpack/optimized/class_intrusive.cpp.ll

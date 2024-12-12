@@ -5,7 +5,7 @@
 ; postgres/optimized/preproc.ll
 ; ruby/optimized/parse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i16, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 2
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i64, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -8

@@ -22,6 +22,12 @@ func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 5
 	or	a0, a0, a1
 	ret
+func0000000000000031:                   # @func0000000000000031
+	srli	a1, a1, 16
+	snez	a1, a1
+	slli	a1, a1, 4
+	or	a0, a0, a1
+	ret
 func0000000000000009:                   # @func0000000000000009
 	srli	a1, a1, 12
 	lui	a2, 80
@@ -44,9 +50,10 @@ func0000000000000008:                   # @func0000000000000008
 	or	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
-	slti	a1, a1, 0
-	xori	a1, a1, 1
-	addi	a1, a1, 1
+	slti	a1, a1, 2
+	li	a2, -2
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, 3
 	or	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015

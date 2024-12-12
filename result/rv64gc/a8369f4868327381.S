@@ -5,13 +5,6 @@ func000000000000007a:                   # @func000000000000007a
 	add	a0, a0, a1
 	srliw	a0, a0, 8
 	ret
-func0000000000000043:                   # @func0000000000000043
-	lui	a2, 3
-	addi	a2, a2, 1
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	srliw	a0, a0, 18
-	ret
 func0000000000000028:                   # @func0000000000000028
 	li	a2, 29
 	mul	a1, a1, a2
@@ -31,12 +24,6 @@ func0000000000000022:                   # @func0000000000000022
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 16
-	ret
-func000000000000007b:                   # @func000000000000007b
-	li	a2, 467
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	srliw	a0, a0, 12
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a2, 65536

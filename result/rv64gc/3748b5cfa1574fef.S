@@ -43,18 +43,3 @@ func0000000000000030:                   # @func0000000000000030
 	addw	a0, a0, a1
 	andi	a0, a0, -128
 	ret
-func0000000000000013:                   # @func0000000000000013
-	sext.w	a1, a1
-	li	a2, 96
-	bltu	a1, a2, .LBB5_2
-	li	a1, 1900
-	add	a0, a0, a1
-	slli	a0, a0, 48
-	srli	a0, a0, 48
-	ret
-.LBB5_2:
-	li	a1, 2000
-	add	a0, a0, a1
-	slli	a0, a0, 48
-	srli	a0, a0, 48
-	ret

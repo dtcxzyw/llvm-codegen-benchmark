@@ -70,3 +70,9 @@ func0000000000000075:                   # @func0000000000000075
 	sub	a0, a1, a0
 	addi	a0, a0, 8
 	ret
+func00000000000000cc:                   # @func00000000000000cc
+	slli	a1, a1, 2
+	slli	a0, a0, 2
+	sub	a0, a1, a0
+	addi	a0, a0, 4
+	ret

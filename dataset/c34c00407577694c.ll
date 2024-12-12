@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/msatSort.c.ll
 ; cmake/optimized/cmStringCommand.cxx.ll
-; opencv/optimized/calibration_handeye.cpp.ll
 ; opencv/optimized/digits_svm.cpp.ll
 ; php/optimized/uuencode.ll
 ; Function Attrs: nounwind

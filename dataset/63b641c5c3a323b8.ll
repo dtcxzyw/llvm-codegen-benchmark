@@ -36,13 +36,13 @@
 define i8 @func0000000000000002(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = and i32 %3, %1
-  %5 = or i32 %4, %0
+  %4 = and i32 %1, %3
+  %5 = or i32 %0, %4
   %6 = trunc nuw i32 %5 to i8
   ret i8 %6
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libpng/optimized/pngrutil.c.ll
@@ -52,6 +52,7 @@ entry:
 ; llvm/optimized/Interp.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
+; lvgl/optimized/lv_canvas.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
 ; openjdk/optimized/ByteBinary2Bit.ll
@@ -64,8 +65,8 @@ entry:
 define i8 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = and i32 %3, %1
-  %5 = or i32 %4, %0
+  %4 = and i32 %1, %3
+  %5 = or i32 %0, %4
   %6 = trunc i32 %5 to i8
   ret i8 %6
 }

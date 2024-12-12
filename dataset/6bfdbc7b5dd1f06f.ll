@@ -3,7 +3,7 @@
 ; icu/optimized/ucnvmbcs.ll
 ; ruby/optimized/prism.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -48
   %3 = zext nneg i8 %2 to i64
@@ -25,7 +25,7 @@ entry:
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i8 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 1
   %3 = zext nneg i8 %2 to i64
@@ -38,7 +38,7 @@ entry:
 ; linux/optimized/vmscan.ll
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000261(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nuw i8 %1, 4
   %3 = zext i8 %2 to i64
@@ -57,7 +57,7 @@ entry:
 ; openspiel/optimized/spiel.cc.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = zext i8 %2 to i64
@@ -66,7 +66,8 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; linux/optimized/nl80211.ll
@@ -75,12 +76,12 @@ entry:
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; openspiel/optimized/history_tree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = zext i8 %2 to i64
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -94,7 +95,7 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = zext i8 %2 to i64
@@ -109,7 +110,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = zext i8 %2 to i64
@@ -134,7 +135,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_edid.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i8 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -1
   %3 = zext nneg i8 %2 to i64
@@ -146,12 +147,12 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/nl80211.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -4
   %3 = zext i8 %2 to i64
   %4 = add nuw nsw i64 %0, 2
-  %5 = icmp ugt i64 %4, %3
+  %5 = icmp samesign ugt i64 %4, %3
   ret i1 %5
 }
 

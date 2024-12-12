@@ -7,8 +7,8 @@ func0000000000000050:                   # @func0000000000000050
 	sub	a0, a0, a1
 	addi	a0, a0, -8
 	ret
-func0000000000000058:                   # @func0000000000000058
-	srai	a1, a1, 30
+func000000000000005b:                   # @func000000000000005b
+	srai	a1, a1, 32
 	sub	a0, a0, a1
-	addi	a0, a0, -4
+	addi	a0, a0, 2
 	ret

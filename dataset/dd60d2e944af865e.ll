@@ -13,7 +13,11 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 22 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_distance_measure.ll
 ; entt/optimized/any.cpp.ll
 ; entt/optimized/meta_any.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -31,7 +35,6 @@ entry:
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/metadata.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, double %2) #0 {
@@ -75,6 +78,20 @@ entry:
   ret i1 %5
 }
 
+; 4 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; openblas/optimized/dlaln2.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i1 %1, double %2) #0 {
+entry:
+  %3 = fcmp ogt double %2, 0x3D719799812DEA11
+  %4 = select i1 %3, i1 %1, i1 false
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; casadi/optimized/fmu2.cpp.ll
 ; ceres/optimized/array_utils.cc.ll
@@ -93,18 +110,6 @@ entry:
 define i1 @func0000000000000001(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp uno double %2, 0.000000e+00
-  %4 = select i1 %3, i1 %1, i1 false
-  %5 = select i1 %4, i1 %0, i1 false
-  ret i1 %5
-}
-
-; 2 occurrences:
-; meshlab/optimized/filter_plymc.cpp.ll
-; openblas/optimized/dlaln2.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, double %2) #0 {
-entry:
-  %3 = fcmp ogt double %2, 0xBD71979980000000
   %4 = select i1 %3, i1 %1, i1 false
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5

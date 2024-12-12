@@ -1,9 +1,10 @@
 
-; 262 occurrences:
+; 261 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; arrow/optimized/table.cc.ll
+; boost/optimized/topology.ll
 ; ceres/optimized/manifold.cc.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
@@ -136,13 +137,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -259,6 +257,7 @@
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/test_cell.ll
 ; yosys/optimized/torder.ll
+; yosys/optimized/verilog_backend.ll
 ; zxing/optimized/ODCode128Writer.cpp.ll
 ; zxing/optimized/ODWriterHelper.cpp.ll
 ; zxing/optimized/PDFEncoder.cpp.ll

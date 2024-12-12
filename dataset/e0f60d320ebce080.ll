@@ -22,14 +22,8 @@ entry:
   ret double %3
 }
 
-; 9 occurrences:
+; 3 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
-; gromacs/optimized/nr_jacobi.cpp.ll
-; gromacs/optimized/nrjac.cpp.ll
-; opencv/optimized/edge_drawing.cpp.ll
-; opencv/optimized/p3p.cpp.ll
-; openusd/optimized/matrix4d.cpp.ll
-; openusd/optimized/matrix4f.cpp.ll
 ; slurm/optimized/controller.ll
 ; tinyrenderer/optimized/our_gl.cpp.ll
 ; Function Attrs: nounwind
@@ -56,6 +50,21 @@ entry:
 define double @func0000000000000001(double %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
+  %3 = select i1 %2, double %0, double 0.000000e+00
+  ret double %3
+}
+
+; 6 occurrences:
+; gromacs/optimized/nr_jacobi.cpp.ll
+; gromacs/optimized/nrjac.cpp.ll
+; opencv/optimized/edge_drawing.cpp.ll
+; opencv/optimized/p3p.cpp.ll
+; openusd/optimized/matrix4d.cpp.ll
+; openusd/optimized/matrix4f.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000014(double %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 4
   %3 = select i1 %2, double %0, double 0.000000e+00
   ret double %3
 }

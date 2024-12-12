@@ -6,3 +6,11 @@ func0000000000000000:                   # @func0000000000000000
 	leal	-1(%rsi), %eax
 	imull	%edi, %eax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	leal	20(%rsi), %eax
+	imull	%edi, %eax
+	retq
+func000000000000004a:                   # @func000000000000004a
+	leal	20(%rsi), %eax
+	imull	%edi, %eax
+	retq

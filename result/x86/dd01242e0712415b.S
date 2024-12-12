@@ -61,6 +61,11 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	%rdx, %rsi
 	adcq	$0, %rax
 	retq
+func00000000000000c0:                   # @func00000000000000c0
+	movq	%rdi, %rax
+	cmpq	%rsi, %rdx
+	adcq	$0, %rax
+	retq
 func000000000000002b:                   # @func000000000000002b
 	movq	%rdi, %rax
 	cmpq	%rsi, %rdx
@@ -106,6 +111,11 @@ func0000000000000009:                   # @func0000000000000009
 	sete	%al
 	addq	%rdi, %rax
 	retq
+func00000000000000a2:                   # @func00000000000000a2
+	movq	%rdi, %rax
+	cmpq	%rdx, %rsi
+	adcq	$0, %rax
+	retq
 func000000000000004b:                   # @func000000000000004b
 	movq	%rdi, %rax
 	cmpq	%rdx, %rsi
@@ -133,6 +143,22 @@ func0000000000000041:                   # @func0000000000000041
 	cmpq	%rsi, %rdx
 	adcq	$0, %rax
 	retq
+func00000000000000a3:                   # @func00000000000000a3
+	movq	%rdi, %rax
+	cmpq	%rdx, %rsi
+	adcq	$0, %rax
+	retq
+func00000000000000a0:                   # @func00000000000000a0
+	movq	%rdi, %rax
+	cmpq	%rdx, %rsi
+	adcq	$0, %rax
+	retq
+func0000000000000062:                   # @func0000000000000062
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	setne	%al
+	addq	%rdi, %rax
+	retq
 func0000000000000063:                   # @func0000000000000063
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
@@ -144,6 +170,11 @@ func000000000000003a:                   # @func000000000000003a
 	cmpq	%rdx, %rsi
 	setle	%al
 	addq	%rdi, %rax
+	retq
+func00000000000000c3:                   # @func00000000000000c3
+	movq	%rdi, %rax
+	cmpq	%rsi, %rdx
+	adcq	$0, %rax
 	retq
 func000000000000000b:                   # @func000000000000000b
 	xorl	%eax, %eax
@@ -162,6 +193,11 @@ func0000000000000032:                   # @func0000000000000032
 	cmpq	%rdx, %rsi
 	setl	%al
 	addq	%rdi, %rax
+	retq
+func00000000000000cb:                   # @func00000000000000cb
+	movq	%rdi, %rax
+	cmpq	%rdx, %rsi
+	sbbq	$-1, %rax
 	retq
 func0000000000000051:                   # @func0000000000000051
 	xorl	%eax, %eax

@@ -43,13 +43,18 @@ func0000000000000008:                   # @func0000000000000008
 	leal	-1(%rdi), %eax
 	shlq	$49, %rax
 	retq
+func000000000000001b:                   # @func000000000000001b
+	movl	%edi, %eax
+	shlq	$4, %rax
+	addq	$16, %rax
+	retq
+func0000000000000017:                   # @func0000000000000017
+	movl	%edi, %eax
+	leaq	8(,%rax,8), %rax
+	retq
 func0000000000000012:                   # @func0000000000000012
 	leal	1(%rdi), %eax
 	shlq	$32, %rax
-	retq
-func000000000000001b:                   # @func000000000000001b
-	movl	%edi, %eax
-	leaq	3692(%rax,%rax), %rax
 	retq
 func000000000000001c:                   # @func000000000000001c
 	leal	64913(%rdi), %eax
@@ -66,9 +71,4 @@ func0000000000000006:                   # @func0000000000000006
 func000000000000000e:                   # @func000000000000000e
 	leal	-1(%rdi), %eax
 	shlq	$58, %rax
-	retq
-func0000000000000017:                   # @func0000000000000017
-	movl	%edi, %eax
-	shlq	$4, %rax
-	addq	$16, %rax
 	retq

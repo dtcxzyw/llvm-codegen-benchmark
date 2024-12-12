@@ -1,9 +1,22 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mul	v1.8h, v1.8h, v3.8h
-	mul	v0.8h, v0.8h, v2.8h
-	cmeq	v1.8h, v1.8h, #0
-	cmeq	v0.8h, v0.8h, #0
-	uzp1	v0.16b, v0.16b, v1.16b
+	mul	w8, w0, w1
+	tst	w8, #0xffff
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000044:                   // @func0000000000000044
+// %bb.0:                               // %entry
+	mul	w8, w0, w1
+	tst	w8, #0xff00
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000048:                   // @func0000000000000048
+// %bb.0:                               // %entry
+	mul	w8, w0, w1
+	ubfx	w8, w8, #8, #8
+	cmp	w8, #252
+	cset	w0, hi
 	ret
                                         // -- End function

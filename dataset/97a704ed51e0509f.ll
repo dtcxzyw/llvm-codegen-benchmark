@@ -47,14 +47,15 @@ entry:
 define i16 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 16960
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
-; linux/optimized/utownerid.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; quantlib/optimized/date.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind
@@ -72,7 +73,7 @@ entry:
 define i16 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 65185
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -89,13 +90,15 @@ entry:
   ret i16 %4
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; boost/optimized/init_from_settings.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; graphviz/optimized/gvrender_core_dot.c.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/ushape.ll
+; linux/optimized/ff-memless.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/pci.ll
 ; wireshark/optimized/packet-reload.c.ll
@@ -104,7 +107,7 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func000000000000003c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 64
+  %2 = add nuw nsw i32 %1, 65488
   %3 = add nuw nsw i32 %2, %0
   %4 = trunc i32 %3 to i16
   ret i16 %4
@@ -118,7 +121,7 @@ entry:
 define i16 @func000000000000003f(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 3
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
@@ -164,7 +167,7 @@ entry:
 define i16 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 65535
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }

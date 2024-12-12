@@ -22,7 +22,7 @@
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 9223372036854775806
   %4 = add nsw i64 %3, -1
@@ -35,7 +35,7 @@ entry:
 ; linux/optimized/i915_gem_stolen.ll
 ; qemu/optimized/fdt_sw.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4
   %4 = add nsw i64 %3, 4
@@ -72,17 +72,15 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
-; linux/optimized/badblocks.ll
-; openexr/optimized/ImfHuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %3, 4
   %5 = add nuw nsw i64 %4, %1
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp samesign ult i64 %5, %0
   ret i1 %6
 }
 
@@ -96,11 +94,11 @@ entry:
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 34359738360
   %4 = add nuw nsw i64 %3, 16
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -109,33 +107,32 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 63
   %4 = add nsw i64 %3, -57
   %5 = add nuw nsw i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp samesign ugt i64 %5, %0
   ret i1 %6
 }
 
-; 3 occurrences:
-; linux/optimized/badblocks.ll
+; 2 occurrences:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 255
   %4 = add nuw nsw i64 %3, 6
   %5 = add nuw nsw i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp samesign ugt i64 %5, %0
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openmpi/optimized/pmix_vmem.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 9223372036787666944
   %4 = add nuw i64 %3, 67108864
@@ -156,22 +153,47 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; linux/optimized/badblocks.ll
+; openexr/optimized/ImfHuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 511
   %4 = add nuw nsw i64 %3, 1
   %5 = add nuw nsw i64 %4, %1
+  %6 = icmp ult i64 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; linux/optimized/badblocks.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e1(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 511
+  %4 = add nuw nsw i64 %3, 1
+  %5 = add nuw nsw i64 %1, %4
   %6 = icmp eq i64 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; linux/optimized/badblocks.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e8(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 511
+  %4 = add nuw nsw i64 %3, 1
+  %5 = add nuw nsw i64 %4, %1
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/i915_gem_stolen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000055(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a5(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 18014398509481980
   %4 = add nsw i64 %3, -1

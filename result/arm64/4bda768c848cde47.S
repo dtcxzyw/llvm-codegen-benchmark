@@ -1,65 +1,36 @@
-func00000000000000f1:                   // @func00000000000000f1
+func00000000000001e1:                   // @func00000000000001e1
 // %bb.0:                               // %entry
-	movi	v3.4s, #1
-	mov	w8, #1                          // =0x1
-	fneg	v3.8h, v3.8h
-	umull2	v4.2d, v2.4s, v3.4s
-	umull	v2.2d, v2.2s, v3.2s
-	movi	v3.2d, #0xffffffffffffffff
-	uzp2	v2.4s, v2.4s, v4.4s
-	usra	v3.4s, v2.4s, #15
-	dup	v2.2d, x8
-	ushll	v4.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
-	cmeq	v0.2d, v0.2d, v4.2d
-	cmeq	v1.2d, v1.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, #32769                      // =0x8001
+	add	x9, x0, #1
+	movk	w8, #32768, lsl #16
+	umull	x8, w1, w8
+	lsr	x8, x8, #47
+	sub	w8, w8, #1
+	cmp	x9, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000001f1:                   // @func00000000000001f1
+func00000000000003e1:                   // @func00000000000003e1
 // %bb.0:                               // %entry
 	mov	w8, #43691                      // =0xaaab
+	add	x9, x0, #1
 	movk	w8, #43690, lsl #16
-	dup	v3.4s, w8
-	mov	w8, #1                          // =0x1
-	umull2	v4.2d, v2.4s, v3.4s
-	umull	v2.2d, v2.2s, v3.2s
-	movi	v3.4s, #1
-	uzp2	v2.4s, v2.4s, v4.4s
-	usra	v3.4s, v2.4s, #1
-	dup	v2.2d, x8
-	ushll	v4.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
-	cmeq	v0.2d, v0.2d, v4.2d
-	cmeq	v1.2d, v1.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	umull	x8, w1, w8
+	lsr	x8, x8, #33
+	add	w8, w8, #1
+	cmp	x9, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000b1:                   // @func00000000000000b1
+func0000000000000161:                   // @func0000000000000161
 // %bb.0:                               // %entry
 	mov	w8, #43691                      // =0xaaab
+	add	x9, x0, #1
 	movk	w8, #43690, lsl #16
-	dup	v3.4s, w8
-	mov	w8, #1                          // =0x1
-	umull2	v4.2d, v2.4s, v3.4s
-	umull	v2.2d, v2.2s, v3.2s
-	movi	v3.2d, #0xffffffffffffffff
-	uzp2	v2.4s, v2.4s, v4.4s
-	usra	v3.4s, v2.4s, #2
-	dup	v2.2d, x8
-	ushll	v4.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
-	cmeq	v0.2d, v0.2d, v4.2d
-	cmeq	v1.2d, v1.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	umull	x8, w1, w8
+	lsr	x8, x8, #34
+	sub	w8, w8, #1
+	cmp	x9, x8
+	cset	w0, eq
 	ret
                                         // -- End function

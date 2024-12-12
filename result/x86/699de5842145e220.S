@@ -14,7 +14,7 @@ func0000000000000020:                   # @func0000000000000020
 	movl	%esi, %eax
 	addq	%rcx, %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -22,7 +22,7 @@ func000000000000003a:                   # @func000000000000003a
 	movl	%esi, %ecx
 	leaq	1(%rcx,%rax), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002f:                   # @func000000000000002f
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax

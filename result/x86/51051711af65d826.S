@@ -7,16 +7,9 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 func000000000000000b:                   # @func000000000000000b
 	movl	%esi, %eax
-	andl	$4096, %edx                     # imm = 0x1000
+	andl	$-32768, %edx                   # imm = 0x8000
 	orl	%edi, %edx
-	andl	$8192, %eax                     # imm = 0x2000
-	orl	%edx, %eax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	movl	%esi, %eax
-	andl	$8192, %edx                     # imm = 0x2000
-	orl	%edi, %edx
-	andl	$1, %eax
+	andl	$1023, %eax                     # imm = 0x3FF
 	orl	%edx, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001

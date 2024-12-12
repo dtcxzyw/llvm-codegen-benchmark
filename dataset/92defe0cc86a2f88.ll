@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 18 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
@@ -15,6 +15,9 @@
 ; postgres/optimized/float.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(float %0, float %1) #0 {
 entry:

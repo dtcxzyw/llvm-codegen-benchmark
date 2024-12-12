@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; git/optimized/column.ll
 ; icu/optimized/regexcmp.ll
@@ -10,7 +10,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
-; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; openjdk/optimized/MaskFill.ll
@@ -76,7 +75,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -92,7 +91,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr i64 %3, 48
   %5 = mul nsw i64 %4, %1
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -103,7 +102,7 @@ define i64 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 48
   %4 = ashr exact i64 %3, 48
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -115,7 +114,7 @@ define i64 @func0000000000000055(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 48
   %4 = ashr exact i64 %3, 48
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -127,8 +126,8 @@ define i64 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = mul nuw nsw i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -140,8 +139,8 @@ define i64 @func000000000000001f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = add nuw nsw i64 %5, %0
+  %5 = mul nuw nsw i64 %1, %4
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

@@ -18,7 +18,7 @@ entry:
   %3 = xor i64 %1, %2
   %4 = and i64 %3, 64
   %5 = icmp ne i64 %4, 0
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

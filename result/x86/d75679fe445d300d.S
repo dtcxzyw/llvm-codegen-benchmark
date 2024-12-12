@@ -13,13 +13,13 @@ func000000000000000a:                   # @func000000000000000a
 	testw	%si, %si
 	cmovlel	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	xorl	%eax, %eax
-	cmpw	$2, %si
-	cmovael	%edi, %eax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	cmpw	$4, %si
 	movl	$3, %eax
 	cmovbl	%edi, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpw	$2, %si
+	movl	$7, %eax
+	cmovael	%edi, %eax
 	retq

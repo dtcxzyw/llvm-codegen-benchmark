@@ -22,9 +22,9 @@ func0000000000000006:                   # @func0000000000000006
 	orl	%edi, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	shll	$16, %esi
-	shll	$8, %edi
-	leal	33554432(%rsi,%rdi), %eax
+	shll	$12, %esi
+	shll	$10, %edi
+	leal	1474888(%rsi,%rdi), %eax
 	retq
 func0000000000000068:                   # @func0000000000000068
 	shll	$16, %esi

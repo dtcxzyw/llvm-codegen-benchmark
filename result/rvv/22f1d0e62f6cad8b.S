@@ -7,7 +7,7 @@ func0000000000000002:                   # @func0000000000000002
 	vfcvt.f.xu.v	v10, v10
 	vfdiv.vv	v8, v10, v8
 	vmflt.vf	v10, v8, fa5
-	vmand.mm	v0, v10, v0
+	vmand.mm	v0, v0, v10
 	ret
 .LCPI1_0:
 	.quad	0x4024000000000000              # double 10

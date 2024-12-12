@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 19 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -17,6 +17,8 @@
 ; flac/optimized/bitwriter.c.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; lightgbm/optimized/config.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -42,7 +44,7 @@ entry:
 ; git/optimized/shallow.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0) #0 {
+define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 31
   %2 = and i32 %1, -32
@@ -58,7 +60,7 @@ entry:
 ; wireshark/optimized/packet-sctp.c.ll
 ; wireshark/optimized/packet-selfm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0) #0 {
+define i1 @func00000000000000c1(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 65522
   %2 = and i32 %1, 65534
@@ -69,11 +71,11 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0) #0 {
+define i1 @func0000000000000098(i32 %0) #0 {
 entry:
   %1 = add nuw i32 %0, 4096
   %2 = and i32 %1, 2139095040
-  %3 = icmp ugt i32 %2, 939524096
+  %3 = icmp samesign ugt i32 %2, 939524096
   ret i1 %3
 }
 

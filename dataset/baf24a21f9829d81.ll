@@ -9,7 +9,7 @@ define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %.tr = trunc i64 %1 to i32
   %2 = shl i32 %.tr, 2
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
@@ -27,7 +27,7 @@ define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %.tr = trunc i64 %1 to i32
   %2 = shl i32 %.tr, 3
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
@@ -38,7 +38,7 @@ define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %.tr = trunc i64 %1 to i32
   %2 = shl i32 %.tr, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
@@ -50,7 +50,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %.tr = trunc i64 %1 to i32
   %2 = shl i32 %.tr, 6
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 

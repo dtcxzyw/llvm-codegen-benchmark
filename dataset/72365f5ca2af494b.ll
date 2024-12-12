@@ -47,12 +47,13 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 1073741823
+  %2 = and i64 %1, 4294967295
   %3 = mul nuw nsw i64 %2, %0
   %4 = lshr i64 %3, 32
   %5 = trunc nuw nsw i64 %4 to i32

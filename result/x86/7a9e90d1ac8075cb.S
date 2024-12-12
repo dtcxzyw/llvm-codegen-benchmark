@@ -1,4 +1,4 @@
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	leal	-1(%rdi), %ecx
 	movzwl	%cx, %edx
 	movl	%edx, %eax

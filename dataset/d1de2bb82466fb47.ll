@@ -1,5 +1,6 @@
 
-; 14 occurrences:
+; 16 occurrences:
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; graphviz/optimized/poly.c.ll
 ; hermes/optimized/FuncSigOpts.cpp.ll
 ; hermes/optimized/Inlining.cpp.ll
@@ -14,6 +15,7 @@
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/hestonprocess.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
+; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(double %0) #0 {
 entry:

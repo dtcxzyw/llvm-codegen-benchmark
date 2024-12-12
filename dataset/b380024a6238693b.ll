@@ -19,13 +19,14 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/plaRead.c.ll
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cpython/optimized/longobject.ll
 ; linux/optimized/badblocks.ll
+; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll

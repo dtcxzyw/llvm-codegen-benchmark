@@ -13,10 +13,10 @@
 ; opencv/optimized/tracking_by_matching.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, float %1) #0 {
+define i1 @func0000000000000026(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   ret i1 %3
 }
 
@@ -27,10 +27,10 @@ entry:
 ; opencv/optimized/radial_variance_hash.cpp.ll
 ; opencv/optimized/tracker_nano.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, float %1) #0 {
+define i1 @func000000000000002a(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   ret i1 %3
 }
 

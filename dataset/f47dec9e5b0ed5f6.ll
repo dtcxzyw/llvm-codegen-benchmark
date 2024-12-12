@@ -128,12 +128,12 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/box.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000660(float %0, float %1, float %2) #0 {
+define i1 @func0000000000002664(float %0, float %1, float %2) #0 {
 entry:
-  %3 = fcmp uno float %2, 0.000000e+00
+  %3 = fcmp ueq float %2, 0x7FF0000000000000
   %4 = fcmp ueq float %1, 0x7FF0000000000000
   %5 = or i1 %4, %3
-  %6 = fcmp oeq float %0, 0x7FF0000000000000
+  %6 = fcmp ueq float %0, 0x7FF0000000000000
   %7 = or i1 %5, %6
   ret i1 %7
 }
@@ -160,19 +160,6 @@ entry:
   %4 = fcmp oeq float %1, 0x7FF0000000000000
   %5 = or i1 %4, %3
   %6 = fcmp oeq float %0, 0x7FF0000000000000
-  %7 = or i1 %6, %5
-  ret i1 %7
-}
-
-; 1 occurrences:
-; openblas/optimized/ieeeck.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000003b9c(float %0, float %1, float %2) #0 {
-entry:
-  %3 = fcmp ord float %2, 0.000000e+00
-  %4 = fcmp ord float %1, 0.000000e+00
-  %5 = or i1 %4, %3
-  %6 = fcmp ord float %0, 0.000000e+00
   %7 = or i1 %6, %5
   ret i1 %7
 }

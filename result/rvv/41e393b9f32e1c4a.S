@@ -32,21 +32,18 @@ func0000000000000020:                   # @func0000000000000020
 	li	a0, -48
 	vadd.vx	v8, v8, a0
 	ret
-func000000000000003d:                   # @func000000000000003d
-	li	a0, 100
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmacc.vx	v8, a0, v10
-	lui	a0, 262144
-	addiw	a0, a0, -1225
-	slli	a0, a0, 2
-	vadd.vx	v8, v8, a0
-	ret
 func000000000000003f:                   # @func000000000000003f
 	li	a0, 40
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	li	a0, 52
 	vadd.vx	v8, v8, a0
+	ret
+func000000000000003d:                   # @func000000000000003d
+	li	a0, 18
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v8, a0, v10
+	vadd.vi	v8, v8, 5
 	ret
 func0000000000000001:                   # @func0000000000000001
 	li	a0, 10

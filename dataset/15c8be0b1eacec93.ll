@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; cvc5/optimized/fp_word_blaster.cpp.ll
 ; linux/optimized/mtrr.ll
 ; linux/optimized/xfrm_policy.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0) #0 {
@@ -14,8 +13,7 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
-; linux/optimized/8250_exar.ll
+; 7 occurrences:
 ; linux/optimized/coalesce.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/hid-lg4ff.ll

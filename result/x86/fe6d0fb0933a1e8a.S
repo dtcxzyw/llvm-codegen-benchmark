@@ -1,12 +1,4 @@
-func00000000000000c4:                   # @func00000000000000c4
-	testq	%rdx, %rdx
-	setne	%cl
-	cmpl	$32768, %esi                    # imm = 0x8000
-	setb	%al
-	andb	%cl, %al
-	andb	%dil, %al
-	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	cmpq	$8, %rdx
 	setae	%cl
 	cmpl	$9, %esi
@@ -14,7 +6,7 @@ func0000000000000084:                   # @func0000000000000084
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testq	%rdx, %rdx
 	sete	%cl
 	testl	%esi, %esi
@@ -22,7 +14,7 @@ func0000000000000011:                   # @func0000000000000011
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	testq	%rdx, %rdx
 	sete	%cl
 	cmpl	$1000000000, %esi               # imm = 0x3B9ACA00
@@ -30,7 +22,7 @@ func000000000000001c:                   # @func000000000000001c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	testq	%rdx, %rdx
 	setne	%cl
 	cmpl	$20, %esi
@@ -38,7 +30,15 @@ func00000000000000c1:                   # @func00000000000000c1
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000184:                   # @func0000000000000184
+	testq	%rdx, %rdx
+	setne	%cl
+	cmpl	$6, %esi
+	setb	%al
+	andb	%cl, %al
+	andb	%dil, %al
+	retq
+func0000000000000084:                   # @func0000000000000084
 	cmpq	$6, %rdx
 	setb	%cl
 	cmpl	$4, %esi
@@ -46,7 +46,7 @@ func0000000000000044:                   # @func0000000000000044
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	cmpq	$10, %rdx
 	setae	%cl
 	testl	%esi, %esi

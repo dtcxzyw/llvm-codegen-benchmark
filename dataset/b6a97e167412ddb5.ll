@@ -1,7 +1,8 @@
 
-; 141 occurrences:
+; 149 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; arrow/optimized/UriNormalize.c.ll
+; boost/optimized/from_chars.ll
 ; glslang/optimized/hlslParseables.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/editconf.cpp.ll
@@ -15,19 +16,24 @@
 ; icu/optimized/putil.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libpng/optimized/pngrutil.c.ll
+; libquic/optimized/convert.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; linux/optimized/pcc.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/DXContainer.cpp.ll
 ; llvm/optimized/DeclPrinter.cpp.ll
 ; llvm/optimized/Instruction.cpp.ll
-; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/InstructionSimplify.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/StringRef.cpp.ll
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
@@ -110,6 +116,7 @@
 ; openspiel/optimized/chess_board.cc.ll
 ; openspiel/optimized/efg_game.cc.ll
 ; openusd/optimized/crateData.cpp.ll
+; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/mvref_common.c.ll
 ; openusd/optimized/prim.cpp.ll
 ; openusd/optimized/read.c.ll
@@ -122,6 +129,7 @@
 ; protobuf/optimized/text_format_decode_data.cc.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
+; pyo3-rs/optimized/249pdmmr5286g8h9.ll
 ; qoi/optimized/qoi.ll
 ; raylib/optimized/rtextures.c.ll
 ; typst-rs/optimized/avdrw26ojy6f9qt.ll
@@ -377,31 +385,33 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i8 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 7
   %3 = select i1 %2, i1 %0, i1 false
   ret i1 %3
 }
 
-; 12 occurrences:
+; 14 occurrences:
+; abc/optimized/bacNtk.c.ll
 ; clamav/optimized/chmd.c.ll
 ; eastl/optimized/EATextUtil.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/ucasemap.ll
 ; icu/optimized/ucnvbocu.ll
 ; icu/optimized/ucnvsel.ll
 ; luau/optimized/isocline.c.ll
-; rust-analyzer-rs/optimized/17y19x1rgmlymeti.ll
+; openjdk/optimized/hb-buffer.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
-; wireshark/optimized/packet-ipp.c.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i8 %1) #0 {
 entry:
-  %2 = add nsw i8 %1, -6
-  %3 = icmp ult i8 %2, 4
+  %2 = add nsw i8 %1, 16
+  %3 = icmp ult i8 %2, 5
   %4 = select i1 %3, i1 %0, i1 false
   ret i1 %4
 }
@@ -434,11 +444,22 @@ entry:
   ret i1 %3
 }
 
+; 1 occurrences:
+; wireshark/optimized/packet-ldp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, -2
+  %3 = icmp ne i8 %2, 4
+  %4 = select i1 %3, i1 %0, i1 false
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; wireshark/optimized/packet-ansi_801.c.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 1
   %3 = select i1 %2, i1 %0, i1 false
@@ -448,7 +469,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/EASprintfOrdered.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 48
   %3 = select i1 %2, i1 %0, i1 false

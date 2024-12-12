@@ -5,7 +5,7 @@
 ; spike/optimized/csrs.ll
 ; spike/optimized/vector_unit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 8
   %3 = or disjoint i64 %2, 12
@@ -17,7 +17,7 @@ entry:
 ; llvm/optimized/Minidump.cpp.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = or disjoint i64 %2, 1
@@ -25,9 +25,14 @@ entry:
   ret i1 %4
 }
 
-; 64 occurrences:
+; 110 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/process.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/unicode.cpp.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; crow/optimized/example.cpp.ll
@@ -90,8 +95,49 @@ entry:
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
+; zed-rs/optimized/0x2swxz4m93xo6c0jggy1zzvx.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/1cwzjnrfv3j054rlb5kbvkj4j.ll
+; zed-rs/optimized/1iclhw87evxdlo4w8mftuzy1q.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1y02uicosbwbida5bk0bapv74.ll
+; zed-rs/optimized/25la7m7vywfxvwku7cmlhn88p.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; zed-rs/optimized/2ouh3ql8sx6p5h4phjh0p73m4.ll
+; zed-rs/optimized/2qu3ksqe5t2g2a0ursek881ws.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/4h84anocrn0e2zexjpu5utgbx.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/50dwecd0b28psmgc3ec6s08qq.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5wsk7wl322xg0y1u2gbq1r3rk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6sgfnscy7p01akiz795s6wpkk.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/8c9m4dxfbx8n642b944htcs78.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/9upxkbg7t4a2myonrq663opfs.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/b8gnsytpkbqq6x8vbm79wrrb2.ll
+; zed-rs/optimized/cbi8r35sx6a597065rtde79my.ll
+; zed-rs/optimized/ch3ywh4ed1oz4ae4c1dkspuyz.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/co0mlf0q0v4q44zbcccisf94i.ll
+; zed-rs/optimized/d236qqx54dpqso3cyloa7ybaj.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; zed-rs/optimized/dqctrxtodg7m16ametxw8bpap.ll
+; zed-rs/optimized/dtqpsl4w47n2m18dddhdjmklr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
@@ -99,30 +145,20 @@ entry:
   ret i1 %4
 }
 
-; 41 occurrences:
+; 35 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
-; cmake/optimized/divsufsort.c.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
-; darktable/optimized/ArwDecoder.cpp.ll
-; darktable/optimized/Cr2sRawInterpolator.cpp.ll
-; darktable/optimized/OrfDecoder.cpp.ll
-; darktable/optimized/UncompressedDecompressor.cpp.ll
-; darktable/optimized/VC5Decompressor.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; freetype/optimized/sfnt.c.ll
-; hwloc/optimized/topology-linux.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
-; linux/optimized/intel_mocs.ll
-; llvm/optimized/Minidump.cpp.ll
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; meshlab/optimized/miniz.c.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
@@ -139,10 +175,14 @@ entry:
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
-; wireshark/optimized/packet-sndcp-xid.c.ll
-; zstd/optimized/divsufsort.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
@@ -153,18 +193,18 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_pci_pci_bridge.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000069(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000d9(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 16
   %3 = or i64 %2, 1048575
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp samesign uge i64 %3, %0
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000069(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
   %3 = or disjoint i64 %2, 4
@@ -176,7 +216,7 @@ entry:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 4
   %3 = or disjoint i64 %2, 14
@@ -349,7 +389,7 @@ entry:
 ; spike/optimized/ursub64.ll
 ; spike/optimized/vfmv_f_s.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = or disjoint i64 %2, 2
@@ -357,14 +397,35 @@ entry:
   ret i1 %4
 }
 
+; 11 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; darktable/optimized/ArwDecoder.cpp.ll
+; darktable/optimized/Cr2sRawInterpolator.cpp.ll
+; darktable/optimized/OrfDecoder.cpp.ll
+; darktable/optimized/UncompressedDecompressor.cpp.ll
+; darktable/optimized/VC5Decompressor.cpp.ll
+; hwloc/optimized/topology-linux.ll
+; llvm/optimized/Minidump.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; wireshark/optimized/packet-sndcp-xid.c.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 1
+  %3 = or disjoint i64 %2, 1
+  %4 = icmp samesign ult i64 %3, %0
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000075(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f5(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = or disjoint i64 %2, 4
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp samesign ule i64 %3, %0
   ret i1 %4
 }
 
@@ -375,7 +436,7 @@ entry:
 ; cvc5/optimized/Solver.cc.ll
 ; yosys/optimized/Solver.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
@@ -386,7 +447,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = or disjoint i64 %2, 1
@@ -397,7 +458,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/irq.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ea(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 4
   %3 = or disjoint i64 %2, 8
@@ -405,11 +466,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/amd_bus.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 8
   %3 = or i64 %2, 65535
@@ -420,7 +480,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/amd_bus.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 8
   %3 = or i64 %2, 65535
@@ -432,7 +492,7 @@ entry:
 ; linux/optimized/posix_acl.ll
 ; postgres/optimized/spell.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
   %3 = or disjoint i64 %2, 4
@@ -443,7 +503,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/igmp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = or disjoint i64 %2, 4
@@ -454,7 +514,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/formattedval_iterimpl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = or disjoint i64 %2, 1
@@ -465,7 +525,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/quality_estimate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = or disjoint i64 %2, 2
@@ -476,7 +536,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/listobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1

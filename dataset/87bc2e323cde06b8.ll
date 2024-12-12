@@ -5,15 +5,15 @@
 ; php/optimized/encode.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0) #0 {
+define i32 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = urem i32 %0, 26
-  %2 = icmp ult i32 %1, 22
+  %2 = icmp samesign ult i32 %1, 22
   %3 = select i1 %2, i32 4, i32 6
   ret i32 %3
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/print_settings.c.ll
 ; draco/optimized/corner_table.cc.ll
@@ -29,7 +29,6 @@ entry:
 ; eastl/optimized/EADateTime.cpp.ll
 ; gromacs/optimized/index.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
-; linux/optimized/endpoint.ll
 ; linux/optimized/intel_cdclk.ll
 ; php/optimized/cdf_time.ll
 ; proj/optimized/unitconvert.cpp.ll

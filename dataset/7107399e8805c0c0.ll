@@ -1,6 +1,7 @@
 
-; 2 occurrences:
-; hermes/optimized/SegmentedArray.cpp.ll
+; 3 occurrences:
+; hermes/optimized/Path.cpp.ll
+; llvm/optimized/Path.cpp.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {

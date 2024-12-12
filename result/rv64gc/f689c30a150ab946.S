@@ -1,100 +1,49 @@
-.LCPI0_0:
-	.quad	151050438420815295              # 0x218a392cd3d5dbf
-.LCPI0_1:
-	.ascii	"\000\001\002\007\003\r\b\023\004\031\016\034\t\"\024(\005\021\032&\017.\0350\n\037#6\0252)9?\006\f\022\030\033!'\020%-/\036518>\013\027 $,47=\026+3<*;:"
-func000000000000007f:                   # @func000000000000007f
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
-	neg	a3, a1
-	and	a1, a1, a3
-	mul	a1, a1, a2
-	srli	a1, a1, 58
-	lui	a2, %hi(.LCPI0_1)
-	addi	a2, a2, %lo(.LCPI0_1)
-	add	a1, a1, a2
-	lbu	a1, 0(a1)
-	addw	a0, a0, a1
-	ret
-.LCPI1_0:
-	.quad	151050438420815295              # 0x218a392cd3d5dbf
-.LCPI1_1:
-	.ascii	"\000\001\002\007\003\r\b\023\004\031\016\034\t\"\024(\005\021\032&\017.\0350\n\037#6\0252)9?\006\f\022\030\033!'\020%-/\036518>\013\027 $,47=\026+3<*;:"
 func000000000000003f:                   # @func000000000000003f
-	beqz	a1, .LBB1_2
-	lui	a2, %hi(.LCPI1_0)
-	ld	a2, %lo(.LCPI1_0)(a2)
-	neg	a3, a1
+	beqz	a1, .LBB0_2
+	srli	a2, a1, 1
+	lui	a3, 349525
+	lui	a4, 209715
+	lui	a5, 61681
+	or	a1, a1, a2
+	addiw	a2, a3, 1365
+	addiw	a3, a4, 819
+	addiw	a4, a5, -241
+	srli	a5, a1, 2
+	or	a1, a1, a5
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a1, 4
+	or	a1, a1, a5
+	srli	a5, a1, 8
+	or	a1, a1, a5
+	srli	a5, a1, 16
+	or	a1, a1, a5
+	srli	a5, a1, 32
+	or	a1, a1, a5
+	not	a1, a1
+	srli	a5, a1, 1
+	and	a2, a2, a5
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
 	and	a1, a1, a3
-	mul	a1, a1, a2
-	srli	a1, a1, 58
-	lui	a2, %hi(.LCPI1_1)
-	addi	a2, a2, %lo(.LCPI1_1)
+	lui	a3, 4112
+	addiw	a3, a3, 257
 	add	a1, a1, a2
-	lbu	a1, 0(a1)
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	slli	a2, a3, 32
+	and	a1, a1, a4
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	srli	a1, a1, 56
 	addw	a0, a0, a1
 	ret
-.LBB1_2:
+.LBB0_2:
 	li	a1, 64
-	addw	a0, a0, a1
-	ret
-.LCPI2_0:
-	.quad	151050438420815295              # 0x218a392cd3d5dbf
-.LCPI2_1:
-	.ascii	"\000\001\002\007\003\r\b\023\004\031\016\034\t\"\024(\005\021\032&\017.\0350\n\037#6\0252)9?\006\f\022\030\033!'\020%-/\036518>\013\027 $,47=\026+3<*;:"
-func000000000000000d:                   # @func000000000000000d
-	beqz	a1, .LBB2_2
-	lui	a2, %hi(.LCPI2_0)
-	ld	a2, %lo(.LCPI2_0)(a2)
-	neg	a3, a1
-	and	a1, a1, a3
-	mul	a1, a1, a2
-	srli	a1, a1, 58
-	lui	a2, %hi(.LCPI2_1)
-	addi	a2, a2, %lo(.LCPI2_1)
-	add	a1, a1, a2
-	lbu	a1, 0(a1)
-	addw	a0, a0, a1
-	ret
-.LBB2_2:
-	li	a1, 64
-	addw	a0, a0, a1
-	ret
-.LCPI3_0:
-	.quad	151050438420815295              # 0x218a392cd3d5dbf
-.LCPI3_1:
-	.ascii	"\000\001\002\007\003\r\b\023\004\031\016\034\t\"\024(\005\021\032&\017.\0350\n\037#6\0252)9?\006\f\022\030\033!'\020%-/\036518>\013\027 $,47=\026+3<*;:"
-func000000000000000c:                   # @func000000000000000c
-	beqz	a1, .LBB3_2
-	lui	a2, %hi(.LCPI3_0)
-	ld	a2, %lo(.LCPI3_0)(a2)
-	neg	a3, a1
-	and	a1, a1, a3
-	mul	a1, a1, a2
-	srli	a1, a1, 58
-	lui	a2, %hi(.LCPI3_1)
-	addi	a2, a2, %lo(.LCPI3_1)
-	add	a1, a1, a2
-	lbu	a1, 0(a1)
-	addw	a0, a0, a1
-	ret
-.LBB3_2:
-	li	a1, 64
-	addw	a0, a0, a1
-	ret
-.LCPI4_0:
-	.quad	151050438420815295              # 0x218a392cd3d5dbf
-.LCPI4_1:
-	.ascii	"\000\001\002\007\003\r\b\023\004\031\016\034\t\"\024(\005\021\032&\017.\0350\n\037#6\0252)9?\006\f\022\030\033!'\020%-/\036518>\013\027 $,47=\026+3<*;:"
-func0000000000000070:                   # @func0000000000000070
-	lui	a2, %hi(.LCPI4_0)
-	ld	a2, %lo(.LCPI4_0)(a2)
-	neg	a3, a1
-	and	a1, a1, a3
-	mul	a1, a1, a2
-	srli	a1, a1, 58
-	lui	a2, %hi(.LCPI4_1)
-	addi	a2, a2, %lo(.LCPI4_1)
-	add	a1, a1, a2
-	lbu	a1, 0(a1)
 	addw	a0, a0, a1
 	ret

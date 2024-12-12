@@ -29,7 +29,7 @@ entry:
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, %0
@@ -42,7 +42,7 @@ entry:
 ; freetype/optimized/autofit.c.ll
 ; minetest/optimized/servermap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add i64 %3, %0
@@ -64,29 +64,13 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
-; abc/optimized/acecBo.c.ll
-; meshlab/optimized/layerDialog.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
-  %5 = and i64 %4, 2147483648
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
-}
-
 ; 4 occurrences:
 ; arrow/optimized/align_util.cc.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; yosys/optimized/sat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add i64 %3, %0
@@ -95,27 +79,17 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; clamav/optimized/special.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
-  %5 = and i64 %4, 65528
-  %6 = icmp ult i64 %5, 17576
-  ret i1 %6
-}
-
-; 1 occurrences:
+; 3 occurrences:
+; abc/optimized/acecBo.c.ll
+; meshlab/optimized/layerDialog.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
-  %5 = and i64 %4, 65535
-  %6 = icmp ugt i64 %5, 2044
+  %3 = add nuw nsw i64 %1, %2
+  %4 = add nuw nsw i64 %0, %3
+  %5 = and i64 %4, 248
+  %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
 
@@ -134,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, %0
@@ -149,7 +123,7 @@ entry:
 ; casadi/optimized/sx_function.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, %0

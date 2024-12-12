@@ -1,10 +1,9 @@
 func0000000000000010:                   # @func0000000000000010
-	xorl	%ecx, %ecx
-	testb	$1, %sil
-	movl	%edi, %eax
-	cmovnel	%ecx, %eax
+	xorl	%eax, %eax
 	cmpl	%edx, %edi
-	cmoval	%ecx, %eax
+	cmoval	%eax, %edi
+	testb	$1, %sil
+	cmovel	%edi, %eax
 	retq
 func0000000000000014:                   # @func0000000000000014
 	testb	$1, %sil
@@ -15,18 +14,16 @@ func0000000000000014:                   # @func0000000000000014
 	cmovgl	%ecx, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	xorl	%ecx, %ecx
-	testb	$1, %sil
-	movl	%edi, %eax
-	cmovnel	%ecx, %eax
+	xorl	%eax, %eax
 	cmpl	%edx, %edi
-	cmovbl	%ecx, %eax
+	cmovbl	%eax, %edi
+	testb	$1, %sil
+	cmovel	%edi, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	xorl	%ecx, %ecx
-	testb	$1, %sil
-	movl	%edi, %eax
-	cmovnel	%ecx, %eax
+	xorl	%eax, %eax
 	cmpl	%edx, %edi
-	cmovll	%ecx, %eax
+	cmovll	%eax, %edi
+	testb	$1, %sil
+	cmovel	%edi, %eax
 	retq

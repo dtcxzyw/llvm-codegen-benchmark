@@ -1,12 +1,13 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openjdk/optimized/cmsintrp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 16
   %3 = add nsw i32 %2, 1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -40,7 +41,7 @@ define i32 @func0000000000000017(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 27
   %3 = add nsw i32 %2, 50
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 

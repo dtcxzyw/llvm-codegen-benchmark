@@ -1,12 +1,11 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	andi	a0, a0, 1
-	li	a2, 13
-	czero.eqz	a0, a2, a0
-	add	a0, a0, a1
-	addiw	a0, a0, -13
+	li	a2, -13
+	czero.nez	a0, a2, a0
+	addw	a0, a0, a1
 	sltiu	a0, a0, -12
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andi	a0, a0, 1
 	li	a2, -2
 	czero.eqz	a0, a2, a0
@@ -14,15 +13,7 @@ func0000000000000011:                   # @func0000000000000011
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func0000000000000044:                   # @func0000000000000044
-	andi	a0, a0, 1
-	li	a2, -30
-	czero.eqz	a0, a2, a0
-	add	a0, a0, a1
-	addiw	a0, a0, -353
-	sltiu	a0, a0, 3
-	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	andi	a0, a0, 1
 	sh1add	a0, a0, a1
 	sext.w	a0, a0

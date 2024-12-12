@@ -1,6 +1,6 @@
 
-%struct.aiFace.2710972 = type { i32, ptr }
-%struct.posix_acl_xattr_entry.3361549 = type { i16, i16, i32 }
+%struct.aiFace.2823562 = type { i32, ptr }
+%struct.posix_acl_xattr_entry.3548205 = type { i16, i16, i32 }
 
 ; 9 occurrences:
 ; abc/optimized/utilSort.c.ll
@@ -13,12 +13,12 @@
 ; openjdk/optimized/hb-ot-name.ll
 ; openjdk/optimized/zMark.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2305843009213693948
-  %5 = getelementptr nusw i64, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 32
+  %5 = getelementptr nusw nuw i64, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 32
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }
@@ -42,12 +42,12 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw %struct.aiFace.2710972, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 16
+  %5 = getelementptr nusw nuw %struct.aiFace.2823562, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
@@ -135,12 +135,12 @@ entry:
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 44
   %4 = and i64 %3, 131071
-  %5 = getelementptr nusw ptr, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw ptr, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
@@ -148,11 +148,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/posix_acl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000201(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 2147483647
-  %5 = getelementptr %struct.posix_acl_xattr_entry.3361549, ptr %1, i64 %4
+  %5 = getelementptr %struct.posix_acl_xattr_entry.3548205, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %0, i64 8
   %7 = icmp eq ptr %6, %5
   ret i1 %7
@@ -161,12 +161,12 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000003e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 1
   %4 = and i64 %3, 2147483647
-  %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 4
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }

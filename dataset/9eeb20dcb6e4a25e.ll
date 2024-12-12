@@ -17,9 +17,8 @@ entry:
   ret i16 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
-; linux/optimized/rsmisc.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; raylib/optimized/rtext.c.ll

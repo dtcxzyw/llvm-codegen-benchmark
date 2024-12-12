@@ -56,16 +56,17 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/MachOObjectFile.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = shl nuw i64 %2, 48
-  %4 = and i64 %0, 281470681743360
-  %5 = or disjoint i64 %3, %4
+  %4 = and i64 %0, 281474976710655
+  %5 = or disjoint i64 %4, %3
   ret i64 %5
 }
 

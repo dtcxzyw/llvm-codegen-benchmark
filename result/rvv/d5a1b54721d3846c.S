@@ -12,14 +12,14 @@ func000000000000000c:                   # @func000000000000000c
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v10, v0
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	li	a0, 1000
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	lui	a0, 244141
 	addiw	a0, a0, -1536
 	vmsltu.vx	v10, v8, a0
-	vmand.mm	v0, v10, v0
+	vmand.mm	v0, v0, v10
 	ret
 .LCPI3_0:
 	.quad	922337203685477581              # 0xccccccccccccccd

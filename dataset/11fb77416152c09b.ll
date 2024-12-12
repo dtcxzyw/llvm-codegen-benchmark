@@ -1,9 +1,7 @@
 
-; 20 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcHieNew.c.ll
-; abc/optimized/cuddSat.c.ll
-; abc/optimized/sswSat.c.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/trans_virtio.ll

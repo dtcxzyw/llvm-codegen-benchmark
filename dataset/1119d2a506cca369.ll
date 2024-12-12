@@ -12,8 +12,8 @@ define i1 @func0000000000000001(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = trunc i64 %3 to i32
-  %5 = icmp eq i32 %4, %1
-  %6 = and i1 %5, %0
+  %5 = icmp eq i32 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -24,7 +24,7 @@ define i1 @func0000000000000009(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = trunc i64 %3 to i32
-  %5 = icmp ule i32 %4, %1
+  %5 = icmp uge i32 %1, %4
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -36,8 +36,8 @@ define i1 @func0000000000000008(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %4, %1
-  %6 = and i1 %5, %0
+  %5 = icmp ugt i32 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

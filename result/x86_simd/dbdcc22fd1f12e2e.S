@@ -62,5 +62,5 @@ func000000000000001f:                   # @func000000000000001f
 	vpslld	$2, %ymm2, %ymm1
 	vpbroadcastd	.LCPI5_0(%rip), %ymm2   # ymm2 = [7,7,7,7,7,7,7,7]
 	vpaddd	.LCPI5_1(%rip){1to8}, %ymm1, %ymm2 {%k1}
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq

@@ -1,7 +1,8 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; arrow/optimized/bignum.cc.ll
+; boost/optimized/src.ll
 ; darktable/optimized/OlympusDecompressor.cpp.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; graphviz/optimized/strmatch.c.ll

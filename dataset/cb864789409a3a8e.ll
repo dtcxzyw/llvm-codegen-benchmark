@@ -10,7 +10,7 @@ define i1 @func000000000000000c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %1, %2
   %4 = icmp slt i8 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -27,7 +27,7 @@ entry:
   %3 = xor i8 %1, %2
   %4 = and i8 %3, 48
   %5 = icmp eq i8 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

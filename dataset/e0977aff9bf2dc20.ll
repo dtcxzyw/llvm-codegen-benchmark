@@ -43,15 +43,16 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; brotli/optimized/decode.c.ll
 ; cpython/optimized/_pickle.ll
 ; freetype/optimized/truetype.c.ll
+; gromacs/optimized/tng_io.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 2, i64 3
-  %3 = add i64 %0, -2
+  %3 = add i64 %0, 1
   %4 = shl i64 %3, %2
   ret i64 %4
 }

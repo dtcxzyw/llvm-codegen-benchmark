@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/poly34.ll
 ; darktable/optimized/introspection_colorequal.c.ll
@@ -19,6 +19,7 @@
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
 ; recastnavigation/optimized/imgui.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:

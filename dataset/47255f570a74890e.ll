@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/compaction.ll
 ; linux/optimized/fair.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/vmscan.ll
 ; stat-rs/optimized/43fparx0v87xel0c.ll
 ; Function Attrs: nounwind

@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; icu/optimized/ucnv2022.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openjdk/optimized/memnode.ll
 ; openspiel/optimized/Par.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll

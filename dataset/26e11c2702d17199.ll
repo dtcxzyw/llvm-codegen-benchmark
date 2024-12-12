@@ -7,7 +7,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
   %4 = add nsw i32 %3, %0
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
   %4 = add nsw i32 %3, %0

@@ -1,6 +1,8 @@
 
 ; 220 occurrences:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
@@ -138,7 +140,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -217,14 +218,13 @@
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = mul nsw i64 %3, 7
   ret i64 %4
 }
@@ -282,7 +282,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = mul i64 %3, 7
   ret i64 %4
 }
@@ -294,7 +294,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul i64 %3, 3
   ret i64 %4
 }

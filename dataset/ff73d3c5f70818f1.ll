@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; bullet3/optimized/btMultiBodyDynamicsWorld.ll
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; icu/optimized/propsvec.ll
 ; openexr/optimized/ImfB44Compressor.cpp.ll
@@ -19,19 +20,6 @@ entry:
 }
 
 ; 1 occurrences:
-; bullet3/optimized/btMultiBodyDynamicsWorld.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(i32 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr float, ptr %1, i64 %3
-  %5 = sext i32 %0 to i64
-  %6 = getelementptr float, ptr %4, i64 %5
-  %7 = getelementptr float, ptr %6, i64 %5
-  ret ptr %7
-}
-
-; 1 occurrences:
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i32 %0, ptr %1, i32 %2) #0 {
@@ -41,6 +29,21 @@ entry:
   %5 = sext i32 %0 to i64
   %6 = getelementptr nusw double, ptr %4, i64 %5
   %7 = getelementptr nusw ptr, ptr %6, i64 %5
+  ret ptr %7
+}
+
+; 3 occurrences:
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(i32 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr double, ptr %1, i64 %3
+  %5 = sext i32 %0 to i64
+  %6 = getelementptr double, ptr %4, i64 %5
+  %7 = getelementptr double, ptr %6, i64 %5
   ret ptr %7
 }
 

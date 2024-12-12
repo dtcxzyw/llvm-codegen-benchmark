@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	10                              # 0xa
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	vpcmpltuq	.LCPI0_0(%rip){1to4}, %ymm2, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}
 	vpxor	%xmm0, %xmm0, %xmm0
@@ -11,7 +11,7 @@ func0000000000000011:                   # @func0000000000000011
 	.quad	15                              # 0xf
 .LCPI1_1:
 	.long	64                              # 0x40
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm2, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}
 	vpbroadcastd	.LCPI1_1(%rip), %xmm0   # xmm0 = [64,64,64,64]

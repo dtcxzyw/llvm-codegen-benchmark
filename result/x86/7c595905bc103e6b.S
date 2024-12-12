@@ -1,102 +1,116 @@
-func0000000000000059:                   # @func0000000000000059
+func00000000000000a9:                   # @func00000000000000a9
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	addq	$-16, %rdi
 	cmpq	%rax, %rdi
 	setae	%al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	addq	$-2, %rdi
 	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	addq	$-2, %rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	addq	$-4, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	addq	$-2, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	addq	$-2, %rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	addq	$-4, %rdi
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000a8:                   # @func00000000000000a8
+	movzbl	%dl, %eax
+	orq	%rsi, %rax
+	addq	$-2, %rdi
+	cmpq	%rax, %rdi
+	seta	%al
+	retq
+func00000000000000a4:                   # @func00000000000000a4
+	movzbl	%dl, %eax
+	orq	%rsi, %rax
+	addq	$-6, %rdi
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
+func00000000000000f4:                   # @func00000000000000f4
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000075:                   # @func0000000000000075
+func00000000000000f5:                   # @func00000000000000f5
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	addq	$2, %rdi
 	cmpq	%rax, %rdi
 	setbe	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	addq	$3, %rdi
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	addq	$-4, %rdi

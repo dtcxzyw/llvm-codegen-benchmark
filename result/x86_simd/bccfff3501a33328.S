@@ -12,7 +12,7 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -20,7 +20,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -48,11 +48,11 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func000000000000000e:                   # @func000000000000000e
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000006:                   # @func0000000000000006
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func000000000000000b:                   # @func000000000000000b
 	vpaddd	%ymm2, %ymm1, %ymm1

@@ -1,9 +1,10 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/llb2Flow.c.ll
 ; gromacs/optimized/bwt.c.ll
 ; openspiel/optimized/crazy_eights.cc.ll
 ; openusd/optimized/level.cpp.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; slurm/optimized/xcpuinfo.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

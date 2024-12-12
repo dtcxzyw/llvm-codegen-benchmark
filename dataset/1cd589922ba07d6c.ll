@@ -3,10 +3,10 @@
 ; linux/optimized/ucs2_string.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034c(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000e8c(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp samesign ult i64 %3, %1
   %5 = icmp ne i16 %0, 127
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -15,10 +15,10 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000341(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000e81(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp samesign ult i64 %3, %1
   %5 = icmp eq i16 %0, 538
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_substitute.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000244(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000884(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ult i64 %3, %1
@@ -40,7 +40,7 @@ entry:
 ; rust-analyzer-rs/optimized/5a391sezfv8ojps9.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000421(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -2
   %4 = icmp eq i64 %3, %1
@@ -49,23 +49,11 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; clamav/optimized/entconv.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i16 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, 3
-  %4 = icmp ult i64 %3, %1
-  %5 = icmp ult i16 %0, -9216
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; eastl/optimized/EAString.cpp.ll
 ; linux/optimized/ucs2_string.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000088c(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ult i64 %3, %1
@@ -127,7 +115,7 @@ entry:
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = icmp eq i64 %3, %1

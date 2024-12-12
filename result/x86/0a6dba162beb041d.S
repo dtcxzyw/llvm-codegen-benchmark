@@ -18,11 +18,6 @@ func0000000000000012:                   # @func0000000000000012
 	addl	%edi, %eax
 	imull	$85, %eax, %eax
 	retq
-func000000000000000d:                   # @func000000000000000d
-	movzbl	%sil, %eax
-	addl	%edi, %eax
-	imull	$85, %eax, %eax
-	retq
 func0000000000000017:                   # @func0000000000000017
 	movzbl	%sil, %eax
 	addl	%edi, %eax

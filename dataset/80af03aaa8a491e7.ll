@@ -1,5 +1,7 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; darktable/optimized/histogram.c.ll
+; darktable/optimized/introspection_gamma.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; mitsuba3/optimized/rectangle.cpp.ll

@@ -18,11 +18,10 @@ entry:
   ret i64 %4
 }
 
-; 40 occurrences:
+; 39 occurrences:
 ; arrow/optimized/UriQuery.c.ll
 ; casadi/optimized/cvodes_spils.c.ll
 ; casadi/optimized/idas_spils.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll

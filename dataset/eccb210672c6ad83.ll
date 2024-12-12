@@ -1,10 +1,11 @@
 
-; 65 occurrences:
+; 66 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; actix-rs/optimized/3tnlvci61w0nl5yv.ll
 ; actix-rs/optimized/4jlfyqkak9x9x2yv.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
+; boost/optimized/src.ll
 ; casadi/optimized/bspline.cpp.ll
 ; cjson/optimized/cJSON.c.ll
 ; clamav/optimized/sigtool.c.ll
@@ -70,7 +71,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -93,7 +94,7 @@ entry:
   ret i64 %5
 }
 
-; 24 occurrences:
+; 28 occurrences:
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
@@ -118,6 +119,10 @@ entry:
 ; wasmtime-rs/optimized/1tgax70bn3x2nad4.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -137,7 +142,7 @@ define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -212,7 +217,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

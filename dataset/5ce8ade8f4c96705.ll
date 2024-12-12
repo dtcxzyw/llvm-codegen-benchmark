@@ -11,7 +11,7 @@ entry:
   %2 = sdiv exact i64 %1, 12
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -38,7 +38,7 @@ entry:
   %2 = sdiv exact i64 %1, 24
   %3 = trunc i64 %2 to i32
   %4 = shl nsw i32 %3, 1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

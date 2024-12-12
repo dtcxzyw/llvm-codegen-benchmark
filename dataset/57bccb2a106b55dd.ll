@@ -73,12 +73,13 @@ entry:
   %3 = sub nsw i64 0, %2
   %4 = add i64 %1, %2
   %5 = and i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 41 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
+; boost/optimized/alloc_lib.ll
 ; coreutils-rs/optimized/1pz43lsbr7l0inxv.ll
 ; coreutils-rs/optimized/45ibbzl0las8sgut.ll
 ; coreutils-rs/optimized/4wx66ytsj6r522cv.ll
@@ -119,13 +120,16 @@ entry:
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
 ; tokenizers-rs/optimized/pctti7iv1zxrcsb.ll
+; zed-rs/optimized/3bwpnkngp0v942xuk5tod4bfe.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = add i64 %1, %2
   %5 = and i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -139,7 +143,7 @@ entry:
   %3 = sub i64 0, %2
   %4 = add i64 %1, %2
   %5 = and i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -151,7 +155,7 @@ entry:
   %3 = sub i64 0, %2
   %4 = add nuw i64 %1, %2
   %5 = and i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

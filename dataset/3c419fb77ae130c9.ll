@@ -1,5 +1,11 @@
 
-; 4 occurrences:
+; 10 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; graphviz/optimized/general.c.ll
 ; graphviz/optimized/ortho.c.ll
 ; qemu/optimized/util_qdist.c.ll

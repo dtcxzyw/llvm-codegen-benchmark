@@ -1,5 +1,25 @@
 
-; 87 occurrences:
+; 10 occurrences:
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; freetype/optimized/sfnt.c.ll
+; jsonnet/optimized/rapidyaml.cpp.ll
+; luau/optimized/AssemblyBuilderA64.cpp.ll
+; luau/optimized/CodeGenX64.cpp.ll
+; qemu/optimized/hw_net_can_can_sja1000.c.ll
+; wireshark/optimized/packet-ieee802154.c.ll
+; zxing/optimized/ODMultiUPCEANReader.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i8 %0) #0 {
+entry:
+  %1 = zext nneg i8 %0 to i32
+  %2 = shl nuw nsw i32 %1, 24
+  %3 = or disjoint i32 %2, -2147483648
+  ret i32 %3
+}
+
+; 86 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/XzIn.c.ll
@@ -41,7 +61,6 @@
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/color_lab.cpp.ll
@@ -91,28 +110,8 @@
 define i32 @func0000000000000007(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i32
-  %2 = shl nuw nsw i32 %1, 16
-  %3 = or disjoint i32 %2, 100663591
-  ret i32 %3
-}
-
-; 10 occurrences:
-; duckdb/optimized/ub_duckdb_common.cpp.ll
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; freetype/optimized/sfnt.c.ll
-; jsonnet/optimized/rapidyaml.cpp.ll
-; luau/optimized/AssemblyBuilderA64.cpp.ll
-; luau/optimized/CodeGenX64.cpp.ll
-; qemu/optimized/hw_net_can_can_sja1000.c.ll
-; wireshark/optimized/packet-ieee802154.c.ll
-; zxing/optimized/ODMultiUPCEANReader.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i8 %0) #0 {
-entry:
-  %1 = zext nneg i8 %0 to i32
-  %2 = shl nuw nsw i32 %1, 24
-  %3 = or disjoint i32 %2, -2147483648
+  %2 = shl nuw nsw i32 %1, 4
+  %3 = or disjoint i32 %2, 8
   ret i32 %3
 }
 

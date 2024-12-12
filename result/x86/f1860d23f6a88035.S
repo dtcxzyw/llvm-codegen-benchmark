@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	leal	19(%rax,%rax), %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	testb	$6, %dil
 	movl	$48, %ecx
 	movl	$12288, %eax                    # imm = 0x3000
@@ -16,7 +16,7 @@ func000000000000000c:                   # @func000000000000000c
 	movl	$131072, %eax                   # imm = 0x20000
 	cmovel	%ecx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	notl	%edi
 	xorl	%ecx, %ecx
 	testl	$31744, %edi                    # imm = 0x7C00

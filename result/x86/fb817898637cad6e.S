@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	$33554432, %rsi                 # imm = 0x2000000
@@ -12,7 +12,7 @@ func0000000000000008:                   # @func0000000000000008
 	sbbq	%rax, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	addq	%rdx, %rsi
 	cmpq	$256, %rsi                      # imm = 0x100
 	movl	$7, %eax
@@ -29,6 +29,14 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$1048575, %eax                  # imm = 0xFFFFF
 	cmovaeq	%rdi, %rax
 	retq
+func0000000000000028:                   # @func0000000000000028
+	addq	%rdx, %rsi
+	shrq	$61, %rsi
+	xorl	%eax, %eax
+	negq	%rsi
+	sbbq	%rax, %rax
+	orq	%rdi, %rax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
@@ -36,7 +44,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rcx, %rsi
 	cmovleq	%rdi, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	$1801, %rsi                     # imm = 0x709
@@ -47,24 +55,30 @@ func0000000000000006:                   # @func0000000000000006
 	addq	%rdx, %rsi
 	cmovnsq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addq	%rdx, %rsi
 	movl	$1, %eax
 	cmovneq	%rdi, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000044:                   # @func0000000000000044
+	addq	%rdx, %rsi
+	xorl	%eax, %eax
+	cmpq	$2, %rsi
+	cmovaeq	%rdi, %rax
+	retq
+func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	orq	%rdx, %rsi
 	cmovneq	%rdi, %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
 	movabsq	$9223372036854775804, %rcx      # imm = 0x7FFFFFFFFFFFFFFC
 	cmpq	%rcx, %rsi
 	cmovbeq	%rdi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	orq	%rdx, %rsi
 	movl	$28, %eax
 	cmovneq	%rdi, %rax

@@ -12,7 +12,7 @@
 ; rocksdb/optimized/compaction_picker_fifo.cc.ll
 ; rocksdb/optimized/ldb_cmd.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = icmp eq i64 %1, 0
@@ -20,15 +20,13 @@ entry:
   ret i32 %5
 }
 
-; 19 occurrences:
+; 17 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
-; freetype/optimized/truetype.c.ll
 ; grpc/optimized/chttp2_transport.cc.ll
 ; grpc/optimized/compression_filter.cc.ll
 ; grpc/optimized/legacy_compression_filter.cc.ll
 ; grpc/optimized/ping_abuse_policy.cc.ll
 ; grpc/optimized/ping_rate_policy.cc.ll
-; linux/optimized/ioport.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/ExprMutationAnalyzer.cpp.ll
 ; llvm/optimized/Globals.cpp.ll
@@ -55,7 +53,7 @@ entry:
 ; llvm/optimized/ParseDecl.cpp.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000044(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = icmp ult i64 %1, 4294967296
@@ -67,7 +65,7 @@ entry:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = icmp eq i64 %1, 0
@@ -75,7 +73,8 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; lief/optimized/constant_time.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i64 %1, i64 %2) #0 {
@@ -89,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/vmerge_vim.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = icmp eq i64 %1, 0
@@ -100,10 +99,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ult i64 %1, 4294967296
+  %4 = icmp samesign ult i64 %1, 4294967296
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }
@@ -111,7 +110,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/meshUtil.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000068(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = icmp ugt i64 %1, 7
@@ -139,7 +138,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/localtime.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = icmp ult i64 %1, 731
@@ -159,10 +158,22 @@ entry:
 }
 
 ; 2 occurrences:
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000074(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp samesign ult i64 %1, 4294967296
+  %5 = select i1 %4, i32 %0, i32 %3
+  ret i32 %5
+}
+
+; 2 occurrences:
 ; opencv/optimized/common.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000046(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = icmp slt i64 %1, 0
@@ -173,7 +184,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000048(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = icmp ugt i64 %1, 31

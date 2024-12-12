@@ -1,11 +1,13 @@
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000070(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 40
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = mul i64 %3, 216180478695505931
   %5 = add i64 %4, 3819052484010180608
   ret i64 %5

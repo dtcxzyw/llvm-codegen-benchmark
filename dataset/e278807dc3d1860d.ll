@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; graphviz/optimized/mincross.c.ll
@@ -20,7 +20,6 @@
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/imageio.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
 ; openjdk/optimized/mlib_ImageAffine_BL_S32.ll

@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.167.2617260" = type { %struct.BEInt.168.2617261 }
-%struct.BEInt.168.2617261 = type { i8 }
+%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
+%struct.BEInt.168.2730713 = type { i8 }
 
 ; 8 occurrences:
 ; freetype/optimized/pfr.c.ll
@@ -12,12 +12,12 @@
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007a8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000fe8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 1
-  %6 = getelementptr nusw %"struct.OT::IntType.167.2617260", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %5, i64 %4
   %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000708(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000e08(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64

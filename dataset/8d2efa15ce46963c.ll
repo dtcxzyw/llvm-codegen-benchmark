@@ -1,15 +1,4 @@
 
-; 1 occurrences:
-; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i8 %1, i1 %2) #0 {
-entry:
-  %3 = zext i1 %2 to i8
-  %4 = icmp ule i8 %3, %1
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
 ; 8 occurrences:
 ; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll
 ; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
@@ -23,20 +12,24 @@ entry:
 define i1 @func000000000000000c(i1 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = icmp ne i8 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ne i8 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 2 occurrences:
+; 6 occurrences:
 ; llvm/optimized/Verifier.cpp.ll
 ; openspiel/optimized/chess_board.cc.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = icmp eq i8 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp eq i8 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

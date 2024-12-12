@@ -1,5 +1,6 @@
 
-; 67 occurrences:
+; 69 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; clamav/optimized/udf.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; cpython/optimized/bufferedio.ll
@@ -20,6 +21,7 @@
 ; folly/optimized/json_pointer.cpp.ll
 ; graphviz/optimized/excontext.c.ll
 ; gromacs/optimized/colvars_memstream.cpp.ll
+; gromacs/optimized/convert_tpr.cpp.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
@@ -78,7 +80,9 @@ entry:
   ret i64 %7
 }
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/cmGeneratorExpression.cxx.ll
 ; cmake/optimized/http.c.ll
 ; curl/optimized/libcurl_la-http.ll
@@ -96,16 +100,23 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = add nsw i64 %5, 1
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
-; 5 occurrences:
+; 12 occurrences:
 ; coreutils-rs/optimized/5dmrxisq30bb0giv.ll
 ; coreutils-rs/optimized/gy31avu15bepulc.ll
 ; folly/optimized/TimeUtil.cpp.ll
 ; ripgrep-rs/optimized/3st324p1krxj76od.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; zed-rs/optimized/18fe87pvcvcmccnycfh7q0atj.ll
+; zed-rs/optimized/247uvyk35qd8oseq9xzgyw4k7.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9c745mpyev6016wrbif8w6jcd.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
+; zed-rs/optimized/d334eo7xhndhquqddprlqx6j8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, ptr %1, ptr %2) #0 {
 entry:
@@ -113,7 +124,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = add nuw i64 %5, 1
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -140,7 +151,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = add nsw i64 %5, 11296
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 

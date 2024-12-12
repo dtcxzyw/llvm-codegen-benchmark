@@ -1,5 +1,5 @@
 
-; 1229 occurrences:
+; 1242 occurrences:
 ; abc/optimized/abcHaig.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcPart.c.ll
@@ -15,7 +15,6 @@
 ; abc/optimized/ivyHaig.c.ll
 ; abc/optimized/mainFrame.c.ll
 ; abc/optimized/nmTable.c.ll
-; abc/optimized/satUtil.c.ll
 ; abc/optimized/sswClass.c.ll
 ; abseil-cpp/optimized/mutex.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -26,6 +25,22 @@
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/channel.ll
+; boost/optimized/cstdio.ll
+; boost/optimized/pool_resource.ll
+; boost/optimized/round_robin.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/src.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/test_stackstring.ll
+; boost/optimized/topology.ll
 ; c3c/optimized/sema_types.c.ll
 ; c3c/optimized/symtab.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
@@ -173,13 +188,10 @@
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/build_policy.ll
 ; linux/optimized/clnt.ll
-; linux/optimized/component.ll
 ; linux/optimized/consolemap.ll
 ; linux/optimized/control.ll
 ; linux/optimized/dmaengine.ll
 ; linux/optimized/dquot.ll
-; linux/optimized/fs-writeback.ll
-; linux/optimized/garbage.ll
 ; linux/optimized/gro_cells.ll
 ; linux/optimized/hcd.ll
 ; linux/optimized/icmp.ll
@@ -224,7 +236,6 @@
 ; linux/optimized/transaction.ll
 ; linux/optimized/tree.ll
 ; linux/optimized/tx.ll
-; linux/optimized/user_defined.ll
 ; linux/optimized/workqueue.ll
 ; linux/optimized/write.ll
 ; linux/optimized/xfrm_input.ll
@@ -428,6 +439,11 @@
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; luau/optimized/TypeInfer.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw.ll
+; lvgl/optimized/lv_menu.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_span.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -538,13 +554,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -834,7 +847,6 @@
 ; postgres/optimized/reorderbuffer.ll
 ; postgres/optimized/slab.ll
 ; postgres/optimized/syncrep.ll
-; postgres/optimized/xlogprefetcher.ll
 ; protobuf/optimized/dynamic_message.cc.ll
 ; proxygen/optimized/ByteEventTracker.cpp.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
@@ -893,7 +905,6 @@
 ; ruby/optimized/thread.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; slurm/optimized/backfill.ll
-; slurm/optimized/data_parser_v0_0_39_la-api.ll
 ; slurm/optimized/data_parser_v0_0_40_la-api.ll
 ; slurm/optimized/data_parser_v0_0_41_la-api.ll
 ; slurm/optimized/job_mgr.ll
@@ -905,6 +916,7 @@
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; verilator/optimized/V3Ast.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; verilator/optimized/V3LinkCells.cpp.ll
@@ -964,7 +976,6 @@
 ; z3/optimized/bvarray2uf_tactic.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/cofactor_term_ite_tactic.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
@@ -1229,8 +1240,10 @@
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/well_sorted.cpp.ll
 ; z3/optimized/zstring.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000042(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %0, %1
   %3 = icmp eq ptr %0, null
@@ -1238,13 +1251,15 @@ entry:
   ret i1 %4
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatOld.c.ll
 ; abc/optimized/giaCSatP.c.ll
 ; abc/optimized/giaCTas.c.ll
 ; abc/optimized/satProof.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; graphviz/optimized/strmatch.c.ll
 ; hermes/optimized/SourceMgr.cpp.ll
 ; icu/optimized/uloc.ll
@@ -1258,7 +1273,7 @@ entry:
 ; slurm/optimized/hostlist.ll
 ; wireshark/optimized/nettrace_3gpp_32_423.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000202(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ugt ptr %0, %1
   %3 = icmp eq ptr %0, null
@@ -1266,7 +1281,7 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/uhash.ll
 ; icu/optimized/unifiedcache.ll
@@ -1274,12 +1289,13 @@ entry:
 ; linux/optimized/fair.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_group.ll
 ; openjdk/optimized/stringopts.ll
 ; openssl/optimized/libcommon-lib-ciphercommon.ll
 ; openssl/optimized/libcrypto-lib-p_lib.ll
 ; openssl/optimized/libcrypto-shlib-p_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000302(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %0, %1
   %3 = icmp eq ptr %0, null
@@ -1297,7 +1313,7 @@ entry:
 ; postgres/optimized/regexec.ll
 ; wireshark/optimized/wslog.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000102(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ult ptr %0, %1
   %3 = icmp eq ptr %0, null
@@ -1325,7 +1341,7 @@ entry:
 ; postgres/optimized/tsearchcmds.ll
 ; postgres/optimized/view.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000122(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000242(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp uge ptr %0, %1
   %3 = icmp eq ptr %0, null
@@ -1337,7 +1353,7 @@ entry:
 ; arrow/optimized/UriQuery.c.ll
 ; clamav/optimized/phishcheck.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000050(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %0, null
   %3 = icmp ugt ptr %0, %1
@@ -1345,13 +1361,12 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; hermes/optimized/IR.cpp.ll
-; linux/optimized/rseq.ll
 ; linux/optimized/vgaarb.ll
 ; llvm/optimized/ExecutionDomainFix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000058(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %0, null
   %3 = icmp ne ptr %0, %1
@@ -1366,7 +1381,7 @@ entry:
 ; postgres/optimized/preptlist.ll
 ; postgres/optimized/printtup.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000032(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000052(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %0, null
   %3 = icmp uge ptr %0, %1

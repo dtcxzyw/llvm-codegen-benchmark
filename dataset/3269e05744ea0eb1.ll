@@ -11,7 +11,7 @@
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %.neg = xor i16 %1, -1
-  %2 = add i16 %.neg, %0
+  %2 = add i16 %0, %.neg
   ret i16 %2
 }
 

@@ -11,7 +11,7 @@
 define i16 @func000000000000003f(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw nsw i16 %2, 10
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   %5 = shl nuw nsw i16 %1, 5
   %6 = or disjoint i16 %4, %5
   ret i16 %6
@@ -41,6 +41,20 @@ entry:
   ret i16 %6
 }
 
+; 3 occurrences:
+; lvgl/optimized/lv_binfont_loader.ll
+; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; Function Attrs: nounwind
+define i16 @func000000000000003d(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = shl nuw nsw i16 %2, 9
+  %4 = or disjoint i16 %3, %1
+  %5 = shl nuw i16 %0, 14
+  %6 = or disjoint i16 %5, %4
+  ret i16 %6
+}
+
 ; 2 occurrences:
 ; hermes/optimized/escape.cpp.ll
 ; node/optimized/libnode.Protocol.ll
@@ -51,19 +65,6 @@ entry:
   %4 = or i16 %3, %0
   %5 = shl i16 %1, 4
   %6 = or i16 %4, %5
-  ret i16 %6
-}
-
-; 2 occurrences:
-; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; Function Attrs: nounwind
-define i16 @func000000000000003d(i16 %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = shl nuw nsw i16 %2, 7
-  %4 = or disjoint i16 %3, %1
-  %5 = shl nuw i16 %0, 14
-  %6 = or disjoint i16 %5, %4
   ret i16 %6
 }
 
@@ -87,7 +88,7 @@ entry:
 define i16 @func000000000000000c(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl i16 %2, 12
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   %5 = shl nuw nsw i16 %1, 4
   %6 = or i16 %4, %5
   ret i16 %6
@@ -125,7 +126,7 @@ entry:
 define i16 @func000000000000003c(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw nsw i16 %2, 13
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   %5 = shl nuw nsw i16 %1, 8
   %6 = or i16 %4, %5
   ret i16 %6
@@ -137,7 +138,7 @@ entry:
 define i16 @func0000000000000004(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl i16 %2, 12
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   %5 = shl nsw i16 %1, 4
   %6 = or i16 %4, %5
   ret i16 %6

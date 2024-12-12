@@ -1,11 +1,9 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/giaEnable.c.ll
 ; abc/optimized/giaMan.c.ll
 ; bdwgc/optimized/gc.c.ll
-; openjdk/optimized/continuationFreezeThaw.ll
-; openjdk/optimized/mlib_c_ImageCopy.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
 entry:

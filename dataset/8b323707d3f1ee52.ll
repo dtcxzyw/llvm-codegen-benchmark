@@ -1,5 +1,7 @@
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; hermes/optimized/Interpreter-slowpaths.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
 ; minetest/optimized/c_converter.cpp.ll

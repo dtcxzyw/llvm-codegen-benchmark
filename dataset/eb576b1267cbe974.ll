@@ -1,6 +1,5 @@
 
-; 17 occurrences:
-; abseil-cpp/optimized/memutil.cc.ll
+; 16 occurrences:
 ; cpython/optimized/bytesobject.ll
 ; git/optimized/ref-filter.ll
 ; icu/optimized/cstring.ll
@@ -18,7 +17,7 @@
 ; ruby/optimized/regparse.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, %1
   ret i1 %2
@@ -33,7 +32,7 @@ entry:
 ; velox/optimized/SpillConfig.cpp.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ule i8 %0, %1
   ret i1 %2
@@ -46,7 +45,7 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i8 %0, i8 %1) #0 {
+define i1 @func00000000000000a4(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = zext nneg i8 %0 to i32
@@ -60,7 +59,7 @@ entry:
 ; linux/optimized/drm_modes.ll
 ; slurm/optimized/hostlist.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i8 %0, i8 %1) #0 {
+define i1 @func00000000000001a1(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, %1
   ret i1 %2
@@ -77,7 +76,7 @@ entry:
 ; zstd/optimized/divsufsort.c.ll
 ; zxing/optimized/HybridBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, i8 %1) #0 {
+define i1 @func000000000000002a(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = zext i8 %0 to i32

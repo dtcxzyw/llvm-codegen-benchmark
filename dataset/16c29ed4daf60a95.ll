@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/joystick_controller.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = mul nsw i32 %0, %1
@@ -14,7 +14,7 @@ entry:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; openjdk/optimized/awt_ImageRep.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 2147483647, %2
   %4 = mul nsw i32 %0, %1
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_image.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d7(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a7(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 2147483647, %2
   %4 = mul nsw i32 %0, %1
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_image.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 2147483647, %2
   %4 = mul nsw i32 %0, %1

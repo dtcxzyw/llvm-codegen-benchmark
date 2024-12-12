@@ -1,7 +1,8 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; clamav/optimized/hashtab.c.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; meshoptimizer/optimized/indexgenerator.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; ninja/optimized/build_log.cc.ll
@@ -22,7 +23,7 @@ entry:
   %2 = lshr i32 %1, 4
   %3 = xor i32 %2, %1
   %4 = mul i32 %3, 2057
-  %5 = xor i32 %4, %0
+  %5 = xor i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }

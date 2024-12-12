@@ -32,9 +32,8 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/i915_gem_pages.ll
-; linux/optimized/i915_mm.ll
 ; linux/optimized/intel_renderstate.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/scatterlist.ll

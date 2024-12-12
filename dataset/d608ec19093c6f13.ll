@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJEwCombGeom_VF.cpp.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJEwCombGeom_VgrpF.cpp.ll
 ; gromacs/optimized/kernel_ElecEw_VdwLJEwCombGeom_VF.cpp.ll
@@ -13,7 +13,6 @@
 ; gromacs/optimized/kernel_ref.cpp.ll
 ; icu/optimized/propsvec.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind

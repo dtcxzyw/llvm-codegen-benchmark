@@ -43,17 +43,17 @@ func0000000000000007:                   # @func0000000000000007
 	shlxl	%eax, %ecx, %eax
 	andl	%edi, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	movb	$11, %al
+func0000000000000002:                   # @func0000000000000002
+	movb	$24, %al
 	subb	%sil, %al
 	movl	$1, %ecx
 	shlxl	%eax, %ecx, %eax
 	andl	%edi, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movb	$30, %al
+func0000000000000003:                   # @func0000000000000003
+	movb	$11, %al
 	subb	%sil, %al
-	movl	$3, %ecx
+	movl	$1, %ecx
 	shlxl	%eax, %ecx, %eax
 	andl	%edi, %eax
 	retq

@@ -1,4 +1,4 @@
-func0000000000000384:                   # @func0000000000000384
+func0000000000000704:                   # @func0000000000000704
 	addq	%rdi, %rdi
 	leaq	(%rdi,%rdi,4), %rax
 	negb	%sil
@@ -6,7 +6,7 @@ func0000000000000384:                   # @func0000000000000384
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000184:                   # @func0000000000000184
+func0000000000000304:                   # @func0000000000000304
 	addq	%rdi, %rdi
 	leaq	(%rdi,%rdi,4), %rax
 	movb	$-53, %cl

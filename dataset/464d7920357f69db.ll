@@ -8,7 +8,7 @@ entry:
   %3 = fcmp ogt float %1, %2
   %4 = select i1 %3, float %1, float %2
   %5 = fcmp ogt float %4, 1.000000e+01
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = fcmp olt float %1, %2
   %4 = select i1 %3, float %1, float %2
   %5 = fcmp olt float %4, 1.000000e+03
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -52,7 +52,7 @@ entry:
   %3 = fcmp olt float %1, %2
   %4 = select i1 %3, float %1, float %2
   %5 = fcmp ugt float %4, 1.000000e+00
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -78,7 +78,7 @@ entry:
   %3 = fcmp olt float %2, %1
   %4 = select i1 %3, float %1, float %2
   %5 = fcmp ule float %4, 0.000000e+00
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

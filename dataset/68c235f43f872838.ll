@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i8 %1, 2
@@ -16,7 +16,7 @@ entry:
 ; linux/optimized/ttm_bo_util.ll
 ; linux/optimized/virtgpu_fence.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp eq i8 %1, 0

@@ -1,10 +1,11 @@
 
-; 24 occurrences:
+; 26 occurrences:
 ; cvc5/optimized/symmetry_breaker.cpp.ll
 ; hyperscan/optimized/flood_compile.cpp.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; hyperscan/optimized/rose_in_util.cpp.ll
+; icu/optimized/hebrwcal.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
@@ -13,6 +14,7 @@
 ; llvm/optimized/DwarfCFIException.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; llvm/optimized/TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; opencv/optimized/resize.cpp.ll
 ; pyo3-rs/optimized/249pdmmr5286g8h9.ll
 ; sqlite/optimized/sqlite3.ll

@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 51 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -10,7 +10,6 @@
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/AggressiveAntiDepBreaker.cpp.ll
-; llvm/optimized/Builtins.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
@@ -33,6 +32,10 @@
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_image_decoder.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; openjdk/optimized/png.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
@@ -49,7 +52,7 @@
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = lshr i32 %1, 8
@@ -67,17 +70,31 @@ entry:
 ; llvm/optimized/SemaLookup.cpp.ll
 ; ruby/optimized/hash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 983040
   %2 = icmp eq i64 %1, 65536
   ret i1 %2
 }
 
+; 2 occurrences:
+; linux/optimized/maple_tree.ll
+; llvm/optimized/Builtins.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i32
+  %2 = lshr i32 %1, 9
+  %3 = and i32 %2, 65532
+  %4 = add nsw i32 %3, -36
+  %5 = icmp samesign ult i32 %4, 1408
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 6
   %2 = icmp eq i64 %1, 2

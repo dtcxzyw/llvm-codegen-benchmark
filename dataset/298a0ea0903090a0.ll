@@ -1,12 +1,65 @@
 
-; 117 occurrences:
-; abc/optimized/dauTree.c.ll
+%"class.llvm::Use.3339754" = type { ptr, ptr, ptr, ptr }
+
+; 10 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
-; hermes/optimized/Interpreter.cpp.ll
+; libwebp/optimized/webp_enc.c.ll
+; node/optimized/libnode.node_http2.ll
+; opencv/optimized/convolution.cpp.ll
+; opencv/optimized/lapack.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/pyramids.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = inttoptr i64 %3 to ptr
+  %5 = getelementptr nusw i8, ptr %4, i64 %1
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 4 occurrences:
+; bdwgc/optimized/gc.c.ll
+; opencv/optimized/lapack.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; opencv/optimized/pyramids.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = inttoptr i64 %3 to ptr
+  %5 = getelementptr nusw i8, ptr %4, i64 %1
+  %6 = getelementptr i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 8 occurrences:
+; cpython/optimized/obmalloc.ll
+; darktable/optimized/amaze.cc.ll
+; mimalloc/optimized/segment-map.c.ll
+; mimalloc/optimized/segment.c.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; opencv/optimized/optflowgf.cpp.ll
+; opencv/optimized/stereo_binary_bm.cpp.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -64
+  %4 = inttoptr i64 %3 to ptr
+  %5 = getelementptr i8, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 102 occurrences:
+; abc/optimized/dauTree.c.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/scratch.c.ll
-; libwebp/optimized/webp_enc.c.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -34,7 +87,6 @@
 ; llvm/optimized/DeclPrinter.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
-; llvm/optimized/GVN.cpp.ll
 ; llvm/optimized/IdenticalExprChecker.cpp.ll
 ; llvm/optimized/IndexBody.cpp.ll
 ; llvm/optimized/IndexTypeSourceInfo.cpp.ll
@@ -101,64 +153,65 @@
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; node/optimized/libnode.node_http2.ll
 ; opencv/optimized/arithm.cpp.ll
-; opencv/optimized/bilateral_filter.dispatch.cpp.ll
-; opencv/optimized/convolution.cpp.ll
-; opencv/optimized/lapack.cpp.ll
-; opencv/optimized/lkpyramid.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
-; opencv/optimized/pyramids.cpp.ll
-; opencv/optimized/rlof_localflow.cpp.ll
-; opencv/optimized/stackblur.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; openusd/optimized/aom_convolve.c.ll
 ; openusd/optimized/convolve.c.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -8
+  %3 = and i64 %2, -2
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %1
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 5 occurrences:
-; bdwgc/optimized/gc.c.ll
-; linux/optimized/maple_tree.ll
+; 2 occurrences:
+; hermes/optimized/Interpreter.cpp.ll
+; llvm/optimized/TypePrinter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -4
+  %4 = inttoptr i64 %3 to ptr
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %1
+  %6 = getelementptr nusw i32, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 10 occurrences:
+; llvm/optimized/GVN.cpp.ll
+; opencv/optimized/bilateral_filter.dispatch.cpp.ll
+; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; opencv/optimized/stackblur.cpp.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 %1
-  %6 = getelementptr i64, ptr %5, i64 %0
+  %5 = getelementptr nusw %"class.llvm::Use.3339754", ptr %4, i64 %1
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3339754", ptr %5, i64 %0
   ret ptr %6
 }
 
-; 8 occurrences:
-; cpython/optimized/obmalloc.ll
-; darktable/optimized/amaze.cc.ll
-; mimalloc/optimized/segment-map.c.ll
-; mimalloc/optimized/segment.c.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
-; opencv/optimized/optflowgf.cpp.ll
-; opencv/optimized/stereo_binary_bm.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; 1 occurrences:
+; linux/optimized/maple_tree.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -64
+  %3 = and i64 %2, -256
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr i8, ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %1
+  %6 = getelementptr ptr, ptr %5, i64 %0
   ret ptr %6
 }
 

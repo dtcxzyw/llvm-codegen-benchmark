@@ -51,28 +51,17 @@ entry:
   ret ptr %6
 }
 
-; 14 occurrences:
-; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/str_split_test.cc.ll
+; 3 occurrences:
 ; cpython/optimized/_codecs_cn.ll
 ; cpython/optimized/_codecs_hk.ll
 ; cpython/optimized/_codecs_jp.ll
-; protobuf/optimized/command_line_interface.cc.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/descriptor_database.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/feature_resolver.cc.ll
-; protobuf/optimized/file.cc.ll
-; protobuf/optimized/map.cc.ll
-; protobuf/optimized/message_builder.cc.ll
-; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr i32, ptr %0, i64 %5
+  %6 = getelementptr i16, ptr %0, i64 %5
   ret ptr %6
 }
 

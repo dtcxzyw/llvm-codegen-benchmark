@@ -12,11 +12,11 @@ entry:
 }
 
 ; 6 occurrences:
+; boost/optimized/graphml.ll
 ; clamav/optimized/pdfng.c.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; curl/optimized/libcurl_la-imap.ll
 ; git/optimized/line-log.ll
-; opencv/optimized/age_gender_emotion_recognition.cpp.ll
 ; php/optimized/php_cli_server.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i1 %1, ptr %2) #0 {

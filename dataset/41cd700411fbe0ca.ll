@@ -1,6 +1,9 @@
 
-; 36 occurrences:
+; 38 occurrences:
+; abc/optimized/abcBm.c.ll
+; abc/optimized/abcSat.c.ll
 ; abc/optimized/cecSplit.c.ll
+; abc/optimized/fraCec.c.ll
 ; abc/optimized/pdrSat.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
@@ -9,7 +12,6 @@
 ; darktable/optimized/disk.c.ll
 ; folly/optimized/SSLContext.cpp.ll
 ; hdf5/optimized/H5PT.c.ll
-; linux/optimized/ht.ll
 ; linux/optimized/runtime.ll
 ; linux/optimized/vfs_inode.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -26,16 +28,16 @@
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; opencv/optimized/Morphology_1.cpp.ll
 ; openjdk/optimized/awt_ImagingLib.ll
-; proj/optimized/filemanager.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rmodels.c.ll
-; wireshark/optimized/packet-dhcp-failover.c.ll
 ; wireshark/optimized/packet-pop.c.ll
 ; wireshark/optimized/search_frame.cpp.ll
 ; yosys/optimized/ezsat.ll
 ; z3/optimized/expr_context_simplifier.cpp.ll
 ; z3/optimized/nlsat_explain.cpp.ll
 ; z3/optimized/nlsat_solver.cpp.ll
+; zed-rs/optimized/2v1crabhdzmbjmzi7m5kjh0ot.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
@@ -45,10 +47,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
-; libwebp/optimized/filter_enc.c.ll
+; 2 occurrences:
 ; linux/optimized/ata_piix.ll
-; openusd/optimized/reconintra.c.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i1 %0, i32 %1) #0 {
@@ -59,9 +59,8 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; icu/optimized/number_longnames.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; opencv/optimized/perf_rlof.cpp.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
@@ -74,6 +73,30 @@ entry:
   %narrow = select i1 %not., i1 %2, i1 false
   %3 = zext i1 %narrow to i32
   ret i32 %3
+}
+
+; 3 occurrences:
+; libwebp/optimized/filter_enc.c.ll
+; lvgl/optimized/lv_math.ll
+; openusd/optimized/reconintra.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 1
+  %3 = zext i1 %2 to i32
+  %4 = select i1 %0, i32 2, i32 %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_math.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 45
+  %3 = zext i1 %2 to i32
+  %4 = select i1 %0, i32 2, i32 %3
+  ret i32 %4
 }
 
 ; 13 occurrences:

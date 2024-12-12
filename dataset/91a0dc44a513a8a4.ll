@@ -37,7 +37,7 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; llvm/optimized/AArch64AsmBackend.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -50,12 +50,13 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
+; lvgl/optimized/lv_freetype_glyph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 8
   %3 = and i64 %2, 71776119061217280
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

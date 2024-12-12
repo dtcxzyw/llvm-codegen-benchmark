@@ -30,7 +30,7 @@ entry:
   %3 = select i1 %2, i32 32768, i32 0
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 32768
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 64 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/pdf.c.ll
@@ -10,7 +10,6 @@
 ; linux/optimized/intel_fb_pin.ll
 ; linux/optimized/intel_ring_submission.ll
 ; linux/optimized/percpu.ll
-; linux/optimized/ttm_execbuf_util.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/ParseTemplate.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
@@ -26,11 +25,11 @@
 ; llvm/optimized/VectorCombine.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/triangulate.cpp.ll
 ; openjdk/optimized/javaClasses.ll
-; openssl/optimized/hpke_test-bin-hpke_test.ll
 ; openssl/optimized/libcrypto-lib-bio_print.ll
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
@@ -70,7 +69,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -83,7 +82,7 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 6
   %4 = select i1 %1, i1 true, i1 %3
@@ -91,7 +90,22 @@ entry:
   ret i1 %5
 }
 
-; 32 occurrences:
+; 5 occurrences:
+; brotli/optimized/encode.c.ll
+; miniaudio/optimized/unity.c.ll
+; openjdk/optimized/c2_stubGenerator_x86_64_string.ll
+; openjdk/optimized/cmsalpha.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 1
+  %4 = select i1 %1, i1 true, i1 %3
+  %5 = and i1 %4, %0
+  ret i1 %5
+}
+
+; 30 occurrences:
 ; abc/optimized/sclLibUtil.c.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/pathfn.cpp.ll
@@ -116,8 +130,6 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; openjdk/optimized/freetypeScaler.ll
-; openssl/optimized/libssl-lib-s3_msg.ll
-; openssl/optimized/libssl-shlib-s3_msg.ll
 ; postgres/optimized/inet_net_ntop.ll
 ; postgres/optimized/inet_net_ntop_shlib.ll
 ; postgres/optimized/inet_net_ntop_srv.ll
@@ -127,25 +139,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %1, i1 true, i1 %3
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 6 occurrences:
-; brotli/optimized/encode.c.ll
-; miniaudio/optimized/unity.c.ll
-; openjdk/optimized/c2_stubGenerator_x86_64_string.ll
-; openjdk/optimized/cmsalpha.ll
-; raylib/optimized/raudio.c.ll
-; wireshark/optimized/packet-ixiatrailer.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 1
-  %4 = select i1 %1, i1 true, i1 %3
-  %5 = and i1 %4, %0
+  %3 = icmp ne i32 %2, 2
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 %3, i1 false
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -165,15 +162,14 @@ entry:
   %3 = icmp slt i32 %2, 0
   %not. = xor i1 %1, true
   %4 = select i1 %not., i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 40 occurrences:
+; 36 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/acecXor.c.ll
-; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/darRefact.c.ll
@@ -186,14 +182,12 @@ entry:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; gromacs/optimized/anadih.cpp.ll
@@ -202,7 +196,6 @@ entry:
 ; icu/optimized/smpdtfmt.ll
 ; icu/optimized/unistr.ll
 ; icu/optimized/utext.ll
-; ocio/optimized/FileFormatResolveCube.cpp.ll
 ; opencv/optimized/synthetic_seq.cpp.ll
 ; openjdk/optimized/disassembler.ll
 ; openmpi/optimized/coll_base_barrier.ll
@@ -216,6 +209,17 @@ entry:
   %3 = icmp sgt i32 %2, -1
   %not. = xor i1 %1, true
   %4 = select i1 %not., i1 %3, i1 false
+  %5 = and i1 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-ixiatrailer.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 12
+  %4 = select i1 %1, i1 true, i1 %3
   %5 = and i1 %4, %0
   ret i1 %5
 }

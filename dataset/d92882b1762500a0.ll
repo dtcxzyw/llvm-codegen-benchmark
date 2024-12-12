@@ -1,7 +1,6 @@
 
 ; 14 occurrences:
 ; duckdb/optimized/ub_duckdb_main_capi.cpp.ll
-; linux/optimized/reciprocal_div.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
@@ -14,6 +13,7 @@
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i32 %0, i32 %1) #0 {
 entry:
@@ -138,10 +138,11 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; linux/optimized/io_apic.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000077(i32 %0, i32 %1) #0 {
 entry:
@@ -149,6 +150,21 @@ entry:
   %3 = shl nuw i64 %2, 56
   %4 = zext nneg i32 %0 to i64
   %5 = shl nuw nsw i64 %4, 48
+  %6 = or disjoint i64 %5, %3
+  ret i64 %6
+}
+
+; 3 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003d(i32 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 8
+  %4 = zext nneg i32 %0 to i64
+  %5 = shl nuw i64 %4, 40
   %6 = or disjoint i64 %5, %3
   ret i64 %6
 }
@@ -175,19 +191,6 @@ entry:
   %3 = shl nuw nsw i64 %2, 12
   %4 = zext nneg i32 %0 to i64
   %5 = shl nuw nsw i64 %4, 44
-  %6 = or disjoint i64 %5, %3
-  ret i64 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/softfloat.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003d(i32 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 29
-  %4 = zext nneg i32 %0 to i64
-  %5 = shl nuw i64 %4, 63
   %6 = or disjoint i64 %5, %3
   ret i64 %6
 }

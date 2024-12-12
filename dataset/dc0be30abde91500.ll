@@ -14,18 +14,6 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; spike/optimized/f16_to_f32.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw nsw i64 %1, 31
-  %3 = or disjoint i64 %2, 939524096
-  %4 = add nsw i64 %3, %0
-  %5 = and i64 %4, 4286578688
-  ret i64 %5
-}
-
 ; 2 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/f64_sqrt.ll

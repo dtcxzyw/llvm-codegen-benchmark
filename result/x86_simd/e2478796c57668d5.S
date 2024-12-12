@@ -44,12 +44,33 @@ func000000000000000c:                   # @func000000000000000c
 	vpcmpeqw	.LCPI2_0(%rip), %ymm0, %k1
 	vmovdqu16	%ymm1, %ymm0 {%k1}
 	retq
+.LCPI3_0:
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+	.short	128                             # 0x80
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuw	.LCPI3_0(%rip), %ymm0, %k1
+	vpblendmw	%ymm0, %ymm1, %ymm0 {%k1}
+	retq
 func000000000000000a:                   # @func000000000000000a
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtw	%ymm2, %ymm0, %k1
 	vpblendmw	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
-.LCPI4_0:
+.LCPI5_0:
 	.short	65533                           # 0xfffd
 	.short	65533                           # 0xfffd
 	.short	65533                           # 0xfffd
@@ -67,6 +88,6 @@ func000000000000000a:                   # @func000000000000000a
 	.short	65533                           # 0xfffd
 	.short	65533                           # 0xfffd
 func0000000000000008:                   # @func0000000000000008
-	vpcmpnleuw	.LCPI4_0(%rip), %ymm0, %k1
+	vpcmpnleuw	.LCPI5_0(%rip), %ymm0, %k1
 	vpblendmw	%ymm0, %ymm1, %ymm0 {%k1}
 	retq

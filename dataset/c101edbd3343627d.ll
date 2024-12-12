@@ -1,10 +1,9 @@
 
-; 167 occurrences:
+; 171 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -167,13 +166,18 @@
 ; rocksdb/optimized/xxhash.cc.ll
 ; smol-rs/optimized/2nf71p5qpqz0dmgo.ll
 ; smol-rs/optimized/5836b0ge3mikiq0d.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = zext i64 %1 to i128
   %5 = mul nuw i128 %4, %3
-  %6 = xor i128 %5, %0
+  %6 = xor i128 %0, %5
   %7 = trunc i128 %6 to i64
   ret i64 %7
 }
@@ -186,7 +190,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = zext nneg i64 %1 to i128
   %5 = mul nuw nsw i128 %4, %3
-  %6 = xor i128 %5, %0
+  %6 = xor i128 %0, %5
   %7 = trunc i128 %6 to i64
   ret i64 %7
 }
@@ -199,7 +203,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = zext i64 %1 to i128
   %5 = mul nuw nsw i128 %4, %3
-  %6 = xor i128 %5, %0
+  %6 = xor i128 %0, %5
   %7 = trunc i128 %6 to i64
   ret i64 %7
 }

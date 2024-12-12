@@ -50,3 +50,7 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	addiw	a0, a0, 2
 	ret
+func000000000000000b:                   # @func000000000000000b
+	add	a0, a0, a1
+	addiw	a0, a0, 1
+	ret

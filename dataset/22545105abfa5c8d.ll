@@ -14,7 +14,7 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; openjdk/optimized/g1ConcurrentMark.ll
 ; openjdk/optimized/g1FullGCMarker.ll
 ; openjdk/optimized/g1ParScanThreadState.ll
@@ -24,7 +24,6 @@ entry:
 ; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
-; php/optimized/engine_combinedlcg.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:

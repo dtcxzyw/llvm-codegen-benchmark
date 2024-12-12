@@ -3,7 +3,7 @@ func000000000000007c:                   # @func000000000000007c
 	addl	%esi, %eax
 	leaq	36(%rax,%rdi), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	movzwl	%dx, %eax
 	leal	2(%rsi,%rax), %eax
 	addq	%rdi, %rax
@@ -13,7 +13,7 @@ func0000000000000000:                   # @func0000000000000000
 	leal	8(%rsi,%rax), %eax
 	addq	%rdi, %rax
 	retq
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	leaq	2(%rax,%rdi), %rax

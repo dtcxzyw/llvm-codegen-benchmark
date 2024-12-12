@@ -11,7 +11,6 @@
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -21,6 +20,7 @@
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/math.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

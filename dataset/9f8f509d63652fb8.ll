@@ -101,11 +101,12 @@
 define i1 @func0000000000000002(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 28 occurrences:
+; 30 occurrences:
+; boost/optimized/text_file_backend.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; icu/optimized/ucnv_ext.ll
 ; icu/optimized/ustring.ll
@@ -128,6 +129,7 @@ entry:
 ; rustfmt-rs/optimized/4gk399kploc9gcsb.ll
 ; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/search.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; wasmtime-rs/optimized/33slbp9da8waph2q.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/4cnvf14b3xea7eab.ll
@@ -138,11 +140,12 @@ entry:
 define i1 @func0000000000000018(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 25 occurrences:
+; 26 occurrences:
+; arrow/optimized/int_util.cc.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; freetype/optimized/autofit.c.ll
@@ -172,11 +175,12 @@ entry:
 define i1 @func0000000000000014(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp sgt i16 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; arrow/optimized/int_util.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -195,7 +199,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -206,11 +210,12 @@ entry:
 define i1 @func0000000000000016(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp sge i16 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 23 occurrences:
+; 25 occurrences:
+; arrow/optimized/int_util.cc.ll
 ; bullet3/optimized/b3OptimizedBvh.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btOptimizedBvh.ll
@@ -232,13 +237,14 @@ entry:
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/relcache.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -257,6 +263,7 @@ entry:
 }
 
 ; 25 occurrences:
+; arrow/optimized/int_util.cc.ll
 ; bullet3/optimized/b3OptimizedBvh.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btOptimizedBvh.ll
@@ -276,7 +283,6 @@ entry:
 ; minetest/optimized/connection.cpp.ll
 ; nanobind/optimized/nb_func.cpp.ll
 ; openjdk/optimized/cmsopt.ll
-; postgres/optimized/gistvacuum.ll
 ; postgres/optimized/nbtinsert.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wireshark/optimized/packet-isis-lsp.c.ll
@@ -298,7 +304,7 @@ entry:
 define i1 @func000000000000000e(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp sle i16 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -314,7 +320,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ule i16 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

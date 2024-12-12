@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; gromacs/optimized/forcerec.cpp.ll
 ; linux/optimized/ds.ll
@@ -20,7 +20,6 @@
 ; openusd/optimized/primIndex.cpp.ll
 ; qemu/optimized/hw_char_virtio-serial-bus.c.ll
 ; redis/optimized/server.ll
-; rocksdb/optimized/clock_cache.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
@@ -32,9 +31,8 @@ entry:
   ret i64 %5
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
-; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/rmap.ll
 ; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll

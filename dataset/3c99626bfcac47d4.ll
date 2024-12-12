@@ -17,12 +17,13 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; flac/optimized/encode.c.ll
 ; git/optimized/userdiff.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; openjdk/optimized/salibelf.ll
 ; openssl/optimized/hpke_test-bin-hpke_test.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -33,13 +34,12 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; graphviz/optimized/strmatch.c.ll
-; icu/optimized/ubidiwrt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, -5
+  %3 = icmp ult i32 %2, -10
   %4 = select i1 %1, i1 %3, i1 false
   %5 = select i1 %4, i1 %0, i1 false
   %6 = zext i1 %5 to i32

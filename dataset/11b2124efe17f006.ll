@@ -27,7 +27,7 @@ entry:
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; flac/optimized/foreign_metadata.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, 128
   %2 = icmp ne i64 %.mask, 0
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_colorin.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i62
   %3 = icmp ult i62 %2, 20
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestFixedString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i63
   %3 = icmp ugt i63 %2, 126

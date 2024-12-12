@@ -1,4 +1,4 @@
-func00000000000001ac:                   // @func00000000000001ac
+func000000000000054c:                   // @func000000000000054c
 // %bb.0:                               // %entry
 	sub	w8, w2, #1
 	cmp	x0, #0
@@ -6,7 +6,7 @@ func00000000000001ac:                   // @func00000000000001ac
 	cset	w0, gt
 	ret
                                         // -- End function
-func000000000000036c:                   // @func000000000000036c
+func0000000000000ccc:                   // @func0000000000000ccc
 // %bb.0:                               // %entry
 	add	w8, w2, #1
 	cmp	x0, #0
@@ -14,7 +14,7 @@ func000000000000036c:                   // @func000000000000036c
 	cset	w0, lt
 	ret
                                         // -- End function
-func000000000000006c:                   // @func000000000000006c
+func00000000000000cc:                   // @func00000000000000cc
 // %bb.0:                               // %entry
 	add	w8, w2, #1
 	cmp	x0, #0
@@ -22,7 +22,7 @@ func000000000000006c:                   // @func000000000000006c
 	cset	w0, lt
 	ret
                                         // -- End function
-func00000000000003c6:                   // @func00000000000003c6
+func0000000000000d86:                   // @func0000000000000d86
 // %bb.0:                               // %entry
 	add	w8, w2, #1
 	cmp	w8, w0
@@ -30,7 +30,7 @@ func00000000000003c6:                   // @func00000000000003c6
 	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000001ca:                   // @func00000000000001ca
+func000000000000058a:                   // @func000000000000058a
 // %bb.0:                               // %entry
 	sub	w8, w2, #4
 	cmp	w8, w0
@@ -38,7 +38,7 @@ func00000000000001ca:                   // @func00000000000001ca
 	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000002c4:                   // @func00000000000002c4
+func0000000000000984:                   // @func0000000000000984
 // %bb.0:                               // %entry
 	add	w8, w2, #1
 	cmp	w8, w0

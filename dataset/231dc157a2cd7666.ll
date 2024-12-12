@@ -9,7 +9,7 @@ entry:
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
   %6 = xor i64 %5, -1
-  %7 = and i64 %6, %0
+  %7 = and i64 %0, %6
   ret i64 %7
 }
 
@@ -24,7 +24,7 @@ entry:
   %4 = and i64 %3, 63
   %5 = shl nsw i64 -1, %4
   %6 = xor i64 %5, -1
-  %7 = and i64 %6, %0
+  %7 = and i64 %0, %6
   ret i64 %7
 }
 
@@ -37,7 +37,7 @@ entry:
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
   %6 = xor i64 %5, -1
-  %7 = and i64 %6, %0
+  %7 = and i64 %0, %6
   ret i64 %7
 }
 

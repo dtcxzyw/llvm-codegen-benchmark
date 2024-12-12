@@ -5,7 +5,7 @@
 ; rust-analyzer-rs/optimized/55szrkbrq7kolv5z.ll
 ; wasmtime-rs/optimized/377rrvl9zeztt32x.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000481(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -2
   %4 = icmp ult i32 %1, 5

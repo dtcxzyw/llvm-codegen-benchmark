@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 13 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; libquic/optimized/v3_utl.c.ll
 ; linux/optimized/drm_mm.ll
@@ -10,6 +10,9 @@
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/mpf.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -20,7 +23,8 @@ entry:
   ret i1 %6
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/numeric.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
 ; mold/optimized/icf.cc.I386.cc.ll
 ; mold/optimized/icf.cc.LOONGARCH32.cc.ll

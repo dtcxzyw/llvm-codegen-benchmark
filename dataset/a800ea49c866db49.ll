@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 22 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/ucnv2022.ll
 ; icu/optimized/uloc.ll
@@ -20,8 +20,6 @@
 ; pybind11/optimized/test_builtin_casters.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
-; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
-; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wireshark/optimized/packet-umts_mac.c.ll
 ; Function Attrs: nounwind

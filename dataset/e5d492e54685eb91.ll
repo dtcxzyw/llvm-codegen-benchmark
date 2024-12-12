@@ -3,12 +3,12 @@
 ; cmake/optimized/huf_compress.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw [14 x i32], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [14 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

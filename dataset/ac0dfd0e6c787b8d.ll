@@ -5,7 +5,7 @@
 ; darktable/optimized/introspection_toneequal.c.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, float %1) #0 {
+define i1 @func0000000000000041(i64 %0, float %1) #0 {
 entry:
   %2 = fptoui float %1 to i64
   %3 = add nuw i64 %0, 1

@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 60 occurrences:
 ; abc/optimized/amapPerm.c.ll
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -58,6 +58,8 @@
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; velox/optimized/CastExpr.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i16 %0) #0 {
 entry:

@@ -8,7 +8,7 @@ func000000000000002a:                   # @func000000000000002a
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	ret
-func000000000000006b:                   # @func000000000000006b
+func00000000000000ab:                   # @func00000000000000ab
 	andi	a1, a1, 1
 	sext.w	a3, a0
 	sgtz	a3, a3

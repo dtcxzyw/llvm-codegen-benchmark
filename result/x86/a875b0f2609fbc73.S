@@ -13,6 +13,11 @@ func0000000000000008:                   # @func0000000000000008
 	cmpw	%di, %si
 	seta	%al
 	retq
+func0000000000000101:                   # @func0000000000000101
+	shrl	$16, %esi
+	cmpw	%di, %si
+	sete	%al
+	retq
 func0000000000000004:                   # @func0000000000000004
 	shrl	$3, %esi
 	cmpw	%di, %si

@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
@@ -20,7 +20,6 @@
 ; openusd/optimized/ray.cpp.ll
 ; postgres/optimized/costsize.ll
 ; postgres/optimized/varlena.ll
-; proj/optimized/cs2cs.cpp.ll
 ; quantlib/optimized/exponentialjump1dmesher.ll
 ; quantlib/optimized/gaussian1dcapfloorengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll

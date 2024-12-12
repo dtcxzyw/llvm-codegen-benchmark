@@ -49,7 +49,7 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000000f:                   # @func000000000000000f
 	vpbroadcastd	.LCPI1_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
 	vpand	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpand	%ymm3, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
@@ -88,7 +88,7 @@ func000000000000000c:                   # @func000000000000000c
 	.long	12                              # 0xc
 func000000000000000d:                   # @func000000000000000d
 	vpandd	.LCPI5_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpandd	.LCPI5_1(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

@@ -6,7 +6,7 @@
 define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, -1
-  %3 = icmp ult i8 %2, %0
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 
@@ -22,17 +22,26 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
-; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/Format.cpp.ll
+; 2 occurrences:
 ; llvm/optimized/MCELFStreamer.cpp.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
-; openusd/optimized/path.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, -1
-  %3 = icmp ugt i8 %2, %0
+  %3 = icmp ult i8 %0, %2
+  ret i1 %3
+}
+
+; 3 occurrences:
+; llvm/optimized/AArch64FrameLowering.cpp.ll
+; llvm/optimized/Format.cpp.ll
+; openusd/optimized/path.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
+entry:
+  %2 = xor i8 %1, 1
+  %3 = icmp samesign ult i8 %0, %2
   ret i1 %3
 }
 

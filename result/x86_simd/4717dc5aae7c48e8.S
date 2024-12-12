@@ -1,5 +1,5 @@
 .LCPI0_0:
-	.quad	8                               # 0x8
+	.quad	-8                              # 0xfffffffffffffff8
 func0000000000000005:                   # @func0000000000000005
 	vpmovsxdq	%xmm0, %ymm0
 	vpsllq	$3, %ymm0, %ymm0

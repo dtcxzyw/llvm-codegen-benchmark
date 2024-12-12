@@ -1,30 +1,17 @@
-func00000000000000cc:                   // @func00000000000000cc
+func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
 	mov	w8, #34953                      // =0x8889
-	movi	v7.4s, #60
 	movk	w8, #34952, lsl #16
-	dup	v3.4s, w8
-	smull2	v4.2d, v1.4s, v3.4s
-	smull	v5.2d, v1.2s, v3.2s
-	smull2	v6.2d, v2.4s, v3.4s
-	smull	v3.2d, v2.2s, v3.2s
-	uzp2	v4.4s, v5.4s, v4.4s
-	uzp2	v3.4s, v3.4s, v6.4s
-	add	v4.4s, v4.4s, v1.4s
-	add	v3.4s, v3.4s, v2.4s
-	sshr	v5.4s, v4.4s, #5
-	sshr	v6.4s, v3.4s, #5
-	usra	v5.4s, v4.4s, #31
-	usra	v6.4s, v3.4s, #31
-	mls	v1.4s, v5.4s, v7.4s
-	mls	v2.4s, v6.4s, v7.4s
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v2.4s, v2.4s, #0
-	uzp1	v1.8h, v1.8h, v2.8h
-	movi	v2.8b, #3
-	mvn	v1.16b, v1.16b
-	cmeq	v0.8b, v0.8b, v2.8b
-	xtn	v1.8b, v1.8h
-	orn	v0.8b, v1.8b, v0.8b
+	smull	x8, w1, w8
+	lsr	x8, x8, #32
+	add	w8, w8, w1
+	asr	w9, w8, #5
+	add	w8, w9, w8, lsr #31
+	mov	w9, #60                         // =0x3c
+	msub	w8, w8, w9, w1
+	and	w9, w0, #0xff
+	cmp	w9, #3
+	ccmp	w8, #0, #0, eq
+	cset	w0, ne
 	ret
                                         // -- End function

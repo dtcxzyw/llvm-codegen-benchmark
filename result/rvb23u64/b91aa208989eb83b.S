@@ -29,6 +29,13 @@ func00000000000000bb:                   # @func00000000000000bb
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
+func0000000000000088:                   # @func0000000000000088
+	fli.d	fa5, 2.0
+	feq.d	a1, fa1, fa5
+	feq.d	a2, fa0, fa5
+	or	a1, a1, a2
+	or	a0, a0, a1
+	ret
 func0000000000000022:                   # @func0000000000000022
 	fmin.d	fa5, fa0, fa1
 	fmv.d.x	fa4, zero
@@ -49,13 +56,6 @@ func0000000000000087:                   # @func0000000000000087
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
-	ret
-func0000000000000088:                   # @func0000000000000088
-	fli.d	fa5, inf
-	feq.d	a1, fa1, fa5
-	feq.d	a2, fa0, fa5
-	or	a1, a1, a2
-	or	a0, a0, a1
 	ret
 .LCPI7_0:
 	.quad	0x402921fb54442d18              # double 12.566370614359172

@@ -7,7 +7,7 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a2, a2, 7
 	add	a0, a0, a2
 	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	sltiu	a1, a1, 100
 	xori	a1, a1, 1
 	sh3add	a0, a1, a0
@@ -31,7 +31,7 @@ func0000000000000007:                   # @func0000000000000007
 	sub	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	sltiu	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 1
@@ -71,6 +71,19 @@ func0000000000000020:                   # @func0000000000000020
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	ret
+func0000000000000033:                   # @func0000000000000033
+	lui	a2, 122070
+	addiw	a2, a2, 1280
+	czero.eqz	a1, a2, a1
+	add	a0, a0, a1
+	ret
+func0000000000000010:                   # @func0000000000000010
+	srli	a1, a1, 32
+	li	a2, 8
+	czero.eqz	a1, a2, a1
+	add	a0, a0, a1
+	addi	a0, a0, 32
+	ret
 func0000000000000031:                   # @func0000000000000031
 	snez	a1, a1
 	sh3add	a0, a1, a0
@@ -98,6 +111,13 @@ func0000000000000021:                   # @func0000000000000021
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
+func0000000000000051:                   # @func0000000000000051
+	sltiu	a1, a1, 513
+	li	a2, 56
+	czero.nez	a1, a2, a1
+	add	a0, a0, a1
+	addi	a0, a0, 8
+	ret
 func0000000000000023:                   # @func0000000000000023
 	sltiu	a1, a1, 1024
 	xori	a1, a1, 1
@@ -110,4 +130,11 @@ func000000000000002b:                   # @func000000000000002b
 	slt	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 1
+	ret
+func0000000000000052:                   # @func0000000000000052
+	sltiu	a1, a1, 9
+	li	a2, 3
+	czero.nez	a1, a2, a1
+	add	a0, a0, a1
+	addi	a0, a0, 3
 	ret

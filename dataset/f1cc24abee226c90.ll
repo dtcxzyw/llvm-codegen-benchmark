@@ -14,17 +14,28 @@ entry:
 
 ; 6 occurrences:
 ; libpng/optimized/pngread.c.ll
-; linux/optimized/eht.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll
+; minetest/optimized/voxel.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i8 %0, i8 %1
-  %5 = add nuw nsw i8 %4, 3
+  %5 = add nuw nsw i8 %4, 87
+  ret i8 %5
+}
+
+; 1 occurrences:
+; minetest/optimized/voxelalgorithms.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000005(i8 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp eq i8 %2, 0
+  %4 = select i1 %3, i8 %0, i8 %1
+  %5 = add nsw i8 %4, -1
   ret i8 %5
 }
 

@@ -10,7 +10,7 @@ func0000000000000075:                   # @func0000000000000075
 	.long	1013904243                      # 0x3c6ef373
 func0000000000000070:                   # @func0000000000000070
 	vpslld	$8, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -33,5 +33,5 @@ func0000000000000074:                   # @func0000000000000074
 	vpaddd	%ymm2, %ymm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpternlogd	$30, %ymm1, %ymm2, %ymm3 # ymm3 = ymm3 ^ (ymm2 | ymm1)
-	vpaddd	%ymm0, %ymm3, %ymm0
+	vpaddd	%ymm3, %ymm0, %ymm0
 	retq

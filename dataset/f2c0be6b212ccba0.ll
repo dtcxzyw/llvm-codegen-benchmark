@@ -1,34 +1,44 @@
 
-%struct.GC_hblk_s.2591436 = type { [4096 x i8] }
-%"class.llvm::SmallVector.4.2944435" = type { %"class.llvm::SmallVectorImpl.5.2944436", %"struct.llvm::SmallVectorStorage.8.2944437" }
-%"class.llvm::SmallVectorImpl.5.2944436" = type { %"class.llvm::SmallVectorTemplateBase.6.2944438" }
-%"class.llvm::SmallVectorTemplateBase.6.2944438" = type { %"class.llvm::SmallVectorTemplateCommon.7.2944439" }
-%"class.llvm::SmallVectorTemplateCommon.7.2944439" = type { %"class.llvm::SmallVectorBase.2944408" }
-%"class.llvm::SmallVectorBase.2944408" = type { ptr, i32, i32 }
-%"struct.llvm::SmallVectorStorage.8.2944437" = type { [32 x i8] }
+%struct.GC_hblk_s.2705275 = type { [4096 x i8] }
+%"class.llvm::SmallVector.4.3138012" = type { %"class.llvm::SmallVectorImpl.5.3138013", %"struct.llvm::SmallVectorStorage.8.3138014" }
+%"class.llvm::SmallVectorImpl.5.3138013" = type { %"class.llvm::SmallVectorTemplateBase.6.3138015" }
+%"class.llvm::SmallVectorTemplateBase.6.3138015" = type { %"class.llvm::SmallVectorTemplateCommon.7.3138016" }
+%"class.llvm::SmallVectorTemplateCommon.7.3138016" = type { %"class.llvm::SmallVectorBase.3137985" }
+%"class.llvm::SmallVectorBase.3137985" = type { ptr, i32, i32 }
+%"struct.llvm::SmallVectorStorage.8.3138014" = type { [32 x i8] }
 
 ; 1 occurrences:
 ; ruby/optimized/thread.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000085(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000105(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = icmp ult ptr %3, %0
+  %4 = icmp ugt ptr %0, %3
   %5 = icmp ule ptr %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
 }
 
-; 4 occurrences:
-; mitsuba3/optimized/blender.cpp.ll
+; 2 occurrences:
 ; mitsuba3/optimized/mesh.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000082c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp ne ptr %3, %0
+  %4 = icmp ne ptr %0, %3
+  %5 = icmp eq ptr %0, %1
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; mitsuba3/optimized/blender.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000c2c(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = icmp ne ptr %0, %3
   %5 = icmp eq ptr %0, %1
   %6 = and i1 %4, %5
   ret i1 %6
@@ -37,10 +47,10 @@ entry:
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000294(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000d24(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct.GC_hblk_s.2591436, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %3 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %1, i64 %2
+  %4 = icmp ult ptr %0, %3
   %5 = icmp uge ptr %0, %1
   %6 = and i1 %4, %5
   ret i1 %6
@@ -49,10 +59,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/frame_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000298(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000928(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = icmp ule ptr %3, %1
+  %4 = icmp uge ptr %1, %3
   %5 = icmp ugt ptr %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -193,10 +203,10 @@ entry:
 ; wireshark/optimized/wireshark_zip_helper.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000089(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = icmp uge ptr %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -205,16 +215,29 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000259(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000ca9(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp uge ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = icmp ule ptr %0, %3
   %5 = icmp uge ptr %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
 }
 
-; 636 occurrences:
+; 2 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000c89(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = icmp ult ptr %0, %3
+  %5 = icmp uge ptr %0, %1
+  %6 = and i1 %5, %4
+  ret i1 %6
+}
+
+; 635 occurrences:
 ; graphviz/optimized/csettings.cpp.ll
 ; graphviz/optimized/mainwindow.cpp.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
@@ -660,7 +683,6 @@ entry:
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
@@ -852,10 +874,10 @@ entry:
 ; llvm/optimized/ZOS.cpp.ll
 ; llvm/optimized/cc1_main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000249(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000889(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::SmallVector.4.2944435", ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %3 = getelementptr nusw %"class.llvm::SmallVector.4.3138012", ptr %1, i64 %2
+  %4 = icmp ult ptr %0, %3
   %5 = icmp uge ptr %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -865,10 +887,10 @@ entry:
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000248(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000888(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = icmp ugt ptr %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -877,10 +899,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/charstr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000245(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000885(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = icmp ugt ptr %3, %1
+  %4 = icmp ult ptr %1, %3
   %5 = icmp ule ptr %0, %1
   %6 = and i1 %5, %4
   ret i1 %6

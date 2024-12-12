@@ -6,7 +6,7 @@
 define i16 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 3
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -20,12 +20,12 @@ entry:
 define i16 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; icu/optimized/ucnv_u7.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
@@ -47,7 +47,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -74,7 +73,7 @@ entry:
 define i16 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 26
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
@@ -88,7 +87,7 @@ entry:
 define i16 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -99,7 +98,7 @@ entry:
 define i16 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }

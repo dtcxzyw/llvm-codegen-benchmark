@@ -4,7 +4,7 @@
 ; ruby/optimized/iseq.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 %0, i64 %1
@@ -28,7 +28,7 @@ entry:
 ; linux/optimized/xfrm_policy.ll
 ; postgres/optimized/xlog.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 %0, i64 %1

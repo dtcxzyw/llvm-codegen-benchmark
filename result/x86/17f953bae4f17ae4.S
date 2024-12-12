@@ -5,7 +5,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000005:                   # @func0000000000000005
 	notq	%rdx
-	cmpq	%rsi, %rdx
-	setae	%al
+	cmpq	%rdx, %rsi
+	setbe	%al
 	andb	%dil, %al
 	retq

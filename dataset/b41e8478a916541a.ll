@@ -1,7 +1,9 @@
 
-; 80 occurrences:
+; 82 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/area.ll
 ; clamav/optimized/sigtool.c.ll
 ; cvc5/optimized/arith_entail.cpp.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
@@ -135,6 +137,7 @@ entry:
 ; git/optimized/bisect.ll
 ; graphviz/optimized/arrows.c.ll
 ; gromacs/optimized/modularsimulator.cpp.ll
+; gromacs/optimized/tng_io.c.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; hermes/optimized/ESTreeIRGen-expr.cpp.ll
 ; hyperscan/optimized/rose_in_util.cpp.ll
@@ -163,7 +166,6 @@ entry:
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; php/optimized/zend_jit.ll
-; postgres/optimized/exec.ll
 ; postgres/optimized/planner.ll
 ; proj/optimized/geodesic.c.ll
 ; qemu/optimized/.._libqtest.c.ll
@@ -183,27 +185,8 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
-; hyperscan/optimized/fdr_engine_description.cpp.ll
-; llvm/optimized/AArch64FastISel.cpp.ll
-; llvm/optimized/Clang.cpp.ll
-; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; nori/optimized/screen.cpp.ll
-; openmpi/optimized/pmix_mca_base_components_register.ll
-; php/optimized/pcre2_match.ll
-; recastnavigation/optimized/RecastFilter.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i32 %0, i1 %1) #0 {
-entry:
-  %2 = xor i1 %1, true
-  %3 = icmp ugt i32 %0, 1073741823
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
-; llvm/optimized/DWARFVerifier.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
@@ -213,6 +196,23 @@ define i1 @func0000000000000008(i32 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = icmp ult i32 %0, 2
+  %4 = or i1 %3, %2
+  ret i1 %4
+}
+
+; 7 occurrences:
+; hyperscan/optimized/fdr_engine_description.cpp.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; nori/optimized/screen.cpp.ll
+; openmpi/optimized/pmix_mca_base_components_register.ll
+; recastnavigation/optimized/RecastFilter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000010(i32 %0, i1 %1) #0 {
+entry:
+  %2 = xor i1 %1, true
+  %3 = icmp ugt i32 %0, 67108863
   %4 = or i1 %3, %2
   ret i1 %4
 }

@@ -1,10 +1,10 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$7, %edx
 	xorl	%edi, %edx
 	orl	%esi, %edx
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	andl	$63, %edx
 	cmpl	%edi, %edx
 	sete	%cl
@@ -12,7 +12,7 @@ func0000000000000041:                   # @func0000000000000041
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	andl	$1, %edx
 	cmpl	%edi, %edx
 	setne	%cl
@@ -20,7 +20,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	andl	$1, %edx
 	cmpl	%edi, %edx
 	sete	%cl
@@ -28,15 +28,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
-	andl	$4095, %edx                     # imm = 0xFFF
-	cmpl	%edi, %edx
-	setb	%cl
-	cmpl	$4096, %esi                     # imm = 0x1000
-	setb	%al
-	andb	%cl, %al
-	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	movzwl	%dx, %eax
 	cmpl	%edi, %eax
 	setb	%cl
@@ -44,7 +36,7 @@ func0000000000000014:                   # @func0000000000000014
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000194:                   # @func0000000000000194
 	movzbl	%dl, %eax
 	cmpl	%edi, %eax
 	setb	%cl
@@ -52,7 +44,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andl	$1792, %edx                     # imm = 0x700
 	cmpl	%edi, %edx
 	setne	%cl

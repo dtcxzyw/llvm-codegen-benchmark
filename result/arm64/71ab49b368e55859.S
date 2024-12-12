@@ -1,34 +1,30 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	bic	v4.8h, #255, lsl #8
-	bic	v5.8h, #255, lsl #8
-	mla	v0.8h, v4.8h, v2.8h
-	mla	v1.8h, v5.8h, v3.8h
+	and	w8, w2, #0xff
+	madd	w0, w8, w1, w0
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	bic	v4.8h, #255, lsl #8
-	bic	v5.8h, #255, lsl #8
-	mla	v0.8h, v4.8h, v2.8h
-	mla	v1.8h, v5.8h, v3.8h
+	and	w8, w2, #0xff
+	madd	w0, w8, w1, w0
+	ret
+                                        // -- End function
+func000000000000000f:                   // @func000000000000000f
+// %bb.0:                               // %entry
+	and	w8, w2, #0x3f
+	madd	w0, w1, w8, w0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v6.8h, #15
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	mla	v0.8h, v4.8h, v2.8h
-	mla	v1.8h, v5.8h, v3.8h
+	and	w8, w2, #0xf
+	madd	w0, w8, w1, w0
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	movi	v6.8h, #31
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	mla	v0.8h, v4.8h, v2.8h
-	mla	v1.8h, v5.8h, v3.8h
+	and	w8, w2, #0x1f
+	madd	w0, w8, w1, w0
 	ret
                                         // -- End function

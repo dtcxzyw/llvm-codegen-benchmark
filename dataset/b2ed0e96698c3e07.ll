@@ -14,7 +14,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
   %.neg = xor i32 %5, -1
-  %6 = add i32 %.neg, %0
+  %6 = add i32 %0, %.neg
   ret i32 %6
 }
 

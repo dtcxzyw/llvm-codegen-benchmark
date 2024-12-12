@@ -1,14 +1,14 @@
 func0000000000000000:                   # @func0000000000000000
-	lui	a3, 478667
-	addi	a3, a3, 771
+	lui	a3, 286655
+	addi	a3, a3, -1725
 	mul	a2, a2, a3
-	lui	a3, 648450
+	lui	a3, 923401
 	xor	a1, a1, a2
-	lui	a2, 820746
-	addi	a3, a3, -829
+	lui	a2, 37535
+	addi	a3, a3, -1731
 	mul	a1, a1, a3
 	xor	a0, a0, a1
-	addi	a1, a2, 991
+	addi	a1, a2, -1217
 	mulw	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014

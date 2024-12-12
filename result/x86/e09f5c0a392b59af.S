@@ -1,4 +1,4 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	movsbq	%sil, %rax
 	cmpq	%rsi, %rax
 	sete	%cl
@@ -6,7 +6,7 @@ func000000000000004c:                   # @func000000000000004c
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addq	$-48, %rsi
 	cmpq	$-47, %rsi
 	setb	%cl
@@ -14,21 +14,21 @@ func0000000000000041:                   # @func0000000000000041
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpq	$1, %rsi
 	sete	%cl
 	testw	%di, %di
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000311:                   # @func0000000000000311
+func0000000000000c21:                   # @func0000000000000c21
 	cmpq	$18, %rsi
 	sete	%cl
 	testw	%di, %di
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000031c:                   # @func000000000000031c
+func0000000000000c2c:                   # @func0000000000000c2c
 	cmpq	$2, %rsi
 	sete	%cl
 	testw	%di, %di

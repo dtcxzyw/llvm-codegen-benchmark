@@ -1,4 +1,4 @@
-func000000000000071c:                   # @func000000000000071c
+func0000000000001c2c:                   # @func0000000000001c2c
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -7,7 +7,7 @@ func000000000000071c:                   # @func000000000000071c
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000711:                   # @func0000000000000711
+func0000000000001c21:                   # @func0000000000001c21
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -16,7 +16,7 @@ func0000000000000711:                   # @func0000000000000711
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000311:                   # @func0000000000000311
+func0000000000000c21:                   # @func0000000000000c21
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi

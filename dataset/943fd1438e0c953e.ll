@@ -1,16 +1,15 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaBalAig.c.ll
 ; icu/optimized/collationfastlatin.ll
-; postgres/optimized/reorderbuffer.ll
 ; postgres/optimized/tsvector_op.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ult i32 %2, %0
   %4 = select i1 %3, i32 -86400, i32 86400
   ret i32 %4
 }
@@ -48,18 +47,39 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; icu/optimized/collationfastlatin.ll
-; linux/optimized/keyboard.ll
 ; llvm/optimized/TargetLowering.cpp.ll
-; postgres/optimized/tsrank.ll
-; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -8
   %3 = icmp ugt i32 %2, %0
   %4 = select i1 %3, i32 191, i32 189
+  ret i32 %4
+}
+
+; 3 occurrences:
+; linux/optimized/keyboard.ll
+; postgres/optimized/tsrank.ll
+; postgres/optimized/tsvector_op.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 255
+  %3 = icmp samesign ugt i32 %2, %0
+  %4 = select i1 %3, i32 -22, i32 0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; postgres/optimized/reorderbuffer.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 1073741823
+  %3 = icmp ult i32 %2, %0
+  %4 = select i1 %3, i32 18, i32 16
   ret i32 %4
 }
 

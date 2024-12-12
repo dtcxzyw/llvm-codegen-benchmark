@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/build_policy.ll
 ; openjdk/optimized/genArguments.ll
-; php/optimized/zend_call_stack.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:

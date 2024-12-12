@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 24 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; box2d/optimized/b2_world.cpp.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -22,6 +22,8 @@
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

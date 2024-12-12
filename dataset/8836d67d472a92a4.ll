@@ -30,30 +30,6 @@ entry:
 }
 
 ; 1 occurrences:
-; openusd/optimized/scale_common.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000006f(i16 %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw nsw i32 %1, 9
-  %3 = add nuw nsw i32 %2, 8
-  %4 = zext i16 %0 to i32
-  %5 = add nuw nsw i32 %3, %4
-  ret i32 %5
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-sdh.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000007f(i16 %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw nsw i32 %1, 3
-  %3 = add nuw nsw i32 %2, 819
-  %4 = zext nneg i16 %0 to i32
-  %5 = add nuw nsw i32 %3, %4
-  ret i32 %5
-}
-
-; 1 occurrences:
 ; icu/optimized/dayperiodrules.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000075(i16 %0, i32 %1) #0 {

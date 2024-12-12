@@ -41,7 +41,7 @@ entry:
 ; openusd/optimized/fast-dtoa.cc.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0) #0 {
+define i64 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
   %2 = icmp eq i64 %1, 0

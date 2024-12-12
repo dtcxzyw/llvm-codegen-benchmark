@@ -10,7 +10,7 @@ func0000000000000004:                   # @func0000000000000004
 	sete	%cl
 	shrb	%cl, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	movl	%edi, %eax
 	cmpl	$61, %esi
 	setb	%cl

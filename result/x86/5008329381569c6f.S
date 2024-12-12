@@ -4,10 +4,10 @@ func0000000000000001:                   # @func0000000000000001
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	andl	$1023, %edx                     # imm = 0x3FF
-	cmpw	$47, %dx
-	setb	%al
-	andb	%dil, %sil
-	andb	%sil, %al
+func000000000000000c:                   # @func000000000000000c
+	movl	%edi, %eax
+	andl	$64, %edx
+	shrl	$6, %edx
+	andl	%esi, %eax
+	andl	%edx, %eax
 	retq

@@ -1,10 +1,9 @@
 
-%struct.vhost_virtqueue.2592196 = type { i32, i32, ptr, ptr, ptr, i32, i64, i32, i64, i32, i64, i32, %struct.EventNotifier.2592197, %struct.EventNotifier.2592197, %struct.EventNotifier.2592197, ptr }
-%struct.EventNotifier.2592197 = type { i32, i32, i8 }
-%struct.OnigMatchParamStruct.2596902 = type { i32, i64, i64, ptr, ptr, ptr, i32, ptr, i32 }
-%struct.Gia_Obj_t_.2764409 = type <{ i64, i32 }>
-%struct.lua_TValue.2808887 = type { %union.Value.2808888, [1 x i32], i32 }
-%union.Value.2808888 = type { ptr }
+%struct.vhost_virtqueue.2705977 = type { i32, i32, ptr, ptr, ptr, i32, i64, i32, i64, i32, i64, i32, %struct.EventNotifier.2705978, %struct.EventNotifier.2705978, %struct.EventNotifier.2705978, ptr }
+%struct.EventNotifier.2705978 = type { i32, i32, i8 }
+%struct.OnigMatchParamStruct.2710352 = type { i32, i64, i64, ptr, ptr, ptr, i32, ptr, i32 }
+%"class.btConvexHullComputer::Edge.2817933" = type { i32, i32, i32 }
+%struct.Gia_Obj_t_.2876669 = type <{ i64, i32 }>
 
 ; 2 occurrences:
 ; qemu/optimized/hw_virtio_vhost.c.ll
@@ -13,12 +12,38 @@
 define ptr @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.vhost_virtqueue.2592196, ptr %1, i64 %3
-  %5 = getelementptr %struct.vhost_virtqueue.2592196, ptr %4, i64 %0, i32 12
+  %4 = getelementptr %struct.vhost_virtqueue.2705977, ptr %1, i64 %3
+  %5 = getelementptr %struct.vhost_virtqueue.2705977, ptr %4, i64 %0, i32 12
   ret ptr %5
 }
 
-; 100 occurrences:
+; 16 occurrences:
+; assimp/optimized/HL1MDLLoader.cpp.ll
+; freetype/optimized/sdf.c.ll
+; git/optimized/diffcore-rename.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; jq/optimized/regexec.ll
+; lightgbm/optimized/tree.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; oniguruma/optimized/regexec.ll
+; opencv/optimized/resize.cpp.ll
+; openmpi/optimized/topo_base_dist_graph_create.ll
+; openspiel/optimized/DealerPar.cpp.ll
+; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw ptr, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw %struct.OnigMatchParamStruct.2710352, ptr %4, i64 %0, i32 7
+  ret ptr %5
+}
+
+; 93 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcHieCec.c.ll
@@ -99,23 +124,16 @@ entry:
 ; abc/optimized/utilBridge.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlnRead.c.ll
-; assimp/optimized/HL1MDLLoader.cpp.ll
 ; bullet3/optimized/btPolyhedralConvexShape.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; freetype/optimized/sdf.c.ll
-; git/optimized/diffcore-rename.ll
 ; imgui/optimized/imgui_draw.cpp.ll
-; jq/optimized/regexec.ll
-; lightgbm/optimized/tree.cpp.ll
+; luau/optimized/CodeGenUtils.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
-; oniguruma/optimized/regexec.ll
-; opencv/optimized/resize.cpp.ll
 ; openmpi/optimized/topo_base_dist_graph_create.ll
-; openspiel/optimized/DealerPar.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
 ; raylib/optimized/rtext.c.ll
-; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; redis/optimized/redis-cli.ll
 ; stb/optimized/stb_truetype.c.ll
@@ -123,8 +141,8 @@ entry:
 define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw %struct.OnigMatchParamStruct.2596902, ptr %4, i64 %0, i32 7
+  %4 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817933", ptr %1, i64 %3
+  %5 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817933", ptr %4, i64 %0, i32 2
   ret ptr %5
 }
 
@@ -136,19 +154,8 @@ entry:
 define ptr @func0000000000000008(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.Gia_Obj_t_.2764409, ptr %1, i64 %3
-  %5 = getelementptr %struct.Gia_Obj_t_.2764409, ptr %4, i64 %0, i32 1
-  ret ptr %5
-}
-
-; 1 occurrences:
-; luau/optimized/CodeGenUtils.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.lua_TValue.2808887, ptr %1, i64 %3
-  %5 = getelementptr nusw %struct.lua_TValue.2808887, ptr %4, i64 %0, i32 2
+  %4 = getelementptr nusw %struct.Gia_Obj_t_.2876669, ptr %1, i64 %3
+  %5 = getelementptr %struct.Gia_Obj_t_.2876669, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 

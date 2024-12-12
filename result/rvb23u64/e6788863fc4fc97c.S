@@ -86,6 +86,10 @@ func0000000000000037:                   # @func0000000000000037
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
+func0000000000000028:                   # @func0000000000000028
+	add	a0, a0, a1
+	addiw	a0, a0, -1
+	ret
 func0000000000000002:                   # @func0000000000000002
 	add	a0, a0, a1
 	addiw	a0, a0, 63

@@ -65,12 +65,13 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; linux/optimized/fork.ll
 ; linux/optimized/iommu.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
+; lvgl/optimized/lv_freetype_glyph.ll
 ; opencv/optimized/checker_detector.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {

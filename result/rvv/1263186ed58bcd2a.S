@@ -31,5 +31,5 @@ func000000000000000e:                   # @func000000000000000e
 	vand.vx	v10, v10, a0
 	vwsll.vi	v12, v10, 3
 	vsetvli	zero, zero, e16, m2, ta, ma
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	ret

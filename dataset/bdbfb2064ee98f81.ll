@@ -3,7 +3,7 @@
 ; folly/optimized/LogLevel.cpp.ll
 ; node/optimized/libnode.node_process_object.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
   %not. = xor i1 %0, true
@@ -20,7 +20,7 @@ entry:
 ; wasmedge/optimized/refInstr.cpp.ll
 ; wasmedge/optimized/validator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 8589934591
   %3 = select i1 %0, i1 %2, i1 false
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; node/optimized/libnode.node_snapshotable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 4294967296
   %3 = select i1 %0, i1 %2, i1 false
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; node/optimized/libnode.node_process_object.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 4294967295
   %3 = select i1 %0, i1 %2, i1 false
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; node/optimized/libnode.node_process_object.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

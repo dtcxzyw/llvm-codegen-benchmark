@@ -21,7 +21,7 @@ func000000000000000f:                   # @func000000000000000f
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000007:                   # @func0000000000000007
 	leaq	100(%rsi), %rax
 	testb	$1, %dl
 	cmoveq	%rsi, %rax
@@ -34,10 +34,11 @@ func000000000000000d:                   # @func000000000000000d
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
+func0000000000000005:                   # @func0000000000000005
 	andl	$1, %edx
+	shll	$5, %edx
 	addq	%rsi, %rdx
-	leaq	365(%rdi,%rdx), %rax
+	leaq	96(%rdi,%rdx), %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	andl	$1, %edx

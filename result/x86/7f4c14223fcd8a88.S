@@ -7,8 +7,14 @@ func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
 	andl	%esi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	testb	$62, %sil
-	sete	%al
+func0000000000000014:                   # @func0000000000000014
+	notb	%sil
+	testb	$30, %sil
+	setne	%al
+	andb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	testb	$14, %sil
+	setne	%al
 	andb	%dil, %al
 	retq

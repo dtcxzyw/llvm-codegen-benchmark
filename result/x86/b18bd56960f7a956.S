@@ -12,14 +12,14 @@ func0000000000000041:                   # @func0000000000000041
 	andl	$-4, %esi
 	leal	(%rdi,%rsi,2), %eax
 	retq
+func0000000000000025:                   # @func0000000000000025
+	shrq	$24, %rsi
+	andl	$-256, %esi
+	leal	(%rsi,%rdi), %eax
+	retq
 func0000000000000040:                   # @func0000000000000040
 	shrq	%rsi
 	andl	$-4, %esi
-	leal	(%rsi,%rdi), %eax
-	retq
-func0000000000000025:                   # @func0000000000000025
-	shrq	$31, %rsi
-	andl	$-2, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
 func0000000000000024:                   # @func0000000000000024

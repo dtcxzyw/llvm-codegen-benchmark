@@ -1,8 +1,9 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000508(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000a08(i8 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 10
   %3 = add i64 %2, -48
@@ -15,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DLangDemangle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000506(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000a06(i8 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 26
   %3 = add i64 %2, -97
@@ -29,7 +30,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/oids.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000208(i8 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 10
   %3 = add i64 %2, -48
@@ -42,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i8 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 10
   %3 = add i64 %2, -48

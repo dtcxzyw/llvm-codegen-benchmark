@@ -69,18 +69,7 @@ define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = lshr exact i64 %2, 1
-  %4 = add nuw nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; quickjs/optimized/libbf.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw i64 1, %1
-  %3 = lshr i64 %2, 1
-  %4 = add i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -91,7 +80,7 @@ define i64 @func0000000000000012(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = lshr i64 %2, 1
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -102,7 +91,7 @@ define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = lshr i64 %2, 2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 

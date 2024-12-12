@@ -6,8 +6,8 @@ func0000000000000008:                   # @func0000000000000008
 	vbroadcastsd	.LCPI0_0(%rip), %zmm6   # zmm6 = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
 	vxorpd	%zmm6, %zmm4, %zmm4
 	vxorpd	%zmm6, %zmm3, %zmm3
-	vcmpeqpd	%zmm1, %zmm3, %k0
-	vcmpeqpd	%zmm2, %zmm4, %k1
+	vcmpeqpd	%zmm3, %zmm1, %k0
+	vcmpeqpd	%zmm4, %zmm2, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpcmpgtb	%xmm0, %xmm5, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0

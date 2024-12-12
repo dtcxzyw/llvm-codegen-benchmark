@@ -33,7 +33,7 @@ entry:
   ret i64 %5
 }
 
-; 62 occurrences:
+; 60 occurrences:
 ; abc/optimized/giaMinLut.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
@@ -77,10 +77,8 @@ entry:
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
-; openblas/optimized/dtfttr.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
@@ -105,7 +103,7 @@ entry:
   ret i64 %5
 }
 
-; 91 occurrences:
+; 89 occurrences:
 ; abc/optimized/giaSwitch.c.ll
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/array_binary.cc.ll
@@ -115,7 +113,6 @@ entry:
 ; arrow/optimized/builder_decimal.cc.ll
 ; arrow/optimized/builder_nested.cc.ll
 ; arrow/optimized/compare.cc.ll
-; arrow/optimized/concatenate.cc.ll
 ; arrow/optimized/csx_converter.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
@@ -140,6 +137,7 @@ entry:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -165,12 +163,10 @@ entry:
 ; openblas/optimized/dsbtrd.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
-; openblas/optimized/dtfttr.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsy2.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/adaptive_threshold_mean_binarizer.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll

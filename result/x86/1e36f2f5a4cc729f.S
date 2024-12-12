@@ -32,7 +32,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI4_0:
 	.long	0x3f800000                      # float 1
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	cmpl	$2, %edi
 	setae	%al
 	kmovd	%eax, %k1

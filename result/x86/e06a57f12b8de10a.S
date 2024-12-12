@@ -15,9 +15,9 @@ func000000000000000b:                   # @func000000000000000b
 	setbe	%al
 	andb	%dil, %al
 	retq
-func000000000000000d:                   # @func000000000000000d
-	vucomisd	%xmm0, %xmm1
-	setbe	%al
+func0000000000000004:                   # @func0000000000000004
+	vucomisd	%xmm1, %xmm0
+	seta	%al
 	andb	%dil, %al
 	retq
 .LCPI3_0:
@@ -47,11 +47,12 @@ func0000000000000007:                   # @func0000000000000007
 	andb	%dil, %al
 	retq
 .LCPI6_0:
-	.quad	0xbfeffffffaa19c47              # double -0.99999998999999994
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x3870000000000000              # double 7.5231638452626401E-37
+func000000000000000d:                   # @func000000000000000d
 	vsubsd	%xmm1, %xmm0, %xmm0
-	vucomisd	.LCPI6_0(%rip), %xmm0
-	seta	%al
+	vmovsd	.LCPI6_0(%rip), %xmm1           # xmm1 = [7.5231638452626401E-37,0.0E+0]
+	vucomisd	%xmm0, %xmm1
+	setbe	%al
 	andb	%dil, %al
 	retq
 func0000000000000002:                   # @func0000000000000002

@@ -33,9 +33,21 @@ func000000000000000a:                   # @func000000000000000a
 	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI5_0:
+	.quad	33554431                        # 0x1ffffff
+func0000000000000018:                   # @func0000000000000018
+	vpcmpleuq	.LCPI5_0(%rip){1to4}, %ymm1, %k1
+	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
+	retq
+.LCPI6_0:
 	.quad	8096                            # 0x1fa0
 func0000000000000004:                   # @func0000000000000004
-	vpbroadcastq	.LCPI5_0(%rip), %ymm2   # ymm2 = [8096,8096,8096,8096]
+	vpbroadcastq	.LCPI6_0(%rip), %ymm2   # ymm2 = [8096,8096,8096,8096]
 	vpcmpltuq	%ymm2, %ymm1, %k1
 	vmovdqa64	%ymm2, %ymm0 {%k1}
+	retq
+.LCPI7_0:
+	.quad	65                              # 0x41
+func0000000000000014:                   # @func0000000000000014
+	vpcmpnltuq	.LCPI7_0(%rip){1to4}, %ymm1, %k1
+	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
 	retq

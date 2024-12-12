@@ -9,7 +9,7 @@
 ; abc/optimized/cuddZddReord.c.ll
 ; abc/optimized/cuddZddSymm.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %0
   %4 = sub nsw i32 %0, %1
@@ -28,7 +28,7 @@ entry:
 ; redis/optimized/ltablib.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %0
   %4 = sub nsw i32 %0, %1
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %0
   %4 = sub i32 %0, %1
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %0
   %4 = sub nsw i32 %0, %1

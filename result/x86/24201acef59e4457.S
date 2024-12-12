@@ -1,10 +1,3 @@
-func0000000000000028:                   # @func0000000000000028
-	movl	%edi, %eax
-	xorl	%ecx, %ecx
-	testl	%edx, %edx
-	cmovlel	%esi, %ecx
-	subl	%ecx, %eax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%edi, %eax
 	testl	%edx, %edx
@@ -18,20 +11,6 @@ func0000000000000005:                   # @func0000000000000005
 	subl	%esi, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018
-	movl	%edi, %eax
-	xorl	%ecx, %ecx
-	testl	%edx, %edx
-	cmovnsl	%esi, %ecx
-	subl	%ecx, %eax
-	retq
-func0000000000000021:                   # @func0000000000000021
-	movl	%edi, %eax
-	cmpl	$16, %edx
-	movl	$14, %ecx
-	cmovbl	%esi, %ecx
-	subl	%ecx, %eax
-	retq
-func0000000000000019:                   # @func0000000000000019
 	movl	%edi, %eax
 	xorl	%ecx, %ecx
 	testl	%edx, %edx
@@ -66,11 +45,18 @@ func0000000000000011:                   # @func0000000000000011
 	cmovael	%esi, %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000019:                   # @func0000000000000019
 	movl	%edi, %eax
 	xorl	%ecx, %ecx
-	cmpl	$11, %edx
-	cmovael	%esi, %ecx
+	testl	%edx, %edx
+	cmovnsl	%esi, %ecx
+	subl	%ecx, %eax
+	retq
+func0000000000000028:                   # @func0000000000000028
+	movl	%edi, %eax
+	xorl	%ecx, %ecx
+	testl	%edx, %edx
+	cmovlel	%esi, %ecx
 	subl	%ecx, %eax
 	retq
 func0000000000000029:                   # @func0000000000000029

@@ -37,12 +37,13 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; jq/optimized/decNumber.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_pps.ll
+; lvgl/optimized/lv_theme_default.ll
 ; nuklear/optimized/unity.c.ll
 ; postgres/optimized/utf8_and_gb18030.ll
 ; Function Attrs: nounwind
@@ -84,6 +85,18 @@ entry:
   ret i32 %3
 }
 
+; 2 occurrences:
+; lvgl/optimized/lv_anim.ll
+; wolfssl/optimized/coding.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, 5
+  %2 = udiv i32 %1, 10
+  %3 = shl i32 %2, 20
+  ret i32 %3
+}
+
 ; 7 occurrences:
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/vlv_dsi.ll
@@ -109,17 +122,6 @@ entry:
   %1 = add nsw i32 %0, -1260
   %2 = udiv i32 %1, 7
   %3 = shl i32 %2, 16
-  ret i32 %3
-}
-
-; 1 occurrences:
-; wolfssl/optimized/coding.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, 2
-  %2 = udiv i32 %1, 3
-  %3 = shl i32 %2, 2
   ret i32 %3
 }
 

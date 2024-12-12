@@ -5,27 +5,39 @@ func0000000000000020:                   # @func0000000000000020
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002f:                   # @func000000000000002f
 	xorl	%eax, %eax
 	cmpb	$45, %dl
 	sete	%al
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func000000000000018a:                   # @func000000000000018a
+func000000000000018f:                   # @func000000000000018f
 	cmpb	$1, %dl
 	sbbq	$-1, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func000000000000002c:                   # @func000000000000002c
 	xorl	%eax, %eax
 	cmpb	$46, %dl
 	sete	%al
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000008f:                   # @func000000000000008f
 	movq	%rdi, %rax
 	cmpb	$2, %dl
 	adcq	%rsi, %rax
+	retq
+func000000000000002e:                   # @func000000000000002e
+	xorl	%eax, %eax
+	cmpb	$92, %dl
+	sete	%al
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
+func000000000000018e:                   # @func000000000000018e
+	cmpb	$1, %dl
+	sbbq	$-1, %rsi
+	leaq	(%rsi,%rdi), %rax
 	retq

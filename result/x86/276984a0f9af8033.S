@@ -4,3 +4,9 @@ func0000000000000010:                   # @func0000000000000010
 	sarq	$32, %rdi
 	addq	%rdi, %rax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	notq	%rdx
+	leaq	(%rdx,%rsi), %rax
+	sarq	$4, %rdi
+	addq	%rdi, %rax
+	retq

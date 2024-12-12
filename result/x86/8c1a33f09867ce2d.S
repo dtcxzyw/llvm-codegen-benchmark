@@ -13,18 +13,9 @@ func0000000000000008:                   # @func0000000000000008
 	orb	%dil, %al
 	retq
 func0000000000000002:                   # @func0000000000000002
-	notl	%edx
-	testl	$3072, %edx                     # imm = 0xC00
+	movabsq	$9218868437227405312, %rax      # imm = 0x7FF0000000000000
+	testq	%rax, %rdx
 	sete	%al
-	andb	%sil, %al
-	orb	%dil, %al
-	retq
-func0000000000000010:                   # @func0000000000000010
-	movabsq	$9223372019674906624, %rax      # imm = 0x7FFFFFFC00000000
-	andq	%rdx, %rax
-	movabsq	$425201762304, %rcx             # imm = 0x6300000000
-	cmpq	%rcx, %rax
-	seta	%al
 	andb	%sil, %al
 	orb	%dil, %al
 	retq

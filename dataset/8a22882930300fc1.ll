@@ -29,12 +29,11 @@ entry:
   ret i32 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/huf_decompress.ll
-; linux/optimized/ioport.ll
 ; linux/optimized/memfd.ll
 ; linux/optimized/nfs4xdr.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
@@ -82,8 +81,9 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/ifDec07.c.ll
+; opencv/optimized/hough.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i1 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -113,17 +113,6 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = select i1 %0, i32 %1, i32 %3
   %5 = shl i32 %4, 2
-  ret i32 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/hough.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = select i1 %0, i32 %1, i32 %3
-  %5 = shl nsw i32 %4, 1
   ret i32 %5
 }
 

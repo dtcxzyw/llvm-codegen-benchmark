@@ -1,4 +1,4 @@
-func0000000000000154:                   # @func0000000000000154
+func0000000000000294:                   # @func0000000000000294
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfle.vf	v16, v12, fa5

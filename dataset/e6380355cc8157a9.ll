@@ -1,9 +1,12 @@
 
-; 82 occurrences:
+; 85 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -93,7 +96,8 @@ entry:
   ret i128 %7
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p224-64.c.ll
 ; libsodium/optimized/libsodium_la-poly1305_donna.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
@@ -105,7 +109,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = zext i64 %1 to i128
   %5 = mul nuw i128 %4, %3
-  %6 = add i128 %5, %0
+  %6 = add i128 %0, %5
   %7 = lshr i128 %6, 55
   ret i128 %7
 }
@@ -118,7 +122,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = zext i64 %1 to i128
   %5 = mul nuw nsw i128 %4, %3
-  %6 = add nuw nsw i128 %5, %0
+  %6 = add nuw nsw i128 %0, %5
   %7 = lshr i128 %6, 63
   ret i128 %7
 }
@@ -131,7 +135,7 @@ entry:
   %3 = zext nneg i64 %2 to i128
   %4 = zext i64 %1 to i128
   %5 = mul nuw nsw i128 %4, %3
-  %6 = add nuw nsw i128 %5, %0
+  %6 = add nuw nsw i128 %0, %5
   %7 = lshr i128 %6, 63
   ret i128 %7
 }

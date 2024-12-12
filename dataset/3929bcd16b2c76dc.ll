@@ -1,5 +1,5 @@
 
-; 1071 occurrences:
+; 1070 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; cmake/optimized/archive_entry.c.ll
 ; hermes/optimized/Analysis.cpp.ll
@@ -751,7 +751,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll

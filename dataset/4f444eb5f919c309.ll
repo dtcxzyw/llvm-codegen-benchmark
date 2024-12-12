@@ -3,7 +3,7 @@
 ; pyo3-rs/optimized/249pdmmr5286g8h9.ll
 ; pyo3-rs/optimized/4z0qp503bgjcdxcv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000101(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 2
   %3 = icmp eq i8 %1, 3
@@ -18,7 +18,7 @@ entry:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 4
   %3 = icmp eq i8 %1, 5

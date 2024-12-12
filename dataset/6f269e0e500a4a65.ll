@@ -1,46 +1,41 @@
 
-%struct.pm_constant_t.2485449 = type { ptr, i64 }
-%"struct.mitsuba::Struct::Field.2490617" = type { %"class.std::__1::basic_string.2490584", i32, i64, i64, i32, double, %"class.std::__1::vector.43.2490618" }
-%"class.std::__1::basic_string.2490584" = type { %"class.std::__1::__compressed_pair.10.2490585" }
-%"class.std::__1::__compressed_pair.10.2490585" = type { %"struct.std::__1::__compressed_pair_elem.11.2490586" }
-%"struct.std::__1::__compressed_pair_elem.11.2490586" = type { %"struct.std::__1::basic_string<char>::__rep.2490587" }
-%"struct.std::__1::basic_string<char>::__rep.2490587" = type { %union.anon.2490588 }
-%union.anon.2490588 = type { %"struct.std::__1::basic_string<char>::__long.2490589" }
-%"struct.std::__1::basic_string<char>::__long.2490589" = type { %struct.anon.12.2490590, i64, ptr }
-%struct.anon.12.2490590 = type { i64 }
-%"class.std::__1::vector.43.2490618" = type { ptr, ptr, %"class.std::__1::__compressed_pair.44.2490619" }
-%"class.std::__1::__compressed_pair.44.2490619" = type { %"struct.std::__1::__compressed_pair_elem.45.2490620" }
-%"struct.std::__1::__compressed_pair_elem.45.2490620" = type { ptr }
-%struct.TCGArgConstraint.2593567 = type <{ i40, i32 }>
-%struct.Mig_Obj_t_.2764453 = type { [4 x %struct.Mig_Fan_t_.2764454] }
-%struct.Mig_Fan_t_.2764454 = type { i32 }
-%"class.clang::DeclAccessPair.2944379" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.2944380" }
-%"struct.llvm::support::detail::packed_endian_specific_integral.2944380" = type { %struct.anon.2944381 }
-%struct.anon.2944381 = type { [8 x i8] }
-%"struct.llvm::detail::DenseMapPair.3036463" = type { %"struct.std::pair.161.3036459" }
-%"struct.std::pair.161.3036459" = type { %"struct.std::pair.163.3036460", i32 }
-%"struct.std::pair.163.3036460" = type { i16, i16 }
+%struct.pm_constant_t.2600929 = type { ptr, i64 }
+%"struct.mitsuba::Struct::Field.2606038" = type { %"class.std::__1::basic_string.2606005", i32, i64, i64, i32, double, %"class.std::__1::vector.43.2606039" }
+%"class.std::__1::basic_string.2606005" = type { %"class.std::__1::__compressed_pair.10.2606006" }
+%"class.std::__1::__compressed_pair.10.2606006" = type { %"struct.std::__1::__compressed_pair_elem.11.2606007" }
+%"struct.std::__1::__compressed_pair_elem.11.2606007" = type { %"struct.std::__1::basic_string<char>::__rep.2606008" }
+%"struct.std::__1::basic_string<char>::__rep.2606008" = type { %union.anon.2606009 }
+%union.anon.2606009 = type { %"struct.std::__1::basic_string<char>::__long.2606010" }
+%"struct.std::__1::basic_string<char>::__long.2606010" = type { %struct.anon.12.2606011, i64, ptr }
+%struct.anon.12.2606011 = type { i64 }
+%"class.std::__1::vector.43.2606039" = type { ptr, ptr, %"class.std::__1::__compressed_pair.44.2606040" }
+%"class.std::__1::__compressed_pair.44.2606040" = type { %"struct.std::__1::__compressed_pair_elem.45.2606041" }
+%"struct.std::__1::__compressed_pair_elem.45.2606041" = type { ptr }
+%struct.TCGArgConstraint.2707243 = type <{ i40, i32 }>
+%struct.Mig_Obj_t_.2876713 = type { [4 x %struct.Mig_Fan_t_.2876714] }
+%struct.Mig_Fan_t_.2876714 = type { i32 }
 
-; 78 occurrences:
+; 84 occurrences:
 ; abc/optimized/extraUtilMult.c.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; clamav/optimized/bytecode.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
+; cpython/optimized/ceval.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; libsodium/optimized/libsodium_la-hash_sha256_cp.ll
 ; libsodium/optimized/libsodium_la-hash_sha512_cp.ll
 ; linux/optimized/8139too.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/fatent.ll
-; linux/optimized/joliet.ll
 ; linux/optimized/lz4_decompress.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/pci-quirks.ll
 ; linux/optimized/printk.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/regset.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/Builtins.cpp.ll
@@ -51,14 +46,17 @@
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; lua/optimized/lvm.ll
+; luajit/optimized/lj_strfmt.ll
+; luajit/optimized/lj_strfmt_dyn.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
 ; php/optimized/zend_alloc.ll
+; postgres/optimized/bitmapset.ll
 ; postgres/optimized/bufmgr.ll
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/gininsert.ll
 ; postgres/optimized/ginvacuum.ll
 ; postgres/optimized/gist.ll
 ; postgres/optimized/gistbuild.ll
@@ -83,6 +81,8 @@
 ; postgres/optimized/spgscan.ll
 ; postgres/optimized/spgvacuum.ll
 ; postgres/optimized/trigger.ll
+; postgres/optimized/tsquery.ll
+; postgres/optimized/tsquery_cleanup.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
@@ -105,12 +105,12 @@ define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1073741823
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.pm_constant_t.2485449, ptr %0, i64 %3
+  %4 = getelementptr %struct.pm_constant_t.2600929, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
 
-; 324 occurrences:
+; 335 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/aigRet.c.ll
@@ -125,6 +125,7 @@ entry:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaEquiv.c.ll
 ; abc/optimized/giaEra2.c.ll
+; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaOf.c.ll
@@ -142,7 +143,6 @@ entry:
 ; clamav/optimized/crypt.cpp.ll
 ; cmake/optimized/lz_encoder_mf.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
-; cvc5/optimized/sequences_rewriter.cpp.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_crypto.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -159,7 +159,6 @@ entry:
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; hermes/optimized/CodeBlock.cpp.ll
 ; hermes/optimized/Domain.cpp.ll
-; hermes/optimized/HadesGC.cpp.ll
 ; hermes/optimized/IdentifierTable.cpp.ll
 ; hermes/optimized/RuntimeModule.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
@@ -171,6 +170,8 @@ entry:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; jq/optimized/jv.ll
 ; libjpeg-turbo/optimized/md5.c.ll
+; libpng/optimized/pngread.c.ll
+; libpng/optimized/pngrtran.c.ll
 ; libquic/optimized/deflate.c.ll
 ; libquic/optimized/md5.cc.ll
 ; lief/optimized/ecp.c.ll
@@ -212,20 +213,27 @@ entry:
 ; llvm/optimized/Consumed.cpp.ll
 ; llvm/optimized/DeadStoresChecker.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
+; llvm/optimized/ELF.cpp.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/ExprInspectionChecker.cpp.ll
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
+; llvm/optimized/FunctionLoweringInfo.cpp.ll
 ; llvm/optimized/IdenticalExprChecker.cpp.ll
 ; llvm/optimized/IndexBody.cpp.ll
 ; llvm/optimized/InitUndef.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/InterfaceStubFunctionsConsumer.cpp.ll
 ; llvm/optimized/InterpBuiltin.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/JSONNodeDumper.cpp.ll
+; llvm/optimized/LiveVariables.cpp.ll
 ; llvm/optimized/LocalizationChecker.cpp.ll
 ; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
+; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/NoUncountedMembersChecker.cpp.ll
 ; llvm/optimized/ObjCContainersASTChecker.cpp.ll
@@ -239,6 +247,7 @@ entry:
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
 ; llvm/optimized/STLAlgorithmModeling.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/SemaAMDGPU.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
@@ -268,6 +277,7 @@ entry:
 ; llvm/optimized/StmtOpenACC.cpp.ll
 ; llvm/optimized/StmtPrinter.cpp.ll
 ; llvm/optimized/StmtProfile.cpp.ll
+; llvm/optimized/TargetRegisterInfo.cpp.ll
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; llvm/optimized/TransAPIUses.cpp.ll
 ; llvm/optimized/TransARCAssign.cpp.ll
@@ -304,8 +314,6 @@ entry:
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
-; luajit/optimized/lj_debug.ll
-; luajit/optimized/lj_debug_dyn.ll
 ; luajit/optimized/lj_ffrecord.ll
 ; luajit/optimized/lj_ffrecord_dyn.ll
 ; luajit/optimized/lj_opt_fold.ll
@@ -386,11 +394,14 @@ entry:
 ; openjdk/optimized/mlib_c_ImageAffine_BC.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_U16.ll
-; openjdk/optimized/mlib_c_ImageCopy.ll
+; openjdk/optimized/pngread.ll
+; openjdk/optimized/pngrtran.ll
 ; openjdk/optimized/psCompactionManager.ll
 ; openmpi/optimized/btl_sm_component.ll
 ; openmpi/optimized/btl_sm_send.ll
 ; openmpi/optimized/btl_sm_sendi.ll
+; openspiel/optimized/TransTableL.cpp.ll
+; openspiel/optimized/hearts.cc.ll
 ; openusd/optimized/lz4.cpp.ll
 ; openusd/optimized/scale_any.c.ll
 ; php/optimized/html.ll
@@ -436,12 +447,12 @@ entry:
 ; z3/optimized/theory_lra.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"struct.mitsuba::Struct::Field.2490617", ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 312
+  %4 = getelementptr nusw nuw %"struct.mitsuba::Struct::Field.2606038", ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 312
   ret ptr %5
 }
 
@@ -496,20 +507,21 @@ entry:
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.TCGArgConstraint.2593567, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.TCGArgConstraint.2707243, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
@@ -522,16 +534,39 @@ entry:
 ; php/optimized/zend_execute.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -4
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 32
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 32
   ret ptr %5
 }
 
-; 18 occurrences:
+; 12 occurrences:
+; cvc5/optimized/sequences_rewriter.cpp.ll
+; hermes/optimized/HadesGC.cpp.ll
+; llvm/optimized/Instructions.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; luajit/optimized/lj_debug.ll
+; luajit/optimized/lj_debug_dyn.ll
+; luajit/optimized/lj_snap.ll
+; luajit/optimized/lj_snap_dyn.ll
+; openjdk/optimized/mlib_c_ImageCopy.ll
+; redis/optimized/rax.ll
+; velox/optimized/HashStringAllocator.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 1
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -4
+  ret ptr %5
+}
+
+; 19 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/mpmAbc.c.ll
 ; abc/optimized/mpmMap.c.ll
@@ -544,6 +579,7 @@ entry:
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; luau/optimized/lvmexecute.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; raylib/optimized/rtext.c.ll
@@ -551,115 +587,11 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4095
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.Mig_Obj_t_.2764453, ptr %0, i64 %3, i32 0, i64 3
-  ret ptr %4
-}
-
-; 82 occurrences:
-; llvm/optimized/ASTConsumers.cpp.ll
-; llvm/optimized/ASTImporter.cpp.ll
-; llvm/optimized/ASTImporterLookupTable.cpp.ll
-; llvm/optimized/ASTMatchFinder.cpp.ll
-; llvm/optimized/ASTWriterStmt.cpp.ll
-; llvm/optimized/AnalysisBasedWarnings.cpp.ll
-; llvm/optimized/AnalysisConsumer.cpp.ll
-; llvm/optimized/BugSuppression.cpp.ll
-; llvm/optimized/CGDebugInfo.cpp.ll
-; llvm/optimized/CalledOnceCheck.cpp.ll
-; llvm/optimized/CastToStructChecker.cpp.ll
-; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/CodeGenPGO.cpp.ll
-; llvm/optimized/ComputeDependence.cpp.ll
-; llvm/optimized/DeadStoresChecker.cpp.ll
-; llvm/optimized/DynamicTypePropagation.cpp.ll
-; llvm/optimized/ELF.cpp.ll
-; llvm/optimized/ELFObjectFile.cpp.ll
-; llvm/optimized/Expr.cpp.ll
-; llvm/optimized/ExtractAPIConsumer.cpp.ll
-; llvm/optimized/FunctionLoweringInfo.cpp.ll
-; llvm/optimized/IdenticalExprChecker.cpp.ll
-; llvm/optimized/IndexBody.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/InterfaceStubFunctionsConsumer.cpp.ll
-; llvm/optimized/ItaniumMangle.cpp.ll
-; llvm/optimized/LiveVariables.cpp.ll
-; llvm/optimized/LocalizationChecker.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
-; llvm/optimized/NoUncountedMembersChecker.cpp.ll
-; llvm/optimized/ObjCMT.cpp.ll
-; llvm/optimized/ObjCMissingSuperCallChecker.cpp.ll
-; llvm/optimized/ObjectFilePCHContainerWriter.cpp.ll
-; llvm/optimized/PaddingChecker.cpp.ll
-; llvm/optimized/ParentMapContext.cpp.ll
-; llvm/optimized/ParseDecl.cpp.ll
-; llvm/optimized/ReachableCode.cpp.ll
-; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/SelectionDAGISel.cpp.ll
-; llvm/optimized/SemaAvailability.cpp.ll
-; llvm/optimized/SemaCodeComplete.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaDeclAttr.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaDeclObjC.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaHLSL.cpp.ll
-; llvm/optimized/SemaStmt.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/SemaTemplateVariadic.cpp.ll
-; llvm/optimized/StmtOpenACC.cpp.ll
-; llvm/optimized/StmtPrinter.cpp.ll
-; llvm/optimized/StmtProfile.cpp.ll
-; llvm/optimized/TargetRegisterInfo.cpp.ll
-; llvm/optimized/TransAPIUses.cpp.ll
-; llvm/optimized/TransARCAssign.cpp.ll
-; llvm/optimized/TransAutoreleasePool.cpp.ll
-; llvm/optimized/TransBlockObjCVariable.cpp.ll
-; llvm/optimized/TransEmptyStatementsAndDealloc.cpp.ll
-; llvm/optimized/TransGCAttrs.cpp.ll
-; llvm/optimized/TransGCCalls.cpp.ll
-; llvm/optimized/TransProperties.cpp.ll
-; llvm/optimized/TransProtectedScope.cpp.ll
-; llvm/optimized/TransRetainReleaseDealloc.cpp.ll
-; llvm/optimized/TransUnbridgedCasts.cpp.ll
-; llvm/optimized/TransUnusedInitDelegate.cpp.ll
-; llvm/optimized/TransZeroOutPropsInDealloc.cpp.ll
-; llvm/optimized/Transforms.cpp.ll
-; llvm/optimized/UncountedCallArgsChecker.cpp.ll
-; llvm/optimized/UncountedLambdaCapturesChecker.cpp.ll
-; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
-; llvm/optimized/UnsafeBufferUsage.cpp.ll
-; llvm/optimized/Visitor.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; openspiel/optimized/TransTableL.cpp.ll
-; openspiel/optimized/hearts.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"class.clang::DeclAccessPair.2944379", ptr %0, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 12
-  ret ptr %5
-}
-
-; 1 occurrences:
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, -783074352
-  %3 = zext i32 %2 to i64
-  %4 = getelementptr %"struct.llvm::detail::DenseMapPair.3036463", ptr %0, i64 %3, i32 0, i32 0, i32 1
+  %4 = getelementptr %struct.Mig_Obj_t_.2876713, ptr %0, i64 %3, i32 0, i64 3
   ret ptr %4
 }
 

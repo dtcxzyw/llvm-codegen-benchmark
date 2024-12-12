@@ -10,7 +10,7 @@ func0000000000000018:                   # @func0000000000000018
 	czero.eqz	a1, a3, a1
 	add	a0, a0, a1
 	ret
-func0000000000000069:                   # @func0000000000000069
+func00000000000000a9:                   # @func00000000000000a9
 	sub	a3, a1, a2
 	slt	a1, a2, a1
 	czero.eqz	a1, a3, a1

@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; linux/optimized/kobject_uevent.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/LiveRangeShrink.cpp.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:

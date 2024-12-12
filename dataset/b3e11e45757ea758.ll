@@ -1,7 +1,9 @@
 
-; 118 occurrences:
+; 119 occurrences:
+; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_timeline.ll
 ; linux/optimized/serial_core.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openjdk/optimized/archiveHeapLoader.ll
@@ -116,7 +118,6 @@
 ; spike/optimized/fsr.ll
 ; spike/optimized/fsri.ll
 ; spike/optimized/fsrw.ll
-; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {

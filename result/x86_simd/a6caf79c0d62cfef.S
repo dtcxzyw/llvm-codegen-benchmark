@@ -4,7 +4,7 @@
 	.long	32                              # 0x20
 .LCPI0_2:
 	.long	11                              # 0xb
-func0000000000000344:                   # @func0000000000000344
+func0000000000000c94:                   # @func0000000000000c94
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0

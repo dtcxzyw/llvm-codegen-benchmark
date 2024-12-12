@@ -56,9 +56,3 @@ func0000000000000003:                   # @func0000000000000003
 	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogq	$168, .LCPI2_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = mem & (ymm0 | ymm1)
 	retq
-.LCPI3_0:
-	.quad	-1152921504606846977            # 0xefffffffffffffff
-func0000000000000001:                   # @func0000000000000001
-	vpor	%ymm2, %ymm1, %ymm1
-	vpternlogq	$168, .LCPI3_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = mem & (ymm0 | ymm1)
-	retq

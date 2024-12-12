@@ -21,6 +21,14 @@ func0000000000000000:                   # @func0000000000000000
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func0000000000000006:                   # @func0000000000000006
+	slli	a2, a2, 16
+	lui	a3, 8192
+	slliw	a0, a0, 8
+	addw	a2, a2, a3
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a2, a2, 8
 	lui	a3, 16

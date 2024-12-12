@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
+; lvgl/optimized/lv_text.ll
 ; openjdk/optimized/DrawLine.ll
 ; openssl/optimized/libssl-lib-s3_enc.ll
 ; openssl/optimized/libssl-shlib-s3_enc.ll

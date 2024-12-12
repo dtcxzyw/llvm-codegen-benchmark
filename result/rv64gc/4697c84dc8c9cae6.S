@@ -8,5 +8,5 @@ func0000000000000000:                   # @func0000000000000000
 	fmv.w.x	fa3, a0
 	fadd.s	fa5, fa5, fa3
 	fmul.s	fa5, fa5, fa4
-	fadd.s	fa0, fa5, fa0
+	fadd.s	fa0, fa0, fa5
 	ret

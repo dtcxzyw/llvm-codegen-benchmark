@@ -1,9 +1,27 @@
 
-; 190 occurrences:
+; 204 occurrences:
 ; abc/optimized/abc.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; boost/optimized/to_chars.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
@@ -74,6 +92,7 @@
 ; lua/optimized/lmathlib.ll
 ; lua/optimized/ltable.ll
 ; lua/optimized/lvm.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -133,18 +152,14 @@
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/geo_ops.ll
 ; postgres/optimized/pgbench.ll
-; proj/optimized/aasincos.cpp.ll
 ; proj/optimized/adams.cpp.ll
 ; proj/optimized/c_api.cpp.ll
 ; proj/optimized/conversion.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/ell_set.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/gridshift.cpp.ll
 ; proj/optimized/healpix.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/networkfilemanager.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/qsc.cpp.ll
 ; quantlib/optimized/beta.ll
 ; quantlib/optimized/capletcoterminalmaxhomogeneity.ll
@@ -165,7 +180,6 @@
 ; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; ruby/optimized/compile.ll
-; ruby/optimized/nextafter.ll
 ; ruby/optimized/numeric.ll
 ; ruby/optimized/object.ll
 ; ruby/optimized/util.ll
@@ -188,27 +202,44 @@
 ; verilator/optimized/V3EmitCModel.cpp.ll
 ; verilator/optimized/V3ExecGraph.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
-; yoga/optimized/PixelGrid.cpp.ll
 ; yosys/optimized/yosys.ll
+; zed-rs/optimized/driumlpfhwzx6147be2mcsi4u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 0x3FEFFFFFFFFFDCD1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 175 occurrences:
+; 186 occurrences:
 ; abc/optimized/abc.c.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; boost/optimized/within_sph_geo.ll
 ; c3c/optimized/bigint.c.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/cvodes.c.ll
 ; cmake/optimized/cmCTest.cxx.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; cpython/optimized/mathmodule.ll
-; cvc5/optimized/safe_print.cpp.ll
 ; darktable/optimized/export.c.ll
 ; darktable/optimized/snapshots.c.ll
 ; flac/optimized/replaygain.c.ll
@@ -310,7 +341,6 @@ entry:
 ; proj/optimized/concatenatedoperation.cpp.ll
 ; proj/optimized/conversion.cpp.ll
 ; proj/optimized/gridshift.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/qsc.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
@@ -357,7 +387,6 @@ entry:
 ; rocksdb/optimized/compact_on_deletion_collector.cc.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
-; ruby/optimized/nextafter.ll
 ; stat-rs/optimized/4d9pj14shc9lbmph.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; sundials/optimized/arkode.c.ll
@@ -369,10 +398,6 @@ entry:
 ; sundials/optimized/ida.c.ll
 ; sundials/optimized/idas.c.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
-; verilator/optimized/V3EmitCConstPool.cpp.ll
-; verilator/optimized/V3EmitCHeaders.cpp.ll
-; verilator/optimized/V3EmitCImp.cpp.ll
-; verilator/optimized/V3EmitCModel.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, double %1) #0 {
@@ -382,11 +407,13 @@ entry:
   ret i1 %3
 }
 
-; 118 occurrences:
+; 119 occurrences:
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/nvector_serial.c.ll
@@ -434,6 +461,7 @@ entry:
 ; hermes/optimized/Math.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
 ; hermes/optimized/Passes.cpp.ll
+; icu/optimized/putil.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/FileUtilities.cpp.ll
 ; luajit/optimized/lj_opt_fold.ll
@@ -461,7 +489,6 @@ entry:
 ; openjdk/optimized/MaskFill.ll
 ; openjdk/optimized/cmspcs.ll
 ; openjdk/optimized/cmssm.ll
-; openspiel/optimized/tabular_best_response_mdp.cc.ll
 ; openusd/optimized/stencilBuilder.cpp.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; osqp/optimized/auxil.c.ll
@@ -475,7 +502,6 @@ entry:
 ; proj/optimized/common.cpp.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
 ; proj/optimized/geodesic.c.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/stere.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
@@ -505,17 +531,15 @@ entry:
 define i1 @func0000000000000008(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp oeq double %1, 0x7FF0000000000000
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; hermes/optimized/Date.cpp.ll
 ; icu/optimized/decimfmt.ll
 ; opencv/optimized/erfilter.cpp.ll
-; opencv/optimized/odometry.cpp.ll
 ; openjdk/optimized/MaskFill.ll
-; openspiel/optimized/tabular_best_response_mdp.cc.ll
 ; openusd/optimized/sparseValueWriter.cpp.ll
 ; postgres/optimized/float.ll
 ; postgres/optimized/geo_ops.ll
@@ -523,7 +547,11 @@ entry:
 ; ruby/optimized/complex.ll
 ; velox/optimized/MapZipWith.cpp.ll
 ; xgboost/optimized/iterative_dmatrix.cc.ll
-; yoga/optimized/PixelGrid.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(i1 %0, double %1) #0 {
 entry:
@@ -532,15 +560,25 @@ entry:
   ret i1 %3
 }
 
-; 153 occurrences:
+; 160 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/json_value.cpp.ll
 ; cpython/optimized/cmathmodule.ll
 ; cpython/optimized/floatobject.ll
 ; cpython/optimized/pystrtod.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
+; egg-rs/optimized/2nrym8e40i82m5xa.ll
 ; flac/optimized/encode.c.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; graphviz/optimized/compound.c.ll
@@ -561,6 +599,7 @@ entry:
 ; lua/optimized/lvm.ll
 ; luau/optimized/Compiler.cpp.ll
 ; luau/optimized/IrUtils.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -598,7 +637,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
 ; openssl/optimized/libcrypto-shlib-params.ll
 ; openvdb/optimized/Proximity.cc.ll
-; osqp/optimized/amd_info.c.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; php/optimized/math.ll
 ; postgres/optimized/geo_ops.ll
@@ -606,9 +644,7 @@ entry:
 ; postgres/optimized/selfuncs.ll
 ; proj/optimized/4D_api.cpp.ll
 ; proj/optimized/adams.cpp.ll
-; proj/optimized/bacon.cpp.ll
 ; proj/optimized/c_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/eck4.cpp.ll
 ; proj/optimized/ell_set.cpp.ll
 ; proj/optimized/geodesic.c.ll
@@ -617,7 +653,6 @@ entry:
 ; proj/optimized/igh_o.cpp.ll
 ; proj/optimized/imoll.cpp.ll
 ; proj/optimized/imoll_o.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/qsc.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; quantlib/optimized/alimikhailhaqcopula.ll
@@ -690,12 +725,13 @@ entry:
 define i1 @func000000000000000c(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp oge double %1, 0xC3D0000000000000
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 73 occurrences:
+; 71 occurrences:
 ; abc/optimized/epd.c.ll
+; boost/optimized/calculate_point_order.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/kinsol_io.c.ll
@@ -724,7 +760,6 @@ entry:
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
-; opencv/optimized/odometry.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; opencv/optimized/video-input-psnr-ssim.cpp.ll
 ; opencv/optimized/window.cpp.ll
@@ -743,11 +778,9 @@ entry:
 ; postgres/optimized/geo_ops.ll
 ; postgres/optimized/gistproc.ll
 ; proj/optimized/4D_api.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/networkfilemanager.cpp.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/atmadjustedsmilesection.ll
-; quantlib/optimized/cliquetoption.ll
 ; quantlib/optimized/concentrating1dmesher.ll
 ; quantlib/optimized/cpicoupon.ll
 ; quantlib/optimized/digitalcoupon.ll
@@ -772,16 +805,19 @@ entry:
 define i1 @func0000000000000007(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp une double %1, 0x7FF0000000000000
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 119 occurrences:
+; 121 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; cmake/optimized/json_value.cpp.ll
 ; cpython/optimized/cmathmodule.ll
 ; cpython/optimized/mathmodule.ll
 ; darktable/optimized/introspection_ashift.c.ll
+; egg-rs/optimized/2nrym8e40i82m5xa.ll
 ; graphviz/optimized/geometry.c.ll
 ; graphviz/optimized/intersection.c.ll
 ; graphviz/optimized/route.c.ll
@@ -838,7 +874,6 @@ entry:
 ; proj/optimized/igh_o.cpp.ll
 ; proj/optimized/imoll.cpp.ll
 ; proj/optimized/imoll_o.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/qsc.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
@@ -900,14 +935,18 @@ entry:
 define i1 @func000000000000000a(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp ole double %1, 1.000000e+00
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 40 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; c3c/optimized/bigint.c.ll
 ; cpython/optimized/cmathmodule.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
@@ -923,6 +962,7 @@ entry:
 ; nori/optimized/chi2test.cpp.ll
 ; nori/optimized/warptest.cpp.ll
 ; ocio/optimized/GpuShaderUtils.cpp.ll
+; opencv/optimized/odometry.cpp.ll
 ; openusd/optimized/parserHelpers.cpp.ll
 ; openusd/optimized/plane.cpp.ll
 ; openusd/optimized/value.cpp.ll
@@ -931,11 +971,8 @@ entry:
 ; quantlib/optimized/cevrndcalculator.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/hestonprocess.ll
-; quantlib/optimized/kahalesmilesection.ll
-; quantlib/optimized/normaldistribution.ll
 ; quantlib/optimized/squarerootclvmodel.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
-; quantlib/optimized/tcopulapolicy.ll
 ; quickjs/optimized/quickjs.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
@@ -949,7 +986,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp one double %1, 0x7FF0000000000000
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
@@ -957,6 +994,7 @@ entry:
 ; arrow/optimized/double-to-string.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/cover.c.ll
 ; double_conversion/optimized/double-to-string.cc.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
@@ -980,7 +1018,6 @@ entry:
 ; proj/optimized/ell_set.cpp.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/cevrndcalculator.ll
-; quantlib/optimized/cliquetoption.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/hestonprocess.ll
 ; quantlib/optimized/lmdif.ll
@@ -1000,11 +1037,12 @@ entry:
 define i1 @func0000000000000003(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp ult double %1, 0x4C63E9E4E4C2F344
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 32 occurrences:
+; 30 occurrences:
+; boost/optimized/approximately_equals.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
 ; draco/optimized/obj_encoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
@@ -1028,12 +1066,9 @@ entry:
 ; quantlib/optimized/hestonprocess.ll
 ; quantlib/optimized/kahalesmilesection.ll
 ; quantlib/optimized/lmdif.ll
-; quantlib/optimized/normaldistribution.ll
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/qdplusamericanengine.ll
-; quantlib/optimized/squarerootclvmodel.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
-; quantlib/optimized/tcopulapolicy.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; wasmedge/optimized/engine.cpp.ll
@@ -1052,7 +1087,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp ueq double %1, 0x7FF0000000000000
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 

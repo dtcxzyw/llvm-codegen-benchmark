@@ -24,7 +24,7 @@
 	.short	0                               # 0x0
 	.short	3                               # 0x3
 	.short	0                               # 0x0
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vpmulhuw	.LCPI0_0(%rip), %xmm2, %xmm2    # [43691,43691,43691,43691,43691,43691,43691,43691]
 	vpsrlw	$1, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero

@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; luajit/optimized/buildvm_fold.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = urem i32 %0, %1
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/Hacl_Hash_SHA3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = urem i32 %0, %1

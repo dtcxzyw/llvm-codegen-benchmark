@@ -34,7 +34,7 @@ entry:
   ret i16 %2
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; c3c/optimized/parse_expr.c.ll
 ; c3c/optimized/types.c.ll
 ; git/optimized/diff.ll
@@ -48,6 +48,7 @@ entry:
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll

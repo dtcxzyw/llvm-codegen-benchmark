@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; php/optimized/zend_compile.ll
 ; wireshark/optimized/packet-c1222.c.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:

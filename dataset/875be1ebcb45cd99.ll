@@ -48,14 +48,4 @@ entry:
   ret i16 %3
 }
 
-; 1 occurrences:
-; linux/optimized/virtio_ring.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ult i64 %0, %1
-  %3 = select i1 %2, i16 0, i16 2
-  ret i16 %3
-}
-
 attributes #0 = { nounwind }

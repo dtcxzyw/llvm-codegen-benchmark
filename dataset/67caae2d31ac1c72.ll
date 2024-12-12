@@ -1,5 +1,5 @@
 
-; 167 occurrences:
+; 161 occurrences:
 ; coreutils-rs/optimized/1xgh31va70j84rdd.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
@@ -16,7 +16,6 @@
 ; linux/optimized/anycast.ll
 ; linux/optimized/audit_watch.ll
 ; linux/optimized/auth_gss.ll
-; linux/optimized/auxiliary.ll
 ; linux/optimized/avc.ll
 ; linux/optimized/blk-cgroup.ll
 ; linux/optimized/blk-iocost.ll
@@ -48,8 +47,6 @@
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fid.ll
 ; linux/optimized/futex.ll
-; linux/optimized/i915_cmd_parser.ll
-; linux/optimized/i915_debugfs.ll
 ; linux/optimized/i915_gem_context.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_gem_mman.ll
@@ -60,7 +57,6 @@
 ; linux/optimized/inet_connection_sock.ll
 ; linux/optimized/inet_hashtables.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/ioprio.ll
@@ -69,7 +65,6 @@
 ; linux/optimized/locks.ll
 ; linux/optimized/mark.ll
 ; linux/optimized/mmu_notifier.ll
-; linux/optimized/net-procfs.ll
 ; linux/optimized/nf_conntrack_expect.ll
 ; linux/optimized/nf_conntrack_netlink.ll
 ; linux/optimized/nf_nat_core.ll
@@ -80,7 +75,6 @@
 ; linux/optimized/posix-timers.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/property.ll
-; linux/optimized/ptp_vclock.ll
 ; linux/optimized/raw.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/scan.ll
@@ -91,7 +85,6 @@
 ; linux/optimized/svc_xprt.ll
 ; linux/optimized/svcauth.ll
 ; linux/optimized/sys.ll
-; linux/optimized/sysfs_engines.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
 ; linux/optimized/tty_io.ll
@@ -167,8 +160,9 @@
 ; wasmtime-rs/optimized/93h427h9qgxa6fr.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wireshark/optimized/tap-protocolinfo.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0) #0 {
+define i1 @func0000000000000042(ptr %0) #0 {
 entry:
   %1 = getelementptr i8, ptr %0, i64 -24
   %2 = icmp eq ptr %1, null

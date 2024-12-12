@@ -6,7 +6,7 @@ define i32 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i64 %0, %1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %2
+  %5 = add i32 %2, %4
   ret i32 %5
 }
 
@@ -23,7 +23,7 @@ define i32 @func000000000000003c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, %1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %2
+  %5 = add i32 %2, %4
   ret i32 %5
 }
 
@@ -36,12 +36,11 @@ define i32 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i64 %0, %1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %2
+  %5 = add i32 %2, %4
   ret i32 %5
 }
 
-; 9 occurrences:
-; linux/optimized/i915_cmd_parser.ll
+; 8 occurrences:
 ; linux/optimized/intel_renderstate.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/resize.ll
@@ -55,7 +54,7 @@ define i32 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i64 %0, %1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %2
+  %5 = add i32 %2, %4
   ret i32 %5
 }
 
@@ -68,7 +67,7 @@ define i32 @func0000000000000040(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i64 %0, %1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %2
+  %5 = add i32 %2, %4
   ret i32 %5
 }
 
@@ -79,7 +78,7 @@ define i32 @func000000000000005c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i64 %0, %1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %2
+  %5 = add i32 %2, %4
   ret i32 %5
 }
 
@@ -90,7 +89,7 @@ define i32 @func000000000000007f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, %1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %2
+  %5 = add i32 %2, %4
   ret i32 %5
 }
 
@@ -103,7 +102,7 @@ define i32 @func000000000000007c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, %1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %2
+  %5 = add i32 %2, %4
   ret i32 %5
 }
 
@@ -115,7 +114,7 @@ define i32 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i64 %0, %1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %2
+  %5 = add i32 %2, %4
   ret i32 %5
 }
 
@@ -126,7 +125,7 @@ define i32 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i64 %0, %1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %2
+  %5 = add i32 %2, %4
   ret i32 %5
 }
 
@@ -137,7 +136,7 @@ define i32 @func000000000000003f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, %1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %2
+  %5 = add i32 %2, %4
   ret i32 %5
 }
 
@@ -151,7 +150,7 @@ define i32 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i64 %0, %1
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %2
+  %5 = add i32 %2, %4
   ret i32 %5
 }
 

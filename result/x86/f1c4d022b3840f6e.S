@@ -1,10 +1,10 @@
-func0000000000000078:                   # @func0000000000000078
+func00000000000000d8:                   # @func00000000000000d8
 	orl	%edx, %esi
 	xorl	%eax, %eax
 	orl	%edi, %esi
 	setne	%al
 	retq
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	orl	%edx, %esi
 	xorl	%eax, %eax
 	orl	%edi, %esi
@@ -16,7 +16,7 @@ func0000000000000018:                   # @func0000000000000018
 	orl	%edi, %esi
 	setne	%al
 	retq
-func0000000000000070:                   # @func0000000000000070
+func00000000000000d0:                   # @func00000000000000d0
 	orl	%edx, %esi
 	orl	%edi, %esi
 	xorl	%eax, %eax

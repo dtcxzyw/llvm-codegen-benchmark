@@ -1,26 +1,13 @@
 
-; 88 occurrences:
+; 80 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; bullet3/optimized/b3File.ll
 ; cpython/optimized/dtoa.ll
-; crow/optimized/example.cpp.ll
-; crow/optimized/example_blueprint.cpp.ll
-; crow/optimized/example_catchall.cpp.ll
-; crow/optimized/example_chat.cpp.ll
-; crow/optimized/example_cookies.cpp.ll
-; crow/optimized/example_cors.cpp.ll
-; crow/optimized/example_file_upload.cpp.ll
-; crow/optimized/example_json_map.cpp.ll
-; crow/optimized/example_middleware.cpp.ll
-; crow/optimized/example_session.cpp.ll
-; crow/optimized/example_static_file.cpp.ll
-; crow/optimized/example_ws.cpp.ll
-; crow/optimized/helloworld.cpp.ll
 ; darktable/optimized/masks.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; folly/optimized/Conv.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5F.c.ll
-; hdf5/optimized/H5VLnative_file.c.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/ucmstate.ll
@@ -58,6 +45,8 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/IrBuilder.test.cpp.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
@@ -84,10 +73,13 @@
 ; raylib/optimized/rtextures.c.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/util.ll
-; slurm/optimized/node_mgr.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; z3/optimized/mpz.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

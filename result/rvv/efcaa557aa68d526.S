@@ -34,7 +34,7 @@ func0000000000000010:                   # @func0000000000000010
 	vmv.v.i	v10, 8
 	vmerge.vxm	v10, v10, a0, v0
 	li	a0, -8
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	zext.w	a0, a0
 	vand.vx	v8, v8, a0
 	ret
@@ -54,7 +54,7 @@ func0000000000000011:                   # @func0000000000000011
 	addiw	a1, a0, -1023
 	vmerge.vim	v10, v10, 1, v0
 	vxor.vx	v10, v10, a1
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	addiw	a0, a0, -1
 	vand.vx	v8, v8, a0
 	ret

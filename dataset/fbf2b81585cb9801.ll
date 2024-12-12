@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; eastl/optimized/TestString.cpp.ll
+; 4 occurrences:
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/CGCoroutine.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll
@@ -23,6 +22,16 @@ entry:
 define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 16385
+  %3 = select i1 %0, i1 %2, i1 false
+  ret i1 %3
+}
+
+; 1 occurrences:
+; eastl/optimized/TestString.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ugt i64 %1, 1
   %3 = select i1 %0, i1 %2, i1 false
   ret i1 %3
 }

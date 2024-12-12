@@ -31,7 +31,7 @@ entry:
   ret i8 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; lief/optimized/ssl_client.c.ll
 ; lief/optimized/ssl_msg.c.ll
@@ -44,6 +44,7 @@ entry:
 ; php/optimized/fastcgi.ll
 ; php/optimized/pcre2_compile.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
+; qemu/optimized/migration_qemu-file.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0, ptr %1) #0 {

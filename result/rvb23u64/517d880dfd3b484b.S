@@ -3,12 +3,12 @@ func0000000000000008:                   # @func0000000000000008
 	subw	a2, a2, a1
 	add.uw	a0, a2, a0
 	ret
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	li	a2, 32
 	subw	a2, a2, a1
 	sh2add.uw	a0, a2, a0
 	ret
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	li	a2, 15
 	subw	a2, a2, a1
 	add.uw	a0, a2, a0
@@ -18,11 +18,11 @@ func000000000000001c:                   # @func000000000000001c
 	subw	a2, a2, a1
 	sh3add.uw	a0, a2, a0
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	negw	a1, a1
 	sh3add	a0, a1, a0
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	li	a2, 31
 	subw	a2, a2, a1
 	sh3add.uw	a0, a2, a0

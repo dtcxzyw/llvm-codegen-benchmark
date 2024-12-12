@@ -7,7 +7,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpbroadcastd	.LCPI0_1(%rip), %ymm3   # ymm3 = [136,136,136,136,136,136,136,136]
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
 	vpsrld	$31, %ymm2, %ymm2
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI1_0:
 	.long	32752                           # 0x7ff0
@@ -16,7 +16,7 @@ func000000000000000b:                   # @func000000000000000b
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	96                              # 0x60
@@ -25,27 +25,18 @@ func0000000000000060:                   # @func0000000000000060
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm2, %ymm2
 	vpsrld	$31, %ymm2, %ymm2
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI3_0:
-	.long	8380416                         # 0x7fe000
-func0000000000000021:                   # @func0000000000000021
-	vpandd	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm3, %ymm2, %ymm2
-	vpsrld	$31, %ymm2, %ymm2
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
-	retq
-.LCPI4_0:
 	.long	17408                           # 0x4400
-.LCPI4_1:
+.LCPI3_1:
 	.long	16384                           # 0x4000
 func000000000000000a:                   # @func000000000000000a
-	vpandd	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
-	vpbroadcastd	.LCPI4_1(%rip), %ymm3   # ymm3 = [16384,16384,16384,16384,16384,16384,16384,16384]
+	vpandd	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
+	vpbroadcastd	.LCPI3_1(%rip), %ymm3   # ymm3 = [16384,16384,16384,16384,16384,16384,16384,16384]
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000063:                   # @func0000000000000063
 	vpxor	%xmm3, %xmm3, %xmm3

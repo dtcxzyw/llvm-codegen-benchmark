@@ -8,7 +8,7 @@
 define i32 @func0000000000000013(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, %1
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = sub nuw nsw i32 %1, %2
   %6 = select i1 %4, i32 %5, i32 -1
   ret i32 %6
@@ -17,9 +17,9 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TokenLexer.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000027(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000067(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp uge i32 %1, %2
+  %3 = icmp samesign uge i32 %1, %2
   %4 = and i1 %3, %0
   %5 = sub nuw nsw i32 %1, %2
   %6 = select i1 %4, i32 %5, i32 0
@@ -34,7 +34,7 @@ entry:
 define i32 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = sub nuw i32 %1, %2
   %6 = select i1 %4, i32 %5, i32 0
   ret i32 %6

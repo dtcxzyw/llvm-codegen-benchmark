@@ -1,6 +1,7 @@
 
-; 44 occurrences:
+; 45 occurrences:
 ; abc/optimized/abc.c.ll
+; boost/optimized/buffer_piece_border.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/cvodes.c.ll
 ; darktable/optimized/snapshots.c.ll
@@ -72,6 +73,7 @@ entry:
 ; 75 occurrences:
 ; cmake/optimized/json_value.cpp.ll
 ; cpython/optimized/cmathmodule.ll
+; egg-rs/optimized/2nrym8e40i82m5xa.ll
 ; graphviz/optimized/geometry.c.ll
 ; graphviz/optimized/intersection.c.ll
 ; graphviz/optimized/route.c.ll
@@ -107,7 +109,6 @@ entry:
 ; proj/optimized/igh_o.cpp.ll
 ; proj/optimized/imoll.cpp.ll
 ; proj/optimized/imoll_o.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/qsc.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; quantlib/optimized/alimikhailhaqcopula.ll
@@ -173,7 +174,8 @@ entry:
   ret i1 %3
 }
 
-; 30 occurrences:
+; 31 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/json_value.cpp.ll
 ; cpython/optimized/floatobject.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -184,6 +186,7 @@ entry:
 ; lua/optimized/lmathlib.ll
 ; lua/optimized/ltable.ll
 ; lua/optimized/lvm.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; minetest/optimized/sky.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; openjdk/optimized/cmsgmt.ll
@@ -193,7 +196,6 @@ entry:
 ; postgres/optimized/pgbench.ll
 ; proj/optimized/ell_set.cpp.ll
 ; proj/optimized/healpix.cpp.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/cevrndcalculator.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/hestonprocess.ll
@@ -257,7 +259,8 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/approximately_equals.ll
 ; openblas/optimized/dgedmdq.c.ll
 ; php/optimized/math.ll
 ; quantlib/optimized/analytichestonengine.ll
@@ -295,33 +298,6 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
-; quantlib/optimized/cevrndcalculator.ll
-; quantlib/optimized/kahalesmilesection.ll
-; quantlib/optimized/normaldistribution.ll
-; quantlib/optimized/squarerootclvmodel.ll
-; quantlib/optimized/squarerootprocessrndcalculator.ll
-; quantlib/optimized/tcopulapolicy.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000bd(double %0) #0 {
-entry:
-  %1 = fcmp ule double %0, 1.000000e+00
-  %2 = fcmp uge double %0, 0.000000e+00
-  %3 = and i1 %2, %1
-  ret i1 %3
-}
-
-; 1 occurrences:
-; quantlib/optimized/kahalesmilesection.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000db(double %0) #0 {
-entry:
-  %1 = fcmp uge double %0, -1.000000e+00
-  %2 = fcmp ule double %0, 0.000000e+00
-  %3 = and i1 %2, %1
-  ret i1 %3
-}
-
 ; 1 occurrences:
 ; quantlib/optimized/analytichestonengine.ll
 ; Function Attrs: nounwind
@@ -329,17 +305,6 @@ define i1 @func000000000000005b(double %0) #0 {
 entry:
   %1 = fcmp ugt double %0, 0xC00921FB54442D18
   %2 = fcmp ule double %0, 0x400921FB54442D18
-  %3 = and i1 %2, %1
-  ret i1 %3
-}
-
-; 1 occurrences:
-; quantlib/optimized/cliquetoption.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000037(double %0) #0 {
-entry:
-  %1 = fcmp ult double %0, 0.000000e+00
-  %2 = fcmp une double %0, 0x47EFFFFFE0000000
   %3 = and i1 %2, %1
   ret i1 %3
 }
@@ -368,8 +333,9 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000036(double %0) #0 {
 entry:
@@ -403,17 +369,6 @@ define i1 @func0000000000000044(double %0) #0 {
 entry:
   %1 = fcmp ogt double %0, 0xBFEFFFFFFAA19C47
   %2 = fcmp ogt double %0, 1.000000e-08
-  %3 = and i1 %2, %1
-  ret i1 %3
-}
-
-; 1 occurrences:
-; proj/optimized/io.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000087(double %0) #0 {
-entry:
-  %1 = fcmp oeq double %0, -1.000000e+00
-  %2 = fcmp une double %0, 1.000000e+00
   %3 = and i1 %2, %1
   ret i1 %3
 }
@@ -480,6 +435,17 @@ define i1 @func000000000000004a(double %0) #0 {
 entry:
   %1 = fcmp ogt double %0, 0.000000e+00
   %2 = fcmp ole double %0, 1.000000e+00
+  %3 = and i1 %2, %1
+  ret i1 %3
+}
+
+; 1 occurrences:
+; opencv/optimized/odometry.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d6(double %0) #0 {
+entry:
+  %1 = fcmp uge double %0, 0x3EB0C6F7A0B5ED8D
+  %2 = fcmp one double %0, 0x7FF0000000000000
   %3 = and i1 %2, %1
   ret i1 %3
 }

@@ -1,4 +1,4 @@
-func0000000000000388:                   # @func0000000000000388
+func0000000000000d08:                   # @func0000000000000d08
 	addq	%rdi, %rsi
 	cmpq	$64, %rsi
 	setae	%cl
@@ -6,7 +6,7 @@ func0000000000000388:                   # @func0000000000000388
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	addq	%rdi, %rsi
 	cmpq	$385, %rsi                      # imm = 0x181
 	setae	%cl
@@ -14,7 +14,7 @@ func0000000000000088:                   # @func0000000000000088
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000288:                   # @func0000000000000288
+func0000000000000908:                   # @func0000000000000908
 	addq	%rdi, %rsi
 	cmpq	$385, %rsi                      # imm = 0x181
 	setae	%cl

@@ -4,13 +4,13 @@ func0000000000000007:                   # @func0000000000000007
 	setle	%al
 	andb	%dil, %al
 	retq
-func0000000000000017:                   # @func0000000000000017
+func0000000000000027:                   # @func0000000000000027
 	sarl	$16, %edx
 	cmpl	%esi, %edx
 	setle	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sarl	$16, %edx
 	cmpl	%esi, %edx
 	setg	%al
@@ -22,7 +22,7 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sarl	$24, %edx
 	cmpl	%esi, %edx
 	sete	%al

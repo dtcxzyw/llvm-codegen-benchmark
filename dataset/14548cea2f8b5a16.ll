@@ -43,7 +43,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = zext i1 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 
@@ -59,7 +59,7 @@ define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 
@@ -79,7 +79,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 
@@ -90,19 +90,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2
   %3 = zext i1 %2 to i32
-  %4 = xor i32 %3, %0
-  ret i32 %4
-}
-
-; 2 occurrences:
-; abc/optimized/bmcMaj.c.ll
-; meshoptimizer/optimized/indexcodec.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 1
-  %3 = zext i1 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 

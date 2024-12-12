@@ -60,7 +60,7 @@ func0000000000000040:                   # @func0000000000000040
 	addi	a0, a0, -1792
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	li	a0, 32
 	vsll.vx	v8, v8, a0
 	ret

@@ -1,4 +1,27 @@
 
+; 1 occurrences:
+; lvgl/optimized/lv_arc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000b(i1 %0, float %1) #0 {
+entry:
+  %2 = fneg float %1
+  %3 = select i1 %0, float %1, float %2
+  %4 = fcmp ule float %3, 2.800000e+02
+  ret i1 %4
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_arc.ll
+; oiio/optimized/texturesys.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, float %1) #0 {
+entry:
+  %2 = fneg float %1
+  %3 = select i1 %0, float %1, float %2
+  %4 = fcmp ogt float %3, 1.800000e+02
+  ret i1 %4
+}
+
 ; 6 occurrences:
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -12,6 +35,17 @@ entry:
   %2 = fneg float %1
   %3 = select i1 %0, float %1, float %2
   %4 = fcmp ult float %3, 1.000000e+00
+  ret i1 %4
+}
+
+; 1 occurrences:
+; oiio/optimized/texturesys.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, float %1) #0 {
+entry:
+  %2 = fneg float %1
+  %3 = select i1 %0, float %1, float %2
+  %4 = fcmp oge float %3, -1.000000e+00
   ret i1 %4
 }
 

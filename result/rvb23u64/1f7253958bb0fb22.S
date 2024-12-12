@@ -13,3 +13,8 @@ func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
+func0000000000000004:                   # @func0000000000000004
+	fcvt.w.s	a2, fa0, rtz
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret

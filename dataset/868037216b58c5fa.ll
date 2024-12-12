@@ -7,7 +7,7 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000014(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 511
   %4 = add nsw i32 %3, -33

@@ -1,39 +1,40 @@
 
-%"class.clang::NestedNameSpecifierLoc.2989233" = type { ptr, ptr }
-%class.symbol.3428956 = type { ptr }
+%"class.clang::NestedNameSpecifierLoc.3182702" = type { ptr, ptr }
+%class.symbol.3613505 = type { ptr }
+%struct.lua_TValue.3660795 = type { %union.Value.3660796, i32 }
+%union.Value.3660796 = type { ptr }
 
-; 23 occurrences:
+; 9 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hyperscan/optimized/block.c.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/match.c.ll
-; hyperscan/optimized/mpv.c.ll
-; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/repeat.c.ll
-; hyperscan/optimized/som_runtime.c.ll
-; hyperscan/optimized/som_stream.c.ll
-; hyperscan/optimized/stream.c.ll
-; hyperscan/optimized/stream_compress.c.ll
 ; icu/optimized/ucnv_bld.ll
-; luajit/optimized/minilua.ll
-; luau/optimized/BytecodeAnalysis.cpp.ll
 ; opencv/optimized/guided_filter.cpp.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
-; redis/optimized/lvm.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %1
-  %6 = getelementptr nusw i64, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 8
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
+  ret ptr %7
+}
+
+; 1 occurrences:
+; luau/optimized/BytecodeAnalysis.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 24
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw i32, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 4
   ret ptr %7
 }
 
@@ -41,13 +42,13 @@ entry:
 ; hyperscan/optimized/mpv.c.ll
 ; llvm/optimized/Expr.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 20
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %"class.clang::NestedNameSpecifierLoc.2989233", ptr %0, i64 %1
-  %6 = getelementptr nusw ptr, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 16
+  %5 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3182702", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 16
   ret ptr %7
 }
 
@@ -112,13 +113,38 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000060(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000070(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %class.symbol.3428956, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %class.symbol.3613505, ptr %0, i64 %1
   %6 = getelementptr ptr, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 -8
+  ret ptr %7
+}
+
+; 13 occurrences:
+; hyperscan/optimized/block.c.ll
+; hyperscan/optimized/castle.c.ll
+; hyperscan/optimized/catchup.c.ll
+; hyperscan/optimized/match.c.ll
+; hyperscan/optimized/mpv.c.ll
+; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/repeat.c.ll
+; hyperscan/optimized/som_runtime.c.ll
+; hyperscan/optimized/som_stream.c.ll
+; hyperscan/optimized/stream.c.ll
+; hyperscan/optimized/stream_compress.c.ll
+; luajit/optimized/minilua.ll
+; redis/optimized/lvm.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 23
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw %struct.lua_TValue.3660795, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %struct.lua_TValue.3660795, ptr %5, i64 %4
+  %7 = getelementptr nusw i8, ptr %6, i64 -16
   ret ptr %7
 }
 

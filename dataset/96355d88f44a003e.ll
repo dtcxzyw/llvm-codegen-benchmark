@@ -38,9 +38,10 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; git/optimized/read-cache.ll
 ; icu/optimized/collationfastlatin.ll
+; linux/optimized/8139too.ll
 ; linux/optimized/blk-flush.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/intel_sseu.ll

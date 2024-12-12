@@ -28,14 +28,14 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	andb	%dil, %al
 	retq
-func0000000000000009:                   # @func0000000000000009
-	cmpl	%edx, %esi
-	setae	%al
-	andb	%dil, %al
-	retq
 func000000000000000c:                   # @func000000000000000c
 	cmpl	%edx, %esi
 	setne	%al
+	andb	%dil, %al
+	retq
+func0000000000000019:                   # @func0000000000000019
+	cmpl	%edx, %esi
+	setae	%al
 	andb	%dil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006

@@ -13,6 +13,10 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 7
 	add	a0, a0, a1
 	ret
+func000000000000000b:                   # @func000000000000000b
+	slli	a1, a1, 8
+	add	a0, a0, a1
+	ret
 func000000000000001f:                   # @func000000000000001f
 	slli	a1, a1, 10
 	add	a0, a0, a1

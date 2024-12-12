@@ -296,8 +296,9 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; hwloc/optimized/topology-linux.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i32 %0, i1 %1, i1 %2) #0 {
 entry:

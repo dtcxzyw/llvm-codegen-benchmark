@@ -13,13 +13,12 @@ entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = shl nuw i32 255, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; Function Attrs: nounwind
@@ -28,7 +27,7 @@ entry:
   %2 = shl i32 %1, 3
   %3 = shl nuw i32 255, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -41,7 +40,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = shl nuw nsw i32 15, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -53,7 +52,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -67,13 +66,12 @@ entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = shl i32 3, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; gromacs/optimized/redistribute.cpp.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/xstate.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
@@ -87,7 +85,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = shl i32 3, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -99,7 +97,7 @@ entry:
   %2 = shl i32 %1, 3
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -111,7 +109,7 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = shl nuw nsw i32 3, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

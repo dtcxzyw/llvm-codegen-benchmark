@@ -18,6 +18,11 @@ func0000000000000008:                   # @func0000000000000008
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+func000000000000000f:                   # @func000000000000000f
+	vpmovdb	%ymm1, %xmm1
+	vpsubb	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
 func0000000000000002:                   # @func0000000000000002
 	vpmovdb	%ymm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0

@@ -1,5 +1,8 @@
 
-; 43 occurrences:
+; 46 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -47,7 +50,7 @@
 define i1 @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fneg double %1
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
@@ -58,12 +61,14 @@ entry:
 define i1 @func000000000000000d(double %0, double %1) #0 {
 entry:
   %2 = fneg double %1
-  %3 = fcmp ule double %2, %0
+  %3 = fcmp uge double %0, %2
   ret i1 %3
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/nvector_serial.c.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
@@ -80,7 +85,7 @@ entry:
 define i1 @func0000000000000008(double %0, double %1) #0 {
 entry:
   %2 = fneg double %1
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
@@ -99,13 +104,12 @@ entry:
 define i1 @func0000000000000005(double %0, double %1) #0 {
 entry:
   %2 = fneg double %1
-  %3 = fcmp ult double %2, %0
+  %3 = fcmp ugt double %0, %2
   ret i1 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; c3c/optimized/bigint.c.ll
-; c3c/optimized/number.c.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; graphviz/optimized/shapes.c.ll
@@ -116,24 +120,13 @@ entry:
 define i1 @func0000000000000003(double %0, double %1) #0 {
 entry:
   %2 = fneg double %1
-  %3 = fcmp ugt double %2, %0
+  %3 = fcmp ult double %0, %2
   ret i1 %3
 }
 
-; 4 occurrences:
-; c3c/optimized/number.c.ll
-; casadi/optimized/dm_instantiator.cpp.ll
-; casadi/optimized/im_instantiator.cpp.ll
-; quantlib/optimized/kahalesmilesection.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(double %0, double %1) #0 {
-entry:
-  %2 = fneg double %1
-  %3 = fcmp ole double %2, %0
-  ret i1 %3
-}
-
-; 25 occurrences:
+; 27 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/ipqp.cpp.ll
 ; ceres/optimized/line_search_direction.cc.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
@@ -163,23 +156,36 @@ entry:
 define i1 @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fneg double %1
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
-; 7 occurrences:
+; 3 occurrences:
+; casadi/optimized/dm_instantiator.cpp.ll
+; casadi/optimized/im_instantiator.cpp.ll
+; quantlib/optimized/kahalesmilesection.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(double %0, double %1) #0 {
+entry:
+  %2 = fneg double %1
+  %3 = fcmp oge double %0, %2
+  ret i1 %3
+}
+
+; 8 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr4.c.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; proj/optimized/geodesic.c.ll
-; proj/optimized/io.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(double %0, double %1) #0 {
 entry:
   %2 = fneg double %1
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 
@@ -189,7 +195,7 @@ entry:
 define i1 @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = fneg double %1
-  %3 = fcmp oge double %2, %0
+  %3 = fcmp ole double %0, %2
   ret i1 %3
 }
 

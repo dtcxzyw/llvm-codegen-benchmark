@@ -1,16 +1,16 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	testl	%edx, %edx
 	cmovnel	%edx, %esi
 	movslq	%esi, %rax
 	leaq	168(%rdi,%rax,8), %rax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func000000000000006e:                   # @func000000000000006e
 	testl	%edx, %edx
 	cmovnsl	%edx, %esi
 	movslq	%esi, %rax
 	leaq	64(%rdi,%rax,8), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	testl	%edx, %edx
 	cmovnel	%edx, %esi
 	movslq	%esi, %rax

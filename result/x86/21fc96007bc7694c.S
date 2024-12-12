@@ -1,9 +1,9 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addq	%rdx, %rsi
 	orq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	addq	%rdx, %rsi
 	orq	%rdi, %rsi
 	sete	%al
@@ -13,7 +13,7 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rdi, %rsi
 	sete	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	addq	%rdx, %rsi
 	orq	%rdi, %rsi
 	setns	%al
@@ -33,17 +33,17 @@ func000000000000000a:                   # @func000000000000000a
 	orq	%rdi, %rsi
 	setns	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	leaq	(%rsi,%rdx), %rax
 	orq	%rdi, %rax
 	shrq	$63, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	addq	%rdx, %rsi
 	orq	%rdi, %rsi
 	sete	%al
 	retq
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	addq	%rdx, %rsi
 	orq	%rdi, %rsi
 	setne	%al

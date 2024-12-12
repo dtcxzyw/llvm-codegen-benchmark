@@ -11,7 +11,7 @@ entry:
   ret i16 %4
 }
 
-; 93 occurrences:
+; 95 occurrences:
 ; grpc/optimized/writing.cc.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/nf_reject_ipv4.ll
@@ -51,7 +51,9 @@ entry:
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/TransEmptyStatementsAndDealloc.cpp.ll
 ; llvm/optimized/TransProtectedScope.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; openvdb/optimized/points.cc.ll
+; postgres/optimized/trigger.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll

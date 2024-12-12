@@ -24,7 +24,7 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, -819
 	slli	a0, a0, 40
 	vmul.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000003:                   # @func0000000000000003
 	lui	a0, 559241

@@ -14,7 +14,7 @@ func0000000000000006:                   # @func0000000000000006
 	.short	20                              # 0x14
 	.short	20                              # 0x14
 	.short	20                              # 0x14
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vpmovdw	%ymm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vpcmpltuw	.LCPI1_0(%rip), %xmm0, %k0
@@ -23,7 +23,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpmovdw	%ymm1, %xmm1
-	vpcmpeqw	%xmm0, %xmm1, %xmm0
+	vpcmpeqw	%xmm1, %xmm0, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	vzeroupper
 	retq
@@ -36,7 +36,7 @@ func000000000000000c:                   # @func000000000000000c
 	.short	1                               # 0x1
 	.short	1                               # 0x1
 	.short	1                               # 0x1
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	vpmovdw	%ymm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vpcmpnleuw	.LCPI3_0(%rip), %xmm0, %k0
@@ -45,10 +45,10 @@ func0000000000000088:                   # @func0000000000000088
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vpmovdw	%ymm1, %xmm1
-	vpcmpeqw	%xmm0, %xmm1, %xmm0
+	vpcmpeqw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	vpmovdw	%ymm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -87,7 +87,7 @@ func0000000000000008:                   # @func0000000000000008
 	.short	12                              # 0xc
 	.short	12                              # 0xc
 	.short	12                              # 0xc
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vpmovdw	%ymm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vpcmpnleuw	.LCPI8_0(%rip), %xmm0, %k0

@@ -5,14 +5,14 @@ func0000000000000060:                   # @func0000000000000060
 	imull	%esi, %edi
 	addl	%edi, %eax
 	retq
-func0000000000000165:                   # @func0000000000000165
+func0000000000000265:                   # @func0000000000000265
 	leal	-1(%rsi), %eax
 	cmpl	%esi, %edi
 	cmovll	%edi, %eax
 	imull	%esi, %edx
 	addl	%edx, %eax
 	retq
-func0000000000000164:                   # @func0000000000000164
+func0000000000000264:                   # @func0000000000000264
 	leal	-1(%rdx), %eax
 	cmpl	%edx, %edi
 	cmovll	%edi, %eax

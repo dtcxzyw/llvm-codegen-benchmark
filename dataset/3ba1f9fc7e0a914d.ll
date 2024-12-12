@@ -1,17 +1,5 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000018(i8 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 15
-  %3 = shl nuw nsw i32 1, %2
-  %4 = trunc i32 %3 to i8
-  %5 = or i8 %4, %0
-  ret i8 %5
-}
-
-; 138 occurrences:
+; 134 occurrences:
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; darktable/optimized/RawImage.cpp.ll
@@ -19,12 +7,10 @@ entry:
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll
-; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/som_runtime.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; hyperscan/optimized/trufflecompile.cpp.ll
@@ -37,7 +23,6 @@ entry:
 ; linux/optimized/irq.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/Attributes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
@@ -73,7 +58,6 @@ entry:
 ; postgres/optimized/bloomfilter.ll
 ; postgres/optimized/brin_bloom.ll
 ; postgres/optimized/clog.ll
-; postgres/optimized/datapagemap.ll
 ; postgres/optimized/tsgistidx.ll
 ; qemu/optimized/hw_net_eepro100.c.ll
 ; qemu/optimized/hw_pci_msix.c.ll
@@ -156,7 +140,7 @@ entry:
   %2 = and i32 %1, 7
   %3 = shl nuw nsw i32 1, %2
   %4 = trunc nuw i32 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

@@ -1,16 +1,4 @@
 
-; 2 occurrences:
-; yoga/optimized/AbsoluteLayout.cpp.ll
-; yoga/optimized/Node.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0) #0 {
-entry:
-  %1 = freeze i8 %0
-  %2 = and i8 %1, 8
-  %3 = icmp eq i8 %2, 0
-  ret i1 %3
-}
-
 ; 7 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll

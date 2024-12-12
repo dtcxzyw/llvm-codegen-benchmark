@@ -1,5 +1,5 @@
 
-; 103 occurrences:
+; 102 occurrences:
 ; abc/optimized/cecSplit.c.ll
 ; abc/optimized/cuddGenetic.c.ll
 ; abc/optimized/sswRarity.c.ll
@@ -11,6 +11,7 @@
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
+; boost/optimized/area_box_sg.ll
 ; casadi/optimized/cvodes.c.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -47,7 +48,6 @@
 ; opencv/optimized/sc_dis.cpp.ll
 ; opencv/optimized/triangulate.cpp.ll
 ; openmpi/optimized/reachable_netlink_module.ll
-; openmpi/optimized/reachable_weighted.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; openvdb/optimized/Diagnostics.cc.ll
@@ -59,7 +59,6 @@
 ; postgres/optimized/tsrank.ll
 ; proj/optimized/boggs.cpp.ll
 ; proj/optimized/imw_p.cpp.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
 ; quantlib/optimized/basecorrelationstructure.ll
 ; quantlib/optimized/binomialtree.ll

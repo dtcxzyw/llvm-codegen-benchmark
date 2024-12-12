@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; lief/optimized/ssl_tls.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
@@ -9,9 +9,8 @@
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
-; wireshark/optimized/packet-netlink-netfilter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i16 %0) #0 {
+define i1 @func0000000000000104(i16 %0) #0 {
 entry:
   %1 = trunc nuw i16 %0 to i8
   %2 = add i8 %1, -3
@@ -41,7 +40,7 @@ entry:
 ; icu/optimized/punycode.ll
 ; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i16 %0) #0 {
+define i1 @func0000000000000124(i16 %0) #0 {
 entry:
   %1 = trunc nuw i16 %0 to i8
   %2 = add nsw i8 %1, -3
@@ -52,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/string_number_conversions.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i16 %0) #0 {
+define i1 @func0000000000000138(i16 %0) #0 {
 entry:
   %1 = trunc nuw i16 %0 to i8
   %2 = add i8 %1, -57
@@ -85,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/chess_board.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i16 %0) #0 {
+define i1 @func000000000000010a(i16 %0) #0 {
 entry:
   %1 = trunc nuw i16 %0 to i8
   %2 = add i8 %1, 1
@@ -93,8 +92,7 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
-; linux/optimized/intel_step.ll
+; 2 occurrences:
 ; linux/optimized/nl80211.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; Function Attrs: nounwind
@@ -109,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/keyboard.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i16 %0) #0 {
+define i1 @func0000000000000121(i16 %0) #0 {
 entry:
   %1 = trunc nuw i16 %0 to i8
   %2 = icmp eq i8 %1, -5

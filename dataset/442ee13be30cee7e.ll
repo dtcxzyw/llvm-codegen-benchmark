@@ -1,7 +1,7 @@
 
-%class.QCPGraphData.3260420 = type { double, double }
+%class.QCPGraphData.3451166 = type { double, double }
 
-; 43 occurrences:
+; 42 occurrences:
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
@@ -20,7 +20,6 @@
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openblas/optimized/dgtsv.c.ll
 ; openblas/optimized/dgtts2.c.ll
@@ -106,7 +105,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 28
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %class.QCPGraphData.3260420, ptr %0, i64 %5
+  %6 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %4
   ret ptr %7
 }
@@ -119,7 +118,7 @@ entry:
   %3 = shl nuw i64 %2, 32
   %4 = ashr exact i64 %3, 28
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %class.QCPGraphData.3260420, ptr %0, i64 %5
+  %6 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %4
   ret ptr %7
 }
@@ -137,13 +136,13 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = sext i32 %1 to i64
-  %5 = getelementptr i32, ptr %0, i64 %4
+  %5 = getelementptr nusw i32, ptr %0, i64 %4
   %6 = ashr exact i64 %3, 30
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 

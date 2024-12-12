@@ -5,6 +5,13 @@ func000000000000002e:                   // @func000000000000002e
 	sub	x0, x8, #8
 	ret
                                         // -- End function
+func000000000000002f:                   // @func000000000000002f
+// %bb.0:                               // %entry
+	orr	x8, x1, #0x2
+	add	x8, x0, x8
+	sub	x0, x8, #4
+	ret
+                                        // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
 	orr	x8, x1, #0x4

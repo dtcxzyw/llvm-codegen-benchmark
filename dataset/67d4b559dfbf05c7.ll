@@ -54,9 +54,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/intel_dmc.ll
-; linux/optimized/intel_snps_phy.ll
 ; openjdk/optimized/indexSet.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000033(i32 %0, i32 %1) #0 {

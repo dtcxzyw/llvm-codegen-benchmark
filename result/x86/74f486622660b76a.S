@@ -3,3 +3,8 @@ func0000000000000001:                   # @func0000000000000001
 	leal	(%rdi,%rdi,2), %eax
 	cltq
 	retq
+func0000000000000005:                   # @func0000000000000005
+	sarl	$16, %edi
+	imull	$104, %edi, %eax
+	cltq
+	retq

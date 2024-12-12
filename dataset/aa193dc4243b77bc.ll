@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; oiio/optimized/pnminput.cpp.ll
+; 2 occurrences:
 ; qemu/optimized/block_qcow2-cache.c.ll
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
@@ -12,7 +11,8 @@ entry:
   ret i64 %4
 }
 
-; 41 occurrences:
+; 42 occurrences:
+; boost/optimized/conversion.ll
 ; cmake/optimized/cmProcess.cxx.ll
 ; gromacs/optimized/atomsbuilder.cpp.ll
 ; gromacs/optimized/mdatoms.cpp.ll
@@ -56,6 +56,17 @@ entry:
 ; yosys/optimized/wreduce.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %.neg = sub i64 %2, %1
+  %3 = sext i32 %0 to i64
+  %4 = add i64 %.neg, %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; oiio/optimized/pnminput.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = sext i32 %0 to i64

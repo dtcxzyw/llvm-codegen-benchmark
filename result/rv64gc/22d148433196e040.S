@@ -1,4 +1,4 @@
-func0000000000000cc3:                   # @func0000000000000cc3
+func00000000000018c3:                   # @func00000000000018c3
 	li	a2, -1
 	slli	a2, a2, 63
 	addi	a2, a2, 1
@@ -8,7 +8,7 @@ func0000000000000cc3:                   # @func0000000000000cc3
 	snez	a0, a0
 	add	a0, a0, a1
 	ret
-func0000000000000ca3:                   # @func0000000000000ca3
+func00000000000018a3:                   # @func00000000000018a3
 	li	a2, -1
 	slli	a2, a2, 63
 	xor	a1, a1, a2
@@ -17,7 +17,7 @@ func0000000000000ca3:                   # @func0000000000000ca3
 	slt	a0, a2, a0
 	add	a0, a0, a1
 	ret
-func0000000000000aa3:                   # @func0000000000000aa3
+func00000000000014a3:                   # @func00000000000014a3
 	li	a2, -1
 	slli	a2, a2, 63
 	addi	a2, a2, 1

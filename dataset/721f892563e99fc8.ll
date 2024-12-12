@@ -2,7 +2,7 @@
 ; 26 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
 ; cpython/optimized/longobject.ll
-; darktable/optimized/jpeg.c.ll
+; graphviz/optimized/spring_electrical.c.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256_nosse.ll
 ; libsodium/optimized/libsse2_la-pwhash_scryptsalsa208sha256_sse.ll
@@ -115,38 +115,11 @@ entry:
   ret i64 %4
 }
 
-; 31 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_scalepixels.c.ll
 ; darktable/optimized/tiff.c.ll
-; openblas/optimized/lapacke_dgbcon_work.c.ll
-; openblas/optimized/lapacke_dgbtrf_work.c.ll
 ; openblas/optimized/lapacke_dgesdd_work.c.ll
-; openblas/optimized/lapacke_dlacpy_work.c.ll
-; openblas/optimized/lapacke_dlapmr_work.c.ll
-; openblas/optimized/lapacke_dlapmt_work.c.ll
-; openblas/optimized/lapacke_dlarfb_work.c.ll
-; openblas/optimized/lapacke_dlarft_work.c.ll
-; openblas/optimized/lapacke_dlarfx_work.c.ll
-; openblas/optimized/lapacke_dlaset_work.c.ll
-; openblas/optimized/lapacke_dlaswp_work.c.ll
-; openblas/optimized/lapacke_dopmtr_work.c.ll
-; openblas/optimized/lapacke_dpftrs_work.c.ll
-; openblas/optimized/lapacke_dpprfs_work.c.ll
-; openblas/optimized/lapacke_dppsv_work.c.ll
-; openblas/optimized/lapacke_dppsvx_work.c.ll
-; openblas/optimized/lapacke_dpptrs_work.c.ll
-; openblas/optimized/lapacke_dsfrk_work.c.ll
-; openblas/optimized/lapacke_dspevx_work.c.ll
-; openblas/optimized/lapacke_dspgvx_work.c.ll
-; openblas/optimized/lapacke_dsprfs_work.c.ll
-; openblas/optimized/lapacke_dspsv_work.c.ll
-; openblas/optimized/lapacke_dspsvx_work.c.ll
-; openblas/optimized/lapacke_dsptrs_work.c.ll
-; openblas/optimized/lapacke_dtfsm_work.c.ll
-; openblas/optimized/lapacke_dtprfb_work.c.ll
-; openblas/optimized/lapacke_dtprfs_work.c.ll
-; openblas/optimized/lapacke_dtptrs_work.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:

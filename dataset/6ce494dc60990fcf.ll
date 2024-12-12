@@ -9,7 +9,7 @@
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = sub nsw i64 %2, %0
@@ -21,7 +21,7 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = sub nsw i64 %2, %0
@@ -32,11 +32,11 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/4vksfexudgt1qids.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = sub nuw nsw i64 %2, %0
-  %4 = icmp ult i64 %3, 2
+  %4 = icmp samesign ult i64 %3, 2
   ret i1 %4
 }
 
@@ -45,7 +45,7 @@ entry:
 ; ceres/optimized/covariance_impl.cc.ll
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = sub nsw i64 %2, %0
@@ -66,7 +66,7 @@ entry:
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = sub nsw i64 %2, %0
@@ -78,7 +78,7 @@ entry:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; protobuf/optimized/generated_enum_util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = icmp eq i64 %2, %0
@@ -88,22 +88,33 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = icmp eq i64 %2, %0
   ret i1 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
-; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = sub i64 %2, %0
   %4 = icmp ugt i64 %3, 7
+  ret i1 %4
+}
+
+; 2 occurrences:
+; abseil-cpp/optimized/cord.cc.ll
+; cpython/optimized/longobject.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = sub i64 %2, %0
+  %4 = icmp samesign ugt i64 %3, 3
   ret i1 %4
 }
 
@@ -121,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = sub nsw i64 %2, %0

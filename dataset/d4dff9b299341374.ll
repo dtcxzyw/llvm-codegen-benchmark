@@ -11,10 +11,10 @@
 define double @func0000000000000000(double %0, double %1, float %2) #0 {
 entry:
   %3 = fpext float %2 to double
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fptrunc double %4 to float
   %6 = fpext float %5 to double
-  %7 = fmul double %6, %0
+  %7 = fmul double %0, %6
   ret double %7
 }
 

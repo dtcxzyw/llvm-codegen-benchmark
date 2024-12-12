@@ -26,7 +26,7 @@ entry:
   %.tr = trunc i64 %2 to i32
   %3 = shl i32 %.tr, 1
   %4 = shl nsw i32 %1, 3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = add i32 %5, %3
   ret i32 %6
 }
@@ -57,7 +57,7 @@ entry:
   %.tr = trunc i64 %2 to i32
   %3 = shl i32 %.tr, 2
   %4 = shl nsw i32 %1, 4
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = add i32 %5, %3
   ret i32 %6
 }
@@ -68,10 +68,11 @@ entry:
 define i32 @func0000000000000330(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %.tr = trunc i64 %2 to i32
-  %3 = add i32 %.tr, %1
-  %4 = shl i32 %3, 1
-  %5 = add i32 %4, %0
-  ret i32 %5
+  %3 = shl i32 %.tr, 1
+  %4 = shl i32 %1, 1
+  %5 = add i32 %0, %4
+  %6 = add i32 %5, %3
+  ret i32 %6
 }
 
 ; 1 occurrences:
@@ -80,7 +81,7 @@ entry:
 define i32 @func0000000000000310(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %.tr = trunc i64 %2 to i32
-  %3 = add i32 %.tr, %1
+  %3 = add i32 %1, %.tr
   %4 = shl i32 %3, 1
   %5 = add i32 %4, %0
   ret i32 %5
@@ -94,7 +95,7 @@ entry:
   %.tr = trunc i64 %2 to i32
   %3 = shl i32 %.tr, 2
   %4 = shl i32 %1, 5
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = add i32 %5, %3
   ret i32 %6
 }

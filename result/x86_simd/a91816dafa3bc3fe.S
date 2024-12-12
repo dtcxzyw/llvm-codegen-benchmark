@@ -59,7 +59,7 @@ func000000000000003f:                   # @func000000000000003f
 	.short	28                              # 0x1c
 func0000000000000034:                   # @func0000000000000034
 	vpmullw	.LCPI1_0(%rip), %ymm1, %ymm1    # [21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,21]
-	vpaddw	%ymm0, %ymm1, %ymm0
+	vpaddw	%ymm1, %ymm0, %ymm0
 	vpmullw	.LCPI1_1(%rip), %ymm0, %ymm0    # [28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28]
 	retq
 .LCPI2_0:

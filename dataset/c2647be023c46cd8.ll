@@ -6,7 +6,7 @@
 ; redis/optimized/llex.ll
 ; ruby/optimized/file.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 192
   %3 = icmp ne i32 %2, 0
@@ -27,7 +27,7 @@ entry:
 ; php/optimized/pdo_stmt.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 61440
   %3 = icmp eq i32 %2, 16384
@@ -40,7 +40,7 @@ entry:
 ; linux/optimized/intel_uncore.ll
 ; qemu/optimized/hw_block_virtio-blk.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
@@ -55,7 +55,7 @@ entry:
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = icmp ne i32 %2, 3
@@ -64,7 +64,13 @@ entry:
   ret i1 %5
 }
 
-; 219 occurrences:
+; 265 occurrences:
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; cpython/optimized/symtable.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
@@ -161,7 +167,6 @@ entry:
 ; linux/optimized/eventfd.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/link_watch.ll
-; linux/optimized/mii.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/CalledOnceCheck.cpp.ll
@@ -284,8 +289,49 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/01k8ewullo09lcfopyq8rjsdt.ll
+; zed-rs/optimized/0b2hqzlwilt32lfvaqs2arfgd.ll
+; zed-rs/optimized/0f9s7n006qx5q3zzvlk0itadj.ll
+; zed-rs/optimized/1774ern7vmjezjfzajsdneavj.ll
+; zed-rs/optimized/186ffj9uswcj8t36dkme83b2g.ll
+; zed-rs/optimized/21l0e6jqf9fsvdhf0m08fpd04.ll
+; zed-rs/optimized/26xf9pzubm30qmivlxh5xlprr.ll
+; zed-rs/optimized/2hj9t7h454jk4f0tp9t7ag5me.ll
+; zed-rs/optimized/2pjmz9fmy54g6vkualen6rbg5.ll
+; zed-rs/optimized/3bwpnkngp0v942xuk5tod4bfe.ll
+; zed-rs/optimized/3ivgs023o40fzbajfmc5q2k7d.ll
+; zed-rs/optimized/3xkvahxsem1hdyf3ef4aq8akj.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/5gmag9o6m5uu0f6cquc455dby.ll
+; zed-rs/optimized/5qba05g0dyedoh8rydwnrszty.ll
+; zed-rs/optimized/5s44oz7ztp6o1gjtp6jhzkvc2.ll
+; zed-rs/optimized/6k04c116ogp35htlpsavpzpvg.ll
+; zed-rs/optimized/6y62t1l0cl6f298o8375vczo5.ll
+; zed-rs/optimized/7nj8apu4jlzv057e0kkcpojil.ll
+; zed-rs/optimized/7v45b7y7t6bpxkoxn6aktlghb.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8f6s0vmbsrj8amaa2lwvbiw5d.ll
+; zed-rs/optimized/8srt4gkb2hpqjmj9hoisciupc.ll
+; zed-rs/optimized/9halndrg3dxenpyuljfpbk2q0.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/9u70uffa5gnr0a44dt677r86w.ll
+; zed-rs/optimized/asge4ovzpoi4j0hgzjom7idmo.ll
+; zed-rs/optimized/ba1fbg7c0slithvjnvqvkyuvg.ll
+; zed-rs/optimized/bek49q22pl1lleiy0blatoy5a.ll
+; zed-rs/optimized/bmmi5kkbn5ov6774do5bqdg37.ll
+; zed-rs/optimized/brfpsqsl3kxc3ngzjjsbjx55x.ll
+; zed-rs/optimized/bvs73film05xborh0f0ab3jqk.ll
+; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
+; zed-rs/optimized/cfnzushvu4gqnws49tq7oo9ft.ll
+; zed-rs/optimized/cgxtqkz3q1lf4y8mn1r3vggst.ll
+; zed-rs/optimized/e1zfulrbe37q5wr8nqo3o1ns6.ll
+; zed-rs/optimized/e2t208u96614zaapml39g6l5s.ll
+; zed-rs/optimized/e748565vpp6ojsam8tpc9smdg.ll
+; zed-rs/optimized/ees19hacjiz3y03peze9imi7o.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/eyl50e18l6kj3inbixv9y0nwt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = icmp eq i32 %2, 0
@@ -294,14 +340,15 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/wlcNtk.c.ll
+; boost/optimized/area.ll
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/sd.ll
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = icmp ne i32 %2, 7
@@ -310,13 +357,12 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; coreutils-rs/optimized/1jbxberfc5l4jlu4.ll
 ; coreutils-rs/optimized/20v11r4bpq9cscu.ll
 ; coreutils-rs/optimized/54i42m66wtythwaw.ll
-; linux/optimized/hid-belkin.ll
 ; linux/optimized/pipe.ll
 ; linux/optimized/vfs_inode_dotl.ll
 ; llvm/optimized/CGVTables.cpp.ll
@@ -332,7 +378,7 @@ entry:
 ; postgres/optimized/bufmgr.ll
 ; redis/optimized/script.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = icmp ne i32 %2, 4
@@ -346,11 +392,11 @@ entry:
 ; freetype/optimized/cff.c.ll
 ; git/optimized/clean.ll
 ; git/optimized/ident.ll
-; linux/optimized/madvise.ll
 ; llvm/optimized/CGObjC.cpp.ll
 ; postgres/optimized/jsonfuncs.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0
@@ -359,10 +405,24 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; boost/optimized/area.ll
+; linux/optimized/seq_clientmgr.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func000000000000014c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 1024
+  %3 = icmp ne i32 %2, 0
+  %4 = icmp sgt i64 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; llvm/optimized/ObjCRuntime.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483640
   %3 = icmp eq i32 %2, 0
@@ -371,10 +431,23 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; linux/optimized/rhashtable.ll
+; llvm/optimized/X86DisassemblerTables.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000281(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 4096
+  %3 = icmp eq i32 %2, 0
+  %4 = icmp samesign ult i64 %0, 32768
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1048576
   %3 = icmp ne i32 %2, 0
@@ -383,15 +456,14 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; linux/optimized/seq_clientmgr.ll
+; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000301(i64 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 2048
-  %3 = icmp ne i32 %2, 0
-  %4 = icmp sgt i64 %0, 0
+  %2 = and i32 %1, 1
+  %3 = icmp eq i32 %2, 0
+  %4 = icmp samesign ugt i64 %0, 31
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
@@ -399,7 +471,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16384
   %3 = icmp eq i32 %2, 0
@@ -411,7 +483,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63488
   %3 = icmp eq i32 %2, 55296

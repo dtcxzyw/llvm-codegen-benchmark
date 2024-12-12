@@ -30,7 +30,7 @@ entry:
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 12
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   %4 = shl nuw nsw i8 %3, 1
   ret i8 %4
 }

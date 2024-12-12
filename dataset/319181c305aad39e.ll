@@ -28,30 +28,17 @@ entry:
   ret i32 %2
 }
 
-; 50 occurrences:
-; cpython/optimized/_datetimemodule.ll
+; 34 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/cipso_ipv4.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/focaltech.ll
 ; linux/optimized/nf_log_syslog.ll
-; llvm/optimized/ASTDumper.cpp.ll
-; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
-; llvm/optimized/ExprCXX.cpp.ll
-; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/SemaExprMember.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/StmtPrinter.cpp.ll
-; llvm/optimized/TypePrinter.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; luajit/optimized/lj_opt_loop.ll
-; luajit/optimized/lj_opt_loop_dyn.ll
-; luajit/optimized/lj_snap.ll
-; luajit/optimized/lj_snap_dyn.ll
 ; minetest/optimized/servermap.cpp.ll
 ; oiio/optimized/sgiinput.cpp.ll
 ; opencv/optimized/contours_new.cpp.ll
@@ -66,7 +53,6 @@ entry:
 ; velox/optimized/DenseHll.cpp.ll
 ; wireshark/optimized/packet-ansi_a.c.ll
 ; wireshark/optimized/packet-dect-nwk.c.ll
-; wireshark/optimized/packet-devicenet.c.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-iec104.c.ll
@@ -76,9 +62,7 @@ entry:
 ; wireshark/optimized/packet-q931.c.ll
 ; wireshark/optimized/packet-q933.c.ll
 ; wireshark/optimized/packet-s5066dts.c.ll
-; wireshark/optimized/packet-smc.c.ll
 ; wireshark/optimized/packet-usb-audio.c.ll
-; wireshark/optimized/radcom.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i8 %0) #0 {
 entry:

@@ -1,28 +1,18 @@
 func0000000000000020:                   // @func0000000000000020
 // %bb.0:                               // %entry
-	add	v6.2d, v5.2d, v1.2d
-	add	v7.2d, v4.2d, v0.2d
-	sub	v4.2d, v4.2d, v2.2d
-	sub	v5.2d, v5.2d, v3.2d
-	cmhi	v3.2d, v6.2d, v3.2d
-	cmhi	v2.2d, v7.2d, v2.2d
-	add	v0.2d, v4.2d, v0.2d
-	add	v1.2d, v5.2d, v1.2d
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v3.16b
+	add	x8, x2, x0
+	sub	x9, x2, x1
+	add	x9, x9, x0
+	cmp	x8, x1
+	csel	x0, x9, xzr, hi
 	ret
                                         // -- End function
-func00000000000000a0:                   // @func00000000000000a0
+func0000000000000120:                   // @func0000000000000120
 // %bb.0:                               // %entry
-	add	v6.2d, v5.2d, v1.2d
-	add	v7.2d, v4.2d, v0.2d
-	sub	v4.2d, v4.2d, v2.2d
-	sub	v5.2d, v5.2d, v3.2d
-	cmhi	v3.2d, v6.2d, v3.2d
-	cmhi	v2.2d, v7.2d, v2.2d
-	add	v0.2d, v4.2d, v0.2d
-	add	v1.2d, v5.2d, v1.2d
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v3.16b
+	add	x8, x2, x0
+	sub	x9, x2, x1
+	add	x9, x9, x0
+	cmp	x8, x1
+	csel	x0, x9, xzr, hi
 	ret
                                         // -- End function

@@ -4,11 +4,11 @@
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i1 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 3, i64 2
   %4 = shl nuw nsw i64 %1, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -12,10 +12,3 @@ func000000000000000c:                   # @func000000000000000c
 	andl	%edx, %eax
 	andl	$1, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	andl	$7, %edx
-	cmpw	$3, %dx
-	setb	%al
-	andb	%dil, %sil
-	andb	%sil, %al
-	retq

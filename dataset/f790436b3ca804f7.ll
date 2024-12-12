@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/edsam.cpp.ll
 ; gromacs/optimized/membed.cpp.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; opencv/optimized/region_layer.cpp.ll
 ; raylib/optimized/rmodels.c.ll

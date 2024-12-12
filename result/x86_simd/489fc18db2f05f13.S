@@ -1,7 +1,7 @@
 func000000000000003c:                   # @func000000000000003c
 	vpsrld	$16, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq

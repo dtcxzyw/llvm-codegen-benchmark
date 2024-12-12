@@ -8,8 +8,9 @@ func0000000000000002:                   # @func0000000000000002
 	imull	$52, %eax, %eax
 	subl	%eax, %ecx
 	leal	63(%rdi,%rcx), %eax
-	addl	%edi, %ecx
-	cmovnsl	%ecx, %eax
+	movl	%edi, %edx
+	addl	%ecx, %edx
+	cmovnsl	%edx, %eax
 	sarl	$6, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000

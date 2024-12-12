@@ -133,7 +133,7 @@ entry:
   ret i64 %5
 }
 
-; 15 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
@@ -149,6 +149,10 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
 ; opencv/optimized/canny.cpp.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/bc27zh41i1ia1dszunchw7cbt.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:

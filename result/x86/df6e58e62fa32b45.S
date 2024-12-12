@@ -4,7 +4,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rdi, %rdx
 	setg	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	notq	%rsi
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
@@ -22,19 +22,19 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rdx
 	seta	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	subq	%rsi, %rdx
 	addq	$2, %rdx
 	cmpq	%rdi, %rdx
 	seta	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	subq	%rsi, %rdx
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	subq	%rsi, %rdx
 	incq	%rdx
 	cmpq	%rdi, %rdx
@@ -46,13 +46,13 @@ func0000000000000006:                   # @func0000000000000006
 	cmpq	%rdi, %rdx
 	setl	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subq	%rsi, %rdx
 	addq	$18, %rdx
 	cmpq	%rdi, %rdx
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	subq	%rsi, %rdx
 	incq	%rdx
 	cmpq	%rdi, %rdx

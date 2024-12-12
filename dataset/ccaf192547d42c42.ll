@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; bullet3/optimized/b3DynamicBvh.ll
 ; bullet3/optimized/btBoxShape.ll
 ; bullet3/optimized/btCylinderShape.ll
@@ -28,6 +28,7 @@
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/Prune.cc.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(float %0, float %1) #0 {
 entry:
@@ -36,7 +37,7 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 15 occurrences:
 ; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
 ; bullet3/optimized/btConvexShape.ll
 ; bullet3/optimized/btGImpactCollisionAlgorithm.ll
@@ -49,6 +50,9 @@ entry:
 ; opencv/optimized/types.cpp.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(float %0, float %1) #0 {
 entry:

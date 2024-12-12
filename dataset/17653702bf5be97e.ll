@@ -204,12 +204,14 @@ entry:
   ret i1 %2
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; ocio/optimized/Lut1DOpData.cpp.ll
 ; postgres/optimized/float.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; yoga/optimized/Node.cpp.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(i32 %0) #0 {
 entry:
@@ -273,9 +275,11 @@ entry:
   ret i1 %2
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; postgres/optimized/float.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i32 %0) #0 {
 entry:

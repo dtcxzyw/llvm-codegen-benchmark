@@ -10,9 +10,3 @@ func0000000000000019:                   # @func0000000000000019
 	cmovel	%esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	testb	$12, %dl
-	movl	$4, %eax
-	cmovnel	%esi, %eax
-	orl	%edi, %eax
-	retq

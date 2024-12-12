@@ -4,7 +4,7 @@
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; opencv/optimized/gfluidcore.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000026(i16 %0, i16 %1) #0 {
+define i8 @func0000000000000046(i16 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw i16 %1 to i8
   %3 = icmp slt i16 %0, 0
@@ -12,9 +12,8 @@ entry:
   ret i8 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
-; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CoroElide.cpp.ll
 ; llvm/optimized/DataFlowSanitizer.cpp.ll
@@ -58,7 +57,7 @@ entry:
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000021(i16 %0, i16 %1) #0 {
+define i8 @func0000000000000041(i16 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw i16 %1 to i8
   %3 = icmp eq i16 %0, 0

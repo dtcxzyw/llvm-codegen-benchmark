@@ -1,5 +1,5 @@
 
-; 213 occurrences:
+; 215 occurrences:
 ; clamav/optimized/disasm.c.ll
 ; cmake/optimized/nghttp2_frame.c.ll
 ; cpython/optimized/_codecs_kr.ll
@@ -47,13 +47,11 @@
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/focaltech.ll
-; linux/optimized/inat.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/ip_forward.ll
 ; linux/optimized/ip_sockglue.ll
 ; linux/optimized/mlme.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/scsi_scan.ll
 ; linux/optimized/sky2.ll
@@ -94,6 +92,8 @@
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; miniaudio/optimized/unity.c.ll
 ; nghttp2/optimized/nghttp2_frame.c.ll
 ; opencv/optimized/persistence.cpp.ll
@@ -212,6 +212,8 @@
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0) #0 {

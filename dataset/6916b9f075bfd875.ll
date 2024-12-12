@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; abc/optimized/ioReadPla.c.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -19,7 +19,6 @@
 ; openssl/optimized/libcrypto-lib-by_file.ll
 ; openssl/optimized/libcrypto-shlib-by_file.ll
 ; openssl/optimized/openssl-bin-req.ll
-; openssl/optimized/x509aux-bin-x509aux.ll
 ; openusd/optimized/decodemv.c.ll
 ; postgres/optimized/file.ll
 ; postgres/optimized/jsonpath_exec.ll
@@ -43,14 +42,16 @@ entry:
   ret i1 %5
 }
 
-; 36 occurrences:
+; 39 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/giaEra.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaMini.c.ll
 ; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/plaMan.c.ll
 ; abc/optimized/resSim.c.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
+; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/dquot.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/extents.ll
@@ -59,6 +60,7 @@ entry:
 ; linux/optimized/quota.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/MachineCopyPropagation.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll

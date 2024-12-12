@@ -1,9 +1,12 @@
 
-; 22 occurrences:
+; 25 occurrences:
 ; abc/optimized/utilNam.c.ll
 ; faiss/optimized/IndexLattice.cpp.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; linux/optimized/intel_vdsc.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_theme_default.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
@@ -31,7 +34,7 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_dp.ll
@@ -39,6 +42,8 @@ entry:
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/vlv_dsi.ll
 ; qemu/optimized/hw_display_vga.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

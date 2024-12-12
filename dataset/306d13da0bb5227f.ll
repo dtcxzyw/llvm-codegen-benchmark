@@ -1,6 +1,5 @@
 
-; 16 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
+; 15 occurrences:
 ; cvc5/optimized/linear_equality.cpp.ll
 ; cvc5/optimized/parse.cpp.ll
 ; folly/optimized/ManualExecutor.cpp.ll
@@ -17,11 +16,11 @@
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -1
   %2 = sdiv i64 %1, 2
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 

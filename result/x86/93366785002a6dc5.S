@@ -30,3 +30,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpb	%sil, %dil
 	setae	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpb	%sil, %dil
+	setae	%al
+	retq

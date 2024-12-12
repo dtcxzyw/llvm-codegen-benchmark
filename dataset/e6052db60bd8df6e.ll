@@ -1,5 +1,5 @@
 
-; 226 occurrences:
+; 242 occurrences:
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
@@ -222,15 +222,31 @@
 ; mold/optimized/relocatable.cc.SH4.cc.ll
 ; mold/optimized/relocatable.cc.SPARC64.cc.ll
 ; mold/optimized/relocatable.cc.X86_64.cc.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/changeManager.cpp.ll
+; openusd/optimized/diagnosticMgr.cpp.ll
+; openusd/optimized/dirtyList.cpp.ll
+; openusd/optimized/dispatcher.cpp.ll
+; openusd/optimized/noticeRegistry.cpp.ll
+; openusd/optimized/piPrototypeSceneIndex.cpp.ll
+; openusd/optimized/primTypeIndex.cpp.ll
+; openusd/optimized/registry.cpp.ll
+; openusd/optimized/registryManager.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/reporterBase.cpp.ll
+; openusd/optimized/resolver.cpp.ll
+; openusd/optimized/stageCacheContext.cpp.ll
+; openusd/optimized/testUsdThreadedAuthoring.cpp.ll
+; openusd/optimized/usdzResolver.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000218(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000c28(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
-  %4 = icmp eq ptr %3, %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
+  %4 = icmp eq ptr %1, %3
   %5 = icmp ugt i64 %0, 8
   %6 = and i1 %5, %4
   ret i1 %6
@@ -460,10 +476,10 @@ entry:
 ; mold/optimized/relocatable.cc.SPARC64.cc.ll
 ; mold/optimized/relocatable.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000281(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000d01(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
-  %4 = icmp eq ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
+  %4 = icmp eq ptr %0, %3
   %5 = icmp ugt i64 %1, 3
   %6 = and i1 %4, %5
   ret i1 %6
@@ -472,10 +488,10 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/HHWheelTimer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000c21(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16656
-  %4 = icmp eq ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16656
+  %4 = icmp eq ptr %0, %3
   %5 = icmp eq i64 %1, 0
   %6 = and i1 %4, %5
   ret i1 %6
@@ -484,25 +500,12 @@ entry:
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000284(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000d04(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4096
-  %4 = icmp ult ptr %3, %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4096
+  %4 = icmp ugt ptr %1, %3
   %5 = icmp ult i64 %0, 4097
   %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 2 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; openjdk/optimized/hb-buffer.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000244(ptr %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 -4
-  %4 = icmp ugt ptr %3, %0
-  %5 = icmp ult i64 %1, 4
-  %6 = and i1 %4, %5
   ret i1 %6
 }
 
@@ -522,10 +525,10 @@ entry:
 ; crow/optimized/helloworld.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000d8c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
-  %4 = icmp ne ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = icmp ne ptr %0, %3
   %5 = icmp ne i64 %1, 0
   %6 = and i1 %4, %5
   ret i1 %6
@@ -534,38 +537,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c4(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000d94(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 10
-  %4 = icmp ne ptr %3, %1
-  %5 = icmp ult i64 %0, 56
-  %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 16 occurrences:
-; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/changeManager.cpp.ll
-; openusd/optimized/diagnosticMgr.cpp.ll
-; openusd/optimized/dirtyList.cpp.ll
-; openusd/optimized/dispatcher.cpp.ll
-; openusd/optimized/noticeRegistry.cpp.ll
-; openusd/optimized/piPrototypeSceneIndex.cpp.ll
-; openusd/optimized/primTypeIndex.cpp.ll
-; openusd/optimized/registry.cpp.ll
-; openusd/optimized/registryManager.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/reporterBase.cpp.ll
-; openusd/optimized/resolver.cpp.ll
-; openusd/optimized/stageCacheContext.cpp.ll
-; openusd/optimized/testUsdThreadedAuthoring.cpp.ll
-; openusd/optimized/usdzResolver.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000318(i64 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
-  %4 = icmp eq ptr %3, %1
-  %5 = icmp ugt i64 %0, 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 10
+  %4 = icmp ne ptr %1, %3
+  %5 = icmp samesign ult i64 %0, 56
   %6 = and i1 %5, %4
   ret i1 %6
 }
@@ -574,10 +550,10 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; wireshark/optimized/packet-wireguard.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000008c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1
-  %4 = icmp ne ptr %3, %0
+  %4 = icmp ne ptr %0, %3
   %5 = icmp ult i64 %1, 45
   %6 = and i1 %4, %5
   ret i1 %6
@@ -587,11 +563,11 @@ entry:
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000254(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000008b4(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -32
-  %4 = icmp uge ptr %3, %1
-  %5 = icmp ult i64 %0, -16
+  %4 = icmp ule ptr %1, %3
+  %5 = icmp samesign ult i64 %0, -16
   %6 = and i1 %5, %4
   ret i1 %6
 }
@@ -600,11 +576,11 @@ entry:
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000245(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000a85(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -32
-  %4 = icmp uge ptr %3, %0
-  %5 = icmp ult i64 %1, -16
+  %4 = icmp ule ptr %0, %3
+  %5 = icmp samesign ult i64 %1, -16
   %6 = and i1 %4, %5
   ret i1 %6
 }
@@ -613,10 +589,10 @@ entry:
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/neighbour.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c1(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000d81(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 152
-  %4 = icmp ne ptr %3, %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 152
+  %4 = icmp ne ptr %1, %3
   %5 = icmp eq i64 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6

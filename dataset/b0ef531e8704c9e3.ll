@@ -9,11 +9,11 @@ entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = add nuw nsw i32 %2, 4
   %4 = zext nneg i32 %3 to i64
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
-; 487 occurrences:
+; 486 occurrences:
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -344,7 +344,6 @@ entry:
 ; llvm/optimized/ProvenanceAnalysisEvaluator.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
@@ -507,7 +506,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -519,7 +518,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -531,7 +530,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = add nuw nsw i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -543,7 +542,7 @@ entry:
   %2 = shl nsw i32 %1, 3
   %3 = add i32 %2, 8
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

@@ -6,7 +6,7 @@ func0000000000000003:                   # @func0000000000000003
 	shll	$21, %eax
 	orq	%rdi, %rax
 	retq
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	xorl	%eax, %eax
 	testw	%si, %si
 	setne	%al

@@ -51,7 +51,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 214
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = add i64 %3, 2
   ret i64 %4
 }

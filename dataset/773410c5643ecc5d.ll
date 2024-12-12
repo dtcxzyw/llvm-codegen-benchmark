@@ -1,5 +1,5 @@
 
-; 87 occurrences:
+; 88 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/compress.c.ll
@@ -14,6 +14,8 @@
 ; abc/optimized/sclLibScl.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
 ; clamav/optimized/bytecode.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cpython/optimized/codeobject.ll
@@ -55,7 +57,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -95,11 +96,9 @@ entry:
   ret i32 %3
 }
 
-; 56 occurrences:
+; 52 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/giaGlitch.c.ll
-; abseil-cpp/optimized/cord.cc.ll
-; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; assimp/optimized/zip.c.ll
@@ -117,15 +116,12 @@ entry:
 ; libwebp/optimized/vp8_dec.c.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; linux/optimized/bitset.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/intel_color.ll
-; linux/optimized/intel_dkl_phy.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/intel_sseu.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/isoch.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/vlv_dsi_pll.ll
@@ -152,6 +148,7 @@ entry:
 ; rocksdb/optimized/coding.cc.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; wireshark/optimized/packet-mpeg-pes.c.ll
+; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:

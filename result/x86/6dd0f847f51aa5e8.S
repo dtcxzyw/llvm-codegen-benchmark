@@ -1,4 +1,4 @@
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	movq	%rdi, %rax
 	shrq	$32, %rax
 	testq	%rsi, %rsi

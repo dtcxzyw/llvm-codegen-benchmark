@@ -13,14 +13,14 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %eax
 	seta	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	andl	$1, %edx
 	leal	(%rdx,%rdx,4), %eax
 	leal	7(%rsi,%rax), %eax
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	andl	$1, %edx
 	leal	(%rdx,%rdx,4), %eax
 	leal	7(%rsi,%rax), %eax

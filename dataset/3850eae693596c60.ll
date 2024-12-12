@@ -1,11 +1,9 @@
 
-; 33 occurrences:
+; 31 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/CacheLocality.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
-; folly/optimized/F14Table.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/HeapTimekeeper.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
@@ -38,7 +36,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, %1
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   %6 = mul i64 %5, 1609587791953885689
   ret i64 %6
 }
@@ -55,7 +53,7 @@ define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 21
   %4 = add nsw i64 %3, %1
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   %6 = mul nsw i64 %5, 265
   ret i64 %6
 }
@@ -67,7 +65,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 21
   %4 = add nsw i64 %3, %1
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   %6 = mul nsw i64 %5, 265
   ret i64 %6
 }
@@ -234,7 +232,7 @@ define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = add nuw nsw i64 %3, %1
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   %6 = mul i64 %5, -7070675565921424023
   ret i64 %6
 }

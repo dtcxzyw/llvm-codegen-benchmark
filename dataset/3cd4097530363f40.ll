@@ -15,11 +15,11 @@ entry:
 ; 1 occurrences:
 ; rocksdb/optimized/crc32c.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %.not = icmp eq i64 %1, 0
   %2 = select i1 %.not, i64 128, i64 %1
-  %3 = getelementptr nusw i64, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i64, ptr %0, i64 %2
   ret ptr %3
 }
 

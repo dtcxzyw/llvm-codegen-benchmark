@@ -14,15 +14,14 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; luau/optimized/loslib.cpp.ll
+; 1 occurrences:
 ; velox/optimized/TimestampConversion.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000075(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 146097
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = add nsw i64 %4, 146097
   ret i64 %5
 }

@@ -1,20 +1,14 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	fcvtzs	v4.4s, v4.4s
-	fcvtzs	v5.4s, v5.4s
-	cmgt	v3.4s, v3.4s, v5.4s
-	cmgt	v2.4s, v2.4s, v4.4s
-	bit	v0.16b, v4.16b, v2.16b
-	bit	v1.16b, v5.16b, v3.16b
+	fcvtzs	w8, s0
+	cmp	w1, w8
+	csel	w0, w8, w0, gt
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	fcvtzs	v4.4s, v4.4s
-	fcvtzs	v5.4s, v5.4s
-	cmhi	v3.4s, v3.4s, v5.4s
-	cmhi	v2.4s, v2.4s, v4.4s
-	bit	v0.16b, v4.16b, v2.16b
-	bit	v1.16b, v5.16b, v3.16b
+	fcvtzs	w8, s0
+	cmp	w1, w8
+	csel	w0, w8, w0, hi
 	ret
                                         // -- End function

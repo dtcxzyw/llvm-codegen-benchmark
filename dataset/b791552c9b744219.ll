@@ -1,5 +1,5 @@
 
-%struct.e1000_shadow_ram.3350632 = type { i16, i8 }
+%struct.e1000_shadow_ram.3538596 = type { i16, i8 }
 
 ; 3 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
@@ -9,7 +9,7 @@
 define ptr @func0000000000000006(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = getelementptr nusw [62 x i64], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -21,7 +21,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -32,7 +32,7 @@ entry:
 define ptr @func0000000000000012(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -43,11 +43,23 @@ entry:
 ; icu/optimized/double-conversion-bignum.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i16 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr nusw [128 x i32], ptr %0, i64 0, i64 %4
+  %4 = add nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw [128 x i32], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = add nsw i64 %1, %3
+  %5 = getelementptr nusw nuw [62 x i64], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -57,8 +69,8 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr [2048 x %struct.e1000_shadow_ram.3350632], ptr %0, i64 0, i64 %4
+  %4 = add nuw nsw i64 %1, %3
+  %5 = getelementptr [2048 x %struct.e1000_shadow_ram.3538596], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -68,7 +80,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = getelementptr [0 x ptr], ptr %0, i64 0, i64 %4
   ret ptr %5
 }

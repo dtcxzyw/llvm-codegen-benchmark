@@ -126,11 +126,11 @@
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = icmp ult i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -263,7 +263,7 @@ entry:
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000049(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = icmp uge i64 %3, %1
@@ -274,11 +274,11 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = icmp sgt i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -287,7 +287,7 @@ entry:
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000027(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = icmp sle i64 %3, %1
@@ -298,7 +298,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = icmp ne i64 %3, %1

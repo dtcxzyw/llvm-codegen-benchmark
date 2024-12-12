@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 46 occurrences:
 ; abc/optimized/giaBound.c.ll
 ; abc/optimized/giaFrames.c.ll
 ; abc/optimized/giaMinLut.c.ll
@@ -22,7 +22,6 @@
 ; linux/optimized/md-bitmap.ll
 ; llvm/optimized/DiagnosticRenderer.cpp.ll
 ; mimalloc/optimized/arena.c.ll
-; minetest/optimized/texturesource.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/countbitsnode.ll
 ; openusd/optimized/evalUtils.cpp.ll
@@ -40,6 +39,12 @@
 ; rust-analyzer-rs/optimized/mucn4qgqdg2891h.ll
 ; spike/optimized/s_countLeadingZeros64.ll
 ; z3/optimized/util.cpp.ll
+; zed-rs/optimized/0x2swxz4m93xo6c0jggy1zzvx.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/an9c1nbjiirpzpjk20en0tyzy.ll
+; zed-rs/optimized/d3p7qidwwfiy8pzimmi7epq9h.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {

@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; hwloc/optimized/topology-linux.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
@@ -16,6 +16,7 @@
 ; redis/optimized/dict.ll
 ; wasmtime-rs/optimized/2lz954crgst412nx.ll
 ; wasmtime-rs/optimized/fn3cxi5qpl58ixq.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i64 %1) #0 {
 entry:

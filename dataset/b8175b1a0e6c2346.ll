@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; bullet3/optimized/btBoxBoxDetector.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -11,11 +11,13 @@
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -32,7 +34,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ule float %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -95,7 +97,7 @@ entry:
 define i1 @func0000000000000005(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ugt float %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -105,7 +107,7 @@ entry:
 define i1 @func0000000000000003(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ult float %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 

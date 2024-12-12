@@ -1,12 +1,11 @@
 
-; 2 occurrences:
-; clamav/optimized/filtering.c.ll
+; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = sub i32 6, %2
+  %3 = sub i32 1, %2
   %4 = mul i32 %3, %0
   ret i32 %4
 }

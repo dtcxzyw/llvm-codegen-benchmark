@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_line.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; Function Attrs: nounwind

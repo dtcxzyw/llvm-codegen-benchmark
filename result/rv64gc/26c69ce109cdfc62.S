@@ -7,3 +7,13 @@ func0000000000000010:                   # @func0000000000000010
 	slli	a0, a0, 3
 	srlw	a0, a1, a0
 	ret
+func0000000000000030:                   # @func0000000000000030
+	sext.w	a3, a2
+	li	a4, 255
+	bltu	a4, a3, .LBB1_2
+	mv	a1, a2
+.LBB1_2:                                # %entry
+	andi	a0, a0, 1
+	slli	a0, a0, 2
+	srlw	a0, a1, a0
+	ret

@@ -1,13 +1,11 @@
 
-; 14 occurrences:
+; 12 occurrences:
 ; clamav/optimized/js-norm.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
-; jq/optimized/unicode_fold3_key.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libjpeg-turbo/optimized/jcsample.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; linux/optimized/dmaengine.ll
-; oniguruma/optimized/unicode_fold3_key.ll
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/hw_usb_desc.c.ll
 ; ruby/optimized/euc_jp.ll

@@ -6,7 +6,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpsrld	$2, %ymm2, %ymm2
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpternlogd	$248, .LCPI0_1(%rip){1to8}, %ymm2, %ymm1 # ymm1 = ymm1 | (ymm2 & mem)
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.byte	128                             # 0x80
@@ -82,7 +82,7 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000004:                   # @func0000000000000004
 	vpshufb	.LCPI1_0(%rip), %ymm2, %ymm2    # ymm2 = zero,ymm2[2],zero,zero,zero,ymm2[6],zero,zero,zero,ymm2[10],zero,zero,zero,ymm2[14],zero,zero,zero,ymm2[18],zero,zero,zero,ymm2[22],zero,zero,zero,ymm2[26],zero,zero,zero,ymm2[30],zero,zero
 	vpternlogd	$248, .LCPI1_2(%rip){1to8}, %ymm1, %ymm2 # ymm2 = ymm2 | (ymm1 & mem)
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	8                               # 0x8

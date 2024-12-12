@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -27,13 +27,14 @@
 ; php/optimized/apprentice.ll
 ; php/optimized/zend_hash.ll
 ; pugixml/optimized/pugixml.cpp.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 126
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -51,40 +52,74 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; graphviz/optimized/strmatch.c.ll
-; yyjson/optimized/yyjson.c.ll
+; 12 occurrences:
+; turborepo-rs/optimized/4w2esflvo3af23i5beiirhnry.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/8c9m4dxfbx8n642b944htcs78.ll
+; zed-rs/optimized/bx05yi7k15cz36qdtwh95aj38.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000018a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000002b(ptr %0, i8 %1) #0 {
 entry:
-  %2 = icmp ne i8 %1, 0
+  %2 = icmp eq i8 %1, -1
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw i8, ptr %0, i64 -24
+  %5 = getelementptr nusw nuw { { { i64, ptr, {} }, i64 } }, ptr %4, i64 %3
   ret ptr %5
 }
 
 ; 2 occurrences:
-; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
-; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; graphviz/optimized/strmatch.c.ll
+; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000010a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000018f(ptr %0, i8 %1) #0 {
+entry:
+  %2 = icmp ne i8 %1, 0
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000018b(ptr %0, i8 %1) #0 {
+entry:
+  %2 = icmp ne i8 %1, 46
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 -1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; Function Attrs: nounwind
+define ptr @func000000000000010f(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 1
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 56
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 56
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; cpython/optimized/memoryobject.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i8 %1) #0 {
+define ptr @func000000000000002c(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 64
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 32
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 32
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }

@@ -20,7 +20,7 @@ entry:
 ; linux/optimized/80003es2lan.ll
 ; llvm/optimized/Comment.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
-; openusd/optimized/level.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0, i1 %1) #0 {

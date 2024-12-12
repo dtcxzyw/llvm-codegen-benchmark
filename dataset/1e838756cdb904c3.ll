@@ -15,12 +15,13 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/numeric.ll
 ; cmake/optimized/cmCommandArgumentParserHelper.cxx.ll
 ; luau/optimized/isocline.c.ll
 ; openmpi/optimized/ad_aggregate_new.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp eq i32 %0, 2

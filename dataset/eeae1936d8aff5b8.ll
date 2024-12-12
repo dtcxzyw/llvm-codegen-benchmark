@@ -29,7 +29,7 @@
 ; wireshark/optimized/packet-opensafety.c.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000318c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 79
   %4 = icmp ne i8 %1, 86
@@ -50,7 +50,7 @@ entry:
 ; wireshark/optimized/packet-grpc.c.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000421(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp eq i8 %1, 0
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/CGUIScrollBar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c11(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000003021(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp eq i8 %1, 0
@@ -77,7 +77,7 @@ entry:
 ; luau/optimized/isocline.c.ll
 ; postgres/optimized/like_support.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000464(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000010c4(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 26
   %4 = icmp slt i8 %1, 0
@@ -90,7 +90,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000581(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp ne i8 %1, 0
@@ -100,10 +100,11 @@ entry:
   ret i1 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; opencv/optimized/stringutils.cpp.ll
 ; openusd/optimized/unicodeUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000aaa(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000294a(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, -65
   %4 = icmp sgt i8 %1, -113
@@ -116,7 +117,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/unicodeUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a4a(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000288a(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, -65
   %4 = icmp ult i8 %1, -48
@@ -126,28 +127,10 @@ entry:
   ret i1 %7
 }
 
-; 6 occurrences:
-; arrow/optimized/scalar.cc.ll
-; arrow/optimized/scalar_cast_temporal.cc.ll
-; arrow/optimized/value_parsing.cc.ll
-; linux/optimized/e100.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
-; wolfssl/optimized/coding.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000888(i8 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ugt i8 %2, 59
-  %4 = icmp ugt i8 %1, 23
-  %5 = select i1 %4, i1 true, i1 %3
-  %6 = icmp ugt i8 %0, 59
-  %7 = select i1 %5, i1 true, i1 %6
-  ret i1 %7
-}
-
 ; 1 occurrences:
 ; linux/optimized/intel_bios.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c4c(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000308c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 18
   %4 = icmp ult i8 %1, 32
@@ -157,10 +140,24 @@ entry:
   ret i1 %7
 }
 
+; 2 occurrences:
+; linux/optimized/e100.ll
+; wolfssl/optimized/coding.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000002108(i8 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ugt i8 %2, -123
+  %4 = icmp ugt i8 %1, -123
+  %5 = select i1 %4, i1 true, i1 %3
+  %6 = icmp ugt i8 %0, -123
+  %7 = select i1 %5, i1 true, i1 %6
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; wolfssl/optimized/coding.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000001084(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 43
   %4 = icmp ult i8 %1, 43
@@ -170,10 +167,25 @@ entry:
   ret i1 %7
 }
 
+; 3 occurrences:
+; arrow/optimized/scalar.cc.ll
+; arrow/optimized/scalar_cast_temporal.cc.ll
+; arrow/optimized/value_parsing.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000006318(i8 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i8 %2, 59
+  %4 = icmp samesign ugt i8 %1, 23
+  %5 = select i1 %4, i1 true, i1 %3
+  %6 = icmp samesign ugt i8 %0, 59
+  %7 = select i1 %5, i1 true, i1 %6
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000666(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000018c6(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 0
   %4 = icmp slt i8 %1, 0

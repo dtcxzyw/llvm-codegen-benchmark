@@ -2,6 +2,7 @@
 ; 71 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
+; boost/optimized/dump.ll
 ; gromacs/optimized/cpuinfo.cpp.ll
 ; grpc/optimized/call.cc.ll
 ; grpc/optimized/writing.cc.ll
@@ -64,7 +65,6 @@
 ; openjdk/optimized/dfa_x86.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; php/optimized/pcre2_jit_compile.ll
-; postgres/optimized/trigger.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; raylib/optimized/raudio.c.ll
 ; sentencepiece/optimized/sentencepiece_model.pb.cc.ll

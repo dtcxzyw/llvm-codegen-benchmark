@@ -1,6 +1,4 @@
 
-%"struct.V3NumberData::ValueAndX.2638869" = type { i32, i32 }
-
 ; 37 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/ioReadAiger.c.ll
@@ -40,12 +38,12 @@
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; z3/optimized/sat_prob.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = lshr i32 %3, 3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -64,36 +62,25 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
-; icu/optimized/collationdatareader.ll
-; libpng/optimized/pngrutil.c.ll
-; openjdk/optimized/pngrutil.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000014(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = lshr i32 %3, 1
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr i16, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 8 occurrences:
+; 11 occurrences:
+; boost/optimized/to_chars.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; icu/optimized/normalizer2impl.ll
+; libpng/optimized/pngrutil.c.ll
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; openjdk/optimized/pngrutil.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = lshr i32 %3, 5
+  %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %"struct.V3NumberData::ValueAndX.2638869", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -101,12 +88,12 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000037(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 5
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -115,12 +102,24 @@ entry:
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; z3/optimized/pattern_inference.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000027(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = lshr i32 %3, 6
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; icu/optimized/collationdatareader.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000014(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = lshr i32 %3, 2
+  %5 = zext nneg i32 %4 to i64
+  %6 = getelementptr i32, ptr %0, i64 %5
   ret ptr %6
 }
 

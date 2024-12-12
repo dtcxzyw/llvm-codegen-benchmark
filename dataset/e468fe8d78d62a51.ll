@@ -1,5 +1,5 @@
 
-; 415 occurrences:
+; 414 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/acecOrder.c.ll
@@ -29,6 +29,8 @@
 ; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/target.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btBoxBoxDetector.ll
 ; clamav/optimized/hwp.c.ll
 ; clamav/optimized/png.c.ll
@@ -116,7 +118,6 @@
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/fair.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/inotify_user.ll
@@ -133,12 +134,10 @@
 ; linux/optimized/printk.ll
 ; linux/optimized/rhashtable.ll
 ; linux/optimized/scsi_lib.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/select.ll
 ; linux/optimized/serial_core.ll
 ; linux/optimized/sock.ll
 ; linux/optimized/tsc.ll
-; linux/optimized/uptime.ll
 ; linux/optimized/wmi.ll
 ; linux/optimized/workqueue.ll
 ; linux/optimized/xhci.ll
@@ -330,15 +329,12 @@
 ; opencv/optimized/grfmt_sunras.cpp.ll
 ; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/splashscreen_sys.ll
-; openmpi/optimized/opal_hotel.ll
 ; openspiel/optimized/catch_test.cc.ll
 ; openspiel/optimized/simple_gin_rummy_bot_example.cc.ll
 ; openssl/optimized/bndiv-test-bin-bndiv.ll
 ; openssl/optimized/libcrypto-lib-bss_dgram.ll
-; openssl/optimized/libcrypto-lib-ct_prn.ll
 ; openssl/optimized/libcrypto-lib-ts_rsp_sign.ll
 ; openssl/optimized/libcrypto-shlib-bss_dgram.ll
-; openssl/optimized/libcrypto-shlib-ct_prn.ll
 ; openssl/optimized/libcrypto-shlib-ts_rsp_sign.ll
 ; openssl/optimized/libssl-lib-d1_lib.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
@@ -346,13 +342,13 @@
 ; openssl/optimized/libssl-shlib-quic_impl.ll
 ; openssl/optimized/quicserver-bin-quicserver.ll
 ; openusd/optimized/lz4.cpp.ll
+; php/optimized/unixtime2tm.ll
 ; postgres/optimized/commit_ts.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/freespace.ll
 ; postgres/optimized/multixact.ll
 ; postgres/optimized/postgres.ll
 ; qemu/optimized/hw_core_loader.c.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; quickjs/optimized/quickjs-libc.ll
 ; quickjs/optimized/quickjs.ll
 ; recastnavigation/optimized/fastlz.c.ll
@@ -385,7 +381,6 @@
 ; wireshark/optimized/aethra.c.ll
 ; wireshark/optimized/capture_file_dialog.cpp.ll
 ; wireshark/optimized/capture_file_properties_dialog.cpp.ll
-; wireshark/optimized/dpa400.c.ll
 ; wireshark/optimized/gsm_map_summary_dialog.cpp.ll
 ; wireshark/optimized/mtp3_summary_dialog.cpp.ll
 ; wireshark/optimized/packet-acdr.c.ll
@@ -414,7 +409,11 @@
 ; yosys/optimized/fastlz.ll
 ; yosys/optimized/lz4.ll
 ; yyjson/optimized/yyjson.c.ll
-; zxing/optimized/MCBitMatrixParser.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:

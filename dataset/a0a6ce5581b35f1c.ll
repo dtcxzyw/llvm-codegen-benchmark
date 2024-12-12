@@ -1,6 +1,6 @@
 
-%"struct.tf::ObjectPool<tf::Node>::Blocklist.2869504" = type { ptr, ptr }
-%struct.list_head.3346628 = type { ptr, ptr }
+%"struct.tf::ObjectPool<tf::Node>::Blocklist.3063081" = type { ptr, ptr }
+%struct.list_head.3535195 = type { ptr, ptr }
 
 ; 38 occurrences:
 ; taskflow/optimized/async.cpp.ll
@@ -42,12 +42,12 @@
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 40
-  %5 = getelementptr nusw [5 x %"struct.tf::ObjectPool<tf::Node>::Blocklist.2869504"], ptr %4, i64 0, i64 %1
-  %6 = icmp eq ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 40
+  %5 = getelementptr nusw nuw [5 x %"struct.tf::ObjectPool<tf::Node>::Blocklist.3063081"], ptr %4, i64 0, i64 %1
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -57,12 +57,12 @@ entry:
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/tree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 32
-  %5 = getelementptr [12 x %struct.list_head.3346628], ptr %4, i64 0, i64 %1
-  %6 = icmp eq ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 32
+  %5 = getelementptr [12 x %struct.list_head.3535195], ptr %4, i64 0, i64 %1
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 

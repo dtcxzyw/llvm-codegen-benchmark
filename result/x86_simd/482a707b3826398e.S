@@ -4,7 +4,7 @@
 	.long	65521                           # 0xfff1
 .LCPI0_2:
 	.quad	131041                          # 0x1ffe1
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000003f8:                   # @func00000000000003f8
 	vpshufd	$245, %xmm2, %xmm3              # xmm3 = xmm2[1,1,3,3]
 	vpbroadcastd	.LCPI0_0(%rip), %xmm4   # xmm4 = [2147975281,2147975281,2147975281,2147975281]
 	vpmuludq	%xmm4, %xmm3, %xmm3

@@ -12,9 +12,8 @@ func0000000000000001:                   # @func0000000000000001
 	.long	1                               # 0x1
 func0000000000000006:                   # @func0000000000000006
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpgtq	%ymm1, %ymm2, %k1
-	vpcmpgtd	%xmm0, %xmm3, %k1 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpcmpgtq	%ymm1, %ymm2, %k1 {%k1}
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm0   # xmm0 = [1,1,1,1]
 	vmovdqa32	%xmm1, %xmm0 {%k1}

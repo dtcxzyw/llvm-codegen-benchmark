@@ -1,4 +1,4 @@
-func0000000000000388:                   # @func0000000000000388
+func0000000000000f18:                   # @func0000000000000f18
 	sext.w	a3, a2
 	sext.w	a1, a1
 	addiw	a2, a2, 87
@@ -8,7 +8,7 @@ func0000000000000388:                   # @func0000000000000388
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	sext.w	a3, a2
 	sext.w	a1, a1
 	addiw	a2, a2, 7
@@ -18,7 +18,7 @@ func00000000000001a6:                   # @func00000000000001a6
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func00000000000003a6:                   # @func00000000000003a6
+func0000000000000d46:                   # @func0000000000000d46
 	sext.w	a3, a2
 	sext.w	a1, a1
 	addiw	a2, a2, 10

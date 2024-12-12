@@ -1,5 +1,5 @@
 
-; 323 occurrences:
+; 325 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -221,7 +221,6 @@
 ; llvm/optimized/FlattenCFG.cpp.ll
 ; llvm/optimized/InfoByHwMode.cpp.ll
 ; llvm/optimized/LowerExpectIntrinsic.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; llvm/optimized/SelectionDAGAddressAnalysis.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
@@ -236,6 +235,7 @@
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_theme_default.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; ninja/optimized/build_test.cc.ll
 ; node/optimized/libnode.crypto_util.ll
@@ -265,7 +265,6 @@
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_xclass.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; qemu/optimized/accel_tcg_translator.c.ll
 ; qemu/optimized/audio_audio.c.ll
 ; qemu/optimized/block.c.ll
@@ -322,12 +321,15 @@
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_recfun.cpp.ll
 ; z3/optimized/theory_seq.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
@@ -357,11 +359,11 @@ entry:
 define i1 @func0000000000000006(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/resSim.c.ll
 ; cvc5/optimized/partial_model.cpp.ll
@@ -373,7 +375,6 @@ entry:
 ; linux/optimized/button.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/mcast.ll
-; linux/optimized/pty.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; ocio/optimized/CDLOpData.cpp.ll
 ; qemu/optimized/block_nbd.c.ll
@@ -386,20 +387,14 @@ entry:
 define i1 @func000000000000000c(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 
-; 32 occurrences:
-; abc/optimized/msatClause.c.ll
-; abc/optimized/satSolver.c.ll
-; abc/optimized/satSolver2.c.ll
-; abc/optimized/satSolver3.c.ll
+; 20 occurrences:
 ; abc/optimized/solver.c.ll
 ; c3c/optimized/sema_expr.c.ll
-; cvc5/optimized/Solver.cc.ll
 ; cvc5/optimized/sygus_simple_sym.cpp.ll
-; icu/optimized/tzfmt.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; linux/optimized/auditfilter.ll
@@ -414,20 +409,14 @@ entry:
 ; openjdk/optimized/loopnode.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
-; redis/optimized/rax.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; typst-rs/optimized/3lt7g0yvt7qzv13u.ll
-; wireshark/optimized/packet-metamako.c.ll
-; wireshark/optimized/plugins.c.ll
-; yosys/optimized/Solver.ll
-; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/bv_rewriter.cpp.ll
-; z3/optimized/theory_lra.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -441,16 +430,18 @@ entry:
 define i1 @func0000000000000007(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   ret i1 %3
 }
 
-; 38 occurrences:
+; 40 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/exor.c.ll
 ; abc/optimized/xsatSolver.c.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/pme_solve.cpp.ll
 ; icu/optimized/smpdtfmt.ll
@@ -488,7 +479,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -504,6 +495,27 @@ entry:
   ret i1 %3
 }
 
+; 12 occurrences:
+; abc/optimized/msatClause.c.ll
+; abc/optimized/satSolver.c.ll
+; abc/optimized/satSolver2.c.ll
+; abc/optimized/satSolver3.c.ll
+; cvc5/optimized/Solver.cc.ll
+; icu/optimized/tzfmt.ll
+; redis/optimized/rax.ll
+; wireshark/optimized/packet-metamako.c.ll
+; wireshark/optimized/plugins.c.ll
+; yosys/optimized/Solver.ll
+; z3/optimized/arith_solver.cpp.ll
+; z3/optimized/theory_lra.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i32
+  %3 = icmp samesign ugt i32 %0, %2
+  ret i1 %3
+}
+
 ; 2 occurrences:
 ; linux/optimized/auditfilter.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
@@ -511,18 +523,27 @@ entry:
 define i1 @func0000000000000005(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp ule i32 %0, %2
   ret i1 %3
 }
 
-; 2 occurrences:
-; cvc5/optimized/quant_conflict_find.cpp.ll
+; 1 occurrences:
 ; linux/optimized/auditfilter.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; cvc5/optimized/quant_conflict_find.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i32 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i32
+  %3 = icmp samesign uge i32 %0, %2
   ret i1 %3
 }
 
@@ -532,7 +553,7 @@ entry:
 define i1 @func000000000000000b(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   ret i1 %3
 }
 

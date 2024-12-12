@@ -1,8 +1,8 @@
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000000ff:                   # @func00000000000000ff
 	movzbl	%sil, %eax
 	leaq	1(%rdi,%rax,2), %rax
 	retq
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	movzbl	%sil, %eax
 	leaq	1(%rdi,%rax,2), %rax
 	retq

@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; clamav/optimized/pe_icons.c.ll
+; lvgl/optimized/lv_anim.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {

@@ -31,5 +31,5 @@
 func0000000000000003:                   # @func0000000000000003
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm2, %xmm2
 	vgf2p8affineqb	$0, .LCPI0_3(%rip){1to2}, %xmm1, %xmm1
-	vpternlogq	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogq	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	retq

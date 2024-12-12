@@ -1,22 +1,4 @@
 
-; 8 occurrences:
-; jq/optimized/utf16_be.ll
-; jq/optimized/utf16_le.ll
-; libquic/optimized/json_parser.cc.ll
-; oniguruma/optimized/utf16_be.ll
-; oniguruma/optimized/utf16_le.ll
-; quickjs/optimized/quickjs.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000081(i8 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ugt ptr %1, %2
-  %4 = icmp eq i8 %0, -36
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
 ; 26 occurrences:
 ; abc/optimized/bacBac.c.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
@@ -45,7 +27,7 @@ entry:
 ; slurm/optimized/parse.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000008c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp ne i8 %0, 0
@@ -61,7 +43,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-asn1_gen.ll
 ; ruby/optimized/stringio.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000010c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %1, %2
   %4 = icmp ne i8 %0, 0
@@ -91,7 +73,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/file.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000081(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp eq i8 %0, -1
@@ -99,7 +81,10 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 18 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/url_base.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -116,7 +101,7 @@ entry:
 ; velox/optimized/URLFunctions.cpp.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ne i8 %0, 0
@@ -140,7 +125,7 @@ entry:
 ; php/optimized/php_variables.ll
 ; postgres/optimized/fe-print.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ne i8 %0, 0
@@ -148,8 +133,9 @@ entry:
   ret i1 %5
 }
 
-; 69 occurrences:
+; 72 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
+; boost/optimized/src.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; folly/optimized/Conv.cpp.ll
 ; hermes/optimized/RegAlloc.cpp.ll
@@ -218,11 +204,29 @@ entry:
 ; php/optimized/zend_jit.ll
 ; pocketpy/optimized/lexer.cpp.ll
 ; vcpkg/optimized/configuration.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp eq i8 %0, 1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 6 occurrences:
+; jq/optimized/utf16_be.ll
+; jq/optimized/utf16_le.ll
+; libquic/optimized/json_parser.cc.ll
+; oniguruma/optimized/utf16_be.ll
+; oniguruma/optimized/utf16_le.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i8 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ugt ptr %1, %2
+  %4 = icmp eq i8 %0, -36
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
@@ -236,7 +240,7 @@ entry:
 ; luajit/optimized/lj_opt_mem_dyn.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000084(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp ult i8 %0, -36
@@ -250,7 +254,7 @@ entry:
 ; yosys/optimized/ast.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000184(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ult i8 %0, 95
@@ -258,19 +262,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; git/optimized/patch-delta.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000046(i8 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ult ptr %1, %2
-  %4 = icmp slt i8 %0, 0
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
@@ -285,7 +278,7 @@ entry:
 ; yosys/optimized/xilinx_dsp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp eq i8 %0, 0
@@ -296,7 +289,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018a(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp sgt i8 %0, -1
@@ -305,9 +298,20 @@ entry:
 }
 
 ; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000086(i8 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ult ptr %1, %2
+  %4 = icmp slt i8 %0, 0
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; icu/optimized/ucnv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002a(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp sgt i8 %0, -1
@@ -321,7 +325,7 @@ entry:
 ; icu/optimized/ustrtrns.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000008a(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp sgt i8 %0, 0
@@ -332,7 +336,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000088(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp ugt i8 %0, 1
@@ -343,7 +347,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000186(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp slt i8 %0, 0
@@ -354,7 +358,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/sfprint.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000ac(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ule ptr %1, %2
   %4 = icmp ne i8 %0, 0

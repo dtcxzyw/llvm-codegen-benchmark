@@ -40,9 +40,10 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; gromacs/optimized/nbsearch.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
+; llvm/optimized/MachinePipeliner.cpp.ll
 ; openspiel/optimized/euchre.cc.ll
 ; openspiel/optimized/hearts.cc.ll
 ; postgres/optimized/indxpath.ll
@@ -70,7 +71,8 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; lvgl/optimized/lv_draw_sw_border.ll
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
@@ -98,28 +100,40 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; llvm/optimized/MachinePipeliner.cpp.ll
-; llvm/optimized/Triple.cpp.ll
+; 2 occurrences:
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %1, %2
+  %3 = icmp samesign ugt i32 %1, %2
   %4 = xor i1 %0, true
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/gmx_omp_nthreads.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; wireshark/optimized/print.c.ll
 ; yosys/optimized/btor.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
+  %4 = xor i1 %0, true
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; llvm/optimized/MachinePipeliner.cpp.ll
+; llvm/optimized/Triple.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %1, %2
   %4 = xor i1 %0, true
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5

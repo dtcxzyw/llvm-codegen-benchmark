@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	andi	a2, a2, 1
 	beqz	a2, .LBB0_2
 	addi	a0, a1, 1
@@ -9,4 +9,10 @@ func0000000000000001:                   # @func0000000000000001
 	beqz	a2, .LBB1_2
 	addi	a0, a1, 1116
 .LBB1_2:                                # %entry
+	ret
+func0000000000000041:                   # @func0000000000000041
+	andi	a2, a2, 2
+	beqz	a2, .LBB2_2
+	addi	a0, a1, -10
+.LBB2_2:                                # %entry
 	ret

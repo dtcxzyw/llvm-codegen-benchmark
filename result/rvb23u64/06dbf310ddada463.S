@@ -19,12 +19,23 @@ func00000000000000c7:                   # @func00000000000000c7
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
-.LCPI2_0:
+func0000000000000183:                   # @func0000000000000183
+	sltiu	a1, a1, 5
+	lui	a2, 838861
+	xori	a1, a1, 1
+	addiw	a2, a2, -819
+	slli	a3, a2, 32
+	add	a2, a2, a3
+	mulhu	a0, a0, a2
+	srli	a0, a0, 3
+	add	a0, a0, a1
+	ret
+.LCPI3_0:
 	.quad	19342813113834067               # 0x44b82fa09b5a53
-func0000000000000043:                   # @func0000000000000043
+func0000000000000143:                   # @func0000000000000143
 	lui	a2, 804435
-	lui	a3, %hi(.LCPI2_0)
-	ld	a3, %lo(.LCPI2_0)(a3)
+	lui	a3, %hi(.LCPI3_0)
+	ld	a3, %lo(.LCPI3_0)(a3)
 	addiw	a2, a2, 1536
 	sltu	a1, a1, a2
 	srli	a0, a0, 9

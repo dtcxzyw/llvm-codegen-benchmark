@@ -27,7 +27,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
   %6 = icmp eq i32 %5, -1
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

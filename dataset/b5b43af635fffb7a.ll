@@ -43,7 +43,7 @@ entry:
   ret i8 %3
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64GlobalsTagging.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -67,7 +67,6 @@ entry:
 ; llvm/optimized/MCELFStreamer.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/MergeFunctions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Value.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll

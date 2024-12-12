@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -8,6 +8,7 @@
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
 ; php/optimized/zend_hash.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

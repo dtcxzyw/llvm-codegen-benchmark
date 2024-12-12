@@ -4,5 +4,5 @@ func000000000000000b:                   # @func000000000000000b
 	retq
 func000000000000000a:                   # @func000000000000000a
 	sarl	$31, %esi
-	leal	-1(%rsi,%rdi), %eax
+	leal	-1(%rdi,%rsi), %eax
 	retq

@@ -1,5 +1,5 @@
 
-; 64 occurrences:
+; 67 occurrences:
 ; assimp/optimized/FBXParser.cpp.ll
 ; cpython/optimized/obmalloc.ll
 ; freetype/optimized/sfnt.c.ll
@@ -64,6 +64,9 @@
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; redis/optimized/lgc.ll
+; wasmtime-rs/optimized/3sb71uj5mon9qr9k.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i1 %1) #0 {
 entry:
@@ -92,7 +95,7 @@ entry:
   ret i64 %3
 }
 
-; 44 occurrences:
+; 45 occurrences:
 ; brotli/optimized/decode.c.ll
 ; cpython/optimized/_pickle.ll
 ; cpython/optimized/setobject.ll
@@ -101,6 +104,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/truetype.c.ll
+; gromacs/optimized/tng_io.c.ll
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll

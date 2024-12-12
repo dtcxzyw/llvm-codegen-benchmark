@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 18 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; clamav/optimized/filtering.c.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -10,12 +10,10 @@
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
 ; qemu/optimized/source_s_roundPackToF16.c.ll
 ; qemu/optimized/source_s_roundPackToF32.c.ll
-; qemu/optimized/source_s_shiftRightJam32.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; spike/optimized/s_roundPackToBF16.ll
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
-; spike/optimized/s_shiftRightJam32.ll
 ; spike/optimized/vror_vv.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_v06.c.ll
@@ -28,7 +26,7 @@ entry:
   ret i32 %3
 }
 
-; 100 occurrences:
+; 101 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcLatch.c.ll
@@ -77,6 +75,7 @@ entry:
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/metablock.c.ll
 ; bullet3/optimized/btBatchedConstraints.ll
@@ -137,7 +136,7 @@ entry:
   ret i32 %3
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -158,6 +157,7 @@ entry:
 ; linux/optimized/hid-lg-g15.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/i915_gem_pages.ll
+; linux/optimized/jack.ll
 ; linux/optimized/pcm_native.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/xhci.ll
@@ -187,14 +187,13 @@ entry:
   ret i32 %3
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/mapperTime.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/hashing.cc.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll

@@ -1,6 +1,6 @@
-func0000000000000021:                   # @func0000000000000021
-	leaq	(%rsi,%rdx,8), %rax
-	andq	$-524288, %rax                  # imm = 0xFFF80000
-	cmpq	%rdi, %rax
+func0000000000000041:                   # @func0000000000000041
+	addl	%edx, %esi
+	andl	$7, %esi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq

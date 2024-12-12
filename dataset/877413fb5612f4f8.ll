@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/RegularExpression.cxx.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/hwvalid.ll
 ; php/optimized/zend_jit.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll

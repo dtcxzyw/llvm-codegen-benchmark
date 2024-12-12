@@ -16,3 +16,9 @@ func0000000000000000:                   # @func0000000000000000
 	addl	$-13, %edi
 	movslq	%edi, %rax
 	retq
+func0000000000000011:                   # @func0000000000000011
+	addl	%esi, %edi
+	subl	%edx, %edi
+	addl	$15, %edi
+	movslq	%edi, %rax
+	retq

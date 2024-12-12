@@ -3,12 +3,12 @@ func0000000000000000:                   # @func0000000000000000
 	shlq	$8, %rdi
 	orq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000006:                   # @func0000000000000006
 	movslq	%esi, %rax
 	shlq	$32, %rdi
 	orq	%rdi, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000002:                   # @func0000000000000002
 	movslq	%esi, %rax
 	shlq	$32, %rdi
 	orq	%rdi, %rax

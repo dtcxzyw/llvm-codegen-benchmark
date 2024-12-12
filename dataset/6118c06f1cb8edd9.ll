@@ -14,7 +14,7 @@ define i32 @func0000000000000008(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = zext i16 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -30,13 +30,14 @@ define i32 @func0000000000000009(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = zext i16 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; clamav/optimized/hfsplus.c.ll
 ; cmake/optimized/archive_string.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/k12.c.ll
 ; wolfssl/optimized/tls.c.ll
@@ -45,7 +46,7 @@ define i32 @func000000000000000b(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = zext i16 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -56,7 +57,7 @@ define i32 @func0000000000000001(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or i16 %1, %2
   %4 = zext i16 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

@@ -1,14 +1,15 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; openjdk/optimized/castnode.ll
 ; openjdk/optimized/cfgnode.ll
 ; openjdk/optimized/loopPredicate.ll
 ; openjdk/optimized/mulnode.ll
 ; openjdk/optimized/node.ll
+; simdjson/optimized/simdjson.cpp.ll
 ; yosys/optimized/fmt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 11
   %4 = select i1 %3, i1 %1, i1 false
@@ -22,7 +23,7 @@ entry:
 ; brotli/optimized/entropy_encode.c.ll
 ; linux/optimized/netlabel_kapi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i1 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i1 %1, i1 false

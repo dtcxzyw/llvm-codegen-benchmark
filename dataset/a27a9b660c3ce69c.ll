@@ -11,11 +11,11 @@ entry:
 }
 
 ; 1 occurrences:
-; redis/optimized/geohash.ll
+; cmake/optimized/SystemTools.cxx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(ptr %0, double %1) #0 {
+define i1 @func0000000000000082(ptr %0, double %1) #0 {
 entry:
-  %2 = fcmp oeq double %1, 0.000000e+00
+  %2 = fcmp olt double %1, 0.000000e+00
   %3 = icmp eq ptr %0, null
   %4 = or i1 %3, %2
   ret i1 %4

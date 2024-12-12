@@ -1,40 +1,20 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v3.4s, #62
-	cmeq	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	mvn	v2.16b, v2.16b
-	xtn	v2.4h, v2.4s
-	orr	v1.8b, v1.8b, v2.8b
-	ushll	v1.4s, v1.4h, #0
-	ushll2	v2.2d, v1.4s, #0
-	ushll	v1.2d, v1.2s, #0
-	shl	v2.2d, v2.2d, #63
-	shl	v1.2d, v1.2d, #63
-	cmlt	v2.2d, v2.2d, #0
-	cmlt	v4.2d, v1.2d, #0
-	and	v1.16b, v0.16b, v2.16b
-	and	v0.16b, v3.16b, v4.16b
+	cmp	w2, #62
+	mov	w9, w0
+	cset	w8, ne
+	orr	w8, w1, w8
+	tst	w8, #0x1
+	csel	x0, x9, xzr, ne
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v3.4s, #62
-	cmeq	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	mvn	v2.16b, v2.16b
-	xtn	v2.4h, v2.4s
-	orr	v1.8b, v1.8b, v2.8b
-	ushll	v1.4s, v1.4h, #0
-	ushll2	v2.2d, v1.4s, #0
-	ushll	v1.2d, v1.2s, #0
-	shl	v2.2d, v2.2d, #63
-	shl	v1.2d, v1.2d, #63
-	cmlt	v2.2d, v2.2d, #0
-	cmlt	v4.2d, v1.2d, #0
-	and	v1.16b, v0.16b, v2.16b
-	and	v0.16b, v3.16b, v4.16b
+	cmp	w2, #62
+	mov	w9, w0
+	cset	w8, ne
+	orr	w8, w1, w8
+	tst	w8, #0x1
+	csel	x0, x9, xzr, ne
 	ret
                                         // -- End function

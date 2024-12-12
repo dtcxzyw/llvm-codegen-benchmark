@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -16,8 +16,9 @@
 ; duckdb/optimized/ub_duckdb_func_string_regexp.cpp.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000022(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000042(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp eq i8 %0, 0
@@ -31,7 +32,7 @@ entry:
 ; icu/optimized/simpletz.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000198(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000318(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp ne i8 %0, 0
@@ -46,7 +47,7 @@ entry:
 ; llvm/optimized/HotColdSplitting.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000182(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000302(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp eq i8 %0, 0

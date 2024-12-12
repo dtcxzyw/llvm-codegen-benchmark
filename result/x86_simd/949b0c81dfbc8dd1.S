@@ -85,3 +85,19 @@ func000000000000000c:                   # @func000000000000000c
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpord	.LCPI5_1(%rip){1to8}, %ymm1, %ymm0
 	retq
+.LCPI6_0:
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+.LCPI6_1:
+	.long	2                               # 0x2
+func0000000000000029:                   # @func0000000000000029
+	vpcmpltuw	.LCPI6_0(%rip), %xmm2, %k1
+	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vpord	.LCPI6_1(%rip){1to8}, %ymm1, %ymm0
+	retq

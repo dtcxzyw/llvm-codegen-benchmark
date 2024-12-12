@@ -1,10 +1,11 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; gromacs/optimized/md5.c.ll
 ; gromacs/optimized/md5.cpp.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/serial_core.ll
 ; linux/optimized/virtio_console.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; postgres/optimized/md.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; z3/optimized/nlsat_explain.cpp.ll

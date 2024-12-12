@@ -17,7 +17,7 @@ func0000000000000003:                   # @func0000000000000003
 	fli.d	fa5, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfrdiv.vf	v16, v16, fa5
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	fmv.d.x	fa5, zero
 	vmfge.vf	v16, v8, fa5
 	vmnot.m	v0, v16
@@ -26,7 +26,7 @@ func0000000000000005:                   # @func0000000000000005
 	fli.d	fa5, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfrdiv.vf	v16, v16, fa5
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
@@ -34,7 +34,7 @@ func0000000000000001:                   # @func0000000000000001
 	fli.d	fa5, 2.0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfrdiv.vf	v16, v16, fa5
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	vmfne.vv	v0, v8, v8
 	ret
 .LCPI5_0:
@@ -71,6 +71,6 @@ func000000000000000e:                   # @func000000000000000e
 	fli.d	fa5, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfrdiv.vf	v16, v16, fa5
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	vmfeq.vv	v0, v8, v8
 	ret

@@ -1,6 +1,5 @@
 
-; 22 occurrences:
-; linux/optimized/uthex.ll
+; 21 occurrences:
 ; mold/optimized/cmdline.cc.ALPHA.cc.ll
 ; mold/optimized/cmdline.cc.ARM32.cc.ll
 ; mold/optimized/cmdline.cc.ARM64.cc.ll
@@ -28,7 +27,7 @@ entry:
   %3 = select i1 %2, i8 0, i8 9
   %4 = add i8 %3, %1
   %5 = shl i8 %4, 4
-  %6 = or i8 %5, %0
+  %6 = or i8 %0, %5
   ret i8 %6
 }
 
@@ -40,7 +39,7 @@ entry:
   %3 = select i1 %2, i8 -55, i8 -48
   %4 = add i8 %3, %1
   %5 = shl nuw i8 %4, 4
-  %6 = or disjoint i8 %5, %0
+  %6 = or disjoint i8 %0, %5
   ret i8 %6
 }
 
@@ -52,7 +51,7 @@ entry:
   %3 = select i1 %2, i8 0, i8 9
   %4 = add i8 %3, %1
   %5 = shl i8 %4, 4
-  %6 = or disjoint i8 %5, %0
+  %6 = or disjoint i8 %0, %5
   ret i8 %6
 }
 

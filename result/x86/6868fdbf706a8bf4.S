@@ -12,6 +12,13 @@ func0000000000000002:                   # @func0000000000000002
 	andl	$524288, %edi                   # imm = 0x80000
 	orl	%edi, %eax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	andl	$3840, %edx                     # imm = 0xF00
+	andl	$240, %esi
+	leal	(%rsi,%rdx), %eax
+	andl	$15, %edi
+	orl	%edi, %eax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	andl	$224, %edx
 	andl	$63, %esi

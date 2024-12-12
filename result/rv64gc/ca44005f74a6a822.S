@@ -9,13 +9,13 @@ func0000000000000006:                   # @func0000000000000006
 	srliw	a0, a0, 6
 	slli	a0, a0, 6
 	ret
-func0000000000000004:                   # @func0000000000000004
-	mul	a0, a0, a1
-	slli	a0, a0, 9
-	srli	a0, a0, 32
-	ret
 func0000000000000002:                   # @func0000000000000002
 	mul	a0, a0, a1
 	slli	a0, a0, 33
 	srli	a0, a0, 63
+	ret
+func0000000000000004:                   # @func0000000000000004
+	mul	a0, a0, a1
+	slli	a0, a0, 1
+	srli	a0, a0, 32
 	ret

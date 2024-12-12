@@ -1,5 +1,7 @@
 
-; 59 occurrences:
+%struct.drm_color_lut.3531009 = type { i16, i16, i16, i16 }
+
+; 55 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
 ; abc/optimized/cuddReorder.c.ll
@@ -21,10 +23,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; msdfgen/optimized/edge-coloring.cpp.ll
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/deconvolution_x86.cpp.ll
 ; ncnn/optimized/deconvolution_x86_avx.cpp.ll
 ; ncnn/optimized/deconvolution_x86_avx512.cpp.ll
@@ -68,8 +66,25 @@ entry:
   ret ptr %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; abc/optimized/sscSim.c.ll
+; gromacs/optimized/domdec.cpp.ll
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; zxing/optimized/AZDecoder.cpp.ll
+; zxing/optimized/AZEncoder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sdiv i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 5 occurrences:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; linux/optimized/blk-map.ll
 ; linux/optimized/intel_color.ll
@@ -80,7 +95,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr i64, ptr %0, i64 %4
+  %5 = getelementptr %struct.drm_color_lut.3531009, ptr %0, i64 %4
   ret ptr %5
 }
 

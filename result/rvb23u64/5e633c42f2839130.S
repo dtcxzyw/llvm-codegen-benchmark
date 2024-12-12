@@ -1,8 +1,8 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	add.uw	a0, a2, a0
 	sub	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000000e:                   # @func000000000000000e
 	add.uw	a0, a2, a0
 	sub	a0, a0, a1
 	ret

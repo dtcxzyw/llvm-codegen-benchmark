@@ -3,7 +3,7 @@ func0000000000000005:                   # @func0000000000000005
 	beq	a2, a3, .LBB0_2
 	mv	a1, a2
 .LBB0_2:                                # %entry
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	beqz	a2, .LBB1_2
@@ -22,13 +22,5 @@ func0000000000000018:                   # @func0000000000000018
 	bltz	a2, .LBB3_2
 	mv	a1, a2
 .LBB3_2:                                # %entry
-	mul	a0, a1, a0
-	ret
-func0000000000000021:                   # @func0000000000000021
-	li	a3, -9
-	srli	a3, a3, 3
-	bltu	a3, a2, .LBB4_2
-	mv	a1, a2
-.LBB4_2:                                # %entry
 	mul	a0, a1, a0
 	ret

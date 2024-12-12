@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rocksdb/optimized/offpeak_time_info.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000057(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a7(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -21,7 +21,7 @@ entry:
 ; quantlib/optimized/simpledaycounter.ll
 ; slurm/optimized/slurm_protocol_defs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -34,7 +34,7 @@ entry:
 ; minetest/optimized/CGUIEnvironment.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000126(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/guiHyperText.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009b(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000012b(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -77,7 +77,7 @@ entry:
 ; redis/optimized/ltable.ll
 ; zxing/optimized/QRDataBlock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -89,7 +89,7 @@ entry:
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nuw i32 %3, %1
@@ -101,7 +101,7 @@ entry:
 ; lief/optimized/ssl_ticket.c.ll
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nuw i32 %3, %1
@@ -153,7 +153,7 @@ entry:
 ; quantlib/optimized/catrisk.ll
 ; quantlib/optimized/simpledaycounter.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -168,7 +168,7 @@ entry:
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000012a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -184,7 +184,7 @@ entry:
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub i32 %3, %1
@@ -203,7 +203,7 @@ entry:
 ; quantlib/optimized/sparseilupreconditioner.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a6(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -215,7 +215,7 @@ entry:
 ; abc/optimized/giaMan.c.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001aa(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -226,7 +226,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/msatSolverCore.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -237,7 +237,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -298,7 +298,7 @@ entry:
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -309,7 +309,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/infblock.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -320,7 +320,7 @@ entry:
 ; 1 occurrences:
 ; csmith/optimized/Function.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -328,13 +328,14 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; linux/optimized/auditfilter.ll
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/HeaderMap.cpp.ll
+; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/StackColoring.cpp.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
@@ -365,7 +366,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000049(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nuw i32 %3, %1
@@ -390,7 +391,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001c1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nuw i32 %3, %1
@@ -403,7 +404,7 @@ entry:
 ; icu/optimized/number_decimalquantity.ll
 ; postgres/optimized/pg_regress.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub i32 %3, %1
@@ -416,7 +417,7 @@ entry:
 ; gromacs/optimized/hxprops.cpp.ll
 ; gromacs/optimized/slasrt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -427,7 +428,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -438,7 +439,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = sub i32 %3, %1
@@ -460,7 +461,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/totalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000148(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub nuw i32 %3, %1
@@ -471,7 +472,7 @@ entry:
 ; 1 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -493,7 +494,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/ng_extparam.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub i32 %3, %1

@@ -22,6 +22,12 @@ func00000000000000d6:                   # @func00000000000000d6
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	addi	a1, a1, 1
+	mulw	a1, a1, a2
+	slli	a1, a1, 3
+	add	a0, a0, a1
+	ret
 func0000000000000042:                   # @func0000000000000042
 	addi	a1, a1, 1
 	mulw	a1, a1, a2
@@ -40,12 +46,6 @@ func0000000000000002:                   # @func0000000000000002
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func00000000000000c0:                   # @func00000000000000c0
-	addi	a1, a1, 1
-	mulw	a1, a1, a2
-	slli	a1, a1, 3
-	add	a0, a0, a1
-	ret
 func0000000000000000:                   # @func0000000000000000
 	addi	a1, a1, 256
 	mulw	a1, a1, a2
@@ -54,12 +54,6 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000016:                   # @func0000000000000016
 	addi	a1, a1, -1
 	mulw	a1, a1, a2
-	add	a0, a0, a1
-	ret
-func0000000000000014:                   # @func0000000000000014
-	addi	a1, a1, 1
-	mulw	a1, a1, a2
-	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
 func0000000000000036:                   # @func0000000000000036

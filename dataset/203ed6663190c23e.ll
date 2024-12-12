@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(i64 %0) #0 {
 entry:

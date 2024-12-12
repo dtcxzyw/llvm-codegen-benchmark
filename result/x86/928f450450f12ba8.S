@@ -1,10 +1,10 @@
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	andl	$7, %esi
-	leal	-16(%rsi,%rdi), %eax
+	leal	-16(%rdi,%rsi), %eax
 	cmpl	$-15, %eax
 	setb	%al
 	retq
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	andl	$7, %esi
 	addl	%edi, %esi
 	cmpl	$1, %esi
@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000004:                   # @func0000000000000004
 	andl	$4095, %esi                     # imm = 0xFFF
-	leal	4095(%rsi,%rdi), %eax
+	leal	4095(%rdi,%rsi), %eax
 	cmpl	$8191, %eax                     # imm = 0x1FFF
 	setb	%al
 	retq

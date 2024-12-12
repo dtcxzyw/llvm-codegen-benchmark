@@ -1,13 +1,3 @@
-func000000000000003f:                   # @func000000000000003f
-	andi	a0, a0, 1
-	slliw	a2, a2, 24
-	slliw	a1, a1, 16
-	or	a1, a1, a2
-	li	a2, -2
-	czero.nez	a0, a2, a0
-	addi	a0, a0, 41
-	or	a0, a0, a1
-	ret
 func000000000000003e:                   # @func000000000000003e
 	andi	a0, a0, 1
 	slliw	a2, a2, 19
@@ -18,6 +8,14 @@ func000000000000003e:                   # @func000000000000003e
 	lui	a2, 385088
 	addiw	a2, a2, 1024
 	add	a0, a0, a2
+	or	a0, a0, a1
+	ret
+func000000000000003f:                   # @func000000000000003f
+	slliw	a2, a2, 24
+	slliw	a1, a1, 16
+	andi	a0, a0, 1
+	or	a1, a1, a2
+	slli	a0, a0, 8
 	or	a0, a0, a1
 	ret
 func000000000000002d:                   # @func000000000000002d

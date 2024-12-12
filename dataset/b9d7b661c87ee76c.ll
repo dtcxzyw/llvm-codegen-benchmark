@@ -9,7 +9,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add nuw nsw i32 %1, 1
   %5 = add i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -36,10 +36,10 @@ entry:
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/GCOVProfiling.cpp.ll
 ; llvm/optimized/MCCodeView.cpp.ll
+; lvgl/optimized/lv_textarea.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlahr2.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dtgex2.c.ll
@@ -73,10 +73,9 @@ entry:
   ret i32 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; libquic/optimized/tls_cbc.c.ll
-; linux/optimized/mcast_snoop.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
@@ -94,7 +93,7 @@ entry:
 
 ; 2 occurrences:
 ; darktable/optimized/export.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -154,9 +153,10 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; icu/optimized/package.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
@@ -193,7 +193,7 @@ entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = add nuw nsw i32 %1, 4
   %5 = add i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

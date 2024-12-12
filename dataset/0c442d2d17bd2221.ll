@@ -4,7 +4,6 @@
 ; icu/optimized/number_grouping.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/iface.ll
-; linux/optimized/reciprocal_div.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
@@ -17,6 +16,7 @@
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
 ; wireshark/optimized/blf.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -84,9 +84,10 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; linux/optimized/io_apic.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000006f(i64 %0, i64 %1, i32 %2) #0 {
@@ -99,7 +100,7 @@ entry:
   ret i64 %7
 }
 
-; 17 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
@@ -117,6 +118,10 @@ entry:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -148,7 +153,7 @@ entry:
   ret i64 %7
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; linux/optimized/libata-core.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
@@ -157,6 +162,7 @@ entry:
 ; php/optimized/softmagic.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002f(i64 %0, i64 %1, i32 %2) #0 {
@@ -178,6 +184,20 @@ entry:
   %4 = shl nuw nsw i64 %3, 32
   %5 = shl nuw nsw i64 %1, 40
   %6 = or i64 %5, %4
+  %7 = or i64 %6, %0
+  ret i64 %7
+}
+
+; 2 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl i64 %3, 52
+  %5 = shl nuw i64 %1, 63
+  %6 = or i64 %4, %5
   %7 = or i64 %6, %0
   ret i64 %7
 }
@@ -246,7 +266,7 @@ entry:
   %4 = shl nuw i64 %3, 32
   %5 = shl nuw nsw i64 %1, 16
   %6 = or disjoint i64 %4, %5
-  %7 = or i64 %6, %0
+  %7 = or i64 %0, %6
   ret i64 %7
 }
 
@@ -259,7 +279,7 @@ entry:
   %4 = shl i64 %3, 56
   %5 = shl nuw i64 %1, 32
   %6 = or i64 %5, %4
-  %7 = or i64 %6, %0
+  %7 = or i64 %0, %6
   ret i64 %7
 }
 

@@ -4,7 +4,7 @@
 ; openssl/optimized/libssl-shlib-quic_txp.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
@@ -26,7 +26,7 @@ entry:
 ; openvdb/optimized/ValueTransformer.cc.ll
 ; yosys/optimized/cxxrtl_backend.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000cc(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
@@ -40,7 +40,7 @@ entry:
 ; icu/optimized/genmbcs.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000ec(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
@@ -59,11 +59,11 @@ entry:
 ; yosys/optimized/mem.ll
 ; z3/optimized/bit_matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = icmp eq i64 %5, 0
   %7 = select i1 %6, i1 true, i1 %0
   ret i1 %7

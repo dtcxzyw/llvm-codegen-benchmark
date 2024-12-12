@@ -46,8 +46,7 @@ entry:
   ret i8 %3
 }
 
-; 18 occurrences:
-; nix/optimized/nix-store.ll
+; 17 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
@@ -73,7 +72,7 @@ entry:
   ret i8 %3
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -81,6 +80,7 @@ entry:
 ; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
 ; hyperscan/optimized/accelcompile.cpp.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
+; hyperscan/optimized/charreach.cpp.ll
 ; hyperscan/optimized/mpvcompile.cpp.ll
 ; hyperscan/optimized/ng_lbr.cpp.ll
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll

@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; eastl/optimized/EAScanfCore.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:

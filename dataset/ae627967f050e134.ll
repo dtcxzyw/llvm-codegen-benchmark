@@ -1,5 +1,5 @@
 
-; 578 occurrences:
+; 575 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; arrow/optimized/api_scalar.cc.ll
@@ -122,7 +122,6 @@
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; gromacs/optimized/angle.cpp.ll
-; gromacs/optimized/awh.cpp.ll
 ; gromacs/optimized/awh_history.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/checkpoint.cpp.ll
@@ -273,7 +272,6 @@
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/io_e57.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -296,7 +294,6 @@
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/CZipReader.cpp.ll
 ; minetest/optimized/MaterialRenderer.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
@@ -587,7 +584,7 @@ entry:
   ret i64 %4
 }
 
-; 559 occurrences:
+; 567 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; arrow/optimized/bridge.cc.ll
 ; arrow/optimized/grouper.cc.ll
@@ -612,6 +609,19 @@ entry:
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/topology.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/fmu.cpp.ll
 ; casadi/optimized/fmu_function.cpp.ll
 ; casadi/optimized/function.cpp.ll
@@ -780,7 +790,6 @@ entry:
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -811,7 +820,6 @@ entry:
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -942,13 +950,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -1156,10 +1161,11 @@ entry:
   ret i64 %4
 }
 
-; 136 occurrences:
+; 137 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/SkeletonMeshBuilder.cpp.ll
+; boost/optimized/src.ll
 ; casadi/optimized/options.cpp.ll
 ; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll
@@ -1302,8 +1308,10 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/status_internal.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cvc5/optimized/commands.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
@@ -1342,17 +1350,6 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %.neg = sdiv i64 %3, -125000
-  %4 = add i64 %.neg, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; linux/optimized/intel_dsi.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %.neg = sdiv i64 %3, -1000000
   %4 = add i64 %.neg, %0
   ret i64 %4
 }

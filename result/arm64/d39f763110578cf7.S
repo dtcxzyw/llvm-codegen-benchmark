@@ -1,25 +1,14 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	cmlt	v4.4s, v3.4s, #0
-	bic	v3.4s, #224, lsl #24
-	cmlt	v5.4s, v2.4s, #0
-	bic	v2.4s, #224, lsl #24
-	bit	v1.16b, v3.16b, v4.16b
-	bit	v0.16b, v2.16b, v5.16b
+	and	w8, w1, #0x1fffffff
+	cmp	w1, #0
+	csel	w0, w8, w0, lt
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	cmlt	v4.4s, v3.4s, #0
-	cmlt	v5.4s, v2.4s, #0
-	movi	v6.4s, #7
-	bic	v3.16b, v3.16b, v4.16b
-	bic	v2.16b, v2.16b, v5.16b
-	and	v0.16b, v0.16b, v5.16b
-	and	v1.16b, v1.16b, v4.16b
-	and	v2.16b, v2.16b, v6.16b
-	and	v3.16b, v3.16b, v6.16b
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
+	and	w8, w1, #0x7
+	cmp	w1, #0
+	csel	w0, w0, w8, lt
 	ret
                                         // -- End function

@@ -34,7 +34,7 @@ func0000000000000001:                   # @func0000000000000001
 	.short	8                               # 0x8
 	.short	8                               # 0x8
 	.short	8                               # 0x8
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI1_2(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu16	%xmm1, %xmm0 {%k1}

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 19 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -15,12 +15,16 @@
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; libwebp/optimized/dec.c.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 1461
   %4 = ashr i32 %3, 2
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = ashr i32 %1, 2
   %7 = add nsw i32 %5, %6
   ret i32 %7
@@ -34,7 +38,7 @@ define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 1461
   %4 = ashr i32 %3, 2
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = ashr i32 %1, 2
   %7 = add i32 %5, %6
   ret i32 %7

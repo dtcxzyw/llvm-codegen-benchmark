@@ -23,7 +23,7 @@ define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nsw i32 %3, -1
-  %5 = mul nuw i32 %4, %0
+  %5 = mul nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -32,8 +32,8 @@ entry:
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/scsicam.ll
 ; openjdk/optimized/hb-ot-font.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:

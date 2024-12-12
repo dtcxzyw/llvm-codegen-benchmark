@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -7,6 +7,7 @@
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
+; velox/optimized/HugeInt.cpp.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll

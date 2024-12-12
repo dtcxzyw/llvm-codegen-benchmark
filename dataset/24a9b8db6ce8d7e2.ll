@@ -11,7 +11,7 @@
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:
   %.not = xor i1 %0, true
-  %2 = or i1 %.not, %1
+  %2 = or i1 %1, %.not
   ret i1 %2
 }
 

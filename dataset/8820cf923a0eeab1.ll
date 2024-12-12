@@ -1,5 +1,5 @@
 
-; 231 occurrences:
+; 225 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -14,6 +14,8 @@
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; brotli/optimized/block_splitter.c.ll
 ; brotli/optimized/literal_cost.c.ll
 ; casadi/optimized/constant_mx.cpp.ll
@@ -53,7 +55,6 @@
 ; gromacs/optimized/pme.cpp.ll
 ; gromacs/optimized/pme_solve.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
-; gromacs/optimized/tabulatednormaldistribution.cpp.ll
 ; gromacs/optimized/thermochemistry.cpp.ll
 ; grpc/optimized/memory_quota.cc.ll
 ; grpc/optimized/timeout_encoding.cc.ll
@@ -67,7 +68,6 @@
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
-; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
@@ -128,7 +128,6 @@
 ; openjdk/optimized/cmssm.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openjdk/optimized/xDirector.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/mcts.cc.ll
 ; openusd/optimized/frustum.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
@@ -148,8 +147,6 @@
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/krovak.cpp.ll
 ; proj/optimized/labrd.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
-; proj/optimized/mill.cpp.ll
 ; proj/optimized/mod_ster.cpp.ll
 ; proj/optimized/proj.cpp.ll
 ; proj/optimized/putp2.cpp.ll
@@ -208,10 +205,8 @@
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
 ; quantlib/optimized/zabr.ll
 ; quantlib/optimized/zigguratrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
-; redis/optimized/mt19937-64.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
@@ -223,7 +218,6 @@
 ; wireshark/optimized/file-mp4.c.ll
 ; wireshark/optimized/packet-gsm_a_common.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
-; wireshark/optimized/packet-lcsap.c.ll
 ; wireshark/optimized/packet-lpp.c.ll
 ; wireshark/optimized/packet-ulp.c.ll
 ; wireshark/optimized/sequence_dialog.cpp.ll

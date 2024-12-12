@@ -21,7 +21,6 @@
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/ipv6_sockglue.ll
-; linux/optimized/mii.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/skl_watermark.ll
@@ -58,6 +57,7 @@
 ; ring-rs/optimized/1vabw27ldssjsz66.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
@@ -65,18 +65,6 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i32 3, i32 2
   %5 = select i1 %3, i32 %4, i32 1
-  ret i32 %5
-}
-
-; 1 occurrences:
-; icu/optimized/ucnv2022.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 255
-  %3 = icmp ult i32 %2, 159
-  %4 = select i1 %0, i32 -31, i32 -32
-  %5 = select i1 %3, i32 %4, i32 -126
   ret i32 %5
 }
 

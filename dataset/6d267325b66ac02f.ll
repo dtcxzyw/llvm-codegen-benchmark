@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 41 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -8,6 +8,7 @@
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
+; boost/optimized/sparring_partner.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; c3c/optimized/bigint.c.ll
@@ -20,6 +21,7 @@
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/tsc.ll
 ; llvm/optimized/DWARFUnit.cpp.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/TargetFrameLoweringImpl.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
@@ -29,11 +31,16 @@
 ; ripgrep-rs/optimized/1blifwgi0jcy5tf4.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
+; spike/optimized/s_addMagsF128.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

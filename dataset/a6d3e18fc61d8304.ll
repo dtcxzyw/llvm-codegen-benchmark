@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; linux/optimized/rseq.ll
+; 5 occurrences:
 ; llvm/optimized/LoopTraversal.cpp.ll
 ; php/optimized/escape_analysis.ll
 ; php/optimized/sccp.ll
@@ -10,7 +9,7 @@
 define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = select i1 %3, i64 20, i64 0
   ret i64 %4
 }
@@ -19,15 +18,15 @@ entry:
 ; php/optimized/zend_inference.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = select i1 %3, i64 8192, i64 0
   ret i64 %4
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; cvc5/optimized/fun_def_fmf.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/sygus_eval_unfold.cpp.ll
@@ -52,7 +51,6 @@ entry:
 ; openspiel/optimized/liars_dice.cc.ll
 ; openusd/optimized/listOp.cpp.ll
 ; pbrt-v4/optimized/scene.cpp.ll
-; proj/optimized/io.cpp.ll
 ; rocksdb/optimized/internal_stats.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
@@ -63,13 +61,14 @@ entry:
 define i64 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; assimp/optimized/IFCGeometry.cpp.ll
+; boost/optimized/topology.ll
 ; hyperscan/optimized/rose_build_infix.cpp.ll
 ; llvm/optimized/InclusionRewriter.cpp.ll
 ; openusd/optimized/listOp.cpp.ll
@@ -77,7 +76,7 @@ entry:
 define i64 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }
@@ -115,7 +114,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -124,10 +123,10 @@ entry:
 ; assimp/optimized/FBXExporter.cpp.ll
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -135,10 +134,10 @@ entry:
 ; 1 occurrences:
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(i32 %0, i64 %1) #0 {
+define i64 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }
@@ -150,10 +149,10 @@ entry:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000044(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -175,7 +174,7 @@ entry:
 define i64 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }
@@ -183,10 +182,10 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/fsm_opt.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(i32 %0, i64 %1) #0 {
+define i64 @func000000000000006a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }
@@ -196,10 +195,10 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; yosys/optimized/fsm_opt.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -207,10 +206,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = select i1 %3, i64 9223372036854775807, i64 -9223372036854775808
   ret i64 %4
 }
@@ -219,10 +218,10 @@ entry:
 ; hyperscan/optimized/Utf8ComponentClass.cpp.ll
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000048(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }
@@ -230,10 +229,10 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000068(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }

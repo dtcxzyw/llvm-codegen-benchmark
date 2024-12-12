@@ -1,5 +1,5 @@
 
-; 1385 occurrences:
+; 1347 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -102,6 +102,7 @@
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaSim2.c.ll
 ; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaStr.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/giaTruth.c.ll
@@ -175,6 +176,10 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/codepage.ll
+; boost/optimized/conversion.ll
+; boost/optimized/date_time.ll
+; boost/optimized/formatter.ll
 ; bullet3/optimized/MultiBodyTreeImpl.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3File.ll
@@ -209,7 +214,6 @@
 ; casadi/optimized/cvodes_spils.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/idas_spils.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/conditioned_cost_function.cc.ll
@@ -369,35 +373,24 @@
 ; gromacs/optimized/dbdsdc.cpp.ll
 ; gromacs/optimized/dbdsqr.cpp.ll
 ; gromacs/optimized/dgebrd.cpp.ll
-; gromacs/optimized/dgelq2.cpp.ll
-; gromacs/optimized/dgetf2.cpp.ll
-; gromacs/optimized/dgetrf.cpp.ll
 ; gromacs/optimized/dgetri.cpp.ll
 ; gromacs/optimized/dlabrd.cpp.ll
-; gromacs/optimized/dlange.cpp.ll
 ; gromacs/optimized/dlansy.cpp.ll
-; gromacs/optimized/dlarfb.cpp.ll
 ; gromacs/optimized/dlarft.cpp.ll
 ; gromacs/optimized/dlasd2.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasdq.cpp.ll
 ; gromacs/optimized/dlasr.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorgbr.cpp.ll
 ; gromacs/optimized/dorgl2.cpp.ll
 ; gromacs/optimized/dstegr.cpp.ll
 ; gromacs/optimized/dsteqr.cpp.ll
 ; gromacs/optimized/dsyevr.cpp.ll
-; gromacs/optimized/dsytd2.cpp.ll
 ; gromacs/optimized/dsytrd.cpp.ll
-; gromacs/optimized/dtrtri.cpp.ll
 ; gromacs/optimized/eigensolver.cpp.ll
 ; gromacs/optimized/fft5d.cpp.ll
 ; gromacs/optimized/forcerec.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
-; gromacs/optimized/gather.cpp.ll
 ; gromacs/optimized/genconf.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
@@ -450,7 +443,6 @@
 ; gromacs/optimized/mdatoms.cpp.ll
 ; gromacs/optimized/mk_angndx.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
-; gromacs/optimized/mtxio.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/perf_est.cpp.ll
 ; gromacs/optimized/pme.cpp.ll
@@ -463,31 +455,21 @@
 ; gromacs/optimized/sbdsqr.cpp.ll
 ; gromacs/optimized/sfactor.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
-; gromacs/optimized/sgelq2.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
-; gromacs/optimized/sgetrf.cpp.ll
 ; gromacs/optimized/sgetri.cpp.ll
 ; gromacs/optimized/slabrd.cpp.ll
-; gromacs/optimized/slange.cpp.ll
 ; gromacs/optimized/slansy.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
 ; gromacs/optimized/slasd2.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasdq.cpp.ll
 ; gromacs/optimized/slasr.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgbr.cpp.ll
 ; gromacs/optimized/sorgl2.cpp.ll
 ; gromacs/optimized/sstegr.cpp.ll
 ; gromacs/optimized/ssteqr.cpp.ll
 ; gromacs/optimized/ssyevr.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/ssytrd.cpp.ll
 ; gromacs/optimized/state.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; gromacs/optimized/vcm.cpp.ll
 ; hermes/optimized/zip.c.ll
@@ -566,6 +548,12 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luau/optimized/lmem.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
@@ -582,7 +570,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -761,14 +748,9 @@
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsx.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgeqp3.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetrf2.c.ll
-; openblas/optimized/dgetri.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dgges.c.ll
 ; openblas/optimized/dgges3.c.ll
 ; openblas/optimized/dggesx.c.ll
@@ -790,10 +772,8 @@
 ; openblas/optimized/dlahqr.c.ll
 ; openblas/optimized/dlahr2.c.ll
 ; openblas/optimized/dlansf.c.ll
-; openblas/optimized/dlaorhr_col_getrfnp.c.ll
 ; openblas/optimized/dlaorhr_col_getrfnp2.c.ll
 ; openblas/optimized/dlapmt.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlaqr0.c.ll
@@ -811,7 +791,6 @@
 ; openblas/optimized/dlasr.c.ll
 ; openblas/optimized/dlaswlq.c.ll
 ; openblas/optimized/dlasyf.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
 ; openblas/optimized/dlatrd.c.ll
@@ -821,7 +800,6 @@
 ; openblas/optimized/dorbdb1.c.ll
 ; openblas/optimized/dorbdb2.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dorgql.c.ll
 ; openblas/optimized/dorgtsqr_row.c.ll
 ; openblas/optimized/dorm22.c.ll
@@ -837,15 +815,10 @@
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dsteqr.c.ll
 ; openblas/optimized/dsyequb.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
-; openblas/optimized/dsygst.c.ll
 ; openblas/optimized/dsyrfs.c.ll
 ; openblas/optimized/dsytf2_rk.c.ll
 ; openblas/optimized/dsytrd_sb2st.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dsytri2x.c.ll
@@ -853,23 +826,16 @@
 ; openblas/optimized/dsytri_rook.c.ll
 ; openblas/optimized/dsytrs.c.ll
 ; openblas/optimized/dsytrs_rook.c.ll
-; openblas/optimized/dtfsm.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtfttr.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgex2.c.ll
 ; openblas/optimized/dtgsen.c.ll
 ; openblas/optimized/dtgsja.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtgsy2.c.ll
 ; openblas/optimized/dtgsyl.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrsen.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openblas/optimized/lapacke_dlascl.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/OpenEXRimages_HDR_Retina_toneMapping.cpp.ll
@@ -926,7 +892,6 @@
 ; opencv/optimized/deriv.cpp.ll
 ; opencv/optimized/descriptor.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
-; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
 ; opencv/optimized/dpm_convolution.cpp.ll
@@ -1005,7 +970,6 @@
 ; opencv/optimized/nonrigid_icp.cpp.ll
 ; opencv/optimized/normal.cpp.ll
 ; opencv/optimized/odometry.cpp.ll
-; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/orb.cpp.ll
 ; opencv/optimized/outlier_rejection.cpp.ll
 ; opencv/optimized/pcaflow.cpp.ll
@@ -1038,6 +1002,7 @@
 ; opencv/optimized/softmax_layer.cpp.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
+; opencv/optimized/speech_recognition.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
@@ -1193,8 +1158,6 @@
 ; openspiel/optimized/twixtboard.cc.ll
 ; openspiel/optimized/ultimate_tic_tac_toe.cc.ll
 ; openspiel/optimized/y.cc.ll
-; openssl/optimized/libcrypto-lib-bsearch.ll
-; openssl/optimized/libcrypto-shlib-bsearch.ll
 ; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; openusd/optimized/alloccommon.c.ll
@@ -1374,7 +1337,6 @@
 ; zxing/optimized/GridSampler.cpp.ll
 ; zxing/optimized/HybridBinarizer.cpp.ll
 ; zxing/optimized/ODWriterHelper.cpp.ll
-; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
@@ -1393,7 +1355,7 @@ entry:
   ret i64 %3
 }
 
-; 601 occurrences:
+; 559 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/absVta.c.ll
@@ -1436,22 +1398,13 @@ entry:
 ; gromacs/optimized/bias.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
-; gromacs/optimized/dgebd2.cpp.ll
 ; gromacs/optimized/dgebrd.cpp.ll
-; gromacs/optimized/dgelqf.cpp.ll
 ; gromacs/optimized/dgemm.cpp.ll
-; gromacs/optimized/dgeqr2.cpp.ll
-; gromacs/optimized/dgeqrf.cpp.ll
 ; gromacs/optimized/dgesdd.cpp.ll
-; gromacs/optimized/dgetf2.cpp.ll
-; gromacs/optimized/dgetrf.cpp.ll
 ; gromacs/optimized/dlabrd.cpp.ll
 ; gromacs/optimized/dlansy.cpp.ll
 ; gromacs/optimized/dlarft.cpp.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlaset.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorgl2.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
@@ -1461,13 +1414,10 @@ entry:
 ; gromacs/optimized/dormqr.cpp.ll
 ; gromacs/optimized/dsyevr.cpp.ll
 ; gromacs/optimized/dsymv.cpp.ll
-; gromacs/optimized/dsytd2.cpp.ll
 ; gromacs/optimized/dsytrd.cpp.ll
 ; gromacs/optimized/dtrmm.cpp.ll
 ; gromacs/optimized/dtrmv.cpp.ll
 ; gromacs/optimized/dtrsm.cpp.ll
-; gromacs/optimized/dtrti2.cpp.ll
-; gromacs/optimized/dtrtri.cpp.ll
 ; gromacs/optimized/editconf.cpp.ll
 ; gromacs/optimized/gmx_densorder.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
@@ -1542,23 +1492,14 @@ entry:
 ; gromacs/optimized/pme_spread.cpp.ll
 ; gromacs/optimized/powerspect.cpp.ll
 ; gromacs/optimized/sbdsdc.cpp.ll
-; gromacs/optimized/sgebd2.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
-; gromacs/optimized/sgelqf.cpp.ll
 ; gromacs/optimized/sgemm.cpp.ll
-; gromacs/optimized/sgeqr2.cpp.ll
-; gromacs/optimized/sgeqrf.cpp.ll
 ; gromacs/optimized/sgesdd.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
-; gromacs/optimized/sgetrf.cpp.ll
 ; gromacs/optimized/simd_energy_accumulator.cpp.ll
 ; gromacs/optimized/slabrd.cpp.ll
 ; gromacs/optimized/slansy.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slaset.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgl2.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
@@ -1568,13 +1509,10 @@ entry:
 ; gromacs/optimized/sormqr.cpp.ll
 ; gromacs/optimized/ssyevr.cpp.ll
 ; gromacs/optimized/ssymv.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/ssytrd.cpp.ll
 ; gromacs/optimized/strmm.cpp.ll
 ; gromacs/optimized/strmv.cpp.ll
 ; gromacs/optimized/strsm.cpp.ll
-; gromacs/optimized/strti2.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
 ; gromacs/optimized/tng_compress.c.ll
 ; hdf5/optimized/h5diff_array.c.ll
 ; icu/optimized/propsvec.ll
@@ -1593,6 +1531,7 @@ entry:
 ; lightgbm/optimized/gradient_discretizer.cpp.ll
 ; lightgbm/optimized/train_share_states.cpp.ll
 ; linux/optimized/balloc.ll
+; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/fatent.ll
 ; linux/optimized/ialloc.ll
@@ -1602,17 +1541,16 @@ entry:
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/rapl.ll
-; linux/optimized/runtime-map.ll
 ; linux/optimized/sta_info.ll
 ; linux/optimized/tree.ll
 ; linux/optimized/vt.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/train.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/TensorSpec.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; memcached/optimized/memcached-slab_automove.ll
 ; memcached/optimized/memcached-slab_automove_extstore.ll
 ; memcached/optimized/memcached_debug-slab_automove.ll
@@ -1621,7 +1559,6 @@ entry:
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
@@ -1721,6 +1658,7 @@ entry:
 ; oiio/optimized/Writer.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; oiio/optimized/dpxoutput.cpp.ll
+; oiio/optimized/exif.cpp.ll
 ; oiio/optimized/exrinput.cpp.ll
 ; oiio/optimized/exroutput.cpp.ll
 ; oiio/optimized/iffinput.cpp.ll
@@ -1738,12 +1676,8 @@ entry:
 ; openblas/optimized/dgelqf.c.ll
 ; openblas/optimized/dgeqrf.c.ll
 ; openblas/optimized/dgeqrfp.c.ll
-; openblas/optimized/dgesc2.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetrf2.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dgges.c.ll
 ; openblas/optimized/dgges3.c.ll
 ; openblas/optimized/dggesx.c.ll
@@ -1770,32 +1704,22 @@ entry:
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlasd0.c.ll
 ; openblas/optimized/dlasyf.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
-; openblas/optimized/dlatdf.c.ll
 ; openblas/optimized/dlatrd.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dorbdb2.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dorgtsqr_row.c.ll
 ; openblas/optimized/dporfs.c.ll
 ; openblas/optimized/dstedc.c.ll
 ; openblas/optimized/dsyequb.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
-; openblas/optimized/dsygst.c.ll
 ; openblas/optimized/dsyrfs.c.ll
 ; openblas/optimized/dsytf2_rk.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dsytri2x.c.ll
@@ -1803,19 +1727,14 @@ entry:
 ; openblas/optimized/dsytri_rook.c.ll
 ; openblas/optimized/dsytrs.c.ll
 ; openblas/optimized/dsytrs_rook.c.ll
-; openblas/optimized/dtfsm.c.ll
-; openblas/optimized/dtfttp.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgex2.c.ll
 ; openblas/optimized/dtgsen.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtgsy2.c.ll
 ; openblas/optimized/dtgsyl.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrsen.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
@@ -1983,6 +1902,7 @@ entry:
 ; yosys/optimized/eval.ll
 ; yosys/optimized/extract_fa.ll
 ; yosys/optimized/flowmap.ll
+; yosys/optimized/formalff.ll
 ; yosys/optimized/fsm_detect.ll
 ; yosys/optimized/fsm_expand.ll
 ; yosys/optimized/fsm_extract.ll
@@ -2003,8 +1923,9 @@ entry:
   ret i64 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaMf.c.ll
+; git/optimized/linear-assignment.ll
 ; gromacs/optimized/dorm2r.cpp.ll
 ; gromacs/optimized/dormlq.cpp.ll
 ; gromacs/optimized/dormqr.cpp.ll

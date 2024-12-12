@@ -6,7 +6,7 @@
 ; openusd/optimized/read.c.ll
 ; rocksdb/optimized/sst_dump_tool.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp ugt i64 %3, %0
@@ -23,7 +23,7 @@ entry:
 ; redis/optimized/t_stream.ll
 ; z3/optimized/memory_manager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000054c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp sgt i64 %3, %0
@@ -37,7 +37,7 @@ entry:
 ; php/optimized/rfc1867.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp sgt i64 %3, %0
@@ -50,7 +50,7 @@ entry:
 ; openexr/optimized/chunk.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp ugt i64 %3, %0

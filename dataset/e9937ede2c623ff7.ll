@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; c3c/optimized/sema_decls.c.ll
@@ -44,6 +44,7 @@
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; z3/optimized/dl_costs.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:

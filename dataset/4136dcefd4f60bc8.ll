@@ -20,9 +20,8 @@ entry:
   ret i64 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; brotli/optimized/decode.c.ll
-; cpython/optimized/multibytecodec.ll
 ; llvm/optimized/RustDemangle.cpp.ll
 ; openjdk/optimized/virtualspace.ll
 ; openjdk/optimized/zip_util.ll

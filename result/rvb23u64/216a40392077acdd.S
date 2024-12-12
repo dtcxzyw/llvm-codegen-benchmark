@@ -30,3 +30,9 @@ func0000000000000007:                   # @func0000000000000007
 	andi	a0, a0, 1
 	sh1add	a0, a1, a0
 	ret
+func000000000000000e:                   # @func000000000000000e
+	or	a1, a1, a2
+	slli	a1, a1, 5
+	andi	a0, a0, 31
+	or	a0, a0, a1
+	ret

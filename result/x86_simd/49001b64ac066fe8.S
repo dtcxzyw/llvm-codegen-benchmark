@@ -38,12 +38,12 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpeqb	.LCPI1_0(%rip), %xmm1, %k1
 	vpsubq	%ymm3, %ymm2, %ymm0 {%k1}
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpeqd	%xmm4, %xmm4, %xmm4
 	vpcmpeqb	%xmm4, %xmm1, %k1
@@ -68,7 +68,7 @@ func0000000000000031:                   # @func0000000000000031
 	.zero	1
 .LCPI3_1:
 	.quad	-2                              # 0xfffffffffffffffe
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqb	.LCPI3_0(%rip), %xmm1, %k1
 	vpaddq	.LCPI3_1(%rip){1to4}, %ymm2, %ymm0 {%k1}
 	retq

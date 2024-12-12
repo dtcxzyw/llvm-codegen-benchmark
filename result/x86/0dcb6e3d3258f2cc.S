@@ -1,14 +1,14 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	shrl	$4, %esi
 	movl	$256, %eax                      # imm = 0x100
 	shlxl	%esi, %eax, %eax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000f8:                   # @func00000000000000f8
 	shrl	$4, %esi
 	movl	$128, %eax
 	shlxl	%esi, %eax, %eax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

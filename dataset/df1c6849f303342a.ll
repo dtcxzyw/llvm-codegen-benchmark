@@ -1,9 +1,11 @@
 
-; 170 occurrences:
+; 177 occurrences:
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; arrow/optimized/compare_internal.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; c3c/optimized/sema_decls.c.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clamav/optimized/asn1.c.ll
@@ -40,7 +42,6 @@
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libquic/optimized/file_util_posix.cc.ll
-; libquic/optimized/url_canon_path.cc.ll
 ; libzmq/optimized/xpub.cpp.ll
 ; lief/optimized/psa_crypto_cipher.c.ll
 ; lief/optimized/psa_crypto_ecp.c.ll
@@ -167,6 +168,12 @@
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/bound_propagator.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/4h176o45n3uxzch53hiway9mu.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8qol7q25vqqdxkncrkeuuvo2e.ll
+; zed-rs/optimized/9fdv7qxvc9ek9liffc7407f9x.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; zxing/optimized/TextDecoder.cpp.ll
@@ -178,9 +185,8 @@ entry:
   ret i8 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; hermes/optimized/Host.cpp.ll
-; libevent/optimized/event_tagging.c.ll
 ; llvm/optimized/Host.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; mold/optimized/rust-demangle.c.ll
@@ -232,10 +238,10 @@ entry:
   ret i8 %3
 }
 
-; 73 occurrences:
+; 72 occurrences:
 ; arrow/optimized/type.cc.ll
-; cmake/optimized/nghttp2_hd.c.ll
-; coreutils-rs/optimized/5bh17hgt9ymhvnmz.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cpython/optimized/instrumentation.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
@@ -252,7 +258,6 @@ entry:
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/route.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; nuttx/optimized/lib_libvscanf.c.ll
@@ -331,6 +336,26 @@ define i8 @func0000000000000006(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, i8 %0, i8 0
+  ret i8 %3
+}
+
+; 1 occurrences:
+; libevent/optimized/event_tagging.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000018(i8 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 1
+  %3 = select i1 %2, i8 %0, i8 0
+  ret i8 %3
+}
+
+; 1 occurrences:
+; coreutils-rs/optimized/5bh17hgt9ymhvnmz.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000014(i8 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 128
+  %3 = select i1 %2, i8 %0, i8 undef
   ret i8 %3
 }
 

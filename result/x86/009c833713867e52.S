@@ -1,7 +1,3 @@
-func000000000000003f:                   # @func000000000000003f
-	leal	35(%rdi,%rsi,4), %eax
-	andl	$2147483640, %eax               # imm = 0x7FFFFFF8
-	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	15(%rdi,%rsi,8), %eax
 	andl	$-16, %eax

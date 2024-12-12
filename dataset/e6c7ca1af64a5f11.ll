@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 41 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; clamav/optimized/bytecode.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
@@ -13,6 +13,9 @@
 ; linux/optimized/uncore_discovery.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/rapass.cpp.ll
@@ -33,6 +36,11 @@
 ; wireshark/optimized/packet-ipv6.c.ll
 ; wireshark/optimized/packet-sndcp-xid.c.ll
 ; wireshark/optimized/packet-zbee-tlv.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/67gayid14ydsuhkv0lcnhbsvb.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:

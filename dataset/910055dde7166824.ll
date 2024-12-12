@@ -1,5 +1,5 @@
 
-; 160 occurrences:
+; 158 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -15,6 +15,10 @@
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; arrow/optimized/UriFile.c.ll
+; boost/optimized/environment.ll
+; boost/optimized/ext.ll
+; boost/optimized/process.ll
+; boost/optimized/search_path.ll
 ; clap-rs/optimized/5651dp9k16h53y8x.ll
 ; cmake/optimized/Glob.cxx.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -89,7 +93,6 @@
 ; llvm/optimized/MCObjectStreamer.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
 ; llvm/optimized/PrintPreprocessedOutput.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainSummaryManager.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
@@ -144,13 +147,8 @@
 ; sentencepiece/optimized/time.cc.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f32_classify.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64_r_minMag.ll
-; spike/optimized/f64_classify.ll
 ; spike/optimized/f64_to_i64_r_minMag.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; vcpkg/optimized/parse.cpp.ll

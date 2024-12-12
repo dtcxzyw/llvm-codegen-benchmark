@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
 	.zero	2
 	.zero	2
 	.zero	2

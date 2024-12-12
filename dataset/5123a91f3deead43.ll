@@ -1,5 +1,5 @@
 
-; 1017 occurrences:
+; 1013 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -8,7 +8,6 @@
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcGen.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -123,6 +122,9 @@
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/rational.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/btConvexHullShape.ll
 ; bullet3/optimized/btDbvtBroadphase.ll
@@ -365,7 +367,6 @@
 ; llvm/optimized/IntegerLiteralSeparatorFixer.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
@@ -376,6 +377,10 @@
 ; lua/optimized/ltable.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_tileview.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached-thread.ll
 ; memcached/optimized/memcached_debug-memcached.ll
@@ -391,7 +396,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -528,7 +532,6 @@
 ; opencv/optimized/compat_ptsetreg.cpp.ll
 ; opencv/optimized/contours_common.cpp.ll
 ; opencv/optimized/conv_depthwise.cpp.ll
-; opencv/optimized/convhull.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/copy.cpp.ll
@@ -673,7 +676,6 @@
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; opencv/optimized/solvepnp.cpp.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
-; opencv/optimized/speech_recognition.cpp.ll
 ; opencv/optimized/sqpnp.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
@@ -743,7 +745,6 @@
 ; openmpi/optimized/ad_aggregate_new.ll
 ; openmpi/optimized/ad_darray.ll
 ; openmpi/optimized/ad_io_coll.ll
-; openmpi/optimized/bcast.ll
 ; openmpi/optimized/check_monitoring.ll
 ; openmpi/optimized/coll_base_allgather.ll
 ; openmpi/optimized/coll_base_allgatherv.ll
@@ -767,17 +768,14 @@
 ; openmpi/optimized/coll_han_scatter.ll
 ; openmpi/optimized/coll_han_topo.ll
 ; openmpi/optimized/coll_sm_bcast.ll
-; openmpi/optimized/coll_sm_component.ll
 ; openmpi/optimized/comm_ft_detector.ll
 ; openmpi/optimized/comm_ft_reliable_bcast.ll
 ; openmpi/optimized/common_ompio_aggregators.ll
 ; openmpi/optimized/group_bitmap.ll
-; openmpi/optimized/group_strided.ll
 ; openmpi/optimized/hook_comm_method_fns.ll
 ; openmpi/optimized/k-partitioning.ll
 ; openmpi/optimized/libmpi_c_profile_la-dims_create.ll
 ; openmpi/optimized/libprrte_la-routed_radix.ll
-; openmpi/optimized/monitoring_test.ll
 ; openmpi/optimized/nbc_iallgatherv.ll
 ; openmpi/optimized/nbc_iallreduce.ll
 ; openmpi/optimized/nbc_ialltoall.ll
@@ -788,12 +786,10 @@
 ; openmpi/optimized/netpatterns_knomial_tree.ll
 ; openmpi/optimized/netpatterns_nary_tree.ll
 ; openmpi/optimized/ompi_datatype_create_darray.ll
-; openmpi/optimized/ompi_mpi_preconnect.ll
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/osc_rdma_peer.ll
 ; openmpi/optimized/pmix_pointer_array.ll
 ; openmpi/optimized/test_overhead.ll
-; openmpi/optimized/test_pvar_access.ll
 ; openmpi/optimized/tm_kpartitioning.ll
 ; openmpi/optimized/tm_solution.ll
 ; openmpi/optimized/tm_thread_pool.ll
@@ -900,7 +896,6 @@
 ; postgres/optimized/partbounds.ll
 ; postgres/optimized/print.ll
 ; postgres/optimized/rangetypes_typanalyze.ll
-; postgres/optimized/sharedtuplestore.ll
 ; postgres/optimized/spgdoinsert.ll
 ; postgres/optimized/ts_typanalyze.ll
 ; postgres/optimized/tuplesort.ll
@@ -982,7 +977,6 @@
 ; wireshark/optimized/packet-mswsp.c.ll
 ; wireshark/optimized/packet-olsr.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; wireshark/optimized/packet-spnego.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
@@ -1010,6 +1004,8 @@
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_dense_diff_logic.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; zxing/optimized/BitMatrix.cpp.ll

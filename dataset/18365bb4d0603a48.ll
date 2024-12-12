@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; git/optimized/date.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/io_apic.ll
 ; llvm/optimized/Descriptor.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; ruby/optimized/ruby.ll
 ; ruby/optimized/utf_16_32.ll

@@ -35,33 +35,23 @@ func0000000000000029:                   # @func0000000000000029
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI4_0:
-	.long	128                             # 0x80
-.LCPI4_1:
 	.long	1                               # 0x1
-func0000000000000013:                   # @func0000000000000013
-	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
+func0000000000000007:                   # @func0000000000000007
+	vptestnmd	%ymm1, %ymm1, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpbroadcastd	.LCPI4_1(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
+	vpbroadcastd	.LCPI4_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpsubd	%ymm2, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 .LCPI5_0:
-	.long	2                               # 0x2
-func0000000000000020:                   # @func0000000000000020
-	vpcmpnleud	.LCPI5_0(%rip){1to8}, %ymm1, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm1 {%k1}
-	vmovdqa	%ymm1, %ymm0
-	retq
-.LCPI6_0:
 	.long	11                              # 0xb
-.LCPI6_1:
+.LCPI5_1:
 	.long	2                               # 0x2
 func000000000000002a:                   # @func000000000000002a
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
-	vpbroadcastd	.LCPI6_0(%rip), %ymm1   # ymm1 = [11,11,11,11,11,11,11,11]
-	vpaddd	.LCPI6_1(%rip){1to8}, %ymm0, %ymm1 {%k1}
+	vpbroadcastd	.LCPI5_0(%rip), %ymm1   # ymm1 = [11,11,11,11,11,11,11,11]
+	vpaddd	.LCPI5_1(%rip){1to8}, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 func0000000000000028:                   # @func0000000000000028
@@ -69,6 +59,18 @@ func0000000000000028:                   # @func0000000000000028
 	vpsubd	%ymm2, %ymm0, %ymm0
 	vpsrad	$31, %ymm1, %ymm1
 	vpandn	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI7_0:
+	.long	1                               # 0x1
+.LCPI7_1:
+	.long	2654435768                      # 0x9e3779b8
+.LCPI7_2:
+	.long	2654435769                      # 0x9e3779b9
+func0000000000000020:                   # @func0000000000000020
+	vpcmpnleud	.LCPI7_0(%rip){1to8}, %ymm1, %k1
+	vpbroadcastd	.LCPI7_1(%rip), %ymm1   # ymm1 = [2654435768,2654435768,2654435768,2654435768,2654435768,2654435768,2654435768,2654435768]
+	vpaddd	.LCPI7_2(%rip){1to8}, %ymm0, %ymm1 {%k1}
+	vmovdqa	%ymm1, %ymm0
 	retq
 .LCPI8_0:
 	.long	2                               # 0x2

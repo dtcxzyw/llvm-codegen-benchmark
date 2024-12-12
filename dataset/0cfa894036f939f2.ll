@@ -1,9 +1,10 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/amapUniq.c.ll
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
+; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/intel_pch_refclk.ll
@@ -50,7 +51,7 @@ define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 0, i32 2
   %.masked = and i32 %0, -1073741825
-  %3 = or i32 %2, %.masked
+  %3 = or i32 %.masked, %2
   ret i32 %3
 }
 

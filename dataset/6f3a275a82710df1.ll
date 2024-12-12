@@ -14,7 +14,7 @@ define i32 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %sext = add nsw i32 %1, -1
-  %2 = add i32 %sext, %0
+  %2 = add i32 %0, %sext
   ret i32 %2
 }
 

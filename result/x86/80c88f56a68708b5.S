@@ -1,4 +1,4 @@
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	movl	%esi, %eax
 	orl	%edi, %eax
 	cmpl	$65536, %eax                    # imm = 0x10000
@@ -7,7 +7,7 @@ func0000000000000102:                   # @func0000000000000102
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000000c2:                   # @func00000000000000c2
+func0000000000000182:                   # @func0000000000000182
 	movl	%esi, %eax
 	orl	%edi, %eax
 	sets	%cl

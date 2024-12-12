@@ -1,12 +1,12 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000d:                   # @func000000000000000d
 	movzwl	%si, %eax
 	subl	%edi, %eax
 	incl	%eax
 	retq
-func000000000000000d:                   # @func000000000000000d
+func000000000000000c:                   # @func000000000000000c
 	movzwl	%si, %eax
 	subl	%edi, %eax
-	addl	$4800, %eax                     # imm = 0x12C0
+	incl	%eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movzwl	%si, %eax

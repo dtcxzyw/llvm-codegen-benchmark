@@ -1,6 +1,5 @@
 
-; 212 occurrences:
-; c3c/optimized/decltable.c.ll
+; 211 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; hermes/optimized/CFG.cpp.ll
@@ -217,7 +216,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

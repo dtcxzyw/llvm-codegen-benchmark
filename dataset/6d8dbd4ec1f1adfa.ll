@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 64 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; cpython/optimized/instrumentation.ll
@@ -34,6 +34,7 @@
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
+; llvm/optimized/SveEmitter.cpp.ll
 ; llvm/optimized/TemplateBase.cpp.ll
 ; llvm/optimized/TpiStreamBuilder.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
@@ -61,12 +62,14 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
 ; z3/optimized/smt_consequences.cpp.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -310,11 +313,11 @@ define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1048576
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 79 occurrences:
+; 80 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -322,6 +325,7 @@ entry:
 ; libquic/optimized/url_parse.cc.ll
 ; llvm/optimized/ARMException.cpp.ll
 ; llvm/optimized/EHStreamer.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -399,11 +403,11 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 290 occurrences:
+; 289 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -612,7 +616,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -699,11 +702,11 @@ define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 4
   %3 = zext nneg i32 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
-; 1054 occurrences:
+; 1053 occurrences:
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BlockScopingTransformations.cpp.ll
@@ -1451,7 +1454,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1763,7 +1765,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -1778,7 +1780,7 @@ define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -48
   %3 = zext nneg i32 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -1793,7 +1795,7 @@ define i64 @func0000000000000009(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -1812,7 +1814,7 @@ define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -1823,7 +1825,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -1834,7 +1836,7 @@ define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -1845,7 +1847,7 @@ define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -48
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

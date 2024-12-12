@@ -7,7 +7,7 @@
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = icmp sgt i64 %2, 16
@@ -18,7 +18,7 @@ entry:
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; z3/optimized/euf_proof.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003da(i64 %0, i64 %1) #0 {
+define i1 @func00000000000007aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = icmp sgt i64 %2, 16
@@ -38,14 +38,15 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
+; cvc5/optimized/core_solver.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = and i64 %2, 2305843009213693952
@@ -56,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/pack.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000028a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000050a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %.mask = and i64 %2, 2147483648

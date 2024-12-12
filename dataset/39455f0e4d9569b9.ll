@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 20 occurrences:
 ; actix-rs/optimized/1a89q5mj3jl9opyq.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -16,8 +16,12 @@
 ; wasmtime-rs/optimized/4cnvf14b3xea7eab.ll
 ; wasmtime-rs/optimized/4hvnupd8slkxulls.ll
 ; wasmtime-rs/optimized/lin3yywv836im8d.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/4539sm9s3e94vv18ffp5lvtyk.ll
+; zed-rs/optimized/9ld5vmlj2ufuzyru6e6aorg0l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000302(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %1, %2
   %4 = icmp eq i8 %3, 0

@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; icu/optimized/ucnv_lmb.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; quantlib/optimized/analyticcapfloorengine.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i8 %1, i16 %2) #0 {

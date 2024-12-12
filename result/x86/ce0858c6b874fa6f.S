@@ -89,21 +89,6 @@ func0000000000000048:                   # @func0000000000000048
 	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
-.LCPI14_0:
-	.long	0x59000000                      # float 2.25179981E+15
-func0000000000000043:                   # @func0000000000000043
-	vmaxss	%xmm1, %xmm0, %xmm0
-	vucomiss	.LCPI14_0(%rip), %xmm0
-	setb	%al
-	retq
-.LCPI15_0:
-	.long	0x26000000                      # float 4.4408921E-16
-func0000000000000045:                   # @func0000000000000045
-	vmaxss	%xmm1, %xmm0, %xmm0
-	vmovss	.LCPI15_0(%rip), %xmm1          # xmm1 = [4.4408921E-16,0.0E+0,0.0E+0,0.0E+0]
-	vucomiss	%xmm0, %xmm1
-	setb	%al
-	retq
 func000000000000002b:                   # @func000000000000002b
 	vmaxss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -116,11 +101,11 @@ func0000000000000047:                   # @func0000000000000047
 	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
-.LCPI18_0:
+.LCPI16_0:
 	.long	0x3ba3d70a                      # float 0.00499999989
 func000000000000004a:                   # @func000000000000004a
 	vmaxss	%xmm1, %xmm0, %xmm0
-	vmovss	.LCPI18_0(%rip), %xmm1          # xmm1 = [4.99999989E-3,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI16_0(%rip), %xmm1          # xmm1 = [4.99999989E-3,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm0, %xmm1
 	setae	%al
 	retq

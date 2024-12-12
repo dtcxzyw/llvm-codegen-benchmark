@@ -18,19 +18,6 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; git/optimized/commit.ll
-; libquic/optimized/a_type.c.ll
-; ocio/optimized/CategoryHelpers.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
-entry:
-  %2 = icmp eq i32 %0, 0
-  %3 = select i1 %1, i1 true, i1 %2
-  %4 = select i1 %3, i32 %0, i32 -1
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind

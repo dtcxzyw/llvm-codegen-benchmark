@@ -5,7 +5,7 @@ func0000000000000009:                   # @func0000000000000009
 	vor.vv	v10, v8, v10
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	li	a0, 64
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmsltu.vx	v0, v12, a0

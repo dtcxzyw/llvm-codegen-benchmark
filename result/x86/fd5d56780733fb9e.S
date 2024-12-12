@@ -4,6 +4,12 @@ func0000000000000000:                   # @func0000000000000000
 	shlxq	%rdx, %rsi, %rax
 	imulq	%rdi, %rax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	andb	$1, %dl
+	xorb	$3, %dl
+	shlxq	%rdx, %rsi, %rax
+	imulq	%rdi, %rax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	xorl	%eax, %eax
 	testb	$1, %dl

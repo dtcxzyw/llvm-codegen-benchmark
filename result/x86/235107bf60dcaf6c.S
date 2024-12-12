@@ -1,11 +1,11 @@
 func0000000000000001:                   # @func0000000000000001
 	movq	%rdi, %rax
 	movslq	%esi, %rcx
-	movabsq	$1749024623285053783, %rdx      # imm = 0x1845C8A0CE512957
+	movabsq	$3667970486771497111, %rdx      # imm = 0x32E73FB956A1B897
 	imulq	%rdx
 	movq	%rdx, %rax
 	shrq	$63, %rax
-	sarq	$13, %rdx
+	sarq	$34, %rdx
 	addq	%rdx, %rax
 	addq	%rcx, %rax
 	retq

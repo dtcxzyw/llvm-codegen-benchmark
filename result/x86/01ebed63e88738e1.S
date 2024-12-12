@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	notb	%sil
 	testb	$3, %sil
 	sete	%cl
@@ -7,22 +7,21 @@ func0000000000000011:                   # @func0000000000000011
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
-	notb	%sil
-	testb	$31, %sil
-	sete	%cl
-	testl	$1023, %edi                     # imm = 0x3FF
-	setne	%al
-	andb	%cl, %al
-	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	shrl	$12, %esi
 	andl	$1, %esi
 	testb	$1, %dil
 	sete	%al
 	andb	%sil, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000002c:                   # @func000000000000002c
+	testb	$1, %sil
+	sete	%cl
+	testb	%dil, %dil
+	sets	%al
+	andb	%cl, %al
+	retq
+func000000000000018c:                   # @func000000000000018c
 	movl	%esi, %eax
 	shrl	$8, %eax
 	andl	%edi, %eax

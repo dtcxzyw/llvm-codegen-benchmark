@@ -23,12 +23,12 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002e(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -320
   %3 = ashr i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 1384448
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1384448
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -36,12 +36,12 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 159
   %3 = ashr i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 1384448
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1384448
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -106,12 +106,12 @@ entry:
 ; postgres/optimized/catcache.ll
 ; postgres/optimized/heaptuple.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = ashr i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 23
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 23
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }

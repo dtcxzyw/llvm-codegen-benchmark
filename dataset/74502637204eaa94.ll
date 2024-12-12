@@ -11,7 +11,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/area.ll
 ; openjdk/optimized/oopMapCache.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001e(i32 %0) #0 {

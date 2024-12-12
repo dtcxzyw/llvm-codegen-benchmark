@@ -1,5 +1,5 @@
 
-; 100 occurrences:
+; 98 occurrences:
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -63,8 +63,6 @@
 ; gromacs/optimized/sim_util.cpp.ll
 ; gromacs/optimized/slasd5.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/thermochemistry.cpp.ll
 ; gromacs/optimized/topshake.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll

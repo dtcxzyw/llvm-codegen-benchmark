@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	sbbl	%eax, %eax
 	orl	$1, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	xorl	%eax, %eax
 	testl	$4194304, %edi                  # imm = 0x400000
 	sete	%al

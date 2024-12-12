@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.2513929" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2513930", i64, %union.anon.2513931 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2513930" = type { ptr }
-%union.anon.2513931 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2629050" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2629051", i64, %union.anon.2629052 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2629051" = type { ptr }
+%union.anon.2629052 = type { i64, [8 x i8] }
 
 ; 27 occurrences:
 ; abc/optimized/utilIsop.c.ll
@@ -40,18 +40,17 @@ entry:
   ret ptr %4
 }
 
-; 142 occurrences:
+; 134 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/utilIsop.c.ll
-; arrow/optimized/builder_adaptive.cc.ll
 ; arrow/optimized/light_array.cc.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/integrator.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; casadi/optimized/sundials_interface.cpp.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; cmake/optimized/json_value.cpp.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
@@ -60,8 +59,6 @@ entry:
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/psaux.c.ll
-; freetype/optimized/pshinter.c.ll
-; freetype/optimized/truetype.c.ll
 ; git/optimized/xmerge.ll
 ; gromacs/optimized/andersentemperaturecoupling.cpp.ll
 ; gromacs/optimized/basicoptions.cpp.ll
@@ -103,7 +100,6 @@ entry:
 ; hdf5/optimized/H5Tconv_reference.c.ll
 ; hdf5/optimized/H5Tconv_vlen.c.ll
 ; hermes/optimized/String.cpp.ll
-; hermes/optimized/escape.cpp.ll
 ; icu/optimized/dictionarydata.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/ubidiwrt.ll
@@ -115,12 +111,16 @@ entry:
 ; icu/optimized/usprep.ll
 ; icu/optimized/ustrcase.ll
 ; icu/optimized/ustrtrns.ll
-; icu/optimized/utext.ll
 ; jq/optimized/execute.ll
-; libevent/optimized/buffer.c.ll
-; libwebp/optimized/lossless_enc_sse2.c.ll
 ; libwebp/optimized/muxread.c.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; oiio/optimized/environment.cpp.ll
@@ -151,23 +151,16 @@ entry:
 ; openjdk/optimized/UshortGray.ll
 ; openjdk/optimized/UshortIndexed.ll
 ; openjdk/optimized/X11FontScaler_md.ll
-; openjdk/optimized/cdsProtectionDomain.ll
 ; openjdk/optimized/filemap.ll
-; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/registerMap_x86.ll
-; openjdk/optimized/runtime.ll
 ; openmpi/optimized/opal_free_list.ll
 ; openmpi/optimized/test_overhead.ll
-; openssl/optimized/libcrypto-lib-cms_smime.ll
-; openssl/optimized/libcrypto-shlib-cms_smime.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
 ; openusd/optimized/cpuEvaluator.cpp.ll
 ; openusd/optimized/lz4.cpp.ll
 ; openusd/optimized/mvref_common.c.ll
-; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/reformat.c.ll
 ; openusd/optimized/tbbKernel.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; php/optimized/zend_inference.ll
@@ -180,13 +173,48 @@ entry:
 ; tinympc/optimized/quadrotor_hovering.cpp.ll
 ; tinympc/optimized/quadrotor_tracking.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
-; z3/optimized/mpz_matrix.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000041(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %"class.std::__cxx11::basic_string.2513929", ptr %0, i64 %1
+  %2 = getelementptr nusw %"class.std::__cxx11::basic_string.2629050", ptr %0, i64 %1
+  %3 = icmp eq ptr %0, null
+  %4 = select i1 %3, ptr null, ptr %2
+  ret ptr %4
+}
+
+; 26 occurrences:
+; arrow/optimized/builder_adaptive.cc.ll
+; cmake/optimized/json_value.cpp.ll
+; faiss/optimized/IndexIVFFastScan.cpp.ll
+; freetype/optimized/ftbase.c.ll
+; freetype/optimized/pshinter.c.ll
+; freetype/optimized/truetype.c.ll
+; gromacs/optimized/filenameoption.cpp.ll
+; hermes/optimized/String.cpp.ll
+; hermes/optimized/escape.cpp.ll
+; icu/optimized/ucnv_bld.ll
+; icu/optimized/ustrtrns.ll
+; icu/optimized/utext.ll
+; libevent/optimized/buffer.c.ll
+; libwebp/optimized/lossless_enc_sse2.c.ll
+; lz4/optimized/lz4.c.ll
+; openjdk/optimized/cdsProtectionDomain.ll
+; openjdk/optimized/javaClasses.ll
+; openjdk/optimized/runtime.ll
+; openssl/optimized/libcrypto-lib-cms_smime.ll
+; openssl/optimized/libcrypto-shlib-cms_smime.ll
+; openssl/optimized/libtestutil-lib-format_output.ll
+; openusd/optimized/openexr-c.c.ll
+; openusd/optimized/reformat.c.ll
+; tinympc/optimized/admm.cpp.ll
+; tinympc/optimized/tiny_api.cpp.ll
+; z3/optimized/mpz_matrix.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000061(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, ptr null, ptr %2
   ret ptr %4

@@ -1,42 +1,34 @@
-func0000000000000031:                   # @func0000000000000031
-	addl	$24, %edi
-	shrl	$3, %edi
-	incl	%edi
-	testb	$3, %dil
+func0000000000000061:                   # @func0000000000000061
+	movl	$7, %eax
+	subl	%edi, %eax
+	testb	$24, %al
 	sete	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
-	decl	%edi
-	shrl	%edi
-	incl	%edi
-	testb	$7, %dil
+func0000000000000141:                   # @func0000000000000141
+	negl	%edi
+	testb	$14, %dil
+	sete	%al
+	retq
+func0000000000000041:                   # @func0000000000000041
+	negl	%edi
+	testb	$14, %dil
+	sete	%al
+	retq
+func0000000000000121:                   # @func0000000000000121
+	addl	$7, %edi
+	andl	$248, %edi
+	cmpl	$8, %edi
 	sete	%al
 	retq
 func0000000000000021:                   # @func0000000000000021
-	decl	%edi
-	shrl	%edi
-	incl	%edi
-	testb	$7, %dil
-	sete	%al
-	retq
-func0000000000000091:                   # @func0000000000000091
 	addl	$7, %edi
-	shrl	$3, %edi
-	decl	%edi
-	testb	$31, %dil
+	andl	$248, %edi
+	cmpl	$8, %edi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	addl	$7, %edi
-	shrl	$3, %edi
-	decl	%edi
-	testb	$31, %dil
-	sete	%al
-	retq
-func00000000000000b1:                   # @func00000000000000b1
-	addl	$24, %edi
-	shrl	$3, %edi
-	incl	%edi
-	testb	$3, %dil
+func0000000000000161:                   # @func0000000000000161
+	movl	$7, %eax
+	subl	%edi, %eax
+	testb	$24, %al
 	sete	%al
 	retq

@@ -1,4 +1,4 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	movabsq	$4503599627370496, %rcx         # imm = 0x10000000000000
 	xorl	%eax, %eax
 	cmpq	%rcx, %rdi
@@ -11,7 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	sbbl	$0, %esi
 	leal	2(%rsi), %eax
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	leal	573372(%rsi), %ecx
 	leal	719468(%rsi), %eax
 	movabsq	$-62162121600000000, %rdx       # imm = 0xFF2327E1378C2000

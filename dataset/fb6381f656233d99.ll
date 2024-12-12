@@ -1,14 +1,17 @@
 
-%"struct.OT::LongMetric.2617236" = type { %"struct.OT::IntType.2617237", %"struct.OT::IntType.145.2617238" }
-%"struct.OT::IntType.2617237" = type { %struct.BEInt.2617239 }
-%struct.BEInt.2617239 = type { [2 x i8] }
-%"struct.OT::IntType.145.2617238" = type { %struct.BEInt.146.2617240 }
-%struct.BEInt.146.2617240 = type { [2 x i8] }
-%"struct.OT::IntType.139.2623439" = type { %struct.BEInt.140.2623440 }
-%struct.BEInt.140.2623440 = type { [2 x i8] }
-%struct.dt_iop_tonecurve_node_t.2760901 = type { float, float }
+%"struct.OT::LongMetric.2730688" = type { %"struct.OT::IntType.2730689", %"struct.OT::IntType.145.2730690" }
+%"struct.OT::IntType.2730689" = type { %struct.BEInt.2730691 }
+%struct.BEInt.2730691 = type { [2 x i8] }
+%"struct.OT::IntType.145.2730690" = type { %struct.BEInt.146.2730692 }
+%struct.BEInt.146.2730692 = type { [2 x i8] }
+%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
+%struct.BEInt.140.2736870 = type { [2 x i8] }
+%struct.object_slot.2821745 = type { i32, i32, %struct.jv.2821743, %struct.jv.2821743 }
+%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
+%union.anon.2821744 = type { ptr }
+%struct.dt_iop_tonecurve_node_t.2873179 = type { float, float }
 
-; 13 occurrences:
+; 11 occurrences:
 ; clamav/optimized/pathfn.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/lzma_encoder.c.ll
@@ -16,22 +19,20 @@
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; jq/optimized/jv.ll
 ; meshlab/optimized/apss.cpp.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
-; redis/optimized/cluster_legacy.ll
-; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw [1 x %"struct.OT::LongMetric.2617236"], ptr %0, i64 0, i64 %1
-  %5 = getelementptr nusw %"struct.OT::IntType.145.2617238", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw [1 x %"struct.OT::LongMetric.2730688"], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.145.2730690", ptr %4, i64 %3
   ret ptr %5
 }
 
-; 43 occurrences:
+; 34 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -57,30 +58,34 @@ entry:
 ; cmake/optimized/lzma_encoder.c.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
-; darktable/optimized/introspection_rgbcurve.c.ll
-; darktable/optimized/introspection_tonecurve.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; nori/optimized/nanovg.c.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/stbImage.cpp.ll
-; pbrt-v4/optimized/stbimage.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [1 x %"struct.OT::IntType.139.2623439"], ptr %0, i64 0, i64 %1
-  %5 = getelementptr nusw %"struct.OT::IntType.139.2623439", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw [1 x %"struct.OT::IntType.139.2736869"], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.139.2736869", ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 3 occurrences:
+; jq/optimized/jv.ll
+; redis/optimized/cluster_legacy.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw [0 x %struct.object_slot.2821745], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -89,11 +94,11 @@ entry:
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; gromacs/optimized/grid.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2760901]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr nusw %struct.dt_iop_tonecurve_node_t.2760901, ptr %4, i64 %3
+  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw nuw %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -114,8 +119,28 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2760901]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2760901, ptr %4, i64 %3
+  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 10 occurrences:
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_rgbcurve.c.ll
+; darktable/optimized/introspection_tonecurve.c.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw nuw %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -127,8 +152,8 @@ entry:
 define ptr @func0000000000000018(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2760901]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2760901, ptr %4, i64 %3
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
   ret ptr %5
 }
 

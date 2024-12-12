@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; icu/optimized/ubidi.ll
 ; linux/optimized/cypress_ps2.ll
 ; linux/optimized/drm_dp_helper.ll
@@ -8,6 +8,8 @@
 ; linux/optimized/tcp.ll
 ; linux/optimized/tdls.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
+; minetest/optimized/mapblock_mesh.cpp.ll
+; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; Function Attrs: nounwind

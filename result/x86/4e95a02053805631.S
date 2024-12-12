@@ -1,19 +1,12 @@
-func000000000000001b:                   # @func000000000000001b
-	cmpl	%edi, %edx
-	setle	%cl
-	testq	%rsi, %rsi
-	sete	%al
-	orb	%cl, %al
-	retq
-func0000000000000011:                   # @func0000000000000011
-	cmpl	%edi, %edx
+func0000000000000021:                   # @func0000000000000021
+	cmpl	%edx, %edi
 	sete	%cl
 	testq	%rsi, %rsi
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
-	cmpl	%edi, %edx
+func000000000000002c:                   # @func000000000000002c
+	cmpl	%edx, %edi
 	setne	%cl
 	testq	%rsi, %rsi
 	sete	%al

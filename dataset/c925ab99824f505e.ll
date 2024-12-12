@@ -1,5 +1,5 @@
 
-; 245 occurrences:
+; 239 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/giaDup.c.ll
@@ -45,7 +45,6 @@
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
-; hermes/optimized/JSLexer.cpp.ll
 ; hermes/optimized/String.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/collationbuilder.ll
@@ -85,7 +84,6 @@
 ; linux/optimized/insn-eval.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/intel_tcc.ll
 ; linux/optimized/pci-acpi.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/skl_scaler.ll
@@ -106,7 +104,6 @@
 ; llvm/optimized/CGPointerAuth.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -124,7 +121,6 @@
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; node/optimized/libnode.string_bytes.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; ocio/optimized/GpuShaderUtils.cpp.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
@@ -199,7 +195,6 @@
 ; postgres/optimized/pg_lzcompress.ll
 ; postgres/optimized/pg_lzcompress_shlib.ll
 ; postgres/optimized/pg_lzcompress_srv.ll
-; postgres/optimized/rangetypes_gist.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/hw_input_hid.c.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
@@ -233,7 +228,6 @@
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; wireshark/optimized/packet-autosar-ipdu-multiplexer.c.ll
-; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_bcd.cpp.ll
@@ -254,7 +248,7 @@ entry:
   ret i64 %4
 }
 
-; 65 occurrences:
+; 64 occurrences:
 ; abc/optimized/darLib.c.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
@@ -287,11 +281,9 @@ entry:
 ; linux/optimized/slub.ll
 ; linux/optimized/step.ll
 ; linux/optimized/super.ll
-; linux/optimized/sys_ia32.ll
 ; linux/optimized/taskstats.ll
 ; linux/optimized/timer.ll
 ; llvm/optimized/ASTWriter.cpp.ll
-; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
@@ -320,6 +312,7 @@ entry:
 ; z3/optimized/sat_simplifier.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
@@ -329,12 +322,13 @@ entry:
   ret i64 %4
 }
 
-; 26 occurrences:
+; 42 occurrences:
 ; c3c/optimized/asm_target.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
+; glslang/optimized/GlslangToSpv.cpp.ll
 ; linux/optimized/drm_file.ll
 ; linux/optimized/drm_ioc32.ll
 ; linux/optimized/drm_ioctl.ll
@@ -351,6 +345,21 @@ entry:
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
@@ -365,7 +374,7 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; linux/optimized/xhci-mem.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/CGObjCRuntime.cpp.ll
@@ -373,6 +382,7 @@ entry:
 ; llvm/optimized/SemaAttr.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
 ; mold/optimized/passes.cc.I386.cc.ll
 ; mold/optimized/passes.cc.LOONGARCH32.cc.ll

@@ -42,7 +42,7 @@ entry:
 ; proxygen/optimized/HeaderTable.cpp.ll
 ; regex-rs/optimized/33whcn8n29l9c6ys.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 255
   %3 = add nuw i64 %0, 1

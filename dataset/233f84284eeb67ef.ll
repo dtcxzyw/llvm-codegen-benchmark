@@ -46,10 +46,9 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; icu/optimized/islamcal.ll
 ; luau/optimized/loslib.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0) #0 {
 entry:

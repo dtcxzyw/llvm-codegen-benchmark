@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 71 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/cuddApprox.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
@@ -24,11 +24,14 @@
 ; jemalloc/optimized/tcache.sym.ll
 ; linux/optimized/cpu.ll
 ; linux/optimized/idt.ll
-; linux/optimized/iomap.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/netprio_cgroup.ll
 ; llvm/optimized/NativeFunctionSymbol.cpp.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_roller.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
@@ -62,6 +65,12 @@
 ; wireshark/optimized/packet-tls.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/packet-usbms-uasp.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/3qd92cr7jt80yrt25363ufvvn.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(ptr %0) #0 {
 entry:

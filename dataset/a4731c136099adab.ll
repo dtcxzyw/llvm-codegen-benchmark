@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; graphviz/optimized/post_process.c.ll
 ; gromacs/optimized/freeenergyparameters.cpp.ll
 ; hermes/optimized/Number.cpp.ll
@@ -7,7 +7,6 @@
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
-; openblas/optimized/dggbak.c.ll
 ; openblas/optimized/dlaeda.c.ll
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
@@ -24,14 +23,13 @@
 define i64 @func0000000000000001(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/sm_insolidangle.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; openspiel/optimized/negotiation.cc.ll
@@ -41,7 +39,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

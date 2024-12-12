@@ -7,26 +7,26 @@
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/facemarkAAM.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001e4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = ashr exact i64 %1, 3
   %6 = sub nuw nsw i64 %4, %5
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/redistribute.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 2
   %4 = sext i32 %3 to i64
   %5 = ashr exact i64 %1, 2
   %6 = sub nuw nsw i64 %4, %5
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 

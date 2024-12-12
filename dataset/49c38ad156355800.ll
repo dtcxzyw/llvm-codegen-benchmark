@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; mixbox/optimized/mixbox.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i8 %0, i8 %1) #0 {

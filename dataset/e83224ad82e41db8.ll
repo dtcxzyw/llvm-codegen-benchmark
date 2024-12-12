@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; graphviz/optimized/spring_electrical.c.ll
 ; gromacs/optimized/colvar.cpp.ll
@@ -7,7 +7,6 @@
 ; gromacs/optimized/pme_error.cpp.ll
 ; gromacs/optimized/restcbt.cpp.ll
 ; openblas/optimized/dlarrc.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openjdk/optimized/cmspcs.ll
 ; postgres/optimized/float.ll
 ; proj/optimized/aitoff.cpp.ll
@@ -30,7 +29,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fdiv double %4, %0
   ret double %5
 }

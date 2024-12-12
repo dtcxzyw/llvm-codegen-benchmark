@@ -33,7 +33,7 @@ entry:
 define float @func000000000000000a(float %0, float %1, i1 %2) #0 {
 entry:
   %3 = fcmp ole float %0, 1.000000e+00
-  %4 = and i1 %3, %2
+  %4 = and i1 %2, %3
   %5 = select i1 %4, float %0, float %1
   ret float %5
 }

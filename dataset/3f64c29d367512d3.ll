@@ -1,11 +1,9 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
-; clamav/optimized/js-norm.c.ll
 ; linux/optimized/exconvrt.ll
 ; linux/optimized/intel_migrate.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
-; postgres/optimized/oracle_compat.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i8 %1) #0 {
 entry:
@@ -15,11 +13,13 @@ entry:
   ret i32 %4
 }
 
-; 161 occurrences:
+; 159 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/parseEqn.c.ll
 ; abc/optimized/saigSynch.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; c3c/optimized/sema_decls.c.ll
 ; cmake/optimized/ftplistparser.c.ll
 ; cmake/optimized/xmltok.c.ll
@@ -56,7 +56,6 @@ entry:
 ; linux/optimized/gen8_engine_cs.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/intel_bios.ll
-; linux/optimized/intel_dsi.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/policy.ll
@@ -106,9 +105,7 @@ entry:
 ; openjdk/optimized/vectorIntrinsics.ll
 ; openmpi/optimized/coll_base_util.ll
 ; openssl/optimized/libcrypto-lib-bio_print.ll
-; openssl/optimized/libcrypto-lib-ct_sct.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
-; openssl/optimized/libcrypto-shlib-ct_sct.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; openusd/optimized/testUsdImagingStageSceneIndexContents.cpp.ll
@@ -125,7 +122,6 @@ entry:
 ; postgres/optimized/json.ll
 ; postgres/optimized/jsonb.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/jsonpath_exec.ll
@@ -186,7 +182,7 @@ entry:
   ret i32 %4
 }
 
-; 21 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
@@ -195,11 +191,9 @@ entry:
 ; abseil-cpp/optimized/cordz_info.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; chibicc/optimized/tokenize.ll
-; freetype/optimized/autofit.c.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/ExprClassification.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; protobuf/optimized/message_lite.cc.ll
 ; protobuf/optimized/zero_copy_stream.cc.ll
 ; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
@@ -211,9 +205,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, 91
-  %3 = select i1 %2, i32 218103808, i32 234881024
-  %4 = select i1 %0, i32 201326592, i32 %3
+  %2 = icmp ult i8 %1, 6
+  %3 = select i1 %2, i32 -87, i32 -55
+  %4 = select i1 %0, i32 -48, i32 %3
   ret i32 %4
 }
 
@@ -226,6 +220,29 @@ entry:
   %2 = icmp sgt i8 %1, 64
   %3 = select i1 %2, i32 -55, i32 -48
   %4 = select i1 %0, i32 -87, i32 %3
+  ret i32 %4
+}
+
+; 2 occurrences:
+; clamav/optimized/js-norm.c.ll
+; postgres/optimized/oracle_compat.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i1 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i8 %1, 64
+  %3 = select i1 %2, i32 -29, i32 -48
+  %4 = select i1 %0, i32 -87, i32 %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; freetype/optimized/autofit.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i1 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ult i8 %1, -16
+  %3 = select i1 %2, i32 15, i32 7
+  %4 = select i1 %0, i32 31, i32 %3
   ret i32 %4
 }
 

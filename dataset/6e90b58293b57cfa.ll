@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 64 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; casadi/optimized/serializing_stream.cpp.ll
 ; clamav/optimized/explode.c.ll
@@ -30,6 +30,7 @@
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_math.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
 ; nuttx/optimized/lib_dumpvbuffer.c.ll
@@ -71,10 +72,12 @@ entry:
   ret i8 %2
 }
 
-; 26 occurrences:
+; 28 occurrences:
+; abc/optimized/bacBlast.c.ll
+; abc/optimized/bacCom.c.ll
+; abc/optimized/bacNtk.c.ll
 ; abc/optimized/bacWriteBlif.c.ll
 ; abc/optimized/bacWriteVer.c.ll
-; libquic/optimized/util-64.c.ll
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
@@ -106,11 +109,12 @@ entry:
   ret i8 %2
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; cmake/optimized/lzma2_decoder.c.ll
 ; icu/optimized/ucnv2022.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/intel_reset.ll
+; lvgl/optimized/lv_math.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; spike/optimized/kadd8.ll
 ; spike/optimized/ksub8.ll

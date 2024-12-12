@@ -1,7 +1,8 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; darktable/optimized/introspection_ashift.c.ll
+; hermes/optimized/DateUtil.cpp.ll
 ; php/optimized/zend_operators.ll
 ; stat-rs/optimized/u5boppws0o3vklz.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll

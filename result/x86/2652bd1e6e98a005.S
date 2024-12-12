@@ -4,13 +4,28 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	cmpq	$1, %rsi
 	sete	%al
 	andb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	cmpq	$1, %rsi
+	sete	%al
+	andb	%dil, %al
+	retq
+func000000000000004c:                   # @func000000000000004c
+	testq	%rsi, %rsi
+	setne	%al
+	andb	%dil, %al
+	retq
+func000000000000006c:                   # @func000000000000006c
+	testq	%rsi, %rsi
+	setne	%al
+	andb	%dil, %al
+	retq
+func0000000000000041:                   # @func0000000000000041
+	testq	%rsi, %rsi
 	sete	%al
 	andb	%dil, %al
 	retq

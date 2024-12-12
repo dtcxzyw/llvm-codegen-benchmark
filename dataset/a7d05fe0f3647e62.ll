@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -8,7 +8,6 @@
 ; cpython/optimized/assemble.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; slurm/optimized/ebpf.ll
 ; stockfish/optimized/search.ll
 ; wireshark/optimized/packet-c1222.c.ll
 ; yosys/optimized/mutate.ll

@@ -3,6 +3,6 @@ func0000000000000001:                   # @func0000000000000001
 	imulq	%rax, %rdx
 	xorq	%rsi, %rdx
 	imulq	%rax, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq

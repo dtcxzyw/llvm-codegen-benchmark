@@ -5,13 +5,6 @@ func0000000000000004:                   # @func0000000000000004
 	seta	%al
 	xorb	%dil, %al
 	retq
-.LCPI1_0:
-	.long	0x7f800000                      # float +Inf
-func0000000000000007:                   # @func0000000000000007
-	vucomiss	.LCPI1_0(%rip), %xmm0
-	setb	%al
-	xorb	%dil, %al
-	retq
 func0000000000000001:                   # @func0000000000000001
 	vucomiss	%xmm0, %xmm0
 	setp	%al
@@ -29,18 +22,27 @@ func000000000000000d:                   # @func000000000000000d
 	setbe	%al
 	xorb	%dil, %al
 	retq
-.LCPI5_0:
+.LCPI4_0:
 	.long	0x34000000                      # float 1.1920929E-7
 func000000000000000b:                   # @func000000000000000b
-	vucomiss	.LCPI5_0(%rip), %xmm0
+	vucomiss	.LCPI4_0(%rip), %xmm0
 	setbe	%al
 	xorb	%dil, %al
 	retq
-.LCPI6_0:
+.LCPI5_0:
 	.long	0x7f800000                      # float +Inf
 func0000000000000008:                   # @func0000000000000008
-	vucomiss	.LCPI6_0(%rip), %xmm0
+	vucomiss	.LCPI5_0(%rip), %xmm0
 	setae	%al
+	xorb	%dil, %al
+	retq
+.LCPI6_0:
+	.long	0x7f61b1e6                      # float 3.00000001E+38
+func0000000000000007:                   # @func0000000000000007
+	vucomiss	.LCPI6_0(%rip), %xmm0
+	setp	%cl
+	setne	%al
+	orb	%cl, %al
 	xorb	%dil, %al
 	retq
 func0000000000000003:                   # @func0000000000000003

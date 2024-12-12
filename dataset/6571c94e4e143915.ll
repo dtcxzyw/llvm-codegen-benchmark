@@ -22,13 +22,14 @@ entry:
   ret { i64, ptr } %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; llvm/optimized/Sanitizers.cpp.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:

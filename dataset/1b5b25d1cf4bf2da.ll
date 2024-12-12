@@ -5,11 +5,11 @@
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/graphKit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = xor i32 %2, 1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = icmp sgt i32 %4, 255
   ret i1 %5
 }
@@ -19,7 +19,7 @@ entry:
 ; openjdk/optimized/graphKit.ll
 ; openjdk/optimized/library_call.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = sub i32 0, %0
@@ -35,7 +35,7 @@ define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = xor i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp ugt i32 %4, 5
   ret i1 %5
 }
@@ -130,11 +130,11 @@ entry:
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = xor i32 %2, 1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = icmp slt i32 %4, 1
   ret i1 %5
 }
@@ -175,19 +175,19 @@ entry:
 ; abc/optimized/abcReconv.c.ll
 ; abc/optimized/ivyCut.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = xor i32 %2, 1
-  %4 = add nuw nsw i32 %3, %0
-  %5 = icmp ult i32 %4, 2
+  %4 = add nuw nsw i32 %0, %3
+  %5 = icmp samesign ult i32 %4, 2
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; git/optimized/range-diff.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = xor i32 %2, 1

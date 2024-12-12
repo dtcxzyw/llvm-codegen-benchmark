@@ -3,7 +3,7 @@
 ; cmake/optimized/archive_cryptor.c.ll
 ; openssl/optimized/libdefault-lib-drbg_hash.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, -1
   %3 = icmp eq i64 %0, 0
@@ -15,7 +15,7 @@ entry:
 ; cmake/optimized/nghttp2_http.c.ll
 ; nghttp2/optimized/nghttp2_http.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000144(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -58
   %3 = icmp ult i8 %2, -10
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -58
   %3 = icmp ult i8 %2, -10
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/cuesheet.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000148(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -58
   %3 = icmp ult i8 %2, -10
@@ -53,7 +53,7 @@ entry:
 ; hyperscan/optimized/rose_build_matchers.cpp.ll
 ; libquic/optimized/internal_linux.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -58
   %3 = icmp ult i8 %2, -10
@@ -67,7 +67,7 @@ entry:
 ; redis/optimized/read.ll
 ; redis/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -58
   %3 = icmp ult i8 %2, -10

@@ -7,9 +7,9 @@
 ; openssl/optimized/libcrypto-shlib-e_chacha20_poly1305.ll
 ; openssl/optimized/libdefault-lib-cipher_chacha20_hw.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000063(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %0, %1
+  %2 = icmp samesign ugt i64 %0, %1
   %3 = select i1 %2, i64 %1, i64 0
   %4 = sub nuw nsw i64 %0, %3
   ret i64 %4
@@ -54,9 +54,12 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 5 occurrences:
 ; hdf5/optimized/H5LD.c.ll
 ; redis/optimized/db.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
 entry:
@@ -110,19 +113,6 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; cpython/optimized/obmalloc.ll
-; mimalloc/optimized/bitmap.c.ll
-; redis/optimized/sds.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ult i64 %1, %0
-  %3 = select i1 %2, i64 %1, i64 0
-  %4 = sub i64 %0, %3
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
@@ -131,6 +121,18 @@ entry:
   %2 = icmp sgt i64 %0, %1
   %3 = select i1 %2, i64 %1, i64 0
   %4 = sub nsw i64 %0, %3
+  ret i64 %4
+}
+
+; 2 occurrences:
+; cpython/optimized/obmalloc.ll
+; mimalloc/optimized/bitmap.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ult i64 %1, %0
+  %3 = select i1 %2, i64 %1, i64 0
+  %4 = sub i64 %0, %3
   ret i64 %4
 }
 

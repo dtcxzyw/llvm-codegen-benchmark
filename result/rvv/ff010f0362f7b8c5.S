@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	8619973866219416643             # 0x77a04c8f8d28ac43
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -10,7 +10,7 @@ func0000000000000031:                   # @func0000000000000031
 	vmul.vx	v8, v8, a0
 	vmseq.vv	v0, v10, v8
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 3
@@ -22,7 +22,7 @@ func0000000000000038:                   # @func0000000000000038
 	vmul.vx	v8, v8, a0
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 3
@@ -34,7 +34,7 @@ func0000000000000034:                   # @func0000000000000034
 	vmul.vx	v8, v8, a0
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 3
@@ -46,7 +46,7 @@ func0000000000000074:                   # @func0000000000000074
 	vmul.vx	v8, v8, a0
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	li	a0, 63
@@ -58,7 +58,7 @@ func0000000000000014:                   # @func0000000000000014
 	vsra.vi	v8, v8, 2
 	vmsltu.vv	v0, v10, v8
 	ret
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 2

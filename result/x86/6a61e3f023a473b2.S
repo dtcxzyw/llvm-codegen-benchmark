@@ -1,4 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
@@ -7,7 +7,7 @@ func0000000000000088:                   # @func0000000000000088
 	cmpq	$78125, %rcx                    # imm = 0x1312D
 	setae	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
@@ -15,7 +15,7 @@ func0000000000000081:                   # @func0000000000000081
 	testq	%rcx, %rcx
 	sete	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx

@@ -21,15 +21,8 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func0000000000000007:                   # @func0000000000000007
 	subq	%rdx, %rsi
-	leaq	8192(%rsi), %rcx
-	testb	$1, %dil
-	movl	$8192, %eax                     # imm = 0x2000
-	cmovneq	%rcx, %rax
-	retq
-func0000000000000003:                   # @func0000000000000003
-	subq	%rdx, %rsi
 	leaq	1(%rsi), %rcx
 	testb	$1, %dil
-	movl	$33, %eax
+	movl	$1, %eax
 	cmovneq	%rcx, %rax
 	retq

@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 73 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaPf.c.ll
 ; abc/optimized/mpmDsd.c.ll
@@ -33,6 +33,7 @@
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meshoptimizer/optimized/spatialorder.cpp.ll
 ; node/optimized/libnode.string_bytes.ll
 ; openjdk/optimized/c1_GraphBuilder.ll
@@ -76,12 +77,12 @@
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %4, 1619000832
   ret i32 %5
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; flac/optimized/bitreader.c.ll
 ; git/optimized/path.ll
@@ -102,6 +103,7 @@ entry:
 ; luajit/optimized/buildvm_fold.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
@@ -132,7 +134,8 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 17 occurrences:
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/kitCloud.c.ll
 ; git/optimized/rebase.ll
@@ -144,6 +147,7 @@ entry:
 ; luajit/optimized/lj_dispatch_dyn.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll

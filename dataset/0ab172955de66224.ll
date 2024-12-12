@@ -5,7 +5,7 @@
 ; php/optimized/scanf.ll
 ; postgres/optimized/selfuncs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %.not = icmp sgt i32 %1, %0
   %2 = select i1 %.not, i32 %0, i32 0

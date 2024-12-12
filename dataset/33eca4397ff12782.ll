@@ -18,7 +18,7 @@ entry:
   ret i64 %1
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; entt/optimized/adjacency_matrix.cpp.ll
 ; llvm/optimized/Attributes.cpp.ll
@@ -27,7 +27,6 @@ entry:
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; openusd/optimized/avif.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0) #0 {
 entry:

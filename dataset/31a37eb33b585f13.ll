@@ -7,7 +7,7 @@
 ; re2/optimized/nfa.cc.ll
 ; re2/optimized/prog.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000026(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp slt i32 %0, 1
@@ -44,7 +44,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wolfssl/optimized/pkcs12.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq i32 %0, 0
@@ -63,7 +63,7 @@ entry:
 ; php/optimized/zend_inference.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, ptr %1) #0 {
+define i1 @func000000000000002a(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp sgt i32 %0, -1
@@ -76,7 +76,7 @@ entry:
 ; linux/optimized/dm-table.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, ptr %1) #0 {
+define i1 @func000000000000002c(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ne i32 %0, 0
@@ -89,7 +89,7 @@ entry:
 ; hyperscan/optimized/gtest-all.cc.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000186(i32 %0, ptr %1) #0 {
 entry:
   %.not = icmp eq ptr %1, null
   %2 = icmp slt i32 %0, 0
@@ -102,7 +102,7 @@ entry:
 ; hyperscan/optimized/gtest-all.cc.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000181(i32 %0, ptr %1) #0 {
 entry:
   %.not = icmp eq ptr %1, null
   %2 = icmp eq i32 %0, 0
@@ -113,7 +113,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/socket.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000038(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ugt i32 %0, 128

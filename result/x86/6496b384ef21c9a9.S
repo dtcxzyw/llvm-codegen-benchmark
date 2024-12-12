@@ -13,14 +13,6 @@ func0000000000000006:                   # @func0000000000000006
 	movl	$2, %eax
 	cmovgel	%ecx, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	xorl	%ecx, %ecx
-	testb	$1, %sil
-	cmovel	%edx, %ecx
-	cmpl	$-1085, %edi                    # imm = 0xFBC3
-	movl	$53, %eax
-	cmovll	%ecx, %eax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%ecx, %ecx
 	testb	$1, %sil
@@ -44,4 +36,28 @@ func000000000000000c:                   # @func000000000000000c
 	testl	%edi, %edi
 	movl	$4, %eax
 	cmovel	%ecx, %eax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	testb	$1, %sil
+	movl	$6, %ecx
+	cmovel	%edx, %ecx
+	cmpl	$100, %edi
+	movl	$5, %eax
+	cmovll	%ecx, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	testb	$1, %sil
+	movl	$947912704, %ecx                # imm = 0x38800000
+	cmovel	%edx, %ecx
+	cmpl	$1199570944, %edi               # imm = 0x47800000
+	movl	$31744, %eax                    # imm = 0x7C00
+	cmovbl	%ecx, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	testb	$1, %sil
+	movl	$2, %ecx
+	cmovel	%edx, %ecx
+	cmpl	$128, %edi
+	movl	$1, %eax
+	cmovael	%ecx, %eax
 	retq

@@ -36,7 +36,7 @@
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -48,12 +48,12 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp slt i64 %3, %1
+  %4 = icmp sgt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 18 occurrences:
+; 16 occurrences:
 ; gromacs/optimized/minimize.cpp.ll
 ; libzmq/optimized/socks.cpp.ll
 ; linux/optimized/exec.ll
@@ -66,33 +66,28 @@ entry:
 ; llvm/optimized/DynamicType.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; openjdk/optimized/check_classname.ll
-; qemu/optimized/accel_tcg_tb-maint.c.ll
 ; qemu/optimized/migration_ram.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2251799813685240
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 19 occurrences:
+; 16 occurrences:
 ; cpython/optimized/instrumentation.ll
 ; cvc5/optimized/sygus_unif_io.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
 ; git/optimized/log.ll
 ; gromacs/optimized/biassharing.cpp.ll
-; linux/optimized/fib_trie.ll
 ; linux/optimized/iterator.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/rimls.cpp.ll
@@ -102,10 +97,10 @@ entry:
 ; slurm/optimized/gres_select_filter.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp samesign ult i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -118,32 +113,43 @@ entry:
 define i1 @func0000000000000006(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
-  %4 = icmp sgt i64 %3, %1
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 2 occurrences:
-; cvc5/optimized/quant_conflict_find.cpp.ll
-; llvm/optimized/StackProtector.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4611686018427387903
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
 ; 3 occurrences:
+; linux/optimized/fib_trie.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/MachineVerifier.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4611686018427387903
+  %4 = icmp ult i64 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/StackProtector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4611686018427387903
+  %4 = icmp uge i64 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; freetype/optimized/autofit.c.ll
-; linux/optimized/hugetlb.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp samesign ugt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -154,7 +160,29 @@ entry:
 define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp ule i64 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/hugetlb.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -1073741824
+  %4 = icmp ugt i64 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; cvc5/optimized/quant_conflict_find.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 1099511627775
+  %4 = icmp samesign uge i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

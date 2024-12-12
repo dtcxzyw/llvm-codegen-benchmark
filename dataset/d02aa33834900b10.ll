@@ -1,7 +1,8 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
+; boost/optimized/approximately_equals.ll
 ; cvc5/optimized/Solver.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -25,7 +26,7 @@
 define double @func0000000000000000(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   %4 = fptrunc double %3 to float
   %5 = fpext float %4 to double
   ret double %5

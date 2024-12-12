@@ -10,10 +10,11 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/cuddInteract.c.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {

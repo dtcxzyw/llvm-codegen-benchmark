@@ -1,9 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
-	movabsq	$2749786553155, %rax            # imm = 0x2803C0CFB43
-	movq	%rdi, %rcx
-	andq	%rax, %rcx
+	movabsq	$2749786553155, %rcx            # imm = 0x2803C0CFB43
+	leaq	65536(%rcx), %rax
 	testl	%esi, %esi
-	cmovneq	%rdi, %rcx
-	orq	$65536, %rax                    # imm = 0x10000
-	andq	%rcx, %rax
+	cmoveq	%rcx, %rax
+	andq	%rdi, %rax
 	retq

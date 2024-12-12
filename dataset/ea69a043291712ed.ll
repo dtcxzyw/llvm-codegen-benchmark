@@ -10,8 +10,8 @@
 define i64 @func0000000000000008(i64 %0) #0 {
 entry:
   %notsub = add i64 %0, -1
-  %1 = icmp ult i64 %notsub, -36000000000
-  %2 = select i1 %1, i64 2, i64 1
+  %1 = icmp ult i64 %notsub, -3600000000000000
+  %2 = select i1 %1, i64 7, i64 6
   ret i64 %2
 }
 

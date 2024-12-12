@@ -45,12 +45,13 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; entt/optimized/dense_map.cpp.ll
 ; entt/optimized/dense_set.cpp.ll
 ; entt/optimized/meta_any.cpp.ll
 ; entt/optimized/meta_type.cpp.ll
 ; entt/optimized/registry.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(float %0, float %1, i32 %2) #0 {
 entry:

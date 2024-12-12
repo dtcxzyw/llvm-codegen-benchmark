@@ -1,8 +1,10 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; cmake/optimized/idna.c.ll
 ; libuv/optimized/idna.c.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; mold/optimized/rust-demangle.c.ll
 ; nanosvg/optimized/nanosvg.ll

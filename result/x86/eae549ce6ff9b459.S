@@ -1,3 +1,9 @@
+func0000000000000004:                   # @func0000000000000004
+	orl	%edx, %esi
+	cmpb	$26, %dil
+	setb	%al
+	orb	%sil, %al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	orl	%edx, %esi
 	testb	%dil, %dil

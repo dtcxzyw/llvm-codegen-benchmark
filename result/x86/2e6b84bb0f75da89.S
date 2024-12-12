@@ -15,8 +15,8 @@ func000000000000000d:                   # @func000000000000000d
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movzwl	%si, %eax
-	notq	%rdi
-	addq	%rdi, %rax
+	subq	%rdi, %rax
+	incq	%rax
 	retq
 func0000000000000017:                   # @func0000000000000017
 	movzwl	%si, %eax

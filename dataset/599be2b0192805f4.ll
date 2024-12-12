@@ -1,5 +1,6 @@
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -170,17 +171,18 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c08(i32 %0, i64 %1, i128 %2) #0 {
+define i1 @func0000000000001808(i32 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw nsw i128 %2 to i64
   %4 = mul i64 %3, 4294966296
   %5 = add i64 %4, %1
   %6 = trunc i64 %5 to i32
-  %7 = icmp ult i32 %6, %0
+  %7 = icmp ugt i32 %0, %6
   ret i1 %7
 }
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -351,13 +353,13 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c04(i32 %0, i64 %1, i128 %2) #0 {
+define i1 @func0000000000001804(i32 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw nsw i128 %2 to i64
   %4 = mul i64 %3, 4294966296
   %5 = add i64 %4, %1
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %6, %0
+  %7 = icmp ult i32 %0, %6
   ret i1 %7
 }
 

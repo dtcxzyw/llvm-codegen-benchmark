@@ -1,4 +1,4 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	addq	%rsi, %rdi
 	testb	$1, %dl
 	movl	$53, %eax
@@ -8,7 +8,7 @@ func0000000000000081:                   # @func0000000000000081
 	testl	%eax, %eax
 	sete	%al
 	retq
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	addq	%rsi, %rdi
 	testb	$1, %dl
 	movl	$53, %eax

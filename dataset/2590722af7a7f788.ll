@@ -1,9 +1,10 @@
 
-; 130 occurrences:
+; 147 occurrences:
 ; actix-rs/optimized/1rfb1t3n8679w74r.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
@@ -108,6 +109,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
+; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
 ; typst-rs/optimized/377uk5tkmxagdt0q.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
@@ -122,14 +124,29 @@
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-gtpv2.c.ll
 ; wireshark/optimized/packet-isakmp.c.ll
-; wireshark/optimized/packet-its.c.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; wireshark/optimized/packet-pvfs2.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
-; wireshark/optimized/radcom.c.ll
 ; wireshark/optimized/voip_calls_info_model.cpp.ll
 ; xgboost/optimized/charconv.cc.ll
+; zed-rs/optimized/0l5q95ei94dcvnozucoiwn5qf.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1crfyvugkk4dx3liwlfw00ptd.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/8ssoz06l7e5x2c5xnrblffvll.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/c4c7jl64zv8zhv2ne6xdvhty4.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i32 %0) #0 {
 entry:
@@ -150,7 +167,7 @@ entry:
   ret i16 %2
 }
 
-; 103 occurrences:
+; 129 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaEmbed.c.ll
@@ -163,6 +180,10 @@ entry:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
+; boost/optimized/src.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
@@ -245,6 +266,7 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tokenizers-rs/optimized/1ve5rid4048y19bt.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
+; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
 ; typst-rs/optimized/377uk5tkmxagdt0q.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
@@ -253,6 +275,27 @@ entry:
 ; wireshark/optimized/packet-gvcp.c.ll
 ; wireshark/optimized/packet-nasdaq-itch.c.ll
 ; xgboost/optimized/charconv.cc.ll
+; zed-rs/optimized/0l5q95ei94dcvnozucoiwn5qf.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1crfyvugkk4dx3liwlfw00ptd.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/8ssoz06l7e5x2c5xnrblffvll.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/c4c7jl64zv8zhv2ne6xdvhty4.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i32 %0) #0 {
@@ -262,8 +305,15 @@ entry:
   ret i16 %2
 }
 
-; 13 occurrences:
+; 20 occurrences:
 ; abc/optimized/ifDsd.c.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; cpython/optimized/_datetimemodule.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; linux/optimized/lib.ll

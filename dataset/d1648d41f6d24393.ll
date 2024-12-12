@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 80 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
@@ -8,6 +8,8 @@
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
@@ -21,7 +23,6 @@
 ; linux/optimized/trace_events_filter.ll
 ; linux/optimized/uncore.ll
 ; llama.cpp/optimized/llama.cpp.ll
-; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/Mangler.cpp.ll
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
@@ -47,7 +48,6 @@
 ; openspiel/optimized/chess_board.cc.ll
 ; openspiel/optimized/rbc.cc.ll
 ; postgres/optimized/catcache.ll
-; postgres/optimized/char.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
 ; qemu/optimized/migration_xbzrle.c.ll
 ; qemu/optimized/target_riscv_pmp.c.ll
@@ -76,15 +76,19 @@
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wolfssl/optimized/test.c.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp eq i8 %0, %2
   ret i1 %3
 }
 
-; 35 occurrences:
+; 33 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; hermes/optimized/SourceMgr.cpp.ll
 ; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
@@ -113,22 +117,20 @@ entry:
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
-; postgres/optimized/char.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/ukadd8.ll
 ; spike/optimized/vssubu_vx.ll
-; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
 ; wireshark/optimized/erf.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = icmp ugt i8 %2, %0
+  %3 = icmp ult i8 %0, %2
   ret i1 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
@@ -147,12 +149,11 @@ entry:
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; postgres/optimized/char.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = icmp ule i8 %2, %0
+  %3 = icmp uge i8 %0, %2
   ret i1 %3
 }
 
@@ -160,10 +161,10 @@ entry:
 ; hyperscan/optimized/rose_build_groups.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i8
-  %3 = icmp ugt i8 %2, %0
+  %3 = icmp ult i8 %0, %2
   ret i1 %3
 }
 
@@ -172,10 +173,10 @@ entry:
 ; llvm/optimized/blake3.c.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i8
-  %3 = icmp ult i8 %2, %0
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 
@@ -184,59 +185,44 @@ entry:
 ; ropey-rs/optimized/2p9nf7n6i9ycxebu.ll
 ; wireshark/optimized/packet-gsm_cbch.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i8
-  %3 = icmp ugt i8 %2, %0
+  %3 = icmp ult i8 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; ropey-rs/optimized/2p9nf7n6i9ycxebu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i8
-  %3 = icmp ult i8 %2, %0
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 
-; 19 occurrences:
+; 5 occurrences:
 ; actix-rs/optimized/1rfb1t3n8679w74r.ll
-; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
-; hyperscan/optimized/ng_limex_accel.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
-; libquic/optimized/hpack_huffman_table.cc.ll
-; linux/optimized/fib_trie.ll
-; linux/optimized/intel_bw.ll
-; llvm/optimized/MicrosoftDemangle.cpp.ll
-; llvm/optimized/RISCVBaseInfo.cpp.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
-; postgres/optimized/char.ll
-; postgres/optimized/hyperloglog.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; spike/optimized/uksub8.ll
-; tls-rs/optimized/49b6dhrgmsskmdw3.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; verilator/optimized/V3Options.cpp.ll
-; wireshark/optimized/packet-xip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = icmp ult i8 %2, %0
+  %3 = icmp samesign ugt i8 %0, %2
   ret i1 %3
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; linux/optimized/forcedeth.ll
 ; nlohmann_json/optimized/unit-bson.cpp.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
 ; openspiel/optimized/chess_board.cc.ll
-; postgres/optimized/char.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; wasmedge/optimized/formchecker.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
@@ -244,7 +230,7 @@ entry:
 define i1 @func000000000000000c(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = icmp ne i8 %2, %0
+  %3 = icmp ne i8 %0, %2
   ret i1 %3
 }
 
@@ -255,7 +241,7 @@ entry:
 define i1 @func000000000000000a(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = icmp slt i8 %2, %0
+  %3 = icmp sgt i8 %0, %2
   ret i1 %3
 }
 
@@ -268,7 +254,7 @@ entry:
 define i1 @func0000000000000006(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = icmp sgt i8 %2, %0
+  %3 = icmp slt i8 %0, %2
   ret i1 %3
 }
 
@@ -280,10 +266,33 @@ entry:
 ; node/optimized/libnode.string_decoder.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i8
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp eq i8 %0, %2
+  ret i1 %3
+}
+
+; 14 occurrences:
+; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
+; hyperscan/optimized/ng_limex_accel.cpp.ll
+; hyperscan/optimized/rose_build_program.cpp.ll
+; libquic/optimized/hpack_huffman_table.cc.ll
+; linux/optimized/fib_trie.ll
+; linux/optimized/intel_bw.ll
+; llvm/optimized/MicrosoftDemangle.cpp.ll
+; llvm/optimized/RISCVBaseInfo.cpp.ll
+; postgres/optimized/hyperloglog.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; spike/optimized/uksub8.ll
+; tls-rs/optimized/49b6dhrgmsskmdw3.ll
+; verilator/optimized/V3Options.cpp.ll
+; wireshark/optimized/packet-xip.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i8 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i8
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 
@@ -291,20 +300,20 @@ entry:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; cpython/optimized/mpdecimal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i8
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp eq i8 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
-; postgres/optimized/char.ll
+; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = icmp uge i8 %2, %0
+  %3 = icmp samesign ult i8 %0, %2
   ret i1 %3
 }
 

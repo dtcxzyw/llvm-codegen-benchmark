@@ -22,7 +22,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 22
   %3 = and i32 %2, 4194304
   %.masked = and i32 %0, -126877952
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   %5 = or disjoint i32 %4, 18
   ret i32 %5
 }
@@ -36,7 +36,7 @@ entry:
   %2 = shl i32 %1, 18
   %3 = and i32 %2, 1310720
   %.masked = and i32 %0, -31981569
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   %5 = or disjoint i32 %4, 2097152
   ret i32 %5
 }
@@ -49,7 +49,7 @@ entry:
   %2 = shl i32 %1, 26
   %3 = and i32 %2, 67108864
   %.masked = and i32 %0, -33751045
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   %5 = or disjoint i32 %4, 33685504
   ret i32 %5
 }

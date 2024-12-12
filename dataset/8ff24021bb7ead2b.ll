@@ -1,9 +1,11 @@
 
-; 30 occurrences:
+; 35 occurrences:
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; diesel-rs/optimized/6cb7zukciz78xvw.ll
+; ockam-rs/optimized/y59h8jnu9k73im6.ll
+; rust-analyzer-rs/optimized/150tm5mq81nfdpak.ll
 ; rust-analyzer-rs/optimized/1f55n198c3xcwe5h.ll
 ; rust-analyzer-rs/optimized/1wws471dcmaaem6a.ll
 ; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
@@ -30,6 +32,9 @@
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define { i32, i32 } @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:

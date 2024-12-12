@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	imull	$23593, %esi, %eax              # imm = 0x5C29
 	rorw	$2, %ax
 	movzwl	%ax, %eax
@@ -6,7 +6,7 @@ func0000000000000042:                   # @func0000000000000042
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	imull	$23593, %esi, %eax              # imm = 0x5C29
 	rorw	$2, %ax
 	movzwl	%ax, %eax

@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 19 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; just-rs/optimized/3fhxcueg488gjpka.ll
@@ -12,6 +12,13 @@
 ; rust-analyzer-rs/optimized/vux7x0s1st8za9f.ll
 ; rust-analyzer-rs/optimized/yi4ld7f3458brcr.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
+; zed-rs/optimized/13pr1pzdsvcd15h9bn5oaps4z.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/78nr3ruxuq6h5rfkaolnxa52k.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8yy2zhy2bdzv8bn57pipvxcw7.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

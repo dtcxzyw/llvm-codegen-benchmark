@@ -1,14 +1,16 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; hyperscan/optimized/multi.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; luau/optimized/ConstantFolding.cpp.ll
+; lvgl/optimized/lv_slider.ll
 ; minetest/optimized/game.cpp.ll
 ; ocio/optimized/ImageDesc.cpp.ll
 ; rust-analyzer-rs/optimized/wcknfmhk1hydgx3.ll
 ; velox/optimized/ExprToSubfieldFilter.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
@@ -29,12 +31,13 @@ entry:
   ret i8 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; regex-rs/optimized/12jtvy3iayrg5nam.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
-  %2 = icmp sgt i64 %1, -9223372036854775807
+  %2 = icmp sgt i64 %1, -1
   %3 = select i1 %2, i1 %0, i1 false
   %4 = zext i1 %3 to i8
   ret i8 %4

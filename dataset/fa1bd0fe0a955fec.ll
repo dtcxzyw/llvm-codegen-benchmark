@@ -1,18 +1,17 @@
 
-; 8 occurrences:
+; 7 occurrences:
+; boost/optimized/numeric.ll
 ; coreutils-rs/optimized/2fxrwnovw97v41kk.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
-; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
 ; postgres/optimized/copy.ll
 ; postgres/optimized/print.ll
 ; rocksdb/optimized/db_iter.cc.ll
-; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -38,7 +37,7 @@ entry:
 define i1 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

@@ -5,7 +5,7 @@
 ; ceres/optimized/covariance_impl.cc.ll
 ; opencv/optimized/guided_filter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0) #0 {
+define i1 @func00000000000000aa(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
   %2 = mul nsw i32 %1, %0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0) #0 {
+define i1 @func00000000000000a4(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -2
   %2 = mul nsw i32 %1, %0
@@ -28,7 +28,7 @@ entry:
 ; abc/optimized/abcGen.c.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0) #0 {
+define i1 @func00000000000000a6(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = mul nsw i32 %1, %0
@@ -52,7 +52,7 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0) #0 {
+define i1 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1
   %2 = mul nsw i32 %1, %0

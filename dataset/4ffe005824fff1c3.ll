@@ -4,7 +4,7 @@
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; openjdk/optimized/jquant1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = freeze i32 %3
@@ -18,7 +18,7 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = freeze i32 %3

@@ -24,9 +24,8 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; brotli/optimized/encode.c.ll
-; libquic/optimized/ecdsa_asn1.c.ll
 ; linux/optimized/memory.ll
 ; openssl/optimized/libssl-lib-ssl_cert_comp.ll
 ; openssl/optimized/libssl-shlib-ssl_cert_comp.ll
@@ -42,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/memory.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp ult i64 %3, %0

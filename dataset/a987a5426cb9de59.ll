@@ -1,6 +1,5 @@
 
-; 10 occurrences:
-; imgui/optimized/imgui_widgets.cpp.ll
+; 9 occurrences:
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/skl_universal_plane.ll
 ; llvm/optimized/COFFAsmParser.cpp.ll
@@ -45,7 +44,7 @@ entry:
 define i32 @func0000000000000002(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 7, i32 5
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or i32 %4, 16384
   %6 = select i1 %0, i32 %5, i32 %4
   ret i32 %6

@@ -1,4 +1,72 @@
 
+; 59 occurrences:
+; abc/optimized/giaFalse.c.ll
+; abc/optimized/giaMinLut.c.ll
+; abc/optimized/giaSatLE.c.ll
+; abc/optimized/sbdCore.c.ll
+; abc/optimized/wlcBlast.c.ll
+; clamav/optimized/pe_icons.c.ll
+; darktable/optimized/ArwDecoder.cpp.ll
+; darktable/optimized/DngOpcodes.cpp.ll
+; darktable/optimized/OrfDecoder.cpp.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; libwebp/optimized/tiffdec.c.ll
+; linux/optimized/drm_plane.ll
+; linux/optimized/hda_codec.ll
+; linux/optimized/intel_gt.ll
+; linux/optimized/intel_rps.ll
+; linux/optimized/tcp_input.ll
+; linux/optimized/virtio_ring.ll
+; lua/optimized/ltable.ll
+; lvgl/optimized/lv_demo_render.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_avx2.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; ncnn/optimized/convolution_x86_xop.cpp.ll
+; ncnn/optimized/deformableconv2d_x86.cpp.ll
+; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
+; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
+; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
+; nori/optimized/warptest.cpp.ll
+; nuklear/optimized/unity.c.ll
+; opencv/optimized/apriltag_quad_thresh.cpp.ll
+; opencv/optimized/daisy.cpp.ll
+; opencv/optimized/kinfu_frame.cpp.ll
+; opencv/optimized/omnidir.cpp.ll
+; opencv/optimized/padding_layer.cpp.ll
+; opencv/optimized/pyramids.cpp.ll
+; opencv/optimized/simpleflow.cpp.ll
+; openjdk/optimized/CUPSfuncs.ll
+; openjdk/optimized/check_code.ll
+; openjdk/optimized/jvmciCompilerToVMInit.ll
+; openspiel/optimized/quoridor.cc.ll
+; openusd/optimized/blend_a64_mask.c.ll
+; redis/optimized/config.ll
+; ruby/optimized/symbol.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; spike/optimized/vghsh_vv.ll
+; spike/optimized/vgmul_vv.ll
+; stb/optimized/stb_tilemap_editor.c.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
+; wireshark/optimized/packet-ieee80211.c.ll
+; wireshark/optimized/packet-nvme.c.ll
+; wireshark/optimized/packet-ubx.c.ll
+; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
+; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i64 %0) #0 {
+entry:
+  %.tr = trunc i64 %0 to i32
+  %1 = shl i32 %.tr, 4
+  ret i32 %1
+}
+
 ; 116 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/giaSatLE.c.ll
@@ -174,8 +242,9 @@ entry:
   ret i32 %1
 }
 
-; 30 occurrences:
+; 32 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
+; boost/optimized/src.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/sha1.cpp.ll
 ; clamav/optimized/sha256.cpp.ll
@@ -204,6 +273,7 @@ entry:
 ; spike/optimized/f32_rem.ll
 ; spike/optimized/s_mulAddF16.ll
 ; wireshark/optimized/toshiba.c.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
@@ -213,12 +283,11 @@ entry:
   ret i32 %1
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/giaExist.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/sfmDec.c.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; bullet3/optimized/b3GpuSapBroadphase.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; gromacs/optimized/gmx_dos.cpp.ll
@@ -260,71 +329,6 @@ entry:
 ; xgboost/optimized/socket.cc.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i64 %0) #0 {
-entry:
-  %.tr = trunc i64 %0 to i32
-  %1 = shl i32 %.tr, 1
-  ret i32 %1
-}
-
-; 56 occurrences:
-; abc/optimized/giaFalse.c.ll
-; abc/optimized/giaMinLut.c.ll
-; abc/optimized/giaSatLE.c.ll
-; abc/optimized/sbdCore.c.ll
-; abc/optimized/wlcBlast.c.ll
-; clamav/optimized/pe_icons.c.ll
-; darktable/optimized/ArwDecoder.cpp.ll
-; darktable/optimized/DngOpcodes.cpp.ll
-; darktable/optimized/OrfDecoder.cpp.ll
-; hyperscan/optimized/limex_compile.cpp.ll
-; libwebp/optimized/tiffdec.c.ll
-; linux/optimized/drm_plane.ll
-; linux/optimized/hda_codec.ll
-; linux/optimized/intel_gt.ll
-; linux/optimized/intel_rps.ll
-; linux/optimized/tcp_input.ll
-; linux/optimized/utids.ll
-; linux/optimized/virtio_ring.ll
-; lua/optimized/ltable.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
-; ncnn/optimized/deformableconv2d_x86.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
-; nori/optimized/warptest.cpp.ll
-; nuklear/optimized/unity.c.ll
-; opencv/optimized/apriltag_quad_thresh.cpp.ll
-; opencv/optimized/daisy.cpp.ll
-; opencv/optimized/kinfu_frame.cpp.ll
-; opencv/optimized/omnidir.cpp.ll
-; opencv/optimized/padding_layer.cpp.ll
-; opencv/optimized/pyramids.cpp.ll
-; opencv/optimized/simpleflow.cpp.ll
-; openjdk/optimized/CUPSfuncs.ll
-; openjdk/optimized/check_code.ll
-; openjdk/optimized/jvmciCompilerToVMInit.ll
-; openspiel/optimized/quoridor.cc.ll
-; openusd/optimized/blend_a64_mask.c.ll
-; redis/optimized/config.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
-; spike/optimized/vghsh_vv.ll
-; spike/optimized/vgmul_vv.ll
-; stb/optimized/stb_tilemap_editor.c.ll
-; wireshark/optimized/packet-ieee80211.c.ll
-; wireshark/optimized/packet-nvme.c.ll
-; wireshark/optimized/packet-ubx.c.ll
-; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
-; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i64 %0) #0 {
 entry:
   %.tr = trunc i64 %0 to i32
   %1 = shl i32 %.tr, 1

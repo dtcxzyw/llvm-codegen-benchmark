@@ -38,15 +38,15 @@ func0000000000000005:                   # @func0000000000000005
 	subq	%rax, %rdi
 	leaq	-2(%rdi), %rax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	movzbl	%sil, %eax
+	subq	%rax, %rdi
+	leaq	48(%rdi), %rax
+	retq
 func000000000000000f:                   # @func000000000000000f
 	movzbl	%sil, %eax
 	subq	%rax, %rdi
 	leaq	255(%rdi), %rax
-	retq
-func0000000000000010:                   # @func0000000000000010
-	movzbl	%sil, %eax
-	subq	%rax, %rdi
-	leaq	8(%rdi), %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movzbl	%sil, %eax

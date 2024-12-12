@@ -1,6 +1,5 @@
 
-; 38 occurrences:
-; abc/optimized/covMinUtil.c.ll
+; 37 occurrences:
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cvc5/optimized/arith_rewriter.cpp.ll
@@ -48,17 +47,28 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; 2 occurrences:
 ; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 125, i32 860
   %3 = select i1 %1, i32 132, i32 885
-  %4 = icmp ult i32 %0, 10
+  %4 = icmp samesign ult i32 %0, 10
+  %5 = select i1 %4, i32 %3, i32 %2
+  ret i32 %5
+}
+
+; 2 occurrences:
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i32 373, i32 372
+  %3 = select i1 %1, i32 375, i32 374
+  %4 = icmp ult i32 %0, 2
   %5 = select i1 %4, i32 %3, i32 %2
   ret i32 %5
 }

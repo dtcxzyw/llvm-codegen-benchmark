@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
@@ -16,6 +16,7 @@
 ; stb/optimized/stb_easy_font.c.ll
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1) #0 {
 entry:

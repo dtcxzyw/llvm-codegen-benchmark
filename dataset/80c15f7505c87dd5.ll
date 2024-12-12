@@ -1,9 +1,9 @@
 
-%struct._Bucket.2678537 = type { %struct._zval_struct.2678523, i64, ptr }
-%struct._zval_struct.2678523 = type { %union._zend_value.2678531, %union.anon.9.2678532, %union.anon.12.2678533 }
-%union._zend_value.2678531 = type { i64 }
-%union.anon.9.2678532 = type { i32 }
-%union.anon.12.2678533 = type { i32 }
+%struct._Bucket.2791473 = type { %struct._zval_struct.2791459, i64, ptr }
+%struct._zval_struct.2791459 = type { %union._zend_value.2791467, %union.anon.9.2791468, %union.anon.12.2791469 }
+%union._zend_value.2791467 = type { i64 }
+%union.anon.9.2791468 = type { i32 }
+%union.anon.12.2791469 = type { i32 }
 
 ; 21 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
@@ -28,13 +28,13 @@
 ; php/optimized/parse_tz.ll
 ; php/optimized/zend_inheritance.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000006f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw %struct._Bucket.2678537, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %struct._Bucket.2791473, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -55,26 +55,26 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000f2(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000f3(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw double, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw double, ptr %5, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000e2(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000e3(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw double, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw double, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -116,13 +116,13 @@ entry:
 ; hyperscan/optimized/stream_compress.c.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -133,13 +133,13 @@ entry:
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 

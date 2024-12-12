@@ -4,7 +4,7 @@
 ; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000004c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, ptr %0, ptr %1
@@ -25,7 +25,7 @@ entry:
 ; rust-analyzer-rs/optimized/7zmg1hi276ncg5y.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, ptr %0, ptr %1

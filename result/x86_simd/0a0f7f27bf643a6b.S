@@ -100,6 +100,6 @@ func000000000000003f:                   # @func000000000000003f
 	vpbroadcastd	.LCPI2_0(%rip), %ymm3   # ymm3 = [255,255,255,255,255,255,255,255]
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpmulld	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	retq

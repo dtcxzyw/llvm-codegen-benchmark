@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	2147483299                      # 0x7ffffea3
-func000000000000017a:                   # @func000000000000017a
+func00000000000002ea:                   # @func00000000000002ea
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k0

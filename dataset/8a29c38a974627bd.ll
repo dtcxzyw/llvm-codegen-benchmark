@@ -1,6 +1,7 @@
 
-; 132 occurrences:
+; 130 occurrences:
 ; abc/optimized/wlnRetime.c.ll
+; boost/optimized/parser_utils.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; clamav/optimized/filetypes.c.ll
 ; cmake/optimized/lzma_encoder_optimum_fast.c.ll
@@ -111,8 +112,6 @@
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rtextures.c.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
 ; ripgrep-rs/optimized/79zj4cmg2a4glb1.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
@@ -127,7 +126,6 @@
 ; wireshark/optimized/packet-erf.c.ll
 ; wireshark/optimized/packet-fc.c.ll
 ; wireshark/optimized/packet-http.c.ll
-; wireshark/optimized/packet-pw-atm.c.ll
 ; wireshark/optimized/packet-sip.c.ll
 ; yosys/optimized/simplify.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
@@ -192,24 +190,36 @@ entry:
   ret i1 %3
 }
 
-; 11 occurrences:
-; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
+; 1 occurrences:
+; qemu/optimized/hw_nvme_ctrl.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0) #0 {
+entry:
+  %1 = freeze i32 %0
+  %2 = add nsw i32 %1, -257
+  %3 = icmp samesign ult i32 %2, -256
+  ret i1 %3
+}
+
+; 12 occurrences:
+; boost/optimized/parser_utils.ll
 ; cpython/optimized/unicodeobject.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/ProcessImplicitDefs.cpp.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; php/optimized/html.ll
-; qemu/optimized/hw_nvme_ctrl.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
 ; rust-analyzer-rs/optimized/3nofq7oo06gx5fjm.ll
 ; tree-sitter-rs/optimized/2ysit6xak1d4lr67.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = add nsw i32 %1, -257
-  %3 = icmp ult i32 %2, -256
+  %2 = add nsw i32 %1, -32
+  %3 = icmp ult i32 %2, 55264
   ret i1 %3
 }
 
@@ -239,7 +249,7 @@ entry:
 ; openusd/optimized/matrix4d.cpp.ll
 ; openusd/optimized/matrix4f.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = icmp eq i32 %1, 2
@@ -255,11 +265,22 @@ entry:
 ; abc/optimized/giaMuxes.c.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = icmp eq i32 %1, -1
   ret i1 %2
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-pw-atm.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = freeze i32 %0
+  %2 = add i32 %1, -4
+  %3 = icmp samesign ult i32 %2, 48
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

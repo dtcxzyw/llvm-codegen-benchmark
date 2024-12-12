@@ -23,11 +23,6 @@ func000000000000007f:                   # @func000000000000007f
 	shlq	$32, %rdi
 	orq	%rdi, %rax
 	retq
-func0000000000000027:                   # @func0000000000000027
-	addl	%edx, %esi
-	movl	%edi, %eax
-	leaq	(%rsi,%rax,4), %rax
-	retq
 func000000000000002d:                   # @func000000000000002d
 	leal	(%rsi,%rdx), %eax
 	shlq	$32, %rdi

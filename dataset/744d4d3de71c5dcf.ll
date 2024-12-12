@@ -1,5 +1,5 @@
 
-; 1296 occurrences:
+; 1291 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBm.c.ll
@@ -86,7 +86,6 @@
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/sswSim.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; bullet3/optimized/b3BulletFile.ll
@@ -198,7 +197,6 @@
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/generic.ll
 ; linux/optimized/hash.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/inet_hashtables.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/ip6t_ipv6header.ll
@@ -803,7 +801,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -1138,19 +1135,16 @@
 ; openspiel/optimized/TransTableL.cpp.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-lib-ec_mult.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-md4_dgst.ll
 ; openssl/optimized/libcrypto-lib-ofb_enc.ll
 ; openssl/optimized/libcrypto-lib-rmd_dgst.ll
 ; openssl/optimized/libcrypto-lib-sm3.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-ec_mult.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-md4_dgst.ll
 ; openssl/optimized/libcrypto-shlib-ofb_enc.ll
 ; openssl/optimized/libcrypto-shlib-rmd_dgst.ll
 ; openssl/optimized/libcrypto-shlib-sm3.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -1217,7 +1211,6 @@
 ; vcpkg/optimized/hash.cpp.ll
 ; velox/optimized/md5.cpp.ll
 ; verilator/optimized/V3String.cpp.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/inet_cidr.c.ll
 ; wireshark/optimized/packet-autosar-nm.c.ll
 ; wireshark/optimized/packet-iso15765.c.ll
@@ -1294,13 +1287,15 @@
 ; z3/optimized/theory_seq.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
 ; z3/optimized/used_vars.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; zlib/optimized/deflate.c.ll
 ; zxing/optimized/GenericGF.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 365 occurrences:
+; 370 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -62,7 +62,6 @@
 ; abc/optimized/satSolver2i.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/satTruth.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sfmArea.c.ll
 ; abc/optimized/sfmCnf.c.ll
@@ -75,6 +74,11 @@
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; assimp/optimized/FBXUtil.cpp.ll
+; boost/optimized/basic_text_iprimitive.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; brotli/optimized/decode.c.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
@@ -199,6 +203,7 @@
 ; luau/optimized/lbuiltins.cpp.ll
 ; luau/optimized/ldebug.cpp.ll
 ; luau/optimized/lvmload.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CImage.cpp.ll

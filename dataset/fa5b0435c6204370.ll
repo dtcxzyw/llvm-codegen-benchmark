@@ -10,7 +10,7 @@
 ; llvm/optimized/SemaObjC.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %0
@@ -20,12 +20,11 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
-; linux/optimized/message.ll
+; 2 occurrences:
 ; linux/optimized/nf_conntrack_core.ll
 ; llvm/optimized/ParsedAttr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %0

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; oiio/optimized/imagebuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 16
   %3 = sub nsw i64 %1, %2
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/imagebuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 16
   %3 = sub nsw i64 %1, %2
@@ -25,7 +25,7 @@ entry:
 ; arrow/optimized/writer.cc.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 8
   %3 = sub nsw i64 %1, %2
@@ -38,7 +38,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 2
   %3 = sub nsw i64 %1, %2
@@ -51,7 +51,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 2
   %3 = sub nsw i64 %1, %2

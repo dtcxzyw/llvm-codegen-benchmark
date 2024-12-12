@@ -70,7 +70,7 @@ entry:
   ret i1 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; cmake/optimized/openssl.c.ll
 ; curl/optimized/libcurl_la-openssl.ll
 ; hermes/optimized/ESTreeIRGen-expr.cpp.ll
@@ -78,6 +78,7 @@ entry:
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/ObjCMT.cpp.ll
 ; openusd/optimized/mvref_common.c.ll
+; php/optimized/pcre2_match.ll
 ; postgres/optimized/indxpath.ll
 ; wireshark/optimized/packet-lbmc.c.ll
 ; yosys/optimized/lz4.ll
@@ -89,12 +90,11 @@ entry:
   ret i1 %2
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cvc5/optimized/sine_solver.cpp.ll
 ; graphviz/optimized/write.c.ll
 ; lief/optimized/psa_crypto.c.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
@@ -104,12 +104,13 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; postgres/optimized/partbounds.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp sgt i32 %1, -1
+  %2 = icmp sgt i32 %1, 0
   %3 = select i1 %2, i1 true, i1 %0
   ret i1 %3
 }

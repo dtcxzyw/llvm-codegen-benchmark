@@ -10,7 +10,7 @@
 ; stockfish/optimized/position.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i16 %0) #0 {
+define i1 @func00000000000000c1(i16 %0) #0 {
 entry:
   %1 = zext nneg i16 %0 to i64
   %2 = shl nuw i64 1, %1
@@ -25,7 +25,7 @@ entry:
 ; llvm/optimized/DWARFFormValue.cpp.ll
 ; wireshark/optimized/netmon.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i16 %0) #0 {
+define i1 @func00000000000000e1(i16 %0) #0 {
 entry:
   %1 = zext nneg i16 %0 to i64
   %2 = shl nuw nsw i64 1, %1

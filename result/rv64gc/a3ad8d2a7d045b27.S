@@ -21,3 +21,12 @@ func000000000000000c:                   # @func000000000000000c
 	fmv.w.x	fa4, a0
 	fmax.s	fa0, fa5, fa4
 	ret
+func000000000000000e:                   # @func000000000000000e
+	lui	a0, 258048
+	fmv.w.x	fa5, a0
+	fadd.s	fa0, fa0, fa5
+	feq.s	a0, fa0, fa0
+	bnez	a0, .LBB3_2
+	fmv.w.x	fa0, zero
+.LBB3_2:                                # %entry
+	ret

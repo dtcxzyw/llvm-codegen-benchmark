@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 68 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/aigUtil.c.ll
@@ -46,6 +46,7 @@
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; mitsuba3/optimized/microfacet.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -76,7 +77,7 @@ entry:
   ret i1 %4
 }
 
-; 89 occurrences:
+; 87 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/aigDfs.c.ll
 ; abc/optimized/lpkCut.c.ll
@@ -93,11 +94,9 @@ entry:
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/nsproxy.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/sock.ll
 ; linux/optimized/syscalls.ll
-; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AArch64MCTargetDesc.cpp.ll
 ; llvm/optimized/AArch64Subtarget.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -136,6 +135,7 @@ entry:
 ; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/TypeStreamMerger.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; node/optimized/libnode.crypto_util.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
@@ -147,7 +147,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bio_lib.ll
 ; openssl/optimized/libcrypto-shlib-p12_kiss.ll
 ; openssl/optimized/libcrypto-shlib-tasn_enc.ll
-; openssl/optimized/libdefault-lib-decode_pvk2key.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/scan.ll
 ; postgres/optimized/varsup.ll
@@ -171,24 +170,12 @@ define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3145728
   %3 = icmp eq i64 %2, 1048576
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
-; hermes/optimized/hbc-attribute.cpp.ll
-; openjdk/optimized/sharedRuntimeTrans.ll
-; ruby/optimized/util.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 2146435072
-  %3 = icmp ult i64 %2, 111149057
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/src.ll
 ; cpython/optimized/dtoa.ll
 ; llvm/optimized/CGException.cpp.ll
 ; llvm/optimized/CGExprComplex.cpp.ll
@@ -203,11 +190,11 @@ entry:
 ; ruby/optimized/util.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1048575
   %3 = icmp eq i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -297,11 +284,22 @@ entry:
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2139095040
   %3 = icmp ne i64 %2, 2139095040
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; openjdk/optimized/sharedRuntimeTrans.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000054(i1 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 2146435072
+  %3 = icmp samesign ult i64 %2, 1043333120
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -310,11 +308,11 @@ entry:
 ; icu/optimized/usearch.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483647
   %3 = icmp eq i64 %2, 2146435072
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -330,152 +328,45 @@ entry:
 ; openjdk/optimized/shenandoahCollectorPolicy.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 61
   %3 = icmp ne i64 %2, 4
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 1 occurrences:
-; stockfish/optimized/tbprobe.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 4
-  %3 = icmp eq i64 %2, 0
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 4 occurrences:
-; cpython/optimized/longobject.ll
-; icu/optimized/collationkeys.ll
-; luau/optimized/isocline.c.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 251658240
-  %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; luau/optimized/isocline.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 251658240
-  %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 71 occurrences:
-; oiio/optimized/CineonHeader.cpp.ll
-; oiio/optimized/argparse.cpp.ll
-; oiio/optimized/benchmark.cpp.ll
-; oiio/optimized/bmpinput.cpp.ll
-; oiio/optimized/bmpoutput.cpp.ll
-; oiio/optimized/cineoninput.cpp.ll
-; oiio/optimized/color_ocio.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; oiio/optimized/dpxinput.cpp.ll
-; oiio/optimized/dpxoutput.cpp.ll
-; oiio/optimized/environment.cpp.ll
-; oiio/optimized/errorhandler.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
-; oiio/optimized/exroutput.cpp.ll
-; oiio/optimized/filesystem.cpp.ll
-; oiio/optimized/fitsinput.cpp.ll
-; oiio/optimized/fitsoutput.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; oiio/optimized/hdrinput.cpp.ll
-; oiio/optimized/hdroutput.cpp.ll
-; oiio/optimized/icc.cpp.ll
-; oiio/optimized/icoinput.cpp.ll
-; oiio/optimized/icooutput.cpp.ll
-; oiio/optimized/iffinput.cpp.ll
-; oiio/optimized/iffoutput.cpp.ll
-; oiio/optimized/imagebuf.cpp.ll
-; oiio/optimized/imagebufalgo.cpp.ll
-; oiio/optimized/imagebufalgo_addsub.cpp.ll
-; oiio/optimized/imagebufalgo_channels.cpp.ll
-; oiio/optimized/imagebufalgo_compare.cpp.ll
-; oiio/optimized/imagebufalgo_copy.cpp.ll
-; oiio/optimized/imagebufalgo_deep.cpp.ll
-; oiio/optimized/imagebufalgo_draw.cpp.ll
-; oiio/optimized/imagebufalgo_mad.cpp.ll
-; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
-; oiio/optimized/imagebufalgo_muldiv.cpp.ll
-; oiio/optimized/imagebufalgo_opencv.cpp.ll
-; oiio/optimized/imagebufalgo_orient.cpp.ll
-; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
-; oiio/optimized/imagebufalgo_xform.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
-; oiio/optimized/imageinput.cpp.ll
-; oiio/optimized/imageio.cpp.ll
-; oiio/optimized/imageioplugin.cpp.ll
-; oiio/optimized/imageoutput.cpp.ll
-; oiio/optimized/jpeginput.cpp.ll
-; oiio/optimized/jpegoutput.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; oiio/optimized/paramlist.cpp.ll
-; oiio/optimized/pnginput.cpp.ll
-; oiio/optimized/pngoutput.cpp.ll
-; oiio/optimized/pnmoutput.cpp.ll
-; oiio/optimized/printinfo.cpp.ll
-; oiio/optimized/psdinput.cpp.ll
-; oiio/optimized/rlainput.cpp.ll
-; oiio/optimized/rlaoutput.cpp.ll
-; oiio/optimized/sgiinput.cpp.ll
-; oiio/optimized/sgioutput.cpp.ll
-; oiio/optimized/softimageinput.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; oiio/optimized/sysutil.cpp.ll
-; oiio/optimized/targainput.cpp.ll
-; oiio/optimized/targaoutput.cpp.ll
-; oiio/optimized/termoutput.cpp.ll
-; oiio/optimized/texture3d.cpp.ll
-; oiio/optimized/texturesys.cpp.ll
-; oiio/optimized/tiffinput.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
-; oiio/optimized/typedesc.cpp.ll
-; oiio/optimized/xmp.cpp.ll
-; oiio/optimized/zfile.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 2046
-  %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/nf_nat_core.ll
-; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AArch64MCTargetDesc.cpp.ll
 ; llvm/optimized/AArch64Subtarget.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 60
-  %3 = icmp eq i64 %2, 0
-  %4 = and i1 %3, %0
+  %2 = and i64 %1, 63
+  %3 = icmp samesign ult i64 %2, 5
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; opencv/optimized/geometry.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
   %3 = icmp ne i64 %2, 3
+  %4 = and i1 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; cpython/optimized/longobject.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 2
+  %3 = icmp ne i64 %2, 0
   %4 = and i1 %3, %0
   ret i1 %4
 }

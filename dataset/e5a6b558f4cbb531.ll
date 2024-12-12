@@ -15,7 +15,7 @@ define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 64, %1
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -58,23 +58,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 64, %1
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
-  ret i64 %4
-}
-
-; 6 occurrences:
-; darktable/optimized/FujiDecompressor.cpp.ll
-; hermes/optimized/Triple.cpp.ll
-; lief/optimized/ssl_msg.c.ll
-; llvm/optimized/Triple.cpp.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sub nuw nsw i32 48, %1
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -324,7 +308,21 @@ define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
+  ret i64 %4
+}
+
+; 4 occurrences:
+; darktable/optimized/FujiDecompressor.cpp.ll
+; hermes/optimized/Triple.cpp.ll
+; lief/optimized/ssl_msg.c.ll
+; llvm/optimized/Triple.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sub nuw nsw i32 16, %1
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -335,7 +333,7 @@ define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 2, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -346,7 +344,7 @@ define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 17, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -358,7 +356,7 @@ define i64 @func000000000000000b(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 4, %1
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -369,7 +367,7 @@ define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 32, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -380,7 +378,7 @@ define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 30, %1
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

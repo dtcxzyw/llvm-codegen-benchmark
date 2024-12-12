@@ -31,10 +31,9 @@ entry:
   ret i16 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/ucnvisci.ll
-; linux/optimized/intel_dkl_phy.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/mg_schematic.cpp.ll
 ; Function Attrs: nounwind

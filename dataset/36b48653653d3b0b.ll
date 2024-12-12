@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; abc/optimized/ifSeq.c.ll
+; 7 occurrences:
 ; abc/optimized/ifTime.c.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll
@@ -12,8 +11,8 @@
 define i1 @func0000000000000004(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %1
-  %5 = fcmp olt float %4, %0
+  %4 = fadd float %1, %3
+  %5 = fcmp ogt float %0, %4
   ret i1 %5
 }
 
@@ -30,8 +29,8 @@ entry:
 define i1 @func0000000000000002(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %1
-  %5 = fcmp ogt float %4, %0
+  %4 = fadd float %1, %3
+  %5 = fcmp olt float %0, %4
   ret i1 %5
 }
 
@@ -41,8 +40,8 @@ entry:
 define i1 @func000000000000000a(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %1
-  %5 = fcmp oge float %4, %0
+  %4 = fadd float %1, %3
+  %5 = fcmp ole float %0, %4
   ret i1 %5
 }
 
@@ -56,8 +55,19 @@ entry:
 define i1 @func0000000000000008(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %1
-  %5 = fcmp oeq float %4, %0
+  %4 = fadd float %1, %3
+  %5 = fcmp oeq float %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_chart.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(float %0, float %1, i32 %2) #0 {
+entry:
+  %3 = sitofp i32 %2 to float
+  %4 = fadd float %1, %3
+  %5 = fcmp une float %0, %4
   ret i1 %5
 }
 
@@ -67,8 +77,8 @@ entry:
 define i1 @func0000000000000005(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %1
-  %5 = fcmp ult float %4, %0
+  %4 = fadd float %1, %3
+  %5 = fcmp ugt float %0, %4
   ret i1 %5
 }
 

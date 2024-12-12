@@ -1,5 +1,5 @@
 
-; 154 occurrences:
+; 155 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -17,6 +17,10 @@
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/Q3DLoader.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/round_robin.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/work_stealing.ll
 ; clamav/optimized/regcomp.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -41,7 +45,6 @@
 ; fmt/optimized/chrono-test.cc.ll
 ; folly/optimized/CustomLogFormatter.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/GlogStyleFormatter.cpp.ll
 ; folly/optimized/ThreadWheelTimekeeper.cpp.ll
 ; folly/optimized/ThreadedRepeatingFunctionRunner.cpp.ll
@@ -94,8 +97,6 @@
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/obsensor_stream_channel_v4l2.cpp.ll
 ; openjdk/optimized/os.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; php/optimized/parse_date.ll
 ; php/optimized/tm2unixtime.ll
 ; php/optimized/unixtime2tm.ll
@@ -204,10 +205,13 @@ entry:
   ret i64 %2
 }
 
-; 92 occurrences:
+; 93 occurrences:
 ; abseil-cpp/optimized/str_replace_test.cc.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/PlyParser.cpp.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/integration_tools.cpp.ll
 ; casadi/optimized/nlp_tools.cpp.ll
@@ -249,7 +253,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -259,7 +262,6 @@ entry:
 ; meshlab/optimized/filter_sdfgpu.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh_attribute.cpp.ll
 ; meshlab/optimized/mesh_graph.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -305,7 +307,7 @@ entry:
   ret i64 %2
 }
 
-; 32 occurrences:
+; 30 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -328,8 +330,6 @@ entry:
 ; openblas/optimized/dsyrk_thread_LT.c.ll
 ; openblas/optimized/dsyrk_thread_UN.c.ll
 ; openblas/optimized/dsyrk_thread_UT.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
 ; php/optimized/parse_date.ll
 ; postgres/optimized/date.ll
@@ -341,8 +341,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = sdiv i64 %0, 86400
-  %2 = mul i64 %1, 4294880896
+  %1 = sdiv i64 %0, 100
+  %2 = mul i64 %1, 3600
   ret i64 %2
 }
 

@@ -4,7 +4,7 @@
 	.long	1024                            # 0x400
 func0000000000000055:                   # @func0000000000000055
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -14,13 +14,13 @@ func0000000000000055:                   # @func0000000000000055
 	.long	1024                            # 0x400
 func0000000000000000:                   # @func0000000000000000
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 func0000000000000045:                   # @func0000000000000045
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm0, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -47,7 +47,7 @@ func0000000000000014:                   # @func0000000000000014
 	.long	3                               # 0x3
 func0000000000000084:                   # @func0000000000000084
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm0, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
@@ -74,7 +74,7 @@ func0000000000000015:                   # @func0000000000000015
 	.long	3                               # 0x3
 func0000000000000085:                   # @func0000000000000085
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm0, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0
@@ -89,7 +89,7 @@ func0000000000000054:                   # @func0000000000000054
 	retq
 func0000000000000040:                   # @func0000000000000040
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm0, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

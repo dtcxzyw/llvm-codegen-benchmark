@@ -9,7 +9,7 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/ifDec16.c.ll
@@ -27,6 +27,7 @@ entry:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; spike/optimized/f128_to_i32.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {

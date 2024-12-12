@@ -1,6 +1,8 @@
 
-; 47 occurrences:
+; 49 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/thread.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
@@ -55,7 +57,7 @@ entry:
   ret i64 %3
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/clock.cc.ll
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
@@ -77,7 +79,6 @@ entry:
 ; minetest/optimized/profilergraph.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
-; openmpi/optimized/name_fns.ll
 ; php/optimized/unixtime2tm.ll
 ; rocksdb/optimized/threadpool_imp.cc.ll
 ; verilator/optimized/V3Undriven.cpp.ll

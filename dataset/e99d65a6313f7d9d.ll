@@ -15,7 +15,7 @@ entry:
   %3 = sitofp i32 %2 to double
   %4 = fmul double %3, 0x3D59FEF311F12B36
   %5 = fadd double %4, %1
-  %6 = fadd double %5, %0
+  %6 = fadd double %0, %5
   ret double %6
 }
 

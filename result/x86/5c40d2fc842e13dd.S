@@ -19,13 +19,6 @@ func00000000000000fd:                   # @func00000000000000fd
 	addq	%rdi, %rax
 	addq	%rcx, %rax
 	retq
-func000000000000003f:                   # @func000000000000003f
-	movl	%edx, %eax
-	leaq	(%rax,%rax,8), %rax
-	movl	%esi, %ecx
-	leaq	(%rcx,%rax,2), %rax
-	addq	%rdi, %rax
-	retq
 func000000000000003c:                   # @func000000000000003c
 	movl	%edx, %eax
 	imulq	$1000000000, %rax, %rcx         # imm = 0x3B9ACA00

@@ -22,6 +22,16 @@ entry:
   ret i8 %2
 }
 
+; 1 occurrences:
+; qemu/optimized/hw_audio_es1370.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000001(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i8
+  %2 = udiv exact i8 %1, 20
+  ret i8 %2
+}
+
 ; 8 occurrences:
 ; curl/optimized/libcurl_la-asyn-thread.ll
 ; openspiel/optimized/chess.cc.ll

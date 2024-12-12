@@ -17,13 +17,13 @@ entry:
 ; hermes/optimized/dtoa.c.ll
 ; libquic/optimized/dtoa.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i32 %1) #0 {
+define ptr @func00000000000000fb(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 2
   %4 = add nuw nsw i64 %3, 39
   %5 = lshr i64 %4, 3
-  %6 = getelementptr nusw double, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw double, ptr %0, i64 %5
   ret ptr %6
 }
 

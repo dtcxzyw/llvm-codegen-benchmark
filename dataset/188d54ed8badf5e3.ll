@@ -13,7 +13,7 @@
 ; mitsuba3/optimized/builder.cpp.ll
 ; redis/optimized/lparser.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = zext nneg i8 %2 to i64
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = zext nneg i8 %2 to i64
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 30
   %3 = zext nneg i8 %2 to i64
@@ -62,7 +62,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; redis/optimized/ldo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = zext i8 %2 to i64

@@ -1,11 +1,10 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; mitsuba3/optimized/sphere.cpp.ll
-; openmpi/optimized/monitoring_test.ll
 ; postgres/optimized/trigger.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind

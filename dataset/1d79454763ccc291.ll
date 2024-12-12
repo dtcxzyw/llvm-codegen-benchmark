@@ -22,7 +22,7 @@ entry:
 ; oiio/optimized/filesystem.cpp.ll
 ; xgboost/optimized/context.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0) #0 {
+define i64 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 24
   %2 = icmp ult i64 %1, 4
@@ -30,11 +30,12 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; opencv/optimized/loadsave.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; yosys/optimized/flowmap.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0) #0 {
+define i64 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 72
   %2 = icmp ugt i64 %1, 1

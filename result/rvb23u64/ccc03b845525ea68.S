@@ -11,12 +11,14 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
-	andi	a1, a1, 7
-	sltiu	a1, a1, 3
+func0000000000000014:                   # @func0000000000000014
+	lui	a2, 4
+	addiw	a2, a2, -8
+	and	a1, a1, a2
+	sltiu	a1, a1, 2008
 	and	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 896
 	sltiu	a1, a1, 384
 	xori	a1, a1, 1

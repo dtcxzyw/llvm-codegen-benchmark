@@ -1,20 +1,6 @@
 
-; 3 occurrences:
-; hermes/optimized/DateUtil.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul i64 %2, 4294880896
-  %4 = add i64 %3, %1
-  %5 = trunc i64 %4 to i32
-  %6 = mul nsw i32 %0, 3600
-  %7 = add i32 %6, %5
-  ret i32 %7
-}
-
-; 20 occurrences:
+; 21 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll

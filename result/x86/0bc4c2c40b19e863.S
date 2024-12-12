@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	testl	%edx, %edx
 	movl	$66, %ecx
 	cmovel	%edx, %ecx
@@ -7,7 +7,7 @@ func0000000000000022:                   # @func0000000000000022
 	cmovel	%ecx, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	testl	%edx, %edx
 	movl	$524288, %eax                   # imm = 0x80000
 	movl	$524864, %ecx                   # imm = 0x80240

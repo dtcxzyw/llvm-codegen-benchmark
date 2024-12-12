@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; lief/optimized/CorePrStatus.cpp.ll
+; 2 occurrences:
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; qemu/optimized/monitor_hmp.c.ll
 ; Function Attrs: nounwind
@@ -38,7 +37,7 @@ entry:
   ret i64 %3
 }
 
-; 63 occurrences:
+; 66 occurrences:
 ; abc/optimized/abcXsim.c.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
@@ -74,7 +73,6 @@ entry:
 ; llvm/optimized/MveEmitter.cpp.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
@@ -102,6 +100,10 @@ entry:
 ; luau/optimized/isocline.c.ll
 ; wireshark/optimized/packet-megaco.c.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -111,8 +113,18 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; llvm/optimized/AArch64ISelLowering.cpp.ll
+; 1 occurrences:
+; lief/optimized/CorePrStatus.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp samesign ugt i32 %2, 19
+  %4 = select i1 %3, i64 328, i64 %0
+  ret i64 %4
+}
+
+; 2 occurrences:
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
 ; Function Attrs: nounwind
@@ -121,6 +133,17 @@ entry:
   %2 = and i64 %1, 4294967292
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 2, i64 %0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967294
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i64 0, i64 %0
   ret i64 %4
 }
 

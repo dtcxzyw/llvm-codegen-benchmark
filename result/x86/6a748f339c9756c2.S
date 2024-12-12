@@ -1,15 +1,15 @@
-func00000000000000ba:                   # @func00000000000000ba
+func000000000000016a:                   # @func000000000000016a
 	addl	%esi, %esi
-	cmpl	%edi, %esi
-	setle	%cl
+	cmpl	%esi, %edi
+	setge	%cl
 	cmpl	$33, %edi
 	setge	%al
 	andb	%cl, %al
 	retq
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	addl	%esi, %esi
-	cmpl	%edi, %esi
-	setg	%cl
+	cmpl	%esi, %edi
+	setl	%cl
 	testl	%edi, %edi
 	setns	%al
 	andb	%cl, %al

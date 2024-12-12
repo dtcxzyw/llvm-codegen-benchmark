@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 24 occurrences:
 ; abc/optimized/abcFunc.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/acbUtil.c.ll
@@ -17,17 +17,19 @@
 ; abc/optimized/wlnRead.c.ll
 ; c3c/optimized/asm_target.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 49
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext nneg i32 %1 to i64
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -83,7 +85,7 @@ define i64 @func000000000000003c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 19
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = zext nneg i32 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7
@@ -97,7 +99,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 42
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = zext i32 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7
@@ -142,20 +144,21 @@ define i64 @func0000000000000017(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext nneg i32 %1 to i64
   %7 = or disjoint i64 %5, %6
   ret i64 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/bmcFx.c.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000037(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, 62
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext nneg i32 %1 to i64
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -181,7 +184,7 @@ define i64 @func0000000000000010(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = zext i32 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7

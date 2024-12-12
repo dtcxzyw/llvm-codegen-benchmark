@@ -2,7 +2,7 @@
 	.quad	1000                            # 0x3e8
 func0000000000000194:                   # @func0000000000000194
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx
 	movabsq	$1237940039285380275, %rsi      # imm = 0x112E0BE826D694B3
@@ -53,7 +53,7 @@ func0000000000000194:                   # @func0000000000000194
 	.quad	1000000                         # 0xf4240
 func0000000000000094:                   # @func0000000000000094
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx
 	movabsq	$1237940039285380275, %rsi      # imm = 0x112E0BE826D694B3
@@ -157,7 +157,7 @@ func0000000000000084:                   # @func0000000000000084
 	.quad	64536                           # 0xfc18
 func0000000000000080:                   # @func0000000000000080
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rax
 	movabsq	$2361183241434822607, %rcx      # imm = 0x20C49BA5E353F7CF
@@ -253,7 +253,7 @@ func0000000000000195:                   # @func0000000000000195
 	.quad	-60000000                       # 0xfffffffffc6c7900
 func0000000000000095:                   # @func0000000000000095
 	vpmullq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx
 	movabsq	$4835703278458516699, %rsi      # imm = 0x431BDE82D7B634DB

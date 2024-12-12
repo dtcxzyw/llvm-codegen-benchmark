@@ -35,10 +35,6 @@ func0000000000000006:                   # @func0000000000000006
 	zext.w	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000007:                   # @func0000000000000007
-	zext.w	a0, a0
-	sh2add.uw	a0, a1, a0
-	ret
 func000000000000001d:                   # @func000000000000001d
 	slli	a1, a1, 52
 	sext.w	a0, a0

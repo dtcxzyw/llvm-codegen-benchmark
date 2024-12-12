@@ -24,7 +24,7 @@
 define i64 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -241
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = zext nneg i16 %3 to i64
   ret i64 %4
 }
@@ -41,17 +41,15 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
-; assimp/optimized/BlenderDNA.cpp.ll
+; 4 occurrences:
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; oiio/optimized/Codec.cpp.ll
-; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll
-; stockfish/optimized/tbprobe.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 255
+  %2 = and i16 %1, -64
   %3 = or disjoint i16 %2, %0
   %4 = zext i16 %3 to i64
   ret i64 %4

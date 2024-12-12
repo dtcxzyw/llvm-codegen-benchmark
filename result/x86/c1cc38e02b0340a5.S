@@ -1,8 +1,8 @@
-func0000000000000141:                   # @func0000000000000141
+func000000000000048c:                   # @func000000000000048c
 	sarq	$3, %rdx
 	cmpq	%rsi, %rdx
-	setae	%cl
+	setb	%cl
 	testq	%rdi, %rdi
-	sete	%al
-	andb	%cl, %al
+	setne	%al
+	orb	%cl, %al
 	retq

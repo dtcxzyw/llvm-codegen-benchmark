@@ -20,9 +20,10 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000000d:                   # @func000000000000000d
 	srai	a1, a0, 63
+	lui	a2, 1046592
 	xor	a0, a0, a1
+	sub	a1, a1, a2
 	sub	a0, a0, a1
-	addi	a0, a0, -4
 	ret
 func0000000000000000:                   # @func0000000000000000
 	srai	a1, a0, 63

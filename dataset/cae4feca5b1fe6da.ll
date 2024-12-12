@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; flac/optimized/bitreader.c.ll
 ; freetype/optimized/psaux.c.ll
@@ -8,6 +8,7 @@
 ; libquic/optimized/url_canon_ip.cc.ll
 ; linux/optimized/udp.ll
 ; llvm/optimized/KnownBits.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; openjdk/optimized/ifnode.ll
 ; openjdk/optimized/loopnode.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -27,11 +28,12 @@ entry:
   ret i32 %4
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; abseil-cpp/optimized/time_zone_fixed.cc.ll
 ; assimp/optimized/Q3DLoader.cpp.ll
-; cmake/optimized/archive_read_support_format_cab.c.ll
-; cmake/optimized/archive_read_support_format_lha.c.ll
+; boost/optimized/numeric.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/src.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/sdf.c.ll
 ; glslang/optimized/linkValidate.cpp.ll
@@ -47,7 +49,6 @@ entry:
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/drm_gem_framebuffer_helper.ll
-; linux/optimized/ebda.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; minetest/optimized/CGUIScrollBar.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
@@ -56,7 +57,6 @@ entry:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/shapedescr.cpp.ll
-; opencv/optimized/thresh.cpp.ll
 ; openjdk/optimized/jdcoefct.ll
 ; openjdk/optimized/mlib_ImageConvCopyEdge_Bit.ll
 ; openusd/optimized/mvref_common.c.ll
@@ -87,9 +87,11 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
+; 26 occurrences:
 ; abc/optimized/luckyFast16.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
+; cmake/optimized/archive_read_support_format_cab.c.ll
+; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cpython/optimized/dtoa.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/calendar.ll
@@ -103,7 +105,9 @@ entry:
 ; llvm/optimized/KnownBits.cpp.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; nuttx/optimized/lib_strtold.c.ll
+; opencv/optimized/thresh.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; ruby/optimized/util.ll

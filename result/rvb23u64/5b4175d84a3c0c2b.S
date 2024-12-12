@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	lui	a3, 448
 	and	a2, a2, a3
 	andi	a1, a1, 3
@@ -21,21 +21,11 @@ func0000000000000002:                   # @func0000000000000002
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	andi	a2, a2, 1
 	andi	a1, a1, 2
 	or	a1, a1, a2
 	addi	a1, a1, -3
 	seqz	a1, a1
-	or	a0, a0, a1
-	ret
-func0000000000000028:                   # @func0000000000000028
-	lui	a3, 15
-	and	a2, a2, a3
-	bseti	a3, zero, 11
-	and	a1, a1, a3
-	or	a1, a1, a2
-	srli	a1, a1, 11
-	sltiu	a1, a1, 27
 	or	a0, a0, a1
 	ret

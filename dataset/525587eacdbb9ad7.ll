@@ -4,7 +4,7 @@
 ; meshlab/optimized/decorate_base.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3

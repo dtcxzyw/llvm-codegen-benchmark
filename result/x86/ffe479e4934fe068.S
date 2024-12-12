@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	cmpq	%rsi, %rdi
 	movl	$-1, %eax
 	cmovbel	%edi, %eax
@@ -8,12 +8,12 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$-2, %eax
 	cmovlel	%edi, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	cmovnel	%edi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	cmovnel	%edi, %eax

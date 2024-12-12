@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	2                               # 0x2
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3   # ymm3 = [2,2,2,2,2,2,2,2]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -10,7 +10,7 @@ func00000000000000da:                   # @func00000000000000da
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func0000000000000086:                   # @func0000000000000086
+func0000000000000106:                   # @func0000000000000106
 	vpbroadcastd	.LCPI1_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -20,7 +20,7 @@ func0000000000000086:                   # @func0000000000000086
 	retq
 .LCPI2_0:
 	.long	1                               # 0x1
-func00000000000000fb:                   # @func00000000000000fb
+func00000000000001eb:                   # @func00000000000001eb
 	vpbroadcastd	.LCPI2_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -30,7 +30,7 @@ func00000000000000fb:                   # @func00000000000000fb
 	retq
 .LCPI3_0:
 	.long	1                               # 0x1
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	vpbroadcastd	.LCPI3_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -38,7 +38,7 @@ func0000000000000088:                   # @func0000000000000088
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrlvd	%ymm2, %ymm0, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k0
@@ -47,7 +47,7 @@ func0000000000000084:                   # @func0000000000000084
 	retq
 .LCPI5_0:
 	.long	1                               # 0x1
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vpbroadcastd	.LCPI5_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -55,7 +55,7 @@ func000000000000008c:                   # @func000000000000008c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -65,7 +65,7 @@ func0000000000000046:                   # @func0000000000000046
 	retq
 .LCPI7_0:
 	.long	1                               # 0x1
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	vpbroadcastd	.LCPI7_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -75,7 +75,7 @@ func0000000000000096:                   # @func0000000000000096
 	retq
 .LCPI8_0:
 	.long	1                               # 0x1
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	vpbroadcastd	.LCPI8_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -85,7 +85,7 @@ func000000000000008a:                   # @func000000000000008a
 	retq
 .LCPI9_0:
 	.long	1                               # 0x1
-func00000000000000b6:                   # @func00000000000000b6
+func0000000000000166:                   # @func0000000000000166
 	vpbroadcastd	.LCPI9_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -95,7 +95,7 @@ func00000000000000b6:                   # @func00000000000000b6
 	retq
 .LCPI10_0:
 	.long	1                               # 0x1
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	vpbroadcastd	.LCPI10_0(%rip), %ymm3  # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -105,7 +105,7 @@ func0000000000000081:                   # @func0000000000000081
 	retq
 .LCPI11_0:
 	.long	1                               # 0x1
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vpbroadcastd	.LCPI11_0(%rip), %ymm3  # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -115,7 +115,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	retq
 .LCPI12_0:
 	.long	1                               # 0x1
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	vpbroadcastd	.LCPI12_0(%rip), %ymm3  # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -125,7 +125,7 @@ func00000000000000d6:                   # @func00000000000000d6
 	retq
 .LCPI13_0:
 	.long	1                               # 0x1
-func000000000000009b:                   # @func000000000000009b
+func000000000000012b:                   # @func000000000000012b
 	vpbroadcastd	.LCPI13_0(%rip), %ymm3  # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -135,7 +135,7 @@ func000000000000009b:                   # @func000000000000009b
 	retq
 .LCPI14_0:
 	.long	1                               # 0x1
-func000000000000008b:                   # @func000000000000008b
+func000000000000010b:                   # @func000000000000010b
 	vpbroadcastd	.LCPI14_0(%rip), %ymm3  # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -145,7 +145,7 @@ func000000000000008b:                   # @func000000000000008b
 	retq
 .LCPI15_0:
 	.long	1                               # 0x1
-func000000000000009a:                   # @func000000000000009a
+func000000000000012a:                   # @func000000000000012a
 	vpbroadcastd	.LCPI15_0(%rip), %ymm3  # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0

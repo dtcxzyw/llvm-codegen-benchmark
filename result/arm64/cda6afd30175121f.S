@@ -1,8 +1,7 @@
 func00000000000000fb:                   // @func00000000000000fb
 // %bb.0:                               // %entry
-	movi	v0.2d, #0xffffffffffffffff
-	ushll	v2.4s, v1.4h, #0
-	uaddw2	v1.2d, v0.2d, v2.4s
-	uaddw	v0.2d, v0.2d, v2.2s
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0xffff
+	sub	x0, x8, #1
 	ret
                                         // -- End function

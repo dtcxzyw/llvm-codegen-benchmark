@@ -46,3 +46,20 @@ func0000000000000002:                   # @func0000000000000002
 	vpaddd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
+.LCPI3_0:
+	.long	12                              # 0xc
+.LCPI3_1:
+	.long	8                               # 0x8
+.LCPI3_2:
+	.long	4                               # 0x4
+func0000000000000000:                   # @func0000000000000000
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k1
+	vpslld	$31, %xmm2, %xmm1
+	vpmovd2m	%xmm1, %k2
+	vpbroadcastd	.LCPI3_0(%rip), %xmm1   # xmm1 = [12,12,12,12]
+	vpbroadcastd	.LCPI3_1(%rip), %xmm1 {%k2} # xmm1 {%k2} = [8,8,8,8]
+	vpbroadcastd	.LCPI3_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [4,4,4,4]
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq

@@ -6,7 +6,7 @@
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = icmp eq i32 %0, 0
@@ -14,7 +14,38 @@ entry:
   ret i32 %4
 }
 
-; 53 occurrences:
+; 2 occurrences:
+; abc/optimized/saigSimMv.c.ll
+; darktable/optimized/tagging.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 1
+  %3 = icmp eq i32 %0, -1
+  %4 = select i1 %3, i32 -1, i32 %2
+  ret i32 %4
+}
+
+; 9 occurrences:
+; abc/optimized/amapParse.c.ll
+; abc/optimized/giaCof.c.ll
+; abc/optimized/giaRex.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/ivyDsd.c.ll
+; abc/optimized/mioParse.c.ll
+; abc/optimized/satProof.c.ll
+; abc/optimized/verFormula.c.ll
+; wireshark/optimized/packet-lbmpdm.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000066(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 1
+  %3 = icmp slt i32 %0, 18
+  %4 = select i1 %3, i32 16, i32 %2
+  ret i32 %4
+}
+
+; 52 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -30,7 +61,6 @@ entry:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecSatG2.c.ll
-; abc/optimized/cnfUtil.c.ll
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/extraUtilMacc.c.ll
 ; abc/optimized/giaAiger.c.ll
@@ -69,7 +99,7 @@ entry:
 ; abc/optimized/wlcGraft.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = icmp ult i32 %0, 15
@@ -104,22 +134,24 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; abc/optimized/saigSimMv.c.ll
+; 3 occurrences:
+; abc/optimized/abcDfs.c.ll
+; abc/optimized/abcFraig.c.ll
+; abc/optimized/abcSweep.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 %1, 3
-  %3 = icmp eq i32 %0, 536870910
-  %4 = select i1 %3, i32 -16, i32 %2
-  ret i32 %4
+  %2 = shl nuw nsw i32 %1, 1
+  %.inv = icmp ugt i32 %0, 16
+  %3 = select i1 %.inv, i32 %2, i32 16
+  ret i32 %3
 }
 
 ; 2 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; opencv/optimized/upcean_decoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = icmp eq i32 %0, 0
@@ -128,23 +160,34 @@ entry:
 }
 
 ; 1 occurrences:
-; gromacs/optimized/xtc2.c.ll
+; abc/optimized/cnfUtil.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = icmp ult i32 %0, 3
-  %4 = select i1 %3, i32 0, i32 %2
+  %2 = shl nsw i32 %1, 3
+  %3 = icmp samesign ult i32 %0, 15
+  %4 = select i1 %3, i32 16, i32 %2
   ret i32 %4
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-lbmpdm.c.ll
+; lvgl/optimized/lv_anim.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 2
-  %3 = icmp slt i32 %0, 8
+  %2 = shl nuw nsw i32 %1, 10
+  %3 = icmp ugt i32 %0, 10000
+  %4 = select i1 %3, i32 1047552, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; gromacs/optimized/xtc2.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 1
+  %3 = icmp ult i32 %0, 3
   %4 = select i1 %3, i32 0, i32 %2
   ret i32 %4
 }
@@ -163,20 +206,9 @@ entry:
 }
 
 ; 1 occurrences:
-; lua/optimized/ldo.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = icmp sgt i32 %0, 499999
-  %4 = select i1 %3, i32 1000000, i32 %2
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = icmp slt i32 %0, 0
@@ -187,10 +219,10 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/near_lossless_enc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
-  %3 = icmp ugt i32 %0, 255
+  %3 = icmp samesign ugt i32 %0, 255
   %4 = select i1 %3, i32 -16777216, i32 %2
   ret i32 %4
 }
@@ -198,10 +230,10 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/near_lossless_enc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 16
-  %3 = icmp ugt i32 %0, 255
+  %3 = icmp samesign ugt i32 %0, 255
   %4 = select i1 %3, i32 16711680, i32 %2
   ret i32 %4
 }

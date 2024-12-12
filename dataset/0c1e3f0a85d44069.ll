@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -17,7 +17,6 @@
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/reconinter.c.ll
 ; openusd/optimized/warped_motion.c.ll
-; redis/optimized/hdr_histogram.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
@@ -54,7 +53,7 @@ entry:
   ret i1 %3
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; cmake/optimized/huf_compress.c.ll
@@ -83,6 +82,7 @@ entry:
 ; openusd/optimized/yv12extend.c.ll
 ; postgres/optimized/slab.ll
 ; raylib/optimized/raudio.c.ll
+; redis/optimized/hdr_histogram.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; yosys/optimized/memory_libmap.ll
 ; zstd/optimized/huf_compress.c.ll
@@ -94,8 +94,7 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
-; darktable/optimized/introspection_equalizer.c.ll
+; 3 occurrences:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; openjdk/optimized/mlib_ImageConv_8ext.ll
 ; openjdk/optimized/mlib_ImageConv_8nw.ll

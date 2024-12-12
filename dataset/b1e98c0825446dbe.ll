@@ -1,10 +1,9 @@
 
-; 112 occurrences:
+; 109 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/pdrUtil.c.ll
 ; arrow/optimized/decimal.cc.ll
 ; clamav/optimized/communication.c.ll
-; clamav/optimized/fanotif.c.ll
 ; clamav/optimized/inotif.c.ll
 ; clamav/optimized/netcode.c.ll
 ; clamav/optimized/output.c.ll
@@ -103,13 +102,11 @@
 ; qemu/optimized/target_riscv_vector_internals.c.ll
 ; quickjs/optimized/quickjs-libc.ll
 ; raylib/optimized/rcore.c.ll
-; re2/optimized/bitmap256.cc.ll
 ; re2/optimized/prog.cc.ll
 ; redis/optimized/redis-cli.ll
 ; ruby/optimized/thread.ll
 ; slurm/optimized/common.ll
 ; wireshark/optimized/androiddump.c.ll
-; wireshark/optimized/ws_pipe.c.ll
 ; wolfssl/optimized/client.c.ll
 ; wolfssl/optimized/server.c.ll
 ; Function Attrs: nounwind

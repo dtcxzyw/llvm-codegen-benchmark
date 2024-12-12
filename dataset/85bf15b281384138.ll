@@ -9,11 +9,11 @@
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 1
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
@@ -23,6 +23,7 @@ entry:
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -58,7 +59,6 @@ entry:
 ; openusd/optimized/cpuPatchTable.cpp.ll
 ; openusd/optimized/testHdSortedIdsPerf.cpp.ll
 ; postgres/optimized/ginfast.ll
-; postgres/optimized/gininsert.ll
 ; postgres/optimized/reorderbuffer.ll
 ; protobuf/optimized/enum.cc.ll
 ; qemu/optimized/region.c.ll
@@ -110,11 +110,11 @@ entry:
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 1
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -132,11 +132,11 @@ entry:
 ; qemu/optimized/block_qcow2-bitmap.c.ll
 ; velox/optimized/SsdFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 27
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -156,15 +156,15 @@ entry:
 ; postgres/optimized/varlena.ll
 ; velox/optimized/MallocAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 1
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
-; 27 occurrences:
+; 21 occurrences:
 ; abc/optimized/utilIsop.c.ll
 ; abseil-cpp/optimized/fixed_array_test.cc.ll
 ; cvc5/optimized/core_solver.cpp.ll
@@ -173,31 +173,25 @@ entry:
 ; gromacs/optimized/updategroups.cpp.ll
 ; gromacs/optimized/wholemoleculetransform.cpp.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
-; linux/optimized/gso.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/sock.ll
 ; linux/optimized/tcp_offload.ll
 ; ncnn/optimized/modelbin.cpp.ll
 ; ncnn/optimized/paramdict.cpp.ll
 ; oiio/optimized/Writer.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
 ; opencv/optimized/digits_svm.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
-; pbrt-v4/optimized/aggregates.cpp.ll
-; postgres/optimized/tsvector_op.ll
 ; proj/optimized/grids.cpp.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/SequenceVector.cpp.ll
-; wireshark/optimized/packet_list.cpp.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; xgboost/optimized/gbtree_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 

@@ -34,9 +34,8 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/dmar.ll
-; linux/optimized/head64.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:

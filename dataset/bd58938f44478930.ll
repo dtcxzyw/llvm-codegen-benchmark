@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 31 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/generate_real_test.cc.ll
@@ -25,8 +25,12 @@
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
@@ -74,9 +78,8 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
@@ -88,12 +91,8 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
-; llvm/optimized/APINotesWriter.cpp.ll
+; 4 occurrences:
 ; llvm/optimized/InstCombinePHI.cpp.ll
-; llvm/optimized/LoadStoreVectorizer.cpp.ll
-; llvm/optimized/MCContext.cpp.ll
-; llvm/optimized/MIRFSDiscriminator.cpp.ll
 ; llvm/optimized/MachineTraceMetrics.cpp.ll
 ; nori/optimized/textarea.cpp.ll
 ; opencv/optimized/trackerCSRTScaleEstimation.cpp.ll

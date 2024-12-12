@@ -12,6 +12,6 @@ func0000000000000001:                   # @func0000000000000001
 	movq	%rsi, %rax
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

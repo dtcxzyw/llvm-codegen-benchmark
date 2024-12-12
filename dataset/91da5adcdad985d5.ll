@@ -77,7 +77,7 @@
 define i128 @func0000000000000024(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %1
+  %4 = mul nuw i128 %1, %3
   %5 = lshr i128 %0, 64
   %6 = add nuw i128 %5, %4
   %7 = lshr i128 %6, 64
@@ -160,7 +160,7 @@ entry:
 define i128 @func0000000000000014(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %0
+  %4 = mul nuw i128 %0, %3
   %5 = lshr i128 %1, 64
   %6 = add nuw i128 %4, %5
   %7 = lshr i128 %6, 64
@@ -173,7 +173,7 @@ entry:
 define i128 @func0000000000000036(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
+  %4 = mul nuw nsw i128 %1, %3
   %5 = lshr i128 %0, 64
   %6 = add nuw nsw i128 %5, %4
   %7 = lshr i128 %6, 63

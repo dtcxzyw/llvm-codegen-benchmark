@@ -1,6 +1,7 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/src.ll
 ; cpython/optimized/formatter_unicode.ll
 ; darktable/optimized/darkroom.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll

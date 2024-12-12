@@ -15,7 +15,7 @@
 ; llvm/optimized/WindowsResource.cpp.ll
 ; mold/optimized/multi-glob.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -64
   %4 = add nsw i64 %3, %0
@@ -30,7 +30,7 @@ entry:
 ; llvm/optimized/BugReporter.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000621(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -64
   %4 = add i64 %3, %0
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SampleProfileInference.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000601(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -64
   %4 = add i64 %3, %0
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/cmQtAutoMocUic.cxx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000358(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 16
   %4 = add nsw i64 %3, %0
@@ -71,7 +71,7 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000351(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 16
   %4 = add nsw i64 %3, %0
@@ -84,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -32
   %4 = add i64 %3, %0
@@ -100,7 +100,7 @@ entry:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000035a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -4
   %4 = add nsw i64 %3, %0
@@ -120,7 +120,7 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000060a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -32
   %4 = add i64 %3, %0
@@ -133,7 +133,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -8
   %4 = add i64 %3, %0
@@ -146,7 +146,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -8
   %4 = add i64 %3, %0
@@ -161,7 +161,7 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000306(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000606(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -64
   %4 = add i64 %3, %0
@@ -175,7 +175,7 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -64
   %4 = add nsw i64 %3, %0
@@ -188,7 +188,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000316(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000626(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -64
   %4 = add i64 %3, %0
@@ -201,7 +201,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %0
@@ -214,10 +214,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000254(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -128
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = ashr exact i64 %0, 3
   %6 = add nsw i64 %5, %4
   %7 = icmp ult i64 %6, 128
@@ -227,7 +227,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -64
   %4 = add nsw i64 %3, %0
@@ -240,7 +240,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -64
   %4 = add nsw i64 %3, %0

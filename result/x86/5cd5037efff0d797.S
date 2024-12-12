@@ -4,7 +4,7 @@ func0000000000000080:                   # @func0000000000000080
 	shlq	$4, %rdi
 	leaq	-16(%rdi), %rax
 	retq
-func0000000000000085:                   # @func0000000000000085
+func0000000000000185:                   # @func0000000000000185
 	cmpq	$131042, %rsi                   # imm = 0x1FFE2
 	cmovbq	%rsi, %rdi
 	shlq	$16, %rdi

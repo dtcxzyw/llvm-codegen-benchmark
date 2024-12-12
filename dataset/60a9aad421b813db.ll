@@ -1,5 +1,5 @@
 
-; 96 occurrences:
+; 95 occurrences:
 ; assimp/optimized/STLLoader.cpp.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/OlympusDecompressor.cpp.ll
@@ -10,7 +10,6 @@
 ; hyperscan/optimized/repeat.c.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; libevent/optimized/evmap.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/fast_commit.ll
@@ -60,6 +59,7 @@
 ; llvm/optimized/X86LowerAMXIntrinsics.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_table.ll
 ; minetest/optimized/inventorymanager.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/player_sao.cpp.ll
@@ -93,7 +93,6 @@
 ; wireshark/optimized/packet-scsi.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-udld.c.ll
-; wireshark/optimized/packet-usb-i1d3.c.ll
 ; wireshark/optimized/pcap-common.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
@@ -111,8 +110,8 @@ entry:
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/libata-core.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
+; lvgl/optimized/lv_switch.ll
 ; openjdk/optimized/matcher.ll
-; postgres/optimized/heapam.ll
 ; redis/optimized/ae.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; wireshark/optimized/packet-opensafety.c.ll

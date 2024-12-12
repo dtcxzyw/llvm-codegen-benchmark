@@ -1,0 +1,38 @@
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	add	x8, x1, #2
+	cmp	x0, x8
+	csel	x8, x0, x8, gt
+	cmp	x8, #0
+	cset	w0, gt
+	ret
+                                        // -- End function
+func0000000000000046:                   // @func0000000000000046
+// %bb.0:                               // %entry
+	add	x9, x1, #1
+	mov	x8, #2305843009213693952        // =0x2000000000000000
+	cmp	x0, x9
+	csinc	x9, x0, x1, gt
+	cmp	x9, x8
+	cset	w0, lt
+	ret
+                                        // -- End function
+func0000000000000048:                   // @func0000000000000048
+// %bb.0:                               // %entry
+	add	x8, x1, #1
+	cmp	x8, x0
+	csinc	x8, x0, x1, le
+	lsr	x8, x8, #61
+	cmp	x8, #0
+	cset	w0, ne
+	ret
+                                        // -- End function
+func000000000000004a:                   // @func000000000000004a
+// %bb.0:                               // %entry
+	add	x8, x1, #1
+	cmp	x0, x8
+	csinc	x8, x0, x1, gt
+	cmp	x8, #1
+	cset	w0, gt
+	ret
+                                        // -- End function

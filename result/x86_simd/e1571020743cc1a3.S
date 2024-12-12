@@ -32,7 +32,7 @@ func0000000000000030:                   # @func0000000000000030
 	retq
 .LCPI2_0:
 	.quad	524288                          # 0x80000
-func00000000000000b0:                   # @func00000000000000b0
+func0000000000000130:                   # @func0000000000000130
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k0
 	vpslld	$31, %xmm0, %xmm0

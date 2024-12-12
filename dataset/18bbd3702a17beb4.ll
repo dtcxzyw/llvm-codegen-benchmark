@@ -27,7 +27,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65280
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   %4 = and i32 %3, -16777216
   ret i32 %4
 }
@@ -40,7 +40,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4080
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = and i32 %3, 16711680
   ret i32 %4
 }
@@ -50,7 +50,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul i32 %1, %0
+  %2 = mul i32 %0, %1
   %3 = and i32 %2, 3
   ret i32 %3
 }

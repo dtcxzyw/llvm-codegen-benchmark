@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 56 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; darktable/optimized/histogram.c.ll
@@ -27,6 +27,8 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_line.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
 ; minetest/optimized/mapgen_v5.cpp.ll
 ; ncnn/optimized/gridsample.cpp.ll

@@ -5,7 +5,7 @@
 define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
@@ -13,10 +13,10 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
@@ -28,7 +28,7 @@ entry:
 define i32 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
@@ -41,7 +41,7 @@ entry:
 define i32 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }

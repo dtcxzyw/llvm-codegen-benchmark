@@ -8,12 +8,12 @@
 ; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i8 %1, i1 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 2, i64 0
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -22,12 +22,12 @@ entry:
 ; opencv/optimized/tinyxml2.cpp.ll
 ; openusd/optimized/decodetxb.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i8 %1, i1 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 7, i64 14
-  %4 = getelementptr nusw [5 x i16], ptr %0, i64 %3
+  %4 = getelementptr nusw nuw [5 x i16], ptr %0, i64 %3
   %5 = zext nneg i8 %1 to i64
-  %6 = getelementptr nusw [5 x i16], ptr %4, i64 %5
+  %6 = getelementptr nusw nuw [5 x i16], ptr %4, i64 %5
   ret ptr %6
 }
 

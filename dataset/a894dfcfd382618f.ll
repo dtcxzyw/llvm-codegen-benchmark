@@ -1,5 +1,5 @@
 
-; 133 occurrences:
+; 136 occurrences:
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/acbMfs.c.ll
@@ -82,6 +82,9 @@
 ; linux/optimized/extents.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; luajit/optimized/buildvm_asm.ll
+; luajit/optimized/lib_string.ll
+; luajit/optimized/lib_string_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/multiViewer_Container.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
@@ -134,7 +137,7 @@
 ; yosys/optimized/muxpack.ll
 ; zxing/optimized/QRDataBlock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -143,7 +146,7 @@ entry:
   ret i1 %6
 }
 
-; 74 occurrences:
+; 76 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/extraBddKmap.c.ll
 ; abc/optimized/fraClaus.c.ll
@@ -154,6 +157,7 @@ entry:
 ; abc/optimized/ivyMan.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; casadi/optimized/cs_dmperm.c.ll
+; ceres/optimized/schur_jacobi_preconditioner.cc.ll
 ; cpython/optimized/flowgraph.ll
 ; git/optimized/xmerge.ll
 ; icu/optimized/formatted_string_builder.ll
@@ -165,6 +169,7 @@ entry:
 ; linux/optimized/memory.ll
 ; llvm/optimized/MIRPrinter.cpp.ll
 ; llvm/optimized/StackColoring.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/packing.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; openblas/optimized/dlaeda.c.ll
@@ -219,7 +224,7 @@ entry:
 ; wireshark/optimized/vwr.c.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -228,7 +233,7 @@ entry:
   ret i1 %6
 }
 
-; 138 occurrences:
+; 139 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcCascade.c.ll
@@ -273,6 +278,7 @@ entry:
 ; icu/optimized/utext.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; ipopt/optimized/IpTNLPAdapter.ll
+; libquic/optimized/padding.c.ll
 ; libquic/optimized/url_canon_relative.cc.ll
 ; libquic/optimized/url_parse.cc.ll
 ; libquic/optimized/url_parse_file.cc.ll
@@ -368,7 +374,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -382,36 +388,12 @@ entry:
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/linux-user_main.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
-  ret i1 %6
-}
-
-; 13 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; hdf5/optimized/H5B2int.c.ll
-; linux/optimized/bitmap.ll
-; linux/optimized/intel_guc_capture.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-set.ll
-; quickjs/optimized/quickjs.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nuw nsw i32 %1, %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %0, 1
-  %6 = icmp eq i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
@@ -430,16 +412,17 @@ entry:
 ; z3/optimized/bit_blaster_rewriter.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; clamav/optimized/7zIn.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; hermes/optimized/Sorting.cpp.ll
@@ -455,7 +438,7 @@ entry:
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/sat_parallel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000261(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -464,7 +447,7 @@ entry:
   ret i1 %6
 }
 
-; 32 occurrences:
+; 30 occurrences:
 ; abc/optimized/io.c.ll
 ; abc/optimized/pdrInv.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
@@ -486,8 +469,6 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; ninja/optimized/ninja.cc.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; openusd/optimized/fvarRefinement.cpp.ll
 ; postgres/optimized/allpaths.ll
@@ -498,7 +479,7 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -514,12 +495,12 @@ entry:
 ; php/optimized/hash_sha.ll
 ; php/optimized/sha1.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000174(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = add nuw nsw i64 %0, 63
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
@@ -527,24 +508,24 @@ entry:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/FiffParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 8
-  %6 = icmp ugt i64 %5, %4
+  %6 = icmp samesign ugt i64 %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000178(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = add nuw nsw i64 %0, 4
-  %6 = icmp ugt i64 %5, %4
+  %6 = icmp samesign ugt i64 %5, %4
   ret i1 %6
 }
 
@@ -558,12 +539,12 @@ entry:
 ; opencv/optimized/persistence.cpp.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
@@ -571,12 +552,28 @@ entry:
 ; hdf5/optimized/H5Shyper.c.ll
 ; wolfssl/optimized/pwdbased.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000134(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000274(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
+  ret i1 %6
+}
+
+; 5 occurrences:
+; hdf5/optimized/H5B2int.c.ll
+; linux/optimized/bitmap.ll
+; linux/optimized/intel_guc_capture.ll
+; quickjs/optimized/quickjs.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003e1(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nuw nsw i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = add nuw nsw i64 %0, 1
+  %6 = icmp eq i64 %5, %4
   ret i1 %6
 }
 
@@ -584,7 +581,7 @@ entry:
 ; llvm/optimized/StackColoring.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -608,7 +605,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -622,7 +619,7 @@ entry:
 ; z3/optimized/bv_bounds_simplifier.cpp.ll
 ; z3/optimized/bv_bounds_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -634,7 +631,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -646,7 +643,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/load_save.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext i32 %3 to i64

@@ -19,7 +19,7 @@ entry:
   ret i64 %3
 }
 
-; 28 occurrences:
+; 31 occurrences:
 ; clamav/optimized/special.c.ll
 ; freetype/optimized/sdf.c.ll
 ; git/optimized/commit-graph.ll
@@ -29,8 +29,10 @@ entry:
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/libata-core.ll
+; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/tx.ll
+; lvgl/optimized/lv_style.ll
 ; openjdk/optimized/Index12Gray.ll
 ; openjdk/optimized/Index8Gray.ll
 ; openspiel/optimized/best_response.cc.ll
@@ -45,15 +47,27 @@ entry:
 ; openspiel/optimized/tabular_exploitability.cc.ll
 ; php/optimized/apprentice.ll
 ; protobuf/optimized/descriptor_database.cc.ll
-; protobuf/optimized/field_mask_util.cc.ll
 ; qemu/optimized/hw_ide_core.c.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i64
   %2 = mul nuw nsw i64 %1, 24
   %3 = add nuw nsw i64 %2, 4294967275
+  ret i64 %3
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i8 %0) #0 {
+entry:
+  %1 = zext nneg i8 %0 to i64
+  %2 = mul i64 %1, 1051668233026429277
+  %3 = add i64 %2, 1650762746860425525
   ret i64 %3
 }
 

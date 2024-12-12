@@ -1,8 +1,10 @@
 
-; 29 occurrences:
+; 31 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/dlasd4.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll

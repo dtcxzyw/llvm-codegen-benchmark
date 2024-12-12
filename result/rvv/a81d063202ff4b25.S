@@ -7,7 +7,7 @@ func0000000000000004:                   # @func0000000000000004
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	vmflt.vv	v0, v24, v16
 	vmerge.vvm	v16, v24, v16, v0
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	vfmul.vf	v8, v8, fa5
 	ret
 func000000000000000c:                   # @func000000000000000c
@@ -15,7 +15,7 @@ func000000000000000c:                   # @func000000000000000c
 	vle64.v	v24, (a0)
 	vmfle.vv	v0, v24, v16
 	vmerge.vvm	v16, v24, v16, v0
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	fli.d	fa5, 0.5
 	vfmul.vf	v8, v8, fa5
 	ret

@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movq	%rdi, %rax
 	movabsq	$1749024623285053783, %rcx      # imm = 0x1845C8A0CE512957
 	imulq	%rcx
@@ -10,7 +10,7 @@ func0000000000000014:                   # @func0000000000000014
 	cmpq	%rdx, %rax
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	sarq	$3, %rdi
 	movabsq	$7905747460161236407, %rax      # imm = 0x6DB6DB6DB6DB6DB7
 	imulq	%rdi, %rax
@@ -19,16 +19,16 @@ func0000000000000058:                   # @func0000000000000058
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	cmpq	$24, %rdi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addq	$-88, %rdi
 	cmpq	$88, %rdi
 	setb	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	sarq	$3, %rdi
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	imulq	%rdi, %rax
@@ -36,12 +36,20 @@ func0000000000000054:                   # @func0000000000000054
 	cmpq	$2, %rax
 	setb	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func00000000000000b4:                   # @func00000000000000b4
+	sarq	$4, %rdi
+	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
+	imulq	%rdi, %rax
+	incq	%rax
+	cmpq	$6, %rax
+	setb	%al
+	retq
+func000000000000002c:                   # @func000000000000002c
 	incq	%rdi
 	cmpq	$-2, %rdi
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	movq	%rdi, %rax
 	shrq	$63, %rax
 	addq	%rdi, %rax
@@ -52,7 +60,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmpl	$7, %eax
 	setb	%al
 	retq
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	cmpq	$-40, %rdi
 	setne	%al
 	retq

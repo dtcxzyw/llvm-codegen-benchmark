@@ -30,23 +30,24 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/compare_internal_avx2.cc.ll
-; git/optimized/diff-delta.ll
+; boost/optimized/area.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; linux/optimized/kapi.ll
 ; qemu/optimized/net_announce.c.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

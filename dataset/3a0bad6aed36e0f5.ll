@@ -1,24 +1,12 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/abcIf.c.ll
-; abc/optimized/dauCanon.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000013(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 7
   %3 = shl nuw nsw i32 %0, 3
   %4 = select i1 %2, i32 8, i32 %3
-  ret i32 %4
-}
-
-; 1 occurrences:
-; abc/optimized/dauCanon.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
-entry:
-  %2 = icmp ult i8 %1, 7
-  %3 = shl nsw i32 %0, 2
-  %4 = select i1 %2, i32 4, i32 %3
   ret i32 %4
 }
 

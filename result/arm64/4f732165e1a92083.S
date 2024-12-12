@@ -16,7 +16,7 @@ func0000000000000054:                   // @func0000000000000054
 	add	x0, x0, x8, lsl #3
 	ret
                                         // -- End function
-func000000000000003e:                   // @func000000000000003e
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	add	x8, x1, w2, uxtw
 	add	x0, x0, x8, lsl #2
@@ -70,7 +70,7 @@ func000000000000003c:                   // @func000000000000003c
 	add	x0, x0, x8, lsl #1
 	ret
                                         // -- End function
-func000000000000007e:                   // @func000000000000007e
+func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
 	add	x8, x1, w2, uxtw
 	add	x0, x0, x8, lsl #3

@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; cpython/optimized/_datetimemodule.ll
-; openssl/optimized/rpktest-bin-rpktest.ll
 ; postgres/optimized/formatting.ll
 ; redis/optimized/localtime.ll
 ; ruby/optimized/date_core.ll

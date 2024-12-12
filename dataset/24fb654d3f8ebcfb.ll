@@ -8,7 +8,7 @@
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %0, 1
   %3 = icmp eq i16 %2, 0
@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/faceVertex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %0, 2
   %3 = icmp eq i16 %2, 0
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %0, 255
   %.not = icmp eq i16 %2, 0

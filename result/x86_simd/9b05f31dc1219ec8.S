@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	1                               # 0x1
-func000000000000018b:                   # @func000000000000018b
+func000000000000030b:                   # @func000000000000030b
 	vpmovqd	%ymm2, %xmm2
 	vpcmpeqd	.LCPI0_0(%rip){1to4}, %xmm1, %k1
 	vmovdqa32	%xmm0, %xmm2 {%k1}
@@ -10,7 +10,7 @@ func000000000000018b:                   # @func000000000000018b
 	retq
 .LCPI1_0:
 	.long	255                             # 0xff
-func0000000000000189:                   # @func0000000000000189
+func0000000000000309:                   # @func0000000000000309
 	vpmovqd	%ymm2, %xmm2
 	vpcmpeqd	.LCPI1_0(%rip){1to4}, %xmm1, %k1
 	vmovdqa32	%xmm0, %xmm2 {%k1}

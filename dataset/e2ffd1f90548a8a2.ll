@@ -1,5 +1,5 @@
 
-; 159 occurrences:
+; 157 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; abseil-cpp/optimized/elf_mem_image.cc.ll
 ; assimp/optimized/DeboneProcess.cpp.ll
@@ -8,7 +8,6 @@
 ; casadi/optimized/cs_add.c.ll
 ; casadi/optimized/cs_multiply.c.ll
 ; cmake/optimized/cover.c.ll
-; cpython/optimized/datetime.ll
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/pathconfig.ll
 ; cpython/optimized/tracemalloc.ll
@@ -34,6 +33,7 @@
 ; icu/optimized/ulocdata.ll
 ; ipopt/optimized/IpJournalist.ll
 ; ipopt/optimized/IpStdJInterface.ll
+; libquic/optimized/d1_both.c.ll
 ; libquic/optimized/div.c.ll
 ; libquic/optimized/ec_montgomery.c.ll
 ; libquic/optimized/ecdsa.c.ll
@@ -93,7 +93,6 @@
 ; openssl/optimized/libcrypto-lib-property_string.ll
 ; openssl/optimized/libcrypto-lib-rsa_backend.ll
 ; openssl/optimized/libcrypto-lib-rsa_chk.ll
-; openssl/optimized/libcrypto-lib-rsa_depr.ll
 ; openssl/optimized/libcrypto-lib-rsa_sp800_56b_gen.ll
 ; openssl/optimized/libcrypto-lib-sm2_crypt.ll
 ; openssl/optimized/libcrypto-lib-x_pubkey.ll
@@ -107,7 +106,6 @@
 ; openssl/optimized/libcrypto-shlib-property_string.ll
 ; openssl/optimized/libcrypto-shlib-rsa_backend.ll
 ; openssl/optimized/libcrypto-shlib-rsa_chk.ll
-; openssl/optimized/libcrypto-shlib-rsa_depr.ll
 ; openssl/optimized/libcrypto-shlib-rsa_sp800_56b_gen.ll
 ; openssl/optimized/libcrypto-shlib-sm2_crypt.ll
 ; openssl/optimized/libcrypto-shlib-x_pubkey.ll
@@ -168,7 +166,7 @@ entry:
   ret i1 %5
 }
 
-; 93 occurrences:
+; 92 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; c3c/optimized/llvm_codegen_stmt.c.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
@@ -253,7 +251,6 @@ entry:
 ; postgres/optimized/user.ll
 ; qemu/optimized/block_nbd.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
-; qemu/optimized/system_balloon.c.ll
 ; qemu/optimized/virtio-9p-client.c.ll
 ; rocksdb/optimized/filter_block_reader_common.cc.ll
 ; rocksdb/optimized/index_reader_common.cc.ll

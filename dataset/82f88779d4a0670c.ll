@@ -1,8 +1,10 @@
 
-%struct.rb_id_item.2485427 = type { i32, i32, i64 }
-%"class.llvm::SDValue.2956774" = type <{ ptr, i32, [4 x i8] }>
-%struct.NS_ATT.3699694 = type { i64, i64, ptr }
-%struct.NS_ATT.3765733 = type { i64, i64, ptr }
+%struct.rb_id_item.2600909 = type { i32, i32, i64 }
+%struct.FuncTypeEntry.2748662 = type { i32, ptr }
+%struct.SEntry.2748811 = type { ptr, ptr }
+%"class.llvm::SDValue.3150307" = type <{ ptr, i32, [4 x i8] }>
+%struct.NS_ATT.3879048 = type { i64, i64, ptr }
+%struct.NS_ATT.3943974 = type { i64, i64, ptr }
 
 ; 2 occurrences:
 ; linux/optimized/drm_ioctl.ll
@@ -14,12 +16,11 @@ entry:
   %4 = add nsw i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr %struct.rb_id_item.2485427, ptr %0, i64 %6
+  %7 = getelementptr %struct.rb_id_item.2600909, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 240 occurrences:
-; c3c/optimized/decltable.c.ll
+; 238 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; hermes/optimized/CFG.cpp.ll
@@ -62,7 +63,6 @@ entry:
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
-; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll
@@ -260,28 +260,27 @@ entry:
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.FuncTypeEntry.2748662, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 3 occurrences:
-; c3c/optimized/decltable.c.ll
+; 2 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.SEntry.2748811, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -291,13 +290,13 @@ entry:
 ; z3/optimized/arith_sls.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000043(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = add i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw %"class.llvm::SDValue.2956774", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::SDValue.3150307", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -305,26 +304,26 @@ entry:
 ; brotli/optimized/compound_dictionary.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000046(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000047(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = add i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw %struct.NS_ATT.3699694, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.NS_ATT.3879048, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -337,7 +336,7 @@ entry:
   %4 = add i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr %struct.NS_ATT.3765733, ptr %0, i64 %6
+  %7 = getelementptr %struct.NS_ATT.3943974, ptr %0, i64 %6
   ret ptr %7
 }
 

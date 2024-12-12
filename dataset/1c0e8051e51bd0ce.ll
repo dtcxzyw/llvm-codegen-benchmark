@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; cpython/optimized/io.ll
 ; libjpeg-turbo/optimized/rdtarga.c.ll
 ; linux/optimized/namei_msdos.ll
+; llvm/optimized/ASTContext.cpp.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; openjdk/optimized/constantPool.ll
 ; Function Attrs: nounwind
@@ -13,9 +14,10 @@ entry:
   ret i8 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; php/optimized/ir_emit.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wireshark/optimized/packet-alp.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i8 %1) #0 {

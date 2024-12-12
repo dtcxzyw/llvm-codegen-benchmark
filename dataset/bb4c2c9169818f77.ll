@@ -1,10 +1,9 @@
 
-; 104 occurrences:
+; 103 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -171,9 +170,9 @@ entry:
 ; 1 occurrences:
 ; php/optimized/random.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 3
   %4 = shl i32 %0, %3
   ret i32 %4

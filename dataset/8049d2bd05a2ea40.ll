@@ -11,7 +11,7 @@ entry:
   ret i32 %3
 }
 
-; 70 occurrences:
+; 66 occurrences:
 ; brotli/optimized/static_dict.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/brktrans.ll
@@ -36,9 +36,6 @@ entry:
 ; linux/optimized/ipv6_sockglue.ll
 ; linux/optimized/mcast.ll
 ; linux/optimized/ndisc.ll
-; linux/optimized/net-traces.ll
-; linux/optimized/nf_conntrack_proto.ll
-; linux/optimized/nf_defrag_ipv4.ll
 ; linux/optimized/nf_log_syslog.ll
 ; linux/optimized/nf_queue.ll
 ; linux/optimized/nfnetlink_log.ll
@@ -61,7 +58,6 @@ entry:
 ; linux/optimized/tcp_timer.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/udp.ll
-; linux/optimized/xfrm6_output.ll
 ; linux/optimized/xfrm_output.ll
 ; linux/optimized/xprtsock.ll
 ; luajit/optimized/lj_asm.ll
@@ -108,16 +104,17 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/intel_dpio_phy.ll
+; lvgl/optimized/lv_canvas.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i32
   %2 = shl nsw i32 -1, %1
-  %3 = and i32 %2, 15
+  %3 = and i32 %2, 255
   ret i32 %3
 }
 

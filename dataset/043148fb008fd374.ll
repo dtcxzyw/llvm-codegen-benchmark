@@ -1,5 +1,5 @@
 
-; 82 occurrences:
+; 81 occurrences:
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaSim2.c.ll
 ; abc/optimized/saigSimSeq.c.ll
@@ -45,7 +45,6 @@
 ; postgres/optimized/rangetypes.ll
 ; proj/optimized/4D_api.cpp.ll
 ; proj/optimized/calcofi.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/unitconvert.cpp.ll
 ; quantlib/optimized/actual365fixed.ll
 ; quantlib/optimized/basketgeneratingengine.ll

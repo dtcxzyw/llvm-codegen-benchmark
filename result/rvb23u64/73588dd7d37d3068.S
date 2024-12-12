@@ -1,4 +1,4 @@
-func0000000000000259:                   # @func0000000000000259
+func00000000000008a9:                   # @func00000000000008a9
 	sext.w	a1, a1
 	sext.w	a0, a0
 	srai	a2, a2, 32
@@ -7,7 +7,7 @@ func0000000000000259:                   # @func0000000000000259
 	or	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	sext.w	a0, a0
 	sext.w	a1, a1
 	srli	a2, a2, 6

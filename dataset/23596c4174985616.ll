@@ -426,6 +426,18 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; boost/optimized/thread.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000058(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = add nsw i32 %2, -48
+  %4 = mul nuw i32 %0, 10
+  %5 = add i32 %4, %3
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; wireshark/optimized/packet-f5ethtrailer.c.ll
 ; wireshark/optimized/packet-smb-pipe.c.ll

@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 86 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -7,6 +7,17 @@
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
+; boost/optimized/barrier.ll
+; boost/optimized/condition_variable.ll
+; boost/optimized/context.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/mutex.ll
+; boost/optimized/recursive_mutex.ll
+; boost/optimized/recursive_timed_mutex.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/timed_mutex.ll
+; boost/optimized/work_stealing.ll
 ; brotli/optimized/encode.c.ll
 ; c3c/optimized/bigint.c.ll
 ; diesel-rs/optimized/1og08er27yrgxd4i.ll
@@ -20,7 +31,6 @@
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
-; libquic/optimized/ecdsa_asn1.c.ll
 ; libquic/optimized/pkcs8.c.ll
 ; linux/optimized/hw_breakpoint.ll
 ; linux/optimized/ioremap.ll
@@ -85,13 +95,16 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
+; boost/optimized/work_stealing.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
@@ -103,7 +116,7 @@ entry:
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, -1
   %3 = add nsw i64 %2, %1
@@ -129,7 +142,7 @@ entry:
 ; gromacs/optimized/localtopology.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, 1
   %3 = add nsw i64 %2, %1
@@ -140,7 +153,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/dsa.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, 2
   %3 = add i64 %2, %1
@@ -148,13 +161,14 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; clamav/optimized/unarj.c.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, 2
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
@@ -177,11 +191,22 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/OSCompatPosix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, -1
   %3 = add i64 %2, %1
   %4 = icmp ult i64 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000105(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw i64 %0, 1
+  %3 = add i64 %2, %1
+  %4 = icmp ule i64 %3, %0
   ret i1 %4
 }
 

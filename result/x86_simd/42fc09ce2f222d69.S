@@ -1,9 +1,9 @@
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	vpminud	%ymm1, %ymm0, %ymm2
 	vpmaxud	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	vpminud	%ymm1, %ymm0, %ymm2
 	vpmaxud	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm2, %ymm0, %ymm0
@@ -18,12 +18,12 @@ func000000000000000a:                   # @func000000000000000a
 	vpminsd	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	vpminud	%ymm1, %ymm0, %ymm2
 	vpmaxud	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	vpminud	%ymm1, %ymm0, %ymm2
 	vpmaxud	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm2, %ymm0, %ymm0
@@ -33,7 +33,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpmaxud	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
-func00000000000000b8:                   # @func00000000000000b8
+func0000000000000168:                   # @func0000000000000168
 	vpminud	%ymm1, %ymm0, %ymm2
 	vpmaxud	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm2, %ymm0, %ymm0

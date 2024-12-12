@@ -6,7 +6,7 @@ define i8 @func0000000000000043(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 7
   %4 = zext i1 %3 to i8
-  %5 = or disjoint i8 %4, %1
+  %5 = or disjoint i8 %1, %4
   %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
@@ -18,7 +18,7 @@ define i8 @func000000000000000b(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = zext i1 %3 to i8
-  %5 = or disjoint i8 %4, %1
+  %5 = or disjoint i8 %1, %4
   %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
@@ -30,7 +30,7 @@ define i8 @func0000000000000060(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i8
-  %5 = or i8 %4, %1
+  %5 = or i8 %1, %4
   %6 = or i8 %5, %0
   ret i8 %6
 }
@@ -42,7 +42,7 @@ define i8 @func0000000000000008(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = zext i1 %3 to i8
-  %5 = or i8 %4, %1
+  %5 = or i8 %1, %4
   %6 = or i8 %5, %0
   ret i8 %6
 }
@@ -56,7 +56,7 @@ define i8 @func0000000000000063(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i8
-  %5 = or disjoint i8 %4, %1
+  %5 = or disjoint i8 %1, %4
   %6 = or disjoint i8 %5, %0
   ret i8 %6
 }

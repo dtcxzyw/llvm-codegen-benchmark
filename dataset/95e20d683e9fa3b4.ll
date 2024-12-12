@@ -92,19 +92,15 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 11 occurrences:
 ; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/kyber-iosched.ll
 ; llvm/optimized/MSFBuilder.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; oiio/optimized/targainput.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorghr.c.ll
 ; openblas/optimized/dstedc.c.ll
-; openblas/optimized/dstein.c.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/freak.cpp.ll
 ; opencv/optimized/gapi_core_perf_tests.cpp.ll

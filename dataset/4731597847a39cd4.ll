@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 43 occurrences:
 ; actix-rs/optimized/1rmq6g519rw6hl6a.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; freetype/optimized/autofit.c.ll
@@ -26,6 +26,7 @@
 ; rust-analyzer-rs/optimized/1au8fupciwcmum6.ll
 ; softposit-rs/optimized/4wrr62dd33canpwl.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
@@ -36,6 +37,12 @@
 ; wireshark/optimized/packet-ethertype.c.ll
 ; wireshark/optimized/packet-nas_eps.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i8 %1) #0 {
 entry:

@@ -16,7 +16,9 @@ entry:
   ret ptr %6
 }
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; folly/optimized/RecordIO.cpp.ll
 ; jq/optimized/regexec.ll
 ; oniguruma/optimized/regexec.ll

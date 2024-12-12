@@ -8,20 +8,38 @@ func0000000000000003:                   # @func0000000000000003
 	vorps	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI1_0:
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
+	.short	100                             # 0x64
+	.short	100                             # 0x64
+	.short	100                             # 0x64
+	.short	100                             # 0x64
+	.short	100                             # 0x64
+	.short	100                             # 0x64
+	.short	100                             # 0x64
+	.short	100                             # 0x64
 .LCPI1_1:
-	.long	8                               # 0x8
+	.long	4294836223                      # 0xfffdffff
 .LCPI1_2:
-	.long	15990784                        # 0xf40000
-func0000000000000011:                   # @func0000000000000011
-	vpcmpnleuw	.LCPI1_0(%rip), %xmm1, %k1
+	.long	131072                          # 0x20000
+func0000000000000009:                   # @func0000000000000009
+	vpcmpltuw	.LCPI1_0(%rip), %xmm1, %k1
 	vandps	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	vorps	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	retq
+.LCPI2_0:
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+	.short	4                               # 0x4
+.LCPI2_1:
+	.long	8                               # 0x8
+.LCPI2_2:
+	.long	15990784                        # 0xf40000
+func0000000000000011:                   # @func0000000000000011
+	vpcmpnleuw	.LCPI2_0(%rip), %xmm1, %k1
+	vandps	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
+	vorps	.LCPI2_2(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

@@ -12,7 +12,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = trunc i8 %1 to i1
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = icmp eq i32 %2, 2
   %4 = trunc nuw i8 %1 to i1
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

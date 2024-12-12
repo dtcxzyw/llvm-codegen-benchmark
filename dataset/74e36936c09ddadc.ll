@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -20,6 +20,7 @@
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CImage.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; openjdk/optimized/Ushort565Rgb.ll
@@ -35,11 +36,11 @@ define i16 @func0000000000000007(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 3
   %3 = and i16 %2, 8
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
-; 632 occurrences:
+; 634 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
@@ -78,19 +79,18 @@ entry:
 ; libevent/optimized/epoll.c.ll
 ; libpng/optimized/png.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/hcd.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/io_uring.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/osl.ll
@@ -413,7 +413,6 @@ entry:
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -562,6 +561,10 @@ entry:
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_spinbox.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
@@ -723,7 +726,7 @@ define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl i16 %1, 7
   %3 = and i16 %2, 896
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 
@@ -750,11 +753,11 @@ define i16 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 7
   %3 = and i16 %2, -1024
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; coreutils-rs/optimized/17ojgxcnujh4nt6.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
@@ -762,6 +765,7 @@ entry:
 ; libpng/optimized/png.c.ll
 ; libquic/optimized/poly.c.ll
 ; libwebp/optimized/vp8_dec.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; openjdk/optimized/png.ll
 ; ripgrep-rs/optimized/17szqs4crgj36yow.ll
 ; wireshark/optimized/mp2t.c.ll

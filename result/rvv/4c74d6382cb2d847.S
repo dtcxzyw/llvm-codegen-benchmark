@@ -11,7 +11,7 @@ func00000000000000bc:                   # @func00000000000000bc
 	vsll.vi	v12, v12, 24
 	vsll.vi	v10, v10, 16
 	vor.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vadd.vv	v8, v8, v8
 	ret
 func00000000000000fe:                   # @func00000000000000fe

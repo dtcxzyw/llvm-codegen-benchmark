@@ -106,7 +106,7 @@ define i64 @func0000000000000028(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add nuw i64 %4, %1
+  %5 = add nuw i64 %1, %4
   %6 = shl i64 %5, %0
   ret i64 %6
 }
@@ -214,12 +214,13 @@ define i64 @func0000000000000030(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw nsw i128 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = shl i64 %5, %0
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; Function Attrs: nounwind
@@ -227,7 +228,7 @@ define i64 @func0000000000000020(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = shl i64 %5, %0
   ret i64 %6
 }

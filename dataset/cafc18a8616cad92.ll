@@ -1,10 +1,32 @@
 
-; 57 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaTruth.c.ll
-; cvc5/optimized/strategy.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; hyperscan/optimized/gtest-all.cc.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; openjdk/optimized/continuationFreezeThaw.ll
+; openjdk/optimized/jfrJavaEventWriter.ll
+; openjdk/optimized/mutableNUMASpace.ll
+; slurm/optimized/data_parser_v0_0_39_la-parsing.ll
+; slurm/optimized/data_parser_v0_0_40_la-parsing.ll
+; slurm/optimized/data_parser_v0_0_41_la-parsing.ll
+; vcpkg/optimized/spdx.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 0, i64 %2
+  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 47 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/url_base.ll
+; gromacs/optimized/muParserTest.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -43,25 +65,16 @@
 ; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
 ; oiio/optimized/jpegoutput.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
-; openjdk/optimized/continuationFreezeThaw.ll
-; openjdk/optimized/jfrJavaEventWriter.ll
-; openjdk/optimized/mutableNUMASpace.ll
 ; openspiel/optimized/skat.cc.ll
-; slurm/optimized/data_parser_v0_0_39_la-parsing.ll
-; slurm/optimized/data_parser_v0_0_40_la-parsing.ll
-; slurm/optimized/data_parser_v0_0_41_la-parsing.ll
 ; sqlite/optimized/sqlite3.ll
-; vcpkg/optimized/spdx.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
+define i64 @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

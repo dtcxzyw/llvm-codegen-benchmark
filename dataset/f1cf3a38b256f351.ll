@@ -1,10 +1,11 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; darktable/optimized/introspection_dither.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll

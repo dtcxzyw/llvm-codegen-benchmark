@@ -24,9 +24,16 @@ func0000000000000010:                   # @func0000000000000010
 	mulxq	%rax, %rax, %rax
 	shrq	$6, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+func0000000000000019:                   # @func0000000000000019
 	leaq	(%rdx,%rdx,2), %rax
-	leaq	(%rsi,%rax,8), %rcx
+	leaq	(%rsi,%rax,2), %rcx
+	subq	%rdi, %rcx
+	shrq	%rcx
+	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	imulq	%rcx, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	leaq	(%rsi,%rdx), %rcx
 	subq	%rdi, %rcx
 	shrq	$3, %rcx
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB

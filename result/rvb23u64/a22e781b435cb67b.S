@@ -3,11 +3,6 @@ func0000000000000035:                   # @func0000000000000035
 	srliw	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func0000000000000025:                   # @func0000000000000025
-	addi	a1, a1, 7
-	srliw	a1, a1, 3
-	add	a0, a0, a1
-	ret
 func0000000000000037:                   # @func0000000000000037
 	addi	a1, a1, 31
 	srliw	a1, a1, 5

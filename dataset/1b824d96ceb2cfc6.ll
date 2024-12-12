@@ -13,8 +13,7 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; linux/optimized/intel-sdw-acpi.ll
+; 2 occurrences:
 ; openspiel/optimized/twixtboard.cc.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind

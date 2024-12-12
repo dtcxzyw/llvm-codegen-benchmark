@@ -1,6 +1,6 @@
 
 ; 15 occurrences:
-; cpython/optimized/Hacl_Hash_SHA3.ll
+; boost/optimized/parser_utils.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; php/optimized/apprentice.ll
@@ -33,7 +33,7 @@ entry:
   ret i8 %2
 }
 
-; 36 occurrences:
+; 43 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; crow/optimized/example.cpp.ll
 ; duckdb/optimized/ub_duckdb_bind_query_node.cpp.ll
@@ -70,6 +70,13 @@ entry:
 ; wireshark/optimized/packet-fcoib.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/strutil.c.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0) #0 {
 entry:

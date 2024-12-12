@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 62 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -17,6 +17,9 @@
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; meshlab/optimized/multiViewer_Container.cpp.ll
 ; minetest/optimized/CGUIListBox.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
@@ -50,6 +53,7 @@
 ; openssl/optimized/openssl-bin-enc.ll
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/formatting.ll
+; postgres/optimized/fsmpage.ll
 ; proj/optimized/grids.cpp.ll
 ; ruby/optimized/date_core.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll

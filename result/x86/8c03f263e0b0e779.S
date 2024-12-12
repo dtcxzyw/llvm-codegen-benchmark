@@ -41,8 +41,8 @@ func000000000000001b:                   # @func000000000000001b
 	cmovgl	%ecx, %eax
 	retq
 func0000000000000020:                   # @func0000000000000020
-	leal	-1(%rdi), %ecx
-	cmpl	$129, %edi
-	movl	$126, %eax
+	leal	16711680(%rdi), %ecx
+	cmpl	$-2, %edi
+	movl	$16777213, %eax                 # imm = 0xFFFFFD
 	cmovbl	%ecx, %eax
 	retq

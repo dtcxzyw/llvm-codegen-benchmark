@@ -23,7 +23,7 @@ func0000000000000003:                   # @func0000000000000003
 	.quad	0x3fe0000000000000              # double 0.5
 func0000000000000004:                   # @func0000000000000004
 	vmulsd	.LCPI2_0(%rip), %xmm2, %xmm2
-	vaddsd	%xmm1, %xmm2, %xmm1
+	vaddsd	%xmm2, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%al
 	retq

@@ -1,10 +1,8 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	fneg	v5.2d, v5.2d
-	fneg	v4.2d, v4.2d
-	cmlt	v3.2d, v3.2d, #0
-	cmlt	v2.2d, v2.2d, #0
-	bif	v0.16b, v4.16b, v2.16b
-	bif	v1.16b, v5.16b, v3.16b
+	fmov	x8, d0
+	cmp	x1, #0
+	eor	x8, x8, #0x8000000000000000
+	csel	x0, x0, x8, lt
 	ret
                                         // -- End function

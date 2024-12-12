@@ -1,3 +1,11 @@
+func0000000000000007:                   # @func0000000000000007
+	testb	$1, %dl
+	movl	$51, %eax
+	movl	$39, %ecx
+	cmovnel	%eax, %ecx
+	shlxq	%rcx, %rsi, %rax
+	orq	%rdi, %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	notb	%dl
 	andb	$1, %dl

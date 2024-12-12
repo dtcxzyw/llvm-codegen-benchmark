@@ -10,7 +10,7 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/pdrUtil.c.ll
 ; chibicc/optimized/parse.ll
@@ -23,13 +23,12 @@ entry:
 ; linux/optimized/xarray.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
-; qemu/optimized/hw_sd_cadence_sdhci.c.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, -117440513
+  %4 = and i32 %3, 63
   %5 = select i1 %0, i32 %4, i32 %1
   ret i32 %5
 }

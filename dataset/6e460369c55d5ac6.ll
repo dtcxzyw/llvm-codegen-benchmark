@@ -14,6 +14,27 @@ entry:
   ret i32 %7
 }
 
+; 9 occurrences:
+; llvm/optimized/CGCUDANV.cpp.ll
+; llvm/optimized/CoroSplit.cpp.ll
+; llvm/optimized/ExpandVariadics.cpp.ll
+; llvm/optimized/FunctionImport.cpp.ll
+; llvm/optimized/GlobalOpt.cpp.ll
+; llvm/optimized/IRMover.cpp.ll
+; llvm/optimized/InstrProfiling.cpp.ll
+; llvm/optimized/LowerEmuTLS.cpp.ll
+; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 2
+  %4 = select i1 %3, i32 -832, i32 -16
+  %5 = and i32 %4, %0
+  %6 = and i32 %1, 15
+  %7 = or disjoint i32 %5, %6
+  ret i32 %7
+}
+
 ; 1 occurrences:
 ; linux/optimized/intel_lvds.ll
 ; Function Attrs: nounwind

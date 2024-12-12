@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 17 occurrences:
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
 ; actix-rs/optimized/3u1jix79tu9frq3m.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
@@ -12,6 +12,11 @@
 ; rust-analyzer-rs/optimized/2ydioyxkoxez3z9r.ll
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -25,7 +30,7 @@ entry:
 ; folly/optimized/SemaphoreBase.cpp.ll
 ; openspiel/optimized/Timer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %1, %0
   %3 = icmp sgt i64 %0, %1
@@ -53,7 +58,7 @@ entry:
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %1, %0
   %3 = icmp ugt i64 %0, %1
@@ -61,11 +66,13 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; cmake/optimized/nghttp2_session.c.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %0, %1
   %3 = icmp ult i64 %0, %1
@@ -80,7 +87,7 @@ entry:
 ; llvm/optimized/Decl.cpp.ll
 ; openjdk/optimized/g1ConcurrentRefineStats.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = icmp slt i64 %0, %1
@@ -96,7 +103,7 @@ entry:
 ; quantlib/optimized/noarbsabr.ll
 ; redis/optimized/latency.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %1, %0
   %3 = icmp eq i64 %0, %1
@@ -115,6 +122,18 @@ entry:
   %2 = sub i64 %1, %0
   %3 = icmp sgt i64 %0, %1
   %4 = select i1 %3, i64 0, i64 %2
+  ret i64 %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw nsw i64 %0, %1
+  %3 = icmp eq i64 %0, %1
+  %4 = select i1 %3, i64 15, i64 %2
   ret i64 %4
 }
 

@@ -14,7 +14,7 @@ func000000000000005a:                   // @func000000000000005a
 	sub	x0, x8, #2
 	ret
                                         // -- End function
-func000000000000007a:                   // @func000000000000007a
+func000000000000007b:                   // @func000000000000007b
 // %bb.0:                               // %entry
 	add	w8, w2, w2, lsl #1
 	add	x8, x0, w8, sxtw #1

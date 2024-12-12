@@ -1,5 +1,6 @@
 
-; 15 occurrences:
+; 18 occurrences:
+; boost/optimized/params_iter_impl.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; cpython/optimized/formatter_unicode.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
@@ -15,6 +16,8 @@
 ; openjdk/optimized/zMemory.ll
 ; rocksdb/optimized/random_access_file_reader.cc.ll
 ; ruby/optimized/string.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/deqzoqcotewn9fb0m32sor9lr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -31,25 +31,32 @@ func0000000000000002:                   # @func0000000000000002
 	setp	%al
 	retq
 .LCPI6_0:
+	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10
+func0000000000000014:                   # @func0000000000000014
+	vmovsd	.LCPI6_0(%rip), %xmm1           # xmm1 = [1.0E-10,0.0E+0]
+	vucomisd	%xmm0, %xmm1
+	setae	%al
+	retq
+.LCPI7_0:
 	.quad	0x3f947ae147ae147b              # double 0.02
 func0000000000000018:                   # @func0000000000000018
-	vucomisd	.LCPI6_0(%rip), %xmm0
+	vucomisd	.LCPI7_0(%rip), %xmm0
 	setae	%al
 	retq
 func000000000000001c:                   # @func000000000000001c
 	vucomisd	%xmm0, %xmm0
 	setnp	%al
 	retq
-.LCPI8_0:
-	.quad	0x7ff0000000000000              # double +Inf
-func0000000000000012:                   # @func0000000000000012
-	vucomisd	.LCPI8_0(%rip), %xmm0
-	sete	%al
-	retq
 .LCPI9_0:
 	.quad	0x7ff0000000000000              # double +Inf
-func000000000000000c:                   # @func000000000000000c
+func0000000000000012:                   # @func0000000000000012
 	vucomisd	.LCPI9_0(%rip), %xmm0
+	sete	%al
+	retq
+.LCPI10_0:
+	.quad	0x7ff0000000000000              # double +Inf
+func000000000000000c:                   # @func000000000000000c
+	vucomisd	.LCPI10_0(%rip), %xmm0
 	setne	%al
 	retq
 func0000000000000006:                   # @func0000000000000006

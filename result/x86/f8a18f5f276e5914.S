@@ -3,15 +3,15 @@ func0000000000000008:                   # @func0000000000000008
 	movl	%edx, %ecx
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movq	%rsi, %rax
 	movl	%edx, %ecx
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
@@ -19,6 +19,6 @@ func0000000000000004:                   # @func0000000000000004
 	movl	%edx, %ecx
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq

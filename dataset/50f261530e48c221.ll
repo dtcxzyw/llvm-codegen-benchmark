@@ -6,7 +6,7 @@
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp2.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000341(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -24,7 +24,7 @@ entry:
 ; abc/optimized/kitDsd.c.ll
 ; yosys/optimized/blifparse.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000381(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000281(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -55,7 +55,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000003c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -68,7 +68,7 @@ entry:
 ; linux/optimized/mmconfig-shared.ll
 ; linux/optimized/page_alloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1

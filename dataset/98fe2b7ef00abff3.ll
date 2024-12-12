@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
@@ -23,9 +23,6 @@
 ; linux/optimized/rmap.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
-; minetest/optimized/CGUIFont.cpp.ll
-; minetest/optimized/COpenGLDriver.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openspiel/optimized/cfr.cc.ll
 ; openspiel/optimized/garnet.cc.ll
@@ -54,7 +51,7 @@ entry:
   ret i64 %4
 }
 
-; 20 occurrences:
+; 18 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -71,9 +68,7 @@ entry:
 ; llvm/optimized/ResourcePriorityQueue.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; luau/optimized/Parser.cpp.ll
-; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/pipeline.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
@@ -81,18 +76,6 @@ entry:
   %2 = lshr exact i64 %1, 3
   %3 = and i64 %2, 4294967295
   %4 = sub nuw nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 2 occurrences:
-; minetest/optimized/CSkinnedMesh.cpp.ll
-; minetest/optimized/CXMeshFileLoader.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
-entry:
-  %2 = lshr exact i64 %1, 2
-  %3 = and i64 %2, 4294967295
-  %4 = sub nsw i64 %3, %0
   ret i64 %4
 }
 
@@ -111,8 +94,7 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {

@@ -31,7 +31,7 @@ define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 255, %2
   %4 = mul nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = and i32 %5, 32767
   ret i32 %6
 }

@@ -4,7 +4,7 @@
 ; hermes/optimized/regcomp.c.ll
 ; llvm/optimized/regcomp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %1, %2
   %4 = icmp eq i8 %3, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %1, %2
   %4 = icmp ne i8 %3, 0

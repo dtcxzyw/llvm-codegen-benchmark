@@ -16,3 +16,10 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$-1, %eax
 	cmovll	%ecx, %eax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	testb	$1, %dil
+	movl	$16, %eax
+	cmovnel	%eax, %esi
+	testl	%esi, %esi
+	cmovgl	%esi, %eax
+	retq

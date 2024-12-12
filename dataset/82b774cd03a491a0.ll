@@ -1,10 +1,10 @@
 
-; 133 occurrences:
+; 130 occurrences:
+; boost/optimized/topology.ll
 ; cmake/optimized/SystemInformation.cxx.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; csmith/optimized/SafeOpFlags.cpp.ll
-; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
 ; faiss/optimized/index_factory.cpp.ll
@@ -89,7 +89,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -121,9 +120,7 @@
 ; spike/optimized/spike-log-parser.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
-; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
 ; vcpkg/optimized/tools.cpp.ll
 ; wasmtime-rs/optimized/4d248unwvleglo3y.ll
 ; xgboost/optimized/context.cc.ll
@@ -141,7 +138,7 @@ entry:
   ret i1 %4
 }
 
-; 22 occurrences:
+; 28 occurrences:
 ; assimp/optimized/ComputeUVMappingProcess.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -150,7 +147,6 @@ entry:
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
 ; ncnn/optimized/squeeze.cpp.ll
 ; ockam-rs/optimized/1sh1jgeif2r7m14r.ll
 ; openjdk/optimized/deoptimization.ll
@@ -164,6 +160,13 @@ entry:
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; z3/optimized/smt2parser.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i8 %1, i8 %2) #0 {
 entry:

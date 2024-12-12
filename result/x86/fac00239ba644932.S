@@ -10,8 +10,3 @@ func0000000000000016:                   # @func0000000000000016
 	shlq	$4, %rax
 	leaq	-16(%rax,%rsi), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
-	movslq	%edx, %rax
-	leaq	(%rdi,%rsi,4), %rcx
-	leaq	4(%rcx,%rax,4), %rax
-	retq

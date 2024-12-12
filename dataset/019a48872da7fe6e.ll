@@ -1,11 +1,13 @@
 
-; 25 occurrences:
+; 27 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; cvc5/optimized/portfolio_driver.cpp.ll
 ; darktable/optimized/print_settings.c.ll
 ; darktable/optimized/ratings.c.ll

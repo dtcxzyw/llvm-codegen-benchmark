@@ -1,54 +1,22 @@
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	movi	v4.8h, #8, lsl #8
-	zip1	v5.8b, v2.8b, v0.8b
-	zip2	v2.8b, v2.8b, v0.8b
-	cmhi	v3.8h, v4.8h, v3.8h
-	ushll	v4.4s, v5.4h, #0
-	ushll	v2.4s, v2.4h, #0
-	sshll	v5.4s, v3.4h, #0
-	sshll2	v3.4s, v3.8h, #0
-	shl	v4.4s, v4.4s, #31
-	shl	v2.4s, v2.4s, #31
-	mvn	v6.16b, v3.16b
-	bic	v3.4s, #1
-	mvn	v7.16b, v5.16b
-	bic	v5.4s, #1
-	cmlt	v4.4s, v4.4s, #0
-	cmlt	v2.4s, v2.4s, #0
-	bic	v6.4s, #2
-	bic	v7.4s, #2
-	orr	v4.16b, v5.16b, v4.16b
-	orr	v2.16b, v3.16b, v2.16b
-	orr	v3.16b, v4.16b, v7.16b
-	orr	v2.16b, v2.16b, v6.16b
-	add	v1.4s, v2.4s, v1.4s
-	add	v0.4s, v3.4s, v0.4s
+	and	w8, w2, #0xffff
+	cmp	w8, #2048
+	mov	w8, #-3                         // =0xfffffffd
+	cinc	w8, w8, lo
+	tst	w1, #0x1
+	csinv	w8, w8, wzr, eq
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
-	movi	v4.8h, #8, lsl #8
-	zip2	v5.8b, v2.8b, v0.8b
-	zip1	v2.8b, v2.8b, v0.8b
-	movi	v6.4s, #2
-	cmhi	v3.8h, v4.8h, v3.8h
-	ushll	v4.4s, v5.4h, #0
-	ushll	v2.4s, v2.4h, #0
-	movi	v5.4s, #3
-	sshll2	v7.4s, v3.8h, #0
-	sshll	v3.4s, v3.4h, #0
-	shl	v4.4s, v4.4s, #31
-	shl	v2.4s, v2.4s, #31
-	bsl	v3.16b, v6.16b, v5.16b
-	bit	v5.16b, v6.16b, v7.16b
-	cmlt	v4.4s, v4.4s, #0
-	cmlt	v2.4s, v2.4s, #0
-	bic	v5.16b, v5.16b, v4.16b
-	bic	v3.16b, v3.16b, v2.16b
-	sub	v4.4s, v5.4s, v4.4s
-	sub	v2.4s, v3.4s, v2.4s
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v4.4s, v1.4s
+	and	w8, w2, #0xffff
+	cmp	w8, #2048
+	mov	w8, #2                          // =0x2
+	cinc	w8, w8, hs
+	tst	w1, #0x1
+	csinc	w8, w8, wzr, eq
+	add	w0, w8, w0
 	ret
                                         // -- End function

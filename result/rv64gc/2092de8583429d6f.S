@@ -6,11 +6,21 @@ func0000000000000002:                   # @func0000000000000002
 	slli	a1, a0, 2
 	addw	a0, a0, a1
 	ret
-func0000000000000005:                   # @func0000000000000005
+func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, 1
 	beqz	a1, .LBB1_2
-	li	a2, -151
+	li	a2, -1076
 .LBB1_2:                                # %entry
+	add	a0, a0, a2
+	lui	a1, 1048279
+	addi	a1, a1, -847
+	mulw	a0, a0, a1
+	ret
+func0000000000000005:                   # @func0000000000000005
+	andi	a1, a1, 1
+	beqz	a1, .LBB2_2
+	li	a2, -151
+.LBB2_2:                                # %entry
 	add	a0, a0, a2
 	lui	a1, 1048279
 	addi	a1, a1, -847
@@ -18,9 +28,9 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000007:                   # @func0000000000000007
 	andi	a1, a1, 1
-	beqz	a1, .LBB2_2
+	beqz	a1, .LBB3_2
 	li	a2, 2000
-.LBB2_2:                                # %entry
+.LBB3_2:                                # %entry
 	add	a0, a0, a2
 	lui	a1, 9
 	addi	a1, a1, -339

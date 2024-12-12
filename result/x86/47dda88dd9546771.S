@@ -4,31 +4,31 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %sil
 	movl	$4, %ecx
 	cmovneq	%rax, %rcx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addq	$-4, %rdx
 	testb	$1, %sil
 	movl	$5, %eax
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	addq	$-256, %rdx
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	cmpq	%rdi, %rdx
 	setae	%al
 	andb	%sil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	cmpq	%rdi, %rdx
 	setle	%al
 	andb	%sil, %al
@@ -38,6 +38,6 @@ func0000000000000004:                   # @func0000000000000004
 	testb	$1, %sil
 	movl	$10, %eax
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq

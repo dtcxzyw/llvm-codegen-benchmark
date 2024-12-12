@@ -1,9 +1,13 @@
 
-; 8 occurrences:
-; bullet3/optimized/btMultiBodyDynamicsWorld.ll
+%class.symbol.3613505 = type { ptr }
+
+; 10 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; linux/optimized/deflate.ll
 ; linux/optimized/drm_color_mgmt.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
 ; postgres/optimized/brin.ll
 ; postgres/optimized/spgxlog.ll
 ; ruby/optimized/bignum.ll
@@ -17,69 +21,37 @@ entry:
   ret ptr %5
 }
 
-; 199 occurrences:
-; abc/optimized/dsc.c.ll
+; 166 occurrences:
 ; brotli/optimized/compound_dictionary.c.ll
-; bullet3/optimized/btMultiBody.ll
-; casadi/optimized/bspline.cpp.ll
-; casadi/optimized/linear_interpolant.cpp.ll
-; casadi/optimized/sparsity_internal.cpp.ll
 ; darktable/optimized/introspection_dither.c.ll
-; faiss/optimized/ProductQuantizer.cpp.ll
-; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/truetype.c.ll
 ; git/optimized/index-pack.ll
+; gromacs/optimized/lmmin.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; hyperscan/optimized/scratch.c.ll
-; icu/optimized/ubidi.ll
 ; libquic/optimized/t1_enc.c.ll
-; lief/optimized/rsa.c.ll
-; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; opencv/optimized/bilateral_filter.dispatch.cpp.ll
-; opencv/optimized/canny.cpp.ll
-; opencv/optimized/channels.cpp.ll
-; opencv/optimized/connectedcomponents.cpp.ll
-; opencv/optimized/emd.cpp.ll
-; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
 ; opencv/optimized/shapedescr.cpp.ll
-; opencv/optimized/stackblur.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
-; opencv/optimized/tree.cpp.ll
-; openexr/optimized/parse_header.c.ll
 ; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/mlib_ImageScanPoly.ll
-; openmpi/optimized/ad_read_coll.ll
-; openmpi/optimized/ad_write_coll.ll
-; openmpi/optimized/coll_base_allgatherv.ll
-; openmpi/optimized/topo_base_dist_graph_create.ll
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
-; openssl/optimized/libdefault-lib-scrypt.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
-; osqp/optimized/amd_1.c.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; ozz-animation/optimized/track.cc.ll
-; php/optimized/compact_literals.ll
 ; php/optimized/ir_emit.ll
-; php/optimized/zend_cfg.ll
-; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_hexwave.c.ll
-; tls-rs/optimized/4vvnrvl2eceao62c.ll
 ; z3/optimized/add_bounds_tactic.cpp.ll
 ; z3/optimized/api_quant.cpp.ll
 ; z3/optimized/asserted_formulas.cpp.ll
@@ -102,7 +74,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/decl_collector.cpp.ll
@@ -218,24 +189,51 @@ entry:
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/well_sorted.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000003f(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i64, ptr %2, i64 %1
-  %4 = getelementptr nusw i64, ptr %3, i64 %1
-  %5 = getelementptr nusw i64, ptr %4, i64 %0
+  %3 = getelementptr nusw nuw i64, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i64, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %0
   ret ptr %5
 }
 
-; 10 occurrences:
-; casadi/optimized/feasiblesqpmethod.cpp.ll
-; casadi/optimized/lsqr.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; 23 occurrences:
+; bullet3/optimized/btMultiBody.ll
+; bullet3/optimized/btMultiBodyDynamicsWorld.ll
+; casadi/optimized/sparsity_internal.cpp.ll
+; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
+; icu/optimized/ubidi.ll
+; llama.cpp/optimized/ggml.c.ll
+; opencv/optimized/canny.cpp.ll
+; opencv/optimized/channels.cpp.ll
+; opencv/optimized/connectedcomponents.cpp.ll
+; opencv/optimized/emd.cpp.ll
+; opencv/optimized/stackblur.cpp.ll
+; opencv/optimized/stereosgbm.cpp.ll
 ; opencv/optimized/tree.cpp.ll
-; openjdk/optimized/mlib_ImageConv_16ext.ll
+; openexr/optimized/parse_header.c.ll
+; openjdk/optimized/mlib_ImageScanPoly.ll
+; openmpi/optimized/ad_read_coll.ll
+; openmpi/optimized/topo_base_dist_graph_create.ll
+; openssl/optimized/libdefault-lib-scrypt.ll
+; openusd/optimized/openexr-c.c.ll
+; osqp/optimized/amd_1.c.ll
+; php/optimized/zend_cfg.ll
+; stb/optimized/stb_hexwave.c.ll
+; tls-rs/optimized/4vvnrvl2eceao62c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i32, ptr %2, i64 %1
+  %4 = getelementptr nusw i32, ptr %3, i64 %1
+  %5 = getelementptr nusw i32, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 4 occurrences:
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
-; openjdk/optimized/mlib_ImageConv_8ext.ll
 ; openjdk/optimized/mlib_ImageConv_8nw.ll
-; openjdk/optimized/mlib_ImageConv_u16ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i64 %0, i64 %1, ptr %2) #0 {
@@ -246,30 +244,133 @@ entry:
   ret ptr %5
 }
 
-; 9 occurrences:
-; bullet3/optimized/btMultiBodyDynamicsWorld.ll
-; casadi/optimized/feasiblesqpmethod.cpp.ll
-; casadi/optimized/lsqr.cpp.ll
-; casadi/optimized/sparsity_internal.cpp.ll
-; gromacs/optimized/lmmin.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; opencv/optimized/tree.cpp.ll
-; openmpi/optimized/ad_read_coll.ll
-; openmpi/optimized/ad_write_coll.ll
+; 3 occurrences:
+; openjdk/optimized/mlib_ImageConv_16ext.ll
+; openjdk/optimized/mlib_ImageConv_8ext.ll
+; openjdk/optimized/mlib_ImageConv_u16ext.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000000b(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr float, ptr %2, i64 %1
-  %4 = getelementptr float, ptr %3, i64 %1
-  %5 = getelementptr nusw float, ptr %4, i64 %0
+  %3 = getelementptr double, ptr %2, i64 %1
+  %4 = getelementptr nusw double, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %0
   ret ptr %5
 }
 
-; 49 occurrences:
+; 25 occurrences:
+; abc/optimized/dsc.c.ll
+; bullet3/optimized/btMultiBody.ll
+; bullet3/optimized/btMultiBodyDynamicsWorld.ll
+; casadi/optimized/bspline.cpp.ll
+; casadi/optimized/feasiblesqpmethod.cpp.ll
+; casadi/optimized/linear_interpolant.cpp.ll
+; casadi/optimized/lsqr.cpp.ll
+; casadi/optimized/sparsity_internal.cpp.ll
+; faiss/optimized/ProductQuantizer.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; opencv/optimized/bilateral_filter.dispatch.cpp.ll
+; opencv/optimized/connectedcomponents.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; opencv/optimized/stackblur.cpp.ll
+; opencv/optimized/tree.cpp.ll
+; openexr/optimized/parse_header.c.ll
+; openjdk/optimized/mlib_ImageScanPoly.ll
+; openmpi/optimized/ad_read_coll.ll
+; openmpi/optimized/ad_write_coll.ll
+; openmpi/optimized/coll_base_allgatherv.ll
+; openusd/optimized/openexr-c.c.ll
+; osqp/optimized/amd_1.c.ll
+; ozz-animation/optimized/track.cc.ll
+; php/optimized/compact_literals.ll
+; php/optimized/zend_cfg.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002b(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 %1
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 6 occurrences:
+; darktable/optimized/introspection_dither.c.ll
+; gromacs/optimized/lmmin.cpp.ll
+; lief/optimized/rsa.c.ll
+; opencv/optimized/gfluidimgproc.cpp.ll
+; php/optimized/ir_emit.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i32, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i32, ptr %3, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 3 occurrences:
+; casadi/optimized/sparsity_internal.cpp.ll
+; gromacs/optimized/lmmin.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr float, ptr %2, i64 %1
+  %4 = getelementptr float, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 1 occurrences:
+; gromacs/optimized/lmmin.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw double, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 2 occurrences:
+; casadi/optimized/sparsity_internal.cpp.ll
+; gromacs/optimized/lmmin.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %1
+  %5 = getelementptr nusw double, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 1 occurrences:
+; gromacs/optimized/lmmin.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw double, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 4 occurrences:
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; openusd/optimized/av1_inv_txfm2d.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i32, ptr %2, i64 %1
+  %4 = getelementptr nusw i32, ptr %3, i64 %1
+  %5 = getelementptr i32, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 46 occurrences:
+; opencv/optimized/imgwarp.cpp.ll
 ; z3/optimized/asserted_formulas.cpp.ll
 ; z3/optimized/bit_blaster_rewriter.cpp.ll
 ; z3/optimized/bound_simplifier.cpp.ll
@@ -316,11 +417,11 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000003c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i32, ptr %2, i64 %1
-  %4 = getelementptr nusw i32, ptr %3, i64 %1
-  %5 = getelementptr i32, ptr %4, i64 %0
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw %class.symbol.3613505, ptr %3, i64 %1
+  %5 = getelementptr ptr, ptr %4, i64 %0
   ret ptr %5
 }
 

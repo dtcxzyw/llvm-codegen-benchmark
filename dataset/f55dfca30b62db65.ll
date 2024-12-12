@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 45 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/abcExtract.c.ll
@@ -20,6 +20,7 @@
 ; abc/optimized/mpmGates.c.ll
 ; abc/optimized/saigOutDec.c.ll
 ; abc/optimized/saigSimFast.c.ll
+; abc/optimized/sbdWin.c.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; libquic/optimized/des.c.ll
 ; lief/optimized/des.c.ll
@@ -64,7 +65,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = and i32 %3, -35073
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

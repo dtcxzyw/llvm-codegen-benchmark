@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	setne	%al
 	addb	%al, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	btq	$51, %rdi
 	setae	%al
 	orb	$4, %al

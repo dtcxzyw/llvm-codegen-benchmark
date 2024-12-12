@@ -1,5 +1,5 @@
 
-; 70 occurrences:
+; 64 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; bdwgc/optimized/cordprnt.c.ll
 ; clamav/optimized/yara_lexer.c.ll
@@ -40,10 +40,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; ncnn/optimized/gemm_x86.cpp.ll
-; ncnn/optimized/gemm_x86_avx.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; ninja/optimized/deps_log.cc.ll
 ; nix/optimized/lexer-tab.ll
 ; nuklear/optimized/unity.c.ll
@@ -54,7 +50,6 @@
 ; openmpi/optimized/rmaps_rank_file_lex.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
-; openusd/optimized/restoration.c.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/hashpage.ll
 ; postgres/optimized/localtime.ll
@@ -65,7 +60,6 @@
 ; slurm/optimized/parse_time.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; stb/optimized/stb_truetype.c.ll
-; velox/optimized/Re2Functions.cpp.ll
 ; velox/optimized/Scanner.cpp.ll
 ; verilator/optimized/V3ParseLex.cpp.ll
 ; verilator/optimized/V3PreProc.cpp.ll

@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
@@ -10,5 +10,5 @@ func0000000000000031:                   # @func0000000000000031
 	vadd.vi	v10, v10, 1
 	srli	a1, a1, 2
 	vand.vx	v10, v10, a1
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret

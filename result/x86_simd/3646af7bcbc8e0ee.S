@@ -9,3 +9,11 @@ func0000000000000005:                   # @func0000000000000005
 	vpcmpleub	%xmm0, %xmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
+func0000000000000009:                   # @func0000000000000009
+	vpcmpnltub	%xmm0, %xmm1, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+func0000000000000008:                   # @func0000000000000008
+	vpcmpnleub	%xmm0, %xmm1, %k0
+	vpmovm2b	%k0, %xmm0
+	retq

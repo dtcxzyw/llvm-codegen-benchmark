@@ -14,20 +14,19 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/builder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000042(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000c2(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 4
+  %2 = icmp samesign ugt i32 %1, 4
   %3 = select i1 %2, i32 6, i32 4
   %4 = add nsw i32 %3, %0
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; icu/optimized/usprep.ll
 ; icu/optimized/utrie2.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/tg3.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
@@ -60,7 +59,7 @@ define i64 @func0000000000000067(i32 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i32 24, i32 40
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -165,7 +164,7 @@ entry:
   ret i64 %5
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; icu/optimized/coleitr.ll
 ; icu/optimized/collationcompare.ll
 ; icu/optimized/collationdata.ll
@@ -178,16 +177,26 @@ entry:
 ; icu/optimized/uchar.ll
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utrie2.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openspiel/optimized/havannah.cc.ll
-; redis/optimized/ziplist.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000027(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000a7(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 2
+  %2 = icmp samesign ult i32 %1, 9
   %3 = select i1 %2, i32 2, i32 1
   %4 = add nuw nsw i32 %3, %0
   %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000a0(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 65536
+  %3 = select i1 %2, i32 1, i32 2
+  %4 = add i32 %3, %0
+  %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
@@ -200,6 +209,18 @@ entry:
   %3 = select i1 %2, i32 -2, i32 -1
   %4 = add nsw i32 %3, %0
   %5 = zext i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; redis/optimized/ziplist.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000027(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 254
+  %3 = select i1 %2, i32 1, i32 5
+  %4 = add nuw nsw i32 %3, %0
+  %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 

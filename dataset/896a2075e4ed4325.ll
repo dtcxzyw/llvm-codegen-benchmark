@@ -16,16 +16,4 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; php/optimized/unixtime2tm.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0) #0 {
-entry:
-  %1 = trunc nsw i64 %0 to i32
-  %2 = sdiv i32 %1, 3600
-  %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, 4294963696
-  ret i64 %4
-}
-
 attributes #0 = { nounwind }

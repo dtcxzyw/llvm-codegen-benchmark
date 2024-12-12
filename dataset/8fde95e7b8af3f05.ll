@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -16,6 +16,7 @@
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openmpi/optimized/mpl_trmem.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
 ; qemu/optimized/linux-user_mmap.c.ll
 ; verilator/optimized/V3Branch.cpp.ll
 ; verilator/optimized/V3Dead.cpp.ll
@@ -31,22 +32,20 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; box2d/optimized/b2_collision.cpp.ll
 ; box2d/optimized/b2_polygon_shape.cpp.ll
 ; graphviz/optimized/util.c.ll
 ; linux/optimized/io_uring.ll
 ; opencv/optimized/rotcalipers.cpp.ll
-; openjdk/optimized/symbolTable.ll
 ; openjdk/optimized/xAddressSpaceLimit.ll
 ; openjdk/optimized/zAddressSpaceLimit.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 13
-  %3 = and i64 %2, 131064
-  %4 = select i1 %0, i64 %3, i64 8
+  %2 = add nuw nsw i64 %1, 33554431
+  %3 = and i64 %2, 4611686018393833472
+  %4 = select i1 %0, i64 %3, i64 1844674407377666048
   ret i64 %4
 }
 

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/test_threading.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i32 26, i32 161
@@ -16,7 +16,7 @@ entry:
 ; spike/optimized/f128_roundToInt.ll
 ; spike/optimized/f64_roundToInt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000281(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
   %3 = select i1 %2, i32 3, i32 2

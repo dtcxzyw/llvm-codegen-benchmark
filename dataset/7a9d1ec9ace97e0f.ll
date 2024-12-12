@@ -1,5 +1,6 @@
 
-; 29 occurrences:
+; 30 occurrences:
+; abc/optimized/epd.c.ll
 ; arrow/optimized/strtod.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; icu/optimized/double-conversion-strtod.ll
@@ -50,6 +51,8 @@ entry:
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/2wc2yx8ferzqfnf3.ll
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/dtoa.ll
@@ -183,8 +186,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -420,8 +421,9 @@ entry:
   ret i1 %2
 }
 
-; 254 occurrences:
+; 266 occurrences:
 ; abc/optimized/epd.c.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/4ettyx6264g6naw2.ll
 ; cpython/optimized/mathmodule.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -675,6 +677,17 @@ entry:
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/00laj72jeyttgatxd0myrfigl.ll
+; zed-rs/optimized/10zh1v68f2nhlerzsork25it5.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/8r4rexl2hxk4mf5ojed4sh4ix.ll
+; zed-rs/optimized/9m8v6uy2305b0acd84bvd598m.ll
+; zed-rs/optimized/b3fsiuvawj3jj0fngz22afvrc.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(double %0) #0 {
 entry:
@@ -683,11 +696,24 @@ entry:
   ret i1 %2
 }
 
-; 90 occurrences:
-; abc/optimized/epd.c.ll
+; 5 occurrences:
+; icu/optimized/putil.ll
+; ruby/optimized/util.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(double %0) #0 {
+entry:
+  %1 = bitcast double %0 to i64
+  %2 = icmp samesign ult i64 %1, 4503599627370496
+  ret i1 %2
+}
+
+; 84 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; hermes/optimized/HermesBuiltin.cpp.ll
-; icu/optimized/putil.ll
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -708,8 +734,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -769,9 +793,6 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; ruby/optimized/util.ll
 ; simdjson/optimized/simdjson.cpp.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
@@ -782,13 +803,9 @@ entry:
   ret i1 %2
 }
 
-; 99 occurrences:
-; abc/optimized/epd.c.ll
-; eastl/optimized/EASprintfCore.cpp.ll
-; eastl/optimized/EAString.cpp.ll
+; 89 occurrences:
 ; hermes/optimized/JSError.cpp.ll
 ; hermes/optimized/JSObject.cpp.ll
-; icu/optimized/putil.ll
 ; lief/optimized/File.cpp.ll
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
@@ -811,8 +828,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -871,11 +886,7 @@ entry:
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; stat-rs/optimized/1957ju1ns40544yq.ll
-; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
 ; stat-rs/optimized/4bf6omib3d9godoe.ll
 ; stat-rs/optimized/4d9pj14shc9lbmph.ll
 ; stat-rs/optimized/n94tvlll45kxl7r.ll
@@ -886,7 +897,28 @@ entry:
 define i1 @func0000000000000008(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
-  %2 = icmp ugt i64 %1, -4503599627370497
+  %2 = icmp ugt i64 %1, 9007199254740991
+  ret i1 %2
+}
+
+; 12 occurrences:
+; eastl/optimized/EASprintfCore.cpp.ll
+; eastl/optimized/EAString.cpp.ll
+; icu/optimized/putil.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; stat-rs/optimized/1957ju1ns40544yq.ll
+; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
+; stat-rs/optimized/4bf6omib3d9godoe.ll
+; stat-rs/optimized/4d9pj14shc9lbmph.ll
+; stat-rs/optimized/n94tvlll45kxl7r.ll
+; stat-rs/optimized/rkxxfn3f5mhspne.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(double %0) #0 {
+entry:
+  %1 = bitcast double %0 to i64
+  %2 = icmp samesign ugt i64 %1, 9218868437227405311
   ret i1 %2
 }
 

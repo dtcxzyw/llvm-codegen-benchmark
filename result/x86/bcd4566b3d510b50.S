@@ -1,13 +1,11 @@
 func0000000000000003:                   # @func0000000000000003
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testl	%esi, %esi
-	setne	%al
-	shll	$6, %eax
-	notb	%dil
-	movzbl	%dil, %ecx
-	andl	$1, %ecx
-	shll	$4, %ecx
-	leal	1(%rcx,%rax), %eax
+	setne	%cl
+	shll	$13, %ecx
+	leal	2(%rcx), %eax
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	testl	%esi, %esi

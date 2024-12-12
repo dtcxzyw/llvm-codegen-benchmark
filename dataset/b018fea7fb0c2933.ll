@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 22 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -16,6 +16,12 @@
 ; rust-analyzer-rs/optimized/3c5yaiy4s1aybe9v.ll
 ; rust-analyzer-rs/optimized/57yy3hfi5uyj25tj.ll
 ; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i1 %0, i16 %1) #0 {
 entry:
@@ -25,7 +31,7 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -42,7 +48,6 @@ entry:
 ; ockam-rs/optimized/5d08dby0hzbl8sgj.ll
 ; ockam-rs/optimized/i22eb1mfvlgesy1.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
-; openjdk/optimized/symbolTable.ll
 ; slurm/optimized/job_mgr.ll
 ; wasmtime-rs/optimized/2hn3w9bvpn4vosvc.ll
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll

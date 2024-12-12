@@ -1,7 +1,8 @@
 
-; 200 occurrences:
+; 197 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; folly/optimized/farmhash.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -169,7 +170,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -178,7 +178,6 @@
 ; oiio/optimized/texturesys.cpp.ll
 ; oiio/optimized/ustring.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
@@ -192,10 +191,8 @@
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/mt19937uniformrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
-; redis/optimized/mt19937-64.ll
 ; rocksdb/optimized/hash.cc.ll
 ; stb/optimized/stb_ds.c.ll
 ; tev/optimized/Image.cpp.ll
@@ -205,7 +202,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, -5435081209227447693
   %4 = xor i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

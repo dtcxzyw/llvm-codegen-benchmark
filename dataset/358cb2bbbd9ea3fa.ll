@@ -1,16 +1,15 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; coremark/optimized/core_list_join.c.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
-; linux/optimized/eht.ll
-; linux/optimized/intel_guc_slpc.ll
 ; linux/optimized/intel_pps.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/sysctl_net.ll
 ; linux/optimized/tdls.ll
 ; linux/optimized/uncore.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
@@ -32,11 +31,18 @@ entry:
   ret i16 %2
 }
 
-; 11 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; cvc5/optimized/rewriter.cpp.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; linux/optimized/i915_hwmon.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_obj_style.ll
 ; openjdk/optimized/splashscreen_sys.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll

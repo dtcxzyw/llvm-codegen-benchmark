@@ -3,15 +3,15 @@ func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfrdiv.vf	v16, v16, fa5
 	vfmul.vv	v12, v16, v12
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	vmfle.vf	v0, v8, fa5
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfrdiv.vf	v16, v16, fa5
-	vfmul.vv	v12, v16, v12
-	vfadd.vv	v8, v12, v8
+	vfmul.vv	v12, v12, v16
+	vfadd.vv	v8, v8, v12
 	fli.s	fa5, -1.0
 	vmflt.vf	v0, v8, fa5
 	ret
@@ -33,8 +33,8 @@ func0000000000000005:                   # @func0000000000000005
 	flw	fa4, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfrdiv.vf	v16, v16, fa5
-	vfmul.vv	v12, v16, v12
-	vfadd.vv	v8, v12, v8
+	vfmul.vv	v12, v12, v16
+	vfadd.vv	v8, v8, v12
 	vmfle.vf	v12, v8, fa4
 	vmnot.m	v0, v12
 	ret

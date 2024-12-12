@@ -1,6 +1,7 @@
 
-; 173 occurrences:
+; 174 occurrences:
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; cpython/optimized/crt.ll
@@ -177,8 +178,8 @@
 define i64 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   %6 = zext i1 %5 to i64
   ret i64 %6
 }
@@ -186,11 +187,11 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/ecp_curves.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(i64 %0, i64 %1, i1 %2) #0 {
+define i64 @func00000000000000c8(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = add nuw nsw i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   %6 = zext i1 %5 to i64
   ret i64 %6
 }

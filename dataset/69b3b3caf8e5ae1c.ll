@@ -3,7 +3,7 @@
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; wireshark/optimized/supported_protocols_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 56
   %3 = sub i64 %0, %2
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = sub i64 %0, %2
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = sub i64 %0, %2
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MSFBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = sub i64 %0, %2

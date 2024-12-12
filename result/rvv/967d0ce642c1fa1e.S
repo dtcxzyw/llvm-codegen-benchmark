@@ -6,13 +6,6 @@ func0000000000000035:                   # @func0000000000000035
 	vmfle.vv	v25, v16, v8
 	vmandn.mm	v0, v24, v25
 	ret
-func00000000000000ac:                   # @func00000000000000ac
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfneg.v	v24, v16
-	vmfle.vv	v7, v24, v8
-	vmfle.vv	v24, v8, v16
-	vmand.mm	v0, v7, v24
-	ret
 func0000000000000042:                   # @func0000000000000042
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfneg.v	v24, v16

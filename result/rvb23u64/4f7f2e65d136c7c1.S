@@ -1,10 +1,3 @@
-func00000000000000f9:                   # @func00000000000000f9
-	slli	a1, a1, 5
-	add	a0, a0, a1
-	addi	a0, a0, 32
-	srliw	a0, a0, 5
-	addi	a0, a0, -1
-	ret
 func00000000000001bb:                   # @func00000000000001bb
 	slli	a1, a1, 10
 	add	a0, a0, a1

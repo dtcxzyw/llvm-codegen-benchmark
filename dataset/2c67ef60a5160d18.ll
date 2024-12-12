@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; hyperscan/optimized/ue2string.cpp.ll
-; minetest/optimized/mapnode.cpp.ll
-; vcpkg/optimized/strings.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i8 %1) #0 {
-entry:
-  %2 = add nsw i8 %0, -96
-  %3 = icmp ult i8 %1, 24
-  %4 = select i1 %3, i8 %0, i8 %2
-  ret i8 %4
-}
-
 ; 4 occurrences:
 ; hyperscan/optimized/charreach.cpp.ll
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll
@@ -26,16 +13,15 @@ entry:
   ret i8 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; libpng/optimized/pngread.c.ll
-; linux/optimized/eht.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll
 ; openjdk/optimized/pngread.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000061(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %0, 9
   %3 = icmp eq i8 %1, 0
@@ -46,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; vcpkg/optimized/strings.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000034(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000064(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %0, 32
   %3 = icmp ult i8 %1, -26
@@ -54,8 +40,19 @@ entry:
   ret i8 %4
 }
 
-; 7 occurrences:
-; linux/optimized/acpi_pnp.ll
+; 2 occurrences:
+; hyperscan/optimized/ue2string.cpp.ll
+; vcpkg/optimized/strings.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000024(i8 %0, i8 %1) #0 {
+entry:
+  %2 = add nsw i8 %0, -32
+  %3 = icmp ult i8 %1, -26
+  %4 = select i1 %3, i8 %0, i8 %2
+  ret i8 %4
+}
+
+; 6 occurrences:
 ; linux/optimized/kallsyms.ll
 ; linux/optimized/nsrepair2.ll
 ; linux/optimized/nsutils.ll

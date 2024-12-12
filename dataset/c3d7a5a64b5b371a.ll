@@ -19,7 +19,7 @@
 ; verilator/optimized/V3PreProc.cpp.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
   %3 = lshr i32 %2, 3

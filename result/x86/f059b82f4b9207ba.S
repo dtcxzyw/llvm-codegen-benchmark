@@ -1,4 +1,4 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	shrq	$32, %rdx
 	addq	%rdi, %rdx
 	shrq	$32, %rsi
@@ -13,21 +13,21 @@ func0000000000000001:                   # @func0000000000000001
 	addq	%rdx, %rsi
 	sete	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	shrq	$32, %rdx
 	addq	%rdi, %rdx
 	shrq	$32, %rsi
 	orq	%rdx, %rsi
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	shrq	$32, %rdx
 	addq	%rdi, %rdx
 	shrq	$32, %rsi
 	addq	%rdx, %rsi
 	sete	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	shrq	$15, %rdx
 	addq	%rdi, %rdx
 	shrq	$15, %rsi

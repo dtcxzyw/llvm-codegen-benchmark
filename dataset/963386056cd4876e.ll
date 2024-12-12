@@ -27,7 +27,8 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; abseil-cpp/optimized/charconv.cc.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i1 %1, i64 %2) #0 {

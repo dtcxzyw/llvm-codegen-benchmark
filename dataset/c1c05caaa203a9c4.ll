@@ -78,7 +78,7 @@
 ; llvm/optimized/Visitor.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0) #0 {
+define i1 @func000000000000018c(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 18
   %2 = and i32 %1, 7
@@ -99,11 +99,11 @@ entry:
 ; postgres/optimized/wchar_srv.ll
 ; wireshark/optimized/packet-cimd.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0) #0 {
+define i1 @func0000000000000198(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 9
   %2 = and i32 %1, 65535
-  %3 = icmp ugt i32 %2, 35
+  %3 = icmp samesign ugt i32 %2, 35
   %4 = icmp ne i32 %2, 65534
   %5 = and i1 %3, %4
   ret i1 %5

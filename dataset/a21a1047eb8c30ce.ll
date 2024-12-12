@@ -1,5 +1,5 @@
 
-; 127 occurrences:
+; 126 occurrences:
 ; abc/optimized/giaMini.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/ifMap.c.ll
@@ -118,7 +118,6 @@
 ; opencv/optimized/tracker_nano.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pbrt-v4/optimized/mipmap.cpp.ll
 ; pbrt-v4/optimized/pspec.cpp.ll
@@ -179,7 +178,8 @@ entry:
   ret i64 %2
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -191,7 +191,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0) #0 {
 entry:
-  %1 = shl nuw nsw i64 %0, 30
+  %1 = shl nuw nsw i64 %0, 32
   %2 = or i64 %1, %0
   ret i64 %2
 }

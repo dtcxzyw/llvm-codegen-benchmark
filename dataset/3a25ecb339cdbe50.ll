@@ -1,5 +1,9 @@
 
-; 46 occurrences:
+; 48 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; cmake/optimized/fse_compress.c.ll
 ; hdf5/optimized/H5HG.c.ll
 ; hdf5/optimized/H5HGcache.c.ll
@@ -13,7 +17,6 @@
 ; linux/optimized/hpet.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_rps.ll
-; linux/optimized/jiffies.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/md.ll
 ; linux/optimized/mempolicy.ll
@@ -37,7 +40,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LowerMemIntrinsics.cpp.ll
 ; llvm/optimized/MIRSampleProfile.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

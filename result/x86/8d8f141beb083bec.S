@@ -1,4 +1,4 @@
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000003f8:                   # @func00000000000003f8
 	addl	$-48, %esi
 	andl	$-2, %esi
 	leaq	(%rdi,%rdi,4), %rax
@@ -6,7 +6,7 @@ func00000000000001f8:                   # @func00000000000001f8
 	cmpq	$2147483647, %rax               # imm = 0x7FFFFFFF
 	seta	%al
 	retq
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000003f4:                   # @func00000000000003f4
 	addl	$-48, %esi
 	andl	$-2, %esi
 	leaq	(%rdi,%rdi,4), %rax
@@ -14,21 +14,21 @@ func00000000000001f4:                   # @func00000000000001f4
 	shrq	$31, %rax
 	sete	%al
 	retq
-func00000000000003fc:                   # @func00000000000003fc
+func00000000000007ec:                   # @func00000000000007ec
 	addl	$-48, %esi
 	addq	%rdi, %rdi
 	leaq	(%rdi,%rdi,4), %rax
 	orq	%rsi, %rax
 	setne	%al
 	retq
-func00000000000001fc:                   # @func00000000000001fc
+func00000000000003ec:                   # @func00000000000003ec
 	addl	$-48, %esi
 	addq	%rdi, %rdi
 	leaq	(%rdi,%rdi,4), %rax
 	orq	%rsi, %rax
 	setne	%al
 	retq
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	addl	$-48, %esi
 	andl	$-2, %esi
 	leaq	(%rdi,%rdi,4), %rax

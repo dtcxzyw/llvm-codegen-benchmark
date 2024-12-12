@@ -28,6 +28,11 @@ func0000000000000014:                   # @func0000000000000014
 	addw	a1, a1, a2
 	sh2add	a0, a1, a0
 	ret
+func0000000000000017:                   # @func0000000000000017
+	sh1add	a1, a2, a1
+	sext.w	a1, a1
+	sh1add	a0, a1, a0
+	ret
 func000000000000001e:                   # @func000000000000001e
 	slli	a2, a2, 7
 	addw	a1, a1, a2
@@ -38,15 +43,10 @@ func0000000000000004:                   # @func0000000000000004
 	sext.w	a1, a1
 	sh3add	a0, a1, a0
 	ret
-func000000000000000c:                   # @func000000000000000c
-	sh2add	a1, a2, a1
-	sext.w	a1, a1
-	sh3add	a0, a1, a0
-	ret
 func0000000000000022:                   # @func0000000000000022
 	sh1add	a1, a2, a1
 	sext.w	a1, a1
-	sh2add	a0, a1, a0
+	sh3add	a0, a1, a0
 	ret
 func0000000000000036:                   # @func0000000000000036
 	sh1add	a1, a2, a1

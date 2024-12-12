@@ -1,9 +1,10 @@
 
-; 96 occurrences:
+; 99 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/rsbDec6.c.ll
+; boost/optimized/decode_view.ll
 ; bullet3/optimized/btGhostObject.ll
 ; clamav/optimized/client.c.ll
 ; cmake/optimized/cfilters.c.ll
@@ -82,7 +83,6 @@
 ; re2/optimized/prog.cc.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; redis/optimized/t_string.ll
-; ruby/optimized/ractor.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
@@ -90,17 +90,20 @@
 ; verilator/optimized/V3Trace.cpp.ll
 ; wireshark/optimized/dftest.c.ll
 ; wireshark/optimized/packet-wassp.c.ll
+; wolfssl/optimized/internal.c.ll
 ; z3/optimized/bound_propagator.cpp.ll
 ; z3/optimized/doc.cpp.ll
 ; z3/optimized/sls_engine.cpp.ll
 ; z3/optimized/tbv.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/a80esttvizzblelz7vl2fpyaz.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = select i1 %0, i32 0, i32 2
+  %3 = select i1 %0, i32 26, i32 10
   %4 = or disjoint i32 %3, %2
   ret i32 %4
 }

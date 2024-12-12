@@ -1,7 +1,7 @@
 func0000000000000008:                   # @func0000000000000008
 	decq	%rdi
 	xorl	%eax, %eax
-	movabsq	$-36000000000, %rcx             # imm = 0xFFFFFFF79E3B9800
+	movabsq	$-3600000000000000, %rcx        # imm = 0xFFF335D1AECF0000
 	cmpq	%rcx, %rdi
-	adcq	$1, %rax
+	adcq	$6, %rax
 	retq

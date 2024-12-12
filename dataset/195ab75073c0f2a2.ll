@@ -12,9 +12,7 @@ entry:
   ret i64 %5
 }
 
-; 13 occurrences:
-; bdwgc/optimized/gc.c.ll
-; clamav/optimized/phishcheck.c.ll
+; 11 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; hermes/optimized/gtest-all.cc.ll
 ; just-rs/optimized/53slus9exfz9w045.ll
@@ -31,6 +29,19 @@ define i64 @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 %2, i64 0
   %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 3 occurrences:
+; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; clamav/optimized/phishcheck.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 %2, i64 1152921504606846975
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

@@ -15,11 +15,11 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000718(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)
-  %4 = icmp ugt i32 %3, %0
-  %5 = icmp ugt i32 %3, %1
+  %4 = icmp samesign ugt i32 %3, %0
+  %5 = icmp samesign ugt i32 %3, %1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
@@ -30,7 +30,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; 1 occurrences:
 ; postgres/optimized/miscinit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.abs.i32(i32 %2, i1 false)
   %4 = icmp eq i32 %3, %0

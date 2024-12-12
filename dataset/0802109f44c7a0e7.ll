@@ -9,7 +9,7 @@
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   %5 = sext i1 %4 to i32
   ret i32 %5
 }

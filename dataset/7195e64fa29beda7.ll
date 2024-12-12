@@ -1,7 +1,8 @@
 
-; 66 occurrences:
+; 67 occurrences:
 ; arrow/optimized/reader.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/btShapeHull.ll
 ; c3c/optimized/sema_builtins.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -23,7 +24,6 @@
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaX86.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -38,6 +38,7 @@
 ; ncnn/optimized/lstm_x86_avx.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
 ; ncnn/optimized/lstm_x86_fma.cpp.ll
+; nuttx/optimized/lib_strtold.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/grfmt_bmp.cpp.ll
@@ -124,12 +125,10 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; icu/optimized/punycode.ll
 ; linux/optimized/e1000_ethtool.ll
 ; luau/optimized/lvmload.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i32 %0) #0 {
 entry:
@@ -139,9 +138,31 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 2 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; icu/optimized/tzfmt.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000029(i32 %0) #0 {
+entry:
+  %1 = icmp samesign ult i32 %0, 5
+  %2 = select i1 %1, i32 32, i32 48
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
+}
+
+; 2 occurrences:
+; oiio/optimized/strutil.cpp.ll
+; stb/optimized/stb_sprintf.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000031(i32 %0) #0 {
+entry:
+  %1 = icmp samesign ugt i32 %0, 99
+  %2 = select i1 %1, i32 5, i32 4
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
+}
+
+; 5 occurrences:
 ; linux/optimized/af_packet.ll
 ; linux/optimized/intel_dsb.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -150,8 +171,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0) #0 {
 entry:
-  %1 = icmp ult i32 %0, 5
-  %2 = select i1 %1, i32 32, i32 48
+  %1 = icmp ult i32 %0, 4
+  %2 = select i1 %1, i32 177, i32 178
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }

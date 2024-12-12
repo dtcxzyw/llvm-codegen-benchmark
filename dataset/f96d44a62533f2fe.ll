@@ -5,7 +5,7 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000842(i16 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i16 %0, %1
   %3 = icmp eq i16 %2, 1
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000228(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000848(i16 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i16 %0, %1
   %3 = icmp ult i16 %2, 63

@@ -1,12 +1,18 @@
-func0000000000000021:                   # @func0000000000000021
-	addq	$32, %rdx
-	cmpq	%rsi, %rdx
-	movl	$14, %eax
+func0000000000000061:                   # @func0000000000000061
+	addq	$3, %rdx
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
 	cmovnel	%edi, %eax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addq	$-16, %rdx
 	xorl	%eax, %eax
-	cmpq	%rsi, %rdx
-	cmovael	%edi, %eax
+	cmpq	%rdx, %rsi
+	cmovbel	%edi, %eax
+	retq
+func0000000000000068:                   # @func0000000000000068
+	incq	%rdx
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	cmovbel	%edi, %eax
 	retq

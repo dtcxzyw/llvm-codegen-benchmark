@@ -1,18 +1,18 @@
-func0000000000000c01:                   # @func0000000000000c01
+func0000000000001801:                   # @func0000000000001801
 	cmpq	$1, %rdx
 	sbbl	$-1, %esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000c71:                   # @func0000000000000c71
+func00000000000018e1:                   # @func00000000000018e1
 	cmpq	$1, %rdx
 	sbbl	$-1, %esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000c11:                   # @func0000000000000c11
+func0000000000001821:                   # @func0000000000001821
 	cmpq	$1, %rdx
 	sbbl	$-1, %esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq

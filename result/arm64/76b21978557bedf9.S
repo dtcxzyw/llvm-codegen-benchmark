@@ -1,8 +1,0 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	mvn	v3.16b, v3.16b
-	mvn	v2.16b, v2.16b
-	smin	v0.4s, v0.4s, v2.4s
-	smin	v1.4s, v1.4s, v3.4s
-	ret
-                                        // -- End function

@@ -1,11 +1,11 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000188:                   # @func0000000000000188
 	srli	a2, a2, 3
 	sub	a1, a1, a0
 	add	a1, a1, a2
 	sltiu	a0, a1, 7
 	xori	a0, a0, 1
 	ret
-func000000000000008a:                   # @func000000000000008a
+func000000000000018a:                   # @func000000000000018a
 	srli	a2, a2, 2
 	sub	a1, a1, a0
 	add	a1, a1, a2

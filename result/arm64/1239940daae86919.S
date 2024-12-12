@@ -1,12 +1,7 @@
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	ushr	v5.4s, v5.4s, #3
-	ushr	v4.4s, v4.4s, #3
-	sub	v5.4s, v3.4s, v5.4s
-	sub	v4.4s, v2.4s, v4.4s
-	cmle	v3.4s, v3.4s, #0
-	cmle	v2.4s, v2.4s, #0
-	bit	v1.16b, v5.16b, v3.16b
-	bit	v0.16b, v4.16b, v2.16b
+	sub	w8, w1, w2, lsr #3
+	cmp	w1, #1
+	csel	w0, w8, w0, lt
 	ret
                                         // -- End function

@@ -3,10 +3,10 @@
 ; bullet3/optimized/btSequentialImpulseConstraintSolverMt.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = add nsw i64 %0, 2
   %7 = icmp slt i64 %6, %5

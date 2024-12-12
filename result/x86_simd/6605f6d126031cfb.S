@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovqd	%ymm2, %xmm0
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm0, %xmm0
-	vpcmpneqd	%xmm1, %xmm0, %k1
+	vpcmpneqd	%xmm0, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

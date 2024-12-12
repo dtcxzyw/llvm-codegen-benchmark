@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 95 occurrences:
 ; cjson/optimized/cJSON_Utils.c.ll
 ; cmake/optimized/cf-socket.c.ll
 ; curl/optimized/libcurl_la-cf-socket.ll
@@ -52,6 +52,7 @@
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; lua/optimized/lstrlib.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/OGLTextRenderer.ll
 ; openjdk/optimized/ProcessHandleImpl_unix.ll
@@ -95,7 +96,7 @@
 ; wolfssl/optimized/tls.c.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 78
   %3 = icmp ne ptr %0, null
@@ -103,7 +104,7 @@ entry:
   ret i1 %4
 }
 
-; 34 occurrences:
+; 37 occurrences:
 ; libsodium/optimized/libsodium_la-blake2b-ref.ll
 ; linux/optimized/drm_mode_object.ll
 ; linux/optimized/hid-core.ll
@@ -122,6 +123,8 @@ entry:
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_tree.ll
 ; openjdk/optimized/debugInit.ll
 ; openssl/optimized/libssl-lib-rec_layer_d1.ll
 ; openssl/optimized/libssl-lib-t1_lib.ll
@@ -138,8 +141,9 @@ entry:
 ; wireshark/optimized/packet-e212.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
+; zed-rs/optimized/driumlpfhwzx6147be2mcsi4u.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, ptr %1) #0 {
+define i1 @func0000000000000181(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp eq i8 %0, 0
@@ -147,11 +151,12 @@ entry:
   ret i1 %4
 }
 
-; 26 occurrences:
+; 28 occurrences:
 ; git/optimized/receive-pack.ll
 ; lief/optimized/ssl_tls.c.ll
 ; llvm/optimized/AsmWriter.cpp.ll
 ; llvm/optimized/DWARFDebugLine.cpp.ll
+; llvm/optimized/InstCombineAddSub.cpp.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/InstCombineMulDivRem.cpp.ll
@@ -160,6 +165,7 @@ entry:
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/MergeICmps.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
@@ -175,7 +181,7 @@ entry:
 ; wireshark/optimized/packet-dvbci.c.ll
 ; yosys/optimized/aigerparse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp eq ptr %0, null
@@ -194,7 +200,6 @@ entry:
 ; git/optimized/object-file.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; icu/optimized/dtptngen.ll
-; icu/optimized/filestrm.ll
 ; icu/optimized/nfsubs.ll
 ; icu/optimized/plurrule.ll
 ; icu/optimized/serv.ll
@@ -248,8 +253,9 @@ entry:
 ; wireshark/optimized/packet-x25.c.ll
 ; wireshark/optimized/packet-zbee-aps.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/9dvdqfymuqqao6fspz5y2pa1a.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i8 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp ne ptr %0, null
@@ -257,67 +263,129 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; llvm/optimized/InstCombineMulDivRem.cpp.ll
+; 6 occurrences:
+; llvm/optimized/VectorCombine.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000101(ptr %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, 22
-  %3 = icmp ne ptr %0, null
+  %2 = icmp ugt i8 %1, -4
+  %3 = icmp eq ptr %0, null
   %4 = and i1 %3, %2
   ret i1 %4
 }
 
-; 3 occurrences:
-; cpython/optimized/instrumentation.ll
-; llvm/optimized/BranchProbabilityInfo.cpp.ll
-; wireshark/optimized/packet-gsm_ipa.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, ptr %1) #0 {
-entry:
-  %2 = icmp eq ptr %1, null
-  %3 = icmp ugt i8 %0, 28
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 2 occurrences:
+; 6 occurrences:
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000081(ptr %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, 22
+  %2 = icmp ult i8 %1, -3
   %3 = icmp eq ptr %0, null
   %4 = and i1 %3, %2
   ret i1 %4
 }
 
 ; 7 occurrences:
-; linux/optimized/hwxface.ll
+; linux/optimized/nl80211.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; nori/optimized/texture_gl.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010c(ptr %0, i8 %1) #0 {
+entry:
+  %2 = icmp ugt i8 %1, -4
+  %3 = icmp ne ptr %0, null
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 7 occurrences:
+; llvm/optimized/InstCombineMulDivRem.cpp.ll
+; llvm/optimized/SimplifyIndVar.cpp.ll
+; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008c(ptr %0, i8 %1) #0 {
+entry:
+  %2 = icmp ult i8 %1, -3
+  %3 = icmp ne ptr %0, null
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 5 occurrences:
+; llvm/optimized/BranchProbabilityInfo.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; wireshark/optimized/packet-gsm_ipa.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i8 %0, ptr %1) #0 {
+entry:
+  %2 = icmp eq ptr %1, null
+  %3 = icmp ugt i8 %0, -4
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 4 occurrences:
+; linux/optimized/cfg.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i8 %0, ptr %1) #0 {
+entry:
+  %2 = icmp eq ptr %1, null
+  %3 = icmp ult i8 %0, -3
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; wireshark/optimized/packet-knxip.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000188(i8 %0, ptr %1) #0 {
+entry:
+  %2 = icmp ne ptr %1, null
+  %3 = icmp ugt i8 %0, -4
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 8 occurrences:
 ; llvm/optimized/Constants.cpp.ll
 ; llvm/optimized/FunctionComparator.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0, ptr %1) #0 {
+define i1 @func0000000000000184(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
-  %3 = icmp ult i8 %0, 4
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 2 occurrences:
-; llvm/optimized/VectorCombine.cpp.ll
-; wireshark/optimized/packet-tcp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, i8 %1) #0 {
-entry:
-  %2 = icmp ugt i8 %1, 28
-  %3 = icmp eq ptr %0, null
+  %3 = icmp ult i8 %0, -3
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -325,7 +393,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i8 %0, ptr %1) #0 {
+define i1 @func0000000000000186(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp slt i8 %0, 0
@@ -334,44 +402,9 @@ entry:
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-knxip.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c8(i8 %0, ptr %1) #0 {
-entry:
-  %2 = icmp ne ptr %1, null
-  %3 = icmp ugt i8 %0, 3
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; linux/optimized/cfg.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, ptr %1) #0 {
-entry:
-  %2 = icmp eq ptr %1, null
-  %3 = icmp ult i8 %0, 4
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 3 occurrences:
-; linux/optimized/nl80211.ll
-; nori/optimized/texture_gl.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, i8 %1) #0 {
-entry:
-  %2 = icmp ugt i8 %1, 10
-  %3 = icmp ne ptr %0, null
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; postgres/optimized/guc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, ptr %1) #0 {
+define i1 @func000000000000002a(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp sgt i8 %0, -1

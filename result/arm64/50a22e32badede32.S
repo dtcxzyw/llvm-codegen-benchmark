@@ -14,7 +14,7 @@ func000000000000000f:                   // @func000000000000000f
 	sub	x0, x8, #8
 	ret
                                         // -- End function
-func000000000000001e:                   // @func000000000000001e
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	mul	x8, x2, x1
 	add	x8, x0, x8, lsl #3
@@ -38,6 +38,14 @@ func000000000000007a:                   // @func000000000000007a
 	add	x0, x8, #8
 	ret
                                         // -- End function
+func000000000000007b:                   // @func000000000000007b
+// %bb.0:                               // %entry
+	mul	x8, x1, x2
+	add	x8, x0, x8, lsl #3
+	add	x8, x8, x1, lsl #3
+	add	x0, x8, #8
+	ret
+                                        // -- End function
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
 	mul	x8, x2, x1
@@ -54,7 +62,7 @@ func0000000000000058:                   // @func0000000000000058
 	sub	x0, x8, #8
 	ret
                                         // -- End function
-func0000000000000072:                   // @func0000000000000072
+func0000000000000073:                   // @func0000000000000073
 // %bb.0:                               // %entry
 	mul	x8, x1, x2
 	add	x8, x0, x8, lsl #3

@@ -1,11 +1,11 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addq	%rdx, %rsi
 	xorl	%ecx, %ecx
 	cmpq	%rdi, %rsi
 	movl	$304, %eax                      # imm = 0x130
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi
@@ -19,7 +19,7 @@ func0000000000000001:                   # @func0000000000000001
 	setne	%al
 	incq	%rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi

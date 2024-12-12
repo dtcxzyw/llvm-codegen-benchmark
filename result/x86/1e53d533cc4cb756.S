@@ -20,9 +20,9 @@ func0000000000000006:                   # @func0000000000000006
 	je	.LBB1_1
 	vmovss	.LCPI1_1(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vdivss	%xmm2, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	retq
 .LBB1_1:
 	vxorps	%xmm1, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	retq

@@ -16,13 +16,13 @@ func00000000000000ca:                   # @func00000000000000ca
 	vcmplesd	%xmm0, %xmm2, %k1
 	vmovsd	%xmm2, %xmm0, %xmm0 {%k1}
 	retq
+func0000000000000024:                   # @func0000000000000024
+	vminsd	%xmm2, %xmm1, %xmm1
+	vmaxsd	%xmm0, %xmm1, %xmm0
+	retq
 func00000000000000cc:                   # @func00000000000000cc
 	vcmplesd	%xmm1, %xmm2, %k1
 	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
 	vcmplesd	%xmm2, %xmm0, %k1
 	vmovsd	%xmm2, %xmm0, %xmm0 {%k1}
-	retq
-func0000000000000024:                   # @func0000000000000024
-	vminsd	%xmm2, %xmm1, %xmm1
-	vmaxsd	%xmm0, %xmm1, %xmm0
 	retq

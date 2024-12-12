@@ -1,5 +1,6 @@
 
-; 34 occurrences:
+; 35 occurrences:
+; boost/optimized/expand_on_spheroid.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/proof_circuit_propagator.cpp.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll

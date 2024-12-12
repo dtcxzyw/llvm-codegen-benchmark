@@ -22,11 +22,9 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; linux/optimized/dm-stats.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:

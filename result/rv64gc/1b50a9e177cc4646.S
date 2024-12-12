@@ -20,7 +20,7 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sll	a1, a1, a2
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
 	sll	a1, a1, a2

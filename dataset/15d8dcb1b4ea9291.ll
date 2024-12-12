@@ -11,7 +11,7 @@
 ; openjdk/optimized/serialStringDedup.ll
 ; openjdk/optimized/shenandoahMark.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq i32 %1, 2
@@ -24,7 +24,7 @@ entry:
 ; llvm/optimized/PPC.cpp.ll
 ; wolfssl/optimized/server.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 17179869184
   %4 = icmp eq i32 %1, 7

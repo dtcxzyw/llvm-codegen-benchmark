@@ -103,6 +103,21 @@ func0000000000000030:                   # @func0000000000000030
 	vzeroupper
 	retq
 .LCPI8_0:
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+func0000000000000011:                   # @func0000000000000011
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpmovdw	%ymm0, %xmm0
+	vpaddw	.LCPI8_0(%rip), %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI9_0:
 	.short	53120                           # 0xcf80
 	.short	53120                           # 0xcf80
 	.short	53120                           # 0xcf80
@@ -114,6 +129,6 @@ func0000000000000030:                   # @func0000000000000030
 func000000000000003d:                   # @func000000000000003d
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
-	vpaddw	.LCPI8_0(%rip), %xmm0, %xmm0
+	vpaddw	.LCPI9_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq

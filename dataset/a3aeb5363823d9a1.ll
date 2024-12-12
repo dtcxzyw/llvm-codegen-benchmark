@@ -3,11 +3,13 @@
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; eastl/optimized/EAString.cpp.ll
-; git/optimized/apply.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5Dsingle.c.ll
+; llvm/optimized/ModuleMap.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/appender.cpp.ll
@@ -86,7 +88,6 @@
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -151,7 +152,6 @@
 ; postgres/optimized/dependencies.ll
 ; postgres/optimized/dict.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/like.ll
 ; postgres/optimized/mcv.ll
@@ -192,11 +192,27 @@
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
-  %5 = getelementptr nusw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %6 = select i1 %4, ptr %5, ptr %0
+  ret ptr %6
+}
+
+; 5 occurrences:
+; git/optimized/apply.ll
+; mitsuba3/optimized/bitmap.cpp.ll
+; mitsuba3/optimized/hdrfilm.cpp.ll
+; mitsuba3/optimized/specfilm.cpp.ll
+; tev/optimized/ImageButton.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 1
+  %4 = icmp eq i8 %3, 0
+  %5 = getelementptr nusw i8, ptr %1, i64 -23
   %6 = select i1 %4, ptr %5, ptr %0
   ret ptr %6
 }
@@ -212,19 +228,6 @@ entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
   %5 = getelementptr i8, ptr %1, i64 49
-  %6 = select i1 %4, ptr %5, ptr %0
-  ret ptr %6
-}
-
-; 2 occurrences:
-; llvm/optimized/ModuleMap.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000031(ptr %0, ptr %1, i8 %2) #0 {
-entry:
-  %3 = and i8 %2, 4
-  %4 = icmp eq i8 %3, 0
-  %5 = getelementptr nusw nuw i8, ptr %1, i64 16
   %6 = select i1 %4, ptr %5, ptr %0
   ret ptr %6
 }

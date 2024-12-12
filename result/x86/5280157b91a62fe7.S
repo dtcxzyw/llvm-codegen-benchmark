@@ -12,10 +12,3 @@ func0000000000000030:                   # @func0000000000000030
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000020:                   # @func0000000000000020
-	andl	$64512, %edx                    # imm = 0xFC00
-	cmpl	$49921, %edx                    # imm = 0xC301
-	setae	%al
-	orb	%dil, %sil
-	orb	%sil, %al
-	retq

@@ -3,7 +3,7 @@
 ; darktable/optimized/introspection_ashift.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, i32 %1, double %2) #0 {
+define i1 @func0000000000000294(i32 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %2, 0.000000e+00
   %4 = icmp sgt i32 %0, %1

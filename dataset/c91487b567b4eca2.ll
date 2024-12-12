@@ -5,7 +5,7 @@
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; ruby/optimized/euc_jp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/serverenvironment.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000006a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 16
   %4 = icmp sgt i64 %3, %1
@@ -28,7 +28,7 @@ entry:
 ; linux/optimized/sbitmap.ll
 ; minetest/optimized/game.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp ugt i64 %3, %1
@@ -42,7 +42,7 @@ entry:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 128
   %4 = icmp sgt i64 %3, %1
@@ -54,10 +54,10 @@ entry:
 ; openjdk/optimized/freetypeScaler.ll
 ; postgres/optimized/bufmgr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000078(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1024
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp samesign ugt i64 %3, %1
   %5 = select i1 %4, i32 %0, i32 1024
   ret i32 %5
 }
@@ -67,21 +67,19 @@ entry:
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000074(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp samesign ult i64 %3, %1
   %5 = select i1 %4, i32 %0, i32 0
   ret i32 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; openusd/optimized/quadRefinement.cpp.ll
-; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000066(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp slt i64 %3, %1
@@ -90,9 +88,20 @@ entry:
 }
 
 ; 1 occurrences:
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000064(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 1
+  %4 = icmp ult i64 %3, %1
+  %5 = select i1 %4, i32 %0, i32 0
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; gromacs/optimized/centerofmass.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003c(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000006c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %.not = icmp eq i64 %3, %1
@@ -108,7 +117,7 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp eq i64 %3, %1

@@ -34,3 +34,16 @@ func0000000000000004:                   # @func0000000000000004
 	vpblendmq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm0 {%k2}
 	vpbroadcastq	.LCPI2_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [13,13,13,13]
 	retq
+.LCPI3_0:
+	.long	2048                            # 0x800
+.LCPI3_1:
+	.quad	2                               # 0x2
+.LCPI3_2:
+	.quad	1                               # 0x1
+func0000000000000014:                   # @func0000000000000014
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k1
+	vpcmpltud	.LCPI3_0(%rip){1to4}, %xmm2, %k2
+	vpblendmq	.LCPI3_1(%rip){1to4}, %ymm1, %ymm0 {%k2}
+	vpbroadcastq	.LCPI3_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1]
+	retq

@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 84 occurrences:
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
 ; cmake/optimized/http.c.ll
 ; coreutils-rs/optimized/505489it2i89bi1c.ll
@@ -67,7 +67,6 @@
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; proxygen/optimized/HTTPMessage.cpp.ll
 ; qemu/optimized/block_monitor_bitmap-qmp-cmds.c.ll
-; qemu/optimized/io_net-listener.c.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/quicklist.ll
 ; redis/optimized/server.ll
@@ -83,6 +82,8 @@
 ; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
 ; wireshark/optimized/packet-rpcrdma.c.ll
 ; wireshark/optimized/packet-tacacs.c.ll
+; zed-rs/optimized/0l5q95ei94dcvnozucoiwn5qf.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
@@ -91,7 +92,7 @@ entry:
   ret ptr %3
 }
 
-; 68 occurrences:
+; 69 occurrences:
 ; casadi/optimized/integrator.cpp.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
@@ -160,6 +161,7 @@ entry:
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, ptr %1) #0 {
 entry:

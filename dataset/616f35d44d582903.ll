@@ -23,7 +23,7 @@ entry:
   ret i64 %3
 }
 
-; 212 occurrences:
+; 214 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -234,6 +234,8 @@ entry:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; zfp/optimized/zfp.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind

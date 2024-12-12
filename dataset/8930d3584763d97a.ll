@@ -1,9 +1,8 @@
 
-; 16 occurrences:
+; 13 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/driver-ops.ll
-; linux/optimized/ht.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/kbuf.ll
@@ -14,8 +13,6 @@
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/hw_usb_hcd-uhci.c.ll
 ; slurm/optimized/strnatcmp.ll
-; wasmtime-rs/optimized/33slbp9da8waph2q.ll
-; wasmtime-rs/optimized/lin3yywv836im8d.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:

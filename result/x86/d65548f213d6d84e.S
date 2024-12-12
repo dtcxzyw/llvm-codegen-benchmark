@@ -22,20 +22,7 @@ func0000000000000001:                   # @func0000000000000001
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	incl	%esi
-	movslq	%esi, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	movslq	%esi, %rax
 	leaq	-1(%rax,%rdi), %rax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	movslq	%esi, %rax
-	leaq	3(%rax,%rdi), %rax
-	retq
-func0000000000000007:                   # @func0000000000000007
-	movslq	%esi, %rax
-	leaq	1(%rax,%rdi), %rax
 	retq

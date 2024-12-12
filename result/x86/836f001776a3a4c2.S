@@ -20,3 +20,9 @@ func0000000000000035:                   # @func0000000000000035
 	shlq	$2, %rax
 	leaq	(%rax,%rax,4), %rax
 	retq
+func0000000000000011:                   # @func0000000000000011
+	leal	3(%rsi,%rdi), %eax
+	cltq
+	shlq	$3, %rax
+	leaq	(%rax,%rax,2), %rax
+	retq

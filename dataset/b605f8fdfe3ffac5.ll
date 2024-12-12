@@ -130,6 +130,45 @@ entry:
   ret i1 %5
 }
 
+; 7 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; postgres/optimized/geo_ops.ll
+; postgres/optimized/gistproc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000150(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ole double %1, %2
+  %4 = fcmp oeq double %0, 0xBFF921FB54442D18
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func000000000000012a(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ueq double %2, 0x7FF0000000000000
+  %4 = fcmp ugt double %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b2(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ugt double %1, %2
+  %4 = fcmp ueq double %0, 0x7FF0000000000000
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; Function Attrs: nounwind
@@ -189,24 +228,23 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ogt double %2, 1.000000e+00
+  %4 = fcmp ogt double %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000007a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ult double %2, 0.000000e+00
   %4 = fcmp uge double %0, %1
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; postgres/optimized/geo_ops.ll
-; postgres/optimized/gistproc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000150(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ole double %2, 0x3EB0C6F7A0B5ED8D
-  %4 = fcmp oeq double %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
 }

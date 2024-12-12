@@ -1,9 +1,16 @@
 
-; 321 occurrences:
+; 323 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; arrow/optimized/expression.cc.ll
 ; arrow/optimized/key_value_metadata.cc.ll
 ; arrow/optimized/message.cc.ll
+; boost/optimized/cmdline.ll
+; boost/optimized/core.ll
+; boost/optimized/env.ll
+; boost/optimized/generator.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/text_ostream_backend.ll
 ; cmake/optimized/cmCMakePresetsGraphReadJSON.cxx.ll
 ; cmake/optimized/cmCMakePresetsGraphReadJSONBuildPresets.cxx.ll
 ; cmake/optimized/cmCMakePresetsGraphReadJSONConfigurePresets.cxx.ll
@@ -28,7 +35,6 @@
 ; cmake/optimized/cmSystemTools.cxx.ll
 ; cmake/optimized/cmVariableWatch.cxx.ll
 ; cmake/optimized/cmXcFramework.cxx.ll
-; cmake/optimized/divsufsort.c.ll
 ; cvc5/optimized/alethe_post_processor.cpp.ll
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
@@ -59,7 +65,6 @@
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/BenchmarkVector.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; entt/optimized/group.cpp.ll
@@ -287,8 +292,6 @@
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_objects.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; quantlib/optimized/bond.ll
@@ -320,11 +323,10 @@
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
-; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i64 %0, ptr %1) #0 {
+define i1 @func000000000000032a(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = icmp sgt i64 %4, 0
@@ -337,9 +339,9 @@ entry:
 ; minetest/optimized/settings.cpp.ll
 ; taskflow/optimized/parallel_sort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000324(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 16
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 16
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = icmp ult i64 %4, 64
@@ -383,9 +385,9 @@ entry:
 ; vcpkg/optimized/versions.cpp.ll
 ; xgboost/optimized/context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, ptr %1) #0 {
+define i1 @func000000000000030a(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = icmp sgt i64 %4, 31
@@ -405,18 +407,20 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
-; abseil-cpp/optimized/node_hash_map_test.cc.ll
-; abseil-cpp/optimized/unordered_map_test.cc.ll
-; cvc5/optimized/core_solver.cpp.ll
-; cvc5/optimized/dtype_cons.cpp.ll
-; cvc5/optimized/function_const.cpp.ll
-; cvc5/optimized/lfsc_post_processor.cpp.ll
-; cvc5/optimized/quantifiers_attributes.cpp.ll
-; cvc5/optimized/quantifiers_rewriter.cpp.ll
-; cvc5/optimized/sygus_unif_rl.cpp.ll
-; cvc5/optimized/theory_ff_rewriter.cpp.ll
-; cvc5/optimized/theory_uf_rewriter.cpp.ll
+; 2 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000226(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -16
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = icmp slt i64 %4, 0
+  ret i1 %5
+}
+
+; 6 occurrences:
 ; eastl/optimized/TestString.cpp.ll
 ; opencv/optimized/net_impl.cpp.ll
 ; taskflow/optimized/parallel_sort.cpp.ll
@@ -424,9 +428,9 @@ entry:
 ; tev/optimized/ImageViewer.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000328(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 32
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 32
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = icmp ugt i64 %4, 736
@@ -436,9 +440,24 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, ptr %1) #0 {
+define i1 @func000000000000002a(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 8
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = icmp sgt i64 %4, 0
+  ret i1 %5
+}
+
+; 4 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; hyperscan/optimized/rose_build_program.cpp.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000022a(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -4
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = icmp sgt i64 %4, 0
@@ -448,24 +467,12 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000026(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 24
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = icmp slt i64 %4, 2
-  ret i1 %5
-}
-
-; 1 occurrences:
-; cpython/optimized/unicodeobject.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr i8, ptr %1, i64 24
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %0, %3
-  %5 = icmp ugt i64 %4, 80
   ret i1 %5
 }
 

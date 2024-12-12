@@ -36,7 +36,8 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/area.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; llvm/optimized/FlattenCFG.cpp.ll
 ; Function Attrs: nounwind

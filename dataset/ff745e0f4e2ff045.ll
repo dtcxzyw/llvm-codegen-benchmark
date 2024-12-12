@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 48 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/mpmMan.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -14,7 +14,6 @@
 ; libjpeg-turbo/optimized/jdmerge.c.ll
 ; libwebp/optimized/picture_enc.c.ll
 ; lightgbm/optimized/bin.cpp.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/i915_scatterlist.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/select.ll
@@ -47,8 +46,6 @@
 ; openusd/optimized/av1_inv_txfm2d.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; postgres/optimized/regexec.ll
-; qemu/optimized/hw_audio_es1370.c.ll
-; re2/optimized/compile.cc.ll
 ; ruby/optimized/gc.ll
 ; spike/optimized/plic.ll
 ; Function Attrs: nounwind
@@ -60,7 +57,7 @@ entry:
   ret i32 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; cpython/optimized/mathmodule.ll
 ; jemalloc/optimized/ckh.ll
@@ -76,7 +73,6 @@ entry:
 ; pbrt-v4/optimized/filters.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; protobuf/optimized/lexer.cc.ll
-; rand-rs/optimized/3wentbx1vl0iwznb.ll
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; ruby/optimized/bignum.ll
@@ -89,7 +85,7 @@ entry:
   ret i32 %3
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; c3c/optimized/c_abi.c.ll
@@ -137,7 +133,6 @@ entry:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/MCDXContainerWriter.cpp.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -176,6 +171,7 @@ entry:
 }
 
 ; 148 occurrences:
+; boost/optimized/to_chars.ll
 ; c3c/optimized/c_abi_x86.c.ll
 ; freetype/optimized/sdf.c.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -197,7 +193,6 @@ entry:
 ; linux/optimized/dm-table.ll
 ; linux/optimized/dma-ring.ll
 ; linux/optimized/evdev.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_context_sseu.ll
 ; linux/optimized/intel_dpll.ll
@@ -465,14 +460,13 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; php/optimized/compact_vars.ll
 ; php/optimized/optimize_temp_vars_5.ll
 ; php/optimized/zend_alloc.ll
 ; php/optimized/zend_compile.ll
 ; php/optimized/zend_jit.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001a(i64 %0) #0 {
 entry:

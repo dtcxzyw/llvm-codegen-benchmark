@@ -7,11 +7,11 @@
 ; ruby/optimized/parser_st.ll
 ; ruby/optimized/st.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -21,22 +21,22 @@ entry:
 ; libquic/optimized/hpack_huffman_table.cc.ll
 ; ruby/optimized/st.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000c8(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; stb/optimized/stb_ds.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl i64 512, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -44,7 +44,7 @@ entry:
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
 ; redis/optimized/dict.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %.highbits = lshr i64 %0, %2
@@ -55,11 +55,11 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl i64 2, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 

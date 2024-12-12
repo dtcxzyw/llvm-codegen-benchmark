@@ -1,16 +1,16 @@
 
-%"class.std::__1::basic_string.2490584" = type { %"class.std::__1::__compressed_pair.10.2490585" }
-%"class.std::__1::__compressed_pair.10.2490585" = type { %"struct.std::__1::__compressed_pair_elem.11.2490586" }
-%"struct.std::__1::__compressed_pair_elem.11.2490586" = type { %"struct.std::__1::basic_string<char>::__rep.2490587" }
-%"struct.std::__1::basic_string<char>::__rep.2490587" = type { %union.anon.2490588 }
-%union.anon.2490588 = type { %"struct.std::__1::basic_string<char>::__long.2490589" }
-%"struct.std::__1::basic_string<char>::__long.2490589" = type { %struct.anon.12.2490590, i64, ptr }
-%struct.anon.12.2490590 = type { i64 }
-%"struct.rocksdb::DeadlockPath.2499461" = type { %"class.std::vector.198.2499462", i8, i64 }
-%"class.std::vector.198.2499462" = type { %"struct.std::_Vector_base.199.2499463" }
-%"struct.std::_Vector_base.199.2499463" = type { %"struct.std::_Vector_base<rocksdb::DeadlockInfo, std::allocator<rocksdb::DeadlockInfo>>::_Vector_impl.2499464" }
-%"struct.std::_Vector_base<rocksdb::DeadlockInfo, std::allocator<rocksdb::DeadlockInfo>>::_Vector_impl.2499464" = type { %"struct.std::_Vector_base<rocksdb::DeadlockInfo, std::allocator<rocksdb::DeadlockInfo>>::_Vector_impl_data.2499465" }
-%"struct.std::_Vector_base<rocksdb::DeadlockInfo, std::allocator<rocksdb::DeadlockInfo>>::_Vector_impl_data.2499465" = type { ptr, ptr, ptr }
+%"class.std::__1::basic_string.2606005" = type { %"class.std::__1::__compressed_pair.10.2606006" }
+%"class.std::__1::__compressed_pair.10.2606006" = type { %"struct.std::__1::__compressed_pair_elem.11.2606007" }
+%"struct.std::__1::__compressed_pair_elem.11.2606007" = type { %"struct.std::__1::basic_string<char>::__rep.2606008" }
+%"struct.std::__1::basic_string<char>::__rep.2606008" = type { %union.anon.2606009 }
+%union.anon.2606009 = type { %"struct.std::__1::basic_string<char>::__long.2606010" }
+%"struct.std::__1::basic_string<char>::__long.2606010" = type { %struct.anon.12.2606011, i64, ptr }
+%struct.anon.12.2606011 = type { i64 }
+%"struct.rocksdb::DeadlockPath.2614694" = type { %"class.std::vector.198.2614695", i8, i64 }
+%"class.std::vector.198.2614695" = type { %"struct.std::_Vector_base.199.2614696" }
+%"struct.std::_Vector_base.199.2614696" = type { %"struct.std::_Vector_base<rocksdb::DeadlockInfo, std::allocator<rocksdb::DeadlockInfo>>::_Vector_impl.2614697" }
+%"struct.std::_Vector_base<rocksdb::DeadlockInfo, std::allocator<rocksdb::DeadlockInfo>>::_Vector_impl.2614697" = type { %"struct.std::_Vector_base<rocksdb::DeadlockInfo, std::allocator<rocksdb::DeadlockInfo>>::_Vector_impl_data.2614698" }
+%"struct.std::_Vector_base<rocksdb::DeadlockInfo, std::allocator<rocksdb::DeadlockInfo>>::_Vector_impl_data.2614698" = type { ptr, ptr, ptr }
 
 ; 44 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -66,8 +66,7 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; php/optimized/math.ll
+; 1 occurrences:
 ; ruby/optimized/sprintf.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
@@ -87,7 +86,7 @@ define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nuw nsw i64 %1, %3
-  %5 = getelementptr %"class.std::__1::basic_string.2490584", ptr %0, i64 %4
+  %5 = getelementptr %"class.std::__1::basic_string.2606005", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -113,7 +112,19 @@ entry:
   ret ptr %5
 }
 
-; 16 occurrences:
+; 2 occurrences:
+; rocksdb/optimized/point_lock_manager.cc.ll
+; rocksdb/optimized/range_tree_lock_manager.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = sub nuw nsw i64 %1, %3
+  %5 = getelementptr nusw %"struct.rocksdb::DeadlockPath.2614694", ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 14 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; hermes/optimized/JSProxy.cpp.ll
@@ -124,22 +135,20 @@ entry:
 ; opencv/optimized/parallel_impl.cpp.ll
 ; openssl/optimized/libdefault-lib-argon2.ll
 ; php/optimized/zend_builtin_functions.ll
-; rocksdb/optimized/point_lock_manager.cc.ll
-; rocksdb/optimized/range_tree_lock_manager.cc.ll
 ; z3/optimized/bit_blaster_rewriter.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nuw nsw i64 %1, %3
-  %5 = getelementptr nusw %"struct.rocksdb::DeadlockPath.2499461", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/luckyFast16.c.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -167,7 +176,6 @@ entry:
 ; php/optimized/logical_filters.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; spike/optimized/interactive.ll
-; velox/optimized/StackTrace.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -244,11 +252,11 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nuw nsw i64 %1, %3
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -265,17 +273,25 @@ entry:
   ret ptr %5
 }
 
-; 10 occurrences:
+; 1 occurrences:
+; velox/optimized/StackTrace.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 %1, %3
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 7 occurrences:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; linux/optimized/namei.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
-; luau/optimized/lstrlib.cpp.ll
 ; openblas/optimized/dlasq2.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -308,6 +324,17 @@ define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %1, %3
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; cmake/optimized/huf_decompress.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nuw nsw i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
@@ -12,7 +12,6 @@
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; gromacs/optimized/expanded.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; opencv/optimized/shapedescr.cpp.ll
 ; Function Attrs: nounwind

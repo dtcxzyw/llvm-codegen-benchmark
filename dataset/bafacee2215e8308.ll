@@ -1,5 +1,5 @@
 
-; 225 occurrences:
+; 234 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/1fcqyxrltkf78u1u.ll
 ; actix-rs/optimized/3tnlvci61w0nl5yv.ll
@@ -7,18 +7,17 @@
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/5g1vgjexs3y2qadw.ll
 ; actix-rs/optimized/5gtrut5e3cfvsh71.ll
-; arrow/optimized/UriCompare.c.ll
 ; arrow/optimized/UriShorten.c.ll
 ; assimp/optimized/FBXDeformer.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/process.ll
 ; casadi/optimized/external.cpp.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/testDynamicLoader.cxx.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; cpython/optimized/_testbuffer.ll
-; cpython/optimized/cellobject.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; eastl/optimized/TestAny.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -47,7 +46,6 @@
 ; linux/optimized/dma-buf.ll
 ; linux/optimized/drm_atomic_helper.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/fs_parser.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_dp_aux.ll
@@ -106,7 +104,6 @@
 ; openssl/optimized/libcrypto-shlib-encoder_meth.ll
 ; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
-; openssl/optimized/libtestutil-lib-tests.ll
 ; openssl/optimized/openssl-bin-cmp.ll
 ; openusd/optimized/abstractData.cpp.ll
 ; openusd/optimized/animMapper.cpp.ll
@@ -223,6 +220,18 @@
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/q_mam.cpp.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8ps09f0y8mibhh9t1qb96p5es.ll
+; zed-rs/optimized/9pzx6flqzrwt1xqpmg7mx7dne.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/d6xu5i45b643l7z0mo8lfmzx0.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
@@ -233,7 +242,7 @@ entry:
   ret i1 %3
 }
 
-; 200 occurrences:
+; 210 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/1fcqyxrltkf78u1u.ll
@@ -242,16 +251,15 @@ entry:
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/5g1vgjexs3y2qadw.ll
 ; actix-rs/optimized/5gtrut5e3cfvsh71.ll
-; arrow/optimized/UriCompare.c.ll
 ; arrow/optimized/UriShorten.c.ll
 ; arrow/optimized/bit_block_counter.cc.ll
 ; assimp/optimized/FBXDeformer.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/process.ll
 ; casadi/optimized/external.cpp.ll
 ; cmake/optimized/cookie.c.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; cpython/optimized/_testbuffer.ll
-; cpython/optimized/cellobject.ll
 ; curl/optimized/libcurl_la-cookie.ll
 ; cvc5/optimized/ho_extension.cpp.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
@@ -378,7 +386,6 @@ entry:
 ; openjdk/optimized/memnode.ll
 ; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
-; openssl/optimized/libtestutil-lib-tests.ll
 ; openssl/optimized/openssl-bin-cmp.ll
 ; openusd/optimized/collectionMembershipQuery.cpp.ll
 ; openusd/optimized/expressionVariablesSource.cpp.ll
@@ -394,7 +401,6 @@ entry:
 ; postgres/optimized/syslogger.ll
 ; proj/optimized/axisswap.cpp.ll
 ; proj/optimized/common.cpp.ll
-; proj/optimized/crs.cpp.ll
 ; proj/optimized/datum.cpp.ll
 ; qemu/optimized/.._libqmp.c.ll
 ; qemu/optimized/block.c.ll
@@ -433,12 +439,25 @@ entry:
 ; wireshark/optimized/packet-dcerpc.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; z3/optimized/ast.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8ps09f0y8mibhh9t1qb96p5es.ll
+; zed-rs/optimized/9pzx6flqzrwt1xqpmg7mx7dne.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/d6xu5i45b643l7z0mo8lfmzx0.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   ret i1 %3
 }
 

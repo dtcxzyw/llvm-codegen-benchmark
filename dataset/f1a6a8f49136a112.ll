@@ -1,10 +1,14 @@
 
-%"struct.std::atomic.405.2521434" = type { %"struct.std::__atomic_base.406.2521437" }
-%"struct.std::__atomic_base.406.2521437" = type { ptr }
+%"struct.std::atomic.405.2635844" = type { %"struct.std::__atomic_base.406.2635847" }
+%"struct.std::__atomic_base.406.2635847" = type { ptr }
+%struct.GCRef.3680589 = type { i64 }
 
-; 175 occurrences:
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
+; 176 occurrences:
+; llvm/optimized/AccelTable.cpp.ll
+; llvm/optimized/DIE.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/DwarfUnit.cpp.ll
+; llvm/optimized/NonRelocatableStringpool.cpp.ll
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
 ; mold/optimized/gc-sections.cc.ARM64.cc.ll
@@ -132,8 +136,6 @@
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; mold/optimized/perf.cc.ll
-; opencv/optimized/optflowgf.cpp.ll
-; opencv/optimized/stereo_binary_bm.cpp.ll
 ; openusd/optimized/adapterManager.cpp.ll
 ; openusd/optimized/basisCurvesAdapter.cpp.ll
 ; openusd/optimized/bboxCache.cpp.ll
@@ -179,26 +181,25 @@
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 63
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw %"struct.std::atomic.405.2521434", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"struct.std::atomic.405.2635844", ptr %3, i64 %2
   ret ptr %4
 }
 
-; 5 occurrences:
-; llvm/optimized/AccelTable.cpp.ll
-; llvm/optimized/DIE.cpp.ll
-; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/DwarfUnit.cpp.ll
-; llvm/optimized/NonRelocatableStringpool.cpp.ll
+; 4 occurrences:
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; opencv/optimized/optflowgf.cpp.ll
+; opencv/optimized/stereo_binary_bm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = xor i64 %1, 8
+  %2 = xor i64 %1, -1
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
+  %4 = getelementptr nusw %struct.GCRef.3680589, ptr %3, i64 %2
   ret ptr %4
 }
 

@@ -16,7 +16,7 @@ entry:
   %3 = shl i64 %2, 5
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -24
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -42,24 +42,12 @@ entry:
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; minetest/optimized/png.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000604(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -3
-  %6 = icmp ugt ptr %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; ropey-rs/optimized/1zgfltkx0c00yngh.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000301(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 5
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 216
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -90,17 +78,32 @@ entry:
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000201(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 192
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr i8, ptr %4, i64 216
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 318 occurrences:
-; eastl/optimized/TestHeap.cpp.ll
+; 2 occurrences:
+; ropey-rs/optimized/1zgfltkx0c00yngh.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000601(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 5
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 216
+  %6 = icmp eq ptr %0, %5
+  ret i1 %6
+}
+
+; 366 occurrences:
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/console_buffer.ll
+; boost/optimized/core.ll
 ; freetype/optimized/ftbase.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -124,6 +127,7 @@ entry:
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; llvm/optimized/AnalysisConsumer.cpp.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
+; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/BugSuppression.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
@@ -140,6 +144,7 @@ entry:
 ; llvm/optimized/CGStmtOpenMP.cpp.ll
 ; llvm/optimized/CalledOnceCheck.cpp.ll
 ; llvm/optimized/CastToStructChecker.cpp.ll
+; llvm/optimized/CheckExprLifetime.cpp.ll
 ; llvm/optimized/ClangOptionDocEmitter.cpp.ll
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
@@ -170,6 +175,7 @@ entry:
 ; llvm/optimized/IndexDecl.cpp.ll
 ; llvm/optimized/IndexTypeSourceInfo.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/InterfaceStubFunctionsConsumer.cpp.ll
 ; llvm/optimized/IntrinsicEmitter.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
@@ -202,6 +208,7 @@ entry:
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaCoroutine.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
@@ -209,7 +216,9 @@ entry:
 ; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaHLSL.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaObjC.cpp.ll
+; llvm/optimized/SemaOpenCL.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/SemaStmtAttr.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
@@ -241,6 +250,7 @@ entry:
 ; llvm/optimized/TransZeroOutPropsInDealloc.cpp.ll
 ; llvm/optimized/Transforms.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
+; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/UncountedCallArgsChecker.cpp.ll
 ; llvm/optimized/UncountedLambdaCapturesChecker.cpp.ll
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
@@ -248,6 +258,8 @@ entry:
 ; llvm/optimized/Visitor.cpp.ll
 ; nix/optimized/get-drvs.ll
 ; openjdk/optimized/hb-ot-layout.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
+; ropey-rs/optimized/4i14j6kjvp3g1a3p.ll
 ; rust-analyzer-rs/optimized/1213fy5h08xh684z.ll
 ; z3/optimized/ackr_bound_probe.cpp.ll
 ; z3/optimized/ackr_model_converter.cpp.ll
@@ -273,7 +285,7 @@ entry:
 ; z3/optimized/bv_delay_internalize.cpp.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/bv_slice.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
+; z3/optimized/cost_evaluator.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
 ; z3/optimized/decl_collector.cpp.ll
 ; z3/optimized/degree_shift_tactic.cpp.ll
@@ -394,8 +406,10 @@ entry:
 ; z3/optimized/smtfd_solver.cpp.ll
 ; z3/optimized/solve_context_eqs.cpp.ll
 ; z3/optimized/solve_eqs.cpp.ll
+; z3/optimized/solver_preprocess.cpp.ll
 ; z3/optimized/spacer_antiunify.cpp.ll
 ; z3/optimized/spacer_concretize.cpp.ll
+; z3/optimized/spacer_proof_utils.cpp.ll
 ; z3/optimized/spacer_quant_generalizer.cpp.ll
 ; z3/optimized/spacer_unsat_core_learner.cpp.ll
 ; z3/optimized/spacer_unsat_core_plugin.cpp.ll
@@ -418,13 +432,48 @@ entry:
 ; z3/optimized/tseitin_theory_checker.cpp.ll
 ; z3/optimized/value_sweep.cpp.ll
 ; z3/optimized/var_subst.cpp.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1iclhw87evxdlo4w8mftuzy1q.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/27vlvcehd5fwhym4kjj7notsh.ll
+; zed-rs/optimized/2h1nnr25ysxgaelpjnym4eorn.ll
+; zed-rs/optimized/4jorz9az93w02qp1j17ku3v0j.ll
+; zed-rs/optimized/4wl6luh08kf5panbyu7di2k6e.ll
+; zed-rs/optimized/4yj2hlxw19fp3dolnhsg3xkpy.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/6t66wyfdhcx0enyarsxt68bq7.ll
+; zed-rs/optimized/71uytbn1jy6440q3d57n4okna.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/8h2d4a3i3ysegc1cht5hd5uc2.ll
+; zed-rs/optimized/8yy2zhy2bdzv8bn57pipvxcw7.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/9uyga23501g5fm2owj6o8xm6i.ll
+; zed-rs/optimized/azv0j1dyv87nnzewhi6axt1ps.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/biea7u9y4mp6m3ifunknc64xm.ll
+; zed-rs/optimized/bwvht24uf41c89mbhdihda1iu.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/bzgpsrur2ydjgs01q4vmv48xa.ll
+; zed-rs/optimized/c8rrq6pnwhh8lrfnv140dr3y1.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/d85rks8fjothinwf2xlu2hk13.ll
+; zed-rs/optimized/dd8ztmg64g4x9ypkzwkofy6vi.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/dotykqg7r97h0htpk8r9ip155.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
+; zed-rs/optimized/ez5ezaept0c4zvcatfvkpkciv.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000007e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
-  %6 = icmp eq ptr %5, %0
+  %3 = shl nuw nsw i64 %2, 5
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 216
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -432,12 +481,12 @@ entry:
 ; openjdk/optimized/psOldGen.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000164(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 20
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1048576
-  %6 = icmp ugt ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1048576
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -446,20 +495,21 @@ entry:
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000020c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 40
-  %6 = icmp ne ptr %5, %0
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
 ; abc/optimized/giaSif.c.ll
 ; abc/optimized/sbdCore.c.ll
+; abc/optimized/xsatSolver.c.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -471,12 +521,12 @@ entry:
 ; php/optimized/zend_execute.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000204(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 16
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -484,12 +534,12 @@ entry:
 ; freetype/optimized/ftbase.c.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000007e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 10
-  %6 = icmp ugt ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 10
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -498,12 +548,12 @@ entry:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000404(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 2
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -512,12 +562,12 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a8(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000348(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -64
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -526,16 +576,17 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000344(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -32
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
-; 76 occurrences:
+; 77 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -613,12 +664,24 @@ entry:
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003ac(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000007ec(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 24
-  %6 = icmp ne ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 24
+  %6 = icmp ne ptr %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; eastl/optimized/TestHeap.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000007c1(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 

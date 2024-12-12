@@ -37,7 +37,7 @@
 ; slurm/optimized/hostlist.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %1, %0
   %3 = icmp slt i32 %0, %1
@@ -45,7 +45,7 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/nwkAig.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -53,6 +53,8 @@ entry:
 ; git/optimized/versioncmp.ll
 ; libwebp/optimized/anim_decode.c.ll
 ; llvm/optimized/InlineCost.cpp.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_span.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; opencv/optimized/gfluidbuffer.cpp.ll
 ; opencv/optimized/grayscale_bitmap.cpp.ll
@@ -62,9 +64,8 @@ entry:
 ; openjdk/optimized/heap.ll
 ; openusd/optimized/decodeframe.c.ll
 ; slurm/optimized/hostlist.ll
-; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = icmp sgt i32 %0, %1
@@ -72,9 +73,10 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; darktable/optimized/introspection_toneequal.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; oiio/optimized/strutil.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
@@ -88,17 +90,6 @@ entry:
   %2 = sub i32 %1, %0
   %3 = icmp slt i32 %0, %1
   %4 = select i1 %3, i32 %2, i32 0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; openjdk/optimized/DrawLine.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sub nsw i32 %0, %1
-  %3 = icmp ult i32 %0, %1
-  %4 = select i1 %3, i32 %2, i32 -1
   ret i32 %4
 }
 
@@ -132,7 +123,7 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 %0, %1
   %3 = icmp ugt i32 %0, %1

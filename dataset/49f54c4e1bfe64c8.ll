@@ -4,7 +4,7 @@
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp eq i16 %2, %0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/ssl_lib.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000038(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
   %3 = icmp ugt i16 %2, %0

@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
+; lvgl/optimized/lv_arc.ll
 ; nori/optimized/block.cpp.ll
 ; ocio/optimized/Lut3DOpCPU.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll

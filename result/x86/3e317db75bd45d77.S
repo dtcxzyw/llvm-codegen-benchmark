@@ -12,3 +12,10 @@ func0000000000000006:                   # @func0000000000000006
 	imulq	%rdx, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	subq	%rsi, %rdx
+	shrq	$3, %rdx
+	movabsq	$8198552921648689608, %rax      # imm = 0x71C71C71C71C71C8
+	imulq	%rdx, %rax
+	addq	%rdi, %rax
+	retq

@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; qdrant-rs/optimized/49gep1elv33vxlrq.ll
@@ -8,6 +8,7 @@
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
 ; wireshark/optimized/packet-lbmr.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i16 %0) #0 {
 entry:
@@ -33,13 +34,15 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; ncnn/optimized/mat.cpp.ll
 ; qemu/optimized/hw_net_tulip.c.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i16 %0) #0 {
 entry:

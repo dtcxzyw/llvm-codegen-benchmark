@@ -25,12 +25,12 @@
 define i64 @func000000000000001b(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 464 occurrences:
+; 468 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/solver_api.c.ll
@@ -260,6 +260,7 @@ entry:
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_bcread.ll
 ; luajit/optimized/lj_bcread_dyn.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -494,17 +495,20 @@ entry:
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
 ; z3/optimized/zstring.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 357 occurrences:
+; 359 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
@@ -654,6 +658,8 @@ entry:
 ; luau/optimized/Conformance.test.cpp.ll
 ; luau/optimized/JsonEmitter.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -866,12 +872,12 @@ entry:
 define i64 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 415 occurrences:
+; 419 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; assimp/optimized/ASEParser.cpp.ll
 ; assimp/optimized/B3DImporter.cpp.ll
@@ -881,6 +887,7 @@ entry:
 ; assimp/optimized/MDCLoader.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/linker.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; c3c/optimized/stringutils.c.ll
@@ -981,7 +988,6 @@ entry:
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/swiotlb.ll
-; linux/optimized/tbxfroot.ll
 ; linux/optimized/vector.ll
 ; linux/optimized/virtgpu_submit.ll
 ; linux/optimized/vsprintf.ll
@@ -1009,6 +1015,7 @@ entry:
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/AssumeBundleBuilder.cpp.ll
 ; llvm/optimized/AtomicExpandPass.cpp.ll
+; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/Attributor.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -1133,7 +1140,6 @@ entry:
 ; llvm/optimized/PredicateInfo.cpp.ll
 ; llvm/optimized/PreprocessingRecord.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
@@ -1283,6 +1289,10 @@ entry:
 ; z3/optimized/smtfd_solver.cpp.ll
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/9tt6eh72scdop5d6biwv5himz.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; zstd/optimized/fastcover.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
@@ -1291,7 +1301,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -1341,7 +1351,7 @@ entry:
 define i64 @func000000000000001f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -1417,7 +1427,7 @@ entry:
 define i64 @func0000000000000012(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -1680,7 +1690,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -1694,7 +1704,7 @@ entry:
 define i64 @func000000000000001e(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -1716,7 +1726,7 @@ entry:
 define i64 @func0000000000000019(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -1729,12 +1739,12 @@ entry:
 define i64 @func0000000000000017(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 45 occurrences:
+; 47 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
@@ -1760,8 +1770,10 @@ entry:
 ; opencv/optimized/expand_layer.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/reed_solomon_decoder.cpp.ll
+; openexr/optimized/internal_huf.c.ll
 ; openjdk/optimized/fontpath.ll
 ; openjdk/optimized/hb-ot-layout.ll
+; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/path.ll
 ; postgres/optimized/path_shlib.ll
 ; postgres/optimized/path_srv.ll
@@ -1784,7 +1796,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -1798,7 +1810,7 @@ entry:
 define i64 @func0000000000000013(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -1811,16 +1823,15 @@ entry:
 define i64 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; icu/optimized/pkgitems.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/dns_key.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
@@ -1846,15 +1857,14 @@ entry:
 define i64 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
-; gromacs/optimized/dgetf2.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/ConstantRange.cpp.ll
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
@@ -1869,7 +1879,7 @@ entry:
 define i64 @func000000000000001a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -1880,16 +1890,15 @@ entry:
 define i64 @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/RafDecoder.cpp.ll
 ; openblas/optimized/dpprfs.c.ll
 ; openblas/optimized/dsprfs.c.ll
-; openblas/optimized/dtptri.c.ll
 ; openmpi/optimized/dash_host.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; slurm/optimized/slurm_protocol_socket.ll
@@ -1898,7 +1907,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -1909,7 +1918,7 @@ entry:
 define i64 @func000000000000001d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -1920,7 +1929,7 @@ entry:
 define i64 @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -1936,7 +1945,7 @@ entry:
 define i64 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -1951,7 +1960,7 @@ entry:
 define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -1964,7 +1973,7 @@ entry:
 define i64 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -1976,8 +1985,22 @@ entry:
 define i64 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
+; 4 occurrences:
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000015(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = add nuw i32 %0, %2
+  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
@@ -1989,7 +2012,7 @@ entry:
 define i64 @func000000000000000b(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -2000,7 +2023,7 @@ entry:
 define i64 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

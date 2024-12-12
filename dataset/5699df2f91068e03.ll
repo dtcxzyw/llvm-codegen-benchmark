@@ -1,7 +1,8 @@
 
-; 46 occurrences:
+; 48 occurrences:
 ; abc/optimized/ifMan.c.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
+; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; openjdk/optimized/compileBroker.ll
@@ -44,71 +45,43 @@
 ; openjdk/optimized/whitebox.ll
 ; openjdk/optimized/xVerify.ll
 ; openjdk/optimized/zBarrierSet.ll
+; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; openspiel/optimized/spiel.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000007a(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %1, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 8
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   %6 = sext i32 %0 to i64
   %7 = getelementptr nusw i8, ptr %5, i64 %6
-  ret ptr %7
-}
-
-; 2 occurrences:
-; openjdk/optimized/methodData.ll
-; postgres/optimized/tsvector_op.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000060(i32 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl nsw i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %1, i64 304
-  %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = sext i32 %0 to i64
-  %7 = getelementptr i8, ptr %5, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
-; openjdk/optimized/oopMap.ll
+; openjdk/optimized/methodData.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000070(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw nsw i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %1, i64 8
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %3 = shl nsw i64 %2, 3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 304
+  %5 = getelementptr i8, ptr %4, i64 %3
   %6 = sext i32 %0 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr i8, ptr %5, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000e0(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000f0(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = getelementptr nusw i8, ptr %1, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 8
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = sext i32 %0 to i64
   %7 = getelementptr i8, ptr %5, i64 %6
-  ret ptr %7
-}
-
-; 3 occurrences:
-; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; libphonenumber/optimized/geocoding_data_test.cc.ll
-; openspiel/optimized/best_response.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000042(i32 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl nsw i64 %2, 2
-  %4 = getelementptr i8, ptr %1, i64 12
-  %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = sext i32 %0 to i64
-  %7 = getelementptr nusw i32, ptr %5, i64 %6
   ret ptr %7
 }
 

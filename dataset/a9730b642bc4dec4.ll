@@ -29,19 +29,19 @@ entry:
 ; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/shenandoahMarkBitMap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000094(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %0, %3
   %5 = lshr i64 %1, %3
-  %6 = icmp ult i64 %4, %5
+  %6 = icmp samesign ult i64 %4, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/g1BarrierSet.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %0, %3
@@ -55,7 +55,7 @@ entry:
 ; linux/optimized/printk_ringbuffer.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3

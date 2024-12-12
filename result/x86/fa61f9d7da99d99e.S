@@ -1,4 +1,4 @@
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	movzwl	%dx, %eax
 	orq	%rsi, %rdi
 	orq	%rax, %rdi
@@ -6,20 +6,20 @@ func000000000000003c:                   # @func000000000000003c
 	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movzwl	%dx, %eax
 	orq	%rsi, %rax
 	orq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	movzwl	%dx, %eax
 	orq	%rsi, %rdi
 	orq	%rax, %rdi
 	cmpq	$8192, %rdi                     # imm = 0x2000
 	setae	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movzwl	%dx, %eax
 	orq	%rsi, %rdi
 	orq	%rax, %rdi

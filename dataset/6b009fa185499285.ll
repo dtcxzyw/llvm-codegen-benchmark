@@ -1,23 +1,5 @@
 
-; 8 occurrences:
-; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; node/optimized/libnode.crypto_aes.ll
-; openssl/optimized/libcrypto-lib-bn_rand.ll
-; openssl/optimized/libcrypto-shlib-bn_rand.ll
-; postgres/optimized/heaptuple.ll
-; redis/optimized/hyperloglog.ll
-; wireshark/optimized/packet-diameter.c.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000c(i32 %0) #0 {
-entry:
-  %1 = and i32 %0, 15
-  %2 = shl nuw nsw i32 1, %1
-  %3 = trunc i32 %2 to i8
-  ret i8 %3
-}
-
-; 155 occurrences:
+; 149 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; clamav/optimized/regex_suffix.c.ll
 ; cmake/optimized/mprintf.c.ll
@@ -30,12 +12,10 @@ entry:
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll
-; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/som_runtime.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
@@ -52,12 +32,9 @@ entry:
 ; linux/optimized/irq.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/Attributes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/regcomp.c.ll
-; luajit/optimized/lj_vmevent.ll
-; luajit/optimized/lj_vmevent_dyn.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
@@ -92,7 +69,6 @@ entry:
 ; postgres/optimized/bloomfilter.ll
 ; postgres/optimized/brin_bloom.ll
 ; postgres/optimized/clog.ll
-; postgres/optimized/datapagemap.ll
 ; postgres/optimized/tsgistidx.ll
 ; qemu/optimized/hw_net_eepro100.c.ll
 ; qemu/optimized/hw_pci_msix.c.ll
@@ -179,6 +155,23 @@ entry:
   %1 = and i32 %0, 7
   %2 = shl nuw nsw i32 1, %1
   %3 = trunc nuw i32 %2 to i8
+  ret i8 %3
+}
+
+; 7 occurrences:
+; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
+; node/optimized/libnode.crypto_aes.ll
+; openssl/optimized/libcrypto-lib-bn_rand.ll
+; openssl/optimized/libcrypto-shlib-bn_rand.ll
+; postgres/optimized/heaptuple.ll
+; redis/optimized/hyperloglog.ll
+; wireshark/optimized/packet-diameter.c.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000c(i32 %0) #0 {
+entry:
+  %1 = and i32 %0, 7
+  %2 = shl nuw nsw i32 510, %1
+  %3 = trunc i32 %2 to i8
   ret i8 %3
 }
 

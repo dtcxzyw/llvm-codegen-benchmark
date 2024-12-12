@@ -1,6 +1,7 @@
 
-; 31 occurrences:
+; 34 occurrences:
 ; abc/optimized/giaSupps.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; draco/optimized/corner_table.cc.ll
 ; gromacs/optimized/pairlist.cpp.ll
@@ -16,6 +17,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; openblas/optimized/dorgql.c.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/gms.cpp.ll
@@ -25,6 +27,7 @@
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; php/optimized/zend_ssa.ll
+; postgres/optimized/numeric.ll
 ; qemu/optimized/hw_acpi_erst.c.ll
 ; redis/optimized/ziplist.ll
 ; slurm/optimized/backfill.ll
@@ -58,12 +61,14 @@ entry:
   ret i32 %3
 }
 
-; 28 occurrences:
+; 32 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ioReadPla.c.ll
 ; abc/optimized/mfsResub.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ceres/optimized/polynomial.cc.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -76,6 +81,8 @@ entry:
 ; gromacs/optimized/toppush.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_tileview.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/imageinput.cpp.ll
 ; opencv/optimized/evaluation.cpp.ll

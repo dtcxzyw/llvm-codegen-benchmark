@@ -1,5 +1,5 @@
 
-%union.ListCell.3467695 = type { ptr }
+%union.ListCell.3651886 = type { ptr }
 
 ; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -35,7 +35,7 @@ entry:
   %3 = sext i16 %2 to i32
   %4 = sub i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %union.ListCell.3467695, ptr %0, i64 %5
+  %6 = getelementptr %union.ListCell.3651886, ptr %0, i64 %5
   ret ptr %6
 }
 

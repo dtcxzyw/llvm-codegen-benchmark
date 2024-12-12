@@ -5,9 +5,9 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovb2m	%xmm0, %k0
 	vpsllw	$7, %xmm1, %xmm0
 	vpmovb2m	%xmm0, %k1
-	kxorw	%k0, %k1, %k0
+	kxorw	%k1, %k0, %k0
 	vpcmpeqb	.LCPI0_0(%rip), %xmm2, %k1
-	kxorw	%k0, %k1, %k0
+	kxorw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -18,7 +18,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
 	vpcmpgtb	%xmm0, %xmm2, %k2
 	kxorw	%k1, %k2, %k1
-	kxorw	%k0, %k1, %k0
+	kxorw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -27,7 +27,7 @@ func0000000000000006:                   # @func0000000000000006
 	vpsllw	$7, %xmm1, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpmovb2m	%xmm2, %k2
-	kxorw	%k1, %k2, %k1
+	kxorw	%k2, %k1, %k1
 	kxorw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

@@ -6,14 +6,15 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, -256
-  %3 = icmp eq i32 %2, 256
+  %2 = and i32 %1, -1024
+  %3 = icmp eq i32 %2, 1024
   %4 = and i1 %3, %0
   %5 = sext i1 %4 to i32
   ret i32 %5
 }
 
-; 99 occurrences:
+; 100 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -118,7 +119,7 @@ define i32 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65536
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = sext i1 %4 to i32
   ret i32 %5
 }

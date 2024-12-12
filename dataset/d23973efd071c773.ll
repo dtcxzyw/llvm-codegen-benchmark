@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; cmake/optimized/archive_string.c.ll
 ; entt/optimized/entity_copy.cpp.ll
 ; entt/optimized/meta_any.cpp.ll
@@ -22,9 +22,8 @@
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; re2/optimized/re2.cc.ll
 ; soc-simulator/optimized/verilated.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
   %4 = icmp eq ptr %0, null
@@ -32,7 +31,7 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; freetype/optimized/type1.c.ll
 ; hdf5/optimized/H5Rint.c.ll
 ; hermes/optimized/GCBase.cpp.ll
@@ -45,8 +44,9 @@ entry:
 ; rocksdb/optimized/db_impl_write.cc.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
 ; velox/optimized/JsonFunctions.cpp.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = icmp eq ptr %0, null
@@ -58,7 +58,7 @@ entry:
 ; qemu/optimized/block_qcow2.c.ll
 ; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ule i64 %1, %2
   %4 = icmp eq ptr %0, null
@@ -74,7 +74,7 @@ entry:
 ; qemu/optimized/target_riscv_cpu.c.ll
 ; z3/optimized/used_vars.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp ne ptr %0, null
@@ -98,7 +98,7 @@ entry:
 ; postgres/optimized/receivelog.ll
 ; qemu/optimized/hw_9pfs_9p-synth.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp eq ptr %0, null
@@ -113,9 +113,20 @@ entry:
 ; git/optimized/update-index.ll
 ; linux/optimized/neighbour.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, %2
+  %4 = icmp eq ptr %0, null
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; libquic/optimized/d1_both.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000301(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %1, %2
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
@@ -137,7 +148,7 @@ entry:
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = icmp ne ptr %0, null
@@ -151,9 +162,31 @@ entry:
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; recastnavigation/optimized/Tests_Alloc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %1, %2
+  %4 = icmp eq ptr %0, null
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; redis/optimized/config.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000321(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign uge i64 %1, %2
+  %4 = icmp eq ptr %0, null
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/type1.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000281(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %1, %2
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5

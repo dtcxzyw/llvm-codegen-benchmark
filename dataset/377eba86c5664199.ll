@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
@@ -23,6 +23,7 @@
 ; ncnn/optimized/pooling_x86_fma.cpp.ll
 ; openmpi/optimized/coll_sm_module.ll
 ; openusd/optimized/stbImage.cpp.ll
+; openusd/optimized/tessellation.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; velox/optimized/MmapAllocator.cpp.ll
@@ -84,7 +85,7 @@ define ptr @func0000000000000030(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -98,7 +99,7 @@ define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 2
-  %5 = mul nuw i64 %4, %1
+  %5 = mul nuw i64 %1, %4
   %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -122,7 +123,7 @@ define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 2
-  %5 = mul nuw nsw i64 %4, %1
+  %5 = mul nuw nsw i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }

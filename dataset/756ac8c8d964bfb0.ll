@@ -36,4 +36,17 @@ entry:
   ret float %5
 }
 
+; 1 occurrences:
+; boost/optimized/math_normalize_spheroidal.ll
+; Function Attrs: nounwind
+define float @func0000000000000022(float %0) #0 {
+entry:
+  %1 = fcmp olt float %0, 9.000000e+01
+  %2 = select i1 %1, float 9.000000e+01, float %0
+  %3 = fcmp olt float %2, 1.000000e+00
+  %4 = select i1 %3, float 1.000000e+00, float %2
+  %5 = fmul float %4, 0x3E80000000000000
+  ret float %5
+}
+
 attributes #0 = { nounwind }

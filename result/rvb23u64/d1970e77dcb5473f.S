@@ -1,11 +1,11 @@
 func000000000000000f:                   # @func000000000000000f
 	srai	a1, a1, 3
-	lui	a2, 209715
-	addiw	a2, a2, 819
+	lui	a2, 349525
+	addiw	a2, a2, 1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
-	srai	a0, a0, 5
+	srai	a0, a0, 4
 	add	a0, a0, a1
 	ret
 .LCPI1_0:

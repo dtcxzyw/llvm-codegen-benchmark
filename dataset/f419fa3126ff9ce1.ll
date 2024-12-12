@@ -1,14 +1,11 @@
 
-; 84 occurrences:
+; 79 occurrences:
 ; gromacs/optimized/fixpoint.c.ll
 ; gromacs/optimized/register.cpp.ll
 ; linux/optimized/core.ll
-; linux/optimized/fork.ll
-; linux/optimized/memory.ll
 ; linux/optimized/ptrace.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vmalloc.ll
-; linux/optimized/vsprintf.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -52,7 +49,6 @@
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
@@ -80,7 +76,6 @@
 ; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_txp.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
-; redis/optimized/networking.ll
 ; ruby/optimized/array.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/mret.ll

@@ -1,6 +1,5 @@
 
-; 14 occurrences:
-; luau/optimized/isocline.c.ll
+; 13 occurrences:
 ; openjdk/optimized/epsilonInitLogger.ll
 ; openjdk/optimized/gcInitLogger.ll
 ; openjdk/optimized/hugepages.ll
@@ -23,9 +22,11 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; linux/optimized/intel_gsc_uc_heci_cmd_submit.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
+; lvgl/optimized/lv_tlsf.ll
 ; nix/optimized/file-system.ll
 ; php/optimized/apprentice.ll
 ; zstd/optimized/zstd_v06.c.ll
@@ -56,7 +57,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, 2
-  %4 = and i1 %3, %2
+  %4 = and i1 %2, %3
   %5 = select i1 %4, i64 %0, i64 %1
   ret i64 %5
 }

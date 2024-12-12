@@ -89,6 +89,13 @@ func000000000000000f:                   # @func000000000000000f
 	orq	%rdx, %rax
 	orq	%rdi, %rax
 	retq
+func0000000000000020:                   # @func0000000000000020
+	movq	%rsi, %rax
+	shlq	$63, %rdx
+	shlq	$52, %rax
+	orq	%rdx, %rax
+	orq	%rdi, %rax
+	retq
 func0000000000000032:                   # @func0000000000000032
 	movq	%rsi, %rax
 	shlq	$32, %rdx

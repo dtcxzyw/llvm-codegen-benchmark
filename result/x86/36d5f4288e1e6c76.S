@@ -1,7 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
 	shll	$5, %esi
 	andl	$7936, %esi                     # imm = 0x1F00
-	leal	67239938(%rsi,%rdi), %eax
+	leal	67239938(%rdi,%rsi), %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
 	andl	$64, %esi
@@ -11,7 +11,7 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000b:                   # @func000000000000000b
 	andl	$63, %esi
 	shll	$16, %esi
-	leal	8421600(%rsi,%rdi), %eax
+	leal	8421600(%rdi,%rsi), %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%esi, %eax
@@ -56,13 +56,6 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000007:                   # @func0000000000000007
 	andl	$16777215, %esi                 # imm = 0xFFFFFF
 	leal	1(%rdi,%rsi,2), %eax
-	retq
-func0000000000000006:                   # @func0000000000000006
-	movl	%esi, %eax
-	andl	$15, %eax
-	shll	$6, %eax
-	orl	%edi, %eax
-	orl	$56320, %eax                    # imm = 0xDC00
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%esi, %eax

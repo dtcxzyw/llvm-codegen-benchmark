@@ -1,6 +1,7 @@
 
-; 106 occurrences:
+; 107 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

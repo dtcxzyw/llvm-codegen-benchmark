@@ -3,10 +3,21 @@
 ; openssl/optimized/libcrypto-lib-scalar.ll
 ; openssl/optimized/libcrypto-shlib-scalar.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %2, %1
   %4 = icmp eq i64 %1, 0
+  %5 = select i1 %4, i64 %0, i64 %3
+  ret i64 %5
+}
+
+; 1 occurrences:
+; bdwgc/optimized/gc.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %2, %1
+  %4 = icmp ugt i64 %1, 2048
   %5 = select i1 %4, i64 %0, i64 %3
   ret i64 %5
 }
@@ -33,7 +44,7 @@ entry:
 ; darktable/optimized/RawImage.cpp.ll
 ; postgres/optimized/dsa.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %2, %1
   %4 = icmp eq i64 %1, 0
@@ -44,10 +55,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/timer.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %2, %1
-  %4 = icmp ugt i64 %1, 249
+  %4 = icmp samesign ugt i64 %1, 249
   %5 = select i1 %4, i64 %0, i64 %3
   ret i64 %5
 }

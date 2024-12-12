@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000021(i8 %0, i32 %1) #0 {
+define i16 @func0000000000000041(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = icmp eq i8 %0, 0
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000031(i8 %0, i32 %1) #0 {
+define i16 @func0000000000000061(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = icmp eq i8 %0, 14

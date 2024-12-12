@@ -7,7 +7,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovw2m	%xmm0, %k0
 	vpsllw	$7, %xmm1, %xmm0
 	vpmovb2m	%xmm0, %k1
-	kxorb	%k0, %k1, %k1
+	kxorb	%k1, %k0, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm0   # ymm0 = [4,4,4,4,4,4,4,4]
 	vpbroadcastd	.LCPI0_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1,1,1,1,1]
 	retq

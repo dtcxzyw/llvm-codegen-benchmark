@@ -17,9 +17,9 @@ func0000000000000005:                   # @func0000000000000005
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.long	100                             # 0x64
+	.long	63488                           # 0xf800
 .LCPI2_1:
-	.long	1000                            # 0x3e8
+	.long	2016                            # 0x7e0
 func0000000000000007:                   # @func0000000000000007
 	vpternlogd	$248, .LCPI2_0(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 & mem)
 	vpandd	.LCPI2_1(%rip){1to8}, %ymm1, %ymm1

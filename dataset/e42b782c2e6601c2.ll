@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 35 occurrences:
 ; cpython/optimized/_codecs_kr.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; freetype/optimized/truetype.c.ll
@@ -7,13 +7,11 @@
 ; libsodium/optimized/libsodium_la-scalarmult_ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-utils.ll
 ; linux/optimized/intel_sseu.ll
-; linux/optimized/ip_options.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/nlattr.ll
 ; linux/optimized/rock.ll
 ; linux/optimized/rtnetlink.ll
-; linux/optimized/tcp_input.ll
 ; llvm/optimized/DebugChecksumsSubsection.cpp.ll
 ; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/deoptimization.ll
@@ -32,10 +30,7 @@
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wireshark/optimized/packet-afp.c.ll
 ; wireshark/optimized/packet-cdma2k.c.ll
-; wireshark/optimized/packet-dhcp.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
-; wireshark/optimized/packet-gsm_a_rr.c.ll
-; wireshark/optimized/packet-ip.c.ll
 ; wireshark/optimized/packet-meta.c.ll
 ; wireshark/optimized/packet-mq.c.ll
 ; wireshark/optimized/packet-sna.c.ll
@@ -49,20 +44,18 @@ entry:
   ret i32 %3
 }
 
-; 26 occurrences:
+; 23 occurrences:
 ; linux/optimized/nf_conntrack_proto_tcp.ll
 ; llvm/optimized/AsmWriter.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/InstCombineAddSub.cpp.ll
-; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/InstCombineShifts.cpp.ll
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; llvm/optimized/Instruction.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
-; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/Operator.cpp.ll
@@ -70,7 +63,6 @@ entry:
 ; llvm/optimized/SCCPSolver.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/SeparateConstOffsetFromGEP.cpp.ll
 ; llvm/optimized/TypePromotion.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/VPlanTransforms.cpp.ll
@@ -85,8 +77,9 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; freetype/optimized/sfnt.c.ll
+; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/InstCombineShifts.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; Function Attrs: nounwind

@@ -20,13 +20,12 @@
 define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 24
-  %4 = icmp eq i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp eq i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 44 occurrences:
-; abc/optimized/sbdCut.c.ll
+; 41 occurrences:
 ; assimp/optimized/zip.c.ll
 ; flac/optimized/metadata_iterators.c.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
@@ -40,7 +39,6 @@ entry:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/zip.c.ll
-; icu/optimized/uiter.ll
 ; llvm/optimized/BranchFolding.cpp.ll
 ; llvm/optimized/BreakFalseDeps.cpp.ll
 ; llvm/optimized/EarlyIfConversion.cpp.ll
@@ -69,24 +67,40 @@ entry:
 ; rocksdb/optimized/locktree.cc.ll
 ; rocksdb/optimized/manager.cc.ll
 ; rocksdb/optimized/txnid_set.cc.ll
-; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = icmp ugt i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 19
-  %4 = icmp ne i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ne i32 %1, %3
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 7 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; openjdk/optimized/hb-aat-map.ll
+; openjdk/optimized/hb-ot-map.ll
+; z3/optimized/dd_bdd.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 2
+  %4 = icmp samesign ult i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -97,7 +111,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
-  %4 = icmp uge i32 %3, %1
+  %4 = icmp ule i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -106,11 +120,11 @@ entry:
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000032(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000052(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
-  %4 = icmp ule i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp uge i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -122,22 +136,31 @@ entry:
 define i1 @func0000000000000012(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = icmp ule i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp uge i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; abc/optimized/ifTruth.c.ll
-; abc/optimized/sbdCut.c.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 24
+  %4 = icmp samesign ugt i32 %1, %3
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 24
-  %4 = icmp ult i32 %3, %1
-  %5 = or i1 %4, %0
+  %3 = lshr i32 %2, 1
+  %4 = icmp ugt i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -148,7 +171,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

@@ -1,6 +1,6 @@
 
-%struct._zend_op.2676847 = type { ptr, %union._znode_op.2676848, %union._znode_op.2676848, %union._znode_op.2676848, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2676848 = type { i32 }
+%struct._zend_op.2789890 = type { ptr, %union._znode_op.2789891, %union._znode_op.2789891, %union._znode_op.2789891, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789891 = type { i32 }
 
 ; 15 occurrences:
 ; icu/optimized/ucnv_ext.ll
@@ -19,37 +19,49 @@
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007e(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   %6 = sext i32 %0 to i64
   %7 = getelementptr nusw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
-; 14 occurrences:
-; assimp/optimized/COBLoader.cpp.ll
-; imgui/optimized/imgui_draw.cpp.ll
-; libquic/optimized/s3_srvr.c.ll
+; 6 occurrences:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; nori/optimized/nanovg.c.ll
-; nuklear/optimized/unity.c.ll
 ; php/optimized/dfa_pass.ll
 ; php/optimized/zend_cfg.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_ssa.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003a(i32 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw %struct._zend_op.2789890, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -64
+  %6 = sext i32 %0 to i64
+  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  ret ptr %7
+}
+
+; 8 occurrences:
+; assimp/optimized/COBLoader.cpp.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; libquic/optimized/s3_srvr.c.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003e(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %struct._zend_op.2676847, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 -64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   %6 = sext i32 %0 to i64
   %7 = getelementptr nusw i8, ptr %5, i64 %6
   ret ptr %7
@@ -58,10 +70,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000030(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 16
   %6 = sext i32 %0 to i64
   %7 = getelementptr i32, ptr %5, i64 %6
@@ -71,17 +83,17 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000060(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000070(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 4
   %6 = sext i32 %0 to i64
   %7 = getelementptr i32, ptr %5, i64 %6
   ret ptr %7
 }
 
-; 82 occurrences:
+; 80 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -102,8 +114,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

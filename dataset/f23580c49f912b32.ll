@@ -37,7 +37,7 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000022c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000084c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = icmp slt i64 %3, %0
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/objective_function.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000232(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000852(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = icmp uge i64 %3, %0
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/extract_counter.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000022a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000084a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = icmp ule i64 %3, %0
@@ -74,7 +74,7 @@ entry:
 ; gromacs/optimized/angle.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000842(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = icmp eq i64 %3, %0
@@ -86,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/ImfIDManifest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000318(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000a18(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = icmp ugt i64 %3, %1

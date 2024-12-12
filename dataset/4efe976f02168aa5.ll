@@ -21,7 +21,7 @@
 ; openjdk/optimized/mulnode.ll
 ; postgres/optimized/pg_test_timing.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000063(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000c3(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = icmp eq i32 %0, 0

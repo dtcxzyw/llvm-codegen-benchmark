@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	shll	$3, %edx
 	shlxq	%rdx, %rsi, %rax
 	orq	%rdi, %rax
@@ -10,30 +10,30 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rdi, %rax
 	sete	%al
 	retq
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000381:                   # @func0000000000000381
 	shll	$3, %edx
 	shlxq	%rdx, %rsi, %rax
 	orq	%rdi, %rax
 	sete	%al
 	retq
-func00000000000001c8:                   # @func00000000000001c8
+func0000000000000388:                   # @func0000000000000388
 	shll	$3, %edx
 	shlxq	%rdx, %rsi, %rax
 	orq	%rdi, %rax
 	shrq	$32, %rax
 	setne	%al
 	retq
-func00000000000001c6:                   # @func00000000000001c6
-	shll	$3, %edx
-	shlxq	%rdx, %rsi, %rax
-	orq	%rdi, %rax
-	shrq	$63, %rax
-	retq
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000038c:                   # @func000000000000038c
 	shll	$3, %edx
 	shlxq	%rdx, %rsi, %rax
 	orq	%rdi, %rax
 	setne	%al
+	retq
+func0000000000000386:                   # @func0000000000000386
+	shll	$3, %edx
+	shlxq	%rdx, %rsi, %rax
+	orq	%rdi, %rax
+	shrq	$63, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	shll	$3, %edx

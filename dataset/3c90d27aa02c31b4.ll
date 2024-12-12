@@ -1,7 +1,37 @@
 
-; 108 occurrences:
-; clamav/optimized/mew.c.ll
+; 6 occurrences:
 ; hyperscan/optimized/tamaramacompile.cpp.ll
+; openjdk/optimized/generateOopMap.ll
+; openjdk/optimized/method.ll
+; openjdk/optimized/methodData.ll
+; php/optimized/browscap.ll
+; php/optimized/string.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000e8(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 56
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %6 = ptrtoint ptr %5 to i64
+  %7 = add i64 %6, 3
+  ret i64 %7
+}
+
+; 1 occurrences:
+; php/optimized/string.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000f8(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %6 = ptrtoint ptr %5 to i64
+  %7 = add i64 %6, 1
+  ret i64 %7
+}
+
+; 102 occurrences:
+; clamav/optimized/mew.c.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -98,24 +128,19 @@
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; openjdk/optimized/generateOopMap.ll
-; openjdk/optimized/method.ll
-; openjdk/optimized/methodData.ll
-; php/optimized/browscap.ll
-; php/optimized/string.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; z3/optimized/smt_clause_proof.cpp.ll
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a8(i64 %0, i64 %1, ptr %2) #0 {
+define i64 @func00000000000000fc(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 56
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 864
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
-  %7 = add i64 %6, 3
+  %7 = add i64 %6, 4
   ret i64 %7
 }
 

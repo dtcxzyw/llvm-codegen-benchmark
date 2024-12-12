@@ -5,7 +5,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	movq	%rdi, %rax
 	subq	%rsi, %rax
 	incq	%rax
@@ -20,7 +20,7 @@ func0000000000000009:                   # @func0000000000000009
 	cmpq	%rsi, %rdi
 	setbe	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	movq	%rdi, %rax
 	subq	%rsi, %rax
 	incq	%rax

@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
 	xorl	%edx, %edx
@@ -26,7 +26,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
 	xorl	%edx, %edx

@@ -28,6 +28,12 @@ func0000000000000027:                   # @func0000000000000027
 	shll	$6, %eax
 	orl	%esi, %eax
 	retq
+func0000000000000017:                   # @func0000000000000017
+	shll	$8, %esi
+	movzbl	%dil, %eax
+	shll	$3, %eax
+	orl	%esi, %eax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	shll	$11, %esi
 	movzbl	%dil, %eax

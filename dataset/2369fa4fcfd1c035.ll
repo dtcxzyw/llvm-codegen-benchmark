@@ -28,7 +28,7 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/KodakDecompressor.cpp.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
@@ -39,6 +39,8 @@ entry:
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -98,6 +100,18 @@ entry:
   ret i32 %2
 }
 
+; 3 occurrences:
+; linux/optimized/hw_breakpoint.ll
+; linux/optimized/ip6_tables.ll
+; linux/optimized/ip_tables.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0) #0 {
+entry:
+  %1 = shl nuw nsw i32 1, %0
+  %2 = or i32 %1, 32
+  ret i32 %2
+}
+
 ; 2 occurrences:
 ; linux/optimized/hw_breakpoint.ll
 ; linux/optimized/intel_dpll.ll
@@ -106,16 +120,6 @@ define i32 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = shl i32 65536, %0
   %2 = or i32 %1, 268435456
-  ret i32 %2
-}
-
-; 1 occurrences:
-; linux/optimized/hw_breakpoint.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0) #0 {
-entry:
-  %1 = shl nuw nsw i32 2, %0
-  %2 = or i32 %1, 512
   ret i32 %2
 }
 

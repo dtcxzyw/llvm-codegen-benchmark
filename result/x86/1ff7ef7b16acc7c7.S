@@ -1,4 +1,4 @@
-func0000000000000301:                   # @func0000000000000301
+func0000000000000601:                   # @func0000000000000601
 	xorl	%eax, %eax
 	testb	$31, %sil
 	setne	%al

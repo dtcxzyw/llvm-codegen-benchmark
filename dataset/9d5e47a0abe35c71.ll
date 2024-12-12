@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 16 occurrences:
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; openvdb/optimized/StreamCompression.cc.ll
@@ -7,11 +7,14 @@
 ; qemu/optimized/block_block-backend.c.ll
 ; redis/optimized/t_stream.ll
 ; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
+; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
 ; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
 ; rust-analyzer-rs/optimized/266k6bqg3m0kg73d.ll
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
+; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; rust-analyzer-rs/optimized/4x4kq4gfl0tghxcw.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
+; rust-analyzer-rs/optimized/ri7xfiosbc1bsgh.ll
 ; rust-analyzer-rs/optimized/z27qhj0ivx434rk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0) #0 {

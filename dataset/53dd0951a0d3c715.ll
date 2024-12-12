@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 36 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/fraSat.c.ll
 ; abc/optimized/ivyFraig.c.ll
@@ -24,8 +24,6 @@
 ; opencv/optimized/bgfg_gaussmix.cpp.ll
 ; opencv/optimized/data.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
-; opencv/optimized/ocr_beamsearch_decoder.cpp.ll
-; opencv/optimized/ocr_hmm_decoder.cpp.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; openspiel/optimized/bridge.cc.ll

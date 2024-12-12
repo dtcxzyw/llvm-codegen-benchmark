@@ -12,12 +12,12 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002b8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, 1
   %4 = sub i32 %2, %3
   %5 = tail call i32 @llvm.abs.i32(i32 %4, i1 true)
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp samesign ugt i32 %0, %5
   ret i1 %6
 }
 
@@ -27,12 +27,12 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; 1 occurrences:
 ; stb/optimized/stb_image_write.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000b8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, 1
   %4 = sub i32 %2, %3
   %5 = tail call i32 @llvm.abs.i32(i32 %4, i1 true)
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp samesign ugt i32 %0, %5
   ret i1 %6
 }
 

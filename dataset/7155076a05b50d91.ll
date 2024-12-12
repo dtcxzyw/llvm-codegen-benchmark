@@ -11,18 +11,6 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
-; mixbox/optimized/mixbox.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = add i8 %1, %2
-  %4 = zext i8 %3 to i32
-  %5 = mul nsw i32 %0, 85
-  %6 = add nuw nsw i32 %5, %4
-  ret i32 %6
-}
-
 ; 2 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; linux/optimized/x509_cert_parser.ll

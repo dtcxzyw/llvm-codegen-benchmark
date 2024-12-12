@@ -53,7 +53,7 @@ entry:
   %3 = lshr i64 %2, 1
   %4 = and i64 %3, 127
   %5 = select i1 %1, i64 %4, i64 48
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

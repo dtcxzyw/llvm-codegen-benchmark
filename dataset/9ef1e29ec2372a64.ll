@@ -1,7 +1,11 @@
 
-; 2 occurrences:
+; 6 occurrences:
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
+; zed-rs/optimized/35x08quqxvun4xbcwdjh3cm4j.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zed-rs/optimized/ebj1t6ydn0lm59l6uu3qqz6z0.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000002(i32 %0) #0 {
 entry:
@@ -11,7 +15,8 @@ entry:
   ret { i64, i64 } %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; quickjs/optimized/quickjs.ll
 ; regex-rs/optimized/3q3ceyp25m3d5uar.ll
 ; regex-rs/optimized/rrg5bgs95wzff0u.ll
 ; wasmtime-rs/optimized/1f0cdl9sv7ergjr2.ll

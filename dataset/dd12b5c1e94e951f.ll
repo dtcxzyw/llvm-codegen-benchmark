@@ -4,7 +4,7 @@
 ; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 0

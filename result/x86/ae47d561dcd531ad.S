@@ -33,14 +33,14 @@ func0000000000000018:                   # @func0000000000000018
 	cmovgel	%esi, %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	movl	%edi, %eax
 	xorl	%ecx, %ecx
 	cmpl	%esi, %edi
 	cmovael	%esi, %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	movl	%edi, %eax
 	xorl	%ecx, %ecx
 	cmpl	%esi, %edi

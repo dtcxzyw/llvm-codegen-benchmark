@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 51 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; clamav/optimized/filtering.c.ll
@@ -22,6 +22,7 @@
 ; lua/optimized/lgc.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_obj_style.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
@@ -55,17 +56,16 @@ define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/rate.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll

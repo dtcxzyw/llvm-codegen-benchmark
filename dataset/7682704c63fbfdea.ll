@@ -66,23 +66,6 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; clamav/optimized/readdb.c.ll
-; hermes/optimized/BigIntSupport.cpp.ll
-; qemu/optimized/tcg.c.ll
-; recastnavigation/optimized/fastlz.c.ll
-; yosys/optimized/fastlz.ll
-; yosys/optimized/lz4.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, -3
-  %5 = icmp ult i32 %4, -2
-  ret i1 %5
-}
-
 ; 18 occurrences:
 ; clamav/optimized/phishcheck.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -117,7 +100,7 @@ entry:
 ; openjdk/optimized/macroAssembler_x86.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -132,12 +115,28 @@ entry:
 ; llvm/optimized/IndVarSimplify.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, 37
   ret i1 %4
+}
+
+; 5 occurrences:
+; clamav/optimized/readdb.c.ll
+; hermes/optimized/BigIntSupport.cpp.ll
+; recastnavigation/optimized/fastlz.c.ll
+; yosys/optimized/fastlz.ll
+; yosys/optimized/lz4.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = trunc i64 %2 to i32
+  %4 = add i32 %3, -31
+  %5 = icmp ult i32 %4, -33
+  ret i1 %5
 }
 
 ; 8 occurrences:
@@ -150,7 +149,7 @@ entry:
 ; yosys/optimized/fastlz.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = trunc i64 %2 to i32

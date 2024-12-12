@@ -1,6 +1,7 @@
 
-; 39 occurrences:
+; 37 occurrences:
 ; arrow/optimized/bit_util.cc.ll
+; boost/optimized/numeric.ll
 ; clamav/optimized/client.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -8,9 +9,6 @@
 ; linux/optimized/hdmi_chmap.ll
 ; linux/optimized/hid-debug.ll
 ; linux/optimized/tg3.ll
-; llvm/optimized/Core.cpp.ll
-; llvm/optimized/CoroSplit.cpp.ll
-; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; lua/optimized/lobject.ll
 ; luau/optimized/lutf8lib.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
@@ -45,6 +43,17 @@ entry:
   %1 = shl i64 %0, 32
   %2 = sub i64 47244640256, %1
   %3 = ashr exact i64 %2, 32
+  ret i64 %3
+}
+
+; 1 occurrences:
+; boost/optimized/numeric.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0) #0 {
+entry:
+  %1 = shl i64 %0, 30
+  %2 = sub i64 171798691840, %1
+  %3 = ashr i64 %2, 32
   ret i64 %3
 }
 

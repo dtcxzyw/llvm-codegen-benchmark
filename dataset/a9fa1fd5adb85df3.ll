@@ -27,7 +27,8 @@ entry:
   ret float %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/client.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll

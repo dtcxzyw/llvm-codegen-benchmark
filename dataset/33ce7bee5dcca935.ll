@@ -12,10 +12,11 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 86 occurrences:
+; 85 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; libwebp/optimized/get_disto.c.ll
 ; lief/optimized/File.cpp.ll
+; lvgl/optimized/lv_i18n.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
@@ -35,8 +36,6 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

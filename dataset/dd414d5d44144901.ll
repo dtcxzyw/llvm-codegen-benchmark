@@ -1,6 +1,7 @@
 
-; 70 occurrences:
+; 75 occurrences:
 ; arrow/optimized/compare.cc.ll
+; boost/optimized/to_chars.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/fit_rotations_l1.cpp.ll
@@ -70,11 +71,15 @@
 ; ozz-animation/optimized/track.cc.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; wasmedge/optimized/engine.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 

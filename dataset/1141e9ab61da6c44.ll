@@ -23,7 +23,7 @@
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000581(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 4
   %3 = icmp ne i32 %0, 0
@@ -35,7 +35,7 @@ entry:
 ; linux/optimized/forcedeth.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = icmp ult i32 %2, 2

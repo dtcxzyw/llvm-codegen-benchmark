@@ -1,30 +1,30 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
-; glslang/optimized/ParseHelper.cpp.ll
 ; graphviz/optimized/exeval.c.ll
 ; graphviz/optimized/write.c.ll
 ; icu/optimized/edits.ll
-; icu/optimized/util.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
-; llvm/optimized/ControlHeightReduction.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; openusd/optimized/clipsAPI.cpp.ll
 ; openusd/optimized/fileIO_Common.cpp.ll
 ; openusd/optimized/schemaRegistry.cpp.ll
 ; ruby/optimized/encoding.ll
-; ruby/optimized/regexec.ll
 ; wireshark/optimized/packet-tls.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 26
   %4 = select i1 %3, i1 true, i1 %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
 ; 117 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/sort_by_side.ll
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
 ; coreutils-rs/optimized/4ws6541n7p4pbb05.ll
 ; cpython/optimized/_decimal.ll
@@ -44,7 +44,6 @@ entry:
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/extents_status.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/pi.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
@@ -150,7 +149,7 @@ entry:
   ret i1 %5
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; clamav/optimized/png.c.ll
 ; clamav/optimized/upack.c.ll
@@ -181,6 +180,7 @@ entry:
 ; qemu/optimized/block_vpc.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/system_vl.c.ll
+; rocksdb/optimized/filter_policy.cc.ll
 ; ruby/optimized/compile.ll
 ; slurm/optimized/cons_helpers.ll
 ; slurm/optimized/job_mgr.ll
@@ -196,10 +196,11 @@ entry:
   ret i1 %5
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; faiss/optimized/IndexAdditiveQuantizerFastScan.cpp.ll
 ; faiss/optimized/IndexIVFAdditiveQuantizerFastScan.cpp.ll
+; lvgl/optimized/lv_obj_tree.ll
 ; ncnn/optimized/deconvolution.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise3d.cpp.ll
@@ -227,7 +228,7 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; assimp/optimized/zip.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; hermes/optimized/zip.c.ll
@@ -236,7 +237,6 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/interpreterRuntime.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -253,7 +253,7 @@ define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i1 true, i1 %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

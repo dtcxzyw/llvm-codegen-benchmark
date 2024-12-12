@@ -1,5 +1,7 @@
 
-; 356 occurrences:
+; 357 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -80,7 +82,6 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/balloc.ll
-; linux/optimized/vclock_gettime.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll

@@ -1,5 +1,5 @@
 
-; 562 occurrences:
+; 561 occurrences:
 ; brotli/optimized/entropy_encode.c.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/ole2_extract.c.ll
@@ -42,7 +42,6 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/RuntimeJSONUtils.cpp.ll
-; image-rs/optimized/4srzh4wujeew249y.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
@@ -115,14 +114,12 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/agg-tx.ll
 ; linux/optimized/consolemap.ll
 ; linux/optimized/early-quirks.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/ioam6.ll
-; linux/optimized/net-procfs.ll
 ; linux/optimized/nf_conntrack_proto_tcp.ll
 ; linux/optimized/pci-acpi.ll
 ; linux/optimized/tables.ll
@@ -227,7 +224,6 @@
 ; llvm/optimized/ParseCXXInlineMethods.cpp.ll
 ; llvm/optimized/ParsePragma.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
@@ -296,6 +292,8 @@
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_obj_style.ll
 ; mold/optimized/arch-alpha.cc.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -556,12 +554,13 @@
 ; wireshark/optimized/packet-frame.c.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
-; wireshark/optimized/packet-its.c.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; wireshark/optimized/packet-tecmp.c.ll
 ; wireshark/optimized/text_import.c.ll
 ; wireshark/optimized/to_str.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i16 %0) #0 {
 entry:

@@ -1,6 +1,5 @@
 
 ; 108 occurrences:
-; eastl/optimized/TestMemory.cpp.ll
 ; folly/optimized/Core.cpp.ll
 ; folly/optimized/HeapTimekeeper.cpp.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
@@ -77,6 +76,7 @@
 ; llvm/optimized/X86LoadValueInjectionLoadHardening.cpp.ll
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; nix/optimized/serialise.ll
 ; openjdk/optimized/c1_LIRAssembler_x86.ll
 ; openjdk/optimized/c1_LIRGenerator.ll

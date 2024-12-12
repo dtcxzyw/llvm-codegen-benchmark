@@ -1,10 +1,9 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; assimp/optimized/ProcessHelper.cpp.ll
 ; llvm/optimized/InstCombineAddSub.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; nuttx/optimized/pthread_mutexattr_setrobust.c.ll
 ; openmpi/optimized/bfrop_base_cmp.ll
 ; openssl/optimized/libcrypto-lib-bio_addr.ll
 ; openssl/optimized/libcrypto-shlib-bio_addr.ll

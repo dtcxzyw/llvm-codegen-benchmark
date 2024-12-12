@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; linux/optimized/vgaarb.ll
+; 3 occurrences:
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; openjdk/optimized/invocationCounter.ll

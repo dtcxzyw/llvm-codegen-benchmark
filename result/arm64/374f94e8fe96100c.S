@@ -1,25 +1,29 @@
-func0000000000000030:                   // @func0000000000000030
+func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	fmov	v5.2d, #-2.00000000
-	sub	v1.2d, v3.2d, v1.2d
-	sub	v2.2d, v4.2d, v2.2d
-	cmhi	v2.2d, v5.2d, v2.2d
-	cmhi	v1.2d, v5.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
+	sub	x8, x2, x1
+	lsr	x8, x8, #62
+	cmp	x8, #3
+	cset	w8, lo
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	mov	x8, #-1152921504606846976       // =0xf000000000000000
-	sub	v1.2d, v3.2d, v1.2d
-	sub	v2.2d, v4.2d, v2.2d
-	dup	v3.2d, x8
-	cmhi	v2.2d, v3.2d, v2.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
+	sub	x8, x2, x1
+	lsr	x8, x8, #60
+	cmp	x8, #15
+	cset	w8, lo
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
+	ret
+                                        // -- End function
+func0000000000000008:                   // @func0000000000000008
+// %bb.0:                               // %entry
+	sub	x8, x2, x1
+	cmn	x8, #5
+	cset	w8, hi
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

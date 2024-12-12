@@ -10,7 +10,7 @@ entry:
   %4 = fmul float %1, 0x3EF0000000000000
   %5 = fcmp ole float %4, %3
   %6 = select i1 %5, float %4, float %3
-  %7 = fcmp ole float %6, %0
+  %7 = fcmp oge float %0, %6
   ret i1 %7
 }
 
@@ -25,21 +25,22 @@ entry:
   %4 = fmul float %1, 0x3EF0000000000000
   %5 = fcmp oge float %4, %3
   %6 = select i1 %5, float %4, float %3
-  %7 = fcmp oge float %6, %0
+  %7 = fcmp ole float %0, %6
   ret i1 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; nuklear/optimized/unity.c.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000022(float %0, float %1, float %2) #0 {
 entry:
-  %3 = fmul float %2, 0x3EF0001000000000
-  %4 = fmul float %1, 0x3EF0001000000000
-  %5 = fcmp olt float %3, %4
+  %3 = fmul float %2, 0x3F70101020000000
+  %4 = fmul float %1, 0x3F70101020000000
+  %5 = fcmp olt float %4, %3
   %6 = select i1 %5, float %4, float %3
-  %7 = fcmp ogt float %6, %0
+  %7 = fcmp olt float %0, %6
   ret i1 %7
 }
 
@@ -52,7 +53,7 @@ entry:
   %4 = fmul float %1, 0x3EB4000000000000
   %5 = fcmp ogt float %4, %3
   %6 = select i1 %5, float %4, float %3
-  %7 = fcmp ult float %6, %0
+  %7 = fcmp ugt float %0, %6
   ret i1 %7
 }
 
@@ -65,7 +66,7 @@ entry:
   %4 = fmul float %1, 0x3FF0000060000000
   %5 = fcmp olt float %4, %3
   %6 = select i1 %5, float %4, float %3
-  %7 = fcmp olt float %6, %0
+  %7 = fcmp ogt float %0, %6
   ret i1 %7
 }
 
@@ -78,7 +79,7 @@ entry:
   %4 = fmul float %1, 5.000000e-01
   %5 = fcmp olt float %3, %4
   %6 = select i1 %5, float %4, float %3
-  %7 = fcmp ult float %6, %0
+  %7 = fcmp ugt float %0, %6
   ret i1 %7
 }
 

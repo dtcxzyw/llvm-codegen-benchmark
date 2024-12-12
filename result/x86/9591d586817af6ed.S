@@ -25,6 +25,6 @@ func0000000000000012:                   # @func0000000000000012
 	retq
 func0000000000000013:                   # @func0000000000000013
 	subq	%rdi, %rsi
-	shrq	$4, %rsi
-	leal	1(%rsi), %eax
+	shrq	$2, %rsi
+	leal	64(%rsi), %eax
 	retq

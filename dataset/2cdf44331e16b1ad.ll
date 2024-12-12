@@ -1,5 +1,7 @@
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -20,8 +22,11 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/work_stealing.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -38,8 +43,10 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; bdwgc/optimized/cordprnt.c.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/ctn8ife4u6gnb1c6todtqv7oc.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
@@ -49,7 +56,7 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; cpython/optimized/sre.ll
 ; cvc5/optimized/bags_rewriter.cpp.ll
 ; cvc5/optimized/proof_final_callback.cpp.ll
@@ -57,7 +64,6 @@ entry:
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; lief/optimized/Builder.cpp.ll
 ; linux/optimized/journal.ll
 ; postgres/optimized/varbit.ll
 ; proxygen/optimized/HeaderTable.cpp.ll
@@ -72,11 +78,9 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
-; hwloc/optimized/topology-linux.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
-; opencv/optimized/dxt.cpp.ll
 ; openjdk/optimized/memnode.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i32 %1) #0 {

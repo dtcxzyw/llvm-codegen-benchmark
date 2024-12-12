@@ -58,7 +58,6 @@
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; hyperscan/optimized/rose_in_util.cpp.ll
-; icu/optimized/gregoimp.ll
 ; jq/optimized/regcomp.ll
 ; libpng/optimized/pngwutil.c.ll
 ; libquic/optimized/ctr.c.ll
@@ -74,7 +73,6 @@
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/fair.ll
-; linux/optimized/hda_codec.ll
 ; linux/optimized/ialloc.ll
 ; linux/optimized/inflate.ll
 ; linux/optimized/inftrees.ll
@@ -150,6 +148,7 @@
 ; slurm/optimized/backfill.ll
 ; slurm/optimized/node_mgr.ll
 ; slurm/optimized/switch_record.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; softposit-rs/optimized/279qzdp4rwsfn4n0.ll
 ; spike/optimized/ukadd32.ll
 ; spike/optimized/ukcras32.ll
@@ -178,6 +177,7 @@
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; zlib/optimized/inflate.c.ll
 ; zlib/optimized/inftrees.c.ll
 ; zstd/optimized/fse_compress.c.ll
@@ -191,7 +191,7 @@ entry:
   ret i32 %4
 }
 
-; 31 occurrences:
+; 33 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -208,6 +208,7 @@ entry:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
@@ -215,7 +216,6 @@ entry:
 ; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
-; php/optimized/is_simh.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; quickjs/optimized/libunicode.ll
 ; ruby/optimized/class.ll
@@ -223,6 +223,8 @@ entry:
 ; wireshark/optimized/packet-btavrcp.c.ll
 ; wireshark/optimized/packet-mq.c.ll
 ; wireshark/optimized/packet-rtitcp.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -231,7 +233,7 @@ entry:
   ret i32 %4
 }
 
-; 124 occurrences:
+; 123 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/abcNtk.c.ll
@@ -281,6 +283,7 @@ entry:
 ; abc/optimized/wlcBlast.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/charconv_parse.cc.ll
+; boost/optimized/area.ll
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/file.cpp.ll
 ; coremark/optimized/core_matrix.c.ll
@@ -292,12 +295,10 @@ entry:
 ; hyperscan/optimized/ng_depth.cpp.ll
 ; hyperscan/optimized/ng_width.cpp.ll
 ; icu/optimized/calendar.ll
-; icu/optimized/decNumber.ll
 ; icu/optimized/locdispnames.ll
 ; icu/optimized/unistr.ll
 ; icu/optimized/vtzone.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; jq/optimized/decNumber.ll
 ; jq/optimized/regparse.ll
 ; libquic/optimized/s3_enc.c.ll
 ; libzmq/optimized/pipe.cpp.ll
@@ -305,6 +306,7 @@ entry:
 ; linux/optimized/power_supply_core.ll
 ; linux/optimized/x86_pkg_temp_thermal.ll
 ; luau/optimized/IrValueLocationTracking.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll
@@ -332,7 +334,6 @@ entry:
 ; openjdk/optimized/nmethod.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/stubs.ll
-; openmpi/optimized/group_strided.ll
 ; openspiel/optimized/backgammon.cc.ll
 ; openspiel/optimized/blotto.cc.ll
 ; openspiel/optimized/dots_and_boxes.cc.ll
@@ -364,14 +365,15 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; postgres/optimized/partprune.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
-  %4 = select i1 %0, i32 0, i32 %3
+  %4 = select i1 %0, i32 undef, i32 %3
   ret i32 %4
 }
 

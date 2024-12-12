@@ -4,7 +4,7 @@
 ; luau/optimized/ldo.cpp.ll
 ; redis/optimized/ldo.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000046a(i32 %0, i64 %1) #0 {
+define i1 @func00000000000010ca(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = trunc i64 %2 to i32
@@ -19,7 +19,7 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004aa(i32 %0, i64 %1) #0 {
+define i1 @func000000000000114a(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = trunc i64 %2 to i32

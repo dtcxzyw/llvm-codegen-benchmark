@@ -29,12 +29,12 @@ entry:
 ; z3/optimized/rule_properties.cpp.ll
 ; z3/optimized/smt_consequences.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -64
   %3 = inttoptr i64 %2 to ptr
   %4 = shl nuw nsw i64 %0, 6
-  %5 = getelementptr nusw i8, ptr %3, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %3, i64 %4
   ret ptr %5
 }
 

@@ -10,7 +10,7 @@ func0000000000000010:                   # @func0000000000000010
 	vadd.vv	v12, v12, v14
 	addi	a0, a0, 384
 	vnmsub.vx	v12, a0, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000011:                   # @func0000000000000011
 	lui	a0, 174763
@@ -35,5 +35,5 @@ func0000000000000015:                   # @func0000000000000015
 	vadd.vv	v12, v12, v14
 	li	a0, 60
 	vnmsub.vx	v12, a0, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret

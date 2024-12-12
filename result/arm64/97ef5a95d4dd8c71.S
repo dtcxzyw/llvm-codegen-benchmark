@@ -1,42 +1,20 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v3.4s, #12
-	ushll	v0.4s, v0.4h, #0
-	mov	w8, #29                         // =0x1d
-	movi	v4.4s, #31
-	cmeq	v2.4s, v2.4s, v3.4s
-	ushll2	v3.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	bit	v1.16b, v4.16b, v2.16b
-	shl	v2.2d, v3.2d, #63
-	shl	v0.2d, v0.2d, #63
-	dup	v4.2d, x8
-	cmlt	v2.2d, v2.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	ushll	v3.2d, v1.2s, #0
-	ushll2	v1.2d, v1.4s, #0
-	bit	v1.16b, v4.16b, v2.16b
-	bsl	v0.16b, v4.16b, v3.16b
+	cmp	w2, #12
+	mov	w8, #31                         // =0x1f
+	mov	w9, #29                         // =0x1d
+	csel	w8, w8, w1, eq
+	tst	w0, #0x1
+	csel	x0, x9, x8, ne
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v3.4s, #2
-	ushll	v0.4s, v0.4h, #0
-	mov	w8, #24                         // =0x18
-	movi	v4.4s, #13
-	cmeq	v2.4s, v2.4s, v3.4s
-	ushll2	v3.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	bit	v1.16b, v4.16b, v2.16b
-	shl	v2.2d, v3.2d, #63
-	shl	v0.2d, v0.2d, #63
-	dup	v4.2d, x8
-	cmlt	v2.2d, v2.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	ushll	v3.2d, v1.2s, #0
-	ushll2	v1.2d, v1.4s, #0
-	bit	v1.16b, v4.16b, v2.16b
-	bsl	v0.16b, v4.16b, v3.16b
+	cmp	w2, #2
+	mov	w8, #13                         // =0xd
+	mov	w9, #24                         // =0x18
+	csel	w8, w8, w1, eq
+	tst	w0, #0x1
+	csel	x0, x9, x8, ne
 	ret
                                         // -- End function

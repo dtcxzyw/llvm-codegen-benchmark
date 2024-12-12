@@ -65,7 +65,7 @@ func000000000000005c:                   # @func000000000000005c
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
 	vpsrlq	$3, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsllq	$3, %ymm0, %ymm0
 	retq
 .LCPI8_0:

@@ -34,3 +34,11 @@ func000000000000001d:                   # @func000000000000001d
 	vmv.v.i	v11, 0
 	vwsubu.vv	v8, v11, v10
 	ret
+func000000000000001f:                   # @func000000000000001f
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vadd.vi	v10, v8, 1
+	lui	a0, 2
+	addi	a0, a0, 1808
+	vmv.v.x	v11, a0
+	vwsubu.vv	v8, v11, v10
+	ret

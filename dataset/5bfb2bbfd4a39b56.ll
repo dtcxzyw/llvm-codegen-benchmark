@@ -62,9 +62,18 @@ entry:
   ret i32 %7
 }
 
-; 36 occurrences:
+; 46 occurrences:
 ; clamav/optimized/chmd.c.ll
 ; cmake/optimized/json_writer.cpp.ll
+; hermes/optimized/AST2JS.cpp.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/utf_impl.ll
 ; libphonenumber/optimized/unicodetext.cc.ll
@@ -99,6 +108,7 @@ entry:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-q931.c.ll
 ; wireshark/optimized/packet-q933.c.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
 entry:

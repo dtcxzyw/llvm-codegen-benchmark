@@ -21,22 +21,9 @@ entry:
 define i1 @func0000000000000653(double %0, double %1) #0 {
 entry:
   %2 = fcmp one double %1, 0x7FF0000000000000
-  %3 = fcmp ugt double %0, 0xC3E0000000000000
+  %3 = fcmp ugt double %0, -1.000000e+00
   %4 = and i1 %3, %2
-  %5 = fcmp ult double %0, 0x43E0000000000000
-  %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; proj/optimized/c_api.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000c42(double %0, double %1) #0 {
-entry:
-  %2 = fcmp oge double %0, 0.000000e+00
-  %3 = fcmp ogt double %1, 0.000000e+00
-  %4 = and i1 %3, %2
-  %5 = fcmp olt double %0, 1.000000e+00
+  %5 = fcmp ult double %0, 0x43F0000000000000
   %6 = and i1 %5, %4
   ret i1 %6
 }

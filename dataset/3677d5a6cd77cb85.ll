@@ -4,6 +4,7 @@
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/cmd.ll
 ; cmake/optimized/CommandLineArguments.cxx.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -17,9 +18,8 @@
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; quantlib/optimized/markovfunctional.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; velox/optimized/SsdFile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -4611686018427387903
   %3 = icmp ult i64 %2, -4611686018427387904
@@ -27,7 +27,7 @@ entry:
   ret i64 %4
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
@@ -44,7 +44,6 @@ entry:
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -76,16 +75,23 @@ entry:
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 2
   %3 = select i1 %2, i64 0, i64 %0
   ret i64 %3
 }
 
-; 59 occurrences:
+; 66 occurrences:
 ; arrow/optimized/bridge.cc.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/test_stackstring.ll
 ; cmake/optimized/CommandLineArguments.cxx.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -152,11 +158,13 @@ entry:
   ret i64 %4
 }
 
-; 36 occurrences:
+; 41 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
-; cmake/optimized/cmCPackComponentGroup.cxx.ll
-; cmake/optimized/cmCPackNSISGenerator.cxx.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; coreutils-rs/optimized/x8pbloshhgr8d49.ll
 ; cpython/optimized/longobject.ll
@@ -181,14 +189,17 @@ entry:
 ; openssl/optimized/tls13secretstest-bin-packet.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/datetime.ll
-; postgres/optimized/fe-exec.ll
-; postgres/optimized/spgutils.ll
 ; postgres/optimized/timestamp.ll
 ; redis/optimized/intset.ll
 ; rust-analyzer-rs/optimized/4bwxw2k86ri9mh4p.ll
 ; typst-rs/optimized/4waw9i1xpgk5dpym.ll
 ; typst-rs/optimized/ef603zin5qw49hb.ll
 ; wasmtime-rs/optimized/3yirtpiqdnll1kue.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/1cwzjnrfv3j054rlb5kbvkj4j.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -198,7 +209,7 @@ entry:
   ret i64 %4
 }
 
-; 48 occurrences:
+; 49 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/decode.c.ll
@@ -247,6 +258,7 @@ entry:
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -261,7 +273,7 @@ entry:
 ; tinyrenderer/optimized/main.cpp.ll
 ; tinyrenderer/optimized/our_gl.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 7
   %3 = select i1 %2, i64 -1, i64 %0
@@ -274,7 +286,7 @@ entry:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = icmp ult i64 %2, 2

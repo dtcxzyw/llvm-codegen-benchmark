@@ -21,17 +21,17 @@ func000000000000001d:                   # @func000000000000001d
 	leal	(%rsi,%rdx,4), %eax
 	addl	%edi, %eax
 	retq
+func000000000000001b:                   # @func000000000000001b
+	movzbl	%dl, %eax
+	shll	$16, %eax
+	orl	%esi, %eax
+	addl	%edi, %eax
+	retq
 func000000000000001c:                   # @func000000000000001c
 	andl	$63, %edx
 	shll	$8, %edx
 	orl	%esi, %edx
 	leal	(%rdx,%rdi), %eax
-	retq
-func000000000000001b:                   # @func000000000000001b
-	shll	$4, %edx
-	movzwl	%dx, %eax
-	orl	%esi, %eax
-	addl	%edi, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
 	andl	$15, %edx

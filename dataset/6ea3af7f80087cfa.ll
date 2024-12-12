@@ -1,10 +1,12 @@
 
-; 362 occurrences:
+; 369 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; assimp/optimized/BlenderTessellator.cpp.ll
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_body.cpp.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_collision.cpp.ll
@@ -200,7 +202,6 @@
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/io_e57.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
@@ -260,6 +261,11 @@
 ; ncnn/optimized/roialign_x86_avx512.cpp.ll
 ; ncnn/optimized/roialign_x86_fma.cpp.ll
 ; ncnn/optimized/yolodetectionoutput.cpp.ll
+; ncnn/optimized/yolov3detectionoutput.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; nori/optimized/imageview.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nori/optimized/parser.cpp.ll
@@ -361,6 +367,7 @@
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {

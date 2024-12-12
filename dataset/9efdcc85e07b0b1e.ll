@@ -4,7 +4,7 @@
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
 ; linux/optimized/slub.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2047
   %3 = and i32 %0, 2047
@@ -17,12 +17,12 @@ entry:
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
 ; linux/optimized/slub.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2047
   %3 = and i32 %0, 2047
   %4 = sub nsw i32 %3, %2
-  %5 = icmp ult i32 %4, 256
+  %5 = icmp samesign ult i32 %4, 256
   ret i1 %5
 }
 
@@ -42,11 +42,11 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/darBalance.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16777215
   %3 = and i32 %0, 16777215
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -54,7 +54,7 @@ entry:
 ; icu/optimized/propname.ll
 ; imgui/optimized/imgui.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, %1
   %3 = and i32 %2, 67108864

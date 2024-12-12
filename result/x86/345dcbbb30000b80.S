@@ -7,7 +7,7 @@ func0000000000000006:                   # @func0000000000000006
 	shrq	$63, %rdi
 	leaq	1(%rdi,%rdi), %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	xorl	%eax, %eax
 	shrq	$36, %rdi
 	setne	%al
@@ -20,7 +20,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	xorq	$5, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	cmpq	$1017, %rdi                     # imm = 0x3F9
 	movl	$2, %eax
 	sbbq	$-1, %rax

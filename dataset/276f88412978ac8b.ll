@@ -1,22 +1,17 @@
 
-; 17 occurrences:
+; 12 occurrences:
 ; casadi/optimized/cs_add.c.ll
-; casadi/optimized/cs_cholsol.c.ll
-; casadi/optimized/cs_lusol.c.ll
 ; casadi/optimized/cs_permute.c.ll
 ; casadi/optimized/cs_symperm.c.ll
 ; casadi/optimized/cs_transpose.c.ll
 ; cpython/optimized/dictobject.ll
 ; linux/optimized/kobject.ll
 ; openssl/optimized/ca_internals_test-bin-ca.ll
-; openssl/optimized/libcrypto-lib-o_names.ll
-; openssl/optimized/libcrypto-shlib-o_names.ll
 ; openssl/optimized/openssl-bin-ca.ll
 ; openssl/optimized/openssl-bin-s_client.ll
 ; openusd/optimized/exception.cpp.ll
 ; ruby/optimized/ossl_pkey_rsa.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
-; wireshark/optimized/expert_info_view.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i1 %0, ptr %1) #0 {
 entry:
@@ -26,7 +21,9 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/sparring_partner.ll
+; boost/optimized/value_semantic.ll
 ; hdf5/optimized/H5Pdxpl.c.ll
 ; jq/optimized/compile.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll

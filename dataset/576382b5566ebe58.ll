@@ -1,13 +1,12 @@
 
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<mold::elf::Symbol<mold::elf::PPC32> *const, std::vector<std::__cxx11::basic_string<char>>>>, tbb::detail::d1::spin_rw_mutex>::bucket.2526170" = type { %"class.tbb::detail::d1::spin_rw_mutex.2526171", %"struct.std::atomic.98.2526172" }
-%"class.tbb::detail::d1::spin_rw_mutex.2526171" = type { %"struct.std::atomic.96.2526173" }
-%"struct.std::atomic.96.2526173" = type { %"struct.std::__atomic_base.97.2526174" }
-%"struct.std::__atomic_base.97.2526174" = type { i64 }
-%"struct.std::atomic.98.2526172" = type { %"struct.std::__atomic_base.99.2526175" }
-%"struct.std::__atomic_base.99.2526175" = type { ptr }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<mold::elf::Symbol<mold::elf::PPC32> *const, std::vector<std::__cxx11::basic_string<char>>>>, tbb::detail::d1::spin_rw_mutex>::bucket.2640577" = type { %"class.tbb::detail::d1::spin_rw_mutex.2640578", %"struct.std::atomic.98.2640579" }
+%"class.tbb::detail::d1::spin_rw_mutex.2640578" = type { %"struct.std::atomic.96.2640580" }
+%"struct.std::atomic.96.2640580" = type { %"struct.std::__atomic_base.97.2640581" }
+%"struct.std::__atomic_base.97.2640581" = type { i64 }
+%"struct.std::atomic.98.2640579" = type { %"struct.std::__atomic_base.99.2640582" }
+%"struct.std::__atomic_base.99.2640582" = type { ptr }
 
-; 56 occurrences:
-; cmake/optimized/archive_read_support_format_rar5.c.ll
+; 55 occurrences:
 ; mold/optimized/mapfile.cc.ALPHA.cc.ll
 ; mold/optimized/mapfile.cc.ARM32.cc.ll
 ; mold/optimized/mapfile.cc.ARM64.cc.ll
@@ -69,7 +68,7 @@ entry:
   %3 = and i64 %2, -2
   %4 = add i64 %1, 1
   %5 = sub i64 %4, %3
-  %6 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<mold::elf::Symbol<mold::elf::PPC32> *const, std::vector<std::__cxx11::basic_string<char>>>>, tbb::detail::d1::spin_rw_mutex>::bucket.2526170", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<mold::elf::Symbol<mold::elf::PPC32> *const, std::vector<std::__cxx11::basic_string<char>>>>, tbb::detail::d1::spin_rw_mutex>::bucket.2640577", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -94,8 +93,8 @@ define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 536870911
   %4 = xor i64 %3, -1
-  %5 = getelementptr i32, ptr %0, i64 %4
-  %6 = getelementptr i32, ptr %5, i64 %1
+  %5 = getelementptr i32, ptr %0, i64 %1
+  %6 = getelementptr i32, ptr %5, i64 %4
   ret ptr %6
 }
 

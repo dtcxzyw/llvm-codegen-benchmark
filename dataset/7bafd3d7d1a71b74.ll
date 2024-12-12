@@ -1,6 +1,46 @@
 
-; 126 occurrences:
+; 18 occurrences:
+; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_8.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
+; darktable/optimized/introspection_retouch.c.ll
+; hdf5/optimized/H5Tconv.c.ll
+; openblas/optimized/domatcopy_k_rt.c.ll
+; openblas/optimized/sgemm_otcopy.c.ll
+; openjdk/optimized/mlib_ImageAffine_BC_D64.ll
+; openjdk/optimized/mlib_ImageAffine_BC_F32.ll
+; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
+; raylib/optimized/raudio.c.ll
+; stb/optimized/stb_vorbis.c.ll
+; stb/optimized/stb_voxel_render.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000ab(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 %0
+  %3 = getelementptr nusw i8, ptr %2, i64 %0
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
+  ret ptr %5
+}
+
+; 1 occurrences:
 ; bullet3/optimized/btDantzigLCP.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000aa(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw float, ptr %1, i64 %0
+  %3 = getelementptr nusw float, ptr %2, i64 %0
+  %4 = getelementptr nusw float, ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %4, i64 -4
+  ret ptr %5
+}
+
+; 113 occurrences:
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/evaluator.cc.ll
@@ -49,9 +89,6 @@
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; cmake/optimized/huf_decompress.c.ll
-; darktable/optimized/introspection_retouch.c.ll
-; hdf5/optimized/H5Tconv.c.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -117,22 +154,26 @@
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; openblas/optimized/domatcopy_k_rt.c.ll
-; openblas/optimized/sgemm_otcopy.c.ll
-; openjdk/optimized/mlib_ImageAffine_BC_D64.ll
-; openjdk/optimized/mlib_ImageAffine_BC_F32.ll
-; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
-; raylib/optimized/raudio.c.ll
-; stb/optimized/stb_vorbis.c.ll
-; stb/optimized/stb_voxel_render.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000ff(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw ptr, ptr %1, i64 %0
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %0
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 2 occurrences:
+; cmake/optimized/huf_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(i64 %0, ptr %1) #0 {
+define ptr @func00000000000000fe(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 %0
-  %3 = getelementptr nusw i8, ptr %2, i64 %0
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %4, i64 -7
   ret ptr %5
 }
 

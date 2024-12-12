@@ -7,7 +7,7 @@ func0000000000000000:                   # @func0000000000000000
 	vzeroupper
 	retq
 .LCPI1_0:
-	.long	3                               # 0x3
+	.long	1                               # 0x1
 func0000000000000002:                   # @func0000000000000002
 	vpsrlvq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0

@@ -1,5 +1,5 @@
 
-; 257 occurrences:
+; 256 occurrences:
 ; cmake/optimized/archive_read_disk_entry_from_file.c.ll
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
@@ -20,7 +20,6 @@
 ; libpng/optimized/pngread.c.ll
 ; linux/optimized/dquot.ll
 ; linux/optimized/hda_intel.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/namei.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -258,7 +257,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 64
   %3 = icmp ne i32 %2, 0
@@ -470,7 +469,7 @@ entry:
 ; php/optimized/zend_inheritance.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 64
   %3 = icmp eq i32 %2, 0
@@ -479,19 +478,7 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; clamav/optimized/upack.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %2, 2
-  %4 = icmp ugt i32 %0, 6
-  %5 = select i1 %3, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 50 occurrences:
+; 49 occurrences:
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/Passes.cpp.ll
 ; linux/optimized/namei.ll
@@ -541,27 +528,13 @@ entry:
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
-; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
   %4 = icmp ugt i32 %0, 64
   %5 = select i1 %3, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 2 occurrences:
-; gromacs/optimized/md5.c.ll
-; gromacs/optimized/md5.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 63
-  %3 = icmp ult i32 %2, 57
-  %4 = icmp eq i32 %0, 8
-  %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -575,7 +548,7 @@ entry:
 ; opencv/optimized/thresh.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1073741824
   %3 = icmp ne i32 %2, 0
@@ -587,23 +560,11 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/geo_ops.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0
   %4 = icmp slt i32 %0, 1
-  %5 = select i1 %3, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 65536
-  %3 = icmp ne i32 %2, 0
-  %4 = icmp ult i32 %0, 72
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }

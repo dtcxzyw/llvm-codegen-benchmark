@@ -1,5 +1,8 @@
 
-; 55 occurrences:
+; 58 occurrences:
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/poly34.ll
 ; gromacs/optimized/bonded.cpp.ll
@@ -60,7 +63,7 @@ define double @func0000000000000000(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
   %3 = fneg double %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

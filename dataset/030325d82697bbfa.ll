@@ -6,7 +6,7 @@
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = select i1 %2, i64 2, i64 1
@@ -14,7 +14,19 @@ entry:
   ret i1 %4
 }
 
-; 50 occurrences:
+; 2 occurrences:
+; just-rs/optimized/uwydcyn8qeoqoev.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i64 %0, i8 %1) #0 {
+entry:
+  %2 = trunc nuw i8 %1 to i1
+  %3 = select i1 %2, i64 3, i64 1
+  %4 = icmp ult i64 %3, %0
+  ret i1 %4
+}
+
+; 49 occurrences:
 ; hermes/optimized/AST2JS.cpp.ll
 ; hermes/optimized/Dumper.cpp.ll
 ; hermes/optimized/rustgen.cpp.ll
@@ -54,7 +66,6 @@ entry:
 ; llvm/optimized/PredicateExpander.cpp.ll
 ; llvm/optimized/PrintPreprocessedOutput.cpp.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
-; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll

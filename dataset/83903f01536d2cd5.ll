@@ -44,7 +44,7 @@
 define i1 @func00000000000000a6(float %0, float %1) #0 {
 entry:
   %2 = fdiv float 1.600000e+01, %1
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fcmp ult float %3, 1.250000e-01
   %5 = fcmp ugt float %3, 8.000000e+00
   %6 = or i1 %4, %5

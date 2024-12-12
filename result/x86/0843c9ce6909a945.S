@@ -1,4 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000294:                   # @func0000000000000294
 	andl	$254, %edi
 	cmpl	$33, %edi
 	movl	$536871273, %eax                # imm = 0x20000169
@@ -8,7 +8,7 @@ func0000000000000044:                   # @func0000000000000044
 	movl	$268435809, %eax                # imm = 0x10000161
 	cmovael	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$3, %edi
 	xorl	%eax, %eax
 	cmpl	$2, %edi
@@ -18,7 +18,7 @@ func0000000000000011:                   # @func0000000000000011
 	movl	$2, %eax
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	andl	$61440, %edi                    # imm = 0xF000
 	xorl	%eax, %eax
 	cmpl	$57344, %edi                    # imm = 0xE000

@@ -27,7 +27,7 @@ entry:
 ; abc/optimized/giaClp.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/wlcBlast.c.ll
-; cmake/optimized/archive_pack_dev.c.ll
+; boost/optimized/src.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
@@ -63,8 +63,22 @@ entry:
   ret i64 %7
 }
 
-; 5 occurrences:
-; linux/optimized/set_memory.ll
+; 3 occurrences:
+; abc/optimized/bdcSpfd.c.ll
+; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = and i64 %3, 1095216660480
+  %5 = and i64 %1, 255
+  %6 = or disjoint i64 %4, %5
+  %7 = or i64 %6, %0
+  ret i64 %7
+}
+
+; 4 occurrences:
 ; llvm/optimized/AArch64ExternalSymbolizer.cpp.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
@@ -108,20 +122,6 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
-; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 16
-  %4 = and i64 %3, 2031616
-  %5 = and i64 %1, 4294935551
-  %6 = or i64 %5, %4
-  %7 = or i64 %6, %0
-  ret i64 %7
-}
-
 ; 1 occurrences:
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; Function Attrs: nounwind
@@ -131,7 +131,7 @@ entry:
   %4 = and i64 %3, 1095216660480
   %5 = and i64 %1, 4294967295
   %6 = or disjoint i64 %4, %5
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 

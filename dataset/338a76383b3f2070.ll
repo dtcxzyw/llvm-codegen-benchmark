@@ -1,5 +1,5 @@
 
-; 167 occurrences:
+; 169 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; clamav/optimized/rebuildpe.c.ll
 ; darktable/optimized/AbstractDngDecompressor.cpp.ll
@@ -23,6 +23,7 @@
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
+; minetest/optimized/mg_schematic.cpp.ll
 ; minetest/optimized/tool.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; ncnn/optimized/batchnorm_x86.cpp.ll
@@ -159,6 +160,7 @@
 ; ncnn/optimized/unaryop_x86_avx.cpp.ll
 ; ncnn/optimized/unaryop_x86_avx512.cpp.ll
 ; ncnn/optimized/unaryop_x86_fma.cpp.ll
+; oiio/optimized/Writer.cpp.ll
 ; oiio/optimized/iffoutput.cpp.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/macroArrayCopy.ll
@@ -194,12 +196,13 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; linux/optimized/intel_sprite.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; raylib/optimized/rtextures.c.ll
@@ -211,7 +214,7 @@ entry:
   ret i32 %3
 }
 
-; 52 occurrences:
+; 56 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -227,9 +230,12 @@ entry:
 ; darktable/optimized/PhaseOneDecompressor.cpp.ll
 ; darktable/optimized/SamsungV1Decompressor.cpp.ll
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
+; darktable/optimized/introspection_highlights.c.ll
 ; gromacs/optimized/calcgrid.cpp.ll
 ; icu/optimized/vtzone.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; ncnn/optimized/batchnorm_x86.cpp.ll
 ; ncnn/optimized/batchnorm_x86_avx.cpp.ll
 ; ncnn/optimized/batchnorm_x86_avx512.cpp.ll
@@ -263,12 +269,13 @@ entry:
 ; openjdk/optimized/stringopts.ll
 ; openspiel/optimized/battleship.cc.ll
 ; openspiel/optimized/gin_rummy.cc.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; xgboost/optimized/cpu_treeshap.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
-  %3 = and i32 %2, 7
+  %3 = and i32 %2, 32768
   ret i32 %3
 }
 

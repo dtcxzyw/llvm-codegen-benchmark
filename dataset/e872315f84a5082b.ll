@@ -13,8 +13,22 @@ define i32 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or disjoint i32 %4, 16777728
+  ret i32 %5
+}
+
+; 3 occurrences:
+; hermes/optimized/HBC.cpp.ll
+; linux/optimized/intel_fbc.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 63
+  %3 = zext nneg i8 %2 to i32
+  %4 = or disjoint i32 %0, %3
+  %5 = or i32 %4, 56320
   ret i32 %5
 }
 
@@ -26,20 +40,8 @@ define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = or i32 %4, 4
-  ret i32 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/ASTWriter.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 1
-  %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
-  %5 = or i32 %4, 8
   ret i32 %5
 }
 

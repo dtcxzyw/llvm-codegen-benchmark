@@ -1,18 +1,4 @@
 
-; 3 occurrences:
-; hermes/optimized/DictPropertyMap.cpp.ll
-; linux/optimized/isadma.ll
-; wireshark/optimized/packet-asterix.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 2
-  %3 = add nuw nsw i32 %0, 35
-  %4 = add nuw nsw i32 %3, %2
-  %5 = and i32 %4, 2147483640
-  ret i32 %5
-}
-
 ; 4 occurrences:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; luajit/optimized/lj_bcread.ll

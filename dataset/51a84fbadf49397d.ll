@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; lief/optimized/ssl_msg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = select i1 %1, i64 4294939648, i64 %3
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -16,11 +16,11 @@ entry:
 ; linux/optimized/intel_color.ll
 ; postgres/optimized/execute.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = select i1 %1, i64 12, i64 %3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ define i1 @func0000000000000008(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -40,22 +40,11 @@ entry:
 ; graphviz/optimized/triang.c.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = icmp eq i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/intel_color.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4294967295
-  %4 = select i1 %1, i64 128, i64 %3
-  %5 = icmp ule i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -66,7 +55,7 @@ define i1 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = select i1 %1, i64 23, i64 %3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -78,7 +67,7 @@ define i1 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = select i1 %1, i64 8, i64 %3
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 

@@ -13,9 +13,3 @@ func000000000000001c:                   // @func000000000000001c
 	umaddl	x0, w1, w2, x0
 	ret
                                         // -- End function
-func000000000000001e:                   // @func000000000000001e
-// %bb.0:                               // %entry
-	and	x8, x1, #0x7fffffff
-	umaddl	x0, w8, w2, x0
-	ret
-                                        // -- End function

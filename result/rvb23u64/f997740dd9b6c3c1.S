@@ -21,3 +21,13 @@ func000000000000006f:                   # @func000000000000006f
 	addiw	a1, a1, -571
 	mul	a0, a0, a1
 	ret
+func00000000000000ef:                   # @func00000000000000ef
+	lui	a1, 109951
+	addiw	a1, a1, 667
+	slli	a1, a1, 12
+	addi	a1, a1, -1077
+	mulhu	a0, a0, a1
+	lui	a1, 168
+	addiw	a1, a1, -933
+	mul	a0, a0, a1
+	ret

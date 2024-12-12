@@ -9,7 +9,7 @@
 ; gromacs/optimized/perf_est.cpp.ll
 ; openjdk/optimized/hugepages.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000102(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp ult i32 %0, 6
   %3 = select i1 %2, i1 %1, i1 false
@@ -39,7 +39,7 @@ entry:
 ; wireshark/optimized/packet-xnap.c.ll
 ; wolfssl/optimized/server.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000042(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 1
   %3 = select i1 %2, i1 %1, i1 false

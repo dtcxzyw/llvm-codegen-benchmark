@@ -1,5 +1,5 @@
 
-; 437 occurrences:
+; 445 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -152,12 +152,12 @@
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/b3File.ll
 ; c3c/optimized/asm_target.c.ll
 ; c3c/optimized/bigint.c.ll
 ; c3c/optimized/parse_global.c.ll
 ; clamav/optimized/BraIA64.c.ll
-; cmake/optimized/archive_pack_dev.c.ll
 ; cmake/optimized/ia64.c.ll
 ; coreutils-rs/optimized/53yhdh06nqcwsoo6.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
@@ -176,6 +176,7 @@
 ; hermes/optimized/Operations.cpp.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; icu/optimized/collationbuilder.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; lief/optimized/Builder.cpp.ll
@@ -183,7 +184,6 @@
 ; lief/optimized/RelocationFixup.cpp.ll
 ; linux/optimized/blk-core.ll
 ; linux/optimized/blk-merge.ll
-; linux/optimized/cap_audit.ll
 ; linux/optimized/core.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/gen8_ppgtt.ll
@@ -310,7 +310,8 @@
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; logos-rs/optimized/bt773r0511h3mpz.ll
-; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_image.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/zone.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
@@ -397,6 +398,7 @@
 ; spike/optimized/shfli.ll
 ; spike/optimized/triggers.ll
 ; spike/optimized/unshfli.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; velox/optimized/BaseVector.cpp.ll
@@ -437,16 +439,22 @@
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294901760
   %4 = or disjoint i64 %3, %1
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
-; 116 occurrences:
+; 115 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
@@ -475,7 +483,6 @@ entry:
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/page.ll
-; linux/optimized/set_memory.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/workingset.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -572,7 +579,8 @@ entry:
   ret i64 %5
 }
 
-; 371 occurrences:
+; 373 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; arrow/optimized/key_map.cc.ll
 ; cmake/optimized/huf_compress.c.ll
@@ -587,6 +595,7 @@ entry:
 ; linux/optimized/gen6_ppgtt.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/intel_ggtt.ll
+; linux/optimized/maple_tree.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/page.ll
 ; linux/optimized/pt.ll
@@ -650,7 +659,6 @@ entry:
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
-; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
@@ -673,6 +681,7 @@ entry:
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/USRGeneration.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openjdk/optimized/abstractInterpreter_x86.ll
 ; openjdk/optimized/altHashing.ll
 ; openjdk/optimized/archiveBuilder.ll
@@ -922,11 +931,11 @@ entry:
 ; spike/optimized/f128_mul.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/fall_reciprocal.ll
 ; spike/optimized/s_addMagsF128.ll
 ; spike/optimized/s_mulAddF128.ll
 ; spike/optimized/triggers.ll
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; yalantinglibs/optimized/addressbook.struct_pb.cc.ll
 ; yalantinglibs/optimized/any.struct_pb.cc.ll
@@ -949,11 +958,12 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 558551906910208
   %4 = or i64 %3, %1
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
-; 27 occurrences:
+; 28 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
@@ -984,7 +994,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 7
+  %3 = and i64 %2, -4503599627370496
   %4 = or i64 %3, %1
   %5 = or disjoint i64 %4, %0
   ret i64 %5

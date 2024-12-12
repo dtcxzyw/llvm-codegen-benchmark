@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; libquic/optimized/curve25519.c.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; openjdk/optimized/defaultMethods.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll

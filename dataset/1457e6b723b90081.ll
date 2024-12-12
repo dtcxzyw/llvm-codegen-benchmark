@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; libpng/optimized/pngread.c.ll
 ; libwebp/optimized/upsampling.c.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; openjdk/optimized/pngread.ll
+; zed-rs/optimized/67gayid14ydsuhkv0lcnhbsvb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:

@@ -8,7 +8,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = trunc i64 %1 to i32
   %6 = icmp ugt i32 %4, %5
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
@@ -27,7 +27,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = trunc i64 %1 to i32
   %6 = icmp eq i32 %4, %5
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
@@ -40,7 +40,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = trunc i64 %1 to i32
   %6 = icmp ne i32 %4, %5
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

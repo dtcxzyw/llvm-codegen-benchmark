@@ -1,9 +1,10 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; linux/optimized/pci-acpi.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll

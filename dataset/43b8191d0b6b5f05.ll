@@ -230,11 +230,11 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp ne i32 %3, %4
+  %4 = sub nsw i32 0, %3
+  %5 = icmp ne i32 %1, %4
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -242,12 +242,12 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gmx_dipoles.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp ult i32 %4, 3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

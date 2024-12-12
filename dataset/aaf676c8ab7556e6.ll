@@ -100,9 +100,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/mmconfig-shared.ll
-; linux/optimized/swiotlb.ll
 ; openspiel/optimized/observer.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {

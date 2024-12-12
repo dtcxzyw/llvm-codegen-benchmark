@@ -1,4 +1,4 @@
-func000000000000018a:                   // @func000000000000018a
+func000000000000018f:                   // @func000000000000018f
 // %bb.0:                               // %entry
 	tst	w1, #0xff
 	cset	w8, ne
@@ -7,7 +7,7 @@ func000000000000018a:                   // @func000000000000018a
 	add	x0, x8, #1
 	ret
                                         // -- End function
-func0000000000000188:                   // @func0000000000000188
+func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
 	tst	w1, #0xff
 	mov	w8, #24                         // =0x18
@@ -16,7 +16,7 @@ func0000000000000188:                   // @func0000000000000188
 	add	x0, x8, #16
 	ret
                                         // -- End function
-func000000000000002b:                   // @func000000000000002b
+func000000000000002f:                   // @func000000000000002f
 // %bb.0:                               // %entry
 	and	w9, w1, #0xff
 	mov	w8, #6                          // =0x6
@@ -26,17 +26,7 @@ func000000000000002b:                   // @func000000000000002b
 	add	x0, x8, #1
 	ret
                                         // -- End function
-func000000000000018b:                   // @func000000000000018b
-// %bb.0:                               // %entry
-	and	w9, w1, #0xff
-	mov	w8, #6                          // =0x6
-	cmp	w9, #1
-	cset	w9, ne
-	umaddl	x8, w9, w8, x0
-	add	x0, x8, #1
-	ret
-                                        // -- End function
-func0000000000000022:                   // @func0000000000000022
+func0000000000000023:                   // @func0000000000000023
 // %bb.0:                               // %entry
 	and	w8, w1, #0xff
 	cmp	w8, #2

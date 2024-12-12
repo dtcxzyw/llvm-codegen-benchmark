@@ -1,11 +1,11 @@
-func0000000000000068:                   // @func0000000000000068
+func0000000000000078:                   // @func0000000000000078
 // %bb.0:                               // %entry
 	mul	w8, w1, w2
 	add	x8, x0, w8, sxtw
 	add	x0, x8, #2
 	ret
                                         // -- End function
-func000000000000006a:                   // @func000000000000006a
+func000000000000007a:                   // @func000000000000007a
 // %bb.0:                               // %entry
 	mul	w8, w1, w2
 	add	x0, x0, w8, sxtw #2
@@ -17,7 +17,7 @@ func0000000000000040:                   // @func0000000000000040
 	add	x0, x0, w8, sxtw #1
 	ret
                                         // -- End function
-func00000000000000ea:                   // @func00000000000000ea
+func00000000000000fb:                   // @func00000000000000fb
 // %bb.0:                               // %entry
 	mul	w8, w1, w2
 	sxtw	x8, w8

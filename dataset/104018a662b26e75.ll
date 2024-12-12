@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; raylib/optimized/raudio.c.ll

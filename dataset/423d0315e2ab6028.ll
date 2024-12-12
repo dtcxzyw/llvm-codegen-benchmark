@@ -35,8 +35,7 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
-; postgres/optimized/brin_xlog.ll
+; 5 occurrences:
 ; postgres/optimized/decode.ll
 ; postgres/optimized/gistxlog.ll
 ; postgres/optimized/hash_xlog.ll

@@ -1,8 +1,6 @@
 
-; 3 occurrences:
-; cmake/optimized/zstd_compress.c.ll
+; 1 occurrences:
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
-; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:

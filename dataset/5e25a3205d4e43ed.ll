@@ -1,10 +1,13 @@
 
-; 10 occurrences:
+; 13 occurrences:
 ; coreutils-rs/optimized/3qd2nnv0mbtxq1wn.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
 ; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
+; ockam-rs/optimized/3mmfh9oxbbu2kjan.ll
+; ockam-rs/optimized/8g2r22yshp3qi00.ll
+; ockam-rs/optimized/lrl69p7oh77nujn.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; softposit-rs/optimized/3yl6353p3hwrtv6y.ll
 ; spike/optimized/vsmul_vv.ll
@@ -14,11 +17,11 @@
 define i1 @func0000000000000002(i1 %0, i128 %1) #0 {
 entry:
   %2 = icmp eq i128 %1, -144200598573663518929863973296336709171
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 109 occurrences:
+; 104 occurrences:
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; clap-rs/optimized/3n9sdy3q5n8p0ad5.ll
@@ -36,7 +39,6 @@ entry:
 ; coreutils-rs/optimized/1c0bwvv43j289y30.ll
 ; coreutils-rs/optimized/1e5pt7vtfxa4ahz7.ll
 ; coreutils-rs/optimized/1iiitxeck9g2ksb7.ll
-; coreutils-rs/optimized/1mhb4e8l0v9dncti.ll
 ; coreutils-rs/optimized/1pn74b1r3k1s4pck.ll
 ; coreutils-rs/optimized/1ui3yxdetdbghtw.ll
 ; coreutils-rs/optimized/1unp4st43r7zdtb0.ll
@@ -44,7 +46,6 @@ entry:
 ; coreutils-rs/optimized/1w8bjqmsfkf0ntfz.ll
 ; coreutils-rs/optimized/1xrz1ag37fklzklg.ll
 ; coreutils-rs/optimized/26a2uyrtdxle93un.ll
-; coreutils-rs/optimized/2ahdhlyatyqueo1a.ll
 ; coreutils-rs/optimized/2da8x6qqhq5bzyna.ll
 ; coreutils-rs/optimized/2eb96ulhupdvrip8.ll
 ; coreutils-rs/optimized/2etc5gfaqs8pnymi.ll
@@ -64,7 +65,6 @@ entry:
 ; coreutils-rs/optimized/3q8ukvkopatfv0x0.ll
 ; coreutils-rs/optimized/3qd2nnv0mbtxq1wn.ll
 ; coreutils-rs/optimized/3r2vyvwpz7j7c5gy.ll
-; coreutils-rs/optimized/3ummpw5ql7d4y98b.ll
 ; coreutils-rs/optimized/3vfybkcp5ufzff0e.ll
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
 ; coreutils-rs/optimized/420s040g7rwxzzqz.ll
@@ -85,13 +85,11 @@ entry:
 ; coreutils-rs/optimized/942h4e64iw767xo.ll
 ; coreutils-rs/optimized/d2l5f8sei2pacyj.ll
 ; coreutils-rs/optimized/exyrvqdrhfrgv84.ll
-; coreutils-rs/optimized/ga96dm5uabspngk.ll
 ; coreutils-rs/optimized/gy31avu15bepulc.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; coreutils-rs/optimized/icw7irkz6mu05a9.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
-; coreutils-rs/optimized/plvfu1855xjk96c.ll
 ; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
 ; coreutils-rs/optimized/vylkzjuq6grxql.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
@@ -132,7 +130,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i128 %1) #0 {
 entry:
   %2 = icmp ne i128 %1, -144200598573663518929863973296336709171
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 

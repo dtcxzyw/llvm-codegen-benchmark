@@ -10,7 +10,7 @@ entry:
   ret i32 %3
 }
 
-; 141 occurrences:
+; 150 occurrences:
 ; actix-rs/optimized/4vksfexudgt1qids.ll
 ; actix-rs/optimized/d7z2ueos8qkfuul.ll
 ; cmake/optimized/SystemInformation.cxx.ll
@@ -134,7 +134,6 @@ entry:
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/17poo9s8anpkt1t8.ll
-; wasmtime-rs/optimized/18qlhjnrpvsm6eac.ll
 ; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/1uw8h1oeggq2kq40.ll
 ; wasmtime-rs/optimized/1zkfgtqtm638lb5r.ll
@@ -152,8 +151,18 @@ entry:
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1ulz6am0p2zydvxiq0jj20s3q.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/ar7dh4wgo1trc0zqxri1w8nce.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/d2w35dg2d82avud97ap9t4v42.ll
+; zed-rs/optimized/daazuwy5q4pkhw5qv9dy4nfnq.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0) #0 {
+define i32 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -10
   %2 = icmp ult i32 %1, 20
@@ -161,18 +170,15 @@ entry:
   ret i32 %3
 }
 
-; 23 occurrences:
+; 20 occurrences:
 ; gromacs/optimized/swapcoords.cpp.ll
 ; hermes/optimized/JSParserImpl-flow.cpp.ll
-; icu/optimized/hebrwcal.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; llvm/optimized/TargetMachineC.cpp.ll
 ; luau/optimized/Parser.cpp.ll
 ; oiio/optimized/targaoutput.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/syncrep.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
 ; rust-analyzer-rs/optimized/150tm5mq81nfdpak.ll
 ; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll

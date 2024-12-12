@@ -3,3 +3,13 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
+func0000000000000006:                   # @func0000000000000006
+	cmpl	%edx, %esi
+	setl	%al
+	andb	%dil, %al
+	retq
+func0000000000000007:                   # @func0000000000000007
+	cmpl	%edx, %esi
+	setle	%al
+	andb	%dil, %al
+	retq

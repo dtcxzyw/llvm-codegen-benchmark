@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; libevent/optimized/evdns.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000014c(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 15
   %4 = icmp ne i16 %3, 0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000bc(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000016c(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, -1024
   %4 = icmp ne i16 %3, -10240
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-afp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 16
   %4 = icmp eq i16 %3, 0
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-s7comm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1
   %4 = icmp eq i16 %3, 0
@@ -70,7 +70,7 @@ entry:
 ; icu/optimized/writesrc.ll
 ; icu/optimized/wrtxml.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, -1024
   %4 = icmp ne i16 %3, -10240

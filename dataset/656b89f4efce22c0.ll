@@ -50,7 +50,7 @@ entry:
 define i32 @func00000000000000f7(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl i32 %3, 3
   %5 = add i32 %4, 19
   ret i32 %5
@@ -63,7 +63,7 @@ entry:
 define i32 @func00000000000000dd(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl i32 %3, 3
   %5 = add i32 %4, 19
   ret i32 %5

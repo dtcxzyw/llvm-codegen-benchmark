@@ -39,7 +39,7 @@ entry:
 ; openjdk/optimized/cmspack.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp eq i32 %0, 0
@@ -51,7 +51,7 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/utilSort.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = icmp eq i32 %0, 0
@@ -64,7 +64,7 @@ entry:
 ; glslang/optimized/Initialize.cpp.ll
 ; kcp/optimized/ikcp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp eq i32 %0, 0
@@ -75,7 +75,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/refinement.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %.not = icmp eq i32 %0, 0
@@ -108,22 +108,11 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/unistr.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp sgt i32 %0, 27
   %5 = select i1 %4, i32 %3, i32 27
-  ret i32 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/hough.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = icmp ult i32 %0, 64
-  %5 = select i1 %4, i32 %3, i32 0
   ret i32 %5
 }
 
@@ -141,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = icmp sgt i32 %0, 0

@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; lief/optimized/psa_crypto.c.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
@@ -10,6 +10,7 @@
 ; typst-rs/optimized/ef603zin5qw49hb.ll
 ; wasmtime-rs/optimized/4geaf703ae2lxyqg.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:

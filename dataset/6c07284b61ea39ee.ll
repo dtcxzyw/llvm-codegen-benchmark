@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 58 occurrences:
 ; abc/optimized/deflate.c.ll
 ; arrow/optimized/future.cc.ll
 ; bdwgc/optimized/gc.c.ll
@@ -26,6 +26,7 @@
 ; linux/optimized/trace_kprobe.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/CallEvent.cpp.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/PtrState.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
@@ -46,15 +47,16 @@
 ; rust-analyzer-rs/optimized/1egtj7ksojphluke.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/2nugbu58bpckifsmteww668r2.ll
+; turborepo-rs/optimized/667fw7b0fgqo2a1672jmft41u.ll
 ; typst-rs/optimized/2mftqs8ggtb6o9na.ll
-; typst-rs/optimized/3dimj4rf5dyrieyi.ll
-; typst-rs/optimized/49m3cs7hus53ztof.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
 ; typst-rs/optimized/w6iknwszr5npyaz.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(ptr %0) #0 {

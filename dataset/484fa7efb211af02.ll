@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/sygus_invariance.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
@@ -9,6 +9,7 @@
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; yosys/optimized/memory_libmap.ll
+; yosys/optimized/sim.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/emonics.cpp.ll
 ; z3/optimized/factorization.cpp.ll
@@ -17,7 +18,7 @@
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

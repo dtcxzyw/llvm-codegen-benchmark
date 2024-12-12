@@ -46,7 +46,7 @@ entry:
   ret i32 %5
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
@@ -57,7 +57,6 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
 ; openjdk/optimized/runtime.ll
 ; openjdk/optimized/utf8.ll
@@ -78,7 +77,7 @@ entry:
   ret i32 %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; chibicc/optimized/tokenize.ll
 ; cpython/optimized/codecs.ll
 ; linux/optimized/airtime.ll
@@ -87,7 +86,7 @@ entry:
 ; linux/optimized/slub.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/NestedNameSpecifier.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/utf8.ll
 ; openspiel/optimized/solitaire.cc.ll
@@ -98,6 +97,7 @@ entry:
 ; wireshark/optimized/tap-iostat.c.ll
 ; wireshark/optimized/wireshark_zip_helper.cpp.ll
 ; wolfssl/optimized/asn.c.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:

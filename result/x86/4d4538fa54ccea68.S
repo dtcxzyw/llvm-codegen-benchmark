@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	orl	%edx, %esi
 	orl	%edi, %esi
 	xorl	%eax, %eax
@@ -6,7 +6,7 @@ func0000000000000031:                   # @func0000000000000031
 	sete	%al
 	leal	-9(%rax,%rax,8), %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	orl	%edx, %esi
 	orl	%edi, %esi
 	cmpl	$33900, %esi                    # imm = 0x846C

@@ -89,8 +89,9 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; opencv/optimized/motion_estimators.cpp.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; Function Attrs: nounwind

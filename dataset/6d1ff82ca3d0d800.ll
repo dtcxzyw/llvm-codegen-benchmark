@@ -1,12 +1,11 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/collationsettings.ll
 ; icu/optimized/decContext.ll
 ; icu/optimized/propsvec.ll
 ; jq/optimized/decContext.ll
 ; libquic/optimized/padding.c.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/iosf_mbi.ll
 ; linux/optimized/regmap.ll
@@ -24,13 +23,13 @@
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = and i32 %1, %2
   %6 = or disjoint i32 %4, %5
   ret i32 %6
 }
 
-; 63 occurrences:
+; 62 occurrences:
 ; abc/optimized/cnfCut.c.ll
 ; abc/optimized/ivyDsd.c.ll
 ; abc/optimized/kitCloud.c.ll
@@ -51,7 +50,6 @@ entry:
 ; lief/optimized/ripemd160.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; linux/optimized/bitset.ll
-; linux/optimized/hwxface.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/tty_ioctl.ll
 ; linux/optimized/xfrm_input.ll
@@ -98,7 +96,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = and i32 %1, %2
   %6 = or i32 %4, %5
   ret i32 %6

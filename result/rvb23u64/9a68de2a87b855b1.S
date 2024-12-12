@@ -1,7 +1,7 @@
 func0000000000000019:                   # @func0000000000000019
 	add	a1, a1, a2
-	srliw	a1, a1, 1
-	mulw	a0, a1, a0
+	srliw	a1, a1, 3
+	mulw	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	add	a1, a1, a2

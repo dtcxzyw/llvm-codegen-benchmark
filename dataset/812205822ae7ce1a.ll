@@ -1,15 +1,15 @@
 
 ; 16 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/splines.c.ll
 ; gromacs/optimized/calculate_spline_moduli.cpp.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; php/optimized/timelib.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/geodesic.c.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/analytic_cont_geom_av_price.ll
 ; quantlib/optimized/integralhestonvarianceoptionengine.ll
 ; quantlib/optimized/noarbsabr.ll

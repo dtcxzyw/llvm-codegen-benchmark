@@ -1,9 +1,10 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; gromacs/optimized/compiler.cpp.ll
 ; linux/optimized/intel_display_irq.ll
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM64.cc.ll
 ; mold/optimized/passes.cc.LOONGARCH64.cc.ll

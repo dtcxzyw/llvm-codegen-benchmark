@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = add i32 %2, 36
@@ -25,15 +25,13 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/dlasq3.cpp.ll
 ; gromacs/optimized/dlasq5.cpp.ll
 ; gromacs/optimized/dlasq6.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
@@ -49,7 +47,7 @@ entry:
 ; gromacs/optimized/slasq2.cpp.ll
 ; openblas/optimized/dlasq2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000020a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = add i32 %2, -12
@@ -61,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-oran.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 5
   %3 = add i32 %2, -24

@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 53 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_testcapimodule.ll
@@ -22,6 +22,7 @@
 ; llvm/optimized/YAMLTraits.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
@@ -56,11 +57,11 @@
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 49, i32 48
-  %2 = add i32 %.v, %1
+  %2 = add i32 %1, %.v
   ret i32 %2
 }
 
-; 71 occurrences:
+; 69 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -101,9 +102,7 @@ entry:
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/dlaqtr.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtgsy2.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; openblas/optimized/slamch.c.ll
 ; opencv/optimized/calibration.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
@@ -136,7 +135,7 @@ entry:
 define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 52, i32 -48
-  %2 = add nsw i32 %.v, %1
+  %2 = add nsw i32 %1, %.v
   ret i32 %2
 }
 
@@ -150,7 +149,7 @@ entry:
 define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 -48, i32 -87
-  %2 = add i32 %.v, %1
+  %2 = add i32 %1, %.v
   ret i32 %2
 }
 
@@ -162,7 +161,7 @@ entry:
 define i32 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 2, i32 1
-  %2 = add nuw i32 %.v, %1
+  %2 = add nuw i32 %1, %.v
   ret i32 %2
 }
 
@@ -182,7 +181,7 @@ entry:
 define i32 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 2, i32 1
-  %2 = add i32 %.v, %1
+  %2 = add i32 %1, %.v
   ret i32 %2
 }
 
@@ -209,7 +208,7 @@ entry:
 define i32 @func000000000000000f(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 3, i32 2
-  %2 = add nuw nsw i32 %.v, %1
+  %2 = add nuw nsw i32 %1, %.v
   ret i32 %2
 }
 
@@ -222,7 +221,7 @@ entry:
 define i32 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 52, i32 -48
-  %2 = add nsw i32 %.v, %1
+  %2 = add nsw i32 %1, %.v
   ret i32 %2
 }
 
@@ -233,7 +232,7 @@ entry:
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 1, i32 3
-  %2 = add i32 %.v, %1
+  %2 = add i32 %1, %.v
   ret i32 %2
 }
 
@@ -243,7 +242,7 @@ entry:
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 -3000003, i32 -3000000
-  %2 = add i32 %.v, %1
+  %2 = add i32 %1, %.v
   ret i32 %2
 }
 
@@ -255,7 +254,7 @@ entry:
 define i32 @func000000000000000d(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 719468, i32 573372
-  %2 = add nsw i32 %.v, %1
+  %2 = add nsw i32 %1, %.v
   ret i32 %2
 }
 
@@ -265,7 +264,7 @@ entry:
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %.v = select i1 %0, i32 -1, i32 -2
-  %2 = add i32 %.v, %1
+  %2 = add i32 %1, %.v
   ret i32 %2
 }
 

@@ -6,7 +6,7 @@
 ; llvm/optimized/Transforms.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -107
   %4 = select i1 %3, ptr null, ptr %1
@@ -24,7 +24,7 @@ entry:
 ; llvm/optimized/StackProtector.cpp.ll
 ; llvm/optimized/VPlanAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %.not = icmp eq i8 %2, 60
   %3 = select i1 %.not, ptr %1, ptr null
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %.not = icmp eq i8 %2, 60
   %3 = select i1 %.not, ptr %1, ptr null
@@ -51,7 +51,7 @@ entry:
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, -1
   %4 = select i1 %3, ptr null, ptr %1
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/slub.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, ptr null, ptr %1

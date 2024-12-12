@@ -8,7 +8,7 @@ func000000000000003c:                   # @func000000000000003c
 	shrl	%esi
 	leaq	(%rdi,%rsi,4), %rax
 	retq
-func00000000000000de:                   # @func00000000000000de
+func00000000000000df:                   # @func00000000000000df
 	leal	3(%rsi), %eax
 	shrl	$2, %eax
 	shlq	$7, %rax

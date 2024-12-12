@@ -21,7 +21,7 @@ entry:
 ; linux/optimized/radiotap.ll
 ; wireshark/optimized/packet-ieee80211-radiotap-iter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %0, -1
@@ -186,7 +186,7 @@ entry:
 ; spike/optimized/vzext_vf4.ll
 ; spike/optimized/vzext_vf8.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add i32 %0, -1
@@ -217,7 +217,7 @@ entry:
 ; spike/optimized/vs4r_v.ll
 ; spike/optimized/vs8r_v.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %0, 31
@@ -232,7 +232,7 @@ entry:
 ; spike/optimized/vmv4r_v.ll
 ; spike/optimized/vmv8r_v.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %0, -1
@@ -278,24 +278,10 @@ entry:
 }
 
 ; 2 occurrences:
-; cmake/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %0, -1
-  %4 = and i32 %3, %2
-  %5 = icmp ult i32 %4, 2
-  ret i1 %5
-}
-
-; 3 occurrences:
-; linux/optimized/blk-settings.ll
 ; z3/optimized/arith_sls.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %0, -1

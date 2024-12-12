@@ -87,6 +87,13 @@ func0000000000000009:                   # @func0000000000000009
 	vsrl.vi	v8, v8, 1
 	vadd.vi	v8, v8, -5
 	ret
+func0000000000000013:                   # @func0000000000000013
+	li	a0, 16
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vx	v8, v8, a0
+	vsrl.vi	v8, v8, 4
+	vadd.vi	v8, v8, 1
+	ret
 func0000000000000011:                   # @func0000000000000011
 	li	a0, 1
 	csrwi	vxrm, 2

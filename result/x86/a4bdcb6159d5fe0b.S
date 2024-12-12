@@ -4,8 +4,8 @@ func000000000000000c:                   # @func000000000000000c
 	orb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	btq	$32, %rdx
-	setae	%al
+	cmpl	$1073741823, %edx               # imm = 0x3FFFFFFF
+	sete	%al
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq

@@ -1,6 +1,7 @@
 
-; 92 occurrences:
+; 96 occurrences:
 ; abc/optimized/abcCascade.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/block_structure.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
@@ -34,6 +35,10 @@
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_gridnav.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; minetest/optimized/client.cpp.ll
@@ -43,7 +48,6 @@
 ; minetest/optimized/serverenvironment.cpp.ll
 ; minetest/optimized/touchscreengui.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
 ; opencv/optimized/approx.cpp.ll
@@ -96,14 +100,13 @@
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; gromacs/optimized/dgesdd.cpp.ll
 ; gromacs/optimized/sgesdd.cpp.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/norm.cpp.ll
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
@@ -118,10 +121,9 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_lut3d.c.ll
 ; openblas/optimized/dlasda.c.ll
-; openblas/optimized/dstevd.c.ll
 ; opencv/optimized/matrix_operations.cpp.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
 ; opencv/optimized/norm.cpp.ll
@@ -135,28 +137,21 @@ entry:
   ret i32 %3
 }
 
-; 32 occurrences:
+; 25 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/fxuCreate.c.ll
 ; bullet3/optimized/btMultiBodyDynamicsWorld.ll
-; gromacs/optimized/dlasd1.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; libwebp/optimized/enc.c.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlaed7.c.ll
-; openblas/optimized/dsbevd.c.ll
-; openblas/optimized/dsbgvd.c.ll
 ; openblas/optimized/dstedc.c.ll
-; openblas/optimized/dsyevd.c.ll
 ; opencv/optimized/denoising.cpp.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
 ; opencv/optimized/msd.cpp.ll
@@ -176,13 +171,11 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; libwebp/optimized/ssim.c.ll
 ; libwebp/optimized/ssim_sse2.c.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgesdd.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; opencv/optimized/denoising.cpp.ll
 ; openspiel/optimized/colored_trails.cc.ll
@@ -193,15 +186,14 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; libwebp/optimized/analysis_enc.c.ll
 ; linux/optimized/alps.ll
-; linux/optimized/input-mt.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; opencv/optimized/basicretinafilter.cpp.ll
@@ -213,7 +205,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, %1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -224,7 +216,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   ret i32 %3
 }
 
@@ -235,7 +227,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, %1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -245,7 +237,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, %1
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 

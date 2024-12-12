@@ -19,3 +19,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpcmpnleub	%xmm1, %xmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltub	%xmm1, %xmm0, %k0
+	vpmovm2b	%k0, %xmm0
+	retq

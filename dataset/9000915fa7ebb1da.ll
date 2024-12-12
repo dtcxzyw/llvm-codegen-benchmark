@@ -69,12 +69,14 @@ entry:
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp ogt double %4, 0.000000e+00
   ret i1 %5
 }
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; g2o/optimized/vertex_odom_differential_params.cpp.ll
 ; g2o/optimized/vertex_plane.cpp.ll
 ; g2o/optimized/vertex_pointxyz.cpp.ll
@@ -107,7 +109,7 @@ entry:
 define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp oeq double %4, 0.000000e+00
   ret i1 %5
 }
@@ -141,7 +143,7 @@ entry:
 define i1 @func0000000000000001(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp uno double %4, 0.000000e+00
   ret i1 %5
 }
@@ -163,7 +165,7 @@ entry:
 define i1 @func0000000000000007(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp une double %4, 0.000000e+00
   ret i1 %5
 }
@@ -176,7 +178,7 @@ entry:
 define i1 @func000000000000000e(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp ord double %4, 0.000000e+00
   ret i1 %5
 }

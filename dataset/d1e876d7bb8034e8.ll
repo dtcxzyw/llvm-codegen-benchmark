@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/approximately_equals.ll
 ; linux/optimized/uhci-hcd.ll
 ; openjdk/optimized/xHeuristics.ll
 ; openjdk/optimized/zHeuristics.ll

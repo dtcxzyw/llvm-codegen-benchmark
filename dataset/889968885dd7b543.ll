@@ -1,7 +1,6 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; git/optimized/merge-ort.ll
-; libevent/optimized/event.c.ll
 ; linux/optimized/regset.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; openjdk/optimized/c1_GraphBuilder.ll

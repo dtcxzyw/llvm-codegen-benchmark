@@ -3,7 +3,7 @@ func0000000000000006:                   # @func0000000000000006
 	zext.w	a2, a2
 	sub	a0, a0, a2
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	subw	a2, a2, a1
 	andi	a2, a2, 1
 	sub	a0, a0, a2

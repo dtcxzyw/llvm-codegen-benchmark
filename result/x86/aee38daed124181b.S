@@ -20,6 +20,13 @@ func0000000000000023:                   # @func0000000000000023
 	vucomiss	%xmm2, %xmm0
 	setb	%al
 	retq
+func000000000000002a:                   # @func000000000000002a
+	vxorps	%xmm3, %xmm3, %xmm3
+	vcmpltss	%xmm3, %xmm2, %k1
+	vmovss	%xmm1, %xmm2, %xmm2 {%k1}
+	vucomiss	%xmm0, %xmm2
+	setae	%al
+	retq
 func0000000000000032:                   # @func0000000000000032
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpnless	%xmm2, %xmm3, %k1
@@ -31,7 +38,7 @@ func0000000000000027:                   # @func0000000000000027
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm2, %k1
 	vmovss	%xmm1, %xmm2, %xmm2 {%k1}
-	vcmpneqss	%xmm0, %xmm2, %k0
+	vcmpneqss	%xmm2, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000025:                   # @func0000000000000025
@@ -52,21 +59,21 @@ func0000000000000028:                   # @func0000000000000028
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm2, %k1
 	vmovss	%xmm1, %xmm2, %xmm2 {%k1}
-	vcmpeqss	%xmm0, %xmm2, %k0
+	vcmpeqss	%xmm2, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
-.LCPI8_0:
+.LCPI9_0:
 	.long	0x40c90fdb                      # float 6.28318548
 func0000000000000042:                   # @func0000000000000042
-	vcmpgtss	.LCPI8_0(%rip), %xmm2, %k1
+	vcmpgtss	.LCPI9_0(%rip), %xmm2, %k1
 	vmovss	%xmm1, %xmm2, %xmm2 {%k1}
 	vucomiss	%xmm0, %xmm2
 	seta	%al
 	retq
-.LCPI9_0:
+.LCPI10_0:
 	.long	0x40490fdb                      # float 3.14159274
 func0000000000000044:                   # @func0000000000000044
-	vcmpgtss	.LCPI9_0(%rip), %xmm2, %k1
+	vcmpgtss	.LCPI10_0(%rip), %xmm2, %k1
 	vmovss	%xmm1, %xmm2, %xmm2 {%k1}
 	vucomiss	%xmm2, %xmm0
 	seta	%al

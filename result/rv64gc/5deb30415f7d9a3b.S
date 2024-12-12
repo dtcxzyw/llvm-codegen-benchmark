@@ -15,3 +15,12 @@ func00000000000000c5:                   # @func00000000000000c5
 	fle.d	a0, fa5, fa0
 	slli	a0, a0, 1
 	ret
+func0000000000000047:                   # @func0000000000000047
+	fmv.d.x	fa5, zero
+	li	a0, 2
+	flt.d	a1, fa5, fa0
+	sub	a0, a0, a1
+	feq.d	a1, fa0, fa5
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	ret

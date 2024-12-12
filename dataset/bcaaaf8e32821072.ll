@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 50 occurrences:
 ; cmake/optimized/cmCTestBZR.cxx.ll
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/psaux.c.ll
@@ -11,6 +11,7 @@
 ; linux/optimized/sd.ll
 ; linux/optimized/tdls.ll
 ; linux/optimized/xhci-ring.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/Constants.cpp.ll
 ; llvm/optimized/ControlHeightReduction.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
@@ -54,17 +55,19 @@ define i1 @func0000000000000004(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 4
   %4 = icmp eq i8 %3, 0
-  %5 = or i1 %4, %1
-  %6 = or i1 %5, %0
+  %5 = or i1 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; folly/optimized/Conv.cpp.ll
 ; git/optimized/pretty.ll
 ; linux/optimized/buffered_write.ll
+; linux/optimized/trace_probe.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LoopNestAnalysis.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SanitizerCoverage.cpp.ll
 ; llvm/optimized/SanitizerMetadata.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -80,8 +83,8 @@ define i1 @func0000000000000030(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -33
   %4 = icmp ne i8 %3, 70
-  %5 = or i1 %4, %1
-  %6 = or i1 %5, %0
+  %5 = or i1 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

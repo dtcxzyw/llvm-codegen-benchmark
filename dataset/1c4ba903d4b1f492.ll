@@ -5,7 +5,7 @@
 define i8 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 1
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -31,6 +31,21 @@ entry:
   ret i8 %4
 }
 
+; 5 occurrences:
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/within_pointlike_geometry.ll
+; cvc5/optimized/nl_model.cpp.ll
+; yosys/optimized/memlib.ll
+; z3/optimized/theory_arith.cpp.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000c(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp slt i32 %1, 1
+  %3 = xor i1 %2, %0
+  %4 = zext i1 %3 to i8
+  ret i8 %4
+}
+
 ; 12 occurrences:
 ; cvc5/optimized/sygus_invariance.cpp.ll
 ; entt/optimized/entity_copy.cpp.ll
@@ -48,19 +63,6 @@ entry:
 define i8 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
-  %3 = xor i1 %2, %0
-  %4 = zext i1 %3 to i8
-  ret i8 %4
-}
-
-; 3 occurrences:
-; cvc5/optimized/nl_model.cpp.ll
-; yosys/optimized/memlib.ll
-; z3/optimized/theory_arith.cpp.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000c(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 0
   %3 = xor i1 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4

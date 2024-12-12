@@ -32,7 +32,7 @@ entry:
   %2 = lshr i64 %1, 31
   %3 = xor i64 %2, %1
   %4 = trunc i64 %3 to i32
-  %5 = xor i32 %4, %0
+  %5 = xor i32 %0, %4
   ret i32 %5
 }
 

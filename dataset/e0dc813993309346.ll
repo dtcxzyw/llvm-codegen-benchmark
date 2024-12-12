@@ -8,7 +8,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = add nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = add nuw nsw i32 %2, 14
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %2, -48
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -44,7 +44,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nuw nsw i32 %2, 11
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -57,7 +57,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %2, -55
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -69,20 +69,19 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %2, -48
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; cmake/optimized/json_reader.cpp.ll
-; cpython/optimized/_struct.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002c(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nsw i32 %2, -48
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -94,7 +93,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nsw i32 %2, -48
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

@@ -13,3 +13,18 @@ func0000000000000006:                   # @func0000000000000006
 	sete	%al
 	andb	%dil, %al
 	retq
+func0000000000000026:                   # @func0000000000000026
+	cmpl	%edx, %esi
+	setae	%al
+	andb	%dil, %al
+	retq
+func0000000000000022:                   # @func0000000000000022
+	cmpl	%edx, %esi
+	seta	%al
+	andb	%dil, %al
+	retq
+func000000000000001a:                   # @func000000000000001a
+	cmpl	%edx, %esi
+	setl	%al
+	andb	%dil, %al
+	retq

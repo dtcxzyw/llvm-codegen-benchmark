@@ -89,7 +89,7 @@ entry:
   ret i32 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; assimp/optimized/zip.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5Oalloc.c.ll
@@ -102,6 +102,7 @@ entry:
 ; wireshark/optimized/packet-rmt-lct.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -218,6 +219,17 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = add nsw i32 %0, -56613888
+  %5 = add nuw nsw i32 %4, %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000013(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = add i32 %0, 1
   %5 = add nuw nsw i32 %4, %3
   ret i32 %5
 }

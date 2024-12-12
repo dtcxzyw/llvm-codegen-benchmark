@@ -1,13 +1,27 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; crow/optimized/example.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 6
+  %5 = trunc i32 %4 to i8
+  %6 = and i8 %5, 63
+  ret i8 %6
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 10
+  %3 = add i32 %0, %2
+  %4 = lshr i32 %3, 12
   %5 = trunc i32 %4 to i8
   %6 = and i8 %5, 63
   ret i8 %6
@@ -37,7 +51,7 @@ entry:
 define i8 @func0000000000000062(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 24
   %5 = trunc nuw i32 %4 to i8
   %6 = and i8 %5, 3
@@ -64,7 +78,7 @@ entry:
 define i8 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 6
   %5 = trunc i32 %4 to i8
   %6 = and i8 %5, 63

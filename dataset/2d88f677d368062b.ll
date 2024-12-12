@@ -203,7 +203,8 @@ entry:
   ret i64 %4
 }
 
-; 50 occurrences:
+; 54 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; crow/optimized/example.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -251,6 +252,9 @@ entry:
 ; verilator/optimized/V3Number.cpp.ll
 ; yosys/optimized/rename.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
@@ -263,7 +267,7 @@ entry:
   ret i64 %4
 }
 
-; 71 occurrences:
+; 70 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -318,7 +322,6 @@ entry:
 ; postgres/optimized/dsa.ll
 ; postgres/optimized/hashutil.ll
 ; raylib/optimized/rcore.c.ll
-; soc-simulator/optimized/verilated.ll
 ; stb/optimized/stb_dxt.c.ll
 ; velox/optimized/SparseHll.cpp.ll
 ; velox/optimized/WidthBucketArray.cpp.ll

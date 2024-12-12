@@ -41,7 +41,7 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, 576
 	vnmsac.vx	v8, a0, v10
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, -5
 	lui	a0, 149797

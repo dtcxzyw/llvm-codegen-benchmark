@@ -12,3 +12,17 @@ func0000000000000005:                   # @func0000000000000005
 	movzbl	%al, %eax
 	negq	%rax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	cmpq	%rdx, %rsi
+	seta	%al
+	andb	%dil, %al
+	movzbl	%al, %eax
+	negq	%rax
+	retq
+func000000000000000c:                   # @func000000000000000c
+	cmpq	%rdx, %rsi
+	setne	%al
+	andb	%dil, %al
+	movzbl	%al, %eax
+	negq	%rax
+	retq

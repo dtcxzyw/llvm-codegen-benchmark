@@ -35,6 +35,17 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001e(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %0, %1
+  %3 = mul nuw nsw i64 %2, 720575941
+  %4 = lshr i64 %3, 24
+  ret i64 %4
+}
+
+; 1 occurrences:
 ; openusd/optimized/pathNode.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
@@ -54,6 +65,17 @@ entry:
   %2 = add nsw i64 %0, %1
   %3 = mul i64 %2, 103
   %4 = lshr i64 %3, 10
+  ret i64 %4
+}
+
+; 1 occurrences:
+; eastl/optimized/EADateTime.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %0, %1
+  %3 = mul nsw i64 %2, 10000
+  %4 = lshr i64 %3, 32
   ret i64 %4
 }
 

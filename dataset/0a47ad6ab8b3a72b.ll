@@ -7,8 +7,8 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr i32, ptr %0, i64 %4
-  %6 = getelementptr i32, ptr %5, i64 %1
+  %5 = getelementptr i32, ptr %0, i64 %1
+  %6 = getelementptr i32, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -39,23 +39,21 @@ define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 4
   %4 = sext i32 %3 to i64
-  %5 = getelementptr float, ptr %0, i64 %4
-  %6 = getelementptr float, ptr %5, i64 %1
+  %5 = getelementptr float, ptr %0, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 4 occurrences:
-; gromacs/optimized/kernel_gpu_ref.cpp.ll
-; gromacs/optimized/kernel_ref.cpp.ll
+; 2 occurrences:
 ; ncnn/optimized/lstm_x86_avx2.cpp.ll
 ; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr float, ptr %0, i64 %4
-  %6 = getelementptr float, ptr %5, i64 %1
+  %5 = getelementptr float, ptr %0, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -68,8 +66,8 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 7
   %4 = sext i32 %3 to i64
-  %5 = getelementptr float, ptr %0, i64 %4
-  %6 = getelementptr float, ptr %5, i64 %1
+  %5 = getelementptr float, ptr %0, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -80,8 +78,8 @@ define ptr @func0000000000000014(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 7
   %4 = sext i32 %3 to i64
-  %5 = getelementptr float, ptr %0, i64 %4
-  %6 = getelementptr float, ptr %5, i64 %1
+  %5 = getelementptr float, ptr %0, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -92,8 +90,8 @@ define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
   %4 = sext i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -109,8 +107,21 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr float, ptr %0, i64 %4
-  %6 = getelementptr float, ptr %5, i64 %1
+  %5 = getelementptr float, ptr %0, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 2 occurrences:
+; gromacs/optimized/kernel_gpu_ref.cpp.ll
+; gromacs/optimized/kernel_ref.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 %2, 2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr float, ptr %0, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -121,8 +132,8 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr float, ptr %0, i64 %4
-  %6 = getelementptr float, ptr %5, i64 %1
+  %5 = getelementptr float, ptr %0, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -133,8 +144,8 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 

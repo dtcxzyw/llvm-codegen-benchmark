@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; abc/optimized/ioWriteBook.c.ll
 ; darktable/optimized/introspection_equalizer.c.ll
@@ -12,6 +12,7 @@
 ; graphviz/optimized/make_map.c.ll
 ; graphviz/optimized/position.c.ll
 ; hermes/optimized/DateUtil.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/imageio.cpp.ll
 ; openblas/optimized/dspgvd.c.ll

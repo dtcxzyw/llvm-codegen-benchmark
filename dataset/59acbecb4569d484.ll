@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; git/optimized/wildmatch.ll
 ; linux/optimized/drm_color_mgmt.ll
 ; nanobind/optimized/nb_func.cpp.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; rust-analyzer-rs/optimized/54fx8hdjlkc0fd42.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:

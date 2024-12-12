@@ -20,7 +20,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 100
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 

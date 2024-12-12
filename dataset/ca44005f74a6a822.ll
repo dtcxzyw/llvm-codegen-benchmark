@@ -29,34 +29,15 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; openspiel/optimized/tiny_bridge.cc.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; spike/optimized/s_approxRecip32_1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %0, %1
   %3 = lshr i64 %2, 26
   %4 = and i64 %3, 4294967232
-  ret i64 %4
-}
-
-; 7 occurrences:
-; linux/optimized/nf_conntrack_core.ll
-; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/f64_div.ll
-; spike/optimized/f64_sqrt.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw i64 %0, %1
-  %3 = lshr i64 %2, 23
-  %4 = and i64 %3, 4294967295
   ret i64 %4
 }
 
@@ -68,6 +49,21 @@ entry:
   %2 = mul nsw i64 %0, %1
   %3 = lshr i64 %2, 30
   %4 = and i64 %3, 1
+  ret i64 %4
+}
+
+; 5 occurrences:
+; linux/optimized/nf_conntrack_core.ll
+; opencv/optimized/softfloat.cpp.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; spike/optimized/f64_div.ll
+; spike/optimized/f64_sqrt.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw i64 %0, %1
+  %3 = lshr i64 %2, 31
+  %4 = and i64 %3, 4294967295
   ret i64 %4
 }
 

@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/cmDependsC.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
@@ -17,7 +18,7 @@ entry:
   %2 = icmp ne ptr %1, null
   %3 = sext i1 %2 to i64
   %4 = shl nsw i64 %3, 3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

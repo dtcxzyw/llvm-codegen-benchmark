@@ -1,5 +1,8 @@
 
-; 17 occurrences:
+; 20 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; gromacs/optimized/colvarcomp_distances.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
@@ -22,7 +25,7 @@ define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
   %3 = fneg double %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

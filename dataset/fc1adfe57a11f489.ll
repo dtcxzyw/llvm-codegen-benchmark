@@ -21,7 +21,7 @@ entry:
 ; llvm/optimized/DwarfCFIException.cpp.ll
 ; llvm/optimized/WinException.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000058(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000098(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i32 %0, 255
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000042(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000082(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i32 %0, 73

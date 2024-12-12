@@ -35,7 +35,7 @@ entry:
 ; openusd/optimized/rotation.cpp.ll
 ; php/optimized/ir_check.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -48,7 +48,7 @@ entry:
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -61,7 +61,7 @@ entry:
 ; lightgbm/optimized/dataset.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -104,7 +104,7 @@ entry:
 ; icu/optimized/ubidiln.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
   %4 = add i32 %0, %1
@@ -116,7 +116,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000ac(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %.neg = zext i1 %2 to i32
   %3 = add nsw i32 %0, %1
@@ -127,7 +127,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000001a6(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
   %4 = add nuw nsw i32 %0, %1
@@ -137,21 +137,9 @@ entry:
 }
 
 ; 1 occurrences:
-; openusd/optimized/rotation.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %0, %1
-  %5 = add nsw i32 %4, %3
-  %6 = icmp ult i32 %5, 3
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000010a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
   %4 = add nuw i32 %0, %1
@@ -160,12 +148,11 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/fse_compress.c.ll
-; icu/optimized/ubidiln.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -175,9 +162,21 @@ entry:
 }
 
 ; 1 occurrences:
+; icu/optimized/ubidiln.ll
+; Function Attrs: nounwind
+define i1 @func000000000000018a(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = sext i1 %2 to i32
+  %4 = add nuw nsw i32 %0, %1
+  %5 = add i32 %4, %3
+  %6 = icmp sgt i32 %5, 0
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; opencv/optimized/persistence_xml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
   %4 = add nsw i32 %0, %1

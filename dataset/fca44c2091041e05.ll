@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 25 occurrences:
 ; arrow/optimized/counting_semaphore.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -19,6 +19,8 @@
 ; rocksdb/optimized/transaction_db_mutex_impl.cc.ll
 ; tev/optimized/ThreadPool.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
+; verilator/optimized/V3EmitCImp.cpp.ll
+; verilator/optimized/V3ThreadPool.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; xgboost/optimized/coll_c_api.cc.ll
 ; yalantinglibs/optimized/conformance_test_runner.cc.ll

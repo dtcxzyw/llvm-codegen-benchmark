@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ce:                   # @func00000000000000ce
 	slliw	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 192

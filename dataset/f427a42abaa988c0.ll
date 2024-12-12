@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 43 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; clamav/optimized/hfsplus.c.ll
@@ -7,7 +7,6 @@
 ; diesel-rs/optimized/1dr0ikhoh8prk7sr.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; freetype/optimized/truetype.c.ll
-; git/optimized/merge-ort.ll
 ; influxdb-rs/optimized/2i5qqg1f0a0eo8eq.ll
 ; influxdb-rs/optimized/2rfehyqstyicagph.ll
 ; linux/optimized/e100.ll
@@ -16,6 +15,7 @@
 ; linux/optimized/vmcore.ll
 ; linux/optimized/xfrm_output.ll
 ; llvm/optimized/TypeStreamMerger.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
@@ -25,7 +25,6 @@
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/mg_schematic.cpp.ll
 ; minetest/optimized/server.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; oiio/optimized/iffinput.cpp.ll
 ; openjdk/optimized/chaitin.ll
@@ -33,6 +32,9 @@
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/spgvacuum.ll
 ; raylib/optimized/raudio.c.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; turborepo-rs/optimized/cxpken39mq0tm7ezio1uwpc6m.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; wireshark/optimized/packet-infiniband.c.ll
 ; wireshark/optimized/packet-ipv6.c.ll

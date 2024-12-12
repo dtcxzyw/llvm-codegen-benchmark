@@ -9,7 +9,7 @@
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; rocksdb/optimized/db_impl_files.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000288(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
   %4 = add nsw i64 %0, %1
@@ -26,7 +26,7 @@ entry:
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000028a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
   %4 = add nsw i64 %0, %1
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/block_bochs.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000186(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl nuw nsw i64 %0, 9
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/archiveHeapWriter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add i64 %0, %1
@@ -84,7 +84,7 @@ entry:
 ; openusd/optimized/instanceAdapter.cpp.ll
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
   %4 = add nsw i64 %0, %1
@@ -96,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/f128_sqrt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = mul i64 %2, -9007199254740992
   %3 = add nuw nsw i64 %0, %1
@@ -113,7 +113,7 @@ entry:
 ; llvm/optimized/DFAEmitter.cpp.ll
 ; llvm/optimized/SampleProfileInference.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
   %4 = add nsw i64 %0, %1
@@ -125,7 +125,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 4
   %4 = add i64 %0, %1
@@ -138,7 +138,7 @@ entry:
 ; casadi/optimized/bspline.cpp.ll
 ; gromacs/optimized/basicoptions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add i64 %0, %1
@@ -150,7 +150,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/timing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000404(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = add i64 %0, %1
@@ -163,7 +163,7 @@ entry:
 ; casadi/optimized/bspline.cpp.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 9
   %4 = add i64 %0, %1
@@ -175,7 +175,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/compound_dictionary.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000038c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000070c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = mul i64 %2, -4
   %3 = add nuw i64 %0, %1
@@ -194,7 +194,7 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
   %4 = add nsw i64 %0, %1
@@ -206,7 +206,7 @@ entry:
 ; 1 occurrences:
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000286(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %0, %1

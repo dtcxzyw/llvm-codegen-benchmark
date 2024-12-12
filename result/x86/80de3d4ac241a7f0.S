@@ -8,10 +8,3 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$1, %eax
 	cmovel	%ecx, %eax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	cmovsl	%eax, %esi
-	testb	$1, %dil
-	cmovel	%esi, %eax
-	retq

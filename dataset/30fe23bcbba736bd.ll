@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 39 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; curl/optimized/libcurl_la-tftp.ll
 ; folly/optimized/AsyncSocket.cpp.ll
@@ -12,6 +12,7 @@
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/tdls.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/hb-common.ll
@@ -32,23 +33,28 @@
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-tibia.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = icmp eq i16 %3, %0
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/xt_TCPMSS.ll
 ; openssl/optimized/libssl-lib-statem_dtls.ll
 ; openssl/optimized/libssl-shlib-statem_dtls.ll
 ; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/csids.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000028(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = icmp ugt i16 %3, %0
@@ -69,7 +75,7 @@ entry:
 ; 1 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000025(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = icmp ule i16 %3, %0
@@ -103,7 +109,7 @@ entry:
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = icmp sgt i16 %3, %0
@@ -118,7 +124,7 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000026(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = icmp slt i16 %3, %0
@@ -136,7 +142,7 @@ entry:
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000024(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = icmp ult i16 %3, %0
@@ -146,7 +152,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/mp2t.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000002c(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = icmp ne i16 %3, %0

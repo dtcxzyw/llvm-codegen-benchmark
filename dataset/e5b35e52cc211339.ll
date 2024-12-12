@@ -1,7 +1,11 @@
 
-; 99 occurrences:
+; 104 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; brotli/optimized/block_splitter.c.ll
 ; coreutils-rs/optimized/p2ic31m8j7cwnae.ll
 ; cpython/optimized/mathmodule.ll
@@ -37,8 +41,6 @@
 ; linux/optimized/compaction.ll
 ; linux/optimized/cppc_acpi.ll
 ; linux/optimized/fair.ll
-; linux/optimized/fs-writeback.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/page_alloc.ll
@@ -98,6 +100,9 @@
 ; tev/optimized/Ipc.cpp.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; tev/optimized/StbiImageLoader.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {

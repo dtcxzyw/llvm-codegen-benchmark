@@ -1,8 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
-	movzbl	%sil, %eax
-	shll	$16, %eax
-	shll	$24, %edi
-	orl	%edi, %eax
+	shll	$16, %esi
+	shll	$8, %edi
+	movzwl	%di, %eax
+	orl	%esi, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	(%rsi,%rsi), %eax

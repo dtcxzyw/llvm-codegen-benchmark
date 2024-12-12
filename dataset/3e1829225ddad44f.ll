@@ -1,5 +1,5 @@
 
-; 299 occurrences:
+; 297 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; brotli/optimized/huffman.c.ll
 ; hwloc/optimized/topology-x86.ll
@@ -290,8 +290,6 @@
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/ginfast.ll
-; postgres/optimized/hashpage.ll
-; postgres/optimized/hashsort.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/list.ll
 ; postgres/optimized/lwlock.ll
@@ -307,16 +305,14 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; hwloc/optimized/topology-x86.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/ohci-hcd.ll
-; llvm/optimized/RISCVTargetParser.cpp.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/shenandoahEvacOOMHandler.ll
 ; openjdk/optimized/vectset.ll
 ; postgres/optimized/ginfast.ll
-; postgres/optimized/heapam.ll
 ; postgres/optimized/nodeHash.ll
 ; postgres/optimized/tableam.ll
 ; Function Attrs: nounwind

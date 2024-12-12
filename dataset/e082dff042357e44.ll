@@ -12,7 +12,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = and i32 %1, 15
   %5 = add nuw nsw i32 %4, %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = trunc nsw i32 %6 to i16
   ret i16 %7
 }

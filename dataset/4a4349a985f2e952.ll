@@ -1,12 +1,11 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; minetest/optimized/imagefilters.cpp.ll
-; redis/optimized/quicklist.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000012(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -23,14 +22,15 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; cvc5/optimized/Solver.cc.ll
 ; gromacs/optimized/dlist.cpp.ll
+; linux/optimized/intel_dpll.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -64,7 +64,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = freeze i1 %4
   ret i1 %5
 }

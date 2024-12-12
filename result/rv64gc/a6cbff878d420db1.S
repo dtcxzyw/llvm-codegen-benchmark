@@ -3,6 +3,11 @@ func0000000000000052:                   # @func0000000000000052
 	srliw	a1, a1, 31
 	addw	a0, a0, a1
 	ret
+func00000000000000a3:                   # @func00000000000000a3
+	sext.w	a1, a0
+	sltiu	a1, a1, 11
+	addw	a0, a0, a1
+	ret
 func0000000000000023:                   # @func0000000000000023
 	sext.w	a1, a0
 	sltiu	a1, a1, 11
@@ -49,7 +54,7 @@ func0000000000000020:                   # @func0000000000000020
 	sltiu	a1, a1, 16
 	addw	a0, a0, a1
 	ret
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	srliw	a1, a0, 16
 	snez	a1, a1
 	addw	a0, a0, a1

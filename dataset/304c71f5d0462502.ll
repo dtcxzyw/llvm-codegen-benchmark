@@ -12,7 +12,7 @@ entry:
   ret i32 %7
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; arrow/optimized/float16.cc.ll
@@ -23,7 +23,6 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openjdk/optimized/constMethod.ll
-; postgres/optimized/trigger.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; sentencepiece/optimized/sentencepiece_model.pb.cc.ll
 ; slurm/optimized/reservation.ll

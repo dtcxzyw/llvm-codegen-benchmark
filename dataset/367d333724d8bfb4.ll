@@ -10,7 +10,7 @@
 define i1 @func0000000000000001(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %.neg = sext i1 %2 to i64
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
@@ -27,7 +27,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %.neg = sext i1 %2 to i64
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }

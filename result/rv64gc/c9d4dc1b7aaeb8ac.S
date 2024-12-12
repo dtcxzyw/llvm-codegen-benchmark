@@ -1,18 +1,18 @@
-func0000000000000048:                   # @func0000000000000048
+func000000000000004c:                   # @func000000000000004c
 	add	a1, a1, a2
 	addiw	a1, a1, -13
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	addi	a0, a0, 820
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000000e:                   # @func000000000000000e
 	add	a1, a1, a2
 	addiw	a1, a1, -1
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 32
 	ret
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000000ee:                   # @func00000000000000ee
 	add	a1, a1, a2
 	addiw	a1, a1, 1
 	slli	a1, a1, 2
@@ -29,49 +29,35 @@ func000000000000005e:                   # @func000000000000005e
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func0000000000000088:                   # @func0000000000000088
+func000000000000008c:                   # @func000000000000008c
 	add	a1, a1, a2
 	addiw	a1, a1, 1
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
-func000000000000000e:                   # @func000000000000000e
-	add	a1, a1, a2
-	addiw	a1, a1, -5
-	slli	a1, a1, 2
-	add	a0, a0, a1
-	addi	a0, a0, 4
-	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	add	a1, a1, a2
 	addiw	a1, a1, 1
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
-func000000000000009a:                   # @func000000000000009a
+func000000000000009e:                   # @func000000000000009e
 	add	a1, a1, a2
 	addiw	a1, a1, 1
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000003e:                   # @func000000000000003e
 	add	a1, a1, a2
 	addiw	a1, a1, -1
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
-func000000000000005a:                   # @func000000000000005a
-	add	a1, a1, a2
-	addiw	a1, a1, -1
-	slli	a1, a1, 3
-	add	a0, a0, a1
-	addi	a0, a0, 16
-	ret
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	add	a1, a1, a2
 	addiw	a1, a1, -1
 	slli	a1, a1, 3

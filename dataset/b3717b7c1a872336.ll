@@ -1,7 +1,10 @@
 
-; 105 occurrences:
+; 108 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -109,7 +112,7 @@
 define i64 @func0000000000000012(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul nuw i128 %2, %0
+  %3 = mul nuw i128 %0, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
   %6 = and i64 %5, 274877906943
@@ -122,7 +125,7 @@ entry:
 define i64 @func0000000000000010(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul nuw i128 %2, %0
+  %3 = mul nuw i128 %0, %2
   %4 = lshr i128 %3, 63
   %5 = trunc i128 %4 to i64
   %6 = and i64 %5, -2

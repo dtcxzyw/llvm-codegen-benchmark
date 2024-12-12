@@ -1,9 +1,7 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/memtype.ll
-; qemu/optimized/linux-user_syscall.c.ll
 ; velox/optimized/Allocation.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
@@ -42,7 +40,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4095
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = icmp ult i64 %3, 4096
   ret i1 %4
 }
@@ -53,7 +51,7 @@ entry:
 ; linux/optimized/printk_ringbuffer.ll
 ; llvm/optimized/FunctionComparator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 15
   %3 = and i64 %2, 11
@@ -65,10 +63,10 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 32
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = icmp ult i64 %3, 64
   ret i1 %4
 }

@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; darktable/optimized/introspection_atrous.c.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/decorate_raster_proj.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -14,7 +15,7 @@ define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 4.000000e+00
   %4 = select i1 %1, float 0.000000e+00, float %3
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

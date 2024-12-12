@@ -15,6 +15,12 @@ func000000000000000e:                   # @func000000000000000e
 	sh1add	a0, a0, a1
 	srli	a0, a0, 32
 	ret
+func000000000000003a:                   # @func000000000000003a
+	slli	a1, a1, 8
+	slli	a0, a0, 40
+	or	a0, a0, a1
+	srli	a0, a0, 32
+	ret
 func0000000000000020:                   # @func0000000000000020
 	slli	a1, a1, 7
 	slli	a0, a0, 32

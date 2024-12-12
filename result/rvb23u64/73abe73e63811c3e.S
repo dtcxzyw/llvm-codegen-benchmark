@@ -1,11 +1,3 @@
-func0000000000000007:                   # @func0000000000000007
-	slli	a1, a1, 16
-	andi	a0, a0, 255
-	or	a0, a0, a1
-	lui	a1, 90112
-	addi	a1, a1, 256
-	addw	a0, a0, a1
-	ret
 func000000000000001d:                   # @func000000000000001d
 	lui	a2, 448
 	slli	a0, a0, 12

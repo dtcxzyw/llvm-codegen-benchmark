@@ -1,17 +1,4 @@
 
-; 2 occurrences:
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000041(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, 2
-  %3 = add i64 %2, %0
-  %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %4, -1
-  ret i32 %5
-}
-
 ; 47 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; icu/optimized/pkg_gencmn.ll

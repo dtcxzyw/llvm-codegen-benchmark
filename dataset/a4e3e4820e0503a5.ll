@@ -60,12 +60,12 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/qrdecomposition.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, %0
   %4 = getelementptr nusw nuw double, ptr %1, i64 %3
   %5 = getelementptr nusw nuw double, ptr %4, i64 %0
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -126,24 +126,24 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/distances_simd.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, %0
   %4 = getelementptr float, ptr %1, i64 %3
   %5 = getelementptr nusw float, ptr %4, i64 %0
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000002b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, %0
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 %0
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -164,12 +164,12 @@ entry:
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000006b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %0, %2
   %4 = getelementptr nusw double, ptr %1, i64 %3
   %5 = getelementptr nusw double, ptr %4, i64 %0
-  %6 = getelementptr nusw i8, ptr %5, i64 16
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 16
   ret ptr %6
 }
 

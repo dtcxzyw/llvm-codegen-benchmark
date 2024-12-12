@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 82 occurrences:
 ; box2d/optimized/b2_rope.cpp.ll
 ; bullet3/optimized/btCompoundShape.ll
 ; bullet3/optimized/btConvexTriangleMeshShape.ll
@@ -13,6 +13,7 @@
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
+; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
@@ -37,6 +38,11 @@
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; mitsuba3/optimized/sphere.cpp.ll
+; ncnn/optimized/yolov3detectionoutput.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
+; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; nori/optimized/imageview.cpp.ll
 ; nori/optimized/warptest.cpp.ll
 ; oiio/optimized/hdrinput.cpp.ll

@@ -1,4 +1,4 @@
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	leal	-1(%rdi), %ecx
 	movl	%ecx, %eax
 	shrl	$7, %eax
@@ -6,7 +6,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	cmpl	$257, %edi                      # imm = 0x101
 	cmovbl	%ecx, %eax
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001b4:                   # @func00000000000001b4
 	leal	-1(%rdi), %ecx
 	movl	%ecx, %eax
 	shrl	$7, %eax

@@ -10,12 +10,12 @@ func000000000000000a:                   # @func000000000000000a
 	vzeroupper
 	retq
 .LCPI1_0:
-	.long	0xc8976760                      # float -310075
-func0000000000000004:                   # @func0000000000000004
+	.long	0x48976760                      # float 310075
+func0000000000000008:                   # @func0000000000000008
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
-	vcmpltps	.LCPI1_0(%rip){1to16}, %zmm0, %k1
+	vcmpgtps	.LCPI1_0(%rip){1to16}, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

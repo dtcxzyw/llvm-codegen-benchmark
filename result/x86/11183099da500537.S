@@ -1,10 +1,10 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	andl	%edx, %edi
 	testl	%esi, %esi
 	sete	%al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	testb	$8, %dl
 	sete	%cl
 	andb	%dil, %cl
@@ -12,7 +12,7 @@ func000000000000001c:                   # @func000000000000001c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testb	$1, %dl
 	sete	%cl
 	andb	%dil, %cl
@@ -20,7 +20,7 @@ func0000000000000011:                   # @func0000000000000011
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	testl	$1023, %edx                     # imm = 0x3FF
 	sete	%cl
 	andb	%dil, %cl

@@ -8,7 +8,7 @@ func0000000000000020:                   # @func0000000000000020
 	leaq	(%rsi,%rax,4), %rax
 	leaq	(%rax,%rdi,4), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000002f:                   # @func000000000000002f
 	leaq	(%rdx,%rdx,8), %rax
 	leaq	(%rsi,%rax,8), %rax
 	leaq	(%rdi,%rdi,2), %rcx
@@ -19,17 +19,38 @@ func0000000000000010:                   # @func0000000000000010
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func0000000000000030:                   # @func0000000000000030
+func000000000000003f:                   # @func000000000000003f
 	leaq	(%rdx,%rdx,4), %rax
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func0000000000000030:                   # @func0000000000000030
+	imulq	$7360, %rdx, %rax               # imm = 0x1CC0
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
+func0000000000000033:                   # @func0000000000000033
+	leaq	(%rdx,%rdx,8), %rax
+	shlq	$4, %rax
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
+func000000000000000a:                   # @func000000000000000a
 	leaq	(%rdx,%rdx,2), %rax
-	leaq	(%rsi,%rax,2), %rax
+	leaq	(%rsi,%rax,8), %rax
 	addq	%rdi, %rax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	leaq	(%rdx,%rdx,2), %rax
+	addq	%rsi, %rax
+	leaq	(%rax,%rdi,4), %rax
+	retq
 func000000000000001a:                   # @func000000000000001a
+	leaq	(%rdx,%rdx,2), %rax
+	subq	%rax, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq
+func000000000000003a:                   # @func000000000000003a
 	leaq	(%rdx,%rdx,2), %rax
 	subq	%rax, %rsi
 	leaq	(%rsi,%rdi), %rax
@@ -38,6 +59,11 @@ func000000000000002a:                   # @func000000000000002a
 	leaq	(%rdx,%rdx,2), %rax
 	addq	%rdi, %rax
 	addq	%rsi, %rax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	shlq	$3, %rdx
+	subq	%rdx, %rsi
+	leaq	(%rsi,%rdi,8), %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	leaq	(%rdx,%rdx,2), %rax
@@ -49,12 +75,22 @@ func0000000000000032:                   # @func0000000000000032
 	addq	%rsi, %rax
 	leaq	(%rax,%rdi,4), %rax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func000000000000003c:                   # @func000000000000003c
 	imulq	$544, %rdx, %rax                # imm = 0x220
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func000000000000003e:                   # @func000000000000003e
+	imulq	$544, %rdx, %rax                # imm = 0x220
+	addq	%rsi, %rax
+	leaq	(%rax,%rdi,4), %rax
+	retq
+func000000000000002e:                   # @func000000000000002e
+	leaq	(%rdx,%rdx,2), %rax
+	leaq	(%rsi,%rax,4), %rax
+	leaq	(%rax,%rdi,2), %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
 	leaq	(%rdx,%rdx,2), %rax
 	leaq	(%rsi,%rax,4), %rax
 	leaq	(%rax,%rdi,4), %rax

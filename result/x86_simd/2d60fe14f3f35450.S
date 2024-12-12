@@ -34,7 +34,7 @@
 	.zero	1
 .LCPI0_2:
 	.long	23                              # 0x17
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	vpcmpnleub	.LCPI0_0(%rip), %xmm1, %k0
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %k1
 	korb	%k0, %k1, %k1

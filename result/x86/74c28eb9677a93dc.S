@@ -19,11 +19,6 @@ func0000000000000019:                   # @func0000000000000019
 	orl	%edi, %eax
 	addl	$-3072, %eax                    # imm = 0xF400
 	retq
-func0000000000000016:                   # @func0000000000000016
-	movzwl	%si, %eax
-	shll	$16, %edi
-	leal	1(%rdi,%rax), %eax
-	retq
 func000000000000003f:                   # @func000000000000003f
 	movzwl	%si, %eax
 	shll	$10, %edi
@@ -33,4 +28,9 @@ func0000000000000015:                   # @func0000000000000015
 	movzwl	%si, %eax
 	shll	$16, %edi
 	leal	-1(%rdi,%rax), %eax
+	retq
+func0000000000000016:                   # @func0000000000000016
+	movzwl	%si, %eax
+	shll	$16, %edi
+	leal	1(%rdi,%rax), %eax
 	retq

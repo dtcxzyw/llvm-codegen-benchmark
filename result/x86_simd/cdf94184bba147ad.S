@@ -19,11 +19,11 @@
 	.long	4                               # 0x4
 .LCPI0_2:
 	.long	12                              # 0xc
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vptestmb	.LCPI0_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2   # ymm2 = [4,4,4,4,4,4,4,4]
 	vpaddd	.LCPI0_2(%rip){1to8}, %ymm1, %ymm2 {%k1}
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.byte	64                              # 0x40

@@ -19,10 +19,10 @@
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000084(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq ptr %1, null
   %6 = or i1 %4, %5
   ret i1 %6
@@ -170,10 +170,10 @@ entry:
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; z3/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(ptr %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000082(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp eq ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6
@@ -183,7 +183,7 @@ entry:
 ; html5ever-rs/optimized/3iu2ouoac0bhrlsy.ll
 ; openusd/optimized/subset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000604(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 4
   %4 = or i1 %3, %0
@@ -196,10 +196,10 @@ entry:
 ; luau/optimized/isocline.c.ll
 ; osqp/optimized/amd_valid.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000304(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq ptr %1, null
   %6 = or i1 %4, %5
   ret i1 %6
@@ -209,7 +209,7 @@ entry:
 ; linux/optimized/addrconf.ll
 ; portaudio/optimized/pa_front.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000302(ptr %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000602(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 1
   %4 = or i1 %3, %1
@@ -221,10 +221,10 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/tiffdec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(ptr %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000202(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, -2147483647
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp eq ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6

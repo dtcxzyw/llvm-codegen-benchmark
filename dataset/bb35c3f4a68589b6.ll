@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/util_host-utils.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 64
   %3 = icmp eq i64 %0, 0
@@ -14,7 +14,7 @@ entry:
 ; proxygen/optimized/HTTPCodecPrinter.cpp.ll
 ; proxygen/optimized/PersistentQuicPskCache.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = icmp ugt i64 %0, 65535
@@ -56,7 +56,7 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; postgres/optimized/pg_shmem.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 262144
   %3 = icmp ult i64 %0, 2

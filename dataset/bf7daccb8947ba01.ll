@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -14,7 +14,6 @@
 ; openjdk/optimized/javaClasses.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/euc_jp_and_sjis.ll
-; slurm/optimized/ebpf.ll
 ; stockfish/optimized/search.ll
 ; wireshark/optimized/packet-c1222.c.ll
 ; yosys/optimized/mutate.ll

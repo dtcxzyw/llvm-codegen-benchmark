@@ -1,17 +1,8 @@
 
-; 23 occurrences:
+; 14 occurrences:
 ; brotli/optimized/utf8_util.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/idna.c.ll
-; hermes/optimized/AST2JS.cpp.ll
-; hermes/optimized/ConsecutiveStringStorage.cpp.ll
-; hermes/optimized/HBC.cpp.ll
-; hermes/optimized/JSLexer.cpp.ll
-; hermes/optimized/JSONEmitter.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
-; hermes/optimized/Runtime.cpp.ll
-; hermes/optimized/SourceErrorManager.cpp.ll
-; hermes/optimized/UTF8.cpp.ll
 ; libevent/optimized/epoll.c.ll
 ; libuv/optimized/idna.c.ll
 ; linux/optimized/idma32.ll

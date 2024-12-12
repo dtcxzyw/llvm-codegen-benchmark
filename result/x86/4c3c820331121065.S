@@ -1,4 +1,4 @@
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	movl	%edi, %eax
 	subl	%esi, %eax
 	subl	%edi, %esi
@@ -6,7 +6,7 @@ func0000000000000074:                   # @func0000000000000074
 	cmpl	$4, %esi
 	setb	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	movl	%edi, %eax
 	subl	%esi, %eax
 	subl	%edi, %esi
@@ -14,7 +14,7 @@ func0000000000000058:                   # @func0000000000000058
 	cmpl	$16, %esi
 	setae	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	movl	%edi, %eax
 	subl	%esi, %eax
 	subl	%edi, %esi
@@ -22,7 +22,7 @@ func0000000000000054:                   # @func0000000000000054
 	cmpl	$40, %esi
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	subl	%esi, %edi
 	movl	%edi, %eax
 	negl	%eax
@@ -30,7 +30,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmpl	$1051, %eax                     # imm = 0x41B
 	setae	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	subl	%esi, %edi
 	addl	$2, %edi
 	testl	$-5, %edi
@@ -68,7 +68,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	$2, %eax
 	setge	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subl	%esi, %edi
 	incl	%edi
 	testl	$-3, %edi

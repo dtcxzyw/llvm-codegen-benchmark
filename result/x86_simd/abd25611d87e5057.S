@@ -6,7 +6,7 @@
 	.long	1                               # 0x1
 .LCPI0_3:
 	.long	8                               # 0x8
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [9,9,9,9,9,9,9,9]
@@ -21,7 +21,7 @@ func000000000000006a:                   # @func000000000000006a
 	.long	4294967247                      # 0xffffffcf
 .LCPI1_1:
 	.long	4294967241                      # 0xffffffc9
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [4294967247,4294967247,4294967247,4294967247,4294967247,4294967247,4294967247,4294967247]
@@ -39,7 +39,7 @@ func0000000000000011:                   # @func0000000000000011
 	.long	4                               # 0x4
 .LCPI2_2:
 	.long	11                              # 0xb
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [12,12,12,12,12,12,12,12]
@@ -56,7 +56,7 @@ func0000000000000018:                   # @func0000000000000018
 	.long	13                              # 0xd
 .LCPI3_2:
 	.long	1                               # 0x1
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [11,11,11,11,11,11,11,11]
@@ -73,7 +73,7 @@ func0000000000000061:                   # @func0000000000000061
 	.long	1                               # 0x1
 .LCPI4_2:
 	.long	2                               # 0x2
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI4_0(%rip), %ymm1   # ymm1 = [3,3,3,3,3,3,3,3]

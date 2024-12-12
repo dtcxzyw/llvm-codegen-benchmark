@@ -7,22 +7,10 @@
 ; php/optimized/dow.ll
 ; postgres/optimized/walsender.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp eq i32 %1, 5
-  %5 = select i1 %3, i1 %4, i1 false
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/CompilerInvocation.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ne i64 %2, 0
-  %4 = icmp ugt i32 %1, 99
   %5 = select i1 %3, i1 %4, i1 false
   %6 = or i1 %5, %0
   ret i1 %6

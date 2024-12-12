@@ -1,12 +1,9 @@
 .LCPI0_0:
 	.long	0x80000000                      # float -0
-.LCPI0_1:
-	.long	0xc2b0c0a5                      # float -88.3762589
-.LCPI0_2:
-	.long	0x42b0c0a5                      # float 88.3762589
 func0000000000000002:                   # @func0000000000000002
-	vxorps	.LCPI0_0(%rip){1to16}, %zmm0, %zmm1
-	vcmpltps	.LCPI0_1(%rip){1to16}, %zmm0, %k1
-	vbroadcastss	.LCPI0_2(%rip), %zmm1 {%k1} # zmm1 {%k1} = [8.83762589E+1,8.83762589E+1,8.83762589E+1,8.83762589E+1,8.83762589E+1,8.83762589E+1,8.83762589E+1,8.83762589E+1,8.83762589E+1,8.83762589E+1,8.83762589E+1,8.83762589E+1,8.83762589E+1,8.83762589E+1,8.83762589E+1,8.83762589E+1]
+	vbroadcastss	.LCPI0_0(%rip), %zmm2   # zmm2 = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
+	vxorps	%zmm2, %zmm0, %zmm1
+	vcmpltps	%zmm1, %zmm0, %k1
+	vmovaps	%zmm2, %zmm1 {%k1}
 	vmovaps	%zmm1, %zmm0
 	retq

@@ -1,11 +1,3 @@
-func0000000000000005:                   # @func0000000000000005
-	movl	%edi, %eax
-	decl	%edx
-	xorl	%ecx, %ecx
-	testb	$1, %sil
-	cmovnel	%edx, %ecx
-	subl	%ecx, %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%edi, %eax
 	decl	%edx
@@ -43,4 +35,12 @@ func000000000000000d:                   # @func000000000000000d
 	testb	$1, %sil
 	cmovnel	%edx, %eax
 	addl	%edi, %eax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	movl	%edi, %eax
+	decl	%edx
+	xorl	%ecx, %ecx
+	testb	$1, %sil
+	cmovnel	%edx, %ecx
+	subl	%ecx, %eax
 	retq

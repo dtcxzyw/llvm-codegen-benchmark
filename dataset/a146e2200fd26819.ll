@@ -1,10 +1,9 @@
 
-; 3 occurrences:
-; llvm/optimized/ScalarEvolution.cpp.ll
+; 2 occurrences:
 ; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001042(i8 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000004082(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -12
   %4 = icmp eq i32 %1, -32768
@@ -17,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/279qzdp4rwsfn4n0.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000442(i8 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000001082(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -2147483648
   %4 = icmp eq i8 %1, -128
@@ -28,14 +27,14 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/SemaChecking.cpp.ll
+; regex-rs/optimized/1pxsmct4oxs5dlep.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001102(i8 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000004088(i8 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 5
-  %4 = icmp ult i8 %1, 2
+  %3 = icmp ult i8 %2, 10
+  %4 = icmp eq i32 %1, 95
   %5 = or i1 %4, %3
-  %6 = icmp eq i8 %0, 4
+  %6 = icmp ult i8 %0, 26
   %7 = or i1 %6, %5
   ret i1 %7
 }
@@ -43,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000514(i8 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000001214(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 128
   %4 = icmp ult i8 %1, 4

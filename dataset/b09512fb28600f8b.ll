@@ -13,8 +13,7 @@ entry:
   ret i8 %5
 }
 
-; 4 occurrences:
-; linux/optimized/eht.ll
+; 3 occurrences:
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll

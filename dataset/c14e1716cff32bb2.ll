@@ -1,5 +1,5 @@
 
-; 581 occurrences:
+; 569 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcDress2.c.ll
@@ -50,23 +50,19 @@
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cgtCore.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cuddAnneal.c.ll
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/cutMan.c.ll
 ; abc/optimized/darCore.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauTree.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/extraBddMisc.c.ll
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -137,7 +133,6 @@
 ; abc/optimized/resCore.c.ll
 ; abc/optimized/resSim.c.ll
 ; abc/optimized/retDelay.c.ll
-; abc/optimized/rwrMan.c.ll
 ; abc/optimized/saigSimSeq.c.ll
 ; abc/optimized/saigStrSim.c.ll
 ; abc/optimized/satInter.c.ll
@@ -169,7 +164,8 @@
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; annoy/optimized/annoymodule.ll
-; arrow/optimized/cached-powers.cc.ll
+; boost/optimized/formatter.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; casadi/optimized/cvodes.c.ll
 ; ceres/optimized/fake_bundle_adjustment_jacobian.cc.ll
 ; clamav/optimized/others_common.c.ll
@@ -214,7 +210,6 @@
 ; darktable/optimized/slideshow.c.ll
 ; darktable/optimized/snapshots.c.ll
 ; darktable/optimized/tethering.c.ll
-; double_conversion/optimized/cached-powers.cc.ll
 ; entt/optimized/meta_conv.cpp.ll
 ; flac/optimized/window.c.ll
 ; graphviz/optimized/dotsplines.c.ll
@@ -288,7 +283,6 @@
 ; icu/optimized/chnsecal.ll
 ; icu/optimized/csrmbcs.ll
 ; icu/optimized/dayperiodrules.ll
-; icu/optimized/double-conversion-cached-powers.ll
 ; icu/optimized/gregocal.ll
 ; icu/optimized/hebrwcal.ll
 ; icu/optimized/islamcal.ll
@@ -312,6 +306,7 @@
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/lgc.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/AlignPairDialog.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
@@ -328,7 +323,6 @@
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/handle.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
@@ -353,13 +347,10 @@
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_copy.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/dlarre.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dsyequb.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; opencv/optimized/Remap_Demo.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/aruco_detector.cpp.ll
@@ -496,7 +487,6 @@
 ; openusd/optimized/cached-powers.cc.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/renderPassState.cpp.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; portaudio/optimized/pa_converters.c.ll
 ; postgres/optimized/array_selfuncs.ll
@@ -537,6 +527,7 @@
 ; sundials/optimized/cvode.c.ll
 ; sundials/optimized/cvodes.c.ll
 ; tinyrenderer/optimized/our_gl.cpp.ll
+; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; wireshark/optimized/androiddump.c.ll
 ; wireshark/optimized/byte_view_text.cpp.ll
@@ -553,8 +544,6 @@
 ; wireshark/optimized/packet-docsis-macmgmt.c.ll
 ; wireshark/optimized/packet-erf.c.ll
 ; wireshark/optimized/packet-gsm_a_common.c.ll
-; wireshark/optimized/packet-ieee1609dot2.c.ll
-; wireshark/optimized/packet-its.c.ll
 ; wireshark/optimized/packet-logcat-text.c.ll
 ; wireshark/optimized/packet-lorawan.c.ll
 ; wireshark/optimized/packet-lpp.c.ll
@@ -578,7 +567,6 @@
 ; wolfssl/optimized/client.c.ll
 ; yosys/optimized/System.ll
 ; yosys/optimized/flowmap.ll
-; yosys/optimized/mutate.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind

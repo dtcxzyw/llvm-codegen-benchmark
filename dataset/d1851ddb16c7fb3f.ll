@@ -44,6 +44,18 @@ entry:
   ret i16 %5
 }
 
+; 1 occurrences:
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000003(float %0, float %1) #0 {
+entry:
+  %2 = fmul float %0, %1
+  %3 = bitcast float %2 to i32
+  %4 = lshr i32 %3, 23
+  %5 = trunc nuw nsw i32 %4 to i16
+  ret i16 %5
+}
+
 ; 4 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll

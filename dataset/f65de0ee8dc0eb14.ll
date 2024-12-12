@@ -1,5 +1,5 @@
 
-; 282 occurrences:
+; 281 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cecCec.c.ll
@@ -11,6 +11,7 @@
 ; abc/optimized/sswPairs.c.ll
 ; assimp/optimized/unzip.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/calculate_point_order.ll
 ; brotli/optimized/encode.c.ll
 ; c3c/optimized/llvm_codegen_builtins.c.ll
 ; casadi/optimized/cvodes.c.ll
@@ -89,19 +90,15 @@
 ; linux/optimized/filemap.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_gem_context.ll
-; linux/optimized/i915_gem_gtt.ll
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_engine_heartbeat.ll
-; linux/optimized/intel_mocs.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/io-wq.ll
 ; linux/optimized/ipv6_sockglue.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mmu_gather.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/namei.ll
@@ -143,6 +140,7 @@
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
@@ -238,7 +236,6 @@
 ; postgres/optimized/exec_srv.ll
 ; postgres/optimized/fd.ll
 ; postgres/optimized/formatting.ll
-; postgres/optimized/oracle_compat.ll
 ; postgres/optimized/partbounds.ll
 ; postgres/optimized/pgbench.ll
 ; postgres/optimized/snprintf.ll
@@ -280,6 +277,8 @@
 ; z3/optimized/optsmt.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zlib/optimized/gzread.c.ll
 ; zxing/optimized/QRReader.cpp.ll
 ; Function Attrs: nounwind

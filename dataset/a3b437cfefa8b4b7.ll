@@ -4,7 +4,6 @@
 ; abc/optimized/saigSimFast.c.ll
 ; cpython/optimized/codecs.ll
 ; flac/optimized/metadata_object.c.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/dma-ring.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/swiotlb.ll
@@ -13,6 +12,7 @@
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
+; lvgl/optimized/lv_demo_render.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; openjdk/optimized/X11Renderer.ll
 ; openspiel/optimized/TransTableL.cpp.ll

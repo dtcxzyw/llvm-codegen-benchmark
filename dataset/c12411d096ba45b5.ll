@@ -1,5 +1,5 @@
 
-; 161 occurrences:
+; 188 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/int128.cc.ll
@@ -71,7 +71,6 @@
 ; qemu/optimized/system_memory.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; rand-rs/optimized/2lnmku48it2ei9m4.ll
-; rayon-rs/optimized/4h6yllo6psxznznq.ll
 ; rust-analyzer-rs/optimized/10elsj6wik4dx3zk.ll
 ; rust-analyzer-rs/optimized/11aztavumsolyui7.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
@@ -161,6 +160,34 @@
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wasmtime-rs/optimized/lcsv5aicvugqjg3.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; zed-rs/optimized/0aom8p2wor4n85al7fbg5160f.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1uum3gw9a30ezdy8xtn1px0l6.ll
+; zed-rs/optimized/1x0js6flb76ylaa82e6lu27uy.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/3r2dokv2dl5k20lnwkjewqs8s.ll
+; zed-rs/optimized/5c6qu0nt7rwrjz6em8cry1wl2.ll
+; zed-rs/optimized/5eo3r6xqgcl9c03ocnkjc70d3.ll
+; zed-rs/optimized/61xaugoldgcmtvmvu04ojyf44.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/6pzok54tcf7jgyfxt7910tckc.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; zed-rs/optimized/9442bztux3sevpf574oh1aseo.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9jrz8x0nc5lkiswz6iqpo0zcg.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/ak4ykc5o2q07hp1jptfv0x87c.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
+; zed-rs/optimized/eqlhf2u6kdmwzzbnampe7imqv.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i128 %0, i128 %1) #0 {
 entry:
@@ -168,7 +195,7 @@ entry:
   ret i1 %2
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
@@ -179,7 +206,6 @@ entry:
 ; qemu/optimized/system_memory.c.ll
 ; rayon-rs/optimized/1j5m2t9gtbur4l2z.ll
 ; rayon-rs/optimized/21gejo1m4tab0cb8.ll
-; rayon-rs/optimized/2389eek2c9skvu2t.ll
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
@@ -201,20 +227,13 @@ entry:
   ret i1 %2
 }
 
-; 9 occurrences:
-; abseil-cpp/optimized/float_conversion.cc.ll
-; abseil-cpp/optimized/int128_test.cc.ll
-; libquic/optimized/div.c.ll
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; qemu/optimized/hw_virtio_vhost-vdpa.c.ll
-; rayon-rs/optimized/1j5m2t9gtbur4l2z.ll
-; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
-; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
-; wasmtime-rs/optimized/93h427h9qgxa6fr.ll
-; wasmtime-rs/optimized/hmb8tiwife399k7.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000018(i128 %0, i128 %1) #0 {
 entry:
-  %2 = icmp ugt i128 %0, %1
+  %2 = icmp samesign ugt i128 %0, %1
   ret i1 %2
 }
 
@@ -251,7 +270,6 @@ entry:
 }
 
 ; 22 occurrences:
-; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -259,6 +277,8 @@ entry:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/3qd2nnv0mbtxq1wn.ll
 ; coreutils-rs/optimized/4kgtcn9evb3aj2za.ll
 ; qemu/optimized/util_host-utils.c.ll
@@ -268,7 +288,6 @@ entry:
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
-; spike/optimized/vslidedown_vx.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/4190jy0hpyvhha7p.ll
@@ -280,11 +299,10 @@ entry:
   ret i1 %2
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/int128.cc.ll
 ; qemu/optimized/util_host-utils.c.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
-; velox/optimized/DecimalVectorFunctions.cpp.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i128 %0, i128 %1) #0 {
@@ -311,9 +329,8 @@ entry:
   ret i1 %2
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; coreutils-rs/optimized/3ovky1nu4e8ycm16.ll
-; rayon-rs/optimized/4h6yllo6psxznznq.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
@@ -327,16 +344,29 @@ entry:
   ret i1 %2
 }
 
-; 9 occurrences:
+; 1 occurrences:
+; velox/optimized/DecimalVectorFunctions.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i128 %0, i128 %1) #0 {
+entry:
+  %2 = icmp samesign uge i128 %0, %1
+  ret i1 %2
+}
+
+; 13 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/3ovky1nu4e8ycm16.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; velox/optimized/Comparisons.cpp.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i128 %0, i128 %1) #0 {
 entry:
@@ -344,12 +374,30 @@ entry:
   ret i1 %2
 }
 
-; 1 occurrences:
-; rayon-rs/optimized/4h6yllo6psxznznq.ll
+; 8 occurrences:
+; abseil-cpp/optimized/float_conversion.cc.ll
+; abseil-cpp/optimized/int128_test.cc.ll
+; libquic/optimized/div.c.ll
+; rayon-rs/optimized/1j5m2t9gtbur4l2z.ll
+; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
+; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
+; wasmtime-rs/optimized/93h427h9qgxa6fr.ll
+; wasmtime-rs/optimized/hmb8tiwife399k7.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000008(i128 %0, i128 %1) #0 {
 entry:
-  %2 = icmp ule i128 %0, %1
+  %2 = icmp ugt i128 %0, %1
+  ret i1 %2
+}
+
+; 3 occurrences:
+; abseil-cpp/optimized/charconv.cc.ll
+; boost/optimized/from_chars.ll
+; spike/optimized/vslidedown_vx.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i128 %0, i128 %1) #0 {
+entry:
+  %2 = icmp samesign ult i128 %0, %1
   ret i1 %2
 }
 

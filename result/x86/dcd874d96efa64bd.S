@@ -6,6 +6,15 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rcx
 	seta	%al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	movb	$63, %al
+	bzhiq	%rax, %rdx, %rax
+	testb	$1, %sil
+	movl	$23, %ecx
+	cmovneq	%rax, %rcx
+	cmpq	%rdi, %rcx
+	seta	%al
+	retq
 func0000000000000001:                   # @func0000000000000001
 	movb	$63, %al
 	bzhiq	%rax, %rdx, %rax

@@ -4,13 +4,13 @@
 ; openusd/optimized/dependencies.cpp.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4096
   %4 = icmp eq i64 %3, 0
   %5 = icmp eq i64 %1, 27
   %6 = or i1 %5, %4
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 
@@ -26,13 +26,13 @@ entry:
 ; abc/optimized/sscCore.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 536870911
   %4 = icmp eq i64 %3, 536870911
   %5 = icmp ne i64 %1, 0
   %6 = or i1 %5, %4
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 
@@ -50,13 +50,13 @@ entry:
 ; spike/optimized/f64_to_ui32.ll
 ; spike/optimized/f64_to_ui32_r_minMag.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 255
   %4 = icmp ne i64 %3, 255
   %5 = icmp eq i64 %1, 0
   %6 = or i1 %5, %4
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 

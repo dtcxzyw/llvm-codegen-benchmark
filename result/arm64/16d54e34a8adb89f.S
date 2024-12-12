@@ -1,28 +1,34 @@
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
 	add	x8, x0, x1, lsl #5
-	add	x0, x8, #160
+	add	x0, x8, #184
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func000000000000001b:                   // @func000000000000001b
+// %bb.0:                               // %entry
+	add	x8, x0, x1, lsl #4
+	add	x0, x8, #24
+	ret
+                                        // -- End function
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	add	x8, x0, x1, lsl #4
 	sub	x0, x8, #8
 	ret
                                         // -- End function
-func000000000000008a:                   // @func000000000000008a
+func000000000000008b:                   // @func000000000000008b
 // %bb.0:                               // %entry
 	add	x8, x0, x1, lsl #4
 	add	x0, x8, #20
 	ret
                                         // -- End function
-func000000000000007a:                   // @func000000000000007a
+func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
 	add	x8, x0, x1, lsl #4
 	sub	x0, x8, #12
 	ret
                                         // -- End function
-func00000000000000fa:                   // @func00000000000000fa
+func00000000000000ff:                   // @func00000000000000ff
 // %bb.0:                               // %entry
 	add	x8, x0, x1, lsl #3
 	add	x0, x8, #12
@@ -40,25 +46,25 @@ func00000000000000f0:                   // @func00000000000000f0
 	add	x0, x8, #144
 	ret
                                         // -- End function
-func000000000000000a:                   // @func000000000000000a
+func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	add	x8, x0, x1, lsl #4
 	sub	x0, x8, #8
 	ret
                                         // -- End function
-func0000000000000072:                   // @func0000000000000072
+func0000000000000073:                   // @func0000000000000073
 // %bb.0:                               // %entry
 	add	x8, x0, x1, lsl #1
 	sub	x0, x8, #1
 	ret
                                         // -- End function
-func0000000000000042:                   // @func0000000000000042
+func0000000000000043:                   // @func0000000000000043
 // %bb.0:                               // %entry
 	add	x8, x0, x1, lsl #5
 	add	x0, x8, #40
 	ret
                                         // -- End function
-func000000000000004a:                   // @func000000000000004a
+func000000000000004b:                   // @func000000000000004b
 // %bb.0:                               // %entry
 	add	x8, x0, x1, lsl #5
 	add	x0, x8, #40
@@ -70,13 +76,13 @@ func0000000000000048:                   // @func0000000000000048
 	add	x0, x8, #48
 	ret
                                         // -- End function
-func000000000000005a:                   // @func000000000000005a
+func000000000000005b:                   // @func000000000000005b
 // %bb.0:                               // %entry
 	add	x8, x0, x1, lsl #7
 	sub	x0, x8, #128
 	ret
                                         // -- End function
-func00000000000000f8:                   // @func00000000000000f8
+func00000000000000fc:                   // @func00000000000000fc
 // %bb.0:                               // %entry
 	add	x8, x0, x1, lsl #3
 	add	x0, x8, #16

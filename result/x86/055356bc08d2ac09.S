@@ -7,6 +7,6 @@ func0000000000000000:                   # @func0000000000000000
 	vxorps	%xmm1, %xmm1, %xmm1
 	vmovss	.LCPI0_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vmovss	%xmm1, %xmm2, %xmm2 {%k1}
-	vmulss	%xmm0, %xmm2, %xmm0
+	vmulss	%xmm2, %xmm0, %xmm0
 	vmulss	.LCPI0_1(%rip), %xmm0, %xmm0
 	retq

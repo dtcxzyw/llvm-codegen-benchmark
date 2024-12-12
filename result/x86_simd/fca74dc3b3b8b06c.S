@@ -90,6 +90,31 @@ func0000000000000006:                   # @func0000000000000006
 	vzeroupper
 	retq
 .LCPI5_0:
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+func0000000000000014:                   # @func0000000000000014
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k0
+	vpcmpltuw	.LCPI5_0(%rip), %ymm1, %k1
+	korw	%k1, %k0, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI6_0:
 	.short	1                               # 0x1
 	.short	1                               # 0x1
 	.short	1                               # 0x1
@@ -109,7 +134,32 @@ func0000000000000006:                   # @func0000000000000006
 func000000000000000a:                   # @func000000000000000a
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
-	vpcmpgtw	.LCPI5_0(%rip), %ymm1, %k1
+	vpcmpgtw	.LCPI6_0(%rip), %ymm1, %k1
+	korw	%k1, %k0, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+func0000000000000018:                   # @func0000000000000018
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k0
+	vpcmpnleuw	.LCPI7_0(%rip), %ymm1, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

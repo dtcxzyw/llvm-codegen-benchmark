@@ -28,7 +28,22 @@ entry:
   ret i64 %4
 }
 
-; 111 occurrences:
+; 5 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_highlights.c.ll
+; darktable/optimized/introspection_zonesystem.c.ll
+; git/optimized/combine-diff.ll
+; qemu/optimized/block_qcow2.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = add nuw i64 %0, 1
+  %4 = mul i64 %3, %2
+  ret i64 %4
+}
+
+; 103 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
@@ -38,6 +53,7 @@ entry:
 ; abc/optimized/llb4Cex.c.ll
 ; abc/optimized/llb4Nonlin.c.ll
 ; abc/optimized/mfsMan.c.ll
+; abseil-cpp/optimized/cordz_info.cc.ll
 ; arrow/optimized/csx_converter.cc.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -82,11 +98,9 @@ entry:
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; openblas/optimized/dbdsdc.c.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dgees.c.ll
 ; openblas/optimized/dgeesx.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetri.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
@@ -105,19 +119,14 @@ entry:
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dorgbr.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dorgtsqr.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dstedc.c.ll
 ; openblas/optimized/dsteqr.c.ll
 ; openblas/optimized/dsytrd_sb2st.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
-; openblas/optimized/dtfttr.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/bitmatrixparser.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
@@ -125,8 +134,6 @@ entry:
 ; opencv/optimized/msd.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
-; openssl/optimized/libcrypto-lib-bsearch.ll
-; openssl/optimized/libcrypto-shlib-bsearch.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; php/optimized/cdf.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
@@ -149,24 +156,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
-; darktable/optimized/introspection_demosaic.c.ll
-; darktable/optimized/introspection_highlights.c.ll
-; darktable/optimized/introspection_zonesystem.c.ll
-; git/optimized/combine-diff.ll
-; qemu/optimized/block_qcow2.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = add nuw i64 %0, 1
-  %4 = mul i64 %3, %2
-  ret i64 %4
-}
-
-; 82 occurrences:
+; 73 occurrences:
 ; abc/optimized/abcSat.c.ll
-; abc/optimized/giaPat2.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; arrow/optimized/coo_converter.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -191,24 +182,17 @@ entry:
 ; ncnn/optimized/padding.cpp.ll
 ; openblas/optimized/cblas_dgemmt.c.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgemmt.c.ll
-; openblas/optimized/dgesc2.c.ll
 ; openblas/optimized/dgesvdq.c.ll
-; openblas/optimized/dgetri.c.ll
 ; openblas/optimized/dggev.c.ll
 ; openblas/optimized/dggev3.c.ll
 ; openblas/optimized/dggevx.c.ll
 ; openblas/optimized/dlaein.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlasr.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
-; openblas/optimized/dlatdf.c.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dorbdb1.c.ll
@@ -219,7 +203,6 @@ entry:
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
 ; openblas/optimized/dtgevc.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
@@ -303,12 +286,11 @@ entry:
   ret i64 %4
 }
 
-; 35 occurrences:
+; 32 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/cecSolve.c.ll
@@ -320,9 +302,7 @@ entry:
 ; abc/optimized/giaEra.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/resSim.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigSynch.c.ll

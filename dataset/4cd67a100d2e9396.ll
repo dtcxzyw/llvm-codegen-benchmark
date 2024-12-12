@@ -52,7 +52,7 @@
 ; wasmedge/optimized/helper.cpp.ll
 ; wireshark/optimized/traffic_tab.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
@@ -62,7 +62,7 @@ entry:
   ret i1 %6
 }
 
-; 32 occurrences:
+; 30 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
@@ -81,7 +81,6 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; opencv/optimized/core_detect.cpp.ll
-; opencv/optimized/eltwise_layer.cpp.ll
 ; opencv/optimized/gstreamingexecutor.cpp.ll
 ; opencv/optimized/trackerMedianFlow.cpp.ll
 ; openusd/optimized/bakeSkinning.cpp.ll
@@ -90,13 +89,12 @@ entry:
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; quantlib/optimized/discretizedswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/nonstandardswap.ll
 ; velox/optimized/PeeledEncoding.cpp.ll
 ; yosys/optimized/freduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000028(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0

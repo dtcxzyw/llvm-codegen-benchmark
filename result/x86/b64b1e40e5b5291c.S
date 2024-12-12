@@ -1,4 +1,4 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000030:                   # @func0000000000000030
 	leaq	68(%rdi), %rax
 	testb	$1, %dl
 	cmovneq	%rdi, %rax

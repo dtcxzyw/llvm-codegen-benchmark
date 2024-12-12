@@ -1,9 +1,29 @@
 
-; 145 occurrences:
+; 165 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/params_iter_impl.ll
+; boost/optimized/process.ll
+; boost/optimized/query_rule.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/segments_iter_impl.ll
+; boost/optimized/spawn.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; clamav/optimized/Bra86.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -150,19 +170,21 @@ define i64 @func0000000000000000(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = add i64 %3, %0
+  %5 = add i64 %0, %3
   %6 = sub i64 %4, %5
   ret i64 %6
 }
 
-; 222 occurrences:
+; 219 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; cpython/optimized/pystrtod.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; gromacs/optimized/checkpoint.cpp.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -170,7 +192,6 @@ entry:
 ; hermes/optimized/Instrs.cpp.ll
 ; hermes/optimized/Process.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
-; hyperscan/optimized/ng_squash.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
@@ -302,13 +323,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -371,7 +389,6 @@ entry:
 ; openusd/optimized/blendShapeQuery.cpp.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; proj/optimized/networkfilemanager.cpp.ll
-; proxygen/optimized/HTTPMessage.cpp.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; yaml-cpp/optimized/stream.cpp.ll
@@ -383,15 +400,52 @@ define i64 @func0000000000000001(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = add i64 %3, %0
+  %5 = add i64 %0, %3
   %6 = sub i64 %4, %5
   ret i64 %6
 }
 
-; 219 occurrences:
+; 256 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/uri.cc.ll
 ; assimp/optimized/PlyParser.cpp.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/message.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; clamav/optimized/phishcheck.c.ll
 ; cmake/optimized/cmCTest.cxx.ll
 ; cmake/optimized/cmCTestBZR.cxx.ll
@@ -613,7 +667,7 @@ define i64 @func0000000000000002(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = add i64 %3, %0
+  %5 = add i64 %0, %3
   %6 = sub i64 %4, %5
   ret i64 %6
 }
@@ -625,7 +679,7 @@ define i64 @func0000000000000003(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = add i64 %3, %0
+  %5 = add i64 %0, %3
   %6 = sub i64 %4, %5
   ret i64 %6
 }

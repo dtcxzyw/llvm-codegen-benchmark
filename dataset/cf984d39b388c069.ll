@@ -1,10 +1,12 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; cpython/optimized/dtoa.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
 ; opencv/optimized/camera_calibration.cpp.ll
 ; php/optimized/zend_strtod.ll
+; ruby/optimized/util.ll
 ; wireshark/optimized/related_packet_delegate.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {

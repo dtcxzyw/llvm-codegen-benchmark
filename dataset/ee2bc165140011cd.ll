@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 45 occurrences:
 ; abc/optimized/gzread.c.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; cmake/optimized/gzread.c.ll
@@ -15,6 +15,7 @@
 ; git/optimized/line-log.ll
 ; hdf5/optimized/H5HFtiny.c.ll
 ; libquic/optimized/gzread.c.ll
+; lief/optimized/Builder.cpp.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/mac.ll
@@ -30,6 +31,7 @@
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; mold/optimized/arch-ppc64v1.cc.ll
 ; mold/optimized/input-sections.cc.PPC64V1.cc.ll
 ; mold/optimized/mapfile.cc.PPC64V1.cc.ll
@@ -52,7 +54,7 @@ entry:
   ret i64 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; cvc5/optimized/SimpSolver.cc.ll
@@ -64,7 +66,6 @@ entry:
 ; icu/optimized/ubidiwrt.ll
 ; icu/optimized/usearch.ll
 ; libquic/optimized/bio_mem.c.ll
-; linux/optimized/intel_rps.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; openblas/optimized/dbbcsd.c.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
@@ -85,7 +86,7 @@ entry:
   ret i64 %5
 }
 
-; 28 occurrences:
+; 16 occurrences:
 ; abc/optimized/trees.c.ll
 ; cmake/optimized/trees.c.ll
 ; gromacs/optimized/md5.c.ll
@@ -97,18 +98,6 @@ entry:
 ; linux/optimized/deftree.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/rock.ll
-; openjdk/optimized/FourByteAbgr.ll
-; openjdk/optimized/FourByteAbgrPre.ll
-; openjdk/optimized/IntArgb.ll
-; openjdk/optimized/IntArgbBm.ll
-; openjdk/optimized/IntArgbPre.ll
-; openjdk/optimized/IntBgr.ll
-; openjdk/optimized/IntRgb.ll
-; openjdk/optimized/IntRgbx.ll
-; openjdk/optimized/ThreeByteBgr.ll
-; openjdk/optimized/Ushort555Rgb.ll
-; openjdk/optimized/Ushort555Rgbx.ll
-; openjdk/optimized/Ushort565Rgb.ll
 ; openjdk/optimized/compileLog.ll
 ; openjdk/optimized/samplePriorityQueue.ll
 ; velox/optimized/WidthBucketArray.cpp.ll
@@ -123,7 +112,8 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; gromacs/optimized/gmx_densorder.cpp.ll
@@ -141,13 +131,14 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/extraBddCas.c.ll
 ; graphviz/optimized/visibility.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mpih-div.ll
 ; linux/optimized/vc_screen.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
 ; php/optimized/fastcgi.ll

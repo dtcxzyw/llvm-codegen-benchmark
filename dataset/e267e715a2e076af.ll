@@ -11,9 +11,10 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; openjdk/optimized/shenandoahFreeSet.ll
+; ring-rs/optimized/4krjvpwhiya9iudo.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:

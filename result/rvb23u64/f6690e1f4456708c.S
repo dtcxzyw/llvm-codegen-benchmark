@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	andi	a2, a2, 192
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -10,7 +10,7 @@ func000000000000000c:                   # @func000000000000000c
 	sext.w	a1, a1
 	sh3add	a0, a1, a0
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	andi	a2, a2, 15
 	or	a1, a1, a2
 	add.uw	a0, a1, a0

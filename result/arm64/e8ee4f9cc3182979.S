@@ -5,10 +5,17 @@ func0000000000000010:                   // @func0000000000000010
 	add	x0, x8, x9
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
 	add	x8, x0, w1, sxtw #3
 	add	x0, x8, #8
+	ret
+                                        // -- End function
+func000000000000001f:                   // @func000000000000001f
+// %bb.0:                               // %entry
+	add	x8, x0, w1, sxtw #3
+	mov	w9, #5120                       // =0x1400
+	add	x0, x8, x9
 	ret
                                         // -- End function
 func0000000000000030:                   // @func0000000000000030
@@ -17,7 +24,7 @@ func0000000000000030:                   // @func0000000000000030
 	add	x0, x8, #8
 	ret
                                         // -- End function
-func0000000000000012:                   // @func0000000000000012
+func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
 	add	x8, x0, w1, sxtw #2
 	add	x0, x8, #4
@@ -29,15 +36,19 @@ func0000000000000018:                   // @func0000000000000018
 	add	x0, x8, #8
 	ret
                                         // -- End function
-func000000000000001b:                   // @func000000000000001b
+func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	sxtw	x8, w1
-	add	x8, x0, x8, lsl #6
-	add	x0, x8, #32
+	add	x8, x0, w1, sxtw #2
+	sub	x0, x8, #64
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
+func000000000000001e:                   // @func000000000000001e
+// %bb.0:                               // %entry
+	add	x8, x0, w1, sxtw #2
+	sub	x0, x8, #4
+	ret
+                                        // -- End function
+func000000000000003e:                   // @func000000000000003e
 // %bb.0:                               // %entry
 	add	x8, x0, w1, sxtw #2
 	sub	x0, x8, #4

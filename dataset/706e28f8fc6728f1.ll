@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; php/optimized/url.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
 entry:

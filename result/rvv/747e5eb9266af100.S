@@ -5,7 +5,7 @@ func0000000000000003:                   # @func0000000000000003
 	vadd.vx	v16, v16, a0
 	vfwcvt.f.xu.v	v20, v16
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmul.vv	v12, v20, v12
+	vfmul.vv	v12, v12, v20
 	vfdiv.vv	v8, v12, v8
 	ret
 func0000000000000007:                   # @func0000000000000007
@@ -13,7 +13,7 @@ func0000000000000007:                   # @func0000000000000007
 	vadd.vi	v16, v16, 1
 	vfwcvt.f.xu.v	v20, v16
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmul.vv	v12, v20, v12
+	vfmul.vv	v12, v12, v20
 	vfdiv.vv	v8, v12, v8
 	ret
 func0000000000000001:                   # @func0000000000000001
@@ -21,7 +21,7 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vi	v16, v16, 1
 	vfwcvt.f.xu.v	v20, v16
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmul.vv	v12, v20, v12
+	vfmul.vv	v12, v12, v20
 	vfdiv.vv	v8, v12, v8
 	ret
 func0000000000000005:                   # @func0000000000000005
@@ -29,7 +29,7 @@ func0000000000000005:                   # @func0000000000000005
 	vadd.vi	v16, v16, 1
 	vfwcvt.f.xu.v	v20, v16
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmul.vv	v12, v20, v12
+	vfmul.vv	v12, v12, v20
 	vfdiv.vv	v8, v12, v8
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -37,6 +37,6 @@ func0000000000000004:                   # @func0000000000000004
 	vadd.vi	v16, v16, 1
 	vfwcvt.f.xu.v	v20, v16
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmul.vv	v12, v20, v12
+	vfmul.vv	v12, v12, v20
 	vfdiv.vv	v8, v12, v8
 	ret

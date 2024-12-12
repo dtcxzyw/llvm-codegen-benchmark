@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 11 occurrences:
 ; clamav/optimized/hfsplus.c.ll
 ; php/optimized/zip.ll
 ; wireshark/optimized/erf.c.ll
@@ -8,6 +8,9 @@
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i16 %0, i16 %1) #0 {
 entry:

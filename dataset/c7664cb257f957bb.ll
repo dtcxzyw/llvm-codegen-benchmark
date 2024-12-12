@@ -20,9 +20,9 @@
 ; opencv/optimized/umatrix.cpp.ll
 ; openmpi/optimized/opal_bitmap.ll
 ; openmpi/optimized/pmix_bitmap.ll
-; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; tomlplusplus/optimized/toml.cpp.ll
+; velox/optimized/PrestoSerializer.cpp.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-metamako.c.ll
 ; Function Attrs: nounwind
@@ -34,9 +34,10 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; z3/optimized/hwf.cpp.ll
+; z3/optimized/mpf.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {

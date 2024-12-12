@@ -33,3 +33,11 @@ func0000000000000001:                   # @func0000000000000001
 	vpblendmd	%xmm0, %xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
+.LCPI5_0:
+	.long	161                             # 0xa1
+func0000000000000014:                   # @func0000000000000014
+	vpmovqd	%ymm2, %xmm2
+	vpcmpltud	.LCPI5_0(%rip){1to4}, %xmm2, %k1
+	vpblendmd	%xmm0, %xmm1, %xmm0 {%k1}
+	vzeroupper
+	retq

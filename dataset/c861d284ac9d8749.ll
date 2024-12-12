@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 39 occurrences:
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/row_encoder.cc.ll
@@ -33,8 +33,12 @@
 ; openssl/optimized/libcrypto-shlib-provider_core.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:

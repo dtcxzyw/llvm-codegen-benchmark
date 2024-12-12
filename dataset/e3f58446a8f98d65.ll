@@ -1,11 +1,11 @@
 
-%"class.(anonymous namespace)::NotTriviallyDestructible.3284437" = type { %"class.std::unique_ptr.379.3284438" }
-%"class.std::unique_ptr.379.3284438" = type { %"struct.std::__uniq_ptr_data.380.3284439" }
-%"struct.std::__uniq_ptr_data.380.3284439" = type { %"class.std::__uniq_ptr_impl.381.3284440" }
-%"class.std::__uniq_ptr_impl.381.3284440" = type { %"class.std::tuple.382.3284441" }
-%"class.std::tuple.382.3284441" = type { %"struct.std::_Tuple_impl.383.3284442" }
-%"struct.std::_Tuple_impl.383.3284442" = type { %"struct.std::_Head_base.386.3284443" }
-%"struct.std::_Head_base.386.3284443" = type { ptr }
+%"class.(anonymous namespace)::NotTriviallyDestructible.3474873" = type { %"class.std::unique_ptr.379.3474874" }
+%"class.std::unique_ptr.379.3474874" = type { %"struct.std::__uniq_ptr_data.380.3474875" }
+%"struct.std::__uniq_ptr_data.380.3474875" = type { %"class.std::__uniq_ptr_impl.381.3474876" }
+%"class.std::__uniq_ptr_impl.381.3474876" = type { %"class.std::tuple.382.3474877" }
+%"class.std::tuple.382.3474877" = type { %"struct.std::_Tuple_impl.383.3474878" }
+%"struct.std::_Tuple_impl.383.3474878" = type { %"struct.std::_Head_base.386.3474879" }
+%"struct.std::_Head_base.386.3474879" = type { ptr }
 
 ; 2 occurrences:
 ; meshlab/optimized/matching.cpp.ll
@@ -41,6 +41,18 @@ entry:
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 1096
   %5 = shl nuw nsw i64 %1, 2
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; boost/optimized/area.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000020(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1
+  %5 = shl nuw i64 %1, 3
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
 }
@@ -90,29 +102,28 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i32, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 4
   %5 = shl nuw nsw i64 %1, 2
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3284437", ptr %0, i64 %2
+  %3 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474873", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -8
   %5 = shl nuw nsw i64 %1, 3
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 15 occurrences:
-; ceres/optimized/polynomial.cc.ll
+; 14 occurrences:
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -137,7 +148,7 @@ entry:
   ret ptr %6
 }
 
-; 20 occurrences:
+; 14 occurrences:
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -152,14 +163,8 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_3.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/matching.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000de(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr double, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
@@ -183,6 +188,18 @@ entry:
   ret ptr %6
 }
 
+; 1 occurrences:
+; ceres/optimized/polynomial.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr double, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -8
+  %.idx = shl nsw i64 %1, 5
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %.idx
+  ret ptr %5
+}
+
 ; 6 occurrences:
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -192,6 +209,23 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr float, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 4
+  %5 = shl nsw i64 %1, 3
+  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 6 occurrences:
+; g2o/optimized/vertex_ellipse.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000da(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr float, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 4

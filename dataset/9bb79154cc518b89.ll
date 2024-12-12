@@ -33,17 +33,6 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; lief/optimized/aes.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 128
-  %3 = select i1 %2, i32 0, i32 27
-  %4 = xor i32 %3, %0
-  ret i32 %4
-}
-
 ; 6 occurrences:
 ; raylib/optimized/raudio.c.ll
 ; spike/optimized/aes64dsm.ll

@@ -5,7 +5,7 @@
 ; llvm/optimized/NativeEnumInjectedSources.cpp.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 7
   %4 = or disjoint i32 %0, %1

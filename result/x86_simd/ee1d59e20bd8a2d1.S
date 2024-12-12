@@ -46,7 +46,7 @@ func000000000000000e:                   # @func000000000000000e
 	.long	63                              # 0x3f
 func0000000000000002:                   # @func0000000000000002
 	vpslld	$8, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpsrlvd	%ymm0, %ymm1, %ymm0
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq

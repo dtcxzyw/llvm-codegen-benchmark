@@ -33,3 +33,14 @@ func0000000000000019:                   # @func0000000000000019
 	shrq	$4, %rax
 	addq	$-182, %rax
 	retq
+func0000000000000011:                   # @func0000000000000011
+	leaq	8(%rdi), %rax
+	movabsq	$2635249153387078803, %rcx      # imm = 0x2492492492492493
+	movq	%rax, %rdx
+	mulxq	%rcx, %rcx, %rcx
+	subq	%rcx, %rax
+	shrq	%rax
+	addq	%rcx, %rax
+	shrq	$2, %rax
+	decq	%rax
+	retq

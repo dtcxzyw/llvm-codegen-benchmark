@@ -1,4 +1,4 @@
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	sext.w	a0, a0
 	addi	a2, a2, 7
 	lui	a3, 8192
@@ -14,16 +14,7 @@ func0000000000000004:                   # @func0000000000000004
 	addw	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func00000000000000f6:                   # @func00000000000000f6
-	sext.w	a0, a0
-	addi	a2, a2, 3
-	lui	a3, 1024
-	addi	a3, a3, -2
-	and	a2, a2, a3
-	addw	a1, a1, a2
-	slt	a0, a1, a0
-	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a0, a0
 	addi	a2, a2, 7
 	andi	a2, a2, -8
@@ -44,7 +35,7 @@ func0000000000000006:                   # @func0000000000000006
 	addw	a1, a1, a2
 	slt	a0, a1, a0
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001e8:                   # @func00000000000001e8
 	sext.w	a0, a0
 	addi	a2, a2, 38
 	slli	a2, a2, 48
@@ -52,7 +43,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	addw	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	sext.w	a0, a0
 	addi	a2, a2, 3
 	lui	a3, 32
@@ -61,7 +52,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	addw	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	sext.w	a0, a0
 	addi	a2, a2, 3
 	lui	a3, 32
@@ -70,7 +61,7 @@ func00000000000000c6:                   # @func00000000000000c6
 	addw	a1, a1, a2
 	slt	a0, a1, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sext.w	a0, a0
 	addi	a2, a2, 27
 	andi	a2, a2, -8
@@ -81,22 +72,6 @@ func0000000000000008:                   # @func0000000000000008
 	sext.w	a0, a0
 	addi	a2, a2, 3
 	andi	a2, a2, -4
-	addw	a1, a1, a2
-	sltu	a0, a0, a1
-	ret
-func00000000000000b4:                   # @func00000000000000b4
-	sext.w	a0, a0
-	addi	a2, a2, 1
-	slli	a2, a2, 48
-	srli	a2, a2, 48
-	addw	a1, a1, a2
-	sltu	a0, a1, a0
-	ret
-func00000000000000b8:                   # @func00000000000000b8
-	sext.w	a0, a0
-	addi	a2, a2, 1
-	slli	a2, a2, 48
-	srli	a2, a2, 48
 	addw	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

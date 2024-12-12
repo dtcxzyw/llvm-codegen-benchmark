@@ -36,3 +36,15 @@ func0000000000000005:                   # @func0000000000000005
 	vmerge.vim	v10, v10, -8, v0
 	vand.vv	v8, v8, v10
 	ret
+func000000000000000f:                   # @func000000000000000f
+	li	a0, 64
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v10, a0
+	li	a0, -64
+	vmerge.vim	v10, v10, 8, v0
+	vadd.vv	v8, v8, v10
+	vmv.v.x	v10, a0
+	vadd.vi	v8, v8, 12
+	vmerge.vim	v10, v10, -8, v0
+	vand.vv	v8, v8, v10
+	ret

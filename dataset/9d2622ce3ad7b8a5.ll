@@ -1,5 +1,6 @@
 
-; 38 occurrences:
+; 39 occurrences:
+; boost/optimized/test_codecvt.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/str.c.ll
 ; hermes/optimized/JSObject.cpp.ll
@@ -76,7 +77,7 @@ entry:
   ret i16 %2
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; linux/optimized/ats.ll
 ; linux/optimized/uhci-hcd.ll
 ; llvm/optimized/DbiStreamBuilder.cpp.ll
@@ -94,6 +95,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i32 %0) #0 {
 entry:

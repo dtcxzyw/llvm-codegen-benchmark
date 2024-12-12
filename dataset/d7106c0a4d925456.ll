@@ -1,8 +1,9 @@
 
-; 63 occurrences:
+; 64 occurrences:
 ; cpython/optimized/_decimal.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; libevent/optimized/http.c.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; nanosvg/optimized/nanosvg.ll
 ; openjdk/optimized/compilerOracle.ll
 ; openusd/optimized/reconinter.c.ll
@@ -64,7 +65,7 @@
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = and i64 %2, 4294983169
@@ -77,7 +78,7 @@ entry:
 ; qemu/optimized/tcg.c.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = and i64 %2, 102631199
@@ -90,7 +91,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = and i64 %2, 44
@@ -106,7 +107,7 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = and i64 %2, -2
@@ -115,10 +116,26 @@ entry:
   ret i1 %5
 }
 
+; 5 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000054(i1 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw i64 1, %1
+  %3 = and i64 %2, -2
+  %4 = icmp samesign ult i64 %3, 4097
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; icu/optimized/ucnvscsu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = and i64 %2, 9729

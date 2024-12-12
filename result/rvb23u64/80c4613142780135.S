@@ -25,7 +25,7 @@ func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0
 	sgtz	a0, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andi	a0, a0, 1
 	srliw	a2, a2, 8
 	czero.nez	a2, a2, a0
@@ -34,7 +34,7 @@ func0000000000000004:                   # @func0000000000000004
 	sext.w	a0, a0
 	sltiu	a0, a0, 128
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andi	a0, a0, 1
 	srliw	a2, a2, 3
 	czero.nez	a2, a2, a0

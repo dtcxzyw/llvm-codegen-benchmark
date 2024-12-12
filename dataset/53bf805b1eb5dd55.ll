@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; freetype/optimized/truetype.c.ll
 ; libquic/optimized/modp_b64.cc.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/scan.ll
@@ -19,7 +20,7 @@ entry:
   %2 = shl i8 %1, 2
   %3 = and i8 %2, 60
   %4 = zext nneg i8 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -31,7 +32,7 @@ entry:
   %2 = shl nuw nsw i8 %1, 1
   %3 = and i8 %2, 14
   %4 = zext nneg i8 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -43,13 +44,24 @@ entry:
   %2 = shl nuw i8 %1, 1
   %3 = and i8 %2, 14
   %4 = zext nneg i8 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
-; 7 occurrences:
+; 1 occurrences:
+; qemu/optimized/hw_9pfs_9p.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
+entry:
+  %2 = shl i8 %1, 5
+  %3 = and i8 %2, -128
+  %4 = zext i8 %3 to i32
+  %5 = or i32 %0, %4
+  ret i32 %5
+}
+
+; 6 occurrences:
 ; cpython/optimized/compile.ll
-; freetype/optimized/truetype.c.ll
 ; git/optimized/utf8.ll
 ; libpng/optimized/pngread.c.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
@@ -61,7 +73,7 @@ entry:
   %2 = shl i8 %1, 3
   %3 = and i8 %2, 8
   %4 = zext nneg i8 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -73,7 +85,7 @@ entry:
   %2 = shl i8 %1, 1
   %3 = and i8 %2, -128
   %4 = zext i8 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

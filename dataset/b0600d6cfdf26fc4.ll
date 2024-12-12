@@ -28,7 +28,7 @@ entry:
 ; openmpi/optimized/nbc_ibcast.ll
 ; openmpi/optimized/nbc_ireduce.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -48
   %3 = icmp eq i32 %2, 0
@@ -80,10 +80,8 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; miniaudio/optimized/unity.c.ll
+; 1 occurrences:
 ; postgres/optimized/varsup.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
@@ -93,10 +91,22 @@ entry:
   ret i32 %4
 }
 
+; 2 occurrences:
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 15
+  %3 = icmp samesign ult i32 %2, 1024
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; freetype/optimized/psnames.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -48
   %3 = icmp ugt i32 %2, 9

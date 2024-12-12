@@ -1,4 +1,4 @@
-func000000000000001e:                   // @func000000000000001e
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	ubfx	w8, w1, #3, #6
 	add	w8, w8, #1
@@ -19,7 +19,7 @@ func000000000000000c:                   // @func000000000000000c
 	add	x0, x0, w8, uxtw #3
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	ubfx	w9, w1, #12, #2
 	mov	w8, #36                         // =0x24
@@ -27,7 +27,7 @@ func000000000000000e:                   // @func000000000000000e
 	umaddl	x0, w9, w8, x0
 	ret
                                         // -- End function
-func000000000000000a:                   // @func000000000000000a
+func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	ubfx	w8, w1, #27, #2
 	sub	w8, w8, #1

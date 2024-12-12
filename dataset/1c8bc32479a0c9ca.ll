@@ -1,6 +1,8 @@
 
-; 77 occurrences:
+; 79 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; folly/optimized/EventBase.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; g2o/optimized/edge_line2d_pointxy.cpp.ll
@@ -81,8 +83,8 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fneg double %2
-  %4 = fmul double %3, %1
-  %5 = fmul double %4, %0
+  %4 = fmul double %1, %3
+  %5 = fmul double %0, %4
   ret double %5
 }
 

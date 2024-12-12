@@ -13,6 +13,11 @@ func0000000000000006:                   # @func0000000000000006
 	sarb	$7, %al
 	andb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpb	$3, %sil
+	movl	$7, %eax
+	cmovbl	%edi, %eax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	cmpb	$2, %sil
 	movl	$1, %eax
@@ -27,4 +32,9 @@ func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax
 	cmpb	$-96, %sil
 	cmovnel	%edi, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpb	$97, %sil
+	cmovael	%edi, %eax
 	retq

@@ -1,5 +1,6 @@
 
-; 26 occurrences:
+; 27 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; hermes/optimized/dtoa.c.ll
@@ -27,7 +28,7 @@
 ; ruby/optimized/util.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65528
   %3 = icmp eq i32 %2, 0
@@ -43,7 +44,7 @@ entry:
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 197120
   %3 = icmp eq i32 %2, 197120

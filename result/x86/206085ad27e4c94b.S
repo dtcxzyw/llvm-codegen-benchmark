@@ -4,16 +4,9 @@ func0000000000000000:                   # @func0000000000000000
 	movslq	%edx, %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000026:                   # @func0000000000000026
-	subl	%esi, %edx
-	incl	%edx
-	movslq	%edx, %rax
-	imulq	$56, %rax, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000012:                   # @func0000000000000012
 	subl	%esi, %edx
-	addl	$-2, %edx
+	addl	$-3, %edx
 	movslq	%edx, %rax
 	addq	%rdi, %rax
 	retq
@@ -57,6 +50,12 @@ func0000000000000010:                   # @func0000000000000010
 func0000000000000034:                   # @func0000000000000034
 	subl	%esi, %edx
 	addl	$12, %edx
+	movslq	%edx, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000030:                   # @func0000000000000030
+	subl	%esi, %edx
+	incl	%edx
 	movslq	%edx, %rax
 	addq	%rdi, %rax
 	retq

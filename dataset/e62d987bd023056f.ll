@@ -13,13 +13,10 @@ entry:
   ret i64 %4
 }
 
-; 28 occurrences:
+; 25 occurrences:
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/ap.ll
-; linux/optimized/eht.ll
-; linux/optimized/he.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_dsi_dcs_backlight.ll
 ; linux/optimized/intel_dsi_vbt.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/mlme.ll
@@ -51,14 +48,13 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; linux/optimized/cfg.ll
 ; linux/optimized/chan.ll
 ; linux/optimized/driver-ops.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/link.ll
-; linux/optimized/match.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/offchannel.ll
 ; linux/optimized/rc80211_minstrel_ht.ll

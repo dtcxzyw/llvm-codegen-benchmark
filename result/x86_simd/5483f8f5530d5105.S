@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	4294967232                      # 0xffffffc0
-func0000000000000391:                   # @func0000000000000391
+func0000000000000721:                   # @func0000000000000721
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$6, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -9,7 +9,7 @@ func0000000000000391:                   # @func0000000000000391
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func00000000000007dc:                   # @func00000000000007dc
+func0000000000000fac:                   # @func0000000000000fac
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$6, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -19,7 +19,7 @@ func00000000000007dc:                   # @func00000000000007dc
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	vzeroupper
 	retq
-func00000000000007d1:                   # @func00000000000007d1
+func0000000000000fa1:                   # @func0000000000000fa1
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$6, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0

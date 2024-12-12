@@ -6,5 +6,5 @@ func0000000000000080:                   # @func0000000000000080
 func0000000000000011:                   # @func0000000000000011
 	testl	%edx, %edx
 	cmovnel	%edx, %esi
-	leal	4(%rsi,%rdi), %eax
+	leal	4(%rdi,%rsi), %eax
 	retq

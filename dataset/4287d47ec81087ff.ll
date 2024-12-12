@@ -1,40 +1,38 @@
 
-%struct.TypeInfo_.2634795 = type { i16, ptr, %union.SourceSpan.2634783, %union.anon.56.2634796 }
-%union.SourceSpan.2634783 = type { i64 }
-%union.anon.56.2634796 = type { %struct.anon.57.2634797 }
-%struct.anon.57.2634797 = type { ptr, ptr }
-%"class.llvm::MachineOperand.2949543" = type { i32, %union.anon.258.2949544, ptr, %"union.llvm::MachineOperand::ContentsUnion.2949545" }
-%union.anon.258.2949544 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.2949545" = type { %"class.llvm::ArrayRef.259.2949546" }
-%"class.llvm::ArrayRef.259.2949546" = type { ptr, i64 }
+%struct.TypeInfo_.2748181 = type { i16, ptr, %union.SourceSpan.2748169, %union.anon.56.2748182 }
+%union.SourceSpan.2748169 = type { i64 }
+%union.anon.56.2748182 = type { %struct.anon.57.2748183 }
+%struct.anon.57.2748183 = type { ptr, ptr }
+%struct.sqlite3_value.3662169 = type { %union.MemValue.3662170, ptr, i32, i16, i8, i8, ptr, i32, i32, ptr, ptr }
+%union.MemValue.3662170 = type { double }
 
-; 5 occurrences:
+; 7 occurrences:
 ; c3c/optimized/sema_decls.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_stmts.c.ll
-; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000086(i32 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw %struct.TypeInfo_.2634795, ptr %1, i64 %2
-  %4 = icmp eq i32 %0, 0
-  %5 = select i1 %4, ptr null, ptr %3
-  %6 = getelementptr nusw i8, ptr %5, i64 8
-  ret ptr %6
-}
-
-; 3 occurrences:
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/LiveVariables.cpp.ll
 ; llvm/optimized/MCCodeView.cpp.ll
+; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000087(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000187(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::MachineOperand.2949543", ptr %1, i64 %2
-  %4 = icmp eq i32 %0, -1
+  %3 = getelementptr nusw nuw %struct.TypeInfo_.2748181, ptr %1, i64 %2
+  %4 = icmp eq i32 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
+  ret ptr %6
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000107(i32 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw %struct.sqlite3_value.3662169, ptr %1, i64 %2
+  %4 = icmp eq i32 %0, 0
+  %5 = select i1 %4, ptr null, ptr %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 20
   ret ptr %6
 }
 

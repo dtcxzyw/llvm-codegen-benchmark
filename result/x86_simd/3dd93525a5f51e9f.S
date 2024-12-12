@@ -41,5 +41,5 @@ func0000000000000001:                   # @func0000000000000001
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1,1,1,1,1]
 	knotb	%k0, %k1
 	vmovdqa32	%ymm1, %ymm1 {%k1} {z}
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq

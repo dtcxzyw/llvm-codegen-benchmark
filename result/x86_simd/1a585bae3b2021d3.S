@@ -41,3 +41,17 @@ func0000000000000004:                   # @func0000000000000004
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
+.LCPI6_0:
+	.quad	9                               # 0x9
+func0000000000000014:                   # @func0000000000000014
+	vpcmpnltuq	.LCPI6_0(%rip){1to4}, %ymm1, %k1
+	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
+	vzeroupper
+	retq
+.LCPI7_0:
+	.quad	2147483647                      # 0x7fffffff
+func0000000000000018:                   # @func0000000000000018
+	vpcmpleuq	.LCPI7_0(%rip){1to4}, %ymm1, %k1
+	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
+	vzeroupper
+	retq

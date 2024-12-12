@@ -64,7 +64,7 @@
 ; wireshark/optimized/snoop.c.ll
 ; wireshark/optimized/wtap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0) #0 {
+define i1 @func00000000000000e1(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw nsw i64 1, %1
@@ -106,7 +106,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-obex.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0) #0 {
+define i1 @func00000000000000c1(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw i64 1, %1
@@ -123,7 +123,7 @@ entry:
 ; qemu/optimized/tcg-op-ldst.c.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0) #0 {
+define i1 @func00000000000000ec(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw nsw i64 1, %1
@@ -142,7 +142,7 @@ entry:
 ; php/optimized/zend_alloc.ll
 ; qemu/optimized/tcg-op-gvec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw i64 1, %1
@@ -156,7 +156,7 @@ entry:
 ; qemu/optimized/tcg-op-gvec.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0) #0 {
+define i1 @func000000000000004c(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw i64 1, %1
@@ -176,7 +176,7 @@ entry:
 ; postgres/optimized/encnames_shlib.ll
 ; postgres/optimized/encnames_srv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0) #0 {
+define i1 @func00000000000000cc(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw i64 1, %1
@@ -192,7 +192,7 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0) #0 {
+define i1 @func00000000000000c4(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw i64 1, %1
@@ -208,12 +208,28 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0) #0 {
+define i1 @func00000000000000c8(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw i64 1, %1
   %3 = and i64 %2, -2
   %4 = icmp ugt i64 %3, 8070450532247928832
+  ret i1 %4
+}
+
+; 5 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d4(i32 %0) #0 {
+entry:
+  %1 = zext nneg i32 %0 to i64
+  %2 = shl nuw i64 1, %1
+  %3 = and i64 %2, -2
+  %4 = icmp samesign ult i64 %3, 4097
   ret i1 %4
 }
 

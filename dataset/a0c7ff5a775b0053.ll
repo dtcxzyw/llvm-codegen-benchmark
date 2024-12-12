@@ -8,7 +8,7 @@
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; tls-rs/optimized/59h61akxu6z29dlt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a44(i32 %0, i32 %1) #0 {
+define i1 @func0000000000002884(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 %0, %1
   %3 = sub nuw i32 %1, %0
@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a48(i32 %0, i32 %1) #0 {
+define i1 @func0000000000002888(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 %0, %1
   %3 = sub nuw i32 %1, %0
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/gtest-all.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = sub i32 %1, %0
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/assemble.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = sub i32 %1, %0

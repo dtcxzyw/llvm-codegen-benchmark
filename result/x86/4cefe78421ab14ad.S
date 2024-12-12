@@ -1,3 +1,10 @@
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpl	$128, %edx
+	cmovaeq	%rax, %rdi
+	testb	$1, %sil
+	cmovneq	%rdi, %rax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax
 	testl	%edx, %edx

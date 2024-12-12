@@ -1,5 +1,24 @@
 
-; 29 occurrences:
+; 8 occurrences:
+; linux/optimized/drm_dp_mst_topology.ll
+; linux/optimized/intel_display.ll
+; linux/optimized/intel_guc_submission.ll
+; linux/optimized/mq-deadline.ll
+; linux/optimized/mqueue.ll
+; linux/optimized/page_alloc.ll
+; linux/optimized/ttm_pool.ll
+; ruby/optimized/gc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000042(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 88
+  %4 = icmp eq ptr %0, %3
+  %5 = icmp eq ptr %1, null
+  %6 = or i1 %4, %5
+  ret i1 %6
+}
+
+; 31 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
 ; libquic/optimized/values.cc.ll
@@ -22,6 +41,8 @@
 ; linux/optimized/ttm_pool.ll
 ; linux/optimized/workqueue.ll
 ; linux/optimized/xprt.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/X86FastPreTileConfig.cpp.ll
 ; minetest/optimized/shader.cpp.ll
 ; minetest/optimized/texturepaths.cpp.ll
@@ -30,16 +51,16 @@
 ; ruby/optimized/gc.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000422(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001842(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
-  %4 = icmp eq ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 88
+  %4 = icmp eq ptr %0, %3
   %5 = icmp eq ptr %1, null
   %6 = or i1 %4, %5
   ret i1 %6
 }
 
-; 222 occurrences:
+; 223 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/BVHLoader.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -52,6 +73,7 @@ entry:
 ; assimp/optimized/NDOLoader.cpp.ll
 ; assimp/optimized/OgreStructs.cpp.ll
 ; assimp/optimized/StepExporter.cpp.ll
+; boost/optimized/sort_by_side.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/sensitivity_analysis.cpp.ll
 ; casadi/optimized/test_linsol.cpp.ll
@@ -263,10 +285,10 @@ entry:
 ; yosys/optimized/test_autotb.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000438(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001858(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
-  %4 = icmp eq ptr %3, %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
+  %4 = icmp eq ptr %1, %3
   %5 = icmp ne ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6
@@ -285,10 +307,10 @@ entry:
 ; yosys/optimized/fsm_opt.ll
 ; yosys/optimized/smt2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000582(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001b02(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
-  %4 = icmp eq ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
+  %4 = icmp eq ptr %0, %3
   %5 = icmp ne ptr %1, null
   %6 = or i1 %4, %5
   ret i1 %6
@@ -297,10 +319,10 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000032(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000052(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 127
-  %4 = icmp ule ptr %3, %0
+  %4 = icmp uge ptr %0, %3
   %5 = icmp eq ptr %1, null
   %6 = or i1 %4, %5
   ret i1 %6
@@ -309,10 +331,10 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004a2(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001942(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
-  %4 = icmp uge ptr %3, %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
+  %4 = icmp ule ptr %1, %3
   %5 = icmp eq ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6
@@ -321,29 +343,12 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/locks.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000318(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -8
-  %4 = icmp ne ptr %3, %1
+  %4 = icmp ne ptr %1, %3
   %5 = icmp ne ptr %0, null
   %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 6 occurrences:
-; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/intel_display.ll
-; linux/optimized/intel_guc_submission.ll
-; linux/optimized/mq-deadline.ll
-; linux/optimized/mqueue.ll
-; linux/optimized/ttm_pool.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %2, i64 -48
-  %4 = icmp eq ptr %3, %0
-  %5 = icmp eq ptr %1, null
-  %6 = or i1 %4, %5
   ret i1 %6
 }
 

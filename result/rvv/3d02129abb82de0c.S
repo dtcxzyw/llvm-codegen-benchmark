@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v9, v9, 7
 	vmseq.vi	v9, v9, 0

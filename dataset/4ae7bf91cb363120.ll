@@ -1,9 +1,10 @@
 
-; 134 occurrences:
+; 135 occurrences:
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
 ; abc/optimized/exorBits.c.ll
 ; abc/optimized/kitSop.c.ll
+; boost/optimized/operations.ll
 ; c3c/optimized/build_options.c.ll
 ; c3c/optimized/c_abi.c.ll
 ; c3c/optimized/parse_expr.c.ll
@@ -142,7 +143,7 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
@@ -151,6 +152,7 @@ entry:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; libquic/optimized/des.c.ll
+; lvgl/optimized/lv_color.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; Function Attrs: nounwind
@@ -172,14 +174,15 @@ entry:
   ret i32 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; libwebp/optimized/extras.c.ll
 ; linux/optimized/regset.ll
+; lvgl/optimized/lv_color.ll
 ; node/optimized/simdutf.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 1
+  %1 = lshr i32 %0, 16
   %2 = or disjoint i32 %1, %0
   ret i32 %2
 }

@@ -171,12 +171,12 @@
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -11904
   %4 = icmp ult i32 %3, 30288
   %5 = select i1 %1, i1 %4, i1 false
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -331,7 +331,7 @@ entry:
   %4 = icmp ult i32 %3, -67108353
   %not. = xor i1 %1, true
   %5 = select i1 %not., i1 true, i1 %4
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

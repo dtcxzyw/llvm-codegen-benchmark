@@ -1,8 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
-	addw	%di, %si
+	addw	%si, %di
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	addw	%di, %si
+func0000000000000021:                   # @func0000000000000021
+	addw	%si, %di
 	sete	%al
 	retq

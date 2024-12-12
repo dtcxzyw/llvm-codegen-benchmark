@@ -6,7 +6,7 @@ func0000000000000020:                   # @func0000000000000020
 	cmovbl	%esi, %eax
 	addl	%edi, %eax
 	retq
-func00000000000000e0:                   # @func00000000000000e0
+func00000000000001a0:                   # @func00000000000001a0
 	movl	$65536, %eax                    # imm = 0x10000
 	subl	%edx, %eax
 	addl	%esi, %edx

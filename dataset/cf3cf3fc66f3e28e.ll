@@ -1,63 +1,59 @@
 
-%"class.std::vector.2797094" = type { %"struct.std::_Vector_base.2797095" }
-%"struct.std::_Vector_base.2797095" = type { %"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl.2797096" }
-%"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl.2797096" = type { %"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl_data.2797097" }
-%"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl_data.2797097" = type { ptr, ptr, ptr }
-%"struct.clang::DeclaratorChunk.3009064" = type { i32, %"class.clang::SourceLocation.3008922", %"class.clang::SourceLocation.3008922", %"class.clang::ParsedAttributesView.3009065", %union.anon.1799.3009066 }
-%"class.clang::SourceLocation.3008922" = type { i32 }
-%"class.clang::ParsedAttributesView.3009065" = type { %"class.clang::SourceRange.3009021", %"class.llvm::SmallVector.654.3009067" }
-%"class.clang::SourceRange.3009021" = type { %"class.clang::SourceLocation.3008922", %"class.clang::SourceLocation.3008922" }
-%"class.llvm::SmallVector.654.3009067" = type { %"class.llvm::SmallVectorImpl.655.3009056", %"struct.llvm::SmallVectorStorage.658.3009068" }
-%"class.llvm::SmallVectorImpl.655.3009056" = type { %"class.llvm::SmallVectorTemplateBase.656.3009058" }
-%"class.llvm::SmallVectorTemplateBase.656.3009058" = type { %"class.llvm::SmallVectorTemplateCommon.657.3009059" }
-%"class.llvm::SmallVectorTemplateCommon.657.3009059" = type { %"class.llvm::SmallVectorBase.3008985" }
-%"class.llvm::SmallVectorBase.3008985" = type { ptr, i32, i32 }
-%"struct.llvm::SmallVectorStorage.658.3009068" = type { [48 x i8] }
-%union.anon.1799.3009066 = type { %"struct.clang::DeclaratorChunk::ArrayTypeInfo.3009069", [72 x i8] }
-%"struct.clang::DeclaratorChunk::ArrayTypeInfo.3009069" = type { i8, ptr }
-%struct.xhci_root_port_bw_info.3345370 = type { %struct.list_head.3345367, i32, %struct.xhci_interval_bw_table.3345371 }
-%struct.list_head.3345367 = type { ptr, ptr }
-%struct.xhci_interval_bw_table.3345371 = type { i32, [16 x %struct.xhci_interval_bw.3345372], i32, i32, i32 }
-%struct.xhci_interval_bw.3345372 = type { i32, %struct.list_head.3345367, [3 x i32] }
-%"struct.smt::theory_dense_diff_logic<smt::mi_ext>::cell.3459058" = type { i32, %class.inf_rational.3459056, %class.ptr_vector.3459059 }
-%class.inf_rational.3459056 = type { %class.rational.3459052, %class.rational.3459052 }
-%class.rational.3459052 = type { %class.mpq.3459053 }
-%class.mpq.3459053 = type { %class.mpz.3459054, %class.mpz.3459054 }
-%class.mpz.3459054 = type { i32, i8, ptr }
-%class.ptr_vector.3459059 = type { %class.vector.3459060 }
-%class.vector.3459060 = type { ptr }
-%struct.lua_TValue.3498710 = type { %union.Value.3498711, i32 }
-%union.Value.3498711 = type { ptr }
+%"class.std::vector.2909148" = type { %"struct.std::_Vector_base.2909149" }
+%"struct.std::_Vector_base.2909149" = type { %"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl.2909150" }
+%"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl.2909150" = type { %"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl_data.2909151" }
+%"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl_data.2909151" = type { ptr, ptr, ptr }
+%"struct.clang::DeclaratorChunk.3202490" = type { i32, %"class.clang::SourceLocation.3202348", %"class.clang::SourceLocation.3202348", %"class.clang::ParsedAttributesView.3202491", %union.anon.1799.3202492 }
+%"class.clang::SourceLocation.3202348" = type { i32 }
+%"class.clang::ParsedAttributesView.3202491" = type { %"class.clang::SourceRange.3202447", %"class.llvm::SmallVector.654.3202493" }
+%"class.clang::SourceRange.3202447" = type { %"class.clang::SourceLocation.3202348", %"class.clang::SourceLocation.3202348" }
+%"class.llvm::SmallVector.654.3202493" = type { %"class.llvm::SmallVectorImpl.655.3202482", %"struct.llvm::SmallVectorStorage.658.3202494" }
+%"class.llvm::SmallVectorImpl.655.3202482" = type { %"class.llvm::SmallVectorTemplateBase.656.3202484" }
+%"class.llvm::SmallVectorTemplateBase.656.3202484" = type { %"class.llvm::SmallVectorTemplateCommon.657.3202485" }
+%"class.llvm::SmallVectorTemplateCommon.657.3202485" = type { %"class.llvm::SmallVectorBase.3202411" }
+%"class.llvm::SmallVectorBase.3202411" = type { ptr, i32, i32 }
+%"struct.llvm::SmallVectorStorage.658.3202494" = type { [48 x i8] }
+%union.anon.1799.3202492 = type { %"struct.clang::DeclaratorChunk::ArrayTypeInfo.3202495", [72 x i8] }
+%"struct.clang::DeclaratorChunk::ArrayTypeInfo.3202495" = type { i8, ptr }
+%struct.xhci_root_port_bw_info.3534127 = type { %struct.list_head.3534128, i32, %struct.xhci_interval_bw_table.3534129 }
+%struct.list_head.3534128 = type { ptr, ptr }
+%struct.xhci_interval_bw_table.3534129 = type { i32, [16 x %struct.xhci_interval_bw.3534130], i32, i32, i32 }
+%struct.xhci_interval_bw.3534130 = type { i32, %struct.list_head.3534128, [3 x i32] }
+%"struct.smt::theory_dense_diff_logic<smt::mi_ext>::cell.3643359" = type { i32, %class.inf_rational.3643357, %class.ptr_vector.3643360 }
+%class.inf_rational.3643357 = type { %class.rational.3643353, %class.rational.3643353 }
+%class.rational.3643353 = type { %class.mpq.3643354 }
+%class.mpq.3643354 = type { %class.mpz.3643355, %class.mpz.3643355 }
+%class.mpz.3643355 = type { i32, i8, ptr }
+%class.ptr_vector.3643360 = type { %class.vector.3643361 }
+%class.vector.3643361 = type { ptr }
+%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
+%union.Value.3680876 = type { ptr }
 
-; 5 occurrences:
-; openblas/optimized/dormql.c.ll
-; openblas/optimized/dormrq.c.ll
-; openblas/optimized/dormrz.c.ll
-; openblas/optimized/dtrevc3.c.ll
+; 1 occurrences:
 ; ruby/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -1
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; ruby/optimized/regenc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000101(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 80 occurrences:
+; 82 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
@@ -66,6 +62,7 @@ entry:
 ; assimp/optimized/Q3DLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; cvc5/optimized/attempt_solution_simplex.cpp.ll
 ; cvc5/optimized/congruence_manager.cpp.ll
@@ -85,6 +82,7 @@ entry:
 ; draco/optimized/mesh_cleanup.cc.ll
 ; draco/optimized/ply_decoder.cc.ll
 ; draco/optimized/shannon_entropy.cc.ll
+; draco/optimized/symbol_encoding.cc.ll
 ; draco/optimized/triangle_soup_mesh_builder.cc.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
@@ -139,16 +137,16 @@ entry:
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/user_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw ptr, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 245 occurrences:
+; 274 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -240,7 +238,6 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; llvm/optimized/ELF.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
-; llvm/optimized/ExprConstant.cpp.ll
 ; minetest/optimized/settings.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -315,7 +312,6 @@ entry:
 ; oiio/optimized/zfile.cpp.ll
 ; opencv/optimized/bilateral_texture_filter.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
-; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/generalized_hough.cpp.ll
 ; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
@@ -394,13 +390,44 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1iclhw87evxdlo4w8mftuzy1q.ll
+; zed-rs/optimized/27vlvcehd5fwhym4kjj7notsh.ll
+; zed-rs/optimized/2h1nnr25ysxgaelpjnym4eorn.ll
+; zed-rs/optimized/4jorz9az93w02qp1j17ku3v0j.ll
+; zed-rs/optimized/4wl6luh08kf5panbyu7di2k6e.ll
+; zed-rs/optimized/4yj2hlxw19fp3dolnhsg3xkpy.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/6t66wyfdhcx0enyarsxt68bq7.ll
+; zed-rs/optimized/71uytbn1jy6440q3d57n4okna.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/8yy2zhy2bdzv8bn57pipvxcw7.ll
+; zed-rs/optimized/9uyga23501g5fm2owj6o8xm6i.ll
+; zed-rs/optimized/azv0j1dyv87nnzewhi6axt1ps.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/biea7u9y4mp6m3ifunknc64xm.ll
+; zed-rs/optimized/bwvht24uf41c89mbhdihda1iu.ll
+; zed-rs/optimized/bzgpsrur2ydjgs01q4vmv48xa.ll
+; zed-rs/optimized/c8rrq6pnwhh8lrfnv140dr3y1.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/d85rks8fjothinwf2xlu2hk13.ll
+; zed-rs/optimized/dd8ztmg64g4x9ypkzwkofy6vi.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/dotykqg7r97h0htpk8r9ip155.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
+; zed-rs/optimized/ez5ezaept0c4zvcatfvkpkciv.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr ptr, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 8
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -410,28 +437,12 @@ entry:
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000068(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %5, %0
-  ret i1 %6
-}
-
-; 5 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-static.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; openjdk/optimized/hb-common.ll
-; openjdk/optimized/hb-ot-font.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001e8(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  %6 = icmp ult ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -449,12 +460,12 @@ entry:
 ; openjdk/optimized/hb-ot-name.ll
 ; php/optimized/zend_language_scanner.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -475,52 +486,36 @@ entry:
 ; z3/optimized/sat_ddfw.cpp.ll
 ; z3/optimized/sat_local_search.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000261(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 4
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
-  ret i1 %6
-}
-
-; 5 occurrences:
-; abc/optimized/satSolver.c.ll
-; abc/optimized/satSolver2.c.ll
-; abc/optimized/satSolver3.c.ll
-; freetype/optimized/truetype.c.ll
-; icu/optimized/decNumber.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  %6 = icmp ugt ptr %5, %0
+  %5 = getelementptr nusw nuw i64, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.std::vector.2797094", ptr %1, i64 %3
+  %4 = getelementptr %"class.std::vector.2909148", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -24
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000006c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %"struct.clang::DeclaratorChunk.3009064", ptr %1, i64 %4
-  %6 = icmp ne ptr %5, %0
+  %5 = getelementptr nusw nuw %"struct.clang::DeclaratorChunk.3202490", ptr %1, i64 %4
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
@@ -528,12 +523,12 @@ entry:
 ; gromacs/optimized/findallgputasks.cpp.ll
 ; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000381(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i32, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -544,32 +539,20 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.xhci_root_port_bw_info.3345370, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/dns_key.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -1
-  %6 = icmp ugt ptr %5, %0
+  %5 = getelementptr %struct.xhci_root_port_bw_info.3534127, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; z3/optimized/theory_dense_diff_logic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000161(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %"struct.smt::theory_dense_diff_logic<smt::mi_ext>::cell.3459058", ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw %"struct.smt::theory_dense_diff_logic<smt::mi_ext>::cell.3643359", ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -577,36 +560,49 @@ entry:
 ; freetype/optimized/truetype.c.ll
 ; luajit/optimized/minilua.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.lua_TValue.3498710, ptr %1, i64 %3
+  %4 = getelementptr %struct.lua_TValue.3680875, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 16
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; freetype/optimized/truetype.c.ll
+; icu/optimized/decNumber.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003e4(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 3
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 1
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000065(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -10
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp uge ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ule ptr %0, %5
   ret i1 %6
 }
 

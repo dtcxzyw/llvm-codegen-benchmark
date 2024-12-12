@@ -16,7 +16,7 @@ entry:
   %4 = shl nuw i16 %1, 8
   %5 = or disjoint i16 %4, %3
   %6 = sitofp i16 %5 to float
-  %7 = fmul float %6, %0
+  %7 = fmul float %0, %6
   ret float %7
 }
 

@@ -23,7 +23,7 @@
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i16 %0) #0 {
+define i1 @func0000000000000046(i16 %0) #0 {
 entry:
   %.mask = and i16 %0, 128
   %1 = icmp ne i16 %.mask, 0
@@ -72,7 +72,7 @@ entry:
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i16 %0) #0 {
+define i1 @func000000000000004a(i16 %0) #0 {
 entry:
   %.mask = and i16 %0, 16384
   %1 = icmp eq i16 %.mask, 0

@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 19 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; serde-rs-json/optimized/3o41byb1p1zh3720.ll
@@ -16,6 +16,9 @@
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wasmtime-rs/optimized/r9f6jef0e11b5fk.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define { i16, i16 } @func0000000000000000(i1 %0) #0 {
 entry:

@@ -23,18 +23,19 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/TargetLoweringBase.cpp.ll
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 4294967295
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

@@ -37,9 +37,10 @@ entry:
   ret i1 %4
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; abc/optimized/darLib.c.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
+; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/gmx_cluster.cpp.ll
 ; gromacs/optimized/gmx_rmsdist.cpp.ll
 ; gromacs/optimized/kernel_ref_prune.cpp.ll
@@ -175,7 +176,7 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; gromacs/optimized/kernel_ref.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -186,6 +187,7 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-paint-extents.ll
 ; qdrant-rs/optimized/4iacc535829shmz2.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, float %1, float %2) #0 {
 entry:
@@ -289,11 +291,12 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
-; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/rdf.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
@@ -310,8 +313,7 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
-; gromacs/optimized/cellsizes.cpp.ll
+; 7 occurrences:
 ; gromacs/optimized/sstebz.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll

@@ -16,7 +16,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	imull	%esi, %edx
 	testl	%edx, %edx
 	setne	%al

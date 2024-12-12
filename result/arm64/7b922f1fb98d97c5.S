@@ -1,34 +1,15 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ushll2	v5.8h, v0.16b, #0
-	ushll	v0.8h, v0.8b, #0
-	mov	w8, #258                        // =0x102
-	shl	v4.8h, v4.8h, #8
-	shl	v3.8h, v3.8h, #8
-	shl	v5.8h, v5.8h, #15
-	shl	v0.8h, v0.8h, #15
-	orr	v3.16b, v3.16b, v1.16b
-	orr	v1.16b, v4.16b, v2.16b
-	dup	v2.8h, w8
-	cmlt	v4.8h, v5.8h, #0
-	cmlt	v0.8h, v0.8h, #0
-	bif	v1.16b, v2.16b, v4.16b
-	bsl	v0.16b, v3.16b, v2.16b
+	orr	w8, w1, w2, lsl #8
+	tst	w0, #0x1
+	mov	w9, #258                        // =0x102
+	csel	w0, w8, w9, ne
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	ushll2	v5.8h, v0.16b, #0
-	ushll	v0.8h, v0.8b, #0
-	shl	v3.8h, v3.8h, #8
-	shl	v4.8h, v4.8h, #8
-	shl	v5.8h, v5.8h, #15
-	shl	v0.8h, v0.8h, #15
-	orr	v3.16b, v3.16b, v1.16b
-	orr	v1.16b, v4.16b, v2.16b
-	cmlt	v2.8h, v5.8h, #0
-	cmlt	v0.8h, v0.8h, #0
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v3.16b, v0.16b
+	orr	w8, w1, w2, lsl #8
+	tst	w0, #0x1
+	csel	w0, w8, wzr, ne
 	ret
                                         // -- End function

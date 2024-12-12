@@ -1,8 +1,6 @@
 
-; 6 occurrences:
-; linux/optimized/ptp_kvm_x86.ll
+; 4 occurrences:
 ; linux/optimized/pvclock.ll
-; linux/optimized/vclock_gettime.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; spike/optimized/s_mulAddF16.ll
 ; velox/optimized/DenseHll.cpp.ll

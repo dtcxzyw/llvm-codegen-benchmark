@@ -1,24 +1,12 @@
-func0000000000000148:                   // @func0000000000000148
+func0000000000000288:                   // @func0000000000000288
 // %bb.0:                               // %entry
-	cmlt	v6.2d, v0.2d, #0
-	mov	v16.16b, v0.16b
-	mov	w8, #65                         // =0x41
-	cmlt	v7.2d, v1.2d, #0
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v3.2d, v3.2d, v5.2d
-	usra	v16.2d, v6.2d, #62
-	mov	v6.16b, v1.16b
-	usra	v6.2d, v7.2d, #62
-	dup	v7.2d, x8
-	sshr	v16.2d, v16.2d, #2
-	sshr	v6.2d, v6.2d, #2
-	cmhi	v1.2d, v7.2d, v1.2d
-	cmhi	v0.2d, v7.2d, v0.2d
-	cmgt	v2.2d, v2.2d, v16.2d
-	cmgt	v3.2d, v3.2d, v6.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	uzp1	v2.4s, v2.4s, v3.4s
-	orr	v0.16b, v0.16b, v2.16b
-	xtn	v0.4h, v0.4s
+	add	x8, x0, #3
+	cmp	x0, #0
+	sub	x9, x1, x2
+	csel	x8, x8, x0, lt
+	cmp	x0, #65
+	asr	x8, x8, #2
+	ccmp	x9, x8, #0, hs
+	cset	w0, gt
 	ret
                                         // -- End function

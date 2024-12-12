@@ -1,6 +1,6 @@
 
-%struct.pm_constant_pool_bucket_t.2485450 = type { i32, i32 }
-%struct.FuncTypeEntry.2635290 = type { i32, ptr }
+%struct.pm_constant_pool_bucket_t.2600930 = type { i32, i32 }
+%struct.FuncTypeEntry.2748662 = type { i32, ptr }
 
 ; 3 occurrences:
 ; linux/optimized/sch_api.ll
@@ -11,13 +11,13 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = add i32 %3, -1
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr %struct.pm_constant_pool_bucket_t.2485450, ptr %0, i64 %6
+  %7 = getelementptr %struct.pm_constant_pool_bucket_t.2600930, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 362 occurrences:
+; 361 occurrences:
 ; c3c/optimized/types.c.ll
 ; hdf5/optimized/H5C.c.ll
 ; hdf5/optimized/H5Ctag.c.ll
@@ -73,7 +73,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
@@ -381,13 +380,13 @@ entry:
 ; z3/optimized/wmax.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = add i32 %3, -1
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw %struct.FuncTypeEntry.2635290, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.FuncTypeEntry.2748662, ptr %0, i64 %6
   ret ptr %7
 }
 

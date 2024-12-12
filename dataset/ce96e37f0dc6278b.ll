@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; folly/optimized/DynamicParser.cpp.ll
 ; folly/optimized/LogConfigParser.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
@@ -15,6 +15,7 @@
 ; ockam-rs/optimized/96cf98834y6yscu.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; wireshark/optimized/packet-steam-ihs-discovery.c.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:

@@ -22,9 +22,9 @@ func000000000000000c:                   # @func000000000000000c
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k0
 	vptestmd	%xmm2, %xmm2, %k1
-	korw	%k1, %k0, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vmovdqa64	%ymm1, %ymm0 {%k1}
+	korw	%k1, %k0, %k0
+	knotw	%k0, %k1
+	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI3_0:
 	.long	15                              # 0xf

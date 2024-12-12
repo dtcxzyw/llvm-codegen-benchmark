@@ -5,18 +5,17 @@
 define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = mul i32 %3, 1103515245
   %5 = add i32 %4, 12345
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libwebp/optimized/upsampling.c.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007f(i32 %0, i32 %1) #0 {
 entry:

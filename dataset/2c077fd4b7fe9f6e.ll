@@ -14,7 +14,7 @@
 define i16 @func00000000000001fa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 7500
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   %6 = lshr i32 %5, 8
   %7 = trunc nuw i32 %6 to i16
@@ -27,7 +27,7 @@ entry:
 define i16 @func00000000000000a8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 77
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = lshr i32 %5, 8
   %7 = trunc i32 %6 to i16
@@ -40,7 +40,7 @@ entry:
 define i16 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 268434099
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = lshr i32 %5, 12
   %7 = trunc i32 %6 to i16
@@ -53,7 +53,7 @@ entry:
 define i16 @func0000000000000080(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 6
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = lshr i32 %5, 6
   %7 = trunc i32 %6 to i16
@@ -66,7 +66,7 @@ entry:
 define i16 @func0000000000000102(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %2, 9617
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = lshr i32 %5, 16
   %7 = trunc nuw i32 %6 to i16

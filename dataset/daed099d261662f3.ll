@@ -1,9 +1,12 @@
 
-; 4 occurrences:
+; 7 occurrences:
 ; actix-rs/optimized/4ph9shp8ywczh7mk.ll
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; wasmtime-rs/optimized/1xbg7k9kapo8ag7l.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
 ; Function Attrs: nounwind
 define { i1, i8 } @func000000000000000c(i64 %0) #0 {
 entry:
@@ -22,8 +25,9 @@ entry:
   ret { i1, i8 } %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define { i1, i8 } @func0000000000000004(i64 %0) #0 {
 entry:

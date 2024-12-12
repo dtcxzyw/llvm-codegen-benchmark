@@ -1,23 +1,13 @@
 
-%struct.rand_data_pass_st.2518515 = type { ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i64, i64, i64, i64, i64, i64, i64, i64, i64, i64 }
-%struct.vhost_memory_region.2591552 = type { i64, i64, i64, i64 }
-%struct.Kf_Cut_t_.2765397 = type { i64, i32, i32, float, i32, i32, i32, [16 x i32] }
-%struct.FilterFrameCtxt.3196558 = type { ptr, i32, i32, i32, i32, i32, ptr, ptr, i32, i32, %struct.AV1PixelRect.3196559 }
-%struct.AV1PixelRect.3196559 = type { i32, i32, i32, i32 }
-%"union.absl::debian2::container_internal::map_slot_type.3293136" = type { %"struct.std::pair.44.3293137" }
-%"struct.std::pair.44.3293137" = type { %"class.std::__cxx11::basic_string.3293110", i64 }
-%"class.std::__cxx11::basic_string.3293110" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3293112", i64, %union.anon.3293113 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3293112" = type { ptr }
-%union.anon.3293113 = type { i64, [8 x i8] }
+%"class.hermes::vm::PinnedHermesValue.3081022" = type { %"class.hermes::vm::HermesValue.3081023" }
+%"class.hermes::vm::HermesValue.3081023" = type { i64 }
 
-; 23 occurrences:
-; abc/optimized/abcExact.c.ll
-; abc/optimized/giaKf.c.ll
+; 21 occurrences:
 ; bullet3/optimized/btMultiBody.ll
 ; cpython/optimized/ceval.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/print_settings.c.ll
-; libquic/optimized/e_rc2.c.ll
+; icu/optimized/decNumber.ll
 ; linux/optimized/hdac_stream.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/hugetlb.ll
@@ -44,7 +34,7 @@ entry:
   ret ptr %5
 }
 
-; 127 occurrences:
+; 57 occurrences:
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/ioReadBlif.c.ll
@@ -63,86 +53,16 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; git/optimized/combine-diff.ll
-; gromacs/optimized/dbdsdc.cpp.ll
-; gromacs/optimized/dgesdd.cpp.ll
-; gromacs/optimized/dlar1vx.cpp.ll
-; gromacs/optimized/dlarrex.cpp.ll
-; gromacs/optimized/dlarrfx.cpp.ll
-; gromacs/optimized/dlarrvx.cpp.ll
-; gromacs/optimized/dlasd6.cpp.ll
-; gromacs/optimized/dlasq2.cpp.ll
-; gromacs/optimized/dlasq3.cpp.ll
-; gromacs/optimized/dlasq5.cpp.ll
-; gromacs/optimized/dlasq6.cpp.ll
-; gromacs/optimized/dstebz.cpp.ll
-; gromacs/optimized/dstegr.cpp.ll
-; gromacs/optimized/gmx_arpack.cpp.ll
+; git/optimized/merge-ort.ll
 ; gromacs/optimized/pairlist.cpp.ll
-; gromacs/optimized/sbdsdc.cpp.ll
-; gromacs/optimized/sgesdd.cpp.ll
-; gromacs/optimized/slar1vx.cpp.ll
-; gromacs/optimized/slarrex.cpp.ll
-; gromacs/optimized/slarrfx.cpp.ll
-; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
-; gromacs/optimized/slasq2.cpp.ll
-; gromacs/optimized/slasq3.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
-; gromacs/optimized/slasq6.cpp.ll
-; gromacs/optimized/sstebz.cpp.ll
-; gromacs/optimized/sstegr.cpp.ll
 ; gromacs/optimized/trees.c.ll
+; icu/optimized/decNumber.ll
 ; icu/optimized/package.ll
+; libquic/optimized/e_rc2.c.ll
 ; libquic/optimized/trees.c.ll
-; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/e820.ll
 ; luajit/optimized/minilua.ll
-; openblas/optimized/dbdsdc.c.ll
-; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgedmd.c.ll
-; openblas/optimized/dgedmdq.c.ll
-; openblas/optimized/dgees.c.ll
-; openblas/optimized/dgeesx.c.ll
-; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgels.c.ll
-; openblas/optimized/dgelst.c.ll
-; openblas/optimized/dgelsx.c.ll
-; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgesdd.c.ll
-; openblas/optimized/dgesvd.c.ll
-; openblas/optimized/dgesvdq.c.ll
-; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
-; openblas/optimized/dggevx.c.ll
-; openblas/optimized/dggglm.c.ll
-; openblas/optimized/dlaed0.c.ll
-; openblas/optimized/dlaed1.c.ll
-; openblas/optimized/dlaed3.c.ll
-; openblas/optimized/dlaed8.c.ll
-; openblas/optimized/dlaeda.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
-; openblas/optimized/dlaqr2.c.ll
-; openblas/optimized/dlaqr3.c.ll
-; openblas/optimized/dlar1v.c.ll
-; openblas/optimized/dlarrd.c.ll
-; openblas/optimized/dlarre.c.ll
-; openblas/optimized/dlarrf.c.ll
-; openblas/optimized/dlarrj.c.ll
-; openblas/optimized/dlarrv.c.ll
-; openblas/optimized/dlasq2.c.ll
-; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dlasq6.c.ll
-; openblas/optimized/dsfrk.c.ll
-; openblas/optimized/dsptrd.c.ll
-; openblas/optimized/dsptrf.c.ll
-; openblas/optimized/dsptri.c.ll
-; openblas/optimized/dsptrs.c.ll
-; openblas/optimized/dstebz.c.ll
-; openblas/optimized/dstemr.c.ll
-; openblas/optimized/dtgex2.c.ll
-; openblas/optimized/dtgsen.c.ll
-; openblas/optimized/dtgsyl.c.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; openjdk/optimized/bootstrapInfo.ll
@@ -173,19 +93,19 @@ entry:
 ; zlib/optimized/trees.c.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000030(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 24
   %4 = getelementptr i32, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -4
   ret ptr %5
 }
 
-; 136 occurrences:
+; 126 occurrences:
+; abc/optimized/abcExact.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/dauDsd.c.ll
-; abc/optimized/extraUtilEnum.c.ll
 ; abc/optimized/giaKf.c.ll
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/ifTune.c.ll
@@ -200,36 +120,24 @@ entry:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
-; box2d/optimized/b2_collide_circle.cpp.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
 ; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; darktable/optimized/amaze.cc.ll
-; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; diesel-rs/optimized/4dmkc4an6cvf22v6.ll
-; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/xvgr.cpp.ll
-; hermes/optimized/Interpreter.cpp.ll
 ; icu/optimized/caniter.ll
 ; icu/optimized/genmbcs.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; libquic/optimized/a_bitstr.c.ll
 ; libquic/optimized/s3_srvr.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; luau/optimized/ludata.cpp.ll
-; lz4/optimized/lz4hc.c.ll
-; meshlab/optimized/GLLogStream.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_layer.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
@@ -238,16 +146,12 @@ entry:
 ; meshlab/optimized/io_expe.cpp.ll
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mainwindow_Init.cpp.ll
 ; meshlab/optimized/meshmethods.cpp.ll
-; meshlab/optimized/qualitymapperdialog.cpp.ll
-; meshlab/optimized/solver.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; nori/optimized/bitmap.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
-; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/feature.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
@@ -279,6 +183,11 @@ entry:
 ; openjdk/optimized/signature.ll
 ; openjdk/optimized/verifier.ll
 ; openmpi/optimized/coll_sm_module.ll
+; openspiel/optimized/QuickTricks.cpp.ll
+; openspiel/optimized/dynamic_routing_utils.cc.ll
+; openspiel/optimized/history_tree.cc.ll
+; openspiel/optimized/spades.cc.ll
+; openspiel/optimized/state_distribution.cc.ll
 ; openssl/optimized/evp_test-bin-evp_test.ll
 ; openssl/optimized/libcrypto-lib-asn_mime.ll
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
@@ -289,7 +198,9 @@ entry:
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; openusd/optimized/cdef.c.ll
 ; openusd/optimized/fastCompression.cpp.ll
+; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/stbImage.cpp.ll
+; openusd/optimized/thread_common.c.ll
 ; php/optimized/dns.ll
 ; php/optimized/ir_ra.ll
 ; php/optimized/zend_API.ll
@@ -298,7 +209,6 @@ entry:
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_object_handlers.ll
 ; php/optimized/zend_objects.ll
-; php/optimized/zend_ssa.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
@@ -320,22 +230,22 @@ entry:
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 48
-  %4 = getelementptr %struct.rand_data_pass_st.2518515, ptr %3, i64 %2, i32 9
+  %.idx = mul nsw i64 %2, 160
+  %3 = getelementptr i8, ptr %0, i64 120
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; cpython/optimized/assemble.ll
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/instrumentation.ll
 ; cpython/optimized/listobject.ll
 ; cpython/optimized/optimizer.ll
-; icu/optimized/decNumber.ll
 ; linux/optimized/build_policy.ll
 ; linux/optimized/core.ll
 ; linux/optimized/dquot.ll
@@ -363,37 +273,46 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-nbap.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 8
-  %4 = getelementptr %struct.vhost_memory_region.2591552, ptr %3, i64 %2, i32 2
+  %.idx = shl nsw i64 %2, 5
+  %3 = getelementptr i8, ptr %0, i64 24
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 
-; 7 occurrences:
+; 4 occurrences:
 ; git/optimized/apply.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_D64.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_F32.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 -4
   %4 = getelementptr nusw i8, ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
+; lz4/optimized/lz4hc.c.ll
+; opencv/optimized/brisk.cpp.ll
+; php/optimized/zend_ssa.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002b(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr nusw i8, ptr %0, i64 -64
+  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
 entry:
@@ -404,7 +323,7 @@ entry:
   ret ptr %5
 }
 
-; 68 occurrences:
+; 40 occurrences:
 ; abc/optimized/giaCSat2.c.ll
 ; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/giaMinLut2.c.ll
@@ -428,19 +347,7 @@ entry:
 ; darktable/optimized/introspection_colorout.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/print_settings.c.ll
-; gromacs/optimized/dlar1vx.cpp.ll
-; gromacs/optimized/dlarrbx.cpp.ll
-; gromacs/optimized/dlasd8.cpp.ll
-; gromacs/optimized/dlasq2.cpp.ll
-; gromacs/optimized/dlasq3.cpp.ll
-; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/matio.cpp.ll
-; gromacs/optimized/slar1vx.cpp.ll
-; gromacs/optimized/slarrbx.cpp.ll
-; gromacs/optimized/slasd8.cpp.ll
-; gromacs/optimized/slasq2.cpp.ll
-; gromacs/optimized/slasq3.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; icu/optimized/utext.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; meshlab/optimized/additionalgui.cpp.ll
@@ -452,6 +359,98 @@ entry:
 ; meshlab/optimized/multiViewer_Container.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
+; opencv/optimized/find_ellipses.cpp.ll
+; openusd/optimized/reconintra.c.ll
+; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; redis/optimized/hyperloglog.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000038(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %4 = getelementptr nusw float, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %4 = getelementptr nusw nuw float, ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
+  ret ptr %5
+}
+
+; 9 occurrences:
+; abc/optimized/extraUtilEnum.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; libquic/optimized/a_bitstr.c.ll
+; luau/optimized/ludata.cpp.ll
+; meshlab/optimized/GLLogStream.cpp.ll
+; meshlab/optimized/io_collada.cpp.ll
+; meshlab/optimized/mainwindow_Init.cpp.ll
+; meshlab/optimized/qualitymapperdialog.cpp.ll
+; opencv/optimized/brisk.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %4 = getelementptr nusw float, ptr %3, i64 %2
+  %5 = getelementptr nusw i8, ptr %4, i64 -8
+  ret ptr %5
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr nusw i8, ptr %0, i64 -16
+  %4 = getelementptr nusw nuw float, ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
+  ret ptr %5
+}
+
+; 7 occurrences:
+; gromacs/optimized/gmx_arpack.cpp.ll
+; hermes/optimized/Interpreter.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr nusw i8, ptr %0, i64 -64
+  %4 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3081022", ptr %3, i64 %2
+  %5 = getelementptr nusw i8, ptr %4, i64 -8
+  ret ptr %5
+}
+
+; 30 occurrences:
+; gromacs/optimized/dlar1vx.cpp.ll
+; gromacs/optimized/dlarrbx.cpp.ll
+; gromacs/optimized/dlasd8.cpp.ll
+; gromacs/optimized/dlasq2.cpp.ll
+; gromacs/optimized/dlasq3.cpp.ll
+; gromacs/optimized/gmx_arpack.cpp.ll
+; gromacs/optimized/slar1vx.cpp.ll
+; gromacs/optimized/slarrbx.cpp.ll
+; gromacs/optimized/slasd8.cpp.ll
+; gromacs/optimized/slasq2.cpp.ll
+; gromacs/optimized/slasq3.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlaed2.c.ll
 ; openblas/optimized/dlaed4.c.ll
@@ -468,78 +467,106 @@ entry:
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsptri.c.ll
 ; openblas/optimized/dsptrs.c.ll
-; opencv/optimized/find_ellipses.cpp.ll
-; openusd/optimized/reconintra.c.ll
-; raylib/optimized/rtext.c.ll
-; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; redis/optimized/hyperloglog.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000028(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 8
+  %3 = getelementptr nusw i8, ptr %0, i64 -4
   %4 = getelementptr nusw float, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 4
   ret ptr %5
 }
 
-; 13 occurrences:
-; abc/optimized/giaKf.c.ll
+; 63 occurrences:
+; gromacs/optimized/dbdsdc.cpp.ll
+; gromacs/optimized/dgesdd.cpp.ll
+; gromacs/optimized/dlar1vx.cpp.ll
+; gromacs/optimized/dlarrex.cpp.ll
+; gromacs/optimized/dlarrvx.cpp.ll
+; gromacs/optimized/dlasq2.cpp.ll
+; gromacs/optimized/dlasq3.cpp.ll
+; gromacs/optimized/dlasq5.cpp.ll
+; gromacs/optimized/dlasq6.cpp.ll
+; gromacs/optimized/dstebz.cpp.ll
+; gromacs/optimized/dstegr.cpp.ll
+; gromacs/optimized/gmx_arpack.cpp.ll
+; gromacs/optimized/sbdsdc.cpp.ll
+; gromacs/optimized/sgesdd.cpp.ll
+; gromacs/optimized/slar1vx.cpp.ll
+; gromacs/optimized/slarrex.cpp.ll
+; gromacs/optimized/slarrvx.cpp.ll
+; gromacs/optimized/slasq2.cpp.ll
+; gromacs/optimized/slasq3.cpp.ll
+; gromacs/optimized/slasq6.cpp.ll
+; gromacs/optimized/sstebz.cpp.ll
+; gromacs/optimized/sstegr.cpp.ll
+; openblas/optimized/dbdsdc.c.ll
+; openblas/optimized/dbdsvdx.c.ll
+; openblas/optimized/dgedmd.c.ll
+; openblas/optimized/dgedmdq.c.ll
+; openblas/optimized/dgees.c.ll
+; openblas/optimized/dgeesx.c.ll
+; openblas/optimized/dgejsv.c.ll
+; openblas/optimized/dgels.c.ll
+; openblas/optimized/dgelst.c.ll
+; openblas/optimized/dgelsx.c.ll
+; openblas/optimized/dgelsy.c.ll
+; openblas/optimized/dgesvd.c.ll
+; openblas/optimized/dgesvdq.c.ll
+; openblas/optimized/dgesvj.c.ll
+; openblas/optimized/dggevx.c.ll
+; openblas/optimized/dggglm.c.ll
+; openblas/optimized/dlaed0.c.ll
+; openblas/optimized/dlaed1.c.ll
+; openblas/optimized/dlaed3.c.ll
+; openblas/optimized/dlaed8.c.ll
+; openblas/optimized/dlaeda.c.ll
+; openblas/optimized/dlaqr2.c.ll
+; openblas/optimized/dlaqr3.c.ll
+; openblas/optimized/dlar1v.c.ll
+; openblas/optimized/dlarrd.c.ll
+; openblas/optimized/dlarre.c.ll
+; openblas/optimized/dlarrf.c.ll
+; openblas/optimized/dlarrj.c.ll
+; openblas/optimized/dlarrv.c.ll
+; openblas/optimized/dlasq2.c.ll
+; openblas/optimized/dlasq5.c.ll
+; openblas/optimized/dsfrk.c.ll
+; openblas/optimized/dsptrd.c.ll
+; openblas/optimized/dsptrf.c.ll
+; openblas/optimized/dsptri.c.ll
+; openblas/optimized/dsptrs.c.ll
+; openblas/optimized/dstebz.c.ll
+; openblas/optimized/dstemr.c.ll
+; openblas/optimized/dtgex2.c.ll
+; openblas/optimized/dtgsen.c.ll
+; openblas/optimized/dtgsyl.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000020(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr nusw i8, ptr %0, i64 -8
+  %4 = getelementptr double, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -8
+  ret ptr %5
+}
+
+; 8 occurrences:
 ; cpython/optimized/ceval.ll
-; icu/optimized/decNumber.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pci-acpi.ll
 ; linux/optimized/trace_uprobe.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr i8, ptr %0, i64 8488
-  %4 = getelementptr %struct.Kf_Cut_t_.2765397, ptr %3, i64 %2, i32 6
-  ret ptr %4
-}
-
-; 2 occurrences:
-; openspiel/optimized/QuickTricks.cpp.ll
-; openusd/optimized/thread_common.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003b(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %4 = getelementptr %struct.FilterFrameCtxt.3196558, ptr %3, i64 %2, i32 10
-  ret ptr %4
-}
-
-; 2 occurrences:
-; openspiel/optimized/spades.cc.ll
-; openusd/optimized/grain_synthesis.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %4 = getelementptr [2 x i32], ptr %3, i64 %2, i64 1
-  ret ptr %4
-}
-
-; 3 occurrences:
-; openspiel/optimized/dynamic_routing_utils.cc.ll
-; openspiel/optimized/history_tree.cc.ll
-; openspiel/optimized/state_distribution.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002b(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 16
-  %4 = getelementptr %"union.absl::debian2::container_internal::map_slot_type.3293136", ptr %3, i64 %2, i32 0, i32 1
+  %.idx = shl nsw i64 %2, 4
+  %3 = getelementptr i8, ptr %0, i64 8984
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 

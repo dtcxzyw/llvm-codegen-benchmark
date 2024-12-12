@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	vnsrl.wi	v11, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v11, 0
-	vor.vv	v8, v8, v10
+	vor.vv	v8, v10, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v10, v8
 	lui	a0, 55
@@ -13,7 +13,7 @@ func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
 	lui	a0, 916990
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	addi	a0, a0, -33
 	vand.vx	v8, v8, a0
 	lui	a0, 514

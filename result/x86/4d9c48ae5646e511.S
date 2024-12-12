@@ -15,11 +15,6 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	andb	%sil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
-	cmpl	$2, %edi
-	setae	%al
-	andb	%sil, %al
-	retq
 func0000000000000006:                   # @func0000000000000006
 	testl	%edi, %edi
 	sets	%al
@@ -37,7 +32,7 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%sil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	cmpl	$2, %edi
 	sete	%al
 	andb	%sil, %al

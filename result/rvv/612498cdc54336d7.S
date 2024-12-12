@@ -1,3 +1,10 @@
+func0000000000000068:                   # @func0000000000000068
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsltu.vv	v0, v12, v10
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
+	vmerge.vvm	v8, v9, v8, v0
+	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v0, v12, v10
@@ -5,28 +12,28 @@ func0000000000000008:                   # @func0000000000000008
 	vnsrl.wi	v9, v10, 0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000048:                   # @func0000000000000048
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v0, v12, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000078:                   # @func0000000000000078
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v0, v12, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vv	v0, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vv	v0, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -54,7 +61,7 @@ func0000000000000004:                   # @func0000000000000004
 	vnsrl.wi	v9, v10, 0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vv	v0, v12, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -64,6 +71,13 @@ func000000000000003a:                   # @func000000000000003a
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vv	v0, v10, v12
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
+	vmerge.vvm	v8, v9, v8, v0
+	ret
+func0000000000000058:                   # @func0000000000000058
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsltu.vv	v0, v12, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmerge.vvm	v8, v9, v8, v0

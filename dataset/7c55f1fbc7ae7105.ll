@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_bloom.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
@@ -8,7 +8,6 @@
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; gromacs/optimized/bonded.cpp.ll
-; gromacs/optimized/tabulatednormaldistribution.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; minetest/optimized/sky.cpp.ll

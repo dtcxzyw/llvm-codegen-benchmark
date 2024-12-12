@@ -1,5 +1,5 @@
 
-; 285 occurrences:
+; 291 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -140,7 +140,6 @@
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -168,6 +167,7 @@
 ; glslang/optimized/glslang_tab.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; glslang/optimized/iomapper.cpp.ll
+; gromacs/optimized/pairlist.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/collationdata.ll
@@ -215,6 +215,9 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_scale.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; node/optimized/timer.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
@@ -285,6 +288,9 @@
 ; wireshark/optimized/packet-wccp.c.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/q_mam.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -330,10 +336,10 @@ entry:
 ; abc/optimized/wlcShow.c.ll
 ; abc/optimized/wlcWriteVer.c.ll
 ; abseil-cpp/optimized/escaping.cc.ll
+; c3c/optimized/lexer.c.ll
 ; cmake/optimized/json_writer.cpp.ll
 ; cpython/optimized/binascii.ll
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
-; glslang/optimized/Intermediate.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -398,10 +404,11 @@ entry:
   ret i64 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_blurs.c.ll
 ; darktable/optimized/introspection_sharpen.c.ll
 ; darktable/optimized/introspection_spots.c.ll
@@ -418,7 +425,7 @@ entry:
   ret i64 %3
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
 ; abc/optimized/absOut.c.ll
@@ -453,7 +460,6 @@ entry:
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
@@ -474,6 +480,17 @@ define i64 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
   %2 = and i32 %1, -32
+  %3 = zext i32 %2 to i64
+  ret i64 %3
+}
+
+; 1 occurrences:
+; gromacs/optimized/pairlist.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i32 %0) #0 {
+entry:
+  %1 = shl nuw i32 %0, 1
+  %2 = and i32 %1, -8
   %3 = zext i32 %2 to i64
   ret i64 %3
 }

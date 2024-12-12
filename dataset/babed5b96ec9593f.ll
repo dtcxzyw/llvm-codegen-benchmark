@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/iptc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = add nsw i32 %0, -2
@@ -32,7 +32,7 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; velox/optimized/Utf8Utils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 196608
   %3 = add nsw i32 %0, -65536
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/JSError.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 2
   %3 = and i32 %0, 2147483647
@@ -71,7 +71,7 @@ entry:
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/UnreachableCodeChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 12
   %3 = add nuw nsw i32 %0, -6
@@ -80,9 +80,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; ninja/optimized/deps_log.cc.ll
-; opencv/optimized/merge.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
@@ -114,7 +113,7 @@ entry:
 ; redis/optimized/pac.ll
 ; redis/optimized/pac.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
   %3 = add nsw i32 %0, -1
@@ -126,12 +125,24 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/merge.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 511
   %3 = add i32 %0, 1
   %4 = add i32 %3, %2
-  %5 = icmp ult i32 %4, 5
+  %5 = icmp samesign ugt i32 %4, 132
+  ret i1 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/merge.dispatch.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 511
+  %3 = add i32 %0, 1
+  %4 = add i32 %3, %2
+  %5 = icmp samesign ult i32 %4, 5
   ret i1 %5
 }
 

@@ -1,5 +1,5 @@
 
-%class.relocInfo.2620323 = type { i16 }
+%class.relocInfo.2733766 = type { i16 }
 
 ; 31 occurrences:
 ; cmake/optimized/cmTestGenerator.cxx.ll
@@ -34,10 +34,10 @@
 ; vcpkg/optimized/spdx.cpp.ll
 ; xgboost/optimized/context.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, i64 %1) #0 {
+define i64 @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
-  %3 = getelementptr nusw i8, ptr %0, i64 16624
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 16624
   %4 = getelementptr i64, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
@@ -65,11 +65,11 @@ entry:
 ; openjdk/optimized/codeBuffer.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i64 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 16777215
-  %3 = getelementptr nusw i8, ptr %0, i64 30
-  %4 = getelementptr nusw %class.relocInfo.2620323, ptr %3, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 30
+  %4 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -86,6 +86,30 @@ entry:
   %2 = and i64 %1, -4
   %3 = getelementptr i8, ptr %0, i64 1
   %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -8
+  %3 = getelementptr nusw i8, ptr %0, i64 -16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/Archive.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(ptr %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 112
+  %4 = getelementptr nusw i8, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

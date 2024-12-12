@@ -39,7 +39,7 @@ entry:
 ; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/USRGeneration.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483647
   %3 = icmp eq i64 %2, 0

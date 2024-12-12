@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; rocksdb/optimized/cuckoo_table_builder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr exact i64 %1, 3
   %6 = icmp ugt i64 %4, %5
   ret i1 %6
@@ -15,10 +15,10 @@ entry:
 ; libquic/optimized/hpack_huffman_table.cc.ll
 ; rocksdb/optimized/cuckoo_table_builder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr exact i64 %1, 3
   %6 = icmp ult i64 %4, %5
   ret i1 %6
@@ -48,10 +48,10 @@ entry:
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; openspiel/optimized/sheriff.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = ashr exact i64 %1, 2
   %6 = icmp ugt i64 %4, %5
   ret i1 %6
@@ -78,10 +78,10 @@ entry:
 ; mold/optimized/icf.cc.SPARC64.cc.ll
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = ashr exact i64 %1, 2
   %6 = icmp ult i64 %4, %5
   ret i1 %6
@@ -99,10 +99,10 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = ashr exact i64 %1, 4
   %6 = icmp ugt i64 %4, %5
   ret i1 %6
@@ -111,10 +111,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = ashr exact i64 %1, 3
   %6 = icmp ugt i64 %4, %5
   ret i1 %6
@@ -123,10 +123,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = ashr exact i64 %1, 3
   %6 = icmp ult i64 %4, %5
   ret i1 %6

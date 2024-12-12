@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/tcp_minisocks.ll
 ; linux/optimized/tls.ll
 ; llvm/optimized/BackendUtil.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; openjdk/optimized/management.ll
 ; openssl/optimized/libssl-lib-t1_enc.ll
 ; openssl/optimized/libssl-shlib-t1_enc.ll

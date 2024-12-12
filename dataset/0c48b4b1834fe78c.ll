@@ -19,9 +19,9 @@ entry:
 ; linux/optimized/setup-bus.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/DeadStoreElimination.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openjdk/optimized/defNewGeneration.ll
 ; openjdk/optimized/libproc_impl.ll
 ; openjdk/optimized/os_linux.ll

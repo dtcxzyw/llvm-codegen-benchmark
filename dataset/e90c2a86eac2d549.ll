@@ -47,6 +47,20 @@ entry:
   ret i64 %6
 }
 
+; 2 occurrences:
+; llvm/optimized/SemaAttr.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = and i32 %2, -65536
+  %4 = shl i32 %0, 16
+  %5 = or i32 %3, %4
+  %6 = zext i32 %5 to i64
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; llvm/optimized/ASTWriter.cpp.ll
 ; Function Attrs: nounwind
@@ -68,19 +82,6 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, -57
   %4 = shl nsw i32 %0, 3
-  %5 = or i32 %3, %4
-  %6 = zext i32 %5 to i64
-  ret i64 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/SemaAttr.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, -193
-  %4 = shl i32 %0, 6
   %5 = or i32 %3, %4
   %6 = zext i32 %5 to i64
   ret i64 %6

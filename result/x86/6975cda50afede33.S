@@ -10,8 +10,8 @@ func0000000000000062:                   # @func0000000000000062
 	imull	$60, %eax, %eax
 	subl	%eax, %ecx
 	xorl	%eax, %eax
-	testb	$1, %dil
-	cmovnel	%ecx, %eax
 	cmpb	$5, %sil
+	cmovnel	%ecx, %eax
+	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

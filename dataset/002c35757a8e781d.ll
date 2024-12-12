@@ -1,7 +1,8 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
 ; arrow/optimized/grouper.cc.ll
+; boost/optimized/to_chars.ll
 ; git/optimized/xutils.ll
 ; jq/optimized/regenc.ll
 ; oniguruma/optimized/regenc.ll
@@ -16,7 +17,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = sext i32 %6 to i64
   ret i64 %7
 }
@@ -51,7 +52,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = sext i32 %6 to i64
   ret i64 %7
 }

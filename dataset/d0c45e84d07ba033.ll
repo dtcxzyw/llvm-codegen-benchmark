@@ -11,16 +11,27 @@ entry:
   ret ptr %4
 }
 
+; 1 occurrences:
+; boost/optimized/sort_by_side.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 1, %1
+  %3 = mul nuw nsw i64 %2, 168
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
 ; 3 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/epnp.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 11, %1
   %3 = mul nuw nsw i64 %2, 96
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

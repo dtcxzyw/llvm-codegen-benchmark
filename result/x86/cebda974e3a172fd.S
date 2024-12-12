@@ -3,6 +3,6 @@ func0000000000000008:                   # @func0000000000000008
 	notl	%eax
 	xorl	%edx, %edx
 	divl	%esi
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	retq

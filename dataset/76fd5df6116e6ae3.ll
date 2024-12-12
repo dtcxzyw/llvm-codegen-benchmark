@@ -1,5 +1,5 @@
 
-; 658 occurrences:
+; 649 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -13,7 +13,6 @@
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcLatch.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -148,7 +147,6 @@
 ; abc/optimized/lpkSets.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/mapperUtils.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mpmMap.c.ll
 ; abc/optimized/mvcLits.c.ll
 ; abc/optimized/mvcUtils.c.ll
@@ -199,6 +197,7 @@
 ; assimp/optimized/ProcessHelper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/decode.c.ll
 ; bullet3/optimized/b3GpuPgsConstraintSolver.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
@@ -285,15 +284,12 @@
 ; linux/optimized/filter.ll
 ; linux/optimized/hcd.ll
 ; linux/optimized/hda_controller.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/hdac_stream.ll
 ; linux/optimized/hpet.ll
 ; linux/optimized/hrtimer.ll
 ; linux/optimized/hwdep.ll
-; linux/optimized/i8259.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_display_power_well.ll
@@ -312,12 +308,10 @@
 ; linux/optimized/pcm_native.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/radix-tree.ll
-; linux/optimized/root.ll
 ; linux/optimized/services.ll
 ; linux/optimized/skl_scaler.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/util.ll
-; linux/optimized/utownerid.ll
 ; linux/optimized/xfrm_replay.ll
 ; linux/optimized/xhci-hub.ll
 ; linux/optimized/xhci-ring.ll
@@ -356,17 +350,17 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
+; lvgl/optimized/lv_style.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/reflowscan.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/func.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ldsampler.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -380,7 +374,6 @@
 ; msdfgen/optimized/edge-coloring.cpp.ll
 ; nori/optimized/screen.cpp.ll
 ; nuttx/optimized/fs_select.c.ll
-; nuttx/optimized/sig_addset.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; oniguruma/optimized/regparse.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
@@ -480,7 +473,6 @@
 ; qemu/optimized/hw_display_virtio-gpu.c.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
-; qemu/optimized/hw_misc_sifive_u_otp.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
@@ -543,7 +535,6 @@
 ; z3/optimized/bv2real_rewriter.cpp.ll
 ; z3/optimized/bv_slice.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll
@@ -662,7 +653,7 @@
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 
@@ -689,11 +680,11 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 
-; 149 occurrences:
+; 143 occurrences:
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/aigTsim.c.ll
@@ -720,14 +711,13 @@ entry:
 ; assimp/optimized/PlyExporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/encode.c.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; bullet3/optimized/btSoftBody.ll
 ; clamav/optimized/asn1.c.ll
 ; clamav/optimized/pdf.c.ll
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
-; cmake/optimized/share.c.ll
-; curl/optimized/libcurl_la-share.ll
 ; git/optimized/checkout.ll
 ; git/optimized/delta-islands.ll
 ; git/optimized/fast-import.ll
@@ -760,8 +750,6 @@ entry:
 ; linux/optimized/i915_syncmap.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_display_power_well.ll
-; linux/optimized/ip6_tables.ll
-; linux/optimized/ip_tables.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/ohci-hcd.ll
@@ -774,7 +762,6 @@ entry:
 ; linux/optimized/usblp.ll
 ; linux/optimized/virtio_pci_modern_dev.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SDNodeProperties.cpp.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -783,6 +770,7 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
@@ -790,7 +778,6 @@ entry:
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
@@ -826,7 +813,6 @@ entry:
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/system_bootdevice.c.ll
 ; raylib/optimized/rcore.c.ll
 ; re2/optimized/onepass.cc.ll
@@ -837,7 +823,6 @@ entry:
 ; velox/optimized/Filter.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; wireshark/optimized/erf.c.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-redbackli.c.ll
 ; yosys/optimized/extract_fa.ll
@@ -851,7 +836,7 @@ entry:
   ret i32 %3
 }
 
-; 73 occurrences:
+; 72 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/giaIf.c.ll
@@ -859,6 +844,7 @@ entry:
 ; abc/optimized/utilIsop.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/encode.c.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; folly/optimized/MicroLock.cpp.ll
@@ -869,8 +855,6 @@ entry:
 ; icu/optimized/collationweights.ll
 ; linux/optimized/dquot.ll
 ; linux/optimized/e100.ll
-; linux/optimized/i915_gem_busy.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_dpll.ll
@@ -929,7 +913,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 2, %1
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 
@@ -956,7 +940,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   ret i32 %3
 }
 
@@ -967,7 +951,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 -16777216, %1
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   ret i32 %3
 }
 

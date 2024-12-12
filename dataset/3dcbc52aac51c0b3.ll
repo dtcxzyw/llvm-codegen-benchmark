@@ -15,7 +15,6 @@
 ; folly/optimized/Compression.cpp.ll
 ; folly/optimized/Load.cpp.ll
 ; linux/optimized/dumpstack_64.ll
-; linux/optimized/maccess.ll
 ; llvm/optimized/AArch64MCExpr.cpp.ll
 ; llvm/optimized/AArch64MachineFunctionInfo.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
@@ -505,6 +504,7 @@
 ; proxygen/optimized/SecondaryAuthManager.cpp.ll
 ; ruby/optimized/addr2line.ll
 ; velox/optimized/Base64.cpp.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:
@@ -529,7 +529,7 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cpython/optimized/obmalloc.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
@@ -541,6 +541,7 @@ entry:
 ; proxygen/optimized/HPACKDecodeBuffer.cpp.ll
 ; qemu/optimized/accel_tcg_translate-all.c.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
@@ -550,7 +551,12 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 21 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/static_string.ll
+; boost/optimized/waker.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; entt/optimized/version.cpp.ll
 ; folly/optimized/AsyncSocket.cpp.ll

@@ -1,12 +1,18 @@
 
-; 7 occurrences:
+; 13 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
+; cmake/optimized/fse_decompress.c.ll
+; cmake/optimized/zstd_decompress_block.c.ll
+; linux/optimized/fse_decompress.ll
+; linux/optimized/zstd_decompress_block.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
 ; postgres/optimized/slru.ll
 ; ruby/optimized/string.ll
+; zstd/optimized/fse_decompress.c.ll
+; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:

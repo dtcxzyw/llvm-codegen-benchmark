@@ -20,10 +20,11 @@
 ; abc/optimized/wlcBlast.c.ll
 ; arrow/optimized/UriNormalize.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btConvexHull.ll
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/cover.c.ll
-; cmake/optimized/test.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; folly/optimized/Singleton.cpp.ll
@@ -45,7 +46,6 @@
 ; icu/optimized/japancal.ll
 ; icu/optimized/normalizer2.ll
 ; icu/optimized/ubidi.ll
-; icu/optimized/ubidiln.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jq/optimized/main.ll
@@ -82,6 +82,7 @@
 ; llvm/optimized/RegionPrinter.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
+; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
@@ -98,7 +99,6 @@
 ; oniguruma/optimized/unicode.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dlarrd.c.ll
-; openblas/optimized/sgemm_direct_performant.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/evaluation.cpp.ll
 ; openjdk/optimized/classFileParser.ll
@@ -108,7 +108,6 @@
 ; openmpi/optimized/coll_ftagree_earlyterminating.ll
 ; openmpi/optimized/comm.ll
 ; openssl/optimized/asn1_time_test-bin-asn1_time_test.ll
-; openssl/optimized/defltfips_test-bin-defltfips_test.ll
 ; openssl/optimized/exdatatest-bin-exdatatest.ll
 ; openssl/optimized/libcrypto-lib-cmp_msg.ll
 ; openssl/optimized/libcrypto-shlib-cmp_msg.ll
@@ -119,7 +118,6 @@
 ; openssl/optimized/openssl-bin-pkey.ll
 ; openssl/optimized/openssl-bin-rsa.ll
 ; openssl/optimized/property_test-bin-property_test.ll
-; openssl/optimized/quic_wire_test-bin-quic_wire_test.ll
 ; openssl/optimized/safe_math_test-bin-safe_math_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; openusd/optimized/decodemv.c.ll
@@ -128,6 +126,9 @@
 ; php/optimized/dfa_pass.ll
 ; php/optimized/ftp_fopen_wrapper.ll
 ; php/optimized/logical_filters.ll
+; postgres/optimized/d2s.ll
+; postgres/optimized/d2s_shlib.ll
+; postgres/optimized/d2s_srv.ll
 ; postgres/optimized/formatting.ll
 ; postgres/optimized/jsonpath_exec.ll
 ; postgres/optimized/like_support.ll
@@ -163,7 +164,6 @@
 ; velox/optimized/VectorSaver.cpp.ll
 ; wireshark/optimized/file.c.ll
 ; wireshark/optimized/lemon.c.ll
-; wireshark/optimized/mime_file.c.ll
 ; wireshark/optimized/opcua.c.ll
 ; wireshark/optimized/packet-camel.c.ll
 ; wireshark/optimized/packet-dmp.c.ll

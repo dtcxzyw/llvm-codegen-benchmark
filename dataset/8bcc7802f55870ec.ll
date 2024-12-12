@@ -24,13 +24,14 @@ define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
+; lvgl/optimized/lv_calendar.ll
 ; nuttx/optimized/lib_dayofweek.c.ll
 ; ruby/optimized/date_core.ll
 ; sqlite/optimized/sqlite3.ll
@@ -40,29 +41,24 @@ define i32 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 3
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 12 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; icu/optimized/islamcal.ll
-; icu/optimized/utext.ll
 ; jq/optimized/builtin.ll
 ; linux/optimized/kapi.ll
-; llvm/optimized/DAGISelMatcherEmitter.cpp.ll
-; llvm/optimized/MCWin64EH.cpp.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; ruby/optimized/date_core.ll
 ; sqlite/optimized/sqlite3.ll
-; velox/optimized/Sequence.cpp.ll
 ; wolfssl/optimized/test.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 3
+  %2 = icmp samesign ult i32 %1, 3
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -107,11 +103,11 @@ define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 102
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 59 occurrences:
+; 60 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/cuddGroup.c.ll
 ; abc/optimized/cuddLinear.c.ll
@@ -170,17 +166,18 @@ entry:
 ; wireshark/optimized/sharkd.c.ll
 ; wolfssl/optimized/rsa.c.ll
 ; yosys/optimized/simplify.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 239 occurrences:
+; 240 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cuddCheck.c.ll
 ; abc/optimized/cuddLinear.c.ll
@@ -189,6 +186,7 @@ entry:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifUtil.c.ll
+; boost/optimized/area.ll
 ; cmake/optimized/cmIfCommand.cxx.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/addition.cpp.ll
@@ -425,7 +423,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -461,14 +459,16 @@ define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 31 occurrences:
+; 33 occurrences:
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/extraUtilEnum.c.ll
 ; abc/optimized/wlcBlast.c.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; graphviz/optimized/sfprint.c.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -502,7 +502,22 @@ define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 511
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 5 occurrences:
+; icu/optimized/utext.ll
+; llvm/optimized/DAGISelMatcherEmitter.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
+; lvgl/optimized/lv_calendar.ll
+; velox/optimized/Sequence.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 3
+  %3 = sext i1 %2 to i32
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -515,11 +530,12 @@ define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, -11
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/options_description.ll
 ; clamav/optimized/petite.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; icu/optimized/unifilt.ll
@@ -527,9 +543,29 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, -1074785481
+  %2 = icmp ugt i32 %1, 1
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
+  ret i32 %4
+}
+
+; 10 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
+; clamav/optimized/vba_extract.c.ll
+; cmake/optimized/zstd_compress.c.ll
+; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; postgres/optimized/d2s.ll
+; postgres/optimized/d2s_shlib.ll
+; postgres/optimized/d2s_srv.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 3
+  %3 = sext i1 %2 to i32
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -541,25 +577,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, -1074785481
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
-  ret i32 %4
-}
-
-; 8 occurrences:
-; clamav/optimized/vba_extract.c.ll
-; cmake/optimized/zstd_compress.c.ll
-; llvm/optimized/X86ISelDAGToDAG.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; postgres/optimized/d2s.ll
-; postgres/optimized/d2s_shlib.ll
-; postgres/optimized/d2s_srv.ll
-; zstd/optimized/zstd_compress.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 32
-  %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

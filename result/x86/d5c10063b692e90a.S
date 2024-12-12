@@ -14,6 +14,14 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%edi, %edi
 	cmovsq	%rcx, %rax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	andl	$1, %esi
+	movl	$2, %ecx
+	subq	%rsi, %rcx
+	testl	%edi, %edi
+	movl	$3, %eax
+	cmovneq	%rcx, %rax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -23,21 +31,19 @@ func000000000000000c:                   # @func000000000000000c
 	movl	$770, %eax                      # imm = 0x302
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$1, %esi
 	leaq	1(%rsi), %rcx
 	cmpl	$70, %edi
 	movl	$3, %eax
 	cmovbq	%rcx, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	notb	%sil
-	movzbl	%sil, %eax
-	andl	$1, %eax
-	leaq	1(%rax,%rax,2), %rcx
-	xorl	%eax, %eax
-	testl	%edi, %edi
-	cmovneq	%rcx, %rax
+func0000000000000014:                   # @func0000000000000014
+	andl	$1, %esi
+	xorq	$3, %rsi
+	cmpl	$10, %edi
+	movl	$1, %eax
+	cmovaeq	%rsi, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	notb	%sil
@@ -47,4 +53,12 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%edi, %edi
 	movl	$4, %eax
 	cmovleq	%rcx, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	andl	$1, %esi
+	shll	$6, %esi
+	leaq	536(%rsi), %rcx
+	cmpl	$134217768, %edi                # imm = 0x8000028
+	movl	$664, %eax                      # imm = 0x298
+	cmovbq	%rcx, %rax
 	retq

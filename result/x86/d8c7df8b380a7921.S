@@ -10,12 +10,6 @@ func0000000000000002:                   # @func0000000000000002
 	andb	%dil, %al
 	movzbl	%al, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	cmpq	$601, %rsi                      # imm = 0x259
-	setae	%al
-	andb	%dil, %al
-	movzbl	%al, %eax
-	retq
 func0000000000000014:                   # @func0000000000000014
 	cmpq	$601, %rsi                      # imm = 0x259
 	setge	%al
@@ -25,6 +19,12 @@ func0000000000000014:                   # @func0000000000000014
 func000000000000000c:                   # @func000000000000000c
 	testq	%rsi, %rsi
 	sets	%al
+	andb	%dil, %al
+	movzbl	%al, %eax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	cmpq	$8, %rsi
+	setae	%al
 	andb	%dil, %al
 	movzbl	%al, %eax
 	retq

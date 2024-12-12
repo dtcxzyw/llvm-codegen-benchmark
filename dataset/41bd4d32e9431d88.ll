@@ -13,9 +13,8 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/hw_breakpoint.ll
-; linux/optimized/utaddress.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:

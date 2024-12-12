@@ -1,7 +1,6 @@
 
-; 14 occurrences:
+; 11 occurrences:
 ; libquic/optimized/dsa.c.ll
-; libquic/optimized/ecdsa_asn1.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; php/optimized/ir_emit.ll
 ; ruby/optimized/bignum.ll
@@ -11,20 +10,20 @@
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
-; spike/optimized/f16_to_f128.ll
-; spike/optimized/f16_to_f64.ll
 ; spike/optimized/f64_sqrt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; ruby/optimized/iseq.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
@@ -34,7 +33,7 @@ entry:
   ret i64 %4
 }
 
-; 98 occurrences:
+; 103 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; cpython/optimized/_heapqmodule.ll
@@ -133,12 +132,17 @@ entry:
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -174,7 +178,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -188,7 +192,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -205,11 +209,11 @@ define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 67 occurrences:
+; 66 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
@@ -225,7 +229,6 @@ entry:
 ; folly/optimized/dynamic.cpp.ll
 ; folly/optimized/json.cpp.ll
 ; folly/optimized/json_patch.cpp.ll
-; gromacs/optimized/grompp.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256_nosse.ll
 ; libsodium/optimized/libsse2_la-pwhash_scryptsalsa208sha256_sse.ll
@@ -306,14 +309,13 @@ entry:
   ret i64 %4
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/ioWriteBlif.c.ll
 ; abc/optimized/ioWriteEdgelist.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/virtio_ring.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
-; opencv/optimized/convolution.cpp.ll
 ; php/optimized/zend_persist.ll
 ; php/optimized/zend_persist_calc.ll
 ; qemu/optimized/migration_savevm.c.ll
@@ -362,11 +364,10 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/methodData.ll
 ; qemu/optimized/hw_virtio_vhost-shadow-virtqueue.c.ll
-; spike/optimized/f16_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
@@ -376,8 +377,7 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; abc/optimized/giaUtil.c.ll
+; 1 occurrences:
 ; openjdk/optimized/stringTable.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
@@ -391,11 +391,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000017(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = or disjoint i64 %2, 1
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw i64 %3, %0
   ret i64 %4
 }
 

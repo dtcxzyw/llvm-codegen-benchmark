@@ -1,6 +1,8 @@
 
-; 37 occurrences:
+; 39 occurrences:
 ; freetype/optimized/ftbase.c.ll
+; freetype/optimized/type1.c.ll
+; freetype/optimized/type1cid.c.ll
 ; git/optimized/push.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/APFloat.cpp.ll

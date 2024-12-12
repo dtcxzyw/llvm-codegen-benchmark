@@ -10,7 +10,7 @@ func000000000000000c:                   # @func000000000000000c
 	sext.w	a0, a0
 	sgtz	a0, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	sext.w	a0, a0
 	sltiu	a0, a0, 128
 	xori	a0, a0, 1
@@ -22,4 +22,9 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000010:                   # @func0000000000000010
 	sext.w	a0, a0
 	sltiu	a0, a0, 3
+	ret
+func0000000000000008:                   # @func0000000000000008
+	sext.w	a0, a0
+	sltiu	a0, a0, 8
+	xori	a0, a0, 1
 	ret

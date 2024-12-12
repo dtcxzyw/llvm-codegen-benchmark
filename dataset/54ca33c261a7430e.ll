@@ -6,7 +6,7 @@
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000062(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func00000000000000c2(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = icmp eq i64 %3, %0
@@ -14,10 +14,8 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
-; cmake/optimized/delta_encoder.c.ll
+; 3 occurrences:
 ; hdf5/optimized/H5HFsection.c.ll
-; hdf5/optimized/H5MFsection.c.ll
 ; openssl/optimized/http_test-bin-http_test.ll
 ; qemu/optimized/hw_net_net_tx_pkt.c.ll
 ; Function Attrs: nounwind
@@ -59,12 +57,10 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; hyperscan/optimized/lbr.c.ll
-; lief/optimized/timing.c.ll
 ; linux/optimized/hw_breakpoint.ll
 ; linux/optimized/pcm_lib.ll
-; linux/optimized/utaddress.ll
 ; nuttx/optimized/fs_procfsproc.c.ll
 ; oiio/optimized/strutil.cpp.ll
 ; stb/optimized/stb_sprintf.c.ll
@@ -81,7 +77,7 @@ entry:
 ; llvm/optimized/X86DynAllocaExpander.cpp.ll
 ; openmpi/optimized/onesided_aggregation.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002e(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000004e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp sle i64 %3, %0
@@ -92,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGExprAgg.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp sgt i64 %3, %0
@@ -103,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/flatten.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp ne i64 %3, %0
@@ -114,7 +110,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/indirect.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp eq i64 %3, %0
@@ -138,7 +134,7 @@ entry:
 ; libwebp/optimized/predictor_enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp slt i64 %3, %0

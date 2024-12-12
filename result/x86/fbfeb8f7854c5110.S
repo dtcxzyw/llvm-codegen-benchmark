@@ -21,7 +21,12 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000006:                   # @func0000000000000006
 	testb	%sil, %sil
 	movl	$1, %eax
-	cmovnsl	%edi, %eax
+	cmovgl	%edi, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpb	$56, %sil
+	movl	$64, %eax
+	cmovbl	%edi, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax

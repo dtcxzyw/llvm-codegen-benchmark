@@ -1,9 +1,16 @@
 
-; 7 occurrences:
+; 14 occurrences:
 ; flac/optimized/stream_encoder.c.ll
 ; jemalloc/optimized/sc.ll
 ; jemalloc/optimized/sc.pic.ll
 ; jemalloc/optimized/sc.sym.ll
+; proxygen/optimized/HPACKDecoder.cpp.ll
+; proxygen/optimized/HPACKDecoderBase.cpp.ll
+; proxygen/optimized/HPACKEncoder.cpp.ll
+; proxygen/optimized/HeaderTable.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKHeaderTable.cpp.ll
+; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; redis/optimized/sc.ll
 ; redis/optimized/sc.sym.ll
 ; wireshark/optimized/packet-nvme.c.ll
@@ -20,7 +27,7 @@ entry:
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000044(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = icmp ult i64 %3, 2147483648

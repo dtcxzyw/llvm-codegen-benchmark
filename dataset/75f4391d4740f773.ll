@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; assimp/optimized/FBXBinaryTokenizer.cpp.ll
 ; git/optimized/dir.ll
-; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; openjdk/optimized/jfrTraceIdKlassQueue.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, ptr %1, ptr %2) #0 {
@@ -15,7 +14,8 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; Function Attrs: nounwind
@@ -24,7 +24,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
-  %6 = select i1 %0, i64 2, i64 1
+  %6 = select i1 %0, i64 10, i64 9
   %7 = icmp slt i64 %5, %6
   ret i1 %7
 }

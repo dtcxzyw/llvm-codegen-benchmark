@@ -16,7 +16,7 @@
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/validate.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
-; brotli/optimized/backward_references.c.ll
+; boost/optimized/area.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/block_splitter.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -58,8 +58,6 @@
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/EHStreamer.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; miniaudio/optimized/unity.c.ll
@@ -289,16 +287,18 @@
 ; xgboost/optimized/recordio.cc.ll
 ; xgboost/optimized/recordio_split.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 65 occurrences:
+; 66 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -364,16 +364,17 @@ entry:
 ; wireshark/optimized/candump_parser.c.ll
 ; wireshark/optimized/grammar.c.ll
 ; wireshark/optimized/mate_grammar.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
-; 33 occurrences:
+; 34 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -394,6 +395,7 @@ entry:
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; llvm/optimized/CGAtomic.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-items.ll
@@ -412,11 +414,11 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2097151
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; lief/optimized/poly1305.c.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
@@ -424,13 +426,12 @@ entry:
 ; qemu/optimized/block_vhdx.c.ll
 ; qemu/optimized/hw_audio_intel-hda.c.ll
 ; qemu/optimized/hw_net_e1000.c.ll
-; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, -4096
+  %2 = and i32 %1, -16
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -470,7 +471,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -16
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -482,7 +483,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -32
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -493,7 +494,7 @@ define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -8
   %3 = zext i32 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 

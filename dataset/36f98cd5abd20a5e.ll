@@ -1,35 +1,27 @@
 
-%struct.MinimapPixel.2586185 = type { %struct.MapNode.2586186, i16, i16 }
-%struct.MapNode.2586186 = type { i16, i8, i8 }
-%struct.mi_page_s.3771054 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3771055, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.3771055 = type { i8 }
+%struct.MinimapPixel.2700202 = type { %struct.MapNode.2700203, i16, i16 }
+%struct.MapNode.2700203 = type { i16, i8, i8 }
+%struct.mi_page_s.3949290 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949291, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.3949291 = type { i8 }
 
-; 15 occurrences:
-; arrow/optimized/bignum.cc.ll
-; double_conversion/optimized/bignum.cc.ll
-; icu/optimized/double-conversion-bignum.ll
-; icu/optimized/utrie2_builder.ll
-; image-rs/optimized/4srzh4wujeew249y.ll
-; mimalloc/optimized/segment.c.ll
-; miniaudio/optimized/unity.c.ll
+; 7 occurrences:
 ; opencv/optimized/epnp.cpp.ll
 ; openssl/optimized/libssl-lib-tls13_meth.ll
 ; openssl/optimized/libssl-shlib-tls13_meth.ll
-; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/warped_motion.c.ll
-; openvdb/optimized/Maps.cc.ll
-; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -8
-  %4 = add nsw i64 %3, %1
-  %5 = getelementptr nusw [16 x i8], ptr %0, i64 0, i64 %4
+  %4 = add nsw i64 %1, %3
+  %5 = getelementptr nusw nuw [16 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
-; 121 occurrences:
+; 161 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
@@ -83,7 +75,6 @@ entry:
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; ockam-rs/optimized/y59h8jnu9k73im6.ll
-; openjdk/optimized/jimage.ll
 ; php/optimized/html.ll
 ; php/optimized/phpdbg_frame.ll
 ; php/optimized/session.ll
@@ -151,6 +142,47 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/2sf3ranrrf5pn6ms.ll
 ; wasmtime-rs/optimized/4d248unwvleglo3y.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1rxtw8y3xj0ox3oc92qj76kkb.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5kioou5gqw7kusdtotq0xka1i.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; zed-rs/optimized/7fmm0tfd68kkbfwadepm13y36.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/8pzylepo63jgxs9pcfvvb1oj4.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
+; zed-rs/optimized/a5d6yyd6fi8sgpd1mrlxaz07z.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/adhrhj1ih026npw6eixxu9sn1.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/b9ty0axfl2ld0co5krahg7gfq.ll
+; zed-rs/optimized/bc27zh41i1ia1dszunchw7cbt.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/dq2w60loei6lzivjguqmeajyy.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f1iubl8q66d2sxqoxpce2jw1m.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
+; zed-rs/optimized/f4wwu90a2y9t62jcyj6nqzu8v.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -160,12 +192,11 @@ entry:
   ret ptr %5
 }
 
-; 17 occurrences:
+; 20 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; gromacs/optimized/xtc2.c.ll
 ; gromacs/optimized/xtc3.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; image-rs/optimized/4srzh4wujeew249y.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -178,12 +209,16 @@ entry:
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr nusw [262144 x %struct.MinimapPixel.2586185], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [262144 x %struct.MinimapPixel.2700202], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -218,7 +253,7 @@ entry:
   ret ptr %5
 }
 
-; 7 occurrences:
+; 11 occurrences:
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
@@ -226,6 +261,10 @@ entry:
 ; wasmtime-rs/optimized/11ww7ts55o8z8j6m.ll
 ; wasmtime-rs/optimized/27y5mf4j2qnj7fax.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000032(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -247,19 +286,40 @@ entry:
   ret ptr %5
 }
 
-; 7 occurrences:
+; 10 occurrences:
 ; arrow/optimized/bignum.cc.ll
-; darktable/optimized/introspection_clahe.c.ll
+; double_conversion/optimized/bignum.cc.ll
+; icu/optimized/double-conversion-bignum.ll
+; icu/optimized/utrie2_builder.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
+; mimalloc/optimized/segment.c.ll
+; miniaudio/optimized/unity.c.ll
+; openusd/optimized/bignum.cc.ll
+; openvdb/optimized/Maps.cc.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, 1
+  %4 = add nsw i64 %3, %1
+  %5 = getelementptr nusw [9 x double], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 8 occurrences:
+; arrow/optimized/bignum.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; mimalloc/optimized/segment.c.ll
 ; openusd/optimized/bignum.cc.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -273,6 +333,40 @@ entry:
   %3 = add i64 %2, 1
   %4 = add nuw i64 %3, %1
   %5 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; image-rs/optimized/4srzh4wujeew249y.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 1
+  %4 = add nuw nsw i64 %3, %1
+  %5 = getelementptr nusw [0 x i32], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; openjdk/optimized/jimage.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 2
+  %4 = add i64 %3, %1
+  %5 = getelementptr nusw nuw [4096 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; darktable/optimized/introspection_clahe.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, 1
+  %4 = add i64 %3, %1
+  %5 = getelementptr nusw nuw [257 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -290,13 +384,24 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000033(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 1
+  %4 = add i64 %1, %3
+  %5 = getelementptr nusw nuw [513 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %1
-  %5 = getelementptr [513 x %struct.mi_page_s.3771054], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -307,7 +412,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %1
-  %5 = getelementptr [513 x %struct.mi_page_s.3771054], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

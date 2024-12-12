@@ -1,5 +1,5 @@
 
-; 168 occurrences:
+; 167 occurrences:
 ; hermes/optimized/CommandLine.cpp.ll
 ; hermes/optimized/FileCheck.cpp.ll
 ; hermes/optimized/Triple.cpp.ll
@@ -105,7 +105,6 @@
 ; llvm/optimized/PaddingChecker.cpp.ll
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -173,7 +172,7 @@ define i64 @func0000000000000060(i64 %0) #0 {
 entry:
   %1 = icmp ne i64 %0, 0
   %.neg = sext i1 %1 to i64
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   ret i64 %2
 }
 
@@ -186,7 +185,7 @@ define i64 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = icmp ne i64 %0, 0
   %.neg = sext i1 %1 to i64
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   ret i64 %2
 }
 
@@ -199,7 +198,7 @@ define i64 @func0000000000000062(i64 %0) #0 {
 entry:
   %1 = icmp ne i64 %0, 0
   %.neg = sext i1 %1 to i64
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   ret i64 %2
 }
 

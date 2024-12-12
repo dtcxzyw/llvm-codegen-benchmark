@@ -16,7 +16,7 @@ entry:
   ret i64 %4
 }
 
-; 38 occurrences:
+; 42 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/2wc8g8i932e2uo0t.ll
@@ -55,6 +55,10 @@ entry:
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/2sf3ranrrf5pn6ms.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
@@ -75,10 +79,12 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; actix-rs/optimized/4jlfyqkak9x9x2yv.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/approximately_equals.ll
 ; grpc/optimized/uri_parser.cc.ll
+; lvgl/optimized/lv_tlsf.ll
 ; nuttx/optimized/mm_memalign.c.ll
 ; openmpi/optimized/ptl_base_connection_hdlr.ll
 ; rust-analyzer-rs/optimized/49gbmpy0w6vw8qx1.ll
@@ -100,7 +106,7 @@ entry:
 define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = add i64 %2, -1
   ret i64 %3
 }
@@ -153,7 +159,7 @@ entry:
 define i64 @func000000000000003c(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = add i64 %2, -6
   ret i64 %3
 }
@@ -177,7 +183,7 @@ entry:
 define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = add i64 %2, -1
   ret i64 %3
 }

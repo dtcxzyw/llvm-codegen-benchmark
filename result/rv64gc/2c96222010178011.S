@@ -28,14 +28,14 @@ func0000000000000003:                   # @func0000000000000003
 .LBB3_2:                                # %entry
 	or	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	sext.w	a2, a2
 	sltiu	a2, a2, -156
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	sext.w	a2, a2
 	li	a3, 9
 	slli	a3, a3, 8
@@ -51,12 +51,37 @@ func0000000000000018:                   # @func0000000000000018
 .LBB6_2:                                # %entry
 	or	a0, a0, a1
 	ret
+func0000000000000008:                   # @func0000000000000008
+	srliw	a2, a2, 24
+	seqz	a2, a2
+	addi	a2, a2, -1
+	and	a1, a1, a2
+	or	a0, a0, a1
+	ret
 func0000000000000010:                   # @func0000000000000010
 	sext.w	a2, a2
 	li	a3, 7
-	bgeu	a3, a2, .LBB7_2
+	bgeu	a3, a2, .LBB8_2
 	li	a1, 65
-.LBB7_2:                                # %entry
+.LBB8_2:                                # %entry
+	or	a0, a0, a1
+	ret
+func0000000000000030:                   # @func0000000000000030
+	sext.w	a2, a2
+	lui	a3, 522240
+	bgeu	a3, a2, .LBB9_2
+	lui	a1, 8
+	addiw	a1, a1, -512
+.LBB9_2:                                # %entry
+	or	a0, a0, a1
+	ret
+func0000000000000011:                   # @func0000000000000011
+	sext.w	a2, a2
+	lui	a3, 1048320
+	addiw	a3, a3, -1
+	sltu	a2, a3, a2
+	addi	a2, a2, -1
+	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
@@ -66,19 +91,27 @@ func0000000000000009:                   # @func0000000000000009
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
+func0000000000000029:                   # @func0000000000000029
+	sext.w	a2, a2
+	li	a3, 33
+	bgeu	a2, a3, .LBB12_2
+	lui	a1, 131072
+.LBB12_2:                               # %entry
+	or	a0, a0, a1
+	ret
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a2, a2
 	lui	a3, 8
 	addiw	a3, a3, -641
-	bge	a3, a2, .LBB9_2
+	bge	a3, a2, .LBB13_2
 	lui	a1, 129024
-.LBB9_2:                                # %entry
+.LBB13_2:                               # %entry
 	or	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a2
-	blez	a2, .LBB10_2
+	blez	a2, .LBB14_2
 	li	a1, 18
-.LBB10_2:                               # %entry
+.LBB14_2:                               # %entry
 	or	a0, a0, a1
 	ret

@@ -1,5 +1,5 @@
 
-; 196 occurrences:
+; 191 occurrences:
 ; abc/optimized/abcNtbdd.c.ll
 ; abc/optimized/aigOper.c.ll
 ; abc/optimized/cecSim.c.ll
@@ -8,6 +8,7 @@
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
+; boost/optimized/area.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btCapsuleShape.ll
@@ -42,7 +43,6 @@
 ; glslang/optimized/hlslTokenStream.cpp.ll
 ; gromacs/optimized/collective.cpp.ll
 ; gromacs/optimized/matio.cpp.ll
-; gromacs/optimized/once.cpp.ll
 ; gromacs/optimized/swapcoords.cpp.ll
 ; hdf5/optimized/H5Cint.c.ll
 ; icu/optimized/cal.ll
@@ -55,7 +55,6 @@
 ; jq/optimized/decNumber.ll
 ; lief/optimized/aes.c.ll
 ; linux/optimized/dmar.ll
-; linux/optimized/head64.ll
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/md.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -68,7 +67,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -92,7 +90,6 @@
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/seams.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
-; mitsuba3/optimized/rgb2spec.c.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; nori/optimized/layout.cpp.ll
 ; nuttx/optimized/fs_files.c.ll
@@ -103,7 +100,6 @@
 ; opencv/optimized/decoded_bit_stream_parser.cpp.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
 ; opencv/optimized/knn_matching.cpp.ll
-; opencv/optimized/lsd.cpp.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; opencv/optimized/perf_matching.cpp.ll
@@ -154,7 +150,6 @@
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; pbrt-v4/optimized/samples.cpp.ll
 ; php/optimized/php_cli_server.ll
-; php/optimized/unixtime2tm.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/datetime.ll
 ; postgres/optimized/dt_common.ll

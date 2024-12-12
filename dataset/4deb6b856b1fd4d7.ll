@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/hashing.cc.ll
 ; libpng/optimized/pngrtran.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; openjdk/optimized/pngrtran.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind

@@ -1,11 +1,12 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; clamav/optimized/infblock.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; flac/optimized/decode.c.ll
 ; linux/optimized/gre_offload.ll
 ; linux/optimized/intel_dmc.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; quantlib/optimized/date.ll
@@ -21,7 +22,7 @@ entry:
   ret i32 %5
 }
 
-; 45 occurrences:
+; 44 occurrences:
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; assimp/optimized/B3DImporter.cpp.ll
@@ -59,7 +60,6 @@ entry:
 ; postgres/optimized/euc_jp_and_sjis.ll
 ; qemu/optimized/hw_char_serial.c.ll
 ; qemu/optimized/hw_usb_desc.c.ll
-; slurm/optimized/ebpf.ll
 ; stockfish/optimized/search.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/file-elf.c.ll
@@ -145,7 +145,7 @@ entry:
   ret i32 %5
 }
 
-; 71 occurrences:
+; 72 occurrences:
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dsc.c.ll
@@ -179,6 +179,7 @@ entry:
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; opencv/optimized/ffilldemo.cpp.ll
 ; openjdk/optimized/library_call.ll
@@ -243,7 +244,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 360, i32 0
   %4 = add nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -254,7 +255,7 @@ define i32 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 4, i32 3
   %4 = add nuw i32 %3, %1
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -268,7 +269,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 4194304
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -279,17 +280,18 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 911, i32 0
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw i32 %4, %0
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 -38, i32 -34
+  %3 = select i1 %2, i32 4, i32 3
   %4 = add i32 %3, %1
   %5 = add nsw i32 %4, %0
   ret i32 %5

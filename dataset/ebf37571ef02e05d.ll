@@ -4,7 +4,7 @@
 ; openjdk/optimized/dependencies.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0

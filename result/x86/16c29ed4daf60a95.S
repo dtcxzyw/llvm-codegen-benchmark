@@ -1,22 +1,22 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	negl	%edx
 	imull	%esi, %edi
 	cmpl	%edx, %edi
 	setl	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	xorl	$2147483647, %edx               # imm = 0x7FFFFFFF
 	imull	%esi, %edi
 	cmpl	%edx, %edi
 	setg	%al
 	retq
-func00000000000000d7:                   # @func00000000000000d7
+func00000000000001a7:                   # @func00000000000001a7
 	xorl	$2147483647, %edx               # imm = 0x7FFFFFFF
 	imull	%esi, %edi
 	cmpl	%edx, %edi
 	setle	%al
 	retq
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	xorl	$2147483647, %edx               # imm = 0x7FFFFFFF
 	imull	%esi, %edi
 	cmpl	%edx, %edi

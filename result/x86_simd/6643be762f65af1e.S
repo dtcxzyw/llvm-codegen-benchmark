@@ -35,7 +35,7 @@
 .LCPI0_2:
 	.short	3584                            # 0xe00
 	.short	3584                            # 0xe00
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm2, %ymm2
 	vpcmpltw	.LCPI0_1(%rip), %ymm2, %k1
 	vpblendmw	%ymm0, %ymm1, %ymm0 {%k1}

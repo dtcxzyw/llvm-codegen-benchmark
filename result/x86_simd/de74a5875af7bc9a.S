@@ -1,6 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
-	vminpd	%zmm3, %zmm1, %zmm1
-	vminpd	%zmm2, %zmm0, %zmm0
+	vmaxpd	%zmm3, %zmm1, %zmm1
+	vmaxpd	%zmm2, %zmm0, %zmm0
 	vmulpd	%zmm0, %zmm0, %zmm0
 	vmulpd	%zmm1, %zmm1, %zmm1
 	retq

@@ -23,11 +23,10 @@ entry:
   ret i1 %6
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; linux/optimized/apic.ll
 ; linux/optimized/drm_probe_helper.ll
 ; luau/optimized/lutf8lib.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/gram.ll
@@ -41,11 +40,11 @@ entry:
   %3 = or i32 %1, %2
   %4 = and i32 %3, 192
   %5 = icmp eq i32 %4, 192
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 8 occurrences:
+; 12 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; icu/optimized/utf_impl.ll
 ; libphonenumber/optimized/rune.c.ll
@@ -54,13 +53,17 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; wireshark/optimized/packet-mtp2.c.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = and i32 %3, 2147483631
   %5 = icmp eq i32 %4, 108
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

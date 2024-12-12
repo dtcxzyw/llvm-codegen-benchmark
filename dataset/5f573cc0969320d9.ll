@@ -4,7 +4,7 @@
 ; openusd/optimized/openexr-c.c.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -18,7 +18,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/mutableNUMASpace.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000ca(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/lzo1x_decompress_safe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -54,26 +54,10 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
-; casadi/optimized/mx_function.cpp.ll
-; casadi/optimized/sx_function.cpp.ll
-; hyperscan/optimized/ng_region.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = icmp eq i64 %4, 16
-  %6 = icmp eq i64 %0, 16
-  %7 = select i1 %5, i1 %6, i1 false
-  ret i1 %7
-}
-
 ; 1 occurrences:
 ; lz4/optimized/lz4frame.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -83,10 +67,25 @@ entry:
   ret i1 %7
 }
 
+; 3 occurrences:
+; casadi/optimized/mx_function.cpp.ll
+; casadi/optimized/sx_function.cpp.ll
+; hyperscan/optimized/ng_region.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = icmp eq i64 %4, 56
+  %6 = icmp eq i64 %0, 1
+  %7 = select i1 %5, i1 %6, i1 false
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; eastl/optimized/TestFixedVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

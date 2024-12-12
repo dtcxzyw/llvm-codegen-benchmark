@@ -9,3 +9,13 @@ func0000000000000086:                   // @func0000000000000086
 	smaddl	x0, w8, w9, x0
 	ret
                                         // -- End function
+func0000000000000087:                   // @func0000000000000087
+// %bb.0:                               // %entry
+	lsr	x8, x1, #3
+	mov	x9, #225180840361984            // =0xcccd00000000
+	mov	x10, #4294967296                // =0x100000000
+	movk	x9, #52428, lsl #48
+	madd	x8, x8, x9, x10
+	add	x0, x0, x8, asr #30
+	ret
+                                        // -- End function

@@ -6,7 +6,7 @@
 	.long	1131                            # 0x46b
 .LCPI0_3:
 	.long	32768                           # 0x8000
-func0000000000000296:                   # @func0000000000000296
+func0000000000000526:                   # @func0000000000000526
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
 	vpcmpgtd	.LCPI0_0(%rip){1to8}, %ymm0, %k2

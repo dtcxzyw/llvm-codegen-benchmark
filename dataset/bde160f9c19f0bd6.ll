@@ -1,5 +1,6 @@
 
-; 22 occurrences:
+; 25 occurrences:
+; boost/optimized/rational.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/amd_nb.ll
 ; linux/optimized/icl_dsi.ll
@@ -22,6 +23,8 @@
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:

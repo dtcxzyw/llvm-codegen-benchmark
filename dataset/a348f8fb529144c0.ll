@@ -1,5 +1,5 @@
 
-; 266 occurrences:
+; 265 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -7,7 +7,6 @@
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/bdcDec.c.ll
-; abc/optimized/bdcTable.c.ll
 ; abc/optimized/cgtCore.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/fraClaus.c.ll
@@ -44,6 +43,7 @@
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; hermes/optimized/TypeInference.cpp.ll
 ; hwloc/optimized/components.ll
+; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/limex_native.c.ll
 ; hyperscan/optimized/noodle_engine.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -121,7 +121,6 @@
 ; linux/optimized/util.ll
 ; linux/optimized/vgaarb.ll
 ; linux/optimized/vlv_dsi.ll
-; linux/optimized/wol.ll
 ; linux/optimized/x_tables.ll
 ; linux/optimized/xstate.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
@@ -149,7 +148,6 @@
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVExpandAtomicPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -171,7 +169,8 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_tlsf.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; node/optimized/core.ll
@@ -275,7 +274,7 @@ entry:
   ret i1 %4
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/mvcContain.c.ll
 ; abc/optimized/mvcUtils.c.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
@@ -288,7 +287,6 @@ entry:
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/ExpandPostRAPseudos.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/X86ExpandPseudo.cpp.ll
 ; llvm/optimized/X86FixupLEAs.cpp.ll
@@ -309,22 +307,19 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; abc/optimized/giaSatLE.c.ll
-; llvm/optimized/ValueTracking.cpp.ll
-; postgres/optimized/hashutil.ll
 ; qemu/optimized/ahci.c.ll
-; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ult i32 %3, 8388608
   ret i1 %4
 }
@@ -341,7 +336,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp slt i32 %3, 32
   ret i1 %4
 }
@@ -350,11 +345,24 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; sentencepiece/optimized/generated_message_table_driven_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 960
   %3 = and i32 %2, %0
-  %4 = icmp ugt i32 %3, 63
+  %4 = icmp samesign ugt i32 %3, 63
+  ret i1 %4
+}
+
+; 3 occurrences:
+; llvm/optimized/ValueTracking.cpp.ll
+; postgres/optimized/hashutil.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = xor i32 %1, 960
+  %3 = and i32 %0, %2
+  %4 = icmp samesign ult i32 %3, 64
   ret i1 %4
 }
 

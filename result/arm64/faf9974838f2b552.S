@@ -5,7 +5,7 @@ func000000000000000c:                   // @func000000000000000c
 	add	x0, x0, w8, uxtw #3
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	cmp	w1, #0
 	mov	w8, #80                         // =0x50
@@ -13,7 +13,7 @@ func000000000000000e:                   // @func000000000000000e
 	umaddl	x0, w9, w8, x0
 	ret
                                         // -- End function
-func000000000000001e:                   // @func000000000000001e
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	cmp	w1, #0
 	cneg	w8, w1, mi

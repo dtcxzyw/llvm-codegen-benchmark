@@ -33,6 +33,7 @@ func0000000000000009:                   # @func0000000000000009
 	retq
 func000000000000000a:                   # @func000000000000000a
 	movl	%edi, %eax
+	notl	%esi
 	andl	$511, %esi                      # imm = 0x1FF
 	cmpl	$1, %esi
 	adcl	$0, %eax
@@ -50,25 +51,25 @@ func0000000000000051:                   # @func0000000000000051
 	setg	%al
 	addl	%edi, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	movl	%edi, %eax
 	movzbl	%sil, %ecx
 	cmpl	$127, %ecx
 	adcl	$0, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	movl	%edi, %eax
 	movzbl	%sil, %ecx
 	cmpl	$127, %ecx
 	adcl	$0, %eax
 	retq
-func0000000000000041:                   # @func0000000000000041
+func00000000000000c1:                   # @func00000000000000c1
 	movl	%edi, %eax
 	andl	$8388607, %esi                  # imm = 0x7FFFFF
 	cmpl	$3474675, %esi                  # imm = 0x3504F3
 	sbbl	$-1, %eax
 	retq
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	movl	%edi, %eax
 	movzbl	%sil, %ecx
 	cmpl	$63, %ecx

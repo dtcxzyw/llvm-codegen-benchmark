@@ -100,6 +100,15 @@ func0000000000000051:                   # @func0000000000000051
 	lui	a0, 1048573
 	addiw	a0, a0, 77
 	vmacc.vx	v10, a0, v12
+	vadd.vv	v8, v8, v10
+	ret
+func000000000000005f:                   # @func000000000000005f
+	li	a0, 60
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmul.vx	v10, v10, a0
+	lui	a0, 1
+	addiw	a0, a0, -496
+	vmacc.vx	v10, a0, v12
 	vadd.vv	v8, v10, v8
 	ret
 func00000000000000e0:                   # @func00000000000000e0
@@ -130,7 +139,7 @@ func00000000000000fd:                   # @func00000000000000fd
 	lui	a0, 2
 	addiw	a0, a0, -1922
 	vmacc.vx	v10, a0, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000075:                   # @func0000000000000075
 	lui	a0, 1
@@ -140,7 +149,7 @@ func0000000000000075:                   # @func0000000000000075
 	lui	a0, 1048572
 	addiw	a0, a0, 1247
 	vmacc.vx	v10, a0, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func00000000000000d5:                   # @func00000000000000d5
 	lui	a0, 1048574

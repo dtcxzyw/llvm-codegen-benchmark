@@ -33,7 +33,7 @@ func0000000000000025:                   # @func0000000000000025
 func0000000000000060:                   # @func0000000000000060
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$44, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsllq	$24, %ymm0, %ymm0
 	retq
 .LCPI6_0:
@@ -54,6 +54,6 @@ func0000000000000048:                   # @func0000000000000048
 func000000000000002c:                   # @func000000000000002c
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$16, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsllq	$32, %ymm0, %ymm0
 	retq

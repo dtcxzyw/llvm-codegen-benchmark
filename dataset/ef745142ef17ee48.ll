@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 75 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/bmcBmcAnd.c.ll
@@ -14,6 +14,7 @@
 ; cmake/optimized/zstd_fast.c.ll
 ; cpython/optimized/instrumentation.ll
 ; cvc5/optimized/eq_proof.cpp.ll
+; draco/optimized/symbol_encoding.cc.ll
 ; gromacs/optimized/dgebrd.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
 ; hdf5/optimized/H5HFdbg.c.ll
@@ -28,6 +29,9 @@
 ; linux/optimized/xz_dec_bcj.ll
 ; llvm/optimized/HTMLDiagnostics.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_textarea.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -125,12 +129,10 @@ entry:
   ret i32 %5
 }
 
-; 41 occurrences:
+; 30 occurrences:
 ; gromacs/optimized/dgesdd.cpp.ll
-; gromacs/optimized/dgetrf.cpp.ll
 ; gromacs/optimized/dgetri.cpp.ll
 ; gromacs/optimized/sgesdd.cpp.ll
-; gromacs/optimized/sgetrf.cpp.ll
 ; gromacs/optimized/sgetri.cpp.ll
 ; libquic/optimized/dtoa.cc.ll
 ; luau/optimized/loslib.cpp.ll
@@ -139,7 +141,6 @@ entry:
 ; openblas/optimized/dgeesx.c.ll
 ; openblas/optimized/dgegs.c.ll
 ; openblas/optimized/dgegv.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgges.c.ll
 ; openblas/optimized/dgges3.c.ll
@@ -148,20 +149,12 @@ entry:
 ; openblas/optimized/dggev3.c.ll
 ; openblas/optimized/dggevx.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlaorhr_col_getrfnp.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlasyf.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
-; openblas/optimized/dsbgvd.c.ll
-; openblas/optimized/dspevd.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
-; openblas/optimized/dsygst.c.ll
 ; openblas/optimized/dtgex2.c.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/jfdctint.ll
@@ -176,10 +169,11 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_basicadj.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; libjpeg-turbo/optimized/jchuff.c.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; sqlite/optimized/sqlite3.ll
@@ -189,7 +183,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -242,17 +236,34 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
+  ret i32 %5
+}
+
+; 8 occurrences:
+; boost/optimized/area.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; openblas/optimized/dorbdb.c.ll
+; openblas/optimized/dorgtsqr_row.c.ll
+; openusd/optimized/blend_a64_mask.c.ll
+; openusd/optimized/convolve.c.ll
+; wireshark/optimized/packet-isakmp.c.ll
+; wireshark/optimized/packet-ucp.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = sub i32 %0, %3
+  %5 = add nsw i32 %4, 100000000
   ret i32 %5
 }
 
@@ -265,24 +276,6 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = sub i32 %0, %3
   %5 = add nsw i32 %4, -2
-  ret i32 %5
-}
-
-; 8 occurrences:
-; openblas/optimized/dgbtrf.c.ll
-; openblas/optimized/dorbdb.c.ll
-; openblas/optimized/dorgtsqr_row.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
-; openusd/optimized/blend_a64_mask.c.ll
-; openusd/optimized/convolve.c.ll
-; wireshark/optimized/packet-isakmp.c.ll
-; wireshark/optimized/packet-ucp.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %1, %2
-  %4 = xor i32 %3, -1
-  %5 = add i32 %4, %0
   ret i32 %5
 }
 

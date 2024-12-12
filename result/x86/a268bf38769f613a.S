@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rsi, %rsi
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leaq	(%rdx,%rsi), %rax
 	cmpq	$-1, %rsi
 	cmoveq	%rdi, %rax

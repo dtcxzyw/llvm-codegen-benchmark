@@ -13,7 +13,7 @@ entry:
   %4 = zext i16 %1 to i32
   %5 = shl nuw nsw i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = add nuw nsw i64 %6, %0
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 

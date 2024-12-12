@@ -23,6 +23,10 @@ func0000000000000005:                   # @func0000000000000005
 	movl	$64, %eax
 	subl	%edi, %eax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	leal	(%rdi,%rsi), %eax
+	negl	%eax
+	retq
 func000000000000000b:                   # @func000000000000000b
 	leal	(%rdi,%rsi), %eax
 	negl	%eax
@@ -35,8 +39,4 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%esi, %edi
 	movl	$18, %eax
 	subl	%edi, %eax
-	retq
-func000000000000000a:                   # @func000000000000000a
-	leal	(%rdi,%rsi), %eax
-	negl	%eax
 	retq

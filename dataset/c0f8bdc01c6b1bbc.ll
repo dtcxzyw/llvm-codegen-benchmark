@@ -28,19 +28,19 @@ entry:
 define i64 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 12
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i64 16384, i64 0
   ret i64 %4
 }
 
 ; 1 occurrences:
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; boost/optimized/to_chars.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i1 %0, i8 %1) #0 {
+define i64 @func000000000000000a(i1 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %1, 3
-  %3 = and i1 %2, %0
-  %4 = select i1 %3, i64 1280, i64 3584
+  %2 = icmp sgt i8 %1, 48
+  %3 = and i1 %0, %2
+  %4 = select i1 %3, i64 3, i64 1
   ret i64 %4
 }
 

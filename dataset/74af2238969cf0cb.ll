@@ -16,7 +16,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-bthci_acl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 192
   %3 = icmp eq i16 %2, 0
@@ -39,7 +39,7 @@ entry:
 ; wireshark/optimized/packet-asam-cmp.c.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 64
   %3 = icmp eq i16 %2, 0
@@ -71,7 +71,7 @@ entry:
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8
   %3 = icmp ne i16 %2, 0
@@ -89,7 +89,7 @@ entry:
 ; slurm/optimized/agent.ll
 ; slurm/optimized/step_io.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -9
   %3 = icmp ne i16 %2, 0
@@ -101,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32
   %3 = icmp eq i16 %2, 0
@@ -113,7 +113,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -2
   %3 = icmp eq i16 %2, 12
@@ -126,7 +126,7 @@ entry:
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; wireshark/optimized/packet-stun.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16
   %3 = icmp eq i16 %2, 0
@@ -138,7 +138,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/rx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 252
   %3 = icmp eq i16 %2, 208

@@ -1,10 +1,23 @@
 
-; 55 occurrences:
+; 68 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
+; icu/optimized/anytrans.ll
+; icu/optimized/datamap.ll
+; icu/optimized/derb.ll
+; icu/optimized/emojiprops.ll
+; icu/optimized/filterednormalizer2.ll
+; icu/optimized/messagepattern.ll
+; icu/optimized/msgfmt.ll
+; icu/optimized/name2uni.ll
+; icu/optimized/smpdtfmt.ll
+; icu/optimized/translit.ll
+; icu/optimized/uconv.ll
+; icu/optimized/uniset_closure.ll
+; icu/optimized/uts46.ll
+; icu/optimized/wrtxml.ll
 ; linux/optimized/ip6_input.ll
 ; linux/optimized/ip_input.ll
 ; linux/optimized/ip_tunnel.ll
-; linux/optimized/sta_info.ll
 ; llvm/optimized/BodyFarm.cpp.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll

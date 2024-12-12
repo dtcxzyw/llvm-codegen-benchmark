@@ -13,11 +13,10 @@ entry:
   ret double %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; openjdk/optimized/cmssm.ll
 ; osqp/optimized/vector.c.ll
-; proj/optimized/factory.cpp.ll
 ; quantlib/optimized/alphafinder.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; Function Attrs: nounwind

@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$14912, %eax                    # imm = 0x3A40
 	cmovneq	%rcx, %rax
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	leaq	7(%rsi), %rax
 	movabsq	$34359738360, %rcx              # imm = 0x7FFFFFFF8
 	andq	%rax, %rcx

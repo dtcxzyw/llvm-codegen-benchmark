@@ -68,12 +68,14 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; libwebp/optimized/demux.c.ll
 ; libwebp/optimized/muxedit.c.ll
 ; libwebp/optimized/muxread.c.ll
 ; portaudio/optimized/pa_converters.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i8 %0, i16 %1) #0 {
 entry:
@@ -107,6 +109,33 @@ entry:
   %3 = shl nuw nsw i32 %2, 15
   %4 = zext i16 %0 to i32
   %5 = shl i32 %4, 23
+  %6 = or disjoint i32 %5, %3
+  ret i32 %6
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; Function Attrs: nounwind
+define i32 @func000000000000005d(i8 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i32
+  %3 = shl nuw nsw i32 %2, 16
+  %4 = zext i8 %0 to i32
+  %5 = shl nuw i32 %4, 24
+  %6 = or disjoint i32 %5, %3
+  ret i32 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003d(i16 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = shl nuw nsw i32 %2, 16
+  %4 = zext nneg i16 %0 to i32
+  %5 = shl nuw i32 %4, 24
   %6 = or disjoint i32 %5, %3
   ret i32 %6
 }

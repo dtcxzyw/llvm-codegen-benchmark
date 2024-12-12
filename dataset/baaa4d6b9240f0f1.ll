@@ -14,12 +14,13 @@ entry:
   ret i8 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; openjdk/optimized/chunklevel.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp eq i64 %2, 0
+  %3 = icmp eq i64 %2, 1
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = trunc nuw nsw i64 %4 to i8
   ret i8 %5

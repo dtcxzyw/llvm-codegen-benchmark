@@ -3,7 +3,7 @@
 ; qemu/optimized/chardev_char-hmp-cmds.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000882(i8 %0, i8 %1) #0 {
+define i1 @func0000000000002102(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, -2
   %3 = icmp ult i8 %0, 32
@@ -30,7 +30,7 @@ entry:
 ; pugixml/optimized/pugixml.cpp.ll
 ; wireshark/optimized/packet-tecmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000842(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 0
   %3 = icmp eq i8 %1, 62
@@ -44,7 +44,7 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000302(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000a02(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 1
   %3 = icmp ugt i8 %1, 31
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001822(i8 %0, i8 %1) #0 {
+define i1 @func0000000000006042(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 2
   %3 = icmp eq i8 %0, 3
@@ -71,7 +71,7 @@ entry:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001982(i8 %0, i8 %1) #0 {
+define i1 @func0000000000006302(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %0, 3
   %3 = icmp ne i8 %1, 0

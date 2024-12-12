@@ -1,10 +1,15 @@
 
-; 9 occurrences:
+; 14 occurrences:
 ; freetype/optimized/ftbitmap.c.ll
 ; linux/optimized/hwregs.ll
 ; linux/optimized/i915_query.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/intel_sseu.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll

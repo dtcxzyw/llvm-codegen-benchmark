@@ -1,4 +1,4 @@
-func0000000000000388:                   # @func0000000000000388
+func0000000000000b08:                   # @func0000000000000b08
 	testl	%esi, %esi
 	sete	%al
 	testl	%edi, %edi

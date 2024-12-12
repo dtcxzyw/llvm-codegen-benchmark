@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func000000000000060a(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 12
   %4 = trunc i8 %1 to i1
@@ -16,7 +16,7 @@ entry:
 ; postgres/optimized/interval.ll
 ; yosys/optimized/select.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000032c(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func000000000000064c(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, -1
   %4 = trunc nuw i8 %1 to i1
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Darwin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -981
   %4 = trunc i8 %1 to i1
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Darwin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000408(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 999
   %4 = trunc i8 %1 to i1
@@ -56,7 +56,7 @@ entry:
 ; llvm/optimized/CGLoopInfo.cpp.ll
 ; llvm/optimized/StandardInstrumentations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030c(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func000000000000060c(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = trunc i8 %1 to i1

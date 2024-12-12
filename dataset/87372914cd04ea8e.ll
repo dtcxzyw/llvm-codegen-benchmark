@@ -1,5 +1,5 @@
 
-; 217 occurrences:
+; 213 occurrences:
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; bdwgc/optimized/gc.c.ll
@@ -14,8 +14,6 @@
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; folly/optimized/ExecutorWithPriority.cpp.ll
-; hermes/optimized/HadesGC.cpp.ll
-; hyperscan/optimized/fdr_confirm_compile.cpp.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
@@ -90,7 +88,6 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; llvm/optimized/GVN.cpp.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
-; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; nuttx/optimized/mm_memalign.c.ll
 ; opencv/optimized/arithm.cpp.ll
@@ -115,7 +112,6 @@
 ; openjdk/optimized/heapShared.ll
 ; openjdk/optimized/instanceKlass.ll
 ; openjdk/optimized/jvm.ll
-; openjdk/optimized/mutableNUMASpace.ll
 ; openjdk/optimized/os.ll
 ; openjdk/optimized/os_linux.ll
 ; openjdk/optimized/os_posix.ll
@@ -145,7 +141,6 @@
 ; openjdk/optimized/zVerify.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/zend_gc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; raylib/optimized/rtextures.c.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
@@ -217,6 +212,7 @@
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -224,7 +220,23 @@ entry:
   ret i64 %2
 }
 
-; 53 occurrences:
+; 7 occurrences:
+; bdwgc/optimized/gc.c.ll
+; hermes/optimized/HadesGC.cpp.ll
+; hyperscan/optimized/fdr_confirm_compile.cpp.ll
+; llvm/optimized/XCOFFObjectFile.cpp.ll
+; opencv/optimized/arithm.cpp.ll
+; openjdk/optimized/mutableNUMASpace.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
+entry:
+  %.idx = shl nuw nsw i64 %0, 12
+  %2 = add nuw i64 %1, %.idx
+  ret i64 %2
+}
+
+; 52 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; abseil-cpp/optimized/strip_test.cc.ll
 ; linux/optimized/ahash.ll
@@ -234,7 +246,6 @@ entry:
 ; linux/optimized/filemap.ll
 ; linux/optimized/gro.ll
 ; linux/optimized/gup.ll
-; linux/optimized/head64.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/io_uring.ll

@@ -6,6 +6,12 @@ func0000000000000004:                   # @func0000000000000004
 	seta	%al
 	andb	%dil, %al
 	retq
+func000000000000000e:                   # @func000000000000000e
+	vaddss	%xmm1, %xmm0, %xmm0
+	vucomiss	%xmm0, %xmm0
+	setnp	%al
+	andb	%dil, %al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	vaddss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -15,11 +21,19 @@ func0000000000000008:                   # @func0000000000000008
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-.LCPI2_0:
+.LCPI3_0:
+	.long	0x7f800000                      # float +Inf
+func0000000000000006:                   # @func0000000000000006
+	vaddss	%xmm1, %xmm0, %xmm0
+	vucomiss	.LCPI3_0(%rip), %xmm0
+	setne	%al
+	andb	%dil, %al
+	retq
+.LCPI4_0:
 	.long	0x3f800000                      # float 1
 func000000000000000a:                   # @func000000000000000a
 	vaddss	%xmm1, %xmm0, %xmm0
-	vmovss	.LCPI2_0(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI4_0(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm0, %xmm1
 	setae	%al
 	andb	%dil, %al
@@ -29,11 +43,5 @@ func000000000000000c:                   # @func000000000000000c
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setae	%al
-	andb	%dil, %al
-	retq
-func000000000000000e:                   # @func000000000000000e
-	vaddss	%xmm1, %xmm0, %xmm0
-	vucomiss	%xmm0, %xmm0
-	setnp	%al
 	andb	%dil, %al
 	retq

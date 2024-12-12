@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; libquic/optimized/convert.c.ll
 ; openjdk/optimized/g1CollectedHeap.ll
 ; openjdk/optimized/g1ConcurrentMarkObjArrayProcessor.ll
@@ -17,7 +17,6 @@
 ; openjdk/optimized/stubs.ll
 ; openssl/optimized/libcrypto-lib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
-; openusd/optimized/yv12config.c.ll
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(ptr %0, i32 %1) #0 {

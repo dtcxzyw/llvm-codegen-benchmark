@@ -1,17 +1,31 @@
 
-; 53 occurrences:
+; 69 occurrences:
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
 ; actix-rs/optimized/1h6chd9qxbb3rt70.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
+; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
+; linux/optimized/build_policy.ll
+; linux/optimized/drm_mm.ll
+; linux/optimized/drm_probe_helper.ll
 ; linux/optimized/exconvrt.ll
+; linux/optimized/fair.ll
 ; linux/optimized/gen8_ppgtt.ll
+; linux/optimized/i915_vma_resource.ll
+; linux/optimized/intel_execlists_submission.ll
+; linux/optimized/interval_tree.ll
+; linux/optimized/memtype_interval.ll
+; linux/optimized/netconsole.ll
+; linux/optimized/sem.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/tcp_timer.ll
+; linux/optimized/update.ll
+; linux/optimized/vmscan.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; mitsuba3/optimized/ptracer.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
@@ -52,6 +66,8 @@
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i8 %1) #0 {
@@ -62,24 +78,17 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
-; actix-rs/optimized/4pmtvrahn6eloepe.ll
-; icu/optimized/normalizer2impl.ll
-; linux/optimized/libata-scsi.ll
-; minetest/optimized/content_mapblock.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i8 %1) #0 {
-entry:
-  %2 = icmp ugt i8 %1, -65
-  %3 = select i1 %0, i1 %2, i1 false
-  ret i1 %3
-}
-
-; 8 occurrences:
+; 14 occurrences:
+; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; hyperscan/optimized/rose_build_compile.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; imgui/optimized/imgui.cpp.ll
+; linux/optimized/sky2.ll
+; linux/optimized/xprtsock.ll
 ; minetest/optimized/content_cao.cpp.ll
+; minetest/optimized/filesys.cpp.ll
+; minetest/optimized/servermap.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openmpi/optimized/nbc_ireduce.ll
@@ -88,6 +97,19 @@ entry:
 define i1 @func000000000000000c(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 true, i1 %2
+  ret i1 %3
+}
+
+; 3 occurrences:
+; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; icu/optimized/normalizer2impl.ll
+; minetest/optimized/content_mapblock.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i8 %1) #0 {
+entry:
+  %2 = icmp ugt i8 %1, -65
   %3 = select i1 %0, i1 %2, i1 false
   ret i1 %3
 }

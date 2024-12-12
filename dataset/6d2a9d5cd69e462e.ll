@@ -28,6 +28,7 @@ entry:
 ; curl/optimized/libcurl_la-parsedate.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
+; freetype/optimized/sfnt.c.ll
 ; hyperscan/optimized/ng_region.cpp.ll
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
@@ -35,7 +36,6 @@ entry:
 ; ninja/optimized/graph.cc.ll
 ; opencv/optimized/tf_importer.cpp.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; wireshark/optimized/profile_dialog.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1, ptr %2) #0 {
@@ -57,8 +57,8 @@ entry:
 ; llvm/optimized/SampleProfile.cpp.ll
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
 ; zstd/optimized/huf_decompress.c.ll
-; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, ptr %1, ptr %2) #0 {
 entry:

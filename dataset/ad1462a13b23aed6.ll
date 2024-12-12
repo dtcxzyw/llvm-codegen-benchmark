@@ -8,7 +8,7 @@ define i1 @func0000000000000002(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 256
   %3 = icmp ne i16 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -21,7 +21,7 @@ define i1 @func0000000000000018(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 256
   %.not = icmp eq i16 %2, 0
-  %3 = or i1 %.not, %0
+  %3 = or i1 %0, %.not
   ret i1 %3
 }
 

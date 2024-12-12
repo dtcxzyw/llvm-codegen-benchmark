@@ -1,12 +1,9 @@
 
-; 443 occurrences:
+; 440 occurrences:
 ; cvc5/optimized/cvc5.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; duckdb/optimized/ub_duckdb_transformer_statement.cpp.ll
-; graphviz/optimized/sfprint.c.ll
-; hermes/optimized/TraceInterpreter.cpp.ll
-; lightgbm/optimized/bin.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
 ; lua/optimized/ltable.ll
 ; luajit/optimized/minilua.ll
@@ -444,9 +441,21 @@
 ; verilator/optimized/V3ExecGraph.cpp.ll
 ; wasmedge/optimized/compiler.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = urem i64 63, %1
+  %3 = getelementptr nusw nuw ptr, ptr %0, i64 %2
+  ret ptr %3
+}
+
+; 3 occurrences:
+; graphviz/optimized/sfprint.c.ll
+; hermes/optimized/TraceInterpreter.cpp.ll
+; lightgbm/optimized/bin.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+entry:
+  %2 = urem i64 -1, %1
   %3 = getelementptr nusw ptr, ptr %0, i64 %2
   ret ptr %3
 }

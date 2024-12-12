@@ -1,5 +1,5 @@
 
-; 368 occurrences:
+; 370 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/giaFrames.c.ll
@@ -37,6 +37,11 @@
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/cvodes_band.c.ll
 ; casadi/optimized/cvodes_dense.c.ll
 ; casadi/optimized/cvodes_spbcgs.c.ll
@@ -149,6 +154,7 @@
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; llvm/optimized/FileUtilities.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -163,10 +169,7 @@
 ; msdfgen/optimized/msdfgen.cpp.ll
 ; nori/optimized/chi2test.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dhgeqz.c.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/dlanv2.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
@@ -236,7 +239,6 @@
 ; proj/optimized/gstmerc.cpp.ll
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/krovak.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/nsper.cpp.ll
 ; proj/optimized/omerc.cpp.ll
@@ -345,7 +347,6 @@
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; rocksdb/optimized/clock_cache.cc.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; stat-rs/optimized/2y2d191rk1p8v5y4.ll
 ; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
@@ -364,6 +365,7 @@
 ; xgboost/optimized/auc.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; yosys/optimized/qwp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
 ; zxing/optimized/ODCode93Reader.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll

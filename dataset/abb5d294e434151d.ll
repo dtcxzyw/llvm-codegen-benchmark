@@ -1,7 +1,8 @@
 
-; 52 occurrences:
+; 54 occurrences:
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/ifDec07.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/divsufsort.c.ll
 ; gromacs/optimized/pme_pp.cpp.ll
 ; gromacs/optimized/xtc2.c.ll
@@ -18,6 +19,7 @@
 ; linux/optimized/drbg.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/intel_bw.ll
+; linux/optimized/intel_pmdemand.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/MCCodeView.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
@@ -36,8 +38,8 @@
 ; miniaudio/optimized/unity.c.ll
 ; openblas/optimized/dlaror.c.ll
 ; opencv/optimized/grfmt_bmp.cpp.ll
+; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openmpi/optimized/coll_base_alltoall.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
@@ -93,8 +95,9 @@ entry:
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_dp_hdcp.ll
 ; linux/optimized/intel_guc_ct.ll
+; linux/optimized/intel_overlay.ll
+; linux/optimized/intel_pmdemand.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/ioport.ll
 ; linux/optimized/memfd.ll
 ; linux/optimized/nfs4xdr.ll
 ; linux/optimized/r8169_main.ll
@@ -108,7 +111,6 @@ entry:
 ; llvm/optimized/VNCoercion.cpp.ll
 ; luajit/optimized/minilua.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -195,7 +197,7 @@ entry:
   ret i32 %4
 }
 
-; 35 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/fretTime.c.ll
 ; abc/optimized/satStore.c.ll
@@ -211,7 +213,9 @@ entry:
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
 ; libwebp/optimized/lossless.c.ll
+; linux/optimized/intel_pmdemand.ll
 ; llvm/optimized/PDBFile.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; minetest/optimized/map.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; openblas/optimized/dlaror.c.ll
@@ -239,7 +243,7 @@ entry:
   ret i32 %4
 }
 
-; 48 occurrences:
+; 49 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/sbdWin.c.ll
 ; abc/optimized/utilSort.c.ll
@@ -264,6 +268,7 @@ entry:
 ; linux/optimized/intel_display_power_well.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/regcomp.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; ncnn/optimized/gemm_x86.cpp.ll
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
@@ -271,10 +276,10 @@ entry:
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
 ; opencv/optimized/darknet_io.cpp.ll
-; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openjdk/optimized/compilerDefinitions.ll
 ; openjdk/optimized/constantPool.ll
+; openjdk/optimized/methodData.ll
 ; openmpi/optimized/coll_base_alltoall.ll
 ; openmpi/optimized/coll_base_reduce_scatter.ll
 ; openmpi/optimized/coll_base_reduce_scatter_block.ll

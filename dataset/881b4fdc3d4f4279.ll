@@ -1,7 +1,8 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; llvm/optimized/APINotesReader.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; openjdk/optimized/macroAssembler_x86.ll
 ; protobuf/optimized/coded_stream.cc.ll

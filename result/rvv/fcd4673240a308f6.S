@@ -13,16 +13,6 @@ func0000000000000010:                   # @func0000000000000010
 	vmfeq.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
-.LCPI2_0:
-	.word	0x48976760                      # float 310075
-func0000000000000008:                   # @func0000000000000008
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmor.mm	v12, v0, v12
-	vmfgt.vf	v13, v8, fa5
-	vmor.mm	v0, v13, v12
-	ret
 func0000000000000016:                   # @func0000000000000016
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmor.mm	v12, v0, v12
@@ -30,6 +20,13 @@ func0000000000000016:                   # @func0000000000000016
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v13, v8, fa5
 	vmorn.mm	v0, v12, v13
+	ret
+func0000000000000008:                   # @func0000000000000008
+	fmv.w.x	fa5, zero
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmflt.vf	v9, v12, fa5
+	vmor.mm	v8, v0, v8
+	vmor.mm	v0, v8, v9
 	ret
 func000000000000001c:                   # @func000000000000001c
 	fli.s	fa5, 1.0
@@ -69,11 +66,14 @@ func0000000000000014:                   # @func0000000000000014
 	vmor.mm	v8, v0, v8
 	vmorn.mm	v0, v8, v9
 	ret
-func0000000000000002:                   # @func0000000000000002
+func0000000000000024:                   # @func0000000000000024
+	fli.s	fa5, inf
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmor.mm	v12, v0, v12
-	vmfne.vv	v13, v8, v8
-	vmor.mm	v0, v13, v12
+	vmflt.vf	v9, v12, fa5
+	vmfgt.vf	v10, v12, fa5
+	vmor.mm	v9, v10, v9
+	vmor.mm	v8, v0, v8
+	vmorn.mm	v0, v8, v9
 	ret
 func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 16, e32, m4, ta, ma

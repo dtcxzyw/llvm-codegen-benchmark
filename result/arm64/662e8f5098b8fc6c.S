@@ -1,32 +1,18 @@
-func0000000000000101:                   // @func0000000000000101
+func0000000000000201:                   // @func0000000000000201
 // %bb.0:                               // %entry
-	cmeq	v3.4s, v3.4s, #0
-	sshll2	v4.2d, v3.4s, #0
-	sshll	v3.2d, v3.2s, #0
-	mvn	v5.16b, v3.16b
-	mvn	v6.16b, v4.16b
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v4.2d, v4.2d, v6.2d
-	add	v2.2d, v4.2d, v2.2d
-	add	v1.2d, v3.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	cmeq	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	sub	w8, w1, #1
+	cmp	w2, #0
+	csinc	w8, w8, w1, eq
+	cmp	w0, w8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000151:                   // @func0000000000000151
+func00000000000002a1:                   // @func00000000000002a1
 // %bb.0:                               // %entry
-	cmeq	v3.4s, v3.4s, #0
-	sshll2	v4.2d, v3.4s, #0
-	sshll	v3.2d, v3.2s, #0
-	mvn	v5.16b, v3.16b
-	mvn	v6.16b, v4.16b
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v4.2d, v4.2d, v6.2d
-	add	v2.2d, v4.2d, v2.2d
-	add	v1.2d, v3.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	cmeq	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	sub	w8, w1, #1
+	cmp	w2, #0
+	csinc	w8, w8, w1, eq
+	cmp	w0, w8
+	cset	w0, eq
 	ret
                                         // -- End function

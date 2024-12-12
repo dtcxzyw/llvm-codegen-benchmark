@@ -1,9 +1,10 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/nfa.cc.ll
+; wireshark/optimized/protobuf_lang_scanner.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000184(i16 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -65
   %3 = icmp ult i32 %2, 26
@@ -16,7 +17,7 @@ entry:
 ; icu/optimized/ucnvmbcs.ll
 ; re2/optimized/bitstate.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000584(i16 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -65
   %3 = icmp ult i32 %2, 26
@@ -25,15 +26,23 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; arrow/optimized/string-to-double.cc.ll
-; double_conversion/optimized/string-to-double.cc.ll
-; icu/optimized/double-conversion-string-to-double.ll
+; 2 occurrences:
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; openssl/optimized/rpktest-bin-rpktest.ll
-; openusd/optimized/string-to-double.cc.ll
-; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i16 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -1024
+  %3 = icmp ult i32 %2, -2047
+  %4 = icmp ult i16 %0, -511
+  %5 = and i1 %3, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openssl/optimized/rpktest-bin-rpktest.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000484(i16 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -512
   %3 = icmp ult i32 %2, -1023
@@ -42,26 +51,10 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
-; llvm/optimized/RISCVRegisterBankInfo.cpp.ll
-; llvm/optimized/X86RegisterBankInfo.cpp.ll
-; openjdk/optimized/method.ll
-; openjdk/optimized/sharedRuntime.ll
-; Function Attrs: nounwind
-define i1 @func000000000000014c(i16 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -396
-  %3 = icmp ult i32 %2, 7
-  %4 = icmp ne i16 %0, 396
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; llvm/optimized/ParseStmtAsm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp eq i16 %0, 24
@@ -70,21 +63,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i16 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, -59
-  %3 = icmp ult i32 %2, 4
-  %4 = icmp ult i16 %0, 173
-  %5 = and i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; llvm/optimized/LegalizerInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 7
   %3 = icmp eq i16 %0, 71
@@ -98,7 +79,7 @@ entry:
 ; llvm/optimized/FastISel.cpp.ll
 ; quickjs/optimized/libunicode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i16 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -185
   %3 = icmp ult i32 %2, 3
@@ -107,11 +88,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; linux/optimized/rx.ll
+; 1 occurrences:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000424(i16 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = icmp ult i32 %2, 3
@@ -123,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i16 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -3
   %3 = icmp sgt i32 %2, 0
@@ -138,7 +118,7 @@ entry:
 ; postgres/optimized/unicode_norm_shlib.ll
 ; postgres/optimized/unicode_norm_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i16 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -13
   %3 = icmp ult i32 %2, 2
@@ -157,7 +137,7 @@ entry:
 ; icu/optimized/util.ll
 ; icu/optimized/xmlparser.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000042c(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp ne i16 %0, 0

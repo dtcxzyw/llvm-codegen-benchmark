@@ -16,5 +16,6 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000002:                   # @func0000000000000002
 	testb	$1, %dil
 	cmovel	%edx, %esi
-	imull	$16843009, %esi, %eax           # imm = 0x1010101
+	shll	$2, %esi
+	leal	(%rsi,%rsi,2), %eax
 	retq

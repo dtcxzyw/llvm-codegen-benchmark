@@ -1,18 +1,19 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
+; lvgl/optimized/lv_canvas.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/merge.dispatch.cpp.ll
 ; opencv/optimized/split.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -4
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %5 = mul nuw nsw i64 %1, %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -26,7 +27,7 @@ define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -41,7 +42,7 @@ define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -56,7 +57,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = zext nneg i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }

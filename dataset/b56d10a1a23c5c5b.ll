@@ -1,6 +1,7 @@
 
-; 107 occurrences:
+; 108 occurrences:
 ; abc/optimized/dauCanon.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -108,11 +109,11 @@
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 %1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -120,7 +121,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 %1, %3
@@ -133,7 +134,7 @@ entry:
 ; cmake/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 %1, %3

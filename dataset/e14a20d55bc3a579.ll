@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll
@@ -13,6 +13,7 @@
 ; hyperscan/optimized/state_compress.c.ll
 ; linux/optimized/processor_throttling.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll

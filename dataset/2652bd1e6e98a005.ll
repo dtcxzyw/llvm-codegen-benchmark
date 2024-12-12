@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -111,11 +112,11 @@ entry:
 ; abseil-cpp/optimized/duration.cc.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i128 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i64
   %3 = icmp eq i64 %2, 1
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -130,6 +131,41 @@ define i1 @func0000000000000001(i1 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
   %3 = icmp eq i64 %2, 1
+  %4 = and i1 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(i1 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nuw i128 %1 to i64
+  %3 = icmp ne i64 %2, 0
+  %4 = and i1 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i1 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i128 %1 to i64
+  %3 = icmp ne i64 %2, 0
+  %4 = and i1 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(i1 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nuw i128 %1 to i64
+  %3 = icmp eq i64 %2, 0
   %4 = and i1 %3, %0
   ret i1 %4
 }

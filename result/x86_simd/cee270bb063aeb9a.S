@@ -3,7 +3,7 @@
 func0000000000000004:                   # @func0000000000000004
 	vptestnmd	%ymm2, %ymm2, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [4294967290,4294967290,4294967290,4294967290,4294967290,4294967290,4294967290,4294967290]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func000000000000002a:                   # @func000000000000002a
 	vpmovd2m	%ymm2, %k1
@@ -22,7 +22,7 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000007:                   # @func0000000000000007
 	vpcmpeqd	.LCPI3_0(%rip){1to8}, %ymm2, %k1
 	vpbroadcastd	.LCPI3_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1,1,1,1,1]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	2                               # 0x2
@@ -60,7 +60,7 @@ func0000000000000020:                   # @func0000000000000020
 	vpbroadcastd	.LCPI9_0(%rip), %ymm3   # ymm3 = [1114111,1114111,1114111,1114111,1114111,1114111,1114111,1114111]
 	vpcmpnleud	%ymm3, %ymm2, %k1
 	vmovdqa32	%ymm3, %ymm1 {%k1}
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000031:                   # @func0000000000000031
 	vptestnmd	%ymm2, %ymm2, %k1
@@ -90,20 +90,56 @@ func0000000000000013:                   # @func0000000000000013
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI15_0:
-	.long	1979                            # 0x7bb
+	.long	10                              # 0xa
 .LCPI15_1:
-	.long	4294963416                      # 0xfffff0d8
-func0000000000000028:                   # @func0000000000000028
-	vpcmpgtd	.LCPI15_0(%rip){1to8}, %ymm2, %k1
-	vpbroadcastd	.LCPI15_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [4294963416,4294963416,4294963416,4294963416,4294963416,4294963416,4294963416,4294963416]
+	.long	1                               # 0x1
+func0000000000000053:                   # @func0000000000000053
+	vpcmpltud	.LCPI15_0(%rip){1to8}, %ymm2, %k1
+	vpbroadcastd	.LCPI15_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1,1,1,1,1]
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI16_0:
-	.long	3598247879                      # 0xd678e7c7
+	.long	99                              # 0x63
 .LCPI16_1:
+	.long	5                               # 0x5
+func0000000000000028:                   # @func0000000000000028
+	vpcmpgtd	.LCPI16_0(%rip){1to8}, %ymm2, %k1
+	vpbroadcastd	.LCPI16_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [5,5,5,5,5,5,5,5]
+	vpaddd	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI17_0:
+	.long	10000                           # 0x2710
+.LCPI17_1:
+	.long	1023                            # 0x3ff
+func0000000000000023:                   # @func0000000000000023
+	vpcmpnleud	.LCPI17_0(%rip){1to8}, %ymm2, %k1
+	vpbroadcastd	.LCPI17_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1023,1023,1023,1023,1023,1023,1023,1023]
+	vpaddd	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI18_0:
+	.long	2                               # 0x2
+.LCPI18_1:
+	.long	3                               # 0x3
+func0000000000000051:                   # @func0000000000000051
+	vpcmpltud	.LCPI18_0(%rip){1to8}, %ymm2, %k1
+	vpbroadcastd	.LCPI18_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [3,3,3,3,3,3,3,3]
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI19_0:
+	.long	128                             # 0x80
+.LCPI19_1:
+	.long	1                               # 0x1
+func0000000000000050:                   # @func0000000000000050
+	vpcmpltud	.LCPI19_0(%rip){1to8}, %ymm2, %k1
+	vpbroadcastd	.LCPI19_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1,1,1,1,1]
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI20_0:
+	.long	3598247879                      # 0xd678e7c7
+.LCPI20_1:
 	.long	4294966990                      # 0xfffffece
 func0000000000000021:                   # @func0000000000000021
-	vpcmpnleud	.LCPI16_0(%rip){1to8}, %ymm2, %k1
-	vpbroadcastd	.LCPI16_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [4294966990,4294966990,4294966990,4294966990,4294966990,4294966990,4294966990,4294966990]
+	vpcmpnleud	.LCPI20_0(%rip){1to8}, %ymm2, %k1
+	vpbroadcastd	.LCPI20_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [4294966990,4294966990,4294966990,4294966990,4294966990,4294966990,4294966990,4294966990]
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq

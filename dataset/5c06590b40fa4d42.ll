@@ -21,7 +21,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -32,7 +32,7 @@ define i32 @func0000000000000019(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %.not = icmp eq i16 %2, 0
   %3 = select i1 %.not, i32 %1, i32 524288
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -65,18 +65,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 2
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = or disjoint i32 %4, %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; cpython/optimized/ceval.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = icmp ult i16 %2, 4
-  %4 = select i1 %3, i32 4, i32 %1
-  %5 = or i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

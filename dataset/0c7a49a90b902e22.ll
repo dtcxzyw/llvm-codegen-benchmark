@@ -1,7 +1,7 @@
 
-%struct.atomic64_t.3349462 = type { i64 }
+%struct.atomic64_t.3537652 = type { i64 }
 
-; 72 occurrences:
+; 80 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/log_message.cc.ll
@@ -9,6 +9,7 @@
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; grpc/optimized/compression_internal.cc.ll
 ; grpc/optimized/ev_epoll1_linux.cc.ll
 ; grpc/optimized/ev_poll_posix.cc.ll
@@ -70,17 +71,24 @@
 ; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; opencv/optimized/ann_mlp.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; raylib/optimized/raudio.c.ll
 ; rocksdb/optimized/arena.cc.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 15
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 0, i64 %1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -92,7 +100,19 @@ entry:
   %3 = and i64 %2, 4
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 0, i64 %1
-  %6 = getelementptr %struct.atomic64_t.3349462, ptr %0, i64 %5
+  %6 = getelementptr %struct.atomic64_t.3537652, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/ann_mlp.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 1
+  %4 = icmp eq i64 %3, 0
+  %5 = select i1 %4, i64 0, i64 %1
+  %6 = getelementptr nusw double, ptr %0, i64 %5
   ret ptr %6
 }
 

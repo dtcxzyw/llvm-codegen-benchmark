@@ -1,18 +1,14 @@
-func000000000000004a:                   // @func000000000000004a
+func000000000000008a:                   // @func000000000000008a
 // %bb.0:                               // %entry
-	add	v0.8h, v0.8h, v0.8h
-	add	v1.8h, v1.8h, v1.8h
-	cmgt	v1.8h, v1.8h, #0
-	cmgt	v0.8h, v0.8h, #0
-	uzp1	v0.16b, v0.16b, v1.16b
+	lsl	w8, w0, #1
+	sxth	w8, w8
+	cmp	w8, #0
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000041:                   // @func0000000000000041
+func0000000000000081:                   // @func0000000000000081
 // %bb.0:                               // %entry
-	bic	v0.8h, #128, lsl #8
-	bic	v1.8h, #128, lsl #8
-	cmeq	v1.8h, v1.8h, #0
-	cmeq	v0.8h, v0.8h, #0
-	uzp1	v0.16b, v0.16b, v1.16b
+	tst	w0, #0x7fff
+	cset	w0, eq
 	ret
                                         // -- End function

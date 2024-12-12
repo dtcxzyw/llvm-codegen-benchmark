@@ -27,14 +27,14 @@ func000000000000006f:                   # @func000000000000006f
 	add	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	add	a1, a1, a4
-	sltu	a1, a1, a4
+	add	a4, a4, a1
+	sltu	a1, a4, a1
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000048:                   # @func0000000000000048
-	add	a1, a1, a4
-	sltu	a1, a1, a4
+	add	a4, a4, a1
+	sltu	a1, a4, a1
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

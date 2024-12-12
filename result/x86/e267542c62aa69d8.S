@@ -6,11 +6,27 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	andb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	movq	%rsi, %rax
 	negq	%rax
 	cmovsq	%rsi, %rax
 	cmpq	$1000001, %rax                  # imm = 0xF4241
 	setae	%al
+	andb	%dil, %al
+	retq
+func0000000000000034:                   # @func0000000000000034
+	movq	%rsi, %rax
+	negq	%rax
+	cmovsq	%rsi, %rax
+	cmpq	$101, %rax
+	setb	%al
+	andb	%dil, %al
+	retq
+func0000000000000006:                   # @func0000000000000006
+	movq	%rsi, %rax
+	negq	%rax
+	cmovsq	%rsi, %rax
+	cmpq	$5, %rax
+	setl	%al
 	andb	%dil, %al
 	retq

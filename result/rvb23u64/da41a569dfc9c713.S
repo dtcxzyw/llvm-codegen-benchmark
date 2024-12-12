@@ -31,10 +31,25 @@ func000000000000000a:                   # @func000000000000000a
 	li	a1, 255
 	czero.eqz	a0, a1, a0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 255
+	sltiu	a0, a0, 240
+	li	a1, 4
+	sub	a0, a1, a0
+	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 255
 	sltiu	a0, a0, 7
 	li	a1, 8
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 16
+	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a0, a0, 255
+	li	a1, 13
+	sltiu	a0, a0, 72
+	czero.eqz	a0, a1, a0
+	li	a1, -72
+	zext.w	a1, a1
+	add	a0, a0, a1
 	ret

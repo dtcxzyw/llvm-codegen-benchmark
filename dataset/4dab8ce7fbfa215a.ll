@@ -27,7 +27,7 @@ entry:
   ret i32 %5
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -47,7 +47,6 @@ entry:
 ; spike/optimized/fdt_rw.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/busmaster.c.ll
-; wireshark/optimized/file-rtpdump.c.ll
 ; wireshark/optimized/packet-fp_hint.c.ll
 ; wireshark/optimized/packet-fpp.c.ll
 ; wireshark/optimized/packet-ftp.c.ll
@@ -67,8 +66,9 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; clamav/optimized/timefn.cpp.ll
+; lief/optimized/constant_time.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openjdk/optimized/Ushort555Rgb.ll
 ; openjdk/optimized/Ushort565Rgb.ll

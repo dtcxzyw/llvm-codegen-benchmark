@@ -1,5 +1,5 @@
 
-; 362 occurrences:
+; 365 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; assimp/optimized/X3DImporter_Postprocess.cpp.ll
 ; clamav/optimized/bytecode_api.c.ll
@@ -33,7 +33,6 @@
 ; hermes/optimized/Executor.cpp.ll
 ; icu/optimized/erarules.ll
 ; icu/optimized/icuexportdata.ll
-; icu/optimized/simpletz.ll
 ; icu/optimized/ucnv_err.ll
 ; icu/optimized/ucptrie.ll
 ; icu/optimized/uniset_props.ll
@@ -119,6 +118,9 @@
 ; llvm/optimized/X86EncodingOptimization.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -205,7 +207,6 @@
 ; postgres/optimized/initdb.ll
 ; proj/optimized/conversion.cpp.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
-; qemu/optimized/hw_display_ramfb.c.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; slurm/optimized/KeccakSponge.ll
@@ -361,20 +362,21 @@
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -238
   %4 = icmp ult i32 %3, -9
-  %5 = or i1 %4, %1
-  %6 = or i1 %5, %0
+  %5 = or i1 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 261 occurrences:
+; 254 occurrences:
 ; abc/optimized/aigRetF.c.ll
-; abc/optimized/cbaWriteVer.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; coreutils-rs/optimized/31vrb73337u20kex.ll
 ; coreutils-rs/optimized/rs4z052ww3s256h.ll
@@ -399,7 +401,6 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
-; hermes/optimized/Executor.cpp.ll
 ; icu/optimized/icuexportdata.ll
 ; icu/optimized/ucnvscsu.ll
 ; just-rs/optimized/53slus9exfz9w045.ll
@@ -483,7 +484,6 @@ entry:
 ; llvm/optimized/CGExprAgg.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
-; llvm/optimized/DWARFVerifier.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/GVN.cpp.ll
@@ -510,14 +510,10 @@ entry:
 ; llvm/optimized/OverflowInstAnalysis.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
-; llvm/optimized/SanitizerCoverage.cpp.ll
-; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -550,7 +546,6 @@ entry:
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
 ; quickjs/optimized/libregexp.ll
-; ruby/optimized/symbol.ll
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
@@ -633,14 +628,15 @@ entry:
 ; vcpkg/optimized/vcpkgpaths.cpp.ll
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000090(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -65
-  %4 = icmp ult i32 %3, 26
-  %5 = or i1 %4, %1
-  %6 = or i1 %5, %0
+  %3 = add nsw i32 %2, -1938
+  %4 = icmp ult i32 %3, -3875
+  %5 = or i1 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -673,7 +669,7 @@ entry:
   %3 = add i32 %2, -2
   %4 = icmp ult i32 %3, -3
   %5 = or i1 %4, %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -683,7 +679,7 @@ entry:
 define i1 @func0000000000000030(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 2
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

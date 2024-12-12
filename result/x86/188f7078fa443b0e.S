@@ -13,7 +13,7 @@ func000000000000005a:                   # @func000000000000005a
 	shlq	$2, %rsi
 	subq	%rsi, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func000000000000001a:                   # @func000000000000001a
 	leal	(%rdx,%rdx,2), %eax
 	cltq
 	leaq	(%rdi,%rax,4), %rax

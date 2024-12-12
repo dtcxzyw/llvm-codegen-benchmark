@@ -1,11 +1,10 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; gromacs/optimized/kernel_ref.cpp.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
-; gromacs/optimized/slassq.cpp.ll
 ; gromacs/optimized/snrm2.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -28,7 +27,7 @@
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, %1
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fadd float %3, 1.000000e+00
   ret float %4
 }

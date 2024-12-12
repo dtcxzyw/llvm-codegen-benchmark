@@ -20,7 +20,7 @@ entry:
 ; opencv/optimized/emd_new.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0) #0 {
+define i1 @func00000000000000a8(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 1
   %2 = add i32 %1, -31

@@ -14,12 +14,11 @@ entry:
   ret i32 %4
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; minetest/optimized/serverenvironment.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; re2/optimized/bitmap256.cc.ll
 ; velox/optimized/ArrayAndMapMatch.cpp.ll
 ; velox/optimized/ArrayConstructor.cpp.ll
 ; velox/optimized/ArrayContains.cpp.ll
@@ -94,8 +93,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sdiv i32 %1, 64
-  %3 = shl nsw i32 %2, 6
+  %2 = sdiv i32 %1, 16
+  %3 = shl nsw i32 %2, 16
   %4 = or disjoint i32 %3, %0
   ret i32 %4
 }

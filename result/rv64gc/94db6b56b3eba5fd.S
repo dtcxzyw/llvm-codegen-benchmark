@@ -6,7 +6,7 @@ func0000000000000028:                   # @func0000000000000028
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	srliw	a1, a2, 16
@@ -18,7 +18,7 @@ func0000000000000010:                   # @func0000000000000010
 	li	a1, -2
 	add	a0, a0, a1
 	ret
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	andi	a1, a1, 1
 	bnez	a1, .LBB2_2
 	srliw	a1, a2, 16
@@ -30,20 +30,16 @@ func0000000000000013:                   # @func0000000000000013
 	li	a1, 2
 	add	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
-	sext.w	a2, a2
-	li	a3, 2
+func0000000000000010:                   # @func0000000000000010
 	andi	a1, a1, 1
-	blt	a2, a3, .LBB3_2
-	li	a2, 32
-	addi	a1, a1, -1
-	and	a1, a1, a2
+	bnez	a1, .LBB3_2
+	srliw	a1, a2, 16
+	snez	a1, a1
+	addi	a1, a1, 3
 	add	a0, a0, a1
 	ret
 .LBB3_2:
-	li	a2, 36
-	addi	a1, a1, -1
-	and	a1, a1, a2
+	li	a1, 2
 	add	a0, a0, a1
 	ret
 func000000000000002b:                   # @func000000000000002b

@@ -9,7 +9,7 @@ entry:
   %3 = xor i8 %1, %2
   %4 = and i8 %3, 1
   %5 = icmp eq i8 %4, 0
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -32,11 +32,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/mlme.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000030(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
   %4 = and i8 %1, 15
-  %5 = icmp ugt i8 %4, %3
+  %5 = icmp samesign ugt i8 %4, %3
   %6 = or i1 %5, %0
   ret i1 %6
 }

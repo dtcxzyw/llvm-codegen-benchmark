@@ -1,4 +1,4 @@
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000164:                   # @func0000000000000164
 	andl	$-16, %edx
 	movslq	%edx, %rax
 	addq	%rsi, %rax
@@ -6,7 +6,7 @@ func00000000000000a4:                   # @func00000000000000a4
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000161:                   # @func0000000000000161
 	andl	$-8, %edx
 	movslq	%edx, %rax
 	addq	%rsi, %rax

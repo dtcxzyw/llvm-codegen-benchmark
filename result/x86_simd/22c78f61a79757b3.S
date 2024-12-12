@@ -15,7 +15,7 @@ func0000000000000028:                   # @func0000000000000028
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000128:                   # @func0000000000000128
 	vpmovqd	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsllw	$7, %xmm0, %xmm0

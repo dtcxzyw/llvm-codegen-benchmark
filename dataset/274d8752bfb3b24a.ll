@@ -1,9 +1,10 @@
 
-%struct.NvmeFdpEvent.2595375 = type <{ i8, i8, i16, i64, i32, [2 x i64], i16, i8, [5 x i8], [3 x i64] }>
+%struct.NvmeFdpEvent.2708956 = type <{ i8, i8, i16, i64, i32, [2 x i64], i16, i8, [5 x i8], [3 x i64] }>
 
-; 293 occurrences:
+; 292 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; cmake/optimized/entropy_common.c.ll
 ; cmake/optimized/sha1.c.ll
@@ -192,16 +193,13 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; openjdk/optimized/cmsmd5.ll
 ; openjdk/optimized/hb-face-builder.ll
 ; openjdk/optimized/jvmtiEventController.ll
 ; openmpi/optimized/pml_base_bsend.ll
 ; openspiel/optimized/backgammon.cc.ll
 ; openspiel/optimized/trade_comm.cc.ll
-; openssl/optimized/libcrypto-lib-p5_crpt.ll
 ; openssl/optimized/libcrypto-lib-rc2_skey.ll
-; openssl/optimized/libcrypto-shlib-p5_crpt.ll
 ; openssl/optimized/libcrypto-shlib-rc2_skey.ll
 ; php/optimized/hash_xxhash.ll
 ; php/optimized/md5.ll
@@ -288,6 +286,7 @@
 ; wasmtime-rs/optimized/11ww7ts55o8z8j6m.ll
 ; wasmtime-rs/optimized/27y5mf4j2qnj7fax.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; zstd/optimized/entropy_common.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -296,11 +295,11 @@
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -334,11 +333,11 @@ entry:
 ; ruby/optimized/rmd160.ll
 ; zstd/optimized/xxhash.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 64, %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -353,20 +352,22 @@ entry:
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 16, %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 60 occurrences:
+; 62 occurrences:
 ; abc/optimized/extraBddMisc.c.ll
 ; abc/optimized/giaSatMap.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
 ; cmake/optimized/archive_string.c.ll
@@ -378,7 +379,6 @@ entry:
 ; icu/optimized/derb.ll
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/genbrk.ll
-; icu/optimized/genccode.ll
 ; icu/optimized/gencfu.ll
 ; icu/optimized/gencmn.ll
 ; icu/optimized/gencnval.ll
@@ -402,6 +402,7 @@ entry:
 ; luajit/optimized/lj_err.ll
 ; luajit/optimized/lj_err_dyn.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openblas/optimized/dlapmr.c.ll
 ; openblas/optimized/dlapmt.c.ll
 ; opencv/optimized/convhull.cpp.ll
@@ -423,22 +424,24 @@ entry:
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; zxing/optimized/ODReader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 3, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 21 occurrences:
+; 24 occurrences:
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
+; cpython/optimized/Hacl_Hash_SHA3.ll
 ; cpython/optimized/obmalloc.ll
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; grpc/optimized/parsing.cc.ll
+; libpng/optimized/png.c.ll
 ; linux/optimized/entropy_common.ll
 ; linux/optimized/md5.ll
 ; linux/optimized/sha512_generic.ll
@@ -446,6 +449,7 @@ entry:
 ; llvm/optimized/WasmObjectWriter.cpp.ll
 ; oiio/optimized/iffoutput.cpp.ll
 ; openblas/optimized/dlasq2.c.ll
+; openjdk/optimized/png.ll
 ; postgres/optimized/multixact.ll
 ; postgres/optimized/xlogreader.ll
 ; pugixml/optimized/pugixml.cpp.ll
@@ -463,11 +467,11 @@ entry:
 }
 
 ; 14 occurrences:
+; boost/optimized/src.ll
 ; cpython/optimized/blake2b_impl.ll
 ; cpython/optimized/blake2s_impl.ll
 ; gromacs/optimized/nm2type.cpp.ll
 ; linux/optimized/blake2s.ll
-; linux/optimized/ghash-generic.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/trans_virtio.ll
 ; linux/optimized/vsprintf.ll
@@ -482,7 +486,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 63, %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.NvmeFdpEvent.2595375, ptr %0, i64 %3
+  %4 = getelementptr %struct.NvmeFdpEvent.2708956, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -504,15 +508,15 @@ entry:
 ; opencv/optimized/datastructs.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 9, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 83 occurrences:
+; 81 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; lief/optimized/File.cpp.ll
 ; linux/optimized/mpicoder.ll
@@ -535,8 +539,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -612,6 +614,17 @@ define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 32768, %1
   %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; cpython/optimized/Hacl_Hash_SHA3.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 72, %1
+  %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
   ret ptr %4
 }

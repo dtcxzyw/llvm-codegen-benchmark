@@ -7,7 +7,7 @@
 ; openssl/optimized/libssl-lib-tls_common.ll
 ; openssl/optimized/libssl-shlib-tls_common.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i64 %0, -3
   %3 = icmp eq i32 %1, 2
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/file.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i64 %0, -21
   %3 = icmp eq i32 %1, 0

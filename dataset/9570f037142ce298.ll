@@ -1,8 +1,9 @@
 
-; 57 occurrences:
+; 58 occurrences:
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; cpython/optimized/dtoa.ll
+; eastl/optimized/Int128_t.cpp.ll
 ; graphviz/optimized/constrained_majorization.c.ll
 ; graphviz/optimized/patchwork.c.ll
 ; gromacs/optimized/colvarcomp_coordnums.cpp.ll
@@ -61,7 +62,7 @@
 define double @func0000000000000000(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 5.000000e-01, double %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 

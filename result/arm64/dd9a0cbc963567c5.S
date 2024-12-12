@@ -9,8 +9,8 @@ func0000000000000003:                   // @func0000000000000003
 	movk	x9, #11787, lsl #48
 	umulh	x10, x8, x9
 	mul	x8, x8, x9
-	eor	x1, x10, x1
-	eor	x0, x8, x0
+	eor	x1, x1, x10
+	eor	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
@@ -26,7 +26,7 @@ func0000000000000002:                   // @func0000000000000002
 	add	x8, x2, x8
 	umulh	x10, x8, x9
 	mul	x8, x8, x9
-	eor	x1, x10, x1
-	eor	x0, x8, x0
+	eor	x1, x1, x10
+	eor	x0, x0, x8
 	ret
                                         // -- End function

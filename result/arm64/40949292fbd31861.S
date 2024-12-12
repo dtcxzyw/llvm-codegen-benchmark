@@ -1,36 +1,20 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v3.4s, #48, lsl #16
-	movi	v4.4s, #16, lsl #16
-	mov	w8, #2097152                    // =0x200000
-	and	v2.16b, v2.16b, v3.16b
-	cmeq	v2.4s, v2.4s, v4.4s
-	dup	v4.2d, x8
-	sshll2	v3.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
+	and	w8, w1, #0x300000
+	cmp	w8, #256, lsl #12               // =1048576
+	cset	w8, eq
+	orr	x0, x0, x8, lsl #21
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v3.4s, #32, lsl #24
 	mov	x8, #262144                     // =0x40000
+	mov	x9, #262144                     // =0x40000
+	tst	w1, #0x20000000
 	movk	x8, #16, lsl #32
+	movk	x9, #16, lsl #32
 	movk	x8, #32, lsl #48
-	and	v2.16b, v2.16b, v3.16b
-	dup	v3.2d, x8
-	mov	x8, #262144                     // =0x40000
-	movk	x8, #16, lsl #32
-	dup	v5.2d, x8
-	cmeq	v2.4s, v2.4s, #0
-	sshll2	v4.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	bsl	v2.16b, v5.16b, v3.16b
-	bit	v3.16b, v5.16b, v4.16b
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
+	csel	x8, x9, x8, eq
+	orr	x0, x0, x8
 	ret
                                         // -- End function

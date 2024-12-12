@@ -1,6 +1,7 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/UriQuery.c.ll
+; boost/optimized/numeric.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/rtnetlink.ll

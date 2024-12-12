@@ -1,11 +1,13 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; grpc/optimized/ev_poll_posix.cc.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i1 %2) #0 {
 entry:

@@ -1,9 +1,16 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	xorl	%eax, %eax
 	cmpl	$3, %esi
 	cmovnel	%esi, %eax
 	cltq
 	shlq	$4, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	xorl	%eax, %eax
+	cmpl	$-1, %esi
+	cmovnel	%esi, %eax
+	cltq
 	addq	%rdi, %rax
 	retq
 func0000000000000028:                   # @func0000000000000028

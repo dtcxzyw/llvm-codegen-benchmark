@@ -12,21 +12,6 @@ entry:
   ret i8 %6
 }
 
-; 3 occurrences:
-; freetype/optimized/raster.c.ll
-; linux/optimized/mii.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000005(i8 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 37120
-  %3 = icmp eq i32 %2, 256
-  %4 = zext i1 %3 to i8
-  %5 = and i8 %0, -2
-  %6 = or disjoint i8 %5, %4
-  ret i8 %6
-}
-
 ; 1 occurrences:
 ; linux/optimized/8139too.ll
 ; Function Attrs: nounwind
@@ -41,21 +26,7 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/intel-gtt.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000021(i8 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %2, 2
-  %4 = zext i1 %3 to i8
-  %5 = and i8 %0, -2
-  %6 = or disjoint i8 %5, %4
-  ret i8 %6
-}
-
-; 2 occurrences:
 ; pbrt-v4/optimized/integrators.cpp.ll
-; postgres/optimized/trigger.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0, i32 %1) #0 {
 entry:
@@ -64,6 +35,20 @@ entry:
   %4 = zext i1 %3 to i8
   %5 = and i8 %0, 1
   %6 = or i8 %5, %4
+  ret i8 %6
+}
+
+; 2 occurrences:
+; freetype/optimized/raster.c.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000005(i8 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 32
+  %3 = icmp eq i32 %2, 0
+  %4 = zext i1 %3 to i8
+  %5 = and i8 %0, -2
+  %6 = or disjoint i8 %5, %4
   ret i8 %6
 }
 

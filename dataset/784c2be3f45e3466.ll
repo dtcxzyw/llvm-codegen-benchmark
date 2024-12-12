@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; libquic/optimized/ssl_lib.c.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; llvm/optimized/RISCVMCObjectFileInfo.cpp.ll
 ; nix/optimized/drv-output-substitution-goal.ll

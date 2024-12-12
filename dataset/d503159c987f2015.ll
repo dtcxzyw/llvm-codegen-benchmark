@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; jq/optimized/regcomp.ll
 ; libquic/optimized/url_parse.cc.ll
@@ -19,6 +19,7 @@
 ; z3/optimized/nlqsat.cpp.ll
 ; z3/optimized/qsat.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
@@ -28,7 +29,7 @@ entry:
   ret i64 %4
 }
 
-; 91 occurrences:
+; 85 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcDfs.c.ll
@@ -48,7 +49,6 @@ entry:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/giaBidec.c.ll
-; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaMinLut2.c.ll
@@ -74,7 +74,6 @@ entry:
 ; abc/optimized/timMan.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; abc/optimized/utilNam.c.ll
-; abc/optimized/wlcSim.c.ll
 ; abc/optimized/xsatSolver.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -83,7 +82,6 @@ entry:
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btDbvtBroadphase.ll
 ; bullet3/optimized/btSoftBody.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; icu/optimized/dtfmtsym.ll
 ; icu/optimized/localeprioritylist.ll
@@ -104,13 +102,10 @@ entry:
 ; linux/optimized/dm-table.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
 ; luau/optimized/CodeGenX64.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/common.cpp.ll
-; opencv/optimized/slice_layer.cpp.ll
 ; opencv/optimized/zmaxheap.cpp.ll
 ; openjdk/optimized/path_util.ll
 ; openmpi/optimized/coll_base_allreduce.ll
@@ -129,7 +124,7 @@ entry:
   ret i64 %4
 }
 
-; 39 occurrences:
+; 34 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/cnf_reader.c.ll
 ; abc/optimized/dauDivs.c.ll
@@ -137,7 +132,6 @@ entry:
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ifDec16.c.ll
-; abc/optimized/ifMap.c.ll
 ; abc/optimized/kitIsop.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/solver.c.ll
@@ -153,6 +147,7 @@ entry:
 ; linux/optimized/dm-table.ll
 ; linux/optimized/fib_semantics.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; openjdk/optimized/xPageCache.ll
@@ -161,11 +156,6 @@ entry:
 ; postgres/optimized/resowner.ll
 ; quickjs/optimized/quickjs.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; rocksdb/optimized/lock_request.cc.ll
-; rocksdb/optimized/locktree.cc.ll
-; rocksdb/optimized/manager.cc.ll
-; rocksdb/optimized/txnid_set.cc.ll
-; rocksdb/optimized/wfg.cc.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wireshark/optimized/range.c.ll
 ; wolfssl/optimized/sp_int.c.ll
@@ -173,8 +163,8 @@ entry:
 define i64 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 3
-  %4 = select i1 %0, i64 32, i64 %3
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = select i1 %0, i64 1024, i64 %3
   ret i64 %4
 }
 

@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; php/optimized/ir_emit.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:

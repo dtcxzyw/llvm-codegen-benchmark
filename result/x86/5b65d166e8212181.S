@@ -1,4 +1,4 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	andl	$64, %edi
 	orl	%esi, %edi
 	sete	%al
@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	orl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	andl	$4, %edi
 	orl	%esi, %edi
 	sete	%al

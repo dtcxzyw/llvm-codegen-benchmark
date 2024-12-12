@@ -26,9 +26,19 @@ func0000000000000011:                   # @func0000000000000011
 	vmovdqa	%ymm1, %ymm0
 	retq
 .LCPI3_0:
+	.quad	4096                            # 0x1000
+func0000000000000030:                   # @func0000000000000030
+	vpbroadcastq	.LCPI3_0(%rip), %ymm2   # ymm2 = [4096,4096,4096,4096]
+	vpcmpleuq	%ymm2, %ymm0, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpblendd	$170, %ymm0, %ymm1, %ymm0       # ymm0 = ymm1[0],ymm0[1],ymm1[2],ymm0[3],ymm1[4],ymm0[5],ymm1[6],ymm0[7]
+	vmovdqa64	%ymm0, %ymm2 {%k1}
+	vmovdqa	%ymm2, %ymm0
+	retq
+.LCPI4_0:
 	.quad	858993460                       # 0x33333334
-func0000000000000048:                   # @func0000000000000048
-	vpcmpnltuq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
+func00000000000000a8:                   # @func00000000000000a8
+	vpcmpnltuq	.LCPI4_0(%rip){1to4}, %ymm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpblendd	$170, %ymm0, %ymm1, %ymm0       # ymm0 = ymm1[0],ymm0[1],ymm1[2],ymm0[3],ymm1[4],ymm0[5],ymm1[6],ymm0[7]
 	vmovdqa64	%ymm0, %ymm0 {%k1} {z}

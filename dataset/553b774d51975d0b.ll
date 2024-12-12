@@ -14,7 +14,7 @@
 ; z3/optimized/array_axioms.cpp.ll
 ; z3/optimized/macro_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
@@ -23,11 +23,12 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; clamav/optimized/pe.c.ll
+; openspiel/optimized/chess_board.cc.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 57344
   %4 = icmp eq i32 %3, 0
@@ -43,7 +44,7 @@ entry:
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp ne i32 %3, 0
@@ -58,7 +59,7 @@ entry:
 ; abc/optimized/bmcCexMin1.c.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp ne i32 %3, 0
@@ -70,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/node_scheduler.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
   %4 = icmp eq i32 %3, 0
@@ -79,24 +80,11 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; wireshark/optimized/packet-gsm_a_rr.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 224
-  %4 = icmp ult i32 %3, 96
-  %5 = icmp ule i32 %0, %1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
-; 3 occurrences:
-; linux/optimized/8250_exar.ll
+; 2 occurrences:
 ; linux/optimized/blk-merge.ll
 ; openmpi/optimized/coll_basic_reduce.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
@@ -109,7 +97,7 @@ entry:
 ; icu/optimized/tzfmt.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %4 = icmp eq i32 %3, 0

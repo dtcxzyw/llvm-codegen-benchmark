@@ -1,6 +1,5 @@
 
-; 82 occurrences:
-; abc/optimized/epd.c.ll
+; 79 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -21,8 +20,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -83,13 +80,26 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(double %0) #0 {
+define i1 @func0000000000000028(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
-  %2 = icmp ugt i64 %1, -4503599627370497
-  %3 = and i64 %1, 4503599627370495
-  %4 = icmp eq i64 %3, 2251799813685248
-  %5 = and i1 %2, %4
+  %2 = and i64 %1, 4503599627370495
+  %3 = icmp eq i64 %2, 0
+  %4 = icmp ugt i64 %1, 9007199254740991
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000184(double %0) #0 {
+entry:
+  %1 = bitcast double %0 to i64
+  %2 = and i64 %1, 4503599627370495
+  %3 = icmp ne i64 %2, 0
+  %4 = icmp ult i64 %1, 4503599627370496
+  %5 = and i1 %4, %3
   ret i1 %5
 }
 

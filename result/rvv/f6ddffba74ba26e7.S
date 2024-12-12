@@ -1,11 +1,3 @@
-func00000000000000a6:                   # @func00000000000000a6
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfneg.v	v24, v16
-	vmfle.vv	v7, v24, v8
-	vmnot.m	v24, v7
-	vmfle.vv	v25, v8, v16
-	vmorn.mm	v0, v24, v25
-	ret
 func000000000000004a:                   # @func000000000000004a
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfneg.v	v24, v16

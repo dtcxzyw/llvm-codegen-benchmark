@@ -1,5 +1,6 @@
 
-; 28 occurrences:
+; 31 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
@@ -28,6 +29,8 @@
 ; tev/optimized/main.cpp.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; yosys/optimized/celledges.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

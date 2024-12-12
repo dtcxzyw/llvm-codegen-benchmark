@@ -1,9 +1,9 @@
-func0000000000000488:                   # @func0000000000000488
+func0000000000000908:                   # @func0000000000000908
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx
 	cmovaeq	%rsi, %rax
 	subq	%rdx, %rax
 	addq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

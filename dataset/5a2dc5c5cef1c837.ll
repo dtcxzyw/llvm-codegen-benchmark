@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 30 occurrences:
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
@@ -9,6 +9,7 @@
 ; llvm/optimized/CGExprAgg.cpp.ll
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; llvm/optimized/CGObjCRuntime.cpp.ll
+; llvm/optimized/CheckExprLifetime.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprEngineCXX.cpp.ll
@@ -18,6 +19,7 @@
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; llvm/optimized/SemaObjC.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/SemaStmtAttr.cpp.ll
@@ -26,14 +28,15 @@
 ; openjdk/optimized/jfrEventClassTransformer.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; sqlite/optimized/sqlite3.ll
+; stockfish/optimized/tbprobe.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = shl nuw nsw i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 2
   ret ptr %5
 }
 
@@ -56,37 +59,38 @@ entry:
 ; hyperscan/optimized/mcclellan.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = shl nuw nsw i64 %2, 2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 2
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i16 %1) #0 {
+define ptr @func000000000000007c(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = shl nuw nsw i64 %2, 2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 2
   ret ptr %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/namei.ll
 ; linux/optimized/reg.ll
+; linux/optimized/sem.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = shl nuw nsw i64 %2, 2
+  %3 = shl nuw nsw i64 %2, 6
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 6
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 

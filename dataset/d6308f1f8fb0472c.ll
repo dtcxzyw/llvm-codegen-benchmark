@@ -1,5 +1,5 @@
 
-; 217 occurrences:
+; 221 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -10,6 +10,10 @@
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; eastl/optimized/TestAtomicAsm.cpp.ll
 ; eastl/optimized/TestAtomicBasic.cpp.ll
@@ -225,7 +229,7 @@ entry:
   ret i64 %2
 }
 
-; 531 occurrences:
+; 534 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -265,6 +269,10 @@ entry:
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/11fdr7kbbvsdssj2.ll
 ; coreutils-rs/optimized/11le6x0de15gpyo5.ll
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
@@ -274,7 +282,6 @@ entry:
 ; coreutils-rs/optimized/1c0bwvv43j289y30.ll
 ; coreutils-rs/optimized/1e5pt7vtfxa4ahz7.ll
 ; coreutils-rs/optimized/1iiitxeck9g2ksb7.ll
-; coreutils-rs/optimized/1mhb4e8l0v9dncti.ll
 ; coreutils-rs/optimized/1pn74b1r3k1s4pck.ll
 ; coreutils-rs/optimized/1ui3yxdetdbghtw.ll
 ; coreutils-rs/optimized/1unp4st43r7zdtb0.ll
@@ -282,7 +289,6 @@ entry:
 ; coreutils-rs/optimized/1w8bjqmsfkf0ntfz.ll
 ; coreutils-rs/optimized/1xrz1ag37fklzklg.ll
 ; coreutils-rs/optimized/26a2uyrtdxle93un.ll
-; coreutils-rs/optimized/2ahdhlyatyqueo1a.ll
 ; coreutils-rs/optimized/2eb96ulhupdvrip8.ll
 ; coreutils-rs/optimized/2etc5gfaqs8pnymi.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
@@ -295,7 +301,6 @@ entry:
 ; coreutils-rs/optimized/3q8ukvkopatfv0x0.ll
 ; coreutils-rs/optimized/3qd2nnv0mbtxq1wn.ll
 ; coreutils-rs/optimized/3r2vyvwpz7j7c5gy.ll
-; coreutils-rs/optimized/3ummpw5ql7d4y98b.ll
 ; coreutils-rs/optimized/3vfybkcp5ufzff0e.ll
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
 ; coreutils-rs/optimized/420s040g7rwxzzqz.ll
@@ -315,12 +320,10 @@ entry:
 ; coreutils-rs/optimized/d2l5f8sei2pacyj.ll
 ; coreutils-rs/optimized/e6v2hjhbpwfodki.ll
 ; coreutils-rs/optimized/exyrvqdrhfrgv84.ll
-; coreutils-rs/optimized/ga96dm5uabspngk.ll
 ; coreutils-rs/optimized/gy31avu15bepulc.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; coreutils-rs/optimized/icw7irkz6mu05a9.ll
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
-; coreutils-rs/optimized/plvfu1855xjk96c.ll
 ; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
 ; coreutils-rs/optimized/vylkzjuq6grxql.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
@@ -631,7 +634,6 @@ entry:
 ; qemu/optimized/system_memory.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; qemu/optimized/target_riscv_csr.c.ll
-; qemu/optimized/target_riscv_m128_helper.c.ll
 ; qemu/optimized/target_riscv_op_helper.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/util_host-utils.c.ll
@@ -757,6 +759,11 @@ entry:
 ; wasmtime-rs/optimized/vl32czxhityl01k.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i128 %0) #0 {
 entry:
@@ -765,11 +772,12 @@ entry:
   ret i64 %2
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/int128.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
@@ -807,6 +815,16 @@ entry:
 define i64 @func0000000000000000(i128 %0) #0 {
 entry:
   %1 = lshr i128 %0, 56
+  %2 = trunc i128 %1 to i64
+  ret i64 %2
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i128 %0) #0 {
+entry:
+  %1 = lshr exact i128 %0, 3
   %2 = trunc i128 %1 to i64
   ret i64 %2
 }

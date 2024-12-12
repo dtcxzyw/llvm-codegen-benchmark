@@ -1,11 +1,12 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/giaCTas.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_zoneinfo.ll
 ; linux/optimized/intel_hdmi.ll
 ; linux/optimized/mpicoder.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -38,7 +39,7 @@ entry:
   ret i32 %4
 }
 
-; 29 occurrences:
+; 32 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaDecs.c.ll
@@ -46,6 +47,9 @@ entry:
 ; icu/optimized/calendar.ll
 ; libquic/optimized/prtime.cc.ll
 ; linux/optimized/maple_tree.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; minetest/optimized/guiEngine.cpp.ll

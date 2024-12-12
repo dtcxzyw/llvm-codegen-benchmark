@@ -11,6 +11,19 @@ func000000000000001e:                   # @func000000000000001e
 	imull	$43691, %eax, %eax              # imm = 0xAAAB
 	shrl	$17, %eax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	addl	$55, %edi
+	movzwl	%di, %eax
+	shrl	$3, %eax
+	imull	$9363, %eax, %eax               # imm = 0x2493
+	shrl	$16, %eax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	addl	$5, %edi
+	movzwl	%di, %eax
+	imull	$52429, %eax, %eax              # imm = 0xCCCD
+	shrl	$19, %eax
+	retq
 func0000000000000016:                   # @func0000000000000016
 	addl	$50, %edi
 	movzwl	%di, %eax
@@ -24,6 +37,17 @@ func0000000000000012:                   # @func0000000000000012
 	shrl	$3, %eax
 	imull	$8389, %eax, %eax               # imm = 0x20C5
 	shrl	$20, %eax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	addl	$6, %edi
+	movzwl	%di, %eax
+	imull	$9363, %eax, %ecx               # imm = 0x2493
+	shrl	$16, %ecx
+	subl	%ecx, %edi
+	movzwl	%di, %eax
+	shrl	%eax
+	addl	%ecx, %eax
+	shrl	$2, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	addl	$5, %edi

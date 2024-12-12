@@ -91,7 +91,7 @@ entry:
 ; rocksdb/optimized/hash.cc.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0) #0 {
+define i1 @func00000000000000c1(i64 %0) #0 {
 entry:
   %.mask1 = and i64 %0, 4294967280
   %1 = icmp eq i64 %.mask1, 128

@@ -1,9 +1,12 @@
 func0000000000000003:                   # @func0000000000000003
+	movl	%edi, %ecx
+	andl	$96, %ecx
 	xorl	%eax, %eax
-	testl	$256, %edi                      # imm = 0x100
+	cmpw	$32, %cx
 	sete	%al
-	andl	$-256, %edi
-	leal	1(%rax,%rdi), %eax
+	shll	$5, %eax
+	andl	$6, %edi
+	orl	%edi, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	xorl	%eax, %eax

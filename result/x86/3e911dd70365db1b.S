@@ -11,6 +11,12 @@ func000000000000000c:                   # @func000000000000000c
 	setl	%al
 	orb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	andl	$-65536, %esi                   # imm = 0xFFFF0000
+	cmpl	$-2147483648, %esi              # imm = 0x80000000
+	setne	%al
+	orb	%dil, %al
+	retq
 func0000000000000018:                   # @func0000000000000018
 	negw	%si
 	setno	%al
@@ -24,10 +30,5 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000002:                   # @func0000000000000002
 	testw	%si, %si
 	sete	%al
-	orb	%dil, %al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	btq	$59, %rsi
-	setae	%al
 	orb	%dil, %al
 	retq

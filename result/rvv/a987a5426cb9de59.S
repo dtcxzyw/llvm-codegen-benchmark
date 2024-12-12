@@ -28,7 +28,7 @@ func0000000000000002:                   # @func0000000000000002
 	vmv1r.v	v0, v10
 	vmv.v.i	v12, 5
 	vmerge.vim	v12, v12, 7, v0
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	lui	a0, 4
 	vmv1r.v	v0, v11
 	vor.vx	v8, v8, a0, v0.t

@@ -3,6 +3,7 @@
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/lpkCut.c.ll
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; cpython/optimized/ceval.ll
 ; hermes/optimized/FoldingSet.cpp.ll
@@ -17,7 +18,6 @@
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/iterator.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memfd.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/page-writeback.ll
@@ -39,6 +39,7 @@
 ; linux/optimized/zstd_decompress.ll
 ; llvm/optimized/FoldingSet.cpp.ll
 ; llvm/optimized/TransRetainReleaseDealloc.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openjdk/optimized/klass.ll
 ; openjdk/optimized/symbol.ll
 ; openjdk/optimized/verificationType.ll
@@ -64,13 +65,12 @@
 ; php/optimized/zend_alloc.ll
 ; pocketpy/optimized/iter.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
+; postgres/optimized/fe-connect.ll
 ; ruby/optimized/ast.ll
 ; ruby/optimized/class.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/gc.ll
-; ruby/optimized/imemo.ll
 ; ruby/optimized/iseq.ll
-; ruby/optimized/postponed_job.ll
 ; ruby/optimized/proc.ll
 ; ruby/optimized/vm.ll
 ; ruby/optimized/vm_backtrace.ll
@@ -89,11 +89,11 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 7
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 301 occurrences:
+; 302 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/absOldCex.c.ll
@@ -101,6 +101,7 @@ entry:
 ; abc/optimized/fraInd.c.ll
 ; actix-rs/optimized/d7z2ueos8qkfuul.ll
 ; bdwgc/optimized/gc.c.ll
+; eastl/optimized/TestMemory.cpp.ll
 ; gromacs/optimized/pme_grid.cpp.ll
 ; libdeflate/optimized/adler32.c.ll
 ; libquic/optimized/string_util.cc.ll
@@ -112,7 +113,6 @@ entry:
 ; linux/optimized/idr.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/keyring.ll
-; linux/optimized/maccess.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/nfs4session.ll
 ; linux/optimized/shmem.ll
@@ -123,6 +123,7 @@ entry:
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/ModuleBuilder.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; oiio/optimized/strutil.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; openjdk/optimized/g1CardSet.ll

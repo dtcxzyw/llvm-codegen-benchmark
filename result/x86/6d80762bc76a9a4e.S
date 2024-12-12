@@ -16,6 +16,11 @@ func0000000000000004:                   # @func0000000000000004
 	shlq	$2, %rax
 	leaq	(%rax,%rax,8), %rax
 	retq
+func000000000000000d:                   # @func000000000000000d
+	movslq	%esi, %rax
+	addq	%rdi, %rax
+	imulq	$1000000, %rax, %rax            # imm = 0xF4240
+	retq
 func0000000000000007:                   # @func0000000000000007
 	movslq	%esi, %rax
 	addq	%rdi, %rax
@@ -25,10 +30,5 @@ func000000000000000c:                   # @func000000000000000c
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	shlq	$2, %rax
-	leaq	(%rax,%rax,2), %rax
-	retq
-func000000000000000d:                   # @func000000000000000d
-	movslq	%esi, %rax
-	addq	%rdi, %rax
 	leaq	(%rax,%rax,2), %rax
 	retq

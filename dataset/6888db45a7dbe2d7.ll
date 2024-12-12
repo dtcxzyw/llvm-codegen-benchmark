@@ -1,6 +1,9 @@
 
-; 22 occurrences:
+; 26 occurrences:
+; freetype/optimized/cff.c.ll
 ; freetype/optimized/ftbase.c.ll
+; freetype/optimized/type1.c.ll
+; freetype/optimized/type1cid.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
@@ -11,6 +14,7 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openjdk/optimized/classPrinter.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; php/optimized/zend_inference.ll
@@ -23,7 +27,7 @@
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 1
   %3 = icmp eq i32 %2, 0
@@ -36,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 2
   %3 = icmp eq i32 %2, 0
@@ -49,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 65535
   %.not = icmp eq i32 %2, 0

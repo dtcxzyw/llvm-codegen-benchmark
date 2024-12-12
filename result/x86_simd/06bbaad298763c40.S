@@ -57,12 +57,42 @@ func000000000000000f:                   # @func000000000000000f
 	vpdpwssd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI2_0:
-	.long	2040                            # 0x7f8
+	.long	31                              # 0x1f
 .LCPI2_1:
+	.long	4294967152                      # 0xffffff70
+.LCPI2_3:
+	.short	144                             # 0x90
+	.short	0                               # 0x0
+.LCPI2_2:
+	.short	144                             # 0x90
+	.short	0                               # 0x0
+	.short	144                             # 0x90
+	.short	0                               # 0x0
+	.short	144                             # 0x90
+	.short	0                               # 0x0
+	.short	144                             # 0x90
+	.short	0                               # 0x0
+	.short	144                             # 0x90
+	.short	0                               # 0x0
+	.short	144                             # 0x90
+	.short	0                               # 0x0
+	.short	144                             # 0x90
+	.short	0                               # 0x0
+	.short	144                             # 0x90
+	.short	0                               # 0x0
+func0000000000000007:                   # @func0000000000000007
+	vpsrld	$16, %ymm0, %ymm0
+	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm1
+	vpbroadcastd	.LCPI2_1(%rip), %ymm0   # ymm0 = [4294967152,4294967152,4294967152,4294967152,4294967152,4294967152,4294967152,4294967152]
+	vpdpwssd	.LCPI2_3(%rip){1to8}, %ymm1, %ymm0
+	retq
+.LCPI3_0:
+	.long	2040                            # 0x7f8
+.LCPI3_1:
 	.long	4294967280                      # 0xfffffff0
 func000000000000000d:                   # @func000000000000000d
 	vpsrld	$5, %ymm0, %ymm0
-	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
-	vpbroadcastd	.LCPI2_1(%rip), %ymm1   # ymm1 = [4294967280,4294967280,4294967280,4294967280,4294967280,4294967280,4294967280,4294967280]
+	vpandd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
+	vpbroadcastd	.LCPI3_1(%rip), %ymm1   # ymm1 = [4294967280,4294967280,4294967280,4294967280,4294967280,4294967280,4294967280,4294967280]
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq

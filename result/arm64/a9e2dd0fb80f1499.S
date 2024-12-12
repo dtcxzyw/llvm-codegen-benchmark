@@ -1,51 +1,38 @@
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	movi	v2.4s, #7
-	sub	v0.4s, v2.4s, v0.4s
-	sub	v1.4s, v2.4s, v1.4s
+	madd	w8, w1, w2, w0
+	mov	w9, #7                          // =0x7
+	sub	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	mvni	v2.4s, #128, lsl #24
-	eor	v0.16b, v0.16b, v2.16b
-	eor	v1.16b, v1.16b, v2.16b
+	madd	w8, w1, w2, w0
+	eor	w0, w8, #0x7fffffff
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	movi	v2.4s, #128, lsl #24
-	sub	v0.4s, v2.4s, v0.4s
-	sub	v1.4s, v2.4s, v1.4s
-	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	neg	v0.4s, v0.4s
-	neg	v1.4s, v1.4s
-	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	neg	v0.4s, v0.4s
-	neg	v1.4s, v1.4s
+	madd	w8, w1, w2, w0
+	mov	w9, #-2147483648                // =0x80000000
+	sub	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	neg	v0.4s, v0.4s
-	neg	v1.4s, v1.4s
+	madd	w8, w1, w2, w0
+	neg	w0, w8
+	ret
+                                        // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	madd	w8, w1, w2, w0
+	neg	w0, w8
+	ret
+                                        // -- End function
+func0000000000000000:                   // @func0000000000000000
+// %bb.0:                               // %entry
+	madd	w8, w1, w2, w0
+	neg	w0, w8
 	ret
                                         // -- End function

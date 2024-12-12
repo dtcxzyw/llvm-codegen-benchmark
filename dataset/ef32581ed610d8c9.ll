@@ -6,7 +6,7 @@
 ; openssl/optimized/libcrypto-lib-pcy_tree.ll
 ; openssl/optimized/libcrypto-shlib-pcy_tree.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000001ab(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000032b(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, %2
   %4 = icmp sgt i64 %1, -1

@@ -1,9 +1,11 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; abc/optimized/bacReadVer.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
+; llvm/optimized/InstructionSimplify.cpp.ll
+; llvm/optimized/VectorCombine.cpp.ll
 ; protobuf/optimized/lexer.cc.ll
 ; wireshark/optimized/packet-memcache.c.ll
 ; Function Attrs: nounwind

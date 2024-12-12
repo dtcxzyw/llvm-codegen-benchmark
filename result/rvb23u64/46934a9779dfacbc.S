@@ -5,7 +5,7 @@ func00000000000001aa:                   # @func00000000000001aa
 	sh3add	a0, a2, a0
 	addi	a0, a0, 8
 	ret
-func00000000000001fa:                   # @func00000000000001fa
+func00000000000001fb:                   # @func00000000000001fb
 	srli	a3, a1, 3
 	sub	a2, a2, a3
 	addi	a2, a2, 256
@@ -20,11 +20,11 @@ func000000000000012a:                   # @func000000000000012a
 	addi	a0, a0, 8
 	ret
 func000000000000017a:                   # @func000000000000017a
+	srli	a3, a1, 1
+	sub	a2, a2, a3
 	add	a0, a0, a1
-	li	a3, -8
-	andn	a1, a3, a1
-	add	a0, a0, a1
-	sh3add	a0, a2, a0
+	sh1add	a0, a2, a0
+	addi	a0, a0, 2
 	ret
 func000000000000012f:                   # @func000000000000012f
 	srli	a3, a1, 3
@@ -33,7 +33,7 @@ func000000000000012f:                   # @func000000000000012f
 	sh3add	a0, a2, a0
 	addi	a0, a0, 8
 	ret
-func00000000000001ea:                   # @func00000000000001ea
+func00000000000001eb:                   # @func00000000000001eb
 	srli	a3, a1, 6
 	sub	a2, a2, a3
 	slli	a2, a2, 6

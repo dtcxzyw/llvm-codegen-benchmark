@@ -4,7 +4,7 @@
 ; openjdk/optimized/stubGenerator_x86_64_arraycopy.ll
 ; pocketpy/optimized/pocketpy_c.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000019a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000032a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %0, 0
@@ -19,7 +19,7 @@ entry:
 ; opencv/optimized/gather_layer.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000191(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000321(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %0, 0
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/flatten_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000030a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %0, 0
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/flatten_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %0, 0

@@ -3,13 +3,13 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, 2
 	sltiu	a0, a0, 8
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sh1add	a0, a1, a0
 	addi	a0, a0, 2
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	sh1add	a0, a1, a0
 	addi	a0, a0, 2
 	sltiu	a0, a0, 32
@@ -40,7 +40,7 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a0, a0, 7
 	srli	a0, a0, 63
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	slli	a1, a1, 12
 	add	a0, a0, a1
 	seqz	a0, a0

@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 44 occurrences:
 ; clamav/optimized/special.c.ll
 ; draco/optimized/corner_table.cc.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
@@ -11,12 +11,10 @@
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; entt/optimized/registry.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/pata_amd.ll
 ; linux/optimized/seccomp.ll
-; linux/optimized/uid16.ll
 ; linux/optimized/vt.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/CalcSpillWeights.cpp.ll
@@ -26,10 +24,8 @@
 ; llvm/optimized/InlineSpiller.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LiveRangeEdit.cpp.ll
-; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll

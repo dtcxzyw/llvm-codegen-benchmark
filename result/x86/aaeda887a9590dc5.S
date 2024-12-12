@@ -41,11 +41,6 @@ func000000000000000f:                   # @func000000000000000f
 	subq	%rdi, %rax
 	shlq	$2, %rax
 	retq
-func0000000000000034:                   # @func0000000000000034
-	leal	-1(%rsi), %eax
-	subq	%rdi, %rax
-	shlq	$2, %rax
-	retq
 func0000000000000047:                   # @func0000000000000047
 	movl	%esi, %eax
 	addq	$10, %rax
@@ -57,4 +52,9 @@ func0000000000000065:                   # @func0000000000000065
 	incq	%rax
 	subq	%rdi, %rax
 	shlq	$2, %rax
+	retq
+func0000000000000034:                   # @func0000000000000034
+	leal	-1(%rsi), %eax
+	subq	%rdi, %rax
+	shlq	$3, %rax
 	retq

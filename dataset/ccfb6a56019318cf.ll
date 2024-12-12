@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; Function Attrs: nounwind
-define double @func0000000000000008(double %0, i32 %1) #0 {
+define double @func0000000000000018(double %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
-  %3 = icmp ugt i32 %2, 1072234496
+  %3 = icmp samesign ugt i32 %2, 1072234496
   %4 = select i1 %3, double 2.812500e-01, double %0
   ret double %4
 }

@@ -11,6 +11,10 @@ func0000000000000003:                   # @func0000000000000003
 	movzwl	%di, %eax
 	shrl	$15, %eax
 	retq
+func0000000000000012:                   # @func0000000000000012
+	leal	(%rdi,%rsi), %eax
+	shrl	$8, %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	(%rdi,%rsi), %eax
 	shrl	$6, %eax

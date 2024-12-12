@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/cnfWrite.c.ll
 ; abc/optimized/saigSimSeq.c.ll
 ; darktable/optimized/amaze.cc.ll
@@ -12,7 +12,6 @@
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dorgql.c.ll
 ; php/optimized/zend_API.ll
 ; wireshark/optimized/lemon.c.ll

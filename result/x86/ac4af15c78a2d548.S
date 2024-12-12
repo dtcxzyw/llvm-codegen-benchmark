@@ -1,7 +1,7 @@
 func0000000000000002:                   # @func0000000000000002
-	movabsq	$-708918669538550414, %rcx      # imm = 0xF6296A39DF831D72
+	movabsq	$-6607085090500557845, %rcx     # imm = 0xA44EEB1DB3EF43EB
 	xorq	%rsi, %rcx
-	movabsq	$4244538978387573191, %rdx      # imm = 0x3AE7A1B65A1739C7
+	movabsq	$-531259238204275753, %rdx      # imm = 0xF8A096899F3083D7
 	xorq	%rdi, %rdx
 	xorl	%eax, %eax
 	orq	%rcx, %rdx

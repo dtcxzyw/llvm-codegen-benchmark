@@ -16,14 +16,15 @@ func0000000000000035:                   # @func0000000000000035
 	subl	%esi, %eax
 	imull	%edi, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	leal	(%rsi,%rdx), %eax
-	imull	%edi, %eax
-	negl	%eax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	addl	%edx, %esi
-	movl	$1, %eax
+	movl	$10, %eax
+	subl	%esi, %eax
+	imull	%edi, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	addl	%edx, %esi
+	movl	$1024, %eax                     # imm = 0x400
 	subl	%esi, %eax
 	imull	%edi, %eax
 	retq

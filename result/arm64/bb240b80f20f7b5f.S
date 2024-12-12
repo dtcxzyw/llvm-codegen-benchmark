@@ -1,31 +1,24 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	scvtf	v0.4s, v0.4s
-	scvtf	v1.4s, v1.4s
-	fcmlt	v2.4s, v1.4s, #0.0
-	fcmlt	v3.4s, v0.4s, #0.0
-	bic	v0.16b, v0.16b, v3.16b
-	bic	v1.16b, v1.16b, v2.16b
+	scvtf	s0, w0
+	movi	d1, #0000000000000000
+	fcmp	s0, #0.0
+	fcsel	s0, s1, s0, mi
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	fmov	v2.4s, #1.00000000
-	scvtf	v0.4s, v0.4s
-	scvtf	v1.4s, v1.4s
-	fcmge	v3.4s, v2.4s, v1.4s
-	fcmge	v4.4s, v2.4s, v0.4s
-	bit	v0.16b, v2.16b, v4.16b
-	bit	v1.16b, v2.16b, v3.16b
+	scvtf	s0, w0
+	fmov	s1, #1.00000000
+	fcmp	s0, s1
+	fcsel	s0, s1, s0, ls
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	scvtf	v0.4s, v0.4s
-	scvtf	v1.4s, v1.4s
-	fcmgt	v2.4s, v1.4s, #0.0
-	fcmgt	v3.4s, v0.4s, #0.0
-	bic	v0.16b, v0.16b, v3.16b
-	bic	v1.16b, v1.16b, v2.16b
+	scvtf	s0, w0
+	movi	d1, #0000000000000000
+	fcmp	s0, #0.0
+	fcsel	s0, s1, s0, gt
 	ret
                                         // -- End function

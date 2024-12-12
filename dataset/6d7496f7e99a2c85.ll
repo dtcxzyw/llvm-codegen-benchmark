@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; openjdk/optimized/psAdaptiveSizePolicy.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; quantlib/optimized/zabr.ll
 ; ruby/optimized/numeric.ll
 ; Function Attrs: nounwind

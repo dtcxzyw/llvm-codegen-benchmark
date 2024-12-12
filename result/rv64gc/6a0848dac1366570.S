@@ -20,7 +20,7 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000005:                   # @func0000000000000005
 	srliw	a2, a2, 24
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -35,7 +35,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000000c:                   # @func000000000000000c
 	srliw	a2, a2, 1
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
@@ -45,6 +45,6 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000010:                   # @func0000000000000010
 	srliw	a2, a2, 1
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

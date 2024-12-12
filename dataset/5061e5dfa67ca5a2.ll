@@ -1,5 +1,5 @@
 
-; 96 occurrences:
+; 91 occurrences:
 ; icu/optimized/dtptngen.ll
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/hid-lg4ff.ll
@@ -11,14 +11,10 @@
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
 ; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
-; mold/optimized/output-chunks.cc.RV64BE.cc.ll
 ; mold/optimized/output-chunks.cc.RV64LE.cc.ll
-; mold/optimized/output-chunks.cc.S390X.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
-; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; nlohmann_json/optimized/unit-binary_formats.cpp.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
@@ -27,7 +23,6 @@
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; spike/optimized/fadd_h.ll
 ; spike/optimized/fclass_h.ll
 ; spike/optimized/fcvt_d_h.ll

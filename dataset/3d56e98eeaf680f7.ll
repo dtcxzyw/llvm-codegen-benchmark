@@ -11,4 +11,15 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; abseil-cpp/optimized/generators_test.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
+entry:
+  %2 = trunc i32 %1 to i16
+  %3 = icmp ult i16 %2, 100
+  %4 = select i1 %3, i1 %0, i1 false
+  ret i1 %4
+}
+
 attributes #0 = { nounwind }

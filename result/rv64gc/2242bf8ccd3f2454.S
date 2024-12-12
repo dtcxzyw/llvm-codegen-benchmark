@@ -21,5 +21,5 @@ func0000000000000032:                   # @func0000000000000032
 func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, 5
 	fcvt.s.wu	fa5, a0
-	feq.s	a0, fa5, fa0
+	feq.s	a0, fa0, fa5
 	ret

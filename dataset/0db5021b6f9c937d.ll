@@ -5,6 +5,7 @@
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/rwrLib.c.ll
 ; arrow/optimized/float16.cc.ll
+; boost/optimized/dump.ll
 ; gromacs/optimized/cpuinfo.cpp.ll
 ; grpc/optimized/call.cc.ll
 ; grpc/optimized/writing.cc.ll
@@ -72,7 +73,6 @@
 ; openjdk/optimized/dfa_x86.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; php/optimized/pcre2_jit_compile.ll
-; postgres/optimized/trigger.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll

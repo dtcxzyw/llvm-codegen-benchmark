@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaBalAig.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sdiv i32 %0, 2

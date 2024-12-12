@@ -28,12 +28,6 @@ func0000000000000016:                   # @func0000000000000016
 	setge	%al
 	orb	%dl, %al
 	retq
-func000000000000000a:                   # @func000000000000000a
-	xorb	$1, %dl
-	cmpl	%esi, %edi
-	setbe	%al
-	orb	%dl, %al
-	retq
 func0000000000000012:                   # @func0000000000000012
 	xorb	$1, %dl
 	cmpl	%esi, %edi
@@ -44,6 +38,12 @@ func000000000000000e:                   # @func000000000000000e
 	xorb	$1, %dl
 	cmpl	%esi, %edi
 	setle	%al
+	orb	%dl, %al
+	retq
+func000000000000000a:                   # @func000000000000000a
+	xorb	$1, %dl
+	cmpl	%esi, %edi
+	setbe	%al
 	orb	%dl, %al
 	retq
 func0000000000000008:                   # @func0000000000000008

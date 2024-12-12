@@ -22,10 +22,7 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
-; graphviz/optimized/quad_prog_vpsc.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
+; 2 occurrences:
 ; openusd/optimized/decodeframe.c.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; Function Attrs: nounwind

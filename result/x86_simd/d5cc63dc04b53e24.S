@@ -30,7 +30,7 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vdivps	%zmm2, %zmm1, %zmm1
-	vcmpneqps	%zmm0, %zmm1, %k0
+	vcmpneqps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -42,7 +42,7 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vdivps	%zmm2, %zmm1, %zmm1
-	vcmpeqps	%zmm0, %zmm1, %k0
+	vcmpeqps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

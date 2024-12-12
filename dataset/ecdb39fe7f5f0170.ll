@@ -4,7 +4,7 @@
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000256(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = shl i64 %3, 32

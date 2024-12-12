@@ -1,20 +1,33 @@
 
-%"class.asio::detail::op_queue.147.2663383" = type { ptr, ptr }
+%"class.asio::detail::op_queue.147.2776500" = type { ptr, ptr }
+%struct.cache_bin_s.3714714 = type { ptr, %struct.cache_bin_stats_s.3714715, i16, i16, i16, %struct.cache_bin_info_s.3714716 }
+%struct.cache_bin_stats_s.3714715 = type { i64 }
+%struct.cache_bin_info_s.3714716 = type { i16 }
 
 ; 2 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000081(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000181(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = getelementptr [0 x i8], ptr %3, i64 0, i64 %1
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6
 }
 
-; 30 occurrences:
+; 37 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -28,9 +41,6 @@ entry:
 ; crow/optimized/example_static_file.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; msgpack/optimized/asio_send_recv.cpp.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
 ; yalantinglibs/optimized/channel.cpp.ll
@@ -46,10 +56,24 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a1(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000001c1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 112
-  %4 = getelementptr nusw [3 x %"class.asio::detail::op_queue.147.2663383"], ptr %3, i64 0, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 112
+  %4 = getelementptr nusw [3 x %"class.asio::detail::op_queue.147.2776500"], ptr %3, i64 0, i64 %1
+  %5 = icmp eq ptr %0, null
+  %6 = select i1 %5, ptr %4, ptr %0
+  ret ptr %6
+}
+
+; 3 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001e1(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
+  %4 = getelementptr nusw nuw [73 x %struct.cache_bin_s.3714714], ptr %3, i64 0, i64 %1
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6

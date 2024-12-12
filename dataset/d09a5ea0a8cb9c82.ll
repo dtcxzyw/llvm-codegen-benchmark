@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; slurm/optimized/parse_time.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000091(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 7
   %4 = icmp ult i8 %1, 10
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; ninja/optimized/deps_log.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000085(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -5
   %4 = icmp eq i8 %1, 0
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ocp1.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c7(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000187(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 39
   %4 = icmp eq i8 %1, 1

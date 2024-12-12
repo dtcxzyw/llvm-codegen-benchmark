@@ -115,3 +115,12 @@ func0000000000000007:                   # @func0000000000000007
 	vpaddq	%ymm1, %ymm1, %ymm1
 	vpternlogq	$236, .LCPI4_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
 	retq
+.LCPI5_0:
+	.quad	524286                          # 0x7fffe
+.LCPI5_1:
+	.quad	31                              # 0x1f
+func000000000000000e:                   # @func000000000000000e
+	vpternlogq	$248, .LCPI5_0(%rip){1to4}, %ymm2, %ymm1 # ymm1 = ymm1 | (ymm2 & mem)
+	vpsllq	$5, %ymm1, %ymm1
+	vpternlogq	$236, .LCPI5_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
+	retq

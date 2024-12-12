@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 50 occurrences:
 ; cpython/optimized/lock.ll
 ; fmt/optimized/compile-test.cc.ll
 ; freetype/optimized/sfnt.c.ll
@@ -16,9 +16,9 @@
 ; llvm/optimized/LegalizeFloatTypes.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -46,7 +46,10 @@
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/di6vqkr45z5qfxmwsnoq97jcv.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0) #0 {
 entry:

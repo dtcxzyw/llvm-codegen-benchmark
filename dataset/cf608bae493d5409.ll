@@ -1,6 +1,8 @@
 
-; 36 occurrences:
+; 38 occurrences:
 ; arrow/optimized/concatenate.cc.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/sort_by_side.ll
 ; duckdb/optimized/ub_duckdb_func_struct.cpp.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
@@ -64,8 +66,10 @@ entry:
   ret i64 %7
 }
 
-; 34 occurrences:
+; 36 occurrences:
 ; arrow/optimized/UriQuery.c.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/polynomial.cpp.ll
 ; cmake/optimized/cmQtAutoMocUic.cxx.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll

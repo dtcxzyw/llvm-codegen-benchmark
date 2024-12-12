@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; arrow/optimized/coo_converter.cc.ll
 ; gromacs/optimized/biasstate.cpp.ll
@@ -21,7 +21,6 @@
 ; ipopt/optimized/IpPenaltyLSAcceptor.ll
 ; ipopt/optimized/IpProbingMuOracle.ll
 ; opencv/optimized/brisk.cpp.ll
-; opencv/optimized/tf_importer.cpp.ll
 ; spike/optimized/vlse16_v.ll
 ; spike/optimized/vlse32_v.ll
 ; spike/optimized/vlse64_v.ll
@@ -39,7 +38,7 @@ entry:
   %2 = freeze i64 %1
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2147483647
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 

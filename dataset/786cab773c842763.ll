@@ -1,10 +1,9 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; cmake/optimized/nghttp2_stream.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; meshlab/optimized/arap.cpp.ll

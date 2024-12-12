@@ -36,7 +36,7 @@
 	.byte	0                               # 0x0
 .LCPI0_3:
 	.zero	4,149
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vmovq	.LCPI0_2(%rip), %xmm1           # xmm1 = [1,2,4,8,16,32,64,128,0,0,0,0,0,0,0,0]
 	vpshufb	%xmm0, %xmm1, %xmm0
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
@@ -81,7 +81,7 @@ func0000000000000021:                   # @func0000000000000021
 	.byte	0                               # 0x0
 .LCPI1_3:
 	.zero	4,55
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vmovq	.LCPI1_2(%rip), %xmm1           # xmm1 = [1,2,4,8,16,32,64,128,0,0,0,0,0,0,0,0]
 	vpshufb	%xmm0, %xmm1, %xmm0
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm0, %xmm0

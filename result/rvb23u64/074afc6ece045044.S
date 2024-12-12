@@ -1,4 +1,4 @@
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	add	a1, a1, a2
 	addiw	a1, a1, -7
 	addiw	a0, a0, 8
@@ -10,20 +10,20 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a0, a0, 1
 	sltu	a0, a1, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, 4
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	add	a1, a1, a2
 	addiw	a1, a1, -3
 	addiw	a0, a0, 4
 	slt	a0, a0, a1
 	ret
-func0000000000000176:                   # @func0000000000000176
+func00000000000002e6:                   # @func00000000000002e6
 	add	a1, a1, a2
 	addiw	a1, a1, -2
 	addiw	a0, a0, 2
@@ -35,7 +35,7 @@ func0000000000000004:                   # @func0000000000000004
 	addiw	a0, a0, -1
 	sltu	a0, a0, a1
 	ret
-func0000000000000171:                   # @func0000000000000171
+func00000000000002e1:                   # @func00000000000002e1
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, -2
@@ -49,25 +49,25 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	addw	a1, a1, a2
 	addiw	a0, a0, 5
 	slt	a0, a0, a1
 	ret
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	add	a1, a1, a2
 	addiw	a1, a1, -6
 	addiw	a0, a0, 6
 	slt	a0, a1, a0
 	ret
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, -2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, -2

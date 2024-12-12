@@ -1,5 +1,5 @@
 
-; 500 occurrences:
+; 503 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/ioaUtil.c.ll
 ; abc/optimized/wlcReadVer.c.ll
@@ -7,6 +7,8 @@
 ; abseil-cpp/optimized/demangle.cc.ll
 ; arrow/optimized/uri.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/static_string.ll
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/Glob.cxx.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
@@ -61,6 +63,7 @@
 ; icu/optimized/cstring.ll
 ; icu/optimized/uts46.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; influxdb-rs/optimized/380gcqze52ow6205.ll
 ; libquic/optimized/prtime.cc.ll
 ; libquic/optimized/ssl_cipher.c.ll
 ; libquic/optimized/v3_utl.c.ll
@@ -173,7 +176,6 @@
 ; llvm/optimized/cc1gen_reproducer_main.cpp.ll
 ; luau/optimized/Transpiler.cpp.ll
 ; luau/optimized/isocline.c.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
 ; mold/optimized/gc-sections.cc.ARM64.cc.ll
@@ -319,7 +321,6 @@
 ; postgres/optimized/jsonapi_shlib.ll
 ; postgres/optimized/jsonapi_srv.ll
 ; postgres/optimized/string_utils.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/tokenizer.cc.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; qemu/optimized/monitor_hmp.c.ll
@@ -331,6 +332,8 @@
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll
 ; ripgrep-rs/optimized/rwbxp5vay147miz.ll
+; ruby/optimized/regexec.ll
+; ruby/optimized/symbol.ll
 ; slurm/optimized/serializer_url_encoded.ll
 ; spdlog/optimized/async.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
@@ -506,13 +509,14 @@ entry:
   %2 = and i8 %1, -33
   %3 = add i8 %2, -65
   %4 = icmp ult i8 %3, 26
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 8 occurrences:
-; libevent/optimized/ws.c.ll
+; 9 occurrences:
 ; linux/optimized/drm_dp_mst_topology.ll
+; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; wireshark/optimized/packet-iscsi.c.ll
@@ -520,11 +524,11 @@ entry:
 ; wireshark/optimized/packet-uds.c.ll
 ; wireshark/optimized/packet-wtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000048(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 6
   %3 = icmp ne i8 %2, 4
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

@@ -287,12 +287,11 @@ entry:
   ret i32 %2
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; cpython/optimized/blake2b_impl.ll
 ; cpython/optimized/blake2s_impl.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; flac/optimized/bitreader.c.ll
-; linux/optimized/8250_dma.ll
 ; linux/optimized/acpi_video.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/serial_core.ll
@@ -315,16 +314,13 @@ entry:
   ret i32 %2
 }
 
-; 184 occurrences:
+; 179 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
-; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; bullet3/optimized/b3RadixSort32CL.ll
-; double_conversion/optimized/strtod.cc.ll
 ; icu/optimized/cal.ll
-; icu/optimized/double-conversion-strtod.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -472,8 +468,6 @@ entry:
 ; openjdk/optimized/klassVtable.ll
 ; openjdk/optimized/mlib_ImageCopy_Bit.ll
 ; openusd/optimized/cdef_block.c.ll
-; openusd/optimized/json.cpp.ll
-; openusd/optimized/strtod.cc.ll
 ; php/optimized/dtoa.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
@@ -508,12 +502,17 @@ entry:
   ret i32 %2
 }
 
-; 12 occurrences:
+; 17 occurrences:
+; arrow/optimized/strtod.cc.ll
+; double_conversion/optimized/strtod.cc.ll
+; icu/optimized/double-conversion-strtod.ll
 ; icu/optimized/package.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; openusd/optimized/json.cpp.ll
 ; openusd/optimized/mvref_common.c.ll
 ; openusd/optimized/stbImage.cpp.ll
+; openusd/optimized/strtod.cc.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; php/optimized/hash_whirlpool.ll
 ; stb/optimized/stb_image.c.ll
@@ -525,7 +524,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %reass.sub = sub i32 %0, %1
-  %2 = add i32 %reass.sub, 8
+  %2 = add i32 %reass.sub, 4
   ret i32 %2
 }
 

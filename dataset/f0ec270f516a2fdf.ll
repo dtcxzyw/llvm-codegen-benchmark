@@ -18,13 +18,13 @@ define i64 @func00000000000000d2(i128 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, -7046029288634856825
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %0
+  %4 = mul nuw i128 %0, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -34,6 +34,7 @@ entry:
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
@@ -41,12 +42,13 @@ entry:
 ; grpc/optimized/weighted_target.cc.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i128 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %0
+  %4 = mul nuw i128 %0, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
   ret i64 %6
@@ -226,7 +228,7 @@ define i64 @func000000000000007b(i128 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = zext nneg i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %0
+  %4 = mul nuw nsw i128 %0, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw nsw i128 %5 to i64
   ret i64 %6
@@ -241,7 +243,7 @@ define i64 @func0000000000000052(i128 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %0
+  %4 = mul nuw i128 %0, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
   ret i64 %6

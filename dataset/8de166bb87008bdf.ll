@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; linux/optimized/intel_audio.ll
+; 8 occurrences:
 ; linux/optimized/intel_dsb.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
@@ -31,7 +30,7 @@ entry:
 ; openjdk/optimized/DrawLine.ll
 ; openspiel/optimized/Par.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, %1
   %3 = select i1 %2, i32 2, i32 1
@@ -51,18 +50,17 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
 ; linux/optimized/gss_generic_token.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; postgres/optimized/varlena.ll
-; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = icmp ult i32 %2, 1024
+  %3 = icmp samesign ult i32 %2, 1024
   %4 = select i1 %3, i32 3, i32 4
   ret i32 %4
 }
@@ -96,20 +94,30 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; graphviz/optimized/pack.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; openblas/optimized/iparmq.c.ll
 ; openspiel/optimized/chess_common.cc.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, %1
   %3 = select i1 %2, i32 4, i32 3
+  ret i32 %3
+}
+
+; 1 occurrences:
+; redis/optimized/rax.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 %0, %1
+  %.inv = icmp ugt i32 %2, 1
+  %3 = select i1 %.inv, i32 4, i32 1
   ret i32 %3
 }
 

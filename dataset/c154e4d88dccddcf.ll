@@ -87,7 +87,7 @@ entry:
   ret i32 %5
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absGla.c.ll
@@ -97,7 +97,6 @@ entry:
 ; abc/optimized/acecUtil.c.ll
 ; abc/optimized/bmcBCore.c.ll
 ; abc/optimized/bmcFault.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/giaCSat2.c.ll
 ; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/giaDup.c.ll
@@ -128,13 +127,12 @@ entry:
   ret i32 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/acecBo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/bmcFault.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaExist.c.ll
 ; abc/optimized/giaJf.c.ll

@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; cpython/optimized/longobject.ll
 ; flac/optimized/bitwriter.c.ll
+; lief/optimized/Builder.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; wireshark/optimized/packet-sflow.c.ll

@@ -1,14 +1,14 @@
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	addq	%rdi, %rdx
-	cmpq	%rsi, %rdx
-	setl	%cl
+	cmpq	%rdx, %rsi
+	setg	%cl
 	testq	%rdi, %rdi
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	addq	%rdi, %rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	setne	%al

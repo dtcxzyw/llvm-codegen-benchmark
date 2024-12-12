@@ -107,7 +107,7 @@ entry:
   ret i32 %7
 }
 
-; 60 occurrences:
+; 58 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -120,7 +120,6 @@ entry:
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/ml_rendering_actions.cpp.ll
 ; meshlab/optimized/rich_parameter_list.cpp.ll
@@ -129,7 +128,6 @@ entry:
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CGUISkin.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; minetest/optimized/guiSkin.cpp.ll
@@ -160,7 +158,6 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/busmaster.c.ll
-; wireshark/optimized/file-rtpdump.c.ll
 ; wireshark/optimized/packet-fpp.c.ll
 ; wireshark/optimized/packet-ftp.c.ll
 ; wireshark/optimized/packet-nbap.c.ll
@@ -168,6 +165,7 @@ entry:
 ; wireshark/optimized/packet-stt.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/text_import.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -179,10 +177,12 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/map.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
+; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -254,7 +254,7 @@ entry:
   %4 = and i32 %3, 65280
   %5 = shl nuw nsw i32 %1, 16
   %6 = or disjoint i32 %5, %4
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 
@@ -363,7 +363,16 @@ entry:
   ret i32 %7
 }
 
-; 1 occurrences:
+; 10 occurrences:
+; hermes/optimized/AST2JS.cpp.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; sentencepiece/optimized/util.cc.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
@@ -372,7 +381,7 @@ entry:
   %4 = and i32 %3, 1835008
   %5 = shl nuw nsw i32 %1, 12
   %6 = or disjoint i32 %5, %4
-  %7 = or disjoint i32 %6, %0
+  %7 = or disjoint i32 %0, %6
   ret i32 %7
 }
 
@@ -412,7 +421,7 @@ entry:
   %4 = and i32 %3, 16711680
   %5 = shl i32 %1, 24
   %6 = or disjoint i32 %5, %4
-  %7 = or disjoint i32 %6, %0
+  %7 = or disjoint i32 %0, %6
   ret i32 %7
 }
 

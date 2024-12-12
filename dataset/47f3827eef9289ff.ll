@@ -36,7 +36,7 @@
 define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = lshr i32 %3, 4
   %5 = and i32 %4, 63
   ret i32 %5

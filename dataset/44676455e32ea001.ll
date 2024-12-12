@@ -1,10 +1,9 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
 ; folly/optimized/EpollBackend.cpp.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/vmscan.ll
@@ -25,11 +24,10 @@ entry:
   ret i16 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; icu/optimized/unames.ll
-; linux/optimized/i8237.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll

@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 40 occurrences:
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -38,6 +38,8 @@
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
 ; wireshark/optimized/syntax_line_edit.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i16 %0) #0 {
 entry:

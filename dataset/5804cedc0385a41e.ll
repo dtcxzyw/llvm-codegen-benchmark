@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/decodemv.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0) #0 {
+define i1 @func0000000000000046(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 16
   %2 = trunc nuw i32 %1 to i16

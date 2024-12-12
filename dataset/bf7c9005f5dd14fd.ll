@@ -5,7 +5,7 @@
 ; ruby/optimized/stringio.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = add i64 %2, 4611686018427387904
@@ -31,12 +31,11 @@ entry:
   ret i1 %4
 }
 
-; 59 occurrences:
+; 58 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/manager.c.ll
 ; clamav/optimized/others_common.c.ll
 ; cpython/optimized/longobject.ll
-; cpython/optimized/stringio.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; folly/optimized/RecordIO.cpp.ll
 ; git/optimized/archive-tar.ll
@@ -100,13 +99,10 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; eastl/optimized/BenchmarkDeque.cpp.ll
-; eastl/optimized/TestSort.cpp.ll
+; 1 occurrences:
 ; ruby/optimized/bignum.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = add nsw i64 %2, 1
@@ -210,7 +206,7 @@ entry:
   ret i1 %3
 }
 
-; 23 occurrences:
+; 26 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; cmake/optimized/nghttp2_stream.c.ll
 ; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
@@ -234,8 +230,11 @@ entry:
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; z3/optimized/mpz.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = and i64 %2, -2
@@ -243,31 +242,30 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
-; hermes/optimized/ItaniumDemangle.cpp.ll
+; 6 occurrences:
 ; libquic/optimized/aead_test.cc.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; mold/optimized/compress.cc.ll
 ; node/optimized/libnode.node_errors.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/eabk1i73d9nic55wlyvjkefow.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = icmp eq i64 %2, 1
   ret i1 %3
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; folly/optimized/SignalHandler.cpp.ll
 ; folly/optimized/Symbolizer.cpp.ll
-; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
-; regex-rs/optimized/3bb5ih3626n2er1d.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001b4(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = add nsw i64 %2, -3
-  %4 = icmp ult i64 %3, 2
+  %4 = icmp samesign ult i64 %3, 2
   ret i1 %4
 }
 
@@ -276,24 +274,23 @@ entry:
 ; oiio/optimized/strutil.cpp.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = icmp eq i64 %2, 80
   ret i1 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; grpc/optimized/ring_hash.cc.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/c1_LIRGenerator_x86.ll
 ; openjdk/optimized/type.ll
 ; z3/optimized/mpf.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = add i64 %2, -2147483648
@@ -307,7 +304,7 @@ entry:
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = icmp eq i64 %2, -1
@@ -318,7 +315,7 @@ entry:
 ; opencv/optimized/stackblur.cpp.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = add i64 %2, -2305843009213693951
@@ -329,7 +326,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/socketif.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = add nuw i64 %2, 1
@@ -340,17 +337,36 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = icmp eq i64 %2, 1
   ret i1 %3
 }
 
+; 9 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/token_ids.ll
+; cpython/optimized/mpdecimal.ll
+; cpython/optimized/stringio.ll
+; node/optimized/libnode.node_errors.ll
+; postgres/optimized/nodeWindowAgg.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %0, %1
+  %3 = add i64 %2, 24
+  %4 = icmp slt i64 %3, 0
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = add i64 %2, 16
@@ -361,11 +377,23 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = icmp eq i64 %2, -16
   ret i1 %3
+}
+
+; 2 occurrences:
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; regex-rs/optimized/3bb5ih3626n2er1d.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a4(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %0, %1
+  %3 = add nsw i64 %2, -4294967296
+  %4 = icmp ult i64 %3, 34359738368
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -380,29 +408,38 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
-; cpython/optimized/mpdecimal.ll
-; cpython/optimized/stringio.ll
-; node/optimized/libnode.node_errors.ll
-; postgres/optimized/nodeWindowAgg.ll
-; quickjs/optimized/libbf.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %0, %1
-  %3 = add i64 %2, 64
-  %4 = icmp slt i64 %3, 1
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = icmp ne i64 %2, 2
   ret i1 %3
+}
+
+; 3 occurrences:
+; eastl/optimized/BenchmarkDeque.cpp.ll
+; eastl/optimized/TestSort.cpp.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %0, %1
+  %3 = add nsw i64 %2, -3
+  %4 = icmp samesign ult i64 %3, 2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; cpython/optimized/stringio.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %0, %1
+  %3 = add i64 %2, 1
+  %4 = icmp samesign ult i64 %3, 9
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

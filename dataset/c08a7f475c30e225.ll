@@ -1,5 +1,5 @@
 
-; 526 occurrences:
+; 530 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; arrow/optimized/bignum.cc.ll
@@ -19,6 +19,10 @@
 ; assimp/optimized/X3DImporter_Group.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/XmlSerializer.cpp.ll
+; boost/optimized/format_parser.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/parser_utils.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/SystemInformation.cxx.ll
 ; cmake/optimized/archive_read_support_format_ar.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
@@ -114,6 +118,7 @@
 ; icu/optimized/loclikelysubtags.ll
 ; icu/optimized/number_formatimpl.ll
 ; icu/optimized/udbgutil.ll
+; icu/optimized/uts46.ll
 ; jq/optimized/jv_dtoa.ll
 ; libphonenumber/optimized/phonenumbermatcher.cc.ll
 ; libquic/optimized/process_metrics_linux.cc.ll
@@ -368,7 +373,6 @@
 ; pocketpy/optimized/str.cpp.ll
 ; postgres/optimized/dt_common.ll
 ; postgres/optimized/localtime.ll
-; proj/optimized/dmstor.cpp.ll
 ; proj/optimized/geod.cpp.ll
 ; proj/optimized/proj.cpp.ll
 ; proj/optimized/proj_strtod.cpp.ll
@@ -527,7 +531,7 @@
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0) #0 {
+define i1 @func0000000000000024(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i32
   %2 = add nsw i32 %1, -1
@@ -535,7 +539,9 @@ entry:
   ret i1 %3
 }
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/src.ll
 ; cpython/optimized/_datetimemodule.ll
 ; glslang/optimized/PpScanner.cpp.ll
 ; icu/optimized/lsr.ll
@@ -545,7 +551,7 @@ entry:
 ; ruby/optimized/class.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0) #0 {
+define i1 @func0000000000000028(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i32
   %2 = add nsw i32 %1, -58
@@ -553,10 +559,18 @@ entry:
   ret i1 %3
 }
 
-; 31 occurrences:
+; 36 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifDec16.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/expand.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/write_dsv.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; glslang/optimized/hlslParseables.cpp.ll
 ; hermes/optimized/dtoa.c.ll
@@ -570,8 +584,6 @@ entry:
 ; nix/optimized/local-store.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/profiles.ll
 ; nix/optimized/shared.ll
@@ -584,9 +596,8 @@ entry:
 ; postgres/optimized/formatting.ll
 ; proxygen/optimized/StructuredHeadersBuffer.cpp.ll
 ; velox/optimized/HugeInt.cpp.ll
-; wireshark/optimized/ftype-time.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0) #0 {
+define i1 @func0000000000000021(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 55
   ret i1 %1
@@ -595,7 +606,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0) #0 {
+define i1 @func000000000000002c(i8 %0) #0 {
 entry:
   %1 = icmp ne i8 %0, 65
   ret i1 %1

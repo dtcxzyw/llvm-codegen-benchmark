@@ -1,6 +1,9 @@
 
-; 83 occurrences:
+; 86 occurrences:
 ; abc/optimized/sclSize.c.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_friction_joint.cpp.ll
 ; box2d/optimized/b2_motor_joint.cpp.ll
@@ -119,7 +122,7 @@ entry:
   ret float %6
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; bullet3/optimized/btRaycastVehicle.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -144,6 +147,7 @@ entry:
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000024(float %0, float %1, float %2) #0 {
 entry:

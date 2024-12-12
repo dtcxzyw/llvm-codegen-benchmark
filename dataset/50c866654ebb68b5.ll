@@ -30,7 +30,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 %1, i32 1
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -45,7 +45,7 @@ define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.inv = icmp ugt i32 %2, 1
   %3 = select i1 %.inv, i32 1, i32 %1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -62,7 +62,7 @@ entry:
   ret i32 %4
 }
 
-; 14 occurrences:
+; 10 occurrences:
 ; cvc5/optimized/fc_simplex.cpp.ll
 ; cvc5/optimized/monomial_check.cpp.ll
 ; cvc5/optimized/pseudo_boolean_processor.cpp.ll
@@ -70,13 +70,9 @@ entry:
 ; cvc5/optimized/soi_simplex.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; gromacs/optimized/gmx_rms.cpp.ll
-; openblas/optimized/dlarrv.c.ll
 ; opencv/optimized/datastructs.cpp.ll
-; opencv/optimized/lkpyramid.cpp.ll
-; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
-; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -93,7 +89,7 @@ define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 48000
   %4 = select i1 %3, i32 %1, i32 1
-  %5 = mul i32 %4, %0
+  %5 = mul i32 %0, %4
   ret i32 %5
 }
 

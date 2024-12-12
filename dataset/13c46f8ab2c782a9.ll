@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/bignum.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i8 %1, i32 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = icmp ult i8 %1, 6

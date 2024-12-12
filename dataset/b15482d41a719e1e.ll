@@ -6,12 +6,12 @@
 ; libquic/optimized/trees.c.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003b1(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000761(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp sge i32 %3, %1
+  %4 = icmp sle i32 %1, %3
   %5 = zext i1 %4 to i32
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }
@@ -19,14 +19,13 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/deftree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000381(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000701(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp sge i32 %3, %1
-  %5 = zext i1 %4 to i32
-  %6 = sub i32 0, %0
-  %7 = icmp eq i32 %5, %6
-  ret i1 %7
+  %4 = icmp sle i32 %1, %3
+  %.neg = sext i1 %4 to i32
+  %5 = icmp eq i32 %0, %.neg
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

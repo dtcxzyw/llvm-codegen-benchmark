@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/export.c.ll
 ; openjdk/optimized/os_posix.ll
 ; php/optimized/formatted_print.ll
+; protobuf/optimized/arena.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, ptr %2) #0 {
 entry:

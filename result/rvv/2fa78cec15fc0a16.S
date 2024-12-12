@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
@@ -18,7 +18,19 @@ func0000000000000008:                   # @func0000000000000008
 	vmul.vx	v8, v10, a0
 	vmerge.vim	v8, v8, -1, v0
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000061:                   # @func0000000000000061
+	li	a0, 1000
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmseq.vi	v0, v8, 0
+	vmul.vx	v8, v10, a0
+	vmerge.vim	v8, v8, 0, v0
+	ret
+func0000000000000068:                   # @func0000000000000068
+	li	a0, 36
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmul.vx	v8, v10, a0
+	ret
+func0000000000000064:                   # @func0000000000000064
 	lui	a0, 1
 	addiw	a0, a0, 904
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -27,7 +39,17 @@ func0000000000000034:                   # @func0000000000000034
 	vmul.vx	v8, v10, a0
 	vmerge.vim	v8, v8, 5, v0
 	ret
-func0000000000000014:                   # @func0000000000000014
+.LCPI5_0:
+	.quad	5871781006564002453             # 0x517cc1b727220a95
+func0000000000000001:                   # @func0000000000000001
+	lui	a0, %hi(.LCPI5_0)
+	ld	a0, %lo(.LCPI5_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmseq.vi	v0, v8, 0
+	vmul.vx	v8, v10, a0
+	vmerge.vim	v8, v8, 0, v0
+	ret
+func0000000000000024:                   # @func0000000000000024
 	lui	a0, 2575
 	addiw	a0, a0, -325
 	slli	a0, a0, 14

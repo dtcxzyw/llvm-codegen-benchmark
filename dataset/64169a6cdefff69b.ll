@@ -22,7 +22,7 @@ entry:
   ret i32 %3
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -60,6 +60,7 @@ entry:
 ; qemu/optimized/target_riscv_translate.c.ll
 ; wireshark/optimized/packet-iuup.c.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

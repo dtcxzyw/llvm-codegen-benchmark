@@ -6,7 +6,7 @@
 define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 60
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add nsw i32 %3, 86400
   ret i32 %4
 }
@@ -17,12 +17,12 @@ entry:
 define i32 @func0000000000000037(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 60
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nuw nsw i32 %3, -1900800
   ret i32 %4
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; assimp/optimized/MD5Parser.cpp.ll
 ; assimp/optimized/OFFLoader.cpp.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -34,6 +34,7 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libpng/optimized/pngread.c.ll
 ; linux/optimized/reg.ll
+; llvm/optimized/ByteCodeEmitter.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/mesh.cpp.ll
@@ -71,7 +72,8 @@ entry:
   ret i32 %4
 }
 
-; 195 occurrences:
+; 196 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -308,7 +310,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add i32 %3, 1
   ret i32 %4
 }
@@ -331,7 +333,7 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/cnfWrite.c.ll
 ; cmake/optimized/multi.c.ll
 ; curl/optimized/libcurl_la-multi.ll
@@ -345,13 +347,12 @@ entry:
 ; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
-; php/optimized/engine_combinedlcg.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 16807
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add nsw i32 %3, 2147483647
   ret i32 %4
 }
@@ -364,7 +365,7 @@ entry:
 define i32 @func0000000000000017(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 188
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nuw nsw i32 %3, 48508
   ret i32 %4
 }
@@ -375,7 +376,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 6
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nuw nsw i32 %3, 6
   ret i32 %4
 }
@@ -387,7 +388,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3135
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add i32 %3, 16842752
   ret i32 %4
 }
@@ -414,7 +415,7 @@ entry:
 define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nsw i32 %3, -1
   ret i32 %4
 }
@@ -425,7 +426,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add i32 %3, 8
   ret i32 %4
 }
@@ -436,7 +437,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 6
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = add nsw i32 %3, 1
   ret i32 %4
 }

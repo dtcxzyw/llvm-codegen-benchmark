@@ -99,6 +99,16 @@ entry:
   ret i1 %2
 }
 
+; 1 occurrences:
+; linux/optimized/hugetlb.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0) #0 {
+entry:
+  %1 = shl i64 4096, %0
+  %2 = icmp samesign ugt i64 %1, 1073741823
+  ret i1 %2
+}
+
 ; 7 occurrences:
 ; xgboost/optimized/adaptive.cc.ll
 ; xgboost/optimized/auc.cc.ll
@@ -108,10 +118,10 @@ entry:
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/stats.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000038(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 -1, %0
-  %2 = icmp ugt i64 %1, -3
+  %2 = icmp samesign ugt i64 %1, -3
   ret i1 %2
 }
 

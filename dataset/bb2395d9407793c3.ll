@@ -1,5 +1,8 @@
 
-; 29 occurrences:
+; 32 occurrences:
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; gromacs/optimized/gmx_energy.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll

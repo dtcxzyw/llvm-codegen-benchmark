@@ -7,7 +7,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = sub i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -18,12 +18,12 @@ entry:
 ; php/optimized/hash_sha.ll
 ; php/optimized/sha1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000054(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
   %4 = sub nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp samesign ult i64 %0, %5
   ret i1 %6
 }
 
@@ -31,25 +31,36 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2047
   %4 = sub nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
-; openmpi/optimized/btl_sm_sendi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -8
   %4 = sub i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openmpi/optimized/btl_sm_sendi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 2147483647
+  %4 = sub i32 %1, %3
+  %5 = zext i32 %4 to i64
+  %6 = icmp samesign ugt i64 %0, %5
   ret i1 %6
 }
 

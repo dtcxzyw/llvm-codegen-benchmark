@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; graphviz/optimized/memory.c.ll
@@ -15,7 +15,6 @@
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_compare.cpp.ll

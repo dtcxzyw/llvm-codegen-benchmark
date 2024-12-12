@@ -32,7 +32,7 @@
 define i1 @func0000000000000002(ptr %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp eq ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6
@@ -48,7 +48,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq ptr %1, null
   %6 = or i1 %4, %5
   ret i1 %6
@@ -62,7 +62,7 @@ entry:
 define i1 @func0000000000000018(ptr %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6

@@ -3,25 +3,24 @@
 ; gromacs/optimized/trxio.cpp.ll
 ; opencv/optimized/fed.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = urem i32 %2, 10
   %4 = icmp eq i32 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 2 occurrences:
-; gromacs/optimized/tpi.cpp.ll
+; 1 occurrences:
 ; linux/optimized/lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000062(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000c2(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = urem i32 %2, 10
+  %2 = add nuw nsw i32 %1, 1900
+  %3 = urem i32 %2, 100
   %4 = icmp eq i32 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

@@ -40,9 +40,7 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; linux/optimized/mlme.ll
-; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; 1 occurrences:
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
@@ -53,12 +51,47 @@ entry:
   ret i1 %4
 }
 
-; 56 occurrences:
+; 4 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; linux/optimized/mlme.ll
-; linux/optimized/tcp_metrics.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
+entry:
+  %2 = lshr i16 %1, 2
+  %3 = and i16 %2, 4095
+  %4 = icmp samesign ult i16 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; linux/optimized/mlme.ll
+; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
+entry:
+  %2 = lshr i16 %1, 12
+  %3 = and i16 %2, 1
+  %4 = icmp samesign ugt i16 %3, %0
+  ret i1 %4
+}
+
+; 3 occurrences:
+; linux/optimized/virtio_ring.ll
+; linux/optimized/vt.ll
+; openusd/optimized/patchTableFactory.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i16 %0, i16 %1) #0 {
+entry:
+  %2 = lshr i16 %1, 6
+  %3 = and i16 %2, 1
+  %4 = icmp ne i16 %3, %0
+  ret i1 %4
+}
+
+; 52 occurrences:
+; linux/optimized/tcp_metrics.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -113,21 +146,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:
-  %2 = lshr i16 %1, 2
-  %3 = and i16 %2, 4095
+  %2 = lshr i16 %1, 10
+  %3 = and i16 %2, 3
   %4 = icmp ult i16 %3, %0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; linux/optimized/virtio_ring.ll
-; linux/optimized/vt.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i16 %0, i16 %1) #0 {
-entry:
-  %2 = lshr i16 %1, 7
-  %3 = and i16 %2, 1
-  %4 = icmp ne i16 %3, %0
   ret i1 %4
 }
 

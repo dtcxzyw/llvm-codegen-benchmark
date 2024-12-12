@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	3                               # 0x3
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm2 {%k1}
@@ -13,7 +13,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	retq
 .LCPI1_0:
 	.long	4294967294                      # 0xfffffffe
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm2, %xmm2 {%k1}

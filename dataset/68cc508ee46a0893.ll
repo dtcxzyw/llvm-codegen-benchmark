@@ -13,7 +13,10 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 15 occurrences:
+; boost/optimized/cstring_ref.ll
+; boost/optimized/decode_view.ll
+; boost/optimized/environment.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; cpython/optimized/arraymodule.ll
 ; git/optimized/packed-backend.ll
@@ -34,7 +37,8 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/ci_string.ll
 ; cpython/optimized/arraymodule.ll
 ; eastl/optimized/EAMemory.cpp.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
@@ -53,14 +57,13 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/nl80211.ll
 ; openusd/optimized/decodetxb.c.ll
 ; php/optimized/pcre2_string_utils.ll
-; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/numeric.ll
 ; wolfssl/optimized/dh.c.ll
 ; Function Attrs: nounwind

@@ -5,7 +5,7 @@
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0
@@ -20,7 +20,7 @@ entry:
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; qemu/optimized/chardev_wctablet.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 3
@@ -33,7 +33,7 @@ entry:
 ; git/optimized/apply.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/difftool.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ult i32 %2, 33
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/net.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0
@@ -81,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/pg_publication.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294950912
   %3 = icmp ne i64 %2, 0

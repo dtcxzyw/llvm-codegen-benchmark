@@ -1,9 +1,8 @@
 
-; 2 occurrences:
-; openblas/optimized/dlaqtr.c.ll
+; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 24
@@ -16,7 +15,7 @@ entry:
 ; openblas/optimized/dlaqtr.c.ll
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 24
@@ -28,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 60
@@ -40,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; rocksdb/optimized/block_based_table_builder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, -2147483647
@@ -52,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; ncnn/optimized/cpu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -2
@@ -64,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/file_functions.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i1 %0, i64 %1) #0 {
+define i1 @func00000000000001a4(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sext i1 %0 to i32
@@ -82,7 +81,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i1 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = add nsw i32 %2, 400
@@ -100,7 +99,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = add nsw i32 %2, 400
@@ -118,6 +117,18 @@ entry:
   %3 = add i32 %2, -294967296
   %4 = select i1 %0, i32 %3, i32 %2
   %5 = icmp ugt i32 %4, -294967297
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openblas/optimized/dlaqtr.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i1 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = sext i1 %0 to i32
+  %4 = add nsw i32 %2, %3
+  %5 = icmp samesign ugt i32 %4, 1
   ret i1 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 29 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -20,11 +20,9 @@
 ; cpython/optimized/difradix2.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
-; folly/optimized/Conv.cpp.ll
 ; git/optimized/diff-merges.ll
 ; linux/optimized/set_memory.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
-; llvm/optimized/TypePrinter.cpp.ll
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
 ; pbrt-v4/optimized/image.cpp.ll
@@ -34,10 +32,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 65280
-  %3 = icmp eq i64 %2, 1792
+  %2 = and i64 %1, 4294967295
+  %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
-  %5 = and i64 %4, 65280
+  %5 = and i64 %4, 65535
   ret i64 %5
 }
 

@@ -8,18 +8,18 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdx, %rsi
 	adcq	$0, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movq	%rdi, %rax
 	cmpq	%rdx, %rsi
 	sbbq	$0, %rax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	movabsq	$4294967296, %rax               # imm = 0x100000000
 	addq	%rdi, %rax
 	cmpq	%rdx, %rsi
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	movabsq	$4294967296, %rax               # imm = 0x100000000
 	addq	%rdi, %rax
 	cmpq	%rdx, %rsi

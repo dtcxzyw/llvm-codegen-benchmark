@@ -36,7 +36,7 @@ entry:
   ret i64 %4
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -61,7 +61,6 @@ entry:
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifTruth.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sfmCnf.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sfmLib.c.ll
@@ -75,10 +74,9 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/gen_ad.cpp.ll
 ; libquic/optimized/spdy_framer.cc.ll
-; openblas/optimized/dlasq6.c.ll
 ; opencv/optimized/radial_variance_hash.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -89,14 +87,13 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/dlasq3.cpp.ll
 ; gromacs/optimized/dlasq5.cpp.ll
 ; gromacs/optimized/dlasq6.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; openblas/optimized/dlasq2.c.ll

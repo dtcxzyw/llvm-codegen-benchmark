@@ -10,12 +10,13 @@ entry:
   ret i16 %3
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; clamav/optimized/cabd.c.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/intel_dp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; node/optimized/simdutf.ll
 ; nori/optimized/nanovg.c.ll

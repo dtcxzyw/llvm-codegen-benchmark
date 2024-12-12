@@ -12,7 +12,7 @@
 ; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000301(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = getelementptr nusw { i32, [1 x i32], { { i64, [3 x i64] } } }, ptr %0, i64 %2

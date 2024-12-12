@@ -1,5 +1,5 @@
 
-; 410 occurrences:
+; 405 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -10,7 +10,6 @@
 ; abc/optimized/abcAttach.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcGen.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -107,7 +106,6 @@
 ; abc/optimized/llb4Cex.c.ll
 ; abc/optimized/llb4Nonlin.c.ll
 ; abc/optimized/lpkCut.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mvcLits.c.ll
 ; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/pdrIncr.c.ll
@@ -190,7 +188,6 @@
 ; llvm/optimized/StackMapLivenessAnalysis.cpp.ll
 ; llvm/optimized/X86TargetParser.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -202,7 +199,6 @@
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; nuttx/optimized/fs_select.c.ll
-; nuttx/optimized/sig_addset.c.ll
 ; oniguruma/optimized/regparse.ll
 ; opencv/optimized/binary_descriptor_matcher.cpp.ll
 ; opencv/optimized/tree.cpp.ll
@@ -297,7 +293,6 @@
 ; z3/optimized/bv2real_rewriter.cpp.ll
 ; z3/optimized/bv_slice.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll
@@ -415,11 +410,11 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw i32 1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/bmcCexMin2.c.ll
 ; abc/optimized/giaEra2.c.ll
@@ -441,7 +436,6 @@ entry:
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/trace_events.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
@@ -469,7 +463,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
   %3 = shl i32 65536, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

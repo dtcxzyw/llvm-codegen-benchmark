@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/mfsMan.c.ll
 ; abc/optimized/retDelay.c.ll
@@ -19,7 +19,6 @@
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/mser.cpp.ll
 ; opencv/optimized/ptsetreg.cpp.ll

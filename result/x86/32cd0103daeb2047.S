@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	testb	$1, %sil
 	movl	$584400, %eax                   # imm = 0x8EAD0
 	movl	$584388, %ecx                   # imm = 0x8EAC4
@@ -7,7 +7,7 @@ func0000000000000054:                   # @func0000000000000054
 	cmpq	%rcx, %rdi
 	setb	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
@@ -17,7 +17,14 @@ func0000000000000071:                   # @func0000000000000071
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000a4:                   # @func00000000000000a4
+	andl	$1, %esi
+	incq	%rsi
+	incq	%rdi
+	cmpq	%rsi, %rdi
+	setb	%al
+	retq
+func00000000000000f4:                   # @func00000000000000f4
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax

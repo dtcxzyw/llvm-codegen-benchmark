@@ -1,17 +1,25 @@
 
-%"struct.std::pair.2486414" = type { %"class.std::__cxx11::basic_string.2486415", ptr }
-%"class.std::__cxx11::basic_string.2486415" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2486416", i64, %union.anon.9.2486417 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2486416" = type { ptr }
-%union.anon.9.2486417 = type { i64, [8 x i8] }
-%"class.boost::shared_ptr.29.2718975" = type { ptr, %"class.boost::detail::shared_count.2718956" }
-%"class.boost::detail::shared_count.2718956" = type { ptr }
-%class.TrafficTypesRowData.3252260 = type <{ i32, [4 x i8], %class.QString.3252249, i8, [7 x i8] }>
-%class.QString.3252249 = type { %struct.QArrayDataPointer.3252250 }
-%struct.QArrayDataPointer.3252250 = type { ptr, ptr, i64 }
+%"struct.std::pair.2601858" = type { %"class.std::__cxx11::basic_string.2601859", ptr }
+%"class.std::__cxx11::basic_string.2601859" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860", i64, %union.anon.9.2601861 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860" = type { ptr }
+%union.anon.9.2601861 = type { i64, [8 x i8] }
+%"struct.llvh::detail::DenseMapPair.98.3077883" = type { %"struct.std::pair.99.3077884" }
+%"struct.std::pair.99.3077884" = type { ptr, %"struct.hermes::hbc::HBCISel::SwitchImmInfo.3077885" }
+%"struct.hermes::hbc::HBCISel::SwitchImmInfo.3077885" = type { i32, ptr, %"class.std::vector.72.3077886" }
+%"class.std::vector.72.3077886" = type { %"struct.std::_Vector_base.73.3077887" }
+%"struct.std::_Vector_base.73.3077887" = type { %"struct.std::_Vector_base<hermes::BasicBlock *, std::allocator<hermes::BasicBlock *>>::_Vector_impl.3077888" }
+%"struct.std::_Vector_base<hermes::BasicBlock *, std::allocator<hermes::BasicBlock *>>::_Vector_impl.3077888" = type { %"struct.std::_Vector_base<hermes::BasicBlock *, std::allocator<hermes::BasicBlock *>>::_Vector_impl_data.3077889" }
+%"struct.std::_Vector_base<hermes::BasicBlock *, std::allocator<hermes::BasicBlock *>>::_Vector_impl_data.3077889" = type { ptr, ptr, ptr }
+%class.TrafficTypesRowData.3443372 = type <{ i32, [4 x i8], %class.QString.3443361, i8, [7 x i8] }>
+%class.QString.3443361 = type { %struct.QArrayDataPointer.3443362 }
+%struct.QArrayDataPointer.3443362 = type { ptr, ptr, i64 }
 
-; 162 occurrences:
+; 221 occurrences:
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/test_system.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -36,7 +44,15 @@
 ; flatbuffers/optimized/idl_gen_fbs.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/ManualExecutor.cpp.ll
+; g2o/optimized/command_args.cpp.ll
 ; g2o/optimized/hyper_dijkstra.cpp.ll
+; g2o/optimized/slam2d_linear.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; g2o/optimized/tictoc.cpp.ll
 ; glslang/optimized/iomapper.cpp.ll
 ; graphviz/optimized/generate-constraints.cpp.ll
 ; gromacs/optimized/directoryenumerator.cpp.ll
@@ -45,7 +61,6 @@
 ; gromacs/optimized/pdb2top.cpp.ll
 ; gromacs/optimized/readinp.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
-; hermes/optimized/ISel.cpp.ll
 ; hermes/optimized/JSONParser.cpp.ll
 ; hermes/optimized/Mem2Reg.cpp.ll
 ; hermes/optimized/ProfileAnalyzer.cpp.ll
@@ -57,10 +72,52 @@
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
+; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/AnalyzerHelpFlags.cpp.ll
+; llvm/optimized/ArgumentPromotion.cpp.ll
+; llvm/optimized/BalancedPartitioning.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/CGProfile.cpp.ll
 ; llvm/optimized/CheckerRegistry.cpp.ll
+; llvm/optimized/ClangAttrEmitter.cpp.ll
+; llvm/optimized/CodeGenSchedule.cpp.ll
 ; llvm/optimized/CodeGenTarget.cpp.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
+; llvm/optimized/CoverageMappingReader.cpp.ll
+; llvm/optimized/DXILEmitter.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/FrontendAction.cpp.ll
+; llvm/optimized/GVNHoist.cpp.ll
 ; llvm/optimized/GlobalOpt.cpp.ll
+; llvm/optimized/IndirectCallPromotion.cpp.ll
+; llvm/optimized/InstrProf.cpp.ll
+; llvm/optimized/InstrProfReader.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/LoadStoreVectorizer.cpp.ll
+; llvm/optimized/LowerTypeTests.cpp.ll
+; llvm/optimized/MIRCanonicalizerPass.cpp.ll
+; llvm/optimized/MIRPrinter.cpp.ll
+; llvm/optimized/MachineBasicBlock.cpp.ll
+; llvm/optimized/MachinePipeliner.cpp.ll
+; llvm/optimized/MachineScheduler.cpp.ll
+; llvm/optimized/MergeICmps.cpp.ll
+; llvm/optimized/ModuloSchedule.cpp.ll
+; llvm/optimized/PromoteMemoryToRegister.cpp.ll
+; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
+; llvm/optimized/Sarif.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/SlotIndexes.cpp.ll
+; llvm/optimized/SourceMgr.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
+; llvm/optimized/SymbolCache.cpp.ll
+; llvm/optimized/TimeProfiler.cpp.ll
+; llvm/optimized/Timer.cpp.ll
+; llvm/optimized/VirtualFileSystem.cpp.ll
 ; luau/optimized/Frontend.cpp.ll
 ; luau/optimized/Linter.cpp.ll
 ; luau/optimized/ToString.cpp.ll
@@ -74,8 +131,6 @@
 ; minetest/optimized/sound.cpp.ll
 ; minetest/optimized/test_authdatabase.cpp.ll
 ; nix/optimized/filetransfer.ll
-; node/optimized/libnode.node_process_object.ll
-; node/optimized/libnode.node_report.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; opencv/optimized/backend.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
@@ -96,14 +151,25 @@
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; opencv/optimized/videoio_registry.cpp.ll
 ; opencv/optimized/weighted_median_filter.cpp.ll
+; openspiel/optimized/crowd_modelling_2d.cc.ll
+; openspiel/optimized/human_bot.cc.ll
+; openusd/optimized/collectionMembershipQuery.cpp.ll
+; openusd/optimized/containerDataSourceEditor.cpp.ll
+; openusd/optimized/crateData.cpp.ll
+; openusd/optimized/dataSourceLocator.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/layerStack.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primIndex.cpp.ll
+; openusd/optimized/textFileFormat.tab.cpp.ll
+; openusd/optimized/textParserHelpers.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/feature_resolver.cc.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; pybind11/optimized/test_numpy_dtypes.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
+; quantlib/optimized/bond.ll
+; quantlib/optimized/differentialevolution.ll
 ; re2/optimized/set.cc.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; rocksdb/optimized/blob_db_impl.cc.ll
@@ -156,14 +222,12 @@
 ; z3/optimized/bv2int_rewriter.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
 ; z3/optimized/dl_instruction.cpp.ll
-; z3/optimized/euf_proof.cpp.ll
 ; z3/optimized/mbp_arith.cpp.ll
 ; z3/optimized/model_based_opt.cpp.ll
 ; z3/optimized/model_implicant.cpp.ll
 ; z3/optimized/pb_rewriter.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
-; z3/optimized/spacer_convex_closure.cpp.ll
 ; z3/optimized/spacer_expand_bnd_generalizer.cpp.ll
 ; z3/optimized/spacer_legacy_mev.cpp.ll
 ; z3/optimized/subpaving_hwf.cpp.ll
@@ -173,102 +237,43 @@
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, 2
-  %4 = or disjoint i64 %2, 1
-  %5 = select i1 %1, i64 %4, i64 %3
-  %6 = getelementptr %"struct.std::pair.2486414", ptr %0, i64 %5, i32 1
-  ret ptr %6
-}
-
-; 79 occurrences:
-; g2o/optimized/command_args.cpp.ll
-; g2o/optimized/slam2d_linear.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; g2o/optimized/tictoc.cpp.ll
-; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ASTWriter.cpp.ll
-; llvm/optimized/AnalysisBasedWarnings.cpp.ll
-; llvm/optimized/AnalyzerHelpFlags.cpp.ll
-; llvm/optimized/ArgumentPromotion.cpp.ll
-; llvm/optimized/AsmWriter.cpp.ll
-; llvm/optimized/BalancedPartitioning.cpp.ll
-; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/CGProfile.cpp.ll
-; llvm/optimized/CheckerRegistry.cpp.ll
-; llvm/optimized/ClangAttrEmitter.cpp.ll
-; llvm/optimized/CodeGenPrepare.cpp.ll
-; llvm/optimized/CodeGenSchedule.cpp.ll
-; llvm/optimized/CodeGenTarget.cpp.ll
-; llvm/optimized/CompilerInvocation.cpp.ll
-; llvm/optimized/CoverageMappingReader.cpp.ll
-; llvm/optimized/DFAJumpThreading.cpp.ll
-; llvm/optimized/DXILEmitter.cpp.ll
-; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/FrontendAction.cpp.ll
-; llvm/optimized/GVNHoist.cpp.ll
-; llvm/optimized/GVNSink.cpp.ll
-; llvm/optimized/IndirectCallPromotion.cpp.ll
-; llvm/optimized/InstrProf.cpp.ll
-; llvm/optimized/InstrProfReader.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/LoadStoreVectorizer.cpp.ll
-; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/LowerTypeTests.cpp.ll
-; llvm/optimized/MCPseudoProbe.cpp.ll
-; llvm/optimized/MIRCanonicalizerPass.cpp.ll
-; llvm/optimized/MIRPrinter.cpp.ll
-; llvm/optimized/MachineBasicBlock.cpp.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
-; llvm/optimized/MachineScheduler.cpp.ll
-; llvm/optimized/MergeICmps.cpp.ll
-; llvm/optimized/Metadata.cpp.ll
-; llvm/optimized/ModuloSchedule.cpp.ll
-; llvm/optimized/NewGVN.cpp.ll
-; llvm/optimized/PromoteMemoryToRegister.cpp.ll
-; llvm/optimized/RangeConstraintManager.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/Sarif.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaHLSL.cpp.ll
-; llvm/optimized/SlotIndexes.cpp.ll
-; llvm/optimized/SourceMgr.cpp.ll
-; llvm/optimized/SplitModule.cpp.ll
-; llvm/optimized/SymbolCache.cpp.ll
-; llvm/optimized/TimeProfiler.cpp.ll
-; llvm/optimized/Timer.cpp.ll
-; llvm/optimized/VTableBuilder.cpp.ll
-; llvm/optimized/ValueEnumerator.cpp.ll
-; llvm/optimized/VirtualFileSystem.cpp.ll
-; openspiel/optimized/crowd_modelling_2d.cc.ll
-; openspiel/optimized/human_bot.cc.ll
-; openusd/optimized/collectionMembershipQuery.cpp.ll
-; openusd/optimized/containerDataSourceEditor.cpp.ll
-; openusd/optimized/crateData.cpp.ll
-; openusd/optimized/dataSourceLocator.cpp.ll
-; openusd/optimized/instanceAdapter.cpp.ll
-; openusd/optimized/layerStack.cpp.ll
-; openusd/optimized/prim.cpp.ll
-; openusd/optimized/primIndex.cpp.ll
-; openusd/optimized/textFileFormat.tab.cpp.ll
-; openusd/optimized/textParserHelpers.cpp.ll
-; quantlib/optimized/bond.ll
-; quantlib/optimized/differentialevolution.ll
-; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
   %5 = select i1 %1, i64 %4, i64 %3
-  %6 = getelementptr %"class.boost::shared_ptr.29.2718975", ptr %0, i64 %5, i32 1
+  %6 = getelementptr %"struct.std::pair.2601858", ptr %0, i64 %5, i32 1
+  ret ptr %6
+}
+
+; 20 occurrences:
+; hermes/optimized/ISel.cpp.ll
+; llvm/optimized/AnalysisBasedWarnings.cpp.ll
+; llvm/optimized/AsmWriter.cpp.ll
+; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/DFAJumpThreading.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/GVNSink.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/MCPseudoProbe.cpp.ll
+; llvm/optimized/Metadata.cpp.ll
+; llvm/optimized/NewGVN.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SemaHLSL.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
+; llvm/optimized/VTableBuilder.cpp.ll
+; llvm/optimized/ValueEnumerator.cpp.ll
+; node/optimized/libnode.node_process_object.ll
+; node/optimized/libnode.node_report.ll
+; z3/optimized/euf_proof.cpp.ll
+; z3/optimized/spacer_convex_closure.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 2
+  %4 = or disjoint i64 %2, 1
+  %5 = select i1 %1, i64 %4, i64 %3
+  %6 = getelementptr nuw %"struct.llvh::detail::DenseMapPair.98.3077883", ptr %0, i64 %5, i32 0, i32 1
   ret ptr %6
 }
 
@@ -279,12 +284,12 @@ entry:
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; wireshark/optimized/traffic_types_list.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
   %5 = select i1 %1, i64 %4, i64 %3
-  %6 = getelementptr %class.TrafficTypesRowData.3252260, ptr %0, i64 %5, i32 2
+  %6 = getelementptr %class.TrafficTypesRowData.3443372, ptr %0, i64 %5, i32 2
   ret ptr %6
 }
 

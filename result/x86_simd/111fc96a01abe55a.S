@@ -1,21 +1,22 @@
-func0000000000000047:                   # @func0000000000000047
-	vpaddd	%ymm2, %ymm2, %ymm3
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm3, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	retq
-.LCPI1_0:
+.LCPI0_0:
 	.long	36969                           # 0x9069
 func00000000000000a0:                   # @func00000000000000a0
-	vpmulld	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
+	vpmulld	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpslld	$16, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI2_0:
+.LCPI1_0:
 	.long	4294967286                      # 0xfffffff6
 func0000000000000055:                   # @func0000000000000055
+	vpmulld	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
+	vpaddd	%ymm1, %ymm2, %ymm1
+	vpslld	$8, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI2_0:
+	.long	246                             # 0xf6
+func0000000000000000:                   # @func0000000000000000
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpslld	$8, %ymm1, %ymm1
@@ -23,24 +24,16 @@ func0000000000000055:                   # @func0000000000000055
 	retq
 .LCPI3_0:
 	.long	246                             # 0xf6
-func0000000000000000:                   # @func0000000000000000
+func00000000000000f0:                   # @func00000000000000f0
 	vpmulld	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpslld	$8, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	246                             # 0xf6
-func00000000000000f0:                   # @func00000000000000f0
-	vpmulld	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpslld	$8, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	retq
-.LCPI5_0:
-	.long	246                             # 0xf6
 func00000000000000fa:                   # @func00000000000000fa
-	vpmulld	.LCPI5_0(%rip){1to8}, %ymm2, %ymm2
+	vpmulld	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpslld	$8, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -50,12 +43,12 @@ func0000000000000050:                   # @func0000000000000050
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm3, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func00000000000000ff:                   # @func00000000000000ff
 	vpaddd	%ymm2, %ymm2, %ymm3
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm3, %ymm1, %ymm1
 	vpslld	$6, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

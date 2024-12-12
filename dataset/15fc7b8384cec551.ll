@@ -38,7 +38,7 @@
 define i64 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = ashr exact i64 %0, 4
   %6 = add nsw i64 %5, %4
   %7 = ashr i64 %6, 5
@@ -53,7 +53,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 21
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr i64 %1, 21
   %6 = add nsw i64 %4, %5
   %7 = ashr i64 %6, 21
@@ -69,7 +69,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 21
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = ashr i64 %1, 21
   %6 = add nsw i64 %4, %5
   %7 = ashr i64 %6, 21
@@ -92,7 +92,7 @@ entry:
 define i64 @func000000000000006a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = ashr exact i64 %1, 5
   %6 = add nsw i64 %4, %5
   %7 = ashr i64 %6, 4
@@ -105,7 +105,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 21
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr i64 %1, 21
   %6 = add i64 %4, %5
   %7 = ashr i64 %6, 21
@@ -118,7 +118,7 @@ entry:
 define i64 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = ashr exact i64 %0, 3
   %6 = add nsw i64 %5, %4
   %7 = ashr i64 %6, 6

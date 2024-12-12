@@ -53,6 +53,11 @@ func0000000000000019:                   # @func0000000000000019
 	addl	%edx, %esi
 	subl	%esi, %eax
 	retq
+func000000000000001c:                   # @func000000000000001c
+	movq	%rdi, %rax
+	addl	%edx, %esi
+	subl	%esi, %eax
+	retq
 func000000000000002c:                   # @func000000000000002c
 	movq	%rdi, %rax
 	addl	%edx, %esi

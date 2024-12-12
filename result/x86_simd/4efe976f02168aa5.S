@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	32                              # 0x20
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2   # xmm2 = [32,32,32,32]
 	vptestmd	%xmm0, %xmm0, %k1
 	vpsubd	%xmm1, %xmm2, %xmm0 {%k1} {z}

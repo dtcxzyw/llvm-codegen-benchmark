@@ -1,5 +1,5 @@
 
-; 148 occurrences:
+; 115 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcRpo.c.ll
@@ -10,12 +10,10 @@
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cuddSubsetSP.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/dsc.c.ll
 ; abc/optimized/extraBddThresh.c.ll
@@ -29,36 +27,15 @@
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
-; abc/optimized/ifDec75.c.ll
+; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/kitTruth.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/luckyRead.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; box2d/optimized/b2_chain_shape.cpp.ll
-; bullet3/optimized/b3ConvexHullContact.ll
-; bullet3/optimized/b3CpuNarrowPhase.ll
-; bullet3/optimized/b3FixedConstraint.ll
-; bullet3/optimized/b3PgsJacobiSolver.ll
-; bullet3/optimized/btCollisionWorld.ll
-; bullet3/optimized/btConeTwistConstraint.ll
-; bullet3/optimized/btContinuousConvexCollision.ll
 ; bullet3/optimized/btConvexHull.ll
-; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
-; bullet3/optimized/btDiscreteDynamicsWorld.ll
-; bullet3/optimized/btGhostObject.ll
-; bullet3/optimized/btHingeConstraint.ll
-; bullet3/optimized/btKinematicCharacterController.ll
-; bullet3/optimized/btMultiBody.ll
-; bullet3/optimized/btMultiBodyDynamicsWorld.ll
-; bullet3/optimized/btMultiBodyGearConstraint.ll
-; bullet3/optimized/btMultiBodyJointLimitConstraint.ll
-; bullet3/optimized/btMultiBodyJointMotor.ll
-; bullet3/optimized/btReducedDeformableBody.ll
-; bullet3/optimized/btRigidBody.ll
-; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; clamav/optimized/mbox.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
@@ -81,11 +58,8 @@
 ; libphonenumber/optimized/unicodetext.cc.ll
 ; libquic/optimized/url_util.cc.ll
 ; libwebp/optimized/yuv.c.ll
-; luajit/optimized/minilua.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; meshlab/optimized/Scanner.cpp.ll
-; openblas/optimized/dorcsd.c.ll
-; openblas/optimized/dorcsd2by1.c.ll
 ; opencv/optimized/alignment_pattern_finder.cpp.ll
 ; opencv/optimized/bagofwords.cpp.ll
 ; opencv/optimized/beblid.cpp.ll
@@ -95,7 +69,6 @@
 ; opencv/optimized/histogramphaseunwrapping.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/msd.cpp.ll
-; opencv/optimized/perf_pnp.cpp.ll
 ; opencv/optimized/quality.cpp.ll
 ; opencv/optimized/spatialgradient.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
@@ -128,10 +101,6 @@
 ; openspiel/optimized/quoridor.cc.ll
 ; openspiel/optimized/tarok.cc.ll
 ; openusd/optimized/irregularPatchBuilder.cpp.ll
-; openusd/optimized/matrix3d.cpp.ll
-; openusd/optimized/matrix3f.cpp.ll
-; openusd/optimized/matrix4d.cpp.ll
-; openusd/optimized/matrix4f.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/resize.c.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
@@ -146,8 +115,6 @@
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; verilator/optimized/V3Param.cpp.ll
-; xgboost/optimized/allgather.cc.ll
-; xgboost/optimized/comm.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
 entry:
@@ -157,12 +124,10 @@ entry:
   ret ptr %5
 }
 
-; 25 occurrences:
+; 22 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauTree.c.ll
-; abc/optimized/ifDec16.c.ll
-; abc/optimized/kitDsd.c.ll
 ; casadi/optimized/cs_maxtrans.c.ll
 ; cpython/optimized/unicodedata.ll
 ; icu/optimized/number_decimalquantity.ll
@@ -177,7 +142,6 @@ entry:
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
-; opencv/optimized/slice_layer.cpp.ll
 ; openmpi/optimized/coll_base_reduce.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/ui_ui-hmp-cmds.c.ll
@@ -189,6 +153,51 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %1, i64 14, i64 %3
   %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 35 occurrences:
+; abc/optimized/abcSymm.c.ll
+; abc/optimized/bmcMaj3.c.ll
+; abc/optimized/dauDsd.c.ll
+; abc/optimized/dauNonDsd.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/ifDec75.c.ll
+; abc/optimized/rsbDec6.c.ll
+; bullet3/optimized/b3ConvexHullContact.ll
+; bullet3/optimized/b3CpuNarrowPhase.ll
+; bullet3/optimized/b3FixedConstraint.ll
+; bullet3/optimized/b3PgsJacobiSolver.ll
+; bullet3/optimized/btCollisionWorld.ll
+; bullet3/optimized/btConeTwistConstraint.ll
+; bullet3/optimized/btContinuousConvexCollision.ll
+; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
+; bullet3/optimized/btDiscreteDynamicsWorld.ll
+; bullet3/optimized/btGhostObject.ll
+; bullet3/optimized/btHingeConstraint.ll
+; bullet3/optimized/btKinematicCharacterController.ll
+; bullet3/optimized/btMultiBody.ll
+; bullet3/optimized/btMultiBodyDynamicsWorld.ll
+; bullet3/optimized/btMultiBodyGearConstraint.ll
+; bullet3/optimized/btMultiBodyJointLimitConstraint.ll
+; bullet3/optimized/btMultiBodyJointMotor.ll
+; bullet3/optimized/btReducedDeformableBody.ll
+; bullet3/optimized/btRigidBody.ll
+; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
+; luajit/optimized/minilua.ll
+; opencv/optimized/perf_pnp.cpp.ll
+; openusd/optimized/matrix3d.cpp.ll
+; openusd/optimized/matrix3f.cpp.ll
+; openusd/optimized/matrix4d.cpp.ll
+; openusd/optimized/matrix4f.cpp.ll
+; xgboost/optimized/allgather.cc.ll
+; xgboost/optimized/comm.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = select i1 %1, i64 0, i64 %3
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 

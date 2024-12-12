@@ -42,3 +42,12 @@ func0000000000000009:                   # @func0000000000000009
 	vand.vi	v8, v8, -5
 	vor.vi	v8, v8, 4, v0.t
 	ret
+func0000000000000002:                   # @func0000000000000002
+	li	a0, 16
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmseq.vx	v0, v10, a0
+	li	a0, -256
+	vsetvli	zero, zero, e64, m2, ta, mu
+	vand.vx	v8, v8, a0
+	vor.vi	v8, v8, 6, v0.t
+	ret

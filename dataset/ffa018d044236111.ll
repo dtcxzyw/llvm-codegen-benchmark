@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; qemu/optimized/hw_char_serial.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i8
-  %3 = xor i8 %2, %0
-  %4 = and i8 %3, 8
-  %5 = icmp eq i8 %4, 0
-  ret i1 %5
-}
-
 ; 19 occurrences:
 ; glslang/optimized/linkValidate.cpp.ll
 ; hermes/optimized/SynthTrace.cpp.ll
@@ -35,7 +23,7 @@ entry:
 define i1 @func0000000000000001(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = xor i8 %2, %0
+  %3 = xor i8 %0, %2
   %4 = and i8 %3, 2
   %5 = icmp eq i8 %4, 0
   ret i1 %5
@@ -51,7 +39,7 @@ entry:
 define i1 @func000000000000000c(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = xor i8 %2, %0
+  %3 = xor i8 %0, %2
   %4 = and i8 %3, 1
   %5 = icmp ne i8 %4, 0
   ret i1 %5
@@ -60,10 +48,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i8
-  %3 = xor i8 %2, %0
+  %3 = xor i8 %0, %2
   %4 = and i8 %3, 1
   %5 = icmp eq i8 %4, 0
   ret i1 %5

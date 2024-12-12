@@ -4,7 +4,7 @@ func0000000000000040:                   # @func0000000000000040
 	vpmulld	.LCPI0_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000074:                   # @func0000000000000074
@@ -39,7 +39,7 @@ func0000000000000030:                   # @func0000000000000030
 	vpmulld	.LCPI4_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI5_0:

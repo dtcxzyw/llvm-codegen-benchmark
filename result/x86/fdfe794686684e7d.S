@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	movq	%rdi, %rdx
 	mulxq	%rax, %rax, %rax
@@ -7,12 +7,12 @@ func0000000000000014:                   # @func0000000000000014
 	cmpq	$365, %rax                      # imm = 0x16D
 	setb	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addq	$-40, %rdi
 	cmpq	$40, %rdi
 	setb	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	shrq	%rdi
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	imulq	%rdi, %rax
@@ -21,7 +21,7 @@ func0000000000000054:                   # @func0000000000000054
 	cmpq	$2, %rcx
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	cmpq	$40, %rdi
 	sete	%al
 	retq

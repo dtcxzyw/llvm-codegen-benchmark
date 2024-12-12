@@ -7,7 +7,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movq	%rdi, %rax
 	movl	%edx, %ecx
 	xorl	%edx, %edx

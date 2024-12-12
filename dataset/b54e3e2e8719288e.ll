@@ -1,10 +1,16 @@
 
-; 220 occurrences:
+; 219 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/giaMini.c.ll
+; abseil-cpp/optimized/convert_test.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/to_chars.ll
+; box2d/optimized/b2_collide_circle.cpp.ll
+; box2d/optimized/b2_collide_edge.cpp.ll
+; box2d/optimized/b2_collide_polygon.cpp.ll
+; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; clamav/optimized/pdfdecode.c.ll
 ; clamav/optimized/untar.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -12,19 +18,16 @@
 ; cmake/optimized/process.c.ll
 ; cmake/optimized/progress.c.ll
 ; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; cpython/optimized/_ssl.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; faiss/optimized/hamming.cpp.ll
-; git/optimized/diff.ll
 ; git/optimized/line-log.ll
 ; git/optimized/merge-ort.ll
 ; git/optimized/object-name.ll
 ; graphviz/optimized/exparse.c.ll
 ; gromacs/optimized/gmx_anaeig.cpp.ll
-; gromacs/optimized/gmx_h2order.cpp.ll
 ; gromacs/optimized/gmx_sorient.cpp.ll
 ; gromacs/optimized/gmx_spol.cpp.ll
 ; gromacs/optimized/md5.c.ll
@@ -35,7 +38,6 @@
 ; hyperscan/optimized/ng_extparam.cpp.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/formatted_string_builder.ll
-; icu/optimized/hebrwcal.ll
 ; icu/optimized/number_longnames.ll
 ; icu/optimized/quantityformatter.ll
 ; icu/optimized/ucnvbocu.ll
@@ -54,7 +56,6 @@
 ; linux/optimized/build_policy.ll
 ; linux/optimized/core.ll
 ; linux/optimized/drm_ioctl.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/idr.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/message.ll
@@ -100,8 +101,6 @@
 ; oiio/optimized/tiffinput.cpp.ll
 ; openblas/optimized/cblas_dgemmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/convhull.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
@@ -154,7 +153,6 @@
 ; postgres/optimized/aset.ll
 ; postgres/optimized/dynahash.ll
 ; postgres/optimized/heaptoast.ll
-; postgres/optimized/regcomp.ll
 ; postgres/optimized/reorderbuffer.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
@@ -208,17 +206,18 @@
 ; unicode-normalization-rs/optimized/2dhzw0mhmvlvodqn.ll
 ; velox/optimized/JsonType.cpp.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
-; wasmtime-rs/optimized/4vgjsomnctxfipp1.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wireshark/optimized/addr_resolv.c.ll
-; wireshark/optimized/packet-erf.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; yosys/optimized/fsm_recode.ll
 ; yosys/optimized/verilog_backend.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
@@ -228,7 +227,8 @@ entry:
   ret i64 %3
 }
 
-; 390 occurrences:
+; 383 occurrences:
+; abc/optimized/abcHieNew.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -257,9 +257,6 @@ entry:
 ; clamav/optimized/clamfi.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
-; cmake/optimized/lzma_decoder.c.ll
-; cmake/optimized/lzma_encoder.c.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; cpython/optimized/pystrhex.ll
 ; darktable/optimized/metadata_view.c.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
@@ -298,7 +295,6 @@ entry:
 ; hyperscan/optimized/ng_som.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; hyperscan/optimized/stream.c.ll
-; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/tjexample.c.ll
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/bts.ll
@@ -312,8 +308,6 @@ entry:
 ; linux/optimized/svcauth_unix.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/truncate.ll
-; linux/optimized/utbuffer.ll
-; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
@@ -322,6 +316,7 @@ entry:
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
 ; llvm/optimized/ADCE.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDumper.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -398,6 +393,7 @@ entry:
 ; llvm/optimized/GISelKnownBits.cpp.ll
 ; llvm/optimized/GVN.cpp.ll
 ; llvm/optimized/GVNHoist.cpp.ll
+; llvm/optimized/GenericTaintChecker.cpp.ll
 ; llvm/optimized/GlobalISelCombinerEmitter.cpp.ll
 ; llvm/optimized/GlobalOpt.cpp.ll
 ; llvm/optimized/GlobalsModRef.cpp.ll
@@ -484,7 +480,6 @@ entry:
 ; llvm/optimized/PredicateInfo.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
@@ -584,13 +579,11 @@ entry:
 ; openmpi/optimized/osc_rdma_component.ll
 ; openspiel/optimized/euchre.cc.ll
 ; openusd/optimized/stbImage.cpp.ll
-; ozz-animation/optimized/skinning_job.cc.ll
 ; php/optimized/softmagic.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/pg_constraint.ll
 ; postgres/optimized/pg_walsummary.ll
 ; postgres/optimized/predicate.ll
-; postgres/optimized/xlogprefetcher.ll
 ; protobuf/optimized/extension_set_heavy.cc.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; qemu/optimized/block_io.c.ll
@@ -598,12 +591,11 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
 ; ruby/optimized/date_strftime.ll
 ; ruby/optimized/transcode.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll

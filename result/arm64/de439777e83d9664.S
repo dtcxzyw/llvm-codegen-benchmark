@@ -1,82 +1,28 @@
-func00000000000001f4:                   // @func00000000000001f4
+func00000000000003e4:                   // @func00000000000003e4
 // %bb.0:                               // %entry
-	sshr	v4.2d, v4.2d, #2
-	sshr	v3.2d, v3.2d, #2
+	asr	x9, x2, #2
 	mov	x8, #6148914691236517205        // =0x5555555555555555
-	sshr	v0.2d, v0.2d, #2
-	sshr	v1.2d, v1.2d, #2
-	fmov	x9, d4
-	mov	x10, v4.d[1]
-	fmov	x11, d3
-	mov	x12, v3.d[1]
-	fmov	x14, d0
-	fmov	x16, d1
-	mov	x13, v0.d[1]
-	mov	x15, v1.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d0, x9
-	mul	x8, x12, x8
-	mov	x12, #-6148914691236517206      // =0xaaaaaaaaaaaaaaaa
-	movk	x12, #43691
-	fmov	d1, x11
-	mul	x14, x14, x12
-	mov	v0.d[1], x10
-	mul	x16, x16, x12
-	mov	v1.d[1], x8
-	mul	x13, x13, x12
-	fmov	d3, x14
-	uaddw2	v0.2d, v0.2d, v2.4s
-	mul	x12, x15, x12
-	fmov	d4, x16
-	uaddw	v1.2d, v1.2d, v2.2s
-	mov	v3.d[1], x13
-	mov	v4.d[1], x12
-	cmhi	v1.2d, v1.2d, v3.2d
-	cmhi	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	mov	x10, #-6148914691236517206      // =0xaaaaaaaaaaaaaaaa
+	movk	x10, #43691
+	mul	x8, x9, x8
+	asr	x9, x0, #2
+	mul	x9, x9, x10
+	add	x8, x8, w1, uxtw
+	cmp	x9, x8
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000174:                   // @func0000000000000174
+func00000000000002e4:                   // @func00000000000002e4
 // %bb.0:                               // %entry
-	sshr	v4.2d, v4.2d, #2
-	sshr	v3.2d, v3.2d, #2
+	asr	x9, x2, #2
 	mov	x8, #6148914691236517205        // =0x5555555555555555
-	sshr	v0.2d, v0.2d, #2
-	sshr	v1.2d, v1.2d, #2
-	fmov	x9, d4
-	mov	x10, v4.d[1]
-	fmov	x11, d3
-	mov	x12, v3.d[1]
-	fmov	x14, d0
-	fmov	x16, d1
-	mov	x13, v0.d[1]
-	mov	x15, v1.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d0, x9
-	mul	x8, x12, x8
-	mov	x12, #-6148914691236517206      // =0xaaaaaaaaaaaaaaaa
-	movk	x12, #43691
-	fmov	d1, x11
-	mul	x14, x14, x12
-	mov	v0.d[1], x10
-	mul	x16, x16, x12
-	mov	v1.d[1], x8
-	mul	x13, x13, x12
-	fmov	d3, x14
-	uaddw2	v0.2d, v0.2d, v2.4s
-	mul	x12, x15, x12
-	fmov	d4, x16
-	uaddw	v1.2d, v1.2d, v2.2s
-	mov	v3.d[1], x13
-	mov	v4.d[1], x12
-	cmhi	v1.2d, v1.2d, v3.2d
-	cmhi	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	mov	x10, #-6148914691236517206      // =0xaaaaaaaaaaaaaaaa
+	movk	x10, #43691
+	mul	x8, x9, x8
+	asr	x9, x0, #2
+	mul	x9, x9, x10
+	add	x8, x8, w1, uxtw
+	cmp	x9, x8
+	cset	w0, lo
 	ret
                                         // -- End function

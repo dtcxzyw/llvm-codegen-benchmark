@@ -1,12 +1,10 @@
 
-; 22 occurrences:
+; 20 occurrences:
 ; cmake/optimized/zstd_compress_sequences.c.ll
-; jq/optimized/unicode_fold2_key.ll
 ; linux/optimized/dmaengine.ll
 ; linux/optimized/gro.ll
 ; miniaudio/optimized/unity.c.ll
 ; nori/optimized/layout.cpp.ll
-; oniguruma/optimized/unicode_fold2_key.ll
 ; openjdk/optimized/ByteGray.ll
 ; openjdk/optimized/FourByteAbgr.ll
 ; openjdk/optimized/IntArgb.ll

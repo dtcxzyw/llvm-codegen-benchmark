@@ -1,12 +1,11 @@
 
-; 338 occurrences:
+; 337 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcLatch.c.ll
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/cuddBridge.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/extraBddMisc.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaStg.c.ll

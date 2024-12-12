@@ -14,9 +14,8 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

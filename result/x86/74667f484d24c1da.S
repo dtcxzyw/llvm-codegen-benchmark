@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000001a1:                   # @func00000000000001a1
 	movb	$9, %al
 	subb	%dl, %al
 	shrxl	%eax, %esi, %ecx

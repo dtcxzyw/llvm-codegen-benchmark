@@ -1,6 +1,6 @@
 func0000000000000008:                   # @func0000000000000008
-	movq	%rsi, %rax
-	imull	%edi, %eax
+	movq	%rdi, %rax
+	imull	%esi, %eax
 	shlq	$32, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
@@ -9,7 +9,7 @@ func0000000000000000:                   # @func0000000000000000
 	leaq	(%rsi,%rsi), %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	movq	%rsi, %rax
-	imull	%edi, %eax
+	movq	%rdi, %rax
+	imull	%esi, %eax
 	shlq	$32, %rax
 	retq

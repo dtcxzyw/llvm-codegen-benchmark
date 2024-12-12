@@ -16,3 +16,12 @@ func0000000000000070:                   # @func0000000000000070
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
+.LCPI2_0:
+	.long	4294967290                      # 0xfffffffa
+func0000000000000040:                   # @func0000000000000040
+	vpmovqd	%ymm1, %xmm1
+	vpaddd	%xmm1, %xmm1, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
+	vzeroupper
+	retq

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000109(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = add i64 %2, -16
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %notmask = shl nsw i64 -1, %1
   %2 = xor i64 %notmask, %0
@@ -36,7 +36,7 @@ entry:
 ; brotli/optimized/brotli.c.ll
 ; linux/optimized/printk_ringbuffer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = add i64 %2, -8

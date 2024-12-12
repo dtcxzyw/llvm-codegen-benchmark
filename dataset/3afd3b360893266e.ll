@@ -1,23 +1,19 @@
 
-; 91 occurrences:
+; 85 occurrences:
 ; abc/optimized/wlcReadVer.c.ll
 ; clamav/optimized/strfn.cpp.ll
 ; cmake/optimized/tty.c.ll
 ; cpython/optimized/memoryobject.ll
 ; eastl/optimized/EAString.cpp.ll
 ; freetype/optimized/ftbase.c.ll
-; git/optimized/pq.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jq/optimized/regcomp.ll
 ; libpng/optimized/png.c.ll
 ; libuv/optimized/tty.c.ll
-; linux/optimized/advise.ll
-; linux/optimized/attr.ll
 ; linux/optimized/cancel.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/epoll.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/futex.ll
@@ -31,15 +27,12 @@
 ; linux/optimized/msg_ring.ll
 ; linux/optimized/net.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/p4.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/poll.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/rw.ll
-; linux/optimized/splice.ll
 ; linux/optimized/timeout.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/vfs_inode_dotl.ll
 ; linux/optimized/via-rng.ll
 ; linux/optimized/waitid.ll
@@ -85,6 +78,7 @@
 ; ruby/optimized/strftime.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; tomlplusplus/optimized/toml.cpp.ll
+; verilator/optimized/V3Task.cpp.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ppi-antenna.c.ll
 ; wireshark/optimized/packet-ppi-gps.c.ll
@@ -99,10 +93,10 @@ entry:
   ret i32 %4
 }
 
-; 68 occurrences:
+; 64 occurrences:
+; boost/optimized/alloc_lib.ll
 ; cpython/optimized/_testembed.ll
 ; cpython/optimized/fileutils.ll
-; darktable/optimized/introspection_flip.c.ll
 ; freetype/optimized/cff.c.ll
 ; git/optimized/unpack-trees.ll
 ; grpc/optimized/socket_utils_common_posix.cc.ll
@@ -113,7 +107,6 @@ entry:
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; libpng/optimized/pngread.c.ll
 ; libquic/optimized/exponentiation.c.ll
-; libquic/optimized/socket_helper.c.ll
 ; libwebp/optimized/muxedit.c.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/e1000_hw.ll
@@ -132,7 +125,6 @@ entry:
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -155,7 +147,6 @@ entry:
 ; postgres/optimized/shmem.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
-; qemu/optimized/hw_sd_cadence_sdhci.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/ui_cursor.c.ll
 ; regex-rs/optimized/6f4i3c8223u3bmw.ll
@@ -164,7 +155,6 @@ entry:
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
-; verilator/optimized/V3Task.cpp.ll
 ; wireshark/optimized/filter_list_model.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/dfflegalize.ll

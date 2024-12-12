@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
 ; nix/optimized/archive.ll
@@ -7,7 +7,6 @@
 ; nix/optimized/derivations.ll
 ; nix/optimized/export-import.ll
 ; nix/optimized/legacy-ssh-store.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/remote-store.ll
 ; nix/optimized/serialise.ll
 ; nix/optimized/serve-protocol-impl.ll
@@ -18,7 +17,7 @@
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %1, %2
   %4 = or i64 %3, %0
@@ -26,8 +25,9 @@ entry:
   ret i1 %5
 }
 
-; 113 occurrences:
+; 114 occurrences:
 ; abc/optimized/dauCanon.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/XzDec.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -144,7 +144,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -156,7 +156,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = icmp sgt i64 %4, -1
   ret i1 %5
 }
@@ -178,17 +178,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; wireshark/optimized/packet-mc-nmf.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %1, %2
-  %4 = or i64 %3, %0
-  %5 = icmp ugt i64 %4, 4294967295
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
@@ -201,12 +190,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; luajit/optimized/lj_strfmt_num.ll
-; luajit/optimized/lj_strfmt_num_dyn.ll
+; 1 occurrences:
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
   %4 = or i64 %3, %0
@@ -214,17 +201,16 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; nix/optimized/build-remote.ll
 ; nix/optimized/export-import.ll
 ; nix/optimized/legacy-ssh-store.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/remote-store.ll
 ; nix/optimized/serialise.ll
 ; nix/optimized/serve-protocol-impl.ll
 ; nix/optimized/uds-remote-store.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %1, %2
   %4 = or i64 %3, %0
@@ -232,27 +218,25 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; nix/optimized/nix-store.ll
-; nix/optimized/serialise.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw i64 %1, %2
-  %4 = or i64 %3, %0
-  %5 = icmp slt i64 %4, 0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; nix/optimized/nix-store.ll
+; 1 occurrences:
 ; nix/optimized/remote-store.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %1, %2
   %4 = or i64 %3, %0
   %5 = icmp ne i64 %4, 0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; nix/optimized/serialise.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw i64 %1, %2
+  %4 = or i64 %3, %0
+  %5 = icmp slt i64 %4, 0
   ret i1 %5
 }
 

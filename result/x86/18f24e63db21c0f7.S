@@ -16,7 +16,3 @@ func0000000000000015:                   # @func0000000000000015
 	shrl	$8, %esi
 	leaq	-1(%rdi,%rsi), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
-	shrl	$3, %esi
-	leaq	-1(%rdi,%rsi), %rax
-	retq

@@ -1,10 +1,10 @@
-func0000000000000256:                   # @func0000000000000256
+func00000000000004a6:                   # @func00000000000004a6
 	addw	a1, a1, a2
 	blez	a1, .LBB0_2
 	addiw	a0, a1, -1
 .LBB0_2:                                # %entry
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	addw	a1, a1, a2
 	lui	a2, 1048400
 	addiw	a2, a2, 1427

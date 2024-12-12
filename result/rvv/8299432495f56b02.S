@@ -4,7 +4,7 @@ func000000000000003d:                   # @func000000000000003d
 	vsll.vx	v12, v12, a0
 	li	a0, -1
 	srli	a0, a0, 5
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vand.vx	v10, v10, a0
 	li	a0, 59
 	vsll.vx	v8, v8, a0
@@ -30,7 +30,7 @@ func0000000000000024:                   # @func0000000000000024
 	li	a0, -1
 	slli	a0, a0, 58
 	vand.vx	v10, v10, a0
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vadd.vv	v8, v8, v8
 	vor.vv	v8, v10, v8
 	ret
@@ -40,7 +40,7 @@ func0000000000000001:                   # @func0000000000000001
 	vsll.vx	v12, v12, a0
 	li	a0, -1
 	srli	a0, a0, 1
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vand.vx	v10, v10, a0
 	li	a0, 63
 	vsll.vx	v8, v8, a0

@@ -29,7 +29,6 @@
 ; libquic/optimized/p256-x86_64.c.ll
 ; lief/optimized/poly1305.c.ll
 ; linux/optimized/blk-merge.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_display.ll
@@ -83,6 +82,7 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-h265.c.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; zstd/optimized/zstd_v07.c.ll
@@ -115,7 +115,7 @@ entry:
   ret i32 %2
 }
 
-; 318 occurrences:
+; 319 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -237,6 +237,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -341,7 +342,6 @@ entry:
 ; openusd/optimized/pathNode.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -433,6 +433,7 @@ entry:
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {

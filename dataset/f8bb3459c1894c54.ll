@@ -20,9 +20,18 @@ entry:
   ret i32 %7
 }
 
-; 30 occurrences:
+; 39 occurrences:
 ; clamav/optimized/chmd.c.ll
 ; cmake/optimized/json_writer.cpp.ll
+; hermes/optimized/AST2JS.cpp.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utf_impl.ll

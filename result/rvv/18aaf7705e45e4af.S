@@ -48,3 +48,19 @@ func0000000000000008:                   # @func0000000000000008
 	vmand.mm	v8, v8, v0
 	vmor.mm	v0, v8, v10
 	ret
+func0000000000000018:                   # @func0000000000000018
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsgtu.vi	v9, v10, 3
+	vmandn.mm	v10, v9, v0
+	vmor.mm	v8, v9, v8
+	vmand.mm	v8, v8, v0
+	vmor.mm	v0, v8, v10
+	ret
+func0000000000000014:                   # @func0000000000000014
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsleu.vi	v9, v10, 3
+	vmandn.mm	v10, v9, v0
+	vmor.mm	v8, v9, v8
+	vmand.mm	v8, v8, v0
+	vmor.mm	v0, v8, v10
+	ret

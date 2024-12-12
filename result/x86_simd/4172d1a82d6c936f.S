@@ -4,7 +4,7 @@
 	.long	126                             # 0x7e
 .LCPI0_2:
 	.long	255                             # 0xff
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpsubd	%ymm2, %ymm1, %ymm0
@@ -35,7 +35,7 @@ func000000000000000a:                   # @func000000000000000a
 	.long	2                               # 0x2
 .LCPI2_1:
 	.long	3                               # 0x3
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpsubd	%ymm2, %ymm1, %ymm0

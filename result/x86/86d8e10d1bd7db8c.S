@@ -5,28 +5,28 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%edi, %edi
 	setg	%al
 	retq
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	shll	$6, %esi
 	subl	%esi, %edi
 	addl	$64, %edi
 	cmpl	$64, %edi
 	setge	%al
 	retq
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	shll	$6, %esi
 	subl	%esi, %edi
 	addl	$64, %edi
 	cmpl	$64, %edi
 	setge	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	shll	$3, %esi
 	subl	%esi, %edi
 	addl	$8, %edi
 	cmpl	$8, %edi
 	setge	%al
 	retq
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	shll	$6, %esi
 	cmpl	%esi, %edi
 	sete	%al

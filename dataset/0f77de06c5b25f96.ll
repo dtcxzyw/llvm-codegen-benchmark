@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 43 occurrences:
 ; assimp/optimized/ComputeUVMappingProcess.cpp.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
@@ -41,6 +41,8 @@
 ; tev/optimized/StbiImageLoader.cpp.ll
 ; typst-rs/optimized/5g4ubztl8zkyojuq.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:

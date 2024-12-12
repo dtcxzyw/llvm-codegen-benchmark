@@ -1,5 +1,5 @@
 
-; 385 occurrences:
+; 384 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ifDec07.c.ll
@@ -28,6 +28,7 @@
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
+; darktable/optimized/introspection_liquify.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
@@ -52,6 +53,7 @@
 ; hermes/optimized/FoldingSet.cpp.ll
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; libquic/optimized/hpack_input_stream.cc.ll
+; lief/optimized/Builder.cpp.ll
 ; linux/optimized/af_unix.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/exec.ll
@@ -64,7 +66,6 @@
 ; linux/optimized/process.ll
 ; linux/optimized/profile.ll
 ; linux/optimized/radix-tree.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/socket.ll
@@ -73,7 +74,6 @@
 ; linux/optimized/therm_throt.ll
 ; linux/optimized/tty_buffer.ll
 ; linux/optimized/uncore_nhmex.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/vmalloc.ll
 ; linux/optimized/vt_ioctl.ll
 ; linux/optimized/xstate.ll
@@ -91,7 +91,6 @@
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
@@ -122,8 +121,6 @@
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; openusd/optimized/avif_obu.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/interaction.cpp.ll
 ; php/optimized/phar_object.ll
 ; php/optimized/php_pcre.ll
 ; php/optimized/spl_heap.ll
@@ -385,6 +382,8 @@
 ; velox/optimized/StreamArena.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; wireshark/optimized/packet-mongo.c.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i64 %0) #0 {
 entry:
@@ -393,7 +392,7 @@ entry:
   ret i32 %2
 }
 
-; 131 occurrences:
+; 130 occurrences:
 ; abc/optimized/cloud.c.ll
 ; cvc5/optimized/equality_engine.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -426,7 +425,6 @@ entry:
 ; linux/optimized/process.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/step.ll
-; linux/optimized/tsx.ll
 ; linux/optimized/tty_buffer.ll
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
@@ -533,7 +531,7 @@ entry:
   ret i32 %2
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -545,6 +543,7 @@ entry:
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; linux/optimized/percpu.ll
 ; llvm/optimized/regcomp.c.ll
+; lvgl/optimized/lv_tlsf.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
 ; openjdk/optimized/archiveHeapWriter.ll

@@ -1,14 +1,14 @@
 
-%struct._zval_struct.2677526 = type { %union._zend_value.2677536, %union.anon.2677537, %union.anon.2.2677538 }
-%union._zend_value.2677536 = type { i64 }
-%union.anon.2677537 = type { i32 }
-%union.anon.2.2677538 = type { i32 }
-%"union.absl::debian2::container_internal::map_slot_type.2748286" = type { %"struct.std::pair.2748287" }
-%"struct.std::pair.2748287" = type { i32, %"class.std::__cxx11::basic_string.2748263" }
-%"class.std::__cxx11::basic_string.2748263" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2748264", i64, %union.anon.2748265 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2748264" = type { ptr }
-%union.anon.2748265 = type { i64, [8 x i8] }
-%"struct.Darts::DoubleArrayImpl<void, void, int, void>::result_pair_type.3242636" = type { i32, i64 }
+%struct._zval_struct.2790528 = type { %union._zend_value.2790538, %union.anon.2790539, %union.anon.2.2790540 }
+%union._zend_value.2790538 = type { i64 }
+%union.anon.2790539 = type { i32 }
+%union.anon.2.2790540 = type { i32 }
+%"union.absl::debian2::container_internal::map_slot_type.2860613" = type { %"struct.std::pair.2860614" }
+%"struct.std::pair.2860614" = type { i32, %"class.std::__cxx11::basic_string.2860583" }
+%"class.std::__cxx11::basic_string.2860583" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584", i64, %union.anon.2860585 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584" = type { ptr }
+%union.anon.2860585 = type { i64, [8 x i8] }
+%"struct.Darts::DoubleArrayImpl<void, void, int, void>::result_pair_type.3434067" = type { i32, i64 }
 
 ; 2 occurrences:
 ; cpython/optimized/dtoa.ll
@@ -37,17 +37,14 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
-; opencv/optimized/omnidir.cpp.ll
-; opencv/optimized/onnx_importer.cpp.ll
+; 1 occurrences:
 ; php/optimized/zend_jit_vm_helpers.ll
-; protobuf/optimized/descriptor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000141(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 4
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %struct._zval_struct.2677526, ptr %1, i64 %4
+  %5 = getelementptr nusw %struct._zval_struct.2790528, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %0, i64 -16
   %7 = icmp eq ptr %6, %5
   ret i1 %7
@@ -59,33 +56,28 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000368(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i32, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -4
-  %6 = getelementptr nusw i8, ptr %0, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 4
   %7 = icmp ugt ptr %6, %5
   ret i1 %7
 }
 
-; 27 occurrences:
+; 22 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; icu/optimized/dayperiodrules.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
-; opencv/optimized/omnidir.cpp.ll
 ; openspiel/optimized/best_response.cc.ll
-; openspiel/optimized/cfr.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; openspiel/optimized/dynamic_routing_utils.cc.ll
 ; openspiel/optimized/history_tree.cc.ll
-; openspiel/optimized/kuhn_poker.cc.ll
 ; openspiel/optimized/spiel.cc.ll
 ; openspiel/optimized/state_distribution.cc.ll
-; openspiel/optimized/tabular_best_response_mdp.cc.ll
-; openusd/optimized/instanceAdapter.cpp.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
@@ -98,12 +90,12 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000361(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"union.absl::debian2::container_internal::map_slot_type.2748286", ptr %1, i64 %3
+  %4 = getelementptr %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -40
-  %6 = getelementptr nusw i8, ptr %0, i64 40
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 40
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
@@ -112,12 +104,12 @@ entry:
 ; abc/optimized/abcExtract.c.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000364(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i32, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -8
-  %6 = getelementptr nusw i8, ptr %0, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 4
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }
@@ -128,26 +120,68 @@ entry:
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; spike/optimized/fdt_wip.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000164(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -11
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 1
   %7 = icmp ult ptr %6, %5
   ret i1 %7
+}
+
+; 5 occurrences:
+; opencv/optimized/omnidir.cpp.ll
+; openspiel/optimized/cfr.cc.ll
+; openspiel/optimized/kuhn_poker.cc.ll
+; openspiel/optimized/tabular_best_response_mdp.cc.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i32, ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
+  ret i1 %5
 }
 
 ; 2 occurrences:
 ; faiss/optimized/NNDescent.cpp.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000261(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"struct.Darts::DoubleArrayImpl<void, void, int, void>::result_pair_type.3242636", ptr %1, i64 %3
+  %4 = getelementptr %"struct.Darts::DoubleArrayImpl<void, void, int, void>::result_pair_type.3434067", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 12
-  %6 = getelementptr nusw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %7 = icmp eq ptr %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; protobuf/optimized/descriptor.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000161(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 56
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 32
+  %7 = icmp eq ptr %6, %5
+  ret i1 %7
+}
+
+; 2 occurrences:
+; opencv/optimized/omnidir.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 26
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 4
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }

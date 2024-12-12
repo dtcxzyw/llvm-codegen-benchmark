@@ -4,7 +4,7 @@
 ; gromacs/optimized/gmx_dipoles.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, double %1) #0 {
+define i1 @func0000000000000061(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add i32 %2, 1
@@ -18,7 +18,7 @@ entry:
 ; lightgbm/optimized/objective_function.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, double %1) #0 {
+define i1 @func00000000000001e1(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %2, 1

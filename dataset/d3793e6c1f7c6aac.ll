@@ -5,7 +5,7 @@
 ; stb/optimized/stb_image_resize2.c.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000082(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, 2
   %4 = and i1 %3, %0
@@ -15,13 +15,11 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
-; glslang/optimized/Initialize.cpp.ll
-; openblas/optimized/lapacke_dlarfb_work.c.ll
+; 2 occurrences:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %2, %1
   %4 = icmp eq i32 %3, 0

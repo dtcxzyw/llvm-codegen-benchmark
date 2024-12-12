@@ -5,7 +5,7 @@
 ; jq/optimized/decNumber.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 44, %1
   %3 = icmp eq i32 %0, 1
@@ -13,18 +13,16 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; just-rs/optimized/uwydcyn8qeoqoev.ll
 ; mitsuba3/optimized/ldsampler.cpp.ll
-; openusd/optimized/cdef_block.c.ll
 ; rust-analyzer-rs/optimized/1thcgyhz863zx8uj.ll
 ; rust-analyzer-rs/optimized/3hcpc53socutnyz5.ll
 ; rust-analyzer-rs/optimized/3nofq7oo06gx5fjm.ll
-; wasmtime-rs/optimized/4vgjsomnctxfipp1.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = icmp ult i32 %0, -2
@@ -58,8 +56,7 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
-; icu/optimized/coptccal.ll
+; 16 occurrences:
 ; icu/optimized/gregocal.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/ByteGray.ll
@@ -77,7 +74,7 @@ entry:
 ; openjdk/optimized/ThreeByteBgr.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = icmp sgt i32 %0, 0
@@ -99,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 -65536, %1
   %3 = icmp ult i32 %0, -65537
@@ -115,10 +112,10 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
-  %3 = icmp ugt i32 %0, 1
+  %3 = icmp samesign ugt i32 %0, 1
   %4 = select i1 %3, i32 %2, i32 1
   ret i32 %4
 }
@@ -126,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/yosys.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = icmp sgt i32 %0, 1
@@ -144,7 +141,7 @@ entry:
 ; gromacs/optimized/ssyr2.cpp.ll
 ; gromacs/optimized/strmv.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 1, %1
   %3 = icmp slt i32 %0, 1
@@ -152,26 +149,36 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; cpython/optimized/flowgraph.ll
-; gromacs/optimized/gmx_h2order.cpp.ll
+; 1 occurrences:
+; openusd/optimized/cdef_block.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 3, %1
-  %.inv = icmp ugt i32 %0, 2
-  %3 = select i1 %.inv, i32 2, i32 %2
-  ret i32 %3
+  %2 = sub nuw nsw i32 35, %1
+  %3 = icmp samesign ult i32 %0, 12
+  %4 = select i1 %3, i32 %2, i32 16
+  ret i32 %4
 }
 
 ; 2 occurrences:
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; hwloc/optimized/traversal.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = icmp ult i32 %0, 2
+  %4 = select i1 %3, i32 %2, i32 0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; cpython/optimized/flowgraph.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 197, %1
+  %3 = icmp ult i32 %0, 4
   %4 = select i1 %3, i32 %2, i32 0
   ret i32 %4
 }

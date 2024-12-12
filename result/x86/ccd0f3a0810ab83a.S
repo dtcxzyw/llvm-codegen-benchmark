@@ -31,13 +31,6 @@ func0000000000000012:                   # @func0000000000000012
 	vucomisd	%xmm2, %xmm0
 	seta	%al
 	retq
-func00000000000000c2:                   # @func00000000000000c2
-	vxorpd	%xmm3, %xmm3, %xmm3
-	vcmplesd	%xmm1, %xmm3, %k1
-	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
-	vucomisd	%xmm2, %xmm0
-	seta	%al
-	retq
 func00000000000000cc:                   # @func00000000000000cc
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmplesd	%xmm1, %xmm3, %k1
@@ -51,6 +44,13 @@ func00000000000000c3:                   # @func00000000000000c3
 	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
 	vucomisd	%xmm0, %xmm2
 	setb	%al
+	retq
+func00000000000000c2:                   # @func00000000000000c2
+	vxorpd	%xmm3, %xmm3, %xmm3
+	vcmplesd	%xmm1, %xmm3, %k1
+	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
+	vucomisd	%xmm2, %xmm0
+	seta	%al
 	retq
 func00000000000000cb:                   # @func00000000000000cb
 	vxorpd	%xmm3, %xmm3, %xmm3

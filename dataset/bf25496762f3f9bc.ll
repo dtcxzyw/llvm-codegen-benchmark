@@ -22,7 +22,8 @@ entry:
   ret i32 %2
 }
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/unarj.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; icu/optimized/ucnvbocu.ll
@@ -32,6 +33,7 @@ entry:
 ; openvdb/optimized/points.cc.ll
 ; ruby/optimized/strftime.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i16 %0) #0 {
 entry:
@@ -40,8 +42,14 @@ entry:
   ret i32 %2
 }
 
-; 62 occurrences:
+; 64 occurrences:
 ; abc/optimized/trees.c.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/Bcj2.c.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/unsp.c.ll
@@ -71,6 +79,7 @@ entry:
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/l_item.cpp.ll
@@ -96,13 +105,8 @@ entry:
 ; wireshark/optimized/packet-rsvp.c.ll
 ; wireshark/optimized/packet-rtitcp.c.ll
 ; zlib/optimized/trees.c.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
-; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i16 %0) #0 {
 entry:

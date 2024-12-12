@@ -45,18 +45,6 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; opencv/optimized/edge_drawing.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000042(double %0, double %1) #0 {
-entry:
-  %2 = fcmp ogt double %0, %1
-  %3 = fcmp olt double %0, 0.000000e+00
-  %4 = select i1 %3, i1 true, i1 %2
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; opencv/optimized/depth_registration.cpp.ll
 ; Function Attrs: nounwind
@@ -75,6 +63,17 @@ define i1 @func000000000000002e(double %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %0, %1
   %3 = fcmp ord double %0, 0.000000e+00
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/edge_drawing.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000042(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ogt double %0, %1
+  %3 = fcmp olt double %0, 0x3FBACEE9F37BEBD5
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }

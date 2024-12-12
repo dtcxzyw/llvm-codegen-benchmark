@@ -23,8 +23,8 @@ func0000000000000015:                   # @func0000000000000015
 	vptestnmb	.LCPI0_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2   # ymm2 = [2,2,2,2,2,2,2,2]
 	vpbroadcastd	.LCPI0_2(%rip), %ymm2 {%k1} # ymm2 {%k1} = [3,3,3,3,3,3,3,3]
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.byte	3                               # 0x3

@@ -1,9 +1,29 @@
-func0000000000000031:                   # @func0000000000000031
+func00000000000000d4:                   # @func00000000000000d4
+	li	a2, 2047
+	slli	a2, a2, 52
+	and	a1, a1, a2
+	lui	a2, 27392
+	addi	a2, a2, 1
+	slli	a2, a2, 32
+	sltu	a1, a1, a2
+	or	a0, a0, a1
+	ret
+func0000000000000058:                   # @func0000000000000058
+	lui	a2, 524288
+	addi	a2, a2, -1
+	slli	a2, a2, 32
+	and	a1, a1, a2
+	li	a2, 2047
+	slli	a2, a2, 52
+	sltu	a1, a2, a1
+	or	a0, a0, a1
+	ret
+func0000000000000061:                   # @func0000000000000061
 	not	a1, a1
 	bexti	a1, a1, 52
 	or	a0, a0, a1
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	lui	a2, 4096
 	addi	a2, a2, -1
 	slli	a2, a2, 32
@@ -11,11 +31,11 @@ func0000000000000061:                   # @func0000000000000061
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	bexti	a1, a1, 62
 	or	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	lui	a2, 524288
 	addi	a2, a2, -1
 	slli	a2, a2, 32
@@ -23,12 +43,10 @@ func000000000000002c:                   # @func000000000000002c
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
-	lui	a2, 524288
-	addi	a2, a2, -1
-	slli	a2, a2, 32
+func0000000000000074:                   # @func0000000000000074
+	li	a2, 1023
+	slli	a2, a2, 53
 	and	a1, a1, a2
-	bseti	a2, zero, 35
-	sltu	a1, a2, a1
+	seqz	a1, a1
 	or	a0, a0, a1
 	ret

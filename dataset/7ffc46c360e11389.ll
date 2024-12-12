@@ -1,5 +1,6 @@
 
-; 94 occurrences:
+; 93 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -66,7 +67,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -92,14 +92,13 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = trunc i32 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   %5 = zext i8 %4 to i32
   %6 = shl nuw nsw i32 %5, 16
   ret i32 %6

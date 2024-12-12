@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 7 occurrences:
 ; darktable/optimized/print_settings.c.ll
 ; git/optimized/mv.ll
 ; icu/optimized/uloc.ll
@@ -7,6 +7,17 @@
 ; php/optimized/pcre2_compile.ll
 ; redis/optimized/async.ll
 ; stockfish/optimized/tbprobe.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 32
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
+  ret ptr %5
+}
+
+; 37 occurrences:
 ; verilator/optimized/V3Active.cpp.ll
 ; verilator/optimized/V3ActiveTop.cpp.ll
 ; verilator/optimized/V3AssertPre.cpp.ll
@@ -45,38 +56,50 @@
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000007a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 32
-  %3 = getelementptr nusw i8, ptr %0, i64 1
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %2 = ashr exact i64 %1, 2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %4 = getelementptr nusw ptr, ptr %3, i64 %2
+  %5 = getelementptr nusw i8, ptr %4, i64 -40
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000043(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 16
   %3 = ashr exact i64 %1, 28
   %4 = getelementptr i8, ptr %2, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 12
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 12
   ret ptr %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; git/optimized/combine-diff.ll
+; icu/optimized/decNumber.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000070(ptr %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 32
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 32
+  %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -1
+  ret ptr %5
+}
+
+; 2 occurrences:
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000060(ptr %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 32
-  %3 = getelementptr nusw i8, ptr %0, i64 32
+  %2 = ashr exact i64 %1, 30
+  %3 = getelementptr nusw i8, ptr %0, i64 -4
   %4 = getelementptr i8, ptr %3, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 -1
+  %5 = getelementptr i8, ptr %4, i64 4
   ret ptr %5
 }
 
@@ -90,18 +113,6 @@ entry:
   %3 = getelementptr i8, ptr %0, i64 20
   %4 = getelementptr i8, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 1
-  ret ptr %5
-}
-
-; 1 occurrences:
-; icu/optimized/decNumber.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i64 %1) #0 {
-entry:
-  %2 = ashr exact i64 %1, 32
-  %3 = getelementptr nusw i8, ptr %0, i64 9
-  %4 = getelementptr i8, ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %4, i64 -1
   ret ptr %5
 }
 

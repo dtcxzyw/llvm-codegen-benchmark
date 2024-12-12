@@ -5,7 +5,7 @@ func000000000000000a:                   # @func000000000000000a
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpmovqd	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%xmm2, %xmm1, %k1
@@ -31,15 +31,11 @@ func0000000000000006:                   # @func0000000000000006
 	vzeroupper
 	retq
 .LCPI4_0:
-	.long	25                              # 0x19
-.LCPI4_1:
-	.long	1                               # 0x1
+	.long	8                               # 0x8
 func0000000000000008:                   # @func0000000000000008
 	vpmovqd	%ymm1, %xmm1
 	vpcmpnleud	.LCPI4_0(%rip){1to4}, %xmm1, %k1
-	vpbroadcastd	.LCPI4_1(%rip), %xmm1   # xmm1 = [1,1,1,1]
-	vmovdqa32	%xmm0, %xmm1 {%k1}
-	vmovdqa	%xmm1, %xmm0
+	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
 .LCPI5_0:

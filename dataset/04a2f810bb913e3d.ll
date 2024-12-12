@@ -25,15 +25,4 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
-; linux/optimized/head64.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i64 %0) #0 {
-entry:
-  %1 = lshr i64 %0, 30
-  %2 = trunc i64 %1 to i32
-  %3 = srem i32 %2, 512
-  ret i32 %3
-}
-
 attributes #0 = { nounwind }

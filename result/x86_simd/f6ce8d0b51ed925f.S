@@ -8,7 +8,7 @@ func0000000000000007:                   # @func0000000000000007
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
 	vpxord	.LCPI0_2(%rip){1to8}, %ymm1, %ymm2 {%k1}
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.byte	255                             # 0xff

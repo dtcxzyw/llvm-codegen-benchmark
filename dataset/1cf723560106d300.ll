@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 35 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
@@ -33,11 +33,13 @@
 ; slurm/optimized/cons_helpers.ll
 ; slurm/optimized/node_conf.ll
 ; slurm/optimized/slurmd.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -66,12 +68,12 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -91,6 +93,7 @@ entry:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/MachineTraceMetrics.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; nuttx/optimized/losetup.c.ll
 ; opencv/optimized/freak.cpp.ll
@@ -111,7 +114,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -135,8 +138,8 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul nuw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul nuw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -149,19 +152,23 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = mul i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 1 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -175,8 +182,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -204,8 +211,8 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -222,16 +229,15 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; cmake/optimized/cmELF.cxx.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; linux/optimized/intel_overlay.ll
-; linux/optimized/rsmisc.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; openusd/optimized/intrapred.c.ll
 ; slurm/optimized/cred.ll
@@ -241,7 +247,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -253,7 +259,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -265,7 +271,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul nuw i32 %3, %1
+  %4 = mul nuw i32 %1, %3
   %5 = add nuw i32 %4, %0
   ret i32 %5
 }
@@ -279,7 +285,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -290,7 +296,7 @@ entry:
 define i32 @func0000000000000017(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -301,7 +307,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -312,8 +318,8 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add nuw i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -323,8 +329,8 @@ entry:
 define i32 @func000000000000001e(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add nuw i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -334,7 +340,7 @@ entry:
 define i32 @func000000000000001d(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }

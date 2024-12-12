@@ -1,12 +1,11 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; cpython/optimized/xmltok.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/intel_dp_aux.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; openjdk/optimized/hb-ot-shaper-use.ll
 ; openjdk/optimized/hb-ucd.ll
 ; velox/optimized/LzoDecompressor.cpp.ll

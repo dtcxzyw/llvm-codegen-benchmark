@@ -1,4 +1,4 @@
-func000000000000298c:                   # @func000000000000298c
+func000000000000a30c:                   # @func000000000000a30c
 	cmpl	%edx, %edi
 	setg	%cl
 	cmpl	$-1073741822, %esi              # imm = 0xC0000002

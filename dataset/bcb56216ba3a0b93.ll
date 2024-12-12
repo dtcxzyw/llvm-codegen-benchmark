@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 21 occurrences:
 ; cmake/optimized/cmCPackLog.cxx.ll
 ; hwloc/optimized/lstopo-lstopo-draw.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
@@ -9,6 +9,7 @@
 ; linux/optimized/mmconfig-shared.ll
 ; linux/optimized/ptp_chardev.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; openssl/optimized/libcrypto-lib-pem_lib.ll
@@ -18,6 +19,8 @@
 ; wireshark/optimized/packet-opa-mad.c.ll
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/smt_case_split_queue.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:

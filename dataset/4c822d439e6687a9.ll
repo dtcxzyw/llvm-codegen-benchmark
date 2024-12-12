@@ -1,7 +1,9 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; ncnn/optimized/mat.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007a(i32 %0, i16 %1) #0 {
 entry:
@@ -13,9 +15,11 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; ncnn/optimized/mat.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003a(i32 %0, i16 %1) #0 {
 entry:

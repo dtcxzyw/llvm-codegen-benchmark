@@ -6,7 +6,7 @@ func0000000000000006:                   # @func0000000000000006
 	divq	%rcx
 	leaq	(%rdi,%rdx,4), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	incq	%rcx
@@ -14,7 +14,7 @@ func000000000000000e:                   # @func000000000000000e
 	divq	%rcx
 	leaq	(%rdi,%rdx,4), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	addq	$-69, %rcx

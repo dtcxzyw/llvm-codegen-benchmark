@@ -1,10 +1,8 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; clamav/optimized/htmlnorm.c.ll
-; git/optimized/bundle.ll
 ; linux/optimized/udp.ll
 ; llvm/optimized/LLParser.cpp.ll
-; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
@@ -15,7 +13,7 @@ entry:
   ret i1 %4
 }
 
-; 32 occurrences:
+; 30 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/acecCl.c.ll
 ; abc/optimized/sbdCore.c.ll
@@ -29,7 +27,6 @@ entry:
 ; linux/optimized/sys.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -37,7 +34,6 @@ entry:
 ; mitsuba3/optimized/func.cpp.ll
 ; ncnn/optimized/pooling.cpp.ll
 ; ncnn/optimized/pooling3d.cpp.ll
-; openblas/optimized/dstein.c.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/umatrix.cpp.ll
 ; openspiel/optimized/spiel.cc.ll
@@ -111,6 +107,18 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; git/optimized/bundle.ll
+; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, %0
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 %3, i1 false
+  ret i1 %4
+}
+
 ; 12 occurrences:
 ; icu/optimized/uchriter.ll
 ; libwebp/optimized/demux.c.ll
@@ -133,11 +141,21 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; opencv/optimized/fast_norm.cpp.ll
+; 1 occurrences:
 ; postgres/optimized/jsonfuncs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, %0
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 %3, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/fast_norm.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, %0
   %not. = xor i1 %1, true

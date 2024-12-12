@@ -1,3 +1,11 @@
+func000000000000007a:                   // @func000000000000007a
+// %bb.0:                               // %entry
+	mvn	w8, w2
+	add	x9, x0, x1
+	orr	x8, x8, #0xffffffffffffff00
+	add	x0, x8, x9
+	ret
+                                        // -- End function
 func000000000000006a:                   // @func000000000000006a
 // %bb.0:                               // %entry
 	mvn	w8, w2
@@ -6,15 +14,23 @@ func000000000000006a:                   // @func000000000000006a
 	add	x0, x8, x9
 	ret
                                         // -- End function
-func0000000000000042:                   // @func0000000000000042
+func000000000000006b:                   // @func000000000000006b
 // %bb.0:                               // %entry
-	mvn	w8, w2
-	add	x9, x0, x1
-	orr	x8, x8, #0xffffffffffffff00
-	add	x0, x8, x9
+	add	x8, x0, x1
+                                        // kill: def $w2 killed $w2 def $x2
+	sub	x8, x8, w2, uxtb
+	add	x0, x8, #1
 	ret
                                         // -- End function
 func0000000000000040:                   // @func0000000000000040
+// %bb.0:                               // %entry
+	add	x8, x0, x1
+                                        // kill: def $w2 killed $w2 def $x2
+	sub	x8, x8, w2, uxtb
+	add	x0, x8, #4
+	ret
+                                        // -- End function
+func000000000000007b:                   // @func000000000000007b
 // %bb.0:                               // %entry
 	add	x8, x0, x1
                                         // kill: def $w2 killed $w2 def $x2

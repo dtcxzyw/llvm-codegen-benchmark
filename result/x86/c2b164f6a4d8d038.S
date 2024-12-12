@@ -4,7 +4,7 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	shrl	$4, %esi
+	shrl	$8, %esi
 	cmpl	%edi, %esi
 	setb	%al
 	retq

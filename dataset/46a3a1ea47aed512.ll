@@ -1,5 +1,7 @@
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; wireshark/optimized/stats_tree.c.ll

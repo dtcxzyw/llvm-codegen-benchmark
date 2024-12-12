@@ -16,22 +16,22 @@ func0000000000000000:                   // @func0000000000000000
 	add	x0, x8, x1, lsl #5
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
+func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
 	add	x8, x0, w2, sxtw
 	add	x0, x8, x1, lsl #1
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
 	add	x8, x0, w2, sxtw
 	add	x0, x8, x1, lsl #2
 	ret
                                         // -- End function
-func0000000000000012:                   // @func0000000000000012
+func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	add	x8, x0, w2, sxtw
-	add	x0, x8, x1, lsl #2
+	add	x8, x0, w2, sxtw #2
+	add	x0, x8, x1, lsl #5
 	ret
                                         // -- End function
 func0000000000000038:                   // @func0000000000000038

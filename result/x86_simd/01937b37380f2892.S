@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	2                               # 0x2
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vptestmq	%ymm2, %ymm2, %k0
@@ -14,7 +14,7 @@ func0000000000000182:                   # @func0000000000000182
 	.quad	1048544                         # 0xfffe0
 .LCPI1_1:
 	.quad	32                              # 0x20
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqq	.LCPI1_0(%rip){1to4}, %ymm2, %k0
@@ -28,7 +28,7 @@ func0000000000000028:                   # @func0000000000000028
 	.quad	12                              # 0xc
 .LCPI2_1:
 	.quad	132                             # 0x84
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqq	.LCPI2_0(%rip){1to4}, %ymm2, %k0

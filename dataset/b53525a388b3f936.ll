@@ -1,9 +1,10 @@
 
-; 83 occurrences:
+; 84 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; abseil-cpp/optimized/time_zone_posix.cc.ll
 ; arrow/optimized/type.cc.ll
+; boost/optimized/static_string.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/str.c.ll
@@ -84,7 +85,7 @@
 ; wireshark/optimized/packet-osc.c.ll
 ; wireshark/optimized/packet-websocket.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = and i64 %2, 4294983169
@@ -99,7 +100,7 @@ entry:
 ; llvm/optimized/ARMTargetParser.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = and i64 %2, 16624895
@@ -111,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_codecs_kr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = and i64 %2, 3271754499
@@ -123,7 +124,7 @@ entry:
 ; 1 occurrences:
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = and i64 %2, 35465847073801215

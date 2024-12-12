@@ -30,6 +30,7 @@ entry:
 ; curl/optimized/libcurl_la-parsedate.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
+; freetype/optimized/sfnt.c.ll
 ; hyperscan/optimized/ng_region.cpp.ll
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
@@ -39,7 +40,6 @@ entry:
 ; ninja/optimized/graph.cc.ll
 ; opencv/optimized/tf_importer.cpp.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; wireshark/optimized/profile_dialog.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
@@ -73,64 +73,12 @@ entry:
 ; ninja/optimized/manifest_parser_test.cc.ll
 ; openssl/optimized/libdefault-lib-kmac_prov.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp ult i64 %3, 673
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
-}
-
-; 43 occurrences:
-; arrow/optimized/compressed.cc.ll
-; ceres/optimized/block_jacobi_preconditioner.cc.ll
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/gradient_checker.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
-; ceres/optimized/schur_complement_solver.cc.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; freetype/optimized/truetype.c.ll
-; g2o/optimized/edge_se2_lotsofxy.cpp.ll
-; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
-; g2o/optimized/edge_se2_twopointsxy.cpp.ll
-; g2o/optimized/edge_se3_calib.cpp.ll
-; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
-; g2o/optimized/edge_se3_plane_calib.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; git/optimized/index-pack.ll
-; graphviz/optimized/hedges.c.ll
-; icu/optimized/rbbi.ll
-; icu/optimized/rematch.ll
-; libquic/optimized/time_support.c.ll
-; lightgbm/optimized/linear_tree_learner.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/fit_rotations_l1.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
-; opencv/optimized/convolution.cpp.ll
-; opencv/optimized/convolution_layer.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
-; redis/optimized/ziplist.ll
-; slurm/optimized/power_save.ll
-; tinympc/optimized/tiny_api.cpp.ll
-; yosys/optimized/simplify.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp sgt i64 %1, %2
-  %4 = select i1 %3, i1 %0, i1 false
-  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -139,7 +87,7 @@ entry:
 ; git/optimized/index-pack.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %1, %2
   %4 = select i1 %3, i1 %0, i1 false
@@ -157,8 +105,8 @@ entry:
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
 ; zstd/optimized/huf_decompress.c.ll
-; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -172,7 +120,7 @@ entry:
 ; bdwgc/optimized/gc.c.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 1
@@ -180,7 +128,8 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 21 occurrences:
+; boost/optimized/test_codecvt.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -388,12 +337,63 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = icmp ult i64 %3, 2
+  %4 = icmp samesign ult i64 %3, 2
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
+}
+
+; 42 occurrences:
+; arrow/optimized/compressed.cc.ll
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; freetype/optimized/truetype.c.ll
+; g2o/optimized/edge_se2_lotsofxy.cpp.ll
+; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
+; g2o/optimized/edge_se2_twopointsxy.cpp.ll
+; g2o/optimized/edge_se3_calib.cpp.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; g2o/optimized/edge_se3_plane_calib.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; git/optimized/index-pack.ll
+; graphviz/optimized/hedges.c.ll
+; icu/optimized/rbbi.ll
+; icu/optimized/rematch.ll
+; libquic/optimized/time_support.c.ll
+; lightgbm/optimized/linear_tree_learner.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; nuklear/optimized/unity.c.ll
+; opencv/optimized/convolution.cpp.ll
+; opencv/optimized/convolution_layer.cpp.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; redis/optimized/ziplist.ll
+; slurm/optimized/power_save.ll
+; tinympc/optimized/tiny_api.cpp.ll
+; yosys/optimized/simplify.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp sgt i64 %1, %2
+  %4 = select i1 %3, i1 %0, i1 false
+  ret i1 %4
 }
 
 ; 5 occurrences:
@@ -403,7 +403,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = icmp ugt i64 %3, 7
@@ -416,7 +416,7 @@ entry:
 ; llvm/optimized/CGNonTrivialStruct.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp slt i64 %3, 16
@@ -429,7 +429,7 @@ entry:
 ; wasmtime-rs/optimized/4xu6ecb82tc69emg.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = icmp ult i64 %3, 10
@@ -454,7 +454,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = select i1 %3, i1 %0, i1 false

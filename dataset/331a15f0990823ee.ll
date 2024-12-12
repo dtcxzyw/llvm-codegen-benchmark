@@ -16,7 +16,7 @@ entry:
 ; qemu/optimized/fdt_rw.c.ll
 ; spike/optimized/fdt_rw.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ult i32 %3, %0
@@ -28,7 +28,7 @@ entry:
 ; libpng/optimized/pngrutil.c.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, %0
@@ -41,22 +41,10 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000070(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp ugt i32 %3, %0
-  %5 = zext i1 %4 to i32
-  ret i32 %5
-}
-
-; 2 occurrences:
-; abc/optimized/mvcCompare.c.ll
-; llvm/optimized/RegAllocGreedy.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or i32 %1, %2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ugt i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -68,6 +56,17 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp ult i32 %3, %0
+  %5 = zext i1 %4 to i32
+  ret i32 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/RegAllocGreedy.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = icmp ugt i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

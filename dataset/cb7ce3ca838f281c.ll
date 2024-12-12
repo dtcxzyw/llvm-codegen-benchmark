@@ -7,24 +7,12 @@
 ; nix/optimized/fromTOML.ll
 ; wireshark/optimized/packet-smpp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = mul nsw i32 %0, 9
   %4 = add nsw i32 %3, %2
   %5 = icmp slt i32 %4, 0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; libquic/optimized/prtime.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i8 %1) #0 {
-entry:
-  %2 = sext i8 %1 to i32
-  %3 = mul nsw i32 %0, 10
-  %4 = add nsw i32 %3, %2
-  %5 = icmp ult i32 %4, 628
   ret i1 %5
 }
 

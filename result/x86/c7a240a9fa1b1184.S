@@ -12,7 +12,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$64, %edx
 	setb	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	addl	%edx, %edx
 	testb	$1, %dil
 	cmovnel	%esi, %edx
@@ -33,7 +33,7 @@ func000000000000000c:                   # @func000000000000000c
 	testl	%edx, %edx
 	setne	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addl	%edx, %edx
 	testb	$1, %dil
 	cmovnel	%esi, %edx

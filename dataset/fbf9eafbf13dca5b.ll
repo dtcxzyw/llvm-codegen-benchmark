@@ -1,5 +1,12 @@
 
-; 6 occurrences:
+; 13 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; git/optimized/log.ll
 ; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_CommonUtils.ll

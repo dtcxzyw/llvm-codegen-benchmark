@@ -1,5 +1,5 @@
 
-; 180 occurrences:
+; 173 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -47,15 +47,12 @@
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/g4x_dp.ll
-; linux/optimized/ht.ll
 ; linux/optimized/i8042.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/intel-gtt.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dp_link_training.ll
 ; linux/optimized/intel_dsi_vbt.ll
-; linux/optimized/intel_step.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/mcast.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/pcc.ll
@@ -91,7 +88,6 @@
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/mbprint.ll
-; postgres/optimized/rangetypes_gist.ll
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
@@ -142,7 +138,6 @@
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-igmp.c.ll
 ; wireshark/optimized/packet-ipmi-se.c.ll
-; wireshark/optimized/packet-ipmi-trace.c.ll
 ; wireshark/optimized/packet-isis-lsp.c.ll
 ; wireshark/optimized/packet-iso14443.c.ll
 ; wireshark/optimized/packet-iuup.c.ll
@@ -167,8 +162,6 @@
 ; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
 ; wireshark/optimized/wimax_compact_ulmap_ie_decoder.c.ll
 ; wireshark/optimized/xdlc.c.ll
-; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
@@ -202,10 +195,9 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/bytestrie.ll
 ; nuttx/optimized/uart_16550.c.ll
-; postgres/optimized/brin_xlog.ll
 ; wireshark/optimized/packet-rdp.c.ll
 ; wireshark/optimized/packet-x25.c.ll
 ; Function Attrs: nounwind

@@ -10,6 +10,13 @@ func0000000000000003:                   # @func0000000000000003
 	leaq	(%rsi,%rdx,2), %rax
 	orq	%rdi, %rax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	movzbl	%dl, %ecx
+	shlq	$32, %rcx
+	movzbl	%sil, %eax
+	orq	%rcx, %rax
+	orq	%rdi, %rax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	shlq	$8, %rdx
 	movabsq	$9151454082924314368, %rcx      # imm = 0x7F007F007F007F00
@@ -34,14 +41,6 @@ func000000000000000e:                   # @func000000000000000e
 	andq	%rsi, %rax
 	orq	%rdx, %rax
 	orq	%rdi, %rax
-	retq
-func0000000000000000:                   # @func0000000000000000
-	movq	%rsi, %rax
-	andl	$31, %edx
-	shll	$16, %edx
-	andl	$-31745, %eax                   # imm = 0x83FF
-	orq	%rdi, %rax
-	orq	%rdx, %rax
 	retq
 func000000000000000b:                   # @func000000000000000b
 	movzbl	%dl, %ecx

@@ -11,12 +11,18 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
-	li	a0, 8
+	lui	a0, 3277
+	addi	a0, a0, -819
+	slli	a0, a0, 12
+	addi	a0, a0, -819
+	slli	a0, a0, 25
 	ret
 .LBB1_2:
-	addi	a1, a1, 13
-	lui	a0, 32
-	addiw	a0, a0, -8
+	lui	a0, 8192
+	addiw	a0, a0, -1
+	add	a0, a0, a1
+	lui	a1, 1015808
+	srli	a1, a1, 2
 	and	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002

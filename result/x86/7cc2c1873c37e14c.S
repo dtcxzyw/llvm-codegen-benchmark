@@ -6,26 +6,38 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000004:                   # @func0000000000000004
+	decq	%rdi
+	cmpq	%rdi, %rdx
+	seta	%al
+	notb	%sil
+	andb	%sil, %al
+	retq
+func0000000000000061:                   # @func0000000000000061
+	addq	$776, %rdi                      # imm = 0x308
+	cmpq	%rdi, %rdx
+	sete	%al
+	notb	%sil
+	andb	%sil, %al
+	retq
+func0000000000000068:                   # @func0000000000000068
+	incq	%rdi
+	cmpq	%rdi, %rdx
+	setb	%al
+	orb	%sil, %al
+	retq
+func0000000000000041:                   # @func0000000000000041
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
-	addq	$776, %rdi                      # imm = 0x308
+	addq	$-24, %rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
-	xorl	%eax, %eax
-	testb	$1, %sil
-	cmoveq	%rdx, %rax
+func0000000000000064:                   # @func0000000000000064
 	incq	%rdi
-	cmpq	%rax, %rdi
+	cmpq	%rdi, %rdx
 	seta	%al
-	retq
-func0000000000000024:                   # @func0000000000000024
-	incq	%rdi
-	cmpq	%rdx, %rdi
-	setb	%al
 	notb	%sil
 	andb	%sil, %al
 	retq

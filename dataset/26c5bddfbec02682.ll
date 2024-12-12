@@ -1,10 +1,7 @@
 
-; 6 occurrences:
+; 3 occurrences:
 ; graphviz/optimized/gv2gxl.c.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/Darwin.cpp.ll
-; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
-; llvm/optimized/Loads.cpp.ll
 ; mitsuba3/optimized/dielectric.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
@@ -15,7 +12,8 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -31,9 +29,8 @@ entry:
   ret i1 %4
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; git/optimized/grep.ll
-; linux/optimized/intel_display_debugfs.ll
 ; llvm/optimized/CGException.cpp.ll
 ; llvm/optimized/CommonArgs.cpp.ll
 ; llvm/optimized/Driver.cpp.ll

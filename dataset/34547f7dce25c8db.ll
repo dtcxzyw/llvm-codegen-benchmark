@@ -19,7 +19,6 @@
 ; linux/optimized/exec.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/ipv6_sockglue.ll
-; linux/optimized/mii.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/trace_output.ll
@@ -57,6 +56,7 @@
 ; ruby/optimized/transcode.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

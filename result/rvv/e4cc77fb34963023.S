@@ -31,16 +31,13 @@ func0000000000000002:                   # @func0000000000000002
 	vmflt.vf	v0, v8, fa5
 	ret
 .LCPI3_0:
-	.quad	0xbff921fb54442d18              # double -1.5707963267948966
-.LCPI3_1:
-	.quad	0x3d719799812dea11              # double 9.9999999999999998E-13
+	.quad	0x3f747ae147ae147b              # double 0.0050000000000000001
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	lui	a0, %hi(.LCPI3_1)
-	fld	fa4, %lo(.LCPI3_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmerge.vvm	v8, v16, v8, v0
 	vfadd.vf	v8, v8, fa5
-	vmfgt.vf	v0, v8, fa4
+	fli.d	fa5, 1.0
+	vmfgt.vf	v0, v8, fa5
 	ret

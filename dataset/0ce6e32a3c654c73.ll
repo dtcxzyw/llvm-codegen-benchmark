@@ -1,11 +1,12 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; libquic/optimized/poly1305_vec.c.ll
 ; libsodium/optimized/libsodium_la-poly1305_donna.ll
 ; linux/optimized/keyring.ll
 ; linux/optimized/vmscan.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
+; protobuf/optimized/descriptor_database.cc.ll
 ; wolfssl/optimized/poly1305.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
@@ -16,7 +17,8 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-poly1305_donna.ll
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll

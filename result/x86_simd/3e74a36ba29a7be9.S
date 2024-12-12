@@ -70,7 +70,7 @@
 	.byte	35                              # 0x23
 .LCPI0_5:
 	.byte	29                              # 0x1d
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastb	.LCPI0_4(%rip), %xmm1   # xmm1 = [35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35]
 	vmovdqu8	.LCPI0_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [34,34,34,34,34,34,34,34,u,u,u,u,u,u,u,u]

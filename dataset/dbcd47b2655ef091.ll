@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/X86FrameLowering.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/convertnode.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
@@ -11,7 +10,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = icmp sgt i32 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -59,7 +58,7 @@ entry:
 ; quantlib/optimized/ukraine.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -78,7 +77,7 @@ entry:
 ; quantlib/optimized/mexico.ll
 ; quantlib/optimized/sweden.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -101,25 +100,24 @@ entry:
 ; quantlib/optimized/turkey.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = icmp slt i32 %4, 3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; opencv/optimized/contours_link.cpp.ll
 ; quantlib/optimized/brazil.ll
 ; quantlib/optimized/china.ll
 ; quantlib/optimized/indonesia.ll
 ; quantlib/optimized/taiwan.ll
 ; quantlib/optimized/unitedstates.ll
-; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -131,12 +129,12 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = icmp eq i32 %4, 2
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -148,7 +146,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = icmp ugt i32 %4, 1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -157,10 +155,10 @@ entry:
 ; opencv/optimized/stereosgbm.cpp.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001aa(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = icmp sge i32 %3, %1
+  %4 = icmp sle i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -173,7 +171,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = icmp ult i32 %4, 240001
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -192,7 +190,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/t_stream.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000186(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub i32 %3, %1
@@ -204,7 +202,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -216,19 +214,19 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000010a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = icmp sgt i32 %4, -1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000018a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub i32 %3, %1
@@ -240,21 +238,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = icmp sge i32 %3, %1
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; tev/optimized/ImageViewer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000009a(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw i64 %2 to i32
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp sle i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }

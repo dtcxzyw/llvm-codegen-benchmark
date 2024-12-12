@@ -17,8 +17,8 @@ func0000000000000010:                   # @func0000000000000010
 func0000000000000008:                   # @func0000000000000008
 	addl	$-6, %edx
 	xorl	%eax, %eax
-	testb	$1, %sil
-	cmovneq	%rax, %rdi
 	cmpl	$-3, %edx
-	cmovaeq	%rdi, %rax
+	cmovbq	%rax, %rdi
+	testb	$1, %sil
+	cmoveq	%rdi, %rax
 	retq

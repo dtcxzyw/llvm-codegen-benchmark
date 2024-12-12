@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; jsonnet/optimized/desugarer.cpp.ll
 ; jsonnet/optimized/formatter.cpp.ll
 ; jsonnet/optimized/static_analysis.cpp.ll
@@ -9,13 +9,24 @@
 ; llvm/optimized/AArch64MCInstLower.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 2
-  %3 = and i32 %2, 4
-  %4 = select i1 %0, i32 4, i32 %3
+  %2 = shl nuw nsw i32 %1, 6
+  %3 = and i32 %2, 117440512
+  %4 = select i1 %0, i32 0, i32 %3
+  ret i32 %4
+}
+
+; 2 occurrences:
+; darktable/optimized/introspection_flip.c.ll
+; z3/optimized/bound_propagator.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 1
+  %3 = and i32 %2, 2
+  %4 = select i1 %0, i32 0, i32 %3
   ret i32 %4
 }
 
@@ -40,17 +51,6 @@ entry:
   %2 = shl nsw i32 %1, 10
   %3 = and i32 %2, 1024
   %4 = select i1 %0, i32 1024, i32 %3
-  ret i32 %4
-}
-
-; 1 occurrences:
-; z3/optimized/bound_propagator.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 3
-  %3 = and i32 %2, 24
-  %4 = select i1 %0, i32 0, i32 %3
   ret i32 %4
 }
 

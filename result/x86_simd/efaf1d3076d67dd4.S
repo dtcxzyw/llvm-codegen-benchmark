@@ -25,13 +25,13 @@ func0000000000000004:                   # @func0000000000000004
 .LCPI4_0:
 	.long	1                               # 0x1
 func000000000000000e:                   # @func000000000000000e
-	vcmpneqps	%ymm0, %ymm1, %ymm0
+	vcmpneqps	%ymm1, %ymm0, %ymm0
 	vandps	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI5_0:
 	.long	1                               # 0x1
 func0000000000000010:                   # @func0000000000000010
-	vcmpeqps	%ymm0, %ymm1, %ymm0
+	vcmpeqps	%ymm1, %ymm0, %ymm0
 	vandps	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 func0000000000000016:                   # @func0000000000000016

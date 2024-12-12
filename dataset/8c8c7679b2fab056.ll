@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.142.2623537" = type { %struct.BEInt.143.2623538 }
-%struct.BEInt.143.2623538 = type { i8 }
+%"struct.OT::IntType.142.2736967" = type { %struct.BEInt.143.2736968 }
+%struct.BEInt.143.2736968 = type { i8 }
 
 ; 2 occurrences:
 ; postgres/optimized/multirangetypes.ll
@@ -26,13 +26,13 @@ entry:
 ; hyperscan/optimized/stream.c.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001da(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000001ff(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %1, i64 14
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 14
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -44,13 +44,13 @@ entry:
 ; hyperscan/optimized/tamarama.c.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001ca(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000001ef(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %1, i64 14
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 14
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw %"struct.OT::IntType.142.2623537", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"struct.OT::IntType.142.2736967", ptr %5, i64 %6
   ret ptr %7
 }
 

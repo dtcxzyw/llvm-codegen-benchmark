@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	613566757                       # 0x24924925
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vpshufd	$245, %xmm1, %xmm2              # xmm2 = xmm1[1,1,3,3]
 	vpbroadcastd	.LCPI0_0(%rip), %xmm3   # xmm3 = [613566757,613566757,613566757,613566757]
 	vpmuludq	%xmm3, %xmm2, %xmm2
@@ -17,7 +17,7 @@ func0000000000000071:                   # @func0000000000000071
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpcmpeqq	%ymm0, %ymm1, %k0
+	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -27,7 +27,7 @@ func0000000000000071:                   # @func0000000000000071
 	.long	19071                           # 0x4a7f
 .LCPI1_2:
 	.long	6203                            # 0x183b
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	vpshufd	$245, %xmm1, %xmm2              # xmm2 = xmm1[1,1,3,3]
 	vpbroadcastd	.LCPI1_0(%rip), %xmm3   # xmm3 = [922457451,922457451,922457451,922457451]
 	vpmuludq	%xmm3, %xmm2, %xmm2
@@ -39,7 +39,7 @@ func0000000000000078:                   # @func0000000000000078
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpaddd	.LCPI1_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpcmpltuq	%ymm0, %ymm1, %k0
+	vpcmpnleuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

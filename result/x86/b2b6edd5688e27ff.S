@@ -7,8 +7,8 @@ func000000000000000f:                   # @func000000000000000f
 	retq
 func0000000000000007:                   # @func0000000000000007
 	subq	%rdx, %rsi
-	sarq	$3, %rsi
-	incl	%edi
+	sarq	$2, %rsi
+	addl	$2, %edi
 	movslq	%edi, %rax
 	subq	%rsi, %rax
 	retq

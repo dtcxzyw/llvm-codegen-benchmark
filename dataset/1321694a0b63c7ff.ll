@@ -26,7 +26,7 @@ define double @func0000000000000007(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fpext float %4 to double
   ret double %5
 }
@@ -38,7 +38,7 @@ define double @func0000000000000005(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fpext float %4 to double
   ret double %5
 }

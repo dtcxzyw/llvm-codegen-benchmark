@@ -1,11 +1,11 @@
 
 ; 9 occurrences:
+; boost/optimized/parser_utils.ll
 ; clamav/optimized/pdf.c.ll
 ; cpython/optimized/_codecs_jp.ll
 ; hermes/optimized/JSLexer.cpp.ll
 ; openusd/optimized/decodemv.c.ll
 ; php/optimized/var_unserializer.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/fe-exec.ll
 ; verilator/optimized/V3String.cpp.ll
 ; yosys/optimized/fstapi.ll
@@ -18,7 +18,8 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/parser_utils.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; yosys/optimized/verilog_lexer.ll
 ; Function Attrs: nounwind

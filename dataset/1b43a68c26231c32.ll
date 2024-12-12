@@ -15,7 +15,7 @@
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -42,7 +42,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -55,12 +55,12 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/interpolant.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 24
-  %6 = mul nsw i64 %5, %0
+  %6 = mul nsw i64 %0, %5
   %7 = icmp ugt i64 %6, 1152921504606846975
   ret i1 %7
 }
@@ -68,12 +68,12 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/interpolant.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 24
-  %6 = mul nsw i64 %5, %0
+  %6 = mul nsw i64 %0, %5
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }

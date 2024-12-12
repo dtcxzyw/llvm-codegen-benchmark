@@ -8,7 +8,7 @@
 define i1 @func0000000000000008(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
@@ -17,10 +17,10 @@ entry:
 ; qemu/optimized/hw_vfio_spapr.c.ll
 ; qemu/optimized/system_memory.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -33,30 +33,32 @@ entry:
 ; cpython/optimized/sixstep.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nsw i128 %1 to i64
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 
@@ -65,10 +67,10 @@ entry:
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -80,7 +82,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 

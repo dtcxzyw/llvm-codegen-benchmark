@@ -1,20 +1,20 @@
 
-%"class.hermes::vm::GCHermesValueBase.2882331" = type { %"class.hermes::vm::HermesValue.2882332" }
-%"class.hermes::vm::HermesValue.2882332" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3076855" = type { %"class.hermes::vm::HermesValue.3076856" }
+%"class.hermes::vm::HermesValue.3076856" = type { i64 }
 
 ; 1 occurrences:
 ; folly/optimized/TimeUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000601(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 130
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 130
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = getelementptr i8, ptr %1, i64 130
   %6 = icmp eq ptr %4, %5
   ret i1 %6
 }
 
-; 67 occurrences:
+; 80 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/q4aavw6wh20so0r.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -82,6 +82,19 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmtime-rs/optimized/2sf3ranrrf5pn6ms.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3u7utqtgdovrxzbad3tfrps40.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/bwf7odsfkes1o9vw37iz67e4b.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, ptr %1, ptr %2) #0 {
 entry:
@@ -92,39 +105,28 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
-; assimp/optimized/XFileParser.cpp.ll
-; clamav/optimized/dns.c.ll
-; lz4/optimized/lz4hc.c.ll
-; openusd/optimized/lz4.cpp.ll
+; 1 occurrences:
 ; php/optimized/url_scanner_ex.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a8(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000007c8(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
   %4 = getelementptr nusw i8, ptr %3, i64 %0
-  %5 = getelementptr nusw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
 }
 
-; 10 occurrences:
-; cmake/optimized/zstd_double_fast.c.ll
-; cmake/optimized/zstd_lazy.c.ll
+; 3 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; lief/optimized/ssl_tls.c.ll
-; llvm/optimized/LiteralSupport.cpp.ll
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
 ; php/optimized/pcre2_jit_compile.ll
-; zstd/optimized/zstd_double_fast.c.ll
-; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a4(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000007e4(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 136
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
-  %5 = getelementptr nusw i8, ptr %1, i64 3
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 136
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 3
   %6 = icmp ult ptr %4, %5
   ret i1 %6
 }
@@ -133,10 +135,10 @@ entry:
 ; hdf5/optimized/H5Oshared.c.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000228(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000668(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   %5 = getelementptr i8, ptr %1, i64 -32
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
@@ -145,10 +147,10 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000221(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000661(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   %5 = getelementptr i8, ptr %1, i64 -32
   %6 = icmp eq ptr %4, %5
   ret i1 %6
@@ -158,25 +160,218 @@ entry:
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000188(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 10
   %4 = getelementptr i16, ptr %3, i64 %0
-  %5 = getelementptr nusw i8, ptr %1, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 8
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
 }
 
-; 86 occurrences:
+; 1 occurrences:
+; assimp/optimized/XFileParser.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000007e8(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 2
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i1 @func00000000000005e4(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -95
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 32
+  %6 = icmp ult ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define i1 @func00000000000007e9(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 2
+  %6 = icmp uge ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; hermes/optimized/ArrayStorage.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000761(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
+  %4 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076855", ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %1, i64 -8
+  %6 = icmp eq ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; yosys/optimized/lz4.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000168(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %1, i64 -6
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/LiteralSupport.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000005c4(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %6 = icmp ult ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/LiteralSupport.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000005c1(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %6 = icmp eq ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openusd/optimized/lz4.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000768(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %1, i64 -32
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-wcp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000184(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 -1
+  %4 = getelementptr i8, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %6 = icmp ult ptr %4, %5
+  ret i1 %6
+}
+
+; 4 occurrences:
+; cmake/optimized/zstd_double_fast.c.ll
+; cmake/optimized/zstd_lazy.c.ll
+; zstd/optimized/zstd_double_fast.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000744(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %1, i64 -7
+  %6 = icmp ult ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; linux/optimized/fast_commit.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 4
+  %4 = getelementptr i8, ptr %3, i64 %0
+  %5 = getelementptr i8, ptr %1, i64 -4
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 5 occurrences:
 ; cvc5/optimized/function_const.cpp.ll
 ; cvc5/optimized/quantifiers_attributes.cpp.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/theory_ff_rewriter.cpp.ll
 ; cvc5/optimized/theory_uf_rewriter.cpp.ll
-; hermes/optimized/ArrayStorage.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000007e1(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %6 = icmp eq ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; lz4/optimized/lz4hc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000568(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %1, i64 -5
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; lz4/optimized/lz4hc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000548(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -2
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %1, i64 -5
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; lz4/optimized/lz4hc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000108(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 1
+  %4 = getelementptr i8, ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %1, i64 -8
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000541(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -6
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %1, i64 -6
+  %6 = icmp eq ptr %4, %5
+  ret i1 %6
+}
+
+; 76 occurrences:
 ; meshlab/optimized/GLLogStream.cpp.ll
 ; meshlab/optimized/action_searcher.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -228,7 +423,6 @@ entry:
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_Init.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
@@ -255,48 +449,12 @@ entry:
 ; meshlab/optimized/shaderDialog.cpp.ll
 ; meshlab/optimized/transferfunction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000741(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
-  %4 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.2882331", ptr %3, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = getelementptr nusw ptr, ptr %3, i64 %0
   %5 = getelementptr nusw i8, ptr %1, i64 -8
   %6 = icmp eq ptr %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; yosys/optimized/lz4.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %2, i64 2
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
-  %5 = getelementptr nusw i8, ptr %1, i64 -6
-  %6 = icmp ugt ptr %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-wcp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %2, i64 -1
-  %4 = getelementptr i8, ptr %3, i64 %0
-  %5 = getelementptr nusw i8, ptr %1, i64 8
-  %6 = icmp ult ptr %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/fast_commit.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %2, i64 4
-  %4 = getelementptr i8, ptr %3, i64 %0
-  %5 = getelementptr i8, ptr %1, i64 -4
-  %6 = icmp ugt ptr %4, %5
   ret i1 %6
 }
 

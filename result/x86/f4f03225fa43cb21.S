@@ -34,12 +34,6 @@ func0000000000000022:                   # @func0000000000000022
 	xorl	%edx, %edx
 	divq	%rcx
 	retq
-func000000000000003b:                   # @func000000000000003b
-	movl	%edx, %ecx
-	leaq	(%rdi,%rsi), %rax
-	xorl	%edx, %edx
-	divq	%rcx
-	retq
 func0000000000000028:                   # @func0000000000000028
 	movl	%edx, %ecx
 	leaq	(%rdi,%rsi), %rax

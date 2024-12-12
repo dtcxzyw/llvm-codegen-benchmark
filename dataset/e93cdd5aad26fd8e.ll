@@ -24,17 +24,6 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; linux/optimized/scsicam.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
-entry:
-  %2 = udiv i32 %0, %1
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, 1
-  ret i64 %4
-}
-
 ; 3 occurrences:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; linux/optimized/amd.ll

@@ -71,34 +71,4 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
-; assimp/optimized/zip.c.ll
-; hermes/optimized/zip.c.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/miniz.c.ll
-; openjdk/optimized/check_code.ll
-; openjdk/optimized/sharedRuntimeTrans.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 65504
-  %4 = icmp ne i32 %3, 0
-  %5 = and i1 %0, %1
-  %6 = or i1 %4, %5
-  ret i1 %6
-}
-
-; 2 occurrences:
-; icu/optimized/collationfastlatinbuilder.ll
-; slurm/optimized/job_mgr.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 255
-  %4 = icmp ult i32 %3, 5
-  %5 = and i1 %0, %1
-  %6 = or i1 %4, %5
-  ret i1 %6
-}
-
 attributes #0 = { nounwind }

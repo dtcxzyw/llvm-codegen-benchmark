@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; cvc5/optimized/attempt_solution_simplex.cpp.ll
 ; cvc5/optimized/congruence_manager.cpp.ll
 ; cvc5/optimized/constraint.cpp.ll
@@ -20,7 +20,6 @@
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; qemu/optimized/plugins_core.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; velox/optimized/JsonType.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
@@ -29,7 +28,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
@@ -46,7 +45,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
@@ -60,7 +59,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 

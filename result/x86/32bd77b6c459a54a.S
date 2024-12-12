@@ -22,9 +22,10 @@ func0000000000000000:                   # @func0000000000000000
 	orq	%rcx, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	movq	%rsi, %rax
-	andl	$7, %edx
-	orq	%rdi, %rdx
-	andl	$-512, %eax                     # imm = 0xFE00
-	orq	%rdx, %rax
+	movabsq	$-4503599627370496, %rcx        # imm = 0xFFF0000000000000
+	andq	%rdx, %rcx
+	orq	%rdi, %rcx
+	movabsq	$4502500115742720, %rax         # imm = 0xFFF0000000000
+	andq	%rsi, %rax
+	orq	%rcx, %rax
 	retq

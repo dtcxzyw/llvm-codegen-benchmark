@@ -34,7 +34,7 @@ define i64 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add i32 %0, %1
   %.tr = trunc i32 %3 to i8
-  %.narrow = add i8 %.tr, %2
+  %.narrow = add i8 %2, %.tr
   %4 = zext i8 %.narrow to i64
   ret i64 %4
 }

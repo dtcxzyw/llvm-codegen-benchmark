@@ -1,4 +1,4 @@
-func0000000000000154:                   # @func0000000000000154
+func00000000000002b4:                   # @func00000000000002b4
 	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
@@ -8,7 +8,7 @@ func0000000000000154:                   # @func0000000000000154
 	subw	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
@@ -19,7 +19,7 @@ func0000000000000151:                   # @func0000000000000151
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000158:                   # @func0000000000000158
+func00000000000002b8:                   # @func00000000000002b8
 	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
@@ -29,7 +29,7 @@ func0000000000000158:                   # @func0000000000000158
 	subw	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000003f4:                   # @func00000000000003f4
 	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
@@ -38,6 +38,17 @@ func00000000000001f4:                   # @func00000000000001f4
 	xor	a0, a0, a2
 	subw	a0, a0, a2
 	sltu	a0, a1, a0
+	ret
+func00000000000003f9:                   # @func00000000000003f9
+	subw	a1, a1, a2
+	sraiw	a2, a1, 31
+	xor	a1, a1, a2
+	subw	a1, a1, a2
+	sraiw	a2, a0, 31
+	xor	a0, a0, a2
+	subw	a0, a0, a2
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	subw	a1, a1, a2
@@ -49,7 +60,7 @@ func0000000000000006:                   # @func0000000000000006
 	subw	a0, a0, a2
 	slt	a0, a1, a0
 	ret
-func000000000000011a:                   # @func000000000000011a
+func000000000000022a:                   # @func000000000000022a
 	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2

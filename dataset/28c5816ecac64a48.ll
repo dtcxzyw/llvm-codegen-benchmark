@@ -1,11 +1,10 @@
 
-; 258 occurrences:
+; 257 occurrences:
 ; cmake/optimized/byte_order.c.ll
 ; eastl/optimized/EAMemory.cpp.ll
 ; libpng/optimized/pngrutil.c.ll
 ; linux/optimized/drm_cache.ll
 ; linux/optimized/fork.ll
-; linux/optimized/i915_memcpy.ll
 ; linux/optimized/if.ll
 ; linux/optimized/tlb.ll
 ; llvm/optimized/CGClass.cpp.ll
@@ -274,7 +273,7 @@ entry:
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/barrierSetC2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = or i64 %3, %0
@@ -305,7 +304,7 @@ entry:
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = or disjoint i64 %3, %0
@@ -317,7 +316,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/fork.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = or i64 %3, %0
@@ -329,7 +328,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = or disjoint i64 %3, %0

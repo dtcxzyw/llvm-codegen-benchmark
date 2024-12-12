@@ -1,16 +1,10 @@
-func0000000000000038:                   # @func0000000000000038
-	andl	$63, %edx
-	leal	1(%rdx), %eax
-	cmpl	$65, %esi
-	cmovael	%edi, %eax
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movzbl	%dl, %eax
 	addl	$-111, %eax
 	testl	%esi, %esi
 	cmovel	%edi, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andl	$252, %edx
 	leal	20(%rdx), %eax
 	testl	%esi, %esi

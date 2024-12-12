@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 52 occurrences:
 ; abc/optimized/inflate.c.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; brotli/optimized/backward_references.c.ll
@@ -47,6 +47,10 @@
 ; wireshark/optimized/packet-lldp.c.ll
 ; wolfssl/optimized/poly1305.c.ll
 ; z3/optimized/sat_clause.cpp.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {

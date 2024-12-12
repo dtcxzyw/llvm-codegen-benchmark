@@ -20,10 +20,3 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rax, %rdx
 	vcvtsi2sd	%rdx, %xmm0, %xmm0
 	retq
-func0000000000000001:                   # @func0000000000000001
-	subq	%rsi, %rdi
-	sarq	$4, %rdi
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
-	imulq	%rdi, %rax
-	vcvtsi2sd	%rax, %xmm0, %xmm0
-	retq

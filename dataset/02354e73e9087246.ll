@@ -44,16 +44,15 @@ define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 13
   %3 = icmp eq i32 %2, 5
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; cpython/optimized/sre.ll
 ; git/optimized/repack.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
-; openssl/optimized/libdefault-lib-decode_msblob2key.ll
 ; redis/optimized/t_string.ll
 ; ruby/optimized/sprintf.ll
 ; xgboost/optimized/charconv.cc.ll
@@ -62,22 +61,7 @@ define i32 @func0000000000000030(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %0
-  %5 = zext i1 %4 to i32
-  ret i32 %5
-}
-
-; 4 occurrences:
-; postgres/optimized/d2s.ll
-; postgres/optimized/d2s_shlib.ll
-; postgres/optimized/d2s_srv.ll
-; xgboost/optimized/charconv.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i1 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 2046
-  %3 = icmp eq i32 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

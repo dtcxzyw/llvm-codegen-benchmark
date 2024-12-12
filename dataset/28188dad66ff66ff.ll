@@ -12,7 +12,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = mul nuw i64 %2, 2246822535
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -27,7 +27,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = mul nuw i64 %2, 2654435761
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -55,12 +55,13 @@ define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = mul nuw nsw i64 %2, 668265295
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/index.c.ll
 ; cpython/optimized/_collectionsmodule.ll
 ; eastl/optimized/Int128_t.cpp.ll
@@ -87,7 +88,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 21
   %3 = mul nsw i64 %2, -683901
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -106,7 +107,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 21
   %3 = mul nuw nsw i64 %2, 470296
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -130,7 +131,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 51
   %3 = mul nsw i64 %2, -19
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -142,7 +143,7 @@ define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 51
   %3 = mul nuw nsw i64 %2, -19
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -164,7 +165,7 @@ define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = mul nuw i64 %2, 3
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -186,7 +187,7 @@ define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = mul nuw nsw i64 %2, 789
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -197,7 +198,7 @@ define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 16
   %3 = mul nuw nsw i64 %2, 3
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 

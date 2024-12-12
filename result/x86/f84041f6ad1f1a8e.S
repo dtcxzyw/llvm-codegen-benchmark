@@ -9,19 +9,19 @@ func0000000000000004:                   # @func0000000000000004
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	addl	$-5, %esi
 	cmpl	$-2, %esi
 	setb	%al
 	orb	%dil, %al
 	retq
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	cmpl	$1, %esi
 	sete	%al
 	notb	%dil
 	andb	%dil, %al
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	addl	$-56, %esi
 	cmpl	$-65, %esi
 	setb	%al

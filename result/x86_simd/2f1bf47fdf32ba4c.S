@@ -30,7 +30,7 @@
 	.byte	16                              # 0x10
 .LCPI0_4:
 	.zero	4,48
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vgf2p8affineqb	$0, .LCPI0_3(%rip){1to2}, %xmm1, %xmm2
 	vpord	.LCPI0_4(%rip){1to4}, %xmm2, %xmm2
 	vpcmpltub	.LCPI0_2(%rip), %xmm1, %k1

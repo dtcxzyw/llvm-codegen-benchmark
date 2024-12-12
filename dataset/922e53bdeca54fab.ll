@@ -25,9 +25,10 @@ entry:
   ret i16 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/intel_color.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:

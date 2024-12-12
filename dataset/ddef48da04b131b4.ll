@@ -6,7 +6,7 @@
 define i8 @func0000000000000005(i1 %0, i8 %1) #0 {
 entry:
   %.v = select i1 %0, i8 -52, i8 -78
-  %2 = add nsw i8 %.v, %1
+  %2 = add nsw i8 %1, %.v
   ret i8 %2
 }
 
@@ -16,7 +16,7 @@ entry:
 define i8 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
   %.v = select i1 %0, i8 -87, i8 -48
-  %2 = add i8 %.v, %1
+  %2 = add i8 %1, %.v
   ret i8 %2
 }
 
@@ -26,7 +26,7 @@ entry:
 define i8 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
   %.v = select i1 %0, i8 66, i8 65
-  %2 = add i8 %.v, %1
+  %2 = add i8 %1, %.v
   ret i8 %2
 }
 
@@ -36,7 +36,7 @@ entry:
 define i8 @func0000000000000007(i1 %0, i8 %1) #0 {
 entry:
   %.v = select i1 %0, i8 1, i8 -7
-  %2 = add nsw i8 %.v, %1
+  %2 = add nsw i8 %1, %.v
   ret i8 %2
 }
 
@@ -48,7 +48,7 @@ entry:
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %.v = select i1 %0, i8 1, i8 -2
-  %2 = add i8 %.v, %1
+  %2 = add i8 %1, %.v
   ret i8 %2
 }
 

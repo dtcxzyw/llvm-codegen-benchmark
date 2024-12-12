@@ -30,12 +30,12 @@ func000000000000002b:                   # @func000000000000002b
 	vmv.v.i	v12, 8
 	li	a0, 136
 	vmerge.vxm	v12, v12, a0, v0
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	li	a0, 32
 	vmv1r.v	v0, v11
 	vor.vx	v8, v8, a0, v0.t
 	ret
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v11, v0
 	lui	a0, 32768
@@ -46,7 +46,7 @@ func0000000000000023:                   # @func0000000000000023
 	li	a0, 264
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vmerge.vxm	v12, v12, a0, v0
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	li	a0, 64
 	vmv1r.v	v0, v11
 	vor.vx	v8, v8, a0, v0.t

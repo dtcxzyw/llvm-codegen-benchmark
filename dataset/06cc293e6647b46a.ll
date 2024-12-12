@@ -1,5 +1,5 @@
 
-; 357 occurrences:
+; 356 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cpython/optimized/setobject.ll
@@ -233,7 +233,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -361,7 +360,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   %5 = mul i64 %4, -4658895280553007687
   ret i64 %5
 }

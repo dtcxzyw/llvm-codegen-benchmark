@@ -3,7 +3,7 @@
 func00000000000000f0:                   # @func00000000000000f0
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$2, %xmm1, %xmm2
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmulld	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
@@ -35,7 +35,7 @@ func00000000000000c0:                   # @func00000000000000c0
 func00000000000000b0:                   # @func00000000000000b0
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$2, %xmm1, %xmm2
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmulld	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper

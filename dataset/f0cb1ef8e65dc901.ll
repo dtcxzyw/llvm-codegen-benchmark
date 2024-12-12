@@ -8,7 +8,7 @@
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0) #0 {
+define i1 @func0000000000000084(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl i64 8, %1
@@ -26,7 +26,7 @@ entry:
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0) #0 {
+define i1 @func0000000000000088(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl i64 8, %1

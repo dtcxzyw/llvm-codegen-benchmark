@@ -10,7 +10,7 @@
 ; openusd/optimized/delegate.cpp.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 4
   %4 = icmp ne i16 %3, 0
@@ -26,7 +26,7 @@ entry:
 ; llvm/optimized/IfConversion.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 64
   %4 = icmp eq i16 %3, 0

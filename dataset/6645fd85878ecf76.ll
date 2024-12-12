@@ -8,7 +8,7 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = add i64 %3, %0
   %5 = trunc i64 %4 to i32
   ret i32 %5
@@ -26,6 +26,30 @@ define i32 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = add i64 %3, %1
+  %5 = add i64 %4, %0
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
+}
+
+; 1 occurrences:
+; boost/optimized/attribute_name.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967288
+  %4 = add i64 %1, %3
+  %5 = add i64 %4, %0
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
+}
+
+; 1 occurrences:
+; linux/optimized/vmcore.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967292
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6

@@ -1,5 +1,5 @@
 
-; 767 occurrences:
+; 770 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -26,6 +26,8 @@
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/decode.c.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; casadi/optimized/mx.cpp.ll
@@ -120,9 +122,6 @@
 ; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; hyperscan/optimized/teddy.c.ll
 ; hyperscan/optimized/teddy_avx2.c.ll
-; jemalloc/optimized/bitmap.ll
-; jemalloc/optimized/bitmap.pic.ll
-; jemalloc/optimized/bitmap.sym.ll
 ; libquic/optimized/convert.c.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; libuv/optimized/thread.c.ll
@@ -203,7 +202,6 @@
 ; linux/optimized/cache.ll
 ; linux/optimized/dir.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/find_bit.ll
 ; linux/optimized/generic-radix-tree.ll
 ; linux/optimized/indirect.ll
@@ -489,8 +487,6 @@
 ; quickjs/optimized/libbf.ll
 ; re2/optimized/prog.cc.ll
 ; redis/optimized/acl.ll
-; redis/optimized/bitmap.ll
-; redis/optimized/bitmap.sym.ll
 ; redis/optimized/dict.ll
 ; redis/optimized/hyperloglog.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
@@ -749,6 +745,13 @@
 ; yosys/optimized/freduce.ll
 ; yosys/optimized/mem.ll
 ; yosys/optimized/sat.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zfp/optimized/bitstream.c.ll
 ; zfp/optimized/decode1d.c.ll
 ; zfp/optimized/decode1f.c.ll

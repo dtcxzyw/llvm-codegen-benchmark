@@ -37,8 +37,9 @@ entry:
   ret ptr %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; linux/optimized/efi.ll
+; lvgl/optimized/lv_tlsf.ll
 ; node/optimized/libnode.crypto_sig.ll
 ; node/optimized/libnode.crypto_timing.ll
 ; node/optimized/libnode.crypto_x509.ll

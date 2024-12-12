@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 44 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -41,27 +41,6 @@
 ; openusd/optimized/fvarRefinement.cpp.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/xlogreader.ll
-; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
-; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
-; pybind11/optimized/test_builtin_casters.cpp.ll
-; pybind11/optimized/test_callbacks.cpp.ll
-; pybind11/optimized/test_class.cpp.ll
-; pybind11/optimized/test_constants_and_functions.cpp.ll
-; pybind11/optimized/test_custom_type_casters.cpp.ll
-; pybind11/optimized/test_docstring_options.cpp.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
-; pybind11/optimized/test_eigen_tensor.cpp.ll
-; pybind11/optimized/test_enum.cpp.ll
-; pybind11/optimized/test_iostream.cpp.ll
-; pybind11/optimized/test_kwargs_and_defaults.cpp.ll
-; pybind11/optimized/test_local_bindings.cpp.ll
-; pybind11/optimized/test_methods_and_attributes.cpp.ll
-; pybind11/optimized/test_numpy_array.cpp.ll
-; pybind11/optimized/test_numpy_vectorize.cpp.ll
-; pybind11/optimized/test_stl.cpp.ll
-; pybind11/optimized/test_stl_binders.cpp.ll
-; pybind11/optimized/test_tagbased_polymorphic.cpp.ll
-; pybind11/optimized/test_type_caster_pyobject_ptr.cpp.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; slurm/optimized/slurm_protocol_api.ll
 ; wireshark/optimized/packet-ber.c.ll
@@ -73,10 +52,12 @@ entry:
   ret i1 %2
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i8 %0) #0 {
 entry:

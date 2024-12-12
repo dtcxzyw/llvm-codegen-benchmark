@@ -17,17 +17,6 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; libevent/optimized/ws.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ugt i8 %2, 3
-  %4 = or i1 %3, %1
-  %5 = select i1 %4, i32 %0, i32 129
-  ret i32 %5
-}
-
 ; 3 occurrences:
 ; linux/optimized/8250_port.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -36,19 +25,19 @@ entry:
 define i32 @func0000000000000018(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i32 %0, i32 1
   ret i32 %5
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-mac-lte.c.ll
+; redis/optimized/rdb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ult i8 %2, 29
-  %4 = or i1 %3, %1
-  %5 = select i1 %4, i32 %0, i32 1
+  %3 = icmp ult i8 %2, 13
+  %4 = or i1 %1, %3
+  %5 = select i1 %4, i32 %0, i32 -1
   ret i32 %5
 }
 

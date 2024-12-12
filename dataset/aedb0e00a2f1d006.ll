@@ -13,9 +13,8 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/abcExact.c.ll
-; arrow/optimized/util.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(i1 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -40,11 +39,11 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(i1 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = select i1 %0, ptr %1, ptr null
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -58,6 +57,17 @@ entry:
   %4 = select i1 %0, ptr %1, ptr null
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
+}
+
+; 1 occurrences:
+; arrow/optimized/util.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %0, ptr %1, ptr null
+  %.idx = shl nsw i64 %2, 5
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %.idx
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

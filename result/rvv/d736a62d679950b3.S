@@ -50,6 +50,6 @@ func000000000000002c:                   # @func000000000000002c
 	vfmv.v.f	v12, fa4
 	fneg.s	fa4, fa4
 	vfmerge.vfm	v12, v12, fa4, v0
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	vmfge.vf	v0, v8, fa5
 	ret

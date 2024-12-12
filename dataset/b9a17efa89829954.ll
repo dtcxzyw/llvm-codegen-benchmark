@@ -97,8 +97,7 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; linux/optimized/ebda.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-tibia.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i32 %0, i32 %1, i16 %2) #0 {

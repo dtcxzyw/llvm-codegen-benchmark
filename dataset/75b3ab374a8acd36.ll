@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 48
   %3 = icmp ult i32 %2, 64
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/ecc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 63
   %3 = icmp ult i32 %2, 64

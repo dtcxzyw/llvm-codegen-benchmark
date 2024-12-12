@@ -1,12 +1,10 @@
 
-; 109 occurrences:
+; 103 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; assimp/optimized/BlenderCustomData.cpp.ll
 ; casadi/optimized/cs_chol.c.ll
-; casadi/optimized/cs_cholsol.c.ll
 ; casadi/optimized/cs_counts.c.ll
 ; casadi/optimized/cs_lu.c.ll
-; casadi/optimized/cs_lusol.c.ll
 ; casadi/optimized/cs_qr.c.ll
 ; casadi/optimized/cs_qrsol.c.ll
 ; casadi/optimized/cs_scc.c.ll
@@ -36,7 +34,6 @@
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/pmsr.ll
-; linux/optimized/seq_info.ll
 ; linux/optimized/virtio_blk.ll
 ; linux/optimized/virtio_console.ll
 ; linux/optimized/virtio_scsi.ll
@@ -90,8 +87,6 @@
 ; postgres/optimized/subselect.ll
 ; postgres/optimized/tlist.ll
 ; postgres/optimized/tupdesc.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; qemu/optimized/hw_net_rocker_rocker.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
@@ -103,14 +98,13 @@
 ; wireshark/optimized/extcap.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ldap.c.ll
-; wireshark/optimized/packet-lin.c.ll
 ; wireshark/optimized/packet-rrc.c.ll
 ; wireshark/optimized/packet-socketcan.c.ll
 ; wireshark/optimized/packet-umts_mac.c.ll
 ; wolfssl/optimized/test.c.ll
 ; z3/optimized/euf_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -120,6 +114,7 @@ entry:
 }
 
 ; 46 occurrences:
+; boost/optimized/context.ll
 ; casadi/optimized/external.cpp.ll
 ; cmake/optimized/urlapi.c.ll
 ; curl/optimized/libcurl_la-urlapi.ll
@@ -144,7 +139,6 @@ entry:
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/StatepointLowering.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
@@ -167,7 +161,7 @@ entry:
 ; yosys/optimized/opt_expr.ll
 ; z3/optimized/bv2fpa_converter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -183,7 +177,7 @@ entry:
 ; llvm/optimized/TypeRecordMapping.cpp.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -192,11 +186,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; postgres/optimized/pg_dump.ll
-; proj/optimized/crs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false

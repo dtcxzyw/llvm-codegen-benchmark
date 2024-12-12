@@ -210,7 +210,7 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/giaSatLut.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -227,6 +227,7 @@ entry:
 ; qemu/optimized/util_bitmap.c.ll
 ; ruby/optimized/rational.ll
 ; slurm/optimized/bitstring.ll
+; spike/optimized/triggers.ll
 ; stockfish/optimized/movegen.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
@@ -244,7 +245,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp slt i64 %4, 0
   ret i1 %5
 }
@@ -266,7 +267,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp sgt i64 %4, -1
   ret i1 %5
 }

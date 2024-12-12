@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; lief/optimized/bignum.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000034(i64 %0, i8 %1) #0 {
+define i8 @func0000000000000064(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, 55
   %3 = or disjoint i8 %1, 48
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i64 %0, i8 %1) #0 {
+define i8 @func0000000000000024(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 87
   %3 = or disjoint i8 %1, 48

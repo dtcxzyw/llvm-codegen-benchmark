@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; linux/optimized/cpu.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/early-lookup.ll
@@ -8,7 +8,6 @@
 ; linux/optimized/initramfs.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/md.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/vfs_inode_dotl.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll

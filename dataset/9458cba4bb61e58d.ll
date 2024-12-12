@@ -3,11 +3,11 @@
 ; openjdk/optimized/c1_LinearScan.ll
 ; openmpi/optimized/tm_tree.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000022a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -2
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -15,7 +15,7 @@ entry:
 ; php/optimized/fastcgi.ll
 ; zxing/optimized/PDFHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000039a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000072a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 65528
@@ -27,18 +27,18 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pdo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %0, -1
-  %4 = icmp eq i32 %3, %2
-  ret i1 %4
+  %.neg.neg = add i32 %2, 1
+  %3 = icmp eq i32 %0, %.neg.neg
+  ret i1 %3
 }
 
 ; 1 occurrences:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000398(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000728(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 4
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; bullet3/optimized/btDantzigLCP.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003d1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000007a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 2
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/MosDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000608(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -73,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003d8(i32 %0, i64 %1) #0 {
+define i1 @func00000000000007a8(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -92,7 +92,7 @@ entry:
 ; yosys/optimized/Options.ll
 ; yosys/optimized/Solver.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i64 %1) #0 {
+define i1 @func00000000000002a6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -103,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001da(i32 %0, i64 %1) #0 {
+define i1 @func00000000000003aa(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
@@ -119,7 +119,7 @@ entry:
 ; openmpi/optimized/tm_tree.ll
 ; openspiel/optimized/twixtboard.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000226(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -130,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/solver.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -144,7 +144,7 @@ entry:
 ; graphviz/optimized/graph_generator.c.ll
 ; icu/optimized/udataswp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003da(i32 %0, i64 %1) #0 {
+define i1 @func00000000000007aa(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -155,7 +155,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000394(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000724(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -166,18 +166,18 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000391(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000721(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %0, -1
-  %4 = icmp eq i32 %3, %2
-  ret i1 %4
+  %.neg.neg = add i32 %2, 1
+  %3 = icmp eq i32 %0, %.neg.neg
+  ret i1 %3
 }
 
 ; 1 occurrences:
 ; graphviz/optimized/graph_generator.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003d6(i32 %0, i64 %1) #0 {
+define i1 @func00000000000007a6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -188,22 +188,22 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/gvdevice_xlib.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000062a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 16
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; graphviz/optimized/gvdevice_xlib.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000621(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 16
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 

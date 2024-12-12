@@ -15,7 +15,7 @@ func0000000000000014:                   # @func0000000000000014
 	shll	$4, %esi
 	subq	%rsi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	andl	$63, %esi
 	movl	$64, %eax
 	subl	%esi, %eax

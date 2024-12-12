@@ -15,7 +15,7 @@ entry:
 ; linux/optimized/huf_decompress.ll
 ; openusd/optimized/detokenize.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i8 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = icmp eq i8 %0, 0
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-3g-a11.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = icmp eq i8 %0, 0

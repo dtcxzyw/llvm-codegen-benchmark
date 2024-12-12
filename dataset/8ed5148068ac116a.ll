@@ -29,7 +29,7 @@ entry:
   ret ptr %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/HermesBuiltin.cpp.ll
 ; hermes/optimized/Object.cpp.ll
@@ -47,12 +47,11 @@ entry:
 ; llvm/optimized/Pointer.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
-; qemu/optimized/accel_tcg_user-exec.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp ult i32 %0, 2048
+  %3 = icmp ult i32 %0, 855638016
   %4 = select i1 %3, ptr %2, ptr null
   ret ptr %4
 }

@@ -8,7 +8,10 @@ func0000000000000003:                   // @func0000000000000003
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	neg	x0, x0
+	mov	x8, #2313682944                 // =0x89e80000
 	mov	x1, #0                          // =0x0
+	movk	x8, #8964, lsl #32
+	movk	x8, #35527, lsl #48
+	mul	x0, x0, x8
 	ret
                                         // -- End function

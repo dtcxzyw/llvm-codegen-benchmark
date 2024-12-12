@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; hdf5/optimized/H5B2internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = icmp ult i32 %0, 2
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/libfreshclam_internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = icmp ne i32 %0, 0
@@ -28,7 +28,7 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = icmp ne i32 %0, 0

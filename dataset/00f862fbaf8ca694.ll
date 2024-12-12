@@ -102,7 +102,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul i64 %3, -4417276706812531889
   ret i64 %4
 }
@@ -137,11 +137,15 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 8 occurrences:
 ; base64-rs/optimized/1a4jkh1d8jsuhv4c.ll
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/2coqqf198wkzirvxqog0epalb.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
+; zed-rs/optimized/a4ig8dgz5t1q56qsxep8b7iux.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
@@ -179,7 +183,8 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
+; boost/optimized/to_chars.ll
 ; openusd/optimized/connectableAPI.cpp.ll
 ; openusd/optimized/dataSourceLocator.cpp.ll
 ; openusd/optimized/dependencyForwardingSceneIndex.cpp.ll
@@ -207,7 +212,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = add nuw nsw i64 %2, %0
-  %4 = mul nuw nsw i64 %3, 464
+  %4 = mul nuw nsw i64 %3, 720575941
   ret i64 %4
 }
 
@@ -384,13 +389,25 @@ entry:
   ret i64 %4
 }
 
+; 2 occurrences:
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = add i64 %2, %0
+  %4 = mul nsw i64 %3, 120
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul nsw i64 %3, -4294967296
   ret i64 %4
 }

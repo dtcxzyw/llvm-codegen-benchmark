@@ -20,23 +20,70 @@ entry:
 define i8 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 6
   %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; crow/optimized/example.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 12
   %5 = trunc i32 %4 to i8
   ret i8 %5
+}
+
+; 10 occurrences:
+; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/src.ll
+; clamav/optimized/Bra.c.ll
+; cmake/optimized/sparc.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
+; cmake/optimized/zstd_compress_superblock.c.ll
+; openexr/optimized/ImfHuf.cpp.ll
+; postgres/optimized/encode.ll
+; zstd/optimized/zstd_compress_literals.c.ll
+; zstd/optimized/zstd_compress_superblock.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 10
+  %3 = add i32 %0, %2
+  %4 = lshr i32 %3, 18
+  %5 = trunc i32 %4 to i8
+  ret i8 %5
+}
+
+; 2 occurrences:
+; boost/optimized/src.ll
+; openexr/optimized/ImfHuf.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 10
+  %3 = add i32 %0, %2
+  %4 = lshr i32 %3, 12
+  %5 = trunc nuw i32 %4 to i8
+  ret i8 %5
+}
+
+; 2 occurrences:
+; boost/optimized/src.ll
+; cpp-httplib/optimized/httplib.cc.ll
+; Function Attrs: nounwind
+define i8 @func000000000000002a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %0, 12
+  %3 = add i32 %2, %1
+  %4 = trunc i32 %3 to i8
+  ret i8 %4
 }
 
 ; 6 occurrences:
@@ -63,29 +110,9 @@ entry:
 define i8 @func0000000000000062(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 24
   %5 = trunc nuw i32 %4 to i8
-  ret i8 %5
-}
-
-; 9 occurrences:
-; abseil-cpp/optimized/numbers.cc.ll
-; clamav/optimized/Bra.c.ll
-; cmake/optimized/sparc.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
-; cmake/optimized/zstd_compress_superblock.c.ll
-; openexr/optimized/ImfHuf.cpp.ll
-; postgres/optimized/encode.ll
-; zstd/optimized/zstd_compress_literals.c.ll
-; zstd/optimized/zstd_compress_superblock.c.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 2
-  %3 = add i32 %2, %0
-  %4 = lshr i32 %3, 10
-  %5 = trunc i32 %4 to i8
   ret i8 %5
 }
 
@@ -100,7 +127,7 @@ entry:
 define i8 @func000000000000007a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 3
   %5 = trunc nuw i32 %4 to i8
   ret i8 %5
@@ -120,35 +147,12 @@ entry:
 }
 
 ; 1 occurrences:
-; cpp-httplib/optimized/httplib.cc.ll
-; Function Attrs: nounwind
-define i8 @func000000000000002a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 4
-  %3 = add nsw i32 %2, %0
-  %4 = lshr i32 %3, 18
-  %5 = trunc nuw i32 %4 to i8
-  ret i8 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/cap_v4l.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000068(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %0, 16
-  %3 = add i32 %2, %1
-  %4 = trunc i32 %3 to i8
-  ret i8 %4
-}
-
-; 1 occurrences:
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 12
   %5 = trunc i32 %4 to i8
   ret i8 %5
@@ -160,20 +164,8 @@ entry:
 define i8 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = lshr i32 %3, 6
-  %5 = trunc nuw i32 %4 to i8
-  ret i8 %5
-}
-
-; 1 occurrences:
-; openexr/optimized/ImfHuf.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000002(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 3
-  %3 = add i32 %2, %0
-  %4 = lshr i32 %3, 24
   %5 = trunc nuw i32 %4 to i8
   ret i8 %5
 }

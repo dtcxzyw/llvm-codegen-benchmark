@@ -30,12 +30,3 @@ func00000000000000c7:                   # @func00000000000000c7
 	not	a1, a1
 	and	a0, a0, a1
 	ret
-.LCPI4_0:
-	.quad	0x3ff0000000000000              # double 1
-func00000000000000cc:                   # @func00000000000000cc
-	lui	a1, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a1)
-	fle.d	a1, fa5, fa0
-	snez	a0, a0
-	and	a0, a0, a1
-	ret

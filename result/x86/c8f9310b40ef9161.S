@@ -1,4 +1,4 @@
-func0000000000000123:                   # @func0000000000000123
+func0000000000000a63:                   # @func0000000000000a63
 	cmpq	$128, %rdi
 	movl	$3, %ecx
 	sbbq	$0, %rcx
@@ -7,7 +7,7 @@ func0000000000000123:                   # @func0000000000000123
 	cmovbq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000110:                   # @func0000000000000110
+func0000000000000210:                   # @func0000000000000210
 	xorl	%eax, %eax
 	movq	%rdi, %rcx
 	shrq	$32, %rcx

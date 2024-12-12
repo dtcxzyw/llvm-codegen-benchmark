@@ -1,10 +1,10 @@
-func0000000000000000:                   # @func0000000000000000
-	movq	%rsi, %rax
-	andl	$1, %edi
-	subq	%rdi, %rax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	leaq	2000000000(%rsi), %rax
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	leaq	-3(%rsi), %rax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	retq

@@ -1,66 +1,43 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	movi	v3.4s, #16
-	movi	v4.4s, #48
-	shl	v0.4s, v0.4s, #31
-	add	v2.4s, v2.4s, v3.4s
-	add	v1.4s, v1.4s, v4.4s
-	cmlt	v0.4s, v0.4s, #0
-	bsl	v0.16b, v1.16b, v2.16b
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	add	w8, w2, #16
+	add	w9, w1, #48
+	tst	w0, #0x1
+	csel	w8, w9, w8, ne
+	sxtw	x0, w8
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	movi	v3.4s, #9
-	mvni	v4.4s, #47
-	shl	v0.4s, v0.4s, #31
-	add	v1.4s, v1.4s, v4.4s
-	add	v2.4s, v2.4s, v3.4s
-	cmlt	v0.4s, v0.4s, #0
-	bsl	v0.16b, v1.16b, v2.16b
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	add	w8, w2, #9
+	sub	w9, w1, #48
+	tst	w0, #0x1
+	csel	w8, w9, w8, ne
+	sxtw	x0, w8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	shl	v0.4s, v0.4s, #31
-	cmlt	v0.4s, v0.4s, #0
-	bsl	v0.16b, v1.16b, v2.16b
-	movi	v1.2d, #0xffffffffffffffff
-	add	v0.4s, v0.4s, v1.4s
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	tst	w0, #0x1
+	csel	w8, w1, w2, ne
+	sub	w8, w8, #1
+	sxtw	x0, w8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	shl	v0.4s, v0.4s, #31
-	cmlt	v0.4s, v0.4s, #0
-	bsl	v0.16b, v1.16b, v2.16b
-	movi	v1.2d, #0xffffffffffffffff
-	add	v0.4s, v0.4s, v1.4s
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	tst	w0, #0x1
+	csel	w8, w1, w2, ne
+	sub	w8, w8, #1
+	sxtw	x0, w8
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	mvni	v3.4s, #47
-	mvni	v4.4s, #86
-	shl	v0.4s, v0.4s, #31
-	add	v2.4s, v2.4s, v3.4s
-	add	v1.4s, v1.4s, v4.4s
-	cmlt	v0.4s, v0.4s, #0
-	bsl	v0.16b, v1.16b, v2.16b
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	sub	w8, w2, #48
+	sub	w9, w1, #87
+	tst	w0, #0x1
+	csel	w8, w9, w8, ne
+	sxtw	x0, w8
 	ret
                                         // -- End function

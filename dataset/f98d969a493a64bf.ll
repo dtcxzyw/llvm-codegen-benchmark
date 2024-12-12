@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; tokenizers-rs/optimized/40hmx6rev8evi2bx.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000043(i64 %0, i64 %1, ptr %2) #0 {
 entry:
@@ -13,9 +14,10 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; tokenizers-rs/optimized/40hmx6rev8evi2bx.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, ptr %2) #0 {
 entry:
@@ -23,7 +25,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = add i64 %4, 3
   %6 = lshr i64 %5, 2
-  %7 = add nuw nsw i64 %6, %0
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -40,7 +42,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = add i64 %4, -4
   %6 = lshr i64 %5, 2
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

@@ -19,25 +19,54 @@ entry:
 ; ncnn/optimized/interp_x86_avx512.cpp.ll
 ; ncnn/optimized/interp_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000556(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000aa6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, %1
-  %4 = shl i32 %3, 1
-  %5 = add i32 %4, %0
-  %6 = icmp slt i32 %5, 0
-  ret i1 %6
+  %3 = shl nsw i32 %2, 1
+  %4 = add nsw i32 %0, %3
+  %5 = shl nsw i32 %1, 1
+  %6 = add nsw i32 %4, %5
+  %7 = icmp slt i32 %6, 0
+  ret i1 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/wlcReadSmt.c.ll
+; boost/optimized/src.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000554(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000aa4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = shl nsw i32 %1, 3
   %6 = add nsw i32 %4, %5
   %7 = icmp ult i32 %6, 16
+  ret i1 %7
+}
+
+; 1 occurrences:
+; crow/optimized/example.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000aa8(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 %2, 8
+  %4 = add nsw i32 %0, %3
+  %5 = shl nsw i32 %1, 4
+  %6 = add nsw i32 %4, %5
+  %7 = icmp ugt i32 %6, 2047
+  ret i1 %7
+}
+
+; 2 occurrences:
+; boost/optimized/src.ll
+; crow/optimized/example.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000ab8(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 %2, 8
+  %4 = add nsw i32 %0, %3
+  %5 = shl nsw i32 %1, 4
+  %6 = add nsw i32 %4, %5
+  %7 = icmp samesign ugt i32 %6, 127
   ret i1 %7
 }
 

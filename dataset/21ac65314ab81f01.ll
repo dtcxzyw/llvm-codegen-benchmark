@@ -1,6 +1,7 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll
 ; graphviz/optimized/partition.c.ll

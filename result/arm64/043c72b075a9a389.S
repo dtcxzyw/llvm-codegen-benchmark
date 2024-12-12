@@ -1,4 +1,4 @@
-func00000000000000fe:                   // @func00000000000000fe
+func00000000000000ff:                   // @func00000000000000ff
 // %bb.0:                               // %entry
 	mov	w8, #2                          // =0x2
 	mov	w9, w1
@@ -7,7 +7,7 @@ func00000000000000fe:                   // @func00000000000000fe
 	add	x0, x0, x8, lsl #3
 	ret
                                         // -- End function
-func000000000000007e:                   // @func000000000000007e
+func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
 	mov	w8, #1                          // =0x1
 	mov	w9, w1
@@ -16,7 +16,7 @@ func000000000000007e:                   // @func000000000000007e
 	add	x0, x0, x8, lsl #2
 	ret
                                         // -- End function
-func00000000000000de:                   // @func00000000000000de
+func00000000000000df:                   // @func00000000000000df
 // %bb.0:                               // %entry
 	mov	w8, #1                          // =0x1
 	mov	w9, w1

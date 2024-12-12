@@ -2,7 +2,7 @@
 	.quad	-7046029288634856825            # 0x9e3779b185ebca87
 func0000000000000038:                   # @func0000000000000038
 	vpsllq	$24, %ymm2, %ymm2
-	vpternlogq	$54, %ymm1, %ymm0, %ymm2 # ymm2 = ymm0 ^ (ymm2 | ymm1)
+	vpternlogq	$86, %ymm0, %ymm1, %ymm2 # ymm2 = ymm0 ^ (ymm2 | ymm1)
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm0
 	vpsrlq	$37, %ymm0, %ymm0
 	retq

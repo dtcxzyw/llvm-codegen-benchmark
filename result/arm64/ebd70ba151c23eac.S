@@ -1,30 +1,19 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	shl	v1.2d, v1.2d, #32
-	shl	v0.2d, v0.2d, #32
-	sshr	v1.2d, v1.2d, #32
-	sshr	v0.2d, v0.2d, #32
-	neg	v0.2d, v0.2d
-	neg	v1.2d, v1.2d
+	mov	x8, #0                          // =0x0
+	sub	x0, x8, w0, sxtw
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	shl	v0.2d, v0.2d, #30
-	shl	v1.2d, v1.2d, #30
-	sshr	v1.2d, v1.2d, #32
-	sshr	v0.2d, v0.2d, #32
-	neg	v0.2d, v0.2d
-	neg	v1.2d, v1.2d
+	lsr	x8, x0, #2
+	mov	x9, #0                          // =0x0
+	sub	x0, x9, w8, sxtw
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	shl	v1.2d, v1.2d, #32
-	shl	v0.2d, v0.2d, #32
-	sshr	v1.2d, v1.2d, #32
-	sshr	v0.2d, v0.2d, #32
-	neg	v0.2d, v0.2d
-	neg	v1.2d, v1.2d
+	mov	x8, #0                          // =0x0
+	sub	x0, x8, w0, sxtw
 	ret
                                         // -- End function

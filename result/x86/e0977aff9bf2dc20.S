@@ -25,7 +25,7 @@ func0000000000000004:                   # @func0000000000000004
 	shlxq	%rsi, %rdi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	addq	$-2, %rdi
+	incq	%rdi
 	andb	$1, %sil
 	xorb	$3, %sil
 	shlxq	%rsi, %rdi, %rax

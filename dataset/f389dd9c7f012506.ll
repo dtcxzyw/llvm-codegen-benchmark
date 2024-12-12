@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; assimp/optimized/zip.c.ll
 ; folly/optimized/Zlib.cpp.ll
 ; gromacs/optimized/xtc2.c.ll
@@ -7,7 +7,6 @@
 ; libpng/optimized/pngwutil.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
-; wireshark/optimized/dpa400.c.ll
 ; wireshark/optimized/packet-iax2.c.ll
 ; wireshark/optimized/peekclassic.c.ll
 ; wolfssl/optimized/ssl.c.ll

@@ -1,10 +1,8 @@
 
-; 69 occurrences:
+; 67 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/fraMan.c.ll
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSat2.c.ll
@@ -28,8 +26,8 @@
 ; ipopt/optimized/IpTNLPAdapter.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/ImportedFunctionsInliningStatistics.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; minetest/optimized/CImageLoaderPNG.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/dlaqr2.c.ll
@@ -77,14 +75,23 @@ entry:
   ret double %3
 }
 
-; 2 occurrences:
-; hermes/optimized/TypedArray.cpp.ll
+; 1 occurrences:
 ; openjdk/optimized/sharedRuntimeTrig.ll
+; Function Attrs: nounwind
+define double @func0000000000000018(double %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 1072234496
+  %3 = select i1 %2, double 2.812500e-01, double %0
+  ret double %3
+}
+
+; 1 occurrences:
+; hermes/optimized/TypedArray.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000008(double %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 1072234496
-  %3 = select i1 %2, double 2.812500e-01, double %0
+  %2 = icmp ugt i32 %1, 1
+  %3 = select i1 %2, double -0.000000e+00, double %0
   ret double %3
 }
 
@@ -103,16 +110,25 @@ entry:
   ret double %3
 }
 
-; 5 occurrences:
-; openblas/optimized/dgeqr.c.ll
+; 2 occurrences:
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
-; opencv/optimized/stereobm.cpp.ll
-; opencv/optimized/ts_arrtest.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(double %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 3
+  %3 = select i1 %2, double 0.000000e+00, double %0
+  ret double %3
+}
+
+; 3 occurrences:
+; openblas/optimized/dgeqr.c.ll
+; opencv/optimized/stereobm.cpp.ll
+; opencv/optimized/ts_arrtest.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000014(double %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 5
   %3 = select i1 %2, double 0.000000e+00, double %0
   ret double %3
 }

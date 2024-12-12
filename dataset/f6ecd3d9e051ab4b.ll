@@ -8,11 +8,11 @@
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000368(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = getelementptr nusw i8, ptr %1, i64 -15
   %7 = icmp ugt ptr %5, %6
   ret i1 %7
@@ -22,7 +22,7 @@ entry:
 ; linux/optimized/entropy_common.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000208(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 4
   %4 = zext nneg i32 %3 to i64

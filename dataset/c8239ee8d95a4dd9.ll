@@ -7,7 +7,7 @@
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; qemu/optimized/hw_net_rocker_rocker_of_dpa.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0) #0 {
+define i1 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 28
   %2 = icmp eq i32 %1, 7

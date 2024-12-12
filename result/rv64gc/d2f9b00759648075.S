@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a1, a1
 	lui	a2, 21094
 	addiw	a2, a2, -1024
@@ -7,25 +7,23 @@ func000000000000005a:                   # @func000000000000005a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	sext.w	a1, a1
-	lui	a2, 244
-	addiw	a2, a2, 576
+	lui	a2, 1048332
+	addiw	a2, a2, -576
 	mul	a1, a1, a2
-	neg	a0, a0
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a1, a1
-	lui	a2, 244
-	addiw	a2, a2, 576
+	lui	a2, 1048332
+	addiw	a2, a2, -576
 	mul	a1, a1, a2
-	neg	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	sext.w	a1, a1
 	li	a2, 1000
 	mul	a1, a1, a2
@@ -47,7 +45,7 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 .LCPI5_0:
 	.quad	-211813488000000000             # 0xfd0f7cc1411fa000
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	sext.w	a1, a1
 	lui	a2, 244
 	lui	a3, %hi(.LCPI5_0)
@@ -56,16 +54,4 @@ func0000000000000046:                   # @func0000000000000046
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	slt	a0, a0, a3
-	ret
-func0000000000000048:                   # @func0000000000000048
-	sext.w	a1, a1
-	lui	a2, 244
-	addiw	a2, a2, 576
-	mul	a1, a1, a2
-	lui	a2, 2575
-	addiw	a2, a2, -325
-	slli	a2, a2, 13
-	add	a0, a0, a1
-	addi	a2, a2, -1
-	sltu	a0, a2, a0
 	ret

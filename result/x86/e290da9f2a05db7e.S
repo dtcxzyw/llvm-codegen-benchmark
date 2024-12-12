@@ -32,7 +32,7 @@ func0000000000000002:                   # @func0000000000000002
 	shll	$24, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	addb	$-40, %dil
+	incb	%dil
 	movzbl	%dil, %eax
-	shll	$23, %eax
+	shll	$8, %eax
 	retq

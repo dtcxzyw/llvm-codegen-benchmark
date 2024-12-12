@@ -6,12 +6,12 @@
 ; libquic/optimized/prtime.cc.ll
 ; lief/optimized/pem.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(ptr %0, i64 %1, i8 %2) #0 {
+define i64 @func000000000000002f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 10
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

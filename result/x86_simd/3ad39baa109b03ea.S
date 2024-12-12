@@ -84,7 +84,7 @@ func0000000000000001:                   # @func0000000000000001
 	.short	1                               # 0x1
 	.short	1                               # 0x1
 	.short	1                               # 0x1
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vptestmw	.LCPI2_0(%rip), %ymm1, %k0 {%k1}

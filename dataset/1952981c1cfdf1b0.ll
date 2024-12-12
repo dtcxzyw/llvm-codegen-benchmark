@@ -5,7 +5,7 @@
 ; sentencepiece/optimized/builder.cc.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a61(ptr %0, i64 %1) #0 {
+define i1 @func00000000000038c1(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   ret i1 %2

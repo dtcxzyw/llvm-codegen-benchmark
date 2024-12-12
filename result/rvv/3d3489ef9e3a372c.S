@@ -66,5 +66,5 @@ func000000000000007f:                   # @func000000000000007f
 	vwsll.vi	v12, v10, 3
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vi	v10, v12, 8
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret

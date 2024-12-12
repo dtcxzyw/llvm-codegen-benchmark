@@ -1,15 +1,14 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; duckdb/optimized/ub_duckdb_common_types_column.cpp.ll
 ; folly/optimized/SocketAddress.cpp.ll
 ; llvm/optimized/TpiStreamBuilder.cpp.ll
-; nuttx/optimized/lib_rand48.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 32
   ret i64 %4
 }
@@ -24,7 +23,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 1
   ret i64 %4
 }
@@ -55,7 +54,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = lshr i64 %3, 4
   ret i64 %4
 }

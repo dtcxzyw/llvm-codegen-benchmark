@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 33 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -21,7 +21,6 @@
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -31,12 +30,11 @@
 ; abc/optimized/ioWriteBlif.c.ll
 ; abc/optimized/ioWriteEdgelist.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/satTruth.c.ll
 ; abc/optimized/sbdSat.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ec(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001cc(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -5
   %3 = shl nuw i32 1, %2
@@ -54,7 +52,7 @@ entry:
 ; abc/optimized/sfmNtk.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001ec(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -6
   %3 = shl nuw nsw i32 1, %2
@@ -72,7 +70,7 @@ entry:
 ; abc/optimized/luckySwap.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -5
   %3 = shl nuw i32 1, %2
@@ -85,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/extraUtilMisc.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000341(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -32
   %3 = shl nuw i32 1, %2
@@ -100,7 +98,7 @@ entry:
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/rpo.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ec(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003cc(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = shl nuw i32 1, %2
@@ -113,7 +111,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000241(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = shl nuw i32 1, %2
@@ -126,7 +124,7 @@ entry:
 ; 1 occurrences:
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -151
   %3 = shl nuw i32 1, %2

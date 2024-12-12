@@ -1,12 +1,35 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; git/optimized/http-backend.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul i64 %3, 53
+  ret i64 %4
+}
+
+; 1 occurrences:
+; boost/optimized/text_file_backend.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i64
+  %3 = add nuw nsw i64 %0, %2
+  %4 = mul nuw nsw i64 %3, 1000000
+  ret i64 %4
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000012(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = add i64 %0, %2
+  %4 = mul nuw i64 %3, 10
   ret i64 %4
 }
 
@@ -21,7 +44,7 @@ entry:
 define i64 @func000000000000001f(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul nuw nsw i64 %3, 60
   ret i64 %4
 }
@@ -36,7 +59,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = mul i64 %3, -7046029254386353067
   ret i64 %4
 }
@@ -48,7 +71,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = mul i64 %3, 1025
   ret i64 %4
 }
@@ -61,7 +84,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = mul nuw i64 %3, 10
   ret i64 %4
 }
@@ -74,7 +97,7 @@ entry:
 define i64 @func000000000000001a(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = mul nuw i64 %3, 10
   ret i64 %4
 }

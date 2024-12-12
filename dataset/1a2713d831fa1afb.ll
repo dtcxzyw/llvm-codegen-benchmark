@@ -1,5 +1,8 @@
 
-; 148 occurrences:
+; 151 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -156,13 +159,14 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openssl/optimized/libcrypto-lib-cmac.ll
 ; openssl/optimized/libcrypto-shlib-cmac.ll
 ; spike/optimized/f64_div.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -193,7 +197,7 @@ entry:
   ret i64 %4
 }
 
-; 44 occurrences:
+; 50 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -238,6 +242,12 @@ entry:
 ; xgboost/optimized/multiclass_obj.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -246,9 +256,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -257,11 +268,12 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; libwebp/optimized/get_disto.c.ll
 ; libwebp/optimized/ssim.c.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -270,11 +282,13 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; clamav/optimized/apm.c.ll
 ; flatbuffers/optimized/flatc.cpp.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -304,8 +318,9 @@ entry:
   ret i64 %4
 }
 
-; 114 occurrences:
+; 115 occurrences:
 ; arrow/optimized/writer.cc.ll
+; boost/optimized/rational.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; casadi/optimized/cvodes.c.ll
@@ -427,7 +442,7 @@ entry:
   ret i64 %4
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; casadi/optimized/kinsol.c.ll
@@ -438,7 +453,6 @@ entry:
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
-; gromacs/optimized/tng_io.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll

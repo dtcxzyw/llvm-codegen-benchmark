@@ -19,19 +19,3 @@ func0000000000000006:                   // @func0000000000000006
                                         // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	mov	x8, #34359738360                // =0x7fffffff8
-	sub	x9, x0, x1
-	bics	xzr, x8, x9
-	cset	w0, eq
-	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
-	sub	x8, x0, x1
-	sbfx	x8, x8, #0, #34
-	cmp	x8, #3
-	cset	w0, gt
-	ret
-                                        // -- End function

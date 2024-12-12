@@ -4,13 +4,13 @@ func0000000000000004:                   # @func0000000000000004
 	cmovnsq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+func000000000000000d:                   # @func000000000000000d
 	movq	%rsi, %rax
 	negq	%rax
 	cmovnsq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000d:                   # @func000000000000000d
+func000000000000000c:                   # @func000000000000000c
 	movq	%rsi, %rax
 	negq	%rax
 	cmovnsq	%rsi, %rax

@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/alloc_lib.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; linux/optimized/gen6_ppgtt.ll

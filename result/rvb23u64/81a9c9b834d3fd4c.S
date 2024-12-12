@@ -25,7 +25,15 @@ func0000000000000008:                   # @func0000000000000008
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func0000000000000018:                   # @func0000000000000018
+	sltu	a1, a2, a1
+	czero.eqz	a0, a0, a1
+	ret
 func0000000000000005:                   # @func0000000000000005
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sltu	a1, a1, a2
+	czero.eqz	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slt	a1, a2, a1

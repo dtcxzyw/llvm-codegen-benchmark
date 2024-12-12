@@ -1,5 +1,5 @@
 
-; 609 occurrences:
+; 611 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -21,6 +21,10 @@
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -354,7 +358,6 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -601,7 +604,6 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
 ; yosys/optimized/sta.ll
@@ -610,7 +612,7 @@
 ; yosys/optimized/xprop.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000551(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aa1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
   %4 = shl nsw i64 %1, 4
@@ -623,7 +625,7 @@ entry:
 ; 1 occurrences:
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000055c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aac(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = shl nsw i64 %1, 6
@@ -711,7 +713,7 @@ entry:
 ; verilator/optimized/V3PreProc.cpp.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000558(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aa8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = shl nsw i64 %1, 6
@@ -727,7 +729,7 @@ entry:
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000055a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aaa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = shl nsw i64 %1, 5
@@ -743,7 +745,7 @@ entry:
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000556(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aa6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = shl nsw i64 %1, 5
@@ -753,14 +755,15 @@ entry:
   ret i1 %7
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
 ; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
 ; hyperscan/optimized/ng_prefilter.cpp.ll
 ; hyperscan/optimized/rose_build_misc.cpp.ll
 ; minetest/optimized/connection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000554(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aa4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = shl nsw i64 %1, 5
@@ -773,7 +776,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000040a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000080a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = shl i64 %1, 4
@@ -786,7 +789,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000050a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000a0a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = shl nsw i64 %1, 6
@@ -800,7 +803,7 @@ entry:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 4
   %4 = ashr exact i64 %1, 3

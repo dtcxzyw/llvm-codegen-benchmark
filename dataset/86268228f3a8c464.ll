@@ -1,11 +1,10 @@
 
-; 28 occurrences:
+; 26 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
 ; hdf5/optimized/H5I.c.ll
 ; hdf5/optimized/H5LT.c.ll
 ; hdf5/optimized/H5TB.c.ll
 ; icu/optimized/ucnvbocu.ll
-; libwebp/optimized/frame_enc.c.ll
 ; linux/optimized/icmp.ll
 ; linux/optimized/intel_pstate.ll
 ; luau/optimized/lvmexecute.cpp.ll
@@ -22,7 +21,6 @@
 ; openjdk/optimized/xBarrierSetAssembler_x86.ll
 ; openssl/optimized/libcrypto-lib-rsa_pk1.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
-; openusd/optimized/detokenize.c.ll
 ; raylib/optimized/raudio.c.ll
 ; z3/optimized/api_algebraic.cpp.ll
 ; z3/optimized/nla_basics_lemmas.cpp.ll

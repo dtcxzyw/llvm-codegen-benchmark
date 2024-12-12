@@ -10,7 +10,7 @@ entry:
   ret i8 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/bit_util.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; lief/optimized/constant_time.c.ll
@@ -18,6 +18,7 @@ entry:
 ; linux/optimized/intel_display.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
@@ -26,8 +27,7 @@ entry:
   ret i8 %3
 }
 
-; 3 occurrences:
-; libquic/optimized/util-64.c.ll
+; 2 occurrences:
 ; lief/optimized/constant_time.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind

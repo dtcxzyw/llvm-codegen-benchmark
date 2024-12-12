@@ -1,7 +1,9 @@
 
-; 24 occurrences:
+; 26 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/writer.cc.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/get_turns.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/mx.cpp.ll
@@ -32,12 +34,13 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; arrow/optimized/message.cc.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; oiio/optimized/Writer.cpp.ll
-; openmpi/optimized/vprotocol_pessimist_sender_based.ll
 ; postgres/optimized/syslogger.ll
 ; qemu/optimized/block_blkdebug.c.ll
 ; qemu/optimized/block_io.c.ll

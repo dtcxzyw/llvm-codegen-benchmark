@@ -1,3 +1,14 @@
+func0000000000000017:                   # @func0000000000000017
+	movslq	%edx, %rax
+	subq	%rax, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq
+func000000000000001f:                   # @func000000000000001f
+	movslq	%edx, %rax
+	subq	%rax, %rsi
+	imulq	$56, %rsi, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000016:                   # @func0000000000000016
 	movslq	%edx, %rax
 	subq	%rax, %rsi
@@ -6,8 +17,14 @@ func0000000000000016:                   # @func0000000000000016
 func000000000000001e:                   # @func000000000000001e
 	movslq	%edx, %rax
 	subq	%rax, %rsi
-	imulq	$56, %rsi, %rax
-	addq	%rdi, %rax
+	leaq	(%rsi,%rdi), %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	shrq	$3, %rdx
+	movslq	%edx, %rax
+	subq	%rax, %rsi
+	shlq	$4, %rsi
+	leaq	(%rsi,%rdi), %rax
 	retq
 func0000000000000012:                   # @func0000000000000012
 	movslq	%edx, %rax

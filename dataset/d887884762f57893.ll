@@ -1,36 +1,25 @@
 
-%struct._StackType.2596895 = type { i32, i32, %union.anon.3.2596896 }
-%union.anon.3.2596896 = type { %struct.anon.6.2596897 }
-%struct.anon.6.2596897 = type { ptr, %union.StkPtrType.2596898, %union.StkPtrType.2596898 }
-%union.StkPtrType.2596898 = type { i64 }
+%struct._StackType.2710345 = type { i32, i32, %union.anon.3.2710346 }
+%union.anon.3.2710346 = type { %struct.anon.6.2710347 }
+%struct.anon.6.2710347 = type { ptr, %union.StkPtrType.2710348, %union.StkPtrType.2710348 }
+%union.StkPtrType.2710348 = type { i64 }
 
-; 78 occurrences:
-; abc/optimized/acbFunc.c.ll
+; 68 occurrences:
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/ifMan.c.ll
-; abc/optimized/sfmDec.c.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btMLCPSolver.ll
 ; bullet3/optimized/btMultiBodyMLCPConstraintSolver.ll
-; darktable/optimized/introspection_dither.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; jq/optimized/regexec.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; libwebp/optimized/frame_dec.c.ll
+; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; libwebp/optimized/io_dec.c.ll
 ; libwebp/optimized/webp_enc.c.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
@@ -81,6 +70,7 @@
 ; openjdk/optimized/xVerify.ll
 ; openjdk/optimized/zBarrierSet.ll
 ; openmpi/optimized/ompi_datatype_args.ll
+; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; openspiel/optimized/spiel.cc.ll
 ; Function Attrs: nounwind
@@ -89,11 +79,11 @@ entry:
   %3 = shl nsw i64 %2, 3
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr nusw %struct._StackType.2596895, ptr %4, i64 %5
+  %6 = getelementptr nusw %struct._StackType.2710345, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; g2o/optimized/vertex_intrinsics.cpp.ll
 ; g2o/optimized/vertex_line2d.cpp.ll
@@ -106,7 +96,6 @@ entry:
 ; postgres/optimized/execExpr.ll
 ; postgres/optimized/extended_stats.ll
 ; postgres/optimized/jsonpath.ll
-; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i32 %1, i64 %2) #0 {
 entry:
@@ -117,18 +106,57 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; gromacs/optimized/lmmin.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; openjdk/optimized/oopMap.ll
 ; php/optimized/zend_hash.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000003e(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 8 occurrences:
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_avx2.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; ncnn/optimized/convolution_x86_xop.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 5
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = sext i32 %1 to i64
+  %6 = getelementptr nusw nuw float, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 8 occurrences:
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_avx2.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; ncnn/optimized/convolution_x86_xop.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = sext i32 %1 to i64
+  %6 = getelementptr nusw nuw float, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -144,20 +172,6 @@ entry:
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 3 occurrences:
-; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; libphonenumber/optimized/geocoding_data_test.cc.ll
-; openspiel/optimized/best_response.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = shl nsw i64 %2, 2
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = sext i32 %1 to i64
-  %6 = getelementptr nusw i32, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -189,6 +203,21 @@ entry:
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw float, ptr %4, i64 %5
   ret ptr %6
+}
+
+; 4 occurrences:
+; abc/optimized/acbFunc.c.ll
+; abc/optimized/sfmDec.c.ll
+; darktable/optimized/introspection_dither.c.ll
+; libwebp/optimized/frame_dec.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %.idx = shl nsw i64 %2, 4
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
+  %4 = sext i32 %1 to i64
+  %5 = getelementptr nusw float, ptr %3, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -224,6 +253,30 @@ entry:
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw i16, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; llama.cpp/optimized/ggml.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002b(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw i64 %2, 1
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = sext i32 %1 to i64
+  %6 = getelementptr nusw nuw i16, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; llama.cpp/optimized/ggml.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 2
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = sext i32 %1 to i64
+  %6 = getelementptr nusw nuw float, ptr %4, i64 %5
   ret ptr %6
 }
 

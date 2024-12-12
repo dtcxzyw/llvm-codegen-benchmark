@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/libunicode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
   %3 = add nsw i32 %0, -9
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/tzfmt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
   %3 = add nsw i32 %0, -1

@@ -1,8 +1,7 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; luau/optimized/isocline.c.ll
-; openmpi/optimized/name_fns.ll
 ; openmpi/optimized/ompi_rte.ll
 ; php/optimized/strnatcmp.ll
 ; postgres/optimized/name.ll

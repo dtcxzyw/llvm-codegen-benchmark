@@ -1,7 +1,26 @@
 
-; 148 occurrences:
+; 156 occurrences:
 ; abc/optimized/inflate.c.ll
 ; abc/optimized/ivyDsd.c.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/RegularExpression.cxx.ll
 ; cmake/optimized/archive_pathmatch.c.ll
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
@@ -48,12 +67,10 @@
 ; linux/optimized/fixup.ll
 ; linux/optimized/gen8_engine_cs.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_gem_shrinker.ll
 ; linux/optimized/i915_perf.ll
-; linux/optimized/idma32.ll
 ; linux/optimized/inet_connection_sock.ll
 ; linux/optimized/intel_atomic_plane.ll
 ; linux/optimized/intel_display.ll
@@ -70,28 +87,18 @@
 ; linux/optimized/tg3.ll
 ; linux/optimized/vgaarb.ll
 ; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/BitcodeReader.cpp.ll
-; llvm/optimized/CGCUDANV.cpp.ll
 ; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGVTT.cpp.ll
 ; llvm/optimized/CGVTables.cpp.ll
 ; llvm/optimized/COFFMasmParser.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
-; llvm/optimized/CoroSplit.cpp.ll
-; llvm/optimized/ExpandVariadics.cpp.ll
-; llvm/optimized/FunctionImport.cpp.ll
-; llvm/optimized/FunctionImportUtils.cpp.ll
-; llvm/optimized/GlobalOpt.cpp.ll
-; llvm/optimized/IRMover.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/LTOCodeGenerator.cpp.ll
-; llvm/optimized/LowerEmuTLS.cpp.ll
 ; llvm/optimized/MIRCanonicalizerPass.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
-; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -147,6 +154,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-bt-utp.c.ll
 ; wireshark/optimized/pref_models.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {

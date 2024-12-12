@@ -39,7 +39,7 @@ entry:
   %4 = and i64 %3, -4
   %5 = add nsw i64 %1, 556
   %6 = add i64 %5, %4
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

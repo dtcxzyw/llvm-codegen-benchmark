@@ -1,5 +1,6 @@
 
-; 15 occurrences:
+; 16 occurrences:
+; boost/optimized/expand.ll
 ; darktable/optimized/filtering.c.ll
 ; ipopt/optimized/IpAdaptiveMuUpdate.ll
 ; ipopt/optimized/IpMonotoneMuUpdate.ll

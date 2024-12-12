@@ -20,7 +20,7 @@
 ; llvm/optimized/WorkList.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = and i32 %3, 56
@@ -33,13 +33,13 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = and i32 %3, 56
   %5 = or disjoint i32 %4, %1
   %6 = or disjoint i32 %5, %0
-  %7 = icmp ugt i32 %6, 7
+  %7 = icmp samesign ugt i32 %6, 7
   ret i1 %7
 }
 
@@ -49,13 +49,13 @@ entry:
 ; luau/optimized/isocline.c.ll
 ; openjdk/optimized/hb-buffer.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %3, 61440
-  %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
-  %7 = icmp ult i32 %6, 2048
+  %5 = or disjoint i32 %1, %4
+  %6 = or disjoint i32 %0, %5
+  %7 = icmp samesign ult i32 %6, 2048
   ret i1 %7
 }
 
@@ -68,24 +68,24 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %3, 258048
   %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
-  %7 = icmp ugt i32 %6, 55295
+  %6 = or disjoint i32 %0, %5
+  %7 = icmp samesign ugt i32 %6, 55295
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 8
   %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = icmp eq i32 %6, 0
   ret i1 %7
@@ -96,20 +96,40 @@ entry:
 ; luau/optimized/isocline.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %3, 61440
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000188(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %0
+  %4 = icmp ugt i32 %3, -50331649
+  ret i1 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000184(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %0
+  %4 = icmp ult i32 %3, 50331648
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; libevent/optimized/poll.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = and i32 %3, 2
@@ -124,7 +144,7 @@ entry:
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = and i32 %3, 12
@@ -137,20 +157,20 @@ entry:
 ; 1 occurrences:
 ; sentencepiece/optimized/util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 18
   %4 = and i32 %3, 1835008
-  %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
-  %7 = icmp ult i32 %6, 55296
+  %5 = or disjoint i32 %1, %4
+  %6 = or disjoint i32 %0, %5
+  %7 = icmp samesign ult i32 %6, 55296
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; linux/optimized/forcedeth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
   %4 = and i32 %3, 2048
@@ -163,13 +183,13 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/lbr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 5
   %4 = and i32 %3, 30720
   %5 = or disjoint i32 %4, %1
   %6 = or i32 %5, %0
-  %7 = icmp ult i32 %6, 4
+  %7 = icmp samesign ult i32 %6, 4
   ret i1 %7
 }
 

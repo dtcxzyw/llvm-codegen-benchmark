@@ -1,16 +1,16 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	addb	$13, %sil
 	shlxq	%rsi, %rdi, %rax
 	testq	%rax, %rax
 	setne	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	decb	%sil
 	shlxq	%rsi, %rdi, %rax
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addb	$-9, %sil
 	shlxq	%rsi, %rdi, %rax
 	testq	%rax, %rax

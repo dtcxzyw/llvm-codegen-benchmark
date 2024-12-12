@@ -3,12 +3,12 @@ func0000000000000000:                   # @func0000000000000000
 	movzbl	%sil, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	addb	%dl, %sil
 	movzbl	%sil, %eax
-	leaq	(%rdi,%rax,4), %rax
+	addq	%rdi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	addb	%dl, %sil
 	movzbl	%sil, %eax
 	leaq	(%rdi,%rax,8), %rax

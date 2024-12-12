@@ -1,24 +1,15 @@
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	sshll	v4.2d, v3.2s, #0
-	sshll2	v3.2d, v3.4s, #0
-	cmgt	v2.2d, v2.2d, v3.2d
-	cmgt	v1.2d, v1.2d, v4.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	and	v0.8b, v1.8b, v0.8b
+	cmp	x1, w2, sxtw
+	cset	w8, gt
+	and	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mov	w8, #2                          // =0x2
-	ssubw	v1.2d, v1.2d, v3.2s
-	ssubw2	v2.2d, v2.2d, v3.4s
-	dup	v3.2d, x8
-	cmhi	v2.2d, v2.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	and	v0.8b, v1.8b, v0.8b
+	sub	x8, x1, w2, sxtw
+	cmp	x8, #2
+	cset	w8, hi
+	and	w0, w0, w8
 	ret
                                         // -- End function

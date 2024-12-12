@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 53 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; cpython/optimized/_codecs_jp.ll
 ; cpython/optimized/_codecs_kr.ll
@@ -24,7 +24,6 @@
 ; linux/optimized/drm_hdcp_helper.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/color_lab.cpp.ll
@@ -37,7 +36,6 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
-; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-acn.c.ll
@@ -118,11 +116,10 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/intel_hdcp.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/intel_sseu_debugfs.ll
-; openspiel/optimized/hearts_test.cc.ll
 ; php/optimized/crypt_blowfish.ll
 ; wireshark/optimized/packet-diameter_3gpp.c.ll
 ; wireshark/optimized/packet-xip.c.ll

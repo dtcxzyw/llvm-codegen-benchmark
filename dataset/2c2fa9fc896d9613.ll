@@ -1,11 +1,8 @@
 
-; 12 occurrences:
+; 9 occurrences:
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; linux/optimized/addrconf.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; openjdk/optimized/cmspack.ll
 ; openjdk/optimized/jquant1.ll
 ; openjdk/optimized/jquant2.ll
@@ -29,7 +26,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, -233
   %narrow = select i1 %2, i32 1, i32 %1

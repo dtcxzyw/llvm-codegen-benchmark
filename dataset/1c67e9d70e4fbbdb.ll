@@ -1,6 +1,6 @@
 
 ; 7 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/X86CallingConv.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; openjdk/optimized/assembler_x86.ll

@@ -1,7 +1,11 @@
 
-; 58 occurrences:
+; 62 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/interfaces.cc.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cmake/optimized/cmList.cxx.ll
 ; darktable/optimized/IiqDecoder.cpp.ll

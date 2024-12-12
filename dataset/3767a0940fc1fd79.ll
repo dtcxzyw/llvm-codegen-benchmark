@@ -1,6 +1,8 @@
 
-; 158 occurrences:
+; 161 occurrences:
 ; assimp/optimized/XFileImporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/b3TypedConstraint.ll
 ; bullet3/optimized/btGjkConvexCast.ll
@@ -157,6 +159,7 @@
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; xgboost/optimized/cpu_treeshap.cc.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {

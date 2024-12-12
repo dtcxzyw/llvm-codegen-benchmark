@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -102,8 +103,32 @@
 define i64 @func00000000000000a0(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = mul i64 %0, 4294966296
+  %6 = add i64 %5, %4
+  ret i64 %6
+}
+
+; 1 occurrences:
+; velox/optimized/Sequence.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000050(i64 %0, i64 %1, i128 %2) #0 {
+entry:
+  %3 = trunc nsw i128 %2 to i64
+  %4 = add nsw i64 %1, %3
+  %5 = mul i64 %0, -1000
+  %6 = add i64 %5, %4
+  ret i64 %6
+}
+
+; 1 occurrences:
+; velox/optimized/Sequence.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000040(i64 %0, i64 %1, i128 %2) #0 {
+entry:
+  %3 = trunc nsw i128 %2 to i64
+  %4 = add i64 %1, %3
+  %5 = mul i64 %0, -1000
   %6 = add i64 %5, %4
   ret i64 %6
 }

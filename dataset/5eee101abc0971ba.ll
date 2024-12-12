@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 27 occurrences:
 ; cmake/optimized/mprintf.c.ll
 ; cpython/optimized/pylifecycle.ll
 ; curl/optimized/libcurl_la-mprintf.ll
@@ -10,6 +10,7 @@
 ; libquic/optimized/padding.c.ll
 ; libquic/optimized/url_parse.cc.ll
 ; libzmq/optimized/proxy.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; openblas/optimized/dlarre.c.ll
@@ -20,9 +21,6 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/memory.ll
 ; php/optimized/zend_compile.ll
-; postgres/optimized/f2s.ll
-; postgres/optimized/f2s_shlib.ll
-; postgres/optimized/f2s_srv.ll
 ; proj/optimized/geodesic.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; slurm/optimized/fed_mgr.ll

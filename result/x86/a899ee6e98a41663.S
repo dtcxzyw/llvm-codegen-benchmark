@@ -8,14 +8,14 @@ func0000000000000004:                   # @func0000000000000004
 	sbbl	%eax, %eax
 	orl	%edx, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	decq	%rsi
 	leal	1(%rdi), %ecx
 	xorl	%eax, %eax
 	cmpq	$11, %rsi
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	addq	$-20481, %rsi                   # imm = 0xAFFF
 	leal	-20(%rdi), %ecx
 	xorl	%eax, %eax

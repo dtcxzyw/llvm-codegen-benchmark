@@ -3,7 +3,7 @@ func0000000000000035:                   # @func0000000000000035
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
-	leal	255(%rax,%rdi), %eax
+	leal	255(%rdi,%rax), %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	incl	%edx

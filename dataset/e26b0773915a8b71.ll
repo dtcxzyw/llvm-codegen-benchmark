@@ -64,12 +64,14 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; linux/optimized/tsc.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:

@@ -6,7 +6,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000271(i32 %0, i32 %1) #0 {
+define i1 @func00000000000004e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = udiv i16 %2, 3

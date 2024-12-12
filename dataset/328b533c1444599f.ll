@@ -1,6 +1,7 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/giaEmbed.c.ll
+; boost/optimized/envelope_multi.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; opencv/optimized/boostdesc.cpp.ll
 ; opencv/optimized/geometry.cpp.ll

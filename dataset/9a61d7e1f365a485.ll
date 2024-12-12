@@ -6,7 +6,7 @@
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = xor i8 %2, 31

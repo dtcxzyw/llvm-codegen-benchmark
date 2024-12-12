@@ -33,7 +33,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
 ; Function Attrs: nounwind
@@ -45,7 +46,7 @@ entry:
   ret i32 %4
 }
 
-; 21 occurrences:
+; 19 occurrences:
 ; clamav/optimized/qtmd.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/huf_compress.c.ll
@@ -55,11 +56,9 @@ entry:
 ; icu/optimized/collationdatareader.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/ip6_input.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/nf_nat_core.ll
 ; oiio/optimized/iffinput.cpp.ll
 ; opencv/optimized/floodfill.cpp.ll
-; postgres/optimized/bufpage.ll
 ; postgres/optimized/heapam.ll
 ; slurm/optimized/net.ll
 ; wireshark/optimized/packet-dcm.c.ll

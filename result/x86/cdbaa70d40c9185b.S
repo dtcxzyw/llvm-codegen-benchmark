@@ -5,18 +5,18 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func000000000000003c:                   # @func000000000000003c
-	testq	%rsi, %rsi
-	setne	%cl
+func000000000000006c:                   # @func000000000000006c
 	testl	%edx, %edx
+	setne	%cl
+	testq	%rsi, %rsi
 	setne	%al
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000007c:                   # @func000000000000007c
-	testq	%rsi, %rsi
-	setne	%cl
+func00000000000000ec:                   # @func00000000000000ec
 	testl	%edx, %edx
+	setne	%cl
+	testq	%rsi, %rsi
 	setne	%al
 	andb	%cl, %al
 	andb	%dil, %al

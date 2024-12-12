@@ -1,8 +1,9 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; openusd/optimized/regularPatchBuilder.cpp.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll

@@ -1,5 +1,8 @@
 
-; 12 occurrences:
+; 15 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; brotli/optimized/decode.c.ll
 ; cpython/optimized/typeobject.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; libquic/optimized/ssl_test.cc.ll

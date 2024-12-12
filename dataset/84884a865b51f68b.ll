@@ -8,7 +8,7 @@
 ; wireshark/optimized/packet-nvme.c.ll
 ; wireshark/optimized/packet-thread.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = zext i8 %2 to i32
@@ -21,7 +21,7 @@ entry:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; openjdk/optimized/elfFile.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000022a(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw i8 %1, 1
   %3 = zext i8 %2 to i32
@@ -34,7 +34,7 @@ entry:
 ; oiio/optimized/iffinput.cpp.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000261(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw i8 %1, 1
   %3 = zext i8 %2 to i32
@@ -58,7 +58,7 @@ entry:
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/packet-wisun.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i32 %0, i8 %1) #0 {
+define i1 @func00000000000003e1(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 1
   %3 = zext nneg i8 %2 to i32
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-f5ethtrailer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 2
   %3 = zext i8 %2 to i32
@@ -82,12 +82,12 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-hartip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %0, -4
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
@@ -106,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/asn1.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001da(i32 %0, i8 %1) #0 {
+define i1 @func00000000000003aa(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 1
   %3 = zext nneg i8 %2 to i32
@@ -130,19 +130,19 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = zext i8 %2 to i32
   %4 = add nuw nsw i32 %0, 1
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/maple_tree.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = zext i8 %2 to i32
@@ -154,12 +154,12 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i32 %0, i8 %1) #0 {
+define i1 @func00000000000003f4(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 2
   %3 = zext nneg i8 %2 to i32
   %4 = add nuw nsw i32 %0, 1
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 

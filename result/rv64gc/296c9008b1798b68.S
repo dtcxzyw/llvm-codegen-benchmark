@@ -33,14 +33,12 @@ func000000000000000a:                   # @func000000000000000a
 	srli	a0, a0, 48
 	ret
 func0000000000000008:                   # @func0000000000000008
-	sext.w	a1, a1
-	lui	a2, 4096
-	addiw	a2, a2, -2
-	bgeu	a2, a1, .LBB4_2
-	li	a0, -256
-	ret
-.LBB4_2:
-	andi	a0, a0, -256
+	srliw	a1, a1, 15
+	lui	a2, 16
+	snez	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a1, a1

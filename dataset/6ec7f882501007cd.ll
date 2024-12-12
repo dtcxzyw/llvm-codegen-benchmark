@@ -17,7 +17,7 @@ entry:
   ret i64 %3
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -58,7 +58,6 @@ entry:
 ; llvm/optimized/MveEmitter.cpp.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
 ; llvm/optimized/ODRHash.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll

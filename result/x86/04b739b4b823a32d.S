@@ -19,7 +19,13 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000018:                   # @func0000000000000018
+	testb	$1, %dil
+	cmoveq	%rdx, %rsi
+	testl	$-32, %esi
+	setne	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
 	cmpl	$129, %esi

@@ -8,7 +8,7 @@ define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
   %3 = icmp eq i16 %2, 1
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -31,7 +31,7 @@ define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
   %3 = icmp ne i16 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

@@ -32,4 +32,17 @@ entry:
   ret float %2
 }
 
+; 4 occurrences:
+; boost/optimized/from_chars.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
+; Function Attrs: nounwind
+define float @func0000000000000002(i8 %0) #0 {
+entry:
+  %1 = trunc nuw i8 %0 to i1
+  %2 = select i1 %1, float -0.000000e+00, float 0.000000e+00
+  ret float %2
+}
+
 attributes #0 = { nounwind }

@@ -2,8 +2,8 @@
 ; 9 occurrences:
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/gvpack.cpp.ll
-; graphviz/optimized/input.c.ll
 ; graphviz/optimized/position.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openblas/optimized/dspgvd.c.ll
 ; openblas/optimized/dsygvd.c.ll
 ; openmpi/optimized/test_overhead.ll

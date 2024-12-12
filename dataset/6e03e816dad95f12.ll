@@ -1,5 +1,5 @@
 
-; 305 occurrences:
+; 292 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; c3c/optimized/build_options.c.ll
 ; clap-rs/optimized/ms9r2ilwmkwzn0d.ll
@@ -11,7 +11,6 @@
 ; coreutils-rs/optimized/1c0bwvv43j289y30.ll
 ; coreutils-rs/optimized/1e5pt7vtfxa4ahz7.ll
 ; coreutils-rs/optimized/1iiitxeck9g2ksb7.ll
-; coreutils-rs/optimized/1mhb4e8l0v9dncti.ll
 ; coreutils-rs/optimized/1pn74b1r3k1s4pck.ll
 ; coreutils-rs/optimized/1ui3yxdetdbghtw.ll
 ; coreutils-rs/optimized/1unp4st43r7zdtb0.ll
@@ -20,7 +19,6 @@
 ; coreutils-rs/optimized/1xgh31va70j84rdd.ll
 ; coreutils-rs/optimized/1xrz1ag37fklzklg.ll
 ; coreutils-rs/optimized/26a2uyrtdxle93un.ll
-; coreutils-rs/optimized/2ahdhlyatyqueo1a.ll
 ; coreutils-rs/optimized/2eb96ulhupdvrip8.ll
 ; coreutils-rs/optimized/2etc5gfaqs8pnymi.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
@@ -33,7 +31,6 @@
 ; coreutils-rs/optimized/3q8ukvkopatfv0x0.ll
 ; coreutils-rs/optimized/3qd2nnv0mbtxq1wn.ll
 ; coreutils-rs/optimized/3r2vyvwpz7j7c5gy.ll
-; coreutils-rs/optimized/3ummpw5ql7d4y98b.ll
 ; coreutils-rs/optimized/3vfybkcp5ufzff0e.ll
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
 ; coreutils-rs/optimized/420s040g7rwxzzqz.ll
@@ -52,12 +49,10 @@
 ; coreutils-rs/optimized/942h4e64iw767xo.ll
 ; coreutils-rs/optimized/d2l5f8sei2pacyj.ll
 ; coreutils-rs/optimized/exyrvqdrhfrgv84.ll
-; coreutils-rs/optimized/ga96dm5uabspngk.ll
 ; coreutils-rs/optimized/gy31avu15bepulc.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; coreutils-rs/optimized/icw7irkz6mu05a9.ll
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
-; coreutils-rs/optimized/plvfu1855xjk96c.ll
 ; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
 ; coreutils-rs/optimized/vylkzjuq6grxql.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
@@ -72,7 +67,6 @@
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; influxdb-rs/optimized/54bldmpi534adbqh.ll
-; linux/optimized/ac.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/addrlabel.ll
 ; linux/optimized/af_netlink.ll
@@ -82,7 +76,6 @@
 ; linux/optimized/anycast.ll
 ; linux/optimized/audit_watch.ll
 ; linux/optimized/auth_gss.ll
-; linux/optimized/auxiliary.ll
 ; linux/optimized/avc.ll
 ; linux/optimized/blk-cgroup.ll
 ; linux/optimized/blk-iocost.ll
@@ -124,8 +117,6 @@
 ; linux/optimized/futex.ll
 ; linux/optimized/hsu.ll
 ; linux/optimized/i2c-core-base.ll
-; linux/optimized/i915_cmd_parser.ll
-; linux/optimized/i915_debugfs.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/i915_gem_context.ll
 ; linux/optimized/i915_gem_execbuffer.ll
@@ -142,7 +133,6 @@
 ; linux/optimized/inet_connection_sock.ll
 ; linux/optimized/inet_hashtables.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_overlay.ll
@@ -158,7 +148,6 @@
 ; linux/optimized/mq-deadline.ll
 ; linux/optimized/mqueue.ll
 ; linux/optimized/namei.ll
-; linux/optimized/net-procfs.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/nf_conntrack_expect.ll
 ; linux/optimized/nf_conntrack_netlink.ll
@@ -174,7 +163,6 @@
 ; linux/optimized/prmt.ll
 ; linux/optimized/proc_sysctl.ll
 ; linux/optimized/property.ll
-; linux/optimized/ptp_vclock.ll
 ; linux/optimized/raw.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/scan.ll
@@ -191,7 +179,6 @@
 ; linux/optimized/svcauth.ll
 ; linux/optimized/swnode.ll
 ; linux/optimized/sys.ll
-; linux/optimized/sysfs_engines.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
 ; linux/optimized/ttm_device.ll
@@ -201,7 +188,6 @@
 ; linux/optimized/tx.ll
 ; linux/optimized/udp.ll
 ; linux/optimized/vector.ll
-; linux/optimized/vfs_dentry.ll
 ; linux/optimized/vmalloc.ll
 ; linux/optimized/waitid.ll
 ; linux/optimized/workqueue.ll
@@ -305,29 +291,13 @@
 ; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/tap-protocolinfo.c.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -48
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %0
-  ret i1 %4
-}
-
-; 7 occurrences:
-; linux/optimized/af_packet.ll
-; linux/optimized/eht.ll
-; linux/optimized/he.ll
-; linux/optimized/mlme.ll
-; linux/optimized/nl80211.ll
-; linux/optimized/raw.ll
-; linux/optimized/socket.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 2
-  %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

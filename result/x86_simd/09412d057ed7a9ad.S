@@ -6,7 +6,7 @@
 	.quad	31                              # 0x1f
 .LCPI0_3:
 	.quad	27                              # 0x1b
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmq	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vpblendmd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm1 {%k1}

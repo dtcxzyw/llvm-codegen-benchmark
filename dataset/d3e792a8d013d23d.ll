@@ -1,5 +1,5 @@
 
-; 609 occurrences:
+; 611 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -21,6 +21,10 @@
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -354,7 +358,6 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -601,7 +604,6 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
 ; yosys/optimized/sta.ll
@@ -610,7 +612,7 @@
 ; yosys/optimized/xprop.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000351(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 4
   %4 = add nsw i64 %3, %0
@@ -623,7 +625,7 @@ entry:
 ; 1 occurrences:
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000035c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006ac(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
   %4 = add nsw i64 %3, %0
@@ -711,7 +713,7 @@ entry:
 ; verilator/optimized/V3PreProc.cpp.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000358(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
   %4 = add nsw i64 %3, %0
@@ -751,10 +753,10 @@ entry:
 ; rocksdb/optimized/merge_helper.cc.ll
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000025a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = ashr exact i64 %0, 3
   %6 = add nsw i64 %5, %4
   %7 = icmp sgt i64 %6, -1
@@ -791,13 +793,13 @@ entry:
 ; rocksdb/optimized/merge_helper.cc.ll
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000254(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004b4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = ashr exact i64 %0, 3
   %6 = add nsw i64 %5, %4
-  %7 = icmp ult i64 %6, 64
+  %7 = icmp samesign ult i64 %6, 64
   ret i1 %7
 }
 
@@ -807,7 +809,7 @@ entry:
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000035a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
   %4 = add nsw i64 %3, %0
@@ -823,7 +825,7 @@ entry:
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000356(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
   %4 = add nsw i64 %3, %0
@@ -833,14 +835,15 @@ entry:
   ret i1 %7
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
 ; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
 ; hyperscan/optimized/ng_prefilter.cpp.ll
 ; hyperscan/optimized/rose_build_misc.cpp.ll
 ; minetest/optimized/connection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
   %4 = add nsw i64 %3, %0
@@ -855,10 +858,10 @@ entry:
 ; llvm/optimized/BugReporter.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr exact i64 %1, 3
   %6 = add nsw i64 %4, %5
   %7 = icmp eq i64 %6, 1152921504606846975
@@ -868,10 +871,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SampleProfileInference.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr exact i64 %1, 3
   %6 = add i64 %4, %5
   %7 = icmp eq i64 %6, 1152921504606846975
@@ -881,10 +884,10 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/ng_prefilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000608(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr exact i64 %1, 4
   %6 = add i64 %4, %5
   %7 = icmp ugt i64 %6, 128
@@ -901,10 +904,10 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr exact i64 %1, 3
   %6 = add i64 %4, %5
   %7 = icmp sgt i64 %6, 0
@@ -919,10 +922,10 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = ashr exact i64 %0, 3
   %6 = add nsw i64 %5, %4
   %7 = icmp ult i64 %6, 32
@@ -932,10 +935,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000224(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr exact i64 %1, 2
   %6 = add nsw i64 %4, %5
   %7 = icmp ult i64 %6, 64
@@ -947,10 +950,10 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr exact i64 %1, 2
   %6 = add i64 %4, %5
   %7 = icmp slt i64 %6, 32
@@ -960,10 +963,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr exact i64 %1, 2
   %6 = add nsw i64 %4, %5
   %7 = icmp slt i64 %6, 0
@@ -973,7 +976,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000060a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 6
   %4 = add i64 %3, %0

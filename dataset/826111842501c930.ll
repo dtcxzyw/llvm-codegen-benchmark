@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 58 occurrences:
 ; cmake/optimized/content_encoding.c.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
@@ -57,8 +57,9 @@
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/i5u7vsclgey2ddj.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 736
@@ -66,7 +67,7 @@ entry:
   ret ptr %4
 }
 
-; 55 occurrences:
+; 56 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -122,8 +123,9 @@ entry:
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/i5u7vsclgey2ddj.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 992
@@ -131,7 +133,7 @@ entry:
   ret ptr %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
@@ -149,12 +151,30 @@ entry:
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/4nuxwfk1fz1jsu89.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000005f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 536
   %4 = getelementptr ptr, ptr %3, i64 %2
+  ret ptr %4
+}
+
+; 7 occurrences:
+; just-rs/optimized/15cobjmzhaiu6jpj.ll
+; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
+; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
+; rust-analyzer-rs/optimized/4mz36mxu8r0g7zqk.ll
+; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
+; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005e(ptr %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = getelementptr i8, ptr %0, i64 -16
+  %4 = getelementptr { [3 x i64] }, ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -170,7 +190,7 @@ entry:
 ; ockam-rs/optimized/i22eb1mfvlgesy1.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001e(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 3616
@@ -185,7 +205,7 @@ entry:
 ; ockam-rs/optimized/4muscr8i25faa6zl.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 624

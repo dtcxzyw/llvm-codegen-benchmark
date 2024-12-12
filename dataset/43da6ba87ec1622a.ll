@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 93 occurrences:
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; darktable/optimized/introspection_splittoning.c.ll
@@ -12,7 +12,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll

@@ -26,7 +26,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 65535
   %4 = mul nuw nsw i32 %3, 722
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

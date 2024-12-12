@@ -1,5 +1,5 @@
 
-; 148 occurrences:
+; 149 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -145,6 +145,7 @@
 ; mold/optimized/gdb-index.cc.SPARC64.cc.ll
 ; mold/optimized/gdb-index.cc.X86_64.cc.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
+; opencv/optimized/simple_color_balance.cpp.ll
 ; openusd/optimized/patchTree.cpp.ll
 ; protobuf/optimized/dynamic_message.cc.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll

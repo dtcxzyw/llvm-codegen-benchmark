@@ -1,9 +1,8 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; qemu/optimized/tcg.c.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll

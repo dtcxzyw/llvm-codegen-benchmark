@@ -64,9 +64,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; oiio/optimized/exrinput.cpp.ll
-; openblas/optimized/dsum_k.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:

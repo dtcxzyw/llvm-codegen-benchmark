@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	setne	%cl
@@ -6,7 +6,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000003ca:                   # @func00000000000003ca
+func0000000000000d8a:                   # @func0000000000000d8a
 	movl	%edx, %eax
 	orq	%rsi, %rax
 	setne	%cl
@@ -14,16 +14,7 @@ func00000000000003ca:                   # @func00000000000003ca
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000148:                   # @func0000000000000148
-	movl	%edx, %eax
-	addq	%rsi, %rax
-	cmpq	$2, %rax
-	setb	%cl
-	cmpq	$2, %rdi
-	setae	%al
-	andb	%cl, %al
-	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	cmpq	$262144, %rax                   # imm = 0x40000

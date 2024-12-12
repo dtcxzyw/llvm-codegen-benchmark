@@ -1,6 +1,7 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; abseil-cpp/optimized/city_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; darktable/optimized/introspection_colortransfer.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
@@ -37,7 +38,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %reass.add = shl i64 %0, 1
-  %2 = add i64 %reass.add, %1
+  %2 = add i64 %1, %reass.add
   ret i64 %2
 }
 
@@ -47,7 +48,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %reass.add = shl i64 %0, 1
-  %2 = add i64 %reass.add, %1
+  %2 = add i64 %1, %reass.add
   ret i64 %2
 }
 
@@ -57,7 +58,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %reass.add = shl i64 %0, 1
-  %2 = add i64 %reass.add, %1
+  %2 = add i64 %1, %reass.add
   ret i64 %2
 }
 
@@ -67,7 +68,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %reass.add = shl i64 %0, 1
-  %2 = add i64 %reass.add, %1
+  %2 = add i64 %1, %reass.add
   ret i64 %2
 }
 

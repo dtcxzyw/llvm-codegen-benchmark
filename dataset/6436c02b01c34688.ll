@@ -1,25 +1,9 @@
 
-; 162 occurrences:
+; 146 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
-; entt/optimized/benchmark.cpp.ll
-; entt/optimized/custom_identifier.cpp.ll
-; entt/optimized/entity_copy.cpp.ll
-; entt/optimized/group.cpp.ll
-; entt/optimized/handle.cpp.ll
-; entt/optimized/helper.cpp.ll
-; entt/optimized/meta_ctor.cpp.ll
-; entt/optimized/observer.cpp.ll
-; entt/optimized/organizer.cpp.ll
-; entt/optimized/registry.cpp.ll
-; entt/optimized/runtime_view.cpp.ll
-; entt/optimized/sigh_mixin.cpp.ll
-; entt/optimized/signal_less.cpp.ll
-; entt/optimized/snapshot.cpp.ll
-; entt/optimized/storage.cpp.ll
-; entt/optimized/view.cpp.ll
 ; faiss/optimized/IndexIVFSpectralHash.cpp.ll
 ; faiss/optimized/IndexLSH.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
@@ -163,13 +147,13 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000154(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
   %5 = add nsw i64 %4, -2
   %6 = lshr i64 %5, 1
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp samesign ult i64 %6, %0
   ret i1 %7
 }
 
@@ -177,7 +161,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000146(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
@@ -192,7 +176,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -205,13 +189,41 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000158(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
   %5 = add nsw i64 %4, -1
   %6 = lshr i64 %5, 1
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp samesign ugt i64 %6, %0
+  ret i1 %7
+}
+
+; 16 occurrences:
+; entt/optimized/benchmark.cpp.ll
+; entt/optimized/custom_identifier.cpp.ll
+; entt/optimized/entity_copy.cpp.ll
+; entt/optimized/group.cpp.ll
+; entt/optimized/handle.cpp.ll
+; entt/optimized/helper.cpp.ll
+; entt/optimized/meta_ctor.cpp.ll
+; entt/optimized/observer.cpp.ll
+; entt/optimized/organizer.cpp.ll
+; entt/optimized/registry.cpp.ll
+; entt/optimized/runtime_view.cpp.ll
+; entt/optimized/sigh_mixin.cpp.ll
+; entt/optimized/signal_less.cpp.ll
+; entt/optimized/snapshot.cpp.ll
+; entt/optimized/storage.cpp.ll
+; entt/optimized/view.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000144(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 2
+  %5 = add nsw i64 %4, 1023
+  %6 = lshr i64 %5, 10
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 

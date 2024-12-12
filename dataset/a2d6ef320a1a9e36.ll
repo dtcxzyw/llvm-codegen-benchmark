@@ -28,7 +28,7 @@ entry:
   ret i32 %4
 }
 
-; 73 occurrences:
+; 72 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/bmcFault.c.ll
@@ -37,7 +37,6 @@ entry:
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
 ; abc/optimized/cnfCut.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/wlcNtk.c.ll
@@ -111,7 +110,7 @@ entry:
   ret i32 %4
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -134,7 +133,6 @@ entry:
 ; openusd/optimized/loopfilter.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
-; slurm/optimized/ebpf.ll
 ; wireshark/optimized/capsa.c.ll
 ; wireshark/optimized/packet-arp.c.ll
 ; wireshark/optimized/packet-c1222.c.ll
@@ -292,6 +290,8 @@ entry:
 }
 
 ; 56 occurrences:
+; boost/optimized/parser_utils.ll
+; boost/optimized/src.ll
 ; cpython/optimized/unicodeobject.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -343,8 +343,6 @@ entry:
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; tev/optimized/Common.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll

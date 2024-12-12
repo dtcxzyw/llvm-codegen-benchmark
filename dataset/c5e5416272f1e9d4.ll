@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_net_ne2000.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d8(i8 %0, i32 %1) #0 {
+define i32 @func00000000000001a8(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
   %3 = add nsw i32 %2, -32768
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f1(i8 %0, i32 %1) #0 {
+define i32 @func00000000000001e1(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 6
   %3 = add nuw nsw i32 %2, 128
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/dlp.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000005a(i8 %0, i32 %1) #0 {
+define i32 @func00000000000000aa(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, -9

@@ -1,4 +1,4 @@
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000187:                   # @func0000000000000187
 	incq	%rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx
@@ -6,11 +6,12 @@ func00000000000000c6:                   # @func00000000000000c6
 	cmovneq	%rcx, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	incq	%rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx
 	movl	%edx, %ecx
 	cmovneq	%rcx, %rax
-	leaq	(%rdi,%rax,4), %rax
+	leaq	(%rax,%rax,2), %rax
+	leaq	(%rdi,%rax,8), %rax
 	retq

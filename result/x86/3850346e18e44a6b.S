@@ -21,14 +21,6 @@ func0000000000000009:                   # @func0000000000000009
 	shll	$20, %edi
 	leal	9219(%rax,%rdi), %eax
 	retq
-func0000000000000047:                   # @func0000000000000047
-	xorl	%eax, %eax
-	cmpl	$6, %esi
-	setae	%al
-	shll	$5, %eax
-	shll	$6, %edi
-	orl	%edi, %eax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
 	testl	%esi, %esi

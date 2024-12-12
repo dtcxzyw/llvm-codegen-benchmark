@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 89 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/extraUtilPath.c.ll
@@ -18,7 +18,6 @@
 ; influxdb-rs/optimized/1zobaqtttt01ywwe.ll
 ; influxdb-rs/optimized/380gcqze52ow6205.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/dm-raid1.ll
@@ -45,6 +44,7 @@
 ; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
@@ -64,7 +64,6 @@
 ; ruby/optimized/marshal.ll
 ; ruby/optimized/thread.ll
 ; rustfmt-rs/optimized/3n0n7c4xrusd0kzl.ll
-; spike/optimized/clz8.ll
 ; sqlite/optimized/sqlite3.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
@@ -81,6 +80,15 @@
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/3wk2sbofyuh9r9t3rhig8ynyg.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/7nyodpla10x7d0ixqrkhccie4.ll
+; zed-rs/optimized/9jkx32jki2vcljeo0xctxc8uw.ll
+; zed-rs/optimized/a8gnqmwrn3029hplkci6d0ejl.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -94,7 +102,7 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000004(i64 %0) #0 {
+define i8 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 2251799813685248
   %.not.not = icmp eq i64 %1, 0

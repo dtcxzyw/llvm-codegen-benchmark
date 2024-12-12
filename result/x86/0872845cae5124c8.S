@@ -20,3 +20,8 @@ func0000000000000060:                   # @func0000000000000060
 	cmpl	$1, %esi
 	sbbw	$-1, %ax
 	retq
+func0000000000000020:                   # @func0000000000000020
+	movl	%edi, %eax
+	cmpl	$8, %esi
+	adcw	$0, %ax
+	retq

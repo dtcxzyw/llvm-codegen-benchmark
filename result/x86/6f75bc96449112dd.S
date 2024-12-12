@@ -16,7 +16,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	xorl	%edx, %edx
@@ -25,7 +25,7 @@ func0000000000000036:                   # @func0000000000000036
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	xorl	%edx, %edx
@@ -34,7 +34,7 @@ func0000000000000021:                   # @func0000000000000021
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	xorl	%edx, %edx

@@ -5,10 +5,9 @@
 define i1 @func0000000000000001(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
-  %4 = zext i1 %3 to i64
-  %5 = sub i64 0, %0
-  %6 = icmp eq i64 %4, %5
-  ret i1 %6
+  %.neg = sext i1 %3 to i64
+  %4 = icmp eq i64 %0, %.neg
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -18,7 +17,7 @@ define i1 @func0000000000000008(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp ugt i64 %5, 2047
   ret i1 %6
 }
@@ -27,11 +26,11 @@ entry:
 ; openexr/optimized/parse_header.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i1 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp sgt i64 %5, 2147483647
   ret i1 %6
 }
@@ -42,11 +41,11 @@ entry:
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i1 %1, i1 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = icmp eq i64 %5, 1
   ret i1 %6
 }
@@ -54,11 +53,11 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/shapes.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i1 %1, i1 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp ugt i64 %5, 1
   ret i1 %6
 }
@@ -70,7 +69,7 @@ define i1 @func000000000000000a(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp sgt i64 %5, 2
   ret i1 %6
 }

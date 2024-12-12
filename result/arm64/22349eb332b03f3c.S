@@ -1,114 +1,73 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	movi	v2.4s, #8
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
+	add	w0, w0, #8
 	ret
                                         // -- End function
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	movi	v2.4s, #63
-	shl	v0.4s, v0.4s, #2
-	shl	v1.4s, v1.4s, #2
-	add	v1.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushr	v0.4s, v0.4s, #6
-	ushr	v1.4s, v1.4s, #6
+	lsl	w8, w0, #2
+	add	w8, w8, #63
+	lsr	w0, w8, #6
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mvni	v2.4s, #127
-	shl	v0.4s, v0.4s, #7
-	shl	v1.4s, v1.4s, #7
-	add	v1.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushr	v0.4s, v0.4s, #8
-	ushr	v1.4s, v1.4s, #8
+	lsl	w8, w0, #7
+	sub	w8, w8, #128
+	lsr	w0, w8, #8
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	movi	v2.4s, #7
-	add	v0.4s, v0.4s, v0.4s
-	add	v1.4s, v1.4s, v1.4s
-	add	v1.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushr	v0.4s, v0.4s, #3
-	ushr	v1.4s, v1.4s, #3
+	lsl	w8, w0, #1
+	add	w8, w8, #7
+	lsr	w0, w8, #3
 	ret
                                         // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	mvni	v2.4s, #250, msl #16
-	shl	v0.4s, v0.4s, #16
-	shl	v1.4s, v1.4s, #16
-	add	v1.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushr	v0.4s, v0.4s, #8
-	ushr	v1.4s, v1.4s, #8
+	lsl	w8, w0, #16
+	sub	w8, w8, #4016, lsl #12          // =16449536
+	lsr	w0, w8, #8
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	movi	v2.4s, #6
-	add	v0.4s, v0.4s, v0.4s
-	add	v1.4s, v1.4s, v1.4s
-	add	v1.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushr	v0.4s, v0.4s, #8
-	ushr	v1.4s, v1.4s, #8
+	lsl	w8, w0, #1
+	add	w8, w8, #6
+	lsr	w0, w8, #8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v2.4s, #5
-	add	v1.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v2.4s
-	bic	v0.4s, #240, lsl #24
-	bic	v1.4s, #240, lsl #24
+	add	w8, w0, #5
+	and	w0, w8, #0xfffffff
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	movi	v2.4s, #1
-	movi	v3.4s, #7, msl #16
-	add	v1.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v2.4s
-	and	v0.16b, v0.16b, v3.16b
-	and	v1.16b, v1.16b, v3.16b
+	add	w8, w0, #1
+	and	w0, w8, #0x7ffff
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xffffffffffffffff
-	shl	v0.4s, v0.4s, #2
-	shl	v1.4s, v1.4s, #2
-	add	v1.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushr	v0.4s, v0.4s, #1
-	ushr	v1.4s, v1.4s, #1
+	lsl	w8, w0, #2
+	sub	w8, w8, #1
+	lsr	w0, w8, #1
 	ret
                                         // -- End function
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	mvni	v2.4s, #3
-	shl	v0.4s, v0.4s, #2
-	shl	v1.4s, v1.4s, #2
-	add	v1.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushr	v0.4s, v0.4s, #3
-	ushr	v1.4s, v1.4s, #3
+	lsl	w8, w0, #2
+	sub	w8, w8, #4
+	lsr	w0, w8, #3
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xff000000ff0000
-	shl	v0.4s, v0.4s, #6
-	shl	v1.4s, v1.4s, #6
-	add	v1.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushr	v0.4s, v0.4s, #10
-	ushr	v1.4s, v1.4s, #10
+	lsl	w8, w0, #6
+	add	w8, w8, #4080, lsl #12          // =16711680
+	lsr	w0, w8, #10
 	ret
                                         // -- End function

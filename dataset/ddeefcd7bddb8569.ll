@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaIf.c.ll
@@ -13,13 +13,13 @@
 ; arrow/optimized/hashing.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
+; boost/optimized/alloc_lib.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; grpc/optimized/frame_settings.cc.ll
 ; grpc/optimized/retry_filter_legacy_call_data.cc.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; hdf5/optimized/H5Z.c.ll
-; libquic/optimized/custom_extensions.c.ll
 ; linux/optimized/devres.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/ehci-hcd.ll
@@ -39,7 +39,6 @@
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; minetest/optimized/mapblock.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; openusd/optimized/flatteningSceneIndex.cpp.ll
 ; ruby/optimized/error.ll
@@ -50,11 +49,11 @@ define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
-; 105 occurrences:
+; 107 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -111,6 +110,7 @@ entry:
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/superAnd.c.ll
 ; abc/optimized/superGate.c.ll
+; boost/optimized/alloc_lib.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll
 ; git/optimized/receive-pack.ll
@@ -129,6 +129,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/tf_importer.cpp.ll
 ; postgres/optimized/lock.ll
@@ -169,7 +170,7 @@ entry:
   ret i32 %4
 }
 
-; 142 occurrences:
+; 139 occurrences:
 ; abc/optimized/abcAttach.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -229,6 +230,7 @@ entry:
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -237,7 +239,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -295,15 +296,12 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/crc5.c.ll
 ; wireshark/optimized/erf.c.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; wireshark/optimized/packet-couchbase.c.ll
 ; wireshark/optimized/packet-ftdi-mpsse.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-mac-nr.c.ll
-; wireshark/optimized/packet-netanalyzer.c.ll
 ; wireshark/optimized/packet-ocfs2.c.ll
-; wireshark/optimized/packet-sita.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
@@ -337,7 +335,8 @@ entry:
   ret i32 %4
 }
 
-; 30 occurrences:
+; 31 occurrences:
+; boost/optimized/alloc_lib.ll
 ; linux/optimized/cgroup-v1.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/cistpl.ll
@@ -401,7 +400,7 @@ define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -447,7 +446,7 @@ define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 64, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -458,7 +457,7 @@ define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nsw i32 -1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -469,7 +468,7 @@ define i32 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

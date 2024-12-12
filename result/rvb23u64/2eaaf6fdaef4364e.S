@@ -6,7 +6,7 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	andi	a1, a1, 1
 	slli.uw	a3, a2, 3
 	slli.uw	a2, a2, 7
@@ -17,7 +17,7 @@ func000000000000000a:                   # @func000000000000000a
 	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	andi	a1, a1, 1
 	sext.w	a2, a2
 	li	a3, -4
@@ -29,28 +29,31 @@ func000000000000001a:                   # @func000000000000001a
 	add	a0, a0, a2
 	addi	a0, a0, 52
 	ret
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	andi	a1, a1, 1
-	zext.w	a2, a2
-	li	a3, -4
-	czero.nez	a1, a3, a1
-	lui	a3, 2
-	addiw	a3, a3, 368
-	mul	a2, a2, a3
-	add	a0, a0, a1
+	slli.uw	a2, a2, 3
+	sh2add	a2, a2, a2
 	add	a0, a0, a2
-	addi	a0, a0, 36
+	li	a2, 12
+	czero.nez	a1, a2, a1
+	add	a0, a0, a1
 	ret
-func000000000000000b:                   # @func000000000000000b
+func000000000000000e:                   # @func000000000000000e
 	andi	a1, a1, 1
-	zext.w	a2, a2
-	li	a3, 1144
-	mul	a2, a2, a3
-	li	a3, -528
+	slli.uw	a2, a2, 5
 	add	a0, a0, a2
-	czero.nez	a1, a3, a1
+	li	a2, -32
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, 608
+	ret
+func000000000000001e:                   # @func000000000000001e
+	andi	a1, a1, 1
+	sext.w	a2, a2
+	sh3add	a2, a2, a2
+	sh2add	a0, a2, a0
+	li	a2, -36
+	czero.eqz	a1, a2, a1
+	add	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
 	andi	a1, a1, 1
@@ -62,17 +65,7 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	addi	a0, a0, -4
 	ret
-func000000000000001b:                   # @func000000000000001b
-	andi	a1, a1, 1
-	sext.w	a2, a2
-	sh1add	a2, a2, a2
-	sh2add	a0, a2, a0
-	li	a2, -2
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 8
-	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	andi	a1, a1, 1
 	sext.w	a2, a2
 	li	a3, 24

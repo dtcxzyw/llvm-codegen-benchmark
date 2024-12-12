@@ -10,7 +10,7 @@ entry:
   %2 = add i8 %1, -14
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %3, 8
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = add i8 %1, 1
   %3 = zext nneg i8 %2 to i16
   %4 = shl nuw nsw i16 %3, 8
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 

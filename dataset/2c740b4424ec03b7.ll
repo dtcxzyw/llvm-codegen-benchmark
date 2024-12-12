@@ -1,5 +1,5 @@
 
-; 233 occurrences:
+; 234 occurrences:
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
@@ -233,14 +233,15 @@
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = sub nuw nsw i32 8, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %1, i64 %5
-  %7 = icmp eq ptr %6, %0
+  %6 = getelementptr nusw nuw i8, ptr %1, i64 %5
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 

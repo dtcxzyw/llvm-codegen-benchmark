@@ -1,14 +1,12 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sext.w	a0, a0
 	sext.w	a1, a1
-	li	a2, 64
 	snez	a0, a0
-	czero.eqz	a1, a2, a1
-	slli	a0, a0, 4
-	or	a0, a0, a1
-	addi	a0, a0, 1
+	snez	a1, a1
+	slli	a1, a1, 13
+	sh1add	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 320

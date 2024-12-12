@@ -1,5 +1,5 @@
 
-; 99 occurrences:
+; 98 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcHieCec.c.ll
@@ -92,7 +92,6 @@
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/mpmAbc.c.ll
 ; abc/optimized/sbdCore.c.ll
-; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; abc/optimized/wlcAbs.c.ll
@@ -105,7 +104,7 @@ entry:
   %2 = lshr i64 %1, 61
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 1
-  %5 = xor i32 %4, %0
+  %5 = xor i32 %0, %4
   ret i32 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 50 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; clap-rs/optimized/thb07xvb2pkztra.ll
 ; cmake/optimized/archive_getdate.c.ll
@@ -43,6 +43,13 @@
 ; velox/optimized/ElementAt.cpp.ll
 ; velox/optimized/Subscript.cpp.ll
 ; wasmtime-rs/optimized/1jbxepb6u2xll6bg.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/336xmb53s74x7fvnwv8sppb05.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
+; zed-rs/optimized/dqryhdkxpzkfeay9pjzpwnhia.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0) #0 {
 entry:
@@ -51,62 +58,7 @@ entry:
   ret i64 %2
 }
 
-; 46 occurrences:
-; abc/optimized/sswRarity.c.ll
-; arrow/optimized/basic_decimal.cc.ll
-; c3c/optimized/bigint.c.ll
-; cpython/optimized/longobject.ll
-; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; eastl/optimized/Int128_t.cpp.ll
-; eastl/optimized/TestBitVector.cpp.ll
-; folly/optimized/EventBase.cpp.ll
-; git/optimized/combine-diff.ll
-; git/optimized/xutils.ll
-; glslang/optimized/Intermediate.cpp.ll
-; glslang/optimized/ParseContextBase.cpp.ll
-; glslang/optimized/ParseHelper.cpp.ll
-; glslang/optimized/SpirvIntrinsics.cpp.ll
-; glslang/optimized/hlslParseHelper.cpp.ll
-; glslang/optimized/iomapper.cpp.ll
-; glslang/optimized/linkValidate.cpp.ll
-; jq/optimized/utf16_be.ll
-; linux/optimized/init_64.ll
-; linux/optimized/pgtable.ll
-; llvm/optimized/CloneFunction.cpp.ll
-; llvm/optimized/Evaluator.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
-; llvm/optimized/SimplifyCFG.cpp.ll
-; llvm/optimized/StructurizeCFG.cpp.ll
-; ockam-rs/optimized/1145kugil9dl94a2.ll
-; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
-; oniguruma/optimized/utf16_be.ll
-; openjdk/optimized/XToolkit.ll
-; openssl/optimized/libcommon-lib-tls_pad.ll
-; openssl/optimized/libcrypto-lib-f_generic.ll
-; openssl/optimized/libcrypto-shlib-f_generic.ll
-; openssl/optimized/libssl-shlib-tls_pad.ll
-; osqp/optimized/csc_utils.c.ll
-; php/optimized/tm2unixtime.ll
-; php/optimized/zend_virtual_cwd.ll
-; portaudio/optimized/pa_linux_alsa.c.ll
-; pyo3-rs/optimized/3d4odyxrz46ne8x3.ll
-; quickjs/optimized/quickjs.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
-; ruby/optimized/vm.ll
-; spike/optimized/f128_sqrt.ll
-; spike/optimized/s_mulAddF128.ll
-; taskflow/optimized/exclusive_scan.cpp.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0) #0 {
-entry:
-  %1 = icmp eq i64 %0, 1
-  %2 = sext i1 %1 to i64
-  ret i64 %2
-}
-
-; 181 occurrences:
+; 187 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/dauNpn2.c.ll
@@ -117,6 +69,7 @@ entry:
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/data.cc.ll
+; boost/optimized/url_base.ll
 ; c3c/optimized/bigint.c.ll
 ; cmake/optimized/base64.c.ll
 ; cmake/optimized/mime.c.ll
@@ -189,8 +142,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -286,8 +237,15 @@ entry:
 ; spike/optimized/s_mulAddF64.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tokio-rs/optimized/58zica37k9qw0rn.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
 ; velox/optimized/BitUtil.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0bnc87yviwo8pzd5mdfzedrf9.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0) #0 {
 entry:
@@ -296,13 +254,63 @@ entry:
   ret i64 %2
 }
 
-; 6 occurrences:
+; 44 occurrences:
+; abc/optimized/sswRarity.c.ll
+; arrow/optimized/basic_decimal.cc.ll
+; c3c/optimized/bigint.c.ll
+; cpython/optimized/longobject.ll
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; eastl/optimized/Int128_t.cpp.ll
+; eastl/optimized/TestBitVector.cpp.ll
+; folly/optimized/EventBase.cpp.ll
+; git/optimized/combine-diff.ll
+; git/optimized/xutils.ll
+; glslang/optimized/Intermediate.cpp.ll
+; glslang/optimized/ParseContextBase.cpp.ll
+; glslang/optimized/ParseHelper.cpp.ll
+; glslang/optimized/SpirvIntrinsics.cpp.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
+; glslang/optimized/iomapper.cpp.ll
+; glslang/optimized/linkValidate.cpp.ll
+; jq/optimized/utf16_be.ll
+; linux/optimized/init_64.ll
+; linux/optimized/pgtable.ll
+; llvm/optimized/CloneFunction.cpp.ll
+; llvm/optimized/Evaluator.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/StructurizeCFG.cpp.ll
+; ockam-rs/optimized/1145kugil9dl94a2.ll
+; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
+; oniguruma/optimized/utf16_be.ll
+; openjdk/optimized/XToolkit.ll
+; openssl/optimized/libcommon-lib-tls_pad.ll
+; openssl/optimized/libcrypto-lib-f_generic.ll
+; openssl/optimized/libcrypto-shlib-f_generic.ll
+; openssl/optimized/libssl-shlib-tls_pad.ll
+; osqp/optimized/csc_utils.c.ll
+; php/optimized/tm2unixtime.ll
+; php/optimized/zend_virtual_cwd.ll
+; portaudio/optimized/pa_linux_alsa.c.ll
+; pyo3-rs/optimized/3d4odyxrz46ne8x3.ll
+; quickjs/optimized/quickjs.ll
+; ruby/optimized/vm.ll
+; spike/optimized/f128_sqrt.ll
+; spike/optimized/s_mulAddF128.ll
+; taskflow/optimized/exclusive_scan.cpp.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0) #0 {
+entry:
+  %1 = icmp eq i64 %0, 0
+  %2 = sext i1 %1 to i64
+  ret i64 %2
+}
+
+; 3 occurrences:
 ; abc/optimized/bmcMaj.c.ll
-; lightgbm/optimized/parser.cpp.ll
-; lightgbm/optimized/tree.cpp.ll
 ; openssl/optimized/libcrypto-lib-x509_vpm.ll
 ; openssl/optimized/libcrypto-shlib-x509_vpm.ll
-; php/optimized/phar.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0) #0 {
 entry:
@@ -322,18 +330,42 @@ entry:
   ret i64 %2
 }
 
-; 7 occurrences:
+; 4 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; lightgbm/optimized/parser.cpp.ll
+; lightgbm/optimized/tree.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0) #0 {
+entry:
+  %1 = icmp samesign ugt i64 %0, 18014398509481983
+  %2 = sext i1 %1 to i64
+  ret i64 %2
+}
+
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/Int128_t.cpp.ll
-; linux/optimized/timeconv.ll
 ; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/FastISel.cpp.ll
 ; mimalloc/optimized/bitmap.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = icmp ult i64 %0, 4294967296
+  %1 = icmp ult i64 %0, 42949672960
+  %2 = sext i1 %1 to i64
+  ret i64 %2
+}
+
+; 3 occurrences:
+; linux/optimized/timeconv.ll
+; llvm/optimized/FastISel.cpp.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0) #0 {
+entry:
+  %1 = icmp samesign ult i64 %0, 2
   %2 = sext i1 %1 to i64
   ret i64 %2
 }

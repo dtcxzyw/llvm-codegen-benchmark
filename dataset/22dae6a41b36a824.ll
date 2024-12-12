@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ASTUtils.cpp.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
@@ -13,6 +13,7 @@
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; nuttx/optimized/fs_dir.c.ll
 ; tls-rs/optimized/7y9936vu35zt2sp.ll
+; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
@@ -24,7 +25,7 @@ entry:
   ret i1 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -42,6 +43,7 @@ entry:
 ; openmpi/optimized/psquash_native.ll
 ; wireshark/optimized/packet-netflow.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i16 %0) #0 {
 entry:

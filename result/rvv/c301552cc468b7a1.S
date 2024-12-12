@@ -3,7 +3,7 @@ func000000000000003f:                   # @func000000000000003f
 	vsll.vi	v12, v12, 16
 	vsll.vi	v10, v10, 24
 	lui	a0, 235216
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vor.vv	v8, v8, v10
 	addiw	a0, a0, -328
 	vxor.vx	v8, v8, a0
@@ -18,7 +18,7 @@ func000000000000003b:                   # @func000000000000003b
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsll.vx	v10, v10, a1
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vor.vv	v8, v8, v10
 	vxor.vx	v8, v8, a0
 	ret

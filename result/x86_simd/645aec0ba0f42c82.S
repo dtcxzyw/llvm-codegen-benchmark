@@ -28,5 +28,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vpcmpltuq	%ymm2, %ymm1, %k1
-	vpmovsxdq	%xmm0, %ymm0 {%k1} {z}
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpmovsxdq	%xmm0, %ymm1 {%k1}
+	vmovdqa	%ymm1, %ymm0
 	retq

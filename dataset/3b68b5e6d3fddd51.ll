@@ -1,8 +1,7 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; folly/optimized/Conv.cpp.ll
 ; icu/optimized/unames.ll
-; linux/optimized/eht.ll
 ; linux/optimized/nl80211.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/Frontend.cpp.ll
@@ -12,7 +11,6 @@
 ; postgres/optimized/pg_dump.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; wireshark/optimized/packet-btle.c.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i1 %1) #0 {
 entry:

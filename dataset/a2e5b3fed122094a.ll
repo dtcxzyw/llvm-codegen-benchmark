@@ -5,7 +5,7 @@
 ; wireshark/optimized/packet-m2tp.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c7(i32 %0) #0 {
+define i32 @func0000000000000187(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 7
   %2 = icmp eq i32 %1, 0
@@ -25,7 +25,7 @@ entry:
 ; wireshark/optimized/pcapng.c.ll
 ; wireshark/optimized/text_import.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c4(i32 %0) #0 {
+define i32 @func0000000000000184(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 7
   %2 = icmp eq i32 %1, 0
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvsel.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c5(i32 %0) #0 {
+define i32 @func0000000000000185(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 3
   %2 = icmp eq i32 %1, 0

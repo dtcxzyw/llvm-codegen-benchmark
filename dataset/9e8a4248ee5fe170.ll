@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; graphviz/optimized/htmltable.c.ll
-; proj/optimized/crast.cpp.ll
 ; proj/optimized/som.cpp.ll
 ; quantlib/optimized/analyticptdhestonengine.ll
 ; raylib/optimized/rcore.c.ll

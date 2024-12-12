@@ -16,10 +16,10 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000035a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000006aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, 8
   %6 = icmp sgt i32 %5, %0
   ret i1 %6
@@ -28,10 +28,10 @@ entry:
 ; 1 occurrences:
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000062a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, 8
   %6 = icmp sgt i32 %5, %0
   ret i1 %6
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/SpanClipRenderer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = add nsw i32 %3, %1
@@ -52,10 +52,10 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, -32
   %6 = icmp eq i32 %5, %0
   ret i1 %6
@@ -64,12 +64,12 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000075(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, 2
-  %6 = icmp ule i32 %5, %0
+  %6 = icmp samesign ule i32 %5, %0
   ret i1 %6
 }
 
@@ -77,12 +77,12 @@ entry:
 ; darktable/optimized/CiffEntry.cpp.ll
 ; darktable/optimized/TiffEntry.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000075(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nuw nsw i32 %4, 4
-  %6 = icmp ule i32 %5, %0
+  %6 = icmp samesign ule i32 %5, %0
   ret i1 %6
 }
 
@@ -92,7 +92,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, 1
   %6 = icmp ult i32 %5, %0
   ret i1 %6
@@ -102,7 +102,7 @@ entry:
 ; gromacs/optimized/dlasq4.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = add nsw i32 %3, %1
@@ -114,12 +114,12 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007f8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = add nuw nsw i32 %3, %1
   %5 = add nuw nsw i32 %4, 2
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp samesign ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -129,7 +129,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, 1
   %6 = icmp eq i32 %5, %0
   ret i1 %6

@@ -10,7 +10,7 @@ define i1 @func0000000000000001(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
   %3 = trunc i64 %2 to i8
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
@@ -23,7 +23,7 @@ define i1 @func000000000000000c(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 16
   %3 = trunc i64 %2 to i8
-  %4 = icmp ne i8 %3, %0
+  %4 = icmp ne i8 %0, %3
   ret i1 %4
 }
 

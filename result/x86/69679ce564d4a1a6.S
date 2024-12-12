@@ -7,13 +7,13 @@ func0000000000000001:                   # @func0000000000000001
 	sbbq	%rax, %rax
 	orq	%rdx, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shlq	$7, %rdi
 	testb	%sil, %sil
 	movl	$1073741824, %eax               # imm = 0x40000000
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shlq	$48, %rdi
 	xorl	%eax, %eax
 	testl	%esi, %esi

@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
+define i1 @func0000000000000081(i64 %0) #0 {
 entry:
   %.mask1 = and i64 %0, 4278190080
   %1 = icmp eq i64 %.mask1, 4278190080
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0) #0 {
+define i1 @func0000000000000086(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = icmp slt i32 %1, 8192

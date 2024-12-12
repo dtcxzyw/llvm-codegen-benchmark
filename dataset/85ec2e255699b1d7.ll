@@ -7,7 +7,7 @@
 ; stb/optimized/stb_image_resize2.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -102
   %4 = icmp ult i32 %3, 868
@@ -22,7 +22,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_mul.ll
 ; openssl/optimized/libcrypto-shlib-bn_mul.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000144(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp ult i32 %3, 3
@@ -70,7 +70,7 @@ entry:
 ; llvm/optimized/X86.cpp.ll
 ; llvm/optimized/XCore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp ult i32 %3, 31
@@ -80,17 +80,11 @@ entry:
   ret i1 %7
 }
 
-; 8 occurrences:
+; 2 occurrences:
 ; graphviz/optimized/strmatch.c.ll
-; icu/optimized/ubidiwrt.ll
-; llvm/optimized/InstCombineCasts.cpp.ll
-; llvm/optimized/InstCombineCompares.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/VectorCombine.cpp.ll
-; quickjs/optimized/libregexp.ll
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000484(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -123
   %4 = icmp ult i32 %3, -26
@@ -103,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/resourcedivision.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c4(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -9
   %4 = icmp ult i32 %3, -8

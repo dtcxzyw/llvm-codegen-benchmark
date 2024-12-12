@@ -8,11 +8,6 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%edx, %edx
 	cmovnsq	%rsi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movq	%rdi, %rax
-	cmpl	$11, %edx
-	cmovbq	%rsi, %rax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	movq	%rdi, %rax
 	testl	%edx, %edx
@@ -25,6 +20,21 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movq	%rdi, %rax
-	testl	%edx, %edx
+	cmpl	$-1, %edx
 	cmoveq	%rsi, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movq	%rdi, %rax
+	cmpl	$64, %edx
+	cmovaeq	%rsi, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movq	%rdi, %rax
+	cmpl	$2, %edx
+	cmovbq	%rsi, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movq	%rdi, %rax
+	cmpl	$2, %edx
+	cmovbq	%rsi, %rax
 	retq

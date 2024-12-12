@@ -3,24 +3,20 @@
 ; openusd/optimized/mvref_common.c.ll
 ; qemu/optimized/ahci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 8
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
-; 15 occurrences:
-; linux/optimized/blk-settings.ll
+; 11 occurrences:
 ; linux/optimized/e100.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_display_device.ll
 ; linux/optimized/intel_pch.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/intel_step.ll
 ; linux/optimized/intel_uc.ll
 ; linux/optimized/intel_workarounds.ll
 ; openjdk/optimized/ad_x86_pipeline.ll
@@ -56,10 +52,10 @@ entry:
 ; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
 ; softposit-rs/optimized/3x9ny7yhpewmwf1y.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -67,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
   %3 = and i32 %2, %0
@@ -80,29 +76,26 @@ entry:
 ; postgres/optimized/lock.ll
 ; yosys/optimized/dfflegalize.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
-; 9 occurrences:
-; linux/optimized/i915_driver.ll
+; 6 occurrences:
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_dp.ll
-; linux/optimized/intel_guc_hwconfig.ll
 ; linux/optimized/intel_lrc.ll
-; linux/optimized/intel_step.ll
 ; linux/optimized/intel_uc_fw.ll
 ; linux/optimized/intel_workarounds.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 30
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }

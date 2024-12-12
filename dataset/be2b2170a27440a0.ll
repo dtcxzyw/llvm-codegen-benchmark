@@ -1,5 +1,5 @@
 
-; 203 occurrences:
+; 202 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
 ; box2d/optimized/b2_revolute_joint.cpp.ll
@@ -152,7 +152,6 @@
 ; postgres/optimized/postinit.ll
 ; postgres/optimized/print.ll
 ; postgres/optimized/subscriptioncmds.ll
-; postgres/optimized/subselect.ll
 ; postgres/optimized/tablecmds.ll
 ; postgres/optimized/xlogrecovery.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
@@ -212,7 +211,7 @@ entry:
   ret i1 %4
 }
 
-; 24 occurrences:
+; 31 occurrences:
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
 ; coreutils-rs/optimized/3jbb9tw7701fm28c.ll
 ; coreutils-rs/optimized/4qccn4mjmdouwvjm.ll
@@ -224,7 +223,6 @@ entry:
 ; postgres/optimized/geo_ops.ll
 ; postgres/optimized/joinrels.ll
 ; postgres/optimized/selfuncs.ll
-; proj/optimized/io.cpp.ll
 ; rust-analyzer-rs/optimized/32bq2465pah9s0xr.ll
 ; rust-analyzer-rs/optimized/3jiy4rg0squ6unio.ll
 ; rust-analyzer-rs/optimized/4li1jw3llk76lkpw.ll
@@ -237,6 +235,14 @@ entry:
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
 ; yosys/optimized/glift.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/3quypyfrg8uizn5sealer8xsk.ll
+; zed-rs/optimized/6wndapbw172jkqxtgmm5s37me.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/ca5us8h013in59yvcsgdq94h9.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:

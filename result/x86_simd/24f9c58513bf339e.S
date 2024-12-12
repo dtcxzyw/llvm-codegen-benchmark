@@ -1,16 +1,16 @@
-func0000000000000158:                   # @func0000000000000158
+func00000000000002b8:                   # @func00000000000002b8
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpabsd	%ymm1, %ymm1
-	vpcmpltud	%ymm0, %ymm1, %k0
+	vpcmpnleud	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpabsd	%ymm1, %ymm1
-	vpcmpltud	%ymm0, %ymm1, %k0
+	vpcmpnleud	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -16,11 +16,16 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll

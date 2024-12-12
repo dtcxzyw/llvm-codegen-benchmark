@@ -62,3 +62,20 @@ func0000000000000004:                   # @func0000000000000004
 .LBB4_2:                                # %entry
 	mv	a0, a2
 	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a2, a2, 1
+	andi	a0, a0, 1
+	bnez	a2, .LBB5_2
+	li	a2, 3
+	beqz	a0, .LBB5_3
+	j	.LBB5_4
+.LBB5_2:
+	li	a2, 1
+	bnez	a0, .LBB5_4
+.LBB5_3:                                # %entry
+	mv	a2, a1
+.LBB5_4:                                # %entry
+	sext.w	a2, a2
+	sltiu	a0, a2, 3
+	xori	a0, a0, 1
+	ret

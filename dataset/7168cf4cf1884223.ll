@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 62 occurrences:
 ; linux/optimized/ibss.ll
 ; raylib/optimized/rtext.c.ll
 ; ruby/optimized/io.ll
@@ -18,12 +18,10 @@
 ; wireshark/optimized/decode_as_model.cpp.ll
 ; wireshark/optimized/display_filter_edit.cpp.ll
 ; wireshark/optimized/dissector_tables_model.cpp.ll
-; wireshark/optimized/dissector_tables_view.cpp.ll
 ; wireshark/optimized/enabled_protocols_model.cpp.ll
 ; wireshark/optimized/expert_info_dialog.cpp.ll
 ; wireshark/optimized/expert_info_model.cpp.ll
 ; wireshark/optimized/expert_info_proxy_model.cpp.ll
-; wireshark/optimized/expert_info_view.cpp.ll
 ; wireshark/optimized/export_object_dialog.cpp.ll
 ; wireshark/optimized/export_objects_model.cpp.ll
 ; wireshark/optimized/extcap_argument_multiselect.cpp.ll
@@ -52,7 +50,6 @@
 ; wireshark/optimized/proto_tree_model.cpp.ll
 ; wireshark/optimized/rsa_keys_frame.cpp.ll
 ; wireshark/optimized/supported_protocols_model.cpp.ll
-; wireshark/optimized/tabnav_tree_view.cpp.ll
 ; wireshark/optimized/tabnav_tree_widget.cpp.ll
 ; wireshark/optimized/timeline_delegate.cpp.ll
 ; wireshark/optimized/traffic_tab.cpp.ll
@@ -66,7 +63,7 @@
 ; wireshark/optimized/voip_calls_info_model.cpp.ll
 ; wireshark/optimized/wireshark_main_window_slots.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000014c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 2
   %4 = select i1 %0, i1 %3, i1 false
@@ -87,7 +84,7 @@ entry:
 ; wireshark/optimized/packet-uds.c.ll
 ; wireshark/optimized/req_resp_hdrs.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -106,7 +103,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %0, i1 %3, i1 false
@@ -118,7 +115,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/loopnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000101(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 2
   %4 = select i1 %0, i1 %3, i1 false
@@ -171,7 +168,6 @@ entry:
 ; llvm/optimized/PHIElimination.cpp.ll
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
@@ -194,8 +190,9 @@ entry:
 ; php/optimized/logical_filters.ll
 ; postgres/optimized/auth.ll
 ; wireshark/optimized/tvbuff_zlib.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 15
   %4 = select i1 %0, i1 %3, i1 false
@@ -220,7 +217,7 @@ entry:
 ; proxygen/optimized/QPACKCodec.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 2
   %4 = select i1 %0, i1 %3, i1 false

@@ -4,13 +4,13 @@
 ; libwebp/optimized/io_dec.c.ll
 ; openmpi/optimized/osc_sm_component.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sext i32 %1 to i64
   %5 = mul nsw i64 %4, %3
   %6 = getelementptr nusw i64, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 104
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 104
   ret ptr %7
 }
 

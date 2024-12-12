@@ -1,5 +1,5 @@
 
-; 166 occurrences:
+; 171 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/sclSize.c.ll
@@ -7,6 +7,12 @@
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/within.ll
 ; darktable/optimized/darkroom.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_atrous.c.ll
@@ -40,7 +46,6 @@
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; gromacs/optimized/eneconv.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
 ; gromacs/optimized/gmx_angle.cpp.ll
 ; gromacs/optimized/gmx_density.cpp.ll

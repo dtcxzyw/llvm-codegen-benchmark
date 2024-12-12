@@ -21,9 +21,17 @@ func0000000000000038:                   # @func0000000000000038
 	add	a0, a0, a1
 	addiw	a0, a0, 254
 	ret
+func000000000000001e:                   # @func000000000000001e
+	add	a0, a0, a1
+	addiw	a0, a0, 208
+	ret
+func0000000000000014:                   # @func0000000000000014
+	add	a0, a0, a1
+	addiw	a0, a0, 208
+	ret
 func000000000000003c:                   # @func000000000000003c
 	add	a0, a0, a1
-	addiw	a0, a0, 87
+	addiw	a0, a0, 208
 	ret
 func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
@@ -40,10 +48,6 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000020:                   # @func0000000000000020
 	add	a0, a0, a1
 	addiw	a0, a0, 97
-	ret
-func0000000000000014:                   # @func0000000000000014
-	add	a0, a0, a1
-	addiw	a0, a0, 106
 	ret
 func000000000000000e:                   # @func000000000000000e
 	add	a0, a0, a1

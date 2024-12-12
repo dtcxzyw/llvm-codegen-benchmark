@@ -1,4 +1,4 @@
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	li	a0, -2
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -11,7 +11,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	li	a0, -2
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma

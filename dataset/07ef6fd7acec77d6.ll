@@ -73,7 +73,7 @@
 ; ruby/optimized/variable.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0) #0 {
+define i1 @func0000000000000302(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 2048
   %2 = icmp ne i64 %1, 0
@@ -83,7 +83,7 @@ entry:
   ret i1 %5
 }
 
-; 537 occurrences:
+; 536 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absGla.c.ll
@@ -94,7 +94,6 @@ entry:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/bmcChain.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/cecClass.c.ll
 ; abc/optimized/cecIso.c.ll
@@ -133,6 +132,7 @@ entry:
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/llb1Pivot.c.ll
+; boost/optimized/alloc_lib.ll
 ; git/optimized/rev-list.ll
 ; gromacs/optimized/autocorr.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
@@ -147,7 +147,6 @@ entry:
 ; linux/optimized/fork.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/nf_queue.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/setup-bus.ll
 ; linux/optimized/shmem.ll
@@ -622,7 +621,7 @@ entry:
 ; spike/optimized/csrs.ll
 ; spike/optimized/mmu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0) #0 {
+define i1 @func0000000000000042(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 1024
   %2 = icmp eq i64 %1, 0
@@ -632,7 +631,7 @@ entry:
   ret i1 %5
 }
 
-; 725 occurrences:
+; 721 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -684,7 +683,6 @@ entry:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaxi.c.ll
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
@@ -771,7 +769,6 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaStoch.c.ll
 ; abc/optimized/giaStr.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaSweeper.c.ll
@@ -803,7 +800,6 @@ entry:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; linux/optimized/fork.ll
 ; linux/optimized/i915_gpu_error.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/nf_conntrack_core.ll
 ; linux/optimized/serial_core.ll
@@ -1037,7 +1033,6 @@ entry:
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1359,7 +1354,7 @@ entry:
 ; z3/optimized/display_dimacs.cpp.ll
 ; z3/optimized/hwf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0) #0 {
+define i1 @func0000000000000058(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 254
   %2 = icmp eq i64 %1, 12
@@ -1367,18 +1362,6 @@ entry:
   %4 = icmp ne i64 %3, 0
   %5 = or i1 %4, %2
   ret i1 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i64 %0) #0 {
-entry:
-  %1 = icmp ult i64 %0, 8
-  %2 = and i64 %0, 7
-  %3 = icmp ugt i64 %2, 2
-  %4 = or i1 %3, %1
-  ret i1 %4
 }
 
 attributes #0 = { nounwind }

@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 49 occurrences:
 ; abc/optimized/deflate.c.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; arrow/optimized/light_array.cc.ll
@@ -41,7 +41,6 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; ozz-animation/optimized/import2ozz_skel.cc.ll
 ; php/optimized/transports.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
@@ -54,24 +53,25 @@
 define i8 @func0000000000000003(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 3, i8 0
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   %5 = select i1 %1, i8 48, i8 0
   %6 = or disjoint i8 %4, %5
   ret i8 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; ockam-rs/optimized/r526c2e8kd9diy6.ll
 ; opencv/optimized/orb.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 0, i8 6
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   %5 = select i1 %1, i8 0, i8 5
   %6 = or i8 %4, %5
   ret i8 %6
@@ -85,7 +85,7 @@ entry:
 define i8 @func0000000000000002(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 0, i8 32
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   %5 = select i1 %1, i8 0, i8 64
   %6 = or i8 %4, %5
   ret i8 %6

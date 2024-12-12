@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
@@ -23,7 +23,6 @@
 ; proj/optimized/eck2.cpp.ll
 ; proj/optimized/hatano.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(double %0) #0 {
 entry:

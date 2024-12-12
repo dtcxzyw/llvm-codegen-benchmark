@@ -55,7 +55,7 @@ entry:
   %2 = and i32 %1, 511
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = shl nsw i32 %5, 9
   ret i32 %6
 }
@@ -68,7 +68,7 @@ entry:
   %2 = and i32 %1, 15
   %3 = icmp eq i32 %2, 7
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = shl i32 %5, 12
   ret i32 %6
 }
@@ -88,7 +88,7 @@ entry:
   %2 = and i32 %1, 15
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = shl nuw nsw i32 %5, 2
   ret i32 %6
 }
@@ -101,7 +101,7 @@ entry:
   %2 = and i32 %1, 3
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = shl i32 %5, 27
   ret i32 %6
 }
@@ -114,7 +114,7 @@ entry:
   %2 = and i32 %1, 3
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = shl nuw i32 %5, 28
   ret i32 %6
 }
@@ -127,7 +127,7 @@ entry:
   %2 = and i32 %1, 16776192
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = shl i32 %5, 8
   ret i32 %6
 }

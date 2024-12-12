@@ -49,13 +49,3 @@ func0000000000000011:                   # @func0000000000000011
 	vadd.vi	v10, v8, -2
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func000000000000004f:                   # @func000000000000004f
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vi	v0, v10, 3
-	li	a0, 112
-	vmv.v.x	v10, a0
-	li	a0, 88
-	vmerge.vxm	v10, v10, a0, v0
-	vsll.vi	v8, v8, 4
-	vadd.vv	v8, v8, v10
-	ret

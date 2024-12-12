@@ -1,5 +1,5 @@
 
-%struct.pollfd.2906320 = type { i32, i16, i16 }
+%struct.pollfd.3100760 = type { i32, i16, i16 }
 
 ; 1 occurrences:
 ; git/optimized/xmerge.ll
@@ -19,12 +19,12 @@ entry:
 ; graphviz/optimized/shortest.c.ll
 ; libevent/optimized/poll.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr %struct.pollfd.2906320, ptr %0, i64 %5, i32 2
+  %6 = getelementptr %struct.pollfd.3100760, ptr %0, i64 %5, i32 2
   ret ptr %6
 }
 

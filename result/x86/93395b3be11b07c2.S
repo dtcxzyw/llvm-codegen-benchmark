@@ -1,6 +1,6 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shrq	$32, %rdx
 	xorl	%eax, %eax
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	cmovel	%edi, %eax
 	retq

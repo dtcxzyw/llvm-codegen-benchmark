@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 59 occurrences:
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/DeboneProcess.cpp.ll
 ; assimp/optimized/FindInvalidDataProcess.cpp.ll
@@ -17,7 +17,6 @@
 ; hermes/optimized/CodeCoverageProfiler.cpp.ll
 ; hermes/optimized/HBC.cpp.ll
 ; hermes/optimized/ScopeTransformations.cpp.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/bitset.ll
 ; linux/optimized/intel_sseu.ll
@@ -37,7 +36,6 @@
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/MCInstrAnalysis.cpp.ll
 ; llvm/optimized/MachineStableHash.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll

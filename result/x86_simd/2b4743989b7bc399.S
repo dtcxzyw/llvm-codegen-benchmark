@@ -37,7 +37,7 @@ func0000000000000010:                   # @func0000000000000010
 	retq
 .LCPI5_0:
 	.long	1000                            # 0x3e8
-func0000000000000015:                   # @func0000000000000015
+func0000000000000017:                   # @func0000000000000017
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpmulld	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0

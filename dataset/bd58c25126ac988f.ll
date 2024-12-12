@@ -10,17 +10,17 @@
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = call range(i32 0, 33) i32 @llvm.ctpop.i32(i32 %0)
-  %2 = icmp ult i32 %1, 2
+  %2 = icmp samesign ult i32 %1, 2
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = call range(i32 0, 33) i32 @llvm.ctpop.i32(i32 %0)
-  %2 = icmp ult i32 %1, 2
+  %2 = icmp samesign ult i32 %1, 2
   ret i1 %2
 }
 

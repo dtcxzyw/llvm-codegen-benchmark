@@ -17,7 +17,7 @@ entry:
   ret i64 %3
 }
 
-; 142 occurrences:
+; 156 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -31,6 +31,13 @@ entry:
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/partition.ll
+; boost/optimized/src.ll
+; boost/optimized/work_stealing.ll
 ; casadi/optimized/qrsqp.cpp.ll
 ; clamav/optimized/mpool.c.ll
 ; clamav/optimized/server-th.c.ll
@@ -159,6 +166,13 @@ entry:
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; xgboost/optimized/regression_obj.cc.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/di6vqkr45z5qfxmwsnoq97jcv.ll
 ; zstd/optimized/pool.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

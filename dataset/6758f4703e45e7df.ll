@@ -3,7 +3,7 @@
 ; cmake/optimized/formdata.c.ll
 ; curl/optimized/libcurl_la-formdata.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000842(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq i64 %1, 48
@@ -19,7 +19,7 @@ entry:
 ; cpython/optimized/blake2b_impl.ll
 ; cpython/optimized/blake2s_impl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001828(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000006048(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp eq ptr %1, null

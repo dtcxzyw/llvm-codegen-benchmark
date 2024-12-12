@@ -5,9 +5,10 @@ func0000000000000002:                   # @func0000000000000002
 	srli	a1, a0, 8
 	or	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
-	slli	a0, a0, 48
-	srli	a0, a0, 56
-	slli	a1, a0, 7
-	sub	a0, a1, a0
+func0000000000000012:                   # @func0000000000000012
+	lui	a1, 16
+	addiw	a1, a1, -256
+	and	a0, a0, a1
+	srli	a1, a0, 8
+	sub	a0, a0, a1
 	ret

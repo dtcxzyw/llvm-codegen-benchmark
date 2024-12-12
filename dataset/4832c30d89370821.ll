@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
@@ -8,7 +8,6 @@
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/ttm_bo_vm.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll

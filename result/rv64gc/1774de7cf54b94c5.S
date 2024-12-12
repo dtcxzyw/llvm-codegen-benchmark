@@ -16,7 +16,7 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a1, a1, %lo(.LCPI1_0)
 	add	a0, a0, a1
 	fld	fa5, 0(a0)
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fmv.d.x	fa5, zero

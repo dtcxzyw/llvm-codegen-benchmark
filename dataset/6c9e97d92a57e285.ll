@@ -11,7 +11,7 @@ entry:
   %3 = and i32 %2, 1023
   %4 = icmp ne i32 %3, 772
   %5 = select i1 %4, i1 true, i1 %1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

@@ -8,7 +8,7 @@
 ; ruby/optimized/gc.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000318(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ne i16 %0, 0
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000202(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, 255
   %3 = icmp eq ptr %0, null
@@ -123,7 +123,7 @@ entry:
 ; verilator/optimized/V3Split.cpp.ll
 ; verilator/optimized/V3Timing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000302(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = icmp eq ptr %0, null
@@ -145,7 +145,7 @@ entry:
 ; wireshark/optimized/packet-adb_cs.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000058(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp ne ptr %0, null
@@ -153,8 +153,7 @@ entry:
   ret i1 %4
 }
 
-; 23 occurrences:
-; hyperscan/optimized/accel.c.ll
+; 22 occurrences:
 ; linux/optimized/core.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/hub.ll
@@ -174,11 +173,11 @@ entry:
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/read_config.ll
 ; sqlite/optimized/sqlite3.ll
-; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/tshark.c.ll
 ; wireshark/optimized/voip_calls.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000042(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp eq ptr %0, null
@@ -186,36 +185,36 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; linux/optimized/intel_pmdemand.ll
 ; linux/optimized/mlme.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; slurm/optimized/job_scheduler.ll
-; slurm/optimized/slurm_protocol_util.ll
 ; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000102(ptr %0, i16 %1) #0 {
 entry:
-  %2 = icmp ult i16 %1, -2
+  %2 = icmp ult i16 %1, 2
   %3 = icmp eq ptr %0, null
   %4 = or i1 %3, %2
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/hash.c.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/UnwrappedLineParser.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000048(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ult i16 %0, 2
@@ -227,7 +226,7 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DWARFDebugLine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000308(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ult i16 %0, 4
@@ -238,7 +237,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000310(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ugt i16 %0, 62

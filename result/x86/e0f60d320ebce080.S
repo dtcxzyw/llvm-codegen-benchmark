@@ -16,6 +16,12 @@ func0000000000000001:                   # @func0000000000000001
 	kmovd	%eax, %k1
 	vmovsd	%xmm0, %xmm0, %xmm0 {%k1} {z}
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$4, %edi
+	setb	%al
+	kmovd	%eax, %k1
+	vmovsd	%xmm0, %xmm0, %xmm0 {%k1} {z}
+	retq
 func000000000000000c:                   # @func000000000000000c
 	testl	%edi, %edi
 	sete	%al

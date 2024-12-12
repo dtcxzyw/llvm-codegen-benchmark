@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 77 occurrences:
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/btCapsuleShape.ll
 ; bullet3/optimized/btCollisionWorld.ll
@@ -11,7 +11,6 @@
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; glslang/optimized/hlslTokenStream.cpp.ll
-; gromacs/optimized/once.cpp.ll
 ; gromacs/optimized/swapcoords.cpp.ll
 ; hdf5/optimized/H5Cint.c.ll
 ; icu/optimized/collationiterator.ll
@@ -25,7 +24,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -49,7 +47,6 @@
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/seams.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
-; mitsuba3/optimized/rgb2spec.c.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; nori/optimized/layout.cpp.ll
 ; opencv/optimized/charuco_detector.cpp.ll
@@ -89,7 +86,7 @@ entry:
   ret i64 %3
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; cpython/optimized/timemodule.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -100,7 +97,6 @@ entry:
 ; darktable/optimized/introspection_temperature.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/dmar.ll
-; linux/optimized/head64.ll
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/md.ll
 ; meshlab/optimized/filter_cubization.cpp.ll

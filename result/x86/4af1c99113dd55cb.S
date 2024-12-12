@@ -9,8 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmovneq	%rsi, %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	shlq	$8, %rdx
-	leaq	57(%rdx), %rax
+	leaq	1(%rdx,%rdx), %rax
 	testb	$1, %dil
 	cmovneq	%rsi, %rax
 	retq

@@ -5,6 +5,6 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000003:                   # @func0000000000000003
 	sub	a1, a1, a0
-	srli	a0, a1, 15
-	andi	a0, a0, -8
+	srli	a0, a1, 2
+	andi	a0, a0, -2
 	ret

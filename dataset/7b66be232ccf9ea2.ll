@@ -1,4 +1,6 @@
 
+%"class.std::reference_wrapper.2688895" = type { ptr }
+
 ; 49 occurrences:
 ; arrow/optimized/interfaces.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
@@ -55,6 +57,19 @@ entry:
   %2 = sdiv i64 %1, 2
   %3 = freeze ptr %0
   %4 = getelementptr nusw ptr, ptr %3, i64 %2
+  ret ptr %4
+}
+
+; 3 occurrences:
+; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
+; duckdb/optimized/ub_duckdb_table_func_system.cpp.ll
+; folly/optimized/json.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
+entry:
+  %2 = sdiv i64 %1, 2
+  %3 = freeze ptr %0
+  %4 = getelementptr nusw nuw %"class.std::reference_wrapper.2688895", ptr %3, i64 %2
   ret ptr %4
 }
 

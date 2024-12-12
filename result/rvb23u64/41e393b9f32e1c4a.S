@@ -26,19 +26,15 @@ func0000000000000020:                   # @func0000000000000020
 	sh1add	a0, a1, a0
 	addi	a0, a0, -48
 	ret
-func000000000000003d:                   # @func000000000000003d
-	sh2add	a1, a1, a1
-	sh2add	a1, a1, a1
-	sh2add	a0, a1, a0
-	lui	a1, 262144
-	addiw	a1, a1, -1225
-	slli	a1, a1, 2
-	add	a0, a0, a1
-	ret
 func000000000000003f:                   # @func000000000000003f
 	sh2add	a1, a1, a1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 52
+	ret
+func000000000000003d:                   # @func000000000000003d
+	sh3add	a1, a1, a1
+	sh1add	a0, a1, a0
+	addi	a0, a0, 5
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sh2add	a1, a1, a1

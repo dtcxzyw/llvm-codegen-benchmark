@@ -5,7 +5,7 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	imull	$-1000, %edx, %eax              # imm = 0xFC18
 	cmpl	%esi, %eax
 	setne	%al

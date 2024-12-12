@@ -35,15 +35,4 @@ entry:
   ret double %4
 }
 
-; 1 occurrences:
-; meshlab/optimized/filter_func.cpp.ll
-; Function Attrs: nounwind
-define double @func0000000000000001(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub i64 %0, %1
-  %3 = sdiv exact i64 %2, 48
-  %4 = sitofp i64 %3 to double
-  ret double %4
-}
-
 attributes #0 = { nounwind }

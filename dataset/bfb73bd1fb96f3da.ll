@@ -13,32 +13,29 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/macroArrayCopy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
   %4 = sub nuw nsw i32 %1, %3
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp samesign ult i32 %4, %0
   ret i1 %5
 }
 
-; 15 occurrences:
+; 12 occurrences:
 ; git/optimized/sha1.ll
 ; jsonnet/optimized/md5.cpp.ll
 ; lief/optimized/ripemd160.c.ll
 ; linux/optimized/intel_crt.ll
-; linux/optimized/pmsr.ll
-; linux/optimized/rtnetlink.ll
 ; llvm/optimized/ASTUnit.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
-; openspiel/optimized/quoridor.cc.ll
 ; php/optimized/hash_haval.ll
 ; php/optimized/hash_md.ll
 ; php/optimized/hash_ripemd.ll
 ; php/optimized/hash_sha.ll
 ; php/optimized/sha1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
   %4 = sub nsw i32 %1, %3
@@ -51,7 +48,7 @@ entry:
 ; abc/optimized/lpkCore.c.ll
 ; linux/optimized/slub.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
   %4 = sub nsw i32 %1, %3
@@ -69,7 +66,7 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = sub nsw i32 %1, %3
@@ -87,7 +84,7 @@ entry:
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; sentencepiece/optimized/parse_context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
   %4 = sub nsw i32 %1, %3
@@ -95,11 +92,10 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; hermes/optimized/String.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
-; wireshark/optimized/packet-hip.c.ll
 ; wireshark/optimized/packet-zbee-tlv.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
@@ -113,7 +109,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5B2int.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = sub nuw nsw i32 %1, %3
@@ -134,10 +130,22 @@ entry:
 }
 
 ; 2 occurrences:
+; llvm/optimized/ASTWriter.cpp.ll
+; wireshark/optimized/packet-hip.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 2147483647
+  %4 = sub i32 %1, %3
+  %5 = icmp samesign ult i32 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; wireshark/optimized/packet-iwarp-mpa.c.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = sub nuw i32 %1, %3
@@ -157,13 +165,36 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; linux/optimized/namei.ll
+; 3 occurrences:
+; linux/optimized/pmsr.ll
+; linux/optimized/rtnetlink.ll
+; openspiel/optimized/quoridor.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 1
+  %4 = sub nsw i32 %1, %3
+  %5 = icmp samesign ult i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; linux/optimized/virtio_blk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
+  %4 = sub nsw i32 %1, %3
+  %5 = icmp samesign ugt i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/namei.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, -4
   %4 = sub nsw i32 %1, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
@@ -172,7 +203,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/spacer_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = sub nuw i32 %1, %3

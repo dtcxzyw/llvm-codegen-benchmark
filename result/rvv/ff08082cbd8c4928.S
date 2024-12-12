@@ -4,7 +4,7 @@ func0000000000000017:                   # @func0000000000000017
 	vsll.vx	v12, v12, a0
 	lui	a0, 16
 	addiw	a0, a0, -2
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	vor.vi	v8, v8, 1
@@ -15,7 +15,7 @@ func000000000000001f:                   # @func000000000000001f
 	vsll.vx	v12, v12, a0
 	li	a0, -1
 	srli	a0, a0, 32
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	bseti	a0, zero, 32

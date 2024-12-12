@@ -8,12 +8,12 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/php_pcre.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, ptr %1, i8 %2) #0 {
+define ptr @func0000000000000013(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -48
   %4 = icmp ult i8 %3, 10
   %5 = select i1 %4, ptr %0, ptr %1
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 

@@ -1,56 +1,40 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	mov	w8, #1                          // =0x1
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	dup	v6.2d, x8
-	ushl	v5.2d, v6.2d, v5.2d
-	ushl	v4.2d, v6.2d, v4.2d
-	bic	v0.16b, v0.16b, v4.16b
-	bic	v1.16b, v1.16b, v5.16b
+	orr	x9, x0, x1
+	lsl	x8, x8, x2
+	bic	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v6.2d, #0xffffffffffffffff
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	ushl	v5.2d, v6.2d, v5.2d
-	ushl	v4.2d, v6.2d, v4.2d
-	bic	v0.16b, v0.16b, v4.16b
-	bic	v1.16b, v1.16b, v5.16b
+	mov	x8, #-1                         // =0xffffffffffffffff
+	orr	x9, x0, x1
+	lsl	x8, x8, x2
+	bic	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	movi	v6.2d, #0x0000000000ffff
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	ushl	v5.2d, v6.2d, v5.2d
-	ushl	v4.2d, v6.2d, v4.2d
-	bic	v0.16b, v0.16b, v4.16b
-	bic	v1.16b, v1.16b, v5.16b
+	mov	w8, #65535                      // =0xffff
+	orr	x9, x0, x1
+	lsl	x8, x8, x2
+	bic	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v6.2d, #0x0000000000ffff
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	ushl	v5.2d, v6.2d, v5.2d
-	ushl	v4.2d, v6.2d, v4.2d
-	bic	v0.16b, v0.16b, v4.16b
-	bic	v1.16b, v1.16b, v5.16b
+	mov	w8, #65535                      // =0xffff
+	orr	x9, x0, x1
+	lsl	x8, x8, x2
+	bic	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v6.2d, #0xffffffffffffffff
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	ushl	v5.2d, v6.2d, v5.2d
-	ushl	v4.2d, v6.2d, v4.2d
-	bic	v0.16b, v0.16b, v4.16b
-	bic	v1.16b, v1.16b, v5.16b
+	mov	x8, #-1                         // =0xffffffffffffffff
+	orr	x9, x0, x1
+	lsl	x8, x8, x2
+	bic	x0, x9, x8
 	ret
                                         // -- End function

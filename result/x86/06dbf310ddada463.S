@@ -15,7 +15,15 @@ func00000000000000c7:                   # @func00000000000000c7
 	imulq	%rdi, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000043:                   # @func0000000000000043
+func0000000000000183:                   # @func0000000000000183
+	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
+	shrq	$3, %rax
+	cmpq	$5, %rsi
+	sbbq	$-1, %rax
+	retq
+func0000000000000143:                   # @func0000000000000143
 	shrq	$9, %rdi
 	movabsq	$19342813113834067, %rax        # imm = 0x44B82FA09B5A53
 	movq	%rdi, %rdx

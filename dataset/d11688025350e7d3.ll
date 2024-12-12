@@ -6,7 +6,7 @@
 ; spike/optimized/s_roundToI64.ll
 ; spike/optimized/s_roundToUI32.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000042(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp eq i64 %0, 2048
@@ -21,7 +21,7 @@ entry:
 ; oiio/optimized/strutil.cpp.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000058(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, -1
   %3 = icmp ne i64 %0, 1

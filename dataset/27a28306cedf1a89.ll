@@ -1,11 +1,10 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; gromacs/optimized/muParserInt.cpp.ll
 ; gromacs/optimized/topio.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; minetest/optimized/touchscreengui.cpp.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/calibrate.cpp.ll

@@ -1,19 +1,4 @@
 
-; 3 occurrences:
-; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = lshr i64 %2, 25
-  %4 = add nuw nsw i64 %3, %1
-  %5 = lshr i64 %4, 1
-  %6 = add nsw i64 %5, %0
-  %7 = and i64 %6, 4294967295
-  ret i64 %7
-}
-
 ; 5 occurrences:
 ; libquic/optimized/poly1305_vec.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -24,9 +9,9 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = and i64 %6, 4294967295
   ret i64 %7
 }
@@ -54,7 +39,7 @@ entry:
 define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 51
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = lshr i64 %4, 51
   %6 = add nuw nsw i64 %5, %0
   %7 = and i64 %6, 2251799813685247
@@ -108,9 +93,22 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
+  %7 = and i64 %6, 4294967295
+  ret i64 %7
+}
+
+; 1 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 25
+  %4 = add nuw nsw i64 %3, %1
+  %5 = lshr i64 %4, 1
+  %6 = add nsw i64 %0, %5
   %7 = and i64 %6, 4294967295
   ret i64 %7
 }
@@ -124,9 +122,9 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = and i64 %6, 4294967295
   ret i64 %7
 }

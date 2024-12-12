@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002e:                   # @func000000000000002e
 	sub	a2, a2, a1
 	andi	a2, a2, -16
 	add	a0, a0, a1
@@ -28,6 +28,12 @@ func000000000000001a:                   # @func000000000000001a
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+func000000000000001c:                   # @func000000000000001c
+	sub	a2, a2, a1
+	andi	a2, a2, -64
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
 func0000000000000008:                   # @func0000000000000008
 	sub	a2, a2, a1
 	andi	a2, a2, -4
@@ -43,6 +49,17 @@ func0000000000000030:                   # @func0000000000000030
 func0000000000000028:                   # @func0000000000000028
 	subw	a2, a2, a1
 	andi	a2, a2, 3
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
+func000000000000001f:                   # @func000000000000001f
+	subw	a2, a2, a1
+	add	a0, a0, a1
+	add.uw	a0, a2, a0
+	ret
+func000000000000003c:                   # @func000000000000003c
+	sub	a2, a2, a1
+	andi	a2, a2, -4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

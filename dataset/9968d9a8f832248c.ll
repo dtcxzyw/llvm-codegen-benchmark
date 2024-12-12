@@ -39,7 +39,7 @@ entry:
   ret i1 %2
 }
 
-; 157 occurrences:
+; 156 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; c3c/optimized/target.c.ll
@@ -167,7 +167,6 @@ entry:
 ; wireshark/optimized/packet-ixveriwave.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-nas_5gs.c.ll
-; wireshark/optimized/packet-netanalyzer.c.ll
 ; wireshark/optimized/packet-pn-rsi.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-rdpudp.c.ll
@@ -232,10 +231,10 @@ entry:
 ; wireshark/optimized/packet-nas_5gs.c.ll
 ; wireshark/optimized/packet-sbc.c.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
-; yoga/optimized/CalculateLayout.cpp.ll
 ; yoga/optimized/Node.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0) #0 {
+define i1 @func0000000000000014(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 8
   %2 = icmp eq i8 %1, 0
@@ -252,10 +251,10 @@ entry:
 ; wireshark/optimized/packet-epl.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0) #0 {
+define i1 @func0000000000000018(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 126
-  %2 = icmp ugt i8 %1, 4
+  %2 = icmp samesign ugt i8 %1, 4
   ret i1 %2
 }
 

@@ -20,3 +20,25 @@ func0000000000000000:                   # @func0000000000000000
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
+.LCPI2_0:
+	.quad	15                              # 0xf
+.LCPI2_1:
+	.quad	-16                             # 0xfffffffffffffff0
+func0000000000000029:                   # @func0000000000000029
+	vpsllq	$3, %ymm0, %ymm0
+	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
+	vpandq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpsubq	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI3_0:
+	.quad	19                              # 0x13
+.LCPI3_1:
+	.quad	-16                             # 0xfffffffffffffff0
+func0000000000000001:                   # @func0000000000000001
+	vpsllq	$2, %ymm0, %ymm0
+	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
+	vpandq	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpsubq	%ymm0, %ymm1, %ymm0
+	retq

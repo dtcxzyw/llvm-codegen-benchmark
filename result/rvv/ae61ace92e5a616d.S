@@ -20,15 +20,15 @@ func0000000000000002:                   # @func0000000000000002
 	vnsrl.wi	v9, v10, 0
 	vmflt.vv	v0, v8, v9
 	ret
-func0000000000000022:                   # @func0000000000000022
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
-	vmflt.vv	v0, v8, v9
-	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmfeq.vv	v0, v8, v9
+	ret
+func0000000000000022:                   # @func0000000000000022
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
+	vmflt.vv	v0, v8, v9
 	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e32, m1, ta, ma

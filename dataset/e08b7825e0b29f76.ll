@@ -1,8 +1,7 @@
 
-; 230 occurrences:
+; 233 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/memutil.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -79,7 +78,6 @@
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/mmconfig-shared.ll
-; linux/optimized/mmconfig_64.ll
 ; linux/optimized/sr_ioctl.ll
 ; linux/optimized/string.ll
 ; linux/optimized/utcksum.ll
@@ -93,6 +91,12 @@
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
 ; luau/optimized/lvmutils.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -206,7 +210,6 @@
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; ruby/optimized/qsort.ll
 ; ruby/optimized/regparse.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_dxt.c.ll

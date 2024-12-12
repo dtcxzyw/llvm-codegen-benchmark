@@ -17,7 +17,7 @@ func000000000000000c:                   # @func000000000000000c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	andi	a1, a1, 15
 	sh1add	a0, a0, a1
 	lui	a1, 15

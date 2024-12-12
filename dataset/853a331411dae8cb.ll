@@ -86,7 +86,7 @@ entry:
 ; ncnn/optimized/lrn_x86_avx512.cpp.ll
 ; ncnn/optimized/lrn_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %1
   %4 = add i32 %0, %1
@@ -127,7 +127,7 @@ entry:
 ; icu/optimized/esctrn.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %0
   %4 = add nsw i32 %0, %1

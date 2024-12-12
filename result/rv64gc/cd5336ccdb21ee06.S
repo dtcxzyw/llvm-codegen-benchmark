@@ -5,15 +5,15 @@ func0000000000000002:                   # @func0000000000000002
 .LBB0_2:                                # %entry
 	fdiv.d	fa0, fa0, fa1
 	ret
-func000000000000000c:                   # @func000000000000000c
-	fle.d	a0, fa2, fa1
+func0000000000000004:                   # @func0000000000000004
+	flt.d	a0, fa2, fa1
 	bnez	a0, .LBB1_2
 	fmv.d	fa1, fa2
 .LBB1_2:                                # %entry
 	fdiv.d	fa0, fa0, fa1
 	ret
-func0000000000000004:                   # @func0000000000000004
-	flt.d	a0, fa2, fa1
+func000000000000000c:                   # @func000000000000000c
+	fle.d	a0, fa2, fa1
 	bnez	a0, .LBB2_2
 	fmv.d	fa1, fa2
 .LBB2_2:                                # %entry

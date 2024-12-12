@@ -43,6 +43,19 @@ entry:
   ret i8 %5
 }
 
+; 2 occurrences:
+; linux/optimized/i915_gem_execbuffer.ll
+; llvm/optimized/CGExpr.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000009(i8 %0, i8 %1) #0 {
+entry:
+  %2 = icmp ult i8 %1, 5
+  %3 = select i1 %2, i8 2, i8 0
+  %4 = and i8 %0, -3
+  %5 = or disjoint i8 %3, %4
+  ret i8 %5
+}
+
 ; 1 occurrences:
 ; linux/optimized/tcp_output.ll
 ; Function Attrs: nounwind
@@ -53,18 +66,6 @@ entry:
   %3 = and i8 %0, -33
   %4 = or disjoint i8 %3, %2
   ret i8 %4
-}
-
-; 1 occurrences:
-; linux/optimized/i915_gem_execbuffer.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000009(i8 %0, i8 %1) #0 {
-entry:
-  %2 = icmp ult i8 %1, 4
-  %3 = select i1 %2, i8 4, i8 0
-  %4 = and i8 %0, 1
-  %5 = or disjoint i8 %3, %4
-  ret i8 %5
 }
 
 ; 2 occurrences:

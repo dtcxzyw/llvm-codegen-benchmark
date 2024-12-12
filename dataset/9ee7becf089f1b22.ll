@@ -306,7 +306,7 @@ entry:
   ret i64 %3
 }
 
-; 62 occurrences:
+; 63 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -316,6 +316,7 @@ entry:
 ; abc/optimized/wlcMem.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/monotonic_buffer_resource.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll

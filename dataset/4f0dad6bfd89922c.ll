@@ -1,7 +1,8 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; boost/optimized/numeric.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; cpython/optimized/posixmodule.ll
 ; cpython/optimized/socketmodule.ll
@@ -39,7 +40,8 @@ entry:
   ret i16 %3
 }
 
-; 43 occurrences:
+; 42 occurrences:
+; boost/optimized/numeric.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
@@ -49,7 +51,6 @@ entry:
 ; linux/optimized/fd.ll
 ; linux/optimized/i2c-core-base.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/swphy.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
@@ -79,7 +80,6 @@ entry:
 ; openmpi/optimized/libmpi_c_profile_la-file_set_view.ll
 ; postgres/optimized/indexcmds.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; slurm/optimized/info_job.ll
 ; slurm/optimized/read_config.ll
 ; slurm/optimized/squeue.ll

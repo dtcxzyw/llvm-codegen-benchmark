@@ -1,6 +1,6 @@
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %ecx
-	imulq	$100, %rdi, %rax
+	imulq	$1000000, %rdi, %rax            # imm = 0xF4240
 	xorl	%edx, %edx
 	divq	%rcx
 	retq

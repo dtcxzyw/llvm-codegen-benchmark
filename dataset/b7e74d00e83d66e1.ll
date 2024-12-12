@@ -1,5 +1,5 @@
 
-; 64 occurrences:
+; 62 occurrences:
 ; abc/optimized/superAnd.c.ll
 ; abc/optimized/wlcStdin.c.ll
 ; clamav/optimized/spin.c.ll
@@ -10,7 +10,6 @@
 ; icu/optimized/ufmt_cmn.ll
 ; linux/optimized/intel_hdmi.ll
 ; linux/optimized/maple_tree.ll
-; linux/optimized/uthex.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
@@ -51,7 +50,6 @@
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
 ; qemu/optimized/system_memory.c.ll
-; ruby/optimized/japanese.ll
 ; spike/optimized/f16_div.ll
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/s_mulAddF16.ll
@@ -67,7 +65,7 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i8 -96, i8 -97
+  %2 = select i1 %1, i8 0, i8 9
   %3 = add i8 %2, %0
   ret i8 %3
 }
@@ -79,7 +77,6 @@ entry:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; icu/optimized/ucnv_u8.ll
 ; icu/optimized/ucnvmbcs.ll
-; linux/optimized/he.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/rx.ll
@@ -91,11 +88,12 @@ entry:
 ; qemu/optimized/util_uri.c.ll
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i8 3, i8 5
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add nuw nsw i8 %0, %2
   ret i8 %3
 }
 
@@ -108,7 +106,7 @@ entry:
 define i8 @func0000000000000002(i8 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i8 -128, i8 0
-  %3 = add nuw i8 %2, %0
+  %3 = add nuw i8 %0, %2
   ret i8 %3
 }
 

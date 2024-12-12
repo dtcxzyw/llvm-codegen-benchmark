@@ -3,16 +3,16 @@ func0000000000000034:                   # @func0000000000000034
 	leaq	(%rsi,%rsi,2), %rax
 	leaq	12(,%rax,4), %rax
 	retq
-func0000000000000035:                   # @func0000000000000035
-	subq	%rdi, %rsi
-	imulq	$4000, %rsi, %rax               # imm = 0xFA0
-	addq	$274276000, %rax                # imm = 0x10591EA0
-	retq
 func0000000000000008:                   # @func0000000000000008
 	notq	%rdi
 	addq	%rsi, %rdi
 	shlq	$4, %rdi
 	leaq	(%rdi,%rdi,2), %rax
+	retq
+func0000000000000035:                   # @func0000000000000035
+	subq	%rdi, %rsi
+	imulq	$4000, %rsi, %rax               # imm = 0xFA0
+	addq	$274276000, %rax                # imm = 0x10591EA0
 	retq
 func0000000000000002:                   # @func0000000000000002
 	subq	%rdi, %rsi

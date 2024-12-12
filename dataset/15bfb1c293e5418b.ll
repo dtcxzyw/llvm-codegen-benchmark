@@ -14,7 +14,7 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; linux/optimized/process_vm_access.ll
 ; linux/optimized/scatterlist.ll
 ; llvm/optimized/X86FastISel.cpp.ll
@@ -28,12 +28,13 @@ entry:
 ; postgres/optimized/walreceiver.ll
 ; postgres/optimized/xlogreader.ll
 ; protobuf/optimized/line_consumer.cc.ll
+; qemu/optimized/system_cpus.c.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -47,7 +48,7 @@ entry:
 ; ruby/optimized/date_parse.ll
 ; spike/optimized/s_subMagsF128.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483647
   %3 = sub nsw i64 %0, %2
@@ -55,8 +56,9 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; linux/optimized/tree.ll
 ; mitsuba3/optimized/assembler.cpp.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
@@ -74,7 +76,8 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
@@ -89,7 +92,7 @@ entry:
 ; spike/optimized/uksubh.ll
 ; spike/optimized/uksubw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = sub nsw i64 %0, %2
@@ -118,10 +121,10 @@ entry:
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 8589934584
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -169,7 +172,7 @@ entry:
 ; minetest/optimized/profilergraph.cpp.ll
 ; minetest/optimized/static_text.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = sub nsw i64 %0, %2
@@ -177,14 +180,10 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 1 occurrences:
 ; minetest/optimized/clientmap.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
-; spike/optimized/s_addMagsF32.ll
-; spike/optimized/s_addMagsF64.ll
-; spike/optimized/s_subMagsF64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = sub nsw i64 %0, %2
@@ -208,31 +207,32 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/gen6_ppgtt.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; c3c/optimized/unzipper.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; php/optimized/zend_alloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4190208
   %3 = sub nuw nsw i64 %0, %2
@@ -266,20 +266,6 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; base64-rs/optimized/3i18zkzed1c7jyoe.ll
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
-; duckdb/optimized/ub_duckdb_execution.cpp.ll
-; node/optimized/libnode.string_bytes.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 3
-  %3 = sub nuw nsw i64 %0, %2
-  %4 = icmp ult i64 %3, 4
-  ret i1 %4
-}
-
 ; 7 occurrences:
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -289,17 +275,43 @@ entry:
 ; spike/optimized/s_subMagsF32.ll
 ; spike/optimized/s_subMagsF64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 255
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
+}
+
+; 4 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; spike/optimized/s_addMagsF32.ll
+; spike/optimized/s_addMagsF64.ll
+; spike/optimized/s_subMagsF64.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 2047
+  %3 = sub nsw i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 63
+  ret i1 %4
+}
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; node/optimized/libnode.string_bytes.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 63
+  %3 = sub nuw nsw i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 4
+  ret i1 %4
 }
 
 ; 1 occurrences:
 ; llvm/optimized/Signals.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = sub nuw i64 %0, %2
@@ -314,7 +326,7 @@ entry:
 ; openblas/optimized/dasum_k.c.ll
 ; openblas/optimized/sasum_k.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = sub nuw nsw i64 %0, %2

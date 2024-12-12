@@ -2,7 +2,7 @@
 	.zero	16,15
 .LCPI0_1:
 	.zero	4,15
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmb	%xmm2, %xmm2, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vmovdqu8	%xmm0, %xmm1 {%k1}
@@ -35,7 +35,7 @@ func0000000000000011:                   # @func0000000000000011
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vptestnmb	%xmm2, %xmm2, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vmovdqu8	%xmm0, %xmm1 {%k1}
@@ -70,7 +70,7 @@ func000000000000001c:                   # @func000000000000001c
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	vpcmpltub	.LCPI2_0(%rip), %xmm2, %k1
 	vmovdqu8	%xmm0, %xmm1 {%k1}
 	vpxor	%xmm0, %xmm0, %xmm0
@@ -81,7 +81,7 @@ func000000000000004c:                   # @func000000000000004c
 	.zero	16,3
 .LCPI3_1:
 	.zero	4,3
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vptestnmb	%xmm2, %xmm2, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vmovdqu8	%xmm1, %xmm0 {%k1}

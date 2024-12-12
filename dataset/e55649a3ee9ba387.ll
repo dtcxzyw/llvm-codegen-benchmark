@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; linux/optimized/phy_device.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/tcp_input.ll
@@ -8,6 +8,7 @@
 ; llvm/optimized/CGAtomic.cpp.ll
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; slurm/optimized/sinfo.ll
 ; Function Attrs: nounwind
@@ -28,7 +29,7 @@ entry:
   %2 = trunc i64 %1 to i16
   %3 = lshr i16 %2, 1
   %4 = and i16 %3, 4095
-  %5 = or i16 %4, %0
+  %5 = or i16 %0, %4
   ret i16 %5
 }
 

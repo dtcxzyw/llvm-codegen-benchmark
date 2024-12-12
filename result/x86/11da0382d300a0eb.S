@@ -1,22 +1,22 @@
-func00000000000000e8:                   # @func00000000000000e8
+func00000000000001c8:                   # @func00000000000001c8
 	addq	$3, %rdx
 	movabsq	$8589934588, %rax               # imm = 0x1FFFFFFFC
 	andq	%rdx, %rax
 	subq	%rax, %rsi
-	cmpq	%rdi, %rsi
-	setb	%al
+	cmpq	%rsi, %rdi
+	seta	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	addq	$15, %rdx
 	andq	$-16, %rdx
 	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	setb	%al
+	cmpq	%rsi, %rdi
+	seta	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	addq	$15, %rdx
 	andq	$-8, %rdx
 	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq

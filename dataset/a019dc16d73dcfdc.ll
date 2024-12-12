@@ -8,7 +8,7 @@ entry:
   %3 = fdiv double %1, %2
   %4 = fcmp olt double %3, 1.000000e+00
   %5 = select i1 %4, double %3, double 1.000000e+00
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 
@@ -29,12 +29,11 @@ entry:
   ret double %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
-; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
@@ -45,7 +44,7 @@ entry:
   %3 = fdiv double %1, %2
   %4 = fcmp ord double %3, 0.000000e+00
   %5 = select i1 %4, double %3, double 0.000000e+00
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

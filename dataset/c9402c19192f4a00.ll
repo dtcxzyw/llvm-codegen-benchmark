@@ -1,11 +1,10 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/giaBound.c.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
-; linux/optimized/vsmp_64.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
@@ -19,7 +18,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 -1, i32 %3
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 

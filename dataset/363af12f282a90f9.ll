@@ -1,16 +1,27 @@
 
-; 6 occurrences:
+; 3 occurrences:
 ; brotli/optimized/encode.c.ll
+; llvm/optimized/Commit.cpp.ll
+; ruby/optimized/signal.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 12
+  %4 = icmp samesign ugt i64 %1, %3
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 4 occurrences:
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/vmscan.ll
 ; openssl/optimized/libssl-lib-cc_newreno.ll
 ; openssl/optimized/libssl-shlib-cc_newreno.ll
-; ruby/optimized/signal.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 12
-  %4 = icmp ult i64 %3, %1
+  %3 = lshr i64 %2, 1
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -27,7 +38,20 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 51
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; llvm/optimized/AddressSanitizer.cpp.ll
+; llvm/optimized/EditedSource.cpp.ll
+; qemu/optimized/accel_tcg_cputlb.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 12
+  %4 = icmp samesign uge i64 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -40,7 +64,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -106,7 +130,18 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 12
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/EditedSource.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 32
+  %4 = icmp samesign ult i64 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -117,19 +152,18 @@ entry:
 define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp ule i64 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/AddressSanitizer.cpp.ll
+; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 3
-  %4 = icmp ule i64 %3, %1
+  %3 = lshr i64 %2, 8
+  %4 = icmp uge i64 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

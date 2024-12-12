@@ -7,7 +7,7 @@ entry:
   %3 = mul i64 %2, 48
   %4 = or disjoint i64 %3, 8
   %5 = add i64 %4, %1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

@@ -4,14 +4,6 @@ func0000000000000018:                   # @func0000000000000018
 	vmand.mm	v0, v12, v0
 	vor.vi	v8, v8, 2, v0.t
 	ret
-func0000000000000011:                   # @func0000000000000011
-	li	a0, 256
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsgtu.vx	v12, v10, a0
-	vmand.mm	v0, v12, v0
-	lui	a0, 4
-	vor.vx	v8, v8, a0, v0.t
-	ret
 func0000000000000019:                   # @func0000000000000019
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsne.vi	v12, v10, 0

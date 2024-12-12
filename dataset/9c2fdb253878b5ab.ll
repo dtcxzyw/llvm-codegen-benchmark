@@ -1,7 +1,7 @@
 
-%union.iseq_inline_storage_entry.2485792 = type { %struct.anon.21.2485793 }
-%struct.anon.21.2485793 = type { ptr, i64 }
-%"class.cvc5::internal::NodeTemplate.3385226" = type { ptr }
+%union.iseq_inline_storage_entry.2601263 = type { %struct.anon.21.2601264 }
+%struct.anon.21.2601264 = type { ptr, i64 }
+%"class.cvc5::internal::NodeTemplate.3569935" = type { ptr }
 
 ; 3 occurrences:
 ; qemu/optimized/fdt_rw.c.ll
@@ -12,7 +12,7 @@ define i64 @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %union.iseq_inline_storage_entry.2485792, ptr %0, i64 %4
+  %5 = getelementptr %union.iseq_inline_storage_entry.2601263, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -36,11 +36,11 @@ entry:
 ; php/optimized/dfa_pass.ll
 ; rocksdb/optimized/plain_table_key_coding.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -57,17 +57,18 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; spike/optimized/fdt_ro.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -101,11 +102,11 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/unsat_core_manager.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %"class.cvc5::internal::NodeTemplate.3385226", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.3569935", ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -115,11 +116,11 @@ entry:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

@@ -1,19 +1,19 @@
 
-%"struct.std::pair.295.2499510" = type { i64, %"struct.rocksdb::TrackedTrxInfo.2499499" }
-%"struct.rocksdb::TrackedTrxInfo.2499499" = type { %"class.rocksdb::autovector.50.2499484", i32, i8, %"class.std::__cxx11::basic_string.2499494" }
-%"class.rocksdb::autovector.50.2499484" = type { i64, [64 x i8], ptr, %"class.std::vector.51.2499485" }
-%"class.std::vector.51.2499485" = type { %"struct.std::_Vector_base.52.2499486" }
-%"struct.std::_Vector_base.52.2499486" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2499487" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2499487" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2499488" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2499488" = type { ptr, ptr, ptr }
-%"class.std::__cxx11::basic_string.2499494" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2499495", i64, %union.anon.2499496 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2499495" = type { ptr }
-%union.anon.2499496 = type { i64, [8 x i8] }
-%"struct.cv::FStructData.3550015" = type { %"class.std::__cxx11::basic_string.3550010", i32, i32 }
-%"class.std::__cxx11::basic_string.3550010" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3550011", i64, %union.anon.3550012 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3550011" = type { ptr }
-%union.anon.3550012 = type { i64, [8 x i8] }
-%struct.TestObject.3719191 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
+%"struct.std::pair.295.2614743" = type { i64, %"struct.rocksdb::TrackedTrxInfo.2614732" }
+%"struct.rocksdb::TrackedTrxInfo.2614732" = type { %"class.rocksdb::autovector.50.2614717", i32, i8, %"class.std::__cxx11::basic_string.2614727" }
+%"class.rocksdb::autovector.50.2614717" = type { i64, [64 x i8], ptr, %"class.std::vector.51.2614718" }
+%"class.std::vector.51.2614718" = type { %"struct.std::_Vector_base.52.2614719" }
+%"struct.std::_Vector_base.52.2614719" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2614720" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2614720" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2614721" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2614721" = type { ptr, ptr, ptr }
+%"class.std::__cxx11::basic_string.2614727" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2614728", i64, %union.anon.2614729 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2614728" = type { ptr }
+%union.anon.2614729 = type { i64, [8 x i8] }
+%"struct.cv::FStructData.3730757" = type { %"class.std::__cxx11::basic_string.3730752", i32, i32 }
+%"class.std::__cxx11::basic_string.3730752" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730753", i64, %union.anon.3730754 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730753" = type { ptr }
+%union.anon.3730754 = type { i64, [8 x i8] }
+%struct.TestObject.3898407 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
 
 ; 1 occurrences:
 ; rocksdb/optimized/point_lock_manager.cc.ll
@@ -21,22 +21,9 @@
 define ptr @func0000000000000040(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr %"struct.std::pair.295.2499510", ptr %3, i64 %1
+  %4 = getelementptr %"struct.std::pair.295.2614743", ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -152
   ret ptr %5
-}
-
-; 2 occurrences:
-; eastl/optimized/TestDeque.cpp.ll
-; rocksdb/optimized/write_batch_with_index.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sdiv exact i64 %2, 20
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr ptr, ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 -256
-  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -68,9 +55,20 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000052(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr %"struct.cv::FStructData.3550015", ptr %3, i64 %1
+  %3 = getelementptr %"struct.cv::FStructData.3730757", ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -80
+  ret ptr %5
+}
+
+; 1 occurrences:
+; eastl/optimized/TestDeque.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %struct.TestObject.3898407, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -24
   ret ptr %5
 }
 
@@ -79,8 +77,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000056(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr %struct.TestObject.3719191, ptr %3, i64 %1
+  %3 = getelementptr %struct.TestObject.3898407, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -24
   ret ptr %5
 }

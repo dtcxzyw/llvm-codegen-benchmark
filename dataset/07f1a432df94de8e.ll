@@ -44,4 +44,17 @@ entry:
   ret i64 %6
 }
 
+; 2 occurrences:
+; abseil-cpp/optimized/cord.cc.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 8, i64 64
+  %4 = add nuw nsw i64 %1, 12
+  %5 = add nuw nsw i64 %4, %3
+  %6 = and i64 %5, %0
+  ret i64 %6
+}
+
 attributes #0 = { nounwind }

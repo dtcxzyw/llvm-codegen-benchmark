@@ -1,5 +1,5 @@
 
-; 688 occurrences:
+; 699 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/bmcInse.c.ll
 ; abc/optimized/cgtAig.c.ll
@@ -136,6 +136,7 @@
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; libjpeg-turbo/optimized/jchuff.c.ll
 ; linux/optimized/af_packet.ll
+; linux/optimized/alps.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/i915_gpu_error.ll
@@ -688,6 +689,16 @@
 ; yalantinglibs/optimized/example.cpp.ll
 ; yalantinglibs/optimized/file_client.cpp.ll
 ; z3/optimized/aig.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
@@ -701,12 +712,24 @@ entry:
 ; openssl/optimized/libcrypto-lib-rsaz_exp.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000014(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4032
-  %4 = icmp ult i64 %3, 3776
+  %4 = icmp samesign ult i64 %3, 3776
   %5 = select i1 %4, ptr %0, ptr %1
   ret ptr %5
+}
+
+; 2 occurrences:
+; linux/optimized/nl80211.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %.not = icmp eq i64 %3, 21
+  %4 = select i1 %.not, ptr %1, ptr %0
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

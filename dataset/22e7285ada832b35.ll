@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; cpython/optimized/_ctypes_test.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
@@ -13,7 +13,6 @@
 ; minetest/optimized/mg_ore.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll

@@ -11,7 +11,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovb2m	%xmm0, %k1
 	vpbroadcastb	.LCPI0_2(%rip), %xmm0   # xmm0 = [6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6]
 	vmovdqu8	.LCPI0_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]
-	vpcmpeqb	%xmm1, %xmm0, %k1
-	korw	%k0, %k1, %k0
+	vpcmpeqb	%xmm0, %xmm1, %k1
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

@@ -1,24 +1,21 @@
 
-%"struct.llvm::WinEH::Instruction.2948927" = type <{ ptr, i32, i32, i32, [4 x i8] }>
-
-; 9 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/status_internal.cc.ll
 ; clamav/optimized/sigtool.c.ll
 ; draco/optimized/encoder_buffer.cc.ll
-; git/optimized/apply.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; node/optimized/simdutf.ll
 ; php/optimized/mime_sniff.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000002b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 8
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
 
@@ -32,6 +29,19 @@ entry:
   %5 = getelementptr nusw i8, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 -3
+  ret ptr %7
+}
+
+; 1 occurrences:
+; git/optimized/apply.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %1 to i64
+  %4 = sub i64 %2, %3
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw i8, ptr %6, i64 -9
   ret ptr %7
 }
 
@@ -49,9 +59,10 @@ entry:
   ret ptr %7
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; cxxopts/optimized/example.cpp.ll
 ; llama.cpp/optimized/common.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/gc.ll
 ; nix/optimized/git-utils.ll
@@ -60,26 +71,14 @@ entry:
 ; oiio/optimized/filesystem.cpp.ll
 ; xgboost/optimized/context.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = ptrtoint ptr %1 to i64
-  %4 = sub i64 %2, %3
-  %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 8
-  ret ptr %7
-}
-
-; 1 occurrences:
-; llvm/optimized/MCWin64EH.cpp.ll
-; Function Attrs: nounwind
 define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr %"struct.llvm::WinEH::Instruction.2948927", ptr %5, i64 %0, i32 1
-  ret ptr %6
+  %6 = getelementptr i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
+  ret ptr %7
 }
 
 ; 5 occurrences:
@@ -89,13 +88,13 @@ entry:
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
 

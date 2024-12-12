@@ -10,6 +10,9 @@
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
@@ -54,7 +57,6 @@
 ; gromacs/optimized/dlaev2.cpp.ll
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/dlarrbx.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasd4.cpp.ll
 ; gromacs/optimized/dlasd5.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
@@ -94,6 +96,7 @@
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/CodeLayout.cpp.ll
 ; llvm/optimized/Timer.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -136,7 +139,6 @@
 ; openblas/optimized/dlasd8.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; openblas/optimized/dlasv2.c.ll
 ; openblas/optimized/dporfs.c.ll
 ; openblas/optimized/dpprfs.c.ll
@@ -147,7 +149,6 @@
 ; openblas/optimized/dsyrfs.c.ll
 ; openblas/optimized/dtbrfs.c.ll
 ; openblas/optimized/dtgevc.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtprfs.c.ll
 ; openblas/optimized/dtrrfs.c.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
@@ -224,7 +225,6 @@
 ; proj/optimized/omerc.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; proj/optimized/vandg.cpp.ll
-; proj/optimized/wink1.cpp.ll
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; quantlib/optimized/abcdcalibration.ll
 ; quantlib/optimized/analyticdoublebarrierbinaryengine.ll

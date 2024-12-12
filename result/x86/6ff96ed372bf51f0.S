@@ -1,26 +1,26 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000043:                   # @func0000000000000043
 	cmpl	$1, %edx
 	adcl	$0, %esi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func000000000000031e:                   # @func000000000000031e
+func000000000000031f:                   # @func000000000000031f
 	cmpl	$1, %edx
 	sbbl	$-1, %esi
 	leaq	(%rdi,%rsi,4), %rax
 	retq
-func000000000000011e:                   # @func000000000000011e
-	cmpl	$2, %edx
-	adcl	$0, %esi
-	leaq	(%rsi,%rsi,4), %rax
-	leaq	(%rdi,%rax,8), %rax
-	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000004b:                   # @func000000000000004b
 	cmpl	$1, %edx
 	adcl	$0, %esi
 	leaq	(%rdi,%rsi,4), %rax
 	retq
-func000000000000030e:                   # @func000000000000030e
+func000000000000030f:                   # @func000000000000030f
 	cmpl	$1, %edx
 	sbbl	$-1, %esi
 	leaq	(%rdi,%rsi,4), %rax
+	retq
+func0000000000000303:                   # @func0000000000000303
+	cmpl	$1, %edx
+	sbbl	$-1, %esi
+	shlq	$4, %rsi
+	leaq	(%rsi,%rdi), %rax
 	retq

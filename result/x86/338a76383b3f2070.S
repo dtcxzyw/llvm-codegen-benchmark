@@ -16,5 +16,5 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000001:                   # @func0000000000000001
 	movl	%edi, %eax
 	imull	%esi, %eax
-	andl	$7, %eax
+	andl	$32768, %eax                    # imm = 0x8000
 	retq

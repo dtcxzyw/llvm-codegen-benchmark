@@ -1,9 +1,3 @@
-func0000000000000008:                   # @func0000000000000008
-	shlq	$52, %rsi
-	orq	%rdi, %rsi
-	movabsq	$9218868437227405312, %rax      # imm = 0x7FF0000000000000
-	andq	%rsi, %rax
-	retq
 func000000000000000f:                   # @func000000000000000f
 	movl	%esi, %ecx
 	shlq	$8, %rcx

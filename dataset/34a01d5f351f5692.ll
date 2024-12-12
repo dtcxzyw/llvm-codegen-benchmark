@@ -23,7 +23,7 @@ entry:
   ret i64 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; linux/optimized/balloc.ll
@@ -37,6 +37,7 @@ entry:
 ; linux/optimized/nexthop.ll
 ; linux/optimized/route.ll
 ; linux/optimized/slub.ll
+; z3/optimized/pb2bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -13,7 +13,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/graphml.ll
 ; grpc/optimized/bin_encoder.cc.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; Function Attrs: nounwind
@@ -85,8 +86,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i8 %1) #0 {
 entry:

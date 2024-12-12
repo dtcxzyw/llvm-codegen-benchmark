@@ -12,7 +12,7 @@ entry:
   %3 = sub i64 %1, %2
   %.neg = sdiv exact i64 %3, -112
   %.neg1 = trunc i64 %.neg to i32
-  %4 = add i32 %.neg1, %0
+  %4 = add i32 %0, %.neg1
   ret i32 %4
 }
 
@@ -28,7 +28,7 @@ entry:
   %3 = sub i64 %1, %2
   %.neg = sdiv exact i64 %3, -12
   %.neg1 = trunc i64 %.neg to i32
-  %4 = add i32 %.neg1, %0
+  %4 = add i32 %0, %.neg1
   ret i32 %4
 }
 
@@ -40,7 +40,7 @@ entry:
   %3 = sub i64 %1, %2
   %.neg = sdiv i64 %3, -1000000
   %.neg1 = trunc i64 %.neg to i32
-  %4 = add i32 %.neg1, %0
+  %4 = add i32 %0, %.neg1
   ret i32 %4
 }
 

@@ -10,7 +10,3 @@ func0000000000000002:                   # @func0000000000000002
 	sh3add	a0, a1, a0
 	addi	a0, a0, 20
 	ret
-func0000000000000016:                   # @func0000000000000016
-	sh3add	a0, a1, a0
-	addi	a0, a0, 2047
-	ret

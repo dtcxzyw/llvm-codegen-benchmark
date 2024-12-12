@@ -1,10 +1,10 @@
 func0000000000000020:                   # @func0000000000000020
-	leal	(%rdx,%rsi), %eax
+	leal	(%rsi,%rdx), %eax
 	shlq	$32, %rax
 	addq	%rdi, %rax
 	retq
 func0000000000000030:                   # @func0000000000000030
-	leal	(%rdx,%rsi), %eax
+	leal	(%rsi,%rdx), %eax
 	shlq	$32, %rax
 	addq	%rdi, %rax
 	retq

@@ -5,8 +5,8 @@
 define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 1000, %2
-  %4 = icmp sgt i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp slt i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -15,10 +15,10 @@ entry:
 ; minetest/optimized/clouds.cpp.ll
 ; ncnn/optimized/diag.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -43,10 +43,10 @@ entry:
 ; opencv/optimized/softmax.cpp.ll
 ; opencv/optimized/softmax_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
-  %4 = icmp sle i32 %3, %1
+  %4 = icmp sge i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -55,11 +55,11 @@ entry:
 ; php/optimized/dow.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000027(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 8, %2
-  %4 = icmp sge i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp sle i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -67,10 +67,22 @@ entry:
 ; luajit/optimized/buildvm.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003b(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 -128, %2
-  %4 = icmp sle i32 %3, %1
+  %4 = icmp sge i32 %1, %3
+  %5 = and i1 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 0, %2
+  %4 = icmp eq i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -83,7 +95,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp sle i32 %3, %1
+  %4 = icmp sge i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -95,29 +107,29 @@ entry:
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 1, %2
-  %4 = icmp ugt i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ult i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 64, %2
-  %4 = icmp eq i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp eq i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 64, %2
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -128,7 +140,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -136,10 +148,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 1, %2
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -148,11 +160,11 @@ entry:
 ; cmake/optimized/huf_compress.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 32, %2
-  %4 = icmp ult i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ugt i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -162,30 +174,19 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp slt i32 %3, %1
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; icu/optimized/iso8601cal.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 0, %2
-  %4 = icmp eq i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp sgt i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; graphviz/optimized/split.q.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 65, %2
-  %4 = icmp sgt i32 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp slt i32 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

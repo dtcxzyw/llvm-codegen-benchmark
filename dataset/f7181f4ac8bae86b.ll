@@ -1,18 +1,30 @@
 
-%class.btVector3.2705784 = type { [4 x float] }
-%struct.btSpatialMotionVector.2705786 = type { %class.btVector3.2705784, %class.btVector3.2705784 }
-%struct.dtLink.2914345 = type { i32, i32, i8, i8, i8, i8 }
+%class.btVector3.2818499 = type { [4 x float] }
+%struct.btSpatialMotionVector.2818501 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
+%struct.dtLink.3108391 = type { i32, i32, i8, i8, i8, i8 }
 
-; 22 occurrences:
+; 34 occurrences:
 ; abc/optimized/fraClass.c.ll
-; abc/optimized/lpkMan.c.ll
+; casadi/optimized/cs_amd.c.ll
 ; casadi/optimized/cs_counts.c.ll
+; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
+; ceres/optimized/eigensparse.cc.ll
+; ceres/optimized/reorder_program.cc.ll
 ; cmake/optimized/xmlparse.c.ll
+; g2o/optimized/slam2d_linear.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; git/optimized/diffcore-rename.ll
 ; gromacs/optimized/redistribute.cpp.ll
 ; icu/optimized/lstmbe.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libwebp/optimized/dec_sse2.c.ll
+; libwebp/optimized/iterator_enc.c.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_geodesic.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/deconvolution_x86.cpp.ll
 ; ncnn/optimized/deconvolution_x86_avx.cpp.ll
@@ -46,9 +58,9 @@ define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %class.btVector3.2705784, ptr %0, i64 %4
+  %5 = getelementptr nusw %class.btVector3.2818499, ptr %0, i64 %4
   %6 = sext i32 %1 to i64
-  %7 = getelementptr %struct.btSpatialMotionVector.2705786, ptr %5, i64 %6
+  %7 = getelementptr %struct.btSpatialMotionVector.2818501, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -76,7 +88,7 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = sext i32 %1 to i64
-  %7 = getelementptr %struct.dtLink.2914345, ptr %5, i64 %6
+  %7 = getelementptr %struct.dtLink.3108391, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -91,31 +103,6 @@ entry:
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = sext i32 %1 to i64
   %7 = getelementptr i8, ptr %5, i64 %6
-  ret ptr %7
-}
-
-; 13 occurrences:
-; casadi/optimized/cs_amd.c.ll
-; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
-; ceres/optimized/eigensparse.cc.ll
-; ceres/optimized/reorder_program.cc.ll
-; g2o/optimized/slam2d_linear.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_slam2d_linear.cpp.ll
-; libwebp/optimized/iterator_enc.c.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_geodesic.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/filter_unsharp.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr i32, ptr %0, i64 %4
-  %6 = sext i32 %1 to i64
-  %7 = getelementptr nusw i32, ptr %5, i64 %6
   ret ptr %7
 }
 

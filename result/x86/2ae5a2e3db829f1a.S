@@ -1,4 +1,4 @@
-func00000000000000d9:                   # @func00000000000000d9
+func0000000000000199:                   # @func0000000000000199
 	leal	1(%rdi), %ecx
 	testb	$1, %dl
 	movl	$32, %eax
@@ -7,7 +7,7 @@ func00000000000000d9:                   # @func00000000000000d9
 	cmovsl	%edi, %eax
 	addl	$-11, %eax
 	retq
-func00000000000000db:                   # @func00000000000000db
+func000000000000019b:                   # @func000000000000019b
 	leal	1(%rdi), %ecx
 	testb	$1, %dl
 	movl	$32, %eax

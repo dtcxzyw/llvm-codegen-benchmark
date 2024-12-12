@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
@@ -47,31 +47,16 @@
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; wasmedge/optimized/engine.cpp.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   ret i1 %3
 }
 
-; 7 occurrences:
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/meshio.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
-; opencv/optimized/calibinit.cpp.ll
-; php/optimized/softmagic.ll
-; postgres/optimized/float.ll
-; wasmedge/optimized/engine.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000007(float %0, i32 %1) #0 {
-entry:
-  %2 = bitcast i32 %1 to float
-  %3 = fcmp une float %2, %0
-  ret i1 %3
-}
-
-; 49 occurrences:
+; 50 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
@@ -121,15 +106,16 @@ entry:
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   ret i1 %3
 }
 
-; 18 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; gromacs/optimized/params.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
@@ -148,11 +134,18 @@ entry:
 ; postgres/optimized/float.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; wasmedge/optimized/engine.cpp.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp oeq float %2, %0
+  %3 = fcmp oeq float %0, %2
   ret i1 %3
 }
 
@@ -167,7 +160,7 @@ entry:
 define i1 @func0000000000000003(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp ugt float %2, %0
+  %3 = fcmp ult float %0, %2
   ret i1 %3
 }
 
@@ -179,7 +172,7 @@ entry:
 define i1 @func000000000000000d(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp ule float %2, %0
+  %3 = fcmp uge float %0, %2
   ret i1 %3
 }
 
@@ -191,7 +184,7 @@ entry:
 define i1 @func000000000000000c(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp ole float %2, %0
+  %3 = fcmp oge float %0, %2
   ret i1 %3
 }
 
@@ -203,7 +196,22 @@ entry:
 define i1 @func000000000000000a(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp oge float %2, %0
+  %3 = fcmp ole float %0, %2
+  ret i1 %3
+}
+
+; 6 occurrences:
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/meshio.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
+; php/optimized/softmagic.ll
+; postgres/optimized/float.ll
+; wasmedge/optimized/engine.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(float %0, i32 %1) #0 {
+entry:
+  %2 = bitcast i32 %1 to float
+  %3 = fcmp une float %0, %2
   ret i1 %3
 }
 
@@ -217,7 +225,7 @@ entry:
 define i1 @func000000000000000b(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp uge float %2, %0
+  %3 = fcmp ule float %0, %2
   ret i1 %3
 }
 
@@ -231,7 +239,7 @@ entry:
 define i1 @func0000000000000005(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fcmp ult float %2, %0
+  %3 = fcmp ugt float %0, %2
   ret i1 %3
 }
 

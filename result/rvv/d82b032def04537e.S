@@ -15,7 +15,7 @@ func000000000000000f:                   # @func000000000000000f
 	li	a0, 120
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	li	a0, 248
 	vxor.vx	v8, v8, a0
 	ret

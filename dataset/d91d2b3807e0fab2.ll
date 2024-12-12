@@ -11,13 +11,13 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr i64, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/bacWriteBlif.c.ll
@@ -30,6 +30,7 @@ entry:
 ; icu/optimized/rbutil.ll
 ; icu/optimized/uniset.ll
 ; libquic/optimized/padding.c.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
@@ -47,16 +48,15 @@ define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i64, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 48 occurrences:
+; 47 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/abcHieNew.c.ll
-; abc/optimized/abcOrder.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbMfs.c.ll
@@ -107,7 +107,7 @@ define ptr @func0000000000000032(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i32, ptr %0, i64 %6
   ret ptr %7
@@ -121,7 +121,7 @@ define ptr @func0000000000000036(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw ptr, ptr %0, i64 %6
   ret ptr %7
@@ -135,7 +135,7 @@ define ptr @func0000000000000016(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i8, ptr %0, i64 %6
   ret ptr %7
@@ -148,7 +148,7 @@ define ptr @func0000000000000012(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw double, ptr %0, i64 %6
   ret ptr %7

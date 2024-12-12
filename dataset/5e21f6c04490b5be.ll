@@ -8,20 +8,23 @@ define i32 @func0000000000000022(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl i32 %1, 24
   %7 = or i32 %5, %6
   ret i32 %7
 }
 
-; 1 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007b(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 13
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl nuw i32 %1, 16
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -61,7 +64,7 @@ define i32 @func000000000000006f(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 %3, 31
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl nuw nsw i32 %1, 13
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -82,6 +85,21 @@ entry:
   %5 = or disjoint i32 %4, %0
   %6 = shl nuw nsw i32 %1, 13
   %7 = or disjoint i32 %5, %6
+  ret i32 %7
+}
+
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; Function Attrs: nounwind
+define i32 @func000000000000007d(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i32
+  %4 = shl nuw nsw i32 %3, 16
+  %5 = or disjoint i32 %4, %1
+  %6 = shl nuw i32 %0, 24
+  %7 = or disjoint i32 %6, %5
   ret i32 %7
 }
 
@@ -121,7 +139,7 @@ define i32 @func0000000000000078(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = shl nuw i32 %1, 24
   %7 = or i32 %5, %6
   ret i32 %7
@@ -148,7 +166,7 @@ define i32 @func000000000000006e(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl nuw nsw i32 %1, 16
   %7 = or i32 %5, %6
   ret i32 %7
@@ -161,7 +179,7 @@ define i32 @func000000000000003c(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = shl nuw nsw i32 %1, 16
   %7 = or i32 %5, %6
   ret i32 %7
@@ -174,7 +192,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl i32 %3, 24
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = shl nuw nsw i32 %0, 8
   %7 = or i32 %6, %5
   ret i32 %7

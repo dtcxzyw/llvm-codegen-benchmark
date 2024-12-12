@@ -16,7 +16,7 @@ entry:
   ret i64 %5
 }
 
-; 1130 occurrences:
+; 1129 occurrences:
 ; abc/optimized/extraUtilPerm.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; clamav/optimized/bytecode.c.ll
@@ -802,7 +802,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1169,7 +1168,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

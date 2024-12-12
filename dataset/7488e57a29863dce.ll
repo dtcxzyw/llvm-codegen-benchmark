@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/saigPhase.c.ll
 ; linux/optimized/ibs.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
-; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:

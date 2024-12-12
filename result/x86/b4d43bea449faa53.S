@@ -41,11 +41,8 @@ func000000000000000b:                   # @func000000000000000b
 	movzbl	%dil, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
-	movl	%esi, %eax
-	shll	$24, %eax
-	orl	%edi, %eax
-	shrl	$7, %eax
-	andl	$16843009, %eax                 # imm = 0x1010101
+	shrl	$16, %edi
+	movzbl	%dil, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	movl	%esi, %eax

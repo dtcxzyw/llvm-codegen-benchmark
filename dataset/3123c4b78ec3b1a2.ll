@@ -1,8 +1,9 @@
 
-; 26 occurrences:
+; 22 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; base64-rs/optimized/25sh13l3jgkilua2.ll
+; boost/optimized/dump_ssse3.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -11,17 +12,12 @@
 ; entt/optimized/meta_container.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
-; jemalloc/optimized/bitmap.ll
-; jemalloc/optimized/bitmap.pic.ll
-; jemalloc/optimized/bitmap.sym.ll
 ; libdeflate/optimized/crc32.c.ll
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
 ; openssl/optimized/libcrypto-lib-srp_vfy.ll
 ; openssl/optimized/libcrypto-shlib-srp_vfy.ll
 ; php/optimized/iconv.ll
 ; re2/optimized/prog.cc.ll
-; redis/optimized/bitmap.ll
-; redis/optimized/bitmap.sym.ll
 ; rocksdb/optimized/crc32c.cc.ll
 ; zfp/optimized/bitstream.c.ll
 ; zstd/optimized/huf_compress.c.ll
@@ -35,7 +31,8 @@ entry:
   ret i1 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/approximately_equals.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -48,7 +45,7 @@ entry:
 ; postgres/optimized/visibilitymap.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = icmp ne i64 %0, 0
   ret i1 %1
@@ -58,7 +55,7 @@ entry:
 ; folly/optimized/SignalHandler.cpp.ll
 ; folly/optimized/Symbolizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0) #0 {
+define i1 @func000000000000006c(i64 %0) #0 {
 entry:
   %1 = sub i64 0, %0
   %2 = and i64 %1, 3
@@ -66,12 +63,12 @@ entry:
   ret i1 %3
 }
 
-; 109 occurrences:
+; 108 occurrences:
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/approximately_equals.ll
 ; ceres/optimized/dense_cholesky.cc.ll
 ; darktable/optimized/common.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
-; darktable/optimized/print_settings.c.ll
 ; darktable/optimized/snapshots.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
@@ -83,7 +80,6 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; minetest/optimized/mod_configuration.cpp.ll
-; ring-rs/optimized/4prppzcttbsz5zvc.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; wireshark/optimized/about_dialog.cpp.ll
 ; wireshark/optimized/additional_toolbar.cpp.ll
@@ -177,7 +173,7 @@ entry:
 ; wireshark/optimized/wireshark_main_window_slots.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = sub nsw i64 0, %0
   %2 = and i64 %1, 7
@@ -200,7 +196,7 @@ entry:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000038(i64 %0) #0 {
 entry:
   %1 = sub nsw i64 63, %0
   %2 = and i64 %1, 252
@@ -214,7 +210,7 @@ entry:
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0) #0 {
+define i1 @func000000000000002c(i64 %0) #0 {
 entry:
   %1 = sub nsw i64 0, %0
   %2 = and i64 %1, 61440
@@ -228,7 +224,7 @@ entry:
 ; mini-lsm-rs/optimized/4vkix0mjdn2idd4b.ll
 ; mini-lsm-rs/optimized/fxok0uwzlvxge5x.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0) #0 {
+define i1 @func0000000000000078(i64 %0) #0 {
 entry:
   %1 = sub i64 0, %0
   %2 = and i64 %1, 4

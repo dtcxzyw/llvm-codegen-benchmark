@@ -45,11 +45,15 @@ entry:
   ret double %5
 }
 
-; 12 occurrences:
+; 16 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; graphviz/optimized/shapes.c.ll
-; gromacs/optimized/dlapy2.cpp.ll
 ; gromacs/optimized/dlas2.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; openblas/optimized/dlaln2.c.ll
@@ -61,7 +65,7 @@ entry:
 ; Function Attrs: nounwind
 define double @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
-  %3 = fcmp ogt double %1, %2
+  %3 = fcmp ogt double %2, %1
   %4 = select i1 %3, double %1, double %2
   %5 = fdiv double %4, %0
   ret double %5

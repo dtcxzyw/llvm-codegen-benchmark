@@ -1,5 +1,5 @@
 
-; 298 occurrences:
+; 307 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/mapperUtils.c.ll
 ; abseil-cpp/optimized/mutex.cc.ll
@@ -10,6 +10,7 @@
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_cholesky.cc.ll
@@ -40,8 +41,10 @@
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; cmake/optimized/archive_rb.c.ll
+; cmake/optimized/setopt.c.ll
 ; cpython/optimized/listobject.ll
 ; cpython/optimized/obmalloc.ll
+; curl/optimized/libcurl_la-setopt.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
@@ -70,6 +73,7 @@
 ; freetype/optimized/truetype.c.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; g2o/optimized/solver_dense.cpp.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; grpc/optimized/slice.cc.ll
 ; hdf5/optimized/H5HL.c.ll
@@ -108,6 +112,7 @@
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/CodeGenCommonISel.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/DFAPacketizer.cpp.ll
 ; llvm/optimized/DeclBase.cpp.ll
 ; llvm/optimized/GISelKnownBits.cpp.ll
@@ -143,6 +148,7 @@
 ; llvm/optimized/RISCVRegisterBankInfo.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/TargetRegisterInfo.cpp.ll
 ; llvm/optimized/X86AvoidStoreForwardingBlocks.cpp.ll
@@ -153,6 +159,7 @@
 ; llvm/optimized/X86RegisterBankInfo.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -164,6 +171,7 @@
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; mimalloc/optimized/segment.c.ll
+; minetest/optimized/texturesource.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -248,15 +256,17 @@
 ; openssl/optimized/libcrypto-shlib-xts128gb.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openusd/optimized/bignum-dtoa.cc.ll
+; openusd/optimized/evalUtils.cpp.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; openusd/optimized/openexr-c.c.ll
+; openusd/optimized/rprim.cpp.ll
 ; openusd/optimized/strtod.cc.ll
+; openusd/optimized/unitTestNullRenderDelegate.cpp.ll
 ; php/optimized/dtoa.ll
 ; php/optimized/shared_alloc_mmap.ll
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/arrayfuncs.ll
-; protobuf/optimized/arena.cc.ll
 ; protobuf/optimized/parser.cc.ll
 ; qemu/optimized/hw_riscv_boot.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
@@ -291,7 +301,6 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; velox/optimized/MallocAllocator.cpp.ll
 ; velox/optimized/MmapAllocator.cpp.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; wasmedge/optimized/controlInstr.cpp.ll
 ; wasmtime-rs/optimized/5euizg9wb5pa0ryd.ll
 ; wireshark/optimized/erf.c.ll

@@ -13,7 +13,7 @@ entry:
   ret i32 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; folly/optimized/farmhash.cpp.ll
@@ -29,7 +29,6 @@ entry:
 ; openjdk/optimized/zip_util.ll
 ; openusd/optimized/token.cpp.ll
 ; php/optimized/ir_strtab.ll
-; proxy/optimized/proxy_freestanding_tests.cpp.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/packet-diameter.c.ll
 ; Function Attrs: nounwind

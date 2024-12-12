@@ -5,7 +5,7 @@
 ; opencv/optimized/daisy.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp slt i32 %2, %0
@@ -42,7 +42,7 @@ entry:
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 2
   %3 = icmp slt i32 %2, %0
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ult i32 %2, %0

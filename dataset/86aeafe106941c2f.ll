@@ -1,10 +1,10 @@
 
-%struct.ct_data_s.2764979 = type { %union.anon.2764980, %union.anon.0.2764981 }
-%union.anon.2764980 = type { i16 }
-%union.anon.0.2764981 = type { i16 }
-%struct.ct_data_s.3356494 = type { %union.anon.3356495, %union.anon.0.3356496 }
-%union.anon.3356495 = type { i16 }
-%union.anon.0.3356496 = type { i16 }
+%struct.ct_data_s.2877227 = type { %union.anon.2877228, %union.anon.0.2877229 }
+%union.anon.2877228 = type { i16 }
+%union.anon.0.2877229 = type { i16 }
+%struct.ct_data_s.3543797 = type { %union.anon.3543798, %union.anon.0.3543799 }
+%union.anon.3543798 = type { i16 }
+%union.anon.0.3543799 = type { i16 }
 
 ; 5 occurrences:
 ; abc/optimized/trees.c.ll
@@ -18,7 +18,7 @@ entry:
   %3 = icmp slt i32 %2, 2
   %4 = select i1 %3, i32 %1, i32 0
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %struct.ct_data_s.2764979, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nusw %struct.ct_data_s.2877227, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -30,7 +30,7 @@ entry:
   %3 = icmp slt i32 %2, 2
   %4 = select i1 %3, i32 %1, i32 0
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.ct_data_s.3356494, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.ct_data_s.3543797, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

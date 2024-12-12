@@ -18,7 +18,7 @@ entry:
 ; git/optimized/protocol.ll
 ; wireshark/optimized/packet-sbc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = icmp eq i8 %0, 0

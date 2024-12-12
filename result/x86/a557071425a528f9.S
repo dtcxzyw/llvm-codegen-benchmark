@@ -1,8 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
 	movslq	%esi, %rcx
-	shlq	$3, %rcx
-	xorl	%eax, %eax
+	shlq	$2, %rcx
 	testb	$1, %dil
+	movl	$404, %eax                      # imm = 0x194
 	cmovneq	%rcx, %rax
 	retq
 func0000000000000003:                   # @func0000000000000003

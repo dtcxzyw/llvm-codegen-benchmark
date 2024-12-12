@@ -4,7 +4,7 @@
 ; ipopt/optimized/SensIndexSchurData.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -29,7 +29,7 @@ entry:
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; protobuf/optimized/dynamic_message.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000a6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -47,7 +47,7 @@ entry:
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000e6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -60,7 +60,7 @@ entry:
 ; opencv/optimized/svm.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000066(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp slt i32 %3, 0

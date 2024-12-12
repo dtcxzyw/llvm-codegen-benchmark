@@ -6,7 +6,7 @@
 ; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000035(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000055(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp sgt i32 %1, %0
@@ -19,7 +19,7 @@ entry:
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; openjdk/optimized/cmsnamed.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000030(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ugt i32 %1, %0
@@ -57,23 +57,11 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; wireshark/optimized/tvbuff.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000029(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -1
-  %3 = icmp ult i32 %0, %1
-  %4 = select i1 %3, i32 %0, i32 %2
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
-}
-
 ; 2 occurrences:
 ; graphviz/optimized/hedges.c.ll
 ; openblas/optimized/dbbcsd.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002d(i32 %0, i32 %1) #0 {
+define i64 @func000000000000004d(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp slt i32 %0, %1

@@ -1,5 +1,14 @@
 
-; 24 occurrences:
+; 33 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; gromacs/optimized/convparm.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/gmx_dos.cpp.ll

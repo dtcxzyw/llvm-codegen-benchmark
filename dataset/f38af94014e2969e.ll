@@ -22,8 +22,10 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
-; protobuf/optimized/zero_copy_stream.cc.ll
+; 7 occurrences:
+; boost/optimized/cstdio.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_stackstring.ll
 ; qdrant-rs/optimized/45o59dy68c4noo5t.ll
 ; wasmtime-rs/optimized/2d6kk4jmmc4rolm1.ll
 ; wasmtime-rs/optimized/3e4qkdgnsm3co8xe.ll
@@ -31,10 +33,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 65535
-  %.not1 = select i1 %0, i1 true, i1 %2
-  %3 = select i1 %.not1, i64 -4, i64 -3
-  ret i64 %3
+  %2 = icmp ult i32 %1, 65536
+  %3 = select i1 %0, i1 true, i1 %2
+  %4 = select i1 %3, i64 3, i64 4
+  ret i64 %4
 }
 
 ; 1 occurrences:

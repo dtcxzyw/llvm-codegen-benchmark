@@ -14,17 +14,15 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
-; darktable/optimized/RawImageDataU16.cpp.ll
-; linux/optimized/sky2.ll
+; 3 occurrences:
 ; llvm/optimized/AliasAnalysisEvaluator.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 6
-  %2 = and i32 %0, -2
+  %1 = and i32 %0, -2
+  %2 = and i32 %0, 1
   %3 = sub i32 %2, %1
   ret i32 %3
 }

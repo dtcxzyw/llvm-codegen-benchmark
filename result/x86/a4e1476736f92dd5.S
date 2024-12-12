@@ -1,4 +1,4 @@
-func0000000000000064:                   # @func0000000000000064
+func0000000000000065:                   # @func0000000000000065
 	andl	$511, %edx                      # imm = 0x1FF
 	addl	%edi, %edx
 	movslq	%esi, %rax
@@ -9,7 +9,7 @@ func0000000000000064:                   # @func0000000000000064
 	addl	%ecx, %eax
 	leal	-719163(%rdx,%rax), %eax
 	retq
-func0000000000000065:                   # @func0000000000000065
+func0000000000000064:                   # @func0000000000000064
 	andl	$511, %edx                      # imm = 0x1FF
 	addl	%edi, %edx
 	movslq	%esi, %rax

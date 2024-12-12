@@ -24,8 +24,5 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 .LBB2_2:
 	sext.w	a2, a2
-	lui	a0, 524288
-	addiw	a0, a0, -1
-	xor	a0, a0, a2
-	snez	a0, a0
+	snez	a0, a2
 	ret

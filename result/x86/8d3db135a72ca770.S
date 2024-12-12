@@ -22,21 +22,21 @@ func0000000000000050:                   # @func0000000000000050
 	cltq
 	leaq	16(%rdi,%rax,4), %rax
 	retq
-func000000000000005a:                   # @func000000000000005a
+func000000000000005b:                   # @func000000000000005b
 	addl	%edx, %esi
 	shll	$2, %esi
 	leal	(%rsi,%rsi,2), %eax
 	cltq
 	leaq	1(%rdi,%rax), %rax
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000004b:                   # @func000000000000004b
 	addl	%edx, %esi
 	shll	$3, %esi
 	leal	(%rsi,%rsi,2), %eax
 	cltq
 	leaq	32(%rdi,%rax,4), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	addl	%edx, %esi
 	leal	(%rsi,%rsi,2), %eax
 	cltq

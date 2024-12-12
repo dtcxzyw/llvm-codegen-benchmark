@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; clamav/optimized/special.c.ll
 ; hdf5/optimized/H5HFcache.c.ll
 ; hdf5/optimized/H5HL.c.ll
-; hdf5/optimized/H5HLdblk.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i8 %2) #0 {
 entry:

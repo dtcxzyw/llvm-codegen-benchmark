@@ -1,5 +1,5 @@
 
-; 339 occurrences:
+; 351 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcSpeedup.c.ll
@@ -19,6 +19,13 @@
 ; assimp/optimized/IFCLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
@@ -210,7 +217,6 @@
 ; ncnn/optimized/priorbox.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
 ; ncnn/optimized/psroipooling.cpp.ll
-; ncnn/optimized/reduction.cpp.ll
 ; ncnn/optimized/relu_x86.cpp.ll
 ; ncnn/optimized/relu_x86_avx.cpp.ll
 ; ncnn/optimized/relu_x86_avx512.cpp.ll
@@ -263,7 +269,6 @@
 ; opencv/optimized/warpers.cpp.ll
 ; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; openexr/optimized/ImfRgbaYca.cpp.ll
-; openexr/optimized/base.c.ll
 ; openjdk/optimized/adaptiveSizePolicy.ll
 ; openjdk/optimized/callGenerator.ll
 ; openjdk/optimized/cmslut.ll
@@ -338,6 +343,13 @@
 ; xgboost/optimized/elementwise_metric.cc.ll
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/random.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/7z2xfgroq6luy23s4a62wgt90.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/ca5hx4nwyb2mnunexsl1xqea9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0) #0 {
@@ -347,7 +359,7 @@ entry:
   ret float %2
 }
 
-; 298 occurrences:
+; 305 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
@@ -355,6 +367,8 @@ entry:
 ; assimp/optimized/IFCLoader.cpp.ll
 ; assimp/optimized/X3DExporter.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3FixedConstraint.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btCollisionWorld.ll
@@ -572,7 +586,6 @@ entry:
 ; opencv/optimized/trackerCSRT.cpp.ll
 ; opencv/optimized/undistort.dispatch.cpp.ll
 ; opencv/optimized/warpers.cpp.ll
-; openexr/optimized/base.c.ll
 ; openjdk/optimized/callGenerator.ll
 ; openjdk/optimized/cmsintrp.ll
 ; openjdk/optimized/cmsopt.ll
@@ -646,6 +659,12 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wireshark/optimized/file.c.ll
 ; xgboost/optimized/regression_obj.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/7z2xfgroq6luy23s4a62wgt90.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/ca5hx4nwyb2mnunexsl1xqea9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0) #0 {
 entry:
@@ -668,7 +687,7 @@ entry:
   ret float %2
 }
 
-; 118 occurrences:
+; 115 occurrences:
 ; abc/optimized/mapperRefs.c.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -682,11 +701,8 @@ entry:
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
-; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/forcerec.cpp.ll
-; gromacs/optimized/genconf.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
-; gromacs/optimized/insert_molecules.cpp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -795,7 +811,7 @@ entry:
   ret float %2
 }
 
-; 39 occurrences:
+; 34 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
@@ -807,11 +823,6 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; ncnn/optimized/roialign.cpp.ll
-; ncnn/optimized/roialign_x86.cpp.ll
-; ncnn/optimized/roialign_x86_avx.cpp.ll
-; ncnn/optimized/roialign_x86_avx512.cpp.ll
-; ncnn/optimized/roialign_x86_fma.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/linefit.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
@@ -839,7 +850,7 @@ entry:
 define float @func000000000000000a(float %0) #0 {
 entry:
   %1 = fcmp ole float %0, 0.000000e+00
-  %2 = select i1 %1, float 0.000000e+00, float %0
+  %2 = select i1 %1, float 1.200000e+01, float %0
   ret float %2
 }
 

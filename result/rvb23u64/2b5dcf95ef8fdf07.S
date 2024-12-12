@@ -6,7 +6,7 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000018:                   # @func0000000000000018
 	or	a0, a0, a1
 	fmv.d.x	fa5, a0
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	ret
 func000000000000001c:                   # @func000000000000001c
 	or	a0, a0, a1

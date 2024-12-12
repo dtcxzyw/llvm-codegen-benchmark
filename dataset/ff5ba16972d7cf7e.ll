@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; openusd/optimized/testSdfMetaDataPlugInfo.cpp.ll
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000bf(i64 %0, i64 %1) #0 {
 entry:

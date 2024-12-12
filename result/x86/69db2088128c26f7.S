@@ -18,7 +18,3 @@ func000000000000001d:                   # @func000000000000001d
 	andl	$15, %esi
 	leaq	4(%rsi,%rdi), %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	andl	$-8, %esi
-	leaq	296(%rsi,%rdi), %rax
-	retq

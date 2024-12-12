@@ -1,9 +1,12 @@
 
-; 38 occurrences:
+; 41 occurrences:
 ; abc/optimized/saigIso.c.ll
 ; abc/optimized/saigIsoFast.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; arrow/optimized/UriCommon.c.ll
+; boost/optimized/authority_view.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/url_view_base.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; git/optimized/fast-export.ll
 ; hwloc/optimized/bitmap.ll

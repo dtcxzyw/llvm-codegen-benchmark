@@ -14,7 +14,9 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
@@ -22,7 +24,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i32 14, i32 16
+  %5 = select i1 %4, i32 0, i32 255
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -39,7 +41,7 @@ entry:
   %3 = and i32 %1, %2
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 25, i32 11
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

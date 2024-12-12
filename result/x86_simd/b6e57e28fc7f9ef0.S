@@ -1,22 +1,29 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
-	vpcmpeqd	%ymm0, %ymm2, %k0
-	vpcmpeqd	%ymm1, %ymm2, %k1
+	vpcmpeqd	%ymm2, %ymm0, %k0
+	vpcmpeqd	%ymm2, %ymm1, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000298:                   # @func0000000000000298
 	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
-	vpcmpltud	%ymm0, %ymm2, %k0
-	vpcmpnleud	%ymm1, %ymm2, %k1
+	vpcmpnleud	%ymm2, %ymm0, %k0
+	vpcmpltud	%ymm2, %ymm1, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000068:                   # @func0000000000000068
+func0000000000000318:                   # @func0000000000000318
 	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
-	vpcmpltud	%ymm0, %ymm2, %k0
+	vpmaxud	%ymm1, %ymm0, %ymm0
+	vpcmpnleud	%ymm2, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func00000000000000d8:                   # @func00000000000000d8
+	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
+	vpcmpnleud	%ymm2, %ymm0, %k0
 	vpcmpgtd	%ymm1, %ymm2, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0

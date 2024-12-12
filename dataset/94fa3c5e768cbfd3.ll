@@ -17,7 +17,7 @@ entry:
 ; opencv/optimized/dxt.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, ptr %1, ptr %2) #0 {
+define i32 @func0000000000000021(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = or disjoint i32 %0, 2
   %4 = icmp eq ptr %1, %2

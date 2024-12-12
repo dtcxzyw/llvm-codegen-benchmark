@@ -1,4 +1,4 @@
-func000000000000024c:                   # @func000000000000024c
+func000000000000088c:                   # @func000000000000088c
 	sext.w	a0, a0
 	bset	a2, zero, a2
 	srliw	a1, a1, 24
@@ -11,7 +11,7 @@ func000000000000024c:                   # @func000000000000024c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func000000000000026c:                   # @func000000000000026c
+func00000000000008cc:                   # @func00000000000008cc
 	sext.w	a0, a0
 	sext.w	a1, a1
 	bset	a2, zero, a2
@@ -24,7 +24,7 @@ func000000000000026c:                   # @func000000000000026c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000266:                   # @func0000000000000266
+func00000000000008c6:                   # @func00000000000008c6
 	sext.w	a0, a0
 	sext.w	a1, a1
 	bset	a2, zero, a2
@@ -36,7 +36,7 @@ func0000000000000266:                   # @func0000000000000266
 	sext.w	a1, a1
 	slt	a0, a0, a1
 	ret
-func0000000000000246:                   # @func0000000000000246
+func0000000000000a86:                   # @func0000000000000a86
 	sext.w	a0, a0
 	sext.w	a1, a1
 	bset	a2, zero, a2
@@ -48,7 +48,7 @@ func0000000000000246:                   # @func0000000000000246
 	sext.w	a1, a1
 	slt	a0, a0, a1
 	ret
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a3, 4
@@ -59,7 +59,7 @@ func0000000000000066:                   # @func0000000000000066
 	or	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func0000000000000261:                   # @func0000000000000261
+func00000000000008c1:                   # @func00000000000008c1
 	sext.w	a0, a0
 	sext.w	a1, a1
 	bset	a2, zero, a2
@@ -72,7 +72,7 @@ func0000000000000261:                   # @func0000000000000261
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000244:                   # @func0000000000000244
+func0000000000000884:                   # @func0000000000000884
 	sext.w	a0, a0
 	sext.w	a1, a1
 	bset	a2, zero, a2
@@ -84,7 +84,7 @@ func0000000000000244:                   # @func0000000000000244
 	sext.w	a1, a1
 	sltu	a0, a0, a1
 	ret
-func0000000000000361:                   # @func0000000000000361
+func0000000000000cc1:                   # @func0000000000000cc1
 	sext.w	a0, a0
 	sext.w	a1, a1
 	bset	a2, zero, a2

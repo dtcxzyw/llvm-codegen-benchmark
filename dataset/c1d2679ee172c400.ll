@@ -15,10 +15,9 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
-; llvm/optimized/APFloat.cpp.ll
 ; openjdk/optimized/typeArrayKlass.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; spike/optimized/vwsll_vv.ll
@@ -53,6 +52,18 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext nneg i32 %0 to i64
   %5 = shl nuw i64 %4, %3
+  ret i64 %5
+}
+
+; 1 occurrences:
+; openusd/optimized/avif.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 1
+  %3 = zext nneg i32 %2 to i64
+  %4 = zext i32 %0 to i64
+  %5 = shl nuw nsw i64 %4, %3
   ret i64 %5
 }
 

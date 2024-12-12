@@ -6,8 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, 5
 	vmacc.vx	v14, a0, v12
 	lui	a0, 548541
-	vxor.vv	v10, v14, v10
+	vxor.vv	v10, v10, v14
 	addi	a0, a0, -1429
 	vmul.vx	v10, v10, a0
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	ret

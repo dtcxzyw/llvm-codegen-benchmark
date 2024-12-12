@@ -5,7 +5,7 @@
 ; icu/optimized/double-conversion-bignum.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000226(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sext i16 %0 to i32

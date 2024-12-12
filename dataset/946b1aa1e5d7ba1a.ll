@@ -18,7 +18,7 @@ define i32 @func000000000000001d(i32 %0, i16 %1) #0 {
 entry:
   %2 = xor i16 %1, -1
   %.neg = sext i16 %2 to i32
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -38,7 +38,7 @@ define i32 @func000000000000000d(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -60,7 +60,7 @@ define i32 @func000000000000001e(i32 %0, i16 %1) #0 {
 entry:
   %2 = xor i16 %1, -1
   %.neg = sext i16 %2 to i32
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 

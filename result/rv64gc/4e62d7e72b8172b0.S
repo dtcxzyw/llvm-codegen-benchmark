@@ -20,14 +20,3 @@ func000000000000001b:                   # @func000000000000001b
 	li	a1, 24
 	add	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
-	sext.w	a1, a1
-	addiw	a2, a2, -1
-	blt	a1, a2, .LBB2_2
-	li	a1, 16
-	add	a0, a0, a1
-	ret
-.LBB2_2:
-	li	a1, 24
-	add	a0, a0, a1
-	ret

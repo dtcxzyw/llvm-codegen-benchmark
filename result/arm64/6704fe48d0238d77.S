@@ -1,17 +1,8 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fmov	v6.2d, #-0.50000000
-	fadd	v5.2d, v5.2d, v6.2d
-	fadd	v2.2d, v2.2d, v6.2d
-	fadd	v3.2d, v3.2d, v6.2d
-	fadd	v4.2d, v4.2d, v6.2d
-	fcvtzs	v5.2d, v5.2d
-	fcvtzs	v3.2d, v3.2d
-	fcvtzs	v2.2d, v2.2d
-	fcvtzs	v4.2d, v4.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v4.4s, v4.4s, v5.4s
-	mul	v0.4s, v2.4s, v0.4s
-	mul	v1.4s, v4.4s, v1.4s
+	fmov	d1, #-0.50000000
+	fadd	d0, d0, d1
+	fcvtzs	w8, d0
+	mul	w0, w0, w8
 	ret
                                         // -- End function

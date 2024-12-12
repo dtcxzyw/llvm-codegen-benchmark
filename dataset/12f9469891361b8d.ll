@@ -17,7 +17,7 @@ entry:
   ret i64 %6
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/layout_test.cc.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/ds.ll
@@ -27,7 +27,6 @@ entry:
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/kexec_core.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pt.ll
@@ -38,7 +37,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, -1
   %6 = add i64 %5, %0
   ret i64 %6
@@ -78,7 +77,7 @@ entry:
 define i64 @func00000000000000ff(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, 1
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
@@ -90,7 +89,7 @@ entry:
 define i64 @func00000000000000fc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, 1
   %6 = add i64 %5, %0
   ret i64 %6
@@ -105,7 +104,7 @@ entry:
 define i64 @func0000000000000040(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 4
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, 31
   %6 = add i64 %5, %0
   ret i64 %6
@@ -117,7 +116,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 4
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, -128
   %6 = add nsw i64 %5, %0
   ret i64 %6

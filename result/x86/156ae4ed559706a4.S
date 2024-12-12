@@ -10,3 +10,9 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$1, %rdi
 	adcl	$8104, %eax                     # imm = 0x1FA8
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpb	$67, %dil
+	setae	%al
+	leal	3(%rax,%rax,2), %eax
+	retq

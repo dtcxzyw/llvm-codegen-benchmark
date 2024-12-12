@@ -12,7 +12,7 @@
 ; node/optimized/libnode.crypto_util.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 1
   %3 = icmp eq ptr %0, null
@@ -23,7 +23,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/tnef.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000188(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2
   %3 = icmp ne i64 %2, 4
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000101(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = icmp ult i64 %2, -8
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000184(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2147483648
   %3 = icmp ult i64 %2, 4294967296
@@ -61,7 +61,7 @@ entry:
 ; cpython/optimized/pyexpat.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000081(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = icmp ult i64 %2, 2
@@ -103,7 +103,7 @@ entry:
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000008c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -822056740454400000
   %3 = icmp ult i64 %2, -6012954214400000
@@ -116,7 +116,7 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000042c(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -16
   %3 = icmp eq ptr %0, null
@@ -127,7 +127,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000028(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 3
   %3 = icmp ult i64 %2, -128
@@ -140,7 +140,7 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/module.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000024(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 3
   %3 = icmp ult i64 %2, -75
@@ -155,7 +155,7 @@ entry:
 ; osqp/optimized/codegen.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(ptr %0, i64 %1) #0 {
+define i1 @func000000000000058c(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 8
   %3 = icmp ne ptr %0, null
@@ -167,7 +167,7 @@ entry:
 ; graphviz/optimized/agerror.c.ll
 ; linux/optimized/fib_trie.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 1
   %3 = icmp eq ptr %0, null
@@ -178,7 +178,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/mempolicy.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i64 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 1
   %3 = icmp ne ptr %0, null
@@ -191,7 +191,7 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; xgboost/optimized/io.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000581(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -3
   %3 = icmp eq ptr %0, null

@@ -43,19 +43,19 @@ func000000000000000f:                   # @func000000000000000f
 	slliw	a1, a1, 20
 	or	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
-	add	a1, a1, a2
-	slliw	a1, a1, 16
-	or	a0, a0, a1
-	ret
 func000000000000000a:                   # @func000000000000000a
 	add	a1, a1, a2
-	slliw	a1, a1, 8
+	slliw	a1, a1, 16
 	or	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
 	add	a1, a1, a2
 	slliw	a1, a1, 24
+	or	a0, a0, a1
+	ret
+func0000000000000008:                   # @func0000000000000008
+	add	a1, a1, a2
+	slliw	a1, a1, 16
 	or	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b

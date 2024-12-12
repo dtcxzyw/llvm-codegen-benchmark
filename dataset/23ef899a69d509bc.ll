@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; cvc5/optimized/resolution_proofs_util.cpp.ll
 ; linux/optimized/hrtimer.ll
-; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
 ; llvm/optimized/LoopUnroll.cpp.ll

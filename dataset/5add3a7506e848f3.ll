@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; cpython/optimized/legacy_tracing.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; postgres/optimized/nbtcompare.ll
+; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i1 %1) #0 {
 entry:

@@ -298,7 +298,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -443,6 +442,7 @@
 ; llvm/optimized/X86Subtarget.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; ruby/optimized/time.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; Function Attrs: nounwind
@@ -452,20 +452,7 @@ entry:
   %4 = and i16 %3, 63
   %5 = and i16 %1, -2048
   %6 = or disjoint i16 %5, %4
-  %7 = or disjoint i16 %6, %0
-  ret i16 %7
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_sd_ssi-sd.c.ll
-; Function Attrs: nounwind
-define i16 @func000000000000000e(i16 %0, i16 %1, i32 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i32 %2 to i16
-  %4 = and i16 %3, 96
-  %5 = and i16 %1, 28
-  %6 = or disjoint i16 %5, %4
-  %7 = or i16 %6, %0
+  %7 = or disjoint i16 %0, %6
   ret i16 %7
 }
 

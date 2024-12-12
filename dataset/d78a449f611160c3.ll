@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 80 occurrences:
 ; cmake/optimized/archive_read_support_filter_compress.c.ll
 ; cpython/optimized/mpdecimal.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -12,7 +12,6 @@
 ; hyperscan/optimized/runtime.c.ll
 ; jq/optimized/jv_unicode.ll
 ; linux/optimized/ipv6_sockglue.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/trace_output.ll
 ; linux/optimized/yenta_socket.ll
@@ -93,7 +92,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0) #0 {
+define i32 @func0000000000000021(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 2
   %2 = icmp eq i8 %1, 0
@@ -104,23 +103,12 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-dect-nwk.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i8 %0) #0 {
+define i32 @func000000000000002c(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 7
   %.not = icmp eq i8 %1, 0
   %2 = select i1 %.not, i32 131140, i32 196676
   ret i32 %2
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-ansi_a.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i8 %0) #0 {
-entry:
-  %1 = and i8 %0, 14
-  %2 = icmp ugt i8 %1, 9
-  %3 = select i1 %2, i32 16000, i32 8000
-  ret i32 %3
 }
 
 attributes #0 = { nounwind }

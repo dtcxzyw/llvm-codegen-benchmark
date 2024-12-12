@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 71 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -9,11 +9,13 @@
 ; hdf5/optimized/H5Olayout.c.ll
 ; hdf5/optimized/H5S.c.ll
 ; icu/optimized/unames.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; lief/optimized/ssl_tls12_client.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/libnode.cares_wrap.ll
 ; nori/optimized/nanovg.c.ll
@@ -70,12 +72,12 @@
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 2
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 2
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -87,12 +89,12 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000073(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
   %5 = getelementptr i8, ptr %0, i64 2
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -102,32 +104,45 @@ entry:
 define ptr @func0000000000000070(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 9
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 32
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
+; linux/optimized/sem.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 18
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 18
   %6 = getelementptr i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; gromacs/optimized/domdec_specatomcomm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 5
+  %4 = or i64 %3, %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 48
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = or disjoint i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 208
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 208
   %6 = getelementptr nusw float, ptr %5, i64 %4
   ret ptr %6
 }

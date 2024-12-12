@@ -1,5 +1,5 @@
 
-; 1038 occurrences:
+; 1037 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -69,6 +69,8 @@
 ; abc/optimized/saigOutDec.c.ll
 ; abc/optimized/saigTrans.c.ll
 ; abc/optimized/sbdCore.c.ll
+; abc/optimized/sbdCut.c.ll
+; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/sswAig.c.ll
 ; abc/optimized/sswConstr.c.ll
@@ -77,7 +79,6 @@
 ; abc/optimized/sswPairs.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/sswSim.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/sswUnique.c.ll
 ; abc/optimized/wlcMem.c.ll
@@ -134,7 +135,6 @@
 ; hermes/optimized/TypeInference.cpp.ll
 ; libjpeg-turbo/optimized/jcarith.c.ll
 ; linux/optimized/libata-sff.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64ConditionalCompares.cpp.ll
 ; llvm/optimized/AArch64ELFStreamer.cpp.ll
@@ -724,7 +724,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -1054,7 +1053,7 @@ define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = lshr i32 %2, 16
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 
@@ -1066,7 +1065,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr exact i32 %2, 9
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 

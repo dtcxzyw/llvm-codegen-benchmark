@@ -4,7 +4,7 @@
 ; cmake/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = zext i32 %0 to i64
   %4 = sub i64 %1, %2
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; libzmq/optimized/pipe.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000446(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000001086(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i32 %0 to i64
   %4 = sub i64 %1, %2

@@ -18,7 +18,6 @@
 ; gromacs/optimized/statepropagatordata.cpp.ll
 ; gromacs/optimized/velocityscalingtemperaturecoupling.cpp.ll
 ; ipopt/optimized/SensMetadataMeasurement.ll
-; libquic/optimized/random.c.ll
 ; linux/optimized/i915_query.ll
 ; linux/optimized/sem.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -33,6 +32,7 @@
 ; opencv/optimized/matrix_transform.cpp.ll
 ; opencv/optimized/ocr_beamsearch_decoder.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
+; opencv/optimized/reduce_layer.cpp.ll
 ; openexr/optimized/float_vector.c.ll
 ; openexr/optimized/part_attr.c.ll
 ; openexr/optimized/string_vector.c.ll
@@ -55,7 +55,7 @@
 ; yosys/optimized/rtlil.ll
 ; zxing/optimized/PDFDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 0
   ret i1 %1
@@ -87,9 +87,18 @@ entry:
 ; postgres/optimized/nodeWindowAgg.ll
 ; postgres/optimized/rowtypes.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = icmp ult i32 %0, 513
+  ret i1 %1
+}
+
+; 1 occurrences:
+; openusd/optimized/stbImage.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0) #0 {
+entry:
+  %1 = icmp ult i32 %0, 4
   ret i1 %1
 }
 

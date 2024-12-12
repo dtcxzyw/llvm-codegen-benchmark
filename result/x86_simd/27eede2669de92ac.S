@@ -18,7 +18,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func000000000000000a:                   # @func000000000000000a
 	vpsrlq	$32, %ymm2, %ymm2
-	vpmullq	%ymm0, %ymm2, %ymm0
+	vpmullq	%ymm2, %ymm0, %ymm0
 	vpsrlq	$32, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

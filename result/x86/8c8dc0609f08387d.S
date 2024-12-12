@@ -1,7 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
-	incl	%edi
+	addl	$-3, %edi
 	xorl	%eax, %eax
-	testl	$131071, %edi                   # imm = 0x1FFFF
-	sete	%al
-	shlq	$32, %rax
+	testl	$-3, %edi
+	setne	%al
+	shll	$5, %eax
+	addq	$32, %rax
 	retq

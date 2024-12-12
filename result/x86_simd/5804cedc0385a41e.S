@@ -16,7 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	.short	1                               # 0x1
 .LCPI1_1:
 	.short	1                               # 0x1
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpsrld	$16, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpbroadcastw	.LCPI1_1(%rip), %xmm1   # xmm1 = [1,1,1,1,1,1,1,1]

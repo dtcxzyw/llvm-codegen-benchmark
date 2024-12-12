@@ -11,10 +11,10 @@
 ; openmpi/optimized/pmix_client_spawn.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000c21(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
-  %4 = icmp eq ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
+  %4 = icmp eq ptr %0, %3
   %5 = icmp eq i64 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -24,26 +24,25 @@ entry:
 ; cmake/optimized/hostip.c.ll
 ; curl/optimized/libcurl_la-hostip.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000281(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000d01(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
-  %4 = icmp eq ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = icmp eq ptr %0, %3
   %5 = icmp ugt i64 %1, 65535
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; yalantinglibs/optimized/data_gen.cpp.ll
-; yalantinglibs/optimized/example.cpp.ll
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000241(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000c81(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
-  %4 = icmp eq ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = icmp eq ptr %0, %3
   %5 = icmp ult i64 %1, 16
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -54,10 +53,10 @@ entry:
 ; hdf5/optimized/H5Fsuper_cache.c.ll
 ; hdf5/optimized/H5Ocache.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000218(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000828(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -1
-  %4 = icmp ult ptr %3, %0
+  %4 = icmp ugt ptr %0, %3
   %5 = icmp eq i64 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -73,10 +72,10 @@ entry:
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -1
-  %4 = icmp ult ptr %3, %0
+  %4 = icmp ugt ptr %0, %3
   %5 = icmp eq i64 %1, -1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -88,10 +87,10 @@ entry:
 ; hdf5/optimized/H5Opline.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000088(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -1
-  %4 = icmp ult ptr %3, %0
+  %4 = icmp ugt ptr %0, %3
   %5 = icmp ult i64 %1, 4
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -103,10 +102,10 @@ entry:
 ; hdf5/optimized/H5Ocache.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000248(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000888(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -1
-  %4 = icmp ult ptr %3, %0
+  %4 = icmp ugt ptr %0, %3
   %5 = icmp ult i64 %1, 2
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -124,10 +123,10 @@ entry:
 ; llvm/optimized/StmtPrinter.cpp.ll
 ; llvm/optimized/TransAutoreleasePool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000d8c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 112
-  %4 = icmp ne ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 112
+  %4 = icmp ne ptr %0, %3
   %5 = icmp ne i64 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -136,10 +135,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/scanner.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000101(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1
-  %4 = icmp eq ptr %3, %0
+  %4 = icmp eq ptr %0, %3
   %5 = icmp ugt i64 %1, 4294967295
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -148,10 +147,10 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c1(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000d81(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 456
-  %4 = icmp eq ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 456
+  %4 = icmp eq ptr %0, %3
   %5 = icmp ne i64 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -160,10 +159,10 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/timeout_core_manager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000c2c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 288
-  %4 = icmp ne ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 288
+  %4 = icmp ne ptr %0, %3
   %5 = icmp eq i64 %1, 7
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -172,10 +171,10 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 2
-  %4 = icmp eq ptr %3, %0
+  %4 = icmp eq ptr %0, %3
   %5 = icmp eq i64 %1, -9223372036854775808
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6

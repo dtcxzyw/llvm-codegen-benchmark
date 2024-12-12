@@ -1,18 +1,24 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	movq	%rdi, %rax
 	addq	$144, %rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	cmovneq	%rsi, %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000068:                   # @func0000000000000068
 	movq	%rdi, %rax
 	addq	$12, %rdx
-	cmpq	%rsi, %rdx
-	cmovaeq	%rsi, %rax
+	cmpq	%rdx, %rsi
+	cmovbeq	%rsi, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movq	%rdi, %rax
 	incq	%rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
+	cmovneq	%rsi, %rax
+	retq
+func0000000000000041:                   # @func0000000000000041
+	movq	%rdi, %rax
+	addq	$-8, %rdx
+	cmpq	%rdx, %rsi
 	cmovneq	%rsi, %rax
 	retq

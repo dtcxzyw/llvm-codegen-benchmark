@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 16 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaSupps.c.ll
@@ -14,34 +14,20 @@
 ; ncnn/optimized/flatten_x86_avx512.cpp.ll
 ; ncnn/optimized/flatten_x86_fma.cpp.ll
 ; ncnn/optimized/reshape_x86.cpp.ll
-; openblas/optimized/dgbmv_thread_t.c.ll
-; openblas/optimized/dspmv_thread_L.c.ll
-; openblas/optimized/dspmv_thread_U.c.ll
-; openblas/optimized/dsymv_thread_L.c.ll
-; openblas/optimized/dsymv_thread_U.c.ll
-; openblas/optimized/dtpmv_thread_NLN.c.ll
-; openblas/optimized/dtpmv_thread_NLU.c.ll
-; openblas/optimized/dtpmv_thread_NUN.c.ll
-; openblas/optimized/dtpmv_thread_NUU.c.ll
-; openblas/optimized/dtpmv_thread_TLN.c.ll
-; openblas/optimized/dtpmv_thread_TLU.c.ll
-; openblas/optimized/dtpmv_thread_TUN.c.ll
-; openblas/optimized/dtpmv_thread_TUU.c.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 2
   %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 60 occurrences:
+; 59 occurrences:
 ; darktable/optimized/introspection_globaltonemap.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
-; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
@@ -121,7 +107,7 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -313,8 +299,19 @@ entry:
 define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr double, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %2, 2
+  %4 = mul i64 %1, %3
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 

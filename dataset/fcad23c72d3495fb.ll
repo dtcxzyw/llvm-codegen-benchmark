@@ -1,5 +1,6 @@
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -175,6 +176,19 @@ entry:
   %3 = ashr i32 %2, 19
   %4 = add nsw i32 %3, %1
   %5 = sub nsw i32 40, %4
+  %6 = zext nneg i32 %5 to i64
+  %7 = lshr i64 %0, %6
+  ret i64 %7
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = ashr i32 %2, 19
+  %4 = add nsw i32 %3, %1
+  %5 = sub nsw i32 64, %4
   %6 = zext nneg i32 %5 to i64
   %7 = lshr i64 %0, %6
   ret i64 %7

@@ -1,9 +1,10 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; grpc/optimized/alts_handshaker_client.cc.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AssumptionCache.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/GlobalOpt.cpp.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -15,7 +16,7 @@
 define i1 @func0000000000000002(i8 %0, i1 %1) #0 {
 entry:
   %2 = trunc i8 %0 to i1
-  %3 = or i1 %2, %1
+  %3 = or i1 %1, %2
   ret i1 %3
 }
 
@@ -25,7 +26,7 @@ entry:
 define i1 @func0000000000000000(i8 %0, i1 %1) #0 {
 entry:
   %2 = trunc i8 %0 to i1
-  %3 = or i1 %2, %1
+  %3 = or i1 %1, %2
   ret i1 %3
 }
 

@@ -1,8 +1,8 @@
 
-%"struct.std::atomic.280.2800129" = type { %"struct.std::__atomic_base.281.2800130" }
-%"struct.std::__atomic_base.281.2800130" = type { i32 }
+%"struct.std::atomic.280.2912174" = type { %"struct.std::__atomic_base.281.2912175" }
+%"struct.std::__atomic_base.281.2912175" = type { i32 }
 
-; 66 occurrences:
+; 67 occurrences:
 ; cmake/optimized/content_encoding.c.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
@@ -11,7 +11,6 @@
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
-; hdf5/optimized/H5B2int.c.ll
 ; hermes/optimized/zip.c.ll
 ; html5ever-rs/optimized/427f68nqtcfpg289.ll
 ; icu/optimized/udataswp.ll
@@ -41,7 +40,6 @@
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; openexr/optimized/internal_piz.c.ll
 ; openjdk/optimized/imageDecompressor.ll
-; openjdk/optimized/verifier.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/pathNode.cpp.ll
 ; qdrant-rs/optimized/2v88rld7ajfr8cux.ll
@@ -57,6 +55,7 @@
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
 ; tokio-rs/optimized/3nmgzybx6iv04snk.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; typst-rs/optimized/1ewejz0ibz9296z1.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; wasmtime-rs/optimized/1xdghmr48oeeku8v.ll
@@ -69,8 +68,10 @@
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/i5u7vsclgey2ddj.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i16 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -78,7 +79,7 @@ entry:
   ret ptr %4
 }
 
-; 55 occurrences:
+; 56 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -134,8 +135,9 @@ entry:
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/i5u7vsclgey2ddj.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = getelementptr ptr, ptr %0, i64 %2
@@ -148,7 +150,6 @@ entry:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
-; libquic/optimized/string_util.cc.ll
 ; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; mini-lsm-rs/optimized/1m9jerzd56wr2irm.ll
@@ -163,8 +164,9 @@ entry:
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/4nuxwfk1fz1jsu89.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = getelementptr ptr, ptr %0, i64 %2
@@ -172,8 +174,26 @@ entry:
   ret ptr %4
 }
 
-; 10 occurrences:
-; cpython/optimized/ceval.ll
+; 9 occurrences:
+; just-rs/optimized/15cobjmzhaiu6jpj.ll
+; libquic/optimized/string_util.cc.ll
+; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
+; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
+; rust-analyzer-rs/optimized/4mz36mxu8r0g7zqk.ll
+; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
+; wasmtime-rs/optimized/3wy7qx4e8fg0rwt0.ll
+; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000016(ptr %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = getelementptr { [3 x i64] }, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -24
+  ret ptr %4
+}
+
+; 9 occurrences:
 ; ockam-rs/optimized/27nutj9k22uohtyi.ll
 ; ockam-rs/optimized/2r89va29k151cr5y.ll
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
@@ -192,7 +212,18 @@ entry:
   ret ptr %4
 }
 
-; 25 occurrences:
+; 1 occurrences:
+; openjdk/optimized/verifier.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1024
+  ret ptr %4
+}
+
+; 14 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -207,6 +238,16 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = getelementptr %"struct.std::atomic.280.2912174", ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -4
+  ret ptr %4
+}
+
+; 10 occurrences:
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
 ; ockam-rs/optimized/1kl4v6vvko2mygns.ll
 ; ockam-rs/optimized/27nutj9k22uohtyi.ll
@@ -217,13 +258,12 @@ entry:
 ; ockam-rs/optimized/5d08dby0hzbl8sgj.ll
 ; ockam-rs/optimized/i22eb1mfvlgesy1.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
-; opencv/optimized/hfs_core.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr %"struct.std::atomic.280.2800129", ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -4
+  %3 = getelementptr ptr, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -8
   ret ptr %4
 }
 

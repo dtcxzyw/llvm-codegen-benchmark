@@ -15,7 +15,7 @@
 ; postgres/optimized/analyzejoins.ll
 ; postgres/optimized/parse_func.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
+; slurm/optimized/update_job.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/wireshark_main_window_slots.cpp.ll
 ; Function Attrs: nounwind
@@ -27,7 +27,7 @@ entry:
   ret i1 %4
 }
 
-; 33 occurrences:
+; 29 occurrences:
 ; abc/optimized/mapperTime.c.ll
 ; cvc5/optimized/constraint.cpp.ll
 ; flatbuffers/optimized/idl_gen_csharp.cpp.ll
@@ -39,6 +39,7 @@ entry:
 ; llvm/optimized/ObjCAutoreleaseWriteChecker.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; luau/optimized/Builtins.cpp.ll
+; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; openjdk/optimized/dfa_x86.ll
 ; openjdk/optimized/whitebox.ll
 ; openusd/optimized/changes.cpp.ll
@@ -48,19 +49,14 @@ entry:
 ; protobuf/optimized/message_differencer.cc.ll
 ; rust-analyzer-rs/optimized/1bjrygtvfxna7kin.ll
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
-; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
-; rust-analyzer-rs/optimized/266k6bqg3m0kg73d.ll
 ; rust-analyzer-rs/optimized/2bwlvqntjk72kr6f.ll
-; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; rust-analyzer-rs/optimized/4fo6e09jeifrbt47.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
-; rust-analyzer-rs/optimized/4x4kq4gfl0tghxcw.ll
 ; rust-analyzer-rs/optimized/53ntv1pfq7fnns7g.ll
-; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/5dzancx749u0myyk.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
 ; z3/optimized/pb_solver.cpp.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1) #0 {
 entry:

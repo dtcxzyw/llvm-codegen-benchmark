@@ -1,6 +1,7 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/int_util.cc.ll
+; boost/optimized/get_distance_measure.ll
 ; memcached/optimized/memcached-itoa_ljust.ll
 ; memcached/optimized/memcached_debug-itoa_ljust.ll
 ; ruby/optimized/sprintf.ll

@@ -19,25 +19,19 @@ func0000000000000006:                   # @func0000000000000006
 	shlxl	%edi, %ecx, %eax
 	cmovel	%ecx, %eax
 	retq
-func0000000000000013:                   # @func0000000000000013
-	cmpl	$6, %esi
-	movl	$1, %ecx
-	shlxl	%edi, %ecx, %eax
-	cmovbl	%ecx, %eax
-	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	cmpl	$7, %esi
 	movl	$2, %ecx
 	shlxl	%edi, %ecx, %eax
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000052:                   # @func0000000000000052
 	cmpl	$7, %esi
 	movl	$1, %ecx
 	shlxl	%edi, %ecx, %eax
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	cmpl	$3, %esi
 	movl	$-1, %eax
 	shlxl	%edi, %eax, %ecx

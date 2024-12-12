@@ -1,5 +1,5 @@
 
-; 300 occurrences:
+; 299 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/acbUtil.c.ll
@@ -16,6 +16,7 @@
 ; arrow/optimized/bitmap_ops.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/src.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; clamav/optimized/mbox.c.ll
@@ -26,6 +27,7 @@
 ; clamav/optimized/readdb.c.ll
 ; clamav/optimized/upack.c.ll
 ; clamav/optimized/upx.c.ll
+; cmake/optimized/cmSystemTools.cxx.ll
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/gzread.c.ll
 ; cmake/optimized/inffast.c.ll
@@ -52,7 +54,6 @@
 ; git/optimized/progress.ll
 ; git/optimized/record.ll
 ; git/optimized/ref-filter.ll
-; git/optimized/scalar.ll
 ; git/optimized/transport.ll
 ; graphviz/optimized/pathpath.c.ll
 ; gromacs/optimized/deflate.c.ll
@@ -90,7 +91,6 @@
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/auditsc.ll
-; linux/optimized/auth_unix.ll
 ; linux/optimized/deflate.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/exthdrs.ll
@@ -102,7 +102,6 @@
 ; linux/optimized/ip_tunnel_core.ll
 ; linux/optimized/lsm_audit.ll
 ; linux/optimized/lz4_decompress.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/nf_conntrack_reasm.ll
@@ -309,19 +308,6 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; lz4/optimized/lz4hc.c.ll
-; php/optimized/pcre2_compile.ll
-; ruby/optimized/utf_16le.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = add nuw nsw i32 %3, -5
-  ret i32 %4
-}
-
 ; 4 occurrences:
 ; lua/optimized/ltablib.ll
 ; qemu/optimized/block_vmdk.c.ll
@@ -384,11 +370,11 @@ entry:
   ret i32 %4
 }
 
-; 77 occurrences:
+; 75 occurrences:
 ; abc/optimized/compress.c.ll
-; abseil-cpp/optimized/charconv_parse.cc.ll
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/UriRecompose.c.ll
+; boost/optimized/numeric.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/json_reader.cpp.ll
@@ -437,8 +423,6 @@ entry:
 ; postgres/optimized/jsonapi.ll
 ; postgres/optimized/jsonapi_shlib.ll
 ; postgres/optimized/jsonapi_srv.ll
-; proj/optimized/wkt_parser.cpp.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; recastnavigation/optimized/fastlz.c.ll
 ; redis/optimized/redis-cli.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
@@ -488,7 +472,7 @@ entry:
   ret i32 %4
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
@@ -497,7 +481,6 @@ entry:
 ; ceres/optimized/polynomial.cc.ll
 ; git/optimized/xhistogram.ll
 ; icu/optimized/gregocal.ll
-; linux/optimized/machine_kexec_64.ll
 ; llvm/optimized/IndVarSimplify.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
@@ -568,12 +551,26 @@ entry:
   ret i32 %4
 }
 
-; 24 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; lz4/optimized/lz4hc.c.ll
+; php/optimized/pcre2_compile.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = trunc i64 %2 to i32
+  %4 = add nuw nsw i32 %3, 3
+  ret i32 %4
+}
+
+; 25 occurrences:
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -602,7 +599,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i64 %0, i64 %1) #0 {

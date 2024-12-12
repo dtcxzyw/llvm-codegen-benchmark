@@ -5,7 +5,7 @@
 ; protobuf/optimized/csharp_message.cc.ll
 ; re2/optimized/mimics_pcre.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f0(i8 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000003b0(i8 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f0(i8 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001b0(i8 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -29,11 +29,11 @@ entry:
 }
 
 ; 1 occurrences:
-; z3/optimized/udoc_relation.cpp.ll
+; gromacs/optimized/hizzie.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d0(i8 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000390(i8 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = icmp ult i64 %4, %3
   %6 = trunc i8 %0 to i1

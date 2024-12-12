@@ -12,7 +12,7 @@ entry:
   %3 = add i64 %2, -238690780250636288
   %4 = or disjoint i64 %3, %1
   %5 = bitcast i64 %4 to double
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

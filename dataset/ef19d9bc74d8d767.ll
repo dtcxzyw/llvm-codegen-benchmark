@@ -10,7 +10,7 @@ entry:
   ret i32 %4
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; hermes/optimized/GCBase.cpp.ll
 ; llvm/optimized/BasicObjCFoundationChecks.cpp.ll
 ; llvm/optimized/CStringChecker.cpp.ll
@@ -25,6 +25,7 @@ entry:
 ; llvm/optimized/ExprInspectionChecker.cpp.ll
 ; llvm/optimized/GenericTaintChecker.cpp.ll
 ; llvm/optimized/InnerPointerChecker.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/InvalidPtrChecker.cpp.ll
 ; llvm/optimized/Iterator.cpp.ll
 ; llvm/optimized/IteratorModeling.cpp.ll
@@ -54,7 +55,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 268435455
   %3 = mul i32 %2, 37
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

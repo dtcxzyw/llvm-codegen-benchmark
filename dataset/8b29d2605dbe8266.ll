@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/aigTable.c.ll
 ; libquic/optimized/gcm.c.ll
 ; linux/optimized/gf128mul.ll
-; openmpi/optimized/tm_mt.ll
 ; openssl/optimized/libcrypto-lib-gcm128.ll
 ; openssl/optimized/libcrypto-shlib-gcm128.ll
 ; Function Attrs: nounwind
@@ -12,8 +11,8 @@ entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 0, i64 -2233785415175766016
-  %6 = xor i64 %5, %1
-  %7 = xor i64 %6, %0
+  %6 = xor i64 %1, %5
+  %7 = xor i64 %0, %6
   ret i64 %7
 }
 

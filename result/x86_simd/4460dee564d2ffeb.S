@@ -3,6 +3,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovw2m	%xmm1, %k0
 	knotb	%k0, %k1
 	vmovaps	%ymm2, %ymm1 {%k1} {z}
-	vmulps	%ymm0, %ymm1, %ymm0
+	vmulps	%ymm1, %ymm0, %ymm0
 	vcvttps2dq	%ymm0, %ymm0
 	retq

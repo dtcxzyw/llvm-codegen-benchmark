@@ -2,7 +2,7 @@
 	.quad	64                              # 0x40
 .LCPI0_1:
 	.long	3968                            # 0xf80
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	vpcmpltuq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
 	vptestmd	.LCPI0_1(%rip){1to4}, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
@@ -14,7 +14,7 @@ func000000000000004c:                   # @func000000000000004c
 	.long	128                             # 0x80
 .LCPI1_1:
 	.quad	4096                            # 0x1000
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpltuq	.LCPI1_1(%rip){1to4}, %ymm0, %k1
 	vpcmpeqd	.LCPI1_2(%rip){1to4}, %xmm1, %k0 {%k1}
@@ -45,7 +45,7 @@ func0000000000000014:                   # @func0000000000000014
 	.byte	0                               # 0x0
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm0, %k1
 	vptestmd	.LCPI2_2(%rip){1to4}, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
@@ -77,7 +77,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	.byte	0                               # 0x0
 .LCPI3_2:
 	.quad	4                               # 0x4
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpandd	.LCPI3_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpneqd	.LCPI3_1(%rip){1to4}, %xmm1, %k1
 	vpcmpeqq	.LCPI3_2(%rip){1to4}, %ymm0, %k0 {%k1}
@@ -110,7 +110,7 @@ func000000000000001c:                   # @func000000000000001c
 	.byte	0                               # 0x0
 .LCPI4_2:
 	.quad	3                               # 0x3
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI4_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	.LCPI4_1(%rip){1to4}, %xmm1, %k1
 	vpcmpeqq	.LCPI4_2(%rip){1to4}, %ymm0, %k0 {%k1}
@@ -141,7 +141,7 @@ func0000000000000011:                   # @func0000000000000011
 	.byte	0                               # 0x0
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpandd	.LCPI5_2(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	.LCPI5_1(%rip){1to4}, %xmm1, %k1
 	vptestmq	%ymm0, %ymm0, %k0 {%k1}
@@ -150,17 +150,9 @@ func00000000000000c1:                   # @func00000000000000c1
 	retq
 .LCPI6_0:
 	.long	120                             # 0x78
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vptestmd	.LCPI6_0(%rip){1to4}, %xmm1, %k1
 	vptestmq	%ymm0, %ymm0, %k0 {%k1}
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI7_0:
-	.long	4064                            # 0xfe0
-func00000000000000c4:                   # @func00000000000000c4
-	vptestmq	%ymm0, %ymm0, %k1
-	vptestnmd	.LCPI7_0(%rip){1to4}, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

@@ -36,25 +36,9 @@ entry:
 define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = add nuw nsw i64 %5, %0
-  ret i64 %6
-}
-
-; 5 occurrences:
-; libsodium/optimized/libsse2_la-poly1305_sse2.ll
-; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = lshr i64 %2, 25
-  %4 = add nuw nsw i64 %3, %1
-  %5 = lshr i64 %4, 1
-  %6 = add nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -74,7 +58,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 7
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = lshr i64 %4, 7
   %6 = add i64 %5, %0
   ret i64 %6
@@ -104,9 +88,9 @@ entry:
 define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   ret i64 %6
 }
 
@@ -170,9 +154,9 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   ret i64 %6
 }
 
@@ -182,9 +166,23 @@ entry:
 define i64 @func0000000000000013(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = lshr i64 %4, 32
   %6 = add nuw nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 3 occurrences:
+; libsodium/optimized/libsse2_la-poly1305_sse2.ll
+; opencv/optimized/softfloat.cpp.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 21
+  %4 = add nuw nsw i64 %3, %1
+  %5 = lshr i64 %4, 2
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -206,9 +204,9 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

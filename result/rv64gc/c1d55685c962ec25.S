@@ -4,15 +4,15 @@ func0000000000000008:                   # @func0000000000000008
 	mv	a0, a1
 .LBB0_2:                                # %entry
 	ret
-func0000000000000006:                   # @func0000000000000006
+func0000000000000001:                   # @func0000000000000001
 	sext.w	a3, a0
-	blt	a2, a3, .LBB1_2
+	beq	a2, a3, .LBB1_2
 	mv	a0, a1
 .LBB1_2:                                # %entry
 	ret
-func0000000000000001:                   # @func0000000000000001
+func0000000000000006:                   # @func0000000000000006
 	sext.w	a3, a0
-	beq	a3, a2, .LBB2_2
+	blt	a2, a3, .LBB2_2
 	mv	a0, a1
 .LBB2_2:                                # %entry
 	ret

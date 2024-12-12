@@ -72,7 +72,7 @@ entry:
 ; php/optimized/ir_emit.ll
 ; php/optimized/ir_ra.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ea(i64 %0) #0 {
+define i1 @func00000000000001ca(i64 %0) #0 {
 entry:
   %.mask1 = and i64 %0, 33554432
   %1 = icmp eq i64 %.mask1, 0
@@ -83,7 +83,7 @@ entry:
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; php/optimized/ir_ra.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e6(i64 %0) #0 {
+define i1 @func00000000000001c6(i64 %0) #0 {
 entry:
   %.mask1 = and i64 %0, 33554432
   %1 = icmp ne i64 %.mask1, 0
@@ -94,7 +94,7 @@ entry:
 ; php/optimized/der.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0) #0 {
+define i1 @func0000000000000104(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = shl i32 %1, 1
@@ -120,7 +120,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0) #0 {
+define i1 @func000000000000004a(i64 %0) #0 {
 entry:
   %.mask1 = and i64 %0, 131072
   %1 = icmp eq i64 %.mask1, 0
@@ -150,7 +150,7 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0) #0 {
+define i1 @func0000000000000184(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = shl i32 %1, 6
@@ -175,7 +175,7 @@ entry:
 ; cpython/optimized/xmlparse.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0) #0 {
+define i1 @func0000000000000046(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = shl nuw i32 %1, 1
@@ -186,7 +186,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/sit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0) #0 {
+define i1 @func0000000000000181(i64 %0) #0 {
 entry:
   %.mask1 = and i64 %0, 268435455
   %1 = icmp eq i64 %.mask1, 0
@@ -196,7 +196,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/sit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0) #0 {
+define i1 @func0000000000000186(i64 %0) #0 {
 entry:
   %.mask1 = and i64 %0, 134217728
   %1 = icmp ne i64 %.mask1, 0
@@ -206,7 +206,7 @@ entry:
 ; 1 occurrences:
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
+define i1 @func0000000000000081(i64 %0) #0 {
 entry:
   %.mask1 = and i64 %0, 1073741823
   %1 = icmp eq i64 %.mask1, 0
@@ -217,7 +217,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0) #0 {
+define i1 @func0000000000000108(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = shl i32 %1, 1

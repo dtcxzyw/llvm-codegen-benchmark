@@ -8,5 +8,5 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 90
 	vadd.vx	v8, v8, a0
 	vmsleu.vi	v8, v8, 9
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret

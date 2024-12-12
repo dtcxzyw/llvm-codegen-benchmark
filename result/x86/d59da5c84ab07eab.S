@@ -106,6 +106,11 @@ func000000000000008f:                   # @func000000000000008f
 	sbbl	$-1, %esi
 	leal	5(%rsi,%rdi), %eax
 	retq
+func000000000000018f:                   # @func000000000000018f
+	cmpl	$100000, %edx                   # imm = 0x186A0
+	sbbl	$-1, %esi
+	leal	5(%rsi,%rdi), %eax
+	retq
 func0000000000000040:                   # @func0000000000000040
 	leal	169(%rsi), %ecx
 	leal	208(%rsi), %eax
@@ -113,7 +118,7 @@ func0000000000000040:                   # @func0000000000000040
 	cmovael	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000085:                   # @func0000000000000085
+func0000000000000185:                   # @func0000000000000185
 	cmpl	$17, %edx
 	adcl	$-1, %esi
 	leal	12(%rsi,%rdi), %eax

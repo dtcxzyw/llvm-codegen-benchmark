@@ -17,11 +17,9 @@ entry:
   ret i8 %5
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; icu/optimized/collationkeys.ll
-; icu/optimized/cstring.ll
-; libjpeg-turbo/optimized/tjunittest.c.ll
 ; libwebp/optimized/upsampling.c.ll
 ; libwebp/optimized/upsampling_sse2.c.ll
 ; libwebp/optimized/upsampling_sse41.c.ll
@@ -30,9 +28,9 @@ entry:
 ; libwebp/optimized/yuv_sse41.c.ll
 ; linux/optimized/irq.ll
 ; linux/optimized/pci.ll
-; quickjs/optimized/libbf.ll
 ; re2/optimized/prefilter.cc.ll
-; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -57,11 +55,14 @@ entry:
   ret i8 %5
 }
 
-; 17 occurrences:
+; 20 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; clamav/optimized/spin.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/pshinter.c.ll
+; freetype/optimized/type1.c.ll
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; icu/optimized/collationkeys.ll
 ; libjpeg-turbo/optimized/jcmarker.c.ll
@@ -91,9 +92,9 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; qemu/optimized/gdbstub.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000013(i32 %0, i32 %1, i32 %2) #0 {
+define i8 @func0000000000000053(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 10
+  %3 = icmp samesign ult i32 %2, 10
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
@@ -113,8 +114,10 @@ entry:
   ret i8 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000012(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -128,11 +131,33 @@ entry:
 ; clamav/optimized/strfn.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000023(i32 %0, i32 %1, i32 %2) #0 {
+define i8 @func0000000000000063(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 9
+  %3 = icmp samesign ugt i32 %2, 9
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = trunc nuw nsw i32 %4 to i8
+  ret i8 %5
+}
+
+; 1 occurrences:
+; nuklear/optimized/unity.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000013(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, -1610612736
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = trunc nuw nsw i32 %4 to i8
+  ret i8 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000052(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 128
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = trunc nuw i32 %4 to i8
   ret i8 %5
 }
 
@@ -144,6 +169,21 @@ entry:
 define i8 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = trunc i32 %4 to i8
+  ret i8 %5
+}
+
+; 5 occurrences:
+; icu/optimized/collationkeys.ll
+; icu/optimized/cstring.ll
+; libjpeg-turbo/optimized/tjunittest.c.ll
+; quickjs/optimized/libbf.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 10
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = trunc i32 %4 to i8
   ret i8 %5

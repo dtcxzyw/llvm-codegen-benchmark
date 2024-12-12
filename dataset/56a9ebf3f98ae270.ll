@@ -10,7 +10,7 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw nsw i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = add nuw i64 %1, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -275,7 +275,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -290,12 +290,13 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %3, 31
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; arrow/optimized/bignum.cc.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; openusd/optimized/bignum.cc.ll
@@ -305,7 +306,7 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 28
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -534,19 +535,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
-  %6 = add nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; abc/optimized/dauCount.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %1, %2
-  %4 = lshr i64 %3, 56
-  %5 = trunc nuw nsw i64 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -562,7 +551,7 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw nsw i64 %4 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -574,7 +563,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -588,7 +577,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 11
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -600,7 +589,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %3, 16
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

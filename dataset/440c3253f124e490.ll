@@ -16,7 +16,7 @@ entry:
   ret i64 %3
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSList.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
@@ -24,8 +24,6 @@ entry:
 ; icu/optimized/hebrwcal.ll
 ; libquic/optimized/time_support.c.ll
 ; linux/optimized/hcd.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; php/optimized/tm2unixtime.ll
 ; postgres/optimized/pg_lzcompress.ll
 ; postgres/optimized/pg_lzcompress_shlib.ll
@@ -34,9 +32,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0) #0 {
 entry:
-  %1 = mul nsw i64 %0, 4000
-  %2 = add nsw i64 %1, 4000
-  %3 = sdiv i64 %2, 1461001
+  %1 = mul nsw i64 %0, 10000
+  %2 = add nsw i64 %1, 14780
+  %3 = sdiv i64 %2, 3652425
   ret i64 %3
 }
 

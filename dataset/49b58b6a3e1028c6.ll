@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/sort_by_side.ll
 ; cpython/optimized/obmalloc.ll
 ; git/optimized/add-patch.ll
 ; mimalloc/optimized/bitmap.c.ll

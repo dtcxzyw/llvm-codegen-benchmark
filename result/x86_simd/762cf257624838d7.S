@@ -71,9 +71,9 @@ func0000000000000001:                   # @func0000000000000001
 	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0    # ymm0 = zero,ymm0[0],zero,zero,zero,ymm0[4],zero,zero,zero,ymm0[8],zero,zero,zero,ymm0[12],zero,zero,zero,ymm0[16],zero,zero,zero,ymm0[20],zero,zero,zero,ymm0[24],zero,zero,zero,ymm0[28],zero,zero
 	retq
 .LCPI2_0:
-	.long	768                             # 0x300
+	.long	24                              # 0x18
 func0000000000000003:                   # @func0000000000000003
-	vpslld	$8, %ymm0, %ymm0
+	vpslld	$3, %ymm0, %ymm0
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI3_0:

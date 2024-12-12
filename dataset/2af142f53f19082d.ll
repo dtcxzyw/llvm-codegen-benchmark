@@ -1,5 +1,7 @@
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; g2o/optimized/edge_sba_scale.cpp.ll
 ; g2o/optimized/edge_se3_plane_calib.cpp.ll

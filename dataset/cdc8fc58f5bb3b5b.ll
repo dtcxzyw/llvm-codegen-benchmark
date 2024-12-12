@@ -4,7 +4,7 @@
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; postgres/optimized/generation.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 137438953440
   %4 = add nuw nsw i64 %3, 80
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nsw i64 %3, -2
@@ -80,12 +80,12 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f9(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f9(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 9223372036854775804
   %4 = add nuw nsw i64 %3, 4
   %5 = sub nuw nsw i64 %0, %1
-  %6 = icmp uge i64 %5, %4
+  %6 = icmp samesign uge i64 %5, %4
   ret i1 %6
 }
 

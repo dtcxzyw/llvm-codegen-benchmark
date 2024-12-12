@@ -62,7 +62,7 @@ entry:
   ret i1 %3
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; box2d/optimized/b2_world.cpp.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -94,6 +94,7 @@ entry:
 ; pbrt-v4/optimized/paramdict.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, float %1) #0 {
 entry:
@@ -159,7 +160,7 @@ entry:
   ret i1 %3
 }
 
-; 81 occurrences:
+; 83 occurrences:
 ; abc/optimized/ioWriteBlif.c.ll
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -241,6 +242,8 @@ entry:
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i1 %0, float %1) #0 {
 entry:
@@ -313,7 +316,7 @@ entry:
   ret i1 %3
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; box2d/optimized/b2_revolute_joint.cpp.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
@@ -339,6 +342,7 @@ entry:
 ; pbrt-v4/optimized/film.cpp.ll
 ; postgres/optimized/float.ll
 ; raylib/optimized/rshapes.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, float %1) #0 {
 entry:

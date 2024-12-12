@@ -1,8 +1,8 @@
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	movq	%rdx, %rax
 	shlq	$16, %rax
 	leaq	(%rax,%rdx,4), %rax
 	leaq	11(%rsi,%rax), %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

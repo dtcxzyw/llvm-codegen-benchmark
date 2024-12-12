@@ -20,28 +20,21 @@ func0000000000000006:                   # @func0000000000000006
 	vsll.vv	v8, v10, v8
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000013:                   # @func0000000000000013
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vi	v0, v10, 5
-	vmv.v.i	v10, 1
-	vsll.vv	v8, v10, v8
-	vmerge.vim	v8, v8, 1, v0
-	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v10, 6
 	vmv.v.i	v10, 2
 	vsll.vv	v8, v10, v8
 	vmerge.vim	v8, v8, 2, v0
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000052:                   # @func0000000000000052
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v10, 6
 	vmv.v.i	v10, 1
 	vsll.vv	v8, v10, v8
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v10, 2
 	vmv.v.i	v10, -1

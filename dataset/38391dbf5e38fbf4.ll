@@ -21,13 +21,13 @@
 define i64 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   %6 = shl nsw i64 %5, 3
   ret i64 %6
 }
 
-; 74 occurrences:
+; 71 occurrences:
 ; abc/optimized/cnfWrite.c.ll
 ; abc/optimized/ioReadBaf.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
@@ -84,8 +84,6 @@ entry:
 ; gromacs/optimized/sorgl2.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/sock.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgels.c.ll
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsy.c.ll
@@ -96,7 +94,6 @@ entry:
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dorgql.c.ll
 ; opencv/optimized/denoising.cpp.ll
 ; openjdk/optimized/generateOopMap.ll
@@ -119,7 +116,7 @@ entry:
 define i64 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   %6 = shl nsw i64 %5, 2
   ret i64 %6

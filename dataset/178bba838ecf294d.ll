@@ -15,7 +15,7 @@ define float @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ult float %2, 0x3FE6A09E60000000
   %4 = select i1 %3, float %1, float -1.000000e+00
-  %5 = fadd float %4, %0
+  %5 = fadd float %0, %4
   ret float %5
 }
 
@@ -52,7 +52,7 @@ define float @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, 0.000000e+00
   %4 = select i1 %3, float %1, float 0.000000e+00
-  %5 = fadd float %4, %0
+  %5 = fadd float %0, %4
   ret float %5
 }
 
@@ -67,14 +67,15 @@ entry:
   ret float %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; darktable/optimized/introspection_tonemap.cc.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
-  %3 = fcmp ugt float %2, 5.000000e+00
-  %4 = select i1 %3, float %1, float 8.000000e+00
-  %5 = fadd float %4, %0
+  %3 = fcmp ugt float %2, 0.000000e+00
+  %4 = select i1 %3, float %1, float 0xC02BA18AA0000000
+  %5 = fadd float %0, %4
   ret float %5
 }
 

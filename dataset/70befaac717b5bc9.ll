@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sdiv i64 %1, 2447
-  %3 = add nsw i64 %2, 2
-  %4 = add i64 %3, %0
-  ret i64 %4
-}
-
 ; 7 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/http2.c.ll
@@ -57,6 +44,17 @@ define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = add nsw i64 %2, -1
+  %4 = add i64 %3, %0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sdiv i64 %1, 86400000
+  %3 = add nsw i64 %2, 719050
   %4 = add i64 %3, %0
   ret i64 %4
 }

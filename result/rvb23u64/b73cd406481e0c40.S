@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, -8
 	czero.eqz	a0, a0, a1
 	ret
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	sext.w	a1, a0
 	slli	a0, a0, 13
 	lui	a2, 14
@@ -21,7 +21,7 @@ func0000000000000006:                   # @func0000000000000006
 	slti	a1, a1, 3
 	czero.nez	a0, a0, a1
 	ret
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	sext.w	a1, a0
 	slli	a0, a0, 1
 	lui	a2, 524288

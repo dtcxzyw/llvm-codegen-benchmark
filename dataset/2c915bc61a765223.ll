@@ -91,7 +91,7 @@ entry:
   ret i32 %3
 }
 
-; 310 occurrences:
+; 309 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -344,7 +344,6 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -410,7 +409,7 @@ entry:
   ret i32 %3
 }
 
-; 285 occurrences:
+; 286 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/mvcUtils.c.ll
@@ -564,6 +563,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/lbitlib.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/sha1.cpp.ll
 ; miniaudio/optimized/unity.c.ll

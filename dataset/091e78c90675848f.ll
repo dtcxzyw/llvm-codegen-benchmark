@@ -1,5 +1,6 @@
 
-; 56 occurrences:
+; 57 occurrences:
+; boost/optimized/formatters_cache.ll
 ; icu/optimized/caniter.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/collationdatabuilder.ll

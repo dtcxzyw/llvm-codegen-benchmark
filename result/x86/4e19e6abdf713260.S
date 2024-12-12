@@ -1,6 +1,6 @@
 func0000000000000005:                   # @func0000000000000005
 	xorl	%eax, %eax
-	cmpb	%sil, %dl
+	cmpb	%dl, %sil
 	sete	%al
 	orl	%edi, %eax
 	retq

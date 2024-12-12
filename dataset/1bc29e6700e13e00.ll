@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; velox/optimized/DenseHll.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000006d(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 1, %1
-  %3 = lshr i32 %2, 1
-  %4 = add nuw nsw i32 %3, 5
-  %5 = add nsw i32 %4, %0
-  ret i32 %5
-}
-
 ; 15 occurrences:
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/fse_decompress.c.ll
@@ -31,20 +19,6 @@ entry:
 define i32 @func000000000000004f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = lshr i32 %2, 3
-  %4 = add nuw nsw i32 %3, 3
-  %5 = add nuw nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 3 occurrences:
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000006f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 1, %1
   %3 = lshr i32 %2, 3
   %4 = add nuw nsw i32 %3, 3
   %5 = add nuw nsw i32 %4, %0

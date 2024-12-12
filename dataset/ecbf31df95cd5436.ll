@@ -12,7 +12,7 @@ entry:
   %3 = shl i64 %2, 16
   %4 = and i64 %3, 4294901760
   %5 = or disjoint i64 %4, %1
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, 1
   ret i64 %7
 }
@@ -26,8 +26,8 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = and i64 %3, 281470681743360
-  %5 = or disjoint i64 %4, %1
-  %6 = or i64 %5, %0
+  %5 = or disjoint i64 %1, %4
+  %6 = or i64 %0, %5
   %7 = or i64 %6, 7381399789260242944
   ret i64 %7
 }
@@ -39,8 +39,8 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 39
   %4 = and i64 %3, 1152921504606846976
-  %5 = or i64 %4, %1
-  %6 = or i64 %5, %0
+  %5 = or i64 %1, %4
+  %6 = or i64 %0, %5
   %7 = or i64 %6, 8
   ret i64 %7
 }
@@ -52,22 +52,21 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 10
   %4 = and i64 %3, 31744
-  %5 = or i64 %4, %1
+  %5 = or i64 %1, %4
   %6 = or i64 %5, %0
   %7 = or disjoint i64 %6, 2031616
   ret i64 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/ds.ll
-; linux/optimized/set_memory.ll
 ; llvm/optimized/AArch64ExternalSymbolizer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = and i64 %3, 1610612736
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or i64 %5, %0
   %7 = or disjoint i64 %6, 2415919104
   ret i64 %7

@@ -55,9 +55,14 @@ entry:
   ret float %4
 }
 
-; 2 occurrences:
+; 7 occurrences:
+; boost/optimized/from_chars.ll
 ; imgui/optimized/imgui.cpp.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/8h2ladsi6pcbclrovmrkrncgn.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1, i8 %2) #0 {
 entry:

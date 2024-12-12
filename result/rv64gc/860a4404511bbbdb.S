@@ -5,6 +5,13 @@ func000000000000001e:                   # @func000000000000001e
 	addi	a0, a0, 1
 	srliw	a0, a0, 1
 	ret
+func000000000000000a:                   # @func000000000000000a
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	add	a0, a0, a1
+	addi	a0, a0, -977
+	srliw	a0, a0, 6
+	ret
 func000000000000000e:                   # @func000000000000000e
 	slli	a1, a1, 48
 	srli	a1, a1, 48

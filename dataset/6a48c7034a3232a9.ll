@@ -13,7 +13,7 @@
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; opencv/optimized/canny.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000288(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 6
   %4 = add nsw i64 %3, -1
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/eneconv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000284(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
   %4 = add nsw i64 %3, -1
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; nix/optimized/thread-pool.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, 1

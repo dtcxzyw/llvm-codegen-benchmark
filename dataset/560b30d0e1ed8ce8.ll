@@ -1,5 +1,5 @@
 
-; 979 occurrences:
+; 983 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -32,6 +32,9 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/decode.c.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -93,6 +96,7 @@
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll
+; faiss/optimized/lattice_Zn.cpp.ll
 ; faiss/optimized/sorting.cpp.ll
 ; flac/optimized/bitwriter.c.ll
 ; flac/optimized/replaygain_synthesis.c.ll
@@ -221,7 +225,6 @@
 ; linux/optimized/generic-radix-tree.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/hwregs.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/intel-gtt.ll
 ; linux/optimized/intel_ppgtt.ll
 ; linux/optimized/mempolicy.ll
@@ -342,7 +345,6 @@
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMoveMerger.cpp.ll
 ; llvm/optimized/RISCVPushPopOptimizer.cpp.ll
@@ -686,8 +688,6 @@
 ; postgres/optimized/integerset.ll
 ; postgres/optimized/network.ll
 ; postgres/optimized/pgbench.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proxygen/optimized/HPACKCodec.cpp.ll
 ; proxygen/optimized/HPACKContext.cpp.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
@@ -758,7 +758,6 @@
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
-; qemu/optimized/hw_net_can_ctucan_pci.c.ll
 ; qemu/optimized/hw_net_ne2000.c.ll
 ; qemu/optimized/hw_net_pcnet-pci.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
@@ -813,7 +812,6 @@
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; spike/optimized/s_mulAddF32.ll
@@ -942,6 +940,12 @@
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/sat_lookahead.cpp.ll
 ; z3/optimized/sat_lut_finder.cpp.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zfp/optimized/bitstream.c.ll
 ; zfp/optimized/decode1d.c.ll
 ; zfp/optimized/decode1f.c.ll
@@ -987,7 +991,7 @@ entry:
   ret i64 %2
 }
 
-; 1168 occurrences:
+; 1159 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
@@ -1015,6 +1019,8 @@ entry:
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DImporter_Metadata.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
+; boost/optimized/topology.ll
 ; c3c/optimized/target.c.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
@@ -1253,7 +1259,6 @@ entry:
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-sata.ll
 ; linux/optimized/mpi-bit.ll
-; linux/optimized/msr.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/trace_events.ll
 ; linux/optimized/xstate.ll
@@ -1332,7 +1337,6 @@ entry:
 ; llvm/optimized/PHIElimination.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
@@ -1534,13 +1538,10 @@ entry:
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -1796,9 +1797,6 @@ entry:
 ; postgres/optimized/lock.ll
 ; postgres/optimized/tidbitmap.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
@@ -1867,7 +1865,6 @@ entry:
 ; qemu/optimized/plugins_core.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/tcg.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; quantlib/optimized/abcdatmvolcurve.ll
@@ -1887,7 +1884,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -2131,7 +2127,6 @@ entry:
 ; yosys/optimized/ezminisat.ll
 ; yosys/optimized/flatten.ll
 ; yosys/optimized/glift.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/mem.ll
 ; yosys/optimized/memory_bmux2rom.ll
 ; yosys/optimized/memory_dff.ll
@@ -2164,7 +2159,7 @@ entry:
   ret i64 %2
 }
 
-; 235 occurrences:
+; 234 occurrences:
 ; eastl/optimized/Int128_t.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -2178,7 +2173,6 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-set.ll
 ; openspiel/optimized/pentago.cc.ll
-; qemu/optimized/target_riscv_pmu.c.ll
 ; ruby/optimized/marshal.ll
 ; spike/optimized/add16.ll
 ; spike/optimized/add32.ll
@@ -2408,7 +2402,7 @@ entry:
   ret i64 %2
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; cpython/optimized/dictobject.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -2435,7 +2429,6 @@ entry:
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_virtio_vhost-shadow-virtqueue.c.ll
 ; qemu/optimized/plugins_core.c.ll
-; qemu/optimized/target_riscv_pmu.c.ll
 ; quickjs/optimized/qjsc.ll
 ; spike/optimized/bclr.ll
 ; spike/optimized/bclri.ll

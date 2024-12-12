@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; opencc/optimized/bit-vector.cc.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

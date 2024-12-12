@@ -23,7 +23,7 @@
 ; yosys/optimized/subcircuit.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv exact i64 %0, 24
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/vmThread.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv i64 %0, 1000000
@@ -47,7 +47,7 @@ entry:
 ; openspiel/optimized/battleship.cc.ll
 ; velox/optimized/FunctionSignature.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv exact i64 %0, 96
@@ -66,7 +66,7 @@ entry:
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = sdiv exact i64 %0, 12
@@ -82,7 +82,7 @@ entry:
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv exact i64 %0, 24
@@ -96,7 +96,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_physical_plan.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = sdiv exact i64 %0, 104
@@ -110,7 +110,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_operator_projection.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_scan.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = sdiv exact i64 %0, 104
@@ -143,7 +143,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/validate.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv i64 %0, 4
@@ -154,7 +154,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv i64 %0, 2

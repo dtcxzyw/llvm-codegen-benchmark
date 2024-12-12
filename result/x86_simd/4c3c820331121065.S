@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	4                               # 0x4
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpabsd	%ymm0, %ymm0
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm0, %k0
@@ -9,7 +9,7 @@ func0000000000000074:                   # @func0000000000000074
 	retq
 .LCPI1_0:
 	.long	15                              # 0xf
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpabsd	%ymm0, %ymm0
 	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm0, %k0
@@ -18,7 +18,7 @@ func0000000000000058:                   # @func0000000000000058
 	retq
 .LCPI2_0:
 	.long	40                              # 0x28
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpabsd	%ymm0, %ymm0
 	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm0, %k0
@@ -27,7 +27,7 @@ func0000000000000054:                   # @func0000000000000054
 	retq
 .LCPI3_0:
 	.long	1050                            # 0x41a
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpabsd	%ymm0, %ymm0
 	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm0, %k0
@@ -36,7 +36,7 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 .LCPI4_0:
 	.long	2                               # 0x2
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpabsd	%ymm0, %ymm0
 	vpcmpeqd	.LCPI4_0(%rip){1to8}, %ymm0, %k0
@@ -81,7 +81,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 .LCPI9_0:
 	.long	1                               # 0x1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpabsd	%ymm0, %ymm0
 	vpcmpeqd	.LCPI9_0(%rip){1to8}, %ymm0, %k0

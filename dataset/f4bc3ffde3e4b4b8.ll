@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 45 occurrences:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -25,7 +25,6 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -52,7 +51,7 @@ entry:
   %2 = bitcast float %1 to i32
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 32768
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

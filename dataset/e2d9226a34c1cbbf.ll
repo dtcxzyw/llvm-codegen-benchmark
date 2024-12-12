@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/multi.c.ll
 ; cmake/optimized/setopt.c.ll
@@ -17,6 +17,7 @@
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; minetest/optimized/base64.cpp.ll
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
@@ -40,7 +41,7 @@ entry:
   %2 = trunc i64 %1 to i8
   %3 = lshr i8 %2, 2
   %4 = and i8 %3, 1
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

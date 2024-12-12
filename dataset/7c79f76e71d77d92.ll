@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; lightgbm/optimized/c_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000244(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000884(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw i64 %1, 1
@@ -19,7 +19,7 @@ entry:
 ; yosys/optimized/opt_clean.ll
 ; yosys/optimized/techmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000366(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000cc6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -33,7 +33,7 @@ entry:
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000054a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -1
@@ -46,11 +46,11 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/pml_ob1_sendreq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000364(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000cd4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp samesign ult i64 %4, %0
   %6 = icmp slt i64 %4, %3
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7

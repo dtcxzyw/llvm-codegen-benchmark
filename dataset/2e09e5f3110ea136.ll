@@ -1,6 +1,7 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; assimp/optimized/OpenDDLParser.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; lz4/optimized/lz4.c.ll
 ; recastnavigation/optimized/fastlz.c.ll
 ; wireshark/optimized/packet-lnet.c.ll

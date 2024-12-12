@@ -1,5 +1,9 @@
 
-; 47 occurrences:
+; 51 occurrences:
+; boost/optimized/context.ll
+; boost/optimized/round_robin.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/waker.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
@@ -48,23 +52,34 @@
 ; postgres/optimized/autovacuum.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000d8c(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
-  %3 = icmp ne ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %3 = icmp ne ptr %0, %2
   %4 = icmp ne ptr %0, null
   %5 = and i1 %4, %3
   ret i1 %5
 }
 
-; 2 occurrences:
-; abseil-cpp/optimized/low_level_alloc.cc.ll
+; 1 occurrences:
 ; git/optimized/transport.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000c8c(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
-  %3 = icmp ugt ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %3 = icmp ult ptr %0, %2
+  %4 = icmp ne ptr %0, null
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/low_level_alloc.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000088c(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -32
+  %3 = icmp ult ptr %0, %2
   %4 = icmp ne ptr %0, null
   %5 = and i1 %4, %3
   ret i1 %5
@@ -74,10 +89,10 @@ entry:
 ; graphviz/optimized/scan.c.ll
 ; linux/optimized/drm_plane.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -96
-  %3 = icmp ne ptr %2, %0
+  %3 = icmp ne ptr %0, %2
   %4 = icmp ne ptr %0, null
   %5 = and i1 %3, %4
   ret i1 %5
@@ -86,10 +101,10 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/listobject.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -8
-  %3 = icmp ugt ptr %2, %0
+  %3 = icmp ult ptr %0, %2
   %4 = icmp ne ptr %0, null
   %5 = and i1 %4, %3
   ret i1 %5

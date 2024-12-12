@@ -1,6 +1,7 @@
 
-; 36 occurrences:
+; 40 occurrences:
 ; assimp/optimized/OpenDDLParser.cpp.ll
+; boost/optimized/src.ll
 ; eastl/optimized/EASprintfOrdered.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
@@ -8,6 +9,9 @@
 ; jq/optimized/jv_dtoa.ll
 ; linux/optimized/nf_conntrack_sip.ll
 ; luajit/optimized/buildvm.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_span.ll
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -42,6 +46,31 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %0, %3
+  ret i32 %4
+}
+
+; 15 occurrences:
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_switch.ll
+; lvgl/optimized/lv_table.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = trunc i64 %2 to i32
+  %4 = sub nsw i32 %0, %3
   ret i32 %4
 }
 

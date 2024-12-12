@@ -6,11 +6,11 @@
 ; z3/optimized/smt_implied_equalities.cpp.ll
 ; z3/optimized/spacer_legacy_mev.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = freeze i32 %4
   %6 = icmp eq i32 %5, 0
   ret i1 %6
@@ -23,7 +23,7 @@ entry:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = shl nuw nsw i32 1, %2
@@ -43,7 +43,7 @@ entry:
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = shl nuw nsw i32 1, %2
@@ -56,11 +56,11 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = freeze i32 %4
   %6 = icmp ne i32 %5, 0
   ret i1 %6

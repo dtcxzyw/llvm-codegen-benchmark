@@ -3,7 +3,7 @@
 ; libpng/optimized/pngtrans.c.ll
 ; openjdk/optimized/pngtrans.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000027(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000047(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw i32 1, %0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; libpng/optimized/pngwutil.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw i32 1, %0

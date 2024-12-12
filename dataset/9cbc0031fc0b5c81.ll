@@ -6,7 +6,7 @@
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(double %0, double %1) #0 {
+define i1 @func000000000000014a(double %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = icmp sgt i32 %2, 0
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; libevent/optimized/evdns.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(double %0, double %1) #0 {
+define i1 @func00000000000000c1(double %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = icmp slt i32 %2, 1000

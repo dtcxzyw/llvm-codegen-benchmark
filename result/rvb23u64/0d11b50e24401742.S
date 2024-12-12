@@ -13,17 +13,17 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, -2048
 	addiw	a0, a0, -2048
 	ret
+func000000000000006f:                   # @func000000000000006f
+	slli	a1, a1, 10
+	add	a0, a0, a1
+	lui	a1, 1034754
+	addi	a1, a1, 1024
+	addw	a0, a0, a1
+	ret
 func000000000000007a:                   # @func000000000000007a
 	sh2add	a0, a1, a0
 	addi	a0, a0, 8
 	zext.w	a0, a0
-	ret
-func000000000000006f:                   # @func000000000000006f
-	slli	a1, a1, 6
-	add	a0, a0, a1
-	li	a1, -1552
-	sh3add	a0, a1, a0
-	sext.w	a0, a0
 	ret
 func0000000000000069:                   # @func0000000000000069
 	sh1add	a0, a1, a0

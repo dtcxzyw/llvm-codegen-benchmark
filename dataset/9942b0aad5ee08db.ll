@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 29 occurrences:
 ; glslang/optimized/ParseContextBase.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/SymbolTable.cpp.ll
@@ -21,10 +21,6 @@
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i64.ll
-; spike/optimized/f16_to_ui32.ll
-; spike/optimized/f16_to_ui64.ll
 ; wireshark/optimized/packet-btavdtp.c.ll
 ; wireshark/optimized/packet-cbor.c.ll
 ; wireshark/optimized/packet-dpnss.c.ll
@@ -42,7 +38,7 @@ entry:
   ret i64 %3
 }
 
-; 25 occurrences:
+; 27 occurrences:
 ; clamav/optimized/XzDec.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/block_header_decoder.c.ll
@@ -67,6 +63,8 @@ entry:
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; wireshark/optimized/packet-quic.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i8 %0) #0 {
@@ -77,7 +75,7 @@ entry:
   ret i64 %3
 }
 
-; 36 occurrences:
+; 38 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -114,6 +112,8 @@ entry:
 ; typst-rs/optimized/ef603zin5qw49hb.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i8 %0) #0 {
 entry:

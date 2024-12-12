@@ -13,24 +13,12 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_spots.c.ll
-; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
-  %4 = add i64 %0, %1
-  %5 = mul i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; faiss/optimized/IndexRowwiseMinMax.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 2
   %4 = add i64 %0, %1
   %5 = mul i64 %4, %3
   ret i64 %5
@@ -57,6 +45,18 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl i64 %0, 1
+  %5 = mul i64 %4, %3
+  ret i64 %5
+}
+
+; 2 occurrences:
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = shl nuw nsw i64 %0, 2
   %5 = mul i64 %4, %3
   ret i64 %5
 }

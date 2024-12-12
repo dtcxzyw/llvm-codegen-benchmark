@@ -28,7 +28,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 48
   %6 = shl nsw i64 %5, 3
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 

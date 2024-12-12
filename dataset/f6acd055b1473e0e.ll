@@ -1,8 +1,7 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; flac/optimized/options.c.ll
-; linux/optimized/uthex.ll
 ; mold/optimized/cmdline.cc.ALPHA.cc.ll
 ; mold/optimized/cmdline.cc.ARM32.cc.ll
 ; mold/optimized/cmdline.cc.ARM64.cc.ll
@@ -53,7 +52,7 @@ entry:
   ret i8 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
@@ -62,11 +61,12 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000006(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, %2
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 

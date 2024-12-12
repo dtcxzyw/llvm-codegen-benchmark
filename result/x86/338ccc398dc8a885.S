@@ -3,6 +3,11 @@ func0000000000000002:                   # @func0000000000000002
 	cmpb	$68, %dil
 	setne	%al
 	retq
+func0000000000000028:                   # @func0000000000000028
+	xorl	%eax, %eax
+	cmpb	$2, %dil
+	setae	%al
+	retq
 func0000000000000018:                   # @func0000000000000018
 	xorl	%eax, %eax
 	cmpb	$45, %dil

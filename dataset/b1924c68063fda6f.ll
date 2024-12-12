@@ -1,6 +1,5 @@
 
-; 198 occurrences:
-; arrow/optimized/value_parsing.cc.ll
+; 197 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -207,10 +206,12 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
 ; openjdk/optimized/NativeUtil.ll
 ; openjdk/optimized/check_code.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll

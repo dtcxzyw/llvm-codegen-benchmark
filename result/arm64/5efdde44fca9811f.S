@@ -1,88 +1,48 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xffffffffffffffff
-	uzp1	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v0.2d, v0.2d
+	sub	w8, w0, #1
+	ucvtf	d0, w8
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xffffffffffffffff
-	uzp1	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v0.2d, v0.2d
+	sub	w8, w0, #1
+	ucvtf	d0, w8
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	movi	v2.4s, #1
-	uzp1	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v0.2d, v0.2d
+	add	w8, w0, #1
+	ucvtf	d0, w8
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	movi	v2.4s, #1
-	uzp1	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v0.2d, v0.2d
+	add	w8, w0, #1
+	ucvtf	d0, w8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v2.4s, #1
-	uzp1	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v0.2d, v0.2d
+	add	w8, w0, #1
+	ucvtf	d0, w8
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	movi	v2.4s, #1
-	uzp1	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v0.2d, v0.2d
+	add	w8, w0, #1
+	ucvtf	d0, w8
 	ret
                                         // -- End function
 func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xffffffffffffffff
-	uzp1	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v0.2d, v0.2d
+	sub	w8, w0, #1
+	ucvtf	d0, w8
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xffffffffffffffff
-	uzp1	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ucvtf	v1.2d, v1.2d
-	ucvtf	v0.2d, v0.2d
+	sub	w8, w0, #1
+	ucvtf	d0, w8
 	ret
                                         // -- End function

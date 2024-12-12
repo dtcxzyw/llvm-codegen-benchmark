@@ -18,19 +18,19 @@ func0000000000000005:                   # @func0000000000000005
 	vucomisd	%xmm0, %xmm1
 	setb	%al
 	retq
-func000000000000000c:                   # @func000000000000000c
-	vsubsd	%xmm2, %xmm1, %xmm1
-	vucomisd	%xmm1, %xmm0
-	setae	%al
-	retq
 func000000000000000d:                   # @func000000000000000d
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	setbe	%al
 	retq
+func000000000000000c:                   # @func000000000000000c
+	vsubsd	%xmm2, %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
+	setae	%al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	vsubsd	%xmm2, %xmm1, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -40,7 +40,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vsubsd	%xmm2, %xmm1, %xmm1
-	vucomisd	%xmm0, %xmm1
+	vucomisd	%xmm1, %xmm0
 	setp	%al
 	retq
 func000000000000000b:                   # @func000000000000000b

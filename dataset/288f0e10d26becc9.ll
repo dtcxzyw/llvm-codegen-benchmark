@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 56 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; cmake/optimized/noproxy.c.ll
 ; curl/optimized/libcurl_la-noproxy.ll
@@ -19,6 +19,7 @@
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/ip6t_ipv6header.ll
 ; linux/optimized/xfrm_policy.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; memcached/optimized/memcached-util.ll
 ; memcached/optimized/memcached_debug-util.ll
 ; memcached/optimized/util.ll
@@ -37,7 +38,6 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; openssl/optimized/quic_record_test-bin-quic_record_test.ll
 ; php/optimized/pcre2_jit_compile.ll
-; php/optimized/safe_bcmp.ll
 ; postgres/optimized/network.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
@@ -49,7 +49,6 @@
 ; wireshark/optimized/packet-nlm.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/packet-quic.c.ll
-; wireshark/optimized/packet-stcsig.c.ll
 ; wireshark/optimized/packet-sysex_digitech.c.ll
 ; wolfssl/optimized/aes.c.ll
 ; wolfssl/optimized/chacha20_poly1305.c.ll

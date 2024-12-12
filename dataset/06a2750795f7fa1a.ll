@@ -7,7 +7,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, %0
+  %2 = add i64 %0, %1
   %3 = lshr i64 %2, 16
   %4 = and i64 %3, 31
   ret i64 %4
@@ -26,7 +26,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 6148914691236517205
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 2
   %5 = and i64 %4, 1383505805528216371
   ret i64 %5
@@ -43,7 +43,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 6148914691236517205
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = lshr i64 %3, 2
   %5 = and i64 %4, 3689348814741910323
   ret i64 %5
@@ -70,7 +70,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 12
   %5 = and i64 %4, 255
   ret i64 %5
@@ -83,7 +83,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1073737728
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 12
   %5 = and i64 %4, 262143
   ret i64 %5

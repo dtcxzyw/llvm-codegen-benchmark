@@ -1,7 +1,8 @@
 
-; 411 occurrences:
+; 409 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; cmake/optimized/xxhash.c.ll
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/introspection_censorize.c.ll
@@ -16,9 +17,7 @@
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; folly/optimized/FiberManager.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/Future.cpp.ll
 ; folly/optimized/GlobalExecutor.cpp.ll
 ; folly/optimized/GlobalShutdownSocketSet.cpp.ll
@@ -240,7 +239,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -416,7 +414,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
   %4 = mul i64 %3, -4658895280553007687
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   %6 = mul i64 %5, -7723592293110705685
   %7 = lshr i64 %6, 31
   ret i64 %7
@@ -433,7 +431,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
   %4 = mul nsw i64 %3, 265
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   %6 = mul i64 %5, 21
   %7 = lshr i64 %6, 28
   ret i64 %7

@@ -41,7 +41,7 @@
 ; ncnn/optimized/softmax_x86_avx512.cpp.ll
 ; ncnn/optimized/softmax_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 3
   %3 = add nuw nsw i64 %2, 4
@@ -54,7 +54,7 @@ entry:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/giaResub6.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
   %3 = add nsw i64 %2, 2

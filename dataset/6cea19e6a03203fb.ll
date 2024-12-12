@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 3105
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp ne i32 %1, 0
   %6 = or i1 %4, %5
   ret i1 %6
@@ -18,10 +18,10 @@ entry:
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64_r_minMag.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000054(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp sgt i32 %1, 0
   %6 = or i1 %4, %5
   ret i1 %6
@@ -35,7 +35,7 @@ entry:
 ; opencv/optimized/contours_approx.cpp.ll
 ; yosys/optimized/register.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000302(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = and i1 %3, %1
@@ -44,17 +44,16 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; git/optimized/strbuf.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; openusd/optimized/collectionExpressionEvaluator.cpp.ll
-; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000102(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 8193
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp eq i32 %0, 2
   %6 = or i1 %5, %4
   ret i1 %6
@@ -65,10 +64,10 @@ entry:
 ; quantlib/optimized/southkorea.ll
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 6
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp eq i32 %0, 31
   %6 = or i1 %5, %4
   ret i1 %6
@@ -79,7 +78,7 @@ entry:
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64_r_minMag.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000194(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000314(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = and i1 %3, %1
@@ -91,10 +90,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000202(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 255
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp eq i32 %0, 32
   %6 = or i1 %5, %4
   ret i1 %6
@@ -108,10 +107,10 @@ entry:
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/WarnMissedTransforms.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000310(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp ugt i32 %0, 1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -120,10 +119,10 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/collectionExpressionEvaluator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 4294967296
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp ult i32 %0, 2
   %6 = or i1 %5, %4
   ret i1 %6
@@ -132,7 +131,7 @@ entry:
 ; 1 occurrences:
 ; grpc/optimized/ev_epoll1_linux.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = and i1 %3, %1

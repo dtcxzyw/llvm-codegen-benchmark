@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	.quad	2147483648                      # 0x80000000
 .LCPI1_1:
 	.quad	4294967296                      # 0x100000000
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vpsllvq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpltuq	.LCPI1_1(%rip){1to4}, %ymm0, %k0

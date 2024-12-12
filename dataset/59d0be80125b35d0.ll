@@ -39,17 +39,15 @@ entry:
   ret i32 %3
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; linux/optimized/hid-ntrig.ll
 ; linux/optimized/xprtsock.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/fast_hough_transform.cpp.ll
 ; openjdk/optimized/cmsgamma.ll
 ; postgres/optimized/heapam.ll
-; postgres/optimized/itemptr.ll
 ; postgres/optimized/nodeTidscan.ll
 ; postgres/optimized/vacuum.ll
-; slurm/optimized/slurm_resolv.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; zxing/optimized/ODCodabarReader.cpp.ll
 ; zxing/optimized/ODCode39Reader.cpp.ll
@@ -73,7 +71,7 @@ entry:
   ret i32 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hid-pidff.ll
 ; linux/optimized/ioam6.ll
@@ -81,6 +79,7 @@ entry:
 ; openexr/optimized/decoding.c.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
+; openusd/optimized/patchTableFactory.cpp.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-twamp.c.ll

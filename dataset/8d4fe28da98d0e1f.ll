@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 41 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
@@ -19,10 +19,13 @@
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/FunctionSummary.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/NonNullParamChecker.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -31,6 +34,7 @@
 ; llvm/optimized/StatepointLowering.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll

@@ -9,7 +9,7 @@ define double @func0000000000000001(double %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = bitcast i64 %3 to double
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 

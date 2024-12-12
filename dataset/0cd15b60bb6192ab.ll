@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/sclSize.c.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_collision.cpp.ll
@@ -12,6 +12,7 @@
 ; box2d/optimized/b2_wheel_joint.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
 ; hdf5/optimized/h5diff_array.c.ll
+; lvgl/optimized/lv_arc.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind

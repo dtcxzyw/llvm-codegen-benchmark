@@ -47,7 +47,30 @@ entry:
   ret double %5
 }
 
-; 19 occurrences:
+; 13 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; graphviz/optimized/stress.c.ll
+; gromacs/optimized/dlaed6.cpp.ll
+; gromacs/optimized/dlas2.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; openblas/optimized/dlaln2.c.ll
+; openblas/optimized/z_abs.c.ll
+; postgres/optimized/selfuncs.ll
+; Function Attrs: nounwind
+define double @func0000000000000004(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ogt double %1, %2
+  %4 = select i1 %3, double %1, double %2
+  %5 = fdiv double %0, %4
+  ret double %5
+}
+
+; 18 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dgerfs.c.ll
@@ -66,30 +89,10 @@ entry:
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrrfs.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; Function Attrs: nounwind
 define double @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
-  %4 = select i1 %3, double %1, double %2
-  %5 = fdiv double %0, %4
-  ret double %5
-}
-
-; 9 occurrences:
-; graphviz/optimized/stress.c.ll
-; gromacs/optimized/dlaed6.cpp.ll
-; gromacs/optimized/dlapy2.cpp.ll
-; gromacs/optimized/dlas2.cpp.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
-; openblas/optimized/dlaln2.c.ll
-; openblas/optimized/z_abs.c.ll
-; postgres/optimized/selfuncs.ll
-; Function Attrs: nounwind
-define double @func0000000000000004(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fdiv double %0, %4
   ret double %5

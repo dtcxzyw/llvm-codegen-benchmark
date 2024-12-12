@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 33 occurrences:
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; cmake/optimized/mime.c.ll
 ; coreutils-rs/optimized/11fdr7kbbvsdssj2.ll
@@ -16,7 +16,6 @@
 ; ockam-rs/optimized/59na08zlxqp9p17s.ll
 ; openjdk/optimized/jfrEventClassTransformer.ll
 ; openusd/optimized/connectableAPIBehavior.cpp.ll
-; proj/optimized/io.cpp.ll
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; ripgrep-rs/optimized/3xecgmndlg4aprp5.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
@@ -30,6 +29,10 @@
 ; z3/optimized/sat_simplifier.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:

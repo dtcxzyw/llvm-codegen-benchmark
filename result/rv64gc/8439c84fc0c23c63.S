@@ -28,7 +28,7 @@ func0000000000000002:                   # @func0000000000000002
 	bnez	a0, .LBB3_2
 	mv	a1, a2
 .LBB3_2:                                # %entry
-	lui	a0, 4112
-	addi	a0, a0, 257
-	mulw	a0, a1, a0
+	slli	a0, a1, 2
+	slli	a1, a1, 4
+	subw	a0, a1, a0
 	ret

@@ -10,6 +10,12 @@ func0000000000000035:                   # @func0000000000000035
 	subl	%edx, %edi
 	leal	1(%rdi), %eax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	shrl	$3, %edx
+	leal	(%rdx,%rsi), %eax
+	notl	%eax
+	addl	%edi, %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	shrl	$8, %edx
 	addl	%esi, %edx

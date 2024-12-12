@@ -11,11 +11,10 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/ioWriteBlif.c.ll
 ; abc/optimized/ioWriteEdgelist.c.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
-; opencv/optimized/convolution.cpp.ll
 ; php/optimized/zend_persist.ll
 ; php/optimized/zend_persist_calc.ll
 ; Function Attrs: nounwind
@@ -25,32 +24,6 @@ entry:
   %3 = or disjoint i64 %2, 4
   %4 = shl nuw nsw i64 %0, 2
   %5 = add nuw nsw i64 %3, %4
-  ret i64 %5
-}
-
-; 1 occurrences:
-; spike/optimized/f16_to_f32.ll
-; Function Attrs: nounwind
-define i64 @func000000000000006d(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw nsw i64 %1, 31
-  %3 = or disjoint i64 %2, 939524096
-  %4 = shl nsw i64 %0, 23
-  %5 = add nsw i64 %3, %4
-  ret i64 %5
-}
-
-; 3 occurrences:
-; opencv/optimized/softfloat.cpp.ll
-; spike/optimized/f16_to_f128.ll
-; spike/optimized/f16_to_f64.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000044(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw i64 %1, 63
-  %3 = or disjoint i64 %2, 4539628424389459968
-  %4 = shl i64 %0, 42
-  %5 = add i64 %3, %4
   ret i64 %5
 }
 
@@ -67,6 +40,18 @@ entry:
   %2 = shl nuw i64 %1, 48
   %3 = or disjoint i64 %2, 4607182418800017408
   %4 = shl nsw i64 %0, 53
+  %5 = add i64 %3, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000044(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw i64 %1, 63
+  %3 = or disjoint i64 %2, 4035225266123964416
+  %4 = shl i64 %0, 29
   %5 = add i64 %3, %4
   ret i64 %5
 }

@@ -19,11 +19,11 @@ entry:
 ; abc/optimized/timMan.c.ll
 ; gromacs/optimized/gmx_hydorder.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_sdl_window.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll
 ; meshlab/optimized/edit_select.cpp.ll
 ; meshlab/optimized/editpickpoints.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; ncnn/optimized/roialign.cpp.ll
 ; nori/optimized/block.cpp.ll

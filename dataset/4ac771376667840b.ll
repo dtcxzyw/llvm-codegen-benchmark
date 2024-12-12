@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 59 occurrences:
 ; abc/optimized/giaForce.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/wlcNtk.c.ll
@@ -27,6 +27,8 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_scale.ll
 ; mitsuba3/optimized/measured.cpp.ll
 ; oiio/optimized/SHA1.cpp.ll
 ; oiio/optimized/xxhash.cpp.ll
@@ -66,13 +68,19 @@ entry:
   ret i32 %5
 }
 
-; 237 occurrences:
+; 243 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -313,7 +321,7 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/kitTruth.c.ll
@@ -322,6 +330,7 @@ entry:
 ; cpython/optimized/_datetimemodule.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
+; lvgl/optimized/lv_calendar.ll
 ; qemu/optimized/hw_usb_dev-hub.c.ll
 ; stb/optimized/stb_dxt.c.ll
 ; wireshark/optimized/packet-vrt.c.ll

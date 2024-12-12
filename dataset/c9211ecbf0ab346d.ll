@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; openjdk/optimized/multiVis.ll
-; spike/optimized/bf16_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i16 %1) #0 {
 entry:

@@ -16,3 +16,9 @@ func0000000000000007:                   # @func0000000000000007
 	orq	%rdi, %rax
 	orq	%rdx, %rax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	andl	$1, %edx
+	movl	%esi, %eax
+	orq	%rdi, %rax
+	orq	%rdx, %rax
+	retq

@@ -42,6 +42,12 @@ func0000000000000042:                   # @func0000000000000042
 	vcmpltps	%xmm0, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
+func00000000000000ac:                   # @func00000000000000ac
+	vxorps	%xmm2, %xmm2, %xmm2
+	vcmpleps	%xmm0, %xmm2, %k1
+	vcmpleps	%xmm1, %xmm0, %k0 {%k1}
+	kmovd	%k0, %eax
+	retq
 func0000000000000047:                   # @func0000000000000047
 	vcmpneqps	%xmm1, %xmm0, %k1
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -64,12 +70,6 @@ func0000000000000035:                   # @func0000000000000035
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpnleps	%xmm2, %xmm0, %k1
 	vcmpnleps	%xmm0, %xmm1, %k0 {%k1}
-	kmovd	%k0, %eax
-	retq
-func00000000000000ac:                   # @func00000000000000ac
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpleps	%xmm0, %xmm2, %k1
-	vcmpleps	%xmm1, %xmm0, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
 func00000000000000bd:                   # @func00000000000000bd

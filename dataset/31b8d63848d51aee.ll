@@ -12,7 +12,7 @@
 define i32 @func0000000000000075(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = add nsw i32 %0, -1
   %6 = add nsw i32 %5, %4
   ret i32 %6
@@ -31,7 +31,7 @@ entry:
 define i32 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = add i32 %0, 1352829926
   %6 = add i32 %5, %4
   ret i32 %6
@@ -48,7 +48,7 @@ entry:
 define i32 @func0000000000000070(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = add i32 %0, 1640531527
   %6 = add i32 %5, %4
   ret i32 %6
@@ -68,7 +68,7 @@ entry:
   ret i32 %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; assimp/optimized/zip.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
@@ -76,11 +76,12 @@ entry:
 ; php/optimized/pcre2_dfa_match.ll
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 9
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = add nuw nsw i32 %5, %4
   ret i32 %6
@@ -156,7 +157,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 7
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = add i32 %1, -16
   %6 = add i32 %4, %5
   ret i32 %6
@@ -168,7 +169,7 @@ entry:
 define i32 @func000000000000004d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = add nsw i32 %1, 9
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -180,8 +181,20 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 4
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = add nsw i32 %0, -56613888
+  %6 = add nuw nsw i32 %5, %4
+  ret i32 %6
+}
+
+; 1 occurrences:
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000073(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 9
+  %4 = or disjoint i32 %1, %3
+  %5 = add i32 %0, 1
   %6 = add nuw nsw i32 %5, %4
   ret i32 %6
 }
@@ -192,7 +205,7 @@ entry:
 define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = add i32 %1, -559038725
   %6 = add i32 %4, %5
   ret i32 %6

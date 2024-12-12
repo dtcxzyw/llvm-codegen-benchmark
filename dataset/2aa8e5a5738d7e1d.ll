@@ -1,9 +1,8 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; hyperscan/optimized/gough.c.ll
 ; libevent/optimized/evdns.c.ll
-; libevent/optimized/event.c.ll
 ; linux/optimized/rx.ll
 ; wireshark/optimized/packet-bthci_iso.c.ll
 ; wireshark/optimized/packet-qnet6.c.ll

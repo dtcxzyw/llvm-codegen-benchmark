@@ -10,7 +10,7 @@ func000000000000000f:                   # @func000000000000000f
 	bseti	a0, zero, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vsrl.vi	v10, v10, 1
 	vadd.vv	v8, v8, v10
 	ret
@@ -20,7 +20,7 @@ func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	li	a0, 44
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vsrl.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
 	ret

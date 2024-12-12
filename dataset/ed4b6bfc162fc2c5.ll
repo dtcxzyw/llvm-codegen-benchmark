@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; coreutils-rs/optimized/31ndbnr1d3v04hlo.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; php/optimized/softmagic.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vdivu_vx.ll

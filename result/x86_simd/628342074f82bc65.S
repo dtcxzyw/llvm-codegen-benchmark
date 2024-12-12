@@ -20,10 +20,10 @@ func0000000000000002:                   # @func0000000000000002
 	vpshufb	.LCPI0_0(%rip), %xmm0, %xmm0    # xmm0 = xmm0[1,1,3,3,5,5,7,7,9,9,11,11,13,13,15,15]
 	vzeroupper
 	retq
-func0000000000000003:                   # @func0000000000000003
+func0000000000000012:                   # @func0000000000000012
 	vpmovdw	%ymm0, %xmm0
 	vpsrlw	$8, %xmm0, %xmm0
-	vpsllw	$7, %xmm0, %xmm1
+	vpsllw	$8, %xmm0, %xmm1
 	vpsubw	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq

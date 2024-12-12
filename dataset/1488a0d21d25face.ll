@@ -1,4 +1,15 @@
 
+; 1 occurrences:
+; qemu/optimized/crypto_block-luks.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000b(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = and i32 %0, 33554424
+  %4 = mul nuw nsw i32 %3, %2
+  ret i32 %4
+}
+
 ; 4 occurrences:
 ; gromacs/optimized/tpi.cpp.ll
 ; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
@@ -10,6 +21,29 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %0, -8
   %4 = mul nsw i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_bin_decoder.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = and i32 %0, 65535
+  %4 = mul nuw nsw i32 %3, %2
+  ret i32 %4
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000e(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = and i32 %0, 65535
+  %4 = mul nuw i32 %3, %2
   ret i32 %4
 }
 

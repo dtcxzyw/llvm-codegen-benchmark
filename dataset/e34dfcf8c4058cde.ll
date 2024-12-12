@@ -16,7 +16,7 @@ entry:
   ret i32 %3
 }
 
-; 408 occurrences:
+; 411 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -29,6 +29,9 @@ entry:
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btInternalEdgeUtility.ll
 ; cpython/optimized/dtoa.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -146,6 +149,9 @@ entry:
 ; luau/optimized/lnumprint.cpp.ll
 ; luau/optimized/lstrlib.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_draw_sw_border.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_spinbox.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
@@ -170,8 +176,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -317,7 +321,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_mul.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
-; openusd/optimized/warped_motion.c.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; php/optimized/dtoa.ll
@@ -433,18 +436,19 @@ entry:
   ret i32 %3
 }
 
-; 349 occurrences:
+; 352 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/giaBound.c.ll
-; abc/optimized/intM114.c.ll
 ; abc/optimized/wlcWriteVer.c.ll
 ; abc/optimized/wlnWriteVer.c.ll
 ; abseil-cpp/optimized/demangle.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; bullet3/optimized/btInternalEdgeUtility.ll
@@ -453,7 +457,6 @@ entry:
 ; clamav/optimized/BraIA64.c.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/ia64.c.ll
-; cmake/optimized/index.c.ll
 ; cmake/optimized/x86.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -576,6 +579,9 @@ entry:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_spinbox.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; mold/optimized/arch-arm32.cc.ll
@@ -801,7 +807,7 @@ entry:
   ret i32 %3
 }
 
-; 125 occurrences:
+; 128 occurrences:
 ; abc/optimized/cnf_reader.c.ll
 ; abc/optimized/giaRex.c.ll
 ; abc/optimized/xsatCnfReader.c.ll
@@ -811,6 +817,7 @@ entry:
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; clamav/optimized/clamdtop.c.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -833,6 +840,7 @@ entry:
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; llvm/optimized/IfConversion.cpp.ll
+; lvgl/optimized/lv_area.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -913,6 +921,7 @@ entry:
 ; openspiel/optimized/Par.cpp.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/fast-dtoa.cc.ll
+; openusd/optimized/warped_motion.c.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/d2s.ll
@@ -935,7 +944,7 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; clamav/optimized/wwunpack.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
@@ -943,7 +952,6 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; libpng/optimized/png.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
@@ -986,7 +994,7 @@ entry:
   ret i32 %3
 }
 
-; 36 occurrences:
+; 32 occurrences:
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/fraClaus.c.ll
@@ -996,11 +1004,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/date.ll
-; gromacs/optimized/dgelqf.cpp.ll
-; gromacs/optimized/dgeqrf.cpp.ll
 ; gromacs/optimized/dsytrd.cpp.ll
-; gromacs/optimized/sgelqf.cpp.ll
-; gromacs/optimized/sgeqrf.cpp.ll
 ; gromacs/optimized/ssytrd.cpp.ll
 ; hyperscan/optimized/accelcompile.cpp.ll
 ; libpng/optimized/pngrtran.c.ll

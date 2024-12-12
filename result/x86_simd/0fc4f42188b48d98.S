@@ -28,16 +28,6 @@ func0000000000000002:                   # @func0000000000000002
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpsrld	$31, %ymm1, %ymm0 {%k1}
 	retq
-.LCPI3_0:
-	.long	2                               # 0x2
-func0000000000000008:                   # @func0000000000000008
-	vpsllw	$15, %xmm0, %xmm0
-	vpmovw2m	%xmm0, %k1
-	vpcmpltud	%ymm2, %ymm1, %k0
-	vpmovm2d	%k0, %ymm0
-	vpsrld	$31, %ymm0, %ymm0
-	vpbroadcastd	.LCPI3_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [2,2,2,2,2,2,2,2]
-	retq
 func0000000000000012:                   # @func0000000000000012
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1

@@ -1,10 +1,10 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	cmpq	$5, %rdx
 	setne	%al
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addq	$-4, %rdx
 	cmpq	$3, %rdx
 	setb	%al

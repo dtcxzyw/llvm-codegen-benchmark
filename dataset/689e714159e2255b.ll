@@ -6,11 +6,11 @@
 ; php/optimized/dtoa.ll
 ; redis/optimized/sentinel.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i32 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, 4503599627370496
   %.v = select i1 %2, i32 -2, i32 -1
-  %3 = add nsw i32 %.v, %1
+  %3 = add nsw i32 %1, %.v
   ret i32 %3
 }
 
@@ -21,7 +21,7 @@ define i32 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, 0
   %.v = select i1 %2, i32 1, i32 2
-  %3 = add i32 %.v, %1
+  %3 = add i32 %1, %.v
   ret i32 %3
 }
 
@@ -29,11 +29,11 @@ entry:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000005a(i64 %0, i32 %1) #0 {
+define i32 @func00000000000000aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i64 %0, -62162121600000000
   %.v = select i1 %2, i32 719468, i32 573372
-  %3 = add nsw i32 %.v, %1
+  %3 = add nsw i32 %1, %.v
   ret i32 %3
 }
 

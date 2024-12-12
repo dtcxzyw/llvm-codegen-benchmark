@@ -12,8 +12,10 @@ entry:
   ret i32 %2
 }
 
-; 79 occurrences:
+; 78 occurrences:
 ; arrow/optimized/strptime.c.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/test_iostream.ll
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -39,13 +41,10 @@ entry:
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; libquic/optimized/lhash_test.c.ll
 ; libquic/optimized/prtime.cc.ll
-; libquic/optimized/random.c.ll
 ; linux/optimized/intel_ddi.ll
 ; memcached/optimized/testapp.ll
-; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; node/optimized/libnode.crypto_ec.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; nuttx/optimized/lib_strtold.c.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; oiio/optimized/Codec.cpp.ll
@@ -54,7 +53,6 @@ entry:
 ; opencv/optimized/delaunay2.cpp.ll
 ; opencv/optimized/distrans.cpp.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
-; openspiel/optimized/blackjack.cc.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/havannah.cc.ll
@@ -89,6 +87,7 @@ entry:
 ; wireshark/optimized/ws_strptime.c.ll
 ; yosys/optimized/flowmap.ll
 ; yosys/optimized/show.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/ODDataBarExpandedBitDecoder.cpp.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll

@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-scalar.ll
 ; openssl/optimized/libcrypto-shlib-scalar.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = add i64 %3, -56
@@ -15,24 +15,12 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add nsw i64 %3, 1000000
   %5 = select i1 %0, i64 %4, i64 %3
   %6 = icmp sgt i64 %5, 0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; libquic/optimized/d1_lib.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000056(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = add nsw i64 %3, 1000000
-  %5 = select i1 %0, i64 %4, i64 %3
-  %6 = icmp slt i64 %5, 15000
   ret i1 %6
 }
 
@@ -61,8 +49,9 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; quickjs/optimized/libbf.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -75,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/EATest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = add nsw i64 %3, 1000000000

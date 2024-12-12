@@ -1,6 +1,7 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; cmake/optimized/xxhash.c.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; grpc/optimized/ring_hash.cc.ll

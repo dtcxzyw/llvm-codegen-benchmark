@@ -9,14 +9,15 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 256, i32 %1
   %6 = zext nneg i32 %5 to i64
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
@@ -32,7 +33,7 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 undef, i32 %1
   %6 = zext i32 %5 to i64
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 
@@ -48,7 +49,7 @@ entry:
   %4 = icmp eq i32 %3, 2
   %5 = select i1 %4, i32 3, i32 %1
   %6 = zext nneg i32 %5 to i64
-  %7 = or i64 %6, %0
+  %7 = or i64 %0, %6
   ret i64 %7
 }
 

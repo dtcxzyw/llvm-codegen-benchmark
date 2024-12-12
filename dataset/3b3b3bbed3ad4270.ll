@@ -1,6 +1,7 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; gromacs/optimized/nb_free_energy.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; mitsuba3/optimized/cylinder.cpp.ll
 ; nuklear/optimized/unity.c.ll

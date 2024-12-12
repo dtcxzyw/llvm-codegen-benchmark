@@ -1,5 +1,5 @@
 
-; 64 occurrences:
+; 65 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -19,7 +19,6 @@
 ; graphviz/optimized/scan.c.ll
 ; hdf5/optimized/H5LTanalyze.c.ll
 ; hermes/optimized/RegExp.cpp.ll
-; icu/optimized/gregoimp.ll
 ; jq/optimized/lexer.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; linux/optimized/blk-lib.ll
@@ -56,6 +55,7 @@
 ; php/optimized/zend_persist.ll
 ; php/optimized/zend_persist_calc.ll
 ; proj/optimized/geodesic.c.ll
+; proj/optimized/mlfn.cpp.ll
 ; ruby/optimized/numeric.ll
 ; ruby/optimized/time.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
@@ -64,6 +64,7 @@
 ; verilator/optimized/V3PreProc.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; yosys/optimized/rtlil_lexer.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
@@ -72,7 +73,7 @@ entry:
   ret i32 %2
 }
 
-; 49 occurrences:
+; 47 occurrences:
 ; abc/optimized/giaPat.c.ll
 ; abc/optimized/luckyFast16.c.ll
 ; brotli/optimized/encode.c.ll
@@ -106,8 +107,6 @@ entry:
 ; openjdk/optimized/pngrutil.ll
 ; pbrt-v4/optimized/pspec.cpp.ll
 ; pbrt-v4/optimized/samplers.cpp.ll
-; proj/optimized/mlfn.cpp.ll
-; qemu/optimized/hw_misc_unimp.c.ll
 ; ruby/optimized/numeric.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
@@ -130,7 +129,7 @@ entry:
   ret i32 %2
 }
 
-; 210 occurrences:
+; 209 occurrences:
 ; clamav/optimized/Bcj2.c.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/mew.c.ll
@@ -217,7 +216,6 @@ entry:
 ; llvm/optimized/PreprocessingRecord.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/PreprocessorLexer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll

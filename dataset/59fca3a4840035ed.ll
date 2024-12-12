@@ -1,5 +1,7 @@
 
-; 37 occurrences:
+; 39 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/emit.c.ll
 ; gromacs/optimized/colvarcomp_protein.cpp.ll
@@ -41,7 +43,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fmul double %4, 5.000000e-01
   ret double %5
 }

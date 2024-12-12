@@ -1,4 +1,40 @@
 
+; 8 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; graphviz/optimized/solve_VPSC.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000022(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp olt double %1, %2
+  %4 = select i1 %3, double %1, double %2
+  %5 = fcmp olt double %4, 0x400921FB54442D18
+  %6 = and i1 %0, %5
+  ret i1 %6
+}
+
+; 6 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp olt double %2, %1
+  %4 = select i1 %3, double %1, double %2
+  %5 = fcmp ogt double %4, 0x400921FB54442D18
+  %6 = and i1 %5, %0
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
@@ -7,7 +43,7 @@ entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fcmp une double %4, 0.000000e+00
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -31,7 +67,7 @@ entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fcmp ogt double %4, 0.000000e+00
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -73,19 +109,6 @@ entry:
 }
 
 ; 2 occurrences:
-; graphviz/optimized/solve_VPSC.cpp.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp olt double %2, %1
-  %4 = select i1 %3, double %1, double %2
-  %5 = fcmp olt double %4, 0.000000e+00
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 2 occurrences:
 ; graphviz/optimized/shapes.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
@@ -121,7 +144,7 @@ entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fcmp ole double %4, 1.000000e+00
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -133,7 +156,7 @@ entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fcmp une double %4, 0.000000e+00
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

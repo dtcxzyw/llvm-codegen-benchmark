@@ -7,14 +7,12 @@ func0000000000000003:                   # @func0000000000000003
 	leal	(%rdi,%rdi), %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	movl	%edi, %eax
 	movl	%edi, %ecx
-	movl	$2147975281, %edx               # imm = 0x80078071
-	imulq	%rcx, %rdx
-	shrq	$47, %rdx
-	imull	$65521, %edx, %ecx              # imm = 0xFFF1
-	subl	%ecx, %eax
-	shll	$16, %eax
+	movl	$2155905153, %eax               # imm = 0x80808081
+	imulq	%rcx, %rax
+	shrq	$39, %rax
+	addl	%edi, %eax
+	shll	$24, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%edi, %eax

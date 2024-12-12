@@ -1,6 +1,5 @@
 
-; 25 occurrences:
-; linux/optimized/blk-sysfs.ll
+; 22 occurrences:
 ; linux/optimized/intel_pch_refclk.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/skl_watermark.ll
@@ -13,10 +12,8 @@
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; openjdk/optimized/mlib_ImageAffine_NN_Bit.ll
-; qemu/optimized/hw_display_ramfb.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_display_virtio-gpu.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/ui_dbus-listener.c.ll
 ; qemu/optimized/ui_qemu-pixman.c.ll
 ; qemu/optimized/ui_vnc-enc-tight.c.ll

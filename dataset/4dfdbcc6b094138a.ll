@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; clamav/optimized/disasm.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000024(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 5
   %4 = icmp ult i8 %1, 64
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000066(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func00000000000000c6(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 32
   %4 = icmp slt i8 %1, 32

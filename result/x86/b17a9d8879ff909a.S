@@ -1,9 +1,9 @@
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	cmpq	$1, %rdx
 	sbbq	$0, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	leaq	-400(%rsi), %rax
 	testq	%rdx, %rdx
 	cmovnsq	%rsi, %rax

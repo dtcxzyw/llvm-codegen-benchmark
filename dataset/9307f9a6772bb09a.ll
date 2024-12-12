@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/GVN.cpp.ll
@@ -14,6 +14,7 @@
 ; slurm/optimized/data_parser_v0_0_41_la-parsers.ll
 ; slurm/optimized/kvs.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0) #0 {
 entry:

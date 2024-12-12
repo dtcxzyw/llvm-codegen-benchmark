@@ -1,30 +1,30 @@
-func0000000000000311:                   # @func0000000000000311
+func0000000000000c21:                   # @func0000000000000c21
 	incq	%rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%cl
 	testb	%dil, %dil
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	decq	%rdx
-	cmpq	%rsi, %rdx
-	seta	%cl
+	cmpq	%rdx, %rsi
+	setb	%cl
 	testb	%dil, %dil
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000003a1:                   # @func00000000000003a1
+func0000000000000d41:                   # @func0000000000000d41
 	incq	%rdx
-	cmpq	%rsi, %rdx
-	setl	%cl
+	cmpq	%rdx, %rsi
+	setg	%cl
 	cmpb	$27, %dil
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	incq	%rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%cl
 	cmpb	$92, %dil
 	sete	%al

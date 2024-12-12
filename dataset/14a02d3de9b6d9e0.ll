@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; grpc/optimized/call.cc.ll
 ; icu/optimized/numfmt.ll
 ; libpng/optimized/png.c.ll
@@ -17,7 +17,6 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmedge/optimized/segment.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; yosys/optimized/fmt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i32 %0) #0 {

@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; openjdk/optimized/ProcessPath.ll
 ; openusd/optimized/mathUtils.cpp.ll
 ; proj/optimized/nicol.cpp.ll
 ; quantlib/optimized/bivariatenormaldistribution.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, i1 %1, double %2) #0 {
 entry:

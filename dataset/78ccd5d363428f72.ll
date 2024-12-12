@@ -11,9 +11,7 @@ entry:
   ret i8 %4
 }
 
-; 3 occurrences:
-; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
-; ockam-rs/optimized/2n1wyoax2qficosw.ll
+; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000009(i8 %0, i8 %1, i32 %2) #0 {
@@ -21,6 +19,19 @@ entry:
   %3 = icmp ult i32 %2, 2
   %4 = select i1 %3, i8 %0, i8 %1
   %5 = or disjoint i8 %4, 4
+  ret i8 %5
+}
+
+; 3 occurrences:
+; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
+; ockam-rs/optimized/2n1wyoax2qficosw.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000029(i8 %0, i8 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 5120
+  %4 = select i1 %3, i8 %0, i8 %1
+  %5 = or disjoint i8 %4, 48
   ret i8 %5
 }
 
@@ -53,9 +64,9 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/scrptrun.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i8 %1, i32 %2) #0 {
+define i8 @func0000000000000031(i8 %0, i8 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 255
+  %3 = icmp samesign ugt i32 %2, 255
   %4 = select i1 %3, i8 %0, i8 %1
   %5 = or disjoint i8 %4, 4
   ret i8 %5

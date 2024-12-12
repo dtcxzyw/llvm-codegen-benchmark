@@ -1,65 +1,65 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	-32(%rdx), %eax
 	movzbl	%al, %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
-	cmpb	%dil, %al
+	cmpb	%al, %dil
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leal	-32(%rdx), %eax
 	movzbl	%al, %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
-	cmpb	%dil, %al
-	setg	%al
-	retq
-func000000000000001a:                   # @func000000000000001a
-	leal	-32(%rdx), %eax
-	movzbl	%al, %eax
-	testb	$1, %sil
-	cmovel	%edx, %eax
-	cmpb	%dil, %al
+	cmpb	%al, %dil
 	setl	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func000000000000002a:                   # @func000000000000002a
+	leal	-32(%rdx), %eax
+	movzbl	%al, %eax
+	testb	$1, %sil
+	cmovel	%edx, %eax
+	cmpb	%al, %dil
+	setg	%al
+	retq
+func0000000000000061:                   # @func0000000000000061
 	leal	32(%rdx), %eax
 	movzbl	%al, %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
-	cmpb	%dil, %al
+	cmpb	%al, %dil
 	sete	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	leal	32(%rdx), %eax
 	movzbl	%al, %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
-	cmpb	%dil, %al
-	setg	%al
-	retq
-func000000000000003a:                   # @func000000000000003a
-	leal	32(%rdx), %eax
-	movzbl	%al, %eax
-	testb	$1, %sil
-	cmovel	%edx, %eax
-	cmpb	%dil, %al
+	cmpb	%al, %dil
 	setl	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func000000000000006a:                   # @func000000000000006a
 	leal	32(%rdx), %eax
 	movzbl	%al, %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
-	cmpb	%dil, %al
-	seta	%al
+	cmpb	%al, %dil
+	setg	%al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func0000000000000064:                   # @func0000000000000064
 	leal	32(%rdx), %eax
 	movzbl	%al, %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
-	cmpb	%dil, %al
+	cmpb	%al, %dil
+	setb	%al
+	retq
+func000000000000006c:                   # @func000000000000006c
+	leal	32(%rdx), %eax
+	movzbl	%al, %eax
+	testb	$1, %sil
+	cmovel	%edx, %eax
+	cmpb	%al, %dil
 	setne	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -67,14 +67,14 @@ func0000000000000001:                   # @func0000000000000001
 	movzbl	%al, %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
-	cmpb	%dil, %al
+	cmpb	%al, %dil
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	leal	-32(%rdx), %eax
 	movzbl	%al, %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
-	cmpb	%dil, %al
+	cmpb	%al, %dil
 	setne	%al
 	retq

@@ -1,7 +1,6 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; cmake/optimized/fse_decompress.c.ll
-; cmake/optimized/index.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; cpython/optimized/dtoa.ll
 ; linux/optimized/bitmap.ll

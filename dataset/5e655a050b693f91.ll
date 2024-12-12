@@ -13,14 +13,13 @@ entry:
   ret i64 %5
 }
 
-; 58 occurrences:
+; 56 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
-; hermes/optimized/JSONLexer.cpp.ll
 ; hyperscan/optimized/limex_64.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/noodle_engine.c.ll
@@ -43,13 +42,11 @@ entry:
 ; llvm/optimized/CoverageMappingGen.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/InfoByHwMode.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; meshlab/optimized/meshio.cpp.ll
 ; minetest/optimized/gameui.cpp.ll
-; nuttx/optimized/lib_rand48.c.ll
 ; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
 ; regex-rs/optimized/183h9dropc9vohym.ll
 ; regex-rs/optimized/54dfm57uiwuw9jbd.ll
@@ -68,10 +65,11 @@ entry:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; wireshark/optimized/packet-aoe.c.ll
 ; wireshark/optimized/packet-autosar-ipdu-multiplexer.c.ll
-; wireshark/optimized/packet-lin.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-socketcan.c.ll
 ; wireshark/optimized/packet-uds.c.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0, i16 %1) #0 {
 entry:

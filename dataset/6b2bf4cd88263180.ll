@@ -1,6 +1,8 @@
 
-; 100 occurrences:
+; 102 occurrences:
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/finite_differences.cpp.ll

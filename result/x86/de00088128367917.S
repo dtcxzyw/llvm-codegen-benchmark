@@ -1,95 +1,119 @@
-func0000000000000404:                   # @func0000000000000404
+func0000000000000804:                   # @func0000000000000804
 	movl	%edx, %eax
 	leaq	-1(%rsi,%rax), %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000424:                   # @func0000000000000424
+func0000000000000864:                   # @func0000000000000864
 	movl	%edx, %eax
 	leaq	24(%rsi,%rax), %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func00000000000006a1:                   # @func00000000000006a1
+func0000000000000fe1:                   # @func0000000000000fe1
 	movl	%edx, %eax
 	leaq	32(%rsi,%rax), %rax
 	addq	$56, %rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000006a4:                   # @func00000000000006a4
+func0000000000000f61:                   # @func0000000000000f61
+	movl	%edx, %eax
+	imulq	$56, %rax, %rax
+	leaq	-56(%rsi,%rax), %rax
+	addq	$56, %rdi
+	cmpq	%rax, %rdi
+	sete	%al
+	retq
+func0000000000000fe4:                   # @func0000000000000fe4
 	movl	%edx, %eax
 	leaq	10(%rsi,%rax), %rax
 	addq	$2, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func00000000000002a4:                   # @func00000000000002a4
+func0000000000000f64:                   # @func0000000000000f64
+	movl	%edx, %eax
+	leaq	-2(%rsi,%rax,2), %rax
+	addq	$2, %rdi
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
+func0000000000000764:                   # @func0000000000000764
 	movl	%edx, %eax
 	leaq	-12(%rsi,%rax), %rax
 	addq	$8, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000064:                   # @func0000000000000064
 	movl	%edx, %eax
 	leaq	1(%rsi,%rax), %rax
 	addq	$32, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func00000000000002a1:                   # @func00000000000002a1
+func00000000000007e1:                   # @func00000000000007e1
 	movl	%edx, %eax
 	leaq	16(%rsi,%rax), %rax
 	addq	$8, %rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000006ac:                   # @func00000000000006ac
+func0000000000000fec:                   # @func0000000000000fec
 	movl	%edx, %eax
 	leaq	48(%rsi,%rax), %rax
 	addq	$8, %rdi
 	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func00000000000002ac:                   # @func00000000000002ac
+func00000000000007ec:                   # @func00000000000007ec
 	movl	%edx, %eax
 	leaq	16(%rsi,%rax), %rax
 	addq	$8, %rdi
 	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func00000000000004a4:                   # @func00000000000004a4
+func0000000000000964:                   # @func0000000000000964
 	movl	%edx, %eax
 	leaq	-12(%rsi,%rax), %rax
 	addq	$4, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000428:                   # @func0000000000000428
+func0000000000000868:                   # @func0000000000000868
 	movl	%edx, %eax
 	leaq	-11(%rsi,%rax), %rax
-	addq	$2, %rdi
+	addq	$6, %rdi
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func00000000000006a8:                   # @func00000000000006a8
+func0000000000000f68:                   # @func0000000000000f68
 	movl	%edx, %eax
 	leaq	-8(%rsi,%rax), %rax
 	addq	$3, %rdi
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000408:                   # @func0000000000000408
+func0000000000000808:                   # @func0000000000000808
 	movl	%edx, %eax
 	leaq	-4(%rsi,%rax), %rax
 	addq	$8, %rdi
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000401:                   # @func0000000000000401
+func0000000000000061:                   # @func0000000000000061
+	movl	%edx, %eax
+	leaq	(%rax,%rax,2), %rax
+	shlq	$4, %rax
+	leaq	-48(%rsi,%rax), %rax
+	addq	$48, %rdi
+	cmpq	%rax, %rdi
+	sete	%al
+	retq
+func0000000000000801:                   # @func0000000000000801
 	movl	%edx, %eax
 	leaq	-10(%rsi,%rax), %rax
 	incq	%rdi
@@ -110,10 +134,10 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000684:                   # @func0000000000000684
+func00000000000007e4:                   # @func00000000000007e4
 	movl	%edx, %eax
-	leaq	-7(%rsi,%rax), %rax
-	addq	$8, %rdi
+	leaq	24(%rsi,%rax), %rax
+	incq	%rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq

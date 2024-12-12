@@ -1,50 +1,52 @@
-func0000000000000008:                   // @func0000000000000008
+func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	mov	w8, #947912703                  // =0x387fffff
-	dup	v2.4s, w8
-	cmhi	v1.4s, v1.4s, v2.4s
-	cmhi	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	fmov	w8, s0
+	lsr	w8, w8, #23
+	cmp	w8, #112
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000004:                   // @func0000000000000004
+func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
+	fmov	w9, s0
 	mov	w8, #1                          // =0x1
 	movk	w8, #13056, lsl #16
-	dup	v2.4s, w8
-	cmhi	v1.4s, v2.4s, v1.4s
-	cmhi	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	cmp	w9, w8
+	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mvni	v4.4s, #127, msl #16
-	fneg	v4.4s, v4.4s
-	fcmeq	v3.4s, v3.4s, v4.4s
-	fcmeq	v2.4s, v2.4s, v4.4s
-	fcmeq	v1.4s, v1.4s, v4.4s
-	fcmeq	v0.4s, v0.4s, v4.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	mov	w8, #2139095040                 // =0x7f800000
+	fmov	s1, w8
+	fcmp	s0, s1
+	cset	w0, eq
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	cmge	v1.4s, v1.4s, #0
-	cmge	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	fmov	w8, s0
+	mvn	w8, w8
+	lsr	w0, w8, #31
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	cmlt	v1.4s, v1.4s, #0
-	cmlt	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	fmov	w8, s0
+	lsr	w0, w8, #31
+	ret
+                                        // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	fmov	w8, s0
+	cmp	w8, #2048, lsl #12              // =8388608
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000008:                   // @func0000000000000008
+// %bb.0:                               // %entry
+	fmov	w8, s0
+	tst	w8, #0xff000000
+	cset	w0, ne
 	ret
                                         // -- End function

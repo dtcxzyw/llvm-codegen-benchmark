@@ -11,8 +11,8 @@ func000000000000000a:                   # @func000000000000000a
 	movl	%esi, %eax
 	negl	%eax
 	xorl	%ecx, %ecx
-	testb	$1, %dil
-	cmovnel	%ecx, %eax
 	cmpl	$115, %esi
 	cmovel	%ecx, %eax
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
 	retq

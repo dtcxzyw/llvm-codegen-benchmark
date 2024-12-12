@@ -1,10 +1,8 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sshll2	v4.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	uaddw	v2.2d, v2.2d, v3.2s
-	uaddw2	v3.2d, v4.2d, v3.4s
-	sub	v1.2d, v1.2d, v3.2d
-	sub	v0.2d, v0.2d, v2.2d
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	add	x8, x8, w2, uxtw
+	sub	x0, x0, x8
 	ret
                                         // -- End function

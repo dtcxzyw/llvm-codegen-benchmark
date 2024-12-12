@@ -1,5 +1,5 @@
 
-; 200 occurrences:
+; 202 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
@@ -15,7 +15,9 @@
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_colormapping.c.ll
 ; darktable/optimized/introspection_defringe.c.ll
+; darktable/optimized/introspection_exposure.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
+; darktable/optimized/introspection_primaries.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_scalepixels.c.ll
 ; darktable/optimized/introspection_tonemap.cc.ll
@@ -73,7 +75,6 @@
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_dirt.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -154,6 +155,7 @@
 ; opencv/optimized/projectorcalibration.cpp.ll
 ; opencv/optimized/rapid.cpp.ll
 ; opencv/optimized/resize_layer.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/select3dobj.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
@@ -204,11 +206,11 @@
 define float @func0000000000000001(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 
-; 78 occurrences:
+; 81 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -287,11 +289,14 @@ entry:
 ; wireshark/optimized/packet-oran.c.ll
 ; xgboost/optimized/cpu_treeshap.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5lgahps99tv0rsaolw3x59ow2.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 

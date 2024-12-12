@@ -24,12 +24,12 @@ entry:
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
 ; g2o/optimized/vertex_segment2d.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 6, %1
   %3 = and i64 %2, 4
-  %4 = getelementptr nusw double, ptr %0, i64 %1
-  %5 = getelementptr nusw double, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw double, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw double, ptr %4, i64 %3
   ret ptr %5
 }
 

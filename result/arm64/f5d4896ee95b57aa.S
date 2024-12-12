@@ -1,54 +1,40 @@
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	ushll	v1.4s, v1.4h, #0
-	movi	v2.4s, #4
-	movi	v3.4s, #6
-	shl	v1.4s, v1.4s, #31
-	cmlt	v1.4s, v1.4s, #0
-	bsl	v1.16b, v3.16b, v2.16b
-	add	v0.4s, v1.4s, v0.4s
-	ushll2	v1.2d, v0.4s, #4
-	ushll	v0.2d, v0.2s, #4
+	mov	w8, #4                          // =0x4
+	tst	w1, #0x1
+	mov	w9, #6                          // =0x6
+	csel	w8, w9, w8, ne
+	add	w8, w8, w0
+	ubfiz	x0, x8, #4, #32
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ushll	v1.4s, v1.4h, #0
-	movi	v2.4s, #201
-	movi	v3.4s, #208
-	shl	v1.4s, v1.4s, #31
-	cmlt	v1.4s, v1.4s, #0
-	bsl	v1.16b, v3.16b, v2.16b
-	add	v0.4s, v1.4s, v0.4s
-	ushll	v2.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	shl	v1.2d, v0.2d, #56
-	shl	v0.2d, v2.2d, #56
+	mov	w8, #201                        // =0xc9
+	tst	w1, #0x1
+	mov	w9, #208                        // =0xd0
+	csel	w8, w9, w8, ne
+	add	w8, w8, w0
+	lsl	x0, x8, #56
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ushll	v1.4s, v1.4h, #0
-	movi	v2.4s, #2
-	movi	v3.4s, #4
-	shl	v1.4s, v1.4s, #31
-	cmlt	v1.4s, v1.4s, #0
-	bsl	v1.16b, v3.16b, v2.16b
-	add	v0.4s, v1.4s, v0.4s
-	ushll2	v1.2d, v0.4s, #3
-	ushll	v0.2d, v0.2s, #3
+	mov	w8, #2                          // =0x2
+	tst	w1, #0x1
+	mov	w9, #4                          // =0x4
+	csel	w8, w9, w8, ne
+	add	w8, w8, w0
+	ubfiz	x0, x8, #3, #32
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	ushll	v1.4s, v1.4h, #0
-	movi	v2.4s, #14
-	movi	v3.4s, #11
-	shl	v1.4s, v1.4s, #31
-	cmlt	v1.4s, v1.4s, #0
-	bsl	v1.16b, v3.16b, v2.16b
-	add	v0.4s, v1.4s, v0.4s
-	ushll2	v1.2d, v0.4s, #2
-	ushll	v0.2d, v0.2s, #2
+	mov	w8, #14                         // =0xe
+	tst	w1, #0x1
+	mov	w9, #11                         // =0xb
+	csel	w8, w9, w8, ne
+	add	w8, w8, w0
+	ubfiz	x0, x8, #2, #32
 	ret
                                         // -- End function

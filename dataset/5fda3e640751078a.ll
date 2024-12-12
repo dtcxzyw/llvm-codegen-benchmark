@@ -1,8 +1,36 @@
 
-; 34 occurrences:
+%"class.clang::Qualifiers.3142438" = type { i64 }
+%"class.clang::FunctionEffect.3142439" = type { i8 }
+
+; 3 occurrences:
 ; bdwgc/optimized/gc.c.ll
-; hyperscan/optimized/castlecompile.cpp.ll
 ; libwebp/optimized/webp_enc.c.ll
+; opencv/optimized/lapack.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 2 occurrences:
+; openjdk/optimized/archiveHeapWriter.ll
+; openjdk/optimized/g1CollectedHeap.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 29 occurrences:
+; hyperscan/optimized/castlecompile.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -31,15 +59,12 @@
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
-; opencv/optimized/lapack.cpp.ll
-; openjdk/optimized/archiveHeapWriter.ll
-; openjdk/optimized/g1CollectedHeap.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw %"class.clang::Qualifiers.3142438", ptr %3, i64 %1
+  %5 = getelementptr nusw nuw %"class.clang::FunctionEffect.3142439", ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

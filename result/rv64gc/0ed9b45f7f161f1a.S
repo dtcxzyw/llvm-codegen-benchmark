@@ -64,12 +64,6 @@ func0000000000000030:                   # @func0000000000000030
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000037:                   # @func0000000000000037
-	add	a1, a1, a2
-	li	a2, 85
-	mul	a1, a1, a2
-	addw	a0, a0, a1
-	ret
 func000000000000003e:                   # @func000000000000003e
 	add	a1, a1, a2
 	slli	a2, a1, 1

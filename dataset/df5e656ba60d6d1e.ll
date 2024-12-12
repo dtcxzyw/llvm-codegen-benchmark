@@ -1,9 +1,10 @@
 
-; 247 occurrences:
+; 248 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/3qd2nnv0mbtxq1wn.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/mpdecimal.ll
@@ -167,7 +168,6 @@
 ; qemu/optimized/hw_acpi_core.c.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
 ; qemu/optimized/hw_intc_riscv_aclint.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; quickjs/optimized/libbf.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
@@ -247,6 +247,7 @@
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i128 %0) #0 {
 entry:

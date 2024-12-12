@@ -12,7 +12,7 @@ entry:
   %4 = trunc i64 %3 to i8
   %5 = and i8 %4, 7
   %6 = shl nuw i8 1, %5
-  %7 = or i8 %6, %0
+  %7 = or i8 %0, %6
   ret i8 %7
 }
 

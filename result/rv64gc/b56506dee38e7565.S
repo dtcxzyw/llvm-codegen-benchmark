@@ -26,3 +26,12 @@ func0000000000000060:                   # @func0000000000000060
 	or	a0, a0, a1
 	addi	a0, a0, -1
 	ret
+func000000000000004c:                   # @func000000000000004c
+	slli	a2, a2, 32
+	andi	a1, a1, 255
+	or	a0, a0, a2
+	li	a2, -19
+	or	a0, a0, a1
+	srli	a2, a2, 1
+	add	a0, a0, a2
+	ret

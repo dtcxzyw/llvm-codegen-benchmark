@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; opencv/optimized/colored_kinfu.cpp.ll
 ; opencv/optimized/dls.cpp.ll
@@ -12,6 +12,7 @@
 ; opencv/optimized/lda.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
 ; quantlib/optimized/bivariatenormaldistribution.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(double %0, double %1) #0 {

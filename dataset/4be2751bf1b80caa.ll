@@ -7,7 +7,6 @@
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/AlignmentFromAssumptions.cpp.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/CoroSplit.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
@@ -20,6 +19,7 @@
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
+; zed-rs/optimized/a80esttvizzblelz7vl2fpyaz.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:

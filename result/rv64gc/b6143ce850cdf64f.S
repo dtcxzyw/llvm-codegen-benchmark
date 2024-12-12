@@ -1,13 +1,4 @@
-func0000000000000e11:                   # @func0000000000000e11
-	sext.w	a1, a1
-	addiw	a2, a2, -64
-	negw	a0, a0
-	sltiu	a1, a1, 65
-	xor	a0, a0, a2
-	seqz	a0, a0
-	or	a0, a0, a1
-	ret
-func0000000000000e01:                   # @func0000000000000e01
+func0000000000003401:                   # @func0000000000003401
 	sext.w	a1, a1
 	lui	a3, 1048560
 	addw	a2, a2, a3
@@ -19,7 +10,7 @@ func0000000000000e01:                   # @func0000000000000e01
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000e1a:                   # @func0000000000000e1a
+func000000000000342a:                   # @func000000000000342a
 	sext.w	a1, a1
 	add	a0, a0, a2
 	lui	a2, 32

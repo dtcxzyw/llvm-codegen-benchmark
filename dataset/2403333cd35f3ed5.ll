@@ -1,18 +1,4 @@
 
-; 4 occurrences:
-; openjdk/optimized/c1_Runtime1.ll
-; qemu/optimized/hw_net_pcnet.c.ll
-; zxing/optimized/ODDataBarExpandedReader.cpp.ll
-; zxing/optimized/ODDataBarReader.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = xor i32 %2, 1
-  %4 = select i1 %0, i32 %3, i32 %1
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
-}
-
 ; 3 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; openjdk/optimized/deoptimization.ll
@@ -26,14 +12,16 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; openjdk/optimized/shenandoahMark.ll
+; 3 occurrences:
+; openjdk/optimized/c1_Runtime1.ll
+; zxing/optimized/ODDataBarExpandedReader.cpp.ll
+; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = xor i32 %2, 31
+  %3 = xor i32 %2, 7
   %4 = select i1 %0, i32 %3, i32 %1
-  %5 = icmp ugt i32 %4, 30
+  %5 = icmp eq i32 %4, 3
   ret i1 %5
 }
 

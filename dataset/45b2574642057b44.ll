@@ -1,14 +1,16 @@
 
-; 19 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; graphviz/optimized/actions.c.ll
 ; graphviz/optimized/colxlate.c.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
+; lightgbm/optimized/metric.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; opencv/optimized/local_optimization.cpp.ll
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
+; opencv/optimized/trackerKCF.cpp.ll
 ; postgres/optimized/costsize.ll
 ; postgres/optimized/rangetypes_gist.ll
 ; postgres/optimized/selfuncs.ll

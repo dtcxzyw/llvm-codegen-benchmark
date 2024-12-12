@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; clamav/optimized/manager.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -8,7 +8,6 @@
 ; icu/optimized/ucnvbocu.ll
 ; linux/optimized/char_dev.ll
 ; linux/optimized/genhd.ll
-; linux/optimized/map.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/MetaRenamer.cpp.ll

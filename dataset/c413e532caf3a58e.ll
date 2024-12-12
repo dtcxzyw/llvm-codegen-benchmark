@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 21 occurrences:
 ; abc/optimized/deflate.c.ll
 ; clamav/optimized/dlp.c.ll
 ; cmake/optimized/deflate.c.ll
@@ -7,23 +7,18 @@
 ; gromacs/optimized/deflate.c.ll
 ; hwloc/optimized/traversal.ll
 ; libquic/optimized/deflate.c.ll
-; linux/optimized/intel_vdsc.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
-; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/EarlyCSE.cpp.ll
-; llvm/optimized/LICM.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
-; pocketpy/optimized/lexer.cpp.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_text.ll
 ; ruby/optimized/prism.ll
 ; wireshark/optimized/packet-do-irp.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; zlib/optimized/deflate.c.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
@@ -35,7 +30,10 @@ entry:
   ret i1 %5
 }
 
-; 68 occurrences:
+; 71 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; bullet3/optimized/btGjkPairDetector.ll
 ; clamav/optimized/scantree.cpp.ll
 ; cmake/optimized/inet.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -113,7 +111,7 @@ entry:
   ret i1 %5
 }
 
-; 37 occurrences:
+; 35 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; c3c/optimized/sema_decls.c.ll
 ; c3c/optimized/sema_initializers.c.ll
@@ -126,7 +124,6 @@ entry:
 ; hermes/optimized/TypeInference.cpp.ll
 ; libevent/optimized/evutil.c.ll
 ; linux/optimized/dm-table.ll
-; linux/optimized/mpi-cmp.ll
 ; linux/optimized/page_alloc.ll
 ; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
@@ -139,7 +136,6 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/reflection.ll
 ; openssl/optimized/quic_stream_test-bin-quic_stream_test.ll
-; php/optimized/pcre2_match.ll
 ; postgres/optimized/informix.ll
 ; quantlib/optimized/lmdif.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
@@ -160,31 +156,43 @@ entry:
   ret i1 %5
 }
 
-; 25 occurrences:
-; brotli/optimized/compound_dictionary.c.ll
+; 17 occurrences:
+; clamav/optimized/png.c.ll
+; cmake/optimized/mprintf.c.ll
+; curl/optimized/libcurl_la-mprintf.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; git/optimized/sequencer.ll
+; graphviz/optimized/xdot.c.ll
+; icu/optimized/uresbund.ll
+; linux/optimized/nf_conntrack_reasm.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; opencv/optimized/grfmt_pxm.cpp.ll
+; opencv/optimized/object_tracker.cpp.ll
+; opencv/optimized/sift.dispatch.cpp.ll
+; openjdk/optimized/matcher.ll
+; openssl/optimized/padlock-dso-e_padlock.ll
+; postgres/optimized/multixact.ll
+; slurm/optimized/topology_tree.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp slt i32 %2, 0
+  %4 = or i1 %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 10 occurrences:
 ; cmake/optimized/fastcover.c.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
-; darktable/optimized/HasselbladDecompressor.cpp.ll
-; darktable/optimized/HasselbladLJpegDecoder.cpp.ll
-; darktable/optimized/KodakDecompressor.cpp.ll
-; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/OlympusDecompressor.cpp.ll
-; darktable/optimized/PhaseOneDecompressor.cpp.ll
 ; darktable/optimized/SamsungV1Decompressor.cpp.ll
 ; darktable/optimized/SonyArw1Decompressor.cpp.ll
-; darktable/optimized/SonyArw2Decompressor.cpp.ll
-; darktable/optimized/ThreefrDecoder.cpp.ll
-; gromacs/optimized/mrcdensitymapheader.cpp.ll
-; libjpeg-turbo/optimized/turbojpeg.c.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/SelectionDAG.cpp.ll
 ; ocio/optimized/FileFormatCTF.cpp.ll
 ; openjdk/optimized/jcmaster.ll
-; openjdk/optimized/vectorIntrinsics.ll
 ; openssl/optimized/libssl-lib-quic_ackm.ll
 ; openssl/optimized/libssl-shlib-quic_ackm.ll
-; php/optimized/pcre2_jit_compile.ll
-; wireshark/optimized/packet-cdma2k.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
@@ -195,26 +203,28 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
-; clamav/optimized/png.c.ll
-; cmake/optimized/mprintf.c.ll
-; curl/optimized/libcurl_la-mprintf.ll
-; darktable/optimized/introspection_cacorrect.c.ll
-; git/optimized/sequencer.ll
-; graphviz/optimized/xdot.c.ll
-; linux/optimized/nf_conntrack_reasm.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; opencv/optimized/grfmt_pxm.cpp.ll
-; opencv/optimized/object_tracker.cpp.ll
-; opencv/optimized/sift.dispatch.cpp.ll
-; openjdk/optimized/matcher.ll
-; postgres/optimized/multixact.ll
-; slurm/optimized/topology_tree.ll
-; tev/optimized/ImageCanvas.cpp.ll
+; 17 occurrences:
+; brotli/optimized/compound_dictionary.c.ll
+; darktable/optimized/HasselbladDecompressor.cpp.ll
+; darktable/optimized/HasselbladLJpegDecoder.cpp.ll
+; darktable/optimized/KodakDecompressor.cpp.ll
+; darktable/optimized/NikonDecompressor.cpp.ll
+; darktable/optimized/PhaseOneDecompressor.cpp.ll
+; darktable/optimized/SonyArw2Decompressor.cpp.ll
+; darktable/optimized/ThreefrDecoder.cpp.ll
+; grpc/optimized/socket_utils_posix.cc.ll
+; grpc/optimized/tcp_socket_utils.cc.ll
+; libjpeg-turbo/optimized/turbojpeg.c.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/KnownBits.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; openjdk/optimized/vectorIntrinsics.ll
+; php/optimized/pcre2_jit_compile.ll
+; wireshark/optimized/packet-cdma2k.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000030(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp slt i32 %2, 4
+  %3 = icmp samesign ugt i32 %2, 1
   %4 = or i1 %0, %1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
@@ -231,6 +241,18 @@ entry:
 define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 767
+  %4 = or i1 %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; linux/optimized/intel_vdsc.ll
+; redis/optimized/anet.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 30000
   %4 = or i1 %0, %1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5

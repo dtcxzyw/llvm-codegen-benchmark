@@ -34,8 +34,3 @@ func000000000000002f:                   # @func000000000000002f
 	cmpb	$1, %sil
 	adcl	$1, %eax
 	retq
-func0000000000000100:                   # @func0000000000000100
-	cmpb	$-16, %sil
-	sbbl	$-1, %edi
-	leal	1(%rdi), %eax
-	retq

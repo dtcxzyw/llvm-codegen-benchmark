@@ -14,7 +14,19 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 2 occurrences:
+; openssl/optimized/libcrypto-lib-http_client.ll
+; openssl/optimized/libcrypto-shlib-http_client.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000189(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = shl i64 %3, 2
+  %5 = icmp uge i64 %4, %0
+  ret i1 %5
+}
+
+; 26 occurrences:
 ; actix-rs/optimized/34v80y29y6uwgxas.ll
 ; coreutils-rs/optimized/gag8htnqkrxvy02.ll
 ; delta-rs/optimized/17fowff2nvfrfdbu.ll
@@ -29,8 +41,20 @@ entry:
 ; qdrant-rs/optimized/1qtu8dw3f0ctj9yc.ll
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
+; zed-rs/optimized/1058j2jmz8vfpblqgu0wznwf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1v7j1lpugnisv9daukqm09uho.ll
+; zed-rs/optimized/3r1m4prp00pk2zcmrznfgmdke.ll
+; zed-rs/optimized/56i9d5rrx6hrud8ee30t4acpd.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = shl i64 %3, 1
@@ -42,64 +66,113 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl nuw nsw i64 %3, 2
+  %5 = icmp samesign ugt i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; lief/optimized/bignum.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001f8(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = shl nuw nsw i64 %3, 6
+  %5 = icmp samesign ugt i64 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; clamav/optimized/mbr.c.ll
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e8(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = shl nuw nsw i64 %3, 9
   %5 = icmp ugt i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openusd/optimized/patchTableFactory.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = shl i64 %3, 2
+  %5 = icmp ugt i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openusd/optimized/patchTableFactory.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = shl i64 %3, 2
+  %5 = icmp ult i64 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/3x2e5qsisayoyul24y85pynrh.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000149(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = shl nuw i64 %3, 4
+  %5 = icmp uge i64 %4, %0
   ret i1 %5
 }
 
 ; 3 occurrences:
-; clamav/optimized/mbr.c.ll
-; freetype/optimized/sfnt.c.ll
-; lief/optimized/bignum.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = shl nuw nsw i64 %3, 6
-  %5 = icmp ugt i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openusd/optimized/patchTableFactory.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = shl i64 %3, 2
-  %5 = icmp ugt i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openusd/optimized/patchTableFactory.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = shl i64 %3, 2
-  %5 = icmp ult i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; linux/optimized/task_mmu.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = shl i64 %3, 9
+  %4 = shl i64 %3, 6
   %5 = icmp ult i64 %4, %0
+  ret i1 %5
+}
+
+; 4 occurrences:
+; zed-rs/optimized/1v7j1lpugnisv9daukqm09uho.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = shl i64 %3, 1
+  %5 = icmp eq i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000169(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = shl nuw nsw i64 %3, 6
+  %5 = icmp uge i64 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; graphviz/optimized/edge_distinct_coloring.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl nuw i64 %3, 3

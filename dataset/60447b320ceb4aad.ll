@@ -1,6 +1,7 @@
 
-; 43 occurrences:
+; 45 occurrences:
 ; arrow/optimized/float16.cc.ll
+; boost/optimized/src.ll
 ; cmake/optimized/huf_compress.c.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -27,7 +28,6 @@
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f32_to_i32.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_ui32.ll
@@ -42,6 +42,8 @@
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; vcpkg/optimized/uuid.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {

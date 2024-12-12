@@ -13,8 +13,7 @@ entry:
   ret i64 %5
 }
 
-; 31 occurrences:
-; casadi/optimized/idas_interface.cpp.ll
+; 34 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/polynomial.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -45,6 +44,10 @@ entry:
 ; openjdk/optimized/g1Policy.ll
 ; openjdk/optimized/zStat.ll
 ; qemu/optimized/block_parallels.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -54,8 +57,10 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -124,23 +129,7 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; abc/optimized/ifDec08.c.ll
-; abc/optimized/ifDec10.c.ll
-; abc/optimized/ifDec16.c.ll
-; ncnn/optimized/pooling3d.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nsw i64 %2, 2
-  %4 = mul i64 %0, %1
-  %5 = add i64 %4, %3
-  ret i64 %5
-}
-
-; 3 occurrences:
-; abc/optimized/ifDec16.c.ll
-; abc/optimized/kitTruth.c.ll
+; 1 occurrences:
 ; php/optimized/zend_shared_alloc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {

@@ -1,10 +1,10 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	subl	%esi, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000068:                   # @func0000000000000068
 	subl	%esi, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
@@ -17,7 +17,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	subq	%rsi, %rdx
 	andq	$-2, %rdx
 	addq	%rsi, %rdx

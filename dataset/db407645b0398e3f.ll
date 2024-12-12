@@ -20,12 +20,12 @@
 ; wireshark/optimized/packet-quic.c.ll
 ; z3/optimized/degree_shift_tactic.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, ptr %1, i8 %2) #0 {
+define ptr @func0000000000000007(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, ptr %0, ptr %1
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 

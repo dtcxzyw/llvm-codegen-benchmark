@@ -1,5 +1,5 @@
 
-; 249 occurrences:
+; 252 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcMap.c.ll
@@ -129,7 +129,6 @@
 ; linux/optimized/cdrom.ll
 ; linux/optimized/chip.ll
 ; linux/optimized/ethtool.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/kvm.ll
 ; linux/optimized/md.ll
 ; linux/optimized/md5.ll
@@ -145,7 +144,11 @@
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
-; ockam-rs/optimized/y59h8jnu9k73im6.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_tlsf.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -283,7 +286,7 @@ entry:
   ret i32 %3
 }
 
-; 20 occurrences:
+; 22 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/darLib.c.ll
@@ -294,6 +297,8 @@ entry:
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/dnn_superres_benchmark_quality.cpp.ll

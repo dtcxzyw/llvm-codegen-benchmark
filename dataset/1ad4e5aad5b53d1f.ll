@@ -12,12 +12,12 @@
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 40
   %4 = add i64 %3, %1
   %5 = getelementptr nusw [0 x { { i64, [3 x i64] }, ptr }], ptr %0, i64 0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 40
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 40
   ret ptr %6
 }
 

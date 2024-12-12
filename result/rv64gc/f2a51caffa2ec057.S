@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	andi	a3, a0, 1
 	fcvt.w.s	a0, fa0, rtz
 	lui	a2, 8

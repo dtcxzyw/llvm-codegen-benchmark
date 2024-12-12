@@ -1,5 +1,5 @@
 
-; 91 occurrences:
+; 90 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRenode.c.ll
 ; abc/optimized/giaMinLut.c.ll
@@ -32,9 +32,6 @@
 ; linux/optimized/gen6_ppgtt.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/gup.ll
-; linux/optimized/head64.ll
-; linux/optimized/hibernate.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
 ; linux/optimized/init_64.ll
@@ -51,7 +48,6 @@
 ; linux/optimized/page.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/perfmon.ll
 ; linux/optimized/pgtable-generic.ll
@@ -71,6 +67,7 @@
 ; linux/optimized/vmstat.ll
 ; linux/optimized/xhci-hub.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
+; minetest/optimized/clientmap.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; postgres/optimized/brin_tuple.ll
 ; postgres/optimized/dsa.ll
@@ -90,6 +87,8 @@
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/class.ll
+; slurm/optimized/bitstring.ll
+; spike/optimized/fmvh_x_q.ll
 ; wireshark/optimized/packet-iso8583.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
@@ -100,7 +99,7 @@ entry:
   ret ptr %4
 }
 
-; 159 occurrences:
+; 203 occurrences:
 ; abc/optimized/solver.c.ll
 ; arrow/optimized/UriNormalize.c.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -126,6 +125,7 @@ entry:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/PhaseOneDecompressor.cpp.ll
 ; darktable/optimized/amaze.cc.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/point_cloud_encoder.cc.ll
 ; git/optimized/pack-revindex.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
@@ -259,17 +259,60 @@ entry:
 ; wasmtime-rs/optimized/4m5zcpduwo4in0sh.ll
 ; wasmtime-rs/optimized/qzwdmrmrn8c2iza.ll
 ; yosys/optimized/proc_dlatch.ll
+; yosys/optimized/qwp.ll
+; zed-rs/optimized/01k8ewullo09lcfopyq8rjsdt.ll
+; zed-rs/optimized/0b2hqzlwilt32lfvaqs2arfgd.ll
+; zed-rs/optimized/0fzu5iswc3qhp95jt69713e0a.ll
+; zed-rs/optimized/17z6n2wor03lzp7xkvyb2v4b8.ll
+; zed-rs/optimized/1wjst2j1bd1xnipyz033svz8u.ll
+; zed-rs/optimized/26xf9pzubm30qmivlxh5xlprr.ll
+; zed-rs/optimized/2pjmz9fmy54g6vkualen6rbg5.ll
+; zed-rs/optimized/3bwpnkngp0v942xuk5tod4bfe.ll
+; zed-rs/optimized/3xkvahxsem1hdyf3ef4aq8akj.ll
+; zed-rs/optimized/4m25zm6spqfgpymm9gqw6hgqq.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/5qba05g0dyedoh8rydwnrszty.ll
+; zed-rs/optimized/5s44oz7ztp6o1gjtp6jhzkvc2.ll
+; zed-rs/optimized/6k04c116ogp35htlpsavpzpvg.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
+; zed-rs/optimized/7435o5as5af1nwuofltvv4x7w.ll
+; zed-rs/optimized/7nj8apu4jlzv057e0kkcpojil.ll
+; zed-rs/optimized/7v45b7y7t6bpxkoxn6aktlghb.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8gg8u2ott7gsi4x0g8ewxmxbb.ll
+; zed-rs/optimized/8l6j9aar0oaoyhr62czfg3g36.ll
+; zed-rs/optimized/9halndrg3dxenpyuljfpbk2q0.ll
+; zed-rs/optimized/9u70uffa5gnr0a44dt677r86w.ll
+; zed-rs/optimized/asge4ovzpoi4j0hgzjom7idmo.ll
+; zed-rs/optimized/ba1fbg7c0slithvjnvqvkyuvg.ll
+; zed-rs/optimized/bg38611xfnz0abj8o6yh866zw.ll
+; zed-rs/optimized/bmmi5kkbn5ov6774do5bqdg37.ll
+; zed-rs/optimized/brfpsqsl3kxc3ngzjjsbjx55x.ll
+; zed-rs/optimized/bvs73film05xborh0f0ab3jqk.ll
+; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
+; zed-rs/optimized/cgxtqkz3q1lf4y8mn1r3vggst.ll
+; zed-rs/optimized/cwm1jtpn2hj5f4ljdx4klnhqs.ll
+; zed-rs/optimized/daazuwy5q4pkhw5qv9dy4nfnq.ll
+; zed-rs/optimized/dr3ks0ib80ortjwkcqg0973x1.ll
+; zed-rs/optimized/e2t208u96614zaapml39g6l5s.ll
+; zed-rs/optimized/ees19hacjiz3y03peze9imi7o.ll
+; zed-rs/optimized/eh70uus3omn48t7itznx7bc3r.ll
+; zed-rs/optimized/ei1t73ixdtixfwk96jtdsqya1.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/enfie1bj6h9p5lyhzskn3992o.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
+; zed-rs/optimized/eyl50e18l6kj3inbixv9y0nwt.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = and i64 %2, 65535
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 709 occurrences:
+; 738 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -290,6 +333,7 @@ entry:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
+; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecCec.c.ll
 ; abc/optimized/cecClass.c.ll
@@ -354,7 +398,6 @@ entry:
 ; abc/optimized/simSymSat.c.ll
 ; abc/optimized/simSymSim.c.ll
 ; abc/optimized/sswSim.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/utilCex.c.ll
 ; abc/optimized/utilSort.c.ll
@@ -376,6 +419,8 @@ entry:
 ; assimp/optimized/FindInvalidDataProcess.cpp.ll
 ; assimp/optimized/RemoveRedundantMaterials.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/approximately_equals.ll
+; brotli/optimized/backward_references.c.ll
 ; c3c/optimized/diagnostics.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; ceres/optimized/manifold.cc.ll
@@ -613,7 +658,6 @@ entry:
 ; llvm/optimized/PtrTypesSemantics.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
@@ -708,13 +752,17 @@ entry:
 ; luajit/optimized/lj_cconv_dyn.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
-; luajit/optimized/lj_obj.ll
-; luajit/optimized/lj_obj_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luajit/optimized/lj_serialize.ll
 ; luajit/optimized/lj_serialize_dyn.ll
 ; luau/optimized/CodeGenA64.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -785,6 +833,7 @@ entry:
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/boostdesc.cpp.ll
+; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
@@ -846,7 +895,6 @@ entry:
 ; php/optimized/ir_cfg.ll
 ; php/optimized/ir_sccp.ll
 ; php/optimized/optimize_temp_vars_5.ll
-; php/optimized/pcre2_maketables.ll
 ; php/optimized/scdf.ll
 ; php/optimized/zend_inference.ll
 ; protobuf/optimized/context.cc.ll
@@ -939,6 +987,7 @@ entry:
 ; velox/optimized/ZipWith.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
+; yosys/optimized/calc.ll
 ; yosys/optimized/cxxrtl_backend.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/ezsat.ll
@@ -952,7 +1001,6 @@ entry:
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/test_cell.ll
 ; yosys/optimized/verilog_backend.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dl_product_relation.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
@@ -976,15 +1024,39 @@ entry:
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
+; zed-rs/optimized/1wjst2j1bd1xnipyz033svz8u.ll
+; zed-rs/optimized/22ahis4uxapmr5sot3uwhf47g.ll
+; zed-rs/optimized/3xkvahxsem1hdyf3ef4aq8akj.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/6hxn0twt3h5sh337x4zo515i3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/asge4ovzpoi4j0hgzjom7idmo.ll
+; zed-rs/optimized/bx60353v5ms1nsmjqyoxenjec.ll
+; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
+; zed-rs/optimized/cwm1jtpn2hj5f4ljdx4klnhqs.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/daazuwy5q4pkhw5qv9dy4nfnq.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
+; zed-rs/optimized/eh70uus3omn48t7itznx7bc3r.ll
+; zed-rs/optimized/ept7l7id9yl52ab8m2qhombt7.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = and i64 %2, 67108863
-  %4 = getelementptr nusw i64, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   ret ptr %4
 }
 

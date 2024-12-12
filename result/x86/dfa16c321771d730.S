@@ -38,6 +38,11 @@ func000000000000000d:                   # @func000000000000000d
 	shlq	$63, %rax
 	orq	%rdi, %rax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	movl	%esi, %eax
+	shlq	$63, %rax
+	orq	%rdi, %rax
+	retq
 func0000000000000009:                   # @func0000000000000009
 	movl	%esi, %eax
 	shlq	$63, %rax
@@ -46,10 +51,5 @@ func0000000000000009:                   # @func0000000000000009
 func0000000000000001:                   # @func0000000000000001
 	movl	%esi, %eax
 	shlq	$60, %rax
-	orq	%rdi, %rax
-	retq
-func000000000000000c:                   # @func000000000000000c
-	movl	%esi, %eax
-	shlq	$63, %rax
 	orq	%rdi, %rax
 	retq

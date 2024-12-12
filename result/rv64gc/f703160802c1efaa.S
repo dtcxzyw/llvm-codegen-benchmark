@@ -4,7 +4,7 @@ func0000000000000012:                   # @func0000000000000012
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fcvt.d.lu	fa5, a0
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fcvt.d.lu	fa5, a0
@@ -21,7 +21,7 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000007:                   # @func0000000000000007
 	fcvt.d.lu	fa5, a0
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
 func0000000000000014:                   # @func0000000000000014
@@ -40,7 +40,7 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000017:                   # @func0000000000000017
 	fcvt.d.lu	fa5, a0
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
 func000000000000000c:                   # @func000000000000000c
@@ -49,7 +49,7 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000018:                   # @func0000000000000018
 	fcvt.d.lu	fa5, a0
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	ret
 func000000000000000b:                   # @func000000000000000b
 	fcvt.d.lu	fa5, a0

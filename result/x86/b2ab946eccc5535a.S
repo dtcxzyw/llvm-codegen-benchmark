@@ -1,4 +1,4 @@
-func00000000000004cc:                   # @func00000000000004cc
+func000000000000118c:                   # @func000000000000118c
 	testl	%edx, %edx
 	setle	%cl
 	testl	%esi, %esi
@@ -6,14 +6,14 @@ func00000000000004cc:                   # @func00000000000004cc
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	xorl	$11, %edx
 	xorl	$11, %esi
 	orl	%edx, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	cmpl	$3, %edx
 	setl	%cl
 	cmpl	$3, %esi

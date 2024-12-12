@@ -10,7 +10,7 @@ entry:
   %2 = fmul double %1, 2.000000e+00
   %3 = fptosi double %2 to i32
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

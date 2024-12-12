@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/constMethod.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -8
   %3 = add nsw i32 %2, 8
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_ddi.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = add nuw nsw i32 %2, 2
@@ -39,7 +39,7 @@ entry:
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = add nsw i32 %2, -3

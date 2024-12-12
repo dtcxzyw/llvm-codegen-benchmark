@@ -1,10 +1,11 @@
 
-; 173 occurrences:
+; 191 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/layout_test.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/any_params_iter.ll
 ; clamav/optimized/hwp.c.ll
 ; clamav/optimized/ishield.c.ll
 ; clamav/optimized/jpeg.c.ll
@@ -41,7 +42,6 @@
 ; gromacs/optimized/deflate.c.ll
 ; gromacs/optimized/expanded.cpp.ll
 ; hdf5/optimized/H5MF.c.ll
-; hdf5/optimized/H5MFsection.c.ll
 ; hdf5/optimized/H5Pfapl.c.ll
 ; hdf5/optimized/H5system.c.ll
 ; hermes/optimized/Interpreter.cpp.ll
@@ -72,7 +72,6 @@
 ; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/kexec_core.ll
 ; linux/optimized/lzo1x_compress.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/manager.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mlme.ll
@@ -104,7 +103,6 @@
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -135,7 +133,6 @@
 ; openmpi/optimized/mca_base_alias.ll
 ; openmpi/optimized/pmix_mca_base_alias.ll
 ; openmpi/optimized/preg_native.ll
-; openmpi/optimized/uri.ll
 ; openusd/optimized/stackTrace.cpp.ll
 ; php/optimized/php_ini_builder.ll
 ; php/optimized/phpdbg_frame.ll
@@ -172,7 +169,28 @@
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
+; yalantinglibs/optimized/server.cpp.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/2rng14wd6tcwuthhb5s7ekmqe.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/7nyodpla10x7d0ixqrkhccie4.ll
+; zed-rs/optimized/9wd9ok5kgn8j922db1jwm4yni.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d3d8em3dqdchyj1r4knj7yk2s.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -240,11 +258,11 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add nuw i64 %3, 1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 11 occurrences:
+; 15 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -256,6 +274,10 @@ entry:
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -278,7 +300,7 @@ entry:
   ret i64 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -297,7 +319,6 @@ entry:
 ; libjpeg-turbo/optimized/jidctred.c.ll
 ; openexr/optimized/chunk.c.ll
 ; openjdk/optimized/zip_util.ll
-; php/optimized/dow.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -318,11 +339,11 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, 409600
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 119 occurrences:
+; 126 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -442,11 +463,29 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = add nuw nsw i64 %3, 1
+  %5 = add nuw nsw i64 %4, %0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; php/optimized/dow.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = add nuw nsw i64 %3, 7
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -463,6 +502,17 @@ entry:
   %3 = add nuw i64 %1, %2
   %4 = add i64 %3, -1
   %5 = add i64 %4, %0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; turborepo-rs/optimized/allq2hqzkn1ywqvzl6k501g1q.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = add nuw nsw i64 %3, 1
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -498,7 +548,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add i64 %3, -2
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -509,7 +559,7 @@ define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add i64 %3, -2
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -531,7 +581,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add i64 %3, 1
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 

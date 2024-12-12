@@ -1,7 +1,9 @@
 
-; 46 occurrences:
+; 49 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/get_turns.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_channelmixer.c.ll
 ; darktable/optimized/introspection_clahe.c.ll
@@ -46,6 +48,7 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; recastnavigation/optimized/CrowdTool.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(float %0, float %1) #0 {
 entry:

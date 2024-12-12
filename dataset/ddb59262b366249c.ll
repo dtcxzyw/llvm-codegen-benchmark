@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 73 occurrences:
 ; casadi/optimized/fmu_function.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; hermes/optimized/Array.cpp.ll
@@ -61,6 +61,8 @@
 ; openusd/optimized/bufferSource.cpp.ll
 ; openusd/optimized/dataSourceLegacyPrim.cpp.ll
 ; openusd/optimized/vtBufferSource.cpp.ll
+; rocksdb/optimized/version_builder.cc.ll
+; rocksdb/optimized/version_set.cc.ll
 ; rust-analyzer-rs/optimized/3jjg9gby3m7lsfsh.ll
 ; rust-analyzer-rs/optimized/5tc27igfpd8lxn0.ll
 ; tokenizers-rs/optimized/1ve5rid4048y19bt.ll
@@ -69,6 +71,8 @@
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/dyu8ahcv7l11k0z44ye6uqxem.ll
 ; Function Attrs: nounwind
 define { i32, i64 } @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:

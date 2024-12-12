@@ -5,7 +5,7 @@
 ; libquic/optimized/hpack_huffman_table.cc.ll
 ; ruby/optimized/st.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = add i64 %0, %1
@@ -19,7 +19,7 @@ entry:
 ; rocksdb/optimized/clock_cache.cc.ll
 ; rocksdb/optimized/lru_cache.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, %1
   %.highbits = lshr i64 %3, %2
@@ -27,10 +27,9 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/filemap.ll
 ; linux/optimized/timekeeping.ll
-; linux/optimized/vsyscall.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -66,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = add i64 %0, %1

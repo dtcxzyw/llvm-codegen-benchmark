@@ -5,7 +5,7 @@
 ; llvm/optimized/Darwin.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000cc(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func000000000000018c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %.not = icmp eq ptr %1, null
   %3 = select i1 %.not, ptr %2, ptr %1

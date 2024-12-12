@@ -9,7 +9,7 @@ entry:
   ret i32 %2
 }
 
-; 41 occurrences:
+; 36 occurrences:
 ; abc/optimized/epd.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; gromacs/optimized/grompp.cpp.ll
@@ -33,11 +33,6 @@ entry:
 ; ncnn/optimized/convolutiondepthwise1d.cpp.ll
 ; ncnn/optimized/pooling1d.cpp.ll
 ; openblas/optimized/dsfrk.c.ll
-; openblas/optimized/dtfsm.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtpttf.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; openmpi/optimized/coll_base_reduce.ll

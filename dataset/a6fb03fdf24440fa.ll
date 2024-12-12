@@ -25,6 +25,30 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000035(i64 %0, i1 %1) #0 {
+entry:
+  %2 = sext i1 %1 to i32
+  %3 = trunc nuw nsw i64 %0 to i32
+  %4 = add nsw i32 %3, %2
+  %5 = add nsw i32 %4, 248
+  ret i32 %5
+}
+
+; 1 occurrences:
+; clamav/optimized/filtering.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i64 %0, i1 %1) #0 {
+entry:
+  %2 = sext i1 %1 to i32
+  %3 = trunc nuw nsw i64 %0 to i32
+  %4 = add i32 %3, %2
+  %5 = add i32 %4, -1
+  ret i32 %5
+}
+
 ; 6 occurrences:
 ; openspiel/optimized/colored_trails.cc.ll
 ; openspiel/optimized/random_uci_bot.cc.ll

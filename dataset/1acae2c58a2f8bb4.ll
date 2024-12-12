@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 21 occurrences:
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
@@ -18,6 +18,9 @@
 ; redis/optimized/pages.ll
 ; redis/optimized/pages.sym.ll
 ; wasmtime-rs/optimized/4sy2q5i3qnvymrev.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/deqzoqcotewn9fb0m32sor9lr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -48,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/pci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %0
@@ -60,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; nuttx/optimized/mm_memalign.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %0

@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; icu/optimized/ucnv_u32.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; openjdk/optimized/gtk3_interface.ll
@@ -41,8 +42,14 @@ entry:
   ret i32 %7
 }
 
-; 1 occurrences:
+; 7 occurrences:
 ; hdf5/optimized/H5Shyper.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000073(i16 %0, i32 %1, i32 %2) #0 {
 entry:

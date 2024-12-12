@@ -1,9 +1,8 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; cmake/optimized/nghttp2_stream.c.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll

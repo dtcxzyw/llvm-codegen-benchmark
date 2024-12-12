@@ -14,5 +14,5 @@ func0000000000000015:                   # @func0000000000000015
 	xorl	%eax, %eax
 	testb	%dl, %dl
 	cmovnel	%esi, %eax
-	leal	1(%rax,%rdi), %eax
+	leal	1(%rdi,%rax), %eax
 	retq

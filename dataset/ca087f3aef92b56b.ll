@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 49 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/acecBo.c.ll
@@ -26,10 +26,10 @@
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sscSim.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/special.c.ll
 ; hdf5/optimized/H5HFcache.c.ll
 ; hdf5/optimized/H5HL.c.ll
-; hdf5/optimized/H5HLdblk.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; lief/optimized/poly1305.c.ll
 ; llvm/optimized/ExprCXX.cpp.ll
@@ -42,12 +42,10 @@
 ; opencv/optimized/softfloat.cpp.ll
 ; openvdb/optimized/SignedFloodFill.cc.ll
 ; pbrt-v4/optimized/image.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qoi/optimized/qoi.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; ruby/optimized/string.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; wireshark/optimized/ftype-ipv4.c.ll
 ; wireshark/optimized/packet-iso15765.c.ll
@@ -55,12 +53,12 @@
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = and i64 %4, 15
   ret i64 %5
 }
 
-; 102 occurrences:
+; 100 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -139,7 +137,6 @@ entry:
 ; openjdk/optimized/methodData.ll
 ; openjdk/optimized/perfData.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
-; openmpi/optimized/tm_mt.ll
 ; openssl/optimized/libdefault-lib-argon2.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; php/optimized/array.ll
@@ -151,7 +148,6 @@ entry:
 ; qemu/optimized/system_physmem.c.ll
 ; quantlib/optimized/mt19937uniformrng.ll
 ; quantlib/optimized/noarbsabr.ll
-; quest/optimized/mt19937ar.c.ll
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/debug.ll
 ; rocksdb/optimized/filter_policy.cc.ll
@@ -221,7 +217,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = and i64 %4, 31
   ret i64 %5
 }

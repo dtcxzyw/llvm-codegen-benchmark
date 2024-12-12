@@ -1,5 +1,17 @@
 
-; 21 occurrences:
+; 33 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; jq/optimized/jv_print.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; llvm/optimized/HeatUtils.cpp.ll
@@ -54,7 +66,6 @@ entry:
 ; openjdk/optimized/cmspcs.ll
 ; openjdk/optimized/cmssamp.ll
 ; openjdk/optimized/freetypeScaler.ll
-; osqp/optimized/scaling.c.ll
 ; postgres/optimized/nodeAgg.ll
 ; quantlib/optimized/gaussianlhplossmodel.ll
 ; stat-rs/optimized/4d9pj14shc9lbmph.ll
@@ -64,6 +75,7 @@ entry:
 ; wireshark/optimized/percent_bar_delegate.cpp.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; xgboost/optimized/aft_obj.cc.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(i1 %0, double %1) #0 {
 entry:

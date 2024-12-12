@@ -1,14 +1,14 @@
 
-%struct.Pair.3705609 = type { i64, i64, double }
+%struct.Pair.3884931 = type { i64, i64, double }
 
 ; 2 occurrences:
 ; bullet3/optimized/b3GpuSapBroadphase.ll
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = getelementptr nusw { { { i64, ptr, {} }, i64 }, { { i64, ptr, {} }, i64 }, { i64, [2 x i64] }, { i64, [2 x i64] }, { { i32, { i32, i8, i8, i8, i8 } }, { i8, i8, i8 }, [1 x i8] }, { { i32, { i32, i8, i8, i8, i8 } }, { i8, i8, i8 }, [1 x i8] }, { [11 x i8], i8, [4 x i8] }, { [16 x i8] } }, ptr %0, i64 %2, i32 4
+  %3 = getelementptr nusw nuw { { { i64, ptr, {} }, i64 }, { { i64, ptr, {} }, i64 }, { i64, [2 x i64] }, { i64, [2 x i64] }, { { i32, { i32, i8, i8, i8, i8 } }, { i8, i8, i8 }, [1 x i8] }, { { i32, { i32, i8, i8, i8, i8 } }, { i8, i8, i8 }, [1 x i8] }, { [11 x i8], i8, [4 x i8] }, { [16 x i8] } }, ptr %0, i64 %2, i32 4
   ret ptr %3
 }
 
@@ -33,7 +33,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = getelementptr nusw %struct.Pair.3705609, ptr %0, i64 %2, i32 2
+  %3 = getelementptr nusw %struct.Pair.3884931, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 

@@ -18,4 +18,15 @@ entry:
   ret i128 %5
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000000(i128 %0, i128 %1, i128 %2) #0 {
+entry:
+  %3 = or i128 %1, %2
+  %4 = add i128 %3, %0
+  %5 = lshr i128 %4, 64
+  ret i128 %5
+}
+
 attributes #0 = { nounwind }

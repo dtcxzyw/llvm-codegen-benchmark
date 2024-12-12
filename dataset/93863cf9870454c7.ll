@@ -1,7 +1,7 @@
 
 ; 8 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
-; linux/optimized/capability.ll
+; jsonnet/optimized/rapidyaml.cpp.ll
 ; llvm/optimized/CodeLayout.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; quantlib/optimized/basketgeneratingengine.ll
@@ -43,13 +43,14 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; linux/optimized/ibs.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/transport.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/blake3.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i1 %1, i64 %2) #0 {

@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 45 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRpo.c.ll
@@ -17,6 +17,7 @@
 ; abc/optimized/wlcReadVer.c.ll
 ; arrow/optimized/datum.cc.ll
 ; arrow/optimized/message.cc.ll
+; boost/optimized/parser_utils.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cpython/optimized/_codecs_iso2022.ll
 ; cpython/optimized/_codecs_kr.ll
@@ -32,13 +33,18 @@
 ; luau/optimized/isocline.c.ll
 ; opencv/optimized/einsum_layer.cpp.ll
 ; openjdk/optimized/vectornode.ll
+; php/optimized/decode.ll
 ; php/optimized/json_scanner.ll
 ; postgres/optimized/parse_manifest.ll
 ; postgres/optimized/parse_manifest_shlib.ll
 ; postgres/optimized/parse_manifest_srv.ll
+; qemu/optimized/gdbstub.c.ll
 ; qemu/optimized/libvduse.c.ll
+; quickjs/optimized/libbf.ll
+; quickjs/optimized/quickjs.ll
 ; slurm/optimized/select.ll
 ; wolfssl/optimized/internal.c.ll
+; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:

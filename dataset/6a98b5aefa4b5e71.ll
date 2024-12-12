@@ -1,5 +1,5 @@
 
-; 82 occurrences:
+; 84 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; arrow/optimized/counting_semaphore.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -7,6 +7,9 @@
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/round_robin.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/work_stealing.ll
 ; cpython/optimized/io.ll
 ; cpython/optimized/mpdecimal.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
@@ -25,7 +28,6 @@
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/ThreadedRepeatingFunctionRunner.cpp.ll
 ; hermes/optimized/SamplingProfilerSampler.cpp.ll
 ; hermes/optimized/StatSamplingThread.cpp.ll
@@ -90,10 +92,9 @@ entry:
   ret i64 %1
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
+; libquic/optimized/time_support.c.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/dt_common.ll
 ; postgres/optimized/interval.ll
@@ -102,8 +103,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = sdiv i64 %0, 86400
-  %2 = mul i64 %1, 4294880896
+  %1 = sdiv i64 %0, 1000
+  %2 = mul i64 %1, 64536
   %3 = add i64 %2, %0
   ret i64 %3
 }

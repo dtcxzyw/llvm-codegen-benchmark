@@ -13,7 +13,7 @@
 ; opencv/optimized/umatrix.cpp.ll
 ; openjdk/optimized/loopnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %.fr = freeze i32 %0
   %2 = srem i32 %.fr, %1
@@ -37,7 +37,7 @@ entry:
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %.fr = freeze i32 %0
   %2 = srem i32 %.fr, %1

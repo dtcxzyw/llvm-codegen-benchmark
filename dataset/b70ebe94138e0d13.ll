@@ -3,7 +3,7 @@
 ; fmt/optimized/chrono-test.cc.ll
 ; folly/optimized/Singleton.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000416(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000826(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
   %4 = sext i1 %3 to i32
@@ -17,7 +17,7 @@ entry:
 ; fmt/optimized/chrono-test.cc.ll
 ; folly/optimized/Singleton.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000411(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000821(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
   %4 = sext i1 %3 to i32
@@ -258,7 +258,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000421(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = sext i1 %3 to i32
@@ -326,7 +326,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000042c(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = sext i1 %3 to i32
@@ -340,7 +340,7 @@ entry:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000216(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000426(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = sext i1 %3 to i32
@@ -353,7 +353,7 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021a(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000042a(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = sext i1 %3 to i32

@@ -3,7 +3,7 @@
 ; llama.cpp/optimized/train.cpp.ll
 ; ruby/optimized/io.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %3
@@ -32,7 +32,7 @@ entry:
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %3
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_usb_desc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub i64 %0, %3
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/hostlist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub i64 %0, %3
@@ -68,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005b(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ab(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %3
@@ -80,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; hwloc/optimized/traversal.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %3

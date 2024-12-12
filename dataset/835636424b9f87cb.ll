@@ -19,7 +19,7 @@
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/Re2Functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 3
@@ -38,7 +38,7 @@ entry:
 ; qemu/optimized/migration_block.c.ll
 ; qemu/optimized/ui_vnc-enc-hextile.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 20
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000029(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 4
@@ -78,7 +78,7 @@ entry:
 ; velox/optimized/Utils.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 4
@@ -86,7 +86,9 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 13 occurrences:
+; boost/optimized/sparring_partner.ll
+; boost/optimized/sub_launcher.ll
 ; cvc5/optimized/core_solver.cpp.ll
 ; gromacs/optimized/block.cpp.ll
 ; gromacs/optimized/enxio.cpp.ll
@@ -96,14 +98,10 @@ entry:
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/net_impl.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
-; pbrt-v4/optimized/aggregates.cpp.ll
-; postgres/optimized/tsvector_op.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
-; wireshark/optimized/io_graph_dialog.cpp.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 3
@@ -114,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 3
@@ -134,7 +132,7 @@ entry:
 ; postgres/optimized/postgres.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 1
@@ -154,7 +152,7 @@ entry:
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 1

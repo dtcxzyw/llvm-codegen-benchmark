@@ -1,12 +1,22 @@
 
+; 1 occurrences:
+; mitsuba3/optimized/builder.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000023(i32 %0) #0 {
+entry:
+  %1 = icmp ugt i32 %0, 4
+  %2 = select i1 %1, i8 6, i8 4
+  ret i8 %2
+}
+
 ; 3 occurrences:
 ; mitsuba3/optimized/builder.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000023(i32 %0) #0 {
+define i8 @func0000000000000063(i32 %0) #0 {
 entry:
-  %1 = icmp ugt i32 %0, 4
+  %1 = icmp samesign ugt i32 %0, 4
   %2 = select i1 %1, i8 6, i8 4
   ret i8 %2
 }

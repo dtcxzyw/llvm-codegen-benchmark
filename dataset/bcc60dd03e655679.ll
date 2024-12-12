@@ -5,21 +5,21 @@
 ; libevent/optimized/event_tagging.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; llvm/optimized/APInt.cpp.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openjdk/optimized/pngrutil.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = add nuw nsw i32 %2, 49
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
 ; flac/optimized/foreign_metadata.c.ll
@@ -38,8 +38,6 @@ entry:
 ; linux/optimized/net.ll
 ; llvm/optimized/ByteCodeEmitter.cpp.ll
 ; node/optimized/simdutf.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openjdk/optimized/jchuff.ll
 ; sentencepiece/optimized/sentencepiece.pb.cc.ll
@@ -52,7 +50,7 @@ entry:
   %2 = lshr i32 %1, 4
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -66,7 +64,7 @@ entry:
   %2 = lshr i32 %1, 1
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -80,7 +78,7 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = add nuw nsw i32 %2, 4
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 61 occurrences:
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddBddIte.c.ll
@@ -58,12 +58,15 @@
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i64
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 
@@ -91,7 +94,7 @@ define i64 @func0000000000000002(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = zext i1 %2 to i64
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 

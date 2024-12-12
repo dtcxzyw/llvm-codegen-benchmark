@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/alps.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; php/optimized/zend_compile.ll

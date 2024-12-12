@@ -1,9 +1,8 @@
 
-%struct.MinimapPixel.2586185 = type { %struct.MapNode.2586186, i16, i16 }
-%struct.MapNode.2586186 = type { i16, i8, i8 }
+%struct.MinimapPixel.2700202 = type { %struct.MapNode.2700203, i16, i16 }
+%struct.MapNode.2700203 = type { i16, i8, i8 }
 
-; 120 occurrences:
-; abc/optimized/acecSt.c.ll
+; 122 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/saigIsoSlow.c.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
@@ -99,6 +98,7 @@
 ; opencv/optimized/msm_epfl.cpp.ll
 ; opencv/optimized/nonrigid_icp.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
+; opencv/optimized/p3p.cpp.ll
 ; opencv/optimized/perf_tsdf.cpp.ll
 ; opencv/optimized/pose_3d.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
@@ -123,12 +123,14 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; yosys/optimized/ice40_braminit.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr nusw [16 x float], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [16 x float], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -141,11 +143,11 @@ entry:
 ; openspiel/optimized/hearts_test.cc.ll
 ; openusd/optimized/idct.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 4
   %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr nusw [256 x %struct.MinimapPixel.2586185], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [256 x %struct.MinimapPixel.2700202], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -163,9 +165,80 @@ entry:
   ret ptr %5
 }
 
-; 38 occurrences:
+; 3 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; stockfish/optimized/position.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 4
+  %4 = add nuw nsw i64 %1, %3
+  %5 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000032(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = add i64 %3, %1
+  %5 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 4 occurrences:
+; openjdk/optimized/methodData.ll
+; openspiel/optimized/bridge.cc.ll
+; openspiel/optimized/euchre.cc.ll
+; openspiel/optimized/hearts.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 1
+  %4 = add nsw i64 %3, %1
+  %5 = getelementptr nusw [1 x i64], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; stockfish/optimized/position.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 3
+  %4 = add nsw i64 %1, %3
+  %5 = getelementptr nusw [64 x i32], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-edonkey.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = add nuw nsw i64 %1, %3
+  %5 = getelementptr [16 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = add nuw i64 %1, %3
+  %5 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 35 occurrences:
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/alignset.cpp.ll
@@ -201,62 +274,12 @@ entry:
 ; meshlab/optimized/trackmode.cpp.ll
 ; meshlab/optimized/variance_shadow_mapping.cpp.ll
 ; meshlab/optimized/variance_shadow_mapping_blur.cpp.ll
-; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl i64 %2, 4
+  %3 = shl i64 %2, 2
   %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 2 occurrences:
-; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
-; image-rs/optimized/244uszkx0e8t5ie1.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 2
-  %4 = add i64 %3, %1
-  %5 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 5 occurrences:
-; opencv/optimized/p3p.cpp.ll
-; openjdk/optimized/methodData.ll
-; openspiel/optimized/bridge.cc.ll
-; openspiel/optimized/euchre.cc.ll
-; openspiel/optimized/hearts.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = add nsw i64 %3, %1
-  %5 = getelementptr nusw [1 x i64], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; stockfish/optimized/position.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 3
-  %4 = add nsw i64 %3, %1
-  %5 = getelementptr nusw [64 x i32], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-edonkey.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 2
-  %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr [16 x i8], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [16 x double], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

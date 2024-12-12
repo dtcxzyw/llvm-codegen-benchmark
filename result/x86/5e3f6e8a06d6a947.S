@@ -1,24 +1,24 @@
-func0000000000000161:                   # @func0000000000000161
+func00000000000004c1:                   # @func00000000000004c1
 	decl	%edx
 	testl	%esi, %esi
 	movl	$1, %eax
 	cmovgl	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000266:                   # @func0000000000000266
+func00000000000008c6:                   # @func00000000000008c6
 	addl	$2, %edx
 	testl	%esi, %esi
 	movl	$4, %eax
 	cmovnsl	%edx, %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
-func0000000000000166:                   # @func0000000000000166
+func00000000000004c6:                   # @func00000000000004c6
 	decl	%edx
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	cmovnsl	%edx, %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq

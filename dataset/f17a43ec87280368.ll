@@ -1,6 +1,7 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/absRef.c.ll
+; boost/optimized/cmdline.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; jq/optimized/execute.ll
@@ -13,7 +14,7 @@
 define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nsw i64 %3, 5
   %5 = add nsw i64 %4, 600
   ret i64 %5
@@ -27,7 +28,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl i64 %3, 2
   %5 = add i64 %4, 4
   ret i64 %5
@@ -40,7 +41,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl nuw nsw i64 %3, 2
   %5 = add nsw i64 %4, -4
   ret i64 %5
@@ -52,7 +53,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl i64 %3, 3
   %5 = add i64 %4, 8
   ret i64 %5

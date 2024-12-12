@@ -1,4 +1,4 @@
-func000000000000008c:                   // @func000000000000008c
+func000000000000010c:                   // @func000000000000010c
 // %bb.0:                               // %entry
 	and	w8, w2, #0xffff
 	cmp	x0, x1
@@ -7,7 +7,7 @@ func000000000000008c:                   // @func000000000000008c
 	cset	w0, hi
 	ret
                                         // -- End function
-func000000000000001c:                   // @func000000000000001c
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
 	and	w8, w2, #0xffff
 	cmp	x0, x1
@@ -16,14 +16,14 @@ func000000000000001c:                   // @func000000000000001c
 	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000cc:                   // @func00000000000000cc
+func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
 	tst	w2, #0xffff
 	ccmp	x0, x1, #4, ne
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	and	w8, w2, #0xffff
 	cmp	x0, x1
@@ -31,7 +31,7 @@ func0000000000000011:                   // @func0000000000000011
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000089:                   // @func0000000000000089
+func0000000000000109:                   // @func0000000000000109
 // %bb.0:                               // %entry
 	and	w8, w2, #0xffff
 	cmp	x0, x1
@@ -39,7 +39,7 @@ func0000000000000089:                   // @func0000000000000089
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000000c4:                   // @func00000000000000c4
+func0000000000000184:                   // @func0000000000000184
 // %bb.0:                               // %entry
 	tst	w2, #0xffff
 	ccmp	x0, x1, #2, ne

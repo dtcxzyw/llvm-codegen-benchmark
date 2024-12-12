@@ -1,19 +1,11 @@
-func0000000000000081:                   # @func0000000000000081
-	shrq	$32, %rdx
-	setne	%cl
-	testq	%rsi, %rsi
-	sete	%al
-	andb	%cl, %al
-	orb	%dil, %al
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorq	$-2, %rdx
 	xorq	$-2, %rsi
 	orq	%rdx, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	testq	%rdx, %rdx
 	setg	%cl
 	testq	%rsi, %rsi
@@ -21,7 +13,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	testq	%rdx, %rdx
 	sete	%cl
 	testq	%rsi, %rsi

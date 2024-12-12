@@ -3,7 +3,7 @@
 ; spike/optimized/xperm4.ll
 ; spike/optimized/xperm8.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 32
   %.not.not = icmp eq i64 %3, 0
@@ -51,10 +51,10 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/p256-64.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 9223372036854775807
-  %4 = icmp ugt i64 %3, 9223372032559808512
+  %4 = icmp samesign ugt i64 %3, 9223372032559808512
   %5 = select i1 %4, i64 %1, i64 0
   %6 = or i64 %5, %0
   ret i64 %6

@@ -25,13 +25,14 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/text_file_backend.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
-  %3 = icmp ult i32 %0, 65535
+  %3 = icmp ult i32 %0, -3
   %4 = and i1 %3, %2
   %5 = zext i1 %4 to i32
   ret i32 %5

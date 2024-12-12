@@ -9,7 +9,7 @@ func000000000000003b:                   # @func000000000000003b
 	retq
 func0000000000000002:                   # @func0000000000000002
 	vpsllq	$32, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmuludq	%ymm0, %ymm1, %ymm0
 	retq

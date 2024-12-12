@@ -1,21 +1,21 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testb	%dl, %dl
 	setne	%al
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	andb	$1, %dl
-	orb	%sil, %dl
+func000000000000002c:                   # @func000000000000002c
+	testb	%dl, %dl
 	sete	%al
-	andb	%dil, %al
+	andb	%dil, %sil
+	andb	%sil, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
-	cmpb	$-2, %dl
+func000000000000008c:                   # @func000000000000008c
+	cmpb	$-4, %dl
 	setb	%cl
 	andb	%dil, %cl
-	andb	$-9, %sil
-	cmpb	$33, %sil
+	andb	$-2, %sil
+	cmpb	$14, %sil
 	setne	%al
 	andb	%cl, %al
 	retq

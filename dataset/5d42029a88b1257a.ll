@@ -1,22 +1,5 @@
 
-; 6 occurrences:
-; libquic/optimized/time_support.c.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = icmp slt i64 %4, %0
-  ret i1 %5
-}
-
-; 5 occurrences:
-; linux/optimized/gen_estimator.ll
+; 4 occurrences:
 ; linux/optimized/route.ll
 ; node/optimized/libnode.node_buffer.ll
 ; pocketpy/optimized/error.cpp.ll
@@ -25,7 +8,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %0, %4
   %6 = icmp sgt i64 %5, 0
   ret i1 %6
@@ -40,7 +23,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %0, %4
   %6 = icmp eq i64 %5, 1
   ret i1 %6
@@ -49,10 +32,10 @@ entry:
 ; 1 occurrences:
 ; php/optimized/softmagic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %0, %4
   %6 = icmp ult i64 %5, 8
   ret i1 %6
@@ -61,10 +44,10 @@ entry:
 ; 1 occurrences:
 ; git/optimized/apply.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %0, %4
   %6 = icmp ugt i64 %5, 4
   ret i1 %6
@@ -78,10 +61,24 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %0, %4
   %6 = icmp ugt i64 %5, -8
   ret i1 %6
+}
+
+; 4 occurrences:
+; libquic/optimized/time_support.c.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000aa(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = add nsw i64 %1, %3
+  %5 = icmp sgt i64 %0, %4
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -90,7 +87,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %0, %4
   %6 = icmp ult i64 %5, 2048
   ret i1 %6
@@ -99,10 +96,10 @@ entry:
 ; 1 occurrences:
 ; ninja/optimized/manifest_parser_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nsw i64 %0, %4
   %6 = icmp ult i64 %5, 2
   ret i1 %6
@@ -117,7 +114,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %0, %4
   %6 = icmp slt i64 %5, 0
   ret i1 %6

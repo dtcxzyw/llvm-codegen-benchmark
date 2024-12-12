@@ -47,13 +47,22 @@ func0000000000000011:                   # @func0000000000000011
 	srli	a0, a0, 44
 	or	a0, a0, a1
 	ret
+func000000000000000c:                   # @func000000000000000c
+	sext.w	a2, a2
+	slti	a2, a2, 0
+	addi	a2, a2, -1
+	and	a0, a0, a2
+	lui	a2, 16
+	and	a1, a1, a2
+	or	a0, a0, a1
+	ret
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a2, a2
 	lui	a3, 8
 	addiw	a3, a3, -641
-	bge	a3, a2, .LBB5_2
+	bge	a3, a2, .LBB6_2
 	lui	a0, 129024
-.LBB5_2:                                # %entry
+.LBB6_2:                                # %entry
 	slli	a1, a1, 41
 	srli	a1, a1, 41
 	or	a0, a0, a1

@@ -1,5 +1,5 @@
 
-; 747 occurrences:
+; 760 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -95,7 +95,6 @@
 ; ceres/optimized/single_linkage_clustering.cc.ll
 ; ceres/optimized/visibility.cc.ll
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
-; clamav/optimized/XzCrc64.c.ll
 ; clamav/optimized/inflate64.c.ll
 ; cmake/optimized/crc32.c.ll
 ; cmake/optimized/crc64_fast.c.ll
@@ -363,7 +362,6 @@
 ; llvm/optimized/ProgramState.cpp.ll
 ; llvm/optimized/PthreadLockChecker.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
@@ -488,7 +486,6 @@
 ; mitsuba3/optimized/multijitter.cpp.ll
 ; mitsuba3/optimized/orthogonal.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/stratified.cpp.ll
@@ -514,7 +511,6 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-set.ll
 ; openmpi/optimized/psquash_flex128.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/battleship_test.cc.ll
 ; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/ce.cc.ll
@@ -661,7 +657,6 @@
 ; qemu/optimized/hw_nvme_dif.c.ll
 ; qemu/optimized/target_riscv_crypto_helper.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
-; rand-rs/optimized/3wentbx1vl0iwznb.ll
 ; raylib/optimized/rcore.c.ll
 ; re2/optimized/compile.cc.ll
 ; re2/optimized/dfa.cc.ll
@@ -743,6 +738,24 @@
 ; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/20wexgg4z3ww9j4h4iowli6fi.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5eo3r6xqgcl9c03ocnkjc70d3.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/etkkpijil810uxaq6a1xhpkj9.ll
 ; zlib/optimized/crc32.c.ll
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll
@@ -751,11 +764,11 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 
-; 131 occurrences:
+; 127 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
@@ -781,6 +794,7 @@ entry:
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; ceres/optimized/fake_bundle_adjustment_jacobian.cc.ll
@@ -793,7 +807,6 @@ entry:
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/random.cpp.ll
 ; g2o/optimized/sampler.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; gromacs/optimized/coolstuff.cpp.ll
 ; gromacs/optimized/seed.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
@@ -813,13 +826,11 @@ entry:
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; nix/optimized/filetransfer.ll
 ; ocio/optimized/Platform.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/backgammon_test.cc.ll
 ; openspiel/optimized/bargaining_instance_generator.cc.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
@@ -866,9 +877,7 @@ entry:
 ; quantlib/optimized/fireflyalgorithm.ll
 ; quantlib/optimized/mt19937uniformrng.ll
 ; quantlib/optimized/particleswarmoptimization.ll
-; quest/optimized/mt19937ar.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; redis/optimized/mt19937-64.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; rocksdb/optimized/transaction_test_util.cc.ll

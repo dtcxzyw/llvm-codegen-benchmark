@@ -1,9 +1,7 @@
 
-; 39 occurrences:
+; 36 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; cmake/optimized/setopt.c.ll
-; curl/optimized/libcurl_la-setopt.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; gromacs/optimized/fixpoint.c.ll
@@ -33,7 +31,6 @@
 ; qemu/optimized/hw_riscv_virt-acpi-build.c.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; redis/optimized/memtest.ll
-; redis/optimized/networking.ll
 ; rocksdb/optimized/arena.cc.ll
 ; ruby/optimized/array.ll
 ; slurm/optimized/node_scheduler.ll

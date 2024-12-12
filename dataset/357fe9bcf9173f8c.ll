@@ -2,26 +2,26 @@
 ; 1 occurrences:
 ; openjdk/optimized/awt_ImagingLib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000611(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c21(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 346
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
@@ -35,13 +35,26 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
+; boost/optimized/options_description.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000804(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 1
+  %4 = sext i1 %3 to i32
+  %5 = add i32 %1, %4
+  %6 = zext i32 %5 to i64
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 
@@ -49,26 +62,26 @@ entry:
 ; cvc5/optimized/cnf_stream.cpp.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000631(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c61(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
@@ -165,44 +178,39 @@ entry:
 ; cvc5/optimized/type_info.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
-; 19 occurrences:
+; 14 occurrences:
 ; cvc5/optimized/base_solver.cpp.ll
 ; cvc5/optimized/bool_to_bv.cpp.ll
-; cvc5/optimized/equality_query.cpp.ll
 ; cvc5/optimized/inst_match.cpp.ll
 ; cvc5/optimized/inst_match_generator_simple.cpp.ll
-; cvc5/optimized/ite_utilities.cpp.ll
 ; cvc5/optimized/miplib_trick.cpp.ll
 ; cvc5/optimized/node_traversal.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
-; cvc5/optimized/quantifiers_macros.cpp.ll
 ; cvc5/optimized/quantifiers_registry.cpp.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
-; cvc5/optimized/real_to_int.cpp.ll
+; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/smt2_printer.cpp.ll
-; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/sygus_process_conj.cpp.ll
-; cvc5/optimized/theory_model_builder.cpp.ll
 ; cvc5/optimized/theory_proof_step_buffer.cpp.ll
 ; cvc5/optimized/theory_sep.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000144(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 
@@ -213,13 +221,13 @@ entry:
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/theory_sep.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000148(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp ugt i64 %0, %6
   ret i1 %7
 }
 
@@ -229,13 +237,33 @@ entry:
 ; cvc5/optimized/theory_model_builder.cpp.ll
 ; cvc5/optimized/type_matcher.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = icmp ne i64 %6, %0
+  %7 = icmp ne i64 %0, %6
+  ret i1 %7
+}
+
+; 8 occurrences:
+; cvc5/optimized/equality_query.cpp.ll
+; cvc5/optimized/ite_utilities.cpp.ll
+; cvc5/optimized/miplib_trick.cpp.ll
+; cvc5/optimized/quantifiers_macros.cpp.ll
+; cvc5/optimized/quantifiers_rewriter.cpp.ll
+; cvc5/optimized/real_to_int.cpp.ll
+; cvc5/optimized/sort_inference.cpp.ll
+; cvc5/optimized/theory_model_builder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000154(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 2
+  %4 = sext i1 %3 to i32
+  %5 = add nsw i32 %1, %4
+  %6 = zext i32 %5 to i64
+  %7 = icmp samesign ult i64 %0, %6
   ret i1 %7
 }
 
@@ -245,13 +273,13 @@ entry:
 ; openblas/optimized/lapacke_stp_trans.c.ll
 ; openblas/optimized/lapacke_ztp_trans.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000601(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c01(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 

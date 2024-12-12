@@ -9,17 +9,19 @@
 ; qemu/optimized/hw_virtio_vhost.c.ll
 ; slurm/optimized/fed_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
 
-; 140 occurrences:
+; 139 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -54,12 +56,10 @@ entry:
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MCAssembler.cpp.ll
 ; llvm/optimized/MachOUniversal.cpp.ll
-; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/OptimizedStructLayout.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
@@ -67,7 +67,6 @@ entry:
 ; llvm/optimized/SwiftCallingConv.cpp.ll
 ; llvm/optimized/X86CallFrameOptimization.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; mimalloc/optimized/bitmap.c.ll
 ; openjdk/optimized/bitMap.ll
@@ -160,16 +159,16 @@ entry:
 ; z3/optimized/hwf.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -183,15 +182,14 @@ entry:
 ; qemu/optimized/util_hbitmap.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_mulAddF32.ll
 ; spike/optimized/s_mulAddF64.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp ne i64 %4, 0
   ret i1 %5
 }
@@ -199,11 +197,11 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/fed_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp ne i64 %4, 0
   ret i1 %5
 }
@@ -213,11 +211,11 @@ entry:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 65535, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -229,7 +227,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 65535, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }

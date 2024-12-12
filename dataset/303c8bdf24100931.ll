@@ -9,7 +9,7 @@
 ; ipopt/optimized/IpTripletHelper.ll
 ; rocksdb/optimized/manager.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i32 %0) #0 {
+define i64 @func00000000000000e6(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = zext nneg i32 %1 to i64
@@ -22,7 +22,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/pg_shmem.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0) #0 {
+define i64 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = zext i32 %1 to i64

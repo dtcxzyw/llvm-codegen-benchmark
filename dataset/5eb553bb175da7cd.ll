@@ -1,5 +1,5 @@
 
-; 92 occurrences:
+; 89 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; git/optimized/mem-pool.ll
 ; grpc/optimized/alts_handshaker_client.cc.ll
@@ -26,8 +26,6 @@
 ; grpc/optimized/xds_lb_policy_registry.cc.ll
 ; grpc/optimized/xds_listener.cc.ll
 ; grpc/optimized/xds_route_config.cc.ll
-; harfbuzz/optimized/gsubgpos-context.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
@@ -37,7 +35,6 @@
 ; opencv/optimized/grfmt_pam.cpp.ll
 ; opencv/optimized/grfmt_pfm.cpp.ll
 ; opencv/optimized/grfmt_pxm.cpp.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/allocation.ll
 ; openjdk/optimized/arena.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
@@ -103,8 +100,7 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
-; lief/optimized/Builder.cpp.ll
+; 3 occurrences:
 ; llvm/optimized/LoopInterchange.cpp.ll
 ; llvm/optimized/PrecompiledPreamble.cpp.ll
 ; openjdk/optimized/check_classname.ll

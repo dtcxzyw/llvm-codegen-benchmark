@@ -1,9 +1,5 @@
 
-; 12 occurrences:
-; abc/optimized/ifDec08.c.ll
-; abc/optimized/ifDec10.c.ll
-; abc/optimized/ifDec16.c.ll
-; abc/optimized/kitTruth.c.ll
+; 8 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; faiss/optimized/ResidualQuantizer.cpp.ll

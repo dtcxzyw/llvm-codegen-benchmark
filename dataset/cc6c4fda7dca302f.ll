@@ -1,5 +1,8 @@
 
-; 8 occurrences:
+; 11 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/text_file_backend.ll
 ; icu/optimized/indiancal.ll
 ; linux/optimized/apic.ll
 ; openusd/optimized/stbImage.cpp.ll

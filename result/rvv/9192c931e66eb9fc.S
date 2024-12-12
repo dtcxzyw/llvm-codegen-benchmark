@@ -13,6 +13,14 @@ func000000000000003f:                   # @func000000000000003f
 	vmv.v.i	v10, 8
 	vsll.vv	v8, v10, v8
 	ret
+func0000000000000002:                   # @func0000000000000002
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vsll.vi	v8, v8, 2
+	li	a0, 24
+	vrsub.vx	v8, v8, a0
+	vmv.v.i	v10, 1
+	vsll.vv	v8, v10, v8
+	ret
 func0000000000000035:                   # @func0000000000000035
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v8, v8, 3
@@ -27,14 +35,6 @@ func000000000000003e:                   # @func000000000000003e
 	li	a0, 28
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 15
-	vsll.vv	v8, v10, v8
-	ret
-func0000000000000002:                   # @func0000000000000002
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsll.vi	v8, v8, 3
-	vmv.v.i	v10, 3
-	li	a0, 30
-	vrsub.vx	v8, v8, a0
 	vsll.vv	v8, v10, v8
 	ret
 func0000000000000000:                   # @func0000000000000000

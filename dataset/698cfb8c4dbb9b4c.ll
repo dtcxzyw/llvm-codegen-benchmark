@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; minetest/optimized/voxelalgorithms.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
@@ -14,9 +13,9 @@
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %0, i32 %2
-  %4 = and i32 %3, 16711680
-  %5 = and i32 %0, -16711681
-  %6 = or disjoint i32 %4, %5
+  %4 = and i32 %3, 2
+  %5 = and i32 %0, 1
+  %6 = or disjoint i32 %5, %4
   ret i32 %6
 }
 

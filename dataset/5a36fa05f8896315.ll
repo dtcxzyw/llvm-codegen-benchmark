@@ -234,10 +234,10 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c7(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000587(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   %5 = icmp ne i32 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -247,10 +247,10 @@ entry:
 ; spike/optimized/s_roundMToI64.ll
 ; spike/optimized/s_roundPackMToI64.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   %5 = icmp ne i32 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -259,10 +259,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-zbee-zcl-general.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000194(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ult i32 %0, %3
   %5 = icmp ne i32 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6

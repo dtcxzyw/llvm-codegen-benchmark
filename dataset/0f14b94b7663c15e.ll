@@ -34,9 +34,8 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/exorList.c.ll
-; openmpi/optimized/bcast.ll
 ; openspiel/optimized/crazy_eights.cc.ll
 ; openspiel/optimized/pathfinding.cc.ll
 ; slurm/optimized/cbuf.ll

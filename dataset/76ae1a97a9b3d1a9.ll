@@ -1,10 +1,5 @@
 
-%"class.std::vector.262.3035143" = type { %"struct.std::_Vector_base.263.3035144" }
-%"struct.std::_Vector_base.263.3035144" = type { %"struct.std::_Vector_base<llvm::AsmToken, std::allocator<llvm::AsmToken>>::_Vector_impl.3035145" }
-%"struct.std::_Vector_base<llvm::AsmToken, std::allocator<llvm::AsmToken>>::_Vector_impl.3035145" = type { %"struct.std::_Vector_base<llvm::AsmToken, std::allocator<llvm::AsmToken>>::_Vector_impl_data.3035146" }
-%"struct.std::_Vector_base<llvm::AsmToken, std::allocator<llvm::AsmToken>>::_Vector_impl_data.3035146" = type { ptr, ptr, ptr }
-
-; 236 occurrences:
+; 265 occurrences:
 ; brotli/optimized/static_dict.c.ll
 ; clamav/optimized/7zIn.c.ll
 ; icu/optimized/bytestrie.ll
@@ -14,6 +9,7 @@
 ; jemalloc/optimized/psset.sym.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
@@ -206,6 +202,34 @@
 ; openjdk/optimized/ciStreams.ll
 ; openssl/optimized/libcrypto-lib-ocb128.ll
 ; openssl/optimized/libcrypto-shlib-ocb128.ll
+; openusd/optimized/authoring.cpp.ll
+; openusd/optimized/bakeSkinning.cpp.ll
+; openusd/optimized/blendShapeQuery.cpp.ll
+; openusd/optimized/crateData.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/flatNormals.cpp.ll
+; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
+; openusd/optimized/materialBindingAPI.cpp.ll
+; openusd/optimized/pathTable.cpp.ll
+; openusd/optimized/piPrototypeSceneIndex.cpp.ll
+; openusd/optimized/pointBased.cpp.ll
+; openusd/optimized/pointInstancer.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primGather.cpp.ll
+; openusd/optimized/primTypeIndex.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/resolvedAttributeCache.cpp.ll
+; openusd/optimized/schemaRegistry.cpp.ll
+; openusd/optimized/simplify.cpp.ll
+; openusd/optimized/skeletonAdapter.cpp.ll
+; openusd/optimized/smoothNormals.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; openusd/optimized/stitchClips.cpp.ll
+; openusd/optimized/tbbKernel.cpp.ll
+; openusd/optimized/testWorkLoops.cpp.ll
+; openusd/optimized/testWorkReduce.cpp.ll
+; openusd/optimized/testWorkThreadLimits.cpp.ll
+; openusd/optimized/utils.cpp.ll
 ; openvdb/optimized/Activate.cc.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/AttributeArrayString.cc.ll
@@ -242,12 +266,12 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   ret ptr %5
 }
 
@@ -260,19 +284,20 @@ entry:
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; wireshark/optimized/packet-sndcp-xid.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 60
   %3 = zext nneg i8 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 12
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 12
   ret ptr %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; hermes/optimized/Executor.cpp.ll
 ; libquic/optimized/asn1_lib.c.ll
 ; linux/optimized/gss_generic_token.ll
+; linux/optimized/hooks.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/selftests.ll
 ; wireshark/optimized/asn1.c.ll
@@ -286,45 +311,6 @@ entry:
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 1
   ret ptr %5
-}
-
-; 29 occurrences:
-; llvm/optimized/AsmParser.cpp.ll
-; openusd/optimized/authoring.cpp.ll
-; openusd/optimized/bakeSkinning.cpp.ll
-; openusd/optimized/blendShapeQuery.cpp.ll
-; openusd/optimized/crateData.cpp.ll
-; openusd/optimized/delegate.cpp.ll
-; openusd/optimized/flatNormals.cpp.ll
-; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
-; openusd/optimized/materialBindingAPI.cpp.ll
-; openusd/optimized/pathTable.cpp.ll
-; openusd/optimized/piPrototypeSceneIndex.cpp.ll
-; openusd/optimized/pointBased.cpp.ll
-; openusd/optimized/pointInstancer.cpp.ll
-; openusd/optimized/prim.cpp.ll
-; openusd/optimized/primGather.cpp.ll
-; openusd/optimized/primTypeIndex.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/resolvedAttributeCache.cpp.ll
-; openusd/optimized/schemaRegistry.cpp.ll
-; openusd/optimized/simplify.cpp.ll
-; openusd/optimized/skeletonAdapter.cpp.ll
-; openusd/optimized/smoothNormals.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; openusd/optimized/stitchClips.cpp.ll
-; openusd/optimized/tbbKernel.cpp.ll
-; openusd/optimized/testWorkLoops.cpp.ll
-; openusd/optimized/testWorkReduce.cpp.ll
-; openusd/optimized/testWorkThreadLimits.cpp.ll
-; openusd/optimized/utils.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001b(ptr %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 15
-  %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr %"class.std::vector.262.3035143", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 1
-  ret ptr %4
 }
 
 attributes #0 = { nounwind }

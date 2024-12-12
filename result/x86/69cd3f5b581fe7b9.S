@@ -12,8 +12,8 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func0000000000000009:                   # @func0000000000000009
 	notq	%rsi
-	cmpq	%rdx, %rsi
-	setae	%al
+	cmpq	%rsi, %rdx
+	setbe	%al
 	andb	%dil, %al
 	retq
 func0000000000000004:                   # @func0000000000000004

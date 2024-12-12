@@ -3,6 +3,12 @@ func0000000000000010:                   # @func0000000000000010
 	imull	%edi, %esi
 	imull	$100, %esi, %eax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	addl	$-48, %edi
+	imull	%esi, %edi
+	addl	%edi, %edi
+	leal	(%rdi,%rdi,4), %eax
+	retq
 func0000000000000015:                   # @func0000000000000015
 	decl	%edi
 	imull	%esi, %edi
@@ -19,9 +25,9 @@ func0000000000000011:                   # @func0000000000000011
 	addl	%esi, %esi
 	leal	(%rsi,%rsi,8), %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	addl	$-48, %edi
+func000000000000000c:                   # @func000000000000000c
+	incl	%edi
 	imull	%esi, %edi
-	addl	%edi, %edi
+	shll	$2, %edi
 	leal	(%rdi,%rdi,4), %eax
 	retq

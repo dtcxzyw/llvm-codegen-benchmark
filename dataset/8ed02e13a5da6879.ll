@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 96 occurrences:
 ; clamav/optimized/cpio.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/tiff.c.ll
@@ -28,7 +28,6 @@
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/sky2.ll
-; linux/optimized/swphy.ll
 ; linux/optimized/sysctl_net.ll
 ; linux/optimized/tcp_minisocks.ll
 ; linux/optimized/tcp_output.ll
@@ -94,6 +93,9 @@
 ; wireshark/optimized/packet-uds.c.ll
 ; wireshark/optimized/peekclassic.c.ll
 ; wireshark/optimized/sequence_diagram.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -102,7 +104,7 @@ entry:
   ret i32 %4
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; linux/optimized/amd64-agp.ll
 ; linux/optimized/boot.ll
@@ -122,6 +124,7 @@ entry:
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; openusd/optimized/topologyRefiner.cpp.ll

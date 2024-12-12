@@ -1,62 +1,38 @@
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	mov	x8, #9223372036854775744        // =0x7fffffffffffffc0
-	shl	v2.2d, v2.2d, #3
-	shl	v3.2d, v3.2d, #3
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
-	dup	v2.2d, x8
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v2.2d, v1.2d
+	sub	x8, x1, x2
+	mov	x9, #9223372036854775744        // =0x7fffffffffffffc0
+	add	x8, x0, x8, lsl #3
+	sub	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	mov	w8, #3                          // =0x3
-	dup	v4.2d, x8
-	shl	v2.2d, v2.2d, #3
-	shl	v3.2d, v3.2d, #3
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
-	sub	v0.2d, v4.2d, v0.2d
-	sub	v1.2d, v4.2d, v1.2d
+	sub	x8, x1, x2
+	mov	w9, #3                          // =0x3
+	add	x8, x0, x8, lsl #3
+	sub	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	v2.2d, v4.2d, v2.2d
-	sub	v3.2d, v5.2d, v3.2d
-	shl	v3.2d, v3.2d, #2
-	shl	v2.2d, v2.2d, #2
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v3.2d, v1.2d
+	sub	x8, x2, x1
+	lsl	x8, x8, #2
+	sub	x0, x8, x0
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	v2.2d, v4.2d, v2.2d
-	sub	v3.2d, v5.2d, v3.2d
-	shl	v3.2d, v3.2d, #2
-	shl	v2.2d, v2.2d, #2
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v3.2d, v1.2d
+	sub	x8, x2, x1
+	lsl	x8, x8, #2
+	sub	x0, x8, x0
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	mov	w8, #63                         // =0x3f
-	shl	v2.2d, v2.2d, #3
-	shl	v3.2d, v3.2d, #3
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
-	dup	v2.2d, x8
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v2.2d, v1.2d
+	sub	x8, x1, x2
+	mov	w9, #63                         // =0x3f
+	add	x8, x0, x8, lsl #3
+	sub	x0, x9, x8
 	ret
                                         // -- End function

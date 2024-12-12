@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/acecFadds.c.ll
+; git/optimized/fetch.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0) #0 {

@@ -4,7 +4,7 @@
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; linux/optimized/intel_fb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 3, i64 4
   %4 = shl nuw nsw i64 %1, %3
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/FBXParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 3, i64 2
   %4 = shl nuw nsw i64 %1, %3

@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
-; nanobind/optimized/nb_func.cpp.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1, i16 %2) #0 {

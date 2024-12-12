@@ -1,10 +1,8 @@
 
-; 27 occurrences:
+; 25 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/giaEra.c.ll
 ; abc/optimized/giaMf.c.ll
-; abc/optimized/sbdCut.c.ll
-; abc/optimized/sbdWin.c.ll
 ; flac/optimized/bitreader.c.ll
 ; folly/optimized/Checksum.cpp.ll
 ; hyperscan/optimized/engine_hyperscan.cpp.ll

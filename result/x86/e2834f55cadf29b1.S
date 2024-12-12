@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	notb	%dl
 	testl	%edi, %edi
 	sete	%al
@@ -6,12 +6,4 @@ func00000000000000c1:                   # @func00000000000000c1
 	sete	%cl
 	orb	%dl, %al
 	andb	%cl, %al
-	retq
-func00000000000000a8:                   # @func00000000000000a8
-	cmpl	$32768, %edi                    # imm = 0x8000
-	setge	%cl
-	andb	%dl, %cl
-	cmpl	$2, %esi
-	setae	%al
-	orb	%cl, %al
 	retq

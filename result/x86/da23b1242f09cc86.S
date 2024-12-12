@@ -4,64 +4,64 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$4, %esi
 	setb	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	subl	%edx, %esi
 	imull	%edi, %esi
 	testl	%esi, %esi
 	setle	%al
 	retq
-func0000000000000256:                   # @func0000000000000256
+func00000000000004a6:                   # @func00000000000004a6
 	subl	%edx, %esi
 	imull	%edi, %esi
 	testl	%esi, %esi
 	setle	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subl	%edx, %esi
 	imull	%edi, %esi
 	cmpl	$33, %esi
 	setge	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpl	%edx, %esi
 	sete	%cl
 	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	cmpl	%edx, %esi
 	sete	%cl
 	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000251:                   # @func0000000000000251
+func00000000000004a1:                   # @func00000000000004a1
 	cmpl	%edx, %esi
 	sete	%cl
 	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	subl	%edx, %esi
 	imull	%edi, %esi
 	testl	%esi, %esi
 	setg	%al
 	retq
-func000000000000025a:                   # @func000000000000025a
+func00000000000004aa:                   # @func00000000000004aa
 	subl	%edx, %esi
 	imull	%edi, %esi
 	testl	%esi, %esi
 	setg	%al
 	retq
-func0000000000000206:                   # @func0000000000000206
+func0000000000000406:                   # @func0000000000000406
 	movl	%esi, %eax
 	subl	%edx, %eax
 	imull	%edi, %eax
 	shrl	$31, %eax
 	retq
-func0000000000000201:                   # @func0000000000000201
+func0000000000000401:                   # @func0000000000000401
 	subl	%edx, %esi
 	imull	%edi, %esi
 	testl	%esi, %esi
@@ -79,7 +79,7 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%esi, %esi
 	setg	%al
 	retq
-func000000000000020a:                   # @func000000000000020a
+func000000000000040a:                   # @func000000000000040a
 	subl	%edx, %esi
 	imull	%edi, %esi
 	testl	%esi, %esi

@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -7,6 +7,8 @@
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -119,6 +121,19 @@ entry:
   %4 = mul nsw i64 %0, %1
   %5 = add nuw nsw i64 %4, %3
   %6 = shl nsw i64 %5, 4
+  ret i64 %6
+}
+
+; 2 occurrences:
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = mul nuw nsw i64 %0, %1
+  %5 = add nuw nsw i64 %4, %3
+  %6 = shl nuw nsw i64 %5, 2
   ret i64 %6
 }
 

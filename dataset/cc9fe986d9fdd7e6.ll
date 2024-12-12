@@ -19,10 +19,11 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bblif.c.ll
 ; icu/optimized/regexcmp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -31,19 +32,6 @@ entry:
   %5 = select i1 %1, i32 2, i32 0
   %6 = or disjoint i32 %5, %4
   %7 = or disjoint i32 %6, %0
-  ret i32 %7
-}
-
-; 1 occurrences:
-; linux/optimized/intel_guc_log.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000042(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 1
-  %4 = zext i1 %3 to i32
-  %5 = select i1 %1, i32 0, i32 256
-  %6 = or disjoint i32 %5, %4
-  %7 = or i32 %6, %0
   ret i32 %7
 }
 

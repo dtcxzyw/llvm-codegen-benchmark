@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; delta-rs/optimized/2n0ez5zuwgs53clg.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
@@ -11,16 +11,18 @@
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
 ; tree-sitter-rs/optimized/76by25jz7vi08g1.ll
+; zed-rs/optimized/7aq90jycr3x842qyrhjbel971.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 9223372036854775807
   %4 = select i1 %1, i64 %3, i64 4
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 32 occurrences:
+; 36 occurrences:
 ; delta-rs/optimized/2n0ez5zuwgs53clg.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
@@ -53,12 +55,16 @@ entry:
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -4
   %4 = select i1 %1, i64 %3, i64 5
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -66,18 +72,18 @@ entry:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; openusd/optimized/reporter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -256
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp uge i64 %2, %0
   %4 = select i1 %1, i1 %3, i1 false
@@ -87,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/bitops.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp sle i64 %2, %0
   %4 = select i1 %1, i1 %3, i1 false
@@ -101,7 +107,7 @@ define i1 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -2
   %4 = select i1 %1, i64 %3, i64 10
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 

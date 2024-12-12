@@ -1,18 +1,5 @@
 
 ; 2 occurrences:
-; git/optimized/packfile.ll
-; openjdk/optimized/psCardTable.ll
-; Function Attrs: nounwind
-define i1 @func00000000000003a4(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 7
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %1, i64 1
-  %6 = icmp ult ptr %4, %5
-  ret i1 %6
-}
-
-; 2 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; quantlib/optimized/curvestate.ll
 ; Function Attrs: nounwind
@@ -33,7 +20,7 @@ entry:
 ; darktable/optimized/introspection_hotpixels.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000604(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = getelementptr i8, ptr %0, i64 %3
@@ -48,11 +35,23 @@ entry:
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000204(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %1, i64 16
+  %6 = icmp ult ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; git/optimized/packfile.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000764(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %1, i64 -8
   %6 = icmp ult ptr %4, %5
   ret i1 %6
 }

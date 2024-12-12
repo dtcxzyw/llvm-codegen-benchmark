@@ -1,38 +1,38 @@
 
-%struct.rb_id_item.2485427 = type { i32, i32, i64 }
-%"class.rocksdb::lru_cache::LRUCacheShard.2497604" = type { %"class.rocksdb::CacheShardBase.2497605", i64, i64, i64, i8, double, double, double, double, %"struct.rocksdb::lru_cache::LRUHandle.2497606", ptr, ptr, %"class.rocksdb::lru_cache::LRUHandleTable.2497607", i64, i64, %"class.rocksdb::port::Mutex.2497608", ptr }
-%"class.rocksdb::CacheShardBase.2497605" = type { i32 }
-%"struct.rocksdb::lru_cache::LRUHandle.2497606" = type { ptr, ptr, ptr, ptr, ptr, i64, i64, i32, i32, i8, i8, [1 x i8] }
-%"class.rocksdb::lru_cache::LRUHandleTable.2497607" = type { i32, %"class.std::unique_ptr.2497609", i32, i32, ptr }
-%"class.std::unique_ptr.2497609" = type { %"struct.std::__uniq_ptr_data.2497610" }
-%"struct.std::__uniq_ptr_data.2497610" = type { %"class.std::__uniq_ptr_impl.2497611" }
-%"class.std::__uniq_ptr_impl.2497611" = type { %"class.std::tuple.2497612" }
-%"class.std::tuple.2497612" = type { %"struct.std::_Tuple_impl.2497613" }
-%"struct.std::_Tuple_impl.2497613" = type { %"struct.std::_Head_base.1.2497614" }
-%"struct.std::_Head_base.1.2497614" = type { ptr }
-%"class.rocksdb::port::Mutex.2497608" = type { %union.pthread_mutex_t.2497615 }
-%union.pthread_mutex_t.2497615 = type { %struct.__pthread_mutex_s.2497616 }
-%struct.__pthread_mutex_s.2497616 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2497617 }
-%struct.__pthread_internal_list.2497617 = type { ptr, ptr }
-%"class.rocksdb::clock_cache::ClockCacheShard.2514979" = type <{ %"class.rocksdb::CacheShardBase.2514980", [60 x i8], %"class.rocksdb::clock_cache::FixedHyperClockTable.2514981", %"class.rocksdb::RelaxedAtomic.2514961", %"class.rocksdb::RelaxedAtomic.2.2514959", [52 x i8] }>
-%"class.rocksdb::CacheShardBase.2514980" = type { i32 }
-%"class.rocksdb::clock_cache::FixedHyperClockTable.2514981" = type { %"class.rocksdb::clock_cache::BaseClockTable.base.2514982", i32, i64, i64, %"class.std::unique_ptr.2514983" }
-%"class.rocksdb::clock_cache::BaseClockTable.base.2514982" = type { %"class.rocksdb::RelaxedAtomic.2514961", %"class.rocksdb::RelaxedAtomic.2514961", %"class.rocksdb::RelaxedAtomic.2514961", [40 x i8], %"class.rocksdb::AcqRelAtomic.2514960", %"class.rocksdb::AcqRelAtomic.2514960", %"class.rocksdb::AcqRelAtomic.2514960", [40 x i8], i32, ptr, ptr, ptr }
-%"class.rocksdb::AcqRelAtomic.2514960" = type { %"class.rocksdb::RelaxedAtomic.2514961" }
-%"class.std::unique_ptr.2514983" = type { %"struct.std::__uniq_ptr_data.2514984" }
-%"struct.std::__uniq_ptr_data.2514984" = type { %"class.std::__uniq_ptr_impl.2514985" }
-%"class.std::__uniq_ptr_impl.2514985" = type { %"class.std::tuple.2514986" }
-%"class.std::tuple.2514986" = type { %"struct.std::_Tuple_impl.2514987" }
-%"struct.std::_Tuple_impl.2514987" = type { %"struct.std::_Head_base.1.2514988" }
-%"struct.std::_Head_base.1.2514988" = type { ptr }
-%"class.rocksdb::RelaxedAtomic.2514961" = type { %"struct.std::atomic.2514962" }
-%"struct.std::atomic.2514962" = type { %"struct.std::__atomic_base.2514963" }
-%"struct.std::__atomic_base.2514963" = type { i64 }
-%"class.rocksdb::RelaxedAtomic.2.2514959" = type { %"struct.std::atomic.3.2514964" }
-%"struct.std::atomic.3.2514964" = type { %"struct.std::__atomic_base.4.2514965" }
-%"struct.std::__atomic_base.4.2514965" = type { i32 }
-%struct.code.2764381 = type { i8, i8, i16 }
-%struct.io_fixed_file.3343932 = type { i64 }
+%struct.rb_id_item.2600909 = type { i32, i32, i64 }
+%"class.rocksdb::lru_cache::LRUCacheShard.2612862" = type { %"class.rocksdb::CacheShardBase.2612863", i64, i64, i64, i8, double, double, double, double, %"struct.rocksdb::lru_cache::LRUHandle.2612864", ptr, ptr, %"class.rocksdb::lru_cache::LRUHandleTable.2612865", i64, i64, %"class.rocksdb::port::Mutex.2612866", ptr }
+%"class.rocksdb::CacheShardBase.2612863" = type { i32 }
+%"struct.rocksdb::lru_cache::LRUHandle.2612864" = type { ptr, ptr, ptr, ptr, ptr, i64, i64, i32, i32, i8, i8, [1 x i8] }
+%"class.rocksdb::lru_cache::LRUHandleTable.2612865" = type { i32, %"class.std::unique_ptr.2612867", i32, i32, ptr }
+%"class.std::unique_ptr.2612867" = type { %"struct.std::__uniq_ptr_data.2612868" }
+%"struct.std::__uniq_ptr_data.2612868" = type { %"class.std::__uniq_ptr_impl.2612869" }
+%"class.std::__uniq_ptr_impl.2612869" = type { %"class.std::tuple.2612870" }
+%"class.std::tuple.2612870" = type { %"struct.std::_Tuple_impl.2612871" }
+%"struct.std::_Tuple_impl.2612871" = type { %"struct.std::_Head_base.1.2612872" }
+%"struct.std::_Head_base.1.2612872" = type { ptr }
+%"class.rocksdb::port::Mutex.2612866" = type { %union.pthread_mutex_t.2612873 }
+%union.pthread_mutex_t.2612873 = type { %struct.__pthread_mutex_s.2612874 }
+%struct.__pthread_mutex_s.2612874 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2612875 }
+%struct.__pthread_internal_list.2612875 = type { ptr, ptr }
+%"class.rocksdb::clock_cache::ClockCacheShard.2630088" = type <{ %"class.rocksdb::CacheShardBase.2630089", [60 x i8], %"class.rocksdb::clock_cache::FixedHyperClockTable.2630090", %"class.rocksdb::RelaxedAtomic.2630070", %"class.rocksdb::RelaxedAtomic.2.2630068", [52 x i8] }>
+%"class.rocksdb::CacheShardBase.2630089" = type { i32 }
+%"class.rocksdb::clock_cache::FixedHyperClockTable.2630090" = type { %"class.rocksdb::clock_cache::BaseClockTable.base.2630091", i32, i64, i64, %"class.std::unique_ptr.2630092" }
+%"class.rocksdb::clock_cache::BaseClockTable.base.2630091" = type { %"class.rocksdb::RelaxedAtomic.2630070", %"class.rocksdb::RelaxedAtomic.2630070", %"class.rocksdb::RelaxedAtomic.2630070", [40 x i8], %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069", [40 x i8], i32, ptr, ptr, ptr }
+%"class.rocksdb::AcqRelAtomic.2630069" = type { %"class.rocksdb::RelaxedAtomic.2630070" }
+%"class.std::unique_ptr.2630092" = type { %"struct.std::__uniq_ptr_data.2630093" }
+%"struct.std::__uniq_ptr_data.2630093" = type { %"class.std::__uniq_ptr_impl.2630094" }
+%"class.std::__uniq_ptr_impl.2630094" = type { %"class.std::tuple.2630095" }
+%"class.std::tuple.2630095" = type { %"struct.std::_Tuple_impl.2630096" }
+%"struct.std::_Tuple_impl.2630096" = type { %"struct.std::_Head_base.1.2630097" }
+%"struct.std::_Head_base.1.2630097" = type { ptr }
+%"class.rocksdb::RelaxedAtomic.2630070" = type { %"struct.std::atomic.2630071" }
+%"struct.std::atomic.2630071" = type { %"struct.std::__atomic_base.2630072" }
+%"struct.std::__atomic_base.2630072" = type { i64 }
+%"class.rocksdb::RelaxedAtomic.2.2630068" = type { %"struct.std::atomic.3.2630073" }
+%"struct.std::atomic.3.2630073" = type { %"struct.std::__atomic_base.4.2630074" }
+%"struct.std::__atomic_base.4.2630074" = type { i32 }
+%struct.code.2876641 = type { i8, i8, i16 }
+%struct.io_fixed_file.3532785 = type { i64 }
 
 ; 10 occurrences:
 ; cpython/optimized/xmlparse.ll
@@ -49,16 +49,15 @@
 define ptr @func0000000000000004(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.rb_id_item.2485427, ptr %0, i64 %5
+  %6 = getelementptr %struct.rb_id_item.2600909, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 251 occurrences:
+; 249 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -104,7 +103,6 @@ entry:
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
-; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll
@@ -308,12 +306,12 @@ entry:
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"class.rocksdb::lru_cache::LRUCacheShard.2497604", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.rocksdb::lru_cache::LRUCacheShard.2612862", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -328,12 +326,12 @@ entry:
 ; z3/optimized/lar_solver.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"class.rocksdb::clock_cache::ClockCacheShard.2514979", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.rocksdb::clock_cache::ClockCacheShard.2630088", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -354,12 +352,12 @@ entry:
 ; zlib/optimized/inflate.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %struct.code.2764381, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.code.2876641, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -369,7 +367,7 @@ entry:
 define ptr @func0000000000000014(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i32, ptr %0, i64 %5
   ret ptr %6
@@ -381,20 +379,19 @@ entry:
 ; hyperscan/optimized/stream.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; linux/optimized/cancel.ll
 ; linux/optimized/dm-region-hash.ll
 ; linux/optimized/filetable.ll
-; linux/optimized/hda_hwdep.ll
 ; linux/optimized/hiddev.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/msg_ring.ll
@@ -407,9 +404,9 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.io_fixed_file.3343932, ptr %0, i64 %5
+  %6 = getelementptr %struct.io_fixed_file.3532785, ptr %0, i64 %5
   ret ptr %6
 }
 

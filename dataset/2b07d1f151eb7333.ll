@@ -5,7 +5,7 @@
 ; openjdk/optimized/ostream.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(ptr %0, i64 %1) #0 {
+define i1 @func000000000000002a(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ne ptr %0, null
   %3 = and i64 %1, 2147483648

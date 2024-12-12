@@ -311,12 +311,12 @@
 ; wireshark/optimized/packet-erf.c.ll
 ; wireshark/optimized/pcap-common.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 10
   %3 = and i64 %0, 4294967294
   %4 = add nuw nsw i64 %3, %2
-  %5 = icmp ugt i64 %4, 2147483647
+  %5 = icmp samesign ugt i64 %4, 2147483647
   ret i1 %5
 }
 
@@ -634,12 +634,12 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 10
   %3 = and i64 %0, 4294967294
   %4 = add nuw nsw i64 %3, %2
-  %5 = icmp ult i64 %4, 2147483648
+  %5 = icmp samesign ult i64 %4, 2147483648
   ret i1 %5
 }
 
@@ -649,7 +649,7 @@ entry:
 ; opencc/optimized/Config.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001ec(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 10
   %3 = and i64 %0, 4294967295
@@ -661,7 +661,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 10
   %3 = and i64 %0, 4294967294

@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; assimp/optimized/ScenePreprocessor.cpp.ll
 ; opencv/optimized/net_quantization.cpp.ll
 ; openusd/optimized/evalUtils.cpp.ll
@@ -7,6 +7,7 @@
 ; quantlib/optimized/localvolrndcalculator.ll
 ; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; ruby/optimized/numeric.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(double %0, double %1) #0 {
 entry:

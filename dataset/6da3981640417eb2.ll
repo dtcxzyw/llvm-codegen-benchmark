@@ -4,7 +4,7 @@
 ; abc/optimized/satSolver3.c.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000998(i32 %0, i64 %1) #0 {
+define i1 @func0000000000002318(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -29,7 +29,7 @@ entry:
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000318(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/muParserBase.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000008d8(i32 %0, i64 %1) #0 {
+define i1 @func0000000000002198(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 68719476736
   %3 = icmp ne i64 %2, 0
@@ -64,12 +64,13 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/program.cc.ll
 ; opencv/optimized/ar_hmdb_benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000822(i32 %0, i64 %1) #0 {
+define i1 @func0000000000002042(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -82,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000008cc(i32 %0, i64 %1) #0 {
+define i1 @func000000000000218c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32

@@ -1,12 +1,11 @@
 
-; 125 occurrences:
+; 126 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; actix-rs/optimized/4oxclimtnmaa5ft9.ll
 ; actix-rs/optimized/fpsycltpd003ini.ll
 ; brotli/optimized/block_splitter.c.ll
 ; clamav/optimized/others.c.ll
 ; clamav/optimized/regex_suffix.c.ll
-; cmake/optimized/nghttp2_option.c.ll
 ; curl/optimized/libcurl_la-rtsp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
@@ -45,6 +44,7 @@
 ; icu/optimized/ucnv_u8.ll
 ; icu/optimized/ucnvmbcs.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
+; image-rs/optimized/30755d6iao7ojcvl.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/fs_context.ll
 ; linux/optimized/mlme.ll
@@ -87,7 +87,6 @@
 ; php/optimized/ir_emit.ll
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_jit_compile.ll
-; php/optimized/pcre2_maketables.ll
 ; php/optimized/pcre2_study.ll
 ; postgres/optimized/varlena.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
@@ -125,6 +124,8 @@
 ; wasmtime-rs/optimized/456j0x8j3xyjpk7h.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0) #0 {
 entry:
@@ -132,7 +133,7 @@ entry:
   ret i8 %1
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; clamav/optimized/disasm.c.ll
 ; darktable/optimized/introspection_dither.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
@@ -173,7 +174,6 @@ entry:
 ; minetest/optimized/log.cpp.ll
 ; php/optimized/ir_emit.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0) #0 {
@@ -212,10 +212,11 @@ entry:
   ret i8 %1
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; redis/optimized/hyperloglog.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {
 entry:

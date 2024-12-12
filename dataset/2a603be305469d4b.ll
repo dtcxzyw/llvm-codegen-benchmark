@@ -23,13 +23,17 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 11 occurrences:
+; boost/optimized/static_string.ll
 ; graphviz/optimized/gvusershape.c.ll
 ; gromacs/optimized/check.cpp.ll
 ; gromacs/optimized/hbond.cpp.ll
+; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; llvm/optimized/ObjCMT.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; postgres/optimized/cash.ll
+; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {

@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 86 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; arrow/optimized/util_avx2.cc.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -26,8 +26,6 @@
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_gem_object.ll
 ; linux/optimized/intel_bw.ll
-; linux/optimized/isadma.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/phy_device.ll
@@ -47,7 +45,6 @@
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -72,7 +69,6 @@
 ; qemu/optimized/hw_net_ne2000.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll
-; spike/optimized/clz16.ll
 ; spike/optimized/smul8.ll
 ; spike/optimized/smulx8.ll
 ; spike/optimized/sunpkd810.ll
@@ -118,11 +114,10 @@ entry:
   ret i16 %2
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; git/optimized/merge-ort.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_sprite.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; opencv/optimized/color_lab.cpp.ll
@@ -135,10 +130,11 @@ entry:
   ret i16 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
+; spike/optimized/clz16.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i64 %0) #0 {
 entry:

@@ -10,7 +10,7 @@ entry:
   %3 = icmp eq i32 %2, 4
   %4 = zext i1 %3 to i32
   %5 = shl nuw i32 %4, %1
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

@@ -12,11 +12,12 @@ entry:
   %3 = sub i64 %1, %2
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/approximately_equals.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/postaloc.ll
 ; velox/optimized/Filter.cpp.ll
@@ -27,7 +28,7 @@ entry:
   %3 = sub nsw i64 %1, %2
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 

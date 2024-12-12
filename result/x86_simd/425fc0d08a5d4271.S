@@ -15,7 +15,7 @@
 	.short	24                              # 0x18
 	.short	24                              # 0x18
 	.short	24                              # 0x18
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vptestnmw	.LCPI0_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -122,7 +122,7 @@ func000000000000000c:                   # @func000000000000000c
 .LCPI3_2:
 	.short	1792                            # 0x700
 	.short	1792                            # 0x700
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpandd	.LCPI3_2(%rip){1to8}, %ymm0, %ymm0
 	vpcmpgtw	.LCPI3_1(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0

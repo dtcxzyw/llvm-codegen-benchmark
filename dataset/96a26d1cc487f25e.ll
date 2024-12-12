@@ -44,7 +44,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 15
   %4 = add nuw nsw i32 %3, 32768
   %5 = and i32 %4, 16711680
-  %6 = or i32 %5, %1
+  %6 = or i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -58,7 +58,7 @@ entry:
   %3 = shl i32 %2, 25
   %4 = add i32 %3, 33554432
   %5 = and i32 %4, 234881024
-  %6 = or i32 %5, %1
+  %6 = or i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -71,7 +71,7 @@ entry:
   %3 = shl nuw i32 %2, 5
   %4 = add i32 %3, 8160
   %5 = and i32 %4, 8160
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }

@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; linux/optimized/fan_core.ll
 ; linux/optimized/intel_dp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_avx.cpp.ll

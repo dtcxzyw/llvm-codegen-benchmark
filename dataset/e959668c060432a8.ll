@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/bmcCexMin2.c.ll
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cecSolveG.c.ll
@@ -8,6 +8,7 @@
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; ruby/optimized/hash.ll
 ; ruby/optimized/string.ll

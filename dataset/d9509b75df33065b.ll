@@ -39,7 +39,7 @@
 ; ruby/optimized/prism.ll
 ; wireshark/optimized/tvbuff_zlib.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = select i1 %3, i1 %0, i1 false
@@ -48,14 +48,13 @@ entry:
   ret i1 %6
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; c3c/optimized/semantic_analyser.c.ll
 ; git/optimized/credential-store.ll
 ; git/optimized/submodule--helper.ll
 ; gromacs/optimized/fft5d.cpp.ll
 ; hwloc/optimized/topology-xml.ll
 ; linux/optimized/ibss.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/trace_eprobe.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; openjdk/optimized/splashscreen_sys.ll
@@ -69,7 +68,7 @@ entry:
 ; wireshark/optimized/packet-mbim.c.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -91,7 +90,7 @@ entry:
 ; slurm/optimized/fed_mgr.ll
 ; wireshark/optimized/packet-snmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -114,7 +113,7 @@ entry:
 ; llvm/optimized/SemaType.cpp.ll
 ; php/optimized/zend_object_handlers.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -127,7 +126,7 @@ entry:
 ; abc/optimized/mainReal.c.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000008c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = select i1 %3, i1 %0, i1 false
@@ -136,7 +135,7 @@ entry:
   ret i1 %6
 }
 
-; 64 occurrences:
+; 61 occurrences:
 ; raylib/optimized/rmodels.c.ll
 ; slurm/optimized/srun.ll
 ; wireshark/optimized/about_dialog.cpp.ll
@@ -154,12 +153,10 @@ entry:
 ; wireshark/optimized/decode_as_model.cpp.ll
 ; wireshark/optimized/display_filter_edit.cpp.ll
 ; wireshark/optimized/dissector_tables_model.cpp.ll
-; wireshark/optimized/dissector_tables_view.cpp.ll
 ; wireshark/optimized/enabled_protocols_model.cpp.ll
 ; wireshark/optimized/expert_info_dialog.cpp.ll
 ; wireshark/optimized/expert_info_model.cpp.ll
 ; wireshark/optimized/expert_info_proxy_model.cpp.ll
-; wireshark/optimized/expert_info_view.cpp.ll
 ; wireshark/optimized/export_object_dialog.cpp.ll
 ; wireshark/optimized/export_objects_model.cpp.ll
 ; wireshark/optimized/extcap_argument_multiselect.cpp.ll
@@ -188,7 +185,6 @@ entry:
 ; wireshark/optimized/proto_tree_model.cpp.ll
 ; wireshark/optimized/rsa_keys_frame.cpp.ll
 ; wireshark/optimized/supported_protocols_model.cpp.ll
-; wireshark/optimized/tabnav_tree_view.cpp.ll
 ; wireshark/optimized/tabnav_tree_widget.cpp.ll
 ; wireshark/optimized/timeline_delegate.cpp.ll
 ; wireshark/optimized/traffic_tab.cpp.ll
@@ -202,7 +198,7 @@ entry:
 ; wireshark/optimized/voip_calls_info_model.cpp.ll
 ; wireshark/optimized/wireshark_main_window_slots.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000014c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 1
   %4 = select i1 %3, i1 %0, i1 false

@@ -11,10 +11,3 @@ func0000000000000070:                   // @func0000000000000070
 	madd	x0, x1, x8, x9
 	ret
                                         // -- End function
-func000000000000007a:                   // @func000000000000007a
-// %bb.0:                               // %entry
-	add	x8, x0, x2, asr #32
-	add	x9, x1, x1, lsl #1
-	add	x0, x8, x9
-	ret
-                                        // -- End function

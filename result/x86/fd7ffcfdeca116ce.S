@@ -1,6 +1,6 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	andq	$-2, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%cl
 	cmpq	%rsi, %rdi
 	sete	%al

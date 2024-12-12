@@ -8,9 +8,9 @@
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000284(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000d04(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = icmp ult ptr %3, %0
   ret i1 %4
 }
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/print.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000104(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = icmp ult ptr %3, %0

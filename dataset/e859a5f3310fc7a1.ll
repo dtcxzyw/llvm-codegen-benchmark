@@ -1,5 +1,5 @@
 
-; 147 occurrences:
+; 146 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/bbrReach.c.ll
 ; abc/optimized/bmcBmc3.c.ll
@@ -52,7 +52,6 @@
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
-; eastl/optimized/TestChrono.cpp.ll
 ; folly/optimized/BridgeFromGoogleLogging.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; freetype/optimized/type42.c.ll
@@ -155,7 +154,7 @@ entry:
   ret i64 %3
 }
 
-; 458 occurrences:
+; 457 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -188,6 +187,9 @@ entry:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/options_description.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function.cpp.ll
@@ -373,13 +375,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -466,8 +465,6 @@ entry:
 ; php/optimized/interval.ll
 ; php/optimized/unixtime2tm.ll
 ; postgres/optimized/numeric.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proxygen/optimized/PersistentQuicPskCache.cpp.ll
 ; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
@@ -538,7 +535,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -584,6 +580,8 @@ entry:
 ; velox/optimized/Sequence.cpp.ll
 ; velox/optimized/SimpleFunctionRegistry.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
+; verilator/optimized/V3EmitCImp.cpp.ll
+; verilator/optimized/V3ThreadPool.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll

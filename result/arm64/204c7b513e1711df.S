@@ -6,8 +6,8 @@ func0000000000000036:                   // @func0000000000000036
 	madd	x8, x3, x4, x8
 	extr	x9, x8, x9, #16
 	lsr	x8, x8, #16
-	adds	x9, x9, x0
-	adc	x8, x8, x1
+	adds	x9, x0, x9
+	adc	x8, x1, x8
 	extr	x0, x8, x9, #16
 	lsr	x1, x8, #16
 	ret
@@ -20,8 +20,8 @@ func0000000000000020:                   // @func0000000000000020
 	madd	x8, x3, x4, x8
 	extr	x9, x8, x9, #16
 	lsr	x8, x8, #16
-	adds	x9, x9, x0
-	adc	x8, x8, x1
+	adds	x9, x0, x9
+	adc	x8, x1, x8
 	extr	x0, x8, x9, #16
 	lsr	x1, x8, #16
 	ret

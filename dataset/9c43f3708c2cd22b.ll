@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 96 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
@@ -21,6 +21,8 @@
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/jidctflt.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/decorate_background.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll

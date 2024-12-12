@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; box2d/optimized/b2_world.cpp.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_borders.c.ll
@@ -47,6 +47,7 @@
 ; raylib/optimized/rtextures.c.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; xgboost/optimized/elementwise_metric.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

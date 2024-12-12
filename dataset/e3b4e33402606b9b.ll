@@ -48,17 +48,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/intel_dkl_phy.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 3
-  %3 = and i32 %0, 15
-  %4 = shl nuw nsw i32 %3, %2
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {

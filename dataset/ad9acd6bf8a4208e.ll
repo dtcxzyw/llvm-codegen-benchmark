@@ -1,5 +1,6 @@
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/area.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_colorcorrection.c.ll
@@ -66,11 +67,12 @@ entry:
 define i1 @func0000000000000008(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/dtoa.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
@@ -83,7 +85,7 @@ entry:
 define i1 @func0000000000000007(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 
@@ -95,6 +97,17 @@ entry:
   %2 = sitofp i32 %1 to double
   %3 = fsub double %0, %2
   %4 = fcmp ult double %3, 5.000000e-01
+  ret i1 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_sprintf_builtin.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000d(double %0, i32 %1) #0 {
+entry:
+  %2 = sitofp i32 %1 to double
+  %3 = fsub double %0, %2
+  %4 = fcmp uge double %3, 5.000000e-01
   ret i1 %4
 }
 

@@ -1,11 +1,12 @@
 
-; 168 occurrences:
+; 167 occurrences:
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/ioReadPlaMo.c.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/mpdecimal.ll
@@ -24,9 +25,6 @@
 ; lief/optimized/bignum.c.ll
 ; linux/optimized/fault.ll
 ; linux/optimized/gup.ll
-; linux/optimized/head64.ll
-; linux/optimized/hibernate.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/idr.ll
 ; linux/optimized/init_64.ll
@@ -34,7 +32,6 @@
 ; linux/optimized/mprotect.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/pti.ll
@@ -49,10 +46,12 @@
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/CoreEngine.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll

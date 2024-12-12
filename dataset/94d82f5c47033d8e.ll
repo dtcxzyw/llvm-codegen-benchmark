@@ -1,5 +1,5 @@
 
-; 210 occurrences:
+; 217 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
@@ -8,6 +8,14 @@
 ; arrow/optimized/key_value_metadata.cc.ll
 ; arrow/optimized/registry.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/test_system.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; cmake/optimized/cmAuxSourceDirectoryCommand.cxx.ll
@@ -142,7 +150,6 @@
 ; openusd/optimized/sdffilter.cpp.ll
 ; openusd/optimized/textFileFormat.tab.cpp.ll
 ; openusd/optimized/textParserHelpers.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/helpers.cc.ll
 ; protobuf/optimized/message_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
@@ -242,7 +249,7 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; cpython/optimized/listobject.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/i915_vma.ll
@@ -252,6 +259,7 @@ entry:
 ; php/optimized/pcre2_compile.ll
 ; redis/optimized/rax.ll
 ; z3/optimized/dl_mk_interp_tail_simplifier.cpp.ll
+; zed-rs/optimized/5gzhlrfve63v3ndyg8t40tttn.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -268,7 +276,7 @@ entry:
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 573372
   %4 = icmp sgt i32 %1, -719469
@@ -276,10 +284,37 @@ entry:
   ret i64 %5
 }
 
+; 6 occurrences:
+; cmake/optimized/archive_acl.c.ll
+; cpython/optimized/unicodeobject.ll
+; lightgbm/optimized/bin.cpp.ll
+; lightgbm/optimized/dataset.cpp.ll
+; lightgbm/optimized/dataset_loader.cpp.ll
+; lightgbm/optimized/metadata.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, 8
+  %4 = icmp eq i32 %1, 0
+  %5 = select i1 %4, i64 %0, i64 %3
+  ret i64 %5
+}
+
+; 1 occurrences:
+; lightgbm/optimized/dataset.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000041(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %2, 8
+  %4 = icmp eq i32 %1, 0
+  %5 = select i1 %4, i64 %0, i64 %3
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; luau/optimized/Linter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000044(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ult i32 %1, 10
@@ -292,10 +327,10 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000018(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
-  %4 = icmp ugt i32 %1, 999
+  %4 = icmp samesign ugt i32 %1, 999
   %5 = select i1 %4, i64 %0, i64 %3
   ret i64 %5
 }
@@ -303,10 +338,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/compaction.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000014(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = icmp ult i32 %1, 11
+  %4 = icmp samesign ult i32 %1, 11
   %5 = select i1 %4, i64 %0, i64 %3, !prof !0
   ret i64 %5
 }
@@ -314,7 +349,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/snapmgr.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func000000000000006a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 120
   %4 = icmp sgt i32 %1, 0
@@ -326,7 +361,7 @@ entry:
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp ult i32 %1, 16777216
@@ -339,7 +374,7 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = icmp slt i32 %1, 0
@@ -347,22 +382,10 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; cmake/optimized/archive_acl.c.ll
-; cpython/optimized/unicodeobject.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %2, 2
-  %4 = icmp eq i32 %1, 15360
-  %5 = select i1 %4, i64 %0, i64 %3
-  ret i64 %5
-}
-
 ; 1 occurrences:
 ; cpython/optimized/_bisectmodule.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i32 %1, 0

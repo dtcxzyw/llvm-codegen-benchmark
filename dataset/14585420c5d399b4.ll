@@ -9,7 +9,7 @@
 ; postgres/optimized/heaptuple.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp eq i16 %2, 0
@@ -21,10 +21,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-e164.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000301(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 14
-  %3 = icmp ugt i16 %2, 9
+  %3 = icmp samesign ugt i16 %2, 9
   %4 = icmp eq i32 %0, 0
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5

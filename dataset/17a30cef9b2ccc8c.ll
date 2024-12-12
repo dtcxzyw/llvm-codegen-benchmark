@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -12,6 +12,7 @@
 ; libwebp/optimized/extras.c.ll
 ; lightgbm/optimized/gbdt.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
+; lvgl/optimized/lv_led.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -27,7 +28,7 @@
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = sdiv i32 %3, 255
   ret i32 %4
 }
@@ -50,7 +51,7 @@ entry:
 define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 3
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = sdiv i32 %3, 2
   ret i32 %4
 }
@@ -75,7 +76,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = sdiv i32 %3, 2
   ret i32 %4
 }

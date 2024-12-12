@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; spike/optimized/socketif.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; wireshark/optimized/androiddump.c.ll
-; wireshark/optimized/file-btsnoop.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i64 %0) #0 {
 entry:

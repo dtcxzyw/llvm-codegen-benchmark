@@ -1,7 +1,9 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll

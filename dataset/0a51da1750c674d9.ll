@@ -1,17 +1,15 @@
 
-; 23 occurrences:
+; 21 occurrences:
 ; abc/optimized/compress.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; flac/optimized/stream_encoder.c.ll
-; gromacs/optimized/eigensolver.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; ninja/optimized/deps_log.cc.ll
-; oiio/optimized/argparse.cpp.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; openssl/optimized/libcrypto-lib-dso_dlfcn.ll
 ; openssl/optimized/libcrypto-shlib-dso_dlfcn.ll
@@ -26,10 +24,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = select i1 %0, i32 %1, i32 %3
-  %5 = add nsw i32 %4, 1
-  ret i32 %5
+  %3 = add nsw i32 %1, 1
+  %4 = select i1 %0, i32 %3, i32 %2
+  ret i32 %4
 }
 
 ; 5 occurrences:
@@ -41,24 +38,21 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = select i1 %0, i32 %1, i32 %3
-  %5 = add nuw nsw i32 %4, 1
-  ret i32 %5
+  %3 = add nuw nsw i32 %1, 1
+  %4 = select i1 %0, i32 %3, i32 %2
+  ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/compress.c.ll
 ; gromacs/optimized/gmx_densorder.cpp.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
-; postgres/optimized/float.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = select i1 %0, i32 %1, i32 %3
-  %5 = add i32 %4, 1
-  ret i32 %5
+  %3 = add i32 %1, 1
+  %4 = select i1 %0, i32 %3, i32 %2
+  ret i32 %4
 }
 
 ; 22 occurrences:
@@ -106,10 +100,9 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_stripifier.cc.ll
-; postgres/optimized/fsmpage.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -126,10 +119,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = select i1 %0, i32 %1, i32 %3
-  %5 = add nuw i32 %4, 1
-  ret i32 %5
+  %3 = add nuw i32 %1, 1
+  %4 = select i1 %0, i32 %3, i32 %2
+  ret i32 %4
 }
 
 ; 5 occurrences:
@@ -153,10 +145,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = select i1 %0, i32 %1, i32 %3
-  %5 = add nuw i32 %4, 1
-  ret i32 %5
+  %3 = add nuw i32 %1, 1
+  %4 = select i1 %0, i32 %3, i32 %2
+  ret i32 %4
 }
 
 ; 2 occurrences:

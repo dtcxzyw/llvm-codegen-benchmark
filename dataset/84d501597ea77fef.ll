@@ -1,5 +1,6 @@
 
-; 66 occurrences:
+; 68 occurrences:
+; boost/optimized/sort_by_side.ll
 ; brotli/optimized/encode.c.ll
 ; icu/optimized/collationkeys.ll
 ; llvm/optimized/AArch64.cpp.ll
@@ -56,6 +57,7 @@
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86WinFixupBufferSecurityCheck.cpp.ll
 ; llvm/optimized/XCore.cpp.ll
+; lvgl/optimized/lv_anim.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
 ; openjdk/optimized/classFileParser.ll
@@ -67,10 +69,10 @@
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_opt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp eq i32 %0, 382
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -81,10 +83,10 @@ entry:
 ; openssl/optimized/libcrypto-shlib-cms_smime.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000030a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp sgt i32 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -93,11 +95,24 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/net_l2tpv3.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000028c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp ne i32 %0, 0
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 2 occurrences:
+; clamav/optimized/cabd.c.ll
+; opencv/optimized/ts_arrtest.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004a(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = or i1 %3, %1
+  %5 = icmp sgt i32 %0, 38912
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
@@ -145,10 +160,10 @@ entry:
 ; llvm/optimized/X86WinFixupBufferSecurityCheck.cpp.ll
 ; llvm/optimized/XCore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp eq i32 %0, 14
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -161,7 +176,7 @@ entry:
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; wireshark/optimized/packet-ipsec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000301(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = or i1 %3, %1
@@ -175,7 +190,7 @@ entry:
 ; llvm/optimized/Reassociate.cpp.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000030c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = or i1 %3, %1
@@ -187,10 +202,10 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/forcerec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000286(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp slt i32 %0, 2
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -200,7 +215,7 @@ entry:
 ; linux/optimized/blk-mq.ll
 ; nori/optimized/colorwheel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = or i1 %3, %1
@@ -212,10 +227,10 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000186(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000306(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp slt i32 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -224,23 +239,11 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/number_patternstring.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = or i1 %3, %1
   %5 = icmp eq i32 %0, 0
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/ts_arrtest.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 0
-  %4 = or i1 %3, %1
-  %5 = icmp sgt i32 %0, -1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }

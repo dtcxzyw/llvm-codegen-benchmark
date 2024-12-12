@@ -3,7 +3,7 @@
 ; linux/optimized/libahci.ll
 ; linux/optimized/libata-sata.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000028(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ugt i32 %2, 32
@@ -16,7 +16,7 @@ entry:
 ; cmake/optimized/cmUVJobServerClient.cxx.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 0

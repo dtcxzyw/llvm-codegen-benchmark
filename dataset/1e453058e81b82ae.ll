@@ -1,22 +1,10 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/x86func.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ult i8 %2, 81
-  %4 = select i1 %3, i32 201326592, i32 %1
-  %5 = or disjoint i32 %4, %0
-  ret i32 %5
-}
-
 ; 14 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; linux/optimized/devio.ll
-; linux/optimized/mii.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; minetest/optimized/map.cpp.ll
 ; openjdk/optimized/jvmciCodeInstaller.ll
@@ -25,6 +13,7 @@ entry:
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; tls-rs/optimized/4vvnrvl2eceao62c.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i8 %2) #0 {
 entry:
@@ -34,7 +23,7 @@ entry:
   ret i32 %5
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; cpython/optimized/fileio.ll
 ; grpc/optimized/compression_internal.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -49,7 +38,6 @@ entry:
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_MidiIn.ll
 ; openjdk/optimized/X11TextRenderer_md.ll
 ; openjdk/optimized/hb-common.ll
@@ -62,7 +50,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

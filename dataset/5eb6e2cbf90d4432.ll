@@ -15,7 +15,7 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cecSolveG.c.ll
 ; linux/optimized/ds.ll
@@ -24,6 +24,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_h368ace38__0.ll
 ; spike/optimized/csrs.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -47,8 +48,9 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002b(i64 %0, i64 %1, i32 %2) #0 {
 entry:

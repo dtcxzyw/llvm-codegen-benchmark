@@ -26,7 +26,7 @@ func0000000000000005:                   # @func0000000000000005
 	fmul.d	fa0, fa0, fa5
 	ret
 .LCPI2_0:
-	.quad	0x4024000000000000              # double 10
+	.quad	0x3fe0000000000000              # double 0.5
 func000000000000000c:                   # @func000000000000000c
 	fmv.d.x	fa5, zero
 	fle.d	a0, fa5, fa0

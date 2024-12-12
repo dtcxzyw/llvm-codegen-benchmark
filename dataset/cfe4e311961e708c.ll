@@ -48,7 +48,8 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/intel_vdsc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i16 %1) #0 {

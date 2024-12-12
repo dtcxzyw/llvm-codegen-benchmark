@@ -1,5 +1,5 @@
 
-; 308 occurrences:
+; 311 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/bacBlast.c.ll
 ; assimp/optimized/BlenderCustomData.cpp.ll
@@ -12,10 +12,8 @@
 ; assimp/optimized/zip.c.ll
 ; casadi/optimized/cs_add.c.ll
 ; casadi/optimized/cs_chol.c.ll
-; casadi/optimized/cs_cholsol.c.ll
 ; casadi/optimized/cs_counts.c.ll
 ; casadi/optimized/cs_lu.c.ll
-; casadi/optimized/cs_lusol.c.ll
 ; casadi/optimized/cs_qr.c.ll
 ; casadi/optimized/cs_qrsol.c.ll
 ; casadi/optimized/cs_scc.c.ll
@@ -41,6 +39,7 @@
 ; icu/optimized/smpdtfmt.ll
 ; icu/optimized/uprntf_p.ll
 ; libevent/optimized/buffer.c.ll
+; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libquic/optimized/bn_test.cc.ll
 ; libquic/optimized/ec_test.cc.ll
@@ -52,7 +51,6 @@
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/pmsr.ll
-; linux/optimized/seq_info.ll
 ; linux/optimized/virtio_blk.ll
 ; linux/optimized/virtio_console.ll
 ; linux/optimized/virtio_scsi.ll
@@ -68,6 +66,12 @@
 ; llvm/optimized/TypeRecordMapping.cpp.ll
 ; llvm/optimized/UnreachableCodeChecker.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
@@ -114,6 +118,7 @@
 ; openjdk/optimized/fontpath.ll
 ; openjdk/optimized/imageioJPEG.ll
 ; openjdk/optimized/os_linux.ll
+; openjdk/optimized/pngread.ll
 ; openjdk/optimized/pngrtran.ll
 ; openjdk/optimized/vtableStubs.ll
 ; openssl/optimized/libcrypto-lib-keymgmt_meth.ll
@@ -138,6 +143,7 @@
 ; osqp/optimized/polish.c.ll
 ; ozz-animation/optimized/ik_two_bone_job.cc.ll
 ; php/optimized/node.ll
+; php/optimized/output.ll
 ; php/optimized/spl_array.ll
 ; php/optimized/spl_dllist.ll
 ; php/optimized/zend_jit.ll
@@ -161,8 +167,6 @@
 ; postgres/optimized/tlist.ll
 ; postgres/optimized/tupdesc.ll
 ; proj/optimized/c_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; qemu/optimized/hw_char_riscv_htif.c.ll
@@ -200,7 +204,6 @@
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-imf.c.ll
 ; wireshark/optimized/packet-ldap.c.ll
-; wireshark/optimized/packet-lin.c.ll
 ; wireshark/optimized/packet-ndmp.c.ll
 ; wireshark/optimized/packet-rrc.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
@@ -317,7 +320,8 @@ entry:
   ret i1 %5
 }
 
-; 102 occurrences:
+; 103 occurrences:
+; boost/optimized/context.ll
 ; casadi/optimized/external.cpp.ll
 ; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/urlapi.c.ll
@@ -351,13 +355,14 @@ entry:
 ; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
 ; llvm/optimized/PPCaching.cpp.ll
 ; llvm/optimized/PPLexerChange.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SemaCUDA.cpp.ll
 ; llvm/optimized/StatepointLowering.cpp.ll
 ; llvm/optimized/UnwrappedLineFormatter.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
 ; ockam-rs/optimized/59na08zlxqp9p17s.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
@@ -396,7 +401,6 @@ entry:
 ; php/optimized/phpdbg.ll
 ; postgres/optimized/pg_dump.ll
 ; postgres/optimized/reindexdb.ll
-; proj/optimized/crs.cpp.ll
 ; qemu/optimized/migration_vmstate.c.ll
 ; qemu/optimized/net_tap.c.ll
 ; qemu/optimized/util_aio-posix.c.ll

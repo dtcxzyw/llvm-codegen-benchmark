@@ -1,4 +1,4 @@
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	shll	$6, %edx
 	addl	%esi, %edi
 	addl	%edx, %edi
@@ -6,13 +6,7 @@ func0000000000000101:                   # @func0000000000000101
 	cmpl	$16384, %edi                    # imm = 0x4000
 	sete	%al
 	retq
-func00000000000003f1:                   # @func00000000000003f1
-	shll	$16, %edx
-	addl	%edx, %esi
-	addl	%esi, %edi
-	setns	%al
-	retq
-func0000000000000148:                   # @func0000000000000148
+func0000000000000288:                   # @func0000000000000288
 	leaq	(%rsi,%rdx,8), %rax
 	addq	%rdi, %rax
 	movabsq	$-9223372036854775808, %rcx     # imm = 0x8000000000000000
@@ -21,13 +15,13 @@ func0000000000000148:                   # @func0000000000000148
 	cmpq	%rcx, %rdx
 	seta	%al
 	retq
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	shll	$6, %edx
 	addl	%edx, %esi
 	addl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000118:                   # @func0000000000000118
+func0000000000000228:                   # @func0000000000000228
 	leaq	(%rsi,%rdx,8), %rax
 	addq	%rdi, %rax
 	movabsq	$-9223372036854775808, %rcx     # imm = 0x8000000000000000

@@ -6,10 +6,10 @@
 ; luajit/optimized/lj_cdata_dyn.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 504
-  %3 = icmp ugt i32 %2, 448
+  %3 = icmp samesign ugt i32 %2, 448
   %4 = select i1 %3, i32 %0, i32 8
   ret i32 %4
 }

@@ -1,18 +1,11 @@
 
-; 27 occurrences:
+; 19 occurrences:
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; git/optimized/rev-parse.ll
 ; graphviz/optimized/exeval.c.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
-; linux/optimized/trace_probe.ll
-; llvm/optimized/ControlHeightReduction.cpp.ll
-; llvm/optimized/CoroFrame.cpp.ll
-; llvm/optimized/EarlyCSE.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
-; llvm/optimized/LICM.cpp.ll
-; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/X86RecognizableInstr.cpp.ll
 ; openjdk/optimized/elfFile.ll
@@ -25,7 +18,6 @@
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/encoding.ll
-; ruby/optimized/regexec.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i8 %0, i1 %1, i1 %2) #0 {
@@ -36,8 +28,7 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; openjdk/optimized/utf8.ll
+; 3 occurrences:
 ; openssl/optimized/libssl-lib-quic_record_shared.ll
 ; openssl/optimized/libssl-shlib-quic_record_shared.ll
 ; wolfssl/optimized/coding.c.ll
@@ -66,18 +57,17 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; coreutils-rs/optimized/1487bf2zeluccyme.ll
+; 5 occurrences:
 ; graphviz/optimized/write.c.ll
+; linux/optimized/nf_conntrack_proto_icmpv6.ll
+; llvm/optimized/CodeMoverUtils.cpp.ll
 ; luau/optimized/isocline.c.ll
-; openjdk/optimized/dwarf.ll
-; wireshark/optimized/packet-rtmpt.c.ll
 ; wolfssl/optimized/coding.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000008(i8 %0, i1 %1, i1 %2) #0 {
 entry:
-  %3 = icmp ult i8 %2, 64
-  %4 = select i1 %0, i1 true, i1 %1
+  %3 = select i1 %1, i1 true, i1 %2
+  %4 = icmp ult i8 %0, 10
   %5 = or i1 %4, %3
   ret i1 %5
 }

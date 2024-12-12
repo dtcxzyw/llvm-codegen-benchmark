@@ -20,10 +20,9 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/message.cc.ll
 ; oiio/optimized/Writer.cpp.ll
-; openmpi/optimized/vprotocol_pessimist_sender_based.ll
 ; postgres/optimized/syslogger.ll
 ; qemu/optimized/block_io.c.ll
 ; slurm/optimized/backfill.ll

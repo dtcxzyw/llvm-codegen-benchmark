@@ -20,7 +20,7 @@
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000128(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 72

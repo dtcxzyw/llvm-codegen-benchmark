@@ -1,5 +1,5 @@
 
-; 146 occurrences:
+; 162 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/BVHLoader.cpp.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
@@ -42,6 +42,7 @@
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; darktable/optimized/amaze.cc.ll
+; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_crop.c.ll
 ; darktable/optimized/print.c.ll
@@ -59,6 +60,8 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -121,6 +124,7 @@
 ; openusd/optimized/matrix3f.cpp.ll
 ; openusd/optimized/matrix4f.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
@@ -146,6 +150,18 @@
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; xgboost/optimized/elementwise_metric.cc.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
+; zed-rs/optimized/8mv6d566jv1jdve4gk2kn2bhk.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/a5zoltfqgma86dzb1rp0ilkm9.ll
+; zed-rs/optimized/ahd9e352ekh05680xrqpqafs1.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

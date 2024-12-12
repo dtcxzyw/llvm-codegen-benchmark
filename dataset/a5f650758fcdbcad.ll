@@ -16,7 +16,7 @@ entry:
   ret ptr %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; arrow/optimized/builder.cc.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; meshlab/optimized/io_collada.cpp.ll
@@ -27,7 +27,6 @@ entry:
 ; openjdk/optimized/frame_x86.ll
 ; openjdk/optimized/nmethod.ll
 ; openjdk/optimized/os_posix.ll
-; openusd/optimized/decodetxb.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i16 %2) #0 {
 entry:

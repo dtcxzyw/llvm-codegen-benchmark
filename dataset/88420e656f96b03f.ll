@@ -1,5 +1,5 @@
 
-; 125 occurrences:
+; 123 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/clock_test.cc.ll
@@ -24,7 +24,8 @@
 ; arrow/optimized/list_util.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
-; clamav/optimized/tar.c.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/multi.c.ll
 ; cpython/optimized/floatobject.ll
@@ -47,12 +48,10 @@
 ; openspiel/optimized/nine_mens_morris.cc.ll
 ; openspiel/optimized/pentago.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
-; openssl/optimized/libtestutil-lib-random.ll
 ; php/optimized/cdf.ll
 ; php/optimized/cdf_time.ll
 ; php/optimized/php_date.ll
 ; php/optimized/uniqid.ll
-; postgres/optimized/compat.ll
 ; postgres/optimized/interval.ll
 ; postgres/optimized/slru.ll
 ; postgres/optimized/xlog.ll
@@ -61,7 +60,6 @@
 ; pybind11/optimized/test_chrono.cpp.ll
 ; qemu/optimized/blockdev.c.ll
 ; qemu/optimized/chardev_char-mux.c.ll
-; qemu/optimized/net_dump.c.ll
 ; quantlib/optimized/argentina.ll
 ; quantlib/optimized/australia.ll
 ; quantlib/optimized/austria.ll

@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; rocksdb/optimized/clock_cache.cc.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = or i64 %2, %0
-  %4 = or i64 %3, 192
-  ret i64 %4
-}
-
 ; 2 occurrences:
 ; linux/optimized/badblocks.ll
 ; rocksdb/optimized/clock_cache.cc.ll
@@ -19,7 +6,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2305843008139952128
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or i64 %3, -2305843009213693952
   ret i64 %4
 }
@@ -46,6 +33,18 @@ entry:
   ret i64 %4
 }
 
+; 2 occurrences:
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 2048
+  %3 = or i64 %0, %2
+  %4 = or i64 %3, 274877906944
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
 ; Function Attrs: nounwind
@@ -63,7 +62,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4602678819172646912
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or disjoint i64 %3, -9223372036854775808
   ret i64 %4
 }

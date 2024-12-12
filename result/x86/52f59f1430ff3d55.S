@@ -1,7 +1,7 @@
-func0000000000000241:                   # @func0000000000000241
-	addq	$28, %rdx
+func0000000000000c81:                   # @func0000000000000c81
 	cmpl	$12, %esi
-	cmovaeq	%rdi, %rdx
-	testq	%rdx, %rdx
+	setae	%cl
+	testq	%rdi, %rdi
 	sete	%al
+	andb	%cl, %al
 	retq

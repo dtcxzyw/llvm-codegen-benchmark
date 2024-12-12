@@ -1,7 +1,8 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/kitDsd.c.ll
+; boost/optimized/alloc_lib.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
@@ -13,7 +14,7 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; yosys/optimized/maccmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %0, %2
@@ -41,7 +42,7 @@ entry:
 ; openmpi/optimized/coll_base_reduce.ll
 ; openmpi/optimized/nbc_ireduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = lshr i32 %0, %2

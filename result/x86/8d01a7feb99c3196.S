@@ -1,10 +1,10 @@
-func0000000000000884:                   # @func0000000000000884
+func0000000000002104:                   # @func0000000000002104
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	shrxq	%rdx, %rax, %rcx
 	testq	%rcx, %rcx
 	sete	%cl
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	andb	%cl, %al
 	retq

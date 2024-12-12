@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -11,9 +12,10 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -23,9 +25,11 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -41,7 +45,7 @@ entry:
 define i64 @func0000000000000032(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = sub nuw i64 %0, %4
   ret i64 %5
 }
@@ -52,7 +56,7 @@ entry:
 define i64 @func000000000000003b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = sub nuw nsw i64 %0, %4
   ret i64 %5
 }
@@ -169,6 +173,17 @@ entry:
   %3 = shl nsw i64 %2, 16
   %4 = mul nsw i64 %3, %1
   %5 = sub nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = mul nuw nsw i64 %3, %1
+  %5 = sub i64 %0, %4
   ret i64 %5
 }
 

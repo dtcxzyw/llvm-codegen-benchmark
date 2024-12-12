@@ -5,7 +5,7 @@ func0000000000000020:                   // @func0000000000000020
 	sub	x0, x8, x0
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
 	cmp	x1, x2
 	cinc	x8, x1, eq

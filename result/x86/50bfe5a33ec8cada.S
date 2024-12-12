@@ -1,4 +1,4 @@
-func0000000000000318:                   # @func0000000000000318
+func0000000000000618:                   # @func0000000000000618
 	testq	%rdx, %rdx
 	setne	%cl
 	orb	%dil, %cl

@@ -32,7 +32,7 @@ func0000000000000017:                   # @func0000000000000017
 	li	a0, -20
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v9, v9, a0
-	vmul.vv	v10, v9, v8
+	vmul.vv	v10, v8, v9
 	li	a0, 144
 	vwmul.vx	v8, v10, a0
 	ret

@@ -37,7 +37,7 @@ entry:
 ; linux/optimized/tg3.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000043(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %0, 128
   %4 = icmp eq i32 %2, 0
@@ -64,26 +64,13 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/forcedeth.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %0, 3072
   %4 = icmp eq i32 %2, 0
   %5 = select i1 %4, i32 %0, i32 %3
   %6 = and i32 %1, 2048
   %7 = or i32 %5, %6
-  ret i32 %7
-}
-
-; 1 occurrences:
-; z3/optimized/util.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %1, 2
-  %4 = icmp ult i32 %2, 4
-  %5 = select i1 %4, i32 %1, i32 %3
-  %6 = and i32 %0, 1
-  %7 = or i32 %6, %5
   ret i32 %7
 }
 

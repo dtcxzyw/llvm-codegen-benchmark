@@ -35,7 +35,7 @@ entry:
 define i32 @func00000000000000fd(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = shl nuw nsw i32 %4, 2
   %6 = add nsw i32 %5, -4096
   ret i32 %6
@@ -72,9 +72,8 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/amapMerge.c.ll
-; slurm/optimized/ebpf.ll
 ; wireshark/optimized/packet-c1222.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
 ; wireshark/optimized/packet-vrt.c.ll
@@ -102,6 +101,18 @@ entry:
   %4 = add nsw i32 %3, %0
   %5 = shl i32 %4, 1
   %6 = add i32 %5, 4
+  ret i32 %6
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func000000000000005d(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add nsw i32 %3, %0
+  %5 = shl nuw nsw i32 %4, 10
+  %6 = add nsw i32 %5, -56613888
   ret i32 %6
 }
 

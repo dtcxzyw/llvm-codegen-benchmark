@@ -13,6 +13,19 @@ entry:
 }
 
 ; 2 occurrences:
+; openssl/optimized/libcrypto-lib-bn_lib.ll
+; openssl/optimized/libcrypto-shlib-bn_lib.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000063(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %2, 65535
+  %4 = select i1 %3, i32 16, i32 0
+  %5 = or disjoint i32 %1, %4
+  %6 = or disjoint i32 %5, %0
+  ret i32 %6
+}
+
+; 2 occurrences:
 ; linux/optimized/vlv_dsi_pll.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; Function Attrs: nounwind
@@ -20,7 +33,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i32 4096, i32 8192
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -39,7 +52,7 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i32 0, i32 2
   %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -63,8 +76,8 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i32 1040, i32 16
-  %5 = or i32 %4, %1
-  %6 = or disjoint i32 %5, %0
+  %5 = or i32 %1, %4
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

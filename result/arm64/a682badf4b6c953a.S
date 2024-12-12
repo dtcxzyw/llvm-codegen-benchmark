@@ -10,7 +10,7 @@ func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	cmp	x1, #0
 	cset	w8, ne
-	tst	w8, w2
+	tst	w2, w8
 	csel	x0, x0, x1, ne
 	ret
                                         // -- End function

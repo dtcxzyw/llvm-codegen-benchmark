@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; coreutils-rs/optimized/12m3ujwrafz1081k.ll
 ; coreutils-rs/optimized/54i42m66wtythwaw.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
@@ -23,6 +23,7 @@
 ; wasmtime-rs/optimized/43lpynww5yjnoft1.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
@@ -31,13 +32,14 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; ockam-rs/optimized/1znr2e86bp785yod.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmedge/optimized/vinode.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

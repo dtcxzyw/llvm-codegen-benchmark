@@ -1,7 +1,6 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/compress.c.ll
-; abc/optimized/reoProfile.c.ll
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll

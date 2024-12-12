@@ -1,11 +1,10 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; hdf5/optimized/H5Ofill.c.ll
 ; linux/optimized/hdmi.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/USRGeneration.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll

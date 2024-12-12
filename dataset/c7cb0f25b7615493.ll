@@ -14,7 +14,7 @@ entry:
   ret i32 %4
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; coreutils-rs/optimized/4u84izbtaxbdqvdv.ll
@@ -39,11 +39,12 @@ entry:
 ; wireshark/optimized/in_cksum.c.ll
 ; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-x25.c.ll
+; zed-rs/optimized/67gayid14ydsuhkv0lcnhbsvb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 31
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = lshr i32 %3, 3
   ret i32 %4
 }
@@ -67,7 +68,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = lshr i32 %3, 31
   ret i32 %4
 }

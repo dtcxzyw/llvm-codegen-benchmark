@@ -4,25 +4,25 @@ func0000000000000006:                   # @func0000000000000006
 	leaq	15(%rsi), %rax
 	shrq	$63, %rax
 	retq
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	imulq	%rdx, %rsi
 	incq	%rdi
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000191:                   # @func0000000000000191
+func0000000000000321:                   # @func0000000000000321
 	imulq	%rdx, %rsi
 	incq	%rdi
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	imulq	%rdx, %rsi
 	incq	%rdi
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	imulq	%rdx, %rsi
 	incq	%rdi
 	cmpq	%rdi, %rsi

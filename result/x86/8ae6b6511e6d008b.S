@@ -20,11 +20,11 @@ func000000000000003f:                   # @func000000000000003f
 	orl	%edi, %eax
 	retq
 func000000000000007d:                   # @func000000000000007d
-	movzbl	%dl, %eax
-	shll	$7, %eax
-	shll	$14, %edi
-	orl	%esi, %edi
-	orl	%edi, %eax
+	movl	%edi, %eax
+	shll	$9, %edx
+	orl	%esi, %edx
+	shll	$14, %eax
+	orl	%edx, %eax
 	retq
 func000000000000007b:                   # @func000000000000007b
 	movzbl	%dl, %eax

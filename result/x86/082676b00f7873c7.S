@@ -22,3 +22,8 @@ func0000000000000003:                   # @func0000000000000003
 	movzwl	%si, %eax
 	leal	537985024(%rdi,%rax), %eax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	movzwl	%si, %ecx
+	leal	57344(%rdi), %eax
+	orl	%ecx, %eax
+	retq

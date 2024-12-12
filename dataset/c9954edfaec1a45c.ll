@@ -1,26 +1,13 @@
 
-; 1 occurrences:
-; postgres/optimized/date.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul i64 %2, 86400000000
-  %4 = add i64 %3, %0
-  %5 = mul nsw i64 %1, 1000000
-  %6 = add i64 %4, %5
-  %7 = icmp ugt i64 %6, 86399999999
-  ret i1 %7
-}
-
 ; 3 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000055a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aaa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -60000000
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul nsw i64 %0, -1000000
   %6 = add nsw i64 %5, %4
   %7 = icmp sgt i64 %6, 99
@@ -45,10 +32,10 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000044a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000088a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -60000000000
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = mul nsw i64 %0, -1000000000
   %6 = add i64 %5, %4
   %7 = icmp sgt i64 %6, 99

@@ -48,17 +48,17 @@ func0000000000000005:                   # @func0000000000000005
 	addq	%rsi, %rax
 	imulq	%rdi, %rax
 	retq
+func0000000000000015:                   # @func0000000000000015
+	movl	%edx, %eax
+	addq	%rsi, %rax
+	imulq	%rdi, %rax
+	retq
 func0000000000000010:                   # @func0000000000000010
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	imulq	%rdi, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	movl	%edx, %eax
-	addq	%rsi, %rax
-	imulq	%rdi, %rax
-	retq
-func0000000000000015:                   # @func0000000000000015
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	imulq	%rdi, %rax

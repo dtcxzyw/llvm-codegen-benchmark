@@ -16,5 +16,5 @@ func0000000000000000:                   # @func0000000000000000
 	vnot.v	v12, v12
 	li	a0, 19
 	vmacc.vx	v12, a0, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret

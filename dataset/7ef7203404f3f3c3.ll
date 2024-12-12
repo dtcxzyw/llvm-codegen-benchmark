@@ -24,13 +24,12 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/sweep.cc.ll
 ; opencv/optimized/tree.cpp.ll
 ; proj/optimized/grids.cpp.ll
 ; proj/optimized/gridshift.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/gsm_map_summary_dialog.cpp.ll
 ; wireshark/optimized/voip_calls.c.ll
@@ -40,6 +39,17 @@ entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/within_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000003(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = fsub double %1, %2
+  %4 = fcmp ult double %3, 3.600000e+02
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:

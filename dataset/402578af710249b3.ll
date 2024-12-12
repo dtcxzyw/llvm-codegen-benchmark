@@ -59,9 +59,9 @@ entry:
 ; opencv/optimized/mean.dispatch.cpp.ll
 ; opencv/optimized/sum.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 2
+  %2 = icmp samesign ult i32 %1, 2
   %3 = select i1 %2, i32 8388608, i32 32768
   %4 = sub nsw i32 %3, %0
   ret i32 %4

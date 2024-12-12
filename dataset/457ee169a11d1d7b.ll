@@ -1,13 +1,14 @@
 
-; 50 occurrences:
+; 53 occurrences:
 ; clamav/optimized/vba_extract.c.ll
+; cmake/optimized/huf_compress.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; lief/optimized/instructions.cpp.ll
 ; linux/optimized/ioctl.ll
 ; linux/optimized/nexthop.ll
+; linux/optimized/virtio_ring.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/fontengine.cpp.ll
@@ -42,7 +43,6 @@
 ; qemu/optimized/migration_savevm.c.ll
 ; qemu/optimized/pci.c.ll
 ; raylib/optimized/rmodels.c.ll
-; ruby/optimized/closure.ll
 ; ruby/optimized/console.ll
 ; ruby/optimized/io_buffer.ll
 ; ruby/optimized/memory_view.ll
@@ -50,6 +50,9 @@
 ; ruby/optimized/socket.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; wireshark/optimized/packet-uds.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i16 %0) #0 {
 entry:
@@ -59,14 +62,12 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/nexthop.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; spike/optimized/bf16_to_f32.ll
-; spike/optimized/f16_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i16 %0) #0 {
 entry:
@@ -84,18 +85,6 @@ entry:
   %1 = zext i16 %0 to i64
   %2 = shl nuw nsw i64 %1, 16
   %3 = or i64 %2, 1048575
-  ret i64 %3
-}
-
-; 2 occurrences:
-; spike/optimized/f16_to_f128.ll
-; spike/optimized/f16_to_f64.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000d(i16 %0) #0 {
-entry:
-  %1 = zext nneg i16 %0 to i64
-  %2 = shl nuw i64 %1, 63
-  %3 = or disjoint i64 %2, 9218868437227405312
   ret i64 %3
 }
 

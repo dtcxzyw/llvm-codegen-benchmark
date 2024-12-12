@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	orq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi
@@ -34,15 +34,9 @@ func0000000000000014:                   # @func0000000000000014
 	cmpq	%rdi, %rsi
 	setg	%al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	orq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi
 	sete	%al
-	retq
-func0000000000000030:                   # @func0000000000000030
-	orq	%rdx, %rsi
-	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	seta	%al
 	retq

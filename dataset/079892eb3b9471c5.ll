@@ -1,6 +1,7 @@
 
-; 62 occurrences:
+; 64 occurrences:
 ; arrow/optimized/data.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btConvexHull.ll
 ; cpython/optimized/compile.ll
 ; cvc5/optimized/partial_model.cpp.ll
@@ -18,6 +19,7 @@
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/NativeExeSymbol.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -71,9 +73,10 @@ entry:
   ret { i64, i64 } %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; fmt/optimized/format-test.cc.ll
 ; llvm/optimized/LegalizerInfo.cpp.ll
 ; llvm/optimized/NetBSD.cpp.ll
 ; llvm/optimized/OpenBSD.cpp.ll

@@ -22,7 +22,7 @@ func0000000000000033:                   # @func0000000000000033
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	xorl	%eax, %eax
 	cmpl	$1114112, %edx                  # imm = 0x110000
 	setae	%al
@@ -52,6 +52,14 @@ func000000000000002b:                   # @func000000000000002b
 	leal	(%rsi,%rax,4), %eax
 	orl	%edi, %eax
 	retq
+func0000000000000023:                   # @func0000000000000023
+	xorl	%eax, %eax
+	cmpl	$1114112, %edx                  # imm = 0x110000
+	setae	%al
+	shll	$8, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq
 func0000000000000020:                   # @func0000000000000020
 	xorl	%eax, %eax
 	cmpl	$65536, %edx                    # imm = 0x10000
@@ -60,7 +68,15 @@ func0000000000000020:                   # @func0000000000000020
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000060:                   # @func0000000000000060
+	xorl	%eax, %eax
+	cmpl	$256, %edx                      # imm = 0x100
+	setae	%al
+	shll	$3, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq
+func0000000000000062:                   # @func0000000000000062
 	xorl	%eax, %eax
 	cmpl	$6, %edx
 	setae	%al
@@ -76,13 +92,6 @@ func0000000000000005:                   # @func0000000000000005
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000012:                   # @func0000000000000012
-	xorl	%eax, %eax
-	cmpl	$3, %edx
-	setae	%al
-	leal	(%rsi,%rax,2), %eax
-	orl	%edi, %eax
-	retq
 func0000000000000013:                   # @func0000000000000013
 	xorl	%eax, %eax
 	cmpl	$512, %edx                      # imm = 0x200
@@ -90,7 +99,15 @@ func0000000000000013:                   # @func0000000000000013
 	leal	(%rsi,%rax,2), %eax
 	orl	%edi, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
+	xorl	%eax, %eax
+	cmpl	$32, %edx
+	setb	%al
+	shll	$13, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq
+func0000000000000052:                   # @func0000000000000052
 	xorl	%eax, %eax
 	cmpl	$32, %edx
 	setb	%al

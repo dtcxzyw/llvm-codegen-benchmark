@@ -18,12 +18,12 @@ entry:
 }
 
 ; 23 occurrences:
+; boost/optimized/alloc_lib.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/noodle_engine.c.ll
 ; hyperscan/optimized/state_compress.c.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/fatent.ll
-; linux/optimized/hwxface.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/intel_lvds.ll
@@ -55,7 +55,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

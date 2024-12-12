@@ -1,20 +1,16 @@
 
-%"class.ncnn::Blob.2636481" = type { %"class.std::__cxx11::basic_string.2636482", i32, i32, %"class.ncnn::Mat.2636480" }
-%"class.std::__cxx11::basic_string.2636482" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2636483", i64, %union.anon.2636484 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2636483" = type { ptr }
-%union.anon.2636484 = type { i64, [8 x i8] }
-%"class.ncnn::Mat.2636480" = type { ptr, ptr, i64, i32, ptr, i32, i32, i32, i32, i32, i64 }
-%struct._zval_struct.2677346 = type { %union._zend_value.2677356, %union.anon.2677357, %union.anon.2.2677358 }
-%union._zend_value.2677356 = type { i64 }
-%union.anon.2677357 = type { i32 }
-%union.anon.2.2677358 = type { i32 }
-%"class.std::set.182.2939252" = type { %"class.std::_Rb_tree.183.2939253" }
-%"class.std::_Rb_tree.183.2939253" = type { %"struct.std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>>::_Rb_tree_impl.2939254" }
-%"struct.std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>>::_Rb_tree_impl.2939254" = type { %"struct.std::_Rb_tree_key_compare.13.2939167", %"struct.std::_Rb_tree_header.2939168" }
-%"struct.std::_Rb_tree_key_compare.13.2939167" = type { %"struct.std::less.14.2939169" }
-%"struct.std::less.14.2939169" = type { i8 }
-%"struct.std::_Rb_tree_header.2939168" = type { %"struct.std::_Rb_tree_node_base.2939170", i64 }
-%"struct.std::_Rb_tree_node_base.2939170" = type { i32, ptr, ptr, ptr }
+%struct._zval_struct.2790368 = type { %union._zend_value.2790378, %union.anon.2790379, %union.anon.2.2790380 }
+%union._zend_value.2790378 = type { i64 }
+%union.anon.2790379 = type { i32 }
+%union.anon.2.2790380 = type { i32 }
+%struct.cset.3062332 = type { ptr, i8, i8 }
+%"class.std::set.182.3132880" = type { %"class.std::_Rb_tree.183.3132881" }
+%"class.std::_Rb_tree.183.3132881" = type { %"struct.std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>>::_Rb_tree_impl.3132882" }
+%"struct.std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>>::_Rb_tree_impl.3132882" = type { %"struct.std::_Rb_tree_key_compare.13.3132795", %"struct.std::_Rb_tree_header.3132796" }
+%"struct.std::_Rb_tree_key_compare.13.3132795" = type { %"struct.std::less.14.3132797" }
+%"struct.std::less.14.3132797" = type { i8 }
+%"struct.std::_Rb_tree_header.3132796" = type { %"struct.std::_Rb_tree_node_base.3132798", i64 }
+%"struct.std::_Rb_tree_node_base.3132798" = type { i32, ptr, ptr, ptr }
 
 ; 10 occurrences:
 ; linux/optimized/fast_commit.ll
@@ -33,13 +29,12 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i64, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 56
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
-; 92 occurrences:
+; 90 occurrences:
 ; ceres/optimized/visibility.cc.ll
-; clamav/optimized/regcomp.c.ll
 ; cvc5/optimized/core_solver.cpp.ll
 ; g2o/optimized/marginal_covariance_cholesky.cpp.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
@@ -49,13 +44,12 @@ entry:
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
-; hermes/optimized/regcomp.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
+; llvm/optimized/CFIInstrInserter.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll
 ; llvm/optimized/LazyCallGraph.cpp.ll
-; llvm/optimized/regcomp.c.ll
 ; meshlab/optimized/additionalgui.cpp.ll
 ; meshlab/optimized/decorate_raster_proj.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
@@ -71,6 +65,7 @@ entry:
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; meshlab/optimized/radianceScalingRenderer.cpp.ll
 ; meshlab/optimized/render_raster.cpp.ll
+; ncnn/optimized/net.cpp.ll
 ; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; openjdk/optimized/compileBroker.ll
@@ -129,19 +124,17 @@ entry:
 ; yosys/optimized/subcircuit.ll
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/torder.ll
-; zxing/optimized/BinaryBitmap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000161(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 18 occurrences:
-; abc/optimized/dauMerge.c.ll
+; 17 occurrences:
 ; abc/optimized/wlcReadVer.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
@@ -160,17 +153,16 @@ entry:
 ; zxing/optimized/ODCode93Reader.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000144(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -1
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
-; 111 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
+; 110 occurrences:
 ; graphviz/optimized/sfprint.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; lz4/optimized/lz4.c.ll
@@ -282,43 +274,25 @@ entry:
 ; stb/optimized/stb_image_resize2.c.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000148(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw float, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -4
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/continuation.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a9(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000149(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw ptr, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -16
-  %6 = icmp ule ptr %5, %0
+  %6 = icmp uge ptr %0, %5
   ret i1 %6
-}
-
-; 8 occurrences:
-; g2o/optimized/slam2d_linear.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; llvm/optimized/CFIInstrInserter.cpp.ll
-; ncnn/optimized/net.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000b1(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.ncnn::Blob.2636481", ptr %1, i64 %3, i32 3
-  %5 = icmp eq ptr %4, %0
-  ret i1 %5
 }
 
 ; 17 occurrences:
@@ -340,12 +314,12 @@ entry:
 ; openmpi/optimized/show_help_lex.ll
 ; verilator/optimized/V3PreProc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000108(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 1
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -361,9 +335,9 @@ entry:
 define i1 @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct._zval_struct.2677346, ptr %1, i64 %3
+  %4 = getelementptr %struct._zval_struct.2790368, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 80
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -389,7 +363,36 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 68
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; abc/optimized/dauMerge.c.ll
+; lz4/optimized/lz4hc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000164(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
+  %6 = icmp ult ptr %0, %5
+  ret i1 %6
+}
+
+; 5 occurrences:
+; clamav/optimized/regcomp.c.ll
+; hermes/optimized/regcomp.c.ll
+; llvm/optimized/regcomp.c.ll
+; lz4/optimized/lz4hc.c.ll
+; zxing/optimized/BinaryBitmap.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000141(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw %struct.cset.3062332, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -16
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -400,12 +403,12 @@ entry:
 ; yosys/optimized/fastlz.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -2
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -416,12 +419,12 @@ entry:
 ; yosys/optimized/fastlz.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -1
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -429,35 +432,23 @@ entry:
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000016c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.std::set.182.2939252", ptr %1, i64 %3, i32 0, i32 0, i32 1
-  %5 = icmp ne ptr %4, %0
+  %4 = getelementptr %"class.std::set.182.3132880", ptr %1, i64 %3, i32 0, i32 0, i32 1
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 -32
-  %6 = icmp uge ptr %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; openusd/optimized/lz4.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a5(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000145(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -32
-  %6 = icmp uge ptr %5, %0
+  %6 = icmp ule ptr %0, %5
   ret i1 %6
 }
 
@@ -469,7 +460,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -32
-  %6 = icmp uge ptr %5, %0
+  %6 = icmp ule ptr %0, %5
   ret i1 %6
 }
 
@@ -477,12 +468,12 @@ entry:
 ; linux/optimized/hooks.ll
 ; linux/optimized/sbitmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 48
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 48
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -494,7 +485,19 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -1
-  %6 = icmp ne ptr %5, %0
+  %6 = icmp ne ptr %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; eastl/optimized/EASprintfCore.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c8(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -1
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 

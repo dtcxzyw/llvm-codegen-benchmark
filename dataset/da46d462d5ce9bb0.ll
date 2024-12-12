@@ -1,12 +1,13 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; clamav/optimized/pe_icons.c.ll
+; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ult i32 %2, 31507
+  %3 = icmp samesign ult i32 %2, 31507
   %4 = select i1 %3, i32 %0, i32 0
   ret i32 %4
 }
@@ -35,10 +36,10 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ugt i32 %2, 31
+  %3 = icmp samesign ugt i32 %2, 31
   %4 = select i1 %3, i32 %0, i32 0
   ret i32 %4
 }

@@ -3,7 +3,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 12
   %4 = icmp ugt i32 %3, %1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/trailer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = icmp slt i32 %3, %1
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/scale_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = icmp eq i32 %3, %1
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-pw-atm.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, -52
   %4 = icmp ne i32 %3, %1
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = icmp sge i32 %3, %1
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/csrmbcs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 5
   %4 = icmp slt i32 %3, %1

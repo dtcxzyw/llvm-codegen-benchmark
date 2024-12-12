@@ -1,6 +1,6 @@
 func0000000000000015:                   # @func0000000000000015
 	addi	a1, a1, -1
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	lui	a1, 524288
 	addiw	a1, a1, -1
 	xor	a0, a0, a1

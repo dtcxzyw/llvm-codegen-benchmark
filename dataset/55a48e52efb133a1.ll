@@ -24,8 +24,9 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/luckyFast16.c.ll
+; nuttx/optimized/lib_strtold.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1, i1 %2) #0 {
 entry:

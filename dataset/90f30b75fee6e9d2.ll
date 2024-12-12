@@ -50,8 +50,9 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; ocio/optimized/Lut1DOpData.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i64 %0, i64 %1, i1 %2) #0 {
 entry:

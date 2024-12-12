@@ -1,5 +1,5 @@
 
-; 1629 occurrences:
+; 1637 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcDar.c.ll
@@ -143,6 +143,23 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bdwgc/optimized/cordprnt.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/area.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/graphml.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/options_description.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
 ; ceres/optimized/reorder_program.cc.ll
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
 ; cmake/optimized/archive_rb.c.ll
@@ -215,7 +232,6 @@
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -284,8 +300,6 @@
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; hermes/optimized/Timer.cpp.ll
 ; hermes/optimized/require.cpp.ll
-; hwloc/optimized/lstopo-lstopo-shmem.ll
-; hwloc/optimized/lstopo_no_graphics-lstopo-shmem.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/ng_som.cpp.ll
 ; influxdb-rs/optimized/5e3g7j4bc55q5qdg.ll
@@ -349,7 +363,6 @@
 ; linux/optimized/msg_ring.ll
 ; linux/optimized/nf_conntrack_netlink.ll
 ; linux/optimized/nf_conntrack_sip.ll
-; linux/optimized/nfs4super.ll
 ; linux/optimized/osq_lock.ll
 ; linux/optimized/page.ll
 ; linux/optimized/page_alloc.ll
@@ -367,7 +380,6 @@
 ; linux/optimized/request.ll
 ; linux/optimized/requeue.ll
 ; linux/optimized/rock.ll
-; linux/optimized/rseq.ll
 ; linux/optimized/rtmutex_api.ll
 ; linux/optimized/scsi_lib.ll
 ; linux/optimized/seccomp.ll
@@ -675,6 +687,7 @@
 ; luau/optimized/Parser.cpp.ll
 ; luau/optimized/Types.cpp.ll
 ; luau/optimized/ValueTracking.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -691,7 +704,6 @@
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/pickpointsDialog.cpp.ll
@@ -1019,13 +1031,10 @@
 ; nix/optimized/names.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -1487,7 +1496,6 @@
 ; postgres/optimized/hashfunc.ll
 ; postgres/optimized/jsonb.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonpath_exec.ll
 ; postgres/optimized/mbutils.ll
 ; postgres/optimized/multirangetypes.ll
@@ -1605,7 +1613,6 @@
 ; z3/optimized/ast_smt2_pp.cpp.ll
 ; z3/optimized/ast_smt_pp.cpp.ll
 ; z3/optimized/basic_cmds.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/datalog_parser.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
 ; z3/optimized/dl_context.cpp.ll
@@ -1629,19 +1636,21 @@
 ; z3/optimized/smt_solver.cpp.ll
 ; z3/optimized/tactic_manager.cpp.ll
 ; z3/optimized/theory_datatype.cpp.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp eq ptr %2, %0
+  %3 = icmp eq ptr %0, %2
   ret i1 %3
 }
 
-; 201 occurrences:
+; 202 occurrences:
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/work_stealing.ll
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
 ; cpython/optimized/obmalloc.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
@@ -1843,7 +1852,7 @@ entry:
 define i1 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp ugt ptr %2, %0
+  %3 = icmp ult ptr %0, %2
   ret i1 %3
 }
 
@@ -1939,11 +1948,11 @@ entry:
 define i1 @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp uge ptr %2, %0
+  %3 = icmp ule ptr %0, %2
   ret i1 %3
 }
 
-; 224 occurrences:
+; 223 occurrences:
 ; abc/optimized/aigDup.c.ll
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddBddAbs.c.ll
@@ -1959,6 +1968,7 @@ entry:
 ; abc/optimized/ivyCheck.c.ll
 ; abseil-cpp/optimized/mutex.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/arith_ite_utils.cpp.ll
 ; cvc5/optimized/dio_solver.cpp.ll
@@ -1982,7 +1992,6 @@ entry:
 ; linux/optimized/exit.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/maple_tree.ll
-; linux/optimized/rseq.ll
 ; linux/optimized/tlb.ll
 ; llama.cpp/optimized/common.cpp.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
@@ -2125,7 +2134,6 @@ entry:
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -2172,13 +2180,14 @@ entry:
 define i1 @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp ne ptr %2, %0
+  %3 = icmp ne ptr %0, %2
   ret i1 %3
 }
 
-; 327 occurrences:
+; 325 occurrences:
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddUtil.c.ll
+; boost/optimized/topology.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; hwloc/optimized/topology-linux.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
@@ -2298,13 +2307,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -2508,7 +2514,7 @@ entry:
 define i1 @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp ult ptr %2, %0
+  %3 = icmp ugt ptr %0, %2
   ret i1 %3
 }
 
@@ -2532,7 +2538,7 @@ entry:
 define i1 @func0000000000000009(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp ule ptr %2, %0
+  %3 = icmp uge ptr %0, %2
   ret i1 %3
 }
 

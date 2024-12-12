@@ -1,10 +1,10 @@
-func0000000000000371:                   // @func0000000000000371
+func00000000000006e1:                   // @func00000000000006e1
 // %bb.0:                               // %entry
-	movi	v0.4h, #1
+	mov	w0, #1                          // =0x1
 	ret
                                         // -- End function
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	movi	v0.4h, #1
+	mov	w0, #1                          // =0x1
 	ret
                                         // -- End function

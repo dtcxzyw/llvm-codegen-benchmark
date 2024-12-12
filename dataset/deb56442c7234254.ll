@@ -1,10 +1,8 @@
 
-; 10 occurrences:
-; abc/optimized/verStream.c.ll
+; 8 occurrences:
 ; darktable/optimized/collect.c.ll
 ; darktable/optimized/filtering.c.ll
 ; darktable/optimized/print_settings.c.ll
-; icu/optimized/pkgitems.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
@@ -20,12 +18,14 @@ entry:
   ret ptr %6
 }
 
-; 44 occurrences:
+; 46 occurrences:
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; linux/optimized/filter.ll
+; opencv/optimized/tree.cpp.ll
 ; postgres/optimized/initdb.ll
+; stb/optimized/stb_connected_components.c.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
 ; taskflow/optimized/cancel.cpp.ll

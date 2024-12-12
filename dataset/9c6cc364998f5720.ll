@@ -169,7 +169,7 @@ entry:
   %3 = mul nuw i128 %1, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   %7 = udiv i64 %6, 10
   ret i64 %7
 }

@@ -25,9 +25,9 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000215(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000615(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 1
+  %3 = icmp samesign ugt i32 %2, 1
   %4 = select i1 %3, i32 %1, i32 0
   %5 = add nsw i32 %0, -16383
   %6 = add nsw i32 %5, %4

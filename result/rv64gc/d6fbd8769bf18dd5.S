@@ -1,11 +1,11 @@
-func0000000000000cc4:                   # @func0000000000000cc4
+func0000000000003184:                   # @func0000000000003184
 	snez	a2, a0
 	snez	a3, a1
 	and	a2, a2, a3
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000cc8:                   # @func0000000000000cc8
+func0000000000003188:                   # @func0000000000003188
 	sltiu	a2, a1, -1
 	sltiu	a3, a0, -1
 	and	a2, a2, a3
@@ -14,7 +14,7 @@ func0000000000000cc8:                   # @func0000000000000cc8
 	ret
 .LCPI2_0:
 	.quad	-1483400188077313               # 0xfffabadafabadaff
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
 	xor	a3, a0, a1
@@ -28,7 +28,7 @@ func0000000000000ccc:                   # @func0000000000000ccc
 	ret
 .LCPI3_0:
 	.quad	-1483400188077313               # 0xfffabadafabadaff
-func0000000000000cc1:                   # @func0000000000000cc1
+func0000000000003181:                   # @func0000000000003181
 	lui	a2, %hi(.LCPI3_0)
 	ld	a2, %lo(.LCPI3_0)(a2)
 	xor	a3, a0, a1
@@ -42,7 +42,7 @@ func0000000000000cc1:                   # @func0000000000000cc1
 	ret
 .LCPI4_0:
 	.quad	-1483400188077313               # 0xfffabadafabadaff
-func0000000000000ccb:                   # @func0000000000000ccb
+func000000000000318b:                   # @func000000000000318b
 	lui	a2, %hi(.LCPI4_0)
 	ld	a2, %lo(.LCPI4_0)(a2)
 	slt	a3, a0, a1
@@ -56,7 +56,7 @@ func0000000000000ccb:                   # @func0000000000000ccb
 	ret
 .LCPI5_0:
 	.quad	-1483400188077313               # 0xfffabadafabadaff
-func0000000000000cc7:                   # @func0000000000000cc7
+func0000000000003187:                   # @func0000000000003187
 	lui	a2, %hi(.LCPI5_0)
 	ld	a2, %lo(.LCPI5_0)(a2)
 	slt	a3, a1, a0
@@ -70,7 +70,7 @@ func0000000000000cc7:                   # @func0000000000000cc7
 	ret
 .LCPI6_0:
 	.quad	-1483400188077313               # 0xfffabadafabadaff
-func0000000000000cca:                   # @func0000000000000cca
+func000000000000318a:                   # @func000000000000318a
 	lui	a2, %hi(.LCPI6_0)
 	ld	a2, %lo(.LCPI6_0)(a2)
 	xor	a3, a1, a2
@@ -83,7 +83,7 @@ func0000000000000cca:                   # @func0000000000000cca
 	ret
 .LCPI7_0:
 	.quad	-1483400188077313               # 0xfffabadafabadaff
-func0000000000000cc6:                   # @func0000000000000cc6
+func0000000000003186:                   # @func0000000000003186
 	lui	a2, %hi(.LCPI7_0)
 	ld	a2, %lo(.LCPI7_0)(a2)
 	xor	a3, a1, a2

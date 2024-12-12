@@ -1,6 +1,7 @@
 
-; 37 occurrences:
+; 38 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references.c.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll

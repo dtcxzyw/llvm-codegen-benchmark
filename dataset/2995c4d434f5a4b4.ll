@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 76 occurrences:
 ; brotli/optimized/block_splitter.c.ll
 ; clamav/optimized/others.c.ll
 ; curl/optimized/libcurl_la-rtsp.ll
@@ -44,7 +44,6 @@
 ; openssl/optimized/libcrypto-shlib-provider_core.ll
 ; openssl/optimized/libssl-lib-statem_dtls.ll
 ; openssl/optimized/libssl-shlib-statem_dtls.ll
-; php/optimized/pcre2_maketables.ll
 ; postgres/optimized/varlena.ll
 ; qemu/optimized/dump_dump.c.ll
 ; qemu/optimized/hw_pci_msix.c.ll

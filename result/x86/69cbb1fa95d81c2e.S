@@ -1,9 +1,9 @@
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	andl	$1, %esi
 	orl	%edi, %esi
 	setne	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000d8:                   # @func00000000000000d8
 	andl	$1, %esi
 	orl	%edi, %esi
 	setne	%al

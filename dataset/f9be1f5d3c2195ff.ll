@@ -12,7 +12,8 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/digest.c.ll
 ; cmake/optimized/xmltok.c.ll
@@ -22,11 +23,11 @@ entry:
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = freeze i8 %2
   %4 = icmp eq i8 %3, 34
-  %5 = getelementptr nusw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
   %6 = select i1 %4, ptr %0, ptr %5
   ret ptr %6
 }

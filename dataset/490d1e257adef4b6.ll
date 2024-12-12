@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; casadi/optimized/kinsol.c.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
@@ -13,6 +13,7 @@
 ; quantlib/optimized/cpiswap.ll
 ; sundials/optimized/kinsol.c.ll
 ; z3/optimized/sat_ddfw.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, double %1, double %2) #0 {
 entry:

@@ -1,5 +1,6 @@
 
-; 19 occurrences:
+; 20 occurrences:
+; boost/optimized/area_sph_geo.ll
 ; brotli/optimized/block_splitter.c.ll
 ; ceres/optimized/fake_bundle_adjustment_jacobian.cc.ll
 ; gromacs/optimized/partition.cpp.ll

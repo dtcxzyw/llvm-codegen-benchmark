@@ -4,14 +4,22 @@ func0000000000000004:                   # @func0000000000000004
 	shrq	$3, %rax
 	imull	$-1227133513, %eax, %eax        # imm = 0xB6DB6DB7
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000064:                   # @func0000000000000064
 	imulq	$56, %rdx, %rax
 	addq	%rsi, %rax
 	subq	%rdi, %rax
 	shrq	$3, %rax
 	imull	$-1227133513, %eax, %eax        # imm = 0xB6DB6DB7
 	retq
-func0000000000000040:                   # @func0000000000000040
+func0000000000000044:                   # @func0000000000000044
+	leaq	(%rdx,%rdx,2), %rax
+	shlq	$4, %rax
+	addq	%rsi, %rax
+	subq	%rdi, %rax
+	shrq	$4, %rax
+	imull	$-1431655765, %eax, %eax        # imm = 0xAAAAAAAB
+	retq
+func0000000000000060:                   # @func0000000000000060
 	leaq	(%rsi,%rdx), %rcx
 	subq	%rdi, %rcx
 	leaq	15(%rcx), %rax

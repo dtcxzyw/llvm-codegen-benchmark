@@ -1,15 +1,3 @@
-func0000000000000018:                   # @func0000000000000018
-	subq	%rdx, %rsi
-	shrq	$2, %rsi
-	subq	%rsi, %rdi
-	leaq	(,%rdi,4), %rax
-	retq
-func000000000000001a:                   # @func000000000000001a
-	subq	%rdx, %rsi
-	shrq	$2, %rsi
-	subq	%rsi, %rdi
-	leaq	(,%rdi,4), %rax
-	retq
 func000000000000001c:                   # @func000000000000001c
 	subq	%rdx, %rsi
 	shrq	$2, %rsi
@@ -22,12 +10,25 @@ func000000000000001f:                   # @func000000000000001f
 	subq	%rsi, %rdi
 	leaq	(,%rdi,4), %rax
 	retq
+func000000000000001a:                   # @func000000000000001a
+	movq	%rdi, %rax
+	subq	%rdx, %rsi
+	shrq	$4, %rsi
+	subq	%rsi, %rax
+	shlq	$4, %rax
+	retq
 func000000000000001b:                   # @func000000000000001b
 	movq	%rdi, %rax
 	subq	%rdx, %rsi
 	shrq	$4, %rsi
 	subq	%rsi, %rax
 	shlq	$4, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	subq	%rdx, %rsi
+	shrq	$3, %rsi
+	subq	%rsi, %rdi
+	leaq	(,%rdi,8), %rax
 	retq
 func0000000000000015:                   # @func0000000000000015
 	subq	%rdx, %rsi

@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 54 occurrences:
 ; assimp/optimized/AssbinFileWriter.cpp.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
@@ -13,6 +13,7 @@
 ; assimp/optimized/MaterialSystem.cpp.ll
 ; assimp/optimized/PostStepRegistry.cpp.ll
 ; assimp/optimized/SceneCombiner.cpp.ll
+; boost/optimized/core.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
@@ -20,6 +21,7 @@
 ; freetype/optimized/psaux.c.ll
 ; libquic/optimized/superfasthash.c.ll
 ; linux/optimized/random32.ll
+; lvgl/optimized/lv_math.ll
 ; openjdk/optimized/synchronizer.ll
 ; openmpi/optimized/mpl_str.ll
 ; openssl/optimized/libcrypto-lib-property.ll

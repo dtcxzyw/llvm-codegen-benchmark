@@ -1,9 +1,11 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i32 %1) #0 {
+define i1 @func000000000000014c(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 64
   %3 = and i64 %0, 1
@@ -15,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/jvmtiEventController.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 8
   %3 = and i64 %0, 8192
@@ -29,7 +31,7 @@ entry:
 ; linux/optimized/addrconf.ll
 ; linux/optimized/route.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = and i64 %0, 281474976710655

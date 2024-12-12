@@ -1,10 +1,10 @@
-func000000000000040a:                   # @func000000000000040a
+func000000000000080a:                   # @func000000000000080a
 	srli	a1, a1, 3
 	subw	a0, a0, a1
 	addiw	a0, a0, 1
 	sgtz	a0, a0
 	ret
-func0000000000000206:                   # @func0000000000000206
+func0000000000000406:                   # @func0000000000000406
 	srli	a1, a1, 32
 	subw	a0, a0, a1
 	addiw	a0, a0, 1

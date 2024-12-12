@@ -1,7 +1,16 @@
 
-%"struct.std::pair.28.2486663" = type <{ i64, i32, [4 x i8] }>
+%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
+%"struct.std::__1::pair.61.2609501" = type { %"class.std::__1::basic_string.2609306", %"class.mitsuba::ref.40.2609363" }
+%"class.std::__1::basic_string.2609306" = type { %"class.std::__1::__compressed_pair.25.2609307" }
+%"class.std::__1::__compressed_pair.25.2609307" = type { %"struct.std::__1::__compressed_pair_elem.26.2609308" }
+%"struct.std::__1::__compressed_pair_elem.26.2609308" = type { %"struct.std::__1::basic_string<char>::__rep.2609309" }
+%"struct.std::__1::basic_string<char>::__rep.2609309" = type { %union.anon.2609310 }
+%union.anon.2609310 = type { %"struct.std::__1::basic_string<char>::__long.2609311" }
+%"struct.std::__1::basic_string<char>::__long.2609311" = type { %struct.anon.27.2609312, i64, ptr }
+%struct.anon.27.2609312 = type { i64 }
+%"class.mitsuba::ref.40.2609363" = type { ptr }
 
-; 263 occurrences:
+; 258 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; arrow/optimized/expression.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -102,7 +111,6 @@
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
-; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/rastack.cpp.ll
 ; mold/optimized/arch-alpha.cc.ll
@@ -191,7 +199,6 @@
 ; oiio/optimized/deepdata.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/aruco_detector.cpp.ll
-; opencv/optimized/autocalib.cpp.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/blobdetector.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
@@ -201,8 +208,6 @@
 ; opencv/optimized/nms.cpp.ll
 ; opencv/optimized/nonrigid_icp.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
-; opencv/optimized/stitcher.cpp.ll
-; opencv/optimized/stitching_detailed.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; openusd/optimized/layerStack.cpp.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
@@ -213,7 +218,6 @@
 ; quantlib/optimized/bond.ll
 ; re2/optimized/prefilter_tree.cc.ll
 ; stockfish/optimized/tbprobe.ll
-; tev/optimized/Image.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; vcpkg/optimized/registries.cpp.ll
 ; velox/optimized/ComplexVector.cpp.ll
@@ -266,27 +270,32 @@
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
   %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw %"struct.std::pair.28.2486663", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.std::pair.28.2602107", ptr %0, i64 %5
   ret ptr %6
 }
 
-; 2 occurrences:
+; 7 occurrences:
+; mitsuba3/optimized/bitmap.cpp.ll
+; opencv/optimized/autocalib.cpp.ll
 ; opencv/optimized/ransac_solvers.cpp.ll
+; opencv/optimized/stitcher.cpp.ll
+; opencv/optimized/stitching_detailed.cpp.ll
+; tev/optimized/Image.cpp.ll
 ; wireshark/optimized/display_filter_expression_dialog.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 3
+  %4 = ashr exact i64 %3, 5
   %5 = lshr i64 %4, 1
-  %6 = getelementptr ptr, ptr %0, i64 %5
+  %6 = getelementptr %"struct.std::__1::pair.61.2609501", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -294,13 +303,13 @@ entry:
 ; opencv/optimized/tldDetector.cpp.ll
 ; opencv/optimized/trackerMedianFlow.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
   %5 = lshr exact i64 %4, 1
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 

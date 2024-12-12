@@ -1,5 +1,37 @@
 
-; 78 occurrences:
+; 109 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/lz_encoder.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -32,7 +64,6 @@
 ; libquic/optimized/spdy_framer.cc.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; linux/optimized/8139too.ll
-; linux/optimized/psutils.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/BypassSlowDivision.cpp.ll
 ; llvm/optimized/CommandFlags.cpp.ll
@@ -44,7 +75,6 @@
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
@@ -78,17 +108,18 @@
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 10
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
 
 ; 6 occurrences:
-; linux/optimized/psutils.ll
+; boost/optimized/src.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -98,7 +129,7 @@ entry:
 define i8 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -157,7 +188,7 @@ entry:
 define i8 @func0000000000000020(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

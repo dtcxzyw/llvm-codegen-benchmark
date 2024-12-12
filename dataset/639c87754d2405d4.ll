@@ -15,7 +15,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000a4(i16 %0, i16 %1) #0 {
 entry:
   %2 = sub nsw i16 %0, %1
   %3 = add nsw i16 %2, 30
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-cp2179.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000a1(i16 %0, i16 %1) #0 {
 entry:
   %2 = sub nsw i16 %0, %1
   %3 = icmp eq i16 %2, -1

@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-lib-cms_env.ll
 ; openssl/optimized/libcrypto-shlib-cms_env.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000f4(i32 %0, i64 %1) #0 {
+define i64 @func00000000000001e4(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = add nuw nsw i64 %2, 16
@@ -13,17 +13,14 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/colvargrid.cpp.ll
-; ncnn/optimized/deformableconv2d_x86.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
 ; protobuf/optimized/extension_set_heavy.cc.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000fa(i32 %0, i64 %1) #0 {
+define i64 @func00000000000001ea(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 5
   %3 = add nuw nsw i64 %2, 32

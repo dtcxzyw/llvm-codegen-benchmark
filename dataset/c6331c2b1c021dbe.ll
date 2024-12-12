@@ -21,6 +21,19 @@ entry:
   ret i32 %2
 }
 
+; 4 occurrences:
+; boost/optimized/utf8_codecvt_facet.ll
+; linux/optimized/ich8lan.ll
+; linux/optimized/uncore_snbep.ll
+; oiio/optimized/Writer.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0) #0 {
+entry:
+  %1 = mul nuw nsw i32 %0, 6
+  %2 = shl nuw nsw i32 1, %1
+  ret i32 %2
+}
+
 ; 3 occurrences:
 ; gromacs/optimized/grid.cpp.ll
 ; linux/optimized/uncore_snbep.ll
@@ -30,18 +43,6 @@ define i32 @func000000000000000e(i32 %0) #0 {
 entry:
   %1 = mul nuw nsw i32 %0, 10
   %2 = shl nuw i32 4092, %1
-  ret i32 %2
-}
-
-; 3 occurrences:
-; linux/optimized/ich8lan.ll
-; linux/optimized/uncore_snbep.ll
-; oiio/optimized/Writer.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0) #0 {
-entry:
-  %1 = mul nuw nsw i32 %0, 10
-  %2 = shl nuw nsw i32 1023, %1
   ret i32 %2
 }
 
@@ -56,8 +57,7 @@ entry:
   ret i32 %2
 }
 
-; 2 occurrences:
-; linux/optimized/intel_audio.ll
+; 1 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {

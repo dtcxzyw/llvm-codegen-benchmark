@@ -1,79 +1,33 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffffffffffffff
-	mov	x9, v0.d[1]
-	fmov	x10, d0
-	mov	x8, v2.d[1]
-	fmov	x11, d2
-	fmov	x12, d1
-	fmov	x13, d3
-	mov	x16, v1.d[1]
-	add	v0.2d, v2.2d, v4.2d
-	add	v2.2d, v3.2d, v4.2d
-	mul	x11, x10, x11
-	mul	x13, x12, x13
-	fmov	x14, d0
-	mov	x15, v0.d[1]
-	mov	x17, v2.d[1]
-	mul	x8, x9, x8
-	fmov	d0, x11
-	mul	x10, x14, x10
-	fmov	x14, d2
-	fmov	d2, x13
-	mul	x9, x15, x9
-	mov	v0.d[1], x8
-	mul	x12, x14, x12
-	mov	x14, v3.d[1]
-	fmov	d1, x10
-	mul	x15, x17, x16
-	mul	x14, x16, x14
-	mov	v1.d[1], x9
-	fmov	d3, x12
-	mov	v3.d[1], x15
-	cmhi	v0.2d, v0.2d, v1.2d
-	mov	v2.d[1], x14
-	cmhi	v2.2d, v2.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v2.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x1, #1
+	mul	x9, x0, x1
+	mul	x8, x0, x8
+	cmp	x8, x9
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000201:                   // @func0000000000000201
+func0000000000000411:                   // @func0000000000000411
 // %bb.0:                               // %entry
-	mov	w10, #1                         // =0x1
-	mov	x9, v0.d[1]
-	mov	x8, v2.d[1]
-	dup	v4.2d, x10
-	fmov	x10, d0
-	fmov	x11, d2
-	fmov	x12, d1
-	fmov	x13, d3
-	mov	x16, v1.d[1]
-	add	v0.2d, v2.2d, v4.2d
-	add	v2.2d, v3.2d, v4.2d
-	mul	x11, x10, x11
-	mul	x13, x12, x13
-	fmov	x14, d0
-	mov	x15, v0.d[1]
-	mov	x17, v2.d[1]
-	mul	x8, x9, x8
-	fmov	d0, x11
-	mul	x10, x14, x10
-	fmov	x14, d2
-	fmov	d2, x13
-	mul	x9, x15, x9
-	mov	v0.d[1], x8
-	mul	x12, x14, x12
-	mov	x14, v3.d[1]
-	fmov	d1, x10
-	mul	x15, x17, x16
-	mul	x14, x16, x14
-	mov	v1.d[1], x9
-	fmov	d3, x12
-	mov	v3.d[1], x15
-	cmeq	v0.2d, v1.2d, v0.2d
-	mov	v2.d[1], x14
-	cmeq	v2.2d, v3.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v2.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x0, x1
+	add	x9, x0, x8
+	cmp	x9, x8
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000401:                   // @func0000000000000401
+// %bb.0:                               // %entry
+	mul	x8, x0, x1
+	add	x9, x0, x8
+	cmp	x9, x8
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000404:                   // @func0000000000000404
+// %bb.0:                               // %entry
+	mul	x8, x0, x1
+	add	x9, x0, x8
+	cmp	x9, x8
+	cset	w0, lo
 	ret
                                         // -- End function

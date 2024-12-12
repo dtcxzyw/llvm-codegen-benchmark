@@ -1,5 +1,5 @@
 
-; 122 occurrences:
+; 118 occurrences:
 ; abc/optimized/cbaWriteVer.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/ACLoader.cpp.ll
@@ -46,7 +46,6 @@
 ; folly/optimized/Uri.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/type1.c.ll
-; git/optimized/apply.ll
 ; git/optimized/refs.ll
 ; git/optimized/wildmatch.ll
 ; glslang/optimized/hlslParseables.cpp.ll
@@ -85,6 +84,7 @@
 ; oiio/optimized/xmp.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; openjdk/optimized/vectorIntrinsics.ll
+; openjdk/optimized/verifier.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; openssl/optimized/libcrypto-lib-v3_utl.ll
 ; openssl/optimized/libcrypto-shlib-v3_utl.ll
@@ -98,15 +98,11 @@
 ; proxygen/optimized/HTTPHeaders.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; ruby/optimized/dir.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; spike/optimized/socketif.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; wireshark/optimized/packet-atm.c.ll
-; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-cops.c.ll
 ; wireshark/optimized/packet-epl.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
@@ -126,13 +122,12 @@
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 47
-  %4 = and i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 168 occurrences:
-; actix-rs/optimized/10n8xwgzwz186p0h.ll
+; 173 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/3a93ytv6s0x7lrtz.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
@@ -300,16 +295,22 @@ entry:
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = and i1 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 63 occurrences:
+; 68 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; hermes/optimized/IREval.cpp.ll
@@ -359,12 +360,12 @@ entry:
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
 ; nlohmann_json/optimized/unit-user_defined_input.cpp.ll
 ; node/optimized/libnode.crypto_common.ll
+; openjdk/optimized/verifier.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; php/optimized/url.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; qemu/optimized/chardev_char-hmp-cmds.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
@@ -372,18 +373,22 @@ entry:
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
-; yosys/optimized/firrtl.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -26
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
 
-; 17 occurrences:
-; actix-rs/optimized/10n8xwgzwz186p0h.ll
+; 11 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/3a93ytv6s0x7lrtz.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
@@ -391,21 +396,29 @@ entry:
 ; actix-rs/optimized/3tnlvci61w0nl5yv.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
-; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; ockam-rs/optimized/37q648fnmlksdgjw.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
-; redis/optimized/sds.ll
-; simdjson/optimized/simdjson.cpp.ll
-; typst-rs/optimized/26ex1w19ixz6ifuk.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ugt i8 %2, 1
+  %3 = icmp ugt i8 %2, 31
   %4 = and i1 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; llvm/optimized/SLPVectorizer.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; yosys/optimized/firrtl.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %2, 58
+  %4 = and i1 %3, %1
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -417,7 +430,18 @@ entry:
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
+  %5 = or i1 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i8 %2, 3
+  %4 = and i1 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

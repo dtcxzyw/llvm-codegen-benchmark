@@ -29,7 +29,28 @@ func0000000000000011:                   # @func0000000000000011
 	cmovel	%ecx, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000031:                   # @func0000000000000031
+	xorl	%ecx, %ecx
+	cmpl	$127, %edx
+	seta	%cl
+	shll	$6, %ecx
+	addl	$64, %ecx
+	xorl	%eax, %eax
+	testb	$1, %sil
+	cmovel	%ecx, %eax
+	orl	%edi, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%ecx, %ecx
+	cmpl	$65536, %edx                    # imm = 0x10000
+	setb	%cl
+	shll	$16, %ecx
+	xorl	%eax, %eax
+	testb	$1, %sil
+	cmovel	%ecx, %eax
+	orl	%edi, %eax
+	retq
+func0000000000000029:                   # @func0000000000000029
 	xorl	%ecx, %ecx
 	cmpl	$1048, %edx                     # imm = 0x418
 	setae	%cl

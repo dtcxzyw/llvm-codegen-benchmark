@@ -1,10 +1,9 @@
 
-; 96 occurrences:
+; 93 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; brotli/optimized/encode.c.ll
-; cpython/optimized/Hacl_Hash_SHA3.ll
 ; cpython/optimized/fuzzer.ll
 ; icu/optimized/tzfmt.ll
 ; lief/optimized/File.cpp.ll
@@ -27,8 +26,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 78 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcPart.c.ll
@@ -69,6 +69,7 @@
 ; abc/optimized/wlcNdr.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
+; boost/optimized/to_chars.ll
 ; gromacs/optimized/gmx_angle.cpp.ll
 ; grpc/optimized/timeout_encoding.cc.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
@@ -82,7 +83,7 @@ define i64 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -99,7 +100,7 @@ define i64 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -112,7 +113,7 @@ define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 5
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -225,7 +226,7 @@ define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2048
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -237,7 +238,7 @@ define i64 @func0000000000000052(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
   %3 = zext i1 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -252,12 +253,12 @@ define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
 
-; 94 occurrences:
+; 93 occurrences:
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/arith_ite_utils.cpp.ll
 ; cvc5/optimized/bounded_integers.cpp.ll
@@ -313,7 +314,6 @@ entry:
 ; cvc5/optimized/sep_skolem_emp.cpp.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; cvc5/optimized/single_inv_partition.cpp.ll
-; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/strings_entail.cpp.ll
 ; cvc5/optimized/subs_minimize.cpp.ll
@@ -357,19 +357,7 @@ define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
-  %5 = sext i32 %4 to i64
-  ret i64 %5
-}
-
-; 1 occurrences:
-; libwebp/optimized/huffman_encode_utils.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000060(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

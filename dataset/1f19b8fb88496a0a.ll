@@ -43,7 +43,7 @@ entry:
   ret i64 %4
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; delta-rs/optimized/1x96nto90vd3u3mo.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; delta-rs/optimized/5f0eiaabmf6x2cpj.ll
@@ -68,6 +68,7 @@ entry:
 ; ockam-rs/optimized/6i1m1ipgbjjr3bk.ll
 ; ockam-rs/optimized/8vw3dw8isly7xg2.ll
 ; openjdk/optimized/psParallelCompact.ll
+; zed-rs/optimized/driumlpfhwzx6147be2mcsi4u.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

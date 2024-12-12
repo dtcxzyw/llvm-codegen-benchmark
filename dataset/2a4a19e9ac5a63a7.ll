@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; lvgl/optimized/lv_demo_widgets.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; ncnn/optimized/gridsample_x86.cpp.ll
 ; ncnn/optimized/gridsample_x86_avx.cpp.ll

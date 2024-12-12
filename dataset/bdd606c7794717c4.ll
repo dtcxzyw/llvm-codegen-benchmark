@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 41 occurrences:
 ; arrow/optimized/type.cc.ll
 ; c3c/optimized/codegen_asm.c.ll
 ; duckdb/optimized/ub_duckdb_transformer_statement.cpp.ll
@@ -36,7 +36,11 @@
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wireshark/optimized/packet-ieee80211-radiotap-iter.c.ll
+; yoga/optimized/AbsoluteLayout.cpp.ll
 ; z3/optimized/tbv.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i32 %0) #0 {
 entry:
@@ -55,17 +59,6 @@ entry:
   %1 = shl nsw i32 %0, 3
   %2 = lshr i32 4, %1
   %3 = trunc nuw nsw i32 %2 to i8
-  ret i8 %3
-}
-
-; 1 occurrences:
-; spike/optimized/interactive.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000008(i32 %0) #0 {
-entry:
-  %1 = shl nsw i32 %0, 3
-  %2 = lshr i32 1792835, %1
-  %3 = trunc i32 %2 to i8
   ret i8 %3
 }
 

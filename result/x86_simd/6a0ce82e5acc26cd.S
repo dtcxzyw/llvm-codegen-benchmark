@@ -38,17 +38,33 @@ func0000000000000004:                   # @func0000000000000004
 	vzeroupper
 	retq
 .LCPI5_0:
-	.quad	61471                           # 0xf01f
-func0000000000000001:                   # @func0000000000000001
+	.quad	248                             # 0xf8
+func0000000000000014:                   # @func0000000000000014
 	vpandq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm1
-	vpcmpeqq	%ymm0, %ymm1, %k0
+	vpcmpltuq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI6_0:
+	.quad	61471                           # 0xf01f
+func0000000000000001:                   # @func0000000000000001
+	vpandq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
+	vpcmpeqq	%ymm0, %ymm1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.quad	127                             # 0x7f
+func0000000000000018:                   # @func0000000000000018
+	vpandq	.LCPI7_0(%rip){1to4}, %ymm1, %ymm1
+	vpcmpnleuq	%ymm0, %ymm1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI8_0:
 	.quad	4611686018427387903             # 0x3fffffffffffffff
 func0000000000000009:                   # @func0000000000000009
-	vpandq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
+	vpandq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpnltuq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -60,18 +76,39 @@ func0000000000000005:                   # @func0000000000000005
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI8_0:
+func0000000000000019:                   # @func0000000000000019
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpblendd	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7]
+	vpcmpnltuq	%ymm0, %ymm1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000015:                   # @func0000000000000015
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpblendd	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7]
+	vpcmpleuq	%ymm0, %ymm1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000011:                   # @func0000000000000011
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpblendd	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7]
+	vpcmpeqq	%ymm0, %ymm1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI13_0:
 	.quad	67108863                        # 0x3ffffff
 func000000000000000b:                   # @func000000000000000b
-	vpandq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm1
+	vpandq	.LCPI13_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpnltq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI9_0:
+.LCPI14_0:
 	.quad	2147483647                      # 0x7fffffff
 func0000000000000007:                   # @func0000000000000007
-	vpandq	.LCPI9_0(%rip){1to4}, %ymm1, %ymm1
+	vpandq	.LCPI14_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpleq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

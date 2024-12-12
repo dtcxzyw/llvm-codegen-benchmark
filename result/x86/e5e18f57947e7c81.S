@@ -1,56 +1,56 @@
-func00000000000001f6:                   # @func00000000000001f6
+func00000000000003e6:                   # @func00000000000003e6
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	leal	13(%rax,%rsi), %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000003f8:                   # @func00000000000003f8
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	leal	13(%rax,%rsi), %eax
-	cmpl	%edi, %eax
-	setb	%al
-	retq
-func00000000000001f4:                   # @func00000000000001f4
-	movzbl	%dl, %eax
-	shll	$8, %eax
-	leal	13(%rax,%rsi), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	seta	%al
 	retq
-func00000000000001f1:                   # @func00000000000001f1
+func00000000000003f4:                   # @func00000000000003f4
+	movzbl	%dl, %eax
+	shll	$8, %eax
+	leal	13(%rax,%rsi), %eax
+	cmpl	%eax, %edi
+	setb	%al
+	retq
+func00000000000003e1:                   # @func00000000000003e1
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	leal	1(%rax,%rsi), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func00000000000001d4:                   # @func00000000000001d4
+func00000000000003a4:                   # @func00000000000003a4
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	leal	-1(%rax,%rsi), %eax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq
-func00000000000001d6:                   # @func00000000000001d6
+func00000000000003a6:                   # @func00000000000003a6
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	leal	-6(%rax,%rsi), %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
-func00000000000001dc:                   # @func00000000000001dc
+func00000000000003ac:                   # @func00000000000003ac
 	movzbl	%dl, %eax
 	shll	$16, %eax
-	leal	-43(%rax,%rsi), %eax
-	cmpl	%edi, %eax
+	leal	-43(%rsi,%rax), %eax
+	cmpl	%eax, %edi
 	setne	%al
 	retq
-func00000000000001f9:                   # @func00000000000001f9
+func00000000000003f9:                   # @func00000000000003f9
 	movzbl	%dl, %eax
 	shll	$10, %eax
-	leal	6(%rax,%rsi), %eax
-	cmpl	%edi, %eax
-	setbe	%al
+	leal	6(%rsi,%rax), %eax
+	cmpl	%eax, %edi
+	setae	%al
 	retq

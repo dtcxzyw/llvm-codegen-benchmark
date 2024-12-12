@@ -11,7 +11,7 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; flac/optimized/stream_decoder.c.ll
 ; llvm/optimized/SourceMgr.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
@@ -20,6 +20,8 @@ entry:
 ; postgres/optimized/inet_net_pton.ll
 ; ruby/optimized/pm_newline_list.ll
 ; spike/optimized/f64_div.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

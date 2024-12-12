@@ -5,7 +5,7 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp ne i32 %2, 4
@@ -21,7 +21,7 @@ entry:
 ; linux/optimized/blk-mq.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 16
   %3 = icmp eq i8 %2, 0
@@ -31,15 +31,14 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/alternative.ll
-; linux/optimized/mii.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; nlohmann_json/optimized/unit-byte_container_with_subtype.cpp.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
 ; nlohmann_json/optimized/unit-pointer_access.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 8
   %3 = icmp ne i8 %2, 0

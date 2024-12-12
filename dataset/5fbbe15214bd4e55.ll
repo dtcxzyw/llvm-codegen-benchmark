@@ -1,9 +1,10 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; linux/optimized/xfrm_replay.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll
 ; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
 ; postgres/optimized/tsgistidx.ll

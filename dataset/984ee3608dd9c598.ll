@@ -1,14 +1,13 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/pt.ll
-; linux/optimized/utaddress.ll
 ; rand-rs/optimized/2lnmku48it2ei9m4.ll
 ; rocksdb/optimized/format.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -53
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
@@ -84,12 +83,11 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; libwebp/optimized/frame_enc.c.ll
 ; linux/optimized/amd64-agp.ll
 ; linux/optimized/early_ioremap.ll
 ; linux/optimized/iov_iter.ll
-; linux/optimized/map.ll
 ; linux/optimized/xhci-ring.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {

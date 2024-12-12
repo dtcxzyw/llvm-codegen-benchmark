@@ -12,7 +12,7 @@ entry:
   ret i32 %7
 }
 
-; 22 occurrences:
+; 20 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; gromacs/optimized/gmx_nmens.cpp.ll
@@ -22,14 +22,12 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libpng/optimized/pngwrite.c.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/nfs3xdr.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; ncnn/optimized/modelbin.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openjdk/optimized/constMethod.ll
-; postgres/optimized/trigger.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; redis/optimized/bitops.ll
 ; sentencepiece/optimized/sentencepiece_model.pb.cc.ll

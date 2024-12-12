@@ -1,8 +1,7 @@
-func0000000000000241:                   # @func0000000000000241
+func0000000000000c81:                   # @func0000000000000c81
 	sext.w	a1, a1
-	li	a3, 12
-	bgeu	a1, a3, .LBB0_2
-	addi	a0, a2, 28
-.LBB0_2:                                # %entry
+	sltiu	a1, a1, 12
+	not	a1, a1
 	seqz	a0, a0
+	and	a0, a0, a1
 	ret

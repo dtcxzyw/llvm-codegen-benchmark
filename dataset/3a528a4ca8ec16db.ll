@@ -1,5 +1,6 @@
 
-; 22 occurrences:
+; 24 occurrences:
+; boost/optimized/limit_fd.ll
 ; cmake/optimized/Terminal.c.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; cpython/optimized/_stat.ll
@@ -22,6 +23,7 @@
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; wasmtime-rs/optimized/jqxcpn1is9b9z0t.ll
 ; wireshark/optimized/packet-geonw.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:
@@ -32,9 +34,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/aigRet.c.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; Function Attrs: nounwind
@@ -47,7 +48,7 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; hyperscan/optimized/castle.c.ll
@@ -68,6 +69,8 @@ entry:
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
@@ -106,7 +109,8 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {

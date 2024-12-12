@@ -1,5 +1,5 @@
 .LCPI0_0:
-	.long	2147549184                      # 0x80010000
+	.long	16                              # 0x10
 .LCPI0_2:
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0

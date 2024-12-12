@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ifSat.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = add nsw i32 %3, %1
@@ -41,9 +41,33 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -3
+  %4 = add i32 %3, %1
+  %5 = icmp slt i32 %4, -99
+  %6 = select i1 %5, i32 6, i32 %0
+  ret i32 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -3
+  %4 = add i32 %3, %1
+  %5 = icmp sgt i32 %4, 99
+  %6 = select i1 %5, i32 5, i32 %0
+  ret i32 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -25
   %4 = add nsw i32 %3, %1
@@ -55,7 +79,7 @@ entry:
 ; 1 occurrences:
 ; pbrt-v4/optimized/samples.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 6
   %4 = add nsw i32 %3, %1

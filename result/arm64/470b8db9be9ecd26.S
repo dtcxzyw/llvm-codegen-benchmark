@@ -1,10 +1,10 @@
-func000000000000000a:                   // @func000000000000000a
+func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
 	tst	w1, #0x1
-	mov	x8, #1152921504606846975        // =0xfffffffffffffff
+	mov	w8, #65535                      // =0xffff
 	csel	x8, x2, x8, ne
-	add	x8, x0, x8, lsl #3
-	add	x0, x8, #600
+	add	x8, x0, x8
+	add	x0, x8, #5
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000

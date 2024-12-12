@@ -1,12 +1,12 @@
 func0000000000000018:                   # @func0000000000000018
 	imulq	%rdx, %rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	setne	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	imulq	%rdx, %rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq

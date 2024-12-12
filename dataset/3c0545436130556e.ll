@@ -1,12 +1,12 @@
 
 ; 1 occurrences:
-; linux/optimized/ff-memless.ll
+; boost/optimized/gregorian.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000000(i32 %0) #0 {
+define i16 @func0000000000000005(i32 %0) #0 {
 entry:
-  %1 = trunc i32 %0 to i16
-  %2 = add i16 %1, 360
-  %3 = urem i16 %2, 360
+  %1 = trunc nsw i32 %0 to i16
+  %2 = add nsw i16 %1, 700
+  %3 = urem i16 %2, 7
   ret i16 %3
 }
 

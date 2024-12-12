@@ -35,7 +35,6 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/blk-map.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/process_vm_access.ll
 ; linux/optimized/regcache-rbtree.ll
 ; linux/optimized/rsrc.ll
@@ -58,6 +57,7 @@ entry:
 ; qemu/optimized/util_hbitmap.c.ll
 ; spike/optimized/urstsa32.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:

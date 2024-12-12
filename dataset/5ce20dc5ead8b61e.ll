@@ -4,7 +4,7 @@
 ; glslang/optimized/ParseHelper.cpp.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 1
@@ -23,7 +23,7 @@ entry:
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 1
@@ -32,9 +32,8 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/extraUtilSupp.c.ll
-; linux/optimized/uid16.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/Flang.cpp.ll
 ; llvm/optimized/InitPreprocessor.cpp.ll
@@ -57,7 +56,7 @@ entry:
 ; llvm/optimized/MCStreamer.cpp.ll
 ; llvm/optimized/OSTargets.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i64 %0, i64 %1) #0 {
+define i32 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 2147483647

@@ -1,12 +1,12 @@
-func00000000000000e4:                   # @func00000000000000e4
+func00000000000001e4:                   # @func00000000000001e4
 	movl	%edx, %eax
 	leaq	4(%rsi,%rax), %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001e1:                   # @func00000000000001e1
 	movl	%edx, %eax
 	leaq	2(%rsi,%rax,2), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

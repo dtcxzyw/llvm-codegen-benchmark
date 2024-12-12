@@ -5,7 +5,7 @@
 ; openssl/optimized/libcrypto-lib-ec_mult.ll
 ; openssl/optimized/libcrypto-shlib-ec_mult.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000088(i32 %0) #0 {
+define i64 @func0000000000000108(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 1999
   %2 = select i1 %1, i64 6, i64 5
@@ -20,7 +20,7 @@ entry:
 ; verilator/optimized/V3EmitCImp.cpp.ll
 ; verilator/optimized/V3EmitCModel.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(i32 %0) #0 {
+define i64 @func0000000000000088(i32 %0) #0 {
 entry:
   %1 = icmp ult i32 %0, 9
   %2 = select i1 %1, i64 2, i64 1
@@ -260,7 +260,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000aa(i32 %0) #0 {
+define i64 @func000000000000014a(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, 999
   %2 = select i1 %1, i64 4, i64 3

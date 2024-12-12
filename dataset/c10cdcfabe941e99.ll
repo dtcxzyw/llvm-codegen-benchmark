@@ -4,7 +4,7 @@
 ; postgres/optimized/array_selfuncs.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = add nsw i32 %3, -1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/uarrsort.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = add nsw i32 %3, 1
@@ -29,7 +29,7 @@ entry:
 ; eastl/optimized/EADateTime.cpp.ll
 ; icu/optimized/number_longnames.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = add nsw i32 %3, 1

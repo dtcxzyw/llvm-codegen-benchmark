@@ -1,18 +1,18 @@
 
-%struct.object_id.2771052 = type { [32 x i8], i32 }
+%struct.object_id.2883240 = type { [32 x i8], i32 }
 
 ; 3 occurrences:
 ; luau/optimized/BytecodeAnalysis.cpp.ll
 ; php/optimized/zend_alloc.ll
 ; ruby/optimized/sha2.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 63
   %4 = add nuw nsw i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw [64 x i8], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [64 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -55,26 +55,26 @@ entry:
 ; git/optimized/resolve-undo.ll
 ; git/optimized/wt-status.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
   %3 = and i32 %2, 3
   %4 = add nsw i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw [3 x %struct.object_id.2771052], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [3 x %struct.object_id.2883240], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 27
   %3 = and i32 %2, 3
   %4 = add nsw i32 %3, -1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw [3 x i16], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [3 x i16], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

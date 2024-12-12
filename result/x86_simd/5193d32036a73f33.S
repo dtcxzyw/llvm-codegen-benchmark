@@ -15,7 +15,7 @@ func0000000000000003:                   # @func0000000000000003
 	vpslld	$11, %ymm2, %ymm2
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm2, %ymm2
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI2_0:
 	.long	4294967292                      # 0xfffffffc
@@ -35,5 +35,5 @@ func0000000000000017:                   # @func0000000000000017
 	vpslld	$4, %ymm2, %ymm2
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
 	vpandd	.LCPI3_1(%rip){1to8}, %ymm2, %ymm2
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq

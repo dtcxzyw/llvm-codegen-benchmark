@@ -1,19 +1,16 @@
 
-; 44 occurrences:
+; 42 occurrences:
 ; cmake/optimized/SystemTools.cxx.ll
 ; cvc5/optimized/justification_strategy.cpp.ll
 ; cvc5/optimized/nl_model.cpp.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; git/optimized/match-trees.ll
-; gromacs/optimized/dorm2l.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; grpc/optimized/grpc_authorization_engine.cc.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/intel_uncore.ll
-; linux/optimized/mpi-cmp.ll
 ; linux/optimized/nexthop.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -44,6 +41,7 @@
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

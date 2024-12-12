@@ -1,4 +1,4 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000030:                   # @func0000000000000030
 	subq	%rdi, %rsi
 	leaq	4151(%rsi), %rax
 	andq	$-4096, %rax                    # imm = 0xF000

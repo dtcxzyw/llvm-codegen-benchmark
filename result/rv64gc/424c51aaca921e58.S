@@ -1,23 +1,23 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a1
 	li	a2, 45
 	bne	a1, a2, .LBB0_2
 	negw	a0, a0
 .LBB0_2:                                # %entry
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sext.w	a1, a1
 	bgez	a1, .LBB1_2
 	negw	a0, a0
 .LBB1_2:                                # %entry
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sext.w	a1, a1
 	blez	a1, .LBB2_2
 	negw	a0, a0
 .LBB2_2:                                # %entry
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sext.w	a1, a1
 	li	a2, 2
 	bne	a1, a2, .LBB3_2
@@ -49,24 +49,17 @@ func000000000000000a:                   # @func000000000000000a
 	negw	a0, a0
 .LBB7_2:                                # %entry
 	ret
-func0000000000000014:                   # @func0000000000000014
-	sext.w	a2, a1
-	li	a1, 8
-	bgeu	a2, a1, .LBB8_2
+func0000000000000064:                   # @func0000000000000064
+	sext.w	a1, a1
+	li	a2, 2
+	bgeu	a1, a2, .LBB8_2
+	li	a1, 3
 	subw	a0, a1, a0
 .LBB8_2:                                # %entry
 	ret
-func0000000000000034:                   # @func0000000000000034
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a1, a1
-	li	a2, 2
-	bgeu	a1, a2, .LBB9_2
-	li	a1, 3
-	subw	a0, a1, a0
-.LBB9_2:                                # %entry
-	ret
-func000000000000001c:                   # @func000000000000001c
-	sext.w	a1, a1
-	beqz	a1, .LBB10_2
+	beqz	a1, .LBB9_2
 	negw	a0, a0
-.LBB10_2:                               # %entry
+.LBB9_2:                                # %entry
 	ret

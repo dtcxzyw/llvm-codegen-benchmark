@@ -5,11 +5,11 @@
 ; sentencepiece/optimized/builder.cc.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a61(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000038c1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %.v = call i64 @llvm.smin.i64(i64 %1, i64 12)
   %3 = getelementptr nusw i8, ptr %2, i64 %.v
-  %4 = icmp eq ptr %3, %0
+  %4 = icmp eq ptr %0, %3
   ret i1 %4
 }
 

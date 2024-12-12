@@ -11,7 +11,7 @@
 ; llvm/optimized/SplitKit.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -23,7 +23,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i64 %1) #0 {
+define i1 @func000000000000018a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 4
@@ -38,7 +38,7 @@ entry:
 ; gromacs/optimized/strmm.cpp.ll
 ; gromacs/optimized/strsm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -52,7 +52,7 @@ entry:
 ; gromacs/optimized/sdot.cpp.ll
 ; icu/optimized/ucnv_u8.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ea(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001ca(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 5

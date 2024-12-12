@@ -1,4 +1,6 @@
 
+%"class.llvm::MCInstrDesc.3139227" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+
 ; 8 occurrences:
 ; linux/optimized/ahci.ll
 ; linux/optimized/dm.ll
@@ -17,7 +19,7 @@ entry:
   ret ptr %4
 }
 
-; 136 occurrences:
+; 124 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; c3c/optimized/llvm_codegen_function.c.ll
@@ -38,7 +40,6 @@ entry:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libquic/optimized/string_number_conversions.cc.ll
 ; linux/optimized/buffered-io.ll
-; linux/optimized/fils_aead.ll
 ; linux/optimized/gro.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/mlme.ll
@@ -52,11 +53,6 @@ entry:
 ; linux/optimized/udp.ll
 ; linux/optimized/wpa.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
-; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
-; llvm/optimized/AArch64FastISel.cpp.ll
-; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
-; llvm/optimized/AArch64RegisterInfo.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/AggressiveAntiDepBreaker.cpp.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
@@ -68,7 +64,6 @@ entry:
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/CriticalAntiDepBreaker.cpp.ll
 ; llvm/optimized/DbgEntityHistoryCalculator.cpp.ll
@@ -76,6 +71,7 @@ entry:
 ; llvm/optimized/DeclPrinter.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/FrontendActions.cpp.ll
+; llvm/optimized/GISelKnownBits.cpp.ll
 ; llvm/optimized/IRTranslator.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
@@ -88,7 +84,6 @@ entry:
 ; llvm/optimized/MachineRegisterInfo.cpp.ll
 ; llvm/optimized/MachineSink.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
-; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
@@ -102,12 +97,6 @@ entry:
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/WasmEHPrepare.cpp.ll
 ; llvm/optimized/WinEHPrepare.cpp.ll
-; llvm/optimized/X86DynAllocaExpander.cpp.ll
-; llvm/optimized/X86FastISel.cpp.ll
-; llvm/optimized/X86FixupLEAs.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
@@ -154,50 +143,67 @@ entry:
 ; wireshark/optimized/packet-dcerpc-pn-io.c.ll
 ; wireshark/optimized/packet-epl.c.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = select i1 %2, i64 4176, i64 4184
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; oiio/optimized/psdinput.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp slt i16 %1, -1
   %3 = select i1 %2, i64 24, i64 16
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 1 occurrences:
-; llvm/optimized/DWARFVerifier.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i16 %1) #0 {
-entry:
-  %2 = icmp ult i16 %1, 5
-  %3 = select i1 %2, i64 144, i64 152
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 2 occurrences:
-; llvm/optimized/GISelKnownBits.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
-entry:
-  %2 = icmp eq i16 %1, 0
-  %3 = select i1 %2, i64 24, i64 40
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 1 occurrences:
+; 14 occurrences:
+; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
+; llvm/optimized/AArch64RegisterInfo.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
+; llvm/optimized/X86DynAllocaExpander.cpp.ll
+; llvm/optimized/X86FastISel.cpp.ll
+; llvm/optimized/X86FixupLEAs.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; llvm/optimized/X86InstructionSelector.cpp.ll
+; llvm/optimized/X86OptimizeLEAs.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp eq i16 %1, 12
+  %3 = select i1 %2, i64 -4622, i64 -4623
+  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3139227", ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 3 occurrences:
+; llvm/optimized/DWARFVerifier.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/ThreadSafetyCommon.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp ult i16 %1, 5
+  %3 = select i1 %2, i64 144, i64 152
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 3 occurrences:
+; linux/optimized/intel_wm.ll
+; llvm/optimized/DWARFUnit.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000023(ptr %0, i16 %1) #0 {
@@ -208,25 +214,25 @@ entry:
   ret ptr %4
 }
 
-; 2 occurrences:
-; imgui/optimized/imgui_tables.cpp.ll
-; llvm/optimized/SubtargetEmitter.cpp.ll
+; 1 occurrences:
+; llvm/optimized/ThreadSafetyCommon.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000012(ptr %0, i16 %1) #0 {
 entry:
-  %2 = icmp sgt i16 %1, -1
-  %3 = select i1 %2, i64 5, i64 4
+  %2 = icmp ult i16 %1, 6
+  %3 = select i1 %2, i64 -72, i64 -48
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 1 occurrences:
-; llvm/optimized/TargetLowering.cpp.ll
+; 2 occurrences:
+; imgui/optimized/imgui_tables.cpp.ll
+; llvm/optimized/SubtargetEmitter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000013(ptr %0, i16 %1) #0 {
+define ptr @func000000000000002b(ptr %0, i16 %1) #0 {
 entry:
-  %2 = icmp ult i16 %1, 173
-  %3 = select i1 %2, i64 60, i64 52
+  %2 = icmp sgt i16 %1, -1
+  %3 = select i1 %2, i64 5, i64 4
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
@@ -243,31 +249,30 @@ entry:
   ret ptr %4
 }
 
-; 3 occurrences:
-; icu/optimized/normalizer2impl.ll
-; linux/optimized/intel_wm.ll
-; llvm/optimized/DWARFUnit.cpp.ll
+; 1 occurrences:
+; openusd/optimized/refinerSurfaceFactory.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000010(ptr %0, i16 %1) #0 {
 entry:
-  %2 = icmp ugt i16 %1, 4
-  %3 = select i1 %2, i64 272, i64 264
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %2 = icmp ult i16 %1, 2
+  %3 = select i1 %2, i64 1, i64 -2
+  %4 = getelementptr i32, ptr %0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; cvc5/optimized/theory_sep.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i16 %1) #0 {
 entry:
   %.not = icmp eq i16 %1, 18
   %2 = select i1 %.not, i64 416, i64 408
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   ret ptr %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/ginutil.ll
 ; postgres/optimized/hashutil.ll
 ; postgres/optimized/indextuple.ll
@@ -277,6 +282,17 @@ entry:
   %2 = icmp sgt i16 %1, -1
   %3 = select i1 %2, i64 8, i64 16
   %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; icu/optimized/normalizer2impl.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000022(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp ugt i16 %1, 1
+  %3 = select i1 %2, i64 -2, i64 0
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

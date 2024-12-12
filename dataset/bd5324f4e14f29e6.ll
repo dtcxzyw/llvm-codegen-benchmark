@@ -1,7 +1,7 @@
 
-%"class.ZXing::Trit.3465387" = type { i8 }
+%"class.ZXing::Trit.3649655" = type { i8 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/RawImage.cpp.ll
@@ -11,11 +11,12 @@
 ; llvm/optimized/SemaChecking.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_shift.ll
 ; openssl/optimized/libcrypto-shlib-bn_shift.ll
+; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i64, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   %5 = getelementptr i64, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
@@ -41,10 +42,8 @@ entry:
   ret ptr %6
 }
 
-; 32 occurrences:
+; 22 occurrences:
 ; arrow/optimized/key_hash.cc.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; llvm/optimized/InterferenceCache.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
@@ -64,8 +63,22 @@ entry:
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; openjdk/optimized/hb-buffer.ll
+; openjdk/optimized/block.ll
 ; openjdk/optimized/node.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 1
+  ret ptr %6
+}
+
+; 11 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; llvm/optimized/InterferenceCache.cpp.ll
+; openjdk/optimized/hb-buffer.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
 ; z3/optimized/bv_elim.cpp.ll
 ; z3/optimized/model_evaluator.cpp.ll
@@ -75,24 +88,11 @@ entry:
 ; z3/optimized/pull_quant.cpp.ll
 ; z3/optimized/used_vars.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 1
-  ret ptr %6
-}
-
-; 2 occurrences:
-; openjdk/optimized/block.ll
-; openjdk/optimized/node.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = getelementptr ptr, ptr %0, i64 %3
-  %5 = getelementptr ptr, ptr %4, i64 %1
+  %4 = getelementptr nusw nuw double, ptr %0, i64 %3
+  %5 = getelementptr double, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
 }
@@ -109,11 +109,10 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
-; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000073(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i16, ptr %0, i64 %3
@@ -125,33 +124,27 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
   %5 = getelementptr i16, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 6
   ret ptr %6
 }
 
-; 12 occurrences:
-; abc/optimized/blocksort.c.ll
-; abc/optimized/cutTruth.c.ll
-; abc/optimized/giaSwitch.c.ll
-; cmake/optimized/blocksort.c.ll
+; 6 occurrences:
 ; darktable/optimized/OlympusDecompressor.cpp.ll
 ; darktable/optimized/SamsungV0Decompressor.cpp.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; icu/optimized/bytestriebuilder.ll
-; llvm/optimized/ExprMutationAnalyzer.cpp.ll
-; llvm/optimized/GtestMatchers.cpp.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000005e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
   %5 = getelementptr i16, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -4
   ret ptr %6
@@ -160,19 +153,17 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000068(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000006c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw float, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
   %5 = getelementptr float, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 52
   ret ptr %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000032(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -183,7 +174,19 @@ entry:
   ret ptr %6
 }
 
-; 16 occurrences:
+; 1 occurrences:
+; darktable/optimized/UncompressedDecompressor.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
+  %5 = getelementptr i16, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 2
+  ret ptr %6
+}
+
+; 15 occurrences:
 ; abc/optimized/deflate.c.ll
 ; cmake/optimized/deflate.c.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
@@ -191,7 +194,6 @@ entry:
 ; libquic/optimized/deflate.c.ll
 ; llvm/optimized/AArch64PBQPRegAlloc.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
-; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; sqlite/optimized/sqlite3.ll
@@ -201,23 +203,64 @@ entry:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
   %5 = getelementptr i16, ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 2
+  %6 = getelementptr i8, ptr %5, i64 14
+  ret ptr %6
+}
+
+; 1 occurrences:
+; darktable/optimized/RawImageDataFloat.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
+  %5 = getelementptr float, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 4
+  ret ptr %6
+}
+
+; 6 occurrences:
+; abc/optimized/blocksort.c.ll
+; abc/optimized/cutTruth.c.ll
+; abc/optimized/giaSwitch.c.ll
+; cmake/optimized/blocksort.c.ll
+; llvm/optimized/ExprMutationAnalyzer.cpp.ll
+; llvm/optimized/GtestMatchers.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr i16, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -2
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr i16, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 2
+  ret ptr %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000040(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 2
   ret ptr %6
 }
@@ -240,8 +283,8 @@ entry:
 define ptr @func0000000000000030(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %"class.ZXing::Trit.3465387", ptr %0, i64 %3
-  %5 = getelementptr %"class.ZXing::Trit.3465387", ptr %4, i64 %1
+  %4 = getelementptr %"class.ZXing::Trit.3649655", ptr %0, i64 %3
+  %5 = getelementptr %"class.ZXing::Trit.3649655", ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }
@@ -249,22 +292,35 @@ entry:
 ; 1 occurrences:
 ; node/optimized/simdutf.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000006e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
   %5 = getelementptr i16, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 2
+  ret ptr %6
+}
+
+; 2 occurrences:
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000033(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; openblas/optimized/dlalsa.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000005c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   %5 = getelementptr i32, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -4
   ret ptr %6

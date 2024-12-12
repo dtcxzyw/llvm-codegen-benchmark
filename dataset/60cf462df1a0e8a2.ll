@@ -4,7 +4,7 @@
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000e1(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %1, %2
   %4 = or disjoint i8 %3, %0

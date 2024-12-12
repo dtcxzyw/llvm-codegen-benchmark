@@ -3,7 +3,7 @@
 ; jq/optimized/main.ll
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0) #0 {
+define i32 @func00000000000000e1(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 %0, 1
   %2 = or disjoint i32 %1, 1
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/constMethod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0) #0 {
+define i32 @func0000000000000066(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 2
   %2 = or disjoint i32 %1, 2
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/methodHandles.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 24
   %2 = or disjoint i32 %1, 65536
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/fraImp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0) #0 {
+define i32 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 5
   %2 = or disjoint i32 %1, 1
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000076(i32 %0) #0 {
+define i32 @func00000000000000e6(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 %0, 1
   %2 = or disjoint i32 %1, 1

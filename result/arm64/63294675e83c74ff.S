@@ -1,13 +1,14 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	uzp1	v0.4s, v0.4s, v1.4s
-	rshrn	v0.4h, v0.4s, #12
+	add	x8, x0, #2048
+	lsr	x0, x8, #12
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	movi	v2.2d, #0000000000000000
-	uzp1	v0.4s, v0.4s, v1.4s
-	raddhn	v0.4h, v0.4s, v2.4s
+	add	x8, x0, #8, lsl #12             // =32768
+	lsr	x0, x8, #16
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function

@@ -1,5 +1,56 @@
 
-; 48 occurrences:
+; 41 occurrences:
+; abc/optimized/absGla.c.ll
+; abc/optimized/absGlaOld.c.ll
+; abc/optimized/absOut.c.ll
+; abc/optimized/bmcCexMin1.c.ll
+; abc/optimized/bmcCexTools.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/ifTune.c.ll
+; abc/optimized/llb1Reach.c.ll
+; abc/optimized/llb2Core.c.ll
+; abc/optimized/llb3Nonlin.c.ll
+; abc/optimized/utilCex.c.ll
+; bullet3/optimized/b3BulletFile.ll
+; bullet3/optimized/b3File.ll
+; cpython/optimized/_datetimemodule.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; libwebp/optimized/dec.c.ll
+; libwebp/optimized/enc.c.ll
+; libwebp/optimized/picture_csp_enc.c.ll
+; libwebp/optimized/sharpyuv_dsp.c.ll
+; libwebp/optimized/sharpyuv_sse2.c.ll
+; libwebp/optimized/yuv.c.ll
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_avx2.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; ncnn/optimized/convolution_x86_xop.cpp.ll
+; ncnn/optimized/mat_pixel.cpp.ll
+; opencv/optimized/color_yuv.dispatch.cpp.ll
+; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
+; opencv/optimized/hybrid_binarizer.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; openjdk/optimized/mlib_c_ImageAffine_BC.ll
+; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
+; openjdk/optimized/mlib_c_ImageAffine_BC_U16.ll
+; openusd/optimized/convolve.c.ll
+; openusd/optimized/reconintra.c.ll
+; stb/optimized/stb_image.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add nsw i32 %0, %3
+  %5 = ashr i32 %4, 11
+  ret i32 %5
+}
+
+; 46 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldRef.c.ll
 ; abc/optimized/absOldSat.c.ll
@@ -42,8 +93,6 @@
 ; openjdk/optimized/jidctint.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_U16.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/restoration.c.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
@@ -52,60 +101,8 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add i32 %3, %0
-  %5 = ashr i32 %4, 31
-  ret i32 %5
-}
-
-; 42 occurrences:
-; abc/optimized/absGla.c.ll
-; abc/optimized/absGlaOld.c.ll
-; abc/optimized/absOut.c.ll
-; abc/optimized/bmcCexMin1.c.ll
-; abc/optimized/bmcCexTools.c.ll
-; abc/optimized/giaIf.c.ll
-; abc/optimized/ifTune.c.ll
-; abc/optimized/llb1Reach.c.ll
-; abc/optimized/llb2Core.c.ll
-; abc/optimized/llb3Nonlin.c.ll
-; abc/optimized/utilCex.c.ll
-; bullet3/optimized/b3BulletFile.ll
-; bullet3/optimized/b3File.ll
-; cpython/optimized/_datetimemodule.ll
-; image-rs/optimized/244uszkx0e8t5ie1.ll
-; image-rs/optimized/2ndzmzcdt55acj4k.ll
-; libwebp/optimized/dec.c.ll
-; libwebp/optimized/enc.c.ll
-; libwebp/optimized/picture_csp_enc.c.ll
-; libwebp/optimized/sharpyuv_dsp.c.ll
-; libwebp/optimized/sharpyuv_sse2.c.ll
-; libwebp/optimized/yuv.c.ll
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
-; ncnn/optimized/mat_pixel.cpp.ll
-; opencv/optimized/color_yuv.dispatch.cpp.ll
-; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
-; opencv/optimized/hybrid_binarizer.cpp.ll
-; opencv/optimized/imgwarp.cpp.ll
-; openjdk/optimized/TransformHelper.ll
-; openjdk/optimized/mlib_c_ImageAffine_BC.ll
-; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
-; openjdk/optimized/mlib_c_ImageAffine_BC_U16.ll
-; openusd/optimized/convolve.c.ll
-; openusd/optimized/reconintra.c.ll
-; stb/optimized/stb_image.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
-  %5 = ashr i32 %4, 11
+  %4 = add i32 %0, %3
+  %5 = ashr i32 %4, 2
   ret i32 %5
 }
 
@@ -125,7 +122,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = ashr i32 %4, 11
   ret i32 %5
 }
@@ -167,7 +164,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = ashr i32 %4, 1
   ret i32 %5
 }

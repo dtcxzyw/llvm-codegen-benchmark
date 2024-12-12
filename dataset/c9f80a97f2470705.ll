@@ -1,7 +1,8 @@
 
-; 27 occurrences:
+; 30 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
@@ -27,6 +28,8 @@
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/4zpfk2x34146qelg.ll
 ; wireshark/optimized/packet-mysql.c.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -47,15 +50,19 @@ entry:
 ; zxing/optimized/GenericGFPoly.cpp.ll
 ; zxing/optimized/PDFModulusPoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = icmp ult i64 %2, %0
   ret i1 %3
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; just-rs/optimized/uwydcyn8qeoqoev.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:

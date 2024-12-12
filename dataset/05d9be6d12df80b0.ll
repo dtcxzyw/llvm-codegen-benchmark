@@ -1,9 +1,8 @@
 
-; 109 occurrences:
+; 106 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_stmts.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
 ; git/optimized/merge-ort.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/collationruleparser.ll
@@ -12,18 +11,13 @@
 ; icu/optimized/unistr.ll
 ; icu/optimized/util.ll
 ; linux/optimized/aspm.ll
-; linux/optimized/eth.ll
-; linux/optimized/gre_offload.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/ioam6.ll
-; linux/optimized/ip6_offload.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/vt.ll
-; linux/optimized/xfrm4_input.ll
-; linux/optimized/xfrm6_input.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -78,6 +72,9 @@
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
@@ -118,11 +115,8 @@ entry:
   ret i16 %4
 }
 
-; 55 occurrences:
+; 53 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
-; assimp/optimized/BlenderDNA.cpp.ll
-; assimp/optimized/BlenderScene.cpp.ll
-; assimp/optimized/PlyParser.cpp.ll
 ; clamav/optimized/events.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
@@ -161,6 +155,7 @@ entry:
 ; llvm/optimized/SCCPSolver.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaLambda.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; minetest/optimized/CImage.cpp.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openjdk/optimized/outStream.ll
@@ -171,7 +166,7 @@ entry:
 ; qemu/optimized/hw_net_ne2000.c.ll
 ; qemu/optimized/replay_replay-internal.c.ll
 ; quickjs/optimized/quickjs.ll
-; stockfish/optimized/tbprobe.ll
+; stb/optimized/stb_connected_components.c.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-kingfisher.c.ll
 ; Function Attrs: nounwind
@@ -203,7 +198,7 @@ entry:
   ret i16 %4
 }
 
-; 23 occurrences:
+; 29 occurrences:
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/rle.ll
@@ -227,6 +222,12 @@ entry:
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000005(i16 %0, i16 %1) #0 {
 entry:

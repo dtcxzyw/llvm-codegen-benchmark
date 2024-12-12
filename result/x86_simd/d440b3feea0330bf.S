@@ -51,7 +51,7 @@
 	.zero	1
 .LCPI0_3:
 	.zero	4,15
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpmovdb	%ymm1, %xmm1
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpltb	.LCPI0_1(%rip), %xmm1, %k1
@@ -113,7 +113,7 @@ func0000000000000034:                   # @func0000000000000034
 	.zero	1
 .LCPI1_3:
 	.zero	4,15
-func00000000000000b4:                   # @func00000000000000b4
+func0000000000000174:                   # @func0000000000000174
 	vpmovdb	%ymm1, %xmm1
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpltb	.LCPI1_1(%rip), %xmm1, %k1

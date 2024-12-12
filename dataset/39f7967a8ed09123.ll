@@ -17,9 +17,9 @@
 ; qemu/optimized/chardev_wctablet.c.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000080(i64 %0, ptr %1) #0 {
+define i32 @func00000000000000c0(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 160
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 160
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = trunc i64 %4 to i32
@@ -40,7 +40,8 @@ entry:
   ret i32 %6
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/numeric.ll
 ; git/optimized/apply.ll
 ; git/optimized/xutils.ll
 ; luajit/optimized/lib_string.ll
@@ -51,9 +52,9 @@ entry:
 ; stb/optimized/stb_sprintf.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i64 %0, ptr %1) #0 {
+define i32 @func00000000000000c1(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = trunc i64 %4 to i32
@@ -61,9 +62,8 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/decNumber.ll
-; linux/optimized/auth_unix.ll
 ; linux/optimized/deflate.ll
 ; postgres/optimized/varlena.ll
 ; wireshark/optimized/packet-http.c.ll
@@ -82,13 +82,27 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000008a(i64 %0, ptr %1) #0 {
+define i32 @func00000000000000ca(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 12
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 12
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = trunc nuw i64 %4 to i32
   %6 = add nuw i32 %5, 131072
+  ret i32 %6
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000080(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -5
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = trunc i64 %4 to i32
+  %6 = add i32 %5, 6
   ret i32 %6
 }
 

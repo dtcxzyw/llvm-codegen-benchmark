@@ -17,8 +17,9 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; linux/optimized/hdac_stream.ll
+; lvgl/optimized/lv_table.ll
 ; openblas/optimized/dlasyf.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
@@ -34,15 +35,14 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/dgetri.cpp.ll
 ; gromacs/optimized/sgetri.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; openblas/optimized/dgetri.c.ll
 ; sentencepiece/optimized/time.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp sgt i32 %2, %0

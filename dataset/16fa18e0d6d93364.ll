@@ -7,13 +7,13 @@
 ; linux/optimized/tcp_ipv4.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i8 %1) #0 {
 entry:
   %2 = shl i8 %1, 2
   %3 = and i8 %2, 60
   %4 = zext nneg i8 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 12
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 12
   ret ptr %6
 }
 

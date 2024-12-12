@@ -5,7 +5,7 @@ func0000000000000220:                   # @func0000000000000220
 	fli.s	fa5, 1.0
 	vmfeq.vf	v13, v8, fa5
 	vmor.mm	v8, v13, v12
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret
 func0000000000000108:                   # @func0000000000000108
 	fli.s	fa5, 1.0
@@ -14,7 +14,7 @@ func0000000000000108:                   # @func0000000000000108
 	fmv.w.x	fa5, zero
 	vmflt.vf	v13, v8, fa5
 	vmor.mm	v8, v13, v12
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret
 func0000000000000204:                   # @func0000000000000204
 	fli.s	fa5, min
@@ -22,5 +22,5 @@ func0000000000000204:                   # @func0000000000000204
 	vmfeq.vf	v12, v8, fa5
 	vmfne.vv	v13, v8, v8
 	vmor.mm	v8, v13, v12
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret

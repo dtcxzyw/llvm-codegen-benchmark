@@ -1,10 +1,11 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/luckyFast16.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; gromacs/optimized/edsam.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; openjdk/optimized/codeHeapState.ll
 ; openusd/optimized/yuv_scale.c.ll

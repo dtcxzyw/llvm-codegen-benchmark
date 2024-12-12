@@ -1,7 +1,15 @@
-func0000000000000001:                   # @func0000000000000001
+func000000000000002a:                   # @func000000000000002a
 	andi	a1, a1, 1
-	negw	a0, a0
+	add	a0, a0, a1
+	sext.h	a0, a0
+	slti	a0, a0, 128
+	xori	a0, a0, 1
+	ret
+func0000000000000001:                   # @func0000000000000001
 	zext.h	a0, a0
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	zext.h	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

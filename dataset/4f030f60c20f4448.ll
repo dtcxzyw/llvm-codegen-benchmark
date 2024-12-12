@@ -24,11 +24,9 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {
 entry:

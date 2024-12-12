@@ -1,34 +1,34 @@
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000039:                   # @func0000000000000039
+func0000000000000079:                   # @func0000000000000079
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func000000000000003b:                   # @func000000000000003b
+func000000000000006b:                   # @func000000000000006b
 	addi	a2, a2, 1
 	slt	a1, a2, a1
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	addi	a2, a2, 1
 	xor	a1, a1, a2
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	addi	a2, a2, 1
 	slt	a1, a2, a1
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000019:                   # @func0000000000000019
+func0000000000000029:                   # @func0000000000000029
 	addi	a2, a2, -16
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
@@ -40,7 +40,7 @@ func0000000000000009:                   # @func0000000000000009
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
 	or	a0, a0, a1
@@ -50,12 +50,12 @@ func0000000000000008:                   # @func0000000000000008
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addi	a2, a2, 7
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	addi	a2, a2, 14
 	sltu	a1, a1, a2
 	or	a0, a0, a1
@@ -66,11 +66,22 @@ func000000000000000c:                   # @func000000000000000c
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000017:                   # @func0000000000000017
+func0000000000000078:                   # @func0000000000000078
+	addi	a2, a2, 4
+	sltu	a1, a1, a2
+	or	a0, a0, a1
+	ret
+func0000000000000027:                   # @func0000000000000027
 	lui	a3, 21
 	addiw	a3, a3, 384
 	add	a2, a2, a3
 	slt	a1, a1, a2
+	xori	a1, a1, 1
+	or	a0, a0, a1
+	ret
+func0000000000000069:                   # @func0000000000000069
+	addi	a2, a2, 4
+	sltu	a1, a2, a1
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -85,19 +96,19 @@ func0000000000000004:                   # @func0000000000000004
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addi	a2, a2, 1087
 	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addi	a2, a2, 1
 	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	addi	a2, a2, 1
 	xor	a1, a1, a2
 	snez	a1, a1
@@ -109,12 +120,12 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addi	a2, a2, 8
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addi	a2, a2, -3
 	slt	a1, a1, a2
 	or	a0, a0, a1
@@ -125,7 +136,7 @@ func000000000000000b:                   # @func000000000000000b
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
 	or	a0, a0, a1

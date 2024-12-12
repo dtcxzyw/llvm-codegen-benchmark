@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; hwloc/optimized/memattrs.ll
 ; linux/optimized/md.ll
 ; opencv/optimized/persistence.cpp.ll
 ; openssl/optimized/libcommon-lib-ciphercommon_gcm.ll
@@ -22,7 +23,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, -1
   %3 = freeze i64 %1

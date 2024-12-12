@@ -240,7 +240,32 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %0, i32 %1, i32 %2
+  %4 = icmp samesign ugt i32 %3, 9
+  %5 = select i1 %4, i64 2, i64 1
+  ret i64 %5
+}
+
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; ozz-animation/optimized/animation.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %0, i32 %1, i32 %2
+  %4 = icmp ugt i32 %3, 999999999
+  %5 = select i1 %4, i64 10, i64 9
+  ret i64 %5
+}
+
+; 6 occurrences:
+; icu/optimized/hebrwcal.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -252,18 +277,6 @@ entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = icmp eq i32 %3, 4
   %5 = select i1 %4, i64 0, i64 4
-  ret i64 %5
-}
-
-; 2 occurrences:
-; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
-; ozz-animation/optimized/animation.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = select i1 %0, i32 %1, i32 %2
-  %4 = icmp ugt i32 %3, 63
-  %5 = select i1 %4, i64 4294967296, i64 0
   ret i64 %5
 }
 

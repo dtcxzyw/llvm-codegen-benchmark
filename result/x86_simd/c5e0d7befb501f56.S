@@ -35,7 +35,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpxor	%xmm2, %xmm2, %xmm2
 	vmovdqa	.LCPI0_0(%rip), %ymm3           # ymm3 = [0,33,34,35,36,37,38,39,2,41,42,43,44,45,46,47,4,49,50,51,52,53,54,55,6,57,58,59,60,61,62,63]
 	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpor	%ymm0, %ymm3, %ymm0
+	vpor	%ymm3, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.short	1023                            # 0x3ff
@@ -52,5 +52,5 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000000:                   # @func0000000000000000
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

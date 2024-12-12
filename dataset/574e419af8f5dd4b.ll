@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 63 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
@@ -38,6 +38,8 @@
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; llvm/optimized/SyntheticCountsUtils.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/craftdef.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
@@ -65,7 +67,7 @@
 define i16 @func0000000000000000(i16 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
@@ -80,32 +82,35 @@ entry:
 define i16 @func0000000000000003(i16 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i16
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   ret i16 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/clrs16.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i16
-  %3 = add nsw i16 %2, %0
+  %3 = add nsw i16 %0, %2
   ret i16 %3
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; coremark/optimized/core_list_join.c.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i16 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i16
-  %3 = add nuw i16 %2, %0
+  %3 = add nuw i16 %0, %2
   ret i16 %3
 }
 

@@ -5,9 +5,9 @@ func0000000000000001:                   # @func0000000000000001
 	addq	$-40, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	subq	%rdi, %rsi
-	andq	$-8, %rsi
-	leaq	8(%rsi), %rax
+	movq	%rsi, %rax
+	subq	%rdi, %rax
+	andq	$-8, %rax
 	retq
 func0000000000000003:                   # @func0000000000000003
 	subl	%edi, %esi

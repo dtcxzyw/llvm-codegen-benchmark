@@ -7,7 +7,7 @@
 ; pocketpy/optimized/compiler.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000030(i64 %0) #0 {
+define i8 @func0000000000000050(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 12
   %2 = icmp ugt i64 %1, 1

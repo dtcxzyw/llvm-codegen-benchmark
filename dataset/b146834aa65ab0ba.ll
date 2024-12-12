@@ -44,7 +44,7 @@
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = or disjoint i64 %3, 1
@@ -57,7 +57,7 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/s_addMagsF64.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 9
   %4 = or disjoint i64 %3, 2305843009213693952
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/qsat.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, 4294967295

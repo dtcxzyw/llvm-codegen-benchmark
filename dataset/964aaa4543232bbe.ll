@@ -44,7 +44,7 @@ entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = and i64 %1, -16
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp eq ptr %3, %0
+  %4 = icmp eq ptr %0, %3
   ret i1 %4
 }
 
@@ -65,7 +65,7 @@ entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = and i64 %1, -2
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ne ptr %3, %0
+  %4 = icmp ne ptr %0, %3
   ret i1 %4
 }
 

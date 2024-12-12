@@ -1,74 +1,44 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	ushr	v3.2d, v3.2d, #16
-	ushr	v2.2d, v2.2d, #16
-	sli	v2.2d, v0.2d, #5
-	sli	v3.2d, v1.2d, #5
-	mov	v0.16b, v2.16b
-	mov	v1.16b, v3.16b
+	ubfx	x8, x1, #16, #5
+	orr	x0, x8, x0, lsl #5
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ushr	v3.2d, v3.2d, #48
-	ushr	v2.2d, v2.2d, #48
-	sli	v2.2d, v0.2d, #3
-	sli	v3.2d, v1.2d, #3
-	mov	v0.16b, v2.16b
-	mov	v1.16b, v3.16b
+	lsr	x8, x1, #48
+	bfi	x8, x0, #3, #61
+	mov	x0, x8
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	ushr	v3.2d, v3.2d, #1
-	ushr	v2.2d, v2.2d, #1
-	dup	v4.2d, x8
-	shl	v1.2d, v1.2d, #32
-	shl	v0.2d, v0.2d, #32
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
+	ubfx	x8, x1, #1, #1
+	orr	x0, x8, x0, lsl #32
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	ushr	v3.2d, v3.2d, #3
-	ushr	v2.2d, v2.2d, #3
-	sli	v2.2d, v0.2d, #32
-	sli	v3.2d, v1.2d, #32
-	mov	v0.16b, v2.16b
-	mov	v1.16b, v3.16b
+	lsl	x0, x0, #32
+	bfxil	x0, x1, #3, #32
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	ushr	v3.2d, v3.2d, #5
-	ushr	v2.2d, v2.2d, #5
-	sli	v2.2d, v0.2d, #32
-	sli	v3.2d, v1.2d, #32
-	mov	v0.16b, v2.16b
-	mov	v1.16b, v3.16b
+	lsl	x0, x0, #32
+	bfxil	x0, x1, #5, #32
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ushr	v3.2d, v3.2d, #40
-	ushr	v2.2d, v2.2d, #40
-	sli	v2.2d, v0.2d, #8
-	sli	v3.2d, v1.2d, #8
-	mov	v0.16b, v2.16b
-	mov	v1.16b, v3.16b
+	lsr	x8, x1, #40
+	bfi	x8, x0, #8, #56
+	mov	x0, x8
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	ushr	v3.2d, v3.2d, #3
-	ushr	v2.2d, v2.2d, #3
-	sli	v2.2d, v0.2d, #32
-	sli	v3.2d, v1.2d, #32
-	mov	v0.16b, v2.16b
-	mov	v1.16b, v3.16b
+	lsl	x0, x0, #32
+	bfxil	x0, x1, #3, #32
 	ret
                                         // -- End function

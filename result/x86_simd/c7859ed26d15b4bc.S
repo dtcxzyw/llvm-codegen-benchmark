@@ -2,7 +2,7 @@
 	.long	15                              # 0xf
 func0000000000000000:                   # @func0000000000000000
 	vpslld	$2, %ymm2, %ymm2
-	vpternlogd	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogd	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpsrld	$24, %ymm2, %ymm0
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -40,7 +40,7 @@ func0000000000000000:                   # @func0000000000000000
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 func000000000000001e:                   # @func000000000000001e
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0    # ymm0 = ymm0[1],zero,zero,zero,ymm0[5],zero,zero,zero,ymm0[9],zero,zero,zero,ymm0[13],zero,zero,zero,ymm0[17],zero,zero,zero,ymm0[21],zero,zero,zero,ymm0[25],zero,zero,zero,ymm0[29],zero,zero,zero
 	retq
 .LCPI2_0:
@@ -77,7 +77,7 @@ func000000000000001e:                   # @func000000000000001e
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 func0000000000000016:                   # @func0000000000000016
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpshufb	.LCPI2_0(%rip), %ymm0, %ymm0    # ymm0 = ymm0[1],zero,zero,zero,ymm0[5],zero,zero,zero,ymm0[9],zero,zero,zero,ymm0[13],zero,zero,zero,ymm0[17],zero,zero,zero,ymm0[21],zero,zero,zero,ymm0[25],zero,zero,zero,ymm0[29],zero,zero,zero
 	retq
 .LCPI3_0:
@@ -115,6 +115,6 @@ func0000000000000016:                   # @func0000000000000016
 	.byte	128                             # 0x80
 func0000000000000018:                   # @func0000000000000018
 	vpslld	$20, %ymm2, %ymm2
-	vpternlogd	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogd	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpshufb	.LCPI3_0(%rip), %ymm2, %ymm0    # ymm0 = zero,ymm2[2],zero,zero,zero,ymm2[6],zero,zero,zero,ymm2[10],zero,zero,zero,ymm2[14],zero,zero,zero,ymm2[18],zero,zero,zero,ymm2[22],zero,zero,zero,ymm2[26],zero,zero,zero,ymm2[30],zero,zero
 	retq

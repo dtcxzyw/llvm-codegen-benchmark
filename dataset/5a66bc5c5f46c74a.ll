@@ -1,8 +1,9 @@
 
-; 103 occurrences:
+; 104 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/hash_generator_testing.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -104,7 +105,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i128 %0) #0 {
+define i1 @func0000000000000184(i128 %0) #0 {
 entry:
   %1 = trunc i128 %0 to i64
   %2 = mul i64 %1, 10
@@ -113,9 +114,31 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000188(i128 %0) #0 {
+entry:
+  %1 = trunc i128 %0 to i64
+  %2 = mul i64 %1, 184467440738
+  %3 = icmp ugt i64 %2, -9223371852387335071
+  ret i1 %3
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/float_conversion.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000018c(i128 %0) #0 {
+entry:
+  %1 = trunc i128 %0 to i64
+  %2 = mul i64 %1, 10
+  %3 = icmp ne i64 %2, 0
+  ret i1 %3
+}
+
+; 1 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i128 %0) #0 {
+define i1 @func0000000000000101(i128 %0) #0 {
 entry:
   %1 = trunc i128 %0 to i64
   %2 = mul i64 %1, -8
@@ -126,7 +149,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i128 %0) #0 {
+define i1 @func0000000000000181(i128 %0) #0 {
 entry:
   %1 = trunc i128 %0 to i64
   %2 = icmp eq i64 %1, 0

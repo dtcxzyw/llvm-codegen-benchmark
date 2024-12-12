@@ -1,4 +1,12 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000908:                   # @func0000000000000908
+	sext.w	a0, a0
+	zext.h	a1, a1
+	addi	a1, a1, -59
+	sltiu	a1, a1, -4
+	sltiu	a0, a0, -3
+	or	a0, a0, a1
+	ret
+func0000000000000108:                   # @func0000000000000108
 	sext.w	a0, a0
 	zext.h	a1, a1
 	addi	a1, a1, -3
@@ -6,11 +14,29 @@ func0000000000000088:                   # @func0000000000000088
 	sltiu	a0, a0, 2
 	or	a0, a0, a1
 	ret
-func0000000000000082:                   # @func0000000000000082
+func0000000000000918:                   # @func0000000000000918
 	sext.w	a0, a0
 	zext.h	a1, a1
-	addi	a1, a1, -13
-	sltiu	a1, a1, -3
+	addi	a1, a1, -21
+	addi	a0, a0, -17
+	sltiu	a1, a1, -5
+	snez	a0, a0
+	or	a0, a0, a1
+	ret
+func0000000000000902:                   # @func0000000000000902
+	sext.w	a0, a0
+	zext.h	a1, a1
+	addi	a1, a1, -58
+	sltiu	a1, a1, -10
+	seqz	a0, a0
+	or	a0, a0, a1
+	ret
+func0000000000000102:                   # @func0000000000000102
+	sext.w	a0, a0
+	zext.h	a1, a1
+	addi	a1, a1, -58
+	addi	a0, a0, -21
+	sltiu	a1, a1, -10
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

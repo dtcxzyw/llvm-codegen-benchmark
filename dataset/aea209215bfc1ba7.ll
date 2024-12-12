@@ -1,5 +1,5 @@
 
-; 123 occurrences:
+; 122 occurrences:
 ; abc/optimized/giaMini.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/ifMap.c.ll
@@ -114,7 +114,6 @@
 ; opencv/optimized/tracker_dasiamrpn.cpp.ll
 ; opencv/optimized/tracker_nano.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pbrt-v4/optimized/mipmap.cpp.ll
 ; pbrt-v4/optimized/pspec.cpp.ll

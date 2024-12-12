@@ -1,12 +1,11 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/rsbDec6.c.ll
-; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/countbitsnode.ll
 ; spike/optimized/spike.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000094(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000124(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 4294967296
   %3 = select i1 %2, i32 33, i32 1
@@ -20,12 +19,12 @@ entry:
 ; abc/optimized/luckyFast16.c.ll
 ; sentencepiece/optimized/int128.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000118(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000238(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 4294967295
   %3 = select i1 %2, i32 32, i32 0
   %4 = or disjoint i32 %3, 16
-  %5 = icmp ugt i64 %0, 65535
+  %5 = icmp samesign ugt i64 %0, 65535
   %6 = select i1 %5, i32 %4, i32 %3
   ret i32 %6
 }
@@ -54,7 +53,7 @@ entry:
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i32 32, i32 0
@@ -67,9 +66,22 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000114(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000224(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, -4294967297
+  %3 = select i1 %2, i32 32, i32 0
+  %4 = or disjoint i32 %3, 16
+  %5 = icmp ult i64 %0, 281474976710656
+  %6 = select i1 %5, i32 %4, i32 %3
+  ret i32 %6
+}
+
+; 1 occurrences:
+; miniaudio/optimized/unity.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000524(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 4294967296
   %3 = select i1 %2, i32 32, i32 0
   %4 = or disjoint i32 %3, 16
   %5 = icmp ult i64 %0, 281474976710656

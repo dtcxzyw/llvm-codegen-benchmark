@@ -19,9 +19,3 @@ func0000000000000005:                   # @func0000000000000005
 	addq	%rdi, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000015:                   # @func0000000000000015
-	movslq	%edx, %rax
-	addq	%rdi, %rax
-	movslq	%esi, %rcx
-	leaq	-3(%rcx,%rax), %rax
-	retq

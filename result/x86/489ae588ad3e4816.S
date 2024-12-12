@@ -4,14 +4,18 @@ func0000000000000028:                   # @func0000000000000028
 	shrq	$32, %rax
 	retq
 func000000000000001a:                   # @func000000000000001a
-	imull	%edx, %esi
-	mulxq	%rdi, %rax, %rax
-	addl	%esi, %eax
+	movq	%rdx, %rcx
+	movq	%rdi, %rdx
+	mulxq	%rcx, %rax, %rax
+	imull	%esi, %ecx
+	addl	%ecx, %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
-	imull	%edx, %esi
-	mulxq	%rdi, %rax, %rax
-	addl	%esi, %eax
+	movq	%rdx, %rcx
+	movq	%rdi, %rdx
+	mulxq	%rcx, %rax, %rax
+	imull	%esi, %ecx
+	addl	%ecx, %eax
 	retq
 func000000000000003a:                   # @func000000000000003a
 	movq	%rdi, %rax

@@ -24,8 +24,7 @@ entry:
   ret float %6
 }
 
-; 5 occurrences:
-; gromacs/optimized/slapy2.cpp.ll
+; 4 occurrences:
 ; gromacs/optimized/slas2.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll

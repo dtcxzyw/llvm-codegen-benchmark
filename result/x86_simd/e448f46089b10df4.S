@@ -27,12 +27,22 @@ func0000000000000000:                   # @func0000000000000000
 	vpternlogq	$254, .LCPI2_0(%rip){1to4}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
 .LCPI3_0:
-	.quad	992                             # 0x3e0
+	.quad	4502500115742720                # 0xfff0000000000
 .LCPI3_1:
-	.quad	31744                           # 0x7c00
-func0000000000000001:                   # @func0000000000000001
-	vpsllq	$5, %ymm2, %ymm2
+	.quad	1048576                         # 0x100000
+func0000000000000003:                   # @func0000000000000003
+	vpsllq	$40, %ymm2, %ymm2
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
 	vpor	%ymm1, %ymm0, %ymm0
 	vpternlogq	$254, .LCPI3_1(%rip){1to4}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
+	retq
+.LCPI4_0:
+	.quad	992                             # 0x3e0
+.LCPI4_1:
+	.quad	31744                           # 0x7c00
+func0000000000000001:                   # @func0000000000000001
+	vpsllq	$5, %ymm2, %ymm2
+	vpandq	.LCPI4_0(%rip){1to4}, %ymm2, %ymm2
+	vpor	%ymm1, %ymm0, %ymm0
+	vpternlogq	$254, .LCPI4_1(%rip){1to4}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq

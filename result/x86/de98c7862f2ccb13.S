@@ -10,7 +10,7 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	andl	$-2, %esi
 	cmpl	$30, %esi
 	setne	%al

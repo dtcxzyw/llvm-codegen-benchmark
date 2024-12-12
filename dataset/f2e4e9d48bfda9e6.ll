@@ -62,7 +62,7 @@ entry:
   ret i64 %4
 }
 
-; 149 occurrences:
+; 147 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/cordz_sample_token_test.cc.ll
 ; abseil-cpp/optimized/crc_memcpy_test.cc.ll
@@ -105,7 +105,6 @@ entry:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/BranchProbability.cpp.ll
 ; llvm/optimized/LoopUnrollAndJamPass.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -197,14 +196,12 @@ entry:
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
 ; qemu/optimized/block_vmdk.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; redis/optimized/t_string.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/jemalloc_nodump_allocator.cc.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/f64_sqrt.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/vmulhu_vx.ll
 ; spike/optimized/vwmaccu_vx.ll
 ; spike/optimized/vwmulu_vx.ll
@@ -212,6 +209,7 @@ entry:
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
 ; xgboost/optimized/charconv.cc.ll
 ; z3/optimized/mpn.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
@@ -221,11 +219,10 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
-; linux/optimized/vclock_gettime.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; openjdk/optimized/g1FromCardCache.ll

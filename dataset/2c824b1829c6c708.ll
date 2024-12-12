@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; openssl/optimized/libcrypto-lib-o_str.ll
 ; openssl/optimized/libcrypto-shlib-o_str.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i8 %1, i64 %2) #0 {
 entry:
@@ -18,7 +19,7 @@ entry:
 ; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i8 %1, i64 %2) #0 {
+define i64 @func0000000000000041(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 3
   %4 = icmp eq i8 %1, -1
@@ -59,7 +60,7 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; rust-analyzer-rs/optimized/2ebx9eutyph8un4i.ll
 ; rust-analyzer-rs/optimized/jp4yq85z7wea9l3.ll
@@ -69,6 +70,8 @@ entry:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i8 %1, i64 %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 183 occurrences:
+; 179 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcDar.c.ll
@@ -69,9 +69,7 @@
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaTsim.c.ll
 ; abc/optimized/giaUtil.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/intContain.c.ll
-; abc/optimized/intM114.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/ivyMan.c.ll
 ; abc/optimized/liveness.c.ll
@@ -106,7 +104,6 @@
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; gromacs/optimized/wall.cpp.ll
 ; icu/optimized/ubidiln.ll
@@ -120,7 +117,6 @@
 ; llama.cpp/optimized/ggml.c.ll
 ; ncnn/optimized/padding.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dggglm.c.ll
 ; openblas/optimized/dgtts2.c.ll
 ; openblas/optimized/dlaeda.c.ll
@@ -192,7 +188,7 @@ entry:
   ret i64 %5
 }
 
-; 132 occurrences:
+; 127 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/aigScl.c.ll
@@ -215,12 +211,10 @@ entry:
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; graphviz/optimized/osageinit.c.ll
 ; graphviz/optimized/quad_prog_vpsc.c.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; gromacs/optimized/dstebz.cpp.ll
 ; gromacs/optimized/pull_rotation.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
 ; icu/optimized/double-conversion-bignum.ll
@@ -231,7 +225,6 @@ entry:
 ; lightgbm/optimized/metadata.cpp.ll
 ; linux/optimized/genetlink.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -248,7 +241,6 @@ entry:
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -262,7 +254,6 @@ entry:
 ; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dlasd0.c.ll
 ; openblas/optimized/dlasda.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; openblas/optimized/dsptri.c.ll
@@ -334,7 +325,7 @@ entry:
   ret i64 %5
 }
 
-; 35 occurrences:
+; 32 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/bacWriteVer.c.ll
@@ -345,16 +336,13 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; git/optimized/dir.ll
 ; graphviz/optimized/stress.c.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr2.c.ll
 ; openblas/optimized/dlaqr3.c.ll
@@ -379,13 +367,12 @@ entry:
   ret i64 %5
 }
 
-; 66 occurrences:
+; 65 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/aigPartReg.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/cuddSign.c.ll
 ; abc/optimized/retIncrem.c.ll
-; abc/optimized/saigCone.c.ll
 ; abc/optimized/saigRetStep.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -397,8 +384,9 @@ entry:
 ; gromacs/optimized/slasq6.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
 ; llvm/optimized/X86ExpandPseudo.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_draw_sw_blend.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -408,7 +396,6 @@ entry:
 ; mixbox/optimized/mixbox.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/imagebuf.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgegs.c.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dgges.c.ll
@@ -630,7 +617,7 @@ entry:
 define i64 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -641,7 +628,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

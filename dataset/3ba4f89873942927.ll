@@ -1,9 +1,11 @@
 
-; 79 occurrences:
+; 85 occurrences:
+; abc/optimized/abcExact.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifDsd.c.ll
+; abc/optimized/sfmCnf.c.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -39,6 +41,9 @@
 ; luajit/optimized/lj_cconv_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
+; lvgl/optimized/lv_math.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; oiio/optimized/targainput.cpp.ll
@@ -69,6 +74,7 @@
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
 ; spike/optimized/clrs8.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; wireshark/optimized/asn1.c.ll
@@ -86,11 +92,12 @@ entry:
   ret i8 %1
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; freetype/optimized/pfr.c.ll
 ; git/optimized/transport-helper.ll
 ; git/optimized/transport.ll
 ; llama.cpp/optimized/llama.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; spike/optimized/vector_unit.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0) #0 {

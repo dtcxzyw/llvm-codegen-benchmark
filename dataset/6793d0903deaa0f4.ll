@@ -1,5 +1,9 @@
 
-; 114 occurrences:
+; 118 occurrences:
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/poly34.ll

@@ -1,14 +1,14 @@
-func00000000000000e8:                   # @func00000000000000e8
+func00000000000001c8:                   # @func00000000000001c8
 	movl	%edx, %eax
 	subq	%rax, %rsi
 	addq	$-2, %rsi
-	cmpq	%rdi, %rsi
-	setb	%al
+	cmpq	%rsi, %rdi
+	seta	%al
 	retq
-func00000000000000e5:                   # @func00000000000000e5
+func00000000000001c5:                   # @func00000000000001c5
 	movl	%edx, %eax
 	subq	%rax, %rsi
 	addq	$-4, %rsi
-	cmpq	%rdi, %rsi
-	setae	%al
+	cmpq	%rsi, %rdi
+	setbe	%al
 	retq

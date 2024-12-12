@@ -33,7 +33,7 @@ entry:
   %4 = shl i32 10, %3
   %5 = zext i32 %4 to i64
   %6 = select i1 %1, i64 40960, i64 %5
-  %7 = mul i64 %6, %0
+  %7 = mul i64 %0, %6
   ret i64 %7
 }
 
@@ -48,7 +48,7 @@ entry:
   %4 = shl i32 10, %3
   %5 = zext i32 %4 to i64
   %6 = select i1 %1, i64 40960, i64 %5
-  %7 = mul nuw nsw i64 %6, %0
+  %7 = mul nuw nsw i64 %0, %6
   ret i64 %7
 }
 

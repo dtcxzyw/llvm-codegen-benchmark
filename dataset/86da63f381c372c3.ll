@@ -3,30 +3,30 @@
 ; linux/optimized/nf_conntrack_core.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = and i32 %2, 254
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; opencv/optimized/joint_bilateral_filter.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; wireshark/optimized/packet-dhcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = and i32 %2, 254
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -130,27 +130,14 @@ entry:
   %2 = add i32 %1, 32770
   %3 = and i32 %2, 65536
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 1 occurrences:
-; php/optimized/zend_jit.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 255
-  %3 = and i32 %2, 254
-  %4 = icmp ult i32 %3, 6
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 6 occurrences:
+; 5 occurrences:
 ; glslang/optimized/Intermediate.cpp.ll
 ; linux/optimized/interface.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
-; llvm/optimized/Instructions.cpp.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wolfssl/optimized/coding.c.ll
 ; Function Attrs: nounwind
@@ -159,31 +146,19 @@ entry:
   %2 = add i32 %1, -1
   %3 = and i32 %2, -3
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; libquic/optimized/json_parser.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 56319, %1
   %3 = and i32 %2, 65534
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openspiel/optimized/chess_board.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw i32 %1, 1
-  %3 = and i32 %2, 128
-  %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -195,7 +170,7 @@ entry:
   %2 = add i32 %1, 63
   %3 = and i32 %2, -64
   %4 = icmp ult i32 %3, 321
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -203,12 +178,12 @@ entry:
 ; opencv/optimized/adaptive_threshold_mean_binarizer.cpp.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = and i32 %2, -2147483647
   %4 = icmp eq i32 %3, 1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

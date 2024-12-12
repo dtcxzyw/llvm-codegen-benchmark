@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 68 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -20,6 +20,7 @@
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; c3c/optimized/bigint.c.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/bay6adxmosnf2qi.ll
@@ -71,12 +72,13 @@
 define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/cuddUtil.c.ll
+; boost/optimized/default_filter_factory.ll
 ; brotli/optimized/bit_cost.c.ll
 ; faiss/optimized/kmeans1d.cpp.ll
 ; gromacs/optimized/energyterm.cpp.ll
@@ -96,7 +98,7 @@ entry:
 define double @func0000000000000001(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp nneg i64 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 

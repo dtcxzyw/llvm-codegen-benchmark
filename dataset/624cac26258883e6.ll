@@ -1,9 +1,8 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/intermOut.cpp.ll
-; linux/optimized/intel_tcc.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/Interp.cpp.ll

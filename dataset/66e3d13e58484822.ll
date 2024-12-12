@@ -1,5 +1,5 @@
 
-; 337 occurrences:
+; 343 occurrences:
 ; abc/optimized/cuddGroup.c.ll
 ; abc/optimized/epd.c.ll
 ; abc/optimized/giaEmbed.c.ll
@@ -8,6 +8,15 @@
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/cvodes.c.ll
@@ -195,13 +204,11 @@
 ; proj/optimized/krovak.cpp.ll
 ; proj/optimized/lcc.cpp.ll
 ; proj/optimized/lcca.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/moll.cpp.ll
 ; proj/optimized/natearth.cpp.ll
 ; proj/optimized/natearth2.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/omerc.cpp.ll
 ; proj/optimized/patterson.cpp.ll
 ; proj/optimized/poly.cpp.ll
@@ -212,7 +219,6 @@
 ; proj/optimized/singleoperation.cpp.ll
 ; proj/optimized/som.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/abcdmathfunction.ll
 ; quantlib/optimized/amortizingfixedratebond.ll
 ; quantlib/optimized/analytic_cont_geom_av_price_heston.ll

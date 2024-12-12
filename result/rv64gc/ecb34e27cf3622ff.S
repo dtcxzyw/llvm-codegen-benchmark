@@ -80,6 +80,17 @@ func0000000000000008:                   # @func0000000000000008
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
 	ret
+.LCPI7_0:
+	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
+func0000000000000001:                   # @func0000000000000001
+	li	a1, 144
+	lui	a2, %hi(.LCPI7_0)
+	ld	a2, %lo(.LCPI7_0)(a2)
+	mul	a0, a0, a1
+	addi	a0, a0, -144
+	srli	a0, a0, 4
+	mul	a0, a0, a2
+	ret
 func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, -815
 	li	a1, -10

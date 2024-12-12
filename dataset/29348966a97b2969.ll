@@ -10,11 +10,11 @@
 ; z3/optimized/theory_str_mc.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = icmp eq i32 %5, 0
   %7 = select i1 %6, i1 true, i1 %0
   ret i1 %7
@@ -25,7 +25,7 @@ entry:
 ; postgres/optimized/bloomfilter.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = shl nuw nsw i32 16, %3
@@ -44,11 +44,11 @@ entry:
 ; openjdk/optimized/escape.ll
 ; z3/optimized/solve_context_eqs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = icmp ne i32 %5, 0
   %7 = select i1 %6, i1 true, i1 %0
   ret i1 %7
@@ -58,7 +58,7 @@ entry:
 ; graphviz/optimized/dijkstra.c.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = shl nuw nsw i32 1, %3

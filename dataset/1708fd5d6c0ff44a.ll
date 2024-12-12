@@ -1,12 +1,11 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/unicodeobject.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; mold/optimized/arch-ppc64v2.cc.ll
 ; node/optimized/libnode.node_buffer.ll
-; php/optimized/math.ll
 ; postgres/optimized/sqlda.ll
 ; rocksdb/optimized/backup_engine.cc.ll
 ; rocksdb/optimized/env_chroot.cc.ll
@@ -28,13 +27,14 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; openssl/optimized/asn1_encode_test-bin-asn1_encode_test.ll
 ; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
 ; rust-analyzer-rs/optimized/2jezmucvqvfiuhvx.ll
 ; rust-analyzer-rs/optimized/84mgk0fwp2eksq1.ll
 ; rust-analyzer-rs/optimized/egul20e4uygvok2.ll
+; turborepo-rs/optimized/allq2hqzkn1ywqvzl6k501g1q.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i1 %1, i64 %2) #0 {
 entry:

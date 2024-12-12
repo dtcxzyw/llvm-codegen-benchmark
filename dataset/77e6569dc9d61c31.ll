@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 15
   %4 = select i1 %3, i1 true, i1 %0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DylibVerifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000118(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 3
   %4 = select i1 %3, i1 true, i1 %1
@@ -23,39 +23,26 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; llvm/optimized/X86RecognizableInstr.cpp.ll
-; protobuf/optimized/descriptor.cc.ll
+; 1 occurrences:
+; llvm/optimized/CodeMoverUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000048(i8 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = icmp eq i8 %2, 1
+  %3 = icmp eq i8 %2, 84
   %4 = select i1 %3, i1 true, i1 %1
-  %5 = icmp eq i8 %0, 1
+  %5 = icmp ult i8 %0, 11
   %6 = or i1 %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-lbmr.c.ll
+; linux/optimized/nf_conntrack_proto_icmpv6.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000108(i8 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ne i8 %2, 0
+  %3 = icmp ult i8 %2, -126
   %4 = select i1 %3, i1 true, i1 %1
-  %5 = icmp ne i8 %0, 0
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/trace_probe.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ne i8 %2, 0
-  %4 = select i1 %3, i1 true, i1 %1
-  %5 = icmp eq i8 %0, 95
+  %5 = icmp ult i8 %0, 6
   %6 = or i1 %5, %4
   ret i1 %6
 }

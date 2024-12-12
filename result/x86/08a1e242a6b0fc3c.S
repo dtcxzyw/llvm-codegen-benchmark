@@ -3,12 +3,22 @@ func000000000000000c:                   # @func000000000000000c
 	cmpq	%rdi, %rsi
 	cmovneq	%rdi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi
 	cmovaq	%rdi, %rax
 	retq
 func0000000000000009:                   # @func0000000000000009
+	xorl	%eax, %eax
+	cmpq	%rdi, %rsi
+	cmovaeq	%rdi, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%eax, %eax
+	cmpq	%rdi, %rsi
+	cmovaq	%rdi, %rax
+	retq
+func0000000000000019:                   # @func0000000000000019
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi
 	cmovaeq	%rdi, %rax

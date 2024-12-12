@@ -13,7 +13,7 @@
 define i16 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }

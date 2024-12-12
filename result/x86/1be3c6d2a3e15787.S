@@ -1,12 +1,12 @@
 func0000000000000002:                   # @func0000000000000002
-	notb	%sil
-	movzbl	%sil, %ecx
-	andl	$1, %ecx
+	xorl	%ecx, %ecx
+	testl	%edx, %edx
+	setne	%cl
 	orl	$2, %ecx
 	shll	$21, %ecx
-	testl	%edx, %edx
+	testb	$1, %sil
 	movl	$6291456, %eax                  # imm = 0x600000
-	cmovel	%ecx, %eax
+	cmovnel	%ecx, %eax
 	orl	%edi, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018

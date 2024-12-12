@@ -10,7 +10,9 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; linux/optimized/page-writeback.ll
 ; llvm/optimized/APFloat.cpp.ll

@@ -66,10 +66,12 @@ entry:
   ret i16 %3
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; icu/optimized/uparse.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; qemu/optimized/audio_mixeng.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i64 %0) #0 {
 entry:
@@ -79,12 +81,14 @@ entry:
   ret i16 %3
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/intel_color.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; wireshark/optimized/packet-iso15765.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i64 %0) #0 {
 entry:

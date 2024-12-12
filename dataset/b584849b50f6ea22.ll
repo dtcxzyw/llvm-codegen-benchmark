@@ -15,4 +15,17 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000014a(i64 %0) #0 {
+entry:
+  %1 = lshr i64 %0, 32
+  %2 = icmp samesign ult i64 %0, 4294967296
+  %3 = select i1 %2, i64 %0, i64 %1
+  %4 = trunc nuw i64 %3 to i32
+  %5 = shl nuw i32 %4, 16
+  ret i32 %5
+}
+
 attributes #0 = { nounwind }

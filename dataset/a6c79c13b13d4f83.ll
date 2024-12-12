@@ -5,10 +5,10 @@
 ; openssl/optimized/libcrypto-shlib-async_wait.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i1 %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000003(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = freeze ptr %2
-  %4 = getelementptr nusw i8, ptr %3, i64 40
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 40
   %5 = select i1 %0, ptr %1, ptr %4
   ret ptr %5
 }

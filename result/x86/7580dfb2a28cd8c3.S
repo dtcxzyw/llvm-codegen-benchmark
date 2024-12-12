@@ -1,68 +1,67 @@
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	leal	-6(%rdi), %eax
 	movl	$3, %ecx
 	shlxl	%eax, %ecx, %eax
 	cmpl	$7, %edi
 	cmovll	%ecx, %eax
 	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	leal	-6(%rdi), %eax
 	movl	$1, %ecx
 	shlxl	%eax, %ecx, %eax
 	cmpl	$7, %edi
 	cmovll	%ecx, %eax
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	leal	-5(%rdi), %eax
 	movl	$1, %ecx
 	shlxl	%eax, %ecx, %eax
 	cmpl	$6, %edi
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000d4:                   # @func00000000000000d4
 	leal	-6(%rdi), %eax
 	movl	$1, %ecx
 	shlxl	%eax, %ecx, %eax
 	cmpl	$7, %edi
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000076:                   # @func0000000000000076
-	leal	-4(%rdi), %eax
-	movl	$1, %ecx
-	shlxl	%eax, %ecx, %ecx
-	cmpl	$7, %edi
-	movl	$4, %eax
-	cmovgel	%ecx, %eax
-	retq
-func0000000000000026:                   # @func0000000000000026
+func00000000000000e6:                   # @func00000000000000e6
 	leal	-6(%rdi), %eax
 	movl	$1, %ecx
 	shlxl	%eax, %ecx, %eax
 	cmpl	$7, %edi
 	cmovll	%ecx, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000046:                   # @func0000000000000046
+	leal	-6(%rdi), %eax
+	movl	$1, %ecx
+	shlxl	%eax, %ecx, %eax
+	cmpl	$7, %edi
+	cmovll	%ecx, %eax
+	retq
+func0000000000000044:                   # @func0000000000000044
 	leal	-6(%rdi), %eax
 	movl	$1, %ecx
 	shlxl	%eax, %ecx, %eax
 	cmpl	$7, %edi
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	xorl	%ecx, %ecx
 	subl	$1, %edi
 	movl	$1, %eax
 	shlxl	%edi, %eax, %eax
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	xorl	%ecx, %ecx
 	subl	$1, %edi
 	movl	$1, %eax
 	shlxl	%edi, %eax, %eax
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	leal	19(%rdi), %eax
 	movl	$1, %ecx
 	shlxl	%eax, %ecx, %ecx

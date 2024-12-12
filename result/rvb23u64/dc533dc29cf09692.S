@@ -18,6 +18,11 @@ func0000000000000028:                   # @func0000000000000028
 	subw	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
+func0000000000000003:                   # @func0000000000000003
+	zext.h	a2, a2
+	subw	a1, a1, a2
+	add.uw	a0, a1, a0
+	ret
 func0000000000000010:                   # @func0000000000000010
 	zext.h	a2, a2
 	subw	a1, a1, a2

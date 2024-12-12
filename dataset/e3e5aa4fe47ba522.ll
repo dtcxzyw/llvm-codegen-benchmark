@@ -1,10 +1,11 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; libjpeg-turbo/optimized/jdmerge.c.ll
 ; linux/optimized/alps.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CImage.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; openjdk/optimized/Ushort565Rgb.ll
@@ -14,7 +15,7 @@ entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw nsw i16 %3, 2
   %5 = and i16 %4, 992
-  %6 = or disjoint i16 %5, %1
+  %6 = or disjoint i16 %1, %5
   %7 = or disjoint i16 %6, %0
   ret i16 %7
 }
@@ -40,7 +41,7 @@ entry:
   %3 = zext nneg i8 %2 to i16
   %4 = shl i16 %3, 12
   %5 = and i16 %4, 4096
-  %6 = or disjoint i16 %5, %1
+  %6 = or disjoint i16 %1, %5
   %7 = or disjoint i16 %6, %0
   ret i16 %7
 }
@@ -53,7 +54,7 @@ entry:
   %3 = zext nneg i8 %2 to i16
   %4 = shl i16 %3, 13
   %5 = and i16 %4, 8192
-  %6 = or disjoint i16 %5, %1
+  %6 = or disjoint i16 %1, %5
   %7 = or i16 %6, %0
   ret i16 %7
 }
@@ -67,7 +68,7 @@ entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %3, 8
   %5 = and i16 %4, -2048
-  %6 = or disjoint i16 %5, %1
+  %6 = or disjoint i16 %1, %5
   %7 = or disjoint i16 %6, %0
   ret i16 %7
 }

@@ -7,12 +7,12 @@
 ; quantlib/optimized/smilesectionutils.ll
 ; rocksdb/optimized/merge_helper.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = icmp ugt i64 %4, 16
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; nix/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -43,7 +43,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; openusd/optimized/primIndex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

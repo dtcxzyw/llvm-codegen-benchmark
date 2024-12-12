@@ -1,11 +1,11 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	cmpq	$1, %rdx
 	setne	%cl
 	cmpq	%rsi, %rdi
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000144:                   # @func0000000000000144
+func0000000000000484:                   # @func0000000000000484
 	incq	%rdx
 	cmpq	$1024, %rdx                     # imm = 0x400
 	setb	%cl
@@ -13,14 +13,14 @@ func0000000000000144:                   # @func0000000000000144
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000058c:                   # @func000000000000058c
 	cmpq	$1, %rdx
 	setne	%cl
 	cmpq	%rsi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000003cc:                   # @func00000000000003cc
+func0000000000000d8c:                   # @func0000000000000d8c
 	cmpq	$12, %rdx
 	setne	%cl
 	cmpq	%rsi, %rdi

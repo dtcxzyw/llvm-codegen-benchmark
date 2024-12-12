@@ -1,5 +1,5 @@
 
-%"struct.std::pair.28.2486663" = type <{ i64, i32, [4 x i8] }>
+%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
 
 ; 249 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -252,9 +252,9 @@
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000098c(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.std::pair.28.2486663", ptr %2, i64 %0
+  %3 = getelementptr nusw %"struct.std::pair.28.2602107", ptr %2, i64 %0
   %4 = icmp ne ptr %3, %1
   %5 = icmp ne i64 %0, 0
   %6 = and i1 %5, %4
@@ -264,7 +264,7 @@ entry:
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000284(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000904(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 %0
   %4 = icmp ugt ptr %3, %1
@@ -276,12 +276,24 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000c8c(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i32, ptr %2, i64 %0
+  %3 = getelementptr nusw nuw i32, ptr %2, i64 %0
   %4 = icmp ult ptr %3, %1
   %5 = icmp ne i64 %0, 0
   %6 = and i1 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000c2c(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %1
+  %4 = icmp ne ptr %3, %0
+  %5 = icmp eq i64 %1, 1
+  %6 = and i1 %4, %5
   ret i1 %6
 }
 

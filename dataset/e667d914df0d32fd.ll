@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; linux/optimized/mii.ll
+; 8 occurrences:
 ; linux/optimized/tg3.ll
 ; linux/optimized/uhci-hcd.ll
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll

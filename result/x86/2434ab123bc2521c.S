@@ -1,24 +1,24 @@
 func0000000000000012:                   # @func0000000000000012
 	imull	%edx, %esi
 	xorl	%eax, %eax
-	cmpl	%edi, %esi
-	setbe	%al
+	cmpl	%esi, %edi
+	setae	%al
 	retq
 func0000000000000018:                   # @func0000000000000018
 	imull	%edx, %esi
 	xorl	%eax, %eax
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	setne	%al
 	retq
 func0000000000000010:                   # @func0000000000000010
 	imull	%edx, %esi
 	xorl	%eax, %eax
-	cmpl	%edi, %esi
-	setb	%al
+	cmpl	%esi, %edi
+	seta	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	imull	%edx, %esi
 	xorl	%eax, %eax
-	cmpl	%edi, %esi
-	seta	%al
+	cmpl	%esi, %edi
+	setb	%al
 	retq

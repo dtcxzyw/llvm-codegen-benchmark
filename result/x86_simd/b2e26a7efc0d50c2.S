@@ -24,7 +24,7 @@ func000000000000000c:                   # @func000000000000000c
 	.long	2095104                         # 0x1ff800
 .LCPI2_1:
 	.long	55296                           # 0xd800
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpternlogd	$168, .LCPI2_0(%rip){1to8}, %ymm2, %ymm1 # ymm1 = mem & (ymm1 | ymm2)

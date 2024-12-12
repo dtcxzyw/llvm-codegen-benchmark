@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; clamav/optimized/pdf.c.ll
-; llvm/optimized/Signals.cpp.ll
 ; mimalloc/optimized/os.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {

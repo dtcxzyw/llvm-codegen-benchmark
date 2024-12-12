@@ -1,14 +1,9 @@
-func00000000000000a4:                   // @func00000000000000a4
+func0000000000000144:                   // @func0000000000000144
 // %bb.0:                               // %entry
-	mov	x8, #4294967296                 // =0x100000000
-	uaddw	v1.2d, v1.2d, v3.2s
-	uaddw2	v2.2d, v2.2d, v3.4s
-	dup	v3.2d, x8
-	cmge	v0.4s, v0.4s, #0
-	cmhi	v2.2d, v3.2d, v2.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	and	v0.16b, v1.16b, v0.16b
-	xtn	v0.4h, v0.4s
+	add	x8, x1, w2, uxtw
+	lsr	x8, x8, #32
+	cmp	x8, #0
+	ccmp	w0, #0, #8, eq
+	cset	w0, ge
 	ret
                                         // -- End function

@@ -3,7 +3,7 @@
 ; ruby/optimized/thread.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = sext i32 %2 to i64
@@ -21,7 +21,7 @@ entry:
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = sext i32 %2 to i64
@@ -40,7 +40,7 @@ entry:
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = sext i32 %2 to i64

@@ -1,9 +1,7 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
-; lz4/optimized/lz4.c.ll
-; openusd/optimized/lz4.cpp.ll
 ; php/optimized/zend_ssa.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0) #0 {

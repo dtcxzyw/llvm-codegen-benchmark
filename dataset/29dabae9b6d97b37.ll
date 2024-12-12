@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; darktable/optimized/filtering.c.ll
 ; folly/optimized/AsyncSocket.cpp.ll
@@ -8,6 +8,7 @@
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/User.cpp.ll
 ; llvm/optimized/blake3_dispatch.c.ll
@@ -73,7 +74,7 @@ entry:
   %4 = select i1 %3, i32 -1073741824, i32 -520094722
   %5 = and i32 %1, 805306367
   %6 = or i32 %4, %5
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 
@@ -97,9 +98,9 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000062(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 143
+  %3 = icmp samesign ugt i32 %2, 143
   %4 = select i1 %3, i32 32767, i32 0
   %5 = and i32 %1, 32768
   %6 = or disjoint i32 %4, %5

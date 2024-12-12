@@ -38,7 +38,7 @@
 	.byte	0                               # 0x0
 func000000000000001f:                   # @func000000000000001f
 	vpslld	$8, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpternlogd	$248, .LCPI0_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI1_0:

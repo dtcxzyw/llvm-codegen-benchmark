@@ -1,20 +1,5 @@
 
-; 5 occurrences:
-; linux/optimized/map.ll
-; linux/optimized/sidtab.ll
-; postgres/optimized/spgutils.ll
-; qemu/optimized/hw_char_ipoctal232.c.ll
-; wireshark/optimized/capsa.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
-entry:
-  %2 = urem i32 %1, 3
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [3 x i8], ptr %0, i64 0, i64 %3
-  ret ptr %4
-}
-
-; 56 occurrences:
+; 58 occurrences:
 ; assimp/optimized/ColladaExporter.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
@@ -58,8 +43,10 @@ entry:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
+; mitsuba3/optimized/rgb2spec.c.ll
 ; opencv/optimized/fast.cpp.ll
 ; opencv/optimized/perf_allocation.cpp.ll
 ; openjdk/optimized/ciObjectFactory.ll
@@ -72,11 +59,25 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
-  %2 = urem i32 %1, 61
+  %2 = urem i32 %1, 3
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [61 x ptr], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [3 x float], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 4 occurrences:
+; linux/optimized/sidtab.ll
+; postgres/optimized/spgutils.ll
+; qemu/optimized/hw_char_ipoctal232.c.ll
+; wireshark/optimized/capsa.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
+entry:
+  %2 = urem i32 %1, 3
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr [3 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
-; qemu/optimized/target_riscv_m128_helper.c.ll
 ; ruby/optimized/bignum.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; velox/optimized/VectorFuzzer.cpp.ll

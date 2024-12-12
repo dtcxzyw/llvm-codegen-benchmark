@@ -61,31 +61,20 @@ func0000000000000030:                   # @func0000000000000030
 	vzeroupper
 	retq
 .LCPI6_0:
-	.quad	128                             # 0x80
-func0000000000000010:                   # @func0000000000000010
-	vpcmpltuq	.LCPI6_0(%rip){1to4}, %ymm2, %k0
-	vpor	%xmm1, %xmm0, %xmm0
-	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
+	.quad	9007199254740992                # 0x20000000000000
+func0000000000000028:                   # @func0000000000000028
+	vpor	%xmm2, %xmm1, %xmm1
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k0
+	vpcmpltuq	.LCPI6_0(%rip){1to4}, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI7_0:
-	.quad	2147483647                      # 0x7fffffff
-func0000000000000014:                   # @func0000000000000014
-	vpor	%xmm2, %xmm1, %xmm1
-	vpslld	$31, %xmm1, %xmm1
-	vpmovd2m	%xmm1, %k0
-	vpcmpgtq	.LCPI7_0(%rip){1to4}, %ymm0, %k1
-	korw	%k0, %k1, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI8_0:
-	.quad	4999999                         # 0x4c4b3f
-func0000000000000020:                   # @func0000000000000020
-	vpcmpnleuq	.LCPI8_0(%rip){1to4}, %ymm2, %k0
+	.quad	128                             # 0x80
+func0000000000000010:                   # @func0000000000000010
+	vpcmpltuq	.LCPI7_0(%rip){1to4}, %ymm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -93,9 +82,21 @@ func0000000000000020:                   # @func0000000000000020
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000028:                   # @func0000000000000028
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtq	%ymm3, %ymm2, %k0
+.LCPI8_0:
+	.quad	2147483647                      # 0x7fffffff
+func0000000000000014:                   # @func0000000000000014
+	vpor	%xmm2, %xmm1, %xmm1
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k0
+	vpcmpgtq	.LCPI8_0(%rip){1to4}, %ymm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI9_0:
+	.quad	64                              # 0x40
+func0000000000000020:                   # @func0000000000000020
+	vpcmpnleuq	.LCPI9_0(%rip){1to4}, %ymm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1

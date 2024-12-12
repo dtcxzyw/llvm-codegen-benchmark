@@ -1,5 +1,5 @@
 
-; 227 occurrences:
+; 240 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/sscClass.c.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -13,6 +13,9 @@
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/msexpand.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_entry.c.ll
@@ -53,6 +56,7 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
+; libquic/optimized/ssl_lib.c.ll
 ; libsodium/optimized/libavx2_la-argon2-fill-block-avx2.ll
 ; libsodium/optimized/libavx512f_la-argon2-fill-block-avx512f.ll
 ; libsodium/optimized/libsodium_la-argon2-fill-block-ref.ll
@@ -132,6 +136,7 @@
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/CGUIListBox.cpp.ll
@@ -198,6 +203,7 @@
 ; qemu/optimized/gdbstub_syscalls.c.ll
 ; qemu/optimized/libvduse.c.ll
 ; qemu/optimized/libvhost-user.c.ll
+; qemu/optimized/tcg-op-ldst.c.ll
 ; qemu/optimized/tcg.c.ll
 ; redis/optimized/networking.ll
 ; ruby/optimized/parse.ll
@@ -218,6 +224,7 @@
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; wireshark/optimized/packet-ipars.c.ll
 ; wireshark/optimized/packet-peekremote.c.ll
+; wireshark/optimized/packet-stun.c.ll
 ; wireshark/optimized/packet-wow.c.ll
 ; wireshark/optimized/text_import.c.ll
 ; wolfssl/optimized/wc_port.c.ll
@@ -226,6 +233,12 @@
 ; z3/optimized/dd_fdd.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
 ; z3/optimized/sls_engine.cpp.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/3hyavwlupfwy674k0u5ll7gv6.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f4g1cwrteaiub5fsoifj5amxy.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1) #0 {

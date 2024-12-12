@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/basic_iarchive.ll
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/MSFBuilder.cpp.ll
 ; llvm/optimized/TpiStreamBuilder.cpp.ll

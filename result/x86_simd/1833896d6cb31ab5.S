@@ -11,7 +11,7 @@
 	.short	9363                            # 0x2493
 func000000000000003f:                   # @func000000000000003f
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpmulhuw	.LCPI0_1(%rip), %xmm0, %xmm1    # [9363,9363,9363,9363,9363,9363,9363,9363]
 	vpsubw	%xmm1, %xmm0, %xmm2

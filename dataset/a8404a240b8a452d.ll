@@ -1,12 +1,11 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; linux/optimized/cipso_ipv4.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/ip_sockglue.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/virtio_net.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll

@@ -7,7 +7,7 @@
 ; openusd/optimized/strtod.cc.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16777214
   %3 = or disjoint i32 %2, 16777216
@@ -21,7 +21,7 @@ entry:
 ; fmt/optimized/format-impl-test.cc.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8388607
   %3 = or disjoint i32 %2, 8388608

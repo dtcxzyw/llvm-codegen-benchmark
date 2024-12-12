@@ -1,5 +1,5 @@
 
-; 541 occurrences:
+; 545 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; cmake/optimized/json_value.cpp.ll
@@ -15,6 +15,8 @@
 ; hermes/optimized/Object.cpp.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
+; linux/optimized/af_inet.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/ds.ll
@@ -23,7 +25,6 @@
 ; linux/optimized/hosts.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_sdvo.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
@@ -345,7 +346,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -510,6 +510,11 @@
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_spinbox.ll
 ; minetest/optimized/CImage.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -526,15 +531,14 @@
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
-; php/optimized/pcre2_maketables.ll
 ; php/optimized/phar_object.ll
 ; php/optimized/util.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/indextuple.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/time.ll
 ; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_connected_components.c.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; wireshark/optimized/packet-ipmi-se.c.ll

@@ -1,7 +1,7 @@
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	orl	%edx, %esi
-	cmpl	%edi, %esi
-	setg	%cl
+	cmpl	%esi, %edi
+	setl	%cl
 	testl	%edi, %edi
 	setns	%al
 	andb	%cl, %al

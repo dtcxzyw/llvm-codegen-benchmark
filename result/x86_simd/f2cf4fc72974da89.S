@@ -2,7 +2,7 @@
 	.quad	-2                              # 0xfffffffffffffffe
 .LCPI0_1:
 	.quad	2                               # 0x2
-func0000000000000141:                   # @func0000000000000141
+func0000000000000281:                   # @func0000000000000281
 	vpsraq	$1, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -14,7 +14,7 @@ func0000000000000141:                   # @func0000000000000141
 	retq
 .LCPI1_0:
 	.quad	2147483647                      # 0x7fffffff
-func0000000000000171:                   # @func0000000000000171
+func00000000000002e1:                   # @func00000000000002e1
 	vpsrlq	$2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1

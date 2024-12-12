@@ -166,7 +166,8 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_label.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i32 %1, i8 %2) #0 {
@@ -190,8 +191,7 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; icu/optimized/wrtjava.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000100(i32 %0, i32 %1, i8 %2) #0 {

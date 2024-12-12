@@ -5,7 +5,7 @@
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; qemu/optimized/libvhost-user.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000021(i64 %0, ptr %1) #0 {
 entry:
   %2 = or disjoint i64 %0, 512
   %3 = icmp eq ptr %1, null

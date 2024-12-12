@@ -4,7 +4,7 @@
 ; llama.cpp/optimized/ggml-alloc.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f1(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func00000000000001e1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/nfs4xdr.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -29,7 +29,7 @@ entry:
 ; openblas/optimized/dlatrs3.c.ll
 ; z3/optimized/dd_fdd.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000081(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/partbounds.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c6(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000186(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -57,7 +57,7 @@ entry:
 ; redis/optimized/sc.ll
 ; redis/optimized/sc.sym.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func00000000000000a1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1

@@ -8,15 +8,14 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movabsq	$-1152921504606846976, %rax     # imm = 0xF000000000000000
-	leaq	1(%rsi,%rax), %rax
-	shrq	$60, %rax
-	cmpl	$15, %eax
+func0000000000000024:                   # @func0000000000000024
+	decq	%rsi
+	cmpq	$2, %rsi
 	setb	%al
-	andb	%dil, %al
+	xorb	$1, %dil
+	orb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpq	$2, %rsi
 	sete	%al
 	andb	%dil, %al

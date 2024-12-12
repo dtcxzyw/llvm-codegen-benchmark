@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_ime_pinyin.ll
 ; minetest/optimized/servermap.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i16 %0) #0 {
@@ -9,7 +10,10 @@ entry:
   ret i64 %2
 }
 
-; 5 occurrences:
+; 8 occurrences:
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; minetest/optimized/treegen.cpp.ll
 ; postgres/optimized/nbtdedup.ll
 ; qemu/optimized/hw_pci_pcie_aer.c.ll

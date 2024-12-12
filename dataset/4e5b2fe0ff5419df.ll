@@ -40,12 +40,12 @@ entry:
 ; g2o/optimized/vertex_line3d.cpp.ll
 ; g2o/optimized/vertex_segment2d.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000ff(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, 5
-  %4 = getelementptr nusw i8, ptr %2, i64 %3
-  %5 = getelementptr nusw double, ptr %4, i64 %1
-  %6 = getelementptr nusw double, ptr %5, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %2, i64 %3
+  %5 = getelementptr nusw nuw double, ptr %4, i64 %1
+  %6 = getelementptr nusw nuw double, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -54,11 +54,11 @@ entry:
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000007e(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = shl nsw i64 %1, 5
-  %4 = getelementptr nusw i8, ptr %2, i64 %3
-  %5 = getelementptr nusw double, ptr %4, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %2, i64 %3
+  %5 = getelementptr nusw nuw double, ptr %4, i64 %1
   %6 = getelementptr nusw double, ptr %5, i64 %0
   ret ptr %6
 }

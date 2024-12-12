@@ -5,6 +5,7 @@
 ; box2d/optimized/b2_body.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/Parser.cpp.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/CommandFlags.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
@@ -13,7 +14,6 @@
 ; llvm/optimized/MCTargetOptionsCommandFlags.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
@@ -71,9 +71,11 @@ entry:
   ret i16 %2
 }
 
-; 10 occurrences:
+; 14 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
@@ -82,11 +84,13 @@ entry:
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i8 %0) #0 {
 entry:
   %1 = trunc nuw i8 %0 to i1
-  %2 = select i1 %1, i16 4096, i16 0
+  %2 = select i1 %1, i16 3, i16 12
   ret i16 %2
 }
 

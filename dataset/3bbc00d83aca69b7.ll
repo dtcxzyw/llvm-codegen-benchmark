@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/lib.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/dt_common.ll
@@ -15,12 +14,14 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; quantlib/optimized/date.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Sequence.cpp.ll
@@ -48,7 +49,9 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; linux/optimized/seq_queue.ll
 ; linux/optimized/seq_timer.ll
 ; postgres/optimized/dt_common.ll
@@ -76,13 +79,12 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0) #0 {
 entry:
@@ -93,11 +95,12 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; wireshark/optimized/packet-collectd.c.ll
 ; zxing/optimized/zueci.c.ll

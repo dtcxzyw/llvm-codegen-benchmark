@@ -1,5 +1,5 @@
 
-; 781 occurrences:
+; 791 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
@@ -19,6 +19,8 @@
 ; assimp/optimized/Subdivision.cpp.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_body.cpp.ll
 ; box2d/optimized/b2_circle_shape.cpp.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
@@ -340,6 +342,7 @@
 ; libwebp/optimized/histogram_enc.c.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/alignset.cpp.ll
@@ -380,7 +383,6 @@
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_e57.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mesh_model.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -621,7 +623,6 @@
 ; oiio/optimized/maketexture.cpp.ll
 ; oiio/optimized/texture3d.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; openblas/optimized/saxpy_k.c.ll
 ; openblas/optimized/slamch.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
@@ -781,11 +782,20 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8mv6d566jv1jdve4gk2kn2bhk.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 

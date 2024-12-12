@@ -1,4 +1,4 @@
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000001ca:                   # @func00000000000001ca
 	movl	%edi, %ecx
 	shll	$24, %ecx
 	addl	$16777216, %ecx                 # imm = 0x1000000

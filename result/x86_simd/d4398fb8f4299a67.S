@@ -51,24 +51,35 @@ func0000000000000004:                   # @func0000000000000004
 	vpbroadcastd	.LCPI3_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [19,19,19,19,19,19,19,19]
 	retq
 .LCPI4_0:
-	.long	4294967262                      # 0xffffffde
+	.long	2                               # 0x2
 .LCPI4_1:
-	.long	4294967274                      # 0xffffffea
-func0000000000000009:                   # @func0000000000000009
+	.long	1                               # 0x1
+func0000000000000014:                   # @func0000000000000014
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpnltud	%ymm2, %ymm1, %k2
-	vpbroadcastd	.LCPI4_0(%rip), %ymm0 {%k2} {z} # ymm0 {%k2} {z} = [4294967262,4294967262,4294967262,4294967262,4294967262,4294967262,4294967262,4294967262]
-	vpbroadcastd	.LCPI4_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [4294967274,4294967274,4294967274,4294967274,4294967274,4294967274,4294967274,4294967274]
+	vpbroadcastd	.LCPI4_0(%rip), %ymm0 {%k2} {z} # ymm0 {%k2} {z} = [2,2,2,2,2,2,2,2]
+	vpbroadcastd	.LCPI4_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1,1,1,1,1]
 	retq
 .LCPI5_0:
-	.long	4                               # 0x4
+	.long	2                               # 0x2
 .LCPI5_1:
+	.long	1                               # 0x1
+func0000000000000018:                   # @func0000000000000018
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k1
+	vpcmpleud	%ymm2, %ymm1, %k2
+	vpbroadcastd	.LCPI5_0(%rip), %ymm0 {%k2} {z} # ymm0 {%k2} {z} = [2,2,2,2,2,2,2,2]
+	vpbroadcastd	.LCPI5_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1,1,1,1,1]
+	retq
+.LCPI6_0:
+	.long	4                               # 0x4
+.LCPI6_1:
 	.long	2                               # 0x2
 func000000000000000a:                   # @func000000000000000a
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpgtd	%ymm2, %ymm1, %k2
-	vpbroadcastd	.LCPI5_0(%rip), %ymm0 {%k2} {z} # ymm0 {%k2} {z} = [4,4,4,4,4,4,4,4]
-	vpbroadcastd	.LCPI5_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [2,2,2,2,2,2,2,2]
+	vpbroadcastd	.LCPI6_0(%rip), %ymm0 {%k2} {z} # ymm0 {%k2} {z} = [4,4,4,4,4,4,4,4]
+	vpbroadcastd	.LCPI6_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [2,2,2,2,2,2,2,2]
 	retq

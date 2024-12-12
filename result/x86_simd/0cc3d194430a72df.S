@@ -53,7 +53,7 @@ func00000000000001a0:                   # @func00000000000001a0
 func00000000000000a0:                   # @func00000000000000a0
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
-	vpmulld	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm3, %ymm0, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vextracti128	$1, %ymm1, %xmm2

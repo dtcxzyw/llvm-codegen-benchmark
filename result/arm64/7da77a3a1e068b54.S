@@ -1,24 +1,14 @@
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-	ushll	v5.2d, v4.2s, #0
-	ushll2	v4.2d, v4.4s, #0
-	add	v2.2d, v2.2d, v2.2d
-	add	v3.2d, v3.2d, v3.2d
-	ushl	v0.2d, v0.2d, v5.2d
-	ushl	v1.2d, v1.2d, v4.2d
-	sub	v1.2d, v1.2d, v3.2d
-	sub	v0.2d, v0.2d, v2.2d
+                                        // kill: def $w2 killed $w2 def $x2
+	lsl	x8, x0, x2
+	sub	x0, x8, x1, lsl #1
 	ret
                                         // -- End function
 func0000000000000070:                   // @func0000000000000070
 // %bb.0:                               // %entry
-	ushll	v5.2d, v4.2s, #0
-	ushll2	v4.2d, v4.4s, #0
-	add	v2.2d, v2.2d, v2.2d
-	add	v3.2d, v3.2d, v3.2d
-	ushl	v0.2d, v0.2d, v5.2d
-	ushl	v1.2d, v1.2d, v4.2d
-	sub	v1.2d, v1.2d, v3.2d
-	sub	v0.2d, v0.2d, v2.2d
+                                        // kill: def $w2 killed $w2 def $x2
+	lsl	x8, x0, x2
+	sub	x0, x8, x1, lsl #1
 	ret
                                         // -- End function

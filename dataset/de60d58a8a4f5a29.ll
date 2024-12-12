@@ -9,7 +9,7 @@ define i1 @func0000000000000006(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = xor i32 %2, -1
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 

@@ -7,8 +7,8 @@
 define i1 @func0000000000000003(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fmul float %3, %1
-  %5 = fcmp ugt float %4, %0
+  %4 = fmul float %1, %3
+  %5 = fcmp ult float %0, %4
   ret i1 %5
 }
 
@@ -27,8 +27,8 @@ entry:
 define i1 @func0000000000000002(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fmul float %3, %1
-  %5 = fcmp ogt float %4, %0
+  %4 = fmul float %1, %3
+  %5 = fcmp olt float %0, %4
   ret i1 %5
 }
 
@@ -40,8 +40,8 @@ entry:
 define i1 @func0000000000000004(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fmul float %3, %1
-  %5 = fcmp olt float %4, %0
+  %4 = fmul float %1, %3
+  %5 = fcmp ogt float %0, %4
   ret i1 %5
 }
 
@@ -51,8 +51,8 @@ entry:
 define i1 @func000000000000000b(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fmul float %3, %1
-  %5 = fcmp uge float %4, %0
+  %4 = fmul float %1, %3
+  %5 = fcmp ule float %0, %4
   ret i1 %5
 }
 
@@ -62,8 +62,8 @@ entry:
 define i1 @func000000000000000c(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fmul float %3, %1
-  %5 = fcmp ole float %4, %0
+  %4 = fmul float %1, %3
+  %5 = fcmp oge float %0, %4
   ret i1 %5
 }
 

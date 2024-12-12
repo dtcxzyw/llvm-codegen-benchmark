@@ -6,7 +6,7 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, -807
 	vmulhu.vx	v9, v9, a0
 	vsrl.vi	v9, v9, 7
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -15,7 +15,7 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, -1365
 	vmulhu.vx	v9, v9, a0
 	vsrl.vi	v9, v9, 1
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -33,5 +33,5 @@ func0000000000000011:                   # @func0000000000000011
 	addi	a0, a0, -1143
 	vmulhu.vx	v9, v9, a0
 	vsrl.vi	v9, v9, 25
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret

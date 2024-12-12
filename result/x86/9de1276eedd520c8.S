@@ -11,7 +11,6 @@ func0000000000000003:                   # @func0000000000000003
 	addq	$2, %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	movzwl	%di, %ecx
-	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
-	addq	%rcx, %rax
+	movzwl	%di, %eax
+	incq	%rax
 	retq

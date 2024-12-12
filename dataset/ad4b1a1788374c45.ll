@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/init_from_settings.ll
 ; clamav/optimized/dlp.c.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/packet-dmx.c.ll
@@ -13,7 +14,7 @@ entry:
   ret i16 %2
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -21,7 +22,6 @@ entry:
 ; libjpeg-turbo/optimized/jdsample.c.ll
 ; libpng/optimized/pngread.c.ll
 ; lief/optimized/psa_crypto.c.ll
-; linux/optimized/eht.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll
@@ -36,6 +36,9 @@ entry:
 ; openusd/optimized/scale_common.c.ll
 ; openusd/optimized/write.c.ll
 ; stb/optimized/stb_dxt.c.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i16 %0) #0 {
 entry:

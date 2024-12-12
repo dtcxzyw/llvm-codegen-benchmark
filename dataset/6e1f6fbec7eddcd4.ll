@@ -58,8 +58,9 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; freetype/optimized/sdf.c.ll
+; lvgl/optimized/lv_draw_sw_border.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openjdk/optimized/convertnode.ll
@@ -105,18 +106,6 @@ entry:
 }
 
 ; 2 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; z3/optimized/bv2int_rewriter.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = xor i1 %2, true
-  %4 = icmp ule i32 %0, %1
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; z3/optimized/bv2int_rewriter.cpp.ll
 ; Function Attrs: nounwind
@@ -136,6 +125,17 @@ define i1 @func000000000000000e(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
   %4 = icmp sle i32 %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; z3/optimized/bv2int_rewriter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = xor i1 %2, true
+  %4 = icmp ule i32 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
 }

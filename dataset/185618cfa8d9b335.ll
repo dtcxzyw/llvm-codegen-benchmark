@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; gromacs/optimized/eneconv.cpp.ll
 ; linux/optimized/fair.ll
 ; llvm/optimized/CommonArgs.cpp.ll
@@ -11,11 +11,13 @@
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -32,7 +34,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
@@ -43,23 +45,25 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ne i64 %4, %0
   ret i1 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/MCAsmStreamer.cpp.ll
 ; openjdk/optimized/ostream.ll
 ; proxygen/optimized/StructuredHeadersBuffer.cpp.ll
 ; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -76,10 +80,10 @@ entry:
 ; git/optimized/xutils.ll
 ; oiio/optimized/sysutil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
@@ -87,10 +91,10 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_list_nested.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -100,10 +104,10 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_list_nested.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
@@ -115,7 +119,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
@@ -127,19 +131,18 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 
-; 2 occurrences:
-; cpython/optimized/longobject.ll
+; 1 occurrences:
 ; opencv/optimized/dxt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }

@@ -1,5 +1,5 @@
 
-; 338 occurrences:
+; 333 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcCut.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -13,7 +13,6 @@
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/aigPartReg.c.ll
 ; abc/optimized/amapMerge.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/cuddApprox.c.ll
@@ -83,6 +82,7 @@
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
+; boost/optimized/rational.ll
 ; ceres/optimized/visibility.cc.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; cvc5/optimized/cardinality_extension.cpp.ll
@@ -148,7 +148,6 @@
 ; libquic/optimized/histogram.cc.ll
 ; libquic/optimized/histogram_base.cc.ll
 ; libzmq/optimized/inproc_thr.cpp.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
@@ -187,10 +186,7 @@
 ; nori/optimized/ttest.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; openblas/optimized/dbdsdc.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dhsein.c.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlahqr.c.ll
 ; openblas/optimized/dlalsd.c.ll
 ; openblas/optimized/dlaqr2.c.ll
@@ -321,7 +317,6 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; wireshark/optimized/follow_stream_dialog.cpp.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/gsm_map_summary_dialog.cpp.ll
 ; wireshark/optimized/mtp3_summary_dialog.cpp.ll
 ; wireshark/optimized/overlay_scroll_bar.cpp.ll

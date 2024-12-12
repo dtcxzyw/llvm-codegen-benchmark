@@ -1,37 +1,37 @@
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	leal	(%rax,%rax,4), %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	addl	%eax, %eax
 	leal	(%rax,%rax,2), %eax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq
-func0000000000000059:                   # @func0000000000000059
+func00000000000000a9:                   # @func00000000000000a9
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	shll	$2, %eax
 	leal	(%rax,%rax,2), %eax
-	cmpl	%edi, %eax
-	setbe	%al
+	cmpl	%eax, %edi
+	setae	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	leal	(%rax,%rax,8), %eax
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	leal	(%rax,%rax,8), %eax
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	retq

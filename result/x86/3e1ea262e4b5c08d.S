@@ -21,7 +21,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmovnel	%esi, %eax
 	shrl	$31, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movl	%esi, %eax
 	negl	%eax
 	testb	$1, %dil
@@ -29,7 +29,7 @@ func0000000000000016:                   # @func0000000000000016
 	testl	%eax, %eax
 	setle	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%esi, %eax
 	negl	%eax
 	testb	$1, %dil
@@ -37,7 +37,7 @@ func0000000000000011:                   # @func0000000000000011
 	testl	%eax, %eax
 	sete	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movl	%esi, %eax
 	negl	%eax
 	testb	$1, %dil
@@ -45,7 +45,7 @@ func000000000000001a:                   # @func000000000000001a
 	testl	%eax, %eax
 	setg	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movl	%esi, %eax
 	negl	%eax
 	testb	$1, %dil
@@ -53,7 +53,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmpl	$1025, %eax                     # imm = 0x401
 	setae	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movl	%esi, %eax
 	negl	%eax
 	testb	$1, %dil

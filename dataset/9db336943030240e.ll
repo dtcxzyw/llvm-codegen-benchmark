@@ -1,5 +1,5 @@
 
-; 199 occurrences:
+; 196 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcBlifMv.c.ll
@@ -48,7 +48,6 @@
 ; abc/optimized/bbrReach.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/bdcDec.c.ll
-; abc/optimized/bdcTable.c.ll
 ; abc/optimized/bmcBmc.c.ll
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/bmcMulti.c.ll
@@ -78,7 +77,6 @@
 ; abc/optimized/cuddExport.c.ll
 ; abc/optimized/cuddGenCof.c.ll
 ; abc/optimized/cuddGroup.c.ll
-; abc/optimized/cuddInit.c.ll
 ; abc/optimized/cuddLinear.c.ll
 ; abc/optimized/cuddLiteral.c.ll
 ; abc/optimized/cuddPriority.c.ll
@@ -189,7 +187,6 @@
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswLcorr.c.ll
 ; abc/optimized/sswPairs.c.ll
-; abc/optimized/sswSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/sswUnique.c.ll
 ; abc/optimized/superAnd.c.ll

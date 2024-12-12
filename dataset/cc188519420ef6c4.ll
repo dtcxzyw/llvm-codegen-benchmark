@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 38 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; cpython/optimized/unicodeobject.ll
 ; gromacs/optimized/forcerec.cpp.ll
@@ -36,6 +36,8 @@
 ; stockfish/optimized/movepick.ll
 ; stockfish/optimized/position.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i16 %0) #0 {
 entry:

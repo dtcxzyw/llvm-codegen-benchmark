@@ -40,27 +40,4 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; lua/optimized/ltable.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw nsw i64 %0, 30
-  %4 = urem i64 %3, %2
-  ret i64 %4
-}
-
-; 1 occurrences:
-; eastl/optimized/EAFixedPoint.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %0, 16
-  %4 = urem i64 %3, %2
-  ret i64 %4
-}
-
 attributes #0 = { nounwind }

@@ -6,7 +6,7 @@ func000000000000001e:                   # @func000000000000001e
 	li	a0, 32
 	vsrl.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vsrl.vx	v8, v8, a0
 	ret
 func0000000000000036:                   # @func0000000000000036

@@ -15,7 +15,7 @@ entry:
   %3 = and i32 %2, 357913941
   %4 = sub i32 %1, %3
   %5 = and i32 %4, 858993459
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -28,7 +28,7 @@ entry:
   %3 = and i32 %2, 357913941
   %4 = sub i32 %1, %3
   %5 = and i32 %4, 858993459
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 

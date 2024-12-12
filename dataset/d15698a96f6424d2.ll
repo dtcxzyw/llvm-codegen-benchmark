@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 54 occurrences:
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
 ; coreutils-rs/optimized/2clh6i7rt37zjc4b.ll
@@ -17,7 +17,6 @@
 ; linux/optimized/calipso.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/drm_dp_helper.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_modeset_setup.ll
 ; linux/optimized/intel_vdsc.ll
@@ -50,6 +49,9 @@
 ; wireshark/optimized/iax2_analysis_dialog.cpp.ll
 ; wireshark/optimized/packet-gsm_rlcmac.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; zxing/optimized/ReadBarcode.cpp.ll
 ; Function Attrs: nounwind

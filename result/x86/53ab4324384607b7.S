@@ -5,15 +5,21 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	leaq	-2047(%rdx,%rsi), %rax
-	cmpq	$-2048, %rax                    # imm = 0xF800
-	setb	%al
+func00000000000001c8:                   # @func00000000000001c8
+	leaq	1(%rdx,%rsi), %rax
+	cmpq	$17, %rax
+	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000006:                   # @func0000000000000006
-	leaq	-97(%rdx,%rsi), %rax
-	testq	%rax, %rax
-	setle	%al
+func00000000000001e8:                   # @func00000000000001e8
+	leaq	3(%rdx,%rsi), %rax
+	cmpq	$17, %rax
+	setae	%al
+	orb	%dil, %al
+	retq
+func0000000000000188:                   # @func0000000000000188
+	leaq	2(%rdx,%rsi), %rax
+	cmpq	$120, %rax
+	setae	%al
 	orb	%dil, %al
 	retq

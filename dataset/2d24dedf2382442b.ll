@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:

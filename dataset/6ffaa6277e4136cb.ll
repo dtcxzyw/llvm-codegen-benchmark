@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/alloc_lib.ll
 ; c3c/optimized/lexer.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; llvm/optimized/CloneFunction.cpp.ll
@@ -40,6 +41,19 @@ entry:
   %3 = add nuw nsw i64 %2, 15
   %4 = and i64 %3, 17179869176
   %5 = select i1 %0, i64 0, i64 %4
+  ret i64 %5
+}
+
+; 2 occurrences:
+; bullet3/optimized/b3Generic6DofConstraint.ll
+; bullet3/optimized/btGeneric6DofConstraint.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i1 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 6
+  %3 = add nuw i64 %2, 120
+  %4 = and i64 %3, 4294967288
+  %5 = select i1 %0, i64 56, i64 %4
   ret i64 %5
 }
 

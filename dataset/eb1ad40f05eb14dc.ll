@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -12,7 +12,6 @@
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-encode.ll
 ; ripgrep-rs/optimized/17szqs4crgj36yow.ll
-; yyjson/optimized/yyjson.c.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i8 %1) #0 {

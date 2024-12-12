@@ -1,11 +1,11 @@
 
-; 149 occurrences:
+; 148 occurrences:
+; boost/optimized/alloc_lib.ll
 ; bullet3/optimized/btKinematicCharacterController.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; cmake/optimized/cmFindCommon.cxx.ll
 ; draco/optimized/mesh_edgebreaker_encoder.cc.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
-; flatbuffers/optimized/flatc.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; gromacs/optimized/decidegpuusage.cpp.ll
 ; gromacs/optimized/filenameoptionmanager.cpp.ll
@@ -44,12 +44,12 @@
 ; llvm/optimized/Gnu.cpp.ll
 ; llvm/optimized/ImplicitNullChecks.cpp.ll
 ; llvm/optimized/InstCombineAddSub.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/LoopUtils.cpp.ll
 ; llvm/optimized/MIRSampleProfile.cpp.ll
 ; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegAllocEvictionAdvisor.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/SanitizerCoverage.cpp.ll
@@ -121,7 +121,6 @@
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/planner.ll
 ; postgres/optimized/tablecmds.ll
-; proj/optimized/factory.cpp.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -153,8 +152,8 @@
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
-  %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

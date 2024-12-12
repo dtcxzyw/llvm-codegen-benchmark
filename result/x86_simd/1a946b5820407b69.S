@@ -20,7 +20,7 @@ func0000000000000002:                   # @func0000000000000002
 	vptestnmb	%xmm1, %xmm1, %k1
 	vpbroadcastb	.LCPI1_2(%rip), %xmm1   # xmm1 = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 	vmovdqu8	.LCPI1_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI2_0:
 	.zero	16,26
@@ -43,7 +43,7 @@ func000000000000000c:                   # @func000000000000000c
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	retq
 .LCPI4_0:
-	.zero	16,8
+	.zero	16,5
 .LCPI4_1:
 	.zero	16,2
 .LCPI4_2:
@@ -51,8 +51,7 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000009:                   # @func0000000000000009
 	vpcmpltub	.LCPI4_0(%rip), %xmm1, %k1
 	vpord	.LCPI4_2(%rip){1to4}, %xmm0, %xmm1
-	vmovdqu8	%xmm0, %xmm1 {%k1}
-	vmovdqa	%xmm1, %xmm0
+	vmovdqu8	%xmm1, %xmm0 {%k1}
 	retq
 .LCPI5_0:
 	.zero	16,128

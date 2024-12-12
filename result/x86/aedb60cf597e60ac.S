@@ -22,3 +22,11 @@ func0000000000000018:                   # @func0000000000000018
 	andl	$1, %eax
 	negl	%eax
 	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpl	$2, %esi
+	setb	%al
+	orb	%dil, %al
+	movzbl	%al, %eax
+	andl	$1, %eax
+	negl	%eax
+	retq

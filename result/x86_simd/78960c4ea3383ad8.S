@@ -38,23 +38,3 @@ func000000000000000c:                   # @func000000000000000c
 	vpor	%ymm1, %ymm0, %ymm0
 	vpternlogd	$254, .LCPI1_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
-.LCPI2_0:
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-.LCPI2_1:
-	.long	1024                            # 0x400
-.LCPI2_2:
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-func0000000000000008:                   # @func0000000000000008
-	vpandd	.LCPI2_2(%rip){1to4}, %xmm2, %xmm2
-	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
-	vpor	%ymm1, %ymm0, %ymm0
-	vpternlogd	$254, .LCPI2_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
-	retq

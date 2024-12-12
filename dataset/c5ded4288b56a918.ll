@@ -1,21 +1,8 @@
 
-; 23 occurrences:
+; 10 occurrences:
 ; hermes/optimized/Interpreter.cpp.ll
 ; linux/optimized/printk_ringbuffer.ll
 ; linux/optimized/seq_buf.ll
-; openblas/optimized/dgbmv_thread_t.c.ll
-; openblas/optimized/dspmv_thread_L.c.ll
-; openblas/optimized/dspmv_thread_U.c.ll
-; openblas/optimized/dsymv_thread_L.c.ll
-; openblas/optimized/dsymv_thread_U.c.ll
-; openblas/optimized/dtpmv_thread_NLN.c.ll
-; openblas/optimized/dtpmv_thread_NLU.c.ll
-; openblas/optimized/dtpmv_thread_NUN.c.ll
-; openblas/optimized/dtpmv_thread_NUU.c.ll
-; openblas/optimized/dtpmv_thread_TLN.c.ll
-; openblas/optimized/dtpmv_thread_TLU.c.ll
-; openblas/optimized/dtpmv_thread_TUN.c.ll
-; openblas/optimized/dtpmv_thread_TUU.c.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/heapam.ll
 ; rocksdb/optimized/filter_policy.cc.ll
@@ -32,7 +19,26 @@ entry:
   ret i64 %3
 }
 
-; 45 occurrences:
+; 64 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/channel.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
@@ -87,7 +93,8 @@ entry:
   ret i64 %3
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/area.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll

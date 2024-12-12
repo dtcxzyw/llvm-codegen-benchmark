@@ -1,5 +1,5 @@
 
-; 465 occurrences:
+; 464 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; git/optimized/apply.ll
@@ -308,7 +308,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -550,7 +549,7 @@ entry:
   %4 = and i16 %3, 96
   %5 = and i16 %1, -97
   %6 = or disjoint i16 %4, %5
-  %7 = or i16 %6, %0
+  %7 = or i16 %0, %6
   ret i16 %7
 }
 

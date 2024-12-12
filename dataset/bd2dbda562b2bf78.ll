@@ -1,5 +1,7 @@
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; graphviz/optimized/arrows.c.ll
 ; opencv/optimized/lsd.cpp.ll

@@ -52,12 +52,34 @@ func0000000000000012:                   # @func0000000000000012
 	fmv.d.x	fa5, zero
 	flt.d	a0, fa0, fa5
 	ret
-func0000000000000084:                   # @func0000000000000084
+func00000000000000c2:                   # @func00000000000000c2
 	sext.w	a0, a0
-	li	a1, 4
-	bltu	a1, a0, .LBB5_2
-	fmv.d	fa0, fa1
+	li	a1, 1
+	beq	a0, a1, .LBB5_2
+	fmv.d	fa1, fa0
 .LBB5_2:                                # %entry
 	fmv.d.x	fa5, zero
+	flt.d	a0, fa1, fa5
+	ret
+.LCPI6_0:
+	.quad	0x3ff0000000000000              # double 1
+func0000000000000062:                   # @func0000000000000062
+	sext.w	a0, a0
+	bltz	a0, .LBB6_2
+	fmv.d	fa0, fa1
+.LBB6_2:                                # %entry
+	lui	a0, %hi(.LCPI6_0)
+	fld	fa5, %lo(.LCPI6_0)(a0)
+	flt.d	a0, fa0, fa5
+	ret
+.LCPI7_0:
+	.quad	0x3ff0000000000000              # double 1
+func0000000000000064:                   # @func0000000000000064
+	sext.w	a0, a0
+	bltz	a0, .LBB7_2
+	fmv.d	fa0, fa1
+.LBB7_2:                                # %entry
+	lui	a0, %hi(.LCPI7_0)
+	fld	fa5, %lo(.LCPI7_0)(a0)
 	flt.d	a0, fa5, fa0
 	ret

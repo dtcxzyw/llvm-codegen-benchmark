@@ -13,9 +13,8 @@ func0000000000000004:                   # @func0000000000000004
 	movslq	%edx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	incl	%edx
+	decl	%esi
 	testb	$1, %dil
-	cmovnel	%esi, %edx
-	decl	%edx
-	movslq	%edx, %rax
+	cmovel	%edx, %esi
+	movslq	%esi, %rax
 	retq

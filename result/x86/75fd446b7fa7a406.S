@@ -13,3 +13,15 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	shrq	$63, %rsi
+	orq	%rdx, %rsi
+	setne	%al
+	andb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	$2, %rsi
+	sbbq	$0, %rdx
+	setb	%al
+	andb	%dil, %al
+	retq

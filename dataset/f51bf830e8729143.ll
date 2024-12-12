@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/serverenvironment.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i8 %1, i16 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = icmp eq i8 %1, 0
@@ -17,12 +17,12 @@ entry:
 ; php/optimized/util.ll
 ; wireshark/optimized/packet-ocp1.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = icmp eq i8 %1, 2
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

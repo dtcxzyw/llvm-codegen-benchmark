@@ -30,6 +30,12 @@ func0000000000000010:                   # @func0000000000000010
 	movzbl	%sil, %eax
 	orl	%edx, %eax
 	retq
+func0000000000000017:                   # @func0000000000000017
+	shll	$8, %edx
+	orl	%edi, %edx
+	movzbl	%sil, %eax
+	orl	%edx, %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	shll	$11, %edx
 	orl	%edi, %edx

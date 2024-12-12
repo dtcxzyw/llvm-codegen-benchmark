@@ -1,7 +1,11 @@
 
-; 2 occurrences:
+; 6 occurrences:
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
@@ -12,9 +16,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
-; linux/optimized/ht.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

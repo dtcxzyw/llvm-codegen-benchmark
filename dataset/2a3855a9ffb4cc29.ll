@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libquic/optimized/p256-x86_64.c.ll
@@ -14,7 +14,6 @@
 ; php/optimized/zend_inference.ll
 ; redis/optimized/sentinel.ll
 ; ruby/optimized/iseq.ll
-; rust-analyzer-rs/optimized/6218mmeycy2lka1.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
@@ -27,13 +26,12 @@ entry:
   ret i32 %5
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/aspm.ll
-; linux/optimized/attr.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/DXILResource.cpp.ll
@@ -63,7 +61,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 67108864
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

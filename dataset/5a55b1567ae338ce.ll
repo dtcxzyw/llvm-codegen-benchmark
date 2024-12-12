@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
 ; openjdk/optimized/hb-buffer-verify.ll

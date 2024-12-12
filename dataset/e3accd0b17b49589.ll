@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 69 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/acecPa.c.ll
@@ -49,13 +49,10 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/rand.cpp.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; ozz-animation/optimized/animation.cc.ll
 ; ozz-animation/optimized/raw_animation_archive.cc.ll
@@ -77,7 +74,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -1658038656
   %4 = xor i32 %3, %1
-  %5 = xor i32 %4, %0
+  %5 = xor i32 %0, %4
   ret i32 %5
 }
 

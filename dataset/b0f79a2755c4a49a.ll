@@ -13,7 +13,7 @@
 ; ruby/optimized/ripper.ll
 ; velox/optimized/TypeCalculation.yy.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i16 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i16 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = icmp slt i16 %0, 0
@@ -25,7 +25,7 @@ entry:
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i16 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i16 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 2, %1
   %3 = icmp ult i16 %0, 3

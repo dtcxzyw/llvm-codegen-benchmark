@@ -12,7 +12,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpcmpnltud	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vpsrld	$3, %ymm0, %ymm0 {%k1}
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpsrld	$16, %ymm0, %ymm0 {%k1}
 	retq

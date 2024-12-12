@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 19 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/winfnt.c.ll
 ; grpc/optimized/timeout_encoding.cc.ll
@@ -7,6 +7,7 @@
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; linux/optimized/hda_controller.ll
+; linux/optimized/sta_info.ll
 ; linux/optimized/tree_lookup.ll
 ; linux/optimized/uncore_nhmex.ll
 ; linux/optimized/xhci-mem.ll
@@ -15,7 +16,9 @@
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
+; qemu/optimized/accel_tcg_cputlb.c.ll
 ; wireshark/optimized/netscaler.c.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:
@@ -39,10 +42,9 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/string.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/tcg-op-gvec.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0) #0 {

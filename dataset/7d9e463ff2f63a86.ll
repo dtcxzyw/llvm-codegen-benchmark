@@ -1,10 +1,10 @@
 
-%"class.openvdb::v11_0::tree::NodeUnion.2597509" = type { %union.anon.172.2597510 }
-%union.anon.172.2597510 = type { ptr }
-%"struct.OT::OffsetTo.161.2616084" = type { %"struct.OT::Offset.159.2616085" }
-%"struct.OT::Offset.159.2616085" = type { %"struct.OT::IntType.152.2616086" }
-%"struct.OT::IntType.152.2616086" = type { %struct.BEInt.153.2616087 }
-%struct.BEInt.153.2616087 = type { [4 x i8] }
+%"class.openvdb::v11_0::tree::NodeUnion.2710927" = type { %union.anon.172.2710928 }
+%union.anon.172.2710928 = type { ptr }
+%"struct.OT::OffsetTo.161.2729538" = type { %"struct.OT::Offset.159.2729539" }
+%"struct.OT::Offset.159.2729539" = type { %"struct.OT::IntType.152.2729540" }
+%"struct.OT::IntType.152.2729540" = type { %struct.BEInt.153.2729541 }
+%struct.BEInt.153.2729541 = type { [4 x i8] }
 
 ; 16 occurrences:
 ; openvdb/optimized/Diagnostics.cc.ll
@@ -24,12 +24,12 @@
 ; openvdb/optimized/points.cc.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
   %4 = or disjoint i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw [32768 x %"class.openvdb::v11_0::tree::NodeUnion.2597509"], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [32768 x %"class.openvdb::v11_0::tree::NodeUnion.2710927"], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -45,12 +45,12 @@ entry:
 ; openjdk/optimized/hb-ot-name.ll
 ; wolfssl/optimized/ecc.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw [1 x %"struct.OT::OffsetTo.161.2616084"], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.161.2729538"], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

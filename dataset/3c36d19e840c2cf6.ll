@@ -99,16 +99,4 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
-; openblas/optimized/dlasyf_aa.c.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000c4(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, 1
-  %5 = mul nsw i32 %0, %1
-  %6 = add i32 %5, %4
-  ret i32 %6
-}
-
 attributes #0 = { nounwind }

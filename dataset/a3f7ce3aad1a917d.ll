@@ -1,5 +1,5 @@
 
-; 137 occurrences:
+; 138 occurrences:
 ; cmake/optimized/vtls.c.ll
 ; curl/optimized/libcurl_la-vtls.ll
 ; git/optimized/archive.ll
@@ -33,6 +33,7 @@
 ; llvm/optimized/Targets.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; openjdk/optimized/hb-ot-map.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll

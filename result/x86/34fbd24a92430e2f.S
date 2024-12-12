@@ -10,19 +10,19 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	andb	$1, %dl
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	andb	$1, %dl
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	andb	$1, %dl
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax

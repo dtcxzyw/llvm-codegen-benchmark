@@ -13,7 +13,7 @@ entry:
   %2 = shl i8 %1, 1
   %3 = and i8 %2, 14
   %4 = zext nneg i8 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -31,7 +31,7 @@ entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

@@ -51,6 +51,12 @@ func0000000000000052:                   # @func0000000000000052
 	add	a0, a0, a1
 	srliw	a0, a0, 24
 	ret
+func0000000000000062:                   # @func0000000000000062
+	add	a0, a0, a1
+	li	a1, 1152
+	sh3add	a0, a1, a0
+	srliw	a0, a0, 12
+	ret
 func0000000000000068:                   # @func0000000000000068
 	add	a0, a0, a1
 	addi	a0, a0, 32

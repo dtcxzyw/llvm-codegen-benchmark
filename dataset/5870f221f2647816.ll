@@ -3,30 +3,30 @@
 ; freetype/optimized/sfnt.c.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000fe4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 10
-  %7 = icmp ugt ptr %6, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 10
+  %7 = icmp ult ptr %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007a8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000fe8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 8
-  %7 = icmp ult ptr %6, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
+  %7 = icmp ugt ptr %0, %6
   ret i1 %7
 }
 
-; 74 occurrences:
+; 75 occurrences:
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDumper.cpp.ll
@@ -72,6 +72,7 @@ entry:
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaHLSL.cpp.ll
+; llvm/optimized/SemaLambda.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
@@ -102,13 +103,13 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 16
-  %7 = icmp eq ptr %6, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 16
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
@@ -176,13 +177,13 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007ac(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000fec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 48
-  %7 = icmp ne ptr %6, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 48
+  %7 = icmp ne ptr %0, %6
   ret i1 %7
 }
 
@@ -206,13 +207,13 @@ entry:
 ; llvm/optimized/Transforms.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000fe1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 48
-  %7 = icmp eq ptr %6, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 48
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
@@ -221,13 +222,13 @@ entry:
 ; llvm/optimized/DebugCheckers.cpp.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 16
-  %7 = icmp ne ptr %6, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 16
+  %7 = icmp ne ptr %0, %6
   ret i1 %7
 }
 

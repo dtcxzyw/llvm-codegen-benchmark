@@ -10,7 +10,7 @@ entry:
   ret i64 %2
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; assimp/optimized/X3DGeoHelper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -18,6 +18,7 @@ entry:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
+; eastl/optimized/BenchmarkSort.cpp.ll
 ; gromacs/optimized/colvarsforceprovider.cpp.ll
 ; gromacs/optimized/colvarsoptions.cpp.ll
 ; gromacs/optimized/convertGmxToNblib.cpp.ll

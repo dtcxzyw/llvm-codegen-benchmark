@@ -57,16 +57,6 @@ entry:
 }
 
 ; 1 occurrences:
-; quantlib/optimized/symmetricschurdecomposition.ll
-; Function Attrs: nounwind
-define double @func0000000000000004(double %0, i64 %1) #0 {
-entry:
-  %2 = icmp ult i64 %1, 5
-  %3 = select i1 %2, double %0, double 0.000000e+00
-  ret double %3
-}
-
-; 1 occurrences:
 ; gromacs/optimized/trxio.cpp.ll
 ; Function Attrs: nounwind
 define double @func000000000000000c(double %0, i64 %1) #0 {

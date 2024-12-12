@@ -1,16 +1,14 @@
 .LCPI0_0:
-	.long	39                              # 0x27
+	.long	16                              # 0x10
 .LCPI0_1:
-	.long	41                              # 0x29
-.LCPI0_2:
-	.long	256                             # 0x100
+	.long	8                               # 0x8
 func0000000000000007:                   # @func0000000000000007
 	vpsllw	$15, %xmm2, %xmm2
-	vpmovw2m	%xmm2, %k1
-	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [39,39,39,39,39,39,39,39]
-	vpbroadcastd	.LCPI0_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [41,41,41,41,41,41,41,41]
-	vpor	%ymm1, %ymm0, %ymm0
-	vpternlogd	$254, .LCPI0_2(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltw	%xmm3, %xmm2, %k1
+	vorps	%ymm1, %ymm0, %ymm0
+	vorps	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vorps	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	553646082                       # 0x20fff802

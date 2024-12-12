@@ -3,7 +3,7 @@
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 63
@@ -16,13 +16,13 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000194(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 63
   %4 = lshr i64 %3, 6
   %5 = lshr i64 %0, 6
-  %6 = icmp ult i64 %4, %5
+  %6 = icmp samesign ult i64 %4, %5
   ret i1 %6
 }
 
@@ -31,13 +31,13 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000094(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
   %5 = lshr i64 %0, 1
-  %6 = icmp ult i64 %4, %5
+  %6 = icmp samesign ult i64 %4, %5
   ret i1 %6
 }
 

@@ -197,7 +197,7 @@ entry:
 ; taskflow/optimized/scalable_pipeline.cpp.ll
 ; taskflow/optimized/scalable_pipeline_with_deferred_tokens.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %0, %1
   %3 = icmp ugt i64 %2, 4611686018427387903
@@ -209,7 +209,7 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/volumegrid.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000088(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000108(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %0, %1
   %3 = icmp ugt i64 %2, 4611686018427387903
@@ -218,27 +218,29 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a8(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000148(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %0, %1
-  %3 = shl nuw i64 %2, 3
-  %4 = icmp ugt i64 %2, 2305843009213693951
-  %5 = select i1 %4, i64 -1, i64 %3
+  %3 = icmp ugt i64 %2, 2305843009213693951
+  %4 = shl nuw i64 %2, 3
+  %5 = select i1 %3, i64 -1, i64 %4
   ret i64 %5
 }
 
 ; 1 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000198(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %0, %1
-  %3 = icmp ugt i64 %2, 1152921504606846975
+  %3 = icmp samesign ugt i64 %2, 1152921504606846975
   %4 = shl i64 %2, 4
   %5 = select i1 %3, i64 -1, i64 %4
   ret i64 %5
@@ -254,7 +256,7 @@ entry:
 ; quantlib/optimized/levenbergmarquardt.ll
 ; quantlib/optimized/twofactormodel.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000c8(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = icmp ugt i64 %2, 2305843009213693951
@@ -279,7 +281,7 @@ entry:
 ; pybind11/optimized/test_buffers.cpp.ll
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = icmp ugt i64 %2, 2305843009213693951
@@ -291,7 +293,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matrix_transform.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = icmp ugt i64 %2, 4611686018427387903
@@ -303,10 +305,10 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/ImfTiledRgbaFile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000e8(i64 %0, i64 %1) #0 {
+define i64 @func00000000000001d8(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %0, %1
-  %3 = icmp ugt i64 %2, 2305843009213693951
+  %3 = icmp samesign ugt i64 %2, 2305843009213693951
   %4 = shl nuw i64 %2, 3
   %5 = select i1 %3, i64 -1, i64 %4
   ret i64 %5
@@ -315,7 +317,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/cff.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i64 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
   %3 = icmp sgt i64 %2, 32767

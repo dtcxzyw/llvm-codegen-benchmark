@@ -11,7 +11,7 @@
 ; stockfish/optimized/position.ll
 ; wireshark/optimized/packet-usb-audio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 1, i32 2
@@ -24,7 +24,7 @@ entry:
 ; php/optimized/pcre2_substitute.ll
 ; spike/optimized/f32_roundToInt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000281(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = select i1 %2, i32 9, i32 5
@@ -40,9 +40,9 @@ entry:
 ; libquic/optimized/inflate.c.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000501(i8 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 2
+  %2 = icmp samesign ult i32 %1, 2
   %3 = select i1 %2, i32 0, i32 255
   %4 = zext i8 %0 to i32
   %5 = icmp eq i32 %3, %4

@@ -11,3 +11,9 @@ func000000000000001e:                   # @func000000000000001e
 	or	a0, a0, a2
 	srliw	a0, a0, 9
 	ret
+func0000000000000010:                   # @func0000000000000010
+	andi	a2, a2, 255
+	or	a0, a0, a1
+	srliw	a0, a0, 24
+	or	a0, a0, a2
+	ret

@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; git/optimized/wt-status.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; openjdk/optimized/chaitin.ll
 ; openjdk/optimized/matcher.ll
@@ -14,9 +13,10 @@ entry:
   ret i32 %3
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; libwebp/optimized/frame_enc.c.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openexr/optimized/ImfB44Compressor.cpp.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll

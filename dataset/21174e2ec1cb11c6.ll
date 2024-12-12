@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 48 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/hashing.cc.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -27,7 +27,6 @@
 ; lodepng/optimized/pngdetail.cpp.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

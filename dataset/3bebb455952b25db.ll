@@ -91,7 +91,6 @@ entry:
 
 ; 10 occurrences:
 ; assimp/optimized/zip.c.ll
-; clamav/optimized/adc.c.ll
 ; hermes/optimized/escape.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/uscript_props.ll
@@ -100,6 +99,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/packet-smb.c.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i32 %0) #0 {
 entry:

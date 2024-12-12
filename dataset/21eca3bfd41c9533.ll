@@ -9,7 +9,7 @@
 ; openssl/optimized/libcrypto-shlib-a_strex.ll
 ; openssl/optimized/libcrypto-shlib-conf_mod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000302(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1
   %4 = icmp eq i16 %3, 0
@@ -23,7 +23,7 @@ entry:
 ; icu/optimized/utf16collationiterator.ll
 ; php/optimized/strnatcmp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000042(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 255
   %4 = icmp eq i16 %3, 14
@@ -38,7 +38,7 @@ entry:
 ; icu/optimized/ustring.ll
 ; llvm/optimized/VLIWMachineScheduler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000058(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 64
   %4 = icmp eq i16 %3, 0

@@ -10,19 +10,8 @@ entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = add nuw nsw i64 %2, 39
   %4 = lshr i64 %3, 3
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
-}
-
-; 1 occurrences:
-; abc/optimized/nmApi.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %1, 1
-  %3 = and i64 %2, 4294967295
-  %4 = add nuw nsw i64 %3, %0
-  ret i64 %4
 }
 
 ; 2 occurrences:
@@ -33,7 +22,7 @@ define i64 @func000000000000006c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4611686018427387903
   %3 = and i64 %2, 4611686018427387903
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -56,31 +45,8 @@ entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 7
   %4 = lshr i64 %3, 3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
-}
-
-; 1 occurrences:
-; z3/optimized/sat_clause.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000007b(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw nsw i64 %1, 2
-  %3 = add nuw nsw i64 %2, 20
-  %4 = lshr i64 %3, 3
-  %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000002f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %1, 1
-  %3 = and i64 %2, 2305843009213693951
-  %4 = add nuw nsw i64 %3, %0
-  ret i64 %4
 }
 
 attributes #0 = { nounwind }

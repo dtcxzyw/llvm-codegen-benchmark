@@ -33,8 +33,3 @@ func000000000000001a:                   # @func000000000000001a
 	addi	a0, a0, 2
 	andi	a0, a0, -4
 	ret
-func0000000000000013:                   # @func0000000000000013
-	addi	a0, a0, 1
-	srli	a0, a0, 3
-	andi	a0, a0, -8
-	ret

@@ -20,7 +20,7 @@ func0000000000000067:                   # @func0000000000000067
 	retq
 .LCPI2_0:
 	.quad	0x405fc00000000000              # double 127
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	vucomisd	.LCPI2_0(%rip), %xmm0
 	setnp	%al
 	sete	%cl
@@ -31,7 +31,7 @@ func0000000000000084:                   # @func0000000000000084
 	retq
 .LCPI3_0:
 	.quad	0x7ff0000000000000              # double +Inf
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vucomisd	.LCPI3_0(%rip), %xmm0
 	setae	%cl
 	cmpq	%rsi, %rdi
@@ -47,11 +47,10 @@ func00000000000000c8:                   # @func00000000000000c8
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vucomisd	%xmm1, %xmm0
-	seta	%cl
+func0000000000000026:                   # @func0000000000000026
+	vucomisd	%xmm0, %xmm0
+	setp	%cl
 	cmpq	%rsi, %rdi
-	setb	%al
+	setl	%al
 	andb	%cl, %al
 	retq

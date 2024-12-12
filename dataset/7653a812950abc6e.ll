@@ -7,12 +7,12 @@
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/hooks.ll
+; linux/optimized/intel_pmdemand.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/memfd.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; luajit/optimized/minilua.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -54,18 +54,19 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; libwebp/optimized/upsampling.c.ll
 ; libwebp/optimized/upsampling_sse2.c.ll
 ; libwebp/optimized/yuv.c.ll
+; linux/optimized/intel_pmdemand.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = shl nuw nsw i32 %3, 1
-  %5 = and i32 %4, 64
+  %4 = shl nuw nsw i32 %3, 12
+  %5 = and i32 %4, 28672
   ret i32 %5
 }
 

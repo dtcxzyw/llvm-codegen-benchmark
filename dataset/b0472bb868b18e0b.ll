@@ -1,12 +1,13 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_arc.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 
@@ -30,7 +31,7 @@ entry:
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   ret i1 %4
 }
 

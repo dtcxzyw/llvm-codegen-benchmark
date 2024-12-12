@@ -22,6 +22,12 @@ func0000000000000010:                   # @func0000000000000010
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
+func0000000000000030:                   # @func0000000000000030
+	cmpl	$9, %edx
+	setae	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	testl	%edx, %edx
 	setle	%al
@@ -30,6 +36,12 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000008:                   # @func0000000000000008
 	cmpl	$30288, %edx                    # imm = 0x7650
+	setb	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpl	$101, %edx
 	setb	%al
 	andb	%sil, %al
 	orb	%dil, %al

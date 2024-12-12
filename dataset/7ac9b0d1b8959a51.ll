@@ -4,7 +4,7 @@
 ; openjdk/optimized/ciMethodData.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sdiv i32 %2, 2
@@ -19,7 +19,7 @@ entry:
 ; gromacs/optimized/lincs.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sdiv i32 %2, 2

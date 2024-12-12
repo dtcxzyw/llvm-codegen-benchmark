@@ -8,9 +8,9 @@
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libpng/optimized/pngrutil.c.ll
 ; linux/optimized/intel_tv.ll
-; linux/optimized/rsmisc.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openjdk/optimized/pngrutil.ll
 ; php/optimized/ir.ll
 ; postgres/optimized/network_spgist.ll

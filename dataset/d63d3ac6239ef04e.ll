@@ -34,8 +34,9 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
+; linux/optimized/i915_pmu.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000030(ptr %0, i64 %1) #0 {
 entry:
@@ -46,18 +47,19 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
+; oiio/optimized/imagecache.cpp.ll
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 3
-  %3 = and i64 %2, 2305843009213693944
-  %4 = getelementptr nusw i8, ptr %0, i64 112
+  %2 = lshr i64 %1, 51
+  %3 = and i64 %2, 8064
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 392
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }

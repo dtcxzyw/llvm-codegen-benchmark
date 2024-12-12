@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; assimp/optimized/ScenePreprocessor.cpp.ll
 ; cpython/optimized/dtoa.ll
@@ -32,6 +32,7 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, i1 %1, double %2) #0 {

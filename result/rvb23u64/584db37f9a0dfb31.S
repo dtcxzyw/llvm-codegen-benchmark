@@ -7,7 +7,7 @@ func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a2
 	addi	a0, a0, 4
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	andi	a2, a2, 255
 	bseti	a3, zero, 11
 	czero.eqz	a2, a3, a2

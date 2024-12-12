@@ -1,11 +1,11 @@
-func0000000000000012:                   // @func0000000000000012
+func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
 	add	x8, x1, x1, lsl #32
 	lsr	x8, x8, #33
 	add	x0, x0, x8, lsl #3
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
 	mov	w8, #500                        // =0x1f4
 	mul	x8, x1, x8
@@ -13,7 +13,7 @@ func000000000000001a:                   // @func000000000000001a
 	add	x0, x0, x8, lsl #3
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	add	x8, x1, x1, lsl #1
 	lsr	x8, x8, #6

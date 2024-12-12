@@ -1,6 +1,5 @@
 
-; 42 occurrences:
-; eastl/optimized/TestFixedTupleVector.cpp.ll
+; 41 occurrences:
 ; llvm/optimized/DAGISelMatcherEmitter.cpp.ll
 ; nlohmann_json/optimized/unit-algorithms.cpp.ll
 ; nlohmann_json/optimized/unit-alt-string.cpp.ll
@@ -43,20 +42,30 @@
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
 ; rocksdb/optimized/trace_record.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(i64 %0) #0 {
+define ptr @func0000000000000007(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 6
-  %2 = getelementptr nusw i8, ptr null, i64 %1
+  %2 = getelementptr nusw nuw i8, ptr null, i64 %1
   ret ptr %2
 }
 
 ; 1 occurrences:
 ; opencv/optimized/tflite_importer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0) #0 {
+define ptr @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 4
-  %2 = getelementptr nusw i32, ptr null, i64 %1
+  %2 = getelementptr nusw nuw i32, ptr null, i64 %1
+  ret ptr %2
+}
+
+; 1 occurrences:
+; eastl/optimized/TestFixedTupleVector.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(i64 %0) #0 {
+entry:
+  %1 = sdiv exact i64 %0, 40
+  %2 = getelementptr nusw i8, ptr null, i64 %1
   ret ptr %2
 }
 

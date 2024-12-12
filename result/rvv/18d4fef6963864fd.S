@@ -4,7 +4,7 @@ func000000000000007b:                   # @func000000000000007b
 	lui	a0, 61681
 	addi	a0, a0, -241
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsrl.vi	v10, v8, 16
 	vadd.vv	v8, v10, v8
 	ret
@@ -14,7 +14,7 @@ func000000000000006f:                   # @func000000000000006f
 	lui	a0, 240
 	addi	a0, a0, 15
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsrl.vi	v10, v8, 16
 	vadd.vv	v8, v8, v10
 	ret
@@ -24,7 +24,7 @@ func000000000000001b:                   # @func000000000000001b
 	lui	a0, 815559
 	addi	a0, a0, 455
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsrl.vi	v10, v8, 12
 	vadd.vv	v8, v10, v8
 	ret
@@ -34,7 +34,7 @@ func000000000000005b:                   # @func000000000000005b
 	lui	a0, 209715
 	addi	a0, a0, 819
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsrl.vi	v10, v8, 4
 	vadd.vv	v8, v10, v8
 	ret
@@ -44,7 +44,7 @@ func000000000000003b:                   # @func000000000000003b
 	lui	a0, 209715
 	addi	a0, a0, 819
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsrl.vi	v10, v8, 4
 	vadd.vv	v8, v10, v8
 	ret

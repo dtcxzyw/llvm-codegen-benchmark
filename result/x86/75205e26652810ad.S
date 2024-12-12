@@ -13,11 +13,6 @@ func00000000000000c2:                   # @func00000000000000c2
 	vcmplepd	%xmm0, %xmm2, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
-func00000000000000ac:                   # @func00000000000000ac
-	vcmplepd	%xmm0, %xmm1, %k1
-	vcmplepd	%xmm2, %xmm0, %k0 {%k1}
-	kmovd	%k0, %eax
-	retq
 func00000000000000cc:                   # @func00000000000000cc
 	vcmplepd	%xmm0, %xmm1, %k1
 	vcmplepd	%xmm0, %xmm2, %k0 {%k1}
@@ -25,6 +20,11 @@ func00000000000000cc:                   # @func00000000000000cc
 	retq
 func00000000000000aa:                   # @func00000000000000aa
 	vcmplepd	%xmm1, %xmm0, %k1
+	vcmplepd	%xmm2, %xmm0, %k0 {%k1}
+	kmovd	%k0, %eax
+	retq
+func00000000000000ac:                   # @func00000000000000ac
+	vcmplepd	%xmm0, %xmm1, %k1
 	vcmplepd	%xmm2, %xmm0, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
@@ -36,6 +36,11 @@ func0000000000000024:                   # @func0000000000000024
 func0000000000000042:                   # @func0000000000000042
 	vcmpltpd	%xmm1, %xmm0, %k1
 	vcmpltpd	%xmm0, %xmm2, %k0 {%k1}
+	kmovd	%k0, %eax
+	retq
+func00000000000000ca:                   # @func00000000000000ca
+	vcmplepd	%xmm1, %xmm0, %k1
+	vcmplepd	%xmm0, %xmm2, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
 func0000000000000022:                   # @func0000000000000022
@@ -61,10 +66,5 @@ func0000000000000044:                   # @func0000000000000044
 func0000000000000033:                   # @func0000000000000033
 	vcmpnlepd	%xmm0, %xmm1, %k1
 	vcmpnlepd	%xmm0, %xmm2, %k0 {%k1}
-	kmovd	%k0, %eax
-	retq
-func00000000000000ca:                   # @func00000000000000ca
-	vcmplepd	%xmm1, %xmm0, %k1
-	vcmplepd	%xmm0, %xmm2, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq

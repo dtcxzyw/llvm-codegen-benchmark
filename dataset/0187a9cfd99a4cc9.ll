@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, %1
   %3 = add nuw i64 %2, %0
@@ -17,7 +17,7 @@ entry:
 ; graphviz/optimized/gvrender_core_fig.c.ll
 ; graphviz/optimized/gvrender_core_mp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, %1
   %3 = or i64 %2, %0
@@ -32,18 +32,18 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, %1
-  %3 = sub i64 0, %0
-  %4 = icmp eq i64 %2, %3
+  %3 = sub i64 0, %2
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; libwebp/optimized/ssim.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, %1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ult i64 %3, 4194304
   ret i1 %4
 }

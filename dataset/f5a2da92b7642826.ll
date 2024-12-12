@@ -1,6 +1,8 @@
 
-; 40 occurrences:
+; 43 occurrences:
 ; abc/optimized/sbdCore.c.ll
+; boost/optimized/area.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; graphviz/optimized/htmltable.c.ll
@@ -9,6 +11,7 @@
 ; linux/optimized/alps.ll
 ; linux/optimized/psmouse-base.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
+; lvgl/optimized/lv_draw_label.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll

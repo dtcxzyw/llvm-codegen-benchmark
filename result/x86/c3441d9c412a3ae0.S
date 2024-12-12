@@ -1,19 +1,25 @@
-func0000000000000188:                   # @func0000000000000188
+func0000000000000318:                   # @func0000000000000318
 	testb	$31, %sil
 	setne	%al
-	cmpb	%dil, %al
-	setb	%al
+	cmpb	%al, %dil
+	seta	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000308:                   # @func0000000000000308
+	testb	$31, %sil
+	setne	%al
+	cmpb	%al, %dil
+	seta	%al
+	retq
+func0000000000000041:                   # @func0000000000000041
 	cmpb	$18, %sil
 	sete	%al
-	cmpb	%dil, %al
+	cmpb	%al, %dil
 	sete	%al
 	retq
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	notl	%esi
 	testl	$1572864, %esi                  # imm = 0x180000
 	setne	%al
-	cmpb	%dil, %al
+	cmpb	%al, %dil
 	sete	%al
 	retq

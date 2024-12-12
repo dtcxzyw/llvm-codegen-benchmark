@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 19 occurrences:
 ; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/make_map.c.ll
 ; graphviz/optimized/position.c.ll
@@ -13,12 +13,6 @@
 ; meshlab/optimized/texture_optimization.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
-; opencv/optimized/benchmark.cpp.ll
-; opencv/optimized/cv2.cpp.ll
-; opencv/optimized/nms.cpp.ll
-; opencv/optimized/perf_common.cpp.ll
-; opencv/optimized/tldUtils.cpp.ll
-; opencv/optimized/trackerKCF.cpp.ll
 ; postgres/optimized/selfuncs.ll
 ; quantlib/optimized/fdmsimplestoragecondition.ll
 ; quantlib/optimized/lineartsrpricer.ll
@@ -29,7 +23,7 @@
 define double @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   %5 = select i1 %4, double %0, double %3
   ret double %5
 }
@@ -41,7 +35,7 @@ entry:
 define double @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   %5 = select i1 %4, double %0, double %3
   ret double %5
 }
@@ -54,7 +48,7 @@ entry:
 define double @func000000000000000a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp oge double %3, %0
+  %4 = fcmp ole double %0, %3
   %5 = select i1 %4, double %0, double %3
   ret double %5
 }
@@ -66,7 +60,7 @@ entry:
 define double @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp ole double %3, %0
+  %4 = fcmp oge double %0, %3
   %5 = select i1 %4, double %0, double %3
   ret double %5
 }

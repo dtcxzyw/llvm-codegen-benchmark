@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/decompress.c.ll
@@ -9,7 +9,6 @@
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; gromacs/optimized/bwlzh.c.ll
 ; lief/optimized/dhm.c.ll
-; linux/optimized/scsicam.ll
 ; luau/optimized/isocline.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -28,14 +27,14 @@
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Reduce.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
-; 202 occurrences:
+; 197 occurrences:
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaPat.c.ll
 ; abc/optimized/sscSat.c.ll
@@ -43,7 +42,6 @@ entry:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/chmd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/oabd.c.ll
 ; clamav/optimized/unzip.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -68,7 +66,6 @@ entry:
 ; hdf5/optimized/H5Olayout.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; hermes/optimized/RuntimeModule.cpp.ll
 ; hermes/optimized/zip.c.ll
@@ -85,11 +82,9 @@ entry:
 ; linux/optimized/aspm.ll
 ; linux/optimized/boot.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/libahci.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/tkip.ll
@@ -180,7 +175,6 @@ entry:
 ; postgres/optimized/gistbuild.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/heapam_handler.ll
-; postgres/optimized/itemptr.ll
 ; postgres/optimized/mac8.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtinsert.ll
@@ -217,7 +211,6 @@ entry:
 ; unicode-normalization-rs/optimized/2dhzw0mhmvlvodqn.ll
 ; velox/optimized/Reduce.cpp.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
-; wireshark/optimized/file-rtpdump.c.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/observer.c.ll
@@ -237,24 +230,22 @@ entry:
 ; z3/optimized/tbv.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, %0
   ret i1 %4
 }
 
-; 110 occurrences:
+; 65 occurrences:
 ; abc/optimized/bzlib.c.ll
-; assimp/optimized/zip.c.ll
 ; clamav/optimized/bzlib.c.ll
-; clamav/optimized/cabd.c.ll
 ; cmake/optimized/bzlib.c.ll
 ; cmake/optimized/cm_utf8.c.ll
 ; cmake/optimized/doh.c.ll
-; cmake/optimized/idna.c.ll
 ; cpython/optimized/_codecs_iso2022.ll
 ; cpython/optimized/_codecs_jp.ll
 ; curl/optimized/libcurl_la-doh.ll
@@ -263,7 +254,6 @@ entry:
 ; freetype/optimized/pfr.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/bloom.ll
-; git/optimized/hash-lookup.ll
 ; gromacs/optimized/coder.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
@@ -272,70 +262,30 @@ entry:
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hdf5/optimized/H5Ocache.c.ll
 ; hermes/optimized/IdentifierTable.cpp.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
-; icu/optimized/normalizer2impl.ll
-; icu/optimized/ucptrie.ll
-; libuv/optimized/idna.c.ll
 ; lief/optimized/ssl_msg.c.ll
-; linux/optimized/drm_edid.ll
-; linux/optimized/insn-eval.ll
 ; linux/optimized/intel_hdcp.ll
-; linux/optimized/tkip.ll
-; linux/optimized/utbuffer.ll
 ; linux/optimized/xz_dec_lzma2.ll
-; mold/optimized/output-chunks.cc.ARM32.cc.ll
-; mold/optimized/output-chunks.cc.I386.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
-; mold/optimized/output-chunks.cc.RV32LE.cc.ll
-; mold/optimized/output-chunks.cc.SH4.cc.ll
-; node/optimized/idna.ll
 ; openjdk/optimized/divnode.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-face.ll
-; openjdk/optimized/hb-font.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-ot-math.ll
-; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
-; openjdk/optimized/hb-ot-var.ll
 ; openjdk/optimized/hb-ucd.ll
-; openssl/optimized/asynciotest-bin-ssltestlib.ll
-; openssl/optimized/dtls_mtu_test-bin-ssltestlib.ll
-; openssl/optimized/dtlstest-bin-ssltestlib.ll
-; openssl/optimized/fatalerrtest-bin-ssltestlib.ll
 ; openssl/optimized/libssl-lib-extensions_clnt.ll
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
-; openssl/optimized/quic_multistream_test-bin-ssltestlib.ll
-; openssl/optimized/quic_newcid_test-bin-ssltestlib.ll
-; openssl/optimized/quic_srt_gen_test-bin-ssltestlib.ll
-; openssl/optimized/quicapitest-bin-ssltestlib.ll
-; openssl/optimized/quicfaultstest-bin-ssltestlib.ll
-; openssl/optimized/recordlentest-bin-ssltestlib.ll
-; openssl/optimized/rpktest-bin-ssltestlib.ll
-; openssl/optimized/servername_test-bin-ssltestlib.ll
-; openssl/optimized/ssl_handshake_rtt_test-bin-ssltestlib.ll
-; openssl/optimized/sslapitest-bin-ssltestlib.ll
-; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
-; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
-; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; php/optimized/image.ll
 ; php/optimized/pcre2_substitute.ll
-; php/optimized/pcre2_substring.ll
 ; postgres/optimized/ginget.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/heapam_handler.ll
-; postgres/optimized/itemptr.ll
 ; postgres/optimized/mac8.ll
 ; postgres/optimized/nodeTidscan.ll
 ; postgres/optimized/tuplesortvariants.ll
@@ -356,17 +306,15 @@ entry:
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-lbtrm.c.ll
 ; z3/optimized/nla_core.cpp.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
-; 7 occurrences:
-; llvm/optimized/RegisterCoalescer.cpp.ll
+; 6 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
@@ -374,10 +322,70 @@ entry:
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = icmp uge i32 %3, %0
+  %4 = icmp samesign uge i32 %3, %0
+  ret i1 %4
+}
+
+; 51 occurrences:
+; assimp/optimized/zip.c.ll
+; clamav/optimized/cabd.c.ll
+; cmake/optimized/idna.c.ll
+; freetype/optimized/sfnt.c.ll
+; git/optimized/hash-lookup.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hdf5/optimized/H5Ocache.c.ll
+; icu/optimized/normalizer2impl.ll
+; icu/optimized/ucptrie.ll
+; libuv/optimized/idna.c.ll
+; linux/optimized/drm_edid.ll
+; linux/optimized/insn-eval.ll
+; linux/optimized/tkip.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; node/optimized/idna.ll
+; openjdk/optimized/hb-font.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-math.ll
+; openjdk/optimized/hb-ot-metrics.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; openjdk/optimized/hb-ot-var.ll
+; openssl/optimized/asynciotest-bin-ssltestlib.ll
+; openssl/optimized/dtls_mtu_test-bin-ssltestlib.ll
+; openssl/optimized/dtlstest-bin-ssltestlib.ll
+; openssl/optimized/fatalerrtest-bin-ssltestlib.ll
+; openssl/optimized/quic_multistream_test-bin-ssltestlib.ll
+; openssl/optimized/quic_newcid_test-bin-ssltestlib.ll
+; openssl/optimized/quic_srt_gen_test-bin-ssltestlib.ll
+; openssl/optimized/quicapitest-bin-ssltestlib.ll
+; openssl/optimized/quicfaultstest-bin-ssltestlib.ll
+; openssl/optimized/recordlentest-bin-ssltestlib.ll
+; openssl/optimized/rpktest-bin-ssltestlib.ll
+; openssl/optimized/servername_test-bin-ssltestlib.ll
+; openssl/optimized/ssl_handshake_rtt_test-bin-ssltestlib.ll
+; openssl/optimized/sslapitest-bin-ssltestlib.ll
+; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
+; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
+; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
+; php/optimized/pcre2_substring.ll
+; sqlite/optimized/sqlite3.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 
@@ -458,7 +466,7 @@ entry:
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp slt i32 %3, %0
@@ -526,11 +534,51 @@ entry:
   ret i1 %4
 }
 
-; 81 occurrences:
+; 32 occurrences:
+; freetype/optimized/sfnt.c.ll
+; glslang/optimized/iomapper.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hdf5/optimized/H5FScache.c.ll
+; libquic/optimized/d1_both.c.ll
+; lief/optimized/ssl_msg.c.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; nori/optimized/nanovg.c.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-common.ll
+; openjdk/optimized/hb-face.ll
+; openjdk/optimized/hb-font.ll
+; openjdk/optimized/hb-ot-color.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-math.ll
+; openjdk/optimized/hb-ot-metrics.ll
+; openjdk/optimized/hb-ot-name.ll
+; openjdk/optimized/hb-ot-shape-fallback.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; openjdk/optimized/hb-ot-var.ll
+; php/optimized/pcre2_match.ll
+; php/optimized/pcre2_substring.ll
+; sqlite/optimized/sqlite3.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
+; wireshark/optimized/k12.c.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 68 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/chmd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/oabd.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -538,7 +586,6 @@ entry:
 ; flac/optimized/metadata_iterators.c.ll
 ; freetype/optimized/pfr.c.ll
 ; freetype/optimized/sfnt.c.ll
-; glslang/optimized/iomapper.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
@@ -548,21 +595,15 @@ entry:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5Bcache.c.ll
-; hdf5/optimized/H5FScache.c.ll
 ; hermes/optimized/zip.c.ll
 ; libjpeg-turbo/optimized/rdppm.c.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; libpng/optimized/png.c.ll
-; libquic/optimized/d1_both.c.ll
 ; lief/optimized/ssl_msg.c.ll
 ; linux/optimized/timer.ll
 ; linux/optimized/vt.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/miniz.c.ll
-; mold/optimized/output-chunks.cc.ARM32.cc.ll
-; mold/optimized/output-chunks.cc.I386.cc.ll
-; nori/optimized/nanovg.c.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-aat-map.ll
 ; openjdk/optimized/hb-common.ll
@@ -583,10 +624,7 @@ entry:
 ; openjdk/optimized/png.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/pcre2_compile.ll
-; php/optimized/pcre2_match.ll
-; php/optimized/pcre2_substring.ll
 ; postgres/optimized/brin.ll
-; postgres/optimized/itemptr.ll
 ; postgres/optimized/mac8.ll
 ; postgres/optimized/nodeTidscan.ll
 ; postgres/optimized/vacuum.ll
@@ -599,7 +637,6 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-lbtrm.c.ll
@@ -607,9 +644,8 @@ entry:
 ; wireshark/optimized/packet-ssh.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; yosys/optimized/fstapi.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ugt i32 %3, %0
@@ -631,14 +667,14 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, %0
   ret i1 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; cpython/optimized/_codecs_iso2022.ll
 ; cpython/optimized/_codecs_jp.ll
 ; freetype/optimized/sfnt.c.ll
@@ -648,17 +684,15 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; postgres/optimized/mac8.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ule i32 %3, %0
   ret i1 %4
 }
 
-; 38 occurrences:
-; abc/optimized/mvcCompare.c.ll
+; 37 occurrences:
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; clamav/optimized/readdb.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -717,8 +751,7 @@ entry:
   ret i1 %4
 }
 
-; 40 occurrences:
-; abc/optimized/mvcCompare.c.ll
+; 38 occurrences:
 ; assimp/optimized/XGLLoader.cpp.ll
 ; clamav/optimized/cabd.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -745,7 +778,6 @@ entry:
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
-; llvm/optimized/RegBankSelect.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; llvm/optimized/SlotIndexes.cpp.ll
@@ -770,7 +802,7 @@ entry:
 ; abc/optimized/cecSolveG.c.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp sle i32 %3, %0
@@ -798,22 +830,61 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/lzxd.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp sge i32 %3, %0
   ret i1 %4
 }
 
-; 3 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
+; 1 occurrences:
+; llvm/optimized/RegisterCoalescer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = icmp uge i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/RegBankSelect.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = icmp samesign ult i32 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
 ; postgres/optimized/mac8.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp uge i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign ule i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000039(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign uge i32 %3, %0
   ret i1 %4
 }
 

@@ -1,13 +1,14 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; assimp/optimized/glTFExporter.cpp.ll
 ; freetype/optimized/ftbase.c.ll
-; libevent/optimized/evthread_pthread.c.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libquic/optimized/x509_vfy.c.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; linux/optimized/tsc.ll
 ; rocksdb/optimized/blob_db_impl.cc.ll
 ; ruby/optimized/date_parse.ll
+; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -16,22 +17,22 @@ entry:
   ret i64 %4
 }
 
-; 78 occurrences:
+; 80 occurrences:
 ; abc/optimized/giaResub6.c.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
+; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestFixedVector.cpp.ll
+; eastl/optimized/TestTupleVector.cpp.ll
 ; g2o/optimized/edge_se3_line.cpp.ll
 ; g2o/optimized/isometry3d_mappings.cpp.ll
 ; g2o/optimized/types_seven_dof_expmap.cpp.ll
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
 ; git/optimized/diffcore-break.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
-; linux/optimized/delay.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; llvm/optimized/DWARFContext.cpp.ll
 ; llvm/optimized/DWARFDebugFrame.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
-; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM64.cc.ll
 ; mold/optimized/gc-sections.cc.LOONGARCH32.cc.ll
@@ -95,6 +96,8 @@ entry:
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; wireshark/optimized/observer.c.ll
 ; wireshark/optimized/to_str.c.ll
+; zed-rs/optimized/4z6vlo4eo03eve34h1wxhlae7.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -103,7 +106,25 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 26 occurrences:
+; abc/optimized/abc.c.ll
+; abc/optimized/abcSymm.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/cbaBlast.c.ll
+; abc/optimized/dauNonDsd.c.ll
+; abc/optimized/giaDecs.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaMinLut.c.ll
+; abc/optimized/giaMuxes.c.ll
+; abc/optimized/ifSat.c.ll
+; abc/optimized/ifTune.c.ll
+; abc/optimized/mapperUtils.c.ll
+; abc/optimized/rsbDec6.c.ll
+; abc/optimized/sbdLut.c.ll
+; abc/optimized/sfmSat.c.ll
+; abc/optimized/utilIsop.c.ll
+; abc/optimized/wlcBlast.c.ll
+; boost/optimized/src.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; nuklear/optimized/unity.c.ll

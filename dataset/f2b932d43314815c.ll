@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/aigCuts.c.ll
@@ -14,15 +14,14 @@
 ; abc/optimized/mapperCanon.c.ll
 ; abc/optimized/mapperCut.c.ll
 ; icu/optimized/ucm.ll
-; nanosvg/optimized/nanosvg.ll
 ; openexr/optimized/internal_piz.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -41,7 +40,7 @@ define i1 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -52,7 +51,7 @@ define i1 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = zext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -76,7 +75,7 @@ define i1 @func000000000000000c(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = zext i32 %2 to i64
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 

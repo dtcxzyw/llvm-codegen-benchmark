@@ -17,19 +17,16 @@ entry:
   ret i64 %6
 }
 
-; 38 occurrences:
+; 32 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/cmGeneratorExpression.cxx.ll
-; eastl/optimized/BenchmarkString.cpp.ll
 ; eastl/optimized/EACallback.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5HLcache.c.ll
 ; hdf5/optimized/H5Oattr.c.ll
 ; hdf5/optimized/H5Olink.c.ll
-; hdf5/optimized/H5Osdspace.c.ll
-; hdf5/optimized/H5Oshared.c.ll
 ; hdf5/optimized/H5Rint.c.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; luajit/optimized/lj_ffrecord.ll
@@ -53,15 +50,34 @@ entry:
 ; mold/optimized/linker-script.cc.SPARC64.cc.ll
 ; mold/optimized/linker-script.cc.X86_64.cc.ll
 ; openjdk/optimized/hb-buffer-serialize.ll
-; redis/optimized/listpack.ll
-; z3/optimized/arith_eq_solver.cpp.ll
-; z3/optimized/factor_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = add i64 %0, 6
+  %6 = sub i64 %5, %4
+  ret i64 %6
+}
+
+; 11 occurrences:
+; boost/optimized/static_string.ll
+; eastl/optimized/BenchmarkString.cpp.ll
+; eastl/optimized/TestString.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; hdf5/optimized/H5Oattr.c.ll
+; hdf5/optimized/H5Osdspace.c.ll
+; hdf5/optimized/H5Oshared.c.ll
+; openjdk/optimized/hb-buffer-serialize.ll
+; redis/optimized/listpack.ll
+; z3/optimized/arith_eq_solver.cpp.ll
+; z3/optimized/factor_rewriter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = add i64 %0, 1024
   %6 = sub i64 %5, %4
   ret i64 %6
 }

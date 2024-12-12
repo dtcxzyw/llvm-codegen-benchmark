@@ -1,5 +1,5 @@
 
-; 74 occurrences:
+; 84 occurrences:
 ; coreutils-rs/optimized/1xfs2h41cvux42ap.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; delta-rs/optimized/2difj0jdxbswpyo1.ll
@@ -11,6 +11,7 @@
 ; meilisearch-rs/optimized/2eqafq69fd46y14a.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
+; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
 ; ockam-rs/optimized/18drj88gqh6dyxft.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
@@ -25,7 +26,6 @@
 ; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
 ; ockam-rs/optimized/37pfoqtlnttaeb5z.ll
 ; ockam-rs/optimized/3991jtn1gn1d8tfl.ll
-; ockam-rs/optimized/3mmfh9oxbbu2kjan.ll
 ; ockam-rs/optimized/3p4fr10p6ul1vv1o.ll
 ; ockam-rs/optimized/49ti4bj9tyhrfks7.ll
 ; ockam-rs/optimized/4domb9jqp8axahh9.ll
@@ -74,6 +74,16 @@
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; wasmtime-rs/optimized/o5hc9u3mlvace0j.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/055l6m6wb4e4jq2j59cjsdkaz.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/35x08quqxvun4xbcwdjh3cm4j.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/c0ckf708h9mihpqednaiosrwy.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zed-rs/optimized/ebj1t6ydn0lm59l6uu3qqz6z0.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define { i64, ptr } @func0000000000000000(ptr %0, i1 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 54 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; c3c/optimized/types.c.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/open.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/vfs_inode_dotl.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
@@ -54,7 +53,6 @@
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; oiio/optimized/ddsinput.cpp.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; ruby/optimized/io.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i64 %2) #0 {

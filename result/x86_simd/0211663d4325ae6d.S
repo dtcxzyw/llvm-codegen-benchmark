@@ -12,5 +12,5 @@ func0000000000000005:                   # @func0000000000000005
 	vpmovqd	%ymm1, %xmm1
 	vcvtdq2pd	%xmm1, %ymm1
 	vmulpd	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
-	vmulpd	%ymm0, %ymm1, %ymm0
+	vmulpd	%ymm1, %ymm0, %ymm0
 	retq

@@ -26,14 +26,14 @@ func0000000000000004:                   # @func0000000000000004
 	vmovdqa	%xmm3, %xmm0
 	vzeroupper
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpmovdw	%ymm1, %xmm3
 	vpcmpnleud	%ymm2, %ymm1, %k1
 	vmovdqu16	%xmm0, %xmm3 {%k1}
 	vmovdqa	%xmm3, %xmm0
 	vzeroupper
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpmovdw	%ymm1, %xmm3
 	vpcmpgtd	%ymm1, %ymm2, %k1
 	vmovdqu16	%xmm0, %xmm3 {%k1}

@@ -65,9 +65,9 @@ entry:
 ; postgres/optimized/nodeHash.ll
 ; postgres/optimized/typcache.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 2
+  %3 = icmp samesign ult i32 %2, 2
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = sext i32 %4 to i64
   %6 = shl nsw i64 %5, 3

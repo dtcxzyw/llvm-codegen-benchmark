@@ -9,7 +9,7 @@ entry:
   %3 = fmul float %2, -2.000000e+00
   %4 = fdiv float %1, %3
   %5 = fcmp ugt float %4, 1.000000e+00
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -27,9 +27,8 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -41,13 +40,12 @@ entry:
   %3 = fmul float %2, 2.000000e+00
   %4 = fdiv float %1, %3
   %5 = fcmp ogt float %4, 1.000000e+00
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

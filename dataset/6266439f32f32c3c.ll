@@ -1,6 +1,8 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; graphviz/optimized/mincross.c.ll
+; lightgbm/optimized/bin.cpp.ll
+; lightgbm/optimized/dataset_loader.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; openblas/optimized/cblas_dgemm.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll

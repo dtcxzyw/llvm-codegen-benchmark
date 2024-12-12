@@ -1,5 +1,5 @@
 
-; 484 occurrences:
+; 480 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcFx.c.ll
@@ -86,6 +86,7 @@
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/SMDLoader.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/c_abi_x64.c.ll
 ; cjson/optimized/cJSON.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -247,7 +248,6 @@
 ; linux/optimized/nf_conntrack_core.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/sysctl_net_ipv4.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/xhci-mem.ll
 ; llvm/optimized/AArch64RedundantCopyElimination.cpp.ll
@@ -310,7 +310,6 @@
 ; luajit/optimized/lj_strscan_dyn.ll
 ; luau/optimized/IrTranslation.cpp.ll
 ; memcached/optimized/testapp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -397,10 +396,8 @@
 ; openssl/optimized/libcrypto-shlib-property.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
-; openssl/optimized/libssl-lib-tlsany_meth.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
-; openssl/optimized/libssl-shlib-tlsany_meth.ll
 ; openusd/optimized/decoder.c.ll
 ; openusd/optimized/fileIO.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -414,7 +411,6 @@
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_inheritance.ll
 ; php/optimized/zend_jit.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/network.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
@@ -493,7 +489,7 @@ entry:
   ret i1 %4
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -521,6 +517,7 @@ entry:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; lvgl/optimized/lv_obj.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; openspiel/optimized/bridge.cc.ll
@@ -547,7 +544,7 @@ entry:
 ; yosys/optimized/xilinx_srl.ll
 ; yosys/optimized/yosys.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, %1
   %3 = and i32 %2, 6

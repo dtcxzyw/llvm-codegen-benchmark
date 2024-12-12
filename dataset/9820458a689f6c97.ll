@@ -109,24 +109,12 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0) #0 {
+define i32 @func00000000000000a1(i32 %0) #0 {
 entry:
   %1 = lshr exact i32 %0, 20
   %2 = add nsw i32 %1, -1023
   %3 = icmp eq i32 %0, 2146435072
   %4 = select i1 %3, i32 2147483647, i32 %2
-  ret i32 %4
-}
-
-; 1 occurrences:
-; hermes/optimized/SegmentedArray.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000054(i32 %0) #0 {
-entry:
-  %1 = lshr exact i32 %0, 3
-  %2 = add nsw i32 %1, -4096
-  %3 = icmp ult i32 %0, 32776
-  %4 = select i1 %3, i32 0, i32 %2
   ret i32 %4
 }
 
@@ -208,7 +196,7 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0) #0 {
+define i32 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 23
   %2 = add nsw i32 %1, -150
@@ -220,7 +208,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/blk-lib.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 9
   %2 = add nsw i32 %1, -1

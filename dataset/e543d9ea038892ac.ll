@@ -49,15 +49,14 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; icu/optimized/utrie2.ll
+; 1 occurrences:
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = and i32 %2, 7
-  %4 = icmp ult i32 %0, 17
+  %4 = icmp samesign ult i32 %0, 17
   %5 = select i1 %4, i32 %3, i32 0
   ret i32 %5
 }
@@ -104,6 +103,18 @@ entry:
   %.not = icmp eq i32 %0, 0
   %4 = select i1 %.not, i32 0, i32 %3
   ret i32 %4
+}
+
+; 1 occurrences:
+; icu/optimized/utrie2.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 5
+  %3 = and i32 %2, 63
+  %4 = icmp ult i32 %0, 2048
+  %5 = select i1 %4, i32 %3, i32 64
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

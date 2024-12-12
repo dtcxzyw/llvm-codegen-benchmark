@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 47 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/encode_internal_avx2.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -23,6 +23,7 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_array.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
@@ -63,7 +64,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -78,12 +79,12 @@ entry:
 define i64 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
@@ -95,6 +96,8 @@ entry:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; llvm/optimized/DXContainer.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -174,8 +177,20 @@ entry:
 define i64 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
+; 2 occurrences:
+; freetype/optimized/pfr.c.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = mul i32 %0, %3
+  %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
@@ -198,19 +213,8 @@ entry:
 define i64 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
-  ret i64 %5
-}
-
-; 1 occurrences:
-; freetype/optimized/pfr.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = mul i32 %3, %0
-  %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
@@ -220,7 +224,7 @@ entry:
 define i64 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

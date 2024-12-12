@@ -48,6 +48,12 @@ func0000000000000075:                   # @func0000000000000075
 	sh1add	a0, a1, a0
 	addiw	a0, a0, -48
 	ret
+func0000000000000077:                   # @func0000000000000077
+	add	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh1add	a0, a1, a0
+	addiw	a0, a0, -48
+	ret
 func00000000000000f7:                   # @func00000000000000f7
 	add	a1, a1, a2
 	sh2add	a1, a1, a1
@@ -60,6 +66,14 @@ func00000000000000f5:                   # @func00000000000000f5
 	sh1add	a0, a1, a0
 	addi	a0, a0, -2048
 	addiw	a0, a0, -380
+	ret
+func00000000000000c0:                   # @func00000000000000c0
+	add	a1, a1, a2
+	lui	a2, 1
+	addi	a2, a2, -496
+	mul	a1, a1, a2
+	add	a0, a0, a2
+	addw	a0, a0, a1
 	ret
 func0000000000000057:                   # @func0000000000000057
 	add	a1, a1, a2
@@ -90,15 +104,6 @@ func0000000000000040:                   # @func0000000000000040
 	sh3add	a1, a1, a1
 	sh3add	a0, a1, a0
 	addiw	a0, a0, 400
-	ret
-func00000000000000c0:                   # @func00000000000000c0
-	add	a1, a1, a2
-	lui	a2, 16382
-	addi	a2, a2, -1527
-	mul	a1, a1, a2
-	lui	a2, 8224
-	add	a0, a0, a2
-	addw	a0, a0, a1
 	ret
 func00000000000000fc:                   # @func00000000000000fc
 	add	a1, a1, a2

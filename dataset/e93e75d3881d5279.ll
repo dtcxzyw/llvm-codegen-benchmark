@@ -2,16 +2,16 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %0, 3
   %4 = add nuw nsw i64 %3, %2
-  %5 = icmp ult i64 %4, 4294967296
+  %5 = icmp samesign ult i64 %4, 4294967296
   ret i1 %5
 }
 
-; 454 occurrences:
+; 449 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
@@ -26,6 +26,7 @@ entry:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/X3DImporter_Metadata.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/generic_type.cpp.ll
@@ -182,13 +183,10 @@ entry:
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -295,8 +293,6 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -365,7 +361,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -467,7 +462,7 @@ entry:
 ; zxing/optimized/Content.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nsw i64 %0, 3
@@ -476,7 +471,7 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; assimp/optimized/MDLLoader.cpp.ll
@@ -490,12 +485,11 @@ entry:
 ; opencv/optimized/infer_ie_onnx_hybrid.cpp.ll
 ; opencv/optimized/layers_common.cpp.ll
 ; openspiel/optimized/System.cpp.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/laplaceinterpolation.ll
 ; quantlib/optimized/schedule.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nsw i64 %0, 3
@@ -508,7 +502,7 @@ entry:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nsw i64 %0, 3
@@ -520,7 +514,7 @@ entry:
 ; 1 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000ac(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nsw i64 %0, 3
@@ -533,7 +527,7 @@ entry:
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nsw i64 %0, 3
@@ -559,7 +553,7 @@ entry:
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 %0, 2
@@ -571,12 +565,12 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/ginfast.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %0, 2
   %4 = add nuw nsw i64 %3, %2
-  %5 = icmp ugt i64 %4, 8160
+  %5 = icmp samesign ugt i64 %4, 8160
   ret i1 %5
 }
 
@@ -584,7 +578,7 @@ entry:
 ; arrow/optimized/builder_primitive.cc.ll
 ; opencv/optimized/cv2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nsw i64 %0, 3
@@ -598,7 +592,7 @@ entry:
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nsw i64 %0, 3
@@ -610,7 +604,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/fmu2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 %0, 3
@@ -622,7 +616,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/fmu2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 %0, 3

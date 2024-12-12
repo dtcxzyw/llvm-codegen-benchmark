@@ -1,5 +1,10 @@
 
-; 47 occurrences:
+; 51 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; darktable/optimized/introspection_profile_gamma.c.ll
 ; g2o/optimized/edge_project_stereo_xyz.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
@@ -21,7 +26,6 @@
 ; proj/optimized/ortho.cpp.ll
 ; proj/optimized/rouss.cpp.ll
 ; proj/optimized/sch.cpp.ll
-; proj/optimized/vertoffset.cpp.ll
 ; quantlib/optimized/analytic_discr_geom_av_price.ll
 ; quantlib/optimized/analyticgjrgarchengine.ll
 ; quantlib/optimized/analytichestonengine.ll

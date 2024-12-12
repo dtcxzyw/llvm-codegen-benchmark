@@ -22,7 +22,7 @@ define i8 @func000000000000001f(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i8 2, i8 3
-  %5 = add nuw nsw i8 %4, %1
+  %5 = add nuw nsw i8 %1, %4
   %6 = add nuw nsw i8 %5, %0
   ret i8 %6
 }

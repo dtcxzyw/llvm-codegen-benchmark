@@ -1,17 +1,4 @@
 
-; 2 occurrences:
-; image-rs/optimized/5ez7udly19o3uj1p.ll
-; typst-rs/optimized/26ex1w19ixz6ifuk.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = and i8 %2, 12
-  %4 = icmp ne i8 %3, 0
-  %5 = and i1 %0, %1
-  %6 = or i1 %4, %5
-  ret i1 %6
-}
-
 ; 9 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll

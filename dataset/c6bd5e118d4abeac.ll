@@ -21,12 +21,12 @@
 ; php/optimized/phpdbg_btree.ll
 ; stockfish/optimized/bitboard.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = and i64 %4, 31
-  %6 = getelementptr nusw [32 x { i16, i8, [1 x i8] }], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [32 x { i16, i8, [1 x i8] }], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

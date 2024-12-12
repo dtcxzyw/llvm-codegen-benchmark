@@ -5,7 +5,7 @@
 ; linux/optimized/intel_color.ll
 ; qemu/optimized/qobject_block-qdict.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp eq ptr %0, null
@@ -73,7 +73,7 @@ entry:
 ; nlohmann_json/optimized/unit-udt.cpp.ll
 ; openusd/optimized/primIndex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i32 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ne ptr %0, null
@@ -95,7 +95,7 @@ entry:
 ; postgres/optimized/syslogger.ll
 ; wolfssl/optimized/suites.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp eq ptr %0, null
@@ -110,7 +110,7 @@ entry:
 ; postgres/optimized/syslogger.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp ne ptr %0, null

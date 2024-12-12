@@ -1,11 +1,11 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andi	a1, a1, 255
 	addiw	a2, a2, -1
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andi	a1, a1, 255
 	addiw	a2, a2, -48
 	sltiu	a1, a1, 10
@@ -21,7 +21,7 @@ func0000000000000001:                   # @func0000000000000001
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	andi	a1, a1, 255
 	addiw	a2, a2, 1
 	addi	a1, a1, -137
@@ -29,7 +29,7 @@ func0000000000000021:                   # @func0000000000000021
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	sext.b	a1, a1
 	addiw	a2, a2, 2
 	slti	a1, a1, 0
@@ -37,14 +37,14 @@ func000000000000003a:                   # @func000000000000003a
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andi	a1, a1, 255
 	addiw	a2, a2, 1
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	andi	a1, a1, 255
 	lui	a3, 16
 	addi	a3, a3, -48
@@ -62,7 +62,7 @@ func0000000000000004:                   # @func0000000000000004
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	andi	a1, a1, 255
 	addiw	a2, a2, 9
 	sltiu	a1, a1, 65
@@ -70,7 +70,7 @@ func0000000000000034:                   # @func0000000000000034
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sext.b	a1, a1
 	addiw	a2, a2, -48
 	slti	a1, a1, 58
@@ -78,7 +78,7 @@ func000000000000001a:                   # @func000000000000001a
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	andi	a1, a1, 255
 	addiw	a2, a2, -48
 	sltiu	a1, a1, 65

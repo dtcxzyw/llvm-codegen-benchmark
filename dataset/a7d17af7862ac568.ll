@@ -1,9 +1,13 @@
 
-%class.aiVector2t.2713120 = type { double, double }
-%"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.2870243" = type { %"struct.std::atomic.2870032" }
-%"struct.std::atomic.2870032" = type { %"struct.std::__atomic_base.2870034" }
-%"struct.std::__atomic_base.2870034" = type { i64 }
-%struct.CvPoint.3553087 = type { i32, i32 }
+%class.aiVector2t.2825654 = type { double, double }
+%"class.std::vector.2828386" = type { %"struct.std::_Vector_base.2828387" }
+%"struct.std::_Vector_base.2828387" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" = type { ptr, ptr, ptr }
+%"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063820" = type { %"struct.std::atomic.3063608" }
+%"struct.std::atomic.3063608" = type { %"struct.std::__atomic_base.3063610" }
+%"struct.std::__atomic_base.3063610" = type { i64 }
+%struct.CvPoint.3733826 = type { i32, i32 }
 
 ; 18 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -34,17 +38,41 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
-; opencv/optimized/checker_detector.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = add nuw i64 %1, 1
   %5 = urem i64 %4, %3
-  %6 = getelementptr nusw %class.aiVector2t.2713120, ptr %0, i64 %5
+  %6 = getelementptr nusw %class.aiVector2t.2825654, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; assimp/optimized/clipper.cpp.ll
+; opencv/optimized/checker_detector.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 4
+  %4 = add nuw i64 %1, 1
+  %5 = urem i64 %4, %3
+  %6 = getelementptr nusw nuw %"class.std::vector.2828386", ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; boost/optimized/partition.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 2
+  %4 = add i64 %1, -1
+  %5 = urem i64 %4, %3
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -57,7 +85,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = add i64 %1, 1
   %5 = urem i64 %4, %3
-  %6 = getelementptr %"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.2870243", ptr %0, i64 %5
+  %6 = getelementptr %"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063820", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -65,12 +93,12 @@ entry:
 ; opencv/optimized/linemod.cpp.ll
 ; opencv/optimized/ocr_hmm_decoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nuw nsw i64 %1, 1
   %5 = urem i64 %4, %3
-  %6 = getelementptr nusw %struct.CvPoint.3553087, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.CvPoint.3733826, ptr %0, i64 %5
   ret ptr %6
 }
 

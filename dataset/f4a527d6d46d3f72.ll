@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; opencv/optimized/matmul.dispatch.cpp.ll
 ; postgres/optimized/gistbuildbuffers.ll
 ; postgres/optimized/mvdistinct.ll
 ; rocksdb/optimized/version_set.cc.ll

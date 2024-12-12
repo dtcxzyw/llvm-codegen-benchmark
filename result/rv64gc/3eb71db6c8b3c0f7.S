@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a2
 	addiw	a0, a0, 1
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	sext.w	a1, a1
 	sext.w	a0, a0
 	beq	a0, a1, .LBB1_2

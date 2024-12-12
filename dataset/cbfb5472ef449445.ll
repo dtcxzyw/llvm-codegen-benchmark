@@ -1,7 +1,10 @@
 
-; 4 occurrences:
+; 7 occurrences:
 ; abc/optimized/wlcNtk.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/pe_icons.c.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_math.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind

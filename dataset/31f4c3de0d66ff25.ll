@@ -1,6 +1,9 @@
 
-; 114 occurrences:
+; 117 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; clamav/optimized/lzwdec.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
@@ -27,14 +30,11 @@
 ; linux/optimized/cache.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/gso.ll
 ; linux/optimized/hdac_sysfs.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_dp_mst.ll
-; linux/optimized/intel_dsi.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/ip6_checksum.ll
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/oid_registry.ll
 ; linux/optimized/r8169_main.ll
@@ -42,7 +42,6 @@
 ; linux/optimized/tcp_offload.ll
 ; linux/optimized/vars.ll
 ; llvm/optimized/DbiModuleList.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; mimalloc/optimized/page.c.ll
 ; mini-lsm-rs/optimized/1m9jerzd56wr2irm.ll
@@ -102,6 +101,8 @@
 ; tls-rs/optimized/1edtspt3qu76t3sp.ll
 ; tokio-rs/optimized/3nmgzybx6iv04snk.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/1ewejz0ibz9296z1.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
@@ -114,6 +115,8 @@
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/q_mam.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i16 %1) #0 {
 entry:
@@ -122,8 +125,9 @@ entry:
   ret i64 %3
 }
 
-; 37 occurrences:
+; 41 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; diesel-rs/optimized/1mcix0ravw4ybg9k.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -160,6 +164,9 @@ entry:
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
 ; wireshark/optimized/packet-mysql.c.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:
@@ -168,7 +175,7 @@ entry:
   ret i64 %3
 }
 
-; 73 occurrences:
+; 75 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
@@ -207,7 +214,6 @@ entry:
 ; ockam-rs/optimized/luz5e0okyn0ri51.ll
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; postgres/optimized/nbtsort.ll
-; postgres/optimized/regexec.ll
 ; qdrant-rs/optimized/2v88rld7ajfr8cux.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
 ; rayon-rs/optimized/1j5m2t9gtbur4l2z.ll
@@ -242,6 +248,9 @@ entry:
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i16 %1) #0 {
 entry:
@@ -250,9 +259,10 @@ entry:
   ret i64 %3
 }
 
-; 82 occurrences:
+; 87 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
+; boost/optimized/static_string.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/cmELF.cxx.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
@@ -321,6 +331,9 @@ entry:
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
 ; tokio-rs/optimized/3nmgzybx6iv04snk.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; typst-rs/optimized/1ewejz0ibz9296z1.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
@@ -333,6 +346,7 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i16 %1) #0 {
 entry:
@@ -341,7 +355,8 @@ entry:
   ret i64 %3
 }
 
-; 18 occurrences:
+; 20 occurrences:
+; boost/optimized/static_string.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
 ; ockam-rs/optimized/1kl4v6vvko2mygns.ll
@@ -360,6 +375,7 @@ entry:
 ; ockam-rs/optimized/u4cgd14nodyt386.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i16 %1) #0 {
 entry:
@@ -368,8 +384,11 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; lvgl/optimized/lv_spinbox.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i16 %1) #0 {
 entry:
@@ -378,9 +397,10 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; clamav/optimized/arcread.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
+; postgres/optimized/regexec.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i16 %1) #0 {
 entry:

@@ -11,15 +11,13 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; glslang/optimized/linkValidate.cpp.ll
-; llvm/optimized/CommentLexer.cpp.ll
-; llvm/optimized/CommentParser.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   %6 = shl nuw i64 %5, 32
   ret i64 %6

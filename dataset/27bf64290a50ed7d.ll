@@ -1,6 +1,7 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/work_stealing.ll
 ; faiss/optimized/IndexBinaryFromFloat.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll

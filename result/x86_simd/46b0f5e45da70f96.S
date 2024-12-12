@@ -18,10 +18,10 @@ func0000000000000002:                   # @func0000000000000002
 	vzeroupper
 	retq
 .LCPI2_0:
-	.quad	254                             # 0xfe
+	.quad	7                               # 0x7
 .LCPI2_1:
-	.quad	250                             # 0xfa
-func0000000000000008:                   # @func0000000000000008
+	.quad	3                               # 0x3
+func0000000000000028:                   # @func0000000000000028
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpltq	.LCPI2_1(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

@@ -1,9 +1,12 @@
 
-; 274 occurrences:
+; 272 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; casadi/optimized/cs_chol.c.ll
 ; casadi/optimized/cs_updown.c.ll
@@ -66,7 +69,6 @@
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
 ; gromacs/optimized/dlaed6.cpp.ll
-; gromacs/optimized/dlagtf.cpp.ll
 ; gromacs/optimized/dlasd5.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
 ; gromacs/optimized/expfit.cpp.ll
@@ -79,6 +81,7 @@
 ; gromacs/optimized/statistics.cpp.ll
 ; gromacs/optimized/thermochemistry.cpp.ll
 ; hdf5/optimized/h5diff_array.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -105,7 +108,6 @@
 ; openblas/optimized/dggesx.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
-; openblas/optimized/dgttrf.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlaed6.c.ll
 ; openblas/optimized/dlaein.c.ll
@@ -114,20 +116,17 @@
 ; openblas/optimized/dlaic1.c.ll
 ; openblas/optimized/dlaln2.c.ll
 ; openblas/optimized/dlanv2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqtr.c.ll
 ; openblas/optimized/dlarre.c.ll
 ; openblas/optimized/dlasd5.c.ll
 ; openblas/optimized/dlasv2.c.ll
 ; openblas/optimized/dlatrs.c.ll
-; openblas/optimized/dpttrf.c.ll
 ; openblas/optimized/dsptrs.c.ll
 ; openblas/optimized/dsterf.c.ll
 ; openblas/optimized/dsyequb.c.ll
 ; openblas/optimized/dsytrs.c.ll
 ; openblas/optimized/dsytrs_rook.c.ll
 ; openblas/optimized/dtgsja.c.ll
-; openblas/optimized/dtpsv_NUN.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/ap3p.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
@@ -165,7 +164,6 @@
 ; postgres/optimized/pgbench.ll
 ; proj/optimized/aea.cpp.ll
 ; proj/optimized/col_urban.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/eck3.cpp.ll
 ; proj/optimized/ell_set.cpp.ll
 ; proj/optimized/generic_inverse.cpp.ll

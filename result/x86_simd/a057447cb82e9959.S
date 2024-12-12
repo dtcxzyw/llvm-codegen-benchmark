@@ -12,7 +12,7 @@ func0000000000000055:                   # @func0000000000000055
 	retq
 func0000000000000040:                   # @func0000000000000040
 	vpslld	$8, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpslld	$4, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq

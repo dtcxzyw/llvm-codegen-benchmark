@@ -1,5 +1,5 @@
 
-; 168 occurrences:
+; 167 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcSymm.c.ll
@@ -92,7 +92,6 @@
 ; linux/optimized/client.ll
 ; linux/optimized/compress.ll
 ; linux/optimized/dma-iommu.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/hugetlb.ll
@@ -176,7 +175,7 @@ entry:
   ret i64 %2
 }
 
-; 206 occurrences:
+; 199 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -278,7 +277,6 @@ entry:
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngwutil.c.ll
 ; libquic/optimized/exponentiation.c.ll
-; libquic/optimized/ntt.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; lief/optimized/ecp.c.ll
 ; linux/optimized/cstate.ll
@@ -287,7 +285,6 @@ entry:
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/hw_breakpoint.ll
 ; linux/optimized/intel_cx0_phy.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/maple_tree.ll
@@ -302,7 +299,6 @@ entry:
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/DWARFContext.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetParser.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ThreadSanitizer.cpp.ll
@@ -357,7 +353,6 @@ entry:
 ; qemu/optimized/block_nvme.c.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/hw_dma_sifive_pdma.c.ll
-; qemu/optimized/hw_misc_mchp_pfsoc_dmc.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
@@ -379,9 +374,6 @@ entry:
 ; wireshark/optimized/packet-http3.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; z3/optimized/elim_small_bv_tactic.cpp.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {

@@ -5,7 +5,7 @@ func000000000000001e:                   # @func000000000000001e
 	vadd.vv	v10, v12, v10
 	addi	a0, a0, -241
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 16
 	ret
 func0000000000000006:                   # @func0000000000000006
@@ -15,6 +15,6 @@ func0000000000000006:                   # @func0000000000000006
 	vadd.vv	v10, v12, v10
 	addi	a0, a0, 455
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 12
 	ret

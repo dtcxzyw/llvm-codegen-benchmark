@@ -12,8 +12,9 @@ entry:
   ret i64 %5
 }
 
-; 170 occurrences:
+; 171 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
+; boost/optimized/url_base.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; flac/optimized/fixed.c.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
@@ -193,30 +194,27 @@ entry:
 }
 
 ; 3 occurrences:
-; arrow/optimized/bitmap_ops.cc.ll
-; darktable/optimized/introspection_highlights.c.ll
-; php/optimized/dow.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = shl nsw i64 %3, 1
-  %5 = sub i64 %0, %4
-  ret i64 %5
-}
-
-; 5 occurrences:
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
-; php/optimized/dow.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = shl nsw i64 %3, 1
+  %4 = shl nsw i64 %3, 2
   %5 = sub nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 2 occurrences:
+; arrow/optimized/bitmap_ops.cc.ll
+; darktable/optimized/introspection_highlights.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = shl nsw i64 %3, 3
+  %5 = sub i64 %0, %4
   ret i64 %5
 }
 

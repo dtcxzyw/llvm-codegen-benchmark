@@ -1,5 +1,5 @@
 
-; 135 occurrences:
+; 133 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/cutPre22.c.ll
@@ -35,7 +35,6 @@
 ; linux/optimized/hash.ll
 ; linux/optimized/md5.ll
 ; linux/optimized/mpiutil.ll
-; linux/optimized/xt_mark.ll
 ; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/MD5.cpp.ll
 ; llvm/optimized/SHA1.cpp.ll
@@ -72,18 +71,15 @@
 ; openssl/optimized/libcrypto-lib-bn_gcd.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-lib-ec_mult.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-md4_dgst.ll
 ; openssl/optimized/libcrypto-lib-rmd_dgst.ll
 ; openssl/optimized/libcrypto-lib-sm3.ll
 ; openssl/optimized/libcrypto-shlib-bn_gcd.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-ec_mult.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-md4_dgst.ll
 ; openssl/optimized/libcrypto-shlib-rmd_dgst.ll
 ; openssl/optimized/libcrypto-shlib-sm3.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/interaction.cpp.ll
@@ -135,11 +131,13 @@
 ; z3/optimized/occurs.cpp.ll
 ; z3/optimized/reduce_args_simplifier.cpp.ll
 ; z3/optimized/reduce_args_tactic.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 

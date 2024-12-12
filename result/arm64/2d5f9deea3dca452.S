@@ -32,9 +32,23 @@ func0000000000000006:                   // @func0000000000000006
                                         // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	cmp	x1, #0
+	cset	w0, eq
+	ret
+                                        // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	mov	w8, #99                         // =0x63
+	cmp	x8, x0
+	ngcs	xzr, x1
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000018:                   // @func0000000000000018
+// %bb.0:                               // %entry
+	mov	w8, #9                          // =0x9
 	cmp	x8, x0
 	ngcs	xzr, x1
 	cset	w0, lo

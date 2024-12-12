@@ -1,9 +1,9 @@
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	testl	%esi, %esi
 	sete	%al
 	andb	%dil, %al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	xorb	$1, %dl
 	testl	%esi, %esi
 	sete	%al

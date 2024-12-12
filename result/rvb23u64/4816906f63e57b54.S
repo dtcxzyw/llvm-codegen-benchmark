@@ -43,10 +43,6 @@ func00000000000000bf:                   # @func00000000000000bf
 	slli	a1, a1, 32
 	or	a0, a0, a1
 	ret
-func0000000000000017:                   # @func0000000000000017
-	add	a1, a1, a2
-	sh2add.uw	a0, a1, a0
-	ret
 func000000000000005f:                   # @func000000000000005f
 	add	a1, a1, a2
 	slli	a1, a1, 32

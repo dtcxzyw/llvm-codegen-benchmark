@@ -1,7 +1,6 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; lief/optimized/constant_time.c.ll
-; linux/optimized/direct_write.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/uhci-hcd.ll
 ; nuklear/optimized/unity.c.ll

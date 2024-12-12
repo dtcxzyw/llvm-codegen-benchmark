@@ -1,32 +1,12 @@
 
-; 9 occurrences:
-; abc/optimized/lpkAbcDsd.c.ll
-; arrow/optimized/vector_selection_filter_internal.cc.ll
-; arrow/optimized/vector_selection_take_internal.cc.ll
-; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
-; llvm/optimized/AArch64InstPrinter.cpp.ll
-; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; meshlab/optimized/filter_voronoi.cpp.ll
-; qemu/optimized/tcg.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000062(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 16, %2
-  %4 = and i32 %3, %1
-  %5 = icmp eq i32 %4, 0
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = icmp eq i32 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -36,12 +16,12 @@ entry:
 ; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/loopopts.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000082(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp eq i32 %4, 0
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -72,12 +52,31 @@ entry:
 ; z3/optimized/theory_str_mc.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000098(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp ne i32 %4, 0
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 8 occurrences:
+; abc/optimized/lpkAbcDsd.c.ll
+; arrow/optimized/vector_selection_filter_internal.cc.ll
+; arrow/optimized/vector_selection_take_internal.cc.ll
+; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
+; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c2(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 1, %2
+  %4 = and i32 %1, %3
+  %5 = icmp eq i32 %4, 0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -105,12 +104,12 @@ entry:
 ; openmpi/optimized/group_bitmap.ll
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000d8(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = and i32 %3, %1
   %5 = icmp ne i32 %4, 0
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

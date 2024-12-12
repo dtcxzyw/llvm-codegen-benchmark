@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; icu/optimized/usprep.ll
 ; icu/optimized/utrie2.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/tg3.ll
 ; openjdk/optimized/constMethod.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
@@ -15,7 +14,7 @@ entry:
   %2 = and i32 %1, 192
   %3 = icmp eq i32 %2, 192
   %4 = select i1 %3, i32 1, i32 2
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -32,7 +31,7 @@ entry:
   %2 = and i32 %1, 16384
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 1, i32 2
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }

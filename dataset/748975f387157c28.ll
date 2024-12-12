@@ -5,7 +5,7 @@
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; ruby/optimized/ancdata.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 4
   %3 = icmp eq i64 %0, 4
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000310(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000610(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp ult i64 %0, -8185
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000320(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000620(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp ugt i64 %0, 2

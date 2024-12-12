@@ -1,5 +1,5 @@
 
-; 486 occurrences:
+; 487 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; git/optimized/apply.ll
 ; git/optimized/send-pack.ll
@@ -9,12 +9,13 @@
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; hermes/optimized/Object.cpp.ll
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
+; linux/optimized/af_inet.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_sdvo.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
@@ -321,7 +322,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -468,6 +468,8 @@
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_image.ll
 ; minetest/optimized/CImage.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -478,7 +480,6 @@
 ; openssl/optimized/libssl-shlib-quic_impl.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
-; php/optimized/pcre2_maketables.ll
 ; php/optimized/phar_object.ll
 ; postgres/optimized/heapam.ll
 ; quickjs/optimized/quickjs.ll

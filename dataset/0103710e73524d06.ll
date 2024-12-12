@@ -1,5 +1,8 @@
 
-; 27 occurrences:
+; 30 occurrences:
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/loss_function.cc.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; g2o/optimized/edge_project_stereo_xyz_onlypose.cpp.ll

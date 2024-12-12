@@ -36,7 +36,7 @@
 	.long	16777216                        # 0x1000000
 .LCPI0_3:
 	.zero	4,8
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vmovdqu8	.LCPI0_0(%rip), %xmm1 {%k1} {z} # xmm1 {%k1} {z} = [16,16,16,16,16,16,16,16,u,u,u,u,u,u,u,u]
@@ -84,7 +84,7 @@ func0000000000000014:                   # @func0000000000000014
 	.long	255                             # 0xff
 .LCPI1_3:
 	.zero	4,8
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vmovdqu8	.LCPI1_0(%rip), %xmm1 {%k1} {z} # xmm1 {%k1} {z} = [16,16,16,16,16,16,16,16,u,u,u,u,u,u,u,u]

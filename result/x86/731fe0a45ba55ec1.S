@@ -1,9 +1,15 @@
-func000000000000003a:                   # @func000000000000003a
+func0000000000000033:                   # @func0000000000000033
+	andl	$63, %esi
+	leaq	(%rsi,%rsi,2), %rax
+	shll	$5, %eax
+	leaq	64(%rdi,%rax), %rax
+	retq
+func000000000000003f:                   # @func000000000000003f
 	imulq	$208, %rsi, %rax
 	leaq	16(%rdi,%rax), %rax
 	retq
 func0000000000000030:                   # @func0000000000000030
-	movl	%esi, %eax
-	leaq	(%rax,%rax,4), %rax
-	leaq	40(%rdi,%rax,8), %rax
+	andl	$15, %esi
+	leaq	(%rsi,%rsi,2), %rax
+	leaq	16(%rdi,%rax,8), %rax
 	retq

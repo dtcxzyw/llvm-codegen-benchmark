@@ -48,11 +48,6 @@ func0000000000000029:                   # @func0000000000000029
 	cmovll	%edx, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
-func0000000000000013:                   # @func0000000000000013
-	cmpl	$1024, %edx                     # imm = 0x400
-	cmovael	%edx, %esi
-	leal	(%rsi,%rdi), %eax
-	retq
 func0000000000000022:                   # @func0000000000000022
 	cmpl	$-131072, %edx                  # imm = 0xFFFE0000
 	cmovbl	%edx, %esi

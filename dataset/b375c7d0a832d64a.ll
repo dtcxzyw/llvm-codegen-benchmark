@@ -144,7 +144,7 @@ entry:
   ret i32 %3
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/mvcLits.c.ll
 ; abc/optimized/mvcUtils.c.ll
@@ -161,7 +161,6 @@ entry:
 ; linux/optimized/drm_gem_framebuffer_helper.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_pch_refclk.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/rtnetlink.ll

@@ -7,7 +7,7 @@ func0000000000000010:                   # @func0000000000000010
 	addiw	a1, a2, 1280
 	add	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	sext.w	a1, a1
 	slli	a2, a1, 3
 	slli	a1, a1, 7

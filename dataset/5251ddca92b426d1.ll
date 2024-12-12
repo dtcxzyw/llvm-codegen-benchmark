@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 20 occurrences:
 ; clamav/optimized/udf.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
@@ -7,22 +7,30 @@
 ; llvm/optimized/Expr.cpp.ll
 ; logos-rs/optimized/bt773r0511h3mpz.ll
 ; nuttx/optimized/mm_malloc.c.ll
+; openjdk/optimized/g1ConcurrentMark.ll
+; openjdk/optimized/g1FullGCMarker.ll
+; openjdk/optimized/g1ParScanThreadState.ll
+; openjdk/optimized/psParallelCompact.ll
+; openjdk/optimized/psScavenge.ll
+; openjdk/optimized/shenandoahHeap.ll
+; openjdk/optimized/shenandoahMark.ll
+; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/xMarkStack.ll
 ; openjdk/optimized/xMarkStackAllocator.ll
+; openjdk/optimized/zHeapIterator.ll
 ; openjdk/optimized/zMarkStack.ll
 ; openjdk/optimized/zMarkStackAllocator.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = and i64 %2, 4294967295
+  %3 = and i64 %2, 131071
   %4 = and i64 %0, -4294967296
   %5 = or disjoint i64 %4, %3
   ret i64 %5
 }
 
-; 3 occurrences:
-; abc/optimized/bdcSpfd.c.ll
+; 2 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; openjdk/optimized/nativeInst_x86.ll
 ; Function Attrs: nounwind
@@ -35,7 +43,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; luau/optimized/CostModel.cpp.ll
 ; Function Attrs: nounwind

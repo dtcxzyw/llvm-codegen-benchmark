@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 91 occurrences:
 ; abc/optimized/sclSize.c.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; box2d/optimized/b2_distance.cpp.ll
@@ -34,6 +34,7 @@
 ; gromacs/optimized/swapcoords.cpp.ll
 ; gromacs/optimized/updategroupscog.cpp.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
@@ -58,7 +59,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -90,20 +90,24 @@
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 15 occurrences:
+; 18 occurrences:
 ; arrow/optimized/compare.cc.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; harfbuzz/optimized/hb-subset-instancer-solver.cc.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -155,7 +159,7 @@ entry:
 define i1 @func000000000000000e(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp une float %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -227,11 +231,13 @@ entry:
 define i1 @func0000000000000008(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; gromacs/optimized/compare.cpp.ll
@@ -244,7 +250,7 @@ entry:
 define i1 @func0000000000000014(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ole float %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -266,7 +272,7 @@ entry:
 define i1 @func0000000000000016(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ule float %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -319,7 +325,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ugt float %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -342,7 +348,7 @@ entry:
 define i1 @func000000000000001a(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp uge float %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -386,17 +392,15 @@ entry:
 define i1 @func0000000000000006(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ult float %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; postgres/optimized/float.ll
-; qdrant-rs/optimized/35v8qqto4jkxz482.ll
 ; qdrant-rs/optimized/4iacc535829shmz2.ll
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, float %1, float %2) #0 {
 entry:

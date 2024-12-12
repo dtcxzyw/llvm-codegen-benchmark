@@ -1,9 +1,8 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; cpython/optimized/mathmodule.ll
 ; linux/optimized/cache.ll
-; linux/optimized/rpl.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; redis/optimized/lparser.ll

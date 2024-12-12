@@ -14,9 +14,9 @@ func0000000000000003:                   # @func0000000000000003
 	andi	a1, a1, 1
 	bnez	a1, .LBB2_2
 	li	a1, 2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 .LBB2_2:
 	li	a1, 6
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret

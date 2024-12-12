@@ -1,3 +1,9 @@
+func0000000000000015:                   # @func0000000000000015
+	movzwl	%dx, %eax
+	addl	%esi, %eax
+	subl	%edi, %eax
+	addl	$-785, %eax                     # imm = 0xFCEF
+	retq
 func0000000000000040:                   # @func0000000000000040
 	movzwl	%dx, %eax
 	addl	%esi, %eax

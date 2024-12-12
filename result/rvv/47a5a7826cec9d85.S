@@ -42,21 +42,3 @@ func000000000000000e:                   # @func000000000000000e
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsrl.vi	v8, v10, 2
 	ret
-func0000000000000009:                   # @func0000000000000009
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v10, v8
-	lui	a0, 118350
-	addi	a0, a0, 1465
-	slli	a0, a0, 32
-	vmul.vx	v8, v10, a0
-	vsrl.vi	v8, v8, 31
-	ret
-func0000000000000001:                   # @func0000000000000001
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v10, v8
-	lui	a0, 118350
-	addi	a0, a0, 1465
-	slli	a0, a0, 32
-	vmul.vx	v8, v10, a0
-	vsrl.vi	v8, v8, 31
-	ret

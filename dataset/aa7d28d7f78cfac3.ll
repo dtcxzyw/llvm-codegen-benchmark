@@ -1,6 +1,7 @@
 
-%"class.clang::Qualifiers.2948875" = type { i64 }
-%"class.clang::FunctionEffect.2948876" = type { i8 }
+%"class.clang::Qualifiers.3142438" = type { i64 }
+%"class.clang::FunctionEffect.3142439" = type { i8 }
+%struct.mstate_aux.3851939 = type { i32, i32, i16, i32 }
 
 ; 28 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
@@ -32,12 +33,12 @@
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i16 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
-  %4 = getelementptr nusw %"class.clang::Qualifiers.2948875", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.clang::Qualifiers.3142438", ptr %0, i64 %3
   %5 = zext nneg i16 %1 to i64
-  %6 = getelementptr nusw %"class.clang::FunctionEffect.2948876", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"class.clang::FunctionEffect.3142439", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -60,12 +61,24 @@ entry:
 ; icu/optimized/ucnvmbcs.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 60
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
   %5 = zext i16 %1 to i64
-  %6 = getelementptr nusw i16, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i16 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -16
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = zext i16 %1 to i64
+  %6 = getelementptr nusw nuw %struct.mstate_aux.3851939, ptr %4, i64 %5
   ret ptr %6
 }
 

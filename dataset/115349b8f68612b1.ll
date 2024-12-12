@@ -11,7 +11,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
   %6 = uitofp i64 %5 to double
-  %7 = fadd double %6, %0
+  %7 = fadd double %0, %6
   ret double %7
 }
 

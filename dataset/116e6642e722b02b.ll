@@ -1,9 +1,22 @@
 
-%"class.std::__1::shared_ptr.24.3664010" = type { ptr, ptr }
+%"class.std::__1::shared_ptr.24.3843661" = type { ptr, ptr }
 
-; 14 occurrences:
+; 27 occurrences:
+; boost/optimized/args_cmd.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/env.ll
+; boost/optimized/group.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/wargs_cmd.ll
 ; cmake/optimized/cmListFileLexer.c.ll
-; git/optimized/sequencer.ll
 ; git/optimized/unpack-trees.ll
 ; icu/optimized/localeprioritylist.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
@@ -27,7 +40,8 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; git/optimized/sequencer.ll
 ; linux/optimized/filter.ll
 ; postgres/optimized/arrayfuncs.ll
 ; Function Attrs: nounwind
@@ -48,7 +62,7 @@ define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 28
   %4 = ashr i64 %3, 32
-  %5 = getelementptr nusw %"class.std::__1::shared_ptr.24.3664010", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.std::__1::shared_ptr.24.3843661", ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7

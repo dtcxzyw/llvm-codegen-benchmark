@@ -52,7 +52,7 @@ func0000000000000007:                   # @func0000000000000007
 	.long	0x40490fdb                      # float 3.14159274
 func0000000000000003:                   # @func0000000000000003
 	vaddss	%xmm2, %xmm1, %xmm1
-	vaddss	%xmm0, %xmm1, %xmm0
+	vaddss	%xmm1, %xmm0, %xmm0
 	vmulss	.LCPI5_0(%rip), %xmm0, %xmm0
 	vucomiss	.LCPI5_1(%rip), %xmm0
 	setb	%al

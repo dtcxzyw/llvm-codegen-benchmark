@@ -8,13 +8,8 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%esi, %esi
 	cmovnel	%esi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movq	%rdi, %rax
 	testl	%esi, %esi
 	cmovnel	%esi, %eax
-	retq
-func000000000000000a:                   # @func000000000000000a
-	movq	%rdi, %rax
-	testl	%esi, %esi
-	cmovlel	%esi, %eax
 	retq

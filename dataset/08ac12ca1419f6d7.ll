@@ -21,7 +21,7 @@
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = mul i32 %3, 16777619
   ret i32 %4
 }
@@ -32,7 +32,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = mul i32 %3, 33
   ret i32 %4
 }

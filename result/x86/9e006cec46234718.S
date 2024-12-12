@@ -1,11 +1,11 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	incl	%edx
 	xorl	%eax, %eax
 	cmpl	%esi, %edx
 	cmovnel	%edx, %eax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func000000000000018e:                   # @func000000000000018e
+func000000000000030f:                   # @func000000000000030f
 	incl	%edx
 	xorl	%eax, %eax
 	cmpl	%esi, %edx

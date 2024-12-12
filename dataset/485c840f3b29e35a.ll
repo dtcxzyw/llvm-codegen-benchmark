@@ -11,12 +11,12 @@
 define i32 @func0000000000000002(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; cmake/optimized/testFStream.cxx.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; flac/optimized/stream_encoder_framing.c.ll
@@ -24,7 +24,6 @@ entry:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; gromacs/optimized/colvarmodule.cpp.ll
 ; icu/optimized/unistr.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/tcp_offload.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -39,12 +38,12 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
 
-; 47 occurrences:
+; 50 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/rsbDec6.c.ll
@@ -91,12 +90,15 @@ entry:
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; verilator/optimized/V3Trace.cpp.ll
+; wolfssl/optimized/internal.c.ll
 ; z3/optimized/bound_propagator.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/a80esttvizzblelz7vl2fpyaz.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
@@ -108,7 +110,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }

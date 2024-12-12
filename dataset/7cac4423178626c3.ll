@@ -11,7 +11,7 @@ entry:
   %3 = shl i32 %2, 17
   %4 = add i32 %3, 131072
   %5 = select i1 %1, i32 0, i32 %4
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -27,7 +27,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 4
   %4 = add nsw i32 %3, -16
   %5 = select i1 %1, i32 48, i32 %4
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

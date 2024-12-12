@@ -6,7 +6,7 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 .LCPI1_0:
 	.long	4294967294                      # 0xfffffffe
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpcmpgtq	%ymm1, %ymm2, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm0 {%k1} # xmm0 {%k1} = [4294967294,4294967294,4294967294,4294967294]
 	vzeroupper
@@ -31,5 +31,5 @@ func0000000000000004:                   # @func0000000000000004
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	retq

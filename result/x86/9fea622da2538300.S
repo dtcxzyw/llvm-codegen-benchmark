@@ -24,13 +24,6 @@ func0000000000000002:                   # @func0000000000000002
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	cmpl	$4, %edx
-	setae	%al
-	xorb	$1, %sil
-	orb	%dil, %sil
-	orb	%sil, %al
-	retq
 func0000000000000014:                   # @func0000000000000014
 	cmpl	$65536, %edx                    # imm = 0x10000
 	setge	%al

@@ -4,7 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	vsub.vv	v10, v10, v12
 	vsrl.vi	v12, v8, 12
 	vxor.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000020:                   # @func0000000000000020
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -12,5 +12,5 @@ func0000000000000020:                   # @func0000000000000020
 	vsub.vv	v10, v10, v12
 	vsrl.vi	v12, v8, 3
 	vxor.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

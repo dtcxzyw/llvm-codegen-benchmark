@@ -16,16 +16,19 @@ func0000000000000060:                   # @func0000000000000060
 	snez	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
-	andi	a1, a1, 33
-	addi	a1, a1, -32
+func0000000000000009:                   # @func0000000000000009
+	andi	a1, a1, 3
 	seqz	a1, a1
 	add	a0, a0, a1
 	ret
 func0000000000000061:                   # @func0000000000000061
-	lui	a2, 65536
-	addiw	a2, a2, 384
-	and	a1, a1, a2
+	andi	a1, a1, 7
 	snez	a1, a1
+	add	a0, a0, a1
+	ret
+func0000000000000008:                   # @func0000000000000008
+	andi	a1, a1, 33
+	addi	a1, a1, -32
+	seqz	a1, a1
 	add	a0, a0, a1
 	ret

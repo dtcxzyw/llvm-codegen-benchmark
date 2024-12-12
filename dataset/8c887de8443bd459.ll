@@ -42,8 +42,7 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
-; linux/optimized/drm_vblank.ll
+; 4 occurrences:
 ; wireshark/optimized/packet-ppi-antenna.c.ll
 ; wireshark/optimized/packet-ppi-gps.c.ll
 ; wireshark/optimized/packet-ppi-sensor.c.ll
@@ -52,6 +51,21 @@ entry:
 define i32 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 536870911
+  %4 = zext i1 %3 to i32
+  %5 = select i1 %0, i32 %4, i32 %1
+  ret i32 %5
+}
+
+; 5 occurrences:
+; linux/optimized/drm_vblank.ll
+; wireshark/optimized/packet-ppi-antenna.c.ll
+; wireshark/optimized/packet-ppi-gps.c.ll
+; wireshark/optimized/packet-ppi-sensor.c.ll
+; wireshark/optimized/packet-ppi-vector.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 2097151
   %4 = zext i1 %3 to i32
   %5 = select i1 %0, i32 %4, i32 %1
   ret i32 %5

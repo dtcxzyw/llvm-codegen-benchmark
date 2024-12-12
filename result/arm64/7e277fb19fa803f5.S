@@ -1,41 +1,31 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	mvni	v2.4s, #13
-	ushll	v0.8h, v0.8b, #0
-	uaddw2	v1.4s, v2.4s, v0.8h
-	uaddw	v0.4s, v2.4s, v0.4h
-	ret
-                                        // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v2.4s, #4
-	ushll	v0.8h, v0.8b, #0
-	uaddw2	v1.4s, v2.4s, v0.8h
-	uaddw	v0.4s, v2.4s, v0.4h
+	and	w8, w0, #0xff
+	add	w0, w8, #4
+	ret
+                                        // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	and	w8, w0, #0xff
+	sub	w0, w8, #32
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mvni	v2.4s, #31
-	ushll	v0.8h, v0.8b, #0
-	uaddw2	v1.4s, v2.4s, v0.8h
-	uaddw	v0.4s, v2.4s, v0.4h
+	and	w8, w0, #0xff
+	sub	w0, w8, #32
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	movi	v2.4s, #248
-	ushll	v0.8h, v0.8b, #0
-	uaddw2	v1.4s, v2.4s, v0.8h
-	uaddw	v0.4s, v2.4s, v0.4h
+	and	w8, w0, #0xff
+	add	w0, w8, #248
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mvni	v1.4s, #47
-	ushll	v0.8h, v0.8b, #0
-	fneg	v2.4s, v1.4s
-	uaddw2	v1.4s, v2.4s, v0.8h
-	uaddw	v0.4s, v2.4s, v0.4h
+	mov	w8, #65488                      // =0xffd0
+	movk	w8, #32767, lsl #16
+	add	w0, w8, w0, uxtb
 	ret
                                         // -- End function

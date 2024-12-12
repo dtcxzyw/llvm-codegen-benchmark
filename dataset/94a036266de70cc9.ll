@@ -1,11 +1,18 @@
 
-%"class.std::vector.2715853" = type { %"struct.std::_Vector_base.2715854" }
-%"struct.std::_Vector_base.2715854" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2715855" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2715855" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2715856" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2715856" = type { ptr, ptr, ptr }
+; 1 occurrences:
+; oiio/optimized/imageio.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = shl i64 %3, 30
+  %5 = ashr exact i64 %4, 30
+  %6 = and i64 %5, -4
+  %7 = getelementptr i8, ptr %0, i64 %6
+  ret ptr %7
+}
 
-; 6 occurrences:
-; assimp/optimized/clipper.cpp.ll
+; 5 occurrences:
 ; gromacs/optimized/tpxio.cpp.ll
 ; openspiel/optimized/nfg_game_test.cc.ll
 ; pocketpy/optimized/compiler.cpp.ll
@@ -15,24 +22,10 @@
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = shl i64 %3, 30
+  %4 = shl i64 %3, 31
   %5 = ashr i64 %4, 32
   %6 = and i64 %5, -2
-  %7 = getelementptr nusw %"class.std::vector.2715853", ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 2 occurrences:
-; oiio/optimized/imageio.cpp.ll
-; postgres/optimized/tsvector_op.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = shl i64 %3, 30
-  %5 = ashr exact i64 %4, 30
-  %6 = and i64 %5, -4
-  %7 = getelementptr i8, ptr %0, i64 %6
+  %7 = getelementptr nusw i32, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -3,10 +3,10 @@ func0000000000000060:                   # @func0000000000000060
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vadd.vv	v10, v12, v10
+	vadd.vv	v10, v10, v12
 	li	a0, 32
 	vsrl.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, 1
 	ret
 func0000000000000068:                   # @func0000000000000068
@@ -14,10 +14,10 @@ func0000000000000068:                   # @func0000000000000068
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vadd.vv	v10, v12, v10
+	vadd.vv	v10, v10, v12
 	li	a0, 32
 	vsrl.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, -1
 	ret
 func000000000000006d:                   # @func000000000000006d
@@ -26,7 +26,7 @@ func000000000000006d:                   # @func000000000000006d
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a1
 	li	a1, 44
-	vadd.vv	v10, v12, v10
+	vadd.vv	v10, v10, v12
 	vsrl.vx	v10, v10, a1
 	vadd.vv	v8, v10, v8
 	slli	a0, a0, 42

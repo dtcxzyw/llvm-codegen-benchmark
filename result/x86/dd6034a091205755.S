@@ -17,13 +17,6 @@ func000000000000000d:                   # @func000000000000000d
 	movq	$-1, %rax
 	shlxq	%rdi, %rax, %rax
 	retq
-func0000000000000027:                   # @func0000000000000027
-	xorl	%eax, %eax
-	cmpl	$6, %esi
-	cmovael	%edi, %eax
-	movl	$12, %ecx
-	shlxq	%rax, %rcx, %rax
-	retq
 func0000000000000036:                   # @func0000000000000036
 	xorl	%eax, %eax
 	cmpl	$12, %esi

@@ -1,12 +1,19 @@
 
-; 7 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
+; openusd/optimized/sdfdump.cpp.ll
+; openusd/optimized/sdffilter.cpp.ll
+; openusd/optimized/testSdfPathThreading.cpp.ll
+; openusd/optimized/testUsdStageThreading.cpp.ll
+; openusd/optimized/usdcat.cpp.ll
+; openusd/optimized/usdtree.cpp.ll
 ; tev/optimized/Common.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
+; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(ptr %0) #0 {
 entry:
@@ -17,7 +24,7 @@ entry:
 
 ; 20 occurrences:
 ; actix-rs/optimized/1rmq6g519rw6hl6a.ll
-; anki-rs/optimized/22lei7qbgq6q4wqu.ll
+; boost/optimized/src.ll
 ; cpython/optimized/_pickle.ll
 ; folly/optimized/IOBuf.cpp.ll
 ; folly/optimized/SplitStringSimd.cpp.ll

@@ -23,7 +23,7 @@ func0000000000000001:                   # @func0000000000000001
 	vfncvt.rtz.x.f.w	v12, v8
 	vmseq.vi	v0, v12, 0
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	fli.d	fa5, 0.5
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfadd.vf	v8, v8, fa5

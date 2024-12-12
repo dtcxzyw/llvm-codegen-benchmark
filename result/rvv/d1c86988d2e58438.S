@@ -40,6 +40,12 @@ func000000000000000b:                   # @func000000000000000b
 	vxor.vi	v8, v8, 1
 	vadd.vv	v8, v8, v9
 	ret
+func000000000000000e:                   # @func000000000000000e
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnot.v	v10, v10
+	vnsrl.wi	v11, v8, 0
+	vadd.vv	v8, v11, v10
+	ret
 func0000000000000009:                   # @func0000000000000009
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnot.v	v10, v10

@@ -1,11 +1,9 @@
 
-; 74 occurrences:
+; 71 occurrences:
 ; gromacs/optimized/register.cpp.ll
 ; linux/optimized/core.ll
-; linux/optimized/memory.ll
 ; linux/optimized/ptrace.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/vsprintf.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -49,7 +47,6 @@
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll

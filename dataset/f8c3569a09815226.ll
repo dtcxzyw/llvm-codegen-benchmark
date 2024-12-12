@@ -5,7 +5,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-fw1.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i1 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 67
   %3 = select i1 %2, i32 6, i32 2

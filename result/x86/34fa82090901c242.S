@@ -21,19 +21,19 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%edx, %ecx
-	xorl	%eax, %eax
 	testb	$1, %dil
+	movl	$80, %eax
 	cmoveq	%rsi, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
+func0000000000000003:                   # @func0000000000000003
 	movl	%edx, %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+func0000000000000007:                   # @func0000000000000007
 	movl	%edx, %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil

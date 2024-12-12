@@ -1,10 +1,6 @@
 
-; 5 occurrences:
+; 1 occurrences:
 ; assimp/optimized/StepExporter.cpp.ll
-; gromacs/optimized/dlasd1.cpp.ll
-; gromacs/optimized/dlasd6.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
@@ -14,10 +10,9 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/dgesdd.cpp.ll
 ; gromacs/optimized/sgesdd.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
 entry:
@@ -27,8 +22,7 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
-; openblas/optimized/dgesdd.c.ll
+; 2 occurrences:
 ; openblas/optimized/dgesvd.c.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind

@@ -33,12 +33,11 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; linux/optimized/hda_codec.ll
-; opencv/optimized/filter.dispatch.cpp.ll
 ; rust-analyzer-rs/optimized/1au8fupciwcmum6.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
@@ -47,7 +46,7 @@ define i32 @func0000000000000007(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = select i1 %1, i32 0, i32 %3
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -71,7 +70,7 @@ define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = select i1 %1, i32 0, i32 %3
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -90,8 +89,7 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
-; clamav/optimized/str.c.ll
+; 5 occurrences:
 ; llvm/optimized/AArch64BaseInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lua/optimized/lcode.ll
@@ -100,8 +98,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = shl i32 %2, 12
-  %4 = select i1 %1, i32 0, i32 %3
+  %3 = shl i32 %2, 2
+  %4 = select i1 %1, i32 4, i32 %3
   %5 = or i32 %4, %0
   ret i32 %5
 }

@@ -1,10 +1,9 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; cmake/optimized/fse_decompress.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/f64_div.ll
 ; z3/optimized/automaton.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/emonics.cpp.ll
 ; z3/optimized/indexed_vector.cpp.ll

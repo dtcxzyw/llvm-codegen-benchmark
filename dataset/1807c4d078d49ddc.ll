@@ -1,6 +1,8 @@
 
-; 27 occurrences:
+; 29 occurrences:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll

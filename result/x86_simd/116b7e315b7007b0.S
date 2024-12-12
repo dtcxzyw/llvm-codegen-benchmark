@@ -39,7 +39,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k0
 	vcmpnleps	.LCPI4_0(%rip){1to16}, %zmm1, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vblendmps	%zmm0, %zmm1, %zmm0 {%k1}
 	retq
 func0000000000000006:                   # @func0000000000000006

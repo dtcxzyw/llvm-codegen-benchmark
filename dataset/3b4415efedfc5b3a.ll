@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; nghttp2/optimized/llhttp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = mul nuw i64 %0, 10
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_borders.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = mul nsw i64 %0, 3
@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/acecCo.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = mul nuw nsw i64 %0, 6
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/DateUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = mul nsw i64 %0, 7
@@ -49,7 +49,7 @@ entry:
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = mul nsw i64 %0, 10
@@ -84,7 +84,7 @@ entry:
 ; icu/optimized/nfsubs.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = mul nuw nsw i64 %0, 12

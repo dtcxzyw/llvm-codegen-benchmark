@@ -3,7 +3,7 @@
 ; linux/optimized/ndisc.ll
 ; openjdk/optimized/jvm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000302(i8 %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq i8 %0, %1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3Tristate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000192(i8 %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000312(i8 %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp uge i8 %0, %1
@@ -26,7 +26,7 @@ entry:
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000042(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %1, %2
   %4 = icmp eq ptr %0, null

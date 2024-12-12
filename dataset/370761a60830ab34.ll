@@ -26,7 +26,7 @@ entry:
   ret i32 %4
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcLatch.c.ll
 ; abc/optimized/absOldCex.c.ll
@@ -53,7 +53,6 @@ entry:
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; lief/optimized/des.c.ll
 ; Function Attrs: nounwind
@@ -65,11 +64,10 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; lief/optimized/des.c.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:

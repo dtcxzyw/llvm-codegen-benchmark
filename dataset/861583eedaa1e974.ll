@@ -1,5 +1,5 @@
 
-; 146 occurrences:
+; 142 occurrences:
 ; abc/optimized/abc.c.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; box2d/optimized/b2_circle_shape.cpp.ll
@@ -47,7 +47,6 @@
 ; gromacs/optimized/slasq4.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
-; gromacs/optimized/vsite_parm.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -63,7 +62,6 @@
 ; meshlab/optimized/edit_select.cpp.ll
 ; meshlab/optimized/editpickpoints.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -72,12 +70,10 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/collision.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; minetest/optimized/numeric.cpp.ll
-; minetest/optimized/server.cpp.ll
 ; minetest/optimized/tool.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
@@ -150,16 +146,18 @@
 define i1 @func0000000000000004(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 1.000000e+00
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 83 occurrences:
+; 84 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/ScaleProcess.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DGeoHelper.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
 ; bullet3/optimized/b3Solver.ll
@@ -167,7 +165,6 @@ entry:
 ; darktable/optimized/introspection_scalepixels.c.ll
 ; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
-; gromacs/optimized/box.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/editconf.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll
@@ -214,7 +211,6 @@ entry:
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/warpfield.cpp.ll
-; opencv/optimized/weighted_median_filter.cpp.ll
 ; openexr/optimized/ImfConvert.cpp.ll
 ; openexr/optimized/pack.c.ll
 ; openexr/optimized/unpack.c.ll
@@ -238,15 +234,16 @@ entry:
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; xgboost/optimized/quantile.cc.ll
 ; yoga/optimized/YGNodeStyle.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp oeq float %1, 0.000000e+00
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 48 occurrences:
+; 51 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -295,15 +292,18 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp une float %1, 0.000000e+00
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 120 occurrences:
+; 118 occurrences:
 ; abc/optimized/abc.c.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DGeoHelper.cpp.ll
@@ -349,7 +349,6 @@ entry:
 ; meshlab/optimized/edit_select.cpp.ll
 ; meshlab/optimized/editpickpoints.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -357,7 +356,6 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
@@ -428,11 +426,11 @@ entry:
 define i1 @func0000000000000008(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 1.000000e+00
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; assimp/optimized/SIBImporter.cpp.ll
 ; box2d/optimized/b2_revolute_joint.cpp.ll
 ; bullet3/optimized/btDeformableContactConstraint.ll
@@ -449,6 +447,7 @@ entry:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; imgui/optimized/imgui_tables.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/clientenvironment.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
@@ -464,11 +463,11 @@ entry:
 define i1 @func0000000000000016(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ule float %1, 0.000000e+00
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 21 occurrences:
+; 23 occurrences:
 ; abc/optimized/sclSize.c.ll
 ; assimp/optimized/MD5Loader.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -484,7 +483,9 @@ entry:
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/2lj01bfl72moc27l.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
@@ -590,11 +591,11 @@ entry:
 define i1 @func000000000000000a(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ugt float %1, 1.000000e+00
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 103 occurrences:
+; 105 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -690,7 +691,9 @@ entry:
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/2lj01bfl72moc27l.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
@@ -702,7 +705,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ult float %1, 0.000000e+00
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
@@ -735,9 +738,8 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; eastl/optimized/TestSort.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; velox/optimized/ExprToSubfieldFilter.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
@@ -747,15 +749,14 @@ entry:
 define i1 @func000000000000001c(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ord float %1, 0.000000e+00
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; cpython/optimized/xmlparse.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
-; gromacs/optimized/box.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; ocio/optimized/RangeOpData.cpp.ll
@@ -764,7 +765,6 @@ entry:
 ; postgres/optimized/float.ll
 ; proj/optimized/grids.cpp.ll
 ; qdrant-rs/optimized/4iacc535829shmz2.ll
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
 ; quickjs/optimized/quickjs.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
@@ -805,11 +805,11 @@ entry:
 define i1 @func0000000000000018(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp oge float %1, 1.000000e+00
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
@@ -817,11 +817,12 @@ entry:
 ; gromacs/optimized/box.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; openusd/optimized/value.cpp.ll
+; protobuf/optimized/field_comparator.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000012(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ueq float %1, 0x7FF0000000000000
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 

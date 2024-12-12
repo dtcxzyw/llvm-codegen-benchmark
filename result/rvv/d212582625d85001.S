@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	5887258746928580303             # 0x51b3bea3677d46cf
-func0000000000000094:                   # @func0000000000000094
+func0000000000000124:                   # @func0000000000000124
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -13,7 +13,7 @@ func0000000000000094:                   # @func0000000000000094
 	ret
 .LCPI1_0:
 	.quad	5675921253449092805             # 0x4ec4ec4ec4ec4ec5
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -24,7 +24,7 @@ func0000000000000091:                   # @func0000000000000091
 	vsra.vx	v10, v10, a0
 	vmseq.vv	v0, v10, v8
 	ret
-func0000000000000098:                   # @func0000000000000098
+func0000000000000128:                   # @func0000000000000128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 5
 	lui	a0, 699051
@@ -37,7 +37,7 @@ func0000000000000098:                   # @func0000000000000098
 	vsra.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v12, v10, a0
@@ -52,7 +52,7 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 .LCPI4_0:
 	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -68,7 +68,7 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 .LCPI5_0:
 	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma

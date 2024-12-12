@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 59 occurrences:
 ; abc/optimized/sfmDec.c.ll
 ; bullet3/optimized/btContactProcessing.ll
 ; bullet3/optimized/gim_contact.ll
@@ -16,6 +16,7 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; minetest/optimized/gameui.cpp.ll
 ; minetest/optimized/guiChatConsole.cpp.ll
@@ -62,11 +63,11 @@
 define i32 @func0000000000000000(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
-; 159 occurrences:
+; 162 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sfmTim.c.ll
@@ -106,6 +107,9 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_line.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
@@ -230,7 +234,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -241,7 +245,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 

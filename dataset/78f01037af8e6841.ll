@@ -2,7 +2,6 @@
 ; 73 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_stmts.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/ioam6.ll
@@ -52,6 +51,7 @@
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll

@@ -1,99 +1,5 @@
 
-; 84 occurrences:
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/match.c.ll
-; hyperscan/optimized/mpv.c.ll
-; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/rose_build_groups.cpp.ll
-; hyperscan/optimized/som_runtime.c.ll
-; hyperscan/optimized/som_stream.c.ll
-; hyperscan/optimized/stream.c.ll
-; hyperscan/optimized/stream_compress.c.ll
-; linux/optimized/amdtopology.ll
-; linux/optimized/build_policy.ll
-; linux/optimized/build_utility.ll
-; linux/optimized/clocksource.ll
-; linux/optimized/compaction.ll
-; linux/optimized/cpuset.ll
-; linux/optimized/dcache.ll
-; linux/optimized/gen8_ppgtt.ll
-; linux/optimized/hugetlb.ll
-; linux/optimized/hugetlb_cgroup.ll
-; linux/optimized/init_64.ll
-; linux/optimized/intel_workarounds.ll
-; linux/optimized/kcore.ll
-; linux/optimized/list_lru.ll
-; linux/optimized/memory-tiers.ll
-; linux/optimized/memory.ll
-; linux/optimized/mempolicy.ll
-; linux/optimized/mm_init.ll
-; linux/optimized/mmzone.ll
-; linux/optimized/node.ll
-; linux/optimized/numa.ll
-; linux/optimized/oom_kill.ll
-; linux/optimized/page_alloc.ll
-; linux/optimized/random.ll
-; linux/optimized/seq_file.ll
-; linux/optimized/show_mem.ll
-; linux/optimized/slub.ll
-; linux/optimized/snapshot.ll
-; linux/optimized/task_mmu.ll
-; linux/optimized/timer_list.ll
-; linux/optimized/tree.ll
-; linux/optimized/tsc_sync.ll
-; linux/optimized/update.ll
-; linux/optimized/vmalloc.ll
-; linux/optimized/vmscan.ll
-; linux/optimized/vmstat.ll
-; linux/optimized/xarray.ll
-; llvm/optimized/CodeGenRegisters.cpp.ll
-; llvm/optimized/InjectedSourceStream.cpp.ll
-; llvm/optimized/LiveVariables.cpp.ll
-; llvm/optimized/NamedStreamMap.cpp.ll
-; llvm/optimized/NewGVN.cpp.ll
-; llvm/optimized/PDBFileBuilder.cpp.ll
-; llvm/optimized/PHIElimination.cpp.ll
-; llvm/optimized/RegisterInfoEmitter.cpp.ll
-; llvm/optimized/TpiStream.cpp.ll
-; openvdb/optimized/Activate.cc.ll
-; openvdb/optimized/Archive.cc.ll
-; openvdb/optimized/ChangeBackground.cc.ll
-; openvdb/optimized/Diagnostics.cc.ll
-; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Filter.cc.ll
-; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/LevelSetFilter.cc.ll
-; openvdb/optimized/LevelSetFracture.cc.ll
-; openvdb/optimized/LevelSetMeasure.cc.ll
-; openvdb/optimized/LevelSetMorph.cc.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/LevelSetSphere.cc.ll
-; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
-; openvdb/optimized/Merge.cc.ll
-; openvdb/optimized/MultiResGrid.cc.ll
-; openvdb/optimized/PoissonSolver.cc.ll
-; openvdb/optimized/Prune.cc.ll
-; openvdb/optimized/RayTracer.cc.ll
-; openvdb/optimized/SignedFloodFill.cc.ll
-; openvdb/optimized/TopologyToLevelSet.cc.ll
-; openvdb/optimized/ValueTransformer.cc.ll
-; openvdb/optimized/VectorTransformer.cc.ll
-; openvdb/optimized/VolumeAdvect.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
-; openvdb/optimized/points.cc.ll
-; re2/optimized/bitmap256.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = lshr i64 %0, %2
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
-}
-
-; 1248 occurrences:
+; 1240 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -153,6 +59,8 @@ entry:
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DImporter_Metadata.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
@@ -191,7 +99,6 @@ entry:
 ; cvc5/optimized/constraint.cpp.ll
 ; cvc5/optimized/env.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
-; cvc5/optimized/equality_engine_iterator.cpp.ll
 ; cvc5/optimized/inst_evaluator.cpp.ll
 ; cvc5/optimized/inst_match_generator_multi_linear.cpp.ll
 ; cvc5/optimized/instantiate.cpp.ll
@@ -578,7 +485,6 @@ entry:
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMoveMerger.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
@@ -825,13 +731,10 @@ entry:
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -1115,9 +1018,6 @@ entry:
 ; postgres/optimized/receivelog.ll
 ; postgres/optimized/tidbitmap.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/subprocess.cc.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
@@ -1196,7 +1096,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -1331,7 +1230,6 @@ entry:
 ; yosys/optimized/share.ll
 ; yosys/optimized/sim.ll
 ; yosys/optimized/subcircuit.ll
-; yosys/optimized/verilog_backend.ll
 ; z3/optimized/bit_matrix.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
@@ -1343,11 +1241,11 @@ entry:
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -1406,7 +1304,7 @@ entry:
 ; verilator/optimized/V3Width.cpp.ll
 ; wireshark/optimized/packet-iso8583.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %2
@@ -1415,7 +1313,7 @@ entry:
   ret i1 %5
 }
 
-; 213 occurrences:
+; 215 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -1425,6 +1323,8 @@ entry:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/builder_base.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; c3c/optimized/bigint.c.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/conic.cpp.ll
@@ -1630,7 +1530,7 @@ entry:
 ; yosys/optimized/verilog_backend.ll
 ; z3/optimized/bit_matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
@@ -1645,7 +1545,7 @@ entry:
 ; meshlab/optimized/ml_shared_data_context.cpp.ll
 ; qemu/optimized/target_riscv_pmu.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %2
@@ -1667,7 +1567,7 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000ec(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %2
@@ -1676,7 +1576,8 @@ entry:
   ret i1 %5
 }
 
-; 105 occurrences:
+; 106 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -1783,13 +1684,113 @@ entry:
 ; tev/optimized/main.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 4294967296, %2
   %4 = and i64 %3, %0
   %5 = icmp eq i64 %4, 0
   ret i1 %5
+}
+
+; 90 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-cff-common.cc.ll
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hyperscan/optimized/castle.c.ll
+; hyperscan/optimized/catchup.c.ll
+; hyperscan/optimized/match.c.ll
+; hyperscan/optimized/mpv.c.ll
+; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/rose_build_groups.cpp.ll
+; hyperscan/optimized/som_runtime.c.ll
+; hyperscan/optimized/som_stream.c.ll
+; hyperscan/optimized/stream.c.ll
+; hyperscan/optimized/stream_compress.c.ll
+; linux/optimized/amdtopology.ll
+; linux/optimized/build_policy.ll
+; linux/optimized/build_utility.ll
+; linux/optimized/clocksource.ll
+; linux/optimized/compaction.ll
+; linux/optimized/cpuset.ll
+; linux/optimized/dcache.ll
+; linux/optimized/gen8_ppgtt.ll
+; linux/optimized/hugetlb.ll
+; linux/optimized/hugetlb_cgroup.ll
+; linux/optimized/init_64.ll
+; linux/optimized/intel_workarounds.ll
+; linux/optimized/kcore.ll
+; linux/optimized/memory-tiers.ll
+; linux/optimized/memory.ll
+; linux/optimized/mempolicy.ll
+; linux/optimized/mm_init.ll
+; linux/optimized/mmzone.ll
+; linux/optimized/node.ll
+; linux/optimized/numa.ll
+; linux/optimized/oom_kill.ll
+; linux/optimized/page_alloc.ll
+; linux/optimized/random.ll
+; linux/optimized/seq_file.ll
+; linux/optimized/show_mem.ll
+; linux/optimized/slub.ll
+; linux/optimized/snapshot.ll
+; linux/optimized/task_mmu.ll
+; linux/optimized/timer_list.ll
+; linux/optimized/tree.ll
+; linux/optimized/tsc_sync.ll
+; linux/optimized/update.ll
+; linux/optimized/vmalloc.ll
+; linux/optimized/vmscan.ll
+; linux/optimized/vmstat.ll
+; linux/optimized/xarray.ll
+; llvm/optimized/CodeGenRegisters.cpp.ll
+; llvm/optimized/InjectedSourceStream.cpp.ll
+; llvm/optimized/LiveVariables.cpp.ll
+; llvm/optimized/NamedStreamMap.cpp.ll
+; llvm/optimized/NewGVN.cpp.ll
+; llvm/optimized/PDBFileBuilder.cpp.ll
+; llvm/optimized/PHIElimination.cpp.ll
+; llvm/optimized/RegisterInfoEmitter.cpp.ll
+; llvm/optimized/TpiStream.cpp.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-set.ll
+; openvdb/optimized/Activate.cc.ll
+; openvdb/optimized/Archive.cc.ll
+; openvdb/optimized/ChangeBackground.cc.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/FindActiveValues.cc.ll
+; openvdb/optimized/LevelSetFilter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetMeasure.cc.ll
+; openvdb/optimized/LevelSetMorph.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/Prune.cc.ll
+; openvdb/optimized/RayTracer.cc.ll
+; openvdb/optimized/SignedFloodFill.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/ValueTransformer.cc.ll
+; openvdb/optimized/VectorTransformer.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = lshr i64 %0, %2
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -1805,15 +1806,28 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; llvm/optimized/DecoderEmitter.cpp.ll
+; llvm/optimized/DependenceAnalysis.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = lshr i64 %0, %2
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
+}
+
 ; 6 occurrences:
-; git/optimized/combine-diff.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/intel_atomic_plane.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/sta_info.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; opencv/optimized/core_detect.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
@@ -1822,22 +1836,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/DecoderEmitter.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = lshr i64 %0, %2
-  %4 = icmp ne i64 %3, 0
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; linux/optimized/gen8_ppgtt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000ac(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %0, %2

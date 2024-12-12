@@ -13,10 +13,10 @@ entry:
 }
 
 ; 5 occurrences:
+; boost/optimized/static_string.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
-; nuttx/optimized/lib_rdflush_unlocked.c.ll
 ; php/optimized/pcre2_valid_utf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i8 %1, ptr %2) #0 {

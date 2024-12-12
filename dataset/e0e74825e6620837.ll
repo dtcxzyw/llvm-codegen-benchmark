@@ -1,35 +1,15 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; linux/optimized/drm_edid.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000007c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  %6 = getelementptr i8, ptr %5, i64 %1
-  ret ptr %6
-}
-
-; 7 occurrences:
-; openjdk/optimized/mlib_ImageConv_16ext.ll
-; openjdk/optimized/mlib_ImageConv_16nw.ll
-; openjdk/optimized/mlib_ImageConv_32nw.ll
-; openjdk/optimized/mlib_ImageConv_8ext.ll
-; openjdk/optimized/mlib_ImageConv_8nw.ll
-; openjdk/optimized/mlib_ImageConv_u16ext.ll
-; openjdk/optimized/mlib_ImageConv_u16nw.ll
-; Function Attrs: nounwind
-define ptr @func000000000000004e(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw i32 %2, 1
-  %4 = zext i32 %3 to i64
-  %5 = getelementptr ptr, ptr %0, i64 %4
-  %6 = getelementptr ptr, ptr %5, i64 %1
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i8, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -37,12 +17,12 @@ entry:
 ; clamav/optimized/udf.c.ll
 ; openjdk/optimized/domgraph.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr ptr, ptr %0, i64 %4
-  %6 = getelementptr ptr, ptr %5, i64 %1
+  %5 = getelementptr ptr, ptr %0, i64 %1
+  %6 = getelementptr ptr, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -51,12 +31,12 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; openjdk/optimized/gcm.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr ptr, ptr %0, i64 %4
-  %6 = getelementptr ptr, ptr %5, i64 %1
+  %5 = getelementptr ptr, ptr %0, i64 %1
+  %6 = getelementptr ptr, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -70,24 +50,12 @@ entry:
 ; opencv/optimized/samplers.cpp.ll
 ; proj/optimized/4D_api.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i32, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  %6 = getelementptr i32, ptr %5, i64 %1
-  ret ptr %6
-}
-
-; 1 occurrences:
-; libpng/optimized/pngrutil.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 1
-  %4 = zext i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %3 = getelementptr i32, ptr %0, i64 %1
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i32, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -99,10 +67,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000076(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i8, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -110,12 +78,12 @@ entry:
 ; openblas/optimized/dlansf.c.ll
 ; openusd/optimized/restoration.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i32, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 64
-  %6 = getelementptr i32, ptr %5, i64 %1
+  %3 = getelementptr i32, ptr %0, i64 %1
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i32, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 64
   ret ptr %6
 }
 
@@ -124,10 +92,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000036(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i32, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 64
-  %6 = getelementptr i32, ptr %5, i64 %1
+  %3 = getelementptr i32, ptr %0, i64 %1
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i32, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 64
   ret ptr %6
 }
 
@@ -138,8 +106,8 @@ define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 3
   %4 = zext i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -150,8 +118,8 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -160,22 +128,22 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000030(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -1
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i8, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 -1
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/posit.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr float, ptr %0, i64 %4
-  %6 = getelementptr float, ptr %5, i64 %1
+  %5 = getelementptr float, ptr %0, i64 %1
+  %6 = getelementptr float, ptr %5, i64 %4
   ret ptr %6
 }
 

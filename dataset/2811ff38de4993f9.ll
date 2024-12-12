@@ -103,7 +103,8 @@ entry:
   ret i1 %3
 }
 
-; 55 occurrences:
+; 57 occurrences:
+; boost/optimized/math_normalize_spheroidal.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_revolute_joint.cpp.ll
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
@@ -159,6 +160,7 @@ entry:
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; tev/optimized/ImageCanvas.cpp.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, float %1) #0 {
 entry:

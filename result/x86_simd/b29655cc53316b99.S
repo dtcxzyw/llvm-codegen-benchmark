@@ -15,7 +15,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	4294946816                      # 0xffffb000
 .LCPI1_2:
 	.long	100                             # 0x64
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vptestnmd	.LCPI1_1(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI1_2(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [100,100,100,100,100,100,100,100]
@@ -26,7 +26,7 @@ func0000000000000011:                   # @func0000000000000011
 	.long	4                               # 0x4
 .LCPI2_2:
 	.long	8                               # 0x8
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpneqd	.LCPI2_1(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI2_2(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [8,8,8,8,8,8,8,8]

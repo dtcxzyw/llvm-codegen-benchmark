@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -16,7 +16,7 @@ entry:
 ; faiss/optimized/IndexBinaryHNSW.cpp.ll
 ; faiss/optimized/IndexHNSW.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000032(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000052(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2

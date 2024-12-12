@@ -43,3 +43,20 @@ func0000000000000006:                   # @func0000000000000006
 	srli	a1, a1, 32
 	czero.nez	a0, a1, a0
 	ret
+func0000000000000018:                   # @func0000000000000018
+	sext.w	a1, a1
+	sltiu	a1, a1, 10
+	xori	a1, a1, 1
+	and	a0, a0, a1
+	li	a1, -2
+	czero.nez	a0, a1, a0
+	addi	a0, a0, 3
+	ret
+func0000000000000014:                   # @func0000000000000014
+	srliw	a1, a1, 5
+	sltiu	a1, a1, 1875
+	and	a0, a0, a1
+	li	a1, -32
+	czero.nez	a0, a1, a0
+	addi	a0, a0, 1296
+	ret

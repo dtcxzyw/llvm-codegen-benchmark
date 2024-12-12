@@ -116,8 +116,9 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; llvm/optimized/GlobalMerge.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll

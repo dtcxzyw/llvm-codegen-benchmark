@@ -1,5 +1,5 @@
 
-; 699 occurrences:
+; 722 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
@@ -14,6 +14,33 @@
 ; assimp/optimized/LWOAnimation.cpp.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/partition.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/casadi_low.cpp.ll
 ; casadi/optimized/constant_mx.cpp.ll
@@ -169,7 +196,6 @@
 ; gromacs/optimized/slasd5.cpp.ll
 ; gromacs/optimized/statistics.cpp.ll
 ; gromacs/optimized/wallcycle.cpp.ll
-; gromacs/optimized/walltime_accounting.cpp.ll
 ; grpc/optimized/flow_control.cc.ll
 ; grpc/optimized/histogram_view.cc.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -182,6 +208,7 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; luau/optimized/TimeTrace.cpp.ll
 ; luau/optimized/lgc.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -369,7 +396,6 @@
 ; openvdb/optimized/VectorTransformer.cc.ll
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
-; osqp/optimized/derivative.c.ll
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pbrt-v4/optimized/media.cpp.ll
@@ -392,10 +418,8 @@
 ; proj/optimized/bonne.cpp.ll
 ; proj/optimized/ccon.cpp.ll
 ; proj/optimized/conversion.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
 ; proj/optimized/eqdc.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/generic_inverse.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/grids.cpp.ll
@@ -422,7 +446,6 @@
 ; proj/optimized/topocentric.cpp.ll
 ; proj/optimized/tpeqd.cpp.ll
 ; proj/optimized/vandg.cpp.ll
-; proj/optimized/vertoffset.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; quantlib/optimized/abcd.ll
 ; quantlib/optimized/abcdcalibration.ll

@@ -1,12 +1,11 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/dauEnum.c.ll
 ; cmake/optimized/hex.c.ll
 ; icu/optimized/ufmt_cmn.ll
 ; linux/optimized/intel_engine_cs.ll
 ; llvm/optimized/SemaPseudoObject.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

@@ -12,7 +12,7 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -21,6 +21,7 @@ entry:
 ; arrow/optimized/value_parsing.cc.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/intel_vdsc.ll
+; lvgl/optimized/lv_calendar.ll
 ; nuklear/optimized/unity.c.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Sequence.cpp.ll

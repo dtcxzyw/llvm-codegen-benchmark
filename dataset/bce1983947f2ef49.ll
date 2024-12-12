@@ -1,10 +1,14 @@
 
-; 3 occurrences:
+; 7 occurrences:
+; cpython/optimized/dtoa.ll
+; hermes/optimized/dtoa.c.ll
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/dtoa.cc.ll
 ; openusd/optimized/decodeframe.c.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1048575
   %4 = icmp eq i32 %3, 0

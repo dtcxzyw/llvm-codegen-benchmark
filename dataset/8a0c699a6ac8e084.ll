@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 53 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/cecCec.c.ll
 ; abc/optimized/cuddGenCof.c.ll
@@ -22,7 +22,6 @@
 ; draco/optimized/point_attribute.cc.ll
 ; faiss/optimized/IndexBinaryHash.cpp.ll
 ; gromacs/optimized/scattering-debye-saxs.cpp.ll
-; libquic/optimized/x_long.c.ll
 ; llvm/optimized/MCPseudoProbe.cpp.ll
 ; llvm/optimized/MemProfReader.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll

@@ -28,7 +28,7 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acecMult.c.ll
@@ -50,6 +50,7 @@ entry:
 ; abc/optimized/sbdSat.c.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; linux/optimized/write.ll
+; lvgl/optimized/lv_math.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {

@@ -1,9 +1,9 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	cmpq	$-9, %rdi
 	sete	%al
 	andb	%sil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andb	$3, %sil
 	cmpb	$2, %sil
 	sete	%cl
@@ -11,7 +11,7 @@ func0000000000000011:                   # @func0000000000000011
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	andb	$-2, %sil
 	cmpb	$12, %sil
 	sete	%cl
@@ -19,24 +19,24 @@ func00000000000000c1:                   # @func00000000000000c1
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
-	shrb	%sil
-	cmpq	$3, %rdi
+func000000000000028c:                   # @func000000000000028c
+	cmpq	$1024, %rdi                     # imm = 0x400
 	setb	%al
 	andb	%sil, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%sil, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
-	shrb	%sil
-	cmpq	$65536, %rdi                    # imm = 0x10000
+func000000000000008c:                   # @func000000000000008c
+	testb	$3, %sil
+	setne	%cl
+	cmpq	$256, %rdi                      # imm = 0x100
 	setb	%al
-	andb	%sil, %al
+	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	notb	%sil
 	testb	$3, %sil
 	sete	%cl
@@ -44,13 +44,13 @@ func0000000000000041:                   # @func0000000000000041
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	shrb	%sil
 	cmpq	$2, %rdi
 	setae	%al
 	andb	%sil, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	andb	$-2, %sil
 	cmpb	$24, %sil
 	sete	%cl

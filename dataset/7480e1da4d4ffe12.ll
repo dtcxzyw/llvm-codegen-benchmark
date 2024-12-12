@@ -1,5 +1,5 @@
 
-; 231 occurrences:
+; 232 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/acecOrder.c.ll
 ; abc/optimized/aigDfs.c.ll
@@ -19,6 +19,7 @@
 ; abc/optimized/saigWnd.c.ll
 ; abc/optimized/sswDyn.c.ll
 ; abc/optimized/sswIslands.c.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -253,11 +254,12 @@ entry:
   ret i32 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
+; postgres/optimized/parse_utilcmd.ll
 ; verilator/optimized/V3PreProc.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0) #0 {
@@ -288,6 +290,16 @@ define i32 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = ashr i32 %0, 3
   %2 = mul nuw nsw i32 %1, 28
+  ret i32 %2
+}
+
+; 1 occurrences:
+; postgres/optimized/heapam.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0) #0 {
+entry:
+  %1 = ashr exact i32 %0, 16
+  %2 = mul nuw nsw i32 %1, 104
   ret i32 %2
 }
 

@@ -1,7 +1,7 @@
 
-%struct.VuVirtq.2593021 = type { %struct.VuRing.2593022, ptr, ptr, i16, i64, i16, i16, i16, i16, i8, i8, i32, ptr, i32, i32, i32, i32, i8, %struct.vhost_vring_addr.2593023 }
-%struct.VuRing.2593022 = type { i32, ptr, ptr, ptr, i64, i32 }
-%struct.vhost_vring_addr.2593023 = type { i32, i32, i64, i64, i64, i64 }
+%struct.VuVirtq.2706746 = type { %struct.VuRing.2706747, ptr, ptr, i16, i64, i16, i16, i16, i16, i8, i8, i32, ptr, i32, i32, i32, i32, i8, %struct.vhost_vring_addr.2706748 }
+%struct.VuRing.2706747 = type { i32, ptr, ptr, ptr, i64, i32 }
+%struct.vhost_vring_addr.2706748 = type { i32, i32, i64, i64, i64, i64 }
 
 ; 92 occurrences:
 ; abc/optimized/abcBm.c.ll
@@ -20,7 +20,6 @@
 ; abc/optimized/verCore.c.ll
 ; abc/optimized/verFormula.c.ll
 ; folly/optimized/AsyncSocket.cpp.ll
-; folly/optimized/File.cpp.ll
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
@@ -31,6 +30,7 @@
 ; luajit/optimized/lib_table.ll
 ; luajit/optimized/lib_table_dyn.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_grid.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/environment.cpp.ll
@@ -106,6 +106,18 @@ entry:
   ret ptr %5
 }
 
+; 1 occurrences:
+; folly/optimized/File.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = shl i64 %2, 32
+  %4 = ashr exact i64 %3, 28
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
 ; 4 occurrences:
 ; linux/optimized/uncore_snbep.ll
 ; postgres/optimized/pg_dump_sort.ll
@@ -117,7 +129,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = getelementptr %struct.VuVirtq.2593021, ptr %0, i64 %4
+  %5 = getelementptr %struct.VuVirtq.2706746, ptr %0, i64 %4
   ret ptr %5
 }
 

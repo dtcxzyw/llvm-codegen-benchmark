@@ -1,6 +1,9 @@
 
-; 100 occurrences:
+; 103 occurrences:
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
 ; ceres/optimized/line_search_direction.cc.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/introspection_basicadj.c.ll

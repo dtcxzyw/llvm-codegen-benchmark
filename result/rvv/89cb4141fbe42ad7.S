@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 3
 	vsll.vv	v10, v10, v12

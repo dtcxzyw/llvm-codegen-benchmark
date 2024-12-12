@@ -1,6 +1,7 @@
 
 ; 263 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
 ; folly/optimized/JemallocHugePageAllocator.cpp.ll
 ; hermes/optimized/FoldingSet.cpp.ll
@@ -235,7 +236,6 @@
 ; openjdk/optimized/virtualspace.ll
 ; openmpi/optimized/common_sm.ll
 ; openusd/optimized/aom_mem.c.ll
-; ozz-animation/optimized/allocator.cc.ll
 ; postgres/optimized/mcxt.ll
 ; protobuf/optimized/arena.cc.ll
 ; raylib/optimized/raudio.c.ll

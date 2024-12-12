@@ -24,7 +24,7 @@
 ; openssl/optimized/liblegacy-lib-md5_dgst.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000388(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000d08(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = icmp ugt i64 %2, 63
@@ -72,7 +72,7 @@ entry:
 ; spike/optimized/vsuxei64_v.ll
 ; spike/optimized/vsuxei8_v.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, %0
   %3 = icmp ugt i64 %2, 384
@@ -84,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/hmac_drbg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000908(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, %0
   %3 = icmp ugt i64 %2, 384

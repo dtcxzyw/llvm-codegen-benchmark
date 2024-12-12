@@ -1,15 +1,21 @@
 
-; 56 occurrences:
+; 62 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/mioParse.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_zoneinfo.ll
 ; git/optimized/archive-zip.ll
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; icu/optimized/decNumber.ll
 ; libquic/optimized/prtime.cc.ll
 ; libwebp/optimized/image_enc.c.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -60,14 +66,15 @@
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 400
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
-; 47 occurrences:
+; 53 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/giaResub.c.ll
+; boost/optimized/gregorian.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_zoneinfo.ll
@@ -81,6 +88,13 @@ entry:
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/uncore_nhmex.ll
 ; luau/optimized/loslib.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/filter_dock_dialog.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
@@ -98,8 +112,6 @@ entry:
 ; opencv/optimized/sinusoidalpattern.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; opencv/optimized/univ_intrin.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; postgres/optimized/dt_common.ll
 ; protobuf/optimized/unparser.cc.ll
 ; qemu/optimized/util_cutils.c.ll
@@ -117,18 +129,22 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 4
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 15 occurrences:
+; 19 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_zoneinfo.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
 ; libwebp/optimized/backward_references_enc.c.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_table.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; nuttx/optimized/lib_dayofweek.c.ll
 ; opencv/optimized/edgeboxes.cpp.ll
@@ -142,7 +158,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, -2
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -156,8 +172,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, -2
-  %4 = add i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -167,7 +183,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 4
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }

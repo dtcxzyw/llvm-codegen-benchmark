@@ -1,7 +1,10 @@
 
-; 36 occurrences:
+; 38 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/src.ll
 ; c3c/optimized/sema_asm.c.ll
-; clamav/optimized/lzma_iface.c.ll
 ; cmake/optimized/cf-h2-proxy.c.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -14,7 +17,6 @@
 ; linux/optimized/apic.ll
 ; linux/optimized/ibs.ll
 ; linux/optimized/ohci-hcd.ll
-; linux/optimized/openclose.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
@@ -84,6 +86,21 @@ entry:
   ret i32 %4
 }
 
+; 5 occurrences:
+; boost/optimized/text_file_backend.ll
+; icu/optimized/indiancal.ll
+; linux/optimized/bugs.ll
+; linux/optimized/vht.ll
+; quickjs/optimized/libunicode.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 3
+  %3 = select i1 %0, i1 true, i1 %2
+  %4 = select i1 %3, i32 0, i32 7
+  ret i32 %4
+}
+
 ; 3 occurrences:
 ; hdf5/optimized/H5Aint.c.ll
 ; icu/optimized/dtitvfmt.ll
@@ -94,20 +111,6 @@ entry:
   %2 = icmp sgt i32 %1, 0
   %3 = select i1 %0, i1 true, i1 %2
   %4 = select i1 %3, i32 2, i32 1
-  ret i32 %4
-}
-
-; 4 occurrences:
-; icu/optimized/indiancal.ll
-; linux/optimized/bugs.ll
-; linux/optimized/vht.ll
-; quickjs/optimized/libunicode.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 32
-  %3 = select i1 %0, i1 true, i1 %2
-  %4 = select i1 %3, i32 32, i32 1
   ret i32 %4
 }
 

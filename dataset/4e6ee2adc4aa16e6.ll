@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 86 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; nanobind/optimized/nb_func.cpp.ll
@@ -85,11 +85,12 @@
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = mul i64 %3, -7070675565921424023
   ret i64 %4
 }

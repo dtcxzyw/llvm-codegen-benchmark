@@ -1,8 +1,7 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/irq.ll
-; linux/optimized/nvram.ll
 ; llvm/optimized/MacroInfo.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll

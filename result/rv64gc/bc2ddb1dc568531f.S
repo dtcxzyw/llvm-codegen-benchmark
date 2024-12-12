@@ -6,6 +6,16 @@ func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, -9
 	or	a0, a0, a1
 	ret
+func0000000000000009:                   # @func0000000000000009
+	slli	a1, a1, 48
+	lui	a2, 1048544
+	srli	a1, a1, 48
+	addiw	a2, a2, -1
+	sltiu	a1, a1, 100
+	slli	a1, a1, 17
+	and	a0, a0, a2
+	or	a0, a0, a1
+	ret
 func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 48
 	lui	a2, 3904

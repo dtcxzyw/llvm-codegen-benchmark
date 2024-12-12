@@ -1,22 +1,22 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	subl	%edx, %esi
 	cmovsl	%edi, %esi
 	testl	%esi, %esi
 	sete	%al
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	subl	%edx, %esi
 	cmovsl	%edi, %esi
 	cmpl	$39998, %esi                    # imm = 0x9C3E
 	setge	%al
 	retq
-func0000000000000161:                   # @func0000000000000161
+func00000000000004c1:                   # @func00000000000004c1
 	subl	%edx, %esi
 	cmovsl	%edi, %esi
 	testl	%esi, %esi
 	sete	%al
 	retq
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	subl	%edx, %esi
 	cmovsl	%edi, %esi
 	testl	%esi, %esi

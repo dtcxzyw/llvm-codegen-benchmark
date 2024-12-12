@@ -1,12 +1,11 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/multibit_build.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; luajit/optimized/lib_bit.ll
 ; luajit/optimized/lib_bit_dyn.ll
-; qemu/optimized/hw_net_can_ctucan_pci.c.ll
 ; ruby/optimized/string.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wolfssl/optimized/sp_int.c.ll
@@ -19,7 +18,7 @@ entry:
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
   %6 = select i1 %1, i64 %5, i64 -1
-  %7 = and i64 %6, %0
+  %7 = and i64 %0, %6
   ret i64 %7
 }
 
@@ -58,7 +57,7 @@ entry:
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
   %6 = select i1 %1, i64 %5, i64 -1
-  %7 = and i64 %6, %0
+  %7 = and i64 %0, %6
   ret i64 %7
 }
 

@@ -4,18 +4,17 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$63, %al
 	sete	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
-	incl	%edi
+func00000000000001e1:                   # @func00000000000001e1
 	andl	$15, %edi
-	cmpl	$8, %edi
+	cmpl	$7, %edi
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
-	incl	%edi
+func00000000000000a1:                   # @func00000000000000a1
+	notl	%edi
 	testb	$3, %dil
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movq	%rdi, %rax
 	andb	$1, %al
 	retq

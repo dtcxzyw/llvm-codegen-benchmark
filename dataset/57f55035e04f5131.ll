@@ -42,6 +42,27 @@ entry:
   ret i1 %2
 }
 
+; 12 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; openblas/optimized/dlasv2.c.ll
+; postgres/optimized/geo_ops.ll
+; proj/optimized/geodesic.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(double %0) #0 {
+entry:
+  %1 = fmul double %0, %0
+  %2 = fcmp oeq double %1, 0.000000e+00
+  ret i1 %2
+}
+
 ; 1 occurrences:
 ; gromacs/optimized/nosehooverchains.cpp.ll
 ; Function Attrs: nounwind
@@ -84,25 +105,6 @@ define i1 @func0000000000000005(double %0) #0 {
 entry:
   %1 = fmul double %0, %0
   %2 = fcmp ugt double %1, 0x10000000000000
-  ret i1 %2
-}
-
-; 10 occurrences:
-; g2o/optimized/optimizable_graph.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/filter_measure.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; openblas/optimized/dlasv2.c.ll
-; postgres/optimized/geo_ops.ll
-; proj/optimized/geodesic.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(double %0) #0 {
-entry:
-  %1 = fmul double %0, %0
-  %2 = fcmp oeq double %1, 0.000000e+00
   ret i1 %2
 }
 

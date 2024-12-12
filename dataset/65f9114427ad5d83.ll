@@ -1,8 +1,9 @@
 
-; 86 occurrences:
+; 87 occurrences:
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; abseil-cpp/optimized/time_zone_posix.cc.ll
 ; arrow/optimized/type.cc.ll
+; boost/optimized/static_string.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/str.c.ll
@@ -87,7 +88,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-websocket.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i8 %0) #0 {
+define i1 @func00000000000000c1(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i64
   %2 = shl nuw i64 1, %1
@@ -96,10 +97,11 @@ entry:
   ret i1 %4
 }
 
-; 57 occurrences:
+; 58 occurrences:
 ; cpython/optimized/_decimal.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; icu/optimized/ubidi.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; nanosvg/optimized/nanosvg.ll
 ; openusd/optimized/reconinter.c.ll
 ; postgres/optimized/ruleutils.ll
@@ -155,23 +157,11 @@ entry:
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i8 %0) #0 {
+define i1 @func00000000000000cc(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i64
   %2 = shl nuw i64 1, %1
   %3 = and i64 %2, 4294983169
-  %4 = icmp ne i64 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; image-rs/optimized/244uszkx0e8t5ie1.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000068(i8 %0) #0 {
-entry:
-  %1 = zext nneg i8 %0 to i64
-  %2 = shl nuw i64 1, %1
-  %3 = and i64 %2, 254
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
@@ -191,7 +181,7 @@ entry:
 ; postgres/optimized/filter.ll
 ; wireshark/optimized/packet-osc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0) #0 {
+define i1 @func0000000000000041(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i64
   %2 = shl nuw i64 1, %1
@@ -220,7 +210,7 @@ entry:
 ; wireshark/optimized/packet-mqtt.c.ll
 ; wireshark/optimized/packet-obex.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i8 %0) #0 {
+define i1 @func00000000000000e1(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i64
   %2 = shl nuw nsw i64 1, %1
@@ -235,7 +225,7 @@ entry:
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/reconinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i8 %0) #0 {
+define i1 @func000000000000004c(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i64
   %2 = shl nuw i64 1, %1
@@ -247,7 +237,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-obex.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0) #0 {
+define i1 @func0000000000000061(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i64
   %2 = shl nuw nsw i64 1, %1
@@ -260,7 +250,7 @@ entry:
 ; cpython/optimized/_codecs_kr.ll
 ; linux/optimized/nl80211.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i8 %0) #0 {
+define i1 @func00000000000000ec(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i64
   %2 = shl nuw nsw i64 1, %1

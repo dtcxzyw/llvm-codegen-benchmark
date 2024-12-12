@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	3                               # 0x3
-func0000000000000285:                   # @func0000000000000285
+func0000000000000485:                   # @func0000000000000485
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
@@ -9,7 +9,7 @@ func0000000000000285:                   # @func0000000000000285
 	retq
 .LCPI1_0:
 	.long	12289                           # 0x3001
-func000000000000034d:                   # @func000000000000034d
+func000000000000054d:                   # @func000000000000054d
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [12289,12289,12289,12289,12289,12289,12289,12289]
 	vpcmpgtd	%ymm1, %ymm2, %ymm1

@@ -1,8 +1,10 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
 ; clamav/optimized/filtering.c.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_roller.ll
 ; stockfish/optimized/evaluate.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {

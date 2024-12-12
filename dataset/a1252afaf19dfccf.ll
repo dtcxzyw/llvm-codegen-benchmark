@@ -1,25 +1,5 @@
 
-; 7 occurrences:
-; icu/optimized/localematcher.ll
-; linux/optimized/ht.ll
-; postgres/optimized/brin_xlog.ll
-; postgres/optimized/heapam.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; wireshark/optimized/packet-ansi_683.c.ll
-; wolfssl/optimized/ecc.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 1
-  %3 = and i32 %2, 15
-  %4 = add nuw nsw i32 %3, 1
-  %5 = select i1 %0, i32 0, i32 %4
-  ret i32 %5
-}
-
-; 41 occurrences:
-; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/lpkAbcUtil.c.ll
+; 39 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -66,6 +46,21 @@ entry:
   %3 = and i32 %2, 15
   %4 = add nsw i32 %3, -3
   %5 = select i1 %0, i32 13, i32 %4
+  ret i32 %5
+}
+
+; 4 occurrences:
+; icu/optimized/localematcher.ll
+; postgres/optimized/heapam.ll
+; wireshark/optimized/packet-ansi_683.c.ll
+; wolfssl/optimized/ecc.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 12
+  %3 = and i32 %2, 7
+  %4 = add nuw nsw i32 %3, 4
+  %5 = select i1 %0, i32 0, i32 %4
   ret i32 %5
 }
 

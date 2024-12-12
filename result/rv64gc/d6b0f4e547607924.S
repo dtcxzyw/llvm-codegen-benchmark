@@ -12,7 +12,7 @@ func000000000000000c:                   # @func000000000000000c
 	and	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	fcvt.s.d	fa5, fa0
 	fmv.x.w	a0, fa5
 	lui	a1, 520192

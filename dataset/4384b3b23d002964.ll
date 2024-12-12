@@ -75,7 +75,7 @@
 ; oiio/optimized/zfile.cpp.ll
 ; ruby/optimized/date_parse.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -48
   %4 = add i32 %3, %1
@@ -89,7 +89,7 @@ entry:
 ; abc/optimized/cnf_reader.c.ll
 ; abc/optimized/xsatCnfReader.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000111(i8 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000221(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -48
   %4 = add i32 %3, %1
@@ -102,7 +102,7 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/parser_utils.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000101(i8 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000201(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -48
   %4 = add i32 %3, %1

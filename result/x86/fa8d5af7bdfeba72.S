@@ -33,9 +33,3 @@ func0000000000000007:                   # @func0000000000000007
 	andl	$-33554432, %edi                # imm = 0xFE000000
 	leal	1(%rdi,%rsi,2), %eax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	andl	$15, %esi
-	shll	$6, %esi
-	andl	$63, %edi
-	leal	56320(%rdi,%rsi), %eax
-	retq

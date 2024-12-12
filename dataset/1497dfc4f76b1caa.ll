@@ -9,7 +9,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %1, 64
   %5 = or disjoint i128 %4, %3
-  %6 = mul i128 %5, %0
+  %6 = mul i128 %0, %5
   %7 = lshr i128 %6, 64
   ret i128 %7
 }
@@ -22,7 +22,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %1, 64
   %5 = or disjoint i128 %4, %3
-  %6 = mul nsw i128 %5, %0
+  %6 = mul nsw i128 %0, %5
   %7 = lshr i128 %6, 64
   ret i128 %7
 }
@@ -48,7 +48,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nsw i128 %1, 64
   %5 = or disjoint i128 %4, %3
-  %6 = mul i128 %5, %0
+  %6 = mul i128 %0, %5
   %7 = lshr i128 %6, 64
   ret i128 %7
 }

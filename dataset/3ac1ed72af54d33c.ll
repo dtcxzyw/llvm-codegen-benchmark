@@ -15,7 +15,7 @@
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 31
   %3 = shl nuw i32 1, %2
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/mulnode.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 31
   %3 = shl nsw i32 -1, %2
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 7
   %3 = shl nuw nsw i32 1, %2

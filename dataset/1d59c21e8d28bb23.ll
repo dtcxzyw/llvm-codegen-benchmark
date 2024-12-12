@@ -16,9 +16,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/RawDecoder.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; Function Attrs: nounwind
@@ -30,15 +29,14 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
-; linux/optimized/8250_mid.ll
+; 3 occurrences:
 ; linux/optimized/intel_pstate.ll
 ; opencv/optimized/rand.cpp.ll
 ; postgres/optimized/dynahash.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 4
+  %2 = shl i64 %1, 14
   %3 = udiv i64 %2, %0
   %4 = trunc i64 %3 to i32
   ret i32 %4

@@ -1,15 +1,9 @@
 func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
-	movi	v6.2d, #0xffffffffffffffff
-	shrn	v1.2s, v1.2d, #32
-	shrn	v0.2s, v0.2d, #32
-	add	v5.2d, v5.2d, v6.2d
-	add	v4.2d, v4.2d, v6.2d
-	ushl	v3.2d, v5.2d, v3.2d
-	ushl	v2.2d, v4.2d, v2.2d
-	shrn	v3.2s, v3.2d, #32
-	shrn	v2.2s, v2.2d, #32
-	umull	v0.2d, v0.2s, v2.2s
-	umull	v1.2d, v1.2s, v3.2s
+	sub	x8, x2, #1
+	lsr	x9, x0, #32
+	lsl	x8, x8, x1
+	lsr	x8, x8, #32
+	umull	x0, w9, w8
 	ret
                                         // -- End function

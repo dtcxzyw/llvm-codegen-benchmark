@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ipsec.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d1(i8 %0, i32 %1) #0 {
+define i32 @func00000000000001a1(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = add nsw i32 %2, -4

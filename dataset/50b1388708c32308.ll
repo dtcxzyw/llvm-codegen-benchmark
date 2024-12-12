@@ -1,7 +1,7 @@
 
-; 91 occurrences:
+; 90 occurrences:
 ; abc/optimized/ifMap.c.ll
-; arrow/optimized/int_util.cc.ll
+; boost/optimized/to_chars.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; clamav/optimized/regexec.c.ll
 ; cmake/optimized/archive_entry.c.ll
@@ -27,7 +27,6 @@
 ; linux/optimized/lskcipher.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/percpu_counter.ll
-; linux/optimized/probe.ll
 ; linux/optimized/remap_range.ll
 ; linux/optimized/select.ll
 ; linux/optimized/tick-broadcast.ll
@@ -95,7 +94,7 @@
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -138,10 +137,10 @@ entry:
 ; tokio-rs/optimized/1k577qo9p6sw2dlc.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -158,7 +157,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp sgt i64 %4, -1
   ret i1 %5
 }
@@ -168,22 +167,11 @@ entry:
 ; tokio-rs/optimized/1k577qo9p6sw2dlc.ll
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp ne i64 %4, 0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = or disjoint i64 %1, %2
-  %4 = and i64 %3, %0
-  %5 = icmp ult i64 %4, 4
   ret i1 %5
 }
 

@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/area.ll
 ; clamav/optimized/pathfn.cpp.ll
 ; php/optimized/scanf.ll
 ; sqlite/optimized/sqlite3.ll

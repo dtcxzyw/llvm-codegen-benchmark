@@ -110,17 +110,31 @@ func000000000000002c:                   # @func000000000000002c
 	bnez	a0, .LBB7_2
 .LBB7_4:                                # %entry
 	ret
-func00000000000000ac:                   # @func00000000000000ac
-	fle.s	a0, fa1, fa2
+func000000000000004a:                   # @func000000000000004a
+	flt.s	a0, fa2, fa1
 	beqz	a0, .LBB8_3
-	fle.s	a0, fa0, fa1
+	fle.s	a0, fa1, fa0
 	beqz	a0, .LBB8_4
 .LBB8_2:                                # %entry
 	fmv.s	fa0, fa1
 	ret
 .LBB8_3:                                # %entry
 	fmv.s	fa1, fa2
-	fle.s	a0, fa0, fa2
+	fle.s	a0, fa2, fa0
 	bnez	a0, .LBB8_2
 .LBB8_4:                                # %entry
+	ret
+func00000000000000ac:                   # @func00000000000000ac
+	fle.s	a0, fa1, fa2
+	beqz	a0, .LBB9_3
+	fle.s	a0, fa0, fa1
+	beqz	a0, .LBB9_4
+.LBB9_2:                                # %entry
+	fmv.s	fa0, fa1
+	ret
+.LBB9_3:                                # %entry
+	fmv.s	fa1, fa2
+	fle.s	a0, fa0, fa2
+	bnez	a0, .LBB9_2
+.LBB9_4:                                # %entry
 	ret

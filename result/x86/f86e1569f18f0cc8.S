@@ -21,12 +21,14 @@ func000000000000000c:                   # @func000000000000000c
 	cmovel	%ecx, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	testb	$1, %sil
-	movl	$20, %ecx
-	cmovnel	%edx, %ecx
-	cmpl	$6, %edi
-	movl	$3, %eax
-	cmovael	%ecx, %eax
+	andb	$1, %sil
+	xorl	%ecx, %ecx
+	cmpb	$1, %sil
+	movl	$0, %eax
+	sbbl	%eax, %eax
+	orl	%edx, %eax
+	cmpl	$2, %edi
+	cmovbl	%ecx, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	testb	$1, %sil

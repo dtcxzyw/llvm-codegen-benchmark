@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; ruby/optimized/ancdata.ll
-; ruby/optimized/closure.ll
 ; ruby/optimized/fiddle.ll
 ; ruby/optimized/handle.ll
 ; ruby/optimized/iseq.ll
@@ -15,8 +14,9 @@ entry:
   ret i1 %3
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; linux/optimized/mballoc.ll
+; lvgl/optimized/lv_tlsf.ll
 ; node/optimized/libnode.application.ll
 ; node/optimized/libnode.cares_wrap.ll
 ; node/optimized/libnode.crypto_common.ll

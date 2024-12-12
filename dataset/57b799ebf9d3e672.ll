@@ -11,7 +11,7 @@ entry:
   %3 = mul nuw nsw i32 %2, 10
   %4 = add nuw nsw i32 %3, %1
   %5 = mul nuw nsw i32 %4, 60
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -133,18 +133,6 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
-; php/optimized/engine_combinedlcg.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nsw i32 %2, -53668
-  %4 = add i32 %3, %1
-  %5 = mul nsw i32 %4, 40014
-  %6 = add i32 %5, %0
-  ret i32 %6
-}
-
 ; 3 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; nuklear/optimized/unity.c.ll
@@ -155,7 +143,7 @@ entry:
   %3 = mul nsw i32 %2, -400
   %4 = add nsw i32 %3, %1
   %5 = mul i32 %4, 365
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -178,21 +166,9 @@ entry:
 define i32 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 63
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = mul nsw i32 %4, 62
-  %6 = add i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; mixbox/optimized/mixbox.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000f7(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nuw nsw i32 %2, 85
-  %4 = add nuw nsw i32 %3, %1
-  %5 = mul nsw i32 %4, 85
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -214,7 +190,7 @@ entry:
 define i32 @func00000000000000d5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 60
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = mul nsw i32 %4, 75
   %6 = add nsw i32 %5, %0
   ret i32 %6
@@ -226,9 +202,9 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 10
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = mul nuw nsw i32 %4, 3600
-  %6 = add nuw i32 %5, %0
+  %6 = add nuw i32 %0, %5
   ret i32 %6
 }
 
@@ -238,7 +214,7 @@ entry:
 define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 37
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = mul i32 %4, 37
   %6 = add i32 %5, %0
   ret i32 %6

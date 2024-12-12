@@ -11,7 +11,7 @@
 ; openssl/optimized/libcrypto-lib-bio_dump.ll
 ; openssl/optimized/libcrypto-shlib-bio_dump.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = sdiv i32 %0, %1
@@ -24,7 +24,7 @@ entry:
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; openmpi/optimized/coll_base_allreduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %.neg = sext i1 %2 to i32
   %3 = sdiv i32 %0, %1
@@ -73,7 +73,7 @@ entry:
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj1.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = sdiv i32 %0, %1

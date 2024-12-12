@@ -1,5 +1,7 @@
 
-; 13 occurrences:
+; 15 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; opencv/optimized/ts.cpp.ll

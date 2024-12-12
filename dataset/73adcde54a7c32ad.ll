@@ -5,7 +5,7 @@
 ; openjdk/optimized/mlib_ImageConv_8nw.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = sub i32 %1, %3
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/objective_function.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002c1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i32 %2, %1

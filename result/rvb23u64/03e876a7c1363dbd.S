@@ -21,7 +21,16 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a0, 6
 	xori	a0, a0, 1
 	ret
+func0000000000000018:                   # @func0000000000000018
+	zext.h	a0, a0
+	sltiu	a0, a0, 4
+	xori	a0, a0, 1
+	ret
 func000000000000000c:                   # @func000000000000000c
 	zext.h	a0, a0
 	snez	a0, a0
+	ret
+func0000000000000014:                   # @func0000000000000014
+	zext.h	a0, a0
+	sltiu	a0, a0, 6
 	ret

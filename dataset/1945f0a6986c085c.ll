@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/TypeInference.cpp.ll
 ; icu/optimized/collationfastlatinbuilder.ll
@@ -10,6 +10,7 @@
 ; openjdk/optimized/memnode.ll
 ; openmpi/optimized/opal_convertor.ll
 ; php/optimized/zend_inference.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
 ; slurm/optimized/gres.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
@@ -18,8 +19,8 @@
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = or i32 %3, %0
-  %5 = and i32 %4, -536870913
+  %4 = or i32 %0, %3
+  %5 = and i32 %4, -234881025
   ret i32 %5
 }
 
@@ -35,7 +36,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %4, -267386881
   ret i32 %5
 }

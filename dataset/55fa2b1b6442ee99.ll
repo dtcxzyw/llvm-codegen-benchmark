@@ -1,6 +1,7 @@
 
 ; 20 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
+; boost/optimized/alloc_lib.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
@@ -19,19 +20,18 @@
 ; opencv/optimized/run_length_morphology.cpp.ll
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
-; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 1
-  %4 = add i64 %0, %1
+  %3 = add i64 %1, %2
+  %4 = and i64 %0, 1
   %5 = or disjoint i64 %4, %3
   ret i64 %5
 }
 
 ; 8 occurrences:
+; boost/optimized/alloc_lib.ll
 ; linux/optimized/espfix_64.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/pasid.ll
 ; linux/optimized/static_call_inline.ll
@@ -42,7 +42,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = and i64 %0, -4294967296
+  %4 = and i64 %0, 1
   %5 = or i64 %4, %3
   ret i64 %5
 }

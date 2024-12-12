@@ -26,4 +26,26 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i16 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = zext nneg i16 %0 to i32
+  %4 = sub nsw i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-opensafety.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i16 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = zext nneg i16 %0 to i32
+  %4 = sub nsw i32 %3, %2
+  ret i32 %4
+}
+
 attributes #0 = { nounwind }

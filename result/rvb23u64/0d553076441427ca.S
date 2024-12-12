@@ -10,3 +10,9 @@ func0000000000000003:                   # @func0000000000000003
 	and	a0, a0, a1
 	addi	a0, a0, 1
 	ret
+func0000000000000000:                   # @func0000000000000000
+	lui	a1, 1
+	addiw	a1, a1, -129
+	and	a0, a0, a1
+	addi	a0, a0, 128
+	ret

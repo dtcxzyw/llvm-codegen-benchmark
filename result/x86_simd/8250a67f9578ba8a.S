@@ -24,7 +24,7 @@ func000000000000000c:                   # @func000000000000000c
 	.long	10513                           # 0x2911
 .LCPI2_1:
 	.long	21026                           # 0x5222
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpsubd	%ymm2, %ymm1, %ymm0

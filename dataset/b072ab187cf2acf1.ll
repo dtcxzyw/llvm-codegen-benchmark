@@ -26,9 +26,7 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
-; arrow/optimized/key_map.cc.ll
-; arrow/optimized/key_map_avx2.cc.ll
+; 2 occurrences:
 ; protobuf/optimized/extension_set.cc.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
@@ -38,6 +36,20 @@ entry:
   %4 = icmp ult i32 %1, 2097152
   %5 = select i1 %4, i64 12, i64 %3
   %6 = select i1 %0, i64 13, i64 %5
+  ret i64 %6
+}
+
+; 3 occurrences:
+; arrow/optimized/key_map.cc.ll
+; arrow/optimized/key_map_avx2.cc.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i1 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 3, i64 4
+  %4 = icmp samesign ult i32 %1, 2048
+  %5 = select i1 %4, i64 2, i64 %3
+  %6 = select i1 %0, i64 1, i64 %5
   ret i64 %6
 }
 

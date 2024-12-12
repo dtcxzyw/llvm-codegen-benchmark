@@ -11,7 +11,9 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; linux/optimized/seq_timer.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind
@@ -69,18 +71,6 @@ entry:
   %3 = udiv i32 %2, 5
   %4 = add nsw i32 %3, -719468
   %5 = add nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; nuttx/optimized/lib_timegm.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -12
-  %3 = udiv i32 %2, 12
-  %4 = add nuw nsw i32 %3, 1
-  %5 = add i32 %4, %0
   ret i32 %5
 }
 

@@ -9,7 +9,7 @@
 define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 24
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = shl i64 %0, 48
   %7 = or disjoint i64 %6, %5
@@ -86,10 +86,11 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/darLib.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -108,7 +109,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 9
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = shl i64 %0, 32
   %7 = or disjoint i64 %6, %5
@@ -121,7 +122,7 @@ entry:
 define i64 @func0000000000000025(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 3
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = shl nuw i64 %0, 32
   %7 = or disjoint i64 %6, %5
@@ -134,7 +135,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = shl nuw i64 %0, 32
   %7 = or disjoint i64 %6, %5
@@ -147,7 +148,7 @@ entry:
 define i64 @func0000000000000077(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 7
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = shl nuw nsw i64 %0, 32
   %7 = or disjoint i64 %6, %5

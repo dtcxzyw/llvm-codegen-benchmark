@@ -30,7 +30,7 @@ entry:
   ret i64 %5
 }
 
-; 22 occurrences:
+; 20 occurrences:
 ; eastl/optimized/EARandom.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; linux/optimized/nf_conntrack_core.ll
@@ -43,13 +43,11 @@ entry:
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
 ; qemu/optimized/block_vmdk.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/jemalloc_nodump_allocator.cc.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/f64_sqrt.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/vmulhu_vx.ll
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; xgboost/optimized/charconv.cc.ll

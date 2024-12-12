@@ -5,7 +5,7 @@
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/s_mulAddF16.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 4294967295, %2
@@ -14,7 +14,7 @@ entry:
   ret i1 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/intel_psr.ll
@@ -30,7 +30,6 @@ entry:
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; openjdk/optimized/compressedOops.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
@@ -39,7 +38,7 @@ entry:
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 -1, %2
@@ -51,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 -1, %2

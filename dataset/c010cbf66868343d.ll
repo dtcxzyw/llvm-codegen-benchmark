@@ -19,7 +19,7 @@ define i64 @func000000000000000c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = zext nneg i32 %5 to i64
   %7 = shl i64 %6, %0
   ret i64 %7

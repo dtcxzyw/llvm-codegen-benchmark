@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; luau/optimized/StringUtils.cpp.ll
@@ -8,6 +8,8 @@
 ; ocio/optimized/Lut3DOpCPU.cpp.ll
 ; quantlib/optimized/pathwiseaccountingengine.ll
 ; stat-rs/optimized/43fparx0v87xel0c.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -73,10 +75,11 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_censorize.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; luau/optimized/StringUtils.cpp.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -102,6 +105,17 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_roller.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 1
+  %3 = add i64 %0, 1
+  %4 = mul i64 %3, %2
+  ret i64 %4
+}
+
+; 1 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i64 %1) #0 {
@@ -109,26 +123,6 @@ entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = add nuw nsw i64 %0, 1
   %4 = mul i64 %3, %2
-  ret i64 %4
-}
-
-; 10 occurrences:
-; gromacs/optimized/genconf.cpp.ll
-; linux/optimized/scsicam.ll
-; openblas/optimized/dtrmv_thread_NLN.c.ll
-; openblas/optimized/dtrmv_thread_NLU.c.ll
-; openblas/optimized/dtrmv_thread_NUN.c.ll
-; openblas/optimized/dtrmv_thread_NUU.c.ll
-; openblas/optimized/dtrmv_thread_TLN.c.ll
-; openblas/optimized/dtrmv_thread_TLU.c.ll
-; openblas/optimized/dtrmv_thread_TUN.c.ll
-; openblas/optimized/dtrmv_thread_TUU.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = add nuw nsw i64 %0, 1
-  %4 = mul nuw nsw i64 %3, %2
   ret i64 %4
 }
 

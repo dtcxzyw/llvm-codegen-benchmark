@@ -1,6 +1,6 @@
 
 ; 1 occurrences:
-; qemu/optimized/target_riscv_m128_helper.c.ll
+; boost/optimized/approximately_equals.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
@@ -9,7 +9,8 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/approximately_equals.ll
 ; libquic/optimized/div.c.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; wolfssl/optimized/sp_int.c.ll

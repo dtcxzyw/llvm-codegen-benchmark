@@ -34,7 +34,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i16 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1022
   %4 = icmp eq i16 %1, 16
@@ -48,7 +48,7 @@ entry:
 ; libquic/optimized/trees.c.ll
 ; linux/optimized/deftree.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i16 %1, i32 %2) #0 {
+define i32 @func0000000000000064(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 256
   %4 = icmp ult i16 %1, 257
@@ -61,7 +61,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-cops.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i16 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i16 %1, -9216
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-openflow_v4.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i16 %1, i32 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 16
   %4 = icmp ugt i16 %1, 16
@@ -94,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/i9xx_wm.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i16 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp ult i16 %1, 7
@@ -106,7 +106,7 @@ entry:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i16 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp slt i16 %1, 1

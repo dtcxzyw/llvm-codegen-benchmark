@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; icu/optimized/calendar.ll
-; icu/optimized/gregoimp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; opencv/optimized/color_hsv.dispatch.cpp.ll

@@ -19,8 +19,11 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 4 occurrences:
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i128 %1, i128 %2) #0 {
 entry:

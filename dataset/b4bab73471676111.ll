@@ -6,7 +6,7 @@ define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = udiv i64 9223372036854775807, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -17,27 +17,42 @@ define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = udiv i64 9223372036854775807, %2
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
-; 2 occurrences:
-; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256_nosse.ll
-; libsodium/optimized/libsse2_la-pwhash_scryptsalsa208sha256_sse.ll
+; 3 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; eastl/optimized/EAString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = udiv i64 144115188075855871, %2
-  %4 = icmp ult i64 %3, %0
+  %2 = zext nneg i32 %1 to i64
+  %3 = udiv i64 -1, %2
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; eastl/optimized/EAString.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = udiv i64 -1, %2
+  %4 = icmp ne i64 %0, %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; boost/optimized/numeric.ll
 ; nuttx/optimized/lib_strtoul.c.ll
 ; nuttx/optimized/lib_strtoull.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %mul = call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %2, i64 %0)
@@ -46,46 +61,24 @@ entry:
 }
 
 ; 1 occurrences:
-; eastl/optimized/EAString.cpp.ll
+; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = udiv i64 -1, %2
-  %4 = icmp ugt i64 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; eastl/optimized/EAString.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = udiv i64 -1, %2
-  %4 = icmp ne i64 %3, %0
+  %3 = udiv i64 9223372036854775807, %2
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = udiv i64 9223372036854775807, %2
-  %4 = icmp sgt i64 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; cpython/optimized/unicodeobject.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = udiv i64 9223372036854775807, %2
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 

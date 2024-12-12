@@ -6,7 +6,7 @@
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
 ; wireshark/optimized/packet-selfm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %not. = xor i1 %1, true

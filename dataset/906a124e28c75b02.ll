@@ -12,7 +12,8 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind

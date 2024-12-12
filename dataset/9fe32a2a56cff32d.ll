@@ -7,11 +7,11 @@ entry:
   %2 = lshr i32 %1, 12
   %3 = and i32 %2, 31
   %4 = mul nuw nsw i32 %3, 3600
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 21 occurrences:
+; 23 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
@@ -19,6 +19,7 @@ entry:
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
 ; linux/optimized/drm_format_helper.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
@@ -33,13 +34,14 @@ entry:
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; ruby/optimized/time.ll
+; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 23
   %3 = and i32 %2, 63
   %4 = mul nuw nsw i32 %3, 60
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -65,7 +67,7 @@ entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 16777215
   %4 = mul nuw nsw i32 %3, 720
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -102,7 +104,7 @@ entry:
   %2 = lshr i32 %1, 6
   %3 = and i32 %2, 1020
   %4 = mul nsw i32 %3, -19081
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

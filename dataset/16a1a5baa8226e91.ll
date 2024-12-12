@@ -1,24 +1,20 @@
 
-; 13 occurrences:
+; 9 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; darktable/optimized/history.c.ll
 ; libquic/optimized/digest.cc.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; openvdb/optimized/LevelSetFracture.cc.ll
-; openvdb/optimized/Maps.cc.ll
-; openvdb/optimized/Transform.cc.ll
-; openvdb/optimized/VectorTransformer.cc.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; stockfish/optimized/position.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [0 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -39,18 +35,23 @@ entry:
   ret ptr %4
 }
 
-; 5 occurrences:
+; 10 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abseil-cpp/optimized/crc.cc.ll
+; boost/optimized/alloc_lib.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openjdk/optimized/mlib_c_ImageLookUp_f.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/Maps.cc.ll
+; openvdb/optimized/Transform.cc.ll
+; openvdb/optimized/VectorTransformer.cc.ll
 ; php/optimized/pcre2_substring.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 1
+  %2 = shl nuw nsw i32 %1, 2
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [512 x i32], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [16 x double], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -58,11 +59,11 @@ entry:
 ; clamav/optimized/autoit.c.ll
 ; rand-rs/optimized/qpqwmytuo9t2y51.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [600 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [600 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

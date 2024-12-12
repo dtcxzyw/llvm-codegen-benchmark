@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$1, %edx
 	negl	%edx
 	notb	%sil
@@ -7,6 +7,6 @@ func0000000000000011:                   # @func0000000000000011
 	shll	$5, %eax
 	addl	$32, %eax
 	andl	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

@@ -41,6 +41,18 @@ entry:
   ret i32 %5
 }
 
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; stb/optimized/stb_dxt.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = mul nuw nsw i32 %0, 56
+  %5 = sub nsw i32 %4, %3
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; libquic/optimized/error_correction.c.ll
 ; Function Attrs: nounwind
@@ -48,17 +60,6 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = mul nsw i32 %0, 98312
-  %5 = sub nsw i32 %4, %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; stb/optimized/stb_dxt.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = mul nuw nsw i32 %0, 3
   %5 = sub nsw i32 %4, %3
   ret i32 %5
 }

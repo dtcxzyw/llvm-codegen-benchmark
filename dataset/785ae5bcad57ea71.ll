@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; linux/optimized/cypress_ps2.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000188(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 51
   %4 = select i1 %3, i1 true, i1 %0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = select i1 %3, i1 true, i1 %0
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000010c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, -35
   %4 = select i1 %3, i1 true, i1 %0

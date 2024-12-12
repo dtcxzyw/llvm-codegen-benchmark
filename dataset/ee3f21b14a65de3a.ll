@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 70 occurrences:
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/batch.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -32,7 +32,6 @@
 ; mitsuba3/optimized/null.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll

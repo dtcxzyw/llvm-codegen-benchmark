@@ -28,12 +28,6 @@ func00000000000000cc:                   # @func00000000000000cc
 	leal	(%rdi,%rdi,2), %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	addl	%edx, %esi
-	imull	$40014, %esi, %ecx              # imm = 0x9C4E
-	imull	$-12211, %edi, %eax             # imm = 0xD04D
-	addl	%ecx, %eax
-	retq
 func00000000000000ff:                   # @func00000000000000ff
 	addl	%edx, %esi
 	leal	(%rsi,%rsi,4), %eax

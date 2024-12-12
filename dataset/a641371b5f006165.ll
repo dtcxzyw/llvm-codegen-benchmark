@@ -3,7 +3,7 @@
 ; openjdk/optimized/cmslut.ll
 ; php/optimized/html.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add i32 %2, -128

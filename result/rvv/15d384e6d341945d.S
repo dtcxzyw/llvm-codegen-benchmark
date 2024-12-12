@@ -10,7 +10,7 @@ func000000000000001a:                   # @func000000000000001a
 	vadd.vv	v10, v10, v12
 	vsrl.vi	v10, v10, 2
 	vnot.v	v10, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 1
 	ret
 .LCPI1_0:
@@ -25,6 +25,6 @@ func0000000000000018:                   # @func0000000000000018
 	vadd.vv	v10, v10, v12
 	vsrl.vi	v10, v10, 4
 	vnot.v	v10, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 1
 	ret

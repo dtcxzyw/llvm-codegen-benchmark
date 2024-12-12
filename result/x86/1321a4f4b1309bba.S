@@ -23,3 +23,8 @@ func0000000000000009:                   # @func0000000000000009
 	cmpq	%rsi, %rdx
 	cmovbq	%rsi, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movq	%rdi, %rax
+	cmpq	%rsi, %rdx
+	cmovaeq	%rsi, %rax
+	retq

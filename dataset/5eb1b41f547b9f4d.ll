@@ -1,11 +1,10 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; cpython/optimized/Hacl_Hash_SHA3.ll
 ; csmith/optimized/StatementFor.cpp.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; libquic/optimized/tls_cbc.c.ll
 ; linux/optimized/af_packet.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/gss_krb5_crypto.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/pcm_lib.ll
@@ -55,9 +54,8 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; hermes/optimized/CharacterProperties.cpp.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/isoch.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; sqlite/optimized/sqlite3.ll

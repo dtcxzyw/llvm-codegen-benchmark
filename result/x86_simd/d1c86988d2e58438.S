@@ -42,6 +42,12 @@ func000000000000000b:                   # @func000000000000000b
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+func000000000000000e:                   # @func000000000000000e
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
+	vpmovqd	%ymm0, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
 func0000000000000009:                   # @func0000000000000009
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
 	vpmovqd	%ymm0, %xmm0

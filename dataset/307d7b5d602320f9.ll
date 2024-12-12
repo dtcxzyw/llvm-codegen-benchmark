@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; clamav/optimized/pe.c.ll
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
@@ -13,11 +13,11 @@
 ; linux/optimized/intel_pps.ll
 ; linux/optimized/kbuf.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/ParseExpr.cpp.ll
 ; llvm/optimized/ParseExprCXX.cpp.ll
 ; llvm/optimized/ParseStmtAsm.cpp.ll
 ; llvm/optimized/PrintPreprocessedOutput.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/VLIWMachineScheduler.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -26,7 +26,6 @@
 ; minetest/optimized/test_map.cpp.ll
 ; minetest/optimized/test_sao.cpp.ll
 ; minetest/optimized/test_schematic.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; nix/optimized/fromTOML.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
@@ -50,11 +49,10 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; cmake/optimized/SystemTools.cxx.ll
 ; libevent/optimized/evutil.c.ll
 ; linux/optimized/fixup.ll
-; linux/optimized/probe_roms.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; protobuf/optimized/printer.cc.ll
@@ -71,9 +69,8 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; icu/optimized/uidna.ll
-; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; postgres/optimized/syslogger.ll

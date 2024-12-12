@@ -1,6 +1,5 @@
 
-; 27 occurrences:
-; assimp/optimized/FBXBinaryTokenizer.cpp.ll
+; 25 occurrences:
 ; cmake/optimized/curl_addrinfo.c.ll
 ; cmake/optimized/doh.c.ll
 ; cmake/optimized/ntlm.c.ll
@@ -11,11 +10,9 @@
 ; icu/optimized/pkgitems.ll
 ; libpng/optimized/pngwutil.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
-; linux/optimized/fils_aead.ll
 ; linux/optimized/uhci-hcd.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/LiveIntervals.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; memcached/optimized/testapp.ll
 ; postgres/optimized/xlogreader.ll
@@ -27,6 +24,7 @@
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; yalantinglibs/optimized/conformance.pb.cc.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0) #0 {
 entry:

@@ -50,3 +50,18 @@ func000000000000000f:                   # @func000000000000000f
 	bseti	a0, zero, 32
 	vrsub.vx	v8, v8, a0
 	ret
+func0000000000000009:                   # @func0000000000000009
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 15
+	vand.vi	v8, v8, -16
+	vrsub.vi	v8, v8, 0
+	ret
+func000000000000000b:                   # @func000000000000000b
+	li	a0, 1024
+	lui	a1, 2
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v8, v8, a0
+	addiw	a0, a1, -1
+	vand.vx	v8, v8, a0
+	vrsub.vx	v8, v8, a1
+	ret

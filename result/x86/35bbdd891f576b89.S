@@ -10,13 +10,13 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dl, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	notb	%dl
 	cmpq	%rsi, %rdi
 	setb	%al
 	andb	%dl, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	notb	%dl
 	cmpq	%rsi, %rdi
 	seta	%al

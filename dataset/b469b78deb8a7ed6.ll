@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000008c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294966272
   %3 = icmp eq i64 %2, 0
@@ -15,7 +15,7 @@ entry:
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000184(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294966272
   %3 = icmp eq i64 %2, 0
@@ -31,7 +31,7 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; wireshark/optimized/frame_data_sequence.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i64 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0
@@ -45,7 +45,7 @@ entry:
 ; linux/optimized/ndisc.ll
 ; slurm/optimized/mgr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i64 %1) #0 {
+define i1 @func000000000000014c(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp sgt i32 %2, 0
@@ -58,7 +58,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; proj/optimized/networkfilemanager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 256
@@ -67,11 +67,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; wireshark/optimized/packet-giop.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000188(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ugt i32 %2, 2
@@ -80,7 +79,7 @@ entry:
   ret i1 %5
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; linux/optimized/netlabel_kapi.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -96,7 +95,6 @@ entry:
 ; meshlab/optimized/io_e57.cpp.ll
 ; meshlab/optimized/io_gltf.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/main.cpp.ll
 ; meshlab/optimized/mainwindow_Init.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
@@ -104,7 +102,7 @@ entry:
 ; meshlab/optimized/mlapplication.cpp.ll
 ; postgres/optimized/array_selfuncs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0

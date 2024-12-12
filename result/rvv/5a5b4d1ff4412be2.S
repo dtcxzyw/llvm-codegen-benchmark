@@ -7,7 +7,7 @@ func0000000000000081:                   # @func0000000000000081
 	addiw	a0, a0, 1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vmulh.vx	v10, v8, a1
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
@@ -47,7 +47,7 @@ func0000000000000080:                   # @func0000000000000080
 	addi	a0, a0, -1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vmulh.vx	v8, v8, a1
 	li	a0, 63
 	vsrl.vx	v10, v8, a0

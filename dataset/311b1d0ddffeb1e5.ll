@@ -1,9 +1,13 @@
 
-%struct.TCGTemp.2593549 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
 
-; 55 occurrences:
+; 63 occurrences:
+; abc/optimized/abc.c.ll
+; abc/optimized/ifDsd.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
+; ceres/optimized/reorder_program.cc.ll
+; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
@@ -13,16 +17,20 @@
 ; linux/optimized/filter.ll
 ; linux/optimized/recovery.ll
 ; linux/optimized/tg3.ll
+; lodepng/optimized/pngdetail.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; oniguruma/optimized/regenc.ll
 ; openblas/optimized/dsbgst.c.ll
+; openblas/optimized/dsyr2k_kernel_L.c.ll
 ; opencv/optimized/calibinit.cpp.ll
+; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/eltwise_layer.cpp.ll
+; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
@@ -67,14 +75,8 @@ entry:
   ret ptr %6
 }
 
-; 64 occurrences:
+; 40 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
-; abc/optimized/verStream.c.ll
-; clamav/optimized/matcher-byte-comp.c.ll
-; clamav/optimized/yara_lexer.c.ll
-; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
-; cmake/optimized/cmCommandArgumentLexer.cxx.ll
-; cmake/optimized/cmGccDepfileLexer.cxx.ll
 ; cmake/optimized/cmListFileLexer.c.ll
 ; darktable/optimized/collect.c.ll
 ; darktable/optimized/filtering.c.ll
@@ -83,51 +85,33 @@ entry:
 ; git/optimized/connect.ll
 ; git/optimized/diff.ll
 ; git/optimized/dir.ll
-; git/optimized/git.ll
 ; git/optimized/http-push.ll
-; git/optimized/path.ll
 ; git/optimized/show-ref.ll
 ; git/optimized/tree-walk.ll
 ; git/optimized/unpack-trees.ll
-; git/optimized/xmerge.ll
 ; graphviz/optimized/gvgetfontlist_pango.c.ll
 ; gromacs/optimized/atomdistribution.cpp.ll
-; icu/optimized/pkgitems.ll
 ; icu/optimized/rematch.ll
 ; icu/optimized/udata.ll
-; jq/optimized/lexer.ll
 ; jq/optimized/regexec.ll
-; jq/optimized/regparse.ll
 ; libquic/optimized/v3_ncons.c.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/fit_rotations_l1.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; nix/optimized/lexer-tab.ll
 ; oniguruma/optimized/regexec.ll
-; oniguruma/optimized/regparse.ll
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/eltwise_layer.cpp.ll
-; opencv/optimized/fully_connected_layer.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; opencv/optimized/tree.cpp.ll
-; opencv/optimized/triangulate.cpp.ll
-; openjdk/optimized/archiveHeapWriter.ll
-; openmpi/optimized/rmaps_rank_file_lex.ll
-; openmpi/optimized/show_help_lex.ll
 ; openssl/optimized/libcrypto-lib-pem_lib.ll
 ; openssl/optimized/libcrypto-shlib-pem_lib.ll
-; pbrt-v4/optimized/bxdfs.cpp.ll
-; php/optimized/dtoa.ll
 ; raylib/optimized/rtext.c.ll
-; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; redis/optimized/sort.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
-; slurm/optimized/env.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; yosys/optimized/verilog_lexer.ll
 ; zxing/optimized/AZDetector.cpp.ll
@@ -142,16 +126,59 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; opencv/optimized/emd_new.cpp.ll
 ; qemu/optimized/tcg.c.ll
+; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 23
   %4 = ashr i64 %3, 63
-  %5 = getelementptr %struct.TCGTemp.2593549, ptr %1, i64 %4
-  %6 = getelementptr %struct.TCGTemp.2593549, ptr %5, i64 %0
+  %5 = getelementptr %struct.TCGTemp.2707225, ptr %1, i64 %4
+  %6 = getelementptr %struct.TCGTemp.2707225, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 31 occurrences:
+; clamav/optimized/matcher-byte-comp.c.ll
+; clamav/optimized/yara_lexer.c.ll
+; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
+; cmake/optimized/cmCommandArgumentLexer.cxx.ll
+; cmake/optimized/cmGccDepfileLexer.cxx.ll
+; git/optimized/dir.ll
+; git/optimized/git.ll
+; git/optimized/path.ll
+; git/optimized/xmerge.ll
+; gromacs/optimized/atomdistribution.cpp.ll
+; jq/optimized/lexer.ll
+; jq/optimized/regparse.ll
+; llama.cpp/optimized/ggml.c.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; nix/optimized/lexer-tab.ll
+; oniguruma/optimized/regparse.ll
+; opencv/optimized/distransform.cpp.ll
+; opencv/optimized/fully_connected_layer.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; opencv/optimized/scansegment.cpp.ll
+; opencv/optimized/stardetector.cpp.ll
+; opencv/optimized/tree.cpp.ll
+; opencv/optimized/triangulate.cpp.ll
+; openjdk/optimized/archiveHeapWriter.ll
+; openmpi/optimized/rmaps_rank_file_lex.ll
+; openmpi/optimized/show_help_lex.ll
+; pbrt-v4/optimized/bxdfs.cpp.ll
+; php/optimized/dtoa.ll
+; recastnavigation/optimized/DetourCrowd.cpp.ll
+; slurm/optimized/env.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = ashr exact i64 %3, 32
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -171,12 +198,11 @@ entry:
   ret ptr %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; icu/optimized/ustdio.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; pocketpy/optimized/frame.cpp.ll
-; protobuf/optimized/php_generator.cc.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
@@ -186,6 +212,30 @@ entry:
   %4 = ashr i64 %3, 32
   %5 = getelementptr nusw i64, ptr %1, i64 %4
   %6 = getelementptr nusw i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; protobuf/optimized/php_generator.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 29
+  %4 = ashr i64 %3, 32
+  %5 = getelementptr nusw ptr, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; icu/optimized/pkgitems.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = ashr exact i64 %3, 32
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -216,12 +266,36 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 30
+  %4 = ashr i64 %3, 32
+  %5 = getelementptr double, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw double, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/tree.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 30
   %4 = ashr exact i64 %3, 29
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr nusw double, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw double, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/tree.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000012(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 30
+  %4 = ashr exact i64 %3, 30
+  %5 = getelementptr i8, ptr %1, i64 %4
+  %6 = getelementptr nusw i32, ptr %5, i64 %0
   ret ptr %6
 }
 

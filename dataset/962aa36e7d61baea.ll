@@ -13,9 +13,11 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; git/optimized/object-name.ll
 ; libevent/optimized/event_tagging.c.ll
+; llvm/optimized/CallingConvLower.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i8 %0, i8 %1, i32 %2) #0 {
 entry:

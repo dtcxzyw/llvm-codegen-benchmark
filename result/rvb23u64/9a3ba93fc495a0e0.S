@@ -2,7 +2,7 @@ func0000000000000001:                   # @func0000000000000001
 	or	a1, a1, a2
 	czero.eqz	a0, a1, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	or	a1, a1, a2
 	lui	a2, 1
 	czero.eqz	a1, a1, a0

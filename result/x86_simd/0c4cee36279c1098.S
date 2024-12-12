@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	vmovapd	%zmm0, %zmm2 {%k1}
 	vmovapd	%zmm2, %zmm0
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vcvtdq2pd	%ymm2, %zmm2
 	vptestnmd	%ymm1, %ymm1, %k1
 	vmovapd	%zmm0, %zmm2 {%k1}

@@ -1,4 +1,4 @@
-func0000000000000141:                   # @func0000000000000141
+func0000000000000281:                   # @func0000000000000281
 	vpsllw	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -24,7 +24,7 @@ func0000000000000141:                   # @func0000000000000141
 	.short	65534                           # 0xfffe
 	.short	65534                           # 0xfffe
 	.short	65534                           # 0xfffe
-func0000000000000145:                   # @func0000000000000145
+func0000000000000285:                   # @func0000000000000285
 	vpsllw	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpaddw	.LCPI1_0(%rip), %ymm0, %ymm0
@@ -49,7 +49,7 @@ func0000000000000145:                   # @func0000000000000145
 	.short	65534                           # 0xfffe
 	.short	65534                           # 0xfffe
 	.short	65534                           # 0xfffe
-func0000000000000144:                   # @func0000000000000144
+func0000000000000284:                   # @func0000000000000284
 	vpsllw	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpaddw	.LCPI2_0(%rip), %ymm0, %ymm0

@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/matcher-ac.c.ll
@@ -19,6 +19,7 @@
 ; llvm/optimized/TokenConcatenation.cpp.ll
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
 ; llvm/optimized/regexec.c.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; openmpi/optimized/cmd_line.ll
 ; openmpi/optimized/tm_topology.ll
 ; openssl/optimized/ca_internals_test-bin-apps.ll
@@ -49,7 +50,7 @@
 ; wireshark/optimized/strutil.c.ll
 ; wireshark/optimized/uat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000302(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8192
   %3 = icmp ne i16 %2, 0
@@ -58,7 +59,8 @@ entry:
   ret i1 %5
 }
 
-; 115 occurrences:
+; 114 occurrences:
+; boost/optimized/topology.ll
 ; clamav/optimized/message.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
@@ -134,7 +136,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -172,10 +173,9 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000042(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2048
   %3 = icmp eq i16 %2, 0
@@ -190,7 +190,7 @@ entry:
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000048(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8192
   %3 = icmp eq i16 %2, 0
@@ -203,7 +203,7 @@ entry:
 ; postgres/optimized/interval.ll
 ; qemu/optimized/qapi_qapi-util.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000308(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8
   %3 = icmp ne i16 %2, 0
@@ -215,7 +215,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/apprentice.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i8 %0, i16 %1) #0 {
+define i1 @func000000000000004c(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8
   %3 = icmp eq i16 %2, 0
@@ -224,28 +224,29 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000102(i8 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 8192
+  %3 = icmp eq i16 %2, 0
+  %4 = icmp ult i8 %0, 4
+  %5 = or i1 %3, %4
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; clamav/optimized/dlp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000050(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2048
   %3 = icmp eq i16 %2, 0
   %4 = icmp ugt i8 %0, 54
   %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; icu/optimized/normalizer2impl.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000082(i8 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 3
-  %3 = icmp eq i16 %2, 0
-  %4 = icmp ult i8 %0, -2
-  %5 = or i1 %3, %4
   ret i1 %5
 }
 
@@ -255,7 +256,7 @@ entry:
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/pred_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000194(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000314(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 64
   %3 = icmp ne i16 %2, 0
@@ -267,7 +268,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000202(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 256
   %3 = icmp eq i16 %2, 0
@@ -281,7 +282,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000058(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -256
   %3 = icmp ne i16 %2, 32512

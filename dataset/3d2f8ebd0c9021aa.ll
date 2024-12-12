@@ -33,18 +33,15 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; linux/optimized/vlv_dsi_pll.ll
-; postgres/optimized/wait_error.ll
-; postgres/optimized/wait_error_shlib.ll
-; postgres/optimized/wait_error_srv.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 0, i32 59
   %3 = and i32 %0, 63
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -56,11 +53,11 @@ entry:
 ; postgres/optimized/xlogreader.ll
 ; z3/optimized/sat_parallel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 13, i32 15
   %3 = and i32 %0, 15
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 

@@ -1,9 +1,10 @@
 func0000000000000000:                   # @func0000000000000000
 	movq	%rsi, %rdx
-	movabsq	$591478767894494641, %rax       # imm = 0x8355ACE3C897DB1
+	shrq	$2, %rdx
+	movabsq	$2951479051793528259, %rax      # imm = 0x28F5C28F5C28F5C3
 	mulxq	%rax, %rax, %rax
-	shrq	$6, %rax
-	imull	$-1996, %eax, %eax              # imm = 0xF834
+	shrl	$2, %eax
+	imull	$-100, %eax, %eax
 	addl	%edi, %eax
 	retq
 func0000000000000020:                   # @func0000000000000020

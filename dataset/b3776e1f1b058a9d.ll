@@ -8,7 +8,7 @@
 define i1 @func0000000000000006(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp slt i32 %5, 1
   ret i1 %6
@@ -19,11 +19,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = sub i32 0, %0
-  %6 = icmp eq i32 %4, %5
-  ret i1 %6
+  %.neg = zext i1 %2 to i32
+  %.neg1 = sub i32 %.neg, %1
+  %3 = icmp eq i32 %0, %.neg1
+  ret i1 %3
 }
 
 ; 58 occurrences:
@@ -86,10 +85,10 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp sgt i32 %5, 0
   ret i1 %6
@@ -102,7 +101,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp sgt i32 %5, 0
   ret i1 %6
@@ -169,10 +168,10 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp slt i32 %5, -3
   ret i1 %6
@@ -183,10 +182,10 @@ entry:
 ; php/optimized/ir_check.ll
 ; velox/optimized/Subscript.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp eq i32 %5, 1
   ret i1 %6
@@ -195,24 +194,37 @@ entry:
 ; 1 occurrences:
 ; glslang/optimized/Initialize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp eq i32 %5, 1
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/padding.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add i32 %4, %0
-  %6 = icmp sgt i32 %5, 0
+  %4 = add nsw i32 %1, %3
+  %5 = add i32 %0, %4
+  %6 = icmp sgt i32 %5, -1
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000086(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = sext i1 %2 to i32
+  %4 = add nsw i32 %1, %3
+  %5 = add i32 %0, %4
+  %6 = icmp slt i32 %5, -99
   ret i1 %6
 }
 
@@ -222,7 +234,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp ne i32 %5, 4
   ret i1 %6
@@ -232,10 +244,10 @@ entry:
 ; icu/optimized/ubidiln.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp sgt i32 %5, 0
   ret i1 %6
@@ -248,21 +260,9 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = icmp ult i32 %5, 8
-  ret i1 %6
-}
-
-; 1 occurrences:
-; openusd/optimized/rotation.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
-  %6 = icmp ult i32 %5, 3
   ret i1 %6
 }
 

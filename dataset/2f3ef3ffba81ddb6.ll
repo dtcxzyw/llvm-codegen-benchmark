@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/stringutil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ult i64 %3, %0
@@ -23,11 +23,10 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/gup.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/vmalloc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {

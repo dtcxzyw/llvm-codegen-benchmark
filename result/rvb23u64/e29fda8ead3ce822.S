@@ -56,6 +56,21 @@ func000000000000000b:                   # @func000000000000000b
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
+func0000000000000000:                   # @func0000000000000000
+	slli	a2, a2, 52
+	andi	a1, a1, 255
+	srli	a2, a2, 44
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000001:                   # @func0000000000000001
+	slli	a2, a2, 52
+	srli	a1, a1, 52
+	srli	a2, a2, 12
+	slli	a1, a1, 52
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
 func000000000000000e:                   # @func000000000000000e
 	slli	a2, a2, 60
 	bseti	a3, zero, 11
@@ -68,23 +83,6 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a2, a2, 60
 	lui	a3, 256
 	srli	a2, a2, 48
-	and	a1, a1, a3
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ret
-func0000000000000000:                   # @func0000000000000000
-	slli	a2, a2, 4
-	lui	a3, 1024
-	and	a2, a2, a3
-	lui	a3, 32
-	and	a1, a1, a3
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ret
-func0000000000000001:                   # @func0000000000000001
-	slli	a2, a2, 63
-	bseti	a3, zero, 34
-	srli	a2, a2, 28
 	and	a1, a1, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -1,9 +1,10 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/cuddSat.c.ll
 ; linux/optimized/eventpoll.ll
 ; linux/optimized/exec.ll
 ; linux/optimized/security.ll
+; lvgl/optimized/lv_obj.ll
 ; postgres/optimized/tsgistidx.ll
 ; ruby/optimized/compile.ll
 ; wireshark/optimized/packet-dcerpc-pn-io.c.ll
@@ -18,9 +19,12 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 10 occurrences:
 ; libquic/optimized/string_util.cc.ll
 ; linux/optimized/hugetlb.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
 ; redis/optimized/bitops.ll
 ; wireshark/optimized/packet-epl.c.ll

@@ -38,5 +38,5 @@ func0000000000000000:                   # @func0000000000000000
 	vzext.vf4	v12, v10
 	vwsll.vv	v14, v12, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vv	v8, v14, v8
+	vadd.vv	v8, v8, v14
 	ret

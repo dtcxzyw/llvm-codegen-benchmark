@@ -1,4 +1,4 @@
-func0000000000000154:                   # @func0000000000000154
+func0000000000000294:                   # @func0000000000000294
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v12, v10, 0
 	vmsgt.vi	v10, v8, 0
@@ -7,15 +7,15 @@ func0000000000000154:                   # @func0000000000000154
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vor.vv	v8, v8, v10
-	vmsne.vi	v0, v8, 0
+	vand.vv	v8, v8, v10
+	vmsne.vi	v0, v8, -1
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	li	a0, 99
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v8, 1
@@ -25,7 +25,7 @@ func0000000000000038:                   # @func0000000000000038
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 0
 	li	a0, 26
@@ -35,16 +35,7 @@ func0000000000000182:                   # @func0000000000000182
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000082:                   # @func0000000000000082
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vi	v12, v10, 1
-	vmseq.vi	v10, v8, 8
-	vmor.mm	v0, v10, v12
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vi	v12, v10, 0
 	vmsle.vi	v10, v8, 0
@@ -53,7 +44,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v12, v10, 0
 	vmseq.vi	v10, v8, 0

@@ -1,6 +1,6 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shll	$8, %esi
-	testl	%edi, %esi
+	testl	%esi, %edi
 	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -13,19 +13,19 @@ func000000000000000c:                   # @func000000000000000c
 	testl	%edi, %esi
 	setne	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	addl	%esi, %esi
-	testl	%edi, %esi
+	testl	%esi, %edi
 	sete	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	shll	$24, %esi
 	testl	%edi, %esi
 	setne	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shll	$4, %esi
-	testl	%edi, %esi
+	testl	%esi, %edi
 	sete	%al
 	retq
 func0000000000000006:                   # @func0000000000000006

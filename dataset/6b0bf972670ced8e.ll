@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = icmp eq ptr %1, null
   %4 = select i1 %3, i1 true, i1 %2
@@ -19,7 +19,7 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = icmp eq ptr %1, null
   %4 = select i1 %3, i1 true, i1 %2

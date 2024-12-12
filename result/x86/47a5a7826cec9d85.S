@@ -25,13 +25,3 @@ func000000000000000e:                   # @func000000000000000e
 	leaq	(%rax,%rax,2), %rax
 	shrq	$2, %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
-	movabsq	$2082041510483722240, %rax      # imm = 0x1CE4E5B900000000
-	imulq	%rdi, %rax
-	shrq	$31, %rax
-	retq
-func0000000000000001:                   # @func0000000000000001
-	movabsq	$2082041510483722240, %rax      # imm = 0x1CE4E5B900000000
-	imulq	%rdi, %rax
-	shrq	$31, %rax
-	retq

@@ -43,10 +43,3 @@ func0000000000000022:                   # @func0000000000000022
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func0000000000000182:                   # @func0000000000000182
-	sext.w	a2, a2
-	snez	a2, a2
-	addw	a1, a1, a2
-	slli	a1, a1, 4
-	add	a0, a0, a1
-	ret

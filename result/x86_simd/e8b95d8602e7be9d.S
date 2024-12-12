@@ -47,9 +47,9 @@ func000000000000001c:                   # @func000000000000001c
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI7_0:
-	.long	4294967292                      # 0xfffffffc
+	.long	4294967232                      # 0xffffffc0
 func000000000000001b:                   # @func000000000000001b
-	vpslld	$2, %xmm0, %xmm0
+	vpslld	$3, %xmm0, %xmm0
 	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
@@ -133,5 +133,12 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000009:                   # @func0000000000000009
 	vpslld	$3, %xmm0, %xmm0
 	vpaddd	.LCPI19_0(%rip){1to4}, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+.LCPI20_0:
+	.long	2                               # 0x2
+func0000000000000017:                   # @func0000000000000017
+	vpaddd	%xmm0, %xmm0, %xmm0
+	vpaddd	.LCPI20_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq

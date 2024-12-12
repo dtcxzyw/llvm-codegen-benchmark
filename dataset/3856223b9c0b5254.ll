@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/CNullDriver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
@@ -12,12 +12,11 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; glslang/optimized/hlslParseHelper.cpp.ll
-; linux/optimized/input-mt.ll
 ; opencv/optimized/denoising.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000261(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
@@ -30,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/twixtboard.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
@@ -57,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000241(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
@@ -70,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ustream.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 1
   %4 = trunc i64 %3 to i32
@@ -83,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/arithm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000161(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32

@@ -6,7 +6,7 @@
 ; openjdk/optimized/reg_split.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000042(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 1
@@ -22,7 +22,7 @@ entry:
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000302(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 1
@@ -36,7 +36,7 @@ entry:
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/ModuleBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000102(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ult ptr %1, inttoptr (i64 8 to ptr)
   %3 = icmp ult i32 %0, -5
@@ -48,7 +48,7 @@ entry:
 ; gromacs/optimized/pme_grid.cpp.ll
 ; z3/optimized/nlsat_explain.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000058(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 15
@@ -63,7 +63,7 @@ entry:
 ; linux/optimized/rmap.ll
 ; linux/optimized/usercopy_64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000318(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 3
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/pwdbased.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000118(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 7
@@ -89,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/utrie2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000310(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 3
@@ -102,7 +102,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucptrie.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000308(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 3

@@ -6,15 +6,15 @@ func000000000000001c:                   # @func000000000000001c
 	andl	$127, %esi
 	shlxl	%edi, %esi, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	andl	$127, %esi
-	shlxl	%edi, %esi, %eax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	andl	$127, %esi
 	shlxl	%edi, %esi, %eax
 	retq
 func0000000000000016:                   # @func0000000000000016
+	andl	$1, %esi
+	shlxl	%edi, %esi, %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
 	andl	$1, %esi
 	shlxl	%edi, %esi, %eax
 	retq

@@ -13,7 +13,7 @@ entry:
   ret i64 %4
 }
 
-; 61 occurrences:
+; 60 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; git/optimized/shallow.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
@@ -35,7 +35,6 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
@@ -132,6 +131,18 @@ entry:
   %1 = trunc nsw i64 %0 to i32
   %2 = add i32 %1, 1
   %3 = lshr i32 %2, 6
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/SourceManager.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000035(i64 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i64 %0 to i32
+  %2 = add nsw i32 %1, -7
+  %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

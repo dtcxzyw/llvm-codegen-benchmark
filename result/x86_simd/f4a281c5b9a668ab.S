@@ -4,5 +4,5 @@ func0000000000000001:                   # @func0000000000000001
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm2
 	vpsllvd	%xmm2, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq

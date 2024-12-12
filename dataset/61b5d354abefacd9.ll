@@ -1,40 +1,48 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; git/optimized/packfile.ll
-; git/optimized/patch-delta.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; git/optimized/cbtree.ll
 ; linux/optimized/filemap.ll
+; linux/optimized/intel_sseu.ll
+; tinyrenderer/optimized/tgaimage.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = icmp samesign ult i64 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; libquic/optimized/asn1_lib.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i1 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i64
+  %4 = icmp samesign ugt i64 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
-; tinyrenderer/optimized/tgaimage.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = icmp ugt i64 %3, %1
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 3 occurrences:
-; arrow/optimized/int_util.cc.ll
-; delta-rs/optimized/47qjbhol909h8zu7.ll
-; libquic/optimized/asn1_lib.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i8 %2) #0 {
-entry:
-  %3 = zext nneg i8 %2 to i64
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -45,7 +53,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -57,7 +65,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -70,7 +78,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -78,10 +86,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/nl80211.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp samesign ugt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -89,10 +97,22 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/mlme.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000015(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp samesign ule i64 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 2 occurrences:
+; arrow/optimized/int_util.cc.ll
+; delta-rs/optimized/47qjbhol909h8zu7.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i64
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

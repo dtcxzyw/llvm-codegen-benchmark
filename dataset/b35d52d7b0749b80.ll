@@ -42,7 +42,7 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; cmake/optimized/ia64.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_invert.c.ll
@@ -62,22 +62,20 @@ entry:
 ; qemu/optimized/hw_display_ati.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; spike/optimized/disasm.ll
-; wireshark/optimized/packet-etag.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1023
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; cpython/optimized/longobject.ll
 ; linux/optimized/bugs.ll
 ; linux/optimized/gen6_ppgtt.ll
-; linux/optimized/intel_epb.ll
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/maple_tree.ll
@@ -94,12 +92,12 @@ entry:
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; hermes/optimized/GlobalObject.cpp.ll
 ; linux/optimized/p4.ll
@@ -114,11 +112,12 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; redis/optimized/geohash.ll
 ; spike/optimized/disasm.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 126976
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
@@ -130,7 +129,7 @@ entry:
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294965248
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
@@ -144,7 +143,7 @@ entry:
 define i32 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 16128
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }

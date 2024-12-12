@@ -11,21 +11,16 @@
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 
-; 9 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; linux/optimized/ibs.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/hw_display_ati.c.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
-; spike/optimized/f32_to_f16.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -65,7 +60,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 40
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
@@ -77,7 +72,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 12
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }

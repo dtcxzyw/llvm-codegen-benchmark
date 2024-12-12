@@ -1,25 +1,14 @@
 
-; 188 occurrences:
-; gromacs/optimized/msd.cpp.ll
-; hermes/optimized/DateUtil.cpp.ll
+; 165 occurrences:
 ; hermes/optimized/Exceptions.cpp.ll
 ; hermes/optimized/ISel.cpp.ll
-; hermes/optimized/Inlining.cpp.ll
 ; hermes/optimized/Mem2Reg.cpp.ll
 ; hermes/optimized/RegAlloc.cpp.ll
 ; hermes/optimized/SimpleCallGraphProvider.cpp.ll
 ; hermes/optimized/StackPromotion.cpp.ll
-; hermes/optimized/TDZDedup.cpp.ll
 ; hermes/optimized/Utils.cpp.ll
-; hermes/optimized/escape.cpp.ll
-; icu/optimized/rbutil.ll
-; icu/optimized/uloc_tag.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
-; llvm/optimized/AArch64AsmParser.cpp.ll
-; llvm/optimized/AArch64AsmPrinter.cpp.ll
-; llvm/optimized/AArch64MCInstLower.cpp.ll
 ; llvm/optimized/ADCE.cpp.ll
-; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/AddDiscriminators.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/AnnotationRemarks.cpp.ll
@@ -48,7 +37,6 @@
 ; llvm/optimized/CloneModule.cpp.ll
 ; llvm/optimized/CodeExtractor.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
-; llvm/optimized/ControlHeightReduction.cpp.ll
 ; llvm/optimized/ConvergenceVerifier.cpp.ll
 ; llvm/optimized/CoroEarly.cpp.ll
 ; llvm/optimized/CoroElide.cpp.ll
@@ -132,8 +120,6 @@
 ; llvm/optimized/PoisonChecking.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
-; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; llvm/optimized/ReplaceWithVeclib.cpp.ll
@@ -142,7 +128,6 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SSAContext.cpp.ll
 ; llvm/optimized/SSAUpdater.cpp.ll
-; llvm/optimized/SafeStack.cpp.ll
 ; llvm/optimized/SafepointIRVerifier.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll
@@ -155,14 +140,10 @@
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
-; llvm/optimized/SemaHLSL.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/SplitModule.cpp.ll
-; llvm/optimized/StackLifetime.cpp.ll
 ; llvm/optimized/StackProtector.cpp.ll
-; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; llvm/optimized/StandardInstrumentations.cpp.ll
 ; llvm/optimized/State.cpp.ll
 ; llvm/optimized/StripGCRelocates.cpp.ll
@@ -170,12 +151,9 @@
 ; llvm/optimized/SwiftErrorValueTracking.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; llvm/optimized/ThreadSanitizer.cpp.ll
-; llvm/optimized/TruncInstCombine.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
 ; llvm/optimized/VPlanAnalysis.cpp.ll
 ; llvm/optimized/VPlanHCFGBuilder.cpp.ll
-; llvm/optimized/VPlanSLP.cpp.ll
-; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/VPlanVerifier.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
@@ -187,7 +165,6 @@
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; node/optimized/libnode.node_file.ll
-; sentencepiece/optimized/repeated_field.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, ptr %1) #0 {
 entry:
@@ -197,14 +174,34 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 23 occurrences:
+; gromacs/optimized/msd.cpp.ll
+; hermes/optimized/DateUtil.cpp.ll
+; hermes/optimized/Inlining.cpp.ll
+; hermes/optimized/RegAlloc.cpp.ll
+; hermes/optimized/TDZDedup.cpp.ll
+; hermes/optimized/escape.cpp.ll
+; icu/optimized/rbutil.ll
+; icu/optimized/uloc_tag.ll
+; llvm/optimized/AArch64AsmParser.cpp.ll
+; llvm/optimized/AArch64AsmPrinter.cpp.ll
+; llvm/optimized/AArch64MCInstLower.cpp.ll
+; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/Float2Int.cpp.ll
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; llvm/optimized/RISCVAsmPrinter.cpp.ll
+; llvm/optimized/SemaHLSL.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/VPlanSLP.cpp.ll
+; llvm/optimized/VPlanTransforms.cpp.ll
+; sentencepiece/optimized/repeated_field.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 32
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 16
   %3 = ptrtoint ptr %2 to i64
   %4 = select i1 %0, i64 0, i64 %3
   ret i64 %4

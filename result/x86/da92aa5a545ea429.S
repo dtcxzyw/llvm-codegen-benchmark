@@ -16,6 +16,12 @@ func0000000000000175:                   # @func0000000000000175
 	leal	(%rax,%rax,4), %eax
 	leal	-48(%rdi,%rax,2), %eax
 	retq
+func0000000000000177:                   # @func0000000000000177
+	movzbl	%dl, %eax
+	addl	%esi, %eax
+	leal	(%rax,%rax,4), %eax
+	leal	-48(%rdi,%rax,2), %eax
+	retq
 func00000000000001f7:                   # @func00000000000001f7
 	movzbl	%dl, %eax
 	addl	%esi, %eax

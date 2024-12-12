@@ -4,13 +4,13 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	addb	$-12, %sil
 	shrxq	%rsi, %rdi, %rax
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	incb	%sil
 	shrxq	%rsi, %rdi, %rax
 	testq	%rax, %rax

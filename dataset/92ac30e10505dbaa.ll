@@ -12,13 +12,14 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/graphml.ll
 ; clamav/optimized/pdfng.c.ll
 ; curl/optimized/libcurl_la-imap.ll
 ; git/optimized/line-log.ll
 ; php/optimized/php_cli_server.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000084(i64 %0, ptr %1, i8 %2) #0 {
+define i64 @func0000000000000104(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 47
   %.idx = sext i1 %3 to i64

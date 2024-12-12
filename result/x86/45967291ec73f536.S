@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	cmpl	$27, %edi
 	sete	%cl
 	orb	%sil, %cl
@@ -6,12 +6,12 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	testl	%edi, %edi
 	setle	%al
 	orb	%sil, %al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func0000000000000094:                   # @func0000000000000094
 	testl	%edi, %edi
 	sete	%cl
 	orb	%sil, %cl
@@ -19,15 +19,15 @@ func0000000000000054:                   # @func0000000000000054
 	setge	%al
 	orb	%cl, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
-	cmpl	$17, %edi
+func0000000000000202:                   # @func0000000000000202
+	cmpl	$12, %edi
 	setb	%cl
 	orb	%sil, %cl
-	cmpl	$193, %edi
+	cmpl	$75, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000050:                   # @func0000000000000050
+func0000000000000090:                   # @func0000000000000090
 	cmpl	$127, %edi
 	sete	%cl
 	orb	%sil, %cl
@@ -35,15 +35,7 @@ func0000000000000050:                   # @func0000000000000050
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
-	cmpl	$6, %esi
-	sete	%cl
-	orb	%dil, %cl
-	cmpl	$10, %esi
-	sete	%al
-	orb	%cl, %al
-	retq
-func0000000000000184:                   # @func0000000000000184
+func0000000000000304:                   # @func0000000000000304
 	cmpl	$11, %esi
 	setl	%cl
 	orb	%dil, %cl
@@ -51,7 +43,15 @@ func0000000000000184:                   # @func0000000000000184
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func0000000000000084:                   # @func0000000000000084
+	cmpl	$4, %esi
+	sete	%cl
+	orb	%dil, %cl
+	cmpl	$11, %esi
+	sete	%al
+	orb	%cl, %al
+	retq
+func000000000000008c:                   # @func000000000000008c
 	testl	%edi, %edi
 	sete	%cl
 	orb	%sil, %cl

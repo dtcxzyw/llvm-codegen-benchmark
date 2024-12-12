@@ -15,9 +15,9 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/pathfinder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or i32 %1, %0
+  %2 = or i32 %0, %1
   %3 = icmp sgt i32 %2, -1
   ret i1 %3
 }
@@ -28,7 +28,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or i32 %1, %0
+  %2 = or i32 %0, %1
   %3 = icmp sgt i32 %2, -1
   ret i1 %3
 }
@@ -36,10 +36,10 @@ entry:
 ; 1 occurrences:
 ; yalantinglibs/optimized/binary_json_conformance_suite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }

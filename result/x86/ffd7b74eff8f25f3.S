@@ -5,13 +5,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$10, %edi
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$511, %esi                      # imm = 0x1FF
 	leal	-2147483648(%rsi), %eax
 	cmpl	$16384, %edi                    # imm = 0x4000
 	cmovnel	%esi, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	andl	$3, %esi
 	leal	4(%rsi), %eax
 	cmpl	$5, %edi

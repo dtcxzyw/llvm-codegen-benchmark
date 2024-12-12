@@ -67,7 +67,7 @@ entry:
   ret i32 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; arrow/optimized/UriRecompose.c.ll
 ; folly/optimized/AsyncSocket.cpp.ll
@@ -87,7 +87,6 @@ entry:
 ; openusd/optimized/mvref_common.c.ll
 ; php/optimized/zend_inference.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
-; qemu/optimized/tcg-op-ldst.c.ll
 ; ruby/optimized/date_strftime.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; yyjson/optimized/yyjson.c.ll
@@ -101,31 +100,30 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; llvm/optimized/AArch64MCTargetDesc.cpp.ll
-; llvm/optimized/AArch64Subtarget.cpp.ll
-; opencv/optimized/norm.cpp.ll
-; qemu/optimized/tcg-op-ldst.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 7
-  %3 = icmp ult i32 %2, 3
-  %4 = and i1 %3, %0
-  %5 = select i1 %4, i32 -25, i32 -17
-  ret i32 %5
-}
-
 ; 2 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; wireshark/optimized/packet-acdr.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2130706432
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = select i1 %4, i32 3, i32 2
+  ret i32 %5
+}
+
+; 3 occurrences:
+; llvm/optimized/AArch64MCTargetDesc.cpp.ll
+; llvm/optimized/AArch64Subtarget.cpp.ll
+; opencv/optimized/norm.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i1 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 63
+  %3 = icmp samesign ult i32 %2, 5
+  %4 = and i1 %0, %3
+  %5 = select i1 %4, i32 1648, i32 1649
   ret i32 %5
 }
 

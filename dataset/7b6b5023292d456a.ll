@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 65 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cpython/optimized/longobject.ll
@@ -23,7 +23,6 @@
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -74,13 +73,16 @@ entry:
   ret i1 %3
 }
 
-; 177 occurrences:
+; 179 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/dauDsd.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/dictionary.cc.ll
 ; assimp/optimized/ArmaturePopulate.cpp.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cmake/optimized/json_writer.cpp.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; cpython/optimized/exceptions.ll
@@ -158,7 +160,6 @@ entry:
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_layer.cpp.ll
@@ -182,7 +183,6 @@ entry:
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshlab/optimized/io_txt.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/mesh_graph.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -250,6 +250,7 @@ entry:
 ; z3/optimized/q_mam.cpp.ll
 ; z3/optimized/spacer_proof_utils.cpp.ll
 ; z3/optimized/theory_dense_diff_logic.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zfp/optimized/zfp.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
@@ -260,8 +261,12 @@ entry:
   ret i1 %3
 }
 
-; 143 occurrences:
+; 146 occurrences:
 ; assimp/optimized/OgreStructs.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; crow/optimized/example.cpp.ll
 ; cvc5/optimized/symmetry_breaker.cpp.ll
 ; draco/optimized/mesh_edgebreaker_encoder.cc.ll
@@ -338,7 +343,6 @@ entry:
 ; luau/optimized/TypeFamily.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
 ; mold/optimized/icf.cc.ARM64.cc.ll

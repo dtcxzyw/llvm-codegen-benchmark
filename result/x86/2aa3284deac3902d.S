@@ -13,9 +13,9 @@ func0000000000000007:                   # @func0000000000000007
 	orq	%rdx, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	testb	$1, %sil
-	movl	$1, %eax
-	cmoveq	%rdx, %rax
-	shlq	$32, %rdi
-	orq	%rdi, %rax
+	shlq	$32, %rdx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
+	orq	%rdx, %rax
 	retq

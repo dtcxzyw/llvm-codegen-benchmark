@@ -13,7 +13,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = lshr i32 %1, 11
   %5 = mul i32 %4, %3
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = lshr i32 %1, 11
   %5 = mul i32 %4, %3
-  %6 = icmp ule i32 %5, %0
+  %6 = icmp uge i32 %0, %5
   ret i1 %6
 }
 

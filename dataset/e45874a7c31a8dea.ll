@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 55 occurrences:
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; mitsuba3/optimized/medium.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -54,7 +54,6 @@
 ; pybind11/optimized/test_unnamed_namespace_b.cpp.ll
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
-; qemu/optimized/tcg.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i64 %2) #0 {
@@ -77,7 +76,7 @@ entry:
   %3 = and i64 %2, 511
   %4 = icmp eq i64 %3, 511
   %5 = select i1 %1, i1 %4, i1 false
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

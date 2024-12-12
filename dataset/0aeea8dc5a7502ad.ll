@@ -17,18 +17,18 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
 ; 11 occurrences:
 ; abc/optimized/acecPolyn.c.ll
+; arrow/optimized/light_array.cc.ll
 ; libwebp/optimized/alpha_enc.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
+; lvgl/optimized/lv_draw_sw.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; nuttx/optimized/lib_calendar2utc.c.ll
-; opencv/optimized/morph.dispatch.cpp.ll
 ; openjdk/optimized/instanceStackChunkKlass.ll
 ; openusd/optimized/warped_motion.c.ll
 ; protobuf/optimized/time_util.cc.ll
@@ -38,7 +38,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 3
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -52,7 +52,7 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -63,7 +63,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

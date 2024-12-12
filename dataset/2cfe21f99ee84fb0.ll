@@ -1,18 +1,13 @@
 
-; 8 occurrences:
+; 3 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; ncnn/optimized/roialign.cpp.ll
-; ncnn/optimized/roialign_x86.cpp.ll
-; ncnn/optimized/roialign_x86_avx.cpp.ll
-; ncnn/optimized/roialign_x86_avx512.cpp.ll
-; ncnn/optimized/roialign_x86_fma.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(float %0) #0 {
 entry:
   %1 = fcmp ole float %0, 0.000000e+00
-  %2 = select i1 %1, float 0.000000e+00, float %0
+  %2 = select i1 %1, float 1.200000e+01, float %0
   %3 = fptosi float %2 to i32
   ret i32 %3
 }

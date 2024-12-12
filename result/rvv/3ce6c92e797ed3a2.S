@@ -29,7 +29,7 @@ func0000000000000013:                   # @func0000000000000013
 	vmul.vv	v10, v10, v12
 	li	a0, 32
 	vsrl.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000001b:                   # @func000000000000001b
 	li	a0, -1
@@ -41,7 +41,7 @@ func000000000000001b:                   # @func000000000000001b
 	vand.vx	v10, v10, a0
 	vmul.vv	v10, v10, v12
 	vsrl.vi	v10, v10, 15
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000010:                   # @func0000000000000010
 	li	a0, -4
@@ -54,5 +54,5 @@ func0000000000000010:                   # @func0000000000000010
 	vmul.vv	v10, v10, v12
 	li	a0, 32
 	vsrl.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

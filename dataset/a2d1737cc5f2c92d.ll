@@ -28,12 +28,12 @@
 define i64 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = select i1 %3, i64 20, i64 0
   ret i64 %4
 }
 
-; 35 occurrences:
+; 32 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -65,9 +65,6 @@ entry:
 ; ruby/optimized/rjit_c.ll
 ; ruby/optimized/thread.ll
 ; ruby/optimized/vm.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1) #0 {
@@ -87,18 +84,17 @@ entry:
 define i64 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = select i1 %3, i64 8192, i64 0
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; luajit/optimized/lj_meta.ll
 ; luajit/optimized/lj_meta_dyn.ll
-; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:

@@ -22,7 +22,7 @@ func0000000000000006:                   # @func0000000000000006
 	shrq	$35, %rax
 	andl	$1, %eax
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	cmpl	%esi, %edi
 	sete	%al
 	retq
@@ -33,7 +33,7 @@ func0000000000000008:                   # @func0000000000000008
 	testl	%edi, %edi
 	sete	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	movq	%rdi, %rax
 	subl	%esi, %eax
 	shrl	$31, %eax

@@ -12,7 +12,7 @@
 ; mold/optimized/input-sections.cc.SH4.cc.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = icmp eq i32 %0, 0
@@ -54,10 +54,10 @@ entry:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000054(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
-  %3 = icmp ult i32 %0, 50
+  %3 = icmp samesign ult i32 %0, 50
   %4 = select i1 %3, i8 1, i8 %2
   ret i8 %4
 }
@@ -71,7 +71,7 @@ entry:
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = icmp slt i32 %0, 0
@@ -83,7 +83,7 @@ entry:
 ; openusd/optimized/av1_loopfilter.c.ll
 ; openusd/optimized/reconinter.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = icmp slt i32 %0, -623
@@ -91,8 +91,7 @@ entry:
   ret i8 %4
 }
 
-; 5 occurrences:
-; opencv/optimized/cap_v4l.cpp.ll
+; 4 occurrences:
 ; openusd/optimized/alpha.c.ll
 ; openusd/optimized/reformat.c.ll
 ; openusd/optimized/restoration.c.ll
@@ -109,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/dark_chess.cc.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i8 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i8
   %3 = icmp sgt i32 %0, 0
@@ -120,7 +119,7 @@ entry:
 ; 3 occurrences:
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/tcp_output.ll
-; postgres/optimized/network.ll
+; opencv/optimized/cap_v4l.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
@@ -133,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hid-lg-g15.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = icmp eq i32 %0, 0
@@ -144,7 +143,18 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/network.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = trunc i32 %1 to i8
+  %3 = icmp ugt i32 %0, 7
+  %4 = select i1 %3, i8 -1, i8 %2
+  ret i8 %4
+}
+
+; 1 occurrences:
+; postgres/optimized/network.ll
+; Function Attrs: nounwind
+define i8 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = icmp sgt i32 %0, 7
@@ -156,10 +166,10 @@ entry:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp ugt i32 %0, 4194431
+  %3 = icmp samesign ugt i32 %0, 4194431
   %4 = select i1 %3, i8 127, i8 %2
   ret i8 %4
 }

@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	1024                            # 0x400
+	.long	4294705152                      # 0xfffc0000
 func0000000000000001:                   # @func0000000000000001
-	vpslld	$24, %ymm0, %ymm0
-	vpsrad	$24, %ymm0, %ymm0
+	vpslld	$16, %ymm0, %ymm0
+	vpsrad	$13, %ymm0, %ymm0
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI1_0:

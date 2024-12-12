@@ -1,7 +1,8 @@
 
-; 10 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/alloc_lib.ll
 ; clamav/optimized/mbr.c.ll
 ; darktable/optimized/export.c.ll
 ; lief/optimized/ssl_msg.c.ll
@@ -10,6 +11,8 @@
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; openmpi/optimized/mpl_trmem.ll
 ; rocksdb/optimized/file_util.cc.ll
+; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -69,7 +72,7 @@ define i64 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -529
   %4 = select i1 %1, i64 -511, i64 %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

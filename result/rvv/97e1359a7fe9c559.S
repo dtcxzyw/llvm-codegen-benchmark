@@ -28,13 +28,3 @@ func000000000000001d:                   # @func000000000000001d
 	vor.vv	v8, v8, v10
 	vor.vv	v8, v8, v14
 	ret
-func000000000000001c:                   # @func000000000000001c
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vsrl.vi	v12, v12, 6
-	vsetvli	zero, zero, e16, m1, ta, ma
-	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 11
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v8, v8, v10
-	vor.vv	v8, v8, v14
-	ret

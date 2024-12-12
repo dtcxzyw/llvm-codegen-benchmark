@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; c3c/optimized/target.c.ll
 ; cvc5/optimized/cegis_core_connective.cpp.ll
 ; cvc5/optimized/quant_elim_solver.cpp.ll
@@ -28,6 +28,7 @@
 ; llvm/optimized/StackProtector.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; postgres/optimized/amutils.ll
+; postgres/optimized/trigger.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; ruby/optimized/gc.ll
 ; verilator/optimized/V3PreProc.cpp.ll
@@ -41,7 +42,7 @@ entry:
   ret i8 %3
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; crow/optimized/example_ws.cpp.ll
 ; cvc5/optimized/cegis.cpp.ll
 ; cvc5/optimized/extended_rewrite.cpp.ll
@@ -67,23 +68,13 @@ entry:
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; openjdk/optimized/chaitin.ll
 ; qemu/optimized/net_eth.c.ll
+; slurm/optimized/conmgr.ll
 ; slurm/optimized/job_mgr.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 128
-  %2 = icmp ne i16 %1, 0
-  %3 = zext i1 %2 to i8
-  ret i8 %3
-}
-
-; 1 occurrences:
-; linux/optimized/rc80211_minstrel_ht.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000010(i16 %0) #0 {
-entry:
-  %1 = and i16 %0, 12
   %2 = icmp ne i16 %1, 0
   %3 = zext i1 %2 to i8
   ret i8 %3

@@ -5,7 +5,7 @@ func00000000000000c0:                   # @func00000000000000c0
 	vpsrld	$6, %ymm2, %ymm2
 	vpsrld	$6, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	2                               # 0x2

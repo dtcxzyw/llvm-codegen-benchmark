@@ -1,5 +1,6 @@
 
-; 96 occurrences:
+; 95 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -67,7 +68,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -94,7 +94,6 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, ptr %1) #0 {
@@ -106,7 +105,7 @@ entry:
   ret i64 %5
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; abseil-cpp/optimized/log_severity_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
@@ -126,7 +125,6 @@ entry:
 ; gromacs/optimized/tpr.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll
 ; llvm/optimized/LowerSwitch.cpp.ll
-; nix/optimized/why-depends.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
 ; openexr/optimized/ImfOutputFile.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll

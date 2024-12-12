@@ -1,4 +1,4 @@
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	sext.w	a0, a0
 	sh1add	a2, a2, a2
 	subw	a1, a1, a2
@@ -13,7 +13,7 @@ func0000000000000006:                   # @func0000000000000006
 	addiw	a1, a1, -8
 	slt	a0, a0, a1
 	ret
-func0000000000000141:                   # @func0000000000000141
+func0000000000000281:                   # @func0000000000000281
 	sext.w	a0, a0
 	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
@@ -21,7 +21,7 @@ func0000000000000141:                   # @func0000000000000141
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	sext.w	a0, a0
 	sh2add	a2, a2, a2
 	add	a1, a1, a2
@@ -37,14 +37,14 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	sext.w	a0, a0
 	sh1add	a2, a2, a2
 	sh1add	a1, a2, a1
 	addiw	a1, a1, -1
 	slt	a0, a0, a1
 	ret
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	sext.w	a0, a0
 	sh1add	a2, a2, a2
 	sh1add	a1, a2, a1
@@ -52,21 +52,21 @@ func0000000000000151:                   # @func0000000000000151
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	sext.w	a0, a0
 	sh1add	a2, a2, a2
 	sh1add	a1, a2, a1
 	addiw	a1, a1, -1
 	slt	a0, a0, a1
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	sext.w	a0, a0
 	sh1add	a2, a2, a2
 	add	a1, a1, a2
 	addiw	a1, a1, -30
 	slt	a0, a1, a0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	sext.w	a0, a0
 	lui	a3, 182567
 	addi	a3, a3, 1973

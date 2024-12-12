@@ -8,9 +8,9 @@
 ; openjdk/optimized/interpreter.ll
 ; openmpi/optimized/opal_free_list.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, i64 %1, ptr %2) #0 {
+define i64 @func0000000000000030(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
   %4 = ptrtoint ptr %3 to i64
   %5 = add i64 %4, -1
   %6 = add i64 %5, %1

@@ -1,15 +1,14 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; linux/optimized/kstrtox.ll
 ; luau/optimized/Lexer.cpp.ll
-; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i8 %0) #0 {
 entry:
   %1 = or i8 %0, 32
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, -97
+  %3 = add nsw i32 %2, -87
   ret i32 %3
 }
 

@@ -15,12 +15,12 @@ entry:
   %3 = and i32 %2, 64
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 9, i32 64
-  %6 = or i32 %5, %1
+  %6 = or i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; abc/optimized/resSim.c.ll
 ; darktable/optimized/filtering.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -36,6 +36,7 @@ entry:
 ; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
@@ -57,7 +58,7 @@ entry:
   %3 = and i32 %2, 14680064
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 0, i32 1048576
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -76,7 +77,7 @@ entry:
   %3 = and i32 %2, -16
   %4 = icmp eq i32 %3, 16
   %5 = select i1 %4, i32 8, i32 0
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -99,10 +100,10 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000062(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 240
-  %4 = icmp ugt i32 %3, 143
+  %4 = icmp samesign ugt i32 %3, 143
   %5 = select i1 %4, i32 32767, i32 0
   %6 = or disjoint i32 %5, %1
   %7 = or i32 %6, %0

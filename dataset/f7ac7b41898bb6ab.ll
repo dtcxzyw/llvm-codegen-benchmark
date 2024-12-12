@@ -1,9 +1,8 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; gromacs/optimized/dens_filter.cpp.ll
 ; gromacs/optimized/gen_vsite.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

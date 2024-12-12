@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 35 occurrences:
 ; actix-rs/optimized/52qe9gl98lnufrop.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
@@ -8,6 +8,7 @@
 ; linux/optimized/tcp_offload.ll
 ; linux/optimized/tcpv6_offload.ll
 ; linux/optimized/udp_offload.ll
+; opencv/optimized/contours_new.cpp.ll
 ; ruby/optimized/vm.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; smol-rs/optimized/q1d2xhr1mnh88ol.ll
@@ -31,6 +32,9 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/packet-rtmpt.c.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0) #0 {
 entry:
@@ -39,7 +43,7 @@ entry:
   ret i8 %2
 }
 
-; 386 occurrences:
+; 383 occurrences:
 ; abc/optimized/ioReadBlifAig.c.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
@@ -53,10 +57,8 @@ entry:
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; folly/optimized/String.cpp.ll
-; gromacs/optimized/dlarfb.cpp.ll
 ; gromacs/optimized/dormbr.cpp.ll
 ; gromacs/optimized/dormlq.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; gromacs/optimized/sormbr.cpp.ll
 ; gromacs/optimized/sormlq.cpp.ll
 ; grpc/optimized/promise_based_filter.cc.ll
@@ -82,11 +84,9 @@ entry:
 ; linux/optimized/igmp.ll
 ; linux/optimized/intel-nhlt.ll
 ; linux/optimized/intel_bios.ll
-; linux/optimized/ip6_checksum.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip_options.ll
 ; linux/optimized/ip_tunnel.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/sched.ll
 ; linux/optimized/sit.ll
 ; linux/optimized/tcp_input.ll
@@ -284,7 +284,6 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/targaoutput.cpp.ll
 ; oiio/optimized/thread.cpp.ll
-; opencv/optimized/contours_new.cpp.ll
 ; openexr/optimized/context.c.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/arguments.ll
@@ -425,6 +424,8 @@ entry:
 ; wireshark/optimized/packet-lorawan.c.ll
 ; wireshark/optimized/packet-mtp2.c.ll
 ; wireshark/optimized/packet-thread.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {
@@ -434,7 +435,7 @@ entry:
   ret i8 %2
 }
 
-; 79 occurrences:
+; 81 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -448,6 +449,7 @@ entry:
 ; linux/optimized/libata-core.ll
 ; llvm/optimized/IRSimilarityIdentifier.cpp.ll
 ; llvm/optimized/RustDemangle.cpp.ll
+; llvm/optimized/SeparateConstOffsetFromGEP.cpp.ll
 ; mimalloc/optimized/page.c.ll
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
@@ -514,6 +516,7 @@ entry:
 ; stb/optimized/stb_voxel_render.c.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wireshark/optimized/scanner.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0) #0 {
 entry:

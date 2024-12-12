@@ -6,7 +6,7 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rax, %rax
 	setg	%al
 	retq
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	subq	%rdi, %rax

@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 94 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
@@ -30,8 +30,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -93,6 +91,9 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000006(i32 %0) #0 {
 entry:

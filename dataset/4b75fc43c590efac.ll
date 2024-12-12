@@ -1,6 +1,7 @@
 
-; 109 occurrences:
+; 110 occurrences:
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll

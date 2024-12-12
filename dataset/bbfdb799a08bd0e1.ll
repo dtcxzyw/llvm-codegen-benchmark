@@ -1,5 +1,5 @@
 
-%struct.Vec_Int_t_.2763737 = type { i32, i32, ptr }
+%struct.Vec_Int_t_.2876009 = type { i32, i32, ptr }
 
 ; 5 occurrences:
 ; gromacs/optimized/colvargrid.cpp.ll
@@ -33,7 +33,7 @@ entry:
   %3 = add nsw i32 %2, 2
   %4 = sext i32 %3 to i64
   %5 = sub nsw i64 %1, %4
-  %6 = getelementptr nusw %struct.Vec_Int_t_.2763737, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.Vec_Int_t_.2876009, ptr %0, i64 %5
   ret ptr %6
 }
 

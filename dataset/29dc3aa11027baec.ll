@@ -1,5 +1,5 @@
 
-; 189 occurrences:
+; 186 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -36,15 +36,12 @@
 ; lief/optimized/TLS.cpp.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/auth_gss.ll
-; linux/optimized/bsg.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/dev.ll
 ; linux/optimized/direct-io.ll
 ; linux/optimized/dma-buf.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/drm_atomic_helper.ll
 ; linux/optimized/drm_gem_shmem_helper.ll
-; linux/optimized/drm_prime.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/fib_semantics.ll
@@ -60,13 +57,10 @@
 ; linux/optimized/namei.ll
 ; linux/optimized/nf_log.ll
 ; linux/optimized/nsfs.ll
-; linux/optimized/nsproxy.ll
 ; linux/optimized/pci-sysfs.ll
 ; linux/optimized/pipe.ll
-; linux/optimized/process_keys.ll
 ; linux/optimized/route.ll
 ; linux/optimized/rpc_pipe.ll
-; linux/optimized/secretmem.ll
 ; linux/optimized/sg.ll
 ; linux/optimized/socket.ll
 ; linux/optimized/sys.ll
@@ -85,6 +79,7 @@
 ; luajit/optimized/lib_table.ll
 ; luajit/optimized/lib_table_dyn.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_grid.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/environment.cpp.ll
@@ -189,6 +184,8 @@
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/packet.c.ll
 ; wireshark/optimized/sharkd_session.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(ptr %0) #0 {
 entry:

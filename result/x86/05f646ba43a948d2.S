@@ -18,7 +18,7 @@ func0000000000000010:                   # @func0000000000000010
 	setne	%cl
 	leaq	4(%rdi,%rcx,4), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000052:                   # @func0000000000000052
 	incq	%rsi
 	xorl	%eax, %eax
 	cmpq	$9, %rsi

@@ -84,7 +84,7 @@ entry:
   %2 = add nuw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = add nsw i64 %3, -1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -129,7 +129,7 @@ entry:
   ret i64 %5
 }
 
-; 113 occurrences:
+; 112 occurrences:
 ; linux/optimized/blk-iocost.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64GlobalsTagging.cpp.ll
@@ -211,7 +211,6 @@ entry:
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -253,7 +252,7 @@ entry:
   ret i64 %5
 }
 
-; 174 occurrences:
+; 173 occurrences:
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
@@ -385,7 +384,6 @@ entry:
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll

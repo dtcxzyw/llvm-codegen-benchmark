@@ -15,7 +15,7 @@
 define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %0, -1
-  %3 = icmp ult i8 %2, %1
+  %3 = icmp ugt i8 %1, %2
   ret i1 %3
 }
 

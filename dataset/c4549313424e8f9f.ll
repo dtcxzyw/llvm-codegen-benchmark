@@ -4,7 +4,7 @@
 ; wireshark/optimized/packet-asterix.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl i64 %1, 8

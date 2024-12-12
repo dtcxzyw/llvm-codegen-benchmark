@@ -63,3 +63,49 @@ func000000000000000a:                   # @func000000000000000a
 	vmovdqu8	.LCPI2_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq
+.LCPI3_0:
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI3_2:
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI3_1:
+	.long	266667                          # 0x411ab
+.LCPI3_3:
+	.zero	4,1
+func0000000000000018:                   # @func0000000000000018
+	vpmovwb	%xmm1, %xmm1
+	vpandd	.LCPI3_3(%rip){1to4}, %xmm1, %xmm1
+	vpcmpnleud	.LCPI3_1(%rip){1to8}, %ymm0, %k1
+	vmovdqu8	.LCPI3_2(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [2,2,2,2,2,2,2,2,u,u,u,u,u,u,u,u]
+	vmovdqa	%xmm1, %xmm0
+	vzeroupper
+	retq

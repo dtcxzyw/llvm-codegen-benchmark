@@ -16,6 +16,18 @@ func0000000000000004:                   # @func0000000000000004
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 1
+	srliw	a2, a2, 16
+	li	a3, 4
+	czero.eqz	a1, a1, a2
+	czero.nez	a2, a3, a2
+	li	a3, 2
+	or	a1, a1, a2
+	czero.nez	a1, a1, a0
+	czero.eqz	a0, a3, a0
+	or	a0, a0, a1
+	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a0, a0, 1
 	sext.w	a2, a2
@@ -46,6 +58,21 @@ func0000000000000008:                   # @func0000000000000008
 	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	li	a3, 8
+	or	a1, a1, a2
+	czero.nez	a1, a1, a0
+	czero.eqz	a0, a3, a0
+	or	a0, a0, a1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a0, a0, 1
+	srliw	a2, a2, 23
+	li	a3, 31
+	sltiu	a2, a2, 143
+	slli	a3, a3, 10
+	czero.eqz	a1, a1, a2
+	czero.nez	a2, a3, a2
+	lui	a3, 8
+	addiw	a3, a3, -512
 	or	a1, a1, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0

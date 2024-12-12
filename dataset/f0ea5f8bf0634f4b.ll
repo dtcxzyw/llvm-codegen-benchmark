@@ -1,5 +1,5 @@
 
-; 190 occurrences:
+; 191 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -27,7 +27,6 @@
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; jq/optimized/decNumber.ll
-; jq/optimized/unicode_fold1_key.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libwebp/optimized/enc.c.ll
 ; libwebp/optimized/enc_sse2.c.ll
@@ -84,6 +83,8 @@
 ; llvm/optimized/RegUsageInfoCollector.cpp.ll
 ; llvm/optimized/WindowsResource.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -91,7 +92,6 @@
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/maketexture.cpp.ll
-; oniguruma/optimized/unicode_fold1_key.ll
 ; opencv/optimized/arithm.dispatch.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/canny.cpp.ll
@@ -177,11 +177,12 @@
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-smb2.c.ll
-; wireshark/optimized/packet-stcsig.c.ll
 ; wireshark/optimized/packet-synphasor.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; wireshark/optimized/packet-xmcp.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/ODCodabarReader.cpp.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll

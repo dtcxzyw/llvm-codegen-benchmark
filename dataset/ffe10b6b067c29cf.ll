@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 53 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv_test.cc.ll
@@ -39,7 +39,6 @@
 ; meshlab/optimized/filter_layer.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
 ; meshlab/optimized/filter_mutualinfo.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; nori/optimized/screen.cpp.ll
 ; opencv/optimized/brisk.cpp.ll

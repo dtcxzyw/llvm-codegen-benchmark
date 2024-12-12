@@ -1,23 +1,12 @@
 
 ; 1 occurrences:
-; qemu/optimized/hw_usb_desc.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
-entry:
-  %2 = or i8 %1, 1
-  %3 = zext i8 %2 to i32
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; wireshark/optimized/packet-epl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000064(i32 %0, i8 %1) #0 {
 entry:
   %2 = or i8 %1, 8
   %3 = zext i8 %2 to i32
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
@@ -25,7 +14,7 @@ entry:
 ; linux/optimized/consolemap.ll
 ; linux/optimized/hid-pidff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = or disjoint i32 %2, 61440

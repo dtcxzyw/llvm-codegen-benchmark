@@ -6,7 +6,7 @@ func0000000000000000:                   # @func0000000000000000
 	sarq	$38, %rax
 	addl	%ecx, %eax
 	cltq
-	leaq	1(%rax,%rdi), %rax
+	leaq	1(%rdi,%rax), %rax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movslq	%esi, %rax
@@ -16,7 +16,7 @@ func0000000000000005:                   # @func0000000000000005
 	sarq	$38, %rax
 	addl	%ecx, %eax
 	cltq
-	leaq	1000000(%rax,%rdi), %rax
+	leaq	1000000(%rdi,%rax), %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	movl	%esi, %eax
@@ -24,5 +24,5 @@ func0000000000000007:                   # @func0000000000000007
 	addl	%esi, %eax
 	sarl	%eax
 	cltq
-	leaq	3(%rax,%rdi), %rax
+	leaq	3(%rdi,%rax), %rax
 	retq

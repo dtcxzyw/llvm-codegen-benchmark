@@ -14,11 +14,10 @@ entry:
   ret ptr %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; openjdk/optimized/cdsEnumKlass.ll
 ; openjdk/optimized/runTimeClassInfo.ll
 ; postgres/optimized/brin.ll
-; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
 entry:

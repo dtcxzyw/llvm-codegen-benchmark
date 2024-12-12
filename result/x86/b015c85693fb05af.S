@@ -10,5 +10,5 @@ func0000000000000001:                   # @func0000000000000001
 	shlq	$32, %rcx
 	movabsq	$4294967296, %rax               # imm = 0x100000000
 	addq	%rcx, %rax
-	sarq	$32, %rax
+	sarq	$30, %rax
 	retq

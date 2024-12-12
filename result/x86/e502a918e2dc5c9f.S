@@ -14,3 +14,7 @@ func0000000000000010:                   # @func0000000000000010
 	shlxl	%esi, %edx, %eax
 	orl	%edi, %eax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	shlxl	%esi, %edx, %eax
+	orl	%edi, %eax
+	retq

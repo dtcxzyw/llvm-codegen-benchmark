@@ -15,7 +15,7 @@
 ; typst-rs/optimized/3ze8abiqj6g8qouh.ll
 ; typst-rs/optimized/5e0rue5wyvshgkgw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -24,13 +24,12 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; spike/optimized/f128_to_i32.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %1, i1 true, i1 %3

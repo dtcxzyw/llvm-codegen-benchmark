@@ -1,5 +1,6 @@
 
-; 20 occurrences:
+; 21 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll

@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -8,6 +8,7 @@
 ; arrow/optimized/value_parsing.cc.ll
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
+; lvgl/optimized/lv_calendar.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:

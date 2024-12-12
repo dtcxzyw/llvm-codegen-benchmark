@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 24 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -10,6 +10,7 @@
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/ip6_input.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/json.cpp.ll
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/nbtdedup.ll
@@ -21,6 +22,8 @@
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i16 %0) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 54 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBalance.c.ll
@@ -10,6 +10,7 @@
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/hopBalance.c.ll
 ; abc/optimized/ivyBalance.c.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; freetype/optimized/psaux.c.ll
 ; git/optimized/checkout.ll
@@ -32,6 +33,7 @@
 ; oniguruma/optimized/unicode.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openjdk/optimized/pngread.ll
+; openmpi/optimized/coll_ftagree_earlyterminating.ll
 ; openssl/optimized/libcrypto-lib-cmp_msg.ll
 ; openssl/optimized/libcrypto-shlib-cmp_msg.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
@@ -113,11 +115,10 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/sswDyn.c.ll
 ; abc/optimized/sswLcorr.c.ll
 ; libwebp/optimized/frame_enc.c.ll
-; openmpi/optimized/coll_ftagree_earlyterminating.ll
 ; openssl/optimized/asn1_time_test-bin-asn1_time_test.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind

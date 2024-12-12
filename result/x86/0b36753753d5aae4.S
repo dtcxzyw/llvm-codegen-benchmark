@@ -1,7 +1,7 @@
-func0000000000000211:                   # @func0000000000000211
+func0000000000000c21:                   # @func0000000000000c21
 	addq	$8, %rdx
 	xorl	%eax, %eax
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	cmovneq	%rsi, %rax
 	cmpq	%rdi, %rax
 	sete	%al

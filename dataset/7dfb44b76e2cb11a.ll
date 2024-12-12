@@ -24,9 +24,8 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cpython/optimized/unicodedata.ll
-; icu/optimized/gregoimp.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll

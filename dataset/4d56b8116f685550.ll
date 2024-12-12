@@ -1,10 +1,8 @@
 
-; 86 occurrences:
+; 83 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/giaPf.c.ll
-; abc/optimized/ifSeq.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abc/optimized/sclUpsize.c.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; darktable/optimized/NefDecoder.cpp.ll
@@ -42,7 +40,6 @@
 ; gromacs/optimized/gmx_filter.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll

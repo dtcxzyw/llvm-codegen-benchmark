@@ -1,29 +1,9 @@
 
-; 8 occurrences:
-; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
-; ruby/optimized/symbol.ll
-; vcpkg/optimized/commands.install.cpp.ll
-; vcpkg/optimized/export.ifw.cpp.ll
-; vcpkg/optimized/spdx.cpp.ll
-; vcpkg/optimized/versions.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000502(i8 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -65
-  %4 = icmp ult i32 %3, 26
-  %5 = or i1 %4, %1
-  %6 = icmp eq i8 %0, 95
-  %7 = or i1 %6, %5
-  ret i1 %7
-}
-
 ; 2 occurrences:
 ; php/optimized/KeccakSponge.ll
 ; slurm/optimized/KeccakSponge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000204(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1601
   %4 = icmp ult i32 %3, -1600
@@ -33,7 +13,24 @@ entry:
   ret i1 %7
 }
 
-; 42 occurrences:
+; 5 occurrences:
+; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
+; vcpkg/optimized/commands.install.cpp.ll
+; vcpkg/optimized/export.ifw.cpp.ll
+; vcpkg/optimized/spdx.cpp.ll
+; vcpkg/optimized/versions.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000001202(i8 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -65
+  %4 = icmp ult i32 %3, 26
+  %5 = or i1 %1, %4
+  %6 = icmp eq i8 %0, 95
+  %7 = or i1 %6, %5
+  ret i1 %7
+}
+
+; 41 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
@@ -62,7 +59,6 @@ entry:
 ; llvm/optimized/LowerConstantIntrinsics.cpp.ll
 ; llvm/optimized/OverflowInstAnalysis.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -77,11 +73,11 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000510(i8 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000001210(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -19
   %4 = icmp ult i32 %3, -2
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp ugt i8 %0, 21
   %7 = or i1 %6, %5
   ret i1 %7

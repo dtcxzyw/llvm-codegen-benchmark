@@ -25,6 +25,11 @@ func0000000000000009:                   # @func0000000000000009
 	sraiw	a0, a0, 1
 	addw	a0, a0, a1
 	ret
+func0000000000000001:                   # @func0000000000000001
+	sh1add	a1, a1, a1
+	sraiw	a0, a0, 10
+	addw	a0, a0, a1
+	ret
 func0000000000000014:                   # @func0000000000000014
 	sraiw	a1, a1, 24
 	sh1add	a0, a0, a0

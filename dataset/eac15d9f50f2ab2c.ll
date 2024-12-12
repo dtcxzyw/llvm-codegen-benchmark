@@ -1,5 +1,5 @@
 
-; 619 occurrences:
+; 633 occurrences:
 ; actix-rs/optimized/2l54a10og4z99516.ll
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
@@ -9,6 +9,15 @@
 ; assimp/optimized/FBXExportProperty.cpp.ll
 ; base64-rs/optimized/1a04td3ag2jefly3.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/cstring_ref.ll
+; boost/optimized/decode.ll
+; boost/optimized/env.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/start_dir.ll
 ; clamav/optimized/7zDec.c.ll
 ; clamav/optimized/communication.c.ll
 ; clamav/optimized/dlp.c.ll
@@ -22,7 +31,6 @@
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
-; coreutils-rs/optimized/1mziz8r2rj0rwf57.ll
 ; coreutils-rs/optimized/389ib4lq03w39x6a.ll
 ; cpython/optimized/bytearrayobject.ll
 ; cpython/optimized/cursor.ll
@@ -284,13 +292,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -601,9 +606,9 @@
 ; stb/optimized/stb_sprintf.c.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; turborepo-rs/optimized/9jqjlrnxacc6updyqfik1gefl.ll
 ; velox/optimized/Re2Functions.cpp.ll
 ; velox/optimized/URLFunctions.cpp.ll
-; wasmtime-rs/optimized/1jnsbyq97qowbffw.ll
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
@@ -615,6 +620,15 @@
 ; xgboost/optimized/host_device_vector.cc.ll
 ; xgboost/optimized/json.cc.ll
 ; yaml-cpp/optimized/stream.cpp.ll
+; zed-rs/optimized/0r7eo9z8yx38xtl3n9vu60n3r.ll
+; zed-rs/optimized/2coqqf198wkzirvxqog0epalb.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; zed-rs/optimized/3rui5mencljqz2yol5qi2c13x.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/63wrflzyinu5dkqvbn0c4fu2f.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; zxing/optimized/QRDecoder.cpp.ll
@@ -623,27 +637,25 @@
 define i64 @func0000000000000000(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %4, %5
   ret i64 %6
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll
 ; openjdk/optimized/g1RemSet.ll
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
-; openmpi/optimized/fbtl_posix_ipreadv.ll
-; openmpi/optimized/fbtl_posix_ipwritev.ll
 ; openmpi/optimized/fbtl_posix_preadv.ll
 ; openmpi/optimized/fbtl_posix_pwritev.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %4, %5
   ret i64 %6

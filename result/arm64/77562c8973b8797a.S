@@ -1,40 +1,30 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mla	v0.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v0.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	madd	w8, w1, w2, w0
+	lsl	w0, w8, #1
 	ret
                                         // -- End function
 func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
-	mla	v0.4s, v1.4s, v2.4s
-	shl	v0.4s, v0.4s, #2
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	madd	w8, w1, w2, w0
+	lsl	w0, w8, #2
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mla	v0.4s, v1.4s, v2.4s
-	shl	v0.4s, v0.4s, #2
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	madd	w8, w1, w2, w0
+	lsl	w0, w8, #2
 	ret
                                         // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	mla	v0.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v0.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	madd	w8, w1, w2, w0
+	lsl	w0, w8, #1
 	ret
                                         // -- End function
 func000000000000002f:                   // @func000000000000002f
 // %bb.0:                               // %entry
-	mla	v0.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v0.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	madd	w8, w1, w2, w0
+	lsl	w0, w8, #1
 	ret
                                         // -- End function

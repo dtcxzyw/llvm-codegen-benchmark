@@ -17,7 +17,7 @@ entry:
   ret i64 %4
 }
 
-; 42 occurrences:
+; 38 occurrences:
 ; abc/optimized/cuddZddReord.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; arrow/optimized/bpacking.cc.ll
@@ -31,10 +31,6 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; openblas/optimized/dlansf.c.ll
-; openjdk/optimized/mlib_ImageConv_16ext.ll
-; openjdk/optimized/mlib_ImageConv_8ext.ll
-; openjdk/optimized/mlib_ImageConv_u16ext.ll
-; openmpi/optimized/tm_topology.ll
 ; quickjs/optimized/libregexp.ll
 ; ruby/optimized/util.ll
 ; soc-simulator/optimized/verilated.ll
@@ -70,19 +66,16 @@ entry:
   ret i64 %4
 }
 
-; 64 occurrences:
+; 52 occurrences:
 ; abc/optimized/cuddTable.c.ll
-; assimp/optimized/IFCGeometry.cpp.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; cmake/optimized/stream.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; graphviz/optimized/cluster.c.ll
 ; gromacs/optimized/colvargrid.cpp.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5Pdapl.c.ll
 ; hermes/optimized/Function.cpp.ll
-; ipopt/optimized/IpTripletHelper.ll
 ; jq/optimized/regparse.ll
 ; libuv/optimized/stream.c.ll
 ; libwebp/optimized/analysis_enc.c.ll
@@ -99,16 +92,8 @@ entry:
 ; luajit/optimized/lj_state.ll
 ; luajit/optimized/lj_state_dyn.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
-; mitsuba3/optimized/measured.cpp.ll
-; mitsuba3/optimized/measured_polarized.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
-; ncnn/optimized/deformableconv2d_x86.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/pooling3d.cpp.ll
 ; ncnn/optimized/reduction.cpp.ll
 ; node/optimized/stream.ll
@@ -118,8 +103,8 @@ entry:
 ; openjdk/optimized/check_code.ll
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
 ; openjdk/optimized/mlib_ImageConv_32nw.ll
-; openjdk/optimized/mlib_ImageConv_8nw.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openmpi/optimized/opal_object.ll
 ; openmpi/optimized/pmix_object.ll
 ; openssl/optimized/libcrypto-lib-cms_env.ll
@@ -133,19 +118,18 @@ entry:
 ; postgres/optimized/dependencies.ll
 ; qemu/optimized/virtio.c.ll
 ; quickjs/optimized/quickjs.ll
-; raylib/optimized/raudio.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -1
   %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 2
-  %4 = add nuw nsw i64 %3, 4
+  %3 = shl nuw nsw i64 %2, 1
+  %4 = add nuw nsw i64 %3, 2
   ret i64 %4
 }
 
-; 62 occurrences:
+; 59 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; cpython/optimized/dtoa.ll
@@ -154,7 +138,6 @@ entry:
 ; hermes/optimized/dtoa.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/ng_lbr.cpp.ll
-; ipopt/optimized/IpTripletHelper.ll
 ; jq/optimized/decNumber.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
@@ -176,7 +159,6 @@ entry:
 ; ncnn/optimized/slice_x86_avx.cpp.ll
 ; ncnn/optimized/slice_x86_fma.cpp.ll
 ; openblas/optimized/dsfrk.c.ll
-; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; openjdk/optimized/ciConstantPoolCache.ll
 ; openjdk/optimized/ciInstanceKlass.ll
@@ -205,16 +187,15 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; qemu/optimized/block_qcow2.c.ll
-; raylib/optimized/raudio.c.ll
+; quest/optimized/QuEST_common.c.ll
 ; soc-simulator/optimized/verilated.ll
-; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 3
-  %4 = add nuw nsw i64 %3, 8
+  %3 = shl nuw nsw i64 %2, 1
+  %4 = add nuw nsw i64 %3, 2
   ret i64 %4
 }
 
@@ -243,8 +224,10 @@ entry:
   ret i64 %4
 }
 
-; 39 occurrences:
+; 41 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
+; draco/optimized/symbol_encoding.cc.ll
 ; libquic/optimized/histogram.cc.ll
 ; llvm/optimized/MachineBlockPlacement.cpp.ll
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
@@ -310,11 +293,10 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; gromacs/optimized/constr.cpp.ll
 ; gromacs/optimized/findallgputasks.cpp.ll
-; gromacs/optimized/pdb2gmx.cpp.ll
 ; lightgbm/optimized/metadata.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
@@ -354,15 +336,16 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; cpython/optimized/longobject.ll
+; postgres/optimized/regcomp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 1
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 2
-  %4 = add nuw nsw i64 %3, 24
+  %4 = add nuw nsw i64 %3, 48
   ret i64 %4
 }
 

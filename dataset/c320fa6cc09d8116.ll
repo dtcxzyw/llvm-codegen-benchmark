@@ -32,7 +32,7 @@
 ; wolfssl/optimized/sp_int.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %1
@@ -94,7 +94,7 @@ entry:
 ; redis/optimized/ctl.ll
 ; redis/optimized/ctl.sym.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %1
@@ -108,10 +108,10 @@ entry:
 ; curl/optimized/libcurl_la-strcase.ll
 ; graphviz/optimized/emit.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp ne i64 %1, 0
   %6 = and i1 %4, %5
   ret i1 %6
@@ -121,7 +121,7 @@ entry:
 ; cmake/optimized/escape.c.ll
 ; curl/optimized/libcurl_la-escape.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000188(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %0
@@ -153,7 +153,7 @@ entry:
 ; luau/optimized/isocline.c.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %1
@@ -166,7 +166,7 @@ entry:
 ; llvm/optimized/Driver.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = and i1 %3, %1
@@ -178,7 +178,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = and i1 %3, %0
@@ -195,10 +195,10 @@ entry:
 ; redis/optimized/pages.ll
 ; redis/optimized/pages.sym.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000184(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp ult i64 %1, 16385
   %6 = and i1 %4, %5
   ret i1 %6

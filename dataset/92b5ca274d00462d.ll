@@ -21,7 +21,7 @@
 ; php/optimized/pcre2_study.ll
 ; wireshark/optimized/lanalyzer.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d6(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003a6(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -40,20 +40,20 @@ entry:
 ; openjdk/optimized/zip_util.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003f4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
   %6 = add nuw nsw i32 %0, 4
-  %7 = icmp ult i32 %6, %5
+  %7 = icmp samesign ult i32 %6, %5
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/zip_util.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001da(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003aa(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -70,13 +70,13 @@ entry:
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f5(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003f5(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
   %6 = add nuw nsw i32 %0, 16
-  %7 = icmp ule i32 %6, %5
+  %7 = icmp samesign ule i32 %6, %5
   ret i1 %7
 }
 
@@ -98,7 +98,7 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003e1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -117,7 +117,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000384(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -132,7 +132,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000038c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -148,7 +148,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001fc(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003ec(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -160,10 +160,25 @@ entry:
 
 ; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000394(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = shl nuw nsw i32 %1, 8
+  %5 = or disjoint i32 %4, %3
+  %6 = add i32 %0, -1
+  %7 = icmp samesign ult i32 %6, %5
+  ret i1 %7
+}
+
+; 3 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003c4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -176,7 +191,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_substring.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003a4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -191,7 +206,7 @@ entry:
 ; abc/optimized/giaAigerExt.c.ll
 ; php/optimized/avifinfo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl i32 %1, 8
@@ -204,7 +219,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001db(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003ab(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -217,7 +232,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003a1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -227,11 +242,24 @@ entry:
   ret i1 %7
 }
 
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003e4(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = shl nuw nsw i32 %1, 8
+  %5 = or disjoint i32 %4, %3
+  %6 = add nuw nsw i32 %0, 1
+  %7 = icmp ult i32 %6, %5
+  ret i1 %7
+}
+
 ; 2 occurrences:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000381(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -244,13 +272,13 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f9(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003f9(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
   %6 = add nuw nsw i32 %0, 1
-  %7 = icmp uge i32 %6, %5
+  %7 = icmp samesign uge i32 %6, %5
   ret i1 %7
 }
 

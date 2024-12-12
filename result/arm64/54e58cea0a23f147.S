@@ -1,4 +1,4 @@
-func0000000000000052:                   // @func0000000000000052
+func0000000000000053:                   // @func0000000000000053
 // %bb.0:                               // %entry
 	add	w8, w1, #36
 	and	w8, w8, #0xfffffff0
@@ -6,7 +6,7 @@ func0000000000000052:                   // @func0000000000000052
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func000000000000000a:                   // @func000000000000000a
+func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	add	w8, w1, #3
 	and	w8, w8, #0xfffffffc
@@ -14,7 +14,7 @@ func000000000000000a:                   // @func000000000000000a
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func000000000000001e:                   // @func000000000000001e
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	sub	w8, w1, #1
 	and	w8, w8, #0x3ff
@@ -22,7 +22,7 @@ func000000000000001e:                   // @func000000000000001e
 	add	x0, x8, #8
 	ret
                                         // -- End function
-func000000000000007e:                   // @func000000000000007e
+func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
 	add	w8, w1, #14
 	and	w8, w8, #0xfffc
@@ -38,15 +38,7 @@ func000000000000007c:                   // @func000000000000007c
 	add	x0, x8, #4
 	ret
                                         // -- End function
-func000000000000005e:                   // @func000000000000005e
-// %bb.0:                               // %entry
-	sub	w8, w1, #1
-	and	w8, w8, #0x3
-	add	x8, x0, w8, uxtw #3
-	add	x0, x8, #8
-	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	add	w8, w1, #3
 	and	w8, w8, #0xfffffffc

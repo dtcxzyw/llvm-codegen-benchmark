@@ -1,16 +1,11 @@
 
-%"class.llvm::Use.3045680" = type { ptr, ptr, ptr, ptr }
-%class.QCPGraphData.3260420 = type { double, double }
+%"class.llvm::Use.3239024" = type { ptr, ptr, ptr, ptr }
+%class.QCPGraphData.3451166 = type { double, double }
 
-; 28 occurrences:
-; cvc5/optimized/symmetry_breaker.cpp.ll
+; 22 occurrences:
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
-; hyperscan/optimized/control_verbs.cpp.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
-; lief/optimized/File.cpp.ll
-; luau/optimized/ltable.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; openjdk/optimized/cardTableRS.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
 ; openjdk/optimized/memRegion.ll
@@ -19,7 +14,6 @@
 ; openjdk/optimized/mutableSpace.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/vmError.ll
-; php/optimized/pcre2_compile.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
 ; rust-analyzer-rs/optimized/24v97gdgi5w62z7s.ll
@@ -42,21 +36,67 @@ entry:
   ret i64 %7
 }
 
-; 115 occurrences:
-; abc/optimized/abcSaucy.c.ll
+; 25 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaOf.c.ll
-; casadi/optimized/interpolant.cpp.ll
-; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/divsufsort.c.ll
 ; git/optimized/commit-graph.ll
-; gromacs/optimized/listed_forces.cpp.ll
 ; hermes/optimized/HiddenClass.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
-; icu/optimized/propsvec.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
+; llvm/optimized/Instructions.cpp.ll
+; llvm/optimized/LiveDebugVariables.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/RegAllocGreedy.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
+; llvm/optimized/X86OptimizeLEAs.cpp.ll
+; lua/optimized/lvm.ll
+; luajit/optimized/lj_opt_sink.ll
+; luajit/optimized/lj_opt_sink_dyn.ll
+; luajit/optimized/minilua.ll
+; luau/optimized/CodeGenUtils.cpp.ll
+; luau/optimized/lvmexecute.cpp.ll
+; opencv/optimized/geometry.cpp.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; redis/optimized/lvm.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i32, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %0 to i64
+  %6 = sub i64 %5, %4
+  %7 = lshr exact i64 %6, 2
+  ret i64 %7
+}
+
+; 6 occurrences:
+; cvc5/optimized/symmetry_breaker.cpp.ll
+; hyperscan/optimized/control_verbs.cpp.ll
+; lief/optimized/File.cpp.ll
+; luau/optimized/ltable.cpp.ll
+; openjdk/optimized/cardTableRS.ll
+; php/optimized/pcre2_compile.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw ptr, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %0 to i64
+  %6 = sub i64 %5, %4
+  %7 = lshr i64 %6, 3
+  ret i64 %7
+}
+
+; 93 occurrences:
+; abc/optimized/abcSaucy.c.ll
+; ceres/optimized/covariance_impl.cc.ll
+; gromacs/optimized/listed_forces.cpp.ll
+; icu/optimized/propsvec.ll
+; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
@@ -104,11 +144,9 @@ entry:
 ; llvm/optimized/IntrinsicInst.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/Lint.cpp.ll
-; llvm/optimized/LiveDebugVariables.cpp.ll
 ; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/MemoryBuiltins.cpp.ll
 ; llvm/optimized/MemoryLocation.cpp.ll
@@ -116,10 +154,8 @@ entry:
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
-; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SafeStack.cpp.ll
@@ -133,18 +169,11 @@ entry:
 ; llvm/optimized/TargetTransformInfo.cpp.ll
 ; llvm/optimized/TypePromotion.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
-; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
-; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; lua/optimized/lvm.ll
-; luajit/optimized/lj_opt_sink.ll
-; luajit/optimized/lj_opt_sink_dyn.ll
 ; luajit/optimized/minilua.ll
-; luau/optimized/CodeGenUtils.cpp.ll
-; luau/optimized/lvmexecute.cpp.ll
 ; meshlab/optimized/additionalgui.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -154,18 +183,16 @@ entry:
 ; meshlab/optimized/io_x3d.cpp.ll
 ; openjdk/optimized/klassVtable.ll
 ; openusd/optimized/level.cpp.ll
-; openvdb/optimized/PoissonSolver.cc.ll
+; pocketpy/optimized/vm.cpp.ll
 ; redis/optimized/ldo.ll
-; redis/optimized/lvm.ll
-; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i32, ptr %1, i64 %2
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %5, %4
-  %7 = lshr exact i64 %6, 2
+  %7 = lshr exact i64 %6, 3
   ret i64 %7
 }
 
@@ -175,7 +202,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.llvm::Use.3045680", ptr %1, i64 %2
+  %3 = getelementptr %"class.llvm::Use.3239024", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %5, %4
@@ -183,20 +210,17 @@ entry:
   ret i64 %7
 }
 
-; 9 occurrences:
+; 6 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; cpython/optimized/optimizer.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; opencv/optimized/geometry.cpp.ll
-; pocketpy/optimized/vm.cpp.ll
 ; postgres/optimized/heapam.ll
-; postgres/optimized/heapdesc.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.QCPGraphData.3260420, ptr %1, i64 %2
+  %3 = getelementptr %class.QCPGraphData.3451166, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %5, %4

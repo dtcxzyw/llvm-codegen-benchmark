@@ -1,8 +1,8 @@
 
-%"class.metaspace::FreeChunkList.2622441" = type <{ ptr, ptr, %"class.metaspace::AbstractCounter.2622442", [4 x i8] }>
-%"class.metaspace::AbstractCounter.2622442" = type { i32 }
+%"class.metaspace::FreeChunkList.2735878" = type <{ ptr, ptr, %"class.metaspace::AbstractCounter.2735879", [4 x i8] }>
+%"class.metaspace::AbstractCounter.2735879" = type { i32 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/cnfCut.c.ll
@@ -15,22 +15,21 @@
 ; icu/optimized/ucnvmbcs.ll
 ; lief/optimized/camellia.c.ll
 ; openjdk/optimized/chunkManager.ll
+; openusd/optimized/decodemv.c.ll
 ; php/optimized/ir_emit.ll
 ; protobuf/optimized/message_lite.cc.ll
 ; protobuf/optimized/zero_copy_stream.cc.ll
 ; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 16
-  %4 = getelementptr nusw %"class.metaspace::FreeChunkList.2622441", ptr %3, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %4 = getelementptr nusw %"class.metaspace::FreeChunkList.2735878", ptr %3, i64 %2
   ret ptr %4
 }
 
-; 6 occurrences:
-; abc/optimized/aigCuts.c.ll
-; abc/optimized/cswCut.c.ll
+; 4 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
 ; ncnn/optimized/einsum.cpp.ll
 ; opencv/optimized/elementwise_layers.cpp.ll

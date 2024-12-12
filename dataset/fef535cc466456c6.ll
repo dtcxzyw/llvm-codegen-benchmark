@@ -1,8 +1,8 @@
 
-%"class.re2::SparseArray<int>::IndexValue.2486787" = type { i32, i32 }
-%class.QCPGraphData.3260420 = type { double, double }
+%"class.re2::SparseArray<int>::IndexValue.2602231" = type { i32, i32 }
+%class.QCPGraphData.3451166 = type { double, double }
 
-; 159 occurrences:
+; 158 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -34,7 +34,6 @@
 ; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/MachineUniformityAnalysis.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
-; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
@@ -235,7 +234,7 @@ entry:
   %4 = ashr i64 %3, 3
   %5 = add nsw i64 %4, -2
   %6 = ashr exact i64 %5, 1
-  %7 = getelementptr nusw %"class.re2::SparseArray<int>::IndexValue.2486787", ptr %0, i64 %6
+  %7 = getelementptr nusw %"class.re2::SparseArray<int>::IndexValue.2602231", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -248,7 +247,7 @@ entry:
   %4 = ashr exact i64 %3, 4
   %5 = add nsw i64 %4, -2
   %6 = ashr exact i64 %5, 1
-  %7 = getelementptr %class.QCPGraphData.3260420, ptr %0, i64 %6
+  %7 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %6
   ret ptr %7
 }
 

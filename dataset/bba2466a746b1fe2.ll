@@ -15,10 +15,10 @@
 ; re2/optimized/simplify.cc.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
@@ -30,15 +30,15 @@ entry:
 ; openjdk/optimized/relocInfo.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
-; 64 occurrences:
+; 77 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/q4aavw6wh20so0r.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -103,8 +103,21 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmtime-rs/optimized/2sf3ranrrf5pn6ms.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3u7utqtgdovrxzbad3tfrps40.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/bwf7odsfkes1o9vw37iz67e4b.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -112,7 +125,7 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; linux/optimized/dir.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/drm_cache.ll
@@ -122,6 +135,7 @@ entry:
 ; linux/optimized/namei.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/usercopy_64.ll
+; linux/optimized/utresrc.ll
 ; linux/optimized/xt_TCPMSS.ll
 ; postgres/optimized/generic_xlog.ll
 ; postgres/optimized/xlogreader.ll
@@ -146,34 +160,36 @@ entry:
 ; openjdk/optimized/xNMethod.ll
 ; openjdk/optimized/zNMethod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000000e4(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; assimp/optimized/LWOBLoader.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; lz4/optimized/lz4.c.ll
 ; openjdk/optimized/constMethod.ll
+; openjdk/optimized/zip_util.ll
 ; php/optimized/cdf.ll
 ; php/optimized/dns.ll
 ; php/optimized/pcre2_substring.ll
 ; raylib/optimized/raudio.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000068(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
@@ -183,10 +199,10 @@ entry:
 ; openjdk/optimized/verifier.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
@@ -197,10 +213,10 @@ entry:
 ; php/optimized/cdf.ll
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000000e8(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
@@ -208,7 +224,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/text_import.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3

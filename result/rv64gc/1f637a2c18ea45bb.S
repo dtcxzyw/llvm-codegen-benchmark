@@ -4,12 +4,6 @@ func0000000000000003:                   # @func0000000000000003
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
-	andi	a2, a2, 96
-	andi	a1, a1, 28
-	or	a1, a1, a2
-	or	a0, a0, a1
-	ret
 func000000000000000b:                   # @func000000000000000b
 	lui	a3, 1048568
 	and	a2, a2, a3

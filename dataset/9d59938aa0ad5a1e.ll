@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
@@ -14,6 +14,7 @@
 ; pbrt-v4/optimized/pspec.cpp.ll
 ; pbrt-v4/optimized/stats.cpp.ll
 ; pbrt-v4/optimized/textures.cpp.ll
+; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(float %0, float %1) #0 {
 entry:

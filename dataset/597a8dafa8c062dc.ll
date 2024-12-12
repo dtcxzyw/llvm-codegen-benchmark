@@ -1,6 +1,7 @@
 
-; 289 occurrences:
+; 288 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/TestMemory.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -9,7 +10,6 @@
 ; hermes/optimized/StringSaver.cpp.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; linux/optimized/ccm.ll
-; linux/optimized/ctr.ll
 ; linux/optimized/drbg.ll
 ; linux/optimized/gcm.ll
 ; linux/optimized/lskcipher.ll
@@ -263,7 +263,6 @@
 ; openusd/optimized/aom_image.c.ll
 ; openusd/optimized/aom_mem.c.ll
 ; openusd/optimized/yv12config.c.ll
-; ozz-animation/optimized/allocator.cc.ll
 ; postgres/optimized/mcxt.ll
 ; qemu/optimized/tcg.c.ll
 ; raylib/optimized/raudio.c.ll
@@ -293,7 +292,7 @@
 define ptr @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = and i64 %4, %0
   %6 = inttoptr i64 %5 to ptr
   ret ptr %6
@@ -305,7 +304,7 @@ entry:
 define ptr @func0000000000000001(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = and i64 %4, %0
   %6 = inttoptr i64 %5 to ptr
   ret ptr %6

@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	subq	%rdx, %rsi
 	movabsq	$4835703278458516699, %rax      # imm = 0x431BDE82D7B634DB
 	movq	%rsi, %rdx
@@ -8,7 +8,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rcx, %rax
 	seta	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	subq	%rdx, %rsi
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	movq	%rsi, %rdx

@@ -1,8 +1,7 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libquic/optimized/spdy_framer.cc.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; mitsuba3/optimized/spiral.cpp.ll
 ; opencv/optimized/falsecolor.cpp.ll
 ; opencv/optimized/perf_contours.cpp.ll
@@ -10,6 +9,8 @@
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/media.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:

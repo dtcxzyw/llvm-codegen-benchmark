@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -15,12 +15,13 @@
 ; hyperscan/optimized/som_stream.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/client.ll
+; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/intel_bw.ll
-; linux/optimized/probe.ll
+; linux/optimized/mprotect.ll
 ; llvm/optimized/APInt.cpp.ll
+; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; mimalloc/optimized/bitmap.c.ll
 ; openjdk/optimized/hb-ot-layout.ll
@@ -53,7 +54,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp ne i64 %4, 0
   ret i1 %5
 }

@@ -8,7 +8,7 @@ entry:
   %2 = lshr i32 %1, 7
   %3 = xor i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = lshr i32 %1, 4
   %3 = xor i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = xor i32 %1, -1
   %3 = lshr i32 %2, 8
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

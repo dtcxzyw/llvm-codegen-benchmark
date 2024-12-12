@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; bullet3/optimized/btGjkPairDetector.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
@@ -16,7 +16,6 @@
 ; gromacs/optimized/settle.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/sdf-error-estimation.cpp.ll
@@ -28,7 +27,7 @@ define double @func0000000000000000(double %0, double %1, float %2) #0 {
 entry:
   %3 = fpext float %2 to double
   %4 = fdiv double %1, %3
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

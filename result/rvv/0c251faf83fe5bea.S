@@ -8,7 +8,7 @@ func000000000000007c:                   # @func000000000000007c
 	vand.vi	v9, v9, 7
 	vmv.v.i	v10, 1
 	vsll.vv	v9, v10, v9
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret
 func000000000000001c:                   # @func000000000000001c
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -20,5 +20,5 @@ func000000000000001c:                   # @func000000000000001c
 	vand.vi	v9, v9, 7
 	vmv.v.i	v10, 1
 	vsll.vv	v9, v10, v9
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret

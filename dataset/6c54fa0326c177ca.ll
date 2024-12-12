@@ -1,12 +1,13 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; clamav/optimized/Ppmd7Dec.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
-; icu/optimized/dtitvfmt.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
 entry:
@@ -16,7 +17,7 @@ entry:
   ret ptr %4
 }
 
-; 52 occurrences:
+; 49 occurrences:
 ; linux/optimized/dmar.ll
 ; linux/optimized/sock_reuseport.ll
 ; postgres/optimized/brin.ll
@@ -25,7 +26,6 @@ entry:
 ; postgres/optimized/brin_minmax.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; postgres/optimized/brin_pageops.ll
-; postgres/optimized/brin_revmap.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/genam.ll
@@ -33,8 +33,6 @@ entry:
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/ginfast.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/gininsert.ll
-; postgres/optimized/ginlogic.ll
 ; postgres/optimized/ginscan.ll
 ; postgres/optimized/ginutil.ll
 ; postgres/optimized/ginvacuum.ll
@@ -78,19 +76,33 @@ entry:
   ret ptr %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; php/optimized/html.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i16 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 256
-  %4 = getelementptr nusw [280 x i16], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [280 x i16], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 3 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; icu/optimized/dtitvfmt.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = add nsw i64 %2, -1
+  %4 = getelementptr nusw nuw [62 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -121,8 +133,18 @@ entry:
   ret ptr %4
 }
 
-; 7 occurrences:
+; 1 occurrences:
 ; icu/optimized/alphaindex.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = add nsw i64 %2, -65
+  %4 = getelementptr nusw nuw [26 x ptr], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 6 occurrences:
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -133,8 +155,8 @@ entry:
 define ptr @func0000000000000016(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = add nsw i64 %2, -65
-  %4 = getelementptr nusw [26 x ptr], ptr %0, i64 0, i64 %3
+  %3 = add nsw i64 %2, -1
+  %4 = getelementptr nusw [55 x i32], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

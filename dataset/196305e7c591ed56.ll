@@ -54,7 +54,9 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; spike/optimized/aes64dsm.ll
 ; spike/optimized/aes64esm.ll
 ; Function Attrs: nounwind

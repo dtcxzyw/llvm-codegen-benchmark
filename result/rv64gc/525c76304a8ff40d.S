@@ -1,5 +1,5 @@
 func0000000000000000:                   # @func0000000000000000
-	slli	a1, a1, 2
+	slli	a1, a1, 20
 	add	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
@@ -72,6 +72,12 @@ func0000000000000006:                   # @func0000000000000006
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
+func000000000000001a:                   # @func000000000000001a
+	slli	a1, a1, 21
+	add	a0, a0, a1
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
 func000000000000001b:                   # @func000000000000001b
 	slli	a1, a1, 1
 	addw	a0, a0, a1
@@ -79,10 +85,4 @@ func000000000000001b:                   # @func000000000000001b
 func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 1
 	addw	a0, a0, a1
-	ret
-func000000000000001a:                   # @func000000000000001a
-	slli	a1, a1, 15
-	add	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 32
 	ret

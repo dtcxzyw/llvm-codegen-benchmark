@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; abc/optimized/abcLog.c.ll
+; 4 occurrences:
 ; darktable/optimized/introspection_diffuse.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll

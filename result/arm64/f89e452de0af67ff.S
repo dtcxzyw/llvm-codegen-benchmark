@@ -1,18 +1,11 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ushll	v3.4s, v3.4h, #0
-	movi	v5.16b, #153
-	ushll	v4.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	fneg	v5.2d, v5.2d
-	shl	v3.2d, v3.2d, #56
-	shl	v4.2d, v4.2d, #56
-	ssra	v1.2d, v4.2d, #56
-	ssra	v2.2d, v3.2d, #56
-	cmhi	v2.2d, v5.2d, v2.2d
-	cmhi	v1.2d, v5.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	and	v0.8b, v0.8b, v1.8b
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x1, w2, sxtb
+	mov	x9, #-7378697629483820647       // =0x9999999999999999
+	movk	x9, #6553, lsl #48
+	cmp	x8, x9
+	cset	w8, lo
+	and	w0, w0, w8
 	ret
                                         // -- End function

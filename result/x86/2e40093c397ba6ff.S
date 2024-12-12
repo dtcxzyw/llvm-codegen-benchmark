@@ -38,17 +38,17 @@ func0000000000000002:                   # @func0000000000000002
 	subq	%rdx, %rax
 	imulq	%rdi, %rax
 	retq
-func000000000000000d:                   # @func000000000000000d
-	movq	%rsi, %rax
-	subq	%rdx, %rax
-	imulq	%rdi, %rax
-	retq
 func000000000000000f:                   # @func000000000000000f
 	movq	%rsi, %rax
 	subq	%rdx, %rax
 	imulq	%rdi, %rax
 	retq
 func000000000000000b:                   # @func000000000000000b
+	movq	%rsi, %rax
+	subq	%rdx, %rax
+	imulq	%rdi, %rax
+	retq
+func000000000000000d:                   # @func000000000000000d
 	movq	%rsi, %rax
 	subq	%rdx, %rax
 	imulq	%rdi, %rax

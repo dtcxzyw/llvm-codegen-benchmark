@@ -13,7 +13,7 @@
 define i32 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -29,7 +29,7 @@ entry:
 define i32 @func000000000000000f(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
@@ -41,22 +41,8 @@ entry:
 define i32 @func000000000000001f(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
-  ret i32 %4
-}
-
-; 4 occurrences:
-; linux/optimized/82571.ll
-; linux/optimized/nvm.ll
-; linux/optimized/rx.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i64 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
-  %4 = trunc i64 %3 to i32
   ret i32 %4
 }
 
@@ -66,8 +52,21 @@ entry:
 define i32 @func000000000000000d(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nsw i64 %3 to i32
+  ret i32 %4
+}
+
+; 3 occurrences:
+; linux/optimized/82571.ll
+; linux/optimized/nvm.ll
+; linux/optimized/rx.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = add nuw nsw i64 %0, %2
+  %4 = trunc i64 %3 to i32
   ret i32 %4
 }
 
@@ -81,7 +80,7 @@ entry:
 define i32 @func0000000000000004(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

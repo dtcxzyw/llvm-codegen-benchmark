@@ -1,47 +1,18 @@
+.LCPI0_0:
+	.xword	0x3f1a36e2eb1c432d              // double 1.0E-4
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	x8, #17197                      // =0x432d
-	fmov	v17.2d, #1.00000000
-	movk	x8, #60188, lsl #16
-	movk	x8, #14050, lsl #32
-	movk	x8, #16154, lsl #48
-	dup	v16.2d, x8
-	fmaxnm	v1.2d, v1.2d, v16.2d
-	fmaxnm	v0.2d, v0.2d, v16.2d
-	fmaxnm	v4.2d, v4.2d, v16.2d
-	fmaxnm	v3.2d, v3.2d, v16.2d
-	fmaxnm	v2.2d, v2.2d, v16.2d
-	fmaxnm	v7.2d, v7.2d, v16.2d
-	fmaxnm	v6.2d, v6.2d, v16.2d
-	fmaxnm	v5.2d, v5.2d, v16.2d
-	fsub	v0.2d, v17.2d, v0.2d
-	fsub	v1.2d, v17.2d, v1.2d
-	fsub	v4.2d, v17.2d, v4.2d
-	fsub	v2.2d, v17.2d, v2.2d
-	fsub	v3.2d, v17.2d, v3.2d
-	fsub	v7.2d, v17.2d, v7.2d
-	fsub	v5.2d, v17.2d, v5.2d
-	fsub	v6.2d, v17.2d, v6.2d
+	adrp	x8, .LCPI0_0
+	ldr	d1, [x8, :lo12:.LCPI0_0]
+	fmaxnm	d0, d0, d1
+	fmov	d1, #1.00000000
+	fsub	d0, d1, d0
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fmov	v16.2d, #1.00000000
-	fminnm	v1.2d, v1.2d, v16.2d
-	fminnm	v0.2d, v0.2d, v16.2d
-	fminnm	v4.2d, v4.2d, v16.2d
-	fminnm	v3.2d, v3.2d, v16.2d
-	fminnm	v2.2d, v2.2d, v16.2d
-	fminnm	v7.2d, v7.2d, v16.2d
-	fminnm	v6.2d, v6.2d, v16.2d
-	fminnm	v5.2d, v5.2d, v16.2d
-	fsub	v0.2d, v16.2d, v0.2d
-	fsub	v1.2d, v16.2d, v1.2d
-	fsub	v4.2d, v16.2d, v4.2d
-	fsub	v2.2d, v16.2d, v2.2d
-	fsub	v3.2d, v16.2d, v3.2d
-	fsub	v7.2d, v16.2d, v7.2d
-	fsub	v5.2d, v16.2d, v5.2d
-	fsub	v6.2d, v16.2d, v6.2d
+	fmov	d1, #1.00000000
+	fminnm	d0, d0, d1
+	fsub	d0, d1, d0
 	ret
                                         // -- End function

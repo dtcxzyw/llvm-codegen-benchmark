@@ -22,7 +22,7 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
@@ -41,6 +41,8 @@ entry:
 ; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
@@ -50,7 +52,7 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 22 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -64,6 +66,15 @@ entry:
 ; rust-analyzer-rs/optimized/2jyyuxshs9vnz9u0.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
 ; z3/optimized/sat_bcd.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
@@ -73,8 +84,9 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; c3c/optimized/asm_target.c.ll
+; glslang/optimized/GlslangToSpv.cpp.ll
 ; jq/optimized/jv_parse.ll
 ; llvm/optimized/MCSymbolELF.cpp.ll
 ; luau/optimized/lvmload.cpp.ll

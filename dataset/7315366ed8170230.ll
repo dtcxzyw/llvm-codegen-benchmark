@@ -1,5 +1,5 @@
 
-; 87 occurrences:
+; 85 occurrences:
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; coreutils-rs/optimized/1hfndwarkzjc08wu.ll
@@ -83,10 +83,8 @@
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/3xoiqyy2a9jbg7ae.ll
-; wasmtime-rs/optimized/3yr40www2jy0a6jn.ll
-; wasmtime-rs/optimized/49putx1a0760eu8s.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
-; wasmtime-rs/optimized/o2h6j06mg3v3bs7.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
 ; Function Attrs: nounwind
 define { ptr, ptr } @func0000000000000001(ptr %0, ptr %1, ptr %2) #0 {
 entry:

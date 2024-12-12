@@ -25,7 +25,7 @@
 ; openusd/optimized/matrix4d.cpp.ll
 ; openusd/optimized/matrix4f.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0) #0 {
+define i64 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 1
   %2 = icmp eq i32 %1, 3
@@ -39,7 +39,7 @@ entry:
 ; abc/optimized/abcNtbdd.c.ll
 ; icu/optimized/dayperiodrules.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0) #0 {
+define i64 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
   %2 = icmp eq i32 %1, 0

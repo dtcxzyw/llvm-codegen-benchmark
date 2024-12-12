@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; libquic/optimized/p256-64.c.ll
@@ -11,6 +11,8 @@
 ; spike/optimized/vmsbc_vvm.ll
 ; spike/optimized/vmsbc_vx.ll
 ; spike/optimized/vmsbc_vxm.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000001(i128 %0, i64 %1) #0 {
 entry:

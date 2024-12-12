@@ -51,3 +51,12 @@ func0000000000000014:                   # @func0000000000000014
 	li	a0, 8
 .LBB5_2:                                # %entry
 	ret
+func0000000000000028:                   # @func0000000000000028
+	sext.w	a2, a2
+	sltiu	a2, a2, 59
+	or	a1, a1, a2
+	andi	a1, a1, 1
+	beqz	a1, .LBB6_2
+	li	a0, 1
+.LBB6_2:                                # %entry
+	ret

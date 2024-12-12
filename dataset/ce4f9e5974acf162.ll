@@ -27,6 +27,18 @@ entry:
 }
 
 ; 1 occurrences:
+; soc-simulator/optimized/verilated.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000079(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %0, %1
+  %3 = add nuw nsw i32 %2, 31
+  %4 = lshr i32 %3, 5
+  %5 = add nsw i32 %4, -1
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; clamav/optimized/unsp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {

@@ -11,13 +11,12 @@ entry:
   ret ptr %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; grpc/optimized/external_account_credentials.cc.ll
 ; linux/optimized/set_memory.ll
 ; llvm/optimized/APInt.cpp.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
-; wireshark/optimized/plugin_if.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000018(i32 %0) #0 {
 entry:

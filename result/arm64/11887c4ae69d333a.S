@@ -1,7 +1,6 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v2.16b, #160
-	sub	v0.16b, v0.16b, v1.16b
-	add	v0.16b, v0.16b, v2.16b
+	sub	w8, w0, w1
+	sub	w0, w8, #96
 	ret
                                         // -- End function

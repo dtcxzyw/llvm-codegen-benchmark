@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdi, %rdi
 	cmovel	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	287454023(%rsi), %ecx
 	testq	%rdi, %rdi
 	movl	$287454023, %eax                # imm = 0x11223347

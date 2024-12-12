@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	fli.d	fa5, 1.0
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vfrdiv.vf	v12, v16, fa5
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
 .LCPI1_0:
 	.quad	0x400921fb54442d18              # double 3.1415926535897931

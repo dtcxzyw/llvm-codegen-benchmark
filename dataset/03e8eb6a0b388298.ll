@@ -1,7 +1,9 @@
 
-; 46 occurrences:
+; 49 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/saigPhase.c.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/proof_node_to_sexpr.cpp.ll
 ; gromacs/optimized/autocorr.cpp.ll
@@ -25,6 +27,7 @@
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
+; llvm/optimized/NestedNameSpecifier.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/ParsePragma.cpp.ll
@@ -69,9 +72,8 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; draco/optimized/obj_decoder.cc.ll
-; icu/optimized/collationdatabuilder.ll
 ; openjdk/optimized/ciMethod.ll
 ; redis/optimized/intset.ll
 ; stb/optimized/stb_truetype.c.ll
@@ -87,9 +89,9 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/bignum.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i1 %0, i64 %1) #0 {
+define i32 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 149
+  %2 = icmp samesign ugt i64 %1, 149
   %3 = select i1 %2, i32 40, i32 51
   %4 = select i1 %0, i32 28, i32 %3
   ret i32 %4
@@ -104,6 +106,17 @@ entry:
   %2 = icmp slt i64 %1, 1
   %3 = select i1 %2, i32 -1, i32 1
   %4 = select i1 %0, i32 0, i32 %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; icu/optimized/collationdatabuilder.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 40
+  %3 = select i1 %2, i32 4430, i32 4480
+  %4 = select i1 %0, i32 4352, i32 %3
   ret i32 %4
 }
 

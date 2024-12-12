@@ -1,8 +1,25 @@
 
-; 306 occurrences:
+; 330 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
+; boost/optimized/any_params_iter.ll
+; boost/optimized/any_segments_iter.ll
+; boost/optimized/format_args.ll
+; boost/optimized/hier_part_rule.ll
+; boost/optimized/host_rule.ll
+; boost/optimized/ipv6_addrz_rule.ll
+; boost/optimized/ipvfuture_rule.ll
+; boost/optimized/origin_form_rule.ll
+; boost/optimized/parse_path.ll
+; boost/optimized/pattern.ll
+; boost/optimized/pct_format.ll
+; boost/optimized/relative_part_rule.ll
+; boost/optimized/relative_ref_rule.ll
+; boost/optimized/replacement_field_rule.ll
+; boost/optimized/uri_rule.ll
+; boost/optimized/url_base.ll
+; boost/optimized/userinfo_rule.ll
 ; brotli/optimized/static_dict.c.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -31,6 +48,7 @@
 ; lua/optimized/ltm.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_chart.ll
 ; meilisearch-rs/optimized/4bitt7og17dqjles.ll
 ; meilisearch-rs/optimized/7ttx3vegu0k1psi.ll
 ; meilisearch-rs/optimized/nd5rqkzol64hjfl.ll
@@ -40,7 +58,6 @@
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; meshlab/optimized/balltree.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-ppc64v1.cc.ll
@@ -305,13 +322,20 @@
 ; z3/optimized/sat_proof_trim.cpp.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw [4 x ptr], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [4 x ptr], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

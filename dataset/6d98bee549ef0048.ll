@@ -2,24 +2,24 @@
 ; 1 occurrences:
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, -86400000
   %5 = add nsw i64 %4, %1
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, -86400000
   %5 = add i64 %4, %1
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -27,12 +27,12 @@ entry:
 ; git/optimized/date.ll
 ; velox/optimized/VeloxException.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 1000000
-  %5 = add nsw i64 %4, %1
-  %6 = icmp sgt i64 %5, %0
+  %5 = add nsw i64 %1, %4
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
@@ -44,12 +44,12 @@ entry:
 ; abc/optimized/pdrIncr.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 1000000
-  %5 = add nsw i64 %4, %1
-  %6 = icmp slt i64 %5, %0
+  %5 = add nsw i64 %1, %4
+  %6 = icmp sgt i64 %0, %5
   ret i1 %6
 }
 
@@ -58,36 +58,36 @@ entry:
 ; linux/optimized/intel_pcode.ll
 ; postgres/optimized/date.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 1000000
   %5 = add i64 %4, %1
-  %6 = icmp slt i64 %5, %0
+  %6 = icmp sgt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; postgres/optimized/date.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 1000000
   %5 = add i64 %4, %1
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; postgres/optimized/date.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 1000000
   %5 = add i64 %4, %1
-  %6 = icmp ne i64 %5, %0
+  %6 = icmp ne i64 %0, %5
   ret i1 %6
 }
 
@@ -97,12 +97,12 @@ entry:
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/worker.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 1000000
   %5 = add i64 %4, %1
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
@@ -110,24 +110,24 @@ entry:
 ; postgres/optimized/date.ll
 ; postgres/optimized/worker.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004b(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 1000000
   %5 = add i64 %4, %1
-  %6 = icmp sle i64 %5, %0
+  %6 = icmp sge i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000057(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a7(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 1000
   %5 = add nsw i64 %4, %1
-  %6 = icmp sge i64 %5, %0
+  %6 = icmp sle i64 %0, %5
   ret i1 %6
 }
 

@@ -1,5 +1,5 @@
 
-; 291 occurrences:
+; 303 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/aigCuts.c.ll
@@ -33,6 +33,16 @@
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; abseil-cpp/optimized/format_test.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/src.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
+; boost/optimized/xml_wiarchive.ll
 ; clamav/optimized/regcomp.c.ll
 ; clamav/optimized/regexec.c.ll
 ; cmake/optimized/RegularExpression.cxx.ll
@@ -134,6 +144,9 @@
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; luau/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_string_builtin.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
@@ -236,7 +249,6 @@
 ; postgres/optimized/tablecmds.ll
 ; postgres/optimized/wstrcmp.ll
 ; postgres/optimized/zic.ll
-; proj/optimized/cs2cs.cpp.ll
 ; proj/optimized/geod.cpp.ll
 ; proj/optimized/proj.cpp.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
@@ -295,7 +307,7 @@
 define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
@@ -308,6 +320,7 @@ entry:
 ; abc/optimized/lpkSets.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
+; boost/optimized/numeric.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; git/optimized/dir.ll
@@ -319,7 +332,6 @@ entry:
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/simpletz.ll
 ; icu/optimized/ucnv_ext.ll
 ; icu/optimized/ustring.ll
@@ -362,12 +374,25 @@ entry:
 define i1 @func000000000000000a(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
-; 7 occurrences:
+; 3 occurrences:
+; abseil-cpp/optimized/numbers.cc.ll
+; linux/optimized/vmscan.ll
+; ruby/optimized/bignum.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
+entry:
+  %2 = sext i8 %1 to i32
+  %3 = icmp ugt i32 %0, %2
+  ret i1 %3
+}
+
+; 8 occurrences:
 ; abc/optimized/wlcStdin.c.ll
+; boost/optimized/xml_grammar.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -378,11 +403,12 @@ entry:
 define i1 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   ret i1 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/xml_grammar.ll
 ; linux/optimized/trace_events_filter.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
@@ -393,11 +419,11 @@ entry:
 define i1 @func000000000000000b(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   ret i1 %3
 }
 
-; 55 occurrences:
+; 57 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/cnfCut.c.ll
@@ -407,6 +433,7 @@ entry:
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ivyFastMap.c.ll
 ; abc/optimized/lpkSets.c.ll
+; boost/optimized/xml_grammar.ll
 ; cmake/optimized/archive_string.c.ll
 ; cpython/optimized/_zoneinfo.ll
 ; graphviz/optimized/lab.c.ll
@@ -426,6 +453,7 @@ entry:
 ; linux/optimized/trace_events_filter.ll
 ; llvm/optimized/IntegerLiteralSeparatorFixer.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
+; lvgl/optimized/lv_animimage.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/minmax.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
@@ -457,22 +485,20 @@ entry:
 define i1 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
-; 6 occurrences:
-; abseil-cpp/optimized/numbers.cc.ll
+; 4 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; icu/optimized/double-conversion-string-to-double.ll
-; linux/optimized/vmscan.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -510,7 +536,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 
@@ -529,7 +555,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 

@@ -16,12 +16,6 @@ func0000000000000050:                   # @func0000000000000050
 	imull	%esi, %esi
 	addl	%esi, %eax
 	retq
-func0000000000000055:                   # @func0000000000000055
-	imull	%edx, %edx
-	leal	(%rdx,%rdi), %eax
-	imull	%esi, %esi
-	addl	%esi, %eax
-	retq
 func0000000000000058:                   # @func0000000000000058
 	imull	%edx, %edx
 	leal	(%rdx,%rdi), %eax

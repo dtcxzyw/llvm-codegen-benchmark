@@ -1,8 +1,8 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	cmpq	$5, %rdi
 	setl	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	cmpq	$257, %rdi                      # imm = 0x101
 	setge	%al
 	retq
@@ -17,9 +17,4 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000008:                   # @func0000000000000008
 	cmpq	$32, %rdi
 	setae	%al
-	retq
-func0000000000000018:                   # @func0000000000000018
-	movabsq	$9223372036854775804, %rax      # imm = 0x7FFFFFFFFFFFFFFC
-	cmpq	%rax, %rdi
-	seta	%al
 	retq

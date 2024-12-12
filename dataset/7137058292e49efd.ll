@@ -59,7 +59,7 @@ entry:
   ret i64 %5
 }
 
-; 18 occurrences:
+; 14 occurrences:
 ; cmake/optimized/cmDocumentationFormatter.cxx.ll
 ; git/optimized/xmerge.ll
 ; hdf5/optimized/H5PB.c.ll
@@ -69,12 +69,8 @@ entry:
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM64.cc.ll
 ; mold/optimized/passes.cc.LOONGARCH64.cc.ll
-; mold/optimized/passes.cc.PPC64V1.cc.ll
 ; mold/optimized/passes.cc.PPC64V2.cc.ll
-; mold/optimized/passes.cc.RV64BE.cc.ll
 ; mold/optimized/passes.cc.RV64LE.cc.ll
-; mold/optimized/passes.cc.S390X.cc.ll
-; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; nuklear/optimized/unity.c.ll
 ; redis/optimized/lua_cmsgpack.ll

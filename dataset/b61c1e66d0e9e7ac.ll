@@ -2,6 +2,8 @@
 ; 127 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/pdfdecode.c.ll
 ; clamav/optimized/secpassword.cpp.ll
@@ -24,7 +26,6 @@
 ; eastl/optimized/EASTLBenchmark.cpp.ll
 ; eastl/optimized/EATest.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; eastl/optimized/TestCharTraits.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestFunctional.cpp.ll
@@ -33,7 +34,6 @@
 ; eastl/optimized/TestOptional.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/main.cpp.ll
@@ -135,7 +135,7 @@ entry:
   ret i8 %3
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; folly/optimized/SpookyHashV1.cpp.ll
 ; folly/optimized/SpookyHashV2.cpp.ll
@@ -143,7 +143,6 @@ entry:
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/filesystem.cpp.ll
 ; mitsuba3/optimized/logger.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; proxygen/optimized/HPACKCodec.cpp.ll
 ; proxygen/optimized/HPACKDecodeBuffer.cpp.ll
 ; proxygen/optimized/HTTPConnectorWithFizz.cpp.ll
@@ -160,13 +159,15 @@ entry:
   ret i8 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; openssl/optimized/bad_dtls_test-bin-bad_dtls_test.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; ring-rs/optimized/2r3wc2wo4j1ozk7e.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
@@ -175,13 +176,14 @@ entry:
   ret i8 %3
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/row_encoder.cc.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; boost/optimized/static_string.ll
 ; c3c/optimized/lexer.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; git/optimized/read-cache.ll
@@ -302,9 +304,11 @@ entry:
   ret i8 %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; openusd/optimized/fastCompression.cpp.ll
 ; rust-analyzer-rs/optimized/2ebx9eutyph8un4i.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:

@@ -15,11 +15,11 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vptestnmb	.LCPI0_0(%rip), %xmm2, %k1
-	korb	%k0, %k1, %k1
+	korb	%k1, %k0, %k1
 	vptestmd	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -62,7 +62,7 @@ func000000000000002c:                   # @func000000000000002c
 	.long	2                               # 0x2
 .LCPI1_3:
 	.zero	4,254
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm2, %xmm1
@@ -108,12 +108,12 @@ func0000000000000021:                   # @func0000000000000021
 	.zero	1
 .LCPI2_2:
 	.zero	4,7
-func000000000000018c:                   # @func000000000000018c
+func000000000000030c:                   # @func000000000000030c
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpandd	.LCPI2_2(%rip){1to4}, %xmm2, %xmm1
 	vpcmpneqb	.LCPI2_1(%rip), %xmm1, %k1
-	korb	%k0, %k1, %k1
+	korb	%k1, %k0, %k1
 	vptestmd	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

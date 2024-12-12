@@ -1,15 +1,15 @@
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	subl	%eax, %edi
 	testl	%edi, %edi
 	setg	%al
 	retq
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	movzwl	%dx, %eax
 	addl	%esi, %eax
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	setg	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movzwl	%dx, %eax
@@ -18,26 +18,26 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$2, %edi
 	setae	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	movzwl	%dx, %eax
 	addl	%esi, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func00000000000001d6:                   # @func00000000000001d6
+func00000000000003a6:                   # @func00000000000003a6
 	movzwl	%dx, %eax
 	addl	%esi, %eax
-	cmpl	%edi, %eax
-	setge	%al
+	cmpl	%eax, %edi
+	setle	%al
 	retq
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	subl	%eax, %edi
 	cmpl	$11, %edi
 	setb	%al
 	retq
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	movl	%edi, %eax
 	movzwl	%dx, %ecx
 	addl	%esi, %ecx

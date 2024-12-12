@@ -22,19 +22,10 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; linux/optimized/dw.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i1 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = select i1 %0, i8 %1, i8 %2
-  %4 = zext i8 %3 to i32
-  %5 = shl i32 %4, 25
-  ret i32 %5
-}
-
-; 1 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i8 %1, i8 %2) #0 {
 entry:

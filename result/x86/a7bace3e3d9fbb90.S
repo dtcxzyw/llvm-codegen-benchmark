@@ -1,135 +1,127 @@
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setg	%cl
-	testl	%edi, %edi
-	setne	%al
-	andb	%cl, %al
-	retq
-func0000000000000011:                   # @func0000000000000011
-	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	sete	%cl
-	cmpl	$32, %edi
-	sete	%al
-	andb	%cl, %al
-	retq
-func00000000000000ac:                   # @func00000000000000ac
-	movslq	%edx, %rax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	setl	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000007a:                   # @func000000000000007a
+func0000000000000021:                   # @func0000000000000021
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setge	%cl
+	cmpq	%rax, %rsi
+	sete	%cl
+	cmpl	$32, %edi
+	sete	%al
+	andb	%cl, %al
+	retq
+func000000000000014c:                   # @func000000000000014c
+	movslq	%edx, %rax
+	cmpq	%rax, %rsi
+	setg	%cl
+	testl	%edi, %edi
+	setne	%al
+	andb	%cl, %al
+	retq
+func00000000000000ea:                   # @func00000000000000ea
+	movslq	%edx, %rax
+	cmpq	%rax, %rsi
+	setle	%cl
 	cmpl	$16, %edi
 	setge	%al
 	andb	%cl, %al
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setg	%cl
+	cmpq	%rax, %rsi
+	setl	%cl
 	testl	%edi, %edi
 	setns	%al
 	andb	%cl, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setg	%cl
-	testl	%edi, %edi
-	sete	%al
-	andb	%cl, %al
-	retq
-func0000000000000066:                   # @func0000000000000066
-	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setg	%cl
-	cmpl	$6, %edi
-	setl	%al
-	andb	%cl, %al
-	retq
-func00000000000000b1:                   # @func00000000000000b1
-	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setle	%cl
+	cmpq	%rax, %rsi
+	setl	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
 func00000000000000c6:                   # @func00000000000000c6
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
+	setl	%cl
+	cmpl	$6, %edi
+	setl	%al
+	andb	%cl, %al
+	retq
+func0000000000000161:                   # @func0000000000000161
+	movslq	%edx, %rax
+	cmpq	%rax, %rsi
+	setge	%cl
+	testl	%edi, %edi
+	sete	%al
+	andb	%cl, %al
+	retq
+func0000000000000186:                   # @func0000000000000186
+	movslq	%edx, %rax
+	cmpq	%rax, %rsi
 	setne	%cl
 	cmpl	$-4, %edi
 	setl	%al
 	andb	%cl, %al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setl	%cl
+	cmpq	%rax, %rsi
+	setg	%cl
 	testl	%edi, %edi
 	setns	%al
 	andb	%cl, %al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setl	%cl
+	cmpq	%rax, %rsi
+	setg	%cl
 	cmpl	$2, %edi
 	sete	%al
+	andb	%cl, %al
+	retq
+func000000000000010c:                   # @func000000000000010c
+	movslq	%edx, %rax
+	cmpq	%rax, %rsi
+	seta	%cl
+	testl	%edi, %edi
+	setne	%al
 	andb	%cl, %al
 	retq
 func000000000000008c:                   # @func000000000000008c
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	setb	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000010a:                   # @func000000000000010a
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	seta	%cl
-	testl	%edi, %edi
-	setne	%al
-	andb	%cl, %al
-	retq
-func0000000000000068:                   # @func0000000000000068
-	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setg	%cl
-	cmpl	$2, %edi
-	setae	%al
-	andb	%cl, %al
-	retq
-func000000000000008a:                   # @func000000000000008a
-	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setb	%cl
 	testl	%edi, %edi
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	seta	%cl
+	cmpq	%rax, %rsi
+	setb	%cl
 	cmpl	$176, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setl	%cl
+	cmpq	%rax, %rsi
+	setg	%cl
 	cmpl	$65536, %edi                    # imm = 0x10000
 	setb	%al
 	andb	%cl, %al

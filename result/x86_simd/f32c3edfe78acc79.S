@@ -36,7 +36,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000444:                   # @func0000000000000444
+func0000000000001084:                   # @func0000000000001084
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltud	.LCPI0_1(%rip){1to8}, %ymm1, %k0
 	vpaddb	.LCPI0_2(%rip), %xmm0, %xmm0
@@ -83,7 +83,7 @@ func0000000000000444:                   # @func0000000000000444
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltud	.LCPI1_1(%rip){1to8}, %ymm1, %k0
 	vpaddb	.LCPI1_2(%rip), %xmm0, %xmm0

@@ -1,34 +1,17 @@
-func0000000000000023:                   // @func0000000000000023
+func0000000000000043:                   // @func0000000000000043
 // %bb.0:                               // %entry
-	mov	v4.16b, v1.16b
-	mov	v5.16b, v0.16b
 	mov	w8, #4229                       // =0x1085
-	cmeq	v3.4s, v3.4s, #0
-	cmeq	v2.4s, v2.4s, #0
+	orr	w9, w0, #0x20
+	cmp	w1, #0
 	movk	w8, #2114, lsl #16
-	orr	v4.4s, #32
-	orr	v5.4s, #32
-	bif	v1.16b, v4.16b, v3.16b
-	bif	v0.16b, v5.16b, v2.16b
-	dup	v3.4s, w8
-	umull2	v2.2d, v1.4s, v3.4s
-	umull	v4.2d, v1.2s, v3.2s
-	umull2	v5.2d, v0.4s, v3.4s
-	umull	v3.2d, v0.2s, v3.2s
-	mov	v6.16b, v0.16b
-	uzp2	v2.4s, v4.4s, v2.4s
-	uzp2	v3.4s, v3.4s, v5.4s
-	sub	v4.4s, v1.4s, v2.4s
-	sub	v5.4s, v0.4s, v3.4s
-	usra	v2.4s, v4.4s, #1
-	movi	v4.4s, #31
-	usra	v3.4s, v5.4s, #1
-	mov	v5.16b, v1.16b
-	ushr	v2.4s, v2.4s, #4
-	ushr	v3.4s, v3.4s, #4
-	mls	v5.4s, v2.4s, v4.4s
-	mls	v6.4s, v3.4s, v4.4s
-	orr	v1.16b, v5.16b, v1.16b
-	orr	v0.16b, v6.16b, v0.16b
+	csel	w9, w0, w9, eq
+	umull	x8, w9, w8
+	lsr	x8, x8, #32
+	sub	w10, w9, w8
+	add	w8, w8, w10, lsr #1
+	lsr	w8, w8, #4
+	sub	w8, w8, w8, lsl #5
+	add	w8, w9, w8
+	orr	w0, w8, w9
 	ret
                                         // -- End function

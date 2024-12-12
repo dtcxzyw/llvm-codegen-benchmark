@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; hdf5/optimized/H5Olink.c.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -34,21 +34,21 @@
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; pybind11/optimized/test_tagbased_polymorphic.cpp.ll
 ; pybind11/optimized/test_type_caster_pyobject_ptr.cpp.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = select i1 %3, i8 32, i8 0
+  %4 = select i1 %3, i8 2, i8 0
   %5 = or disjoint i8 %4, %1
   %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; ockam-rs/optimized/r526c2e8kd9diy6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i8 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -70,7 +70,7 @@ define i8 @func0000000000000002(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i8 8, i8 0
-  %5 = or disjoint i8 %4, %1
+  %5 = or disjoint i8 %1, %4
   %6 = or i8 %5, %0
   ret i8 %6
 }

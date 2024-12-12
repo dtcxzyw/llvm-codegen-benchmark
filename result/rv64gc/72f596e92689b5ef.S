@@ -3,5 +3,5 @@ func0000000000000005:                   # @func0000000000000005
 	beqz	a1, .LBB0_2
 	neg	a2, a2
 .LBB0_2:                                # %entry
-	mulw	a0, a2, a0
+	mulw	a0, a0, a2
 	ret

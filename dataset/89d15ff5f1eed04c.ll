@@ -65,7 +65,7 @@ entry:
   ret i1 %2
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/charconv_test.cc.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
@@ -75,7 +75,6 @@ entry:
 ; llvm/optimized/DeclarationFragments.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/ProfileList.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RetainSummaryManager.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll

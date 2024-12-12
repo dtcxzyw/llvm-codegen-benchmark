@@ -4,10 +4,10 @@ func0000000000000002:                   # @func0000000000000002
 	andl	$65280, %ecx                    # imm = 0xFF00
 	orl	%ecx, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
+func0000000000000012:                   # @func0000000000000012
 	movl	%edi, %eax
 	movzbl	%ah, %ecx
 	movl	%ecx, %eax
-	shll	$7, %eax
+	shll	$8, %eax
 	subl	%ecx, %eax
 	retq

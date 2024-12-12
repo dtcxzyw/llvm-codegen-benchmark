@@ -9,13 +9,13 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000020a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 16
   %4 = zext i1 %3 to i32
   %5 = shl i32 %1, %4
   %6 = udiv i32 2147483647, %5
-  %7 = icmp slt i32 %6, %0
+  %7 = icmp sgt i32 %0, %6
   ret i1 %7
 }
 

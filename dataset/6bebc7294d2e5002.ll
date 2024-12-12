@@ -10,7 +10,7 @@
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i32 %0, i32 2
   ret i32 %5
 }

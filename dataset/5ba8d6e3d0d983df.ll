@@ -28,7 +28,7 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %2, 0
   %3 = icmp eq i32 %0, %1
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_auto_possess.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 16
   %4 = icmp ne i32 %0, %1
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/gregocal.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp slt i32 %0, %1

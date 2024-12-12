@@ -7,7 +7,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 15
   %5 = shl nsw i32 %1, 23
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -20,7 +20,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 26
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = shl nuw nsw i32 %5, 16
   %7 = or disjoint i32 %6, %4

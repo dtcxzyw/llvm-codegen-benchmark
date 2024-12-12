@@ -1,38 +1,38 @@
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	vcvttss2si	%xmm0, %eax
-	cmpl	%esi, %eax
-	setl	%cl
-	testl	%edi, %edi
-	setne	%al
-	andb	%cl, %al
-	retq
-func00000000000000aa:                   # @func00000000000000aa
-	vcvttss2si	%xmm0, %eax
-	cmpl	%esi, %eax
-	setl	%cl
-	testl	%edi, %edi
-	setns	%al
-	andb	%cl, %al
-	retq
-func000000000000001c:                   # @func000000000000001c
-	vcvttss2si	%xmm0, %eax
-	cmpl	%esi, %eax
-	sete	%cl
-	testl	%edi, %edi
-	setne	%al
-	andb	%cl, %al
-	retq
-func000000000000006c:                   # @func000000000000006c
-	vcvttss2si	%xmm0, %eax
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
 	setg	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000014a:                   # @func000000000000014a
 	vcvttss2si	%xmm0, %eax
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
+	setg	%cl
+	testl	%edi, %edi
+	setns	%al
+	andb	%cl, %al
+	retq
+func000000000000002c:                   # @func000000000000002c
+	vcvttss2si	%xmm0, %eax
+	cmpl	%eax, %esi
+	sete	%cl
+	testl	%edi, %edi
+	setne	%al
+	andb	%cl, %al
+	retq
+func00000000000000cc:                   # @func00000000000000cc
+	vcvttss2si	%xmm0, %eax
+	cmpl	%eax, %esi
+	setl	%cl
+	testl	%edi, %edi
+	setne	%al
+	andb	%cl, %al
+	retq
+func000000000000018a:                   # @func000000000000018a
+	vcvttss2si	%xmm0, %eax
+	cmpl	%eax, %esi
 	setne	%cl
 	testl	%edi, %edi
 	setg	%al

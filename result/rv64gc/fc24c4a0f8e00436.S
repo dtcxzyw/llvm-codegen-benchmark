@@ -22,10 +22,3 @@ func0000000000000061:                   # @func0000000000000061
 	srli	a0, a0, 4
 	addiw	a0, a0, 1
 	ret
-func000000000000006a:                   # @func000000000000006a
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	addi	a0, a0, 8
-	srli	a0, a0, 1
-	addiw	a0, a0, 3
-	ret

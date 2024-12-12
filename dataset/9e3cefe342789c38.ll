@@ -25,7 +25,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 31
   %6 = shl nuw i32 1, %5
-  %7 = and i32 %6, %0
+  %7 = and i32 %0, %6
   ret i32 %7
 }
 

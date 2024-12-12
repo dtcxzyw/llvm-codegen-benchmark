@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 43 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/giaPat2.c.ll
 ; arrow/optimized/int_util.cc.ll
@@ -40,6 +40,9 @@
 ; wolfssl/optimized/api.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/aigerparse.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

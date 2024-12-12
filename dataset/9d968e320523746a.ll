@@ -23,7 +23,7 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; opencv/optimized/colored_kinfu.cpp.ll
@@ -32,6 +32,7 @@ entry:
 ; opencv/optimized/kinfu.cpp.ll
 ; opencv/optimized/large_kinfu.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, double %2) #0 {
 entry:

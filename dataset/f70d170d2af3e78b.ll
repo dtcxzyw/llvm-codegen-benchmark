@@ -3,7 +3,7 @@
 ; cmake/optimized/archive_entry.c.ll
 ; qemu/optimized/migration_block.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(ptr %0, i32 %1) #0 {
+define i32 @func0000000000000058(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp ne ptr %0, null
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/DefaultProxySelector.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000198(ptr %0, i32 %1) #0 {
+define i32 @func0000000000000318(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ne ptr %0, null
@@ -28,7 +28,7 @@ entry:
 ; graphviz/optimized/scan.c.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000158(ptr %0, i32 %1) #0 {
+define i32 @func0000000000000298(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 1
   %3 = icmp ne ptr %0, null
@@ -41,7 +41,7 @@ entry:
 ; node/optimized/libnode.node_messaging.ll
 ; wireshark/optimized/packet-dcom-cba-acco.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000098(ptr %0, i32 %1) #0 {
+define i32 @func0000000000000118(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 10
   %3 = icmp ne ptr %0, null

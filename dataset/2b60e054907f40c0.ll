@@ -12,7 +12,7 @@ entry:
   ret i32 %5
 }
 
-; 33 occurrences:
+; 35 occurrences:
 ; freetype/optimized/psnames.c.ll
 ; linux/optimized/i9xx_wm.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -44,6 +44,8 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86LowerAMXIntrinsics.cpp.ll
+; luajit/optimized/lj_strfmt.ll
+; luajit/optimized/lj_strfmt_dyn.ll
 ; luau/optimized/Lexer.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind

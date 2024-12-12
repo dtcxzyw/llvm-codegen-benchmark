@@ -18,6 +18,6 @@ func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
 	cmp	w2, #0
 	csel	x8, x0, xzr, eq
-	add	x0, x8, w1, sxtw #3
+	add	x0, x8, w1, sxtw
 	ret
                                         // -- End function

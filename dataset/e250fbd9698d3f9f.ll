@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; ruby/optimized/pm_integer.ll
 ; wasmtime-rs/optimized/51r9csr3d9dou1a2.ll
 ; wireshark/optimized/packet-dnp.c.ll
-; wireshark/optimized/packet-stcsig.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:

@@ -80,7 +80,7 @@ entry:
 ; icu/optimized/number_decimalquantity.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i64 %1) #0 {
+define i1 @func000000000000018a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -93,12 +93,12 @@ entry:
 ; llvm/optimized/MachineUniformityAnalysis.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %0, -1
-  %4 = icmp eq i32 %3, %2
-  ret i1 %4
+  %.neg = add i32 %2, 1
+  %3 = icmp eq i32 %0, %.neg
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -118,32 +118,32 @@ entry:
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %0, -1
-  %4 = icmp eq i32 %3, %2
-  ret i1 %4
+  %.neg = add i32 %2, 1
+  %3 = icmp eq i32 %0, %.neg
+  ret i1 %3
 }
 
 ; 2 occurrences:
 ; z3/optimized/qe.cpp.ll
 ; z3/optimized/sat_drat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %0, -1
-  %4 = icmp eq i32 %3, %2
-  ret i1 %4
+  %.neg = add i32 %2, 1
+  %3 = icmp eq i32 %0, %.neg
+  ret i1 %3
 }
 
 ; 1 occurrences:
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000dc(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001ac(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %0, -1
-  %4 = icmp ne i32 %3, %2
-  ret i1 %4
+  %.neg = add i32 %2, 1
+  %3 = icmp ne i32 %0, %.neg
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -152,7 +152,7 @@ entry:
 ; graphviz/optimized/stress.c.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001aa(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -163,7 +163,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001a6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -176,23 +176,23 @@ entry:
 ; proj/optimized/cct.cpp.ll
 ; proj/optimized/gie.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %0, -1
-  %4 = icmp eq i32 %3, %2
-  ret i1 %4
+  %.neg = add i32 %2, 1
+  %3 = icmp eq i32 %0, %.neg
+  ret i1 %3
 }
 
 ; 2 occurrences:
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001a4(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = xor i32 %2, 63
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = icmp ult i32 %4, 53
   ret i1 %5
 }
@@ -200,7 +200,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000188(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub i32 %2, %0
@@ -211,7 +211,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/samplers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000106(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sub i32 %2, %0

@@ -1,12 +1,11 @@
 
-; 18 occurrences:
+; 16 occurrences:
 ; abc/optimized/bmcInse.c.ll
 ; clamav/optimized/qsort.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; opencv/optimized/svm.cpp.ll
 ; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
 ; openjdk/optimized/g1FullGCMarker.ll
 ; openjdk/optimized/g1FullGCOopClosures.ll
 ; openjdk/optimized/g1ParScanThreadState.ll
@@ -15,7 +14,6 @@
 ; openjdk/optimized/zHeapIterator.ll
 ; openusd/optimized/aom_scale.c.ll
 ; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/openexr-c.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind

@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_basicadj.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; llama.cpp/optimized/ggml.c.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:

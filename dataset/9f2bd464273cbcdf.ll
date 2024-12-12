@@ -1,5 +1,6 @@
 
-; 27 occurrences:
+; 28 occurrences:
+; boost/optimized/static_string.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; llvm/optimized/RegisterClassInfo.cpp.ll
 ; llvm/optimized/RegisterScavenging.cpp.ll

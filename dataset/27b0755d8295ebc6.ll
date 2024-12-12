@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
 ; openspiel/optimized/goofspiel.cc.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll

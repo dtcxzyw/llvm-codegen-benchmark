@@ -15,14 +15,14 @@ func0000000000000014:                   # @func0000000000000014
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.long	2                               # 0x2
 func000000000000003f:                   # @func000000000000003f
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000015:                   # @func0000000000000015
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -34,7 +34,7 @@ func0000000000000019:                   # @func0000000000000019
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000011:                   # @func0000000000000011
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -84,7 +84,7 @@ func0000000000000005:                   # @func0000000000000005
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI14_0:
 	.long	4                               # 0x4
@@ -97,7 +97,7 @@ func0000000000000034:                   # @func0000000000000034
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000030:                   # @func0000000000000030
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -110,5 +110,5 @@ func0000000000000030:                   # @func0000000000000030
 func000000000000001c:                   # @func000000000000001c
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	.LCPI17_0(%rip){1to8}, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq

@@ -11,7 +11,7 @@
 ; php/optimized/fastcgi.ll
 ; rocksdb/optimized/log_reader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000e1(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -34,7 +34,7 @@ entry:
 ; php/optimized/fastcgi.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000ec(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/avifinfo.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl i32 %1, 8
@@ -60,12 +60,26 @@ entry:
 ; 1 occurrences:
 ; coreutils-rs/optimized/12183t08bisz8vo8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000a4(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %1, 8
   %5 = or disjoint i32 %4, %3
   %6 = icmp ult i32 %5, 128
+  %7 = select i1 %0, i1 %6, i1 false
+  ret i1 %7
+}
+
+; 2 occurrences:
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f8(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = shl nuw nsw i32 %1, 8
+  %5 = or disjoint i32 %4, %3
+  %6 = icmp samesign ugt i32 %5, 6
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }

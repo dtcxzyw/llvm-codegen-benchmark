@@ -7,7 +7,7 @@
 	.short	128                             # 0x80
 	.short	128                             # 0x80
 	.short	128                             # 0x80
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpaddw	.LCPI0_0(%rip), %xmm1, %xmm0
 	retq
 .LCPI1_0:

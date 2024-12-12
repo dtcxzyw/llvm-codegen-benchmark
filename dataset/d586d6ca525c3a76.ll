@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 44 occurrences:
 ; abc/optimized/cnfWrite.c.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -31,8 +31,6 @@
 ; msdfgen/optimized/msdf-error-correction.cpp.ll
 ; opencv/optimized/ppf_match_3d.cpp.ll
 ; openjdk/optimized/pngread.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; php/optimized/PMurHash128.ll
 ; php/optimized/image.ll
@@ -50,12 +48,12 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
-  %3 = mul i32 %2, 1461
-  %4 = add i32 %3, 7012800
+  %3 = mul i32 %2, 5
+  %4 = add i32 %3, -430675100
   ret i32 %4
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/cnfWrite.c.ll
 ; abc/optimized/ioaWriteAig.c.ll
 ; arrow/optimized/bignum.cc.ll
@@ -69,7 +67,6 @@ entry:
 ; double_conversion/optimized/bignum.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; icu/optimized/gregocal.ll
-; icu/optimized/gregoimp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; libquic/optimized/prtime.cc.ll
 ; luajit/optimized/lj_lex.ll
@@ -209,7 +206,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
@@ -236,6 +234,19 @@ entry:
   ret i32 %4
 }
 
+; 3 occurrences:
+; libwebp/optimized/yuv.c.ll
+; lvgl/optimized/lv_refr.ll
+; nori/optimized/nanovg.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %0, %1
+  %3 = mul i32 %2, 3600
+  %4 = add i32 %3, 3600
+  ret i32 %4
+}
+
 ; 2 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -257,18 +268,6 @@ entry:
   %2 = add i32 %0, %1
   %3 = mul nuw nsw i32 %2, 100
   %4 = add nsw i32 %3, -1900
-  ret i32 %4
-}
-
-; 2 occurrences:
-; libwebp/optimized/yuv.c.ll
-; nori/optimized/nanovg.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %0, %1
-  %3 = mul i32 %2, 10
-  %4 = add i32 %3, 15
   ret i32 %4
 }
 

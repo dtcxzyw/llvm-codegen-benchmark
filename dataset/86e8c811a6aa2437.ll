@@ -8,7 +8,7 @@ entry:
   %2 = add i32 %1, 7
   %3 = and i32 %2, -8
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = add i32 %1, 63
   %3 = and i32 %2, -64
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -33,7 +33,20 @@ entry:
   %2 = add i32 %1, 7
   %3 = and i32 %2, -8
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; libwebp/optimized/alpha_processing_sse2.c.ll
+; libwebp/optimized/alpha_processing_sse41.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1
+  %3 = and i32 %2, -16
+  %4 = sext i32 %3 to i64
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 

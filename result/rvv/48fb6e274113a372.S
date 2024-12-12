@@ -7,7 +7,7 @@ func0000000000000003:                   # @func0000000000000003
 	lui	a0, 512
 	vor.vx	v8, v8, a0, v0.t
 	ret
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	lui	a0, 16
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma

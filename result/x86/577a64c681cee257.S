@@ -173,6 +173,20 @@ func000000000000006f:                   # @func000000000000006f
 	shll	$24, %eax
 	orl	%edx, %eax
 	retq
+func0000000000000070:                   # @func0000000000000070
+	movzbl	%dl, %ecx
+	shll	$11, %ecx
+	leal	(,%rdi,8), %eax
+	orl	%esi, %eax
+	orl	%ecx, %eax
+	retq
+func0000000000000076:                   # @func0000000000000076
+	movzbl	%dl, %ecx
+	shll	$11, %ecx
+	leal	(,%rdi,8), %eax
+	orl	%esi, %eax
+	orl	%ecx, %eax
+	retq
 func000000000000002d:                   # @func000000000000002d
 	movl	%esi, %eax
 	shll	$24, %edx

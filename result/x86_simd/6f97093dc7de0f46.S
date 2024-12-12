@@ -66,5 +66,5 @@ func0000000000000009:                   # @func0000000000000009
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vgf2p8affineqb	$0, .LCPI0_5(%rip){1to2}, %xmm1, %xmm1
 	vpmovsxbd	%xmm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

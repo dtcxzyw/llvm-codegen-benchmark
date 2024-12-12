@@ -1,6 +1,5 @@
 
-; 15 occurrences:
-; linux/optimized/net-traces.ll
+; 14 occurrences:
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
 ; luajit/optimized/lj_asm.ll

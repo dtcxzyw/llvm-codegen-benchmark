@@ -51,7 +51,7 @@ func0000000000000005:                   # @func0000000000000005
 	vmerge.vvm	v8, v10, v8, v0
 	vsll.vi	v8, v8, 2
 	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v12, a0

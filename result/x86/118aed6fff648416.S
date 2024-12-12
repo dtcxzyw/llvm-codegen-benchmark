@@ -1,35 +1,28 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000e1:                   # @func00000000000000e1
 	testq	%rdx, %rdx
 	cmoveq	%rdx, %rsi
 	addq	$8, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000ec:                   # @func00000000000000ec
 	testq	%rdx, %rdx
 	cmoveq	%rdx, %rsi
 	addq	$48, %rsi
-	cmpq	%rdi, %rsi
-	sete	%al
-	retq
-func000000000000007c:                   # @func000000000000007c
-	testq	%rdx, %rdx
-	cmoveq	%rdx, %rsi
-	addq	$48, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	setne	%al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000e8:                   # @func00000000000000e8
 	testq	%rdx, %rdx
 	cmoveq	%rdx, %rsi
 	addq	$88, %rsi
-	cmpq	%rdi, %rsi
-	setb	%al
+	cmpq	%rsi, %rdi
+	seta	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	testq	%rdx, %rdx
 	cmoveq	%rdx, %rsi
 	addq	$-3, %rsi
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq

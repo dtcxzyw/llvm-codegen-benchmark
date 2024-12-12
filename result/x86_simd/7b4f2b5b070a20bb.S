@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	6                               # 0x6
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vptestnmb	%xmm1, %xmm1, %k0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k1

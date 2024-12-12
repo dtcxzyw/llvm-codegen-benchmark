@@ -6,7 +6,7 @@
 ; wireshark/optimized/g711.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -14,12 +14,11 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/wlcBlast.c.ll
-; opencv/optimized/sift.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, 2
   %4 = select i1 %3, i32 %1, i32 %2
@@ -35,18 +34,18 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000158(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, 2
   %4 = select i1 %3, i32 %1, i32 %2
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/KnownBits.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %3 = select i1 %.not, i32 %2, i32 %1
@@ -59,7 +58,7 @@ entry:
 ; icu/optimized/ubidiln.ll
 ; postgres/optimized/varlena.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000146(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, 0
   %4 = select i1 %3, i32 %1, i32 %2

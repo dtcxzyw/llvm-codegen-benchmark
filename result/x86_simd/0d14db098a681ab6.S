@@ -19,7 +19,7 @@ func0000000000000002:                   # @func0000000000000002
 	.long	6                               # 0x6
 .LCPI2_2:
 	.long	1                               # 0x1
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	vpandd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpltd	.LCPI2_1(%rip){1to4}, %xmm1, %k1
 	vpbroadcastd	.LCPI2_2(%rip), %xmm0 {%k1} # xmm0 {%k1} = [1,1,1,1]

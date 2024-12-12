@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 54 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaEra2.c.ll
@@ -32,8 +32,6 @@
 ; opencv/optimized/graph.pb.cc.ll
 ; openjdk/optimized/IntArgbBm.ll
 ; openjdk/optimized/cmstypes.ll
-; openssl/optimized/libcrypto-lib-cms_asn1.ll
-; openssl/optimized/libcrypto-shlib-cms_asn1.ll
 ; php/optimized/crypt_freesec.ll
 ; php/optimized/crypt_sha256.ll
 ; php/optimized/md5.ll
@@ -64,27 +62,6 @@ entry:
   ret i32 %2
 }
 
-; 12 occurrences:
-; hermes/optimized/APFloat.cpp.ll
-; hermes/optimized/APInt.cpp.ll
-; icu/optimized/decNumber.ll
-; jq/optimized/decNumber.ll
-; linux/optimized/8250_dwlib.ll
-; linux/optimized/8250_early.ll
-; linux/optimized/intel_backlight.ll
-; linux/optimized/serial_core.ll
-; llvm/optimized/APInt.cpp.ll
-; php/optimized/ZendAccelerator.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
-; z3/optimized/smt_clause.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0) #0 {
-entry:
-  %1 = shl i32 %0, 5
-  %2 = and i32 %1, 8160
-  ret i32 %2
-}
-
 ; 6 occurrences:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -97,6 +74,25 @@ define i32 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 15
   %2 = and i32 %1, 65535
+  ret i32 %2
+}
+
+; 10 occurrences:
+; hermes/optimized/APFloat.cpp.ll
+; hermes/optimized/APInt.cpp.ll
+; icu/optimized/decNumber.ll
+; jq/optimized/decNumber.ll
+; linux/optimized/8250_early.ll
+; linux/optimized/intel_backlight.ll
+; linux/optimized/serial_core.ll
+; llvm/optimized/APInt.cpp.ll
+; php/optimized/ZendAccelerator.ll
+; z3/optimized/smt_clause.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0) #0 {
+entry:
+  %1 = shl i32 %0, 14
+  %2 = and i32 %1, 2147467264
   ret i32 %2
 }
 

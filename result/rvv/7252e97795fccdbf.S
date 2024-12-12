@@ -22,7 +22,7 @@ func0000000000000064:                   # @func0000000000000064
 func0000000000000074:                   # @func0000000000000074
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v9, v9, 3
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	vnsrl.wi	v9, v10, 0
 	vadd.vv	v8, v8, v9
 	ret

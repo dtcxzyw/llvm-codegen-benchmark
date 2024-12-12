@@ -13,9 +13,16 @@ entry:
   ret ptr %5
 }
 
-; 34 occurrences:
+; 40 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/expand.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/write_dsv.ll
 ; clamav/optimized/arc4.c.ll
 ; nix/optimized/attr-path.ll
 ; nix/optimized/cgroup.ll
@@ -26,8 +33,6 @@ entry:
 ; nix/optimized/local-store.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/profiles.ll
 ; nix/optimized/shared.ll
@@ -48,16 +53,17 @@ entry:
 ; protobuf/optimized/map.cc.ll
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
+; quantlib/optimized/dataparsers.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i8 %1, i8 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %1, %2
   %4 = zext i8 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
 ; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
@@ -78,7 +84,6 @@ entry:
 ; llvm/optimized/MIRPrinter.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
@@ -94,11 +99,11 @@ entry:
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1, i8 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, %2
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 

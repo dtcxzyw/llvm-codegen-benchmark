@@ -19,7 +19,7 @@ entry:
   ret i32 %3
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; c3c/optimized/c_abi_aarch64.c.ll
 ; c3c/optimized/llvm_codegen.c.ll
 ; c3c/optimized/llvm_codegen_function.c.ll
@@ -35,9 +35,9 @@ entry:
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_roller.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; postgres/optimized/brin.ll
-; postgres/optimized/brin_revmap.ll
 ; qemu/optimized/block_block-copy.c.ll
 ; qemu/optimized/hw_acpi_erst.c.ll
 ; qemu/optimized/hw_core_loader.c.ll
@@ -50,6 +50,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wolfssl/optimized/pwdbased.c.ll
 ; z3/optimized/pb_solver.cpp.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:

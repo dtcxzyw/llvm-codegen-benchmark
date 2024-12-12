@@ -72,6 +72,16 @@ func000000000000004c:                   # @func000000000000004c
 	vucomisd	%xmm0, %xmm1
 	setae	%al
 	retq
+.LCPI9_0:
+	.quad	0x0010000000000000              # double 2.2250738585072014E-308
+func0000000000000025:                   # @func0000000000000025
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmpltsd	%xmm2, %xmm1, %k1
+	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
+	vmovsd	.LCPI9_0(%rip), %xmm0           # xmm0 = [2.2250738585072014E-308,0.0E+0]
+	vucomisd	%xmm1, %xmm0
+	setb	%al
+	retq
 func000000000000003d:                   # @func000000000000003d
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpnlesd	%xmm1, %xmm2, %k1
@@ -92,42 +102,42 @@ func00000000000000e1:                   # @func00000000000000e1
 	vucomisd	%xmm1, %xmm1
 	setp	%al
 	retq
-.LCPI12_0:
+.LCPI13_0:
 	.quad	0x3f847ae147ae147b              # double 0.01
 func0000000000000034:                   # @func0000000000000034
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpnlesd	%xmm1, %xmm2, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
-	vucomisd	.LCPI12_0(%rip), %xmm1
+	vucomisd	.LCPI13_0(%rip), %xmm1
 	seta	%al
 	retq
-.LCPI13_0:
+.LCPI14_0:
 	.quad	0x3d719799812dea11              # double 9.9999999999999998E-13
 func0000000000000035:                   # @func0000000000000035
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpnlesd	%xmm1, %xmm2, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
-	vmovsd	.LCPI13_0(%rip), %xmm0          # xmm0 = [9.9999999999999998E-13,0.0E+0]
+	vmovsd	.LCPI14_0(%rip), %xmm0          # xmm0 = [9.9999999999999998E-13,0.0E+0]
 	vucomisd	%xmm1, %xmm0
 	setb	%al
 	retq
-.LCPI14_0:
+.LCPI15_0:
 	.quad	0x3d719799812dea11              # double 9.9999999999999998E-13
 func000000000000003a:                   # @func000000000000003a
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpnlesd	%xmm1, %xmm2, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
-	vmovsd	.LCPI14_0(%rip), %xmm0          # xmm0 = [9.9999999999999998E-13,0.0E+0]
+	vmovsd	.LCPI15_0(%rip), %xmm0          # xmm0 = [9.9999999999999998E-13,0.0E+0]
 	vucomisd	%xmm1, %xmm0
 	setae	%al
 	retq
-.LCPI15_0:
+.LCPI16_0:
 	.quad	0x73d658e3ab795204              # double 9.9999999999999992E+249
 func0000000000000032:                   # @func0000000000000032
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpnlesd	%xmm1, %xmm2, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
-	vmovsd	.LCPI15_0(%rip), %xmm0          # xmm0 = [9.9999999999999992E+249,0.0E+0]
+	vmovsd	.LCPI16_0(%rip), %xmm0          # xmm0 = [9.9999999999999992E+249,0.0E+0]
 	vucomisd	%xmm1, %xmm0
 	seta	%al
 	retq
@@ -138,31 +148,31 @@ func0000000000000033:                   # @func0000000000000033
 	vucomisd	%xmm2, %xmm1
 	setb	%al
 	retq
-.LCPI17_0:
+.LCPI18_0:
 	.quad	0x4066800000000000              # double 180
-.LCPI17_1:
+.LCPI18_1:
 	.quad	0x4056800000000000              # double 90
 func0000000000000044:                   # @func0000000000000044
-	vcmpgtsd	.LCPI17_0(%rip), %xmm1, %k1
-	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
-	vucomisd	.LCPI17_1(%rip), %xmm1
-	seta	%al
-	retq
-.LCPI18_0:
-	.quad	0x4056800000000000              # double 90
-.LCPI18_1:
-	.quad	0x404e000000000000              # double 60
-func0000000000000045:                   # @func0000000000000045
 	vcmpgtsd	.LCPI18_0(%rip), %xmm1, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
-	vmovsd	.LCPI18_1(%rip), %xmm0          # xmm0 = [6.0E+1,0.0E+0]
+	vucomisd	.LCPI18_1(%rip), %xmm1
+	seta	%al
+	retq
+.LCPI19_0:
+	.quad	0x4056800000000000              # double 90
+.LCPI19_1:
+	.quad	0x404e000000000000              # double 60
+func0000000000000045:                   # @func0000000000000045
+	vcmpgtsd	.LCPI19_0(%rip), %xmm1, %k1
+	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
+	vmovsd	.LCPI19_1(%rip), %xmm0          # xmm0 = [6.0E+1,0.0E+0]
 	vucomisd	%xmm1, %xmm0
 	setb	%al
 	retq
-.LCPI19_0:
+.LCPI20_0:
 	.quad	0x7ff0000000000000              # double +Inf
 func000000000000008e:                   # @func000000000000008e
-	vcmpgesd	.LCPI19_0(%rip), %xmm1, %k1
+	vcmpgesd	.LCPI20_0(%rip), %xmm1, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
 	vucomisd	%xmm1, %xmm1
 	setnp	%al
@@ -180,16 +190,6 @@ func0000000000000082:                   # @func0000000000000082
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
 	vucomisd	%xmm1, %xmm2
 	seta	%al
-	retq
-.LCPI22_0:
-	.quad	0x4056800000000000              # double 90
-func0000000000000025:                   # @func0000000000000025
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpltsd	%xmm2, %xmm1, %k1
-	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
-	vmovsd	.LCPI22_0(%rip), %xmm0          # xmm0 = [9.0E+1,0.0E+0]
-	vucomisd	%xmm1, %xmm0
-	setb	%al
 	retq
 func000000000000008c:                   # @func000000000000008c
 	vxorpd	%xmm2, %xmm2, %xmm2

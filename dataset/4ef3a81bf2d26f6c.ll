@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; actix-rs/optimized/34v80y29y6uwgxas.ll
 ; coreutils-rs/optimized/10w4sgrrvnzii9mc.ll
 ; coreutils-rs/optimized/4cobss4bncibjvnb.ll
@@ -24,12 +24,11 @@
 ; syn/optimized/2tga7oe2tfdpj05w.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
-; wasmtime-rs/optimized/36yjtqj8atprwkc8.ll
 ; wasmtime-rs/optimized/o5hc9u3mlvace0j.ll
 ; Function Attrs: nounwind
-define { ptr, ptr } @func0000000000000021(ptr %0, ptr %1) #0 {
+define { ptr, ptr } @func0000000000000061(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, ptr null, ptr %2
   %5 = insertvalue { ptr, ptr } poison, ptr %4, 0

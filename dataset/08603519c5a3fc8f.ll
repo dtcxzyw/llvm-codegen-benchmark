@@ -7,7 +7,7 @@
 define i1 @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fdiv double %1, 1.000000e+09
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fdiv double %1, 6.000000e+00
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 

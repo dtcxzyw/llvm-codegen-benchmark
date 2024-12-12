@@ -7,7 +7,7 @@ func0000000000000088:                   # @func0000000000000088
 	vcmpltps	%zmm2, %zmm0, %k1
 	vcmpltps	%zmm1, %zmm0, %k2
 	korw	%k1, %k2, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

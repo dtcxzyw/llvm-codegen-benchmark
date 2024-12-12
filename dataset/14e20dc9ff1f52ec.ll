@@ -1,5 +1,11 @@
 
-; 101 occurrences:
+; 104 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/unpack.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -16,9 +22,6 @@
 ; linux/optimized/igmp.ll
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/libata-pata-timings.ll
-; linux/optimized/mcast_snoop.ll
-; linux/optimized/nvram.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/scsi_lib.ll
 ; linux/optimized/skl_watermark.ll
@@ -39,7 +42,6 @@
 ; qemu/optimized/hw_net_tulip.c.ll
 ; qemu/optimized/hw_nvme_dif.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
-; qemu/optimized/monitor_hmp-cmds.c.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
 ; slurm/optimized/step_mgr.ll
@@ -89,6 +91,7 @@
 ; wireshark/optimized/packet-windows-common.c.ll
 ; wireshark/optimized/sctp_graph_dialog.cpp.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/ODCodabarReader.cpp.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
@@ -144,10 +147,9 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/icl_dsi.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
-; wireshark/optimized/packet-tdmoe.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:

@@ -1,5 +1,7 @@
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; graphviz/optimized/poly.c.ll
 ; openmpi/optimized/tm_bucket.ll
 ; openusd/optimized/matrix3d.cpp.ll
@@ -51,7 +53,7 @@ entry:
 ; 74 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
-; casadi/optimized/cs_droptol.c.ll
+; boost/optimized/buffer_piece_border.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -131,12 +133,11 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; gromacs/optimized/dstebz.cpp.ll
 ; ipopt/optimized/IpTNLPAdapter.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; lua/optimized/lvm.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dstebz.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -190,17 +191,14 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 14 occurrences:
 ; abc/optimized/cuddAddIte.c.ll
 ; cpython/optimized/ceval.ll
 ; graphviz/optimized/xlayout.c.ll
 ; lua/optimized/lvm.ll
 ; luau/optimized/lvmutils.cpp.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dlaebz.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; opencv/optimized/rho.cpp.ll
 ; openjdk/optimized/cmssm.ll
 ; proj/optimized/geodesic.c.ll
@@ -216,11 +214,10 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/extraUtilMisc.c.ll
 ; icu/optimized/tzrule.ll
 ; jq/optimized/jv.ll
-; openblas/optimized/dlaisnan.c.ll
 ; openjdk/optimized/g1GCPhaseTimes.ll
 ; postgres/optimized/rangetypes_typanalyze.ll
 ; redis/optimized/geo.ll

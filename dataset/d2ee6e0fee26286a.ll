@@ -7,7 +7,7 @@
 ; llvm/optimized/SemaDecl.cpp.ll
 ; verilator/optimized/V3LinkCells.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 512
   %3 = icmp eq i16 %2, 0
@@ -20,7 +20,7 @@ entry:
 ; abc/optimized/wlcBlast.c.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i16 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1024
   %3 = icmp eq i16 %2, 0

@@ -11,7 +11,7 @@ entry:
   ret i64 %3
 }
 
-; 58 occurrences:
+; 63 occurrences:
 ; abc/optimized/extraUtilSupp.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/Subdivision.cpp.ll
@@ -70,6 +70,11 @@ entry:
 ; php/optimized/zend_ssa.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; qemu/optimized/fpu_softfloat.c.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -126,10 +131,14 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 7 occurrences:
 ; cpython/optimized/compile.ll
 ; icu/optimized/collationbuilder.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
 entry:

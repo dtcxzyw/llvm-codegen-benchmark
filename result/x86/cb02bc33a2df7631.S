@@ -1,0 +1,8 @@
+func000000000000000a:                   # @func000000000000000a
+	leal	2(%rdi,%rdi,4), %eax
+	movl	$3593175255, %ecx               # imm = 0xD62B80D7
+	imulq	%rax, %rcx
+	shrq	$39, %rcx
+	imull	$153, %ecx, %eax
+	addl	$2, %eax
+	retq

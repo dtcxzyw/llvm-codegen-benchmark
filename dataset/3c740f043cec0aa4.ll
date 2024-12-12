@@ -65,9 +65,8 @@ entry:
   ret i32 %2
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; nuttx/optimized/lib_dtoa_engine.c.ll
-; openblas/optimized/ddisna.c.ll
 ; opencv/optimized/geometry.cpp.ll
 ; openjdk/optimized/cmsvirt.ll
 ; openusd/optimized/frustum.cpp.ll
@@ -80,8 +79,7 @@ entry:
   ret i32 %2
 }
 
-; 17 occurrences:
-; casadi/optimized/cs_dropzeros.c.ll
+; 14 occurrences:
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; cpython/optimized/complexobject.ll
 ; cpython/optimized/floatobject.ll
@@ -89,9 +87,7 @@ entry:
 ; graphviz/optimized/lu.c.ll
 ; gromacs/optimized/enxio.cpp.ll
 ; jsonnet/optimized/libjsonnet.cpp.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtgsyl.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/count_non_zero.dispatch.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; portaudio/optimized/pa_unix_util.c.ll
@@ -106,10 +102,11 @@ entry:
   ret i32 %2
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; abc/optimized/amapLib.c.ll
 ; abc/optimized/mioRead.c.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/get_distance_measure.ll
 ; casadi/optimized/cs_updown.c.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -235,10 +232,8 @@ entry:
   ret i32 %2
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; cpython/optimized/mathmodule.ll
-; openblas/optimized/lapacke_d_nancheck.c.ll
-; openblas/optimized/lapacke_z_nancheck.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(double %0) #0 {
 entry:

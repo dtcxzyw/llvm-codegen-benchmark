@@ -1,10 +1,10 @@
-func000000000000005a:                   # @func000000000000005a
-	movzbl	%dl, %eax
-	shlq	$6, %rsi
-	addq	%rdi, %rsi
-	leaq	32(%rax,%rsi), %rax
+func000000000000007f:                   # @func000000000000007f
+	andl	$1023, %edx                     # imm = 0x3FF
+	imulq	$3488, %rsi, %rax               # imm = 0xDA0
+	addq	%rdi, %rax
+	leaq	288(%rax,%rdx,2), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	andl	$1, %edx
 	leaq	(%rsi,%rsi,2), %rax
 	shlq	$5, %rax

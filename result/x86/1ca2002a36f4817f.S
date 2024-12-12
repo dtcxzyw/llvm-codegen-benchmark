@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dl
 	cmovneq	%rsi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movq	%rdi, %rax
 	testl	$134217728, %edx                # imm = 0x8000000
 	cmovneq	%rsi, %rax

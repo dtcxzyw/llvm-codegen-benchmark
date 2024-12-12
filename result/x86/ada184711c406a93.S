@@ -1,4 +1,4 @@
 func0000000000000000:                   # @func0000000000000000
-	movl	%esi, %eax
-	mulb	%dil
+	movl	%edi, %eax
+	mulb	%sil
 	retq

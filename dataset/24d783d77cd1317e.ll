@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; darktable/optimized/introspection_channelmixer.c.ll
 ; darktable/optimized/introspection_clahe.c.ll
 ; darktable/optimized/introspection_colorbalance.c.ll
@@ -8,6 +8,7 @@
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; darktable/optimized/introspection_soften.c.ll
 ; darktable/optimized/introspection_splittoning.c.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/guiChatConsole.cpp.ll
 ; oiio/optimized/color_ocio.cpp.ll

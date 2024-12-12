@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rocksdb/optimized/write_batch.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add i64 %3, %0
@@ -16,10 +16,10 @@ entry:
 ; llvm/optimized/CodeLayout.cpp.ll
 ; minetest/optimized/connection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = icmp ult i64 %4, %5
   ret i1 %6
@@ -58,10 +58,10 @@ entry:
 ; verilator/optimized/V3Delayed.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000128(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = icmp ugt i64 %4, %5
   ret i1 %6
@@ -71,10 +71,10 @@ entry:
 ; gromacs/optimized/lifetime.cpp.ll
 ; pocketpy/optimized/collections.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = icmp ult i64 %4, %5
   ret i1 %6
@@ -84,10 +84,10 @@ entry:
 ; cvc5/optimized/core_solver.cpp.ll
 ; ninja/optimized/subprocess_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = icmp eq i64 %4, %5
   ret i1 %6
@@ -96,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add i64 %3, %0
@@ -108,10 +108,10 @@ entry:
 ; 1 occurrences:
 ; pocketpy/optimized/collections.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = icmp ugt i64 %4, %5
   ret i1 %6

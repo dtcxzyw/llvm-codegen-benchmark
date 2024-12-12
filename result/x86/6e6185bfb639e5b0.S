@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$613566757, %eax                # imm = 0x24924925
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	leal	4(%rsi), %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
@@ -23,7 +23,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmpl	$2, %edx
 	setae	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	4(%rsi), %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax

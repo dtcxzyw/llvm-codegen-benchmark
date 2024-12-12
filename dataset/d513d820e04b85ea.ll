@@ -11,6 +11,18 @@ entry:
   ret i32 %6
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_chart.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = trunc i64 %1 to i32
+  %5 = add nsw i32 %4, %3
+  %6 = sub i32 %5, %0
+  ret i32 %6
+}
+
 ; 4 occurrences:
 ; cvc5/optimized/core_solver.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll

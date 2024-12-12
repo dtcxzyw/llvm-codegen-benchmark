@@ -10,7 +10,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr ptr, ptr %0, i64 %5
   ret ptr %6
 }
@@ -24,7 +24,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -36,7 +36,7 @@ define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = sext i32 %3 to i64
-  %5 = mul nuw i64 %4, %1
+  %5 = mul nuw i64 %1, %4
   %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -49,7 +49,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -59,18 +59,19 @@ entry:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = sext i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %5 = mul nuw nsw i64 %1, %4
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRefactor.c.ll
+; abc/optimized/amapPerm.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; darktable/optimized/introspection_invert.c.ll
@@ -85,7 +86,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -98,7 +99,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = sext i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
+  %5 = mul nuw nsw i64 %1, %4
   %6 = getelementptr i32, ptr %0, i64 %5
   ret ptr %6
 }

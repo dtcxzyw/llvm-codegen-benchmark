@@ -24,13 +24,14 @@
 define i64 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
+; boost/optimized/src.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cvc5/optimized/cnf_stream.cpp.ll
@@ -49,7 +50,6 @@ entry:
 ; icu/optimized/ubidiln.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
-; linux/optimized/dns_key.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; opencv/optimized/bgfg_gaussmix2.cpp.ll
@@ -67,22 +67,24 @@ entry:
 ; openssl/optimized/libcrypto-shlib-rsa_pss.ll
 ; php/optimized/zend_strtod.ll
 ; slurm/optimized/slurmdb_defs.ll
+; sqlite/optimized/sqlite3.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; wolfssl/optimized/test.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/options_description.ll
 ; cpython/optimized/mathmodule.ll
 ; entt/optimized/benchmark.cpp.ll
 ; entt/optimized/custom_identifier.cpp.ll
@@ -126,12 +128,14 @@ entry:
 define i64 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 138 occurrences:
+; 140 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/addition.cpp.ll
@@ -274,7 +278,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

@@ -1,5 +1,5 @@
 
-; 506 occurrences:
+; 516 occurrences:
 ; abc/optimized/epd.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -23,6 +23,16 @@
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCCurve.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; c3c/optimized/json.c.ll
@@ -129,7 +139,6 @@
 ; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/expfit.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -186,6 +195,7 @@
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll
 ; llvm/optimized/SampleProfileInference.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -510,7 +520,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 

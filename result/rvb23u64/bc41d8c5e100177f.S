@@ -6,7 +6,7 @@ func0000000000000047:                   # @func0000000000000047
 	add	a0, a0, a1
 	addiw	a0, a0, 3
 	ret
-func0000000000000042:                   # @func0000000000000042
+func00000000000000c2:                   # @func00000000000000c2
 	sext.w	a1, a1
 	sltiu	a1, a1, 5
 	li	a2, -2
@@ -78,11 +78,18 @@ func0000000000000009:                   # @func0000000000000009
 	add	a0, a0, a1
 	addiw	a0, a0, -32
 	ret
-func0000000000000027:                   # @func0000000000000027
+func00000000000000a7:                   # @func00000000000000a7
 	sext.w	a1, a1
-	sltiu	a1, a1, 2
+	sltiu	a1, a1, 9
 	add	a0, a0, a1
 	addiw	a0, a0, 1
+	ret
+func00000000000000a0:                   # @func00000000000000a0
+	srliw	a1, a1, 16
+	seqz	a1, a1
+	subw	a0, a0, a1
+	addi	a0, a0, 2
+	zext.w	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a1, a1
@@ -91,6 +98,14 @@ func000000000000000a:                   # @func000000000000000a
 	not	a1, a1
 	add	a0, a0, a1
 	zext.w	a0, a0
+	ret
+func0000000000000027:                   # @func0000000000000027
+	sext.w	a1, a1
+	sltiu	a1, a1, 254
+	li	a2, 4
+	czero.nez	a1, a2, a1
+	add	a0, a0, a1
+	addiw	a0, a0, 1
 	ret
 func0000000000000022:                   # @func0000000000000022
 	sext.w	a1, a1

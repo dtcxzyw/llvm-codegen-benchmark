@@ -49,7 +49,7 @@
 define i1 @func000000000000000a(i64 %0) #0 {
 entry:
   %1 = sdiv i64 9223372036854775807, %0
-  %2 = icmp slt i64 %1, %0
+  %2 = icmp sgt i64 %0, %1
   ret i1 %2
 }
 

@@ -5,7 +5,7 @@
 ; meshlab/optimized/solver.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = shl nsw i32 %0, 1

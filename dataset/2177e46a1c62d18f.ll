@@ -1,12 +1,16 @@
 
-; 5 occurrences:
-; hdf5/optimized/H5MF.c.ll
+; 9 occurrences:
 ; html5ever-rs/optimized/2k27uywn6e9ruua6.ll
 ; libdeflate/optimized/deflate_compress.c.ll
-; opencv/optimized/AKAZEFeatures.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp ult i64 %1, 258
@@ -14,16 +18,38 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; c3c/optimized/types.c.ll
-; lief/optimized/sha256.c.ll
-; lief/optimized/sha512.c.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ult i64 %1, 4294967296
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 3 occurrences:
+; lief/optimized/sha256.c.ll
+; lief/optimized/sha512.c.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp samesign ult i64 %1, 3
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 2 occurrences:
+; hdf5/optimized/H5MF.c.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000074(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = icmp samesign ult i64 %1, 7
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
@@ -37,7 +63,7 @@ entry:
 ; llvm/optimized/Host.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000044(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp ult i64 %1, 4294967296
@@ -73,7 +99,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i64 %1) #0 {

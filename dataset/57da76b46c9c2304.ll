@@ -3,7 +3,7 @@
 ; darktable/optimized/introspection_demosaic.c.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 4, i32 8
   %4 = or disjoint i32 %3, %1
@@ -21,7 +21,7 @@ entry:
 ; z3/optimized/doc.cpp.ll
 ; z3/optimized/tbv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 2
   %4 = or disjoint i32 %3, %1
@@ -32,10 +32,10 @@ entry:
 ; 1 occurrences:
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 6, i32 2
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
@@ -43,11 +43,11 @@ entry:
 ; 1 occurrences:
 ; glslang/optimized/iomapper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 2
   %4 = or disjoint i32 %3, %1
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 

@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/tx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000040a(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000080a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -12
   %4 = add i32 %3, %0
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/sixstep.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000451(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000008a1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add nsw i32 %3, %0

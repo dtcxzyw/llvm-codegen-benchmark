@@ -4,7 +4,7 @@
 ; luau/optimized/Parser.cpp.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000581(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -18,10 +18,10 @@ entry:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; linux/optimized/ibs.ll
 ; llvm/optimized/ELFAsmParser.cpp.ll
-; proj/optimized/io.cpp.ll
 ; qemu/optimized/hw_pci_pci_bridge.c.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000421(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
   %4 = icmp eq i32 %1, -1
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000318c(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -48,7 +48,7 @@ entry:
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c11(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000003021(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp eq i32 %1, 3
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/module.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c88(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000003108(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ugt i32 %1, 1
@@ -92,7 +92,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000042c(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq i32 %1, 0

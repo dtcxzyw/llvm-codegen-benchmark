@@ -16,6 +16,12 @@ func000000000000001d:                   # @func000000000000001d
 	vsll.vi	v10, v10, 22
 	vadd.vv	v8, v8, v10
 	ret
+func000000000000000c:                   # @func000000000000000c
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vsll.vi	v10, v10, 2
+	vadd.vi	v8, v8, 12, v0.t
+	vadd.vv	v8, v8, v10
+	ret
 func0000000000000010:                   # @func0000000000000010
 	li	a0, 208
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -32,5 +38,5 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vv	v10, v10, v10
 	vmerge.vim	v12, v12, 4, v0
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret

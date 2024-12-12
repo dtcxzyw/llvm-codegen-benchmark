@@ -10,7 +10,7 @@ entry:
   %3 = add nuw nsw i64 %2, -7046029288634856825
   %4 = trunc i128 %1 to i64
   %5 = mul i64 %3, %4
-  %6 = xor i64 %5, %0
+  %6 = xor i64 %0, %5
   ret i64 %6
 }
 

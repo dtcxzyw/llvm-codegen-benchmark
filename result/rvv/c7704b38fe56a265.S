@@ -3,7 +3,7 @@ func0000000000000020:                   # @func0000000000000020
 	vmv.v.i	v11, 1
 	vwsll.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vrsub.vi	v10, v12, 0
 	vand.vv	v8, v8, v10
 	ret
@@ -31,7 +31,7 @@ func0000000000000040:                   # @func0000000000000040
 	vmv.v.x	v11, a0
 	vwsll.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vrsub.vi	v10, v12, 0
 	vand.vv	v8, v8, v10
 	ret

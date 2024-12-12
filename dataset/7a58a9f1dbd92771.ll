@@ -1,12 +1,10 @@
 
-; 12 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
-; abc/optimized/giaPack.c.ll
 ; abc/optimized/mioParse.c.ll
-; abc/optimized/nwkAig.c.ll
 ; abc/optimized/rpo.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; openblas/optimized/dgesvdq.c.ll
@@ -33,8 +31,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; icu/optimized/usprep.ll
+; 1 occurrences:
 ; libquic/optimized/url_parse.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
@@ -58,9 +55,7 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; openblas/optimized/lapacke_dgbcon_work.c.ll
-; openblas/optimized/lapacke_dgbtrf_work.c.ll
+; 1 occurrences:
 ; proj/optimized/isea.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i1 %0, i32 %1, i32 %2) #0 {

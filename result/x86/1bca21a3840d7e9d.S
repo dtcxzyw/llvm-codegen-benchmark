@@ -16,3 +16,15 @@ func0000000000000010:                   # @func0000000000000010
 	cmovbl	%esi, %eax
 	shrl	$8, %eax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	movl	%edi, %eax
+	cmpl	$256, %esi                      # imm = 0x100
+	cmovbl	%esi, %eax
+	shrl	$4, %eax
+	retq
+func0000000000000028:                   # @func0000000000000028
+	movl	%edi, %eax
+	cmpl	$16, %esi
+	cmovael	%esi, %eax
+	shrl	%eax
+	retq

@@ -1,8 +1,9 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; libwebp/optimized/anim_decode.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
+; lvgl/optimized/lv_color_op.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; openjdk/optimized/splashscreen_gfx_impl.ll
 ; raylib/optimized/rtextures.c.ll

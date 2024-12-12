@@ -1,21 +1,40 @@
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	testl	%esi, %esi
 	setne	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	cmpl	$8, %esi
 	setl	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testl	%esi, %esi
 	setne	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
+	retq
+func0000000000000081:                   # @func0000000000000081
+	movl	%edi, %eax
+	orl	$2, %eax
+	cmpl	$2, %esi
+	cmovael	%edi, %eax
+	cmpl	$7, %eax
+	sete	%al
+	retq
+func0000000000000481:                   # @func0000000000000481
+	cmpl	$26, %esi
+	setae	%cl
+	cmpl	$1114112, %edi                  # imm = 0x110000
+	sete	%al
+	andb	%cl, %al
+	retq
+func0000000000000494:                   # @func0000000000000494
+	cmpl	$128, %edi
+	setb	%al
 	retq

@@ -5,7 +5,7 @@
 ; php/optimized/sccp.ll
 ; wireshark/optimized/packet-aprs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000221(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000841(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -3
   %3 = icmp eq i8 %2, 4
@@ -18,7 +18,7 @@ entry:
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000842(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 122
   %3 = icmp eq i8 %1, 51
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/reconinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000230(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000850(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 23
   %3 = icmp eq i8 %1, 15

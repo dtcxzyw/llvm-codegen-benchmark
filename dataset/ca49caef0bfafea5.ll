@@ -1,14 +1,10 @@
 
-; 16 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcGen.c.ll
-; abc/optimized/fraClau.c.ll
 ; abc/optimized/giaSatEdge.c.ll
-; abc/optimized/mpmPre.c.ll
 ; clamav/optimized/crtmgr.c.ll
-; icu/optimized/cal.ll
 ; llvm/optimized/AArch64CompressJumpTables.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; openssl/optimized/evp_libctx_test-bin-evp_libctx_test.ll
 ; postgres/optimized/crosstabview.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
@@ -52,6 +48,18 @@ define i1 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = sdiv i32 %0, 3
   %2 = icmp ugt i32 %1, 99
+  ret i1 %2
+}
+
+; 3 occurrences:
+; icu/optimized/cal.ll
+; openspiel/optimized/dou_dizhu_utils.cc.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = sdiv i32 %0, 13
+  %2 = icmp samesign ult i32 %1, 4
   ret i1 %2
 }
 

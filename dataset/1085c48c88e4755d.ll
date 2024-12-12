@@ -1,16 +1,4 @@
 
-; 2 occurrences:
-; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0) #0 {
-entry:
-  %1 = trunc i32 %0 to i8
-  %2 = icmp ult i8 %1, 91
-  %3 = select i1 %2, i32 218103808, i32 234881024
-  ret i32 %3
-}
-
 ; 1 occurrences:
 ; minetest/optimized/l_mapgen.cpp.ll
 ; Function Attrs: nounwind
@@ -58,6 +46,17 @@ entry:
   %1 = trunc i32 %0 to i8
   %2 = icmp ugt i8 %1, 2
   %3 = select i1 %2, i32 -3, i32 9
+  ret i32 %3
+}
+
+; 1 occurrences:
+; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0) #0 {
+entry:
+  %1 = and i32 %0, 254
+  %2 = icmp eq i32 %1, 0
+  %3 = select i1 %2, i32 0, i32 2
   ret i32 %3
 }
 

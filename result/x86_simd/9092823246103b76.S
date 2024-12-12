@@ -20,3 +20,10 @@ func0000000000000006:                   # @func0000000000000006
 	vpbroadcastb	.LCPI1_2(%rip), %xmm1   # xmm1 = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vpcmpgtb	%xmm0, %xmm1, %xmm0
 	retq
+.LCPI2_0:
+	.zero	16,252
+func0000000000000104:                   # @func0000000000000104
+	vpsubb	%xmm0, %xmm1, %xmm0
+	vpcmpnleub	.LCPI2_0(%rip), %xmm0, %k0
+	vpmovm2b	%k0, %xmm0
+	retq

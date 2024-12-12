@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; git/optimized/git.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; gromacs/optimized/gmx_densorder.cpp.ll
@@ -9,6 +9,7 @@
 ; linux/optimized/i9xx_wm.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll

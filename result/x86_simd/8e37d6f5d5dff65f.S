@@ -47,22 +47,31 @@ func0000000000000011:                   # @func0000000000000011
 	vorps	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI5_0:
-	.long	32127                           # 0x7d7f
-.LCPI5_1:
-	.long	528482304                       # 0x1f800000
-.LCPI5_2:
-	.long	8388607                         # 0x7fffff
-func0000000000000015:                   # @func0000000000000015
-	vpcmpgtd	.LCPI5_0(%rip){1to8}, %ymm2, %k1
-	vpbroadcastd	.LCPI5_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [528482304,528482304,528482304,528482304,528482304,528482304,528482304,528482304]
-	vpternlogd	$248, .LCPI5_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
+	.long	65536                           # 0x10000
+func000000000000000c:                   # @func000000000000000c
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm2, %k1
+	vandps	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
+	vorps	%ymm0, %ymm1, %ymm1 {%k1}
+	vmovaps	%ymm1, %ymm0
 	retq
 .LCPI6_0:
-	.long	13                              # 0xd
+	.long	32127                           # 0x7d7f
 .LCPI6_1:
+	.long	528482304                       # 0x1f800000
+.LCPI6_2:
+	.long	8388607                         # 0x7fffff
+func0000000000000015:                   # @func0000000000000015
+	vpcmpgtd	.LCPI6_0(%rip){1to8}, %ymm2, %k1
+	vpbroadcastd	.LCPI6_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [528482304,528482304,528482304,528482304,528482304,528482304,528482304,528482304]
+	vpternlogd	$248, .LCPI6_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
+	retq
+.LCPI7_0:
+	.long	13                              # 0xd
+.LCPI7_1:
 	.long	32                              # 0x20
 func0000000000000009:                   # @func0000000000000009
-	vpcmpnltud	.LCPI6_0(%rip){1to8}, %ymm2, %k1
-	vandps	.LCPI6_1(%rip){1to8}, %ymm0, %ymm0
+	vpcmpnltud	.LCPI7_0(%rip){1to8}, %ymm2, %k1
+	vandps	.LCPI7_1(%rip){1to8}, %ymm0, %ymm0
 	vorps	%ymm1, %ymm0, %ymm0 {%k1}
 	retq

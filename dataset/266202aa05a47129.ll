@@ -194,16 +194,16 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000094(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = lshr i64 %2, 1
   %4 = lshr i64 %0, 1
-  %5 = icmp ult i64 %3, %4
+  %5 = icmp samesign ult i64 %3, %4
   ret i1 %5
 }
 
-; 21 occurrences:
+; 25 occurrences:
 ; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
 ; coreutils-rs/optimized/3xc4e7mmntf4esc6.ll
 ; coreutils-rs/optimized/942h4e64iw767xo.ll
@@ -225,6 +225,10 @@ entry:
 ; rust-analyzer-rs/optimized/56qlbpwvg5r6rv1.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/6hxn0twt3h5sh337x4zo515i3.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -238,12 +242,12 @@ entry:
 ; linux/optimized/regcache-rbtree.ll
 ; qemu/optimized/system_physmem.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000198(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 2097151
   %3 = lshr i64 %2, 21
   %4 = lshr i64 %0, 21
-  %5 = icmp ugt i64 %3, %4
+  %5 = icmp samesign ugt i64 %3, %4
   ret i1 %5
 }
 
@@ -256,12 +260,12 @@ entry:
 ; openjdk/optimized/bitMap.ll
 ; openjdk/optimized/shenandoahMarkBitMap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = lshr i64 %0, 6
-  %5 = icmp ult i64 %3, %4
+  %5 = icmp samesign ult i64 %3, %4
   ret i1 %5
 }
 
@@ -278,12 +282,12 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = lshr i64 %0, 6
-  %5 = icmp ugt i64 %3, %4
+  %5 = icmp samesign ugt i64 %3, %4
   ret i1 %5
 }
 
@@ -291,12 +295,12 @@ entry:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000098(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = lshr i64 %2, 1
   %4 = lshr i64 %0, 1
-  %5 = icmp ugt i64 %3, %4
+  %5 = icmp samesign ugt i64 %3, %4
   ret i1 %5
 }
 
@@ -304,7 +308,7 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %.unshifted = xor i64 %2, %0
@@ -316,24 +320,24 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000194(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = lshr i64 %0, 6
-  %5 = icmp ult i64 %3, %4
+  %5 = icmp samesign ult i64 %3, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/Evaluator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 7
   %3 = lshr i64 %2, 3
   %4 = lshr i64 %0, 3
-  %5 = icmp ule i64 %3, %4
+  %5 = icmp samesign ule i64 %3, %4
   ret i1 %5
 }
 

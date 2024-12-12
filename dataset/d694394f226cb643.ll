@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; git/optimized/fast-import.ll
 ; hermes/optimized/IR.cpp.ll
@@ -15,7 +15,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll

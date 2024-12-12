@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 14 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
@@ -14,12 +14,10 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; oniguruma/optimized/regcomp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
-; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %0, 1
+  %2 = and i32 %0, 32768
   ret i32 %2
 }
 

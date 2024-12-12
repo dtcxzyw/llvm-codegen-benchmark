@@ -1,11 +1,11 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	shrl	$12, %esi
 	andl	$7, %esi
 	addl	%edi, %esi
 	cmpl	$5, %esi
 	setge	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	btl	$4, %esi
 	adcl	$0, %edi
 	cmpl	$2, %edi
@@ -17,7 +17,7 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shrl	%esi
 	andl	$1, %esi
 	orl	%edi, %esi

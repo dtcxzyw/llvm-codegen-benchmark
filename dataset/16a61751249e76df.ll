@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/saigSimFast.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; cpython/optimized/optimizer.ll
@@ -11,6 +11,7 @@
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libwebp/optimized/enc.c.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
@@ -18,8 +19,6 @@
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dlaed0.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; openjdk/optimized/jfdctint.ll
@@ -42,10 +41,11 @@ entry:
   ret i32 %5
 }
 
-; 105 occurrences:
+; 109 occurrences:
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
 ; abc/optimized/giaTim.c.ll
+; boost/optimized/to_chars.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/MD5.c.ll
 ; cmake/optimized/sha256.c.ll
@@ -88,6 +88,9 @@ entry:
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_dropdown.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_dock_dialog.cpp.ll
@@ -187,10 +190,12 @@ entry:
   ret i32 %5
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; abc/optimized/bmcMesh.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; linux/optimized/intel_sseu.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; mitsuba3/optimized/func.cpp.ll
@@ -214,9 +219,10 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; mitsuba3/optimized/func.cpp.ll
+; openblas/optimized/dorcsd2by1.c.ll
 ; openjdk/optimized/methodData.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
@@ -228,10 +234,8 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; git/optimized/apply.ll
-; gromacs/optimized/dlasd6.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
@@ -247,12 +251,13 @@ entry:
   ret i32 %5
 }
 
-; 31 occurrences:
+; 34 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ioWriteBlif.c.ll
 ; abc/optimized/ioWriteEdgelist.c.ll
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/export.c.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
@@ -264,10 +269,12 @@ entry:
 ; libwebp/optimized/sharpyuv_sse2.c.ll
 ; linux/optimized/kapi.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_switch.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dlalsd.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
+; openblas/optimized/dorcsd2by1.c.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/fuzzy_F0_math.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
@@ -326,7 +333,10 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 8 occurrences:
+; boost/optimized/to_chars.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; opencv/optimized/dtfilter_cpu.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
 ; openjdk/optimized/zGeneration.ll
@@ -404,6 +414,17 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add nsw i32 %0, -56613888
+  %5 = add nuw nsw i32 %4, %3
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; icu/optimized/rbbirb.ll
 ; stb/optimized/stb_image.c.ll
@@ -442,8 +463,10 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; openblas/optimized/dlamch.c.ll
+; openblas/optimized/dlatms.c.ll
+; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dtprfs.c.ll
 ; openblas/optimized/slamch.c.ll
 ; wireshark/optimized/packet-eigrp.c.ll

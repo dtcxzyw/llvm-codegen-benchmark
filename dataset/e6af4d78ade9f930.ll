@@ -1,6 +1,20 @@
 
-; 55 occurrences:
+; 69 occurrences:
 ; abc/optimized/aigJust.c.ll
+; abc/optimized/rsbDec6.c.ll
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
 ; flac/optimized/decode.c.ll
 ; flac/optimized/file.c.ll
 ; git/optimized/git.ll
@@ -16,12 +30,12 @@
 ; linux/optimized/intel_lvds.ll
 ; linux/optimized/intel_timeline.ll
 ; linux/optimized/md.ll
-; linux/optimized/mii.ll
 ; linux/optimized/ntp.ll
 ; linux/optimized/route.ll
 ; linux/optimized/vfs_inode.ll
 ; linux/optimized/xstate.ll
 ; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; llvm/optimized/X86ShuffleDecodeConstantPool.cpp.ll
 ; luajit/optimized/lj_debug.ll
@@ -93,7 +107,8 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_ddi.ll
 ; openjdk/optimized/OGLPaints.ll
 ; openjdk/optimized/constMethod.ll
@@ -102,17 +117,6 @@ define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = icmp sgt i32 %1, 4
-  %5 = select i1 %4, i32 %0, i32 %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; linux/optimized/intel_execlists_submission.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 2047
-  %4 = icmp ugt i32 %1, 3121
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }

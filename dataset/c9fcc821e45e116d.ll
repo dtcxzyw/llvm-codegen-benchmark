@@ -30,7 +30,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 48
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = mul nuw nsw i64 %3, 506832829
   ret i64 %4
 }

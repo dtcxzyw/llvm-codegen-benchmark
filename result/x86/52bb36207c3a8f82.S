@@ -1,18 +1,18 @@
-func00000000000000d9:                   # @func00000000000000d9
+func0000000000000199:                   # @func0000000000000199
 	imull	$400, %edx, %ecx                # imm = 0x190
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	cmovlel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	imull	$-146097, %edx, %ecx            # imm = 0xFFFDC54F
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	cmovlel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	imull	$-146097, %edx, %ecx            # imm = 0xFFFDC54F
 	xorl	%eax, %eax
 	testl	%esi, %esi

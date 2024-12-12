@@ -13,9 +13,7 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; hermes/optimized/APFloat.cpp.ll
-; lief/optimized/Builder.cpp.ll
+; 1 occurrences:
 ; quantlib/optimized/gsrprocesscore.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {

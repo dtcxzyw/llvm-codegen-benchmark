@@ -1,13 +1,10 @@
-func0000000000000096:                   // @func0000000000000096
+func0000000000000126:                   // @func0000000000000126
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	uzp2	v2.4s, v2.4s, v3.4s
-	shl	v0.4s, v0.4s, #31
-	cmlt	v0.4s, v0.4s, #0
-	bsl	v0.16b, v2.16b, v1.16b
-	movi	v1.4s, #1
-	add	v0.4s, v0.4s, v1.4s
-	cmgt	v0.4s, v2.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	lsr	x8, x2, #32
+	tst	w0, #0x1
+	csel	w9, w8, w1, ne
+	add	w9, w9, #1
+	cmp	w9, w8
+	cset	w0, lt
 	ret
                                         // -- End function

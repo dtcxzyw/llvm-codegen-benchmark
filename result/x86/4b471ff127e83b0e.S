@@ -10,19 +10,19 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	imulq	%rdx, %rsi
+	cmpq	$32769, %rsi                    # imm = 0x8001
+	setb	%al
+	andb	%dil, %al
+	retq
 func0000000000000001:                   # @func0000000000000001
 	imulq	%rdx, %rsi
 	cmpq	$4, %rsi
 	sete	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
-	imulq	%rdx, %rsi
-	testq	%rsi, %rsi
-	setg	%al
-	andb	%dil, %al
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testq	%rdx, %rdx
 	sete	%cl
 	testq	%rsi, %rsi
@@ -36,7 +36,7 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	testq	%rdx, %rdx
 	setne	%cl
 	testq	%rsi, %rsi
@@ -44,7 +44,7 @@ func000000000000001c:                   # @func000000000000001c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	testq	%rdx, %rdx
 	setne	%cl
 	testq	%rsi, %rsi
@@ -52,9 +52,9 @@ func000000000000003c:                   # @func000000000000003c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000002a:                   # @func000000000000002a
 	imulq	%rdx, %rsi
-	cmpq	$2097152, %rsi                  # imm = 0x200000
-	setae	%al
+	testq	%rsi, %rsi
+	setg	%al
 	andb	%dil, %al
 	retq

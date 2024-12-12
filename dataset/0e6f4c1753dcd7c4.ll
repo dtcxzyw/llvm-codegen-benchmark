@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/ftbase.c.ll
@@ -8,7 +8,6 @@
 ; git/optimized/path.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; libevent/optimized/poll.c.ll
 ; linux/optimized/md.ll
 ; linux/optimized/tg3.ll
 ; openjdk/optimized/hb-ot-shape.ll

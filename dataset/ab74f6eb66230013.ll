@@ -1,11 +1,10 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; darktable/optimized/filtering.c.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; linux/optimized/aspm.ll
-; linux/optimized/attr.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/skl_universal_plane.ll
 ; linux/optimized/xhci-ring.ll

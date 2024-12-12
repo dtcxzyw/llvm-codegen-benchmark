@@ -14,23 +14,23 @@
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003f4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 24
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
-  %7 = icmp ult i64 %6, %5
+  %7 = icmp samesign ult i64 %6, %5
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; php/optimized/zend_persist_calc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000231(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000461(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 13
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
@@ -43,7 +43,7 @@ entry:
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; wireshark/optimized/packet-iuup.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = add nuw nsw i32 %3, %1
@@ -56,10 +56,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/sfmLib.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 28
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
@@ -69,10 +69,10 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000271(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
@@ -82,13 +82,13 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/mpn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000134(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000274(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nuw i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
-  %7 = icmp ult i64 %6, %5
+  %7 = icmp samesign ult i64 %6, %5
   ret i1 %7
 }
 

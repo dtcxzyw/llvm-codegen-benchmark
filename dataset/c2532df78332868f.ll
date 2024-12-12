@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/pshinter.c.ll
@@ -9,14 +9,16 @@
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; protobuf/optimized/line_consumer.cc.ll
+; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
+; yalantinglibs/optimized/tutorial.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
-  %4 = ashr exact i64 %3, 32
+  %4 = ashr exact i64 %3, 29
   %5 = select i1 %0, i64 %1, i64 %4
   ret i64 %5
 }

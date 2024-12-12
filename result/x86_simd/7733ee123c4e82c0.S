@@ -17,12 +17,13 @@ func0000000000000001:                   # @func0000000000000001
 	vzeroupper
 	retq
 .LCPI2_0:
-	.quad	4294967232                      # 0xffffffc0
+	.long	19                              # 0x13
 func0000000000000004:                   # @func0000000000000004
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vmovdqa64	%ymm1, %ymm2 {%k1}
-	vptestnmq	.LCPI2_0(%rip){1to4}, %ymm2, %k0
+	vpmovqd	%ymm2, %xmm0
+	vpcmpltud	.LCPI2_0(%rip){1to4}, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

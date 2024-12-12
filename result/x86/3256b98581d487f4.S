@@ -21,5 +21,5 @@ func000000000000003d:                   # @func000000000000003d
 func0000000000000000:                   # @func0000000000000000
 	addq	%rdx, %rsi
 	andq	$-2, %rsi
-	leaq	114(%rsi,%rdi), %rax
+	leaq	114(%rdi,%rsi), %rax
 	retq

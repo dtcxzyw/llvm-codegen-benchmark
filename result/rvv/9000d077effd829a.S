@@ -36,7 +36,7 @@ func000000000000000d:                   # @func000000000000000d
 	vmor.mm	v0, v8, v0
 	ret
 func0000000000000008:                   # @func0000000000000008
-	fli.d	fa5, inf
+	fli.d	fa5, 2.0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vf	v9, v16, fa5
 	vmor.mm	v8, v9, v8

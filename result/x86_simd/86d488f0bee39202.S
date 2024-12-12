@@ -13,7 +13,7 @@ func0000000000000003:                   # @func0000000000000003
 	vpbroadcastd	.LCPI1_1(%rip), %ymm3   # ymm3 = [2,2,2,2,2,2,2,2]
 	vpcmpeqd	%ymm3, %ymm2, %k1
 	vmovdqa32	%ymm3, %ymm1 {%k1}
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	3584                            # 0xe00
@@ -21,9 +21,9 @@ func0000000000000003:                   # @func0000000000000003
 	.long	2304                            # 0x900
 .LCPI2_2:
 	.long	9                               # 0x9
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpgtd	.LCPI2_1(%rip){1to8}, %ymm2, %k1
 	vpbroadcastd	.LCPI2_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [9,9,9,9,9,9,9,9]
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

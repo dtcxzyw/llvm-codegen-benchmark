@@ -1,10 +1,10 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	andl	$63, %esi
-	leal	-2049(%rsi,%rdi), %eax
+	leal	-2049(%rdi,%rsi), %eax
 	cmpl	$63487, %eax                    # imm = 0xF7FF
 	setb	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	andl	$48, %esi
 	orl	%edi, %esi
 	addl	$-16, %esi

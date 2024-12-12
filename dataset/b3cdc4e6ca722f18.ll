@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; hdf5/optimized/H5B2cache.c.ll
 ; hdf5/optimized/H5B2hdr.c.ll
@@ -14,7 +14,6 @@
 ; hdf5/optimized/H5FSstat.c.ll
 ; hdf5/optimized/H5Gstab.c.ll
 ; hdf5/optimized/H5HL.c.ll
-; hdf5/optimized/H5HLdblk.c.ll
 ; hdf5/optimized/H5Oalloc.c.ll
 ; hdf5/optimized/H5Ocache_image.c.ll
 ; hdf5/optimized/H5Ofsinfo.c.ll

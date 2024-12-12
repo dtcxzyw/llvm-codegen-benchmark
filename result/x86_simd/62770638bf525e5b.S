@@ -27,28 +27,6 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
 	retq
 .LCPI2_0:
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.byte	254                             # 0xfe
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-func0000000000000011:                   # @func0000000000000011
-	vpmovwb	%xmm0, %xmm0
-	vpaddb	.LCPI2_0(%rip), %xmm0, %xmm0
-	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
-	retq
-.LCPI3_0:
 	.byte	252                             # 0xfc
 	.byte	252                             # 0xfc
 	.byte	252                             # 0xfc
@@ -66,6 +44,28 @@ func0000000000000011:                   # @func0000000000000011
 	.zero	1
 	.zero	1
 func0000000000000000:                   # @func0000000000000000
+	vpmovwb	%xmm0, %xmm0
+	vpaddb	.LCPI2_0(%rip), %xmm0, %xmm0
+	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
+	retq
+.LCPI3_0:
+	.byte	148                             # 0x94
+	.byte	148                             # 0x94
+	.byte	148                             # 0x94
+	.byte	148                             # 0x94
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000011:                   # @func0000000000000011
 	vpmovwb	%xmm0, %xmm0
 	vpaddb	.LCPI3_0(%rip), %xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero

@@ -15,9 +15,8 @@ entry:
   ret i16 %7
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; libevent/optimized/poll.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll

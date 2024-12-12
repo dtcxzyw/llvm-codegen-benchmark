@@ -17,7 +17,7 @@ func000000000000002d:                   # @func000000000000002d
 	vmerge.vim	v12, v12, 1, v0
 	vsrl.vi	v10, v10, 2
 	vsub.vv	v8, v8, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000025:                   # @func0000000000000025
 	lui	a0, 8
@@ -27,5 +27,5 @@ func0000000000000025:                   # @func0000000000000025
 	vmerge.vim	v12, v12, 1, v0
 	vsrl.vi	v10, v10, 31
 	vsub.vv	v8, v8, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

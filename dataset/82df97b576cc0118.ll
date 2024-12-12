@@ -1,5 +1,7 @@
 
-; 12 occurrences:
+; 14 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/ucnvhz.ll
 ; lz4/optimized/lz4.c.ll
@@ -17,7 +19,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = sub i64 %5, %0
   ret i64 %6
 }
@@ -29,7 +31,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = sub nuw i64 %5, %0
   ret i64 %6
 }

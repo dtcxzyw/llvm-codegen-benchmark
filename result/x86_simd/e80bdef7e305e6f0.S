@@ -2,7 +2,7 @@
 	.long	715827883                       # 0x2aaaaaab
 .LCPI0_1:
 	.long	4294934528                      # 0xffff8000
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpshufd	$245, %ymm2, %ymm0              # ymm0 = ymm2[1,1,3,3,5,5,7,7]
@@ -14,7 +14,7 @@ func0000000000000022:                   # @func0000000000000022
 	vpsrld	$31, %ymm0, %ymm2
 	vpsrad	$1, %ymm0, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0

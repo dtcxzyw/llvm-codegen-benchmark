@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000f1(i32 %0, i64 %1) #0 {
+define i64 @func00000000000001e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = add nuw nsw i64 %2, 3

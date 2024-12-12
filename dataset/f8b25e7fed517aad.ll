@@ -1,10 +1,11 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/cuddDecomp.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; cpython/optimized/obmalloc.ll
 ; icu/optimized/ucnv.ll
+; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; mimalloc/optimized/page.c.ll
 ; openjdk/optimized/objArrayKlass.ll
 ; openjdk/optimized/shenandoahBarrierSet.ll

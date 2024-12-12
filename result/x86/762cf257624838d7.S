@@ -8,9 +8,8 @@ func0000000000000001:                   # @func0000000000000001
 	movzwl	%di, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	movl	%edi, %eax
-	andl	$3, %eax
-	shll	$8, %eax
+	leal	(,%rdi,8), %eax
+	andl	$24, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	movl	%edi, %eax

@@ -16,11 +16,3 @@ func0000000000000000:                   # @func0000000000000000
 	imulq	%rcx, %rax
 	shrq	$45, %rax
 	retq
-func0000000000000080:                   # @func0000000000000080
-	imull	$-146097, %edx, %eax            # imm = 0xFFFDC54F
-	addl	%esi, %eax
-	imull	$-36524, %edi, %ecx             # imm = 0xFFFF7154
-	addl	%eax, %ecx
-	imulq	$376287347, %rcx, %rax          # imm = 0x166DB073
-	shrq	$39, %rax
-	retq

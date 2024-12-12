@@ -1,19 +1,4 @@
 
-; 5 occurrences:
-; linux/optimized/maple_tree.ll
-; linux/optimized/uncore_nhmex.ll
-; qemu/optimized/hw_pci_shpc.c.ll
-; qemu/optimized/tcg.c.ll
-; z3/optimized/mpf.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0) #0 {
-entry:
-  %1 = lshr i32 %0, 1
-  %2 = and i32 %1, 124
-  %3 = add nsw i32 %2, -4
-  ret i32 %3
-}
-
 ; 24 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; icu/optimized/ucptrie.ll
@@ -45,6 +30,20 @@ entry:
   %1 = lshr i32 %0, 1
   %2 = and i32 %1, 124
   %3 = add nuw nsw i32 %2, 32
+  ret i32 %3
+}
+
+; 4 occurrences:
+; linux/optimized/maple_tree.ll
+; linux/optimized/uncore_nhmex.ll
+; qemu/optimized/tcg.c.ll
+; z3/optimized/mpf.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i32 %0) #0 {
+entry:
+  %1 = lshr i32 %0, 5
+  %2 = and i32 %1, 2040
+  %3 = add nsw i32 %2, -48
   ret i32 %3
 }
 

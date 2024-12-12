@@ -11,10 +11,8 @@ entry:
   ret double %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; msdfgen/optimized/edge-coloring.cpp.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000003(double %0, i32 %1) #0 {

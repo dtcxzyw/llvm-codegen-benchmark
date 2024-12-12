@@ -19,7 +19,7 @@ func000000000000000c:                   # @func000000000000000c
 	vmv.v.x	v8, a0
 	vmerge.vim	v8, v8, 10, v0
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	li	a0, 255
 	li	a1, 160
 	vsetivli	zero, 8, e16, m1, ta, ma

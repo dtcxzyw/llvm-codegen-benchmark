@@ -18,9 +18,9 @@ entry:
 ; luajit/optimized/lj_alloc_dyn.ll
 ; php/optimized/json_scanner.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000082(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000c2(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 12
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 12
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = getelementptr i8, ptr %0, i64 %5

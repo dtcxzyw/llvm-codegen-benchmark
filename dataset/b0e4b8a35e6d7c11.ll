@@ -1,7 +1,9 @@
 
-; 34 occurrences:
+; 36 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; brotli/optimized/literal_cost.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll

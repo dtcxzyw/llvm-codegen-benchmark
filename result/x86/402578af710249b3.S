@@ -27,7 +27,7 @@ func0000000000000010:                   # @func0000000000000010
 	shll	$3, %eax
 	subl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	cmpl	$2, %esi
 	movl	$8388608, %ecx                  # imm = 0x800000
 	movl	$32768, %eax                    # imm = 0x8000

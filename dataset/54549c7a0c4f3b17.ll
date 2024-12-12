@@ -23,8 +23,7 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
-; linux/optimized/intel_audio.ll
+; 5 occurrences:
 ; linux/optimized/seq_queue.ll
 ; linux/optimized/seq_timer.ll
 ; postgres/optimized/dt_common.ll

@@ -12,7 +12,7 @@ entry:
   %3 = mul nuw nsw i32 %2, 9
   %4 = add nuw nsw i32 %3, 73
   %5 = lshr i32 %4, 6
-  %6 = add i32 %5, %1
+  %6 = add i32 %1, %5
   %7 = add i32 %6, %0
   ret i32 %7
 }
@@ -26,12 +26,13 @@ entry:
   %3 = mul nuw nsw i32 %2, 9
   %4 = add nuw nsw i32 %3, 73
   %5 = lshr i32 %4, 6
-  %6 = add i32 %5, %1
+  %6 = add i32 %1, %5
   %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -148,7 +149,7 @@ entry:
   %3 = mul i32 %2, 62719
   %4 = add i32 %3, 769
   %5 = lshr i32 %4, 11
-  %6 = add i32 %5, %1
+  %6 = add i32 %1, %5
   %7 = add i32 %6, %0
   ret i32 %7
 }

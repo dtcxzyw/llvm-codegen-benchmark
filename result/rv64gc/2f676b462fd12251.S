@@ -15,7 +15,7 @@ func0000000000000002:                   # @func0000000000000002
 	srli	a1, a1, 2
 	mulhu	a1, a1, a2
 	srli	a1, a1, 2
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	lui	a2, 699051
@@ -24,7 +24,7 @@ func0000000000000003:                   # @func0000000000000003
 	add	a2, a2, a3
 	mulhu	a1, a1, a2
 	srli	a1, a1, 5
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	srli	a1, a1, 4
@@ -42,5 +42,5 @@ func0000000000000001:                   # @func0000000000000001
 	ld	a2, %lo(.LCPI4_0)(a2)
 	srli	a1, a1, 25
 	mulhu	a1, a1, a2
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret

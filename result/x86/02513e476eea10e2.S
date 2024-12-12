@@ -37,7 +37,7 @@ func0000000000000006:                   # @func0000000000000006
 .LCPI4_0:
 	.long	0x43800000                      # float 256
 	.long	0x41800000                      # float 16
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	xorl	%eax, %eax
 	cmpl	$1024, %edi                     # imm = 0x400
 	setb	%al

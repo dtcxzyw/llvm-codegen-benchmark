@@ -1,9 +1,10 @@
 
-; 42 occurrences:
+; 44 occurrences:
 ; clamav/optimized/yara_grammar.c.ll
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
 ; graphviz/optimized/grammar.c.ll
 ; hdf5/optimized/H5LTparse.c.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; linux/optimized/eventpoll.ll
 ; llvm/optimized/HIPUtility.cpp.ll
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
@@ -42,12 +43,13 @@
 ; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
-  %2 = and i64 %1, -4
-  %3 = or disjoint i64 %2, 1
+  %2 = and i64 %1, -65536
+  %3 = or disjoint i64 %2, 1024
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

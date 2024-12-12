@@ -1,6 +1,8 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -11,13 +13,15 @@ define i64 @func0000000000000003(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 true, i1 %2
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/OgreStructs.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cpython/optimized/action_helpers.ll
 ; glslang/optimized/Pp.cpp.ll
 ; linux/optimized/itimer.ll
@@ -33,7 +37,7 @@ define i64 @func0000000000000000(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 true, i1 %2
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -44,7 +48,7 @@ define i64 @func0000000000000002(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 true, i1 %2
   %4 = zext i1 %3 to i64
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -55,7 +59,7 @@ define i64 @func0000000000000001(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 true, i1 %2
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

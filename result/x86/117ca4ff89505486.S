@@ -6,14 +6,13 @@ func0000000000000006:                   # @func0000000000000006
 	shrq	$63, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	incq	%rdx
+	decq	%rsi
 	testb	$1, %dil
-	cmoveq	%rsi, %rdx
-	decq	%rdx
-	cmpq	$1073741823, %rdx               # imm = 0x3FFFFFFF
+	cmovneq	%rdx, %rsi
+	cmpq	$1073741823, %rsi               # imm = 0x3FFFFFFF
 	setb	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addq	$2000, %rdx                     # imm = 0x7D0
 	testb	$1, %dil
 	cmoveq	%rsi, %rdx

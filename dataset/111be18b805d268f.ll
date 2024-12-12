@@ -1,6 +1,11 @@
 
-; 4 occurrences:
+; 9 occurrences:
+; assimp/optimized/zip.c.ll
+; cmake/optimized/zstd_decompress_block.c.ll
 ; git/optimized/diffcore-rename.ll
+; hermes/optimized/zip.c.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; ruby/optimized/compile.ll
 ; yosys/optimized/deminout.ll
@@ -13,8 +18,7 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; flatbuffers/optimized/idl_gen_swift.cpp.ll
+; 4 occurrences:
 ; icu/optimized/olsontz.ll
 ; linux/optimized/drm_edid.ll
 ; llvm/optimized/CGBuiltin.cpp.ll

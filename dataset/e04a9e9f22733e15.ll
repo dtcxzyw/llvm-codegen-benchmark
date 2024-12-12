@@ -1,5 +1,6 @@
 
-; 97 occurrences:
+; 96 occurrences:
+; boost/optimized/topology.ll
 ; clamav/optimized/explode.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
@@ -68,7 +69,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -95,14 +95,13 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or i16 %1, %2
   %4 = zext i16 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -114,13 +113,16 @@ define i32 @func0000000000000006(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = zext nneg i16 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
-; 11 occurrences:
+; 14 occurrences:
 ; glslang/optimized/Constant.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; openjdk/optimized/inStream.ll
 ; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/jni_util.ll
@@ -135,7 +137,7 @@ define i32 @func0000000000000005(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = zext i16 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -147,13 +149,12 @@ define i32 @func0000000000000000(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or i16 %1, %2
   %4 = zext i16 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; libpng/optimized/png.c.ll
-; linux/optimized/fiemap.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; openjdk/optimized/png.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
@@ -162,7 +163,7 @@ define i32 @func0000000000000007(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = zext nneg i16 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -173,7 +174,7 @@ define i32 @func0000000000000002(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or i16 %1, %2
   %4 = zext nneg i16 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

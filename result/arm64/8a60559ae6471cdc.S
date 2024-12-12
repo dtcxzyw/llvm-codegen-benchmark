@@ -1,118 +1,60 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	mov	w8, #31457                      // =0x7ae1
+	add	w9, w1, #3
+	cmp	w1, #0
 	movk	w8, #44564, lsl #16
-	dup	v4.4s, w8
-	smull2	v5.2d, v3.4s, v4.4s
-	smull	v6.2d, v3.2s, v4.2s
-	smull2	v7.2d, v2.4s, v4.4s
-	smull	v4.2d, v2.2s, v4.2s
-	uzp2	v5.4s, v6.4s, v5.4s
-	cmlt	v6.4s, v3.4s, #0
-	uzp2	v4.4s, v4.4s, v7.4s
-	cmlt	v7.4s, v2.4s, #0
-	usra	v3.4s, v6.4s, #30
-	usra	v2.4s, v7.4s, #30
-	sshr	v6.4s, v5.4s, #5
-	sshr	v7.4s, v4.4s, #5
-	ssra	v1.4s, v3.4s, #2
-	ssra	v0.4s, v2.4s, #2
-	usra	v6.4s, v5.4s, #31
-	usra	v7.4s, v4.4s, #31
-	add	v1.4s, v1.4s, v6.4s
-	add	v0.4s, v0.4s, v7.4s
+	csel	w9, w9, w1, lt
+	smull	x8, w1, w8
+	add	w9, w0, w9, asr #2
+	asr	x8, x8, #37
+	add	w8, w8, w8, lsr #31
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
 	mov	w8, #34079                      // =0x851f
+	mov	w9, #31457                      // =0x7ae1
 	movk	w8, #20971, lsl #16
-	dup	v4.4s, w8
-	mov	w8, #31457                      // =0x7ae1
-	movk	w8, #44564, lsl #16
-	dup	v5.4s, w8
-	smull2	v6.2d, v3.4s, v4.4s
-	smull	v7.2d, v3.2s, v4.2s
-	smull2	v16.2d, v2.4s, v4.4s
-	smull	v4.2d, v2.2s, v4.2s
-	smull2	v17.2d, v3.4s, v5.4s
-	smull	v3.2d, v3.2s, v5.2s
-	smull2	v18.2d, v2.4s, v5.4s
-	smull	v2.2d, v2.2s, v5.2s
-	uzp2	v5.4s, v7.4s, v6.4s
-	uzp2	v4.4s, v4.4s, v16.4s
-	uzp2	v3.4s, v3.4s, v17.4s
-	uzp2	v2.4s, v2.4s, v18.4s
-	sshr	v6.4s, v5.4s, #5
-	sshr	v7.4s, v4.4s, #5
-	usra	v6.4s, v5.4s, #31
-	sshr	v5.4s, v3.4s, #7
-	usra	v7.4s, v4.4s, #31
-	sshr	v4.4s, v2.4s, #7
-	add	v1.4s, v6.4s, v1.4s
-	usra	v5.4s, v3.4s, #31
-	add	v0.4s, v7.4s, v0.4s
-	usra	v4.4s, v2.4s, #31
-	add	v1.4s, v1.4s, v5.4s
-	add	v0.4s, v0.4s, v4.4s
+	movk	w9, #44564, lsl #16
+	smull	x8, w1, w8
+	smull	x9, w1, w9
+	asr	x8, x8, #37
+	asr	x9, x9, #39
+	add	w8, w8, w8, lsr #31
+	add	w9, w9, w9, lsr #31
+	add	w8, w0, w8
+	add	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	mov	w8, #31457                      // =0x7ae1
+	add	w9, w1, #3
+	cmp	w1, #0
 	movk	w8, #44564, lsl #16
-	dup	v4.4s, w8
-	smull2	v5.2d, v3.4s, v4.4s
-	smull	v6.2d, v3.2s, v4.2s
-	smull2	v7.2d, v2.4s, v4.4s
-	smull	v4.2d, v2.2s, v4.2s
-	uzp2	v5.4s, v6.4s, v5.4s
-	cmlt	v6.4s, v3.4s, #0
-	uzp2	v4.4s, v4.4s, v7.4s
-	cmlt	v7.4s, v2.4s, #0
-	usra	v3.4s, v6.4s, #30
-	usra	v2.4s, v7.4s, #30
-	sshr	v6.4s, v5.4s, #5
-	sshr	v7.4s, v4.4s, #5
-	ssra	v1.4s, v3.4s, #2
-	ssra	v0.4s, v2.4s, #2
-	usra	v6.4s, v5.4s, #31
-	usra	v7.4s, v4.4s, #31
-	add	v1.4s, v1.4s, v6.4s
-	add	v0.4s, v0.4s, v7.4s
+	csel	w9, w9, w1, lt
+	smull	x8, w1, w8
+	add	w9, w0, w9, asr #2
+	asr	x8, x8, #37
+	add	w8, w8, w8, lsr #31
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	mov	w8, #31457                      // =0x7ae1
+	mov	w9, #34079                      // =0x851f
 	movk	w8, #44564, lsl #16
-	dup	v4.4s, w8
-	mov	w8, #34079                      // =0x851f
-	movk	w8, #20971, lsl #16
-	dup	v5.4s, w8
-	smull2	v6.2d, v3.4s, v4.4s
-	smull	v7.2d, v3.2s, v4.2s
-	smull2	v16.2d, v2.4s, v4.4s
-	smull	v4.2d, v2.2s, v4.2s
-	smull2	v17.2d, v3.4s, v5.4s
-	smull	v3.2d, v3.2s, v5.2s
-	smull2	v18.2d, v2.4s, v5.4s
-	smull	v2.2d, v2.2s, v5.2s
-	uzp2	v5.4s, v7.4s, v6.4s
-	uzp2	v4.4s, v4.4s, v16.4s
-	uzp2	v3.4s, v3.4s, v17.4s
-	uzp2	v2.4s, v2.4s, v18.4s
-	sshr	v6.4s, v5.4s, #5
-	sshr	v7.4s, v4.4s, #5
-	usra	v6.4s, v5.4s, #31
-	sshr	v5.4s, v3.4s, #7
-	usra	v7.4s, v4.4s, #31
-	sshr	v4.4s, v2.4s, #7
-	add	v1.4s, v6.4s, v1.4s
-	usra	v5.4s, v3.4s, #31
-	add	v0.4s, v7.4s, v0.4s
-	usra	v4.4s, v2.4s, #31
-	add	v1.4s, v1.4s, v5.4s
-	add	v0.4s, v0.4s, v4.4s
+	movk	w9, #20971, lsl #16
+	smull	x8, w1, w8
+	smull	x9, w1, w9
+	asr	x8, x8, #37
+	asr	x9, x9, #39
+	add	w8, w8, w8, lsr #31
+	add	w9, w9, w9, lsr #31
+	add	w8, w0, w8
+	add	w0, w8, w9
 	ret
                                         // -- End function

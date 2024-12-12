@@ -1,7 +1,5 @@
 
-; 4 occurrences:
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
+; 2 occurrences:
 ; opencc/optimized/bit-vector.cc.ll
 ; postgres/optimized/multirangetypes.ll
 ; Function Attrs: nounwind

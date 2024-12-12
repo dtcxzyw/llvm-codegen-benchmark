@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/rtrees.cpp.ll
 ; opencv/optimized/tldModel.cpp.ll
@@ -23,7 +23,6 @@
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/proc_mux.ll
 ; yosys/optimized/proc_rmdead.ll
-; yosys/optimized/qwp.ll
 ; yosys/optimized/scopeinfo.ll
 ; yosys/optimized/share.ll
 ; yosys/optimized/sim.ll
@@ -53,17 +52,12 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 5 occurrences:
 ; yosys/optimized/iopadmap.ll
 ; yosys/optimized/memory_share.ll
-; yosys/optimized/opt_demorgan.ll
-; yosys/optimized/opt_dff.ll
 ; yosys/optimized/opt_lut.ll
 ; yosys/optimized/opt_muxtree.ll
-; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/qwp.ll
-; yosys/optimized/verilog_backend.ll
-; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:

@@ -1,7 +1,9 @@
+.LCPI0_0:
+	.long	0x41400000                      # float 12
 func000000000000000a:                   # @func000000000000000a
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpless	%xmm1, %xmm0, %k1
-	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
+	vmovss	.LCPI0_0(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [1.2E+1,0.0E+0,0.0E+0,0.0E+0]
 	vcvttss2si	%xmm0, %eax
 	retq
 .LCPI1_0:

@@ -1,5 +1,5 @@
 
-; 110 occurrences:
+; 104 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -9,7 +9,6 @@
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/aigCanon.c.ll
-; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -18,7 +17,6 @@
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -39,7 +37,6 @@
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/giaMini.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
@@ -52,8 +49,6 @@
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/lpkMan.c.ll
-; abc/optimized/lpkMux.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/rsbDec6.c.ll
@@ -72,7 +67,6 @@
 ; gromacs/optimized/reversetopology.cpp.ll
 ; hdf5/optimized/sio_perf.c.ll
 ; icu/optimized/gennorm2.ll
-; linux/optimized/ht.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_ggtt_fencing.ll
 ; linux/optimized/mballoc.ll
@@ -111,7 +105,7 @@
 ; xgboost/optimized/allreduce.cc.ll
 ; zxing/optimized/DMDataBlock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %0, 1
@@ -121,12 +115,11 @@ entry:
   ret i1 %6
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/ifMap.c.ll
 ; abc/optimized/kitIsop.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/mioParse.c.ll
@@ -145,7 +138,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %0, 1
@@ -165,7 +158,7 @@ entry:
 ; linux/optimized/mballoc.ll
 ; linux/optimized/sit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000f4(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %0, 2
@@ -175,23 +168,11 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; clamav/optimized/autoit.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = select i1 %1, i64 20, i64 %3
-  %5 = add nuw nsw i64 %0, 2
-  %6 = icmp ult i64 %5, %4
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; cmake/optimized/cover.c.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 10, i64 %3

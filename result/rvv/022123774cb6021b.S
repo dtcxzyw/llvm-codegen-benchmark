@@ -1,15 +1,4 @@
 func00000000000001ef:                   # @func00000000000001ef
-	li	a0, 37
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmul.vx	v10, v10, a0
-	li	a0, 211
-	vmacc.vx	v10, a0, v12
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vzext.vf4	v9, v8
-	vwaddu.wv	v10, v10, v9
-	vmv2r.v	v8, v10
-	ret
-func00000000000001ff:                   # @func00000000000001ff
 	li	a0, 60
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0

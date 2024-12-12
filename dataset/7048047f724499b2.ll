@@ -59,7 +59,7 @@ entry:
   ret i64 %3
 }
 
-; 105 occurrences:
+; 101 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -74,7 +74,6 @@ entry:
 ; abseil-cpp/optimized/status_internal.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
-; clamav/optimized/conv.c.ll
 ; cpython/optimized/_collectionsmodule.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/obmalloc.ll
@@ -101,13 +100,10 @@ entry:
 ; linux/optimized/badblocks.ll
 ; linux/optimized/blk-map.ll
 ; linux/optimized/compress.ll
-; linux/optimized/fadvise.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/i915_gem_mman.ll
 ; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/machine_kexec_64.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/process_vm_access.ll
 ; linux/optimized/regcache-rbtree.ll
 ; linux/optimized/rsrc.ll
@@ -123,6 +119,7 @@ entry:
 ; llvm/optimized/SortJavaScriptImports.cpp.ll
 ; llvm/optimized/VNCoercion.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
+; lvgl/optimized/lv_utils.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/hough.cpp.ll
@@ -139,7 +136,6 @@ entry:
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
 ; qemu/optimized/block_quorum.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; quickjs/optimized/libbf.ll
@@ -151,7 +147,6 @@ entry:
 ; rust-analyzer-rs/optimized/24v97gdgi5w62z7s.ll
 ; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
 ; soc-simulator/optimized/verilated.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/urcrsa32.ll
 ; spike/optimized/urstsa32.ll
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll
@@ -165,6 +160,7 @@ entry:
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; yosys/optimized/ql_dsp_simd.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -173,7 +169,8 @@ entry:
   ret i64 %3
 }
 
-; 26 occurrences:
+; 27 occurrences:
+; cvc5/optimized/word.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; icu/optimized/icuexportdata.ll
@@ -208,7 +205,7 @@ entry:
   ret i64 %3
 }
 
-; 27 occurrences:
+; 31 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; assimp/optimized/LWOLoader.cpp.ll
@@ -236,6 +233,10 @@ entry:
 ; smol-rs/optimized/21eidrukyvr99qqv.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; yosys/optimized/cxxrtl_backend.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
@@ -244,7 +245,7 @@ entry:
   ret i64 %3
 }
 
-; 80 occurrences:
+; 83 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
@@ -325,6 +326,9 @@ entry:
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:

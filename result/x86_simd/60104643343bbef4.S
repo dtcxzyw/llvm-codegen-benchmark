@@ -8,7 +8,7 @@ func0000000000000014:                   # @func0000000000000014
 	vbroadcastss	.LCPI0_0(%rip), %zmm0   # zmm0 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	vsubps	%zmm1, %zmm0, %zmm0
 	vcmpleps	.LCPI0_1(%rip){1to16}, %zmm0, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -22,7 +22,7 @@ func0000000000000008:                   # @func0000000000000008
 	vbroadcastss	.LCPI1_0(%rip), %zmm0   # zmm0 = [5.38E+2,5.38E+2,5.38E+2,5.38E+2,5.38E+2,5.38E+2,5.38E+2,5.38E+2,5.38E+2,5.38E+2,5.38E+2,5.38E+2,5.38E+2,5.38E+2,5.38E+2,5.38E+2]
 	vsubps	%zmm1, %zmm0, %zmm0
 	vcmpgtps	.LCPI1_1(%rip){1to16}, %zmm0, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

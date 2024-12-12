@@ -7,7 +7,7 @@
 ; qemu/optimized/cache.ll
 ; slurm/optimized/node_conf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000036c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000ccc(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -22,7 +22,7 @@ entry:
 ; openjdk/optimized/lowMemoryDetector.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000361(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000cc1(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp ne i32 %3, %1
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/BTFParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000241(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000881(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RDFGraph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -71,7 +71,7 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; wireshark/optimized/dfvm.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000088c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c8c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -95,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/xarray.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000101(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp ugt i32 %3, %1
@@ -108,7 +108,7 @@ entry:
 ; tree-sitter-rs/optimized/2840d04zhlx99x1w.ll
 ; tree-sitter-rs/optimized/2qhtbpqvpvignqt5.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp sgt i32 %3, %1
@@ -120,7 +120,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -132,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; nuttx/optimized/fs_dir.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(ptr %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000058c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp ne i32 %3, %1

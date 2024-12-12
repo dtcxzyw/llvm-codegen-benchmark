@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 65 occurrences:
 ; abc/optimized/lpkCore.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
@@ -15,6 +15,9 @@
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_line.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
@@ -70,11 +73,12 @@ entry:
   ret i32 %3
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; darktable/optimized/introspection_blurs.c.ll
 ; darktable/optimized/introspection_spots.c.ll
 ; gromacs/optimized/gmx_vanhove.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; nuklear/optimized/unity.c.ll

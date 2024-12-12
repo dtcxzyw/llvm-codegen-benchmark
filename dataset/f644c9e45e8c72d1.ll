@@ -54,7 +54,7 @@ entry:
 ; spike/optimized/vs4r_v.ll
 ; spike/optimized/vs8r_v.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %2, 31
@@ -69,7 +69,7 @@ entry:
 ; spike/optimized/vmv4r_v.ll
 ; spike/optimized/vmv8r_v.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -1

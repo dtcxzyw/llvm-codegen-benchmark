@@ -21,7 +21,7 @@
 .LCPI0_3:
 	.short	63                              # 0x3f
 	.short	63                              # 0x3f
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm2, %xmm2

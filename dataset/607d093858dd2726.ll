@@ -3,7 +3,7 @@
 ; graphviz/optimized/triang.c.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000e2(i32 %0, i64 %1, i32 %2) #0 {
+define i64 @func00000000000001c2(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -20,7 +20,7 @@ entry:
 ; meshlab/optimized/io_x3d.cpp.ll
 ; opencv/optimized/rapid.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000e3(i32 %0, i64 %1, i32 %2) #0 {
+define i64 @func00000000000001c3(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1

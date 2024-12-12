@@ -1,9 +1,14 @@
-func0000000000000044:                   # @func0000000000000044
-	addi	a1, a1, 2047
-	addi	a0, a0, 1
-	addi	a1, a1, 1
-	srli	a1, a1, 12
+func0000000000000021:                   # @func0000000000000021
+	addi	a1, a1, -1
+	addi	a0, a0, -1
 	seqz	a1, a1
-	sltiu	a0, a0, 3
+	seqz	a0, a0
+	or	a0, a0, a1
+	ret
+func0000000000000084:                   # @func0000000000000084
+	addi	a1, a1, 1
+	addi	a0, a0, 1
+	sltiu	a1, a1, 2
+	sltiu	a0, a0, 2
 	or	a0, a0, a1
 	ret

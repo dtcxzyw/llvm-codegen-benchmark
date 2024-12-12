@@ -1,5 +1,5 @@
 
-; 153 occurrences:
+; 161 occurrences:
 ; abc/optimized/abcXsim.c.ll
 ; abc/optimized/ioWriteAiger.c.ll
 ; abc/optimized/ioWriteSmv.c.ll
@@ -22,15 +22,12 @@
 ; linux/optimized/clnt.ll
 ; linux/optimized/cls_api.ll
 ; linux/optimized/devinet.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/drm_blend.ll
-; linux/optimized/drm_client.ll
 ; linux/optimized/drm_framebuffer.ll
 ; linux/optimized/drm_gem_shmem_helper.ll
 ; linux/optimized/drm_lease.ll
 ; linux/optimized/eeepc-laptop.ll
 ; linux/optimized/extents.ll
-; linux/optimized/fils_aead.ll
 ; linux/optimized/fork.ll
 ; linux/optimized/gen8_engine_cs.ll
 ; linux/optimized/gen8_ppgtt.ll
@@ -72,7 +69,6 @@
 ; linux/optimized/journal.ll
 ; linux/optimized/keyring.ll
 ; linux/optimized/kyber-iosched.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/manage.ll
 ; linux/optimized/md.ll
 ; linux/optimized/mdio_bus.ll
@@ -82,14 +78,11 @@
 ; linux/optimized/net.ll
 ; linux/optimized/nfs3proc.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/nsproxy.ll
-; linux/optimized/pci_hotplug_core.ll
 ; linux/optimized/poll.ll
 ; linux/optimized/power_supply_hwmon.ll
 ; linux/optimized/ptrace.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/requeue.ll
-; linux/optimized/rseq.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/sch_api.ll
 ; linux/optimized/scsi_error.ll
@@ -106,7 +99,6 @@
 ; linux/optimized/tcp_sigpool.ll
 ; linux/optimized/thermal.ll
 ; linux/optimized/trace_eprobe.ll
-; linux/optimized/trace_event_perf.ll
 ; linux/optimized/trace_events.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_uprobe.ll
@@ -121,6 +113,15 @@
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_switch.ll
+; lvgl/optimized/lv_textarea.ll
 ; qemu/optimized/util_oslib-posix.c.ll
 ; redis/optimized/background_thread.ll
 ; redis/optimized/background_thread.sym.ll
@@ -139,7 +140,6 @@
 ; wireshark/optimized/packet-gtp.c.ll
 ; wireshark/optimized/packet-gtpv2.c.ll
 ; wireshark/optimized/packet-h223.c.ll
-; wireshark/optimized/packet-ieee1609dot2.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-iso14443.c.ll
 ; wireshark/optimized/packet-lnet.c.ll
@@ -153,6 +153,14 @@
 ; wireshark/optimized/packet-sip.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/7hsbxpr1hqy17ngn0bqyx5x8s.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/ailyigpc30x7abusis8v0e3w5.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0) #0 {
 entry:
@@ -162,7 +170,7 @@ entry:
   ret i1 %3
 }
 
-; 84 occurrences:
+; 88 occurrences:
 ; abc/optimized/fxuSingle.c.ll
 ; darktable/optimized/filtering.c.ll
 ; folly/optimized/AsyncSocket.cpp.ll
@@ -175,6 +183,10 @@ entry:
 ; lief/optimized/Repro.cpp.ll
 ; lief/optimized/TLS.cpp.ll
 ; linux/optimized/esp6.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_obj.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/environment.cpp.ll
@@ -274,11 +286,10 @@ entry:
   ret i1 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; git/optimized/fast-export.ll
 ; linux/optimized/eventpoll.ll
 ; linux/optimized/net.ll
-; linux/optimized/openclose.ll
 ; qemu/optimized/target_riscv_pmu.c.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wireshark/optimized/frame_data_sequence.c.ll
@@ -292,7 +303,7 @@ entry:
   ret i1 %3
 }
 
-; 24 occurrences:
+; 22 occurrences:
 ; abc/optimized/retLvalue.c.ll
 ; darktable/optimized/collect.c.ll
 ; darktable/optimized/filtering.c.ll
@@ -310,10 +321,8 @@ entry:
 ; linux/optimized/namei.ll
 ; linux/optimized/net_namespace.ll
 ; linux/optimized/nfs4namespace.ll
-; linux/optimized/process_keys.ll
 ; linux/optimized/write.ll
 ; llvm/optimized/InstrEmitter.cpp.ll
-; nuttx/optimized/lib_fileno.c.ll
 ; oniguruma/optimized/regexec.ll
 ; openmpi/optimized/mca_base_var.ll
 ; openmpi/optimized/pmix_mca_base_var.ll
@@ -326,7 +335,7 @@ entry:
   ret i1 %3
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; darktable/optimized/live_view.c.ll
 ; jemalloc/optimized/background_thread.ll
 ; jemalloc/optimized/background_thread.pic.ll
@@ -337,6 +346,8 @@ entry:
 ; redis/optimized/background_thread.ll
 ; redis/optimized/background_thread.sym.ll
 ; wireshark/optimized/packet-dcom-cba-acco.c.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0) #0 {
 entry:

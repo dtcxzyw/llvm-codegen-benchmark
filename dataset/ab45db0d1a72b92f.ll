@@ -1,5 +1,108 @@
 
-; 178 occurrences:
+; 442 occurrences:
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/core.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/framework.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/parsers.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/trivial.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; eastl/optimized/TestSmartPtr.cpp.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; hyperscan/optimized/goughcompile_accel.cpp.ll
@@ -102,13 +205,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -163,32 +263,6 @@
 ; nix/optimized/why-depends.ll
 ; nix/optimized/worker.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
-; quantlib/optimized/arithmeticoisratehelper.ll
-; quantlib/optimized/basisswapratehelpers.ll
-; quantlib/optimized/basket.ll
-; quantlib/optimized/bondhelpers.ll
-; quantlib/optimized/crosscurrencyratehelpers.ll
-; quantlib/optimized/defaultprobabilityhelpers.ll
-; quantlib/optimized/inflationhelpers.ll
-; quantlib/optimized/model.ll
-; quantlib/optimized/oisratehelper.ll
-; quantlib/optimized/overnightindexfutureratehelper.ll
-; quantlib/optimized/ratehelpers.ll
-; quantlib/optimized/riskyassetswap.ll
-; quantlib/optimized/yoyoptionlethelpers.ll
-; rust-analyzer-rs/optimized/54f0pj1u367tkav7.ll
-; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i32 %1) #0 {
-entry:
-  %2 = freeze i32 %1
-  %3 = icmp eq i32 %2, 0
-  %4 = getelementptr nusw i8, ptr %0, i64 2
-  %5 = select i1 %3, ptr %4, ptr null
-  ret ptr %5
-}
-
-; 169 occurrences:
 ; quantlib/optimized/abcdatmvolcurve.ll
 ; quantlib/optimized/abcdcalibration.ll
 ; quantlib/optimized/analyticcevengine.ll
@@ -196,7 +270,9 @@ entry:
 ; quantlib/optimized/analyticholderextensibleoptionengine.ll
 ; quantlib/optimized/analyticpartialtimebarrieroptionengine.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
+; quantlib/optimized/arithmeticoisratehelper.ll
 ; quantlib/optimized/basisswapratehelpers.ll
+; quantlib/optimized/basket.ll
 ; quantlib/optimized/basketgeneratingengine.ll
 ; quantlib/optimized/batesmodel.ll
 ; quantlib/optimized/bespokecalendar.ll
@@ -225,6 +301,7 @@ entry:
 ; quantlib/optimized/cpicoupon.ll
 ; quantlib/optimized/cranknicolsonscheme.ll
 ; quantlib/optimized/creditdefaultswap.ll
+; quantlib/optimized/crosscurrencyratehelpers.ll
 ; quantlib/optimized/currency.ll
 ; quantlib/optimized/cvaswapengine.ll
 ; quantlib/optimized/defaultprobabilityhelpers.ll
@@ -315,11 +392,13 @@ entry:
 ; quantlib/optimized/makecms.ll
 ; quantlib/optimized/makeswaption.ll
 ; quantlib/optimized/markovfunctional.ll
+; quantlib/optimized/model.ll
 ; quantlib/optimized/noarbsabr.ll
 ; quantlib/optimized/noarbsabrinterpolatedsmilesection.ll
 ; quantlib/optimized/noarbsabrsmilesection.ll
 ; quantlib/optimized/nonstandardswaption.ll
 ; quantlib/optimized/normalclvmodel.ll
+; quantlib/optimized/oisratehelper.ll
 ; quantlib/optimized/optionletstripper1.ll
 ; quantlib/optimized/optionletstripper2.ll
 ; quantlib/optimized/overnightindexedcoupon.ll
@@ -355,15 +434,20 @@ entry:
 ; quantlib/optimized/variancegammamodel.ll
 ; quantlib/optimized/yoyinflationcoupon.ll
 ; quantlib/optimized/yoyinflationoptionletvolatilitystructure.ll
+; quantlib/optimized/yoyoptionlethelpers.ll
 ; quantlib/optimized/zabr.ll
 ; quantlib/optimized/zerocouponinflationswap.ll
 ; quantlib/optimized/zerocouponswap.ll
+; rust-analyzer-rs/optimized/54f0pj1u367tkav7.ll
+; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000031(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000061(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 0
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 24
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 2
   %5 = select i1 %3, ptr %4, ptr null
   ret ptr %5
 }

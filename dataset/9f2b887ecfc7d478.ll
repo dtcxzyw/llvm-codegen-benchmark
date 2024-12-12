@@ -7,12 +7,13 @@
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = sub i64 %3, %0
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/format_args.ll
 ; openssl/optimized/libssl-lib-d1_lib.ll
 ; openssl/optimized/libssl-shlib-d1_lib.ll
 ; Function Attrs: nounwind
@@ -24,10 +25,9 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; rustfmt-rs/optimized/3sx1t619hmuq0zz7.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
-; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -37,14 +37,13 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; minetest/optimized/settings.cpp.ll
-; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = sub nuw i64 %3, %0
   ret i64 %4
 }
@@ -61,19 +60,20 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = sub i64 %3, %0
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; ockam-rs/optimized/4mv3oanfto174c2o.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %1
+  %3 = add i64 %1, %.neg
   %4 = sub nuw i64 %3, %0
   ret i64 %4
 }

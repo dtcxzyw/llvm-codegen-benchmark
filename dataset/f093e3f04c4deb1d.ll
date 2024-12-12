@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/unarj.c.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
@@ -18,7 +18,6 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/ir.ll
 ; qemu/optimized/hw_acpi_core.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; raylib/optimized/rmodels.c.ll

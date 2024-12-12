@@ -19,7 +19,7 @@
 	.long	6                               # 0x6
 .LCPI0_2:
 	.zero	4,64
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpord	.LCPI0_2(%rip){1to4}, %xmm0, %xmm2
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm1, %k1
 	vmovdqu8	%xmm0, %xmm2 {%k1}

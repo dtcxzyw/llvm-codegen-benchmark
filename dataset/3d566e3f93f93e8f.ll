@@ -1,11 +1,8 @@
 
-; 22 occurrences:
+; 20 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/e1000_hw.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hwgpe.ll
 ; linux/optimized/intel_pch_refclk.ll
 ; linux/optimized/quota.ll
@@ -22,6 +19,7 @@
 ; qemu/optimized/system_physmem.c.ll
 ; verilator/optimized/V3Sched.cpp.ll
 ; z3/optimized/sat_clause.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
@@ -32,15 +30,13 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/icl_dsi.ll
 ; linux/optimized/nvm.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/reg.ll
-; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/LTO.cpp.ll
 ; nuttx/optimized/fs_dup2.c.ll
 ; opencv/optimized/matrix.cpp.ll

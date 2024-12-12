@@ -25,7 +25,7 @@ func00000000000000c7:                   # @func00000000000000c7
 	shrq	$4, %rdi
 	addq	%rdi, %rax
 	retq
-func0000000000000083:                   # @func0000000000000083
+func0000000000000183:                   # @func0000000000000183
 	movq	%rdi, %rax
 	shrq	$48, %rsi
 	shrq	$48, %rax

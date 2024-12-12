@@ -16,6 +16,12 @@ func0000000000000002:                   # @func0000000000000002
 	andq	%rsi, %rax
 	subq	%rdi, %rax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	movq	%rdx, %rax
+	negq	%rax
+	andq	%rsi, %rax
+	subq	%rdi, %rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	movq	%rdx, %rax
 	negq	%rax

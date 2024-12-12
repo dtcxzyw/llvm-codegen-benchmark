@@ -121,7 +121,7 @@
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i8 %1, 45
@@ -136,7 +136,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; softposit-rs/optimized/3x9ny7yhpewmwf1y.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp slt i8 %1, 0
@@ -147,7 +147,7 @@ entry:
 ; 1 occurrences:
 ; libpng/optimized/pngwutil.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i8 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 256, %0
   %3 = icmp slt i8 %1, 0
@@ -184,7 +184,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-giop.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp ult i8 %1, 2

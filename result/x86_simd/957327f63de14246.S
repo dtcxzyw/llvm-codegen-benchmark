@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovw2m	%xmm0, %k1
 	vmovdqa32	%ymm1, %ymm2 {%k1}
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm2, %k0
-	korb	%k1, %k0, %k0
+	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -16,7 +16,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovw2m	%xmm0, %k1
 	vmovdqa32	%ymm1, %ymm2 {%k1}
 	vptestmd	.LCPI1_0(%rip){1to8}, %ymm2, %k0
-	korb	%k1, %k0, %k0
+	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

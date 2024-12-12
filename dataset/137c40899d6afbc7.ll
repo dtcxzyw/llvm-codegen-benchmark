@@ -1,10 +1,14 @@
 
-; 124 occurrences:
+; 138 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; assimp/optimized/ASEParser.cpp.ll
 ; assimp/optimized/BaseImporter.cpp.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
+; boost/optimized/ipvfuture_rule.ll
+; boost/optimized/query_rule.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; cjson/optimized/cJSON_Utils.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/msxml.c.ll
@@ -22,6 +26,7 @@
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
 ; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
 ; cpython/optimized/_codecs_kr.ll
+; cpython/optimized/_json.ll
 ; cpython/optimized/binascii.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -52,6 +57,7 @@
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; freetype/optimized/psaux.c.ll
+; freetype/optimized/type1.c.ll
 ; git/optimized/pretty.ll
 ; git/optimized/wildmatch.ll
 ; glog/optimized/symbolize.cc.ll
@@ -71,17 +77,24 @@
 ; libquic/optimized/f_string.c.ll
 ; linux/optimized/namei_msdos.ll
 ; llvm/optimized/AsmLexer.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/BreakableToken.cpp.ll
 ; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
+; llvm/optimized/DJB.cpp.ll
 ; llvm/optimized/ExprClassification.cpp.ll
+; llvm/optimized/GVN.cpp.ll
+; llvm/optimized/InstCombinePHI.cpp.ll
+; llvm/optimized/NewGVN.cpp.ll
 ; llvm/optimized/ParentMap.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RewriteObjCFoundationAPI.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaFixItUtils.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/StringRef.cpp.ll
 ; llvm/optimized/TGParser.cpp.ll
 ; llvm/optimized/TransRetainReleaseDealloc.cpp.ll
+; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
@@ -123,6 +136,7 @@
 ; wireshark/optimized/packet-websocket.c.ll
 ; wireshark/optimized/ws_strptime.c.ll
 ; z3/optimized/theory_bv.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/TextDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {
@@ -156,9 +170,9 @@ entry:
 ; icu/optimized/ucnvmbcs.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/namei_msdos.ll
-; llvm/optimized/VPlanTransforms.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; openjdk/optimized/hb-ot-tag.ll
+; php/optimized/decode.ll
 ; php/optimized/string.ll
 ; ruby/optimized/pack.ll
 ; wireshark/optimized/packet-dof.c.ll

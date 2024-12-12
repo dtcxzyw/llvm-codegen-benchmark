@@ -3,30 +3,27 @@
 ; cpython/optimized/obmalloc.ll
 ; ruby/optimized/array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000089(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i64, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = icmp uge ptr %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
 
-; 105 occurrences:
+; 101 occurrences:
 ; clamav/optimized/packlibs.c.ll
 ; clamav/optimized/yara_arena.c.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/ubidiwrt.ll
 ; icu/optimized/ucasemap.ll
-; icu/optimized/unorm.ll
 ; icu/optimized/ustrcase.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/API.cpp.ll
 ; llvm/optimized/DeclBase.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/MachineRegisterInfo.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
 ; llvm/optimized/RecordsSlice.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
@@ -107,7 +104,6 @@ entry:
 ; openjdk/optimized/psScavenge.ll
 ; openjdk/optimized/serialHeap.ll
 ; openjdk/optimized/serialStringDedup.ll
-; openjdk/optimized/sharedRuntime.ll
 ; openjdk/optimized/shenandoahHeap.ll
 ; openjdk/optimized/shenandoahHeapRegion.ll
 ; openjdk/optimized/virtualMemoryTracker.ll
@@ -119,19 +115,18 @@ entry:
 ; velox/optimized/MmapAllocator.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000249(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000889(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw ptr, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = icmp uge ptr %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
 
-; 55 occurrences:
+; 52 occurrences:
 ; hyperscan/optimized/teddy.c.ll
 ; hyperscan/optimized/teddy_avx2.c.ll
-; icu/optimized/ushape.ll
 ; libquic/optimized/tls_record.c.ll
 ; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/codeBlob.ll
@@ -163,7 +158,6 @@ entry:
 ; openjdk/optimized/jvmtiEventController.ll
 ; openjdk/optimized/jvmtiExport.ll
 ; openjdk/optimized/jvmtiImpl.ll
-; openjdk/optimized/method.ll
 ; openjdk/optimized/os_posix.ll
 ; openjdk/optimized/reflection.ll
 ; openjdk/optimized/rootResolver.ll
@@ -183,13 +177,42 @@ entry:
 ; openjdk/optimized/whitebox.ll
 ; openjdk/optimized/xVerify.ll
 ; openjdk/optimized/zBarrierSet.ll
-; z3/optimized/nlsat_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000245(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000885(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = icmp ugt ptr %3, %1
+  %4 = icmp ult ptr %1, %3
   %5 = icmp ule ptr %0, %1
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 19 occurrences:
+; boost/optimized/alloc_lib.ll
+; clamav/optimized/packlibs.c.ll
+; icu/optimized/ubidiwrt.ll
+; icu/optimized/ucasemap.ll
+; icu/optimized/unorm.ll
+; icu/optimized/ustrcase.ll
+; llvm/optimized/API.cpp.ll
+; llvm/optimized/DeclBase.cpp.ll
+; llvm/optimized/DeclCXX.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/MachineRegisterInfo.cpp.ll
+; llvm/optimized/ProgramState.cpp.ll
+; llvm/optimized/RecordsSlice.cpp.ll
+; llvm/optimized/Stmt.cpp.ll
+; openjdk/optimized/defNewGeneration.ll
+; openjdk/optimized/epsilonHeap.ll
+; openjdk/optimized/g1CollectedHeap.ll
+; openjdk/optimized/serialHeap.ll
+; openjdk/optimized/sharedRuntime.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000c89(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = icmp ult ptr %0, %3
+  %5 = icmp uge ptr %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
@@ -197,10 +220,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/copy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000248(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000888(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = icmp ugt ptr %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -211,11 +234,25 @@ entry:
 ; openjdk/optimized/os_linux_x86.ll
 ; openjdk/optimized/vmError.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000298(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000928(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = icmp ule ptr %3, %1
+  %4 = icmp uge ptr %1, %3
   %5 = icmp ugt ptr %0, %1
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 3 occurrences:
+; icu/optimized/ushape.ll
+; openjdk/optimized/method.ll
+; z3/optimized/nlsat_solver.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000c85(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = icmp ult ptr %1, %3
+  %5 = icmp ule ptr %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
@@ -223,10 +260,10 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/timebasket.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000d8c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp ne ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = icmp ne ptr %0, %3
   %5 = icmp ne ptr %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6

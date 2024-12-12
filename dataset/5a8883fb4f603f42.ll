@@ -1,5 +1,5 @@
 
-; 134 occurrences:
+; 137 occurrences:
 ; abc/optimized/saigIsoSlow.c.ll
 ; arrow/optimized/row_internal.cc.ll
 ; brotli/optimized/static_dict.c.ll
@@ -27,7 +27,6 @@
 ; linux/optimized/drm_gem_framebuffer_helper.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/hid-ntrig.ll
-; linux/optimized/int_log.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_dpll_mgr.ll
@@ -91,6 +90,10 @@
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; minetest/optimized/c_converter.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -142,7 +145,7 @@ entry:
   ret i32 %3
 }
 
-; 124 occurrences:
+; 131 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/kitCloud.c.ll
@@ -178,11 +181,21 @@ entry:
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/pci.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/uncore_discovery.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_demo_render.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_image_decoder.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
@@ -256,8 +269,6 @@ entry:
 ; spike/optimized/vwmulu_vv.ll
 ; spike/optimized/vwmulu_vx.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
-; typst-rs/optimized/3lt7g0yvt7qzv13u.ll
-; typst-rs/optimized/p1dgiootfedk7bo.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; wireshark/optimized/dot11decrypt_util.c.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
@@ -266,16 +277,15 @@ entry:
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/packet-vrt.c.ll
 ; z3/optimized/sat_ddfw.cpp.ll
-; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -284,17 +294,15 @@ entry:
 ; draco/optimized/adaptive_rans_bit_decoder.cc.ll
 ; libwebp/optimized/alpha_processing.c.ll
 ; libwebp/optimized/anim_decode.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; minetest/optimized/CImage.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/splashscreen_gfx_impl.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/vmulhu_vx.ll
 ; spike/optimized/vwmaccu_vv.ll
 ; spike/optimized/vwmaccu_vx.ll
@@ -309,11 +317,11 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16711935
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   ret i32 %3
 }
 
-; 87 occurrences:
+; 89 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/fraImp.c.ll
@@ -363,8 +371,10 @@ entry:
 ; jq/optimized/jv_print.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/scsicam.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll

@@ -23,6 +23,11 @@ func000000000000000c:                   # @func000000000000000c
 	shlxq	%rsi, %rax, %rax
 	orq	%rdi, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	movzbl	%dl, %eax
+	shlxq	%rsi, %rax, %rax
+	orq	%rdi, %rax
+	retq
 func000000000000000e:                   # @func000000000000000e
 	movzbl	%dl, %eax
 	shlxq	%rsi, %rax, %rax

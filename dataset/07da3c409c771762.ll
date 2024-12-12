@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/gregorian.ll
 ; gromacs/optimized/xtc2.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
 ; postgres/optimized/tsvector_op.ll

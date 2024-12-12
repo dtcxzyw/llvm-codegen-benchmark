@@ -8,14 +8,16 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = lshr exact i64 %5, 2
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/ef603zin5qw49hb.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000054(i64 %0, i64 %1, ptr %2) #0 {
 entry:
@@ -23,7 +25,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub nuw i64 %4, %1
   %6 = lshr exact i64 %5, 5
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

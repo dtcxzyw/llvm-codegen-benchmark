@@ -1,8 +1,12 @@
 
-; 77 occurrences:
+; 81 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
@@ -78,16 +82,20 @@
 ; yosys/optimized/xaiger.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000146(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 12
   %3 = add nsw i64 %2, -1
   %4 = lshr i64 %3, 1
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
-; 17 occurrences:
+; 21 occurrences:
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ipopt/optimized/IpTripletToCSRConverter.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/CGProfile.cpp.ll
@@ -106,19 +114,21 @@ entry:
 ; openusd/optimized/meshUtil.cpp.ll
 ; openvdb/optimized/Prune.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 12
   %3 = add nsw i64 %2, -2
   %4 = lshr exact i64 %3, 1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 59 occurrences:
+; 61 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
@@ -176,12 +186,12 @@ entry:
 ; yosys/optimized/xaiger.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 24
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -191,12 +201,12 @@ entry:
 ; llvm/optimized/SemaHexagon.cpp.ll
 ; llvm/optimized/StackMaps.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000154(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 6
   %3 = add nsw i64 %2, -1
   %4 = lshr i64 %3, 1
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
@@ -206,12 +216,12 @@ entry:
 ; llvm/optimized/SemaHexagon.cpp.ll
 ; llvm/optimized/StackMaps.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 6
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = icmp slt i64 %4, %0
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
@@ -220,12 +230,12 @@ entry:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/SemaHexagon.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000158(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 12
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp samesign ugt i64 %0, %4
   ret i1 %5
 }
 

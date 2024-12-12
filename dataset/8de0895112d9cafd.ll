@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 96 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; draco/optimized/shannon_entropy.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -12,7 +12,6 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/cal.ll
 ; linux/optimized/drm_modes.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/inetpeer.ll
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/kallsyms.ll
@@ -22,6 +21,10 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/filter_dock_dialog.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -39,7 +42,6 @@
 ; ncnn/optimized/convolutiondepthwise.cpp.ll
 ; ncnn/optimized/convolutiondepthwise3d.cpp.ll
 ; ncnn/optimized/unfold.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/tree.cpp.ll
@@ -52,7 +54,6 @@
 ; php/optimized/dow.ll
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/crosstabview.ll
-; postgres/optimized/geqo_pool.ll
 ; postgres/optimized/integerset.ll
 ; postgres/optimized/nbtsearch.ll
 ; postgres/optimized/regcomp.ll
@@ -103,7 +104,7 @@ entry:
   ret i32 %3
 }
 
-; 206 occurrences:
+; 218 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/acecFadds.c.ll
@@ -114,7 +115,6 @@ entry:
 ; abc/optimized/giaIso.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/ifDec16.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/retLvalue.c.ll
 ; abc/optimized/saigSimFast.c.ll
@@ -176,6 +176,19 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_slider.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_collada.cpp.ll

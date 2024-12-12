@@ -5,7 +5,7 @@
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; ruby/optimized/symbol.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0) #0 {
+define i1 @func0000000000000104(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i8
   %2 = add i8 %1, 111
@@ -13,10 +13,11 @@ entry:
   ret i1 %3
 }
 
-; 52 occurrences:
+; 53 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cpython/optimized/Hacl_Hash_SHA3.ll
-; flatbuffers/optimized/flatc.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -41,6 +42,7 @@ entry:
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; llvm/optimized/X86InstrFMA3Info.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-lib-quic_rx_depack.ll
@@ -65,7 +67,6 @@ entry:
 ; wasmedge/optimized/executor.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/packet-erf.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
@@ -82,7 +83,7 @@ entry:
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i8
   %2 = add nsw i8 %1, -2
@@ -104,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0) #0 {
+define i1 @func0000000000000101(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i8
   %2 = icmp eq i8 %1, 5
@@ -115,7 +116,7 @@ entry:
 ; postgres/optimized/hyperloglog.ll
 ; wireshark/optimized/packet-dhcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0) #0 {
+define i1 @func00000000000001a4(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i8
   %2 = add nsw i8 %1, -1
@@ -138,7 +139,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/maple_tree.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0) #0 {
+define i1 @func00000000000001a1(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i8
   %2 = icmp eq i8 %1, 1

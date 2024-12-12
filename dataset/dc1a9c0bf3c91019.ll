@@ -11,7 +11,7 @@
 ; ruby/optimized/coverage.ll
 ; ruby/optimized/transcode.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000043(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp eq i64 %2, 0
@@ -32,7 +32,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 21
   %4 = and i32 %3, 33554432
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = or i32 %5, 75497472
   ret i32 %6
 }
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/lbr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 8
   %3 = icmp eq i64 %2, 0

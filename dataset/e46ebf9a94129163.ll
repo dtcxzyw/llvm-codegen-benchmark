@@ -1,7 +1,8 @@
 
-; 99 occurrences:
+; 100 occurrences:
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaSimBase.c.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -105,12 +106,13 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = xor i32 %5, %0
+  %6 = xor i32 %0, %5
   %7 = and i32 %6, 1
   ret i32 %7
 }
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -214,7 +216,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = xor i32 %5, %0
+  %6 = xor i32 %0, %5
   %7 = and i32 %6, 1
   ret i32 %7
 }

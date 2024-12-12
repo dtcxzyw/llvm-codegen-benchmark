@@ -3,46 +3,46 @@ func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %eax
 	cltd
 	idivl	%ecx
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movq	%rdx, %rcx
 	movl	%esi, %eax
 	cltd
 	idivl	%ecx
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	movq	%rdx, %rcx
 	movl	%esi, %eax
 	cltd
 	idivl	%ecx
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	movq	%rdx, %rcx
 	movl	%esi, %eax
 	cltd
 	idivl	%ecx
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	movq	%rdx, %rcx
 	movl	%esi, %eax
 	cltd
 	idivl	%ecx
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movq	%rdx, %rcx
 	movl	%esi, %eax
 	cltd
 	idivl	%ecx
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

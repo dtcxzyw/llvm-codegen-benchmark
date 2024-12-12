@@ -8,7 +8,7 @@ entry:
   %2 = shl i64 %1, 27
   %3 = ashr exact i64 %2, 27
   %4 = and i64 %3, -32
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = shl i64 %1, 56
   %3 = ashr exact i64 %2, 56
   %4 = and i64 %3, 4294967295
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -33,7 +33,7 @@ entry:
   %2 = shl i64 %1, 51
   %3 = ashr i64 %2, 52
   %4 = and i64 %3, 4294965248
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -47,7 +47,7 @@ entry:
   %2 = shl i64 %1, 51
   %3 = ashr i64 %2, 52
   %4 = and i64 %3, 4294965248
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -73,7 +73,7 @@ entry:
   %2 = shl i64 %1, 6
   %3 = ashr i64 %2, 32
   %4 = and i64 %3, -64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

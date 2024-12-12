@@ -16,7 +16,7 @@ entry:
   ret i64 %4
 }
 
-; 513 occurrences:
+; 500 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -63,7 +63,6 @@ entry:
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
-; abc/optimized/abcOrder.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/abcQbf.c.ll
@@ -107,7 +106,6 @@ entry:
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/acecRe.c.ll
-; abc/optimized/acecSt.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/aigCanon.c.ll
@@ -170,7 +168,6 @@ entry:
 ; abc/optimized/cecSynth.c.ll
 ; abc/optimized/cgtAig.c.ll
 ; abc/optimized/cgtDecide.c.ll
-; abc/optimized/cgtMan.c.ll
 ; abc/optimized/cmdPlugin.c.ll
 ; abc/optimized/cnfFast.c.ll
 ; abc/optimized/cnfMan.c.ll
@@ -271,7 +268,6 @@ entry:
 ; abc/optimized/giaStg.c.ll
 ; abc/optimized/giaStoch.c.ll
 ; abc/optimized/giaStr.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaSweeper.c.ll
@@ -287,7 +283,6 @@ entry:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifMan.c.ll
 ; abc/optimized/ifReduce.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTest.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/ifTune.c.ll
@@ -327,13 +322,10 @@ entry:
 ; abc/optimized/llb4Nonlin.c.ll
 ; abc/optimized/llb4Sweep.c.ll
 ; abc/optimized/lpkCore.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/ltl_parser.c.ll
 ; abc/optimized/luckySwap.c.ll
-; abc/optimized/mapperVec.c.ll
 ; abc/optimized/mem.c.ll
 ; abc/optimized/mfsDiv.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/mioSop.c.ll
 ; abc/optimized/mioUtils.c.ll
@@ -344,7 +336,6 @@ entry:
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/msatVec.c.ll
-; abc/optimized/nmApi.c.ll
 ; abc/optimized/nwkAig.c.ll
 ; abc/optimized/nwkFlow.c.ll
 ; abc/optimized/nwkMap.c.ll
@@ -384,7 +375,6 @@ entry:
 ; abc/optimized/saigWnd.c.ll
 ; abc/optimized/satInterP.c.ll
 ; abc/optimized/satProof.c.ll
-; abc/optimized/satSolver2i.c.ll
 ; abc/optimized/satTruth.c.ll
 ; abc/optimized/sbd.c.ll
 ; abc/optimized/sbdCore.c.ll
@@ -404,7 +394,6 @@ entry:
 ; abc/optimized/simUtils.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/sscSat.c.ll
-; abc/optimized/sscUtil.c.ll
 ; abc/optimized/sswIslands.c.ll
 ; abc/optimized/sswPairs.c.ll
 ; abc/optimized/sswRarity.c.ll
@@ -427,7 +416,6 @@ entry:
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
 ; abc/optimized/wlcSim.c.ll
-; abc/optimized/wlcUif.c.ll
 ; abc/optimized/wlnNtk.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; abc/optimized/wlnRetime.c.ll
@@ -511,7 +499,6 @@ entry:
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; bullet3/optimized/btSoftMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftRigidDynamicsWorld.ll
-; bullet3/optimized/btSoftSoftCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereBoxCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereSphereCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereTriangleCollisionAlgorithm.ll
@@ -521,6 +508,7 @@ entry:
 ; icu/optimized/bytestriebuilder.ll
 ; icu/optimized/ucharstriebuilder.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
+; linux/optimized/filter.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openjdk/optimized/objectSampleCheckpoint.ll
@@ -528,7 +516,6 @@ entry:
 ; openmpi/optimized/libmpi_c_profile_la-type_create_f90_real.ll
 ; openmpi/optimized/nbc_iallreduce.ll
 ; postgres/optimized/command.ll
-; redis/optimized/module.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {

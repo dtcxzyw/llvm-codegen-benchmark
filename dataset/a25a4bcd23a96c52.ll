@@ -5,7 +5,7 @@
 ; quantlib/optimized/israel.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i32 %0, i1 %1, i1 %2) #0 {
+define i1 @func0000000000000082(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i32 %0, 2042
   %4 = and i1 %3, %2
@@ -15,16 +15,15 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
-; linux/optimized/iface.ll
+; 2 occurrences:
 ; nori/optimized/parser.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, 2
   %4 = and i1 %3, %2
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = icmp eq i32 %1, 1
   %7 = or i1 %5, %6
   ret i1 %7

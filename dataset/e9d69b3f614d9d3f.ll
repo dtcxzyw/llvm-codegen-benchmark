@@ -14,13 +14,13 @@
 ; openssl/optimized/libssl-shlib-quic_tserver.ll
 ; z3/optimized/bound_propagator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 255
   %4 = add nsw i32 %3, -5
   %5 = icmp ult i32 %4, 2
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -30,7 +30,7 @@ entry:
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 67108863
@@ -46,7 +46,7 @@ entry:
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 134217726
   %3 = icmp ne i32 %2, 4

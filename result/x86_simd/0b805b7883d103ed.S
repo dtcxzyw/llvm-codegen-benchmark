@@ -151,10 +151,10 @@ func000000000000003d:                   # @func000000000000003d
 	vzeroupper
 	retq
 .LCPI19_0:
-	.long	1024                            # 0x400
+	.long	12                              # 0xc
 func000000000000003f:                   # @func000000000000003f
 	vpmovqd	%ymm0, %xmm0
-	vpslld	$10, %xmm0, %xmm0
+	vpslld	$2, %xmm0, %xmm0
 	vpaddd	.LCPI19_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

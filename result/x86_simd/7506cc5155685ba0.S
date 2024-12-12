@@ -58,9 +58,8 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000011:                   # @func0000000000000011
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpsubd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI10_0:
 	.long	2                               # 0x2

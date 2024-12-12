@@ -1,19 +1,14 @@
 
-%struct.rb_builtin_function.2485884 = type { ptr, i32, i32, ptr }
-%"struct.folly::Subprocess::Pipe.2570912" = type <{ %"class.folly::File.2570905", i32, i32, i8, [3 x i8] }>
-%"class.folly::File.2570905" = type <{ i32, i8, [3 x i8] }>
-%"class.QuantLib::Matrix.2721233" = type { %"class.std::unique_ptr.2721222", i64, i64 }
-%"class.std::unique_ptr.2721222" = type { %"struct.std::__uniq_ptr_data.2721223" }
-%"struct.std::__uniq_ptr_data.2721223" = type { %"class.std::__uniq_ptr_impl.2721224" }
-%"class.std::__uniq_ptr_impl.2721224" = type { %"class.std::tuple.2721225" }
-%"class.std::tuple.2721225" = type { %"struct.std::_Tuple_impl.2721226" }
-%"struct.std::_Tuple_impl.2721226" = type { %"struct.std::_Head_base.4.2721227" }
-%"struct.std::_Head_base.4.2721227" = type { ptr }
-%struct.CommandTagBehavior.3467999 = type { ptr, i8, i8, i8, i8 }
+%struct.rb_builtin_function.2601343 = type { ptr, i32, i32, ptr }
+%"struct.folly::Subprocess::Pipe.2685269" = type <{ %"class.folly::File.2685261", i32, i32, i8, [3 x i8] }>
+%"class.folly::File.2685261" = type <{ i32, i8, [3 x i8] }>
+%struct.Gia_Obj_t_.2876078 = type <{ i64, i32 }>
+%struct.CommandTagBehavior.3652180 = type { ptr, i8, i8, i8, i8 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
+; git/optimized/sequencer.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/memory.ll
 ; llvm/optimized/BranchFolding.cpp.ll
@@ -30,15 +25,35 @@
 define i64 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = getelementptr %struct.rb_builtin_function.2485884, ptr %0, i64 %2
+  %3 = getelementptr %struct.rb_builtin_function.2601343, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
 
-; 80 occurrences:
+; 70 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/giaShrink.c.ll
 ; abc/optimized/giaShrink6.c.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/env.ll
+; boost/optimized/group.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/topology.ll
+; boost/optimized/wargs_cmd.ll
 ; cmake/optimized/cmListFileLexer.c.ll
 ; cvc5/optimized/inst_match_generator_multi.cpp.ll
 ; darktable/optimized/print_settings.c.ll
@@ -46,55 +61,25 @@ entry:
 ; folly/optimized/Subprocess.cpp.ll
 ; git/optimized/sequencer.ll
 ; git/optimized/unpack-trees.ll
-; gromacs/optimized/biasstate.cpp.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
-; hermes/optimized/DependencyExtractor.cpp.ll
-; hermes/optimized/JSLibInternal.cpp.ll
-; hermes/optimized/JSRegExp.cpp.ll
-; hermes/optimized/RegexParser.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
-; hyperscan/optimized/ng_find_matches.cpp.ll
-; hyperscan/optimized/ng_violet.cpp.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; hyperscan/optimized/rose_build_merge.cpp.ll
-; hyperscan/optimized/rose_build_program.cpp.ll
-; hyperscan/optimized/rose_in_util.cpp.ll
 ; icu/optimized/localeprioritylist.ll
 ; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/BlockFrequencyInfo.cpp.ll
-; llvm/optimized/BranchFolding.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
-; llvm/optimized/Expr.cpp.ll
-; llvm/optimized/GSIStreamBuilder.cpp.ll
-; llvm/optimized/InstrInfoEmitter.cpp.ll
-; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; ncnn/optimized/c_api.cpp.ll
-; nlohmann_json/optimized/unit-ordered_map.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/einsum_layer.cpp.ll
-; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
-; opencv/optimized/short_term_imageless_tracker.cpp.ll
-; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; openjdk/optimized/JvmLauncher.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/compactHashtable.ll
 ; openjdk/optimized/debugInit.ll
-; openspiel/optimized/battleship.cc.ll
-; openspiel/optimized/cfr.cc.ll
-; openspiel/optimized/morpion_solitaire.cc.ll
 ; openspiel/optimized/tarok_test.cc.ll
 ; openusd/optimized/cameraAdapter.cpp.ll
 ; openusd/optimized/dataSourceMapped.cpp.ll
-; openusd/optimized/mallocTag.cpp.ll
-; openusd/optimized/xformCommonAPI.cpp.ll
 ; php/optimized/block_pass.ll
 ; php/optimized/dfa_pass.ll
 ; php/optimized/dtoa.ll
@@ -120,15 +105,41 @@ entry:
 define i64 @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2570912", ptr %0, i64 %2
+  %3 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2685269", ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
 
-; 238 occurrences:
-; abc/optimized/giaIso.c.ll
+; 18 occurrences:
+; gromacs/optimized/biasstate.cpp.ll
+; llvm/optimized/BlockFrequencyInfo.cpp.ll
+; llvm/optimized/BranchFolding.cpp.ll
+; llvm/optimized/GSIStreamBuilder.cpp.ll
+; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; ncnn/optimized/c_api.cpp.ll
+; opencv/optimized/detection_output_layer.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
+; opencv/optimized/short_term_imageless_tracker.cpp.ll
+; opencv/optimized/zero_term_imageless_tracker.cpp.ll
+; openspiel/optimized/battleship.cc.ll
+; openspiel/optimized/cfr.cc.ll
+; openusd/optimized/xformCommonAPI.cpp.ll
+; quantlib/optimized/capletcoterminalalphacalibration.ll
+; quantlib/optimized/capletcoterminalmaxhomogeneity.ll
+; quantlib/optimized/capletcoterminalswaptioncalibration.ll
+; sentencepiece/optimized/unigram_model.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(ptr %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 29
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  ret i64 %4
+}
+
+; 233 occurrences:
 ; arrow/optimized/coo_converter.cc.ll
-; eastl/optimized/EASprintfCore.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -146,8 +157,6 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; hyperscan/optimized/Parser.cpp.ll
-; hyperscan/optimized/control_verbs.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -219,7 +228,6 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; luajit/optimized/minilua.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -365,23 +373,26 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
 
-; 3 occurrences:
-; quantlib/optimized/capletcoterminalalphacalibration.ll
-; quantlib/optimized/capletcoterminalmaxhomogeneity.ll
-; quantlib/optimized/capletcoterminalswaptioncalibration.ll
+; 6 occurrences:
+; abc/optimized/giaIso.c.ll
+; eastl/optimized/EASprintfCore.cpp.ll
+; hyperscan/optimized/Parser.cpp.ll
+; hyperscan/optimized/control_verbs.cpp.ll
+; luajit/optimized/minilua.ll
+; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000007(ptr %0, i64 %1) #0 {
+define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 3
-  %3 = getelementptr nusw nuw %"class.QuantLib::Matrix.2721233", ptr %0, i64 %2
+  %2 = ashr i64 %1, 32
+  %3 = getelementptr nusw %struct.Gia_Obj_t_.2876078, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
@@ -392,7 +403,7 @@ entry:
 define i64 @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 5
-  %3 = getelementptr %struct.CommandTagBehavior.3467999, ptr %0, i64 %2
+  %3 = getelementptr %struct.CommandTagBehavior.3652180, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

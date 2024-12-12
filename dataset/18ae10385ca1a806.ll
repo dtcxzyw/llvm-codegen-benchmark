@@ -12,7 +12,7 @@
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000305(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000605(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i8

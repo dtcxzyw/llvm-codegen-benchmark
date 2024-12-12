@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/abc.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/bssl_shim.cc.ll
@@ -7,7 +7,6 @@
 ; openjdk/optimized/referenceProcessor.ll
 ; openssl/optimized/openssl-bin-pkey.ll
 ; openssl/optimized/openssl-bin-rsa.ll
-; openssl/optimized/quic_wire_test-bin-quic_wire_test.ll
 ; openusd/optimized/reconintra.c.ll
 ; proxygen/optimized/RFC2616.cpp.ll
 ; regex-rs/optimized/5gojg14e35fgi63k.ll

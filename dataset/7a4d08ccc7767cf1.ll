@@ -5,10 +5,10 @@
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = icmp ugt i64 %6, 6
@@ -20,10 +20,10 @@ entry:
 ; yyjson/optimized/yyjson.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000018a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = icmp sgt i64 %6, 3

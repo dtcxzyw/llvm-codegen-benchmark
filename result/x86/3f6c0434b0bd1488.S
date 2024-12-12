@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	sbbl	%eax, %eax
 	orb	%dil, %al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	cmpl	$256, %esi                      # imm = 0x100
 	movl	$255, %eax
 	cmovll	%edi, %eax

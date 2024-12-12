@@ -1,6 +1,6 @@
 func000000000000001e:                   # @func000000000000001e
 	shrq	$21, %rsi
-	leaq	1048576(%rsi,%rdi), %rax
+	leaq	1048576(%rdi,%rsi), %rax
 	shrq	$21, %rax
 	retq
 func000000000000001a:                   # @func000000000000001a

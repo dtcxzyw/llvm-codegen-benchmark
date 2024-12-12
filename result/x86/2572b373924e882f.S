@@ -6,7 +6,9 @@ func0000000000000000:                   # @func0000000000000000
 	andl	%edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	andl	$1, %edx
-	leal	(%rsi,%rdx,2), %eax
+	movl	%edx, %eax
+	andl	$1, %eax
+	shll	$13, %eax
+	orl	%esi, %eax
 	andl	%edi, %eax
 	retq

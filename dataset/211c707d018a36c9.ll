@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/memory_pool.cc.ll
 ; cmake/optimized/filter_common.c.ll
@@ -11,7 +11,6 @@
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/ConstantHoisting.cpp.ll
 ; llvm/optimized/LLVMRemarkStreamer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; mitsuba3/optimized/principledthin.cpp.ll
 ; openmpi/optimized/schizo_ompi.ll
@@ -20,6 +19,8 @@
 ; qemu/optimized/job.c.ll
 ; qemu/optimized/util_aio-posix.c.ll
 ; tev/optimized/main.cpp.ll
+; turborepo-rs/optimized/8oe5vwmwwrst9p60jy1zusiyz.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -29,14 +30,19 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 12 occurrences:
 ; clamav/optimized/jpeg.c.ll
 ; llvm/optimized/Iterator.cpp.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:

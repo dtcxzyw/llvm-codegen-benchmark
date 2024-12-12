@@ -11,7 +11,7 @@ entry:
   ret i8 %2
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; actix-rs/optimized/2l54a10og4z99516.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; clamav/optimized/events.c.ll
@@ -31,7 +31,6 @@ entry:
 ; lief/optimized/ssl_tls.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; linux/optimized/ethtool.ll
-; linux/optimized/intel_step.ll
 ; linux/optimized/nl80211.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
@@ -104,7 +103,7 @@ entry:
 ; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
-; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000009(i16 %0) #0 {
@@ -128,7 +127,7 @@ entry:
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
-; wireshark/optimized/packet-netlink-netfilter.c.ll
+; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i16 %0) #0 {
@@ -138,10 +137,23 @@ entry:
   ret i8 %2
 }
 
+; 4 occurrences:
+; clamav/optimized/unarj.c.ll
+; icu/optimized/bocsu.ll
+; linux/optimized/nl80211.ll
+; linux/optimized/pata_amd.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000001(i16 %0) #0 {
+entry:
+  %1 = trunc i16 %0 to i8
+  %2 = add nsw i8 %1, -2
+  ret i8 %2
+}
+
 ; 6 occurrences:
-; clamav/optimized/Xz.c.ll
 ; linux/optimized/pata_amd.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
+; lvgl/optimized/lv_spinbox.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
@@ -150,20 +162,6 @@ define i8 @func000000000000000d(i16 %0) #0 {
 entry:
   %1 = trunc nuw nsw i16 %0 to i8
   %2 = add nsw i8 %1, -1
-  ret i8 %2
-}
-
-; 5 occurrences:
-; clamav/optimized/unarj.c.ll
-; icu/optimized/bocsu.ll
-; linux/optimized/nl80211.ll
-; linux/optimized/pata_amd.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000001(i16 %0) #0 {
-entry:
-  %1 = trunc i16 %0 to i8
-  %2 = add nsw i8 %1, -2
   ret i8 %2
 }
 

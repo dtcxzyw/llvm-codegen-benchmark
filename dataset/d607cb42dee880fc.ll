@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/damerau_levenshtein_distance.cc.ll
-; cmake/optimized/delta_decoder.c.ll
-; cmake/optimized/delta_encoder.c.ll
+; boost/optimized/static_string.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; node/optimized/libnode.cid.ll
 ; redis/optimized/sds.ll
@@ -10,7 +9,7 @@
 define i64 @func0000000000000000(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   %4 = zext i8 %3 to i64
   ret i64 %4
 }
@@ -34,7 +33,7 @@ entry:
 define i64 @func0000000000000010(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   %4 = zext i8 %3 to i64
   ret i64 %4
 }

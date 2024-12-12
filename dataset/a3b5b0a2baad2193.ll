@@ -10,12 +10,12 @@
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp eq i64 %2, 5
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw { { i64, [1 x i64] } }, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw { { i64, [1 x i64] } }, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -27,12 +27,12 @@ entry:
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000063(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -40,7 +40,7 @@ entry:
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/nf_conntrack_core.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000040(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000c0(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 11
   %.lobit = and i64 %2, 1

@@ -20,7 +20,7 @@
 ; openusd/optimized/openexr-c.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, float %1) #0 {
+define i1 @func00000000000000e1(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = zext nneg i32 %2 to i64
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_blurs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, float %1) #0 {
+define i1 @func0000000000000088(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = zext nneg i32 %2 to i64
@@ -45,7 +45,7 @@ entry:
 ; darktable/optimized/introspection_defringe.c.ll
 ; gromacs/optimized/gmx_hydorder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, float %1) #0 {
+define i1 @func0000000000000061(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = zext i32 %2 to i64

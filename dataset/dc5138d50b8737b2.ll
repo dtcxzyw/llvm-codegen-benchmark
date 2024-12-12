@@ -1,8 +1,8 @@
 
-%"struct.cv::FStructData.3550015" = type { %"class.std::__cxx11::basic_string.3550010", i32, i32 }
-%"class.std::__cxx11::basic_string.3550010" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3550011", i64, %union.anon.3550012 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3550011" = type { ptr }
-%union.anon.3550012 = type { i64, [8 x i8] }
+%"struct.cv::FStructData.3730757" = type { %"class.std::__cxx11::basic_string.3730752", i32, i32 }
+%"class.std::__cxx11::basic_string.3730752" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730753", i64, %union.anon.3730754 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730753" = type { ptr }
+%union.anon.3730754 = type { i64, [8 x i8] }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
@@ -35,8 +35,8 @@ entry:
 define ptr @func0000000000000054(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 160
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 -4
   ret ptr %6
 }
@@ -47,8 +47,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 44
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 664
   ret ptr %6
 }
@@ -59,8 +59,8 @@ entry:
 define ptr @func00000000000000c2(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 3
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 12
   ret ptr %6
 }
@@ -68,11 +68,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/color_lab.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fe(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
+  %3 = getelementptr i16, ptr %0, i64 %1
   %.idx = mul i64 %2, 6534
-  %3 = getelementptr i8, ptr %0, i64 %.idx
-  %4 = getelementptr i16, ptr %3, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   %5 = getelementptr i8, ptr %4, i64 2
   ret ptr %5
 }
@@ -82,9 +82,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
 entry:
+  %3 = getelementptr %"struct.cv::FStructData.3730757", ptr %0, i64 %1
   %.idx = mul i64 %2, 480
-  %3 = getelementptr i8, ptr %0, i64 %.idx
-  %4 = getelementptr %"struct.cv::FStructData.3550015", ptr %3, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   %5 = getelementptr i8, ptr %4, i64 -80
   ret ptr %5
 }

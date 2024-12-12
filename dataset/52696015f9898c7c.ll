@@ -17,7 +17,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -35,7 +35,7 @@ define ptr @func0000000000000014(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -59,12 +59,12 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
@@ -76,12 +76,13 @@ entry:
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; opencv/optimized/motion_estimators.cpp.ll
+; opencv/optimized/pyramids.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -95,7 +96,7 @@ define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 4
   %4 = sext i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
+  %5 = mul nuw nsw i64 %1, %4
   %6 = getelementptr i16, ptr %0, i64 %5
   ret ptr %6
 }
@@ -119,7 +120,7 @@ define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -133,7 +134,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 5
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr nusw i32, ptr %0, i64 %5
   ret ptr %6
 }
@@ -141,12 +142,12 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 4
   %4 = sext i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %5 = mul nuw nsw i64 %1, %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -158,20 +159,8 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; opencv/optimized/pyramids.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
-  %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 

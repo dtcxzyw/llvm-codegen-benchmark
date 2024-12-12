@@ -4,12 +4,6 @@ func0000000000000009:                   # @func0000000000000009
 	movl	$16, %eax
 	cmovael	%ecx, %eax
 	retq
-func0000000000000029:                   # @func0000000000000029
-	leal	(,%rsi,8), %ecx
-	cmpl	$15, %edi
-	movl	$16, %eax
-	cmovael	%ecx, %eax
-	retq
 func0000000000000002:                   # @func0000000000000002
 	leal	(,%rsi,4), %eax
 	testl	%edi, %edi

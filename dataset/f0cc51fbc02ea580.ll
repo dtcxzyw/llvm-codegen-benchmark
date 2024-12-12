@@ -1,9 +1,8 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; gromacs/optimized/dtrmm.cpp.ll
 ; gromacs/optimized/strmm.cpp.ll
 ; jq/optimized/execute.ll
-; nuttx/optimized/lib_calendar2utc.c.ll
 ; openblas/optimized/dlaein.c.ll
 ; openblas/optimized/dorgbr.c.ll
 ; opencv/optimized/distransform.cpp.ll

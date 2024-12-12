@@ -1,10 +1,10 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orq	$1, %rsi
 	testl	%edi, %edi
 	movl	$4, %eax
 	cmovneq	%rsi, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	orq	$8, %rsi
 	testl	%edi, %edi
 	movq	$-1, %rax

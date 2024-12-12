@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 11 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; folly/optimized/SharedMutex.cpp.ll
@@ -9,9 +9,6 @@
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; Function Attrs: nounwind

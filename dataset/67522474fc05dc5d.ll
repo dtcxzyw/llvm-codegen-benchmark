@@ -12,7 +12,7 @@
 ; darktable/optimized/introspection_toneequal.c.ll
 ; minetest/optimized/mg_schematic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000084(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -71,7 +71,7 @@ entry:
 ; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/print_settings.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000184(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -93,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/i915_gem_execbuffer.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000188(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 5
   %3 = getelementptr i8, ptr %0, i64 %2

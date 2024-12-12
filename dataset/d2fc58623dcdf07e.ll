@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/src.ll
 ; c3c/optimized/parse_expr.c.ll
 ; opencv/optimized/FilterTIG.cpp.ll
 ; redis/optimized/lua_cjson.ll

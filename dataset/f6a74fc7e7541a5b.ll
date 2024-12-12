@@ -1,6 +1,5 @@
 
 ; 27 occurrences:
-; abc/optimized/giaFanout.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; bullet3/optimized/btCompoundShape.ll
@@ -22,6 +21,7 @@
 ; bullet3/optimized/btSequentialImpulseConstraintSolverMt.ll
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/btTriangleBuffer.ll
+; darktable/optimized/introspection_atrous.c.ll
 ; icu/optimized/ucm.ll
 ; nori/optimized/nanovg.c.ll
 ; postgres/optimized/libpq-events.ll

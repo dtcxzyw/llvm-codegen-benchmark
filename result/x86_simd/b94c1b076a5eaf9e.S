@@ -17,22 +17,41 @@ func0000000000000008:                   # @func0000000000000008
 	vmovdqa	%ymm2, %ymm0
 	retq
 .LCPI2_0:
+	.quad	4294967296                      # 0x100000000
+.LCPI2_1:
+	.quad	1                               # 0x1
+func0000000000000004:                   # @func0000000000000004
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpblendd	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7]
+	vpcmpltuq	.LCPI2_0(%rip){1to4}, %ymm0, %k1
+	vpbroadcastq	.LCPI2_1(%rip), %ymm0   # ymm0 = [1,1,1,1]
+	vmovdqa64	%ymm1, %ymm0 {%k1}
+	retq
+.LCPI3_0:
 	.quad	1                               # 0x1
 func0000000000000006:                   # @func0000000000000006
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7]
-	vpcmpltq	.LCPI2_0(%rip){1to4}, %ymm0, %k1
+	vpcmpltq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vmovdqa64	%ymm1, %ymm0 {%k1}
 	retq
-.LCPI3_0:
-	.quad	16                              # 0x10
-.LCPI3_1:
-	.quad	8                               # 0x8
-.LCPI3_2:
-	.quad	60                              # 0x3c
-func0000000000000004:                   # @func0000000000000004
-	vpcmpltuq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
-	vbroadcastsd	.LCPI3_1(%rip), %ymm0   # ymm0 = [8,8,8,8]
-	vandpd	.LCPI3_2(%rip){1to4}, %ymm1, %ymm0 {%k1}
+.LCPI4_0:
+	.quad	96                              # 0x60
+.LCPI4_1:
+	.quad	48                              # 0x30
+.LCPI4_2:
+	.quad	127                             # 0x7f
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuq	.LCPI4_0(%rip){1to4}, %ymm0, %k1
+	vbroadcastsd	.LCPI4_1(%rip), %ymm0   # ymm0 = [48,48,48,48]
+	vandpd	.LCPI4_2(%rip){1to4}, %ymm1, %ymm0 {%k1}
+	retq
+.LCPI5_0:
+	.quad	100                             # 0x64
+func0000000000000018:                   # @func0000000000000018
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpblendd	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7]
+	vpcmpnleuq	.LCPI5_0(%rip){1to4}, %ymm0, %k1
+	vmovdqa64	%ymm1, %ymm0 {%k1} {z}
 	retq

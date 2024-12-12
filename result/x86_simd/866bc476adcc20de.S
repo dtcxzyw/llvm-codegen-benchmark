@@ -8,7 +8,7 @@ func000000000000000a:                   # @func000000000000000a
 	vzeroupper
 	retq
 .LCPI1_0:
-	.long	10                              # 0xa
+	.long	7                               # 0x7
 func0000000000000001:                   # @func0000000000000001
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1

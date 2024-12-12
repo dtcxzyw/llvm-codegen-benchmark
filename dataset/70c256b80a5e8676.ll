@@ -1,17 +1,16 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; glslang/optimized/iomapper.cpp.ll
 ; linux/optimized/fault.ll
 ; php/optimized/output.ll
 ; ruby/optimized/io.ll
-; ruby/optimized/ractor.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -31,20 +30,7 @@ entry:
   %2 = and i64 %1, 4294967294
   %3 = icmp eq i64 %2, 14
   %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %0
-  ret i32 %5
-}
-
-; 2 occurrences:
-; llvm/optimized/ASTReaderDecl.cpp.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 16383
-  %3 = icmp ne i64 %2, 0
-  %4 = zext i1 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -64,7 +50,19 @@ entry:
   %2 = and i64 %1, 120
   %3 = icmp eq i64 %2, 24
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/ASTReaderDecl.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 24
+  %3 = icmp ne i64 %2, 0
+  %4 = zext i1 %3 to i32
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

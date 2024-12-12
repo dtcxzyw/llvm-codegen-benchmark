@@ -8,7 +8,7 @@
 ; velox/optimized/Type.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 52, %1
   %3 = icmp ugt i64 %0, 20479
@@ -144,7 +144,7 @@ entry:
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 5, %1
   %3 = icmp ult i64 %0, 4

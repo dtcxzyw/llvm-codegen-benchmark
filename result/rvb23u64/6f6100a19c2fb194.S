@@ -27,10 +27,13 @@ func0000000000000003:                   # @func0000000000000003
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
+.LCPI3_0:
+	.quad	0x3fee666666666666              # double 0.94999999999999996
 func0000000000000004:                   # @func0000000000000004
-	fcvt.d.w	fa5, a1
-	fli.d	fa4, 0.75
-	fmul.d	fa5, fa5, fa4
+	lui	a2, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a2)
+	fcvt.d.w	fa4, a1
+	fmul.d	fa5, fa4, fa5
 	fcvt.d.w	fa4, a0
 	flt.d	a0, fa4, fa5
 	ret

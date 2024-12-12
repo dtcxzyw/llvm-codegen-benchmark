@@ -4,7 +4,7 @@ func0000000000000010:                   // @func0000000000000010
 	mov	w8, #24                         // =0x18
 	add	x9, x1, x0
 	csel	x8, xzr, x8, eq
-	add	x0, x8, x9
+	add	x0, x9, x8
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
@@ -22,7 +22,7 @@ func000000000000001f:                   // @func000000000000001f
 	mov	w9, #32                         // =0x20
 	csel	x8, x9, x8, eq
 	add	x9, x1, x0
-	add	x0, x8, x9
+	add	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015

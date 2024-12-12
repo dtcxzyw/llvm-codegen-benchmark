@@ -8,7 +8,7 @@
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; proj/optimized/c_api.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000058(i64 %0) #0 {
+define i64 @func00000000000000a8(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 1
   %2 = icmp ugt i64 %1, 4611686018427387903
@@ -17,8 +17,9 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
+; boost/optimized/test_stackstring.ll
 ; cmake/optimized/CommandLineArguments.cxx.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
@@ -53,7 +54,7 @@ entry:
 ; quantlib/optimized/gmres.ll
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000078(i64 %0) #0 {
+define i64 @func00000000000000e8(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 1
   %2 = icmp ugt i64 %1, 2305843009213693951
@@ -62,12 +63,13 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/cmd.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(i64 %0) #0 {
+define i64 @func0000000000000088(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 1
   %2 = icmp ugt i64 %1, 2305843009213693951
@@ -81,7 +83,7 @@ entry:
 ; quantlib/optimized/gsr.ll
 ; quantlib/optimized/markovfunctional.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(i64 %0) #0 {
+define i64 @func00000000000000c8(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 1
   %2 = icmp ugt i64 %1, 2305843009213693951
@@ -90,8 +92,15 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 19 occurrences:
 ; arrow/optimized/bridge.cc.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/test_stackstring.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; eastl/optimized/EATextUtil.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
@@ -104,7 +113,7 @@ entry:
 ; quantlib/optimized/liborforwardmodel.ll
 ; quantlib/optimized/tridiagonaloperator.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0) #0 {
+define i64 @func0000000000000048(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 1
   %2 = icmp ugt i64 %1, 2305843009213693951

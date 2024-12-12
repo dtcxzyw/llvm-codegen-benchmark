@@ -12,7 +12,7 @@ func000000000000000c:                   # @func000000000000000c
 	notq	%rax
 	retq
 func000000000000000d:                   # @func000000000000000d
-	andb	$63, %dil
+	andb	$56, %dil
 	negb	%dil
 	movq	$-1, %rax
 	shlxq	%rdi, %rax, %rax

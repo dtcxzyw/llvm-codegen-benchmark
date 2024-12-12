@@ -68,3 +68,29 @@ func0000000000000003:                   # @func0000000000000003
 	vpternlogd	$120, .LCPI1_3(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 ^ (xmm1 & mem)
 	vzeroupper
 	retq
+.LCPI2_0:
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI2_1:
+	.zero	4,1
+func0000000000000009:                   # @func0000000000000009
+	vpmovdb	%ymm0, %xmm0
+	vpandd	.LCPI2_1(%rip){1to4}, %xmm0, %xmm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpsubb	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq

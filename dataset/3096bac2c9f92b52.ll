@@ -26,7 +26,7 @@
 ; velox/optimized/Filter.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000164(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %1
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000169(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002c9(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %1
@@ -51,7 +51,7 @@ entry:
 ; pbrt-v4/optimized/plytool.cpp.ll
 ; quantlib/optimized/schedule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000284(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %1
@@ -167,7 +167,7 @@ entry:
 ; tinympc/optimized/admm.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = add nsw i64 %3, %1
@@ -239,10 +239,10 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000136(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000266(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nuw nsw i64 %0, 2
   %6 = icmp slt i64 %5, %4
   ret i1 %6
@@ -253,10 +253,10 @@ entry:
 ; brotli/optimized/backward_references.c.ll
 ; node/optimized/simdutf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000608(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %0, 1
   %6 = icmp ugt i64 %5, %4
   ret i1 %6
@@ -265,7 +265,7 @@ entry:
 ; 1 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %1
@@ -278,10 +278,10 @@ entry:
 ; entt/optimized/meta_container.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000224(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 7
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nsw i64 %0, -1
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -290,7 +290,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/combinatorics.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %1
@@ -348,7 +348,7 @@ entry:
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; opencv/optimized/cv2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000176(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = add nsw i64 %3, %1
@@ -384,7 +384,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/closest.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000221(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000441(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 1
   %4 = add i64 %3, %1
@@ -396,10 +396,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nuw nsw i64 %0, 1
   %6 = icmp slt i64 %5, %4
   ret i1 %6
@@ -410,7 +410,7 @@ entry:
 ; casadi/optimized/integration_tools.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000174(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %1

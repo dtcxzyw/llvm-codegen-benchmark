@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; hdf5/optimized/H5FDfamily.c.ll
 ; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
 ; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
@@ -10,7 +10,6 @@
 ; opencv/optimized/kdtree.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
-; openspiel/optimized/tarok.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:

@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; git/optimized/cbtree.ll
-; graphviz/optimized/randomkit.c.ll
 ; lua/optimized/lmathlib.ll
 ; php/optimized/randomizer.ll
 ; ruby/optimized/random.ll

@@ -1,10 +1,9 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/HeapTimekeeper.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; pybind11/optimized/test_class.cpp.ll

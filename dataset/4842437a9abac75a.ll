@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/mg_ore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %1, 1
@@ -16,7 +16,7 @@ entry:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000d14(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000001a24(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nsw i32 %1, -64
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000d11(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000001a21(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nsw i32 %1, -64

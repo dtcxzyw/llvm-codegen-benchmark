@@ -9,7 +9,7 @@
 ; z3/optimized/qe_mbp.cpp.ll
 ; z3/optimized/spacer_arith_generalizers.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d1(i32 %0) #0 {
+define i32 @func00000000000001a1(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 %0, 1
   %2 = add nsw i32 %1, -2
@@ -22,7 +22,7 @@ entry:
 ; openjdk/optimized/methodData.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0) #0 {
+define i32 @func00000000000000e1(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 3
   %2 = add nuw nsw i32 %1, 8
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/constMethod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000046(i32 %0) #0 {
+define i32 @func0000000000000086(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 2
   %2 = add i32 %1, 9
@@ -71,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaQbf.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a1(i32 %0) #0 {
+define i32 @func0000000000000141(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 %0, 1
   %2 = add nuw i32 %1, 2
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/hostlist.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000005a(i32 %0) #0 {
+define i32 @func00000000000000aa(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
   %2 = add nsw i32 %1, 10
@@ -107,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_ring_submission.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0) #0 {
+define i32 @func00000000000000a1(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 2
   %2 = add nsw i32 %1, 12

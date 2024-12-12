@@ -1,8 +1,9 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/extraBddCas.c.ll
 ; graphviz/optimized/visibility.c.ll
 ; linux/optimized/mpih-div.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; php/optimized/fastcgi.ll
@@ -21,16 +22,14 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; cpython/optimized/longobject.ll
-; linux/optimized/gup.ll
+; 1 occurrences:
 ; ruby/optimized/sprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = select i1 %0, i32 %1, i32 %3
-  %5 = icmp ugt i32 %4, 16
+  %5 = icmp samesign ugt i32 %4, 16
   ret i1 %5
 }
 
@@ -84,7 +83,7 @@ entry:
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = select i1 %0, i32 %1, i32 %3
@@ -92,7 +91,7 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; flac/optimized/stream_encoder.c.ll
@@ -104,6 +103,7 @@ entry:
 ; opencv/optimized/matmul_layer.cpp.ll
 ; postgres/optimized/integerset.ll
 ; qemu/optimized/cpu-common.c.ll
+; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
@@ -363,7 +363,7 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = select i1 %0, i32 %1, i32 %3
@@ -375,7 +375,7 @@ entry:
 ; ocio/optimized/MathUtils.cpp.ll
 ; openjdk/optimized/dependencies.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = select i1 %0, i32 %1, i32 %3
@@ -424,7 +424,7 @@ entry:
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = select i1 %0, i32 %1, i32 %3
@@ -437,11 +437,11 @@ entry:
 ; jq/optimized/decNumber.ll
 ; wireshark/optimized/pcap-common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 2
   %4 = select i1 %0, i32 %1, i32 %3
-  %5 = icmp ugt i32 %4, 24
+  %5 = icmp samesign ugt i32 %4, 24
   ret i1 %5
 }
 
@@ -466,11 +466,36 @@ entry:
 ; cpython/optimized/_codecs_jp.ll
 ; git/optimized/rev-parse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = select i1 %0, i32 %1, i32 %3
   %5 = icmp slt i32 %4, 0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; freetype/optimized/psnames.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -3
+  %4 = select i1 %0, i32 %1, i32 %3
+  %5 = icmp ugt i32 %4, 9999
+  ret i1 %5
+}
+
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; openusd/optimized/ilmbase_half.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -3
+  %4 = select i1 %0, i32 %1, i32 %3
+  %5 = icmp samesign ugt i32 %4, 99
   ret i1 %5
 }
 
@@ -479,7 +504,7 @@ entry:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; wireshark/optimized/packet-kink.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = select i1 %0, i32 %1, i32 %3
@@ -499,7 +524,7 @@ entry:
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = select i1 %0, i32 %1, i32 %3
@@ -510,7 +535,7 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/corner_table.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = select i1 %0, i32 %1, i32 %3
@@ -521,24 +546,11 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/mesh_stripifier.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000046(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = select i1 %0, i32 %1, i32 %3
   %5 = icmp slt i32 %4, 0
-  ret i1 %5
-}
-
-; 3 occurrences:
-; freetype/optimized/psnames.c.ll
-; openusd/optimized/ilmbase_half.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -111
-  %4 = select i1 %0, i32 %1, i32 %3
-  %5 = icmp ugt i32 %4, 30
   ret i1 %5
 }
 
@@ -556,18 +568,30 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_tv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = select i1 %0, i32 %1, i32 %3
-  %5 = icmp ult i32 %4, 577
+  %5 = icmp samesign ult i32 %4, 577
+  ret i1 %5
+}
+
+; 2 occurrences:
+; cpython/optimized/longobject.ll
+; linux/optimized/gup.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 1
+  %4 = select i1 %0, i32 %1, i32 %3
+  %5 = icmp ugt i32 %4, 1
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = select i1 %0, i32 %1, i32 %3

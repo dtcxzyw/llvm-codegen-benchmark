@@ -1,24 +1,24 @@
 
-%struct.page.3342202 = type { i64, %union.anon.6.3342203, %union.anon.14.3342204, %struct.atomic_t.3342205, [8 x i8] }
-%union.anon.6.3342203 = type { %struct.anon.7.3342206 }
-%struct.anon.7.3342206 = type { %union.anon.8.3342207, ptr, %union.anon.10.3342208, i64 }
-%union.anon.8.3342207 = type { %struct.list_head.3342209 }
-%struct.list_head.3342209 = type { ptr, ptr }
-%union.anon.10.3342208 = type { i64 }
-%union.anon.14.3342204 = type { %struct.atomic_t.3342205 }
-%struct.atomic_t.3342205 = type { i32 }
+%struct.page.3531285 = type { i64, %union.anon.6.3531286, %union.anon.14.3531287, %struct.atomic_t.3531288, [8 x i8] }
+%union.anon.6.3531286 = type { %struct.anon.7.3531289 }
+%struct.anon.7.3531289 = type { %union.anon.8.3531290, ptr, %union.anon.10.3531291, i64 }
+%union.anon.8.3531290 = type { %struct.list_head.3531292 }
+%struct.list_head.3531292 = type { ptr, ptr }
+%union.anon.10.3531291 = type { i64 }
+%union.anon.14.3531287 = type { %struct.atomic_t.3531288 }
+%struct.atomic_t.3531288 = type { i32 }
 
 ; 3 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; opencv/optimized/weighted_median_filter.cpp.ll
 ; openjdk/optimized/c1_IR.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = lshr i64 %4, 6
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -33,12 +33,12 @@ entry:
 ; redis/optimized/hpdata.sym.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %1
   %5 = lshr i64 %4, 6
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -48,18 +48,17 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_list_nested.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = lshr i64 %4, 6
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 58 occurrences:
+; 55 occurrences:
 ; faiss/optimized/index_write.cpp.ll
-; linux/optimized/8250_dma.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/blk-map.ll
@@ -81,13 +80,11 @@ entry:
 ; linux/optimized/journal.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/kfifo.ll
-; linux/optimized/list_lru.ll
 ; linux/optimized/memalloc.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pcm_native.ll
 ; linux/optimized/percpu.ll
@@ -122,7 +119,7 @@ entry:
   %3 = add i64 %2, 2147483648
   %4 = add i64 %3, %1
   %5 = lshr i64 %4, 12
-  %6 = getelementptr %struct.page.3342202, ptr %0, i64 %5
+  %6 = getelementptr %struct.page.3531285, ptr %0, i64 %5
   ret ptr %6
 }
 

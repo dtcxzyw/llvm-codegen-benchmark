@@ -1,5 +1,7 @@
 
-; 54 occurrences:
+; 58 occurrences:
+; boost/optimized/syslog_backend.ll
+; boost/optimized/url_base.ll
 ; cmake/optimized/cmDependsFortran.cxx.ll
 ; cmake/optimized/openssl.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
@@ -54,6 +56,8 @@
 ; z3/optimized/qe_arith_plugin.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
+; zed-rs/optimized/55fm2nmy36xzz9o0ck5kapatu.ll
+; zed-rs/optimized/7nyodpla10x7d0ixqrkhccie4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:

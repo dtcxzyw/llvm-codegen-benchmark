@@ -39,7 +39,12 @@ func0000000000000007:                   # @func0000000000000007
 	addb	%dil, %al
 	addb	$4, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000063:                   # @func0000000000000063
+	cmpb	$-16, %sil
+	sbbb	$-1, %dil
+	leal	2(%rdi), %eax
+	retq
+func0000000000000051:                   # @func0000000000000051
 	cmpb	$-32, %sil
 	movl	$78, %ecx
 	movl	$105, %eax

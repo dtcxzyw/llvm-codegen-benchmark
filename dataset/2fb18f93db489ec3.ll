@@ -11,7 +11,7 @@
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %not. = xor i1 %1, true
@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGObjC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %not. = xor i1 %1, true
@@ -39,7 +39,7 @@ entry:
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/integrator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %not. = xor i1 %1, true

@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 91 occurrences:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
 ; clamav/optimized/upx.c.ll
@@ -66,7 +66,6 @@
 ; mold/optimized/output-chunks.cc.S390X.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; nuttx/optimized/sem_tickwait.c.ll
 ; opencv/optimized/layers_common.cpp.ll
 ; opencv/optimized/tf_importer.cpp.ll
 ; openjdk/optimized/g1RemSet.ll
@@ -80,7 +79,6 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; php/optimized/ir_emit.ll
-; postgres/optimized/sharedtuplestore.ll
 ; protobuf/optimized/zero_copy_stream_impl.cc.ll
 ; qemu/optimized/block_dmg.c.ll
 ; qemu/optimized/hw_core_loader.c.ll
@@ -97,7 +95,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -204,7 +202,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -219,7 +217,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
@@ -232,7 +230,7 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
@@ -250,12 +248,13 @@ entry:
 define i64 @func000000000000001d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
+; boost/optimized/to_chars.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; libjpeg-turbo/optimized/jfdctint.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
@@ -279,12 +278,13 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
 
-; 39 occurrences:
+; 40 occurrences:
+; boost/optimized/attribute_name.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; graphviz/optimized/exerror.c.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -328,7 +328,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
@@ -358,7 +358,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
@@ -380,7 +380,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -472,7 +472,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
@@ -483,7 +483,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -495,7 +495,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -507,20 +507,22 @@ entry:
 define i64 @func0000000000000017(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub nuw nsw i64 %4, %0
   ret i64 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -532,7 +534,7 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -543,7 +545,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }

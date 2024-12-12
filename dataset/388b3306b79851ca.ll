@@ -6,7 +6,7 @@
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0) #0 {
+define i64 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = icmp sgt i32 %0, 0
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/colored_trails.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0) #0 {
+define i64 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 2
   %narrow = select i1 %1, i32 %0, i32 0

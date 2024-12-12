@@ -1,4 +1,4 @@
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	testq	%rdx, %rdx
 	setne	%al
 	testq	%rsi, %rsi
@@ -8,7 +8,7 @@ func0000000000000ccc:                   # @func0000000000000ccc
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000c4c:                   # @func0000000000000c4c
+func000000000000308c:                   # @func000000000000308c
 	testq	%rdx, %rdx
 	setne	%cl
 	shrq	$32, %rsi
@@ -18,7 +18,7 @@ func0000000000000c4c:                   # @func0000000000000c4c
 	andb	%cl, %al
 	andb	%dl, %al
 	retq
-func0000000000000acc:                   # @func0000000000000acc
+func000000000000298c:                   # @func000000000000298c
 	testq	%rdx, %rdx
 	setg	%cl
 	testq	%rsi, %rsi
@@ -28,7 +28,7 @@ func0000000000000acc:                   # @func0000000000000acc
 	andb	%dl, %al
 	andb	%cl, %al
 	retq
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000581:                   # @func0000000000000581
 	xorq	$1, %rdx
 	testq	%rsi, %rsi
 	setne	%cl
@@ -36,7 +36,7 @@ func00000000000001c1:                   # @func00000000000001c1
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000011c:                   # @func000000000000011c
+func000000000000042c:                   # @func000000000000042c
 	xorq	$1, %rsi
 	orq	%rdx, %rsi
 	sete	%cl
@@ -44,7 +44,7 @@ func000000000000011c:                   # @func000000000000011c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000004c1:                   # @func00000000000004c1
+func0000000000001181:                   # @func0000000000001181
 	cmpq	$2, %rdx
 	setb	%al
 	testq	%rsi, %rsi
@@ -54,7 +54,7 @@ func00000000000004c1:                   # @func00000000000004c1
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000014c:                   # @func000000000000014c
+func000000000000048c:                   # @func000000000000048c
 	testq	%rdx, %rdx
 	sete	%al
 	cmpq	$2, %rsi
@@ -64,7 +64,7 @@ func000000000000014c:                   # @func000000000000014c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000041c:                   # @func000000000000041c
+func000000000000102c:                   # @func000000000000102c
 	cmpq	$2, %rdx
 	setb	%al
 	testq	%rsi, %rsi

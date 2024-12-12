@@ -11,7 +11,9 @@ entry:
   ret i64 %5
 }
 
-; 30 occurrences:
+; 31 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/polynomial.cpp.ll
 ; cmake/optimized/cmQtAutoMocUic.cxx.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
@@ -29,7 +31,6 @@ entry:
 ; minetest/optimized/reflowscan.cpp.ll
 ; opencv/optimized/cap_mjpeg_decoder.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
-; opencv/optimized/core_detect.cpp.ll
 ; openusd/optimized/adapterManager.cpp.ll
 ; openusd/optimized/pathExpression.cpp.ll
 ; openusd/optimized/predicateExpression.cpp.ll

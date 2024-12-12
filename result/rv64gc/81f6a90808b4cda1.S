@@ -15,17 +15,6 @@ func000000000000007d:                   # @func000000000000007d
 	sub	a0, a1, a0
 	slli	a0, a0, 2
 	ret
-func000000000000000c:                   # @func000000000000000c
-	slli	a1, a1, 32
-	srli	a1, a1, 32
-	sub	a0, a1, a0
-	slli	a0, a0, 2
-	ret
-func000000000000004c:                   # @func000000000000004c
-	sext.w	a1, a1
-	sub	a0, a1, a0
-	slli	a0, a0, 3
-	ret
 func000000000000005f:                   # @func000000000000005f
 	sext.w	a1, a1
 	sub	a0, a1, a0

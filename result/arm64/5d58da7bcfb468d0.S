@@ -1,60 +1,38 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v6.4s, #131, lsl #16
-	orr	v1.16b, v3.16b, v1.16b
-	mov	w8, #61538                      // =0xf062
-	orr	v0.16b, v2.16b, v0.16b
-	movk	w8, #2172, lsl #16
-	dup	v2.4s, w8
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	orr	v1.16b, v5.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
-	eor	v0.16b, v0.16b, v2.16b
-	eor	v1.16b, v1.16b, v2.16b
+	mov	w8, #8585216                    // =0x830000
+	orr	w9, w1, w0
+	and	w8, w2, w8
+	orr	w8, w9, w8
+	mov	w9, #61538                      // =0xf062
+	movk	w9, #2172, lsl #16
+	eor	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v6.4s, #128, lsl #16
-	orr	v1.16b, v3.16b, v1.16b
-	mov	w8, #61538                      // =0xf062
-	orr	v0.16b, v2.16b, v0.16b
-	movk	w8, #2172, lsl #16
-	dup	v2.4s, w8
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	orr	v1.16b, v5.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
-	eor	v0.16b, v0.16b, v2.16b
-	eor	v1.16b, v1.16b, v2.16b
+	and	w8, w2, #0x800000
+	orr	w9, w1, w0
+	orr	w8, w9, w8
+	mov	w9, #61538                      // =0xf062
+	movk	w9, #2172, lsl #16
+	eor	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v6.4s, #64
-	orr	v1.16b, v3.16b, v1.16b
-	mov	w8, #1600                       // =0x640
-	orr	v0.16b, v2.16b, v0.16b
-	dup	v2.4s, w8
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	orr	v1.16b, v5.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
-	eor	v0.16b, v0.16b, v2.16b
-	eor	v1.16b, v1.16b, v2.16b
+	and	w8, w2, #0x40
+	orr	w9, w1, w0
+	orr	w8, w9, w8
+	mov	w9, #1600                       // =0x640
+	eor	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v6.4s, #16
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	orr	v1.16b, v5.16b, v1.16b
-	orr	v0.16b, v4.16b, v0.16b
-	eor	v0.16b, v0.16b, v6.16b
-	eor	v1.16b, v1.16b, v6.16b
+	and	w8, w2, #0x10
+	orr	w9, w1, w0
+	orr	w8, w8, w9
+	eor	w0, w8, #0x10
 	ret
                                         // -- End function

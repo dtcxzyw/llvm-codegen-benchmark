@@ -51,7 +51,7 @@
 ; quantlib/optimized/sviinterpolatedsmilesection.ll
 ; quantlib/optimized/zabr.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000088(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2

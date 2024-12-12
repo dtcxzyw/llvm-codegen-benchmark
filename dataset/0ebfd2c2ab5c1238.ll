@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; assimp/optimized/zip.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
@@ -29,10 +29,9 @@
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; php/optimized/pcre2_compile.ll
 ; redis/optimized/lua_cmsgpack.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 %3

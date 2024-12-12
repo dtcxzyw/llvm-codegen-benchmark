@@ -57,20 +57,8 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
-; icu/optimized/uconv.ll
-; minetest/optimized/servermap.cpp.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000b(i32 %0) #0 {
-entry:
-  %1 = lshr i32 %0, 24
-  %2 = trunc nuw i32 %1 to i8
-  %3 = and i8 %2, 7
-  %4 = add nuw nsw i8 %3, 4
-  ret i8 %4
-}
-
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; Function Attrs: nounwind
@@ -83,7 +71,8 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; Function Attrs: nounwind
@@ -105,6 +94,18 @@ entry:
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = and i8 %2, 3
   %4 = add nuw nsw i8 %3, 1
+  ret i8 %4
+}
+
+; 1 occurrences:
+; icu/optimized/uconv.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000b(i32 %0) #0 {
+entry:
+  %1 = lshr i32 %0, 16
+  %2 = trunc nuw i32 %1 to i8
+  %3 = and i8 %2, 15
+  %4 = add nuw nsw i8 %3, 87
   ret i8 %4
 }
 

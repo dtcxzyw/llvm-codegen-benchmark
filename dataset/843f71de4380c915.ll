@@ -3,7 +3,7 @@
 ; abc/optimized/bacReadVer.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004cc(i8 %0, i8 %1) #0 {
+define i1 @func000000000000118c(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, -26
   %3 = icmp ne i8 %0, 95

@@ -1,5 +1,5 @@
 
-; 150 occurrences:
+; 149 occurrences:
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/index.c.ll
 ; cpython/optimized/codeobject.ll
@@ -122,7 +122,6 @@
 ; velox/optimized/AllocationPool.cpp.ll
 ; z3/optimized/arith_eq_solver.cpp.ll
 ; z3/optimized/automaton.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/emonics.cpp.ll
 ; z3/optimized/factor_rewriter.cpp.ll
@@ -178,8 +177,7 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 2 occurrences:
 ; postgres/optimized/xlog.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; Function Attrs: nounwind

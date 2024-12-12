@@ -1,8 +1,8 @@
-func00000000000001a1:                   # @func00000000000001a1
+func00000000000003e1:                   # @func00000000000003e1
 	leaq	6(%rsi), %rax
 	testl	%edx, %edx
 	cmovneq	%rsi, %rax
 	addq	$3, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

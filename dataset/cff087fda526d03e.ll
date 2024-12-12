@@ -26,22 +26,11 @@ entry:
 ; ncnn/optimized/glu.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = mul nsw i32 %2, %0
   %4 = icmp sgt i32 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; darktable/optimized/OrfDecoder.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sdiv i32 %1, 8
-  %3 = mul i32 %2, %0
-  %4 = icmp ult i32 %3, 4
   ret i1 %4
 }
 
@@ -59,10 +48,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/fast_window_binarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 6
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }

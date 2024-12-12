@@ -11,7 +11,7 @@
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add i32 %3, %1
@@ -22,10 +22,10 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_core_loader.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
@@ -58,10 +58,10 @@ entry:
 ; yosys/optimized/memory_libmap.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000126(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -72,7 +72,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 -4, %2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -88,10 +88,10 @@ entry:
 ; openusd/optimized/bitreader_buffer.c.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 4, %2
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -101,10 +101,10 @@ entry:
 ; openmpi/optimized/nbc_ibcast.ll
 ; openmpi/optimized/nbc_ireduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000121(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -115,7 +115,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 2, %2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
@@ -123,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/hpack_huffman_table.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add i32 %3, %1
@@ -134,10 +134,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -145,7 +145,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/nbc_ireduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 -1, %2
   %4 = add i32 %3, %1
@@ -156,10 +156,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/page_alloc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp sge i32 %4, %0
   ret i1 %5
 }
@@ -168,10 +168,10 @@ entry:
 ; linux/optimized/mballoc.ll
 ; linux/optimized/page_alloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000106(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -180,10 +180,10 @@ entry:
 ; linux/optimized/ialloc.ll
 ; linux/optimized/move_extent.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
@@ -191,7 +191,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ring_buffer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add i32 %3, %1
@@ -202,7 +202,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/pt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = add i32 %3, %1
@@ -213,7 +213,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/graph_generator.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000012a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = add nsw i32 %3, %1

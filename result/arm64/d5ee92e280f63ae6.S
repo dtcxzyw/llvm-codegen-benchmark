@@ -1,36 +1,13 @@
 func0000000000000039:                   // @func0000000000000039
 // %bb.0:                               // %entry
-	sub	v1.2d, v1.2d, v3.2d
-	sub	v2.2d, v2.2d, v4.2d
-	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
-	movk	x8, #43691
-	ushll	v0.4s, v0.4h, #0
-	ushr	v1.2d, v1.2d, #3
-	ushr	v2.2d, v2.2d, #3
-	ushll	v3.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	fmov	x9, d1
-	fmov	x11, d2
-	mov	x10, v2.d[1]
-	mov	x12, v1.d[1]
-	shl	v3.2d, v3.2d, #63
-	shl	v0.2d, v0.2d, #63
-	mul	x9, x9, x8
-	cmlt	v3.2d, v3.2d, #0
-	cmlt	v6.2d, v0.2d, #0
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	mov	v0.16b, v3.16b
-	fmov	d2, x9
-	mul	x8, x12, x8
-	fmov	d1, x11
-	mov	v1.d[1], x10
-	mov	v2.d[1], x8
-	ushr	v4.2d, v1.2d, #1
-	ushr	v5.2d, v2.2d, #1
-	sub	v4.2d, v1.2d, v4.2d
-	sub	v5.2d, v2.2d, v5.2d
-	bif	v1.16b, v4.16b, v6.16b
-	bsl	v0.16b, v2.16b, v5.16b
+	sub	x8, x1, x2
+	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	tst	w0, #0x1
+	lsr	x8, x8, #3
+	movk	x9, #43691
+	mul	x8, x8, x9
+	add	x9, x8, #1
+	lsr	x9, x9, #1
+	csel	x0, x8, x9, ne
 	ret
                                         // -- End function

@@ -28,7 +28,7 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 .LCPI3_0:
 	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	fadd.d	fa5, fa0, fa5

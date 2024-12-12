@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 66 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; c3c/optimized/target.c.ll
 ; clamav/optimized/nulsft.c.ll
@@ -27,7 +27,6 @@
 ; llvm/optimized/SemaType.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
-; mitsuba3/optimized/archtraits.cpp.ll
 ; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
 ; opencv/optimized/orb.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
@@ -59,6 +58,14 @@
 ; wireshark/optimized/packet-gsm_a_common.c.ll
 ; wireshark/optimized/packet-gsm_rlcmac.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/3hyavwlupfwy674k0u5ll7gv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f4g1cwrteaiub5fsoifj5amxy.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1, i1 %2) #0 {
 entry:

@@ -19,7 +19,7 @@ entry:
   %3 = and i64 %2, 1984
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 64, i64 0
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
@@ -38,7 +38,7 @@ entry:
   %3 = and i64 %2, 1984
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 64, i64 0
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or i64 %6, %0
   ret i64 %7
 }

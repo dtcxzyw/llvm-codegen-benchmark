@@ -23,7 +23,7 @@ entry:
   ret i1 %5
 }
 
-; 180 occurrences:
+; 179 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -203,13 +203,12 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
-; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = sub nuw nsw i64 %3, %0
-  %5 = icmp ugt i64 %4, 1
+  %5 = icmp samesign ugt i64 %4, 1
   ret i1 %5
 }
 
@@ -392,18 +391,18 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = sub nuw nsw i64 %3, %0
-  %5 = icmp ult i64 %4, 2
+  %5 = icmp samesign ult i64 %4, 2
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = sub i64 %3, %0
@@ -414,7 +413,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/dtls_record.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = sub nuw i64 %3, %0
@@ -423,9 +422,20 @@ entry:
 }
 
 ; 1 occurrences:
+; wireshark/optimized/vwr.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = sub nuw nsw i64 %3, %0
+  %5 = icmp ugt i64 %4, 268435456
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; wireshark/optimized/mplog.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = sub nsw i64 %3, %0
@@ -436,7 +446,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/netdev.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = sub i64 %3, %0
@@ -470,7 +480,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/ginpostinglist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = sub nsw i64 %3, %0

@@ -2,7 +2,7 @@
 	.zero	16,159
 .LCPI0_1:
 	.zero	16,26
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddb	.LCPI0_0(%rip), %xmm2, %xmm2
 	vpcmpltub	.LCPI0_1(%rip), %xmm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0

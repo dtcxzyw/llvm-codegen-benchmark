@@ -17,7 +17,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0) #0 {
 entry:
-  %1 = tail call noundef range(i32 1, -2147483647) i32 @llvm.abs.i32(i32 %0, i1 false)
+  %1 = tail call noundef range(i32 1, -2147483647) i32 @llvm.abs.i32(i32 range(i32 2, 0) %0, i1 false)
   %2 = add nuw i32 %1, 1
   ret i32 %2
 }
@@ -108,7 +108,7 @@ entry:
   ret i32 %2
 }
 
-; 19 occurrences:
+; 22 occurrences:
 ; abc/optimized/wlcAbc.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcGraft.c.ll
@@ -128,6 +128,9 @@ entry:
 ; php/optimized/snprintf.ll
 ; wireshark/optimized/g711.c.ll
 ; yosys/optimized/simplify.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
@@ -136,11 +139,9 @@ entry:
   ret i32 %2
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; abc/optimized/wlcNtk.c.ll
-; abc/optimized/wlcSim.c.ll
 ; openmpi/optimized/reachable_netlink_module.ll
-; openmpi/optimized/reachable_weighted.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind

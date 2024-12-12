@@ -1,5 +1,5 @@
 
-; 235 occurrences:
+; 234 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -201,7 +201,6 @@
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/craftdef.cpp.ll
@@ -236,7 +235,7 @@
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 1
   %2 = and i64 %1, -4611686018427387897
@@ -261,12 +260,11 @@ entry:
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 1
-  %2 = and i64 %1, 15
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = and i64 %0, 15
+  %2 = icmp eq i64 %1, 15
+  ret i1 %2
 }
 
 ; 14 occurrences:
@@ -285,12 +283,11 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 7
-  %2 = and i64 %1, 7
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = and i64 %0, 7
+  %2 = icmp eq i64 %1, 1
+  ret i1 %2
 }
 
 ; 5 occurrences:
@@ -302,10 +299,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 7
-  %2 = and i64 %1, 7
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = and i64 %0, 7
+  %2 = icmp eq i64 %1, 1
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

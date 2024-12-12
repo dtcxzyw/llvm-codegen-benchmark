@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/CColorConverter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i1 %0, i32 %1) #0 {
+define i32 @func00000000000000a6(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = select i1 %0, i32 7, i32 %2
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i1 %0, i32 %1) #0 {
+define i32 @func00000000000000a1(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = select i1 %0, i32 3, i32 %2

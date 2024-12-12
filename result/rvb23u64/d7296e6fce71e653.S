@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andi	a1, a1, 255
 	or	a0, a0, a1
 	lui	a1, 196384
@@ -8,7 +8,7 @@ func0000000000000011:                   # @func0000000000000011
 	li	a1, -9
 	czero.eqz	a0, a1, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	andi	a1, a1, 255
 	lui	a2, 8
 	or	a0, a0, a1
@@ -20,7 +20,19 @@ func0000000000000014:                   # @func0000000000000014
 	czero.eqz	a0, a1, a0
 	add	a0, a0, a2
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000024:                   # @func0000000000000024
+	andi	a1, a1, 255
+	lui	a2, 8
+	or	a0, a0, a1
+	addiw	a1, a2, 1132
+	sext.w	a0, a0
+	sltu	a0, a0, a1
+	lui	a1, 1048568
+	addiw	a1, a1, 1131
+	czero.eqz	a0, a1, a0
+	add	a0, a0, a2
+	ret
+func0000000000000038:                   # @func0000000000000038
 	andi	a1, a1, 254
 	or	a0, a0, a1
 	lui	a1, 2032

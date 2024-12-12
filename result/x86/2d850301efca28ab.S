@@ -1,4 +1,4 @@
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	sarq	$32, %rdi
 	testl	%esi, %esi
 	sete	%cl
@@ -6,14 +6,14 @@ func00000000000000d1:                   # @func00000000000000d1
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	movl	%esi, %eax
 	sarq	$2, %rdi
 	imulq	%rax, %rdi
 	testq	%rdi, %rdi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movl	%esi, %eax
 	sarq	$4, %rdi
 	imulq	%rax, %rdi

@@ -3,8 +3,3 @@ func0000000000000005:                   # @func0000000000000005
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	movswq	%dx, %rax
-	addq	%rdi, %rax
-	addq	%rsi, %rax
-	retq

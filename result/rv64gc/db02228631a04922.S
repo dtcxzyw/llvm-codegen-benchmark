@@ -26,6 +26,13 @@ func000000000000000f:                   # @func000000000000000f
 	sub	a0, a0, a1
 	addi	a0, a0, 8
 	ret
+func000000000000001f:                   # @func000000000000001f
+	sext.w	a0, a0
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
+	addi	a0, a0, 32
+	ret
 func0000000000000010:                   # @func0000000000000010
 	slli	a1, a0, 32
 	slli	a0, a0, 34
@@ -33,13 +40,6 @@ func0000000000000010:                   # @func0000000000000010
 	li	a1, 39
 	slli	a1, a1, 29
 	add	a0, a0, a1
-	ret
-func000000000000001f:                   # @func000000000000001f
-	sext.w	a0, a0
-	slli	a1, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a1
-	addi	a0, a0, 39
 	ret
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a0, a0

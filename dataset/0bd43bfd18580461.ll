@@ -47,6 +47,21 @@ entry:
   ret i1 %6
 }
 
+; 4 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; qemu/optimized/source_s_addMagsF16.c.ll
+; spike/optimized/s_addMagsF16.ll
+; spike/optimized/s_addMagsF32.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = and i64 %3, 1
+  %5 = icmp eq i64 %4, 0
+  %6 = select i1 %5, i1 %0, i1 false
+  ret i1 %6
+}
+
 ; 17 occurrences:
 ; spike/optimized/fsd.ll
 ; spike/optimized/fsh.ll
@@ -71,6 +86,20 @@ entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 3
   %5 = icmp eq i64 %4, 0
+  %6 = select i1 %5, i1 %0, i1 false
+  ret i1 %6
+}
+
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; hdf5/optimized/H5Tbit.c.ll
+; llvm/optimized/ScalarEvolutionExpander.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = and i64 %3, 1
+  %5 = icmp ne i64 %4, 0
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }

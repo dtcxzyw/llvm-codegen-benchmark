@@ -1,7 +1,9 @@
 
-; 32 occurrences:
+; 34 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_globaltonemap.c.ll
 ; gromacs/optimized/colvarbias_alb.cpp.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll

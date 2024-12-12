@@ -6,7 +6,7 @@
 ; oiio/optimized/imagecache.cpp.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
@@ -22,7 +22,7 @@ entry:
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp ne i8 %3, 0
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp ne i8 %3, 0

@@ -1,5 +1,25 @@
 
-; 99 occurrences:
+; 8 occurrences:
+; imgui/optimized/imgui.cpp.ll
+; linux/optimized/libahci.ll
+; linux/optimized/uncore_nhmex.ll
+; miniaudio/optimized/unity.c.ll
+; openusd/optimized/catmarkPatchBuilder.cpp.ll
+; qemu/optimized/hw_dma_sifive_pdma.c.ll
+; qemu/optimized/hw_usb_hcd-uhci.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 255
+  %3 = mul nuw nsw i32 %2, 72
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 107 occurrences:
+; abseil-cpp/optimized/str_split_test.cc.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombGeom_F.cpp.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombGeom_VF.cpp.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombGeom_VgrpF.cpp.ll
@@ -97,29 +117,22 @@
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll
+; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/descriptor.cc.ll
+; protobuf/optimized/descriptor_database.cc.ll
+; protobuf/optimized/field_mask_util.cc.ll
+; protobuf/optimized/file.cc.ll
+; protobuf/optimized/map.cc.ll
 ; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = mul nuw nsw i32 %2, 17
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 3 occurrences:
-; miniaudio/optimized/unity.c.ll
-; openusd/optimized/catmarkPatchBuilder.cpp.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 3
-  %3 = mul nuw nsw i32 %2, 5
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

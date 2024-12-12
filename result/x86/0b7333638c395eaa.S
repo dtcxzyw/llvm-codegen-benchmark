@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	leaq	(%rdi,%rdi,2), %rax
 	shrq	$62, %rax
 	setne	%al
@@ -22,13 +22,18 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$169, %rax
 	setae	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	shlq	$5, %rdi
 	leaq	(%rdi,%rdi,2), %rax
 	testq	%rax, %rax
 	setg	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000018:                   # @func0000000000000018
+	leaq	(%rdi,%rdi,2), %rax
+	cmpq	$419430400, %rax                # imm = 0x19000000
+	setae	%al
+	retq
+func0000000000000046:                   # @func0000000000000046
 	shlq	$2, %rdi
 	leaq	(%rdi,%rdi,2), %rax
 	shrq	$63, %rax
@@ -39,11 +44,23 @@ func000000000000000c:                   # @func000000000000000c
 	testq	%rax, %rax
 	setne	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	shlq	$2, %rdi
 	negq	%rdi
 	cmpq	$128, %rdi
 	setb	%al
+	retq
+func0000000000000011:                   # @func0000000000000011
+	shlq	$4, %rdi
+	leaq	(%rdi,%rdi,2), %rax
+	testq	%rax, %rax
+	sete	%al
+	retq
+func0000000000000038:                   # @func0000000000000038
+	addq	%rdi, %rdi
+	leaq	(%rdi,%rdi,2), %rax
+	shrq	$58, %rax
+	setne	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	leaq	(%rdi,%rdi,8), %rax

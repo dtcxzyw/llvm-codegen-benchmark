@@ -24,7 +24,7 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	shll	$4, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	xorl	%esi, %edi
 	cmpl	$134217728, %edi                # imm = 0x8000000
 	movl	$2, %eax

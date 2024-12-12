@@ -120,7 +120,7 @@ entry:
   ret i1 %1
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -129,6 +129,7 @@ entry:
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; darktable/optimized/introspection_shadhi.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; mitsuba3/optimized/principled.cpp.ll
 ; mitsuba3/optimized/principledthin.cpp.ll
 ; mitsuba3/optimized/tent.cpp.ll
@@ -208,6 +209,17 @@ entry:
 }
 
 ; 2 occurrences:
+; oiio/optimized/environment.cpp.ll
+; opencv/optimized/affine_feature2d.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000e(float %0) #0 {
+entry:
+  %1 = fsub float 5.000000e-01, %0
+  %2 = fcmp ord float %1, 0.000000e+00
+  ret i1 %2
+}
+
+; 2 occurrences:
 ; gromacs/optimized/settle.cpp.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
@@ -215,16 +227,6 @@ define i1 @func000000000000000a(float %0) #0 {
 entry:
   %1 = fsub float 1.000000e+00, %0
   %2 = fcmp ole float %1, 0x3D71979980000000
-  ret i1 %2
-}
-
-; 1 occurrences:
-; opencv/optimized/affine_feature2d.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000e(float %0) #0 {
-entry:
-  %1 = fsub float 1.000000e+00, %0
-  %2 = fcmp ord float %1, 0.000000e+00
   ret i1 %2
 }
 

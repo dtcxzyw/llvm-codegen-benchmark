@@ -5,7 +5,7 @@
 ; openjdk/optimized/xPageCache.ll
 ; openjdk/optimized/zDriverPort.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 120
   %4 = icmp eq ptr %0, %1
@@ -32,7 +32,7 @@ entry:
 ; linux/optimized/cistpl.ll
 ; linux/optimized/vt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000c21(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 63
   %4 = icmp eq ptr %0, %1
@@ -41,10 +41,23 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/format.ll
+; boost/optimized/std_backend.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008c(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, -2147483648
+  %4 = icmp ult i64 %3, -4294967296
+  %5 = icmp ne ptr %0, %1
+  %6 = select i1 %5, i1 true, i1 %4
+  ret i1 %6
+}
+
+; 2 occurrences:
 ; postgres/optimized/reinit.ll
 ; wireshark/optimized/editcap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -9223372036854775807
   %4 = icmp ult i64 %3, 2
@@ -56,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000319(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000c29(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 3
   %4 = icmp uge ptr %0, %1

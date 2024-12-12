@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 70 occurrences:
 ; bullet3/optimized/btMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
@@ -68,11 +68,13 @@
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 5.000000e-01
-  %4 = fadd float %3, %1
+  %4 = fadd float %1, %3
   %5 = fsub float %4, %0
   ret float %5
 }

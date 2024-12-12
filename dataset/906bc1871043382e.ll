@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 50 occurrences:
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/giaMan.c.ll
@@ -17,8 +17,6 @@
 ; graphviz/optimized/tlayout.c.ll
 ; gromacs/optimized/colvarbias_alb.cpp.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
-; gromacs/optimized/dlasdt.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/gmx_energy.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/membed.cpp.ll

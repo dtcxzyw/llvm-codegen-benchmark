@@ -1,4 +1,4 @@
-func0000000000000308:                   # @func0000000000000308
+func0000000000000a08:                   # @func0000000000000a08
 	addl	$-4, %esi
 	cmpl	%edi, %esi
 	setb	%cl
@@ -6,7 +6,7 @@ func0000000000000308:                   # @func0000000000000308
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	decl	%esi
 	cmpl	%edi, %esi
 	seta	%cl
@@ -14,7 +14,7 @@ func0000000000000030:                   # @func0000000000000030
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000000c2:                   # @func00000000000000c2
+func0000000000000182:                   # @func0000000000000182
 	incl	%esi
 	cmpl	%edi, %esi
 	setl	%cl
@@ -22,15 +22,7 @@ func00000000000000c2:                   # @func00000000000000c2
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
-	addl	$-2, %esi
-	cmpl	%edi, %esi
-	setb	%cl
-	cmpl	$8, %edi
-	setb	%al
-	orb	%cl, %al
-	retq
-func0000000000000354:                   # @func0000000000000354
+func0000000000000a94:                   # @func0000000000000a94
 	decl	%esi
 	cmpl	%edi, %esi
 	setg	%cl
@@ -38,7 +30,7 @@ func0000000000000354:                   # @func0000000000000354
 	setg	%al
 	orb	%cl, %al
 	retq
-func00000000000002c2:                   # @func00000000000002c2
+func0000000000000982:                   # @func0000000000000982
 	incl	%esi
 	cmpl	%edi, %esi
 	setl	%cl
@@ -46,7 +38,7 @@ func00000000000002c2:                   # @func00000000000002c2
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000002ec:                   # @func00000000000002ec
+func00000000000009cc:                   # @func00000000000009cc
 	decl	%esi
 	cmpl	%edi, %esi
 	setle	%cl
@@ -54,7 +46,7 @@ func00000000000002ec:                   # @func00000000000002ec
 	setl	%al
 	orb	%cl, %al
 	retq
-func00000000000002cc:                   # @func00000000000002cc
+func000000000000098c:                   # @func000000000000098c
 	addl	$2, %esi
 	cmpl	%edi, %esi
 	setl	%cl

@@ -12,7 +12,7 @@ define i1 @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = sitofp i32 %2 to float
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 
@@ -28,19 +28,20 @@ define i1 @func0000000000000005(float %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = sitofp i32 %2 to float
-  %4 = fcmp ult float %3, %0
+  %4 = fcmp ugt float %0, %3
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; nuklear/optimized/unity.c.ll
+; opencv/optimized/detector.cpp.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(float %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = sitofp i32 %2 to float
-  %4 = fcmp ugt float %3, %0
+  %4 = fcmp ult float %0, %3
   ret i1 %4
 }
 
@@ -65,7 +66,7 @@ define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = sitofp i32 %2 to float
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   ret i1 %4
 }
 
@@ -77,7 +78,7 @@ define i1 @func000000000000000a(float %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = sitofp i32 %2 to float
-  %4 = fcmp oge float %3, %0
+  %4 = fcmp ole float %0, %3
   ret i1 %4
 }
 
@@ -88,7 +89,7 @@ define i1 @func000000000000000c(float %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = sitofp i32 %2 to float
-  %4 = fcmp ole float %3, %0
+  %4 = fcmp oge float %0, %3
   ret i1 %4
 }
 
@@ -99,7 +100,7 @@ define i1 @func0000000000000007(float %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = sitofp i32 %2 to float
-  %4 = fcmp une float %3, %0
+  %4 = fcmp une float %0, %3
   ret i1 %4
 }
 

@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	negb	%dl
 	shrxl	%edx, %esi, %eax
 	shlq	$4, %rax

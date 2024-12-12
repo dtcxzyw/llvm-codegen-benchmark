@@ -6,7 +6,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpsrld	$30, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpsrad	$2, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI1_0:
@@ -24,7 +24,7 @@ func0000000000000024:                   # @func0000000000000024
 	vpsrld	$31, %ymm2, %ymm3
 	vpsrad	$1, %ymm2, %ymm2
 	vpaddd	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI2_0:

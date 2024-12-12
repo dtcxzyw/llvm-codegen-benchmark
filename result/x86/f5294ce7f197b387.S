@@ -3,13 +3,13 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	orl	%edx, %esi
 	cmpb	$4, %sil
 	setae	%al
 	andb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orb	%dl, %sil
 	sete	%al
 	andb	%dil, %al
@@ -19,7 +19,13 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func0000000000000014:                   # @func0000000000000014
+	orl	%edx, %esi
+	cmpb	$2, %sil
+	setb	%al
+	andb	%dil, %al
+	retq
+func000000000000002c:                   # @func000000000000002c
 	orb	%dl, %sil
 	setne	%al
 	andb	%dil, %al

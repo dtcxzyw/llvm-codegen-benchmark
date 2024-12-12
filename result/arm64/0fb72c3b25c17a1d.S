@@ -1,28 +1,36 @@
-func0000000000000154:                   // @func0000000000000154
+func0000000000000294:                   // @func0000000000000294
 // %bb.0:                               // %entry
-	cmgt	v2.16b, v1.16b, v2.16b
-	cmgt	v0.16b, v0.16b, v1.16b
-	orr	v0.16b, v0.16b, v2.16b
+	sxtb	w8, w1
+	sxtb	w9, w2
+	cmp	w8, w0, sxtb
+	ccmp	w8, w9, #0, ge
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000110:                   // @func0000000000000110
+func0000000000000210:                   // @func0000000000000210
 // %bb.0:                               // %entry
-	cmhi	v2.16b, v1.16b, v2.16b
-	cmhi	v0.16b, v0.16b, v1.16b
-	orr	v0.16b, v0.16b, v2.16b
+	and	w8, w1, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, w0, uxtb
+	ccmp	w8, w9, #2, hs
+	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000000ee:                   // @func00000000000000ee
+func00000000000001ce:                   // @func00000000000001ce
 // %bb.0:                               // %entry
-	cmge	v2.16b, v0.16b, v2.16b
-	cmge	v0.16b, v1.16b, v0.16b
-	orr	v0.16b, v0.16b, v2.16b
+	sxtb	w8, w0
+	sxtb	w9, w2
+	cmp	w8, w1, sxtb
+	ccmp	w8, w9, #0, gt
+	cset	w0, ge
 	ret
                                         // -- End function
-func00000000000000aa:                   // @func00000000000000aa
+func000000000000014a:                   // @func000000000000014a
 // %bb.0:                               // %entry
-	cmhs	v2.16b, v0.16b, v2.16b
-	cmhs	v0.16b, v1.16b, v0.16b
-	orr	v0.16b, v0.16b, v2.16b
+	and	w8, w0, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, w1, uxtb
+	ccmp	w8, w9, #2, hi
+	cset	w0, hs
 	ret
                                         // -- End function

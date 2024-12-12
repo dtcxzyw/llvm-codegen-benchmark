@@ -29,7 +29,7 @@ define float @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, 5.000000e-01
   %4 = select i1 %3, float %1, float %2
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 
@@ -85,7 +85,7 @@ define float @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp oeq float %2, -2.330000e+02
   %4 = select i1 %3, float %1, float %2
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 
@@ -114,7 +114,7 @@ define float @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp une float %2, 0.000000e+00
   %4 = select i1 %3, float %1, float %2
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

@@ -23,22 +23,25 @@ func000000000000000b:                   # @func000000000000000b
 	flt.s	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret
-func000000000000000c:                   # @func000000000000000c
+func0000000000000007:                   # @func0000000000000007
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	fmv.s	fa0, fa1
 .LBB3_2:                                # %entry
 	fmv.w.x	fa5, zero
-	fle.s	a0, fa5, fa0
+	feq.s	a0, fa0, fa5
+	xori	a0, a0, 1
 	ret
-func0000000000000007:                   # @func0000000000000007
+.LCPI4_0:
+	.word	0x40c90fdb                      # float 6.28318548
+func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	fmv.s	fa0, fa1
 .LBB4_2:                                # %entry
-	fmv.w.x	fa5, zero
-	feq.s	a0, fa0, fa5
-	xori	a0, a0, 1
+	lui	a0, %hi(.LCPI4_0)
+	flw	fa5, %lo(.LCPI4_0)(a0)
+	fle.s	a0, fa5, fa0
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1

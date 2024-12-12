@@ -1,5 +1,5 @@
 
-; 263 occurrences:
+; 265 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
@@ -126,7 +126,6 @@
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/io_e57.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; meshlab/optimized/parameters.cpp.ll
@@ -262,6 +261,9 @@
 ; stb/optimized/stb_image_resize2.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {

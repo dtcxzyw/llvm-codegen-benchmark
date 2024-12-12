@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 31 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; grpc/optimized/call.cc.ll
@@ -11,7 +11,6 @@
 ; libpng/optimized/pngwutil.c.ll
 ; libwebp/optimized/near_lossless_enc.c.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/nfs3xdr.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -26,7 +25,6 @@
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openjdk/optimized/constMethod.ll
 ; openspiel/optimized/TransTableL.cpp.ll
-; postgres/optimized/trigger.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; sentencepiece/optimized/sentencepiece_model.pb.cc.ll
@@ -38,7 +36,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = and i32 %1, 1
   %7 = add nuw nsw i32 %5, %6
   ret i32 %7
@@ -79,7 +77,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 4
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = and i32 %1, 8
   %7 = add i32 %5, %6
   ret i32 %7

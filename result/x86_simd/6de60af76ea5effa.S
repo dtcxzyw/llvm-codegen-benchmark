@@ -1,4 +1,4 @@
-func0000000000000671:                   # @func0000000000000671
+func0000000000000ce1:                   # @func0000000000000ce1
 	vpmovzxwq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
 	vpsubq	%ymm1, %ymm2, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2

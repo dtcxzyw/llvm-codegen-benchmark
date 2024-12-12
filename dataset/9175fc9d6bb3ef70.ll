@@ -1,21 +1,55 @@
 
-%struct.snode.3705780 = type { i32, i32, ptr, ptr, i16, i16, [2 x ptr], ptr, i32, i8 }
+%struct.pme_grid_comm_t.3371159 = type { i32, i32, i32, i32, i32, i32, i32 }
+%struct.snode.3885102 = type { i32, i32, ptr, ptr, i16, i16, [2 x ptr], ptr, i32, i8 }
 
-; 8 occurrences:
-; graphviz/optimized/trapezoid.c.ll
-; gromacs/optimized/pme_grid.cpp.ll
-; grpc/optimized/xds_cluster_resolver.cc.ll
-; hyperscan/optimized/ng_extparam.cpp.ll
-; luajit/optimized/minilua.ll
+; 14 occurrences:
+; openjdk/optimized/FourByteAbgr.ll
+; openjdk/optimized/FourByteAbgrPre.ll
+; openjdk/optimized/IntArgb.ll
+; openjdk/optimized/IntArgbBm.ll
+; openjdk/optimized/IntArgbPre.ll
+; openjdk/optimized/IntBgr.ll
+; openjdk/optimized/IntRgb.ll
+; openjdk/optimized/IntRgbx.ll
+; openjdk/optimized/ThreeByteBgr.ll
+; openjdk/optimized/Ushort555Rgb.ll
+; openjdk/optimized/Ushort555Rgbx.ll
+; openjdk/optimized/Ushort565Rgb.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %.idx = select i1 %0, i64 0, i64 640
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %.idx
+  ret ptr %4
+}
+
+; 2 occurrences:
+; luajit/optimized/minilua.ll
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %.idx = select i1 %0, i64 0, i64 640
+  %not. = xor i1 %0, true
+  %.idx = sext i1 %not. to i64
   %4 = getelementptr nusw i8, ptr %3, i64 %.idx
+  ret ptr %4
+}
+
+; 4 occurrences:
+; graphviz/optimized/trapezoid.c.ll
+; gromacs/optimized/pme_grid.cpp.ll
+; grpc/optimized/xds_cluster_resolver.cc.ll
+; hyperscan/optimized/ng_extparam.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw %struct.pme_grid_comm_t.3371159, ptr %1, i64 %2
+  %.idx = select i1 %0, i64 0, i64 12
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 
@@ -37,7 +71,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.snode.3705780, ptr %1, i64 %2
+  %3 = getelementptr %struct.snode.3885102, ptr %1, i64 %2
   %.idx = select i1 %0, i64 0, i64 64
   %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4

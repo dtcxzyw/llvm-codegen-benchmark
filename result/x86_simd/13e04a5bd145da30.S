@@ -1,11 +1,16 @@
 .LCPI0_0:
-	.long	2                               # 0x2
+	.quad	24                              # 0x18
 .LCPI0_1:
-	.long	4                               # 0x4
+	.long	3                               # 0x3
+.LCPI0_2:
+	.long	2                               # 0x2
+.LCPI0_3:
+	.long	16                              # 0x10
 func0000000000000007:                   # @func0000000000000007
-	vptestmq	%ymm1, %ymm1, %k1
-	vorps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0 {%k1}
-	vorps	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
+	vpcmpeqq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
+	vpbroadcastd	.LCPI0_1(%rip), %xmm1   # xmm1 = [3,3,3,3]
+	vpbroadcastd	.LCPI0_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [2,2,2,2]
+	vpternlogd	$254, .LCPI0_3(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | mem
 	vzeroupper
 	retq
 .LCPI1_0:

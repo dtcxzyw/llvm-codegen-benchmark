@@ -19,10 +19,9 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; casadi/optimized/kinsol_io.c.ll
 ; darktable/optimized/introspection_vignette.c.ll
-; gromacs/optimized/dlagtf.cpp.ll
 ; gromacs/optimized/fixpoint.c.ll
 ; hermes/optimized/String.cpp.ll
 ; jq/optimized/jv_aux.ll

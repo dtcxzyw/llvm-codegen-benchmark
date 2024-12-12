@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/light_array.cc.ll
@@ -7,6 +7,7 @@
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; freetype/optimized/sdf.c.ll
 ; libpng/optimized/pngrtran.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; openjdk/optimized/pngrtran.ll
 ; qemu/optimized/ui_qemu-pixman.c.ll
 ; Function Attrs: nounwind

@@ -24,7 +24,7 @@ func0000000000000005:                   # @func0000000000000005
 	vpxor	%xmm1, %xmm1, %xmm1
 	knotb	%k0, %k1
 	vpsubd	%ymm2, %ymm1, %ymm1 {%k1} {z}
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.long	100                             # 0x64

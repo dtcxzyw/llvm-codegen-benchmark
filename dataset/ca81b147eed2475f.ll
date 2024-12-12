@@ -1,5 +1,7 @@
 
-; 72 occurrences:
+; 73 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/gamepad.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
@@ -35,7 +37,6 @@
 ; mitsuba3/optimized/irregular.cpp.ll
 ; mitsuba3/optimized/regular.cpp.ll
 ; mitsuba3/optimized/tabphase.cpp.ll
-; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/edge-segments.cpp.ll
 ; nori/optimized/chi2test.cpp.ll
 ; nori/optimized/warptest.cpp.ll
@@ -77,7 +78,7 @@ define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 5.000000e-01
   %4 = fmul double %3, %1
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 

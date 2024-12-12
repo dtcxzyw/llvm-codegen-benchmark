@@ -1,5 +1,11 @@
 
-; 3 occurrences:
+; 9 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
@@ -7,7 +13,7 @@
 define i32 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = mul i16 %1, 12
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }
@@ -34,7 +40,7 @@ entry:
 define i32 @func0000000000000008(i16 %0, i16 %1) #0 {
 entry:
   %2 = mul nsw i16 %1, 51
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }
@@ -45,7 +51,7 @@ entry:
 define i32 @func0000000000000018(i16 %0, i16 %1) #0 {
 entry:
   %2 = mul nuw nsw i16 %1, 3
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   %4 = zext i16 %3 to i32
   ret i32 %4
 }

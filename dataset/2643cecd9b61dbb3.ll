@@ -1,5 +1,5 @@
 
-; 628 occurrences:
+; 665 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -20,6 +20,12 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
@@ -60,6 +66,7 @@
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; cmake/optimized/SystemInformation.cxx.ll
+; cmake/optimized/cmCTest.cxx.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; cmake/optimized/cmCTestRunTest.cxx.ll
 ; cmake/optimized/cmProcess.cxx.ll
@@ -121,7 +128,6 @@
 ; gromacs/optimized/colvartypes.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/densityfittingforce.cpp.ll
-; gromacs/optimized/dlagtf.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
 ; gromacs/optimized/dlasv2.cpp.ll
@@ -276,7 +282,6 @@
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlag2.c.ll
 ; openblas/optimized/dlamch.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; opencv/optimized/AddingImages.cpp.ll
 ; opencv/optimized/adaptive_manifold_filter_n.cpp.ll
@@ -325,6 +330,7 @@
 ; opencv/optimized/matrix_sparse.cpp.ll
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
 ; opencv/optimized/moments.cpp.ll
+; opencv/optimized/nbayes.cpp.ll
 ; opencv/optimized/norm.cpp.ll
 ; opencv/optimized/ocr_beamsearch_decoder.cpp.ll
 ; opencv/optimized/ocr_hmm_decoder.cpp.ll
@@ -441,7 +447,6 @@
 ; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
 ; openusd/optimized/xformOp.cpp.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
-; osqp/optimized/amd_info.c.ll
 ; osqp/optimized/auxil.c.ll
 ; osqp/optimized/osqp_api.c.ll
 ; osqp/optimized/vector.c.ll
@@ -471,7 +476,6 @@
 ; proj/optimized/ell_set.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/healpix.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/phi2.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
 ; proj/optimized/transformation.cpp.ll
@@ -623,6 +627,39 @@
 ; z3/optimized/sat_ddfw.cpp.ll
 ; z3/optimized/sat_lookahead.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/0lpqjgmxwongdkn1etmfasxzh.ll
+; zed-rs/optimized/19l54bkp73b8vpqg6elueqjm7.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; zed-rs/optimized/2tseelemdefm2fo39q21ogou2.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/4h176o45n3uxzch53hiway9mu.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5m9bjvwazi0alu2tzwf9y1ejc.ll
+; zed-rs/optimized/645sb9j0cpiprkfm7s339qqf6.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/6dn0ge6k6n2ik0ce7lwpgjvce.ll
+; zed-rs/optimized/78nr3ruxuq6h5rfkaolnxa52k.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/8eg3c68hjyduepshag5n9ghr7.ll
+; zed-rs/optimized/8h2ladsi6pcbclrovmrkrncgn.ll
+; zed-rs/optimized/9eafvdu9qxyugp5or14xw795l.ll
+; zed-rs/optimized/9g3waalevdqq841zqdk6xauvq.ll
+; zed-rs/optimized/9jlworagd4ne92tsld97hkqun.ll
+; zed-rs/optimized/9p59c0slbkpkbmcp28i14dl74.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/by8gv54o76v0inyrwjxd65d9p.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/d334eo7xhndhquqddprlqx6j8.ll
+; zed-rs/optimized/dhtd8mxtyja4srmt3ddrqkjib.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/erzde9u7wnx5zkvy3kzdy8721.ll
+; zed-rs/optimized/f2qsfrlgh226gsylx7h444e9w.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll

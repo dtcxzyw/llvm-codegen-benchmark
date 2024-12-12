@@ -1,10 +1,11 @@
 
-; 35 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/bmcClp.c.ll
 ; abc/optimized/cecCorr.c.ll
+; abc/optimized/cuddSat.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
 ; abc/optimized/fraigUtil.c.ll
@@ -18,6 +19,7 @@
 ; abc/optimized/ivyUtil.c.ll
 ; abc/optimized/mapperRefs.c.ll
 ; abc/optimized/sbdCut.c.ll
+; abc/optimized/sswSat.c.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; linux/optimized/af_unix.ll
 ; llvm/optimized/ASTReader.cpp.ll

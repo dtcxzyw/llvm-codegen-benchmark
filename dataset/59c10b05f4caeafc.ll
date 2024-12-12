@@ -18,12 +18,12 @@ entry:
 ; z3/optimized/qe_mbp.cpp.ll
 ; z3/optimized/spacer_arith_generalizers.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000043(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -16
   %4 = icmp eq i32 %1, 3
   %5 = select i1 %4, i32 48, i32 %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

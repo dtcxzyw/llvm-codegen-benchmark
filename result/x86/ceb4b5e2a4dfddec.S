@@ -22,13 +22,13 @@ func0000000000000011:                   # @func0000000000000011
 	shrl	%eax
 	addl	%edi, %eax
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000018:                   # @func0000000000000018
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	shrl	%eax
 	addl	%edi, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000013:                   # @func0000000000000013
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	shrl	%eax

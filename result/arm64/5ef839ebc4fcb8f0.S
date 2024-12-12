@@ -1,31 +1,11 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sshll	v4.2d, v3.2s, #0
-	sshll	v6.2d, v2.2s, #0
 	mov	x8, #70368744177664             // =0x400000000000
-	sshll2	v3.2d, v3.4s, #0
-	sshll2	v2.2d, v2.4s, #0
+	scvtf	d0, w1
 	movk	x8, #16527, lsl #48
-	dup	v5.2d, x8
-	sshll	v7.2d, v1.2s, #0
-	sshll2	v1.2d, v1.4s, #0
-	scvtf	v4.2d, v4.2d
-	scvtf	v6.2d, v6.2d
-	scvtf	v3.2d, v3.2d
-	scvtf	v2.2d, v2.2d
-	scvtf	v7.2d, v7.2d
-	scvtf	v16.2d, v1.2d
-	fdiv	v4.2d, v4.2d, v5.2d
-	fdiv	v6.2d, v6.2d, v5.2d
-	fdiv	v3.2d, v3.2d, v5.2d
-	fdiv	v2.2d, v2.2d, v5.2d
-	sshll	v5.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	scvtf	v5.2d, v5.2d
-	scvtf	v1.2d, v0.2d
-	fmul	v3.2d, v3.2d, v16.2d
-	fmul	v0.2d, v6.2d, v5.2d
-	fmul	v1.2d, v2.2d, v1.2d
-	fmul	v2.2d, v4.2d, v7.2d
+	fmov	d1, x8
+	fdiv	d0, d0, d1
+	scvtf	d1, w0
+	fmul	d0, d0, d1
 	ret
                                         // -- End function

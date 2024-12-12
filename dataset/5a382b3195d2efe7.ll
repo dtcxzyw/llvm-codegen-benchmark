@@ -1,26 +1,24 @@
 
-; 9 occurrences:
-; hermes/optimized/JSLexer.cpp.ll
+; 7 occurrences:
+; boost/optimized/range.ll
 ; mitsuba3/optimized/argparser.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; mitsuba3/optimized/stokes.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
-; tev/optimized/Common.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; tev/optimized/main.cpp.ll
-; velox/optimized/Type.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000161(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 32
-  %7 = icmp eq ptr %6, %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 32
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
-; 197 occurrences:
+; 191 occurrences:
 ; assimp/optimized/OFFLoader.cpp.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -212,20 +210,29 @@ entry:
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; zstd/optimized/zstd_ldm.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
-; zstd/optimized/zstd_v05.c.ll
-; zstd/optimized/zstd_v06.c.ll
-; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000144(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -3
-  %7 = icmp ugt ptr %6, %0
+  %7 = icmp ult ptr %0, %6
+  ret i1 %7
+}
+
+; 3 occurrences:
+; hermes/optimized/JSLexer.cpp.ll
+; tev/optimized/Common.cpp.ll
+; velox/optimized/Type.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000141(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %1 to i64
+  %4 = sub i64 %2, %3
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -16
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
@@ -238,26 +245,28 @@ entry:
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -16
-  %7 = icmp ult ptr %6, %0
+  %7 = icmp ugt ptr %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; assimp/optimized/OFFLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a9(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000149(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -1
-  %7 = icmp ule ptr %6, %0
+  %7 = icmp uge ptr %0, %6
   ret i1 %7
 }
 
-; 24 occurrences:
+; 26 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/range.ll
 ; cmake/optimized/SystemTools.cxx.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -287,7 +296,7 @@ entry:
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -1
-  %7 = icmp eq ptr %6, %0
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
@@ -301,7 +310,25 @@ entry:
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -1
-  %7 = icmp ugt ptr %6, %0
+  %7 = icmp ult ptr %0, %6
+  ret i1 %7
+}
+
+; 6 occurrences:
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000164(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %1 to i64
+  %4 = sub i64 %2, %3
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
+  %7 = icmp ult ptr %0, %6
   ret i1 %7
 }
 

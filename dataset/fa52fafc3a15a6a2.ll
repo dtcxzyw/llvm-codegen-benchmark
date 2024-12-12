@@ -1,5 +1,5 @@
 
-; 164 occurrences:
+; 169 occurrences:
 ; box2d/optimized/b2_body.cpp.ll
 ; c3c/optimized/compiler.c.ll
 ; c3c/optimized/llvm_codegen_module.c.ll
@@ -9,8 +9,6 @@
 ; c3c/optimized/project.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/types.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
-; cmake/optimized/fld_page.c.ll
 ; cmake/optimized/http.c.ll
 ; cmake/optimized/json_value.cpp.ll
 ; cmake/optimized/transfer.c.ll
@@ -23,6 +21,7 @@
 ; git/optimized/transport.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/JSObject.cpp.ll
+; libevent/optimized/bufferevent_pair.c.ll
 ; linux/optimized/80003es2lan.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/aspm.ll
@@ -81,6 +80,7 @@
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
+; llvm/optimized/PtrTypesSemantics.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -102,6 +102,12 @@
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_spinbox.ll
+; lvgl/optimized/lv_table.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/sky.cpp.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
@@ -147,7 +153,6 @@
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; quickjs/optimized/quickjs.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; redis/optimized/socket.ll

@@ -15,12 +15,6 @@ func0000000000000006:                   # @func0000000000000006
 	shrl	$8, %edi
 	orl	%edi, %eax
 	retq
-func000000000000001c:                   # @func000000000000001c
-	movzbl	%sil, %eax
-	shll	$21, %eax
-	shrl	$2, %edi
-	orl	%edi, %eax
-	retq
 func0000000000000017:                   # @func0000000000000017
 	movzbl	%sil, %eax
 	shll	$7, %eax

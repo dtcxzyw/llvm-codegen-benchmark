@@ -1,5 +1,8 @@
 
-; 34 occurrences:
+%"class.openvdb::v11_0::tree::NodeUnion.190.2711048" = type { %union.anon.191.2711049 }
+%union.anon.191.2711049 = type { ptr }
+
+; 33 occurrences:
 ; clamav/optimized/mszipd.c.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
@@ -21,7 +24,6 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
@@ -35,24 +37,39 @@
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/media.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 448
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw [512 x i8], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [512 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
-; 1 occurrences:
+; 16 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 127
+  %3 = and i32 %2, 15
   %4 = or i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw [128 x i64], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [4096 x %"class.openvdb::v11_0::tree::NodeUnion.190.2711048"], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -74,7 +91,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr [1 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6

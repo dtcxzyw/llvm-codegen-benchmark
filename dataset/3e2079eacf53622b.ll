@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = sub i32 %0, %2
@@ -14,7 +14,7 @@ entry:
 ; abc/optimized/ifDec16.c.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = sub nsw i32 %0, %2
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = sub nsw i32 %0, %2
@@ -51,7 +51,7 @@ entry:
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = sub nsw i32 %0, %2

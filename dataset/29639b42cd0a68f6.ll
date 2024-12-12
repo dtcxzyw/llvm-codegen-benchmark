@@ -1,9 +1,6 @@
 
-; 7 occurrences:
+; 4 occurrences:
 ; linux/optimized/i915_perf.ll
-; openjdk/optimized/awt_ImagingLib.ll
-; openjdk/optimized/awt_parseImage.ll
-; openjdk/optimized/mlib_ImageCreate.ll
 ; openjdk/optimized/splashscreen_gif.ll
 ; openjdk/optimized/splashscreen_jpeg.ll
 ; openjdk/optimized/splashscreen_png.ll
@@ -15,8 +12,20 @@ entry:
   ret i1 %3
 }
 
+; 3 occurrences:
+; openjdk/optimized/awt_ImagingLib.ll
+; openjdk/optimized/awt_parseImage.ll
+; openjdk/optimized/mlib_ImageCreate.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = udiv i32 2147483647, %1
+  %3 = icmp samesign ugt i32 %2, %0
+  ret i1 %3
+}
+
 ; 10 occurrences:
-; llvm/optimized/MveEmitter.cpp.ll
+; boost/optimized/numeric.ll
 ; openjdk/optimized/awt_ImageRep.ll
 ; openjdk/optimized/awt_ImagingLib.ll
 ; openusd/optimized/sdfdump.cpp.ll
@@ -27,10 +36,10 @@ entry:
 ; openusd/optimized/usdtree.cpp.ll
 ; php/optimized/pcre2_study.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 2147483647, %1
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ult i32 %2, %0
   ret i1 %3
 }
 
@@ -53,6 +62,16 @@ define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 2147483647, %1
   %3 = icmp slt i32 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; llvm/optimized/MveEmitter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = udiv i32 128, %1
+  %3 = icmp ult i32 %2, %0
   ret i1 %3
 }
 

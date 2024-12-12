@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaMinLut.c.ll
@@ -14,6 +14,7 @@
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; openusd/optimized/TestPcpDynamicFileFormatPlugin.cpp.ll
 ; postgres/optimized/brin_bloom.ll
+; yosys/optimized/mutate.ll
 ; Function Attrs: nounwind
 define double @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

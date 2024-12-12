@@ -1,5 +1,5 @@
 
-; 79 occurrences:
+; 78 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -8,6 +8,7 @@
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cpython/optimized/_randommodule.ll
@@ -26,6 +27,7 @@
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; memcached/optimized/memcached-murmur3_hash.ll
 ; memcached/optimized/memcached_debug-murmur3_hash.ll
 ; memcached/optimized/murmur3_hash.ll
@@ -45,12 +47,9 @@
 ; openmpi/optimized/mpl_str.ll
 ; openspiel/optimized/TransTableL.cpp.ll
 ; openspiel/optimized/deep_sea.cc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-property.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-property.ll
 ; openssl/optimized/libdefault-lib-test_rng.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; php/optimized/PMurHash.ll
 ; php/optimized/engine_mt19937.ll
 ; php/optimized/hash_gost.ll

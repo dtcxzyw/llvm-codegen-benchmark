@@ -21,3 +21,11 @@ func000000000000000d:                   # @func000000000000000d
 	vor.vi	v10, v8, 4, v0.t
 	vmv.v.v	v8, v10
 	ret
+func0000000000000009:                   # @func0000000000000009
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsleu.vi	v0, v10, 2
+	li	a0, 1024
+	vmv.v.x	v10, a0
+	vor.vx	v10, v8, a0, v0.t
+	vmv.v.v	v8, v10
+	ret

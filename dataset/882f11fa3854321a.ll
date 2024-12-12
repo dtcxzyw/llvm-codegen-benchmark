@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
@@ -7,6 +7,7 @@
 ; icu/optimized/ubidi.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; linux/optimized/rtc-cmos.ll
+; linux/optimized/tx.ll
 ; linux/optimized/xhci-hub.ll
 ; linux/optimized/xhci-mem.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
@@ -30,10 +31,11 @@ entry:
   ret i8 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; fmt/optimized/core-test.cc.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; minetest/optimized/game.cpp.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
@@ -45,10 +47,11 @@ entry:
   ret i8 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; stb/optimized/stb_image.c.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll

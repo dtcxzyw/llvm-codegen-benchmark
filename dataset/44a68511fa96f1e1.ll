@@ -20,7 +20,7 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; flac/optimized/metadata_object.c.ll
 ; git/optimized/midx.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
@@ -37,6 +37,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/g1CollectedHeap.ll
 ; raylib/optimized/raudio.c.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:

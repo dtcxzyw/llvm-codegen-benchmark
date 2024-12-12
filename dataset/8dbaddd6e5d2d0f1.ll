@@ -14,7 +14,7 @@
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000005a6(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000001546(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
@@ -28,7 +28,7 @@ entry:
 ; curl/optimized/libcurl_la-tftp.ll
 ; wireshark/optimized/erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000511(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000001421(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000518(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000001428(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1

@@ -8,7 +8,7 @@
 ; openssl/optimized/libssl-shlib-statem_dtls.ll
 ; wireshark/optimized/packet-cemi.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 1
   %3 = icmp ne i16 %0, 1
@@ -16,7 +16,8 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; linux/optimized/yenta_socket.ll
@@ -26,7 +27,7 @@ entry:
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 95
   %3 = icmp ne i16 %0, 0
@@ -34,15 +35,14 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; wireshark/optimized/packet-btatt.c.ll
-; wireshark/optimized/packet-chdlc.c.ll
-; wireshark/optimized/packet-dcom-cba-acco.c.ll
 ; wireshark/optimized/packet-rftap.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i16 %0, i8 %1) #0 {
+define i1 @func000000000000008c(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 4
   %3 = icmp ne i16 %0, 0
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/COpenGLExtensionHandler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000188(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp ugt i16 %0, 103
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/classFileParser.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000184(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 11
   %3 = icmp ult i16 %0, 52
@@ -91,7 +91,7 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp eq i16 %0, 0
@@ -99,10 +99,23 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; linux/optimized/intel_dp.ll
+; openjdk/optimized/check_classname.ll
+; wireshark/optimized/commview.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(i16 %0, i8 %1) #0 {
+entry:
+  %2 = icmp ult i8 %1, 31
+  %3 = icmp ult i16 %0, -46
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000108(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 1
   %3 = icmp ugt i16 %0, 1
@@ -113,7 +126,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/UnwrappedLineParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp eq i16 %0, 4
@@ -124,22 +137,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-aeron.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i16 %0, i8 %1) #0 {
+define i1 @func000000000000010c(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, -65
   %3 = icmp ne i16 %0, 0
-  %4 = select i1 %3, i1 true, i1 %2
-  ret i1 %4
-}
-
-; 2 occurrences:
-; linux/optimized/intel_dp.ll
-; wireshark/optimized/commview.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i16 %0, i8 %1) #0 {
-entry:
-  %2 = icmp ult i8 %1, -12
-  %3 = icmp ult i16 %0, 2000
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }

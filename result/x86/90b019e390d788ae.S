@@ -1,7 +1,0 @@
-func0000000000000000:                   # @func0000000000000000
-	movl	%esi, %eax
-	xorb	$1, %dl
-	andb	%dil, %al
-	andb	%dl, %al
-	xorb	$1, %al
-	retq

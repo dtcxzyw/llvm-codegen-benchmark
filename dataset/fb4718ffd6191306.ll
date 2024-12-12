@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; libwebp/optimized/huffman_encode_utils.c.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/build_utility.ll
@@ -8,6 +8,7 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/X86ShuffleDecodeConstantPool.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_anim.ll
 ; mitsuba3/optimized/integrator.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; openjdk/optimized/cmspack.ll

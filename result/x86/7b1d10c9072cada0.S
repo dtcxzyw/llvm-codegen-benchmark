@@ -15,10 +15,3 @@ func0000000000000004:                   # @func0000000000000004
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func000000000000001f:                   # @func000000000000001f
-	shrq	$2, %rdx
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
-	imulq	%rdx, %rax
-	addq	%rdi, %rax
-	addq	%rsi, %rax
-	retq

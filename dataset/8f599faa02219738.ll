@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; linux/optimized/serial_core.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {

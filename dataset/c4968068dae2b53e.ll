@@ -1,5 +1,7 @@
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; minetest/optimized/noise.cpp.ll

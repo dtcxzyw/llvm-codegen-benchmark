@@ -1,14 +1,15 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/hpet.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/tcp_cubic.ll
 ; linux/optimized/tcp_output.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; openjdk/optimized/codeHeapState.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
+; zed-rs/optimized/0431hruu0kb4k1yxxvcap38im.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 22 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
@@ -19,6 +19,9 @@
 ; oiio/optimized/imagebufalgo_compare.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; raylib/optimized/raudio.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:

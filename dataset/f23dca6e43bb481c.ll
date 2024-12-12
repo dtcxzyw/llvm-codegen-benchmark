@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; g2o/optimized/edge_project_psi2uv.cpp.ll
 ; g2o/optimized/edge_project_stereo_xyz.cpp.ll
 ; g2o/optimized/edge_project_xyz.cpp.ll
@@ -20,6 +20,7 @@
 ; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
 ; quantlib/optimized/analytic_discr_geom_av_price_heston.ll
 ; quantlib/optimized/analytichestonengine.ll
+; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/hestonprocess.ll
 ; quantlib/optimized/kronrodintegral.ll
 ; quantlib/optimized/perturbativebarrieroptionengine.ll

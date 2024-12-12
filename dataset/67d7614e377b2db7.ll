@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 21 occurrences:
 ; cpython/optimized/_codecs_iso2022.ll
 ; icu/optimized/bmpset.ll
 ; icu/optimized/escapesrc.ll
@@ -16,11 +16,9 @@
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utf_impl.ll
 ; libphonenumber/optimized/rune.c.ll
-; linux/optimized/drm_edid.ll
 ; linux/optimized/nls_base.ll
 ; llvm/optimized/DataFlowSanitizer.cpp.ll
 ; node/optimized/libnode.traced_value.ll
-; php/optimized/uuencode.ll
 ; re2/optimized/rune.cc.ll
 ; wireshark/optimized/packet-ftdi-mpsse.c.ll
 ; Function Attrs: nounwind
@@ -31,15 +29,28 @@ entry:
 }
 
 ; 4 occurrences:
+; cpython/optimized/_codecs_iso2022.ll
+; icu/optimized/normalizer2impl.ll
+; linux/optimized/drm_edid.ll
+; php/optimized/uuencode.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i8 %0) #0 {
+entry:
+  %1 = xor i8 %0, 32
+  %2 = icmp samesign ult i8 %1, 45
+  ret i1 %2
+}
+
+; 4 occurrences:
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cpython/optimized/_codecs_iso2022.ll
 ; icu/optimized/utf_impl.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0) #0 {
+define i1 @func0000000000000018(i8 %0) #0 {
 entry:
   %1 = xor i8 %0, 6
-  %2 = icmp ugt i8 %1, 5
+  %2 = icmp samesign ugt i8 %1, 5
   ret i1 %2
 }
 

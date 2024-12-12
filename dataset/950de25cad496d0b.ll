@@ -1,10 +1,9 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/nfs3xdr.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
